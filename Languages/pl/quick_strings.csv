@@ -25,7 +25,7 @@ qstr_Ready|Gotowy
 qstr_Wounded|Ranny
 qstr_Dead|Martwy
 qstr_Routed|Pobici
-qstr_Number_of_men_knocke|Liczba ludzi pobitych: {reg1}
+qstr_Number_of_men_knocke|Liczba ludzi ogłuszonych: {reg1}
 qstr_Number_of_men_left:_|Pozostało ludzi: {reg1}
 qstr_Opponents_Beaten:_{r|Przeciwnicy pokonani: {reg1}
 qstr_Opponents_Remaining:|Przeciwnicy do pokonania: {reg1}
@@ -201,7 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Pkt.Prestiżu ({s2})
 qstr_+30_to_Party_Morale|+30 do Morale Oddziału
 qstr_+20_to_Party_Morale|+20 do Morale Oddziału
 qstr_+1_to_Riding_Skill|+1 do Umiejętności Jeździeckich
-; qstr_during_battles|during battles
+qstr_during_battles|podczas bitew
 qstr_+1_to_Pathfinding|+1 do Szukania Ścieżek
 qstr_+1_to_Athletics|+1 do Atletyki
 qstr_Use_from|Do użycia z
@@ -233,7 +233,7 @@ qstr_Less_Dunnish_upkeep|Mniejsze utrzymanie Dunlandczyków
 qstr_Less_Wargs_upkeep|Mniejsze utrzymanie Wargów
 qstr_Light_Armor|Lekki pancerz
 qstr_+{reg1}_to_Party_Mor|+{reg1} do morale drużyny
-; qstr_Shoot_Speed:_{reg55}|Shoot Speed: {reg55}
+qstr_Shoot_Speed:_{reg55}|Prędkość strzału: {reg55}
 qstr_Do_you_want_to_disem|Chcesz wyładować?
 qstr_Move_here|Przemieść się tutaj
 qstr_View_notes|Przejrzyj notatki
@@ -689,8 +689,8 @@ qstr_A_golden_mist_from_L|Złota mgła z Lórien spowiła pole bitwy. Twoi żoł
 qstr_A_golden_mist_from_Lr|Złota mgła z Lórien spowiła pole bitwy. Wiedźma jest blisko i wywołuje dreszcze u Ciebie i Twoich żołnierzy.
 qstr_Dark_clouds_from_Mor|Ciemne chmury z Mordoru pokryły pole bitwy. Twoi łucznicy nie mogą dostrzec wroga, a obecność zła przeraża Twoich ludzi.
 qstr_Dark_clouds_from_Mord|Ciemne chmury z Mordoru pokryły pole bitwy. Obecność Mrocznego Lorda wzmacnia siły twoje i twoich żołnierzy.
-; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield. Your troops are slowed down, and the superstitious amongst the men feel scared.
-; qstr_A_thunderstorm_from_t|A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.
+qstr_A_thunderstorm_from_|Burza z Gór Mglistych dotarła nad pole walki. Twoi żołnierze są spowolnieni, a przesądni ludzie są przerażeni.
+qstr_A_thunderstorm_from_t|Burza z Gór Mglistych dotarła nad pole walki. Łucznicy nie radzą sobie najlepiej w taką pogodę.
 ; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.
 ; qstr_A_poisonous_fog_from_|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
 qstr_Your_mount_stumbles!|Twój wierzchowiec okulał!
@@ -829,12 +829,12 @@ qstr_Look_at_my_over_the_|Spójrz na mnie, {playername}! Jestem taki wspaniały 
 qstr_You_wish_old_man_my_|Jak chcesz, stary, ale mój widok jest znacznie lepszy!
 qstr_You_should_really_se|Naprawdę powinieneś zobaczyć zdjęcia Namiestnika Denetora na Facebooku, jest niesamowity!
 qstr_Press_Space_to_conti|Naciśnij 'spację' by kontynuować...
-; qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} until next promotion^
-; qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})^
-; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})^
-; qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} until next promotion^
-; qstr_{s13}_{reg11}__with_|{s13} {reg11} (with {s16})^
-; qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
+qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} do następnego awansu^
+qstr_Influence:^_{reg11}_|Wpływy:^ {reg11} (z {s16})^
+qstr_Resource_Points:^_{r|Punkty zasobów:^ {reg12} (w {s16})^
+qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} do następnego awansu^
+qstr_{s13}_{reg11}__with_|{s13} {reg11} (z {s16})^
+qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (w {s16})
 ; qstr_Four_years_after_bri|Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once-Dwarven city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside the chamber. Barring the gates, Ori and the few survivors set up a final defense.
 qstr_You_chase_an_orc_sco|Ścigacie oddział orków przez las...
 qstr_^No_food:___{reg7}|^Brak jedzenia:  -{reg7}
@@ -916,7 +916,7 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Zmierza ku tobie {s1}^^
 qstr_You_are_attacking_a_|Napotkał{eś/aś} jakąś grupę. Po chwili okazuje się, że to {s1}^^
 qstr_The_battle_against_t|Bitwa z {s1} trwa.
-; qstr_There_are_{reg39}_al|There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points.
+qstr_There_are_{reg39}_al|Jest {reg39} sojuszniczych dowódców w tej bitwie. Możesz dowodzić nimi i ich jednostkami za {reg40} punktów wpływu.
 qstr_Having_a_small_party|Posiadanie małej imprezy ma swoje zalety ... Ty i twoi żołnierze ukrywacie się przed wrogiem przez kilka godzin, aby mieć pewność, że nie zobaczycie.
 qstr_Your_ability_to_surv|Twoja zdolność przetrwania w trudnych warunkach pozwoli ci znaleźć bezpieczne miejsce do ukrycia się. (Twoje umiejętności w Wildcraft pozwalają ukryć się z oddziałami {reg1})
 qstr_{reg4}_will_be_lost.|{reg4} zostanie utracone.
@@ -1599,13 +1599,13 @@ qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Those:That} odważny {reg28?soldiers:s
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Those:That} przydatny {reg28?troops:troop} nam spowodować większy bajzel.{s32}^{s23}^^[earned {reg14} Punkty Surowców {s14}]
 qstr_Good_luck_in_your_tr|Powodzenia.
 qstr_Try_not_getting_your|Spróbuj nie zginąć.
-; qstr_You_ready_your_weapo|You ready your weapons, feeling the rush of past experience through your body. (Weapon Profeciencies and Abilities improved)
-; qstr_The_previous_battle_|The previous battle warmed you up. You feel invigorated, and ready for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
-; qstr_You_are_tired_but_ad|You are tired, but adrenaline coursing through your veins steel you for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
+qstr_You_ready_your_weapo|Przygotowujecie swoją broń, czujesz przypływ doświadczenia w Twoim ciele (Twoje umiejętności i sprawności wzrosły).
+qstr_The_previous_battle_|Poprzednia walka Cię rozgrzała. Jesteś bardziej ożywiony i gotowy na więcej. (Atrybuty, umiejętności i sprawności wzrosły).
+qstr_You_are_tired_but_ad|Jesteś wycieńczony, ale adrenalina płynąca przez woje żyły porywa Cię na więcej.  (Atrybuty, umiejętności i sprawności wzrosły).
 ; qstr_These_are_great_weap|These are great weapons indeed. They feel strange to the touch... (Abilities and Weapon Profeciencies Improved)
 ; qstr_You_can_barely_raise|You can barely raise your weapon now... but seeing your kinsmen around you strengthen your resolve. (Abilities and Weapon Profeciencies Improved).
 ; qstr_With_Lord_Balin_s_tr|With Lord Balin's treasures bestowed upon you and the memory of his death fresh in your mind, your rage burns stronger. (Attributes, Abilities and Weapon Profeciencies Improved)
-; qstr_We_cannot_hold..._we|We cannot hold... we are finished...
+qstr_We_cannot_hold..._we|Nie damy rady... to koniec...
 qstr_You_do_not_know_how_|Nie wiesz ile możesz jeszcze wytrzymać...
 qstr_How_long_can_we_keep|Kiedy to się skończy? Nie mogę utrzymać topora w ręku...
 qstr_You_know_that_the_en|Koniec jest blisko...

@@ -728,7 +728,7 @@ trp_a4_fell_goblin_archer_of_moria_pl|Goblin Caduti Arcieri di Moria
 trp_i1_goblin_gundabad|Goblin di Gundabad
 trp_i1_goblin_gundabad_pl|Goblin di Gundabad
 trp_i2_orc_gundabad|Orco di Gundabad
-trp_i2_orc_gundabad_pl|Orchi di Gundabad
+trp_i2_orc_gundabad_pl|Gli Orchi di Gundabad
 trp_i3_orc_fighter_gundabad|Orco Combattente di Gundabad
 trp_i3_orc_fighter_gundabad_pl|Orchi Combattenti di Gundabad
 trp_i4_fell_orc_warrior_gundabad|Orco Guerriero di Gundabad
@@ -1053,63 +1053,63 @@ trp_knight_6_1|Dervorin
 trp_smith_mtirith|Berethor, il Fabbro
 trp_smith_mtirith_pl|Fabbro del Sovrintendente
 trp_smith_pelargir|Mastro del Metallo Hallatan
-trp_smith_pelargir_pl|Fucina
+trp_smith_pelargir_pl|La Fucina
 trp_smith_linhir|Bor, il Corazziere
-trp_smith_linhir_pl|Fucina
+trp_smith_linhir_pl|La Fucina
 trp_smith_dolamroth|Haldad, il Fabbro
 trp_smith_dolamroth_pl|I Fabbri di Amroth
 trp_smith_edhellond|Ryis, Piegatore di Ferro
-trp_smith_edhellond_pl|Fucina
+trp_smith_edhellond_pl|La Fucina
 trp_smith_lossarnach|Berin, l'armaiolo
-trp_smith_lossarnach_pl|Fucina
+trp_smith_lossarnach_pl|La Fucina
 trp_smith_tarnost|Harandil, Martello d'acciaio
-trp_smith_tarnost_pl|Fucina
+trp_smith_tarnost_pl|La Fucina
 trp_smith_erech|Lorne, il Nero
-trp_smith_erech_pl|Fucina
+trp_smith_erech_pl|La Fucina
 trp_smith_pinnath|Tarandil, il Forgia-spade
-trp_smith_pinnath_pl|Fucina
+trp_smith_pinnath_pl|La Fucina
 trp_smith_eosgiliath|Bzurg, il Saccheggiatore
-trp_smith_eosgiliath_pl|Fucina
+trp_smith_eosgiliath_pl|La Fucina
 trp_smith_wosgiliath|Gardil
-trp_smith_wosgiliath_pl|Fucina improvvisata
+trp_smith_wosgiliath_pl|La Fucina improvvisata
 trp_smith_calembel|Agronom
-trp_smith_calembel_pl|Fucina
+trp_smith_calembel_pl|La Fucina
 trp_smith_hannun|Fal, il Fabbro dei Ranger
 trp_smith_hannun_pl|Equipaggiamento di Scorta del Ranger
 trp_smith_candros|Kalimdor
-trp_smith_candros_pl|Fucina
+trp_smith_candros_pl|La Fucina
 trp_smith_edoras|Eaoden, il Mastro dell'Acciaio
 trp_smith_edoras_pl|La Fucina del Re
 trp_smith_aldburg|Fulm, Zoccolo di Ferro
-trp_smith_aldburg_pl|Fucina
+trp_smith_aldburg_pl|La Fucina
 trp_smith_hornburg|Aldhelm
-trp_smith_hornburg_pl|Fucina
+trp_smith_hornburg_pl|La Fucina
 trp_smith_eastemnet|Eadfrid
-trp_smith_eastemnet_pl|Fucina
+trp_smith_eastemnet_pl|La Fucina
 trp_smith_westfold|Deor, il Forgiaelmi
-trp_smith_westfold_pl|Fucina
+trp_smith_westfold_pl|La Fucina
 trp_smith_westemnet|Corazziere
-trp_smith_westemnet_pl|Fucina
+trp_smith_westemnet_pl|La Fucina
 trp_smith_eastfold|Eaderan, il Curvaferro
-trp_smith_eastfold_pl|Fucina
+trp_smith_eastfold_pl|La Fucina
 trp_smith_morannon|Hurbag, il Forgiacancelli
-trp_smith_morannon_pl|Fucina
+trp_smith_morannon_pl|La Fucina
 trp_smith_mmorgul|Orgurz, L'Attizzafuochi
-trp_smith_mmorgul_pl|Fucina
+trp_smith_mmorgul_pl|La Fucina
 trp_town_24_smith|Boz, il Rubaferro
-trp_town_24_smith_pl|Fucina
+trp_town_24_smith_pl|La Fucina
 trp_smith_orc_patrol|Glugz, Dito di Ferro
-trp_smith_orc_patrol_pl|Campo del Fabbro
+trp_smith_orc_patrol_pl|Il Fabbro del Campo
 trp_smith_oscamp|Kugash Ironlover
-trp_smith_oscamp_pl|Campo del Fabbro
+trp_smith_oscamp_pl|Il Fabbro del Campo
 trp_smith_isengard|Burz, Battiferro
-trp_smith_isengard_pl|Fucina sottoterra
+trp_smith_isengard_pl|La Fucina Sotterranea
 trp_smith_uoutpost|Gurzuk, Dente di Ferro
 trp_smith_uoutpost_pl|La Fucina dell'avamposto
 trp_smith_uhcamp|Rabzug, Mangiaruggine
-trp_smith_uhcamp_pl|Campo del Fabbro
+trp_smith_uhcamp_pl|Il Fabbro del Campo
 trp_smith_urcamp|Glurk
-trp_smith_urcamp_pl|Campo del Fabbro
+trp_smith_urcamp_pl|Il Fabbro del Campo
 trp_smith_cgaladhon|Dirufin, il Fabbricatore di Archi
 trp_smith_cgaladhon_pl|Forgiatori di Armi elfiche
 trp_smith_cdolen|Dimirian, il Fabbricafrecce
@@ -1117,69 +1117,69 @@ trp_smith_cdolen_pl|Forgiatori di Armi elfiche
 trp_smith_camroth|Getasistan
 trp_smith_camroth_pl|Forgiatori di Armi elfiche
 trp_smith_thranduils_halls|Thurinor
-trp_smith_thranduils_halls_pl|Fucina
+trp_smith_thranduils_halls_pl|La Fucina
 trp_smith_woodelf_camp|Calechir
-trp_smith_woodelf_camp_pl|Fucina
+trp_smith_woodelf_camp_pl|La Fucina
 trp_smith_beorn|Beornalaf, l'armaiolo
-trp_smith_beorn_pl|Fucina
+trp_smith_beorn_pl|La Fucina
 trp_smith_moria|Forgiatore Burgak
-trp_smith_moria_pl|Fucina
+trp_smith_moria_pl|La Fucina
 trp_smith_dale|Ardel, Manodifuoco
-trp_smith_dale_pl|Fucina
+trp_smith_dale_pl|La Fucina
 trp_smith_esgaroth|Kelegarn, il Fabbrica-Archi
-trp_smith_esgaroth_pl|Fucina
+trp_smith_esgaroth_pl|La Fucina
 trp_smith_erebor|Thror, il Fabbrica-Martelli
 trp_smith_erebor_pl|Gli Esperti Fabbri Nanici
 trp_smith_dunland|Dorrowuld, Picca di Ferro
-trp_smith_dunland_pl|Fucina
+trp_smith_dunland_pl|La Fucina
 trp_smith_harad|Har, Piega-acciaio
-trp_smith_harad_pl|Fucina
+trp_smith_harad_pl|La Fucina
 trp_smith_khand|Pushurt, il Mercante
-trp_smith_khand_pl|Fucina
+trp_smith_khand_pl|La Fucina
 trp_smith_umbar|Fuinir, il Forgiatore
-trp_smith_umbar_pl|Fucina
+trp_smith_umbar_pl|La Fucina
 trp_smith_imladris|Duifiran
 trp_smith_imladris_pl|Forgiatori di Armi elfiche
 trp_smith_dolguldur|Shtazg Dulbash
-trp_smith_dolguldur_pl|Fucina
+trp_smith_dolguldur_pl|La Fucina
 trp_smith_north_rhun|Ognjemir Kladivo
-trp_smith_north_rhun_pl|Fucina improvvisata
+trp_smith_north_rhun_pl|La Fucina Improvvisata
 trp_smith_gundabad|Blurg, il Vendineve
-trp_smith_gundabad_pl|Fucina
+trp_smith_gundabad_pl|La Fucina
 trp_smith_ironhill|Fabbro della Collina di Ferro
-trp_smith_ironhill_pl|I Fabbri del campo dei Nani
+trp_smith_ironhill_pl|I Fabbri del Campo Nanico
 trp_town_50_weaponsmith|Shruklug l'Affilatore
-trp_town_50_weaponsmith_pl|Fucina
+trp_town_50_weaponsmith_pl|La Fucina
 trp_smith_gondor_ac|Bor, il Corazziere
-trp_smith_gondor_ac_pl|Campo della Fucin
+trp_smith_gondor_ac_pl|La Fucina del Campo
 trp_smith_rohan_ac|Deor, il Forgiaelmi
-trp_smith_rohan_ac_pl|Campo della Fucina
+trp_smith_rohan_ac_pl|La Fucina del Campo
 trp_smith_mordor_ac|Hurbag, il Forgiacancelli
-trp_smith_mordor_ac_pl|Fucina
+trp_smith_mordor_ac_pl|La Fucina
 trp_smith_isengard_ac|Burz, il Battiferro
-trp_smith_isengard_ac_pl|Fucina sottoterra
+trp_smith_isengard_ac_pl|La Fucina Sotterranea
 trp_smith_lorien_ac|Dimirian, il Fabbricafrecce
 trp_smith_lorien_ac_pl|I Forgiatori di Armi elfiche
 trp_smith_woodelf_ac|Dhoelath
-trp_smith_woodelf_ac_pl|Fucina
+trp_smith_woodelf_ac_pl|La Fucina
 trp_smith_dwarf_ac|il Fabbro della Collina di Ferro
 trp_smith_dwarf_ac_pl|I Fabbri del campo dei Nani
 trp_smith_gundabad_ac|Blurg, il Vendineve
-trp_smith_gundabad_ac_pl|Fucina
+trp_smith_gundabad_ac_pl|La Fucina
 trp_smith_rhun_ac|Branimir Bronnik
-trp_smith_rhun_ac_pl|Fucina improvvisata
+trp_smith_rhun_ac_pl|La Fucina improvvisata
 trp_smith_guldur_ac|Shtazg Dulbash
-trp_smith_guldur_ac_pl|Fucina
+trp_smith_guldur_ac_pl|La Fucina
 trp_smith_imladris_ac|Duifiran
 trp_smith_imladris_ac_pl|I Forgiatori di Armi elfiche
 trp_smith_dunland_ac|Dorrowuld, Picca di Ferro
-trp_smith_dunland_ac_pl|Fucina
+trp_smith_dunland_ac_pl|La Fucina
 trp_smith_harad_ac|Har, il Piega-acciaio
-trp_smith_harad_ac_pl|Fucina
+trp_smith_harad_ac_pl|La Fucina
 trp_smith_khand_ac|Pushurt, il Mercante
-trp_smith_khand_ac_pl|Fucina
+trp_smith_khand_ac_pl|La Fucina
 trp_smith_umbar_ac|Fuinir, il Forgiatore
-trp_smith_umbar_ac_pl|Fucina
+trp_smith_umbar_ac_pl|La Fucina
 trp_barman_mtirith|Taverniere
 trp_barman_mtirith_pl|La Cittadella
 trp_barman_pelargir|Taverniere
@@ -1235,7 +1235,7 @@ trp_barman_camroth_pl|L'albero Castello
 trp_barman_thalls|Taverniere
 trp_barman_thalls_pl|La stanza del Trono
 trp_barman_beorn|Taverniere
-trp_barman_beorn_pl|Casa di Beorn
+trp_barman_beorn_pl|La Casa di Beorn
 trp_barman_moria|Taverniere
 trp_barman_moria_pl|La Camera del Capo
 trp_barman_dale|Taverniere
@@ -1331,21 +1331,21 @@ trp_merchant_erebor_pl|Le Provviste Naniche
 trp_merchant_dunland|Mastro delle Scorte di Dun
 trp_merchant_dunland_pl|Le Scorte del Campo
 trp_merchant_harad|Mastro delle Scorte di Harad
-trp_merchant_harad_pl|Campo delle Scorte
+trp_merchant_harad_pl|Le Scorte del Campo
 trp_merchant_khand|Mastro delle Scorte di Khand
 trp_merchant_khand_pl|Le Scorte del Campo
 trp_merchant_umbar|Il Mastro dei Rifornimenti
-trp_merchant_umbar_pl|Campo delle Scorte
+trp_merchant_umbar_pl|Le Scorte del Campo
 trp_merchant_imladris|Il Mastro dei Rifornimenti
 trp_merchant_imladris_pl|I Rifornimenti del Campo
 trp_merchant_dolguldur|Il Mastro dei Rifornimenti
 trp_merchant_dolguldur_pl|La stalla e il Magazzino
 trp_merchant_north_rhun|Il Mastro dei Rifornimenti
-trp_merchant_north_rhun_pl|Campo delle Scorte
+trp_merchant_north_rhun_pl|Le Scorte del Campo
 trp_merchant_south_rhun|Il Mastro dei Rifornimenti
-trp_merchant_south_rhun_pl|Campo delle Scorte
+trp_merchant_south_rhun_pl|Le Scorte del Campo
 trp_merchant_gundabad|Il Mastro dei Rifornimenti
-trp_merchant_gundabad_pl|Campo delle Scorte
+trp_merchant_gundabad_pl|Le Scorte del Campo
 trp_merchant_ironhill|Il Mastro dei Rifornimenti
 trp_merchant_ironhill_pl|Le Provviste Naniche
 trp_town_50_horse_merchant|Gobrip Dente Giallo
@@ -1421,7 +1421,7 @@ trp_elder_khand_pl|Il Campo
 trp_elder_dunland|Capo del Campo di Dun
 trp_elder_dunland_pl|Il Campo
 trp_elder_umbar|Quartiermastro di Umbar
-trp_elder_umbar_pl|Il campo fortificato
+trp_elder_umbar_pl|L'Accampamento Fortificato
 trp_elder_moria|Capo di Moria
 trp_elder_moria_pl|Le Miniere
 trp_elder_gunda|Mastro delle Grotte

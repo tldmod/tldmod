@@ -36,7 +36,7 @@ ui_you_got_value|Has conseguido %s.
 ui_has_deserted_the_party|ha dejado el grupo.
 ui_have_deserted_the_party|han dejado el grupo.
 ui_loading_textures|Cargando texturas... (ten paciencia)
-ui_order_hold_fire_toggle|Ordenar no disparar/disparar a discrecion (alternar)
+ui_order_hold_fire_toggle|Ordenar no disparar/disparar a discreción (alternar)
 ui_order_dismount_toggle|Ordenar des/montar (alternar)
 ui_mount_horses_e_|¡%s, montad!
 ui_hold_fire_e_|¡%s, no disparéis!
@@ -67,7 +67,7 @@ ui_dumping_value_items|%d objetos se perderán permanentemente, ¿seguro que qui
 ui_dumping_value_item|Un objeto se perderá permanentemente, ¿seguro que quieres continuar? 
 ui_notification_requirements_not_met|No tienes los atributos o habilidades necesarias para esta arma.
 ui_disband|Licenciar
-ui_you_hit_a_friendly_troop|¡Has herido a uan tropa amiga!
+ui_you_hit_a_friendly_troop|¡Has herido a una tropa amiga!
 ui_you_are_not_carrying_any_arrows|No llevas ninguna flecha encima.
 ui_delivered_number_damage_to_horse|Has hecho %d puntos de daño a la montura.
 ui_received_number_damage|Recibes %d puntos de daño.
@@ -110,7 +110,7 @@ ui_order_button_stand_ground|No retroceder
 ui_order_button_retreat|Retirada
 ui_order_button_advance|Avanzar diez pasos
 ui_order_button_fall_back|Retroceder diez pasos
-ui_order_button_spread_out|Abrid filas
+ui_order_button_spread_out|Abrir filas
 ui_order_button_stand_closer|Cerrar filas
 ui_order_button_mount_horses|Montar
 ui_order_button_dismount|Desmontar

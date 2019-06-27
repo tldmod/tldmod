@@ -312,7 +312,7 @@ dlga_lord_talk:lord_request_mission_ask|Hai qualche compito per me ?
 dlga_lord_talk:dwarf_lord_book|{s3}, c'è una faccenda che devo portare alla tua attenzione.
 dlga_dwarf_lord_book:dwarf_lord_book_give|Parla liberamente, {playername}.
 dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|Ho esplorato le profondità delle Miniere di Moria e ho trovato registrazioni della compagnia di Balin.
-dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|Stai parlando dei mie parenti come se fossero un ricordo. È così che stanno le cose?
+dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|Stai parlando dei miei parenti come se fossero un ricordo. È così che stanno le cose?
 dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|Temo che sia così. Ho cercato ulteriormente, ma ero incalzato dai goblins, ed erano in gran numero. Ho potuto portare solo questo...
 dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'Non possiamo uscire. Non possiamo uscire...Stanno arrivando.'
 dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|Così è come temevo. Avevo sconsigliato a Balin d'intraprendere questa spedizione, ma lui era risoluto. Sono stato un folle a lasciarlo andare.
@@ -792,9 +792,9 @@ dlga_mercenary_tavern_talk:close_window|Mi dispiace. Ora come ora non mi servono
 dlga_start:trainer_pretalk|Sei sopravvissuto ad un'ondata del Guanto di Sfida {reg2}. {s4}
 dlga_start:trainer_pretalk.1|Molto bene, hai eliminato tutti gli avversari.
 dlga_start:trainer_talk|Salve. Pronto per un po' di pratica oggi ?
-dlga_trainer_pretalk:trainer_talk|Sei pronto per un po' di pratica ?
+dlga_trainer_pretalk:trainer_talk|Sei in grado di fare un po' di pratica ?
 dlga_trainer_talk:trainer_combat_begin|Per prima cosa, parlami del combattimento...
-dlga_trainer_talk:trainer_choose_mode|Sono pronto per l'addestramento.
+dlga_trainer_talk:trainer_choose_mode|Posso iniziare l'addestramento.
 dlga_trainer_talk:close_window|Ora devo andare. Arrivederci.
 dlga_trainer_combat_begin:trainer_talk_combat|Cosa ti interessa sapere ?
 dlga_trainer_combat_pretalk:trainer_talk_combat|Che altro vuoi sapere ?

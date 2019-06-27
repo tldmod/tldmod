@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Wartowników Pelargir
 trp_pelargir_marine|Żołnierz Piechoty Morskiej Pelargir
 trp_pelargir_marine_pl|Żołnierzy Piechoty Morskiej Pelargir
 trp_pelargir_vet_marine|Doborowy Żołnierz Piechoty Morskiej Pelargir
-; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
+trp_pelargir_vet_marine_pl|Weterani Piechoty Morskiej Pelargir
 trp_pelargir_infantry|Piechur Pelargir
 trp_pelargir_infantry_pl|Piechurów Pelargir
 trp_pelargir_vet_infantry|Doborowy Piechur Pelargir
@@ -674,8 +674,8 @@ trp_olog_hai|Mordorski Olog-Hai
 trp_olog_hai_pl|Mordorskich Olog-Hai
 trp_ent|Ent
 trp_ent_pl|Entów
-; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
-; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
+trp_orc_snaga_of_guldur|Ork Snaga z Dol Guldur
+trp_orc_snaga_of_guldur_pl|Orków Snaga z Dol Guldur
 trp_orc_of_guldur|Ork Tropiciel z Dol Guldur
 trp_orc_of_guldur_pl|Orkowie Tropiciele z Dol Guldur
 trp_orc_snaga_of_mordor|Mordorski Ork Snaga
@@ -752,7 +752,7 @@ trp_tribal_orc_pl|Plemiennych Orków
 trp_tribal_orc_warrior|Plemienny Ork Wojownik
 trp_tribal_orc_warrior_pl|Plemiennych Orków Wojowników
 trp_i5_orc_champion_gundabad|Gundabadzki Czempion Orków
-; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
+trp_i5_orc_champion_gundabad_pl|Gundabadzkich Orkowi Czempioni
 trp_black_numenorean_renegade|Renegat - Czarny Numenorejczyk
 trp_black_numenorean_renegade_pl|Renegatów - Czarnych Numenorejczyków
 trp_black_numenorean_warrior|Wojownik - Czarny Numenorejczyk

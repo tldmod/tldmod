@@ -22,8 +22,8 @@ imod_powerful|%s - (Potente)
 imod_tattered|%s - (Malandato)
 imod_ragged|%s - (Rozzo)
 imod_rough|%s - (Rozzo)
-imod_sturdy|%s - (Robusto)
-imod_thick|Robusto
+imod_sturdy|Robusto %s
+imod_thick|Robusto %s
 imod_hardened|%s - (Indurito)
 imod_reinforced|%s - (Rinforzato)
 imod_cloak|%scon mantello

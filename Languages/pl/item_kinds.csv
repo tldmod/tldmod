@@ -256,7 +256,7 @@ itm_gon_tab_shield_d|Heraldyczna Gondorska Tarcza z Cytadeli
 itm_amroth_sword_a|Miecz z Dol Amroth
 itm_amroth_sword_b|Rycerski Miecz z Dol Amroth
 itm_gondor_sword|Gondorski Miecz Piechoty
-; itm_amroth_bastard|Dol Amroth Swan Blade
+itm_amroth_bastard|Łabędzie Ostrze Dol Amroth'a
 itm_gondor_short_sword|Linhirski Eket
 itm_pelargir_eket|Eket z Pelargiru
 itm_pelargir_sword|Miecz z Pelargiru
@@ -707,10 +707,10 @@ itm_dale_shield_c|Okrągła Tarcza z Dale
 itm_dale_shield_d|Tarcza z Dale
 itm_umb_armor_a|Corairska Skórzana Kamizelka 
 itm_umb_armor_b|Skórzana Zbroja Korsarza
-; itm_umb_armor_c|Corsair Light Scale
-; itm_umb_armor_d|Corsair Scale
+itm_umb_armor_c|Lekka Zbroja Łuskowa Korsarza
+itm_umb_armor_d|Zbroja Łuskowa Korsarza
 itm_umb_armor_e|Kolczuga Korsarza
-; itm_umb_armor_f|Corsair Noble Armour
+itm_umb_armor_f|Szlachecka Zbroja Korsarza
 itm_umb_helm_a|Muszlowy Hełm Korsarza
 
 itm_umb_helm_b|Muszlowy Hełm Korsarza

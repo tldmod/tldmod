@@ -75,7 +75,7 @@ qstr_Rotate|Girar
 qstr_Close|Cerrar
 qstr_Faction_Side:^^Campa|Bando de la facción:^^Dificultad de campaña*:^^Frente inicial:^^Mariscal:^^Enemigos:^^
 qstr_Campaign_Difficulty_|La dificultad de la campaña está basada en la fuerza inicial de la facción, los enemigos en su frente,^ y el árbol de tropas de la facción y su equipamiento.
-qstr_Rallies:|Reagrupar tropas:
+qstr_Rallies:|Arengas:
 qstr_View_Keybinds__Press|Ver configuración de teclas (pulsa Insert)
 qstr_What_do_you_fight_fo|¿Por qué luchas?
 qstr_Go_Back...|Atrás...
@@ -201,7 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Pts. de Rec. ({s2})
 qstr_+30_to_Party_Morale|+30 a la Moral del Grupo
 qstr_+20_to_Party_Morale|+20 a la Moral del Grupo
 qstr_+1_to_Riding_Skill|+1 a Cabalgar
-qstr_during_battles|en enfrentamientos
+qstr_during_battles|en batallas
 qstr_+1_to_Pathfinding|+1 a Busca-rutas
 qstr_+1_to_Athletics|+1 a Atletismo
 qstr_Use_from|Se usa desde
@@ -229,8 +229,8 @@ qstr_+1_to_Ironflesh|+1 a Piel curtida
 qstr_+1_to_Prisoner_Mgmt|+1 a Manejo de Prisioneros
 qstr_+2_to_Tactics|+2 a Tácticas
 qstr_+3_to_Spotting|+3 de Avistamiento
-qstr_Less_Dunnish_upkeep|Cuesta menos mantener a los Dunlendinos
-qstr_Less_Wargs_upkeep|Cuesta menos mantener a los Huargos
+qstr_Less_Dunnish_upkeep|Reduce coste de mantenimiento de Dunlendinos
+qstr_Less_Wargs_upkeep|Reduce coste de mantenimiento de Huargos
 qstr_Light_Armor|Armadura ligera
 qstr_+{reg1}_to_Party_Mor|+{reg1} a la Moral del Grupo
 qstr_Shoot_Speed:_{reg55}|Velocidad de disparo: {reg55}
@@ -736,9 +736,9 @@ qstr_{s11}_is_{s10}_in_th|¡{s11} cae {s10} en el ataque del Nazgûl!
 qstr_Received_{reg66}_dam|Recibes {reg66} de daño.
 qstr_You_yell_for_your_ho|Llamas a tu caballo.
 qstr_{s1}_s_morale:_{reg1|Moral de {s1}: {reg1}
-qstr_You_do_not_need_to_r|Aún no necesitas reagrupar tus tropas.
-qstr_You_rally_your_troop|¡Reagrupas tus tropas!
-qstr_{s5}_rallies_{reg65?|¡{s5} reagrupa a {reg65?sus:sus} tropas!
+qstr_You_do_not_need_to_r|Aún no necesitas arengar a tus tropas.
+qstr_You_rally_your_troop|¡Arengas a tus tropas!
+qstr_{s5}_rallies_{reg65?|¡{s5} arenga a {reg65?sus:sus} tropas!
 qstr_You_have_killed_{reg|¡Has matado {reg1} enemigos en esta batalla!
 qstr_Your_bravery_inspire|¡Tu valentía inspira a tus tropas!
 qstr_Your_mount_has_falle|¡Tu montura se ha desplomado contigo encima!
@@ -747,7 +747,7 @@ qstr_You_have_been_knocke|{s22} te ha dejado inconsciente.
 qstr_{s21}_has_been_knock|{s21} ha salido {reg23?despedida:despedido} de su montura cuando ésta ha caído.
 qstr_{s21}_{reg24?killed:|{s22} {reg24?ha matado:ha dejado inconsciente} a {s21}.
 qstr_A_bear_has_been_summ|¡Un oso ha sido convocado a la batalla!
-qstr_In_The_Last_Days_of_|En The Last Days of the Third Age, tus tropas se posicionarán por si mismas al comienzo de cada batalla y mantendrán la posición, en vez de cargar ciegamente.^^Para colocar a tus tropas en formación, pulsa 'J' para Filas, 'K' para Muro de Escudos, 'L' para Cuña, ';' para Cuadro. Para deshacer la formación, pulsa 'U'. ^Si tus tropas están huyendo, puedes pulsar 'V' para reagruparlas. Solo tienes un número limitado de oportunidades para reagrupar tus tropas en cada batalla, que depende de tu liderazgo y carisma.
+qstr_In_The_Last_Days_of_|En The Last Days of the Third Age, tus tropas se posicionarán por si mismas al comienzo de cada batalla y mantendrán la posición, en vez de cargar ciegamente.^^Para colocar a tus tropas en formación, pulsa 'J' para Filas, 'K' para Muro de Escudos, 'L' para Cuña, ';' para Cuadro. Para deshacer la formación, pulsa 'U'. ^Si tus tropas están huyendo, puedes pulsar 'V' para arengarlas y hacer que se reagrupen. Solo tienes un número limitado de arengas en cada batalla, que depende de tu liderazgo y carisma.
 qstr_You_can_also_order_y|También puedes ordenar a tus tropas que cambien el tipo de arma que quieres que usen.^^ Pulsa O para cambiar entre las distintas Órdenes de Armas. Pulsa P para cambiar entre las distintas Órdenes de Escudos.
 qstr_The_Last_Days_of_the|The Last Days of the Third Age tiene una cámara personalizada para suplir las limitaciones de la cámara respecto a las razas de menor estatura (orcos y enanos)..^^Presiona las teclas Ctrl+Fin para cambiar entre los 2 tipos de cámara: Posición Fija y Modo Libre.^^^La posición fija viene con los ajustes óptimos para cada raza, pero no se puede alterar. Puedes pulsar CTRL+Flecha Izq./Der. para cambiar la cámara de hombro.^^La cámara libre coloca al personaje en mitad de la pantalla.  Puedes pulsar CTRL+Flecha Arriba/Abajo para ajustar la altura y CTRL+ teclado numérico +/- para ajustar la distancia.^^Ver Conceptos para más información sobre cómo controlar los distintos modos de cámara.
 qstr_Battlefield_is_too_s|El campo de batalla es demasiado pequeño para usar formaciones complejas.
@@ -1541,7 +1541,7 @@ qstr_The_{s9}_of_{s13}_ha|El {s9} de {s13} te ha pedido que te ocupes de los orc
 qstr_{s9}_of_{s3}_asked_y|{s9} de {s3} te ha pedido que le lleves {reg5} unidades de {s6} al {s10} en {s4} en {reg6} días.
 qstr_The_{s9}_of_{s4}_ask|El {s9} de {s4} te ha pedido que refuerces la guarnición de {s3} con al menos {reg5} tropas en menos de {reg6} días. Habla con el encargado del cuartel de {s3}. La calidad de las tropas que les proporciones no importa.
 qstr_You_have_reinforced_{|Has reforzado {s3} con 0 tropas.
-qstr_Thank_you_for_offeri|Gracias por ofrecer tu ayuda, {playername}.^^Las caravanas que vna y vienen de la ciudad han sido atacadas varias veces por {s6}. Se vuelven más osados con cada emboscada, y cada vez se acercan más a la ciudad.
+qstr_Thank_you_for_offeri|Gracias por ofrecer tu ayuda, {playername}.^^Las caravanas que van y vienen de la ciudad han sido atacadas varias veces por {s6}. Se vuelven más osados con cada emboscada, y cada vez se acercan más a la ciudad.
 qstr_Good_of_you_to_ask_{|Me alegra que lo preguntes, {playername}.^^Hay {s6} pululando por los alrededores, creyéndose que están al mando. Nadie hace nada para detenerlos, así que se están volviendo cada vez más atrevidos y robando lo que nos pertenece por derecho.
 qstr_The_people_have_aske|La gente ha pedido ayuda para matar al menos {reg22} {s6}, con la esperanza de que eso sirva para mantenerlos alejados durante un tiempo.^^¿Serías capaz de hacerlo?
 qstr_I_want_you_to_slay_a|Quiero que liquides al menos a {reg22} {s6}, para demostrar a esos blandengues lo insignificantes que son.^^¿Qué te parece?

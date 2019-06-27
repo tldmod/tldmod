@@ -813,7 +813,7 @@ ui_crouch|Accucciarsi
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Vuoi davvero importare il personaggio ?
 ui_explanation_strength|Forza: Ogni punto aggiunge +1 ai punti ferita. Le seguenti abilità non possono essere sviluppate oltre 1/3 della Forza: Resistenza, Potenza d'attacco, Potenza di lancio, Potenza di tiro.
-ui_explanation_intelligence|Intelligenza: Ogni punto d'intelligenza fornisce immediatamente un punto abilità aggiuntivo. Le seguenti abilità non possono essere sviluppate oltre 1/3 dell'Intelligenza: Addestramento, Seguire tracce, Tattica, Orientamento, Avvistamento, Gestione Inventario, Cura Ferite, Chirurgia, Primo Soccorso, Ingegneria, Persuasione.
+ui_explanation_intelligence|Intelligenza: Ogni punto d'intelligenza fornisce immediatamente un punto abilità aggiuntivo. Le seguenti abilità non possono essere sviluppate oltre 1/3 dell'Intelligenza: Addestramento, Seguire tracce, Tattica, Orientamento, Avvistamento, Gestione Inventario, Trattamento Ferite, Chirurgia, Primo Soccorso, Ingegneria, Persuasione.
 ui_explanation_charisma|Carisma: Ogni punto incrementa il limite della dimensione della tua compagnia di +1. Le seguenti abilità non possono essere sviluppate oltre 1/3 del Carisma: Gestione Prigionieri, Comando, Commercio.
 ui_delivered_number_damage|Hai inflitto %d danni.
 ui_mission_losses_killed|Uccisi :

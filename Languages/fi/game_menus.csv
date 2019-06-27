@@ -104,9 +104,9 @@ mno_start_2_hib|Jalosukuinen
 menu_start_haradrim|^^^^^^^Olet Haradrimilainen,^Aavikon mies.^Valitse sukulinjasi
 mno_start_1_des|Aavikko mies
 mno_start_2_far|Kaukaisen Haradin heimolainen
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+menu_start_numenorean|^^^^^^^Olet musta númenorilainen,^uskollinen pimeydelle ja Morgothille.^Valitse missä palvelet silmää
+mno_start_1_bn|Sauronin suun vieressä, MORANNONISSA
+mno_start_2_bn|Nekromantikon linnoituksessa, DOL GULDURISSA
 menu_choose_gender|^^^^^^^^^^Sukupuolesi?
 mno_start_male|Mies
 mno_start_female|Nainen
@@ -195,13 +195,13 @@ mno_leave|Poistu.
 menu_simple_encounter|^^^^^{s2}^Sinulla on {reg22} joukkoa valmiina taistelemaan heidän {reg11} vastaan.^^Taistelu käydään {s3}{s4}.^^Käskysi?
 mno_encounter_attack|{reg21?Hyökätkää heidän kimppuun:Valmistautukaa kohtaamaan heidät}.
 mno_encounter_order_attack|Käske miestesi liittyä taisteluun {reg21?attack:face} ilman sinua.
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
+mno_control_allies_menu|Käytä vaikutusvaltaa komentaaksesi liittolaisiasi taistelukentällä.
 mno_encounter_hide|Piiloudu viholliselta...
 mno_special_whip|Kiiruhda eteenpäin heitä kohti murtaen {s4}.
 mno_encounter_leave|Irroittaudu taistelusta.
 mno_encounter_retreat|Peräänny, jättäen joitakin sotilaita perääsi suojaten vetääntymisesi.
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_simple|Komenna heitä ja hyökkää vihollisten kimppuun
+mno_player_control_allies_back|Mene takaisin...
 mno_hide_close|Jatka...
 menu_encounter_retreat_confirm|^^^^^Seurueen parhaimpana jäsenenä taktisessa taidossa, ({reg2}), {reg3?you devise:{s3} devises} suunnitelma, joka aikoo antaa sinun ja miestesi paeta elävänä, mutta sinun pitää jättää {reg4} sotilaita perään pysäyttääkseen vihollisen ajojahdin.
 mno_leave_behind|Jatka. Näiden miesten uhraaminen pelastaa loput.
@@ -229,9 +229,9 @@ mno_pre_join_leave|Älä osallistu tähän.
 ; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
 mno_join_attack|Hyökkää vihollisten kimppuun.
 mno_join_order_attack|Käske sotilaittesi hyökätä liittolaistesi kanssa, samalla kun pysyttelet itse takana.
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|Käytä vaikutusvaltapisteitä komentaaksesi liittolaisiasi taistelukentällä.
 mno_join_leave|Irroittaudu taistelusta.
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|Komenna heitä ja hyökkää vihollisten kimppuun
 menu_join_order_attack|{s4}^^Sinun tappiot: {s8}^^Liittolaisiesi tappiot: {s9}^^Vihollisen tappiot: {s10}
 mno_enter|Astu sisään.
 menu_battlefields|^^^^^^^^^Valitse kenttä...
@@ -303,15 +303,15 @@ mno_tirith_toplevel|Kiipeä ylimmälle tasolle.
 mno_erebor_gates|Vieraile Isoilla porteilla
 mno_town_leave|Poistu...
 mno_town_leave_door|Poistu alueelta
-; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
+menu_player_initiated_siege_result|Hyökkäsit tätä keskusta vastaan palvellessasi {s2} lippua.
 menu_disembark|Haluatko nousta maihin?
 mno_disembark_yes|Kyllä.
 mno_disembark_no|Ei.
 menu_ship_reembark|Haluatko nousta maihin?
 mno_reembark_yes|Kyllä.
 mno_reembark_no|Ei.
-; menu_center_reports|Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days
-; menu_sneak_into_town_suceeded|Disguised in the garments of a poor pilgrim, you fool the guards and make your way into the town.
+menu_center_reports|Kaupungin nimi: {s1}^Vuokratulot: {reg1} denaaria^Tullitulot: {reg2} denaaria^Ruokavarastot: {reg3} päiväksi
+menu_sneak_into_town_suceeded|Naamioidut köyhän pyhiinvaeltajan vaatteisiin, huijaat vartioita ja tepastelet tiesi kaupunkiin.
 menu_sneak_into_town_caught|Kun yrität hiipiä sisään, yksi vartijoista huomaa sinut ja tekee hälytyksen! Sinun täytyy palata takaisin porttien läpi ennen kuin kaikki vartijat kaupungissa tulevat perääsi!
 mno_sneak_caught_fight|Yritä taistella tiesi ulos!
 mno_sneak_caught_surrender|Luovuta.
@@ -324,7 +324,7 @@ mno_whatever|Nouse ylös!
 ; menu_recover_after_death_default|^^^^^You regain your conciousness. You lie on the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wounds were lethal,  and although you feel awful, you find out you can still walk.  You get up and try to look for any other survivors from your party.
 ; menu_recover_after_death_town|^^^^You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town.  It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
 ; menu_recover_after_death_town_alone|You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town. Your companions found you. It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
-; menu_notification_center_under_siege|{s1} has been besieged by {s2} of {s3}!
+menu_notification_center_under_siege|{s1} on piirittänyt {s2} palvellen {s3}!
 menu_notification_one_side_left|^^^^^Sormuksen sota on ohi!^^{s1} ovat kukistaneet kaikki heidän vihollisensa ja ovat voittoisia!
 ; menu_notification_total_defeat|^^^^^The War of the Ring is over for you!^^The {s1} have been defeated by their enemies and you stand alone in defeat!
 ; menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, together with anyone left from {s11}, can still help your side win.

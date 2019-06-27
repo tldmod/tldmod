@@ -2036,7 +2036,7 @@ str_npc24_backstory_a|Uprzejmy chcę was zapytać , {playername} . Walczymy off 
 str_npc25_backstory_a|Jestem pewien, że można znaleźć kilka drobnych wolontariuszy jeśli mówić do kwatermistrza w koszarach . Jeśli chodzi o mnie , jestem tylko uzdrowicielem i zielarz od skromnych umiejętności.
 str_npc26_backstory_a|Masz szczęście! Nazywają mnie Gulm. Wypatroszyłem mojego sierżanta i teraz jego sługi polują na mnie. Ten bezwartościowy knur wiedział że to nadejdzie! Raz, gdy wpadliśmy w zasadzkę słomogłowych. A on to przegrał. "Odwrót" krzyczał, a potem uciekł. Tylko Gulm i kilku innych stało niewzruszenie i przełamało ich szarżę. Po tym już tylko zrobiliśmy miazgę z blondynów (heh heh heh). Ale gdyby nie my silni, wszyscy bylibyśmy pokarmem dla robali.
 str_npc27_backstory_a|I jestem Durgash
-; str_npc18_backstory_b|I prevailed! I defeated them! But... one of them was so weak that he perished from the blows I dealt him. If he had been a simple bondsman, that would have been the end of it. But no. He was one of Great Lord Lurmsakun's many sons, by a lesser wife.
+str_npc18_backstory_b|Przetrwałem! Pokonałem ich! Ale... jeden z nich był tak słaby, że zmarł od ciosów, jakie mu zadałem. Jeśli byłby zwykłym plebejuszem, na tym by się skończyło. Lecz nie. Musiał być jednym z wielu synów Wielkiego Pana Lurmasakun'a zrodzonym z mniej ważnej żony.
 ; str_npc19_backstory_b|Well, you will not find any of Rohan or Dunland who will accept my claim, but it is a true one nonetheless. My grand-dam was a herdswoman, living in the hills, and one day it chanced that old King Fengel, the greedy grasping grandfather of Theoden the Pretender, happened to see her on the banks of the Isen. He took a fancy to her, and my dam was his child.
 ; str_npc20_backstory_b|Do you not know before whom you stand? Ignorant fool. Know that I am Zigûrphel, of ancient Akallabêth - but like as not you know nothing of that name! Know, also, that I seek to redress the wrongs of long ago, the wrongs wrought upon me and my people by the spite of the Valar, they who sank our Great Armament and our home. Ah, Ar-Pharazôn, great and glorious! Shall your vision be unremembered evermore? No, not so long as Zigûrphel lives and has hands to do her work!
 str_npc21_backstory_b|\nUrodziłem się w rodzinie szlacheckiej i zostały obsługujących Lady EOWINA jako druhna odkąd byliśmy dziewczynki . Nasi ojcowie byli na tyle mądrzy, aby umożliwić nam trenować wraz z naszymi braćmi w sprawach walki, aby stać shieldmaidens Rohanu .
@@ -2066,7 +2066,7 @@ str_npc24_backstory_later|Budowanie murów obronnych jest warte każdego krasnol
 str_npc25_backstory_later|Ponownie skontaktowałem się z Królem, tym razem o wymioty. Mam nadzieję, że jego decyzja przyjęcia wroga nie ma związku z jego warunkami. Czy też cierpisz na zaparcia i wymioty?
 str_npc26_backstory_later|Jak myślisz, co robię? Gulm siedzi tutaj i czeka na jakiegoś podstępnego snaga, by trzymać go w ciemności. Zabierz mnie ze sobą - będę dobrze służył.
 str_npc27_backstory_later|Czy rozpatrzyłeś to? Będę dobrze służył
-; str_npc18_backstory_response_1|If you are truly as ferocious as you look, perhaps you could fight for me. After we feed you up a bit, of course.
+str_npc18_backstory_response_1|Jeśli naprawdę jesteś tak dziki, jak wyglądasz, mógłbyś się przydać w walce u mego boku. Po tym, jak Cię wyżywimy, rzecz jasna.
 str_npc19_backstory_response_1|Bardzo dobrze. Będziesz z Ciebie użytek tak długo, jak możesz walczyć na froncie, Dunlending.
 str_npc20_backstory_response_1|Dziwny sposób na pytanie o dołączenie do mnie, wiedźmo. Ale dobrze, możesz pójść ze mną.
 str_npc21_backstory_response_1|Z miłą chęcią przyjąłbym pomoc od Rohańskiej tarczowniczki, jeśli byłaby zaoferowana.
@@ -2076,7 +2076,7 @@ str_npc24_backstory_response_1|W rzeczy samej, krasnoludzki wojownik byłby mile
 str_npc25_backstory_response_1|Możemy użyć medyka i zielarza.
 str_npc26_backstory_response_1|Wydaję mi się, że przydałby się nam berserk.
 str_npc27_backstory_response_1|Zrobisz to
-; str_npc18_backstory_response_2|Pah! A murderous pit dog is not fit to be a companion of mine.
+str_npc18_backstory_response_2|Ech! Morderczy pies nie nadaje się do mojej kompanii.
 ; str_npc19_backstory_response_2|You talk of great deeds. Go and do some of your own, before you approach me again!
 ; str_npc20_backstory_response_2|Pah! I'm guessing your bark is far worse than your bite. I have work to do!
 str_npc21_backstory_response_2|Wybacz moja Pani, nic nie mogę na to poradzić.
@@ -2096,8 +2096,8 @@ str_npc24_signup|Jestem zaznajomiony z toporem, zarówno w walce wręcz jak i w 
 str_npc25_signup|Doprawdy? W takim razie muszę tylko zebrać moje zioła i przepisy.
 str_npc26_signup|Walczący Uruk jest wart więcej niż wy, snagi. Walczący Uruk nigdy nie ucieka z placu boju.
 str_npc27_signup|Naprawdę ? Postąpił byś słusznie zatrudniając mnie.
-; str_npc18_signup_2|My mother once told me, I was born to hew many foemen. For you, I will slay many soft weaklings of the West. Only put a good blade into my hands, and I will do the rest!
-; str_npc19_signup_2|I fight as my people do, like wolves in the night - I may fling a spear, or drive a pike into the chest of a charging horseman. Limbs I hew with axe or sword. With you, I will speak openly: I care not if you give more service to the Eye or the White Hand. It is all one to me, as long as I can sit my rightful throne in the Golden Hall.
+str_npc18_signup_2|Moja matka rzekła mi raz, że urodziłem się, by gromić swoich wrogów. Dla ciebie jestem gotów zabić wszystkich goblinów na zachodzie. Jeno daj mi w ręce dobry oręż, a resztą zajmę się ja.
+str_npc19_signup_2|Walczę, podobnie jak moi ludzie jak wilki w nocy - mogę rzucać włóczą. Mogę wbić się z piką prosto w szarżującą konnicę. Rąbać kończyny toporem lub mieczem. Powiem to wprost: nie obchodzi mnie czy służysz bardziej Oku, czy Białej Ręce. Wszystko mi jedno, dopóki mogę zasiadać na moim prawowitym tronie w Złotym Dworze.
 ; str_npc20_signup_2|But for now, let my lore and craft founded in long years be yoked to your service. Know this: with Zigûrphel's aid, you are as a dragon given its wings in the pit of Utumno. Great things I will do for you and your purpose, though you comprehend them not!
 str_npc21_signup_2|Wiele razy polowałem używając łuku i rzucając włóczniami. Będę ścigał orka pod twoją komendą. I mam jakieś umiejętności w uzdrawianiu, jestem pewien, że się przydadzą.
 str_npc22_signup_2|Być może, dzięki dołączeniu do twej kompanii i zjawieniu się tam gdzie się mnie nie spodziewają, wróg ucierpi najbardziej. Pójdę z tobą.
@@ -2117,7 +2117,7 @@ str_npc25_signup_response_1|Będziesz bezpieczniejszy z nami, obiecuje ci. Nied�
 str_npc26_signup_response_1|Bardzo dobrze. Rób, jak ci kazano,  a dobrze cię wyżywię.
 str_npc27_signup_response_1|Doskonale. Ruszajmy.
 ; str_npc18_signup_response_2|Your are fierce... perhaps too fierce. A little more time in the stocks for now might teach you obedience.
-; str_npc19_signup_response_2|You shall have to sit on these bales of hay for a little longer, 'Prince'.
+str_npc19_signup_response_2|Musisz siedzieć w tych belach siana trochę dłużej, 'Książe'.
 ; str_npc20_signup_response_2|Your brag and abuse grate upon my ears. Tame your tongue before we speak again!
 str_npc21_signup_response_2|Przepraszam, moja Pani, może następnym razem.
 str_npc22_signup_response_2|Z drugiej strony, może jednak musimy pomóc Lothlórien.

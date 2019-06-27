@@ -54,97 +54,97 @@ ui_crouch|Drepnúť si
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-; ui_are_you_sure_you_want_to_import_the_character|Are you sure you want to import the character?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
-; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path finding, Spotting, Inventory Management, Wound treatment, Surgery, First-aid, Engineer, Persuasion.
-; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Leadership, Trade.
-; ui_delivered_number_damage|Delivered %d damage.
-; ui_mission_losses_killed|killed :
-; ui_party_losses|%s  : %d wounded --- %d killed of %d.
-; ui_following|Following 
-; ui_accompanying|Accompanying 
-; ui_dumping_value_items|%d items will be permanently lost, are you sure?
-; ui_dumping_value_item|One item will be permanently lost, are you sure?
-; ui_notification_requirements_not_met|You don't have the required skills or attributes for this weapon.
-; ui_disband|Disband
-; ui_you_hit_a_friendly_troop|You hit a friendly troop!
-; ui_you_are_not_carrying_any_arrows|You are not carrying any arrows.
+ui_are_you_sure_you_want_to_import_the_character|Si si istý, že chceš previesť túto postavu?
+ui_explanation_strength|Sila: Každý bod ti pridáva +1 bodov života. Následujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnoty Sily: Valivuk, Mocný úder, Mocný vrh, Sila napnutia tetivy
+ui_explanation_intelligence|Bystrosť: Každý bod bystrosti ti okamžité dá tiež jeden voľný bod pre schopnosti. Následujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnoty Bystrosti: Cvičiteľ, Stopovanie, Taktika, Cestovanie, Pozorovanie, Veľkosť inventára, Chirurgia, Prvá pomoc, Staviteľ, Presviedčanie
+ui_explanation_charisma|Charizma: každý bod charizmy navyšuje vrchnú hranicu veľkosti tvojej družiny +1. Následujúce schopnosti nemôžu byť velepšené nad 1/3 hodnoty Charizmy: Väzenie, Vodcovstvo,  Obchod
+ui_delivered_number_damage|Spôsobil si %d poškodenia.
+ui_mission_losses_killed|zabitých :
+ui_party_losses|%s : %d  ranených --- %d zabitých z %d.
+ui_following|Následuje
+ui_accompanying|Robí spoločnosť
+ui_dumping_value_items|%dpredmetov sa nenávratne stratí, si si svojou voľbou istý?
+ui_dumping_value_item|Jeden predmet sa nenávratne stratí, sisi svojou voľbou istý?
+ui_notification_requirements_not_met|Nemáš dostatočné schopnosti či vlastnosti pre túto zbraň.
+ui_disband|Prepustiť z armády
+ui_you_hit_a_friendly_troop|Zasiahol si priateľskú jednotku!
+ui_you_are_not_carrying_any_arrows|Nenesieš so sebou žiadne šípy.
 ui_delivered_number_damage_to_horse|Spôsobené %d poškodenie zvieraťu.
-; ui_received_number_damage|Received %d damage.
-; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
-; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
-; ui_value_killed_by_value|%s killed by %s.
-; ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
-; ui_you_got_number_experience|You got %d experience.
-; ui_you_have_advanced_to_level_number|You have advanced to level %d.
+ui_received_number_damage|Utrpel si %d poškodenia.
+ui_you_have_improved_your_proficiency_in_value_to_number|Zlepšila sa ti zručnosť %sna %d.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Zlepšila sa ti zručnosť %so %d na %d.
+ui_value_killed_by_value|%s bol zabitý %s.
+ui_value_knocked_unconscious_by_value|%supadol do bezvedomia, môže za to%s.
+ui_you_got_number_experience|Získal si %d skúseností.
+ui_you_have_advanced_to_level_number|Postúpil si na úroveň %d.
 ui_you_got_value|%s získané.
-; ui_quest_succeeded_value|Quest succeeded: %s.
-; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
-; ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
-; ui_shared_number_experience_within_party|Shared %d experience within party.
-; ui_your_relations_with_value_has_improved_from_number_to_number|Your relations with %s has improved from %d to %d.
-; ui_your_relations_with_value_has_deteriorated_from_number_to_number|Your relations with %s has deteriorated from %d to %d.
-; ui_you_lost_value|You lost %s.
-; ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
-; ui_game_log_window|Game Log Window
-; ui_blunt_short|b
-; ui_tracks|Tracks
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_fire_orders|Fire orders
-; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
-; ui_game_log_window|Game Log Window
-; ui_unbalanced|Unbalanced
-; ui_can_crush_through_blocks|Can crush through blocks
+ui_quest_succeeded_value|Úloha splnená: %s.
+ui_number_of_companions_exceeds_leadership_limit|Počet spoločníkov prekročil hranicu vodcovstva.
+ui_number_of_prisoners_exceeds_prisoner_management_limit|Počet zajatcov prekročil hranicu väzenia.
+ui_shared_number_experience_within_party|Družina sa podelila o %d skúsenosti. 
+ui_your_relations_with_value_has_improved_from_number_to_number|Tvoj vzťah s %ssa zlepšil z %d na %d.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Tvoj vzťah s %s sa zhoršil z %dna %d.
+ui_you_lost_value|Stratil si %s.
+ui_change_graphics_settings_explanation|Niektoré zmeny, ktoré si previedol, sa prejavia až pri vstupe do novej oblasti.
+ui_game_log_window|Záznamové Okno Hry
+ui_blunt_short|b
+ui_tracks|Stopy
+ui_order_button_hold_fire|Zastaviť streľbu
+ui_order_button_fire_at_will|Voľná streľba
+ui_order_button_fire_orders|Rozkazy streľby
+ui_need_to_learn_prisoner_management|Potrebuješ sa naučiť schopnosť Väzenie aby si mohol získať zajatcov.
+ui_game_log_window|Záznamové Okno Hry
+ui_unbalanced|Nevyvážené
+ui_can_crush_through_blocks|Môže prerážať skrz ochranu
 
-; ui_order_1|Select Order 1
-; ui_order_2|Select Order 2
-; ui_order_3|Select Order 3
-; ui_order_4|Select Order 4
-; ui_order_5|Select Order 5
-; ui_order_6|Select Order 6
-; ui_order_button_hold_this_position|Hold this position
-; ui_order_button_follow_me|Follow me
+ui_order_1|Vybrať povel 1
+ui_order_2|Vybrať povel 2
+ui_order_3|Vybrať povel 3
+ui_order_4|Vybrať povel 4
+ui_order_5|Vybrať povel 5
+ui_order_6|Vybrať povel 6
+ui_order_button_hold_this_position|Držte postavenie!
+ui_order_button_follow_me|Následujte ma!
 ui_order_button_charge|Útok!
-; ui_order_button_stand_ground|Stand ground
-; ui_order_button_retreat|Retreat
-; ui_order_button_advance|Advance ten paces
-; ui_order_button_fall_back|Fall back ten paces
-; ui_order_button_spread_out|Spread out
-; ui_order_button_stand_closer|Stand closer
-; ui_order_button_mount_horses|Mount horses
+ui_order_button_stand_ground|Stáť!
+ui_order_button_retreat|Ústup!
+ui_order_button_advance|Postup o desať krokov vpred!
+ui_order_button_fall_back|Ústup od desať krokov!
+ui_order_button_spread_out|Rozptýliť!
+ui_order_button_stand_closer|Zomknúť!
+ui_order_button_mount_horses|Do sediel!
 ui_order_button_dismount|Zosadnúť
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_use_blunt_weapons|Use only blunt weapons
-; ui_order_button_use_any_weapon|Use weapons at will
-; ui_order_button_movement_orders|Movement orders
-; ui_order_button_formation_orders|Formation orders
-; ui_order_button_fire_orders|Fire orders
-; ui_follow_me_e_|%s, follow me!
-; ui_charge_e_|%s, charge!!!
-; ui_stand_ground_e_|%s, stand ground!
-; ui_retreat_e_|%s, retreat!
+ui_order_button_hold_fire|Zastaviť streľbu
+ui_order_button_fire_at_will|Voľná streľba
+ui_order_button_use_blunt_weapons|Používajte len ťažké zbrane!
+ui_order_button_use_any_weapon|Používajte zbrane podľa vlastnej voľby!
+ui_order_button_movement_orders|Rozkazy pohybu
+ui_order_button_formation_orders|Rozkazy útvarov
+ui_order_button_fire_orders|Rozkazy streľby
+ui_follow_me_e_|%s, následujte ma!
+ui_charge_e_|%s, útok!!!
+ui_stand_ground_e_|%s, stáť!
+ui_retreat_e_|%s, ústup!
 ui_mount_horses_e_|%s, Nasadnúť!
-; ui_dismount_e_|%s, dismount!
-; ui_advance_e_|%s, advance ten paces!
-; ui_fall_back_e_|%s, fall back ten paces!
-; ui_stand_closer_e_|%s, stand closer!
-; ui_spread_out_e_|%s, spread out!
-; ui_use_blunt_weapons_e_|%s, use only blunt weapons!
-; ui_use_any_weapon_e_|%s, use weapons at will!
+ui_dismount_e_|%s, zosadnúť!
+ui_advance_e_|%s, postupujte o desať krokov vpred!
+ui_fall_back_e_|%s, ustúpte o desať krokov!
+ui_stand_closer_e_|%s, zomknite sa!
+ui_spread_out_e_|%s, rozptýliť!
+ui_use_blunt_weapons_e_|%s, používajte len ťažké zbrane!
+ui_use_any_weapon_e_|%s, používajte zbrane podľa vlastného uváženia!
 ui_hold_fire_e_|%s, Nestrieľajte!
 ui_fire_at_will_e_|%s, Strieľajte podľa vlastného uváženia!
-; ui_hold_this_position_e_|%s, hold this position!
+ui_hold_this_position_e_|%s, držte postavenie!
 ui_infantry|Pechota
 ui_archers|Lukostrelci
 ui_cavalry|Kavaléria
-; ui_companions|Companions
-; ui_everyone_hear_me|Everyone, hear me!
+ui_companions|Spoločníci
+ui_everyone_hear_me|Všetci ma počúvajte!
 ui_everyone|Všetci
-; ui_everyone_around_me|Nearby Soldiers
-; ui_str_hear_me|%s, hear me!
+ui_everyone_around_me|Neďalekí Vojaci
+ui_str_hear_me|%s, počúvajte!
 
-; ui_return|Return
-; ui_factions|Factions
-; ui_troop_upgrades|Troop upgrades
+ui_return|Návrat
+ui_factions|Frakcie
+ui_troop_upgrades|Vylepšenia vojakov

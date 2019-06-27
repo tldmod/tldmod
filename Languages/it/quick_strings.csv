@@ -124,7 +124,7 @@ qstr_Fallen_rider_damage_|Messaggi di danno dal fantino caduto:
 qstr_No_Messages|Nessun messaggio
 qstr_Player_damage_only|Solo danni al giocatore
 qstr_All_Messages|Tutti i messaggi
-qstr_Troop_Identifier_in_|Id. Truppe in Battaglia (Premi Y durante una battaglia per mostrarlo/nasconderlo):
+qstr_Troop_Identifier_in_|Id. in Battaglia (Y durante una battaglia = On/Off):
 qstr_Disable|Disattiva
 qstr_Enable_without_Facti|Abilita senza Nomi di Fazione
 qstr_Enable_with_Faction_|Abilita con Nomi Fazioni
@@ -208,7 +208,7 @@ qstr_Use_from|Usa da
 qstr_Action_Menu|Menu azioni
 qstr_+1_to_First_Aid|+1 in Primo soccorso
 qstr_+1_to_Weapon_Mastery|+1 in Maestria nelle armi
-qstr_+1_to_Wound_Treatmen|+1 in Cura delle ferite
+qstr_+1_to_Wound_Treatmen|+1 in Trattamento Ferite
 qstr_+1_to_Tactics|+1 in Tattica
 qstr_+1_to_Power_Strike|+1 in Colpo potente
 qstr_when_equipped|Se equipaggiato
@@ -1084,7 +1084,7 @@ qstr_The_water_you_drank_|L'acqua che hai bevuto dagli Ents hanno uno strano eff
 qstr_Ent_water_effect:_in|Effetto dell'acqua degli Ent: aumenta la statura !
 qstr__+1_to_Strength__per|+1 di Forza (permanente)
 qstr__+1_to_Charisma__per|+1 di Carisma (permanente)
-qstr_The_dark_shadow_fina|L'ombra oscura finalmente sorge in una tempesta, e le orde del male iniziano la loro marcia verso il popolo libero della Terra di Mezzo. Mordor affronterà Gondor a Sud, Isengard contro Rohan ad Ovest, Dol Guldur contro gli elfi...Anche nel lontano Nord c'è una guerra a sé stante
+qstr_The_dark_shadow_fina|L'ombra oscura prorompe infine in una tempesta, e le orde del male iniziano la loro marcia verso il popolo libero della Terra di Mezzo. Mordor affronterà Gondor a Sud, Isengard sarà contro Rohan ad Ovest, Dol Guldur contro gli elfi... Anche nel lontano Nord si combatte una guerra.
 qstr_The_War_has_started!|La guerra è scoppiata !
 qstr_The_forest_seems_pea|La foresta appare tranquilla.
 qstr_There_is_a_sense_of_|Si percepisce un senso di pericolo nell'aria.
@@ -1268,7 +1268,7 @@ qstr_Men_of_Gondor|Uomini di Gondor
 qstr_Riders_of_Rohan|Cavallerizzi di Rohan
 qstr_Elves_of_Imladris_an|Elfi di Imladris e Lothlorien
 qstr_Men_of_Dale_Dwarves_|Uomini di Dale, Nani di Ereobor, consanguinei di Beorn ed Elfi di Bosco Atro
-qstr_Ah_{playername}_it_i|Ah, Ah, {playername}, è un bene che tu sia qui. La guerra è alle porte e abbiamo bisogno sia di soldati che capitani che assolvano il loro giuramento.^^Siamo in guerra con {s11}, ma dobbiamo radunare le nostre forse e indebolire il nemico prima di poter sperare di muovere contro i loro capisaldi e le loro fortezze. Ogni sconfitta dei nostri nemici ci porterà più vicini alla vitttoria e rafforzerà la nostra risoluzone, quindi ho fiducia in te perché tu combatta il nostro nemico ad ogni occasione, sia che si tratti di un semplice gruppo di esploratori che di un intero esercito. Tuttavia non lanciarti in battaglia senza nessuno, dovrai combattere al fianco dei nostri coraggiosi capitani e dei nostri alleati.
+qstr_Ah_{playername}_it_i|Ah, Ah, {playername}, è un bene che tu sia qui. La guerra è alle porte e abbiamo bisogno sia di soldati che di capitani che assolvano il loro giuramento.^^Siamo in guerra con {s11}, ma dobbiamo radunare le nostre forze e indebolire il nemico prima di poter sperare di muovere contro i loro capisaldi e le loro fortezze. Ogni sconfitta dei nostri nemici ci porterà più vicini alla vitttoria e rafforzerà la nostra risoluzione, quindi ho fiducia in te perché tu combatta il nostro nemico in ogni occasione, sia che si tratti di un semplice gruppo di esploratori che di un intero esercito. Tuttavia non lanciarti in battaglia senza nessuno, dovrai combattere al fianco dei nostri coraggiosi capitani e dei nostri alleati.
 qstr_About_time_you_showe|Finalmente ti fai vedere, {playername}. Siamo in guerra adesso e non tolllererò alcuna insubordinazione. Stiamo combattendo contro {s11}, ma dobbiamo radunare le nostre forze e colpire il nemico sul campo prima di muoverci verso le loro fortezze. Ogni sconfitta dei nostri avversari rafforzerà il nostro sforzo bellico e li porterà vicino alla loro completa disfatta. Perciò confido in te perché tu combatta il nemico in ogni occasione, che si tratti di un semplice gruppo di esploratori o di un'intera armata. Inoltre, dovrai supportare i nostri capitani e i nostri alleati se li vedrai impegnati in combattimento. Non deluderli o lo verrò a sapere.
 qstr_we_are_fighting_agai|stiamo combattendo contro {s13}
 qstr_we_are_not_fighting_|non stiamo combattendo nessuno al momento
@@ -1281,7 +1281,7 @@ qstr_Lord|Lord
 qstr_my_king|mio re
 qstr_lord|signore
 qstr_our|nostro/nostra/nostri
-qstr_your|tuo/tua/tuoi/tue
+qstr_your|tuo
 qstr_Moria_and_Gundabad|Moria e Gundabad
 qstr_Moria|Moria
 qstr_Gundabad|Gundabad 
@@ -1305,7 +1305,7 @@ qstr_Let_us_begin._It_may|Cominciamo. Potrebbe volerci del tempo. Rilassati e la
 qstr_Impressive..._You_di|Impressionante... Non hai indietreggiato molto. Torna al tuo posto.
 qstr_Rest_the_wounds_have|Riposa, le ferite sono state curate.
 qstr_Your_party_must_be_a|La tua compagnia deve avere una forza di almeno 30 elementi per iniziare questa missione
-qstr_You_were_tasked_to_h|Eri stato incaricato di dare la caccia ai banditi che hanno recentemente scatenato il caos nel Nord. Puoi attaccarli nel loro nascondiglio nei pressi di Bosco Atro o di intercettarli vicino alla Casa di Beorn.
+qstr_You_were_tasked_to_h|Hai ricevuto l'incarico di dare la caccia ai banditi che hanno recentemente scatenato il caos nel Nord. Puoi attaccarli nel loro nascondiglio nei pressi di Bosco Atro o intercettarli vicino alla Casa di Beorn.
 qstr_Mordor_gains_Faction|Mordor ottiene Forza Fazione quando riceve un'arma sconosciuta
 qstr_Beornings_gain_Facti|La fazione di Beorn ottiene forza quando le notizie sulla tua vittoria iniziano a circolare.
 qstr_Beornings_lose_Facti|I Beorniani perdono Forza Fazione quando vengono attaccati.

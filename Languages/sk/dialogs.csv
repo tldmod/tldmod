@@ -1,12 +1,12 @@
 dlga_start:mutiny_pretalk_1|Zdravím, veliteľ {playername}. Čujte..^Chlapi sa sťažujú! Chcú viac zábavy, menej pochodovania.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Späť do rady, červ! Sme vo vojne a ja som tvoj veliteľ.
 dlga_mutiny_pretalk_2:close_window|Jak chceš, veliteľ. Jak chceš...
-dlga_start:mutiny_talk_1|Zdravíčko, veliteľ. Počúvajte... Chlapi nie sú veľmi spokojný, vlastne vôbec. ^Málo ľudského mäsa, málo zábavy, ^Chlapi hovoria, že nie ste veliteľ na nič !
+dlga_start:mutiny_talk_1|Zdravíčko, veliteľ. Čujte... Chlapi nie sú veľmi spokojní, vlastne vôbec. ^Málo ľudského mäsa, málo zábavy, ^Chlapi hovoria, že nie ste veliteľ na nič !
 dlga_mutiny_talk_1:mutiny_talk_2|Čože? Vzbura počas vojny? ^To sa trestá smrťou, červ!
 dlga_mutiny_talk_2:close_window|Viete čo? ^Chlapi si myslia že budem pre nich lepší veliteľ, keď vás ZABIJEM!
 dlga_start:troll_introduce_1|Problem?
 dlga_start:troll_talk_1|Naštvaný ?
-dlga_troll_introduce_1:troll_goodbye|Whoa! Hovoriaci trol ?
+dlga_troll_introduce_1:troll_goodbye|Vhoa! Hovoriaci trol ?
 dlga_troll_introduce_1:close_window|Vlastním koňa.
 dlga_troll_talk_1:troll_talk_2|Vytrol ma, trol.
 dlga_troll_talk_1:close_window|Vlastním koňa.

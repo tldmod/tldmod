@@ -124,7 +124,7 @@ mno_camp_action|Usa un oggetto.
 mno_camp_wait_here|Accampati qui per qualche tempo.
 mno_camp_options|Cambia le opzioni di TLD.
 mno_Dev_Menu|Menu Sviluppatore
-menu_dev_menu|Queste sono Opzioni di Sviluppo che ti forniscono parecchi trucchi/strumenti che potrai usare.^^ Tuttavia, ciò determinerà cambiamenti in eventi incorso, interruttori, modifiche alla campagna che potrebbero mandare in crash il gioco.^^ Fanne uso a tuo rischio ! ^^ Inoltre, nel segnalare bugs, ti preghiamo di specificare che hai fatto uso del Menu Sviluppatore.
+menu_dev_menu|Queste sono Opzioni di Sviluppo che ti forniscono parecchi trucchi/strumenti che potrai usare.^^ Tuttavia, ciò determinerà cambiamenti negli eventi in corso, interruttori, modifiche alla campagna, che potrebbero mandare in crash il gioco.^^ Fanne uso a tuo rischio ! ^^ Inoltre, nel segnalare bugs, ti preghiamo di specificare che hai fatto uso del Menu Sviluppatore.
 mno_Cheat_enable|Abilita opzioni cheat/modding.
 menu_game_options|^^^^^^^^Clicca su un'opzione per attivarla:
 mno_game_options_war_level_start|La guerra inizierà a livello: {s1}
@@ -213,10 +213,10 @@ mno_call_back|Chiamali indietro.
 menu_order_attack_2|^{s4}^Le tue perdite: {s8}^^Perdite nemiche: {s9}
 mno_order_attack_continue|Ordina ai tuoi soldati di continuare l'attacco.
 mno_order_retreat|Fai ritirare i tuoi soldati.
-menu_kingdom_army_quest_report_to_army|{s8} manda a dire che vuole che tu ti unisca alla sua nuova campagna militare. È necessario portare almeno {reg13} truppe per l'esercito, e sei incaricato di arruolare più guerrieri con la dovuta rapidità se non ne hai abbastanza.
+menu_kingdom_army_quest_report_to_army|{s8} manda a dire che vuole che tu ti unisca alla sua nuova campagna militare. È necessario portare almeno {reg13} truppe per l'esercito, e hai l'incarico di arruolare più guerrieri con la dovuta rapidità, se non ne hai abbastanza.
 mno_reject|Invia un messaggio in cui dichiari di essere troppo impegnato.
 mno_send_word|Fagli sapere che presto ti unirai a lui.
-menu_kingdom_army_quest_messenger|{s8} manda a dire che vuole parlare con te di un compito che ha bisogno di eseguire. Egli chiede di andare a consultarlo al più presto possibile..
+menu_kingdom_army_quest_messenger|{s8} manda a dire che vuole parlare con te a proposito di un compito che di cui ha bisogno. Egli ti chiede di andare a consulto il più presto possibile..
 menu_kingdom_army_quest_join_siege_order|{s8}  manda a dire che si sta per unire l'assedio di {s9} in preparazione di un assalto. Le tue truppe devono prendere {s9} a tutti i costi.
 menu_kingdom_army_follow_failed|Hai disobbedito agli ordini e non sei riuscito a seguire {s8}.  Manda un messaggio che presuppone che tu hai questioni più urgenti, ma mettiti in guardia la sua pazienza non è illimitata.
 menu_battle_debrief|{s11}^Le tue perdite:{s8}{s10}^^Perdite nemiche:{s9}
@@ -248,7 +248,7 @@ menu_besiegers_camp_with_allies|{s1} rimane sotto assedio. Gli stendardi di {s2}
 mno_talk_to_siege_commander|Richiedi un incontro con il comandante.
 mno_join_siege_with_allies|Unisciti al prossimo assalto.
 mno_join_siege_stay_back|Ordina ai tuoi soldati di unirsi al prossimo assalto senza di te.
-menu_moria_must_escape|^^Il libro sembra essere un resoconto dell'ultimo tentativo dei nani di ristabilirsi a Moria. Tentativo che apparentemente sembra essersi concluso con una morte terribile per tutti i soggetti coinvolti. Sfogliando le pagine, ti imbatti nelle parole 'vero argento ! Studiando il libro improvvisamente comprendi che si tratta della descrizione delle scorte segrete naniche e che queste dovrebbero trovarsi nei livelli inferiori. Hah ! Non sarebbe fantastico riportare alla luce il Mithril nanico da tempo perduto !? ^Con entusiasmo cerchi di seguire la strada, scendendo in uno stretto e tortuoso tunnel... ^...^Dopo un paio d'ore d'infruttuosa ricerca capisci che ti sei perso nelle profondità di Moria e che ora devi cercare la via per uscirne.
+menu_moria_must_escape|^^Il libro sembra essere un resoconto dell'ultimo tentativo dei nani di ristabilirsi a Moria. Tentativo che pare si sia concluso con la morte terribile per chi vi era coinvolto. Sfogliando le pagine, t'imbatti nelle parole 'vero argento' ! Studiando il libro improvvisamente comprendi che si tratta della descrizione delle scorte segrete naniche e che queste dovrebbero trovarsi nei livelli inferiori. Hah ! Non sarebbe fantastico riportare alla luce il Mithril nanico da tempo perduto !? ^Con entusiasmo cerchi di seguire la strada, scendendo in uno stretto e tortuoso tunnel... ^...^Dopo un paio d'ore d'infruttuosa ricerca ti rendi conto di aver perso la strada nelle profondità di Moria e che ora devi cercare una via per uscirne.
 mno_moria_exit_scene|Trova la via d'uscita !
 menu_castle_outside|Sei fuori da: {s2}. {s11} {s3} {s4}
 mno_moria_enter|Ritorna nel salone principale di Moria attraverso l'entrata segreta
