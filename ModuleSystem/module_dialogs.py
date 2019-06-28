@@ -2829,7 +2829,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
       (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
       (str_store_string, s5, "@{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least."),
     (else_try),
-      (str_store_string, s5, "@Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, <Player>, to your betters. Have no fear about that."),
+      (str_store_string, s5, "@Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that."),
     (try_end),
     ],
 "{s5}", "lord_defeat_lord_complete",[
