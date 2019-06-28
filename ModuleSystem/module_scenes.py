@@ -249,7 +249,7 @@ scenes = [
 #backup("woodsmen_village2_center"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
 ("beorning_village_center"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b00893e30004851f0000457900001af000004ca7",[],[],"outer_terrain_plain"),
 #backup ("beorning_village_center"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
-("isengard_center_flooded"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
+("isengard_center_flooded"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000320000500000d234800002ba680005bd500005b5d",[],[],"outer_terrain_isen_low_1"),
 
 ("erebor_dungeon_01",sf_indoors,"dungeon_a","bo_dungeon_a",(-100,-100),(100,100),-100,"0",[],[]),
 
@@ -399,7 +399,7 @@ scenes = [
 ("morannon_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
 
 ("minas_tirith_outside" ,sf_generate|sf_auto_entry_points,"none","none",(84,457),( 339, 532),-100.0,"0x00000003300005000009c5a20000348600005bd50000739d",[],[],"outer_terrain_tirith_1"), #InVain changed terrain code: Has grass now!
-("isengard_outside" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-100.0,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
+("isengard_outside" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-100.0,"0x000000032001c500000791fd0000738000005bd50000739d",[],[],"outer_terrain_isen_low_far"),
 
   ] + (is_a_wb_scene==1 and [
 ("erebor_outside" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000130000500000d23480000755000005bd50000739d",[],[],"outer_mountains2west"),

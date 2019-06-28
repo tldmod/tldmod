@@ -2725,7 +2725,7 @@ scene_props = [
 		(particle_system_add_new, "psys_water_fall"),
 		#(play_sound,"snd_waterfall", 0),
 		(set_position_delta, 0, 120, -100),
-		(particle_system_add_new, "psys_water_fall_2"),
+		(particle_system_add_new, "psys_water_fall_3"),
 		]),
     ]),
 
