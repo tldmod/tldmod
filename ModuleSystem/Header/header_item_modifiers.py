@@ -20,10 +20,10 @@ imod_heavy       = 18 # +2 damage, +3 armor, +10 hp, -2 speed, +1 prerequisite, 
 imod_strong      = 19 # +3 damage, ................. -3 speed, +2 preresuisite
 imod_powerful    = 20 # --------
 imod_tattered    = 21 # .......... -3 armor
-imod_ragged      = 22 # .......... -2 armor
+imod_ragged      = 22 # .......... -2 armor 		= "rough"
 imod_rough       = 23 # --------
 imod_sturdy      = 24 # .......... +1 armor
-imod_thick       = 25 # .......... +2 armor, +47 hp
+imod_thick       = 25 # .......... +2 armor, +47 hp = "robust"
 imod_hardened    = 26 # .......... +3 armor
 imod_reinforced  = 27 # .......... +4 armor, +83 hp
 imod_cloak       = 28 # --------
