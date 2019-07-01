@@ -2136,14 +2136,15 @@ scripts = [
   		#(eq,0,1), ## debug: failing on pourpose
 		(gt,":volunteers",0), # Rafa: a very crude handling of the volunteer's party not being created
 
-		# compute ideal number of volunteers
+		# compute ideal number of volunteers #InVain: Adjusted to account for bigger starting garrison sizes, putting more weight on player progress
 		(store_party_size_wo_prisoners, ":to_add", ":town"),
-    	(val_div, ":to_add", 20), #   base: [num-garrison] / 20
+    	(val_div, ":to_add", 60), #   base: [num-garrison] / 100 #InVain: was 20
 	    (call_script, "script_get_faction_rank", ":fac"),
 	    (assign, ":rank", reg0),
+		(val_mul, ":rank", 2), #added by InVain
 	    (val_add, ":to_add", ":rank"), #  + rank
 	    (store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
-	    (val_div, ":lead_bonus", 2),
+	    #(val_div, ":lead_bonus", 2), #disabled by InVain
 	    (val_add, ":to_add", ":lead_bonus"),   # +leadership / 2
 	    # orc bonus
 	    (assign, ":is_orc_faction", 0),
@@ -2154,10 +2155,11 @@ scripts = [
 		    (this_or_next|eq, ":fac", "fac_guldur"),
 		    (eq, ":fac", "fac_gundabad"),
 		    (assign, ":is_orc_faction", 1),
-	    	(val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions
+	    	(val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions #InVain: Not sure if still needed (due to huge orc starting garrisons), but let's keep it for now.
 	  	(try_end),
 	    # town relations bonus +size*rel/100
 	    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
+		(val_mul, ":center_relation", 2), #added by Invain
 	    (val_add, ":center_relation", 100),
 	    (val_mul, ":to_add", ":center_relation"), (val_div, ":to_add", 100),
 	    

@@ -2453,19 +2453,18 @@ scene_props = [
 ("Dale_castle_courtyard_entry_b",0,"Dale_courtyard_entry_b","bo_Dale_courtyard_entry_b", []),
 ("Dale_castle_courtyard_house_b",0,"Dale_castle_courtyard_house_a","bo_castle_courtyard_house_b", []),
 
-
-# wb ships
-  ( "ship"                                       ,0,"ship","bo_ship",[]),
-  ( "ship_b"                                     ,0,"ship_b","bo_ship_b",[]),
-  ( "ship_d"                                     ,0,"ship_d","bo_ship_d",[]),
-  ( "ship_c"                                     ,0,"ship_c","bo_ship_c",[]),
-  ( "ship_sail_off"                              ,0,"ship_sail_off","bo_ship_sail_off",[]),
-  ( "ship_sail_off_b"                            ,0,"ship_sail_off_b","bo_ship_sail_off",[]),
-  ( "ship_c_sail_off"                            ,0,"ship_c_sail_off","bo_ship_c_sail_off",[]),
-
 ] or []) + [
 
-("distant_mountain_snow_1",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_1","0", []), #InVain: These two were WB only before. Moved them out of the script to make them available in MB.
+#InVain: WB only props below, hidden (no asset) in M&B
+("ship"                                       ,0,"ship","bo_ship",[]),
+("ship_b"                                     ,0,"ship_b","bo_ship_b",[]),
+("ship_d"                                     ,0,"ship_d","bo_ship_d",[]),
+("ship_c"                                     ,0,"ship_c","bo_ship_c",[]),
+("ship_sail_off"                              ,0,"ship_sail_off","bo_ship_sail_off",[]),
+("ship_sail_off_b"                            ,0,"ship_sail_off_b","bo_ship_sail_off",[]),
+("ship_c_sail_off"                            ,0,"ship_c_sail_off","bo_ship_c_sail_off",[]),
+
+("distant_mountain_snow_1",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_1","0", []),
 ("distant_mountain_snow_2",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_2","0", []),
 
 ("osgiliath_far_f",0,"osgiliath_far","0", []),   
@@ -2833,16 +2832,18 @@ scene_props = [
 ( "khazad_dwarf_wall_decor_2",0,"khazad_dwarf_wall_decor_2","bo_khazad_dwarf_wall_decor_2",[]),
 ( "khazad_dwarf_bench_2",0,"khazad_dwarf_bench_2","bo_khazad_dwarf_bench_2",[]),
 
-( "blood_decal_1",0,"prop_mesh_blood_1","0",[]),
-( "blood_decal_2",0,"prop_mesh_blood_2","0",[]),
-( "blood_decal_3",0,"prop_mesh_blood_3","0",[]),
-( "chain_hanging_5m",0,"chain_hanging_5m","0",[]),
-( "chain_hanging_10m",0,"chain_hanging_10m","0",[]),
-( "isen_sarustaff",0,"sarustaff","0",[]),
+("blood_decal_1",0,"prop_mesh_blood_1","0",[]),
+("blood_decal_2",0,"prop_mesh_blood_2","0",[]),
+("blood_decal_3",0,"prop_mesh_blood_3","0",[]),
+("chain_hanging_5m",0,"chain_hanging_5m","0",[]),
+("chain_hanging_10m",0,"chain_hanging_10m","0",[]),
+("isen_sarustaff",0,"sarustaff","0",[]),
 ("isen_pillar_marble_adorno",0,"isen_pillar_marble_adorno","bo_isen_pillar_adorno", []),
 ("isen_pillar_iron_adorno",0,"isen_pillar_iron_adorno","bo_isen_pillar_adorno", []),
 ("isen_pillar_bronze_adorno",0,"isen_pillar_bronze_adorno","bo_isen_pillar_adorno", []),
 ("isen_pillar_steel_adorno",0,"isen_pillar_steel_adorno","bo_isen_pillar_adorno", []),
+
+("umbar_corsair_ship",0,"corsair_ship","bo_corsair", []),
 
 
 #InVain props end

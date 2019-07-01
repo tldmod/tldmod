@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1764
+ 1772
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4759,6 +4759,27 @@ spr_Dale_fake_house_far_c 0 0 Dale_fake_house_far_c bo_fake_house_far_c 0
 spr_Dale_fake_house_far_d 0 0 Dale_fake_house_far_d bo_fake_house_far_d 0
 
 
+spr_ship 0 0 ship bo_ship 0
+
+
+spr_ship_b 0 0 ship_b bo_ship_b 0
+
+
+spr_ship_d 0 0 ship_d bo_ship_d 0
+
+
+spr_ship_c 0 0 ship_c bo_ship_c 0
+
+
+spr_ship_sail_off 0 0 ship_sail_off bo_ship_sail_off 0
+
+
+spr_ship_sail_off_b 0 0 ship_sail_off_b bo_ship_sail_off 0
+
+
+spr_ship_c_sail_off 0 0 ship_c_sail_off bo_ship_c_sail_off 0
+
+
 spr_distant_mountain_snow_1 69632 0 distant_mountain_snow_1 0 0
 
 
@@ -5349,6 +5370,9 @@ spr_isen_pillar_bronze_adorno 0 0 isen_pillar_bronze_adorno bo_isen_pillar_adorn
 
 
 spr_isen_pillar_steel_adorno 0 0 isen_pillar_steel_adorno bo_isen_pillar_adorno 0
+
+
+spr_umbar_corsair_ship 0 0 corsair_ship bo_corsair 0
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0

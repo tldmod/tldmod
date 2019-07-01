@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1804
+ 1805
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5469,6 +5469,9 @@ spr_isen_pillar_bronze_adorno 0 0 isen_pillar_bronze_adorno bo_isen_pillar_adorn
 
 
 spr_isen_pillar_steel_adorno 0 0 isen_pillar_steel_adorno bo_isen_pillar_adorno 0
+
+
+spr_umbar_corsair_ship 0 0 corsair_ship bo_corsair 0
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0
