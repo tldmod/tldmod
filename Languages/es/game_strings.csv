@@ -5,7 +5,7 @@ str_noone|nadie
 str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} y {s51}
 str_s5_s_party| Grupo de {s5}
-str_s5_s_host| Hueste de {s5}
+str_s5_s_host|Hueste de {s5}
 str_given_by_s1_at_s2|Dada por {s1} en {s2}
 str_given_by_s1_in_wilderness|Dada por {s1} en campaña
 str_s7_raiders|Asaltantes {s7}
@@ -70,7 +70,7 @@ str_custom_battle_5|Ugluk ha traido a sus fieros orcos al oeste con promesas de 
 str_custom_battle_6|Ugluk y su pelotón de orcos hacían todo lo posible para escapar de las patrullas élficas. Pero la suerte no dura eternamente y por lo que parece ahora es el turno de los sucios Pálidos para vengarse.
 str_custom_battle_7|¡Los corsarios han montado un campamento en las costas de Gondor! ¡Cómo se atreven! Ataquemos antes de que obtengan refuerzos y devolvámoslos al mar, de donde vinieron.
 str_finished|(Terminado)
-str_delivered_damage|Realizado {reg60} daño.
+str_delivered_damage|Haces {reg60} puntos de daño.
 str_archery_target_hit|Distancia: {reg61} yardas. Puntuación: {reg60}
 str_use_baggage_for_inventory|Usa tu equipaje para acceder a tu inventario durante la batalla (está en tu posición inicial).
 str_cant_use_inventory_now|No se puede acceder al inventario ahora.
@@ -363,7 +363,7 @@ str_npc2_intro_response_1|Mis asuntos son los asuntos de Gondor, ¿quién eres t
 str_npc3_intro_response_1|Buen día a ti también, ¿hay algún problema?
 str_npc4_intro_response_1|Saludos, mi señora. ¿Con quién tengo el honor de hablar?
 str_npc5_intro_response_1|¡Salve, señor de los elfos! Es un gran honor conocerte.
-str_npc6_intro_response_1|¿Así es como los Elfos Silvanos saludan a sus invitados?
+str_npc6_intro_response_1|¿Es así como los elfos silvanos reciben a sus invitados?
 str_npc7_intro_response_1|{playername} a tu servicio. ¿Cómo le va al pueblo de Durin?
 str_npc8_intro_response_1|Saludos. Me preguntaba si habría voluntarios para unirse a nosotros en nuestros viajes.
 str_npc9_intro_response_1|Retira tus amenazas, Uruk, antes de que lleguemos a las manos. No soy {un chivato/una chivata}.
@@ -397,7 +397,7 @@ str_npc2_backstory_a|Ah, qué {considerado/considerada} eres por preguntar por m
 str_npc3_backstory_a|Bueno, mi viejo casco se está encogiendo por momentos y la tierra se agita como si cabalgara a lomos de un potro travieso. Ah, si anoche no hubiese bebido toda esa cerveza... normalmente tengo buena cabeza para beber, debe de haber sido algún brebaje orco.
 str_npc4_backstory_a|Me llamo Gálmynë, y me he interesado personalmente en conocer tus asuntos, {playername}. Permíteme explicarte por qué.
 str_npc5_backstory_a|Es posible que hayas escuchado historias sobre mis hazañas en batallas pasadas y olvidadas por los Hombres mortales. En la inmensidad del tiempo, la guerra es otro peligro más para los Eldar, pero esta será la última guerra.
-str_npc6_backstory_a|Disculpa mi brusquedad, {forastero/forastera}, pero no solemos tener muchos visitantes, y los pocos que vienen no parecen de confianza. Hace una semana, apareció un enano y... no importa. Me llamo Luevanna, de los Elfos Silvanos del Bosque Negro.
+str_npc6_backstory_a|Disculpa mi brusquedad, {forastero/forastera}, pero no solemos tener muchos visitantes, y los pocos que vienen no nos dan buena espina. Hace una semana apareció un enano y... bueno. Me llamo Luevanna, Elfa Silvana del Bosque Negro.
 str_npc7_backstory_a|Eres muy {considerado/considerada} al preguntarlo, {playername}. Estamos combatiendo las incursiones de Hombres del Este y orcos de Gundabad, por ahora nada que nosotros o nuestros aliados de Valle no podamos manejar.
 str_npc8_backstory_a|Estoy segura de que puedes encontrar excelentes voluntarios si hablas con el intendente en los barracones. En cuanto a mí, sólo soy una curandera y herbolaria con modestas habilidades.
 str_npc9_backstory_a|¡Bien por ti! Me llaman Gulm. He destripado a mi sargento, y ahora sus snaga me dan caza. ¡Ese cerdo se lo estaba buscando! Una vez, nos emboscó una patrulla de Cabezas-de-Paja... y perdió el control. «¡Retirada!» gritó, y huyó. Solo Gulm y unos pocos se mantuvieron firmes y rompieron la carga de su caballería. Luego apaleamos a los cabezas-amarillas hasta convertirlos en pulpa (je je je). Pero si no hubiese sido por nosotros los fuertes, ¡todos habrían sido comida para los gusanos!
@@ -1313,7 +1313,7 @@ str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
 str_mordor_rumor_15|¡Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai!
 str_mordor_rumor_16|Si te insulta, mátalo. Si pelea contigo, mátalo. Si se te queda mirando, mátalo. Si está muerto, cómetelo.
 str_mordor_rumor_17|Los uruk-hai de Saruman dicen que no les molesta el sol. ¡Bûbhosh skai!
-str_mordor_rumor_18|Todos muertos, todos putrefactos. Elfos y Hombres y Orcos. ¡En la Ciénaga de los Muertos!
+str_mordor_rumor_18|Todos muertos, todos putrefactos. Elfos, hombres y orcos. ¡Todos en la Ciénaga de los Muertos!
 str_mordor_rumor_19|¡No te interpongas entre el Nazgûl y su presa!
 str_mordor_rumor_20|¿Isengardos? ¡Los lacayos de un mago insignificante! Apuesto a que se alimentan de carne de orco.
 str_mordor_rumor_21|El Bosque Negro ya está bajo nuestro control, pero los elfos todavía no lo saben.
@@ -1343,7 +1343,7 @@ str_rhun_rumor_begin|¡Cabalgad como el viento de la estepa!
 str_rhun_rumor_2|Los Enanos son viles y codiciosos. Y los hombres de Valle les ayudan a engañarnos y a aprovecharse de nosotros.
 str_rhun_rumor_3|Tres magos vinieron a nuestras tierras hace tiempo. Me pregunto en que andarán metidos.
 str_rhun_rumor_4|Nuestras tierras son extensas y escasamente pobladas. Pero sabemos cómo sobrevivir allí.
-str_rhun_rumor_5|Antes solíamos comerciar con los Elfos y con los Enanos, trayendo vino y hierba para pipa de las tierras fértiles. ¡Pero nos mentían y engañaban!
+str_rhun_rumor_5|Antes solíamos comerciar con los elfos y con los enanos, trayendo vino y hierba para pipa de las tierras fértiles. ¡Pero nos mentían y engañaban!
 str_rhun_rumor_6|Nuestros primos de Khand prefieren luchar a pie, pero nosotros sabemos que luchar a caballo es mejor.
 str_rhun_rumor_7|Hemos derrotado a las legiones de Gondor en el pasado, ¡y lo volveremos a hacer!
 str_rhun_rumor_8|¡Lucharemos hasta la muerte! ¡No habrá retirada, nunca volveremos la espalda para huir! ¡Ni un paso atrás!
@@ -1381,13 +1381,13 @@ str_beorn_rumor_14|¡No deambules {solo/sola} por las montañas! Osos y lobos se
 str_lorien_rumor_begin|Oh Lórien. Llega el invierno, el día desnudo y deshojado; las hojas caen en el agua, el Río fluye alejándose.
 str_lorien_rumor_2|¡No hables mal de la Dama Galadriel! En ella y en esta tierra no hay ningún mal, a no ser que un hombre lo traiga aquí él mismo. Y entonces ¡que él se cuide!
 str_lorien_rumor_3|Es cierto que el mundo está colmado de peligros, y que hay en él muchos sitios lóbregos, pero hay también muchas cosas hermosas, y aunque en todas partes el amor está unido hoy a la aflicción, no por eso es menos poderoso.
-str_lorien_rumor_4|El mal y el bien no han cambiado desde ayer, ni tienen un sentido para los Elfos y Enanos y otro para los Hombres. Corresponde al hombre discernir entre ellos, tanto en el Bosque de Oro como en su propia casa.
+str_lorien_rumor_4|El bien y el mal no cambia; ni varía mucho entre elfos y enanos u Hombres. Es el deber de un hombre saber distinguirlos, tanto en el Bosque Dorado como en su propia casa.
 str_lorien_rumor_5|¡A menudo el odio se vuelve contra sí mismo!
 str_lorien_rumor_6|Una magia antigua protege Lothlórien, y es tan poderosa que la Oscuridad no se atreve todavía a hacerle frente.
 str_lorien_rumor_7|¡Nathlo i nathal! Estás a salvo en el Bosque Dorado. Posto vae. Descansa ahora, come y bebe. Si tienes que marcharte, entonces lleva contigo el recuerdo de cómo Lórien fue una vez.
 str_lorien_rumor_8|Se dice que tarde o temprano el mar nos llama a todos. Yo también oiré el sonido de las gaviotas algún día, y dejaré las tierras de Laurelindórenan para siempre. I Harthon an lend and.
 str_lorien_rumor_9|Av-'osto, ¡no temas! Nos protege del enemigo algo más que nuestras capas grises.
-str_imladris_rumor_begin|Que la dicha de Elfos, Hombres y toda la Gente Libre te acompañe.
+str_imladris_rumor_begin|Que la dicha de elfos, Hombres y toda la Gente Libre te acompañe.
 str_imladris_rumor_2|¡Que las estrellas te iluminen!
 str_imladris_rumor_3|Aquel que quiebra algo para averiguar qué es, ha abandonado el camino de la sabiduría.
 str_imladris_rumor_4|Hemos de elegir un camino difícil, un camino imprevisto. Ésa es nuestra esperanza, si hay esperanza.
@@ -1414,7 +1414,7 @@ str_dale_rumor_6|Los Enanos se encariñan demasiado con sus tesoros. Todavía no
 str_dale_rumor_7|Los hombres de Rohan son nuestros primos y nuestra propia lengua es muy similar a la suya.
 str_dale_rumor_8|Esgaroth obtuvo su nombre de la palabra élfica para los juncos, por sus campos de juncos. ¿Lo sabías?
 str_dale_rumor_9|Nadie quiere volver a ver un dragón por esta zona, bastante daño han causado ya esos monstruos.
-str_dale_rumor_10|Nuestra prosperidad se debe al comercio con los Enanos y los Elfos. Pero es difícil negociar con los Enanos. Se obtiene muy poca ganancia ahí.
+str_dale_rumor_10|Nuestra prosperidad se debe al comercio con enanos y elfos. Pero es difícil negociar con los primeros; mucho regateo y poco beneficio.
 str_harad_rumor_begin|La Serpiente Negra golpeará rápida y letal.
 str_harad_rumor_2|¡Por la Serpiente! Nuestros caballos pisotearán a los soldados de Gondor.
 str_harad_rumor_3|¡Odum vermajál otí verthaba av daranaja-e-jatánus!
@@ -1437,7 +1437,7 @@ str_gunda_rumor_4|Una vez vimos a un escurridizo ser merodeando en nuestros tún
 str_gunda_rumor_5|Los Isengardos creen que son especiales sólo porque el Viejo los está equipando para la guerra.
 str_gunda_rumor_6|Incendiaremos las aldeas de los hombres para mantenernos calientes.
 str_gunda_rumor_7|Los hombrecillos sentirán el frío helado que les llevaremos. Y después el fuego. ¡Ja, ja, ja!
-str_gunda_rumor_8|La última vez, Azog y Bolgo casi derrotaron a los enanos, a los elfos y a los hombres. Pero los monstruos con plumas y los Hombres-oso los salvaron. *escupe*
+str_gunda_rumor_8|La última vez, Azog y Bolgo casi derrotaron a enanos, a elfos y hombres. Pero los monstruos con plumas y los Hombres-oso los salvaron. *escupe*
 str_gunda_rumor_9|La carne de Enano es dura y fibrosa. La carne de Hombre es mejor.
 str_gunda_rumor_10|Los Hombres-oso vinieron de los bosques y se comieron a Boldush. ¡Mala suerte para Boldush! ¡Ja, ja, ja!
 str_gunda_rumor_11|Algunos se fueron a Moria, hay mucho espacio allí. Pero allí también vive Ghâsh, en las profundidades. ¡Mejor mantenerse alejado!
@@ -1497,7 +1497,7 @@ str_legendary_rumor_mirkwood|Existen otras criaturas además de orcos acechando 
 str_legendary_rumor_fangorn|Fangorn es un bosque que sería mejor evitar. Allí suceden cosas muy raras.
 str_last_rumor|No he oído nada interesante últimamente.
 str_ent_rumor_begin|No te apresures...
-str_ent_rumor_2|¡Aprended ahora la ciencia de las Criaturas Vivientes! Nombrad primero los cuatro, los pueblos libres: los más antiguos, los hijos de los Elfos; el Enano que habita en moradas sombrías; el Ent, nacido de la tierra, viejo como los montes; el Hombre mortal, domador de caballos.
+str_ent_rumor_2|¡Aprended ahora la ciencia de las Criaturas Vivientes! Nombrad primero los cuatro, los pueblos libres: los más antiguos, los hijos de los elfos; el enano que habita en moradas sombrías; el Ent, nacido de la tierra, viejo como los montes; el Hombre mortal, domador de caballos.
 str_ent_rumor_3|El antiguo Éntico es un lenguaje encantador, pero lleva mucho tiempo decir algo en él, pues nunca decimos nada, excepto cuando vale la pena pasar mucho tiempo hablando y escuchando..
 str_gondor_rank_0|Habitante de Gondor
 str_gondor_rank_1|Soldado de Gondor
@@ -1715,7 +1715,7 @@ str_fullname_region_n_undeep|el Codo Norte, el mayor de los dos meandros del And
 str_fullname_region_s_undeep|el Codo Sur, el menor de los dos meandros del Anduin
 str_fullname_region_emyn_muil|Emyn Muil, las colinas rocosas al norte de la desembocadura del Entaguas
 str_fullname_region_misty_mountains|las faldas de las Montañas Nubladas
-str_fullname_region_lorien|Lothlórien, el bosque de los Elfos Sindar, donde crecen los dorados Mallorns
+str_fullname_region_lorien|Lothlórien, el bosque de los elfos Sindar, donde crecen los dorados Mallorns
 str_fullname_region_anduin_banks|el valle del Anduin, entre las Montañas Nubladas y El Bosque Negro
 str_fullname_region_n_mirkwood|las densas arboledas del norte del Bosque Negro, hogar de los Elfos Silvanos
 str_fullname_region_s_mirkwood|los densas arboledas del sur del Bosque Negro, según se dice, infestadas de extrañas criaturas
@@ -1763,7 +1763,7 @@ str_shortname_region_mordor|la Tierra de Mordor
 str_shortname_region_dimrill|el Valle del Arroyo Sombrío
 str_shortname_region_s_erebor|el Reino de Valle
 str_trait_title_elf_friend|{Amigo/Amiga} de los Elfos
-str_trait_desc_elf_friend|Has obtenido la estima de los Elfos, que ahora te consideran {un aliado/una aliada} de confianza. El coste de reclutar elfos se ha reducido y ahora puedes intentar dar órdenes a los ejércitos élficos.
+str_trait_desc_elf_friend|Has obtenido la estima de los elfos, que ahora te consideran {un aliado/una aliada} de confianza. El coste de reclutar elfos se ha reducido y ahora puedes intentar dar órdenes a los ejércitos élficos.
 str_trait_title_gondor_friend|Bendición del Senescal
 str_trait_desc_gondor_friend|El Senescal Denethor te tiene en gran estima y tu estatus entre los hombres de Gondor ha subido como resultado de ello. El coste de reclutar tropas de Gondor se ha reducido y ahora puedes intentar dar órdenes a los ejércitos de Gondor.
 str_trait_title_rohan_friend|{Hombre/Mujer} del Rey
@@ -1773,7 +1773,7 @@ str_trait_desc_brigand_friend|Gracias a tus proezas en el combate las tribus bá
 str_trait_title_blessed|{Bendecido/Bendecida}
 str_trait_desc_blessed|Sientes que has sido {bendecido/bendecida} por los poderes de más allá del mar, y quizás de más lejos aún. No sabes la razón de esta ayuda o qué puede significar pero tienes la certeza de que es así.
 str_trait_title_reverent|{Venerado/Venerada}
-str_trait_desc_reverent|Has adquirido una reputación de sabiduría y venerabilidad. Los Hombres y los Elfos estarán más dispuestos a escuchar tus consejos.
+str_trait_desc_reverent|Se te considera una eminencia. Los Hombres y elfos estarán más que dispuestos a escuchar tus consejos con semejante reputación.
 str_trait_title_merciful|{Misericordioso/Misericordiosa}
 str_trait_desc_merciful|Has adquirido una reputación por tratar con misericordia a los hombres malvados que sirven al Enemigo. Muchos de los soldados más curtidos que te sirven no están de acuerdo con tu comportamiento y sufren una penalización a la moral. Entre los más sabios, sin embargo, tu clemencia es vista como una muestra de tu carácter íntegro y por ello recibes una bonificación a los puntos de influencia.
 str_trait_title_bravery|Valentía
@@ -1960,14 +1960,14 @@ str_mordor_faction_intro|^Mordor representa las fuerzas personales de Sauron cri
 str_isengard_faction_intro|^Isengard es gobernada por Saruman, el mago traidor. Ha creado su propia versión de los orcos: los Uruk-hai.^^Las fuerzas de Isengard están bastante bien equipadas, aunque las armas y armaduras puedan parecer de factura tosca. Los orcos son comprables a los de cualquier otra facción, pero los Uruk-hai son auténticas máquinas de matar armadas con picas, alabardas, hachas pesadas y temibles alfanjes. También tienen los arcos más grandes y poderosos de entre todas las razas orcas.
 str_lorien_faction_intro|^Los Elfos de Lothlórien, conocidos como los «Galadhrim», moradores de los árboles, son un poderoso grupo de Nandor y Sindar que viven en los bosques de Lórien, liderados por el Señor Celeborn y la Dama Galadriel.^^Sus fuerzas consisten en una línea de infantería y una de exploradores, con la ocasional incorporación de algunas unidades de élite de arqueros a caballo Noldorin. Todas sus tropas son de gran habilidad, equipadas con las mejores armas y armaduras de factura élfica, y en general extremadamente letales en combate. Una lluvia de flechas desde la cobertura del bosque, seguida por una devastadora carga de infantería, es su principal táctica.
 str_imladris_faction_intro|^Los Elfos de Imladris (Rivendel) son Sindar y Noldor liderados por el Señor Elrond y sus dos hijos. Son los custodios de la antigua sabiduría del Oeste, y de poderosos y antiguos artefactos que datan hasta de la Primera Edad. Bajo su bandera también marchan los Dúnedain del Norte, los restos de los quebrantados reinos de los Hombres en el Norte, montaraces y nobles, altos y de cabello oscuro, vestidos con cuero resistente o antiguas cotas de malla.^^Los soldados de Imladris están entre los más diestros de la Tierra Media, y van extremadamente bien equipados. Sus ejércitos son capaces de una considerable flexibilidad táctica.
-str_woodelf_faction_intro|^Los Elfos Silvanos, llamados “elfos del bosque” en los tiempos antiguos, viven a día de hoy en el Bosque Negro, liderados por el Rey Thranduil.^^Los Elfos del Bosque Negro tienen una competente línea de infantería que cuenta con lanzas y espadas. Sus exploradores y arqueros son el principal pilar de sus ejércitos, más incluso que entre sus primos de Lórien. Su armadura es ligera pero aporta un buen grado de protección.
+str_woodelf_faction_intro|^Los Elfos Silvanos, llamados «elfos del bosque» en los tiempos antiguos, viven a día de hoy en el Bosque Negro, liderados por el Rey Thranduil.^^Los Elfos del Bosque Negro tienen una competente línea de infantería que cuenta con lanzas y espadas. Sus exploradores y arqueros son el principal pilar de sus ejércitos, más incluso que entre sus primos de Lórien. Su armadura es ligera pero aporta un buen grado de protección.
 str_dale_faction_intro|^Valle es una ciudad reconstruida por los Hombres del Norte, que comparten antepasados comunes con los Rohirrim, a los que se unieron supervivientes de la ciudad lacustre de Esgaroth (después de que fuera incendiada por Smaug).^^Los Hombres de Valle aportan una robusta infantería centrada en las armas enastadas, sus famosas tropas de arqueros, incluyendo los legendarios arqueros Bárdidos, y una línea de guardias mercantes que constituyen una caballería razonablemente buena.
 str_harad_faction_intro|^Los Haradrim, las “huestes del Sur” en Sindarin, vienen de los desiertos y las selvas del lejano Sur. Les gusta ir a la guerra vestidos de vivos colores y portando pesados adornos de oro.^^Los Haradrim tienen una infantería poco destacable pero competente del Gran Harad (escaramuzadore/arqueros y lanceros/espadachines); una línea de caballería de Harondor (que incorpora tanto caballería pesada como arqueros montados); y una línea de guerreros tribales de la Lejana Harad.
 str_rhun_faction_intro|^Los Hombres de Rhûn son tribus de Hombres del Este procedentes de las cercanías del Mar de Rhûn, en las lejanas tierras orientales.^^El grueso de su ejército es caballería: arqueros montados y lanceros, todos ellos con equipo muy ligero. Las tropas de caballería de más alto nivel montan caballos más grandes y pesados, con más protección. Su infantería también usa armaduras muy ligeras y esgrime grandes hachas y espadas. En campo abierto, una hueste de caballería de Rhûn puede ser un enemigo temible.
 str_khand_faction_intro|^Los Variags de Khand son feroces invasores del Este que llevan aterradoras máscaras de guerra a la batalla.^^Sus tropas de a pie están compuestas por una infantería ligera y rápida (escaramuzadores y expertos en hojas enastadas), y hacheros pesados; mientras que su línea de caballería contiene tanto ágiles escaramuzadores como catafractos pesados. La infantería ligera lanza devastadoras andanadas de jabalinas para cubrir el avance de la hueste principal. Los más salvajes de entre ellos se lanzan a la batalla casi sin armadura, atacaando con gran fuerza y ferocidad.
 str_umbar_faction_intro|^Los Corsarios de Umbar son enemigos sureños de Gondor, descendientes de los Númenoreanos Negros, que llevan a cabo numerosas incursiones contra las costas de Gondor.^^Los Corsarios emplean escaramuzadores con equipo ligero y espadachines más pesados, así como  hábiles arqueros con arcos largos. Dado su carácter marinero, prefieren armaduras que sacrifican protección a cambio de movilidad.
 str_moria_faction_intro|^Los Orcos de Moria ocupan los salones de Khazad Dúm, antaño un poderoso reino enano.^^Como otros orcos, sus fuerzas consisten en una mezcla de infantería, arqueros, escaramuzadores y jinetes de huargos, pero en general tienen equipo de más calidad que otros orcos, porque usan restos de metal encontrado en Moria. Unos pocos afortunados tienen acceso a piezas de armadura y armas enanas. Los Caciques Orcos de Moria han demostrado ser más fuertes y feroces que el resto de sus congéneres, y son temibles en la batalla.
-str_guldur_faction_intro|^Dol Guldur es una antigua fortaleza de Sauron en el Bosque Negro; de hecho, es la razón por la que el «Gran Bosque Verde» pasó a ser conocido por este nombre más oscuro.^^Aquí, un contingente leal a Mordor entrena y se prepara para reunir una gran hueste, y a menudo lanza ataques contra los Elfos y los grupos de Hombres que cruzan el bosque. Las tropa de Dol Guldur son en su mayoría orcos, con una composición muy similar a la de Mordor (infantería, escaramuzadores, arqueros y jinetes de huargos), pero con algo menos de variedad.
+str_guldur_faction_intro|^Dol Guldur es una antigua fortaleza de Sauron en el Bosque Negro; de hecho, es la razón por la que el «Gran Bosque Verde» pasó a ser conocido por este nombre más oscuro.^^Aquí, un contingente leal a Mordor entrena y se prepara para reunir una gran hueste, a menudo atacando a elfos y grupos de Hombres que cruzan el bosque. Las tropas de Dol Guldur son en su mayoría orcos, con una composición muy similar a la de Mordor (infantería, escaramuzadores, arqueros y jinetes de huargos), pero con algo menos de variedad.
 str_gundabad_faction_intro|^Gundabad era antaño un lugar sagrado para los Enanos, pero en estos días se ha convertido en una enorme fortaleza orca en las montañas del norte.^^Los orcos de Gundabad, aunque más salvajes que sus homólogos de otras partes de la Tierra Media, combaten de forma muy similar a cualquier otro grupo de orcos, con una composición parecida (infantería, escaramuzadores, arqueros y jinetes de huargos). Su armamento es primitivo, y su estilo de lucha bárbaro y cruel. Sus jinetes de huargos no tienen rival que iguale su resistencia y ferocidad. Algunos de los orcos de Gundabad pueden inducir en si mismos una especie de trance guerrero.
 str_dunland_faction_intro|^Los Dunlendinos son los “hombres salvajes de las Tierras Brunas”, enemigos de los Rohirrim, que los expulsaron de sus tierras.^^Las Tierras Brunas son pobres y estériles. Los Dunlendinos llevan muy poca armadura, en su mayoría pieles y cuero curado, con los escasos elementos metálicos constituyendo un símbolo de estatus. Sus armas son picas largas y hachas de cuerno; las espadas son muy raras y también sirven como signos de prestigio. Sus caballos son rocines flacos y débiles, no son rival para los corceles de Rohan, aunque ocasionalmente algunos Dunlendinos actúan como escaramuzadores montados. En la batalla, los piqueros avanzan en masa, presentando un tosco pero formidable muro de lanzas afiladas. Algunos Dunlendinos también han desarrollado una cierta afinidad con las criaturas salvajes, y pueden azuzar a manadas de lobos furiosos contra sus enemigos.
 str_beorn_faction_intro|^Los Beórnidas, los descendientes de Beorn, son un pueblo de los valles del curso superior del Anduin, entre el Bosque Negro y las Montañas Nubladas. Habitan mayoritariamente en los bosques, aunque defienden el Viejo Vado para mantenerlo abierto al comercio, cobrando un peaje a las caravanas de mercaderes por este servicio.^^Como leñadores y hombres de los bosques, esgrimen gruesos garrotes y hachas afiladas, pero llevan poca armadura. La infantería pesada Beórnida también lucha con escudos. Los guardabosques Beórnidas son hábiles con el arco y proporcionan una valiosa línea de arqueros.
@@ -2312,8 +2312,8 @@ str_lorien_guildmaster_companion_none|El mal se ve y se oye incluso aquí, entre
 str_lorien_guildmaster_companion_player_none_ok|Esperaba oír palabras más gratas en esta grata tierra vuestra. Pero así será como tú dices, Anciano.
 str_lorien_guildmaster_player_found_ok|Te agradezco tu buen consejo, Anciano. ¡Tiro ven Elbereth!
 str_lorien_ca_guildmaster_companion|¡Nan Belain! ¡Qué maravillosa coincidencia! En cualquier otro momento,  quizás tendría que decepcionarte, pero ahora, en la compañía del Señor y la Dama del Bosque, reside nada menos que el Señor Glorfindel, héroe de más batallas de las que incluso yo tengo memoria. Poco sé del propósito que ha traído aquí a tan gran paladín. Llegó junto a la hueste de Elrond, Señor de Imladris, y nada dice de sus asuntos, hablando tan solo con el Señor Celeborn y la Dama Galadriel. Búscalo, capitán; puede que vuestras causas tengan un destino común.
-str_beorn_guildmaster_companion_player_ask|Busco tu consejo, buen hombre: ¿contáis con algún «avezado» guerrero?
-str_beorn_guildmaster_companion_none|¿Avezado? Bueno, no sé qué decirte. Tu pregunta no es muy clara. ¿Qué es lo que buscas que no puedas encontrar entre los hombres de nuestra guarnición? Luchamos con gruesos garrotes, afiladas hachas, y no tenemos problemas con el tiro con arco. No sé qué más se puede pedir.
+str_beorn_guildmaster_companion_player_ask|Busco tu consejo, buen hombre: ¿contáis aquí con algún avezado guerrero?
+str_beorn_guildmaster_companion_none|¿«Avezado»? Bueno, no sé qué decirte. Tu pregunta no es muy clara. ¿Qué es lo que buscas que no puedas encontrar entre los hombres de nuestra guarnición? Luchamos con gruesos garrotes, afiladas hachas, y no tenemos problemas con el tiro con arco. No sé qué más se puede pedir.
 str_beorn_guildmaster_companion_player_none_ok|Bueno, entonces supongo que será mejor que me vaya. Que tengas un buen día, hombre del bosque.
 str_beorn_guildmaster_player_found_ok|Ya veo. Bien, buscaré a ese tal «Tarugo». Que tengas un buen día, hombre del bosque.
 str_beorn_house_guildmaster_companion|Vaya, menuda pregunta. Yo diría que cualquiera de nosotros puede defenderse de un trasgo o un huargo, pero el sobrino de nuestro jefe es especialmente robusto. Aunque se pase el día embobado mirando a los árboles o con la mirada perdida. Tiene más músculo que seso, si sabes a qué me refiero... Aun así, es amable con sus amigos y feroz con sus enemigos, como debe ser. Me atrevería a decir que se mueve por los bosques tan bien como cualquier elfo. Lo llamamos Tarugo, pero sin malicia; nos gusta llamar a las cosas y a las personas por lo que son. Debería andar por aquí cerca.

@@ -192,7 +192,7 @@ menu_cattle_herd|Te encuentras de frente con algunas personas.
 mno_cattle_drive_away|Decirles que te sigan.
 mno_cattle_stop|Decirles que se detengan.
 mno_leave|Irse.
-menu_simple_encounter|^^^^^{s2}^Cuentas con {reg22} tropas listas para la batalla, frenta a las {reg11} del enemigo.^^La batalla tendrá lugar en {s3}{s4}.^^¿Cuáles son tus órdenes?
+menu_simple_encounter|^^^^^{s2}^Cuentas con {reg22} tropas listas para la batalla frente a las {reg11} del enemigo.^^La batalla tendrá lugar en {s3}{s4}.^^¿Cuáles son tus órdenes?
 mno_encounter_attack|{reg21?Cargar contra ellos:Prepararse para el enfrentamiento}.
 mno_encounter_order_attack|Ordenar a tus tropas {reg21?atacar:enfrentarse a ellos} sin tu ayuda.
 mno_control_allies_menu|Usar Influencia para dar órdenes a tus aliados en el campo de batalla
@@ -271,7 +271,7 @@ menu_castle_taken_by_friends|Aquí no hay nada que ver.
 menu_castle_taken|{s3} ha caído con la fuerza inexorable de tus tropas, y ahora tienes control absoluto de{reg2? la ciudad:l castillo}.{reg1? Podría decirse que no hay nada que te impida quedártelo...:}
 menu_castle_taken_2|{s3} ha caído con la fuerza inexorable de tus tropas, y ahora tienes control absoluto del castillo. Es hora de comunicárselo a {s9}, y hacerle saber de tu noble victoria. {s5}
 mno_castle_taken_no_claim|No pedir recompensa.
-menu_siege_started_defender|{s1} está apunto de asaltar las murallas de {s2}. Cuentas con {reg22} tropas listas para la batalla, frenta a las {reg11} del enemigo. Decides...
+menu_siege_started_defender|{s1} está apunto de asaltar las murallas de {s2}. Cuentas con {reg22} tropas listas para la batalla, frente a las {reg11} del enemigo. Decides...
 mno_siege_defender_join_battle|Unirse a la batalla.
 mno_siege_defender_troops_join_battle|Ordenar a tus tropas unirse a la batalla sin tu ayuda.
 menu_siege_join_defense|{s4}^^Tus bajas: {s8}^^Bajas aliadas: {s9}^^Bajas enemigas: {s10}

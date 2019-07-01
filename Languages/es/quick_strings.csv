@@ -341,7 +341,7 @@ qstr_They_are_upon_us!_^|¡Nos atacan! ^
 qstr_{playername}_and_{hi|¡{playername} y {su/su} chusma de {s18} nos atacan! ^
 qstr_ORCS!_ORCS!|¡ORCOS! ¡ORCOS!
 qstr_ORCS!_ORCS!_Fight_fo|¡ORCOS! ¡ORCOS! ¡Luchad por vuestra vida!
-qstr_Elven_ghosts!|¡Fantasmas Elfos!
+qstr_Elven_ghosts!|¡Fantasmas elfos!
 qstr_Here_they_come!_Hold|¡Aquí vienen! ¡Mantened la formación!
 qstr_We_are_under_attack!|¡Nos atacan!
 qstr_Horse_people!_The_ho|¡Los Jinetes! ¡Los Jinetes se nos echan encima!
@@ -371,14 +371,14 @@ qstr_Men_of_{s16}_the_ene|Hombres de {s16}, ¡El enemigo está aquí! ¡Luchad p
 qstr_Men_of_{s16}_charge!|¡Hombres de {s16}, cargad! ¡Luchad por vuestra tierra!
 qstr_{s14}Grind_their_bod|{s14}¡Que sus cuerpos queden cubiertos por la arena!
 qstr_{s14}Dwarves_or_men_|{s14}¡Hombres o enanos, no son rivales para nuestra fiereza!
-qstr_{s14}Elves_or_men_th|{s14}¡Hombres o elfos, no son rivales para nuestra fiereza!
+qstr_{s14}Elves_or_men_th|{s14}¡Ni Hombres ni elfos son rival para contener nuestra fiereza!
 qstr_{s14}Flesh_to_shatte|{s14}¡Carne que destrozar, gargantas que cortar, sangre que derramar!
 qstr_Put_on_the_masks_of_|¡Hombres, poneos vuestras máscaras! ¡Hoy caerá la muerte sobre nuestros enemigos de {s18}!
 qstr_They_seek_the_tempes|¡Van buscnado la tempestad, y la han encontrado! ¡Hombres, a las armas!
 qstr_Draw_your_weapons_me|¡Desenvainad vuestras armas, hombres! ¡Que la tempestad se desate sobre nuestros enemigos!
 qstr_Orcs_of_{s16}_get_re|¡Orcos de {s16}, preparaos! ¡Aquí hay gargantas que cortar!
 qstr_These_friend_of_elve|¡Éstos amigos de los elfos caerán bajo el filo de nuestras espadas!
-qstr_These_Elves_will_fal|¡Éstos Elfos caerán bajo el filo de nuestras espadas!
+qstr_These_Elves_will_fal|¡Éstos elfos caerán bajo el filo de nuestras espadas!
 qstr_Raahh!_Draw_your_wea|¡Raahh! ¡Desenvainad vuestras armas, escoria de {s16}! ¡Esta noche nos daremos un festín con entrañas de {s15}!
 qstr_Rha!_{s14}More_{s15}|¡Rha! {s14} ¡Más cuerpos de {s15} que desfigurar con nuestras retorcidas armas!
 qstr_Slaughter_these_puny|¡Masacrad a estos débiles ladrones de {s18}, ahora mismo! Después quemaremos sus casas y acabaremos con sus familias.
@@ -777,7 +777,7 @@ qstr_Ballista:_out_of_ammo|Balista: ¡Sin munición!
 qstr_The_ladders_on_Deepi|¡Escalas en el Muro del Bajo! ¡Cuidado!
 qstr_THREE.._TWO..._ONE..|TRES... DOS... UNO... ¡LUCHAD!
 qstr_You_have_come_upon_t|Has llegado a las ruinas del Amon Hen, la Colina de la Vista, una antigua torre de vigilancia de Gondor, en cuya cime s ehaya el Sitial de la Vista.^^Tienes la sensación de que este lugar estuvo una vez lleno de grandeza, pero fue olvidado hace mucho tiempo.
-qstr_You_have_come_upon_th|Has llegado a las Ciénagas de los Muertos, el escenario de la batalla de Dagorlad durante la Guerra de la Última Alianza.^^Las tierras pantanosas han engullido lo que una vez fue una llanura cubierta de hierba, y ahora el único verdor es el de la espuma lívida de las algas en la superficie oscura y viscosa del agua sombría.^^Hierbas muertas y cañas putrefactas asoman entre las neblinas como las sombras andrajosas de unos estíos olvidados, y entre los fuegos fatuos, yacen los rostros muertos de Hombres, Elfos y Orcos, en lo más profundo de las aguas turbias.^^El aire es frío y húmedo, y no puedes evitar un escalofrío al ver las luces que brillan en los ojos de un elfo muerto justo bajo la superficie del agua.
+qstr_You_have_come_upon_th|Has llegado a las Ciénagas de los Muertos, el escenario de la batalla de Dagorlad durante la Guerra de la Última Alianza.^^Las tierras pantanosas han engullido lo que una vez fue una llanura cubierta de hierba, y ahora el único verdor es el de la espuma lívida de las algas en la superficie oscura y viscosa del agua sombría.^^Hierbas muertas y cañas putrefactas asoman entre las neblinas como las sombras andrajosas de unos estíos olvidados, y entre los fuegos fatuos, yacen los rostros muertos de Hombres, elfos y orcos, en lo más profundo de las aguas turbias.^^El aire es frío y húmedo, y no puedes evitar un escalofrío al ver las luces que brillan en los ojos de un elfo muerto justo bajo la superficie del agua.
 qstr_You_have_entered_the|Has entrado en la espesura del sur del Bosque Negro, que una vez fue conocido como el Gran Bosque Verde.^^La fortaleza de Dol Guldur está cerca y proyecta una sombra tenebrosa sobre el bosque. Los árboles de esta zona parecen enfermos y podridos. Los viejos robles están cubiertos de moho y hongos, y grandes telarañas enredadas se extienden entre los troncos.^^ El aire parece eternamente inmóvil, sofocante y sombrío, y te da la sensación de que te estás asfixiando lentamente.
 qstr_You_have_found_the_D|Has encontrado el Almacén Enano donde podrían estar las Lanzas Legendarias. Informa de tus pesquisas a {s3}
 qstr_Leave_the_Warehouse?|¿Quieres abandonar el almacén?
@@ -1084,7 +1084,7 @@ qstr_The_water_you_drank_|El agua de los Ents que bebiste ha tenido un estraño 
 qstr_Ent_water_effect:_in|Bajo el efecto del agua de los Ents: ¡Incremento de estatura!
 qstr__+1_to_Strength__per|+1 de Fuerza (permanente)
 qstr__+1_to_Charisma__per|+1 de Carisma (permanente)
-qstr_The_dark_shadow_fina|La sombra por fin ha roto en tormenta, y las hordas del mal han comenzado su marcha sobre los pueblos libres de la Tierra Media. Mordor contra Gondor en el Sur, Isengard contra Rohan en el Oeste, Dol Guldur contra los Elfos... Incluso lejos, en el Norte, libran su propia guerra.
+qstr_The_dark_shadow_fina|La sombra por fin ha roto en tormenta, y las hordas del mal han comenzado su marcha sobre los pueblos libres de la Tierra Media. Mordor contra Gondor en el Sur, Isengard contra Rohan en el Oeste, Dol Guldur contra los elfos... Incluso lejos, en el Norte, libran su propia guerra.
 qstr_The_War_has_started!|¡La Guerra ha comenzado!
 qstr_The_forest_seems_pea|El bosque parece tranquilo.
 qstr_There_is_a_sense_of_|Hay una sensación de peligro en el ambiente.

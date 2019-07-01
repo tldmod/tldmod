@@ -12,7 +12,7 @@ qstr_Advance|Podejść
 qstr_Fall_Back|Cofnąć się
 qstr_Stand_Closer|Zgrupować się
 qstr_Spread_Out|Rozproszyć się
-qstr_Stand_Ground|Czekać
+qstr_Stand_Ground|Utrzymać pozycję
 qstr_Dismount|Zsiądź
 qstr_Use_Any_Weapon|Używać dowolnych broni
 qstr_Use_Blunt_Weapons|Używać broni obuchowych
@@ -24,7 +24,7 @@ qstr_Enemies|Wrogowie
 qstr_Ready|Gotowy
 qstr_Wounded|Ranny
 qstr_Dead|Martwy
-qstr_Routed|Pobici
+qstr_Routed|Uciekł
 qstr_Number_of_men_knocke|Liczba ludzi ogłuszonych: {reg1}
 qstr_Number_of_men_left:_|Pozostało ludzi: {reg1}
 qstr_Opponents_Beaten:_{r|Przeciwnicy pokonani: {reg1}
@@ -37,8 +37,8 @@ qstr_You_have_retired_at_|Przechodzisz w stan spoczynku mając {reg4} poziom do�
 qstr_Effect_on_Score|Wpływ na Wynik
 qstr_Settlements_owned_by|Twoje osady: {reg0}
 qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
-qstr_Friendly_Settlements|Osady przyjaciół: {reg0}
-qstr_Hostile_Settlements:|Osady wrogów: {reg0}
+qstr_Friendly_Settlements|Przyjazne osady: {reg0}
+qstr_Hostile_Settlements:|Wrogie osady: {reg0}
 qstr_{reg0}|{reg0}
 qstr_Friendly_Lords:_{reg|Przyjaźni lordowie: {reg0}
 qstr_Enemy_Lords:_{reg0}|Wrodzy lordowie: {reg0}
@@ -74,26 +74,26 @@ qstr_Legs|Nogi
 qstr_Rotate|Obrót
 qstr_Close|Zamknij
 qstr_Faction_Side:^^Campa|Strona frakcji:^ Trudności związane z kampanią*:^^Home Theater:^^Marshall:^^Enemies:^^^^^^^
-qstr_Campaign_Difficulty_|Trudność w kampanii opiera się na początkowej sile frakcji, wrogach teatralnych, urządzeniu frakcji i żołnierzy frakcji.
-qstr_Rallies:|Wiece:
-qstr_View_Keybinds__Press|Zobacz Keybinds (wciśnij Insert)
+qstr_Campaign_Difficulty_|Trudność w kampanii opiera się na początkowej sile frakcji, aktywnych wrogach, oraz wyposażeniu i rozwoju żołnierzy frakcji.
+qstr_Rallies:|Zbiórki:
+qstr_View_Keybinds__Press|Zobacz ustawienia klawiszy (wciśnij Insert)
 qstr_What_do_you_fight_fo|O co walczysz?
 qstr_Go_Back...|Wróć...
 qstr_Learn_about_the_diff|Dowiedz się o różnych frakcjach Śródziemia
 qstr_The_DAWN_of_a_New_Er|Świt Nowej Ery
-qstr_The_TWILIGHT_of_Man|ŚWIATŁO Człowieka
-qstr_Select_your_Race?|Wybierz swoją rase?
+qstr_The_TWILIGHT_of_Man|Zmierzch Człowieka
+qstr_Select_your_Race?|Wybierz swoją rasę?
 qstr_Man|Człowiek
 qstr_Elf|Elf
 qstr_Dwarf|Krasnolud
 qstr_Whom_Do_You_Serve?|Komu służysz?
-qstr_SAURON_of_Mordor_The|SAURON Mordor, Władcy Pierścieni
-qstr_SARUMAN_of_Isengard_|SARUMAN z Isengard, Biała ręka
-qstr_an_ORC^_serving_the_|ORC,^ obsługujący Lidless Eye
+qstr_SAURON_of_Mordor_The|SAURON, przywódca Mordoru, Władca Pierścieni
+qstr_SARUMAN_of_Isengard_|SARUMAN z Isengardu, Biała ręka
+qstr_an_ORC^_serving_the_|ORK,^ służący Ognistemu Oku
 qstr_an_URUK^_the_new_bre|URUK,^ nowa rasa Orków
 qstr_a_MAN^_subjugated_by|Ludzie, ^ podlegli Sauronowi
 qstr_an_ORC^_serving_the_W|ORC,^ słudzy Białej Ręki
-qstr_an_URUK_HAI^_bred_in|URUK-HAI,^ hodowany w Isengard
+qstr_an_URUK_HAI^_bred_in|URUK-HAI,^ hodowany w Isengardzie
 qstr_a_MAN_of_Dunland^_th|człowiek z Dunlandu,^ Zachodnie Równiny
 qstr_Click_the_center_but|Wciśnij środkowy przycisk żeby przełączać frakcje^Wciśnij awatar, żeby odkryć szczegóły
 qstr_Level:_{reg3}^Health|Poziom: {reg3}^Zdrowie: {reg4}
@@ -104,20 +104,20 @@ qstr_Ironflesh^Power_Stri|Żelazne Ciało^Potężny Cios^Potężny Rzut^Potężn
 qstr_Proficiencies|Biegłości
 qstr_1H_Weapons^2H_Weapon|Bronie Jednoręczne^Bronie Dwuręczne^Bronie Drzewcowe^Łucznictwo^Kusznictwo^Miotanie
 qstr_Equipment|Wyposażenie
-qstr_The_Last_Days_Mod_Op|The Last Days Mod Opcje
+qstr_The_Last_Days_Mod_Op|Opcje The Last Days
 qstr_War_Starts_at_Level:|Wojna zaczyna się na poziomie:
 qstr_Restrict_Player_Equi|Ogranicz wyposażenie gracza: 
 qstr_Battle_Formations_an|Formacje bitewne i sztuczna inteligencja: 
 qstr_Native|Ojczysty
 qstr_TLD_FormAI__Original|TLD FormAI (oryginalny)
 ; qstr_TLD_New_FormAI|TLD New FormAI
-qstr_Advanced_Siege_AI:__|Zaawansowana Siege AI: 
+qstr_Advanced_Siege_AI:__|Zaawansowana AI oblężeń: 
 qstr_On|Na
-qstr_Town_NPCs_Always_Acc|Miejscy NPC zawsze dostępni z menu: 
-qstr_Cutscenes:__|Cutscenes: 
+qstr_Town_NPCs_Always_Acc|Miejscowi NPC zawsze dostępni z menu: 
+qstr_Cutscenes:__|Przerywniki filmowe: 
 qstr_Injuries_for_compani|Urazy dla towarzyszy: 
 qstr_Permanent_death_for_|Trwała śmierć dla lordów i towarzyszy: 
-qstr_Permanent_death_for_p|Permanentna śmierć dla gracza (to TY:!): 
+qstr_Permanent_death_for_p|Permanentna śmierć dla gracza (to TY!): 
 qstr_Battle_morale_system|System morale bojowego: 
 qstr_Animal_ambushes:__|Zwierzęce zasadzki: 
 qstr_Fallen_rider_damage_|Obrażenia polegające na upadku jeźdźca: 
@@ -129,37 +129,37 @@ qstr_Disable|Wyłączyć
 qstr_Enable_without_Facti|Włącz bez nazw Frakcji
 qstr_Enable_with_Faction_|Włącz z nazwami frakcji
 qstr_Simple:_Red___Enemy_|Prosty: Czerwony - Wróg / Zieleń - Sojusznicy
-qstr_Preferred_Camera_Mod|Preferowany tryb aparatu:
+qstr_Preferred_Camera_Mod|Preferowany tryb kamery:
 qstr_Default_Camera|Kamera domyślna
 qstr_Free_Mode_Custom_Cam|Dowolna Kamera Użytkownika
 qstr_Fixed_Over_The_Shoul|Naprawiono kamerę na ramieniu
 qstr_Prevent_AI_from_taki|Zapobiegaj AI przed obroną:
 qstr_Brighter_Nights:__|Jaśniejsze noce: 
-qstr_Done|Dobrze
+qstr_Done|Zrobione
 qstr_Gameplay_Tweaks|Rozgrywka
-qstr_Beta_Formations_Twea|Beta Formacje Tweaks
+qstr_Beta_Formations_Twea|Beta dopracowanie formacjii
 qstr_War_Will_Start_at_Le|Wojna rozpocznie się na poziomie {reg0}
-qstr_Troop_Tree|Drzewo szturmowe
+qstr_Troop_Tree|Drzewo jednostki
 qstr__Click_on_a_unit_for|(Kliknij jednostkę, aby uzyskać szczegółowe informacje)
 qstr_Weapons|Bronie
 qstr_Armors|Pancerze
-qstr_Others|Inni
+qstr_Others|Inne
 qstr_F4___Complex_formati|F4 - Złożone formacje
-qstr_F7___Memorize_div._p|F7 - Zapamiętaj div. umieszczenie
-qstr_F8___Default_divisio|F8 - Domyślne umiejscowienie podziału
+qstr_F7___Memorize_div._p|F7 - Zapamiętaj rozmieszczenie dywizji
+qstr_F8___Default_divisio|F8 - Domyślne umiejscowienie dywizji
 qstr_F4___Ranks|F4 - Rangi
-qstr_F5___Shield_Wall|F5 - Ściana osłony
-qstr_F6___Wedge|F6 - Wedge
+qstr_F5___Shield_Wall|F5 - Ściana tarcz
+qstr_F6___Wedge|F6 - Klin
 qstr_F7___Square|F7 - Kwadrat
 qstr_F8___No_Formation|F8 - Bez formacji
 qstr_Extended_Formations_|Rozszerzone formacje i opcje AI
 qstr_Put_player_in_divisi|Umieść gracza w dziale:
 qstr_None|None
-qstr_Army_rotates_to_face|Armia obraca się, by zmierzyć się z wrogim centrum:
+qstr_Army_rotates_to_face|Armia obraca się, by zmierzyć się z przeciwnikiem:
 qstr_Prevent_AI_from_takin|Zapobiegaj AI przed obroną:
-qstr_AI_Controls_Troops_W|AI kontroluje oddziały, gdy gracz jest KO'd:
-qstr_You_gained_{reg0}_Re|Zyskujesz {reg0} Punktów Prestiżu ({s0}).
-qstr_You_lost_{reg0}_Reso|Tracisz {reg0} Punktów Prestiżu ({s0}).
+qstr_AI_Controls_Troops_W|AI kontroluje oddziały, gdy gracz jest nieprzytomny:
+qstr_You_gained_{reg0}_Re|Zyskujesz {reg0} Punktów zasobów ({s0}).
+qstr_You_lost_{reg0}_Reso|Tracisz {reg0} Punktów zasobów ({s0}).
 qstr_{s24}:|{s24}:
 qstr_Great_Hope_of_{s5}|Wielka Nadzieja {s5}
 qstr_Hope_of_{s5}|Nadzieja {s5}
@@ -180,7 +180,7 @@ qstr_Useful_Tool_of_{s5}|Przydatne Narzędzie {s5}
 qstr_Servant_of_{s5}|Sługa {s5}
 qstr_Unknown_to_{s5}|Nieznany dla {s5}
 qstr_You_have_been_{reg1?|{reg1?Awansujesz:Zostajesz zdegradowany} do {s24} ({reg0})!
-qstr_You_{reg1?earned:los|{reg1?Zdobywasz:Tracisz} {reg11} punktów rangowych {reg12?oraz {reg12} wpływów :}frakcji {s11}.
+qstr_You_{reg1?earned:los|{reg1?Zdobywasz:Tracisz} {reg11} punktów rangi {reg12?oraz {reg12} wpływu :}frakcji {s11}.
 qstr_You_spent_{reg10}_of|Używasz {reg10} swych wpływów z {s1}, {reg11} zostało.
 qstr_Troop_upkeep:|Koszt utrzymania jednostek:
 qstr_{s11}_and_{s10}|{s11} i {s10}

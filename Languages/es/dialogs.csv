@@ -56,10 +56,10 @@ dlga_treebeard_talk_response:treebeard_about_entwives|Cuéntame más sobre las E
 dlga_treebeard_talk_response:treebeard_about_ents|Cuéntame más acerca de los Ents.
 dlga_treebeard_talk_response:close_window|No importa, hasta luego.
 dlga_treebeard_about_himself:treebeard_pretalk|(El líder Ent parece adusto y solemne. Después de un rato dice lentamente:)^'No tan deprisa... podremos hablar más cuando el bosque quede libre de la amenaza de los orcos.'
-dlga_treebeard_about_himself:treebeard_pretalk.1|Hrummm...Soy el más viejo de mi raza mmmm... Los hombres me conocen como Bárbol y los Elfos me llaman Fangorn. Hummm... Yo, Corteza y Zarcillo somos los únicos Ents que hemos habitado los bosques antes de que cayera la Oscuridad. Ya no soy tan flexible como solía ser... el joven Ramaviva puede doblarse y agitarse, como un arbolillo al viento... Hummm... Si las Ent-mujeres estuvieran aquí...
+dlga_treebeard_about_himself:treebeard_pretalk.1|Hrummm...Soy el más viejo de mi raza mmmm... Los hombres me conocen como Bárbol y los elfos me llaman Fangorn. Hummm... Yo, Corteza y Zarcillo somos los únicos Ents que hemos habitado los bosques antes de que cayera la Oscuridad. Ya no soy tan flexible como solía ser... el joven Ramaviva puede doblarse y agitarse, como un arbolillo al viento... Hummm... Si las Ent-mujeres estuvieran aquí...
 dlga_treebeard_about_entwives:treebeard_pretalk|(La cara del cabecilla Ent muestra de repente tristeza y su voz es extrañamente profunda.)^'Hummm... Es una triste historia... cuando los bosques estén libres de orcos te la contaré.'
 dlga_treebeard_about_entwives:treebeard_pretalk.1|Hummm... las bellas Ent-mujeres... les encanta plantar y cultivar... tendríamos que haberles hecho más caso... Humm... se marcharon a las Tierras Pardas a cultivar jardines y enseñaron a los hombres a cultivar la tierra... solíamos visitarlas... hasta que... Sauron apareció... las Ent-mujeres ya no están... Hummm... Fimbrethil... y el color de sus espigas maduras... las hemos estado buscando... pero no las hemos encontrado... todavía...
-dlga_treebeard_about_ents:treebeard_pretalk|Hrummm... Somos pastores de árboles y los protegemos de los peligros. Somos más viejos que cualquiera de las razas mortales aunque no tan antiguos como los Elfos que nos sacaron de nuestro mutismo. Las cosas han cambiado con el tiempo. Al principio éramos más impacientes y flexibles. A lo largo del tiempo hemos perdido a muchos de los nuestros. Algunos de los nuestros son todavía verdaderos Ents, y andan bastante animados a nuestra manera, pero muchos otros parecen somnolientos, se están poniendo arbóreos, podría decirse. La mayoría de los árboles son sólo árboles, por supuesto; pero muchos están medio despiertos. Algunos han despertado del todo, y unos pocos, bueno, ah, bueno, están volviéndose énticos. Esto nunca cesa. Cuando le ocurre esto a un árbol, descubres que algunos tienen mal corazón. Aún así, hacemos lo que podemos. No obstante, hacemos lo que podemos. Rechazamos a los extranjeros y a los imprudentes, y entrenamos y enseñamos, caminamos y quitamos las malezas.
+dlga_treebeard_about_ents:treebeard_pretalk|Hrummm... Somos pastores de árboles y los protegemos de los peligros. Somos más viejos que cualquiera de las razas mortales aunque no tan antiguos como los elfos que nos sacaron de nuestro mutismo. Las cosas han cambiado con el tiempo. Al principio éramos más impacientes y flexibles. A lo largo del tiempo hemos perdido a muchos de los nuestros. Algunos de los nuestros son todavía verdaderos Ents, y andan bastante animados a nuestra manera, pero muchos otros parecen somnolientos, se están poniendo arbóreos, podría decirse. La mayoría de los árboles son sólo árboles, por supuesto; pero muchos están medio despiertos. Algunos han despertado del todo, y unos pocos, bueno, ah, bueno, están volviéndose énticos. Esto nunca cesa. Cuando le ocurre esto a un árbol, descubres que algunos tienen mal corazón. Aún así, hacemos lo que podemos. No obstante, hacemos lo que podemos. Rechazamos a los extranjeros y a los imprudentes, y entrenamos y enseñamos, caminamos y quitamos las malezas.
 dlga_start:close_window.1|¿Mmmmm?
 dlga_start:close_window.2|¿Mmrmmm?
 dlga_start:close_window.3|¿Mmmrrrmm?
@@ -314,7 +314,7 @@ dlga_dwarf_lord_book:dwarf_lord_book_give|Puedes hablar libremente, {playername}
 dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|Me aventuré en las profundidades de las Minas de Moria y encontré noticias de la compañía de Balin.
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|Hablas de mis parientes como si no fueran nada más que un recuerdo. ¿Es así?
 dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|Me temo que sí. Habría seguido buscando pero los trasgos me atacaron en grandes números. Solo he traido esto...
-dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'No podemos salir. No podemos salir... Ya vienen.'
+dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|«No podemos salir. No podemos salir... Ya vienen»
 dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|Es como me temía entonces. Aconsejé a Balin en contra de esta expedición, pero estaba decidido. Fui un necio por darle permiso para partir.
 dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|Has prestado un gran servicio a Erebor, {playername}, y tu hazaña no quedará sin recompensa.
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Gracias, {s3}.
@@ -718,18 +718,18 @@ dlga_start:sad_elf_1|¡Mira, mi {señor/señora}, gaviotas! Me maravillan, y al 
 dlga_sad_elf_1:sad_elf_2|Puedo oir sus voces. ¿Qué nuevas traen?
 dlga_sad_elf_2:sad_elf_choice|Ah, historias del mar. Y de más allá. Mi {señor/señora}, me he cansado de esta guerra que libramos, de este suelo por el que nos arrastramos. Temo que Ennor (la Tierra Media) esté perdida, al menos para mí. ¡Dame permiso para partir!
 dlga_sad_elf_choice:sad_elf_leave|Comparto tu dolor. Ya has hecho tu parte en esta guerra. Puedes irte.
-dlga_sad_elf_choice:sad_elf_no|Los Elfos no deben abandonar la Tierra Media a merced de la sombra. No libramos esta guerra por nosotros mismos, y cada uno de nosotros debe jugar su papel. No puedo darte permiso para partir. [Tirada de Liderazgo]
+dlga_sad_elf_choice:sad_elf_no|Los elfos no deben abandonar la Tierra Media a merced de la sombra. No libramos esta guerra por razones egoístas, cada uno de nosotros debe cumplir su cometido. No puedo darte permiso para partir. [Tirada de Liderazgo]
 dlga_sad_elf_leave:close_window|¡Gracias, mi {señor/señora}!^^¡Al mar, al Mar! Claman las gaviotas blancas,^el viento sopla y la espuma blanca vuela.^Lejos al Oeste se pone el Sol redondo.
 dlga_start:close_window.11|Has llegado justo a tiempo. Unamos nuestras fuerzas y demos una lección a nuestros enemigos.
 dlga_start:close_window.12|Estás cometiendo un grave error al querer luchar contra nosotros.
 dlga_start:ally_thanks_meet|Creo que no nos hemos presentado correctamente. Me acabas de salvar la vida ahí fuera y todavía no sé cuál es tu nombre...
 dlga_start:ally_thanks_meet.1|Aprecio la ayuda que nos has prestado, seas quien seas. Me llamo {s1}. ¿Puedo conocer tu nombre?
 dlga_start:ally_thanks_meet.2|Gracias por tu ayuda, seas quien seas. No nos hemos presentado todavía, ¿verdad? ¿Cómo te llamas?
-dlga_ally_thanks_meet:ally_thanks_meet_2|Mi nombre es {playername}.
+dlga_ally_thanks_meet:ally_thanks_meet_2|{playername}, me llaman.
 dlga_ally_thanks_meet_2:close_window|Me alegra conocerte, {playername}. Mi nombre es {s1} y estoy eternamente en deuda contigo. Si hay algo que pueda hacer en el futuro para ayudarte, a ti o a tu gente, no dudes en decírmelo...
 dlga_ally_thanks_meet_2:close_window.1|Me alegra conocerte, {playername}. Estoy en deuda contigo por lo que acabas de hacer. Espero que algún día pueda devolverte el favor.
 dlga_ally_thanks_meet_2:close_window.2|Encantado de conocerte, {playername}. Soy {s1}. Gracias por tu ayuda y espero que nos volvamos a encontrar.
-dlga_start:close_window.13|¡De nuevo me vuelves a salvar el pellejo, {playername}! En verdad eres {un gran amigo/una gran amiga}. {s43}
+dlga_start:close_window.13|¡Vuelves a salvarme el pellejo, {playername}! En verdad eres {un gran amigo/una gran amiga}. {s43}
 dlga_start:close_window.14|¡Has llegado justo a tiempo! {playername}. ¡Tienes mi más sincera gratitud! {s43}
 dlga_start:close_window.15|Has llegado justo a tiempo, {playername}. No olvidaré lo que has hecho por mí.
 dlga_start:close_window.16|Me alegra verte aquí, {playername}. {s43}
