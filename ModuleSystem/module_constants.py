@@ -1569,7 +1569,7 @@ center_list = [
 	[icon_mfc_gondor],[900],[2,8,2,8,2,8], str_income_med, garrison_limit_med, 1, tld_siegable_always),
 (p_town_dol_amroth, [scn_dol_amroth_center, scn_dol_amroth_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_dol_amroth_siege,mesh_town_dol_amroth],
 	[trp_barman_dolamroth, trp_smith_dolamroth, trp_merchant_dolamroth, trp_elder_dolamroth, pt_dol_amroth_recruits, trp_knight_1_3, trp_walker_woman_gondor_bw,trp_walker_man_gondor_white,trp_walker_man_gondor_blue,trp_walker_woman_gondor_b], 
-	[icon_mfc_dol_amroth],[900],[2,8,3,8,2,5], str_income_low, garrison_limit_high, 1, tld_siegable_normal),
+	[icon_mfc_dol_amroth],[900],[2,8,3,8,2,5], str_income_high, garrison_limit_high, 1, tld_siegable_normal),
 (p_town_edhellond, [scn_edhellond_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_edhellond_siege, mesh_town_edhellond],
 	[trp_barman_edhellond, trp_smith_edhellond, trp_merchant_edhellond, trp_elder_edhellond, pt_gondor_recruits, trp_gondor_lord, trp_walker_woman_gondor_bw,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
 	[icon_mfc_gondor],[900],[2,3,2,5,2,8], str_income_low, garrison_limit_low, 1, tld_siegable_normal),
@@ -1971,7 +1971,7 @@ fac_tableau_list = [
 ## TODO: fill out the list, these are test values
 fac_reward_items_list = [
 #fac_gondor
-[(2,itm_cooking_cauldron,0),(3,itm_athelas_reward,0),(4,itm_gondor_shield_e, 0), (5, itm_silmarillion_reward, 0), (6, itm_gon_tower_knight, 0), (7, itm_tower_guard_helm, 0), (8, itm_westernesse1h_reward, 0), (9, itm_horn_gondor_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_athelas_reward,0),(4,itm_gondor_shield_e, 0), (5, itm_silmarillion_reward, 0), (6, itm_gon_tower_guard, 0), (7, itm_tower_guard_helm, 0), (8, itm_westernesse1h_reward, 0), (9, itm_horn_gondor_reward, 0)],
 #fac_dwarf
 [(2,itm_cooking_cauldron,0),(3,itm_hammer_reward ,0),(4,itm_scroll_reward, 0), (5, itm_dwarf_shield_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_dwarf_armor_c, imod_lordly), (8, itm_dwarf_great_axe_reward, 0), (9, itm_dwarf_helm_p, imod_lordly)],
 #fac_rohan
