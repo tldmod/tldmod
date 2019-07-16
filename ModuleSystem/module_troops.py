@@ -644,6 +644,21 @@ itm_evil_gauntlets_a_good = 	(itm_evil_gauntlets_a, imod_thick)
 itm_evil_gauntlets_a_lordly = 	(itm_evil_gauntlets_a, imod_reinforced)
 itm_evil_gauntlets_b_good = 	(itm_evil_gauntlets_b, imod_thick)
 
+#Gondor helms
+itm_gondorian_light_helm = (itm_gondor_infantry_helm, imod_cracked)
+itm_gondor_infantry_helm_bad = (itm_gondor_infantry_helm, imod_cracked)
+itm_gondor_infantry_helm_good = (itm_gondor_infantry_helm, imod_thick)
+itm_gondor_auxila_helm_bad = (itm_gondor_auxila_helm, imod_cracked)
+itm_gondor_auxila_helm_good = (itm_gondor_auxila_helm, imod_thick)
+itm_gondorian_light_helm_b = (itm_gondorian_archer_helm, imod_cracked)
+itm_gondorian_archer_helm_bad = (itm_gondorian_archer_helm, imod_cracked)
+itm_gondorian_archer_helm_good = (itm_gondorian_archer_helm, imod_thick)
+itm_gondor_squire_helm = (itm_gondor_knight_helm, imod_cracked)
+itm_gondor_knight_helm_bad = (itm_gondor_knight_helm, imod_cracked)
+itm_gondor_knight_helm_good = (itm_gondor_knight_helm, imod_thick)
+itm_gondor_dolamroth_helm_bad = (itm_gondor_dolamroth_helm, imod_cracked)
+itm_gondor_dolamroth_helm_good = (itm_gondor_dolamroth_helm, imod_thick)
+
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face
 # 0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000  bearded player face
  
