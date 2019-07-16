@@ -304,11 +304,11 @@ scn_khand_camp_center khand_camp_center 256 none none 0 0 100 100 -100 0x0000000
   0 
   1  833 
  outer_terrain_rohan 
-scn_umbar_camp_center umbar_camp_center 256 none none 0 0 100 100 -100         0x3002898a80051d440000154e000026f300004e2d 
+scn_umbar_camp_center umbar_camp_center 256 none none 0 0 100 100 -100 0x000000002001c9a50007e1ed0000154e800026f300004e2d 
   0 
   1  833 
- 0 
-scn_rivendell_camp_center rivendell_camp_center 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+ New_outer_terrain_seaside_west 
+scn_rivendell_camp_center rivendell_camp_center 256 none none 0 0 100 100 -100 0x00000000300349e300084e1600005afd00006c26000063e2 
   0 
   1  833 
  outer_terrain_plain 
@@ -1168,7 +1168,7 @@ scn_woodelf_west_camp_siege woodelf_west_camp_siege 256 none none 0 0 100 100 -1
   0 
   0 
  outer_terrain_forest 
-scn_rivendell_camp_siege rivendell_camp_siege 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_rivendell_camp_siege rivendell_camp_siege 256 none none 0 0 100 100 -100 0x00000000300349e300084e1600005afd00006c26000063e2 
   0 
   1  833 
  outer_terrain_plain 

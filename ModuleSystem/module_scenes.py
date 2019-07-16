@@ -139,14 +139,14 @@ scenes = [
   ("dunland_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],["player_chest"],"outer_terrain_rohan"),
   ("harad_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],["player_chest"],"outer_terrain_steppe"),
   ("khand_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000020040de3000699aa00005234000048ba000004b5",[],["player_chest"],"outer_terrain_rohan"),
+  ("umbar_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000002001c9a50007e1ed0000154e800026f300004e2d",[],["player_chest"],"New_outer_terrain_seaside_west"),  
+  #("umbar_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"        0x3002898a80051d440000154e000026f300004e2d",[],["player_chest"]), #old corsair camp
+  ("rivendell_camp_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000300349e300084e1600005afd00006c26000063e2",[],["player_chest"],"outer_terrain_plain"),
+#  ("rivendell_camp_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_plain"), #old_rivendell camp
 
   ] + (is_a_wb_scene==1 and [
-  ("umbar_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000002001c9a50007e1ed0000154e800026f300004e2d",[],["player_chest"],"New_outer_terrain_seaside_west"),  
-  ("rivendell_camp_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000300349e300084e1600005afd00006c26000063e2",[],["player_chest"],"outer_terrain_plain"),
   ("dol_guldur_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003b0050d0d0004b12c000072f5000027d200005f66",[],[],"New_outer_terrain_forest"),
   ] or [
-  ("umbar_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"        0x3002898a80051d440000154e000026f300004e2d",[],["player_chest"]),
-  ("rivendell_camp_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_plain"),
   ("dol_guldur_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),
 
  ]) + [
@@ -349,7 +349,7 @@ scenes = [
 ("forest_mirkwood2"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 ("forest_mirkwood3"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 ("forest_mirkwood4"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
-("forest_mirkwood5"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
+("forest_mirkwood5"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"), #old terrain code for all mirkwood scenes: 0x00000000bc62c90d0002308c000048850000786900001ef5
 
 ("forest_firien1"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 ("forest_firien2"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
@@ -466,12 +466,7 @@ scenes = [
 ("woodelf_camp_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
 ("woodsmen_village_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000200005d000057d5e000074e600006c2600006d0d",[],[],"outer_terrain_plain"),
 ("woodelf_west_camp_siege"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
-
-   ] + (is_a_wb_scene==1 and [
 ("rivendell_camp_siege"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000300349e300084e1600005afd00006c26000063e2",[],["player_chest"],"outer_terrain_plain"),
- ] or [
-("rivendell_camp_siege"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_plain"),
-	]) + [
 
 ("woodsmen_village2_siege"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b0000500000461190000482500006c26000038f2",[],[],"outer_terrain_forest"),
 ("beorning_village_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b00893e30004851f0000457900001af000004ca7",[],[],"outer_terrain_plain"),
