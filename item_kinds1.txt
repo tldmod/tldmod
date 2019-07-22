@@ -679,7 +679,7 @@ itemsfile version 2
  itm_gondor_knight_helm Gondor_Cavalry_Helm Gondor_Cavalry_Helm 3  gondor_squire_helm 0  gondor_knight_helm 0  gondor_knight_helm2 704643072  65548 0 1300 704643072 2 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_gondor_dolamroth_helm Dol_Amroth_Helm Dol_Amroth_Helm 3  gondor_dolamroth_helm 134  gondor_dolamroth_helm2 0  gondor_dolamroth_helm3 704643072  65548 0 1300 704643072 2.5 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_gondor_dolamroth_helm Dol_Amroth_Helm Dol_Amroth_Helm 3  gondor_dolamroth_helm_1 134  gondor_dolamroth_helm_2 0  gondor_dolamroth_helm_3 704643072  65548 0 1300 704643072 2.5 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_swan_knight_helm Swan_Knight_Helm Swan_Knight_Helm 1  gondor_dolamroth_knight_helm 0  65548 0 1500 704643072 3 100 42 0 0 0 0 0 0 0 0 0 0
@@ -896,7 +896,7 @@ itemsfile version 2
  itm_gondor_spear Gondorian_Spear Gondorian_Spear 1  gondor_spear 0  4554756 9254615759470988544 200 156672 2.25 100 0 0 0 0 20480 102 0 153 0 286 532
 0
 
- itm_gondor_tower_spear Gondorian_Tower_Spear Gondorian_Tower_Spear 1  gondor_tower_spear 0  138772484 9254615759470988544 800 156672 2.25 100 0 0 0 0 23552 99 0 173 0 293 23
+ itm_gondor_tower_spear Gondorian_Tower_Spear Gondorian_Tower_Spear 1  gondor_tower_spear 0  138772484 9254615759470988544 800 156672 2.25 100 0 0 0 0 26624 99 0 173 0 293 26
 0
 
  itm_gondor_lance Gondor_Lance Gondor_Lance 1  amroth_lance 0  2286256132 201326848 400 156672 2.25 100 0 0 0 0 0 89 0 204 0 284 0
@@ -1689,10 +1689,10 @@ itemsfile version 2
  itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16777229 0 4000 704643072 20 100 3 40 14 22 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 0 104 0 148 0 291 0
+ itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 104 0 148 0 291 30
 0
 
- itm_mirkwood_war_spear Mirkwood_War_Spear Mirkwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 500 156672 2.5 100 0 0 0 0 20480 99 0 150 0 287 532
+ itm_mirkwood_war_spear Mirkwood_War_Spear Mirkwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 500 156672 2.5 100 0 0 0 0 25600 99 0 150 0 287 25
 0
 
  itm_mirkwood_short_spear Mirkwood_Spear Mirkwood_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 500 156672 2.5 100 0 0 0 0 20480 97 0 117 0 283 532
