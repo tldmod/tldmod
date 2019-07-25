@@ -2619,10 +2619,10 @@ itemsfile version 2
  itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_1h 0  scab_1h_westernesse 3458764513820540928  4299165698 9223388564182532111 3000 156672 1.25 100 0 0 0 15 38912 117 0 77 0 301 294
 0
 
- itm_westernesse2h_reward Sword_of_The_Great_Serpent Sword_of_The_Great_Serpent 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  4198403 9223635954298781951 200 156672 3 100 0 0 0 15 51200 110 0 92 0 301 50
+ itm_westernesse2h_reward Sword_of_The_Great_Serpent Sword_of_The_Great_Serpent 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  4198403 9223635954298781951 200 156672 3 100 0 0 0 18 51200 110 0 110 0 301 50
 0
 
- itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  71307266 9223388564182532111 200 156672 3 100 0 0 0 15 43008 110 0 88 0 301 298
+ itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  71307266 9223388564182532111 200 156672 3 100 0 0 0 12 43008 110 0 90 0 301 298
 0
 
  itm_nazgul_sword Wicked_Sword Wicked_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  4368371715 9223635954298781951 200 156672 3 100 0 0 0 18 51200 103 0 112 0 301 306
@@ -2634,7 +2634,7 @@ itemsfile version 2
  itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b 0  71307266 9223388529822793743 3000 156672 1.25 100 0 0 0 15 56320 97 0 105 0 278 55
 0
 
- itm_garlic_reward Garlic Garlic 1  garlic 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_garlic_reward Garlic Garlic 1  garlic.9 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_silmarillion_reward Silmarillion Silmarillion 1  JIKBookClosed 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2691,7 +2691,7 @@ itemsfile version 2
  itm_elven_cloak Elven_Cloak Elven_Cloak 1  elven_cloak 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_sword_reward Dale_Royal_Sword Dale_Royal_Sword 2  Mandible_royal_sword 0  Mandible_royal_sword_scabbard 3458764513820540928  4299165698 9223388564182532111 500 0 1.25 100 0 0 0 12 49152 101 0 95 0 286 48
+ itm_dale_sword_reward Dale_Royal_Sword Dale_Royal_Sword 2  Mandible_royal_sword 0  Mandible_royal_sword_scabbard 3458764513820540928  4299165698 9223388564182532111 500 0 1.25 100 0 0 0 12 49152 97 0 110 0 286 48
 0
 
  itm_dale_armor_reward Dale_Noblemen_Mail Dale_Noblemen_Mail 1  dale_reward 0  16781325 0 2000 0 22 100 4 38 15 0 0 0 0 0 0 0 0
