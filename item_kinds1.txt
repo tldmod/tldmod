@@ -1659,7 +1659,7 @@ itemsfile version 2
  itm_rohan_sword_c Rohan_Sword Rohan_Sword 2  rohan_sword_c 0  scab_rohan_sword_c 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 103 0 96 0 277 29
 0
 
- itm_rohirrim_short_axe Rohirrim_Short_Axe Rohirrim_Short_Axe 1  rohan_1haxe 0  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 35840 110 0 50 0 256 35
+ itm_rohirrim_short_axe Rohirrim_Short_Axe Rohirrim_Short_Axe 1  rohan_1haxe 0  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 35840 100 0 50 0 256 35
 0
 
  itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  38860554243 9223652412881895662 500 287892 2 100 0 0 0 0 35840 92 0 76 0 256 35
@@ -1686,7 +1686,7 @@ itemsfile version 2
  itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643072 15 100 0 35 14 18 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16777229 0 4000 704643072 20 100 3 40 14 22 0 0 0 0 0 0 0
+ itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643072 20 100 3 40 14 18 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 104 0 148 0 291 30
@@ -1701,7 +1701,7 @@ itemsfile version 2
  itm_mirkwood_knife Mirkwood_White_Knife Mirkwood_White_Knife 2  mirkwood_white_knife 0  scab_mirkwood_white_knife 3458764513820540928  12664834 9223372072313421839 400 286870 0.75 100 0 0 0 0 24576 120 0 51 0 273 24
 0
 
- itm_mirkwood_sword Mirkwood_Sword Mirkwood_Sword 2  mirkwood_longsword 0  scab_mirkwood_longsword 3458764513820540928  4259842 9223388564182532111 700 156672 1.25 100 0 0 0 0 30720 96 0 92 0 281 30
+ itm_mirkwood_sword Mirkwood_Axe Mirkwood_Axe 2  mirkwood_axe 0  mirkwood_axe_carry 3458764513820540928  80019458 9223388530091229198 600 156672 1 100 0 0 0 0 44032 115 0 51 0 256 43
 0
 
  itm_mirkwood_spear_shield_a Mirkwood_Spearman_Shield Mirkwood_Spearman_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3 100 0 20 0 0 1000 82 0 90 0 0 0
@@ -2619,7 +2619,7 @@ itemsfile version 2
  itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_1h 0  scab_1h_westernesse 3458764513820540928  4299165698 9223388564182532111 3000 156672 1.25 100 0 0 0 15 38912 117 0 77 0 301 294
 0
 
- itm_westernesse2h_reward Sword_of_The_Great_Serpent Sword_of_The_Great_Serpent 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  4198403 9223635954298781951 200 156672 3 100 0 0 0 18 51200 110 0 110 0 301 50
+ itm_westernesse2h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  4198403 9223635954298781951 200 156672 3 100 0 0 0 18 51200 110 0 110 0 301 50
 0
 
  itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  71307266 9223388564182532111 200 156672 3 100 0 0 0 12 43008 110 0 90 0 301 298
