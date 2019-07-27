@@ -176,10 +176,20 @@ _fold_start_ '[Uploading finished TLD packages]'
 
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"   | tee    bitbucket.log
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb" | tee -a bitbucket.log
-    
-    
+
+
     # fail the build if things didn't go as expected
     grep --no-messages 'error' bitbucket.log && exit 1;
+    
+_fold_final_
+    
+_fold_start_ '[Archiving packages in the Wayback Machine]'
+    # wait a bit for the servers to flush their caches
+    sleep 4
 
+    # archive the downloads in the Wayback Machine; to make them future-proof, in case Bitbucket goes nuts again
+    curl -L -I "https://web.archive.org/save/https://bitbucket.org$bbpage/$bbfile"
+    curl -L -I "https://web.archive.org/save/https://bitbucket.org$bbpage/$bbfilewb"
+    curl -L -I "https://web.archive.org/save/https://bitbucket.org$bbpage/"
 
 _fold_final_
