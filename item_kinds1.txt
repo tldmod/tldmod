@@ -1701,7 +1701,7 @@ itemsfile version 2
  itm_mirkwood_knife Mirkwood_White_Knife Mirkwood_White_Knife 2  mirkwood_white_knife 0  scab_mirkwood_white_knife 3458764513820540928  12664834 9223372072313421839 400 286870 0.75 100 0 0 0 0 24576 120 0 51 0 273 24
 0
 
- itm_mirkwood_sword Mirkwood_Axe Mirkwood_Axe 2  mirkwood_axe 0  mirkwood_axe_carry 3458764513820540928  80019458 9223388530091229198 600 156672 1 100 0 0 0 0 44032 115 0 51 0 256 43
+ itm_mirkwood_axe Mirkwood_Axe Mirkwood_Axe 2  mirkwood_axe 0  mirkwood_axe_carry 3458764513820540928  80019458 9223388530091229198 600 156672 1 100 0 0 0 0 44032 115 0 51 0 256 43
 0
 
  itm_mirkwood_spear_shield_a Mirkwood_Spearman_Shield Mirkwood_Spearman_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3 100 0 20 0 0 1000 82 0 90 0 0 0
@@ -2721,7 +2721,7 @@ itemsfile version 2
  itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armour 0  denethor_robe 2048  dm_nazgulrobe 512  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16777229 0 4000 704643072 20 100 0 43 15 15 0 0 0 0 0 0 0
 0
 
- itm_free_denethor_robe Stewards_Robe Stewards_Robe 1  denethor_robe 0  16777229 0 1000 704643072 20 100 0 44 15 0 0 0 0 0 0 0 0
+ itm_wilderness_amulet Wolf_Teeth_Amulet Wolf_Teeth_Amulet 1  dunland_wolf_amulet 0  16777229 0 1000 704643072 20 100 0 44 15 0 0 0 0 0 0 0 0
 0
 
  itm_prisoner_coll_chain Prisoner_Chains Prisoner_Chains 1  prisoner_coll_chain 0  16777228 0 10 0 10 100 2 0 0 0 0 0 0 0 0 0 0
