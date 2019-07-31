@@ -545,62 +545,62 @@ field_ai_triggers = [
  ]),
 
  #Out of Ammo Trigger #Valid division 0-8
-  (ti_on_item_unwielded, 0, 0, [
-    (party_get_slot, reg3, "p_main_party", slot_party_pref_div_no_ammo),(is_between, reg3, 0, 9),
-    
-    (store_trigger_param_2, ":weapon"),
-    (ge, ":weapon", 0),
-    (item_get_type, ":type", ":weapon"),
-    (this_or_next|eq, ":type", itp_type_bow),
-    (eq, ":type", itp_type_crossbow),
-
-    (store_trigger_param_1, ":agent"),
-    (agent_is_alive, ":agent"),
-    (agent_is_non_player, ":agent"),
-    
-    (agent_get_ammo, ":ammo", ":agent", 0),
-    (le, ":ammo", 0), 
-    (agent_get_horse, ":horse", ":agent"),
-    (eq, ":horse", -1),
-
-   ], 
-   
-   [
-    (store_trigger_param_2, ":weapon"),
-    (ge, ":weapon", 0),
-    (item_get_type, ":type", ":weapon"),
-    (this_or_next|eq, ":type", itp_type_bow),
-    (eq, ":type", itp_type_crossbow),
-    
-    (store_trigger_param_1, ":agent"),
-    (agent_is_alive, ":agent"),
-    (agent_is_non_player, ":agent"),
-    
-    (agent_get_ammo, ":ammo", ":agent", 0),
-    (le, ":ammo", 0), 
-    (agent_get_horse, ":horse", ":agent"),
-    (eq, ":horse", -1),
-  
-    (agent_get_team, ":team", ":agent"),
-    (assign, ":continue", 1),
-    (try_begin),
-      (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town), #Sieges
-      (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),   
-      (this_or_next|eq, ":team", "$defender_team"),
-      (eq, ":team", "$defender_team_2"),
-      (assign, ":continue", 0), #To not reassign units that will get their ammo refilled.
-    (try_end),
-    (eq, ":continue", 1), 
-  
-    (try_begin),
-      (eq, ":team", "$fplayer_team_no"),
-      (agent_set_division, ":agent", reg3),
-      (agent_set_slot, ":agent", slot_agent_new_division, reg3),
-    (else_try),
-      (agent_set_division, ":agent", grc_infantry),
-      (agent_set_slot, ":agent", slot_agent_new_division, grc_infantry),
-    (try_end),  
-   ]),
+ # (ti_on_item_unwielded, 0, 0, [
+# #   (party_get_slot, reg3, "p_main_party", slot_party_pref_div_no_ammo),(is_between, reg3, 0, 9),
+# #   
+# #   (store_trigger_param_2, ":weapon"),
+# #   (ge, ":weapon", 0),
+# #   (item_get_type, ":type", ":weapon"),
+# #   (this_or_next|eq, ":type", itp_type_bow),
+# #   (eq, ":type", itp_type_crossbow),
+#
+# #   (store_trigger_param_1, ":agent"),
+# #   (agent_is_alive, ":agent"),
+# #   (agent_is_non_player, ":agent"),
+# #   
+# #   (agent_get_ammo, ":ammo", ":agent", 0),
+# #   (le, ":ammo", 0), 
+# #   (agent_get_horse, ":horse", ":agent"),
+# #   (eq, ":horse", -1),
+#
+ #  ], 
+ #  
+ #  [
+ #   (store_trigger_param_2, ":weapon"),
+ #   (ge, ":weapon", 0),
+ #   (item_get_type, ":type", ":weapon"),
+ #   (this_or_next|eq, ":type", itp_type_bow),
+ #   (eq, ":type", itp_type_crossbow),
+ #   
+ #   (store_trigger_param_1, ":agent"),
+ #   (agent_is_alive, ":agent"),
+ #   (agent_is_non_player, ":agent"),
+ #   
+ #   (agent_get_ammo, ":ammo", ":agent", 0),
+ #   (le, ":ammo", 0), 
+ #   (agent_get_horse, ":horse", ":agent"),
+ #   (eq, ":horse", -1),
+ # 
+ #   (agent_get_team, ":team", ":agent"),
+ #   (assign, ":continue", 1),
+ #   (try_begin),
+ #     (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town), #Sieges
+ #     (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),   
+ #     (this_or_next|eq, ":team", "$defender_team"),
+ #     (eq, ":team", "$defender_team_2"),
+ #     (assign, ":continue", 0), #To not reassign units that will get their ammo refilled.
+ #   (try_end),
+ #   (eq, ":continue", 1), 
+ # 
+ #   (try_begin),
+ #     (eq, ":team", "$fplayer_team_no"),
+ #     (agent_set_division, ":agent", reg3),
+ #     (agent_set_slot, ":agent", slot_agent_new_division, reg3),
+ #   (else_try),
+ #     (agent_set_division, ":agent", grc_infantry),
+ #     (agent_set_slot, ":agent", slot_agent_new_division, grc_infantry),
+ #   (try_end),  
+ #  ]),
    
 
  ###GENERAL AI TRIGGER for SPECIAL ORDERS  ##Deal with Formations    
