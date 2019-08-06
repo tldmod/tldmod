@@ -659,6 +659,23 @@ itm_gondor_knight_helm_good = (itm_gondor_knight_helm, imod_thick)
 itm_gondor_dolamroth_helm_bad = (itm_gondor_dolamroth_helm, imod_cracked)
 itm_gondor_dolamroth_helm_good = (itm_gondor_dolamroth_helm, imod_thick)
 
+#Lorien armours
+itm_lorien_archer_cloak = (itm_lorien_archer , imod_cloak)
+itm_lorien_archer_good = (itm_lorien_archer , imod_thick)
+itm_lorien_archer_good_cloak = (itm_lorien_archer , imod_reinforced)
+itm_lorien_light_bad = (itm_lorien_armor_a , imod_crude)
+itm_lorien_light_cloak = (itm_lorien_armor_a , imod_cloak)
+itm_lorien_light_good = (itm_lorien_armor_a , imod_thick)
+itm_lorien_light_good_cloak = (itm_lorien_armor_a , imod_reinforced)
+itm_lorien_med_bad = (itm_lorien_armor_b , imod_crude)
+itm_lorien_med_cloak = (itm_lorien_armor_b , imod_cloak)
+itm_lorien_med_good = (itm_lorien_armor_b , imod_thick)
+itm_lorien_med_good_cloak = (itm_lorien_armor_b , imod_reinforced)
+itm_lorien_heavy_bad = (itm_lorien_armor_c , imod_crude)
+itm_lorien_heavy_cloak = (itm_lorien_armor_c , imod_cloak)
+itm_lorien_heavy_good = (itm_lorien_armor_c , imod_thick)
+itm_lorien_heavy_good_cloak = (itm_lorien_armor_c , imod_reinforced)
+
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face
 # 0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000  bearded player face
  
