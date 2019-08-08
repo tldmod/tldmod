@@ -3,10 +3,10 @@ dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para a linha, verme! Estamos em gue
 dlga_mutiny_pretalk_2:close_window|Como quiser, comandante. Como quiser...
 dlga_start:mutiny_talk_1|Ei, comandante. Escute aqui... Os rapazes não estão felizes, nem um pouco felizes. ^Não tem carne humana o suficiente, não tem diversão. ^Os rapazes dizem que você não é bom o suficiente, comandante!
 dlga_mutiny_talk_1:mutiny_talk_2|O quê? Insubordinação durante a guerra? Isso é punível com a morte, verme!
-dlga_mutiny_talk_2:close_window|Vamos te dizer uma coisa... Os rapazes aqui acham vou ser melhor comandante para eles quando EU MATAR VOCÊ!
+dlga_mutiny_talk_2:close_window|Vamos te dizer uma coisa... Os rapazes aqui acham que serei melhor comandante para eles quando EU MATAR VOCÊ!
 dlga_start:troll_introduce_1|Algum problema?
 dlga_start:troll_talk_1|Tá putin?
-dlga_troll_introduce_1:troll_goodbye|Caraio! Um troll falante?!
+dlga_troll_introduce_1:troll_goodbye|Taporra! Um troll falante?!
 dlga_troll_introduce_1:close_window|Eu tenho um cavalo.
 dlga_troll_talk_1:troll_talk_2|Me trolla, seu troll.
 dlga_troll_talk_1:close_window|Eu tenho um cavalo.
@@ -16,7 +16,7 @@ dlga_troll_goodbye:close_window|Yeye! trolladinha do malandro.
 dlga_start:hobbit_merry_talk_met|Olá novamente, {playername}!
 dlga_start:hobbit_pippin_talk_met|Olá novamente, {playername}!
 dlga_start:hobbit_general_talk_1|Olá, {senhor/madame}! Meu nome é Meriadoc Brandybuck, mas pode me chamar de Merry!
-dlga_start:hobbit_general_talk_1.1|Olá, {senhor/madame}! Meu nome é Peregrin Took, mas você pode me chamar de Pippin!
+dlga_start:hobbit_general_talk_1.1|Olá, {senhor/madame}! Meu nome é Peregrin Took, mas pode me chamar de Pippin!
 dlga_hobbit_general_talk_1:close_window|Não tenho tempo agora.
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Vou te falar... acho que nunca vi ninguém da sua raça.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Vou te falar...Acho que conheci outro que nem você, em Edoras.
@@ -891,7 +891,7 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|Eu espero que você não falhar. 
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Bem, basta fazer o seu melhor para terminá-lo .
 dlga_merchant_quest_taken:mayor_pretalk|Excelente. Eu estou contando com você então. Boa sorte.
 dlga_merchant_quest_stall:mayor_pretalk|Bem, eu vou ver a encontrar outra pessoa. Mas diga-me se mudares de ideias.
-; dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
+dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|Farei o que puder. Apenas saberei o ir e vir deles se estiveram recentemente em outro centro. Se eles não estão em um centro, caravanas me falarão sobre a região que eles estão próximos.
 dlga_mayor_talk_ask_location_2:mayor_pretalk|Deixe para lá.
 dlga_merchant_quest_requested:merchant_quest_brief|Bem, você parece capaz o suficiente. Acho que tenho algo que você poderia fazer.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Já tivemos alguns combates perto de {s5} ultimamente, com todo o caos que vem com ele, e isso tem atraído alguns bandos de orcs tribais para os arredores da incursão durante a confusão. Preciso de alguém para dar uma lição a esses orcs. Parece o seu tipo de trabalho?

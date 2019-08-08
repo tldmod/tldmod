@@ -148,7 +148,7 @@ trp_i2_dwarven_warrior|Guerriero Nanico
 trp_i2_dwarven_warrior_pl|Guerrieri Nanici
 trp_i3_dwarven_hardened_warrior|Guerriero Nano Temprato
 trp_i3_dwarven_hardened_warrior_pl|Guerrieri Nanici Temprati
-trp_i4_dwarven_spearman|Picchiere Nanico
+trp_i4_dwarven_spearman|Lanciere Nanico
 trp_i4_dwarven_spearman_pl|Picchieri Nanici
 trp_i5_dwarven_pikeman|Picchiere Nanico
 trp_i5_dwarven_pikeman_pl|Lancieri Nanici
@@ -160,7 +160,7 @@ trp_i5_dwarven_expert_axeman|Nano Esperto con Ascia
 trp_i5_dwarven_expert_axeman_pl|Nani Esperti con Ascia
 trp_i6_longbeard_axeman|Nano Barbuto con Ascia 
 trp_i6_longbeard_axeman_pl|Nani Barbuti con Ascia
-trp_a2_dwarven_lookout|Vedettta Nanica
+trp_a2_dwarven_lookout|Vedetta Nanica
 trp_a2_dwarven_lookout_pl|Vedette Naniche
 trp_a3_dwarven_scout|Nano Esploratore
 trp_a3_dwarven_scout_pl|Esploratori Nanici
@@ -1368,7 +1368,7 @@ trp_elder_tarnost|Borgomastro di Tarnost
 trp_elder_tarnost_pl|La città
 trp_elder_erech|Borgomastro di Erech
 trp_elder_erech_pl|La città
-trp_elder_pinnath|Pinnath, l'anziano della Tribù
+trp_elder_pinnath|Pinnath, il Saggio della Tribù
 trp_elder_pinnath_pl|La città
 trp_elder_ethring|Borgomastro di Calembel
 trp_elder_ethring_pl|La Città
@@ -1404,13 +1404,13 @@ trp_elder_cdolen|Sapiente di Lorien
 trp_elder_cdolen_pl|L'insediamento
 trp_elder_camroth|Sapiente di Lorien
 trp_elder_camroth_pl|L'insediamento
-trp_elder_thalls|Anziano di Bosco Atro
+trp_elder_thalls|Il Saggio di Bosco Atro
 trp_elder_thalls_pl|Le caverne Elfiche
 trp_elder_imladris|Comandante del campo di Gran Burrone
 trp_elder_imladris_pl|Il Campo
 trp_elder_wvillage|Pierre Woodman
 trp_elder_wvillage_pl|Il Villaggio
-trp_elder_beorn|Anziano di Beorn
+trp_elder_beorn|Il Saggio di Beorn
 trp_elder_beorn_pl|Il borgo
 trp_elder_harad|Capo del Campo Harad
 trp_elder_harad_pl|Il Campo
@@ -1512,7 +1512,7 @@ trp_gandalf_pl|Gandalves casalinghi
 trp_nazgul|Nazgul
 trp_nazgul_pl|Nazgul addomesticato
 trp_barman|Barman
-trp_elder|Anziano del Centro
+trp_elder|Il Saggio del Centro
 trp_gear_merchant|Mercante di Equipaggiamenti
 trp_goods_merchant|Mercante di Beni
 trp_start_quest_caravaneer|Torbal, il Carovaniere

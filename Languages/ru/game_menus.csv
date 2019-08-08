@@ -106,7 +106,7 @@ mno_start_1_des|Житель пустынь
 mno_start_2_far|Выходец из племён Дальнего Харада
 ; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
 ; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+mno_start_2_bn|В крепости некроманта Дол Гулдура
 menu_choose_gender|^^^^^^^^^^Ваш пол?
 mno_start_male|Мужской
 mno_start_female|Женский
@@ -201,7 +201,7 @@ mno_special_whip|Рвануться навстречу врагу, щелкну�
 mno_encounter_leave|Отступить.
 mno_encounter_retreat|Отступить, оставив часть воинов прикрывать отход.
 ; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_back|Вернуться.
 mno_hide_close|Далее...
 menu_encounter_retreat_confirm|^^^^^Как участник отряда с наивысшим показателем Тактики, ({reg2}), {reg3?вы разработали:{s3} придумывает} план, который позволит вам и вашим воинам спастись, сохранив свои жизни, но вам придётся оставить {reg4} бойцов, чтобы те задержали противника.
 mno_leave_behind|Да будет так. Следует принести в жертву этих воинов, чтобы спасти остальных.

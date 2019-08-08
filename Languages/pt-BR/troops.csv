@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Vigias de Pelargir
 trp_pelargir_marine|Soldado de Pelargir
 trp_pelargir_marine_pl|Soldados de Pelargir
 trp_pelargir_vet_marine|Soldado Veterano de Pelargir
-; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
+trp_pelargir_vet_marine_pl|Marinheiros Pelargir Veteranos
 trp_pelargir_infantry|Soldado de Infantaria de Pelargir
 trp_pelargir_infantry_pl|Infantaria de Pelargir
 trp_pelargir_vet_infantry|Soldado de Infantaria Veterano de Pelargir
@@ -674,10 +674,10 @@ trp_olog_hai|Olog Hai de Mordor
 trp_olog_hai_pl|Olog Hai de Mordor
 trp_ent|Ent
 trp_ent_pl|Ents
-; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
-; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
-; trp_orc_of_guldur|Orc Tracker of Dol Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
+trp_orc_snaga_of_guldur|Snaga Orc de Dol Guldur
+trp_orc_snaga_of_guldur_pl|Snagas Orc de Dol Guldur
+trp_orc_of_guldur|Rastreador Orc de Dol Guldur
+trp_orc_of_guldur_pl|Rastreadores Orc de Dol Guldur
 trp_orc_snaga_of_mordor|Orc Snaga de Mordor
 trp_orc_snaga_of_mordor_pl|Orcs Snagas de Mordor
 trp_orc_of_mordor|Orc de Mordor
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Cavaleiro de Warg de Gorgoroth
 trp_warg_rider_of_gorgoroth_pl|Cavaleiros de Warg de Gorgoroth
 trp_great_warg_rider_of_mordor|Cavaleiro de Warg Grande de Udun
 trp_great_warg_rider_of_mordor_pl|Cavaleiros de Warg Grande de Udun
-; trp_morgul_orc|Orc of Minas Morgul
-; trp_morgul_orc_pl|Orcs of Minas Morgul
-; trp_fell_morgul_orc|Fell Orc of Minas Morgul
-; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
-; trp_orc_tracker_of_mordor|Large Orc Tracker of Dol Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Trackers of Dol Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
+trp_morgul_orc|Orc de Minas Morgul
+trp_morgul_orc_pl|Orcs de Minas Morgul
+trp_fell_morgul_orc|Orc Caído de Minas Morgul
+trp_fell_morgul_orc_pl|Orcs Caídos de Minas Morgul
+trp_orc_tracker_of_mordor|Rastreador Grande Orc de Dol Guldur
+trp_orc_tracker_of_mordor_pl|Rastreadores Grandes Orc de Dol Guldur
+trp_fell_orc_tracker_of_mordor|Rastreador Caído Orc de Dol Guldur
+trp_fell_orc_tracker_of_mordor_pl|Rastreadores Caídos Orc de Dol Guldur
 trp_orc_archer_of_mordor|Orc Arqueiro de Mordor
 trp_orc_archer_of_mordor_pl|Orcs Arqueiros de Mordor
 trp_large_orc_archer_of_mordor|Orc Grande Arqueiro de Mordor
@@ -718,8 +718,8 @@ trp_i3_large_goblin_of_moria|Goblin Grande de Moria
 trp_i3_large_goblin_of_moria_pl|Goblins Grandes de Moria
 trp_i4_fell_goblin_of_moria|Goblin Caído de Moria
 trp_i4_fell_goblin_of_moria_pl|Goblins Caídos de Moria
-; trp_a2_archer_snaga_of_moria|Goblin Archer of Moria
-; trp_a2_archer_snaga_of_moria_pl|Goblin Archers of Moria
+trp_a2_archer_snaga_of_moria|Arqueiro Goblin de Moria
+trp_a2_archer_snaga_of_moria_pl|Arqueiros Goblin de Moria
 trp_a3_large_goblin_archer_of_moria|Goblin Grande Arqueiro de Moria
 trp_a3_large_goblin_archer_of_moria_pl|Goblins Grandes Arqueiros de Moria
 trp_a4_fell_goblin_archer_of_moria|Goblin Caído Arqueiro de Moria
@@ -731,14 +731,14 @@ trp_i2_orc_gundabad|Orc de Gundabad
 trp_i2_orc_gundabad_pl|Orcs de Gundabad
 trp_i3_orc_fighter_gundabad|Orc Lutador de Gundabad
 trp_i3_orc_fighter_gundabad_pl|Orcs Lutadores de Gundabad
-; trp_i4_fell_orc_warrior_gundabad|Gundabad Orc Warrior
-; trp_i4_fell_orc_warrior_gundabad_pl|Gundabad Orc Warriors
-; trp_i4_orc_beserker_gundabad|Gundabad Orc Berserker
-; trp_i4_orc_beserker_gundabad_pl|Gundabad Orc Berserkers
-; trp_ca4_warg_skirmisher_gundabad|Gundabad Skirmisher
-; trp_ca4_warg_skirmisher_gundabad_pl|Gundabad Skirmishers
-; trp_ca5_goblin_north_clan_skirmisher|Goblin North Clan Skirmisher
-; trp_ca5_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
+trp_i4_fell_orc_warrior_gundabad|Guerreiro Orc Gundabad
+trp_i4_fell_orc_warrior_gundabad_pl|Guerreiros Orc Gundabad
+trp_i4_orc_beserker_gundabad|Orc Frenético Gundabad
+trp_i4_orc_beserker_gundabad_pl|Orcs Frenéticos Gundabad
+trp_ca4_warg_skirmisher_gundabad|Escaramuçador Gundabad
+trp_ca4_warg_skirmisher_gundabad_pl|Escaramuçadores Gundabad 
+trp_ca5_goblin_north_clan_skirmisher|Escaramuçador Goblin do Clã do Norte
+trp_ca5_goblin_north_clan_skirmisher_pl|Escaramuçadores Goblin do Clã do Norte
 trp_c3_goblin_rider_gundabad|Goblin Cavaleiro de Gundabad
 trp_c3_goblin_rider_gundabad_pl|Goblins Cavaleiros de Gundabad
 trp_c4_warg_rider_gundabad|Cavaleiro de Warg de Gundabad
@@ -751,8 +751,8 @@ trp_tribal_orc|Orc Tribal
 trp_tribal_orc_pl|Orcs tribais
 trp_tribal_orc_warrior|Orc Tribal Guerreiro
 trp_tribal_orc_warrior_pl|Orcs Tribais Guerreiros
-; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
-; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
+trp_i5_orc_champion_gundabad|Campeão Orc Gundabad
+trp_i5_orc_champion_gundabad_pl|Campeões Orc Gundabad
 trp_black_numenorean_renegade|Numenoriano Negro Renegado
 trp_black_numenorean_renegade_pl|Numenorianos Negros Renegados
 trp_black_numenorean_warrior|Numenoriano Negro Guerreiro
@@ -811,8 +811,8 @@ trp_black_numenorean_captain|Numenoriano Negro Capitão
 trp_black_numenorean_captain_pl|Numenorianos Negros Capitães
 trp_black_numenorean_lieutenant|Numenoriano Negro Tenente
 trp_black_numenorean_lieutenant_pl|Numenorianos Negros Tenentes
-; trp_dunnish_night_wolf|Dunnish Night Wolf
-; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
+trp_dunnish_night_wolf|Lobo da Noite Dunland
+trp_dunnish_night_wolf_pl|Lobos da Noite Dunland
 trp_dunnish_lieutenant|da Terra Parda Hetman
 trp_dunnish_lieutenant_pl|da Terra Parda Hetmen
 trp_goblin_chieftain|Goblin Chefe
@@ -988,8 +988,8 @@ trp_pippin_notmet|Pequenino
 trp_merry_notmet|Pequenino
 trp_pippin|Pippin
 trp_merry|Merry
-; trp_knight_1_1|Angbor the Fearless
-; trp_knight_1_2|Húrin of the Keys
+trp_knight_1_1|Angbor o Destemido
+trp_knight_1_2|Húrin das Chaves
 trp_knight_1_3|Príncipe Imrahil
 trp_knight_1_4|Orthalion
 trp_knight_1_5|Duinhir
@@ -1049,7 +1049,7 @@ trp_knight_5_6|Fulgni Barbalonga
 trp_knight_5_7|Thorin Elmopetreo
 trp_knight_5_11|Chefe Fudreim
 trp_knight_5_12|Chefe Wulf
-; trp_knight_6_1|Dervorin
+trp_knight_6_1|Dervorin
 trp_smith_mtirith|Berethor O Ferreiro
 trp_smith_mtirith_pl|Ferreiros do Regente
 trp_smith_pelargir|Hallatan Mestre do Metal
@@ -1148,7 +1148,7 @@ trp_smith_gundabad|Blurg Vendeneve
 trp_smith_gundabad_pl|Ferreiro
 trp_smith_ironhill|Ferreiro de Colinas de Ferro
 trp_smith_ironhill_pl|Acampamento Anão de Ferreiros
-; trp_town_50_weaponsmith|Shruklug Knife Grinder
+trp_town_50_weaponsmith|Shruklug Amolador de Faca
 trp_town_50_weaponsmith_pl|Ferreiro
 trp_smith_gondor_ac|Bor Fazedor de Armaduras
 trp_smith_gondor_ac_pl|Acampamento de Ferreiro
@@ -1243,7 +1243,7 @@ trp_barman_dale_pl|O Castelo
 trp_barman_esgaroth|Gerente da Taverna
 trp_barman_esgaroth_pl|O Corredor
 trp_barman_erebor|Gerente da Taverna
-; trp_barman_erebor_pl|the Great Chamber of Thrór
+trp_barman_erebor_pl|a Grande Câmara de Thrór
 trp_barman_dolguldur|Gerente da Taverna
 trp_barman_dolguldur_pl|O Castelo
 trp_merchant_mtirith|Mestre dos Suprimentos
@@ -1348,7 +1348,7 @@ trp_merchant_gundabad|Mestre dos Suprimentos
 trp_merchant_gundabad_pl|Esconderijo do Acampamento
 trp_merchant_ironhill|Mestre dos Suprimentos
 trp_merchant_ironhill_pl|Suprimentos Anões
-; trp_town_50_horse_merchant|Gobrip Yellowtooth
+trp_town_50_horse_merchant|Gobrip Dente-Amarelo
 trp_town_50_horse_merchant_pl|Cova de Warg e Suprimentos
 trp_merchant_calembel|Mestre dos Suprimentos
 trp_merchant_calembel_pl|Estábulo e Armazém
@@ -1424,7 +1424,7 @@ trp_elder_umbar|Contramestre de Umbar
 trp_elder_umbar_pl|O Acampamento Fortificado
 trp_elder_moria|Chefe de Moria
 trp_elder_moria_pl|As Minas
-; trp_elder_gunda|Master of the Caves
+trp_elder_gunda|Mestre das Cavernas
 trp_elder_gunda_pl|As Cavernas
 trp_elder_dale|Contramestre de Valle
 trp_elder_dale_pl|A Cidade
@@ -1470,7 +1470,7 @@ trp_elder_guldur_ac|Chefe do Acampamento de Guldur
 trp_elder_guldur_ac_pl|O Acampamento
 trp_elder_dwarf_ac|Anão Mestre do Acampamento
 trp_elder_dwarf_ac_pl|O Acampamento
-; trp_village_1_elder|Lord of the Lash
+trp_village_1_elder|Lorde do Chicote
 trp_village_1_elder_pl|As Cavernas
 trp_tutorial_chest_1|Baú de Armas Brancas
 trp_tutorial_chest_2|Baú de Armas a Distância
@@ -1534,7 +1534,7 @@ trp_wolf_rider_of_mirkwood|Cavaleiro de Lobo da Floresta das Trevas
 trp_wolf_rider_of_mirkwood_pl|Cavaleiros de Lobo da Floresta das Trevas
 trp_warg_rider_of_mirkwood|Cavaleiro de Warg da Floresta das Trevas
 trp_warg_rider_of_mirkwood_pl|Cavaleiros de Warg da Floresta das Trevas
-; trp_gate_aggravator|Gate Defence
+trp_gate_aggravator|Defesa do Portão
 trp_orc_pretender|Orc Fingidor
 trp_human_prisoner|Prisioneiro Humano
 trp_spider|Aranhas
@@ -1563,31 +1563,31 @@ trp_start_quest_mordor_scout|O que fazer em Mordor
 trp_start_quest_mordor_scout_pl|O que fazer em Mordor
 trp_start_quest_beorning|Beorning Berserker de Carrock
 trp_start_quest_beorning_pl|Beornings Berserkers de Carrock
-; trp_beorning_shield_bear|Bear Warrior
-; trp_beorning_shield_bear_pl|Bear Warriors
-; trp_morannon_healer|Okstuk the Healer
-; trp_minas_tirith_healer|Ioreth
-; trp_edoras_healer|Freya the Healer
-; trp_isengard_healer|Nurgal the Patcher
-; trp_guldur_healer|Mornagar the Gramaryer
-; trp_gundabad_healer|Lurgakh Third Eye
-; trp_mirkwood_healer|Corwiel the Soft-Handed
+trp_beorning_shield_bear|Guerreiro Urso
+trp_beorning_shield_bear_pl|Guerreiros Ursos
+trp_morannon_healer|Okstuk, o Curandeiro
+trp_minas_tirith_healer|Ioreth
+trp_edoras_healer|Freya, a Curandeira
+trp_isengard_healer|Nurgal, o Remendador
+trp_guldur_healer|Mornagar, o Gramariano
+trp_gundabad_healer|Lurgakh Terceiro-Olho
+trp_mirkwood_healer|Corwiel, o Mão-Suave
 trp_hungry_uruk|Uruk Faminto
 trp_hungry_orc|Orc Faminto
-; trp_longing_lorien|Longing Elf
-; trp_longing_woodelf|Longing Elf
-; trp_longing_imladris|Longing Elf
-; trp_i5_deep_dweller_of_moria|Deep-Dweller of Moria
-; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
-; trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
-; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
-; trp_rhovanion_noble|Rhovanion Noble
-; trp_rhovanion_noble_pl|Rhovanion Noblemen
+trp_longing_lorien|Elfo Ansioso
+trp_longing_woodelf|Elfo Ansioso
+trp_longing_imladris|Elfo Ansioso
+trp_i5_deep_dweller_of_moria|Escavador Profundo de Moria
+trp_i5_deep_dweller_of_moria_pl|Escavadores Profundos de Moria
+trp_i5_orc_chieftain_of_moria|Chefe Orc de Moria
+trp_i5_orc_chieftain_of_moria_pl|Chefes Orc de Moria
+trp_rhovanion_noble|Nobre Rhovanion
+trp_rhovanion_noble_pl|Nobres Rhovanion
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_werewolf|Lobisomem
-; trp_werewolf_pl|Werewolves
+trp_werewolf_pl|Licantropos
 trp_mountain_goblin2|Goblin das Montanhas
 trp_mountain_goblin2_pl|Goblins das Montanhas
 trp_tribal_orc2|Orc Tribal

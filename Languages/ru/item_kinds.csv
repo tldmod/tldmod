@@ -114,7 +114,7 @@ itm_riv_bow|Ривендельский лук
 itm_lorien_bow|Галадримский лук
 itm_isengard_large_bow|Изенгардский большой лук
 itm_dale_bow|Дейльский лук
-; itm_uruk_bow|Orc Horn Bow
+itm_uruk_bow|Орочий лук и рога
 itm_mirkwood_bow|Темнолесский лук
 itm_dunland_javelin|Дунландские дротики
 itm_orc_throwing_arrow|Орочьи дротики
@@ -914,7 +914,7 @@ itm_dwarf_shield_reward|Щит Келед-Зарама
 itm_dwarf_great_axe_reward|Гномья острая секира
 itm_isen_uruk_heavy_reward|Броня воеводы урук-хай
 itm_lorien_bow_reward|Нолдорский лук
-; itm_elven_cloak|Elven Cloak
+itm_elven_cloak|Эльфийский плащ
 itm_dale_sword_reward|Дэйльский королевский меч
 
 itm_dale_armor_reward|Дэйльская благородная кольчуга

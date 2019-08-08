@@ -58,11 +58,11 @@ ui_are_you_sure_you_want_to_import_the_character|Jesteś pewny, że chcesz zaimp
 ui_explanation_strength|Siła: Każdy punkt dodaje +1 do punktów życia. Następujące umiejętności nie mogą przekroczyć 1/3 siły: Żelazna Skóra, Potężny Cios, Potężny rzut, Siła naciągu.
 ui_explanation_intelligence|Inteligencja: Każdy punkt daje Ci dodatkowy punkt umiejętności. Następujące umiejętności nie mogą przekroczyć 1/3 Charyzmy: Szkolenie, Tropienie, Taktyka, Wyszukiwanie ścieżki, Orientacja w Terenie, Zarządzanie Ekwipunkiem, Opatrywanie Ran, Chirurgia, Pierwsza Pomoc, Inżynieria, Perswazja.
 ui_explanation_charisma|Charyzma: Każdy punkt zwiększa limit oddziału o +1. Następujące umiejętności nie mogą przekroczyć 1/3 Charyzmy: Zarządzanie więźniami, Przywództwo, Handel.
-; ui_delivered_number_damage|Delivered %d damage.
+ui_delivered_number_damage|Zadano %d punktów obrazżeń.
 ui_mission_losses_killed|zabito:
 ui_party_losses|%s  : %d ogłuszonych --- %d zabitych z %d.
 ui_following|Podąża za Tobą
-; ui_accompanying|Accompanying 
+ui_accompanying|towarzyszący
 ui_dumping_value_items|%d przedmiotów zostanie trwale usunięte, jesteś pewien?
 ui_dumping_value_item|Jeden przedmiot zostanie trwale usunięty, jesteś pewien?
 ui_notification_requirements_not_met|Nie posiadasz wymaganych umiejętności lub atrybutów dla tej broni.
@@ -79,21 +79,21 @@ ui_you_got_number_experience|Dostałeś %d doświadczenia.
 ui_you_have_advanced_to_level_number|Awansowałeś do poziomu %d.
 ui_you_got_value|%s zarobione
 ui_quest_succeeded_value|Misja zakończona pomyślnie: %s.
-; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
+ui_number_of_companions_exceeds_leadership_limit|Liczba towarzyszy przekracza limit dowodzenia 
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Liczba jeńców przekracza limit zarządzania jeńcami.
 ui_shared_number_experience_within_party|Rozdysponowano %d doświadczenia wewnątrz oddziału.
 ui_your_relations_with_value_has_improved_from_number_to_number|Twoja relacja z %s została zwiększona z  %d do %d.
 ui_your_relations_with_value_has_deteriorated_from_number_to_number|Twoja relacja z %s została zmniejszona z %d do %d.
 ui_you_lost_value|Straciłeś %s.
 ui_change_graphics_settings_explanation|Część zmian pojawi się dopiero gdy wejdziesz na nowy obszar.
-; ui_game_log_window|Game Log Window
-; ui_blunt_short|b
-; ui_tracks|Tracks
+ui_game_log_window|Okno logów gry
+ui_blunt_short|b
+ui_tracks|Ścieżki
 ui_order_button_hold_fire|Wstrzymać Ogień
 ui_order_button_fire_at_will|Strzelać bez rozkazu
 ui_order_button_fire_orders|Rozkazy ostrzału
 ui_need_to_learn_prisoner_management|Musisz posiadać umiejętność Zarządzanie Więźniami, żeby móc brać jeńców.
-; ui_game_log_window|Game Log Window
+ui_game_log_window|Okno logów gry
 ui_unbalanced|Niezbalansowane
 ui_can_crush_through_blocks|Pozwala na przebicie bloku
 

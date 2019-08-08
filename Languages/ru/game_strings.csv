@@ -1905,7 +1905,7 @@ str_beorn_gift2|ульи
 str_beorn_gift3|янтарные бусы
 str_beorn_gift4|отлично обученных пони
 str_cmenu_follow|Сопровождать
-; str_reset_to_default|Reset to Default
+str_reset_to_default|Восстановить до стандартных
 str_done|Сделано
 ; str_gondor1|Gondor1
 ; str_gondor2|Gondor2
@@ -2017,7 +2017,7 @@ str_npc25_intro_response_1|Приветствую. Я размышлял{/а}, �
 str_npc26_intro_response_1|Придержи язык, урук, пока дело не дошло до мордобоя. Я не доносчи{к/ца}.
 str_npc27_intro_response_1|Кто ты?
 ; str_npc18_intro_response_2|I will not waste words on a slave bound for death.
-; str_npc19_intro_response_2|Impudent wretch. Out of my way.
+str_npc19_intro_response_2|Наглый болван. Уйди с дороги.
 ; str_npc20_intro_response_2|I have no time for your mad ravings, sorceress.
 str_npc21_intro_response_2|Прошу прощения, но у меня есть неотложные дела в другом месте.
 str_npc22_intro_response_2|Прошу прощения, у меня есть важный разговор ещё кое с кем.

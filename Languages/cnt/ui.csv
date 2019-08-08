@@ -35,7 +35,7 @@ ui_horse_crippled|坐 騎 瘸 了 …
 ui_you_got_value|獲 得  %s。
 ui_has_deserted_the_party|從 部 隊 中 叛 逃 。 
 ui_have_deserted_the_party|從 部 隊 中 叛 逃 。 
-ui_loading_textures|載 入 中 (請 耐 心 等 候 )… 
+ui_loading_textures|Chinese translation: Please follow the installation guide on the TLD Steam Workshop page!
 ui_order_hold_fire_toggle|不 要 射 擊 ／ 任 意 射 擊 (切 換 )
 ui_order_dismount_toggle|命 令 下 馬 ／ 上 馬 (切 換 )
 ui_mount_horses_e_|%s， 上 馬 ！ 
@@ -50,101 +50,101 @@ ui_lance_control|騎 槍 控 制:
 ui_manual_easy|手 動 (簡 單)
 ui_manual_hard|手 動 (困 難)
 ui_campaign_ai|戰 略 人 工 智 慧 (未 使 用):
-; ui_crouch|Crouch
+ui_crouch|蹲下
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-; ui_are_you_sure_you_want_to_import_the_character|Are you sure you want to import the character?
+ui_are_you_sure_you_want_to_import_the_character|您確定要導入角色？
 ; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
 ; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path finding, Spotting, Inventory Management, Wound treatment, Surgery, First-aid, Engineer, Persuasion.
 ; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Leadership, Trade.
-; ui_delivered_number_damage|Delivered %d damage.
-; ui_mission_losses_killed|killed :
-; ui_party_losses|%s  : %d wounded --- %d killed of %d.
-; ui_following|Following 
-; ui_accompanying|Accompanying 
-; ui_dumping_value_items|%d items will be permanently lost, are you sure?
-; ui_dumping_value_item|One item will be permanently lost, are you sure?
-; ui_notification_requirements_not_met|You don't have the required skills or attributes for this weapon.
-; ui_disband|Disband
-; ui_you_hit_a_friendly_troop|You hit a friendly troop!
-; ui_you_are_not_carrying_any_arrows|You are not carrying any arrows.
+ui_delivered_number_damage|造成%d點傷害
+ui_mission_losses_killed|被殺
+ui_party_losses|%s :%d負傷 --- %d殺死了%d
+ui_following|跟隨中
+ui_accompanying|隨同
+ui_dumping_value_items|%d物品會永久丟失，確定嗎？
+ui_dumping_value_item|一樣物品會永久丟失，確定嗎？
+ui_notification_requirements_not_met|您不俱備此武器所需的技能或屬性
+ui_disband|遣散
+ui_you_hit_a_friendly_troop|你擊中友方部隊！
+ui_you_are_not_carrying_any_arrows|你沒有任何弓箭
 ui_delivered_number_damage_to_horse|給 對 方 的 坐 騎 造 成 %d點 傷 害 。 
-; ui_received_number_damage|Received %d damage.
-; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
-; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
-; ui_value_killed_by_value|%s killed by %s.
-; ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
-; ui_you_got_number_experience|You got %d experience.
-; ui_you_have_advanced_to_level_number|You have advanced to level %d.
+ui_received_number_damage|受 到 %d點 傷 害 。 
+ui_you_have_improved_your_proficiency_in_value_to_number|你提高了熟練程度由%s到%d
+ui_your_proficiency_in_value_has_improved_by_number_to_number|你的熟練程度由%s經由＋%d提升到%d
+ui_value_killed_by_value|%s已被%s殺死
+ui_value_knocked_unconscious_by_value|%s被%s擊昏了
+ui_you_got_number_experience|你獲得%d經驗值
+ui_you_have_advanced_to_level_number|你已升級到%d
 ui_you_got_value|獲 得  %s。
-; ui_quest_succeeded_value|Quest succeeded: %s.
-; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
-; ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
-; ui_shared_number_experience_within_party|Shared %d experience within party.
-; ui_your_relations_with_value_has_improved_from_number_to_number|Your relations with %s has improved from %d to %d.
-; ui_your_relations_with_value_has_deteriorated_from_number_to_number|Your relations with %s has deteriorated from %d to %d.
-; ui_you_lost_value|You lost %s.
-; ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
-; ui_game_log_window|Game Log Window
-; ui_blunt_short|b
-; ui_tracks|Tracks
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_fire_orders|Fire orders
-; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
-; ui_game_log_window|Game Log Window
-; ui_unbalanced|Unbalanced
+ui_quest_succeeded_value|任務達成:%s
+ui_number_of_companions_exceeds_leadership_limit|部隊人數超過你的統御技能
+ui_number_of_prisoners_exceeds_prisoner_management_limit|俘虜人數超過你的俘虜管理技能
+ui_shared_number_experience_within_party|在戰鬥中分享到%d經驗值
+ui_your_relations_with_value_has_improved_from_number_to_number|你與%s關係由%d提升到%d
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|你與%s關係由%d下降到%d
+ui_you_lost_value|你損失了%s
+ui_change_graphics_settings_explanation|您進行的某些更改將在您進入新區域時生效。
+ui_game_log_window|遊戲日誌
+ui_blunt_short|B
+ui_tracks|跟蹤
+ui_order_button_hold_fire|停火
+ui_order_button_fire_at_will|自由射擊
+ui_order_button_fire_orders|射擊命令
+ui_need_to_learn_prisoner_management|你需要學習俘虜管理技能來增加俘虜
+ui_game_log_window|遊戲日誌
+ui_unbalanced|失衡
 ; ui_can_crush_through_blocks|Can crush through blocks
 
-; ui_order_1|Select Order 1
-; ui_order_2|Select Order 2
-; ui_order_3|Select Order 3
-; ui_order_4|Select Order 4
-; ui_order_5|Select Order 5
-; ui_order_6|Select Order 6
-; ui_order_button_hold_this_position|Hold this position
-; ui_order_button_follow_me|Follow me
+ui_order_1|選取指令1
+ui_order_2|選取指令2
+ui_order_3|選取指令3
+ui_order_4|選取指令4
+ui_order_5|選取指令5
+ui_order_6|選取指令6
+ui_order_button_hold_this_position|保持這隊形
+ui_order_button_follow_me|跟隨我
 ui_order_button_charge|衝 鋒
-; ui_order_button_stand_ground|Stand ground
-; ui_order_button_retreat|Retreat
-; ui_order_button_advance|Advance ten paces
-; ui_order_button_fall_back|Fall back ten paces
-; ui_order_button_spread_out|Spread out
-; ui_order_button_stand_closer|Stand closer
-; ui_order_button_mount_horses|Mount horses
+ui_order_button_stand_ground|停在原地
+ui_order_button_retreat|撤退
+ui_order_button_advance|前進十步
+ui_order_button_fall_back|後退十步
+ui_order_button_spread_out|分散
+ui_order_button_stand_closer|集中一起
+ui_order_button_mount_horses|上馬
 ui_order_button_dismount|下 馬
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_use_blunt_weapons|Use only blunt weapons
-; ui_order_button_use_any_weapon|Use weapons at will
-; ui_order_button_movement_orders|Movement orders
-; ui_order_button_formation_orders|Formation orders
-; ui_order_button_fire_orders|Fire orders
-; ui_follow_me_e_|%s, follow me!
-; ui_charge_e_|%s, charge!!!
-; ui_stand_ground_e_|%s, stand ground!
-; ui_retreat_e_|%s, retreat!
+ui_order_button_hold_fire|停火
+ui_order_button_fire_at_will|自由射擊
+ui_order_button_use_blunt_weapons|只使用鈍擊武器
+ui_order_button_use_any_weapon|隨意使用武器
+ui_order_button_movement_orders|移動命令
+ui_order_button_formation_orders|陣型命令
+ui_order_button_fire_orders|射擊命令
+ui_follow_me_e_|%s,跟著我!
+ui_charge_e_|%s,衝鋒!!!
+ui_stand_ground_e_|%s,停在原地!
+ui_retreat_e_|%s,撤 退 !
 ui_mount_horses_e_|%s， 上 馬 ！ 
-; ui_dismount_e_|%s, dismount!
-; ui_advance_e_|%s, advance ten paces!
-; ui_fall_back_e_|%s, fall back ten paces!
-; ui_stand_closer_e_|%s, stand closer!
-; ui_spread_out_e_|%s, spread out!
-; ui_use_blunt_weapons_e_|%s, use only blunt weapons!
-; ui_use_any_weapon_e_|%s, use weapons at will!
+ui_dismount_e_|%s,下馬!
+ui_advance_e_|%s,前進十步!
+ui_fall_back_e_|%s,後退十步!
+ui_stand_closer_e_|%s,集中一起!
+ui_spread_out_e_|%s,散開!
+ui_use_blunt_weapons_e_|%s,只使用鈍擊武器!
+ui_use_any_weapon_e_|%s,隨意使用武器!
 ui_hold_fire_e_|%s， 不 要 射 擊 ！ 
 ui_fire_at_will_e_|%s， 任 意 射 擊 ！ 
-; ui_hold_this_position_e_|%s, hold this position!
-; ui_infantry|Infantry
+ui_hold_this_position_e_|%s,保持這隊形!
+ui_infantry|步兵
 ui_archers|弓 兵
-; ui_cavalry|Cavalry
-; ui_companions|Companions
-; ui_everyone_hear_me|Everyone, hear me!
+ui_cavalry|騎兵
+ui_companions|同伴
+ui_everyone_hear_me|全部人，聽我講！
 ui_everyone|所 有 人
-; ui_everyone_around_me|Nearby Soldiers
-; ui_str_hear_me|%s, hear me!
+ui_everyone_around_me|附近的士兵
+ui_str_hear_me|%s，聽我講！
 
-; ui_return|Return
-; ui_factions|Factions
-; ui_troop_upgrades|Troop upgrades
+ui_return|返回
+ui_factions| 陣 營 
+ui_troop_upgrades|兵種升級

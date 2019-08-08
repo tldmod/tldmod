@@ -110,7 +110,7 @@ qstr_Restrict_Player_Equi|Oyuncu ekipmanını kısıtla:
 qstr_Battle_Formations_an|Savaş Formasyonları ve AI:
 qstr_Native|Yerli
 qstr_TLD_FormAI__Original|TLD FormAI (Original)
-; qstr_TLD_New_FormAI|TLD New FormAI
+qstr_TLD_New_FormAI|TLD Yeni FormAİ
 qstr_Advanced_Siege_AI:__|Gelişmiş Kuşatma Yapay Zekası
 qstr_On|Açık
 qstr_Town_NPCs_Always_Acc|Şehir NPC'leri Her zaman menüden erişilebilsin:
@@ -876,7 +876,7 @@ qstr_Unknown_{reg3}_|Bilinmeyen({reg3})
 qstr_ON|AÇIK
 qstr_OFF__cheat_|KAPALI (hile)
 qstr_OFF|KAPALI
-; qstr_All_messages|All messages
+qstr_All_messages|Tüm mesajlar
 qstr_{reg0}__will_most_li|{reg0} (Büyük olasılıkla kayıt çökmelerine neden olacak)
 qstr_{reg0}__could_possib|{reg0} (Kaydetme çökmelerine neden olabilir)
 qstr_Normal|Normal

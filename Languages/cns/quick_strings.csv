@@ -666,9 +666,9 @@ qstr_{s2}{reg1}|{s2}{reg1}
 ; qstr_{s2}_^|{s2}-^
 ; qstr_{s1}___Power_Throw:^|{s1}   Power Throw:^
 ; qstr_{s1}___Power_Draw:^^|{s1}   Power Draw:^^
-; qstr_{s2}{reg1}^^|{s2}{reg1}^^
-; qstr_{s2}_^^|{s2}-^^
-; qstr_{s1}Weapons:^|{s1}Weapons:^
+qstr_{s2}{reg1}^^|{s2}{reg1}^^
+qstr_{s2}_^^|{s2}-^^
+qstr_{s1}Weapons:^|{s1}武器:^
 ; qstr_{s1}___One_Handed:^|{s1}   One Handed:^
 ; qstr_{s1}___Two_Handed:^|{s1}   Two Handed:^
 ; qstr_{s1}___Polearms:^|{s1}   Polearms:^
@@ -711,7 +711,7 @@ qstr_You_have_found_the_loc|你找到了当地仓库…(+{reg3} 经验)
 ; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.
 qstr__cancelled_the_{reg1|(取消了杀囚获得的{reg10}经验值)
 qstr_Forming_ranks.|正在列阵。
-; qstr_{reg2?You:Your_mount|{reg2?You:Your mount} received {reg1} extra damage!
+qstr_{reg2?You:Your_mount|{reg2?You:Your mount}  受到 {reg1} 点额外伤害!
 ; qstr_{reg2?You_strike:You|{reg2?You strike:Your horse charges} for {reg1} bonus damage!
 qstr_Division_Placement|兵种布局
 ; qstr_Complex_Formations|Complex Formations
@@ -746,7 +746,7 @@ qstr_Receive_{reg22}_dama|受到{reg22}点伤害。
 qstr_You_have_been_knocke|你被{s22}击昏了。
 ; qstr_{s21}_has_been_knock|{s21} has been knocked off of {reg23?her:his} mount when it fell.
 ; qstr_{s21}_{reg24?killed:|{s21} {reg24?killed:knocked unconscious} by {s22}.
-; qstr_A_bear_has_been_summ|A bear has been summoned to battle!
+qstr_A_bear_has_been_summ|一头熊被召唤加入战斗！
 ; qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.
 ; qstr_You_can_also_order_y|You can also order your troops to cycle through the type of weapon you want them to use.^^ Press O to cycle between Weapon Order types. Press P to cycle between Shield Order types.
 ; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.
@@ -803,7 +803,7 @@ qstr_The_battle_is_won!|战斗胜利！
 ; qstr_Gaaaar!!_We_wants_th|Gaaaar!! We wants those human meat!
 ; qstr_{s31}_scouts_have_ap|{s31} scouts have appeared!
 ; qstr_Those_are_ours!_We_h|Those are ours! We have been tracking them since they left! No one stands in our way!
-; qstr_Trolls_appeared!|Trolls appeared!
+qstr_Trolls_appeared!|食人妖出现了！
 ; qstr_Gaaaar!!|Gaaaar!!
 ; qstr_{s31}_scouts_have_app|{s31} scouts have appeared to aid the refugees!
 ; qstr_Hurry_men!_Help_the_|Hurry, men! Help the refugees! Kill all the scum and do not let them escape!
@@ -1163,7 +1163,7 @@ qstr_Tell_him_I_ve_grown_|告诉他我又长高了一英寸！
 ; qstr_Tell_him_I_can_ride_|Tell him I can ride a grown horse now!
 ; qstr_Ask_him_if_he_has_an|Ask him if he has any pipe-weed left!
 ; qstr_Tell_him_I_ll_be_the|Tell him I'll be the tall one when we see each other again!
-; qstr_Ask_if_he_s_seen_Gan|Ask if he's seen Gandalf!
+qstr_Ask_if_he_s_seen_Gan|问问他有没有见到甘道夫！
 qstr_You_gained_250_exper|你获得了250点经验。
 qstr_Treebeard_wants_you_|树胡希望你找到并击败在法贡森林伐树的兽人。
 ; qstr_Something_wrong_not_e|Something wrong, not enough troops for scout party

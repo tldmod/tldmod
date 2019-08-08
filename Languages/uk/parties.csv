@@ -1,55 +1,55 @@
-; p_town_minas_tirith|Minas Tirith
-; p_town_pelargir|Pelargir
-; p_town_linhir|Linhir
-; p_town_dol_amroth|Dol Amroth
-; p_town_edhellond|Edhellond
-; p_town_lossarnach|Lossarnach
-; p_town_tarnost|Tarnost
-; p_town_erech|Erech
-; p_town_pinnath_gelin|Pinnath Gelin
-; p_town_west_osgiliath|West Osgiliath
-; p_town_henneth_annun|Henneth Annun
-; p_town_cair_andros|Cair Andros
-; p_town_calembel|Calembel
-; p_town_edoras|Edoras
-; p_town_aldburg|Aldburg
-; p_town_hornburg|Hornburg
-; p_town_east_emnet|East Emnet
-; p_town_westfold|Westfold
-; p_town_west_emnet|West Emnet
-; p_town_eastfold|Eastfold
-; p_town_morannon|Morannon
-; p_town_minas_morgul|Minas Morgul
-; p_town_cirith_ungol|Orc Patrol Camp
-; p_town_east_osgiliath|East Osgiliath
-; p_town_orc_sentry_camp|Orc Sentry Camp
+p_town_minas_tirith|Мінас-Тіріт
+p_town_pelargir|Пеларгір
+p_town_linhir|Лінхір
+p_town_dol_amroth|Дол-Амрот
+p_town_edhellond|Еделонд
+p_town_lossarnach|Лоссарнах
+p_town_tarnost|Тарност
+p_town_erech|Ерех
+p_town_pinnath_gelin|Піннат-Гелін
+p_town_west_osgiliath|Західний Осгіліат
+p_town_henneth_annun|Геннет-Аннун
+p_town_cair_andros|Каір-Андрос
+p_town_calembel|Калембел
+p_town_edoras|Едорас
+p_town_aldburg|Альдбург
+p_town_hornburg|Горнбург
+p_town_east_emnet|Іст-Емнет
+p_town_westfold|Вестфолд
+p_town_west_emnet|Вест-Емнет
+p_town_eastfold|Істфолд
+p_town_morannon|Мораннон
+p_town_minas_morgul|Мінас-Моргул
+p_town_cirith_ungol|Патрульний табір орків
+p_town_east_osgiliath|Східний Осгіліат
+p_town_orc_sentry_camp|Сторожовий табір орків
 p_town_isengard|Ізенгард
-; p_town_urukhai_outpost|Uruk Hai Outpost
-; p_town_urukhai_h_camp|Uruk Hai Hunting camp
-; p_town_urukhai_r_camp|Uruk Hai River camp
-; p_town_caras_galadhon|Caras Galadhon
-; p_town_cerin_dolen|Cerin Dolen
-; p_town_cerin_amroth|Cerin Amroth
-; p_town_thranduils_halls|Thranduil's Halls
-; p_town_woodelf_camp|Woodelf Camp
-; p_town_woodelf_west_camp|Woodelf West Camp
-; p_town_woodsmen_village|Woodsmen Village
-; p_town_beorning_village|Beorning Village
-; p_town_beorn_house|Beorn's House
-; p_town_moria|Gates of Moria
-; p_town_troll_cave|Troll Cave
+p_town_urukhai_outpost|Застава урук-хай
+p_town_urukhai_h_camp|Мисливський табір урук-хай
+p_town_urukhai_r_camp|Річковий табір урук-хай
+p_town_caras_galadhon|Карас-Галадон
+p_town_cerin_dolen|Керін-Долен
+p_town_cerin_amroth|Керін-Амрот
+p_town_thranduils_halls|Зали Трандуїла
+p_town_woodelf_camp|Табір Лісових ельфів
+p_town_woodelf_west_camp|Західний табір Лісових ельфів
+p_town_woodsmen_village|Селище лісовиків
+p_town_beorning_village|Селище беорнінгів
+p_town_beorn_house|Дім Беорна
+p_town_moria|Брама Морії
+p_town_troll_cave|Печера тролів
 p_town_dale|Дейл
-; p_town_esgaroth|Esgaroth
-; p_town_dunland_camp|Dunlander Camp
-; p_town_harad_camp|Haradrim Camp
-; p_town_khand_camp|Khand Camp
-; p_town_umbar_camp|Corsair Camp
-; p_town_imladris_camp|Rivendell Camp
+p_town_esgaroth|Есгарот
+p_town_dunland_camp|Дунландський табір
+p_town_harad_camp|Харадримський табір
+p_town_khand_camp|Хандський табір
+p_town_umbar_camp|Корсарський табір
+p_town_imladris_camp|Рівендельський табір
 p_town_dol_guldur|Дол-Гулдур
-; p_town_dol_guldur_north_outpost|Dol Guldur North Outpost
-; p_town_rhun_main_camp|Main Rhun Camp
-; p_town_rhun_south_camp|Rhun Southern Outpost
-; p_town_rhun_north_camp|Rhun Northern Outpost
+p_town_dol_guldur_north_outpost|Північна застава Дол-Гулдуру
+p_town_rhun_main_camp|Головний табір Руну
+p_town_rhun_south_camp|Південна застава Руну
+p_town_rhun_north_camp|Північна застава Руну
 ; p_town_gundabad|Gundabad
 ; p_town_gundabad_ne_outpost|Gundabad NE Outpost
 ; p_town_gundabad_nw_outpost|Gundabad NW Outpost

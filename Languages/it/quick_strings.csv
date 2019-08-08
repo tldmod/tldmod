@@ -703,7 +703,7 @@ qstr_Use_+/__to_zoom_in/o|Usa +/- per zoomare dentro/fuori
 qstr_Use_Up/Down_arrow_ke|Usa le frecce su/giù per inclinare su/giù
 qstr_Fixed_Camera___Right|Inquadratura Fissa - Spalla Destra
 qstr_Fixed_Camera___Left_|Inquadratura Fissa - Spalla Sinistra
-qstr_While_visiting_towns|Mentre visiti le città gli insediamenti e i gli accampamenti, puoi parlare con le persone che vi si aggirano. I membri delle diverse fazioni hanno cose differenti da dire - alcuni ti sveleranno i loro timori, altri condivideranno indiscrezioni e voci di corridoio. Tutti potranno comunque darti una migliore comprensione della cultura della loro fazione, oppure potrebbero essere detentori d'indizi per trovare luoghi segrenti, o di consigli per viaggiare nella natura selvaggia e combattere nella Guerra dell'Anello.
+qstr_While_visiting_towns|Mentre visiti le città, gli insediamenti e gli accampamenti, puoi parlare con le persone che vi si aggirano. I membri delle diverse fazioni hanno cose differenti da dire - alcuni ti sveleranno i loro timori, altri condivideranno indiscrezioni e voci di corridoio. Tutti potranno comunque darti una migliore comprensione della cultura della loro fazione, oppure potrebbero essere detentori d'indizi per trovare luoghi segrenti, o di consigli per viaggiare nella natura selvaggia e combattere nella Guerra dell'Anello.
 qstr_Cannot_leave_now.|Non puoi allontanarti in questo momento.
 qstr_You_have_found_the_l|Hai trovato il fabbro locale...(+{reg3} XP)
 qstr_You_have_found_the_lo|Hai incontrato l'autorità locale...(+{reg3} XP)
@@ -1084,7 +1084,7 @@ qstr_The_water_you_drank_|L'acqua che hai bevuto dagli Ents hanno uno strano eff
 qstr_Ent_water_effect:_in|Effetto dell'acqua degli Ent: aumenta la statura !
 qstr__+1_to_Strength__per|+1 di Forza (permanente)
 qstr__+1_to_Charisma__per|+1 di Carisma (permanente)
-qstr_The_dark_shadow_fina|L'ombra oscura prorompe infine in una tempesta, e le orde del male iniziano la loro marcia verso il popolo libero della Terra di Mezzo. Mordor affronterà Gondor a Sud, Isengard sarà contro Rohan ad Ovest, Dol Guldur contro gli elfi... Anche nel lontano Nord si combatte una guerra.
+qstr_The_dark_shadow_fina|L'ombra oscura prorompe infine in una tempesta, e le orde del male iniziano la loro marcia verso le libere popolazioni della Terra di Mezzo. Mordor affronterà Gondor a Sud, Isengard sarà contro Rohan ad Ovest, Dol Guldur contro gli elfi... Anche nel lontano Nord si combatte una guerra.
 qstr_The_War_has_started!|La guerra è scoppiata !
 qstr_The_forest_seems_pea|La foresta appare tranquilla.
 qstr_There_is_a_sense_of_|Si percepisce un senso di pericolo nell'aria.
@@ -1416,7 +1416,7 @@ qstr_Lend_your_experience|Presta il tuo chirurgo esperto {s3} a {s1}.
 qstr_No_commander_should_|Nessun comandante dovrebbe ammetterlo, {playername} , ma stavo ispezionando i miei soldati l'altro giorno e ci sono alcuni di loro che non sanno da quale lato impugnare una spada. Hanno bisogno di qualcuno che gli mostri il vero significato del valore. Sei un guerriero stimato,  {playername} . Addestrerai alcune truppe per me? Te ne sarei molto grato.
 qstr_No_commander_should_h|Nessun comandante dovrebbe mai ammetterlo, {playername}, però stavo ispezionando i miei soldati l'altro giorno e ne ho giustiziati alcuni per incompetenza. Hanno bisogno di qualcuno con una schiena di ferro per frustargli del coraggio dentro di loro, o ucciderli provandoci. Tu sei un guerriero di fama, {playername}. Addestreresti alcuni soldati per me? Posso ricompensarti.
 qstr_{s9}_asked_you_to_rai|{s9} ti ha chiesto di addestrare {reg1} {s14} e portarli da lui.
-qstr_{s9}_asked_you_to_hu|{s9} ti ha chiesto di cacciare un fuggitivo {s4}. Al momento si pensa possa essere a {s3}.
+qstr_{s9}_asked_you_to_hu|{s9} ti ha chiesto di dare la caccia ad un fuggitivo chiamato {s4}. Al momento si ritiene possa trovarsi a {s3}.
 qstr_{s9}_asked_you_to_defe|{s9} ti ha chiesto di difendere 3 gruppi di rifugiati in viaggio verso {s3}.
 qstr_{s9}_asked_you_to_hun|{s9} ti ha chiesto di dare la caccia a 3 gruppi di fuggiaschi diretti a {s3}.
 qstr_{s9}_asked_you_to_ca|{s9} ti ha chiesto di catturare i tre gruppi di schiavi fuggiaschi e di riportarli indietro a {s4}, vivi e vegeti. Ha detto che tutti i tre gruppi si stanno dirigendo verso {s3}.
@@ -1482,10 +1482,10 @@ qstr_Our_bees_make_honey_a|Le nostre api fanno il miele e la cera, i nostri alle
 qstr_If_fate_wills_it_I_s|Se il fato vorrà, tornerò nelle vostre terre ancora, e ne conoscerò tutti i segreti.
 qstr_If_I_ever_have_need_|Se mai avrò bisogno dell'aiuto che Lorien può offrire, verrò. Di qualsiasi utilità potrà essere.
 qstr__nod_and_say_nothing|(non dire niente)
-qstr_Oh_there_are_many_an|Oh, ve ne sono molti e ogni amico di Lorien è meritevoli di questi doni! ^^Che ci si trovi spalla a spalla ancora una volta sul campo di battaglia, o che tu sia agli ordini della nostra Signora o del suo seguito, il nostro popolo ricompenserà i tuoi servigi con tutto ciò di cui avrai bisogno - nuove armi, solide armature di maglia, frecce piumate e viveri per le tue truppe. ^^Chi lo sa, col tempo potresti divenire {un grande signore/una grande signora} di Lorien, una persona che può da consiglio ad altri, o chiedere favori.
+qstr_Oh_there_are_many_an|Oh, ve ne sono molti e ogni amico di Lorien merita questi doni! ^^Che ci si trovi spalla a spalla ancora una volta sul campo di battaglia, o che tu sia agli ordini della nostra Signora o del suo seguito, il nostro popolo ricompenserà i tuoi servigi con tutto ciò di cui avrai bisogno - nuove armi, solide armature di maglia, frecce piumate e viveri per le tue truppe. ^^Chi lo sa, col tempo potresti divenire {un grande signore/una grande signora} di Lorien, una persona che può offrire consiglio ad altri, o chiedere favori.
 qstr_The_joys_of_the_Gold|Le gioie della Valle d'Oro sono monte e i veri amici di Lorien sono bevenuti a goderne.  ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, oppure ci troveremo agli ordini della nostra Lady e dei suoi signori; il nostro popolo ti ricompenserà per il tuo sostegno con ogni cosa tu richieda - armi lucenti, vesti di maglia pesante, frecce letali e cibo nutriente per le tue truppe.^^Chissà, con il tempo potresti diventare Gran {Lord/Lady} di Lorien, una persona che potrebbe dare consiglio, o chiedere favori.
 qstr_Our_Golden_Valley_gi|La nostra Valle Dorata abbonda di doni e un amico di Lorien vi può attingere. ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, o accorrere alla chiamata della nostra Lady e dei suoi signori; il nostro popolo compenserà il tuo appoggio con tutto ciò che puoi desiderare, mentre sei lontano da casa.
-qstr_I_shall_keep_that_in|Devo tenerelo a mente. ^^ Hantanyel, áva márië !
+qstr_I_shall_keep_that_in|Dovrò tenerlo a mente. ^^ Hantanyel, áva márië !
 qstr_That_may_be_so_some_|Così può essere, alcune strade del mondo sono contorte.^^ Boe i 'waen !
 qstr_I_seldom_wander_far_|Raramente mi allontano da casa. Andiamo via di qui, il più velocemente possibile. Ci potrebbero essere altri goblin che si aggirano da queste parti.
 qstr_Who_are_you?_A_mere_|Chi sei tu? Un semplice {s25}? Non ho tempo per quelli della tua sorta ! Lasciami in pace ! {s2}

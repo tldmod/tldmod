@@ -1,7 +1,7 @@
 ui_at_learning_limit|(Bu Irk için öğrenme limitinde)
 ui_not_enough_skill_points_to_learn|(Öğrenmek için yeterli beceri puanınız yok)
 ui_not_enough_attributetype_to_learn_this_skill|(Bu beceriyi öğrenmek için yeterli %s yok)
-ui_explanation_agility|Her puan 5 silah hüneri verir ve silah hızını %0.5 arttırır.Şu beceriler 1/3 çeviklik puanından yükseltilemez : Silah ustalığı,Kalkan,Atletik,Binicilik,Atlı Okçuluk,Yağma.
+ui_explanation_agility|Çeviklik: Her puan 5 silah hüneri verir ve silah hızını %0.5 arttırır. Şu beceriler çeviklik puanının 1/3'ünden fazla yükseltilemez: Silah Ustalığı, Kalkan, Atletik, Binicilik, Atlı Okçuluk, Yağma.
 ui_retreated_battle|%s savaş alanından kaçtı.
 ui_riding_skill_not_adequate_to_mount|(Binicilik seviyesi düşük)
 ui_camp|Kamp
@@ -54,48 +54,48 @@ ui_crouch|çömelmek
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-; ui_are_you_sure_you_want_to_import_the_character|Are you sure you want to import the character?
+ui_are_you_sure_you_want_to_import_the_character|Karakteri içe aktarmak istediğinizden emin misiniz?
 ; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
 ; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path finding, Spotting, Inventory Management, Wound treatment, Surgery, First-aid, Engineer, Persuasion.
 ; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Leadership, Trade.
-; ui_delivered_number_damage|Delivered %d damage.
-; ui_mission_losses_killed|killed :
-; ui_party_losses|%s  : %d wounded --- %d killed of %d.
-; ui_following|Following 
-; ui_accompanying|Accompanying 
-; ui_dumping_value_items|%d items will be permanently lost, are you sure?
+ui_delivered_number_damage|%d hasar verildi.
+ui_mission_losses_killed|Öldürüldü
+ui_party_losses|%s :%d yaralandı --- %d öldürüldü %d
+ui_following|Takip ediliyor
+ui_accompanying|Eşlik ediyor
+ui_dumping_value_items|%d eşyalar kalıcı olarak kaybolacak, emin misiniz?
 ; ui_dumping_value_item|One item will be permanently lost, are you sure?
-; ui_notification_requirements_not_met|You don't have the required skills or attributes for this weapon.
-; ui_disband|Disband
-; ui_you_hit_a_friendly_troop|You hit a friendly troop!
-; ui_you_are_not_carrying_any_arrows|You are not carrying any arrows.
+ui_notification_requirements_not_met|Bu silah için gerekli beceri yada yeteneğe sahip değilsin
+ui_disband|terhis et
+ui_you_hit_a_friendly_troop|Dost bir birime zarar verdin!
+ui_you_are_not_carrying_any_arrows|Yanında hiç ok kalmadı.
 ui_delivered_number_damage_to_horse|Bineğe %d hasar verildi
-; ui_received_number_damage|Received %d damage.
+ui_received_number_damage|%d Hasar alındı.
 ; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
 ; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
-; ui_value_killed_by_value|%s killed by %s.
-; ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
-; ui_you_got_number_experience|You got %d experience.
-; ui_you_have_advanced_to_level_number|You have advanced to level %d.
+ui_value_killed_by_value|%s,%starafından öldürüldü. 
+ui_value_knocked_unconscious_by_value|%s,%starafından bayıltıldı.
+ui_you_got_number_experience|%d Tecrübe puanı kazandın.
+ui_you_have_advanced_to_level_number|Seviye%d yükseldin
 ui_you_got_value|%s kazandı
-; ui_quest_succeeded_value|Quest succeeded: %s.
-; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
-; ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
-; ui_shared_number_experience_within_party|Shared %d experience within party.
-; ui_your_relations_with_value_has_improved_from_number_to_number|Your relations with %s has improved from %d to %d.
-; ui_your_relations_with_value_has_deteriorated_from_number_to_number|Your relations with %s has deteriorated from %d to %d.
-; ui_you_lost_value|You lost %s.
-; ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
+ui_quest_succeeded_value|Görev tamamlandı: %s.
+ui_number_of_companions_exceeds_leadership_limit|Yoldaş sayısı, liderlik limitini aşıyor.
+ui_number_of_prisoners_exceeds_prisoner_management_limit|Tutsak sayısı, tutsak yönetimi limitini aşıyor.
+ui_shared_number_experience_within_party|%ddeneyim, takım arasında paylaşıldı.
+ui_your_relations_with_value_has_improved_from_number_to_number|%sile ilişkileriniz, %dden%dye yükseldi.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|%s ile ilişkileriniz, %dden%dye geriledi.
+ui_you_lost_value|%s Kaybettin.
+ui_change_graphics_settings_explanation|Yaptığınız bazı değişiklikler, yeni bir alana girdiğinizde geçerli olacak.
 ; ui_game_log_window|Game Log Window
-; ui_blunt_short|b
-; ui_tracks|Tracks
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_fire_orders|Fire orders
+ui_blunt_short|b
+ui_tracks|İzler
+ui_order_button_hold_fire|Ateş etmeyin
+ui_order_button_fire_at_will|Ateş serbest
+ui_order_button_fire_orders|menzilli emirleri
 ; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
 ; ui_game_log_window|Game Log Window
-; ui_unbalanced|Unbalanced
-; ui_can_crush_through_blocks|Can crush through blocks
+ui_unbalanced|Dengesiz
+ui_can_crush_through_blocks|Blokların içinden geçebilir
 
 ; ui_order_1|Select Order 1
 ; ui_order_2|Select Order 2
@@ -103,44 +103,44 @@ ui_you_got_value|%s kazandı
 ; ui_order_4|Select Order 4
 ; ui_order_5|Select Order 5
 ; ui_order_6|Select Order 6
-; ui_order_button_hold_this_position|Hold this position
-; ui_order_button_follow_me|Follow me
+ui_order_button_hold_this_position|bu pozisyonu koruyun
+ui_order_button_follow_me|beni takip et
 ui_order_button_charge|Hücum
-; ui_order_button_stand_ground|Stand ground
-; ui_order_button_retreat|Retreat
-; ui_order_button_advance|Advance ten paces
-; ui_order_button_fall_back|Fall back ten paces
-; ui_order_button_spread_out|Spread out
-; ui_order_button_stand_closer|Stand closer
-; ui_order_button_mount_horses|Mount horses
+ui_order_button_stand_ground|yerinizde kalın
+ui_order_button_retreat|Geri çekilin
+ui_order_button_advance|On adım ilerle
+ui_order_button_fall_back|On adım geri gel
+ui_order_button_spread_out|Dağılın
+ui_order_button_stand_closer|Yakın durun
+ui_order_button_mount_horses|Ata binin
 ui_order_button_dismount|Binekten in
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_use_blunt_weapons|Use only blunt weapons
-; ui_order_button_use_any_weapon|Use weapons at will
-; ui_order_button_movement_orders|Movement orders
-; ui_order_button_formation_orders|Formation orders
-; ui_order_button_fire_orders|Fire orders
-; ui_follow_me_e_|%s, follow me!
-; ui_charge_e_|%s, charge!!!
-; ui_stand_ground_e_|%s, stand ground!
-; ui_retreat_e_|%s, retreat!
+ui_order_button_hold_fire|Ateş etmeyin
+ui_order_button_fire_at_will|Ateş serbest
+ui_order_button_use_blunt_weapons|Sadece bayıltıcı silah kullan
+ui_order_button_use_any_weapon|Silah serbest
+ui_order_button_movement_orders|Hareket emirleri
+ui_order_button_formation_orders|Düzen emirleri
+ui_order_button_fire_orders|menzilli emirleri
+ui_follow_me_e_|%s, beni takip et!
+ui_charge_e_|%s, Hücum!
+ui_stand_ground_e_|%s, yerinizde kalın!
+ui_retreat_e_|%s, geri çekilin!
 ui_mount_horses_e_|%s, Atlı
-; ui_dismount_e_|%s, dismount!
+ui_dismount_e_|%s, Attan inin!
 ; ui_advance_e_|%s, advance ten paces!
 ; ui_fall_back_e_|%s, fall back ten paces!
-; ui_stand_closer_e_|%s, stand closer!
-; ui_spread_out_e_|%s, spread out!
-; ui_use_blunt_weapons_e_|%s, use only blunt weapons!
-; ui_use_any_weapon_e_|%s, use weapons at will!
+ui_stand_closer_e_|%s, yakın durun
+ui_spread_out_e_|%s, dağılın.
+ui_use_blunt_weapons_e_|%s, yalnızca künt silahları kullan.
+ui_use_any_weapon_e_|%s, silah serbest.
 ui_hold_fire_e_|%s, Ateş etme!
 ui_fire_at_will_e_|%s, Ateş serbest!
-; ui_hold_this_position_e_|%s, hold this position!
+ui_hold_this_position_e_|%s, bu pozisyonu koruyun
 ui_infantry|Piyade
 ui_archers|Okçular
 ui_cavalry|Süvari
 ; ui_companions|Companions
-; ui_everyone_hear_me|Everyone, hear me!
+ui_everyone_hear_me|Herkes beni dinlesin.
 ui_everyone|Herkes
 ; ui_everyone_around_me|Nearby Soldiers
 ; ui_str_hear_me|%s, hear me!

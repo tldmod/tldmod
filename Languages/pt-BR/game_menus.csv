@@ -1,20 +1,20 @@
 menu_start_game_1|^^^^^^^^^^Pelo que você está lutando?
-mno_start_good|O AMANHECER de uma nova Era
-mno_start_evil|O CREPÚSCULO do Homem
+mno_start_good|o AMANHECER de uma nova Era
+mno_start_evil|o CREPÚSCULO dos Homens
 mno_go_bback|Volte
 menu_start_phase_2|^^^^^ A Terra Média. Uma sombra está crescendo ao Leste, ^ e coisas obscuras têm saído de onde vinham se escondendo há muito tempo. ^ As pessoas livres se preparam para uma guerra do tipo que não se vê há uma era. ^ Homens, Elfos, Anões, e Orcs; todos farão a sua parte. ^^  Qual parte, no entanto, está para ser vista...
 mno_go_forth|Vá em frente com o seu plano escolhido...
 menu_start_game_3|^^^^^^^^Escolha o seu cenário:
-mno_custom_battle_scenario_1|Skirmish, facções de Gondor vs Harad
+mno_custom_battle_scenario_1|Escaramuça, facções de Gondor vs Harad
 mno_custom_battle_scenario_12|Escolha as facções para a batalha
-mno_custom_battle_scenario_3|Skirmish, Elfos vs Numenorianos Negros
+mno_custom_battle_scenario_3|Escaramuça, Elfos vs Numenorianos Negros
 mno_custom_battle_scenario_4|Abismo de Helm, Rohan vs Isengard
-mno_custom_battle_scenario_5|Skirmish, facções do Norte vs Rhun
+mno_custom_battle_scenario_5|Escaramuça, facções do Norte vs Rhun
 mno_custom_battle_scenario_6|Cerco, Orcs vs Anões
-mno_custom_battle_scenario_7|Emboscada, Orcs vs Floresta das Trevas
+mno_custom_battle_scenario_7|Emboscada, Orcs vs Floresta Escura
 mno_custom_battle_scenario_8|A Última Posição do Povo de Durin
-mno_custom_battle_scenario_88|Perseguindo um grupo de Batedor Orc
-mno_custom_battle_scenario_11|Batalhas teste (Tune Balancing!)
+mno_custom_battle_scenario_88|Perseguindo um grupo de Batedores Orcs
+mno_custom_battle_scenario_11|Batalhas teste (Equilíbrio e Balanceamento!)
 mno_custom_battle_scenario_10|Batalha teste de cenário
 mno_troll_battle_scenario|Batalha teste do Troll
 mno_warg_battle_scenario|Batalha teste dos wargs
@@ -52,39 +52,39 @@ mno_start_dw|ANÃO
 mno_go_back|Voltar
 menu_start_evil|^^^^^^^^^^A quem você serve?
 mno_start_eye|SAURON de Mordor, o Senhor dos Anéis
-mno_start_hand|SARUMAN de Isengard, o Branco
+mno_start_hand|SARUMAN de Isengard, a Mão Branca
 menu_start_eye|^^^^^^^^^Seu Mestre é o Olho Sem Pálpebra^Escolha a sua raça
 mno_start_or|um Orc, a serviço do Olho Sem Pálpebra.
 mno_start_ur|um URUK, uma nova raça de Orcs
 mno_start_em|um HOMEM, subjugado por Sauron
 menu_start_hand|^^^^^^^^^Seu Mestre é Saruman, o Branco^Escolha sua raça
-mno_start_whor|um ORC, a serviço de Saruman
+mno_start_whor|um ORC, a serviço da Mão Branca
 mno_start_isur|um dos URUK-HAI, criado em Isengard
-mno_start_duma|um HOMEM de Dunland, das Planícies do Oeste
+mno_start_duma|um HOMEM das Terras Pardas, das Planícies do Oeste
 menu_start_good_man|^^^^^^^^^^Selecione seu povo:
 mno_start_go|GONDOR, o Reino da Torre Branca
 mno_start_ro|ROHAN, o povo dos Cavalos
 mno_start_du|DÚNEDAIN, a antiga dinastia de Homens
 mno_start_be|BEORNINGS, o povo Urso
 mno_start_da|O reino de Valle
-menu_start_good_elf|^^^^^^^^^^Em qual floresta você vive, senhor?
+menu_start_good_elf|^^^^^^^^^^Em qual floresta você vive, Ancião?
 mno_start_ri|VALFENDA, do Senhor Elrond
-mno_start_lo|LOTHLÓRIEN, da senhora Galadriel
+mno_start_lo|LOTHLÓRIEN, da Senhora Galadriel
 mno_start_mi|FLORESTA DAS TREVAS, terra dos Elfos Silvestres
 menu_start_good_dwarf|^^^^^^^^^^Selecione a sua linhagem:
 mno_start_er|um morador de EREBOR
 mno_start_ih|um minerador das COLINAS DE FERRO
 menu_start_gondor|^^^^^^^^^^De onde você é, em Gondor?
 mno_start_mt|MINAS TIRITH, a Capital
-mno_start_ls|LOSSARNACH, o Feudo das Flores
-mno_start_la|LAMEDON, o Feudo dos homens do campo
+mno_start_ls|LOSSARNACH, o feudo das Flores
+mno_start_la|LAMEDON, o feudo dos Homens do Campo
 mno_start_pg|PINNATH GELIN, o feudo das Colinas Verdes
 mno_start_do|DOL AMROTH, o feudo dos Cavaleiros Cisne
 mno_start_pe|PELARGIR, o feudo da Costa
-mno_start_bl|VALE DE BLACKROOT, o feudo dos arqueiros
+mno_start_bl|VALE DE BLACKROOT, o feudo dos Arqueiros
 menu_start_eye_man|^^^^^^^^^^Selecione seu povo: 
 mno_start_hr|HARADRIM, o povo do deserto do Sul
-mno_start_bn|NUMENORIANOS negros, os renegados do Oeste
+mno_start_bn|NUMENORIANOS Negros, os renegados do Oeste
 mno_start_um|UMBAR, os piratas dos Mares do Sul
 mno_start_rh|RHUN, os bárbaros do Leste
 mno_start_kh|KHÂND, o povo selvagem do Sudeste
@@ -100,13 +100,13 @@ mno_start_minmo|nas minas de MORIA
 mno_start_cliff|Nos penhascos do Monte GUNDABAD
 menu_start_gondor_mt|^^^^^^^^^^Selecione a sua linhagem:
 mno_start_1_com|Plebeu
-mno_start_2_hib|Bem nascido
+mno_start_2_hib|Nobre
 menu_start_haradrim|^^^^^^^Você é um Haradrim, ^um Homem do Deserto.^Selecione sua linhagem
 mno_start_1_des|Homem do Deserto
-mno_start_2_far|Homem da distante tribo de Harad
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+mno_start_2_far|Homem da tribo de Harad Distante
+menu_start_numenorean|^^^^^^^Você é um Númenoriano Negro,^leal à Escuridão e à Morgoth.^Selecione onde você servirá o Olho de Sauron.
+mno_start_1_bn|Próximo à Boca de Sauron, em Morannon - O Portão Negro.
+mno_start_2_bn|Na Fortaleza do Necromante, Dol Guldur.
 menu_choose_gender|^^^^^^^^^^Seu sexo?
 mno_start_male|Masculino
 mno_start_female|Feminino
@@ -195,13 +195,13 @@ mno_leave|Vai embora.
 menu_simple_encounter|^^^^^{s2}^Você tem {reg22} tropas à disposição para batalhar contra seus {reg11}.^^A batalha será em {s3}{s4}.^^Suas ordens?
 mno_encounter_attack|{reg21?Carregá-los: Preparar para encará-los}.
 mno_encounter_order_attack|Ordena suas tropas para {reg21?attack:face them} sem você.
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
+mno_control_allies_menu|Use Influência para comandar seus aliados no campo de batalha.
 mno_encounter_hide|Esconder-se do inimigo...
 mno_special_whip|Precipitar-se na direção deles, fraturando o {s4}.
 mno_encounter_leave|Separar.
 mno_encounter_retreat|Recuar, deixando alguns soldados para trás para encobrir sua retirada.
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_simple|Comande-os e ataque o inimigo
+mno_player_control_allies_back|Volte...
 mno_hide_close|Continuar...
 menu_encounter_retreat_confirm|^^^^^Como membro do grupo com as melhores habilidades táticas, ({reg2}), {reg3?you devise:{s3} devises} um plano que permitirá você e seus homens de escapar com vida, mas você terá que deixar {reg4} alguns soldados para trás, como forma de fazer o inimigo parar de persegui-los.
 mno_leave_behind|Vai em frente. O sacrifício desses homens irá salvar a vida do resto.
@@ -229,9 +229,9 @@ mno_pre_join_leave|Não se envolver.
 menu_join_battle|^^^Você está ajudando {s2} contra {s1}.^ Você tem {reg22} tropas prontas para a batalha contra o inimigo {reg11}.^^A batalha está acontecendo em {s3}{s4}.
 mno_join_attack|Investir contra o inimigo.
 mno_join_order_attack|Ordenar suas tropas para atacar junto dos aliados enquanto você fica atrás.
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|Use Pontos de Influência para comandar seus aliados no campo de batalha.
 mno_join_leave|Separar.
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|Comande-os e ataque o inimigo
 menu_join_order_attack|{s4}^^Suas vítimas: {s8}^^Vítimas dos aliados: {s9}^^Vítimas do inimigo: {s10}
 mno_enter|Entrar.
 menu_battlefields|^^^^^^^^^Selecione um campo...
@@ -368,9 +368,9 @@ mno_horse_archer_field_ai|Arqueiros a cavalo têm IA de combate melhorados: {s7}
 mno_vs_orcs_field_ai|Arqueiros têm mira melhor contra orcs (não miram acima das cabeças dos orcs): {s7}
 mno_battlefield_animals|Não-Warg / cavalo animais companheiros aparecem em batalha: {s7}
 mno_slow_when_wounded|Agentes ficam mais Devagar quando estão Feridos: {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
-; menu_hungry_orc|none
-; menu_leaving_elf|none
+mno_battle_encounter_effects|Efeitos Especiais de Facção em Campos de Batalha (ex.: tempestades, névoas): {s7}
+menu_hungry_orc|nada
+menu_leaving_elf|nada
 mno_defend_refugees|Mantenha a vigia por saqueadores...
 mno_attack_refugees|Atacar o comboio de refugiados...
 mno_leave_refugees|Deixá-los por enquanto...
@@ -426,7 +426,7 @@ mno_leave_pyre|Abandonar a pira.
 menu_town_ruins|Quando você se aproxima, você vê que {s1} é {s2}
 mno_ruin_menu_0|Explorar o lugar.
 mno_ruin_leave|Sair... 
-; menu_premutiny|none
+menu_premutiny|nada
 menu_death|Você foi morto. Apesar da guerra continuar, você não mais faz parte dela.
 menu_animal_ambush|Você e seus companheiros se encontram separados do resto do grupo, quando de repente...
 menu_animal_ambush_success|Os {s2} {reg0?fall:falls} antes de você como o trigo para a foice! Logo todos os seus agressores caem no chão, feridos ou mortos. {s3}

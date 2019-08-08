@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} ti ha chiesto di addestrare {reg1} {s14} e di consegn
 qst_escort_messenger|Scorta il messaggero fino a {s14}
 qst_escort_messenger_text|Nessuno
 qst_hunt_down_fugitive|Dai la caccia a {s4}
-qst_hunt_down_fugitive_text|{s9} ti ha chiesto di dare la caccia a un fuggitivo di nome {s4}. In questo momento si pensa si trovi a {s3}.
+qst_hunt_down_fugitive_text|{s9} ti ha chiesto di dare la caccia ad un fuggitivo chiamato {s4}. Al momento si ritiene possa trovarsi a {s3}.
 qst_bring_back_runaway_serfs|Riporta indietro i servi in fuga.
 qst_bring_back_runaway_serfs_text|{s9} ti ha chiesto di riportare indietro i tre gruppi di servi in fuga {s2}. Ha detto che tutti e tre i gruppi si dovrebbero trovare in direzione di {s3}.
 qst_follow_spy|Insegui la spia fino all'incontro
@@ -52,7 +52,7 @@ qst_join_siege_with_army_text|Nessuno
 qst_scout_waypoints|Perlustra {s13}, {s14} e {s15}
 qst_scout_waypoints_text|Nessuno
 qst_move_cattle_herd|Sposta {s12} a {s13}
-qst_move_cattle_herd_text|L'Anziano di {s10} ti ha chiesto di spostare un po' di {s12} a {s13}.
+qst_move_cattle_herd_text|Il Saggio di {s10} ti ha chiesto di spostare un po' di {s12} a {s13}.
 qst_escort_merchant_caravan|Scorta il convoglio dei rifornimenti fino a {s8}
 qst_escort_merchant_caravan_text|Scorta la carovana dei rifornimenti a {s8} e parla con loro quando sei nei pressi della destinazione.
 qst_deliver_wine|Consegna {reg5} unità di {s6} a {s4}
@@ -60,9 +60,9 @@ qst_deliver_wine_text|Il {s9} di {s3} ti ha chiesto di consegnare {reg5} unità 
 qst_troublesome_bandits|Dai la caccia ai Goblin molesti
 qst_troublesome_bandits_text|Il {s9} di {s4} ti ha chiesto di dare la caccia ai goblin molesti che si aggirano nelle vicinanze della città.
 qst_deal_with_looters|Affronta gli Orchi Tribali
-qst_deal_with_looters_text|L'Anziano di {s4} ti ha chiesto di trattare con le numerose tribù orchesche intorno a {s4}.
+qst_deal_with_looters_text|Il Saggio di {s4} ti ha chiesto di trattare con le numerose tribù orchesche intorno a {s4}.
 qst_deal_with_night_bandits|Affronta i Goblin disonesti
-qst_deal_with_night_bandits_text|L'anziano di {s14} ti ha chiesto di trattare con i goblin disonesti a {s14}.
+qst_deal_with_night_bandits_text|Il Saggio di {s14} ti ha chiesto di trattare con i goblin disonesti a {s14}.
 qst_deliver_food|Rifornisci {s3} con {reg5} unità di cibo
 qst_deliver_food_text|Il {s9} di {s3} ti ha chiesto di consegnargli {reg5} unità di cibo in 10 giorni.
 qst_deliver_iron|Rifornisci {s3} con {reg5} unità di {s6}
