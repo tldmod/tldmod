@@ -917,25 +917,25 @@ itemsfile version 2
  itm_lorien_sword_c Lorien_War_Sword Lorien_War_Sword 2  lorien_sword_hand_and_half 0  scab_lorien_sword_hand_and_half 3458764513820540928  4259843 9223635954298781951 900 156672 2.5 100 0 0 0 0 33792 98 0 103 0 279 33
 0
 
- itm_lorien_archer Lorien_Archer_Armor Lorien_Archer_Armor 4  lorien_archer 0  lorien_warden_cloak 268435456  lorien_archer_heavy 167772160  lorien_archer_heavy_cloak 536870912  16842765 0 500 973078662 8 100 0 16 8 0 0 0 0 0 0 0 0
+ itm_lorien_archer Lorien_Archer_Armor Lorien_Archer_Armor 4  lorien_archer 0  lorien_warden_cloak 268435456  lorien_archer_heavy 167772160  lorien_archer_heavy_cloak 536870912  16842765 0 300 973078662 5 100 0 13 5 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_a Lorien_Quilted_Armor Lorien_Quilted_Armor 5  lorien_light_1 134  lorien_light_2 0  lorien_light_2_cloak 268435456  lorien_light_3 167772160  lorien_light_3_cloak 536870912  16842765 0 800 973078662 12 100 0 20 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_a Lorien_Quilted_Armor Lorien_Quilted_Armor 5  lorien_light_1 134  lorien_light_2 0  lorien_light_2_cloak 268435456  lorien_light_3 167772160  lorien_light_3_cloak 536870912  16842765 0 800 973078662 8 100 0 17 8 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_b Lorien_Mail_Armor Lorien_Mail_Armor 5  lorien_med_1 134  lorien_med_2 0  lorien_med_2_cloak 268435456  lorien_med_3 167772160  lorien_med_3_cloak 536870912  16842765 0 1000 973078662 12 100 0 25 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_b Lorien_Mail_Armor Lorien_Mail_Armor 5  lorien_med_1 134  lorien_med_2 0  lorien_med_2_cloak 268435456  lorien_med_3 167772160  lorien_med_3_cloak 536870912  16842765 0 1000 973078662 12 100 0 22 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_c Lorien_Scale_Armor Lorien_Scale_Armor 5  lorien_heavy_1 134  lorien_heavy_2 0  lorien_heavy_2_cloak 268435456  lorien_heavy_3 167772160  lorien_heavy_3_cloak 536870912  16842765 0 1500 973078662 12 100 0 35 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_c Lorien_Scale_Armor Lorien_Scale_Armor 5  lorien_heavy_1 134  lorien_heavy_2 0  lorien_heavy_2_cloak 268435456  lorien_heavy_3 167772160  lorien_heavy_3_cloak 536870912  16842765 0 1500 973078662 18 100 0 33 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_d Lorien_Royal_Swordsman_Armor Lorien_Royal_Swordsman_Armor 1  lorien_heavy_3_cloak 0  16842765 0 2400 973078662 12 100 0 35 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_d Lorien_Royal_Swordsman_Armor Lorien_Royal_Swordsman_Armor 1  lorien_heavy_3_cloak 0  16777229 0 2400 167772294 12 100 0 35 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_e Lorien_Warden_Cloak Lorien_Warden_Cloak 1  lorien_warden_cloak 0  16842765 0 700 973078662 12 100 0 28 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_e Lorien_Warden_Cloak Lorien_Warden_Cloak 1  lorien_archer_heavy_cloak 0  16777229 0 700 167772294 12 100 0 28 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_f Lorien_Elite_Armor Lorien_Elite_Armor 1  lorien_heavy_3 0  16842765 0 2000 973078662 12 100 0 30 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_f Lorien_Elite_Armor Lorien_Elite_Armor 1  lorien_heavy_3 0  16777229 0 2000 167772294 12 100 0 30 10 0 0 0 0 0 0 0 0
 0
 
  itm_lorien_boots Lothlorien_Boots Lothlorien_Boots 1  lorien_boots 0  69390 0 1500 251658240 1 100 0 0 28 0 0 0 0 0 0 0 0
@@ -989,7 +989,7 @@ itemsfile version 2
  itm_evil_gauntlets_a Black_Gloves Black_Gloves 3  CWE_gloves_a_black_L 0  CWE_gloves_lord_black_L 251658240  CWE_gauntlets_arabs_a_L 134217728  65551 0 500 123731968 0.25 100 0 2 0 0 0 0 0 0 0 0 0
 0
 
- itm_evil_gauntlets_b Black_Gauntlets Black_Gauntlets 2  narf_wisby_gauntlets_black_L 0  narf_wisby_gauntlets_red_R 167772160  65551 0 500 704643206 1 100 0 4 0 0 0 0 0 0 0 0 0
+ itm_evil_gauntlets_b Black_Gauntlets Black_Gauntlets 2  narf_wisby_gauntlets_black_L 0  narf_wisby_gauntlets_red_R 704643072  65551 0 500 704643206 1 100 0 4 0 0 0 0 0 0 0 0 0
 0
 
  itm_isen_orc_armor_a Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_a 0  16842765 0 51 123731968 5 100 0 5 3 0 0 0 0 0 0 0 0
@@ -1574,37 +1574,37 @@ itemsfile version 2
  itm_rohan_guard Rohan_Guard_Armor Rohan_Guard_Armor 4  rohan_royal_guard_armor2 134  rohan_royal_guard_armor1 0  rohan_royal_guard_armor1_cape 268435456  rohan_royal_guard_armor1_lordly 167772160  16842765 0 3000 973078662 22 100 0 38 17 20 0 0 0 0 0 0 0
 0
 
- itm_rohan_light_helmet_a Rohan_Light_Helm Rohan_Light_Helm 3  rohan_recruit_helm_a 134  rohan_recruit_helm_b 0  rohan_recruit_helm_c 167772160  65548 0 500 167772294 1 100 26 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_light_helmet_a Rohan_Light_Helm Rohan_Light_Helm 3  rohan_recruit_helm_a 134  rohan_recruit_helm_b 0  rohan_recruit_helm_c 704643072  65548 0 500 167772294 1 100 26 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_light_helmet_b Rohan_Light_Helm Rohan_Light_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 167772160  65548 0 600 167772294 1 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_light_helmet_b Rohan_Light_Helm Rohan_Light_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 704643072  65548 0 600 167772294 1 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_inf_helmet_a Rohan_Eyeguard_Helm Rohan_Eyeguard_Helm 4  rohan_inf_helmet_a 134  rohan_inf_helmet_b 0  rohan_inf_helmet_c 234881024  rohan_captain_helmet 536870912  65548 0 1000 704643206 2 100 33 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_a Rohan_Eyeguard_Helm Rohan_Eyeguard_Helm 4  rohan_inf_helmet_a 134  rohan_inf_helmet_b 0  rohan_inf_helmet_c 167772160  rohan_captain_helmet 536870912  65548 0 1000 704643206 2 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_inf_helmet_b Rohan_Eyeguard_Helm Rohan_Eyeguard_Helm 3  rohan_eye_helm_a 134  rohan_eye_helm_b 0  rohan_eye_helm_c 167772160  65548 0 1000 704643206 2 100 33 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_b Rohan_Eyeguard_Helm Rohan_Eyeguard_Helm 3  rohan_eye_helm_a 134  rohan_eye_helm_b 0  rohan_eye_helm_c 704643072  65548 0 1000 704643206 2 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_archer_helmet_a Rohan_Nasal_Helm Rohan_Nasal_Helm 3  rohan_archer_helmet_a 134  rohan_archer_helmet_b 0  rohan_archer_helm_d 167772160  65548 0 900 704643206 2 100 31 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_a Rohan_Nasal_Helm Rohan_Nasal_Helm 3  rohan_archer_helmet_a 134  rohan_archer_helmet_b 0  rohan_archer_helm_d 704643072  65548 0 900 704643206 2 100 31 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_archer_helmet_b Rohan_Nasal_Helm Rohan_Nasal_Helm 3  rohan_nasal_helm_a 134  rohan_nasal_helm_b 0  rohan_nasal_helm_c 167772160  65548 0 900 704643206 2 100 31 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_b Rohan_Nasal_Helm Rohan_Nasal_Helm 3  rohan_nasal_helm_a 134  rohan_nasal_helm_b 0  rohan_nasal_helm_c 704643072  65548 0 900 704643206 2 100 31 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_archer_helmet_c Rohan_Guard_Helm Rohan_Guard_Helm 4  rohan_guard_helm_a 134  rohan_guard_helm_b 0  rohan_guard_helm_c 234881024  rohan_theoden_helm 536870912  65548 0 1100 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_c Rohan_Guard_Helm Rohan_Guard_Helm 4  rohan_guard_helm_a 134  rohan_guard_helm_b 0  rohan_guard_helm_c 167772160  rohan_theoden_helm 536870912  65548 0 1100 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_cav_helmet_a Rohan_Cavalry_Helm Rohan_Cavalry_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 167772160  65548 0 1300 167772294 2 100 34 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_cav_helmet_a Rohan_Cavalry_Helm Rohan_Cavalry_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 167772160  12 0 1300 167772294 2 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_cav_helmet_b Rohan_Cavalry_Helm Rohan_Cavalry_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 167772160  65548 0 1300 167772294 2 100 34 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_cav_helmet_b Rohan_Cavalry_Helm Rohan_Cavalry_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 167772160  12 0 1300 167772294 2 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_cav_helmet_c Rohan_Cavalry_Helm Rohan_Cavalry_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 167772160  65548 0 1500 704643072 2 100 36 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_cav_helmet_c Rohan_Cavalry_Helm Rohan_Cavalry_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 167772160  12 0 1500 704643072 2 100 36 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_captain_helmet Rohan_Captain_Helm Rohan_Captain_Helm 1  rohan_captain_helmet 0  65548 0 3000 704643072 2 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_captain_helmet Rohan_Captain_Helm Rohan_Captain_Helm 1  rohan_captain_helmet 0  12 0 3000 704643072 2 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_shield_a Rohan_Shield Rohan_Shield 1  rohan_shield_green 0  327687 5100273664 200 251658402 2 100 0 4 0 0 310 96 0 40 0 0 0
