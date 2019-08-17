@@ -299,7 +299,7 @@ scenes = [
 ("battlefield7" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000002440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("battlefield8" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],[],"outer_mountains2south"),
 ("battlefield9" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000034400500000344d300003efe00004b34000059be",[],[],"outer_terrain_forest"),
-("battlefield10",sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000003440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield10",sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
 ("small_ford"   ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 ("rivercross"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000030081763000989a20000338e00004f2c00005cfb",[],[],"outer_terrain_plain"),
 

@@ -744,7 +744,7 @@ scn_cirith_ungol_siege cirith_ungol_siege 256 none none 0 0 100 100 -100 0x00000
   0 
   0 
  outer_terrain_rohan 
-scn_battlefield2 battlefield2 256 none none 0 0 200 200 -0.5 0x0000000240002800000691a400003efe00004b34000059be 
+scn_battlefield2 battlefield2 256 none none 0 0 200 200 -0.5 0x00000001b0f9134800058d66000023ad000035de00005d2e 
   0 
   0 
  outer_terrain_plain 
@@ -776,10 +776,10 @@ scn_battlefield9 battlefield9 256 none none 0 0 200 200 -0.5 0x00000000344005000
   0 
   0 
  outer_terrain_forest 
-scn_battlefield10 battlefield10 256 none none 0 0 200 200 -0.5 0x000000003440050000050d4500003efe00004b34000059be 
+scn_battlefield10 battlefield10 256 none none 0 0 200 200 -0.5 0x00000001b119134800058d66000023ad000035de0000292a 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_forest 
 scn_small_ford small_ford 256 none none 0 0 200 200 -0.5 0x0000000235864d634005c96d0000734a00004b340000734a 
   0 
   0 

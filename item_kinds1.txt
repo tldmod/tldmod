@@ -1571,7 +1571,7 @@ itemsfile version 2
  itm_rohan_surcoat Rohan_Surcoat Rohan_Surcoat 5  rohan_tabard_poor 134  rohan_tabard 0  rohan_tabard_cape 268435456  rohan_tabard_reinforced 33554432  rohan_tabard_reinforced_cape 671088640  16842765 0 2000 973078662 20 100 0 36 15 18 0 0 0 0 0 0 0
 0
 
- itm_rohan_guard Rohan_Guard_Armor Rohan_Guard_Armor 4  rohan_royal_guard_armor2 134  rohan_royal_guard_armor1 0  rohan_royal_guard_armor1_cape 268435456  rohan_royal_guard_armor1_lordly 167772160  16842765 0 3000 973078662 22 100 0 38 17 20 0 0 0 0 0 0 0
+ itm_rohan_guard Rohan_Guard_Armor Rohan_Guard_Armor 4  rohan_royal_guard_armor2 134  rohan_royal_guard_armor1 0  rohan_royal_guard_armor1_cape 268435456  rohan_royal_guard_armor1_lordly 704643072  16842765 0 3000 973078662 22 100 0 38 17 20 0 0 0 0 0 0 0
 0
 
  itm_rohan_light_helmet_a Rohan_Light_Helm Rohan_Light_Helm 3  rohan_recruit_helm_a 134  rohan_recruit_helm_b 0  rohan_recruit_helm_c 704643072  65548 0 500 167772294 1 100 26 0 0 0 0 0 0 0 0 0 0
@@ -1677,16 +1677,16 @@ itemsfile version 2
  itm_mirkwood_armor_b Light_Quilted_and_Scale_Armor Light_Quilted_and_Scale_Armor 1  mirkwood_scalequilted_01 0  16842765 0 1100 704643072 14 100 0 32 16 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_c Mirkwood_Royal_Mail Mirkwood_Royal_Mail 1  mirkwood_royal 0  16842765 0 3000 704643072 15 100 0 37 16 18 0 0 0 0 0 0 0
+ itm_mirkwood_armor_c Mirkwood_Royal_Mail Mirkwood_Royal_Mail 1  mirkwood_royal 0  16842765 0 3000 704643072 15 100 0 37 16 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_armor_d Light_Quilted_Surcoat Light_Quilted_Surcoat 1  mirkwood_quiltedsurcoat_01 0  16842765 0 1000 704643072 10 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643072 15 100 0 35 14 18 0 0 0 0 0 0 0
+ itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643072 15 100 0 35 14 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643072 20 100 3 40 14 18 0 0 0 0 0 0 0
+ itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643072 20 100 3 40 14 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 104 0 148 0 291 30
