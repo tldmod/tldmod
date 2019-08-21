@@ -346,7 +346,7 @@ scn_elf_castle elf_castle 1 interior_castle_t bo_interior_castle_t -100 -100 100
  0 
 scn_mordor_castle mordor_castle 1 interior_castle_t bo_interior_castle_t -100 -100 100 100 -100 0 
   1  100000 
-  0 
+  1  833 
  0 
 scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_rohan_meduseld_int -200 -200 200 200 -100 0 
   1  100000 

@@ -2721,7 +2721,7 @@ itemsfile version 2
  itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armour 0  denethor_robe 2048  dm_nazgulrobe 512  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16777229 0 4000 704643072 20 100 0 43 15 15 0 0 0 0 0 0 0
 0
 
- itm_wilderness_amulet Wolf_Teeth_Amulet Wolf_Teeth_Amulet 1  dunland_wolf_amulet 0  16777229 0 1000 704643072 20 100 0 44 15 0 0 0 0 0 0 0 0
+ itm_wilderness_amulet Wilderness_Amulet Wilderness_Amulet 2  dunland_amulet 0  beorning_amulet 256  4107 0 1000 704643072 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_prisoner_coll_chain Prisoner_Chains Prisoner_Chains 1  prisoner_coll_chain 0  16777228 0 10 0 10 100 2 0 0 0 0 0 0 0 0 0 0

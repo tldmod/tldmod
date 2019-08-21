@@ -6,7 +6,7 @@ imod_chipped     = 4  # -1 damage
 imod_battered    = 5  # .......... -2 armor, -26 hp
 imod_poor        = 6  # --------
 imod_crude       = 7  # -2 damage, -1 armor				= "simple"
-imod_old         = 8  # --------
+imod_old         = 8  # --------						= "ancient"
 imod_cheap       = 9  # --------
 imod_fine        = 10 # +1 damage
 imod_well_made   = 11 # --------

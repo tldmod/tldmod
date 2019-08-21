@@ -346,7 +346,7 @@ scn_elf_castle elf_castle 1 interior_castle_t bo_interior_castle_t -100 -100 100
  0 
 scn_mordor_castle mordor_castle 1 interior_castle_t bo_interior_castle_t -100 -100 100 100 -100 0 
   1  100000 
-  0 
+  1  833 
  0 
 scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_rohan_meduseld_int -200 -200 200 200 -100 0 
   1  100000 
@@ -744,7 +744,7 @@ scn_cirith_ungol_siege cirith_ungol_siege 256 none none 0 0 100 100 -100 0x00000
   0 
   0 
  outer_terrain_rohan 
-scn_battlefield2 battlefield2 256 none none 0 0 200 200 -0.5 0x00000001b0f9134800058d66000023ad000035de00005d2e 
+scn_battlefield2 battlefield2 256 none none 0 0 200 200 -0.5 0x0000000240002800000691a400003efe00004b34000059be 
   0 
   0 
  outer_terrain_plain 
