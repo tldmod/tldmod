@@ -2469,7 +2469,7 @@ scene_props = [
 
 ("osgiliath_far_f",0,"osgiliath_far","0", []),   
 ("hill",0,"hill","bo_hill", []),
-("water_river",0,"JB_water_plane","0", []),
+("water_river",0,"TLD_water_plane","0", []),
 ("water_fall",0,"water_fall","0", []),
 ("distant_street_a",0,"distant_street_a","bo_village_wall_a", []),
 ("distant_street_b",0,"distant_street_b","bo_village_wall_b", []),

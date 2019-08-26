@@ -649,16 +649,16 @@ itemsfile version 2
  itm_gondorian_light_helm Gondorian_Footman_Helm Gondorian_Footman_Helm 1  gondor_footman_helm 0  12 0 900 167772294 2 100 29 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_gondor_infantry_helm Gondor_Infantry_Helm Gondor_Infantry_Helm 3  gondor_footman_helm 134  gondor_regular_helm 0  gondor_regular_helm2 704643072  65548 0 1300 704643206 2.25 100 34 0 0 0 0 0 0 0 0 0 0
+ itm_gondor_infantry_helm Gondor_Infantry_Helm Gondor_Infantry_Helm 4  gondor_footman_helm 134  gondor_regular_helm 1  gondor_regular_helm 0  gondor_regular_helm2 704643072  65548 0 1300 704643206 2.25 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_gondor_auxila_helm Gondorian_Auxilia_Helm Gondorian_Auxilia_Helm 3  gondor_auxila_helm 134  gondor_auxila_helm2 0  gondor_auxila_helm3 704643072  65548 0 300 704643206 1.5 100 20 0 0 0 0 0 0 0 0 0 0
+ itm_gondor_auxila_helm Gondorian_Auxilia_Helm Gondorian_Auxilia_Helm 4  gondor_auxila_helm 134  gondor_auxila_helm2 1  gondor_auxila_helm2 0  gondor_auxila_helm3 704643072  65548 0 300 704643206 1.5 100 20 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_gondorian_light_helm_b Gondorian_Bowman_Helm Gondorian_Bowman_Helm 1  gondor_bowman_helm 0  12 0 500 167772294 1.5 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_gondorian_archer_helm Gondorian_Archer_Helm Gondorian_Archer_Helm 3  gondor_bowman_helm 134  gondor_archer_helm 0  gondor_archer_helm2 704643072  65548 0 800 704643206 1.75 100 27 0 0 0 0 0 0 0 0 0 0
+ itm_gondorian_archer_helm Gondorian_Archer_Helm Gondorian_Archer_Helm 4  gondor_bowman_helm 134  gondor_archer_helm 1  gondor_archer_helm 0  gondor_archer_helm2 704643072  65548 0 800 704643206 1.75 100 27 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_tower_archer_helm Tower_Archer_Helm Tower_Archer_Helm 1  gondor_tower_archer_helm 0  65548 0 1200 704643072 1.5 100 31 0 0 0 0 0 0 0 0 0 0
@@ -676,10 +676,10 @@ itemsfile version 2
  itm_gondor_squire_helm Gondor_Squire_Helm Gondor_Squire_Helm 1  gondor_squire_helm 12  65548 0 800 704643072 2 100 29 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_gondor_knight_helm Gondor_Cavalry_Helm Gondor_Cavalry_Helm 3  gondor_squire_helm 0  gondor_knight_helm 0  gondor_knight_helm2 704643072  65548 0 1300 704643206 2 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_gondor_knight_helm Gondor_Cavalry_Helm Gondor_Cavalry_Helm 4  gondor_squire_helm 0  gondor_knight_helm 1  gondor_knight_helm 0  gondor_knight_helm2 704643072  65548 0 1300 704643206 2 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_gondor_dolamroth_helm Dol_Amroth_Helm Dol_Amroth_Helm 3  gondor_dolamroth_helm_1 134  gondor_dolamroth_helm_2 0  gondor_dolamroth_helm_3 704643072  65548 0 1300 704643206 2.5 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_gondor_dolamroth_helm Dol_Amroth_Helm Dol_Amroth_Helm 4  gondor_dolamroth_helm_1 134  gondor_dolamroth_helm_2 1  gondor_dolamroth_helm_2 0  gondor_dolamroth_helm_3 704643072  65548 0 1300 704643206 2.5 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_swan_knight_helm Swan_Knight_Helm Swan_Knight_Helm 1  gondor_dolamroth_knight_helm 0  65548 0 1500 704643072 3 100 42 0 0 0 0 0 0 0 0 0 0
