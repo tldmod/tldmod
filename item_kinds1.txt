@@ -2212,13 +2212,13 @@ itemsfile version 2
  itm_dale_shield_d Dale_Shield Dale_Shield 1  dwarf_round_shield_m 0  327687 5100273664 200 251658402 2 100 0 8 0 0 360 82 0 50 0 0 0
 0
 
- itm_free_umb_armor_a1 Corsair_Heavy_Leather_Armor Corsair_Heavy_Leather_Armor 1  corsair_leather_pauldron 0  16842765 0 500 123731968 9 100 0 14 6 0 0 0 0 0 0 0 0
+ itm_free_umb_armor_a1 Corsair_Heavy_Leather_Armor Corsair_Heavy_Leather_Armor 1  corsair_light_leather_1 0  16842765 0 500 123731968 9 100 0 14 6 0 0 0 0 0 0 0 0
 0
 
- itm_free_umb_armor_d Corsair_Heavy_Padded_Armor Corsair_Heavy_Padded_Armor 1  corsair_padded_pauldron 0  16842765 0 700 123731968 14 100 0 18 5 0 0 0 0 0 0 0 0
+ itm_free_umb_armor_d Corsair_Heavy_Padded_Armor Corsair_Heavy_Padded_Armor 1  corsair_leather_pad_1 0  16842765 0 700 123731968 14 100 0 18 5 0 0 0 0 0 0 0 0
 0
 
- itm_free_umb_armor_g Corsair_Hauberk_Pauldrons Corsair_Hauberk_Pauldrons 1  corsair_chain_pauldron 0  16842765 0 2000 704643072 22 100 0 25 7 0 0 0 0 0 0 0 0
+ itm_free_umb_armor_g Corsair_Hauberk_Pauldrons Corsair_Hauberk_Pauldrons 1  corsair_mail_1 0  16842765 0 2000 704643072 22 100 0 25 7 0 0 0 0 0 0 0 0
 0
 
  itm_umb_armor_a Corsair_Leather_Vest Corsair_Leather_Vest 4  corsair_light_leather_1 0  corsair_light_leather_0 134  corsair_light_leather_2 167772160  corsair_light_leather_1b 268435456  16842765 0 260 973078662 7 100 0 10 4 0 0 0 0 0 0 0 0

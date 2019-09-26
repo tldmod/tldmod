@@ -1246,9 +1246,9 @@ items =[
 ##ARMOR##########
 
 #next three free, July 2018
-["free_umb_armor_a1","Corsair_Heavy_Leather_Armor",[("corsair_leather_pauldron",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(9)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth,],
-["free_umb_armor_d","Corsair_Heavy_Padded_Armor",[("corsair_padded_pauldron",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,700,weight(14)|head_armor(0)|body_armor(18)|leg_armor(5)|difficulty(0),imodbits_cloth,],
-["free_umb_armor_g","Corsair_Hauberk_Pauldrons",[("corsair_chain_pauldron",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(0)|body_armor(25)|leg_armor(7)|difficulty(0),imodbits_elf_armor,],
+["free_umb_armor_a1","Corsair_Heavy_Leather_Armor",[("corsair_light_leather_1",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(9)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth,],
+["free_umb_armor_d","Corsair_Heavy_Padded_Armor",[("corsair_leather_pad_1",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,700,weight(14)|head_armor(0)|body_armor(18)|leg_armor(5)|difficulty(0),imodbits_cloth,],
+["free_umb_armor_g","Corsair_Hauberk_Pauldrons",[("corsair_mail_1",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(0)|body_armor(25)|leg_armor(7)|difficulty(0),imodbits_elf_armor,],
 
 ["umb_armor_a","Corsair_Leather_Vest",	[("corsair_light_leather_1",0),("corsair_light_leather_0",imodbits_armor_bad),("corsair_light_leather_2",imodbits_armor_good),("corsair_light_leather_1b",imodbit_cloak)],itp_type_body_armor|itp_covers_legs|itp_shop,0,260,weight(7)|head_armor(0)|body_armor(10)|leg_armor(4)|difficulty(0),imodbits_armor|imodbit_lordly|imodbit_cloak,],
 ["umb_armor_b","Corsair_Leather_Armor",	[("corsair_leather_pad_1",0),("corsair_leather_pad_0",imodbits_armor_bad),("corsair_leather_pad_2",imodbits_armor_good),("corsair_leather_pad_1b",imodbit_cloak)],itp_type_body_armor|itp_covers_legs|itp_shop,0,400,weight(8)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),imodbits_armor|imodbit_lordly|imodbit_cloak,],
