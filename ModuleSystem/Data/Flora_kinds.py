@@ -363,8 +363,8 @@ fauna_kinds = [
  ('pw_branchy_green_group',
   fkf_steppe_forest|fkf_tree|density(4),
   [['PW_tree_10_a', 'bo_pw_tree_10_a'],
-   ['PW_tree_10_b', 'bo_pw_tree_10_a'],
-   ['PW_tree_10_c', 'bo_pw_tree_10_a']]),
+   ['PW_tree_10_b', 'bo_pw_tree_10_b'],
+   ['PW_tree_10_c', 'bo_pw_tree_10_c']]),
 
  ('tree_11',
   fkf_plain_forest|fkf_plain|fkf_tree|density(4),
@@ -375,8 +375,8 @@ fauna_kinds = [
  ('pw_branchy_green_group2',
   fkf_steppe_forest|fkf_tree|density(4),
   [['PW_tree_11_a', 'bo_pw_tree_11_a'],
-   ['PW_tree_11_b', 'bo_pw_tree_11_a'],
-   ['PW_tree_11_c', 'bo_pw_tree_11_a']]),
+   ['PW_tree_11_b', 'bo_pw_tree_11_b'],
+   ['PW_tree_11_c', 'bo_pw_tree_11_c']]),
 
  ('tree_12',
   fkf_steppe_forest|fkf_tree|density(4),
@@ -489,8 +489,8 @@ fauna_kinds = [
  ('pw_leaf_yellow_group',
   fkf_steppe_forest|fkf_tree|density(4),
   [['PW_tree_f_1', 'bo_pw_tree_f_1'],
-   ['PW_tree_f_2', 'bo_pw_tree_f_1'],
-   ['PW_tree_f_3', 'bo_pw_tree_f_1']]),
+   ['PW_tree_f_2', 'bo_pw_tree_f_2'],
+   ['PW_tree_f_3', 'bo_pw_tree_f_3']]),
 
  ('grape_vineyard', 0, [['grape_vineyard', 'bo_grape_vineyard']]),
 

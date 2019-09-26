@@ -270,9 +270,9 @@ tree_10 17184064512 3
 pw_branchy_green_group 17184065536 3
  PW_tree_10_a  bo_pw_tree_10_a
  0 0
- PW_tree_10_b  bo_pw_tree_10_a
+ PW_tree_10_b  bo_pw_tree_10_b
  0 0
- PW_tree_10_c  bo_pw_tree_10_a
+ PW_tree_10_c  bo_pw_tree_10_c
  0 0
 tree_11 17184064516 3
  tree_11_a  bo_tree_11_a
@@ -284,9 +284,9 @@ tree_11 17184064516 3
 pw_branchy_green_group2 17184065536 3
  PW_tree_11_a  bo_pw_tree_11_a
  0 0
- PW_tree_11_b  bo_pw_tree_11_a
+ PW_tree_11_b  bo_pw_tree_11_b
  0 0
- PW_tree_11_c  bo_pw_tree_11_a
+ PW_tree_11_c  bo_pw_tree_11_c
  0 0
 tree_12 17184065536 3
  tree_12_a  bo_tree_12_a
@@ -410,9 +410,9 @@ tree_f 4194304 3
 pw_leaf_yellow_group 17184065536 3
  PW_tree_f_1  bo_pw_tree_f_1
  0 0
- PW_tree_f_2  bo_pw_tree_f_1
+ PW_tree_f_2  bo_pw_tree_f_2
  0 0
- PW_tree_f_3  bo_pw_tree_f_1
+ PW_tree_f_3  bo_pw_tree_f_3
  0 0
 grape_vineyard 0 1
  grape_vineyard  bo_grape_vineyard
@@ -910,7 +910,7 @@ tree_old 0 7
  PL_oak_group_big_b_1  bo_pl_oak_group_big_1
  PL_oak_group_big_b_2  bo_pl_oak_group_big_2
  PL_oak_group_big_b_3  bo_pl_oak_group_big_3
-tree_mirkwood 0 3
+mirkwood_tree 0 3
  tree_mirkwood_a  bo_tree_mallorn_a
  tree_mirkwood_b  bo_tree_mallorn_b
  tree_mirkwood_c  bo_tree_mallorn_c
@@ -922,7 +922,7 @@ mushroom 17179870208 5
  mushroom5  0
 fern_big 0 1
  PW_fern_big  0
-tree_mirkwood 0 8
+mirkwood_roots 0 8
  tree_mirkwood_roots_1  bo_tree_mirkwood_roots_1
  tree_mirkwood_roots_2  bo_tree_mirkwood_roots_2
  tree_mirkwood_roots_3  bo_tree_mirkwood_roots_3
