@@ -983,7 +983,7 @@ scn_gundabad_siege gundabad_siege 256 none none 0 0 100 100 -100 0x0000000320000
 scn_dol_guldur_siege dol_guldur_siege 256 none none 0 0 100 100 -100 0x00000003b0050d0d0004b12c000072f5000027d200005f66 
   0 
   0 
- outer_terrain_forest 
+ New_outer_terrain_forest 
 scn_umbar_camp_siege umbar_camp_siege 256 none none 0 0 100 100 -100 0x0000000740000500000a1e8a000034f880004b040000583d 
   0 
   0 
