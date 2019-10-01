@@ -104,8 +104,8 @@ trp_dale_pikeman_pl|Dolský kopiníci
 ; trp_merchant_squire_or_dale_pl|Northmen Retainers
 ; trp_merchant_guard_of_dale|Northmen Auxiliary
 ; trp_merchant_guard_of_dale_pl|Northmen Auxilia
-; trp_merchant_protector_of_dale|Rhovanion Rider
-; trp_merchant_protector_of_dale_pl|Rhovanion Riders
+trp_merchant_protector_of_dale|Rhovanionský Jezdec
+trp_merchant_protector_of_dale_pl|Rhovanionští Jezdci
 ; trp_girions_guard_of_dale|Rhovanion Marchwarden
 ; trp_girions_guard_of_dale_pl|Rhovanion Marchwardens
 ; trp_rhun_tribesman|Rhun Tribesman
@@ -124,16 +124,16 @@ trp_rhun_swift_horseman_pl|Rhůnský rychlí jezdci na koni
 ; trp_rhun_veteran_swift_horseman_pl|Rhun Veteran Swift Horsemen
 trp_falcon_horseman|Jestrabi jezdec
 trp_falcon_horseman_pl|Jestrabi jezdci
-; trp_rhun_tribal_warrior|Rhun Tribal Warrior
-; trp_rhun_tribal_warrior_pl|Rhun Tribal Warriors
-; trp_rhun_tribal_infantry|Rhun Tribal Infantryman
-; trp_rhun_tribal_infantry_pl|Rhun Tribal Infantry
-; trp_rhun_vet_infantry|Rhun Veteran Infantryman
-; trp_rhun_vet_infantry_pl|Rhun Veteran Infantry
+trp_rhun_tribal_warrior|Rhunský Kmenový Válečník
+trp_rhun_tribal_warrior_pl|Rhunští Kmenovští Válečníci
+trp_rhun_tribal_infantry|Rhunský Kmenový Pěšák
+trp_rhun_tribal_infantry_pl|Rhunská Kmenová Pěchota
+trp_rhun_vet_infantry|Rhunský Veteránský Pěšák
+trp_rhun_vet_infantry_pl|Rhunská Veteránská Pěchota
 trp_infantry_of_the_ox|Pesak radu Tura
 trp_infantry_of_the_ox_pl|Pesaci radu Tura
-; trp_rhun_light_horseman|Rhun Light Horseman
-; trp_rhun_light_horseman_pl|Rhun Light Horsemen
+trp_rhun_light_horseman|Rhunský Lehký Jezdec
+trp_rhun_light_horseman_pl|Rhunští Lehcí Jezdci
 ; trp_rhun_light_cavalry|Rhun Light Cavalryman
 ; trp_rhun_light_cavalry_pl|Rhun Light Cavalry
 ; trp_rhun_noble_cavalry|Rhun Noble Cavalryman
@@ -168,8 +168,8 @@ trp_a4_dwarven_bowman|Trpasličí lučištník
 trp_a4_dwarven_bowman_pl|Trpasličí lučištnící
 ; trp_i6_dwarven_longaxeman|Longaxe Dwarf
 ; trp_i6_dwarven_longaxeman_pl|Longaxe Dwarves
-; trp_i3_iron_hills_warrior|Iron Hills Warrior
-; trp_i3_iron_hills_warrior_pl|Iron Hills Warriors
+trp_i3_iron_hills_warrior|Válečník Železných Hor
+trp_i3_iron_hills_warrior_pl|Válečníci Železných Hor
 trp_i2_iron_hills_miner|Hornik Zeleznych hor
 trp_i2_iron_hills_miner_pl|Hornici Zeleznych hor
 trp_i4_iron_hills_infantry|Pesak Zeleznych hor
@@ -243,41 +243,41 @@ trp_pelargir_watchman_pl|Pelargirska hlidka
 trp_pelargir_marine|Pelargirsky namornik
 trp_pelargir_marine_pl|Pelargirsti namornici
 trp_pelargir_vet_marine|Pelargirsky namorni veteran
-trp_pelargir_vet_marine_pl|Pelargirsti namorni veterani
+trp_pelargir_vet_marine_pl|Pelargirští Veteránští Námořníci
 trp_pelargir_infantry|Pelargirsky pesak
 trp_pelargir_infantry_pl|Pelargirsti pesaci
 trp_pelargir_vet_infantry|Pelargirsky zkuseny pesak
 trp_pelargir_vet_infantry_pl|Pelargirsti zkuseni pesaci
 trp_pelargir_leader|Pelargirsky kapitan
 trp_pelargir_leader_pl|Pelargirsti kapitani
-; trp_pelargir_marine_leader|Captain of Pelargir Marines
-; trp_pelargir_marine_leader_pl|Captains of Pelargir Marine
+trp_pelargir_marine_leader|Kapitán Pelargirských Námořníků
+trp_pelargir_marine_leader_pl|Kapitáni Pelargirských Námořníků
 ; trp_clansman_of_lamedon|Clansman of Lamedon
 ; trp_clansman_of_lamedon_pl|Clansmen of Lamedon
-; trp_footman_of_lamedon|Footman of Lamedon
-; trp_footman_of_lamedon_pl|Footmen of Lamedon
-; trp_veteran_of_lamedon|Veteran of Lamedon
-; trp_veteran_of_lamedon_pl|Veterans of Lamedon
-; trp_warrior_of_lamedon|Warrior of Lamedon
-; trp_warrior_of_lamedon_pl|Warriors of Lamedon
-; trp_champion_of_lamedon|Champion of Lamedon
-; trp_champion_of_lamedon_pl|Champions of Lamedon
-; trp_knight_of_lamedon|Knight of Lamedon
-; trp_knight_of_lamedon_pl|Knights of Lamedon
-; trp_lamedon_leader|Captain of Lamedon
-; trp_lamedon_leader_pl|Captains of Lamedon
+trp_footman_of_lamedon|Lamedonský Pěšák
+trp_footman_of_lamedon_pl|Lamedonští Pěšáci
+trp_veteran_of_lamedon|Veterán Lamedonu
+trp_veteran_of_lamedon_pl|Veteráni Lamedonu
+trp_warrior_of_lamedon|Válečník Lamedonu
+trp_warrior_of_lamedon_pl|Válečníci Lamedonu
+trp_champion_of_lamedon|Šampión Lamedonu
+trp_champion_of_lamedon_pl|Šampióni Lamedonu
+trp_knight_of_lamedon|Rytíř Lamedonu
+trp_knight_of_lamedon_pl|Rytíři Lamedonu
+trp_lamedon_leader|Kapitán Lamedonu
+trp_lamedon_leader_pl|Kapitáni Lamedonu
 ; trp_pinnath_gelin_plainsman|Plainsman of Pinnath Gelin
 ; trp_pinnath_gelin_plainsman_pl|Plainsmen of Pinnath Gelin
-; trp_pinnath_gelin_spearman|Rider of Pinnath Gelin
-; trp_pinnath_gelin_spearman_pl|Riders of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin|Knight of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin_pl|Knights of Pinnath Gelin
-; trp_pinnath_gelin_bowman|Bowman of Pinnath Gelin
-; trp_pinnath_gelin_bowman_pl|Bowmen of Pinnath Gelin
-; trp_pinnath_gelin_archer|Archer of Pinnath Gelin
-; trp_pinnath_gelin_archer_pl|Archers of Pinnath Gelin
-; trp_pinnath_leader|Captain of Pinnath Gelin
-; trp_pinnath_leader_pl|Captains of Pinnath Gelin
+trp_pinnath_gelin_spearman|Jezdec Pinnath Gelin
+trp_pinnath_gelin_spearman_pl|Jezdci Pinnath Gelin
+trp_warrior_of_pinnath_gelin|Rytíř Pinnath Gelin
+trp_warrior_of_pinnath_gelin_pl|Rytíři Pinnath Gelin
+trp_pinnath_gelin_bowman|Lukostřelec Pinnath Gelin
+trp_pinnath_gelin_bowman_pl|Lukostřelci Pinnath Gelin
+trp_pinnath_gelin_archer|Lučištník Pinnath Gelin
+trp_pinnath_gelin_archer_pl|Lučištníci Pinnath Gelin
+trp_pinnath_leader|Kapitán Pinnath Gelin
+trp_pinnath_leader_pl|Kapitáni Pinnath Gelin
 trp_blackroot_vale_archer|Morthondský Lovec
 trp_blackroot_vale_archer_pl|Morthondský Lovec
 trp_veteran_blackroot_vale_archer|Morthodský Lučištník
@@ -288,13 +288,13 @@ trp_footman_of_blackroot_vale|Morthondský Pěšák
 trp_footman_of_blackroot_vale_pl|Morthondští Pěšáci
 trp_spearman_of_blackroot_vale|Morthondský Kopiník
 trp_spearman_of_blackroot_vale_pl|Morthondští Kopiníci
-; trp_blackroot_leader|Morthond Shadow Hunter
-; trp_blackroot_leader_pl|Morthond Shadow Hunters
-; trp_dol_amroth_youth|Dol Amroth Recruit
-; trp_dol_amroth_youth_pl|Dol Amroth Recruits
-; trp_squire_of_dol_amroth|Squire of Dol Amroth
-; trp_squire_of_dol_amroth_pl|Squires of Dol Amroth
-; trp_veteran_squire_of_dol_amroth|Veteran Squire of Dol Amroth
+trp_blackroot_leader|Morthondský Lovec Stínů
+trp_blackroot_leader_pl|Morthondští Lovci Stínů
+trp_dol_amroth_youth|Rekrut Dol Amroth
+trp_dol_amroth_youth_pl|Dol Amrothští Rekruti
+trp_squire_of_dol_amroth|Panoš Dol Amroth
+trp_squire_of_dol_amroth_pl|Panoši Dol Amroth
+trp_veteran_squire_of_dol_amroth|Zkušení Panoši Dol Amroth
 ; trp_veteran_squire_of_dol_amroth_pl|Veteran Squires of Dol Amroth
 ; trp_knight_of_dol_amroth|Knight of Dol Amroth
 ; trp_knight_of_dol_amroth_pl|Knights of Dol Amroth
@@ -674,10 +674,10 @@ trp_armoured_troll_pl|Obrnění Trolové
 ; trp_olog_hai_pl|Olog Hai of Mordor
 trp_ent|Ent
 trp_ent_pl|Entové
-; trp_orc_snaga_of_guldur|Orc Snaga of Guldur
-; trp_orc_snaga_of_guldur_pl|Orc Snagas of Guldur
-; trp_orc_of_guldur|Orc Tracker of Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Guldur
+; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
+; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
+; trp_orc_of_guldur|Orc Tracker of Dol Guldur
+; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
 ; trp_orc_snaga_of_mordor|Orc Snaga of Mordor
 ; trp_orc_snaga_of_mordor_pl|Orc Snagas of Mordor
 ; trp_orc_of_mordor|Orc of Mordor
@@ -690,14 +690,14 @@ trp_ent_pl|Entové
 ; trp_warg_rider_of_gorgoroth_pl|Warg Riders of Gorgoroth
 ; trp_great_warg_rider_of_mordor|Great Warg Rider of Udun
 ; trp_great_warg_rider_of_mordor_pl|Great Warg Riders of Udun
-; trp_morgul_orc|Morgul Orc
-; trp_morgul_orc_pl|Morgul Orcs
-; trp_fell_morgul_orc|Fell Morgul Orc
-; trp_fell_morgul_orc_pl|Fell Morgul Orcs
-; trp_orc_tracker_of_mordor|Large Orc Tracker of Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Guldur
+; trp_morgul_orc|Orc of Minas Morgul
+; trp_morgul_orc_pl|Orcs of Minas Morgul
+; trp_fell_morgul_orc|Fell Orc of Minas Morgul
+; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+; trp_orc_tracker_of_mordor|Large Orc Tracker of Dol Guldur
+; trp_orc_tracker_of_mordor_pl|Large Orc Trackers of Dol Guldur
+; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
+; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
 ; trp_orc_archer_of_mordor|Orc Archer of Mordor
 ; trp_orc_archer_of_mordor_pl|Orc Archers of Mordor
 ; trp_large_orc_archer_of_mordor|Large Orc Archer of Mordor
@@ -722,8 +722,9 @@ trp_ent_pl|Entové
 ; trp_a2_archer_snaga_of_moria_pl|Goblin Archers of Moria
 ; trp_a3_large_goblin_archer_of_moria|Large Goblin Archer of Moria
 ; trp_a3_large_goblin_archer_of_moria_pl|Large Goblin Archers of Moria
-; trp_i5_deep_dweller_of_moria2|Deep-Dweller of Moria
-; trp_i5_deep_dweller_of_moria2_pl|Deep-Dwellers of Moria
+; trp_a4_fell_goblin_archer_of_moria|Fell Goblin Archer of Moria
+; trp_a4_fell_goblin_archer_of_moria_pl|Fell Goblin Archers of Moria
+
 ; trp_i1_goblin_gundabad|Gundabad Goblin
 ; trp_i1_goblin_gundabad_pl|Gundabad Goblins
 ; trp_i2_orc_gundabad|Gundabad Orc
@@ -750,8 +751,8 @@ trp_ent_pl|Entové
 trp_tribal_orc_pl|Klanoví skřeti
 ; trp_tribal_orc_warrior|Tribal Orc Warrior
 ; trp_tribal_orc_warrior_pl|Tribal Orc Warriors
-; trp_i5_orc_chieftain_of_moria2|Orc Chieftain of Moria
-; trp_i5_orc_chieftain_of_moria2_pl|Orc Chieftains of Moria
+; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
+; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
 ; trp_black_numenorean_renegade|Black Numenorean Renegade
 ; trp_black_numenorean_renegade_pl|Black Numenorean Renegades
 ; trp_black_numenorean_warrior|Black Numenorean Warrior
@@ -1582,3 +1583,16 @@ trp_ring_hunter_four_pl|hledači prstenu
 ; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
 ; trp_rhovanion_noble|Rhovanion Noble
 ; trp_rhovanion_noble_pl|Rhovanion Noblemen
+; trp_npc18|Turmbathu
+; trp_npc19|Heidrek
+; trp_npc20|Zigûrphel
+trp_werewolf|Vlkodlak
+; trp_werewolf_pl|Werewolves
+; trp_mountain_goblin2|Mountain Goblin
+; trp_mountain_goblin2_pl|Mountain Goblins
+; trp_tribal_orc2|Tribal Orc
+trp_tribal_orc2_pl|Kmenový skřeti
+; trp_tribal_orc_warrior2|Tribal Orc Warrior
+; trp_tribal_orc_warrior2_pl|Tribal Orc Warriors
+; trp_tribal_orc_chief2|Tribal Orc Chief
+; trp_tribal_orc_chief2_pl|Tribal Orc Chiefs

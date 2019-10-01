@@ -751,8 +751,8 @@ trp_tribal_orc|部落半兽人
 trp_tribal_orc_pl|部落半兽人
 trp_tribal_orc_warrior|部落半兽人战士
 trp_tribal_orc_warrior_pl|部落半兽人战士
-; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
-; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
+trp_i5_orc_champion_gundabad|刚达巴半兽人冠军战士
+trp_i5_orc_champion_gundabad_pl|刚达巴半兽人冠军战士
 trp_black_numenorean_renegade|黑暗努曼诺尔堕落者
 trp_black_numenorean_renegade_pl|黑暗努曼诺尔堕落者
 trp_black_numenorean_warrior|黑暗努曼诺尔战士
@@ -1583,11 +1583,11 @@ trp_i5_orc_chieftain_of_moria|摩瑞亚兽人酋长
 trp_i5_orc_chieftain_of_moria_pl|摩瑞亚兽人酋长
 trp_rhovanion_noble|罗马尼安贵族
 trp_rhovanion_noble_pl|罗马尼安贵族
-; trp_npc18|Turmbathu
-; trp_npc19|Heidrek
-; trp_npc20|Zigûrphel
+trp_npc18|图巴苏
+trp_npc19|海德克
+trp_npc20|齐古法
 trp_werewolf|狼人
-; trp_werewolf_pl|Werewolves
+trp_werewolf_pl|狼人
 trp_mountain_goblin2|山地半兽人
 trp_mountain_goblin2_pl|山地半兽人
 trp_tribal_orc2|部落半兽人

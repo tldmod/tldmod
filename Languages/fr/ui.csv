@@ -3,7 +3,7 @@ ui_not_enough_skill_points_to_learn|(pas assez de points de compétences pour ap
 ui_not_enough_attributetype_to_learn_this_skill|(pas assez de %s pour apprendre cette compétence)
 ui_explanation_agility|Agilité : chaque point donne cinq points d'arme et augmente la vitesse de 0,5 %. Les compétences suivantes ne peuvent pas être développées au-delà de 1/3 de l'Agilité : Maître d'arme, Bouclier, Athlétisme, Équitation, Archerie montée, Pillage. 
 ui_retreated_battle|%s a été mis en déroute.
-ui_riding_skill_not_adequate_to_mount|(compétence d'Équitation trop faible)
+ui_riding_skill_not_adequate_to_mount|(Compétence d'Équitation trop faible)
 ui_camp|Actions
 ui_tutorial_inventory|Dans The Last Days, vous avez besoin de Points de Ressources pour obtenir de l'équipement. Ces Points de Ressources sont une mesure de la disposition d'une faction à vous garder approvisionné, et des ressources de la faction que vous êtes autorisé à utiliser.
 ui_you_dont_have_value|N'a pas : %s
@@ -50,101 +50,101 @@ ui_lance_control|Contrôle de la Lance:
 ui_manual_easy|Manuel (facile)
 ui_manual_hard|Manuel (difficile)
 ui_campaign_ai|IA de Campagne (inutilisé)
-; ui_crouch|Crouch
+ui_crouch|Accroupi
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-; ui_are_you_sure_you_want_to_import_the_character|Are you sure you want to import the character?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
-; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path finding, Spotting, Inventory Management, Wound treatment, Surgery, First-aid, Engineer, Persuasion.
-; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Leadership, Trade.
-; ui_delivered_number_damage|Delivered %d damage.
-; ui_mission_losses_killed|killed :
-; ui_party_losses|%s  : %d wounded --- %d killed of %d.
-; ui_following|Following 
-; ui_accompanying|Accompanying 
-; ui_dumping_value_items|%d items will be permanently lost, are you sure?
-; ui_dumping_value_item|One item will be permanently lost, are you sure?
-; ui_notification_requirements_not_met|You don't have the required skills or attributes for this weapon.
-; ui_disband|Disband
-; ui_you_hit_a_friendly_troop|You hit a friendly troop!
-; ui_you_are_not_carrying_any_arrows|You are not carrying any arrows.
+ui_are_you_sure_you_want_to_import_the_character|Êtes vous sur de vouloir importer le personnage?
+ui_explanation_strength|Force : Chaque point ajoute +1 point de vie. Les compétences suivantes ne peuvent pas être augmenté au delà d'1/3 de la Force : Santé de fer, Puissance de frappe, Puissance de jet, Puissance de tension.
+ui_explanation_intelligence|Intelligence : Chaque point en intelligence octroie 1 point de compétence supplémentaire. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 de l’intelligence : Mentor, Pistage, Tactiques, Connaissance du terrain, Repérage, Gestion de l’inventaire, Soin des blessures, Chirurgie, Premier soin, Ingénierie, Persuasion.
+ui_explanation_charisma|Charisme : Chaque point augmente la taille de votre groupe de +1. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 du Charisme : Gestion des prisonniers, Sens du commandement, Marchandage.
+ui_delivered_number_damage|%d dommage infligé
+ui_mission_losses_killed|tués : 
+ui_party_losses|%s : %dbléssés --- %dtués de %d.
+ui_following|Suit
+ui_accompanying|Accompagne
+ui_dumping_value_items|%dobjets vont être définitivement perdus; êtes vous sur ?
+ui_dumping_value_item|Un objet va être définitivement perdu, êtes vous sur ?
+ui_notification_requirements_not_met|Vous n'avez pas les compétences ou attributs nécessaires pour cette arme.
+ui_disband|Dissoudre
+ui_you_hit_a_friendly_troop|Vous avez touché un allié !
+ui_you_are_not_carrying_any_arrows|Vous ne portez pas de flèches.
 ui_delivered_number_damage_to_horse|%d de dommage infligés à la monture.
-; ui_received_number_damage|Received %d damage.
-; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
-; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
-; ui_value_killed_by_value|%s killed by %s.
-; ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
-; ui_you_got_number_experience|You got %d experience.
-; ui_you_have_advanced_to_level_number|You have advanced to level %d.
+ui_received_number_damage|%d dégâts reçus.
+ui_you_have_improved_your_proficiency_in_value_to_number|Vous avez augmenté votre maîtrise de %s à %d.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Votre maîtrise en %s a augmenté de +%d à %d.
+ui_value_killed_by_value|%stué par %s.
+ui_value_knocked_unconscious_by_value|%sa été assommé par%s.
+ui_you_got_number_experience|Vous gagnez%d expérience.
+ui_you_have_advanced_to_level_number|Vous passez niveau %d.
 ui_you_got_value|%s gagnés.
-; ui_quest_succeeded_value|Quest succeeded: %s.
-; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
-; ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
-; ui_shared_number_experience_within_party|Shared %d experience within party.
-; ui_your_relations_with_value_has_improved_from_number_to_number|Your relations with %s has improved from %d to %d.
-; ui_your_relations_with_value_has_deteriorated_from_number_to_number|Your relations with %s has deteriorated from %d to %d.
-; ui_you_lost_value|You lost %s.
-; ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
-; ui_game_log_window|Game Log Window
-; ui_blunt_short|b
-; ui_tracks|Tracks
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_fire_orders|Fire orders
-; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
-; ui_game_log_window|Game Log Window
-; ui_unbalanced|Unbalanced
-; ui_can_crush_through_blocks|Can crush through blocks
+ui_quest_succeeded_value|Quête complétée : %s.
+ui_number_of_companions_exceeds_leadership_limit|Le nombre de compagnons dépasse la limite de commandement.
+ui_number_of_prisoners_exceeds_prisoner_management_limit|Le nombre de prisonniers dépasse la capacité limite. 
+ui_shared_number_experience_within_party|%d expérience partagé avec le groupe. 
+ui_your_relations_with_value_has_improved_from_number_to_number|Votre relation avec %s s'améliore de %d à %d.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Votre relation avec %s se détériore de %d à %d.
+ui_you_lost_value|Vous perdez %s.
+ui_change_graphics_settings_explanation|Certains changements que vous avez fait se feront quand vous entrerez dans une nouvelle zone.
+ui_game_log_window|Fenêtre Game Log
+ui_blunt_short|b
+ui_tracks|Traces
+ui_order_button_hold_fire|Ne tirez pas !
+ui_order_button_fire_at_will|Feu à volonté !
+ui_order_button_fire_orders|Ordres de feu.
+ui_need_to_learn_prisoner_management|Vous avez besoin d'apprendre "Gestion des prisonniers" pour faire des prisonniers.
+ui_game_log_window|Fenêtre Game Log
+ui_unbalanced|Non équilibré  
+ui_can_crush_through_blocks|Peut passer à travers le blocage.
 
-; ui_order_1|Select Order 1
-; ui_order_2|Select Order 2
-; ui_order_3|Select Order 3
-; ui_order_4|Select Order 4
-; ui_order_5|Select Order 5
-; ui_order_6|Select Order 6
-; ui_order_button_hold_this_position|Hold this position
-; ui_order_button_follow_me|Follow me
+ui_order_1|Sélectionne l'ordre 1
+ui_order_2|Sélectionner l'ordre 2
+ui_order_3|Sélectionner l'ordre 3
+ui_order_4|Sélectionner l'ordre 4
+ui_order_5|Sélectionner l'ordre 5
+ui_order_6|Sélectionner l'ordre 6
+ui_order_button_hold_this_position|Tenez votre position !
+ui_order_button_follow_me|Suivez moi !
 ui_order_button_charge|Chargez
-; ui_order_button_stand_ground|Stand ground
-; ui_order_button_retreat|Retreat
-; ui_order_button_advance|Advance ten paces
-; ui_order_button_fall_back|Fall back ten paces
-; ui_order_button_spread_out|Spread out
-; ui_order_button_stand_closer|Stand closer
-; ui_order_button_mount_horses|Mount horses
+ui_order_button_stand_ground|Restez groupez !
+ui_order_button_retreat|Battez en retraite !
+ui_order_button_advance|Avancez de dix pas.
+ui_order_button_fall_back|Reculez de dix pas
+ui_order_button_spread_out|Écartez vous !
+ui_order_button_stand_closer|Resserez les rangs !
+ui_order_button_mount_horses|Montez à cheval
 ui_order_button_dismount|Démontez
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_use_blunt_weapons|Use only blunt weapons
-; ui_order_button_use_any_weapon|Use weapons at will
-; ui_order_button_movement_orders|Movement orders
-; ui_order_button_formation_orders|Formation orders
-; ui_order_button_fire_orders|Fire orders
-; ui_follow_me_e_|%s, follow me!
-; ui_charge_e_|%s, charge!!!
-; ui_stand_ground_e_|%s, stand ground!
-; ui_retreat_e_|%s, retreat!
+ui_order_button_hold_fire|Ne tirez pas !
+ui_order_button_fire_at_will|Feu à volonté !
+ui_order_button_use_blunt_weapons|N'utilisez que des armes contondantes
+ui_order_button_use_any_weapon|Utilisez vos armes à volonté
+ui_order_button_movement_orders|Ordres de mouvements
+ui_order_button_formation_orders|Ordres de formation
+ui_order_button_fire_orders|Ordres de feu.
+ui_follow_me_e_|%s, suivez moi !
+ui_charge_e_|%s, chargez !!!
+ui_stand_ground_e_|%s, restez groupez !
+ui_retreat_e_|%s, battez en retraite !
 ui_mount_horses_e_|%s, montez !
-; ui_dismount_e_|%s, dismount!
-; ui_advance_e_|%s, advance ten paces!
-; ui_fall_back_e_|%s, fall back ten paces!
-; ui_stand_closer_e_|%s, stand closer!
-; ui_spread_out_e_|%s, spread out!
-; ui_use_blunt_weapons_e_|%s, use only blunt weapons!
-; ui_use_any_weapon_e_|%s, use weapons at will!
+ui_dismount_e_|%s, descendez de cheval !
+ui_advance_e_|%s, avancez de dix pas !
+ui_fall_back_e_|%s, reculez de dix pas !
+ui_stand_closer_e_|%s, resserrez les rangs !
+ui_spread_out_e_|%s, écartez vous !
+ui_use_blunt_weapons_e_|%s, n'utilisez que des armes contondantes !
+ui_use_any_weapon_e_|%s, utilisez vos armes à volonté !
 ui_hold_fire_e_|%s, ne tirez pas !
 ui_fire_at_will_e_|%s, feu à volonté !
-; ui_hold_this_position_e_|%s, hold this position!
+ui_hold_this_position_e_|%s, tenez votre position !
 ui_infantry|Infanterie
 ui_archers|Archers
 ui_cavalry|Cavalerie
-; ui_companions|Companions
-; ui_everyone_hear_me|Everyone, hear me!
+ui_companions|Compagnons
+ui_everyone_hear_me|Tout le monde, écoutez moi !
 ui_everyone|Tout le monde
-; ui_everyone_around_me|Nearby Soldiers
-; ui_str_hear_me|%s, hear me!
+ui_everyone_around_me|Soldats proches
+ui_str_hear_me|%s, écoutez moi !
 
-; ui_return|Return
-; ui_factions|Factions
-; ui_troop_upgrades|Troop upgrades
+ui_return|Retour
+ui_factions|Factions
+ui_troop_upgrades|Promotion des troupes

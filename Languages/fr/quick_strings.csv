@@ -201,7 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Pts. Res ({s2})
 qstr_+30_to_Party_Morale|+30 au moral du groupe
 qstr_+20_to_Party_Morale|+20 au moral du groupe
 qstr_+1_to_Riding_Skill|+1 à la compétence Équitation
-; qstr_during_battles|during battles
+qstr_during_battles|durant les batailles
 qstr_+1_to_Pathfinding|+1 à la Connaissance du terrain
 qstr_+1_to_Athletics|+1 d'Athlétisme
 qstr_Use_from|Utiliser depuis
@@ -231,9 +231,9 @@ qstr_+2_to_Tactics|+2 en Tactique
 qstr_+3_to_Spotting|+3 en Repérage
 qstr_Less_Dunnish_upkeep|coût d'entretien des Hommes du Pays de Dun réduit
 qstr_Less_Wargs_upkeep|coût d'entretien des Wargs réduit
-; qstr_Light_Armor|Light Armor
+qstr_Light_Armor|Armure légère 
 qstr_+{reg1}_to_Party_Mor|+{reg1} au moral du groupe
-; qstr_Shoot_Speed:_{reg55}|Shoot Speed: {reg55}
+qstr_Shoot_Speed:_{reg55}|Vitesse d'attaque :  {reg55}
 qstr_Do_you_want_to_disem|Voulez-vous débarquer ?
 qstr_Move_here|Se déplacer ici
 qstr_View_notes|Voir notes
@@ -675,13 +675,13 @@ qstr_{s1}___Polearms:^|{s1} Armes d'hast:^
 qstr_{s1}___Archery:^|{s1} Archerie:^
 qstr_{s1}___Crossbow:^|{s1}   Arbalète:^
 qstr_{s1}___Throwing:^|{s1}   Jet:^
-; qstr_{s1}___Slings:|{s1}   Slings:
+qstr_{s1}___Slings:|{s1} Frondes : 
 qstr_{s2}_|{s2}-
 qstr__Click_on_the_troop_|(Clique sur une troupe pour la tourner)^^Clique sur les pièces d'équipement ^(Casque, armure, gants et bottes)^ pour les afficher.
 qstr_ready_bows_and_missi|arcs et missiles prêts
-; qstr_ready_side_arms|ready side arms
-; qstr_ready_two_hander|ready two-hander
-; qstr_ready_polearms|ready polearms
+qstr_ready_side_arms|Armes de poings prêtes 
+qstr_ready_two_hander|Manieur à deux mains prêt 
+qstr_ready_polearms|Armes d'hast prêtes 
 qstr_shields_up|Boucliers levés
 qstr_doff_shields|Enlever les boucliers
 qstr_Distance___{reg70}__|Distance - {reg70} - {s11} Armée - {s12} Troupe
@@ -829,12 +829,12 @@ qstr_Look_at_my_over_the_|Regardez ma vue au-dessus de l'épaule, {playername} !
 qstr_You_wish_old_man_my_|Vous aimeriez bien, vieil homme, ma vue au-dessus de l'épaule est bien plus jolie !
 qstr_You_should_really_se|Vous devriez vraiment voir les photos de l'Intendant Denethor sur Facebook, il est incroyable !
 qstr_Press_Space_to_conti|Appuyez sur Espace pour continuer...
-; qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} until next promotion^
-; qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})^
-; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})^
-; qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} until next promotion^
-; qstr_{s13}_{reg11}__with_|{s13} {reg11} (with {s16})^
-; qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
+qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} jusqu’à la prochaine promotion^
+qstr_Influence:^_{reg11}_|Influence:^ {reg11} (avec {s16})^
+qstr_Resource_Points:^_{r|Point de ressources :^ {reg12} (dans {s16})^
+qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} jusqu’à la prochaine promotion^
+qstr_{s13}_{reg11}__with_|{s13} {reg11} (dans {s16})^
+qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (dans {s16})^
 qstr_Four_years_after_bri|Quatre ans après avoir emmené un groupe de nains depuis Erebor dans une tentative de reconquérir l'ancienne cité naine de Khazad-dûm, Balin à été tué par une flèche orque en regardant dans le Lac du Miroir, et ses nains ont été immédiatement attaqués par de nombreux orques venant de la rivière du Cours d'Argent. Après une retraite effrénée depuis la Porte Est et la première salle, puis le pont de Khazad-dûm et la deuxième salle, les Longues-Barbes survivants furent repoussés dans la vingt et unième salle. Après une tentative infructueuse de s'échapper par les Portes de Durin qui aboutit à la mort de Óin, la Chambre de Mazarboul devint le dernier bastion de la Colonie après la perte de la vingt et unième salle à l’extérieur de la chambre. Barricadant les portes, Ori et les quelques survivants préparent une ultime défense.
 qstr_You_chase_an_orc_sco|Vous pourchassez un groupe d'éclaireurs orques dans la forêt...
 qstr_^No_food:___{reg7}|^Pas de nourriture : -{reg7}
@@ -876,7 +876,7 @@ qstr_Unknown_{reg3}_|Inconnu({reg3})
 qstr_ON|ACTIVÉ
 qstr_OFF__cheat_|DÉSACTIVÉ (triche)
 qstr_OFF|DÉSACTIVÉ
-; qstr_All_messages|All messages
+qstr_All_messages|Tout les messages
 qstr_{reg0}__will_most_li|{reg0} (causera probablement de crashes de sauvegarde)
 qstr_{reg0}__could_possib|{reg0} (peut causer des crashs de sauvegarde)
 qstr_Normal|Normal
@@ -916,7 +916,7 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Un groupe de {s1} est {s10} vers vous.
 qstr_You_are_attacking_a_|Vous attaquez un groupe de {s1}.
 qstr_The_battle_against_t|La bataille contre le groupe de {s1} continue.
-; qstr_There_are_{reg39}_al|There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points.
+qstr_There_are_{reg39}_al|Il y'a {reg39} commandants alliés dans cette bataille. Vous pouvez les commander eux et leurs troupes pour {reg40} points d'influence.
 qstr_Having_a_small_party|Avoir un petit groupe à ses avantages... Vous et vos troupes vous cachez de l'ennemi pendant quelques heures pour être sur de ne pas avoir été vus.
 qstr_Your_ability_to_surv|Votre habilité à survivre en environnement hostiles vous à permis de trouver un endroit sur pour vous cacher. (Vottre compétence en Vie Forestière vous permet de vous cacher avec {reg1} troupes)
 qstr_{reg4}_will_be_lost.|{reg4} seront perdus.
@@ -1211,7 +1211,7 @@ qstr_It_is_my_duty_to_prot|C'est mon devoir de protéger nos alliés.
 qstr_I_am_{s4}_{s15}_of_{|Je suis {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Je suis {s4}, un commandant de {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? et le dirigeant de {s8}.:.
-; qstr_{playername}_our_sco|{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least.
+qstr_{playername}_our_sco|{playername}, nos scouts nous ont rapportés votre succès. Puissiez vous vivre après ce jour, des années de bénédictions ! Avec les armées de {s7} renvoyées par votre victoire, la grande avance de l'ennemi a flanchée. Nous pouvons maintenant espérer qu'il y ait des querelles dans leurs rangs et entre leur capitaines. Et nous espérons aussi qu'ils garderont une peur bienvenue de vous ! Vous nous avez au moins offert un bref temps de répit.  
 ; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, <Player>, to your betters. Have no fear about that.
 ; qstr_Alas_that_I_could_no|Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware.
 ; qstr__I_should_rather_mak| I should rather make report of my victory over {s7} of {s8} myself - the chief glory is mine, and you will not forget it!

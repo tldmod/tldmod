@@ -26,13 +26,13 @@ imod_sturdy|%s solide
 imod_thick|Robuste
 imod_hardened|%s endurci
 imod_reinforced|%s résistant
-; imod_cloak|%s with cloak
+imod_cloak|%sAvec une cape
 imod_lordly|Chef d’œuvre %s
 imod_lame|%s estropié
 imod_swaybacked|%s ensorcelé
 imod_stubborn|%s têtu
 imod_timid|%s craintif
-; imod_meek|Blood-covered %s
+imod_meek|Couvert de sang%s
 imod_spirited|%s courageux
 imod_champion|%s de champion
 imod_fresh|%s frais

@@ -6,8 +6,8 @@ skl_prisoner_management|포로 수송
 skl_prisoner_management_desc|1포인트가 증가할 때 마다 포로의 수가 %d로 증가합니다.(리더 기술)
 skl_persuasion|서바이벌
 skl_persuasion_desc|황야에서 살아남고 이용하는 능력. 부대가 적에게서 숨는 능력과 숲에서의 속도에 영향을 줍니다. (부대 기술)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|응급 치료
 skl_first_aid_desc|전투중에 체력을 잃었을 때, 스킬레벨당 5%%의 체력을 회복합니다.(부대 기술)
 skl_surgery|외과수술

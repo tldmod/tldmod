@@ -12,14 +12,14 @@ mno_custom_battle_scenario_4|헬름 협곡 방어전, 로한 vs 아이센가드
 mno_custom_battle_scenario_5|교전, 북부인 vs 룬
 mno_custom_battle_scenario_6|공성 공격, 오크 vs 난쟁이
 mno_custom_battle_scenario_7|기습, 오크 vs 어둠숲
-; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
-; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
+mno_custom_battle_scenario_8|두린 일족의 최후의 저항
+mno_custom_battle_scenario_88|오크 정찰 부대 뒤쫓는 중
 mno_custom_battle_scenario_11|연습 전투(밸런스 조정!)
 mno_custom_battle_scenario_10|배경 연습 전투
 mno_troll_battle_scenario|연습 트롤 전투
 mno_warg_battle_scenario|연습 와르그 전투
 mno_build_your_own_scene|**제 3시대에서 당신만의 이야기를 만드세요 **
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
+menu_tutorial|마운트 블레이드 전투 튜토리얼에 오신것을 환영합니다. 여기서 당신은 군대  개요 필드 명령과 같은 기본적인 전투를 배울수 있습니다.
 mno_tutorial_1|튜토리얼 #1: 기본 이동 및 무기 선택. {s1}
 mno_tutorial_2|튜토리얼 #2: 방패를 들고 싸우기. {s2}
 mno_tutorial_3|튜토리얼 #3: 방패 없이 싸우기. {s3}
@@ -123,7 +123,7 @@ mno_camp_troop|보기{reg10?병사:}{reg12?그리고:}{reg11? 포로:}.
 mno_camp_action|물품 사용
 mno_camp_wait_here|캠프를 차려 시간을 보낸다
 mno_camp_options|제 3세계 옵션 변경
-; mno_Dev_Menu|Developer Menu
+mno_Dev_Menu|개발자 메뉴
 ; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_Cheat_enable|치트키/모드변경 옵션 사용
 menu_game_options|^^^^^^^변경을 위해 옵션 클릭
@@ -369,8 +369,8 @@ mno_vs_orcs_field_ai|궁수가 오크를 상대로 정확히 조준함 (오크�
 mno_battlefield_animals|바르그 / 말이 아닌 동물 동료가 전투에 참여함: {s7}
 ; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
 ; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
-; menu_hungry_orc|none
-; menu_leaving_elf|none
+menu_hungry_orc|없음
+menu_leaving_elf|없음
 mno_defend_refugees|침략자들을 주시한다...
 mno_attack_refugees|난민 무리를 공격한다...
 mno_leave_refugees|잠시 놔둔다...
@@ -426,7 +426,7 @@ mno_leave_pyre|장작더미를 떠나기
 menu_town_ruins|당신이 다가갔을때, 당신은 {s1}이 {s2}임을 확인했습니다.
 mno_ruin_menu_0|이 장소 탐험하기
 mno_ruin_leave|떠나기
-; menu_premutiny|none
+menu_premutiny|없음
 menu_death|당신은 죽었습니다. 전쟁은 계속되고 있지만 당신은 이제 거기에 끼지 못합니다.
 menu_animal_ambush|당신과 당신의 동료들은 나머지 일행과 떨어져 있다는 것을 알아차렸습니다, 그리고 갑자기...
 menu_animal_ambush_success|{s2}들은 당신 앞에 낫에 잘린 벼이삭마냥 {reg0?쓰러졌습니다:쓰러졌습니다} !  곧 당신을 공격한 이들은 전부 죽거나 기절해 쓰러져 있습니다. {s3}

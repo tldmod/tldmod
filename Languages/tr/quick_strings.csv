@@ -201,7 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Kay.Pnları ({s2})
 qstr_+30_to_Party_Morale|Parti Moraline +30
 qstr_+20_to_Party_Morale|Parti Moraline +20
 qstr_+1_to_Riding_Skill|Biniş Becerisine +1
-; qstr_during_battles|during battles
+qstr_during_battles|savaş esnasında 
 qstr_+1_to_Pathfinding|Yol bulma Becerisine +1
 qstr_+1_to_Athletics|Atletizm Becerisine +1
 qstr_Use_from|Kullanmak
@@ -1289,7 +1289,7 @@ qstr_You_swear_an_oath_of|{S3}  birliklerine karşı bir intikam yemin ettin. Ş
 qstr_The_search_for_the_L|Kayıp Mızrakların araştırılması sizi Kral Bladorthin'in eski kuzey krallığının bulunduğu Dorwinion'a götürdü. DEVAM EDECEK
 qstr__You_need_to_be_{s24|(En az {s24} yada daha yüksek olmalısın).
 qstr_You_are_not_worthy_o|Yeteneklerime değmezsin. İlk olarak kendini kanıtla, ve {s25} seviyesinin üzerine yüksel. {s2}
-; qstr_I_am_sorry._I_cannot|I am sorry. I cannot attend to you as a {s25} as there are more pressing issues. {s2}
+qstr_I_am_sorry._I_cannot|Üzgünüm.Sana {s25} olarak eşlik edemem çünkü daha önemli meseleler var. {s2}
 qstr_Yes_I_am_and_I_can_h|Evet, ben sana bir fiyat için yardım edebilirim.
 qstr_You_heard_right_and_|Doğru duydun, ve evet, Sana yardım edeceğim.
 qstr__Costs_1000_Resource|(Fiyat: 1000 Kaynak Puanı, 5 Nüfuz)
@@ -1298,7 +1298,7 @@ qstr_Yes_I_see_that._I_ca|Evet anlıyorum. Sana evet diyor olabilirim, ama bu be
 qstr__Costs_1500_Resource|(Maliyet 1500 Kaynak puanı, 10 Nüfuz)
 qstr_I_ll_have_my_persona|Seninle ilgilenecek kişisel şifacılarım var. Onlar en iyileridir. Yalnızca onları ne zaman görmek istediğini söyle. {S2}
 ; qstr_I_ll_have_my_personal|I'll have my personal healers tend to your men. They are the best at what they do. Let me know when you need them. {s2}
-; qstr_I_ll_have_them_here_|I'll have them here shortly.
+qstr_I_ll_have_them_here_|Kısa süre içerisinde getireceğim.
 qstr_Let_us_begin._My_hea|Hadi başlayalım. Şifacılarım sen ve adamlarınla ilgilenecek.
 qstr_Alright!_This_is_goi|Peki! Bu acıtacak... hemde çok.
 qstr_Let_us_begin._It_may|Hadi başlayalım. bu biraz zaman alabilir. Sadece rahatla ve gerisini bana bırak.
@@ -1366,7 +1366,7 @@ qstr_we_are_not_too_conce|Şimdilik onlarla çok işimiz yok, şu anda evimize d
 qstr__under_your_orders|, senin emrin altında
 ; qstr_{playername}_you_may|{playername}, you may have seen the hosts of {s7}. Of all the captains arrayed against us, at present {s7} of {s8} has won the greatest renown. Their mere presence on the field is enough to embolden our enemies and weaken the resolve of our allies. {playername}, if you wish to do a great deed in this war, strike down the host of {s7} in open battle, in sight of all! Thus may hope be rekindled, and dread fill the hearts of those who would come against us.
 ; qstr_Do_you_mark_how_our_|Do you mark how our bravest fighters falter at the mere mention of {s7} of {s8}? A great warrior, oh yes, a capable captain. We cannot allow that to run amok like this! Everywhere their face is shown, our lines bend back, and our foes find new courage. This cannot be. I command that you, {playername}, challenge and defeat the soldiers of {s7} in open battle. To see {s7} struck down by you will freeze the blood and marrow of his followers, and show our own troops that our enemies can be thrown down!
-; qstr_This_is_a_chance_for|This is a chance for me to show my quality. I shall defeat {s7} in the sight of enemy and ally alike.
+qstr_This_is_a_chance_for|Kalitemi göstermek için bu benim için bir şans.Düşmanın ve dostun gözünün önünde {s7} mağlup etmeliyim.
 ; qstr_Accursed_be_those_wh|Accursed be those who follow {s7} this day, for I shall strike them down for all to see!.
 ; qstr_{s9}_wants_you_to_de|{s9} wants you to defeat {s35} of {s36} in battle.
 ; qstr_I_humbly_ask_that_yo|I humbly ask that you find another for this task. I do not think I could best {s7} in battle.
@@ -1378,12 +1378,12 @@ qstr_{playername}_the_men|{playername}, adamlar sert düşman birlikleri hakkın
 qstr_I_will_do_what_you_a|İstediğini yapacağım ve buna adamlarım tanık olacak.
 qstr_high_level_troops_fr|tarafından yüksek seviyeli birlikler
 qstr_elite_level_troops_f|tarafından elit seviyeli birlikler
-; qstr_{s9}_wants_you_to_pe|{s9} wants you to personally defeat {reg22} {s6} {s7}.
+qstr_{s9}_wants_you_to_pe|{s9} senden bizzat {reg22} {s6} {s7} alt etmeni istiyor.
 qstr_I_want_you_to_person|Seni kendim öldürmek istiyorum
 qstr_I_want_you_and_your_|Seni ve adamlarını öldürme görevi için istiyorum
 qstr_{playername}_you_nee|{playername}, saygımı ve adamlarının saygısını kazanmalısın. {s6} {reg22} {s7} birlikleri!
-; qstr_{s9}_wants_you_to_per|{s9} wants you to personally kill {reg22} {s6} troops.
-; qstr_{s9}_wants_you_and_y|{s9} wants you and your men to kill {reg22} {s6} troops.
+qstr_{s9}_wants_you_to_per|{s9} senden bizzat {reg22} {s6} kadar birliği öldürmeni istiyor.
+qstr_{s9}_wants_you_and_y|{s9} sen ve adamlarından {reg22} {s6} kadar birliği öldürmeni istiyor.
 ; qstr_{playername}_we_have_|{playername}, we have received grim tidings. The Corsairs of Umbar grow ever bolder, and even as we speak, a fleet gathers not far from {s6}. Already they reave along the coastline, and soon they shall be upon the city itself.^^ We must intercept the fleet before it reaches the city. Hasten to {s6}, and speak to the local authorities.
 ; qstr_{playername}_we_have_r|{playername}, we have received grim tidings. The savages of Rhûn have more cunning and boldness than we thought - unseen by our scouts, they have built a sufficiency of boats and rafts to carry them across the Long Lake, and they are striking directly at Esgaroth!^^ We must intercept the fleet before it reaches the city. Lead your troops there as swiftly as you can, and drive the barbarians back across the water!
 ; qstr_If_you_seek_pillage_|If you seek pillage and plunder, here is a matchless opportunity, {playername}.^^ A Corsair fleet is launching from the port at {s7}, and will set a course straight for {s6}, which is ripe for the plucking! Join them in their assault, and share in the spoils!
@@ -1417,7 +1417,7 @@ qstr_No_commander_should_|Hiçbir komutanın bunu kabul etmemesi gerekiyor {play
 qstr_No_commander_should_h|Hiçbir komutanın bunu kabul etmemesi gerekiyor {playername}, ancak geçen gün askerlerimi teftiş ediyordum ve burada bir kılıcın hangi ucunu tutunacağını bile bilmeyen adamların olduğunu fark ettim. Onlara, cesaretin anlamını göstermek için birisine ihtiyaçları var. Ünlü bir savaşçısın, {playername}. Benim için birlik yetiştirir misin? Bunu senin için zahmete değer bir hale getirebilirim.
 qstr_{s9}_asked_you_to_rai|{s9} senden {reg1} tane {s14} yetiştirmeni ve ona getirmeni istedi.
 qstr_{s9}_asked_you_to_hu|{s9}, senden {s4} olarak bilinen kaçağı avlamanı istedi. Şu an {s3} de olduğu sanılıyor.
-; qstr_{s9}_asked_you_to_defe|{s9} asked you to defend 3 groups of refugees on their way to {s3}.
+qstr_{s9}_asked_you_to_defe|{s9} senden 3 mülteci gruba gittikleri yere {s3} kadar eşlik etmeni istedi.
 ; qstr_{s9}_asked_you_to_hun|{s9} asked you to hunt down 3 groups of refugees on their way to {s3}.
 qstr_{s9}_asked_you_to_ca|{s9} üç kaçak serf grubunu yakalayıp, canlı ve nefes alır halde {s4}'e geri götürmeni istiyor. Üç grubun da {s3} tarafına kaçtığını söyledi.
 qstr_{s11}_asked_you_to_f|{s11}, {s12} den ayrılan casusu izlemeni istedi. Casusun seni yolda görmemesine dikkat etmelisin, yoksa şüphelenip geri dönebilir. Casus bir kere suç ortağıyla buluştuktan sonra, her ikisini de yakalayıp {s11}'e getirmen gerekiyor.
@@ -1491,7 +1491,7 @@ qstr_I_seldom_wander_far_|Nadiren evden uzaklaşırım.Toz ol, hala yapabiliyork
 qstr_Who_are_you?_A_mere_|Sende Kimsin? Sadece bir {s25}? Senle uğraşmak için zamanım yok! Beni yanlız bırak! {S2}
 qstr_What_do_you_want?|Ne istiyorsun?
 qstr_Greetings_{playernam|Selamlar, {playername}. Senin için ne yapabilirim?
-; qstr_What?_You_come_to_me|What? You come to me and you do not know what I do? Take a look around you.^^ Do you see the blood? Do you hear the crying? Do you feel their pain? That is what I do! I break things to make them better again! If you come to me, broken and in pain, I can make you better!
+qstr_What?_You_come_to_me|Ne?Benim yanıma geldin ve ne yaptığımı bilmiyor musun?Etrafına bir bak.^^Kanı görüyor musun? Feryadı duyuyor musun? Acılarını hissediyor musun? İşte ben bunu yapıyorum! Daha iyi hale gelmeleri için onları kırarım! Eğer bana kırılmış ve acı içinde gelirsen, seni daha iyi hale getirebilirim!
 qstr_I_am_a_healer._Come_|Ben bir şifacıyım. Siz ya da arkadaşlarınız ciddi bir şekilde yaralandığında bana gelin ve yaralarınızı en iyi yeteneklerim ile tedavi edeceğim.
 qstr__Costs_500_Resource_|(maliyeti 500 kaynak, 5 nüfuz)
 qstr_Ha!_I_can_see_that!_|Ha! Bunu görebiliyorum! Bunu yapabilirim, evet .. Kanınızdan başka, bu iş bedava değil! {S2}
@@ -1532,19 +1532,19 @@ qstr_Excellent_{playernam|Mükemmel, {playername}! Onlara istediğimden daha faz
 qstr_Excellent_{playername|Mükemmel, {playername}. Bu kesinlikle onlara yardımcı olacaktır. Bu savaşı en kısa zamanda kazanmamız gerekiyor.
 qstr_Reinforcing_{s1}_has|{s1} Yardım etmek {s2} güçlendirdi. ({s2} {reg50} Taraf Kuvveti kazandı).
 qstr_The_watchmen_in_the_|Şehrin gözetmenleri pusuda kayda değer bir düşüş bildirdi. İşini iyi yaptın. Teşekkür ederim, {playername}.
-; qstr_Our_guards_have_seen|Our guards have seen the vermin run away with their tails tucked between their legs. You have done well in showing these pests that we control this area.
+qstr_Our_guards_have_seen|Gardiyanlar,bu böceklerin bacaklarının arasına sokulmuş kuyrukları ile kaçtıklarını görmüşler.Bu baş belalarına bu bölgeyi bizim yönettiğimizi göstererek iyi iş çıkardın.
 qstr_It_was_nothing._I_wi|Birşey değildi. Yeniden ortaya çıkmaları için izlemeye devam edeceğim.
-; qstr_Slaying_these_maggot|Slaying these maggots was nothing. I'll keep watch should they become bold again.
+qstr_Slaying_these_maggot|Bu kurtçukları öldürmek zor değildi.Tekrar ortaya çıkmamaları için izlemeye devam edeceğim.
 qstr_town|kasaba
 qstr_village|köy
 qstr_The_{s9}_of_{s13}_ha|{S9} 'dan {s13} sizden çevredeki kırsaldaki Orkları halletmenizi istedi.
 qstr_{s9}_of_{s3}_asked_y|{s3}'dan {s9} sana {reg5} sayısınca {s6} yı {reg6} gün içinde {s4} deki {s10} a teslim etmeni istedi.
 ; qstr_The_{s9}_of_{s4}_ask|The {s9} of {s4} asked you to reinforce {s3} with at least {reg5} troops within {reg6} days. Speak to {s3}'s barracks master. The quality of the troop you provide does not matter.
 qstr_You_have_reinforced_{|0 askerle {s3} güçlendirdiniz.
-; qstr_Thank_you_for_offeri|Thank you for offering to help, {playername}.^^The caravans going to and fro the city have been attacked multiple times by {s6}. They are getting bolder with every ambush, and are moving closer and closer to the city.
+qstr_Thank_you_for_offeri|Yardım teklifin için teşekkürler,{playername}.^^Şehre gidip gelen karavanlar defalarca {s6} tarafından saldırıya uğradı.Her pusu ile daha çok güçleniyorlar ve şehre daha çok yaklaşıyorlar.
 ; qstr_Good_of_you_to_ask_{|Good of you to ask, {playername}.^^There are {s6} moving about the area, thinking that they are in charge. No one is doing anything so they are getting bolder and are taking what is rightfully ours.
 qstr_The_people_have_aske|insanlar, bir süreliğine onları uzak tutacağı umuduyla, en azından {reg22} {s6} öldürme konusunda yardım istemişlerdi. ^^ Bunu yapabilir misiniz?
-; qstr_I_want_you_to_slay_a|I want you to slay at least {reg22} {s6}, to show those weaklings that they are inconsequential.^^What do you say?
+qstr_I_want_you_to_slay_a|Senden bu cılızlara önemsiz olduklarını göstermek için en az  {reg22} {s6} tanesini katletmeni istiyorum.
 qstr_We_will_get_rid_of_t|Bu zararlılardan kurtulacağız.
 qstr_{s9}_wants_you_to_sl|{s9}, savaşta {reg22} {s6} 'yı Katletmenizi istiyor.
 qstr_The_{s9}_of_{s3}_ask|{s3}'dan {s9} ona {reg6} gün içinde {reg5} tane yiyecek götürmeni istedi.
@@ -1599,8 +1599,8 @@ qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Bu:Bu} cesur {reg28?askerler:asker} bi
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Bu:Bu} yararlı {reg28?askerler:asker} daha fazla tahribat yaratmamıza yardımcı olacak.{s32}^{s23}^^[ {reg14} kadar {s14} Kaynak Puanı kazandın]
 qstr_Good_luck_in_your_tr|Seyahatlerinde bol şans.
 qstr_Try_not_getting_your|Kendini öldürtmemeye çalış!
-; qstr_You_ready_your_weapo|You ready your weapons, feeling the rush of past experience through your body. (Weapon Profeciencies and Abilities improved)
-; qstr_The_previous_battle_|The previous battle warmed you up. You feel invigorated, and ready for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
+qstr_You_ready_your_weapo|Bedenindeki geçmiş tecrübenin acısını hissederek silahlarını hazırlıyorsun. (Silah Yeterlilikleri ve Yetenekleri geliştirildi)
+qstr_The_previous_battle_|Bir önceki savaş sayesinde ısındın.Kendini canlı ve daha fazlası için hazır hissediyorsun.(Nitelikler, Yetenekler ve Silah Yeterlilikleri Geliştirildi)
 ; qstr_You_are_tired_but_ad|You are tired, but adrenaline coursing through your veins steel you for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
 ; qstr_These_are_great_weap|These are great weapons indeed. They feel strange to the touch... (Abilities and Weapon Profeciencies Improved)
 ; qstr_You_can_barely_raise|You can barely raise your weapon now... but seeing your kinsmen around you strengthen your resolve. (Abilities and Weapon Profeciencies Improved).

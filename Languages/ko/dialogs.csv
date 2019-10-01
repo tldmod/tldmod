@@ -92,7 +92,7 @@ dlga_member_talk:view_member_char_requested|당신의 기술에 대해서 말해
 dlga_view_member_char_requested:do_member_view_char|알겠네, 자네에게 말해주지
 dlga_member_talk:member_separate|우린 한동안 떨어져 있어야 합니다.
 ; dlga_member_talk:ziggy_ask_more|Zigûrphel, I require another Wolf of you. Can you do this?
-; dlga_ziggy_ask_more:close_window|You have no life to offer, Commander.
+dlga_ziggy_ask_more:close_window|당신은 거래할 목숨이 없소, 지휘관이여.
 ; dlga_ziggy_ask_more:ziggy_not_rested|Give me some more time, Commander. The ritual drained me.
 ; dlga_ziggy_ask_more:close_window.1|I can only control so much. I'll need to become more powerful...
 ; dlga_ziggy_ask_more:ziggy_choose_prisoners|Of course, Commander. Which one do you have to offer?

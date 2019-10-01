@@ -50,58 +50,58 @@ p_town_dol_guldur_north_outpost|Північна застава Дол-Гулд�
 p_town_rhun_main_camp|Головний табір Руну
 p_town_rhun_south_camp|Південна застава Руну
 p_town_rhun_north_camp|Північна застава Руну
-; p_town_gundabad|Gundabad
-; p_town_gundabad_ne_outpost|Gundabad NE Outpost
-; p_town_gundabad_nw_outpost|Gundabad NW Outpost
-; p_town_goblin_north_outpost|Goblin Town
-; p_town_goblin_south_outpost|Goblin Southern Outpost
-; p_town_gundabad_m_outpost|Gundabad Mirkwood Outpost
+p_town_gundabad|Гундабад
+p_town_gundabad_ne_outpost|Північно-східний аванпост Гундабада
+p_town_gundabad_nw_outpost|Північно-західний аванпост Гундабада
+p_town_goblin_north_outpost|Гоблінабад
+p_town_goblin_south_outpost|Південний аванпост гоблінів
+p_town_gundabad_m_outpost|Гундабадський аванпост в Темноліссі
 p_town_erebor|Еребор
-; p_town_ironhill_camp|Iron Hills Quarry
-; p_advcamp_gondor|Gondor Advance Camp
-; p_advcamp_rohan|Rohan Advance Camp
-; p_advcamp_isengard|Isengard Advance Camp
-; p_advcamp_mordor|Mordor Advance Camp
-; p_advcamp_harad|Harad Advance Camp
-; p_advcamp_rhun|Rhun Advance Camp
-; p_advcamp_khand|Khand Advance Camp
-; p_advcamp_umbar|Umbar Advance Camp
-; p_advcamp_lorien|Lorien Advance Camp
-; p_advcamp_imladris|Imladris Advance Camp
-; p_advcamp_woodelf|Mirkwood Advance Camp
-; p_advcamp_moria|Moria Advance Camp
-; p_advcamp_guldur|Dol Guldur Advance Camp
-; p_advcamp_gundabad|Gundabad Advance Camp
-; p_advcamp_dale|Dale Advance Camp
-; p_advcamp_dwarf|Erebor Advance Camp
-; p_advcamp_dunland|Dunland Advance Camp
-; p_advcamp_beorn|Beorning Advance Camp
-; p_argonath|Argonath
-; p_argonath2|Argonath
-; p_hand_isen|Handsign of Isengard
-; p_mount_doom|Mount Doom
-; p_town_barad_dur|Barad Dur
-; p_ford_cair_andros1|Anduin
-; p_ford_cair_andros2|Anduin
-; p_ford_caras_galadhon|Anduin
-; p_ford_brown_lands|Anduin
-; p_ford_rauros|Anduin
-; p_ford_pelargir|Anduin
-; p_ford_edhellond|Anduin
-; p_ford_cerin_dolen|Silverlode
-; p_old_ford| Old Ford 
-; p_ford_erech|Ringlo
-; p_ford_isen1|Isen
-; p_ford_isen2|Isen
-; p_ford_rohan|Entwash
-; p_ford_rohan2|Entwash
-; p_ford_fangorn|Entwash
-; p_ford_fangorn2|Limlight
-; p_ford_moria|Silverlode
-; p_legend_amonhen|Amon Hen
-; p_legend_deadmarshes|Dead Marshes
-; p_legend_mirkwood|Mirkwood Forest
-; p_legend_fangorn|Fangorn Entmoot
-; p_ring_hunter_lair|Ring Hunters Lair
-; p_raft|Raft Men
-; p_ancient_ruins|Ancient Ruins
+p_town_ironhill_camp|Каменярня гномів в Залізних пагорбах
+p_advcamp_gondor|Гондорський передовий табір
+p_advcamp_rohan|Роганський передовий табір
+p_advcamp_isengard|Ізенгардський передовий табір
+p_advcamp_mordor|Мордорський передовий табір
+p_advcamp_harad|Харадський передовий табір
+p_advcamp_rhun|Рунійський передовий табір
+p_advcamp_khand|Хандський передовий табір
+p_advcamp_umbar|Умбарський передовий табір
+p_advcamp_lorien|Лоріенський передовий табір
+p_advcamp_imladris|Передовий табір Імладріса
+p_advcamp_woodelf|Передовий табір ельфів Темнолісся
+p_advcamp_moria|Морійський передовий табір
+p_advcamp_guldur|Передовий табір Дол-Гулдура
+p_advcamp_gundabad|Гундабадський передовий табір
+p_advcamp_dale|Передовий табір Дейла
+p_advcamp_dwarf|Ереборський передовий табір
+p_advcamp_dunland|Дунландський передовий табір
+p_advcamp_beorn|Беорнінгський передовий табір
+p_argonath|Аргонат
+p_argonath2|Аргонат
+p_hand_isen|Кам'яна долоня Ізенгарду
+p_mount_doom|Судна Гора
+p_town_barad_dur|Барад-дур
+p_ford_cair_andros1|Андуїн
+p_ford_cair_andros2|Андуїн
+p_ford_caras_galadhon|Андуїн
+p_ford_brown_lands|Андуїн
+p_ford_rauros|Андуїн
+p_ford_pelargir|Андуїн
+p_ford_edhellond|Андуїн
+p_ford_cerin_dolen|Келебрант
+p_old_ford|Старий брід
+p_ford_erech|Рінгло
+p_ford_isen1|Ізен
+p_ford_isen2|Ізен
+p_ford_rohan|Ентов купіль
+p_ford_rohan2|Ентов купіль
+p_ford_fangorn|Ентов купіль
+p_ford_fangorn2|Світлимка
+p_ford_moria|Келебрант
+p_legend_amonhen|Амон-Хен
+p_legend_deadmarshes|Мертвецькі болота
+p_legend_mirkwood|Темнолісся
+p_legend_fangorn|Рада Ентів
+p_ring_hunter_lair|Лігво Мисливців за Перснем
+p_raft|Плотогони
+p_ancient_ruins|Стародавні руїни

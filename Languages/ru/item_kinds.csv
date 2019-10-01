@@ -110,7 +110,7 @@ itm_dwarf_short_bow|Гномий короткий лук
 itm_harad_bow|Харадский кривой лук
 itm_lg_bow|Лук Орлиной гвардии
 itm_riv_bow|Ривендельский лук
-; itm_rhun_bow|Rhun Bow
+itm_rhun_bow|Роханский лук
 itm_lorien_bow|Галадримский лук
 itm_isengard_large_bow|Изенгардский большой лук
 itm_dale_bow|Дейльский лук
@@ -256,7 +256,7 @@ itm_gon_tab_shield_d|Гондорский ростовой щит с гербо�
 itm_amroth_sword_a|Дол-амротский меч
 itm_amroth_sword_b|Дол-амротский рыцарский меч
 itm_gondor_sword|Гондорский пехотный меч
-; itm_amroth_bastard|Dol Amroth Swan Blade
+itm_amroth_bastard|Гулдурские Стрелки
 itm_gondor_short_sword|Линхирский экет
 itm_pelargir_eket|Пеларгирский экет
 itm_pelargir_sword|Пеларгирский меч
@@ -892,7 +892,7 @@ itm_riv_armor_reward|Ривендельская украшенная броня
 itm_westernesse1h_reward|Нуменорский меч
 itm_westernesse2h_reward|Меч Великого змея
 itm_mirkwood_sword_reward|Зеленолесский священный меч
-; itm_nazgul_sword|Wicked Sword
+itm_nazgul_sword|Меч Назгула
 
 itm_cooking_cauldron|Котёл
 itm_eorl_cavalry_sword|Меч Эорла

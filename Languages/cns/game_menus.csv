@@ -41,7 +41,7 @@ mno_leave_custom_battle_2|取消
 menu_custom_battle_end|^^^^^^战斗结束。{s1}我方以{reg6}人的损失杀死了{reg5}名敌人。^你亲手杀死了{reg7}名敌人。
 mno_replay|重新开始这场战斗
 mno_continue_dot|继续
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|^^^^^^虽然这场战斗注定失败，但你们的精神却令人敬佩。^^你和你的族人杀死了{reg5}个敌人。^你在战斗中亲手杀死了{reg7}个敌人。
 mno_replay_cbd|重新开始这场战斗。
 mno_continue_dot_cbd|继续
 mno_dot_go_back|返回
@@ -59,7 +59,7 @@ mno_start_ur|强兽人，半兽人的新品种
 mno_start_em|人类，臣服于索伦
 menu_start_hand|^^^^^^^^^你的主人是白手萨鲁曼^选择你的种族
 mno_start_whor|半兽人，白手奴仆
-; mno_start_isur|one of the URUK-HAI, bred in Isengard
+mno_start_isur|强兽人，出生于艾辛格
 mno_start_duma|登兰德人，来自西部平原
 menu_start_good_man|^^^^^^^^^^选择你的人类派系：
 mno_start_go|刚铎，圣白塔王国
@@ -104,9 +104,9 @@ mno_start_2_hib|贵族
 menu_start_haradrim|^^^^^^^你是一名哈拉德林人，^沙漠之民。 ^选择你的出身
 mno_start_1_des|沙漠之民
 mno_start_2_far|远哈拉德部落民
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+menu_start_numenorean|^^^^^^^你是一个黑暗努曼诺尔人，^忠于阴影和魔苟斯。^选择你服务魔眼的位置
+mno_start_1_bn|在摩拉南（黑门），索伦之口的身旁
+mno_start_2_bn|在多尔哥多，死灵法师的堡垒里
 menu_choose_gender|^^^^^^^^^^你的性别？
 mno_start_male|男性
 mno_start_female|女性
@@ -124,7 +124,7 @@ mno_camp_action|做些事情。
 mno_camp_wait_here|在这里待一会儿。
 mno_camp_options|更改最后之日选项。
 mno_Dev_Menu|开发者菜单
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+menu_dev_menu|这些开发者菜单提供许多测试工具。^^然而，对进行中的事件、触发器、战争的调整可能会导致坏档。^^后果自负！^^同样的，当你报告BUG时请告诉我们你是否使用了开发者菜单。
 mno_Cheat_enable|启用作弊/模组选项。
 menu_game_options|^^^^^^^^点击以更换选项：
 mno_game_options_war_level_start|战斗难度:
@@ -156,7 +156,7 @@ menu_camp_strat_tweaks|^^^^^^^^点击以切换选项:^(警告: 这属于作弊!)
 mno_strat_tweaks_siege_reqs|围攻派系力量要求: {s7}
 mno_strat_tweaks_siege_relax_rate|围攻派系力量放松程度比：{reg1}
 mno_strat_tweaks_regen_rate|派系力量再生速度: {s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
+mno_strat_tweaks_siege_regen_limit|势力力量低于多少将不再回复：{reg1}
 mno_strat_tweaks_influence_gain_rate|影响力提升速度：{s7}
 mno_strat_tweaks_rank_gain_rate|军衔提升速度：{s7}
 mno_strat_tweaks_back|返回调整菜单.
@@ -195,12 +195,12 @@ mno_leave|离开。
 menu_simple_encounter|^^^^^{s2}^你的 {reg22} 名士兵与 {reg11} 名敌军于 {s3}{s4} 展开对决。请下达命令！
 mno_encounter_attack|{reg21?攻击:准备迎战}.
 mno_encounter_order_attack|你坐镇指挥命令你的部下 {reg21?攻击:迎战}
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
-; mno_encounter_hide|Hide from the enemy...
+mno_control_allies_menu|用影响力在战场上指挥你的盟友。
+mno_encounter_hide|躲避敌人…
 mno_special_whip|向着{s4}冲锋，并碾碎他们。
 mno_encounter_leave|脱离
 mno_encounter_retreat|留下一些士兵拖住敌军，好让主力撤退。
-; mno_player_control_allies_simple|Command them and charge the enemy
+mno_player_control_allies_simple|指挥他们向敌人冲锋
 mno_player_control_allies_back|返回……
 mno_hide_close|继续...
 menu_encounter_retreat_confirm|^^^^^队伍中最高战术技能为，({reg2})级，因此{reg3?你制定:{s3}制定}了一个计划，来让你的主力部队能逃脱战斗。但是你必须牺牲{reg4}名战士来进行掩护。
@@ -229,9 +229,9 @@ mno_pre_join_leave|不卷入纷争。
 menu_join_battle|^^^你决定帮助{s2}对抗{s1}。^ 你将有{reg22}名士兵参加战斗对抗{reg11}名敌人。^^这次战斗在{s3}{s4}展开。
 mno_join_attack|攻入敌阵
 mno_join_order_attack|坐镇指挥，让你的部队帮助盟友进攻。
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|用影响力点在战场上指挥你的盟友。
 mno_join_leave|撤退
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|指挥他们向敌人冲锋
 menu_join_order_attack|{s4}^^我军伤亡：{s8}^^盟军伤亡：{s9}^^敌军伤亡：{s10}
 mno_enter|进入
 menu_battlefields|^^^^^^^^^选择一片战场...
@@ -300,10 +300,10 @@ mno_talk_to_castle_commander|访问{s61}兵营。
 mno_speak_with_elder|和{s6}谈谈。
 mno_isengard_underground|前往地下洞穴。
 mno_tirith_toplevel|爬上顶层。
-; mno_erebor_gates|Visit the Great Gates.
+mno_erebor_gates|前往雄伟的大门。
 mno_town_leave|离开…
 mno_town_leave_door|离开区域
-; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
+menu_player_initiated_siege_result|你攻击了飘扬着{s2}旗帜的中心。
 menu_disembark|你想上岸吗？
 mno_disembark_yes|是
 mno_disembark_no|否
@@ -335,17 +335,17 @@ mno_explore|探索这个地方。
 menu_ring_hunter_lair|^^^^你跟随魔戒猎手们的足迹横穿幽暗密林并到达了{s1}。你看到他们正准备留下一个箱子。
 mno_attack_lair|马上攻击他们
 mno_leave_bandit_lair|立即离开
-; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+menu_gondor_reinforcement_event|^^^^^刚铎的烽火台是亮着的，米那斯提力斯在呼救！^^南方封地的领主们将立即向北集结，对抗即将到来的黑暗保卫白城。
 mno_gondor_reinforcement_event_close|关闭
-; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+menu_gondor_beacons|你抬起头看着{s1}—用于在北刚铎和南刚铎发出警告刚铎警戒烽火台中的一个。
 mno_gondor_beacons_close|离开…
 menu_player_added_to_war_council|^^^^^一个信使来了并且告诉你，{s24}，{s2}邀请你成为军事会议的一员。你现在能提出能够影响战争进程的策略了。
 mno_player_added_to_war_council_close|关闭
-; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+menu_player_added_to_siege_reports|^^^^^一个信使到达并告诉你，作为{s24}，无论{s2}围攻一个据点还是当{s2}的据点中心被围攻时，你都能够收到报告。
 mno_player_added_to_siege_reports_close|关闭
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^一个信使到达并告诉你，作为{s24}，你能够命令{s2}跟随你，你最多能够有{reg55}跟随者。
 mno_player_added_to_allow_follow_close|关闭
-; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+menu_center_besieged_event|^^^^^一个信使到达并报告{s1}已经被{s3}的{s2}围攻。
 mno_center_besieged_event_close|关闭
 menu_guardian_party_spawned|斥候来报：{s6}在{s7}周围聚集了庞大的军队，他们在做最后的挣扎，企图保卫他们的首都。
 mno_intro_next|继续...
@@ -356,31 +356,31 @@ mno_start_kill_scouts|阻止斥候报告你的到来！
 mno_go_your_way|别理他们
 mno_defend_villagers|保护村民！
 mno_raid_villagers|掠夺村庄！
-; mno_go_away|Leave and regroup for now.
-; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+mno_go_away|立即离开并重整队伍。
+menu_scout_camp_quest|你看到了在附近的斥候营地。你准备带领你的人攻击他们。
 mno_attack_scout_camp|攻击斥候营地！
-; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+menu_sea_battle_quest|你遭遇了敌军舰队。战船接近，水手们扔下木板…
 mno_sb_defend_the_town|登舰！摧毁他们的舰队！
-; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
-; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
-; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
-; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
-; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
-; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
-; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
-; menu_hungry_orc|none
-; menu_leaving_elf|none
+mno_sb_attack_the_town|他们想拦截我们！保卫舰队！
+menu_camp_field_ai|^^^^^点击一个选项切换。^^^关闭一个或者更多的选项能够提升性能（FPS）。
+mno_lord_field_ai|领主战场AI改进：{s7}
+mno_horse_archer_field_ai|骑射手已经改进了战场AI：{s7}
+mno_vs_orcs_field_ai|射手射击半兽人时精度更好（不再瞄准半兽人的脑袋）：{s7}
+mno_battlefield_animals|战场上无座狼/马的动物AI生成：{s7}
+mno_slow_when_wounded|受伤时，药剂会变慢:{s7}
+mno_battle_encounter_effects|战场上的特殊派系效应(e.gstorms,mists):{s7}
+menu_hungry_orc|无
+menu_leaving_elf|无
 mno_defend_refugees|注意袭击者……
-; mno_attack_refugees|Attack the refugee train...
+mno_attack_refugees|攻击难民队…
 mno_leave_refugees|暂时离开他们……
 mno_evil_war_tut_continue|继续...
-; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+menu_guardian_party_quest||{s8}送信说艾辛格已经到了最后关头，并且已经准备好最后一战。他希望你能够加入最后的战斗对抗艾辛格的敌人。你需要至少带着{reg13}名士兵加入大军，如果你没有足够的士兵，你需要抓紧时间训练出来。
 mno_guardian_party_reject|让信使回去报告，说你不能加入他。
 mno_guardian_party_send_word|让信使回去报告，告诉他你很快就会过去。
 menu_alternate_training_fight|你的对手将会是{reg5}。准备好了吗？
 mno_training_continue|开始训练……
-; menu_alternate_training_conclusion|{s5}
+menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|再试一次…
 mno_alternate_training_finish|离开竞技场…
 menu_custom_battle_choose_faction1|^^^^^^^^^^选择你的阵营和优势：
@@ -411,7 +411,7 @@ mno_next_rescue_scene_door|继续向前！
 mno_pick_troops1|选择一起执行任务的同伴，已选择了{reg0}人
 menu_pick_troops|你要选择谁和你一起执行这次任务？你已选出了{reg0}人。你必须选出10人。
 mno_go_forward|结束同伴选择，然后继续。
-; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
+menu_burial_mound|你来到曾隶属于{s2}的{s1}的埋尸处。他在和{s28}的战斗中战败。这里是由他斩杀敌人后留下的破损武器堆积而成的。
 mno_pay_respects|跪下并献上你的敬意。
 mno_swear_oath|复仇誓言！
 mno_despoil|亵渎这里
@@ -421,12 +421,12 @@ menu_burial_mound_oath|你高声宣誓，一定要为{s4}的死复仇。你将�
 menu_funeral_pyre_oath|你高声宣誓，一定要为{s4}的死复仇。你将日以夜继地追踪{s3}的部队，并亲手碾碎他们。你的誓言随风而漾，四海皆知。
 mno_leave_pyre_oath|离开火葬堆
 menu_burial_mound_despoil|你亲手推倒了{s1}的墓碑，恶毒地诅咒和谩骂，对这个石块做了一些无法形容的暴行。你的追随者因感到恐惧而后退，但他们为你的恶行再一次对你感到敬畏。
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+menu_funeral_pyre|你来到一处属于{s3}的{s2}的火葬堆。他在和{s28}的战斗中战败。他的遗体被他的亲卫隆重地火葬，没有一丝残余。
 mno_leave_pyre|离开火葬堆
 menu_town_ruins|当你靠近，你看到{s1}实际上是{s2}
 mno_ruin_menu_0|探索这个地方。
 mno_ruin_leave|离开…
-; menu_premutiny|none
+menu_premutiny|无
 menu_death|你被杀害了。 尽管战争仍旧如火如荼，但这已经不是你要关心的事儿了。
 menu_animal_ambush|你和你的同伴在休息的时候，突然分开了…
 menu_animal_ambush_success|你面前的{s2}{reg0?堕落者：堕落者}如小麦般被你收割。很快，所有的攻击者都躺倒在地，重伤或死亡。 {s3}

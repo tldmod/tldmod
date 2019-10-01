@@ -114,7 +114,7 @@ itm_rhun_bow|卢恩弓
 itm_lorien_bow|罗斯洛立安皇家卫队弓
 itm_isengard_large_bow|艾辛格大型弓
 itm_dale_bow|河谷镇弓
-; itm_uruk_bow|Orc Horn Bow
+itm_uruk_bow|半兽人角弓
 itm_mirkwood_bow|幽暗密林弓
 itm_dunland_javelin|登兰德标枪
 itm_orc_throwing_arrow|半兽人镖
@@ -256,7 +256,7 @@ itm_gon_tab_shield_d|刚铎纹章塔盾
 itm_amroth_sword_a|多尔安罗斯剑
 itm_amroth_sword_b|多尔安罗斯骑士剑
 itm_gondor_sword|刚铎步兵剑
-; itm_amroth_bastard|Dol Amroth Swan Blade
+itm_amroth_bastard|多尔安罗斯天鹅骑士剑
 itm_gondor_short_sword|林何刃
 itm_pelargir_eket|佩拉格刃
 itm_pelargir_sword|佩拉格剑
@@ -710,7 +710,7 @@ itm_umb_armor_b|海盗皮甲
 itm_umb_armor_c|海盗轻鳞甲
 itm_umb_armor_d|海盗鳞甲
 itm_umb_armor_e|海盗链甲
-; itm_umb_armor_f|Corsair Noble Armour
+itm_umb_armor_f|海盗贵族甲
 itm_umb_helm_a|海盗壳盔
 
 itm_umb_helm_b|海盗壳盔
@@ -923,7 +923,7 @@ itm_beorn_shield_reward|波宁盾
 itm_beorn_axe_reward|熊棍
 itm_moria_arrow_reward|摩瑞亚萃毒箭
 itm_khamul_helm|戒灵克哈穆尔的头盔
-; itm_guldur_arrows_reward|Guldur Arrows
+itm_guldur_arrows_reward|多尔哥多箭
 itm_sarustaff|巫师法杖
 itm_rohan_armor_th|洛汗皇家盔甲
 itm_prisoner_coll_chain|俘虏手链

@@ -104,9 +104,9 @@ mno_start_2_hib|Noble
 menu_start_haradrim|^^^^^^^Vous êtes un Haradrim,^un Homme du Désert.^Sélectionnez votre lignée :
 mno_start_1_des|Homme du désert
 mno_start_2_far|Guerrier tribal du Harad Lointain
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+menu_start_numenorean|Vous êtes un Númenóréen Noir, loyal à l'obscurité et à Morgoth. Sélectionnez ou vous servez l'Oeil...
+mno_start_1_bn|Aux cotés de la Bouche de Sauron, en Morannon
+mno_start_2_bn|Au cœur de la forteresse du Nécromancien de Dol Guldur
 menu_choose_gender|^^^^^^^^^^Votre sexe ?
 mno_start_male|Homme
 mno_start_female|Femme
@@ -195,13 +195,13 @@ mno_leave|Quitter.
 menu_simple_encounter|^^^^^{s2}^Vous disposez de {reg22} troupes fin prêtes pour affronter {reg11}.^^La bataille se déroule en {s3}{s4}.^^Quels sont vos ordres ?
 mno_encounter_attack|{reg21?Les charger:Se préparer à leur faire face}.
 mno_encounter_order_attack|Ordonner à vos troupes de {reg21?les attaquer:leur faire face} sans vous.
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
+mno_control_allies_menu|Usez de votre influence pour commander vos alliés sur le champ de bataille.
 mno_encounter_hide|Se cacher de l'ennemi...
 mno_special_whip|Se ruer sur eux pour percer le {s4}.
 mno_encounter_leave|Battre en retraite.
 mno_encounter_retreat|Se retirer du combat en laissant quelques soldats derrière vous pour couvrir votre retraite.
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_simple|Commandez les et chargez l'ennemi.
+mno_player_control_allies_back|Retour...
 mno_hide_close|Reprendre la route
 menu_encounter_retreat_confirm|^^^^^En tant que membre ayant les talents tactiques les plus développés, ({reg2}), {reg3?vous élaborez:{s3} imagine} un plan qui vous permettra de sauver votre vie et celle de vos hommes, mais vous devrez laisser {reg4} soldats derrière pour empêcher les ennemis de vous poursuivre.
 mno_leave_behind|Continuer. Le sacrifice de ces braves épargnera les autres.
@@ -229,9 +229,9 @@ mno_pre_join_leave|Ne pas s'en mêler.
 menu_join_battle|^^^Vous aidez {s2} contre {s1}.^ Vous avez {reg22} soldats prêts à en découdre face à {reg11} ennemis.^^Le bataille a lieu en {s3}{s4}.
 mno_join_attack|Charger l'ennemi
 mno_join_order_attack|Ordonner à vos troupes de charger avec vos alliés pendant que vous restez à l'arrière.
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|Utilisez vos points d'influence pour commander vos alliés sur le champ de bataille.
 mno_join_leave|Battre en retraite.
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|Commandez les et chargez l'ennemi.
 menu_join_order_attack|{s4}^^Vos pertes : {s8}^^Pertes alliées : {s9}^^Pertes ennemies : {s10}
 mno_enter|Entrer.
 menu_battlefields|^^^^^^^^^Sélectionner un champ...
@@ -368,9 +368,9 @@ mno_horse_archer_field_ai|IA de combat des archers montés améliorée : {s7}
 mno_vs_orcs_field_ai|Les archers ont une meilleure visée contre les orcs (ils ne visent jamais sous la tête):  {s7}
 mno_battlefield_animals|Spawn des animaux (hors monture) des compagnons en combat: {s7}
 mno_slow_when_wounded|Les montures ralentissent quand elles sont blessées: {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
-; menu_hungry_orc|none
-; menu_leaving_elf|none
+mno_battle_encounter_effects|Effets spéciaux des factions sur le champ de bataille (e.g: orages, brouillards): {s7}
+menu_hungry_orc|Aucun
+menu_leaving_elf|Aucun
 mno_defend_refugees|Restez attentifs aux pillards...
 mno_attack_refugees|Attaquer le convoi de réfugiés...
 mno_leave_refugees|Les laissez pour l'instant...
@@ -426,7 +426,7 @@ mno_leave_pyre|Quitter le bûcher.
 menu_town_ruins|En approchant, vous voyez que {s1} est {s2}
 mno_ruin_menu_0|Explorer la zone.
 mno_ruin_leave|Quitter...
-; menu_premutiny|none
+menu_premutiny|Aucun
 menu_death|Vous avez été tué. Bien que la guerre se poursuit, vous n'en ferez plus partie.
 menu_animal_ambush|Vous et vos compagnons ont été séparés du reste de votre groupe, lorsque soudain...
 menu_animal_ambush_success|Les {s2} {reg0?tombe:tombent} devant vous comme le blé devant la faux ! Bientôt, tous vos assaillants gisent sur le sol, blessés ou morts. {s3}

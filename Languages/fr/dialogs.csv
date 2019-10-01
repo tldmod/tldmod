@@ -22,11 +22,11 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Je pense n'avoir jamais
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Il me semble avoir rencontré une personne comme vous a Edoras.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Il me semble avoir rencontré une personne comme vous a Minas Tirith.
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Je sais. Je vient de loin! Je suis un Hobbit, {monsieur/madame}, de la Comté.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, ce doit être mon chère cousin ! Peregrin Touque, ou Pippin, pour les intimes. Nous sommes des Hobbits, {monsieur/madame}, et nous venons tous deux de la Comté ! Ce bon vieux Pippin, je me demande ce qu'il fait a Minas Tirith.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, ce doit être mon chère cousin ! Peregrin Touque, ou Pippin, pour les intimes. Nous sommes des Hobbits, {monsieur/madame}, et nous venons tous deux de la Comté ! Ce bon vieux Pippin, je me demande comment il va à Minas Tirith.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Oh, ce doit être mon chère cousin ! Meriadoc Brandebouc, ou Merry, pour les intimes. Nous sommes des Hobbits, {monsieur/madame}, et nous venons tous deux de la Comté ! Ce bon vieux Merry, je me demande ce qu'il fait a Edoras.
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Puis je vous demander une faveur, {mon seigneur/ma dame}.
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Bien sûr , {s1}. De quoi s'agit-il ?
-dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Pouvez vous transmettre un message à mon cousin {s1} ? Il est dans {s2} à {s3}, au service de {s4}
+dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Pourriez vous transmettre un message à mon cousin {s1} ? Il est dans {s2} à {s3}, au service de {s4}
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Je compte passer par {s1}, et je serais heureux de transmettre ce message à votre cousin.
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Je suis désolé, {s1}, mais je n'ai pas le temps.
 dlga_hobbit_general_talk_ask_accept:close_window|Merci! {s1}
@@ -129,22 +129,22 @@ dlga_companion_was_dismissed:companion_rehire|{s5}. Voulez-vous que je rejoigne 
 dlga_companion_rehire:companion_recruit_signup_confirm|Ravi de vous revoir, mon ami !
 dlga_companion_rehire:companion_rehire_refused|Navré, je ne peux plus prendre qui que ce soit de plus pour le moment.
 dlga_companion_rehire_refused:close_window|Bien... Revenez vers moi si vous changez d’avis, hein ?
-; dlga_event_triggered:ziggy_ask_prisoners|Commander, a word. You have crushed our foes, and taken some prisoners - well and good. I have a mighty gift to offer you, if you would but grant me a small thing in exchange: give into my hands one of those we captured.
-; dlga_event_triggered:ziggy_ask_prisoners.1|Commander, congratulations on your triumph. If you remember what I told you the last time, I have a use for one of these captives. It will be to your benefit, Commander, I assure you.
+dlga_event_triggered:ziggy_ask_prisoners|Commandant, un mot. Vous avez écrasé nos ennemis et fait quelques prisonniers - bien et bien. J'ai un grand cadeau à vous offrir, si vous voulez bien m'accorder une petite chose en échange : donnez-moi un de ceux que nous avons capturés.
+dlga_event_triggered:ziggy_ask_prisoners.1|Commandant, félicitations pour votre triomphe. Si vous vous souvenez de ce que je vous ai dit la dernière fois, j'ai besoin d'un de ces prisonniers. Cela vous sera bénéfique, commandant, je vous l'assure.
 dlga_ziggy_ask_prisoners:ziggy_ask_why|C'en est assez de vos mystères, Zigûrphel ! Parlez sans détour ! Pourquoi avez-vous besoin d'un prisonnier ?
-; dlga_ziggy_ask_why:ziggy_reason|Patience, patience, Commander! Only indulge me in this trifling matter, and I will show you a marvel.
-; dlga_ziggy_reason:ziggy_yes|You intrigue me. Very well. I will leave one of the captives to your... tender care.
+dlga_ziggy_ask_why:ziggy_reason|Patience, patience, Commandant ! Laissez-moi m'adonner à cette insignifiante affaire, et je vous montrerai une merveille.
+dlga_ziggy_reason:ziggy_yes|Vous m'intriguez. Très bien, très bien. Je laisserai un des prisonniers à vos.... tendres soins.
 dlga_ziggy_reason:ziggy_no|Pas maintenant, Zigûrphel. Retournez à votre poste.
-; dlga_ziggy_no:close_window|Very well, Commander, but you would be a fool to forego my gift.
+dlga_ziggy_no:close_window|Très bien, Commandant, mais ce serait idiot de renoncer à mon don.
 dlga_ziggy_no:close_window.1|Très bien, Commandant.
-; dlga_ziggy_yes:ziggy_choose_prisoners|Excellent. Which of these specimens would you give?
+dlga_ziggy_yes:ziggy_choose_prisoners|Excellent. Lequel de ces spécimens donneriez-vous ?
 dlga_ziggy_choose_prisoners:ziggy_no|Je n'en ai aucun dont je souhaite me séparer.
-; dlga_ziggy_chosen_prisoner:ziggy_ritual|Thank you, Commander! A moment... ah yes, this one should do nicely... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_chosen_prisoner:ziggy_ritual|Merci, commandant ! Un moment... ah oui, celui-ci devrait très bien faire.... Agannūlo burudan kinum ! Kadō nakh, îdô ugru-dalad dâira !
 ; dlga_ziggy_chosen_prisoner:ziggy_ritual.1| What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 ; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
-; dlga_ziggy_ritual:ziggy_ritual_succeed.1|Always such a joy to bring a foe properly to heel.
-; dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! This one was too weak! Worthless! Give me a stronger one, Commander, one who will not fail!
-; dlga_ziggy_ritual_succeed:close_window|And of course, allow me but a little rest; then you may pass another captive into my care. I will do the rest.
+dlga_ziggy_ritual:ziggy_ritual_succeed.1|C'est toujours une joie d'amener un ennemi à ses pieds.
+dlga_ziggy_ritual:ziggy_choose_prisoners|Ach ! Celui-ci était trop faible ! Sans valeur ! Donnez-m'en un plus fort, Commandant, un qui n'échouera pas !
+dlga_ziggy_ritual_succeed:close_window|Et bien sûr, permettez-moi de me reposer un peu ; ensuite, vous pourrez me confier un autre prisonnier. Je ferai le reste.
 dlga_companion_objection_response:close_window|Merci, j’apprécie votre soutien.
 dlga_companion_objection_response:close_window.1|Avec un peu de chance, cela ne se reproduira plus.
 dlga_companion_objection_response:close_window.2|Votre objection est notée, mais j’ai des choses plus importantes en tête.

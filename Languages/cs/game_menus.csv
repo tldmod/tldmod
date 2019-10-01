@@ -319,11 +319,11 @@ menu_sneak_into_town_caught_dispersed_guards|Utíkáte před stráží a snadno 
 menu_sneak_into_town_caught_ran_away|probil jsi si cestu zpět k bráně a rychle se stahuješ z města
 menu_tld_player_defeated|^^^^^Najednou začneš cítit tříštivou bolest vzadu v hlavě! \\ Třeseš se, když celý svět vedle tebe upadá do temnoty...^Je tohle tvůj konec?
 menu_recover_after_death_fangorn|Vzbudil ses. Stále se nacházíš v lese. Každá kost tě bolí. Zázrakem jsi přežil.^^Byla to porážka, alespoň jsi byl schopen vidět, co se stalo. ^Teď už víš, co se v tomto prokletém lese děje,^a přežil jsi, abys tohle mohl říct. ^^Bude ti někdo vůbec věřit?  
-; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream.
+menu_recover_after_death_moria|^^^^^ Znovu získáváte svou pozornost. Ležíte na měkké půdě, svěží vzduch na tváři. Jste venku! ^ Orkové vás považovali za mrtvé a hodili vás do nějaké kalné jámy. ^ Museli jste být neseni na povrch podzemním proudem.
 mno_whatever|Vstaň!
-; menu_recover_after_death_default|^^^^^You regain your conciousness. You lie on the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wounds were lethal,  and although you feel awful, you find out you can still walk.  You get up and try to look for any other survivors from your party.
-; menu_recover_after_death_town|^^^^You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town.  It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
-; menu_recover_after_death_town_alone|You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town. Your companions found you. It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
+menu_recover_after_death_default|^^^^^ Znovu získáváte svou pozornost. Ležíte na místě, kde jste padli. Nepřátelé vás museli považovat za mrtvé a nechat vás tam. Zdá se však, že žádná z vašich ran nebyla smrtelná, a přestože se cítíte strašně, zjistíte, že stále můžete chodit. Vstáváte a snažíte se hledat další přeživší z vaší strany.
+menu_recover_after_death_town|^^^^ Znovu získáváte svou pozornost a ocitnete se na okraji města. Jsi živí! Nikdo není v okolí a vy využijete svou šanci se odtáhnout mimo město. Zdá se, že žádná z vašich ran nebyla smrtelná, a přestože se cítíte strašně, můžete stále chodit.
+menu_recover_after_death_town_alone|Znovu získáváte svou pozornost a ocitnete se na okraji města. Jsi živí! Nikdo není v okolí a vy využijete svou šanci se odtáhnout mimo město. Vaši společníci vás našli. Zdá se, že žádná z vašich ran nebyla smrtelná, a přestože se cítíte strašně, můžete stále chodit.
 menu_notification_center_under_siege|{s1} je obléháno {s2} z {s3}!
 menu_notification_one_side_left|^^^^^Valka o Prsten je u konce!^^{s1} porazil vsechny sve nepratele a stava se vitezem!
 menu_notification_total_defeat|^^^^^Valka o Prsten pro tebe konci!^^{s1} byl porazen neprateli a zustavas sam a porazen!
@@ -335,13 +335,13 @@ mno_explore|Prozkoumej toto místo.
 menu_ring_hunter_lair|^^^^Sledoval jsi stopy Lovců Prstenu skrz Temný hvozd a došel jsi k {s1}. Vidíš je ,jak se chystají odejít s truhlou.
 mno_attack_lair|Zaútoč na ně teď
 mno_leave_bandit_lair|Odejít prozatím.
-; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+menu_gondor_reinforcement_event|^^^^^ Svítí majáky Gondoru, Minas Tirith žádá o pomoc! ^^ Pánové jižních lénoří nyní pochodují na sever, aby bránili Bílé město před přicházející temnotou.
 mno_gondor_reinforcement_event_close|blizko
-; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+menu_gondor_beacons|Podíváte se na {s1}, jeden z výstražných majáků Gondoru, který se používal ke zvýšení poplachu v severním a jižním Gondoru.
 mno_gondor_beacons_close|Opusť...
-; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+menu_player_added_to_war_council|^^^^^Posel k tobě dorazil a řekl ti, jako {s24}, {s2} tě požádal aby jsi se stal členem jeho válečné rady. Nyní můžeš navrhovat strategie které mohou ovlivnit průběh války.
 mno_player_added_to_war_council_close|blizko
-; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+menu_player_added_to_siege_reports|^^^^^Posel k tobě dorazil a řekl ti že nyní, jako {s24}, budeš obdržovat nahlášeni kdykoli {s2} oblehne město nebo když {s2} města jsou obléhány.
 mno_player_added_to_siege_reports_close|blizko
 ; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|blizko
@@ -359,10 +359,10 @@ mno_raid_villagers|přepadni vesnici
 mno_go_away|Odejít a přeskupit se prozatím.
 menu_scout_camp_quest|Nedaleko vidíš tábor průzkumníků. Velíš k útoku na ně
 mno_attack_scout_camp|Zaútočit na tábořiště zvědů!
-; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+menu_sea_battle_quest|Potkáte nepřátelskou flotilu. Lodě se blíží a námořníci hodí prkna ...
 mno_sb_defend_the_town|Naloďte se! Zničte jejich flotilu!
-; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
-; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+mno_sb_attack_the_town|Snaží se nás chytit! Ubraňte flotilu!
+menu_camp_field_ai|^^^^^ Kliknutím na možnost přepnete. ^^^ Vypnutí jedné nebo více možností zlepší výkon (FPS)
 mno_lord_field_ai|Lordi mají vylepšené AI na bojišti: {s7}
 mno_horse_archer_field_ai|Jízdní lučištníci mají vylepšené AI na bojišti: {s7}
 mno_vs_orcs_field_ai|Lučištníci mají lepší zaměřování proti skřetům (nestřílí jim nad hlavy): {s7}
@@ -409,7 +409,7 @@ mno_cb_mordor8|Korzaři
 mno_rescue_mission|Proplížit se do doupěte kouzelníků, pod úkrytem noci.
 mno_next_rescue_scene_door|Pokračuj vpřed!
 mno_pick_troops1|Vyber spolecniky pro tento ukol, {reg0} vybrano
-; menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
+menu_pick_troops|Koho by jste si sebou vzal na tajnou misi? Momentálně jsi vybral {reg0} společníků. Můžete si sebou vzít až 10 jednotek.
 mno_go_forward|Ukoncit vyber spolecniku a pokracovat.
 ; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Poklekněte

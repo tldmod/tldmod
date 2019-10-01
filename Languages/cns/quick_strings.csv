@@ -73,8 +73,8 @@ qstr_Thighs|大腿
 qstr_Legs|腿
 qstr_Rotate|旋转
 qstr_Close|关闭
-; qstr_Faction_Side:^^Campa|Faction Side:^^Campaign Difficulty*:^^Home Theater:^^Marshall:^^Enemies:^^
-; qstr_Campaign_Difficulty_|Campaign Difficulty is based on starting faction strength, theater enemies,^ and faction troop tree & troop equipment.
+qstr_Faction_Side:^^Campa|派系所属阵营：^^战争难度*：^^初始战场：^^元帅：^^敌人：^^
+qstr_Campaign_Difficulty_|战争难度取决于派系开始时的势力值，战区的敌军，^还有派系兵种树和兵种装备。
 qstr_Rallies:|集合
 qstr_View_Keybinds__Press|绑定鍵(按下想要的绑定鍵)
 qstr_What_do_you_fight_fo|你为何而战?
@@ -107,13 +107,13 @@ qstr_Equipment|装备
 qstr_The_Last_Days_Mod_Op|最后之日Mod选项
 qstr_War_Starts_at_Level:|战争始于等级：
 qstr_Restrict_Player_Equi|不能装备
-; qstr_Battle_Formations_an|Battle Formations and AI:  
+qstr_Battle_Formations_an|战斗阵型和AI：
 qstr_Native|本地
 qstr_TLD_FormAI__Original|TLD AI（原始）
 qstr_TLD_New_FormAI|TLD新AI
 qstr_Advanced_Siege_AI:__|电脑难度：
 qstr_On|开启
-; qstr_Town_NPCs_Always_Acc|Town NPCs Always Accessible from Menus:  
+qstr_Town_NPCs_Always_Acc|城镇NPC总是显示在菜单上：
 qstr_Cutscenes:__|过场动画: 
 qstr_Injuries_for_compani|同伴会受伤: 
 qstr_Permanent_death_for_|领主和同伴永久死亡：
@@ -145,19 +145,19 @@ qstr_Weapons|武器
 qstr_Armors|护甲
 qstr_Others|其他
 qstr_F4___Complex_formati|F4：复杂阵型
-; qstr_F7___Memorize_div._p|F7 - Memorize div. placement
-; qstr_F8___Default_divisio|F8 - Default division placement
+qstr_F7___Memorize_div._p|F7—储存战场部署
+qstr_F8___Default_divisio|F8—默认分队部署
 qstr_F4___Ranks|F4 - 队形
 qstr_F5___Shield_Wall|F5 - 盾墙
-; qstr_F6___Wedge|F6 - Wedge
+qstr_F6___Wedge|F6—组成楔形阵
 qstr_F7___Square|F7 - 方阵
 qstr_F8___No_Formation|F8: 无阵型
-; qstr_Extended_Formations_|Extended Formations and AI Options
+qstr_Extended_Formations_|扩展阵型和AI选项
 qstr_Put_player_in_divisi|把玩家放入分队：
 qstr_None|无
 qstr_Army_rotates_to_face|部队调整到面向敌军中央
 qstr_Prevent_AI_from_takin|防止电脑采取防御措施
-; qstr_AI_Controls_Troops_W|AI Controls Troops When Player is KO'd: 
+qstr_AI_Controls_Troops_W|当玩家倒下的时候AI控制部队：
 qstr_You_gained_{reg0}_Re|你获得了{s0}的{reg0}资源点
 qstr_You_lost_{reg0}_Reso|你失去了{s0}的{reg0}资源点
 qstr_{s24}:|{s24}：
@@ -201,7 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1}资源点({s2})
 qstr_+30_to_Party_Morale|部队士气 +30
 qstr_+20_to_Party_Morale|部队士气 +20
 qstr_+1_to_Riding_Skill|骑术等级+1
-; qstr_during_battles|during battles
+qstr_during_battles|在战斗中
 qstr_+1_to_Pathfinding|向导等级+1 
 qstr_+1_to_Athletics|跑动等级+1 
 qstr_Use_from|使用
@@ -217,7 +217,7 @@ qstr_+1_to_Agility|敏+1
 qstr_+1_to_Leadership|统+1
 qstr_+1_to_Wildcraft|自然力+1
 qstr_+1_to_Power_Draw|强弓等级+1
-; qstr_Turns_nature_to_your|Turns nature to your side (effect scales with Wildcraft)
+qstr_Turns_nature_to_your|你与自然融为一体（效果依荒野求生技能的级别而定）
 qstr_+1_to_Trainer|教练等级+1
 qstr_Recruits_Tribal_Orcs|招募部落半兽人
 qstr_rally|集结
@@ -255,15 +255,15 @@ qstr_near_the_Great_East_|东方大道（远古矮人横穿伊利雅德所建的
 qstr_near_what_is_left_of|旧林路（远古矮人横穿幽暗密林所建的道路）遗迹的不远处
 qstr_close_to_the_Hand_sh|萨鲁曼白手标记的附近，指着奥桑克塔的方向
 qstr_in_sight_of_the_maje|能看到米那斯提力斯白色崇峻城墙的地方
-; qstr_in_sight_of_Edoras_t|in sight of Edoras, the capital of Rohan
-; qstr_in_sight_of_the_Horn|in sight of the Hornburg, the great fortress of Rohan
-; qstr_in_sight_of_Dol_Amro|in sight of Dol Amroth, the seat of the Princes of Belfalas
-; qstr_in_sight_of_the_Mora|in sight of the Morannon, the Black Gate of Mordor
-; qstr_in_sight_of_Dol_Guld|in sight of Dol Guldur, Sauron's northern fortress
-; qstr_on_the_green_pasture|on the green pastures and many-flowered meadows surrounding Beorn's House
-; qstr_on_the_shores_of_Lak|on the shores of Lake Mirrormere, near the East Gate of Moria
-; qstr_on_the_shores_of_the|on the shores of the Long Lake, in sight of Esgaroth, the Laketown
-; qstr_near_the_coast_of_Go|near the coast of Gondor. You can hear the distant sound of the waves and the cries of the seagulls.
+qstr_in_sight_of_Edoras_t|在看得到伊多拉斯—洛汗首都的地方
+qstr_in_sight_of_the_Horn|在看得到号角堡—洛汗伟大要塞的地方
+qstr_in_sight_of_Dol_Amro|在看得到多尔安罗斯—贝尔法拉斯之王所在的地方
+qstr_in_sight_of_the_Mora|在看得到魔拉南，魔多的黑门的地方
+qstr_in_sight_of_Dol_Guld|在看得到多尔哥多—索伦的北方要塞的地方
+qstr_on_the_green_pasture|在比翁之家周围的绿茵牧场和繁花似锦的草地上
+qstr_on_the_shores_of_Lak|在镜影湖湖岸，靠近摩瑞亚东大门的地方
+qstr_on_the_shores_of_the|在长湖湖岸，看得到那座湖城—长湖镇的地方
+qstr_near_the_coast_of_Go|靠近刚铎的海岸。你可以听到遥远的海浪和海鸥鸣叫声
 qstr_in_the_outskirts_of_|奥斯吉力亚斯的郊外，刚铎的前首都
 qstr_in_sight_of_the_entr|能看到矮人孤山堡垒的地方
 qstr_in_sight_of_the_dark|看得见艾辛格奥桑克黑塔的地方
@@ -440,7 +440,7 @@ qstr_Strength|力
 qstr_Agility|敏
 qstr_Intelligence|智
 qstr_Charisma|魅
-; qstr_You_ve_gained_{s6}_f|You've gained {s6} from gaining {s7}
+qstr_You_ve_gained_{s6}_f|因带有{s7}你获得了{s6}
 qstr_You_ve_lost_{s6}_fro|你丢失了{s7}，导致{s6}的下降。
 qstr_{s50}_Caves|{s50}洞穴
 qstr_{s50}_Mines|{s50}矿山
@@ -562,15 +562,15 @@ qstr_All..._must..._submi|所有人…必须…屈从...且…臣服…
 qstr_I_serve_the_Eye!|我服从索伦之眼！
 qstr_I_shall_serve_the_Ey|我将臣服于索伦之眼！
 qstr_Go_to_{s1}_and_speak|到{s1}去和{s9}交流。
-; qstr_The_Remnant_Forces_o|The Remnant Forces of {s22} have gathered to reinforce the {s15} theater!
-; qstr_The_strength_of_the_|The strength of the remaining allied factions of the {s15} theater has increased
+qstr_The_Remnant_Forces_o|{s22}的剩余势力聚集在一起以加强{s15}派系！
+qstr_The_strength_of_the_|{s15}派系及其盟友的力量有所增加
 ; qstr_{s30}_reinforced_by_|{s30} reinforced by {reg65} fac str
 qstr_{s1}_has_been_besieg|{s1}正被{s3}的{s2}围困！
 qstr_The_forces_of_{s2}_m|{s2}的军队正向{s15}行军！
 qstr_Rohan_capital_moved_|洛汗首都已经从伊多拉斯移动到号角堡！
-; qstr_Dale_capital_moved_f|Dale capital moved from Dale to Esgaroth!
-; qstr_Gundabad_capital_mov|Gundabad capital moved from Gundabad to Goblin Town!
-; qstr_The_hosts_of_{s2}_re|The hosts of {s2} retreat back to their homes!
+qstr_Dale_capital_moved_f|河谷镇迁都长湖镇！
+qstr_Gundabad_capital_mov|刚达巴迁都半兽人镇！
+qstr_The_hosts_of_{s2}_re|{s2}的军队撤退会他们的家乡。
 qstr____Ruins_of_{s1}___|{s1}的废墟
 qstr_ranks|组成行阵
 qstr_shield_wall|组成盾墙
@@ -586,29 +586,29 @@ qstr___Not_enough_archers|没有足够的射手{s1}，用坚守代替。
 qstr___Infantry_formation|步兵阵型解散
 qstr___Cavalry_formation_|骑兵阵型解散。
 qstr___Archer_formation_d|射手阵型解散。
-; qstr_Division_{reg1}_{s2}|Division {reg1} {s2} forming {s1}.
-; qstr_Not_enough_troops_in|Not enough troops in division {reg1} {s2} to form {s1}.
-; qstr_Division_{reg1}_{s2}_|Division {reg1} {s2} is an {s3} division and cannot form {s1}.
+qstr_Division_{reg1}_{s2}|分队{reg1}{s2}正在列队为{s1}。
+qstr_Not_enough_troops_in|分队{reg1}{s2}中没有足够的士兵列队为{s1}。
+qstr_Division_{reg1}_{s2}_|分队{reg1}{s2}是{s3}，且不能列队为{s1}。
 qstr_{s1}:_infantry_forma|{s1}: 步兵阵型解散
 qstr_{s1}:_archer_formati|{s1}: 射手阵型解散。
-; qstr_{s1}:_skirmisher_for|{s1}: skirmisher formation disassembled.
+qstr_{s1}:_skirmisher_for|{s1}：解散散兵阵型。
 qstr_{s1}:_cavalry_format|{s1}: 骑兵阵型解散。
 qstr_{s1}:_formation_disa|{s1}: 阵型解散。
 qstr_Cavalry_formation_di|骑兵阵型解散。
-; qstr_The_placement_of_{s1|The placement of {s1} division {reg0} memorized.
-; qstr_The_placement_of_{s1}|The placement of {s1} division {reg0} set to default.
-; qstr_Your_party_s_tactica|Your party's tactical skill limits how far away you can deploy your troops!
-; qstr_...and_attack_enemy_|...and attack enemy {s1} division!
-; qstr_{s2}:_returning_afte|{s2}: returning after destroying enemy {s1} division.
+qstr_The_placement_of_{s1|{reg0}分队{s1}的位置已记录。
+qstr_The_placement_of_{s1}|{reg0}分队{s1}的位置已还原。
+qstr_Your_party_s_tactica|你部队的战术技能限制了你能够部署你士兵的最大距离！
+qstr_...and_attack_enemy_|…并攻击敌人{s1}分队！
+qstr_{s2}:_returning_afte|{s2}：在消灭敌人{s1}部队后撤退。
 qstr_infantry|步兵
 qstr_archer|射手
 qstr_cavalry|骑兵
 qstr_polearm|长杆武器
-; qstr_skirmisher|skirmisher
+qstr_skirmisher|散兵
 qstr_mounted_archer|骑射手
 qstr_support|支援
-; qstr_bodyguard|bodyguard
-; qstr_undetermined_type_of|undetermined type of
+qstr_bodyguard|护卫
+qstr_undetermined_type_of|未定类型
 
 qstr_{s1}_has_fled_the_ba|{s1}逃离了战场！
 qstr_Your_troops_are_at_{|我军士气为{reg1}%(+{reg3}%加成)，敌军士气为{reg2}%！
@@ -626,105 +626,105 @@ qstr_Gained_permanent_+1_to_P|向导等级永久+1
 qstr_Gained_permanent_+1_to_S|侦察等级永久+1
 qstr_{s11}_recovered_from|{s11}的一个重伤痊愈了。
 qstr_Volunteers|志愿者们
-; qstr_Reserves|Reserves
-; qstr_have_taken_measure_o|have taken measure of your faction's current strength and has grown bolder.
-; qstr_loses_Faction_Streng|loses Faction Strength as supply lines were disrupted.
-; qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of their camp.
-; qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
-; qstr_Something_wrong_not_|Something wrong, not enough troops to remove
-; qstr_Raiders|Raiders
-; qstr_have_won_the_sea_bat|have won the sea battle, demoralizing your troops. The enemy may take advantage of this defeat and attack more frequently.
-; qstr_loses_Faction_Strength|loses Faction Strength due to the destructive raid.
-; qstr_loses_Faction_Strength_|loses Faction Strength due to the your success at the sea.
-; qstr_You_spent_{reg67}_of|You spent {reg67} of your influence with {s1}, with {reg66} remaining.
+qstr_Reserves|预备队
+qstr_have_taken_measure_o|已增加所属派系当前势力值。
+qstr_loses_Faction_Streng|当补给线被打断会失去势力值。
+qstr_loses_Faction_Strengt|当势力营地被摧毁会失去势力值。
+qstr_gains_Faction_Streng|当你的胜利消息传播开来时会获得势力值。
+qstr_Something_wrong_not_|事情有些不太对劲，我们没有足够的士兵来移除。
+qstr_Raiders|突袭者
+qstr_have_won_the_sea_bat|敌人赢得了海战的胜利，这打击了你的士兵们的士气。这些敌人将利用这次击败更加频繁地进攻。
+qstr_loses_Faction_Strength|受到破坏性的突袭会失去势力值
+qstr_loses_Faction_Strength_|因为你在海上的成功，敌对派系力量下降了。
+qstr_You_spent_{reg67}_of|你花费了{reg67}你的影响力用于{s1}，还剩下{reg66}影响力。
 qstr_No_Troops_Left.|士兵们一个不剩。
-; qstr_avoid_melee|avoid melee
-; qstr_stand_and_fight|stand and fight
+qstr_avoid_melee|避免近战
+qstr_stand_and_fight|防守和作战
 qstr_Everyone|所有人
-; qstr_Shield___{reg31}_|Shield (-{reg31})
-; qstr_Power_Draw___{reg31}|Power Draw (-{reg31})
-; qstr_Riding___{reg31}_|Riding (-{reg31})
-; qstr_Horse_Archery___{reg|Horse Archery (-{reg31})
-; qstr_Athletics___{reg31}_|Athletics (-{reg31})
-; qstr_No_Skill_Penalty_Ass|No Skill Penalty Assigned
+qstr_Shield___{reg31}_|盾防（-{reg31}）
+qstr_Power_Draw___{reg31}|强弓（-{reg31}）
+qstr_Riding___{reg31}_|骑术 (-{reg31})
+qstr_Horse_Archery___{reg|骑射 (-{reg31})
+qstr_Athletics___{reg31}_|跑动（-{reg31}）
+qstr_No_Skill_Penalty_Ass|无技能点可分配
 qstr_Inventory|物品
-; qstr_Show_stats|Show stats
-; qstr_Show_item_details__|Show item details  
-; qstr_Troop_detail|Troop detail
-; qstr_{s1}^|{s1}^
-; qstr_{s1}Level:_{reg1}^|{s1}Level: {reg1}^
-; qstr_{s1}Hit_Points:_{reg|{s1}Hit Points: {reg1}
-; qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
+qstr_Show_stats|显示状况
+qstr_Show_item_details__|显示物品详情
+qstr_Troop_detail|兵种详情
+qstr_{s1}^|{s1}^
+qstr_{s1}Level:_{reg1}^|{s1}等级：{reg1}^
+qstr_{s1}Hit_Points:_{reg|{s1}生命值:{reg1}
+qstr_{s1}Atributes:_^___S|{s1}属性：^力量：^
 qstr_{s2}^{reg1}^|{s2}^{reg1}^
 qstr_{s1}___Agility:|{s1}   敏:
 qstr_{s2}{reg1}|{s2}{reg1}
-; qstr_{s1}Main_skills:_^|{s1}Main skills: ^
-; qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
-; qstr_{s2}{reg1}^|{s2}{reg1}^
-; qstr_{s1}___Athletics:^|{s1}   Athletics:^
-; qstr_{s1}___Riding:^|{s1}   Riding:^
-; qstr_{s2}_^|{s2}-^
-; qstr_{s1}___Power_Throw:^|{s1}   Power Throw:^
-; qstr_{s1}___Power_Draw:^^|{s1}   Power Draw:^^
+qstr_{s1}Main_skills:_^|{s1}主要技能：^
+qstr_{s1}___Power_Strike:|{s1}强击：^
+qstr_{s2}{reg1}^|{s2}{reg1}^
+qstr_{s1}___Athletics:^|{s1}跑动：^
+qstr_{s1}___Riding:^|{s1}骑术：^
+qstr_{s2}_^|{s2}-^
+qstr_{s1}___Power_Throw:^|{s1}强掷：^
+qstr_{s1}___Power_Draw:^^|{s1}强弓：^
 qstr_{s2}{reg1}^^|{s2}{reg1}^^
 qstr_{s2}_^^|{s2}-^^
 qstr_{s1}Weapons:^|{s1}武器:^
-; qstr_{s1}___One_Handed:^|{s1}   One Handed:^
-; qstr_{s1}___Two_Handed:^|{s1}   Two Handed:^
-; qstr_{s1}___Polearms:^|{s1}   Polearms:^
-; qstr_{s1}___Archery:^|{s1}   Archery:^
-; qstr_{s1}___Crossbow:^|{s1}   Crossbow:^
-; qstr_{s1}___Throwing:^|{s1}   Throwing:^
-; qstr_{s1}___Slings:|{s1}   Slings:
+qstr_{s1}___One_Handed:^|{s1}单手武器：^
+qstr_{s1}___Two_Handed:^|{s1}双手武器：^
+qstr_{s1}___Polearms:^|{s1}长杆武器：^
+qstr_{s1}___Archery:^|{s1}弓：^
+qstr_{s1}___Crossbow:^|{s1}弩：^
+qstr_{s1}___Throwing:^|{s1}投掷武器：^
+qstr_{s1}___Slings:|{s1}投石索：
 qstr_{s2}_|{s2}-
-; qstr__Click_on_the_troop_|(Click on the troop to rotate it)^^Click on pieces of gear ^(helmet, armor, gloves and boots)^ to display them.
-; qstr_ready_bows_and_missi|ready bows and missiles
-; qstr_ready_side_arms|ready side arms
-; qstr_ready_two_hander|ready two-hander
-; qstr_ready_polearms|ready polearms
-; qstr_shields_up|shields up
-; qstr_doff_shields|doff shields
-; qstr_Distance___{reg70}__|Distance - {reg70} - {s11} Party - {s12} Troop
-; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield. Your troops feel encouraged by the presence of the Lady.
-; qstr_A_golden_mist_from_Lr|A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.
-; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrifies your men.
-; qstr_Dark_clouds_from_Mord|Dark clouds from Mordor cover the battlefield. The Dark Lord's presence strengthens you and your men.
-; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield. Your troops are slowed down, and the superstitious amongst the men feel scared.
-; qstr_A_thunderstorm_from_t|A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.
-; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.
-; qstr_A_poisonous_fog_from_|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
+qstr__Click_on_the_troop_|（点击旋转士兵）^^点击一栏^（头盔，铠甲，手套和鞋子）^来查看他们
+qstr_ready_bows_and_missi|准备弓和箭
+qstr_ready_side_arms|准备单手武器
+qstr_ready_two_hander|准备双手武器
+qstr_ready_polearms|准备长杆武器
+qstr_shields_up|举起盾牌
+qstr_doff_shields|放下盾牌
+qstr_Distance___{reg70}__|距离-{reg70}-{s11}部队-{s12}士兵
+qstr_A_golden_mist_from_L|罗斯洛立安的金色薄雾笼罩着战场。那位女士的出现鼓舞了你和你的部队。
+qstr_A_golden_mist_from_Lr|洛林的金色薄雾笼罩着战场。附近那位强大的女巫使你和你的部队瑟瑟发抖。
+qstr_Dark_clouds_from_Mor|魔多的乌云笼罩着战场。你的弓箭手很难看到敌人，邪恶的存在使得你的人惶恐不安。
+qstr_Dark_clouds_from_Mord|魔多的乌云笼罩着战场。黑暗魔君的出现使你和你的人更加强大了。
+qstr_A_thunderstorm_from_|从迷雾山脉刮来的雷雨在战场上肆虐。你的部队不得不放慢步伐，一些迷信的人甚至感到害怕。
+qstr_A_thunderstorm_from_t|从迷雾山脉刮来的雷雨在战场上肆虐。弓箭手很难在这样恶劣的天气下发挥全力。
+qstr_A_poisonous_fog_from|从多尔哥多飘来的毒雾在战场上肆虐。你和你的部队感到全身虚弱。人们都很害怕。
+qstr_A_poisonous_fog_from_|从多尔哥多飘来的毒雾在战场上肆虐。你没有感到任何不同，但你却听到了敌人遭受痛苦的声音并且你能闻到他们的恐惧。
 qstr_Your_mount_stumbles!|你的坐骑走路磕磕绊绊！看起来是瘸腿了。
 qstr_Bitten_by_your_own_w|你被自己的座狼咬了!
 qstr_You_weigh_too_much_f|你的身板矮种马经受不起！
 qstr_Your_mount_rears_ref|你的坐骑受到惊吓！拒绝服从你的命令！
 qstr_Fixed_Custom_Camera|固定自定义相机
-; qstr_Press_Ctrl_+_Left_/_|Press Ctrl + Left / Ctrl + Right Arrow Keys to Switch Shoulders
+qstr_Press_Ctrl_+_Left_/_|按Ctrl+左方向键/Ctrl+右方向键切换肩膀显示位
 qstr_Use_+/__to_zoom_in/o|按+/-键以拉近拉远
 qstr_Use_Up/Down_arrow_ke|使用上/下箭头键以前倾/后倾
 qstr_Fixed_Camera___Right|固定相机—右肩
 qstr_Fixed_Camera___Left_|固定相机—左肩
-; qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.
+qstr_While_visiting_towns|当访问城镇、据点和营地时，你可以与四处走动的人们谈话。不同派系的人有不同的事可说—一些能够让你理解他们的想法，其它的会分享他们的传闻。他们都能够让你更加了解他们的文化和派系，有时他们可能知道找到神秘地点的线索，或是在野外生存和在魔戒圣战中战斗的技巧和窍门。
 qstr_Cannot_leave_now.|现在不能离开。
 qstr_You_have_found_the_l|你找到了当地铁匠…(+{reg3}经验)
 qstr_You_have_found_the_lo|你找到了地方长官…(+{reg3} 经验)
 qstr_You_have_found_the_loc|你找到了当地仓库…(+{reg3} 经验)
-; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.
+qstr_You_look_through_Hen|你端详汉那斯安南，也就是落日之窗。美丽的景色恢复了你对西方和世界的信心。
 qstr__cancelled_the_{reg1|(取消了杀囚获得的{reg10}经验值)
 qstr_Forming_ranks.|正在列阵。
 qstr_{reg2?You:Your_mount|{reg2?You:Your mount}  受到 {reg1} 点额外伤害!
-; qstr_{reg2?You_strike:You|{reg2?You strike:Your horse charges} for {reg1} bonus damage!
+qstr_{reg2?You_strike:You|{reg2?Youstrike:Yourhorsecharges}造成{reg1}点额外伤害！
 qstr_Division_Placement|兵种布局
-; qstr_Complex_Formations|Complex Formations
-; qstr_Formations_turned_OF|Formations turned OFF in options menu
-; qstr_Division_{reg1}_{s2}_g|Division {reg1} {s2} goes to its memorized position...
-; qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms line (memorized).
-; qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized).
-; qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
+qstr_Complex_Formations|高级阵型
+qstr_Formations_turned_OF|阵型可在选项菜单中关闭。
+qstr_Division_{reg1}_{s2}_g|{reg1}分队{s2}前往已记录的位置……
+qstr_Division_{reg1}_{s2}_f|{reg1}分队{s2}排成线阵(已记录)。
+qstr_Division_{reg1}_{s2}_fo|{reg1}分队{s2}排成{reg0}排(已记录)。
+qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Three_Nazgul_are_cir|三个戒灵正在战场的上空盘旋！
 qstr_Two_Nazgul_are_circl|两个戒灵正在战场的上空盘旋！
 qstr_A_Nazgul_is_circling|一个戒灵正在战场的上空盘旋！
-; qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
-; qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
+qstr_Some_of_your_human_t|你的一些人类部队并不畏惧黑夜。（夜间部队不受夜间惩罚的影响）
+qstr_You_are_filled_with_|当你盯着敌人时，你充满愤怒（狂战士能力激活）。
 qstr_Your_mount_is_scared|你的坐骑被{reg73?ent:troll}吓坏了！
 qstr_Nazgul_sweep!|戒灵来了！
 qstr_You_and_your_horse_p|戒灵的啼声是你和你的马无法承受的恐惧！
@@ -736,39 +736,39 @@ qstr_{s11}_is_{s10}_in_th|{s11}在戒灵的攻击中{s10}！
 qstr_Received_{reg66}_dam|受到{reg66}点伤害。
 qstr_You_yell_for_your_ho|你呼唤你的马。
 qstr_{s1}_s_morale:_{reg1|{s1}的士气：{reg1}
-; qstr_You_do_not_need_to_r|You do not need to rally your troops yet.
+qstr_You_do_not_need_to_r|你暂时不需要集结你的部队。
 qstr_You_rally_your_troop|你集结了部队！
 qstr_{s5}_rallies_{reg65?|{s5}集结了{reg65?她的:他的}的部队！
 qstr_You_have_killed_{reg|你在战斗中杀死了{reg1}名敌人！
 qstr_Your_bravery_inspire|你的英勇鼓舞了你的部队！
-; qstr_Your_mount_has_falle|Your mount has fallen to the ground beneath you!
+qstr_Your_mount_has_falle|你的坐骑已经倒下了！
 qstr_Receive_{reg22}_dama|受到{reg22}点伤害。
 qstr_You_have_been_knocke|你被{s22}击昏了。
 ; qstr_{s21}_has_been_knock|{s21} has been knocked off of {reg23?her:his} mount when it fell.
 ; qstr_{s21}_{reg24?killed:|{s21} {reg24?killed:knocked unconscious} by {s22}.
 qstr_A_bear_has_been_summ|一头熊被召唤加入战斗！
-; qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.
-; qstr_You_can_also_order_y|You can also order your troops to cycle through the type of weapon you want them to use.^^ Press O to cycle between Weapon Order types. Press P to cycle between Shield Order types.
-; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.
-; qstr_Battlefield_is_too_s|Battlefield is too small for complex AI formations.
+qstr_In_The_Last_Days_of_|在第三纪元—最后之日中，你的士兵会在每场战斗开始时自动坚守，而不是盲目冲锋。^^按以下键能让你的士兵变换阵型，“J”为线阵，“K”为盾墙，“L”为楔形阵，“；（分号）”为方阵。按“U”取消阵型。^如果你的士兵在逃跑，你可以按“V”来召集他们。每场战斗的召集次数是有上限的，其次数取决于你的统御和魅力。
+qstr_You_can_also_order_y|你也可以命令你的士兵切换装备使用类型。^^按O切换武器使用命令。按P切换盾牌使用命令。
+qstr_The_Last_Days_of_the|为了避免原有的视角限制给较矮的种族（比如半兽人和矮人）造成的不便，第三纪元最后之日开发了自定义视角。^^按CTRL+END能够在2中视角模式中切换：固定视角和自由模式。^^固定视角对所有种族都是最理想的视角，但是不能再更改。你可以按CTRL+左/右箭头键来切换肩膀。^^自由模式视角将角色放置在屏幕中央。你可以按CTRL+上/下箭头键来倾斜视角，按CTRL+Numpad+/-放大。^^查阅信息页面可以了解如何控制不同的视角模式。
+qstr_Battlefield_is_too_s|战场太小不足以展开高级阵型。
 qstr_You_have_a_clear_per|你清晰地感到一个迫在眉睫的大危机出现在你周围
 qstr_New_ent_reached_batt|新的树人加入战斗...
 qstr_You_receive_word_tha|你接到线报说波宁人的村庄被袭击了。波宁人丧失了派系力量。
 qstr_You_receive_word_that|你接到线报说魔戒猎手头领拖着一个箱子前往魔多。魔多获得派系力量。
-; qstr_Enemy_reinforcements|Enemy reinforcements have arrived
-; qstr_Yarrrr!!|Yarrrr!!
-; qstr_Get_all_of_them!|Get all of them!
+qstr_Enemy_reinforcements|敌人增援已经赶到。
+qstr_Yarrrr!!|呀啊啊啊啊！！
+qstr_Get_all_of_them!|把他们都逮住！
 qstr_Kill_them_all!|杀死他们！
-; qstr_Toss_them_overboard!|Toss them overboard!
-; qstr_It_is_a_good_day_to_|It is a good day to die!
-; qstr_All_hands_on_deck!_T|All hands on deck! Throw them back!
-; qstr_Ally_reinforcements_|Ally reinforcements have arrived
-; qstr_Forward_men!|Forward, men!
-; qstr_Leave_none_of_these_|Leave none of these filth standing!
+qstr_Toss_them_overboard!|把他们都扔下去！
+qstr_It_is_a_good_day_to_|慷慨赴义就在今日！
+qstr_All_hands_on_deck!_T|全体船员到甲板上集合！把他们赶回去！
+qstr_Ally_reinforcements_|友军增援部队已赶到
+qstr_Forward_men!|前进，士兵！
+qstr_Leave_none_of_these_|不要让一个污秽站着！
 qstr_End_them_all!|杀死他们！
-; qstr_Drive_them_back!|Drive them back!
-; qstr_Protect_the_City!|Protect the City!
-; qstr_Forward!_Board_them!|Forward! Board them!
+qstr_Drive_them_back!|把他们赶回去！
+qstr_Protect_the_City!|保卫城市！
+qstr_Forward!_Board_them!|前进！登上他们的甲板！
 ; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
 qstr_Reached_Gauntlet_wav|第{reg1}波！
 qstr_Ballista:_out_of_amm|弩炮：弹药用尽！
@@ -776,9 +776,9 @@ qstr_Ballista:_turn_CURSO|弩炮：转向：移动光标，瞄准：左SHIFT，�
 qstr_Ballista:_out_of_ammo|弩炮：弹药用尽！
 qstr_The_ladders_on_Deepi|有梯子搭在城墙上了！小心！
 qstr_THREE.._TWO..._ONE..|三！二！一！冲！
-; qstr_You_have_come_upon_t|You have come upon the ruins of Amon Hen, the Hill of Sight, a Gondorian watch-tower atop which rests the Seat of Seeing^^You sense that this place was once great but has long been forgotten
-; qstr_You_have_come_upon_th|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters^^Dead grasses and rotting reeds loom up in the mists like ragged shadows of long forgotten summers, and bodies of men, elves, and orcs float in the murky depths^^The air feels cold and clammy, and you can't help but shiver as you see candle-lights flickering in the eyes of an elf corpse just beneath the water's surface
-; qstr_You_have_entered_the|You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The fortress of Dol Guldur is nearby and it casts a dark shadow over the forest. The woods here feel sickly and full of decay. Ancient oak trees are overrun with rot and fungus and great tangling webs stretch from trunk to trunk^^ The air is everlastingly still and dark and stuffy, and it feels like you are slowly being suffocated
+qstr_You_have_come_upon_t|你来到了阿蒙汉山，观望山上的一处废墟，一个坐落在观察点的刚铎瞭望塔。你感觉得到这个地方一度十分伟大，但已被遗忘很久。
+qstr_You_have_come_upon_th|你来到了死亡沼泽，在最后联盟大战中达哥拉（战争平原）的战场所在^^这片沼泽地吞噬了曾经长满草的平原，现在，唯一的绿色就是阴暗水面暗色油腻表面上的青灰色浮渣^^死掉的杂草还有腐烂的芦苇在薄雾里忽闪忽现，像是被遗忘许久的夏日的残破阴影，还有人类、精灵和半兽人的尸体阴暗的深处漂浮^^这里的空气令人感觉寒冷并潮呼呼的，而且你经不住颤抖，因为你看见水面下的精灵眼中闪烁着烛光。
+qstr_You_have_entered_the|你已经进入了一度被称为巨绿林的幽暗密林的南部森林^^多尔哥多堡垒就在附近，它在森林里投下了一道黑影。这里的森林让人感觉虚弱而且充满腐烂。古老的橡树表面都腐烂且被真菌覆盖，巨大的缠结的蜘蛛网从树干延伸到树干^^这里的空气总是既不畅又黑暗而且闷热，感觉起来就好像你在慢慢地窒息
 qstr_You_have_found_the_D|你发现了传说中存放长矛的矮人仓库，把你的发现向{s3}报告
 qstr_Leave_the_Warehouse?|离开仓库？
 qstr_Leave_the_place_in_s|悄悄地离开此地？
@@ -796,32 +796,32 @@ qstr_Alarm_Level_is_now_at_|警报级别：2！
 qstr_The_sorcerer_has_fle|巫师已经逃跑了!
 qstr_Report_this_ill_news|马上向凯兰崔尔女士报告这个坏消息。
 qstr_The_sorcerer_is_flee|巫师正在逃跑！干掉他！
-; qstr_The_sorcerer_has_joi|The sorcerer has joined the fight! Kill him!
+qstr_The_sorcerer_has_joi|巫师加入了战斗！杀了他！
 qstr_The_sorcerer_is_dead|巫师已死！
 qstr_The_battle_is_won!|战斗胜利！
-; qstr_A_band_of_tribal_orc|A band of tribal orcs have appeared!
-; qstr_Gaaaar!!_We_wants_th|Gaaaar!! We wants those human meat!
-; qstr_{s31}_scouts_have_ap|{s31} scouts have appeared!
-; qstr_Those_are_ours!_We_h|Those are ours! We have been tracking them since they left! No one stands in our way!
+qstr_A_band_of_tribal_orc|一队部落半兽人出现了！
+qstr_Gaaaar!!_We_wants_th|噶吖吖吖吖吖！！我们要那些人肉！
+qstr_{s31}_scouts_have_ap|{s31}斥候出现了！
+qstr_Those_are_ours!_We_h|那些是我们的！我们一路跟踪自他们离开！没有人可以妨碍我们！
 qstr_Trolls_appeared!|食人妖出现了！
-; qstr_Gaaaar!!|Gaaaar!!
-; qstr_{s31}_scouts_have_app|{s31} scouts have appeared to aid the refugees!
-; qstr_Hurry_men!_Help_the_|Hurry, men! Help the refugees! Kill all the scum and do not let them escape!
-; qstr_Cannot_leave|Cannot leave
-; qstr_Longbeard_Kinsman|Longbeard Kinsman
-; qstr_Ori_Longbeard|Ori Longbeard
-; qstr_We_shall_make_our_st|We shall make our stand here! FOR BALIN!
-; qstr_Noooo!_You_orcs_will|Noooo! You orcs will pay for this!
-; qstr_Arghhh!!_Nooo!!|Arghhh!! Nooo!!
-; qstr_I_will_take_down_as_|I will take down as many as I can before I fall!
-; qstr_Raaa!!|Raaa!!
-; qstr_Kill_the_dwarves!|Kill the dwarves!
-; qstr_Finish_them!|Finish them!
-; qstr_We_will_feast_on_you|We will feast on your flesh!
+qstr_Gaaaar!!|噶吖吖吖吖吖！！
+qstr_{s31}_scouts_have_app|{s31}斥候现身来帮助这些难民！
+qstr_Hurry_men!_Help_the_|快，小伙子们！帮助这些难民！杀光这些人渣不要让他们跑了！
+qstr_Cannot_leave|不能离开
+qstr_Longbeard_Kinsman|长须族人
+qstr_Ori_Longbeard|奥里长须
+qstr_We_shall_make_our_st|我们将死守这里！为了巴林！
+qstr_Noooo!_You_orcs_will|不！你们半兽人会为此付出代价的！
+qstr_Arghhh!!_Nooo!!|啊啊啊！不！！
+qstr_I_will_take_down_as_|我将战至最后一口气，流尽最后一滴血！
+qstr_Raaa!!|啊啊啊！！
+qstr_Kill_the_dwarves!|杀了这些矮人！
+qstr_Finish_them!|干掉他们！
+qstr_We_will_feast_on_you|我们要吃你们的肉！
 qstr_Dwarf_meat!|矮人肉！
-; qstr_Eru_Iluvatar_has_dec|Eru Iluvatar has decided the fate of Balin's Company, and it cannot be changed.
+qstr_Eru_Iluvatar_has_dec|一如伊卢瓦塔已经决定了巴林一行人的命运，这是无法改变的。
 qstr_They_are_coming....!|他们来了……！
-; qstr_Who...dares...enter.|Who...dares...enter...
+qstr_Who...dares...enter.|谁…敢…过来…
 qstr_You_are_not_welcome_|我们不欢迎你！
 qstr_Finally_I_found_you!|我终于找到你了！我们赶快离开这！
 qstr_You...are....ours...|你…是…我们的……
@@ -829,14 +829,14 @@ qstr_Look_at_my_over_the_|看看我的头像，{playername}！我真漂亮！
 qstr_You_wish_old_man_my_|如您所愿，老人家，我的头像其实更好！
 qstr_You_should_really_se|你真应该看看摄政王迪耐瑟二世的书脸，他的照片赞极了！
 qstr_Press_Space_to_conti|请按空格键继续...
-; qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} until next promotion^
-; qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})^
-; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})^
-; qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} until next promotion^
+qstr_{s24}__{reg13}____{r|{s24}({reg13})-{reg20}直到下一次晋升^
+qstr_Influence:^_{reg11}_|影响力：^{reg11}(对于{s16})
+qstr_Resource_Points:^_{r|资源点：^{reg12}(在{s16})
+qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21}直到下一次晋升^
 ; qstr_{s13}_{reg11}__with_|{s13} {reg11} (with {s16})^
 ; qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
-; qstr_Four_years_after_bri|Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once-Dwarven city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside the chamber. Barring the gates, Ori and the few survivors set up a final defense.
-; qstr_You_chase_an_orc_sco|You chase an orc scout party into the forest...
+qstr_Four_years_after_bri|四年前一群来自孤山的矮人试图重建曾经的矮人城市卡扎督姆，巴林在看镜影湖时被一支兽人箭所杀，他的人民立即与来自银流河的半兽人爆发了冲突。从东门到第一大厅，然后是在卡扎督姆大桥和第二大厅连续撤退之后，剩下的长须矮人被迫返回第二十一大厅。[2]在通过都灵之门撤退失败后以及目睹欧音之死后，在失去第二十一大厅后，马萨布尔室成为了营地的最后抵抗之地。除了大门，奥里和少数幸存者建立了最后的防御。
+qstr_You_chase_an_orc_sco|你追随一队半兽人斥候进入了森林…
 qstr_^No_food:___{reg7}|^食物短缺：-{reg7}
 qstr_Current_party_morale|当前部队士气是：{reg5}。^当前部队士气加权为：^^基础士气：+50^部队规模：{s2}{reg1}^统御技能：{s3}{reg2}^食物品种：{s4}{reg3}{s5}^特殊物品：{s6}{reg6}^最近事件：{s7}{reg4}^总计：{reg5}
 qstr_Defending|防卫中
@@ -860,7 +860,7 @@ qstr_Current_party_size_l|当前部队规模上限是：{reg5}。^当前队伍�
 qstr_{s2}^_________{s4}:_|{s2}^{s4}：{reg1}({s23})
 qstr__________Faction_str|派系力量报告：^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^派系力量低于{reg1}是将经常被围攻。
-; qstr_Savagery|Savagery
+qstr_Savagery|野蛮人
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|特性获得：^{s2}
 qstr_^^You_are_{s17}.|^^你是{s17}。
@@ -876,7 +876,7 @@ qstr_Unknown_{reg3}_|未知({reg3})
 qstr_ON|开
 qstr_OFF__cheat_|关(作弊)
 qstr_OFF|关
-; qstr_All_messages|All messages
+qstr_All_messages|所有信息
 qstr_{reg0}__will_most_li|{reg0}(极大概率导致存档崩溃)
 qstr_{reg0}__could_possib|{reg0}(有概率导致存档崩溃)
 qstr_Normal|正常
@@ -916,10 +916,10 @@ qstr__{s17}.|，{s17}。
 qstr_A_group_of_{s1}_is_{|一群{s1}正向你{s10}。
 qstr_You_are_attacking_a_|你正攻击一群{s1}
 qstr_The_battle_against_t|对抗一群{s1}的战斗继续
-; qstr_There_are_{reg39}_al|There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points.
-; qstr_Having_a_small_party|Having a small party has its benefits...You and your troops hide from the enemy for a few hours to be sure that you are not seen.
-; qstr_Your_ability_to_surv|Your ability to survive in harsh environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
-; qstr_{reg4}_will_be_lost.|{reg4} will be lost.
+qstr_There_are_{reg39}_al|在{reg39}这场战斗中有盟友指挥官。你可以使用{reg40}影响点命令他们和他们的部队。
+qstr_Having_a_small_party|小队伍有小的好处…你和你的士兵可以在敌人面前隐藏几个小时而不被发现。
+qstr_Your_ability_to_surv|能够在恶劣环境下生存的能力使你找到了一个安全的藏身之地。（你的荒野求生技能允许你和{reg1}部队一起隐藏）
+qstr_{reg4}_will_be_lost.|你将丢下{reg4}。
 qstr_{s13}_asked_you_to_r|{s13}希望你带着至少{reg13}名士兵向他报告。
 qstr_{s13}_ordered_you_to|{s13}命令你参加对{s14}的攻击。
 qstr_You_were_victorious!|你胜利了！
@@ -928,17 +928,17 @@ qstr_Your_companions_carr|你的同伴把你从战场上运了出来。
 qstr_You_have_defeated_th|你击败了敌人。
 qstr_You_have_retreated_f|你从战斗中撤离。
 qstr_^^Ally_Casualties:{s|^^盟军伤亡：{s0}
-; qstr_You_and_{s3}_celebra|You and {s3} celebrate your victory against {s4}.
+qstr_You_and_{s3}_celebra|你和{s3}庆祝你对{s4}的胜利。
 qstr_News_of_your_victory|你战胜{s4}的消息传到了{s3}。
 qstr_{s3}_witnesses_your_|{s3}得知了你战胜{s4}的消息。
-; qstr_Even_though_there_we|Even though there were no allies to witness your victory, your troops nevertheless celebrate your triumph.
+qstr_Even_though_there_we|即使没有友军见证你的胜利，仍有你的士兵来庆贺你的成就。
 qstr_{s1}_of_{s3}_managed|{s3}的{s1}设法逃离了。
 qstr_Prisoners_rescued_so|到目前为止解救的囚犯：{reg1}
 qstr_Victory_comment._Pla|评价：胜利，玩家靠自己的力量胜利了。
 qstr_Ordinary_victory_com|评价：普通胜利，玩家至少提供了40%的助力。
 qstr_Player_participation|评价，重在参与，敌人至少有1000点初始强度。
 qstr_No_victory_comment._|评价：无，小型冲突的同时玩家尽力不超过友军的40%
-; qstr_{reg1}_kills_of_{s1}|{reg1} kills of {s1} faction troops counted towards Oath. TOTAL Kills: {reg0}
+qstr_{reg1}_kills_of_{s1}|{s1}派系士兵击杀数{reg1}，已计入誓言。总击杀：{reg0}
 qstr_Some_of_your_tendons|你的一些肌腱在战斗中拉伤了，力 -1。
 qstr_You_took_a_nasty_wou|你腿上的伤即使痊愈也会导致跛足，敏 -1。
 qstr_You_have_trouble_thi|战后你才发现头伤导致了频繁的头痛，智 -1。
@@ -982,7 +982,7 @@ qstr_the_place|当地
 qstr_the_castle|城堡
 qstr_Stay_indoors_for_som|驻扎一段时间(每晚{reg1}资源点)
 qstr_Camp_outside_for_som|露营一段时间(无额外费用)
-; qstr_{s4}_s_scouts_have_s|{s4}'s scouts have seen and reported your failure. You have brought shame to {s4} and the responsibility of this failure is yours alone.
+qstr_{s4}_s_scouts_have_s|{s4}的斥候目睹并报告了你的失败。你使{s4}蒙羞，并且这次失败的责任完全在你。
 qstr_{s1}_s_Ship|{s1}的船
 qstr_Time_passes...|时间流逝...
 qstr_Forces_of_Good|正义方的军队
@@ -991,36 +991,36 @@ qstr_Forces_of_Isengard|艾辛格的军队
 qstr_their_enemies|他们的敌人
 qstr_{s11}_and_{s13}|{s11}和{s13}
 qstr_{s11}_{s13}|{s11}，{s13}
-; qstr_a_scout_party_from_{|a scout party from {s3}
-; qstr_two_scout_parties_an|two scout parties and a forager party from {s3}
-; qstr_two_scout_parties_and|two scout parties and a raider party from {s3}
-; qstr_three_scouts_two_for|three scouts, two foragers, and a patrol from {s3}
-; qstr_three_scouts_two_rai|three scouts, two raiders, and a war party from {s3}
+qstr_a_scout_party_from_{|来自{s3}的一支斥候队
+qstr_two_scout_parties_an|来自{s3}的两支斥候队和一支掠袭者队
+qstr_two_scout_parties_and|来自{s3}的2支斥候队和1支突袭队
+qstr_three_scouts_two_for|来自{s3}的3支斥候队，2支掠夺队和1支巡逻队
+qstr_three_scouts_two_rai|3名斥候，2名突袭者，还有来自{s3}的一支战队
 ; qstr_You_see_the_village_|You see the village being raided by bandits. You ask most of your troops to watch out for other raiders while you take a small group and prepare to defend villagers.
 ; qstr_You_see_the_village_y|You see the village you were tasked to raid. You and a small group of your raiders prepare to attack the village so as not to be seen.
 qstr_The_raiders_are_defe|掠夺者被击败了！在村民们的新英雄的帮助下，凡是还保持清醒的土匪都带着巨大的恐惧摸黑向着来时的方向跑逃跑了。
 qstr_Try_as_you_might_you|尽管尽了最大的努力，你依旧没能打败劫掠者。他们将村子夷为平地之后就锁着剩下的村民离开了。
 qstr_The_village_has_been|村子已被劫掠，村民要么被杀要么为奴。黑暗魔君对此很满意。
 qstr_You_failed_to_raid_t|你没能成功劫掠村庄，你和你的人被赶走了。你在听到胜利者欢呼的同时感到了索伦之眼不悦的目光。
-; qstr_The_Scout_Camp_has_b|The Scout Camp has been razed, This will slow the advance of the enemy.
-; qstr_You_failed_to_destro|You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly stuck.
-; qstr_You_have_defeated_the|You have defeated the raiding fleet! This is a heavy blow to the enemy's plans!
+qstr_The_Scout_Camp_has_b|这个斥候营地已经被夷为平地了，这将会削弱敌人的优势。
+qstr_You_failed_to_destro|你没能够摧毁这个斥候营地。敌人已经对你的派系采取了行动，并且无疑起效了。
+qstr_You_have_defeated_the|你成功击败了突袭舰队！这是对敌人计划的沉重打击！
 ; qstr_You_defeated_the_int|You defeated the intercepting fleet! Even though you do not have enough strength left to raid the city, this is a great victory!
-; qstr_You_drove_back_the_e|You drove back the enemy fleet, but lost most of your ships!
-; qstr_You_were_defeated_by|You were defeated by the intercepting fleet and failed to raid the city!
+qstr_You_drove_back_the_e|你击退了敌人的舰队，但是却损失了很多船只！
+qstr_You_were_defeated_by|你被截击舰队打败了，且没能够掠夺城市！
 qstr_Lorien|罗斯洛立安
 qstr_Imladris|瑞文戴尔
 qstr_Woodelf|木精灵
-; qstr_^^^^^^^You_come_upon|^^^^^^^You come upon the refugees leaving {s2} and on their way to {s3}. ^^They are mostly the old and the infirmed, accompanied by women and children.^^ There are guards, but not enough to protect everyone from a raid.
-; qstr_^^^^^^^You_come_upon_|^^^^^^^You come upon the refugees you have been tracking since {s2}. They seem to be on their way to {s3}, and are mostly the old and the infirmed. ^^ There are few guards, but not enough to stop you and your men from killing all of them.
-; qstr_^^At_last_the_Master|^^At last, the Master is making His move! The torches burn bright. The sharp weapons gleam. You and your stout lads will receive marching orders soon. Ai, there'll be fighting, lots of it, and glory enough to go around!^^You have the honour of being summoned to audience with the Master in His tower. Likely enough your first orders will be snaga's work - raid a village here, waylay a caravan there. But you'll prove yourself soon enough. Who's to say you won't play as large a role as any commander of {s2} in {s3}?^^The War has begun; the fall of Man and their allies begins!
-; qstr_^^Your_head_suddenly|^^Your head suddenly fills with a vision - the flaming Eye. All around you, your warriors stop in their tracks. Somehow, you know at that moment that all of you are hearing the same summons, seeing the same vision. Great is the art of the Lidless Eye - great is the power of Barad-dûr!.^^The knowledge, unspoken, seeps into your very bones. The time has come. The Dark Lord commands - you shall all march upon your enemies in open war. Orders from {s2} in {s3} will come. Your part at first will not be great, but you'll prove yourself soon enough.^^ The War has begun; the fall of the West begins!
-; qstr_{s13}_asked_you_to_j|{s13} asked you to join him with at least {reg13} troops and meet Isengard's Last Stand.
-; qstr_You_defeated_{reg5}_|You defeated {reg5} enemies and have impressed your commander.
+qstr_^^^^^^^You_come_upon|^^^^^^^你遇到了逃离{s2}并正在前往{s3}的难民。^^他们几乎都是年老或刚康复的，有妇女和孩童作伴。^^他们有一些守卫，但不足以在袭击中保护好每一个人。
+qstr_^^^^^^^You_come_upon_|^^^^^^^你遇到了从{s2}开始就在跟踪的难民。他们看上去在去{s3}的路上，而且大多数都是年老或刚康复的。^^他们有一些守卫，但不足以阻止你和你的手下杀光他们。
+qstr_^^At_last_the_Master|^^终于，主人开始行动了！火炬燎亮。兵刃锐闪。你和你强壮的伙伴们很快就会接到行军的命令。唉，接下来将会有很多场战斗等着你，但是你的名字也会随之传遍四方。^^你应该因被召唤去觐见塔上的主人而感到光荣。一般来说给你的第一个命令将会像下仆和奴隶那样—去这里劫掠一个村庄，去那里拦截一队商队。但你很快就能展现自己真正的价值。谁能说你不能成为{s3}{s2}麾下一位伟大的指挥官呢？^^战争已经开始了；人类及其盟友的黄昏来临了！
+qstr_^^Your_head_suddenly|^^你的脑中突然被一个幻象充斥—燃烧着的巨眼。在你身边，所有的士兵都停下了他们地脚步。不知怎么地，你知道那一刻你们所有人都听到了相同的召唤，看见了同样的异象。拥有伟大工艺的无睑巨眼—无法匹敌的邪黑塔的力量！^^知识，无声无息地渗入你的骨头里。时机已到。黑暗魔君下令—你们将要在全面战争开始时倾尽全力向你的敌人进军。{s3}的{s2}将会发出具体的军令。你的任务刚开始时并不会太顺利，但是你很快就证明自己。^^战争已经开始了；西方的黄昏来临了！
+qstr_{s13}_asked_you_to_j|{s13}要你带着至少{reg13}名士兵加入他，并且与艾辛格的最后守卫军团会面。
+qstr_You_defeated_{reg5}_|你击败了{reg5}名敌人，使你的指挥官印象深刻。
 qstr_You_defeated_{reg5}_e|你击败了{reg5}个敌人。
 qstr_You_failed_to_defeat|你未能打败任何敌人。
-; qstr_The_sorcerer_slain_y|The sorcerer slain, you and your companions hastily bandage up wounds and slip out into the night. Foul voices shriek at your backs and you can feel many burning eyes looking for you in the shadows. Soon the anger turns to disappointment and the sounds of pursuit are muffled, replaced by the usual heavy silence of Mirkwood. You have escaped
-; qstr_The_sorcerer_slipped|The sorcerer slipped from your grasp and slithered into the darkness of his domain. With hearts weighted by failure, you and your companions hastily bandage up wounds and withdraw into the night. Mocking voices shriek at your backs and you can feel many burning eyes trying to pierce the shadows. Laughter and insults are soon mercifully muffled, replaced by the usual heavy silence of Mirkwood. You have escaped.
+qstr_The_sorcerer_slain_y|巫师被杀掉了，你和你的同伴匆匆地包扎了伤口然后趁着夜色撤退了。嘶哑的声音在你身后呐喊并且你感到在阴影中许多灼热的目光愤怒地搜寻着你们的身影。很快愤怒变成了沮丧追赶的声音也渐渐远去，取而代之的是幽暗密林平时沉重的寂静。你成功地逃脱了。
+qstr_The_sorcerer_slipped|师从你的手上逃脱并且溜进属于他们的黑暗领域。心中承受着失败的重担，你和你的同伴快速地处理了伤口并撤入夜色当中。嘲笑的声音在你身后尖锐地响起而且你感受到许多燃烧的眼睛快要穿透夜晚的阴影似的紧盯着你们。嘲笑和侮辱很快就幸运地消散了，取而代之的是幽暗密林平时沉重的寂静。你成功地逃脱了。
 qstr_You_approach_a_heavi|你进入了森林中一个戒备森严的地方...
 qstr_You_wait_for_darknes|你等待黑暗的降临……
 qstr_You_are_quickly_disc|你很快就会被敌人发现了。
@@ -1050,11 +1050,11 @@ qstr_{s1}_has_been_defeat|{s1}已被击败。任务取消。
 qstr_You_must_follow_{s1}|你必须跟随{s1} ！
 qstr_You_must_follow_{s1}!|你必须跟随{s1}！这是最后的警告！
 qstr_{s1}_parties_defeate|{s1}军队被击败：占总数{reg2}中的{reg1}
-; qstr_{reg65}_Moria_and/or|{reg65} Moria and/or Gundabad troops killed. (Counter refreshes every hour)
-; qstr_{reg65}_{s3}_troops_|{reg65} {s3} troops killed. (Counter refreshes every hour)
-; qstr_{reg66}_{s5}_troops_|{reg66} {s5} troops killed. (Counter refreshes every hour)
-; qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} troops killed. (Counter refreshes every hour)
-; qstr_{reg68}_{s10}_killed|{reg68} {s10} killed. (Counter refreshes every hour)
+qstr_{reg65}_Moria_and/or|{reg66}{s5}摩瑞亚以及/或者刚达巴部队已杀。（计数器每小时刷新一次）
+qstr_{reg65}_{s3}_troops_|{reg65}{s3}部队已杀。（计数器每小时刷新一次）
+qstr_{reg66}_{s5}_troops_|{reg66}{s5}部队已杀。（计数器每小时刷新一次）
+qstr_{reg67}_{s7}_{s8}_tr|{reg67}{s7}{s8}部队已杀。（计数器每小时刷新一下）
+qstr_{reg68}_{s10}_killed|{reg68}{s10}已杀。（计数器每小时刷新一次）
 qstr_{s1}_is_scouted.|{s1} 被侦查了
 qstr_The_Age_of_Men_has_f|人类的时代终于结束了。现在邪黑塔和欧散克塔都在集结他的军队和盟友，决定谁才是中土唯一的统治者！
 qstr_The_War_of_the_Two_T|双塔之间的战争打响了！
@@ -1067,12 +1067,12 @@ qstr_Guard_Legion_of_{s6}|{s6}的守卫军团
 qstr_Scouts_report_that_{|根据报告显示：{s6}在{s7}周围聚集了庞大的军队，他们在做最后的挣扎，企图保卫他们的首都。
 qstr_The_forces_of_{s2}_e|{s2}的军队在{s15}建立了一个前线营地！
 qstr_The_hosts_of_{s2}_ma|{s2}的军队前来保卫他们的家园！
-; qstr_Gondor_has_called_fo|Gondor has called for aide!
-; qstr_Gondor_is_accompanyi|Gondor is accompanying the marshall!
+qstr_Gondor_has_called_fo|刚铎已呼叫援助！
+qstr_Gondor_is_accompanyi|刚铎正在听从元帅的号令！
 qstr_{s5}_has_stopped_fol|{s5}不再跟随你。
-; qstr_You_have_{reg69}_all|You have {reg69} ally party following you
-; qstr_You_have_{reg69}_ally|You have {reg69} ally parties following you
-; qstr_The_forces_of_{s2}_h|The forces of {s2} have regrouped and march on to {s15}!
+qstr_You_have_{reg69}_all|你有{reg69}友军部队跟随着你。
+qstr_You_have_{reg69}_ally|你有{reg69}友军部队跟随着你。
+qstr_The_forces_of_{s2}_h|{s2}的军队已经再次集结并向{s15}进军中！
 qstr_{s1}_from_{s2}|自{s2}来的{s1}
 qstr_When_dealing_with_lo|请记住，在{s11}与当地人交易的时候，他们不认识你，也不一定承认你在{s10}取得的功绩。(能在{s11}用于交易的资源点和你在{s10}取得的的资源点不同，你要在{s11}取得当地派系的资源点以便与当地人交易；查看报告菜单获取更多消息)
 qstr_Info|信息
@@ -1100,13 +1100,13 @@ qstr_{s27}:_Party_morale_|{s27}：部队士气提升了。
 qstr_{s27}:_Party_morale_d|{s27}：部队士气降低了。
 qstr_You_have_failed_to_f|你未能履行为巴林之死所做的复仇誓言！
 qstr_You_have_failed_to_fu|你未能履行为{s1}之死所做的复仇誓言！
-; qstr_Your_troops_value_yo|Your troops value your effort to fullfill your oath, but acknowledge that events unfolded too quick. As a result, 
-; qstr_{s22}You_have_fulfil|{s22}You have fulfilled your oath to avenge Balin and his company!
-; qstr_{s22}You_have_fulfill|{s22}You have fulfilled your oath of vengeance for {s1}'s heroic death!
-; qstr_Reinforcements|Reinforcements
-; qstr_Refugees_Escaped:_{r|Refugees Escaped: {reg10} --- Refugees Killed: {reg11}
-; qstr_Raider_Parties_Kille|Raider Parties Killed: {reg12}
-; qstr_One_of_the_target_ce|One of the target centers by the refugee trains have been destroyed. The refugees have scattered, and are nowhere to be found.
+qstr_Your_troops_value_yo|你的士兵认可你完成誓言的努力，但是承认事情发生的开快了。结果，
+qstr_{s22}You_have_fulfil|{s22}你完成了你为巴林和他的同伴复仇的誓言！
+qstr_{s22}You_have_fulfill|{s22}你完成了你为{s1}的英雄之死复仇的誓言！
+qstr_Reinforcements|增援
+qstr_Refugees_Escaped:_{r|逃脱的难民：{reg10}—被杀的难民：{reg11}
+qstr_Raider_Parties_Kille|被消灭的掠夺队：{reg12}
+qstr_One_of_the_target_ce|难民队的一个目标据点已经被摧毁。难民们已经分散开，无处可寻。
 qstr_As_an_Orc_or_a_Dwarf|身为半兽人或是矮人，你可以使用自定义相机来提升你的最后之日游戏体验。请查看“游戏概念”以取得如何使用自定义相机的信息。
 qstr_Custom_Camera|自定义相机
 qstr_{reg65?my_Lady:my_Lo|{reg65?女士:大人}
@@ -1156,17 +1156,17 @@ qstr_Steward_Denethor|摄政王迪耐瑟二世
 qstr_the_Golden_Hall|金殿
 qstr_Edoras|伊多拉斯
 qstr_King_Theoden|希优顿国王
-; qstr_Merry_asked_you_to_d|Merry asked you to deliver a message to his cousin, Pippin, in Minas Tirith.
-; qstr_Pippin_asked_you_to_|Pippin asked you to deliver a message to his cousin, Merry, in Edoras.
+qstr_Merry_asked_you_to_d|梅里请求你捎一封信给他的表弟，皮平，在米纳斯提里斯。
+qstr_Pippin_asked_you_to_|皮平请求你捎一封信给他的表哥，梅里，在伊多拉斯。
 qstr_Tell_him_I_ve_grown_|告诉他我又长高了一英寸！
-; qstr_Tell_Pip_he_smokes_t|Tell Pip he smokes too much!
-; qstr_Tell_him_I_can_ride_|Tell him I can ride a grown horse now!
-; qstr_Ask_him_if_he_has_an|Ask him if he has any pipe-weed left!
-; qstr_Tell_him_I_ll_be_the|Tell him I'll be the tall one when we see each other again!
+qstr_Tell_Pip_he_smokes_t|告诉皮平他抽的烟太多了！
+qstr_Tell_him_I_can_ride_|告诉他我现在能骑成年马了！
+qstr_Ask_him_if_he_has_an|问他还有没有一根烟草剩下！
+qstr_Tell_him_I_ll_be_the|告诉他当我们再次相见我会比他更高！
 qstr_Ask_if_he_s_seen_Gan|问问他有没有见到甘道夫！
 qstr_You_gained_250_exper|你获得了250点经验。
 qstr_Treebeard_wants_you_|树胡希望你找到并击败在法贡森林伐树的兽人。
-; qstr_Something_wrong_not_e|Something wrong, not enough troops for scout party
+qstr_Something_wrong_not_e|出了点问题，没有足够的士兵加入斥候队
 qstr_my_home_town|我的故乡
 qstr_I_am_in_perfect_heal|我很健康。
 qstr_I_am_suffering_from_|我正遭受{s1}困扰
@@ -1204,7 +1204,7 @@ qstr_^{s22}_is_grateful_t|^{s22}由衷的感激你，{s23}，{s29}^
 qstr_{s31}{reg28?Those:Th|{s31}{reg28?这群:这名}勇敢的{reg28?士兵:士兵}定能极大地增强{s21}的防御。{s32}^^[获得{s14}的{reg14}资源点]
 qstr_{s31}{reg28?Those:Tha|{s31}{reg28?这群:这名}有用的{reg28?士兵们:士兵}将帮助我们守护{s21}。{s32}^^[获得{s14}的{reg14}资源点]
 qstr_{s4}_^Oh_and_take_ba|{s4} ^噢，请将这些士兵带回去吧，他们并不是我们的同类。
-; qstr_You_have_reinforced_|You have reinforced {s8} with {reg55} troops.
+qstr_You_have_reinforced_|你带着{reg55}士兵增援了{s8}。
 qstr_I_don_t_need_them_an|我不再需要他们了，你留着吧。
 qstr_It_is_my_duty_to_pro|保护人民是我的天职。
 qstr_It_is_my_duty_to_prot|保护盟友是我的天职。

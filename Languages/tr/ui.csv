@@ -64,7 +64,7 @@ ui_party_losses|%s :%d yaralandı --- %d öldürüldü %d
 ui_following|Takip ediliyor
 ui_accompanying|Eşlik ediyor
 ui_dumping_value_items|%d eşyalar kalıcı olarak kaybolacak, emin misiniz?
-; ui_dumping_value_item|One item will be permanently lost, are you sure?
+ui_dumping_value_item|Bir eşya kalıcı olarak kaybolacak, emin misiniz ?
 ui_notification_requirements_not_met|Bu silah için gerekli beceri yada yeteneğe sahip değilsin
 ui_disband|terhis et
 ui_you_hit_a_friendly_troop|Dost bir birime zarar verdin!
@@ -92,17 +92,17 @@ ui_tracks|İzler
 ui_order_button_hold_fire|Ateş etmeyin
 ui_order_button_fire_at_will|Ateş serbest
 ui_order_button_fire_orders|menzilli emirleri
-; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
+ui_need_to_learn_prisoner_management|Esir alabilmek için Esir Yönetimi yeteneğini öğrenmen gerek.
 ; ui_game_log_window|Game Log Window
 ui_unbalanced|Dengesiz
 ui_can_crush_through_blocks|Blokların içinden geçebilir
 
-; ui_order_1|Select Order 1
-; ui_order_2|Select Order 2
-; ui_order_3|Select Order 3
-; ui_order_4|Select Order 4
-; ui_order_5|Select Order 5
-; ui_order_6|Select Order 6
+ui_order_1|Seçim Sırası 1
+ui_order_2|Seçim Sırası 2
+ui_order_3|Seçim Sırası 3
+ui_order_4|Seçim Sırası 4
+ui_order_5|Seçim Sırası 5
+ui_order_6|Seçim Sırası 6
 ui_order_button_hold_this_position|bu pozisyonu koruyun
 ui_order_button_follow_me|beni takip et
 ui_order_button_charge|Hücum
@@ -127,8 +127,8 @@ ui_stand_ground_e_|%s, yerinizde kalın!
 ui_retreat_e_|%s, geri çekilin!
 ui_mount_horses_e_|%s, Atlı
 ui_dismount_e_|%s, Attan inin!
-; ui_advance_e_|%s, advance ten paces!
-; ui_fall_back_e_|%s, fall back ten paces!
+ui_advance_e_|%s, on adım ileri!
+ui_fall_back_e_|%s, on adım geri!
 ui_stand_closer_e_|%s, yakın durun
 ui_spread_out_e_|%s, dağılın.
 ui_use_blunt_weapons_e_|%s, yalnızca künt silahları kullan.
@@ -139,12 +139,12 @@ ui_hold_this_position_e_|%s, bu pozisyonu koruyun
 ui_infantry|Piyade
 ui_archers|Okçular
 ui_cavalry|Süvari
-; ui_companions|Companions
+ui_companions|Yoldaşlar
 ui_everyone_hear_me|Herkes beni dinlesin.
 ui_everyone|Herkes
-; ui_everyone_around_me|Nearby Soldiers
-; ui_str_hear_me|%s, hear me!
+ui_everyone_around_me|Yakındaki askerler
+ui_str_hear_me|%s,Duy beni!
 
-; ui_return|Return
-; ui_factions|Factions
-; ui_troop_upgrades|Troop upgrades
+ui_return|Geri dön
+ui_factions|Taraflar
+ui_troop_upgrades|Birlik geliştirmeleri
