@@ -1580,9 +1580,9 @@ scene_props = [
 ("umbar_smallboatoar",0,"umbar_prop_smallboatoar","0", []),
 # Moria
 ] + (is_a_wb_sceneprop==1 and [
-("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,60,0x010301)])]), #WB is brighter by default, so we make the fog darker
+("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,60,0x010301),(set_rain, 0,100)])]), #WB is brighter by default, so we make the fog darker
     ] or [
-("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,70,0x030403)])]) #new fog, slightly greenish and minimally brighter
+("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,70,0x030403),(set_rain, 0,100)])]) #new fog, slightly greenish and minimally brighter
 ]) + [
 #("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,50,0x010101)])]), #old fog, dark as fuck
 #("moria",0,"moria_hall","bo_moria_hall", []), #no fog, for working on scene
@@ -1982,7 +1982,7 @@ scene_props = [
 ("dead_marshes_d",0,"dead_d","0",[(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new,"psys_candle_light_small")])]),
 ("dead_marshes_e",0,"dead_e","0",[(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new,"psys_candle_light_small")])]),
 
-("isen_wood_construction_b", 0, "isen_wood_construction_b", "0", []),
+("isen_wood_construction_b", 0, "isen_wood_construction_b", "bo_isen_wood_construction_b", []),
 ("prop_cage_rusty", 0, "prop_cage_rusty", "0", []),
 ("wagon_c", 0, "wagon_c", "0", []),
 ("mt_fountain", 0, "mt_fountain", "bo_mt_fountain", []),
@@ -2354,7 +2354,7 @@ scene_props = [
 ("isen_wall",0,"isen_wall","bo_isen_wall", []),
 ("isen_sink",0,"isen_sink","bo_isen_sink", []),
 ("isen_forge",0,"isen_forge","bo_isen_forge", []),
-("isen_metal",0,"isen_metal","0", []),
+("isen_metal",0,"isen_metal","bo_isen_metal", []),
 ("isen_cave",0," isen_cave","bo_isen_cave", []),
 ("isen_chasm",0,"isen_chasm","bo_isen_chasm", []),
 ("horse_warg_1C",sokf_invisible,"warg_1C","0", [(ti_on_init_scene_prop,[
@@ -2416,8 +2416,6 @@ scene_props = [
 ("Dale_fake_house_far_d",0,"Dale_fake_house_far_d","bo_fake_house_far_d", []),
 
 
-] + (is_a_wb_sceneprop==1 and [  
-
 ("Dale_castle_small_round_tower",0,"Dale_small_round_tower_a","bo_arabian_castle_corner_b", []),
 ("Dale_castle_small_round_tower_roof",0,"Dale_small_round_tower_roof_a","bo_small_round_tower_roof_a", []),
 ("Dale_castle_Stone_Stairs",0,"Dale_stone_stairs_b","bo_stone_stairs_b", []),
@@ -2453,7 +2451,6 @@ scene_props = [
 ("Dale_castle_courtyard_entry_b",0,"Dale_courtyard_entry_b","bo_Dale_courtyard_entry_b", []),
 ("Dale_castle_courtyard_house_b",0,"Dale_castle_courtyard_house_a","bo_castle_courtyard_house_b", []),
 
-] or []) + [
 
 #InVain: WB only props below, hidden (no asset) in M&B
 ("ship"                                       ,0,"ship","bo_ship",[]),
@@ -2742,11 +2739,11 @@ scene_props = [
 ("morgul_tower_b_vp_E",0,"morgul_tower_b_color","0", []),
 ("morgul_stone_minaret_a",0,"morgul_stone_minaret_a","bo_stone_minaret_a", []),
 
-( "mordor_cliff_distant_3",0,"mordor_cliff_distant_3","bo_cliff_distant_3",[]),
-( "mordor_cliff_distant_1",0,"mordor_cliff_distant_1","bo_cliff_distant_1",[]),
-( "mordor_cliff_distant_6",0,"mordor_cliff_distant_6","bo_cliff_distant_6",[]),
-( "mordor_cliff_distant_7",0,"mordor_cliff_distant_7","bo_cliff_distant_7",[]),
-( "mordor_cliff_distant_8",0,"mordor_cliff_distant_8","bo_cliff_distant_8",[]),
+( "mordor_cliff_distant_3",0,"mordor_cliff_distant_3","bo_mordor_cliff_distant_3",[]),
+( "mordor_cliff_distant_1",0,"mordor_cliff_distant_1","bo_mordor_cliff_distant_1",[]),
+( "mordor_cliff_distant_6",0,"mordor_cliff_distant_6","bo_mordor_cliff_distant_6",[]),
+( "mordor_cliff_distant_7",0,"mordor_cliff_distant_7","bo_mordor_cliff_distant_7",[]),
+( "mordor_cliff_distant_8",0,"mordor_cliff_distant_8","bo_mordor_cliff_distant_8",[]),
 
 ( "beorn_hall",0,"beorn_hall","bo_beorn_hall",[]),
 ( "beorn_side_house",0,"beorn_side_house","bo_house6",[]),

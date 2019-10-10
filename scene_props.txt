@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1772
+ 1805
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3070,7 +3070,7 @@ spr_umbar_smallboatoar 0 0 umbar_prop_smallboatoar 0 0
 
 
 spr_moria 0 0 moria_hall bo_moria_hall 1
--40  1 1798 2 70 197635 
+-40  2 1798 2 70 197635 1797 2 0 100 
 
 
 spr_moria_dimrill_gate 0 0 dimrill_gate bo_dimrill_gate 0
@@ -3867,7 +3867,7 @@ spr_dead_marshes_e 0 0 dead_e 0 1
 -40  2 1955 3 0 0 47 1965 1 27 
 
 
-spr_isen_wood_construction_b 0 0 isen_wood_construction_b 0 0
+spr_isen_wood_construction_b 0 0 isen_wood_construction_b bo_isen_wood_construction_b 0
 
 
 spr_prop_cage_rusty 0 0 prop_cage_rusty 0 0
@@ -4637,7 +4637,7 @@ spr_isen_sink 0 0 isen_sink bo_isen_sink 0
 spr_isen_forge 0 0 isen_forge bo_isen_forge 0
 
 
-spr_isen_metal 0 0 isen_metal 0 0
+spr_isen_metal 0 0 isen_metal bo_isen_metal 0
 
 
 spr_isen_cave 0 0  isen_cave bo_isen_cave 0
@@ -4757,6 +4757,105 @@ spr_Dale_fake_house_far_c 0 0 Dale_fake_house_far_c bo_fake_house_far_c 0
 
 
 spr_Dale_fake_house_far_d 0 0 Dale_fake_house_far_d bo_fake_house_far_d 0
+
+
+spr_Dale_castle_small_round_tower 0 0 Dale_small_round_tower_a bo_arabian_castle_corner_b 0
+
+
+spr_Dale_castle_small_round_tower_roof 0 0 Dale_small_round_tower_roof_a bo_small_round_tower_roof_a 0
+
+
+spr_Dale_castle_Stone_Stairs 0 0 Dale_stone_stairs_b bo_stone_stairs_b 0
+
+
+spr_Dale_tower_top_a 0 0 dale_tower_top_1 0 0
+
+
+spr_Dale_tower_top_c 0 0 dale_tower_top_3 0 0
+
+
+spr_Dale_castle_Gate_House 0 0 Dale_gate_house_b bo_Dale_gate_house_b 0
+
+
+spr_Dale_castle_High_Tower 0 0 Dale_castle_e_tower bo_castle_e_tower 0
+
+
+spr_Dale_Bell_Tower 0 0 Dale_church_tower_a bo_Dale_church_tower_a 0
+
+
+spr_Dale_Minaret 0 0 Dale_stone_minaret_a bo_stone_minaret_a 0
+
+
+spr_Dale_Hall 0 0 novgorod_sofiya bo_novgorod_sofiya 0
+
+
+spr_Dale_Palace 0 0 sobor bo_sobor 0
+
+
+spr_Dale_Market 0 0 Dale_castle_courtyard_a bo_castle_courtyard_a 0
+
+
+spr_Dale_castle_Gaillard 0 0 Dale_castle_gaillard bo_castle_gaillard 0
+
+
+spr_Dale_castle_Battlement 0 0 Dale_castle_battlement_b bo_arabian_castle_battlement_a 0
+
+
+spr_Dale_copula_1 0 0 dale_cupola_1 0 0
+
+
+spr_Dale_town_house_b 0 0 Dale_town_house_b bo_town_house_b 0
+
+
+spr_Dale_copula_2 0 0 dale_cupola_2 0 0
+
+
+spr_Dale_town_house_d 0 0 Dale_town_house_d bo_town_house_d 0
+
+
+spr_Dale_town_house_f 0 0 Dale_town_house_f bo_town_house_f 0
+
+
+spr_Dale_copula_3 0 0 dale_cupola_3 0 0
+
+
+spr_Dale_tower_top_b 0 0 dale_tower_top_2 0 0
+
+
+spr_Dale_copula_4 0 0 dale_cupola_5 0 0
+
+
+spr_Dale_copula_5 0 0 dale_cupola_7 0 0
+
+
+spr_Dale_copula_6 0 0 dale_cupola_8 0 0
+
+
+spr_Dale_small_wall 0 0 Dale_small_wall bo_small_wall_d 0
+
+
+spr_Dale_passage_house_b 0 0 Dale_new_passage_house bo_passage_house_b 0
+
+
+spr_Dale_Plaza 0 0 Dale_Plaza bo_Dale_Plaza 0
+
+
+spr_Dale_street_short 0 0 Dale_street_short bo_Dale_street_short 0
+
+
+spr_Dale_castle_battlement_d 0 0 Dale_castle_battlement_d bo_arabian_castle_battlement_d 0
+
+
+spr_Dale_castle_courtyard_house_extension_a_E 0 0 Dale_castle_courtyard_house_extension_a 0 0
+
+
+spr_Dale_castle_courtyard_house_extension_b_E 0 0 Dale_castle_courtyard_house_extension_b 0 0
+
+
+spr_Dale_castle_courtyard_entry_b 0 0 Dale_courtyard_entry_b bo_Dale_courtyard_entry_b 0
+
+
+spr_Dale_castle_courtyard_house_b 0 0 Dale_castle_courtyard_house_a bo_castle_courtyard_house_b 0
 
 
 spr_ship 0 0 ship bo_ship 0
@@ -5102,19 +5201,19 @@ spr_morgul_tower_b_vp_E 0 0 morgul_tower_b_color 0 0
 spr_morgul_stone_minaret_a 0 0 morgul_stone_minaret_a bo_stone_minaret_a 0
 
 
-spr_mordor_cliff_distant_3 0 0 mordor_cliff_distant_3 bo_cliff_distant_3 0
+spr_mordor_cliff_distant_3 0 0 mordor_cliff_distant_3 bo_mordor_cliff_distant_3 0
 
 
-spr_mordor_cliff_distant_1 0 0 mordor_cliff_distant_1 bo_cliff_distant_1 0
+spr_mordor_cliff_distant_1 0 0 mordor_cliff_distant_1 bo_mordor_cliff_distant_1 0
 
 
-spr_mordor_cliff_distant_6 0 0 mordor_cliff_distant_6 bo_cliff_distant_6 0
+spr_mordor_cliff_distant_6 0 0 mordor_cliff_distant_6 bo_mordor_cliff_distant_6 0
 
 
-spr_mordor_cliff_distant_7 0 0 mordor_cliff_distant_7 bo_cliff_distant_7 0
+spr_mordor_cliff_distant_7 0 0 mordor_cliff_distant_7 bo_mordor_cliff_distant_7 0
 
 
-spr_mordor_cliff_distant_8 0 0 mordor_cliff_distant_8 bo_cliff_distant_8 0
+spr_mordor_cliff_distant_8 0 0 mordor_cliff_distant_8 bo_mordor_cliff_distant_8 0
 
 
 spr_beorn_hall 0 0 beorn_hall bo_beorn_hall 0
