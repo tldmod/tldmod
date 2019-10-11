@@ -325,11 +325,11 @@ scenes = [
 ("forest_lorien4"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 ("forest_lorien5"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 
-("forest_mirkwood1"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood2"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood3"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
-("forest_mirkwood4"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
-("forest_mirkwood5"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"), #old terrain code for all mirkwood scenes: 0x00000000bc62c90d0002308c000048850000786900001ef5
+("forest_mirkwood1"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
+("forest_mirkwood2"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
+("forest_mirkwood3"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
+("forest_mirkwood4"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
+("forest_mirkwood5"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"), #old terrain code for all mirkwood scenes: 0x00000000bc62c90d0002308c000048850000786900001ef5
 
 ("forest_firien1"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 ("forest_firien2"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
