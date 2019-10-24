@@ -1725,13 +1725,13 @@ str_fullname_region_mordor|in Mordor, dem dunklen Reich Saurons
 str_fullname_region_dimrill|im Schattenbachtal, zu Füßen der Berge von Moria
 str_fullname_region_s_rebor|im Reich von Thal, zu Füßen des Einsamen Bergs
 str_shortname_region_unknown|in einer namenlosen Gegend
-str_shortname_region_pelennor|Pelennor-Felder
-str_shortname_region_subfac_pelargir|Lehen von Lebennin
-str_shortname_region_subfac_dol_amroth|Belfalas
-str_shortname_region_subfac_ethring|Tal des Ringlo
-str_shortname_region_subfac_lossarnach|Lehen von Lossarnach
+str_shortname_region_pelennor|auf den Pelennor-Feldern
+str_shortname_region_subfac_pelargir|in Lebennin
+str_shortname_region_subfac_dol_amroth|in Belfalas
+str_shortname_region_subfac_ethring|im Tal des Ringlo
+str_shortname_region_subfac_lossarnach|in Lossarnach
 str_shortname_region_subfac_pinnath_gelin|in den Pinnath Gelin
-str_shortname_region_subfac_blackroot|im Lehen Lamedon
+str_shortname_region_subfac_blackroot|in Lamedon
 str_shortname_region_n_ithilien|in Nord-Ithilien
 str_shortname_region_c_ithilien|in den Emyn Arnen
 str_shortname_region_s_ithilien|in Süd-Ithilien
@@ -1741,9 +1741,9 @@ str_shortname_region_anorien|in Anórien
 str_shortname_region_rohan0|in der Folde
 str_shortname_region_rohan1|in der Ostemnet
 str_shortname_region_rohan2|in der Westemnet
-str_shortname_region_rohan3|Ostfold
-str_shortname_region_rohan4|Westfold
-str_shortname_region_rohan5|Helms Klamm
+str_shortname_region_rohan3|in der Ostfold
+str_shortname_region_rohan4|in der Westfold
+str_shortname_region_rohan5|in Helms Klamm
 str_shortname_region_the_wold|im Wold
 str_shortname_region_gap_of_rohan|in der Pforte von Rohan
 str_shortname_region_entwash|bei den Mündungen der Entwasser

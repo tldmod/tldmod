@@ -106,7 +106,7 @@ qstr_1H_Weapons^2H_Weapon|Einhandwaffen^Zweihandwaffen^Stangenwaffen^Bogenschie�
 qstr_Equipment|Ausrüstung
 qstr_The_Last_Days_Mod_Op|The Last Days Mod Optionen
 qstr_War_Starts_at_Level:|Krieg beginnt bei Spielerlevel:
-qstr_Restrict_Player_Equi|EIngeschränkte Spielerausrüstung:
+qstr_Restrict_Player_Equi|Eingeschränkte Spielerausrüstung:
 qstr_Battle_Formations_an|Kampfformationen und AI:
 qstr_Native|Nativ
 qstr_TLD_FormAI__Original|TLD FormAI (Original)
@@ -1268,7 +1268,7 @@ qstr_Men_of_Gondor|die Menschen von Gondor
 qstr_Riders_of_Rohan|Reiter aus Rohan
 qstr_Elves_of_Imladris_an|die Elben von Imladris und Lothlorien
 qstr_Men_of_Dale_Dwarves_|die Menschen von Thal, die Zwerge vom Einsamen Berg, das Volk der Beorninger und Waldmenschen und die Elben vom Düsterwald
-qstr_Ah_{playername}_it_i|Ah, {playername}, gut, dass Ihr gekommen seid. Krieg steht uns vor der Tür und wir benötigen sowohl Krieger wie auch Hauptmänner, die bereit sind, ihre Eide zu erfüllen.^^Wir befinden uns im Krieg mit [s11], jedoch müssen wir zunächst unsere Kräfte sammeln und die Feinde schwächen, ehe wir es wagen können, gegen ihre Stützpunkte und Festungen vorzugehen. Jeder Sieg über unsere Feinde bringt uns dem Sieg näher und stärkt unsere Entschlossenheit. Also vertraue ich darauf, dass Ihr unsere Feinde bei jeder Gelegenheit bekämpft, sei es ein einfacher Spähertrupp oder ein Kriegshaufen. Stürzt Euch jedoch nicht alleine in die Schlacht, sondern kämpft an der Seite unserer trapferen Hauptmänner und auch unserer Verbündeten.
+qstr_Ah_{playername}_it_i|Ah, {playername}, gut, dass Ihr gekommen seid. Krieg steht uns vor der Tür und wir benötigen sowohl Krieger wie auch Hauptmänner, die bereit sind, ihre Eide zu erfüllen.^^Wir befinden uns im Krieg mit {s11}, jedoch müssen wir zunächst unsere Kräfte sammeln und die Feinde schwächen, ehe wir es wagen können, gegen ihre Stützpunkte und Festungen vorzugehen. Jeder Sieg über unsere Feinde bringt uns dem Sieg näher und stärkt unsere Entschlossenheit. Also vertraue ich darauf, dass Ihr unsere Feinde bei jeder Gelegenheit bekämpft, sei es ein einfacher Spähertrupp oder ein Kriegshaufen. Stürzt Euch jedoch nicht alleine in die Schlacht, sondern kämpft an der Seite unserer trapferen Hauptmänner und auch unserer Verbündeten.
 qstr_About_time_you_showe|Es wurde Zeit, dass du dich zeigst, {playername}. Wir sind nun im Krieg und ich dulde keinen Ungehorsam. Wir kämpfen gegen {s11}, jedoch müssen wir unsere Kräfte sammeln und den Feind im Feld niederringen, ehe wir es wagen können, ihre Festungen und Städte anzugreifen. Jeder Sieg über unsere Feinde wird sie näher an ihre vollständige Vernichtung heranführen und zudem unsere Stellung im Krieg verbessern. Also vertraue ich darauf, dass du den Feind bei jeder sich bietenden Gelegenheit bekämpfst, sei es ein einfacher Spähtrupp oder eine große Heerschar. Unterstütze außerdem unsere Hauptmänner und unsere Verbündeten, wann immer du sie kämpfen siehst. Unterlasse dies und ich werde es erfahren.
 qstr_we_are_fighting_agai|wir kämpfen gegen {s13}
 qstr_we_are_not_fighting_|wir kämpfen im Moment gegen niemanden
