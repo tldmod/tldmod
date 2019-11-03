@@ -530,7 +530,7 @@ dialogs = [
 [trp_treebeard, "treebeard_introduce_3", [], "(The stiff-limbed tree giant slowly opens his mouth which is concealed behind small branches, leaves and moss. With a very deep, slow and booming voice he very slowly expounds in a most commanding way:)^\
   'Hrooom... Hmmm... *I* am not going to tell you my name... not yet at any rate. For one thing it would take a long while. My name is growing all the time and I've lived a very long, long time; so my name is like a story. Real names tell you the story of things they belong to in my language, in the Old Entish as you might say. It is a lovely language, but it takes a very long time saying anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to.'", "treebeard_introduce_4",[]],
 [trp_treebeard|plyr, "treebeard_introduce_4", [], "Oh, you are an Ent! Legends speak of you and I am honored to be in your presence. I do not wish to impose and will leave if you so wish.", "treebeard_introduce_5",[]],
-[trp_treebeard, "treebeard_introduce_5", [], "(The stiff-limped giant and his fellow Ents stand still for many minutes in silence while a breeze passes through their leafy hairs and beards. They look at each other for another prolonged moment until an unusually hasty Ent who is resembling a rowan tree seems to want to speak. However, he stays silent until the giant stiff-limped Ent continues:)", "treebeard_questtalk",[]],
+[trp_treebeard, "treebeard_introduce_5", [], "(The stiff-limbed giant and his fellow Ents stand still for many minutes in silence while a breeze passes through their leafy hairs and beards. They look at each other for another prolonged moment until an unusually hasty Ent who is resembling a rowan tree seems to want to speak. However, he stays silent until the giant stiff-limbed Ent continues:)", "treebeard_questtalk",[]],
 [trp_treebeard|auto_proceed, "start", [], "ERROR", "treebeard_questtalk",[]],
   
   # [trp_treebeard|plyr, "treebeard_introduce_1", [], "Hi, talking tree!", "treebeard_talk",[
@@ -576,7 +576,7 @@ dialogs = [
     (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_current_state, 1)]],
   
 [trp_treebeard, "treebeard_questtalk", [(check_quest_active, "qst_treebeard_kill_orcs")], 
-"(The stiff-limped giant and his fellow Ents stand still in silence while a breeze passes through their leafy hairs and beards.)", "close_window",[(call_script,"script_stand_back"),]],
+"(The stiff-limbed giant and his fellow Ents stand still in silence while a breeze passes through their leafy hairs and beards.)", "close_window",[(call_script,"script_stand_back"),]],
   
 [trp_treebeard|auto_proceed, "treebeard_questtalk", [], "ERROR", "treebeard_pretalk",[]],
   
