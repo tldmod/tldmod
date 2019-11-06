@@ -658,7 +658,8 @@ fauna_kinds = [
  ('zl_rockformation',
   fkf_desert|fkf_desert_forest|fkf_realtime_ligting|fkf_rock|density(1),
   [['PW_rock_c', 'bo_pw_rock_c'],
-   ['PW_rock_e', 'bo_pw_rock_e']]),
+   ['PW_rock_e', 'bo_pw_rock_e'],
+   ['PW_rock_k', 'bo_pw_rock_k']]),
 
  ('zl_white_flowers',
   fkf_align_with_ground|fkf_grass|density(2),

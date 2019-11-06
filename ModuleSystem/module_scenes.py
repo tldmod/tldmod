@@ -287,8 +287,8 @@ scenes = [
 ("battlefield4" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
 ("battlefield5" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],["dorwinion_sack"],"outer_terrain_plain"),
 ("battlefield6" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield7" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000002440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_rohan"),
-("battlefield8" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],[],"outer_mountains2south"),
+("battlefield7" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"),
+("battlefield8" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b0190c8080058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"),
 ("battlefield9" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
 ("battlefield10",sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
 ("small_ford"   ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
@@ -325,9 +325,9 @@ scenes = [
 ("forest_lorien4"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 ("forest_lorien5"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 
-("forest_mirkwood1"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
-("forest_mirkwood2"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
-("forest_mirkwood3"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
+("forest_mirkwood1"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"),
+("forest_mirkwood2"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b0190c8080058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"),
+("forest_mirkwood3"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
 ("forest_mirkwood4"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
 ("forest_mirkwood5"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"), #old terrain code for all mirkwood scenes: 0x00000000bc62c90d0002308c000048850000786900001ef5
 
