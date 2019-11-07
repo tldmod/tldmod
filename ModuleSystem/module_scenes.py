@@ -532,7 +532,7 @@ scenes = [
 
 # some more missing siege scenes
 
-("caras_galadhon_siege"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+("caras_galadhon_siege"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x0000000030000500000985dc00000e2f000027d200005f66",[],[],"outer_terrain_forest"),
 #("caras_galadhon_siege"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 ("cerin_dolen_siege"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
 ("cerin_amroth_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba

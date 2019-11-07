@@ -2179,10 +2179,10 @@ itemsfile version 2
  itm_dale_helmet_d Dale_Archer_Helm Dale_Archer_Helm 3  dale_helmet_d 1  dale_helmet_d 0  dale_helmet_d_good 167772160  65548 0 800 704643206 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_e Barding_Helm Barding_Helm 1  dale_inf_helm_a 0  65548 0 1100 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_e Barding_Helm Barding_Helm 2  dale_inf_helm_a 0  dale_inf_helm_a_lordly 536870912  65548 0 1100 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_f Barding_Helm Barding_Helm 1  dale_inf_helm_c 0  65548 0 1100 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_f Barding_Helm Barding_Helm 2  dale_inf_helm_c 0  dale_inf_helm_c_lordly 536870912  65548 0 1100 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dale_sword Dale_Shortsword Dale_Shortsword 2  dale_sword_c 0  scab_dale_sword_c 3458764513820540928  4259842 9223388564182532111 200 287892 1 100 0 0 0 0 26624 108 0 77 0 279 26
@@ -2420,7 +2420,7 @@ itemsfile version 2
  itm_dwarf_nasal_b Dwarf_Nasal_Helm Dwarf_Nasal_Helm 1  DwarfHelmConical_BChain 0  65548 0 800 704643072 2 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_north_skullcap North_Skullcap North_Skullcap 4  north_skullcap_bad 134  north_skullcap_ok 1  north_skullcap_ok 0  unused_north_skullcap_2b 167772160  65548 0 600 704643206 2 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_north_skullcap North_Skullcap North_Skullcap 4  north_skullcap_bad 134  north_skullcap_ok 1  north_skullcap_ok 0  north_skullcap_good 167772160  65548 0 600 704643206 2 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_helm_kettle Dwarf_Kettle_Helm Dwarf_Kettle_Helm 3  DwarfHelmConicalChain 1  DwarfHelmConicalChain 0  DwarfHelmConicalMask 536870912  65548 0 1000 704643072 2 100 35 0 0 0 0 0 0 0 0 0 0
