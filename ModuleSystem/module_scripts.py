@@ -3681,6 +3681,10 @@ scripts = [
 		(eq,":item_no","itm_elven_amulet_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Power Draw"),(set_trigger_result, color_item_text_bonus),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@during battles"),(set_trigger_result, color_item_text_bonus),(try_end),
+      (else_try),
+		(eq,":item_no","itm_book_of_moria"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@The record of Balin's lost expedition."),(set_trigger_result, color_item_text_bonus),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Who might be interested in this?"),(set_trigger_result, color_item_text_bonus),(try_end),
 	  (else_try),
 		(eq,":item_no","itm_beorn_shield_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Turns nature to your side (effect scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),	
@@ -11197,8 +11201,18 @@ scripts = [
 		(assign, "$bs_day_sound", "snd_fangorn_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
+								   
 		(is_between,":region",region_n_mirkwood,region_s_mirkwood+1),
+									
+											  
+																						  
+													   
+													
+			
+								   
+																
 		(assign, "$small_scene_used", 1),
+											  
 		(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_forest_firien1"),
 		(assign, "$bs_day_sound", "snd_evilforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
