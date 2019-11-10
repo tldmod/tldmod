@@ -2286,6 +2286,7 @@ game_menus = [
     (party_get_num_companions, ":old_size", "p_main_party"),
     (try_for_range, ":unused", 0, 10),
       (call_script, "script_cf_reinforce_party", "p_main_party"),
+	  (party_add_xp, "p_main_party", 5000),
     (try_end),
     (party_get_num_companions, reg1, "p_main_party"),
     (assign, reg0, ":old_size"),
