@@ -1,14 +1,14 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
-mno_start_good|Yeni bir çagın ŞAFAĞI
+mno_start_good|Yeni bir çagın ŞAFAGI
 mno_start_evil|İnsanların Alacakaranlıgı
 mno_go_bback|Geri Dön
-menu_start_phase_2|^^^^^ Orta Dünya. Doğuda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çağdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
-mno_go_forth|Seçtiğin yolda ilerle...
+menu_start_phase_2|^^^^^ Orta Dünya. Doguda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çagdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
+mno_go_forth|Seçtigin yolda ilerle...
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Çatışma, Gondor, Harad'a karşı
 mno_custom_battle_scenario_12|Savaş için tarafları seç
 mno_custom_battle_scenario_3|Çatisma, Elfler, Kara Numenorlular'a karşı
-mno_custom_battle_scenario_4|Miğfer Dibi Savunması, Rohan Isengard'a karşı
+mno_custom_battle_scenario_4|Migfer Dibi Savunması, Rohan Isengard'a karşı
 mno_custom_battle_scenario_5|Çatışma, Kuzey, Rhûn'e karşı.
 mno_custom_battle_scenario_6|Kuşatma, Orklar, Cücelere karşı.
 mno_custom_battle_scenario_7|Pusu, Orklar, Kuyutorman'a karşı.
@@ -19,13 +19,13 @@ mno_custom_battle_scenario_10|Manzara Test Savaşı
 mno_troll_battle_scenario|Troll savaşını test et
 mno_warg_battle_scenario|Warg savaşını test et
 mno_build_your_own_scene|**TLD ile kendi Sahneni Oluştur**
-menu_tutorial|^^Mount & Blade Savaş Öğreticisine hoş geldin. Burada nasıl savaşacağından tut, birliklerini savaş alanında nasıl yönlendireceğine kadar öğreneceksin.
-mno_tutorial_1|Öğretici #1: Temel Hareketler ve silah seçimi. {s1}
+menu_tutorial|^^Mount & Blade Savaş Ögreticisine hoş geldin. Burada nasıl savaşacagından tut, birliklerini savaş alanında nasıl yönlendirecegine kadar ögreneceksin.
+mno_tutorial_1|Ögretici #1: Temel Hareketler ve silah seçimi. {s1}
 mno_tutorial_2|Tutorial #2: Kalkan ile birlikte dövüşmek. {s2}
-mno_tutorial_3|Öğretici #3: Kalkan olmadan dövüşmek. {s3}
+mno_tutorial_3|Ögretici #3: Kalkan olmadan dövüşmek. {s3}
 mno_tutorial_3b_door|sonraki seviye
 mno_tutorial_4|Tutorial #4: At veya warg sürmek. {s4}
-mno_tutorial_5|Öğretici # 5: Bir grup askeri komuta etmek.{s5}
+mno_tutorial_5|Ögretici # 5: Bir grup askeri komuta etmek.{s5}
 mno_go_back_dot|Geri dön
 mno_action_view_troop_trees|Birim agacını göster
 mno_view_upkeep_costs|Bakım ücretini gör
@@ -35,7 +35,7 @@ mno_view_morale_report|Grup moral raporuna gör.
 mno_view_character_report_02|NPC durum kontrolü.
 mno_view_faction_strengths_report|Taraf kuvvetlerinin raporunu gör.
 mno_view_traits_report|Özellikleri gör.
-mno_resume_travelling|Yolculuğa devam et.
+mno_resume_travelling|Yolculuga devam et.
 mno_custom_battle_go|Başla.
 mno_leave_custom_battle_2|İptal.
 menu_custom_battle_end|^^^^^^Savas sona erdi. {s1} Senin tarafin savasta {reg5} düsman öldürdü ve {reg6} asker kaybetti.^Kisisel olarak {reg7} düsman katlettin.
@@ -56,17 +56,17 @@ mno_start_hand|Isengard'dan SARUMAN, Ak El
 menu_start_eye|^^^^^^^^^Efendin Kapaksiz Göz^Irkini seç
 mno_start_or|Kapaksız Göz'e hizmet eden ORK
 mno_start_ur|URUK, orkların yeni nesli
-mno_start_em|Sauron'un boyunduruğunda bir İNSAN
+mno_start_em|Sauron'un boyundurugunda bir İNSAN
 menu_start_hand|^^^^^^^^^Efendin Ak El^Irkini seç
 mno_start_whor|Ak El'e hizmet eden bir ORC
 mno_start_isur|Isengard'da yetiştirilmiş bir URUK-HAİ
 mno_start_duma|Bir DUNLAND adamı, Batı Ovaları
 menu_start_good_man|^^^^^^^^^^Halkini seç:
-mno_start_go|GONDOR, krallığın beyaz kuleleri
+mno_start_go|GONDOR, krallıgın beyaz kuleleri
 mno_start_ro|ROHAN, At Halkı
-mno_start_du|DUNEDAIN, İnsanların kadim hanedanlığı
+mno_start_du|DUNEDAIN, İnsanların kadim hanedanlıgı
 mno_start_be|BEORNINGLER, Ayı Halkı
-mno_start_da|DALE'in kuzey krallığı
+mno_start_da|DALE'in kuzey krallıgı
 menu_start_good_elf|^^^^^^^^^^Hangi Ormanda yasiyorsun Yasli Kisi ?
 mno_start_ri|AYRIKVADİ'den, Lord Elrond
 mno_start_lo|LOTHLORIEN'den Leydi Galadriel
@@ -76,37 +76,37 @@ mno_start_er|Bir EREBOR sakini
 mno_start_ih|DEMİR TEPELER'in madencisi
 menu_start_gondor|^^^^^^^^^^ Neredensin ? Gondordan mı ?
 mno_start_mt|Başkent, MINAS TIRITH
-mno_start_ls|LOSSARNACH, Baltalıların beyliği
-mno_start_la|LAMEDON , Dağ Klanı Beyliği
-mno_start_pg|PINNATH GELIN, Yeşil tepeliklerin beyliği
-mno_start_do|DOL AMROTH, Kuğu Şovalyeleri'nin beyliği
-mno_start_pe|PELARGIR , Sahil Derebeyliği
-mno_start_bl|BLACKROOT VALE, Okçuların beyliği
+mno_start_ls|LOSSARNACH, Baltalıların beyligi
+mno_start_la|LAMEDON , Dag Klanı Beyligi
+mno_start_pg|PINNATH GELIN, Yeşil tepeliklerin beyligi
+mno_start_do|DOL AMROTH, Kugu Şovalyeleri'nin beyligi
+mno_start_pe|PELARGIR , Sahil Derebeyligi
+mno_start_bl|BLACKROOT VALE, Okçuların beyligi
 menu_start_eye_man|^^^^^^^^^^Halkini seç:
 mno_start_hr|HARADRIM, Güneyden çöl insanı
 mno_start_bn|Siyah NUMENOREANLAR, Batının hainleri
 mno_start_um|UMBAR, Güney Denizlerin korsanları.
-mno_start_rh|RHUN, Doğudaki barbarlar
-mno_start_kh|KHAND, Güneydoğudaki vahşi insanlar
+mno_start_rh|RHUN, Dogudaki barbarlar
+mno_start_kh|KHAND, Güneydogudaki vahşi insanlar
 menu_start_eye_uruk|^^^^^^^^^^Nerede pusuya yatiyorsun?
 mno_start_arm_uruk|MORDOR'DAN toplanmış orduda
-mno_start_cav_uruk|DOL GULDUR mağaralarında
+mno_start_cav_uruk|DOL GULDUR magaralarında
 menu_start_eye_orc|^^^^^^^^^^Nerede pusuya yatiyorsun?
 mno_start_arm|MORDOR'DAN toplanmış orduda
-mno_start_cav|DOL GULDUR mağaralarında
+mno_start_cav|DOL GULDUR magaralarında
 menu_start_hand_orc|^^^^^^^^^^Nerede pusuya yatiyorsun?
 mno_start_armis|ISENGARD'DA toplanmış orduda
 mno_start_minmo|MORIA Madenlerinde
-mno_start_cliff|GUNDABAD Dağı eteklerinde
+mno_start_cliff|GUNDABAD Dagı eteklerinde
 menu_start_gondor_mt|^^^^^^^^^^Kökenini seç
 mno_start_1_com|Yerli
 mno_start_2_hib|Soylu
 menu_start_haradrim|^^^^^^^Sen bir Haradrimsin,^Bir Çöl Insani.^Soyunu seç
 mno_start_1_des|Çöl insanı
 mno_start_2_far|Far Harad Kabile Üyesi
-menu_start_numenorean|^^^^^^^Sen bir Kara Numenorlusun,^Karanlığa ve Morgoth'a sadıksın.^Göze hizmet edeceğin yeri seç
-mno_start_1_bn|Sauron'un Ağzı'nın yanında, MORANNON'da
-mno_start_2_bn|Ölü Çağıran'ın kalesinde, DOL GULDUR'da
+menu_start_numenorean|^^^^^^^Sen bir Kara Numenorlusun,^Karanlıga ve Morgoth'a sadıksın.^Göze hizmet edecegin yeri seç
+mno_start_1_bn|Sauron'un Agzı'nın yanında, MORANNON'da
+mno_start_2_bn|Ölü Çagıran'ın kalesinde, DOL GULDUR'da
 menu_choose_gender|^^^^^^^^^^Cinsiyetin?
 mno_start_male|Erkek
 mno_start_female|Kadın
@@ -121,13 +121,13 @@ menu_camp|^^^^Sen {s1}.{s2}desin^^Ne yapmak istiyorsun?
 mno_camp_scene|Etrafta yürü.
 mno_camp_troop|Gözden geçir{reg10? askerler:}{reg12? and:}{reg11? esirler:}.
 mno_camp_action|Bir nesne kullan.
-mno_camp_wait_here|Burada bir süreliğine kamp kur.
-mno_camp_options|TLD ayarını değiştir
+mno_camp_wait_here|Burada bir süreligine kamp kur.
+mno_camp_options|TLD ayarını degiştir
 mno_Dev_Menu|Geliştirici Menüsü
-menu_dev_menu|Bunlar size oynamak için bir sürü hile ve araç veren geliştirici seçenekleri.^^ Bununla birlikte, bu bazı WIP olaylarına, tetikleyicilere, oyun kırıcı olabilecek kampanya değişikliklerine neden olacaktır.^^ Risk sizindir. ^^ Ayrıca, hataları rapor ederken, lütfen bize Geliştirici Menüsü kullandığınızı söyleyin.
+menu_dev_menu|Bunlar size oynamak için bir sürü hile ve araç veren geliştirici seçenekleri.^^ Bununla birlikte, bu bazı WIP olaylarına, tetikleyicilere, oyun kırıcı olabilecek kampanya degişikliklerine neden olacaktır.^^ Risk sizindir. ^^ Ayrıca, hataları rapor ederken, lütfen bize Geliştirici Menüsü kullandıgınızı söyleyin.
 mno_Cheat_enable|Hile/modlama ayarlarını etkinleştir.
-menu_game_options|^^^^^^^^Değiştirmek için bir ayara tıklayın:
-mno_game_options_war_level_start|Savaşın Başlayacağı Seviye: {s1}
+menu_game_options|^^^^^^^^Degiştirmek için bir ayara tıklayın:
+mno_game_options_war_level_start|Savaşın Başlayacagı Seviye: {s1}
 mno_game_options_restrict_items|Kısıtlı oyuncu ekipmanı: {s7}
 mno_game_options_formations|Savaş düzenleri ve yapay zeka: {s7}
 mno_game_options_siege_ai|Gelişmiş Kuşatma AI: {s7}
@@ -144,7 +144,7 @@ mno_game_options_camera_pref|Tercih Edilen Kamera Modu : {s7}
 mno_game_options_tweaks|Oyun Ayarı
 mno_game_options_back|Kamp menüsüne geri dön
 mno_game_options_start_back|Geri.
-menu_camp_tweaks|^^^^^^^^Ayarlamak istediğiniz bir görüş seçin.
+menu_camp_tweaks|^^^^^^^^Ayarlamak istediginiz bir görüş seçin.
 mno_tweak_options_compat|Uygunluk Ayarları
 mno_tweak_options_strat|Strateji Ayarları
 mno_tweak_options_battlefield_ai|Savaş Alanı Yapay Zeka ayarları
@@ -166,7 +166,7 @@ mno_camp_drink_water|Ent Suyundan İç !
 mno_camp_action_4|Geri.
 menu_assasins_attack_player_won|{s3} tarafından gönderilen {s2} suikastçilerini başarıyla alt ettin.
 menu_assasins_attack_player_retreat|Hayattasın ve kaçtın.
-menu_fangorn_danger|^^^^^^Etraftan garip ve korkunç sesler geliyor^Yoksa ağaçlar mı konuşuyor? Sanki havada derin bir öfke ve acı var.^Emirlerin?
+menu_fangorn_danger|^^^^^^Etraftan garip ve korkunç sesler geliyor^Yoksa agaçlar mı konuşuyor? Sanki havada derin bir öfke ve acı var.^Emirlerin?
 mno_be_quiet_elf|Agaclarin öfkesine saygi göster. Sessizce uzaklas.
 mno_be_quiet|Silahlari indir ve sessiz ol! Simdi hemen çik buradan!
 mno_be_bold|Devam et! Eski mitlerden kalma bitkilerden korkmuyorum!
@@ -178,15 +178,15 @@ mno_ow_get_out|Ah! bu lanetli yerden çıkalım!
 menu_fangorn_killed_troop_and_player|^^^^^^Karanlik ve sik ormanda dolasiyorsun.^^Bir anda bir darbe aldin! Kafana agir bir dal parçasi mi düstü?^^ Birkaç dakika sonra kendine geldiginde askerlerinin o kadarda sansli olmadigini görüyorsun.^^
 menu_fangorn_killed_troop_only|^^^^^^^^Karanlik ve sik ormanda dolasiyorsun. Askerlerin korku içinde.^^Birden bire arkadan gelen çigliklari duyuyorsun! Hemen geri dönüyorsun ancak tek gördügün bir kan göleti içinde yatan birkaç asker.^^Diger birkaçinin nerede olduklari meçhul...
 mno_get_out|Çıkalım bu lanetli yerden!
-menu_can_capture_troll|Düşmüş vahşi bir trol hala nefes alıyor!^^Acı ve öfkeyle dolmuş şeytani gözleri dik dik sana bakıyor.^Şimdi bile yıkıldığı ve kendi kanı içinde yardıma muhtaç uzandığı halde, son derece tehlikeli görünüyor...
-mno_killit|Şimdi, işini bitir şunun. Öldüğüne emin ol.
+menu_can_capture_troll|Düşmüş vahşi bir trol hala nefes alıyor!^^Acı ve öfkeyle dolmuş şeytani gözleri dik dik sana bakıyor.^Şimdi bile yıkıldıgı ve kendi kanı içinde yardıma muhtaç uzandıgı halde, son derece tehlikeli görünüyor...
+mno_killit|Şimdi, işini bitir şunun. Öldügüne emin ol.
 mno_cageit1|Onu kafese koy ve yanında götür.
-mno_cageit2|Diğer trolle birlikte kafese koy.
+mno_cageit2|Diger trolle birlikte kafese koy.
 mno_cheat_disabable|Hile/mod ayarlarını devre dışı bırak.
-menu_drank_ent_water_human|^^^Suyu içiyorsun. Temiz ve rahatlatıcı... Misk gibi hoş bir kokusu var.^Yenilenmiş hissediyorsun.^^Öte yandan içinde doğal olmayan, garip bir his de var. Bir şeyler sana bu suyu asla tekrar içmemen gerektiğini söylüyor.
-menu_drank_ent_water_orc|^^^Suyu içiyorsun. Sadece su.^Birden acı içinde boğazını kavrıyorsun.^Zehirlendin!^Boğuluyorsun, siyah kan kusuyorsun, her şey bitmek üzere.^^Acıtıyor, çok acıtıyor.
+menu_drank_ent_water_human|^^^Suyu içiyorsun. Temiz ve rahatlatıcı... Misk gibi hoş bir kokusu var.^Yenilenmiş hissediyorsun.^^Öte yandan içinde dogal olmayan, garip bir his de var. Bir şeyler sana bu suyu asla tekrar içmemen gerektigini söylüyor.
+menu_drank_ent_water_orc|^^^Suyu içiyorsun. Sadece su.^Birden acı içinde bogazını kavrıyorsun.^Zehirlendin!^Boguluyorsun, siyah kan kusuyorsun, her şey bitmek üzere.^^Acıtıyor, çok acıtıyor.
 mno_i_shall_surv|Ben.. hayatta... kalmalıyım...
-menu_end_game|^^^^^Karar verildi, maceracı hayatından vazgeçiyor ve duruluyorsun. Silahlarını ve zırhını satıyor, sahip olduğun her şeyi toplayıp gün batımına doğru yola çıkıyorsun...
+menu_end_game|^^^^^Karar verildi, maceracı hayatından vazgeçiyor ve duruluyorsun. Silahlarını ve zırhını satıyor, sahip oldugun her şeyi toplayıp gün batımına dogru yola çıkıyorsun...
 mno_end_game_bye|Hoşçakal.
 menu_cattle_herd|Bazı insanlarla karşılaşıyorsun.
 mno_cattle_drive_away|Takip emri ver.
@@ -199,25 +199,25 @@ mno_control_allies_menu|Alanda müttefikleri yönetmek için Nüfuz kullan.
 mno_encounter_hide|Düşmandan saklan...
 mno_special_whip|Parçalamak için ileri atıl {s4}.
 mno_encounter_leave|Geri çekil.
-mno_encounter_retreat|Kaçışını sağlamaları için birkaç askerini arkada bırakarak geri çekil.
+mno_encounter_retreat|Kaçışını saglamaları için birkaç askerini arkada bırakarak geri çekil.
 mno_player_control_allies_simple|Onları yönet ve düşmana saldır
 mno_player_control_allies_back|Geri çekilin...
 mno_hide_close|Devam et...
-menu_encounter_retreat_confirm|^^^^^Grubunun taktik yetenekleri en yüksek üyesi olarak,({reg2}), {reg3?you devise:{s3} devises} senin ve askerlerinin hayatlarının kurtararak kaçmalarını sağlayacak bir plan öneriyor, fakat düşmanın seni takip etmesini engellemek için {reg4} taneaskerini arkada bırakmak zorunda kalacaksın.
-mno_leave_behind|Devam et. Bu adamların fedakarlığı geri kalanları kurtaracak.
+menu_encounter_retreat_confirm|^^^^^Grubunun taktik yetenekleri en yüksek üyesi olarak,({reg2}), {reg3?you devise:{s3} devises} senin ve askerlerinin hayatlarının kurtararak kaçmalarını saglayacak bir plan öneriyor, fakat düşmanın seni takip etmesini engellemek için {reg4} taneaskerini arkada bırakmak zorunda kalacaksın.
+mno_leave_behind|Devam et. Bu adamların fedakarlıgı geri kalanları kurtaracak.
 mno_dont_leave_behind|Hayır. Geride kimse kalmayacak.
 menu_encounter_retreat|^^^^^{reg4} Askerlerine , sen grubun kalanıyla geri çekilirken düşmanı tutmalarını söyle.
 menu_order_attack_begin|^^^^^^ Askerlerin düşmana saldırmaya hazırlanıyor.
 mno_order_attack_begin|Saldırının başlamasını emret.
-mno_call_back|Askerleri geri çağır.
+mno_call_back|Askerleri geri çagır.
 menu_order_attack_2|^{s4}^Kayıpların: {s8}^^Düşman Kayıpları: {s9}
 mno_order_attack_continue|Askerlerine saldırıya devam etmelerini emret.
-mno_order_retreat|Askerleri geri çağır.
-menu_kingdom_army_quest_report_to_army|{s8} düzenleyeceği sefere katılmanı istiyor. Orduya en az  {reg13}  asker götürmelisin, eğer yeterli askerin yoksa hızla asker sayını artırmalısın.
+mno_order_retreat|Askerleri geri çagır.
+menu_kingdom_army_quest_report_to_army|{s8} düzenleyecegi sefere katılmanı istiyor. Orduya en az  {reg13}  asker götürmelisin, eger yeterli askerin yoksa hızla asker sayını artırmalısın.
 mno_reject|Çok mesgul oldugunu ilet.
 mno_send_word|Hemen gelip ona katılacagini ilet.
-menu_kingdom_army_quest_messenger|{s8} seninle bir görev hakkında konuşmak istediğini iletiyor. Mümkün olduğunca çabuk gelip onu görmeni istiyor.
-menu_kingdom_army_quest_join_siege_order|{s8} sana {s9} kuşatmasına tam taarruz hazırlığı ile katılman için söz yolladı .    Askerlerin ne uğruna olursa olsun {s9} u alacak.
+menu_kingdom_army_quest_messenger|{s8} seninle bir görev hakkında konuşmak istedigini iletiyor. Mümkün oldugunca çabuk gelip onu görmeni istiyor.
+menu_kingdom_army_quest_join_siege_order|{s8} sana {s9} kuşatmasına tam taarruz hazırlıgı ile katılman için söz yolladı .    Askerlerin ne ugruna olursa olsun {s9} u alacak.
 menu_kingdom_army_follow_failed|Takip etmeyi basaramadin ve emirlere karsi geldin {s8}. O daha önemli isler ile mesgul oldugunu tahmin ettigini iletiyor, ama sabrinin sinirlari oldugu konusunda uyariyor.
 menu_battle_debrief|{s11}^Kayıpların:{s8}{s10}^^Düşman Kayıpları:{s9}
 mno_inspect_troll|Yere serilen trolü kontrol et
@@ -244,11 +244,11 @@ menu_join_siege_outside|^^^^^^{s1}, {s2} tarafından kuşatıldı.
 mno_approach_besiegers|Kuşatma kampına yaklaş.
 mno_pass_through_siege|Kuşatmayı geç ve {s1} e gir.
 menu_cut_siege_without_fight|Kuşatmacılar zorluk çıkartmadan kapılara yaklaşmana izin verdi.
-menu_besiegers_camp_with_allies|{s1} kuşatma altında. {s2}'un sancağı kuşatmacıların kampının üstünde dalgalanıyor,    burada sen ve birliğin memnuniyetle karşılanıyorsunuz.
+menu_besiegers_camp_with_allies|{s1} kuşatma altında. {s2}'un sancagı kuşatmacıların kampının üstünde dalgalanıyor,    burada sen ve birligin memnuniyetle karşılanıyorsunuz.
 mno_talk_to_siege_commander|Komutan ile görüşme talep et.
 mno_join_siege_with_allies|Sıradaki saldırıya katıl
 mno_join_siege_stay_back|Askerlerine sonraki mücadelede sensiz savaşmalarını emret.
-menu_moria_must_escape|Kitap cücelerin Moriaya yerleşmek için yaptığı son denemeyi anlatıyor gibi.Olaya karışan herkesin ölümüne sebep olan deneme... Kitabı incelerken 'Gerçek Gümüş' sözlerine rastlıyorsun.Sayfalara biraz daha göz gezdirerek aniden yazılanların aşağı seviyelerdeki bir cüce hazinesinin haritası olduğunu anlıyorsun.Hah!Uzun süredir kayıp olan cüce mithrillini bulmak hoş olmaz mıydı!? ^Hızlı bir şekilde talimatları izliyor ve dar bir tünele giriyorsun... ^...^Birkaç saatlik arayışın ardından arayışların sonuç vermeyince Moria'nın en dip yerlerinde kaybolduğunu ve dışarı çıkmanın bir yolunu bulman gerektiğini anlıyorsun.
+menu_moria_must_escape|Kitap cücelerin Moriaya yerleşmek için yaptıgı son denemeyi anlatıyor gibi.Olaya karışan herkesin ölümüne sebep olan deneme... Kitabı incelerken 'Gerçek Gümüş' sözlerine rastlıyorsun.Sayfalara biraz daha göz gezdirerek aniden yazılanların aşagı seviyelerdeki bir cüce hazinesinin haritası oldugunu anlıyorsun.Hah!Uzun süredir kayıp olan cüce mithrillini bulmak hoş olmaz mıydı!? ^Hızlı bir şekilde talimatları izliyor ve dar bir tünele giriyorsun... ^...^Birkaç saatlik arayışın ardından arayışların sonuç vermeyince Moria'nın en dip yerlerinde kayboldugunu ve dışarı çıkmanın bir yolunu bulman gerektigini anlıyorsun.
 mno_moria_exit_scene|Çıkış yolunu bul!
 menu_castle_outside|Dışarıdasın {s2}.{s11} {s3} {s4}
 mno_moria_enter|Gizli girişten Moria'nın ana salonuna dön.
@@ -263,7 +263,7 @@ mno_attack_stay_back|Sen geride beklerken askerlerine saldırma emri ver...
 mno_build_ladders|Duvarlara saldırmak için merdivenleri hazırla.
 mno_lift_siege|Kuşatmayı terk et.
 menu_siege_attack_meets_sally|^^^^^^Müdafi'ler taaruzunu karşılamak üzere dışarıya çıktılar.
-menu_construct_ladders|Mühendislik yeteneği en yüksek olan birlik üyesi ({reg2}) ile birlikte, {reg3?you estimate:{s3} estimates} saldırı için kurulacak merdivenlerin yapımı {reg4} saat alacak.
+menu_construct_ladders|Mühendislik yetenegi en yüksek olan birlik üyesi ({reg2}) ile birlikte, {reg3?you estimate:{s3} estimates} saldırı için kurulacak merdivenlerin yapımı {reg4} saat alacak.
 mno_build_ladders_cont|Yap.
 menu_castle_attack_walls_simulate|{s4}^^Senin kayıpların:{s8}^^Düşmanın kayıpları: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
@@ -275,10 +275,10 @@ menu_siege_started_defender|{s1}, {s2} ' nin duvarlarına bir taarruz başlatıy
 mno_siege_defender_join_battle|Savaşa katıl
 mno_siege_defender_troops_join_battle|Askerlerine sensiz savaşa katılmalarını emret.
 menu_siege_join_defense|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
-menu_village_hunt_down_fugitive_defeated|^^^^^Bir kaçak tarafından gelen sert bir darbe seni yere yığar ve gözlerin dönmeye başlar ve kararır. Zaman geçer. Uyandığında kendini yıpranmış ve kanlar içinde bulursun fakat şans eseri aldığın hiç bir yara ölümcül değildir.
-menu_town_bandits_succeeded|^^^^^Goblin'ler önünde buğdayların orağa karşı yığılması gibi yere yığıldılar. Az bir zaman sonra kendini tek başına , askerlerini ise bilinçsiz, ölü ve ölmek üzere buldun. Hiç şüphesiz yerliler, onları bu saldırıdan kurtardığın için sana minnettar olacaklar.
-menu_town_brawl_lost|^^^^^^Şuurunu kaybettin. Saldırdığın kişiler günlük işlerine dönmeden önce çabucak değerli eşyalar için üzerini ararlar.
-menu_town_brawl_won|^^^^^Rahatsızlığı yatıştırmak için gönderilen tüm gardiyanları ve rakipleri yendin. Hızlıca değerli eşyalar için onları arıyor ve ardından ortalık sakinleşene kadar ortadan kayboluyorsun.^Belki gelecek sefere daha fazla saygı gösterir ve kenara çekilirler.
+menu_village_hunt_down_fugitive_defeated|^^^^^Bir kaçak tarafından gelen sert bir darbe seni yere yıgar ve gözlerin dönmeye başlar ve kararır. Zaman geçer. Uyandıgında kendini yıpranmış ve kanlar içinde bulursun fakat şans eseri aldıgın hiç bir yara ölümcül degildir.
+menu_town_bandits_succeeded|^^^^^Goblin'ler önünde bugdayların oraga karşı yıgılması gibi yere yıgıldılar. Az bir zaman sonra kendini tek başına , askerlerini ise bilinçsiz, ölü ve ölmek üzere buldun. Hiç şüphesiz yerliler, onları bu saldırıdan kurtardıgın için sana minnettar olacaklar.
+menu_town_brawl_lost|^^^^^^Şuurunu kaybettin. Saldırdıgın kişiler günlük işlerine dönmeden önce çabucak degerli eşyalar için üzerini ararlar.
+menu_town_brawl_won|^^^^^Rahatsızlıgı yatıştırmak için gönderilen tüm gardiyanları ve rakipleri yendin. Hızlıca degerli eşyalar için onları arıyor ve ardından ortalık sakinleşene kadar ortadan kayboluyorsun.^Belki gelecek sefere daha fazla saygı gösterir ve kenara çekilirler.
 menu_close|Hiçbir şey.
 menu_town|{s60}.{s12}{s13} içine geldin.
 mno_town_menu_0|Bir yere git.
@@ -286,68 +286,68 @@ mno_town_menu_0_door|Bir yerin kapısı.
 mno_town_approach|{s1}'e yaklaş...
 mno_town_castle|{s1}'e git
 mno_town_castle_door|Kalenin  Kapısı
-mno_town_center|Ana meydana doğru yürüyüşe çık...
+mno_town_center|Ana meydana dogru yürüyüşe çık...
 mno_town_center_door|Şehir merkezine giden kapı.
 mno_aw_chamber_door|Kapıyı aç.
 mno_trade_with_arms_merchant|{s40}'ı ziyaret et.
 mno_trade_with_horse_merchant|{s41}'i ziyaret et.
 mno_town_prison_door|Hapishane kapısı.
-mno_dungeon_enter|Kayıp mızraklar için dağları ara.
+mno_dungeon_enter|Kayıp mızraklar için dagları ara.
 mno_dungeon_enter_door|Kapıyı aç.
 mno_dwarven_warehouse|Cüce erzak deposunu ziyaret et
 mno_dwarven_warehouse_door|Cüce erzak deposuna gir
 mno_talk_to_castle_commander|{s61} kışlasını ziyaret et.
 mno_speak_with_elder| {s6} ile konuş
-mno_isengard_underground|Yeraltı mağaralarına git.
+mno_isengard_underground|Yeraltı magaralarına git.
 mno_tirith_toplevel|Zirveye tırman.
 mno_erebor_gates|Büyük Kapıları ziyaret et.
 mno_town_leave|Ayrıl...
 mno_town_leave_door|Bölgeden Ayrıl
-menu_player_initiated_siege_result|{s2} sancağı altındaki bu merkeze saldırdın.
+menu_player_initiated_siege_result|{s2} sancagı altındaki bu merkeze saldırdın.
 menu_disembark|Karaya çıkmak mı istiyorsun?
 mno_disembark_yes|Evet.
 mno_disembark_no|Hayır.
 menu_ship_reembark|Gemiye binmek mi istiyorsun?
 mno_reembark_yes|Evet.
 mno_reembark_no|Hayır.
-menu_center_reports|Kasaba ismi: {s1}^Kira geliri: {reg1} dinar^Tariff geliri: {reg2} dinar^Yemek stoğu: {reg3} günlük
+menu_center_reports|Kasaba ismi: {s1}^Kira geliri: {reg1} dinar^Tariff geliri: {reg2} dinar^Yemek stogu: {reg3} günlük
 menu_sneak_into_town_suceeded|Eski bir seyyahın giysileri ile muhafızları kandırıp kasabaya giriyorsun.
 menu_sneak_into_town_caught|Gizlice girmeye çalışırken muhafızlardan biri seni tanıyor ve alarm veriyor! Tüm kasabanın muhafızları üstüne çullanmadan önce arka kapılardan kaçmalısın!
-mno_sneak_caught_fight|Kalabalığı yararak ilerlemeye çalış!
+mno_sneak_caught_fight|Kalabalıgı yararak ilerlemeye çalış!
 mno_sneak_caught_surrender|Teslim ol.
-menu_sneak_into_town_caught_dispersed_guards|Kaçmadan önce muhafızları ekip, izlerini gizleyerek kolayca seni kovalayan kişilerden mahallelerin karmaşıklığı sayesinde kurtuluyorsun.
+menu_sneak_into_town_caught_dispersed_guards|Kaçmadan önce muhafızları ekip, izlerini gizleyerek kolayca seni kovalayan kişilerden mahallelerin karmaşıklıgı sayesinde kurtuluyorsun.
 menu_sneak_into_town_caught_ran_away|Kapı tarafından şehirden ayrılıp kasaba dışına, güvenli yerlere geri çekiliyorsun.
-menu_tld_player_defeated|^^^^^Aniden kafanı patlatacakmışcasına bir ağrı hissediyorsun! \\ Gözün kararıyor ve titremeye başlıyorsun...^Yoksa bu senin sonun mu?
-menu_recover_after_death_fangorn|Uyandın. Etrafında hala orman var. Her kemiğin sızlıyor. Mucize eseri hayattasın.^^Bu bir yenilgiydi fakat en azından neler olduğunu görebildin. ^Şimdi bu lanetlenmiş ormanda neler olduğunu biliyorsun, ^ve bunları anlatabilmek için hayatta kaldın.^^Sana kimse inanır mı ki?
-menu_recover_after_death_moria|^^^^^Bilincini tekrar kazandın. Yumuşak toprağın üzerine uzanmış, temiz havanın yüzünde dolaşmasını hissediyorsun. Dışardasın! ^Orklar öldüğünü düşünüp seni kuytu bir çukura atmış olmalılar. ^Bir yeraltı akıntısıyla yüzeye sürüklenmiş olmalısın.
+menu_tld_player_defeated|^^^^^Aniden kafanı patlatacakmışcasına bir agrı hissediyorsun! \\ Gözün kararıyor ve titremeye başlıyorsun...^Yoksa bu senin sonun mu?
+menu_recover_after_death_fangorn|Uyandın. Etrafında hala orman var. Her kemigin sızlıyor. Mucize eseri hayattasın.^^Bu bir yenilgiydi fakat en azından neler oldugunu görebildin. ^Şimdi bu lanetlenmiş ormanda neler oldugunu biliyorsun, ^ve bunları anlatabilmek için hayatta kaldın.^^Sana kimse inanır mı ki?
+menu_recover_after_death_moria|^^^^^Bilincini tekrar kazandın. Yumuşak topragın üzerine uzanmış, temiz havanın yüzünde dolaşmasını hissediyorsun. Dışardasın! ^Orklar öldügünü düşünüp seni kuytu bir çukura atmış olmalılar. ^Bir yeraltı akıntısıyla yüzeye sürüklenmiş olmalısın.
 mno_whatever|Uyan!
-menu_recover_after_death_default|^^^^^Bilincini tekrar kazandın. Düştüğün yerde yatıyorsun. Düşmanların öldüğünü düşünüp seni orada bırakmış olmalılar. Ancak, yaraların hiç ölümcül görünmüyor ve berbat hissetmene rağmen hala yürüyebileceğini farkediyorsun. Ayağa kalk ve grubundan birileri hala hayatta mı diye bir göz at.
-menu_recover_after_death_town|^^^^Bilincini tekrar kazanıyorsun ve kendini kasabanın dışında buluyorsun. Hayattasın! Etrafında kimse yok. Kendini kasabadan dışarı sürüklemeye çalışıyorsun. Görünen o ki yaralarının hiç biri ölümcül değilmiş ve kendini çok kötü hissetsen de, hala yürüyebiliyorsun.
-menu_recover_after_death_town_alone|Bilincini tekrar kazanıyorsun ve kendini kasabanın dışında buluyorsun. Hayattasın! Etrafında kimse yok. Kendini kasabadan dışarı sürüklemeye çalışıyorsun. Görünen o ki yaralarının hiç biri ölümcül değilmiş ve kendini çok kötü hissetsen de, hala yürüyebiliyorsun.
+menu_recover_after_death_default|^^^^^Bilincini tekrar kazandın. Düştügün yerde yatıyorsun. Düşmanların öldügünü düşünüp seni orada bırakmış olmalılar. Ancak, yaraların hiç ölümcül görünmüyor ve berbat hissetmene ragmen hala yürüyebilecegini farkediyorsun. Ayaga kalk ve grubundan birileri hala hayatta mı diye bir göz at.
+menu_recover_after_death_town|^^^^Bilincini tekrar kazanıyorsun ve kendini kasabanın dışında buluyorsun. Hayattasın! Etrafında kimse yok. Kendini kasabadan dışarı sürüklemeye çalışıyorsun. Görünen o ki yaralarının hiç biri ölümcül degilmiş ve kendini çok kötü hissetsen de, hala yürüyebiliyorsun.
+menu_recover_after_death_town_alone|Bilincini tekrar kazanıyorsun ve kendini kasabanın dışında buluyorsun. Hayattasın! Etrafında kimse yok. Kendini kasabadan dışarı sürüklemeye çalışıyorsun. Görünen o ki yaralarının hiç biri ölümcül degilmiş ve kendini çok kötü hissetsen de, hala yürüyebiliyorsun.
 menu_notification_center_under_siege|{s1}, {s3}'ten {s2} tarafından kuşatıldı.
 menu_notification_one_side_left|^^^^^Yüzük için savaş sona erdi!^^ {s1} Tüm düşmanlarını yenerek zafere ulaştı!
-menu_notification_total_defeat|^^^^^Yüzük savaşı senin için sona erdi!^^ {s1} düşmanları tarafından bozguna uğratıldı ve sen tek başına mağlubiyet içinde kıvranıyorsun!
-menu_notification_your_faction_collapsed|^^^^^Memleketin {s11} yenildi! Yine de, diğer müttefiklerin savaşta. {s11}'den kalanlarla beraber, tarafına kazanması için yardım edebilirsin.
+menu_notification_total_defeat|^^^^^Yüzük savaşı senin için sona erdi!^^ {s1} düşmanları tarafından bozguna ugratıldı ve sen tek başına maglubiyet içinde kıvranıyorsun!
+menu_notification_your_faction_collapsed|^^^^^Memleketin {s11} yenildi! Yine de, diger müttefiklerin savaşta. {s11}'den kalanlarla beraber, tarafına kazanması için yardım edebilirsin.
 menu_notification_faction_defeated|^^^^^{s1} yenildi!^{s1} artık yok, {s13} kuvvetleri tarafından yok edildi!
 menu_ruins|^^^^{s1}'e yaklaşıyorsun. Eskiden güçlü olan bu yerleşim yeri artık yerle bir olmuş, yine de istihkam izlerini ve parçalanmış paslı silahları görebiliyorsun.
-menu_legendary_place|^^^^Söylentileri takip ettin ve {s1}'i buldun. Şimdi burayı gezebilir ve söylentilerin doğru olup olmadığını kendin görebilirsin.
+menu_legendary_place|^^^^Söylentileri takip ettin ve {s1}'i buldun. Şimdi burayı gezebilir ve söylentilerin dogru olup olmadıgını kendin görebilirsin.
 mno_explore|Etrafı keşfet
 menu_ring_hunter_lair|^^^^Yüzük avcılarının izini Kuyutormanı'nın içinden takip ettin ve {s1}'e vardın. Bir sandıkla gitmeye hazırlandıklarını görüyorsun.
 mno_attack_lair|Onlara şimdi saldır
 mno_leave_bandit_lair|Şimdilik ayrıl
-menu_gondor_reinforcement_event|^^^^^Gondor işaret ateşleri hazır, Minas Tirith yardım çağrısı yapıyor!^^Güney topraklarının lordları gelecek olan karanlığa karşı Ak Şehri savunmak için kuzeye ilerliyor.
+menu_gondor_reinforcement_event|^^^^^Gondor işaret ateşleri hazır, Minas Tirith yardım çagrısı yapıyor!^^Güney topraklarının lordları gelecek olan karanlıga karşı Ak Şehri savunmak için kuzeye ilerliyor.
 mno_gondor_reinforcement_event_close|Kapat
 menu_gondor_beacons|Bir zamanlar kuzeyden güney Gondor'a tehlike sinyali veren Gondor işaret kulelerinden biri {s1} bakıyorsun.
 mno_gondor_beacons_close|Ayrıl...
-menu_player_added_to_war_council|^^^^^Bir ulak geldi ve şuanda sana {s24} olarak, {s2} Savaş Konseyi'ne  katılmanı istiyor. Şimdi savaşın seyrini değiştirebilecek stratejiler önerme hakkına sahipsin.
+menu_player_added_to_war_council|^^^^^Bir ulak geldi ve şuanda sana {s24} olarak, {s2} Savaş Konseyi'ne  katılmanı istiyor. Şimdi savaşın seyrini degiştirebilecek stratejiler önerme hakkına sahipsin.
 mno_player_added_to_war_council_close|Kapat
-menu_player_added_to_siege_reports|^^^^^Bir ulak geldi ve şuanda {s24} olarak, her ne zaman {s2} bir merkezi kuşattığında veya {s2}'nin merkezleri kuşatıldığında sana bir rapor gönderileceğini söylüyor.
+menu_player_added_to_siege_reports|^^^^^Bir ulak geldi ve şuanda {s24} olarak, her ne zaman {s2} bir merkezi kuşattıgında veya {s2}'nin merkezleri kuşatıldıgında sana bir rapor gönderilecegini söylüyor.
 mno_player_added_to_siege_reports_close|Kapat
-menu_player_added_to_allow_follow|^^^^^Bir ulak geldi ve şuanda bir {s24} olarak bir {s2}'yi maksimum takipçi sayısı {reg55} olarak seni takip etmesini emredebileceğini duyurdu.
+menu_player_added_to_allow_follow|^^^^^Bir ulak geldi ve şuanda bir {s24} olarak bir {s2}'yi maksimum takipçi sayısı {reg55} olarak seni takip etmesini emredebilecegini duyurdu.
 mno_player_added_to_allow_follow_close|Kapat
-menu_center_besieged_event|^^^^^{s1}'in {s3}'ten {s2} tarafından kuşatıldığını bildiren bir ulak geldi.
+menu_center_besieged_event|^^^^^{s1}'in {s3}'ten {s2} tarafından kuşatıldıgını bildiren bir ulak geldi.
 mno_center_besieged_event_close|Kapat
-menu_guardian_party_spawned|^^^^^Gözcüler {s6} 'in  {s7} yakınlarında başkenti son bir kere savunmak amacıyla büyük bir ordu topladığını rapor ediyor.
+menu_guardian_party_spawned|^^^^^Gözcüler {s6} 'in  {s7} yakınlarında başkenti son bir kere savunmak amacıyla büyük bir ordu topladıgını rapor ediyor.
 mno_intro_next|Devam et...
 mno_start_defend_caravan|Karavanı Savun!
 mno_start_raid_caravan|Karavanı Yagmala!
@@ -355,31 +355,31 @@ mno_start_ambush_orcs|Ork Pususu!
 mno_start_kill_scouts|Onlar gelişimizi rapor etmeden izcileri durdurun!
 mno_go_your_way|Onları yalnız bırak
 mno_defend_villagers|Köylüleri Savun!
-mno_raid_villagers|Köyü Yağmala!
+mno_raid_villagers|Köyü Yagmala!
 mno_go_away|Şimdilik ayrıl ve yeniden gruplandır.
 menu_scout_camp_quest|Yakındaki keşif kampını görüyorsun. Adamlarını onlara saldıracak şekilde hazırlıyorsun
 mno_attack_scout_camp|İzci Kampına Saldır!
 menu_sea_battle_quest|Bir düşman filosuyla karşılaştın.Gemiler yakınlaşıyor ve tayfa bordalamaya hazırlanıyor...
 mno_sb_defend_the_town|Bordalayın onları! Filolarını yok edin!
 mno_sb_attack_the_town|Yolumuzu kesmeye çalışıyorlar! Filoyu savun!
-menu_camp_field_ai|^^^^^Değiştirmek için bir seçeneğe tıkla.^^^Bir veya Daha Fazla Seçeneği Kapatmak Performansı Arttıracaktır. (FPS)
+menu_camp_field_ai|^^^^^Degiştirmek için bir seçenege tıkla.^^^Bir veya Daha Fazla Seçenegi Kapatmak Performansı Arttıracaktır. (FPS)
 mno_lord_field_ai|Lordlar Gelişmiş Savaş Alanı Yapay Zekasına Sahip Olacak: {s7}
 mno_horse_archer_field_ai|Atlı Okçular Gelişmiş Savaş Alanı Yapay Zekasına Sahip Olacak: {s7}
 mno_vs_orcs_field_ai|Okçular orklara karşı daha iyi nişan alsınlar (orkların kafalarına hedef almazlar): {s7}
 mno_battlefield_animals|Warg olmayan / At veya Hayvan Yoldaşları Savaşta oluştur: {s7}
 mno_slow_when_wounded|Kişiler yaralanınca yavaşlar: [s7]
-mno_battle_encounter_effects|Özel grup bazlı savaş alanında etkiler (Örneğin Kasırgalar, Sisler): {s7}
+mno_battle_encounter_effects|Özel grup bazlı savaş alanında etkiler (Örnegin Kasırgalar, Sisler): {s7}
 menu_hungry_orc|hiçbiri
 menu_leaving_elf|hiçbiri
-mno_defend_refugees|Yağmacılar için tetikte kal....
+mno_defend_refugees|Yagmacılar için tetikte kal....
 mno_attack_refugees|Mülteci kervanına saldır...
 mno_leave_refugees|Onları şimdilik bırakın...
 mno_evil_war_tut_continue|Devam et...
-menu_guardian_party_quest|{s8}  Isengard'ın hala ayaklarının üstünde olduğunu ve son direnişi için hazırlıklarını tamamladığını bildiriyor. Isengard'ın Ordularına karşı olacak bu son savaşa katılmanı diliyor. Orduya en az {reg13} sayıda asker getirmen gerekiyor, yeterli sayıda askerin yoksa tez zamanda daha fazla asker yetiştirmen bildirildi.
-mno_guardian_party_reject|Ona katılmayacağını ilet.
+menu_guardian_party_quest|{s8}  Isengard'ın hala ayaklarının üstünde oldugunu ve son direnişi için hazırlıklarını tamamladıgını bildiriyor. Isengard'ın Ordularına karşı olacak bu son savaşa katılmanı diliyor. Orduya en az {reg13} sayıda asker getirmen gerekiyor, yeterli sayıda askerin yoksa tez zamanda daha fazla asker yetiştirmen bildirildi.
+mno_guardian_party_reject|Ona katılmayacagını ilet.
 mno_guardian_party_send_word|Hemen gelip ona katılacagini ilet.
 menu_alternate_training_fight|{reg5} Düşmanla yüzleşeceksin. Hazır mısın?
-mno_training_continue|Eğitime başla...
+mno_training_continue|Egitime başla...
 menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Tekrar dene...
 mno_alternate_training_finish|Arenadan ayrıl...
@@ -401,37 +401,37 @@ mno_cb_mordor|Mordor
 mno_cb_mordor1|Isengard
 mno_cb_mordor2|Dunland
 mno_cb_mordor3|Haradrim
-mno_cb_mordor4|Doğulular
+mno_cb_mordor4|Dogulular
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
 mno_cb_mordor7| Rhun
 mno_cb_mordor8|Korsanlar
-mno_rescue_mission|Gecenin yardımıyla büyücünün sığınağına sız.
+mno_rescue_mission|Gecenin yardımıyla büyücünün sıgınagına sız.
 mno_next_rescue_scene_door|İleri marş!
 mno_pick_troops1|Görev için yoldaş seç, {reg0} seçili.
 menu_pick_troops|Gizlilik görevi için kimi beraberinde götürürdün? Şu anda {reg0}  yoldaş seçtin. Yanında 10'a kadar kişi götürebilirsin.
 mno_go_forward|Yoldaş seçimini bitir ve devam et.
-menu_burial_mound|{s2} Bölgesinden {s1} isimli kişinin gömülü olduğu toprağa yaklaşıyorsun. {s28} Kuvvetleri tarafından savaşta mağlup edilmiş. Mezar, ölmüş düşmanlarının çentikli silahlarıyla dolu.
+menu_burial_mound|{s2} Bölgesinden {s1} isimli kişinin gömülü oldugu topraga yaklaşıyorsun. {s28} Kuvvetleri tarafından savaşta maglup edilmiş. Mezar, ölmüş düşmanlarının çentikli silahlarıyla dolu.
 mno_pay_respects|Diz çök ve saygılarını sun.
 mno_swear_oath|İntikam yemini et!
 mno_despoil|Mekanı kirlet.
-mno_leave_mound|Höyüğü terket.
+mno_leave_mound|Höyügü terket.
 menu_burial_mound_respects|Diz çöküp {s1}'e saygını sunuyorsun, öteki hayata hızlı geçişi için sessizce dua ediyorsun. Burada yapacak bir şey kalmadı.
-menu_burial_mound_oath|{s4}'ün ölümü üzerine bağırarak intikam yemini ediyorsun. Hiç durmadan {s3} kuvvetlerini arayacak ve onları yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
-menu_funeral_pyre_oath|{s4}'ün ölümü üzerine bağırarak intikam yemini ediyorsun. Hiç durmadan {s3} kuvvetlerini arayacak ve onları yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
+menu_burial_mound_oath|{s4}'ün ölümü üzerine bagırarak intikam yemini ediyorsun. Hiç durmadan {s3} kuvvetlerini arayacak ve onları yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
+menu_funeral_pyre_oath|{s4}'ün ölümü üzerine bagırarak intikam yemini ediyorsun. Hiç durmadan {s3} kuvvetlerini arayacak ve onları yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
 mno_leave_pyre_oath|Kremasyon alanını terket.
-menu_burial_mound_despoil| {s1}'ın mezarını ellerinle yıkıyorsun ve taşlarını lanetlerle, merhametsiz şarkılarla ve ağza alınmayacak hareketlerle lekeliyorsun. Yoldaşların ölünün korkusundan geri çekiliyorlar fakat senin kötülüğüne duydukları saygı yenilenmiş gibi görünüyor.
-menu_funeral_pyre| {s3} {s2} arasında kömürleşmiş cenazesinin kalıntılarına yaklaşıyorsun. {s28} 'in güçleri ile savaşta kaybedilmiş. Cesetler, onun muhafızları tarafından törenle yakılmış. Kayda değer hiçbir şey kalmamış.
+menu_burial_mound_despoil| {s1}'ın mezarını ellerinle yıkıyorsun ve taşlarını lanetlerle, merhametsiz şarkılarla ve agza alınmayacak hareketlerle lekeliyorsun. Yoldaşların ölünün korkusundan geri çekiliyorlar fakat senin kötülügüne duydukları saygı yenilenmiş gibi görünüyor.
+menu_funeral_pyre| {s3} {s2} arasında kömürleşmiş cenazesinin kalıntılarına yaklaşıyorsun. {s28} 'in güçleri ile savaşta kaybedilmiş. Cesetler, onun muhafızları tarafından törenle yakılmış. Kayda deger hiçbir şey kalmamış.
 mno_leave_pyre|Kremasyon alanını terket.
-menu_town_ruins|{s1} 'in {s2} oldupunu görmek için yaklaştığında..
+menu_town_ruins|{s1} 'in {s2} oldupunu görmek için yaklaştıgında..
 mno_ruin_menu_0|Etrafı keşfet.
 mno_ruin_leave|Ayrıl...
 menu_premutiny|hiçbirşey
-menu_death|Öldürüldün. Savaş devam etse bile artık onun bir parçası değilsin.
+menu_death|Öldürüldün. Savaş devam etse bile artık onun bir parçası degilsin.
 menu_animal_ambush|Yoldaşlarınla birlikte kendinizi grubunuzdan izole edilmiş olarak buluyorsunuz ve aniden...
-menu_animal_ambush_success|Tıpkı ekinlerin orağa boyun eğdiği gibi, {s2}'de sana {reg0?eğiliyor:eğiliyorlar}! Çok geçmeden tüm saldırganlar yerde yatıyor, yaralı ya da ölü. {s3}
-menu_animal_ambush_fail|Hayvanlar sana {reg0?,: ve yoldaşına{reg2?s,:,}} doğru havlayıp hırlıyorlar, ama şans eseri onları geri püskürtüyorsun. Umarım tekrar saldırmazlar.
-menu_build_your_scene|Burada aşağıda gösterilen slotlardan birini veya oyun düzenleme/edit modunu kullanarak, kendi savaş sahneni yaratabilirsin (düzenleme modunu M&B başlatma ayarlar ekranından açman gerekir). Ardından yarattığın sahneleri (TLD/SceneObj klasöründeki sco dosyaları) TLD modunun yapımcılarına ulaştırabilirsin. Eğer sahnen iyiyse, gelecek versiyonlarda rastgele savaşalanı olarak oynanabilir!^^ Sahnenin hangi bölgede çıkmasını istediğini belirtmeye çalış.^Bir kaç ipucu: derin sular, dik dağlar gibi geçilemez alanlar yapmamaya çalışın, tabii tecrübeli bir sahne yapımcısı değilseniz ve yapay zekayı o bölgelerden uzak tutabilecekseniz. (Girdiler 0-1 saldırganlar için, 4 savunmacılar için, 5-8'e dokunmayın.
+menu_animal_ambush_success|Tıpkı ekinlerin oraga boyun egdigi gibi, {s2}'de sana {reg0?egiliyor:egiliyorlar}! Çok geçmeden tüm saldırganlar yerde yatıyor, yaralı ya da ölü. {s3}
+menu_animal_ambush_fail|Hayvanlar sana {reg0?,: ve yoldaşına{reg2?s,:,}} dogru havlayıp hırlıyorlar, ama şans eseri onları geri püskürtüyorsun. Umarım tekrar saldırmazlar.
+menu_build_your_scene|Burada aşagıda gösterilen slotlardan birini veya oyun düzenleme/edit modunu kullanarak, kendi savaş sahneni yaratabilirsin (düzenleme modunu M&B başlatma ayarlar ekranından açman gerekir). Ardından yarattıgın sahneleri (TLD/SceneObj klasöründeki sco dosyaları) TLD modunun yapımcılarına ulaştırabilirsin. Eger sahnen iyiyse, gelecek versiyonlarda rastgele savaşalanı olarak oynanabilir!^^ Sahnenin hangi bölgede çıkmasını istedigini belirtmeye çalış.^Bir kaç ipucu: derin sular, dik daglar gibi geçilemez alanlar yapmamaya çalışın, tabii tecrübeli bir sahne yapımcısı degilseniz ve yapay zekayı o bölgelerden uzak tutabilecekseniz. (Girdiler 0-1 saldırganlar için, 4 savunmacılar için, 5-8'e dokunmayın.
 mno_scene1|Savaşalanı5 (file scn battlefield5.sco)
 mno_scene2|Savaşalanı6 (file scn battlefield6.sco)
 mno_scene3|Savaşalanı7 (file scn battlefield7.sco)

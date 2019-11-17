@@ -1,17 +1,17 @@
-ui_at_learning_limit|(Bu Irk için öğrenme limitinde)
-ui_not_enough_skill_points_to_learn|(Öğrenmek için yeterli beceri puanınız yok)
-ui_not_enough_attributetype_to_learn_this_skill|(Bu beceriyi öğrenmek için yeterli %s yok)
-ui_explanation_agility|Çeviklik: Her puan 5 silah hüneri verir ve silah hızını %0.5 arttırır. Şu beceriler çeviklik puanının 1/3'ünden fazla yükseltilemez: Silah Ustalığı, Kalkan, Atletik, Binicilik, Atlı Okçuluk, Yağma.
+ui_at_learning_limit|(Bu Irk için ögrenme limitinde)
+ui_not_enough_skill_points_to_learn|(Ögrenmek için yeterli beceri puanınız yok)
+ui_not_enough_attributetype_to_learn_this_skill|(Bu beceriyi ögrenmek için yeterli %s yok)
+ui_explanation_agility|Çeviklik: Her puan 5 silah hüneri verir ve silah hızını %0.5 arttırır. Şu beceriler çeviklik puanının 1/3'ünden fazla yükseltilemez: Silah Ustalıgı, Kalkan, Atletik, Binicilik, Atlı Okçuluk, Yagma.
 ui_retreated_battle|%s savaş alanından kaçtı.
 ui_riding_skill_not_adequate_to_mount|(Binicilik seviyesi düşük)
 ui_camp|Kamp
 ui_tutorial_inventory|The Last Days'de, Ekipman almak için Kaynak puanına ihtiyacınız vardır.
-ui_you_dont_have_value|%s  sahip değilsin
+ui_you_dont_have_value|%s  sahip degilsin
 ui_merchant_cant_afford_value|%s: Bize ihtiyacımız olandan daha fazlasını veriyorsun! Belki birazını kendine saklamalısın ( %s için eşya veriyorsun, yalnızca %s kullanabiliriz )
 ui_merchant_pay_whatever|Hayır, bunlara ihtiyacım yok, sende kalsın.
 ui_horse|Binek
-ui_reclaim_your_sold_goods|Bu malı satın almadan önce, satmış olduğunuz malları geri alın!
-ui_return_your_bought_goods|Bu malı satmadan önce satın almış olduğunuz malları iade edin!
+ui_reclaim_your_sold_goods|Bu malı satın almadan önce, satmış oldugunuz malları geri alın!
+ui_return_your_bought_goods|Bu malı satmadan önce satın almış oldugunuz malları iade edin!
 ui_return_price|Geri alınırsa +%d Res.P.
 ui_sell_price|Geri verilirse +%d Res.P.
 ui_reclaim_price|Geri almak için: -%d Res.P.
@@ -25,9 +25,9 @@ ui_hire|Alındı
 ui_notification_cant_hire|(kayıt için yeterli R.P. alınmadı)
 ui_joining_cost_weekly_wage|Alım: %d Res.Pts. -- Bakım: %d Res.Pts.
 ui_weekly_wage|Haftalık ücret: %d Res.P.
-ui_price|Değer: %d Res.P.
+ui_price|Deger: %d Res.P.
 ui_cant_reload_this_weapon_on_horseback|Bu Silah Binek Üzerindeyken Yeniden Doldurulamaz.
-ui_delivered_number_damage_to_horse|Bineğe %d hasar verildi
+ui_delivered_number_damage_to_horse|Binege %d hasar verildi
 ui_horse_charged_for_number_damage|Atla Saldırarak Hasar Verildi %d damage.
 ui_horse_received_number_damage|Binek %d hasar aldı
 ui_horse_fell_dead|At öldü...
@@ -54,7 +54,7 @@ ui_crouch|çömelmek
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-ui_are_you_sure_you_want_to_import_the_character|Karakteri içe aktarmak istediğinizden emin misiniz?
+ui_are_you_sure_you_want_to_import_the_character|Karakteri içe aktarmak istediginizden emin misiniz?
 ; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
 ; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path finding, Spotting, Inventory Management, Wound treatment, Surgery, First-aid, Engineer, Persuasion.
 ; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Leadership, Trade.
@@ -65,11 +65,11 @@ ui_following|Takip ediliyor
 ui_accompanying|Eşlik ediyor
 ui_dumping_value_items|%d eşyalar kalıcı olarak kaybolacak, emin misiniz?
 ui_dumping_value_item|Bir eşya kalıcı olarak kaybolacak, emin misiniz ?
-ui_notification_requirements_not_met|Bu silah için gerekli beceri yada yeteneğe sahip değilsin
+ui_notification_requirements_not_met|Bu silah için gerekli beceri yada yetenege sahip degilsin
 ui_disband|terhis et
 ui_you_hit_a_friendly_troop|Dost bir birime zarar verdin!
 ui_you_are_not_carrying_any_arrows|Yanında hiç ok kalmadı.
-ui_delivered_number_damage_to_horse|Bineğe %d hasar verildi
+ui_delivered_number_damage_to_horse|Binege %d hasar verildi
 ui_received_number_damage|%d Hasar alındı.
 ; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
 ; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
@@ -85,14 +85,14 @@ ui_shared_number_experience_within_party|%ddeneyim, takım arasında paylaşıld
 ui_your_relations_with_value_has_improved_from_number_to_number|%sile ilişkileriniz, %dden%dye yükseldi.
 ui_your_relations_with_value_has_deteriorated_from_number_to_number|%s ile ilişkileriniz, %dden%dye geriledi.
 ui_you_lost_value|%s Kaybettin.
-ui_change_graphics_settings_explanation|Yaptığınız bazı değişiklikler, yeni bir alana girdiğinizde geçerli olacak.
+ui_change_graphics_settings_explanation|Yaptıgınız bazı degişiklikler, yeni bir alana girdiginizde geçerli olacak.
 ; ui_game_log_window|Game Log Window
 ui_blunt_short|b
 ui_tracks|İzler
 ui_order_button_hold_fire|Ateş etmeyin
 ui_order_button_fire_at_will|Ateş serbest
 ui_order_button_fire_orders|menzilli emirleri
-ui_need_to_learn_prisoner_management|Esir alabilmek için Esir Yönetimi yeteneğini öğrenmen gerek.
+ui_need_to_learn_prisoner_management|Esir alabilmek için Esir Yönetimi yetenegini ögrenmen gerek.
 ; ui_game_log_window|Game Log Window
 ui_unbalanced|Dengesiz
 ui_can_crush_through_blocks|Blokların içinden geçebilir
@@ -110,7 +110,7 @@ ui_order_button_stand_ground|yerinizde kalın
 ui_order_button_retreat|Geri çekilin
 ui_order_button_advance|On adım ilerle
 ui_order_button_fall_back|On adım geri gel
-ui_order_button_spread_out|Dağılın
+ui_order_button_spread_out|Dagılın
 ui_order_button_stand_closer|Yakın durun
 ui_order_button_mount_horses|Ata binin
 ui_order_button_dismount|Binekten in
@@ -130,7 +130,7 @@ ui_dismount_e_|%s, Attan inin!
 ui_advance_e_|%s, on adım ileri!
 ui_fall_back_e_|%s, on adım geri!
 ui_stand_closer_e_|%s, yakın durun
-ui_spread_out_e_|%s, dağılın.
+ui_spread_out_e_|%s, dagılın.
 ui_use_blunt_weapons_e_|%s, yalnızca künt silahları kullan.
 ui_use_any_weapon_e_|%s, silah serbest.
 ui_hold_fire_e_|%s, Ateş etme!

@@ -34,8 +34,8 @@ trp_arena_training_fighter_9|Şampiyon Birlik
 trp_arena_training_fighter_9_pl|Şampiyon Birlikler
 trp_arena_training_fighter_10|Şampiyon Birlik
 trp_arena_training_fighter_10_pl|Şampiyon Birlikler
-trp_cattle|Sığır
-trp_cattle_pl|Sığır Sürüsü
+trp_cattle|Sıgır
+trp_cattle_pl|Sıgır Sürüsü
 trp_farmer|Çiftçi
 trp_farmer_pl|Çiftçiler
 trp_townsman|Kasabalı
@@ -138,11 +138,11 @@ trp_rhun_light_cavalry|Rhunlu Hafif Süvari
 trp_rhun_light_cavalry_pl|Rhunlu Hafif Süvariler
 trp_rhun_noble_cavalry|Rhunlu Soylu Süvari
 trp_rhun_noble_cavalry_pl|Rhunlu Soylu Süvariler
-trp_rhun_heavy_noble_cavalry|Rhun Ağır Soylu Süvariler
-trp_rhun_heavy_noble_cavalry_pl|Rhunlu Ağır Soylu Süvari
+trp_rhun_heavy_noble_cavalry|Rhun Agır Soylu Süvariler
+trp_rhun_heavy_noble_cavalry_pl|Rhunlu Agır Soylu Süvari
 trp_dorwinion_noble_of_rhun|Rhunun Dorwinion Soylusu
 trp_dorwinion_noble_of_rhun_pl|Rhunun Dorwinion Soyluları
-trp_i1_dwarven_apprentice|Cüce Çırağı
+trp_i1_dwarven_apprentice|Cüce Çıragı
 trp_i1_dwarven_apprentice_pl|Cüce Çırakları
 trp_i2_dwarven_warrior|Cüce Savaşçısı
 trp_i2_dwarven_warrior_pl|Cüce Savaşçıları
@@ -232,8 +232,8 @@ trp_axeman_of_lossarnach|Lossarnach Baltacısı
 trp_axeman_of_lossarnach_pl|Lossarnach Baltacıları
 trp_vet_axeman_of_lossarnach|Tecrübeli Lossarnach Baltacısı
 trp_vet_axeman_of_lossarnach_pl|Tecrübeli Lossarnach Baltacıları
-trp_heavy_lossarnach_axeman|Ağır Lossarnach Baltacısı
-trp_heavy_lossarnach_axeman_pl|Ağır Lossarnach Baltacıları
+trp_heavy_lossarnach_axeman|Agır Lossarnach Baltacısı
+trp_heavy_lossarnach_axeman_pl|Agır Lossarnach Baltacıları
 trp_axemaster_of_lossarnach|Lossarnach Balta Ustası
 trp_axemaster_of_lossarnach_pl|Lossarnach Balta Ustaları
 trp_lossarnach_leader|Lossarnach Kaptanı
@@ -254,7 +254,7 @@ trp_pelargir_marine_leader|Pelargir Denizcilerinin Kaptanı
 trp_pelargir_marine_leader_pl|Pelargir Denizcilerinin Kaptanları
 trp_clansman_of_lamedon|Lamedon klan üyesi
 trp_clansman_of_lamedon_pl|Lamedon klan üyeleri
-trp_footman_of_lamedon|Lamedon uşağı
+trp_footman_of_lamedon|Lamedon uşagı
 trp_footman_of_lamedon_pl|Lamedon uşaklar
 trp_veteran_of_lamedon|Lamedon tecrübelisi
 trp_veteran_of_lamedon_pl|Lamedon tecrübelileri
@@ -284,7 +284,7 @@ trp_veteran_blackroot_vale_archer|Blackroot Vale Yay Ustası
 trp_veteran_blackroot_vale_archer_pl|Blackroot Vale Yay Ustaları
 trp_master_blackroot_vale_archer|Blackroot Vale  Okçusu
 trp_master_blackroot_vale_archer_pl|Blackroot Vale Okçuları
-trp_footman_of_blackroot_vale|Blackroot Vale Uşağı
+trp_footman_of_blackroot_vale|Blackroot Vale Uşagı
 trp_footman_of_blackroot_vale_pl|Blackroot Vale Uşakları
 trp_spearman_of_blackroot_vale|Blackroot Vale Mızrakçısı
 trp_spearman_of_blackroot_vale_pl|Blackroot Vale Mızrakçıları
@@ -300,8 +300,8 @@ trp_knight_of_dol_amroth|Dol Amroth Şovalyesi
 trp_knight_of_dol_amroth_pl|Dol Amroth Şovalyeleri
 trp_veteran_knight_of_dol_amroth|Dol Amroth Kıdemli Şovalyesi
 trp_veteran_knight_of_dol_amroth_pl|Dol Amroth Şovalyeleri
-trp_swan_knight_of_dol_amroth|Dol Amroth Kuğu Şovalyesi
-trp_swan_knight_of_dol_amroth_pl|Dol Amroth Kuğu Şovalyeleri
+trp_swan_knight_of_dol_amroth|Dol Amroth Kugu Şovalyesi
+trp_swan_knight_of_dol_amroth_pl|Dol Amroth Kugu Şovalyeleri
 trp_dol_amroth_leader|Dol Amroth Kaptanı
 trp_dol_amroth_leader_pl|Dol Amroth Kaptanları
 trp_lothlorien_scout|Lothlorien İzcisi
@@ -456,8 +456,8 @@ trp_c5_elite_rider_of_rohan|Seçkin Rohan Atlısı
 trp_c5_elite_rider_of_rohan_pl|Seçkin Rohan Atlıları
 trp_c6_rider_guard_of_rohan|Rohan Eorl Muhafızı
 trp_c6_rider_guard_of_rohan_pl|Rohan Eorl Muhafızları
-trp_i6_2h_guard_of_rohan|Rohan Miğfer Muhafızı
-trp_i6_2h_guard_of_rohan_pl|Rohan Miğfer Muhafızları
+trp_i6_2h_guard_of_rohan|Rohan Migfer Muhafızı
+trp_i6_2h_guard_of_rohan_pl|Rohan Migfer Muhafızları
 trp_dismounted_veteran_skirmisher_of_rohan|Kıdemli Rohan Çatışmacısı 
 trp_dismounted_veteran_skirmisher_of_rohan_pl|Kıdemli Rohan Çatışmacıları 
 trp_dismounted_elite_skirmisher_of_rohan|Seçkin Rohan Çatışmacısı 
@@ -534,8 +534,8 @@ trp_easterling_rider|Variag Midilli Binicisi
 trp_easterling_rider_pl|Variag Midilli Binicileri
 trp_easterling_horseman|Variag Atlısı
 trp_easterling_horseman_pl|Variag Atlıları
-trp_easterling_veteran_horseman|Variag Ağır Atlısı
-trp_easterling_veteran_horseman_pl|Variag Ağır Atlıları
+trp_easterling_veteran_horseman|Variag Agır Atlısı
+trp_easterling_veteran_horseman_pl|Variag Agır Atlıları
 trp_easterling_horsemaster|Variag Zırhlı Süvarisi
 trp_easterling_horsemaster_pl|Variag Zırhlı Süvarileri
 trp_easterling_lance_kataphract|Variag Zırhlı Mızraklı Süvarisi
@@ -554,16 +554,16 @@ trp_easterling_skirmisher|Variag Çatışmacısı
 trp_easterling_skirmisher_pl|Variag Çatışmacıları
 trp_easterling_veteran_skirmisher|Kıdemli Variag Çatışmacısı
 trp_easterling_veteran_skirmisher_pl|Kıdemli Variag Çatışmacıları
-trp_easterling_elite_skirmisher|Variag Ağır Çatışmacısı
-trp_easterling_elite_skirmisher_pl|Variag Ağır Çatışmacısı
+trp_easterling_elite_skirmisher|Variag Agır Çatışmacısı
+trp_easterling_elite_skirmisher_pl|Variag Agır Çatışmacısı
 trp_i1_corsair_youth|Umbar Denizcisi
 trp_i1_corsair_youth_pl|Umbar Denizcileri
 trp_i2_corsair_warrior|Umbar Savaşçısı
 trp_i2_corsair_warrior_pl|Umbar Savaşçısı
 trp_i3_corsair_spearman|Umbar Mızraklısı
 trp_i3_corsair_spearman_pl|Umbar Mızraklıları
-trp_i4_corsair_raider|Korsan Yağmacı
-trp_i4_corsair_raider_pl|Korsan Yağmacılar
+trp_i4_corsair_raider|Korsan Yagmacı
+trp_i4_corsair_raider_pl|Korsan Yagmacılar
 trp_i5_corsair_night_raider|Korsan Gece Akıncısı
 trp_i5_corsair_night_raider_pl|Korsan Gece Akıncısı
 trp_a2_corsair_marine|Umbar Denizcisi
@@ -666,14 +666,14 @@ trp_black_uruk_of_barad_dur|Barad Dur Kara Uruk
 trp_black_uruk_of_barad_dur_pl|Barad Dur Kara Uruklar
 trp_uruk_mordor_standard_bearer|Mordor Bayrak Taşıyıcısı
 trp_uruk_mordor_standard_bearer_pl|Mordor Bayrak Taşıyıcıları
-trp_troll_of_moria|Mağara Trolü
-trp_troll_of_moria_pl|Mağara Trolleri
+trp_troll_of_moria|Magara Trolü
+trp_troll_of_moria_pl|Magara Trolleri
 trp_armoured_troll|Zırhlı Troll
 trp_armoured_troll_pl|Zırhlı Trolller
 trp_olog_hai|Mordor Olog Hai
 trp_olog_hai_pl|Mordor Olog Hai 
-trp_ent|Ağaç Adam
-trp_ent_pl|Ağaç Adamlar
+trp_ent|Agaç Adam
+trp_ent_pl|Agaç Adamlar
 trp_orc_snaga_of_guldur|Dol Guldur Ork Snaga
 trp_orc_snaga_of_guldur_pl|Dol Guldur'lu Ork Snagalar
 trp_orc_of_guldur|Dol Guldur Ork İzcisi
@@ -745,8 +745,8 @@ trp_c4_warg_rider_gundabad|Gundabad Warg Binicisi
 trp_c4_warg_rider_gundabad_pl|Gundabad Warg Binicileri
 trp_c5_goblin_north_clan_rider|Kuzeyli Goblin Klan Binicisi
 trp_c5_goblin_north_clan_rider_pl|Kuzeyli Goblin Klan Binicileri
-trp_mountain_goblin|Dağ Goblini
-trp_mountain_goblin_pl|Dağ Goblinleri
+trp_mountain_goblin|Dag Goblini
+trp_mountain_goblin_pl|Dag Goblinleri
 trp_tribal_orc|Kabile Orku
 trp_tribal_orc_pl|Kabile Orkları
 trp_tribal_orc_warrior|Kabile Ork Savaşçısı
@@ -771,30 +771,30 @@ trp_noldorin_commander|Noldorin Kumandanı
 trp_noldorin_commander_pl|Noldorin Kumandanları
 trp_elf_captain_of_lothlorien|Lothlorien Elf Kaptanı
 trp_elf_captain_of_lothlorien_pl|Lothlorien Elf Kaptanları
-trp_lothlorien_lieutenant|Lorhlorien Teğmeni
-trp_lothlorien_lieutenant_pl|Lorhlorien Teğmenleri
+trp_lothlorien_lieutenant|Lorhlorien Tegmeni
+trp_lothlorien_lieutenant_pl|Lorhlorien Tegmenleri
 trp_elf_captain_of_mirkwood|Greenwood Elf Kaptanı
 trp_elf_captain_of_mirkwood_pl|Greenwood Elf Kaptanları
-trp_mirkwood_lieutenant|Greenwood Teğmeni
-trp_mirkwood_lieutenant_pl|Greenwood Teğmenleri
+trp_mirkwood_lieutenant|Greenwood Tegmeni
+trp_mirkwood_lieutenant_pl|Greenwood Tegmenleri
 trp_elf_captain_of_rivendell|Ayrıkvadi Elf Kaptanı
 trp_elf_captain_of_rivendell_pl| Ayrıkvadi Elf Kaptanları
-trp_rivendell_lieutenant|Ayrıkvadi Teğmeni
-trp_rivendell_lieutenant_pl|Ayrıkvadi Teğmenleri
-trp_lieutenant_of_rohan|Rohan Teğmeni
-trp_lieutenant_of_rohan_pl|Rohan Teğmenleri
+trp_rivendell_lieutenant|Ayrıkvadi Tegmeni
+trp_rivendell_lieutenant_pl|Ayrıkvadi Tegmenleri
+trp_lieutenant_of_rohan|Rohan Tegmeni
+trp_lieutenant_of_rohan_pl|Rohan Tegmenleri
 trp_captain_of_rohan|Rohan Kaptanı
 trp_captain_of_rohan_pl|Rohan Kaptanları
 trp_high_captain_of_rohan|Üstün Rohan Kaptanı
 trp_high_captain_of_rohan_pl|Üstün Rohan Kaptanları
-trp_lieutenant_of_isengard|Isengard Teğmeni
-trp_lieutenant_of_isengard_pl|Isengard Teğmenleri
+trp_lieutenant_of_isengard|Isengard Tegmeni
+trp_lieutenant_of_isengard_pl|Isengard Tegmenleri
 trp_captain_of_isengard|Isengard Kaptanı
 trp_captain_of_isengard_pl|Isengard Kaptanları
 trp_high_captain_of_isengard|Üstün Isengard Kaptanı
 trp_high_captain_of_isengard_pl|Üstün Isengard Kaptanları
-trp_lieutenant_of_mordor|Mordor Teğmeni
-trp_lieutenant_of_mordor_pl|Mordor Teğmenleri
+trp_lieutenant_of_mordor|Mordor Tegmeni
+trp_lieutenant_of_mordor_pl|Mordor Tegmenleri
 trp_captain_of_mordor|Mordor Kaptanı
 trp_captain_of_mordor_pl|Mordor Kaptanları
 trp_high_captain_of_mordor|Üstün Mordor Kaptanı
@@ -805,12 +805,12 @@ trp_easterling_lieutenant|Wariag Savaş Keşişi
 trp_easterling_lieutenant_pl|Wariag Savaş Keşişleri
 trp_harad_chieftain|Harad Kabile Reisi
 trp_harad_chieftain_pl|Harad Kabile Reisleri
-trp_harad_lieutenant|Harad Teğmeni
-trp_harad_lieutenant_pl|Harad Teğmenleri
+trp_harad_lieutenant|Harad Tegmeni
+trp_harad_lieutenant_pl|Harad Tegmenleri
 trp_black_numenorean_captain|Kara Numenor Kaptanı
 trp_black_numenorean_captain_pl|Kara Numenor Kaptanları
-trp_black_numenorean_lieutenant|Kara Numenor Teğmeni
-trp_black_numenorean_lieutenant_pl|Kara Numenor Teğmenleri
+trp_black_numenorean_lieutenant|Kara Numenor Tegmeni
+trp_black_numenorean_lieutenant_pl|Kara Numenor Tegmenleri
 trp_dunnish_night_wolf|Dunnish Gece Kurdu
 trp_dunnish_night_wolf_pl|Dunnish Gece Kurtları
 trp_dunnish_lieutenant|Dunnish Beyi
@@ -829,14 +829,14 @@ trp_mordor_agent|Mordor Casusu
 trp_mordor_agent_pl|Mordor Casusları
 trp_isengard_agent|Isengard Casusu
 trp_isengard_agent_pl|Isengard Casusları
-trp_looter|Yağmacı
-trp_looter_pl|Yağmacılar
+trp_looter|Yagmacı
+trp_looter_pl|Yagmacılar
 trp_bandit|Haydut
 trp_bandit_pl|Haydutlar
 trp_brigand|Eşkiya
 trp_brigand_pl|Eşkiyalar
-trp_mountain_bandit|Dağ Haydutu
-trp_mountain_bandit_pl|Dağ Haydutları
+trp_mountain_bandit|Dag Haydutu
+trp_mountain_bandit_pl|Dag Haydutları
 trp_forest_bandit|Orman Haydutu
 trp_forest_bandit_pl|Orman Haydutları
 trp_sea_raider|Deniz Akıncısı
@@ -1006,7 +1006,7 @@ trp_knight_1_15|Ugluk
 trp_knight_1_16|Mauhur
 trp_knight_1_17|Yediparmak Mog
 trp_knight_1_18|Hushnak Uzunbıçak
-trp_knight_1_19|Gridash Ağaçısıran
+trp_knight_1_19|Gridash Agaçısıran
 trp_knight_1_20|Adamyiyen Gronk
 trp_knight_2_1|Kaptan Mortakh
 trp_knight_2_2|Berúthiel
@@ -1014,7 +1014,7 @@ trp_knight_2_3|Skang
 trp_knight_2_4|Piç Pharakhad
 trp_knight_2_5|Grishnakh
 trp_knight_2_51|Gothmog
-trp_knight_2_51_pl|Teğmen 
+trp_knight_2_51_pl|Tegmen 
 trp_knight_2_6|Kabile Reisi Aslan Karna
 trp_knight_2_7|Kabile Reisi Na'man
 trp_knight_2_8|Kabile Reisi Haarith
@@ -1046,7 +1046,7 @@ trp_knight_5_1|Lord Halward
 trp_knight_5_2|Lord Bard
 trp_knight_5_3|Lord Esgarain
 trp_knight_5_6|Fulgni Uzunsakal
-trp_knight_5_7|Thorin Taşmiğfer
+trp_knight_5_7|Thorin Taşmigfer
 trp_knight_5_11|Şef Fudreim
 trp_knight_5_12|Şef Wulf
 trp_knight_6_1|Dervorin
@@ -1068,7 +1068,7 @@ trp_smith_erech|Kara Lorne
 trp_smith_erech_pl|Demirci 
 trp_smith_pinnath|Kılıç Ustası Tarandil
 trp_smith_pinnath_pl|Demirci
-trp_smith_eosgiliath|Yağmacı Bzurg
+trp_smith_eosgiliath|Yagmacı Bzurg
 trp_smith_eosgiliath_pl|Demirci 
 trp_smith_wosgiliath|Gardil
 trp_smith_wosgiliath_pl|Geçici Demirci
@@ -1086,7 +1086,7 @@ trp_smith_hornburg|Aldhelm
 trp_smith_hornburg_pl|Demirci 
 trp_smith_eastemnet|Eadfrid
 trp_smith_eastemnet_pl|Demirci 
-trp_smith_westfold|Miğfer Ustası Deor
+trp_smith_westfold|Migfer Ustası Deor
 trp_smith_westfold_pl|Demirci 
 trp_smith_westemnet|Zırh Ustası
 trp_smith_westemnet_pl|Demirci 
@@ -1094,7 +1094,7 @@ trp_smith_eastfold|Eaderan Demiroyucu
 trp_smith_eastfold_pl|Demirci 
 trp_smith_morannon|Hurbag Kapıyapıcı
 trp_smith_morannon_pl|Demirci 
-trp_smith_mmorgul|Orgurz Alevgeğiren
+trp_smith_mmorgul|Orgurz Alevgegiren
 trp_smith_mmorgul_pl|Demirci 
 trp_town_24_smith|Boz Demirbozan
 trp_town_24_smith_pl|Demirci 
@@ -1112,7 +1112,7 @@ trp_smith_urcamp|Glurk
 trp_smith_urcamp_pl|Kamp Demircisi 
 trp_smith_cgaladhon|Yay Ustası Dirufin
 trp_smith_cgaladhon_pl|Elf Silah Yapımcıları
-trp_smith_cdolen|İğrenç Dimirian
+trp_smith_cdolen|İgrenç Dimirian
 trp_smith_cdolen_pl|Elf Silah Yapımcıları 
 trp_smith_camroth|Getasistan
 trp_smith_camroth_pl|Elf Silah Yapımcıları 
@@ -1148,17 +1148,17 @@ trp_smith_gundabad|Blurg Karsatan
 trp_smith_gundabad_pl|Demirci 
 trp_smith_ironhill|Ironhill Demircisi
 trp_smith_ironhill_pl|Cüce Kamp Demircileri
-trp_town_50_weaponsmith|Bıçak Oğütücü Shruklug
+trp_town_50_weaponsmith|Bıçak Ogütücü Shruklug
 trp_town_50_weaponsmith_pl|Demirci 
 trp_smith_gondor_ac|Zırhcı Bor 
 trp_smith_gondor_ac_pl|Kamp Demircisi 
-trp_smith_rohan_ac|Miğfer Ustası Deor 
+trp_smith_rohan_ac|Migfer Ustası Deor 
 trp_smith_rohan_ac_pl|Kamp Demircisi 
 trp_smith_mordor_ac|Hurbag Kapıyapıcı 
 trp_smith_mordor_ac_pl|Demirci 
 trp_smith_isengard_ac|Burz Demirvuran 
 trp_smith_isengard_ac_pl|Yeraltı Demircisi 
-trp_smith_lorien_ac|İğrenç Dimirian 
+trp_smith_lorien_ac|İgrenç Dimirian 
 trp_smith_lorien_ac_pl|Elf Silah Yapımcıları 
 trp_smith_woodelf_ac|Dhoelath
 trp_smith_woodelf_ac_pl|Demirci 
@@ -1199,7 +1199,7 @@ trp_barman_erech_pl|Kale
 trp_barman_pinnath| Hancı
 trp_barman_pinnath_pl|Kale 
 trp_barman_hannun| Hancı
-trp_barman_hannun_pl|Gizli Mağara
+trp_barman_hannun_pl|Gizli Magara
 trp_barman_calembel| Hancı
 trp_barman_calembel_pl|Kale 
 trp_barman_edoras| Hancı
@@ -1219,7 +1219,7 @@ trp_barman_eastfold_pl|Kale
 trp_barman_baraddur| Hancı
 trp_barman_baraddur_pl|Kale 
 trp_barman_morannon| Hancı
-trp_barman_morannon_pl|Lider'in Mağarası
+trp_barman_morannon_pl|Lider'in Magarası
 trp_barman_mmorgul| Hancı
 trp_barman_mmorgul_pl|Kule
 trp_barman_cungol| Hancı
@@ -1227,11 +1227,11 @@ trp_barman_cungol_pl|Kale
 trp_barman_isengard| Hancı
 trp_barman_isengard_pl|Orthanc Kulesi
 trp_barman_cgaladhon| Hancı
-trp_barman_cgaladhon_pl|Ağaç Kale
+trp_barman_cgaladhon_pl|Agaç Kale
 trp_barman_cdolen| Hancı
-trp_barman_cdolen_pl|Ağaç Kale 
+trp_barman_cdolen_pl|Agaç Kale 
 trp_barman_camroth| Hancı
-trp_barman_camroth_pl|Ağaç Kale
+trp_barman_camroth_pl|Agaç Kale
 trp_barman_thalls| Hancı
 trp_barman_thalls_pl|Taht Odası
 trp_barman_beorn| Hancı
@@ -1382,7 +1382,7 @@ trp_elder_aldburg|Aldburg Thain
 trp_elder_aldburg_pl|kasaba
 trp_elder_hornburg|Hornburg Thain
 trp_elder_hornburg_pl|kale
-trp_elder_eastemnet|Doğu Emnet Thain
+trp_elder_eastemnet|Dogu Emnet Thain
 trp_elder_eastemnet_pl|kasaba
 trp_elder_westfold|Westfold Thain
 trp_elder_westfold_pl|kasaba
@@ -1391,9 +1391,9 @@ trp_elder_westemnet_pl|kasaba
 trp_elder_eastfold|Eastfold Thain
 trp_elder_eastfold_pl|kasaba
 trp_elder_morannon|Morannon Şefi
-trp_elder_morannon_pl|Büyük Kapı'ya bakan mağaralar
+trp_elder_morannon_pl|Büyük Kapı'ya bakan magaralar
 trp_elder_mmorgul|Morgul Şefi
-trp_elder_mmorgul_pl|uğursuz şehir
+trp_elder_mmorgul_pl|ugursuz şehir
 trp_elder_cungol|Gundanad'lı Kamp Şefi
 trp_elder_cungol_pl|kamp
 trp_elder_isengard|Grima Solucandil
@@ -1405,7 +1405,7 @@ trp_elder_cdolen_pl|kamp alanı
 trp_elder_camroth|Lorien Hikayecisi 
 trp_elder_camroth_pl|kamp alanı 
 trp_elder_thalls|Kuytuorman Yaşlısı
-trp_elder_thalls_pl|elf mağaraları
+trp_elder_thalls_pl|elf magaraları
 trp_elder_imladris|Rivendell Kampefendisi
 trp_elder_imladris_pl|kamp
 trp_elder_wvillage|Pierre Korucusu
@@ -1424,8 +1424,8 @@ trp_elder_umbar|Umbar'lı Levazım Subayı
 trp_elder_umbar_pl|güçlendirilmiş kamp
 trp_elder_moria|Moria Şefi
 trp_elder_moria_pl|Madenler
-trp_elder_gunda|Mağaranın Ustası
-trp_elder_gunda_pl|mağaralar
+trp_elder_gunda|Magaranın Ustası
+trp_elder_gunda_pl|magaralar
 trp_elder_dale|Dale'lı Levazım Subayı
 trp_elder_dale_pl|şehir 
 trp_elder_esgaroth|Esgaroth Levazım Subayı
@@ -1470,16 +1470,16 @@ trp_elder_guldur_ac|Guldur'lu Kamp Şefi
 trp_elder_guldur_ac_pl|kamp
 trp_elder_dwarf_ac|Cüce Kamp Efendsi
 trp_elder_dwarf_ac_pl|kamp
-trp_village_1_elder|Kirpiğin Lordu
-trp_village_1_elder_pl|mağaralar
-trp_tutorial_chest_1|Yakın Silah Sandığı
-trp_tutorial_chest_2|Menzilli Silah Sandığı
+trp_village_1_elder|Kirpigin Lordu
+trp_village_1_elder_pl|magaralar
+trp_tutorial_chest_1|Yakın Silah Sandıgı
+trp_tutorial_chest_2|Menzilli Silah Sandıgı
 trp_bonus_chest_1|Bonus Sandık
 trp_bonus_chest_2|Bonus Sandık
 trp_bonus_chest_3|Bonus Sandık
-trp_camp_chest_faction|Parti Sandığı
+trp_camp_chest_faction|Parti Sandıgı
 trp_camp_chest_none|Hiçbir şey olmayan Sandık 
-trp_player_chest|Sandığın
+trp_player_chest|Sandıgın
 trp_local_merchant|Yerel Tüccar
 trp_local_merchant_pl|Yerel Tüccarlar
 trp_tax_rebel|Köylü İsyancı
@@ -1503,14 +1503,14 @@ trp_spy_partner_pl|Casus Sorumluları
 trp_spy_partner_evil|Casus Sorumlusu 
 trp_spy_partner_evil_pl|Casus Sorumluları 
 trp_easter_egg_troll|Trol
-trp_treebeard|Ağaçsakal
+trp_treebeard|Agaçsakal
 trp_ent_1|Bregalad
 trp_ent_2|Finglass
 trp_ent_3|Fladrif
 trp_gandalf|Gandalf
 trp_gandalf_pl|Ev Yapımı Gandalve'lar
 trp_nazgul|Nazgul
-trp_nazgul_pl|Eğitilmiş Nazgul
+trp_nazgul_pl|Egitilmiş Nazgul
 trp_barman|Hancı
 trp_elder|Deneyimli İhtiyar
 trp_gear_merchant|Tehçizat Tüccarı
@@ -1518,8 +1518,8 @@ trp_goods_merchant|Eşya Tüccarı
 trp_start_quest_caravaneer|Karavancı Torbal
 trp_dorwinion_bandit|Dorwinion'lu Haydut
 trp_dorwinion_bandit_pl|Dorwinion'lu Haydutlar
-trp_dorwinion_raider|Dorwinion'lu Yağmacı
-trp_dorwinion_raider_pl|Dorwinion'lu Yağmacılar
+trp_dorwinion_raider|Dorwinion'lu Yagmacı
+trp_dorwinion_raider_pl|Dorwinion'lu Yagmacılar
 trp_city_guard|Şehir Muhafızı
 trp_city_guard_pl|şehir muhafızı
 trp_orc_sentry|Ork Gözcüsü
@@ -1537,13 +1537,13 @@ trp_warg_rider_of_mirkwood_pl|Kuytuorman'ın Warg Binicileri
 trp_gate_aggravator|Kapı Defansı
 trp_orc_pretender|Hak Sahibi Ork
 trp_human_prisoner|İnsan Mahkum
-trp_spider|Kuytuorman Örümceği
+trp_spider|Kuytuorman Örümcegi
 trp_spider_pl|Kuytuorman Örümcekleri
 trp_bear|Ayı
 trp_bear_pl|Ayılar
 trp_wolf|Kurt
 trp_wolf_pl|Kurtlar
-trp_dorwinion_sack|Dorwinion'lu Yağmacı
+trp_dorwinion_sack|Dorwinion'lu Yagmacı
 trp_ring_hunter_captain|Yüzük Avcısı Kaptanı
 trp_ring_hunter_lt|Yüzük Avcısı Kaptanı
 trp_ring_hunter_one|Yüzük Avcısı
@@ -1555,7 +1555,7 @@ trp_ring_hunter_three_pl|Yüzük Avcıları
 trp_ring_hunter_four|Yüzük Avcısı
 trp_ring_hunter_four_pl|Yüzük Avcıları
 trp_start_quest_uruk|Mordor Uruk Kaptanı
-trp_start_quest_orc|Mordor Ork Teğmen
+trp_start_quest_orc|Mordor Ork Tegmen
 trp_start_quest_orc_pl|Büyük Mordor Orkları
 trp_start_quest_woodelf|Galadhrim Kraliyet Nişancısı
 trp_start_quest_woodelf_pl|Galadhrim Kraliyet Nişancıları
@@ -1588,8 +1588,8 @@ trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_werewolf|Kurtadam
 trp_werewolf_pl|kurt adamlar
-trp_mountain_goblin2|Dağ Goblini
-trp_mountain_goblin2_pl|Dağ Goblinleri
+trp_mountain_goblin2|Dag Goblini
+trp_mountain_goblin2_pl|Dag Goblinleri
 trp_tribal_orc2|Kabile Orku
 trp_tribal_orc2_pl|Kabile Orkları
 trp_tribal_orc_warrior2|Kabile Ork Savaşçısı

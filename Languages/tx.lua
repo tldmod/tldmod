@@ -34,6 +34,12 @@ function load(fi)
       if l:find([[/\\]]) ~= nil then x[#x]=(x[#x]):gsub([[/\\]],[[/\]]) end
       --Fix the occasional |" to |
       --x[#x]=(x[#x]):gsub([[|"]],[[|]])
+      -- swy: fix the tab characters from Transifex (check mno_battle_encounter_effects and caravan_help3), which are encoded/escaped as \t (we don't want them) ¯\_(ツ)_/¯
+      if l:find([[\t]]) ~= nil then x[#x]=(x[#x]):gsub([[\t]],[[]]) end
+      -- swy: replace the Turkish Ğ/ğ by the normal one, better than nothing, given that it's currently missing
+	  --      from the TLD font, we can always remove this line if we add them in the future
+      if l:find([[Ğ]]) ~= nil then x[#x]=(x[#x]):gsub([[Ğ]],[[G]]) end
+      if l:find([[ğ]]) ~= nil then x[#x]=(x[#x]):gsub([[ğ]],[[g]]) end
 
   end
   f:close(); f = io.open(fi,'w')
