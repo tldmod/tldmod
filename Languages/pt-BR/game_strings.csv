@@ -4,24 +4,24 @@ str_no|Não.
 str_noone|ninguém
 str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} e {s51}
-str_s5_s_party|{s5} Festa
-str_s5_s_host|{s5} Anfitrião
-str_given_by_s1_at_s2|Entregue Por {s1} Em {s2}
-str_given_by_s1_in_wilderness|Entregue Por {s1} Em Campo Aberto
-str_s7_raiders|{s7} Bandidos
-str_bandits_eliminated_by_another|Os bandidos foram eliminados por outras tropas 
+str_s5_s_party|Companhia de {s5}
+str_s5_s_host|Exército de {s5}
+str_given_by_s1_at_s2|Entregue por {s1} em {s2}
+str_given_by_s1_in_wilderness|Entregue por {s1} em campo aberto
+str_s7_raiders|Saqueadores {s7}
+str_bandits_eliminated_by_another|Os bandidos problemáticos foram eliminados por outra tropa.
 str_msg_battle_won|Vitória! Aperte tab para sair...
-str_tutorial_map1|Você agora está no mapa terrestre, com o clique esquerdo do mouse você moverá suas tropas, entrara em uma cidade ou atacara tropas inimigas, o jogo irá pausar quando suas tropas não se movimentarem, esperarem ou descansarem. Para esperar por qualquer coisa aperte E e segure a barra de espaço.
-str_accept|Aceito
-str_charge|Atacar!!!
+str_tutorial_map1|Você está vendo o mapa terrestre. Clique com o botão esquerdo do mouse para mover suas tropas para determinado local, entrar em uma cidade ou ir até a tropa selecionada. O jogo permanecerá pausado quando suas tropas não estiverem em movimento, esperando ou descansando. Para esperar em qualquer lugar do mapa, simplesmente aperte e segure a barra de espaço.
+str_accept|Aceitar
+str_charge|Ao ataque
 str_color|Cor
 str_flip_horizontal|Virar Na Horizontal
 str_flip_vertical|Virar Na Vertical
-str_hold_fire|Não Atirem!!!
-str_blunt_hold_fire|Parar!!!
-str_tutorial_ammo_refilled|Recarregem!!!
+str_hold_fire|Cessar fogo
+str_blunt_hold_fire|Não letal / Cessar fogo
+str_tutorial_ammo_refilled|Munição recarregada.
 str_tutorial_failed|Você foi derrotado desta vez, mas não se preocupe. Siga as instruções com cuidado e você fará melhor da próxima vez. Aperte a tecla Tab para retornar ao menu onde você pode tentar novamente este tutorial.
-str_tutorial_1_msg_1|Neste tutorial você aprenderá o básico de movimento e combate. Em Mount&Blade você usa o mouse para controlar aonde você está olhado, e as teclas WASD de seu teclado para se mover. Sua primeira tarefa neste treinamento é localizar a bandeira nesta sala e mover até ela. Você pode apertar a tecla Tab a qualquer momento para sair deste tutorial ou qualquer outra area nesse jogo. Vá para a bandeira agora.
+str_tutorial_1_msg_1|Neste tutorial você aprenderá o básico de movimento e combate. Em Mount&Blade você usa o mouse para controlar onde você está olhando, e as teclas WASD de seu teclado para se movimentar. Sua primeira tarefa neste treinamento é localizar a bandeira nesta sala e mover até ela. Você pode apertar a tecla Tab a qualquer momento para sair deste tutorial ou qualquer outra área do jogo. Vá para a bandeira agora.
 str_tutorial_1_msg_2|Muito Bem. Agora vamos cobrir ataques armados. Para o propósito deste tutorial você foi equipado com arco e flechas, uma espada e um escudo. Você pode sacar armas diferentes de seus espaços de arma usando a roda de seu mouse. Na configuração padrão, rolar para cima seleciona a próxima arma, e rolar para baixo guarda seu escudo. Tente mudar sua arma equipada com a roda do mouse agora. Quando estiver pronto, vá à bandeira para seguir com sua próxima tarefa.
 str_tutorial_1_msg_3|Excelente. A próxma parte do tutorial cobre atacar com armas corpo-a-corpo. Você ataca com sua arma atualmente equipada ao usar o botão esquerdo do seu mouse. Aperte e segure o botão para preparar um ataque, então solte-o para atacar. Se segurar o botão do mouse por um tempo antes de solta-lo, o ataque será mais poderoso. Agora saque sua espada e destrua quatro bonecos de treino na sala.
 str_tutorial_1_msg_4|Bom trabalho! Você destruiu todos os quatro bonecos. Você agora pode mover-se para a próxima sala.
@@ -57,11 +57,11 @@ str_tutorial_4_msg_7|Parabéns, você terminou esse tutorial. Você pode apertar
 str_tutorial_5_msg_1|Bem vindo ao quinto e último tutorial, que te dá uma breve visão geral de como comandar tropas em batalha, um dos mais importantes aspectos de Mount & Blade.^^O primeiro menu de comando que você deve aprender são os comandos de movimento, que podem ser encontrados pressionando a tecla F1. Pressione-a agora e explore as várias opções de movimento que você pode dar às suas tropas na batalha.^^Para esse primeiro passo, comande suas tropas para te seguir e mova até o alto da colina onde a bandeira e o ponteiro estão.
 str_tutorial_5_msg_2|Excelente. Suas tropas te seguiram até a colina. Agora você tem uma boa vista do campo de batalha.^^Agora, ordene suas tropas para proteger essa colina apertando F1 menu de comando denovo, e selecionando Proteger essa Posição (F1).^^Feito isso, você notará que suas tropas param de te seguir e esperam na posição que você os ordenou a proteger.^^Esse é um bom momento para aprender o segundo menu de comando, que envolve formações básicas de tropas.^^Esse menu permite você comandar suas tropas a fechar suas fileiras, para proteger contra investidas de infantaria, ou se espaçar para resistir saraivadas de flechas.^^Comandar suas tropas a mover para frente ou para trás dez passos usando esse menu de comando permite que suas tropas se movam mantendo a formação.^^Após explorar as diferentes opções, mantenha suas tropas protegendo essa colina e mova sozinho até a a colina oposta, onde a bandeira e o ponteiro estão.
 str_tutorial_5_msg_3|Ótimo. Como pode ver, sua infantaria está protegendo onde você os ordenou. Agora, mova-se até o moinho de vento.
-; str_tutorial_5_msg_4|Now you have archers join your command. In Mount & Blade, you can give separate commands to specific divisions of troops such as infantry, archers, and cavalry.^^Pressing the number keys will choose the division of your choice (1 for Infantry, 2 for Archers, 3 for Cavalry). You can then use the command menus that appear to command the specific division.^^Note that the choice will persist, and pressing any of the command menus (F1, F2, F3) will be for the last division chosen. Read the messages that appear on your screen to see which division is being commanded.^^Now, ask your Infantry to follow you, then ask your Archers to follow you too. Once they are all together, go back to the hill you came from.^^Once there, look for the pointer and command your infantry to move and hold there by pressing 1, then holding the F1 key to reveal a banner. You can use this to move your troops in a precise location of your choice.^^Ask your archers to move towards the flag behind the pointer, and on high ground.
-; str_tutorial_5_msg_5|Your men are in position, the enemies have gathered and are charging towards you. Use what you learned to maneuver your infantry forward in formation, or ask them to charge. Charging breaks all formations, and moves your troops towards the nearest enemies.^^You can also keep your archers above ground for a better vantage point, or also ask them to move elsewhere.^^You can also press F3 to reveal the third command menu and learn about the different weapon orders you can give your troops.
-; str_tutorial_5_msg_6|Excellent! You have completed your first field battle in Mount & Blade. Intelligent command of your troops in battle is paramount to your success as a commander in battle. Make sure to learn the different how to move your troops in advantageous positions.^^In The Last Days of the Third Age, there are complex formations for more advanced maneouvers such as Infantry Shieldwall and Cavalry Wedges. You can learn more about it in-game.^^You can press TAB anytime to leave the tutorial.
-; str_trainer_help_1|This is a training ground where you can learn the basics of the game. Use A, S, D, W keys to move and the mouse to look around.
-; str_trainer_help_2|To speak with the trainer, go near him, look at him and press the 'F' key when you see the word 'Talk' under his name. When you wish to leave this or any other area or retreat from a battle, you can press the TAB key.
+str_tutorial_5_msg_4|Agora você tem arqueiros sob o seu comando. Em Mount & Blade, você pode dar comandos para divisões específicas da sua tropa, como infantaria, arqueiros e cavalaria.^^Pressionando as teclas numéricas você poderá escolher a divisão da sua escolha (1 para Infantaria, 2 para Arqueiros e 3 para Cavalaria). Então você poderá usar o menu de comandos que irá aparecer para comandar a divisão selecionada de forma específica.^^Note que a escolha da divisão irá persistir, então todos os comandos do menu (F1, F2, F3) serão aplicados à última divisão selecionada. Leia as mensagens na tela para saber qual divisão está sendo comandada.^^Agora, peça à Infantaria que lhe siga, e depois peça aos Arqueiros que lhe sigam também. Quando todos estiverem juntos, volte para a colina da qual você veio.^^Uma vez estando lá, procure o ponteiro e comande a infantaria para se mover até lá e manter a posição apertando a tecla 1 e segurando a tecla F1, o que fará com que surja uma bandeira. Com esta bandeira você poderá movimentar suas tropas de forma precisa.^^Peça aos seus Arqueiros para que se movam em direção à bandeira atrás do ponteiro, em terreno elevado.
+str_tutorial_5_msg_5|Seus homens estão em posição, os inimigos se reuniram e estão atacando em sua direção. Use o que aprendeu para manobrar sua infantaria para a frente em formação ou peça para eles atacarem. O ataque interrompe todas as formações e move suas tropas em direção aos inimigos mais próximos. ^^ Você também pode manter seus arqueiros acima do solo para um melhor ponto de vantagem, ou também pedir que eles se movam para outro lugar. ^^ Você também pode pressionar F3 para revelar o terceiro comando menu e aprenda sobre as diferentes ordens de armas que você pode dar às suas tropas.
+str_tutorial_5_msg_6|Excelente! Você completou sua primeira batalha de campo em Mount & Blade. O comando inteligente de suas tropas em batalha é fundamental para o seu sucesso como comandante em batalha. Certifique-se de aprender as diferentes maneiras de mover suas tropas em posições vantajosas. ^^ Nos Últimos Dias da Terceira Era, há formações complexas para manobras mais avançadas, como Muralha de Escudos para Infantaria e Cunha para a Cavalaria. Você pode aprender mais sobre isso no jogo. ^^ Você pode pressionar TAB a qualquer momento para sair do tutorial.
+str_trainer_help_1|Este é um campo de treinamento onde você pode aprender o básico do jogo. Use as teclas A, S, D, W para mover e o mouse para olhar em volta.
+str_trainer_help_2|Para falar com o treinador, aproxime-se dele, olhe para ele e pressione a tecla 'F' quando vir a palavra 'Falar' sob o nome dele. Quando você desejar sair desta ou de qualquer outra área ou recuar de uma batalha, pode pressionar a tecla TAB.
 str_custom_battle_1|Angbor o Destemido e sua companhia de Gondor interceptaram um grupo de reforços de Harad. Urrando seu grito de guerra, ele guia seu cavalo avante, e lidera seus leais homens para uma feroz batalha.
 str_custom_battle_2|Celeborn de Lorien estava a liderar uma patrulha de cavaleiros e arqueiros quando um posto avançado alerta sobre uma força de homens malignos de cara cinzenta aproximando. São os temidos Numenorianos Negros! Eles não são vistos perto de Lothlorien por eras, mas agora eles devem ter sido tragos devolta para o o mundo.
 str_custom_battle_3|O Senhor Grimbold de Rohan está liderando a última defesa dos muros contra um exército de Isengard. Agora, como os sitiantes se preparam para um ataque final sobre os muros, ele irá manter os muros com Coragem e Aço Brilhante.
@@ -411,7 +411,7 @@ str_npc16_backstory_a|Bom agora, é o estranho que deve se declarar primeiro. To
 str_npc17_backstory_a|Eles me chamam Dímborn e eu trabalho na floresta. É legal lá. Eu gosto da floresta. Muitas árvores na floresta. Eu gosto de árvores. Trabalhei na floresta toda a minha vida, porque sou forte e porque gosto de árvores.
 str_npc1_backstory_b|Você deve saber que eu sou um Ithilien Ranger de Dúnedain descendente e valor. Eu sei muito de rastreamento e scouting e minha habilidade com arco e espada é conhecida pelo orc. Eu também posso treinar qualquer alma que esteja disposta a lutar contra a próxima Sombra
 str_npc2_backstory_b|Eu fui treinado como um vigia de Minas Tirith, para manter ordem na Cidade Branca e servir meu senhor Steward.
-; str_npc3_backstory_b|I am a Rider of the Westfold éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return.
+str_npc3_backstory_b|Eu sou um Cavaleiro do Oeste de Westfold - eles partiram sem mim em uma longa patrulha para o Ford Isen. Sei que a conduta deles será digna da bandeira verde, mas temo que muitos não voltem.
 str_npc4_backstory_b|Nasci em uma família nobre e tenho servido a Lady Éowyn como uma dama de honra desde que somos meninas. Nossos pais eram sábios o suficiente para nos permitir treinar ao lado de nossos irmãos em questões de combate, para tornar-se escudeiras de Rohan.
 str_npc5_backstory_b|Lord Elrond enviou-me como um emissário a Lord Celeborn, para dar ajuda e conselhos como é necessário na Guerra nesta parte de Rhovanion.
 str_npc6_backstory_b|Eu gosto de percorrer os caminhos escondidos em nossa bela floresta. Às vezes eu me movo silenciosamente através das árvores e observo os hábitos dos muitos animais da floresta. O canto de um pássaro raro, o aninhamento de um javali são tão bonitos para mim quanto o choque de armas e as grandes muralhas são para os Edain.
@@ -605,7 +605,7 @@ str_npc7_morality_speech|Não fiquei satisfeito por ter decidido {s21}. Cair em 
 str_npc8_morality_speech|Comandante, devo me opor. Para {s21} é áspero para os homens e desnecessário. Eu faço o que posso para aliviar o sofrimento, mas não faça outro erro caro.
 str_npc9_morality_speech|A luta Uruk-hai não faz {s21}. Se o Mestre tiver poucas tripas, ele pode encontrar-se sem eles uma noite. Gulm falou.
 str_npc15_morality_speech|Você pode pensar que Bolzog the Great pode curar tudo, {playername}, mas mesmo eu tenho meus limites! Se você continuar com {s21}, mesmo meu talento terá dificuldade! Você deve me dar algum apoio! Eu não posso ressuscitar os mortos, se morrem de fome ou são pirateados em pedaços!
-; str_npc1_2ary_morality_speech|Captain, I have been raised as a Dúnadan, both in valor and honour. I would prefer if we don't {s21}.
+str_npc1_2ary_morality_speech|Capitão, eu fui criado como um Dunadan, tanto em valor quanto em honra. Eu preferiria se não o fizermos {s21}.
 str_npc4_2ary_morality_speech|Seu perdão, comandante. As mulheres da minha estação aceitarão a morte, mas não a desonra. Para {s21} traz vergonha para minha casa e antepassados.
 str_npc15_2ary_morality_speech|Oi-oi-oi! Você é esperto, Senhor! Você pega o ouro, e acena com a cabeça, e diz "sim mestre", mas todo o tempo que você planejou isso! Oi oi! Somente, devemos ter cuidado, que The Big One não vê você enganá-lo ...
 str_npc1_personalityclash_speech|Eu mencionei odeio {s11}?
@@ -744,14 +744,14 @@ str_npc14_rehire_speech|Posso servi-lo novamente?
 str_npc15_rehire_speech|Aah, Grande Senhor! Procurei tanto tempo por você, como a palavra de seus atos gloriosos tocam a Terra Média! Certamente você perdeu minhas habilidades? Você me receberá mais uma vez para completar o seu Grande Exército?
 str_npc16_rehire_speech|Posso servi-lo novamente?
 str_npc17_rehire_speech|Hey. Hora de irmos de novo? Árvores não se mechem muito. Mas eu gosto de me mover. Mas eu gosto de árvores também.
-; str_npc1_home_intro|Captain, we are approaching Osgiliath now, so let us be on the lookout for friend and foe alike.
+str_npc1_home_intro|Capitão, estamos nos aproximando de Osgiliath agora, então vamos procurar amigos e inimigos.
 str_npc2_home_intro|Seja vigilante, comandante, essa deve ser Minas Morgul ali. Você sente que alguma coisa está nos observando.
 str_npc3_home_intro|Uma conselho, comandante. Nós estamos nos aproximando de Entwood agora e os cavalos etão ficando cansados. Alguns chamam a floresta de Fangorn, também.
 str_npc4_home_intro|Vamos parar aqui por um minuto, comandante. A nossa frente, entre o Anduin e o Limilight, descansa p campo de Celebrant, onde Eorl o Jovem cavalgou para salvar nossos aliados de Gondor.
-; str_npc5_home_intro|Daro! That's Angrenost and the black tower of Orthanc ahead. Much has changed since I last saw them, and none for the better.
-; str_npc6_home_intro|Excuse me, {playername}. The paths in this part become more twisted and some lead to dead-ends. We must be approaching Dol Guldur.
-; str_npc7_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
-; str_npc8_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
+str_npc5_home_intro|Daro! É Angrenost e a torre negra de Orthanc à frente. Muita coisa mudou desde a última vez que os vi, e nenhuma para melhor.
+str_npc6_home_intro|Com licença, {playername}. Os caminhos nesta parte ficam mais distorcidos e alguns levam a becos sem saída. Devemos estar nos aproximando de Dol Guldur.
+str_npc7_home_intro|Oi, capitão! Esse deve ser o antigo caminho para os Portões Orientais de Khazad-dûm, ou Moria, como você preferir. Você pode ver à distância o lago cintilante de Kheled-zâram e, através das nuvens, o três picos conhecidos por enfeitar esta parte das montanhas enevoadas "
+str_npc8_home_intro|Oh, uma visão curiosa! Ouvi histórias sobre esse lugar em que se diz que robustos madeireiros vivem em harmonia com animais e plantas. É o que eles chamam de ornamentos.
 str_npc9_home_intro|Maldição! Deve haver Hornburg por aqui, mestre.
 str_npc10_home_intro|Ei, olhe!
 str_npc11_home_intro|Ei, olhe!
@@ -761,15 +761,15 @@ str_npc14_home_intro|Ei, olhe!
 str_npc15_home_intro|Ei, olhe!
 str_npc16_home_intro|Ei, olhe!
 str_npc17_home_intro|Ooooo, marllons crescem aqui! Um nunca deveria cortar um marllon, eles são só muito bonitos.
-; str_npc1_home_description|It was a fair city once, the capital of Gondor of old, full of people and laughter. Now it lies deserted and ruined, the old Anduin flowing wearily through a ghost town.
-; str_npc2_home_description|It was called Minas Ithil many years ago, and stories are told of how moonlight filled its inner courts with silver light and its walls gleamed silver and white. Gondor watchmen peered over the walls to the east and kept watch beyond Ephel Dúath.
-; str_npc3_home_description|It's thick with trunks and branches and all manner of trees, and I wouldn't venture there as strange creatures roam the forest, not all of them harmless.
-; str_npc4_home_description|'Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...'
-; str_npc5_home_description|Once built by the Southern Kingdom, now home to one that we called the White Wizard, scheming, no doubt, how to increase his power further at the expense of others.
-; str_npc6_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazgul here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
-; str_npc7_home_description|Judging by the desolation, and the many orc-tracks, I fear for the fate of the courageous Balin and his expedition. It seems that Moria has fallen to the Shadow and we should tread carefully.
+str_npc1_home_description|Era uma cidade justa uma vez, a capital de Gondor, cheia de gente e gargalhadas. Agora ela está deserta e arruinada, o velho Anduin fluindo cansado por uma cidade fantasma.
+str_npc2_home_description|Foi chamado Minas Ithil há muitos anos, e são contadas histórias de como a luz da lua encheu suas cortes internas com luz prateada e suas paredes brilhavam prateadas e brancas. Os vigias Gondor espiavam pelas paredes a leste e vigiavam além de Ephel Dúath. 
+str_npc3_home_description|Está cheio de troncos, galhos e todo tipo de árvores, e eu não me aventuraria por lá enquanto criaturas estranhas vagam pela floresta, nem todas inofensivas.
+str_npc4_home_description|Onde estão agora o cavalo e o cavaleiro? onde está o chifre que soprava? ^ Onde está o leme, o hauberk e os cabelos brilhantes fluindo? ... ^ Eles passaram como chuva na montanha, como um vento no prado; ^ Os dias se passaram no oeste, atrás das colinas, na sombra ... '
+str_npc5_home_description|Uma vez construído pelo Reino do Sul, agora lar de um que chamamos de Mago Branco, planejando, sem dúvida, como aumentar seu poder às custas de outros.
+str_npc6_home_description|Eu nunca me aventurei tão longe, mas ouvi nossos batedores de Greenwood dizer que pode haver Nazgul aqui. Sinto uma presença maligna, mas não posso dar um nome a ela. É poderoso, no entanto, então esteja preparado. 
+str_npc7_home_description|A julgar pela desolação e pelas muitas trilhas orcs, temo o destino do corajoso Balin e sua expedição. Parece que Moria caiu na Sombra e devemos pisar com cuidado.
 str_npc8_home_description|Não tão frequentemente, um mercador viajante vem para o mercado de Valle e ofrece o melhor mel que eu já esperimentei. Por alguma razão curiosa, ele diz que 'foi feito por ursos' e ri.
-; str_npc9_home_description|Its damned walls are too high and too hard for my hammer to break. I reckon if we ever chase away the manlings from their Edoras pig-sties, they'll run off here and cower behind the walls.
+str_npc9_home_description|Seus malditos muros são altos demais e difíceis demais para o meu martelo quebrar. Acho que se algum dia afastarmos os machos de seus chiqueiros Edoras, eles fugirão aqui e se esconderão atrás dos muros.
 str_npc10_home_description|Você conhece essa cidade?
 str_npc11_home_description|Você conhece essa cidade?
 str_npc12_home_description|Você conhece essa cidade?
@@ -778,28 +778,28 @@ str_npc14_home_description|Você conhece essa cidade?
 str_npc15_home_description|Você conhece essa cidade?
 str_npc16_home_description|Você conhece essa cidade?
 str_npc17_home_description|Eu não sabia que haviam florestas tão amáveis aqui também. Eu imagino se algum carpinteiro trabalha aqui.
-; str_npc1_home_description_2|If Gondor is doomed, West Osgiliath shall fall first to the foul hordes of the Eye. I only hope Captain Faramir would be in command that day and stem the tide. If we could spare any men to bolster the defences here, I would be most grateful, Captain.
-; str_npc2_home_description_2|It is said it's full of terrible orcs now and dread spirits and worse. I pray for the day when Gondor will reclaim it and cleanse it of all things foul.
-; str_npc3_home_description_2|If we must cross Entwood, let us do so with haste and stealth. I don't know who might be listening to our hooves and I don't care to find out.
-; str_npc4_home_description_2|We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again.
-; str_npc5_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
+str_npc1_home_description_2|Se Gondor estiver condenado, West Osgiliath cairá primeiro nas hordas sujas do Olho. Só espero que o capitão Faramir esteja no comando naquele dia e afaste a maré. Se pudéssemos poupar homens para reforçar as defesas aqui, eu ficaria muito grato, capitão. 
+str_npc2_home_description_2|Dizem que agora está cheio de orcs terríveis, espíritos medonhos e coisas piores. Oro pelo dia em que Gondor o recuperar e limpar de todas as coisas sujas.
+str_npc3_home_description_2|Se precisarmos atravessar Entwood, façamos com pressa e furtividade. Não sei quem pode estar ouvindo nossos cascos e não quero descobrir.
+str_npc4_home_description_2|Faríamos bem em lembrar os grandes feitos do passado e os sacrifícios que foram feitos. A Aliança entre Rohan e Gondor salvará nossos povos da destruição mais uma vez.
+str_npc5_home_description_2|Que seja um lembrete de que mesmo os maiores, mesmo um dos Istari, podem ser corrompidos e cair. Aqueles que desejam poder podem ser derrotados pelo poder, por isso não nos demoremos muito mais.
 str_npc6_home_description_2|Sinto os exércitos malignos atrás destes muros prepare para marchar... Pela bela Lothlórien? Por Valle? Pelo meu lar da Floresta Verde? Não sei ao certo, mas por favor faça o possível para impedí-los.
-; str_npc7_home_description_2|If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
-; str_npc8_home_description_2|I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment.
-; str_npc9_home_description_2|There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is.
-; str_npc10_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc11_home_description_2|Doesn't Orthanc look like a giant... something?
-; str_npc12_home_description_2|Doesn't Orthanc look like a giant... something?
-; str_npc13_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc14_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc15_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc16_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc17_home_description_2|I could chisel you a nice pipe. Would you like a pipe?
-; str_npc1_home_recap|I was born and raised in Ithilien, in a long line of warriors tracing back to the Southern Dúnedain.
-; str_npc2_home_recap|I was born in Minas Tirith, in a humble, but proud family.
-; str_npc3_home_recap|I am one of the Eorlingas, or Rohirrim, as foreigners call us.
-; str_npc4_home_recap|I don't find it amusing that you should forget so easily.
-; str_npc5_home_recap|I'll indulge your curiosity, but let us not tarry.
+str_npc7_home_description_2|Se o destino da guerra nos fornecer um grande exército, devemos arriscar a entrada nas Minas e recuperar suas poderosas riquezas.
+str_npc8_home_description_2|Sinto o perfume de muitas flores doces e vejo as abelhas colhendo seu néctar. Se você não se importa, reunirei algumas ervas para nosso próprio uso, isso levará apenas um momento.
+str_npc9_home_description_2|Não adianta andar por aqui se não formos apoiados por uma grande horda de Uruk-hai. A menos que você queira fazer caretas nas vigias da parede, é isso.
+str_npc10_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
+str_npc11_home_description_2|Orthanc não parece um gigante ... alguma coisa?
+str_npc12_home_description_2|Orthanc não parece um gigante ... alguma coisa?
+str_npc13_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
+str_npc14_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
+str_npc15_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
+str_npc16_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
+str_npc17_home_description_2|Eu poderia lhe dar um belo cachimbo. Gostaria de um cachimbo?
+str_npc1_home_recap|Nasci e cresci em Ithilien, em uma longa fila de guerreiros que remontam ao sul de Dúnedain.
+str_npc2_home_recap|Nasci em Minas Tirith, em uma família humilde, mas orgulhosa.
+str_npc3_home_recap|Eu sou um dos Eorlingas, ou Rohirrim, como os estrangeiros nos chamam.
+str_npc4_home_recap|Não acho divertido que você esqueça tão facilmente.
+str_npc5_home_recap|Eu vou satisfazer sua curiosidade, mas não vamos demorar.
 str_npc6_home_recap|Sou nascido e criado em Na Floresta das Trevas, um Elfo Silvestre. Nossas habilidades com a madeira são conhecidas por todos.
 str_npc7_home_recap|Sou o filho de Dwalin do povo de Durin.
 str_npc8_home_recap|Sou um curandeira e herbalista de Valle.
@@ -811,8 +811,8 @@ str_npc13_home_recap|Vou resumir.
 str_npc14_home_recap|Vou resumir.
 str_npc15_home_recap|Vou resumir.
 str_npc16_home_recap|Vou resumir.
-; str_npc17_home_recap|I was born at the edge of the woods, but spent all my life in the woods. Did I tell you of the many trees there?
-; str_npc1_honorific|Captain
+str_npc17_home_recap|Eu nasci na beira da floresta, mas passei toda a minha vida na floresta. Eu te contei das muitas árvores lá?
+str_npc1_honorific|Capitão
 str_npc2_honorific|comandante
 str_npc3_honorific|comandante
 str_npc4_honorific|comandante
@@ -824,260 +824,260 @@ str_npc9_honorific|Mestre
 str_npc10_honorific|Mestre
 str_npc11_honorific|Mestre
 str_npc12_honorific|Mestre
-; str_npc13_honorific|Chieftain
-; str_npc14_honorific|Captain
+str_npc13_honorific|Chefe
+str_npc14_honorific|Capitão
 str_npc15_honorific|Mestre
-; str_npc16_honorific|Chieftain
+str_npc16_honorific|Chefe
 str_npc17_honorific|Chefe
-; str_comment_intro_liege_affiliated|I am told that you are pledged to one of the pretenders who disputes my claim to the crown of Calradia. But we may still talk.
-; str_comment_intro_famous_liege|Your fame runs before you! Perhaps it is time that you sought a liege worthy of your valor.
-; str_comment_intro_famous_martial|Your fame runs before you! Perhaps we shall test each other's valor in a tournament, or on the battlefield!
-; str_comment_intro_famous_badtempered|I've heard of you. Well, I'm not one for bandying words, so if you have anything to say, out with it.
-; str_comment_intro_famous_pitiless|I know your name. It strikes fear in men's hearts. That is good. Perhaps we should speak together, some time.
-; str_comment_intro_famous_cunning|Ah, yes. At last we meet. You sound like a good {man/woman} to know. Let us speak together, from time to time.
-; str_comment_intro_famous_sadistic|I know your name -- and from what I hear, I'll warrant that many a grieving widow knows too. But that is no concern of mine.
-; str_comment_intro_famous_goodnatured|I've heard of you! It's very good to finally make your acquaintance.
-; str_comment_intro_famous_upstanding|I know your name. They say you are a most valiant warrior. I can only hope that your honour and mercy matches your valor.
-; str_comment_intro_noble_liege|I see that you carry a nobleman's banner, although I do not recognize the device. Know that I am always looking for good men to fight for me, once they prove themselves to be worthy of my trust.
-; str_comment_intro_noble_martial|I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps one day we shall test each other's valor in a tournament, or on the battlefield!
-; str_comment_intro_noble_badtempered|I don't recognize the device on your banner. No doubt another foreigner come to our lands, as if we didn't have so many here already.
-; str_comment_intro_noble_pitiless|I see that you carry a nobleman's banner, but I do not recognize the device. Another vulture come to grow fat on the leftovers of war, no doubt!
-; str_comment_intro_noble_cunning|I see that you carry a nobleman's banner, but I do not recognize the device. Still, it is always worthwhile to make the acquaintance of {men/women} who may one day prove themselves to be great warriors.
-; str_comment_intro_noble_sadistic|I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps you are the bastard {son/daughter} of a puffed-up cattle thief? Or perhaps you stole it?
-; str_comment_intro_noble_goodnatured|I see that you carry a nobleman's banner, but I do not recognize the device. Forgive my ignorance, {sir/madame}! It is good to make your acquaitance.
-; str_comment_intro_noble_upstanding|I see that you carry a nobleman's banner, but I do not recognize the device. No doubt you have come to Calradia in search of wealth and glory. If this indeed is the case, then I only ask that you show mercy to those poor souls caught in the path of war.
-; str_comment_intro_common_liege|You may be of common birth, but know that I am always looking for good men to fight for me, if they can prove themselves to be worthy of my trust.
-; str_comment_intro_common_martial|Perhaps you are not of gentle birth, but if you prove yourself a {man/woman} of valor, then I would be pleased to try my strength against yours in the tournament or on the battlefield.
-; str_comment_intro_common_badtempered|Speak quickly, if you have anything to say, for I have no time to be bandying words with common soldiers of fortune.
-; str_comment_intro_common_pitiless|You have the look of a mercenary, another vulture come to grow fat on the misery of this land.
-; str_comment_intro_common_cunning|Well... I have not heard of you, but you have the look of a {man/woman} who might make something of {himself/herself}, some day.
-; str_comment_intro_common_sadistic|Normally I cut the throats of impudent commoners who barge into my presence uninvited, but I am in a good mood today.
-; str_comment_intro_common_goodnatured|Well, you look like a good enough sort.
-; str_comment_intro_common_upstanding|Peace to you, and always remember to temper your valor with mercy, your courage with honour.
-; str_comment_you_raided_my_village_enemy_benevolent|You have attacked innocent farmers under my protection in the village of {s51}.  I will punish you for your misdeeds!
-; str_comment_you_raided_my_village_enemy_spiteful|You have raided my village of {s51}, destroying my property and killing the tenants. I will take my compensation in blood!
-; str_comment_you_raided_my_village_enemy_coldblooded|You have raided my village of {s51}, destroying my property and killing the tenants. I will make you think twice before you disrupt my revenues like that again.
-; str_comment_you_raided_my_village_enemy|You have raided my village of {s51}, destroying my property and killing tenants under my protection. You will pay the price for your crime!
-; str_comment_you_raided_my_village_unfriendly_spiteful|You have raided my village of {s51}. Do it again and I'll gut you like a fish.
-; str_comment_you_raided_my_village_friendly|You have raided my village of {s51}. This will place a grave strain on our friendship.
-; str_comment_you_raided_my_village_default|You have raided my village of {s51}. If you continue to behave this way, we may soon come to blows.
-; str_comment_you_robbed_my_village_enemy_coldblooded|You have robbed my tenants in the village of {s51}. I take that as a personal insult.
-; str_comment_you_robbed_my_village_enemy|You have robbed innocent farmers under my protection in the village of {s51}.  I will punish you for your misdeeds!
-; str_comment_you_robbed_my_village_friendly_spiteful|I have heard that you pinched some food from my tenants at {s51}. Well, I'll not begrudge you a scrap or two, but keep in mind that I'm the one who must listen to their whining afterward.
-; str_comment_you_robbed_my_village_friendly|I have heard that you requisitioned supplies from my tenants at {s51}. I am sure that you would not have done so were you not desperately in need.
-; str_comment_you_robbed_my_village_default|You have robbed my tenants in the village of {s51}. If you continue to behave this way, we may soon come to blows.
-; str_comment_you_accosted_my_caravan_enemy|You have been accosting caravans under my protection. But your trail of brigandage will soon come to an end.
-; str_comment_you_accosted_my_caravan_default|You have been accosting caravans under my protection. This sort of behavior must stop.
-; str_comment_you_helped_villagers_benevolent|I heard that you gave charity to my tenants in the village of {s51}. I had been neglectful in my duties as lord and protector, and I appreciate what you have done.
-; str_comment_you_helped_villagers_friendly_cruel|I heard that you gave charity to my tenants in the village of {s51}. I appreciate that you meant well, but I'd rather you not undercut my authority like that.
-; str_comment_you_helped_villagers_friendly|I heard that you gave charity to my tenants in the village of {s51}. Times are hard, and I know that you mean well, so I will not object to you providing them with assistance.
-; str_comment_you_helped_villagers_unfriendly_spiteful|I heard that you gave charity to my tenants in the village of {s51}. As amusing as it is to see you grubbing for favor among my vassals, I would ask you to mind your own business.
-; str_comment_you_helped_villagers_cruel|I heard that you gave charity to my tenants in the village of {s51}. As the peasants' lord and protector, it is most properly my duty to assist them in times of hardship. You may mean well, but your actions still undercut my authority. I would thank you to leave them alone.
-; str_comment_you_helped_villagers_default|I heard that you gave charity to my tenants in the village of {s51}. Times are hard, and I know that you mean well, but try not to make a habit of it. I am their lord and protector, and I would rather not have them go looking to strangers for assistance.
-; str_comment_you_captured_a_castle_allied_friendly|I heard that you have besieged and taken {s51}. That was a great dead, and I am proud to call you my friend!
-; str_comment_you_captured_a_castle_allied_spiteful|I heard that you have besieged and taken {s51}. Good work! Soon, we will have all their fortresses to despoil, their treasuries to ransack, their grieving widows to serve us our wine.
-; str_comment_you_captured_a_castle_allied_unfriendly_spiteful|I heard that you have besieged and taken {s51}. Well, every dog has his day, or so they say. Enjoy it while you can, until your betters kick you back out in the cold where you belong.
-; str_comment_you_captured_a_castle_allied_unfriendly|I heard that you have besieged and taken {s51}. Whatever our differences in the past, I must offer you my congratulations.
-; str_comment_you_captured_a_castle_allied|I heard that you have besieged and taken {s51}. We have them on the run!
-; str_comment_you_captured_my_castle_enemy_spiteful|I hear that you have broken into my home at {s51}. I hope the dungeon is to your liking, as you will be spending much time there in the years to come.
-; str_comment_you_captured_my_castle_enemy_chivalrous|You hold {s51}, my rightful fief. I hope you will give me the chance to win it back!
-; str_comment_you_captured_my_castle_enemy|You have something that belongs to me -- {s51}. I will make you relinquish it.
-; str_comment_we_defeated_a_lord_unfriendly_spiteful|I suppose you will want to drink to the memory of our victory over {s54}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
-; str_comment_we_defeated_a_lord_unfriendly|I will not forget how we fought together against {s54}, but I can also not forget the other matters that lie between us.
-; str_comment_we_defeated_a_lord_cruel|That was a great victory over {s54}, wasn't it? We made of his army a feast for the crows!
-; str_comment_we_defeated_a_lord_quarrelsome|I won't forget how we whipped {s54}? I enjoyed that.
-; str_comment_we_defeated_a_lord_upstanding|I will not forget our victory over {s54}. Let us once again give thanks to heaven, and pray that we not grow too proud.
-; str_comment_we_defeated_a_lord_default|That was a great victory over {s54}, wasn't it? I am honoured to have fought by your side.
-; str_comment_we_fought_in_siege_unfriendly_spiteful|I suppose you will want to drink to the memory of our capture of {s51}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
-; str_comment_we_fought_in_siege_unfriendly|I will not forget how we together we stormed {s51}, but I can also not forget the other matters that lie between us.
-; str_comment_we_fought_in_siege_cruel|I won't forget how we broke through the walls of {s51} and put its defenders to the sword. It is a sweet memory.
-; str_comment_we_fought_in_siege_quarrelsome|Remember how the enemy squealed when we came over the walls of {s51}? They had thought they were safe! We wiped the smug smiles of their faces!
-; str_comment_we_fought_in_siege_upstanding|I will not forget our capture of {s51}. Let us once again give thanks to heaven, and pray that we not grow too proud.
-; str_comment_we_fought_in_siege_default|I will not forget how together we captured {s51}. I am honoured to have fought by your side.
-; str_comment_we_fought_in_major_battle_unfriendly_spiteful|I suppose you will want to drink to the memory of our great victory near {s51}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
-; str_comment_we_fought_in_major_battle_unfriendly|I will not forget how we fought together in the great battle near {s51}, but I can also not forget the other matters that lie between us.
-; str_comment_we_fought_in_major_battle_cruel|I won't forget the great battle near {s51}, when we broke through the enemy lines and they ran screaming before us. It is a sweet memory.
-; str_comment_we_fought_in_major_battle_quarrelsome|That was a fine fight near {s51}, when we made those bastards run!
-; str_comment_we_fought_in_major_battle_upstanding|I will not forget how we fought side by side at the great battle near {s51}. Let us once again give thanks to heaven, and pray that we not grow too proud.
-; str_comment_we_fought_in_major_battle_default|I will not forget how we fought side by side at the great battle near {s51}. I am honoured to have fought by your side.
-; str_comment_you_defeated_a_lord_allied_liege|So, you crossed swords with that rascal they call {s54}, and emerged victorious. I am very happy to hear that.
-; str_comment_you_defeated_a_lord_allied_unfriendly_spiteful|I heard that you fought and defeated {s54}. Every dog has its day, I suppose.
-; str_comment_you_defeated_a_lord_allied_spiteful|I heard that you fought and defeated that dog {s54}. Ah, if only I could have heard him whimpering for mercy.
-; str_comment_you_defeated_a_lord_allied_unfriendly_chivalrous|I heard that you fought and defeated {s54}. I hope that you did not use dishonourable means to do so.
-; str_comment_you_defeated_a_lord_allied|I heard that you fought and defeated {s54}. I wish you joy of your victory.
-; str_comment_you_defeated_me_enemy_chivalrous|I will not begrudge you your victory the last time that we met, but I am anxious for another round!
-; str_comment_you_defeated_me_enemy_spiteful|I have been looking forward to meeting you again. Your tricks will not deceive me a second time, and I will relish hearing your cries for mercy.
-; str_comment_you_defeated_me_enemy|When last we met, {playername}, you had the better of me. But I assure you that it will not happen again!
-; str_comment_i_defeated_you_enemy_spiteful|Back for more? Make me fight you again, and I'll feed your bowels to my hounds.
-; str_comment_i_defeated_you_enemy_chivalrous|Come to test your valor against me again, {playername}?
-; str_comment_i_defeated_you_enemy_benevolent|So once again you come at me? Will you ever learn?
-; str_comment_i_defeated_you_enemy_coldblooded|You are persistent, but a nuisance.
-; str_comment_i_defeated_you_enemy|How many times must I chastise you before you learn to keep your distance?
-; str_comment_we_were_defeated_unfriendly_spiteful|Last I saw you, you had been struck down by the men of {s54}. I blame you for that disaster. What a pity to see that you survived.
-; str_comment_we_were_defeated_unfriendly|Last I saw you, you had been struck down by the men of {s54}. Well, I see that you survived.
-; str_comment_we_were_defeated_cruel|Last I saw you, you had been struck down by the men of {s54}. Don't worry -- we'll find him, and make him choke on his victory.
-; str_comment_we_were_defeated_default|Last I saw you, you had been struck down by the men of {s54}. It is good to see you alive and well.
-; str_comment_you_were_defeated_allied_friendly_spiteful|I heard that {s54} gave you a hard time. Don't worry, friend -- I'll find him for you, and make you a gift of his head.
+str_comment_intro_liege_affiliated|Disseram-me que você está comprometido com um dos pretendentes que contesta minha reivindicação à coroa de Calradia. Mas ainda podemos conversar.
+str_comment_intro_famous_liege|Sua fama corre diante de você! Talvez esteja na hora de você procurar um liege digno de seu valor.
+str_comment_intro_famous_martial|Sua fama corre diante de você! Talvez testemos o valor um do outro em um torneio ou no campo de batalha!
+str_comment_intro_famous_badtempered|Eu ouvi falar de você. Bem, eu não sou do tipo que fala palavras, então se você tem algo a dizer, saia com isso.
+str_comment_intro_famous_pitiless|Eu sei o seu nome. Isso causa medo no coração dos homens. Isso é bom. Talvez devêssemos conversar juntos, algum tempo.
+str_comment_intro_famous_cunning|Ah, sim. Finalmente nos encontramos. Você parece uma boa {homem / mulher} para saber. Vamos conversar juntos, de tempos em tempos.
+str_comment_intro_famous_sadistic|Eu sei o seu nome - e pelo que ouvi, vou garantir que muitas viúvas em luto também sabem. Mas isso não é da minha conta.
+str_comment_intro_famous_goodnatured|Ouvi falar de você! É muito bom finalmente conhecê-lo.
+str_comment_intro_famous_upstanding|Eu sei o seu nome. Eles dizem que você é um guerreiro mais valente. Só posso esperar que sua honra e misericórdia correspondam ao seu valor.
+str_comment_intro_noble_liege|Vejo que você carrega uma faixa de nobre, embora eu não reconheça o dispositivo. Saiba que estou sempre procurando por homens bons para lutar por mim, uma vez que eles provem ser dignos da minha confiança.
+str_comment_intro_noble_martial|Vejo que você carrega uma faixa de nobre, mas não reconheço o dispositivo. Talvez um dia testemos a bravura um do outro em um torneio ou no campo de batalha!
+str_comment_intro_noble_badtempered|Não reconheço o dispositivo no seu banner. Sem dúvida, outro estrangeiro vem a nossas terras, como se já não tivéssemos tantos aqui.
+str_comment_intro_noble_pitiless|Vejo que você carrega uma faixa de nobre, mas não reconheço o dispositivo. Outro urubu veio a engordar nas sobras da guerra, sem dúvida!
+str_comment_intro_noble_cunning|Vejo que você carrega um estandarte de nobre, mas não reconheço o dispositivo. Ainda assim, sempre vale a pena conhecer os {men / women} que um dia poderão provar ser grandes guerreiros.
+str_comment_intro_noble_sadistic|Vejo que você carrega uma faixa de nobre, mas não reconheço o dispositivo. Talvez você seja o filho da mãe de um ladrão de gado inchado? Ou talvez você a roubou?
+str_comment_intro_noble_goodnatured|Vejo que você carrega uma faixa de nobre, mas não reconheço o dispositivo. Perdoe minha ignorância, {senhor / madame}! É bom fazer sua aquiescência.
+str_comment_intro_noble_upstanding|Vejo que você carrega uma bandeira de nobre, mas não reconheço o dispositivo. Sem dúvida, você veio a Calradia em busca de riqueza e glória. Se esse for realmente o caso, peço apenas que mostre misericórdia para aquelas pobres almas apanhadas no caminho da guerra "
+str_comment_intro_common_liege|Você pode ter um nascimento comum, mas saiba que estou sempre procurando homens bons para lutar por mim, se eles puderem provar que são dignos da minha confiança.
+str_comment_intro_common_martial|Talvez você não tenha um nascimento gentil, mas se você se provar um homem valioso, ficaria satisfeito em tentar minha força contra a sua no torneio ou no campo de batalha.
+str_comment_intro_common_badtempered|Fale rapidamente, se você tem algo a dizer, pois não tenho tempo para falar com soldados comuns da fortuna.
+str_comment_intro_common_pitiless|Você tem a aparência de um mercenário, outro abutre veio a engordar com a miséria desta terra.
+str_comment_intro_common_cunning|Bem ... eu não ouvi falar de você, mas você tem a aparência de um {homem / mulher} que pode fazer algo de si mesmo algum dia.
+str_comment_intro_common_sadistic|Normalmente cortei a garganta de plebeus insolentes que invadem minha presença sem ser convidado, mas hoje estou de bom humor.
+str_comment_intro_common_goodnatured|Bem, você parece uma espécie boa o suficiente.
+str_comment_intro_common_upstanding|Paz com você, e lembre-se sempre de temperar seu valor com misericórdia, sua coragem com honra.
+str_comment_you_raided_my_village_enemy_benevolent|Você atacou fazendeiros inocentes sob minha proteção na vila de {s51}. Vou puni-lo por seus crimes!
+str_comment_you_raided_my_village_enemy_spiteful|Você invadiu minha vila de {s51}, destruindo minha propriedade e matando os inquilinos. Vou receber minha compensação em sangue!
+str_comment_you_raided_my_village_enemy_coldblooded|Você invadiu minha vila de {s51}, destruindo minha propriedade e matando os inquilinos. Eu farei você pensar duas vezes antes de interromper minhas receitas assim novamente.
+str_comment_you_raided_my_village_enemy|Você invadiu minha vila de {s51}, destruindo minha propriedade e matando inquilinos sob minha proteção. Você pagará o preço pelo seu crime!
+str_comment_you_raided_my_village_unfriendly_spiteful|Você invadiu minha vila de {s51}. Faça de novo e eu estriparei você como um peixe.
+str_comment_you_raided_my_village_friendly|Você invadiu minha aldeia de {s51}. Isso colocará uma grande pressão em nossa amizade.
+str_comment_you_raided_my_village_default|Você invadiu minha aldeia de {s51}. Se você continuar se comportando dessa maneira, em breve poderemos ter problemas.
+str_comment_you_robbed_my_village_enemy_coldblooded|Você roubou meus inquilinos na vila de {s51}. Entendo isso como um insulto pessoal.
+str_comment_you_robbed_my_village_enemy|Você roubou agricultores inocentes sob minha proteção na aldeia de {s51}. Vou puni-lo por seus crimes!
+str_comment_you_robbed_my_village_friendly_spiteful|Ouvi dizer que você beliscou um pouco de comida de meus inquilinos em {s51}. Bem, não vou te invejar nem um ou dois recados, mas lembre-se de que sou eu quem deve ouvir o queixoso depois. 
+str_comment_you_robbed_my_village_friendly|Ouvi dizer que você requisitou suprimentos de meus inquilinos em {s51}. Tenho certeza de que você não teria feito isso se não estivesse desesperadamente necessitado.
+str_comment_you_robbed_my_village_default|Você roubou meus inquilinos na vila de {s51}. Se você continuar se comportando dessa maneira, em breve poderemos ter problemas.
+str_comment_you_accosted_my_caravan_enemy|Você está abordando caravanas sob minha proteção. Mas sua trilha de bandidos em breve chegará ao fim.
+str_comment_you_accosted_my_caravan_default|Você está abordando caravanas sob minha proteção. Esse tipo de comportamento deve parar.
+str_comment_you_helped_villagers_benevolent|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Fui negligente em meus deveres como senhor e protetor, e aprecio o que você fez.
+str_comment_you_helped_villagers_friendly_cruel|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Aprecio que você foi bem-intencionado, mas prefiro que você não mine minha autoridade assim.
+str_comment_you_helped_villagers_friendly|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Os tempos são difíceis, e eu sei que você está bem, então não vou me opor a você, fornecendo assistência.
+str_comment_you_helped_villagers_unfriendly_spiteful|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Por mais divertido que seja vê-lo procurando por favor entre os meus vassalos, eu pediria que cuidasse da sua vida.
+str_comment_you_helped_villagers_cruel|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Como senhor e protetor dos camponeses, é muito mais meu dever ajudá-los em tempos difíceis. Você pode querer dizer bem, mas suas ações ainda minou minha autoridade. Agradeço a você por deixá-los em paz. 
+str_comment_you_helped_villagers_default|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Os tempos são difíceis, e eu sei que você está bem, mas tente não criar um hábito. Eu sou seu senhor e protetor, e Eu preferiria que eles não procurassem ajuda por estranhos. 
+str_comment_you_captured_a_castle_allied_friendly|Ouvi dizer que você sitiou e levou {s51}. Isso foi um grande morto, e tenho orgulho de chamá-lo de meu amigo!
+str_comment_you_captured_a_castle_allied_spiteful|Ouvi dizer que você sitiou e tomou {s51}. Bom trabalho! Em breve, teremos todas as suas fortalezas para despojar, seus tesouros para saquear, suas viúvas em luto para nos servir o nosso vinho.
+str_comment_you_captured_a_castle_allied_unfriendly_spiteful|Ouvi dizer que você sitiou e tomou {s51}. Bem, todo cachorro tem seu dia, ou é o que eles dizem. Aprecie enquanto você pode, até que seus apostadores o chutem de volta no frio onde você pertence.
+str_comment_you_captured_a_castle_allied_unfriendly|Ouvi dizer que você sitiou e aceitou {s51}. Quaisquer que sejam as nossas diferenças no passado, devo oferecer-lhe meus parabéns.
+str_comment_you_captured_a_castle_allied|Ouvi dizer que você sitiou e tomou {s51}. Nós os pegamos fugindo!
+str_comment_you_captured_my_castle_enemy_spiteful|Ouvi dizer que você invadiu minha casa em {s51}. Espero que a masmorra seja do seu agrado, pois você passará muito tempo nos próximos anos.
+str_comment_you_captured_my_castle_enemy_chivalrous|Você tem {s51}, meu legítimo feudo. Espero que você me dê a chance de recuperá-lo!
+str_comment_you_captured_my_castle_enemy|Você tem algo que me pertence - {s51}. Eu farei você desistir.
+str_comment_we_defeated_a_lord_unfriendly_spiteful|Suponho que você queira beber em memória da nossa vitória sobre {s54}. Bem, salve seu vinho - será necessário mais do que isso para eliminar a mancha de suas desgraças anteriores.
+str_comment_we_defeated_a_lord_unfriendly|Não esquecerei como lutamos juntos contra {s54}, mas também não esquecerei os outros assuntos que existem entre nós.
+str_comment_we_defeated_a_lord_cruel|Foi uma grande vitória sobre {s54}, não foi? Nós fizemos do exército dele um banquete para os corvos!
+str_comment_we_defeated_a_lord_quarrelsome|Não esquecerei como chicoteamos {s54}? Gostei disso.
+str_comment_we_defeated_a_lord_upstanding|Não esquecerei nossa vitória sobre {s54}. Vamos mais uma vez agradecer ao céu e rezar para que não fiquemos orgulhosos"
+str_comment_we_defeated_a_lord_default|Foi uma grande vitória sobre {s54}, não foi? Estou honrado por ter lutado ao seu lado.
+str_comment_we_fought_in_siege_unfriendly_spiteful|Suponho que você queira beber em memória da nossa captura de {s51}. Bem, salve seu vinho - será necessário mais do que isso para limpar a mancha de suas desgraças anteriores.
+str_comment_we_fought_in_siege_unfriendly|Não esquecerei como nós invadimos {s51} juntos, mas também não consigo esquecer os outros assuntos que existem entre nós.
+str_comment_we_fought_in_siege_cruel|Não esquecerei como atravessamos os muros de {s51} e colocamos seus defensores à espada. É uma lembrança doce.
+str_comment_we_fought_in_siege_quarrelsome|Lembre-se de como o inimigo gritou quando atravessamos os muros de {s51}? Eles pensaram que estavam a salvo! Limpamos os sorrisos presunçosos de seus rostos!
+str_comment_we_fought_in_siege_upstanding|Não esquecerei nossa captura de {s51}. Vamos mais uma vez agradecer ao céu e rezar para que não fiquemos orgulhosos.
+str_comment_we_fought_in_siege_default|Não esquecerei como capturamos juntos {s51}. Estou honrado por ter lutado ao seu lado.
+str_comment_we_fought_in_major_battle_unfriendly_spiteful|Suponho que você queira beber em memória de nossa grande vitória perto de {s51}. Bem, salve seu vinho - será necessário mais do que isso para eliminar a mancha de suas desgraças anteriores.
+str_comment_we_fought_in_major_battle_unfriendly|Não esquecerei como lutamos juntos na grande batalha perto de {s51}, mas também não esqueci os outros assuntos que existem entre nós.
+str_comment_we_fought_in_major_battle_cruel|Não esquecerei a grande batalha perto de {s51}, quando atravessamos as linhas inimigas e elas correram gritando diante de nós. É uma lembrança doce.
+str_comment_we_fought_in_major_battle_quarrelsome|Foi uma bela luta perto de {s51}, quando fizemos aqueles bastardos correrem!
+str_comment_we_fought_in_major_battle_upstanding|Não esquecerei como lutamos lado a lado na grande batalha perto de {s51}. Vamos agradecer mais uma vez ao céu e rezar para que não fiquemos orgulhosos"
+str_comment_we_fought_in_major_battle_default|Não esquecerei como lutamos lado a lado na grande batalha perto de {s51}. Estou honrado por ter lutado ao seu lado.
+str_comment_you_defeated_a_lord_allied_liege|Então, você cruzou espadas com aquele patife que eles chamam {s54} e saiu vitorioso. Estou muito feliz em ouvir isso.
+str_comment_you_defeated_a_lord_allied_unfriendly_spiteful|Ouvi dizer que você lutou e derrotou {s54}. Todo cachorro tem seu dia, suponho.
+str_comment_you_defeated_a_lord_allied_spiteful|Ouvi dizer que você lutou e derrotou aquele cachorro {s54}. Ah, se eu pudesse ouvi-lo choramingando por misericórdia.
+str_comment_you_defeated_a_lord_allied_unfriendly_chivalrous|Ouvi dizer que você lutou e derrotou {s54}. Espero que você não use meios desonrosos para fazê-lo.
+str_comment_you_defeated_a_lord_allied|Ouvi dizer que você lutou e derrotou {s54}. Desejo-lhe alegria pela sua vitória.
+str_comment_you_defeated_me_enemy_chivalrous|Não vou invejá-lo por sua vitória na última vez que nos encontramos, mas estou ansioso por mais uma rodada!
+str_comment_you_defeated_me_enemy_spiteful|Estou ansioso para encontrá-lo novamente. Seus truques não vão me enganar uma segunda vez, e vou gostar de ouvir seus pedidos de misericórdia.
+str_comment_you_defeated_me_enemy|Quando nos conhecemos, {playername}, você teve o melhor de mim. Mas garanto que isso não acontecerá novamente!
+str_comment_i_defeated_you_enemy_spiteful|Voltar para mais? Faça-me lutar com você novamente, e eu alimentarei suas entranhas nos meus cães.
+str_comment_i_defeated_you_enemy_chivalrous|Venha testar seu valor contra mim novamente, {playername}?
+str_comment_i_defeated_you_enemy_benevolent|Então, mais uma vez você vem até mim? Você já aprendeu?
+str_comment_i_defeated_you_enemy_coldblooded|Você é persistente, mas um incômodo.
+str_comment_i_defeated_you_enemy|Quantas vezes devo castigá-lo antes que você aprenda a manter distância?
+str_comment_we_were_defeated_unfriendly_spiteful|A última vez que te vi, você foi atingido pelos homens de {s54}. Eu culpo você por esse desastre. Que pena ver que você sobreviveu.
+str_comment_we_were_defeated_unfriendly|A última vez que te vi, você foi atingido pelos homens de {s54}. Bem, vejo que você sobreviveu.
+str_comment_we_were_defeated_cruel|A última vez que te vi, você foi atingido pelos homens de {s54}. Não se preocupe - vamos encontrá-lo e fazê-lo sufocar com sua vitória.
+str_comment_we_were_defeated_default|A última vez que te vi, você foi atingido pelos homens de {s54}. É bom vê-lo vivo e bem.
+str_comment_you_were_defeated_allied_friendly_spiteful|Ouvi dizer que {s54} lhe deu um tempo difícil. Não se preocupe, amigo - eu vou encontrá-lo para você e fazer de você um presente da cabeça dele."; str_comment_you_were_defeated_allied_unfriendly_cruel  = "I had heard that {s54} slaughtered your men like sheep. But here you are, alive. Such a disappointment!
 ; str_comment_you_were_defeated_allied_unfriendly_cruel|I had heard that {s54} slaughtered your men like sheep. But here you are, alive. Such a disappointment!
-; str_comment_you_were_defeated_allied_spiteful|I heard that {s54} crushed you underfoot like an ant. Hah! Children should not play games made for grown-ups, little {boy/girl}!
-; str_comment_you_were_defeated_allied_pitiless|I heard that {s54} defeated you, and scattered your forces. That is most disappointing...
-; str_comment_you_were_defeated_allied_unfriendly_upstanding|I heard that {s54} defeated you. Perhaps you should consider if you have considered any misdeeds, that might cause heaven to rebuke you in this way.
-; str_comment_you_were_defeated_allied_unfriendly|I heard that {s54} defeated you. Look, try not to get too many of our men killed, will you?
-; str_comment_you_were_defeated_allied|I heard that {s54} defeated you. But take heart -- the tables will soon be turned!
-; str_comment_you_helped_my_ally_unfriendly_chivalrous|I heard that you saved {s54} from likely defeat. Whatever else I may think of you, I must at least commend you for that.
-; str_comment_you_helped_my_ally_unfriendly|[revelance should be zero, and this message should not appear]
-; str_comment_you_helped_my_ally_liege|I heard that you saved my vassal {s54} from likely defeat. 
-; str_comment_you_helped_my_ally_unfriendly_spiteful|I heard that you rode to the rescue of our poor {s54}. Did you think him a damsel in distress? No matter -- it's a common mistake.
-; str_comment_you_helped_my_ally_spiteful|I heard that you saved {s54} from a whipping. You should have let him learn his lesson, in my opinion.
-; str_comment_you_helped_my_ally_chivalrous|I heard that you got {s54} out of a tight spot. That was a noble deed.
-; str_comment_you_helped_my_ally_default|I heard that you got {s54} out of a tight spot. Good work!
-; str_comment_you_abandoned_us_unfriendly_spiteful|You worm! You left us alone to face {s54}, didn't you? I spit at you.
-; str_comment_you_abandoned_us_unfriendly_pitiless|Well... You abandoned me in the middle of a battle with {s54}, didn't you? I'll see you buried in a traitor's grave.
-; str_comment_you_abandoned_us_spiteful|You disappeared in the middle of that battle with {s54}... I hope you have a good explanation. Did your bowels give out? Were you shaking too hard with fear to hold your weapon?
-; str_comment_you_abandoned_us_chivalrous|What happened? You disappeared in the middle of that battle against {s54}. I can only hope that you were too badly wounded to stand, for I would be ashamed to have gone into battle alongside a coward.
-; str_comment_you_abandoned_us_benefitofdoubt|What happened? You disappeared in the middle of that battle against {s54}. I assume that you must have been wounded, but it did look suspicious.
-; str_comment_you_abandoned_us_default|What happened? One moment you were fighting with us against {s54}, the next moment you were nowhere to be found?
-; str_comment_you_ran_from_me_enemy_spiteful|Last time we met, you ran from me like a whipped dog. Have you come back to bark at me again, or to whine for mercy?
-; str_comment_you_ran_from_me_enemy_chivalrous|Last time we met, you fled from me. Learn to stand and fight like a gentleman!
-; str_comment_you_ran_from_me_enemy_benevolent|When I saw you flee the last time that we met, I had hoped that I would not have to fight you again.
-; str_comment_you_ran_from_me_enemy_coldblooded|Last time we met, you fled from me. That was a wise decision
-; str_comment_you_ran_from_me_enemy|You may have been able to escape the last time we crossed paths, but the next time I doubt that you be so lucky.
-; str_comment_you_ran_from_foe_allied_chivalrous|They say that you fled from {s54}, leaving your men behind. I pray that this is not true, for such conduct does dishonour to us all.
-; str_comment_you_ran_from_foe_allied_upstanding|They say that you fled from {s54}, leaving your men behind. I do not always believe such rumors, and I also know that desperate straits call for desperate measures. But I beg you to take more care of your good name, for men will not fight in our armies if they hear that we abandon them on the field of battle.
-; str_comment_you_ran_from_foe_allied_spiteful|By the way, they said that you ran away from {s54} like a quaking little rabbit, leaving your men behind to be butchered. Ha! What a sight that would have been to see!
-; str_comment_you_defeated_my_friend_enemy_pragmatic|You may have bested {s54}, but you cannot defeat us all.
-; str_comment_you_defeated_my_friend_enemy_chivalrous|I have heard that you defeated {s54}, and ever since have been anxious to cross swords with you.
-; str_comment_you_defeated_my_friend_enemy_spiteful|Your fame runs before you, {playername}. {s54} may have fallen for your tricks, but if you fight me, you'll find a me a much more slippery foe.
-; str_comment_you_defeated_my_friend_enemy|They say that you have defeated {s54}. But I will be a truer test of your skill at arms.
-; str_comment_you_captured_a_lord_allied_friendly_spiteful|I heard that you captured {s54}. I hope that you squeezed him for every denar.
-; str_comment_you_captured_a_lord_allied_unfriendly_spiteful|I heard that you captured {s54}. Your coffers must be well-bloated with ransom by now. Such a pity that money cannot transform a low-born cur into a gentleman!
-; str_comment_you_captured_a_lord_allied_chivalrous|I heard that you captured {s54}. Well done. I assume, of course, that he has been been treated with the honours due his rank.
-; str_comment_you_captured_a_lord_allied|I heard that you captured {s54}. Well done. His ransom must be worth quite something.
-; str_comment_you_let_go_a_lord_allied_chivalrous|I heard that you captured {s54}, but then let him go. Such chivalry does a credit to our cause.
-; str_comment_you_let_go_a_lord_allied_upstanding|I heard that you captured {s54}, but then let him go. Well, that was an honourable course of action, if possibly also a dangerous one.
-; str_comment_you_let_go_a_lord_allied_coldblooded|I heard that you captured {s54}, but then let him go. That was most chivalrous of you, but chivalry does not win wars.
-; str_comment_you_let_go_a_lord_allied_unfriendly_spiteful|I heard that you captured {s54}, but then let him go. How very chivalrous of you! No doubt the widows and orphans he leaves in his wake will want to commend you in person.
-; str_comment_you_let_go_a_lord_allied|I heard that you captured {s54}, but then let him go. Well, I will not tell you what to do with your own prisoners.
-; str_comment_you_let_me_go_spiteful|When last we met, you had me at your mercy and allowed me to go free. I hope you enjoyed toying with me, like a cat with a mouse, because soon I will have you at my mercy, to slay or humiliate according to my fancy.
-; str_comment_you_let_me_go_enemy_chivalrous|When last we met, you had me at your mercy and allowed me to go free. That was most chivalrous of you, and I will not forget. But I also must remember my oath to my liege, and our kingdoms are still at war.
-; str_comment_you_let_me_go_enemy_coldblooded|When last we met, you had me at your mercy and allowed me to go free. But we are still enemies, and I cannot promise to repay your mercy in kind.
-; str_comment_you_let_me_go_enemy|When last we met, you had me at your mercy and allowed me to go free. That was kind of you. But we are still at war.
-; str_comment_you_let_me_go_default|When last we met, you had me at your mercy and allowed me to go free. That was kind of you, and I am glad that our kingdoms are no longer at war.
-; str_comment_pledged_allegiance_allied_martial_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Pray do not disgrace us by behaving in a cowardly fashion.
-; str_comment_pledged_allegiance_allied_martial|I heard that you have pledged allegiance to our lord, {s54}. I look forward to fighting alongside you against our foes.
-; str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Bah. Do yourself a favor, and stay out of my way.
-; str_comment_pledged_allegiance_allied_quarrelsome|I heard that you have pledged allegiance to our lord, {s54}. Fight hard against our foes, respect your betters, and don't cross me, and we'll get along fine.
-; str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. If I were he, I would not trust you to clean the sculleries.
-; str_comment_pledged_allegiance_allied_selfrighteous|I heard that you have pledged allegiance to our lord, {s54}. Fight bravely and you will be well-rewarded. Betray us, and we shall make of you the kind of example that will not soon be forgotten.
-; str_comment_pledged_allegiance_allied_cunning_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. I do not pretend to be happy about his decision, but perhaps it is better to have you inside our tent pissing out, than the other way around.
-; str_comment_pledged_allegiance_allied_cunning|I heard that you have pledged allegiance to our lord, {s54}. That is good. The more skilled fighters we have with us in these troubled times, the better. I shall be watching your progress.
-; str_comment_pledged_allegiance_allied_debauched_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. No doubt you will soon betray him, and I will have the pleasure of watching you die a traitor's death.
-; str_comment_pledged_allegiance_allied_debauched|I heard that you have pledged allegiance to our lord, {s54}. Excellent... I am sure that you and I will become very good friends. But remember -- if you betray us, it will be the biggest mistake you will ever make.
-; str_comment_pledged_allegiance_allied_goodnatured_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Well, I can't say that I would have trusted you, but perhaps you deserve the benefit of the doubt.
-; str_comment_pledged_allegiance_allied_goodnatured|I heard that you have pledged allegiance to our lord, {s54}. Good {man/woman}! Our lord is a noble soul, and rewards loyalty and valor with kindness and generosity.
-; str_comment_pledged_allegiance_allied_upstanding_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Alas, from what I know of you I fear that you will disgrace us, but I will be happy if you prove me wrong.
-; str_comment_pledged_allegiance_allied_upstanding|I heard that you have pledged allegiance to our lord, {s54}. Fight against our foes with valor, but also with honour and compassion. A good name is as valuable as a sharp sword or a swift horse in affairs of arms.
-; str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|I heard that {s54} granted you {s51} as a fief. Don't forget -- spare the whip and spoil the peasant!
-; str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|I heard that {s54} granted you {s51} as a fief. I am glad to see you prosper -- but be careful. Men are vipers, envious and covetous of their neighbours' wealth. Stay close to me, and I'll watch your back.
-; str_comment_our_king_granted_you_a_fief_allied_friendly|I heard that {s54} granted you {s51} as a fief. May your new lands prosper.
-; str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|I heard that {s54} granted you {s51} as a fief. But keep in mind that pride goes before a fall.
-; str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|I heard that {s54} granted you {s51} as a fief. I suspect, however, that fortune is only raising you up so as to humble you even more, when it casts you back into the dung from whence you came.
-; str_comment_our_king_granted_you_a_fief_allied_spiteful|I heard that {s54} granted you {s51} as a fief. Let's hope you are indeed deserving of our lord's favor.
-; str_comment_our_king_granted_you_a_fief_allied|I heard that {s54} granted you {s51} as a fief. You seem to be doing very well for yourself.
+str_comment_you_were_defeated_allied_spiteful|Ouvi dizer que {s54} esmagou você como uma formiga. Hah! As crianças não devem brincar de adultos, menininha!
+str_comment_you_were_defeated_allied_pitiless|Ouvi dizer que {s54} o derrotou e espalhei suas forças. Isso é muito decepcionante ...
+str_comment_you_were_defeated_allied_unfriendly_upstanding|Ouvi dizer que {s54} o derrotou. Talvez você deva considerar se considerou algum crime, que pode fazer com que o céu o repreenda dessa maneira.
+str_comment_you_were_defeated_allied_unfriendly|Ouvi dizer que {s54} o derrotou. Olha, tente não matar muitos de nossos homens, certo?
+str_comment_you_were_defeated_allied|Ouvi dizer que {s54} o derrotou. Mas tenha ânimo - as mesas logo serão viradas!
+str_comment_you_helped_my_ally_unfriendly_chivalrous|Ouvi dizer que você salvou {s54} de uma provável derrota. Seja o que for que eu possa pensar em você, devo pelo menos elogiá-lo por isso.
+str_comment_you_helped_my_ally_unfriendly|[a revelação deve ser zero e esta mensagem não deve aparecer]
+str_comment_you_helped_my_ally_liege|Ouvi dizer que você salvou meu vassalo {s54} de uma provável derrota.
+str_comment_you_helped_my_ally_unfriendly_spiteful|Ouvi dizer que você foi resgatar nossos pobres {s54}. Você o achou uma donzela em perigo? Não importa - é um erro comum.
+str_comment_you_helped_my_ally_spiteful|Ouvi dizer que você salvou {s54} de um chicote. Você deveria ter deixado que ele aprendesse sua lição, na minha opinião.
+str_comment_you_helped_my_ally_chivalrous|Ouvi dizer que você saiu {s54} de uma situação difícil. Essa foi uma ação nobre.
+str_comment_you_helped_my_ally_default|Ouvi dizer que você saiu {s54} de uma situação difícil. Bom trabalho!
+str_comment_you_abandoned_us_unfriendly_spiteful|Seu verme! Você nos deixou em paz para enfrentar {s54}, não foi? Eu cuspi em você.
+str_comment_you_abandoned_us_unfriendly_pitiless|Bem ... Você me abandonou no meio de uma batalha com {s54}, não foi? Vejo você enterrado no túmulo de um traidor.
+str_comment_you_abandoned_us_spiteful|Você desapareceu no meio da batalha com {s54} ... Espero que você tenha uma boa explicação. Suas entranhas cederam? Você estava tremendo demais com medo de segurar sua arma?
+str_comment_you_abandoned_us_chivalrous|O que aconteceu? Você desapareceu no meio dessa batalha contra {s54}. Só espero que você tenha sido ferido demais para ficar em pé, pois eu teria vergonha de ter entrado em batalha ao lado de um covarde.
+str_comment_you_abandoned_us_benefitofdoubt|O que aconteceu? Você desapareceu no meio da batalha contra {s54}. Presumo que você deva ter sido ferido, mas parecia suspeito.
+str_comment_you_abandoned_us_default|O que aconteceu? Um momento em que você estava lutando conosco contra {s54}, no momento seguinte não estava em lugar nenhum?
+str_comment_you_ran_from_me_enemy_spiteful|A última vez que nos conhecemos, você fugiu de mim como um cachorro chicoteado. Você voltou a latir para mim novamente ou a reclamar por misericórdia?
+str_comment_you_ran_from_me_enemy_chivalrous|A última vez que nos encontramos, você fugiu de mim. Aprenda a ficar de pé e lutar como um cavalheiro!
+str_comment_you_ran_from_me_enemy_benevolent|Quando eu vi você fugir da última vez que nos conhecemos, eu esperava que não tivesse que lutar com você novamente.
+str_comment_you_ran_from_me_enemy_coldblooded|A última vez que nos encontramos, você fugiu de mim. Essa foi uma decisão sábia
+str_comment_you_ran_from_me_enemy|Você pode ter escapado da última vez que cruzamos o caminho, mas da próxima vez duvido que tenha tanta sorte.
+str_comment_you_ran_from_foe_allied_chivalrous|Eles dizem que você fugiu de {s54}, deixando seus homens para trás. Rezo para que isso não seja verdade, pois essa conduta desonra a todos nós.
+str_comment_you_ran_from_foe_allied_upstanding|Dizem que você fugiu de {s54}, deixando seus homens para trás. Nem sempre acredito em tais rumores, e também sei que dificuldades desesperadas exigem medidas desesperadas. Mas peço que cuide mais do seu bom nome , pois os homens não lutarão em nossos exércitos se souberem que os abandonamos no campo de batalha "
+str_comment_you_ran_from_foe_allied_spiteful|A propósito, eles disseram que você fugiu de {s54} como um coelhinho trêmulo, deixando seus homens para trás para serem massacrados. Ha! Que visão isso teria sido ver!
+str_comment_you_defeated_my_friend_enemy_pragmatic|Você pode ter vencido {s54}, mas não pode derrotar todos nós.
+str_comment_you_defeated_my_friend_enemy_chivalrous|Ouvi dizer que você derrotou {s54} e, desde então, está ansioso para cruzar espadas com você.
+str_comment_you_defeated_my_friend_enemy_spiteful|Sua fama corre antes de você, {playername}. {s54} pode ter caído nos seus truques, mas se você lutar comigo, você encontrará para mim um inimigo muito mais escorregadio.
+str_comment_you_defeated_my_friend_enemy|Eles dizem que você derrotou {s54}. Mas eu serei um teste mais verdadeiro de sua habilidade nas armas.
+str_comment_you_captured_a_lord_allied_friendly_spiteful|Ouvi dizer que você capturou {s54}. Espero que você o tenha apertado a cada denar.
+str_comment_you_captured_a_lord_allied_unfriendly_spiteful|Ouvi dizer que você capturou {s54}. Seus cofres devem estar cheios de resgate a essa altura. Uma pena que o dinheiro não possa transformar um vilão em um cavalheiro!
+str_comment_you_captured_a_lord_allied_chivalrous|Ouvi dizer que você capturou {s54}. Muito bem. Suponho, é claro, que ele foi tratado com as honras devido à sua classificação.
+str_comment_you_captured_a_lord_allied|Ouvi dizer que você capturou {s54}. Muito bem. O resgate dele deve valer bastante.
+str_comment_you_let_go_a_lord_allied_chivalrous|Ouvi dizer que você capturou {s54}, mas depois o soltou. Essa cavalaria faz um crédito à nossa causa.
+str_comment_you_let_go_a_lord_allied_upstanding|Ouvi dizer que você capturou {s54}, mas depois o soltou. Bem, esse foi um curso de ação honroso, se possível, também perigoso.
+str_comment_you_let_go_a_lord_allied_coldblooded|Ouvi dizer que você capturou {s54}, mas depois o soltou. Isso foi muito gentil de sua parte, mas a cavalaria não vence guerras.
+str_comment_you_let_go_a_lord_allied_unfriendly_spiteful|Ouvi dizer que você capturou {s54}, mas depois o soltou. Que cavalheiresco da sua parte! Sem dúvida, as viúvas e órfãos que ele deixa em seu rastro vão querer elogiá-lo pessoalmente.
+str_comment_you_let_go_a_lord_allied|Ouvi dizer que você capturou {s54}, mas depois o soltou. Bem, não vou lhe dizer o que fazer com seus próprios prisioneiros.
+str_comment_you_let_me_go_spiteful|Quando nos conhecemos, você me teve à sua mercê e me permitiu ficar livre. Espero que você tenha gostado de brincar comigo, como um gato com um rato, porque em breve terei o meu prazer, matar ou humilhar de acordo com a minha fantasia "
+str_comment_you_let_me_go_enemy_chivalrous|Quando nos conhecemos, você me teve à sua mercê e me permitiu ir livre. Isso foi muito gentil da sua parte, e não esquecerei. Mas também devo me lembrar do meu juramento ao meu senhor, e nossos reinos ainda estão na guerra.
+str_comment_you_let_me_go_enemy_coldblooded|Quando nos conhecemos, você me teve à sua mercê e me permitiu ir em liberdade. Mas ainda somos inimigos, e não posso prometer retribuir sua misericórdia em espécie.
+str_comment_you_let_me_go_enemy|Quando nos conhecemos pela última vez, você me teve à sua mercê e me permitiu ir livre. Isso foi gentil da sua parte. Mas ainda estamos em guerra.
+str_comment_you_let_me_go_default|Quando nos conhecemos pela última vez, você me teve à sua mercê e me permitiu ir livre. Isso foi gentil da sua parte, e estou feliz que nossos reinos não estejam mais em guerra.
+str_comment_pledged_allegiance_allied_martial_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Ore para não nos desonrar, nos comportando de maneira covarde.
+str_comment_pledged_allegiance_allied_martial|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Estou ansioso para lutar ao seu lado contra nossos inimigos.
+str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Bah. Faça um favor a si mesmo e fique fora do meu caminho.
+str_comment_pledged_allegiance_allied_quarrelsome|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Lute duro contra nossos inimigos, respeite seus apostadores e não me atravesse, e vamos nos dar bem.
+str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Se eu fosse ele, não confiaria em você para limpar a copa.
+str_comment_pledged_allegiance_allied_selfrighteous|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Lute corajosamente e você será bem recompensado. Traia-nos, e faremos de você o tipo de exemplo que não será esquecido em breve.
+str_comment_pledged_allegiance_allied_cunning_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Eu não finjo estar feliz com a decisão dele, mas talvez seja melhor tê-lo dentro da nossa barraca, do que o contrário.
+str_comment_pledged_allegiance_allied_cunning|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Isso é bom. Quanto mais habilidosos lutadores tivermos conosco nesses tempos difíceis, melhor. Observarei seu progresso.
+str_comment_pledged_allegiance_allied_debauched_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Sem dúvida, você o trairá em breve e terei o prazer de vê-lo morrer na morte de um traidor.
+str_comment_pledged_allegiance_allied_debauched|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Excelente ... Tenho certeza de que você e eu nos tornaremos muito bons amigos. Mas lembre-se - se você nos trair, será o maior erro você jamais fará. 
+str_comment_pledged_allegiance_allied_goodnatured_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Bem, não posso dizer que confiaria em você, mas talvez você mereça o benefício da dúvida.
+str_comment_pledged_allegiance_allied_goodnatured|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Bom {homem / mulher}! Nosso senhor é uma alma nobre, e recompensa lealdade e valor com bondade e generosidade.
+str_comment_pledged_allegiance_allied_upstanding_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Infelizmente, pelo que sei de você, temo que você nos desonre, mas ficarei feliz se você me provar que estou errado.
+str_comment_pledged_allegiance_allied_upstanding|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Lute contra nossos inimigos com bravura, mas também com honra e compaixão. Um bom nome é tão valioso quanto uma espada afiada ou um cavalo veloz em assuntos de armas. . 
+str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Não se esqueça - poupe o chicote e estrague o camponês!
+str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Fico feliz em vê-lo prosperar - mas tenha cuidado. Os homens são víboras, invejosos e cobiçosos da riqueza de seus vizinhos. Fique perto de mim e Eu vou cuidar de suas costas. 
+str_comment_our_king_granted_you_a_fief_allied_friendly|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Que suas novas terras prosperem.
+str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Mas lembre-se de que o orgulho é anterior a uma queda.
+str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Suspeito, no entanto, que a fortuna esteja apenas levantando você para humilhá-lo ainda mais, quando o lança de volta para o estrume de onde você veio. . 
+str_comment_our_king_granted_you_a_fief_allied_spiteful|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Vamos torcer para que você realmente mereça o favor de nosso senhor.
+str_comment_our_king_granted_you_a_fief_allied|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Você parece estar se saindo muito bem.
 ; str_comment_you_renounced_your_alliegance_enemy_friendly|I heard that you renounced your allegiance to our lord, {s54}. It grieves me that we must now meet on the field of battle.
 ; str_comment_you_renounced_your_alliegance_friendly|I heard that you renounced your allegiance to our lord, {s54}. Let us pray that we may not come to blows.
 ; str_comment_you_renounced_your_alliegance_unfriendly_spiteful|I always had you figured for a traitor to {s54}, and now it seems I was proven right. I hope you are prepared to die a traitor's death!
 ; str_comment_you_renounced_your_alliegance_unfriendly_moralizing|I heard that you renounced your allegiance to our lord, {s54}. I am forced to consider you a traitor.
 ; str_comment_you_renounced_your_alliegance_enemy|I heard that you renounced your allegiance to our lord, {s54}. Well, it is the way of the world for old comrades to become enemies.
 ; str_comment_you_renounced_your_alliegance_default|I heard that you renounced your allegiance to our lord, {s54}. Well, that is your decision, but do not expect me to go easy on you when we meet on the battlefield.
-; str_personality_archetypes|liege
-; str_martial|martial
-; str_quarrelsome|bad-tempered
-; str_selfrighteous|pitiless
-; str_cunning|cunning
-; str_debauched|sadistic
-; str_goodnatured|good-natured
-; str_upstanding|upstanding
-; str_surrender_demand_default|Yield or die!
-; str_surrender_demand_martial|The odds are not in your favor today. You may fight us, but there is also no shame if you yield now.
-; str_surrender_demand_quarrelsome|I've got you cornered. Give up, or I'll ride you down like a dog.
-; str_surrender_demand_pitiless|You cannot defeat me, and I'll teach you a painful lesson if you try. Yield!
-; str_surrender_demand_cunning|You are outmatched today. Give up -- if not for your own sake, then think of your men!
-; str_surrender_demand_sadistic|Surrender or I'll gut you like a fish!
-; str_surrender_demand_goodnatured|We have the advantage of you. Yield, and you will be well-treated.
-; str_surrender_demand_upstanding|You may fight us, but many of your men will be killed, and you will probably lose. Yield, and spare us both the unnecessary bloodshed.
-; str_surrender_offer_default|Stop! I yield!
-; str_surrender_offer_martial|Stop! I yield!
-; str_surrender_offer_quarrelsome|Enough! You win today, you dog! Ach, the shame of it!
-; str_surrender_offer_pitiless|I yield! You have won. Cursed be this day!
-; str_surrender_offer_cunning|Stop! I yield to you!
-; str_surrender_offer_sadistic|I give up! I give up! Call back your dogs!
-; str_surrender_offer_goodnatured|I yield! Congratulations on your victory, {sir/madame}!
-; str_surrender_offer_upstanding|I yield! Grant me the honours of war, and do yourself credit!
-; str_prisoner_released_default|You have my gratitude, {sir/madame}. I shall not forget your kindness.
-; str_prisoner_released_martial|You are indeed a {man/woman} of honour, {sir/madame}. I shall not forget this!
-; str_prisoner_released_quarrelsome|I'm free? Well... Good bye, then.
-; str_prisoner_released_pitiless|Thank you. When you are finally defeated, I will request for your death to be swift and merciful. Unless, that is, you care to join us... Good bye, for now.
-; str_prisoner_released_cunning|Am I? You are a good {man/woman}. I will try to find a way to repay you.
-; str_prisoner_released_sadistic|Am I? So refined is your cruelty, that you would rather see me free and humiliated, than in chains. Enjoy your triumph!
-; str_prisoner_released_goodnatured|You are indeed a {man/woman} of honour, {sir/madame}. I shall not forget this!
-; str_prisoner_released_upstanding|You are indeed a {man/woman} of honour, {sir/madame}. I shall not forget this!
-; str_enemy_meet_default|Who are you, that comes in arms against me?
-; str_enemy_meet_martial|What is your name, {sir/madame}? If we come to blows, I would know whom I fight.
-; str_enemy_meet_quarrelsome|Who the hell are you?
-; str_enemy_meet_pitiless|Who are you? Speak, so that I may know whom I slay.
-; str_enemy_meet_cunning|Tell me your name. It is always good to know your enemy.
-; str_enemy_meet_sadistic|Who are you? Speak quick, before I cut your tongue out.
-; str_enemy_meet_goodnatured|What is your name, {sir/madame}? If we come to blows, I would know whom I fight.
-; str_enemy_meet_upstanding|Who are you, who would come in arms to dispute our righteous cause?
-; str_battle_won_default|You have proven yourself a most valued ally, today.
-; str_battle_won_martial|There is no greater fortune than the chance to show one's valor on the field of arms!
-; str_battle_won_quarrelsome|Hah! We showed those bastards a thing or two, there, didn't we?
-; str_battle_won_pitiless|Together, we will make the foe learn to fear our names, and to quail at our coming!
-; str_battle_won_cunning|Now, we must be sure to press our advantage, so that the blood shed today is not wasted.
-; str_battle_won_sadistic|Now let us strip their dead and leave them for the crows, so that all will know the fate of those who come against us.
-; str_battle_won_goodnatured|That was a good scrap! No joy like the joy of victory, eh?
-; str_battle_won_upstanding|Now, let us give thanks to the heavens for our victory, and mourn the many fine men who have fallen today.
-; str_battle_won_grudging_default|You helped turn the tide on the field, today. Whatever I may think of you, I cannot fault you for your valor.
-; str_battle_won_grudging_martial|{playername} -- you have shown yourself a worthy {man/woman} today, whatever your misdeeds in the past.
-; str_battle_won_grudging_quarrelsome|Hmf. Yours is not a face which I normally like to see, but I suppose today I should thank you for your help.
-; str_battle_won_grudging_pitiless|Your help was most valuable today. I would not imagine that you came to help me out of kindness, but I nonetheless thank you.
-; str_battle_won_grudging_cunning|It would be unwise of me not to thank you for coming to help me in my hour of need. So... You have my gratitude.
-; str_battle_won_grudging_sadistic|Well! How touching! {playername} has come to rescue me.
-; str_battle_won_grudging_goodnatured|{playername}! I can't say that we've always gotten along in the past, but you fought well today. My thanks to you!
-; str_battle_won_grudging_upstanding|Perhaps I was wrong about you. Your arrival was most timely. You have my gratitude.
-; str_battle_won_unfriendly_default|So you're here. Well, better late than never, I suppose.
-; str_battle_won_unfriendly_martial|We have hard harsh words in the past, but for now let us simply enjoy our victory.
-; str_battle_won_unfriendly_quarrelsome|If you're standing there waiting for thanks, you can keep waiting. Your help wasn't really needed, but I guess you had nothing better to do, right?
-; str_battle_won_unfriendly_pitiless|You have come here, like a jackal to a lion's kill. Very well then, help yourself to the spoils. I shall not stop you.
-; str_battle_won_unfriendly_cunning|{playername}... Well, I suppose your arrival didn't hurt, although I won't pretend that I'm happy to see you.
-; str_battle_won_unfriendly_sadistic|Back off, carrion fowl! This was my victory, however hard you try to steal the glory for yourself.
-; str_battle_won_unfriendly_goodnatured|Oh, it's you. Well, I suppose I should thank you for your help.
-; str_battle_won_unfriendly_upstanding|Thank you for coming to my support. Now I will be off, before I say something that I regret.
-; str_troop_train_request_default|I need someone like you to knock them into shape.
-; str_troop_train_request_martial|They need someone to show them the meaning of valor.
-; str_troop_train_request_quarrelsome|Fat lazy bastards. They make me puke.
-; str_troop_train_request_pitiless|They are more afraid of the enemy than they are of me, and this will not do.
-; str_troop_train_request_cunning|But men, like swords, are tempered and hardened by fire.
-; str_troop_train_request_sadistic|They need someone with steel in his back to flog some courage into them, or kill them trying.
-; str_troop_train_request_goodnatured|They're good enough lads, but I am afraid that they are not quite ready for a battle just yet.
-; str_troop_train_request_upstanding|It would be tantamount to murder for me to lead them into combat in their current state.
-; str_unprovoked_attack_default|What? Why do you attack us? Speak, you rascal!
-; str_unprovoked_attack_martial|I have no objection to a trial of arms, but I would ask you for what reason you attack us?
-; str_unprovoked_attack_quarrelsome|You're making a big mistake, {boy/girl}. What do you think you're doing?
-; str_unprovoked_attack_pitiless|Indeed? If you really want to die today, I'd be more than happy to oblige you, but I am curious as to what you hope to accomplish.
-; str_unprovoked_attack_cunning|Really? I think that you are acting most unwisely. What do you hope to gain by this?
-; str_unprovoked_attack_sadistic|What's this? Do you enjoy having your eyes put out?
-; str_unprovoked_attack_goodnatured|Why do you do this? We've got no quarrel, {sir/madame}.
-; str_unprovoked_attack_upstanding|I consider this an unprovoked assault, and will protest to your king. Why do you do this?
-; str_unnecessary_attack_default|I will not hesitate to cut you down if pressed, but I will offer you the chance to ride away from this.
-; str_unnecessary_attack_martial|I am eager to take you up on your challenge, {sir/madame}, although I will give you a minute to reconsider.
+str_personality_archetypes|liege
+str_martial|marcial
+str_quarrelsome|mal-humorado
+str_selfrighteous|impiedoso
+str_cunning|astúcia
+str_debauched|sádico
+str_goodnatured|bem-humorado
+str_upstanding|em pé
+str_surrender_demand_default|Ceda ou morra!
+str_surrender_demand_martial|As probabilidades não estão a seu favor hoje. Você pode lutar contra nós, mas também não há vergonha se você ceder agora.
+str_surrender_demand_quarrelsome|Eu tenho você encurralado. Desista, ou eu vou montá-lo como um cachorro.
+str_surrender_demand_pitiless|Você não pode me derrotar, e eu ensinarei uma lição dolorosa se você tentar. Rendimento!
+str_surrender_demand_cunning|Você é superado hoje. Desista - se não por seu próprio bem, pense em seus homens!
+str_surrender_demand_sadistic|Renda-se ou estriparei você como um peixe!
+str_surrender_demand_goodnatured|Temos a vantagem de você. Rendimento, e você será bem tratado.
+str_surrender_demand_upstanding|Você pode lutar contra nós, mas muitos de seus homens serão mortos e você provavelmente perderá. Ceda e nos poupe do derramamento de sangue desnecessário.
+str_surrender_offer_default|Pare! Eu cedi!
+str_surrender_offer_martial|Pare! Eu cedi!
+str_surrender_offer_quarrelsome|Chega! Você vence hoje, seu cachorro! Ach, que vergonha!
+str_surrender_offer_pitiless|Eu cedi! Você venceu. Maldito seja este dia!
+str_surrender_offer_cunning|Pare! Eu me rendo a você!
+str_surrender_offer_sadistic|Eu desisto! Desisto! Chame de volta seus cães!
+str_surrender_offer_goodnatured|Eu cedi! Parabéns pela sua vitória, {senhor / senhora}!
+str_surrender_offer_upstanding|Eu me rendo! Conceda-me as honras da guerra e faça você mesmo crédito!
+str_prisoner_released_default|Você tem minha gratidão, {senhor / senhora}. Não esquecerei sua gentileza.
+str_prisoner_released_martial|Você é realmente um {homem / mulher} de honra, {senhor / senhora}. Não esquecerei isso!
+str_prisoner_released_quarrelsome|Estou livre? Bem ... Adeus, então.
+str_prisoner_released_pitiless|Obrigado. Quando você finalmente for derrotado, pedirei que sua morte seja rápida e misericordiosa. A menos que você queira se juntar a nós ... Adeus, por enquanto.
+str_prisoner_released_cunning|Sou? Você é um bom {homem / mulher}. Tentarei encontrar uma maneira de recompensá-lo.
+str_prisoner_released_sadistic|Estou? Tão refinada é a sua crueldade, que você prefere me ver livre e humilhada do que acorrentada. Aproveite o seu triunfo!
+str_prisoner_released_goodnatured|Você é realmente um {homem / mulher} de honra, {senhor / senhora}. Não esquecerei isso!
+str_prisoner_released_upstanding|Você é realmente um {homem / mulher} de honra, {senhor / senhora}. Não esquecerei isso!
+str_enemy_meet_default|Quem é você, que entra em armas contra mim?
+str_enemy_meet_martial|Qual é o seu nome, {senhor / madame}? Se viermos à tona, eu saberia com quem luto.
+str_enemy_meet_quarrelsome|Quem diabos é você?
+str_enemy_meet_pitiless|Quem é você? Fale, para que eu saiba quem eu mato.
+str_enemy_meet_cunning|Diga-me seu nome. É sempre bom conhecer seu inimigo.
+str_enemy_meet_sadistic|Quem é você? Fale rápido, antes que eu corte sua língua.
+str_enemy_meet_goodnatured|Qual é o seu nome, {senhor / madame}? Se viermos à tona, eu saberia com quem luto.
+str_enemy_meet_upstanding|Quem é você, quem entraria em armas para contestar nossa justa causa?
+str_battle_won_default|Você provou ser um aliado mais valioso hoje.
+str_battle_won_martial|Não há maior fortuna do que a chance de mostrar o seu valor no campo de armas!
+str_battle_won_quarrelsome|Hah! Mostramos a esses bastardos uma coisa ou duas, não é
+str_battle_won_pitiless|Juntos, faremos com que o inimigo aprenda a temer nossos nomes e a codificar nossa chegada!
+str_battle_won_cunning|Agora, devemos garantir nossa vantagem, para que o sangue derramado hoje não seja desperdiçado.
+str_battle_won_sadistic|Agora vamos tirar seus mortos e deixá-los para os corvos, para que todos saibam o destino daqueles que vierem contra nós.
+str_battle_won_goodnatured|Foi um bom pedaço! Nenhuma alegria como a alegria da vitória, não é?
+str_battle_won_upstanding|Agora, vamos agradecer aos céus por nossa vitória e lamentar os muitos homens de bem que caíram hoje.
+str_battle_won_grudging_default|Você ajudou a mudar a maré hoje, em campo. Tudo o que eu penso em você, não posso culpá-lo por seu valor.
+str_battle_won_grudging_martial|{playername} - você se mostrou um {homem / mulher} digno hoje, quaisquer que sejam seus erros no passado.
+str_battle_won_grudging_quarrelsome|Humm. O seu rosto não é o que eu normalmente gosto de ver, mas suponho que hoje eu deva agradecer sua ajuda.
+str_battle_won_grudging_pitiless|Sua ajuda foi mais valiosa hoje. Eu não imaginaria que você veio me ajudar por gentileza, mas mesmo assim agradeço.
+str_battle_won_grudging_cunning|Seria insensato da minha parte não agradecer por ter vindo me ajudar na minha hora de necessidade. Então ... Você tem minha gratidão.
+str_battle_won_grudging_sadistic|Bem! Que emocionante! {playername} chegou para me resgatar.
+str_battle_won_grudging_goodnatured|{playername}! Não posso dizer que sempre nos demos bem no passado, mas você lutou bem hoje. Meus agradecimentos a você!
+str_battle_won_grudging_upstanding|Talvez eu estivesse errado sobre você. Sua chegada foi mais oportuna. Você tem a minha gratidão.
+str_battle_won_unfriendly_default|Então você está aqui. Bem, antes tarde do que nunca, suponho.
+str_battle_won_unfriendly_martial|Temos palavras duras e duras no passado, mas por enquanto vamos simplesmente desfrutar da nossa vitória.
+str_battle_won_unfriendly_quarrelsome|Se você está esperando por agradecimentos, continue esperando. Sua ajuda não era realmente necessária, mas acho que você não tinha nada melhor para fazer, certo?
+str_battle_won_unfriendly_pitiless|Você veio aqui, como um chacal para matar um leão. Muito bem, então, senhorva-se dos despojos. Não vou impedi-lo.
+str_battle_won_unfriendly_cunning|{playername} ... Bem, suponho que sua chegada não tenha doído, embora não pretenda fingir que estou feliz em vê-lo.
+str_battle_won_unfriendly_sadistic|Recue, carniça! Esta foi a minha vitória, por mais que você tente roubar a glória por si mesmo.
+str_battle_won_unfriendly_goodnatured|Oh, é você. Bem, suponho que devo agradecer a sua ajuda.
+str_battle_won_unfriendly_upstanding|Obrigado por ter vindo ao meu apoio. Agora vou embora, antes de dizer algo que me arrependo.
+str_troop_train_request_default|Preciso de alguém como você para moldá-lo.
+str_troop_train_request_martial|Eles precisam de alguém para mostrar o significado de valor.
+str_troop_train_request_quarrelsome|Bastardos gordos e preguiçosos. Eles me fazem vomitar.
+str_troop_train_request_pitiless|Eles têm mais medo do inimigo do que de mim, e isso não serve.
+str_troop_train_request_cunning|Mas os homens, como espadas, são temperados e endurecidos pelo fogo.
+str_troop_train_request_sadistic|Eles precisam de alguém com aço nas costas para lhes dar coragem ou matá-los tentando.
+str_troop_train_request_goodnatured|Eles são bons rapazes, mas receio que ainda não estejam prontos para uma batalha.
+str_troop_train_request_upstanding|Seria o mesmo assassinato liderá-los em combate no estado atual.
+str_unprovoked_attack_default|O quê? Por que você nos ataca? Fale, seu patife!
+str_unprovoked_attack_martial|Não tenho objeção a um julgamento de armas, mas gostaria de perguntar por que motivo você nos ataca?
+str_unprovoked_attack_quarrelsome|Você está cometendo um grande erro, {garoto / garota}. O que você pensa que está fazendo?
+str_unprovoked_attack_pitiless|Sério? Se você realmente quer morrer hoje, ficaria mais do que feliz em agradecê-lo, mas estou curioso para saber o que você espera conseguir.
+str_unprovoked_attack_cunning|Sério? Acho que você está agindo de maneira imprudente. O que você espera ganhar com isso?
+str_unprovoked_attack_sadistic|O que é isso? Você gosta de ter os olhos apagados?
+str_unprovoked_attack_goodnatured|Por que você faz isso? Não temos brigas, {senhor / madame}.
+str_unprovoked_attack_upstanding|Considero isso um ataque não provocado e protestarei contra seu rei. Por que você faz isso?
+str_unnecessary_attack_default|Não hesitarei em cortá-lo se pressionado, mas vou lhe oferecer a chance de fugir disso.
+str_unnecessary_attack_martial|Estou ansioso para aceitar seu desafio, {senhor / senhora}, apesar de lhe dar um minuto para reconsiderar.
 str_unnecessary_attack_quarrelsome|Bah! Não estou no clima para esse absurdo hoje. Saia do meu caminho.
 str_unnecessary_attack_pitiless|Estou em um clima misericordioso hoje. Vou fingir não ter ouvido você.
 str_unnecessary_attack_cunning|Não sei o que você ganha fazendo de mim um inimigo. Talvez você devesse so ir embora.
 str_unnecessary_attack_sadistic|Não tenho tempo para desperdiçar com um verme como você. Sai do meu caminho.
-; str_unnecessary_attack_goodnatured|I don't see what you have to gain by picking a fight, {sir/madame}. You can still ride away.
-; str_unnecessary_attack_upstanding|If a fight is what you wish, {sir/madame}, then you will have one, but I will yet offer you the chance to back down.
+str_unnecessary_attack_goodnatured|Não vejo o que você tem a ganhar escolhendo uma luta, {senhor / senhora}. Você ainda pode ir embora.
+str_unnecessary_attack_upstanding|Se uma luta é o que você deseja, {senhor / madame}, você terá uma, mas eu ainda lhe oferecerei a chance de recuar.
 str_lord_challenged_default|Como desejar. Prepare para morrer!
 str_lord_challenged_martial|Que seja. Defenda-se!
 str_lord_challenged_quarrelsome|Seu maricas imprudente! Vou te esmagar!
@@ -1094,11 +1094,11 @@ str_lord_mission_failed_cunning|Bem, Estou decepcionado, mas ninguém pode garan
 str_lord_mission_failed_sadistic|De fato? Aqueles que falham comigo nem sempre vivem para se arrepender.
 str_lord_mission_failed_goodnatured|Bom. Foi uma tarefa complexa, de qualquer modo. Obrigado por tentar.
 str_lord_mission_failed_upstanding|Muito bem. Tenho certeza que você tentou o seu melhor.
-; str_lord_follow_refusal_default|Follow you? You forget your station, {sir/madame}.
+str_lord_follow_refusal_default|Seguir você? Você esqueceu sua estação, {senhor / madame}.
 str_lord_follow_refusal_martial|Talvez se você um dia provar ser um bravo e honrado guerreiro, então eu o seguiria. Mas não hoje.
 str_lord_follow_refusal_quarrelsome|Seguir alguém como você? Nem pensar.
-; str_lord_follow_refusal_pitiless|Lords like me do not follow people like you, {sir/madame}.
-; str_lord_follow_refusal_cunning|First show me that you are the type of {man/woman} who will not lead me into disaster, and then perhaps I will follow you.
+str_lord_follow_refusal_pitiless|Senhores como eu não seguem pessoas como você, {senhor / madame}.
+str_lord_follow_refusal_cunning|Primeiro me mostre que você é o tipo de {homem / mulher} que não me levará ao desastre, e então talvez eu o siga.
 str_lord_follow_refusal_sadistic|Acho que não! Preferivelmente você deveria me seguir, como um cão no açoite segue seu mestre
 str_lord_follow_refusal_goodnatured|Um, estou um tanto pressionado com recados agora. Talvez em uma outra data.
 str_lord_follow_refusal_upstanding|Primeiro me mostre que você é digno de liderar, e então talvez eu te siga.
@@ -1110,77 +1110,77 @@ str_lord_insult_cunning|Imbecil descuidado
 str_lord_insult_sadistic|cão choramingando
 str_lord_insult_goodnatured|companheiro desagradável
 str_lord_insult_upstanding|canalha desgraçado
-; str_rebellion_dilemma_default|[liege]
-; str_rebellion_dilemma_martial|{s45} was clearly wronged. Although I gave an oath to {s46}, it does not bind me to support him if he usurped his throne illegally.
-; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself .
-; str_rebellion_dilemma_pitiless|Hmm. {s45} says {reg3?she:he} is the rightful heir to the throne. That is good -- it absolves me of my oath to {s46}. But still I must weight my decision carefully.
-; str_rebellion_dilemma_cunning|Hmm. I gave an oath of homage to {s46}, yet the powerful are not bound by their oaths as our ordinary people. Our duty is to our own ability to rule, to impose order and prevent the war of all against all.
-; str_rebellion_dilemma_sadistic|Hmm. In this vile world, a wise man must think of himself, for no one else will. So -- what's in it for me?
-; str_rebellion_dilemma_goodnatured|I do not know what to say. I gave an oath to {s46} as the lawful ruler, but if he is not the lawful ruler, I don't know if I am still bound.
-; str_rebellion_dilemma_upstanding|This is troublesome. It is a grave thing to declare my homage to {s46} to be null and void, and dissolve the bonds which keep our land from sinking into anarchy. Yet I am also pledged to support the legitimacy of the succession, and {s45} also has a valid claim to the throne.
-; str_rebellion_dilemma_2_default|[liege]
-; str_rebellion_dilemma_2_martial|On the other hand, {s46} has led us in war and peace, and I am loathe to renounce my allegiance.
-; str_rebellion_dilemma_2_quarrelsome|So tell me, why should I turn my back on the bastard I know, in favor of {reg3?a woman:the bastard} I don't know?
-; str_rebellion_dilemma_2_pitiless|It is a most perilous position to be in, to be asked whom I would make {reg3?ruler:king} of this land. Yet it is also a time of opportunity, for me to reap the rewards that have always been my due!
-; str_rebellion_dilemma_2_cunning|{s46} has been challenged, and thus he will never be able to rule as strongly as one whose claim has never been questioned. Yet if {s45} takes the throne by force, {reg3?she:he} will not be as strong as one who succeeded peacefully.
-; str_rebellion_dilemma_2_sadistic|Perhaps if I join {s45} while {reg3?she:he} is still weak {reg3?she:he} will enrich me, but perhaps if I bring {s46} your head he will give me an even greater reward.
-; str_rebellion_dilemma_2_goodnatured|{s46} has always treated me decently, yet it's true that he did wrong to {s45}. I hesitate to renounce my homage to {s46}, yet I also don't think it's right to support injustice.
-; str_rebellion_dilemma_2_upstanding|I feel that I must do whatever is best for the realm, to avoid it being laid waste by civil war and ravaged by its enemies.
-; str_rebellion_prior_argument_very_favorable|I have already heard some arguments for supporting your candidate for the throne, and I tend to agree with them.
-; str_rebellion_prior_argument_favorable|I have already heard some arguments for supporting your candidate for the throne, and I tend to agree with them.
-; str_rebellion_prior_argument_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I do not find them convincing.
-; str_rebellion_prior_argument_very_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I disagree with most of them.
-; str_rebellion_rival_default|[liege]
+str_rebellion_dilemma_default|[liege]
+str_rebellion_dilemma_martial|{s45} foi claramente ofendido. Embora eu tenha prestado juramento a {s46}, isso não me obriga a apoiá-lo se ele usurpar seu trono ilegalmente.
+str_rebellion_dilemma_quarrelsome|Hmm. {s46} nunca me deu o que é devido, por isso acho que não devo muito a ele. No entanto, talvez {s45} não seja melhor e {s46} pelo menos se mostrou.
+str_rebellion_dilemma_pitiless|Hmm. {s45} diz {reg3? she: ele} é o legítimo herdeiro do trono. Isso é bom - isso me absolve do meu juramento a {s46}. Mas ainda devo ponderar minha decisão com cuidado.
+str_rebellion_dilemma_cunning|Hmm. Prestei um juramento de homenagem a {s46}, mas os poderosos não estão vinculados por eles como pessoas comuns. Nosso dever é a nossa própria capacidade de governar, impor ordem e impedir a guerra de todos contra tudo.
+str_rebellion_dilemma_sadistic|Hmm. Neste mundo vil, um homem sábio deve pensar em si mesmo, pois ninguém mais o fará. Então - o que há para mim?
+str_rebellion_dilemma_goodnatured|Não sei o que dizer. Eu fiz um juramento a {s46} como o governante legítimo, mas se ele não é o governante legítimo, não sei se ainda estou vinculado.
+str_rebellion_dilemma_upstanding|Isso é problemático. É uma coisa grave declarar minha homenagem a {s46} como nula e vazia e dissolver os laços que impedem que nossa terra se afunde na anarquia. No entanto, também me comprometo a apoiar a legitimidade da sucessão e {s45} também tem uma reivindicação válida ao trono "
+str_rebellion_dilemma_2_default|[liege]
+str_rebellion_dilemma_2_martial|Por outro lado, {s46} nos levou à guerra e à paz, e eu detesto renunciar à minha lealdade.
+str_rebellion_dilemma_2_quarrelsome|Então me diga, por que devo dar as costas ao bastardo que conheço, a favor de {reg3? uma mulher: o bastardo} que não conheço?
+str_rebellion_dilemma_2_pitiless|É a posição mais perigosa de se estar, ao ser perguntado em quem eu faria {reg3? governante: rei} desta terra. No entanto, é também um momento de oportunidade para eu colher as recompensas que sempre foram meu devido! 
+str_rebellion_dilemma_2_cunning|{s46} foi desafiado e, portanto, ele nunca será capaz de governar tão fortemente quanto aquele cuja afirmação nunca foi questionada. No entanto, se {s45} assume o trono à força, {reg3? she: he} seja tão forte quanto alguém que conseguiu pacificamente "
+str_rebellion_dilemma_2_sadistic|Talvez se eu me juntar a {s45} enquanto {reg3? she: ele} ainda estiver fraco {reg3? she: ele} me enriquecerá, mas talvez se eu lhe trazer a cabeça, ele me dará uma recompensa ainda maior . 
+str_rebellion_dilemma_2_goodnatured|{s46} sempre me tratou com decência, mas é verdade que ele fez algo errado com {s45}. Hesito em renunciar minha homenagem a {s46}, mas também não acho correto apoiar a injustiça.
+str_rebellion_dilemma_2_upstanding|Sinto que devo fazer o que for melhor para o reino, para evitar que seja destruído pela guerra civil e devastado por seus inimigos.
+str_rebellion_prior_argument_very_favorable|Eu já ouvi alguns argumentos para apoiar seu candidato ao trono, e eu tendem a concordar com eles.
+str_rebellion_prior_argument_favorable|Eu já ouvi alguns argumentos para apoiar seu candidato ao trono, e eu tendem a concordar com eles.
+str_rebellion_prior_argument_unfavorable|Eu já ouvi alguns argumentos para apoiar seu candidato ao trono, mas não os acho convincentes.
+str_rebellion_prior_argument_very_unfavorable|Eu já ouvi alguns argumentos para apoiar seu candidato ao trono, mas eu discordo da maioria deles.
+str_rebellion_rival_default|[liege]
 ; str_rebellion_rival_martial|{s49} your ally {s44} once questioned my honour and my bravery. It's not often I get the chance to face him in battle, and make him retract his statement.
-; str_rebellion_rival_quarrelsome|{s49} you're working with {s44}. He's a crafty weasel, and I don't trust him one bit.
-; str_rebellion_rival_pitiless|{s49} you seem to have enlisted the support of {s44} -- who is soft, and weak, and not fit to govern a fief, and whom I have always detested.
-; str_rebellion_rival_cunning|{s49} {s44}, who has already joined you, is headstrong and quarrelsome, and a bit of liability.
-; str_rebellion_rival_sadistic|{s49} I have no desire to fight alongside your ally {s44}, who puts on such a nauseating display of virtue.
-; str_rebellion_rival_goodnatured|{s49} I'd be reluctant to be on the same side as {s44}, who has quite a reputation for cruelty.
-; str_rebellion_rival_upstanding|{s49} your ally {s44} is in my opinion a dangerous, unreliable, and highly unprincipled man.
-; str_rebellion_argument_favorable|I respect your line of argument
-; str_rebellion_argument_neutral|I find your line of argument only moderately compelling
-; str_rebellion_argument_unfavorable|I do not find your line of argument compelling
-; str_rebellion_persuasion_favorable|you state your case eloquently
-; str_rebellion_persuasion_neutral|you make a reasonable case
-; str_rebellion_persuasion_unfavorable|you make an unconvincing case
-; str_rebellion_relation_very_favorable|I have the greatest respect for you personally.
+str_rebellion_rival_quarrelsome|{s49} você está trabalhando com {s44}. Ele é uma doninha astuta, e eu não confio nele nem um pouco.
+str_rebellion_rival_pitiless|{s49} você parece ter alistado o apoio de {s44} - que é mole, fraco e que não é adequado para governar um feudo, e que eu sempre detestei.
+str_rebellion_rival_cunning|{s49} {s44}, que já se juntou a você, é teimoso e briguento, e um pouco de responsabilidade.
+str_rebellion_rival_sadistic|{s49} Não tenho costa para lutar ao lado de seu aliado {s44}, que mostra uma virtude tão repugnante de virtude.
+str_rebellion_rival_goodnatured|{s49} Eu ficaria relutante em estar do mesmo lado que {s44}, que tem uma reputação de crueldade.
+str_rebellion_rival_upstanding|{s49} seu aliado {s44} é na minha opinião um homem perigoso, não confiável e altamente sem princípios.
+str_rebellion_argument_favorable|Eu respeito sua linha de argumento
+str_rebellion_argument_neutral|Acho sua linha de argumento moderadamente atraente
+str_rebellion_argument_unfavorable|Não acho sua linha de argumento convincente
+str_rebellion_persuasion_favorable|você declara seu caso de forma eloquente
+str_rebellion_persuasion_neutral|você faz um caso razoável
+str_rebellion_persuasion_unfavorable|você faz um caso não convincente
+str_rebellion_relation_very_favorable|Eu tenho o maior respeito por você pessoalmente.
 str_rebellion_relation_favorable|Eu conheço e respeito você pessoalmente.
-; str_rebellion_relation_neutral|I do not know you as well as I might like.
+str_rebellion_relation_neutral|Eu não te conheço tão bem quanto gostaria.
 str_rebellion_relation_unfavorable|Eu não confio em você.
-; str_and_comma_3|Furthermore, 
+str_and_comma_3|Além disso, 
 str_but_comma_3|De qualquer das formas,
 str_and_comma_1|, e
 str_but_comma_1|, mas
-; str_and_comma_2|. Moreover, 
-; str_but_comma_2|. Nonetheless, 
-; str_rebellion_agree_default|[liege]
-; str_rebellion_agree_martial|I have decided. I will back {s45} as the rightful heir.
-; str_rebellion_agree_quarrelsome|Ahh, I've thought long enough. I never did like {s46} much anyway. Let's go take his throne away from him.
-; str_rebellion_agree_pitiless|You are fortunate. I have decided to join you. Pray do not give me cause to regret this decision.
-; str_rebellion_agree_cunning|This is a most dangerous decision, but after careful consideration, I have decided that I will join you. Let's hope it is for the best.
-; str_rebellion_agree_sadistic|I have decided. I will back your {reg3?woman:man} {s45}. But you'd best make sure that {reg3?she:he} rewards me well!
-; str_rebellion_agree_goodnatured|All right. I think your {reg3?woman:man} will be a good ruler. I'll join you.
-; str_rebellion_agree_upstanding|So be it. My first duty is to this realm, and to save it from lawlessness I will back {s45} and renounce my homage to {s46}. May the Heavens forgive me if I do wrong.
-; str_rebellion_refuse_default|[liege]
-; str_rebellion_refuse_martial|I am sorry. {s45} has a good claim, but it's not enough for me to turn my back on {s46}. I will remain loyal to my liege.
-; str_rebellion_refuse_quarrelsome|Nah. Your whelp {s45} doesn't have what it takes to rule this realm. I'm sticking with {s46}.
-; str_talk_later_default|[liege]
-; str_talk_later_martial|Now is not the time to talk politics! I am here today with my fellow lords, armed for battle. You'd better prepare to fight.
-; str_talk_later_quarrelsome|Do you expect me to discuss betraying my liege with you, while we are surrounded by his army? What do you take me for, a bloody idiot?
-; str_talk_later_pitiless|Still your tongue! Whatever I have to say on this matter, I will not say it here and now, while we are in the midst of our army.
-; str_talk_later_cunning|This is hardly the time or the place for such a discussion. Perhaps we can discuss it at a later time and a different place, but for now we're still foes.
-; str_talk_later_sadistic|You should have your mouth sewn shut! Can you imagine what would happen if the other vassals see me talking to you of treason?
-; str_talk_later_goodnatured|So you wish to discuss your rebellion with me? Try that again when we aren't surrounded by my liege's army, and I will hear what you have to say.
-; str_talk_later_upstanding|Whatever my thoughts on the legitimacy of the succession, I am not about to discuss them here and now. If we meet again when we can talk in privacy, I will hear what you have to say on the matter. But for now, consider me your enemy.
-; str_gossip_about_character_default|They say that {s6} doesn't possess any interesting character traits.
-; str_gossip_about_character_martial|They say that {s6} loves nothing more than war.
-; str_gossip_about_character_quarrelsome|They say that {s6} almost came to blows with another lord lately, because the man made a joke about his nose.
-; str_gossip_about_character_selfrighteous|I heard that {s6} had a squire executed because the unfortunate man killed a deer in his forest.
-; str_gossip_about_character_cunning|They say that {s6} is a cunning opponent.
-; str_gossip_about_character_sadistic|They say that {s6} likes to torture his enemies. I wouldn't want to get on the bad side of that man.
-; str_gossip_about_character_goodnatured|They say that {s6} is a good man and treats people living in his lands decently. That is more than what can be said for most of the nobles.
-; str_gossip_about_character_upstanding|People say that it is good to be in the service of {s6}. He is good to his followers, and rewards them if they work well.
+str_and_comma_2|. Além disso, 
+str_but_comma_2|. No entanto, 
+str_rebellion_agree_default|[liege]
+str_rebellion_agree_martial|Eu decidi. Vou apoiar {s45} como o legítimo herdeiro.
+str_rebellion_agree_quarrelsome|Ahh, eu pensei o suficiente. Eu nunca gostei muito de {s46} de qualquer maneira. Vamos tirar o trono dele.
+str_rebellion_agree_pitiless|Você tem sorte. Decidi me juntar a você. Por favor, não me dê motivos para me arrepender desta decisão.
+str_rebellion_agree_cunning|Esta é uma decisão muito perigosa, mas, após cuidadosa consideração, decidi que vou me juntar a você. Vamos torcer para que seja o melhor.
+str_rebellion_agree_sadistic|Eu decidi. Vou apoiar sua {reg3? woman: man} {s45}. Mas é melhor garantir que {reg3? she: he} me recompense bem!
+str_rebellion_agree_goodnatured|Tudo bem. Acho que sua {reg3? woman: man} será uma boa governante. Eu vou me juntar a você.
+str_rebellion_agree_upstanding|Assim seja. Meu primeiro dever é com esse reino e, para salvá-lo da ilegalidade, voltarei {s45} e renunciarei minha homenagem a {s46}. Que os céus me perdoem se eu fizer algo errado.
+str_rebellion_refuse_default|[liege]
+str_rebellion_refuse_martial|Sinto muito. {s45} tem uma boa reivindicação, mas não é suficiente para eu dar as costas a {s46}. Continuarei fiel ao meu senhor.
+str_rebellion_refuse_quarrelsome|Nah. Seu filhote {s45} não tem o que é necessário para governar esse reino. Estou aderindo a {s46}.
+str_talk_later_default|[liege]
+str_talk_later_martial|Agora não é hora de conversar sobre política! Estou aqui hoje com meus colegas, armados para a batalha. É melhor você se preparar para lutar.
+str_talk_later_quarrelsome|Você espera que eu discuta trair meu senhor com você, enquanto estamos cercados pelo exército dele? Por que você me considera um idiota?
+str_talk_later_pitiless|Ainda é sua língua! Tudo o que tenho a dizer sobre esse assunto, não vou dizer aqui e agora, enquanto estivermos no meio do nosso exército.
+str_talk_later_cunning|Este não é o momento nem o local para uma discussão desse tipo. Talvez possamos discuti-lo mais tarde e em outro lugar, mas por enquanto ainda somos inimigos.
+str_talk_later_sadistic|Você deveria ter sua boca costurada! Você pode imaginar o que aconteceria se os outros vassalos me vissem falando com você por traição?
+str_talk_later_goodnatured|Então você deseja discutir sua rebelião comigo? Tente isso novamente quando não estivermos cercados pelo exército do meu senhor, e eu ouvirei o que você tem a dizer.
+str_talk_later_upstanding|Quaisquer que sejam meus pensamentos sobre a legitimidade da sucessão, não vou discuti-los aqui e agora. Se nos encontrarmos novamente quando pudermos conversar em privacidade, ouvirei o que você tem a dizer sobre o assunto. Mas, por enquanto , considere-me seu inimigo. 
+str_gossip_about_character_default|Eles dizem que {s6} não possui nenhum traço de caráter interessante.
+str_gossip_about_character_martial|Eles dizem que {s6} ama nada mais que guerra.
+str_gossip_about_character_quarrelsome|Dizem que {s6} quase brigou com outro senhor ultimamente, porque o homem fez uma piada sobre o nariz.
+str_gossip_about_character_selfrighteous|Ouvi dizer que {s6} teve um escudeiro executado porque o infeliz homem matou um cervo em sua floresta.
+str_gossip_about_character_cunning|Eles dizem que {s6} é um oponente astuto.
+str_gossip_about_character_sadistic|Eles dizem que {s6} gosta de torturar seus inimigos. Eu não gostaria de ficar do lado ruim daquele homem.
+str_gossip_about_character_goodnatured|Eles dizem que {s6} é um homem bom e trata as pessoas que vivem em suas terras decentemente. Isso é mais do que o que pode ser dito para a maioria dos nobres.
+str_gossip_about_character_upstanding|As pessoas dizem que é bom estar a serviço de {s6}. Ele é bom com seus seguidores e os recompensa se eles funcionarem bem.
 str_latest_rumor|O último rumor que você ouviu sobre {s6} foi:
 str_faction_strength_crushed|esmagado
 str_faction_strength_spent_and_wavering|exausto e hesitante
@@ -1474,31 +1474,31 @@ str_khand_rumor_9|Não lutamos por ouro ou escravos, lutamos por honra e glória
 str_khand_rumor_10|Os homens do Ocidente são arrogantes, eles não sabem a força que estão enfrentando.
 str_khand_rumor_11|Nós comercializamos com Rhun, Mordor e Harad. E as vezes lutamos contra eles também. E a tradição do nosso povo.
 str_khand_rumor_12|Você já fez sua máscara de guerreiro ainda? Você precisará de uma logo! Se o inimigo não pode ver seu rosto, o espírito dele não será capaz de encontrar você.
-; str_good_rumor_begin|From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king.
-; str_good_rumor_2|Orcs fight better at night but are weaker by day.
-; str_good_rumor_3|Urukhai are a different breed of orc that doesn't fear sunlight!
-; str_good_rumor_4|Always after a defeat and a respite, the Shadow takes another shape and grows again.
-; str_good_rumor_5|The Dead Marshes... a land defiled, diseased beyond all healing.
-; str_good_rumor_6|The Shadow that bred can only mock, it cannot make: not real new things of its own. I don't think it gave life to the orcs, it only ruined them and twisted them.
+str_good_rumor_begin|Das cinzas um fogo será despertado, Uma luz das sombras brotará Renovada será a lâmina que foi quebrada, Os sem coroa novamente serão rei.
+str_good_rumor_2|Orcs lutam melhor à noite, mas são mais fracos durante o dia.
+str_good_rumor_3|Urukhai é uma raça diferente de orc que não tem medo da luz do sol!
+str_good_rumor_4|Sempre após uma derrota e uma trégua, a Sombra toma outra forma e cresce novamente.
+str_good_rumor_5|Os Pântanos Mortos ... uma terra contaminada, doente além de toda cura.
+str_good_rumor_6|A Sombra que criou só pode zombar, não pode criar: não é realmente algo novo. Não acho que deu vida aos orcs, apenas os arruinou e torceu.
 str_good_rumor_7|A Floresta Verde é como costumava se chamar e cheia de elfos ela era. A maior das florestas do Norte do mundo. Mas agora é Floresta das Trevas. Com ciraturas malignas de todo tipo.
-; str_good_rumor_8|The Argonath, The Pillars of the Kings, great guardians of the old northern border of Gondor.
-; str_good_rumor_9|Amon Hen is the westernmost of the three peaks at the southern end of Nen Hithoel.
-; str_neutral_rumor_begin|Tomorrow everything could change...
-; str_neutral_rumor_2|Dead Marshes... a place defiled and diseased.
-; str_neutral_rumor_3|The land used to be much different once.
-; str_neutral_rumor_4|Men fight weaker at night. But there are some who are used to seeing in the dark.
-; str_evil_rumor_begin|Orcs fight better at night, men fight better by day.
-; str_evil_rumor_2|Fight horseman with pike, footman with arrow and archer with shield!
-; str_evil_rumor_3|Large statues of weaklings on the big river will not stand much longer.
-; str_legendary_rumor_begin|Legend says that trees meet to talk in Fangorn.
-; str_legendary_rumor_amonhen|They say there is a special place on the Anduin, somewhere where the big statues stand.
-; str_legendary_rumor_deadmarshes|It is rumoured all dead seems alive in the middle of Dead Marshes.
+str_good_rumor_8|O Argonath, os Pilares dos Reis, grandes guardiões da antiga fronteira norte de Gondor.
+str_good_rumor_9|Amon Hen é o mais ocidental dos três picos no extremo sul de Nen Hithoel.
+str_neutral_rumor_begin|Amanhã tudo pode mudar ...
+str_neutral_rumor_2|Pântanos mortos ... um lugar contaminado e doente.
+str_neutral_rumor_3|A terra costumava ser muito diferente uma vez.
+str_neutral_rumor_4|Homens lutam mais fracos à noite. Mas há alguns que estão acostumados a ver no escuro.
+str_evil_rumor_begin|Orcs lutam melhor à noite, homens lutam melhor durante o dia.
+str_evil_rumor_2|Lute cavaleiro com lúcio, lacaio com flecha e arqueiro com escudo!
+str_evil_rumor_3|Grandes estátuas de fracotes no rio grande não durarão muito mais tempo.
+str_legendary_rumor_begin|A lenda diz que as árvores se encontram para conversar em Fangorn.
+str_legendary_rumor_amonhen|Eles dizem que há um lugar especial no Anduin, em algum lugar onde estão as grandes estátuas.
+str_legendary_rumor_deadmarshes|Há rumores de que todos os mortos parecem vivos no meio de Dead Marshes.
 str_legendary_rumor_mirkwood|Criaturas além de orcs rastejam pela Floresta das Trevas
-; str_legendary_rumor_fangorn|Fangorn is a forest best avoided. Unusual things happen there.
-; str_last_rumor|I haven't heard anything interesting lately.
-; str_ent_rumor_begin|Do not be hasty now...
-; str_ent_rumor_2|Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses.
-; str_ent_rumor_3|The Old Entish is a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to.
+str_legendary_rumor_fangorn|Fangorn é uma floresta melhor evitar, coisas incomuns acontecem lá.
+str_last_rumor|Não ouvi nada de interessante ultimamente.
+str_ent_rumor_begin|Não se apresse agora ...
+str_ent_rumor_2|Aprenda agora o folclore das Criaturas Vivas! Primeiro nomeie os quatro, os povos livres: o mais velho de todos, os filhos dos elfos; Anão o destruidor, escuras são as suas casas; Ent os nascidos na terra, velhos como montanhas; O homem mortal, mestre de cavalos. 
+str_ent_rumor_3|O Velho Entish é uma linguagem adorável, mas leva muito tempo para dizer alguma coisa nela, porque não dizemos nada nela, a menos que valha a pena demorar e dizer e ouvir.
 str_gondor_rank_0|Plebeu de Gondor
 str_gondor_rank_1|Soldado de Gondor
 str_gondor_rank_2|Sargento de Gondor
@@ -1695,24 +1695,24 @@ str_fullname_region_c_ithilien|Emyn Arner, uma gama de colinas nas regiões cent
 str_fullname_region_s_ithilien|Ithilien Sul, província mais a leste do Reino de Gondor
 str_fullname_region_druadan_forest|Floresta de Drúadan, uma Floresta de Gondor dos Drúedain
 str_fullname_region_firien_wood|bosque Firien, a Floresta Sussurante, um bosque de carvalhos de Gondor
-; str_fullname_region_anorien|Anórien, the Sun-land, a valley between the White Mountains and the Anduin river
-; str_fullname_region_rohan0|the Folde, the heart of Rohan
-; str_fullname_region_rohan1|the Eastemnet, a part of Rohan, the Riddermark
-; str_fullname_region_rohan2|the Westemnet, a part of Rohan, the Riddermark
-; str_fullname_region_rohan3|the Eastfold, a part of Rohan, the Riddermark
-; str_fullname_region_rohan4|the Westfold, a part of Rohan, the Riddermark
+str_fullname_region_anorien|Anórien, a terra do sol, um vale entre as montanhas brancas e o rio Anduin
+str_fullname_region_rohan0|o Folde, o coração de Rohan
+str_fullname_region_rohan1|o Eastemnet, parte de Rohan, o Riddermark
+str_fullname_region_rohan2|o Westemnet, uma parte de Rohan, o Riddermark
+str_fullname_region_rohan3|o Eastfold, uma parte de Rohan, o Riddermark
+str_fullname_region_rohan4|o Westfold, uma parte de Rohan, o Riddermark
 str_fullname_region_rohan5|Abismo de Helm, um vale das Montanhas Brancas, em Rohan
-; str_fullname_region_the_wold|the Wold, the Northeastern area of the Riddermark of Rohan
+str_fullname_region_the_wold|o Wold, a área nordeste da marca ridícula de Rohan
 str_fullname_region_gap_of_rohan|O Desfiladeiro de Rohan, a mais oeste fronteira de Rohan, uma área disputada entre os Rohirrim e os Terra Pardenses.
 str_fullname_region_entwash|as Fozes do Entágua, onde o rio de Rohan Entágua encontra o Anduin
-; str_fullname_region_wetwang|Nindalf, the swamps of Wetwang
+str_fullname_region_wetwang|Nindalf, os pântanos de Wetwang
 str_fullname_region_dead_marshes|o Pântano dos Mortos, o antigo campo de batalha da grande Batalha de Dagor Dagorlad, agora um local amaldiçoado
 str_fullname_region_isengard|as planíces entorno de Isengard
 str_fullname_region_fangorn|a floresta de Fangorn, onde dizem que as árvores podem falar
 str_fullname_region_brown_lands|as Terras Castanhas, cobrindo a extensão entre Emyn Muil e a Floresta das Trevas
 str_fullname_region_dagorlad|o Dagorlad, a grande, desarborizada,  extensão da Planície de Batalha, antes dos portões de Mordor
-; str_fullname_region_n_undeep|the North Undeep, the larger of the two Anduin meanders
-; str_fullname_region_s_undeep|the South Undeep, the lesser of the two large Anduin bends
+str_fullname_region_n_undeep|o North Undeep, o maior dos dois Anduin meandros
+str_fullname_region_s_undeep|o South Undeep , o menor dos dois grandes Anduin curvas
 str_fullname_region_emyn_muil|Emyn Muil, as colinas rochosas acima da afluência do Entágua
 str_fullname_region_misty_mountains|as colinas das Montanhas Nevoentas
 str_fullname_region_lorien|Lothlórien, a floresta dos elfos Sindar, onde as douradas Mallorn crescem
@@ -1765,51 +1765,51 @@ str_shortname_region_s_erebor|o reino de Valle
 str_trait_title_elf_friend|Amigo Elfo
 str_trait_desc_elf_friend|Você se tornou altamente estimado pelos Elfos e agora eles te consideram um aliado confiável. O custo de recrutar elfos foi reduzido e você pode tentar dar ordens aos exécitos élficos.
 str_trait_title_gondor_friend|Benção do Regente
-; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced and you may now attempt to give orders to Gondorian armies.
+str_trait_desc_gondor_friend|Você ficou muito estimado pelo mordomo Denethor e seu status aumentou entre os homens de Gondor como resultado. O custo para recrutar gondorianos foi reduzido e agora você pode tentar dar ordens aos exércitos gondorianos.
 str_trait_title_rohan_friend|Homem do Rei
-; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced and you may now attempt to give orders to the armies of the Riddermark.
+str_trait_desc_rohan_friend|Você se tornou muito estimado pelo rei Theoden de Rohan e, como resultado, seu status aumentou entre os homens de Rohan. O custo para recrutar homens Rohirrim foi reduzido e agora você pode tentar dar ordens aos exércitos da Marca Ridder. . 
 str_trait_title_brigand_friend|Campeão Bárbaro
-; str_trait_desc_brigand_friend|You have become highly esteemed by the barbarian tribes serving Sauron as a result of your impressive displays in the arena. You may now recruit barbarians at reduced cost.
+str_trait_desc_brigand_friend|Você se tornou muito estimado pelas tribos bárbaras que servem Sauron como resultado de suas exibições impressionantes na arena. Agora você pode recrutar bárbaros a um custo reduzido.
 str_trait_title_blessed|Abençoado
-; str_trait_desc_blessed|You sense that you have been blessed by powers from beyond the sea, and perhaps further away still. You do not know why this has happened or what it may mean but you are certain that it is so.
+str_trait_desc_blessed|Você sente que foi abençoado por poderes do além-mar e talvez ainda mais longe. Você não sabe por que isso aconteceu ou o que isso pode significar, mas você tem certeza de que é.
 str_trait_title_reverent|Respeitoso
-; str_trait_desc_reverent|You have acquired a reputation for reverence and wisdom. Men and Elves are more likely to listen to your counsel.
+str_trait_desc_reverent|Você adquiriu uma reputação de reverência e sabedoria. Homens e elfos são mais propensos a ouvir seus conselhos.
 str_trait_title_merciful|Misericordioso
-; str_trait_desc_merciful|You have aquired a reputation for merciful treatment towards the evil men who serve the Enemy. Many of the hardened men who serve you are conflicted by your behavior and suffer a morale penalty. Among the wise, however, your mercy is seen as evidence of high character and you recieve an influence bonus.
+str_trait_desc_merciful|Você adquiriu uma reputação de tratamento misericordioso com os homens maus que servem ao Inimigo. Muitos dos homens endurecidos que o servem estão em conflito com seu comportamento e sofrem uma pena moral. Entre os sábios, porém, sua misericórdia é vista como evidência de alto caráter e você recebe um bônus de influência "
 str_trait_title_bravery|Coragem
-; str_trait_desc_bravery|You have aquired a reputation for bravery in the face of great danger. Your courage is spoken of in both quiet taverns and the halls of the wise. Your deeds inspire your men and they recieve a weekly morale bonus.
-; str_trait_title_oathkeeper|Oathkeeper
-; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. You receive a weekly influence bonus.
-; str_trait_title_oathbreaker|Oathbreaker
-; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. You receive a weekly influence penalty.
-; str_trait_title_orc_pit_champion|Orc Pit Champion
-; str_trait_desc_orc_pit_champion|You have become renowned as a brutal warrior who was able to survive the cruelest of the orcish fighting contests. Such strength is both respected and feared by your black hearted followers and they now receive a weekly morale bonus.
-; str_trait_title_despoiler|Despoiler
-; str_trait_desc_despoiler|You have aquired a reputation for leaving behind wanton destruction wherever you travel. Such behavior is valued by the dark powers you serve and your receive a weekly influence bonus.
-; str_trait_title_accursed|Accursed
-; str_trait_desc_accursed|You sense that you have drawn the ire of powers beyond the sea. Your followers sense this doom as well and fear being around you. They receive a weekly morale penalty.
-; str_trait_title_stealthy|Stealthy
-; str_trait_desc_stealthy|You have developed uncanny skill in the art of stealthy infiltration. You receive a bonus to your stealth rating when undertaking such missions.
-; str_trait_title_berserker|Berserker
-; str_trait_desc_berserker|After many battles where you eschewed the use of armor your ferocious will has become like iron. While fighting lightly armoured, each slain foe fills you with grim vigor.
-; str_trait_title_infantry_captain|Infantry Captain
-; str_trait_desc_infantry_captain|You have developed uncanny skill in the command of infantry troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
-; str_trait_title_archer_captain|Archery Captain
-; str_trait_desc_archer_captain|You have developed uncanny skill in the command of missile troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
-; str_trait_title_cavalry_captain|Cavalry Captain
-; str_trait_desc_cavalry_captain|You have developed uncanny skill in the command of mounted troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
-; str_trait_title_command_voice|Command Voice
-; str_trait_desc_command_voice|Your experience with commanding men in the field has lent you an air of authority. The influence cost to give orders to armies in the field has been reduced.
+str_trait_desc_bravery|Você adquiriu uma reputação de bravura diante de um grande perigo. Sua coragem é mencionada em tavernas tranquilas e nos salões dos sábios. Suas ações inspiram seus homens e eles recebem um bônus semanal de moral.
+str_trait_title_oathkeeper|Jurador
+str_trait_desc_oathkeeper|Você fez juramentos sombrios e viveu para vê-los cumpridos. Posteriormente, você adquiriu uma reputação como homem de sua palavra. Você recebe um bônus de influência semanal.
+str_trait_title_oathbreaker|Jurador
+str_trait_desc_oathbreaker|Você prestou juramentos desagradáveis e não conseguiu cumpri-los até a conclusão. Posteriormente, adquiriu uma reputação de homem cuja paixão supera suas proezas. Você recebe uma penalidade semanal por influência.
+str_trait_title_orc_pit_champion|Orc Pit Champion
+str_trait_desc_orc_pit_champion|Você se tornou conhecido como um guerreiro brutal que foi capaz de sobreviver aos mais cruéis dos concursos de luta orcs. Essa força é respeitada e temida pelos seus seguidores de coração negro e agora recebem um bônus semanal de moral.
+str_trait_title_despoiler|Despoiler
+str_trait_desc_despoiler|Você adquiriu uma reputação de deixar para trás a destruição arbitrária onde quer que viaje. Esse comportamento é valorizado pelos poderes das trevas que você serve e recebe um bônus de influência semanal.
+str_trait_title_accursed|Amaldiçoado
+str_trait_desc_accursed|Você sente que atraiu a ira dos poderes além do mar. Seus seguidores também sentem essa destruição e temem estar ao seu redor. Eles recebem uma penalidade moral semanal.
+str_trait_title_stealthy|Discrição
+str_trait_desc_stealthy|Você desenvolveu uma habilidade extraordinária na arte da infiltração furtiva. Você recebe um bônus na sua classificação furtiva ao realizar essas missões.
+str_trait_title_berserker|Berserker
+str_trait_desc_berserker|Depois de muitas batalhas em que você evitou o uso de armadura, sua vontade feroz se tornou como ferro. Enquanto lutava com armaduras leves, cada inimigo morto o enche de vigor.
+str_trait_title_infantry_captain|Capitão de infantaria
+str_trait_desc_infantry_captain|Você desenvolveu uma habilidade extraordinária no comando das tropas de infantaria. Devido ao treinamento rigoroso e especializado, essas tropas receberão um pequeno aumento de saúde, uma vez por batalha.
+str_trait_title_archer_captain|Capitão de tiro com arco
+str_trait_desc_archer_captain|Você desenvolveu uma habilidade extraordinária no comando de tropas de mísseis. Devido ao treinamento rigoroso e especializado, essas tropas receberão um pequeno aumento de saúde, uma vez por batalha.
+str_trait_title_cavalry_captain|Capitão da cavalaria
+str_trait_desc_cavalry_captain|Você desenvolveu uma habilidade extraordinária no comando de tropas montadas. Devido ao treinamento rigoroso e especializado, essas tropas receberão um pequeno aumento de saúde, uma vez por batalha.
+str_trait_title_command_voice|Comando de voz
+str_trait_desc_command_voice|Sua experiência em comandar homens no campo lhe emprestou um ar de autoridade. O custo de influência para dar ordens aos exércitos no campo foi reduzido.
 str_trait_title_foe_hammer|Martelo Inimigo
-; str_trait_desc_foe_hammer|Having slain many of the great captains of the enemy you find that you have earned a reputation as a fearsome warrior. Troops under your command now receive a weekly morale bonus. Your experiences have also honed your skill in battle.
-str_trait_title_battle_scarred|Cicatrizes de Batalha
-; str_trait_desc_battle_scarred|You have suffered horrific wounds during your many campaigns yet you still live to tell the tale. Your scarred and knotted flesh now conspires with hard experience to increase your resistance to injury. While others may find your appearance somewhat shocking your followers consider it an affirmation of your battle experience. They subsequently receive a weekly morale bonus.
-; str_trait_title_fell_beast|Fell Beast
-; str_trait_desc_fell_beast|Your hide is riven with the knotted scars of countless battles and your evil will is likewise hard and unyielding. Even by the standards of orc, uruk and troll-kind you are judged a fell and dangerous beast. Those who serve you cry your name in joy when you take to the field. You are an avatar of war itself and there is little you fear.
-str_trait_title_butcher|Açougueiro. 
-; str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat. You also get more human meat after every battle.
-; str_trait_title_well_travelled|Well-Travelled
-; str_trait_desc_well_travelled|On stone paved roads and mossy animal paths, over the tallest mountains and in the deepest vales, you've discovered hidden places and seen long forgotten marvels. From your experiences, you've learnt to spot enemies before they see you, and the easiest route for your troops.
+str_trait_desc_foe_hammer|Tendo matado muitos dos grandes capitães do inimigo, você descobre que ganhou uma reputação de guerreiro temível. As tropas sob seu comando agora recebem um bônus semanal de moral. Suas experiências também aprimoraram sua habilidade na batalha.
+str_trait_title_battle_scarred|Cicatrizes da Batalha
+str_trait_desc_battle_scarred|Você sofreu ferimentos horríveis durante suas muitas campanhas, mas ainda vive para contar a história. Sua carne com cicatrizes e nós agora conspira com muita experiência para aumentar sua resistência a lesões. Enquanto outros podem achar sua aparência um tanto chocante, seus seguidores consideram isso uma afirmação de sua experiência de batalha. Eles recebem posteriormente um bônus semanal de moral "
+str_trait_title_fell_beast|Caiu Besta
+str_trait_desc_fell_beast|Sua pele está cheia de cicatrizes atadas de incontáveis batalhas e sua má vontade é igualmente dura e inflexível. Mesmo pelos padrões de orc, uruk e tipo troll, você é considerado um animal caído e perigoso. Aqueles que o servem choram seu nome de alegria quando você vai para o campo. Você é um avatar da própria guerra e há pouco que você teme. 
+str_trait_title_butcher|Açougueiro.
+str_trait_desc_butcher|A experiência aprimorou sua habilidade de extrair mais carne da carne de seus inimigos. Você ganha um quilo extra de carne toda vez que abate um de seus prisioneiros por carne. Você também recebe mais carne humana após cada batalha.
+str_trait_title_well_travelled|Bem viajado
+str_trait_desc_well_travelled|Nas estradas pavimentadas de pedra e caminhos cobertos de musgo, nas montanhas mais altas e nos vales mais profundos, você descobriu lugares escondidos e viu maravilhas há muito esquecidas. Com suas experiências, aprendeu a identificar inimigos antes que eles o vissem, e a rota mais fácil para suas tropas "
 str_wound_head|um golpe forte na cabeça
 str_wound_chest|algumas costelas quebradas
 str_wound_arm|um braço multilado
@@ -1916,10 +1916,10 @@ str_gondor6|Gondor6
 str_gondor7|Gondor7
 str_gondor8|Gondor8
 str_gondor_end|Gondor1
-; str_gondor_intro|^It is a bitter thought, that a hero of this great kingdom should die within the sight of his land, unaided and helpless.^^The news of Boromir’s death passed like a swift wind through all of Gondor, even to the plains of Pinnath Gelin and the hills of Lamedon, even to the shores of Pelargir and the coasts of Dol Amroth. The hearts of all your people are filled with grief and pity; and more besides, with fear and foreboding, for Gondor is hard pressed and sore beset, ringed by implacable foes or uncertain friends.^^The Shadow rises in the East, as of old; the fractious Corsairs of Umbar grow bolder; the wild men of the East and South press their claims upon Gondorian land.^^No longer can you stand by and wait. Trust you have placed in your captains; sword and spear they will place in your hand. Gondor wanes, but Gondor still stands; and even the end of its strength is still very strong. You have resolved yourself to play what part you may in this coming war against the servants of the Nameless. Much is spoken of in the councils of the great and wise, to which you are not privy, but there is one thing you feel you can be sure of.^^If the valiant hearts of Gondor should fail, and Minas Tirith be lost, then the last light of the West will be extinguished. All will fall beneath the Shadow.
+str_gondor_intro|^ É um pensamento amargo que um herói deste grande reino morra à vista de sua terra, sem ajuda e desamparado. ^^ As notícias da morte de Boromir passaram como um vento veloz por todo Gondor, mesmo para os planícies de Pinnath Gelin e as colinas de Lamedon, até as margens de Pelargir e as costas de Dol Amroth.O coração de todo o seu povo está cheio de tristeza e pena; e mais ainda, com medo e pressentimento, pois Gondor é pressionado e dolorido, cercado por inimigos implacáveis ou amigos incertos. ^^ A Sombra nasce no Oriente, como antigamente; os fraturados Corsários de Umbar ficam mais ousados; os homens selvagens do Oriente e do Sul pressionam suas reivindicações sobre terras gondorianas. ^^ Você não pode mais esperar e esperar. Confie que colocou em seus capitães; espada e lança eles colocarão em sua mão. Gondor diminui, mas Gondor ainda permanece; e até o fim de sua força ainda é muito forte. você mesmo para desempenhar o papel que você pode nesta guerra vindoura os servos dos Inomináveis. Muito se fala nos conselhos dos grandes e sábios, dos quais você não conhece, mas há uma coisa que você sente que pode ter certeza. ^^ Se os corações valentes de Gondor falharem e Minas Tirith se perder, então a última luz do Ocidente será extinta. Tudo cairá sob a sombra. 
 str_dwarf_intro|^O Reino sob à Montanha tem prosperado, disso não há discussão. O velho Rei Dáin acabou de passar pelo seu ducentésimo e quinquagésimo ano, e por qualquer medida ele é fabulosamente abastado. Sob seu governo, Erebor prospera, e vive grandeza. Os canais, fontes e lagoas da vizinha Valle testemunha de como os seus construtores ultrapassaram a habilidade de até mesmo seus ancestrais, porém os segredos do trabalho de metal deles tem lamentavelmente sido perdidos.^^Ainda mais que uma escuridão de Mordor tem entrado nesses salões, quando o enviado sujo de Sauron, com seu bafo como o sibilo de serpentes, veio trazendo palavras malignas. Pesado tem sido os corações de seus chefes desde então, pois o poder que reentrou Mordor não mudou. A Sombra cresce e se aproxima - o Inimigo já está se movendo, e a guerra logo se iniciará.^^Você jurou erguer suas armas, e resistir com seus amigos contra seus inimigos. Você resistirá, com ou sem esperança.^^Mas se a bravura dos Anões de Erebor provar insuficiente, então a glória do povo de Durin sumirá e será esquecida. Tudo cairá perante a Sombra.
-; str_rohan_intro|^In these days of doubt, one thing you know to be true: open war lies before the proud people of Rohan. None may live now as they have lived, and few shall keep what they call their own. Some close to the King’s ear speak craven counsels, but you have determined to go to him, take a grim oath of service, and stand with such fell-handed captains and thanes as will protect the herds and herdfolk.^^Saruman of Isengard has declared lordship over the lands of Rohan, and bitter is the fighting with Orcs, Wolf-riders and the evil Men of Dunland. The Lord of the Black Land to the east sends raiding parties to steal your horses, choosing always the black ones. Your heart misgives you, for it seems to you that enemies beset your people both east and west.^^But still you will give battle, for if aught is said of the Rohirrim, it is of your unfailing valour in arms, though foe should beleaguer you, or fire encircle you. The steeds of Rohan will stride as wind in the morning. And if death should come for you, then a mound will be raised, but for now, war calls you. Let horse be bridled, horn be sounded!^^Yet, if even the courage of the Sons and Daughters of Eorl should fail, then the last hope of Rohan will fade and die away. The horn will blow no more. All will fall beneath the Shadow.
-; str_mordor_intro|^The dark power rises again in the East. The numbers of the Dark Lord’s legions swell - Easterling men come to serve and pay tribute, hollow-eyed renegades from ancient Numenor craving a chance to regain what their ancestors lost, great hosts of orcs and uruks slavering at the thought of war and killing. The pens are filled with ferocious, fearsome wargs. And high above, in the black skies, fly the winged Nazgûl… the apple of the Great Eye, with power deep beyond the reach of your muddy dreams.^^You have resolved to rise in the ranks, by any means, and gain the favour of Lugbúrz. By wit, hardiness, and ruthless skill in battle you shall crush all who stand in your way. You will earn the favour of the Dark Lord of Mordor, he who is to rule all after this coming War… or you will die trying.^^The light of the West shall be snuffed out. The time of Mordor has come!
+str_rohan_intro|^ Nestes dias de dúvida, uma coisa que você sabe ser verdadeira: a guerra aberta está diante do orgulhoso povo de Rohan. Ninguém pode viver agora como viveu, e poucos devem manter o que chamam de seu. orelha do Rei falar conselhos Craven, mas de ter determinado a ir com ele, fazer um juramento sinistro de serviço, e ficar com esses capitães e thanes como irão proteger o rebanho e herdfolk. ^^ Saruman de Isengard declarou senhorio sobre cruéis-handed as terras de Rohan, e amarga é a luta com os orcs, os cavaleiros do lobo e os homens maus de Dunland.O Senhor da Terra Negra, a leste, envia grupos de assalto para roubar seus cavalos, escolhendo sempre os negros. , pois parece a você que os inimigos cercam seu povo, tanto no leste quanto no oeste. ^^ Mas você ainda lutará, pois se algo é dito dos Rohirrim, é do seu valor infalível nas armas, embora o inimigo deva menosprezá-lo, ou fogo cercar você. os cavalos de Rohan vai a passos largos como o vento na parte da manhã. E se a morte vier para você, um monte será levantado, mas, por enquanto, a guerra o chama. Que o cavalo seja travado, que a buzina soe! ^^ No entanto, se mesmo a coragem dos Filhos e Filhas de Eorl falhar, a última esperança de Rohan desaparecerá e desaparecerá. A buzina não tocará mais. Tudo cairá sob a sombra. 
+str_mordor_intro|^ O poder das trevas sobe novamente no Oriente. O número de legiões do Lorde das Trevas aumenta - homens pascais vêm para servir e prestar homenagem, renegados de olhos vazios do antigo Numenor desejando uma chance de recuperar o que seus ancestrais perderam, grandes anfitriões de orcs e uruques escravizando-se com o pensamento de guerra e matança.As canetas estão cheias de ferozes e terríveis avisos.E bem acima, nos céus negros, voam o Nazgûl alado ... a maçã do Grande Olho, com poder além do alcance de seus sonhos enlameados. ^^ Você resolveu subir nas fileiras, de qualquer maneira, e ganhar o favor de Lugbúrz. Pela inteligência, resistência e habilidade implacável na batalha, você esmagará todos os que estiverem no seu caminho. a favor do Lorde das Trevas de Mordor, aquele que deve governar tudo após esta guerra vindoura ... ou você morrerá tentando. ^^ A luz do Ocidente será apagada. Chegou a hora de Mordor! 
 ; str_isengard_intro|^A new power is rising, and you are part of that power. You march and fight under the banner of the White Hand, and your allegiance is sworn to crafty old Saruman the Great, wise and cunning, who gives you the tasty flesh of man and horse to eat.^^Under his banner march the fighting Uruk-hai. They are slayers of great warriors, winners of battles. Their armour is thick and their shields broad. You will make a name for yourself among your fellows, and hew down many Whiteskins. You will not stop, by sun or moon, by fair weather or storm, until your enemies lie dead and broken.^^The skill of Saruman is great. With it, you will throw down the power of the horse people, and their weak allies; yes, even elf-flesh will be yours to feast upon. Their villages and forests will burn, and their cities too. And then… who is to say if the maggots and apes of Lugbúrz will not defer to the mighty ones of Orthanc, eh? The strong command. The weak will serve.^^The Age of Man is ending. The time of Isengard has come!
 ; str_lorien_intro|^It is the custom of your people, the Galadhrim of Laurelindórenan, to dwell in the treetops. The great trees of mighty girth bear leaves of gold and blossoms of yellow, and by the waters of the Nimrodel one may find restful sleep and forgetfulness of grief; but in these darkening days none may long forget the Shadow that hovers near, pressing in from the east, from the dark land of Mordor and nearer still.^^For many a long year, your kin of Lothlórien have had few dealings with other folk. Indeed in nothing is the power of the Dark Lord more clearly shown than in the estrangement that divides those who still oppose him. Yet you are one of those who can perceive that to keep living thus, an island amid many perils, will bring only despair. Some there are among you who sing that the Shadow will draw back, and peace shall come again; and though the world can never be as it was of old, yet will you take up sword and bow, and play your part in the War to come, to defend not only the Dreamflower that you love, but perhaps lands beyond, that will otherwise fall to evil.^^For if the old friendships are not renewed, and thought is taken only to fight the long defeat, then shall the last light of Lórien go out forevermore. All will fall beneath the Shadow.
 ; str_imladris_intro|^Alas, for these latter days of grieving memory! In Imladris, the homely house of Elrond Halfelven, one may recall somewhat of the glory and splendour of Eregion in the Elder Days. But the world will never again be as it was of old.^^The fields of Eriador, though lovely to behold, are tilled no more by the hands of Men. The Dúnedain, much diminished in number after the breaking of Arnor, keep their lonely vigils in the desolate wilderness of the North. And the days of Gil-Galad are forever gone, for the Firstborn decrease, and go into the west, while the blood of ancient Númenor dwindles and the race of Westernesse decays.^^Though Rivendell remains a place of sanctuary, the days darken in all the lands around.^^A last rallying call has gone forth, and a great host from Imladris - perhaps the last such in all the Ages of the world - shall march. You are part of this host, and though you will do your duty as instructed by the wise and the great, your heart is not without misgivings. Neither in Imladris, nor in the Grey Havens, nor even in Lórien the Golden Wood, is there strength to withstand the full might of the Enemy, should it come assailing when all else is overthrown.^^Yet a slim hope remains: if the old friendships can be renewed, and all who stand against evil join strength against the common foe, some time may yet be won, so that the final end of the menace of Mordor may yet be sought.^^But if the old alliances should fail, and old friends come to ruin, then nothing shall be left but the days of lengthening darkness, before true Night comes. All will fall beneath the Shadow.
@@ -2250,37 +2250,37 @@ str_npc27_rehire_speech|Posso servi-lo novamente?
 ; str_npc19_home_intro|Ah, Edoras. My rightful seat. Look up there, Commander, at the Golden Hall. Only a few generations ago, it was at the very doors of Meduseld that the last son of Helm Hammerhand was slain, and thereafter Wulf was King, for a time. Not the Wulf who is a Chief of Dunland now, of course - that one is a mere mongrel bearing the name of a greater creature.
 ; str_npc20_home_intro|Ah, the Lonely Mountain. The last bastion of Durin's Folk, is it not, in these latter days? It is pleasant to see it with my own eyes at last. Pleasant, yes... but not as pleasant as the memory of that Dwarf's dying moments, which I made longer with my arts. Hardy are the Dwarfs, indeed! Yet Aulë the Maker did them no favours in making them so capable of suffering.
 str_npc21_home_intro|Vamos parar aqui por um minuto, comandante. A nossa frente, entre o Anduin e o Limilight, descansa p campo de Celebrant, onde Eorl o Jovem cavalgou para salvar nossos aliados de Gondor.
-; str_npc22_home_intro|Daro! That's Angrenost and the black tower of Orthanc ahead. Much has changed since I last saw them, and none for the better.
-; str_npc23_home_intro|Excuse me, {playername}. The paths in this part become more twisted and some lead to dead-ends. We must be approaching Dol Guldur.
-; str_npc24_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
-; str_npc25_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
+str_npc22_home_intro|Daro! É Angrenost e a torre negra de Orthanc à frente. Muita coisa mudou desde a última vez que os vi, e nenhuma para melhor.
+str_npc23_home_intro|Com licença, {playername}. Os caminhos nesta parte ficam mais distorcidos e alguns levam a becos sem saída. Devemos estar nos aproximando de Dol Guldur.
+str_npc24_home_intro|Oi, capitão! Esse deve ser o antigo caminho para os Portões Orientais de Khazad-dûm, ou Moria, como você preferir. Você pode ver à distância o lago cintilante de Kheled-zâram e, através das nuvens, o três picos conhecidos por enfeitar esta parte das montanhas enevoadas "
+str_npc25_home_intro|Oh, uma visão curiosa! Ouvi histórias sobre esse lugar em que se diz que robustos madeireiros vivem em harmonia com animais e plantas. É o que eles chamam de ornamentos.
 str_npc26_home_intro|Maldição! Isso deve ser os Hornburg por aqui, mestre.
 str_npc27_home_intro|Ei, olhe!
 ; str_npc18_home_description|Our wise ones told us all about that war. If it hadn't been for the weakness of the Southerners, losing a battle they should have won, the Gondorians would never have won the Battle of the Camp. The chariots of the Wainriders were smashed, and many fierce heroes died in the swamps of the Dead Marshes.
 ; str_npc19_home_description|I would see our peoples united, as they have been in the past. No more will women of dun hair nurse sickly babies at their bosoms, while their fair-haired cousins feast on meat and swoon from wine in warm halls. No more will the black-haired hill man look with resentment upon the herds of horses owned by a crofter with hair of gold. As king, I will see justice done - but first, let the tyrants of Rohan pay their weregild.
 ; str_npc20_home_description|I remember him well - Thráin, son of Thrór. Foolhardy, vainglorious would-be scion of a broken line, claimant of a worthless throne! Great torment he endured at my hands. But no one withstands the will of Zigûrphel for long, Commander. No one. I took his Ring from him, in the dungeons of Dol Guldur, and sent it on to the Dark Tower for a great reward. High I rose then, in the Dark Lord's favour!
-; str_npc21_home_description|'Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...'
-; str_npc22_home_description|Once built by the Southern Kingdom, now home to one that we called the White Wizard, scheming, no doubt, how to increase his power further at the expense of others.
-; str_npc23_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazgul here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
-; str_npc24_home_description|Judging by the desolation, and the many orc-tracks, I fear for the fate of the courageous Balin and his expedition. It seems that Moria has fallen to the Shadow and we should tread carefully.
+str_npc21_home_description|Onde estão agora o cavalo e o cavaleiro? onde está o chifre que soprava? ^ Onde está o leme, o hauberk e os cabelos brilhantes fluindo? ... ^ Eles passaram como chuva na montanha, como um vento no prado; ^ Os dias se passaram no oeste, atrás das colinas, na sombra ... '
+str_npc22_home_description|Uma vez construído pelo Reino do Sul, agora lar de um que chamamos de Mago Branco, planejando, sem dúvida, como aumentar seu poder às custas de outros.
+str_npc23_home_description|Eu nunca me aventurei tão longe, mas ouvi nossos batedores de Greenwood dizer que pode haver Nazgul aqui. Sinto uma presença maligna, mas não posso dar um nome a ela. É poderoso, no entanto, então esteja preparado. 
+str_npc24_home_description|A julgar pela desolação e pelas muitas trilhas orcs, temo o destino do corajoso Balin e sua expedição. Parece que Moria caiu na Sombra e devemos pisar com cuidado.
 str_npc25_home_description|Não tão frequentemente, um mercador viajante vem para o mercado de Valle e ofrece o melhor mel que eu já esperimentei. Por alguma razão curiosa, ele diz que 'foi feito por ursos' e ri.
-; str_npc26_home_description|Its damned walls are too high and too hard for my hammer to break. I reckon if we ever chase away the manlings from their Edoras pig-sties, they'll run off here and cower behind the walls.
+str_npc26_home_description|Seus malditos muros são altos demais e difíceis demais para o meu martelo quebrar. Acho que se algum dia afastarmos os machos de seus chiqueiros Edoras, eles fugirão aqui e se esconderão atrás dos muros.
 str_npc27_home_description|Você conhece essa cidade?
 ; str_npc18_home_description_2|It pleases me to be marching with you, Great One. The leaders of my people will want to have this land again, which was once theirs. They may take as much as they like from Gondor and the West. For my part, if I can spill the blood of more enemies on this soil, I will count myself happy.
 ; str_npc19_home_description_2|You will speak for me, won't you, Commander, when the long war is over? To whichever Power holds sway over the other - Eye or Hand? You will lend your voice to my claim, that I may hold Edoras and all Rohan in fief to an overlord, as my home and holding?
 ; str_npc20_home_description_2|We shall crush the works of the Valar, of which these Dwarfs are a chief part, here in Middle-earth. Yes, it would be sweet to unmake what the Maker wrought. We will grind the Dwarves beneath our heels, shatter the last kingdoms of low Men, and laugh as the Elves fade into the mists like ghosts. Then the day will come when I stand before the Caves of the Forgotten, in Valinor, and call forth my king again!
-; str_npc21_home_description_2|We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again.
-; str_npc22_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
+str_npc21_home_description_2|Faríamos bem em lembrar os grandes feitos do passado e os sacrifícios que foram feitos. A Aliança entre Rohan e Gondor salvará nossos povos da destruição mais uma vez.
+str_npc22_home_description_2|Que seja um lembrete de que mesmo os maiores, mesmo um dos Istari, podem ser corrompidos e cair. Aqueles que desejam poder podem ser derrotados pelo poder, por isso não nos demoremos muito mais.
 str_npc23_home_description_2|Sinto os exércitos malignos atrás destes muros prepare para marchar... Pela bela Lothlórien? Por Valle? Pelo meu lar da Floresta Verde? Não sei ao certo, mas por favor faça o possível para impedí-los.
-; str_npc24_home_description_2|If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
-; str_npc25_home_description_2|I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment.
-; str_npc26_home_description_2|There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is.
-; str_npc27_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+str_npc24_home_description_2|Se o destino da guerra nos fornecer um grande exército, devemos arriscar a entrada nas Minas e recuperar suas poderosas riquezas.
+str_npc25_home_description_2|Sinto o perfume de muitas flores doces e vejo as abelhas colhendo seu néctar. Se você não se importa, reunirei algumas ervas para nosso próprio uso, isso levará apenas um momento.
+str_npc26_home_description_2|Não adianta andar por aqui se não formos apoiados por uma grande horda de Uruk-hai. A menos que você queira fazer caretas nas vigias da parede, é isso.
+str_npc27_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
 ; str_npc18_home_recap|I was a prisoner in stocks, condemned to die for slaying a son of Lurmsakun in the training pit. Three of them set upon me, and I beat them, but one died of his wounds. Then you spoke for me, and freed me. Now I kill for you, and I would die for you if need be.
 ; str_npc19_home_recap|I am of the royal blood of Rohan, I swear - King Fengel was my grandfather, though he never took my grandmother to wife. The Chiefs of Dunland are jealous of me, and kept me away from the fighting so I would do no great deeds, and win no glory nor men to my banner. Then you took my under your banner. Now I await the day I can sit in Edoras on my rightful throne.
 ; str_npc20_home_recap|What more is there to tell, Commander? I practised my arts in the dungeons of Dol Guldur. My dreaming eye sees deep and far, and I saw you and your works in this War. It would seem I must give you what aid I can, so that the powers of the West may fail and the Power in the East may rise once more and rule until the world's ending.
-; str_npc21_home_recap|I don't find it amusing that you should forget so easily.
-; str_npc22_home_recap|I'll indulge your curiosity, but let us not tarry.
+str_npc21_home_recap|Não acho divertido que você esqueça tão facilmente.
+str_npc22_home_recap|Eu vou satisfazer sua curiosidade, mas não vamos demorar.
 str_npc23_home_recap|Sou nascido e criado em Na Floresta das Trevas, um Elfo Silvestre. Nossas habilidades com a madeira são conhecidas por todos.
 str_npc24_home_recap|Sou o filho de Dwalin do povo de Durin.
 str_npc25_home_recap|Sou um curandeira e herbalista do Vale.

@@ -44,12 +44,12 @@ dlga_treebeard_introduce_1:treebeard_introduce_2|(你 張 了 張 嘴，想 要 
 dlga_treebeard_introduce_2:treebeard_introduce_3|請 原 諒 我 的 侵 擾… 我 只 是 一 個 尋 求 避 護 的 疲 憊 旅 行 者 而 已。我 的 名 字 是 {playername}。不 知 我 是 否 有 幸 進 一 步 了 解 您？
 dlga_treebeard_introduce_3:treebeard_introduce_4|(僵 硬 的 大 樹 慢 慢 地 張 開 了 他 隱 藏 在 樹 枝、樹 葉 和 苔 蘚 後 面 的 嘴，從 中 傳 來 了 深 沉，緩 慢 但 蓬 勃 且 威 風 凜 凜 的 聲 音：)^'呼 嚕 姆，呼 姆… 我 還 不 打 算 告 訴 你 我 的 名 字… 至 少 現 在 還 會 說。原 因 是，那 很 費 時。我 的 名 字 一 直 隨 著 時 間 而 加 長，而 我 已 經 活 了 很 久、很 久 了，因 此，我 的 名 字 像 個 故 事 一 樣。在 我 的 語 言 裡，事 物 的 真 名 會 告 訴 你 它 經 歷 過 的 故 事，你 們 管 那 叫 古 老 的 樹 人 語。它 是 種 迷 人 的 語 言，不 過 要 用 它 來 說 任 何 事 都 得 花 很 長 的 時 間，因 為 什 麼 事 要 是 不 值 得 花 很 長 的 時 間 去 說，去 聽，我 們 就 不 會 用 這 語 言 來 說。 ’
 dlga_treebeard_introduce_4:treebeard_introduce_5|噢，您 們 是 傳 說 中 的 樹 人！能 遇 見 您 是 我 的 榮 幸。如 果 你 們 不 想 被 打 擾，我 會 安 靜 的 離 開 的。
-dlga_treebeard_introduce_5:treebeard_questtalk|(巨 大 樹 人 和 他 的 同 伴 已 經 很 久 沒 有 出 聲 了，微 風 穿 過 他 們 的 如 葉 般 茂 盛 的 頭 髮 和 鬍 鬚，他 們 看 向 彼 此 然 後 又 開 始 了 長 久 的 沉 默。一 個 好 像 花 揪 樹 的 樹 人 似 乎 想 要 說 些 什 麼，但 他 還 是 保 持 沉 默 直 到 巨 大 樹 人 繼 續：)
+dlga_treebeard_introduce_5:treebeard_questtalk|（巨 大 樹 人 和 他 的 同 伴 已 經 很 久 沒 有 出 聲 了，微 風 穿 過 他 們 的 如 葉 般 茂 盛 的 頭 髮 和 鬍 鬚，他 們 看 向 彼 此 然 後 又 開 始 了 長 久 的 沉 默。一 個 好 像 花 揪 樹 的 樹 人 似 乎 想 要 說 些 什 麼，但 他 還 是 保 持 沉 默 直 到 巨 大 樹 人 繼 續：）
 dlga_treebeard_questtalk:treebeard_quest_brief|{reg2? 正 如 我 之 前 說 的…: 呼 嚕 姆，呼 姆… 我 們 感 謝 你 的 彬 彬 有 禮。 {reg1? 這 對 於 你 的 種 族 來 說 可 真 是 不 常 見:很 高 興 能 再 一 次 和 精 靈 交 談}。 } 自 從 樹 妻 消 失 之 後，日 子 就 很 不 好 過。現 在 又 有 無 數 的 邪 惡 生 靈 被 黑 暗 魔 君 釋 放 了 出 來，企 圖 毀 滅 我 們 的 家 園。我 們 尋 求 某 位 反 應 快 速 但 不 魯 莽 之 人，能 夠 在 我 們 討 論 下 一 步 行 動 的 時 候 給 予 幫 助。 ^很 多 半 獸 人 都 在 砍 伐 森 林。如 果 你 能 阻 止 他 們，我 們 會 很 感 激，並 把 你 當 做 我 們 真 正 的 朋 友。請 先 完 成 這 件 事 吧，之 後 我 們 再 聊。
 dlga_treebeard_quest_brief:close_window|半 獸 人 的 確 是 一 種 邪 惡 的 生 物。我 會 確 保 他 們 不 再 傷 害 森 林。
 dlga_treebeard_quest_brief:treebeard_pretalk|抱 歉，我 現 在 沒 時 間 做 這 件 事。
 dlga_treebeard_questtalk:close_window|(樹 人 首 領 緩 緩 地 張 開 了 口，其 他 樹 人 也 將 目 光 轉 向 你。他 們 開 始 慢 慢 的 發 出 了 令 大 地 微 微 顫 抖 的 深 沉 聲 音。這 時 你 忽 然 意 識 到，他 們 正 在 以 樹 人 的 方 式 大 笑。一 個 相 對 年 輕 的 好 像 花 楸 樹 的 樹 人 踏 著 他 那 七 趾 大腳，帶 來 的 震 動 幾 乎 令 你 跌 倒) ^'放 鬆 點，急 楸。別 傷 到 這 位 我 們 年 輕 的 戰 士 朋 友。呼 姆… 我 是 樹 鬍，樹 人 中 最 年 長 者，我 們 感 謝 你 的 幫 助。呼 姆… 讓 我 把 樹 人 水 作 為 禮 物 送 給 你，來 慶 祝 你 的 成 功。 ’
-dlga_treebeard_questtalk:close_window.1|(巨 大 樹 人 和 他 的 同 伴 已 經 很 久 沒 有 出 聲 了，微 風 穿 過 他 們 的 如 葉 般 茂 盛 的 頭 髮 和 鬍 鬚。)
+dlga_treebeard_questtalk:close_window.1|（巨 大 樹 人 和 他 的 同 伴 已 經 很 久 沒 有 出 聲 了，微 風 穿 過 他 們 的 如 葉 般 茂 盛 的 頭 髮 和 鬍 鬚。）
 dlga_treebeard_pretalk:treebeard_talk_response|呼 嚕 姆… 你 想 知 道 些 什 麼，年 輕 的 朋 友？
 dlga_treebeard_talk_response:treebeard_about_himself|告 訴 我 更 多 關 於 你 的 事
 dlga_treebeard_talk_response:treebeard_about_entwives|告 訴 我 更 多 關 於 樹 妻 的 事
@@ -960,7 +960,7 @@ dlga_fangorn_orcs_intro_2:close_window|嚇-嚇 ! 等 我 們 解 決 你 後 ，
 dlga_start:disbanded_troop_ask|你 希 望 我 們 跟 著 你 嗎 ?
 dlga_disbanded_troop_ask:disbanded_troop_join|好 啊 ， 讓 我 們 一 起 上 路 吧 。
 dlga_disbanded_troop_ask:close_window|不 了 ， 這 次 不 行 。
-dlga_disbanded_troop_join:close_window|很 不 幸 的 ， 你 的 隊 伍 沒 有 空 間 了 。
+dlga_disbanded_troop_join:close_window|很 遺 憾，你 的 隊 伍 沒 有 空 間 了。
 dlga_disbanded_troop_join:close_window.1|我 們 聽 從 你 的 指 揮 。
 dlga_start:enemy_talk_1|你 別 想 再 次 抓 到 我 ， 這 次 休 想 。
 dlga_enemy_talk_1:enemy_talk_2|面 對 我 ， 你 一 點 機 會 也 沒 有 。 放 棄 吧 。

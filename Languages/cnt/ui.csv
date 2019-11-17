@@ -55,9 +55,9 @@ ui_crouch|蹲下
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|您確定要導入角色？
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
-; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path finding, Spotting, Inventory Management, Wound treatment, Surgery, First-aid, Engineer, Persuasion.
-; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Leadership, Trade.
+ui_explanation_strength|力 量：每 一 點 使 你 的 生 命 上 限 +1。以 下 技 能 不 可 超 過 力 量 的 三 分 之 一：鐵 骨，強 擊，強 擲，強 弓。
+ui_explanation_intelligence|智 力：每 一 點 給 予 你 額 外 一 點 技 能 點。以 下 技 能 不 可 超 過 智 力 的 三 分 之 一：教 練，跟 蹤，戰 術，嚮 導，偵 察，物 品 管 理，療 傷，手 術，急 救，工 程 學，說 服 力。
+ui_explanation_charisma|魅 力：每 一 點 使 你 的 隊 伍 上 限 +1。以 下 技 能 不 可 超 過 魅 力 的 三 分 之 一：俘 虜 管 理，統 御，交 易。
 ui_delivered_number_damage|造成%d點傷害
 ui_mission_losses_killed|被殺
 ui_party_losses|%s :%d負傷 --- %d殺死了%d
@@ -67,7 +67,7 @@ ui_dumping_value_items|%d物品會永久丟失，確定嗎？
 ui_dumping_value_item|一樣物品會永久丟失，確定嗎？
 ui_notification_requirements_not_met|您不俱備此武器所需的技能或屬性
 ui_disband|遣散
-ui_you_hit_a_friendly_troop|你擊中友方部隊！
+ui_you_hit_a_friendly_troop|你 擊 中 友 方 部 隊！
 ui_you_are_not_carrying_any_arrows|你沒有任何弓箭
 ui_delivered_number_damage_to_horse|給 對 方 的 坐 騎 造 成 %d點 傷 害 。 
 ui_received_number_damage|受 到 %d點 傷 害 。 
@@ -81,7 +81,7 @@ ui_you_got_value|獲 得  %s。
 ui_quest_succeeded_value|任務達成:%s
 ui_number_of_companions_exceeds_leadership_limit|部隊人數超過你的統御技能
 ui_number_of_prisoners_exceeds_prisoner_management_limit|俘虜人數超過你的俘虜管理技能
-ui_shared_number_experience_within_party|在戰鬥中分享到%d經驗值
+ui_shared_number_experience_within_party|與 隊 伍 分 享 %d 經 驗 值。
 ui_your_relations_with_value_has_improved_from_number_to_number|你與%s關係由%d提升到%d
 ui_your_relations_with_value_has_deteriorated_from_number_to_number|你與%s關係由%d下降到%d
 ui_you_lost_value|你損失了%s
@@ -95,7 +95,7 @@ ui_order_button_fire_orders|射擊命令
 ui_need_to_learn_prisoner_management|你需要學習俘虜管理技能來增加俘虜
 ui_game_log_window|遊戲日誌
 ui_unbalanced|失衡
-; ui_can_crush_through_blocks|Can crush through blocks
+ui_can_crush_through_blocks|可 衝 破 路 障
 
 ui_order_1|選取指令1
 ui_order_2|選取指令2
@@ -147,4 +147,4 @@ ui_str_hear_me|%s，聽我講！
 
 ui_return|返回
 ui_factions| 陣 營 
-ui_troop_upgrades|兵種升級
+ui_troop_upgrades|兵 種 升 級

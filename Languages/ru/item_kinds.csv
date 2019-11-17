@@ -705,12 +705,12 @@ itm_dale_shield_a|Дейльский ростовой щит
 itm_dale_shield_b|Дейльский ростовой щит
 itm_dale_shield_c|Дейлский круглый щит
 itm_dale_shield_d|Дейльский щит
-; itm_umb_armor_a|Corsair Leather Vest
+itm_umb_armor_a|Кожаный жилет Корсаров
 itm_umb_armor_b|Корсарская кожаная броня
-; itm_umb_armor_c|Corsair Light Scale
-; itm_umb_armor_d|Corsair Scale
+itm_umb_armor_c|Подбитая броня Корсаров
+itm_umb_armor_d|Тяжелая подбитая броня Корсаров
 itm_umb_armor_e|Корсарский хауберк
-; itm_umb_armor_f|Corsair Noble Armour
+itm_umb_armor_f|Броня Главаря Корсаров
 itm_umb_helm_a|Корсарский шлем-раковина
 
 itm_umb_helm_b|Корсарский шлем-раковина
@@ -923,7 +923,7 @@ itm_beorn_shield_reward|беорнингский щит
 itm_beorn_axe_reward|Медвежья дубина
 itm_moria_arrow_reward|Морийские отравленные стрелы
 itm_khamul_helm|Шлем Хамула
-; itm_guldur_arrows_reward|Guldur Arrows
+itm_guldur_arrows_reward|Стрелы Дол Гулдура
 itm_sarustaff|Посох мага
 itm_rohan_armor_th|Роханская королевская броня
 itm_prisoner_coll_chain|Кандалы

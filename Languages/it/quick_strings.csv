@@ -54,7 +54,7 @@ qstr_Days_Passed:_{reg0}|Giorni Trascorsi: {reg0}
 qstr_Difficulty:_{reg0}%|Difficoltà: : {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|TOTALE PUNTEGGIO: {reg0}
-qstr_A_peaceful_village_n|Un pacifico villaggio non lontano da Ovestfolda..
+qstr_A_peaceful_village_n|Un pacifico villaggio non lontano da Ovestfalda..
 qstr_The_War_is_upon_Roha|La guerra è su Rohan !
 qstr_Minas_Tirith___The_W|Minas Tirith - La Città Bianca
 qstr_The_White_Tree_stand|Il Bianco Albero giace morto da quando la linea dei Re si è interrotta
@@ -480,7 +480,7 @@ qstr_Gained_permanent_+10|Guadagno permanente: +10 all'abilità con le armi.
 qstr_Gained_permanent_+1_to_T|Guadagno permanente: +1 alla Tattica.
 qstr_You_have|Tu hai
 qstr_{s1}_has|{s1} ha
-qstr_{s11}_suffered_a_ser|{s11} ha subito una ferita grave.
+qstr_{s11}_suffered_a_ser|{s11} subito una ferita grave.
 qstr_The_leg_has_been_bad|Una gamba è stata malamente ferita in battaglia.
 qstr___2_athletics__1_rid|(-2 atleticità, -1 cavalcare, -2 agilità, -15 abilità corpo a corpo)
 qstr_The_arm_has_been_bad|Un braccio è stato gravemente ferito in battaglia .
@@ -531,9 +531,9 @@ qstr_Inappropriate_mount|Cavalcatura inappropriata.
 qstr_{s24}:_Your_infantry|{s24}: I tuoi fanti si sentono meglio !
 qstr_{s24}:_Your_archers_|{s24}: I tuoi arcieri si sentono meglio !
 qstr_{s24}:_Your_cavalry_|{s24}: I tuoi cavalieri si sentono meglio !
-qstr_Ah_what_a_coincidenc|Ah, che strana coincidenza, imbattermi proprio in te {playername} ! Tu potresti anche non conoscermi, ma io conosco te. Sono sulla strada per {s4}, ma sono appena partito da {s3} ed è la che ho sentito parlare di te. {s3} conta su di te in questi tempi pericolosi e se hai pensato di intraprendere azioni lontane dal tuo dovere, dovresti riconsiderarle e concentrarti sull'aiutare {s3} con tutte le tue forze.
+qstr_Ah_what_a_coincidenc|Ah, che strana coincidenza, imbattermi proprio in te {playername} ! Tu potresti anche non conoscermi, ma io ti conosco. Sono sulla strada per {s4}, ma sono appena partito da {s3} ed è là che ho sentito parlare di te. {s3} conta su di te in questi tempi pericolosi e se hai pensato di intraprendere azioni lontane dal tuo dovere, dovresti riconsiderarle e concentrarti sull'aiutare {s3} con tutte le tue forze.
 qstr_Who_are_you?|Chi sei ?
-qstr_A_friend_of_{s3}_and|Un amico di {s3} e del popolo di {s2}. Ora fa presto ! Mordor ha oscuri disegni e il Potere Oscuro impiega tutta la sua volontà per radunare tutto ciò che è malvagio. Il tempo sta per scadere per tutto ciò che di buono rimane in questo mondo, se non facciamo valere ogni nostra azione per opporci !
+qstr_A_friend_of_{s3}_and|Un amico di {s3} e del popolo di {s2}. Ora fa presto ! Mordor ha oscuri disegni e il Potere Oscuro sta impiegando tutta la sua volontà per radunare tutto ciò che è malvagio. Il tempo sta per scadere per ciò che di buono rimane in questo mondo, se non facciamo valere ogni nostra azione per opporci !
 qstr_What_should_I_do?|Cosa dovrei fare ?
 qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parlagli. Buona Fortuna !
 qstr_Good_to_see_the_Shad|È un sollievo vedere che l'Ombra non è ancora riuscita a piegarti, {playername}.
@@ -778,7 +778,7 @@ qstr_The_ladders_on_Deepi|Le scale sulle Mura fossato ! Attenti !
 qstr_THREE.._TWO..._ONE..|TRE... DUE... UNO... COMBATTERE !
 qstr_You_have_come_upon_t|Giungi sulle rovine di Amon Hen, il Colle dell'Occhio, una torre di guardia Gondoriana sulla cui vetta si trova il Seggio della Vista^^Percepisci che questo luogo era grandioso un tempo, ma è da lungi dimenticato. 
 qstr_You_have_come_upon_th|Hai raggiunto le Paludi Morte, il luogo della battaglia di Dagorlad durante la Guerra dell'Ultima Alleanza^^Le paludi hanno inghiottito quella che un tempo era una pianura erbosa, e ora l'unico verde che vedi è rappresentato dalla schiuma livida su grasse superfici scure fra cupe acque^^La vegetazione morta e le canne putrescenti si ergono nelle nebbie come ombre lacere di lunghe estati dimenticate, mentre i corpi di uomini, elfi e orchi galleggiano fra le fosche profondità^^L'aria è fredda e umida, e non puoi fare a meno di rabbbrividire quando vedi fiammelle come di candela bruciare negli occhi del cadavere di un elfo, appena sotto la superficie dell'acqua.
-qstr_You_have_entered_the|Ti addentri nelle foreste meridionali di Bosco Atro, una volta conosciuto come Boscoverde il Grande^^La fortezza di Dol Guldur è vicina e proietta un'ombra oscura sulla foresta. I boschi qui sono ammalati e decadenti. Le quercie secolari sono invase da marciume e funghi e grandi tele aggrovigliate si allungano da tronco a tronco^^ L'aria è eternamente immobile, oscura e opprimente, è come se tu stessi lentamente soffocando
+qstr_You_have_entered_the|Ti addentri nelle foreste meridionali di Bosco Atro, una volta conosciuto come Boscoverde il Grande^^La fortezza di Dol Guldur è vicina e proietta un'ombra oscura sulla foresta. I boschi qui sono ammalati e decadenti. Le querce secolari sono invase da marciume e funghi, mentre grandi tele aggrovigliate si allungano da tronco a tronco^^ L'aria sembra essere eternamente immobile, oscura e opprimente. Ti sembra di stare lentamente soffocando
 qstr_You_have_found_the_D|Hai trovato il magazzino dei Nani dove si potrebbe trovare la Lancia Leggendaria. Fai rapporto sulle tue scoperte a {s3}
 qstr_Leave_the_Warehouse?|Lasciare il Magazzino ?
 qstr_Leave_the_place_in_s|Allontanarsi dall'area in silenzio ?
@@ -848,8 +848,8 @@ qstr_No_one|Nessuno.
 qstr_{s9}{s10}^Current_st|{s9}{s10}^Stato attuale: {s11}^Comandante: {s12}^Dall'ultima offensiva: {reg1} ore^Massimi compagni per l'offensiva: {reg2}^^
 qstr_Selected_faction_is:|La fazione selezionata è: {s10}^^{s9}
 qstr_You_are_in_perfect_h|Sei in perfetta salute.
-qstr_You_are_suffering_fr|Stai soffrendo da {s1}.
-qstr_You_are_suffering_fro|Stai soffrendo da {s1} e {s2}.
+qstr_You_are_suffering_fr|Stai soffrendo per {s1}.
+qstr_You_are_suffering_fro|Stai soffrendo per {s1} e {s2}.
 qstr_You_are_suffering_from|Sei affetto da {s1}, {s2} e {s3}.
 qstr_You_are_suffering_from_|Sei affetto da {s1}, {s2}, {s3} e {s4}.
 qstr_Weekly_upkeep_for_tr|Salario settimanale per le truppe:^{reg5} Punti Risorsa^
@@ -980,7 +980,7 @@ qstr_Luckily_some_passing|Fortunatamente alcuni passanti locali ti trovano mentr
 qstr_{s13}^^You_have_succ|Con successo sei entrato di nascosto in {s13}^^
 qstr_the_place|il luogo
 qstr_the_castle|il castello
-qstr_Stay_indoors_for_som|Alloggia qui per un po' ({reg1} Punti Risorsa per notte)
+qstr_Stay_indoors_for_som|Alloggia qui per un po'. Punti Risorsa per notte : ({reg1} )
 qstr_Camp_outside_for_som|Accampati all'aperto per qualche di tempo (nessun costo)
 qstr_{s4}_s_scouts_have_s|Gli esploratori di {s4} hanno visto e riferito del tuo fallimento. Hai portato il biasimo su {s4} e la responsabilità di questo fallimento è soltanto tua.
 qstr_{s1}_s_Ship|Nave di {s1}
@@ -1084,7 +1084,7 @@ qstr_The_water_you_drank_|L'acqua che hai bevuto dagli Ents hanno uno strano eff
 qstr_Ent_water_effect:_in|Effetto dell'acqua degli Ent: aumenta la statura !
 qstr__+1_to_Strength__per|+1 di Forza (permanente)
 qstr__+1_to_Charisma__per|+1 di Carisma (permanente)
-qstr_The_dark_shadow_fina|L'ombra oscura prorompe infine in una tempesta, e le orde del male iniziano la loro marcia verso le libere popolazioni della Terra di Mezzo. Mordor affronterà Gondor a Sud, Isengard sarà contro Rohan ad Ovest, Dol Guldur contro gli elfi... Anche nel lontano Nord si combatte una guerra.
+qstr_The_dark_shadow_fina|L'ombra oscura ha scatenato infine una tempesta, e le orde del male hanno iniziato la loro marcia verso i popoli liberi della Terra di Mezzo. Mordor affronterà Gondor a Sud, Isengard si scaglierà contro Rohan ad Ovest, Dol Guldur attaccherà gli elfi... Anche nel lontano Nord si combatterà una dura guerra.
 qstr_The_War_has_started!|La guerra è scoppiata !
 qstr_The_forest_seems_pea|La foresta appare tranquilla.
 qstr_There_is_a_sense_of_|Si percepisce un senso di pericolo nell'aria.
@@ -1169,10 +1169,10 @@ qstr_Treebeard_wants_you_|Barbalbero vuole che trovi e sconfiggi gli orchi che s
 qstr_Something_wrong_not_e|Qualcosa non va, non ci sono soldati a sufficienza per un gruppo di esploratori.
 qstr_my_home_town|La mia città natale.
 qstr_I_am_in_perfect_heal|Sono in perfetta forma.
-qstr_I_am_suffering_from_|Sto soffrendo da {s1}.
-qstr_I_am_suffering_from_{|Sto soffrendo da {s1} e {s2}.
-qstr_I_am_suffering_from_{s|Sto soffrendo da {s1}, {s2} e {s3}.
-qstr_I_am_suffering_from_{s1|Sto soffrendo da {s1}, {s2} e {s3} e {s4}.
+qstr_I_am_suffering_from_|Sto soffrendo per {s1}.
+qstr_I_am_suffering_from_{|Sto soffrendo per {s1} e {s2}.
+qstr_I_am_suffering_from_{s|Sto soffrendo per {s1}, {s2} e {s3}.
+qstr_I_am_suffering_from_{s1|Sto soffrendo per {s1}, {s2} e {s3} e {s4}.
 qstr_I_don_t_have_any_ser|Non ho nessuna ferita grave, ti ringrazio.
 qstr_Good_day_to_you.|Buona giornata a te.
 qstr_Ah_it_s_you_again._G|Ah, sei tu di nuovo. Arrivederci.
@@ -1263,12 +1263,12 @@ qstr_Your_wish_is_my_comm|Ogni tuo desiderio è un ordine per me.
 qstr_Sauron_in_Mordor_the|Sauron a Mordor, i Corsari di Umbar, I Variaghi di Khand, e gli uomini delle tribù di Harad
 qstr_Saruman_in_Isengard_|Saruman a Isengard e gli Uomini Selvaggi del Dunland
 qstr_Orcs_of_Moria_and_Do|Orchi di Moria e Dol Guldur
-qstr_Orcs_of_Gundabad_and|Orchi di Gundabad e i Guerrieri di Rhun
+qstr_Orcs_of_Gundabad_and|Orchi di Gundabad e i Guerrieri di Rhûn
 qstr_Men_of_Gondor|Uomini di Gondor
 qstr_Riders_of_Rohan|Cavallerizzi di Rohan
 qstr_Elves_of_Imladris_an|Elfi di Imladris e Lothlorien
 qstr_Men_of_Dale_Dwarves_|Uomini di Dale, Nani di Ereobor, consanguinei di Beorn ed Elfi di Bosco Atro
-qstr_Ah_{playername}_it_i|Ah, Ah, {playername}, è un bene che tu sia qui. La guerra è alle porte e abbiamo bisogno sia di soldati che di capitani che assolvano il loro giuramento.^^Siamo in guerra con {s11}, ma dobbiamo radunare le nostre forze e indebolire il nemico prima di poter sperare di muovere contro i loro capisaldi e le loro fortezze. Ogni sconfitta dei nostri nemici ci porterà più vicini alla vitttoria e rafforzerà la nostra risoluzione, quindi ho fiducia in te perché tu combatta il nostro nemico in ogni occasione, sia che si tratti di un semplice gruppo di esploratori che di un intero esercito. Tuttavia non lanciarti in battaglia senza nessuno, dovrai combattere al fianco dei nostri coraggiosi capitani e dei nostri alleati.
+qstr_Ah_{playername}_it_i|Ah, Ah, {playername}, è un bene che tu sia qui. La guerra è alle porte e abbiamo bisogno sia di soldati che di capitani che assolvano il loro giuramento.^^Siamo in guerra con {s11}, ma dobbiamo radunare le nostre forze e indebolire il nemico prima di poter sperare di muovere contro i loro capisaldi e le loro fortezze. Ogni sconfitta dei nostri nemici ci porterà più vicini alla vittoria e rafforzerà la nostra risoluzione, quindi ho fiducia in te perché tu combatta il nostro nemico in ogni occasione, sia che si tratti di un semplice gruppo di esploratori che di un intero esercito. Tuttavia non lanciarti in battaglia senza nessuno, dovrai combattere al fianco dei nostri coraggiosi capitani e dei nostri alleati.
 qstr_About_time_you_showe|Finalmente ti fai vedere, {playername}. Siamo in guerra adesso e non tolllererò alcuna insubordinazione. Stiamo combattendo contro {s11}, ma dobbiamo radunare le nostre forze e colpire il nemico sul campo prima di muoverci verso le loro fortezze. Ogni sconfitta dei nostri avversari rafforzerà il nostro sforzo bellico e li porterà vicino alla loro completa disfatta. Perciò confido in te perché tu combatta il nemico in ogni occasione, che si tratti di un semplice gruppo di esploratori o di un'intera armata. Inoltre, dovrai supportare i nostri capitani e i nostri alleati se li vedrai impegnati in combattimento. Non deluderli o lo verrò a sapere.
 qstr_we_are_fighting_agai|stiamo combattendo contro {s13}
 qstr_we_are_not_fighting_|non stiamo combattendo nessuno al momento
@@ -1433,7 +1433,7 @@ qstr_{s9}_asked_you_to_sco|{s9} ti ha chiesto di perlustrare {s13}.
 qstr_We_have_reports_of_s|Abbiamo notizie di attività nemiche vicino a {s13}. Finora i nostri esploratori hanno fallito nell' avvicinarsi a sufficienza al nemico per vederne i movimenti. Voglio che tu componga una squadra di esploratori, che ti avvicini abbastanza a {s13}, e che mandi in azione gli esploratori.
 qstr_My_spies_tell_me_the|Le mie spie mi hanno detto che il nemico vuole fare qualcosa a {s13}. I nostri esploratori hanno vigliaccamente fallito nell' esplorare le zone nemiche. Voglio che tu recluti una tua squadra di esploratori, ti avvicini abbastanza a {s13}, e li lasci li. Pero', assicurati che non scappino !
 qstr_{s9}_asked_you_to_di|{s9} ti ha chiesto di inviare una pattuglia di esplorazione vicino a {s13}.^Ottieni 7 soldati di {s15}, di cui almeno 1 é {s14}, avvicinati a {s13} e parla a {s14} per inviare la pattuglia.
-qstr_We_need_to_take_the_|Dobbiamo portare la battaglia sul campo nemico, {playername}. In questo momento possiamo riuscirci colpendo le loro pattuglie e i loro messaggeri. Voglio che tu elimini {reg1} {s13} compagnie, tutto questo ci permetterà di riprendere l'iniziativa.
+qstr_We_need_to_take_the_|Dobbiamo portare la battaglia sul campo nemico, {playername}. In questo momento possiamo riuscirci colpendo le loro pattuglie e i loro messaggeri. Voglio che tu elimini {reg1} compagnie di {s13} , tutto questo ci permetterà di riprendere l'iniziativa.
 qstr_We_need_to_grind_dow|Dobbiamo colpire i nostri vili nemici, {playername}. Le loro pattuglie e carovane stanno crescendo troppo coraggiosamente per i miei gusti. Voglio che tu elimini {reg1} {s13}, così incominceranno a capire cosa gli aspetta.
 qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di eliminare {reg1} compagnie di {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} ti ha chiesto di liberare {s13} dalla minacca di un Troll furioso nella sua periferia.
@@ -1451,7 +1451,7 @@ qstr_Go_up_north_to_Gunda|Va a nord, a Gundabad - sono stupidi e brutti, ma hann
 qstr_Get_some_snagas_of_y|Prenditi qualche snaga del tuo genere, come questi che sono al mio seguito. Forse presto avrai anche tu una tua compagnia in armi !
 qstr_Our_friends_and_alli|I nostri amici e alleati udranno di te, non dubitare ! Potrebbero volerti donare una nuova cavalcatura o una spada nuova. Nessuno ha tempo per i deboli, ma sei hai forza, ha, noi aiutiamo quelli che ci aiutano, vedi? Scambia parte di quelle spoglie per un buon cavallo, magari con quegli uomini di Rhûn - per cavalcare o mangiarlo, la scelta è tua, har !
 qstr_Trade_some_of_those_|Scambia alcune di queste spoglie con un buon cavallo, magari con quegli uomini di Rhûn - per cavalcarlo o per mangiarlo, la scelta è tua, har !
-qstr_That_is_not_a_smart_|Non è una cosa molto intelligente da dire di fronte ad un Guerriero di Rhun.. La prossima volta che ti vedo, ti uccido.
+qstr_That_is_not_a_smart_|Non è una cosa molto intelligente da dire di fronte ad un Guerriero di Rhûn... La prossima volta che ti vedo, ti uccido.
 qstr_They_will_all_know_m|Tutti sanno il mio nome.. Tutti sapranno temerlo
 qstr_Suilad_mellon!_It_is|Suilad, mellon ! Non capita spesso di incontrare amici della Valle Nascosta nel nostro regno. Ringraziamo le stelle che ti hanno guidato in nostro aiuto, e ringraziamo te altrettanto - le hannon !
 qstr_Suilad_mellon!_It_is_|Suilad, mellon ! È raro vedere uno dei nostri cugini del Reame Boscoso che giunge in nostro aiuto - le hannon !

@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Пеларгирские стражники
 trp_pelargir_marine|Пеларгирский моряк
 trp_pelargir_marine_pl|Пеларгирские моряки
 trp_pelargir_vet_marine|Пеларгирский опытный моряк
-; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
+trp_pelargir_vet_marine_pl|Пеларгирские ветераны морпехоты
 trp_pelargir_infantry|Пеларгирский пехотинец
 trp_pelargir_infantry_pl|Пеларгирские пехотинцы
 trp_pelargir_vet_infantry|Пеларгирский опытный пехотинец
@@ -674,10 +674,10 @@ trp_olog_hai|Мордорский олог-хай
 trp_olog_hai_pl|Мордорские олог-хай
 trp_ent|Энт
 trp_ent_pl|Энты
-; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
-; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
-; trp_orc_of_guldur|Orc Tracker of Dol Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
+trp_orc_snaga_of_guldur|Орк Снага из Дол Гулдура
+trp_orc_snaga_of_guldur_pl|Орки Снаги из Дол Гулдура
+trp_orc_of_guldur|Орк следопыт из Дол Гулдура
+trp_orc_of_guldur_pl|Орки следопыты из Дол Гулдура
 trp_orc_snaga_of_mordor|Мордорский орк снага
 trp_orc_snaga_of_mordor_pl|Орки-снаги Мордора
 trp_orc_of_mordor|Мордорский орк
@@ -690,8 +690,8 @@ trp_warg_rider_of_gorgoroth|Волчий всадник Горгорота
 trp_warg_rider_of_gorgoroth_pl|Волчьи всадники Горгорота
 trp_great_warg_rider_of_mordor|Удунский всадник на варге
 trp_great_warg_rider_of_mordor_pl|Удунские всадники на варгах
-; trp_morgul_orc|Orc of Minas Morgul
-; trp_morgul_orc_pl|Orcs of Minas Morgul
+trp_morgul_orc|Орк из Минас Моргула
+trp_morgul_orc_pl|Орки из Минас Моргула
 ; trp_fell_morgul_orc|Fell Orc of Minas Morgul
 ; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
 ; trp_orc_tracker_of_mordor|Large Orc Tracker of Dol Guldur

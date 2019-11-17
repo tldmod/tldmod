@@ -16,13 +16,13 @@ dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL !
 dlga_start:hobbit_merry_talk_met|Salve di nuovo, {playername} !
 dlga_start:hobbit_pippin_talk_met|Salve di nuovo, {playername} !
 dlga_start:hobbit_general_talk_1|Salve, {sire/mia signora} ! Il mio nome è Meriadoc Brandybuck, ma puoi chiamarmi Merry !
-dlga_start:hobbit_general_talk_1.1|Salve, {sire/mia signora} ! Il mio nome è Peregrino Took ma puoi chiamarmi Pipino !
+dlga_start:hobbit_general_talk_1.1|Salve, {sire/mia signora} ! Il mio nome è Peregrino Tuc ma puoi chiamarmi Pipino !
 dlga_hobbit_general_talk_1:close_window|Ora non ho tempo.
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Che strano, non ho mai visto nessuno della tua specie.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Sai, penso di aver visto uno come te, a Edoras.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Sai, penso di aver visto uno come te, a Minas Tirith.
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Lo so. Vengo da lontano ! Sono un Hobbit, {sire/signora}, dalla Contea.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, doveva trattarsi del mio caro cugino ! Peregrino Took, o Pipino come viene chiamato. Siamo Hobbits, {sire/signora}, e veniamo dalla Contea, tutti e due ! Caro vecchio Pipino, mi domando come se la stia passando a Minas Tirith..
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, doveva trattarsi del mio caro cugino ! Peregrino Tuc, o Pipino come viene chiamato. Siamo Hobbits, {signore/signora}, e veniamo dalla Contea, tutti e due ! Caro vecchio Pipino, mi domando come se la stia passando a Minas Tirith..
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Oh, doveva trattarsi del mio caro cugino ! Meriadoc Brandybuck, o Merry come viene chiamato. Siamo Hobbits, {sire/mia signora}, e veniamo dalla Contea, tutti e due ! Caro vecchio Merry, mi domando come se la stia passando a Edoras..
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Vorrei chiederti un favore, {mio signore/mia signora}.
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Certo, {s1}. Di che si tratta?
@@ -44,12 +44,12 @@ dlga_treebeard_introduce_1:treebeard_introduce_2|(Stai per dire qualcosa quando 
 dlga_treebeard_introduce_2:treebeard_introduce_3|Perdona la mia intrusione.. Sono un viaggiatore stanco che cerca rifugio dagli eventi in corso.. Il mio nome è {playername}. Posso chiedere chi sei ?
 dlga_treebeard_introduce_3:treebeard_introduce_4|(Il gigantesco albero dalle membra rigide apre lentamente la sua bocca, celata dietro a piccoli rami, foglie e muschio. Con una voce molto profonda, lenta e rimbombante inizia a parlare con imponenza:) 'Hrooom.. Hmmm.. * Io * non ti dirò il mio nome... almeno, non per ora. Per prima cosa ci vorrebbe molto tempo. il mio nome è sempre in crescita e ho vissuto per un tempo considerevole, molto considerevole; quindi il mio nome è come una storia. I veri nomi raccontano la storia di ciò che li riguarda, nel nostro caso in Vecchio Entese, come si potrebbe dire. È una bella lingua, ma ci vuole molto tempo per dire qualsiasi cosa, perché noi non diciamo nulla se non vale la pena dirla, e se non vale la pena ascoltarla.'
 dlga_treebeard_introduce_4:treebeard_introduce_5|Oh, così tu sei un Ent ! Le leggende parlano di voi e sono onorato di essere in vostra presenza. Non voglio imporvi la mia presenza e me ne andrò se lo volete.
-dlga_treebeard_introduce_5:treebeard_questtalk|(Il gigante dalla pelle di corteccia e i suoi compagni Ents restano immobili per svariati minuti, in silenzio, mentre la brezza attraversa le loro chiome e le loro barbe frondose. Si guardano l'un con l'altro per un ulteriore lungo periodo, fino a quando un Ent insolitamente frettoloso dalle sembianze di un albero di sorbo, sembra voler prendere la parola. Comunque, resta in silenzio fino a quando il gigante corteccioso prosegue:)
+dlga_treebeard_introduce_5:treebeard_questtalk|(Il gigante dai rigidi arti e i suoi compagni Ents rimangono immobili per molti minuti, in silenzio, mentre una brezza attraversa quell che dovrebbero essere i loro capelli e la frondosa barba . Si guardano per un altro prolungato  momento fino a quando un Ent insolitamente frettoloso che assomiglia ad un albero di sorbo sembra voler prendere la parola. Tuttavia, rimane in silenzio fino a quando la gigantesca Ent prosegue :)
 dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Come ho detto prima..:Hroom.. Apprezziamo le maniere cortesi che mostri. È {reg1?insolito da parte dei tuoi simili:piacevole parlare con gli elfi ancora una volta}.} I tempi non sono buoni, sin da quando le Entesse sono scomparse - e adesso molte creature malvagie vengono liberate dall'Oscuro Signore in persona e vengono a distruggere le nostre dimore. Siamo alla ricerca di qualcuno rapido ma non affrettato, qualcuno che possa aiutarci mentre discutiamo sulle nostre prossime mosse. Bande di orchi hanno razziato le foreste e bruciato i nostri alberi con frecce infuocate - se sarai colui che sconfiggerà gli orchi garantendo che non possano più minacciare i boschi e le foreste, ti saremo grati e ti considereremo un vero amico. Fa questo e parleremo ancora.
 dlga_treebeard_quest_brief:close_window|Gli orchi sono davvero creature infide e vili.  Farò in modo che non danneggino ancora la foresta.
 dlga_treebeard_quest_brief:treebeard_pretalk|Spiacente. Non ho tempo per questo adesso.
 dlga_treebeard_questtalk:close_window|(Il capo degli Ent apre lentamente la bocca nascosta mentre gli altri Ent ti guardano ed iniziano ad emettere un suono lungo e profondo che fa tremare un poco il terreno - realizzi che in qualche modo stanno ridendo alla maniera entese. Un albero relativamente giovane calpesta il terreno con il suo piede di quasi due metri facendo tremare il suolo a tal punto che per poco non cadi.) 'Vacci piano Lamposvelto, non vogliamo fare del male al nostro giovane guerriero. Hrrrm.. Io sono Balbalbero, il più vecchio fra gli Ent, e tutti qui ti siamo grati per i tuoi servigi.. Hrrrm.. Lascia che ti dia il dono dell'Acqua degli Ent per celebrare il tuo successo.'
-dlga_treebeard_questtalk:close_window.1|(Il gigante dalla pelle di corteccia e i suoi compagni Ents restano immobili per svariati minuti, in silenzio, mentre la brezza attraversa le loro chiome e le loro barbe frondose.)
+dlga_treebeard_questtalk:close_window.1|(Il gigante dai rigidi arti e i suoi compagni Ents rimangono immobili per molti minuti, in silenzio, mentre una brezza attraversa quell che dovrebbero essere i loro capelli e la frondosa barba.)
 dlga_treebeard_pretalk:treebeard_talk_response|Hrooom.. Cosa vorresti sapere, giovane amico ?
 dlga_treebeard_talk_response:treebeard_about_himself|Dimmi di più su questo.
 dlga_treebeard_talk_response:treebeard_about_entwives|Raccontami delle Entesse.
@@ -330,8 +330,8 @@ dlga_find_lost_spears_permission:lord_pretalk.1|Mi spiace, ma non ti conosco né
 dlga_find_lost_spears_permission_yes:lord_pretalk|Ha la mia gratitudine, mio Signore.
 dlga_lord_talk:tell_dorwinion_sack|Mio signore, ho trovato una sacca con un simbolo evanescente a forma di grappollo d'uva e dentro c'erano frammenti di legno che potrebbero essere appartenuti ad una lancia.
 dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Molto interessante. Quest'antica sacca ha un marchio che potrebbe appartenere a uno dei migliori vini, che può arrivare solo da Dorwinion.
-dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|Ho trovato anche questo elmo di Rhun nella sacca. Questo potrebbe dirci qualcosa di più su quello che è successo alle lance ?
-dlga_tell_dorwinion_sack_3:lord_pretalk|Le carovane vengono spesso attaccate lungo la strada. Questo elmo è di un esploratore di Rhun. Seguite il fiume verso sud fino al Mare di Rhun e cercate le rotte commerciali verso il Dorwinion, potrete trovare ciò che cercate. NOTA: QUESTA QUEST NON È ANCORA STATA REALIZZATA COMPLETAMENTE.
+dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|Ho trovato anche questo elmo di Rhûn nella sacca. Questo potrebbe dirci qualcosa di più su quello che è successo alle lance ?
+dlga_tell_dorwinion_sack_3:lord_pretalk|Le carovane vengono spesso attaccate lungo la strada. Questo elmo è di un esploratore di Rhûn. Seguite il fiume verso sud fino al Mare di Rhûn e cercate le rotte commerciali verso il Dorwinion, potrete trovare ciò che cercate. NOTA: QUESTA QUEST NON È ANCORA STATA REALIZZATA COMPLETAMENTE.
 dlga_lord_talk:lord_healer_wound_ask|Ho saputo che sei un grande guaritore. Corrisponde al vero, e potrai aiutarmi?
 dlga_lord_healer_wound_ask:lord_pretalk|{s1}
 dlga_lord_healer_wound_ask:lord_healer_wound_ask_check|{s1}
@@ -361,8 +361,8 @@ dlga_lord_talk:ring_hunter_party_defeated|Mio signore, giungo portando amare not
 dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|Non si tratta di cattive notizie, {playername}. Abbiamo udito della tua grande vittoria ! Le vite in quei villaggi sono più imporanti per la nostra causa di qualsiasi arma. Mentre parliamo, i Beorniani stanno ammassando le loro forze, rinvigoriti dalla tua vittoria. Oltre a questo, non crediamo che questi Cacciatori dell'Anello abbiano trovato quello che stavano cercando. Se si trattava dell'arma che temevamo, avremmo percepito qualcosa.. una perturbazione.
 dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|Ne sono felice, allora. Qualsiasi cosa sia quest'arma.. potrebbero essere ancora alla sua ricerca. Continuerò a vigilare e a cercare questi Cacciatori dell'Anello.
 dlga_ring_hunter_quest_end:close_window|Tutti lo desideriamo. Grazie ancora una volta per i tuoi servigi, {playername}.
-dlga_lord_talk:ring_hunter_lair_defeated_elf|Mio signore, benché non mi sia riuscito di intercettare i Cacciatori dell'Anello che terrorizzavano i villaggi, ho potuto sconfiggere i loro capi nel loro nascondiglio. Avevo questo in loro possesso.
-dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|Vedo, un anello, ma non è l'Anello. Non è nemmeno uno dei grandi anelli, pur tuttavia non è nanche un semplice gingillo. C'è del potere intessuto in esso.
+dlga_lord_talk:ring_hunter_lair_defeated_elf|Mio signore, benché non mi sia riuscito di intercettare i Cacciatori dell'Anello che terrorizzavano i villaggi, ho potuto sconfiggere i loro capi nel loro nascondiglio. Avevano questo in loro possesso.
+dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|Vedo, un anello, ma non è l'Anello. Non è nemmeno uno dei grandi anelli, pur tuttavia non è neanche un semplice gingillo. C'è del potere intessuto in esso.
 dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Allora avevamo ragione a strapparlo dalle dita del Signore Oscuro, prima che potesse usarlo per diffondere la sua Ombra sulla terra e farlo penetrare nei cuori di molti.
 dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|Devi conservare quest'anello e usarlo per combattere il nemico e i suoi eserciti. Confido che ne farai buon uso.
 dlga_ring_hunter_lair_quest_end:close_window|Questo è un grande onore, mio signore, ti ringrazio ! Il mio cuore resterà sincero e il mio braccio forte.
@@ -372,10 +372,10 @@ dlga_ring_hunters_party_attack_2:close_window|Controllate il loro bagaglio e le 
 dlga_start:ring_hunter_lair_defeat|Questo anello appartiene all'Oscuro Signore ! Tu non puoi averlo !
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Appartiene a me adesso.
 dlga_ring_hunter_lair_defeat2:close_window|Pensi di aver ottenuto una grande vittoria? Forse la pallida ombra di una vittoria. Bah ! La nostra compagnia era in marcia ben prima del tuo arrivo. Sei in ritardo per salvare quelli che c'erano prima !
-dlga_start:beorn_message|{Mio signore/Mia signora}, abbiamo ricevuto un avvertimento da {s1} che un numeroso gruppo di banditi sono diretti verso di noi ! Ahimé, non c'è tempo per raccogliere abbastanza guerrieri. Udendo i rumori della battaglia, ci siamo preparati al peggio !
+dlga_start:beorn_message|{Mio signore/Mia signora}, abbiamo ricevuto un avvertimento da {s1} che un numeroso gruppo di banditi era diretto verso di noi ! Ahimé, non c'è stato tempo per raccogliere abbastanza guerrieri. Udendo i rumori della battaglia, ci siamo preparati al peggio !
 dlga_beorn_message:beorn_message2|Quelli di certo non erano banditi qualunque. Si trattava del peggio del peggio fra i Signori Oscuri, quanto meno qui al Nord. I loro capi, tuttavia, non erano qui. La loro base si trova presso la foresta di Mirkwood e devo fare in fretta.
-dlga_beorn_message2:beorn_message_end|Si, ci è giunta notizia anche del campo e abbiamo inviato degli esploratori verso di esso. Li abbiamo visti darlo alle fiamme e fuggire rapidamente verso Mordor. Avendo scelto di andare laggiù non hai avuto modo di aiutarci. Ti siamo davvero grati per la tua vittoria !
-dlga_beorn_message_end:beorn_message_close|Devo rientrare e fare rapporto a {s1} in merito alla battaglia. Torna al tuo villaggio e invia degli esploratori. Potrebbero esserci dei ritardatari.
+dlga_beorn_message2:beorn_message_end|Si, ci è giunta notizia anche del campo e abbiamo inviato degli esploratori verso di esso. Li abbiamo visti darlo alle fiamme e fuggire rapidamente verso Mordor. Se avessi scelto di andare per prima lì, non saresti stato in grado di aiutarci. Ti siamo davvero grati per la tua vittoria !
+dlga_beorn_message_end:beorn_message_close|Devo rientrare e fare rapporto a {s1} in merito alla battaglia. Torna al tuo villaggio e invia degli esploratori. Potrebbero esserci dei dispersi.
 dlga_beorn_message_close:close_window|Sì, comandante. Rimarremo vigili e manderemo altri uomini dai villaggi lontani. La tua vittoria di oggi ha ispirato tutti noi.
 dlga_lord_give_troops:lord_give_troops_check|Rinforzare la mia compagnia ? Posso sempre usare dei soldati in più.
 dlga_lord_give_troops:lord_pretalk|Sfortunatamente non hai alcun soldato {s14} per darmi rinforzo.
@@ -531,8 +531,8 @@ dlga_lord_mission_investigate_fangorn_1:lord_mission_investigate_fangorn_2|Forse
 dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_accepted|Non ho paura né di elfi né di spiriti. Lascia che ci pensi io, Maestro.
 dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|Maestro, abbi pietà del tuo servo ! Non chiedermi di avventurarmi in quel posto maledetto !
 dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|Così sei come gli altri vermi: un sopertizioso, inutile codardo. Ti ho sopravvalutato. Ora, sparisci !
-dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|Bene. Vai lì e fai luce su questa faccenda. Poi torna da me e fai rapporto. Mi aspetto di vederti tornare con informazioni preima che {reg1} tramonti siano passati
-dlga_lord_tell_mission:lord_mission_find_lost_spears|Ecco una missione per una persona fedele e coraggiosa come te, {playername}. Siamo equipaggiati malamente per combattere le orde di Rhun. Le nostre armate perdono battaglie una ad una. Una leggenda racconta che una volta le lance venivano create dai Nani per le armate del grande Re Bladorthin (morto da tempo), ognuna aveva la punta forgiata per tre volte e la staffa era intarsiata d'oro, ma non sono mai state consegnate o pagate.
+dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|Bene. Vai lì e fai luce su questa faccenda. Poi torna da me e fai rapporto. Mi aspetto di vederti tornare con informazioni prima che {reg1} tramonti siano passati.
+dlga_lord_tell_mission:lord_mission_find_lost_spears|Ecco una missione per una persona fedele e coraggiosa come te, {playername}. Siamo equipaggiati malamente per combattere le orde di Rhûn. Le nostre armate perdono battaglie una ad una. Una leggenda racconta che una volta le lance venivano create dai Nani per le armate del grande Re Bladorthin (morto da tempo), ognuna aveva la punta forgiata per tre volte e la staffa era intarsiata d'oro, ma non sono mai state consegnate o pagate.
 dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|Cosa mi chiedi di fare a riguardo, Mio signore ?
 dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|Queste armi incrementerebbero l'efficacia delle nostre armate, ma soprattutto innalzerebbero lo spirito dei nostri uomini. Devi trovare queste lance. Dovrai chiedere ai nani il permesso di cercare le lance nelle profondità della Montagna Solitaria. Attenzione, potresti incontrare qualche orco o troll nei tunnel. Sei disponibile per questo compito ?
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|Non ho paura né di orchi né di troll ! Troverò quelle lance per te, mio signore
@@ -669,8 +669,8 @@ dlga_caravan_attack3:close_window|Debole? Vediamo chi è il debole ! (Difficile)
 dlga_caravan_attack3:close_window.1|Vai avanti, vigliacco. Vedrò il tuo cadavere nei campi.
 dlga_start:caravan_res_tut1|*ridacchia* Nessun problema ad aspettare, guerriero ! Alcuni fra i ragazzi potranno non avere una grande opinione di te, ma non io, oh no. Ti ho visto combattere. Non scommetterei contro di te!{s10}^^ Ma dobbiamo stare uniti ai nostri simili, dobbiamo farlo. Servi l'Occhio, Servi il Signore Oscuro, si, ma se fai qualcosa ad est al sud non importa, e così via. Aiuta l'Occhio, e alla Mano Bianca non importa. Aiuta il Vecchio Uomo, e la Torre Oscura penserà che avrai sprecato il tuo tempo non lavorando per lei !
 dlga_start:caravan_res_tut2|*ridacchia* Suppongo di essere il capo ora. Sei un feroce guerriero, sì ! Prendi la tua parte del bottino. Alcuni dei ragazzi scommettevano sul fatto che tu fossi una carne di warg, ma non io, oh no. Ti ho visto combattere. Non scommetterei contro di te !^^I nostri amici e alleati sentiranno parlare di te, non dubitare ! Potrebbero essere disposti a darti una nuova cavalcatura o una nuova arma. Nessuno perde tempo con i deboli, ma tu sei forte, ha, aiutiamo quelli che ci aiutano, giusto? {s10}^^Ma tutti ci teniamo stretti ai nostri simili, facciamo così. Servi l'Occhio, servi l'Oscuro Signore, si, ma se fai qualcosa a oriente il sud non ci fa caso, e via di questo passo. Aiuta l'Occhio e alla Mano Bianca non importa. Aiuta il Vecchio Uomo e la Torre Oscura penserà che stai sprecando il tuo tempo invece di lavorare per lei !
-dlga_caravan_res_tut1:caravan_noduel|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per comprare dal popolo di Mordor non sono quelli che hai guadagnato nella tua fazione, ma quelli che guadagnerai a Mordor. ^^Controlla la sezione RAPPORTi per maggiori informazioni.
-dlga_caravan_res_tut2:caravan_duel1|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per comprare dal popolo di Mordor non sono quelli che hai guadagnato nella tua fazione, ma quelli che guadagnerai a Mordor. ^^Controlla la sezione RAPPORTi per maggiori informazioni.
+dlga_caravan_res_tut1:caravan_noduel|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per comprare dal popolo di Mordor non sono quelli che hai guadagnato nella tua fazione, ma quelli che guadagnerai a Mordor. ^^Controlla la sezione RAPPORTI per maggiori informazioni.
+dlga_caravan_res_tut2:caravan_duel1|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per comprare dal popolo di Mordor non sono quelli che hai guadagnato nella tua fazione, ma quelli che guadagnerai a Mordor. ^^Controlla la sezione RAPPORTI per maggiori informazioni.
 dlga_caravan_noduel:caravan_duel2|Potrei ucciderlo tanto facilmente quanto sputo ! Ma non ho niente da dimostrare a quelli come lui.
 dlga_caravan_duel1:caravan_duel2|Ciò che faccio non sono affari tuoi, Orco. Ma sosterrò i nostri alleati e ucciderò i nostri nemici.
 dlga_caravan_duel2:caravan_fac_tut|Piuttosto giusto, piuttosto giusto ! Guarda questi disgraziati accucciati attorno a noi ! Ha ! Ti temono, oh si, come dovrebbero, come dovrebbero ! Io no. Heh. Ma io ti devo un favore, non è così? Ti farò fare una bella svolta. Parlerò ai capi di te oggi. La voce si spargerà. E quando i capi avranno ascoltato abbastanza su di te... Beh, potrebbero avere qualcosa di speciale per te. Doni, potere, rispetto ! Ora torno per dare il mio aiuto !
@@ -730,7 +730,7 @@ dlga_ally_thanks_meet_2:close_window|Ben arrivato {playername}. Il mio nome è {
 dlga_ally_thanks_meet_2:close_window.1|Felice di averti incontrato {playername}. Sono in debito con te per ciò che hai fatto. Spero, un giorno, di poterti rendere la cortesia.
 dlga_ally_thanks_meet_2:close_window.2|Felice di averti incontrato {playername}. Io sono {s1}. Grazie per il tuo aiuto, spero che c'incontreremo ancora.
 dlga_start:close_window.13|Ancora una volta ci hai salvato il collo, {playername} ! Per certo sei il migliore degli amici. {s43}
-dlga_start:close_window.14|Sei arrivato proprio al momento giusto {playername} ! Hai i miei più profondi ringraziamenti ! {s43}
+dlga_start:close_window.14|Sei arrivato proprio al momento giusto {playername} ! Hai la mia più profonda gratitudine ! {s43}
 dlga_start:close_window.15|Sei sbucato giusto in tempo, {playername}. Non dimenticherò il tuo aiuto. {s43}
 dlga_start:close_window.16|È bello rivederti, {playername}. {s43}
 dlga_start:close_window.19|Grazie per il tuo aiuto, Comandante. Hai salvato {reg1?le nostre vite:la mia vita}.
@@ -841,7 +841,7 @@ dlga_start:mayor_talk|Ciao straniero, sembri essere nuovo a {s9}. Io sono il mae
 dlga_start:mayor_begin.1|Buongiorno, {playername}.
 dlga_mayor_begin:lord_deal_with_night_bandits_completed|Ottimo lavoro, {playername}, ti sei sbarazzato velocemente di quei cani senza legge !^^[guadagnati {reg14} Punti Risorsa di {s14}]
 dlga_lord_deal_with_night_bandits_completed:close_window|Se la sono cercata.
-dlga_mayor_talk:mayor_deliver_iron|Ti ho portato metallo di migliore qualità, {reg9} unità di {s4}, poiché ne hai chieste {s3}.
+dlga_mayor_talk:mayor_deliver_iron|Ti ho portato metallo di migliore qualità, {reg9} unità di {s4}, anche se avevi chiesto {s3}.
 dlga_mayor_talk:mayor_deliver_iron.1|Ecco qui la tua fornitura di metallo, {reg9} unità di {s4}.
 dlga_mayor_talk:mayor_deliver_iron.2|Ho portato dell'altro metallo, {reg8} unità di {s4}, mentre ne avevi richieste {reg9}.
 dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Ottimo lavoro, {playername}. I nostri fabbri troveranno il modo per utilizzare al meglio tutto ciò che gli è stato dato.
@@ -985,7 +985,7 @@ dlga_town_merchant_talk:close_window|Arrivederci.
 dlga_start:town_dweller_talk|Scusami ?
 dlga_start:town_dweller_talk.1|Buongiorno, Comandante.
 dlga_town_dweller_talk:town_dweller_ask_fugitive|Sto cercando un fuggitivo di nome {s4}. Mi hanno detto che forse si nasconde qui.
-dlga_town_dweller_ask_fugitive:close_window|Gli stranieri vanno e vengono dalla nostra città. Se si nasconde qui, lo troverai sicuramente se dai un'occhiata in giro.
+dlga_town_dweller_ask_fugitive:close_window|Gli stranieri vanno e vengono da queste parti. Se si nasconde qui, lo troverai sicuramente dando un'occhiata in giro.
 dlga_town_dweller_talk:town_dweller_ask_info|Cosa mi puoi dire riguardo a questo villaggio ?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Cosa mi puoi dire riguardo a questo posto ?
 dlga_town_dweller_talk:town_dweller_ask_situation|Com'è la vita qui ?

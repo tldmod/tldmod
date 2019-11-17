@@ -2148,26 +2148,26 @@ str_npc26_payment_response|That's a lot, and you better be worth it - here's {re
 str_npc27_payment_response|Here's {reg3} Resources.
 str_npc18_morality_speech|Świetnie! Moje pragnienie krwi jest nieugaszone! Dlaczego my {s21} jak tchórze? Pozwól mi z nimi walczyć!
 str_npc19_morality_speech|Dowódco, wielce nie podoba mi się że my {s21}. Król taki jak ja powinien zawsze być hojny, ale jeśli władcy są puści, nie mam nic do oddania, a nasi żołnierze nas opuszczą.
-; str_npc20_morality_speech|I would say I had expected better of you, Commander, but that would be a lie. Beware, lest your self-serving ways do harm to the lofty designs of your betters!
+str_npc20_morality_speech|Rzekłbym, że spodziewałem się więcej po tobie, Dowódco, jednakże byłoby to kłamstwo. Uważaj, aby twoje samolubne sposoby nie zaszkodziły wzniosłym projektom lepszych od ciebie!
 str_npc21_morality_speech|Nie ma co sobie zaprzątać głowy tym, co mówią żołnierze. Czasem {s21} to najlepsze rozwiązanie. W ten sposób uniknęliśmy wiele przelanej krwi i połamanych kości. Nasze ostrza przydadzą się bardziej jeślim żyw, aniżeli naszym truchłom w piachu. 
 str_npc22_morality_speech|Przemyśl lepiej swe decyzje, dowódco. {s21} czyni nas równie niehonorowym co naszych wrogów i odbiera zaufanie, którym darzą cię sprzymierzeńcy.
-; str_npc23_morality_speech|[No primary moral code]
+str_npc23_morality_speech|[Brak pierwszorzędnego kodu moralnego]
 str_npc24_morality_speech|Nie byłem zadowolony, że postanowiłeś {s21}. Polec w walce to zaszczyt dla każdego dobrze myślącego krasnoluda, ale walka u boku tchórza jest hańbą. Co powiedzą moi kuzyni, jeśli się o tym dowiedzą? 
 str_npc25_morality_speech|Dowódco, muszę się sprzeciwić. {s21} jest drażniące dla mężczyzn i zbędne. Robię co mogę, aby złagodzić ich cierpienie, ale proszę, nie popełnij więcej tak kosztownego błędu.
 str_npc26_morality_speech|Walczący Uruk-hai nie {s21}. Jeśli Pan ma mało odwagi, może znaleźć się bez nich pewnej nocy. Gulm przemówił.
-; str_npc27_morality_speech|[No primary moral code]
-; str_npc18_2ary_morality_speech|I joined you not to {s21}, Great One, but to bathe in the blood of our foes! You may employ your guile for now, but give me a good slaughter soon, I beg you!
-; str_npc19_2ary_morality_speech|[No secondary moral code]
+str_npc27_morality_speech|[Brak pierwotnego kodu moralnego]
+str_npc18_2ary_morality_speech|Nie dołączyłem do ciebie by {s21}, o Wielki, lecz by kąpać się w krwi naszych wrogów! Na razie możesz wykorzystać swój podstęp, lecz daj mi dobrą rzeź wkrótce, błagam cię!
+str_npc19_2ary_morality_speech|[Brak drugorzędnego kodu moralnego]
 str_npc20_2ary_morality_speech|Ah, nasz wielki wódz. Żes wielkie czyny pan popełnił,  powiadasz? myślę zes ile twoich  bitew skończyło się tak, z tobą bezmyślnie szarżującym w pysk płuapki, I uciekającym z tym samym zapałem.
 str_npc21_2ary_morality_speech|Proszę o wybaczenie, dowódco. Kobiety z mojej stacji zaakceptują śmierć, ale nie zhańbioną. {s21} przynosi wstyd mojego domowi i przodkom.
-; str_npc22_2ary_morality_speech|[No secondary moral code]
-; str_npc23_2ary_morality_speech|[No secondary moral code]
-; str_npc24_2ary_morality_speech|[No secondary moral code]
-; str_npc25_2ary_morality_speech|[No secondary moral code]
-; str_npc26_2ary_morality_speech|[No secondary moral code]
-; str_npc27_2ary_morality_speech|[No secondary moral code]
-; str_npc18_personalityclash_speech|Great One, if you value Varfang as a warrior, I beg that you keep him as far away from me as possible. I have already warned him that his hands must not go where I will not let them, or I shall chop them off and feed them to his horse. 
-; str_npc19_personalityclash_speech|Commander, I wonder greatly that you retain the services of a lowly creature like Ufthak. Of course, the orc-kind are scum and arrow-shields for our true warriors, but he stalks around the camp giving orders to man and orc alike, as if he were one with authority. I hope you do not miss him too greatly if I slay him. Or perhaps I will simply cleave off the end of his ugly nose.
+str_npc22_2ary_morality_speech|[Brak drugorzędnego kodu moralnego]
+str_npc23_2ary_morality_speech|[Brak drugorzędnego kodu moralnego]
+str_npc24_2ary_morality_speech|[Brak drugorzędnego kodu moralnego]
+str_npc25_2ary_morality_speech|[Brak drugorzędnego kodu moralnego]
+str_npc26_2ary_morality_speech|[Brak drugorzędnego kodu moralnego]
+str_npc27_2ary_morality_speech|[Brak drugorzędnego kodu moralnego]
+str_npc18_personalityclash_speech|O Wielki, jeśli cenisz Varfanga jako wojownika, błagam cię byś trzymał go jak najdalej ode mnie. Już go ostrzegłem że jego ręce nie mogą iść tam, gdzie nie pozwolę, albo je odetnę i nakarmię nimi jego konia.
+str_npc19_personalityclash_speech|Dowódco, poważnie się zastanawiam nad tym, żebyś wstrzymał się od korzystania z usług podrzędnej kreatury takiej jak Ufthak. Oczywiście, orkowie są mięsem armatnim i tarczami na strzały dla naszych prawdziwych wojowników, jednakże wędruje po obozie rozdając rozkazy i ludziom, i orkom, jakby to on był tym z autorytetem. Mam nadzieję że nie będziesz za nim zbyt tęsknił jeśli go zabiję. A może po prostu odetnę mu czubek jego paskudnego nosa. 
 ; str_npc20_personalityclash_speech|The Southron Lykyada should learn manners, and be taught humility. Insolent is his tongue, and overproud his bearing! I care not that he is a captain among his men - a foolish lesser race they are, in any case, slow to recognise greatness or bow to their betters as they should! If he knew but a small part of what I could do to him...
 str_npc21_personalityclash_speech|Wspominałam że Nienawidzę { s11 }?
 str_npc22_personalityclash_speech|Wspominałam że Nienawidzę { s11 }?
@@ -2187,7 +2187,7 @@ str_npc25_personalityclash_speech_b|Wykonana jest z piołunu nasączone alkohole
 str_npc26_personalityclash_speech_b|Nienawidzę {s11}.
 str_npc27_personalityclash_speech_b|Nienawidzę {s11}.
 ; str_npc18_personalityclash2_speech|Gulm is not only a treacherous beast, Great One - he is proud of being one. He was telling us his story again around the campfire last night, and boasting of his foul deed. You would do well to watch that creature, Great One. If he could betray his commanders when serving the White Hand, what's to stop him from doing the same with you?
-; str_npc19_personalityclash2_speech|I hate {s11}
+str_npc19_personalityclash2_speech|Nienawidzę {s11}.
 ; str_npc20_personalityclash2_speech|Every time I set eyes upon Fuldimir, a nameless rage within me rises. No, no, it is nothing he has done. But he and his people, the sea-dogs of Umbar, are most unworthy of their blood. They dare call themselves heirs of ancient Anadûnê - but of course, they say 'Númenor', not knowing any better. Why, I would suppose that barely a drop of the true blood is to be found in Fuldimir's veins! Perhaps, if you can spare him, I could find out for myself...
 str_npc21_personalityclash2_speech|Wspominałam że Nienawidzę { s11 }?
 str_npc22_personalityclash2_speech|Wspominałam że Nienawidzę { s11 }?
@@ -2238,7 +2238,7 @@ str_npc26_retirement_speech|Jestem już trochę zmęczony życiem wojownika , b�
 str_npc27_retirement_speech|Jestem już trochę zmęczony życiem wojownika , będę na emeryturze.
 str_npc18_rehire_speech|Moje ostrze nadal pragnie krwi o Wspaniały. Pozwól mi z tobą wyruszyć ponownie!
 ; str_npc19_rehire_speech|It is good to see you again, Commander. Give me leave to rejoin your company.
-; str_npc20_rehire_speech|Let us be off, Commander. This war will not be won with idleness!
+str_npc20_rehire_speech|Chodźmy więc, Kapitanie. Wojna sama się nie wygra!
 str_npc21_rehire_speech|Witaj ponowie, Możemy kontynuować tam gdzie skończyliśmy ostatnim razem?
 str_npc22_rehire_speech|Dobrze Cię widzieć, {playername}, Pozwól nam podróżować razem.
 str_npc23_rehire_speech|Miło Cię widzieć, {playername}. Pójdźmy jeszcze raz tą samą drogą.

@@ -744,8 +744,8 @@ qstr_Your_bravery_inspire|你的英勇鼓舞了你的部队！
 qstr_Your_mount_has_falle|你的坐骑已经倒下了！
 qstr_Receive_{reg22}_dama|受到{reg22}点伤害。
 qstr_You_have_been_knocke|你被{s22}击昏了。
-; qstr_{s21}_has_been_knock|{s21} has been knocked off of {reg23?her:his} mount when it fell.
-; qstr_{s21}_{reg24?killed:|{s21} {reg24?killed:knocked unconscious} by {s22}.
+qstr_{s21}_has_been_knock|{s21}从{reg23?她的:他的}坐骑上跌落了下来。
+qstr_{s21}_{reg24?killed:|{s21}被{s22}所{reg24?击杀:击昏}。
 qstr_A_bear_has_been_summ|一头熊被召唤加入战斗！
 qstr_In_The_Last_Days_of_|在第三纪元—最后之日中，你的士兵会在每场战斗开始时自动坚守，而不是盲目冲锋。^^按以下键能让你的士兵变换阵型，“J”为线阵，“K”为盾墙，“L”为楔形阵，“；（分号）”为方阵。按“U”取消阵型。^如果你的士兵在逃跑，你可以按“V”来召集他们。每场战斗的召集次数是有上限的，其次数取决于你的统御和魅力。
 qstr_You_can_also_order_y|你也可以命令你的士兵切换装备使用类型。^^按O切换武器使用命令。按P切换盾牌使用命令。
@@ -996,7 +996,7 @@ qstr_two_scout_parties_an|来自{s3}的两支斥候队和一支掠袭者队
 qstr_two_scout_parties_and|来自{s3}的2支斥候队和1支突袭队
 qstr_three_scouts_two_for|来自{s3}的3支斥候队，2支掠夺队和1支巡逻队
 qstr_three_scouts_two_rai|3名斥候，2名突袭者，还有来自{s3}的一支战队
-; qstr_You_see_the_village_|You see the village being raided by bandits. You ask most of your troops to watch out for other raiders while you take a small group and prepare to defend villagers.
+qstr_You_see_the_village_|你发现一处正在被强盗劫掠的村庄。你命令你的大部分部队时刻警戒四周，并亲自带了一小队人马去保卫村民。
 ; qstr_You_see_the_village_y|You see the village you were tasked to raid. You and a small group of your raiders prepare to attack the village so as not to be seen.
 qstr_The_raiders_are_defe|掠夺者被击败了！在村民们的新英雄的帮助下，凡是还保持清醒的土匪都带着巨大的恐惧摸黑向着来时的方向跑逃跑了。
 qstr_Try_as_you_might_you|尽管尽了最大的努力，你依旧没能打败劫掠者。他们将村子夷为平地之后就锁着剩下的村民离开了。

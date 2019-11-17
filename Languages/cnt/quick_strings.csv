@@ -198,8 +198,8 @@ qstr_{s2}_have_razed_{s1}|{s2} 劫 掠 了 {s1} !
 qstr_Left_for_dead_but_mi|被 扔 下 等 死 卻 奇 蹟 般 的 生 還 ： {reg1?{reg1} 時 間 {reg2?:}: 從 來 沒 有 過}
 qstr_1_Res.Pt__{s2}_|1 資 源 點 ({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1} 資 源 點 ({s2})
-qstr_+30_to_Party_Morale|+30 部 隊 士 氣
-qstr_+20_to_Party_Morale|+20 部 隊 士 氣
+qstr_+30_to_Party_Morale|+30 隊 伍 士 氣
+qstr_+20_to_Party_Morale|+20 隊 伍 士 氣
 qstr_+1_to_Riding_Skill|+1 騎 術
 qstr_during_battles|戰爭時
 qstr_+1_to_Pathfinding|+1 嚮 導
@@ -232,7 +232,7 @@ qstr_+3_to_Spotting|+3 偵 察
 qstr_Less_Dunnish_upkeep|減 少 登 丹 的 消 耗
 qstr_Less_Wargs_upkeep|減 少 座 狼 的 消 耗
 qstr_Light_Armor|輕 型 鎧 甲
-qstr_+{reg1}_to_Party_Mor|+{reg1} 部 隊 士 氣
+qstr_+{reg1}_to_Party_Mor|+{reg1} 隊 伍 士 氣
 qstr_Shoot_Speed:_{reg55}|射 擊 速 度 ： {reg55}
 qstr_Do_you_want_to_disem|你 想 上 岸 嗎？
 qstr_Move_here|移 到 此 處
@@ -285,7 +285,7 @@ qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?:正} 在 野 外 某 地 ， 而 {reg4?她
 qstr_{s2}_{reg3?was:is}_b|{s2} {reg3?曾:正} 被 囚 禁 在 {s3} 。
 qstr_{s2}_{reg3?was:has_b|{s2} {reg3?曾:已} 被 {reg4?她 的:他 的} 敵 人 俘 虜 。
 qstr_{reg3?{s2}_s_locatio|{reg3?{s2} 的 位 置 未 明 : 我 不 知 道 {s2} 在 哪 裡 } 。
-qstr_{s6}_has_joined_your|{s6} 加 入 了 你 的 部 隊
+qstr_{s6}_has_joined_your|{s6} 加 入 了 你 的 隊 伍
 qstr_elven|精 靈
 qstr_dwarven|矮 人
 qstr_orc|獸 人
@@ -446,7 +446,7 @@ qstr_{s50}_Caves|{s50} 洞 穴
 qstr_{s50}_Mines|{s50} 礦 山
 qstr_{s50}_Woods|{s50} 樹 林
 qstr_{s4}_looks_upset.|{s4} 看 起 來 很 沮 喪 。
-qstr_your_party|你 的 部 隊
+qstr_your_party|你 的 隊 伍
 qstr_{reg0?One_of_your_pr|{reg0?你 的 一 個 俘 虜:俘 虜} {s3} 的 {s1} 從 囚 禁 中 逃 跑 了 ！
 qstr_You_brought_{reg3}_h|你 帶 來 {reg3} 頭 牛 到 {s1}。
 qstr_Log_entry_{reg3}:_ty|進 入 日 誌 {reg3} ： 類 型 {reg4}
@@ -865,7 +865,7 @@ qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|特 性 獲 得 ：^{s2}
 qstr_^^You_are_{s17}.|^^你 是 {s17} 。
 qstr_Assassins_in_the_cam|營 地 裡 發 現 刺 客 ， 保 護 好 你 自 己 !
-qstr_Ally_party_size:_{re|盟 友 部 隊 规 模 ： {reg1}
+qstr_Ally_party_size:_{re|盟 友 部 隊 規 模 ： {reg1}
 qstr_Enemy_party_size:_{r|敵 人 部 隊 規 模 ： {reg1}
 qstr_Party_count:_{reg0}|部 隊 數 量 ： {reg0}
 qstr_Party_position__{reg|部 隊 位 置 ({reg2} ， {reg3}) 。
@@ -1268,8 +1268,8 @@ qstr_Men_of_Gondor|剛鐸的男人
 qstr_Riders_of_Rohan|洛 汗 騎 兵 
 qstr_Elves_of_Imladris_an|羅斯洛立安和瑞文戴爾的精靈
 qstr_Men_of_Dale_Dwarves_|河谷鎮的人類，孤山的矮人，比翁的親屬，幽暗密林的精靈
-qstr_Ah_{playername}_it_i|啊，{playername}，你能來真好。\n戰爭就在我們的門口，我們需要士兵和隊長來履行他們的誓言。\n我們正在與 {s11} 交戰，但我們必須集中力量，削弱敵人，然後才能攻打他們的據點和要塞。\n敵人的每一次失敗都會使我們更接近勝利，增強我們的決心，所以我相信你會抓住每一個機會與我們的敵人戰鬥。\n但是，不要單獨參加戰鬥，你必須和我們勇敢的隊長以及我們的盟友一起戰鬥。
-qstr_About_time_you_showe|關於你出現的時間，{playername}。\n我們現在正在交戰，我不能容忍任何不服從命令的行為。\n我們正在與 {s11} 交戰，但我們必須集中力量，削弱敵人，然後才能攻打他們的據點和要塞。\n敵人的每一次失敗都將加強我們的戰爭努力，使他們更接近於徹底的毀滅。\n我相信你會抓住每一個機會來對抗我們的敵人。\n此外，如果你看到他們的戰鬥，你將支援我們的領主和我們的盟友。\n不要讓他們失敗，否則我會知道。
+qstr_Ah_{playername}_it_i|啊，{playername}，你 能 來 真 好。戰 爭 就 在 我 們 的 門 口，我 們 需 要 士 兵 和 隊 長 來 履 行 他 們  的 誓 言。^^我 們 正 在 與 {s11} 交 戰，但 我 們 必 須 集 中 力 量，削 弱 敵 人，然 後 才 能 攻 打 他 們 的 據 點 和 要 塞。敵 人 的 每 一 次 失 敗 都 會 使 我 們 更 接 近 勝 利，增 強 我 們 的 決 心，所 以 我 相 信 你 會 抓 住 每 一 個 機 會 與 我 們 的 敵 人 戰 鬥。但 是，不 要 單 獨 參 加 戰 鬥，你 必 須 和 我 們 勇 敢 的 隊 長 以 及 我 們 的 盟 友 一 起 戰 鬥。
+qstr_About_time_you_showe|關 於 你 出 現 的 時 間，{playername}。我 們 現 在 正 在 交  戰，我 不 能 容 忍 任 何 不 服 從 命 令 的 行 為。我 們 正 在 與 {s11} 交 戰，但 我 們 必 須 集  中 力 量，削 弱 敵 人，然 後 才 能 攻 打 他 們 的 據 點 和 要 塞。敵 人 的 每 一 次 失 敗 都 將 加 強 我 們 的 戰 爭 士 氣，使 他 們 更 接 近 於  徹 底 的 毀 滅。我 相 信 你 會 抓 住 每 一 個 機 會 來 對 抗 我 們 的 敵 人，以 偵 察 隊 或 是 主 帥 的 身 份。此 外，如 果 你 看 到 他  們 的 戰 鬥，你 將 支 援 我 們 的 領 主 和 我 們 的 盟 友。不 要 讓 他 們 失 望，否 則 我 會 知 道。
 qstr_we_are_fighting_agai|我們目前正與 {s13} 交戰
 qstr_we_are_not_fighting_|我們目前沒有與任何人交戰
 qstr_Oh?_Let_me_see_that.|哦？讓我看看…  很好很好！\n非常感謝你把這封信帶給我，{playername}。\n拿著徽章作為我收到信的證物，下次見到 {s9} 的時候請代我向他問好。
@@ -1304,7 +1304,7 @@ qstr_Alright!_This_is_goi|好的！ 這會傷害......   很多。
 qstr_Let_us_begin._It_may|讓我們開始吧。\n可能需要一些時間。\n放鬆一下，把剩下的留給我吧。
 qstr_Impressive..._You_di|令人印象深刻的…    你沒有退縮太多。\n回到你的崗位上。
 qstr_Rest_the_wounds_have|休息時，傷口已經得到照顧。
-qstr_Your_party_must_be_a|你的隊伍必須至少有30人才能開始這個任務
+qstr_Your_party_must_be_a|你 的 隊 伍 必 須 至 少 有 30 人 才 能 開 始 這 個 任 務
 qstr_You_were_tasked_to_h|你被請求解決一支在北方造成嚴重破壞的土匪，你既可以選擇直接進攻他們位於幽暗密林附近的藏身處，你也可以選擇在比翁之家的周圍攔截他們。
 qstr_Mordor_gains_Faction|魔多收到一件未知武器後獲得派系力量
 qstr_Beornings_gain_Facti|比翁人獲得派系力量：你的勝利廣為流傳
@@ -1510,10 +1510,10 @@ qstr_As_you_command_maste|主人，遵命，呵呵。\n伙計們，肉又出現�
 qstr_Your_Orcs_&_Uruks_at|你的獸人和奇獸人吃了 {reg1} 人！
 qstr_Yes_master!_As_you_c|是的，主人！\n遵命，主人！
 qstr_Harr_harr_harr!_You_|哈，哈，哈！你不要嚇我！下次我們吃的是你！
-qstr_One_{s6}_left_the_pa|一個 {s6} 離開了聚會。
+qstr_One_{s6}_left_the_pa|一 位 {s6} 離 開 了 隊 伍。
 qstr_I_understand._I_will|我明白。 我會陪著你。 一陣子。
 qstr_I_have_played_my_rol|很長一段時間裡，我扮演了我的角色，對於許多凡人來說都是如此。\n這場戰爭是為了人類的戰鬥。\n我將前往西方，有些人可能會決定跟著我。
-qstr_{reg1}_Veteran_Elves|{reg1} 老精靈決定離開你的隊伍。
+qstr_{reg1}_Veteran_Elves|{reg1} 資 深 的 精 靈 決 定 離 開 你 的 隊 伍。
 qstr_You_chose_well_{sir/|明智的選擇，{先生/女士}。\n我的伙計們知道如何守信和掙錢。
 qstr_Well_done_{sir/madam|好的，{先生/女士}。\n拿著你的錢和紅酒跟在我的身後，卡拉迪亞將沒人讓你感到畏懼。
 qstr_We_are_at_your_servi|聽候差遣，{先生/女士}。\n請將目標的方向只給我，我們會完成剩下的部分的。

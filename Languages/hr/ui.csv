@@ -50,7 +50,7 @@ ui_lance_control|Kontrola koplja:
 ui_manual_easy|Priručnik (Lagano)
 ui_manual_hard|Priručnik (Teško)
 ui_campaign_ai|AI kampanje:
-; ui_crouch|Crouch
+ui_crouch|Klekni
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
@@ -61,7 +61,7 @@ ui_campaign_ai|AI kampanje:
 ; ui_delivered_number_damage|Delivered %d damage.
 ; ui_mission_losses_killed|killed :
 ; ui_party_losses|%s  : %d wounded --- %d killed of %d.
-; ui_following|Following 
+ui_following|Prateći
 ; ui_accompanying|Accompanying 
 ; ui_dumping_value_items|%d items will be permanently lost, are you sure?
 ; ui_dumping_value_item|One item will be permanently lost, are you sure?
@@ -73,7 +73,7 @@ ui_delivered_number_damage_to_horse|Napravio %d štete konju.
 ; ui_received_number_damage|Received %d damage.
 ; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
 ; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
-; ui_value_killed_by_value|%s killed by %s.
+ui_value_killed_by_value|%subijen od%s.
 ; ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
 ; ui_you_got_number_experience|You got %d experience.
 ; ui_you_have_advanced_to_level_number|You have advanced to level %d.
@@ -88,13 +88,13 @@ ui_you_got_value|%s zarađeno.
 ; ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
 ; ui_game_log_window|Game Log Window
 ; ui_blunt_short|b
-; ui_tracks|Tracks
+ui_tracks|Tragovi
 ; ui_order_button_hold_fire|Hold your fire
 ; ui_order_button_fire_at_will|Fire at will
 ; ui_order_button_fire_orders|Fire orders
 ; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
 ; ui_game_log_window|Game Log Window
-; ui_unbalanced|Unbalanced
+ui_unbalanced|Nebalansirano
 ; ui_can_crush_through_blocks|Can crush through blocks
 
 ; ui_order_1|Select Order 1
@@ -104,7 +104,7 @@ ui_you_got_value|%s zarađeno.
 ; ui_order_5|Select Order 5
 ; ui_order_6|Select Order 6
 ; ui_order_button_hold_this_position|Hold this position
-; ui_order_button_follow_me|Follow me
+ui_order_button_follow_me|Prati me
 ui_order_button_charge|Juriš
 ; ui_order_button_stand_ground|Stand ground
 ; ui_order_button_retreat|Retreat
@@ -136,15 +136,15 @@ ui_mount_horses_e_|%s, Uzjaši!
 ui_hold_fire_e_|%s, Ne pucaj!
 ui_fire_at_will_e_|%s, Slobodno pucaj!
 ; ui_hold_this_position_e_|%s, hold this position!
-; ui_infantry|Infantry
+ui_infantry|Pješadija
 ui_archers|Strijelci
-; ui_cavalry|Cavalry
+ui_cavalry|Konjica 
 ; ui_companions|Companions
-; ui_everyone_hear_me|Everyone, hear me!
-; ui_everyone|Everyone
+ui_everyone_hear_me|Svi, čujte me!
+ui_everyone|Svi
 ; ui_everyone_around_me|Nearby Soldiers
 ; ui_str_hear_me|%s, hear me!
 
 ; ui_return|Return
-; ui_factions|Factions
+ui_factions|Fakcije 
 ; ui_troop_upgrades|Troop upgrades

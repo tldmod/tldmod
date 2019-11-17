@@ -46,10 +46,10 @@ trp_woodmen_youth|Uomo dei Boschi
 trp_woodmen_youth_pl|Uomini dei Boschi
 trp_woodmen_forester|Guardiano dei Boschi
 trp_woodmen_forester_pl|Guardiani dei Boschi
-trp_woodmen_skilled_forester|Guardiano dei Boschi Esperto
+trp_woodmen_skilled_forester|Guardiano dei Boschi Veterano
 trp_woodmen_skilled_forester_pl|Guardiani dei Boschi Esperti
-trp_woodmen_axemen|Taglialegna dei Boschi
-trp_woodmen_axemen_pl|Taglialegna dei Boschi
+trp_woodmen_axemen|Guardiano dei Boschi d'Elite
+trp_woodmen_axemen_pl|Guardiani dei Boschi d'Elite
 trp_woodmen_master_axemen|Guardia Notturna di Bosco Atro
 trp_woodmen_master_axemen_pl|Guardie Notturne di Bosco Atro
 trp_woodmen_tracker|Inseguitore dei Boschi
@@ -68,7 +68,7 @@ trp_beorning_tolltacker|Gabelliere di Beorn
 trp_beorning_tolltacker_pl|Gabellieri di Beorn
 trp_beorning_sentinel|Sentinella di Beorn
 trp_beorning_sentinel_pl|Sentinelle di Beorn
-trp_beorning_warden_of_the_ford|Guardiani del Guado di Beorn
+trp_beorning_warden_of_the_ford|Guardiano del Guado di Beorn
 trp_beorning_warden_of_the_ford_pl|Custodi del Guado di Beorn
 trp_beorning_carrock_lookout|Vedetta della Carroccia di Beorn
 trp_beorning_carrock_lookout_pl|Vedette della Carroccia di Beorn
@@ -138,7 +138,7 @@ trp_rhun_light_cavalry|Cavaliere Leggero del Rhûn
 trp_rhun_light_cavalry_pl|Cavalleria Leggera del Rhûn 
 trp_rhun_noble_cavalry|Cavaliere Nobile del Rhûn 
 trp_rhun_noble_cavalry_pl|Cavalleria Nobile del Rhûn 
-trp_rhun_heavy_noble_cavalry|Cavaliere Nobile Pesante di Rhun
+trp_rhun_heavy_noble_cavalry|Cavaliere Nobile Pesante di Rhûn
 trp_rhun_heavy_noble_cavalry_pl|Cavalleria Nobile Pesante del Rhûn 
 trp_dorwinion_noble_of_rhun|Nobile Dorwinion del Rhûn 
 trp_dorwinion_noble_of_rhun_pl|Nobili Dowinion del Rhûn 
@@ -354,7 +354,7 @@ trp_greenwood_vet_sentinel|Sentinella veterana di Boscoverde
 trp_greenwood_vet_sentinel_pl|Sentinelle veterane di Boscoverde
 trp_mirkwood_guardsman|Guardia di Boscoverde
 trp_mirkwood_guardsman_pl|Guardie di Boscoverde
-trp_greenwood_spearman|Fante di Greenwood
+trp_greenwood_spearman|Fante di Boscoverde
 trp_greenwood_spearman_pl|Fanteria di Boscoverde
 trp_greenwood_veteran_spearman|Fante veterano di Boscoverde
 trp_greenwood_veteran_spearman_pl|Fanteria veterana di Boscoverde
@@ -1384,7 +1384,7 @@ trp_elder_hornburg|Conte di Hornburg
 trp_elder_hornburg_pl|La Fortezza
 trp_elder_eastemnet|Conte di Emnet Est
 trp_elder_eastemnet_pl|La città
-trp_elder_westfold|Conte di Ovestfolda
+trp_elder_westfold|Conte di Ovestfalda
 trp_elder_westfold_pl|La città
 trp_elder_westemnet|Conte di Emnet Ovest
 trp_elder_westemnet_pl|La città
@@ -1414,7 +1414,7 @@ trp_elder_beorn|Il Saggio di Beorn
 trp_elder_beorn_pl|Il borgo
 trp_elder_harad|Capo del Campo Harad
 trp_elder_harad_pl|Il Campo
-trp_elder_rhun|Capo del Campo di Rhun
+trp_elder_rhun|Capo del Campo di Rhûn
 trp_elder_rhun_pl|Il Campo
 trp_elder_khand|Capo del Campo di Khand
 trp_elder_khand_pl|Il Campo
@@ -1452,7 +1452,7 @@ trp_elder_beorn_ac|Comandante del Campo
 trp_elder_beorn_ac_pl|Il Campo
 trp_elder_harad_ac|Capo del Campo Harad
 trp_elder_harad_ac_pl|Il Campo
-trp_elder_rhun_ac|Capo del Campo di Rhun
+trp_elder_rhun_ac|Capo del Campo di Rhûn
 trp_elder_rhun_ac_pl|Il Campo
 trp_elder_khand_ac|Capo del Campo di Khand
 trp_elder_khand_ac_pl|Il Campo

@@ -50,32 +50,32 @@ trp_woodmen_skilled_forester|Zkuseny lesni drevorubec
 trp_woodmen_skilled_forester_pl|Zkuseni lesni drevorubci 
 trp_woodmen_axemen|Lesni sekernik
 trp_woodmen_axemen_pl|Lesnii sekernici
-trp_woodmen_master_axemen|Noční strážný z Mirkwoodu
-trp_woodmen_master_axemen_pl|Noční stráž z Mirkwoodu
+trp_woodmen_master_axemen|Noční strážný z Temného hvozdu
+trp_woodmen_master_axemen_pl|Noční stráž z Temného hvozdu
 trp_woodmen_tracker|Lesni stopar
 trp_woodmen_tracker_pl|Lesni stopari
 trp_woodmen_scout|Lesni pruzkumnic
 trp_woodmen_scout_pl|Lesni pruzkumnici
 trp_woodmen_archer|Lesni lucisnik
 trp_woodmen_archer_pl|Lesni lucisnici
-trp_fell_huntsmen_of_mirkwood|Noční stopař z Mirkwoodu
-trp_fell_huntsmen_of_mirkwood_pl|Noční stopaři z Mirkwoodu
-trp_beorning_vale_man|Beoringský muz
-trp_beorning_vale_man_pl|Beorningští muži
-trp_beorning_warrior|Beoringský bojovník
+trp_fell_huntsmen_of_mirkwood|Noční stopař z Temného hvozdu
+trp_fell_huntsmen_of_mirkwood_pl|Noční stopaři z Temného hvozdu
+trp_beorning_vale_man|Meddědovec
+trp_beorning_vale_man_pl|Meddědovci
+trp_beorning_warrior|Meddědovský válečník
 trp_beorning_warrior_pl|Valecnici Meddedovcu
-; trp_beorning_tolltacker|Beorning Toll-Taker
-; trp_beorning_tolltacker_pl|Beorning Toll-Takers
+trp_beorning_tolltacker|Měddědovský mýtný
+trp_beorning_tolltacker_pl|Měddědovští mýtní
 trp_beorning_sentinel|Straz Meddedovcu
 trp_beorning_sentinel_pl|Straze Meddedovcu
 trp_beorning_warden_of_the_ford|Meddedovsky ochrance Brodu
-; trp_beorning_warden_of_the_ford_pl|Beorning Wardens of the Ford
-; trp_beorning_carrock_lookout|Beorning Carrock Lookout
-; trp_beorning_carrock_lookout_pl|Beorning Carrock Lookouts
-; trp_beorning_carrock_fighter|Beorning Carrock Fighter
-; trp_beorning_carrock_fighter_pl|Beorning Carrock Fighters
-; trp_beorning_carrock_berserker|Beorning Carrock Berserker
-; trp_beorning_carrock_berserker_pl|Beorning Carrock Berserkers
+trp_beorning_warden_of_the_ford_pl|Meddědovský ochránce Brodu
+trp_beorning_carrock_lookout|Skalbalová hlídka Meddědovců
+trp_beorning_carrock_lookout_pl|Skalbalové hlídky Meddědovců
+trp_beorning_carrock_fighter|Skalbalový bojovník Meddědovců
+trp_beorning_carrock_fighter_pl|Skalbaloví bojovníci Meddědovců
+trp_beorning_carrock_berserker|Skalbalový berserk Meddědovců
+trp_beorning_carrock_berserker_pl|Skalbaloví berserkové Meddědovců
 trp_dale_militia|Dálský domobránce
 trp_dale_militia_pl|Dálská domobrana
 trp_dale_man_at_arms|Dálský ozbrojenec
@@ -86,16 +86,16 @@ trp_laketown_bowmen|Dolský lukostřelec
 trp_laketown_bowmen_pl|Dolští lukostřelci
 trp_laketown_archer|Dolský lučištník
 trp_laketown_archer_pl|Dolští lučištníci
-; trp_barding_bowmen_of_esgaroth|Barding Bowman
-; trp_barding_bowmen_of_esgaroth_pl|Barding Bowmen
+trp_barding_bowmen_of_esgaroth|Bardovský lučištník
+trp_barding_bowmen_of_esgaroth_pl|Bardovští lučištníci
 trp_dale_warrior|Dolský šermíř
 trp_dale_warrior_pl|Dolští šermíři
 trp_dale_veteran_warrior|Dolský seržant
 trp_dale_veteran_warrior_pl|Dolští seržanti
-; trp_dale_marchwarden|Hearthman of Dale
-; trp_dale_marchwarden_pl|Hearthmen of Dale
+trp_dale_marchwarden|Dvorní válečník z Dolu
+trp_dale_marchwarden_pl|Dvorní válečníci z Dolu
 trp_dale_pikeman|Dolský kopiník
-trp_dale_pikeman_pl|Dolský kopiníci
+trp_dale_pikeman_pl|Dolští kopiníci
 ; trp_dale_billman|Dale Billman
 ; trp_dale_billman_pl|Dale Billmen
 ; trp_dale_bill_master|Dale Bill Master
@@ -1561,8 +1561,8 @@ trp_ring_hunter_four_pl|hledači prstenu
 ; trp_start_quest_woodelf_pl|Galadhrim Royal Marksmen
 ; trp_start_quest_mordor_scout|Mordor Guide
 ; trp_start_quest_mordor_scout_pl|Mordor Guides
-; trp_start_quest_beorning|Beorning Carrock Berserker
-; trp_start_quest_beorning_pl|Beorning Carrock Berserkers
+trp_start_quest_beorning|Skalbalový berserk Meddědovců
+trp_start_quest_beorning_pl|Skalbaloví berserkové Meddědovců
 ; trp_beorning_shield_bear|Bear Warrior
 ; trp_beorning_shield_bear_pl|Bear Warriors
 ; trp_morannon_healer|Okstuk the Healer

@@ -1,4 +1,4 @@
-dlga_start:mutiny_pretalk_1|嗨，{playername}。^伙计们在抱怨！想要乐子！不想行军！
+dlga_start:mutiny_pretalk_1|嗨，{playername}。^伙计们在抱怨！他们想要多点乐子！少点行军！
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|快归队，渣滓！战争期间凡事我说了算！
 dlga_mutiny_pretalk_2:close_window|好吧，头儿。好吧....
 dlga_start:mutiny_talk_1|头儿！伙计们不高兴！伙计们一点都不高兴！^没人肉吃，没乐子找！^伙计们认为头儿不好！
@@ -672,7 +672,7 @@ dlga_start:caravan_res_tut2|*窃笑*我猜现在我才是老大了。是啊，�
 dlga_caravan_res_tut1:caravan_noduel|(资源点教程)^^ 能在魔多用于交易的资源点和你在初始派系取得的的资源点不同，你要在魔多取得当地派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。
 dlga_caravan_res_tut2:caravan_duel1|(资源点教程)^^ 能在魔多用于交易的资源点和你在初始派系取得的的资源点不同，你要在魔多取得当地派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。
 dlga_caravan_noduel:caravan_duel2|我吐口痰的功夫就能杀死他！我没必要向他这样的人证明什么。
-; dlga_caravan_duel1:caravan_duel2|What I do is none of your affair, Orc. But I will help our allies and slay our foes.
+dlga_caravan_duel1:caravan_duel2|我要做什么和你没有半点关系，半兽人！你只需要知道我会帮助我的朋友，并砍下敌人的头颅。
 dlga_caravan_duel2:caravan_fac_tut|很好，很好！看看我们旁边这些畏畏缩缩的可怜人哈！他们在害怕你，哦是啊，他们应该害怕，他们应该害怕！我不。呃。但是，我欠你一个人情，不是吗！？我会给你好处的。我今天会把你的情况告诉老大们（Bosses）。议论将传播开来。当老大们（Bosses）对你有足够耳闻时…他们可能会为你准备一些特别的东西。礼物，权力，尊重！我现在要回去为我自己做一件大事了！
 dlga_caravan_fac_tut:caravan_duel3|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
 dlga_woodelf_help_6:woodelf_help_7|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
@@ -697,7 +697,7 @@ dlga_kill_scout_3:kill_scout_4|(资源点教程)^^ 能在魔多用于交易的�
 dlga_kill_scout_4:kill_scout_5|你想让我们喝半兽人泔水？我们宁愿喝自己的小便。
 ; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I’ve won my bet with Gothmog, thanks to you!!^^ I’ll tell him and the other Bosses about you, for sure. Lugbúrz will know how useful you were today, have no fear! The Great Eye is upon you, now!^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_kill_scout_6:kill_scout_7|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
-; dlga_kill_scout_7:kill_scout_8|What I do is none of your affair, you disgusting creature. Now let’s move!
+dlga_kill_scout_7:kill_scout_8|我做什么关你屁事！你这恶心的怪物！滚开！
 dlga_kill_scout_8:close_window|好吧，好吧。走这边！
 dlga_woodelf_help_1:woodelf_help_2.1|我从没见过如此大的半兽人。真是些肮脏的东西…不用担心，我是一名正为未来大战做准备的士兵。
 dlga_woodelf_help_2:woodelf_help_3.1|你是一名士兵？毫无疑问！你精湛的武艺我刚刚已经见识过了。看来今天的确走运，我应该趁此机会返回村庄，把这群肮脏野兽的消息通知给我的村民们。
@@ -903,7 +903,7 @@ dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|我有一批{s6}需�
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|好，我会按时送达的。
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_stall|恐怕我现在带不了这么多货物。
 ; dlga_merchant_quest_requested:merchant_quest_brief.2|Thanks for offering to help.^^This war has waged for so long that some of our centers are no longer looking good.^^Perhaps you can go and reinforce a center in need...
-; dlga_merchant_quest_brief:merchant_quest_brief_reinforce_center|{s5} has been battered by the enemy. We will need to send help. ^^I need someone to reinforce {s5} by at least {reg5} soldiers.^^ It does not matter if they are experienced or not. They just need whatever you can provide.^^ If you are able to do this, they can withstand more attacks.^^ What do you say?
+dlga_merchant_quest_brief:merchant_quest_brief_reinforce_center|{s5}正在被敌人围攻！我们得赶紧送去支援！^^我需要有人带着至少{reg5}名士兵去支援{s5}。^^ 现在他们已经顾不了精挑细选了，不管是精兵还是农民，来者不拒。^^ 如果你真的能送去支援，他们就能够坚持更久！^^ 你说什么？
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|彳亍口巴，我会尽我所能的。
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|抱歉，恐怕你需要找其他人做这件事儿了。
 dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|我还不能做这个。
@@ -946,7 +946,7 @@ dlga_merchant_quest_brief:move_cattle_herd_quest_brief|必须在{reg6}天之内�
 dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|好，我会按时送到{s13}的。
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|抱歉，我做不到。
 dlga_move_cattle_herd_quest_taken:mayor_pretalk|好极了！你会能在城外找到它们。送到{s13}之后别忘了回来找我领取你的报酬。
-; dlga_merchant_quest_requested:mayor_pretalk|Nothing right now, Commander. There’ll be more to do soon enough! Keep your blades sharp and wet.
+dlga_merchant_quest_requested:mayor_pretalk|暂时没什么事了，大人，不过估计很快就又有的忙活了。不要因为短暂的平静而让时间磨坏了你的剑！
 dlga_goods_merchant_talk:goods_trade_requested|我想买点东西…也可能要卖点。
 dlga_goods_trade_requested:goods_trade_completed|当然，当然…请看，我的库存全都在这儿了…
 dlga_goods_trade_completed:goods_merchant_talk|还有其他的事情么？
@@ -978,7 +978,7 @@ dlga_start:town_merchant_talk.1|日安。有什么我可以效劳的吗？
 dlga_town_merchant_talk:trade_requested_weapons|我需要新的装备，跟我说说你的仓库中都有什么好东西。
 dlga_town_merchant_talk:trade_requested_horse|我正考虑弄一匹坐骑。
 dlga_trade_requested_weapons:merchant_trade|啊，好的指挥官。你在任何地方都不会找到比我这儿更好的货物了。
-; dlga_trade_requested_horse:merchant_trade|Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.
+dlga_trade_requested_horse:merchant_trade|我这的坐骑不论是用来杀人还是旅行都是绝对的首选，过了这个村可就没这个店了！
 dlga_merchant_trade:town_merchant_talk|还有其他的事情么？
 dlga_town_merchant_talk:merchant_gossip|跟我说说最近人们都在谈论些什么？
 dlga_town_merchant_talk:close_window|再见。

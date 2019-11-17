@@ -140,8 +140,8 @@ dlga_ziggy_no:close_window.1|Très bien, Commandant.
 dlga_ziggy_yes:ziggy_choose_prisoners|Excellent. Lequel de ces spécimens donneriez-vous ?
 dlga_ziggy_choose_prisoners:ziggy_no|Je n'en ai aucun dont je souhaite me séparer.
 dlga_ziggy_chosen_prisoner:ziggy_ritual|Merci, commandant ! Un moment... ah oui, celui-ci devrait très bien faire.... Agannūlo burudan kinum ! Kadō nakh, îdô ugru-dalad dâira !
-; dlga_ziggy_chosen_prisoner:ziggy_ritual.1| What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Qu'avons-nous ici? Fier, provocant? Craintif, comme vous devriez l'être? Maintenant, je vais vous donner une raison d'avoir peur, en effet! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_ritual:ziggy_ritual_succeed|Oh oui ... oui! Voyez, Commandant! Regardez ce que moi, Zigûrphel, j'ai accompli! Vous connaissez les loups d'Angband? De Draugluin, ou le puissant Carcharoth qui a tué Huan le Chien de Valinor? Tout comme le Seigneur des Ténèbres pouvait détourner et piéger un esprit captif dans une enveloppe adapté à ses objectifs, moi aussi j'ai capturé un esprit inférieur et l'ai soumise à nous sous la forme d'une grande bête sombre! Celle-ci n’est pas aussi grande que la première progéniture de Draugluin, bien sûr, elle n’a rien de comparable, mais elle servira
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|C'est toujours une joie d'amener un ennemi à ses pieds.
 dlga_ziggy_ritual:ziggy_choose_prisoners|Ach ! Celui-ci était trop faible ! Sans valeur ! Donnez-m'en un plus fort, Commandant, un qui n'échouera pas !
 dlga_ziggy_ritual_succeed:close_window|Et bien sûr, permettez-moi de me reposer un peu ; ensuite, vous pourrez me confier un autre prisonnier. Je ferai le reste.
@@ -372,7 +372,7 @@ dlga_ring_hunters_party_attack_2:close_window|Vérifiez leurs affaires et leurs 
 dlga_start:ring_hunter_lair_defeat|Cet anneau appartient à l'œil ! Vous ne l'aurez pas !
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Ceci m'appartient désormais.
 dlga_ring_hunter_lair_defeat2:close_window|Vous pensez avoir remporté une grande victoire ? Un pale victoire comparé à la notre surement. Bah! Notre armée est partie bien avant votre venue. Vous arrivez trop tard pour sauver ceux que vous recherchiez!
-; dlga_start:beorn_message|My {lord/lady}, we received a warning from {s1} that a large outlaw warband was headed our way! Alas, there was no time to gather enough warriors. Having heard the sound of battle, we prepared for the worst!
+dlga_start:beorn_message|{Mon Seigneur/Ma Dame}, nous avons reçu un avertissement de {s1} nous informant qu'une importante troupe de bandits arrivait sur nous! Nous n'avions pas le temps de rassembler suffisamment de troupes et quand nous avons entendu le son des combats, nous nous sommes préparés au pire !
 dlga_beorn_message:beorn_message2|Ce n'était pas une simple troupe de bandits. De fait, c'étaient certains des meilleurs guerriers du Seigneur des ténèbres... Toutefois leurs chefs étaient absents. ils ont établit leur repère près de la Forêt Noire et je dois m'y hâter. 
 dlga_beorn_message2:beorn_message_end|Oui, nous avons été avertis de l'existence de ce camp et envoyés des éclaireurs. Nous les avons vus réduire leur camp en cendres et repartir au galop pour le Mordor. Si vous aviez chargé la bas en premier lieu, vous n'auriez peut-être pas pu nous aider. Nous vous sommes vraiment reconnaissants pour votre victoire.
 dlga_beorn_message_end:beorn_message_close|Je dois faire mon rapport et informer {s1} de la bataille. Retourner à votre village et placez vos éclaireurs. Il pourrait y avoir des traînards.
@@ -417,10 +417,10 @@ dlga_lord_give_order:lord_give_order_answer| Suivez-moi. [Cette action vous coû
 dlga_lord_give_order:lord_give_order_details_ask| Allez à… [Cette action vous coûtera {reg1}/{reg2} d'influence]
 dlga_lord_give_order:lord_give_order_details_ask.1| Patrouillez aux alentours de… [Cette action vous coûtera {reg1}/{reg2} d'influence]
 dlga_lord_give_order:lord_give_order_details_ask.2| Engagez le combat contre les forces ennemies aux alentours de… [Cette action vous coûtera {reg1}/{reg2} d'influence]
-; dlga_lord_give_order:lord_give_order_assault|Together, you and I can take {s11}. You should assault immediately... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order_assault:lord_pretalk|{s4} is directing this siege. I suggest you speak to them.
-; dlga_lord_give_order_assault:lord_pretalk.1|Our preparations are not yet ready. We need another {s11}
-; dlga_lord_give_order_assault:close_window|Very well -- Attack the walls!
+dlga_lord_give_order:lord_give_order_assault|Ensemble, vous et moi pouvons prendre {s11}. Vous devez attaquer immédiatement... [Coûts {reg1}/{reg2} influence]
+dlga_lord_give_order_assault:lord_pretalk|{s4} dirige ce siège. Je vous suggère de leur parler.
+dlga_lord_give_order_assault:lord_pretalk.1|Nos préparatifs ne sont pas encore prêts. Nous avons besoin d'un autre {s11}
+dlga_lord_give_order_assault:close_window|Très bien -- Attaquez les murs!
 dlga_lord_give_order:lord_give_order_stop|Je n'ai plus besoin de vos services pour le moment, vous êtes libre d'agir comme bon vous semblera.
 dlga_lord_give_order:lord_pretalk| N’y pensez plus.
 dlga_lord_give_order_details_ask:lord_give_order_details|Où ?
@@ -492,7 +492,7 @@ dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|Merci beaucoup, mon ami
 dlga_capture_enemy_hero_thank_2:lord_pretalk|Certainemment, {s65}.
 dlga_capture_enemy_hero_thank_2:lord_pretalk.1|Ce n’était rien.
 dlga_lord_active_mission_2:lord_raise_troops_thank|En effet. J'ai entraîné {reg1} {s13}. Vous pouvez les prendre.
-; dlga_lord_active_mission_2:lord_raise_troops_thank.1|Indeed. I have trained {reg2} troops, and {reg1} of them have learned well. You can take them, they should be more prepared for battle.
+dlga_lord_active_mission_2:lord_raise_troops_thank.1|En effet. J'ai entraîné {reg2} soldats et {reg1} d'entre eux ont bien appris. Vous pouvez les prendre, ils devraient être plus à même de combattre.
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|J'ai trouvé {s4} se cachant dans {s3} et je lui ai infligé sa punition.
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|J'ai peur qu'il se soit enfuit.
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|Et nous sommes bien mieux sans lui! Merci {playername} d'avoir enlevé cette épine, ô combien gênante, de mon pied. Il est agréable de savoir qu'on peut vous faire confiance pour gérer les choses avec le tact approprié. J'ai d'ores et déjà envoyé un note à nos intendants, et vous pouvez compter sur plus d'approvisionnements de notre part.
@@ -545,7 +545,7 @@ dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Où puis-
 dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Cherchez-le dans la Forêt Noire, à proximité de Dol Guldur elle-même. Il est un ennemi à la fois bien protégé et prudent, il vous faudra donc être discret pour empêcher que l'alarme soit donnée. S'il s'échappe, il se relogera dans quelque noir endroit que nous ne connaissons pas et il continuera ses malveillances. C'est notre seule opportunité de le vaincre. Beaucoup dépend de votre succès. Partez, avec nos bénédictions.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Il en sera fait selon votre volonté, ma Dame. Je ferai de mon mieux pour éliminer ce mal.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Pardonnez-moi, ma Dame. J'ai certaines affaires pressantes dont je dois m'occuper avant d'aider votre peuple à contrer cette menace.
-; dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|I understand, {playername}. But do not tally for too long, for the effort of resisting his magic is wearying me.
+dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Je comprends, {playername}. Mais ne tardez pas trop, car résister à sa magie m'épuise.
 dlga_lord_tell_mission:lord_mission_deliver_message|Je dois envoyer une lettre à {s13}, qui devrait être en ce moment à {s4}. Si vous allez dans sa direction, pourriez-vous la lui livrer ? La lettre doit être entre ses mains dans les 30 jours.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certainement, j'ai l'intention de passer par {s4}, et cela ne me pose pas de problème.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|De doute de voir {s13} avant longtemps, {s65}. Vous feriez mieux d'envoyer quelqu'un d'autre.
@@ -563,7 +563,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Je suis t
 dlga_lord_mission_raise_troops_accepted:close_window|Vous enlevez un poids de mes épaules, {playername}. Je vais faire dire à mes sergents de vous envoyer les recrues et de les passer sous votre commandement. De plus, je vais vous avancer quelque argent pour leurs dépenses. Voici, cette somme devrait suffire. Merci pour votre aide.
 dlga_lord_mission_raise_troops_alternate:close_window|C'est une proposition intéressante {playername}. Je vais dire à mes sergents d'envoyer les recrues dans l'arène. Suivez les là bas et entraînez mes hommes. Je vous remercie de votre aide.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, bien sûr. Je m'attendais à plus. Et bien, bonne chance à vous.
-; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There has been news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
+dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|J'ai une affaire pour laquelle vous pourriez m'être utile, un problème avec le bandit sans foi ni loi connu sous le nom de {s4}. Il a assassiné un de mes gardes du corps et a échappé à son jugement jusqu'ici. Des nouvelles récentes disent qu'il a été aperçu à {s3}. Vous pourriez le traquer et lui infliger une justice rapide, et je vous récompenserai en retour.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Je vais le traquer et exécuter la loi.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Je suis trop occupé pour aller à sa recherche pour le moment.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|C'est excellent, {playername}. Je vous serai reconnaissant, et votre prouesses seront notée. Et bien, bonne chasse !
@@ -672,7 +672,7 @@ dlga_start:caravan_res_tut2|*ricanement* Je suppose que je suis le chef maintena
 dlga_caravan_res_tut1:caravan_noduel|(TUTORIEL DES POINTS DE RESSOURCES)^^ Les points de ressources utilisables en Mordor ne sont pas ceux de votre propre faction d'origine, mais ceux que vous gagnerez en Mordor. ^^Référez-vous à la section "Rapports" pour plus d'information.
 dlga_caravan_res_tut2:caravan_duel1|(TUTORIEL DES POINTS DE RESSOURCES)^^ Les points de ressources utilisables en Mordor ne sont pas ceux de votre propre faction d'origine, mais ceux que vous gagnerez en Mordor. ^^Référez-vous à la section "Rapports" pour plus d'information.
 dlga_caravan_noduel:caravan_duel2|J'aurais pu le tuer sans me fatiguer! Mais je n'ai rien à prouver aux gens comme lui.
-; dlga_caravan_duel1:caravan_duel2|What I do is none of your affair, Orc. But I will help our allies and slay our foes.
+dlga_caravan_duel1:caravan_duel2|Ce que je fais ne vous concerne pas, Orque. Mais je vais aider nos alliés et détruire nos ennemis.
 dlga_caravan_duel2:caravan_fac_tut|Evidemment, évidemment! Regardez toutes ces misérables larves autour de nous! Ah! Ils vous craignent comme vous le méritez. Mais maintenant je vous dois une faveur n'est-ce pas ? Je vais vous rendre service, je parlerais de vous aux chefs. Les rumeurs vont vite, et quand les chefs entendront suffisamment parler de vous... Peut être auront ils quelque chose de spécial pour vous. Présents, pouvoir, respect! Je pars maintenant pour pouvoir m'occuper des mes affaires!
 dlga_caravan_fac_tut:caravan_duel3|(TUTORIEL DES RANGS DE FACTION) ^^Les points de rang vous permettent de monter l'échelle hiérarchique de votre faction et/ou d'autres factions. ^^Cela influe sur la capacité maximale de votre armée en nombre de troupes, vous octroie un revenu hebdomadaire de ressources de la faction correspondante et débloque l'accès à des récompenses spécifiques à chaque faction.
 dlga_woodelf_help_6:woodelf_help_7|(TUTORIEL DES RANGS DE FACTION) ^^Les points de rang vous permettent de monter l'échelle hiérarchique de votre faction et/ou d'autres factions. ^^Cela influe sur la capacité maximale de votre armée en nombre de troupes, vous octroie un revenu hebdomadaire de ressources de la faction correspondante et débloque l'accès à des récompenses spécifiques à chaque faction.
@@ -891,7 +891,7 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|J'espère que vous n'avez pas éc
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Très bien, faites de votre mieux.
 dlga_merchant_quest_taken:mayor_pretalk|Excellent. Alors je compte sur vous. Bonne chance.
 dlga_merchant_quest_stall:mayor_pretalk|Bien, je vais devoir trouver quelqu'un d'autre. Mais dites-moi si vous changez d'avis.
-; dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
+dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|Je vais faire mon possible. Je n'entends parler de leurs allées et venues que s’ils ont traversé un autre centre récemment. S'ils ne sont pas passé dans un centre, j'entends parler de la région où ils se trouvent auprès des caravanes.
 dlga_mayor_talk_ask_location_2:mayor_pretalk|Tout bien consideré, je ne pense pas que cela soit nécessaire
 dlga_merchant_quest_requested:merchant_quest_brief|Bien, vous semblez assez habile. Je pense que je dois avoir quelque chose que vous pouvez faire.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Nous avons eu quelques affrontements aux alentours de {s5} récemment, avec tout le chaos qui va avec, et cela a attiré quelques bandes d'Orques tribaux voulant piller les environs durant la confusion. J'ai besoin de quelqu'un pour donner à ces Orques une bonne leçon. C'est dans vos cordes ?
@@ -1056,19 +1056,19 @@ dlga_party_reinforce_check_1:party_reinforce_end|Ainsi vous avez changé d'avis.
 dlga_party_reinforce_check_1:party_reinforce_end.1|Ces soldats ne nous sont d'aucune utilité. ^Reprenez-les.
 dlga_start:close_window.29|Vous me retardez ! Les magiciens ne sont jamais en retard !
 dlga_start:close_window.30|Il... m'appeeeeelle...
-; dlga_start:close_window.31|You there! You survived? Good! You can't be waving a stick about! Take this!
-; dlga_start:ori_choose_1|You fight well, kinsman! I don't know how you've been surviving so far. I remember you joining us recently, before all this... before Balin fell... Where are you from?
-; dlga_ori_choose_1:ori_choose_finish|I was a tracker, sent to the woods near the Bear people. I recently heard about Balin's company and joined.
-; dlga_ori_choose_1:ori_choose_finish.1|I am a distant cousin, a veteran bodyguard from a mine far away. Then I heard of Balin and joined.
-; dlga_ori_choose_1:ori_choose_finish.2|I am from the Iron Hills, a veteran of the wars, and a miner during peace. I heard of Balin and joined, wanting more kill orcs.
-; dlga_ori_choose_finish:close_window|Good to know! I found these, fit for your background. We shall make our stand here and take as many of them with us!
-; dlga_start:close_window.32|It looks like you are shaking off those rusty skills, eh? Here, take a swig of this. It will make you feel better. More orcs are coming!
-; dlga_start:close_window.33|Take that dusty thing off you and wear this. Should protect you better. These orcs bite hard!
-; dlga_start:close_window.34|Something big is coming! Get ready!
-; dlga_start:close_window.35|There are too many of them... but we are dwarves!
-; dlga_start:close_window.36|Those orcs opened up a cavern filled with treasures. Here are some that I found, go ahead and take them.
-; dlga_start:close_window.37|No.... I hear them... they are outside! They are everywhere!
-; dlga_start:close_window.38|Here... Our Lord Balin's... you are worthy of these...
+dlga_start:close_window.31|Vous là! Vous avez survécu? Bien! Vous ne pouvez pas agiter un bâton de la sorte! Prenez ça!
+dlga_start:ori_choose_1|Vous vous battez bien, frère! Je ne sais pas comment vous avez survécu jusqu'à présent. Je me souviens de votre arrivée récente, avant tout cela ... avant la chute de Balin ... D'où venez-vous?
+dlga_ori_choose_1:ori_choose_finish|J'étais un pisteur envoyé dans les bois près du peuple Ours. J'ai récemment entendu parler de la compagnie de Balin et je l'ai rejoint.
+dlga_ori_choose_1:ori_choose_finish.1|Je suis un cousin éloigné, un garde du corps vétéran d'une mine lointaine. Puis j'ai entendu parler de Balin et j'ai rejoint le groupe.
+dlga_ori_choose_1:ori_choose_finish.2|Je suis originaire des Collines de Fer, un vétéran des guerres et un mineur pendant la paix. J'ai entendu parler de Balin et j'ai rejoint le groupe, voulant tuer plus de d'orques.
+dlga_ori_choose_finish:close_window|Bon à savoir! J'ai trouvé ceux-ci, c'est adaptés à votre carrière. Nous allons tenir position ici et nous en emporterons autant que possible avec nous!
+dlga_start:close_window.32|On dirait que vous dérouillez vos compétences, hein? Tenez prenez une gorgée de ça. Vous vous sentirez mieux. D'autres orques arrivent!
+dlga_start:close_window.33|Enlevez cette chose poussiéreuse et portez ceci. Ca devrait mieux vous protéger. Ces orcs mordent fort!
+dlga_start:close_window.34|Quelque chose de gros arrive! Préparez vous!
+dlga_start:close_window.35|Ils sont trop nombreux... mais nous sommes des nains!
+dlga_start:close_window.36|Ces orcs ont ouvert une caverne remplie de trésors. Voici ce que j'ai trouvés, allez-y et prenez-les.
+dlga_start:close_window.37|Non... je les entends... ils sont dehors! Ils sont partout!
+dlga_start:close_window.38|Tenez... De notre Seigneur Balin... vous en êtes digne...
 dlga_start:party_encounter_hostile_attacker|Vous n'avez aucune chance contre nous. Rendez-vous maintenant ou nous vous tuerons tous...
 dlga_party_encounter_hostile_attacker:close_window|N'attaquez pas ! Nous nous rendons.
 dlga_party_encounter_hostile_attacker:close_window.1|Nous combattrons jusqu'à la fin !

@@ -5,8 +5,8 @@ imod_bent|Savijeno %
 imod_chipped|Okhrnuto %
 imod_battered|Pohabano %
 imod_poor|Loše %
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|Jednostavno%s
+imod_old|Drevni %s
 imod_cheap|Jeftino%
 imod_fine|Odlično %
 imod_well_made|Dobro napravljeno %
@@ -23,16 +23,16 @@ imod_tattered|Okaljano %
 imod_ragged|Grubo %
 imod_rough|Grubo %
 imod_sturdy|Čvrsto %s
-; imod_thick|Robust %s
+imod_thick|Kršan%s
 imod_hardened|Prekaljeno %s
 imod_reinforced|Ojačano %s
-; imod_cloak|%s with cloak
+imod_cloak|%ssa kaputom
 imod_lordly|Remekdjelo %
 imod_lame|Jadno %s
 imod_swaybacked|Pogrbljenost %s
 imod_stubborn|Tvrdoglav %s
 imod_timid|Plah %s
-; imod_meek|Blood-covered %s
+imod_meek|Krvljem preliveno %s
 imod_spirited|Srčan %s
 imod_champion|Prvak %s
 imod_fresh|Svjež %s
