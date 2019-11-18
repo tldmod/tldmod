@@ -42,72 +42,72 @@ trp_townsman|Ciudadano
 trp_townsman_pl|Ciudadano
 trp_watchman|Ciudadana
 trp_watchman_pl|Ciudadanas
-trp_woodmen_youth|Hombre de los Bosques
-trp_woodmen_youth_pl|Hombres de los Bosques
-trp_woodmen_forester|Guardián de los Bosques
-trp_woodmen_forester_pl|Guardianes de los Bosques
-trp_woodmen_skilled_forester|Guardián Experto de los Bosques 
-trp_woodmen_skilled_forester_pl|Guardianes Expertos de los Bosques
-trp_woodmen_axemen|Hachero de los Bosques 
-trp_woodmen_axemen_pl|Hacheros de los Bosques 
-trp_woodmen_master_axemen|Guardia Nocturno del Bosque Negro
-trp_woodmen_master_axemen_pl|Guardias Nocturnos del Bosque Negro
-trp_woodmen_tracker|Rastreador de los Bosques 
-trp_woodmen_tracker_pl|Rastreadores de los Bosques
-trp_woodmen_scout|Explorador de los Bosques 
-trp_woodmen_scout_pl|Exploradores de los Bosques 
-trp_woodmen_archer|Arquero de los Bosques 
-trp_woodmen_archer_pl|Arqueros de los Bosques
-trp_fell_huntsmen_of_mirkwood|Acechador Nocturno del Bosque Negro
-trp_fell_huntsmen_of_mirkwood_pl|Acechadores Nocturnos del Bosque Negro
-trp_beorning_vale_man|Hombre Beórnida
-trp_beorning_vale_man_pl|Hombres Beórnidas
-trp_beorning_warrior|Guerrero Beórnida
-trp_beorning_warrior_pl|Guerreros Beórnidas
-trp_beorning_tolltacker|Cobrador de Peaje Beórnida
-trp_beorning_tolltacker_pl|Cobradores de Peaje Beórnidas
-trp_beorning_sentinel|Centinela Beórnida
-trp_beorning_sentinel_pl|Centinelas Beórnidas
-trp_beorning_warden_of_the_ford|Guardián Beórnida del Vado
-trp_beorning_warden_of_the_ford_pl|Guardianes Beórnidas del Vado
-trp_beorning_carrock_lookout|Vigía Beórnida de Carroca 
-trp_beorning_carrock_lookout_pl|Vigías Beórnidas de Carroca 
-trp_beorning_carrock_fighter|Luchador Beórnida de Carroca
-trp_beorning_carrock_fighter_pl|Luchadores Beórnidas de Carroca 
-trp_beorning_carrock_berserker|Berserker Beórnida de Carroca 
-trp_beorning_carrock_berserker_pl|Berserkers Beórnidas de Carroca 
-trp_dale_militia|Miliciano de Valle
-trp_dale_militia_pl|Milicia de Valle
-trp_dale_man_at_arms|Hombre de Armas de Valle
-trp_dale_man_at_arms_pl|Hombres de Armas de Valle
-trp_laketown_scout|Explorador de Valle
-trp_laketown_scout_pl|Exploradores de Valle
-trp_laketown_bowmen|Hombre con Arco de Valle
-trp_laketown_bowmen_pl|Hombres con Arco de Valle
-trp_laketown_archer|Arquero de Valle
-trp_laketown_archer_pl|Arqueros de Valle
-trp_barding_bowmen_of_esgaroth|Arquero Bárdido
-trp_barding_bowmen_of_esgaroth_pl|Arqueros Bárdidos
-trp_dale_warrior|Espadachín de Valle
-trp_dale_warrior_pl|Espadachines de Valle
-trp_dale_veteran_warrior|Sargento de Valle
-trp_dale_veteran_warrior_pl|Sargentos de Valle
-trp_dale_marchwarden|Guardián del Hogar de Valle
-trp_dale_marchwarden_pl|Guardianes del Hogar de Valle
-trp_dale_pikeman|Lancero de Valle
-trp_dale_pikeman_pl|Lanceros de Valle
-trp_dale_billman|Archero de Valle
-trp_dale_billman_pl|Archeros de Valle
-trp_dale_bill_master|Maestro Archero de Valle
-trp_dale_bill_master_pl|Maestros Archeros de Valle
-trp_merchant_squire_or_dale|Vasallo Norteño
-trp_merchant_squire_or_dale_pl|Vasallos Norteños
-trp_merchant_guard_of_dale|Auxiliar Norteño
-trp_merchant_guard_of_dale_pl|Auxiliares Norteños
-trp_merchant_protector_of_dale|Jinete de Rhovanion
-trp_merchant_protector_of_dale_pl|Jinetes de Rhovanion
-trp_girions_guard_of_dale|Guardián de la Frontera de Rhovanion
-trp_girions_guard_of_dale_pl|Guardianes de la Frontera de Rhovanion
+trp_i1_woodmen_man|Hombre de los Bosques
+trp_i1_woodmen_man_pl|Hombres de los Bosques
+trp_i2_woodmen_forester|Guardián de los Bosques
+trp_i2_woodmen_forester_pl|Guardianes de los Bosques
+trp_i3_woodmen_skilled_forester|Guardián Experto de los Bosques 
+trp_i3_woodmen_skilled_forester_pl|Guardianes Expertos de los Bosques
+trp_i4_woodmen_axemen|Hachero de los Bosques 
+trp_i4_woodmen_axemen_pl|Hacheros de los Bosques 
+trp_i5_woodmen_night_guard|Guardia Nocturno del Bosque Negro
+trp_i5_woodmen_night_guard_pl|Guardias Nocturnos del Bosque Negro
+trp_a2_woodmen_tracker|Rastreador de los Bosques 
+trp_a2_woodmen_tracker_pl|Rastreadores de los Bosques
+trp_a3_woodmen_scout|Explorador de los Bosques 
+trp_a3_woodmen_scout_pl|Exploradores de los Bosques 
+trp_a4_woodmen_archer|Arquero de los Bosques 
+trp_a4_woodmen_archer_pl|Arqueros de los Bosques
+trp_a5_woodmen_night_stalker|Acechador Nocturno del Bosque Negro
+trp_a5_woodmen_night_stalker_pl|Acechadores Nocturnos del Bosque Negro
+trp_i1_beorning_man|Hombre Beórnida
+trp_i1_beorning_man_pl|Hombres Beórnidas
+trp_i2_beorning_warrior|Guerrero Beórnida
+trp_i2_beorning_warrior_pl|Guerreros Beórnidas
+trp_i3_beorning_tolltacker|Cobrador de Peaje Beórnida
+trp_i3_beorning_tolltacker_pl|Cobradores de Peaje Beórnidas
+trp_i4_beorning_sentinel|Centinela Beórnida
+trp_i4_beorning_sentinel_pl|Centinelas Beórnidas
+trp_i5_beorning_warden_of_the_ford|Guardián Beórnida del Vado
+trp_i5_beorning_warden_of_the_ford_pl|Guardianes Beórnidas del Vado
+trp_i3_beorning_carrock_lookout|Vigía Beórnida de Carroca 
+trp_i3_beorning_carrock_lookout_pl|Vigías Beórnidas de Carroca 
+trp_i4_beorning_carrock_fighter|Luchador Beórnida de Carroca
+trp_i4_beorning_carrock_fighter_pl|Luchadores Beórnidas de Carroca 
+trp_i5_beorning_carrock_berserker|Berserker Beórnida de Carroca 
+trp_i5_beorning_carrock_berserker_pl|Berserkers Beórnidas de Carroca 
+trp_i1_dale_militia|Miliciano de Valle
+trp_i1_dale_militia_pl|Milicia de Valle
+trp_i2_dale_man_at_arms|Hombre de Armas de Valle
+trp_i2_dale_man_at_arms_pl|Hombres de Armas de Valle
+trp_a2_dale_scout|Explorador de Valle
+trp_a2_dale_scout_pl|Exploradores de Valle
+trp_a3_dale_bowman|Hombre con Arco de Valle
+trp_a3_dale_bowman_pl|Hombres con Arco de Valle
+trp_a4_dale_archer|Arquero de Valle
+trp_a4_dale_archer_pl|Arqueros de Valle
+trp_a5_barding_bowman|Arquero Bárdido
+trp_a5_barding_bowman_pl|Arqueros Bárdidos
+trp_i3_dale_swordsman|Espadachín de Valle
+trp_i3_dale_swordsman_pl|Espadachines de Valle
+trp_i4_dale_sergeant|Sargento de Valle
+trp_i4_dale_sergeant_pl|Sargentos de Valle
+trp_i5_dale_hearthman|Guardián del Hogar de Valle
+trp_i5_dale_hearthman_pl|Guardianes del Hogar de Valle
+trp_i3_dale_spearman|Lancero de Valle
+trp_i3_dale_spearman_pl|Lanceros de Valle
+trp_i4_dale_billman|Archero de Valle
+trp_i4_dale_billman_pl|Archeros de Valle
+trp_i5_dale_bill_master|Maestro Archero de Valle
+trp_i5_dale_bill_master_pl|Maestros Archeros de Valle
+trp_c2_rhovanion_retainer|Vasallo Norteño
+trp_c2_rhovanion_retainer_pl|Vasallos Norteños
+trp_c3_rhovanion_auxilia|Auxiliar Norteño
+trp_c3_rhovanion_auxilia_pl|Auxiliares Norteños
+trp_c4_rhovanion_rider|Jinete de Rhovanion
+trp_c4_rhovanion_rider_pl|Jinetes de Rhovanion
+trp_ac5_rhovanion_marchwarden|Guardián de la Frontera de Rhovanion
+trp_ac5_rhovanion_marchwarden_pl|Guardianes de la Frontera de Rhovanion
 trp_rhun_tribesman|Miembro de las Tribus de Rhûn
 trp_rhun_tribesman_pl|Miembros de las Tribus de Rhûn
 trp_rhun_horse_scout|Explorador a Caballo de Rhûn
@@ -1563,8 +1563,8 @@ trp_start_quest_mordor_scout|Guía de Mordor
 trp_start_quest_mordor_scout_pl|Guías de Mordor
 trp_start_quest_beorning|Berserker Beórnida de Carroca 
 trp_start_quest_beorning_pl|Berserkers Beórnidas de Carroca 
-trp_beorning_shield_bear|Guerrero Oso
-trp_beorning_shield_bear_pl|Guerreros Oso
+trp_i6_beorning_bear_warrior|Guerrero Oso
+trp_i6_beorning_bear_warrior_pl|Guerreros Oso
 trp_morannon_healer|Okstuk el Sanador
 trp_minas_tirith_healer|Ioreth
 trp_edoras_healer|Freya la Sanadora
@@ -1581,8 +1581,8 @@ trp_i5_deep_dweller_of_moria|Morador de las Profundidades de Moria
 trp_i5_deep_dweller_of_moria_pl|Moradores de las Profundidades de Moria
 trp_i5_orc_chieftain_of_moria|Cacique Orco de Moria
 trp_i5_orc_chieftain_of_moria_pl|Caciques Orcos de Moria
-trp_rhovanion_noble|Noble de Rhovanion
-trp_rhovanion_noble_pl|Nobles de Rhovanion
+trp_c5_rhovanion_noble|Noble de Rhovanion
+trp_c5_rhovanion_noble_pl|Nobles de Rhovanion
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel

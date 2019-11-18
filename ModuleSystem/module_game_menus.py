@@ -340,7 +340,7 @@ game_menus = [
            (jump_to_scene,"scn_tutorial_2"),(change_screen_mission)]),
       ("tutorial_3",[],"Tutorial #3: Fighting without a shield. {s3}",[
            (modify_visitors_at_site,"scn_tutorial_3"),(reset_visitors,0),
-           (call_script,"script_start_as_one","trp_beorning_tolltacker"),
+           (call_script,"script_start_as_one","trp_i3_beorning_tolltacker"),
            (assign, "$g_player_troop", "$player_current_troop_type"),
        	   (set_player_troop, "$g_player_troop"),
            (set_visitor,1,"trp_orc_of_mordor"),
@@ -724,26 +724,26 @@ game_menus = [
        (set_visitor, 0, "$g_player_troop"),
      
 ## US     
-       (set_visitors, 1, "trp_woodmen_youth",				30),
+       (set_visitors, 1, "trp_i1_woodmen_man",				30),
 #       (set_visitors, 2, "trp_woodsman_scout",				3),
-#		(set_visitors, 1, "trp_laketown_scout",				3),
-		(set_visitors, 2, "trp_laketown_bowmen",			6),
-		(set_visitors, 3, "trp_laketown_archer",			6),
-		(set_visitors, 4, "trp_beorning_vale_man",			6),
-		(set_visitors, 5, "trp_beorning_warrior",			6),
+#		(set_visitors, 1, "trp_a2_dale_scout",				3),
+		(set_visitors, 2, "trp_a3_dale_bowman",			6),
+		(set_visitors, 3, "trp_a4_dale_archer",			6),
+		(set_visitors, 4, "trp_i1_beorning_man",			6),
+		(set_visitors, 5, "trp_i2_beorning_warrior",			6),
 #       (set_visitors, 3, "trp_dale_noble",					3),
 #       (set_visitors, 4, "trp_dale_squire",				3),   
 #       (set_visitors, 5, "trp_dale_mounted_moble",			3),
-		(set_visitors, 6, "trp_beorning_tolltacker",		6),
-		(set_visitors, 7, "trp_beorning_sentinel",			6),
-		(set_visitors, 8, "trp_beorning_warden_of_the_ford",6),
-		(set_visitors, 9, "trp_beorning_carrock_lookout",	6),
-		(set_visitors, 10, "trp_beorning_carrock_fighter",	6),
-		(set_visitors, 11, "trp_dale_militia",				6),
-		(set_visitors, 12, "trp_dale_man_at_arms",			6),
-		(set_visitors, 13, "trp_dale_warrior",				6),
-		(set_visitors, 14, "trp_dale_veteran_warrior",		6),
-		(set_visitors, 15, "trp_dale_marchwarden",			6),
+		(set_visitors, 6, "trp_i3_beorning_tolltacker",		6),
+		(set_visitors, 7, "trp_i4_beorning_sentinel",			6),
+		(set_visitors, 8, "trp_i5_beorning_warden_of_the_ford",6),
+		(set_visitors, 9, "trp_i3_beorning_carrock_lookout",	6),
+		(set_visitors, 10, "trp_i4_beorning_carrock_fighter",	6),
+		(set_visitors, 11, "trp_i1_dale_militia",				6),
+		(set_visitors, 12, "trp_i2_dale_man_at_arms",			6),
+		(set_visitors, 13, "trp_i3_dale_swordsman",				6),
+		(set_visitors, 14, "trp_i4_dale_sergeant",		6),
+		(set_visitors, 15, "trp_i5_dale_hearthman",			6),
 #       (set_visitors, 15, "trp_bardian_master_archer",		3),
 ##     enemy Rhun
 		(set_visitors, 16, "trp_rhun_tribesman",			7),
@@ -1152,8 +1152,8 @@ game_menus = [
 		
 		(store_random_in_range,":gfac",0,9),  ## good faction chosen randomly
 		(try_begin),
-			(eq,":gfac",0),(assign,":trp_good_min","trp_beorning_vale_man"),(assign,":trp_good_max","trp_beorning_warden_of_the_ford" ),(else_try),
-			(eq,":gfac",1),(assign,":trp_good_min","trp_dale_militia"     ),(assign,":trp_good_max","trp_girions_guard_of_dale"       ),(else_try),
+			(eq,":gfac",0),(assign,":trp_good_min","trp_i1_beorning_man"),(assign,":trp_good_max","trp_i5_beorning_warden_of_the_ford" ),(else_try),
+			(eq,":gfac",1),(assign,":trp_good_min","trp_i1_dale_militia"     ),(assign,":trp_good_max","trp_ac5_rhovanion_marchwarden"       ),(else_try),
 			(eq,":gfac",2),(assign,":trp_good_min","trp_i1_dwarven_apprentice"),(assign,":trp_good_max","trp_i6_dwarven_longpikeman"         ),(else_try),
 			(eq,":gfac",3),(assign,":trp_good_min","trp_woodsman_of_lossarnach"),(assign,":trp_good_max","trp_master_blackroot_vale_archer"),(else_try),
 			(eq,":gfac",4),(assign,":trp_good_min","trp_dol_amroth_youth" ),(assign,":trp_good_max","trp_swan_knight_of_dol_amroth"   ),(else_try),
@@ -1442,8 +1442,8 @@ game_menus = [
   ("start_go",[],"GONDOR, the Kingdom of the White Tower",[(jump_to_menu,"mnu_start_gondor"),]),
   ("start_ro",[],"ROHAN, the Horse people"               ,[(call_script,"script_start_as_one","trp_i1_rohan_youth"),           (jump_to_menu,"mnu_choose_gender"),]),
   ("start_du",[],"DUNEDAIN, the ancient dynasty of Men"  ,[(call_script,"script_start_as_one","trp_dunedain_scout"),        (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_be",[],"BEORNINGS, the Bear people"            ,[(call_script,"script_start_as_one","trp_beorning_vale_man"),     (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_da",[],"the northern Kingdom of DALE"          ,[(call_script,"script_start_as_one","trp_dale_militia"),         (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_be",[],"BEORNINGS, the Bear people"            ,[(call_script,"script_start_as_one","trp_i1_beorning_man"),     (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_da",[],"the northern Kingdom of DALE"          ,[(call_script,"script_start_as_one","trp_i1_dale_militia"),         (jump_to_menu,"mnu_choose_gender"),]),
   ("spacer"  ,[],"_",[]),  
   ("go_back" ,[],"Go back",[
   	#(jump_to_menu, "mnu_start_good")
@@ -10003,12 +10003,12 @@ game_menus = [
 			      (set_visitors,4,"trp_gondor_militiamen", 3),
 			  (else_try),
 			  	  (				eq,"$players_kingdom", "fac_guldur"),
-  	  			  (set_visitors,2,"trp_beorning_warrior", 3),
-			      (set_visitors,4,"trp_beorning_warrior", 3),
+  	  			  (set_visitors,2,"trp_i2_beorning_warrior", 3),
+			      (set_visitors,4,"trp_i2_beorning_warrior", 3),
 			 (else_try),
 			  	  (				eq,"$players_kingdom", "fac_rhun"),
-  	  			  (set_visitors,2,"trp_laketown_scout", 3),
-			      (set_visitors,4,"trp_dale_man_at_arms", 3),
+  	  			  (set_visitors,2,"trp_a2_dale_scout", 3),
+			      (set_visitors,4,"trp_i2_dale_man_at_arms", 3),
 			 (else_try),
 			  	  (this_or_next|eq,"$players_kingdom", "fac_moria"),
   			  	  (				eq,"$players_kingdom", "fac_gundabad"),
@@ -10739,10 +10739,10 @@ game_menus = [
 	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_a3_corsair_marksman",0), 
    			# (else_try), #Dale
 	   			# (eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
-	   			# (assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
-	   			# (troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
-	   			# (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
-	   			# (troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_melee_tier_1", "trp_c3_rhovanion_auxilia"),
+	   			# (troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_c3_rhovanion_auxilia",0), #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_archer_tier_1", "trp_a3_dale_bowman"),
+	   			# (troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_a3_dale_bowman",0),   #Commented out - If we want to upgrade allies too.
 
 	   			# (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
 	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
@@ -10811,9 +10811,9 @@ game_menus = [
 				(try_begin),
 					(lt, ":level", 25),
 						# ally infantry, entries 2-7
-						(set_visitors, 2, "trp_dale_warrior", 3),(set_visitors, 3, "trp_dale_warrior", 3),(set_visitors, 4, "trp_dale_veteran_warrior", 2),(set_visitors, 5, "trp_dale_man_at_arms", 5),(set_visitors, 6, "trp_dale_pikeman", 2),(set_visitors, 7, "trp_dale_pikeman", 2),
+						(set_visitors, 2, "trp_i3_dale_swordsman", 3),(set_visitors, 3, "trp_i3_dale_swordsman", 3),(set_visitors, 4, "trp_i4_dale_sergeant", 2),(set_visitors, 5, "trp_i2_dale_man_at_arms", 5),(set_visitors, 6, "trp_i3_dale_spearman", 2),(set_visitors, 7, "trp_i3_dale_spearman", 2),
 						#ally archers, entries 8-10
-						(set_visitors, 8, "trp_laketown_bowmen", 3),(set_visitors, 9, "trp_laketown_bowmen", 3),(set_visitors, 10, "trp_laketown_archer", 3),
+						(set_visitors, 8, "trp_a3_dale_bowman", 3),(set_visitors, 9, "trp_a3_dale_bowman", 3),(set_visitors, 10, "trp_a4_dale_archer", 3),
 						#enemy infantry, entries 12-17
 						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
 						#enemy archers, entries 18-20
@@ -10822,9 +10822,9 @@ game_menus = [
 				(else_try),
 					(ge, ":level", 25),
 						# ally infantry, entries 2-7
-						(set_visitors, 2, "trp_dale_warrior", 3),(set_visitors, 3, "trp_dale_warrior", 3),(set_visitors, 4, "trp_dale_veteran_warrior", 2),(set_visitors, 5, "trp_dale_man_at_arms", 5),(set_visitors, 6, "trp_dale_pikeman", 2),(set_visitors, 7, "trp_dale_pikeman", 2),
+						(set_visitors, 2, "trp_i3_dale_swordsman", 3),(set_visitors, 3, "trp_i3_dale_swordsman", 3),(set_visitors, 4, "trp_i4_dale_sergeant", 2),(set_visitors, 5, "trp_i2_dale_man_at_arms", 5),(set_visitors, 6, "trp_i3_dale_spearman", 2),(set_visitors, 7, "trp_i3_dale_spearman", 2),
 						#ally archers, entries 8-10
-						(set_visitors, 8, "trp_laketown_bowmen", 3),(set_visitors, 9, "trp_laketown_bowmen", 3),(set_visitors, 10, "trp_laketown_archer", 3),
+						(set_visitors, 8, "trp_a3_dale_bowman", 3),(set_visitors, 9, "trp_a3_dale_bowman", 3),(set_visitors, 10, "trp_a4_dale_archer", 3),
 						#enemy infantry, entries 12-17
 						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_vet_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_infantry_of_the_ox", 5),(set_visitors, 16, "trp_rhun_light_cavalry", 5),(set_visitors, 17, "trp_rhun_noble_cavalry", 5),
 						#enemy archers, entries 18-20
@@ -10888,10 +10888,10 @@ game_menus = [
 	   			# (assign, ":allies_archer_tier_1", "trp_rhun_horse_archer"),
 	   			# #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_rhun_horse_archer",0),   #Commented out - If we want to upgrade allies too.
 
-	   			# (assign, ":enemy_melee_tier_1", "trp_merchant_guard_of_dale"),
-	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_merchant_guard_of_dale",0),
-	   			# (assign, ":enemy_archer_tier_1", "trp_laketown_bowmen"),
-	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_laketown_bowmen",0), 
+	   			# (assign, ":enemy_melee_tier_1", "trp_c3_rhovanion_auxilia"),
+	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_c3_rhovanion_auxilia",0),
+	   			# (assign, ":enemy_archer_tier_1", "trp_a3_dale_bowman"),
+	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_a3_dale_bowman",0), 
    			# (try_end),
 
 		# #This is where we check what to spawn depending on player level (Med/High Tier)
@@ -10956,9 +10956,9 @@ game_menus = [
 				(try_begin),
 					(lt, ":level", 25),
 						# enemy infantry, entries 2-7
-						(set_visitors, 2, "trp_dale_warrior", 4),(set_visitors, 3, "trp_dale_warrior", 4),(set_visitors, 4, "trp_dale_veteran_warrior", 4),(set_visitors, 5, "trp_dale_man_at_arms", 4),(set_visitors, 6, "trp_dale_pikeman", 4),(set_visitors, 7, "trp_dale_pikeman", 4),
+						(set_visitors, 2, "trp_i3_dale_swordsman", 4),(set_visitors, 3, "trp_i3_dale_swordsman", 4),(set_visitors, 4, "trp_i4_dale_sergeant", 4),(set_visitors, 5, "trp_i2_dale_man_at_arms", 4),(set_visitors, 6, "trp_i3_dale_spearman", 4),(set_visitors, 7, "trp_i3_dale_spearman", 4),
 						#enemy archers, entries 8-10
-						(set_visitors, 8, "trp_laketown_bowmen", 4),(set_visitors, 9, "trp_laketown_bowmen", 4),(set_visitors, 10, "trp_laketown_archer", 4),
+						(set_visitors, 8, "trp_a3_dale_bowman", 4),(set_visitors, 9, "trp_a3_dale_bowman", 4),(set_visitors, 10, "trp_a4_dale_archer", 4),
 						#ally infantry, entries 12-17
 						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
 						#ally archers, entries 18-20
@@ -10967,9 +10967,9 @@ game_menus = [
 				(else_try),
 					(ge, ":level", 25),
 						# enemy infantry, entries 2-7
-						(set_visitors, 2, "trp_dale_warrior", 3),(set_visitors, 3, "trp_dale_veteran_warrior", 3),(set_visitors, 4, "trp_dale_marchwarden", 3),(set_visitors, 5, "trp_dale_veteran_warrior", 3),(set_visitors, 6, "trp_dale_billman", 3),(set_visitors, 7, "trp_dale_pikeman", 3),
+						(set_visitors, 2, "trp_i3_dale_swordsman", 3),(set_visitors, 3, "trp_i4_dale_sergeant", 3),(set_visitors, 4, "trp_i5_dale_hearthman", 3),(set_visitors, 5, "trp_i4_dale_sergeant", 3),(set_visitors, 6, "trp_i4_dale_billman", 3),(set_visitors, 7, "trp_i3_dale_spearman", 3),
 						#enemy archers, entries 8-10
-						(set_visitors, 8, "trp_laketown_archer", 3),(set_visitors, 9, "trp_laketown_bowmen", 3),(set_visitors, 10, "trp_barding_bowmen_of_esgaroth", 3),
+						(set_visitors, 8, "trp_a4_dale_archer", 3),(set_visitors, 9, "trp_a3_dale_bowman", 3),(set_visitors, 10, "trp_a5_barding_bowman", 3),
 						#ally infantry, entries 12-17
 						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
 						#ally archers, entries 18-20

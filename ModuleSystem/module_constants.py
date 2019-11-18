@@ -1365,10 +1365,10 @@ faction_init = [
 (fac_moria   ,4500,mtf_culture_orcs         ,[trp_moria_lord   ,trp_moria_lord    ],[trp_i1_snaga_of_moria,   	trp_i2_goblin_of_moria,      trp_i3_large_goblin_of_moria,  trp_i4_fell_goblin_of_moria,   trp_c5_bolg_clan_rider, 				    trp_a3_large_goblin_archer_of_moria ],[pt_moria_reinf_a,   pt_moria_reinf_b,   pt_moria_reinf_c,   -1],                 spr_banner_k, icon_mfp_moria,   [trp_i1_snaga_of_moria,   trp_i2_goblin_of_moria,           trp_i3_large_goblin_of_moria,    trp_i4_fell_goblin_of_moria,       trp_i4_fell_goblin_of_moria],        p_town_moria,           faction_side_hand,theater_C ,p_advcamp_moria),
 (fac_guldur  ,4500,mtf_culture_orcs         ,[trp_guldur_lord  ,trp_guldur_lord   ],[trp_orc_snaga_of_guldur, 	trp_orc_of_guldur,           trp_orc_tracker_of_mordor,     trp_fell_orc_tracker_of_mordor,trp_great_warg_rider_of_mordor, 			trp_orc_of_guldur 		 		],[pt_guldur_reinf_a,  pt_guldur_reinf_b,  pt_guldur_reinf_c,  -1],                 spr_banner_l, icon_mfp_guldur,  [trp_orc_snaga_of_guldur, trp_orc_of_guldur,             trp_orc_of_guldur,            trp_orc_tracker_of_mordor,      trp_fell_orc_tracker_of_mordor],  p_town_dol_guldur,      faction_side_eye ,theater_C ,p_advcamp_guldur),
 (fac_gundabad,4500,mtf_culture_orcs         ,[trp_gundabad_lord,trp_gundabad_lord ],[trp_i1_goblin_gundabad,  	trp_i2_orc_gundabad,         trp_i3_orc_fighter_gundabad,   trp_ca5_goblin_north_clan_skirmisher,trp_c5_goblin_north_clan_rider,	trp_i4_orc_beserker_gundabad  	 	],[pt_gundabad_reinf_a,pt_gundabad_reinf_b,pt_gundabad_reinf_c,-1],                 spr_banner_n, icon_mfp_gundabad,[trp_i1_goblin_gundabad,     trp_i2_orc_gundabad,              trp_i4_fell_orc_warrior_gundabad,trp_i4_orc_beserker_gundabad,     trp_c4_warg_rider_gundabad],       p_town_gundabad,        faction_side_hand,theater_N ,p_advcamp_gundabad),
-(fac_dale    ,3500,mtf_culture_rohan_goodmen,[trp_dale_lord    ,trp_dale_lord     ],[trp_dale_militia,        	trp_laketown_scout,          trp_laketown_bowmen,         	trp_laketown_archer,           trp_girions_guard_of_dale, 				trp_laketown_scout     			 	],[pt_dale_reinf_a,    pt_dale_reinf_b,    pt_dale_reinf_c,    pt_dale_p_train],    spr_banner_o, icon_mfp_dale,    [-1,                      trp_dale_man_at_arms,          trp_laketown_archer,          trp_dale_warrior,               trp_dale_marchwarden],            p_town_dale,            faction_side_good,theater_N ,p_advcamp_dale),
+(fac_dale    ,3500,mtf_culture_rohan_goodmen,[trp_dale_lord    ,trp_dale_lord     ],[trp_i1_dale_militia,        	trp_a2_dale_scout,          trp_a3_dale_bowman,         	trp_a4_dale_archer,           trp_ac5_rhovanion_marchwarden, 				trp_a2_dale_scout     			 	],[pt_dale_reinf_a,    pt_dale_reinf_b,    pt_dale_reinf_c,    pt_dale_p_train],    spr_banner_o, icon_mfp_dale,    [-1,                      trp_i2_dale_man_at_arms,          trp_a4_dale_archer,          trp_i3_dale_swordsman,               trp_i5_dale_hearthman],            p_town_dale,            faction_side_good,theater_N ,p_advcamp_dale),
 (fac_dwarf   ,3500,mtf_culture_rohan_goodmen,[trp_dwarf_lord   ,trp_dwarf_lord    ],[trp_i1_dwarven_apprentice,	trp_i2_dwarven_warrior,      trp_i3_dwarven_hardened_warrior,trp_i4_dwarven_axeman,        trp_i6_grors_guard, 						trp_a4_dwarven_bowman            	],[pt_dwarf_reinf_a,   pt_dwarf_reinf_b,   pt_dwarf_reinf_c,   pt_dwarf_p_train],   spr_banner_p, icon_mfp_dwarf,   [-1,                      trp_i2_dwarven_warrior,           trp_i4_dwarven_spearman,         trp_i6_dwarven_longaxeman,            trp_i6_longbeard_axeman],              p_town_erebor,          faction_side_good,theater_N ,p_advcamp_dwarf),
 (fac_dunland ,3500,mtf_culture_evilmen      ,[trp_dunland_lord ,trp_dunland_lord  ],[trp_dunnish_wildman,     	trp_dunnish_warrior,         trp_dunnish_vet_warrior,     	trp_dunnish_wolf_warrior,      trp_dunnish_wolf_guard, 					trp_dunnish_pikeman        		 	],[pt_dunland_reinf_a, pt_dunland_reinf_b, pt_dunland_reinf_c, -1],                 spr_banner_r, icon_mfp_dunland, [trp_dunnish_warrior,     trp_dunnish_pikeman,           trp_dunnish_pikeman,          trp_dunnish_pikeman,            trp_dunnish_pikeman],             p_town_dunland_camp,    faction_side_hand,theater_SW,p_advcamp_dunland),
-(fac_beorn   ,3000,mtf_culture_rohan_goodmen,[trp_beorn_lord   ,trp_beorn_lord    ],[trp_beorning_vale_man,   	trp_beorning_warrior,        trp_beorning_carrock_lookout,	trp_beorning_carrock_fighter,  trp_beorning_carrock_berserker, 			trp_woodmen_archer 				 	],[pt_beorn_reinf_a,   pt_beorn_reinf_b,   pt_beorn_reinf_c,   -1],                 spr_banner_m, icon_mfp_northmen,[-1,                      trp_beorning_warrior,          trp_beorning_carrock_fighter, trp_woodmen_scout,              trp_beorning_shield_bear],       p_town_beorn_house,     faction_side_good,theater_N ,p_advcamp_beorn),
+(fac_beorn   ,3000,mtf_culture_rohan_goodmen,[trp_beorn_lord   ,trp_beorn_lord    ],[trp_i1_beorning_man,   	trp_i2_beorning_warrior,        trp_i3_beorning_carrock_lookout,	trp_i4_beorning_carrock_fighter,  trp_i5_beorning_carrock_berserker, 			trp_a4_woodmen_archer 				 	],[pt_beorn_reinf_a,   pt_beorn_reinf_b,   pt_beorn_reinf_c,   -1],                 spr_banner_m, icon_mfp_northmen,[-1,                      trp_i2_beorning_warrior,          trp_i4_beorning_carrock_fighter, trp_a3_woodmen_scout,              trp_i6_beorning_bear_warrior],       p_town_beorn_house,     faction_side_good,theater_N ,p_advcamp_beorn),
 ]
 
 # feudal troops guarding some Gondor centers
@@ -1673,13 +1673,13 @@ center_list = [
 	[icon_mfc_imladris],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_low, 2, tld_siegable_capital),
 
 (p_town_woodsmen_village, [scn_woodsmen_village2_center, -1, -1,-1,-1,scn_woodsmen_village2_siege, mesh_ui_default_menu_window],
-	[-1, trp_no_troop, trp_merchant_woodmen, trp_elder_wvillage, pt_woodman_recruits, trp_beorn_lord, trp_woodmen_youth, trp_woodmen_tracker, trp_woodmen_forester, trp_woodmen_axemen], 
+	[-1, trp_no_troop, trp_merchant_woodmen, trp_elder_wvillage, pt_woodman_recruits, trp_beorn_lord, trp_i1_woodmen_man, trp_a2_woodmen_tracker, trp_i2_woodmen_forester, trp_i4_woodmen_axemen], 
 	[icon_mfc_northmen],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_always),
 (p_town_beorning_village, [scn_beorning_village_center, -1, -1,-1,-1,scn_beorning_village_siege, mesh_ui_default_menu_window],
-	[-1, trp_no_troop, trp_merchant_beorn, trp_no_troop, pt_beorn_recruits, trp_beorn_lord, trp_beorning_vale_man, trp_beorning_sentinel, trp_woodmen_youth, trp_beorning_tolltacker], 
+	[-1, trp_no_troop, trp_merchant_beorn, trp_no_troop, pt_beorn_recruits, trp_beorn_lord, trp_i1_beorning_man, trp_i4_beorning_sentinel, trp_i1_woodmen_man, trp_i3_beorning_tolltacker], 
 	[icon_mfc_northmen],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_always),
 (p_town_beorn_house, [scn_woodsmen_village_center, scn_beorn_castle, -1,-1, scn_beorn_arena,scn_woodsmen_village_siege,mesh_town_beorns_house],
-	[trp_barman_beorn, trp_smith_beorn, trp_no_troop, trp_elder_beorn, pt_beorn_recruits, trp_beorn_lord, trp_beorning_vale_man, trp_beorning_carrock_fighter, trp_beorning_warrior, trp_woodmen_youth], 
+	[trp_barman_beorn, trp_smith_beorn, trp_no_troop, trp_elder_beorn, pt_beorn_recruits, trp_beorn_lord, trp_i1_beorning_man, trp_i4_beorning_carrock_fighter, trp_i2_beorning_warrior, trp_i1_woodmen_man], 
 	[icon_mfc_northmen],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_high, 1, tld_siegable_capital),
 
 (p_town_moria, [scn_moria_center, -1, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_moria_siege,mesh_town_moria],
@@ -1690,10 +1690,10 @@ center_list = [
 	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 1, tld_siegable_always),
 
 (p_town_dale, [scn_dale_center, scn_dale_castle, scn_rohan_prison,scn_rohan_tavern,scn_dale_arena, scn_dale_siege, mesh_ui_default_menu_window],
-	[trp_barman_dale, trp_smith_dale, trp_merchant_dale, trp_elder_dale, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_dale_militia,trp_laketown_bowmen], 
+	[trp_barman_dale, trp_smith_dale, trp_merchant_dale, trp_elder_dale, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_i1_dale_militia,trp_a3_dale_bowman], 
 	[icon_mfc_dale],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 0, tld_siegable_capital),
 (p_town_esgaroth, [scn_esgaroth_center, scn_esgaroth_castle, scn_rohan_prison,scn_rohan_tavern,scn_dale_arena,scn_esgaroth_siege,mesh_town_esgaroth],
-	[trp_barman_esgaroth, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_esgaroth, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_dale_militia,trp_laketown_archer], 
+	[trp_barman_esgaroth, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_esgaroth, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_i1_dale_militia,trp_a4_dale_archer], 
 	[icon_mfc_dale],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 
 (p_town_dunland_camp, [scn_dunland_camp_center, -1, -1,-1,-1,scn_dunland_camp_siege, mesh_town_evilcamp],
@@ -1799,7 +1799,7 @@ center_list = [
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_elder_gunda_ac, pt_gundabad_recruits, trp_gundabad_lord,trp_i1_goblin_gundabad,trp_i2_orc_gundabad,trp_i3_orc_fighter_gundabad,trp_c4_warg_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
 (p_advcamp_dale, [scn_advcamp_dale, -1, -1, -1, -1, scn_advcamp_dale_siege, mesh_town_goodcamp],
-	[-1, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_dale_ac, pt_dale_recruits, trp_dale_lord,trp_dale_warrior,trp_dale_billman,trp_dale_marchwarden,trp_laketown_archer], 
+	[-1, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_dale_ac, pt_dale_recruits, trp_dale_lord,trp_i3_dale_swordsman,trp_i4_dale_billman,trp_i5_dale_hearthman,trp_a4_dale_archer], 
 	[icon_mfc_dale],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
 (p_advcamp_dwarf, [scn_advcamp_erebor, -1, -1,-1,-1, scn_advcamp_erebor_siege, mesh_town_goodcamp],
 	[-1, trp_smith_ironhill, trp_merchant_ironhill, trp_elder_dwarf_ac, pt_dwarf_recruits, trp_dwarf_lord,trp_a2_dwarven_lookout, trp_a4_dwarven_bowman, trp_i4_iron_hills_infantry, trp_i2_iron_hills_miner], 
@@ -1808,7 +1808,7 @@ center_list = [
 	[-1, trp_smith_dunland, trp_merchant_dunland, trp_elder_dunland_ac, pt_dunland_recruits, trp_dunland_lord, trp_dunnish_wildman,trp_dunnish_warrior, trp_dunnish_pikeman, trp_dunnish_wolf_guard], 
 	[icon_mfc_dunland],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
 (p_advcamp_beorn, [scn_advcamp_beorn, -1, -1,-1,-1, scn_advcamp_beorn_siege, mesh_town_goodcamp],
-	[-1, trp_smith_beorn, trp_merchant_woodmen, trp_elder_beorn_ac, pt_beorn_recruits, trp_beorn_lord, trp_beorning_carrock_berserker, trp_beorning_sentinel, trp_beorning_warrior, trp_beorning_tolltacker], 
+	[-1, trp_smith_beorn, trp_merchant_woodmen, trp_elder_beorn_ac, pt_beorn_recruits, trp_beorn_lord, trp_i5_beorning_carrock_berserker, trp_i4_beorning_sentinel, trp_i2_beorning_warrior, trp_i3_beorning_tolltacker], 
 	[icon_mfc_northmen],[900],[2,1,4,1,4,1], 0, garrison_limit_med, 3, tld_siegable_always),
 ]
 

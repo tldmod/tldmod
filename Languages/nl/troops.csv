@@ -42,72 +42,72 @@ trp_townsman|stedeling
 trp_townsman_pl|Stedelingen
 trp_watchman|Stadsvrouw
 trp_watchman_pl|Stadsvrouwen
-trp_woodmen_youth|Bosman
-trp_woodmen_youth_pl|Bosmannen
-trp_woodmen_forester|Bosmannen Boswachter
-trp_woodmen_forester_pl|Bosmannen Boswachters
-trp_woodmen_skilled_forester|Bosmannen Geschoolde Boswachter
-trp_woodmen_skilled_forester_pl|Bosmannen Geschoolde Boswachters
-trp_woodmen_axemen|Bosmannen Bijlman
-trp_woodmen_axemen_pl|Bosmannen Bijlmannen
-trp_woodmen_master_axemen|Nachtbeschermer van het Demsterwold
-trp_woodmen_master_axemen_pl|Nachtbeschermers van het Demsterwold
-trp_woodmen_tracker|Bosmannen Spoorzoeker
-trp_woodmen_tracker_pl|Bosmannen Spoorzoekers
-trp_woodmen_scout|Bosmannen Verkenner
-trp_woodmen_scout_pl|Bosmannen Verkenners
-trp_woodmen_archer|Bosmannen Boogschutter
-trp_woodmen_archer_pl|Bosmannen Boogschutters
-trp_fell_huntsmen_of_mirkwood|Nachtsluiper van het Demsterwold
-trp_fell_huntsmen_of_mirkwood_pl|Nachtsluipers van het Demsterwold
-trp_beorning_vale_man|Beorning Man
-trp_beorning_vale_man_pl|Beorning Mannen
-trp_beorning_warrior|Beorning Krijger
-trp_beorning_warrior_pl|Beorning Krijgers
-trp_beorning_tolltacker|Beorning Toll Nemer
-trp_beorning_tolltacker_pl|Beorning Toll Nemers
-trp_beorning_sentinel|Beorning Schildwacht
-trp_beorning_sentinel_pl|Beorning Schildwachten
-trp_beorning_warden_of_the_ford|Beorning Bewaker van het Wad
-trp_beorning_warden_of_the_ford_pl|Beorning Bewakers van het Wad
-trp_beorning_carrock_lookout|Beorning Carrock Wachtsman
-trp_beorning_carrock_lookout_pl|Beorning Carrock Wachtsmannen
-trp_beorning_carrock_fighter|Beorning Carrock Vechter
-trp_beorning_carrock_fighter_pl|Beorning Carrock Vechters
-trp_beorning_carrock_berserker|Beorning Carrock Berserker
-trp_beorning_carrock_berserker_pl|Beorning Carrock Berserkers
-trp_dale_militia|Dal Militieman
-trp_dale_militia_pl|Dal Militie
-trp_dale_man_at_arms|Dal Soldaat
-trp_dale_man_at_arms_pl|Dal Soldaten
-trp_laketown_scout|Dal Verkenner
-trp_laketown_scout_pl|Dal verkenners
-trp_laketown_bowmen|Dal Boogschutter
-trp_laketown_bowmen_pl|Dal Boogschutters
-trp_laketown_archer|Dal Schutter
-trp_laketown_archer_pl|Dal Schutters
-trp_barding_bowmen_of_esgaroth|Barding Boogschutter
-trp_barding_bowmen_of_esgaroth_pl|Barding Boogschutters
-trp_dale_warrior|Dal Zwaardvechter
-trp_dale_warrior_pl|Dal Zwaardvechters
-trp_dale_veteran_warrior|Dal Brigadier
-trp_dale_veteran_warrior_pl|Dal Brigadieren
-trp_dale_marchwarden|Haardman van Dal
-trp_dale_marchwarden_pl|Haardmannen van Dal
-trp_dale_pikeman|Dal Speervechter
-trp_dale_pikeman_pl|Dal Speervechters
-trp_dale_billman|Dal Bill Man
-trp_dale_billman_pl|Dal Bill Man
-trp_dale_bill_master|Dal Bill Meester
-trp_dale_bill_master_pl|Dal Bill Meesters
-trp_merchant_squire_or_dale|Noordman Bediende
-trp_merchant_squire_or_dale_pl|Noordman Bediendes
-trp_merchant_guard_of_dale|Noordman Bondgenoot
-trp_merchant_guard_of_dale_pl|Noordman Bondgenoten
-trp_merchant_protector_of_dale|Wilderland Ruiter
-trp_merchant_protector_of_dale_pl|Wilderland Ruiters
-trp_girions_guard_of_dale|Wilderland Mark Bewaker
-trp_girions_guard_of_dale_pl|Wilderland Mark Bewakers
+trp_i1_woodmen_man|Bosman
+trp_i1_woodmen_man_pl|Bosmannen
+trp_i2_woodmen_forester|Bosmannen Boswachter
+trp_i2_woodmen_forester_pl|Bosmannen Boswachters
+trp_i3_woodmen_skilled_forester|Bosmannen Geschoolde Boswachter
+trp_i3_woodmen_skilled_forester_pl|Bosmannen Geschoolde Boswachters
+trp_i4_woodmen_axemen|Bosmannen Bijlman
+trp_i4_woodmen_axemen_pl|Bosmannen Bijlmannen
+trp_i5_woodmen_night_guard|Nachtbeschermer van het Demsterwold
+trp_i5_woodmen_night_guard_pl|Nachtbeschermers van het Demsterwold
+trp_a2_woodmen_tracker|Bosmannen Spoorzoeker
+trp_a2_woodmen_tracker_pl|Bosmannen Spoorzoekers
+trp_a3_woodmen_scout|Bosmannen Verkenner
+trp_a3_woodmen_scout_pl|Bosmannen Verkenners
+trp_a4_woodmen_archer|Bosmannen Boogschutter
+trp_a4_woodmen_archer_pl|Bosmannen Boogschutters
+trp_a5_woodmen_night_stalker|Nachtsluiper van het Demsterwold
+trp_a5_woodmen_night_stalker_pl|Nachtsluipers van het Demsterwold
+trp_i1_beorning_man|Beorning Man
+trp_i1_beorning_man_pl|Beorning Mannen
+trp_i2_beorning_warrior|Beorning Krijger
+trp_i2_beorning_warrior_pl|Beorning Krijgers
+trp_i3_beorning_tolltacker|Beorning Toll Nemer
+trp_i3_beorning_tolltacker_pl|Beorning Toll Nemers
+trp_i4_beorning_sentinel|Beorning Schildwacht
+trp_i4_beorning_sentinel_pl|Beorning Schildwachten
+trp_i5_beorning_warden_of_the_ford|Beorning Bewaker van het Wad
+trp_i5_beorning_warden_of_the_ford_pl|Beorning Bewakers van het Wad
+trp_i3_beorning_carrock_lookout|Beorning Carrock Wachtsman
+trp_i3_beorning_carrock_lookout_pl|Beorning Carrock Wachtsmannen
+trp_i4_beorning_carrock_fighter|Beorning Carrock Vechter
+trp_i4_beorning_carrock_fighter_pl|Beorning Carrock Vechters
+trp_i5_beorning_carrock_berserker|Beorning Carrock Berserker
+trp_i5_beorning_carrock_berserker_pl|Beorning Carrock Berserkers
+trp_i1_dale_militia|Dal Militieman
+trp_i1_dale_militia_pl|Dal Militie
+trp_i2_dale_man_at_arms|Dal Soldaat
+trp_i2_dale_man_at_arms_pl|Dal Soldaten
+trp_a2_dale_scout|Dal Verkenner
+trp_a2_dale_scout_pl|Dal verkenners
+trp_a3_dale_bowman|Dal Boogschutter
+trp_a3_dale_bowman_pl|Dal Boogschutters
+trp_a4_dale_archer|Dal Schutter
+trp_a4_dale_archer_pl|Dal Schutters
+trp_a5_barding_bowman|Barding Boogschutter
+trp_a5_barding_bowman_pl|Barding Boogschutters
+trp_i3_dale_swordsman|Dal Zwaardvechter
+trp_i3_dale_swordsman_pl|Dal Zwaardvechters
+trp_i4_dale_sergeant|Dal Brigadier
+trp_i4_dale_sergeant_pl|Dal Brigadieren
+trp_i5_dale_hearthman|Haardman van Dal
+trp_i5_dale_hearthman_pl|Haardmannen van Dal
+trp_i3_dale_spearman|Dal Speervechter
+trp_i3_dale_spearman_pl|Dal Speervechters
+trp_i4_dale_billman|Dal Bill Man
+trp_i4_dale_billman_pl|Dal Bill Man
+trp_i5_dale_bill_master|Dal Bill Meester
+trp_i5_dale_bill_master_pl|Dal Bill Meesters
+trp_c2_rhovanion_retainer|Noordman Bediende
+trp_c2_rhovanion_retainer_pl|Noordman Bediendes
+trp_c3_rhovanion_auxilia|Noordman Bondgenoot
+trp_c3_rhovanion_auxilia_pl|Noordman Bondgenoten
+trp_c4_rhovanion_rider|Wilderland Ruiter
+trp_c4_rhovanion_rider_pl|Wilderland Ruiters
+trp_ac5_rhovanion_marchwarden|Wilderland Mark Bewaker
+trp_ac5_rhovanion_marchwarden_pl|Wilderland Mark Bewakers
 trp_rhun_tribesman|Rhun Stamgenoot
 trp_rhun_tribesman_pl|Rhun Stamgenoten
 trp_rhun_horse_scout|Rhun Paarden Verkenner
@@ -1563,8 +1563,8 @@ trp_start_quest_woodelf_pl|Galadhrim Koninklijke Scherpschutters
 ; trp_start_quest_mordor_scout_pl|Mordor Guides
 trp_start_quest_beorning|Beorning Carrock Berserker
 trp_start_quest_beorning_pl|Beorning Carrock Berserkers
-; trp_beorning_shield_bear|Bear Warrior
-; trp_beorning_shield_bear_pl|Bear Warriors
+; trp_i6_beorning_bear_warrior|Bear Warrior
+; trp_i6_beorning_bear_warrior_pl|Bear Warriors
 ; trp_morannon_healer|Okstuk the Healer
 ; trp_minas_tirith_healer|Ioreth
 ; trp_edoras_healer|Freya the Healer
@@ -1581,8 +1581,8 @@ trp_start_quest_beorning_pl|Beorning Carrock Berserkers
 ; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
 ; trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
 ; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
-; trp_rhovanion_noble|Rhovanion Noble
-; trp_rhovanion_noble_pl|Rhovanion Noblemen
+; trp_c5_rhovanion_noble|Rhovanion Noble
+; trp_c5_rhovanion_noble_pl|Rhovanion Noblemen
 ; trp_npc18|Turmbathu
 ; trp_npc19|Heidrek
 ; trp_npc20|Zigûrphel

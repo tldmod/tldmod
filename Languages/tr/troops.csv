@@ -42,72 +42,72 @@ trp_townsman|Kasabalı
 trp_townsman_pl|Kasabalılar
 trp_watchman|Kasabalı Kadın 
 trp_watchman_pl|Kasabalı Kadınlar 
-trp_woodmen_youth|Korucu
-trp_woodmen_youth_pl|Korucular
-trp_woodmen_forester|Orman Korucusu
-trp_woodmen_forester_pl|Orman Korucuları
-trp_woodmen_skilled_forester|Yetenekli Orman Korucusu
-trp_woodmen_skilled_forester_pl|Yetenekli Orman Korucuları
-trp_woodmen_axemen|Baltalı Korucu
-trp_woodmen_axemen_pl|Baltalı Korucular
-trp_woodmen_master_axemen|Mirkwood Gece Muhafızı
-trp_woodmen_master_axemen_pl|Mirkwood Gece Muhafızları
-trp_woodmen_tracker|İzci Korucu
-trp_woodmen_tracker_pl|İzci Korucular
-trp_woodmen_scout|Gözcü Korucu
-trp_woodmen_scout_pl|Gözcü Korucular
-trp_woodmen_archer|Okçu Korucu
-trp_woodmen_archer_pl|Okçu Korucular
-trp_fell_huntsmen_of_mirkwood|Mirkwood Gece Avcısı
-trp_fell_huntsmen_of_mirkwood_pl|Mirkwood Gece Avcıları
-trp_beorning_vale_man|Beorning Askeri
-trp_beorning_vale_man_pl|Beorning Askerleri
-trp_beorning_warrior|Beorning Savaşçısı
-trp_beorning_warrior_pl|Beorning Savaşçıları
-trp_beorning_tolltacker|Paralı Beorning
-trp_beorning_tolltacker_pl|Paralı Beorningler
-trp_beorning_sentinel|Beorning Nöbetçisi
-trp_beorning_sentinel_pl|Beorning Nöbetçileri
-trp_beorning_warden_of_the_ford|Beorning Nehir Koruyucusu
-trp_beorning_warden_of_the_ford_pl|Beorning Nehir Koruyucusu
-trp_beorning_carrock_lookout|Beorning Carrock Gözcüsü
-trp_beorning_carrock_lookout_pl|Beorning Carrock Gözcüleri
-trp_beorning_carrock_fighter|Beorning Carrock Savaşçısı
-trp_beorning_carrock_fighter_pl|Beorning Carrock savaşçıları
-trp_beorning_carrock_berserker|Beorning Carrock Delisi
-trp_beorning_carrock_berserker_pl|Beorning Carrock Delileri
-trp_dale_militia|Dale Milisi
-trp_dale_militia_pl|Dale Milisleri
-trp_dale_man_at_arms|Dale Askeri
-trp_dale_man_at_arms_pl|Dale Askerleri
-trp_laketown_scout|Dale İzcisi
-trp_laketown_scout_pl|Dale İzcileri
-trp_laketown_bowmen|Dale Yaylısı
-trp_laketown_bowmen_pl|Dale Yaylıları
-trp_laketown_archer|Dale Okçusu
-trp_laketown_archer_pl|Dale Okçuları
-trp_barding_bowmen_of_esgaroth|Barding Yaylısı
-trp_barding_bowmen_of_esgaroth_pl|Barding Yaylıları
-trp_dale_warrior|Dale Kılıç Ustası
-trp_dale_warrior_pl|Dale Kılıç Ustaları
-trp_dale_veteran_warrior|Dale Çavuşu
-trp_dale_veteran_warrior_pl|Dale Çavuşları
-trp_dale_marchwarden|Dale Yüreklisi
-trp_dale_marchwarden_pl|Dale Yüreklileri
-trp_dale_pikeman|Dale Mızrakçısı
-trp_dale_pikeman_pl|Dale Mızrakçıları
-trp_dale_billman|Dale Baltacısı
-trp_dale_billman_pl|Dale Baltacıları
-trp_dale_bill_master|Dale Usta Baltacısı
-trp_dale_bill_master_pl|Dale Usta Baltacıları
-trp_merchant_squire_or_dale|Kuzeyli Toplama
-trp_merchant_squire_or_dale_pl|Kuzeyli Toplamalar
-trp_merchant_guard_of_dale|Kuzeyli Yardımcı
-trp_merchant_guard_of_dale_pl|Kuzeyli Yardımcılar
-trp_merchant_protector_of_dale|Rhovanion Binicisi
-trp_merchant_protector_of_dale_pl|Rhovanion Binicileri
-trp_girions_guard_of_dale|Rhovanion Muhafız Gözcüsü
-trp_girions_guard_of_dale_pl|Rhovanion Muhafız Gözcüleri
+trp_i1_woodmen_man|Korucu
+trp_i1_woodmen_man_pl|Korucular
+trp_i2_woodmen_forester|Orman Korucusu
+trp_i2_woodmen_forester_pl|Orman Korucuları
+trp_i3_woodmen_skilled_forester|Yetenekli Orman Korucusu
+trp_i3_woodmen_skilled_forester_pl|Yetenekli Orman Korucuları
+trp_i4_woodmen_axemen|Baltalı Korucu
+trp_i4_woodmen_axemen_pl|Baltalı Korucular
+trp_i5_woodmen_night_guard|Mirkwood Gece Muhafızı
+trp_i5_woodmen_night_guard_pl|Mirkwood Gece Muhafızları
+trp_a2_woodmen_tracker|İzci Korucu
+trp_a2_woodmen_tracker_pl|İzci Korucular
+trp_a3_woodmen_scout|Gözcü Korucu
+trp_a3_woodmen_scout_pl|Gözcü Korucular
+trp_a4_woodmen_archer|Okçu Korucu
+trp_a4_woodmen_archer_pl|Okçu Korucular
+trp_a5_woodmen_night_stalker|Mirkwood Gece Avcısı
+trp_a5_woodmen_night_stalker_pl|Mirkwood Gece Avcıları
+trp_i1_beorning_man|Beorning Askeri
+trp_i1_beorning_man_pl|Beorning Askerleri
+trp_i2_beorning_warrior|Beorning Savaşçısı
+trp_i2_beorning_warrior_pl|Beorning Savaşçıları
+trp_i3_beorning_tolltacker|Paralı Beorning
+trp_i3_beorning_tolltacker_pl|Paralı Beorningler
+trp_i4_beorning_sentinel|Beorning Nöbetçisi
+trp_i4_beorning_sentinel_pl|Beorning Nöbetçileri
+trp_i5_beorning_warden_of_the_ford|Beorning Nehir Koruyucusu
+trp_i5_beorning_warden_of_the_ford_pl|Beorning Nehir Koruyucusu
+trp_i3_beorning_carrock_lookout|Beorning Carrock Gözcüsü
+trp_i3_beorning_carrock_lookout_pl|Beorning Carrock Gözcüleri
+trp_i4_beorning_carrock_fighter|Beorning Carrock Savaşçısı
+trp_i4_beorning_carrock_fighter_pl|Beorning Carrock savaşçıları
+trp_i5_beorning_carrock_berserker|Beorning Carrock Delisi
+trp_i5_beorning_carrock_berserker_pl|Beorning Carrock Delileri
+trp_i1_dale_militia|Dale Milisi
+trp_i1_dale_militia_pl|Dale Milisleri
+trp_i2_dale_man_at_arms|Dale Askeri
+trp_i2_dale_man_at_arms_pl|Dale Askerleri
+trp_a2_dale_scout|Dale İzcisi
+trp_a2_dale_scout_pl|Dale İzcileri
+trp_a3_dale_bowman|Dale Yaylısı
+trp_a3_dale_bowman_pl|Dale Yaylıları
+trp_a4_dale_archer|Dale Okçusu
+trp_a4_dale_archer_pl|Dale Okçuları
+trp_a5_barding_bowman|Barding Yaylısı
+trp_a5_barding_bowman_pl|Barding Yaylıları
+trp_i3_dale_swordsman|Dale Kılıç Ustası
+trp_i3_dale_swordsman_pl|Dale Kılıç Ustaları
+trp_i4_dale_sergeant|Dale Çavuşu
+trp_i4_dale_sergeant_pl|Dale Çavuşları
+trp_i5_dale_hearthman|Dale Yüreklisi
+trp_i5_dale_hearthman_pl|Dale Yüreklileri
+trp_i3_dale_spearman|Dale Mızrakçısı
+trp_i3_dale_spearman_pl|Dale Mızrakçıları
+trp_i4_dale_billman|Dale Baltacısı
+trp_i4_dale_billman_pl|Dale Baltacıları
+trp_i5_dale_bill_master|Dale Usta Baltacısı
+trp_i5_dale_bill_master_pl|Dale Usta Baltacıları
+trp_c2_rhovanion_retainer|Kuzeyli Toplama
+trp_c2_rhovanion_retainer_pl|Kuzeyli Toplamalar
+trp_c3_rhovanion_auxilia|Kuzeyli Yardımcı
+trp_c3_rhovanion_auxilia_pl|Kuzeyli Yardımcılar
+trp_c4_rhovanion_rider|Rhovanion Binicisi
+trp_c4_rhovanion_rider_pl|Rhovanion Binicileri
+trp_ac5_rhovanion_marchwarden|Rhovanion Muhafız Gözcüsü
+trp_ac5_rhovanion_marchwarden_pl|Rhovanion Muhafız Gözcüleri
 trp_rhun_tribesman|Rhunlu Kabile Üyesi
 trp_rhun_tribesman_pl|Rhunlu Kabile Üyeleri
 trp_rhun_horse_scout|Rhun Gözcüsü
@@ -1563,8 +1563,8 @@ trp_start_quest_mordor_scout|Mordor Yol Göstericisi
 trp_start_quest_mordor_scout_pl|Mordor Yol Göstericileri
 trp_start_quest_beorning|Beorning Carrock Delisi
 trp_start_quest_beorning_pl|Beorning Carrock Delileri
-trp_beorning_shield_bear|Ayı Savaşçısı
-trp_beorning_shield_bear_pl|Ayı Savaşçıları
+trp_i6_beorning_bear_warrior|Ayı Savaşçısı
+trp_i6_beorning_bear_warrior_pl|Ayı Savaşçıları
 trp_morannon_healer|Hekim Okstuk
 trp_minas_tirith_healer|Loreth
 trp_edoras_healer|Hekim Freya
@@ -1581,8 +1581,8 @@ trp_i5_deep_dweller_of_moria|Moria'nın Derin kazıcısı
 trp_i5_deep_dweller_of_moria_pl|Moria'nın Derin kazıcıları
 trp_i5_orc_chieftain_of_moria|Moria Ork Şefi
 trp_i5_orc_chieftain_of_moria_pl|Moria Ork Şefleri
-trp_rhovanion_noble|Rhovanion soylusu
-trp_rhovanion_noble_pl|Rhovanion Soyluları
+trp_c5_rhovanion_noble|Rhovanion soylusu
+trp_c5_rhovanion_noble_pl|Rhovanion Soyluları
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel

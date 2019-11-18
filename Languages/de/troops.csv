@@ -42,72 +42,72 @@ trp_townsman|Bürger
 trp_townsman_pl|Bürger
 trp_watchman|Bürgerin
 trp_watchman_pl|Bürgerinnen
-trp_woodmen_youth|Waldmensch
-trp_woodmen_youth_pl|Waldmenschen
-trp_woodmen_forester|Jäger der Waldmenschen
-trp_woodmen_forester_pl|Jäger der Waldmenschen
-trp_woodmen_skilled_forester|Erfahrener Jäger der Waldmenschen
-trp_woodmen_skilled_forester_pl|Erfahrene Jäger der Waldmenschen
-trp_woodmen_axemen|Axtkämpfer der Waldmenschen
-trp_woodmen_axemen_pl|Axtkämpfer der Waldmenschen
-trp_woodmen_master_axemen|Nachtwache aus dem Düsterwald
-trp_woodmen_master_axemen_pl|Nachtwachen aus dem Düsterwald
-trp_woodmen_tracker|Fährtenleser der Waldmenschen
-trp_woodmen_tracker_pl|Fährtenleser der Waldmenschen
-trp_woodmen_scout|Späher der Waldmenschen
-trp_woodmen_scout_pl|Späher der Waldmenschen
-trp_woodmen_archer|Bogenschütze der Waldmenschen
-trp_woodmen_archer_pl|Bogenschützen der Waldmenschen
-trp_fell_huntsmen_of_mirkwood|Nachtjäger aus dem Düsterwald
-trp_fell_huntsmen_of_mirkwood_pl|Nachtjäger aus dem Düsterwald
-trp_beorning_vale_man|Beorninger
-trp_beorning_vale_man_pl|Beorninger
-trp_beorning_warrior|Krieger der Beorninger
-trp_beorning_warrior_pl|Krieger der Beorninger
-trp_beorning_tolltacker|Zollmann der Beorninger
-trp_beorning_tolltacker_pl|Zollmann der Beorninger
-trp_beorning_sentinel|Schildwache der Beorninger
-trp_beorning_sentinel_pl|Schildwachen der Beorninger
-trp_beorning_warden_of_the_ford|Furtwächter der Beorninger
-trp_beorning_warden_of_the_ford_pl|Furtwächter der Beorninger
-trp_beorning_carrock_lookout|Wächter vom Carrock
-trp_beorning_carrock_lookout_pl|Wächter vom Carrock
-trp_beorning_carrock_fighter|Krieger vom Carrock
-trp_beorning_carrock_fighter_pl|Krieger vom Carrock
-trp_beorning_carrock_berserker|Berserker vom Carrock
-trp_beorning_carrock_berserker_pl|Berserker vom Carrock
-trp_dale_militia|Stadtwache von Thal
-trp_dale_militia_pl|Stadtwachen von Thal
-trp_dale_man_at_arms|Waffenknecht von Thal
-trp_dale_man_at_arms_pl|Waffenknechte von Thal
-trp_laketown_scout|Späher von Thal
-trp_laketown_scout_pl|Späher von Thal
-trp_laketown_bowmen|Bogenschütze von Thal
-trp_laketown_bowmen_pl|Bogenschützen von Thal
-trp_laketown_archer|Erfahrener Bogenschütze von Thal
-trp_laketown_archer_pl|Erfahrene Bogenschützen von Thal
-trp_barding_bowmen_of_esgaroth|Bardinger
-trp_barding_bowmen_of_esgaroth_pl|Bardinger
-trp_dale_warrior|Schwertmann von Thal
-trp_dale_warrior_pl|Schwertmänner von Thal
-trp_dale_veteran_warrior|Sergeant von Thal
-trp_dale_veteran_warrior_pl|Sergeanten von Thal
-trp_dale_marchwarden|Herdmanne von Thal
-trp_dale_marchwarden_pl|Herdmannen von Thal
-trp_dale_pikeman|Speerträger von Thal
-trp_dale_pikeman_pl|Speerträger von Thal
-trp_dale_billman|Erfahrener Speerträger von Thal
-trp_dale_billman_pl|Erfahrene Speerträger von Thal
-trp_dale_bill_master|Hippenmeister von Thal
-trp_dale_bill_master_pl|Hippenmeister von Thal
-trp_merchant_squire_or_dale|Nordmann
-trp_merchant_squire_or_dale_pl|Nordmänner
-trp_merchant_guard_of_dale|Nordmann-Hilfssoldat
-trp_merchant_guard_of_dale_pl|Nordmann-Hilfssoldaten
-trp_merchant_protector_of_dale|Rhovanion-Reiter
-trp_merchant_protector_of_dale_pl|Rhovanion-Reiter
-trp_girions_guard_of_dale|Rhovanion-Grenzwächter
-trp_girions_guard_of_dale_pl|Rhovanion-Grenzwächter
+trp_i1_woodmen_man|Waldmensch
+trp_i1_woodmen_man_pl|Waldmenschen
+trp_i2_woodmen_forester|Jäger der Waldmenschen
+trp_i2_woodmen_forester_pl|Jäger der Waldmenschen
+trp_i3_woodmen_skilled_forester|Erfahrener Jäger der Waldmenschen
+trp_i3_woodmen_skilled_forester_pl|Erfahrene Jäger der Waldmenschen
+trp_i4_woodmen_axemen|Axtkämpfer der Waldmenschen
+trp_i4_woodmen_axemen_pl|Axtkämpfer der Waldmenschen
+trp_i5_woodmen_night_guard|Nachtwache aus dem Düsterwald
+trp_i5_woodmen_night_guard_pl|Nachtwachen aus dem Düsterwald
+trp_a2_woodmen_tracker|Fährtenleser der Waldmenschen
+trp_a2_woodmen_tracker_pl|Fährtenleser der Waldmenschen
+trp_a3_woodmen_scout|Späher der Waldmenschen
+trp_a3_woodmen_scout_pl|Späher der Waldmenschen
+trp_a4_woodmen_archer|Bogenschütze der Waldmenschen
+trp_a4_woodmen_archer_pl|Bogenschützen der Waldmenschen
+trp_a5_woodmen_night_stalker|Nachtjäger aus dem Düsterwald
+trp_a5_woodmen_night_stalker_pl|Nachtjäger aus dem Düsterwald
+trp_i1_beorning_man|Beorninger
+trp_i1_beorning_man_pl|Beorninger
+trp_i2_beorning_warrior|Krieger der Beorninger
+trp_i2_beorning_warrior_pl|Krieger der Beorninger
+trp_i3_beorning_tolltacker|Zollmann der Beorninger
+trp_i3_beorning_tolltacker_pl|Zollmann der Beorninger
+trp_i4_beorning_sentinel|Schildwache der Beorninger
+trp_i4_beorning_sentinel_pl|Schildwachen der Beorninger
+trp_i5_beorning_warden_of_the_ford|Furtwächter der Beorninger
+trp_i5_beorning_warden_of_the_ford_pl|Furtwächter der Beorninger
+trp_i3_beorning_carrock_lookout|Wächter vom Carrock
+trp_i3_beorning_carrock_lookout_pl|Wächter vom Carrock
+trp_i4_beorning_carrock_fighter|Krieger vom Carrock
+trp_i4_beorning_carrock_fighter_pl|Krieger vom Carrock
+trp_i5_beorning_carrock_berserker|Berserker vom Carrock
+trp_i5_beorning_carrock_berserker_pl|Berserker vom Carrock
+trp_i1_dale_militia|Stadtwache von Thal
+trp_i1_dale_militia_pl|Stadtwachen von Thal
+trp_i2_dale_man_at_arms|Waffenknecht von Thal
+trp_i2_dale_man_at_arms_pl|Waffenknechte von Thal
+trp_a2_dale_scout|Späher von Thal
+trp_a2_dale_scout_pl|Späher von Thal
+trp_a3_dale_bowman|Bogenschütze von Thal
+trp_a3_dale_bowman_pl|Bogenschützen von Thal
+trp_a4_dale_archer|Erfahrener Bogenschütze von Thal
+trp_a4_dale_archer_pl|Erfahrene Bogenschützen von Thal
+trp_a5_barding_bowman|Bardinger
+trp_a5_barding_bowman_pl|Bardinger
+trp_i3_dale_swordsman|Schwertmann von Thal
+trp_i3_dale_swordsman_pl|Schwertmänner von Thal
+trp_i4_dale_sergeant|Sergeant von Thal
+trp_i4_dale_sergeant_pl|Sergeanten von Thal
+trp_i5_dale_hearthman|Herdmanne von Thal
+trp_i5_dale_hearthman_pl|Herdmannen von Thal
+trp_i3_dale_spearman|Speerträger von Thal
+trp_i3_dale_spearman_pl|Speerträger von Thal
+trp_i4_dale_billman|Erfahrener Speerträger von Thal
+trp_i4_dale_billman_pl|Erfahrene Speerträger von Thal
+trp_i5_dale_bill_master|Hippenmeister von Thal
+trp_i5_dale_bill_master_pl|Hippenmeister von Thal
+trp_c2_rhovanion_retainer|Nordmann
+trp_c2_rhovanion_retainer_pl|Nordmänner
+trp_c3_rhovanion_auxilia|Nordmann-Hilfssoldat
+trp_c3_rhovanion_auxilia_pl|Nordmann-Hilfssoldaten
+trp_c4_rhovanion_rider|Rhovanion-Reiter
+trp_c4_rhovanion_rider_pl|Rhovanion-Reiter
+trp_ac5_rhovanion_marchwarden|Rhovanion-Grenzwächter
+trp_ac5_rhovanion_marchwarden_pl|Rhovanion-Grenzwächter
 trp_rhun_tribesman|Stammesmann aus Rhun
 trp_rhun_tribesman_pl|Stammesmänner aus Rhun
 trp_rhun_horse_scout|Berittener Später aus Rhun
@@ -1563,8 +1563,8 @@ trp_start_quest_mordor_scout|Führer aus Mordor
 trp_start_quest_mordor_scout_pl|Führer aus Mordor
 trp_start_quest_beorning|Berserker vom Carrock
 trp_start_quest_beorning_pl|Berserker vom Carrock
-trp_beorning_shield_bear|Bärenkrieger
-trp_beorning_shield_bear_pl|Bärenkrieger
+trp_i6_beorning_bear_warrior|Bärenkrieger
+trp_i6_beorning_bear_warrior_pl|Bärenkrieger
 trp_morannon_healer|Okstuk der Heiler
 trp_minas_tirith_healer|Ioreth
 trp_edoras_healer|Freya die Heilerin
@@ -1581,8 +1581,8 @@ trp_i5_deep_dweller_of_moria|Tiefen-Ork von Moria
 trp_i5_deep_dweller_of_moria_pl|Tiefen-Orks von Moria
 trp_i5_orc_chieftain_of_moria|Orkhäuptling von Moria
 trp_i5_orc_chieftain_of_moria_pl|Orkhäuptlinge von Moria
-trp_rhovanion_noble|Edelmann aus Rhovanion
-trp_rhovanion_noble_pl|Edelmänner aus Rhovanion
+trp_c5_rhovanion_noble|Edelmann aus Rhovanion
+trp_c5_rhovanion_noble_pl|Edelmänner aus Rhovanion
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel

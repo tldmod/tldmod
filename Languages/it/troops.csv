@@ -42,72 +42,72 @@ trp_townsman|Cittadino
 trp_townsman_pl|Cittadini
 trp_watchman|Cittadina
 trp_watchman_pl|Cittadina
-trp_woodmen_youth|Uomo dei Boschi
-trp_woodmen_youth_pl|Uomini dei Boschi
-trp_woodmen_forester|Guardiano dei Boschi
-trp_woodmen_forester_pl|Guardiani dei Boschi
-trp_woodmen_skilled_forester|Guardiano dei Boschi Veterano
-trp_woodmen_skilled_forester_pl|Guardiani dei Boschi Esperti
-trp_woodmen_axemen|Guardiano dei Boschi d'Elite
-trp_woodmen_axemen_pl|Guardiani dei Boschi d'Elite
-trp_woodmen_master_axemen|Guardia Notturna di Bosco Atro
-trp_woodmen_master_axemen_pl|Guardie Notturne di Bosco Atro
-trp_woodmen_tracker|Inseguitore dei Boschi
-trp_woodmen_tracker_pl|Inseguitori dei Boschi
-trp_woodmen_scout|Esploratore dei Boschi
-trp_woodmen_scout_pl|Esploratori dei Boschi
-trp_woodmen_archer|Arciere dei Boschi
-trp_woodmen_archer_pl|Arcieri dei Boschi
-trp_fell_huntsmen_of_mirkwood|Cacciatore Notturno di Bosco Atro
-trp_fell_huntsmen_of_mirkwood_pl|Cacciatori Notturni di Bosco Atro
-trp_beorning_vale_man|Uomo di Beorn
-trp_beorning_vale_man_pl|Uomini di Beorn
-trp_beorning_warrior|Guerriero di Beorn
-trp_beorning_warrior_pl|Guerrieri di Beorn
-trp_beorning_tolltacker|Gabelliere di Beorn
-trp_beorning_tolltacker_pl|Gabellieri di Beorn
-trp_beorning_sentinel|Sentinella di Beorn
-trp_beorning_sentinel_pl|Sentinelle di Beorn
-trp_beorning_warden_of_the_ford|Guardiano del Guado di Beorn
-trp_beorning_warden_of_the_ford_pl|Custodi del Guado di Beorn
-trp_beorning_carrock_lookout|Vedetta della Carroccia di Beorn
-trp_beorning_carrock_lookout_pl|Vedette della Carroccia di Beorn
-trp_beorning_carrock_fighter|Combattente della Carroccia di Beorn
-trp_beorning_carrock_fighter_pl|Combattenti della Carroccia di Beorn
-trp_beorning_carrock_berserker|Berserker della Carroccia di Beorn
-trp_beorning_carrock_berserker_pl|Berserker della Carroccia di Beorn
-trp_dale_militia|Miliziano di Dale
-trp_dale_militia_pl|Miliziani di Dale
-trp_dale_man_at_arms|Armigero di Dale
-trp_dale_man_at_arms_pl|Armigeri di Dale
-trp_laketown_scout|Esploratore di Dale
-trp_laketown_scout_pl|Esploratori di Dale
-trp_laketown_bowmen|Saettatore di Dale
-trp_laketown_bowmen_pl|Saetattori di Dale
-trp_laketown_archer|Arciere di Dale
-trp_laketown_archer_pl|Arcieri di Dale
-trp_barding_bowmen_of_esgaroth|Arciere Bardato
-trp_barding_bowmen_of_esgaroth_pl|Arcieri Bardati
-trp_dale_warrior|Spadaccino di Dale
-trp_dale_warrior_pl|Spadaccini di Dale
-trp_dale_veteran_warrior|Sergente di Dale
-trp_dale_veteran_warrior_pl|Sergenti di Dale
-trp_dale_marchwarden|Custode di Dale
-trp_dale_marchwarden_pl|Custodi di Dale
-trp_dale_pikeman|Lanciere di Dale
-trp_dale_pikeman_pl|Lancieri di Dale
-trp_dale_billman|Alabardiere di Dale
-trp_dale_billman_pl|Alabardieri di Dale
-trp_dale_bill_master|Mastro Alabardiere di Dale
-trp_dale_bill_master_pl|Mastri Alabardieri di Dale
-trp_merchant_squire_or_dale|Servitore del Nord
-trp_merchant_squire_or_dale_pl|Servitori del Nord
-trp_merchant_guard_of_dale|Ausiliario del Nord
-trp_merchant_guard_of_dale_pl|Ausiliari del Nord
-trp_merchant_protector_of_dale|Cavallerizzo del Rhovanion
-trp_merchant_protector_of_dale_pl|Cavallerizzi del Rhovanion
-trp_girions_guard_of_dale|Governatore del Rhovanion
-trp_girions_guard_of_dale_pl|Governatori del Rhovanion
+trp_i1_woodmen_man|Uomo dei Boschi
+trp_i1_woodmen_man_pl|Uomini dei Boschi
+trp_i2_woodmen_forester|Guardiano dei Boschi
+trp_i2_woodmen_forester_pl|Guardiani dei Boschi
+trp_i3_woodmen_skilled_forester|Guardiano dei Boschi Veterano
+trp_i3_woodmen_skilled_forester_pl|Guardiani dei Boschi Esperti
+trp_i4_woodmen_axemen|Guardiano dei Boschi d'Elite
+trp_i4_woodmen_axemen_pl|Guardiani dei Boschi d'Elite
+trp_i5_woodmen_night_guard|Guardia Notturna di Bosco Atro
+trp_i5_woodmen_night_guard_pl|Guardie Notturne di Bosco Atro
+trp_a2_woodmen_tracker|Inseguitore dei Boschi
+trp_a2_woodmen_tracker_pl|Inseguitori dei Boschi
+trp_a3_woodmen_scout|Esploratore dei Boschi
+trp_a3_woodmen_scout_pl|Esploratori dei Boschi
+trp_a4_woodmen_archer|Arciere dei Boschi
+trp_a4_woodmen_archer_pl|Arcieri dei Boschi
+trp_a5_woodmen_night_stalker|Cacciatore Notturno di Bosco Atro
+trp_a5_woodmen_night_stalker_pl|Cacciatori Notturni di Bosco Atro
+trp_i1_beorning_man|Uomo di Beorn
+trp_i1_beorning_man_pl|Uomini di Beorn
+trp_i2_beorning_warrior|Guerriero di Beorn
+trp_i2_beorning_warrior_pl|Guerrieri di Beorn
+trp_i3_beorning_tolltacker|Gabelliere di Beorn
+trp_i3_beorning_tolltacker_pl|Gabellieri di Beorn
+trp_i4_beorning_sentinel|Sentinella di Beorn
+trp_i4_beorning_sentinel_pl|Sentinelle di Beorn
+trp_i5_beorning_warden_of_the_ford|Guardiano del Guado di Beorn
+trp_i5_beorning_warden_of_the_ford_pl|Custodi del Guado di Beorn
+trp_i3_beorning_carrock_lookout|Vedetta della Carroccia di Beorn
+trp_i3_beorning_carrock_lookout_pl|Vedette della Carroccia di Beorn
+trp_i4_beorning_carrock_fighter|Combattente della Carroccia di Beorn
+trp_i4_beorning_carrock_fighter_pl|Combattenti della Carroccia di Beorn
+trp_i5_beorning_carrock_berserker|Berserker della Carroccia di Beorn
+trp_i5_beorning_carrock_berserker_pl|Berserker della Carroccia di Beorn
+trp_i1_dale_militia|Miliziano di Dale
+trp_i1_dale_militia_pl|Miliziani di Dale
+trp_i2_dale_man_at_arms|Armigero di Dale
+trp_i2_dale_man_at_arms_pl|Armigeri di Dale
+trp_a2_dale_scout|Esploratore di Dale
+trp_a2_dale_scout_pl|Esploratori di Dale
+trp_a3_dale_bowman|Saettatore di Dale
+trp_a3_dale_bowman_pl|Saetattori di Dale
+trp_a4_dale_archer|Arciere di Dale
+trp_a4_dale_archer_pl|Arcieri di Dale
+trp_a5_barding_bowman|Arciere Bardato
+trp_a5_barding_bowman_pl|Arcieri Bardati
+trp_i3_dale_swordsman|Spadaccino di Dale
+trp_i3_dale_swordsman_pl|Spadaccini di Dale
+trp_i4_dale_sergeant|Sergente di Dale
+trp_i4_dale_sergeant_pl|Sergenti di Dale
+trp_i5_dale_hearthman|Custode di Dale
+trp_i5_dale_hearthman_pl|Custodi di Dale
+trp_i3_dale_spearman|Lanciere di Dale
+trp_i3_dale_spearman_pl|Lancieri di Dale
+trp_i4_dale_billman|Alabardiere di Dale
+trp_i4_dale_billman_pl|Alabardieri di Dale
+trp_i5_dale_bill_master|Mastro Alabardiere di Dale
+trp_i5_dale_bill_master_pl|Mastri Alabardieri di Dale
+trp_c2_rhovanion_retainer|Servitore del Nord
+trp_c2_rhovanion_retainer_pl|Servitori del Nord
+trp_c3_rhovanion_auxilia|Ausiliario del Nord
+trp_c3_rhovanion_auxilia_pl|Ausiliari del Nord
+trp_c4_rhovanion_rider|Cavallerizzo del Rhovanion
+trp_c4_rhovanion_rider_pl|Cavallerizzi del Rhovanion
+trp_ac5_rhovanion_marchwarden|Governatore del Rhovanion
+trp_ac5_rhovanion_marchwarden_pl|Governatori del Rhovanion
 trp_rhun_tribesman|Uomo Tribale del Rhûn
 trp_rhun_tribesman_pl|Uomini Tribali del Rhûn
 trp_rhun_horse_scout|Esploratore a Cavallo del Rhûn
@@ -1563,8 +1563,8 @@ trp_start_quest_mordor_scout|Guida di Mordor
 trp_start_quest_mordor_scout_pl|Guide di Mordor
 trp_start_quest_beorning|Berserker della Carroccia di Beorn
 trp_start_quest_beorning_pl|Berserker della Carroccia di Beorn
-trp_beorning_shield_bear|Guerriero Orso
-trp_beorning_shield_bear_pl|Guerrieri Orsi
+trp_i6_beorning_bear_warrior|Guerriero Orso
+trp_i6_beorning_bear_warrior_pl|Guerrieri Orsi
 trp_morannon_healer|Okstuk il Guaritore
 trp_minas_tirith_healer|Ioreth
 trp_edoras_healer|Freya la Guaritrice
@@ -1581,8 +1581,8 @@ trp_i5_deep_dweller_of_moria|Abitante delle Profondità di Moria
 trp_i5_deep_dweller_of_moria_pl|Abitanti delle Profondità di Moria
 trp_i5_orc_chieftain_of_moria|Orco Capitano di Moria
 trp_i5_orc_chieftain_of_moria_pl|Orchi Capitani di Moria
-trp_rhovanion_noble|Nobile del Rhovanion
-trp_rhovanion_noble_pl|Nobile del Rhovanion
+trp_c5_rhovanion_noble|Nobile del Rhovanion
+trp_c5_rhovanion_noble_pl|Nobile del Rhovanion
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel

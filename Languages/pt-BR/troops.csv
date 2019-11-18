@@ -42,72 +42,72 @@ trp_townsman|Cidadão
 trp_townsman_pl|Cidadãos
 trp_watchman|Cidadã
 trp_watchman_pl|Cidadãs
-trp_woodmen_youth|Camponês
-trp_woodmen_youth_pl|Camponeses
-trp_woodmen_forester|Camponês Silvicultor
-trp_woodmen_forester_pl|Camponeses Silvicultores
-trp_woodmen_skilled_forester|Camponês Silvicultor Habilidoso
-trp_woodmen_skilled_forester_pl|Camponeses Silvicultores Habilidosos
-trp_woodmen_axemen|Campones Lenhador
-trp_woodmen_axemen_pl|Camponeses Lenhadores
-trp_woodmen_master_axemen|Guarda da Noite da Floresta das Trevas
-trp_woodmen_master_axemen_pl|Guardas da Noite da Floresta das Trevas
-trp_woodmen_tracker|Camponês Caçador
-trp_woodmen_tracker_pl|Camponeses Caçadores
-trp_woodmen_scout|Camponês Batedor
-trp_woodmen_scout_pl|Camponeses Batedores
-trp_woodmen_archer|Camponês Arqueiro
-trp_woodmen_archer_pl|Camponeses Arqueiros
-trp_fell_huntsmen_of_mirkwood|Perseguidor da Noite da Floresta das Trevas
-trp_fell_huntsmen_of_mirkwood_pl|Perseguidores da Noite da Floresta das Trevas
-trp_beorning_vale_man|Beorning
-trp_beorning_vale_man_pl|Beornings
-trp_beorning_warrior|Guerreiro Beorning
-trp_beorning_warrior_pl|Guerreiros Beornings
-trp_beorning_tolltacker|Devorador de Pedágio
-trp_beorning_tolltacker_pl|Devoradores de Pedágio
-trp_beorning_sentinel|Sentinela Beorning
-trp_beorning_sentinel_pl|Sentinelas Beornings
-trp_beorning_warden_of_the_ford|Beorning Guardião do Vau
-trp_beorning_warden_of_the_ford_pl|Guardiões da Manhã de Vau
-trp_beorning_carrock_lookout|Beorning Vigia de Carrock
-trp_beorning_carrock_lookout_pl|Beornings Vigias de Carrock
-trp_beorning_carrock_fighter|Beorning Guerreiro de Carrock
-trp_beorning_carrock_fighter_pl|Beornings Guerreiros de Carrock
-trp_beorning_carrock_berserker|Beorning Berserker de Carrock
-trp_beorning_carrock_berserker_pl|Beornings Berserkers de Carrock
-trp_dale_militia|Soldado de Milícia de Valle
-trp_dale_militia_pl|Milícia de Valle
-trp_dale_man_at_arms|Homem de Armas de Valle
-trp_dale_man_at_arms_pl|Homens de Armas de Valle
-trp_laketown_scout|Batedor de Dale
-trp_laketown_scout_pl|Batedores de Valle
-trp_laketown_bowmen|Arqueiro de Dale
-trp_laketown_bowmen_pl|Arqueiros de Dale
-trp_laketown_archer|Arqueiro de Dale
-trp_laketown_archer_pl|Arqueiros de Dale
-trp_barding_bowmen_of_esgaroth|Arqueiro de Barding
-trp_barding_bowmen_of_esgaroth_pl|Arqueiros de Barding
-trp_dale_warrior|Espadachim de Dale
-trp_dale_warrior_pl|Espadachins de Dale
-trp_dale_veteran_warrior|Sargento de Dale
-trp_dale_veteran_warrior_pl|Sargentos de Dale
-trp_dale_marchwarden|Homem da lareira de Dale
-trp_dale_marchwarden_pl|Homens da lareira de Dale
-trp_dale_pikeman|Lanceiro de Valle
-trp_dale_pikeman_pl|Lanceiro de Valle
-trp_dale_billman|Coletor de Impostos de Valle
-trp_dale_billman_pl|Coletores de Impostos de Valle
-trp_dale_bill_master|Mestre da Moeda de Valle
-trp_dale_bill_master_pl|Mestres da Moeda de Valle
-trp_merchant_squire_or_dale|Retentor dos Homens do Norte
-trp_merchant_squire_or_dale_pl|Retentores dos Homens do Norte
-trp_merchant_guard_of_dale|Homens do Norte Auxiliares
-trp_merchant_guard_of_dale_pl|Homens do Norte Auxilia
-trp_merchant_protector_of_dale|Cavaleiro de Rhovanion
-trp_merchant_protector_of_dale_pl|Cavaleiros de Rhovanion
-trp_girions_guard_of_dale|Jardineiro de Rhovanion
-trp_girions_guard_of_dale_pl|Jardineiros de Rhovanion
+trp_i1_woodmen_man|Camponês
+trp_i1_woodmen_man_pl|Camponeses
+trp_i2_woodmen_forester|Camponês Silvicultor
+trp_i2_woodmen_forester_pl|Camponeses Silvicultores
+trp_i3_woodmen_skilled_forester|Camponês Silvicultor Habilidoso
+trp_i3_woodmen_skilled_forester_pl|Camponeses Silvicultores Habilidosos
+trp_i4_woodmen_axemen|Campones Lenhador
+trp_i4_woodmen_axemen_pl|Camponeses Lenhadores
+trp_i5_woodmen_night_guard|Guarda da Noite da Floresta das Trevas
+trp_i5_woodmen_night_guard_pl|Guardas da Noite da Floresta das Trevas
+trp_a2_woodmen_tracker|Camponês Caçador
+trp_a2_woodmen_tracker_pl|Camponeses Caçadores
+trp_a3_woodmen_scout|Camponês Batedor
+trp_a3_woodmen_scout_pl|Camponeses Batedores
+trp_a4_woodmen_archer|Camponês Arqueiro
+trp_a4_woodmen_archer_pl|Camponeses Arqueiros
+trp_a5_woodmen_night_stalker|Perseguidor da Noite da Floresta das Trevas
+trp_a5_woodmen_night_stalker_pl|Perseguidores da Noite da Floresta das Trevas
+trp_i1_beorning_man|Beorning
+trp_i1_beorning_man_pl|Beornings
+trp_i2_beorning_warrior|Guerreiro Beorning
+trp_i2_beorning_warrior_pl|Guerreiros Beornings
+trp_i3_beorning_tolltacker|Devorador de Pedágio
+trp_i3_beorning_tolltacker_pl|Devoradores de Pedágio
+trp_i4_beorning_sentinel|Sentinela Beorning
+trp_i4_beorning_sentinel_pl|Sentinelas Beornings
+trp_i5_beorning_warden_of_the_ford|Beorning Guardião do Vau
+trp_i5_beorning_warden_of_the_ford_pl|Guardiões da Manhã de Vau
+trp_i3_beorning_carrock_lookout|Beorning Vigia de Carrock
+trp_i3_beorning_carrock_lookout_pl|Beornings Vigias de Carrock
+trp_i4_beorning_carrock_fighter|Beorning Guerreiro de Carrock
+trp_i4_beorning_carrock_fighter_pl|Beornings Guerreiros de Carrock
+trp_i5_beorning_carrock_berserker|Beorning Berserker de Carrock
+trp_i5_beorning_carrock_berserker_pl|Beornings Berserkers de Carrock
+trp_i1_dale_militia|Soldado de Milícia de Valle
+trp_i1_dale_militia_pl|Milícia de Valle
+trp_i2_dale_man_at_arms|Homem de Armas de Valle
+trp_i2_dale_man_at_arms_pl|Homens de Armas de Valle
+trp_a2_dale_scout|Batedor de Dale
+trp_a2_dale_scout_pl|Batedores de Valle
+trp_a3_dale_bowman|Arqueiro de Dale
+trp_a3_dale_bowman_pl|Arqueiros de Dale
+trp_a4_dale_archer|Arqueiro de Dale
+trp_a4_dale_archer_pl|Arqueiros de Dale
+trp_a5_barding_bowman|Arqueiro de Barding
+trp_a5_barding_bowman_pl|Arqueiros de Barding
+trp_i3_dale_swordsman|Espadachim de Dale
+trp_i3_dale_swordsman_pl|Espadachins de Dale
+trp_i4_dale_sergeant|Sargento de Dale
+trp_i4_dale_sergeant_pl|Sargentos de Dale
+trp_i5_dale_hearthman|Homem da lareira de Dale
+trp_i5_dale_hearthman_pl|Homens da lareira de Dale
+trp_i3_dale_spearman|Lanceiro de Valle
+trp_i3_dale_spearman_pl|Lanceiro de Valle
+trp_i4_dale_billman|Coletor de Impostos de Valle
+trp_i4_dale_billman_pl|Coletores de Impostos de Valle
+trp_i5_dale_bill_master|Mestre da Moeda de Valle
+trp_i5_dale_bill_master_pl|Mestres da Moeda de Valle
+trp_c2_rhovanion_retainer|Retentor dos Homens do Norte
+trp_c2_rhovanion_retainer_pl|Retentores dos Homens do Norte
+trp_c3_rhovanion_auxilia|Homens do Norte Auxiliares
+trp_c3_rhovanion_auxilia_pl|Homens do Norte Auxilia
+trp_c4_rhovanion_rider|Cavaleiro de Rhovanion
+trp_c4_rhovanion_rider_pl|Cavaleiros de Rhovanion
+trp_ac5_rhovanion_marchwarden|Jardineiro de Rhovanion
+trp_ac5_rhovanion_marchwarden_pl|Jardineiros de Rhovanion
 trp_rhun_tribesman|Membro da Tribo de Rhun
 trp_rhun_tribesman_pl|Membros da Tribo de Rhun
 trp_rhun_horse_scout|Batedor Montado de Rhun
@@ -1563,8 +1563,8 @@ trp_start_quest_mordor_scout|O que fazer em Mordor
 trp_start_quest_mordor_scout_pl|O que fazer em Mordor
 trp_start_quest_beorning|Beorning Berserker de Carrock
 trp_start_quest_beorning_pl|Beornings Berserkers de Carrock
-trp_beorning_shield_bear|Guerreiro Urso
-trp_beorning_shield_bear_pl|Guerreiros Ursos
+trp_i6_beorning_bear_warrior|Guerreiro Urso
+trp_i6_beorning_bear_warrior_pl|Guerreiros Ursos
 trp_morannon_healer|Okstuk, o Curandeiro
 trp_minas_tirith_healer|Ioreth
 trp_edoras_healer|Freya, a Curandeira
@@ -1581,8 +1581,8 @@ trp_i5_deep_dweller_of_moria|Escavador Profundo de Moria
 trp_i5_deep_dweller_of_moria_pl|Escavadores Profundos de Moria
 trp_i5_orc_chieftain_of_moria|Chefe Orc de Moria
 trp_i5_orc_chieftain_of_moria_pl|Chefes Orc de Moria
-trp_rhovanion_noble|Nobre Rhovanion
-trp_rhovanion_noble_pl|Nobres Rhovanion
+trp_c5_rhovanion_noble|Nobre Rhovanion
+trp_c5_rhovanion_noble_pl|Nobres Rhovanion
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel

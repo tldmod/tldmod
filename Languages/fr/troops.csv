@@ -42,72 +42,72 @@ trp_townsman|Habitant
 trp_townsman_pl|Habitants
 trp_watchman|Habitante
 trp_watchman_pl|Habitantes
-trp_woodmen_youth|Forestier
-trp_woodmen_youth_pl|Forestiers
-trp_woodmen_forester|Forestier de la Forêt Noire
-trp_woodmen_forester_pl|Forestiers de la Forêt Noire
-trp_woodmen_skilled_forester|Forestier expérimenté de la Forêt Noire
-trp_woodmen_skilled_forester_pl|Forestiers expérimentés de la Forêt Noire
-trp_woodmen_axemen|Manieur de hache de la Forêt Noire
-trp_woodmen_axemen_pl|Manieurs de hache de la Forêt Noire
-trp_woodmen_master_axemen|Garde nocturne de la Forêt Noire
-trp_woodmen_master_axemen_pl|Gardes nocturnes de la Forêt Noire
-trp_woodmen_tracker|Traqueur de la Forêt Noire
-trp_woodmen_tracker_pl|Traqueurs de la Forêt Noire
-trp_woodmen_scout|Éclaireur de la Forêt Noire
-trp_woodmen_scout_pl|Éclaireurs de la Forêt Noire
-trp_woodmen_archer|Archer de la Forêt Noire
-trp_woodmen_archer_pl|Archers de la Forêt Noire
-trp_fell_huntsmen_of_mirkwood|Rôdeur nocturne de la Forêt Noire
-trp_fell_huntsmen_of_mirkwood_pl|Rôdeurs nocturnes de la Forêt Noire
-trp_beorning_vale_man|Beornide
-trp_beorning_vale_man_pl|Beornides
-trp_beorning_warrior|Guerrier beornide
-trp_beorning_warrior_pl|Guerriers beornides
-trp_beorning_tolltacker|Douanier beornide
-trp_beorning_tolltacker_pl|Douaniers beornides
-trp_beorning_sentinel|Sentinelle beornide
-trp_beorning_sentinel_pl|Sentinelles beornides
-trp_beorning_warden_of_the_ford|Gardien beornide du Gué
-trp_beorning_warden_of_the_ford_pl|Gardiens Beornides du Gué
-trp_beorning_carrock_lookout|Guetteur beornide du Carrock
-trp_beorning_carrock_lookout_pl|Guetteurs beornides du Carrock
-trp_beorning_carrock_fighter|Combattant beornide du Carrock
-trp_beorning_carrock_fighter_pl|Combattants beornides du Carrock
-trp_beorning_carrock_berserker|Berserker beornide du Carrock
-trp_beorning_carrock_berserker_pl|Berserkers beornides du Carrock 
-trp_dale_militia|Milicien de Dale
-trp_dale_militia_pl|Milice de Dale
-trp_dale_man_at_arms|Homme d'armes de Dale
-trp_dale_man_at_arms_pl|Hommes d'armes de Dale
-trp_laketown_scout|Éclaireur de Dale 
-trp_laketown_scout_pl|Éclaireurs de Dale 
-trp_laketown_bowmen|Archer novice de Dale
-trp_laketown_bowmen_pl|Archers novices de Dale
-trp_laketown_archer|Archer de Dale
-trp_laketown_archer_pl|Archers de Dale
-trp_barding_bowmen_of_esgaroth|Archer de Bard
-trp_barding_bowmen_of_esgaroth_pl|Archers de Bard
-trp_dale_warrior|Épéiste de Dale
-trp_dale_warrior_pl|Épéistes de Dale
-trp_dale_veteran_warrior|Sergent de Dale
-trp_dale_veteran_warrior_pl|Sergents de Dale
-trp_dale_marchwarden|Gardien des Marches de Dale
-trp_dale_marchwarden_pl|Gardiens des Marches de Dale
-trp_dale_pikeman|Lancier de Dale
-trp_dale_pikeman_pl|Lanciers de Dale
-trp_dale_billman|Vougier de Dale
-trp_dale_billman_pl|Vougiers de Dale
-trp_dale_bill_master|Maître-vougier de Dale
-trp_dale_bill_master_pl|Maîtres-vougiers de Dale
-trp_merchant_squire_or_dale|Écuyer des Hommes du Nord
-trp_merchant_squire_or_dale_pl|Écuyers des Hommes du Nord
-trp_merchant_guard_of_dale|Auxiliaire des Hommes du Nord
-trp_merchant_guard_of_dale_pl|Auxiliaires des Hommes du Nord
-trp_merchant_protector_of_dale|Cavalier de Rhovanion
-trp_merchant_protector_of_dale_pl|Cavaliers de Rhovanion
-trp_girions_guard_of_dale|Gardien des Marches du Rhovanion
-trp_girions_guard_of_dale_pl|Gardiens des Marches du Rhovanion
+trp_i1_woodmen_man|Forestier
+trp_i1_woodmen_man_pl|Forestiers
+trp_i2_woodmen_forester|Forestier de la Forêt Noire
+trp_i2_woodmen_forester_pl|Forestiers de la Forêt Noire
+trp_i3_woodmen_skilled_forester|Forestier expérimenté de la Forêt Noire
+trp_i3_woodmen_skilled_forester_pl|Forestiers expérimentés de la Forêt Noire
+trp_i4_woodmen_axemen|Manieur de hache de la Forêt Noire
+trp_i4_woodmen_axemen_pl|Manieurs de hache de la Forêt Noire
+trp_i5_woodmen_night_guard|Garde nocturne de la Forêt Noire
+trp_i5_woodmen_night_guard_pl|Gardes nocturnes de la Forêt Noire
+trp_a2_woodmen_tracker|Traqueur de la Forêt Noire
+trp_a2_woodmen_tracker_pl|Traqueurs de la Forêt Noire
+trp_a3_woodmen_scout|Éclaireur de la Forêt Noire
+trp_a3_woodmen_scout_pl|Éclaireurs de la Forêt Noire
+trp_a4_woodmen_archer|Archer de la Forêt Noire
+trp_a4_woodmen_archer_pl|Archers de la Forêt Noire
+trp_a5_woodmen_night_stalker|Rôdeur nocturne de la Forêt Noire
+trp_a5_woodmen_night_stalker_pl|Rôdeurs nocturnes de la Forêt Noire
+trp_i1_beorning_man|Beornide
+trp_i1_beorning_man_pl|Beornides
+trp_i2_beorning_warrior|Guerrier beornide
+trp_i2_beorning_warrior_pl|Guerriers beornides
+trp_i3_beorning_tolltacker|Douanier beornide
+trp_i3_beorning_tolltacker_pl|Douaniers beornides
+trp_i4_beorning_sentinel|Sentinelle beornide
+trp_i4_beorning_sentinel_pl|Sentinelles beornides
+trp_i5_beorning_warden_of_the_ford|Gardien beornide du Gué
+trp_i5_beorning_warden_of_the_ford_pl|Gardiens Beornides du Gué
+trp_i3_beorning_carrock_lookout|Guetteur beornide du Carrock
+trp_i3_beorning_carrock_lookout_pl|Guetteurs beornides du Carrock
+trp_i4_beorning_carrock_fighter|Combattant beornide du Carrock
+trp_i4_beorning_carrock_fighter_pl|Combattants beornides du Carrock
+trp_i5_beorning_carrock_berserker|Berserker beornide du Carrock
+trp_i5_beorning_carrock_berserker_pl|Berserkers beornides du Carrock 
+trp_i1_dale_militia|Milicien de Dale
+trp_i1_dale_militia_pl|Milice de Dale
+trp_i2_dale_man_at_arms|Homme d'armes de Dale
+trp_i2_dale_man_at_arms_pl|Hommes d'armes de Dale
+trp_a2_dale_scout|Éclaireur de Dale 
+trp_a2_dale_scout_pl|Éclaireurs de Dale 
+trp_a3_dale_bowman|Archer novice de Dale
+trp_a3_dale_bowman_pl|Archers novices de Dale
+trp_a4_dale_archer|Archer de Dale
+trp_a4_dale_archer_pl|Archers de Dale
+trp_a5_barding_bowman|Archer de Bard
+trp_a5_barding_bowman_pl|Archers de Bard
+trp_i3_dale_swordsman|Épéiste de Dale
+trp_i3_dale_swordsman_pl|Épéistes de Dale
+trp_i4_dale_sergeant|Sergent de Dale
+trp_i4_dale_sergeant_pl|Sergents de Dale
+trp_i5_dale_hearthman|Gardien des Marches de Dale
+trp_i5_dale_hearthman_pl|Gardiens des Marches de Dale
+trp_i3_dale_spearman|Lancier de Dale
+trp_i3_dale_spearman_pl|Lanciers de Dale
+trp_i4_dale_billman|Vougier de Dale
+trp_i4_dale_billman_pl|Vougiers de Dale
+trp_i5_dale_bill_master|Maître-vougier de Dale
+trp_i5_dale_bill_master_pl|Maîtres-vougiers de Dale
+trp_c2_rhovanion_retainer|Écuyer des Hommes du Nord
+trp_c2_rhovanion_retainer_pl|Écuyers des Hommes du Nord
+trp_c3_rhovanion_auxilia|Auxiliaire des Hommes du Nord
+trp_c3_rhovanion_auxilia_pl|Auxiliaires des Hommes du Nord
+trp_c4_rhovanion_rider|Cavalier de Rhovanion
+trp_c4_rhovanion_rider_pl|Cavaliers de Rhovanion
+trp_ac5_rhovanion_marchwarden|Gardien des Marches du Rhovanion
+trp_ac5_rhovanion_marchwarden_pl|Gardiens des Marches du Rhovanion
 trp_rhun_tribesman|Homme des tribus de Rhûn
 trp_rhun_tribesman_pl|Hommes des tribus de Rhûn
 trp_rhun_horse_scout|Éclaireur à cheval de Rhûn
@@ -1563,8 +1563,8 @@ trp_start_quest_mordor_scout|Guide du Mordor
 trp_start_quest_mordor_scout_pl|Guides du Mordor
 trp_start_quest_beorning|Berserker des hommes des bois du Carrock
 trp_start_quest_beorning_pl|Berserkers des hommes des bois du Carrock 
-trp_beorning_shield_bear|Guerrier ours
-trp_beorning_shield_bear_pl|Guerriers ours
+trp_i6_beorning_bear_warrior|Guerrier ours
+trp_i6_beorning_bear_warrior_pl|Guerriers ours
 trp_morannon_healer|Okstuk le Guérisseur
 trp_minas_tirith_healer|Ioreth
 trp_edoras_healer|Freya le Guérisseur
@@ -1581,8 +1581,8 @@ trp_i5_deep_dweller_of_moria|Guerrier d'élite de la Moria
 trp_i5_deep_dweller_of_moria_pl|Guerriers d'élite de la Moria
 trp_i5_orc_chieftain_of_moria|Chef de clan orque de la Moria
 trp_i5_orc_chieftain_of_moria_pl|Chefs de clan orque de la Moria
-trp_rhovanion_noble|Noble du Rhovanion
-trp_rhovanion_noble_pl|Nobles du Rhovanion
+trp_c5_rhovanion_noble|Noble du Rhovanion
+trp_c5_rhovanion_noble_pl|Nobles du Rhovanion
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel

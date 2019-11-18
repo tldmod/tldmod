@@ -2041,7 +2041,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
    (else_try),  #Berserkers
       (neq, ":agent_killer", ":agent_player"),
       (this_or_next|eq, ":troop_killer", "trp_npc9"), #Gulm
-      (this_or_next|eq, ":troop_killer", "trp_beorning_carrock_berserker"),
+      (this_or_next|eq, ":troop_killer", "trp_i5_beorning_carrock_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_fighting_uruk_hai_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_i4_orc_beserker_gundabad"),
       (             eq, ":troop_killer", "trp_variag_gladiator"),
@@ -2080,7 +2080,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
     (else_try),  #Berserkers
       (neq, ":agent_killer", ":agent_player"),
       (this_or_next|eq, ":troop_killer", "trp_npc9"), #Gulm
-      (this_or_next|eq, ":troop_killer", "trp_beorning_carrock_berserker"),
+      (this_or_next|eq, ":troop_killer", "trp_i5_beorning_carrock_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_fighting_uruk_hai_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_i4_orc_beserker_gundabad"),
       (             eq, ":troop_killer", "trp_variag_gladiator"),

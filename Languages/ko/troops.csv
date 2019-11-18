@@ -42,72 +42,72 @@ trp_townsman|마을 주민
 trp_townsman_pl|마을 주민
 trp_watchman|마을 여자
 trp_watchman_pl|마을 여자들
-trp_woodmen_youth|나무꾼
-trp_woodmen_youth_pl|나무꾼
-trp_woodmen_forester|나무꾼 숲지기
-trp_woodmen_forester_pl|나무꾼 숲지기
-trp_woodmen_skilled_forester|숙련된 나무꾼 숲지기
-trp_woodmen_skilled_forester_pl|숙련된 나무꾼 숲지기
-trp_woodmen_axemen|나무꾼 도끼병
-trp_woodmen_axemen_pl|나무꾼 도끼병
-trp_woodmen_master_axemen|어둠숲 경비대
-trp_woodmen_master_axemen_pl|어둠숲 경비대
-trp_woodmen_tracker|나무꾼 길잡이
-trp_woodmen_tracker_pl|나무꾼 길잡이
-trp_woodmen_scout|나무꾼 순찰자
-trp_woodmen_scout_pl|나무꾼 순찰자
-trp_woodmen_archer|나무꾼 궁수
-trp_woodmen_archer_pl|나무꾼 궁수
-trp_fell_huntsmen_of_mirkwood|어둠숲 감시자
-trp_fell_huntsmen_of_mirkwood_pl|어둠숲 감시자
-trp_beorning_vale_man|베오른 일족
-trp_beorning_vale_man_pl|베오른 일족
-trp_beorning_warrior|베오른 전사
-trp_beorning_warrior_pl|베오른 전사
-trp_beorning_tolltacker|베오른 수비대
-trp_beorning_tolltacker_pl|베오른 수비대
-trp_beorning_sentinel|베오른 파수꾼
-trp_beorning_sentinel_pl|베오른 파수꾼
-trp_beorning_warden_of_the_ford|베오른 여울감시자
-trp_beorning_warden_of_the_ford_pl|베오른 여울감시자
-trp_beorning_carrock_lookout|베오른 망꾼
-trp_beorning_carrock_lookout_pl|베오른 망꾼
-trp_beorning_carrock_fighter|베오른 망루 전사
-trp_beorning_carrock_fighter_pl|베오른 망루 전사
-trp_beorning_carrock_berserker|베오른 망루 광전사
-trp_beorning_carrock_berserker_pl|베오른 망루 광전사
-trp_dale_militia|너른골 민병대
-trp_dale_militia_pl|너른골 민병대
-trp_dale_man_at_arms|너른골 보병
-trp_dale_man_at_arms_pl|너른골 보병
-trp_laketown_scout|너른골 정찰병
-trp_laketown_scout_pl|너른골 순찰자
-trp_laketown_bowmen|너른골 활잡이
-trp_laketown_bowmen_pl|너른골 활잡이
-trp_laketown_archer|너른골 궁수
-trp_laketown_archer_pl|너른골 궁수
-trp_barding_bowmen_of_esgaroth|바르드일족 궁수
-trp_barding_bowmen_of_esgaroth_pl|바르드일족 궁수
-trp_dale_warrior|너른골 검사
-trp_dale_warrior_pl|너른골 검사
-trp_dale_veteran_warrior|너른골 고참병
-trp_dale_veteran_warrior_pl|너른골 고참병
-trp_dale_marchwarden|너른골 후견인
-trp_dale_marchwarden_pl|너른골 후견인
-trp_dale_pikeman|너른골 창병
-trp_dale_pikeman_pl|너른골 창병
-trp_dale_billman|너른골 미늘창병
-trp_dale_billman_pl|너른골 미늘창병
-trp_dale_bill_master|너른골 정예 미늘창병
-trp_dale_bill_master_pl|너른골 정예 미늘창병
-; trp_merchant_squire_or_dale|Northmen Retainer
-; trp_merchant_squire_or_dale_pl|Northmen Retainers
-; trp_merchant_guard_of_dale|Northmen Auxiliary
-; trp_merchant_guard_of_dale_pl|Northmen Auxilia
-trp_merchant_protector_of_dale|로바니온 기수
-trp_merchant_protector_of_dale_pl|로바니온 기수
-; trp_girions_guard_of_dale|Rhovanion Marchwarden
-; trp_girions_guard_of_dale_pl|Rhovanion Marchwardens
+trp_i1_woodmen_man|나무꾼
+trp_i1_woodmen_man_pl|나무꾼
+trp_i2_woodmen_forester|나무꾼 숲지기
+trp_i2_woodmen_forester_pl|나무꾼 숲지기
+trp_i3_woodmen_skilled_forester|숙련된 나무꾼 숲지기
+trp_i3_woodmen_skilled_forester_pl|숙련된 나무꾼 숲지기
+trp_i4_woodmen_axemen|나무꾼 도끼병
+trp_i4_woodmen_axemen_pl|나무꾼 도끼병
+trp_i5_woodmen_night_guard|어둠숲 경비대
+trp_i5_woodmen_night_guard_pl|어둠숲 경비대
+trp_a2_woodmen_tracker|나무꾼 길잡이
+trp_a2_woodmen_tracker_pl|나무꾼 길잡이
+trp_a3_woodmen_scout|나무꾼 순찰자
+trp_a3_woodmen_scout_pl|나무꾼 순찰자
+trp_a4_woodmen_archer|나무꾼 궁수
+trp_a4_woodmen_archer_pl|나무꾼 궁수
+trp_a5_woodmen_night_stalker|어둠숲 감시자
+trp_a5_woodmen_night_stalker_pl|어둠숲 감시자
+trp_i1_beorning_man|베오른 일족
+trp_i1_beorning_man_pl|베오른 일족
+trp_i2_beorning_warrior|베오른 전사
+trp_i2_beorning_warrior_pl|베오른 전사
+trp_i3_beorning_tolltacker|베오른 수비대
+trp_i3_beorning_tolltacker_pl|베오른 수비대
+trp_i4_beorning_sentinel|베오른 파수꾼
+trp_i4_beorning_sentinel_pl|베오른 파수꾼
+trp_i5_beorning_warden_of_the_ford|베오른 여울감시자
+trp_i5_beorning_warden_of_the_ford_pl|베오른 여울감시자
+trp_i3_beorning_carrock_lookout|베오른 망꾼
+trp_i3_beorning_carrock_lookout_pl|베오른 망꾼
+trp_i4_beorning_carrock_fighter|베오른 망루 전사
+trp_i4_beorning_carrock_fighter_pl|베오른 망루 전사
+trp_i5_beorning_carrock_berserker|베오른 망루 광전사
+trp_i5_beorning_carrock_berserker_pl|베오른 망루 광전사
+trp_i1_dale_militia|너른골 민병대
+trp_i1_dale_militia_pl|너른골 민병대
+trp_i2_dale_man_at_arms|너른골 보병
+trp_i2_dale_man_at_arms_pl|너른골 보병
+trp_a2_dale_scout|너른골 정찰병
+trp_a2_dale_scout_pl|너른골 순찰자
+trp_a3_dale_bowman|너른골 활잡이
+trp_a3_dale_bowman_pl|너른골 활잡이
+trp_a4_dale_archer|너른골 궁수
+trp_a4_dale_archer_pl|너른골 궁수
+trp_a5_barding_bowman|바르드일족 궁수
+trp_a5_barding_bowman_pl|바르드일족 궁수
+trp_i3_dale_swordsman|너른골 검사
+trp_i3_dale_swordsman_pl|너른골 검사
+trp_i4_dale_sergeant|너른골 고참병
+trp_i4_dale_sergeant_pl|너른골 고참병
+trp_i5_dale_hearthman|너른골 후견인
+trp_i5_dale_hearthman_pl|너른골 후견인
+trp_i3_dale_spearman|너른골 창병
+trp_i3_dale_spearman_pl|너른골 창병
+trp_i4_dale_billman|너른골 미늘창병
+trp_i4_dale_billman_pl|너른골 미늘창병
+trp_i5_dale_bill_master|너른골 정예 미늘창병
+trp_i5_dale_bill_master_pl|너른골 정예 미늘창병
+; trp_c2_rhovanion_retainer|Northmen Retainer
+; trp_c2_rhovanion_retainer_pl|Northmen Retainers
+; trp_c3_rhovanion_auxilia|Northmen Auxiliary
+; trp_c3_rhovanion_auxilia_pl|Northmen Auxilia
+trp_c4_rhovanion_rider|로바니온 기수
+trp_c4_rhovanion_rider_pl|로바니온 기수
+; trp_ac5_rhovanion_marchwarden|Rhovanion Marchwarden
+; trp_ac5_rhovanion_marchwarden_pl|Rhovanion Marchwardens
 trp_rhun_tribesman|룬 부족민
 trp_rhun_tribesman_pl|룬 부족민
 trp_rhun_horse_scout|룬 기마 순찰병
@@ -1563,8 +1563,8 @@ trp_start_quest_mordor_scout|모르도르 안내인
 trp_start_quest_mordor_scout_pl|모르도르 안내인
 trp_start_quest_beorning|베오른 망루 광전사
 trp_start_quest_beorning_pl|베오른 망루 광전사
-; trp_beorning_shield_bear|Bear Warrior
-; trp_beorning_shield_bear_pl|Bear Warriors
+; trp_i6_beorning_bear_warrior|Bear Warrior
+; trp_i6_beorning_bear_warrior_pl|Bear Warriors
 ; trp_morannon_healer|Okstuk the Healer
 ; trp_minas_tirith_healer|Ioreth
 ; trp_edoras_healer|Freya the Healer
@@ -1581,8 +1581,8 @@ trp_start_quest_beorning_pl|베오른 망루 광전사
 ; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
 ; trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
 ; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
-; trp_rhovanion_noble|Rhovanion Noble
-; trp_rhovanion_noble_pl|Rhovanion Noblemen
+; trp_c5_rhovanion_noble|Rhovanion Noble
+; trp_c5_rhovanion_noble_pl|Rhovanion Noblemen
 ; trp_npc18|Turmbathu
 ; trp_npc19|Heidrek
 ; trp_npc20|Zigûrphel

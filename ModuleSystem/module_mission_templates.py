@@ -3761,10 +3761,10 @@ mission_templates = [ # not used in game
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
       #  (display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale
-        (assign, ":allies_melee_tier_1", "trp_dale_veteran_warrior"),
-        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
-        (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
-        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_melee_tier_1", "trp_i4_dale_sergeant"),
+        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_c3_rhovanion_auxilia",0), #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_archer_tier_1", "trp_a3_dale_bowman"),
+        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_a3_dale_bowman",0),   #Commented out - If we want to upgrade allies too.
       #  (display_message, "@DEBUG: Dale Troops Spawned", color_bad_news),
       (try_end),
 
@@ -4080,10 +4080,10 @@ mission_templates = [ # not used in game
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
         #(display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale
-        (assign, ":allies_melee_tier_1", "trp_dale_veteran_warrior"),
-        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
-        (assign, ":allies_archer_tier_1", "trp_laketown_scout"),
-        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_melee_tier_1", "trp_i4_dale_sergeant"),
+        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_c3_rhovanion_auxilia",0), #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_archer_tier_1", "trp_a2_dale_scout"),
+        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_a3_dale_bowman",0),   #Commented out - If we want to upgrade allies too.
         #(display_message, "@DEBUG: Dale Troops Spawned", color_bad_news),
       (try_end),
 
@@ -6755,12 +6755,12 @@ tld_remove_riderless_animals,
             (str_store_faction_name, s31, "fac_rohan"),
           (else_try),
             (eq, ":theater", theater_C),
-            (assign, ":interloper_1", "trp_woodmen_skilled_forester"),
-            (assign, ":interloper_2", "trp_woodmen_scout"),
+            (assign, ":interloper_1", "trp_i3_woodmen_skilled_forester"),
+            (assign, ":interloper_2", "trp_a3_woodmen_scout"),
             (str_store_faction_name, s31, "fac_beorn"),
           (else_try),
-            (assign, ":interloper_1", "trp_laketown_scout"),
-            (assign, ":interloper_2", "trp_dale_pikeman"),
+            (assign, ":interloper_1", "trp_a2_dale_scout"),
+            (assign, ":interloper_2", "trp_i3_dale_spearman"),
             (str_store_faction_name, s31, "fac_dale"),
           (try_end),
         (try_end),

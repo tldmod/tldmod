@@ -42,72 +42,72 @@ trp_townsman|Mestan
 trp_townsman_pl|Mestane
 trp_watchman|Mestanka
 trp_watchman_pl|Mestanky
-trp_woodmen_youth|Lesník
-trp_woodmen_youth_pl|Lesníci
-trp_woodmen_forester|Lesni drevorubec
-trp_woodmen_forester_pl|Lesni drevorubci
-trp_woodmen_skilled_forester|Zkuseny lesni drevorubec
-trp_woodmen_skilled_forester_pl|Zkuseni lesni drevorubci 
-trp_woodmen_axemen|Lesni sekernik
-trp_woodmen_axemen_pl|Lesnii sekernici
-trp_woodmen_master_axemen|Noční strážný z Temného hvozdu
-trp_woodmen_master_axemen_pl|Noční stráž z Temného hvozdu
-trp_woodmen_tracker|Lesni stopar
-trp_woodmen_tracker_pl|Lesni stopari
-trp_woodmen_scout|Lesni pruzkumnic
-trp_woodmen_scout_pl|Lesni pruzkumnici
-trp_woodmen_archer|Lesni lucisnik
-trp_woodmen_archer_pl|Lesni lucisnici
-trp_fell_huntsmen_of_mirkwood|Noční stopař z Temného hvozdu
-trp_fell_huntsmen_of_mirkwood_pl|Noční stopaři z Temného hvozdu
-trp_beorning_vale_man|Meddědovec
-trp_beorning_vale_man_pl|Meddědovci
-trp_beorning_warrior|Meddědovský válečník
-trp_beorning_warrior_pl|Valecnici Meddedovcu
-trp_beorning_tolltacker|Měddědovský mýtný
-trp_beorning_tolltacker_pl|Měddědovští mýtní
-trp_beorning_sentinel|Straz Meddedovcu
-trp_beorning_sentinel_pl|Straze Meddedovcu
-trp_beorning_warden_of_the_ford|Meddedovsky ochrance Brodu
-trp_beorning_warden_of_the_ford_pl|Meddědovský ochránce Brodu
-trp_beorning_carrock_lookout|Skalbalová hlídka Meddědovců
-trp_beorning_carrock_lookout_pl|Skalbalové hlídky Meddědovců
-trp_beorning_carrock_fighter|Skalbalový bojovník Meddědovců
-trp_beorning_carrock_fighter_pl|Skalbaloví bojovníci Meddědovců
-trp_beorning_carrock_berserker|Skalbalový berserk Meddědovců
-trp_beorning_carrock_berserker_pl|Skalbaloví berserkové Meddědovců
-trp_dale_militia|Dálský domobránce
-trp_dale_militia_pl|Dálská domobrana
-trp_dale_man_at_arms|Dálský ozbrojenec
-trp_dale_man_at_arms_pl|Dálský ozbrojenec
-trp_laketown_scout|Dolský průzkumník
-trp_laketown_scout_pl|Pruzkumnici z Dolu
-trp_laketown_bowmen|Dolský lukostřelec
-trp_laketown_bowmen_pl|Dolští lukostřelci
-trp_laketown_archer|Dolský lučištník
-trp_laketown_archer_pl|Dolští lučištníci
-trp_barding_bowmen_of_esgaroth|Bardovský lučištník
-trp_barding_bowmen_of_esgaroth_pl|Bardovští lučištníci
-trp_dale_warrior|Dolský šermíř
-trp_dale_warrior_pl|Dolští šermíři
-trp_dale_veteran_warrior|Dolský seržant
-trp_dale_veteran_warrior_pl|Dolští seržanti
-trp_dale_marchwarden|Dvorní válečník z Dolu
-trp_dale_marchwarden_pl|Dvorní válečníci z Dolu
-trp_dale_pikeman|Dolský kopiník
-trp_dale_pikeman_pl|Dolští kopiníci
-; trp_dale_billman|Dale Billman
-; trp_dale_billman_pl|Dale Billmen
-; trp_dale_bill_master|Dale Bill Master
-; trp_dale_bill_master_pl|Dale Bill Masters
-; trp_merchant_squire_or_dale|Northmen Retainer
-; trp_merchant_squire_or_dale_pl|Northmen Retainers
-; trp_merchant_guard_of_dale|Northmen Auxiliary
-; trp_merchant_guard_of_dale_pl|Northmen Auxilia
-trp_merchant_protector_of_dale|Rhovanionský Jezdec
-trp_merchant_protector_of_dale_pl|Rhovanionští Jezdci
-; trp_girions_guard_of_dale|Rhovanion Marchwarden
-; trp_girions_guard_of_dale_pl|Rhovanion Marchwardens
+trp_i1_woodmen_man|Lesník
+trp_i1_woodmen_man_pl|Lesníci
+trp_i2_woodmen_forester|Lesni drevorubec
+trp_i2_woodmen_forester_pl|Lesni drevorubci
+trp_i3_woodmen_skilled_forester|Zkuseny lesni drevorubec
+trp_i3_woodmen_skilled_forester_pl|Zkuseni lesni drevorubci 
+trp_i4_woodmen_axemen|Lesni sekernik
+trp_i4_woodmen_axemen_pl|Lesnii sekernici
+trp_i5_woodmen_night_guard|Noční strážný z Temného hvozdu
+trp_i5_woodmen_night_guard_pl|Noční stráž z Temného hvozdu
+trp_a2_woodmen_tracker|Lesni stopar
+trp_a2_woodmen_tracker_pl|Lesni stopari
+trp_a3_woodmen_scout|Lesni pruzkumnic
+trp_a3_woodmen_scout_pl|Lesni pruzkumnici
+trp_a4_woodmen_archer|Lesni lucisnik
+trp_a4_woodmen_archer_pl|Lesni lucisnici
+trp_a5_woodmen_night_stalker|Noční stopař z Temného hvozdu
+trp_a5_woodmen_night_stalker_pl|Noční stopaři z Temného hvozdu
+trp_i1_beorning_man|Meddědovec
+trp_i1_beorning_man_pl|Meddědovci
+trp_i2_beorning_warrior|Meddědovský válečník
+trp_i2_beorning_warrior_pl|Valecnici Meddedovcu
+trp_i3_beorning_tolltacker|Měddědovský mýtný
+trp_i3_beorning_tolltacker_pl|Měddědovští mýtní
+trp_i4_beorning_sentinel|Straz Meddedovcu
+trp_i4_beorning_sentinel_pl|Straze Meddedovcu
+trp_i5_beorning_warden_of_the_ford|Meddedovsky ochrance Brodu
+trp_i5_beorning_warden_of_the_ford_pl|Meddědovský ochránce Brodu
+trp_i3_beorning_carrock_lookout|Skalbalová hlídka Meddědovců
+trp_i3_beorning_carrock_lookout_pl|Skalbalové hlídky Meddědovců
+trp_i4_beorning_carrock_fighter|Skalbalový bojovník Meddědovců
+trp_i4_beorning_carrock_fighter_pl|Skalbaloví bojovníci Meddědovců
+trp_i5_beorning_carrock_berserker|Skalbalový berserk Meddědovců
+trp_i5_beorning_carrock_berserker_pl|Skalbaloví berserkové Meddědovců
+trp_i1_dale_militia|Dálský domobránce
+trp_i1_dale_militia_pl|Dálská domobrana
+trp_i2_dale_man_at_arms|Dálský ozbrojenec
+trp_i2_dale_man_at_arms_pl|Dálský ozbrojenec
+trp_a2_dale_scout|Dolský průzkumník
+trp_a2_dale_scout_pl|Pruzkumnici z Dolu
+trp_a3_dale_bowman|Dolský lukostřelec
+trp_a3_dale_bowman_pl|Dolští lukostřelci
+trp_a4_dale_archer|Dolský lučištník
+trp_a4_dale_archer_pl|Dolští lučištníci
+trp_a5_barding_bowman|Bardovský lučištník
+trp_a5_barding_bowman_pl|Bardovští lučištníci
+trp_i3_dale_swordsman|Dolský šermíř
+trp_i3_dale_swordsman_pl|Dolští šermíři
+trp_i4_dale_sergeant|Dolský seržant
+trp_i4_dale_sergeant_pl|Dolští seržanti
+trp_i5_dale_hearthman|Dvorní válečník z Dolu
+trp_i5_dale_hearthman_pl|Dvorní válečníci z Dolu
+trp_i3_dale_spearman|Dolský kopiník
+trp_i3_dale_spearman_pl|Dolští kopiníci
+; trp_i4_dale_billman|Dale Billman
+; trp_i4_dale_billman_pl|Dale Billmen
+; trp_i5_dale_bill_master|Dale Bill Master
+; trp_i5_dale_bill_master_pl|Dale Bill Masters
+; trp_c2_rhovanion_retainer|Northmen Retainer
+; trp_c2_rhovanion_retainer_pl|Northmen Retainers
+; trp_c3_rhovanion_auxilia|Northmen Auxiliary
+; trp_c3_rhovanion_auxilia_pl|Northmen Auxilia
+trp_c4_rhovanion_rider|Rhovanionský Jezdec
+trp_c4_rhovanion_rider_pl|Rhovanionští Jezdci
+; trp_ac5_rhovanion_marchwarden|Rhovanion Marchwarden
+; trp_ac5_rhovanion_marchwarden_pl|Rhovanion Marchwardens
 ; trp_rhun_tribesman|Rhun Tribesman
 ; trp_rhun_tribesman_pl|Rhun Tribesmen
 trp_rhun_horse_scout|Rhůnský průzkumník
@@ -1563,8 +1563,8 @@ trp_ring_hunter_four_pl|hledači prstenu
 ; trp_start_quest_mordor_scout_pl|Mordor Guides
 trp_start_quest_beorning|Skalbalový berserk Meddědovců
 trp_start_quest_beorning_pl|Skalbaloví berserkové Meddědovců
-; trp_beorning_shield_bear|Bear Warrior
-; trp_beorning_shield_bear_pl|Bear Warriors
+; trp_i6_beorning_bear_warrior|Bear Warrior
+; trp_i6_beorning_bear_warrior_pl|Bear Warriors
 ; trp_morannon_healer|Okstuk the Healer
 ; trp_minas_tirith_healer|Ioreth
 ; trp_edoras_healer|Freya the Healer
@@ -1581,8 +1581,8 @@ trp_start_quest_beorning_pl|Skalbaloví berserkové Meddědovců
 ; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
 ; trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
 ; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
-; trp_rhovanion_noble|Rhovanion Noble
-; trp_rhovanion_noble_pl|Rhovanion Noblemen
+; trp_c5_rhovanion_noble|Rhovanion Noble
+; trp_c5_rhovanion_noble_pl|Rhovanion Noblemen
 ; trp_npc18|Turmbathu
 ; trp_npc19|Heidrek
 ; trp_npc20|Zigûrphel

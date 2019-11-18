@@ -42,72 +42,72 @@ trp_townsman|Građanin
 trp_townsman_pl|Građani
 trp_watchman|Gradjanka 
 trp_watchman_pl|Gradjanka
-trp_woodmen_youth|Šumar
-trp_woodmen_youth_pl|Šumari
-trp_woodmen_forester|Šumar drvoseča
-trp_woodmen_forester_pl|Šumari drvoseče
-trp_woodmen_skilled_forester|Vešt Šumar drvoseča
-trp_woodmen_skilled_forester_pl|Šumar vešti drvoseča
-trp_woodmen_axemen|Šumar sekironoša
-trp_woodmen_axemen_pl|Šumar sekironoša
-trp_woodmen_master_axemen|Noćni čuvar Mrkolesja
-trp_woodmen_master_axemen_pl|Noćna čuvari Mrkolesja
-trp_woodmen_tracker|Šumar tragač
-trp_woodmen_tracker_pl|Šumari tragači
-trp_woodmen_scout|Šumar izviđač
-trp_woodmen_scout_pl|Šumari izviđači
-trp_woodmen_archer|Šumar strelac
-trp_woodmen_archer_pl|Šumari strelci
-trp_fell_huntsmen_of_mirkwood|Noćna prikradica Mrkolesja
-trp_fell_huntsmen_of_mirkwood_pl|Noćne prikradice Mrkolesja
-trp_beorning_vale_man|Bjornski čovek
-trp_beorning_vale_man_pl|Bjorning vojnik
-trp_beorning_warrior|Bjorning ratnik
-trp_beorning_warrior_pl|Bjorning ratnici
-trp_beorning_tolltacker|Bjorning Trolo ubica
-trp_beorning_tolltacker_pl|Bjorning Trolo ubice 
-trp_beorning_sentinel|Bjorning stražar
-trp_beorning_sentinel_pl|Bjorning stražari
-trp_beorning_warden_of_the_ford|Bjorning čuvar Forda
-trp_beorning_warden_of_the_ford_pl|Bjorning nadzornik Forda
-trp_beorning_carrock_lookout|Bjoringski Karok osmatrač
-trp_beorning_carrock_lookout_pl|Bjoringski Karok osmatrači
-trp_beorning_carrock_fighter|Bjorinski Karok borac
-trp_beorning_carrock_fighter_pl|Bjorinski Karok borci
-trp_beorning_carrock_berserker|Bjorinski Karok berserker
-trp_beorning_carrock_berserker_pl|Bjorinski Karok berserkeri
-trp_dale_militia|Dalski milicajac
-trp_dale_militia_pl|Dalska milicija
-trp_dale_man_at_arms|Dalski oklopnik
-trp_dale_man_at_arms_pl|Dalski oklopnici
-trp_laketown_scout|Dalski izviđač
-trp_laketown_scout_pl|Dalski izviđači
-trp_laketown_bowmen|Dalski strelac
-trp_laketown_bowmen_pl|Dalski strelci
-trp_laketown_archer|Dalski strelac
-trp_laketown_archer_pl|Dalski strelci
-trp_barding_bowmen_of_esgaroth|Bardov strelac
-trp_barding_bowmen_of_esgaroth_pl|Bardovi strelci
-trp_dale_warrior|Dalski mačevaoc
-trp_dale_warrior_pl|Dalski mačevaoci
-trp_dale_veteran_warrior|Dalski vojnik
-trp_dale_veteran_warrior_pl|Dalski vojnici
-trp_dale_marchwarden|Dalski zaštitnik ognjišta
-trp_dale_marchwarden_pl|Dalski zaštitnici ognjišta
-trp_dale_pikeman|Dalski kopljanik
-trp_dale_pikeman_pl|Dalski kopljanici
-trp_dale_billman|Dalski helebardist
-trp_dale_billman_pl|Dalski helebardisti
-trp_dale_bill_master|Dalski kosir majstor
-trp_dale_bill_master_pl|Dalski kosir majstori
-trp_merchant_squire_or_dale|Severnjački pratilac
-trp_merchant_squire_or_dale_pl|Severnjački pratilaci
-trp_merchant_guard_of_dale|Severnjacki pomocni odredenik
-trp_merchant_guard_of_dale_pl|Severnjacki pomocni odred
-trp_merchant_protector_of_dale|Rohanski jahač
-trp_merchant_protector_of_dale_pl|Rohanski jahači
-trp_girions_guard_of_dale|Rohanski krajišnik
-trp_girions_guard_of_dale_pl|Rohanski krajišnici
+trp_i1_woodmen_man|Šumar
+trp_i1_woodmen_man_pl|Šumari
+trp_i2_woodmen_forester|Šumar drvoseča
+trp_i2_woodmen_forester_pl|Šumari drvoseče
+trp_i3_woodmen_skilled_forester|Vešt Šumar drvoseča
+trp_i3_woodmen_skilled_forester_pl|Šumar vešti drvoseča
+trp_i4_woodmen_axemen|Šumar sekironoša
+trp_i4_woodmen_axemen_pl|Šumar sekironoša
+trp_i5_woodmen_night_guard|Noćni čuvar Mrkolesja
+trp_i5_woodmen_night_guard_pl|Noćna čuvari Mrkolesja
+trp_a2_woodmen_tracker|Šumar tragač
+trp_a2_woodmen_tracker_pl|Šumari tragači
+trp_a3_woodmen_scout|Šumar izviđač
+trp_a3_woodmen_scout_pl|Šumari izviđači
+trp_a4_woodmen_archer|Šumar strelac
+trp_a4_woodmen_archer_pl|Šumari strelci
+trp_a5_woodmen_night_stalker|Noćna prikradica Mrkolesja
+trp_a5_woodmen_night_stalker_pl|Noćne prikradice Mrkolesja
+trp_i1_beorning_man|Bjornski čovek
+trp_i1_beorning_man_pl|Bjorning vojnik
+trp_i2_beorning_warrior|Bjorning ratnik
+trp_i2_beorning_warrior_pl|Bjorning ratnici
+trp_i3_beorning_tolltacker|Bjorning Trolo ubica
+trp_i3_beorning_tolltacker_pl|Bjorning Trolo ubice 
+trp_i4_beorning_sentinel|Bjorning stražar
+trp_i4_beorning_sentinel_pl|Bjorning stražari
+trp_i5_beorning_warden_of_the_ford|Bjorning čuvar Forda
+trp_i5_beorning_warden_of_the_ford_pl|Bjorning nadzornik Forda
+trp_i3_beorning_carrock_lookout|Bjoringski Karok osmatrač
+trp_i3_beorning_carrock_lookout_pl|Bjoringski Karok osmatrači
+trp_i4_beorning_carrock_fighter|Bjorinski Karok borac
+trp_i4_beorning_carrock_fighter_pl|Bjorinski Karok borci
+trp_i5_beorning_carrock_berserker|Bjorinski Karok berserker
+trp_i5_beorning_carrock_berserker_pl|Bjorinski Karok berserkeri
+trp_i1_dale_militia|Dalski milicajac
+trp_i1_dale_militia_pl|Dalska milicija
+trp_i2_dale_man_at_arms|Dalski oklopnik
+trp_i2_dale_man_at_arms_pl|Dalski oklopnici
+trp_a2_dale_scout|Dalski izviđač
+trp_a2_dale_scout_pl|Dalski izviđači
+trp_a3_dale_bowman|Dalski strelac
+trp_a3_dale_bowman_pl|Dalski strelci
+trp_a4_dale_archer|Dalski strelac
+trp_a4_dale_archer_pl|Dalski strelci
+trp_a5_barding_bowman|Bardov strelac
+trp_a5_barding_bowman_pl|Bardovi strelci
+trp_i3_dale_swordsman|Dalski mačevaoc
+trp_i3_dale_swordsman_pl|Dalski mačevaoci
+trp_i4_dale_sergeant|Dalski vojnik
+trp_i4_dale_sergeant_pl|Dalski vojnici
+trp_i5_dale_hearthman|Dalski zaštitnik ognjišta
+trp_i5_dale_hearthman_pl|Dalski zaštitnici ognjišta
+trp_i3_dale_spearman|Dalski kopljanik
+trp_i3_dale_spearman_pl|Dalski kopljanici
+trp_i4_dale_billman|Dalski helebardist
+trp_i4_dale_billman_pl|Dalski helebardisti
+trp_i5_dale_bill_master|Dalski kosir majstor
+trp_i5_dale_bill_master_pl|Dalski kosir majstori
+trp_c2_rhovanion_retainer|Severnjački pratilac
+trp_c2_rhovanion_retainer_pl|Severnjački pratilaci
+trp_c3_rhovanion_auxilia|Severnjacki pomocni odredenik
+trp_c3_rhovanion_auxilia_pl|Severnjacki pomocni odred
+trp_c4_rhovanion_rider|Rohanski jahač
+trp_c4_rhovanion_rider_pl|Rohanski jahači
+trp_ac5_rhovanion_marchwarden|Rohanski krajišnik
+trp_ac5_rhovanion_marchwarden_pl|Rohanski krajišnici
 trp_rhun_tribesman|Runski plemenik
 trp_rhun_tribesman_pl|Runski plemenici
 trp_rhun_horse_scout|Runski izvidjački konjanik
@@ -1562,8 +1562,8 @@ trp_ring_hunter_four_pl|Lovći prstena
 ; trp_start_quest_mordor_scout_pl|Mordor Guides
 trp_start_quest_beorning|Bjorinski Karok berserker
 trp_start_quest_beorning_pl|Bjorinski Karok berserkeri
-; trp_beorning_shield_bear|Bear Warrior
-; trp_beorning_shield_bear_pl|Bear Warriors
+; trp_i6_beorning_bear_warrior|Bear Warrior
+; trp_i6_beorning_bear_warrior_pl|Bear Warriors
 ; trp_morannon_healer|Okstuk the Healer
 ; trp_minas_tirith_healer|Ioreth
 ; trp_edoras_healer|Freya the Healer
@@ -1580,5 +1580,5 @@ trp_start_quest_beorning_pl|Bjorinski Karok berserkeri
 ; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
 ; trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
 ; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
-; trp_rhovanion_noble|Rhovanion Noble
-; trp_rhovanion_noble_pl|Rhovanion Noblemen
+; trp_c5_rhovanion_noble|Rhovanion Noble
+; trp_c5_rhovanion_noble_pl|Rhovanion Noblemen

@@ -42,72 +42,72 @@ trp_townsman|Citadino
 trp_townsman_pl|Citadinos
 ; trp_watchman|Townswoman
 ; trp_watchman_pl|Townswomen
-; trp_woodmen_youth|Woodman
-; trp_woodmen_youth_pl|Woodmen
-; trp_woodmen_forester|Woodmen Forester
-; trp_woodmen_forester_pl|Woodmen Foresters
-; trp_woodmen_skilled_forester|Woodmen Skilled Forester
-; trp_woodmen_skilled_forester_pl|Woodmen Skilled Foresters
-; trp_woodmen_axemen|Woodmen Axeman
-; trp_woodmen_axemen_pl|Woodmen Axemen
-; trp_woodmen_master_axemen|Night Guard of Mirkwood
-; trp_woodmen_master_axemen_pl|Night Guards of Mirkwood
-; trp_woodmen_tracker|Woodmen Tracker
-; trp_woodmen_tracker_pl|Woodmen Trackers
-; trp_woodmen_scout|Woodmen Scout
-; trp_woodmen_scout_pl|Woodmen Scouts
-; trp_woodmen_archer|Woodmen Archer
-; trp_woodmen_archer_pl|Woodmen Archers
-; trp_fell_huntsmen_of_mirkwood|Night Stalker of Mirkwood
-; trp_fell_huntsmen_of_mirkwood_pl|Night Stalkers of Mirkwood
-trp_beorning_vale_man|Homem Beorning
-trp_beorning_vale_man_pl|Homens Beornings
-trp_beorning_warrior|Guerreiro Beorning
-trp_beorning_warrior_pl|Guerreiros Beornings
-; trp_beorning_tolltacker|Beorning Toll-Taker
-; trp_beorning_tolltacker_pl|Beorning Toll-Takers
-trp_beorning_sentinel|Sentinela Beorning
-trp_beorning_sentinel_pl|Sentinelas Beornings
-; trp_beorning_warden_of_the_ford|Beorning Warden of the Ford
-; trp_beorning_warden_of_the_ford_pl|Beorning Wardens of the Ford
-; trp_beorning_carrock_lookout|Beorning Carrock Lookout
-; trp_beorning_carrock_lookout_pl|Beorning Carrock Lookouts
-; trp_beorning_carrock_fighter|Beorning Carrock Fighter
-; trp_beorning_carrock_fighter_pl|Beorning Carrock Fighters
-; trp_beorning_carrock_berserker|Beorning Carrock Berserker
-; trp_beorning_carrock_berserker_pl|Beorning Carrock Berserkers
-trp_dale_militia|Miliciano do Vale
-trp_dale_militia_pl|Milicia do Vale
-trp_dale_man_at_arms|Homem de Armas do Vale
-trp_dale_man_at_arms_pl|Homem de Armas do vale
-; trp_laketown_scout|Dale Scout
-; trp_laketown_scout_pl|Dale Scouts
-; trp_laketown_bowmen|Dale Bowman
-; trp_laketown_bowmen_pl|Dale Bowmen
-; trp_laketown_archer|Dale Archer
-; trp_laketown_archer_pl|Dale Archers
-; trp_barding_bowmen_of_esgaroth|Barding Bowman
-; trp_barding_bowmen_of_esgaroth_pl|Barding Bowmen
-; trp_dale_warrior|Dale Swordsman
-; trp_dale_warrior_pl|Dale Swordsmen
-; trp_dale_veteran_warrior|Dale Sergeant
-; trp_dale_veteran_warrior_pl|Dale Sergeants
-; trp_dale_marchwarden|Hearthman of Dale
-; trp_dale_marchwarden_pl|Hearthmen of Dale
-trp_dale_pikeman|Lanceiro do Vale
-trp_dale_pikeman_pl|Lanceiros do Vale
-; trp_dale_billman|Dale Billman
-; trp_dale_billman_pl|Dale Billmen
-; trp_dale_bill_master|Dale Bill Master
-; trp_dale_bill_master_pl|Dale Bill Masters
-; trp_merchant_squire_or_dale|Northmen Retainer
-; trp_merchant_squire_or_dale_pl|Northmen Retainers
-; trp_merchant_guard_of_dale|Northmen Auxiliary
-; trp_merchant_guard_of_dale_pl|Northmen Auxilia
-; trp_merchant_protector_of_dale|Rhovanion Rider
-; trp_merchant_protector_of_dale_pl|Rhovanion Riders
-; trp_girions_guard_of_dale|Rhovanion Marchwarden
-; trp_girions_guard_of_dale_pl|Rhovanion Marchwardens
+; trp_i1_woodmen_man|Woodman
+; trp_i1_woodmen_man_pl|Woodmen
+; trp_i2_woodmen_forester|Woodmen Forester
+; trp_i2_woodmen_forester_pl|Woodmen Foresters
+; trp_i3_woodmen_skilled_forester|Woodmen Skilled Forester
+; trp_i3_woodmen_skilled_forester_pl|Woodmen Skilled Foresters
+; trp_i4_woodmen_axemen|Woodmen Axeman
+; trp_i4_woodmen_axemen_pl|Woodmen Axemen
+; trp_i5_woodmen_night_guard|Night Guard of Mirkwood
+; trp_i5_woodmen_night_guard_pl|Night Guards of Mirkwood
+; trp_a2_woodmen_tracker|Woodmen Tracker
+; trp_a2_woodmen_tracker_pl|Woodmen Trackers
+; trp_a3_woodmen_scout|Woodmen Scout
+; trp_a3_woodmen_scout_pl|Woodmen Scouts
+; trp_a4_woodmen_archer|Woodmen Archer
+; trp_a4_woodmen_archer_pl|Woodmen Archers
+; trp_a5_woodmen_night_stalker|Night Stalker of Mirkwood
+; trp_a5_woodmen_night_stalker_pl|Night Stalkers of Mirkwood
+trp_i1_beorning_man|Homem Beorning
+trp_i1_beorning_man_pl|Homens Beornings
+trp_i2_beorning_warrior|Guerreiro Beorning
+trp_i2_beorning_warrior_pl|Guerreiros Beornings
+; trp_i3_beorning_tolltacker|Beorning Toll-Taker
+; trp_i3_beorning_tolltacker_pl|Beorning Toll-Takers
+trp_i4_beorning_sentinel|Sentinela Beorning
+trp_i4_beorning_sentinel_pl|Sentinelas Beornings
+; trp_i5_beorning_warden_of_the_ford|Beorning Warden of the Ford
+; trp_i5_beorning_warden_of_the_ford_pl|Beorning Wardens of the Ford
+; trp_i3_beorning_carrock_lookout|Beorning Carrock Lookout
+; trp_i3_beorning_carrock_lookout_pl|Beorning Carrock Lookouts
+; trp_i4_beorning_carrock_fighter|Beorning Carrock Fighter
+; trp_i4_beorning_carrock_fighter_pl|Beorning Carrock Fighters
+; trp_i5_beorning_carrock_berserker|Beorning Carrock Berserker
+; trp_i5_beorning_carrock_berserker_pl|Beorning Carrock Berserkers
+trp_i1_dale_militia|Miliciano do Vale
+trp_i1_dale_militia_pl|Milicia do Vale
+trp_i2_dale_man_at_arms|Homem de Armas do Vale
+trp_i2_dale_man_at_arms_pl|Homem de Armas do vale
+; trp_a2_dale_scout|Dale Scout
+; trp_a2_dale_scout_pl|Dale Scouts
+; trp_a3_dale_bowman|Dale Bowman
+; trp_a3_dale_bowman_pl|Dale Bowmen
+; trp_a4_dale_archer|Dale Archer
+; trp_a4_dale_archer_pl|Dale Archers
+; trp_a5_barding_bowman|Barding Bowman
+; trp_a5_barding_bowman_pl|Barding Bowmen
+; trp_i3_dale_swordsman|Dale Swordsman
+; trp_i3_dale_swordsman_pl|Dale Swordsmen
+; trp_i4_dale_sergeant|Dale Sergeant
+; trp_i4_dale_sergeant_pl|Dale Sergeants
+; trp_i5_dale_hearthman|Hearthman of Dale
+; trp_i5_dale_hearthman_pl|Hearthmen of Dale
+trp_i3_dale_spearman|Lanceiro do Vale
+trp_i3_dale_spearman_pl|Lanceiros do Vale
+; trp_i4_dale_billman|Dale Billman
+; trp_i4_dale_billman_pl|Dale Billmen
+; trp_i5_dale_bill_master|Dale Bill Master
+; trp_i5_dale_bill_master_pl|Dale Bill Masters
+; trp_c2_rhovanion_retainer|Northmen Retainer
+; trp_c2_rhovanion_retainer_pl|Northmen Retainers
+; trp_c3_rhovanion_auxilia|Northmen Auxiliary
+; trp_c3_rhovanion_auxilia_pl|Northmen Auxilia
+; trp_c4_rhovanion_rider|Rhovanion Rider
+; trp_c4_rhovanion_rider_pl|Rhovanion Riders
+; trp_ac5_rhovanion_marchwarden|Rhovanion Marchwarden
+; trp_ac5_rhovanion_marchwarden_pl|Rhovanion Marchwardens
 trp_rhun_tribesman|Homen de Rhun
 trp_rhun_tribesman_pl|Homens de Rhun
 ; trp_rhun_horse_scout|Rhun Horse Scout
@@ -1562,8 +1562,8 @@ trp_wolf_pl|Lobos
 ; trp_start_quest_mordor_scout_pl|Mordor Guides
 ; trp_start_quest_beorning|Beorning Carrock Berserker
 ; trp_start_quest_beorning_pl|Beorning Carrock Berserkers
-; trp_beorning_shield_bear|Bear Warrior
-; trp_beorning_shield_bear_pl|Bear Warriors
+; trp_i6_beorning_bear_warrior|Bear Warrior
+; trp_i6_beorning_bear_warrior_pl|Bear Warriors
 ; trp_morannon_healer|Okstuk the Healer
 ; trp_minas_tirith_healer|Ioreth
 ; trp_edoras_healer|Freya the Healer
@@ -1580,5 +1580,5 @@ trp_wolf_pl|Lobos
 ; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
 ; trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
 ; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
-; trp_rhovanion_noble|Rhovanion Noble
-; trp_rhovanion_noble_pl|Rhovanion Noblemen
+; trp_c5_rhovanion_noble|Rhovanion Noble
+; trp_c5_rhovanion_noble_pl|Rhovanion Noblemen
