@@ -746,22 +746,22 @@ game_menus = [
 		(set_visitors, 15, "trp_i5_dale_hearthman",			6),
 #       (set_visitors, 15, "trp_bardian_master_archer",		3),
 ##     enemy Rhun
-		(set_visitors, 16, "trp_rhun_tribesman",			7),
-		(set_visitors, 17, "trp_rhun_horse_scout",			7),
-		(set_visitors, 18, "trp_rhun_horse_archer",			7),
-		(set_visitors, 19, "trp_rhun_veteran_horse_archer",	7),
-		(set_visitors, 20, "trp_fell_balchoth_horse_archer",7),
-		(set_visitors, 21, "trp_rhun_swift_horseman",		7),
-		(set_visitors, 22, "trp_rhun_veteran_swift_horseman",7),
-		(set_visitors, 23, "trp_falcon_horseman",           7),
-		(set_visitors, 24, "trp_rhun_tribal_warrior",		7),
-		(set_visitors, 25, "trp_rhun_tribal_infantry",		7),
-		(set_visitors, 26, "trp_rhun_vet_infantry",			7),
-		(set_visitors, 27, "trp_infantry_of_the_ox",		7),
-		(set_visitors, 28, "trp_rhun_light_horseman",       7),
-		(set_visitors, 29, "trp_rhun_light_cavalry",        7),
-		(set_visitors, 30, "trp_rhun_noble_cavalry",        7),
-		(set_visitors, 31, "trp_dorwinion_noble_of_rhun",	7),
+		(set_visitors, 16, "trp_i1_rhun_tribesman",			7),
+		(set_visitors, 17, "trp_ac2_rhun_horse_scout",			7),
+		(set_visitors, 18, "trp_ac3_rhun_horse_archer",			7),
+		(set_visitors, 19, "trp_ac4_rhun_veteran_horse_archer",	7),
+		(set_visitors, 20, "trp_ac5_rhun_balchoth_horse_archer",7),
+		(set_visitors, 21, "trp_c3_rhun_swift_horseman",		7),
+		(set_visitors, 22, "trp_c4_rhun_veteran_swift_horseman",7),
+		(set_visitors, 23, "trp_c5_rhun_falcon_horseman",           7),
+		(set_visitors, 24, "trp_i2_rhun_tribal_warrior",		7),
+		(set_visitors, 25, "trp_i3_rhun_tribal_infantry",		7),
+		(set_visitors, 26, "trp_i4_rhun_vet_infantry",			7),
+		(set_visitors, 27, "trp_i5_rhun_ox_warrior",		7),
+		(set_visitors, 28, "trp_c2_rhun_light_horseman",       7),
+		(set_visitors, 29, "trp_c3_rhun_light_cavalry",        7),
+		(set_visitors, 30, "trp_c4_rhun_noble_cavalry",        7),
+		(set_visitors, 31, "trp_c6_rhun_dorwinion_noble",	7),
 		(str_store_string, s16, "str_custom_battle_4"),
      
      (else_try),
@@ -1165,7 +1165,7 @@ game_menus = [
 
 		(store_random_in_range,":bfac",0,9),  ## bad faction chosen randomly
 		(try_begin),
-			(eq,":bfac",0),(assign,":trp_bad_min","trp_rhun_tribesman"       ),(assign,":trp_bad_max","trp_dorwinion_noble_of_rhun"    ),(else_try),
+			(eq,":bfac",0),(assign,":trp_bad_min","trp_i1_rhun_tribesman"       ),(assign,":trp_bad_max","trp_c6_rhun_dorwinion_noble"    ),(else_try),
 			(eq,":bfac",1),(assign,":trp_bad_min","trp_harad_desert_warrior" ),(assign,":trp_bad_max","trp_gold_serpent_horse_archer" ),(else_try),
 			(eq,":bfac",2),(assign,":trp_bad_min","trp_dunnish_wildman"      ),(assign,":trp_bad_max","trp_dunnish_chieftan"           ),(else_try),
 			(eq,":bfac",3),(assign,":trp_bad_min","trp_easterling_youth"     ),(assign,":trp_bad_max","trp_easterling_elite_skirmisher"),(else_try),
@@ -1487,7 +1487,7 @@ game_menus = [
  ("start_hr",[],"HARADRIM, the desert people from the South",    [(jump_to_menu,"mnu_start_haradrim"),]),  
  ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_renegade"),(jump_to_menu,"mnu_start_numenorean"),]),
  ("start_um",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_i1_corsair_youth"),            (jump_to_menu,"mnu_choose_gender"),]),
- ("start_rh",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_rhun_tribesman"),           (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_rh",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_i1_rhun_tribesman"),           (jump_to_menu,"mnu_choose_gender"),]),
  ("start_kh",[],"KHAND, the savage people from South-East",      [(call_script,"script_start_as_one","trp_easterling_youth"),         (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back",[],"Go back",[
@@ -9504,22 +9504,22 @@ game_menus = [
 	    (store_div, ":high",":random_no",6),
       	(assign, ":cur_entry", 16),
 				(try_for_range, ":unused", 0, 5),
-					(set_visitors, ":cur_entry", "trp_rhun_tribal_warrior",":low"),
+					(set_visitors, ":cur_entry", "trp_i2_rhun_tribal_warrior",":low"),
 					(val_add, ":cur_entry", 1),
 				(try_end),
 				(assign, ":cur_entry", 21),
 				(try_for_range, ":unused", 0, 5),
-					(set_visitors, ":cur_entry", "trp_rhun_vet_infantry",":low"),
+					(set_visitors, ":cur_entry", "trp_i4_rhun_vet_infantry",":low"),
 					(val_add, ":cur_entry", 1),
 				(try_end),
 				(assign, ":cur_entry", 26),
 				(try_for_range, ":unused", 0, 3),
-					(set_visitors, ":cur_entry", "trp_infantry_of_the_ox",":mid"),
+					(set_visitors, ":cur_entry", "trp_i5_rhun_ox_warrior",":mid"),
 					(val_add, ":cur_entry", 1),
 				(try_end),
 				(assign, ":cur_entry", 29),
 				(try_for_range, ":unused", 0, 3),
-					(set_visitors, ":cur_entry", "trp_dorwinion_noble_of_rhun", ":high"),
+					(set_visitors, ":cur_entry", "trp_c6_rhun_dorwinion_noble", ":high"),
 					(val_add, ":cur_entry", 1),
 				(try_end),
 	      (set_battle_advantage, 0),
@@ -10282,8 +10282,8 @@ game_menus = [
 	          (			    eq, ":quest_object_faction", "fac_dale"),
 				(try_begin),
 					(eq, ":random_no", 0),
-					(assign, ":bandit_troop_1", "trp_rhun_tribal_warrior"),
-					(assign, ":bandit_troop_2", "trp_rhun_horse_scout"),
+					(assign, ":bandit_troop_1", "trp_i2_rhun_tribal_warrior"),
+					(assign, ":bandit_troop_2", "trp_ac2_rhun_horse_scout"),
 				(else_try),						
 					(assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
 					(assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),	
@@ -10744,10 +10744,10 @@ game_menus = [
 	   			# (assign, ":allies_archer_tier_1", "trp_a3_dale_bowman"),
 	   			# (troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_a3_dale_bowman",0),   #Commented out - If we want to upgrade allies too.
 
-	   			# (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
-	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
-	   			# (assign, ":enemy_archer_tier_1", "trp_rhun_horse_archer"),
-	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_horse_archer",0), 
+	   			# (assign, ":enemy_melee_tier_1", "trp_i2_rhun_tribal_warrior"),
+	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_i2_rhun_tribal_warrior",0),
+	   			# (assign, ":enemy_archer_tier_1", "trp_ac3_rhun_horse_archer"),
+	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_ac3_rhun_horse_archer",0), 
    			# (try_end),
 		
 		# This is where we check what to spawn depending on player level (Med/High Tier)
@@ -10815,9 +10815,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_a3_dale_bowman", 3),(set_visitors, 9, "trp_a3_dale_bowman", 3),(set_visitors, 10, "trp_a4_dale_archer", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
+						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i2_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_c2_rhun_light_horseman", 5),(set_visitors, 17, "trp_c3_rhun_swift_horseman", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_rhun_horse_archer", 4),(set_visitors, 19, "trp_rhun_horse_archer", 4),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 4),
+						(set_visitors, 18, "trp_ac3_rhun_horse_archer", 4),(set_visitors, 19, "trp_ac3_rhun_horse_archer", 4),(set_visitors, 20, "trp_ac4_rhun_veteran_horse_archer", 4),
 				  
 				(else_try),
 					(ge, ":level", 25),
@@ -10826,9 +10826,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_a3_dale_bowman", 3),(set_visitors, 9, "trp_a3_dale_bowman", 3),(set_visitors, 10, "trp_a4_dale_archer", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_vet_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_infantry_of_the_ox", 5),(set_visitors, 16, "trp_rhun_light_cavalry", 5),(set_visitors, 17, "trp_rhun_noble_cavalry", 5),
+						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i5_rhun_ox_warrior", 5),(set_visitors, 16, "trp_c3_rhun_light_cavalry", 5),(set_visitors, 17, "trp_c4_rhun_noble_cavalry", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_rhun_veteran_horse_archer", 4),(set_visitors, 19, "trp_rhun_horse_archer", 4),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 4),
+						(set_visitors, 18, "trp_ac4_rhun_veteran_horse_archer", 4),(set_visitors, 19, "trp_ac3_rhun_horse_archer", 4),(set_visitors, 20, "trp_ac4_rhun_veteran_horse_archer", 4),
 						
 					(try_end),
 			(try_end),
@@ -10883,10 +10883,10 @@ game_menus = [
 	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_pelargir_marine",0), 
    			# (else_try), #Rhun
 	   			# (eq, ":object_fac", "fac_dale"), #If Rhun, Allies are Rhun
-	   			# (assign, ":allies_melee_tier_1", "trp_rhun_tribal_warrior"),
-	   			# #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_rhun_tribal_warrior",0), #Commented out - If we want to upgrade allies too.
-	   			# (assign, ":allies_archer_tier_1", "trp_rhun_horse_archer"),
-	   			# #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_rhun_horse_archer",0),   #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_melee_tier_1", "trp_i2_rhun_tribal_warrior"),
+	   			# #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_i2_rhun_tribal_warrior",0), #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_archer_tier_1", "trp_ac3_rhun_horse_archer"),
+	   			# #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_ac3_rhun_horse_archer",0),   #Commented out - If we want to upgrade allies too.
 
 	   			# (assign, ":enemy_melee_tier_1", "trp_c3_rhovanion_auxilia"),
 	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_c3_rhovanion_auxilia",0),
@@ -10960,9 +10960,9 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_a3_dale_bowman", 4),(set_visitors, 9, "trp_a3_dale_bowman", 4),(set_visitors, 10, "trp_a4_dale_archer", 4),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
+						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i2_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_c2_rhun_light_horseman", 5),(set_visitors, 17, "trp_c3_rhun_swift_horseman", 5),
 						#ally archers, entries 18-20
-						(set_visitors, 18, "trp_rhun_horse_archer", 5),(set_visitors, 19, "trp_rhun_horse_archer", 5),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 5),
+						(set_visitors, 18, "trp_ac3_rhun_horse_archer", 5),(set_visitors, 19, "trp_ac3_rhun_horse_archer", 5),(set_visitors, 20, "trp_ac4_rhun_veteran_horse_archer", 5),
 				  
 				(else_try),
 					(ge, ":level", 25),
@@ -10971,9 +10971,9 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_a4_dale_archer", 3),(set_visitors, 9, "trp_a3_dale_bowman", 3),(set_visitors, 10, "trp_a5_barding_bowman", 3),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
+						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i2_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_c2_rhun_light_horseman", 5),(set_visitors, 17, "trp_c3_rhun_swift_horseman", 5),
 						#ally archers, entries 18-20
-						(set_visitors, 18, "trp_rhun_horse_archer", 5),(set_visitors, 19, "trp_rhun_horse_archer", 5),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 5),
+						(set_visitors, 18, "trp_ac3_rhun_horse_archer", 5),(set_visitors, 19, "trp_ac3_rhun_horse_archer", 5),(set_visitors, 20, "trp_ac4_rhun_veteran_horse_archer", 5),
 						
 					(try_end),
 			(try_end),			

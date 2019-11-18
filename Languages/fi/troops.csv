@@ -108,40 +108,40 @@ trp_i5_dale_bill_master_pl|Dale-Vesuri Mestarit
 ; trp_c4_rhovanion_rider_pl|Rhovanion Riders
 ; trp_ac5_rhovanion_marchwarden|Rhovanion Marchwarden
 ; trp_ac5_rhovanion_marchwarden_pl|Rhovanion Marchwardens
-trp_rhun_tribesman|Rhun heimolainen
-trp_rhun_tribesman_pl|Rhun heimolaiset
-trp_rhun_horse_scout|Rhun hevos-tiedustelija
-trp_rhun_horse_scout_pl|Rhun hevos-tiedustelijat
-trp_rhun_horse_archer|Rhun hevos-jousimies
-trp_rhun_horse_archer_pl|Rhun hevos-jousimiehet
-trp_rhun_veteran_horse_archer|Rhun veteraani hevos-jousimies
-trp_rhun_veteran_horse_archer_pl|Rhun veteraani hevos-jousimiehet
-trp_fell_balchoth_horse_archer|Balchoth hevos-jousimies
-trp_fell_balchoth_horse_archer_pl|Balchoth hevos-jousimiehet
-trp_rhun_swift_horseman|Rhun pika hevosmies
-trp_rhun_swift_horseman_pl|Rhun pika hevosmiehet
-trp_rhun_veteran_swift_horseman|Rhun veteraani pika hevosmies
-trp_rhun_veteran_swift_horseman_pl|Rhun veteraani pika hevosmiehet
-trp_falcon_horseman|Haukka hevosmies
-trp_falcon_horseman_pl|Haukka hevosmiehet
-trp_rhun_tribal_warrior|Rhun heimolais-soturi
-trp_rhun_tribal_warrior_pl|Rhun heimolais-soturit
-trp_rhun_tribal_infantry|Rhun heimolais-jalkaväkimies
-trp_rhun_tribal_infantry_pl|Rhun heimolais-jalkaväki
-trp_rhun_vet_infantry|Rhun veteraani heimolais-jalkaväkimies
-trp_rhun_vet_infantry_pl|Rhun veteraani heimolais-jalkaväki
-trp_infantry_of_the_ox|Oxin jalkaväkimies
-trp_infantry_of_the_ox_pl|Oxin jalkaväki
-trp_rhun_light_horseman|Rhun kevyt hevosmies
-trp_rhun_light_horseman_pl|Rhun kevyet hevosmiehet
-trp_rhun_light_cavalry|Rhun kevyt ratsuväen mies
-trp_rhun_light_cavalry_pl|Rhun kevyt ratsuväki
-trp_rhun_noble_cavalry|Rhun Ylhäinen Ratsuväkimies
-trp_rhun_noble_cavalry_pl|Rhun Ylhäinen Ratsuväki
-; trp_rhun_heavy_noble_cavalry|Rhun Heavy Noble Cavalryman
-; trp_rhun_heavy_noble_cavalry_pl|Rhun Heavy Noble Cavalry
-; trp_dorwinion_noble_of_rhun|Dorwinion Noble of Rhun
-; trp_dorwinion_noble_of_rhun_pl|Dorwinion Nobles of Rhun
+trp_i1_rhun_tribesman|Rhun heimolainen
+trp_i1_rhun_tribesman_pl|Rhun heimolaiset
+trp_ac2_rhun_horse_scout|Rhun hevos-tiedustelija
+trp_ac2_rhun_horse_scout_pl|Rhun hevos-tiedustelijat
+trp_ac3_rhun_horse_archer|Rhun hevos-jousimies
+trp_ac3_rhun_horse_archer_pl|Rhun hevos-jousimiehet
+trp_ac4_rhun_veteran_horse_archer|Rhun veteraani hevos-jousimies
+trp_ac4_rhun_veteran_horse_archer_pl|Rhun veteraani hevos-jousimiehet
+trp_ac5_rhun_balchoth_horse_archer|Balchoth hevos-jousimies
+trp_ac5_rhun_balchoth_horse_archer_pl|Balchoth hevos-jousimiehet
+trp_c3_rhun_swift_horseman|Rhun pika hevosmies
+trp_c3_rhun_swift_horseman_pl|Rhun pika hevosmiehet
+trp_c4_rhun_veteran_swift_horseman|Rhun veteraani pika hevosmies
+trp_c4_rhun_veteran_swift_horseman_pl|Rhun veteraani pika hevosmiehet
+trp_c5_rhun_falcon_horseman|Haukka hevosmies
+trp_c5_rhun_falcon_horseman_pl|Haukka hevosmiehet
+trp_i2_rhun_tribal_warrior|Rhun heimolais-soturi
+trp_i2_rhun_tribal_warrior_pl|Rhun heimolais-soturit
+trp_i3_rhun_tribal_infantry|Rhun heimolais-jalkaväkimies
+trp_i3_rhun_tribal_infantry_pl|Rhun heimolais-jalkaväki
+trp_i4_rhun_vet_infantry|Rhun veteraani heimolais-jalkaväkimies
+trp_i4_rhun_vet_infantry_pl|Rhun veteraani heimolais-jalkaväki
+trp_i5_rhun_ox_warrior|Oxin jalkaväkimies
+trp_i5_rhun_ox_warrior_pl|Oxin jalkaväki
+trp_c2_rhun_light_horseman|Rhun kevyt hevosmies
+trp_c2_rhun_light_horseman_pl|Rhun kevyet hevosmiehet
+trp_c3_rhun_light_cavalry|Rhun kevyt ratsuväen mies
+trp_c3_rhun_light_cavalry_pl|Rhun kevyt ratsuväki
+trp_c4_rhun_noble_cavalry|Rhun Ylhäinen Ratsuväkimies
+trp_c4_rhun_noble_cavalry_pl|Rhun Ylhäinen Ratsuväki
+; trp_c5_rhun_heavy_noble_cavalry|Rhun Heavy Noble Cavalryman
+; trp_c5_rhun_heavy_noble_cavalry_pl|Rhun Heavy Noble Cavalry
+; trp_c6_rhun_dorwinion_noble|Dorwinion Noble of Rhun
+; trp_c6_rhun_dorwinion_noble_pl|Dorwinion Nobles of Rhun
 ; trp_i1_dwarven_apprentice|Apprentice-dwarf
 ; trp_i1_dwarven_apprentice_pl|Apprentice-dwarves
 trp_i2_dwarven_warrior|Soturi kääpiö

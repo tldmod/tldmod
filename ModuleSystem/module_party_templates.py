@@ -101,7 +101,7 @@ party_templates = [
 ("moria_scouts"     ,"Moria Scouts"        ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_moria   ,scout_personality,[(trp_c5_bolg_clan_rider,1,1),(trp_c4_warg_rider_of_moria,2,5),(trp_c3_wolf_rider_of_moria,3,6)]), #27-51 fast
 ("guldur_scouts"    ,"Dol Guldur Scouts"   ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_guldur  ,scout_personality,[(trp_orc_of_guldur,3,4),(trp_orc_snaga_of_guldur,8,12)]), #32-61
 ("gundabad_scouts","Gundabad Scouts",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_gundabad,scout_personality,[(trp_c5_goblin_north_clan_rider,1,2),(trp_c4_warg_rider_gundabad,3,6),(trp_c4_warg_rider_gundabad,6,10)]), #41-76, was 30-54 fast
-("rhun_scouts"      ,"Rhun Scouts"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_rhun_horse_archer,1,3),(trp_rhun_swift_horseman,3,6),(trp_rhun_horse_scout,5,8)]), #44-86 fast and very capable
+("rhun_scouts"      ,"Rhun Scouts"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_ac3_rhun_horse_archer,1,3),(trp_c3_rhun_swift_horseman,3,6),(trp_ac2_rhun_horse_scout,5,8)]), #44-86 fast and very capable
  
 ####TLD Raiders
 #MV: in general, average strength should be 80-160, good sides weaker, evil stronger (foraging vs. raiding)
@@ -125,7 +125,7 @@ party_templates = [
 ("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i5_orc_chieftain_of_moria,1,3),(trp_a3_large_goblin_archer_of_moria,3,9),(trp_i3_large_goblin_of_moria,5,15),(trp_a2_archer_snaga_of_moria,8,16)]), #72-176
 ("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_guldur  ,soldier_personality,[(trp_fell_orc_tracker_of_mordor,1,1),(trp_large_orc_of_mordor,4,10),(trp_orc_of_mordor,8,16),(trp_orc_of_guldur,8,16),(trp_orc_snaga_of_guldur,15,30)]), #91-184
 ("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_gundabad,soldier_personality,[(trp_c5_goblin_north_clan_rider,1,3),(trp_ca4_warg_skirmisher_gundabad,6,12),(trp_c4_warg_rider_gundabad,6,12),(trp_i2_orc_gundabad,18,32),(trp_troll_of_moria,0,1)]), #128-234 was 93-163
-("rhun_raiders"    ,"Rhun Raiders"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,soldier_personality,[(trp_rhun_heavy_noble_cavalry,1,3),(trp_rhun_horse_archer,8,16),(trp_rhun_light_cavalry,10,20)]), #124-264, was 100-184
+("rhun_raiders"    ,"Rhun Raiders"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,soldier_personality,[(trp_c5_rhun_heavy_noble_cavalry,1,3),(trp_ac3_rhun_horse_archer,8,16),(trp_c3_rhun_light_cavalry,10,20)]), #124-264, was 100-184
 
 
 ####TLD Patrols
@@ -158,7 +158,7 @@ party_templates = [
 #Northern war
 ("dale_war_party"  ,"Dale_War_Party"   ,icon_generic_knight       |carries_goods(3)|pf_show_faction,0,fac_dale   ,soldier_personality,[(trp_i2_dale_man_at_arms,8,13),(trp_i4_dale_sergeant,8,20),(trp_a5_barding_bowman,8,16),(trp_a4_dale_archer,5,20),(trp_i4_dale_billman,10,25),(trp_c2_rhovanion_retainer,4,15)]), # NOT USED and unbalanced 383-953
 #("dwarf_war_party" ,"Dwarven_War_Party",icon_dwarf_x3              |carries_goods(3),0,fac_dwarf  ,soldier_personality,[(trp_i1_dwarven_apprentice      ,8,13),(trp_i6_grors_guard,8,20),(trp_i2_dwarven_warrior,8,16),(trp_i5_dwarven_expert_axeman,5,20),(trp_a2_dwarven_lookout,4,15),(trp_a4_dwarven_bowman,4,15)]),
-("rhun_war_party"  ,"Rhun_War_Party"   ,icon_easterling_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_rhun   ,soldier_personality,[(trp_dorwinion_noble_of_rhun,2,4),(trp_rhun_heavy_noble_cavalry,5,10),(trp_rhun_veteran_swift_horseman,8,16),(trp_rhun_veteran_horse_archer,8,16),(trp_rhun_tribal_warrior,12,24),(trp_rhun_tribesman,18,36)]), #358-716 was 260-552
+("rhun_war_party"  ,"Rhun_War_Party"   ,icon_easterling_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_rhun   ,soldier_personality,[(trp_c6_rhun_dorwinion_noble,2,4),(trp_c5_rhun_heavy_noble_cavalry,5,10),(trp_c4_rhun_veteran_swift_horseman,8,16),(trp_ac4_rhun_veteran_horse_archer,8,16),(trp_i2_rhun_tribal_warrior,12,24),(trp_i1_rhun_tribesman,18,36)]), #358-716 was 260-552
 
 ####TLD Companies (only Gondorian used, as a MT patrol)
 ("gondor_company" ,"Minas Tirith Patrol",icon_knight_gondor |carries_goods(4)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_captain_of_gondor,1,1),(trp_veteran_knight_of_gondor,2,4),(trp_knight_of_gondor,8,16),(trp_gondor_veteran_swordsmen,10,20),(trp_veteran_archer_of_gondor,10,20),(trp_gondor_veteran_spearmen,10,20)]), #573-1121 elite, rare, overpowered #InVain 754-1474 (new formula) added a few more knights
@@ -279,9 +279,9 @@ party_templates = [
 ("harad_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_harad_horse_archer,1,2),(trp_harad_skirmisher,2,4),(trp_harad_infantry,1,2),(trp_far_harad_tribesman,1,2),]),
 ("harad_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_black_snake_horse_archer,1,2),(trp_harondor_light_cavalry,1,2),(trp_far_harad_champion,1,2),(trp_harad_swordsman,1,1),(trp_harad_veteran_infantry,0,1),]),
 #Rhun
-("rhun_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_rhun_light_horseman,1,2),(trp_rhun_horse_scout,2,3),(trp_rhun_tribesman,5,10),]),
-("rhun_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_rhun_horse_archer,3,5),(trp_rhun_light_cavalry,1,2),(trp_rhun_tribal_infantry,2,4),]),
-("rhun_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_rhun_noble_cavalry,2,4),(trp_rhun_veteran_swift_horseman,1,2),(trp_rhun_veteran_horse_archer,2,4),]),
+("rhun_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhun_light_horseman,1,2),(trp_ac2_rhun_horse_scout,2,3),(trp_i1_rhun_tribesman,5,10),]),
+("rhun_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_ac3_rhun_horse_archer,3,5),(trp_c3_rhun_light_cavalry,1,2),(trp_i3_rhun_tribal_infantry,2,4),]),
+("rhun_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_c4_rhun_noble_cavalry,2,4),(trp_c4_rhun_veteran_swift_horseman,1,2),(trp_ac4_rhun_veteran_horse_archer,2,4),]),
 #Khand
 ("khand_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_easterling_rider,1,2),(trp_easterling_warrior,2,4),(trp_easterling_youth,4,8),]),
 ("khand_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_easterling_skirmisher,2,4),(trp_easterling_horseman,0,1),(trp_easterling_axeman,2,3),(trp_khand_glaive_whirler,1,2),]),
@@ -353,7 +353,7 @@ party_templates = [
 ("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,3,5)]), #two T1
 ("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,2,3),(trp_morgul_orc,1,2),(trp_harad_desert_warrior,1,2)]), #T1 T2
 ("harad_recruits"     ,"_",0,0,fac_commoners,0,[(trp_harad_desert_warrior,1,3),(trp_harondor_scout,0,2),(trp_far_harad_tribesman,1,2)]), #three T1
-("rhun_recruits"      ,"_",0,0,fac_commoners,0,[(trp_rhun_tribesman,1,4),(trp_rhun_light_horseman,1,1)]), #T1 and T2
+("rhun_recruits"      ,"_",0,0,fac_commoners,0,[(trp_i1_rhun_tribesman,1,4),(trp_c2_rhun_light_horseman,1,1)]), #T1 and T2
 ("khand_recruits"     ,"_",0,0,fac_commoners,0,[(trp_easterling_youth,2,5)]),
 ("umbar_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_corsair_youth,3,6)]),
 ("lorien_recruits"    ,"_",0,0,fac_commoners,0,[(trp_lothlorien_scout,1,3),(trp_lothlorien_infantry,1,1)]), #two T1

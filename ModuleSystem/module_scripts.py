@@ -19529,7 +19529,7 @@ scripts = [
         (neq,":agent_no",-1),
 #        (agent_get_party_id,":party",":agent_no"),
         (try_begin),
-            (is_between,":troop_no","trp_rhun_tribesman","trp_rhun_veteran_swift_horseman"),# Rhun randomized heraldry
+            (is_between,":troop_no","trp_i1_rhun_tribesman","trp_c4_rhun_veteran_swift_horseman"),# Rhun randomized heraldry
             (store_random_in_range,":banner_mesh","mesh_circular_8mosaic1","mesh_circular_8mosaic10"),                                            
         (else_try),
             (is_between,":troop_no","trp_harad_desert_warrior","trp_gold_serpent_horse_archer"),# Harad randomized heraldry

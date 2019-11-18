@@ -108,40 +108,40 @@ trp_a2_dale_scout_pl|Разузнавачи от Дейл
 ; trp_c4_rhovanion_rider_pl|Rhovanion Riders
 ; trp_ac5_rhovanion_marchwarden|Rhovanion Marchwarden
 ; trp_ac5_rhovanion_marchwarden_pl|Rhovanion Marchwardens
-; trp_rhun_tribesman|Rhun Tribesman
-; trp_rhun_tribesman_pl|Rhun Tribesmen
-; trp_rhun_horse_scout|Rhun Horse Scout
-; trp_rhun_horse_scout_pl|Rhun Horse Scouts
-; trp_rhun_horse_archer|Rhun Horse Archer
-; trp_rhun_horse_archer_pl|Rhun Horse Archers
-; trp_rhun_veteran_horse_archer|Rhun Veteran Horse Archer
-; trp_rhun_veteran_horse_archer_pl|Rhun Veteran Horse Archers
-; trp_fell_balchoth_horse_archer|Balchoth Horse Archer
-; trp_fell_balchoth_horse_archer_pl|Balchoth Horse Archers
-; trp_rhun_swift_horseman|Rhun Swift Horseman
-; trp_rhun_swift_horseman_pl|Rhun Swift Horsemen
-; trp_rhun_veteran_swift_horseman|Rhun Veteran Swift Horseman
-; trp_rhun_veteran_swift_horseman_pl|Rhun Veteran Swift Horsemen
-; trp_falcon_horseman|Falcon Horseman
-; trp_falcon_horseman_pl|Falcon Horsemen
-; trp_rhun_tribal_warrior|Rhun Tribal Warrior
-; trp_rhun_tribal_warrior_pl|Rhun Tribal Warriors
-; trp_rhun_tribal_infantry|Rhun Tribal Infantryman
-; trp_rhun_tribal_infantry_pl|Rhun Tribal Infantry
-; trp_rhun_vet_infantry|Rhun Veteran Infantryman
-; trp_rhun_vet_infantry_pl|Rhun Veteran Infantry
-; trp_infantry_of_the_ox|Infantryman of the Ox
-; trp_infantry_of_the_ox_pl|Infantry of the Ox
-; trp_rhun_light_horseman|Rhun Light Horseman
-; trp_rhun_light_horseman_pl|Rhun Light Horsemen
-; trp_rhun_light_cavalry|Rhun Light Cavalryman
-; trp_rhun_light_cavalry_pl|Rhun Light Cavalry
-; trp_rhun_noble_cavalry|Rhun Noble Cavalryman
-; trp_rhun_noble_cavalry_pl|Rhun Noble Cavalry
-; trp_rhun_heavy_noble_cavalry|Rhun Heavy Noble Cavalryman
-; trp_rhun_heavy_noble_cavalry_pl|Rhun Heavy Noble Cavalry
-; trp_dorwinion_noble_of_rhun|Dorwinion Noble of Rhun
-; trp_dorwinion_noble_of_rhun_pl|Dorwinion Nobles of Rhun
+; trp_i1_rhun_tribesman|Rhun Tribesman
+; trp_i1_rhun_tribesman_pl|Rhun Tribesmen
+; trp_ac2_rhun_horse_scout|Rhun Horse Scout
+; trp_ac2_rhun_horse_scout_pl|Rhun Horse Scouts
+; trp_ac3_rhun_horse_archer|Rhun Horse Archer
+; trp_ac3_rhun_horse_archer_pl|Rhun Horse Archers
+; trp_ac4_rhun_veteran_horse_archer|Rhun Veteran Horse Archer
+; trp_ac4_rhun_veteran_horse_archer_pl|Rhun Veteran Horse Archers
+; trp_ac5_rhun_balchoth_horse_archer|Balchoth Horse Archer
+; trp_ac5_rhun_balchoth_horse_archer_pl|Balchoth Horse Archers
+; trp_c3_rhun_swift_horseman|Rhun Swift Horseman
+; trp_c3_rhun_swift_horseman_pl|Rhun Swift Horsemen
+; trp_c4_rhun_veteran_swift_horseman|Rhun Veteran Swift Horseman
+; trp_c4_rhun_veteran_swift_horseman_pl|Rhun Veteran Swift Horsemen
+; trp_c5_rhun_falcon_horseman|Falcon Horseman
+; trp_c5_rhun_falcon_horseman_pl|Falcon Horsemen
+; trp_i2_rhun_tribal_warrior|Rhun Tribal Warrior
+; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Warriors
+; trp_i3_rhun_tribal_infantry|Rhun Tribal Infantryman
+; trp_i3_rhun_tribal_infantry_pl|Rhun Tribal Infantry
+; trp_i4_rhun_vet_infantry|Rhun Veteran Infantryman
+; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Infantry
+; trp_i5_rhun_ox_warrior|Infantryman of the Ox
+; trp_i5_rhun_ox_warrior_pl|Infantry of the Ox
+; trp_c2_rhun_light_horseman|Rhun Light Horseman
+; trp_c2_rhun_light_horseman_pl|Rhun Light Horsemen
+; trp_c3_rhun_light_cavalry|Rhun Light Cavalryman
+; trp_c3_rhun_light_cavalry_pl|Rhun Light Cavalry
+; trp_c4_rhun_noble_cavalry|Rhun Noble Cavalryman
+; trp_c4_rhun_noble_cavalry_pl|Rhun Noble Cavalry
+; trp_c5_rhun_heavy_noble_cavalry|Rhun Heavy Noble Cavalryman
+; trp_c5_rhun_heavy_noble_cavalry_pl|Rhun Heavy Noble Cavalry
+; trp_c6_rhun_dorwinion_noble|Dorwinion Noble of Rhun
+; trp_c6_rhun_dorwinion_noble_pl|Dorwinion Nobles of Rhun
 ; trp_i1_dwarven_apprentice|Apprentice-dwarf
 ; trp_i1_dwarven_apprentice_pl|Apprentice-dwarves
 ; trp_i2_dwarven_warrior|Warrior-dwarf

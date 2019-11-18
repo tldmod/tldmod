@@ -108,40 +108,40 @@ trp_c4_rhovanion_rider|Rhovanion Binicisi
 trp_c4_rhovanion_rider_pl|Rhovanion Binicileri
 trp_ac5_rhovanion_marchwarden|Rhovanion Muhafız Gözcüsü
 trp_ac5_rhovanion_marchwarden_pl|Rhovanion Muhafız Gözcüleri
-trp_rhun_tribesman|Rhunlu Kabile Üyesi
-trp_rhun_tribesman_pl|Rhunlu Kabile Üyeleri
-trp_rhun_horse_scout|Rhun Gözcüsü
-trp_rhun_horse_scout_pl|Rhun Gözcüleri
-trp_rhun_horse_archer|Rhun Atlı Okçusu
-trp_rhun_horse_archer_pl|Rhun Atlı Okçuları
-trp_rhun_veteran_horse_archer|Rhun Kıdemli Atli Okçusu
-trp_rhun_veteran_horse_archer_pl|Rhun Kıdemli Atli Okçulari
-trp_fell_balchoth_horse_archer|Balchoth Atlı Okçusu
-trp_fell_balchoth_horse_archer_pl|Balchoth Atlı Okçuları
-trp_rhun_swift_horseman|Rhun Hafif Süvarisi
-trp_rhun_swift_horseman_pl|Rhun Hafif Süvarileri
-trp_rhun_veteran_swift_horseman|Rhunlu Kıdemli Çevik Süvari
-trp_rhun_veteran_swift_horseman_pl|Rhunlu Kıdemli Çevik Süvariler
-trp_falcon_horseman|Şahin Atlısı
-trp_falcon_horseman_pl|Şahin Atlıları
-trp_rhun_tribal_warrior|Rhunlu Kabile Savaşçısı
-trp_rhun_tribal_warrior_pl|Rhunlu Kabile Savaşçıları
-trp_rhun_tribal_infantry|Rhunlu Kabile Piyadesi
-trp_rhun_tribal_infantry_pl|Rhunlu Kabile Piyadeleri
-trp_rhun_vet_infantry|Rhunlu Kıdemli Piyade
-trp_rhun_vet_infantry_pl|Rhunlu Kıdemli Piyadeler
-trp_infantry_of_the_ox|Oxlu Piyade
-trp_infantry_of_the_ox_pl|Oxlu Piyadeler
-trp_rhun_light_horseman|Rhunlu Hafif Atlı
-trp_rhun_light_horseman_pl|Rhunlu Hafif Atlılar
-trp_rhun_light_cavalry|Rhunlu Hafif Süvari
-trp_rhun_light_cavalry_pl|Rhunlu Hafif Süvariler
-trp_rhun_noble_cavalry|Rhunlu Soylu Süvari
-trp_rhun_noble_cavalry_pl|Rhunlu Soylu Süvariler
-trp_rhun_heavy_noble_cavalry|Rhun Agır Soylu Süvariler
-trp_rhun_heavy_noble_cavalry_pl|Rhunlu Agır Soylu Süvari
-trp_dorwinion_noble_of_rhun|Rhunun Dorwinion Soylusu
-trp_dorwinion_noble_of_rhun_pl|Rhunun Dorwinion Soyluları
+trp_i1_rhun_tribesman|Rhunlu Kabile Üyesi
+trp_i1_rhun_tribesman_pl|Rhunlu Kabile Üyeleri
+trp_ac2_rhun_horse_scout|Rhun Gözcüsü
+trp_ac2_rhun_horse_scout_pl|Rhun Gözcüleri
+trp_ac3_rhun_horse_archer|Rhun Atlı Okçusu
+trp_ac3_rhun_horse_archer_pl|Rhun Atlı Okçuları
+trp_ac4_rhun_veteran_horse_archer|Rhun Kıdemli Atli Okçusu
+trp_ac4_rhun_veteran_horse_archer_pl|Rhun Kıdemli Atli Okçulari
+trp_ac5_rhun_balchoth_horse_archer|Balchoth Atlı Okçusu
+trp_ac5_rhun_balchoth_horse_archer_pl|Balchoth Atlı Okçuları
+trp_c3_rhun_swift_horseman|Rhun Hafif Süvarisi
+trp_c3_rhun_swift_horseman_pl|Rhun Hafif Süvarileri
+trp_c4_rhun_veteran_swift_horseman|Rhunlu Kıdemli Çevik Süvari
+trp_c4_rhun_veteran_swift_horseman_pl|Rhunlu Kıdemli Çevik Süvariler
+trp_c5_rhun_falcon_horseman|Şahin Atlısı
+trp_c5_rhun_falcon_horseman_pl|Şahin Atlıları
+trp_i2_rhun_tribal_warrior|Rhunlu Kabile Savaşçısı
+trp_i2_rhun_tribal_warrior_pl|Rhunlu Kabile Savaşçıları
+trp_i3_rhun_tribal_infantry|Rhunlu Kabile Piyadesi
+trp_i3_rhun_tribal_infantry_pl|Rhunlu Kabile Piyadeleri
+trp_i4_rhun_vet_infantry|Rhunlu Kıdemli Piyade
+trp_i4_rhun_vet_infantry_pl|Rhunlu Kıdemli Piyadeler
+trp_i5_rhun_ox_warrior|Oxlu Piyade
+trp_i5_rhun_ox_warrior_pl|Oxlu Piyadeler
+trp_c2_rhun_light_horseman|Rhunlu Hafif Atlı
+trp_c2_rhun_light_horseman_pl|Rhunlu Hafif Atlılar
+trp_c3_rhun_light_cavalry|Rhunlu Hafif Süvari
+trp_c3_rhun_light_cavalry_pl|Rhunlu Hafif Süvariler
+trp_c4_rhun_noble_cavalry|Rhunlu Soylu Süvari
+trp_c4_rhun_noble_cavalry_pl|Rhunlu Soylu Süvariler
+trp_c5_rhun_heavy_noble_cavalry|Rhun Agır Soylu Süvariler
+trp_c5_rhun_heavy_noble_cavalry_pl|Rhunlu Agır Soylu Süvari
+trp_c6_rhun_dorwinion_noble|Rhunun Dorwinion Soylusu
+trp_c6_rhun_dorwinion_noble_pl|Rhunun Dorwinion Soyluları
 trp_i1_dwarven_apprentice|Cüce Çıragı
 trp_i1_dwarven_apprentice_pl|Cüce Çırakları
 trp_i2_dwarven_warrior|Cüce Savaşçısı
