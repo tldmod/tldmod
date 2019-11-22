@@ -747,7 +747,7 @@ str_npc17_rehire_speech|Hey. Tempo di rimettersi in marcia ? Gli alberi non si m
 str_npc1_home_intro|Capitano, ci stiamo avvicinando ad Osgiliath, cerchiamo quindi di distinguere correttamente gli amici dai nemici.
 str_npc2_home_intro|Sii vigile comandante, quella dovrebbe essere Minas Morgul. Non senti qualcosa che ci sta osservando ?
 str_npc3_home_intro|Una parola, comandante. Iniziamo ad avvicinarci nell'Entobosco... i cavalli sono sempre più irrequieti, mio signore. Alcuni la chiamano la foresta di Fangorn.
-str_npc4_home_intro|Fermiamoci qui per un minuto, comandante. Davanti di noi, tra l'Anduin e Limlight, si trova il Campo di Celebrant, dove Eorl il Giovane accorse in aiuto dei nostri alleati di Gondor.
+str_npc4_home_intro|Fermiamoci qui per un minuto, comandante. Davanti a noi, tra l'Anduin e Limlight, si trova il Campo di Celebrant, dove Eorl il Giovane accorse in aiuto dei nostri alleati di Gondor.
 str_npc5_home_intro|Daro - Alt - ! Ecco la fortezza di Angrenost e, al centro d'essa, svetta la torre di Orthanc. Molte cose sono cambiate dall'ultima volta che ho visto questo luogo, e nessuna d'esse in bene.
 str_npc6_home_intro|Perdonami, {playername}. I sentieri da questa parte diventano più contorti, alcuni di questi portano a vicoli ciechi. Ci stiamo avvicinando a Dol Guldur.
 str_npc7_home_intro|Hey, capitano ! Questo dev'essere il vecchio sentiero che va fino all'entrata orientale di Khazad-dûm, o Moria, se preferisci. Si può vedere in lontananza il lago scintillante di Kheled-zâram, e attraverso le nuvole, i tre picchi, conosciuti da queste parti come le Montagne Nebbiose.
@@ -764,7 +764,7 @@ str_npc17_home_intro|Ooooo, qui crescono i mallorn ! Nessuno dovrebbe mai taglia
 str_npc1_home_description|Era una bella città una volta, la vecchia capitale di Gondor, piena di gente e di risa. Ora giace disabitata e in rovina, il vecchio Anduin scorre stancamente attraverso una città fantasma.
 str_npc2_home_description|Venne chiamata Minas Ithil molti anni fa, le storie raccontano di come i chiari di luna riempissero le sue corti con la loro luce argentea, facendo brillare le pareti d'argento e bianco. Scrutando l'orizzonte dalle mura ad est, le sentinelle di Gondor riuscivano a vedere al di là di Ephel Dùath.
 str_npc3_home_description|È fatta di tronchi e rami e di ogni sorta di alberi, e io non voglio avventurarmi lì dove ci sono strane creature che vagano per la foresta, soprattutto se non tutte sono innocue.
-str_npc4_home_description|' Dove sono ora il cavallo ed il cavaliere ? Dov'è il suono del corno ? ^ dove si trovano il timone e l'usbergo e i brillanti capelli ?... ^ sono passati come pioggia sulla montagna, come vento nel prato; ^ i giorni sono passati nell'ovest all'ombra delle colline... '
+str_npc4_home_description|' Dove sono ora il cavallo ed il cavaliere ? Dov'è il suono del corno ? ^ Dove si trovano il timone e l'usbergo e i brillanti capelli ?... ^ Sono passati come pioggia sulla montagna, come vento nel prato; ^ i giorni sono passati nell'ovest all'ombra delle colline... '
 str_npc5_home_description|Fu costruita dal Regno del sud, ora è la casa di uno che abbiamo chiamato lo Stregone Bianco, e il come faccia ad aumentare così tanto il suo potere a scapito degli altri è intrigante, senza dubbio.
 str_npc6_home_description|Non mi sono mai avventurato a queste distanze, ma ho udito dai nostri esploratori di Boscoverde che possono esserci dei Nazgul qui. Percepisco una presenza malvagia, ma non riesco a darle un nome. È potente, in ogni caso, quindi restiamo desti.
 str_npc7_home_description|A giudicare dalla desolazione e da tutte queste tracce di orchi, ho i peggiori timori per il destino del coraggioso Balin e della sua spedizione. Sembra che Moria sia caduta nell'ombra, dovremmo procedere con cautela.
@@ -794,7 +794,7 @@ str_npc13_home_description_2|Minas Morgul, dove i Nazgul bevono ogni giorno, har
 str_npc14_home_description_2|Minas Morgul, dove i Nazgul bevono ogni giorno, har-har !
 str_npc15_home_description_2|Minas Morgul, dove i Nazgul bevono ogni giorno, har-har !
 str_npc16_home_description_2|Minas Morgul, dove i Nazgul bevono ogni giorno, har-har !
-str_npc17_home_description_2|Potrei fabbricare un bel tubo. Lo vuoi un tubo ?
+str_npc17_home_description_2|Potrei creare una bella pipa. La vuoi una pipa ?
 str_npc1_home_recap|Sono nato e cresciuto in Ithilien , da una lunga stirpe di guerrieri risalente al Dúnedain meridionale.
 str_npc2_home_recap|Sono Nato a Minas Tirith, in una famiglia umile, ma orgogliosa.
 str_npc3_home_recap|Io sono uno degli Eorlingas, o Rohirrim, come gli stranieri ci chiamano.
@@ -2249,7 +2249,7 @@ str_npc27_rehire_speech|Posso servirti ancora una volta ?
 str_npc18_home_intro|Ah, l'Anduin. Oh Grande, avrai udito delle grandi vittorie dei Carrieri molte generazioni fa? Strinsero un'alleanza con noi Variaghi, e insieme i nostri guerrieri schiacciarono le pietose armate di Gondor, sotto il re che chiamavano Ondoher. Che glorioso massacro devono essersi goduti i nostri antenati !
 str_npc19_home_intro|Ah, Edoras. Il posto che mi spetta. Guarda lassù, Comandante, verso il Palazzo d'Oro. Solo qualche generazione fa, fu proprio alle porte di Meduseld che l'ultimo figlio di Helm Mandimartello venne ucciso, e quindi Wulf divenne re, per un certo tempo. Non il Wulf che ora è un campo nel Dunland, naturalmente - quello è un mero bastardo che porta il nome di un essere più grande.
 str_npc20_home_intro|Ah, la Montagna Solitaria. L'ultimo bastione della Gente di Durin, non è così anche ora, in questi ultimi giorni? È bello poterlo vedere infine con i miei occhi. Bello, si... ma non così piacevole come il ricordo dei momenti della morte di quel nano, momenti che allungai grazie alle mie arti. Sono dei tipi tosti i Nani, davvero ! Eppure Aulë il Creatore, non ha fatto loro alcun favore nel renderli così capaci di soffrire.
-str_npc21_home_intro|Fermiamoci qui per un minuto, comandante. Davanti di noi, tra l'Anduin e Limlight, si trova il Campo di Celebrant, dove Eorl il Giovane accorse in aiuto dei nostri alleati di Gondor.
+str_npc21_home_intro|Fermiamoci qui per un minuto, comandante. Davanti a noi, tra l'Anduin e Limlight, si trova il Campo di Celebrant, dove Eorl il Giovane accorse in aiuto dei nostri alleati di Gondor.
 str_npc22_home_intro|Daro - Alt - ! Ecco la fortezza di Angrenost e, al centro d'essa, svetta la torre di Orthanc. Molte cose sono cambiate dall'ultima volta che ho visto questo luogo, e nessuna d'esse in bene.
 str_npc23_home_intro|Perdonami, {playername}. I sentieri da questa parte diventano più contorti, alcuni d'essi portano a vicoli ciechi. Ci stiamo avvicinando a Dol Guldur.
 str_npc24_home_intro|Hey, capitano ! Questo dev'essere il vecchio sentiero che va fino all'entrata orientale di Khazad-dûm, o Moria, se preferisci. Si può vedere in lontananza il lago scintillante di Kheled-zâram, e attraverso le nuvole, i tre picchi, conosciuti da queste parti come le Montagne Nebbiose.

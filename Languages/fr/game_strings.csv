@@ -1997,8 +1997,8 @@ str_tactical_controls|Utilisez les chiffres du Pavé Numérique pour sélectionn
 str_division_placement|Quand UNE division est sélectionnée, le centre du premier rang est placé à l'endroit indiqué.^^Quand PLUSIEURS divisions sont sélectionnées, elle sont séparés et placés comme si le joueur se trouvait à l’endroit indiqué.^^Il est possible de sauvegarder l'emplacement des divisions par rapport en joueur en pressant F2, F7. Par défaut, infanterie à gauche, cavalerie à droite et archers devant. 
 str_formations|Les Formations Complexes dans le Menu de Combat sont:^^-RANGS avec les meilleures troupes à l'avant^-MUR DE BOUCLIERS, en rang avec les boucliers à l'avant et les armes longues à l'arrière.^-EN POINTE avec les meilleures troupes devant.^-EN CARRE sans placement particulier.^-SANS FORMATION^^Même dans le dernier cas, le joueur peut placer ses hommes jusqu’à 4 rangs en donnant  plusieurs fois l'ordre Resserez Vous
 ; str_npc18_intro|Great One, hold a moment! I would speak with you!
-; str_npc19_intro|Hold a moment, Commander. I would have words with you. No, no, you need not kneel, even though you speak to one of royal blood.
-; str_npc20_intro|Wait. You. I've seen you. I know your face. A dream I had, of you - but why would it be you? Now that I see you with mine own eyes, you are little more than a lowly snaga!
+str_npc19_intro|Attendez un moment commandant. J'aimerai parler avec vous.\nNon, non, ne vous agenouillez pas, même si vous parlez a quelqu'un de sang royal.
+str_npc20_intro|Attendez. Vous. Je vous ai déjà vu. Je connais votre visage. Dans un rêve que j'ai eu, de vous -mais pourquoi c'était vous ? Maintenant que je vous vois de mes propres yeux, vous êtes plus petit qu'un ridicule snaga!
 str_npc21_intro|Bienvenue à Meduseld, guerrier !
 str_npc22_intro|Salut {playername}. Mae govannen !
 str_npc23_intro|Laissez-moi seul, étranger, je ne souhaite pas vous parler.
@@ -2006,9 +2006,9 @@ str_npc24_intro|Kíli, fils de Dwalin, à votre service!
 str_npc25_intro|Bienvenue à Dale voyageur ! Comment puis-je vous aider ?
 str_npc26_intro|Chut ! Si vous alertez les gardes, je vais arracher votre estomac et le donner à manger aux Wargs !
 str_npc27_intro|Vous !
-; str_npc18_intro_response_1|A slave in stocks, bound for death, would speak with me? What have you to say?
-; str_npc19_intro_response_1|Royal blood you say? Ha! What makes you think you have even a drop of it?
-; str_npc20_intro_response_1|Look here, what do you mean by this, witch? Who are you?
+str_npc18_intro_response_1|Un esclave remplaçable, voué a mourir, voudrait parlé avec moi ?\nQu'est ce que t'as à dire? 
+str_npc19_intro_response_1|Du sang royale vous dites? Ah! Qu'est ce qui vous fait croire que vous avez ne serait-ce qu'une goutte de sang royale ? 
+str_npc20_intro_response_1|Que veux tu dire, sorcière? Qui es-tu?
 str_npc21_intro_response_1|Salutations Madame. A qui ai-je l'honneur de parler ?
 str_npc22_intro_response_1|Salutations Seigneur elfe ! C'est un grand honneur de vous rencontrer.
 str_npc23_intro_response_1|Est-ce ainsi que les Elfes sylvains accueillent leurs hôtes ?
@@ -2016,9 +2016,9 @@ str_npc24_intro_response_1|{playername} à votre service. Comment se porte le pe
 str_npc25_intro_response_1|Salutations. Je me demandais s'il se trouvait ici des volontaires pour nous rejoindre dans nos voyages.
 str_npc26_intro_response_1|Retiens tes menaces, Uruk, avant qu'on en arrive au sang - je ne suis pas un mouchard.
 str_npc27_intro_response_1|Qui êtes-vous ?
-; str_npc18_intro_response_2|I will not waste words on a slave bound for death.
+str_npc18_intro_response_2|Je ne gaspillerai pas ma salive pour un esclave voué a mourir.
 ; str_npc19_intro_response_2|Impudent wretch. Out of my way.
-; str_npc20_intro_response_2|I have no time for your mad ravings, sorceress.
+str_npc20_intro_response_2|Je n'ai pas le temps pour vos divagations folles, sorcière.
 str_npc21_intro_response_2|Excusez-moi, j'ai une affaire urgente à traiter ailleurs.
 str_npc22_intro_response_2|Excusez-moi, j'ai des personnes moins importantes à qui parler.
 str_npc23_intro_response_2|Ce sentiment est partagé. Au revoir.

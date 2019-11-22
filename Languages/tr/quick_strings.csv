@@ -719,7 +719,7 @@ qstr_Formations_turned_OF|Formasyonlar ayarlar menusunden kapandı.
 qstr_Division_{reg1}_{s2}_g|Bölük {reg1} {s2} ezberlenmiş pozisyona dogru ilerler...\n
 qstr_Division_{reg1}_{s2}_f|{reg1} . Kuvvetler {s2} çizgi oluşturdu(Ezberlendi)
 qstr_Division_{reg1}_{s2}_fo|{reg1}. Kuvvetleri {s2} {reg0} Tane Çizgi oluşturdu(Ezberlendi).
-; qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
+qstr_DEBUG__Health_Regen_|DEBUG (Can Yenileme): {s1}  {reg0}% can kazandı.  = +{reg1}% STR
 qstr_Three_Nazgul_are_cir|Üç Nazgul savaş alanının üstündeki gökyüzünde dolaşıyor!
 qstr_Two_Nazgul_are_circl|İki Nazgul savaş alanının üstündeki gökyüzünde dolaşıyor!
 qstr_A_Nazgul_is_circling|Bir tane Nazgul  savaş alanının yukarısında daire çiziyor.
@@ -744,12 +744,12 @@ qstr_Your_bravery_inspire|Cesaretin birliklerine ilham veriyor!
 qstr_Your_mount_has_falle|Baglantınız altınızdaki yere düştü!
 qstr_Receive_{reg22}_dama|{Reg22} hasar alındı.
 qstr_You_have_been_knocke|{s22} tarafından bayıltıldın.
-; qstr_{s21}_has_been_knock|{s21} has been knocked off of {reg23?her:his} mount when it fell.
-; qstr_{s21}_{reg24?killed:|{s21} {reg24?killed:knocked unconscious} by {s22}.
+qstr_{s21}_has_been_knock|{s21} Atından düşünce baygınlık geçirdi.
+qstr_{s21}_{reg24?killed:|{s22} tarafından {s21} {reg24?öldürüldü:bayıltıldı} .
 qstr_A_bear_has_been_summ|Savaş alanında bir Ayı ortaya çıktı!
-; qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.
+qstr_In_The_Last_Days_of_|The Last Days of the Third Age modunda, askerlerin her savaşın başında kör gözüne saldırmaktansa pozisyonlarını korurlar.^^Askerlerine formasyon emri vermek için: 'J' Rütbeye göre, 'K' Kalkan duvarı, 'L' kama , ';' for Kare. Formasyonu bozmak içi; 'U'. ^Eger askerlerin kaçışıyorsa 'V' ile onları toplayabilirsin. Sınırlı sayıda toplama hakkın var ve bu senin karizmana baglıdır.
 qstr_You_can_also_order_y|Askerlerinize, kullanmasını istediginiz silah türünü kullanmalarını da emredebilirsiniz. ^^ Silah Düzeni türleri arasında geçiş yapmak için O tuşuna basın. Kalkan Emirleri arasında geçiş yapmak için P tuşuna basın.
-; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.
+qstr_The_Last_Days_of_the|The Last Days of the Third Age modu kısa boylu ırklar için (Cüce/orc) kişisel bir kamera sistemi geliştirdi.^^CTRL + END ile 2 farklı kamera moduna bakabilirsiniz: Sabit pozisyonlu ve Serbest mod.^^Sabit pozisyon bütün Irklar içindir ancak kişileştirilemez. CTRL+Sol/Sag Yön tuşları ile omuz degiştirebilirsiniz.^^Serbest mod karakteri ortaya yerleştirir. CTRL+Yukarı/Aşagı yön tuşları ile kamerayı döndürebilirsiniz ve CTRL+ Numpad +/- ile yakınlaştırabilirsiniz.^^ Bilgi sayfalarına bakarak kamerayı nasıl kontrol edebileceginize bakabilirsiniz.
 qstr_Battlefield_is_too_s|Savaş alanı karmaşık yapay zeka formasyonları için çok küçük.
 qstr_You_have_a_clear_per|Etrafdan gelebilecek bir tehlike olduguna dair içinde net bir his var!
 qstr_New_ent_reached_batt|Yeni ent savaş alanına ulaştı...
@@ -829,10 +829,10 @@ qstr_Look_at_my_over_the_|Atışıma bak, {playername}! Uzaktan bayagı iyiyim!
 qstr_You_wish_old_man_my_|Öyle sanıyorsun yaşlı adam, benim atışım çok daha iyiydi!
 qstr_You_should_really_se|Sen gerçekten Kahya Denethor'un Facebook fotografını görmelisin, süper çıkmış!
 qstr_Press_Space_to_conti|Boşluk tuşuna basıp ilerle...
-; qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} until next promotion^
+qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - Sonraki rütbeye kadar {reg20}^
 ; qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})^
 ; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})^
-qstr_{s11}_{s24}__{reg13}|Sonraki terfiye kadar {s11} {s24} ({reg13}) - {reg21}^
+qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - Sonraki rütbeye kadar {reg21}^
 qstr_{s13}_{reg11}__with_|{s13} {reg11} ({s16} ile birlikte)^
 qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
 qstr_Four_years_after_bri|Erebor'dan bir zamanlar Cüceler şehri olan Khazad-dûm kentini yeniden kurmaya çalışmak için bir grup Cüceyi getirdikten dört yıl sonra Balin, Kheled-zaram Gölü'ne bakarken bir Orc okuyla öldürüldü ve halkı Celebrant'a gelen birçok Ork ile karşılaştı. Nehir, Dogu Kapısı ve Birinci Salon'dan, ardından Khazad-dûm Köprüsü ve İkinci Salon'dan sürekli geri çekildikten sonra, kalan Uzunsakallar yirmi birinci Salona kadar tamamen geri çekilmeye zorlandı. Óin'in ölümüne sebep olan ve Durin Kapılarından kaçmayı hedefleyen başarısız girişimler sonunda, Mazarbul Odası, yirmi birinci Salonu kaybettikten sonraki Balin'in grubunun son noktası oldu. Kapıları engelleyen Ori ve birkaç kurtulan son bir savunma kurdu.

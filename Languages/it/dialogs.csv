@@ -582,7 +582,7 @@ dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_a
 dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_rejected|Debbo rifiutare, {s65}. Non voglio trovarmi vicino a nessuno di loro.
 dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|Mi piace il tuo spirito ! Va e portami uno dei nostri nemici, e brinderò al tuo nome nella mia sala quando farai ritorno ! E ricompenserò il tuo impegno, naturalmente..
 dlga_lord_tell_mission_capture_enemy_hero_rejected:lord_pretalk|Chiaramente non possiedi il coraggio che ritenevo avessi. Molto bene, {playername}, troverò qualcun altro.
-dlga_lord_tell_mission:lord_tell_mission_lend_companion|Non ho un incarico per te adesso, ma un componente del tuo esercito, {s3}, mostra di essere abile come {reg3?ragazza:ragazzo} e ho bisogno di {reg3?:qualcuno:qualcuno} dotato di queste capacità. Potresti concedermi i {reg3?:suoi:suoi} servigi per un periodo ?
+dlga_lord_tell_mission:lord_tell_mission_lend_companion|Non ho un incarico per te adesso, ma un componente del tuo esercito, {s3}, mostra di essere abile come {reg3?ragazza:ragazzo} e ho bisogno di {reg3?qualcuno:qualcuno} dotato di queste capacità. Potresti concedermi i {reg3?suoi:suoi} servigi per un periodo ?
 dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|Per quanto tempo avrai bisogno di {reg3?lei:lui} ?
 dlga_lord_tell_mission_lend_companion_2:lord_mission_lend_companion_told|Solo per qualche giorno, una settimana al massimo.
 dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_accepted|Allora lascerò {s3} con te per una settimana.

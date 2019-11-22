@@ -55,9 +55,9 @@ ui_crouch|çömelmek
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Karakteri içe aktarmak istediginizden emin misiniz?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
-; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path finding, Spotting, Inventory Management, Wound treatment, Surgery, First-aid, Engineer, Persuasion.
-; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Leadership, Trade.
+ui_explanation_strength|Güç: Her puan Cana +1 ekler. Bu yetenekler Gücün 1/3'ünü geçemez; Demirbeden, Güçlü Vurma, Güçlü Fırlatma, Güçlü Çekme.
+ui_explanation_intelligence|Zeka: Her puan +1 yetenek puanı verir. Bu yetenekler Zekanın 1/3'ünü geçemez; Talimci, Tespit etme, Taktik, Yol Bulma, İz sürme, Envanter Yönetimi, Yara Bakımı, Cerrahlık, İlk yardım, Mühendislik, İkna.
+ui_explanation_charisma|Karizma: Her puan Grup büyüklügüne +1 ekler. Bu yetenekler Karizmanın 1/3'ünü geçemez; Esir Yönetimi, Liderlik, Pazarlık, Yaban işi.
 ui_delivered_number_damage|%d hasar verildi.
 ui_mission_losses_killed|Öldürüldü
 ui_party_losses|%s :%d yaralandı --- %d öldürüldü %d
@@ -71,8 +71,8 @@ ui_you_hit_a_friendly_troop|Dost bir birime zarar verdin!
 ui_you_are_not_carrying_any_arrows|Yanında hiç ok kalmadı.
 ui_delivered_number_damage_to_horse|Binege %d hasar verildi
 ui_received_number_damage|%d Hasar alındı.
-; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
-; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
+ui_you_have_improved_your_proficiency_in_value_to_number|%s Bu hünerini %d buna yükselttin.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|%s Bu hünerin +%d artarak %d oldu.
 ui_value_killed_by_value|%s,%starafından öldürüldü. 
 ui_value_knocked_unconscious_by_value|%s,%starafından bayıltıldı.
 ui_you_got_number_experience|%d Tecrübe puanı kazandın.
@@ -86,14 +86,14 @@ ui_your_relations_with_value_has_improved_from_number_to_number|%sile ilişkiler
 ui_your_relations_with_value_has_deteriorated_from_number_to_number|%s ile ilişkileriniz, %dden%dye geriledi.
 ui_you_lost_value|%s Kaybettin.
 ui_change_graphics_settings_explanation|Yaptıgınız bazı degişiklikler, yeni bir alana girdiginizde geçerli olacak.
-; ui_game_log_window|Game Log Window
+ui_game_log_window|Oyun log penceresi
 ui_blunt_short|b
 ui_tracks|İzler
 ui_order_button_hold_fire|Ateş etmeyin
 ui_order_button_fire_at_will|Ateş serbest
 ui_order_button_fire_orders|menzilli emirleri
 ui_need_to_learn_prisoner_management|Esir alabilmek için Esir Yönetimi yetenegini ögrenmen gerek.
-; ui_game_log_window|Game Log Window
+ui_game_log_window|Oyun log penceresi
 ui_unbalanced|Dengesiz
 ui_can_crush_through_blocks|Blokların içinden geçebilir
 

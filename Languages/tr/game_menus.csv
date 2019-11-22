@@ -7,7 +7,7 @@ mno_go_forth|Seçtigin yolda ilerle...
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Çatışma, Gondor, Harad'a karşı
 mno_custom_battle_scenario_12|Savaş için tarafları seç
-mno_custom_battle_scenario_3|Çatisma, Elfler, Kara Numenorlular'a karşı
+mno_custom_battle_scenario_3|Çatişma, Elfler, Kara Numenorlular'a karşı
 mno_custom_battle_scenario_4|Migfer Dibi Savunması, Rohan Isengard'a karşı
 mno_custom_battle_scenario_5|Çatışma, Kuzey, Rhûn'e karşı.
 mno_custom_battle_scenario_6|Kuşatma, Orklar, Cücelere karşı.
@@ -18,33 +18,33 @@ mno_custom_battle_scenario_11|Test Savaşı ( Uyum Dengelemesi!)
 mno_custom_battle_scenario_10|Manzara Test Savaşı
 mno_troll_battle_scenario|Troll savaşını test et
 mno_warg_battle_scenario|Warg savaşını test et
-mno_build_your_own_scene|**TLD ile kendi Sahneni Oluştur**
-menu_tutorial|^^Mount & Blade Savaş Ögreticisine hoş geldin. Burada nasıl savaşacagından tut, birliklerini savaş alanında nasıl yönlendirecegine kadar ögreneceksin.
+mno_build_your_own_scene|**TLD için kendi Sahneni Oluştur**
+menu_tutorial|^^At & Kılıç Savaş Ögreticisine hoş geldin. Burada nasıl savaşacagından tut, birliklerini savaş alanında nasıl yönlendirecegine kadar ögreneceksin.
 mno_tutorial_1|Ögretici #1: Temel Hareketler ve silah seçimi. {s1}
 mno_tutorial_2|Tutorial #2: Kalkan ile birlikte dövüşmek. {s2}
 mno_tutorial_3|Ögretici #3: Kalkan olmadan dövüşmek. {s3}
 mno_tutorial_3b_door|sonraki seviye
 mno_tutorial_4|Tutorial #4: At veya warg sürmek. {s4}
 mno_tutorial_5|Ögretici # 5: Bir grup askeri komuta etmek.{s5}
-mno_go_back_dot|Geri dön
-mno_action_view_troop_trees|Birim agacını göster
-mno_view_upkeep_costs|Bakım ücretini gör
-mno_view_character_report|Karakter raporunu gör
-mno_view_party_size_report|Parti boyutu raporunu görüntüle
-mno_view_morale_report|Grup moral raporuna gör.
+mno_go_back_dot|Geri dön.
+mno_action_view_troop_trees|Birim agacını göster.
+mno_view_upkeep_costs|Bakım ücretini gör.
+mno_view_character_report|Karakter raporunu gör.
+mno_view_party_size_report|Grup boyutu raporunu görüntüle.
+mno_view_morale_report|Grup moral raporuna görüntüle.
 mno_view_character_report_02|NPC durum kontrolü.
-mno_view_faction_strengths_report|Taraf kuvvetlerinin raporunu gör.
-mno_view_traits_report|Özellikleri gör.
+mno_view_faction_strengths_report|Taraf kuvvetlerinin raporunu görüntüle.
+mno_view_traits_report|Özellikleri görüntüle.
 mno_resume_travelling|Yolculuga devam et.
 mno_custom_battle_go|Başla.
 mno_leave_custom_battle_2|İptal.
-menu_custom_battle_end|^^^^^^Savas sona erdi. {s1} Senin tarafin savasta {reg5} düsman öldürdü ve {reg6} asker kaybetti.^Kisisel olarak {reg7} düsman katlettin.
+menu_custom_battle_end|^^^^^^Savaş sona erdi. {s1} Senin tarafin savaşta {reg5} düşman öldürdü ve {reg6} asker kaybetti.^Kişisel olarak {reg7} düşman katlettin.
 mno_replay|Savaşı tekrar oyna.
 mno_continue_dot|Devam et.
-menu_custom_battle_durin_end|^^^^^^Bu kabul edilebilir bir son savunmaydı, fakat tamamen yok oldu.^^ Sen ve kuzenlerin {reg5} düşman öldürdünüz.^Sen tek başına {reg7} rakibini katlettin.
+menu_custom_battle_durin_end|^^^^^^Bu takdire şayan bir savunmaydı lakin kaybetmeye mahkumdu.^^ Sen ve adamların {reg5} düşman öldürdünüz.^Sen tek başına {reg7} rakibini katlettin.
 mno_replay_cbd|Savaşı tekrar oyna.
 mno_continue_dot_cbd|Devam et.
-mno_dot_go_back|Geri dön
+mno_dot_go_back|Geri dön.
 menu_start_good|^^^^^^^^^^Irkını seç
 mno_start_ma|İNSAN
 mno_start_el|ELF
@@ -55,16 +55,16 @@ mno_start_eye|Mordor'dan SAURON, Yüzüklerin Efendisi
 mno_start_hand|Isengard'dan SARUMAN, Ak El
 menu_start_eye|^^^^^^^^^Efendin Kapaksiz Göz^Irkini seç
 mno_start_or|Kapaksız Göz'e hizmet eden ORK
-mno_start_ur|URUK, orkların yeni nesli
+mno_start_ur|URUK, orkların yeni cinsi
 mno_start_em|Sauron'un boyundurugunda bir İNSAN
 menu_start_hand|^^^^^^^^^Efendin Ak El^Irkini seç
 mno_start_whor|Ak El'e hizmet eden bir ORC
 mno_start_isur|Isengard'da yetiştirilmiş bir URUK-HAİ
 mno_start_duma|Bir DUNLAND adamı, Batı Ovaları
 menu_start_good_man|^^^^^^^^^^Halkini seç:
-mno_start_go|GONDOR, krallıgın beyaz kuleleri
+mno_start_go|GONDOR, Beyaz Kulenin Krallıgı
 mno_start_ro|ROHAN, At Halkı
-mno_start_du|DUNEDAIN, İnsanların kadim hanedanlıgı
+mno_start_du|DUNEDAIN, Çok Eski bir İnsan Hanedanlıgı
 mno_start_be|BEORNINGLER, Ayı Halkı
 mno_start_da|DALE'in kuzey krallıgı
 menu_start_good_elf|^^^^^^^^^^Hangi Ormanda yasiyorsun Yasli Kisi ?
@@ -112,7 +112,7 @@ mno_start_male|Erkek
 mno_start_female|Kadın
 mno_proc|Normal olarak devam et
 menu_start_as_one|^^^^^^^^^^Sen ne tür bir askersin?
-mno_start_default|{s23} Ol (Default)
+mno_start_default|{s23} Ol (Varsayılan)
 mno_start_up1|{s21} Ol (Kolay)
 mno_start_up2|Bir {s22} ol (Kolay)
 mno_continue|Devam et...
@@ -130,9 +130,9 @@ menu_game_options|^^^^^^^^Degiştirmek için bir ayara tıklayın:
 mno_game_options_war_level_start|Savaşın Başlayacagı Seviye: {s1}
 mno_game_options_restrict_items|Kısıtlı oyuncu ekipmanı: {s7}
 mno_game_options_formations|Savaş düzenleri ve yapay zeka: {s7}
-mno_game_options_siege_ai|Gelişmiş Kuşatma AI: {s7}
+mno_game_options_siege_ai|Gelişmiş Kuşatma Yapay zekası: {s7}
 mno_game_options_town_menu|Şehir NPClerine her zaman menülerden ulaşılabilir: {s7}
-mno_game_options_cutscenes|Arasahne: {s7}
+mno_game_options_cutscenes|Arasahneler: {s7}
 mno_game_options_injuries|Yoldaşlar için yaralanmalar: {s7}.
 mno_game_options_death|Lordlar ve Yoldaşlar için kalıci ölüm: {s7}.
 mno_game_options_death2|Oyuncu için kalıcı ölüm (Bu SENSİN!): {s7}.
@@ -145,38 +145,38 @@ mno_game_options_tweaks|Oyun Ayarı
 mno_game_options_back|Kamp menüsüne geri dön
 mno_game_options_start_back|Geri.
 menu_camp_tweaks|^^^^^^^^Ayarlamak istediginiz bir görüş seçin.
-mno_tweak_options_compat|Uygunluk Ayarları
-mno_tweak_options_strat|Strateji Ayarları
-mno_tweak_options_battlefield_ai|Savaş Alanı Yapay Zeka ayarları
+mno_tweak_options_compat|Uygunluk Ayarları...
+mno_tweak_options_strat|Strateji Ayarları...
+mno_tweak_options_battlefield_ai|Savaş Alanı Yapay Zeka ayarları...
 mno_tweak_options_back|Ayarlar menüsüne geri dön.
 menu_camp_compat_tweaks|^^^^^^^^Degistirmek için bir ayara tiklayin (azaltmak için shift e basili tutun):^(bunlar hile degil)
 mno_game_options_compat_party|Max Parti Üyesi: {s1}
 mno_game_options_compat_back|Ayarlar menüsüne dön
 menu_camp_strat_tweaks|^^^^^^^^Degistirmek için bir ayara tiklayin:^(Uyarı: Bu bir hiledir)
 mno_strat_tweaks_siege_reqs|Kuşatma gücü gereklilikleri: {s7}
-mno_strat_tweaks_siege_relax_rate|Kuşatma str. req. Gecikme İhtimali: {reg1}
-mno_strat_tweaks_regen_rate|Güç Yenilenmesi İhtimali: {s7}
-mno_strat_tweaks_siege_regen_limit|Nifak güç yenilenmesi {reg1} civarında yavaşlıyor.
-mno_strat_tweaks_influence_gain_rate|Etki kazanım oranı: {s7}
+mno_strat_tweaks_siege_relax_rate|Kuşatma gücü gerekliliginin gevşeme oranı: {reg1}
+mno_strat_tweaks_regen_rate|Güç Yenilenme oranı: {s7}
+mno_strat_tweaks_siege_regen_limit|Taraf güç yenilenmesi {reg1} civarında yavaşlıyor.
+mno_strat_tweaks_influence_gain_rate|Nüfuz kazanım oranı: {s7}
 mno_strat_tweaks_rank_gain_rate|Rütbe kazanım oranı: {s7}
 mno_strat_tweaks_back|Ayarlar menüsüne dön.
 menu_camp_action|^^^^^^^^ Hangi Eşya?
-mno_camp_customize_defilement|Ayarlanmış Kötü Zırh
+mno_camp_customize_defilement|Bozulmuş zırhı kişileştir
 mno_camp_drink_water|Ent Suyundan İç !
 mno_camp_action_4|Geri.
 menu_assasins_attack_player_won|{s3} tarafından gönderilen {s2} suikastçilerini başarıyla alt ettin.
-menu_assasins_attack_player_retreat|Hayattasın ve kaçtın.
+menu_assasins_attack_player_retreat|Hayatını Kurtardın.
 menu_fangorn_danger|^^^^^^Etraftan garip ve korkunç sesler geliyor^Yoksa agaçlar mı konuşuyor? Sanki havada derin bir öfke ve acı var.^Emirlerin?
 mno_be_quiet_elf|Agaclarin öfkesine saygi göster. Sessizce uzaklas.
 mno_be_quiet|Silahlari indir ve sessiz ol! Simdi hemen çik buradan!
-mno_be_bold|Devam et! Eski mitlerden kalma bitkilerden korkmuyorum!
-mno_fight_back|Hadi ögrenelim! Bölgeyi arayin! Birkaç agaç yakin!
-menu_fangorn_search_fails|^^^^^^Karanlik ve sik ormani arastiriyorsun, ama hiç birsey bulamiyorsun.^Ancak yinede izlendigine ve tehdit altında olduguna dair hislerin git gide artiyor..
-menu_fangorn_battle_debrief_won|^^^Büyük bir zafer!!^^^Demek ki Fangorn ile ilgili mitler bu anlama geliyormus...
-menu_fangorn_killed_player_only|^^^^^^Karanlik ve sik ormanda dolasiyorsun.^Bir anda bir darbe aldin! Kafana agir bir dal parçasi mi düstü?^Birkaç dakikaligina baygin yatiyorsun. Ciddi bir sekilde yaralandin ama devam edebilirsin.
+mno_be_bold|Devam et! Bitkilerden veya eski söylentilerden Korkmuyorum!
+mno_fight_back|Hadi ögrenelim! Bölgeyi arayın! Birkaç agaç yakın!
+menu_fangorn_search_fails|^^^^^^Karanlık ve sık ormanı araştırıyorsun, ama hiç birşey bulamıyorsun.^Ancak yinede izlendigine ve tehdit altında olduguna dair hislerin git gide artıyor..
+menu_fangorn_battle_debrief_won|^^^Büyük bir zafer!!^^^Demek ki Fangorn ile ilgili söylentiler bu anlama geliyormuş...
+menu_fangorn_killed_player_only|^^^^^^Karanlık ve sık ormanda dolaşıyorsun.^Bir anda bir darbe aldın! Kafana agır bir dal parçası mı düştü?^Birkaç dakikalıgına baygın yatıyorsun. Ciddi bir şekilde yaralandin ama devam edebilirsin.
 mno_ow_get_out|Ah! bu lanetli yerden çıkalım!
-menu_fangorn_killed_troop_and_player|^^^^^^Karanlik ve sik ormanda dolasiyorsun.^^Bir anda bir darbe aldin! Kafana agir bir dal parçasi mi düstü?^^ Birkaç dakika sonra kendine geldiginde askerlerinin o kadarda sansli olmadigini görüyorsun.^^
-menu_fangorn_killed_troop_only|^^^^^^^^Karanlik ve sik ormanda dolasiyorsun. Askerlerin korku içinde.^^Birden bire arkadan gelen çigliklari duyuyorsun! Hemen geri dönüyorsun ancak tek gördügün bir kan göleti içinde yatan birkaç asker.^^Diger birkaçinin nerede olduklari meçhul...
+menu_fangorn_killed_troop_and_player|^^^^^^Karanlık ve sık ormanda dolaşıyorsun.^^Bir anda bir darbe aldın! Kafana agır bir dal parçası mı düştü?^^ Birkaç dakika sonra kendine geldiginde askerlerinin o kadarda şanslı olmadıgını görüyorsun.^^
+menu_fangorn_killed_troop_only|^^^^^^^^Karanlık ve sık ormanda dolaşıyorsun. Askerlerin korku içinde.^^Birden bire arkadan gelen çıglıkları duyuyorsun! Hemen geri dönüyorsun ancak tek gördügün bir kan göleti içinde yatan birkaç asker.^^Diger birkaçının nerede oldukları meçhul...
 mno_get_out|Çıkalım bu lanetli yerden!
 menu_can_capture_troll|Düşmüş vahşi bir trol hala nefes alıyor!^^Acı ve öfkeyle dolmuş şeytani gözleri dik dik sana bakıyor.^Şimdi bile yıkıldıgı ve kendi kanı içinde yardıma muhtaç uzandıgı halde, son derece tehlikeli görünüyor...
 mno_killit|Şimdi, işini bitir şunun. Öldügüne emin ol.
@@ -185,19 +185,19 @@ mno_cageit2|Diger trolle birlikte kafese koy.
 mno_cheat_disabable|Hile/mod ayarlarını devre dışı bırak.
 menu_drank_ent_water_human|^^^Suyu içiyorsun. Temiz ve rahatlatıcı... Misk gibi hoş bir kokusu var.^Yenilenmiş hissediyorsun.^^Öte yandan içinde dogal olmayan, garip bir his de var. Bir şeyler sana bu suyu asla tekrar içmemen gerektigini söylüyor.
 menu_drank_ent_water_orc|^^^Suyu içiyorsun. Sadece su.^Birden acı içinde bogazını kavrıyorsun.^Zehirlendin!^Boguluyorsun, siyah kan kusuyorsun, her şey bitmek üzere.^^Acıtıyor, çok acıtıyor.
-mno_i_shall_surv|Ben.. hayatta... kalmalıyım...
+mno_i_shall_surv|Yaşamak.... Zorundayım...
 menu_end_game|^^^^^Karar verildi, maceracı hayatından vazgeçiyor ve duruluyorsun. Silahlarını ve zırhını satıyor, sahip oldugun her şeyi toplayıp gün batımına dogru yola çıkıyorsun...
 mno_end_game_bye|Hoşçakal.
 menu_cattle_herd|Bazı insanlarla karşılaşıyorsun.
 mno_cattle_drive_away|Takip emri ver.
 mno_cattle_stop|Onları bir mola yerine götür.
 mno_leave|Ayrıl.
-menu_simple_encounter|^^^^^{s2}^Senin {reg22} askerin onların {reg11} askerine karşı savaşa hazır.^^Savaş {s3}{s4}'de yapılıyor.^^Emirlerin?
+menu_simple_encounter|^^^^^{s2}^Senin {reg22} askerin onların {reg11} askerine karşı savaşa hazır.^^Muharebe Alanı: {s3}{s4}.^^Emirlerin?
 mno_encounter_attack|{reg21?Hücum et:Karşılaşmaya hazırlan}.
 mno_encounter_order_attack|Askerlerine sensiz {reg21?saldırmalarını:çarpışmalarını} emret.
 mno_control_allies_menu|Alanda müttefikleri yönetmek için Nüfuz kullan.
 mno_encounter_hide|Düşmandan saklan...
-mno_special_whip|Parçalamak için ileri atıl {s4}.
+mno_special_whip|{s4} Parçalayarak ileri atıl.
 mno_encounter_leave|Geri çekil.
 mno_encounter_retreat|Kaçışını saglamaları için birkaç askerini arkada bırakarak geri çekil.
 mno_player_control_allies_simple|Onları yönet ve düşmana saldır
@@ -218,7 +218,7 @@ mno_reject|Çok mesgul oldugunu ilet.
 mno_send_word|Hemen gelip ona katılacagini ilet.
 menu_kingdom_army_quest_messenger|{s8} seninle bir görev hakkında konuşmak istedigini iletiyor. Mümkün oldugunca çabuk gelip onu görmeni istiyor.
 menu_kingdom_army_quest_join_siege_order|{s8} sana {s9} kuşatmasına tam taarruz hazırlıgı ile katılman için söz yolladı .    Askerlerin ne ugruna olursa olsun {s9} u alacak.
-menu_kingdom_army_follow_failed|Takip etmeyi basaramadin ve emirlere karsi geldin {s8}. O daha önemli isler ile mesgul oldugunu tahmin ettigini iletiyor, ama sabrinin sinirlari oldugu konusunda uyariyor.
+menu_kingdom_army_follow_failed|Takip etmeyi başaramadın ve emirlere karşı geldin {s8}. Daha önemli işlerle meşgul oldugunu tahmin ettigini iletiyor, ama sabrının sınırları oldugu konusunda uyarıyor.
 menu_battle_debrief|{s11}^Kayıpların:{s8}{s10}^^Düşman Kayıpları:{s9}
 mno_inspect_troll|Yere serilen trolü kontrol et
 menu_pre_join|{s2} ve {s1} arasında bir savaşa denk geliyorsun. Karar veriyorsun...
@@ -226,7 +226,7 @@ mno_pre_join_help_attackers|{s2}'e yardıma git.
 mno_pre_join_help_defenders|{s1}'in yardımına koş.
 mno_pre_join_help_refugees|{s1}'in yardımına koş.
 mno_pre_join_leave|Karışma.
-menu_join_battle|^^^{s1} e rakip olarak {s2}'ye yardım ediyorsun.^ Düşmanın {reg11} askerine karşı senin {reg22} askerin bulunuyor.^^Savaş {s3}{s4}'da gerçekleşiyor .
+menu_join_battle|^^^{s1} karşısında yardım edecegin grup {s2}.^ Düşmanın {reg11} askerine karşı senin {reg22} askerin bulunuyor.^^Muharebe Alanı: {s3}{s4}.
 mno_join_attack|Düşmana hücum et.
 mno_join_order_attack|Askerlerine, sen geride kalırken müttefiklerinizle saldırmalarını emret.
 mno_control_allies_join_menu|Alanda müttefikleri yönetmek için Nüfuz puanı kullan.
@@ -234,7 +234,7 @@ mno_join_leave|Geri çekil.
 mno_player_control_allies_join_menu|Onları yönet ve düşmana saldır
 menu_join_order_attack|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
 mno_enter|Giriş.
-menu_battlefields|^^^^^^^^^^Savaş Bölgesi Seç.
+menu_battlefields|^^^^^^^^^^Savaş Bölgesi Seç...
 mno_enter_f1|Bölge 1
 mno_enter_f2|Bölge 2
 mno_enter_f3|Bölge 3
@@ -244,7 +244,7 @@ menu_join_siege_outside|^^^^^^{s1}, {s2} tarafından kuşatıldı.
 mno_approach_besiegers|Kuşatma kampına yaklaş.
 mno_pass_through_siege|Kuşatmayı geç ve {s1} e gir.
 menu_cut_siege_without_fight|Kuşatmacılar zorluk çıkartmadan kapılara yaklaşmana izin verdi.
-menu_besiegers_camp_with_allies|{s1} kuşatma altında. {s2}'un sancagı kuşatmacıların kampının üstünde dalgalanıyor,    burada sen ve birligin memnuniyetle karşılanıyorsunuz.
+menu_besiegers_camp_with_allies|{s1} kuşatma altında. Kuşatmacıların kampında dalgalanan sancagın sahibi {s2}, burada sen ve birligin memnuniyetle karşılanıyorsunuz.
 mno_talk_to_siege_commander|Komutan ile görüşme talep et.
 mno_join_siege_with_allies|Sıradaki saldırıya katıl
 mno_join_siege_stay_back|Askerlerine sonraki mücadelede sensiz savaşmalarını emret.

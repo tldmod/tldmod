@@ -10,7 +10,7 @@ itm_cram|Semirten Ögün
 itm_lembas|Lembas
 itm_smoked_fish|Tütsülenmiş Balık
 itm_dried_meat|Kurutulmuş Et
-itm_cattle_meat|Bifek
+itm_cattle_meat|Biftek
 itm_grain|Bugday
 itm_tools|Aletler
 itm_siege_supply|Malzemeler
@@ -23,31 +23,31 @@ itm_oliphant|Oliphaunt
 itm_sumpter_horse|Yük Beygiri
 itm_saddle_horse|Binek Atı
 itm_steppe_horse|Bozkır Atı
-itm_courser|Süvari Atı
-itm_hunter|Avcı
+itm_courser|Koşu atı
+itm_hunter|Av Atı
 itm_pony|Midilli
 itm_arnor_warhorse|Arnorian Savaş Atı
 itm_dunedain_warhorse|Dunedain Savaş Atı
-itm_rohirrim_courser|Rohirrim Süvari Atlısı
-itm_rohirrim_hunter|Rohirrim Avcıları
-itm_rohirrim_courser2|Rohirrim Süvari Atlısı
+itm_rohirrim_courser|Rohirrim Koşu Atı
+itm_rohirrim_hunter|Rohirrim Av Atı
+itm_rohirrim_courser2|Rohirrim Koşu Atı
 itm_rohan_warhorse|Rohirrim Savaş Atı
 itm_thengel_warhorse|Rohirrim Agır Savaş Atı
-itm_rhun_horse_a|Rhun Atlısı
-itm_rhun_horse_b|Rhun Atlısı
-itm_rhun_horse_d|Rhun Atlısı
-itm_rhun_horse_e|Rhun Agır Atlısı
-itm_rhun_horse_f|Rhun Agır Atlısı
-itm_rhun_horse_g|Rhun Agır Atlısı
-itm_rhun_horse_h|Rhun Agır Atlısı
+itm_rhun_horse_a|Rhun Atı
+itm_rhun_horse_b|Rhun Atı
+itm_rhun_horse_d|Rhun Atı
+itm_rhun_horse_e|Rhun Agır Atı
+itm_rhun_horse_f|Rhun Agır Atı
+itm_rhun_horse_g|Rhun Agır Atı
+itm_rhun_horse_h|Rhun Agır Atı
 itm_dale_horse|Rhovanion Atı
 itm_dale_warhorse|Rhovanion Savaş Atı
-itm_riv_warhorse|Rivendell Savaş Atı
+itm_riv_warhorse|Ayrıkvadi Savaş Atı
 itm_riv_warhorse2|Imladris Atı
 itm_mordor_warhorse|Mordor Savaş Atı
 itm_mordor_warhorse2|Mordor Ugursuz Atı
-itm_gondor_courser|Gondor Süvari Atlısı
-itm_gondor_hunter|Gondor Avcısı
+itm_gondor_courser|Gondor Koşu Atı
+itm_gondor_hunter|Gondor Av Atı
 itm_dol_amroth_warhorse|Dol Amroth Savaş Atı
 itm_dol_amroth_warhorse2|Dol Amroth Agır Savaş Atı
 itm_gondor_warhorse|Gondor Savaş Atı
@@ -70,11 +70,11 @@ itm_axe_a|Kuzeyli Baltası
 itm_axe_b|Kuzeyli Sakallı Baltası
 itm_axe_c|Kuzeyli Baltası
 itm_axe_d|Kuzeyli Baltası
-itm_tree_trunk_club_a|Goblin Gövdesi
+itm_tree_trunk_club_a|Agaç Gövdesi
 itm_long_bearded_axe|Kuzeyli Sakallı Uzunbaltası
 itm_2_handed_axe|Kuzeyli Uzunbaltası
-itm_free_giant_hammer|Devin Çekici
-itm_giant_mace|Devin Topuzu
+itm_free_giant_hammer|Devasa Çekiç
+itm_giant_mace|Devasa Topuz
 itm_troll_shield_a|Troll Kalkanı
 itm_arrows|Oklar
 itm_gondor_arrows|Gondor Okları
@@ -82,7 +82,7 @@ itm_orc_javelin|Ork Agır Ciriti
 itm_khergit_arrows|Barbed Okları
 itm_rohan_arrows_2|Rohirrim Okları
 itm_harad_arrows|Haradrim Okları
-itm_corsair_arrows|KorsanOkları
+itm_corsair_arrows|Korsan Okları
 itm_ithilien_arrows|Ithilien Okları
 itm_woodelf_arrows|Orman Elfi Okları
 itm_elven_arrows|Elf Okları
@@ -99,11 +99,11 @@ itm_light_lance|Hafif Mızrak
 itm_lance|Mızrak
 itm_tab_shield_small_round_b|Yuvarlak Süvari Kalkanı
 itm_short_bow|Kısa Yay
-itm_regular_bow|Ok
+itm_regular_bow|Yay
 itm_nomad_bow|Göçmen Yayı
-itm_gondor_bow|Gondor oku
-itm_strong_bow|Güçlü oku
-itm_elven_bow|Elf oku
+itm_gondor_bow|Gondor Yayı
+itm_strong_bow|Güçlü Yay
+itm_elven_bow|Elf Yayı
 itm_corsair_bow|Korsan Yayı
 itm_dwarf_horn_bow|Cüce Boynuz Yayı
 itm_dwarf_short_bow|Cüce Kısa Yayı
@@ -113,7 +113,7 @@ itm_riv_bow|Ayrıkvadi Yayı
 itm_rhun_bow|Rhun Yayı
 itm_lorien_bow|Galadhrim Yayı
 itm_isengard_large_bow|Isengar Geniş Yayı
-itm_dale_bow|Dere Yayı
+itm_dale_bow|Dale Yayı
 itm_uruk_bow|Ork Boynuzlu Yayı
 itm_mirkwood_bow|Kuyutorman Yayı
 itm_dunland_javelin|Dunland Ciritleri
@@ -147,13 +147,13 @@ itm_arnor_sword_f|Arnor Kısa Kılıç
 itm_riv_helm_a|Ayrıkvadi Takkesi
 itm_riv_helm_b|Ayrıkvadi Okçu Migferi
 itm_riv_helm_c|Ayrıkvadi Piyade Migferi
-itm_riv_tiara|Elf Lordu Tiara
+itm_riv_tiara|Elf Lord Taçı
 itm_riv_shield_a|Ayrıkvadi Kalkanı
 itm_riv_shield_b|Ayrıkvadi Kalkanı
 itm_riv_bas_sword|Ayrıkvadi Piç Kılıcı
 itm_riv_1h_sword|Ayrıkvadi Kılıcı
 itm_riv_riding_sword|Ayrıkvadi Süveri Kılıcı
-itm_riv_archer_sword|Rivendell Okçu Kılıcı
+itm_riv_archer_sword|Ayrıkvadi Okçu Kılıcı
 itm_riv_spear|Ayrıkvadi Mızragı
 itm_riv_armor_light|Ayrıkvadi Zırhı
 itm_riv_armor_light_inf|Ayrıkvadi Zırhı
