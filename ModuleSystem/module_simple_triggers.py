@@ -595,7 +595,8 @@ simple_triggers = [
   
   # (26) Process siege ai - modified with script - Kham (Oct 2018)
   (3,[(store_current_hours, ":cur_hours"),
-      (try_for_range, ":center_no", centers_begin, centers_end),
+      #Preparations: Check for besieged centers, store besieger parties, store siege time
+	  (try_for_range, ":center_no", centers_begin, centers_end),
         (party_is_active, ":center_no"), #TLD
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
         (party_get_slot, ":besieger_party", ":center_no", slot_center_is_besieged_by),
@@ -610,6 +611,7 @@ simple_triggers = [
         (assign, ":call_attack_back", 0),
         (assign, ":attacker_strength", 0),
         (assign, ":marshall_attacking", 0),
+		#not 100% sure, but this double checks for those hosts that actually besiege the center, circles through, collects their individual party strengths and adds it to the sum of the attacker party strength
         (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
           (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
           #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
@@ -640,12 +642,12 @@ simple_triggers = [
             (faction_slot_eq, ":besieger_faction", slot_faction_marshall, ":troop_no"),
             (assign, ":marshall_attacking", 1),
           (try_end),
-          (call_script, "script_party_calculate_regular_strength", ":party_no"),
-          (val_add, ":attacker_strength", reg0),
+          (call_script, "script_party_calculate_regular_strength", ":party_no"), # get individual attacker party strength
+          (val_add, ":attacker_strength", reg0), # colletive attacker party strength
         (try_end),
         (try_begin),
           (gt, ":attacker_strength", 0),
-          (party_collect_attachments_to_party, ":center_no", "p_collective_enemy"),
+          (party_collect_attachments_to_party, ":center_no", "p_collective_enemy"), #get collective defender party strength
           (call_script, "script_party_calculate_regular_strength", "p_collective_enemy"),
           (assign, ":defender_strength", reg0),
           (try_begin),
@@ -653,7 +655,7 @@ simple_triggers = [
             (eq, "$g_player_is_captive", 0),
             (call_script, "script_party_calculate_regular_strength", "p_main_party"),
             (val_add, ":defender_strength", reg0),
-            (val_mul, ":attacker_strength", 2), #double the power of attackers if the player is in the campaign
+            (val_mul, ":attacker_strength", 2), #double the power of attackers if the player is defending the center???
           (try_end),
           (party_get_slot, ":siege_hardness", ":center_no", slot_center_siege_hardness),
           (val_add, ":siege_hardness", 100),
@@ -682,13 +684,13 @@ simple_triggers = [
           (val_max, ":random_up_limit", 0),
           (store_sub, ":random_down_limit", 100, ":strength_ratio"), #was 200, less siege retreats now
           (val_max, ":random_down_limit", 0),
-          (try_begin),
+          (try_begin), #:random_up_limit is the chance to decide for attack
             (store_random_in_range, ":rand", 0, 100),
             (val_add, ":random_up_limit", 20), #kham - lets start sieges earlier
             (lt, ":rand", ":random_up_limit"),
             (gt, ":siege_begin_hours", 24),#initial preparation
             (assign, ":launch_attack", 1),
-          (else_try),
+          (else_try), #if not, :random_down_limit is the chance to give up siege
             (store_random_in_range, ":rand", 0, 100),
             (lt, ":rand", ":random_down_limit"),
             (assign, ":call_attack_back", 1),

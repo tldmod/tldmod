@@ -274,7 +274,7 @@ parties = [
   ("amon_anwar","Amon_Anwar",icon_gondor_beacon|pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-16.65, 5.81), [],130),
 
   #Kham test
-  ("scout_party","Scout_Party",icon_footman_gondor, no_menu, pt_gondor_scouts,fac_gondor,0,ai_bhvr_hold,0,(13.6,54.6),[(trp_squire_of_gondor,1,0)]),
+  ("scout_party","Scout_Party",icon_footman_gondor, no_menu, pt_gondor_scouts,fac_gondor,0,ai_bhvr_hold,0,(13.6,54.6),[(trp_c2_gon_squire,1,0)]),
 
   #Terrain Party
   ("terrain_party","terrain_party",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),

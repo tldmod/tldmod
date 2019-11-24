@@ -120,7 +120,7 @@ game_menus = [
 	 ("spacer"    ,[],"_"  ,[]),
 	 ("go_bback"  ,[],"Go Back",[(change_screen_quit              ),]), 
 	]+concatenate_scripts([[
-	 ("quick"     ,[(eq, cheat_switch, 1),],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]), 
+	 ("quick"     ,[(eq, cheat_switch, 1),],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_i1_gon_levy"),(jump_to_menu,"mnu_start_phase_2" ),]), 
 	 ("quick2"    ,[(eq, cheat_switch, 1),],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),(jump_to_menu,"mnu_start_phase_2" ),]), 
 	] for ct in range(cheat_switch)])+[	
 	]
@@ -222,7 +222,7 @@ game_menus = [
 	  
 	  # initialization (mtarini)
       (assign, "$testbattle_team_a_num", 40),(assign, "$testbattle_team_a_troop", "trp_orc_of_isengard"),
-      (assign, "$testbattle_team_b_num", 10),(assign, "$testbattle_team_b_troop", "trp_gondor_swordsmen"),
+      (assign, "$testbattle_team_b_num", 10),(assign, "$testbattle_team_b_troop", "trp_i4_gon_swordsman"),
       (assign, "$menu_select_any_troop_search_race", len(race_names)),  # any race
       (assign, "$menu_select_any_troop_search_tier", tmp_menu_max_tier+1), # any tier
       (assign, "$menu_select_any_troop_search_fac", "fac_gondor"), # player's kingdom
@@ -325,7 +325,7 @@ game_menus = [
       ("tutorial_1",[],"Tutorial #1: Basic movement and weapon selection. {s1}",[
            (modify_visitors_at_site,"scn_tutorial_1"),(reset_visitors,0),
            (set_jump_mission,"mt_tutorial_1"),
-           (call_script,"script_start_as_one","trp_gondor_commoner"),
+           (call_script,"script_start_as_one","trp_i1_gon_levy"),
            (assign, "$g_player_troop", "$player_current_troop_type"),
        	   (set_player_troop, "$g_player_troop"),
            (jump_to_scene,"scn_tutorial_1"),(change_screen_mission)]),
@@ -552,24 +552,24 @@ game_menus = [
        (troop_add_item, "$g_player_troop","itm_khergit_arrows",0),
        (troop_equip_items, "$g_player_troop"),
      
-		(set_visitors, 1, "trp_woodsman_of_lossarnach",			10),
-		(set_visitors, 2, "trp_axeman_of_lossarnach",			6),
-		(set_visitors, 3, "trp_axemaster_of_lossarnach",		4),
-		(set_visitors, 4, "trp_clansman_of_lamedon",			10),
-		(set_visitors, 5, "trp_footman_of_lamedon",				6),
-		(set_visitors, 6, "trp_veteran_of_lamedon",				4),
-		(set_visitors, 7, "trp_pinnath_gelin_plainsman",		10),
-		(set_visitors, 8, "trp_pinnath_gelin_spearman",			6),
-		(set_visitors, 9, "trp_warrior_of_pinnath_gelin",		4),
-		(set_visitors, 10, "trp_knight_of_dol_amroth",			10),
-		(set_visitors, 11, "trp_veteran_knight_of_dol_amroth",	6),
-		(set_visitors, 12, "trp_swan_knight_of_dol_amroth",		4),
-#       (set_visitors, 13, "trp_dol_amroth_youth",				5),
-#       (set_visitors, 14, "trp_squire_of_dol_amroth",			3),
-#       (set_visitors, 15, "trp_veteran_squire_of_dol_amroth",	2),
-		(set_visitors, 13, "trp_knight_of_dol_amroth",			10),
-		(set_visitors, 14, "trp_veteran_knight_of_dol_amroth",	6),
-		(set_visitors, 15, "trp_swan_knight_of_dol_amroth",		4),
+		(set_visitors, 1, "trp_i1_loss_woodsman",			10),
+		(set_visitors, 2, "trp_i2_loss_axeman",			6),
+		(set_visitors, 3, "trp_i5_loss_axemaster",		4),
+		(set_visitors, 4, "trp_i1_lam_clansman",			10),
+		(set_visitors, 5, "trp_i2_lam_footman",				6),
+		(set_visitors, 6, "trp_i3_lam_veteran",				4),
+		(set_visitors, 7, "trp_i1_pinnath_plainsman",		10),
+		(set_visitors, 8, "trp_c2_pinnath_rider",			6),
+		(set_visitors, 9, "trp_c3_pinnath_knight",		4),
+		(set_visitors, 10, "trp_c4_amroth_knight",			10),
+		(set_visitors, 11, "trp_c5_amroth_vet_knight",	6),
+		(set_visitors, 12, "trp_c6_amroth_swan_knight",		4),
+#       (set_visitors, 13, "trp_i1_amroth_recruit",				5),
+#       (set_visitors, 14, "trp_c2_amroth_squire",			3),
+#       (set_visitors, 15, "trp_c3_amroth_vet_squire",	2),
+		(set_visitors, 13, "trp_c4_amroth_knight",			10),
+		(set_visitors, 14, "trp_c5_amroth_vet_knight",	6),
+		(set_visitors, 15, "trp_c6_amroth_swan_knight",		4),
 #		Enemy
 		(set_visitors, 16, "trp_harad_desert_warrior",			6),
 		(set_visitors, 17, "trp_harad_desert_warrior",			6),
@@ -784,19 +784,19 @@ game_menus = [
 		(set_visitors, 8, "trp_i1_goblin_gundabad",				5),
 		(set_visitors, 9, "trp_i2_orc_gundabad",					5),
 ## ENEMY
-		(set_visitors, 11, "trp_i1_dwarven_apprentice",		3),
-		(set_visitors, 12, "trp_i2_dwarven_warrior",			3),
-		(set_visitors, 13, "trp_i3_dwarven_hardened_warrior",	3),
-		(set_visitors, 14, "trp_i4_dwarven_spearman",			3),
-		(set_visitors, 16, "trp_i5_dwarven_pikeman",			3),
-		(set_visitors, 17, "trp_i6_dwarven_longpikeman",		3),
-		(set_visitors, 18, "trp_i4_dwarven_axeman",			3),
-		(set_visitors, 40, "trp_i5_dwarven_expert_axeman",		3),
-		(set_visitors, 41, "trp_i6_longbeard_axeman",			3),
-		(set_visitors, 42, "trp_a3_dwarven_scout",				2),
-		(set_visitors, 43, "trp_a4_dwarven_bowman",			2),
-		(set_visitors, 44, "trp_a4_dwarven_bowman",			2),
-		(set_visitors, 45, "trp_a4_dwarven_bowman",		2),
+		(set_visitors, 11, "trp_i1_dwarf_apprentice",		3),
+		(set_visitors, 12, "trp_i2_dwarf_warrior",			3),
+		(set_visitors, 13, "trp_i3_dwarf_hardened_warrior",	3),
+		(set_visitors, 14, "trp_i4_dwarf_spearman",			3),
+		(set_visitors, 16, "trp_i5_dwarf_pikeman",			3),
+		(set_visitors, 17, "trp_i6_dwarf_longpikeman",		3),
+		(set_visitors, 18, "trp_i4_dwarf_axeman",			3),
+		(set_visitors, 40, "trp_i5_dwarf_expert_axeman",		3),
+		(set_visitors, 41, "trp_i6_dwarf_longbeard_axeman",			3),
+		(set_visitors, 42, "trp_a3_dwarf_scout",				2),
+		(set_visitors, 43, "trp_a4_dwarf_bowman",			2),
+		(set_visitors, 44, "trp_a4_dwarf_bowman",			2),
+		(set_visitors, 45, "trp_a4_dwarf_bowman",		2),
 		(str_store_string, s16, "str_custom_battle_5"),
      (else_try),
 ########################################## ORCS VS MIRKWOOD  
@@ -889,20 +889,20 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
 
-		(set_visitors, 1, "trp_gondor_commoner",				8),
-		(set_visitors, 2, "trp_gondor_militiamen",				6),
-		(set_visitors, 3, "trp_footmen_of_gondor",				6),
-		(set_visitors, 4, "trp_gondor_spearmen",				6),
-		(set_visitors, 5, "trp_gondor_veteran_spearmen",		2),
-		(set_visitors, 6, "trp_guard_of_the_fountain_court",	4),
-		(set_visitors, 7, "trp_ranger_of_ithilien",				4),
-		(set_visitors, 8, "trp_gondor_swordsmen",				6),
-		(set_visitors, 9, "trp_gondor_veteran_swordsmen",		6),
-		(set_visitors, 10, "trp_swordsmen_of_the_tower_guard",	4),
-		(set_visitors, 11, "trp_archer_of_the_tower_guard",		4),
-		(set_visitors, 12, "trp_bowmen_of_gondor",				4),
-		(set_visitors, 13, "trp_archer_of_gondor",				4),
-		(set_visitors, 14, "trp_veteran_archer_of_gondor",		2),
+		(set_visitors, 1, "trp_i1_gon_levy",				8),
+		(set_visitors, 2, "trp_i2_gon_watchman",				6),
+		(set_visitors, 3, "trp_i3_gon_footman",				6),
+		(set_visitors, 4, "trp_i4_gon_spearman",				6),
+		(set_visitors, 5, "trp_i5_gon_vet_spearman",		2),
+		(set_visitors, 6, "trp_i6_gon_tower_spearman",	4),
+		(set_visitors, 7, "trp_a4_ithilien_ranger",				4),
+		(set_visitors, 8, "trp_i4_gon_swordsman",				6),
+		(set_visitors, 9, "trp_i5_gon_vet_swordsman",		6),
+		(set_visitors, 10, "trp_i6_gon_tower_swordsman",	4),
+		(set_visitors, 11, "trp_a6_gon_tower_archer",		4),
+		(set_visitors, 12, "trp_a3_gon_bowman",				4),
+		(set_visitors, 13, "trp_a4_gon_archer",				4),
+		(set_visitors, 14, "trp_a5_gon_vet_archer",		2),
 ## ENEMY
 		(set_visitors, 16, "trp_olog_hai",				2),
 		(set_visitors, 16, "trp_i1_corsair_youth",					6),
@@ -930,12 +930,12 @@ game_menus = [
 	   # (modify_visitors_at_site, "$g_custom_battle_scene"),
        # (set_visitor, 0, "$g_player_troop"),
 
-		# (set_visitors, 1, "trp_gondor_commoner", 1),
-		# (set_visitors, 2, "trp_gondor_commoner", 1),
-		# (set_visitors, 3, "trp_gondor_commoner", 1),
-		# (set_visitors, 4, "trp_gondor_commoner", 1),
-		# (set_visitors, 5, "trp_gondor_commoner", 1),
-		# (set_visitors, 6, "trp_gondor_commoner", 1),
+		# (set_visitors, 1, "trp_i1_gon_levy", 1),
+		# (set_visitors, 2, "trp_i1_gon_levy", 1),
+		# (set_visitors, 3, "trp_i1_gon_levy", 1),
+		# (set_visitors, 4, "trp_i1_gon_levy", 1),
+		# (set_visitors, 5, "trp_i1_gon_levy", 1),
+		# (set_visitors, 6, "trp_i1_gon_levy", 1),
 		
 		# (set_visitors, 16, "trp_townsman", 1),
 		# (set_visitors, 17, "trp_townsman", 1),
@@ -949,25 +949,25 @@ game_menus = [
 	    # TROLL TEST
        (eq, "$g_custom_battle_scenario", 10),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
-       (assign, "$g_player_troop", "trp_gondor_veteran_swordsmen"),
+       (assign, "$g_player_troop", "trp_i5_gon_vet_swordsman"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, MORIA_TROLL_HP_SHIELD),
        (set_visitor, 0, "$g_player_troop"),
-	   (set_visitors, 1, "trp_gondor_veteran_spearmen",		8),
+	   (set_visitors, 1, "trp_i5_gon_vet_spearman",		8),
 	   (set_visitors, 16, "trp_troll_of_moria",				1),
 	   (str_store_string, s16, "@TEST: troll VS infantry"),
      (else_try),
        (eq, "$g_custom_battle_scenario", 17),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
        (assign,"$field_ai_lord",1),
-       (assign, "$g_player_troop", "trp_gondor_veteran_swordsmen"),
+       (assign, "$g_player_troop", "trp_i5_gon_vet_swordsman"),
        (troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
-	   (set_visitors, 1, "trp_gondor_militiamen",		20),
-	   (set_visitors, 1, "trp_archer_of_gondor",		10),
+	   (set_visitors, 1, "trp_i2_gon_watchman",		20),
+	   (set_visitors, 1, "trp_a4_gon_archer",		10),
 	   (set_visitors, 16, "trp_olog_hai",				1),
 	   (str_store_string, s16, "@TEST: troll VS Weak infantry"),
      (else_try),
@@ -987,12 +987,12 @@ game_menus = [
 	    # TROLL TEST
        (eq, "$g_custom_battle_scenario", 11),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
-       (assign, "$g_player_troop", "trp_archer_of_the_tower_guard"),
+       (assign, "$g_player_troop", "trp_a6_gon_tower_archer"),
        (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, MORIA_TROLL_HP_SHIELD),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
-	   (set_visitors, 1, "trp_veteran_archer_of_gondor",		7),
+	   (set_visitors, 1, "trp_a5_gon_vet_archer",		7),
 	   (set_visitors, 16, "trp_troll_of_moria",				1),
 	   (set_visitors, 17, "trp_orc_snaga_of_isengard",				1),
 	   (str_store_string, s16, "@TEST: troll VS archers"),
@@ -1046,16 +1046,16 @@ game_menus = [
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 16, "$g_player_troop"),
-	   #(set_visitors, 1, "trp_gondor_veteran_swordsmen",				8),
-	   (set_visitors, 1, "trp_gondor_veteran_spearmen",		8),
-	   (set_visitors, 0, "trp_gondor_veteran_swordsmen",				1),
+	   #(set_visitors, 1, "trp_i5_gon_vet_swordsman",				8),
+	   (set_visitors, 1, "trp_i5_gon_vet_spearman",		8),
+	   (set_visitors, 0, "trp_i5_gon_vet_swordsman",				1),
 	   (str_store_string, s16, "@TEST: Troll by player"),
 	   (str_store_string, s16, "@TROLL TEST"),
     (else_try),
 	    # WARG TEST 1vs1
        (eq, "$g_custom_battle_scenario", 20),
        (assign, "$g_custom_battle_scene", "scn_random_scene_plain_forest"),
-       (assign, "$g_player_troop", "trp_archer_of_the_tower_guard"),
+       (assign, "$g_player_troop", "trp_a6_gon_tower_archer"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 4, "$g_player_troop"),
@@ -1067,11 +1067,11 @@ game_menus = [
 	    # WARG TEST 2vs3
        (eq, "$g_custom_battle_scenario", 21),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
-       (assign, "$g_player_troop", "trp_archer_of_the_tower_guard"),
+       (assign, "$g_player_troop", "trp_a6_gon_tower_archer"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
-	   (set_visitors, 2, "trp_veteran_archer_of_gondor",		1),
+	   (set_visitors, 2, "trp_a5_gon_vet_archer",		1),
 	   (set_visitors, 16, "trp_wolf_rider_of_isengard",		    3),
 	   (set_visitors, 17, "trp_orc_snaga_of_isengard",				1),
 	   (str_store_string, s16, "@TEST: warg test 2 VS 3"),
@@ -1079,11 +1079,11 @@ game_menus = [
 	    # WARG TEST 12vs8
        (eq, "$g_custom_battle_scenario", 22),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
-       (assign, "$g_player_troop", "trp_archer_of_the_tower_guard"),
+       (assign, "$g_player_troop", "trp_a6_gon_tower_archer"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
-	   (set_visitors, 2, "trp_veteran_archer_of_gondor",		9),
+	   (set_visitors, 2, "trp_a5_gon_vet_archer",		9),
 	   (set_visitors, 16, "trp_wolf_rider_of_isengard",		    9),
 	   (set_visitors, 17, "trp_orc_snaga_of_isengard",				4),
 	   (str_store_string, s16, "@TEST: warg test many VS many"),
@@ -1095,7 +1095,7 @@ game_menus = [
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 17, "$g_player_troop"),
-	   (set_visitors, 0, "trp_veteran_archer_of_gondor",		1),
+	   (set_visitors, 0, "trp_a5_gon_vet_archer",		1),
 	   (str_store_string, s16, "@TEST: play warg, test 1 VS 1"),
     (else_try),
 	    # WARG TEST 2vs3
@@ -1106,7 +1106,7 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
 	   (set_visitors, 2, "trp_wolf_rider_of_isengard",		    2),
-	   (set_visitors, 16, "trp_veteran_archer_of_gondor",		2),
+	   (set_visitors, 16, "trp_a5_gon_vet_archer",		2),
 	   #(set_visitors, 18, "trp_orc_snaga_of_isengard",				1),
 	   (str_store_string, s16, "@TEST: play wargs, test 2 VS 3"),
     (else_try),
@@ -1118,7 +1118,7 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
 	   (set_visitors, 2, "trp_wolf_rider_of_isengard",		    12),
-	   (set_visitors, 16, "trp_veteran_archer_of_gondor",		10),
+	   (set_visitors, 16, "trp_a5_gon_vet_archer",		10),
 	   #(set_visitors, 18, "trp_orc_snaga_of_isengard",				4),
 	   (str_store_string, s16, "@TEST: play wargs, many VS many"),
    (else_try),########################################## TEST SCENE FOR DYNAMIC SCENERY  
@@ -1154,9 +1154,9 @@ game_menus = [
 		(try_begin),
 			(eq,":gfac",0),(assign,":trp_good_min","trp_i1_beorning_man"),(assign,":trp_good_max","trp_i5_beorning_warden_of_the_ford" ),(else_try),
 			(eq,":gfac",1),(assign,":trp_good_min","trp_i1_dale_militia"     ),(assign,":trp_good_max","trp_ac5_rhovanion_marchwarden"       ),(else_try),
-			(eq,":gfac",2),(assign,":trp_good_min","trp_i1_dwarven_apprentice"),(assign,":trp_good_max","trp_i6_dwarven_longpikeman"         ),(else_try),
-			(eq,":gfac",3),(assign,":trp_good_min","trp_woodsman_of_lossarnach"),(assign,":trp_good_max","trp_master_blackroot_vale_archer"),(else_try),
-			(eq,":gfac",4),(assign,":trp_good_min","trp_dol_amroth_youth" ),(assign,":trp_good_max","trp_swan_knight_of_dol_amroth"   ),(else_try),
+			(eq,":gfac",2),(assign,":trp_good_min","trp_i1_dwarf_apprentice"),(assign,":trp_good_max","trp_i6_dwarf_longpikeman"         ),(else_try),
+			(eq,":gfac",3),(assign,":trp_good_min","trp_i1_loss_woodsman"),(assign,":trp_good_max","trp_a3_blackroot_archer"),(else_try),
+			(eq,":gfac",4),(assign,":trp_good_min","trp_i1_amroth_recruit" ),(assign,":trp_good_max","trp_c6_amroth_swan_knight"   ),(else_try),
 			(eq,":gfac",5),(assign,":trp_good_min","trp_lothlorien_scout" ),(assign,":trp_good_max","trp_galadhrim_royal_warden"      ),(else_try),
 			(eq,":gfac",6),(assign,":trp_good_min","trp_greenwood_scout"  ),(assign,":trp_good_max","trp_knight_of_rivendell"         ),(else_try),
 			(eq,":gfac",7),(assign,":trp_good_min","trp_dunedain_scout"   ),(assign,":trp_good_max","trp_dunedain_master_ranger"      ),(else_try),
@@ -1339,7 +1339,7 @@ game_menus = [
 	#("B",[],"_", []),
 	("B",[],"         Preset 1", [
 	          (assign, "$testbattle_team_b_num", 40),(assign, "$testbattle_team_b_troop", "trp_orc_of_isengard"),
-	          (assign, "$testbattle_team_a_num", 10),(assign, "$testbattle_team_a_troop", "trp_gondor_swordsmen")
+	          (assign, "$testbattle_team_a_num", 10),(assign, "$testbattle_team_a_troop", "trp_i4_gon_swordsman")
 	]),
 	#("B",[],"_", []),
 	("F",[],"          START FIGHT!",
@@ -1461,7 +1461,7 @@ game_menus = [
  ),
 ( "start_good_dwarf",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your Lineage:", "none",[(assign, "$last_menu", "mnu_start_good_dwarf")],[
-  ("start_er", [],"a dweller of EREBOR"                  ,[(call_script,"script_start_as_one","trp_i1_dwarven_apprentice"),   (jump_to_menu,"mnu_start_as_one"),]),
+  ("start_er", [],"a dweller of EREBOR"                  ,[(call_script,"script_start_as_one","trp_i1_dwarf_apprentice"),   (jump_to_menu,"mnu_start_as_one"),]),
   ("start_ih", [],"a miner of the IRON HILLS"            ,[(call_script,"script_start_as_one","trp_i2_iron_hills_miner"),     (jump_to_menu,"mnu_start_as_one"),]),
   ("spacer" , [],"_",[]),  
   ("go_back", [],"Go back",[
@@ -1471,12 +1471,12 @@ game_menus = [
 ( "start_gondor",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where are you from, in Gondor?", "none",[(assign, "$last_menu", "mnu_start_gondor")],[
  ("start_mt",[],"MINAS TIRITH, the Capital"                    ,[(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_regular),(jump_to_menu,"mnu_start_gondor_mt"),]),
- ("start_ls",[],"LOSSARNACH, the Fiefdom of the Axemen"        ,[(call_script,"script_start_as_one","trp_woodsman_of_lossarnach"),  (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_lossarnach),  	   (jump_to_menu,"mnu_choose_gender"),]),
- ("start_la",[],"LAMEDON, the Fiefdom of the Mountain Clansmen",[(call_script,"script_start_as_one","trp_clansman_of_lamedon"),     (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_ethring),   	   (jump_to_menu,"mnu_choose_gender"),]),
- ("start_pg",[],"PINNATH GELIN, the Fiefdom of Green Hills"    ,[(call_script,"script_start_as_one","trp_pinnath_gelin_plainsman"), (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_pinnath_gelin),   (jump_to_menu,"mnu_choose_gender"),]),
- ("start_do",[],"DOL AMROTH, the Fiefdom of Swan Knights"      ,[(call_script,"script_start_as_one","trp_dol_amroth_youth"),        (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_dol_amroth),	   (jump_to_menu,"mnu_choose_gender"),]),
- ("start_pe",[],"PELARGIR, the Coastal Fiefdom"                ,[(call_script,"script_start_as_one","trp_pelargir_watchman"), 		(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_pelargir),        (jump_to_menu,"mnu_choose_gender"),]),
- ("start_bl",[],"BLACKROOT VALE, the Fiefdom of Archers"       ,[(call_script,"script_start_as_one","trp_blackroot_vale_archer"), 	(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_blackroot),	   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_ls",[],"LOSSARNACH, the Fiefdom of the Axemen"        ,[(call_script,"script_start_as_one","trp_i1_loss_woodsman"),  (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_lossarnach),  	   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_la",[],"LAMEDON, the Fiefdom of the Mountain Clansmen",[(call_script,"script_start_as_one","trp_i1_lam_clansman"),     (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_ethring),   	   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_pg",[],"PINNATH GELIN, the Fiefdom of Green Hills"    ,[(call_script,"script_start_as_one","trp_i1_pinnath_plainsman"), (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_pinnath_gelin),   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_do",[],"DOL AMROTH, the Fiefdom of Swan Knights"      ,[(call_script,"script_start_as_one","trp_i1_amroth_recruit"),        (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_dol_amroth),	   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_pe",[],"PELARGIR, the Coastal Fiefdom"                ,[(call_script,"script_start_as_one","trp_i1_pel_watchman"), 		(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_pelargir),        (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_bl",[],"BLACKROOT VALE, the Fiefdom of Archers"       ,[(call_script,"script_start_as_one","trp_a1_blackroot_hunter"), 	(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_blackroot),	   (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[
  	#(jump_to_menu, "mnu_start_good")
@@ -1525,8 +1525,8 @@ game_menus = [
  ),
 ( "start_gondor_mt",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your Lineage", "none",[(assign, "$last_menu", "mnu_start_gondor_mt")],[
- ("start_1_com",[],"Commoner" ,[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_choose_gender"),]),
- ("start_2_hib",[],"High-born",[(call_script,"script_start_as_one","trp_gondor_noblemen"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_1_com",[],"Commoner" ,[(call_script,"script_start_as_one","trp_i1_gon_levy"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_2_hib",[],"High-born",[(call_script,"script_start_as_one","trp_c1_gon_nobleman"),(jump_to_menu,"mnu_choose_gender"),]),
  ("spacer" ,[],"_"        ,[]),
  ("go_back",[],"Go back"  ,[(jump_to_menu, "mnu_start_gondor")]),    ]
  ),
@@ -2124,7 +2124,7 @@ game_menus = [
 
      	("camp_cctest_rout_ally",[],"Add troops to routed allies",
 	[
-		(store_random_in_range, ":troop_no", "trp_gondor_noblemen", "trp_steward_guard"),
+		(store_random_in_range, ":troop_no", "trp_c1_gon_nobleman", "trp_steward_guard"),
 		(party_add_members, "p_routed_allies", ":troop_no", 1),
     		(party_get_num_companions, reg1, "p_routed_allies"),
 		(display_message, "@Ally party size: {reg1}", color_good_news),
@@ -8996,7 +8996,7 @@ game_menus = [
            (else_try),
              (assign,reg(0),"trp_ac3_skirmisher_of_rohan"),
              (assign,reg(1),"trp_ac4_veteran_skirmisher_of_rohan"),
-             (assign,reg(2),"trp_gondor_veteran_swordsmen"),
+             (assign,reg(2),"trp_i5_gon_vet_swordsman"),
              (assign,reg(3),"trp_ac4_veteran_skirmisher_of_rohan"),
            (try_end),
            (assign,reg(4),-1),
@@ -9999,8 +9999,8 @@ game_menus = [
 		      (else_try),
 		      	  (this_or_next|eq,"$players_kingdom", "fac_mordor"),
 		      	  (				eq,"$players_kingdom", "fac_umbar"),
-			      (set_visitors,2,"trp_gondor_militiamen", 3),
-			      (set_visitors,4,"trp_gondor_militiamen", 3),
+			      (set_visitors,2,"trp_i2_gon_watchman", 3),
+			      (set_visitors,4,"trp_i2_gon_watchman", 3),
 			  (else_try),
 			  	  (				eq,"$players_kingdom", "fac_guldur"),
   	  			  (set_visitors,2,"trp_i2_beorning_warrior", 3),
@@ -10012,8 +10012,8 @@ game_menus = [
 			 (else_try),
 			  	  (this_or_next|eq,"$players_kingdom", "fac_moria"),
   			  	  (				eq,"$players_kingdom", "fac_gundabad"),
-  	  			  (set_visitors,2,"trp_i2_dwarven_warrior", 2),
-			      (set_visitors,4,"trp_i1_dwarven_apprentice", 3),
+  	  			  (set_visitors,2,"trp_i2_dwarf_warrior", 2),
+			      (set_visitors,4,"trp_i1_dwarf_apprentice", 3),
 		      (try_end),
 		      (set_visitors,6,"trp_start_quest_caravaneer", 1),
 		      (set_visitors,16,":tier_1_troop", 8),
@@ -10110,9 +10110,9 @@ game_menus = [
 		      (set_visitors,2,":tier_4_troop", 8),
 		       (set_visitors,4,":tier_2_troop", 8),
 		      (set_visitor,6,"trp_start_quest_mordor_scout"),
-		      (set_visitors,22,"trp_ranger_of_ithilien", 2),
-		      (set_visitors,23,"trp_ranger_of_ithilien", 3),
-		      (set_visitors,24,"trp_veteran_ranger_of_ithilien", 1),
+		      (set_visitors,22,"trp_a4_ithilien_ranger", 2),
+		      (set_visitors,23,"trp_a4_ithilien_ranger", 3),
+		      (set_visitors,24,"trp_a5_ithilien_vet_ranger", 1),
 		      (jump_to_scene,"scn_quick_battle_ambush"),
 		      (set_battle_advantage, 0),
 		      (assign, "$g_battle_result", 0),
@@ -10728,10 +10728,10 @@ game_menus = [
 		# Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
 	       	# (try_begin),
 	   			# (eq, ":object_fac", "fac_gondor"), #If Gondor, Allies are Gondor
-	   			# (assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
-	   			# (troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
-	   			# (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
-	   			# (troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_melee_tier_1", "trp_i2_pel_infantry"),
+	   			# (troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_i2_pel_infantry",0), #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_archer_tier_1", "trp_a2_pel_marine"),
+	   			# (troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_a2_pel_marine",0),   #Commented out - If we want to upgrade allies too.
 
 	   			# (assign, ":enemy_melee_tier_1", "trp_i3_corsair_swordsman"),
 	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_i3_corsair_swordsman",0),
@@ -10783,9 +10783,9 @@ game_menus = [
 			   (try_begin),
 					(lt, ":level", 25),
 						#ally infantry, entries 2-7
-						(set_visitors, 2, "trp_pelargir_watchman", 3),(set_visitors, 3, "trp_pelargir_infantry", 2),(set_visitors, 4, "trp_pelargir_vet_infantry", 2),(set_visitors, 5, "trp_footmen_of_gondor", 2),(set_visitors, 6, "trp_footmen_of_gondor", 2),(set_visitors, 7, "trp_pelargir_infantry", 2),
+						(set_visitors, 2, "trp_i1_pel_watchman", 3),(set_visitors, 3, "trp_i2_pel_infantry", 2),(set_visitors, 4, "trp_i3_pel_vet_infantry", 2),(set_visitors, 5, "trp_i3_gon_footman", 2),(set_visitors, 6, "trp_i3_gon_footman", 2),(set_visitors, 7, "trp_i2_pel_infantry", 2),
 						#ally archers, entries 8-10
-						(set_visitors, 8, "trp_pelargir_watchman", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
+						(set_visitors, 8, "trp_i1_pel_watchman", 3),(set_visitors, 9, "trp_a3_gon_bowman", 3),(set_visitors, 10, "trp_a2_pel_marine", 3),
 						#enemy infantry, entries 12-17
 						(set_visitors, 12, "trp_i3_corsair_swordsman", 3),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 3),(set_visitors, 15, "trp_i3_corsair_swordsman", 3),(set_visitors, 16, "trp_i2_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 3),
 						#enemy archers, entries 18-20
@@ -10793,9 +10793,9 @@ game_menus = [
 				(else_try),
 					(ge, ":level", 25),
 						#ally infantry, entries 2-7
-						(set_visitors, 2, "trp_pelargir_watchman", 3),(set_visitors, 3, "trp_pelargir_infantry", 2),(set_visitors, 4, "trp_pelargir_vet_infantry", 2),(set_visitors, 5, "trp_footmen_of_gondor", 2),(set_visitors, 6, "trp_footmen_of_gondor", 2),(set_visitors, 7, "trp_pelargir_infantry", 2),
+						(set_visitors, 2, "trp_i1_pel_watchman", 3),(set_visitors, 3, "trp_i2_pel_infantry", 2),(set_visitors, 4, "trp_i3_pel_vet_infantry", 2),(set_visitors, 5, "trp_i3_gon_footman", 2),(set_visitors, 6, "trp_i3_gon_footman", 2),(set_visitors, 7, "trp_i2_pel_infantry", 2),
 						#ally archers, entries 8-10
-						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
+						(set_visitors, 8, "trp_a2_pel_marine", 3),(set_visitors, 9, "trp_a3_gon_bowman", 3),(set_visitors, 10, "trp_a2_pel_marine", 3),
 						#enemy infantry, entries 12-17
 						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_harad_swordsman", 3),(set_visitors, 14, "trp_harad_infantry", 5),(set_visitors, 15, "trp_i4_corsair_veteran_swordsman", 3),(set_visitors, 16, "trp_i3_corsair_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
 						#enemy archers, entries 18-20
@@ -10877,10 +10877,10 @@ game_menus = [
 	   			# (assign, ":allies_archer_tier_1", "trp_a3_corsair_marksman"),
 	   			# #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_a3_corsair_marksman",0),   #Commented out - If we want to upgrade allies too.
 
-	   			# (assign, ":enemy_melee_tier_1", "trp_pelargir_infantry"),
-	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_pelargir_infantry",0),
-	   			# (assign, ":enemy_archer_tier_1", "trp_pelargir_marine"),
-	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_pelargir_marine",0), 
+	   			# (assign, ":enemy_melee_tier_1", "trp_i2_pel_infantry"),
+	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_i2_pel_infantry",0),
+	   			# (assign, ":enemy_archer_tier_1", "trp_a2_pel_marine"),
+	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_a2_pel_marine",0), 
    			# (else_try), #Rhun
 	   			# (eq, ":object_fac", "fac_dale"), #If Rhun, Allies are Rhun
 	   			# (assign, ":allies_melee_tier_1", "trp_i2_rhun_tribal_warrior"),
@@ -10928,9 +10928,9 @@ game_menus = [
 			   (try_begin),
 					(lt, ":level", 25),
 						#enemy infantry, entries 2-7
-						(set_visitors, 2, "trp_pelargir_watchman", 3),(set_visitors, 3, "trp_pelargir_infantry", 3),(set_visitors, 4, "trp_pelargir_vet_infantry", 3),(set_visitors, 5, "trp_footmen_of_gondor", 3),(set_visitors, 6, "trp_footmen_of_gondor", 3),(set_visitors, 7, "trp_pelargir_infantry", 3),
+						(set_visitors, 2, "trp_i1_pel_watchman", 3),(set_visitors, 3, "trp_i2_pel_infantry", 3),(set_visitors, 4, "trp_i3_pel_vet_infantry", 3),(set_visitors, 5, "trp_i3_gon_footman", 3),(set_visitors, 6, "trp_i3_gon_footman", 3),(set_visitors, 7, "trp_i2_pel_infantry", 3),
 						#enemy archers, entries 8-10
-						(set_visitors, 8, "trp_pelargir_watchman", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 2),(set_visitors, 10, "trp_pelargir_marine", 2),
+						(set_visitors, 8, "trp_i1_pel_watchman", 3),(set_visitors, 9, "trp_a3_gon_bowman", 2),(set_visitors, 10, "trp_a2_pel_marine", 2),
 						#ally infantry, entries 12-17
 						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
 						#ally archers, entries 18-20
@@ -10938,9 +10938,9 @@ game_menus = [
 				(else_try),
 					(ge, ":level", 25),
 						#enemy infantry, entries 2-7
-						(set_visitors, 2, "trp_pelargir_infantry", 3),(set_visitors, 3, "trp_pelargir_vet_infantry", 3),(set_visitors, 4, "trp_pelargir_vet_infantry", 3),(set_visitors, 5, "trp_gondor_swordsmen", 3),(set_visitors, 6, "trp_gondor_veteran_swordsmen", 3),(set_visitors, 7, "trp_pelargir_infantry", 3),
+						(set_visitors, 2, "trp_i2_pel_infantry", 3),(set_visitors, 3, "trp_i3_pel_vet_infantry", 3),(set_visitors, 4, "trp_i3_pel_vet_infantry", 3),(set_visitors, 5, "trp_i4_gon_swordsman", 3),(set_visitors, 6, "trp_i5_gon_vet_swordsman", 3),(set_visitors, 7, "trp_i2_pel_infantry", 3),
 						#enemy archers, entries 8-10
-						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_archer_of_gondor", 2),(set_visitors, 10, "trp_pelargir_vet_marine", 2),
+						(set_visitors, 8, "trp_a2_pel_marine", 3),(set_visitors, 9, "trp_a4_gon_archer", 2),(set_visitors, 10, "trp_a3_pel_vet_marine", 2),
 						#ally infantry, entries 12-17
 						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
 						#ally archers, entries 18-20

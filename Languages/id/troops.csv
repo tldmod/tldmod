@@ -142,168 +142,168 @@ trp_tutorial_swordsman|Tentara Pedang
 ; trp_c5_rhun_heavy_noble_cavalry_pl|Rhun Heavy Noble Cavalry
 ; trp_c6_rhun_dorwinion_noble|Dorwinion Noble of Rhun
 ; trp_c6_rhun_dorwinion_noble_pl|Dorwinion Nobles of Rhun
-; trp_i1_dwarven_apprentice|Apprentice-dwarf
-; trp_i1_dwarven_apprentice_pl|Apprentice-dwarves
-; trp_i2_dwarven_warrior|Warrior-dwarf
-; trp_i2_dwarven_warrior_pl|Warrior-dwarves
-; trp_i3_dwarven_hardened_warrior|Hardened Warrior-dwarf
-; trp_i3_dwarven_hardened_warrior_pl|Hardened Warrior-dwarves
-; trp_i4_dwarven_spearman|Spear-dwarf
-; trp_i4_dwarven_spearman_pl|Spear-dwarves
-; trp_i5_dwarven_pikeman|Pike-dwarf
-; trp_i5_dwarven_pikeman_pl|Pike-dwarves
-; trp_i6_dwarven_longpikeman|Longpike Dwarf
-; trp_i6_dwarven_longpikeman_pl|Longpike Dwarves
-; trp_i4_dwarven_axeman|Axedwarf
-; trp_i4_dwarven_axeman_pl|Axedwarves
-; trp_i5_dwarven_expert_axeman|Expert Axedwarf
-; trp_i5_dwarven_expert_axeman_pl|Expert Axedwarves
-; trp_i6_longbeard_axeman|Longbeard Axedwarf
-; trp_i6_longbeard_axeman_pl|Longbeard Axedwarves
-; trp_a2_dwarven_lookout|Lookout-dwarf
-; trp_a2_dwarven_lookout_pl|Lookout-dwarves
-; trp_a3_dwarven_scout|Scout-dwarf
-; trp_a3_dwarven_scout_pl|Scout-dwarves
-; trp_a4_dwarven_bowman|Bow-dwarf
-; trp_a4_dwarven_bowman_pl|Bow-dwarves
-; trp_i6_dwarven_longaxeman|Longaxe Dwarf
-; trp_i6_dwarven_longaxeman_pl|Longaxe Dwarves
+; trp_i1_dwarf_apprentice|Apprentice-dwarf
+; trp_i1_dwarf_apprentice_pl|Apprentice-dwarves
+; trp_i2_dwarf_warrior|Warrior-dwarf
+; trp_i2_dwarf_warrior_pl|Warrior-dwarves
+; trp_i3_dwarf_hardened_warrior|Hardened Warrior-dwarf
+; trp_i3_dwarf_hardened_warrior_pl|Hardened Warrior-dwarves
+; trp_i4_dwarf_spearman|Spear-dwarf
+; trp_i4_dwarf_spearman_pl|Spear-dwarves
+; trp_i5_dwarf_pikeman|Pike-dwarf
+; trp_i5_dwarf_pikeman_pl|Pike-dwarves
+; trp_i6_dwarf_longpikeman|Longpike Dwarf
+; trp_i6_dwarf_longpikeman_pl|Longpike Dwarves
+; trp_i4_dwarf_axeman|Axedwarf
+; trp_i4_dwarf_axeman_pl|Axedwarves
+; trp_i5_dwarf_expert_axeman|Expert Axedwarf
+; trp_i5_dwarf_expert_axeman_pl|Expert Axedwarves
+; trp_i6_dwarf_longbeard_axeman|Longbeard Axedwarf
+; trp_i6_dwarf_longbeard_axeman_pl|Longbeard Axedwarves
+; trp_a2_dwarf_lookout|Lookout-dwarf
+; trp_a2_dwarf_lookout_pl|Lookout-dwarves
+; trp_a3_dwarf_scout|Scout-dwarf
+; trp_a3_dwarf_scout_pl|Scout-dwarves
+; trp_a4_dwarf_bowman|Bow-dwarf
+; trp_a4_dwarf_bowman_pl|Bow-dwarves
+; trp_i6_dwarf_longaxeman|Longaxe Dwarf
+; trp_i6_dwarf_longaxeman_pl|Longaxe Dwarves
 ; trp_i3_iron_hills_warrior|Iron Hills Warrior
 ; trp_i3_iron_hills_warrior_pl|Iron Hills Warriors
 ; trp_i2_iron_hills_miner|Iron Hills Miner
 ; trp_i2_iron_hills_miner_pl|Iron Hills Miners
 ; trp_i4_iron_hills_infantry|Iron Hills Infantry
 ; trp_i4_iron_hills_infantry_pl|Iron Hills Infantry
-; trp_i5_iron_hills_battle_infantry|Iron Hills Battle-dwarf
-; trp_i5_iron_hills_battle_infantry_pl|Iron Hills Battle-dwarves
-; trp_i6_grors_guard|Gror's Guard
-; trp_i6_grors_guard_pl|Gror's Guards
-; trp_gondor_commoner|Gondor Levy
-; trp_gondor_commoner_pl|Gondor Levies
-; trp_gondor_militiamen|Gondor Watchman
-; trp_gondor_militiamen_pl|Gondor Watchmen
-; trp_footmen_of_gondor|Footman of Gondor
-; trp_footmen_of_gondor_pl|Footmen of Gondor
-; trp_gondor_spearmen|Spearman of Gondor
-; trp_gondor_spearmen_pl|Spearmen of Gondor
-; trp_gondor_veteran_spearmen|Veteran Spearman of Gondor
-; trp_gondor_veteran_spearmen_pl|Veteran Spearmen of Gondor
-; trp_guard_of_the_fountain_court|Guard of the Fountain Court
-; trp_guard_of_the_fountain_court_pl|Guards of the Fountain Court
-; trp_gondor_swordsmen|Swordsman of Gondor
-; trp_gondor_swordsmen_pl|Swordsmen of Gondor
-; trp_gondor_veteran_swordsmen|Veteran Swordsman of Gondor
-; trp_gondor_veteran_swordsmen_pl|Veteran Swordsmen of Gondor
-; trp_swordsmen_of_the_tower_guard|Swordsman of the Tower Guard
-; trp_swordsmen_of_the_tower_guard_pl|Swordsmen of the Tower Guard
-; trp_gondor_noblemen|Gondor Nobleman
-; trp_gondor_noblemen_pl|Gondor Noblemen
-; trp_squire_of_gondor|Squire of Gondor
-; trp_squire_of_gondor_pl|Squires of Gondor
-; trp_veteran_squire_of_gondor|Veteran Squire of Gondor
-; trp_veteran_squire_of_gondor_pl|Veteran Squires of Gondor
-; trp_knight_of_gondor|Knight of Gondor
-; trp_knight_of_gondor_pl|Knights of Gondor
-; trp_veteran_knight_of_gondor|Veteran Knight of Gondor
-; trp_veteran_knight_of_gondor_pl|Veteran Knights of Gondor
-; trp_knight_of_the_citadel|Knight of the Citadel
-; trp_knight_of_the_citadel_pl|Knights of the Citadel
-; trp_bowmen_of_gondor|Bowman of Gondor
-; trp_bowmen_of_gondor_pl|Bowmen of Gondor
-; trp_archer_of_gondor|Archer of Gondor
-; trp_archer_of_gondor_pl|Archers of Gondor
-; trp_veteran_archer_of_gondor|Veteran Archer of Gondor
-; trp_veteran_archer_of_gondor_pl|Veteran Archers of Gondor
-; trp_archer_of_the_tower_guard|Archer of the Tower Guard
-; trp_archer_of_the_tower_guard_pl|Archers of the Tower Guard
+; trp_i5_iron_hills_battle_dwarf|Iron Hills Battle-dwarf
+; trp_i5_iron_hills_battle_dwarf_pl|Iron Hills Battle-dwarves
+; trp_i6_iron_hills_grors_guard|Gror's Guard
+; trp_i6_iron_hills_grors_guard_pl|Gror's Guards
+; trp_i1_gon_levy|Gondor Levy
+; trp_i1_gon_levy_pl|Gondor Levies
+; trp_i2_gon_watchman|Gondor Watchman
+; trp_i2_gon_watchman_pl|Gondor Watchmen
+; trp_i3_gon_footman|Footman of Gondor
+; trp_i3_gon_footman_pl|Footmen of Gondor
+; trp_i4_gon_spearman|Spearman of Gondor
+; trp_i4_gon_spearman_pl|Spearmen of Gondor
+; trp_i5_gon_vet_spearman|Veteran Spearman of Gondor
+; trp_i5_gon_vet_spearman_pl|Veteran Spearmen of Gondor
+; trp_i6_gon_tower_spearman|Guard of the Fountain Court
+; trp_i6_gon_tower_spearman_pl|Guards of the Fountain Court
+; trp_i4_gon_swordsman|Swordsman of Gondor
+; trp_i4_gon_swordsman_pl|Swordsmen of Gondor
+; trp_i5_gon_vet_swordsman|Veteran Swordsman of Gondor
+; trp_i5_gon_vet_swordsman_pl|Veteran Swordsmen of Gondor
+; trp_i6_gon_tower_swordsman|Swordsman of the Tower Guard
+; trp_i6_gon_tower_swordsman_pl|Swordsmen of the Tower Guard
+; trp_c1_gon_nobleman|Gondor Nobleman
+; trp_c1_gon_nobleman_pl|Gondor Noblemen
+; trp_c2_gon_squire|Squire of Gondor
+; trp_c2_gon_squire_pl|Squires of Gondor
+; trp_c3_gon_vet_squire|Veteran Squire of Gondor
+; trp_c3_gon_vet_squire_pl|Veteran Squires of Gondor
+; trp_c4_gon_knight|Knight of Gondor
+; trp_c4_gon_knight_pl|Knights of Gondor
+; trp_c5_gon_vet_knight|Veteran Knight of Gondor
+; trp_c5_gon_vet_knight_pl|Veteran Knights of Gondor
+; trp_c6_gon_tower_knight|Knight of the Citadel
+; trp_c6_gon_tower_knight_pl|Knights of the Citadel
+; trp_a3_gon_bowman|Bowman of Gondor
+; trp_a3_gon_bowman_pl|Bowmen of Gondor
+; trp_a4_gon_archer|Archer of Gondor
+; trp_a4_gon_archer_pl|Archers of Gondor
+; trp_a5_gon_vet_archer|Veteran Archer of Gondor
+; trp_a5_gon_vet_archer_pl|Veteran Archers of Gondor
+; trp_a6_gon_tower_archer|Archer of the Tower Guard
+; trp_a6_gon_tower_archer_pl|Archers of the Tower Guard
 ; trp_steward_guard|Steward's Guard
 ; trp_steward_guard_pl|Steward's Guards
-; trp_ranger_of_ithilien|Ranger of Ithilien
-; trp_ranger_of_ithilien_pl|Rangers of Ithilien
-; trp_veteran_ranger_of_ithilien|Veteran Ranger of Ithilien
-; trp_veteran_ranger_of_ithilien_pl|Veteran Rangers of Ithilien
-; trp_master_ranger_of_ithilien|Master Ranger of Ithilien
-; trp_master_ranger_of_ithilien_pl|Master Rangers of Ithilien
-; trp_ithilien_leader|Captain of Ithilien Rangers
-; trp_ithilien_leader_pl|Captains of Ithilien Rangers
-; trp_woodsman_of_lossarnach|Woodsman of Lossarnach
-; trp_woodsman_of_lossarnach_pl|Woodsmen of Lossarnach
-; trp_axeman_of_lossarnach|Axeman of Lossarnach
-; trp_axeman_of_lossarnach_pl|Axemen of Lossarnach
-; trp_vet_axeman_of_lossarnach|Lossarnach Veteran Axeman
-; trp_vet_axeman_of_lossarnach_pl|Lossarnach Veteran Axemen
-; trp_heavy_lossarnach_axeman|Heavy Lossarnach Axeman
-; trp_heavy_lossarnach_axeman_pl|Heavy Lossarnach Axemen
-; trp_axemaster_of_lossarnach|Axemaster of Lossarnach
-; trp_axemaster_of_lossarnach_pl|Axemasters of Lossarnach
-; trp_lossarnach_leader|Captain of Lossarnach
-; trp_lossarnach_leader_pl|Captains of Lossarnach
-; trp_pelargir_watchman|Pelargir Watchman
-; trp_pelargir_watchman_pl|Pelargir Watchmen
-; trp_pelargir_marine|Pelargir Marine
-; trp_pelargir_marine_pl|Pelargir Marines
-; trp_pelargir_vet_marine|Pelargir Veteran Marine
-; trp_pelargir_vet_marine_pl|Pelargir Veteran Marine
-; trp_pelargir_infantry|Pelargir Infantryman
-; trp_pelargir_infantry_pl|Pelargir Infantrymen
-; trp_pelargir_vet_infantry|Pelargir Veteran Infantryman
-; trp_pelargir_vet_infantry_pl|Pelargir Veteran Infantrymen
-; trp_pelargir_leader|Captain of Pelargir
-; trp_pelargir_leader_pl|Captains of Pelargir
-; trp_pelargir_marine_leader|Captain of Pelargir Marines
-; trp_pelargir_marine_leader_pl|Captains of Pelargir Marine
-; trp_clansman_of_lamedon|Clansman of Lamedon
-; trp_clansman_of_lamedon_pl|Clansmen of Lamedon
-; trp_footman_of_lamedon|Footman of Lamedon
-; trp_footman_of_lamedon_pl|Footmen of Lamedon
-; trp_veteran_of_lamedon|Veteran of Lamedon
-; trp_veteran_of_lamedon_pl|Veterans of Lamedon
-; trp_warrior_of_lamedon|Warrior of Lamedon
-; trp_warrior_of_lamedon_pl|Warriors of Lamedon
-; trp_champion_of_lamedon|Champion of Lamedon
-; trp_champion_of_lamedon_pl|Champions of Lamedon
-; trp_knight_of_lamedon|Knight of Lamedon
-; trp_knight_of_lamedon_pl|Knights of Lamedon
-; trp_lamedon_leader|Captain of Lamedon
-; trp_lamedon_leader_pl|Captains of Lamedon
-; trp_pinnath_gelin_plainsman|Plainsman of Pinnath Gelin
-; trp_pinnath_gelin_plainsman_pl|Plainsmen of Pinnath Gelin
-; trp_pinnath_gelin_spearman|Rider of Pinnath Gelin
-; trp_pinnath_gelin_spearman_pl|Riders of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin|Knight of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin_pl|Knights of Pinnath Gelin
-; trp_pinnath_gelin_bowman|Bowman of Pinnath Gelin
-; trp_pinnath_gelin_bowman_pl|Bowmen of Pinnath Gelin
-; trp_pinnath_gelin_archer|Archer of Pinnath Gelin
-; trp_pinnath_gelin_archer_pl|Archers of Pinnath Gelin
-; trp_pinnath_leader|Captain of Pinnath Gelin
-; trp_pinnath_leader_pl|Captains of Pinnath Gelin
-; trp_blackroot_vale_archer|Hunter of Blackroot Vale
-; trp_blackroot_vale_archer_pl|Hunter of Blackroot Vale
-; trp_veteran_blackroot_vale_archer|Bowman of Blackroot Vale
-; trp_veteran_blackroot_vale_archer_pl|Bowmen of Blackroot Vale
-; trp_master_blackroot_vale_archer|Archer of Blackroot Vale
-; trp_master_blackroot_vale_archer_pl|Archers of Blackroot Vale
-; trp_footman_of_blackroot_vale|Footman of Blackroot Vale
-; trp_footman_of_blackroot_vale_pl|Footmen of Blackroot Vale
-; trp_spearman_of_blackroot_vale|Spearman of Blackroot Vale
-; trp_spearman_of_blackroot_vale_pl|Spearmen of Blackroot Vale
-; trp_blackroot_leader|Morthond Shadow Hunter
-; trp_blackroot_leader_pl|Morthond Shadow Hunters
-; trp_dol_amroth_youth|Dol Amroth Recruit
-; trp_dol_amroth_youth_pl|Dol Amroth Recruits
-; trp_squire_of_dol_amroth|Squire of Dol Amroth
-; trp_squire_of_dol_amroth_pl|Squires of Dol Amroth
-; trp_veteran_squire_of_dol_amroth|Veteran Squire of Dol Amroth
-; trp_veteran_squire_of_dol_amroth_pl|Veteran Squires of Dol Amroth
-; trp_knight_of_dol_amroth|Knight of Dol Amroth
-; trp_knight_of_dol_amroth_pl|Knights of Dol Amroth
-; trp_veteran_knight_of_dol_amroth|Veteran Knight of Dol Amroth
-; trp_veteran_knight_of_dol_amroth_pl|Veteran Knights of Dol Amroth
-; trp_swan_knight_of_dol_amroth|Swan Knight of Dol Amroth
-; trp_swan_knight_of_dol_amroth_pl|Swan Knights of Dol Amroth
-; trp_dol_amroth_leader|Captain of Dol Amroth
-; trp_dol_amroth_leader_pl|Captains of Dol Amroth
+; trp_a4_ithilien_ranger|Ranger of Ithilien
+; trp_a4_ithilien_ranger_pl|Rangers of Ithilien
+; trp_a5_ithilien_vet_ranger|Veteran Ranger of Ithilien
+; trp_a5_ithilien_vet_ranger_pl|Veteran Rangers of Ithilien
+; trp_a6_ithilien_master_ranger|Master Ranger of Ithilien
+; trp_a6_ithilien_master_ranger_pl|Master Rangers of Ithilien
+; trp_a6_ithilien_leader|Captain of Ithilien Rangers
+; trp_a6_ithilien_leader_pl|Captains of Ithilien Rangers
+; trp_i1_loss_woodsman|Woodsman of Lossarnach
+; trp_i1_loss_woodsman_pl|Woodsmen of Lossarnach
+; trp_i2_loss_axeman|Axeman of Lossarnach
+; trp_i2_loss_axeman_pl|Axemen of Lossarnach
+; trp_i3_loss_vet_axeman|Lossarnach Veteran Axeman
+; trp_i3_loss_vet_axeman_pl|Lossarnach Veteran Axemen
+; trp_i4_loss_heavy_axeman|Heavy Lossarnach Axeman
+; trp_i4_loss_heavy_axeman_pl|Heavy Lossarnach Axemen
+; trp_i5_loss_axemaster|Axemaster of Lossarnach
+; trp_i5_loss_axemaster_pl|Axemasters of Lossarnach
+; trp_i6_loss_leader|Captain of Lossarnach
+; trp_i6_loss_leader_pl|Captains of Lossarnach
+; trp_i1_pel_watchman|Pelargir Watchman
+; trp_i1_pel_watchman_pl|Pelargir Watchmen
+; trp_a2_pel_marine|Pelargir Marine
+; trp_a2_pel_marine_pl|Pelargir Marines
+; trp_a3_pel_vet_marine|Pelargir Veteran Marine
+; trp_a3_pel_vet_marine_pl|Pelargir Veteran Marine
+; trp_i2_pel_infantry|Pelargir Infantryman
+; trp_i2_pel_infantry_pl|Pelargir Infantrymen
+; trp_i3_pel_vet_infantry|Pelargir Veteran Infantryman
+; trp_i3_pel_vet_infantry_pl|Pelargir Veteran Infantrymen
+; trp_i6_pel_leader|Captain of Pelargir
+; trp_i6_pel_leader_pl|Captains of Pelargir
+; trp_a6_pel_marine_leader|Captain of Pelargir Marines
+; trp_a6_pel_marine_leader_pl|Captains of Pelargir Marine
+; trp_i1_lam_clansman|Clansman of Lamedon
+; trp_i1_lam_clansman_pl|Clansmen of Lamedon
+; trp_i2_lam_footman|Footman of Lamedon
+; trp_i2_lam_footman_pl|Footmen of Lamedon
+; trp_i3_lam_veteran|Veteran of Lamedon
+; trp_i3_lam_veteran_pl|Veterans of Lamedon
+; trp_i4_lam_warrior|Warrior of Lamedon
+; trp_i4_lam_warrior_pl|Warriors of Lamedon
+; trp_i5_lam_champion|Champion of Lamedon
+; trp_i5_lam_champion_pl|Champions of Lamedon
+; trp_c5_lam_knight|Knight of Lamedon
+; trp_c5_lam_knight_pl|Knights of Lamedon
+; trp_c6_lam_leader|Captain of Lamedon
+; trp_c6_lam_leader_pl|Captains of Lamedon
+; trp_i1_pinnath_plainsman|Plainsman of Pinnath Gelin
+; trp_i1_pinnath_plainsman_pl|Plainsmen of Pinnath Gelin
+; trp_c2_pinnath_rider|Rider of Pinnath Gelin
+; trp_c2_pinnath_rider_pl|Riders of Pinnath Gelin
+; trp_c3_pinnath_knight|Knight of Pinnath Gelin
+; trp_c3_pinnath_knight_pl|Knights of Pinnath Gelin
+; trp_a2_pinnath_bowman|Bowman of Pinnath Gelin
+; trp_a2_pinnath_bowman_pl|Bowmen of Pinnath Gelin
+; trp_a3_pinnath_archer|Archer of Pinnath Gelin
+; trp_a3_pinnath_archer_pl|Archers of Pinnath Gelin
+; trp_c6_pinnath_leader|Captain of Pinnath Gelin
+; trp_c6_pinnath_leader_pl|Captains of Pinnath Gelin
+; trp_a1_blackroot_hunter|Hunter of Blackroot Vale
+; trp_a1_blackroot_hunter_pl|Hunter of Blackroot Vale
+; trp_a2_blackroot_bowman|Bowman of Blackroot Vale
+; trp_a2_blackroot_bowman_pl|Bowmen of Blackroot Vale
+; trp_a3_blackroot_archer|Archer of Blackroot Vale
+; trp_a3_blackroot_archer_pl|Archers of Blackroot Vale
+; trp_i2_blackroot_footman|Footman of Blackroot Vale
+; trp_i2_blackroot_footman_pl|Footmen of Blackroot Vale
+; trp_i3_blackroot_spearman|Spearman of Blackroot Vale
+; trp_i3_blackroot_spearman_pl|Spearmen of Blackroot Vale
+; trp_a5_blackroot_shadow_hunter|Morthond Shadow Hunter
+; trp_a5_blackroot_shadow_hunter_pl|Morthond Shadow Hunters
+; trp_i1_amroth_recruit|Dol Amroth Recruit
+; trp_i1_amroth_recruit_pl|Dol Amroth Recruits
+; trp_c2_amroth_squire|Squire of Dol Amroth
+; trp_c2_amroth_squire_pl|Squires of Dol Amroth
+; trp_c3_amroth_vet_squire|Veteran Squire of Dol Amroth
+; trp_c3_amroth_vet_squire_pl|Veteran Squires of Dol Amroth
+; trp_c4_amroth_knight|Knight of Dol Amroth
+; trp_c4_amroth_knight_pl|Knights of Dol Amroth
+; trp_c5_amroth_vet_knight|Veteran Knight of Dol Amroth
+; trp_c5_amroth_vet_knight_pl|Veteran Knights of Dol Amroth
+; trp_c6_amroth_swan_knight|Swan Knight of Dol Amroth
+; trp_c6_amroth_swan_knight_pl|Swan Knights of Dol Amroth
+; trp_c6_amroth_leader|Captain of Dol Amroth
+; trp_c6_amroth_leader_pl|Captains of Dol Amroth
 ; trp_lothlorien_scout|Lothlorien Scout
 ; trp_lothlorien_scout_pl|Lothlorien Scouts
 ; trp_lothlorien_veteran_scout|Lothlorien Veteran Scout

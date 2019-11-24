@@ -142,168 +142,168 @@ trp_c5_rhun_heavy_noble_cavalry|Cavaleiro Nobre Pesado de Rhun
 trp_c5_rhun_heavy_noble_cavalry_pl|Cavalaria Pesada Nobre de Ruhn
 trp_c6_rhun_dorwinion_noble|Nobre Dorwiniano de Ruhn
 trp_c6_rhun_dorwinion_noble_pl|Nobres Dorwinianos de Ruhn
-trp_i1_dwarven_apprentice|Anão Aprendiz
-trp_i1_dwarven_apprentice_pl|Anões Aprendizes
-trp_i2_dwarven_warrior|Anão Guerreiro
-trp_i2_dwarven_warrior_pl|Anões Guerreiros
-trp_i3_dwarven_hardened_warrior|Anão Guerreiro Endurecido
-trp_i3_dwarven_hardened_warrior_pl|Anões Guerreiros Endurecidos
-trp_i4_dwarven_spearman|Anão Lanceiro
-trp_i4_dwarven_spearman_pl|Anões Lanceiros
-trp_i5_dwarven_pikeman|Anão Lanceiro de Elite
-trp_i5_dwarven_pikeman_pl|Anões Lanceiros de Elite
-trp_i6_dwarven_longpikeman|Anão Pique Longo
-trp_i6_dwarven_longpikeman_pl|Anões Pique Longo
-trp_i4_dwarven_axeman|Anão Guerreiro com Machado
-trp_i4_dwarven_axeman_pl|Anões Guerreiros com Machado
-trp_i5_dwarven_expert_axeman|Anão Guerreiro com Machado Experiente
-trp_i5_dwarven_expert_axeman_pl|Anões Guerreiros com Machado Experientes
-trp_i6_longbeard_axeman|Anão Barba Longa Guerreiro com Machado
-trp_i6_longbeard_axeman_pl|Anões Barba Longa Guerreiros com Machado
-trp_a2_dwarven_lookout|Anão Vigia
-trp_a2_dwarven_lookout_pl|Anões Vigias
-trp_a3_dwarven_scout|Anão Batedor
-trp_a3_dwarven_scout_pl|Anões Batedores
-trp_a4_dwarven_bowman|Anão Arqueiro
-trp_a4_dwarven_bowman_pl|Anões Arqueiros
-trp_i6_dwarven_longaxeman|Anão de Machado Longo
-trp_i6_dwarven_longaxeman_pl|Anões de Machado Longo
+trp_i1_dwarf_apprentice|Anão Aprendiz
+trp_i1_dwarf_apprentice_pl|Anões Aprendizes
+trp_i2_dwarf_warrior|Anão Guerreiro
+trp_i2_dwarf_warrior_pl|Anões Guerreiros
+trp_i3_dwarf_hardened_warrior|Anão Guerreiro Endurecido
+trp_i3_dwarf_hardened_warrior_pl|Anões Guerreiros Endurecidos
+trp_i4_dwarf_spearman|Anão Lanceiro
+trp_i4_dwarf_spearman_pl|Anões Lanceiros
+trp_i5_dwarf_pikeman|Anão Lanceiro de Elite
+trp_i5_dwarf_pikeman_pl|Anões Lanceiros de Elite
+trp_i6_dwarf_longpikeman|Anão Pique Longo
+trp_i6_dwarf_longpikeman_pl|Anões Pique Longo
+trp_i4_dwarf_axeman|Anão Guerreiro com Machado
+trp_i4_dwarf_axeman_pl|Anões Guerreiros com Machado
+trp_i5_dwarf_expert_axeman|Anão Guerreiro com Machado Experiente
+trp_i5_dwarf_expert_axeman_pl|Anões Guerreiros com Machado Experientes
+trp_i6_dwarf_longbeard_axeman|Anão Barba Longa Guerreiro com Machado
+trp_i6_dwarf_longbeard_axeman_pl|Anões Barba Longa Guerreiros com Machado
+trp_a2_dwarf_lookout|Anão Vigia
+trp_a2_dwarf_lookout_pl|Anões Vigias
+trp_a3_dwarf_scout|Anão Batedor
+trp_a3_dwarf_scout_pl|Anões Batedores
+trp_a4_dwarf_bowman|Anão Arqueiro
+trp_a4_dwarf_bowman_pl|Anões Arqueiros
+trp_i6_dwarf_longaxeman|Anão de Machado Longo
+trp_i6_dwarf_longaxeman_pl|Anões de Machado Longo
 trp_i3_iron_hills_warrior|Guerreiro de Colinas de Ferro
 trp_i3_iron_hills_warrior_pl|Guerreiros de Colinas de Ferro
 trp_i2_iron_hills_miner|Minerador de Colinas de Ferro
 trp_i2_iron_hills_miner_pl|Mineradores de Colinas de Ferro
 trp_i4_iron_hills_infantry|Infantaria Colinas de Ferro
 trp_i4_iron_hills_infantry_pl|Infantaria Colinas de Ferro
-trp_i5_iron_hills_battle_infantry|Anão Soldado de Infataria de Batalha de Colinas de Ferro
-trp_i5_iron_hills_battle_infantry_pl|Infantaria de Batalha de Colinas de Ferro
-trp_i6_grors_guard|Guarda de Gror
-trp_i6_grors_guard_pl|Guardas de Gror
-trp_gondor_commoner|Cidadão de Gondor
-trp_gondor_commoner_pl|Cidadãos de Gondor
-trp_gondor_militiamen|Vigia de Gondor
-trp_gondor_militiamen_pl|Vigias de Gondor
-trp_footmen_of_gondor|Soldado de Gondor
-trp_footmen_of_gondor_pl|Soldados de Gondor
-trp_gondor_spearmen|Lanceiro de Gondor
-trp_gondor_spearmen_pl|Lanceiros de Gondor
-trp_gondor_veteran_spearmen|Lanceiro Veterano de Gondor
-trp_gondor_veteran_spearmen_pl|Lanceiros Veteranos de Gondor
-trp_guard_of_the_fountain_court|Guardião da Árvore Branca
-trp_guard_of_the_fountain_court_pl|Guardas da Árvore Branca
-trp_gondor_swordsmen|Espadachim de Gondor
-trp_gondor_swordsmen_pl|Espadachins de Gondor
-trp_gondor_veteran_swordsmen|Espadachim Veterano de Gondor
-trp_gondor_veteran_swordsmen_pl|Espadachins Veteranos de Gondor
-trp_swordsmen_of_the_tower_guard|Espadachim da Torre da Guarda
-trp_swordsmen_of_the_tower_guard_pl|Espadachins da Torre da Guarda
-trp_gondor_noblemen|Nobre de Gondor
-trp_gondor_noblemen_pl|Nobres de Gondor
-trp_squire_of_gondor|Escudeiro de Gondor
-trp_squire_of_gondor_pl|Escudeiros de Gondor
-trp_veteran_squire_of_gondor|Escudeiro Veterano de Gondor
-trp_veteran_squire_of_gondor_pl|Escudeiros Veteranos de Gondor
-trp_knight_of_gondor|Cavaleiro de Gondor
-trp_knight_of_gondor_pl|Cavaleiros de Gondor
-trp_veteran_knight_of_gondor|Cavaleiro Veterano de Gondor
-trp_veteran_knight_of_gondor_pl|Cavaleiros Veteranos de Gondor
-trp_knight_of_the_citadel|Cavaleiro da Cidadela
-trp_knight_of_the_citadel_pl|Cavaleiros da Cidadela
-trp_bowmen_of_gondor|Arqueiro de Gondor
-trp_bowmen_of_gondor_pl|Arqueiros de Gondor
-trp_archer_of_gondor|Arqueiro de Elite de Gondor
-trp_archer_of_gondor_pl|Arqueiros de Elite de Gondor
-trp_veteran_archer_of_gondor|Arqueiro de Elite Veterano de Gondor
-trp_veteran_archer_of_gondor_pl|Arqueiros de Elite Veteranos de Gondor
-trp_archer_of_the_tower_guard|Arqueiro da Torre da Guarda
-trp_archer_of_the_tower_guard_pl|Arqueiros da Torre da Guarda
+trp_i5_iron_hills_battle_dwarf|Anão Soldado de Infataria de Batalha de Colinas de Ferro
+trp_i5_iron_hills_battle_dwarf_pl|Infantaria de Batalha de Colinas de Ferro
+trp_i6_iron_hills_grors_guard|Guarda de Gror
+trp_i6_iron_hills_grors_guard_pl|Guardas de Gror
+trp_i1_gon_levy|Cidadão de Gondor
+trp_i1_gon_levy_pl|Cidadãos de Gondor
+trp_i2_gon_watchman|Vigia de Gondor
+trp_i2_gon_watchman_pl|Vigias de Gondor
+trp_i3_gon_footman|Soldado de Gondor
+trp_i3_gon_footman_pl|Soldados de Gondor
+trp_i4_gon_spearman|Lanceiro de Gondor
+trp_i4_gon_spearman_pl|Lanceiros de Gondor
+trp_i5_gon_vet_spearman|Lanceiro Veterano de Gondor
+trp_i5_gon_vet_spearman_pl|Lanceiros Veteranos de Gondor
+trp_i6_gon_tower_spearman|Guardião da Árvore Branca
+trp_i6_gon_tower_spearman_pl|Guardas da Árvore Branca
+trp_i4_gon_swordsman|Espadachim de Gondor
+trp_i4_gon_swordsman_pl|Espadachins de Gondor
+trp_i5_gon_vet_swordsman|Espadachim Veterano de Gondor
+trp_i5_gon_vet_swordsman_pl|Espadachins Veteranos de Gondor
+trp_i6_gon_tower_swordsman|Espadachim da Torre da Guarda
+trp_i6_gon_tower_swordsman_pl|Espadachins da Torre da Guarda
+trp_c1_gon_nobleman|Nobre de Gondor
+trp_c1_gon_nobleman_pl|Nobres de Gondor
+trp_c2_gon_squire|Escudeiro de Gondor
+trp_c2_gon_squire_pl|Escudeiros de Gondor
+trp_c3_gon_vet_squire|Escudeiro Veterano de Gondor
+trp_c3_gon_vet_squire_pl|Escudeiros Veteranos de Gondor
+trp_c4_gon_knight|Cavaleiro de Gondor
+trp_c4_gon_knight_pl|Cavaleiros de Gondor
+trp_c5_gon_vet_knight|Cavaleiro Veterano de Gondor
+trp_c5_gon_vet_knight_pl|Cavaleiros Veteranos de Gondor
+trp_c6_gon_tower_knight|Cavaleiro da Cidadela
+trp_c6_gon_tower_knight_pl|Cavaleiros da Cidadela
+trp_a3_gon_bowman|Arqueiro de Gondor
+trp_a3_gon_bowman_pl|Arqueiros de Gondor
+trp_a4_gon_archer|Arqueiro de Elite de Gondor
+trp_a4_gon_archer_pl|Arqueiros de Elite de Gondor
+trp_a5_gon_vet_archer|Arqueiro de Elite Veterano de Gondor
+trp_a5_gon_vet_archer_pl|Arqueiros de Elite Veteranos de Gondor
+trp_a6_gon_tower_archer|Arqueiro da Torre da Guarda
+trp_a6_gon_tower_archer_pl|Arqueiros da Torre da Guarda
 trp_steward_guard|Guarda do Regente
 trp_steward_guard_pl|Guardas do Regente
-trp_ranger_of_ithilien|Ranger de Ithilien
-trp_ranger_of_ithilien_pl|Rangers de Ithilien
-trp_veteran_ranger_of_ithilien|Ranger Veterano de Ithilien
-trp_veteran_ranger_of_ithilien_pl|Rangers Veteranos de Ithilien
-trp_master_ranger_of_ithilien|Ranger Mestre de Ithilien
-trp_master_ranger_of_ithilien_pl|Rangers Mestres de Ithilien
-trp_ithilien_leader|Capitão dos Rangers de Ithilien
-trp_ithilien_leader_pl|Capitães dos Rangers de Ithilien
-trp_woodsman_of_lossarnach|Camponês de Lossarnach
-trp_woodsman_of_lossarnach_pl|Camponeses de Lossarnach
-trp_axeman_of_lossarnach|Bárbaro de Lossarnach
-trp_axeman_of_lossarnach_pl|Bárbaros de Lossarnach
-trp_vet_axeman_of_lossarnach|Bárbaro Veterano de Lossarnach
-trp_vet_axeman_of_lossarnach_pl|Bárbaros Veterano Lossarnach
-trp_heavy_lossarnach_axeman|Bárbaro Pesado de Lossarnach
-trp_heavy_lossarnach_axeman_pl|Bárbaros Pesados de Lossarnach
-trp_axemaster_of_lossarnach|Bárbaro Mestre de Lossarnach
-trp_axemaster_of_lossarnach_pl|Bárbaros Mestres de Lossarnach
-trp_lossarnach_leader|Capitão de Lossarnach
-trp_lossarnach_leader_pl|Capitães de Lossarnach
-trp_pelargir_watchman|Vigia de Pelargir
-trp_pelargir_watchman_pl|Vigias de Pelargir
-trp_pelargir_marine|Soldado de Pelargir
-trp_pelargir_marine_pl|Soldados de Pelargir
-trp_pelargir_vet_marine|Soldado Veterano de Pelargir
-trp_pelargir_vet_marine_pl|Marinheiros Pelargir Veteranos
-trp_pelargir_infantry|Soldado de Infantaria de Pelargir
-trp_pelargir_infantry_pl|Infantaria de Pelargir
-trp_pelargir_vet_infantry|Soldado de Infantaria Veterano de Pelargir
-trp_pelargir_vet_infantry_pl|Infantaria Veterana de Pelargir
-trp_pelargir_leader|Capitão de Pelargir
-trp_pelargir_leader_pl|Capitães de Pelargir
-trp_pelargir_marine_leader|Capitão de Soldados de Pelargir
-trp_pelargir_marine_leader_pl|Capitães de Soldados de Pelargir
-trp_clansman_of_lamedon|Tribal de Lamedon
-trp_clansman_of_lamedon_pl|Tribais de Lamedon
-trp_footman_of_lamedon|Soldado de Lamedon
-trp_footman_of_lamedon_pl|Soldados de Lamedon
-trp_veteran_of_lamedon|Veterano de Lamedon
-trp_veteran_of_lamedon_pl|Veteranos de Lamedon
-trp_warrior_of_lamedon|Guerreiro de Lamedon
-trp_warrior_of_lamedon_pl|Guerreiros de Lamedon
-trp_champion_of_lamedon|Campeão de Lamedon
-trp_champion_of_lamedon_pl|Campeões de Lamedon
-trp_knight_of_lamedon|Cavaleiro de Lamedon
-trp_knight_of_lamedon_pl|Cavaleiros de Lamedon
-trp_lamedon_leader|Capitão de Lamedon
-trp_lamedon_leader_pl|Capitães de Lamedon
-trp_pinnath_gelin_plainsman|Homem de Pinnath Gelin
-trp_pinnath_gelin_plainsman_pl|Homens de Pinnath Gelin
-trp_pinnath_gelin_spearman|Montador de Pinnath Gelin
-trp_pinnath_gelin_spearman_pl|Assaltantes de Pinnath Gelin
-trp_warrior_of_pinnath_gelin|Cavaleiro de Pinnath Gelin
-trp_warrior_of_pinnath_gelin_pl|Cavaleiros Pinnath Gelin
-trp_pinnath_gelin_bowman|Arqueiro de Pinnath Gelin
-trp_pinnath_gelin_bowman_pl|Arqueiros de Pinnath Gelin
-trp_pinnath_gelin_archer|Arqueiro de Elite de Pinnath Gelin
-trp_pinnath_gelin_archer_pl|Arqueiros de Elite de Pinnath Gelin
-trp_pinnath_leader|Capitão de Pinnath Gelin
-trp_pinnath_leader_pl|Capitães de Pinnath Gelin
-trp_blackroot_vale_archer|Caçador do Vale Raiznegra
-trp_blackroot_vale_archer_pl|Caçadores do Vale Raiznegra
-trp_veteran_blackroot_vale_archer|Arqueiro Veterano do Vale Raiznegra
-trp_veteran_blackroot_vale_archer_pl|Arqueiros Veterano do Vale Raiznegra
-trp_master_blackroot_vale_archer|Arqueiro Mestre do Vale Raiznegra
-trp_master_blackroot_vale_archer_pl|Arqueiros Mestres do Vale Raiznegra
-trp_footman_of_blackroot_vale|Soldado do Vale Raiznegra
-trp_footman_of_blackroot_vale_pl|Soldados do Vale Raiznegra
-trp_spearman_of_blackroot_vale|Lanceiro do Vale Raiznegra
-trp_spearman_of_blackroot_vale_pl|Lanceiros do Vale Raiznegra
-trp_blackroot_leader|Caçador da Sombra de Morthond
-trp_blackroot_leader_pl|Caçadores da Sombra de Morthond
-trp_dol_amroth_youth|Recruta de Dol Amroth
-trp_dol_amroth_youth_pl|Recrutas Dol Amroth
-trp_squire_of_dol_amroth|Escudeiro de Dol Amroth
-trp_squire_of_dol_amroth_pl|Escudeiros de Dol Amroth
-trp_veteran_squire_of_dol_amroth|Escudeiro Veterano de Dol Amroth
-trp_veteran_squire_of_dol_amroth_pl|Escudeiros Veteranos de Dol Amroth
-trp_knight_of_dol_amroth|Cavaleiro de Dol Amroth
-trp_knight_of_dol_amroth_pl|Cavaleiros de Dol Amroth
-trp_veteran_knight_of_dol_amroth|Cavaleiro Veterano de Dol Amroth
-trp_veteran_knight_of_dol_amroth_pl|Cavaleiros Veteranos de Dol Amroth
-trp_swan_knight_of_dol_amroth|Cavaleiro Cisne de Dol Amroth
-trp_swan_knight_of_dol_amroth_pl|Cavaleiros Cisne de Dol Amroth
-trp_dol_amroth_leader|Capitão de Dol Amroth
-trp_dol_amroth_leader_pl|Capitães de Dol Amroth
+trp_a4_ithilien_ranger|Ranger de Ithilien
+trp_a4_ithilien_ranger_pl|Rangers de Ithilien
+trp_a5_ithilien_vet_ranger|Ranger Veterano de Ithilien
+trp_a5_ithilien_vet_ranger_pl|Rangers Veteranos de Ithilien
+trp_a6_ithilien_master_ranger|Ranger Mestre de Ithilien
+trp_a6_ithilien_master_ranger_pl|Rangers Mestres de Ithilien
+trp_a6_ithilien_leader|Capitão dos Rangers de Ithilien
+trp_a6_ithilien_leader_pl|Capitães dos Rangers de Ithilien
+trp_i1_loss_woodsman|Camponês de Lossarnach
+trp_i1_loss_woodsman_pl|Camponeses de Lossarnach
+trp_i2_loss_axeman|Bárbaro de Lossarnach
+trp_i2_loss_axeman_pl|Bárbaros de Lossarnach
+trp_i3_loss_vet_axeman|Bárbaro Veterano de Lossarnach
+trp_i3_loss_vet_axeman_pl|Bárbaros Veterano Lossarnach
+trp_i4_loss_heavy_axeman|Bárbaro Pesado de Lossarnach
+trp_i4_loss_heavy_axeman_pl|Bárbaros Pesados de Lossarnach
+trp_i5_loss_axemaster|Bárbaro Mestre de Lossarnach
+trp_i5_loss_axemaster_pl|Bárbaros Mestres de Lossarnach
+trp_i6_loss_leader|Capitão de Lossarnach
+trp_i6_loss_leader_pl|Capitães de Lossarnach
+trp_i1_pel_watchman|Vigia de Pelargir
+trp_i1_pel_watchman_pl|Vigias de Pelargir
+trp_a2_pel_marine|Soldado de Pelargir
+trp_a2_pel_marine_pl|Soldados de Pelargir
+trp_a3_pel_vet_marine|Soldado Veterano de Pelargir
+trp_a3_pel_vet_marine_pl|Marinheiros Pelargir Veteranos
+trp_i2_pel_infantry|Soldado de Infantaria de Pelargir
+trp_i2_pel_infantry_pl|Infantaria de Pelargir
+trp_i3_pel_vet_infantry|Soldado de Infantaria Veterano de Pelargir
+trp_i3_pel_vet_infantry_pl|Infantaria Veterana de Pelargir
+trp_i6_pel_leader|Capitão de Pelargir
+trp_i6_pel_leader_pl|Capitães de Pelargir
+trp_a6_pel_marine_leader|Capitão de Soldados de Pelargir
+trp_a6_pel_marine_leader_pl|Capitães de Soldados de Pelargir
+trp_i1_lam_clansman|Tribal de Lamedon
+trp_i1_lam_clansman_pl|Tribais de Lamedon
+trp_i2_lam_footman|Soldado de Lamedon
+trp_i2_lam_footman_pl|Soldados de Lamedon
+trp_i3_lam_veteran|Veterano de Lamedon
+trp_i3_lam_veteran_pl|Veteranos de Lamedon
+trp_i4_lam_warrior|Guerreiro de Lamedon
+trp_i4_lam_warrior_pl|Guerreiros de Lamedon
+trp_i5_lam_champion|Campeão de Lamedon
+trp_i5_lam_champion_pl|Campeões de Lamedon
+trp_c5_lam_knight|Cavaleiro de Lamedon
+trp_c5_lam_knight_pl|Cavaleiros de Lamedon
+trp_c6_lam_leader|Capitão de Lamedon
+trp_c6_lam_leader_pl|Capitães de Lamedon
+trp_i1_pinnath_plainsman|Homem de Pinnath Gelin
+trp_i1_pinnath_plainsman_pl|Homens de Pinnath Gelin
+trp_c2_pinnath_rider|Montador de Pinnath Gelin
+trp_c2_pinnath_rider_pl|Assaltantes de Pinnath Gelin
+trp_c3_pinnath_knight|Cavaleiro de Pinnath Gelin
+trp_c3_pinnath_knight_pl|Cavaleiros Pinnath Gelin
+trp_a2_pinnath_bowman|Arqueiro de Pinnath Gelin
+trp_a2_pinnath_bowman_pl|Arqueiros de Pinnath Gelin
+trp_a3_pinnath_archer|Arqueiro de Elite de Pinnath Gelin
+trp_a3_pinnath_archer_pl|Arqueiros de Elite de Pinnath Gelin
+trp_c6_pinnath_leader|Capitão de Pinnath Gelin
+trp_c6_pinnath_leader_pl|Capitães de Pinnath Gelin
+trp_a1_blackroot_hunter|Caçador do Vale Raiznegra
+trp_a1_blackroot_hunter_pl|Caçadores do Vale Raiznegra
+trp_a2_blackroot_bowman|Arqueiro Veterano do Vale Raiznegra
+trp_a2_blackroot_bowman_pl|Arqueiros Veterano do Vale Raiznegra
+trp_a3_blackroot_archer|Arqueiro Mestre do Vale Raiznegra
+trp_a3_blackroot_archer_pl|Arqueiros Mestres do Vale Raiznegra
+trp_i2_blackroot_footman|Soldado do Vale Raiznegra
+trp_i2_blackroot_footman_pl|Soldados do Vale Raiznegra
+trp_i3_blackroot_spearman|Lanceiro do Vale Raiznegra
+trp_i3_blackroot_spearman_pl|Lanceiros do Vale Raiznegra
+trp_a5_blackroot_shadow_hunter|Caçador da Sombra de Morthond
+trp_a5_blackroot_shadow_hunter_pl|Caçadores da Sombra de Morthond
+trp_i1_amroth_recruit|Recruta de Dol Amroth
+trp_i1_amroth_recruit_pl|Recrutas Dol Amroth
+trp_c2_amroth_squire|Escudeiro de Dol Amroth
+trp_c2_amroth_squire_pl|Escudeiros de Dol Amroth
+trp_c3_amroth_vet_squire|Escudeiro Veterano de Dol Amroth
+trp_c3_amroth_vet_squire_pl|Escudeiros Veteranos de Dol Amroth
+trp_c4_amroth_knight|Cavaleiro de Dol Amroth
+trp_c4_amroth_knight_pl|Cavaleiros de Dol Amroth
+trp_c5_amroth_vet_knight|Cavaleiro Veterano de Dol Amroth
+trp_c5_amroth_vet_knight_pl|Cavaleiros Veteranos de Dol Amroth
+trp_c6_amroth_swan_knight|Cavaleiro Cisne de Dol Amroth
+trp_c6_amroth_swan_knight_pl|Cavaleiros Cisne de Dol Amroth
+trp_c6_amroth_leader|Capitão de Dol Amroth
+trp_c6_amroth_leader_pl|Capitães de Dol Amroth
 trp_lothlorien_scout|Batedor de Lothlorien
 trp_lothlorien_scout_pl|Batedores Lothlorianos
 trp_lothlorien_veteran_scout|Batedor Veterano de Lothlorien

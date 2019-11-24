@@ -3755,10 +3755,10 @@ mission_templates = [ # not used in game
       
       (try_begin),
         (eq, ":faction", "fac_gondor"),
-        (assign, ":allies_melee_tier_1", "trp_pelargir_watchman"),
-        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
-        (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
-        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_melee_tier_1", "trp_i1_pel_watchman"),
+        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_i2_pel_infantry",0), #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_archer_tier_1", "trp_a2_pel_marine"),
+        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_a2_pel_marine",0),   #Commented out - If we want to upgrade allies too.
       #  (display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale
         (assign, ":allies_melee_tier_1", "trp_i4_dale_sergeant"),
@@ -4074,10 +4074,10 @@ mission_templates = [ # not used in game
       
       (try_begin),
         (eq, ":faction", "fac_umbar"),
-        (assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
-        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
-        (assign, ":allies_archer_tier_1", "trp_pelargir_watchman"),
-        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_melee_tier_1", "trp_i2_pel_infantry"),
+        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_i2_pel_infantry",0), #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_archer_tier_1", "trp_i1_pel_watchman"),
+        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_a2_pel_marine",0),   #Commented out - If we want to upgrade allies too.
         #(display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale
         (assign, ":allies_melee_tier_1", "trp_i4_dale_sergeant"),
@@ -6745,8 +6745,8 @@ tld_remove_riderless_animals,
           (assign, ":interloper", 3), #Interloper 3 = Good Faction
           (try_begin),
             (eq, ":theater", theater_SE),
-            (assign, ":interloper_1", "trp_squire_of_gondor"),
-            (assign, ":interloper_2", "trp_gondor_swordsmen"),
+            (assign, ":interloper_1", "trp_c2_gon_squire"),
+            (assign, ":interloper_2", "trp_i4_gon_swordsman"),
             (str_store_faction_name, s31, "fac_gondor"),
           (else_try),
             (eq, ":theater", theater_SW),
@@ -8248,7 +8248,7 @@ tld_remove_riderless_animals,
     (troop_set_slot, "trp_player", "$g_player_troop", slot_troop_player_clone),
     (troop_set_slot, "$g_player_troop", slot_troop_morality_state, 0),
     (assign, "$g_player_troop", "trp_multiplayer_profile_troop_male"),
-    (call_script, "script_clone_troop", "trp_i1_dwarven_apprentice", "$g_player_troop"),
+    (call_script, "script_clone_troop", "trp_i1_dwarf_apprentice", "$g_player_troop"),
     (str_store_troop_face_keys, s2, "trp_knight_5_6"),
     (troop_set_face_keys, "$g_player_troop", s2),
     (troop_set_name, "$g_player_troop", "@Longbeard Kinsman"),
@@ -8282,7 +8282,7 @@ tld_remove_riderless_animals,
     (call_script, "script_clone_troop", "trp_dwarf_lord", "trp_generic_hero_infantry"),
     (call_script, "script_clone_troop", "trp_knight_5_6", "trp_generic_hero_ranged"),
     (call_script, "script_clone_troop", "trp_knight_5_7", "trp_generic_hero_knight"),
-    (call_script, "script_clone_troop", "trp_i6_grors_guard", "trp_generic_hero_mounted_archer"),
+    (call_script, "script_clone_troop", "trp_i6_iron_hills_grors_guard", "trp_generic_hero_mounted_archer"),
 
     (troop_equip_items, "trp_generic_hero_infantry"),
     (troop_equip_items, "trp_generic_hero_ranged"),

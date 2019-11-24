@@ -142,168 +142,168 @@ trp_c4_rhun_noble_cavalry_pl|룬 귀족 기병
 trp_c5_rhun_heavy_noble_cavalry_pl|룬 귀족 중기병
 trp_c6_rhun_dorwinion_noble|룬 도르위니온 귀족
 trp_c6_rhun_dorwinion_noble_pl|룬 도르위니온 귀족
-trp_i1_dwarven_apprentice|난쟁이 견습공
-trp_i1_dwarven_apprentice_pl|난쟁이 견습공
-trp_i2_dwarven_warrior|난쟁이 전사
-trp_i2_dwarven_warrior_pl|난쟁이 전사
-trp_i3_dwarven_hardened_warrior|난쟁이 단련된 전사
-trp_i3_dwarven_hardened_warrior_pl|난쟁이 단련된 전사
-trp_i4_dwarven_spearman|난쟁이 창병
-trp_i4_dwarven_spearman_pl|난쟁이 창병
-trp_i5_dwarven_pikeman|난쟁이 장창병
-trp_i5_dwarven_pikeman_pl|난쟁이 장창병
-trp_i6_dwarven_longpikeman|난쟁이 롱파이크
-trp_i6_dwarven_longpikeman_pl|난쟁이 롱파이크
-trp_i4_dwarven_axeman|난쟁이 도끼병
-trp_i4_dwarven_axeman_pl|난쟁이 도끼병
-trp_i5_dwarven_expert_axeman|난쟁이 숙련 도끼병
-trp_i5_dwarven_expert_axeman_pl|난쟁이 숙련 도끼병
-trp_i6_longbeard_axeman|난쟁이 긴수염 도끼병
-trp_i6_longbeard_axeman_pl|난쟁이 긴수염 도끼병
-trp_a2_dwarven_lookout|난쟁이 망꾼
-trp_a2_dwarven_lookout_pl|난쟁이 망꾼
-trp_a3_dwarven_scout|난쟁이 정찰병
-trp_a3_dwarven_scout_pl|난쟁이 정찰병
-trp_a4_dwarven_bowman|난쟁이 활잡이
-trp_a4_dwarven_bowman_pl|난쟁이 활잡이
-; trp_i6_dwarven_longaxeman|Longaxe Dwarf
-; trp_i6_dwarven_longaxeman_pl|Longaxe Dwarves
+trp_i1_dwarf_apprentice|난쟁이 견습공
+trp_i1_dwarf_apprentice_pl|난쟁이 견습공
+trp_i2_dwarf_warrior|난쟁이 전사
+trp_i2_dwarf_warrior_pl|난쟁이 전사
+trp_i3_dwarf_hardened_warrior|난쟁이 단련된 전사
+trp_i3_dwarf_hardened_warrior_pl|난쟁이 단련된 전사
+trp_i4_dwarf_spearman|난쟁이 창병
+trp_i4_dwarf_spearman_pl|난쟁이 창병
+trp_i5_dwarf_pikeman|난쟁이 장창병
+trp_i5_dwarf_pikeman_pl|난쟁이 장창병
+trp_i6_dwarf_longpikeman|난쟁이 롱파이크
+trp_i6_dwarf_longpikeman_pl|난쟁이 롱파이크
+trp_i4_dwarf_axeman|난쟁이 도끼병
+trp_i4_dwarf_axeman_pl|난쟁이 도끼병
+trp_i5_dwarf_expert_axeman|난쟁이 숙련 도끼병
+trp_i5_dwarf_expert_axeman_pl|난쟁이 숙련 도끼병
+trp_i6_dwarf_longbeard_axeman|난쟁이 긴수염 도끼병
+trp_i6_dwarf_longbeard_axeman_pl|난쟁이 긴수염 도끼병
+trp_a2_dwarf_lookout|난쟁이 망꾼
+trp_a2_dwarf_lookout_pl|난쟁이 망꾼
+trp_a3_dwarf_scout|난쟁이 정찰병
+trp_a3_dwarf_scout_pl|난쟁이 정찰병
+trp_a4_dwarf_bowman|난쟁이 활잡이
+trp_a4_dwarf_bowman_pl|난쟁이 활잡이
+; trp_i6_dwarf_longaxeman|Longaxe Dwarf
+; trp_i6_dwarf_longaxeman_pl|Longaxe Dwarves
 ; trp_i3_iron_hills_warrior|Iron Hills Warrior
 ; trp_i3_iron_hills_warrior_pl|Iron Hills Warriors
 trp_i2_iron_hills_miner|철산 난쟁이 광부
 trp_i2_iron_hills_miner_pl|철산 난쟁이 광부
 trp_i4_iron_hills_infantry|철산 난쟁이 보병
 trp_i4_iron_hills_infantry_pl|철산 난쟁이 보병
-trp_i5_iron_hills_battle_infantry|철산 난쟁이 전투 보병
-trp_i5_iron_hills_battle_infantry_pl|철산 난쟁이 전투 보병
-trp_i6_grors_guard|난쟁이 그로르의 근위대
-trp_i6_grors_guard_pl|난쟁이 그로르의 근위대
-trp_gondor_commoner|곤도르 징집병
-trp_gondor_commoner_pl|곤도르 징집병
-trp_gondor_militiamen|곤도르 보초병
-trp_gondor_militiamen_pl|곤도르 보초병
-trp_footmen_of_gondor|곤도르 보병
-trp_footmen_of_gondor_pl|곤도르 보병
-trp_gondor_spearmen|곤도르 창병
-trp_gondor_spearmen_pl|곤도르 창병
-trp_gondor_veteran_spearmen|곤도르 숙련 창병
-trp_gondor_veteran_spearmen_pl|곤도르 숙련 창병
-trp_guard_of_the_fountain_court|곤도르 분수 수비대
-trp_guard_of_the_fountain_court_pl|곤도르 분수 수비대
-trp_gondor_swordsmen|곤도르 검사
-trp_gondor_swordsmen_pl|곤도르 검사
-trp_gondor_veteran_swordsmen|곤도르 고참 검사
-trp_gondor_veteran_swordsmen_pl|곤도르 고참 검사
-trp_swordsmen_of_the_tower_guard|탑 수비대 검사
-trp_swordsmen_of_the_tower_guard_pl|탑 수비대 검사
-trp_gondor_noblemen|곤도르 귀족
-trp_gondor_noblemen_pl|곤도르 귀족
-trp_squire_of_gondor|곤도르 종자
-trp_squire_of_gondor_pl|곤도르 종자
-trp_veteran_squire_of_gondor|곤도르 고참 종자
-trp_veteran_squire_of_gondor_pl|곤도르 고참 종자
-trp_knight_of_gondor|곤도르 기사
-trp_knight_of_gondor_pl|곤도르 기사
-trp_veteran_knight_of_gondor|곤도르 고참 기사
-trp_veteran_knight_of_gondor_pl|곤도르 고참 기사
-trp_knight_of_the_citadel|성채의 기사
-trp_knight_of_the_citadel_pl|성채의 기사
-trp_bowmen_of_gondor|곤도르 활잡이
-trp_bowmen_of_gondor_pl|곤도르 활잡이
-trp_archer_of_gondor|곤도르 궁ㅅ
-trp_archer_of_gondor_pl|곤도르 궁수
-trp_veteran_archer_of_gondor|곤도르 고참 궁수
-trp_veteran_archer_of_gondor_pl|곤도르 고참 궁수
-trp_archer_of_the_tower_guard|탑 수비대 궁수
-trp_archer_of_the_tower_guard_pl|탑 수비대 궁수
+trp_i5_iron_hills_battle_dwarf|철산 난쟁이 전투 보병
+trp_i5_iron_hills_battle_dwarf_pl|철산 난쟁이 전투 보병
+trp_i6_iron_hills_grors_guard|난쟁이 그로르의 근위대
+trp_i6_iron_hills_grors_guard_pl|난쟁이 그로르의 근위대
+trp_i1_gon_levy|곤도르 징집병
+trp_i1_gon_levy_pl|곤도르 징집병
+trp_i2_gon_watchman|곤도르 보초병
+trp_i2_gon_watchman_pl|곤도르 보초병
+trp_i3_gon_footman|곤도르 보병
+trp_i3_gon_footman_pl|곤도르 보병
+trp_i4_gon_spearman|곤도르 창병
+trp_i4_gon_spearman_pl|곤도르 창병
+trp_i5_gon_vet_spearman|곤도르 숙련 창병
+trp_i5_gon_vet_spearman_pl|곤도르 숙련 창병
+trp_i6_gon_tower_spearman|곤도르 분수 수비대
+trp_i6_gon_tower_spearman_pl|곤도르 분수 수비대
+trp_i4_gon_swordsman|곤도르 검사
+trp_i4_gon_swordsman_pl|곤도르 검사
+trp_i5_gon_vet_swordsman|곤도르 고참 검사
+trp_i5_gon_vet_swordsman_pl|곤도르 고참 검사
+trp_i6_gon_tower_swordsman|탑 수비대 검사
+trp_i6_gon_tower_swordsman_pl|탑 수비대 검사
+trp_c1_gon_nobleman|곤도르 귀족
+trp_c1_gon_nobleman_pl|곤도르 귀족
+trp_c2_gon_squire|곤도르 종자
+trp_c2_gon_squire_pl|곤도르 종자
+trp_c3_gon_vet_squire|곤도르 고참 종자
+trp_c3_gon_vet_squire_pl|곤도르 고참 종자
+trp_c4_gon_knight|곤도르 기사
+trp_c4_gon_knight_pl|곤도르 기사
+trp_c5_gon_vet_knight|곤도르 고참 기사
+trp_c5_gon_vet_knight_pl|곤도르 고참 기사
+trp_c6_gon_tower_knight|성채의 기사
+trp_c6_gon_tower_knight_pl|성채의 기사
+trp_a3_gon_bowman|곤도르 활잡이
+trp_a3_gon_bowman_pl|곤도르 활잡이
+trp_a4_gon_archer|곤도르 궁ㅅ
+trp_a4_gon_archer_pl|곤도르 궁수
+trp_a5_gon_vet_archer|곤도르 고참 궁수
+trp_a5_gon_vet_archer_pl|곤도르 고참 궁수
+trp_a6_gon_tower_archer|탑 수비대 궁수
+trp_a6_gon_tower_archer_pl|탑 수비대 궁수
 trp_steward_guard|섭정의 근위대
 trp_steward_guard_pl|섭정의 근위대
-trp_ranger_of_ithilien|이실리엔 레인저
-trp_ranger_of_ithilien_pl|이실리엔 레인저
-trp_veteran_ranger_of_ithilien|이실리엔 고참 레인저
-trp_veteran_ranger_of_ithilien_pl|이실리엔 고참 레인저
-trp_master_ranger_of_ithilien|이실리엔 정예 레인저
-trp_master_ranger_of_ithilien_pl|이실리엔 정예 레인저
-trp_ithilien_leader|이실리엔 레인저 대장
-trp_ithilien_leader_pl|이실리엔 레인저 대장
-trp_woodsman_of_lossarnach|롯사르나흐 나무꾼
-trp_woodsman_of_lossarnach_pl|롯사르나흐 나무꾼
-trp_axeman_of_lossarnach|롯사르나흐 도끼병
-trp_axeman_of_lossarnach_pl|롯사르나흐 도끼병
-trp_vet_axeman_of_lossarnach|롯사르나흐 고참 도끼병
-trp_vet_axeman_of_lossarnach_pl|롯사르나흐 고참 도끼병
-trp_heavy_lossarnach_axeman|롯사르나흐 중갑 도끼병
-trp_heavy_lossarnach_axeman_pl|롯사르나흐 중갑 도끼병
-trp_axemaster_of_lossarnach|롯사르나흐 도끼 대가
-trp_axemaster_of_lossarnach_pl|롯사르나흐 도끼 대가
-trp_lossarnach_leader|롯사르나흐 대장
-trp_lossarnach_leader_pl|롯사르나흐 대장
-trp_pelargir_watchman|펠라르기르 감시자
-trp_pelargir_watchman_pl|펠라르기르 감시자
-trp_pelargir_marine|펠라르기르 해병
-trp_pelargir_marine_pl|펠라르기르 해병
-trp_pelargir_vet_marine|펠라르기르 고참 해병
-; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
-trp_pelargir_infantry|펠라르기르 보병
-trp_pelargir_infantry_pl|펠라르기르 보병
-trp_pelargir_vet_infantry|펠라르기르 고참 보병
-trp_pelargir_vet_infantry_pl|펠라르기르 고참 보병
-trp_pelargir_leader|펠라르기르 대장
-trp_pelargir_leader_pl|펠라르기르 대장
-trp_pelargir_marine_leader|펠라르기르 해병 대장
-trp_pelargir_marine_leader_pl|펠라르기르 해병 대장
-trp_clansman_of_lamedon|라메돈 부족민
-trp_clansman_of_lamedon_pl|라메돈 부족민
-trp_footman_of_lamedon|라메돈 보병
-trp_footman_of_lamedon_pl|라메돈 보병
-trp_veteran_of_lamedon|라메돈 고참병
-trp_veteran_of_lamedon_pl|라메돈 고참병
-trp_warrior_of_lamedon|라메돈 전사
-trp_warrior_of_lamedon_pl|라메돈 전사
-trp_champion_of_lamedon|라메돈 챔피언
-trp_champion_of_lamedon_pl|라메돈 챔피언
-trp_knight_of_lamedon|라메돈 기사
-trp_knight_of_lamedon_pl|라메돈 기사
-trp_lamedon_leader|라메돈 대장
-trp_lamedon_leader_pl|라메돈 대장
-trp_pinnath_gelin_plainsman|피나스 겔린 거주민
-trp_pinnath_gelin_plainsman_pl|피나스 겔린 거주민
-; trp_pinnath_gelin_spearman|Rider of Pinnath Gelin
-; trp_pinnath_gelin_spearman_pl|Riders of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin|Knight of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin_pl|Knights of Pinnath Gelin
-trp_pinnath_gelin_bowman|피나스 겔린 활잡이
-trp_pinnath_gelin_bowman_pl|피나스 겔린 활잡이
-trp_pinnath_gelin_archer|피나스 겔린 궁수
-trp_pinnath_gelin_archer_pl|피나스 겔린 궁수
-trp_pinnath_leader|피나스 겔린 대장
-trp_pinnath_leader_pl|피나스 겔린 전사
-trp_blackroot_vale_archer|검은뿌리 계곡 사냥꾼
-trp_blackroot_vale_archer_pl|검은뿌리 계곡 사냥꾼
-trp_veteran_blackroot_vale_archer|검은뿌리 계곡 활잡이
-trp_veteran_blackroot_vale_archer_pl|검은뿌리 계곡 활잡이
-trp_master_blackroot_vale_archer|검은뿌리 계곡 궁수
-trp_master_blackroot_vale_archer_pl|검은뿌리 계곡 궁수
-trp_footman_of_blackroot_vale|검은뿌리 계곡 보병
-trp_footman_of_blackroot_vale_pl|검은뿌리 계곡 보병
-trp_spearman_of_blackroot_vale|검은뿌리 계곡 창병
-trp_spearman_of_blackroot_vale_pl|검은뿌리 계곡 창병
-; trp_blackroot_leader|Morthond Shadow Hunter
-; trp_blackroot_leader_pl|Morthond Shadow Hunters
-trp_dol_amroth_youth|돌 암로스 신병
-trp_dol_amroth_youth_pl|돌 암로스 신병
-trp_squire_of_dol_amroth|돌 암로스 종자
-trp_squire_of_dol_amroth_pl|돌 암로스 종자
-trp_veteran_squire_of_dol_amroth|돌 암로스 고참 종자
-trp_veteran_squire_of_dol_amroth_pl|돌 암로스 고참 종자
-trp_knight_of_dol_amroth|돌 암로스 기사
-trp_knight_of_dol_amroth_pl|돌 암로스 기사
-trp_veteran_knight_of_dol_amroth|돌 암로스 고참 기사
-trp_veteran_knight_of_dol_amroth_pl|돌 암로스 고참 기사
-trp_swan_knight_of_dol_amroth|돌 암로스 백조 기사
-trp_swan_knight_of_dol_amroth_pl|돌 암로스 백조 기사
-trp_dol_amroth_leader|돌 암로스 대장
-trp_dol_amroth_leader_pl|돌 암로스 대장
+trp_a4_ithilien_ranger|이실리엔 레인저
+trp_a4_ithilien_ranger_pl|이실리엔 레인저
+trp_a5_ithilien_vet_ranger|이실리엔 고참 레인저
+trp_a5_ithilien_vet_ranger_pl|이실리엔 고참 레인저
+trp_a6_ithilien_master_ranger|이실리엔 정예 레인저
+trp_a6_ithilien_master_ranger_pl|이실리엔 정예 레인저
+trp_a6_ithilien_leader|이실리엔 레인저 대장
+trp_a6_ithilien_leader_pl|이실리엔 레인저 대장
+trp_i1_loss_woodsman|롯사르나흐 나무꾼
+trp_i1_loss_woodsman_pl|롯사르나흐 나무꾼
+trp_i2_loss_axeman|롯사르나흐 도끼병
+trp_i2_loss_axeman_pl|롯사르나흐 도끼병
+trp_i3_loss_vet_axeman|롯사르나흐 고참 도끼병
+trp_i3_loss_vet_axeman_pl|롯사르나흐 고참 도끼병
+trp_i4_loss_heavy_axeman|롯사르나흐 중갑 도끼병
+trp_i4_loss_heavy_axeman_pl|롯사르나흐 중갑 도끼병
+trp_i5_loss_axemaster|롯사르나흐 도끼 대가
+trp_i5_loss_axemaster_pl|롯사르나흐 도끼 대가
+trp_i6_loss_leader|롯사르나흐 대장
+trp_i6_loss_leader_pl|롯사르나흐 대장
+trp_i1_pel_watchman|펠라르기르 감시자
+trp_i1_pel_watchman_pl|펠라르기르 감시자
+trp_a2_pel_marine|펠라르기르 해병
+trp_a2_pel_marine_pl|펠라르기르 해병
+trp_a3_pel_vet_marine|펠라르기르 고참 해병
+; trp_a3_pel_vet_marine_pl|Pelargir Veteran Marines
+trp_i2_pel_infantry|펠라르기르 보병
+trp_i2_pel_infantry_pl|펠라르기르 보병
+trp_i3_pel_vet_infantry|펠라르기르 고참 보병
+trp_i3_pel_vet_infantry_pl|펠라르기르 고참 보병
+trp_i6_pel_leader|펠라르기르 대장
+trp_i6_pel_leader_pl|펠라르기르 대장
+trp_a6_pel_marine_leader|펠라르기르 해병 대장
+trp_a6_pel_marine_leader_pl|펠라르기르 해병 대장
+trp_i1_lam_clansman|라메돈 부족민
+trp_i1_lam_clansman_pl|라메돈 부족민
+trp_i2_lam_footman|라메돈 보병
+trp_i2_lam_footman_pl|라메돈 보병
+trp_i3_lam_veteran|라메돈 고참병
+trp_i3_lam_veteran_pl|라메돈 고참병
+trp_i4_lam_warrior|라메돈 전사
+trp_i4_lam_warrior_pl|라메돈 전사
+trp_i5_lam_champion|라메돈 챔피언
+trp_i5_lam_champion_pl|라메돈 챔피언
+trp_c5_lam_knight|라메돈 기사
+trp_c5_lam_knight_pl|라메돈 기사
+trp_c6_lam_leader|라메돈 대장
+trp_c6_lam_leader_pl|라메돈 대장
+trp_i1_pinnath_plainsman|피나스 겔린 거주민
+trp_i1_pinnath_plainsman_pl|피나스 겔린 거주민
+; trp_c2_pinnath_rider|Rider of Pinnath Gelin
+; trp_c2_pinnath_rider_pl|Riders of Pinnath Gelin
+; trp_c3_pinnath_knight|Knight of Pinnath Gelin
+; trp_c3_pinnath_knight_pl|Knights of Pinnath Gelin
+trp_a2_pinnath_bowman|피나스 겔린 활잡이
+trp_a2_pinnath_bowman_pl|피나스 겔린 활잡이
+trp_a3_pinnath_archer|피나스 겔린 궁수
+trp_a3_pinnath_archer_pl|피나스 겔린 궁수
+trp_c6_pinnath_leader|피나스 겔린 대장
+trp_c6_pinnath_leader_pl|피나스 겔린 전사
+trp_a1_blackroot_hunter|검은뿌리 계곡 사냥꾼
+trp_a1_blackroot_hunter_pl|검은뿌리 계곡 사냥꾼
+trp_a2_blackroot_bowman|검은뿌리 계곡 활잡이
+trp_a2_blackroot_bowman_pl|검은뿌리 계곡 활잡이
+trp_a3_blackroot_archer|검은뿌리 계곡 궁수
+trp_a3_blackroot_archer_pl|검은뿌리 계곡 궁수
+trp_i2_blackroot_footman|검은뿌리 계곡 보병
+trp_i2_blackroot_footman_pl|검은뿌리 계곡 보병
+trp_i3_blackroot_spearman|검은뿌리 계곡 창병
+trp_i3_blackroot_spearman_pl|검은뿌리 계곡 창병
+; trp_a5_blackroot_shadow_hunter|Morthond Shadow Hunter
+; trp_a5_blackroot_shadow_hunter_pl|Morthond Shadow Hunters
+trp_i1_amroth_recruit|돌 암로스 신병
+trp_i1_amroth_recruit_pl|돌 암로스 신병
+trp_c2_amroth_squire|돌 암로스 종자
+trp_c2_amroth_squire_pl|돌 암로스 종자
+trp_c3_amroth_vet_squire|돌 암로스 고참 종자
+trp_c3_amroth_vet_squire_pl|돌 암로스 고참 종자
+trp_c4_amroth_knight|돌 암로스 기사
+trp_c4_amroth_knight_pl|돌 암로스 기사
+trp_c5_amroth_vet_knight|돌 암로스 고참 기사
+trp_c5_amroth_vet_knight_pl|돌 암로스 고참 기사
+trp_c6_amroth_swan_knight|돌 암로스 백조 기사
+trp_c6_amroth_swan_knight_pl|돌 암로스 백조 기사
+trp_c6_amroth_leader|돌 암로스 대장
+trp_c6_amroth_leader_pl|돌 암로스 대장
 trp_lothlorien_scout|로스로리엔 순찰자
 trp_lothlorien_scout_pl|로스로리엔 순찰자
 trp_lothlorien_veteran_scout|로스로리엔 고참 순찰자

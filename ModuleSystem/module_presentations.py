@@ -3392,7 +3392,7 @@ presentations = [
         (start_presentation, "prsnt_faction_intro_text"),
       #(else_try),
       #  (eq, ":object", "$g_presentation_obj_3"),
-      #  (call_script,"script_start_as_one","trp_gondor_commoner"),
+      #  (call_script,"script_start_as_one","trp_i1_gon_levy"),
       #  (jump_to_menu,"mnu_start_phase_2"),
       #  (presentation_set_duration, 0),
       #(else_try),

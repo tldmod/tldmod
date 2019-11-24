@@ -11385,7 +11385,7 @@ scripts = [
       
       (try_begin),
         (le, ":guard_troop", 0),
-        (assign, ":guard_troop", "trp_guard_of_the_fountain_court"),
+        (assign, ":guard_troop", "trp_i6_gon_tower_spearman"),
       (try_end),
       
       (set_visitor, 6, ":guard_troop"),
@@ -14870,6 +14870,9 @@ scripts = [
 	  (store_skill_level, ":x", ":i", ":troop"),
 	  (troop_raise_skill,  "trp_player",":i",-1000), 	  
 	  (troop_raise_skill,  "trp_player",":i",":x"), 
+	  (troop_raise_skill,  "trp_player","skl_inventory_management",-100), #set these to 0
+	  (troop_raise_skill,  "trp_player","skl_prisoner_management",-100), 
+	  (troop_raise_skill,  "trp_player","skl_trade",-100), 
 	(try_end),
 	(assign, "$disable_skill_modifiers", 0),
 	
@@ -19499,22 +19502,22 @@ scripts = [
 # script_TLD_troop_banner_slot_init 
 # run at the start of the game
 ("TLD_troop_banner_slot_init",
-  [ (troop_set_slot, "trp_woodsman_of_lossarnach",      slot_troop_banner_scene_prop, "mesh_banner_e02"),
-    (troop_set_slot, "trp_axeman_of_lossarnach",        slot_troop_banner_scene_prop, "mesh_banner_e03"),
-    (troop_set_slot, "trp_axemaster_of_lossarnach",     slot_troop_banner_scene_prop, "mesh_banner_e04"),
-    (troop_set_slot, "trp_clansman_of_lamedon",         slot_troop_banner_scene_prop, "mesh_banner_e09"),
-    (troop_set_slot, "trp_footman_of_lamedon",          slot_troop_banner_scene_prop, "mesh_banner_e10"),
-    (troop_set_slot, "trp_veteran_of_lamedon",          slot_troop_banner_scene_prop, "mesh_banner_e11"),
-    (troop_set_slot, "trp_pinnath_gelin_plainsman",     slot_troop_banner_scene_prop, "mesh_banner_e05"),
-    (troop_set_slot, "trp_pinnath_gelin_spearman",      slot_troop_banner_scene_prop, "mesh_banner_e06"),
-    (troop_set_slot, "trp_warrior_of_pinnath_gelin",    slot_troop_banner_scene_prop, "mesh_banner_e07"),
+  [ (troop_set_slot, "trp_i1_loss_woodsman",      slot_troop_banner_scene_prop, "mesh_banner_e02"),
+    (troop_set_slot, "trp_i2_loss_axeman",        slot_troop_banner_scene_prop, "mesh_banner_e03"),
+    (troop_set_slot, "trp_i5_loss_axemaster",     slot_troop_banner_scene_prop, "mesh_banner_e04"),
+    (troop_set_slot, "trp_i1_lam_clansman",         slot_troop_banner_scene_prop, "mesh_banner_e09"),
+    (troop_set_slot, "trp_i2_lam_footman",          slot_troop_banner_scene_prop, "mesh_banner_e10"),
+    (troop_set_slot, "trp_i3_lam_veteran",          slot_troop_banner_scene_prop, "mesh_banner_e11"),
+    (troop_set_slot, "trp_i1_pinnath_plainsman",     slot_troop_banner_scene_prop, "mesh_banner_e05"),
+    (troop_set_slot, "trp_c2_pinnath_rider",      slot_troop_banner_scene_prop, "mesh_banner_e06"),
+    (troop_set_slot, "trp_c3_pinnath_knight",    slot_troop_banner_scene_prop, "mesh_banner_e07"),
     ## BRV does not have shields
-    (troop_set_slot, "trp_dol_amroth_youth",            slot_troop_banner_scene_prop, "mesh_banner_e16"),
-    (troop_set_slot, "trp_squire_of_dol_amroth",        slot_troop_banner_scene_prop, "mesh_banner_e17"),
-    (troop_set_slot, "trp_veteran_squire_of_dol_amroth",slot_troop_banner_scene_prop, "mesh_banner_e17"),
-    (troop_set_slot, "trp_knight_of_dol_amroth",        slot_troop_banner_scene_prop, "mesh_banner_e18"),
-    (troop_set_slot, "trp_veteran_knight_of_dol_amroth",slot_troop_banner_scene_prop, "mesh_banner_e18"),
-    (troop_set_slot, "trp_swan_knight_of_dol_amroth",   slot_troop_banner_scene_prop, "mesh_banner_e18"),
+    (troop_set_slot, "trp_i1_amroth_recruit",            slot_troop_banner_scene_prop, "mesh_banner_e16"),
+    (troop_set_slot, "trp_c2_amroth_squire",        slot_troop_banner_scene_prop, "mesh_banner_e17"),
+    (troop_set_slot, "trp_c3_amroth_vet_squire",slot_troop_banner_scene_prop, "mesh_banner_e17"),
+    (troop_set_slot, "trp_c4_amroth_knight",        slot_troop_banner_scene_prop, "mesh_banner_e18"),
+    (troop_set_slot, "trp_c5_amroth_vet_knight",slot_troop_banner_scene_prop, "mesh_banner_e18"),
+    (troop_set_slot, "trp_c6_amroth_swan_knight",   slot_troop_banner_scene_prop, "mesh_banner_e18"),
 ]),
 
 #script_TLD_shield_item_set_banner, by GA
@@ -19649,14 +19652,14 @@ scripts = [
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
     (assign, ":bm", "mesh_banner_e08"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
-      (try_begin),(is_between,":tr","trp_blackroot_vale_archer"   ,"trp_dol_amroth_youth"        ),(assign, ":bm", "mesh_banner_e02"),
-      (else_try) ,(is_between,":tr","trp_pinnath_gelin_plainsman" ,"trp_dol_amroth_youth"        ),(assign, ":bm", "mesh_banner_e05"),
-      (else_try) ,(is_between,":tr","trp_clansman_of_lamedon"     ,"trp_pinnath_gelin_plainsman" ),(assign, ":bm", "mesh_banner_e09"),
-      (else_try) ,(is_between,":tr","trp_pelargir_watchman"       ,"trp_clansman_of_lamedon"     ),(assign, ":bm", "mesh_banner_e12"),
-      (else_try) ,(is_between,":tr","trp_dol_amroth_youth"        ,"trp_lothlorien_scout"        ),(assign, ":bm", "mesh_banner_e16"),
-      (else_try) ,(is_between,":tr","trp_woodsman_of_lossarnach"  ,"trp_vet_axeman_of_lossarnach"),(assign, ":bm", "mesh_banner_e19"),
-      (else_try) ,(is_between,":tr","trp_vet_axeman_of_lossarnach","trp_axemaster_of_lossarnach" ),(assign, ":bm", "mesh_banner_e20"),
-      (else_try) ,(is_between,":tr","trp_axemaster_of_lossarnach" ,"trp_pelargir_watchman"       ),(assign, ":bm", "mesh_banner_e21"),
+      (try_begin),(is_between,":tr","trp_a1_blackroot_hunter"   ,"trp_i1_amroth_recruit"        ),(assign, ":bm", "mesh_banner_e02"),
+      (else_try) ,(is_between,":tr","trp_i1_pinnath_plainsman" ,"trp_i1_amroth_recruit"        ),(assign, ":bm", "mesh_banner_e05"),
+      (else_try) ,(is_between,":tr","trp_i1_lam_clansman"     ,"trp_i1_pinnath_plainsman" ),(assign, ":bm", "mesh_banner_e09"),
+      (else_try) ,(is_between,":tr","trp_i1_pel_watchman"       ,"trp_i1_lam_clansman"     ),(assign, ":bm", "mesh_banner_e12"),
+      (else_try) ,(is_between,":tr","trp_i1_amroth_recruit"        ,"trp_lothlorien_scout"        ),(assign, ":bm", "mesh_banner_e16"),
+      (else_try) ,(is_between,":tr","trp_i1_loss_woodsman"  ,"trp_i3_loss_vet_axeman"),(assign, ":bm", "mesh_banner_e19"),
+      (else_try) ,(is_between,":tr","trp_i3_loss_vet_axeman","trp_i5_loss_axemaster" ),(assign, ":bm", "mesh_banner_e20"),
+      (else_try) ,(is_between,":tr","trp_i5_loss_axemaster" ,"trp_i1_pel_watchman"       ),(assign, ":bm", "mesh_banner_e21"),
 	  (else_try) ,(eq,			":tr","trp_knight_1_8"      									 ),(assign, ":bm", "mesh_banner_e21"), #Forlong
 	  (else_try) ,(eq,			":tr","trp_knight_1_1"      									 ),(assign, ":bm", "mesh_banner_e11"), #Angbor
       (else_try), ##Kham - Player Subfac Tableaus
@@ -19692,12 +19695,12 @@ scripts = [
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
     (assign, ":bm", "mesh_banner_gondor"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
-      (try_begin),(is_between,":tr","trp_blackroot_vale_archer"  ,"trp_dol_amroth_youth"     ),(assign, ":bm", "mesh_banner_e04"),
-      (else_try) ,(is_between,":tr","trp_pinnath_gelin_plainsman","trp_blackroot_vale_archer"),(assign, ":bm", "mesh_banner_e07"),
-      (else_try) ,(is_between,":tr","trp_clansman_of_lamedon"  ,"trp_pinnath_gelin_plainsman"),(assign, ":bm", "mesh_banner_e11"),
-      (else_try) ,(is_between,":tr","trp_pelargir_watchman"        ,"trp_clansman_of_lamedon"),(assign, ":bm", "mesh_banner_e14"),
-      (else_try) ,(is_between,":tr","trp_dol_amroth_youth"   ,"trp_swan_knight_of_dol_amroth"),(assign, ":bm", "mesh_banner_e17"),
-      (else_try) ,(is_between,":tr","trp_swan_knight_of_dol_amroth"   ,"trp_lothlorien_scout"),(assign, ":bm", "mesh_banner_e18"),
+      (try_begin),(is_between,":tr","trp_a1_blackroot_hunter"  ,"trp_i1_amroth_recruit"     ),(assign, ":bm", "mesh_banner_e04"),
+      (else_try) ,(is_between,":tr","trp_i1_pinnath_plainsman","trp_a1_blackroot_hunter"),(assign, ":bm", "mesh_banner_e07"),
+      (else_try) ,(is_between,":tr","trp_i1_lam_clansman"  ,"trp_i1_pinnath_plainsman"),(assign, ":bm", "mesh_banner_e11"),
+      (else_try) ,(is_between,":tr","trp_i1_pel_watchman"        ,"trp_i1_lam_clansman"),(assign, ":bm", "mesh_banner_e14"),
+      (else_try) ,(is_between,":tr","trp_i1_amroth_recruit"   ,"trp_c6_amroth_swan_knight"),(assign, ":bm", "mesh_banner_e17"),
+      (else_try) ,(is_between,":tr","trp_c6_amroth_swan_knight"   ,"trp_lothlorien_scout"),(assign, ":bm", "mesh_banner_e18"),
 	  (else_try) ,(eq,			":tr","trp_knight_1_3"      								 ),(assign, ":bm", "mesh_banner_e18"), #Imrahil
 	  (else_try) ,(eq,			":tr","trp_knight_1_6"      								 ),(assign, ":bm", "mesh_banner_e07"), #Hirluin
 	  (else_try) ,(eq,			":tr","trp_knight_6_1"      								 ),(assign, ":bm", "mesh_banner_e11"), #Dervorin
@@ -19785,9 +19788,9 @@ scripts = [
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
     (assign, ":bm", "mesh_banner_gondor"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
-      (try_begin),(is_between,":tr","trp_blackroot_vale_archer"   ,"trp_dol_amroth_youth"        ),(assign, ":bm", "mesh_banner_e03"),
-      (else_try) ,(is_between,":tr","trp_pinnath_gelin_plainsman","trp_blackroot_vale_archer"   ),(assign, ":bm", "mesh_banner_e06"),
-      (else_try) ,(is_between,":tr","trp_clansman_of_lamedon"     ,"trp_pinnath_gelin_plainsman"),(assign, ":bm", "mesh_banner_e10"),
+      (try_begin),(is_between,":tr","trp_a1_blackroot_hunter"   ,"trp_i1_amroth_recruit"        ),(assign, ":bm", "mesh_banner_e03"),
+      (else_try) ,(is_between,":tr","trp_i1_pinnath_plainsman","trp_a1_blackroot_hunter"   ),(assign, ":bm", "mesh_banner_e06"),
+      (else_try) ,(is_between,":tr","trp_i1_lam_clansman"     ,"trp_i1_pinnath_plainsman"),(assign, ":bm", "mesh_banner_e10"),
       (else_try), ##Kham - Player Subfac Tableaus
       	(eq, ":tr", "trp_player"),
       	(call_script, "script_get_faction_rank", "fac_gondor"), 
@@ -19871,8 +19874,8 @@ scripts = [
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
     (assign, ":bm", "mesh_banner_gondor"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
-      (try_begin),(is_between,":tr","trp_pelargir_watchman","trp_clansman_of_lamedon"),(assign, ":bm", "mesh_banner_e13"),
-      (else_try) ,(is_between,":tr","trp_steward_guard"    ,"trp_ranger_of_ithilien" ),(assign, ":bm", "mesh_banner_e15"),
+      (try_begin),(is_between,":tr","trp_i1_pel_watchman","trp_i1_lam_clansman"),(assign, ":bm", "mesh_banner_e13"),
+      (else_try) ,(is_between,":tr","trp_steward_guard"    ,"trp_a4_ithilien_ranger" ),(assign, ":bm", "mesh_banner_e15"),
       (else_try) ,(eq,		":tr",	"trp_knight_1_4"    ),								(assign, ":bm", "mesh_banner_e14"), #Orthalion
       (else_try), ##Kham - Player Subfac Tableaus
       	(eq, ":tr", "trp_player"),
@@ -21344,7 +21347,7 @@ scripts = [
             (gt,":tier_2_troop", 0),
             (assign,reg0,":tier_3_troop"),(assign,reg1,":tier_3_troop"),(assign,reg2,":tier_2_troop"),(assign,reg3,":tier_2_troop"),
         (else_try),
-            (assign,reg0,"trp_gondor_swordsmen"),(assign,reg1,"trp_gondor_swordsmen"),(assign,reg2,"trp_archer_of_gondor"),(assign,reg3,"trp_i3_footman_of_rohan"),
+            (assign,reg0,"trp_i4_gon_swordsman"),(assign,reg1,"trp_i4_gon_swordsman"),(assign,reg2,"trp_a4_gon_archer"),(assign,reg3,"trp_i3_footman_of_rohan"),
         (try_end),
         (shuffle_range,0,4),
         (set_visitor,25,reg0),(set_visitor,26,reg1),(set_visitor,27,reg2),(set_visitor,28,reg3),
@@ -22203,7 +22206,7 @@ scripts = [
 			(this_or_next|eq, ":troop_id", "trp_far_harad_panther_guard"),
 			(this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"),
 			(this_or_next|eq, ":troop_id", "trp_olog_hai"),
-			(			  eq, ":troop_id", "trp_blackroot_leader"),
+			(			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"),
 			(assign, ":continue", 0),
 		(try_end),
 
