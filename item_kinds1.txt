@@ -1881,92 +1881,92 @@ itemsfile version 2
  itm_harad_lamellar_greaves Harad_Boots Harad_Boots 1  harad_lamellar_greaves 0  69390 0 1000 704643072 3 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_a1 Khand_Helm_With_Camail Khand_Helm_With_Camail 1  Khand_Helmet_A1 0  65548 0 1000 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_a1 Khand_Helm_With_Camail Khand_Helm_With_Camail 1  khand_inf_helm_a2 0  65548 0 1000 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_a2 Khand_Helm Khand_Helm 1  Khand_Helmet_A2 0  65548 0 800 704643206 2 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_a2 Khand_Helm Khand_Helm 1  khand_inf_helm_a3 0  65548 0 800 704643206 2 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_a3 Khand_Veiled_Helm Khand_Veiled_Helm 1  Khand_Helmet_A3 0  65548 0 600 704643206 2 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_a3 Khand_Veiled_Helm Khand_Veiled_Helm 1  khand_inf_helm_a1 0  65548 0 600 704643206 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_b1 Khand_Decorated_Helm Khand_Decorated_Helm 1  Khand_Helmet_B1 0  65548 0 900 704643206 3 100 33 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_b1 Khand_Decorated_Helm Khand_Decorated_Helm 1  khand_cav_helm_c 0  65548 0 900 704643206 3 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_b2 Khand_Masked_Helm Khand_Masked_Helm 1  Khand_Helmet_B2 0  65548 0 1200 704643072 3.5 100 38 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_b2 Khand_Masked_Helm Khand_Masked_Helm 1  khand_cav_helm_a3 0  65548 0 1200 704643072 3.5 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_b3 Khand_Veiled_Helm Khand_Veiled_Helm 1  Khand_Helmet_B3 0  65548 0 600 704643206 2 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_b3 Khand_Veiled_Helm Khand_Veiled_Helm 1  khand_cav_helm_a1 0  65548 0 600 704643206 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_b4 Khand_Helm_With_Camail Khand_Helm_With_Camail 1  Khand_Helmet_B4 0  65548 0 1000 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_b4 Khand_Helm_With_Camail Khand_Helm_With_Camail 1  khand_cav_helm_a2 0  65548 0 1000 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_c3 Khand_Infantry_Helm Khand_Infantry_Helm 1  Khand_Helmet_C3 0  65548 0 800 704643206 3 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_c3 Khand_Infantry_Helm Khand_Infantry_Helm 1  khand_inf_helm_c2b 0  65548 0 800 704643206 3 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_c4 Khand_Infantry_Helm Khand_Infantry_Helm 1  Khand_Helmet_C4 0  65548 0 800 704643206 3 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_c4 Khand_Infantry_Helm Khand_Infantry_Helm 1  khand_inf_helm_c1b 0  65548 0 800 704643206 3 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_d1 Khand_Masked_Helm Khand_Masked_Helm 1  Khand_Helmet_D1 0  65548 0 1200 704643072 3.5 100 38 0 0 0 0 0 0 0 0 0 0
+ itm_free_khand_helmet_d1 Khand_Masked_Helm Khand_Masked_Helm 1  khand_inf_helm_d4 0  65548 0 1200 704643072 3.5 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_d2 Khand_Helm_With_Camail Khand_Helm_With_Camail 1  Khand_Helmet_D2 0  65548 0 1000 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_khand_inf_helm_a Khand_Helm Khand_Helm 3  khand_inf_helm_a1 134  khand_inf_helm_a2 0  khand_inf_helm_a3 167772160  65548 0 400 167772294 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_d3 Khand_Masked_Helm Khand_Masked_Helm 1  Khand_Helmet_D3 0  65548 0 1200 704643072 3.5 100 38 0 0 0 0 0 0 0 0 0 0
+ itm_khand_inf_helm_b Khand_Infantry_Helm Khand_Infantry_Helm 3  khand_inf_helm_b1 134  khand_inf_helm_b2 0  khand_inf_helm_b3 167772160  65548 0 600 167772294 3 100 29 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_e1 Khand_Veiled_Helm Khand_Veiled_Helm 1  Khand_Helmet_E1 0  65548 0 600 704643206 2 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_khand_inf_helm_c1 Khand_Infantry_Helm Khand_Infantry_Helm 3  khand_inf_helm_c1a 134  khand_inf_helm_c1b 0  khand_inf_helm_c1c 167772160  65548 0 800 167772294 3 100 31 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_e2 Khand_Helm_With_Camail Khand_Helm_With_Camail 1  Khand_Helmet_E2 0  65548 0 1000 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_khand_inf_helm_c2 Khand_Infantry_Helm Khand_Infantry_Helm 3  khand_inf_helm_c2a 134  khand_inf_helm_c2b 0  khand_inf_helm_c2c 167772160  65548 0 800 167772294 3 100 31 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_e3 Khand_Helm Khand_Helm 1  Khand_Helmet_E3 0  65548 0 800 704643206 2 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_khand_inf_helm_d Khand_Infantry_Helm Khand_Infantry_Helm 3  khand_inf_helm_d1 134  khand_inf_helm_d2 0  khand_inf_helm_d3 167772160  65548 0 800 167772294 3.5 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_e4 Khand_Veiled_Helm Khand_Veiled_Helm 1  Khand_Helmet_E4 0  65548 0 600 704643206 2 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_khand_cav_helm_a Khand_Cavalry_Helm Khand_Cavalry_Helm 3  khand_cav_helm_a1 134  khand_cav_helm_a2 0  khand_cav_helm_a3 167772160  65548 0 800 704643206 3 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_f1 Khand_Veiled_Helm Khand_Veiled_Helm 1  Khand_Helmet_F1 0  65548 0 500 704643206 2 100 26 0 0 0 0 0 0 0 0 0 0
+ itm_khand_cav_helm_b Khand_Cavalry_Helm Khand_Cavalry_Helm 2  khand_cav_helm_b 0  khand_cav_helm_b2 167772160  65548 0 1200 167772294 2 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_mask1 Khand_Mask Khand_Mask 1  Khand_Helmet_Mask1 0  16842764 0 300 704643206 2 100 20 0 0 0 0 0 0 0 0 0 0
+ itm_khand_cav_helm_c Khand_Decorated_Helm Khand_Decorated_Helm 2  khand_cav_helm_c 0  khand_cav_helm_c3 167772160  65548 0 1500 704643072 3 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_helmet_mask2 Khand_Mask Khand_Mask 1  Khand_Helmet_Mask2 0  16842764 0 300 704643206 2 100 20 0 0 0 0 0 0 0 0 0 0
+ itm_khand_helm_mask Khand_Mask Khand_Mask 2  Khand_Helmet_Mask2 0  Khand_Helmet_Mask1 167772160  16842764 0 100 167772294 0.5 100 20 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_light Khand_Kilt Khand_Kilt 1  khand_light 0  16842765 0 40 123731968 7 100 0 2 8 0 0 0 0 0 0 0 0
+ itm_khand_light Khand_Kilt Khand_Kilt 3  khand_light_a 134  khand_light_b 0  khand_light_c 167772160  16842765 0 40 167772294 7 100 0 8 8 0 0 0 0 0 0 0 0
 1
 -50  0 
 
- itm_khand_foot_lam_a Khand_Armor Khand_Armor 1  khand_foot_lam_a 0  16842765 0 1200 167772294 18 100 0 22 8 0 0 0 0 0 0 0 0
+ itm_khand_light_lam Khand_Armor Khand_Armor 1  khand_light_lam 0  16842765 0 1200 167772294 18 100 0 22 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_foot_lam_b Khand_Armor Khand_Armor 1  khand_foot_lam_b 0  16842765 0 1100 167772294 18 100 0 21 8 0 0 0 0 0 0 0 0
+ itm_khand_foot_lam Khand_Armor Khand_Armor 3  khand_foot_lam_a 134  khand_foot_lam_b 0  khand_foot_lam_c 167772160  16842765 0 1100 167772294 18 100 0 21 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_foot_lam_c Khand_Armor Khand_Armor 1  khand_foot_lam_c 0  16842765 0 1000 167772294 17 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_khand_med_lam Khand_Armor Khand_Armor 3  khand_med_lam_b 134  khand_med_lam_c 0  khand_med_lam_d 167772160  16842765 0 1000 167772294 17 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_heavy_lam Khand_Heavy_Lamellar Khand_Heavy_Lamellar 1  khand_heavy_lam 0  16842765 0 2000 704643072 25 100 0 30 12 0 0 0 0 0 0 0 0
+ itm_khand_heavy_lam Khand_Heavy_Lamellar Khand_Heavy_Lamellar 3  khand_heavy_lam_a 134  khand_heavy_lam_b 0  khand_noble_lam 167772160  16842765 0 2000 704643206 25 100 0 30 12 0 0 0 0 0 0 0 0
 0
 
- itm_khand_light_lam Khand_Light_Lamellar Khand_Light_Lamellar 1  khand_light_lam 0  16842765 0 1000 167772294 19 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_free_khand_light_lam Khand_Light_Lamellar Khand_Light_Lamellar 1  khand_light_lam 0  16842765 0 1000 167772294 19 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_med_lam_b Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_b 0  16842765 0 1200 167772294 22 100 0 26 10 0 0 0 0 0 0 0 0
+ itm_free_khand_med_lam_b Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_b 0  16842765 0 1200 167772294 22 100 0 26 10 0 0 0 0 0 0 0 0
 0
 
- itm_khand_med_lam_c Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_c 0  16842765 0 1300 167772294 23 100 0 27 10 0 0 0 0 0 0 0 0
+ itm_free_khand_med_lam_c Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_c 0  16842765 0 1300 167772294 23 100 0 27 10 0 0 0 0 0 0 0 0
 0
 
- itm_khand_med_lam_d Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_d 0  16842765 0 1400 167772294 23 100 0 28 10 0 0 0 0 0 0 0 0
+ itm_free_khand_med_lam_d Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_d 0  16842765 0 1400 167772294 23 100 0 28 10 0 0 0 0 0 0 0 0
 0
 
- itm_khand_noble_lam Khand_Noble_Armor Khand_Noble_Armor 1  khand_noble_lam 0  16842765 0 3000 704643072 26 100 2 32 13 0 0 0 0 0 0 0 0
+ itm_free_khand_noble_lam Khand_Noble_Armor Khand_Noble_Armor 1  khand_noble_lam 0  16842765 0 3000 704643072 26 100 2 32 13 0 0 0 0 0 0 0 0
 0
 
  itm_variag_greaves Variag_Greaves Variag_Greaves 1  variag_boots 0  69390 0 1000 704643206 2 100 0 0 24 0 0 0 0 0 0 0 0
@@ -1993,7 +1993,7 @@ itemsfile version 2
  itm_khand_mace2 Khand_Mace Khand_Mace 1  Khand_Weapon_Mace2 0  309242167298 9223388532775583758 200 286870 3.5 100 0 0 0 0 24576 99 0 77 0 256 536
 0
 
- itm_khand_mace_spiked Khand_Spiked_Mace Khand_Spiked_Mace 1  Khand_Weapon_Mace_Spiked 0  4521986 9223388532775583758 300 286870 3.5 100 0 0 0 0 24576 99 0 82 0 256 536
+ itm_khand_throwing_axe Khand_Throwing_Axe Khand_Throwing_Axe 1  Khand_Weapon_Throwing_Axe 0  71368714 196608 300 0 5 100 0 0 78 0 0 99 20 53 2 70 0
 0
 
  itm_khand_rammace Khand_Ram_Mace Khand_Ram_Mace 1  Khand_Weapon_Mace_Ram 0  279177461764 9223652418519040238 500 271496 6 100 0 0 0 0 33792 84 0 102 0 256 545
@@ -2014,7 +2014,7 @@ itemsfile version 2
  itm_easterling_round_horseman Easterling_Round_Shield Easterling_Round_Shield 1  eastershield_c 0  327687 5100273664 200 251658402 2.5 100 0 1 0 0 480 82 0 40 0 0 0
 0
 
- itm_variag_gladiator_shield Variag_Gladiator_Shield Variag_Gladiator_Shield 1  eastershield_b 0  327687 5100273664 200 251658402 2.5 100 0 1 0 0 480 82 0 40 0 0 0
+ itm_variag_gladiator_shield khand_gladiator_Shield khand_gladiator_Shield 1  eastershield_b 0  327687 5100273664 200 251658402 2.5 100 0 1 0 0 480 82 0 40 0 0 0
 0
 
  itm_easterling_hawk_shield Easterling_Hawk_Shield Easterling_Hawk_Shield 1  eastershield_a 0  327687 4831838208 200 251658402 2.5 100 0 1 0 0 480 82 0 80 0 0 0

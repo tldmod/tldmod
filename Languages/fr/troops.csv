@@ -520,42 +520,42 @@ trp_dunnish_wolf_guard|Garde du Loup du Pays de Dun
 trp_dunnish_wolf_guard_pl|Gardes du Loup du Pays de Dun
 trp_dunnish_chieftan|Cavalier du Corbeau du Pays de Dun
 trp_dunnish_chieftan_pl|Cavaliers du Corbeau du Pays de Dun
-trp_easterling_youth|Esclave Variag
-trp_easterling_youth_pl|Esclaves Variags
-trp_easterling_warrior|Guerrier du Khand
-trp_easterling_warrior_pl|Guerriers du Khand
-trp_easterling_axeman|Manieur de hache Variag
-trp_easterling_axeman_pl|Manieurs de haches Variags
-trp_easterling_veteran_axeman|Manieur de hache vétéran Variag
-trp_easterling_veteran_axeman_pl|Manieurs de haches vétérans Variags
-trp_easterling_axe_master|Maître manieur de hache Variag
-trp_easterling_axe_master_pl|Maîtres manieurs de haches Variags
-trp_easterling_rider|Chevaucheur de poney variag
-trp_easterling_rider_pl|Chevaucheurs de poneys variags
-trp_easterling_horseman|Cavalier Variag
-trp_easterling_horseman_pl|Cavaliers Variags
-trp_easterling_veteran_horseman|Cavalier lourd Variag
-trp_easterling_veteran_horseman_pl|Cavaliers lourds Variags
-trp_easterling_horsemaster|Cataphracte Variag
-trp_easterling_horsemaster_pl|Cataphractes Variags
-trp_easterling_lance_kataphract|Lancier cataphracte Variag
-trp_easterling_lance_kataphract_pl|Lanciers cataphractes Variags
-trp_khand_glaive_whirler|Faucheur du Khand
-trp_khand_glaive_whirler_pl|Faucheurs du Khand
-trp_variag_veteran_glaive_whirler|Faucheur vétéran du Khand
-trp_variag_veteran_glaive_whirler_pl|Faucheurs vétérans du Khand
-trp_khand_glaive_master|Maître Hallebardier du Khand
-trp_khand_glaive_master_pl|Maîtres Hallebardiers du Khand
-trp_variag_pitfighter|Gladiateur Variag
-trp_variag_pitfighter_pl|Gladiateurs Variags
-trp_variag_gladiator|Berserker Variag
-trp_variag_gladiator_pl|Berserkers Variag
-trp_easterling_skirmisher|Tirailleur Variag
-trp_easterling_skirmisher_pl|Tirailleurs Variags
-trp_easterling_veteran_skirmisher|Tirailleur vétéran Variag
-trp_easterling_veteran_skirmisher_pl|Tirailleurs vétérans Variags
-trp_easterling_elite_skirmisher|Tirailleur lourd Variag
-trp_easterling_elite_skirmisher_pl|Tirailleurs lourds Variags
+trp_i1_khand_bondsman|Esclave Variag
+trp_i1_khand_bondsman_pl|Esclaves Variags
+trp_i2_khand_pit_dog|Guerrier du Khand
+trp_i2_khand_pit_dog_pl|Guerriers du Khand
+trp_i3_khand_warrior|Manieur de hache Variag
+trp_i3_khand_warrior_pl|Manieurs de haches Variags
+trp_i4_khand_vet_warrior|Manieur de hache vétéran Variag
+trp_i4_khand_vet_warrior_pl|Manieurs de haches vétérans Variags
+trp_i5_khand_war_master|Maître manieur de hache Variag
+trp_i5_khand_war_master_pl|Maîtres manieurs de haches Variags
+trp_c2_khand_pony_rider|Chevaucheur de poney variag
+trp_c2_khand_pony_rider_pl|Chevaucheurs de poneys variags
+trp_c3_khand_horseman|Cavalier Variag
+trp_c3_khand_horseman_pl|Cavaliers Variags
+trp_c4_khand_heavy_horseman|Cavalier lourd Variag
+trp_c4_khand_heavy_horseman_pl|Cavaliers lourds Variags
+trp_c5_khand_kataphrakt|Cataphracte Variag
+trp_c5_khand_kataphrakt_pl|Cataphractes Variags
+trp_c5_khand_lance_kataphrakt|Lancier cataphracte Variag
+trp_c5_khand_lance_kataphrakt_pl|Lanciers cataphractes Variags
+trp_i4_khand_halberdier|Faucheur du Khand
+trp_i4_khand_halberdier_pl|Faucheurs du Khand
+trp_i4_khand_halberdier|Faucheur vétéran du Khand
+trp_i4_khand_halberdier_pl|Faucheurs vétérans du Khand
+trp_i5_khand_halberd_master|Maître Hallebardier du Khand
+trp_i5_khand_halberd_master_pl|Maîtres Hallebardiers du Khand
+trp_i4_khand_pit_champion|Gladiateur Variag
+trp_i4_khand_pit_champion_pl|Gladiateurs Variags
+trp_i5_khand_pit_master|Berserker Variag
+trp_i5_khand_pit_master_pl|Berserkers Variag
+trp_ac3_khand_skirmisher|Tirailleur Variag
+trp_ac3_khand_skirmisher_pl|Tirailleurs Variags
+trp_ac4_khand_vet_skirmisher|Tirailleur vétéran Variag
+trp_ac4_khand_vet_skirmisher_pl|Tirailleurs vétérans Variags
+trp_ac5_khand_heavy_skirmisher|Tirailleur lourd Variag
+trp_ac5_khand_heavy_skirmisher_pl|Tirailleurs lourds Variags
 trp_i1_corsair_youth|Marin d'Umbar
 trp_i1_corsair_youth_pl|Marins d'Umbar
 trp_i2_corsair_warrior|Guerrier d'Umbar

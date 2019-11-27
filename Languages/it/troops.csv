@@ -520,42 +520,42 @@ trp_dunnish_wolf_guard|Guardia Dunlandiana dell'Ordine del Lupo
 trp_dunnish_wolf_guard_pl|Guardie Dunlandiane dell'Ordine del Lupo
 trp_dunnish_chieftan|Cavallerizzo Corvo Dunlandiano
 trp_dunnish_chieftan_pl|Cavallerizzi Corvo Dunlandiani
-trp_easterling_youth|Schiavo Variago
-trp_easterling_youth_pl|Schiavi Variaghi
-trp_easterling_warrior|Guerriero di Khand
-trp_easterling_warrior_pl|Guerrieri di Khand
-trp_easterling_axeman|Uomo d'ascia Variago
-trp_easterling_axeman_pl|Uomini d'ascia Variaghi
-trp_easterling_veteran_axeman|Uomo d'ascia Veterano Variago
-trp_easterling_veteran_axeman_pl|Uomini d'ascia veterani Variaghi
-trp_easterling_axe_master|Mastro d'ascia Variago
-trp_easterling_axe_master_pl|Mastri d'ascia Variaghi
-trp_easterling_rider|Cavalcatore di Pony Variago
-trp_easterling_rider_pl|Cavalcatori di Pony Variaghi
-trp_easterling_horseman|Uomo a cavallo Variago
-trp_easterling_horseman_pl|Uomini a cavallo Variaghi
-trp_easterling_veteran_horseman|Uomo a cavallo Pesante Variago
-trp_easterling_veteran_horseman_pl|Uomini a cavallo Pesanti Variaghi
-trp_easterling_horsemaster|Cavaliere Variago
-trp_easterling_horsemaster_pl|Cavalieri Variaghi
-trp_easterling_lance_kataphract|Cavaliere con Lancia Variago
-trp_easterling_lance_kataphract_pl|Cavalieri con Lancia Variaghi
-trp_khand_glaive_whirler|Spadaccino Khand
-trp_khand_glaive_whirler_pl|Spadaccini Khand
-trp_variag_veteran_glaive_whirler|Spadaccino Veterano Khand
-trp_variag_veteran_glaive_whirler_pl|Spadaccini Veterani Khand
-trp_khand_glaive_master|Mastro d'Alabarda Khand
-trp_khand_glaive_master_pl|Mastri d'Alabarda Khand
-trp_variag_pitfighter|Lottatore d'Arena Variago
-trp_variag_pitfighter_pl|Lottatori d'Arena Variaghi
-trp_variag_gladiator|Berserker Variago
-trp_variag_gladiator_pl|Berserker Variaghi
-trp_easterling_skirmisher|Schermagliatore Variago
-trp_easterling_skirmisher_pl|Schermagliatori Variaghi
-trp_easterling_veteran_skirmisher|Schermagliatore Veterano Variago
-trp_easterling_veteran_skirmisher_pl|Schermagliatori Veterani Variaghi
-trp_easterling_elite_skirmisher|Schermagliatore Pesante Variago
-trp_easterling_elite_skirmisher_pl|Schermagliatori Pesanti Variaghi
+trp_i1_khand_bondsman|Schiavo Variago
+trp_i1_khand_bondsman_pl|Schiavi Variaghi
+trp_i2_khand_pit_dog|Guerriero di Khand
+trp_i2_khand_pit_dog_pl|Guerrieri di Khand
+trp_i3_khand_warrior|Uomo d'ascia Variago
+trp_i3_khand_warrior_pl|Uomini d'ascia Variaghi
+trp_i4_khand_vet_warrior|Uomo d'ascia Veterano Variago
+trp_i4_khand_vet_warrior_pl|Uomini d'ascia veterani Variaghi
+trp_i5_khand_war_master|Mastro d'ascia Variago
+trp_i5_khand_war_master_pl|Mastri d'ascia Variaghi
+trp_c2_khand_pony_rider|Cavalcatore di Pony Variago
+trp_c2_khand_pony_rider_pl|Cavalcatori di Pony Variaghi
+trp_c3_khand_horseman|Uomo a cavallo Variago
+trp_c3_khand_horseman_pl|Uomini a cavallo Variaghi
+trp_c4_khand_heavy_horseman|Uomo a cavallo Pesante Variago
+trp_c4_khand_heavy_horseman_pl|Uomini a cavallo Pesanti Variaghi
+trp_c5_khand_kataphrakt|Cavaliere Variago
+trp_c5_khand_kataphrakt_pl|Cavalieri Variaghi
+trp_c5_khand_lance_kataphrakt|Cavaliere con Lancia Variago
+trp_c5_khand_lance_kataphrakt_pl|Cavalieri con Lancia Variaghi
+trp_i4_khand_halberdier|Spadaccino Khand
+trp_i4_khand_halberdier_pl|Spadaccini Khand
+trp_i4_khand_halberdier|Spadaccino Veterano Khand
+trp_i4_khand_halberdier_pl|Spadaccini Veterani Khand
+trp_i5_khand_halberd_master|Mastro d'Alabarda Khand
+trp_i5_khand_halberd_master_pl|Mastri d'Alabarda Khand
+trp_i4_khand_pit_champion|Lottatore d'Arena Variago
+trp_i4_khand_pit_champion_pl|Lottatori d'Arena Variaghi
+trp_i5_khand_pit_master|Berserker Variago
+trp_i5_khand_pit_master_pl|Berserker Variaghi
+trp_ac3_khand_skirmisher|Schermagliatore Variago
+trp_ac3_khand_skirmisher_pl|Schermagliatori Variaghi
+trp_ac4_khand_vet_skirmisher|Schermagliatore Veterano Variago
+trp_ac4_khand_vet_skirmisher_pl|Schermagliatori Veterani Variaghi
+trp_ac5_khand_heavy_skirmisher|Schermagliatore Pesante Variago
+trp_ac5_khand_heavy_skirmisher_pl|Schermagliatori Pesanti Variaghi
 trp_i1_corsair_youth|Marinaio di Umbar
 trp_i1_corsair_youth_pl|Marinai di Umbar
 trp_i2_corsair_warrior|Guerriero di Umbar

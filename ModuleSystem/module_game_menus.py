@@ -1168,7 +1168,7 @@ game_menus = [
 			(eq,":bfac",0),(assign,":trp_bad_min","trp_i1_rhun_tribesman"       ),(assign,":trp_bad_max","trp_c6_rhun_dorwinion_noble"    ),(else_try),
 			(eq,":bfac",1),(assign,":trp_bad_min","trp_harad_desert_warrior" ),(assign,":trp_bad_max","trp_gold_serpent_horse_archer" ),(else_try),
 			(eq,":bfac",2),(assign,":trp_bad_min","trp_dunnish_wildman"      ),(assign,":trp_bad_max","trp_dunnish_chieftan"           ),(else_try),
-			(eq,":bfac",3),(assign,":trp_bad_min","trp_easterling_youth"     ),(assign,":trp_bad_max","trp_easterling_elite_skirmisher"),(else_try),
+			(eq,":bfac",3),(assign,":trp_bad_min","trp_i1_khand_bondsman"     ),(assign,":trp_bad_max","trp_ac5_khand_heavy_skirmisher"),(else_try),
 			(eq,":bfac",4),(assign,":trp_bad_min","trp_i1_corsair_youth"        ),(assign,":trp_bad_max","trp_i5_corsair_master_pikeman"       ),(else_try),
 			(eq,":bfac",5),(assign,":trp_bad_min","trp_orc_snaga_of_isengard"),(assign,":trp_bad_max","trp_fighting_uruk_hai_pikeman"  ),(else_try),
 			(eq,":bfac",6),(assign,":trp_bad_min","trp_orc_snaga_of_mordor"  ),(assign,":trp_bad_max","trp_fell_orc_archer_of_mordor"  ),(else_try),
@@ -1488,7 +1488,7 @@ game_menus = [
  ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_renegade"),(jump_to_menu,"mnu_start_numenorean"),]),
  ("start_um",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_i1_corsair_youth"),            (jump_to_menu,"mnu_choose_gender"),]),
  ("start_rh",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_i1_rhun_tribesman"),           (jump_to_menu,"mnu_choose_gender"),]),
- ("start_kh",[],"KHAND, the savage people from South-East",      [(call_script,"script_start_as_one","trp_easterling_youth"),         (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_kh",[],"KHAND, the savage people from South-East",      [(call_script,"script_start_as_one","trp_i1_khand_bondsman"),         (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back",[],"Go back",[
  	#(jump_to_menu, "mnu_start_eye")

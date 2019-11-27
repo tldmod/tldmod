@@ -1203,7 +1203,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     #(troop_add_item, "trp_npc18", "itm_khand_light"),
     (troop_add_item, "trp_npc18", "itm_javelin"),
     (troop_add_item, "trp_npc18", "itm_leather_boots"),
-    (troop_add_item, "trp_npc18", "itm_khand_helmet_mask2"),
+    (troop_add_item, "trp_npc18", "itm_khand_helm_mask"),
     (troop_add_item, "trp_npc18", "itm_khand_pitsword"),
     (troop_add_item, "trp_npc18", "itm_easterling_hawk_shield"),
     (troop_equip_items, "trp_npc18"),

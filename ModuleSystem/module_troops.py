@@ -91,27 +91,27 @@ gondor_skills_4 = knows_riding_4|knows_ironflesh_5|knows_power_strike_6|knows_at
 gondor_skills_5 = knows_riding_4|knows_ironflesh_6|knows_power_strike_7|knows_athletics_5|knows_tactics_6|knows_prisoner_management_3|knows_leadership_10
 
 #TLD troop attributes
-attr_tier_1 =  str_7| agi_5| int_4| cha_4|level(5) #Recruits, 53 matches
-attr_tier_2 = str_10| agi_7| int_4| cha_4|level(10) #Militia, guardsmen, tribal warriors, scouts, squires, 37 matches
-attr_tier_3 = str_13|agi_11| int_4| cha_4|level(15) # low-tier professionals / high-tier militia 47 matches
-attr_tier_4 = str_15|agi_15| int_4| cha_4|level(20) # Standard professionals. These are the "backbone" troops 52 matches
-attr_tier_5 = str_18|agi_18| int_4| cha_4|level(30) # Elite or high-tier professionals
-attr_tier_6 = str_20|agi_20|int_20|cha_20|level(40) # Super elite Rohan, Gondor, some captains
+attr_tier_1 =  str_7| agi_6| int_6| cha_6|level(5) #Recruits, 53 matches
+attr_tier_2 = str_10| agi_8| int_6| cha_6|level(10) #Militia, guardsmen, tribal warriors, scouts, squires, 37 matches
+attr_tier_3 = str_13|agi_10| int_6| cha_6|level(15) # low-tier professionals / high-tier militia 47 matches
+attr_tier_4 = str_15|agi_13| int_6| cha_6|level(20) # Standard professionals. These are the "backbone" troops 52 matches
+attr_tier_5 = str_18|agi_16| int_8| cha_8|level(30) # Elite or high-tier professionals
+attr_tier_6 = str_20|agi_18|int_20|cha_20|level(40) # Super elite Rohan, Gondor, some captains
 attr_tier_7 = str_22|agi_22|int_22|cha_22|level(45) #Lords and captains
 
-attr_elf_tier_1 = str_12|agi_12| int_4| cha_4|level(6)
-attr_elf_tier_2 = str_14|agi_14| int_4| cha_4|level(12)
-attr_elf_tier_3 = str_18|agi_18| int_4| cha_4|level(18)
-attr_elf_tier_4 = str_18|agi_24| int_4| cha_4|level(26)
-attr_elf_tier_5 = str_24|agi_27| int_4| cha_4|level(38) #GA upped higher levels a bit
+attr_elf_tier_1 = str_12|agi_12| int_6| int_6|level(6)
+attr_elf_tier_2 = str_14|agi_14| int_6| int_6|level(12)
+attr_elf_tier_3 = str_18|agi_18| int_6| int_6|level(18)
+attr_elf_tier_4 = str_18|agi_24| int_6| int_6|level(26)
+attr_elf_tier_5 = str_24|agi_27| int_7| int_7|level(38) #GA upped higher levels a bit
 attr_elf_tier_6 = str_30|agi_30|int_20|cha_20|level(50)
 
-attr_dwarf_tier_1 =  str_9| agi_6| int_4| cha_4|level(6)
-attr_dwarf_tier_2 = str_12| agi_9| int_4| cha_4|level(11)
-attr_dwarf_tier_3 = str_15|agi_11| int_4| cha_4|level(16)
-attr_dwarf_tier_4 = str_18|agi_13| int_4| cha_4|level(21)
-attr_dwarf_tier_5 = str_18|agi_18| int_4| cha_4|level(35) #GA upped 2 highest levels a bit
-attr_dwarf_tier_6 = str_24|agi_18| int_4| cha_4|level(48)
+attr_dwarf_tier_1 =  str_9| agi_6| int_6| int_6|level(6)
+attr_dwarf_tier_2 = str_12| agi_7| int_6| int_6|level(11)
+attr_dwarf_tier_3 = str_15| agi_9| int_6| int_6|level(16)
+attr_dwarf_tier_4 = str_18|agi_11| int_6| int_6|level(21)
+attr_dwarf_tier_5 = str_24|agi_15| int_8| int_8|level(35) #GA upped 2 highest levels a bit
+attr_dwarf_tier_6 = str_30|agi_18| int_20| int_20|level(48)
 
 # InVain: Not in yet, we need more tests if we can savely reduce elven and dwarf armies' size.
 
@@ -130,18 +130,18 @@ attr_dwarf_tier_6 = str_24|agi_18| int_4| cha_4|level(48)
 #attr_dwarf_tier_6 = str_24|agi_18| int_4| cha_4|level(57)																																																		 
 
 # InVain: ~halfed orc levels, worse in autocalc, but easier to train and cheaper.
-attr_orc_tier_1 =  str_5| agi_5| int_4| cha_4|level(2)
-attr_orc_tier_2 =  str_7| agi_7| int_4| cha_4|level(5)
-attr_orc_tier_3 =  str_9| agi_8| int_4| cha_4|level(8)
-attr_orc_tier_4 = str_11| agi_9| int_4| cha_4|level(13) #elite orcs
-attr_orc_tier_5 = str_16|agi_11| int_4| cha_4|level(25) #super-elite, Moria and Gundabad only #upped lvl by a lot, because these troops are quite strong
-attr_orc_tier_6 = str_17|agi_12| int_4| cha_4|level(45) #lords only
+attr_orc_tier_1 =  str_5| agi_5| int_6| cha_6|level(2)
+attr_orc_tier_2 =  str_7| agi_7| int_6| cha_6|level(5)
+attr_orc_tier_3 =  str_9| agi_8| int_6| cha_6|level(8)
+attr_orc_tier_4 = str_11| agi_9| int_7| cha_7|level(13) #elite orcs
+attr_orc_tier_5 = str_16|agi_11| int_9| cha_9|level(25) #super-elite, Moria and Gundabad only #upped lvl by a lot, because these troops are quite strong
+attr_orc_tier_6 = str_22|agi_12| int_9| cha_9|level(45) #lords only
 
 # InVain: Uruks and evil men (except black numenoreans): Middle ground between orcs and good men, their level simulating their worse equipment in autocalc, but easier to train and cheaper. Elites are good.
-attr_evil_tier_1 =  str_7| agi_5| int_4| cha_4|level(3)
-attr_evil_tier_2 = str_10| agi_7| int_4| cha_4|level(7)
-attr_evil_tier_3 = str_13|agi_11| int_4| cha_4|level(11)
-attr_evil_tier_4 = str_15|agi_15| int_4| cha_4|level(16) #Mordor Uruk top tier
+attr_evil_tier_1 =  str_7| agi_5| int_6| int_6|level(3)
+attr_evil_tier_2 = str_10| agi_7| int_6| int_6|level(7)
+attr_evil_tier_3 = str_13|agi_11| int_6| int_6|level(11)
+attr_evil_tier_4 = str_15|agi_15| int_6| int_6|level(16) #Mordor Uruk top tier
 attr_evil_tier_5 = str_18|agi_18| int_4| cha_4|level(28) #evil men elites are strong, Isen Uruk Champions too #upped lvl a bit
 attr_evil_tier_6 = str_20|agi_20|int_20|cha_20|level(36) #only Isengard berserkers and Rhun Nobles
 
@@ -676,6 +676,36 @@ itm_lorien_heavy_cloak = (itm_lorien_armor_c , imod_cloak)
 itm_lorien_heavy_good = (itm_lorien_armor_c , imod_thick)
 itm_lorien_heavy_good_cloak = (itm_lorien_armor_c , imod_reinforced)
 
+#Khand helms
+itm_khand_inf_helm_a_good = (itm_khand_inf_helm_a, imod_reinforced)
+itm_khand_inf_helm_a_bad = (itm_khand_inf_helm_a, imod_cracked)
+itm_khand_inf_helm_b_good = (itm_khand_inf_helm_b, imod_reinforced)
+itm_khand_inf_helm_b_bad = (itm_khand_inf_helm_b, imod_cracked)
+itm_khand_inf_helm_c1_good = (itm_khand_inf_helm_c1, imod_reinforced)
+itm_khand_inf_helm_c1_bad = (itm_khand_inf_helm_c1, imod_cracked)
+itm_khand_inf_helm_c2_good = (itm_khand_inf_helm_c2, imod_reinforced)
+itm_khand_inf_helm_c2_bad = (itm_khand_inf_helm_c2, imod_cracked)
+itm_khand_inf_helm_d_good = (itm_khand_inf_helm_d, imod_reinforced)
+itm_khand_inf_helm_d_bad = (itm_khand_inf_helm_d, imod_cracked)
+itm_khand_cav_helm_a_good = (itm_khand_cav_helm_a, imod_reinforced)
+itm_khand_cav_helm_a_bad = (itm_khand_cav_helm_a, imod_cracked)
+itm_khand_cav_helm_b_good = (itm_khand_cav_helm_b, imod_reinforced)
+itm_khand_cav_helm_c_good = (itm_khand_cav_helm_c, imod_reinforced)
+itm_khand_helm_mask_good = (itm_khand_helm_mask, imod_reinforced)
+
+#Khand armours
+itm_khand_light_good = (itm_khand_light, imod_thick)
+itm_khand_light_bad = (itm_khand_light, imod_cracked)
+itm_khand_light_lam_good = (itm_khand_light_lam, imod_thick)
+itm_khand_light_lam_bad = (itm_khand_light_lam, imod_cracked)
+itm_khand_foot_lam_good = (itm_khand_foot_lam, imod_thick)
+itm_khand_foot_lam_bad = (itm_khand_foot_lam, imod_cracked)
+itm_khand_med_lam_good = (itm_khand_med_lam, imod_thick)
+itm_khand_med_lam_bad = (itm_khand_med_lam, imod_cracked)
+itm_khand_heavy_lam_good = (itm_khand_heavy_lam, imod_thick)
+itm_khand_heavy_lam_bad = (itm_khand_heavy_lam, imod_cracked)
+itm_khand_noble_lam = (itm_khand_heavy_lam, imod_reinforced)
+
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face
 # 0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000  bearded player face
  
@@ -1145,62 +1175,26 @@ troops = [
    [itm_sumpter_horse,itm_saddle_horse,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       0,0,0,0],
 
-#Easterlings 
-["easterling_youth","Variag_Bondsman","Variag_Bondsmen",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_khand,
-   [itm_khand_light,itm_leather_boots,itm_spear,itm_khand_mace1,],
-      attr_evil_tier_1,wp_tier_1,knows_common|knows_athletics_1,khand_man1,khand_man2],
-["easterling_warrior","Warrior_of_Khand","Warriors_of_Khand",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_khand,
-   [itm_khand_light,itm_leather_boots,itm_khand_helmet_a2,itm_khand_voulge,itm_spear,itm_khand_tulwar,itm_khand_mace1,itm_tab_shield_small_round_b,],
-      attr_evil_tier_2,wp_tier_2,knows_common|knows_athletics_1|knows_shield_1|knows_power_strike_2,khand_man1,khand_man2],
-["easterling_axeman","Variag_Axeman","Variag_Axemen",tf_evil_man| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
-   [itm_khand_foot_lam_c,itm_leather_boots,itm_khand_helmet_a2,itm_khand_axe_winged,],
-      attr_evil_tier_3,wp_tier_3,knows_common|knows_athletics_2|knows_shield_1|knows_power_strike_3|knows_ironflesh_1,khand_man1,khand_man2],
-["easterling_veteran_axeman","Variag_Veteran_Axeman","Variag_Veteran_Axemen",tf_evil_man| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
-   [itm_khand_foot_lam_b,itm_variag_greaves,itm_khand_helmet_c3,itm_khand_helmet_c4,itm_khand_axe_winged,],
-      attr_evil_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_shield_2|knows_power_strike_4|knows_ironflesh_2,khand_man1,khand_man2],
-["easterling_axe_master","Variag_Axe_Master","Variag_Axe_Masters",tf_evil_man| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
-   [itm_khand_foot_lam_a,itm_variag_greaves,itm_khand_helmet_c3,itm_khand_helmet_c4,itm_khand_axe_great,],
-      attr_evil_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_2|knows_power_strike_5|knows_ironflesh_3,khand_man1,khand_man2],
-["easterling_rider","Variag_Pony_Rider","Variag_Pony_Riders",tf_evil_man| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_khand,
-   [itm_khand_light_lam,itm_leather_boots,itm_variag_pony,itm_khand_tulwar,itm_khand_mace1,],
-      attr_evil_tier_2,wp_tier_2,knows_common|knows_riding_2|knows_shield_1|knows_power_strike_1,khand_man1,khand_man2],
-["easterling_horseman","Variag_Horseman","Variag_Horsemen",tf_evil_man| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_khand,
-   [itm_khand_med_lam_b,itm_leather_boots,itm_variag_pony,itm_khand_helmet_a2,itm_khand_helmet_a3,itm_khand_helmet_b3,itm_khand_tulwar,itm_khand_mace1,itm_leather_gloves,itm_easterling_round_horseman,],
-      attr_evil_tier_3,wp_tier_3,knows_common|knows_riding_2|knows_shield_1|knows_power_strike_2,khand_man1,khand_man2],
-["easterling_veteran_horseman","Variag_Heavy_Horseman","Variag_Heavy_Horsemen",tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,
-   [itm_khand_med_lam_c,itm_variag_greaves,itm_variag_pony,itm_khand_helmet_a2,itm_khand_helmet_a3,itm_khand_helmet_b3,itm_khand_tulwar,itm_khand_mace1,itm_khand_mace2,itm_mail_mittens,itm_easterling_round_horseman,],
-      attr_evil_tier_4,wp_tier_4,knows_common|knows_riding_5|knows_shield_3|knows_power_strike_2|knows_ironflesh_2,khand_man1,khand_man2],
-["easterling_horsemaster","Variag_Kataphrakt","Variag_Kataphrakts",tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,
-   [itm_khand_med_lam_d,itm_variag_greaves,itm_variag_kataphrakt,itm_khand_helmet_a1,itm_khand_helmet_b4,itm_khand_helmet_d2,itm_khand_tulwar,itm_khand_lance,itm_mail_mittens,itm_easterling_round_horseman,],
-      attr_evil_tier_5,wp_tier_5,knows_common|knows_riding_5|knows_shield_3|knows_power_strike_4|knows_ironflesh_2,khand_man1,khand_man2],
-["easterling_lance_kataphract","Variag_Lance_Kataphrakt","Variag_Lance_Kataphrakts",tf_evil_man| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots  |tfg_polearm,0,0,fac_khand,
-   [itm_khand_heavy_lam,itm_variag_greaves,itm_variag_kataphrakt,itm_khand_helmet_b2,itm_khand_helmet_d1,itm_khand_helmet_d3,itm_khand_lance,itm_mail_mittens,],
-      attr_evil_tier_5,wp_tier_5,knows_common|knows_riding_5|knows_shield_3|knows_power_strike_4|knows_ironflesh_2,khand_man1,khand_man2],
-#Khand Variags
-["khand_glaive_whirler","Khand_Blade_Whirler","Khand_Blade_Whirlers",tf_evil_man| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
-   [itm_khand_foot_lam_c,itm_leather_boots,itm_khand_helmet_e1,itm_khand_helmet_e4,itm_khand_helmet_e3,itm_khand_voulge,itm_leather_gloves,],
-      attr_evil_tier_3,wp_tier_3,knows_common|knows_athletics_1|knows_power_strike_2|knows_ironflesh_1,khand_man1,khand_man2],
-["variag_veteran_glaive_whirler","Khand_Veteran_Blade_Whirler","Khand_Veteran_Blade_Whirlers",tf_evil_man| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
-   [itm_khand_foot_lam_b,itm_leather_boots,itm_khand_helmet_e2,itm_khand_helmet_e3,itm_khand_voulge,itm_khand_halberd,itm_mail_mittens,],
-      attr_evil_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_power_strike_3|knows_ironflesh_1,khand_man1,khand_man2],
-["khand_glaive_master","Khand_Halberd_Master","Khand_Halberd_Masters",tf_evil_man| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
-   [itm_khand_foot_lam_a,itm_variag_greaves,itm_khand_helmet_e2,itm_khand_halberd,itm_mail_mittens,],
-      attr_evil_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_power_throw_4|knows_power_strike_4|knows_ironflesh_2,khand_man1,khand_man2],
-["variag_pitfighter","Variag_Pitfighter","Variag_Pitfighters",tf_evil_man| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
-   [itm_khand_light,itm_javelin,itm_leather_boots,itm_khand_helmet_mask1,itm_khand_helmet_mask2,itm_khand_tulwar,itm_khand_pitsword,itm_easterling_hawk_shield,itm_variag_gladiator_shield,itm_tab_shield_small_round_b,],
-      attr_evil_tier_4,wp_tier_4,knows_common|knows_athletics_5|knows_power_throw_2|knows_power_strike_4|knows_ironflesh_4,khand_man1,khand_man2],
-["variag_gladiator","Variag_Berserker","Variag_Berserkers",tf_evil_man| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
-   [itm_khand_light,itm_javelin,itm_leather_boots,itm_khand_helmet_mask1,itm_khand_helmet_mask2,itm_khand_2h_tulwar,itm_khand_tulwar,itm_khand_pitsword,itm_khand_mace_spiked,itm_khand_2h_tulwar,itm_easterling_hawk_shield,itm_tab_shield_small_round_b,],
-      attr_evil_tier_5,wp_tier_5,knows_common|knows_athletics_6|knows_power_throw_3|knows_power_strike_5|knows_ironflesh_6,khand_man1,khand_man2],
-["easterling_skirmisher","Variag_Skirmisher","Variag_Skirmishers",tf_evil_man| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,
-   [itm_khand_light_lam,itm_javelin,itm_leather_boots,itm_variag_pony,itm_khand_helmet_a2,itm_khand_tulwar,itm_khand_mace1,itm_khand_mace2,],
-      attr_evil_tier_3,wp_tier_3,knows_common|knows_horse_archery_2|knows_riding_2|knows_power_throw_2|knows_power_strike_1,khand_man1,khand_man2],
-["easterling_veteran_skirmisher","Variag_Veteran_Skirmisher","Variag_Veteran_Skirmishers",tf_evil_man| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,
-   [itm_khand_med_lam_b,itm_javelin,itm_variag_greaves,itm_variag_pony,itm_khand_helmet_a2,itm_leather_gloves,itm_khand_tulwar,itm_khand_mace1,itm_khand_mace2,itm_easterling_round_horseman,],
-      attr_evil_tier_4,wp_tier_4,knows_common|knows_horse_archery_3|knows_riding_4|knows_shield_3|knows_power_throw_3|knows_power_strike_2|knows_ironflesh_2,khand_man1,khand_man2],
-["easterling_elite_skirmisher","Variag_Heavy_Skirmisher","Variag_Heavy_Skirmishers",tf_evil_man| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,
-   [itm_khand_med_lam_c,itm_javelin,itm_variag_greaves,itm_variag_kataphrakt,itm_khand_helmet_a1,itm_leather_gloves,itm_khand_tulwar,itm_khand_mace1,itm_khand_mace2,itm_easterling_round_horseman,],
-      attr_evil_tier_5,wp_tier_5,knows_common|knows_horse_archery_4|knows_riding_5|knows_shield_2|knows_power_throw_4|knows_power_strike_3|knows_ironflesh_2,khand_man1,khand_man2],
+#KHAND
+["i1_khand_bondsman","Khand_Bondsman","Khand_Bondsmen",tf_evil_man| tfg_armor,0,0,fac_khand,[itm_khand_light_bad,itm_spear,itm_khand_mace1,itm_shortened_spear,itm_khand_pitsword,],attr_evil_tier_1,wp_tier_1,knows_common|knows_athletics_2|knows_power_strike_1,khand_man1,khand_man2],
+["i2_khand_pit_dog","Khand_Pit_Dog","Khand_Pit_Dogs",tf_evil_man| tfg_armor,0,0,fac_khand,[itm_khand_helm_mask,itm_khand_inf_helm_a_bad,itm_khand_light,itm_leather_boots,itm_khand_voulge,itm_spear,itm_khand_tulwar,itm_khand_pitsword,itm_tab_shield_small_round_b,],attr_evil_tier_2,wp_tier_2,knows_common|knows_athletics_2|knows_shield_1|knows_power_strike_2,khand_man1,khand_man2],
+["i3_khand_warrior","Khand_Warrior","Khand_Warriors",tf_evil_man| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_a,itm_khand_inf_helm_b,itm_khand_light_lam,itm_khand_light_good,itm_khand_foot_lam_bad,itm_leather_gloves,itm_leather_boots,itm_khand_axe_winged,itm_khand_tulwar,itm_khand_voulge,],attr_evil_tier_3,wp_tier_3,knows_common|knows_athletics_2|knows_shield_1|knows_power_strike_3|knows_ironflesh_2,khand_man1,khand_man2],
+["i4_khand_vet_warrior","Khand_Veteran_Warrior","Variag_Veteran_Warrior",tf_evil_man| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_b_good, itm_khand_inf_helm_c1, itm_khand_inf_helm_c2,itm_khand_foot_lam,itm_mail_mittens,itm_variag_greaves,itm_khand_axe_winged,itm_khand_tulwar, itm_khand_2h_tulwar,],attr_evil_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_shield_2|knows_power_strike_4|knows_ironflesh_3,khand_man1,khand_man2],
+["i5_khand_war_master","Variag_Master_of_War","Variag_Masters_of_War",tf_evil_man| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_c1_good, itm_khand_inf_helm_c2_good,itm_khand_foot_lam_good,itm_mail_mittens,itm_variag_greaves,itm_khand_axe_great,itm_khand_2h_tulwar,itm_khand_throwing_axe,],attr_evil_tier_5,wp_tier_5,knows_common|knows_athletics_2|knows_power_throw_5|knows_power_strike_5|knows_ironflesh_4,khand_man1,khand_man2],
+["c2_khand_pony_rider","Khand_Pony_Rider","Khand_Pony_Riders",tf_evil_man| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_a_bad, itm_khand_inf_helm_b_bad, itm_khand_cav_helm_a_bad,itm_khand_light,itm_khand_light_lam,itm_leather_boots,itm_khand_tulwar,itm_khand_mace1,itm_variag_pony,],attr_evil_tier_2,wp_tier_2,knows_common|knows_riding_2|knows_shield_1|knows_power_strike_1,khand_man1,khand_man2],
+["c3_khand_horseman","Khand_Horseman","Khand_Horsemen",tf_evil_man| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_a,itm_khand_inf_helm_a_good, itm_khand_cav_helm_a, itm_khand_med_lam_bad,itm_leather_gloves,itm_leather_boots,itm_khand_tulwar,itm_khand_mace1,itm_easterling_round_horseman,itm_variag_pony,],attr_evil_tier_3,wp_tier_3,knows_common|knows_riding_2|knows_shield_1|knows_power_strike_2,khand_man1,khand_man2],
+["c4_khand_heavy_horseman","Khand_Heavy_Horseman","Khand_Heavy_Horsemen",tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_a_good, itm_khand_cav_helm_a, itm_khand_med_lam, itm_mail_mittens,itm_variag_greaves,itm_khand_tulwar,itm_khand_mace1,itm_khand_mace2,itm_easterling_round_horseman,itm_variag_kataphrakt,],attr_evil_tier_4,wp_tier_4,knows_common|knows_riding_5|knows_shield_3|knows_power_strike_2|knows_ironflesh_2,khand_man1,khand_man2],
+["c5_khand_kataphrakt","Variag_Kataphrakt","Variag_Kataphrakts",tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_a_good, itm_khand_cav_helm_a_good, itm_khand_med_lam_good, itm_mail_mittens,itm_variag_greaves,itm_khand_mace1, itm_khand_mace2,itm_easterling_round_horseman,itm_variag_kataphrakt,],attr_evil_tier_5,wp_tier_5,knows_common|knows_riding_5|knows_shield_3|knows_power_strike_4|knows_ironflesh_2,khand_man1,khand_man2],
+["c5_khand_lance_kataphrakt","Variag_Lance_Kataphrakt","Variag_Lance_Kataphrakts",tf_evil_man| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots  |tfg_polearm,0,0,fac_khand,[itm_khand_cav_helm_c,itm_khand_heavy_lam,itm_mail_mittens,itm_variag_greaves,itm_khand_tulwar,itm_khand_lance,itm_variag_kataphrakt,],attr_evil_tier_5,wp_tier_5,knows_common|knows_riding_5|knows_shield_3|knows_power_strike_4|knows_ironflesh_2,khand_man1,khand_man2],
+["i4_khand_halberdier","Khand_Glaiveman","Khand_Glaivemen",tf_evil_man| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_b, itm_khand_inf_helm_d,itm_khand_foot_lam,itm_mail_mittens,itm_leather_boots,itm_khand_voulge,itm_khand_halberd,],attr_evil_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_power_strike_3|knows_ironflesh_2,khand_man1,khand_man2],
+["i5_khand_halberd_master","Variag_Halberd_Master","Variag_Halberd_Masters",tf_evil_man| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_b_good,itm_khand_inf_helm_d_good,itm_khand_foot_lam_good,itm_mail_mittens,itm_variag_greaves,itm_khand_halberd,],attr_evil_tier_5,wp_tier_5,knows_common|knows_athletics_2|knows_power_strike_4|knows_ironflesh_3,khand_man1,khand_man2],
+["i3_khand_pitfighter","Khand_Pit_Fighter","Khand_Pit_Fighters",tf_evil_man| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,[itm_khand_helm_mask,itm_khand_light,itm_leather_boots,itm_javelin,itm_khand_tulwar,itm_khand_pitsword,itm_shortened_spear,itm_variag_gladiator_shield,itm_tab_shield_small_round_b,],attr_evil_tier_3,wp_tier_3,knows_common|knows_athletics_4|knows_power_throw_2|knows_power_strike_3|knows_ironflesh_3,khand_man1,khand_man2],
+["i4_khand_pit_champion","Khand_Pit_Champion","Khand_Pit_Champions",tf_evil_man| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,[itm_khand_helm_mask_good,itm_khand_light,itm_khand_light_good,itm_leather_boots,itm_javelin,itm_khand_tulwar,itm_khand_pitsword,itm_shortened_spear,itm_easterling_hawk_shield,itm_variag_gladiator_shield,itm_tab_shield_small_round_b,],attr_evil_tier_4,wp_tier_4,knows_common|knows_athletics_5|knows_power_throw_2|knows_power_strike_4|knows_ironflesh_4,khand_man1,khand_man2],
+["i5_khand_pit_master","Variag_Master_of_the_Pits","Variag_Masters_of_the_Pits",tf_evil_man| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,[itm_khand_helm_mask_good,itm_khand_light,itm_khand_light_good,itm_leather_boots,itm_javelin,itm_khand_tulwar,itm_khand_pitsword,itm_khand_trident,itm_easterling_hawk_shield,],attr_evil_tier_5,wp_tier_5,knows_common|knows_athletics_6|knows_power_throw_4|knows_power_strike_5|knows_ironflesh_6,khand_man1,khand_man2],
+["ac3_khand_skirmisher","Khand_Skirmisher","Khand_Skirmishers",tf_evil_man| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_a_bad, itm_khand_inf_helm_b_bad, itm_khand_cav_helm_a_bad,itm_khand_light,itm_khand_light_lam,itm_leather_boots,itm_javelin,itm_khand_tulwar,itm_khand_mace1,itm_khand_mace2,itm_variag_pony,],attr_evil_tier_3,wp_tier_3,knows_common|knows_horse_archery_2|knows_riding_2|knows_power_throw_2|knows_power_strike_1,khand_man1,khand_man2],
+["ac4_khand_vet_skirmisher","Khand_Veteran_Skirmisher","Khand_Veteran_Skirmishers",tf_evil_man| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,[itm_khand_inf_helm_a, itm_khand_cav_helm_b,itm_khand_med_lam, itm_leather_gloves,itm_variag_greaves,itm_javelin,itm_khand_tulwar,itm_khand_mace1,itm_khand_mace2,itm_easterling_round_horseman,itm_variag_pony,],attr_evil_tier_4,wp_tier_4,knows_common|knows_horse_archery_3|knows_riding_4|knows_shield_3|knows_power_throw_3|knows_power_strike_2|knows_ironflesh_2,khand_man1,khand_man2],
+["ac5_khand_heavy_skirmisher","Variag_Heavy_Skirmisher","Variag_Heavy_Skirmishers",tf_evil_man| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,[itm_khand_cav_helm_b_good,itm_khand_heavy_lam_bad,itm_leather_gloves,itm_variag_greaves,itm_javelin,itm_khand_tulwar,itm_khand_mace1,itm_khand_mace2,itm_easterling_round_horseman,itm_variag_kataphrakt,],attr_evil_tier_5,wp_tier_5,knows_common|knows_horse_archery_4|knows_riding_5|knows_shield_2|knows_power_throw_4|knows_power_strike_3|knows_ironflesh_2,khand_man1,khand_man2],
+
 ["khand_items","BUG","_",tf_hero,0,0,fac_khand,
    [itm_leather_boots,itm_leather_gloves,itm_sumpter_horse,itm_saddle_horse,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       0,0,0,0],
@@ -1474,10 +1468,10 @@ troops = [
    [itm_mordor_cap_helm,itm_m_cap_armor,itm_evil_gauntlets_a,itm_uruk_greaves,itm_mordor_man_shield_a,itm_mordor_longsword,itm_mordor_warhorse2,],
       attr_tier_6,wp_tier_6,knows_common|knows_tactics_4|knows_riding_6|knows_athletics_3|knows_shield_3|knows_power_strike_5|knows_ironflesh_7,mordor_man1,mordor_man2],
 ["easterling_chieftain","Variag_Chieftain","Variag_Chieftains",tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_khand,
-   [itm_khand_noble_lam,itm_variag_greaves,itm_variag_kataphrakt,itm_khand_helmet_b1,itm_mail_mittens,itm_khand_tulwar,itm_khand_2h_tulwar,itm_easterling_round_horseman,],
+   [itm_khand_noble_lam,itm_variag_greaves,itm_variag_kataphrakt,itm_mail_mittens,itm_khand_tulwar,itm_khand_2h_tulwar,itm_easterling_round_horseman,],
       attr_tier_6,wp_tier_6,knows_common|knows_riding_4|knows_athletics_3|knows_shield_2|knows_power_strike_4|knows_ironflesh_5,khand_man1,khand_man2],
 ["easterling_lieutenant","Variag_War_Priest","Variag_War_Priests",tf_evil_man| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_khand,
-   [itm_khand_noble_lam,itm_variag_greaves,itm_khand_helmet_b1,itm_mail_mittens,itm_khand_rammace,itm_easterling_round_horseman,],
+   [itm_khand_noble_lam,itm_variag_greaves,itm_mail_mittens,itm_khand_rammace,itm_easterling_round_horseman,],
       attr_tier_6,wp_tier_6,knows_common|knows_riding_3|knows_athletics_2|knows_power_strike_3|knows_ironflesh_3,khand_man1,khand_man2],
 ["harad_chieftain","Harad_Chieftain","Harad_Chieftains",tf_harad| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_horse| tfg_helm| tfg_boots,0,0,fac_harad,
    [itm_harad_leather_greaves,itm_harad_heavy,itm_harad_dragon_helm,itm_harad_khopesh,itm_harad_long_shield_c,itm_harad_warhorse,],
@@ -1587,7 +1581,7 @@ troops = [
 
 # Added to fix evil factions getting gondor messengers.
 ["messenger_evil_man", "Messenger", "Messengers", tf_evil_man|tf_randomize_face|tf_unmoveable_in_party_window|tfg_armor|tfg_boots,0,0,fac_commoners,
-   [itm_khand_foot_lam_c,itm_variag_greaves,],
+   [itm_khand_foot_lam,itm_variag_greaves,],
       attr_tier_1,wp_tier_1,knows_common|knows_riding_2,khand_man1,khand_man2],
 
 #This troop is the troop marked as soldiers_end
@@ -1701,7 +1695,7 @@ troops = [
    [itm_uruk_ragwrap,itm_orc_tribal_a,],
       0,0,0,orc_face_normal],
 ["trainer_khand","Trainer","_",tf_hero| tf_evil_man| tfg_armor| tfg_boots, scn_khand_arena|entry(1),0,fac_commoners,
-   [itm_khand_foot_lam_c,itm_leather_boots,],
+   [itm_khand_foot_lam,itm_leather_boots,],
       0,0,0,khand_man2],
 ["trainer_rhun","Trainer","_",tf_hero| tf_evil_man| tfg_armor| tfg_boots, scn_rhun_arena|entry(1),0,fac_commoners,
    [itm_rhun_armor_a,itm_furry_boots,],
@@ -2539,7 +2533,7 @@ troops = [
    [itm_harad_padded,itm_harad_scale_greaves,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_4,man_face_young_1,man_face_older_2],
 ["merchant_khand","Khand_Stash_Master","camp_stash",tf_hero| tf_is_merchant| tf_evil_man,0,0,fac_khand,
-   [itm_khand_foot_lam_c,itm_variag_greaves,],
+   [itm_khand_foot_lam,itm_variag_greaves,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_3,0x0000000fff0093c213f746f5e363f35b00000000001de22a0000000000000000],
 ["merchant_umbar","Supply_Master","camp_stash",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_umbar,
    [itm_umb_armor_a,itm_corsair_boots,],
@@ -2666,7 +2660,7 @@ troops = [
    [itm_rhun_armor_p,itm_furry_boots,],
       def_attrib|level(2),wp(20),knows_common,rhun_man1,rhun_man2],
 ["elder_khand","Khand_Camp_Chief","the_camp",tf_hero| tf_randomize_face,0,0,fac_khand,
-   [itm_khand_foot_lam_c,itm_variag_greaves,],
+   [itm_khand_foot_lam,itm_variag_greaves,],
       def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
 ["elder_dunland","Dun_Camp_Chief","the_camp",tf_hero |tf_dunland,0,0,fac_dunland,
    [itm_dunland_armor_h,itm_dunland_wolfboots,],
@@ -2724,7 +2718,7 @@ troops = [
    [itm_rhun_armor_p,itm_furry_boots,],
       def_attrib|level(2),wp(20),knows_common,rhun_man1,rhun_man2],
 ["elder_khand_ac","Khand_Camp_Chief","the_camp",tf_hero| tf_randomize_face,0,0,fac_khand,
-   [itm_khand_foot_lam_c,itm_variag_greaves,],
+   [itm_khand_foot_lam,itm_variag_greaves,],
       def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
 ["elder_dunland_ac","Dun_Camp_Chief","the_camp",tf_hero |tf_dunland,0,0,fac_dunland,
    [itm_dunland_armor_h,itm_dunland_wolfboots,],
@@ -3324,18 +3318,18 @@ upgrade2(troops,"dunnish_wolf_warrior","dunnish_night_wolf","dunnish_wolf_guard"
 #upgrade(troops,"dunnish_veteran_axeman","dunnish_axe_master")
 #upgrade2(troops,"dunnish_wolf_warrior","dunnish_berserker","dunnish_crebain_raider")
 #EASTERLINGS
-upgrade2(troops,"easterling_youth","easterling_warrior","easterling_rider")
-upgrade2(troops,"easterling_warrior","easterling_axeman","khand_glaive_whirler")
-upgrade2(troops,"easterling_axeman","easterling_veteran_axeman","variag_pitfighter")
-upgrade(troops,"easterling_veteran_axeman","easterling_axe_master")
-upgrade2(troops,"easterling_rider","easterling_horseman","easterling_skirmisher")
-upgrade(troops,"easterling_horseman","easterling_veteran_horseman")
-upgrade2(troops,"easterling_veteran_horseman","easterling_horsemaster","easterling_lance_kataphract")
-upgrade2(troops,"khand_glaive_whirler","variag_veteran_glaive_whirler","variag_pitfighter")
-upgrade(troops,"variag_veteran_glaive_whirler","khand_glaive_master")
-upgrade(troops,"variag_pitfighter","variag_gladiator")
-upgrade(troops,"easterling_skirmisher","easterling_veteran_skirmisher")
-upgrade(troops,"easterling_veteran_skirmisher","easterling_elite_skirmisher")
+upgrade2(troops,"i1_khand_bondsman","i2_khand_pit_dog","c2_khand_pony_rider")
+upgrade2(troops,"i2_khand_pit_dog","i3_khand_warrior","i3_khand_pitfighter")
+upgrade2(troops,"i3_khand_warrior","i4_khand_vet_warrior","i4_khand_halberdier")
+upgrade(troops,"i4_khand_vet_warrior","i5_khand_war_master")
+upgrade2(troops,"c2_khand_pony_rider","c3_khand_horseman","ac3_khand_skirmisher")
+upgrade(troops,"c3_khand_horseman","c4_khand_heavy_horseman")
+upgrade2(troops,"c4_khand_heavy_horseman","c5_khand_kataphrakt","c5_khand_lance_kataphrakt")
+upgrade(troops,"i3_khand_pitfighter","i4_khand_pit_champion")
+upgrade(troops,"i4_khand_halberdier","i5_khand_halberd_master")
+upgrade(troops,"i4_khand_pit_champion","i5_khand_pit_master")
+upgrade(troops,"ac3_khand_skirmisher","ac4_khand_vet_skirmisher")
+upgrade(troops,"ac4_khand_vet_skirmisher","ac5_khand_heavy_skirmisher")
 #CORSAIRS
 upgrade2(troops,"i1_corsair_youth","i2_corsair_warrior","a2_corsair_marine")
 upgrade2(troops,"i2_corsair_warrior","i3_corsair_swordsman","i3_corsair_spearman")
