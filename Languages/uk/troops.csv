@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|Лучники Піннат-Геліна
 trp_c6_pinnath_leader|Командир піннат-гелінського загону
 trp_c6_pinnath_leader_pl|Командири піннат-гелінського загону
 trp_a1_blackroot_hunter|Мисливець з долини чорного кореня
-trp_a1_blackroot_hunter_pl|Мисливці з долини чорного кореня
+trp_a1_blackroot_hunter_pl|Мисливець з долини чорного кореня
 trp_a2_blackroot_bowman|Стрілець з долини чорного кореня
 trp_a2_blackroot_bowman_pl|Стрільці з долини чорного кореня
 trp_a3_blackroot_archer|Лучник з долини чорного кореня
@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|Дунландський вовчий страж
 trp_dunnish_wolf_guard_pl|Дунландські вовчі стражники
 trp_dunnish_chieftan|Дунландський воронячий вершник
 trp_dunnish_chieftan_pl|Дунландські воронячі вершники
-trp_i1_khand_bondsman|Варьягський раб
-trp_i1_khand_bondsman_pl|Варьягські раби
-trp_i2_khand_pit_dog|Воїн Кханда
-trp_i2_khand_pit_dog_pl|Воїни Кханда
-trp_i3_khand_warrior|Варьягський воїн з сокирою
-trp_i3_khand_warrior_pl|Варьягські воїни з сокирами
-trp_i4_khand_vet_warrior|Варьягський досвідчений воїн з сокирою
-trp_i4_khand_vet_warrior_pl|Варьягські досвідчені воїни з сокирами
-trp_i5_khand_war_master|Варьягський майстерний воїн з сокирою
-trp_i5_khand_war_master_pl|Варьягські майстерні воїни з сокирою
-trp_c2_khand_pony_rider|Варьягський вершник на поні
-trp_c2_khand_pony_rider_pl|Варьягські вершники на поні
-trp_c3_khand_horseman|Варьягський вершник
-trp_c3_khand_horseman_pl|Варьягські вершники
-trp_c4_khand_heavy_horseman|Важкий варьягський вершник
-trp_c4_khand_heavy_horseman_pl|Важкі варьягські вершники
+; trp_i1_khand_bondsman|Khand Bondsman
+; trp_i1_khand_bondsman_pl|Khand Bondsmen
+; trp_i2_khand_pit_dog|Khand Pit Dog
+; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+; trp_i3_khand_warrior|Khand Warrior
+; trp_i3_khand_warrior_pl|Khand Warriors
+; trp_i4_khand_vet_warrior|Variag Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i5_khand_war_master|Variag Master of War
+; trp_i5_khand_war_master_pl|Variag Masters of War
+; trp_c2_khand_pony_rider|Khand Pony Rider
+; trp_c2_khand_pony_rider_pl|Khand Pony Riders
+; trp_c3_khand_horseman|Khand Horseman
+; trp_c3_khand_horseman_pl|Khand Horsemen
+; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
+; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|Варьягський катафракт
 trp_c5_khand_kataphrakt_pl|Варьягські катафрактари
 trp_c5_khand_lance_kataphrakt|Варьягський катафракт з списом
 trp_c5_khand_lance_kataphrakt_pl|Варьягські катафракти зі списами
-trp_i4_khand_halberdier|Кхандський танцюрист з клинками
-trp_i4_khand_halberdier_pl|Кхандські танцюристи з клинками
-trp_i4_khand_halberdier|Досвідчений кхандський танцюрист з клинками
-trp_i4_khand_halberdier_pl|Досвідчені хандські танцюристи з клинками
+; trp_i4_khand_halberdier|Khand Glaiveman
+; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|Кхандський воїн з алебардою
 trp_i5_khand_halberd_master_pl|Кхандські воїни з алебардою
-trp_i4_khand_pit_champion|Варьягський боєць
-trp_i4_khand_pit_champion_pl|Варьягські бійці
-trp_i5_khand_pit_master|Варьягський берсерк
-trp_i5_khand_pit_master_pl|Варьягські берсерки
-trp_ac3_khand_skirmisher|Варьягський застрільник
-trp_ac3_khand_skirmisher_pl|Варьягські застрільники
-trp_ac4_khand_vet_skirmisher|Досвідчений варьягський застрільник
-trp_ac4_khand_vet_skirmisher_pl|Досвідчені варьягські застрільники
+; trp_i3_khand_pitfighter|Khand Pit Fighter
+; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+; trp_i4_khand_pit_champion|Variag Pit Champion
+; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i5_khand_pit_master|Variag Master of the Pits
+; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+; trp_ac3_khand_skirmisher|Khand Skirmisher
+; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
+; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
+; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|Важкий варьягський застрільник
 trp_ac5_khand_heavy_skirmisher_pl|Важкі варьягські застрільники
 trp_i1_corsair_youth|Умбарський моряк

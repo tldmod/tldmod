@@ -278,7 +278,7 @@ trp_a3_pinnath_archer|Pinnath Gelin Okçusu
 trp_a3_pinnath_archer_pl|Pinnath Gelin Okçuları
 trp_c6_pinnath_leader|Pinnath Gelin Kaptanı
 trp_c6_pinnath_leader_pl|Pinnath Gelin Kaptanları
-trp_a1_blackroot_hunter|Blackroot Vale Avcısı
+trp_a1_blackroot_hunter|Blackroot Vale Avcıları
 trp_a1_blackroot_hunter_pl|Blackroot Vale Avcıları
 trp_a2_blackroot_bowman|Blackroot Vale Yay Ustası
 trp_a2_blackroot_bowman_pl|Blackroot Vale Yay Ustaları
@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|Dunnish Kurt Muhafızı
 trp_dunnish_wolf_guard_pl|Dunnish Kurt Muhafızları
 trp_dunnish_chieftan|Dunnish Kuzgun Atlısı
 trp_dunnish_chieftan_pl|Dunnish Kuzgun Atlıları
-trp_i1_khand_bondsman|Varlag Kölesi
-trp_i1_khand_bondsman_pl|Varlag Köleleri
-trp_i2_khand_pit_dog|Khand Savaşçısı
-trp_i2_khand_pit_dog_pl|Khand Savaşçıları
-trp_i3_khand_warrior|Variag Baltacısı
-trp_i3_khand_warrior_pl|Variag Baltacıları
-trp_i4_khand_vet_warrior|Variag Kıdemli Baltacısı
-trp_i4_khand_vet_warrior_pl|Variag Kıdemli Baltacıları
-trp_i5_khand_war_master|Variag Balta Ustası
-trp_i5_khand_war_master_pl|Variag Balta Ustaları
-trp_c2_khand_pony_rider|Variag Midilli Binicisi
-trp_c2_khand_pony_rider_pl|Variag Midilli Binicileri
-trp_c3_khand_horseman|Variag Atlısı
-trp_c3_khand_horseman_pl|Variag Atlıları
-trp_c4_khand_heavy_horseman|Variag Agır Atlısı
-trp_c4_khand_heavy_horseman_pl|Variag Agır Atlıları
+trp_i1_khand_bondsman|Khand Kölesi
+trp_i1_khand_bondsman_pl|Khand Köleleri
+trp_i2_khand_pit_dog|Khand Çukur Köpegi
+trp_i2_khand_pit_dog_pl|Khand Çukur Köpekleri
+trp_i3_khand_warrior|Khand Savaşçısı
+trp_i3_khand_warrior_pl|Khand Savaşçıları
+trp_i4_khand_vet_warrior|Variag Kıdemli Savaşçı
+trp_i4_khand_vet_warrior_pl|Variag Kıdemli Savaşçıları
+trp_i5_khand_war_master|Variag Savaş Ustası
+trp_i5_khand_war_master_pl|Variag Savaş Ustaları
+trp_c2_khand_pony_rider|Khand Midilli Binicisi
+trp_c2_khand_pony_rider_pl|Khand Midilli Binicileri
+trp_c3_khand_horseman|Khand Atlısı
+trp_c3_khand_horseman_pl|Khand Atlıları
+trp_c4_khand_heavy_horseman|Khand Agır Atlısı
+trp_c4_khand_heavy_horseman_pl|Khand Agır Atlıları
 trp_c5_khand_kataphrakt|Variag Zırhlı Süvarisi
 trp_c5_khand_kataphrakt_pl|Variag Zırhlı Süvarileri
 trp_c5_khand_lance_kataphrakt|Variag Zırhlı Mızraklı Süvarisi
 trp_c5_khand_lance_kataphrakt_pl|Variag Zırhlı Mızraklı Süvarileri
-trp_i4_khand_halberdier|Khand Kılıç Savurucu
-trp_i4_khand_halberdier_pl|Khand Kılıç Savurucuları
-trp_i4_khand_halberdier|Kıdemli Khand Kılıç Savurucusu
-trp_i4_khand_halberdier_pl|Kıdemli Khand Kılıç Savurucuları
+trp_i4_khand_halberdier|Khand Tebercisi
+trp_i4_khand_halberdier_pl|Khand Tebercileri
 trp_i5_khand_halberd_master|Khand Teber Ustası
 trp_i5_khand_halberd_master_pl|Khand Teber Ustaları
-trp_i4_khand_pit_champion|Variag Çukur Dövüşçüsü
-trp_i4_khand_pit_champion_pl|Variag Çukur Dövüşçüleri
-trp_i5_khand_pit_master|Variag Vahşi Savaşçısı
-trp_i5_khand_pit_master_pl|Variag Vahşi Savaşçıları
-trp_ac3_khand_skirmisher|Variag Çatışmacısı
-trp_ac3_khand_skirmisher_pl|Variag Çatışmacıları
-trp_ac4_khand_vet_skirmisher|Kıdemli Variag Çatışmacısı
-trp_ac4_khand_vet_skirmisher_pl|Kıdemli Variag Çatışmacıları
+trp_i3_khand_pitfighter|Khand Çukur Dövüşçüsü
+trp_i3_khand_pitfighter_pl|Khand Çukur Dövüşçüleri
+trp_i4_khand_pit_champion|Variag Çukur Şampiyonu
+trp_i4_khand_pit_champion_pl|Variag Çukur Şampiyonları
+trp_i5_khand_pit_master|Variag Çukurların Ustası
+trp_i5_khand_pit_master_pl|Variag Çukurların Ustaları
+trp_ac3_khand_skirmisher|Khand Çatışmacısı
+trp_ac3_khand_skirmisher_pl|Khand Çatışmacıları
+trp_ac4_khand_vet_skirmisher|Khand Kıdemli Çatışmacısı
+trp_ac4_khand_vet_skirmisher_pl|Khand Kıdemli Çatışmacıları
 trp_ac5_khand_heavy_skirmisher|Variag Agır Çatışmacısı
 trp_ac5_khand_heavy_skirmisher_pl|Variag Agır Çatışmacısı
 trp_i1_corsair_youth|Umbar Denizcisi
@@ -606,8 +606,8 @@ trp_wolf_rider_of_isengard|Isengard Kurt Binicisi
 trp_wolf_rider_of_isengard_pl|Isengard Kurt Binicileri
 trp_warg_rider_of_isengard|Isengard Warg Binicisi
 trp_warg_rider_of_isengard_pl|Isengard Warg Binicileri
-trp_white_hand_rider|White Hand Binicisi
-trp_white_hand_rider_pl|White Hand Binicileri
+trp_white_hand_rider|Ak El Binicisi
+trp_white_hand_rider_pl|Ak El Binicileri
 trp_warg_ghost_1b|Binek Kurt
 trp_warg_ghost_1b_pl|Warglar
 trp_warg_ghost_1c|Binek Kurt
@@ -634,8 +634,8 @@ trp_fighting_uruk_hai_tracker|Savaşçı Uruk Hai İz Sürücüsü
 trp_fighting_uruk_hai_tracker_pl|Savaşçı Uruk Hai İz Sürücüleri
 trp_fighting_uruk_hai_berserker|Vahşi Uruk Hai Savaşçısı
 trp_fighting_uruk_hai_berserker_pl|Vahşi Uruk Hai Savaşçıları
-trp_uruk_snaga_of_isengard|Uruk Hadi Acemisi
-trp_uruk_snaga_of_isengard_pl|Uruk Hadi Acemileri
+trp_uruk_snaga_of_isengard|Uruk Hai Yeni dogmuş
+trp_uruk_snaga_of_isengard_pl|Uruk Hai Yeni doganlar
 trp_uruk_hai_of_isengard|Isengard Uruk Haisi
 trp_uruk_hai_of_isengard_pl|Isengard Uruk Haileri
 trp_large_uruk_hai_of_isengard|Büyük Isengard Uruk Haisi

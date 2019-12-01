@@ -240,7 +240,7 @@ trp_i6_loss_leader|Lossernachi kapitány
 trp_i6_loss_leader_pl|Lossernachi kapitányok
 trp_i1_pel_watchman|Pelargiri őrállók
 trp_i1_pel_watchman_pl|Pelargiri őrállók
-trp_a2_pel_marine|Pelargiri tengerész
+trp_a2_pel_marine|Pelargiri tengerészruha
 trp_a2_pel_marine_pl|Pelargiri tengerészek
 trp_a3_pel_vet_marine|Pelargiri veterán tengerész
 ; trp_a3_pel_vet_marine_pl|Pelargir Veteran Marines
@@ -278,7 +278,7 @@ trp_a3_pinnath_archer|Pinnathi Gelin lövész
 trp_a3_pinnath_archer_pl|Pinnathi Gelin lövészek
 trp_c6_pinnath_leader|Pinnath Gelini kapitány
 trp_c6_pinnath_leader_pl|Pinnath Gelini kapitányok
-trp_a1_blackroot_hunter|Feketegyökér-völgyi vadász
+trp_a1_blackroot_hunter|Feketegyökér-völgyi vadászok
 trp_a1_blackroot_hunter_pl|Feketegyökér-völgyi vadászok
 trp_a2_blackroot_bowman|Feketegyökér-völgyi íjász
 trp_a2_blackroot_bowman_pl|Feketegyökér-völgyi íjászok
@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|Dún Farkasőr
 trp_dunnish_wolf_guard_pl|Dún Farkasőrség
 trp_dunnish_chieftan|Dún Hollólovas
 trp_dunnish_chieftan_pl|Dún Hollólovasok
-trp_i1_khand_bondsman|Variag jobbágy
-trp_i1_khand_bondsman_pl|Variag jobbágyok
-trp_i2_khand_pit_dog|Khandi harcos
-trp_i2_khand_pit_dog_pl|Khandi harcosok
-trp_i3_khand_warrior|Variag baltás
-trp_i3_khand_warrior_pl|Variag baltások
-trp_i4_khand_vet_warrior|Variag veterán baltás
-trp_i4_khand_vet_warrior_pl|Variag veterán baltások
-trp_i5_khand_war_master|Variag baltamester
-trp_i5_khand_war_master_pl|Variag baltamesterek
-trp_c2_khand_pony_rider|Variag pónilovas
-trp_c2_khand_pony_rider_pl|Variag pónilovasság
-trp_c3_khand_horseman|Variag lovas
-trp_c3_khand_horseman_pl|Variag lovasság
-trp_c4_khand_heavy_horseman|Variag nehézlovas
-trp_c4_khand_heavy_horseman_pl|Variag nehézlovasság
+; trp_i1_khand_bondsman|Khand Bondsman
+; trp_i1_khand_bondsman_pl|Khand Bondsmen
+; trp_i2_khand_pit_dog|Khand Pit Dog
+; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+; trp_i3_khand_warrior|Khand Warrior
+; trp_i3_khand_warrior_pl|Khand Warriors
+; trp_i4_khand_vet_warrior|Variag Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i5_khand_war_master|Variag Master of War
+; trp_i5_khand_war_master_pl|Variag Masters of War
+; trp_c2_khand_pony_rider|Khand Pony Rider
+; trp_c2_khand_pony_rider_pl|Khand Pony Riders
+; trp_c3_khand_horseman|Khand Horseman
+; trp_c3_khand_horseman_pl|Khand Horsemen
+; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
+; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|Variag kataphraktosz
 trp_c5_khand_kataphrakt_pl|Variag kataphraktoszok
 trp_c5_khand_lance_kataphrakt|Variag kopjás kataphraktosz
 trp_c5_khand_lance_kataphrakt_pl|Variag kopjás kataphraktoszok
-trp_i4_khand_halberdier|Khandi pengeforgató
-trp_i4_khand_halberdier_pl|Khandi pengeforgatók
-trp_i4_khand_halberdier|Khandi veterán pengeforgató
-trp_i4_khand_halberdier_pl|Khandi veterán pengeforgatók
+; trp_i4_khand_halberdier|Khand Glaiveman
+; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|Khandi alabárdmester
 trp_i5_khand_halberd_master_pl|Khandi alabárdmesterek
-trp_i4_khand_pit_champion|Variag gödörharcos
-trp_i4_khand_pit_champion_pl|Variag gödörharcosok
-trp_i5_khand_pit_master|Variag berzerker
-trp_i5_khand_pit_master_pl|Variag berzerkerek
-trp_ac3_khand_skirmisher|Variag csatározó
-trp_ac3_khand_skirmisher_pl|Variag csatározók
-trp_ac4_khand_vet_skirmisher|Variag veterán csatározó
-trp_ac4_khand_vet_skirmisher_pl|Variag veterán csatározók
+; trp_i3_khand_pitfighter|Khand Pit Fighter
+; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+; trp_i4_khand_pit_champion|Variag Pit Champion
+; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i5_khand_pit_master|Variag Master of the Pits
+; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+; trp_ac3_khand_skirmisher|Khand Skirmisher
+; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
+; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
+; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|Variag nehéz csatározó
 trp_ac5_khand_heavy_skirmisher_pl|Variag nehéz csatározók
 trp_i1_corsair_youth|Umbari tengerész

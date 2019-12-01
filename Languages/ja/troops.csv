@@ -202,7 +202,7 @@ trp_c2_gon_squire|ゴンドール従者
 trp_c2_gon_squire_pl|ゴンドール従者
 trp_c3_gon_vet_squire|ゴンドールベテラン従者
 trp_c3_gon_vet_squire_pl|ゴンドールベテラン従者
-trp_c4_gon_knight|ゴンドール騎士
+trp_c4_gon_knight|ゴンドールの騎士
 trp_c4_gon_knight_pl|ゴンドール騎士
 trp_c5_gon_vet_knight|ゴンドールベテラン騎士
 trp_c5_gon_vet_knight_pl|ゴンドールベテラン騎士
@@ -240,7 +240,7 @@ trp_i6_loss_leader|ロスサールナッハキャプテン
 trp_i6_loss_leader_pl|ロスサールナッハキャプテン
 trp_i1_pel_watchman|ペラルギア衛兵
 trp_i1_pel_watchman_pl|ペラルギア衛兵
-trp_a2_pel_marine|ペラルギア水兵
+trp_a2_pel_marine|ペラルギア水兵の鎧
 trp_a2_pel_marine_pl|ペラルギア水兵
 trp_a3_pel_vet_marine|ペラルギアベテラン水兵
 ; trp_a3_pel_vet_marine_pl|Pelargir Veteran Marines
@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|褐色人狼近衛兵
 trp_dunnish_wolf_guard_pl|褐色人狼近衛兵
 trp_dunnish_chieftan|褐色人大からす騎兵
 trp_dunnish_chieftan_pl|褐色人大からす騎兵
-trp_i1_khand_bondsman|ヴァリアグ奴隷兵
-trp_i1_khand_bondsman_pl|ヴァリアグ奴隷兵
-trp_i2_khand_pit_dog|ハンド突撃兵
-trp_i2_khand_pit_dog_pl|ハンド突撃兵
-trp_i3_khand_warrior|ヴァリアグ斧兵
-trp_i3_khand_warrior_pl|ヴァリアグ斧兵
-trp_i4_khand_vet_warrior|ヴァリアグベテラン斧兵
-trp_i4_khand_vet_warrior_pl|ヴァリアグベテラン斧兵
-trp_i5_khand_war_master|ヴァリアグ精鋭斧兵
-trp_i5_khand_war_master_pl|ヴァリアグ精鋭斧兵
-trp_c2_khand_pony_rider|ヴァリアグポニー騎兵
-trp_c2_khand_pony_rider_pl|ヴァリアグポニー騎兵
-trp_c3_khand_horseman|ヴァリアグ騎兵
-trp_c3_khand_horseman_pl|ヴァリアグ騎兵
-trp_c4_khand_heavy_horseman|ヴァリアグ重装騎兵
-trp_c4_khand_heavy_horseman_pl|ヴァリアグ重装騎兵
+; trp_i1_khand_bondsman|Khand Bondsman
+; trp_i1_khand_bondsman_pl|Khand Bondsmen
+; trp_i2_khand_pit_dog|Khand Pit Dog
+; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+; trp_i3_khand_warrior|Khand Warrior
+; trp_i3_khand_warrior_pl|Khand Warriors
+; trp_i4_khand_vet_warrior|Variag Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i5_khand_war_master|Variag Master of War
+; trp_i5_khand_war_master_pl|Variag Masters of War
+; trp_c2_khand_pony_rider|Khand Pony Rider
+; trp_c2_khand_pony_rider_pl|Khand Pony Riders
+; trp_c3_khand_horseman|Khand Horseman
+; trp_c3_khand_horseman_pl|Khand Horsemen
+; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
+; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|ヴァリアグカタフラクト
 trp_c5_khand_kataphrakt_pl|ヴァリアグカタフラクト
 trp_c5_khand_lance_kataphrakt|ヴァリアグカタフラクト槍騎兵
 trp_c5_khand_lance_kataphrakt_pl|ヴァリアグカタフラクト槍騎兵
-trp_i4_khand_halberdier|ハンド剣士
-trp_i4_khand_halberdier_pl|ハンド剣士
-trp_i4_khand_halberdier|ハンドベテラン剣士
-trp_i4_khand_halberdier_pl|ハンドベテラン剣士
+; trp_i4_khand_halberdier|Khand Glaiveman
+; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|ハンド精鋭ハルバード兵
 trp_i5_khand_halberd_master_pl|ハンド精鋭ハルバード兵
-trp_i4_khand_pit_champion|ヴァリアグピット闘士
-trp_i4_khand_pit_champion_pl|ヴァリアグピット闘士
-trp_i5_khand_pit_master|ヴァリアグ狂戦士
-trp_i5_khand_pit_master_pl|ヴァリアグ狂戦士
-trp_ac3_khand_skirmisher|ヴァリアグ散兵
-trp_ac3_khand_skirmisher_pl|ヴァリアグ散兵
-trp_ac4_khand_vet_skirmisher|ヴァリアグベテラン散兵
-trp_ac4_khand_vet_skirmisher_pl|ヴァリアグベテラン散兵
+; trp_i3_khand_pitfighter|Khand Pit Fighter
+; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+; trp_i4_khand_pit_champion|Variag Pit Champion
+; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i5_khand_pit_master|Variag Master of the Pits
+; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+; trp_ac3_khand_skirmisher|Khand Skirmisher
+; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
+; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
+; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|ヴァリアグ重装散兵
 trp_ac5_khand_heavy_skirmisher_pl|ヴァリアグ重装散兵
 trp_i1_corsair_youth|ウンバール水兵

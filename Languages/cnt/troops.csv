@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|登 蘭 德 狼 衛 兵
 trp_dunnish_wolf_guard_pl|登 蘭 德 狼 衛 兵
 trp_dunnish_chieftan|登 蘭 德 渡 鴉 騎 手 
 trp_dunnish_chieftan_pl|登 蘭 德 渡 鴉  騎 手
-trp_i1_khand_bondsman|維 瑞 亞 奴 隸 
-trp_i1_khand_bondsman_pl|維 瑞 亞 奴 隸 
-trp_i2_khand_pit_dog|侃 德 戰 士 
-trp_i2_khand_pit_dog_pl|侃 德 戰 士 
-trp_i3_khand_warrior|維 瑞 亞 斧 兵
-trp_i3_khand_warrior_pl|維 瑞 亞 斧 兵
-trp_i4_khand_vet_warrior|維 瑞 亞 熟 練 斧 兵
-trp_i4_khand_vet_warrior_pl|維 瑞 亞 熟 練 斧 兵
-trp_i5_khand_war_master|維 瑞 亞 斧 大 師 
-trp_i5_khand_war_master_pl|維 瑞 亞 斧 大 師 
-trp_c2_khand_pony_rider|維 瑞 亞  小 馬 騎 手
-trp_c2_khand_pony_rider_pl|維 瑞 亞 小 馬 騎 手
-trp_c3_khand_horseman|維 瑞 亞 騎 兵
-trp_c3_khand_horseman_pl|維 瑞 亞 騎 兵
-trp_c4_khand_heavy_horseman|維 瑞 亞 重 騎 兵
-trp_c4_khand_heavy_horseman_pl|維 瑞 亞 重 騎 兵
+; trp_i1_khand_bondsman|Khand Bondsman
+; trp_i1_khand_bondsman_pl|Khand Bondsmen
+; trp_i2_khand_pit_dog|Khand Pit Dog
+; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+; trp_i3_khand_warrior|Khand Warrior
+; trp_i3_khand_warrior_pl|Khand Warriors
+; trp_i4_khand_vet_warrior|Variag Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i5_khand_war_master|Variag Master of War
+; trp_i5_khand_war_master_pl|Variag Masters of War
+; trp_c2_khand_pony_rider|Khand Pony Rider
+; trp_c2_khand_pony_rider_pl|Khand Pony Riders
+; trp_c3_khand_horseman|Khand Horseman
+; trp_c3_khand_horseman_pl|Khand Horsemen
+; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
+; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|维 瑞 亞 鐵 甲 騎 兵 
 trp_c5_khand_kataphrakt_pl|维 瑞 亞 鐵 甲 騎 兵 
 trp_c5_khand_lance_kataphrakt|维 瑞 亞 鐵 甲 槍 騎 兵 
 trp_c5_khand_lance_kataphrakt_pl|维 瑞 亞 鐵 甲 槍 騎 兵 
-trp_i4_khand_halberdier|侃 德 旋 刃 者
-trp_i4_khand_halberdier_pl|侃 德 旋 刃 者
-trp_i4_khand_halberdier|侃 德 熟 練 旋 刃 者
-trp_i4_khand_halberdier_pl|侃 德 熟 練 旋 刃 者
+; trp_i4_khand_halberdier|Khand Glaiveman
+; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|侃 德 戰 戟 大 師 
 trp_i5_khand_halberd_master_pl|侃 德 戰 戟 大 師 
-trp_i4_khand_pit_champion|維 瑞 亞 角 鬥 士 
-trp_i4_khand_pit_champion_pl|維 瑞 亞 角 鬥 士 
-trp_i5_khand_pit_master|維 瑞 亞 狂 戰 士 
-trp_i5_khand_pit_master_pl|維 瑞 亞 狂 戰 士 
-trp_ac3_khand_skirmisher|維 瑞 亞 散 兵
-trp_ac3_khand_skirmisher_pl|維 瑞 亞 散 兵
-trp_ac4_khand_vet_skirmisher|維 瑞 亞 熟 練 散 兵
-trp_ac4_khand_vet_skirmisher_pl|維 瑞 亞 熟 練 散 兵
+; trp_i3_khand_pitfighter|Khand Pit Fighter
+; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+; trp_i4_khand_pit_champion|Variag Pit Champion
+; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i5_khand_pit_master|Variag Master of the Pits
+; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+; trp_ac3_khand_skirmisher|Khand Skirmisher
+; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
+; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
+; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|維 瑞 亞 重 裝 散 兵
 trp_ac5_khand_heavy_skirmisher_pl|維 瑞 亞 重 裝 散 兵
 trp_i1_corsair_youth|昂 巴 水 手 

@@ -278,7 +278,7 @@ trp_a3_pinnath_archer|Archer de Pinnath Gelin
 trp_a3_pinnath_archer_pl|Archers de Pinnath Gelin
 trp_c6_pinnath_leader|Capitaine de Pinnath Gelin
 trp_c6_pinnath_leader_pl|Capitaines de Pinnath Gelin 
-trp_a1_blackroot_hunter|Chasseur du Val de Blackroot
+trp_a1_blackroot_hunter|Chasseurs du Val de Blackroot
 trp_a1_blackroot_hunter_pl|Chasseurs du Val de Blackroot
 trp_a2_blackroot_bowman|Archer novice du Val de la Blackroot
 trp_a2_blackroot_bowman_pl|Archer novice du Val de Blackroot
@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|Garde du Loup du Pays de Dun
 trp_dunnish_wolf_guard_pl|Gardes du Loup du Pays de Dun
 trp_dunnish_chieftan|Cavalier du Corbeau du Pays de Dun
 trp_dunnish_chieftan_pl|Cavaliers du Corbeau du Pays de Dun
-trp_i1_khand_bondsman|Esclave Variag
-trp_i1_khand_bondsman_pl|Esclaves Variags
-trp_i2_khand_pit_dog|Guerrier du Khand
-trp_i2_khand_pit_dog_pl|Guerriers du Khand
-trp_i3_khand_warrior|Manieur de hache Variag
-trp_i3_khand_warrior_pl|Manieurs de haches Variags
-trp_i4_khand_vet_warrior|Manieur de hache vétéran Variag
-trp_i4_khand_vet_warrior_pl|Manieurs de haches vétérans Variags
-trp_i5_khand_war_master|Maître manieur de hache Variag
-trp_i5_khand_war_master_pl|Maîtres manieurs de haches Variags
-trp_c2_khand_pony_rider|Chevaucheur de poney variag
-trp_c2_khand_pony_rider_pl|Chevaucheurs de poneys variags
-trp_c3_khand_horseman|Cavalier Variag
-trp_c3_khand_horseman_pl|Cavaliers Variags
-trp_c4_khand_heavy_horseman|Cavalier lourd Variag
-trp_c4_khand_heavy_horseman_pl|Cavaliers lourds Variags
+; trp_i1_khand_bondsman|Khand Bondsman
+; trp_i1_khand_bondsman_pl|Khand Bondsmen
+; trp_i2_khand_pit_dog|Khand Pit Dog
+; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+; trp_i3_khand_warrior|Khand Warrior
+; trp_i3_khand_warrior_pl|Khand Warriors
+; trp_i4_khand_vet_warrior|Variag Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i5_khand_war_master|Variag Master of War
+; trp_i5_khand_war_master_pl|Variag Masters of War
+; trp_c2_khand_pony_rider|Khand Pony Rider
+; trp_c2_khand_pony_rider_pl|Khand Pony Riders
+; trp_c3_khand_horseman|Khand Horseman
+; trp_c3_khand_horseman_pl|Khand Horsemen
+; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
+; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|Cataphracte Variag
 trp_c5_khand_kataphrakt_pl|Cataphractes Variags
 trp_c5_khand_lance_kataphrakt|Lancier cataphracte Variag
 trp_c5_khand_lance_kataphrakt_pl|Lanciers cataphractes Variags
-trp_i4_khand_halberdier|Faucheur du Khand
-trp_i4_khand_halberdier_pl|Faucheurs du Khand
-trp_i4_khand_halberdier|Faucheur vétéran du Khand
-trp_i4_khand_halberdier_pl|Faucheurs vétérans du Khand
+; trp_i4_khand_halberdier|Khand Glaiveman
+; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|Maître Hallebardier du Khand
 trp_i5_khand_halberd_master_pl|Maîtres Hallebardiers du Khand
-trp_i4_khand_pit_champion|Gladiateur Variag
-trp_i4_khand_pit_champion_pl|Gladiateurs Variags
-trp_i5_khand_pit_master|Berserker Variag
-trp_i5_khand_pit_master_pl|Berserkers Variag
-trp_ac3_khand_skirmisher|Tirailleur Variag
-trp_ac3_khand_skirmisher_pl|Tirailleurs Variags
-trp_ac4_khand_vet_skirmisher|Tirailleur vétéran Variag
-trp_ac4_khand_vet_skirmisher_pl|Tirailleurs vétérans Variags
+; trp_i3_khand_pitfighter|Khand Pit Fighter
+; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+; trp_i4_khand_pit_champion|Variag Pit Champion
+; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i5_khand_pit_master|Variag Master of the Pits
+; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+; trp_ac3_khand_skirmisher|Khand Skirmisher
+; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
+; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
+; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|Tirailleur lourd Variag
 trp_ac5_khand_heavy_skirmisher_pl|Tirailleurs lourds Variags
 trp_i1_corsair_youth|Marin d'Umbar

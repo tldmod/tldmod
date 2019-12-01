@@ -620,7 +620,7 @@ dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Ale no tak. Já mys
 dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. To máš pravdu, ale stejně tě nemohu pustit dovnitř.
 dlga_prison_guard_visit_prison_4:close_window|Tak tedy dobrá. Odcházím.
 dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|O pár kroků dál jsem našel váček se 100 denáry. Asi bude tvůj.
-; dlga_prison_guard_visit_prison_5:close_window|Ah! I was looking for this all day. How good of you to bring it back {sir/madam}. Well, now that I know what an honest {man/lady} you are, there can be no harm in letting you inside. Go in.
+dlga_prison_guard_visit_prison_5:close_window|Oh! Tohle jsem hledal celý den. Jak šlechetné, že jsi mi to přinesl zpět [pane/madam]. Každopádně teď když vím, jak jste šlechetný jste člověk, nebude žádná potíž vás nechat projít. Běžte dovnitř.
 dlga_prison_guard_talk:close_window|To je jedno.
 dlga_start:castle_guard_players|Vaše rozkazy, veliteli?
 dlga_castle_guard_players:close_window|Otevři, půjdu dovnitř.

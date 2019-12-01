@@ -526,7 +526,7 @@ qstr_You_were_grievously_woun|Sei stato ferito terribilmente e il tuo corpo è s
 qstr_Some_of_your_compani|Alcuni dei tuoi compagni stanno soffrendo per delle vecchie ferite.
 qstr_Item_you_just_equipp|L'oggetto equipaggiato non è adatto a personaggi di questa razza e sarà subito riposto nell'inventario del giocatore^^Assicurati che il tuo equipaggiamento abbia spazio per l'oggetto, o sarà perso per sempre.
 qstr_Inappropriate_equipm|Equipaggiamento inappropriato.
-qstr_The_mount_you_just_e|La cavalcatura che hai appena equipaggiato non è adatta ai personaggi di questa razza. Fa attenzione, ci saranno problemi col comportamento dell'animale sul campo di battaglia se lascerai equipaggiata questa cavalcatura.
+qstr_The_mount_you_just_e|L'animale che hai appena scelto non è adatto ai personaggi di questa razza. Fa attenzione, ci saranno problemi col comportamento dell'animale sul campo di battaglia se lascerai equipaggiata questa bestia.
 qstr_Inappropriate_mount|Cavalcatura inappropriata.
 qstr_{s24}:_Your_infantry|{s24}: I tuoi fanti si sentono meglio !
 qstr_{s24}:_Your_archers_|{s24}: I tuoi arcieri si sentono meglio !
@@ -693,10 +693,10 @@ qstr_A_thunderstorm_from_|Un temporale dalle Montagne Nebbiose infuria sul campo
 qstr_A_thunderstorm_from_t|Una tempesta dalle Montagne Nebbiose imperversa sul campo di battaglia. Gli arcieri incontrano difficoltà in un clima simle.
 qstr_A_poisonous_fog_from|Una nebbia venefica da Dol Guldur indugia sul campo di battaglia. Tu e i tuoi soldati vi sentite indeboliti. C'è spavento fra gli uomini.
 qstr_A_poisonous_fog_from_|Una venefica nebbia da Dol Guldur indugia sul campo di battaglia. Tu non percepisci alcuna differenza, ma senti i tuoi nemici soffrire e percepisci l'odore della loro paura.
-qstr_Your_mount_stumbles!|La tua cavalcatura incespica ! Sembra sia zoppa.
+qstr_Your_mount_stumbles!|Il tuo animale incespica ! Sembra sia zoppo.
 qstr_Bitten_by_your_own_w|Sei stato morso dal tuo stesso Warg !
 qstr_You_weigh_too_much_f|Pesi troppo per un pony !
-qstr_Your_mount_rears_ref|La tua cavalcatura impenna, si rifiuta di obbedire ai tuoi comandi !
+qstr_Your_mount_rears_ref|La bestia s'impenna, rifiuta di obbedire ai tuoi comandi !
 qstr_Fixed_Custom_Camera|Telecamera Personalizzata
 qstr_Press_Ctrl_+_Left_/_|Premi CTRL + FRECCIA SX / CTRL + FRECCIA DX per cambiare spalla
 qstr_Use_+/__to_zoom_in/o|Usa +/- per zoomare dentro/fuori
@@ -711,8 +711,8 @@ qstr_You_have_found_the_loc|Hai trovato l'emporio locale...(+{reg3} XP)
 qstr_You_look_through_Hen|Guardi verso Henneth Annun, la Finestra del Tramonto. La splendida vista ripristina la tua fede nell'Ovest e nelle forze al di là dell'orizzonte.
 qstr__cancelled_the_{reg1|(Cancellati i {reg10} exp guadagnati per aver ucciso prigionieri)
 qstr_Forming_ranks.|Formare i ranghi.
-qstr_{reg2?You:Your_mount|{reg2?Tu hai ricevuto:La tua cavalcatura ha ricevuto} {reg1} danni extra !
-qstr_{reg2?You_strike:You|{reg2?Colpisci:La tua cavalcatura carica} per {reg1} danni bonus !
+qstr_{reg2?You:Your_mount|{reg2?Tu hai ricevuto:Il tuo animale ha ricevuto} {reg1} danni extra !
+qstr_{reg2?You_strike:You|{reg2?Colpisci:Il tuo animale carica} per {reg1} danni bonus !
 qstr_Division_Placement|Disposizione delle Divisioni
 qstr_Complex_Formations|Formazioni Complesse
 qstr_Formations_turned_OF|Formazioni DISATTIVATE nel menu opzioni
@@ -725,7 +725,7 @@ qstr_Two_Nazgul_are_circl|Due Nazgul volano in circolo sopra al campo di battagl
 qstr_A_Nazgul_is_circling|Un Nazgul vola circolarmente nei cieli sul campo di battaglia.
 qstr_Some_of_your_human_t|Alcune delle tue truppe umane non sono scoraggiate dall'oscurità. (I Combattenti Notturni non sono influenzati dai rigori della notte)
 qstr_You_are_filled_with_|La rabbia ti pervade mentre fissi il nemico (Berserk attivo).
-qstr_Your_mount_is_scared|La tua cavalcatura è spaventata dal {reg73?Ent:Troll} !
+qstr_Your_mount_is_scared|La tua bestia è spaventata dal {reg73?Ent:Troll} !
 qstr_Nazgul_sweep!|Spazzata Nazgul !
 qstr_You_and_your_horse_p|Tu e il tuo cavallo andate nel panico, le urla dei Nazgul sono insopportabili !
 qstr_Your_horse_panics_th|Il tuo cavallo va nel panico, le urla dei Nazgul sono insopportabili !
@@ -734,17 +734,17 @@ qstr_knocked_unconscious|ha perso i sensi
 qstr_Nazgul_diving_attack|Nazgul attacca in picchiata su {s11} !
 qstr_{s11}_is_{s10}_in_th|{s11}  {s10} nell'attacco dei Nazgul !
 qstr_Received_{reg66}_dam|Ricevuti {reg66} danni.
-qstr_You_yell_for_your_ho|Invochi la tua cavalcatura.
+qstr_You_yell_for_your_ho|Chiami il tuo animale.
 qstr_{s1}_s_morale:_{reg1|morale di {s1}: {reg1}
 qstr_You_do_not_need_to_r|Non hai bisogno d'incitare le truppe, per adesso.
 qstr_You_rally_your_troop|Sproni le tue truppe !
 qstr_{s5}_rallies_{reg65?|{s5} sprona {reg65?le sue:le sue} truppe !
 qstr_You_have_killed_{reg|Hai ucciso {reg1} nemici in questa battaglia !
 qstr_Your_bravery_inspire|Il tuo coraggio ispira le tue truppe !
-qstr_Your_mount_has_falle|La tua cavalcatura è crollata a terra sotto di te !
+qstr_Your_mount_has_falle|La tua bestia è crollata a terra sotto di te !
 qstr_Receive_{reg22}_dama|Ricevi {reg22} danno.
 qstr_You_have_been_knocke|Hai perso i sensi per mano di {s22}.
-qstr_{s21}_has_been_knock|{s21} è {reg23?stata disarcionata:stato disarcionato} dalla sua cavalcatura cadendo.
+qstr_{s21}_has_been_knock|{s21} è {reg23?stata disarcionata:stato disarcionato} dalla sua bestia cadendo.
 qstr_{s21}_{reg24?killed:|{s21} {reg24?ucciso:tramortito} da {s22}.
 qstr_A_bear_has_been_summ|Un orso è stato chiamato in battaglia !
 qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, le tue truppe si disporranno da sole tenendo la posizione all'inizio di ogni battaglia, invece di partire ciecamente alla carica.^^Per ordinare alle tue truppe di assumere una formazione, premi 'J' per Ranghi, 'K' per Muro di Scudi, 'L' per Cuneo e ';' per Quadrato. Per rompere le righe premi 'U'. ^Se le tue truppe sono in rotta, puoi premere 'V' per incintarli. Hai un numero limitato di incitamenti ad ogni battaglia, e il loro l'ammontare dipende dal livello del tuo comando e del tuo carisma.
@@ -1377,7 +1377,7 @@ qstr_{playername}_the_men|{playername}, gli uomini hanno udito di storie riguard
 qstr_{playername}_I_want_|{playername}, voglio che mostri agli uomini che i nemici non sono così forti. Voglio che tu personalmente uccida {reg22} {s6} ! Fa questo per dimostrare che siamo una forza superiore !
 qstr_I_will_do_what_you_a|Farò quello che mi hai chiesto, e gli uomini ne saranno testimoni.
 qstr_high_level_troops_fr|truppe di alto livello da
-qstr_elite_level_troops_f|truppe d'elite da
+qstr_elite_level_troops_f|truppe d'élite da
 qstr_{s9}_wants_you_to_pe|{s9} vuole che tu in persona abbatta {reg22} {s6} {s7}.
 qstr_I_want_you_to_person|Voglio che tu personalmente abbatta
 qstr_I_want_you_and_your_|Voglio che tu e i tuoi uomini uccidiate
@@ -1449,7 +1449,7 @@ qstr_Go_to_Moria_and_get_|Vai a Moria e prenditi un bel warg per te - o qualche 
 qstr_Go_to_Isengard_and_g|Va ad Isengard, e prendi quello che ti serve - forse alcuni Uruk-Hai combattenti ti seguiranno !
 qstr_Go_up_north_to_Gunda|Va a nord, a Gundabad - sono stupidi e brutti, ma hanno delle belle pellicce.
 qstr_Get_some_snagas_of_y|Prenditi qualche snaga del tuo genere, come questi che sono al mio seguito. Forse presto avrai anche tu una tua compagnia in armi !
-qstr_Our_friends_and_alli|I nostri amici e alleati udranno di te, non dubitare ! Potrebbero volerti donare una nuova cavalcatura o una spada nuova. Nessuno ha tempo per i deboli, ma sei hai forza, ha, noi aiutiamo quelli che ci aiutano, vedi? Scambia parte di quelle spoglie per un buon cavallo, magari con quegli uomini di Rhûn - per cavalcare o mangiarlo, la scelta è tua, har !
+qstr_Our_friends_and_alli|I nostri amici e alleati udranno di te, non dubitare ! Potrebbero volerti donare un nuovo animale da cavalcare o una spada nuova. Nessuno ha tempo per i deboli, ma sei hai forza, ha, noi aiutiamo quelli che ci aiutano, vedi? Scambia parte di quelle spoglie per un buon cavallo, magari con quegli uomini di Rhûn - per cavalcare o mangiarlo, la scelta è tua, har !
 qstr_Trade_some_of_those_|Scambia alcune di queste spoglie con un buon cavallo, magari con quegli uomini di Rhûn - per cavalcarlo o per mangiarlo, la scelta è tua, har !
 qstr_That_is_not_a_smart_|Non è una cosa molto intelligente da dire di fronte ad un Guerriero di Rhûn... La prossima volta che ti vedo, ti uccido.
 qstr_They_will_all_know_m|Tutti sanno il mio nome.. Tutti sapranno temerlo

@@ -240,7 +240,7 @@ trp_i6_loss_leader|Hauptmann von Lossarnach
 trp_i6_loss_leader_pl|Hauptmänner von Lossarnach
 trp_i1_pel_watchman|Wachmann von Pelargir
 trp_i1_pel_watchman_pl|Wachmänner von Pelargir
-trp_a2_pel_marine|Seemann von Pelargir
+trp_a2_pel_marine|Seemannsrüstung aus Pelargir
 trp_a2_pel_marine_pl|Seemänner von Pelargir
 trp_a3_pel_vet_marine|Erfahrener Seemann von Pelargir
 trp_a3_pel_vet_marine_pl|Erfahrene Seemänner von Pelargir
@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|Wolfsrecke aus Dunland
 trp_dunnish_wolf_guard_pl|Wolfsrecken aus Dunland
 trp_dunnish_chieftan|Rabenreiter aus Dunland
 trp_dunnish_chieftan_pl|Rabenreiter aus Dunland
-trp_i1_khand_bondsman|Variag-Kriegssklave
-trp_i1_khand_bondsman_pl|Variag-Kriegssklaven
-trp_i2_khand_pit_dog|Krieger aus Khand
-trp_i2_khand_pit_dog_pl|Krieger aus Khand
-trp_i3_khand_warrior|Variag-Axtkämpfer
-trp_i3_khand_warrior_pl|Variag-Axtkämpfer
-trp_i4_khand_vet_warrior|Erfahrener Variag-Axtkämpfer
-trp_i4_khand_vet_warrior_pl|Erfahrene Variag-Axtkämpfer
-trp_i5_khand_war_master|Variag-Axtmeister
-trp_i5_khand_war_master_pl|Variag-Axtmeister
-trp_c2_khand_pony_rider|Variag-Ponyreiter
-trp_c2_khand_pony_rider_pl|Variag-Ponyreiter
-trp_c3_khand_horseman|Variag-Reiter
-trp_c3_khand_horseman_pl|Variag-Reiter
-trp_c4_khand_heavy_horseman|Gepanzerter Variag-Reiter
-trp_c4_khand_heavy_horseman_pl|Gepanzerte Variag-Reiter
+trp_i1_khand_bondsman|Kriegssklave aus Khand
+trp_i1_khand_bondsman_pl|Kriegssklaven aus Khand
+trp_i2_khand_pit_dog|Grubenhund aus Khand
+trp_i2_khand_pit_dog_pl|Grubenhunde aus Khand
+trp_i3_khand_warrior|Krieger aus Khand
+trp_i3_khand_warrior_pl|Krieger aus Khand
+trp_i4_khand_vet_warrior|Erfahrener Krieger aus Khand
+trp_i4_khand_vet_warrior_pl|Erfahrene Krieger aus Khand
+trp_i5_khand_war_master|Variag_Kriegsherr
+trp_i5_khand_war_master_pl|Variag-Kriegsherren
+trp_c2_khand_pony_rider|Ponyreiter aus Khand
+trp_c2_khand_pony_rider_pl|Ponyreiter aus Khand
+trp_c3_khand_horseman|Reiter aus Khand
+trp_c3_khand_horseman_pl|Reiter aus Khand
+trp_c4_khand_heavy_horseman|Gepanzerter Reiter aus Khand
+trp_c4_khand_heavy_horseman_pl|Gepanzerte Reiter aus Khand
 trp_c5_khand_kataphrakt|Variag-Kataphrakt
 trp_c5_khand_kataphrakt_pl|Variag-Kataphrakte
 trp_c5_khand_lance_kataphrakt|Variag-Lanzenkataphrakt
 trp_c5_khand_lance_kataphrakt_pl|Variag-Lanzenkataphrakte
-trp_i4_khand_halberdier|Klingenwirbler aus Khand
-trp_i4_khand_halberdier_pl|Klingenwirbler aus Khand
-trp_i4_khand_halberdier|Erfahrener Klingenwirbler aus Khand
-trp_i4_khand_halberdier_pl|Erfahrene Klingenwirbler aus Khand
+trp_i4_khand_halberdier|Glevenkrieger aus Khand
+trp_i4_khand_halberdier_pl|Glevenkrieger aus Khand
 trp_i5_khand_halberd_master|Meisterhafter Hellebardenkrieger aus Khand
 trp_i5_khand_halberd_master_pl|Meisterhafte Hellebardenkrieger aus Khand
-trp_i4_khand_pit_champion|Variag-Grubenkämpfer
-trp_i4_khand_pit_champion_pl|Variag-Grubenkämpfer
-trp_i5_khand_pit_master|Variag-Berserker
-trp_i5_khand_pit_master_pl|Variag-Berserker
-trp_ac3_khand_skirmisher|Variag-Plänkler
-trp_ac3_khand_skirmisher_pl|Variag-Plänkler
-trp_ac4_khand_vet_skirmisher|Erfahrener Variag-Plänkler
-trp_ac4_khand_vet_skirmisher_pl|Erfahrene Variag-Plänkler
+trp_i3_khand_pitfighter|Grubenkämpfer aus Khand
+trp_i3_khand_pitfighter_pl|Grubenkämpfer aus Khand
+trp_i4_khand_pit_champion|Variag-Grubenheld
+trp_i4_khand_pit_champion_pl|Variag-Grubenhelden
+trp_i5_khand_pit_master|Variag-Grubenmeister
+trp_i5_khand_pit_master_pl|Variag-Grubenmeister
+trp_ac3_khand_skirmisher|Plänkler von Khand
+trp_ac3_khand_skirmisher_pl|Plänkler von Khand
+trp_ac4_khand_vet_skirmisher|Erfahrener Plänkler von Khand
+trp_ac4_khand_vet_skirmisher_pl|Erfahrene Plänkler von Khand
 trp_ac5_khand_heavy_skirmisher|Gepanzerter Variag-Plänkler
 trp_ac5_khand_heavy_skirmisher_pl|Gepanzerte Variag-Plänkler
 trp_i1_corsair_youth|Seemann aus Umbar

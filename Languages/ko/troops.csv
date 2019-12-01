@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|던랜드 늑대 근위대
 trp_dunnish_wolf_guard_pl|던랜드 늑대 근위대
 trp_dunnish_chieftan|던랜드 큰까마귀 기마대
 trp_dunnish_chieftan_pl|던랜드 큰까마귀 기맏
-trp_i1_khand_bondsman|바리아그 농민병
-trp_i1_khand_bondsman_pl|바리아그 농민병
-trp_i2_khand_pit_dog|칸드 전사
-trp_i2_khand_pit_dog_pl|칸드 전사
-trp_i3_khand_warrior|바리아그 도끼병
-trp_i3_khand_warrior_pl|바리아그 도끼병
-trp_i4_khand_vet_warrior|바리아그 고참 도끼병
-trp_i4_khand_vet_warrior_pl|바리아그 고참 도끼병
-trp_i5_khand_war_master|바리아그 정예 도끼병
-trp_i5_khand_war_master_pl|바리아그 정예 도끼병
-trp_c2_khand_pony_rider|바리아그 조랑말기병
-trp_c2_khand_pony_rider_pl|바리아그 조랑말기병
-trp_c3_khand_horseman|바리아그 기병
-trp_c3_khand_horseman_pl|바리아그 기병
-trp_c4_khand_heavy_horseman|바리아그 중기병
-trp_c4_khand_heavy_horseman_pl|바리아그 중기병
+; trp_i1_khand_bondsman|Khand Bondsman
+; trp_i1_khand_bondsman_pl|Khand Bondsmen
+; trp_i2_khand_pit_dog|Khand Pit Dog
+; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+; trp_i3_khand_warrior|Khand Warrior
+; trp_i3_khand_warrior_pl|Khand Warriors
+; trp_i4_khand_vet_warrior|Variag Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i5_khand_war_master|Variag Master of War
+; trp_i5_khand_war_master_pl|Variag Masters of War
+; trp_c2_khand_pony_rider|Khand Pony Rider
+; trp_c2_khand_pony_rider_pl|Khand Pony Riders
+; trp_c3_khand_horseman|Khand Horseman
+; trp_c3_khand_horseman_pl|Khand Horsemen
+; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
+; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|바리아그 카타프락트
 trp_c5_khand_kataphrakt_pl|바리아그 카타프락트
 trp_c5_khand_lance_kataphrakt|바리아그 랜스 카타프락트
 trp_c5_khand_lance_kataphrakt_pl|바리아그 랜스 카타프락트
-trp_i4_khand_halberdier|칸드 글레이브병
-trp_i4_khand_halberdier_pl|칸드 글레이브병
-trp_i4_khand_halberdier|칸드 고참 글레이브병
-trp_i4_khand_halberdier_pl|칸드 고참 글레이브병
+; trp_i4_khand_halberdier|Khand Glaiveman
+; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|칸드 정예 할버드병
 trp_i5_khand_halberd_master_pl|칸드 정예 할버드병
-trp_i4_khand_pit_champion|바리아그 검투사
-trp_i4_khand_pit_champion_pl|바리아그 검투사
-trp_i5_khand_pit_master|바리아그 광전사
-trp_i5_khand_pit_master_pl|바리아그 광전사
-trp_ac3_khand_skirmisher|바리아그 척후병
-trp_ac3_khand_skirmisher_pl|바리아그 척후병
-trp_ac4_khand_vet_skirmisher|바리아그 고참 척후병
-trp_ac4_khand_vet_skirmisher_pl|바리아그 고참 척후병
+; trp_i3_khand_pitfighter|Khand Pit Fighter
+; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+; trp_i4_khand_pit_champion|Variag Pit Champion
+; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i5_khand_pit_master|Variag Master of the Pits
+; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+; trp_ac3_khand_skirmisher|Khand Skirmisher
+; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
+; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
+; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|바리아그 중장 척후병
 trp_ac5_khand_heavy_skirmisher_pl|바리아그 중장 척후병
 trp_i1_corsair_youth|움바르 선원

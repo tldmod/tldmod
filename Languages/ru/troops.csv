@@ -202,7 +202,7 @@ trp_c2_gon_squire|Оруженосец Гондора
 trp_c2_gon_squire_pl|Оруженосцы Гондора
 trp_c3_gon_vet_squire|Оруженосец-ветеран Гондора
 trp_c3_gon_vet_squire_pl|Оруженосцы-ветераны Гондора
-trp_c4_gon_knight|Рыцарь Гондора
+trp_c4_gon_knight|Гондорский рыцарь
 trp_c4_gon_knight_pl|Рыцари Гондора
 trp_c5_gon_vet_knight|Рыцарь-ветеран Гондора
 trp_c5_gon_vet_knight_pl|Рыцари-ветераны Гондора
@@ -278,7 +278,7 @@ trp_a3_pinnath_archer|Лучник Пиннат-Гелина
 trp_a3_pinnath_archer_pl|Лучники Пиннат-Гелина
 trp_c6_pinnath_leader|Командир пиннат-гелинского отряда
 trp_c6_pinnath_leader_pl|Командиры пиннат-гелинских отрядов
-trp_a1_blackroot_hunter|Охотник из долины Чернокорня
+trp_a1_blackroot_hunter|Охотники из долины Чернокорня
 trp_a1_blackroot_hunter_pl|Охотники из долины Чернокорня
 trp_a2_blackroot_bowman|Стрелок из долины Чернокорня
 trp_a2_blackroot_bowman_pl|Стрелки из долины Чернокорня
@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|Дунландский волчий страж
 trp_dunnish_wolf_guard_pl|Дунландские волчьи стражи
 trp_dunnish_chieftan|Дунландский вороний всадник
 trp_dunnish_chieftan_pl|Дунландские вороньи всадники
-trp_i1_khand_bondsman|Варьягский раб
-trp_i1_khand_bondsman_pl|Варьягские рабы
-trp_i2_khand_pit_dog|Воин Ханда
-trp_i2_khand_pit_dog_pl|Воины Ханда
-trp_i3_khand_warrior|Варьягский воин с топором
-trp_i3_khand_warrior_pl|Варьягские воины с топорами
-trp_i4_khand_vet_warrior|Варьягский опытный воин с топором
-trp_i4_khand_vet_warrior_pl|Варьягские опытные воины с топорами
-trp_i5_khand_war_master|Варьягский искусный воин с топором
-trp_i5_khand_war_master_pl|Варьягские искусные воины с топорами
-trp_c2_khand_pony_rider|Варьягский всадник на пони
-trp_c2_khand_pony_rider_pl|Варьягские всадники на пони
-trp_c3_khand_horseman|Варьягский всадник
-trp_c3_khand_horseman_pl|Варьягские всадники
-trp_c4_khand_heavy_horseman|Тяжёлый варьягский всадник
-trp_c4_khand_heavy_horseman_pl|Тяжёлые варьягские всадники
+; trp_i1_khand_bondsman|Khand Bondsman
+; trp_i1_khand_bondsman_pl|Khand Bondsmen
+; trp_i2_khand_pit_dog|Khand Pit Dog
+; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+; trp_i3_khand_warrior|Khand Warrior
+; trp_i3_khand_warrior_pl|Khand Warriors
+; trp_i4_khand_vet_warrior|Variag Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i5_khand_war_master|Variag Master of War
+; trp_i5_khand_war_master_pl|Variag Masters of War
+; trp_c2_khand_pony_rider|Khand Pony Rider
+; trp_c2_khand_pony_rider_pl|Khand Pony Riders
+; trp_c3_khand_horseman|Khand Horseman
+; trp_c3_khand_horseman_pl|Khand Horsemen
+; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
+; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|Варьягский катафракт
 trp_c5_khand_kataphrakt_pl|Варьягские катафракты
 trp_c5_khand_lance_kataphrakt|Варьягский катафракт с копьём
 trp_c5_khand_lance_kataphrakt_pl|Варьягские катафракты с копьями
-trp_i4_khand_halberdier|Хандский танцор с клинками
-trp_i4_khand_halberdier_pl|Хандские танцоры с клинками
-trp_i4_khand_halberdier|Опытный хандский танцор с клинками
-trp_i4_khand_halberdier_pl|Опытные хандские танцоры с клинками
+; trp_i4_khand_halberdier|Khand Glaiveman
+; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|Хандский воин с алебардой
 trp_i5_khand_halberd_master_pl|Хандские воины с алебардами
-trp_i4_khand_pit_champion|Варьягский поединщик
-trp_i4_khand_pit_champion_pl|Варьягские поединщики
-trp_i5_khand_pit_master|Варьягский берсерк
-trp_i5_khand_pit_master_pl|Варьягские берсерки
-trp_ac3_khand_skirmisher|Варьягский застрельщик
-trp_ac3_khand_skirmisher_pl|Варьягские застрельщики
-trp_ac4_khand_vet_skirmisher|Опытный варьягский застрельщик
-trp_ac4_khand_vet_skirmisher_pl|Опытные варьягские застрельщики
+; trp_i3_khand_pitfighter|Khand Pit Fighter
+; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+; trp_i4_khand_pit_champion|Variag Pit Champion
+; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i5_khand_pit_master|Variag Master of the Pits
+; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+; trp_ac3_khand_skirmisher|Khand Skirmisher
+; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
+; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
+; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|Тяжёлый варьягский застрельщик
 trp_ac5_khand_heavy_skirmisher_pl|Тяжёлые варьягские застрельщики
 trp_i1_corsair_youth|Умбарский моряк

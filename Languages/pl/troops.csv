@@ -202,7 +202,7 @@ trp_c2_gon_squire|Gondorski Giermek
 trp_c2_gon_squire_pl|Gondorskich Giermek
 trp_c3_gon_vet_squire|Doświadczony Gondorski Squire
 trp_c3_gon_vet_squire_pl|Doświadczonych Gondorskich Squire
-trp_c4_gon_knight|Gondorski Rycerz
+trp_c4_gon_knight|Rycerz Gondoru
 trp_c4_gon_knight_pl|Gondorskich Rycerzy
 trp_c5_gon_vet_knight|Doborowy Gondorski Rycerz
 trp_c5_gon_vet_knight_pl|Doborowych Gondorskich Rycerzy
@@ -278,7 +278,7 @@ trp_a3_pinnath_archer|Strzelec Pinnath Gelin
 trp_a3_pinnath_archer_pl|Strzelców Pinnath Gelin
 trp_c6_pinnath_leader|Kapitan Pinnath Gelin
 trp_c6_pinnath_leader_pl|Kapitanów Pinnath Gelin
-trp_a1_blackroot_hunter|Myśliwy Blackroot Vale
+trp_a1_blackroot_hunter|Myśliwych Blackroot Vale
 trp_a1_blackroot_hunter_pl|Myśliwych Blackroot Vale
 trp_a2_blackroot_bowman|Łucznik Blackroot Vale
 trp_a2_blackroot_bowman_pl|Łuczników Blackroot Vale
@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|Dunlandzki Wilczy Gwardzista
 trp_dunnish_wolf_guard_pl|Dunlandzkich Wilczych Gwardzistów
 trp_dunnish_chieftan|Dunlandzki Kruczy Jeździec
 trp_dunnish_chieftan_pl|Dunlandzkich Kruczych Jeźdźców
-trp_i1_khand_bondsman|Niewolnik Variagów
-trp_i1_khand_bondsman_pl|Niewolników Variagów
-trp_i2_khand_pit_dog|Khandyjski Wojownik
-trp_i2_khand_pit_dog_pl|Khandyjskich Wojowników
-trp_i3_khand_warrior|Topornik Variagów
-trp_i3_khand_warrior_pl|Topornik Variagów
-trp_i4_khand_vet_warrior|Doborowy Topornik Variagów
-trp_i4_khand_vet_warrior_pl|Doborowych Toporników Variagów
-trp_i5_khand_war_master|Mistrz Topora Variagów
-trp_i5_khand_war_master_pl|Mistrzów Topora Variagów
-trp_c2_khand_pony_rider|Jeździec Variagów
-trp_c2_khand_pony_rider_pl|Jeźdźców Variagów
-trp_c3_khand_horseman|Konny Variagów
-trp_c3_khand_horseman_pl|Konnych Variagów
-trp_c4_khand_heavy_horseman|Ciężki Konny Variagów
-trp_c4_khand_heavy_horseman_pl|Ciężkich Konnych Variagów
+; trp_i1_khand_bondsman|Khand Bondsman
+; trp_i1_khand_bondsman_pl|Khand Bondsmen
+; trp_i2_khand_pit_dog|Khand Pit Dog
+; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+; trp_i3_khand_warrior|Khand Warrior
+; trp_i3_khand_warrior_pl|Khand Warriors
+; trp_i4_khand_vet_warrior|Variag Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i5_khand_war_master|Variag Master of War
+; trp_i5_khand_war_master_pl|Variag Masters of War
+; trp_c2_khand_pony_rider|Khand Pony Rider
+; trp_c2_khand_pony_rider_pl|Khand Pony Riders
+; trp_c3_khand_horseman|Khand Horseman
+; trp_c3_khand_horseman_pl|Khand Horsemen
+; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
+; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|Katafrakt Variagów
 trp_c5_khand_kataphrakt_pl|Katafraktów Variagów
 trp_c5_khand_lance_kataphrakt|Katafrakt Lansjer Variagów
 trp_c5_khand_lance_kataphrakt_pl|Katafraktów Lansjerów Variagów
-trp_i4_khand_halberdier|Khandyjski Mistrz Ostrzy
-trp_i4_khand_halberdier_pl|Khandyjskich Mistrzów Ostrzy
-trp_i4_khand_halberdier|Doborowy Khandyjski Mistrz Ostrzy
-trp_i4_khand_halberdier_pl|Doborowych Khandyjskich Mistrzów Ostrzy
+; trp_i4_khand_halberdier|Khand Glaiveman
+; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|Khandyjski Mistrz Halabardy
 trp_i5_khand_halberd_master_pl|Khandyjskich Mistrzów Halabardy
-trp_i4_khand_pit_champion|Gladiator  Variagów
-trp_i4_khand_pit_champion_pl|Gladiatorów Variagów
-trp_i5_khand_pit_master|Berserker Variagów
-trp_i5_khand_pit_master_pl|Berserkerów Variagów
-trp_ac3_khand_skirmisher|Harcownik Variagów
-trp_ac3_khand_skirmisher_pl|Harcowników Variagów
-trp_ac4_khand_vet_skirmisher|Doświadczony Harcownik Variagów
-trp_ac4_khand_vet_skirmisher_pl|Doświadczonych Harcowników Variagów
+; trp_i3_khand_pitfighter|Khand Pit Fighter
+; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+; trp_i4_khand_pit_champion|Variag Pit Champion
+; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i5_khand_pit_master|Variag Master of the Pits
+; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+; trp_ac3_khand_skirmisher|Khand Skirmisher
+; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
+; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
+; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|Elitarny Harcownik Variagów
 trp_ac5_khand_heavy_skirmisher_pl|Elitarnych Harcowników Variagów
 trp_i1_corsair_youth|Umbarski Żeglarz

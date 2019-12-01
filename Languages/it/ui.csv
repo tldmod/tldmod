@@ -784,11 +784,11 @@ ui_joining_cost_weekly_wage|Arruola: %d P.R. -- Mantieni: %d P.R.
 ui_weekly_wage|Mantenimento: %d P.R.
 ui_price|Valore: %d P.R.
 ui_cant_reload_this_weapon_on_horseback|Non puoi ricaricare questa arma mentre cavalchi.
-ui_delivered_number_damage_to_horse|Inflitti %d danni alla cavalcatura.
+ui_delivered_number_damage_to_horse|Inflitti %d danni all'animale.
 ui_horse_charged_for_number_damage|Inflitti %d danni da carica.
-ui_horse_received_number_damage|La cavalcatura ha ricevuto %d danni.
-ui_horse_fell_dead|La cavalcatura è morta...
-ui_horse_crippled|La cavalcatura è azzoppata...
+ui_horse_received_number_damage|L'animale ha ricevuto %d danni.
+ui_horse_fell_dead|L'animale è morto...
+ui_horse_crippled|L'animale è azzoppato...
 ui_you_got_value|%s guadagnato.
 ui_has_deserted_the_party|ha abbandonato la Compagnia.
 ui_have_deserted_the_party|hanno abbandonato la Compagnia.
@@ -826,7 +826,7 @@ ui_notification_requirements_not_met|Non possiedi l'abilità richiesta o gli att
 ui_disband|Disperdere
 ui_you_hit_a_friendly_troop|Hai colpito un alleato!
 ui_you_are_not_carrying_any_arrows|Non hai frecce.
-ui_delivered_number_damage_to_horse|Inflitti %d danni alla cavalcatura.
+ui_delivered_number_damage_to_horse|Inflitti %d danni all'animale.
 ui_received_number_damage|Ricevuto %d danni.
 ui_you_have_improved_your_proficiency_in_value_to_number|Hai migliorato la tua competenza in %s a %d.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|La tua competenza in %s è migliorata da +%d a %d.

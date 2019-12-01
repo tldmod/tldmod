@@ -278,7 +278,7 @@ trp_a3_pinnath_archer|Lukostrelec z Pinnath Gelin
 trp_a3_pinnath_archer_pl|Lukostrelci z Pinnath Gelin
 trp_c6_pinnath_leader|Kapitán z Pinnath Gelin
 trp_c6_pinnath_leader_pl|Kapitáni z Pinnath Gelin
-trp_a1_blackroot_hunter|Lovec z Čiernodolu
+trp_a1_blackroot_hunter|Lovci z Čiernodolu
 trp_a1_blackroot_hunter_pl|Lovci z Čiernodolu
 trp_a2_blackroot_bowman|Strelec z Čiernodolu
 trp_a2_blackroot_bowman_pl|Strelci z Čiernodolu
@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|Vrchovecký vlčí strážca
 trp_dunnish_wolf_guard_pl|Vrchovecká vlčia stráž
 trp_dunnish_chieftan|Vrchovecký havraní jazdec
 trp_dunnish_chieftan_pl|Vrchoveckí havraní jazdci
-trp_i1_khand_bondsman|Varjagský nevoľník
-trp_i1_khand_bondsman_pl|Varjagskí nevoľníci
-trp_i2_khand_pit_dog|Variagský bojovník
-trp_i2_khand_pit_dog_pl|Variagskí bojovníci
-trp_i3_khand_warrior|Varjagský sekerník
-trp_i3_khand_warrior_pl|Varjagskí sekerníci
-trp_i4_khand_vet_warrior|Varjagský skúsený sekerník
-trp_i4_khand_vet_warrior_pl|Varjagskí skúsení sekerníci
-trp_i5_khand_war_master|Varjagský majster sekerník
-trp_i5_khand_war_master_pl|Varjagskí majstri sekerníci
-trp_c2_khand_pony_rider|Varjagský jazdec na poníkovy
-trp_c2_khand_pony_rider_pl|Varjagskí jazdci na poníkoch
-trp_c3_khand_horseman|Varjagský jazdec na koni
-trp_c3_khand_horseman_pl|Varjagský jazdci na koňoch
-trp_c4_khand_heavy_horseman|Varjagský ťažký kavalerisa
-trp_c4_khand_heavy_horseman_pl|Varjagskí ťažkí kavaleristi
+; trp_i1_khand_bondsman|Khand Bondsman
+; trp_i1_khand_bondsman_pl|Khand Bondsmen
+; trp_i2_khand_pit_dog|Khand Pit Dog
+; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+; trp_i3_khand_warrior|Khand Warrior
+; trp_i3_khand_warrior_pl|Khand Warriors
+; trp_i4_khand_vet_warrior|Variag Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+trp_i5_khand_war_master|Variagský Majster Vojny
+; trp_i5_khand_war_master_pl|Variag Masters of War
+trp_c2_khand_pony_rider|Khandský jazdec na poníkovi
+trp_c2_khand_pony_rider_pl|Khandský jazdec na poníkovi
+trp_c3_khand_horseman|Khandský jazdec
+trp_c3_khand_horseman_pl|Khandský jazdec
+; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
+; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|Varjagský katafrakt
 trp_c5_khand_kataphrakt_pl|Varjagskí katafrakti
 trp_c5_khand_lance_kataphrakt|Varjagský katafrakt s kopijou
 trp_c5_khand_lance_kataphrakt_pl|Varjagskí katafrakti s kopijou
-trp_i4_khand_halberdier|Čepeľo-vírič z Khandu
-trp_i4_khand_halberdier_pl|Čepeľo-víriči z Khandu
-trp_i4_khand_halberdier|Skúsený čepeľo-vírič z Khandu
-trp_i4_khand_halberdier_pl|Skúsení čepeľo-víriči z Khandu
+; trp_i4_khand_halberdier|Khand Glaiveman
+; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|Khandský majster halapartník
 trp_i5_khand_halberd_master_pl|Khandskí majstri halapartníci
-trp_i4_khand_pit_champion|Varjagský zápasník z arén
-trp_i4_khand_pit_champion_pl|Varjagskí zápasníci z arén
-trp_i5_khand_pit_master|Varjagský berserk
-trp_i5_khand_pit_master_pl|Varjagskí berserkovia
-trp_ac3_khand_skirmisher|Varjagský ľahký jazdec
-trp_ac3_khand_skirmisher_pl|Varjagskí ľahkí jazdci
-trp_ac4_khand_vet_skirmisher|Varjagský skúsený ľahký jazdec
-trp_ac4_khand_vet_skirmisher_pl|Varjagskí skúsení ľahkí jazdci
+; trp_i3_khand_pitfighter|Khand Pit Fighter
+; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+; trp_i4_khand_pit_champion|Variag Pit Champion
+; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i5_khand_pit_master|Variag Master of the Pits
+; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+; trp_ac3_khand_skirmisher|Khand Skirmisher
+; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
+; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
+; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|Varjagský ťažký jazdec
 trp_ac5_khand_heavy_skirmisher_pl|Varjagskí ťažkí jazdci
 trp_i1_corsair_youth|Umbarský námorník
