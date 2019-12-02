@@ -2,35 +2,30 @@
 #version 120
 
 uniform sampler2D diffuse_texture;
-uniform sampler2D diffuse_texture2;
 uniform vec4 vFogColor;
 uniform vec4 output_gamma_inv;
-
-
-/* swyter-- used to hide the HP overlay on TLD cutscenes */
-uniform float swy_ui_evil = 0.0f;
 
 varying vec4 outColor0;
 varying vec2 outTexCoord;
 varying float outFog;
+
 void main ()
 {
-  vec4 finalColor_1;
-  vec4 tex_col_2;
-  vec4 tmpvar_3;
-  tmpvar_3 = texture2D (diffuse_texture, outTexCoord);
-  tex_col_2.w = tmpvar_3.w;
-  tex_col_2.xyz = pow (tmpvar_3.xyz, vec3(2.2, 2.2, 2.2));
+  vec4 final_color;
+  vec4 texture_color;
 
-  /* swyter -- linearly interpolate/mix between both GUI background textures, suggested by Kham and Merlkir! */
-  vec4 tex_col_evil = texture2D(diffuse_texture2, outTexCoord); tex_col_evil .xyz = pow(tex_col_evil.xyz, vec3(2.2));
-  tex_col_2 = mix(tex_col_2, tex_col_evil, swy_ui_evil);
+  vec4 tmp_1 = texture2D(diffuse_texture, outTexCoord);
 
-  vec4 tmpvar_4;
-  tmpvar_4 = (outColor0 * tex_col_2);
-  finalColor_1.w = tmpvar_4.w;
-  finalColor_1.xyz = pow (tmpvar_4.xyz, output_gamma_inv.xyz);
-  finalColor_1.xyz = mix (vFogColor.xyz, finalColor_1.xyz, outFog);
-  gl_FragColor = finalColor_1;
+  texture_color.xyz = pow(tmp_1.xyz, vec3(2.2, 2.2, 2.2));
+  texture_color.w = tmp_1.w;
+
+  vec4 tmp_2 = outColor0 * texture_color;
+
+  final_color.xyz = pow(tmp_2.xyz, output_gamma_inv.xyz);
+  final_color.xyz = mix(vFogColor.xyz, final_color.xyz, outFog);
+
+  final_color.w = tmp_2.w;
+  
+  gl_FragColor = final_color;
 }
 
