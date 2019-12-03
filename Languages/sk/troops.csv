@@ -278,7 +278,7 @@ trp_a3_pinnath_archer|Lukostrelec z Pinnath Gelin
 trp_a3_pinnath_archer_pl|Lukostrelci z Pinnath Gelin
 trp_c6_pinnath_leader|Kapitán z Pinnath Gelin
 trp_c6_pinnath_leader_pl|Kapitáni z Pinnath Gelin
-trp_a1_blackroot_hunter|Lovci z Čiernodolu
+trp_a1_blackroot_hunter|Lovec z Čiernodolu
 trp_a1_blackroot_hunter_pl|Lovci z Čiernodolu
 trp_a2_blackroot_bowman|Strelec z Čiernodolu
 trp_a2_blackroot_bowman_pl|Strelci z Čiernodolu
@@ -336,36 +336,36 @@ trp_galadhrim_royal_warden|Urodzený strážca Galadhrim
 trp_galadhrim_royal_warden_pl|Urodzená stráž Galadhrim
 trp_lothlorien_standard_bearer|Lothlorienský vlajkonoš
 trp_lothlorien_standard_bearer_pl|Lothlorienskí zástavníci
-trp_greenwood_scout|Prieskumník z Temnohvozdu
-trp_greenwood_scout_pl|Prieskumníci z Temnohvozdu
-trp_greenwood_veteran_scout|Skúsený prieskumník z Temnohvozdu
-trp_greenwood_veteran_scout_pl|Skúsení prieskumníci z Temnohvozdu
-trp_greenwood_archer|Temnohvozdský lovec
-trp_greenwood_archer_pl|Temnohvozdskí lovci
-trp_greenwood_veteran_archer|Temnohvozdský lukostrelec
-trp_greenwood_veteran_archer_pl|Temnohvozdskí lukostrelci
-trp_greenwood_master_archer|Skúsený lukostrelec z Temnohvozdu
-trp_greenwood_master_archer_pl|Skúsení lukostrelci z Temnohvozdu
-trp_thranduils_royal_marksman|Thranduilov urodzený ostrostrelec
-trp_thranduils_royal_marksman_pl|Thranduiloví urodzení ostrostrelci
-trp_greenwood_sentinel|Ochranca Temnohvozdu
-trp_greenwood_sentinel_pl|Ochrancovia Temnohvozdu
-trp_greenwood_vet_sentinel|Skúsený ochranca Temnohvozdu
-trp_greenwood_vet_sentinel_pl|Skúsení ochrancovia Temnohvozdu
-trp_mirkwood_guardsman|Temnohvozdský strážca
-trp_mirkwood_guardsman_pl|Temnohvozdská stráž
-trp_greenwood_spearman|Temnohvozdský pešiak
-trp_greenwood_spearman_pl|Temnohvozdská pechota
-trp_greenwood_veteran_spearman|Temnohvozdský skúsený pešiak
-trp_greenwood_veteran_spearman_pl|Temnohvozdská skúsená stráž
-trp_greenwood_royal_spearman|Temnohvozdský elitný zbrojnoš
-trp_greenwood_royal_spearman_pl|Temnohvozdská elitná pechota
-trp_thranduils_royal_swordsman|Thranduilov urodzený šermiar
-trp_thranduils_royal_swordsman_pl|Thranduiloví urodzení šermiari
-trp_thranduils_spearman|Thranduilov urodzený kopijník
-trp_thranduils_spearman_pl|Thranduiloví urodzení kopijník
-trp_greenwood_standard_bearer|Temnohvozdský vlajkonoš
-trp_greenwood_standard_bearer_pl|Temnohvozdskí zástavníci
+trp_a1_greenwood_scout|Prieskumník z Temnohvozdu
+trp_a1_greenwood_scout_pl|Prieskumníci z Temnohvozdu
+trp_a2_greenwood_veteran_scout|Skúsený prieskumník z Temnohvozdu
+trp_a2_greenwood_veteran_scout_pl|Skúsení prieskumníci z Temnohvozdu
+trp_a3_greenwood_archer|Temnohvozdský lovec
+trp_a3_greenwood_archer_pl|Temnohvozdskí lovci
+trp_a4_greenwood_veteran_archer|Temnohvozdský lukostrelec
+trp_a4_greenwood_veteran_archer_pl|Temnohvozdskí lukostrelci
+trp_a5_greenwood_master_archer|Skúsený lukostrelec z Temnohvozdu
+trp_a5_greenwood_master_archer_pl|Skúsení lukostrelci z Temnohvozdu
+trp_a6_greenwood_chosen_marksman|Thranduilov urodzený ostrostrelec
+trp_a6__pl|Thranduiloví urodzení ostrostrelci
+trp_a3_greenwood_sentinel|Ochranca Temnohvozdu
+trp_a3_greenwood_sentinel_pl|Ochrancovia Temnohvozdu
+trp_a4_greenwood_vet_sentinel|Skúsený ochranca Temnohvozdu
+trp_a4_greenwood_vet_sentinel_pl|Skúsení ochrancovia Temnohvozdu
+trp_a5_greenwood_vigilant|Temnohvozdský strážca
+trp_a5_greenwood_vigilant_pl|Temnohvozdská stráž
+trp_i2_greenwood_infantry|Temnohvozdský pešiak
+trp_i2_greenwood_infantry_pl|Temnohvozdská pechota
+trp_i3_greenwood_vet_infantry|Temnohvozdský skúsený pešiak
+trp_i3_greenwood_vet_infantry_pl|Temnohvozdská skúsená stráž
+trp_i4_greenwood_elite_infantry|Temnohvozdský elitný zbrojnoš
+trp_i4_greenwood_elite_infantry_pl|Temnohvozdská elitná pechota
+trp_i5_greenwood_chosen_shieldmaster|Thranduilov urodzený šermiar
+trp_i5_greenwood_chosen_shieldmaster_pl|Thranduiloví urodzení šermiari
+trp_i5_greenwood_chosen_spearmaster|Thranduilov urodzený kopijník
+trp_i5_greenwood_chosen_spearmaster_pl|Thranduiloví urodzení kopijník
+trp_i5_greenwood_standard_bearer|Temnohvozdský vlajkonoš
+trp_i5_greenwood_standard_bearer_pl|Temnohvozdskí zástavníci
 trp_rivendell_scout|Prieskumník z Roklinky
 trp_rivendell_scout_pl|Prieskumníci z Roklinky
 trp_rivendell_veteran_scout|Skúsený prieskumník z Roklinky
@@ -520,22 +520,22 @@ trp_dunnish_wolf_guard|Vrchovecký vlčí strážca
 trp_dunnish_wolf_guard_pl|Vrchovecká vlčia stráž
 trp_dunnish_chieftan|Vrchovecký havraní jazdec
 trp_dunnish_chieftan_pl|Vrchoveckí havraní jazdci
-; trp_i1_khand_bondsman|Khand Bondsman
-; trp_i1_khand_bondsman_pl|Khand Bondsmen
-; trp_i2_khand_pit_dog|Khand Pit Dog
-; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
-; trp_i3_khand_warrior|Khand Warrior
-; trp_i3_khand_warrior_pl|Khand Warriors
-; trp_i4_khand_vet_warrior|Variag Veteran Warrior
-; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+trp_i1_khand_bondsman|Khandský nevoľník
+trp_i1_khand_bondsman_pl|Khandský nevoľník
+trp_i2_khand_pit_dog|Khandský jamoví pes
+trp_i2_khand_pit_dog_pl|Khandské Jamové psy
+trp_i3_khand_warrior|Khandský Bojovník
+trp_i3_khand_warrior_pl|Khandský Bojovník
+trp_i4_khand_vet_warrior|Variagský Veteránsky bojovník
+trp_i4_khand_vet_warrior_pl|Variagský Veteránsky bojovník
 trp_i5_khand_war_master|Variagský Majster Vojny
-; trp_i5_khand_war_master_pl|Variag Masters of War
-trp_c2_khand_pony_rider|Khandský jazdec na poníkovi
-trp_c2_khand_pony_rider_pl|Khandský jazdec na poníkovi
-trp_c3_khand_horseman|Khandský jazdec
-trp_c3_khand_horseman_pl|Khandský jazdec
-; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
-; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
+trp_i5_khand_war_master_pl|Variagský Majster Vojny
+trp_c2_khand_pony_rider|Khandský Jazdec na Poníkovi
+trp_c2_khand_pony_rider_pl|Khandský Jazdec na Poníkovi
+trp_c3_khand_horseman|Khandský Jazdec
+trp_c3_khand_horseman_pl|Khandský Jazdec
+trp_c4_khand_heavy_horseman|Khandský Ťažký jazdec
+trp_c4_khand_heavy_horseman_pl|Khandský Ťažký jazdec
 trp_c5_khand_kataphrakt|Varjagský katafrakt
 trp_c5_khand_kataphrakt_pl|Varjagskí katafrakti
 trp_c5_khand_lance_kataphrakt|Varjagský katafrakt s kopijou
@@ -544,16 +544,16 @@ trp_c5_khand_lance_kataphrakt_pl|Varjagskí katafrakti s kopijou
 ; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|Khandský majster halapartník
 trp_i5_khand_halberd_master_pl|Khandskí majstri halapartníci
-; trp_i3_khand_pitfighter|Khand Pit Fighter
-; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
-; trp_i4_khand_pit_champion|Variag Pit Champion
-; trp_i4_khand_pit_champion_pl|Variag Pit Champions
-; trp_i5_khand_pit_master|Variag Master of the Pits
-; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
-; trp_ac3_khand_skirmisher|Khand Skirmisher
-; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
-; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
-; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
+trp_i3_khand_pitfighter|Khandský Jamoví Bojovník
+trp_i3_khand_pitfighter_pl|Khandský Jamový Bojovníci
+trp_i4_khand_pit_champion|Variagský Jamoví Šampión
+trp_i4_khand_pit_champion_pl|Variagský Jamoví Šampióni
+trp_i5_khand_pit_master|Variagský Majster Jám
+trp_i5_khand_pit_master_pl|Variagský Majstri Jám
+trp_ac3_khand_skirmisher|Khandský Šermiar
+trp_ac3_khand_skirmisher_pl|Khandský Šermiar
+trp_ac4_khand_vet_skirmisher|Khandský Veteránsky Šermiar
+trp_ac4_khand_vet_skirmisher_pl|Khandský Veteránsky Šermiar
 trp_ac5_khand_heavy_skirmisher|Varjagský ťažký jazdec
 trp_ac5_khand_heavy_skirmisher_pl|Varjagskí ťažkí jazdci
 trp_i1_corsair_youth|Umbarský námorník

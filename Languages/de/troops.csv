@@ -240,7 +240,7 @@ trp_i6_loss_leader|Hauptmann von Lossarnach
 trp_i6_loss_leader_pl|Hauptmänner von Lossarnach
 trp_i1_pel_watchman|Wachmann von Pelargir
 trp_i1_pel_watchman_pl|Wachmänner von Pelargir
-trp_a2_pel_marine|Seemannsrüstung aus Pelargir
+trp_a2_pel_marine|Seemann von Pelargir
 trp_a2_pel_marine_pl|Seemänner von Pelargir
 trp_a3_pel_vet_marine|Erfahrener Seemann von Pelargir
 trp_a3_pel_vet_marine_pl|Erfahrene Seemänner von Pelargir
@@ -336,36 +336,36 @@ trp_galadhrim_royal_warden|Königlicher Wächter der Galadhrim
 trp_galadhrim_royal_warden_pl|Königliche Wächter der Galadhrim
 trp_lothlorien_standard_bearer|Standartenträger von Lothlorien
 trp_lothlorien_standard_bearer_pl|Standartenträger von Lothlorien
-trp_greenwood_scout|Späher aus dem Grünwald
-trp_greenwood_scout_pl|Späher aus dem Grünwald
-trp_greenwood_veteran_scout|Erfahrener Späher aus dem Grünwald
-trp_greenwood_veteran_scout_pl|Erfahrene Späher aus dem Grünwald
-trp_greenwood_archer|Bogenschütze aus dem Grünwald
-trp_greenwood_archer_pl|Bogenschützen aus dem Grünwald
-trp_greenwood_veteran_archer|Geübter Bogenschütze aus dem Grünwald
-trp_greenwood_veteran_archer_pl|Geübte Bogenschützen aus dem Grünwald
-trp_greenwood_master_archer|Meisterschütze aus dem Grünwald
-trp_greenwood_master_archer_pl|Meisterschützen aus dem Grünwald
-trp_thranduils_royal_marksman|Meisterschütze aus Thranduils Garde
-trp_thranduils_royal_marksman_pl|Meisterschützen aus Thranduils Garde
-trp_greenwood_sentinel|Grenzwächter des Grünwalds
-trp_greenwood_sentinel_pl|Grenzwächter des Grünwalds
-trp_greenwood_vet_sentinel|Behüter des Grünwalds
-trp_greenwood_vet_sentinel_pl|Behüter des Grünwalds
-trp_mirkwood_guardsman|Beschirmer des Grünwalds
-trp_mirkwood_guardsman_pl|Beschirmer des Grünwalds
-trp_greenwood_spearman|Kämpfer aus dem Grünwald
-trp_greenwood_spearman_pl|Kämpfer aus dem Grünwald
-trp_greenwood_veteran_spearman|Erfahrener Kämpfer aus dem Grünwald
-trp_greenwood_veteran_spearman_pl|Erfahrene Kämpfer aus dem Grünwald
-trp_greenwood_royal_spearman|Meisterkämpfer aus dem Grünwald
-trp_greenwood_royal_spearman_pl|Meisterkämpfer aus dem Grünwald
-trp_thranduils_royal_swordsman|Schwertkämpfer aus Thranduils Garde
-trp_thranduils_royal_swordsman_pl|Schwertkämpfer aus Thranduils Garde
-trp_thranduils_spearman|Speerträger aus Thranduils Garde
-trp_thranduils_spearman_pl|Speeträger aus Thranduils Garde
-trp_greenwood_standard_bearer|Bannerträger des Grünwalds
-trp_greenwood_standard_bearer_pl|Bannerträger des Grünwalds
+trp_a1_greenwood_scout|Späher aus dem Grünwald
+trp_a1_greenwood_scout_pl|Späher aus dem Grünwald
+trp_a2_greenwood_veteran_scout|Erfahrener Späher aus dem Grünwald
+trp_a2_greenwood_veteran_scout_pl|Erfahrene Späher aus dem Grünwald
+trp_a3_greenwood_archer|Bogenschütze aus dem Grünwald
+trp_a3_greenwood_archer_pl|Bogenschützen aus dem Grünwald
+trp_a4_greenwood_veteran_archer|Geübter Bogenschütze aus dem Grünwald
+trp_a4_greenwood_veteran_archer_pl|Geübte Bogenschützen aus dem Grünwald
+trp_a5_greenwood_master_archer|Meisterschütze aus dem Grünwald
+trp_a5_greenwood_master_archer_pl|Meisterschützen aus dem Grünwald
+trp_a6_greenwood_chosen_marksman|Meisterschütze aus Thranduils Garde
+trp_a6__pl|Meisterschützen aus Thranduils Garde
+trp_a3_greenwood_sentinel|Grenzwächter des Grünwalds
+trp_a3_greenwood_sentinel_pl|Grenzwächter des Grünwalds
+trp_a4_greenwood_vet_sentinel|Behüter des Grünwalds
+trp_a4_greenwood_vet_sentinel_pl|Behüter des Grünwalds
+trp_a5_greenwood_vigilant|Beschirmer des Grünwalds
+trp_a5_greenwood_vigilant_pl|Beschirmer des Grünwalds
+trp_i2_greenwood_infantry|Kämpfer aus dem Grünwald
+trp_i2_greenwood_infantry_pl|Kämpfer aus dem Grünwald
+trp_i3_greenwood_vet_infantry|Erfahrener Kämpfer aus dem Grünwald
+trp_i3_greenwood_vet_infantry_pl|Erfahrene Kämpfer aus dem Grünwald
+trp_i4_greenwood_elite_infantry|Meisterkämpfer aus dem Grünwald
+trp_i4_greenwood_elite_infantry_pl|Meisterkämpfer aus dem Grünwald
+trp_i5_greenwood_chosen_shieldmaster|Schwertkämpfer aus Thranduils Garde
+trp_i5_greenwood_chosen_shieldmaster_pl|Schwertkämpfer aus Thranduils Garde
+trp_i5_greenwood_chosen_spearmaster|Speerträger aus Thranduils Garde
+trp_i5_greenwood_chosen_spearmaster_pl|Speeträger aus Thranduils Garde
+trp_i5_greenwood_standard_bearer|Bannerträger des Grünwalds
+trp_i5_greenwood_standard_bearer_pl|Bannerträger des Grünwalds
 trp_rivendell_scout|Späher aus Bruchtal
 trp_rivendell_scout_pl|Späher aus Bruchtal
 trp_rivendell_veteran_scout|Erfahrener Späher aus Bruchtal

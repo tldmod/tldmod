@@ -202,7 +202,7 @@ trp_c2_gon_squire|Escudero de Gondor
 trp_c2_gon_squire_pl|Escuderos de Gondor
 trp_c3_gon_vet_squire|Escudero Veterano de Gondor
 trp_c3_gon_vet_squire_pl|Escuderos Veteranos de Gondor
-trp_c4_gon_knight|{Caballero/Dama} de Gondor
+trp_c4_gon_knight|Caballero de Gondor 
 trp_c4_gon_knight_pl|Caballeros de Gondor 
 trp_c5_gon_vet_knight|Caballero Veterano de Gondor
 trp_c5_gon_vet_knight_pl|Caballeros Veteranos de Gondor
@@ -240,7 +240,7 @@ trp_i6_loss_leader|Capitán de Lossarnach
 trp_i6_loss_leader_pl|Capitanes de Lossarnach
 trp_i1_pel_watchman|Vigía de Pelargir
 trp_i1_pel_watchman_pl|Vigías de Pelargir
-trp_a2_pel_marine|Atuendo de Infante de Marina de Pelargir
+trp_a2_pel_marine|Infante de Marina de Pelargir
 trp_a2_pel_marine_pl|Infantes de Marina de Pelargir
 trp_a3_pel_vet_marine|Infante de Marina Veterano de Pelargir
 trp_a3_pel_vet_marine_pl|Infantes de Marina Veteranos de Pelargir
@@ -278,7 +278,7 @@ trp_a3_pinnath_archer|Arquero de Pinnath Gelin
 trp_a3_pinnath_archer_pl|Arqueros de Pinnath Gelin
 trp_c6_pinnath_leader|Capitán de Pinnath Gelin
 trp_c6_pinnath_leader_pl|Capitanes de Pinnath Gelin
-trp_a1_blackroot_hunter|Cazadores del Valle de la Raíz Negra
+trp_a1_blackroot_hunter|Cazador del Valle de la Raíz Negra
 trp_a1_blackroot_hunter_pl|Cazadores del Valle de la Raíz Negra
 trp_a2_blackroot_bowman|Hombre con Arco del Valle de la Raíz Negra
 trp_a2_blackroot_bowman_pl|Hombres con Arco del Valle de la Raíz Negra
@@ -336,36 +336,36 @@ trp_galadhrim_royal_warden|Guardián Real Galadhrim
 trp_galadhrim_royal_warden_pl|Guardianes Reales Galadhrim
 trp_lothlorien_standard_bearer|Portaestandarte de Lórien
 trp_lothlorien_standard_bearer_pl|Portaestandartes de Lórien
-trp_greenwood_scout|Explorador del Bosque Verde
-trp_greenwood_scout_pl|Exploradores del Bosque Verde
-trp_greenwood_veteran_scout|Explorador Veterano del Bosque Verde
-trp_greenwood_veteran_scout_pl|Exploradores Veteranos del Bosque Verde
-trp_greenwood_archer|Tiradores del Bosque Verde
-trp_greenwood_archer_pl|Tiradores del Bosque Verde
-trp_greenwood_veteran_archer|Arquero del Bosque Verde
-trp_greenwood_veteran_archer_pl|Arqueros del Bosque Verde
-trp_greenwood_master_archer|Arquero Veterano del Bosque Verde
-trp_greenwood_master_archer_pl|Arqueros Veteranos del Bosque Verde
-trp_thranduils_royal_marksman|Tirador Real de Thranduil
-trp_thranduils_royal_marksman_pl|Tiradores Reales de Thranduil
-trp_greenwood_sentinel|Centinela del Bosque Verde
-trp_greenwood_sentinel_pl|Centinelas del Bosque Verde
-trp_greenwood_vet_sentinel|Centinela Veterano del Bosque Verde
-trp_greenwood_vet_sentinel_pl|Centinelas Veteranos del Bosque Verde
-trp_mirkwood_guardsman|Defensor del Bosque Verde
-trp_mirkwood_guardsman_pl|Defensores del Bosque Verde
-trp_greenwood_spearman|Infante del Bosque Verde
-trp_greenwood_spearman_pl|Infantería del Bosque Verde
-trp_greenwood_veteran_spearman|Infante Veterano del Bosque Verde
-trp_greenwood_veteran_spearman_pl|Infantería Veterana del Bosque Verde
-trp_greenwood_royal_spearman|Infante de Élite del Bosque Verde
-trp_greenwood_royal_spearman_pl|Infantería de Élite del Bosque Verde
-trp_thranduils_royal_swordsman|Espadachín Real de Thranduil
-trp_thranduils_royal_swordsman_pl|Espadachines Reales de Thranduil
-trp_thranduils_spearman|Lancero Real de Thranduil
-trp_thranduils_spearman_pl|Lanceros Reales de Thranduil
-trp_greenwood_standard_bearer|Portaestandarte del Bosque Verde
-trp_greenwood_standard_bearer_pl|Portaestandartes del Bosque Verde
+trp_a1_greenwood_scout|Explorador del Bosque Verde
+trp_a1_greenwood_scout_pl|Exploradores del Bosque Verde
+trp_a2_greenwood_veteran_scout|Explorador Veterano del Bosque Verde
+trp_a2_greenwood_veteran_scout_pl|Exploradores Veteranos del Bosque Verde
+trp_a3_greenwood_archer|Tiradores del Bosque Verde
+trp_a3_greenwood_archer_pl|Tiradores del Bosque Verde
+trp_a4_greenwood_veteran_archer|Arquero del Bosque Verde
+trp_a4_greenwood_veteran_archer_pl|Arqueros del Bosque Verde
+trp_a5_greenwood_master_archer|Arquero Veterano del Bosque Verde
+trp_a5_greenwood_master_archer_pl|Arqueros Veteranos del Bosque Verde
+trp_a6_greenwood_chosen_marksman|Tirador Real de Thranduil
+trp_a6__pl|Tiradores Reales de Thranduil
+trp_a3_greenwood_sentinel|Centinela del Bosque Verde
+trp_a3_greenwood_sentinel_pl|Centinelas del Bosque Verde
+trp_a4_greenwood_vet_sentinel|Centinela Veterano del Bosque Verde
+trp_a4_greenwood_vet_sentinel_pl|Centinelas Veteranos del Bosque Verde
+trp_a5_greenwood_vigilant|Defensor del Bosque Verde
+trp_a5_greenwood_vigilant_pl|Defensores del Bosque Verde
+trp_i2_greenwood_infantry|Infante del Bosque Verde
+trp_i2_greenwood_infantry_pl|Infantería del Bosque Verde
+trp_i3_greenwood_vet_infantry|Infante Veterano del Bosque Verde
+trp_i3_greenwood_vet_infantry_pl|Infantería Veterana del Bosque Verde
+trp_i4_greenwood_elite_infantry|Infante de Élite del Bosque Verde
+trp_i4_greenwood_elite_infantry_pl|Infantería de Élite del Bosque Verde
+trp_i5_greenwood_chosen_shieldmaster|Espadachín Real de Thranduil
+trp_i5_greenwood_chosen_shieldmaster_pl|Espadachines Reales de Thranduil
+trp_i5_greenwood_chosen_spearmaster|Lancero Real de Thranduil
+trp_i5_greenwood_chosen_spearmaster_pl|Lanceros Reales de Thranduil
+trp_i5_greenwood_standard_bearer|Portaestandarte del Bosque Verde
+trp_i5_greenwood_standard_bearer_pl|Portaestandartes del Bosque Verde
 trp_rivendell_scout|Explorador de Rivendel
 trp_rivendell_scout_pl|Exploradores de Rivendel
 trp_rivendell_veteran_scout|Explorador Veterano de Rivendel

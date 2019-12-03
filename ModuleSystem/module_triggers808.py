@@ -522,7 +522,7 @@ triggersfile version 1
     (try_begin),
         (this_or_next|is_between, ":troop", "trp_a1_blackroot_hunter", "trp_i1_amroth_recruit"),
         (this_or_next|is_between, ":troop", "trp_lothlorien_scout", "trp_lothlorien_infantry"),
-        (this_or_next|is_between, ":troop", "trp_lothlorien_warden", "trp_greenwood_spearman"),
+        (this_or_next|is_between, ":troop", "trp_lothlorien_warden", "trp_i2_greenwood_infantry"),
         (this_or_next|is_between, ":troop", "trp_rivendell_scout", "trp_dunedain_youth"),
         (this_or_next|is_between, ":troop", "trp_dunedain_ranger", "trp_gondor_youth"),
         (this_or_next|is_between, ":troop", "trp_a4_gon_archer", "trp_i1_rohan_youth"),

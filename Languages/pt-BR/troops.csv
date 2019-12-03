@@ -240,8 +240,8 @@ trp_i6_loss_leader|Capitão de Lossarnach
 trp_i6_loss_leader_pl|Capitães de Lossarnach
 trp_i1_pel_watchman|Vigia de Pelargir
 trp_i1_pel_watchman_pl|Vigias de Pelargir
-trp_a2_pel_marine|Marina de Pelargir
-trp_a2_pel_marine_pl|Soldados de Pelargir
+trp_a2_pel_marine|Marinheiro de Pelargir
+trp_a2_pel_marine_pl|Marinheiros de Pelargir
 trp_a3_pel_vet_marine|Soldado Veterano de Pelargir
 trp_a3_pel_vet_marine_pl|Marinheiros Pelargir Veteranos
 trp_i2_pel_infantry|Soldado de Infantaria de Pelargir
@@ -278,7 +278,7 @@ trp_a3_pinnath_archer|Arqueiro de Elite de Pinnath Gelin
 trp_a3_pinnath_archer_pl|Arqueiros de Elite de Pinnath Gelin
 trp_c6_pinnath_leader|Capitão de Pinnath Gelin
 trp_c6_pinnath_leader_pl|Capitães de Pinnath Gelin
-trp_a1_blackroot_hunter|Caçadores do Vale Raiznegra
+trp_a1_blackroot_hunter|Caçador do Vale Raiznegra
 trp_a1_blackroot_hunter_pl|Caçadores do Vale Raiznegra
 trp_a2_blackroot_bowman|Arqueiro Veterano do Vale Raiznegra
 trp_a2_blackroot_bowman_pl|Arqueiros Veterano do Vale Raiznegra
@@ -336,36 +336,36 @@ trp_galadhrim_royal_warden|Guardião Real de Galadhrim
 trp_galadhrim_royal_warden_pl|Guardiões Reais de Galadhrim
 trp_lothlorien_standard_bearer|Carregador de Estandarte de Lothlorien
 trp_lothlorien_standard_bearer_pl|Carregadores de Estandarte de Lothlorien
-trp_greenwood_scout|Batedor de Greenwood
-trp_greenwood_scout_pl|Batedores de Greenwood
-trp_greenwood_veteran_scout|Batedor Veterano de Greenwood
-trp_greenwood_veteran_scout_pl|Batedores Veteranos de Greenwood
-trp_greenwood_archer|Arqueiro de Greenwood
-trp_greenwood_archer_pl|Arqueiros de Greenwood
-trp_greenwood_veteran_archer|Arqueiro de Greenwood
-trp_greenwood_veteran_archer_pl|Arqueiros de Greenwood
-trp_greenwood_master_archer|Arqueiro Veterano de Greenwood
-trp_greenwood_master_archer_pl|Arqueiros Veteranos de Greenwood
-trp_thranduils_royal_marksman|Atirador Real de Thranduil
-trp_thranduils_royal_marksman_pl|Atiradores Reais de Thranduil
-trp_greenwood_sentinel|Sentinela de Greenwood
-trp_greenwood_sentinel_pl|Sentinelas de Greenwood
-trp_greenwood_vet_sentinel|Sentinela Veterano de Greenwood
-trp_greenwood_vet_sentinel_pl|Sentinelas Veteranos de Greenwood
-trp_mirkwood_guardsman|Guarda de Greenwood
-trp_mirkwood_guardsman_pl|Guardas de Greenwood
-trp_greenwood_spearman|Lanceiro de Greenwood
-trp_greenwood_spearman_pl|Lanceiros de Greenwood
-trp_greenwood_veteran_spearman|Lanceiro Veterano de Greenwood
-trp_greenwood_veteran_spearman_pl|Lanceiros Veteranos de Greenwood
-trp_greenwood_royal_spearman|Lanceiro Real de Greenwood
-trp_greenwood_royal_spearman_pl|Lanceiros Reais de Greenwood
-trp_thranduils_royal_swordsman|Espadachim Real de Thranduil
-trp_thranduils_royal_swordsman_pl|Espadachins Reais de Thranduil
-trp_thranduils_spearman|Lanceiro Real de Thranduil
-trp_thranduils_spearman_pl|Lanceiros Reais de Thranduil
-trp_greenwood_standard_bearer|Carregador de Estandarte de Greenwood
-trp_greenwood_standard_bearer_pl|Carregadores de Estandarte de Greenwood
+trp_a1_greenwood_scout|Batedor de Greenwood
+trp_a1_greenwood_scout_pl|Batedores de Greenwood
+trp_a2_greenwood_veteran_scout|Batedor Veterano de Greenwood
+trp_a2_greenwood_veteran_scout_pl|Batedores Veteranos de Greenwood
+trp_a3_greenwood_archer|Arqueiro de Greenwood
+trp_a3_greenwood_archer_pl|Arqueiros de Greenwood
+trp_a4_greenwood_veteran_archer|Arqueiro de Greenwood
+trp_a4_greenwood_veteran_archer_pl|Arqueiros de Greenwood
+trp_a5_greenwood_master_archer|Arqueiro Veterano de Greenwood
+trp_a5_greenwood_master_archer_pl|Arqueiros Veteranos de Greenwood
+trp_a6_greenwood_chosen_marksman|Atirador Real de Thranduil
+trp_a6__pl|Atiradores Reais de Thranduil
+trp_a3_greenwood_sentinel|Sentinela de Greenwood
+trp_a3_greenwood_sentinel_pl|Sentinelas de Greenwood
+trp_a4_greenwood_vet_sentinel|Sentinela Veterano de Greenwood
+trp_a4_greenwood_vet_sentinel_pl|Sentinelas Veteranos de Greenwood
+trp_a5_greenwood_vigilant|Guarda de Greenwood
+trp_a5_greenwood_vigilant_pl|Guardas de Greenwood
+trp_i2_greenwood_infantry|Lanceiro de Greenwood
+trp_i2_greenwood_infantry_pl|Lanceiros de Greenwood
+trp_i3_greenwood_vet_infantry|Lanceiro Veterano de Greenwood
+trp_i3_greenwood_vet_infantry_pl|Lanceiros Veteranos de Greenwood
+trp_i4_greenwood_elite_infantry|Lanceiro Real de Greenwood
+trp_i4_greenwood_elite_infantry_pl|Lanceiros Reais de Greenwood
+trp_i5_greenwood_chosen_shieldmaster|Espadachim Real de Thranduil
+trp_i5_greenwood_chosen_shieldmaster_pl|Espadachins Reais de Thranduil
+trp_i5_greenwood_chosen_spearmaster|Lanceiro Real de Thranduil
+trp_i5_greenwood_chosen_spearmaster_pl|Lanceiros Reais de Thranduil
+trp_i5_greenwood_standard_bearer|Carregador de Estandarte de Greenwood
+trp_i5_greenwood_standard_bearer_pl|Carregadores de Estandarte de Greenwood
 trp_rivendell_scout|Batedor de Valfenda
 trp_rivendell_scout_pl|Batedores de Valfenda
 trp_rivendell_veteran_scout|Batedor Veterano de Valfenda

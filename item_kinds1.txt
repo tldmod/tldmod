@@ -1668,25 +1668,25 @@ itemsfile version 2
  itm_rohan_2h_sword Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3 100 0 0 0 0 40960 94 0 101 0 287 40
 0
 
- itm_mirkwood_light_scale Light_Woodelf_Scale Light_Woodelf_Scale 1  mirkwood_light_scale 0  16842765 0 1000 704643072 12 100 0 24 8 0 0 0 0 0 0 0 0
+ itm_mirkwood_light_scale Light_Woodelf_Scale Light_Woodelf_Scale 1  mirkwood_light_scale 0  16842765 0 1000 704643072 11 100 0 24 4 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_a Light_Leather Light_Leather 1  mirkwood_leather 0  16842765 0 500 251658240 7 100 0 16 8 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_a Light_Leather Light_Leather 1  mirkwood_leather 0  16842765 0 200 251658240 4 100 0 16 2 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_b Light_Quilted_and_Scale_Armor Light_Quilted_and_Scale_Armor 1  mirkwood_scalequilted_01 0  16842765 0 1100 704643072 14 100 0 32 16 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_b Light_Quilted_and_Scale_Armor Light_Quilted_and_Scale_Armor 1  mirkwood_scalequilted_01 0  16842765 0 1100 704643072 12 100 0 26 12 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_c Mirkwood_Royal_Mail Mirkwood_Royal_Mail 1  mirkwood_royal 0  16842765 0 3000 704643072 15 100 0 37 16 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_c Mirkwood_Royal_Mail Mirkwood_Royal_Mail 1  mirkwood_royal 0  16842765 0 3000 704643072 14 100 0 35 16 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_d Light_Quilted_Surcoat Light_Quilted_Surcoat 1  mirkwood_quiltedsurcoat_01 0  16842765 0 1000 704643072 10 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_d Light_Quilted_Surcoat Light_Quilted_Surcoat 1  mirkwood_quiltedsurcoat_01 0  16842765 0 1000 704643072 6 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643072 15 100 0 35 14 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643072 13 100 0 25 14 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643072 20 100 3 40 14 0 0 0 0 0 0 0 0
+ itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643072 16 100 0 38 14 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 104 0 148 0 291 30
@@ -1704,31 +1704,31 @@ itemsfile version 2
  itm_mirkwood_axe Mirkwood_Axe Mirkwood_Axe 2  mirkwood_axe 0  mirkwood_axe_carry 3458764513820540928  80019458 9223388530091229198 600 156672 1 100 0 0 0 0 44032 115 0 51 0 256 43
 0
 
- itm_mirkwood_spear_shield_a Mirkwood_Spearman_Shield Mirkwood_Spearman_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3 100 0 20 0 0 1000 82 0 90 0 0 0
+ itm_mirkwood_spear_shield_a Mirkwood_Shield Mirkwood_Shield 1  mirkwood_med_shield 0  327687 4831838208 1000 771751936 2 100 0 16 0 0 800 88 0 60 0 0 0
 0
 
- itm_mirkwood_spear_shield_b Mirkwood_War_Shield Mirkwood_War_Shield 1  mirkwood_med_shield 0  327687 4831838208 1000 771751936 2 100 0 15 0 0 800 90 0 60 0 0 0
+ itm_mirkwood_spear_shield_b Mirkwood_War_Shield Mirkwood_War_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3 100 0 16 0 0 1000 82 0 90 0 0 0
 0
 
- itm_mirkwood_spear_shield_c Mirkwood_Swordsman_Shield Mirkwood_Swordsman_Shield 1  mirkwood_royal_round 0  327687 4831838208 1000 771751936 2 100 0 20 0 0 1000 82 0 60 0 0 0
+ itm_mirkwood_spear_shield_c Mirkwood_Round_Shield Mirkwood_Round_Shield 1  mirkwood_royal_round 0  327687 4831838208 1000 771751936 2 100 0 20 0 0 1000 90 0 50 0 0 0
 0
 
- itm_mirkwood_helm_a Mirkwood_Archer_Helm Mirkwood_Archer_Helm 1  mirkwood_helm 0  65548 0 1300 704643072 1 100 37 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_a Mirkwood_Archer_Helm Mirkwood_Archer_Helm 3  mirkwood_helm_a 134  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 300 167772294 1 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_b Mirkwood_Helm Mirkwood_Helm 1  mirkwoodnormalspearman 0  65548 0 1800 704643072 1 100 42 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_b Mirkwood_Helm Mirkwood_Helm 2  mirkwoodnormalspearman_a 0  mirkwoodnormalspearman_b 167772160  65548 0 1200 704643072 1 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_c Mirkwood_Royal_Spearman_Helm Mirkwood_Royal_Spearman_Helm 1  mirkwoodroyalspearman 0  65548 0 2000 704643072 1 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_c Mirkwood_Heavy_Helm Mirkwood_Heavy_Helm 2  mirkwoodroyalspearman_a 0  mirkwoodroyalspearman_b 167772160  65548 0 2000 704643072 2 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_d Mirkwood_Royal_Archer_Helm Mirkwood_Royal_Archer_Helm 1  mirkwoodroyalarcher 0  65548 0 2100 704643072 1 100 45 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_mirkwood_boots Mirkwood_boots Mirkwood_boots 1  mirkwood_boots 0  69390 0 1200 251658240 1 100 0 0 23 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_d Mirkwood_Royal_Helm Mirkwood_Royal_Helm 2  mirkwoodroyalarcher_a 0  mirkwoodroyalarcher_a 167772160  65548 0 2100 704643072 1 100 36 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_leather_greaves Mirkwood_Leather_Greaves Mirkwood_Leather_Greaves 1  mirkwood_boots 0  69390 0 1500 251658240 1 100 0 0 28 0 0 0 0 0 0 0 0
+0
+
+ itm_mirkwood_boots Mirkwood_boots Mirkwood_boots 1  mirkwood_boots 0  69390 0 1200 251658240 1 100 0 0 23 0 0 0 0 0 0 0 0
 0
 
  itm_harad_tunic Harad_Tunic Harad_Tunic 1  harad_tunic 0  16842765 0 50 123731968 7 100 0 8 3 0 0 0 0 0 0 0 0
@@ -1914,22 +1914,22 @@ itemsfile version 2
  itm_khand_inf_helm_a Khand_Helm Khand_Helm 3  khand_inf_helm_a1 134  khand_inf_helm_a2 0  khand_inf_helm_a3 167772160  65548 0 400 167772294 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_inf_helm_b Khand_Infantry_Helm Khand_Infantry_Helm 3  khand_inf_helm_b1 134  khand_inf_helm_b2 0  khand_inf_helm_b3 167772160  65548 0 600 167772294 3 100 29 0 0 0 0 0 0 0 0 0 0
+ itm_khand_inf_helm_b Khand_Helm Khand_Helm 3  khand_inf_helm_b1 134  khand_inf_helm_b2 0  khand_inf_helm_b3 167772160  65548 0 600 167772294 3 100 29 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_inf_helm_c1 Khand_Infantry_Helm Khand_Infantry_Helm 3  khand_inf_helm_c1a 134  khand_inf_helm_c1b 0  khand_inf_helm_c1c 167772160  65548 0 800 167772294 3 100 31 0 0 0 0 0 0 0 0 0 0
+ itm_khand_inf_helm_c1 Khand_Bowl_Helm Khand_Bowl_Helm 3  khand_inf_helm_c1a 134  khand_inf_helm_c1b 0  khand_inf_helm_c1c 167772160  65548 0 800 167772294 3 100 31 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_inf_helm_c2 Khand_Infantry_Helm Khand_Infantry_Helm 3  khand_inf_helm_c2a 134  khand_inf_helm_c2b 0  khand_inf_helm_c2c 167772160  65548 0 800 167772294 3 100 31 0 0 0 0 0 0 0 0 0 0
+ itm_khand_inf_helm_c2 Khand_Bowl_Helm Khand_Bowl_Helm 3  khand_inf_helm_c2a 134  khand_inf_helm_c2b 0  khand_inf_helm_c2c 167772160  65548 0 800 167772294 3 100 31 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_inf_helm_d Khand_Infantry_Helm Khand_Infantry_Helm 3  khand_inf_helm_d1 134  khand_inf_helm_d2 0  khand_inf_helm_d3 167772160  65548 0 800 167772294 3.5 100 34 0 0 0 0 0 0 0 0 0 0
+ itm_khand_inf_helm_d Khand_Cone_Helm Khand_Cone_Helm 3  khand_inf_helm_d1 134  khand_inf_helm_d2 0  khand_inf_helm_d3 167772160  65548 0 800 167772294 3.5 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_cav_helm_a Khand_Cavalry_Helm Khand_Cavalry_Helm 3  khand_cav_helm_a1 134  khand_cav_helm_a2 0  khand_cav_helm_a3 167772160  65548 0 800 704643206 3 100 33 0 0 0 0 0 0 0 0 0 0
+ itm_khand_cav_helm_a Khand_Rider_Helm Khand_Rider_Helm 3  khand_cav_helm_a1 134  khand_cav_helm_a2 0  khand_cav_helm_a3 167772160  65548 0 800 704643206 3 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_cav_helm_b Khand_Cavalry_Helm Khand_Cavalry_Helm 2  khand_cav_helm_b 0  khand_cav_helm_b2 167772160  65548 0 1200 167772294 2 100 33 0 0 0 0 0 0 0 0 0 0
+ itm_khand_cav_helm_b Khand_Rider_Helm Khand_Rider_Helm 2  khand_cav_helm_b 0  khand_cav_helm_b2 167772160  65548 0 1200 167772294 2 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_khand_cav_helm_c Khand_Decorated_Helm Khand_Decorated_Helm 2  khand_cav_helm_c 0  khand_cav_helm_c3 167772160  65548 0 1500 704643072 3 100 38 0 0 0 0 0 0 0 0 0 0
@@ -1938,20 +1938,20 @@ itemsfile version 2
  itm_khand_helm_mask Khand_Mask Khand_Mask 2  Khand_Helmet_Mask2 0  Khand_Helmet_Mask1 167772160  16842764 0 100 167772294 0.5 100 20 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_light Khand_Kilt Khand_Kilt 3  khand_light_a 134  khand_light_b 0  khand_light_c 167772160  16842765 0 40 167772294 7 100 0 8 8 0 0 0 0 0 0 0 0
+ itm_khand_light Khand_Kilt Khand_Kilt 3  khand_light_a 134  khand_light_b 0  khand_light_c 167772160  16842765 0 40 167772294 2 100 0 8 8 0 0 0 0 0 0 0 0
 1
 -50  0 
 
- itm_khand_light_lam Khand_Armor Khand_Armor 1  khand_light_lam 0  16842765 0 1200 167772294 18 100 0 22 8 0 0 0 0 0 0 0 0
+ itm_khand_light_lam Khand_Light_Lamellar Khand_Light_Lamellar 1  khand_light_lam 0  16842765 0 400 167772294 15 100 0 22 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_foot_lam Khand_Armor Khand_Armor 3  khand_foot_lam_a 134  khand_foot_lam_b 0  khand_foot_lam_c 167772160  16842765 0 1100 167772294 18 100 0 21 8 0 0 0 0 0 0 0 0
+ itm_khand_foot_lam Khand_Footman_Armor Khand_Footman_Armor 3  khand_foot_lam_a 134  khand_foot_lam_b 0  khand_foot_lam_c 167772160  16842765 0 1100 167772294 18 100 0 28 8 0 0 0 0 0 0 0 0
 0
 
- itm_khand_med_lam Khand_Armor Khand_Armor 3  khand_med_lam_b 134  khand_med_lam_c 0  khand_med_lam_d 167772160  16842765 0 1000 167772294 17 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_khand_med_lam Khand_Medium_Lamellar Khand_Medium_Lamellar 3  khand_med_lam_b 134  khand_med_lam_c 0  khand_med_lam_d 167772160  16842765 0 1500 167772294 23 100 0 32 12 0 0 0 0 0 0 0 0
 0
 
- itm_khand_heavy_lam Khand_Heavy_Lamellar Khand_Heavy_Lamellar 3  khand_heavy_lam_a 134  khand_heavy_lam_b 0  khand_noble_lam 167772160  16842765 0 2000 704643206 25 100 0 30 12 0 0 0 0 0 0 0 0
+ itm_khand_heavy_lam Khand_Heavy_Lamellar Khand_Heavy_Lamellar 3  khand_heavy_lam_a 134  khand_heavy_lam_b 0  khand_noble_lam 167772160  16842765 0 3000 704643206 28 100 0 38 16 0 0 0 0 0 0 0 0
 0
 
  itm_free_khand_light_lam Khand_Light_Lamellar Khand_Light_Lamellar 1  khand_light_lam 0  16842765 0 1000 167772294 19 100 0 20 8 0 0 0 0 0 0 0 0

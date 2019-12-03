@@ -565,8 +565,8 @@ dlga_lord_mission_raise_troops_alternate:close_window|Bu ilginç bir öneri, {pl
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Ah, elbette. Tam da bekledigim gibi. Peki, o zaman sana iyi şanslar
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Yardım edebilecegin bir şey var, {s4} olarak bilinen bir kanunsuz ile ilgili bir sorun. Korumalarımdan birini öldürdü ve o zamandan beri yargılanmaktan kaçıyor. Aldıgımız haberlere göre kaçak {s3} bölgesinde görülmüş. Eger onu avlayıp hak ettigi adaleti saglarsan, karşılıgında seni ödüllendirecegim.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Öyleyse onu yakalayacagım ve onu infaz edecegim.
-dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Onun arkasından koşturamayacak kadar meşgulüm.
-dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Bu Harika, {playername}. Sana minnettar kalacagım,ve tabi ki bu kahramanlıgın unutulmaycak. Peki, iyi avlanmalar.
+dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Onun arkasından koşturamayacak kadar kadar meşgulüm.
+dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Bu Harika, {playname}. Sana minnettar kalacagım,ve tabi ki bu kahramanlıgın unutulmaycak. Peki, iyi avlanmalar.
 dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|İstedigin gibi olsun {playername}. Sanırım etrafta bu görevi tamamlayabilecek birçok ödül avcısı var.
 dlga_lord_tell_mission:lord_mission_told.2|{s6} dogru ilerleyen mülteciler var. Yavaş yürüyor olacaklardır, bu sebeple, düşmanlarımız için bir hedef haline gelecekler. Varış noktalarına ulaşana kadar onları koru.
 dlga_lord_tell_mission:lord_mission_told.3|Casuslarımız mültecilerin {s6} ya dogru yola çıktıgını söylüyor. İçlerindeki yaşlılar, hastalar ve ölmek üzere olanlar yüzünden yavaş ilerliyor olacaklar. Onları yakala, bütün adamları öldür, ve herkesi köle olarak ele geçir. Hiçbirinin gidecekleri yere ulaşmasına izin verme!
