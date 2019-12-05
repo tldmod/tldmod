@@ -57,8 +57,8 @@ def wp_melee(x):
   return n
  
 #Skills
-knows_common = knows_riding_1|knows_trade_10|knows_inventory_management_10|knows_prisoner_management_10|knows_leadership_1
-knows_common_dwarf = knows_riding_10|knows_horse_archery_10|knows_trade_2|knows_inventory_management_4|knows_prisoner_management_10|knows_leadership_1
+knows_common = knows_riding_1|knows_reserved_10_15|knows_reserved_11_15|knows_reserved_12_15 #add unused dummy skills
+knows_common_dwarf = knows_riding_10|knows_horse_archery_10|knows_reserved_10_15|knows_reserved_11_15|knows_reserved_12_15 #add unused dummy skills
 def_attrib = str_7| agi_5| int_4| cha_4
  
 itm_hunting_bow = itm_short_bow

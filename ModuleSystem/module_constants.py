@@ -1999,7 +1999,7 @@ fac_reward_items_list = [
 #fac_moria
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_warg_reward, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_dwarf_great_pick, imod_old), (8, itm_moria_armor_e, imod_lordly), (9, itm_moria_arrow_reward, 0)],
 #fac_guldur
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_mordor_banner      ,imod_balanced), (5, itm_herbarium_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_spider, 0), (8, itm_guldur_arrows_reward, 0), (9, itm_nazgul_sword, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_club_d, imod_balanced), (5, itm_herbarium_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_spider, 0), (8, itm_guldur_arrows_reward, 0), (9, itm_nazgul_sword, 0)],
 #fac_gundabad
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_warg_reward, imod_champion), (6, itm_angmar_whip_reward, 0), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_angmar_shield, imod_reinforced)],
 #fac_dunland

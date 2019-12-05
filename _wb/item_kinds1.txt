@@ -1013,34 +1013,34 @@ itemsfile version 2
  itm_isen_orc_armor_g Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_g 0  16842765 0 1501 174063750 25 100 0 20 9 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_a Uruk-hai_Light_Harness Uruk-hai_Light_Harness 1  urukhai_isen_a 0  16842765 0 54 123731968 4 100 0 8 3 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_a Uruk-hai_Light_Harness Uruk-hai_Light_Harness 1  urukhai_isen_a 0  16842765 0 52 123731968 4 100 0 8 3 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_b Uruk-hai_Leather_Armor Uruk-hai_Leather_Armor 1  urukhai_isen_b 0  16842765 0 404 123731968 10 100 0 14 6 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_b Uruk-hai_Leather_Armor Uruk-hai_Leather_Armor 1  urukhai_isen_b 0  16842765 0 402 123731968 10 100 0 14 6 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_c Uruk-hai_Leather_Armor Uruk-hai_Leather_Armor 1  urukhai_isen_c 0  16842765 0 704 123731968 12 100 0 14 9 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_c Uruk-hai_Leather_Armor Uruk-hai_Leather_Armor 1  urukhai_isen_c 0  16842765 0 702 123731968 12 100 0 14 9 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_d Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_d 0  16842765 0 2004 174063750 22 100 0 23 13 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_d Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_d 0  16842765 0 2002 174063750 22 100 0 23 13 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_e Uruk-hai_Mail_Harness Uruk-hai_Mail_Harness 1  urukhai_isen_e 0  16842765 0 1504 174063750 20 100 0 19 12 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_e Uruk-hai_Mail_Harness Uruk-hai_Mail_Harness 1  urukhai_isen_e 0  16842765 0 1502 174063750 20 100 0 19 12 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_a Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_f 0  16842765 0 2004 174063750 22 100 0 25 12 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_a Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_f 0  16842765 0 2002 174063750 22 100 0 25 12 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_b Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_g 0  16842765 0 2804 174063750 25 100 0 29 12 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_b Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_g 0  16842765 0 2802 174063750 25 100 0 29 12 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_c Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_h 0  16842765 0 3004 174063750 26 100 0 29 14 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_c Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_h 0  16842765 0 3002 174063750 26 100 0 29 14 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_d Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_a 0  16842765 0 694 123731968 14 100 0 18 10 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_d Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_a 0  16842765 0 692 123731968 14 100 0 18 10 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_e Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_b 0  16842765 0 794 123731968 15 100 0 18 10 0 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_e Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_b 0  16842765 0 792 123731968 15 100 0 18 10 0 0 0 0 0 0 0 0
 0
 
  itm_uruk_tracker_boots Uruk_Tracker_Boots Uruk_Tracker_Boots 1  uruk_furboot_lr 0  65550 0 300 123731968 2 100 0 0 12 0 0 0 0 0 0 0 0
@@ -1529,28 +1529,28 @@ itemsfile version 2
  itm_free_rohan_armor_d Rohan_Hauberk Rohan_Hauberk 1  rohan_mail 0  16842765 0 800 167772294 12 100 0 20 9 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_e Rohan_Hauberk Rohan_Hauberk 1  rohan_mail 0  16842765 0 800 167772294 12 100 0 20 9 0 0 0 0 0 0 0 0
+ itm_rohan_cav_sword Rohan_Riding_Sword Rohan_Riding_Sword 2  rohan_sword_a 0  scab_rohan_sword_a 3458764513820540928  4259842 9223388564182532111 500 287892 1.5 100 0 0 0 0 31744 99 0 95 0 277 31
 0
 
- itm_free_rohan_armor_f Rohan_Hauberk Rohan_Hauberk 1  rohan_mail 0  16842765 0 1000 167772294 12 100 0 22 9 0 0 0 0 0 0 0 0
+ itm_rohan_inf_sword Rohan_Sword Rohan_Sword 2  rohan_sword_b 0  scab_rohan_sword_b 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 100 0 95 0 278 29
 0
 
- itm_free_rohan_armor_g Rohan_Leather_Armor Rohan_Leather_Armor 1  rohan_lamellar 0  16842765 0 700 167772294 15 100 0 18 7 0 0 0 0 0 0 0 0
+ itm_rohan_spear Rohan_Spear Rohan_Spear 1  rohan_spear 0  138772484 9254615759470988544 189 271496 2.5 100 0 0 0 0 16384 92 0 170 0 285 528
 0
 
- itm_rohan_armor_h Rohan_Leather_Armor Rohan_Leather_Armor 1  rohan_lamellar 0  16842765 0 750 167772294 15 100 0 18 9 0 0 0 0 0 0 0 0
+ itm_rohan_lance Rohan_Lance Rohan_Lance 1  rohan_lance 0  2286256132 201326848 300 271496 2.5 100 0 0 0 0 0 88 0 208 0 282 0
 0
 
- itm_free_rohan_armor_i Rohan_Leather_Armor Rohan_Leather_Armor 1  rohan_lamellar 0  16842765 0 900 167772294 15 100 0 20 9 0 0 0 0 0 0 0 0
+ itm_rohan_sword_c Rohan_Sword Rohan_Sword 2  rohan_sword_c 0  scab_rohan_sword_c 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 103 0 96 0 277 29
 0
 
- itm_free_rohan_armor_j Rohan_Hauberk Rohan_Hauberk 1  rohan_rider 0  16842765 0 1500 167772294 17 100 0 30 12 0 0 0 0 0 0 0 0
+ itm_rohirrim_short_axe Rohirrim_Short_Axe Rohirrim_Short_Axe 1  rohan_1haxe 0  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 35840 100 0 50 0 256 35
 0
 
- itm_rohan_armor_k Rohan_Hauberk Rohan_Hauberk 1  rohan_rider 0  16842765 0 1500 167772294 17 100 0 30 12 10 0 0 0 0 0 0 0
+ itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  38860554243 9223652412881895662 500 287892 2 100 0 0 0 0 35840 92 0 76 0 256 35
 0
 
- itm_free_rohan_armor_l Rohan_Hauberk Rohan_Hauberk 1  rohan_rider 0  16842765 0 1600 167772294 18 100 0 33 12 0 0 0 0 0 0 0 0
+ itm_rohan_2h_sword Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3 100 0 0 0 0 40960 94 0 101 0 287 40
 0
 
  itm_rohan_recruit Rohan_Padded_Jerkin Rohan_Padded_Jerkin 3  rohan_recruit_poor 134  rohan_recruit 0  rohan_recruit_reinforced 33554432  16842765 0 150 123731968 2 100 0 8 2 0 0 0 0 0 0 0 0
@@ -1644,28 +1644,28 @@ itemsfile version 2
  itm_rohan_shoes Leather_Shoes Leather_Shoes 1  rohan_boot_light 0  536940302 0 50 123731968 1 100 0 0 8 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_cav_sword Rohan_Riding_Sword Rohan_Riding_Sword 2  rohan_sword_a 0  scab_rohan_sword_a 3458764513820540928  4259842 9223388564182532111 500 287892 1.5 100 0 0 0 0 31744 99 0 95 0 277 31
+ itm_rohan_cav_sword2 Rohan_Riding_Sword Rohan_Riding_Sword 2  rohan_sword_a 0  scab_rohan_sword_a 3458764513820540928  4259842 9223388564182532111 500 287892 1.5 100 0 0 0 0 31744 99 0 95 0 277 31
 0
 
- itm_rohan_inf_sword Rohan_Sword Rohan_Sword 2  rohan_sword_b 0  scab_rohan_sword_b 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 100 0 95 0 278 29
+ itm_rohan_inf_sword2 Rohan_Sword Rohan_Sword 2  rohan_sword_b 0  scab_rohan_sword_b 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 100 0 95 0 278 29
 0
 
- itm_rohan_spear Rohan_Spear Rohan_Spear 1  rohan_spear 0  138772484 9254615759470988544 189 271496 2.5 100 0 0 0 0 16384 92 0 170 0 285 528
+ itm_rohan_spear2 Rohan_Spear Rohan_Spear 1  rohan_spear 0  138772484 9254615759470988544 189 271496 2.5 100 0 0 0 0 16384 92 0 170 0 285 528
 0
 
- itm_rohan_lance Rohan_Lance Rohan_Lance 1  rohan_lance 0  2286256132 201326848 300 271496 2.5 100 0 0 0 0 0 88 0 208 0 282 0
+ itm_rohan_lance2 Rohan_Lance Rohan_Lance 1  rohan_lance 0  2286256132 201326848 300 271496 2.5 100 0 0 0 0 0 88 0 208 0 282 0
 0
 
- itm_rohan_sword_c Rohan_Sword Rohan_Sword 2  rohan_sword_c 0  scab_rohan_sword_c 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 103 0 96 0 277 29
+ itm_rohan_sword_c2 Rohan_Sword Rohan_Sword 2  rohan_sword_c 0  scab_rohan_sword_c 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 103 0 96 0 277 29
 0
 
- itm_rohirrim_short_axe Rohirrim_Short_Axe Rohirrim_Short_Axe 1  rohan_1haxe 0  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 35840 100 0 50 0 256 35
+ itm_rohirrim_short_axe2 Rohirrim_Short_Axe Rohirrim_Short_Axe 1  rohan_1haxe 0  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 35840 100 0 50 0 256 35
 0
 
- itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  38860554243 9223652412881895662 500 287892 2 100 0 0 0 0 35840 92 0 76 0 256 35
+ itm_rohirrim_long_hafted_axe2 Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  38860554243 9223652412881895662 500 287892 2 100 0 0 0 0 35840 92 0 76 0 256 35
 0
 
- itm_rohan_2h_sword Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3 100 0 0 0 0 40960 94 0 101 0 287 40
+ itm_rohan_2h_sword2 Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3 100 0 0 0 0 40960 94 0 101 0 287 40
 0
 
  itm_mirkwood_light_scale Light_Woodelf_Scale Light_Woodelf_Scale 1  mirkwood_light_scale 0  16842765 0 1000 704643072 11 100 0 24 4 0 0 0 0 0 0 0 0

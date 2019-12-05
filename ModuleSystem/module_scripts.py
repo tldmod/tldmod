@@ -14870,9 +14870,9 @@ scripts = [
 	  (store_skill_level, ":x", ":i", ":troop"),
 	  (troop_raise_skill,  "trp_player",":i",-1000), 	  
 	  (troop_raise_skill,  "trp_player",":i",":x"), 
-	  (troop_raise_skill,  "trp_player","skl_inventory_management",-100), #set these to 0
-	  (troop_raise_skill,  "trp_player","skl_prisoner_management",-100), 
-	  (troop_raise_skill,  "trp_player","skl_trade",-100), 
+	  # (troop_raise_skill,  "trp_player","skl_inventory_management",-100), #set these to 0
+	  # (troop_raise_skill,  "trp_player","skl_prisoner_management",-100), 
+	  # (troop_raise_skill,  "trp_player","skl_trade",-100), 
 	(try_end),
 	(assign, "$disable_skill_modifiers", 0),
 	
@@ -21508,15 +21508,20 @@ scripts = [
 	(try_for_range,":inv_slot",ek_body,ek_gloves), 			# EQUIPMENT CHECKS
 		(troop_get_inventory_slot, ":item", ":npc", ":inv_slot"),
 		(ge, ":item", 0),
-		(store_add,":item_slot",slot_troop_armor_type-ek_body,":inv_slot"), #slot_troop_armor_type, slot_troop_boots_type consequtive slots
+        (store_add,":item_slot",slot_troop_armor_type-ek_body,":inv_slot"), #slot_troop_armor_type, slot_troop_boots_type consequtive slots
+        (neq, ":item_slot", slot_troop_boots_type), 
 		(neg|troop_slot_eq,":npc",":item_slot",":item"), # equipped item changed to other?
 		(store_item_value, reg30, ":item"),
 		(val_mod, reg30,10),
-		(neq, reg30, 0), # non-commonly used item? (item value last digit !=0, stores allowed races)
+		#(neq, reg30, 0), # non-commonly used item? (item value last digit !=0, stores allowed races) #InVain: Removed, now checks all the time.
 		(try_begin),(eq,reg30,8),(neq,":race",tf_dwarf  ),(assign,"$remove_item",1),
 		 (else_try),(eq,reg30,1),(neq,":race",tf_orc    ),(assign,"$remove_item",1),
-		 (else_try),(eq,reg30,2),(neq,":race",tf_uruk   ),(assign,"$remove_item",1),
-		 (else_try),(eq,reg30,4),(neq,":race",tf_urukhai),(assign,"$remove_item",1),
+		 (else_try),(eq,reg30,2),(this_or_next|neq,":race",tf_uruk),(neq,":race",tf_urukhai),(assign,"$remove_item",1), #Uruks and Uruk-hai share equipment
+		 #(else_try),(eq,reg30,4),(neq,":race",tf_urukhai),(assign,"$remove_item",1),
+		 (else_try),(neq,reg30,8),(eq,":race",tf_dwarf  ),(assign,"$remove_item",1), #InVain: Turned conditions around. Now, short races are only allowed to wear their own gear.
+		 (else_try),(neq,reg30,1),(eq,":race",tf_orc    ),(assign,"$remove_item",1),
+		 (else_try),(neq,reg30,2),(this_or_next|eq,":race",tf_uruk),(eq,":race",tf_urukhai),(assign,"$remove_item",1), #Uruks and Uruk-hai share equipment
+
 		(try_end),
 		(try_begin),
 			(eq,"$remove_item",1),
