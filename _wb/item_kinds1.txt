@@ -207,25 +207,25 @@ itemsfile version 2
  itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  4097 0 3000 16106389504 0 100 0 45 0 5 180 62 35 0 0 62 0
 0
 
- itm_axe_a Northmen_Axe Northmen_Axe 2  axe_a 0  axe_a_carry 3458764513820540928  80019458 9223388530091229198 300 287892 2 100 0 0 0 0 25600 105 0 45 0 256 25
+ itm_free_axe_a Northmen_Axe Northmen_Axe 2  axe_a 0  axe_a_carry 3458764513820540928  80019458 9223388530091229198 300 287892 2 100 0 0 0 0 25600 105 0 45 0 256 25
 0
 
- itm_axe_b Northmen_Bearded_Axe Northmen_Bearded_Axe 2  axe_b 0  axe_b_carry 3458764513820540928  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 27648 98 0 47 0 256 27
+ itm_free_axe_b Northmen_Bearded_Axe Northmen_Bearded_Axe 2  axe_b 0  axe_b_carry 3458764513820540928  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 27648 98 0 47 0 256 27
 0
 
- itm_axe_c Northmen_Axe Northmen_Axe 2  axe_c 0  axe_c_carry 3458764513820540928  80019458 9223388530091229198 350 287892 2 100 0 0 0 0 29696 96 0 57 0 256 29
+ itm_free_axe_c Northmen_Axe Northmen_Axe 2  axe_c 0  axe_c_carry 3458764513820540928  80019458 9223388530091229198 350 287892 2 100 0 0 0 0 29696 96 0 57 0 256 29
 0
 
- itm_axe_d Northmen_Axe Northmen_Axe 2  axe_d 0  axe_d_carry 3458764513820540928  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 31744 94 0 60 0 256 31
+ itm_free_axe_d Northmen_Axe Northmen_Axe 2  axe_d 0  axe_d_carry 3458764513820540928  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 31744 94 0 60 0 256 31
 0
 
  itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 3  troll_club 0  tree_trunk_club 64  dummy_mesh 256  141822394371 9259400833873739810 1 0 58 100 0 0 0 0 20480 70 0 155 0 532 532
 0
 
- itm_long_bearded_axe Northmen_Bearded_Longaxe Northmen_Bearded_Longaxe 1  long_bearded_axe 0  38996869124 9223635923965575392 800 156672 7 100 0 0 0 10 46080 84 0 106 0 256 45
+ itm_free_long_bearded_axe Northmen_Bearded_Longaxe Northmen_Bearded_Longaxe 1  long_bearded_axe 0  38996869124 9223635923965575392 800 156672 7 100 0 0 0 10 46080 84 0 106 0 256 45
 0
 
- itm_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  38996869124 9223635923965575392 700 156672 8 100 0 0 0 10 48128 82 0 110 0 256 47
+ itm_free_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  38996869124 9223635923965575392 700 156672 8 100 0 0 0 10 48128 82 0 110 0 256 47
 0
 
  itm_free_giant_hammer Giant_Hammer Giant_Hammer 1  giant_hammer 0  137443147778 9223372036854775808 1 0 58 100 0 0 0 0 16384 96 0 150 0 65 80
@@ -312,7 +312,7 @@ itemsfile version 2
  itm_leather_boots Leather_Boots Leather_Boots 1  rohan_leather_boots 0  536940302 0 200 123731968 1 100 0 0 12 0 0 0 0 0 0 0 0
 0
 
- itm_free_black_dress Black_Dress Black_Dress 1  gondor_dress_a 0  553713677 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_rohan_shoes Leather_Shoes Leather_Shoes 1  rohan_boot_light 0  536940302 0 50 123731968 1 100 0 0 8 0 0 0 0 0 0 0 0
 0
 
  itm_free_blackwhite_dress Lady_Dress Lady_Dress 1  gondor_dress_b 0  553713677 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
@@ -354,22 +354,22 @@ itemsfile version 2
  itm_free_tld_tunic Tunic Tunic 1  tld_tunic 0  553648141 0 100 123731968 2 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_free_gondor_fine_outfit_dress Fine_Outfit Fine_Outfit 1  gondor_fine_outfit_dress 0  553648141 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_axe_a Northmen_Axe Northmen_Axe 2  axe_a 0  axe_a_carry 3458764513820540928  80019458 9223388530091229198 300 287892 2 100 0 0 0 0 25600 105 0 45 0 256 25
 0
 
- itm_free_rohan_fine_outfit_dale_dress Fine_Outfit Fine_Outfit 1  rohan_fine_outfit_dale_dress 0  553648141 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_axe_b Northmen_Bearded_Axe Northmen_Bearded_Axe 2  axe_b 0  axe_b_carry 3458764513820540928  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 27648 98 0 47 0 256 27
 0
 
- itm_free_robe_generic_dress Robe Robe 1  tld_robe_generic_dress 0  553648141 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_axe_c Northmen_Axe Northmen_Axe 2  axe_c 0  axe_c_carry 3458764513820540928  80019458 9223388530091229198 350 287892 2 100 0 0 0 0 29696 96 0 57 0 256 29
 0
 
- itm_free_wimple_a Wimple Wimple 1  gondor_wimple_a 0  1610678284 0 10 123731968 0.5 100 4 0 0 0 0 0 0 0 0 0 0
+ itm_axe_d Northmen_Axe Northmen_Axe 2  axe_d 0  axe_d_carry 3458764513820540928  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 31744 94 0 60 0 256 31
 0
 
- itm_free_wimple_with_veil Wimple Wimple 1  gondor_wimple_b 0  1610678284 0 10 123731968 0.5 100 4 0 0 0 0 0 0 0 0 0 0
+ itm_long_bearded_axe Northmen_Bearded_Longaxe Northmen_Bearded_Longaxe 1  long_bearded_axe 0  38996869124 9223635923965575392 800 156672 7 100 0 0 0 10 46080 84 0 106 0 256 45
 0
 
- itm_free_fine_hat Fine_Hat Fine_Hat 1  gondor_fine_fem_hat 0  536936460 0 10 123731968 0.5 100 4 0 0 0 0 0 0 0 0 0 0
+ itm_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  38996869124 9223635923965575392 700 156672 8 100 0 0 0 10 48128 82 0 110 0 256 47
 0
 
  itm_shortened_spear Shortened_Spear Shortened_Spear 1  spear_g_1-9m 0  138772484 9254615759470988544 100 271496 2 100 0 0 0 0 19456 102 0 120 0 281 531
@@ -460,7 +460,7 @@ itemsfile version 2
  itm_gondor_javelin Gondor_Javelin Gondor_Javelin 2  gondor_javelin 0  jarid_quiver 3458764513820540928  71368714 36507484160 200 0 4 100 0 0 91 0 0 89 40 65 4 306 0
 0
 
- itm_rohirrim_throwing_axe Rohirrim_Throwing_Axes Rohirrim_Throwing_Axes 1  rohan_throwing_axe 0  71368714 196608 300 0 5 100 0 0 82 0 0 99 20 53 3 60 0
+ itm_rohirrim_throwing_axe Northmen_Throwing_Axes Northmen_Throwing_Axes 1  faradon_axe_c 0  71368714 196608 300 0 5 100 0 0 82 0 0 99 20 53 3 60 0
 0
 
  itm_loss_throwing_axes Lossarnach_Throwing_Axes Lossarnach_Throwing_Axes 1  loss_throwing_axe 0  71368714 196608 300 0 5 100 0 0 83 0 0 99 20 53 3 60 0
@@ -1641,7 +1641,7 @@ itemsfile version 2
  itm_rohirrim_war_greaves Rohirrim_War_Greaves Rohirrim_War_Greaves 1  rohan_splinted_nospurs 0  69390 0 1200 704643072 3.5 100 0 0 26 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_shoes Leather_Shoes Leather_Shoes 1  rohan_boot_light 0  536940302 0 50 123731968 1 100 0 0 8 0 0 0 0 0 0 0 0
+ itm_free_rohan_shoes Leather_Shoes Leather_Shoes 1  rohan_boot_light 0  536940302 0 50 123731968 1 100 0 0 8 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_cav_sword2 Rohan_Riding_Sword Rohan_Riding_Sword 2  rohan_sword_a 0  scab_rohan_sword_a 3458764513820540928  4259842 9223388564182532111 500 287892 1.5 100 0 0 0 0 31744 99 0 95 0 277 31

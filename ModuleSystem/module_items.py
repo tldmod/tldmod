@@ -244,7 +244,6 @@ items =[
 ["practice_staff","Wooden_Staff",[("wooden_staff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack, itc_staff|itcf_carry_sword_back,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(16,blunt)|thrust_damage(12,blunt),0],
 ["practice_bow","Practice_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_type_bow|itp_primary|itp_two_handed, itcf_shoot_bow|itcf_carry_bow_back,1,weight(1.5)|difficulty(0)|shoot_speed(40)|spd_rtng(90)|thrust_damage(19,blunt),0],
 ["wooden_javelin","Wooden_javelin",[("wooden_javelin",0)],itp_type_thrown|itp_primary|itp_bonus_against_shield, itcf_throw_javelin,100,weight(3)|difficulty(0)|shoot_speed(27)|spd_rtng(89)|weapon_length(65)|thrust_damage(25,blunt)|max_ammo(5),imodbits_thrown],
-#["practice_throwing_axe","Practice_Throwing_Axes",[("rohan_throwing_axe",0)],itp_type_thrown|itp_primary|itp_bonus_against_shield,itcf_throw_axe,100,weight(1.5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(30)|thrust_damage(25,blunt)|max_ammo(14),imodbits_thrown],
 #
 #foods (first one is smoked_fish)
 ["human_meat","Human_Flesh",[("human_flesh",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(30),imodbits_none],
@@ -330,11 +329,11 @@ items =[
 #first non WARG item: troll_feet_boots (see in module_constants)
 
 #TROLL "ITEMS"######### free Jan 2018 -> ent items, weapons grouped together
-#InVain: First six troll items replaced by axes, Jul 2018
-["axe_a","Northmen_Axe",[("axe_a",0),("axe_a_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,300,weight(2)|difficulty(0)|spd_rtng(105)|weapon_length(45)|swing_damage(25,cut)|thrust_damage(0,pierce),imodbits_weapon],
-["axe_b","Northmen_Bearded_Axe",[("axe_b",0),("axe_b_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(98)|weapon_length(47)|swing_damage(27,cut)|thrust_damage(0,pierce),imodbits_weapon],
-["axe_c","Northmen_Axe",[("axe_c",0),("axe_c_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,350,weight(2)|difficulty(0)|spd_rtng(96)|weapon_length(57)|swing_damage(29,cut)|thrust_damage(0,pierce),imodbits_weapon],
-["axe_d","Northmen_Axe",[("axe_d",0),("axe_d_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(94)|weapon_length(60)|swing_damage(31,cut)|thrust_damage(0,pierce),imodbits_weapon],
+#InVain: First six troll items replaced by axes, Jul 2018, moved down Dec 2019
+["free_axe_a","Northmen_Axe",[("axe_a",0),("axe_a_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,300,weight(2)|difficulty(0)|spd_rtng(105)|weapon_length(45)|swing_damage(25,cut)|thrust_damage(0,pierce),imodbits_weapon],
+["free_axe_b","Northmen_Bearded_Axe",[("axe_b",0),("axe_b_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(98)|weapon_length(47)|swing_damage(27,cut)|thrust_damage(0,pierce),imodbits_weapon],
+["free_axe_c","Northmen_Axe",[("axe_c",0),("axe_c_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,350,weight(2)|difficulty(0)|spd_rtng(96)|weapon_length(57)|swing_damage(29,cut)|thrust_damage(0,pierce),imodbits_weapon],
+["free_axe_d","Northmen_Axe",[("axe_d",0),("axe_d_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(94)|weapon_length(60)|swing_damage(31,cut)|thrust_damage(0,pierce),imodbits_weapon],
 
 
 # ["free_troll_feet_boots","Troll_Feet",[("troll_feet",0)],itp_no_pick_up_from_ground|itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(55)|leg_armor(55)|difficulty(70),0],
@@ -343,8 +342,10 @@ items =[
 # ["free_troll_head_helm_c","Troll_Head",[("troll_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
 # #
 ["tree_trunk_club_a","Tree_Trunk",[("troll_club",0),("tree_trunk_club",imodbit_poor),("0",imodbit_old)],itp_no_pick_up_from_ground|itp_type_two_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_penetrate_shield|itp_bonus_against_shield,itc_troll_attack|0,1,weight(250)|difficulty(0)|spd_rtng(70)|weapon_length(155)|swing_damage(20,blunt)|thrust_damage(20,blunt),0, []],
-["long_bearded_axe","Northmen_Bearded_Longaxe",[("long_bearded_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,800,weight(7)|difficulty(10)|spd_rtng(84)|weapon_length(106)|swing_damage(45,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
-["2_handed_axe","Northmen_Longaxe",[("2_handed_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,700,weight(8)|difficulty(10)|spd_rtng(82)|weapon_length(110)|swing_damage(47,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+
+#free Dec 2019 (moved down)
+["free_long_bearded_axe","Northmen_Bearded_Longaxe",[("long_bearded_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,800,weight(7)|difficulty(10)|spd_rtng(84)|weapon_length(106)|swing_damage(45,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+["free_2_handed_axe","Northmen_Longaxe",[("2_handed_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,700,weight(8)|difficulty(10)|spd_rtng(82)|weapon_length(110)|swing_damage(47,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 
 # ["free_tree_trunk_club_b","Tree_Trunk",[("tree_trunk_club",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
 # ["free_tree_trunk_invis","Tree_Trunk",[("0",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
@@ -379,20 +380,20 @@ items =[
 ["ithilien_arrows","Ithilien_Arrows",[("ilithien_arrow",0),("ilithien_arrow_flying",ixmesh_flying_ammo),("ithilien_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,500,weight(3)|thrust_damage(3,cut)|max_ammo(29)|weapon_length(91),imodbits_good_missile,[]],
 ["woodelf_arrows","Woodelf_Arrows",[("mirkwood_arrow",0),("mirkwood_arrow_flying",ixmesh_flying_ammo),("mirkwood_quiver_new",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back,500,weight(3)|thrust_damage(4,pierce)|max_ammo(29)|weapon_length(91),imodbits_good_missile,[]],
 ["elven_arrows","Elven_Arrows",[("white_elf_arrow",0),("white_elf_arrow_flying",ixmesh_flying_ammo),("lothlorien_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back,500,weight(3)|thrust_damage(4,pierce)|max_ammo(29)|weapon_length(91),imodbits_good_missile,[]],
-#["loth_arrows"    ,"Ghaladrim_Arrows",[("white_elf_arrow",0),("flying_missile",ixmesh_flying_ammo),("lothlorien_quiver", ixmesh_carry)],itp_type_arrows|itp_shop, itcf_carry_quiver_back_right ,350,weight(3.0)|abundance(50) |weapon_length(91)|thrust_damage(3,    pierce)|max_ammo(29),imodbits_missile],
 ["orc_hook_arrow","Orc_Hook_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,100,weight(3)|thrust_damage(0,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
 ["isengard_arrow","Isengard_Arrows",[("isengard_arrow",0),("isengard_arrow_flying",ixmesh_flying_ammo),("isengard_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,200,weight(3)|thrust_damage(1,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
 #free Jan 2017
 ["free_pilgrim_disguise","Pilgrim_Disguise",[("tld_robe_generic_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,25,weight(2)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_cloth,[]],
-#["pilgrim_hood", "Pilgrim Hood",[("pilgrim_hood",0)], 0|itp_type_head_armor |itp_civilian  ,0, 35 , weight(1.25)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+
 ###ARMOR
 #handwear
 ["leather_gloves","Leather_Gloves",[("CWE_gloves_a_L",0),("CWE_gloves_lord_L",imodbits_elf_cloth), ("undeadtest_handL",imodbit_poor)],itp_type_hand_armor|itp_shop,0,200,weight(0.2)|body_armor(2)|difficulty(0),imodbits_cloth,[]],
 ["mail_mittens","Mail_Mittens",[("CWE_gauntlets_crysader_L",0)],itp_type_hand_armor|itp_shop,0,600,weight(1)|body_armor(4)|difficulty(0),imodbits_elf_armor,[]],
 ["leather_boots","Leather_Boots",[("rohan_leather_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,200,weight(1)|leg_armor(12)|difficulty(0),imodbits_cloth],
+["rohan_shoes","Leather_Shoes",[("rohan_boot_light",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,50,weight(1)|leg_armor(8)|difficulty(0),imodbits_cloth],
+
 # TLD civilian wear
 #all marked civilian items free Jan 2017, -> itm_white_tunic_a
-["free_black_dress","Black_Dress",[("gondor_dress_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
 ["free_blackwhite_dress","Lady_Dress",[("gondor_dress_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
 ["white_tunic_a","Civilian_Outfit",[("gondor_tunic_b",0),("generic_tunic_a",imodbit_day_old),("tld_robe_generic_dress",imodbit_fresh),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),("rohan_dress",imodbit_rough),("dale_coat",imodbit_powerful),("generic_leather_jerkin",imodbit_exquisite),("smith_leather_apron",imodbit_deadly),("rohan_tunic",imodbit_sharp),("dale_tunic",imodbit_well_made),("generic_tunic_c",imodbit_cheap),("gondor_dress_a",imodbit_poor),("gondor_dress_b",imodbit_old),],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(1)|difficulty(0),imodbits_cloth,[]],
 ["free_white_tunic_b","Simple_Tunic",[("gondor_tunic_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
@@ -405,32 +406,21 @@ items =[
 ["free_leather_jerkin","Leather_Jerkin",[("generic_leather_jerkin",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,300,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["free_fur_coat","Dale_Coat",[("dale_coat",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,400,weight(6)|head_armor(0)|body_armor(13)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["free_green_dress","Green_Dress",[("rohan_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
-#["rich_outfit"   , "Rich Outfit" ,[("merchant_outf"  ,0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
 ["free_tld_tunic","Tunic",[("tld_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]], #InVain: Removed script (ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_initialize_civilian_clothes", "tableau_tld_tunic", ":agent_no", ":troop_no")])
-#combos
-["free_gondor_fine_outfit_dress","Fine_Outfit",[("gondor_fine_outfit_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-["free_rohan_fine_outfit_dale_dress","Fine_Outfit",[("rohan_fine_outfit_dale_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-["free_robe_generic_dress","Robe",[("tld_robe_generic_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-#civ headgear, all free Jan 2017, -> itm_blackroot_hood
-["free_wimple_a","Wimple",[("gondor_wimple_a",0)],itp_type_head_armor|itp_civilian|itp_shop|itp_fit_to_head,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
-["free_wimple_with_veil","Wimple",[("gondor_wimple_b",0)],itp_type_head_armor|itp_civilian|itp_shop|itp_fit_to_head,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
-["free_fine_hat","Fine_Hat",[("gondor_fine_fem_hat",0)],itp_type_head_armor|itp_civilian|itp_shop,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
-#
-#["sword_two_handed_a",         "Great Sword",[("sword_two_handed_a",0)], itp_type_two_handed_wpn|itp_shop|itp_always_loot|itp_two_handed|itp_primary, itc_greatsword|itcf_carry_sword_back, 1123 , weight(2.75)|difficulty(10)|spd_rtng(89) | weapon_length(120)|swing_damage(42 , cut) | thrust_damage(28 ,  pierce),imodbits_sword_high ],
-#["bastard_sword_a", "Bastard Sword",[("bastard_sword_a",0),("bastard_sword_a_scabbard", ixmesh_carry)], itp_type_two_handed_wpn|itp_shop|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 294 , weight(2.25)|difficulty(9)|spd_rtng(98) | weapon_length(101)|swing_damage(37 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ],
-#["one_handed_war_axe_a","One_Handed_War_Axe",[("one_handed_war_axe_a",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,87,weight(1.5)|difficulty(0)|spd_rtng(100)|weapon_length(60)|swing_damage(32,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
-#["two_handed_axe",         "Two_Handed_Axe",[("two_handed_battle_axe_a",0)], itp_type_two_handed_wpn|itp_shop|itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry, itc_nodachi|itcf_carry_axe_back, 110 , weight(4.5)|difficulty(10)|spd_rtng(90) | weapon_length(90)|swing_damage(40 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
-#["sword_medieval_b_small", "Short Sword",[("sword_medieval_b_small",0),("sword_medieval_b_small_scabbard", ixmesh_carry)], itp_type_one_handed_wpn|itp_shop|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 152 , weight(1.5)|difficulty(0)|spd_rtng(102) | weapon_length(85)|swing_damage(26, cut) | thrust_damage(24, pierce),imodbits_sword_high ],
-#["sword_medieval_c","Arming_Sword",[("sword_medieval_c",0),("sword_medieval_c_scabbard",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,410,weight(1.5)|difficulty(0)|spd_rtng(99)|weapon_length(95)|swing_damage(29,cut)|thrust_damage(24,pierce),imodbits_sword_high],
 
-#Hoboistice begin
-#["shortened_spear","Shortened_Spear",[("spear_g_1-9m",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_staff,100,weight(2)|difficulty(0)|spd_rtng(102)|weapon_length(120)|swing_damage(19,blunt)|thrust_damage(25,pierce),imodbits_weapon_wood,[]],
+#Common Weapons
+["axe_a","Northmen_Axe",[("axe_a",0),("axe_a_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,300,weight(2)|difficulty(0)|spd_rtng(105)|weapon_length(45)|swing_damage(25,cut)|thrust_damage(0,pierce),imodbits_weapon],
+["axe_b","Northmen_Bearded_Axe",[("axe_b",0),("axe_b_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(98)|weapon_length(47)|swing_damage(27,cut)|thrust_damage(0,pierce),imodbits_weapon],
+["axe_c","Northmen_Axe",[("axe_c",0),("axe_c_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,350,weight(2)|difficulty(0)|spd_rtng(96)|weapon_length(57)|swing_damage(29,cut)|thrust_damage(0,pierce),imodbits_weapon],
+["axe_d","Northmen_Axe",[("axe_d",0),("axe_d_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(94)|weapon_length(60)|swing_damage(31,cut)|thrust_damage(0,pierce),imodbits_weapon],
+["long_bearded_axe","Northmen_Bearded_Longaxe",[("long_bearded_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,800,weight(7)|difficulty(10)|spd_rtng(84)|weapon_length(106)|swing_damage(45,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+["2_handed_axe","Northmen_Longaxe",[("2_handed_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,700,weight(8)|difficulty(10)|spd_rtng(82)|weapon_length(110)|swing_damage(47,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+
 ["shortened_spear","Shortened_Spear",[("spear_g_1-9m",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_spear_upstab,100,weight(2)|difficulty(0)|spd_rtng(102)|weapon_length(120)|swing_damage(19,blunt)|thrust_damage(25,pierce),imodbits_weapon_wood,[]],
-#Hoboistice end
-
 ["spear","Spear",[("spear_h_2-15m",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_spear_upstab,200,weight(2.25)|difficulty(0)|spd_rtng(98)|weapon_length(135)|swing_damage(20,blunt)|thrust_damage(26,pierce),imodbits_weapon_wood,[]],
 ["light_lance","Light_Lance",[("spear_b_2-75m",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable,itc_lance_upstab,200,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(175)|thrust_damage(27,pierce),imodbits_weapon_wood,[]],
 ["lance","Lance",[("spear_d_2-8m",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable,itc_pike,200,weight(2.5)|difficulty(0)|spd_rtng(88)|weapon_length(180)|thrust_damage(26,pierce),imodbits_weapon_wood,[]],
+
 ###SHIELDS
 #["tab_shield_round_a", "Old Round Shield",[("tableau_shield_round_5",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,  26 , weight(2.5)|hit_points(350)|body_armor(0)|spd_rtng(93)|weapon_length(50),imodbits_shield,
 # [(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_round_shield_5", ":agent_no", ":troop_no")])]],
@@ -476,7 +466,7 @@ items =[
 ["javelin","Javelin",[("javelin",0),("javelins_quiver",ixmesh_carry)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_javelin|itcf_carry_quiver_back|itcf_show_holster_when_drawn,200,weight(5)|difficulty(0)|shoot_speed(42)|spd_rtng(91)|weapon_length(75)|thrust_damage(45,pierce)|accuracy(91)|max_ammo(4),imodbits_thrown,[] ],
 ["harad_javelin","Harad_Javelin",[("harad_javelin",0),("harad_javelins_quiver",ixmesh_carry)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_javelin|itcf_carry_quiver_back|itcf_show_holster_when_drawn,200,weight(4)|difficulty(0)|shoot_speed(40)|spd_rtng(89)|weapon_length(65)|thrust_damage(45,pierce)|accuracy(93)|max_ammo(4),imodbits_thrown,[] ],
 ["gondor_javelin","Gondor_Javelin",[("gondor_javelin",0),("jarid_quiver",ixmesh_carry)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_javelin|itcf_carry_quiver_back|itcf_show_holster_when_drawn,200,weight(4)|difficulty(0)|shoot_speed(40)|spd_rtng(89)|weapon_length(65)|thrust_damage(50,pierce)|accuracy(91)|max_ammo(4),imodbits_thrown,[] ],
-["rohirrim_throwing_axe","Rohirrim_Throwing_Axes",[("rohan_throwing_axe",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_axe,300,weight(5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(53)|thrust_damage(60,cut)|accuracy(82)|max_ammo(3),imodbits_thrown,[] ],
+["rohirrim_throwing_axe","Northmen_Throwing_Axes",[("faradon_axe_c",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_axe,300,weight(5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(53)|thrust_damage(60,cut)|accuracy(82)|max_ammo(3),imodbits_thrown,[] ],
 ["loss_throwing_axes","Lossarnach_Throwing_Axes",[("loss_throwing_axe",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_axe,300,weight(5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(53)|thrust_damage(60,cut)|accuracy(83)|max_ammo(3),imodbits_thrown,[] ],
 ##########TLD ITEMS START##########
 #####RIVENDELL/DUNEDAIN ITEMS##########
@@ -987,7 +977,8 @@ items =[
 ##FOOTGEAR##########
 ["rohan_light_greaves","Rohan_Light_Greaves",[("rohan_scale_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1200,weight(2)|leg_armor(15)|difficulty(0),imodbits_cloth],
 ["rohirrim_war_greaves","Rohirrim_War_Greaves",[("rohan_splinted_nospurs",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1200,weight(3.5)|leg_armor(26)|difficulty(0),imodbits_elf_armor],
-["rohan_shoes","Leather_Shoes",[("rohan_boot_light",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,50,weight(1)|leg_armor(8)|difficulty(0),imodbits_cloth],
+#free Dec 2019, also used by a lot of non-Rohan troops!
+["free_rohan_shoes","Leather_Shoes",[("rohan_boot_light",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,50,weight(1)|leg_armor(8)|difficulty(0),imodbits_cloth],
 ##WEAPONS########## #moved upwards Dec 2019, keep these for savegame compatibility
 ["rohan_cav_sword2","Rohan_Riding_Sword",[("rohan_sword_a",0),("scab_rohan_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.5)|difficulty(0)|spd_rtng(99)|weapon_length(95)|swing_damage(31,cut)|thrust_damage(21,pierce),imodbits_weapon],
 ["rohan_inf_sword2","Rohan_Sword",[("rohan_sword_b",0),("scab_rohan_sword_b",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(100)|weapon_length(95)|swing_damage(29,cut)|thrust_damage(22,pierce),imodbits_weapon],

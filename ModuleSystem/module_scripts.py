@@ -1679,6 +1679,7 @@ scripts = [
 	(party_set_slot, "p_town_westfold", slot_party_subfaction      , subfac_westfold),
 
 	(party_set_slot, "p_town_minas_tirith", slot_town_castle_guard_troop, "trp_steward_guard"), # minas tirith exception
+	(party_set_slot, "p_town_woodsmen_village", slot_town_castle_guard_troop, "trp_i5_woodmen_night_guard"), # woodmen exception
 
 # set kingdom_heros status and wealth of heroes and kings
 	(try_for_range, ":troop_id", kingdom_heroes_begin, kingdom_heroes_end),

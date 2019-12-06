@@ -348,10 +348,10 @@ party_templates = [
 
 ("rohan_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,4)]),
 ("rohan_cap_recruits" ,"_",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,6)]),
-("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,2,3),(trp_orc_snaga_of_isengard,2,4),(trp_dunnish_wildman,1,2)]), #two T1
-("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,3,5),(trp_black_numenorean_renegade,1,1),(trp_i1_khand_bondsman,1,3),]), #two T1 & prize
+("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,2,3),(trp_orc_snaga_of_isengard,2,4)]), #two T1
+("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,3,5),(trp_black_numenorean_renegade,1,1),]), #two T1 & prize
 ("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,3,5)]), #two T1
-("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,2,3),(trp_morgul_orc,1,2),(trp_harad_desert_warrior,1,2)]), #T1 T2
+("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,2,3),(trp_morgul_orc,1,2)]), #T1 T2
 ("harad_recruits"     ,"_",0,0,fac_commoners,0,[(trp_harad_desert_warrior,1,3),(trp_harondor_scout,0,2),(trp_far_harad_tribesman,1,2)]), #three T1
 ("rhun_recruits"      ,"_",0,0,fac_commoners,0,[(trp_i1_rhun_tribesman,1,4),(trp_c2_rhun_light_horseman,1,1)]), #T1 and T2
 ("khand_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_khand_bondsman,2,5)]),
@@ -361,8 +361,8 @@ party_templates = [
 ("woodelf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_a1_greenwood_scout,1,4)]),
 ("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_snaga_of_moria,5,10)]),
 ("guldur_recruits"    ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_guldur,5,10)]),
-("beorn_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_beorning_man,2,5)]),
-("woodman_recruits"   ,"_",0,0,fac_commoners,0,[(trp_i1_woodmen_man,2,5)]),
+("beorn_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_beorning_man,2,3),(trp_i1_woodmen_man,1,2)]),
+("woodman_recruits"   ,"_",0,0,fac_commoners,0,[(trp_i1_woodmen_man,2,3),(trp_i1_beorning_man,1,2)]),
 ("gundabad_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_goblin_gundabad,3,6)]),
 ("gundabad_cap_recruits","_",0,0,fac_commoners,0,[(trp_i1_goblin_gundabad,3,7)]),
 ("dale_recruits"      ,"_",0,0,fac_commoners,0,[(trp_i1_dale_militia,1,4),(trp_c2_rhovanion_retainer,1,2)]), #T1 and T2
