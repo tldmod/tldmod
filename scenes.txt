@@ -1316,11 +1316,11 @@ scn_dolguldur_outside_2 dolguldur_outside_2 256 none none 0 0 100 100 -100 0x000
   0 
   0 
  New_outer_mountains2east_mordor 
-scn_beorn_outside_1 beorn_outside_1 256 none none 0 0 100 100 -100 0x00000000b322c90d0005a96a00001fb30000786900001ef5 
+scn_beorn_outside_1 beorn_outside_1 256 none none 0 0 100 100 -100 0x00000000b062c90d0005a96a000075f30000786900001ef5 
   0 
   0 
  outer_terrain_plain 
-scn_beorn_outside_2 beorn_outside_2 256 none none 0 0 100 100 -100 0x00000000b322c90d0005a96a00001fb30000786900001ef5 
+scn_beorn_outside_2 beorn_outside_2 256 none none 0 0 100 100 -100 0x00000000b062c90d0005a96a000075f30000786900001ef5 
   0 
   0 
  outer_terrain_plain 

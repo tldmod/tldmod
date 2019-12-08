@@ -309,13 +309,13 @@ itemsfile version 2
  itm_mail_mittens Mail_Mittens Mail_Mittens 1  CWE_gauntlets_crysader_L 0  65551 0 600 704643072 1 100 0 4 0 0 0 0 0 0 0 0 0
 0
 
- itm_leather_boots Leather_Boots Leather_Boots 1  rohan_leather_boots 0  536940302 0 200 123731968 1 100 0 0 12 0 0 0 0 0 0 0 0
+ itm_leather_boots Leather_Boots Leather_Boots 3  fi_boot7 134  fi_boot13 0  fi_boot8 251658240  536940302 0 200 123731968 1 100 0 0 12 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_shoes Leather_Shoes Leather_Shoes 1  rohan_boot_light 0  536940302 0 50 123731968 1 100 0 0 8 0 0 0 0 0 0 0 0
+ itm_rohan_shoes Leather_Shoes Leather_Shoes 2  fi_boot14 0  narf_rus_shoes 251658240  536940302 0 50 123731968 1 100 0 0 6 0 0 0 0 0 0 0 0
 0
 
- itm_free_blackwhite_dress Lady_Dress Lady_Dress 1  gondor_dress_b 0  553713677 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_splinted_greaves Splinted_Greaves Splinted_Greaves 2  fi_boot9 0  narf_rus_splint_greaves 167772160  536940302 0 50 167772294 3.5 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
  itm_white_tunic_a Civilian_Outfit Civilian_Outfit 14  gondor_tunic_b 0  generic_tunic_a 274877906944  tld_robe_generic_dress 137438953472  rohan_fine_outfit_dale_dress 2199023255552  gondor_fine_outfit_dress 4398046511104  rohan_dress 8388608  dale_coat 1048576  generic_leather_jerkin 65536  smith_leather_apron 32768  rohan_tunic 4096  dale_tunic 2048  generic_tunic_c 512  gondor_dress_a 64  gondor_dress_b 256  553648141 0 100 123731968 2 100 0 6 1 0 0 0 0 0 0 0 0
@@ -989,7 +989,7 @@ itemsfile version 2
  itm_evil_gauntlets_a Black_Gloves Black_Gloves 3  CWE_gloves_a_black_L 0  CWE_gloves_lord_black_L 251658240  CWE_gauntlets_arabs_a_L 134217728  65551 0 500 123731968 0.25 100 0 2 0 0 0 0 0 0 0 0 0
 0
 
- itm_evil_gauntlets_b Black_Gauntlets Black_Gauntlets 2  narf_wisby_gauntlets_black_L 0  narf_wisby_gauntlets_red_R 704643072  65551 0 500 704643206 1 100 0 4 0 0 0 0 0 0 0 0 0
+ itm_evil_gauntlets_b Black_Gauntlets Black_Gauntlets 2  narf_wisby_gauntlets_black_L 0  narf_wisby_gauntlets_red_L 704643072  65551 0 500 704643206 1 100 0 4 0 0 0 0 0 0 0 0 0
 0
 
  itm_isen_orc_armor_a Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_a 0  16842765 0 51 123731968 5 100 0 5 3 0 0 0 0 0 0 0 0
