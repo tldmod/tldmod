@@ -2172,13 +2172,13 @@ game_menus = [
       		(position_get_y, reg3, pos13),
       		(display_message, "@Party position ({reg2},{reg3}).", 0x30FFC8),
 	]),
-     	("camp_cctest_defiled",[],"Add WIP Items",
-	[
-		(troop_add_item, "trp_player","itm_defiled_armor_gondor"),
-		(troop_add_item, "trp_player","itm_defiled_armor_rohan"),
-		(troop_add_item, "trp_player","itm_defiled_armor_dale"),
-		(troop_add_item, "trp_player","itm_gon_leader_surcoat_cloak"),
-	]),
+#     	("camp_cctest_defiled",[],"Add WIP Items",
+#	[
+#		(troop_add_item, "trp_player","itm_defiled_armor_gondor"),
+#		(troop_add_item, "trp_player","itm_defiled_armor_rohan"),
+#		(troop_add_item, "trp_player","itm_defiled_armor_dale"),
+#		(troop_add_item, "trp_player","itm_gon_leader_surcoat_cloak"),
+#	]),
 
      ("camp_cctest_return",[],"Back to dev menu.",[(jump_to_menu, "mnu_dev_menu")]),
   ]
@@ -3838,24 +3838,24 @@ game_menus = [
  [(set_background_mesh, "mesh_ui_default_menu_window"),],
  [ 
 
-    ("camp_customize_defilement",
-		[
-			# (CppCoder) Only evil players can do this, though only evil players should be able to aqquire the items anyway.
-			(eq, cheat_switch, 1),
-			(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-			(troop_has_item_equipped|this_or_next, "trp_player", "itm_defiled_armor_gondor"),
-			(troop_has_item_equipped|this_or_next, "trp_player", "itm_defiled_armor_rohan"),
-			(troop_has_item_equipped, "trp_player", "itm_defiled_armor_dale"),
-		],
-		"Customize Defiled Armor",
-		[			
-			(try_for_range, ":item_id", defiled_items_begin, defiled_items_end),
-				(troop_has_item_equipped, "trp_player", ":item_id"), # (CppCoder) Must be done for efficiency's sake
-				(assign, "$g_defiled_armor_item", ":item_id"),
-			(try_end),
-			(start_presentation, "prsnt_customize_defilement"),
-		]
-	),
+#    ("camp_customize_defilement",
+#		[
+#			# (CppCoder) Only evil players can do this, though only evil players should be able to aqquire the items anyway.
+#			(eq, cheat_switch, 1),
+#			(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+#			(troop_has_item_equipped|this_or_next, "trp_player", "itm_defiled_armor_gondor"),
+#			(troop_has_item_equipped|this_or_next, "trp_player", "itm_defiled_armor_rohan"),
+#			(troop_has_item_equipped, "trp_player", "itm_defiled_armor_dale"),
+#		],
+#		"Customize Defiled Armor",
+#		[			
+#			(try_for_range, ":item_id", defiled_items_begin, defiled_items_end),
+#				(troop_has_item_equipped, "trp_player", ":item_id"), # (CppCoder) Must be done for efficiency's sake
+#				(assign, "$g_defiled_armor_item", ":item_id"),
+#			(try_end),
+#			(start_presentation, "prsnt_customize_defilement"),
+#		]
+#	),
 
     ("camp_drink_water",
 		[

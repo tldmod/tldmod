@@ -1881,7 +1881,7 @@ scripts = [
 	# Feel free to rename them... BUT if so rename then in variables.txt BEFORE you compile your code!!!
 	(assign, "$g_fac_str_siegable", fac_str_weak), #when can you siege a faction, increases with player level
 	#(assign, "$battle_renown_total", 0),
-	(assign, "$g_defiled_armor_item", "itm_defiled_armor_gondor"), 
+	(assign, "$g_defiled_armor_item", 0), 
 	(assign, "$g_defiled_armor_rotation", 0), 
     #these are used for strategic options/tweaks
 	(assign, "$tld_option_siege_reqs", 0), #0,1,2 : Siege strength requirements: Normal/Halved/None
@@ -3761,9 +3761,14 @@ scripts = [
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Charisma"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
 		(set_trigger_result, color_item_text_bonus),
-		(else_try),
+	  (else_try),
 		(eq,":item_no","itm_leather_gloves_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Power Draw"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
+		(set_trigger_result, color_item_text_bonus),
+	  (else_try),
+		(eq,":item_no","itm_leather_boots_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+2 to Athletics"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
 		(set_trigger_result, color_item_text_bonus),
       (else_try),
@@ -3999,6 +4004,10 @@ scripts = [
 	    (call_script, "script_get_troop_item_amount", ":troop_no", "itm_miruvor_reward"),
 	    (gt, reg0, 0),
         (val_add, ":modifier_value", 1),
+	  (try_end),
+	  (try_begin),
+	    (troop_has_item_equipped, ":troop_no", "itm_leather_boots_reward"),
+        (val_add, ":modifier_value", 2),
 	  (try_end),
 	  (try_begin),
         (store_and, ":check" ,":wound_mask", wound_leg), #leg injury

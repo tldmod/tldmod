@@ -1813,7 +1813,7 @@ troops = [
    [itm_moria_armor_a,itm_orc_machete,orc_face_normal],
       str_9|agi_10|int_12|cha_4|level(7),wp(80),knows_athletics_2|knows_power_throw_1|knows_power_strike_1|knows_ironflesh_1|knows_wound_treatment_2|knows_first_aid_2|knows_surgery_1,0x00000001ab00200d35627276a42e150c00000000001dca2c0000000000000000],
 ["npc16","Varfang","_",tf_mounted| tf_hero| tf_unmoveable_in_party_window,0,0,fac_rhun,
-   [itm_rhun_armor_a,itm_furry_boots,itm_rhun_sword,itm_light_lance,itm_rhun_helm_g,itm_tab_shield_small_round_b,itm_rhun_horse_a,],
+   [itm_rhun_armor_a,itm_furry_boots,itm_rhun_sword,itm_light_lance,itm_rhun_helm_g,itm_rhun_horse_a,],
       str_15|agi_15|int_3|cha_5|level(10),wp(120),knows_riding_5|knows_power_strike_4|knows_ironflesh_1|knows_power_throw_1|knows_weapon_master_3,0x000000018700214944d468dd9bae295b00000000001cb5a40000000000000000],
 ["npc17","Dimborn","_",tf_hero| tf_unmoveable_in_party_window,0,0,fac_beorn,
    [itm_woodman_tunic,itm_leather_boots,itm_beorn_axe,],

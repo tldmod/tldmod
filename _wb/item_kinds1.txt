@@ -303,16 +303,16 @@ itemsfile version 2
  itm_free_pilgrim_disguise Pilgrim_Disguise Pilgrim_Disguise 1  tld_robe_generic_dress 0  553713677 0 25 123731968 2 100 0 14 8 0 0 0 0 0 0 0 0
 0
 
- itm_leather_gloves Leather_Gloves Leather_Gloves 3  CWE_gloves_a_L 0  CWE_gloves_lord_L 251658240  undeadtest_handL 64  65551 0 200 123731968 0 100 0 2 0 0 0 0 0 0 0 0 0
+ itm_leather_gloves Leather_Gloves Leather_Gloves 3  CWE_gloves_a_L 0  narf_leather_gauntlet_L 251658240  undeadtest_handL 64  65551 0 200 123731968 0 100 0 2 0 0 0 0 0 0 0 0 0
 0
 
  itm_mail_mittens Mail_Mittens Mail_Mittens 1  CWE_gauntlets_crysader_L 0  65551 0 600 704643072 1 100 0 4 0 0 0 0 0 0 0 0 0
 0
 
- itm_leather_boots Leather_Boots Leather_Boots 3  fi_boot7 134  fi_boot13 0  fi_boot8 251658240  536940302 0 200 123731968 1 100 0 0 12 0 0 0 0 0 0 0 0
+ itm_leather_boots Leather_Boots Leather_Boots 2  fi_boot13 134  fi_boot8 0  536940302 0 200 123731968 1 100 0 0 12 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_shoes Leather_Shoes Leather_Shoes 2  fi_boot14 0  narf_rus_shoes 251658240  536940302 0 50 123731968 1 100 0 0 6 0 0 0 0 0 0 0 0
+ itm_leather_boots_dark Rider_Boots Rider_Boots 2  fi_boot7 134  narf_rus_cav_boots 0  536940302 0 200 123731968 1 100 0 0 12 0 0 0 0 0 0 0 0
 0
 
  itm_splinted_greaves Splinted_Greaves Splinted_Greaves 2  fi_boot9 0  narf_rus_splint_greaves 167772160  536940302 0 50 167772294 3.5 100 0 0 24 0 0 0 0 0 0 0 0
@@ -321,10 +321,10 @@ itemsfile version 2
  itm_white_tunic_a Civilian_Outfit Civilian_Outfit 14  gondor_tunic_b 0  generic_tunic_a 274877906944  tld_robe_generic_dress 137438953472  rohan_fine_outfit_dale_dress 2199023255552  gondor_fine_outfit_dress 4398046511104  rohan_dress 8388608  dale_coat 1048576  generic_leather_jerkin 65536  smith_leather_apron 32768  rohan_tunic 4096  dale_tunic 2048  generic_tunic_c 512  gondor_dress_a 64  gondor_dress_b 256  553648141 0 100 123731968 2 100 0 6 1 0 0 0 0 0 0 0 0
 0
 
- itm_free_white_tunic_b Simple_Tunic Simple_Tunic 1  gondor_tunic_b 0  553713677 0 100 123731968 2 100 0 3 3 0 0 0 0 0 0 0 0
+ itm_rohan_shoes Leather_Shoes Leather_Shoes 2  fi_boot14 134  narf_rus_shoes 0  536940302 0 50 123731968 1 100 0 0 6 0 0 0 0 0 0 0 0
 0
 
- itm_free_white_tunic_c Tunic_Jacket Tunic_Jacket 1  generic_tunic_c 0  553713677 0 100 123731968 2 100 0 3 3 0 0 0 0 0 0 0 0
+ itm_furry_boots Furry_Boots Furry_Boots 1  furry_boots 0  65550 0 200 123731968 3 100 0 0 10 0 0 0 0 0 0 0 0
 0
 
  itm_free_blue_tunic Blue_Tunic Blue_Tunic 1  dale_tunic 0  553713677 0 100 123731968 2 100 0 3 3 0 0 0 0 0 0 0 0
@@ -1638,10 +1638,10 @@ itemsfile version 2
  itm_rohan_light_greaves Rohan_Light_Greaves Rohan_Light_Greaves 1  rohan_scale_greaves 0  69390 0 1200 123731968 2 100 0 0 15 0 0 0 0 0 0 0 0
 0
 
- itm_rohirrim_war_greaves Rohirrim_War_Greaves Rohirrim_War_Greaves 1  rohan_splinted_nospurs 0  69390 0 1200 704643072 3.5 100 0 0 26 0 0 0 0 0 0 0 0
+ itm_rohirrim_war_greaves Rohirrim_War_Greaves Rohirrim_War_Greaves 1  rohan_greaves 0  69390 0 1200 704643072 3.5 100 0 0 26 0 0 0 0 0 0 0 0
 0
 
- itm_free_rohan_shoes Leather_Shoes Leather_Shoes 1  rohan_boot_light 0  536940302 0 50 123731968 1 100 0 0 8 0 0 0 0 0 0 0 0
+ itm_free_rohan_shoes Leather_Shoes Leather_Shoes 1  narf_rus_shoes 0  536940302 0 50 123731968 1 100 0 0 8 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_cav_sword2 Rohan_Riding_Sword Rohan_Riding_Sword 2  rohan_sword_a 0  scab_rohan_sword_a 3458764513820540928  4259842 9223388564182532111 500 287892 1.5 100 0 0 0 0 31744 99 0 95 0 277 31
@@ -2029,7 +2029,7 @@ itemsfile version 2
  itm_rhun_bull3_shield Rhun_Shield Rhun_Shield 1  eastershield_f 0  327687 5100273664 200 251658402 2.5 100 0 6 0 0 480 90 0 50 0 0 0
 0
 
- itm_furry_boots Furry_Boots Furry_Boots 1  furry_boots 0  65550 0 200 123731968 3 100 0 0 10 0 0 0 0 0 0 0 0
+ itm_free_furry_boots Furry_Boots Furry_Boots 1  furry_boots 0  65550 0 200 123731968 3 100 0 0 10 0 0 0 0 0 0 0 0
 0
 
  itm_rhun_armor_a Rhun_Light_Battlewear Rhun_Light_Battlewear 1  RhunArmorLight1 0  16842765 0 20 123731968 5 100 0 2 6 0 0 0 0 0 0 0 0
@@ -2496,10 +2496,10 @@ itemsfile version 2
 1
 -50  1 1981 2 43 0 
 
- itm_nazgulrobe Nazgul_Robe Nazgul_Robe 2  nazgulrobe 0  old_nazgulrobe 256  2705326093 0 1 0 5 100 60 70 70 0 0 0 0 0 0 0 0
+ itm_free_nazgulrobe Nazgul_Robe Nazgul_Robe 2  nazgulrobe 0  old_nazgulrobe 256  2705326093 0 1 0 5 100 60 70 70 0 0 0 0 0 0 0 0
 0
 
- itm_werewolf Werewolf Werewolf 1  mm_warg_a 0  4097 0 1200 0 0 100 0 30 0 10 130 60 60 100 0 25 0
+ itm_free_werewolf Werewolf Werewolf 1  mm_warg_a 0  4097 0 1200 0 0 100 0 30 0 10 130 60 60 100 0 25 0
 0
 
  itm_mordor_banner Mordor_Banner Mordor_Banner 1  banner_mordor 0  274989059 4222124717768960 1000 271496 3 100 0 0 0 0 20480 90 0 120 0 537 532
@@ -2697,7 +2697,7 @@ itemsfile version 2
  itm_dale_armor_reward Dale_Noblemen_Mail Dale_Noblemen_Mail 1  dale_reward 0  16781325 0 2000 0 22 100 4 38 15 0 0 0 0 0 0 0 0
 0
 
- itm_leather_gloves_reward Hunting_Gloves Hunting_Gloves 4  CWE_gloves_lord_L 0  ent_hand_L 2097152  olog_hand_L 4  isen_olog_hand_L 256  4111 0 200 0 0 100 0 3 0 0 0 0 0 0 0 0 0
+ itm_leather_gloves_reward Archer_Gloves Archer_Gloves 4  CWE_gloves_king_L 0  ent_hand_L 2097152  olog_hand_L 4  isen_olog_hand_L 256  4111 0 200 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 430 251658402 4.5 100 0 9 0 0 690 95 0 70 0 0 0
@@ -2715,7 +2715,7 @@ itemsfile version 2
  itm_guldur_arrows_reward Guldur_Arrows Guldur_Arrows 3  khazad_orc_arrow_2 0  khazad_orc_arrow_2.lod2 2305843009213693952  khazad_orc_arrow_2_quiver 3458764513820540928  4311744517 1610612736 2000 4398046520456 3 100 0 0 0 0 0 0 0 95 30 3 0
 0
 
- itm_sarustaff Wizards_Staff Wizards_Staff 1  sarustaff 0  138838020 4222124851990272 1 0 2.5 100 0 0 0 0 51200 103 0 118 0 552 562
+ itm_leather_boots_reward Hunter_Boots Hunter_Boots 1  got_stark_hanter_boots 0  4110 0 200 123731968 1 100 0 0 22 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armour 0  denethor_robe 2048  dm_nazgulrobe 512  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16777229 0 4000 704643072 20 100 0 43 15 15 0 0 0 0 0 0 0
@@ -2748,9 +2748,8 @@ itemsfile version 2
  itm_wolf Wolf Wolf 1  wolf 0  4097 0 1200 0 0 100 0 25 0 10 50 50 50 85 0 25 0
 0
 
- itm_defiled_armor_gondor Defiled_Gondor_Leader's_Surcoat Defiled_Gondor_Leader's_Surcoat 1  defile_gondor 0  16781325 0 3000 0 21 100 0 30 6 0 0 0 0 0 0 0 0
-1
--50  1 1981 2 45 0 
+ itm_werewolf Werewolf Werewolf 1  mm_warg_a 0  4097 0 1200 0 0 100 0 30 0 10 130 60 60 100 0 25 0
+0
 
  itm_defiled_armor_rohan Defiled_Rohan_Hauberk Defiled_Rohan_Hauberk 1  defile_rohan 0  16781325 0 1600 0 17 100 0 25 9 0 0 0 0 0 0 0 0
 1
