@@ -446,6 +446,16 @@ itm_isen_olog_body_b = (itm_ent_body, imod_cheap)
 itm_isen_olog_hands = (itm_leather_gloves_reward, imod_rusty)
 itm_isen_olog_feet_boots = (itm_ent_feet_boots, imod_thick)
 
+#Handwear and boots variants
+itm_leather_gloves_good = 		(itm_leather_gloves, imod_thick)
+itm_evil_gauntlets_a_good = 	(itm_evil_gauntlets_a, imod_thick)
+itm_evil_gauntlets_a_lordly = 	(itm_evil_gauntlets_a, imod_reinforced)
+itm_evil_gauntlets_b_good = 	(itm_evil_gauntlets_b, imod_thick)
+itm_leather_boots_bad = 		(itm_leather_boots, imod_rusty)
+itm_leather_boots_dark_bad = 	(itm_leather_boots_dark, imod_rusty)
+itm_splinted_greaves_good = 	(itm_splinted_greaves, imod_reinforced)
+itm_rohan_shoes_bad = 			(itm_rohan_shoes, imod_rusty)
+
 #Dwarf helm variants
 itm_dwarf_helm_coif_reinf = (itm_dwarf_helm_coif, imod_reinforced)
 itm_dwarf_helm_coif_lordly =  (itm_dwarf_helm_coif, imod_lordly)
@@ -638,12 +648,6 @@ itm_umb_armor_d_cloak = (itm_umb_armor_d, imod_cloak)
 itm_umb_armor_e_cloak = (itm_umb_armor_e, imod_cloak)
 itm_umb_armor_f_cloak = (itm_umb_armor_f, imod_cloak)
 
-#handwear variations
-itm_leather_gloves_good = 	(itm_leather_gloves, imod_thick)
-itm_evil_gauntlets_a_good = 	(itm_evil_gauntlets_a, imod_thick)
-itm_evil_gauntlets_a_lordly = 	(itm_evil_gauntlets_a, imod_reinforced)
-itm_evil_gauntlets_b_good = 	(itm_evil_gauntlets_b, imod_thick)
-
 #Gondor helms
 itm_gondorian_light_helm = (itm_gondor_infantry_helm, imod_cracked)
 itm_gondor_infantry_helm_bad = (itm_gondor_infantry_helm, imod_cracked)
@@ -789,7 +793,7 @@ troops = [
 ["townsman","Townsman","Townsmen",tfg_boots| tfg_armor,0,0,fac_dale,
    [itm_corsair_boots, itm_fur_coat,itm_fur_coat,itm_fur_coat,itm_fur_coat, itm_blue_tunic, itm_leather_jerkin, itm_black_tunic, itm_leather_apron, itm_robe_generic_dress, itm_lossarnach_shirt,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,mercenary_face_1,mercenary_face_2],
-["watchman","Townswoman","Townswomen",tf_female| tfg_boots| tfg_armor,0,0,fac_commoners,
+["watchman","Townswoman","Townswomen",tf_female| tfg_boots| tfg_armor,0,0,fac_dale,
    [itm_gondor_ranger_hood,itm_robe_generic_dress, itm_black_dress,itm_rohan_fine_outfit_dale_dress,itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,itm_leather_boots],
       attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],
 ["mercenaries_end","bug","bug",0,0,0,fac_commoners,

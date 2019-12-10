@@ -25600,9 +25600,9 @@ command_cursor_scripts = [
 		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_2, -1),
 	(try_end),
 
-	(troop_set_slot, "trp_elder_camroth", slot_troop_gm_companion_1, "str_lorien_ca_guildmaster_companion"),
+	(troop_set_slot, "trp_elder_cgaladhon", slot_troop_gm_companion_1, "str_lorien_ca_guildmaster_companion"),
 
-	(party_set_slot, "p_town_cerin_amroth", slot_party_has_companion, 1),
+	(party_set_slot, "p_town_caras_galadhon", slot_party_has_companion, 1),
 
 	# Beorn
 	(try_for_range, ":beorn_guildmasters", "trp_elder_wvillage", "trp_elder_harad"),
@@ -25616,7 +25616,7 @@ command_cursor_scripts = [
 
 	(troop_set_slot, "trp_elder_wvillage", slot_troop_gm_companion_1, "str_beorn_house_guildmaster_companion"),
 
-	(party_set_slot, "p_town_beorn_house", slot_party_has_companion, 1),
+	(party_set_slot, "p_town_woodsmen_village", slot_party_has_companion, 1),
 
 	# Woodelf
 	(try_for_range, ":woodelf_guildmasters", "trp_elder_thalls", "trp_elder_imladris"),

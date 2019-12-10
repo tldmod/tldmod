@@ -388,7 +388,7 @@ items =[
 ["mail_mittens","Mail_Mittens",[("CWE_gauntlets_crysader_L",0)],itp_type_hand_armor|itp_shop,0,600,weight(1)|body_armor(4)|difficulty(0),imodbits_elf_armor,[]],
 ["leather_boots","Leather_Boots",[("fi_boot13",imodbits_armor_bad),("fi_boot8",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,200,weight(1)|leg_armor(12)|difficulty(0),imodbits_cloth],
 ["leather_boots_dark","Rider_Boots",[("fi_boot7",imodbits_armor_bad),("narf_rus_cav_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,200,weight(1)|leg_armor(12)|difficulty(0),imodbits_cloth],
-["splinted_greaves","Splinted_Greaves",[("fi_boot9",0),("narf_rus_splint_greaves",imodbits_armor_good)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,50,weight(3.5)|leg_armor(24)|difficulty(0),imodbits_armor],
+["splinted_greaves","Splinted_Greaves",[("fi_boot9",0),("narf_rus_splint_greaves",imodbits_armor_good)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,50,weight(3.5)|leg_armor(24)|difficulty(0),imodbits_armor|imodbit_lordly],
 
 # TLD civilian wear
 #all marked civilian items free Jan 2017, -> itm_white_tunic_a
