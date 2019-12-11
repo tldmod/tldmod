@@ -460,10 +460,10 @@ ga_grass_desert 8641492820000 4
  PW_grass_yellow_b_xx  0
  PW_grass_e_xx  0
 zl_fir_tall_hs 21479038976 4
- PW_rock_d bo_pw_rock_d
- PW_rock_f bo_pw_rock_f
- PW_rock_i bo_pw_rock_i
- PW_pine_1_a_xx bo_pw_rock_f
+ PW_fir_tall_d bo_pw_rock_d
+ PW_fir_tall_f bo_pw_rock_f
+ PW_fir_tall_h bo_pw_rock_i
+ PW_fir_tall_i bo_pw_rock_f
 zl_fir_shubby_single 21479038992 4
  PW_tree_2_a_single1 bo_pw_tree_2_a_single1
  PW_tree_2_a_single2 0

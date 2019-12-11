@@ -384,7 +384,7 @@ fauna_kinds = [
    ['tree_12_b', 'bo_tree_12_b'],
    ['tree_12_c', 'bo_tree_12_c']]),
 
- ('pw_pine_bushes_group',
+ ('pw_pine_bushes_group', #dester version of zl_tree_12
   fkf_desert|fkf_desert_forest|fkf_guarantee|density(12),
   [['PW_tree_12_a_xx', 'bo_pw_tree_12_a'],
    ['PW_tree_12_b_xx', 'bo_pw_tree_12_b'],
@@ -702,10 +702,10 @@ fauna_kinds = [
 
  ('zl_fir_tall_hs',
   fkf_desert_forest|fkf_tree|density(5),
-  [['PW_rock_d', 'bo_pw_rock_d'],
-   ['PW_rock_f', 'bo_pw_rock_f'],
-   ['PW_rock_i', 'bo_pw_rock_i'],
-   ['PW_pine_1_a_xx', 'bo_pw_rock_f']]),
+  [['PW_fir_tall_d', 'bo_pw_rock_d'],
+   ['PW_fir_tall_f', 'bo_pw_rock_f'],
+   ['PW_fir_tall_h', 'bo_pw_rock_i'],
+   ['PW_fir_tall_i', 'bo_pw_rock_f']]),
 
  ('zl_fir_shubby_single',
   fkf_snow|fkf_desert_forest|fkf_tree|density(5),

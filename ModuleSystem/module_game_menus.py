@@ -7039,7 +7039,8 @@ game_menus = [
 			(else_try),
 				(str_store_string, s12, "str_empty_string"),
 			(try_end),
-	  ]),
+	  ]
+	  ,"Get the book"),
 	  ##Kham - Player Initiated Siege BEGIN
 	  ("player_castle_initiate_siege",
 	 	[#(eq, "$cheat_mode",1),
