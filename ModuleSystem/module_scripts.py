@@ -4863,13 +4863,13 @@ scripts = [
 	      	(display_message, "@{reg79} shared XP", color_good_news),
 	      	(display_message, "@{s77} has {reg80} int - {reg81} Int Bonus Multi before dividing by 3 - {reg82} after dividing by 3"),
 	      	(display_message, "@{reg83} INT XP Bonus before dividing by 100 - {reg84} after dividing by 100"),
-	      	(display_message, "@{s77} received {reg64} bonus XP", color_good_news),
+	      	(display_message, "@{s77} received {reg84} bonus XP", color_good_news),
 	    (try_end),
 
 	    (try_begin),
 	    	(eq, ":stack_troop_new", "trp_player"),
 	    	(gt, ":int_xp_bonus", 0),
-	    	(display_message, "@You gained {reg64} intelligence-bonus XP", color_good_news),
+	    	(display_message, "@You gained {reg84} intelligence-bonus XP", color_good_news),
 	    (try_end),
 
       (try_end),
