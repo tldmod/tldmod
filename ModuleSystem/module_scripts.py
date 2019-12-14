@@ -21524,15 +21524,35 @@ scripts = [
 		(store_item_value, reg30, ":item"),
 		(val_mod, reg30,10),
 		#(neq, reg30, 0), # non-commonly used item? (item value last digit !=0, stores allowed races) #InVain: Removed, now checks all the time.
-		(try_begin),(eq,reg30,8),(neq,":race",tf_dwarf  ),(assign,"$remove_item",1),
-		 (else_try),(eq,reg30,1),(neq,":race",tf_orc    ),(assign,"$remove_item",1),
-		 (else_try),(eq,reg30,2),(this_or_next|neq,":race",tf_uruk),(neq,":race",tf_urukhai),(assign,"$remove_item",1), #Uruks and Uruk-hai share equipment
-		 #(else_try),(eq,reg30,4),(neq,":race",tf_urukhai),(assign,"$remove_item",1),
-		 (else_try),(neq,reg30,8),(eq,":race",tf_dwarf  ),(assign,"$remove_item",1), #InVain: Turned conditions around. Now, short races are only allowed to wear their own gear.
-		 (else_try),(neq,reg30,1),(eq,":race",tf_orc    ),(assign,"$remove_item",1),
-		 (else_try),(neq,reg30,2),(this_or_next|eq,":race",tf_uruk),(eq,":race",tf_urukhai),(assign,"$remove_item",1), #Uruks and Uruk-hai share equipment
+			(try_begin), # swy: if it's a dwarven item and not a dwarven troop; remove it
+				(eq, reg30, 8),
+				(neq, ":race", tf_dwarf),
+				(assign, "$remove_item", 1), 
+			(else_try), # swy: if it's an orc item and not a orc troop; remove it
+				(eq, reg30, 1),
+				(neq, ":race", tf_orc),
+				(assign, "$remove_item", 1), 
+			(else_try), # swy: if it's an uruk item and not some kind of uruk troop; remove it
+				(eq, reg30, 2),
+				(neq, ":race", tf_uruk),
+				(neq, ":race", tf_urukhai),
+				(assign, "$remove_item", 1), #Uruks and Uruk-hai share equipment
 
-		(try_end),
+			#InVain: Turned conditions around. Now, short races are only allowed to wear their own gear. 
+			(else_try), # swy: if it is NOT a dwarven item and it's a dwarven troop; remove it
+				(neq, reg30, 8),
+				(eq, ":race", tf_dwarf),
+				(assign, "$remove_item", 1),
+			(else_try), # swy: if it is NOT an orc item and it's an orc troop; remove it
+				(neq, reg30, 1),
+				(eq, ":race", tf_orc),
+				(assign, "$remove_item", 1), 
+			(else_try), # swy: if it is NOT an uruk item and it's some kind of uruk troop; remove it
+				(neq, reg30, 2),
+				(this_or_next|eq, ":race", tf_uruk),
+				(             eq, ":race", tf_urukhai),
+				(assign, "$remove_item", 1), #Uruks and Uruk-hai share equipment
+			(try_end),
 		(try_begin),
 			(eq,"$remove_item",1),
 			(dialog_box,"@Item you just equipped does not fit characters of this race and will be removed into player inventory shortly^^Make sure your equipment has space for the item, or it will be lost","@Inappropriate equipment"),

@@ -442,7 +442,7 @@ mission_templates_cutscenes = [
        # (position_set_x, pos1, 22644),
        # (position_set_y, pos1, 20078),
        # (position_rotate_z, pos1, -11),
-        (entry_point_get_position, pos1, 48),
+        (entry_point_get_position, pos1, 21),
         (set_spawn_position, pos1),
         (spawn_agent, "trp_black_numenorean_horsemaster"), #has to be in a condition block, or it will crash
         (agent_set_speed_limit, reg0, 7),
@@ -497,7 +497,7 @@ mission_templates_cutscenes = [
          (try_begin),
            (eq, "$g_tld_intro_state", 31), #start with looking at the city 43
            (mission_cam_set_mode, 1),
-           (entry_point_get_position, pos1, 43),
+           (entry_point_get_position, pos1, 16),
           # (init_position, pos1),
           # (position_rotate_z, pos1, 169),
           # (position_set_x, pos1, 23600),
@@ -508,7 +508,7 @@ mission_templates_cutscenes = [
          (else_try),
            (eq, "$g_tld_intro_state", 32), #pan to the bridge 44
            (ge, ":cur_time", 4),
-           (entry_point_get_position, pos1, 44),
+           (entry_point_get_position, pos1, 17),
           # (init_position, pos1),
           # (position_rotate_z, pos1, 169),
           # (position_set_x, pos1, 25000),
@@ -519,7 +519,7 @@ mission_templates_cutscenes = [
          (else_try),
            (eq, "$g_tld_intro_state", 33), #pan to the other side of the bridge 45
            (ge, ":cur_time", 6),
-           (entry_point_get_position, pos1, 45),
+           (entry_point_get_position, pos1, 18),
          #  (init_position, pos1),
          #  (position_rotate_z, pos1, 169),
          #  (position_set_x, pos1, 23000),
@@ -531,7 +531,7 @@ mission_templates_cutscenes = [
              (agent_get_troop_id, ":agent_troop", ":agent_no"),
              (this_or_next|eq, ":agent_troop", "trp_black_numenorean_horsemaster"),
              (eq, ":agent_troop", "trp_black_uruk_of_barad_dur"),
-             (entry_point_get_position, pos1, 49),
+             (entry_point_get_position, pos1, 22),
              #(agent_get_position, pos1, ":agent_no"),
              #(position_move_x, pos1, 1350), # correction for angle numerical loss
              #(position_move_y, pos1, 10000),
@@ -543,7 +543,7 @@ mission_templates_cutscenes = [
          (else_try),
            (eq, "$g_tld_intro_state", 34), #turn around 46
            (ge, ":cur_time", 16),
-           (entry_point_get_position, pos1, 46),
+           (entry_point_get_position, pos1, 19),
           # (init_position, pos1),
          #  (position_rotate_z, pos1, -11),
           # (position_set_x, pos1, 23000),
@@ -560,7 +560,7 @@ mission_templates_cutscenes = [
          (else_try),
            (eq, "$g_tld_intro_state", 35), #and fly over again 47
            (ge, ":cur_time", 22),
-           (entry_point_get_position, pos1, 47),
+           (entry_point_get_position, pos1, 20),
          #  (init_position, pos1),
          #  (position_rotate_x, pos1, 50),
            #(position_rotate_z, pos1, 30),

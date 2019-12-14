@@ -666,19 +666,19 @@ itm_gondor_dolamroth_helm_good = (itm_gondor_dolamroth_helm, imod_thick)
 #Lorien armours
 itm_lorien_archer_cloak = (itm_lorien_archer , imod_cloak)
 itm_lorien_archer_good = (itm_lorien_archer , imod_thick)
-itm_lorien_archer_good_cloak = (itm_lorien_archer , imod_reinforced)
+itm_lorien_archer_good_cloak = (itm_lorien_archer , imod_lordly)
 itm_lorien_light_bad = (itm_lorien_armor_a , imod_crude)
 itm_lorien_light_cloak = (itm_lorien_armor_a , imod_cloak)
 itm_lorien_light_good = (itm_lorien_armor_a , imod_thick)
-itm_lorien_light_good_cloak = (itm_lorien_armor_a , imod_reinforced)
+itm_lorien_light_good_cloak = (itm_lorien_armor_a , imod_lordly)
 itm_lorien_med_bad = (itm_lorien_armor_b , imod_crude)
 itm_lorien_med_cloak = (itm_lorien_armor_b , imod_cloak)
 itm_lorien_med_good = (itm_lorien_armor_b , imod_thick)
-itm_lorien_med_good_cloak = (itm_lorien_armor_b , imod_reinforced)
+itm_lorien_med_good_cloak = (itm_lorien_armor_b , imod_lordly)
 itm_lorien_heavy_bad = (itm_lorien_armor_c , imod_crude)
 itm_lorien_heavy_cloak = (itm_lorien_armor_c , imod_cloak)
 itm_lorien_heavy_good = (itm_lorien_armor_c , imod_thick)
-itm_lorien_heavy_good_cloak = (itm_lorien_armor_c , imod_reinforced)
+itm_lorien_heavy_good_cloak = (itm_lorien_armor_c , imod_lordly)
 
 #Khand helms
 itm_khand_inf_helm_a_good = (itm_khand_inf_helm_a, imod_reinforced)
@@ -1000,42 +1000,29 @@ troops = [
 ["c6_amroth_swan_knight","Swan_Knight_of_Dol_Amroth","Swan_Knights_of_Dol_Amroth",tf_gondor| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots |tfg_polearm,0,subfac_dol_amroth,fac_gondor,[itm_swan_knight_helm,itm_dol_very_heavy_mail,itm_mail_mittens,itm_dol_greaves,itm_amroth_lance_banner,itm_amroth_sword_b,itm_gon_tab_shield_c,itm_dol_amroth_warhorse2,],attr_tier_6,wp(360),knows_common|knows_riding_8|knows_shield_4|knows_power_strike_8|knows_ironflesh_6,gondor_face1,gondor_face3],
 ["c6_amroth_leader","Captain_of_Dol_Amroth","Captains_of_Dol_Amroth",tf_gondor| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots |tfg_polearm,0,subfac_dol_amroth,fac_gondor,[itm_gondor_leader_helm,itm_dol_very_heavy_mail,itm_mail_mittens,itm_dol_greaves,itm_amroth_bastard,itm_amroth_lance_banner,itm_gon_tab_shield_c,itm_dol_amroth_warhorse2,],attr_tier_6,wp_tier_6,knows_common|knows_riding_8|knows_shield_9|knows_power_strike_8|knows_ironflesh_10,gondor_face1,gondor_face3],
 
-#Lothlorien
+#Lothlorien #Lorien
 ["lothlorien_scout","Lothlorien_Scout","Lothlorien_Scouts",tf_lorien| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_archer,itm_lorien_boots,itm_short_bow,itm_elven_arrows,itm_lorien_sword_b,],attr_elf_tier_1,wp_elf_tier_bow_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_veteran_scout","Lothlorien_Veteran_Scout","Lothlorien_Veteran_Scouts",tf_lorien| tfg_ranged| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_a,itm_lorien_archer,itm_lorien_boots,itm_elven_bow,itm_elven_arrows,itm_lorien_sword_b,],attr_elf_tier_2,wp_elf_tier_bow_2,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_draw_4|knows_ironflesh_1,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_archer","Lothlorien_Archer","Lothlorien_Archers",tf_lorien| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_a,itm_lorien_armor_a,itm_lorien_boots,itm_elven_bow,itm_elven_arrows,itm_lorien_sword_b,],attr_elf_tier_3,wp_elf_tier_bow_3,knows_common|knows_athletics_5|knows_power_draw_4|knows_power_strike_3|knows_ironflesh_3,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_veteran_archer","Lothlorien_Veteran_Archer","Lothlorien_Veteran_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_a,itm_lorien_armor_e,itm_lorien_boots,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_b,],attr_elf_tier_4,wp_elf_tier_bow_4,knows_common|knows_athletics_6|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_master_archer","Lothlorien_Master_Archer","Lothlorien_Master_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_armor_e,itm_lorien_boots,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_b,itm_lorien_round_shield,],attr_elf_tier_5,wp_elf_tier_bow_5,knows_common|knows_athletics_7|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["galadhrim_royal_archer","Galadhrim_Royal_Archer","Galadhrim_Royal_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_armor_c,itm_lorien_boots,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_b,itm_lorien_round_shield,],attr_elf_tier_6,wp_elf_tier_bow_6,knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["galadhrim_royal_marksman","Galadhrim_Royal_Marksman","Galadhrim_Royal_Marksmen",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_armor_f,itm_lorien_boots,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_b,itm_lorien_shield_c,],attr_elf_tier_6,wp_elf_tier_bow_6,knows_common|knows_athletics_7|knows_shield_1|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["noldorin_mounted_archer","Noldorin_Mounted_Archer","Noldorin_Mounted_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_armor_c,itm_lorien_boots,itm_lorien_bow_reward,itm_elven_arrows,itm_lorien_sword_a,itm_lorien_round_shield,itm_lorien_warhorse,],attr_elf_tier_6,wp_elf_tier_bow_6,knows_common|knows_horse_archery_7|knows_riding_7|knows_athletics_5|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_infantry","Lothlorien_Infantry","Lothlorien_Infantry",tf_lorien| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_lorien_helm_c,itm_lorien_armor_a,itm_lorien_boots,itm_leather_gloves,itm_lorien_shield_c,itm_lorien_sword_a],
-      attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_3,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_veteran_infantry","Lothlorien_Veteran_Infantry","Lothlorien_Veteran_Infantry",tf_lorien| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_lorien_helm_c,itm_lorien_armor_a,itm_lorien_boots,itm_mail_mittens,itm_lorien_sword_a,itm_lorien_shield_c,],
-      attr_elf_tier_2,wp_elf_tier_2,knows_common|knows_athletics_5|knows_power_draw_3|knows_power_strike_3|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_elite_infantry","Lothlorien_Elite_Infantry","Lothlorien_Elite_Infantry",tf_lorien| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_lorien_helm_c,itm_lorien_armor_b,itm_lorien_boots,itm_mail_mittens,itm_lorien_sword_a,itm_lorien_shield_b,],
-      attr_elf_tier_4,wp_elf_tier_5,knows_common|knows_athletics_5|knows_power_draw_3|knows_power_strike_5|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["galadhrim_royal_swordsman","Galadhrim_Royal_Swordsman","Galadhrim_Royal_Swordsmen",tf_lorien| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_lorien_helm_c,itm_lorien_armor_d,itm_lorien_boots,itm_mail_mittens,itm_lorien_sword_a,itm_lorien_shield_b,],
-      attr_elf_tier_5,wp_melee(500),knows_common|knows_athletics_5|knows_power_draw_6|knows_power_strike_8|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_warden","Lothlorien_Warden","Lothlorien_Wardens",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_elven_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_e,itm_lorien_boots,itm_lorien_sword_c,],
-      attr_elf_tier_2,wp_elf_tier_2,knows_common|knows_athletics_6|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_veteran_warden","Lothlorien_Veteran_Warden","Lothlorien_Veteran_Wardens",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_elven_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_e,itm_lorien_boots,itm_lorien_sword_c,],
-      attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_7|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["galadhrim_royal_warden","Galadhrim_Royal_Warden","Galadhrim_Royal_Wardens",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_lorien_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_d,itm_lorien_boots,itm_lorien_sword_c,itm_lorien_shield_c,],
-      attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_8|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
-["lothlorien_standard_bearer","Lothlorien_Standard_Bearer","Lothlorien_Standard_Bearers",tf_lorien| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_lorien_helm_c,itm_lorien_armor_f,itm_lorien_boots,itm_mail_mittens,itm_lorien_banner,],
-      attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_3|knows_power_draw_3|knows_power_strike_7|knows_ironflesh_10,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_veteran_scout","Lothlorien_Veteran_Scout","Lothlorien_Veteran_Scouts",tf_lorien| tfg_ranged| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_a,itm_lorien_archer_cloak,itm_lorien_boots,itm_elven_bow,itm_elven_arrows,itm_lorien_sword_b,],attr_elf_tier_2,wp_elf_tier_bow_2,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_draw_4|knows_ironflesh_1,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_archer","Lothlorien_Archer","Lothlorien_Archers",tf_lorien| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_a,itm_lorien_archer_good_cloak,itm_lorien_boots,itm_elven_bow,itm_elven_arrows,itm_lorien_sword_b,],attr_elf_tier_3,wp_elf_tier_bow_3,knows_common|knows_athletics_5|knows_power_draw_4|knows_power_strike_3|knows_ironflesh_3,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_veteran_archer","Lothlorien_Veteran_Archer","Lothlorien_Veteran_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_a,itm_lorien_light_cloak,itm_lorien_boots,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_b,],attr_elf_tier_4,wp_elf_tier_bow_4,knows_common|knows_athletics_6|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_master_archer","Lothlorien_Master_Archer","Lothlorien_Master_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_light_good_cloak,itm_lorien_boots,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_b,itm_lorien_round_shield,],attr_elf_tier_5,wp_elf_tier_bow_5,knows_common|knows_athletics_7|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["galadhrim_royal_archer","Galadhrim_Royal_Archer","Galadhrim_Royal_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_med_cloak,itm_lorien_boots,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_b,itm_lorien_round_shield,],attr_elf_tier_6,wp_elf_tier_bow_6,knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["galadhrim_royal_marksman","Galadhrim_Royal_Marksman","Galadhrim_Royal_Marksmen",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_med_cloak,itm_lorien_boots,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_b,itm_lorien_shield_c,],attr_elf_tier_6,wp_elf_tier_bow_6,knows_common|knows_athletics_7|knows_shield_1|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["noldorin_mounted_archer","Noldorin_Mounted_Archer","Noldorin_Mounted_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_med_good_cloak,itm_lorien_boots,itm_lorien_bow_reward,itm_elven_arrows,itm_lorien_sword_a,itm_lorien_round_shield,itm_lorien_warhorse,],attr_elf_tier_6,wp_elf_tier_bow_6,knows_common|knows_horse_archery_7|knows_riding_7|knows_athletics_5|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_infantry","Lothlorien_Infantry","Lothlorien_Infantry",tf_lorien| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_c,itm_lorien_armor_a,itm_leather_gloves,itm_lorien_boots,itm_lorien_sword_a,itm_lorien_shield_c,],attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_3,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_veteran_infantry","Lothlorien_Veteran_Infantry","Lothlorien_Veteran_Infantry",tf_lorien| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_c,itm_lorien_med_good,itm_mail_mittens,itm_lorien_boots,itm_lorien_sword_a,itm_lorien_shield_c,],attr_elf_tier_2,wp_elf_tier_2,knows_common|knows_athletics_5|knows_power_draw_3|knows_power_strike_3|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_elite_infantry","Lothlorien_Elite_Infantry","Lothlorien_Elite_Infantry",tf_lorien| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_c,itm_lorien_heavy_bad,itm_mail_mittens,itm_lorien_boots,itm_lorien_sword_a,itm_lorien_shield_b,],attr_elf_tier_4,wp_elf_tier_5,knows_common|knows_athletics_5|knows_power_draw_3|knows_power_strike_5|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["galadhrim_royal_swordsman","Galadhrim_Royal_Swordsman","Galadhrim_Royal_Swordsmen",tf_lorien| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_c,itm_lorien_heavy_good,itm_mail_mittens,itm_lorien_boots,itm_lorien_sword_a,itm_lorien_shield_b,],attr_elf_tier_5,wp_melee(500),knows_common|knows_athletics_5|knows_power_draw_6|knows_power_strike_8|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_warden","Lothlorien_Warden","Lothlorien_Wardens",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_med_cloak,itm_lorien_boots,itm_elven_bow,itm_elven_arrows,itm_lorien_sword_c,],attr_elf_tier_2,wp_elf_tier_2,knows_common|knows_athletics_6|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_veteran_warden","Lothlorien_Veteran_Warden","Lothlorien_Veteran_Wardens",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_med_good_cloak,itm_lorien_boots,itm_elven_bow,itm_elven_arrows,itm_lorien_sword_c,],attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_7|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["galadhrim_royal_warden","Galadhrim_Royal_Warden","Galadhrim_Royal_Wardens",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_b,itm_lorien_heavy_cloak,itm_lorien_boots,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_c,itm_lorien_shield_c,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_8|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+["lothlorien_standard_bearer","Lothlorien_Standard_Bearer","Lothlorien_Standard_Bearers",tf_lorien| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,[itm_lorien_helm_c,itm_lorien_heavy_good_cloak,itm_mail_mittens,itm_lorien_boots,itm_lorien_banner,],attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_3|knows_power_draw_3|knows_power_strike_7|knows_ironflesh_10,lorien_elf_face_1,lorien_elf_face_2],
+
+
 ["lorien_items","BUG","_",tf_hero,0,0,fac_lorien,
    [itm_saddle_horse,itm_short_bow,itm_good_mace,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       0,0,0,0],
+	  
 ##MIRKWOOD#####
 ["a1_greenwood_scout","Greenwood_Scout","Greenwood_Scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_armor_a,itm_rohan_shoes,itm_leather_boots_dark_bad,itm_short_bow,itm_woodelf_arrows,itm_mirkwood_knife,itm_mirkwood_short_spear,],attr_elf_tier_1,wp_elf_tier_bow_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,mirkwood_elf_face_1,mirkwood_elf_face_2],
 ["a2_greenwood_veteran_scout","Greenwood_Veteran_Scout","Greenwood_Veteran_Scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_bad,itm_mirkwood_armor_a,itm_leather_boots_bad,itm_leather_boots_dark_bad,itm_rohan_shoes,itm_regular_bow,itm_woodelf_arrows,itm_mirkwood_knife,itm_mirkwood_short_spear,],attr_elf_tier_2,wp_elf_tier_bow_2,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_1,mirkwood_elf_face_1,mirkwood_elf_face_2],
@@ -1420,7 +1407,7 @@ troops = [
    [itm_lorien_bow,itm_elven_arrows,itm_lorien_armor_c,itm_lorien_helm_b,itm_lorien_shield_b,itm_lorien_boots,itm_lorien_sword_a,itm_lorien_warhorse,],
       attr_elf_tier_6,wp_elf_tier_6,knows_inventory_management_1|knows_power_draw_6|knows_tactics_4|knows_tracking_1|knows_horse_archery_5|knows_riding_5|knows_athletics_5|knows_power_strike_5|knows_ironflesh_5,lorien_elf_face_1,lorien_elf_face_2],
 ["lothlorien_lieutenant","Lothlorien_Lieutenant","Lothlorien_Lieutenants",tf_lorien| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_lorien,
-   [itm_lorien_bow,itm_elven_arrows,itm_lorien_armor_e,itm_lorien_helm_b,itm_lorien_shield_b,itm_lorien_boots,itm_lorien_sword_a,],
+   [itm_lorien_bow,itm_elven_arrows,itm_lorien_armor_c,itm_lorien_helm_b,itm_lorien_shield_b,itm_lorien_boots,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knows_inventory_management_1|knows_power_draw_6|knows_tactics_3|knows_tracking_1|knows_riding_3|knows_athletics_4|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
 ["elf_captain_of_mirkwood","Elf_Captain_of_Greenwood","Elf_Captains_of_Greenwood",tf_woodelf| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_woodelf,
    [itm_elven_arrows,itm_elven_bow,itm_mirkwood_armor_e,itm_mirkwood_helm_b,itm_mirkwood_spear_shield_c,itm_mirkwood_boots,itm_mirkwood_axe],
@@ -1890,7 +1877,7 @@ troops = [
 
  # marshalls which are not also leaders
 ["lorien_marshall","Celeborn","_",tf_hero| tf_lorien| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_lorien,
-   [itm_mearas_reward,itm_lorien_royal_armor,itm_lorien_boots,itm_leather_gloves,itm_riv_tiara,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
+   [itm_mearas_reward,itm_lorien_heavy_good_cloak,itm_lorien_boots,itm_leather_gloves,itm_riv_tiara,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_4|knows_riding_5|knows_persuasion_7|knows_trainer_4,0x00000008120000024b146a491440e12400000000001cc4ad0000000000000000],
 
 # ["gondor_marshall","Gondor Marshall","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
@@ -2040,10 +2027,10 @@ troops = [
       attr_tier_6,wp_tier_6,knight_skills_2|knows_riding_10|knows_power_draw_6,0x000000093f004045300251e9b3e2f7df00000000001dbaab0000000000000000],
 #Lothlorien
 ["knight_3_6","Haldir","_",tf_hero| tf_lorien| tf_mounted| tfg_ranged |tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_lorien,
-   [itm_lorien_warhorse,itm_lorien_royal_armor,itm_riv_tiara,itm_lorien_boots,itm_leather_gloves,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
+   [itm_lorien_warhorse,itm_lorien_heavy_good_cloak,itm_riv_tiara,itm_lorien_boots,itm_leather_gloves,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_1|knows_persuasion_7|knows_power_draw_4,0x00000006470010023b1d6e351240e36d00000000001cd8ec0000000000000000],
 ["knight_3_7","Orophin","_",tf_hero| tf_lorien| tf_mounted| tfg_ranged |tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_lorien,
-   [itm_lorien_warhorse,itm_lorien_royal_armor,itm_riv_tiara,itm_lorien_boots,itm_leather_gloves,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
+   [itm_lorien_warhorse,itm_lorien_heavy_good_cloak,itm_riv_tiara,itm_lorien_boots,itm_leather_gloves,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_1|knows_power_draw_4|knows_persuasion_7,0x00000006470010023b1d6e351240e36d00000000001cd8ec0000000000000000],
 #Imladris
 ["knight_3_11","Elladan","_",tf_hero| tf_imladris| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,
@@ -2219,13 +2206,13 @@ troops = [
    [itm_isen_uruk_light_c,itm_uruk_tracker_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,mercenary_face_1,mercenary_face_2],
 ["smith_cgaladhon","Dirufin the Bowyer","elven_weaponmakers",tf_hero| tf_randomize_face| tf_is_merchant| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_archer,itm_lorien_boots,],
       def_attrib|level(2),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,lorien_elf_face_1,lorien_elf_face_2],
 ["smith_cdolen","Dimirian the Fletcher","elven_weaponmakers",tf_hero| tf_randomize_face| tf_is_merchant| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_archer,itm_lorien_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,lorien_elf_face_1,lorien_elf_face_2],
 ["smith_camroth","Getasistan","elven_weaponmakers",tf_hero| tf_randomize_face| tf_is_merchant| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_armor_a,itm_lorien_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,lorien_elf_face_1,lorien_elf_face_2],
 ["smith_thranduils_halls","Thurinor","smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_woodelf,0,0,fac_woodelf,
    [itm_mirkwood_armor_a,itm_mirkwood_boots,],
@@ -2292,7 +2279,7 @@ troops = [
    [itm_isen_uruk_light_c,itm_uruk_tracker_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,mercenary_face_1,mercenary_face_2],
 ["smith_lorien_ac","Dimirian the Fletcher","elven_weaponmakers",tf_hero| tf_randomize_face| tf_is_merchant| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_armor_c,itm_lorien_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,lorien_elf_face_1,lorien_elf_face_2],
 ["smith_woodelf_ac","Dhoelath","smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_woodelf,0,0,fac_woodelf,
    [itm_mirkwood_armor_a,itm_mirkwood_boots,],
@@ -2488,13 +2475,13 @@ troops = [
    [itm_isen_uruk_light_b,itm_uruk_greaves,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_2,man_face_young_1,man_face_older_2],
 ["merchant_cgaladhon","Supply_Master","elven_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_armor_a,itm_lorien_boots,],
       def_attrib|level(2),wp(20),knows_inventory_management_10|knows_riding_3,lorien_elf_face_1,lorien_elf_face_2],
 ["merchant_cdolen","Supply_Master","elven_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_armor_a,itm_lorien_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_1,lorien_elf_face_1,lorien_elf_face_2],
 ["merchant_camroth","Supply_Master","elven_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_armor_b,itm_lorien_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_2,lorien_elf_face_1,lorien_elf_face_2],
 ["merchant_thranduils_halls","Supply_Master","elven_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_woodelf,0,0,fac_woodelf,
    [itm_mirkwood_armor_d,itm_mirkwood_boots,],
@@ -2627,13 +2614,13 @@ troops = [
    [itm_evil_light_armor,itm_leather_boots,],
       def_attrib|level(2),wp(20),knows_common,0x000000003f0000032038a06b587590c500000000001d3a880000000000000000],
 ["elder_cgaladhon","Lorien Loremaster","the_elven_forest_fortress",tf_hero| tf_randomize_face| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_armor_c,itm_lorien_boots,],
       def_attrib|level(2),wp(20),knows_common,lorien_elf_face_1,lorien_elf_face_2],
 ["elder_cdolen","Lorien Loremaster","the_encampment",tf_hero| tf_randomize_face| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_armor_c,itm_lorien_boots,],
       def_attrib|level(2),wp(20),knows_common,lorien_elf_face_1,lorien_elf_face_2],
 ["elder_camroth","Lorien Loremaster","the_encampment",tf_hero| tf_randomize_face| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_armor_c,itm_lorien_boots,],
       def_attrib|level(2),wp(20),knows_common,lorien_elf_face_1,lorien_elf_face_2],
 ["elder_thalls","Mirkwood_Elder","the_elven_caves",tf_hero| tf_randomize_face| tf_woodelf,0,0,fac_woodelf,
    [itm_mirkwood_armor_d,itm_mirkwood_boots,],
@@ -2694,7 +2681,7 @@ troops = [
    [itm_isen_uruk_light_b,itm_uruk_greaves,],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["elder_lorien_ac","Campmaster","the_camp",tf_hero| tf_randomize_face| tf_lorien,0,0,fac_lorien,
-   [itm_lorien_armor_e,itm_lorien_boots,],
+   [itm_lorien_armor_c,itm_lorien_boots,],
       def_attrib|level(2),wp(20),knows_common,lorien_elf_face_1,lorien_elf_face_2],
 ["elder_woodelf_ac","Campmaster","the_camp",tf_hero| tf_randomize_face| tf_woodelf,0,0,fac_woodelf,
    [itm_mirkwood_armor_d,itm_mirkwood_boots,],
@@ -2970,7 +2957,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_strike_3|knows_power_throw_3,orc_face3,orc_face6],
 
 ["start_quest_woodelf","Galadhrim_Royal_Marksman","Galadhrim_Royal_Marksmen",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_lorien_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_f,itm_lorien_boots,itm_lorien_sword_b,itm_lorien_shield_c,],
+   [itm_lorien_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_c,itm_lorien_boots,itm_lorien_sword_b,itm_lorien_shield_c,],
       attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_7|knows_shield_1|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
 
 ["start_quest_mordor_scout","Mordor_Guide","Mordor_Guides",tf_orc| tfg_ranged| tfg_helm| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,

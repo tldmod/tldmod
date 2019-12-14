@@ -219,8 +219,8 @@ fauna_kinds = [
 
  ('pw_fir',
   fkf_tree|density(4),
-  [['PW_pine_1_a_xx', 'bo_pw_pine_1_a'],
-   ['PW_pine_1_b_xx', 'bo_pw_pine_1_b']]),
+  [['PW_pine_1_a', 'bo_pw_pine_1_a'],
+   ['PW_pine_1_b', 'bo_pw_pine_1_b']]),
 
  ('pine_2',
   fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4),
@@ -240,7 +240,7 @@ fauna_kinds = [
 
  ('pw_pine_group2',
   fkf_desert_forest|fkf_tree|density(2),
-  [['PW_pine_4_a', 'bo_pw_pine_4_a_cyl']]),
+  [['PW_pine_4_a', 'bo_pw_pine_4_a']]),
 
  ('pine_6',
   fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4),
@@ -248,7 +248,7 @@ fauna_kinds = [
 
  ('pw_pine_group1',
   fkf_desert_forest|fkf_tree|density(2),
-  [['PW_pine_6_a', 'bo_pw_pine_6_a_cyl']]),
+  [['PW_pine_6_a', 'bo_pw_pine_6_a']]),
 
  ('snowy_pine', fkf_tree, [['PW_tree_snowy_a', 'bo_pw_tree_snowy_a']]),
 
@@ -271,8 +271,8 @@ fauna_kinds = [
 
  ('pw_fir_shibby',
   fkf_desert_forest|fkf_tree|density(4),
-  [['PW_tree_2_a', 'bo_pw_tree_2_a_cyl'],
-   ['PW_tree_2_b', 'bo_pw_tree_2_b_cyl']]),
+  [['PW_tree_2_a', 'bo_PW_tree_2_a'],
+   ['PW_tree_2_b', 'bo_pw_tree_2_b']]),
 
  ('tree_3',
   fkf_plain|fkf_realtime_ligting|fkf_tree|density(5),
@@ -288,8 +288,8 @@ fauna_kinds = [
 
  ('pw_birch_yellow',
   fkf_tree|density(4),
-  [['PW_tree_4_a', 'bo_pw_tree_4_a_cyl'],
-   ['PW_tree_4_b', 'bo_pw_tree_4_b_cyl']]),
+  [['PW_tree_4_a', 'bo_pw_tree_4_a'],
+   ['PW_tree_4_b', 'bo_pw_tree_4_b']]),
 
  ('tree_5',
   fkf_plain_forest|density(70),
@@ -300,11 +300,11 @@ fauna_kinds = [
 
  ('pw_birch_green',
   density(70),
-  [['PW_tree_5_a', 'bo_pw_tree_5_a_cyl'],
-   ['PW_tree_5_b', 'bo_pw_tree_5_b_cyl'],
-   ['PW_tree_5_c', 'bo_pw_tree_5_c_cyl'],
-   ['PW_tree_5_d', 'bo_pw_tree_5_d_cyl'],
-   ['PW_tree_5_a_yellow', 'bo_pw_tree_5_a_cyl']]),
+  [['PW_tree_5_a', 'bo_pw_tree_5_a'],
+   ['PW_tree_5_b', 'bo_pw_tree_5_b'],
+   ['PW_tree_5_c', 'bo_pw_tree_5_c'],
+   ['PW_tree_5_d', 'bo_pw_tree_5_d'],
+   ['PW_tree_5_a_yellow', 'bo_pw_tree_5_a']]),
 
  ('tree_6',
   fkf_plain|fkf_tree|density(5),
@@ -386,9 +386,9 @@ fauna_kinds = [
 
  ('pw_pine_bushes_group', #dester version of zl_tree_12
   fkf_desert|fkf_desert_forest|fkf_guarantee|density(12),
-  [['PW_tree_12_a_xx', 'bo_pw_tree_12_a'],
-   ['PW_tree_12_b_xx', 'bo_pw_tree_12_b'],
-   ['PW_tree_12_c_xx', 'bo_pw_tree_12_c']]),
+  [['PW_tree_12_a', 'bo_pw_tree_12_a'],
+   ['PW_tree_12_b', 'bo_pw_tree_12_b'],
+   ['PW_tree_12_c', 'bo_pw_tree_12_c']]),
 
  ('tree_14',
   fkf_tree,
@@ -398,9 +398,9 @@ fauna_kinds = [
 
  ('pw_tall_leaf',
   fkf_tree,
-  [['PW_tree_14_a', 'bo_pw_tree_14_a_cyl'],
-   ['PW_tree_14_b', 'bo_pw_tree_14_b_cyl'],
-   ['PW_tree_14_c', 'bo_pw_tree_14_c_cyl']]),
+  [['PW_tree_14_a', 'bo_pw_tree_14_a'],
+   ['PW_tree_14_b', 'bo_pw_tree_14_b'],
+   ['PW_tree_14_c', 'bo_pw_tree_14_c']]),
 
  ('tree_15',
   fkf_tree|density(64),
@@ -410,9 +410,9 @@ fauna_kinds = [
 
  ('pw_leaf_yellow2',
   fkf_steppe_forest|fkf_tree|density(70),
-  [['PW_tree_15_a', 'bo_pw_tree_15_a_cyl'],
-   ['PW_tree_15_b', 'bo_pw_tree_15_b_cyl'],
-   ['PW_tree_15_c', 'bo_pw_tree_15_c_cyl']]),
+  [['PW_tree_15_a', 'bo_pw_tree_15_a'],
+   ['PW_tree_15_b', 'bo_pw_tree_15_b'],
+   ['PW_tree_15_c', 'bo_pw_tree_15_c']]),
 
  ('tree_16',
   fkf_plain_forest|fkf_tree|density(38),
@@ -420,8 +420,8 @@ fauna_kinds = [
 
  ('pw_pine_small_group',
   fkf_desert_forest|fkf_tree|density(38),
-  [['PW_tree_16_a', 'bo_pw_tree_16_a_cyl'],
-   ['PW_tree_16_b', 'bo_pw_tree_16_b_cyl']]),
+  [['PW_tree_16_a', 'bo_pw_tree_16_a'],
+   ['PW_tree_16_b', 'bo_pw_tree_16_b']]),
 
  ('tree_17',
   fkf_plain_forest|fkf_tree|density(4),
@@ -443,8 +443,8 @@ fauna_kinds = [
 
  ('pw_birch_yellow_group',
   fkf_tree|density(4),
-  [['PW_tree_18_a', 'bo_pw_tree_18_a_cyl'],
-   ['PW_tree_18_b', 'bo_pw_tree_18_b_cyl']]),
+  [['PW_tree_18_a', 'bo_pw_tree_18_a'],
+   ['PW_tree_18_b', 'bo_pw_tree_18_b']]),
 
  ('tree_19',
   fkf_plain_forest|fkf_tree|density(4),
@@ -466,7 +466,7 @@ fauna_kinds = [
 
  ('pw_pine_group3',
   fkf_desert_forest|fkf_tree|density(2),
-  [['PW_tall_tree_a', 'bo_pw_tall_tree_a_cyl']]),
+  [['PW_tall_tree_a', 'bo_pw_tall_tree_a']]),
 
  ('tree_e',
   fkf_plain|fkf_plain_forest|fkf_tree|density(4),
@@ -517,23 +517,23 @@ fauna_kinds = [
 
  ('zl_fir_shubby',
   fkf_desert_forest|fkf_tree|density(1),
-  [['PW_tree_2_a', 'bo_pw_tree_2_a_cyl'],
-   ['PW_tree_2_b', 'bo_pw_tree_2_b_cyl'],
+  [['PW_tree_2_a', 'bo_PW_tree_2_a'],
+   ['PW_tree_2_b', 'bo_pw_tree_2_b'],
    ['PW_tree_e_1', 'bo_pw_tree_e_1'],
    ['PW_tree_e_2', 'bo_pw_tree_e_2'],
    ['PW_tree_e_3', 'bo_pw_tree_e_3']]),
 
  ('zl_birch_yellow',
   fkf_tree,
-  [['PW_tree_4_a', 'bo_pw_tree_4_a_cyl'],
-   ['PW_tree_4_b', 'bo_pw_tree_4_b_cyl']]),
+  [['PW_tree_4_a', 'bo_pw_tree_4_a'],
+   ['PW_tree_4_b', 'bo_pw_tree_4_b']]),
 
  ('zl_birch_green',
   fkf_tree,
-  [['PW_tree_5_a', 'bo_pw_tree_5_a_cyl'],
-   ['PW_tree_5_b', 'bo_pw_tree_5_b_cyl'],
-   ['PW_tree_5_c', 'bo_pw_tree_5_c_cyl'],
-   ['PW_tree_5_d', 'bo_pw_tree_5_d_cyl']]),
+  [['PW_tree_5_a', 'bo_pw_tree_5_a'],
+   ['PW_tree_5_b', 'bo_pw_tree_5_b'],
+   ['PW_tree_5_c', 'bo_pw_tree_5_c'],
+   ['PW_tree_5_d', 'bo_pw_tree_5_d']]),
 
  ('zl_fir_shubby_group',
   fkf_desert_forest|fkf_tree|density(2),
@@ -566,26 +566,26 @@ fauna_kinds = [
 
  ('zl_tree_12',
   fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4),
-  [['PW_tree_12_a_xx', 'bo_pw_tree_12_a'],
-   ['PW_tree_12_b_xx', 'bo_pw_tree_12_b'],
-   ['PW_tree_12_c_xx', 'bo_pw_tree_12_c']]),
+  [['PW_tree_12_a', 'bo_pw_tree_12_a'],
+   ['PW_tree_12_b', 'bo_pw_tree_12_b'],
+   ['PW_tree_12_c', 'bo_pw_tree_12_c']]),
 
  ('zl_birch_tall',
   fkf_tree|density(4),
-  [['PW_tree_14_a', 'bo_pw_tree_14_a_cyl'],
-   ['PW_tree_14_b', 'bo_pw_tree_14_b_cyl'],
-   ['PW_tree_14_c', 'bo_pw_tree_14_c_cyl']]),
+  [['PW_tree_14_a', 'bo_pw_tree_14_a'],
+   ['PW_tree_14_b', 'bo_pw_tree_14_b'],
+   ['PW_tree_14_c', 'bo_pw_tree_14_c']]),
 
  ('zl_tree_15',
   fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4),
-  [['PW_tree_15_a', 'bo_pw_tree_15_a_cyl'],
-   ['PW_tree_15_b', 'bo_pw_tree_15_b_cyl'],
-   ['PW_tree_15_c', 'bo_pw_tree_15_c_cyl']]),
+  [['PW_tree_15_a', 'bo_pw_tree_15_a'],
+   ['PW_tree_15_b', 'bo_pw_tree_15_b'],
+   ['PW_tree_15_c', 'bo_pw_tree_15_c']]),
 
  ('zl_tree_16',
   fkf_plain_forest|fkf_tree|density(4),
-  [['PW_tree_16_a', 'bo_pw_tree_16_a_cyl'],
-   ['PW_tree_16_b', 'bo_pw_tree_16_b_cyl']]),
+  [['PW_tree_16_a', 'bo_pw_tree_16_a'],
+   ['PW_tree_16_b', 'bo_pw_tree_16_b']]),
 
  ('zl_birch_green_group',
   fkf_tree,
@@ -596,8 +596,8 @@ fauna_kinds = [
 
  ('zl_birch_yellow_group',
   fkf_tree,
-  [['PW_tree_18_a', 'bo_pw_tree_18_a_cyl'],
-   ['PW_tree_18_b', 'bo_pw_tree_18_b_cyl']]),
+  [['PW_tree_18_a', 'bo_pw_tree_18_a'],
+   ['PW_tree_18_b', 'bo_pw_tree_18_b']]),
 
  ('zl_aspen_yellow',
   fkf_tree,
@@ -651,9 +651,9 @@ fauna_kinds = [
 
  ('zl_pink_tree',
   fkf_tree|fkf_plain|density(10),					#InVain: added to plain (Gondor)
-  [['PW_tall_tree_a', 'bo_pw_tall_tree_a_cyl'],
-   ['PW_pine_4_a', 'bo_pw_pine_4_a_cyl'],
-   ['PW_pine_6_a', 'bo_pw_pine_6_a_cyl']]),
+  [['PW_tall_tree_a', 'bo_pw_tall_tree_a'],
+   ['PW_pine_4_a', 'bo_pw_pine_4_a'],
+   ['PW_pine_6_a', 'bo_pw_pine_6_a']]),
 
  ('zl_rockformation',
   fkf_desert|fkf_desert_forest|fkf_realtime_ligting|fkf_rock|density(1),
@@ -671,8 +671,8 @@ fauna_kinds = [
 
  ('rock',
   fkf_plain_forest|fkf_tree|density(30),
-  [['PW_pine_1_a_xx', 'bo_pw_pine_1_a'],
-   ['PW_pine_1_b_xx', 'bo_pw_pine_1_b']]),
+  [['PW_pine_1_a', 'bo_pw_pine_1_a'],
+   ['PW_pine_1_b', 'bo_pw_pine_1_b']]),
 
  ('rock_snowy2', fkf_tree, [['PW_tree_snowy_b', 'bo_pw_tree_snowy_b']]),
 
