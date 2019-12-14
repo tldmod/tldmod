@@ -9794,7 +9794,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   (else_try),
     (call_script, "script_change_player_party_morale", 8), #If the player just has no food (ie, party morale is > low morale constant, we'll just add +5 morale.
   (try_end),
-  (change_screen_return),]],
+  (change_screen_map),]],
 
 [anyone,"hungry_orc_no_check", 
   [(party_get_skill_level, ":leadership", "p_main_party", skl_leadership),

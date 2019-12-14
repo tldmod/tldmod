@@ -3443,7 +3443,7 @@ simple_triggers = [
         (map_free),
         (party_get_num_companions, ":size", "p_main_party"),
         (gt, ":size", 15), #Don't trigger if less than 15 troops
-        (assign, reg6, ":random"),
+        #(assign, reg6, ":random"),
         #(display_message, "@Random Number - {reg6}", color_good_news),
         (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
         (party_get_morale, ":morale", "p_main_party"),
