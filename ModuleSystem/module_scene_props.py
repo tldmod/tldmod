@@ -115,7 +115,7 @@ scene_props = [
         (particle_system_add_new, "psys_torch_fire"),
         (particle_system_add_new, "psys_torch_smoke"),
         (particle_system_add_new, "psys_torch_fire_sparks"),
-        (play_sound, "snd_torch_loop", 0),
+        #(play_sound, "snd_torch_loop", 0), #InVain disabled to prevent sound overflow
         (set_position_delta,0,-35,56),
         (particle_system_add_new, "psys_fire_glow_1"),
 #        (particle_system_emit, "psys_fire_glow_1",9000000),
@@ -139,7 +139,7 @@ scene_props = [
         (set_position_delta,0,-35,56),
         (particle_system_add_new, "psys_fire_glow_1"),
         (particle_system_emit, "psys_fire_glow_1",9000000),
-        (play_sound, "snd_torch_loop", 0),
+        #(play_sound, "snd_torch_loop", 0), #InVain disabled to prevent sound overflow
     ])]),
 #  ("Baggage",sokf_place_at_origin|sokf_entity_body,"package","bobaggage"),
 ("barrier_20m",sokf_invisible|sokf_type_barrier,"barrier_20m","bo_barrier_20m", []),
@@ -1188,7 +1188,7 @@ scene_props = [
      (set_position_delta,70,0,-5),
      (particle_system_add_new, "psys_fire_glow_1"),
      (particle_system_emit, "psys_fire_glow_1",9000000),
-     (play_sound, "snd_fire_loop", 0),
+     #(play_sound, "snd_fire_loop", 0), #InVain: disabled to prevent sound overflow
     ]),
 ]),
 
@@ -1912,10 +1912,10 @@ scene_props = [
 ("ZT_pl_fir_tall1", 0, "PL_fur_tall1", "0", []), ("ZT_pl_fir_tall2", 0, "PL_fur_tall2", "0", []), ("ZT_pl_fir_tall3", 0, "PL_fur_tall3", "0", []), 
 
 ("ZT_pl_fir_shubby1", 0, "PL_fur_tall1", "0", []), ("ZT_pl_fir_shubby2", 0, "PL_fur_tall2", "0", []), ("ZT_pl_fir_shubby3", 0, "PL_fur_tall3", "0", []), 
-("ZT_pl_fir_shubby_sm1", 0, "PW_tree_2_a", "bo_pw_tree_2_a_cyl", []), ("ZT_pl_fir_shubby_sm2", 0, "PW_tree_2_b", "bo_pw_tree_2_b_cyl", []), 
-("ZT_pl_birch_y1", 0, "PW_tree_4_a", "bo_pw_tree_4_a_cyl", []), ("ZT_pl_birch_y2", 0, "PW_tree_4_b", "bo_pw_tree_4_b_cyl", []), 
-("ZT_pl_birch_yg1", 0, "PW_tree_18_a", "bo_pw_tree_18_a_cyl", []), ("ZT_pl_birch_yg2", 0, "PW_tree_18_b", "bo_pw_tree_18_b_cyl", []), 
-("ZT_pl_birch_g1", 0, "PW_tree_5_a", "bo_pw_tree_5_a_cyl", []), ("ZT_pl_birch_g2", 0, "PW_tree_5_b", "bo_pw_tree_5_b_cyl", []), ("ZT_pl_birch_g3", 0, "PW_tree_5_c", "bo_pw_tree_5_c_cyl", []), ("ZT_pl_birch_g4", 0, "PW_tree_5_d", "bo_pw_tree_5_d_cyl", []), 
+("ZT_pl_fir_shubby_sm1", 0, "PW_tree_2_a", "bo_PW_tree_2_a", []), ("ZT_pl_fir_shubby_sm2", 0, "PW_tree_2_b", "bo_pw_tree_2_b", []), 
+("ZT_pl_birch_y1", 0, "PW_tree_4_a", "bo_pw_tree_4_a", []), ("ZT_pl_birch_y2", 0, "PW_tree_4_b", "bo_pw_tree_4_b", []), 
+("ZT_pl_birch_yg1", 0, "PW_tree_18_a", "bo_pw_tree_18_a", []), ("ZT_pl_birch_yg2", 0, "PW_tree_18_b", "bo_pw_tree_18_b", []), 
+("ZT_pl_birch_g1", 0, "PW_tree_5_a", "bo_pw_tree_5_a", []), ("ZT_pl_birch_g2", 0, "PW_tree_5_b", "bo_pw_tree_5_b", []), ("ZT_pl_birch_g3", 0, "PW_tree_5_c", "bo_pw_tree_5_c", []), ("ZT_pl_birch_g4", 0, "PW_tree_5_d", "bo_pw_tree_5_d", []), 
 ("ZT_pl_birch_gg1", 0, "PW_tree_17_a", "bo_pw_tree_17_a", []), ("ZT_pl_birch_gg2", 0, "PW_tree_17_b", "bo_pw_tree_17_b", []), ("ZT_pl_birch_gg3", 0, "PW_tree_17_c", "bo_pw_tree_17_c", []), 
 ("ZT_pl_birch_gb1", 0, "PW_bushes10_a", "bo_pw_bushes10_a", []), ("ZT_pl_birch_gb2", 0, "PW_bushes10_b", "bo_pw_bushes10_b", []), ("ZT_pl_birch_gb3", 0, "PW_bushes10_c", "bo_pw_bushes10_c", []), ("ZT_pl_birch_gb4", 0, "PW_bushes10_c", "bo_pw_bushes10_c", []), 
 ("ZT_pl_aspen_yg1", 0, "PW_tree_f_1", "bo_pw_tree_f_1", []), ("ZT_pl_aspen_yg2", 0, "PW_tree_f_2", "bo_pw_tree_f_2", []), ("ZT_pl_aspen_yg3", 0, "PW_tree_f_3", "bo_pw_tree_f_3", []), 

@@ -133,13 +133,13 @@ pine_2 17184072704 1
  pine_2_a  bo_pine_2_a
  0 0
 pw_fir2 17184063488 1
- PW_pine_2_a_xx  bo_pw_pine_2_a
+ PW_pine_2_a  bo_pw_pine_2_a
  0 0
 pine_3 17184072704 1
  pine_3_a  bo_pine_3_a
  0 0
 pw_fir3 17184063488 1
- PW_pine_3_a_xx  bo_pw_pine_3_a
+ PW_pine_3_a  bo_pw_pine_3_a
  0 0
 pine_4 17184072704 1
  pine_4_a  bo_pine_4_a
@@ -629,13 +629,13 @@ ga_grass_desert 8641492820000 4
  PW_grass_yellow_b_xx  0
  PW_grass_e_xx  0
 zl_fir_tall_hs 21479038976 4
- PW_fir_tall_d  bo_pw_rock_d
+ PW_fir_tall_d  bo_PW_fir_tall_d
  0 0
- PW_fir_tall_f  bo_pw_rock_f
+ PW_fir_tall_f  bo_PW_fir_tall_f
  0 0
- PW_fir_tall_h  bo_pw_rock_i
+ PW_fir_tall_h  bo_PW_fir_tall_h
  0 0
- PW_fir_tall_i  bo_pw_rock_f
+ PW_fir_tall_i  bo_PW_fir_tall_i
  0 0
 zl_fir_shubby_single 21479038992 4
  PW_tree_2_a_single1  bo_pw_tree_2_a_single1

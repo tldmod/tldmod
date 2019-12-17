@@ -282,8 +282,8 @@ qstr_Bad Bad
 qstr_{reg79}_shared_XP {reg79}_shared_XP
 qstr_{s77}_has_{reg80}_in {s77}_has_{reg80}_int_-_{reg81}_Int_Bonus_Multi_before_dividing_by_3_-_{reg82}_after_dividing_by_3
 qstr_{reg83}_INT_XP_Bonus {reg83}_INT_XP_Bonus_before_dividing_by_100_-_{reg84}_after_dividing_by_100
-qstr_{s77}_received_{reg6 {s77}_received_{reg64}_bonus_XP
-qstr_You_gained_{reg64}_i You_gained_{reg64}_intelligence-bonus_XP
+qstr_{s77}_received_{reg8 {s77}_received_{reg84}_bonus_XP
+qstr_You_gained_{reg84}_i You_gained_{reg84}_intelligence-bonus_XP
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
 qstr_{reg4}_killed_{reg5}_ {reg4}_killed,_{reg5}_wounded
 qstr_{reg4}_killed_{reg5}_r {reg4}_killed,_{reg5}_routed

@@ -702,10 +702,10 @@ fauna_kinds = [
 
  ('zl_fir_tall_hs',
   fkf_desert_forest|fkf_tree|density(5),
-  [['PW_fir_tall_d', 'bo_pw_rock_d'],
-   ['PW_fir_tall_f', 'bo_pw_rock_f'],
-   ['PW_fir_tall_h', 'bo_pw_rock_i'],
-   ['PW_fir_tall_i', 'bo_pw_rock_f']]),
+  [['PW_fir_tall_d', 'bo_PW_fir_tall_d'],
+   ['PW_fir_tall_f', 'bo_PW_fir_tall_f'],
+   ['PW_fir_tall_h', 'bo_PW_fir_tall_h'],
+   ['PW_fir_tall_i', 'bo_PW_fir_tall_i']]),
 
  ('zl_fir_shubby_single',
   fkf_snow|fkf_desert_forest|fkf_tree|density(5),

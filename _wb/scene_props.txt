@@ -44,11 +44,11 @@ spr_light_night 16384 0 light_sphere 0 1
 
 
 spr_torch 0 0 torch_a 0 1
--40  12 1955 3 0 -35 48 1965 1 12 1965 1 15 1965 1 19 600 2 140 0 1955 3 0 -35 56 1965 1 13 702 1 2 1955 3 0 0 0 721 2 2 -35 722 2 2 55 1969 3 14 2 1 
+-40  11 1955 3 0 -35 48 1965 1 12 1965 1 15 1965 1 19 1955 3 0 -35 56 1965 1 13 702 1 2 1955 3 0 0 0 721 2 2 -35 722 2 2 55 1969 3 14 2 1 
 
 
 spr_torch_night 0 0 torch_a 0 1
--40  9 2273 1 0 1955 3 0 -35 48 1965 1 12 1965 1 15 1965 1 19 1955 3 0 -35 56 1965 1 13 1968 2 13 9000000 600 2 140 0 
+-40  8 2273 1 0 1955 3 0 -35 48 1965 1 12 1965 1 15 1965 1 19 1955 3 0 -35 56 1965 1 13 1968 2 13 9000000 
 
 
 spr_barrier_20m 16393 0 barrier_20m bo_barrier_20m 0
@@ -2067,7 +2067,7 @@ spr_lamp_a 0 0 lamp_a 0 1
 
 
 spr_lamp_b 0 0 lamp_b 0 1
--40  6 1955 3 65 0 -7 1965 1 28 1955 3 70 0 -5 1965 1 13 1968 2 13 9000000 600 2 139 0 
+-40  5 1955 3 65 0 -7 1965 1 28 1955 3 70 0 -5 1965 1 13 1968 2 13 9000000 
 
 
 spr_hook_a 0 0 hook_a_new 0 0
@@ -3686,34 +3686,34 @@ spr_ZT_pl_fir_shubby2 0 0 PL_fur_tall2 0 0
 spr_ZT_pl_fir_shubby3 0 0 PL_fur_tall3 0 0
 
 
-spr_ZT_pl_fir_shubby_sm1 0 0 PW_tree_2_a bo_pw_tree_2_a_cyl 0
+spr_ZT_pl_fir_shubby_sm1 0 0 PW_tree_2_a bo_PW_tree_2_a 0
 
 
-spr_ZT_pl_fir_shubby_sm2 0 0 PW_tree_2_b bo_pw_tree_2_b_cyl 0
+spr_ZT_pl_fir_shubby_sm2 0 0 PW_tree_2_b bo_pw_tree_2_b 0
 
 
-spr_ZT_pl_birch_y1 0 0 PW_tree_4_a bo_pw_tree_4_a_cyl 0
+spr_ZT_pl_birch_y1 0 0 PW_tree_4_a bo_pw_tree_4_a 0
 
 
-spr_ZT_pl_birch_y2 0 0 PW_tree_4_b bo_pw_tree_4_b_cyl 0
+spr_ZT_pl_birch_y2 0 0 PW_tree_4_b bo_pw_tree_4_b 0
 
 
-spr_ZT_pl_birch_yg1 0 0 PW_tree_18_a bo_pw_tree_18_a_cyl 0
+spr_ZT_pl_birch_yg1 0 0 PW_tree_18_a bo_pw_tree_18_a 0
 
 
-spr_ZT_pl_birch_yg2 0 0 PW_tree_18_b bo_pw_tree_18_b_cyl 0
+spr_ZT_pl_birch_yg2 0 0 PW_tree_18_b bo_pw_tree_18_b 0
 
 
-spr_ZT_pl_birch_g1 0 0 PW_tree_5_a bo_pw_tree_5_a_cyl 0
+spr_ZT_pl_birch_g1 0 0 PW_tree_5_a bo_pw_tree_5_a 0
 
 
-spr_ZT_pl_birch_g2 0 0 PW_tree_5_b bo_pw_tree_5_b_cyl 0
+spr_ZT_pl_birch_g2 0 0 PW_tree_5_b bo_pw_tree_5_b 0
 
 
-spr_ZT_pl_birch_g3 0 0 PW_tree_5_c bo_pw_tree_5_c_cyl 0
+spr_ZT_pl_birch_g3 0 0 PW_tree_5_c bo_pw_tree_5_c 0
 
 
-spr_ZT_pl_birch_g4 0 0 PW_tree_5_d bo_pw_tree_5_d_cyl 0
+spr_ZT_pl_birch_g4 0 0 PW_tree_5_d bo_pw_tree_5_d 0
 
 
 spr_ZT_pl_birch_gg1 0 0 PW_tree_17_a bo_pw_tree_17_a 0
