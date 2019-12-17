@@ -1,7 +1,7 @@
 ui_at_learning_limit|(Bu Irk için ögrenme limitinde)
 ui_not_enough_skill_points_to_learn|(Ögrenmek için yeterli beceri puanınız yok)
 ui_not_enough_attributetype_to_learn_this_skill|(Bu beceriyi ögrenmek için yeterli %s yok)
-ui_explanation_agility|Çeviklik: Her puan 5 silah hüneri verir ve silah hızını %0.5 arttırır. Şu beceriler çeviklik puanının 1/3'ünden fazla yükseltilemez: Silah Ustalıgı, Kalkan, Atletik, Binicilik, Atlı Okçuluk, Yagma.
+; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
 ui_retreated_battle|%s savaş alanından kaçtı.
 ui_riding_skill_not_adequate_to_mount|(Binicilik seviyesi düşük)
 ui_camp|Kamp
@@ -56,8 +56,8 @@ ui_crouch|çömelmek
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Karakteri içe aktarmak istediginizden emin misiniz?
 ui_explanation_strength|Güç: Her puan Cana +1 ekler. Bu yetenekler Gücün 1/3'ünü geçemez; Demirbeden, Güçlü Vurma, Güçlü Fırlatma, Güçlü Çekme.
-ui_explanation_intelligence|Zeka: Her puan +1 yetenek puanı verir. Bu yetenekler Zekanın 1/3'ünü geçemez; Talimci, Tespit etme, Taktik, Yol Bulma, İz sürme, Envanter Yönetimi, Yara Bakımı, Cerrahlık, İlk yardım, Mühendislik, İkna.
-ui_explanation_charisma|Karizma: Her puan Grup büyüklügüne +1 ekler. Bu yetenekler Karizmanın 1/3'ünü geçemez; Esir Yönetimi, Liderlik, Pazarlık, Yaban işi.
+; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
+; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|%d hasar verildi.
 ui_mission_losses_killed|Öldürüldü
 ui_party_losses|%s :%d yaralandı --- %d öldürüldü %d
@@ -112,7 +112,7 @@ ui_order_button_advance|On adım ilerle
 ui_order_button_fall_back|On adım geri gel
 ui_order_button_spread_out|Dagılın
 ui_order_button_stand_closer|Yakın durun
-ui_order_button_mount_horses|Ata binin
+ui_order_button_mount_horses|Binek
 ui_order_button_dismount|Binekten in
 ui_order_button_hold_fire|Ateş etmeyin
 ui_order_button_fire_at_will|Ateş serbest
@@ -148,3 +148,5 @@ ui_str_hear_me|%s,Duy beni!
 ui_return|Geri dön
 ui_factions|Taraflar
 ui_troop_upgrades|Birlik geliştirmeleri
+; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
+; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)

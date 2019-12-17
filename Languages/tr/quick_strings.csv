@@ -8,7 +8,7 @@ qstr_Attack_Type|Saldırı Tipi
 qstr_Hold_This_Position|Bu pozisyonu koru!
 qstr_Follow_Me|Beni takip et
 qstr_Charge|Hücum
-qstr_Advance|İlerletmek
+qstr_Advance|İlerle
 qstr_Fall_Back|Geri çekil!
 qstr_Stand_Closer|Yakın Durun
 qstr_Spread_Out|Dagılın
@@ -16,32 +16,32 @@ qstr_Stand_Ground|Konumunu Koru
 qstr_Dismount|Binekten in
 qstr_Use_Any_Weapon|Herhangi bir silah kullan.
 qstr_Use_Blunt_Weapons|Bayıltıcı silah kullan.
-qstr_Hold_Your_Fire|Ateş Etmeyin
+qstr_Hold_Your_Fire|Ateş Kes
 qstr_Fire_At_Will|Ateş Serbest
 qstr_Us|Biz
-qstr_Allies|Dost
-qstr_Enemies|Düşman
+qstr_Allies|Müttefikler
+qstr_Enemies|Düşmanlar
 qstr_Ready|Hazır
 qstr_Wounded|Yaralı
 qstr_Dead|Ölü
 qstr_Routed|Bozguna ugramış.
 qstr_Number_of_men_knocke|Bayılan adam sayısı: {reg1}
 qstr_Number_of_men_left:_|Kalan adam sayısı: {reg1}
-qstr_Opponents_Beaten:_{r|Yenilen Rakipler: {reg1}
-qstr_Opponents_Remaining:|Kalan Düşman: {reg1}
+qstr_Opponents_Beaten:_{r|Yenilen Düşmanlar: {reg1}
+qstr_Opponents_Remaining:|Kalan Düşmanlar: {reg1}
 qstr_Gauntlet_wave:_1|Gauntlet bölüm:1
 qstr_Gauntlet_wave:_{reg1|Gauntlet bölüm: {reg1}
 qstr_Remain_in_retirement|Emekli Olarak Kal.
 qstr_Go_back_to_the_adven|Maceracılıga geri dön.
-qstr_You_have_retired_at_|{reg5} gün maceracılıktan sonra {reg4} levelde emekli oldun
+qstr_You_have_retired_at_|{reg5} gün maceracılıktan sonra {reg4}. seviyede emekli oldun.
 qstr_Effect_on_Score|Skor üzerindeki etki
 qstr_Settlements_owned_by|Sahip oldugun yerleşkeler: {reg0}
 qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
 qstr_Friendly_Settlements|Dost Yerleşkeler: {reg0}
-qstr_Hostile_Settlements:|Düşman Yerleşkeler: {reg0}
+qstr_Hostile_Settlements:|Hasım Yerleşkeler: {reg0}
 qstr_{reg0}|{reg0}
 qstr_Friendly_Lords:_{reg|Dost Lordlar: {reg0}
-qstr_Enemy_Lords:_{reg0}|Düşman Lordlar: {reg0}
+qstr_Enemy_Lords:_{reg0}|Hasım Lordlar: {reg0}
 qstr_Victories:_{reg0}|Zaferler: {reg0}
 qstr_Defeats:_{reg0}|Yenilgiler: {reg0}
 qstr_Quests_Completed:_{r|Tamamlanan Görevler: {reg0}
@@ -63,8 +63,8 @@ qstr_Minas_Morgul___City_|Minas Morgul - Nazgul'un İni
 qstr_Sauron_s_armies_marc|Sauron'un orduları  Savaş'a yürüyor!
 qstr_Adventurers_at_audie|Vekilharç Denethor ile seyirci maceracılar ...
 qstr___What_business_do_y|Burada ne işiniz var, yalvaranlar?
-qstr___Your_Stewardship_w|Senin kahyan, çok uzak topraklardan geldik şey için... ATLA!
-qstr___Enough_of_this_mad|'Bu kadar delilik yeter! Gardiyanlar!'
+qstr___Your_Stewardship_w|Vekilharç hazretleri, biz çok uzak topraklardan geliyoruz ve... ATLA!
+qstr___Enough_of_this_mad|'Bu kadar delilik yeter! Muhafızlar!'
 qstr___I_ve_had_enough_of|'Bu uygunsuz şakalardan bıktım...  Sıradaki grup diz çökmek zorunda!'
 qstr_Chest|Sandık
 qstr_Cape|Pelerin
@@ -73,10 +73,10 @@ qstr_Thighs|Uyluk
 qstr_Legs|Bacaklar
 qstr_Rotate|Döndür
 qstr_Close|Kapat
-qstr_Faction_Side:^^Campa|Oluşum Tarafı:^^Başlangıç Zorlugu*.^^Ana Alan:^^Mareşal:^^Düşmanlar:^^
-qstr_Campaign_Difficulty_|Başlangıç zorlukları Taraf Kuvvetine dayanır, alandaki düşmanlar,^ ve oluşum birliklerinin agacı & birliklerin ekipmanları.
-qstr_Rallies:|Toplantı
-qstr_View_Keybinds__Press|Tuşları Göster (Insert'e bas)
+qstr_Faction_Side:^^Campa|Hizip Tarafı:^^Sefer Zorlugu*.^^Ana Alan:^^Mareşal:^^Düşmanlar:^^
+qstr_Campaign_Difficulty_|Sefer zorlugu taraf kuvvetine dayanır, seferdeki düşmanlar,^ ve oluşum birliklerinin agacı & birliklerin ekipmanları.
+qstr_Rallies:|Toplantı:
+qstr_View_Keybinds__Press|Kısayolları Göster (Insert'e bas)
 qstr_What_do_you_fight_fo|Ne için savaşıyorsun?
 qstr_Go_Back...|Geri Dön...
 qstr_Learn_about_the_diff|Orta Dünya'nın farklı taraflarını ögrenin
@@ -94,22 +94,22 @@ qstr_an_URUK^_the_new_bre|Orkların yeni nesli olan bir URUK
 qstr_a_MAN^_subjugated_by|Sauron tarafından boyun egdirilmiş bir İNSAN
 qstr_an_ORC^_serving_the_W|Ak El'e Hizmet eden bir ORK
 qstr_an_URUK_HAI^_bred_in|Isengard'da yetiştirilmiş bir URUK-HAI
-qstr_a_MAN_of_Dunland^_th|Batı Topraklarında Dunland'den bir İNSAN
+qstr_a_MAN_of_Dunland^_th|Batı Topraklarından bir Dunland İNSANI
 qstr_Click_the_center_but|Grup degiştirmek için ortadaki dügmeyi tıklayın^ayrıntılarını görüntülemek için avatarları tıklayın
 qstr_Level:_{reg3}^Health|Seviye: {reg3}^Saglık: {reg4}
 qstr_Attributes|Nitelikler
 qstr_STR^AGI^INT^CHA|GÜÇ^ÇVK^ZEKA^KRZ
 qstr_Skills|Yetenekler
-qstr_Ironflesh^Power_Stri|Demir Vücut^Güçlü Darbe^Güçlü Atıcılık^Güçlü Germe^Korunma^Atletizm^Binicilik^Atlı Okçuluk
+qstr_Ironflesh^Power_Stri|Demir Vücut^Güçlü Darbe^Güçlü Atıcılık^Güçlü Germe^Kalkan^Atletizm^Binicilik^Atlı Okçuluk
 qstr_Proficiencies|Yeterlilikler
-qstr_1H_Weapons^2H_Weapon|1H silahlar^2H elli silahlar^Gönderliler^Okçuluk^Arbalet^Fırlatmalılar
+qstr_1H_Weapons^2H_Weapon|1 elli silahlar^2 elli silahlar^Gönderliler^Okçuluk^Arbalet^Fırlatmalılar
 qstr_Equipment|Ekipman
 qstr_The_Last_Days_Mod_Op|The Last Days Mod Ayarları
-qstr_War_Starts_at_Level:|Savaş Şu Level'e ulaşıldıgında Başlayacak:
+qstr_War_Starts_at_Level:|Savaş şu seviyeye ulaşıldıgında başlayacak:
 qstr_Restrict_Player_Equi|Oyuncu ekipmanını kısıtla:
-qstr_Battle_Formations_an|Savaş Formasyonları ve AI:
+qstr_Battle_Formations_an|Savaş Formasyonları ve YZ:
 qstr_Native|Yerli
-qstr_TLD_FormAI__Original|TLD FormAI (Original)
+qstr_TLD_FormAI__Original|TLD FormAI (Orjinal)
 qstr_TLD_New_FormAI|TLD Yeni FormAİ
 qstr_Advanced_Siege_AI:__|Gelişmiş Kuşatma Yapay Zekası
 qstr_On|Açık
@@ -120,18 +120,18 @@ qstr_Permanent_death_for_|Lordlar ve Yoldaşlar için kalıcı ölüm:
 qstr_Permanent_death_for_p|Oyuncu için kalıcı ölüm (bu SENSİN ! ):
 qstr_Battle_morale_system|Savaş moral sistemi:
 qstr_Animal_ambushes:__|Hayvan Pusuları:
-qstr_Fallen_rider_damage_|Düşmüş süvari Hasar mesajları:
+qstr_Fallen_rider_damage_|Düşmüş süvari hasar mesajları:
 qstr_No_Messages|Mesaj yok
-qstr_Player_damage_only|Sadece Oyuncu hasarı
+qstr_Player_damage_only|Sadece oyuncu hasarı
 qstr_All_Messages|Tüm Mesajlar
-qstr_Troop_Identifier_in_|Savaşlarda Asker isimleri (Göstermek/saklamak için savaş Alanında Y tuşuna basın):
+qstr_Troop_Identifier_in_|Savaşlarda asker isimleri (Göstermek/saklamak için savaş alanında Y tuşuna basın):
 qstr_Disable|Devre Dışı
 qstr_Enable_without_Facti|Tarafların Adları Olmadan etkinleştir.
 qstr_Enable_with_Faction_|Tarafların adlarıyla Etkinleştir
 qstr_Simple:_Red___Enemy_|Basit: Kırmızı - Düşman / Yeşil - Müttefik
 qstr_Preferred_Camera_Mod|Tercih edilen Kamera Modu
 qstr_Default_Camera|Varsayılan Kamera
-qstr_Free_Mode_Custom_Cam|Serbest-mod Özel Kamera
+qstr_Free_Mode_Custom_Cam|Serbest-Mod Özel Kamera
 qstr_Fixed_Over_The_Shoul|Sabit Omuz Kamerası
 qstr_Prevent_AI_from_taki|Yapay zekanın savunma yapmasını önleyin:
 qstr_Brighter_Nights:__|Daha Aydınlık Geceler:
@@ -982,7 +982,7 @@ qstr_the_place|yer
 qstr_the_castle|kale
 qstr_Stay_indoors_for_som|Burada bir süre bekle (her gece için {reg1} Kaynak Puanı)
 qstr_Camp_outside_for_som|Bir süre dışarıda kap kur (bedava)
-qstr_{s4}_s_scouts_have_s|{s4} izcileri başarısızlıgını gördü ve bildirdi. {S4} topraklarına utanç getirdin ve bu başarısızlıgın sorumlulugu yalnızca senin üzerinde olacak.
+qstr_{s4}_s_scouts_have_s|{s4} izcileri başarısızlıgını gördü ve bildirdi. {s4} topraklarına utanç getirdin ve bu başarısızlıgın sorumlulugu yalnızca senin üzerinde olacak.
 qstr_{s1}_s_Ship|{s1}'in Gemisi
 qstr_Time_passes...|Zaman geçiyor...
 qstr_Forces_of_Good|İyilerin Kuvvetleri
@@ -992,7 +992,7 @@ qstr_their_enemies|onların düşmanları
 qstr_{s11}_and_{s13}|{s11} ve {s13}
 qstr_{s11}_{s13}|{s11}, {s13}
 qstr_a_scout_party_from_{|{s3}'den bir izci partisi
-qstr_two_scout_parties_an| {s3}  tarafından iki izci partisi ve bir yiyecek arama partisi
+qstr_two_scout_parties_an|{s3}  tarafından iki izci partisi ve bir yiyecek arama partisi
 qstr_two_scout_parties_and|{s3} Tarafından iki izci ve bir Yagmacı Grubu
 qstr_three_scouts_two_for|{s3} 'den üç gözcü, iki avcı ve bir devriye grubu
 qstr_three_scouts_two_rai|{s3} Tarafından üç izci, iki yagmacı, ve bir savaş grubu.
@@ -1251,7 +1251,7 @@ qstr_You_have_taken_too_l|Çok uzun sürdün... Şimdi, senle veya sensiz gidece
 qstr_Make_haste_{playerna|Acele edin, {playername}. Onların kurtulmasını istemiyoruz.
 qstr_Your_mission_is_comp|Görevin tamamlandı, {s9} senden bir sonraki emirlerine kadar onu takip etmeni istiyor.
 qstr_{s13}_asked_you_to_g|{s13}, {reg3} tane {s4}toplamanı ve ona ona teslim etmeni istedi.
-; qstr_Moreover_should_you_|Moreover, should you become {s24}, you will be welcomed to my War Council, where you can make decisions that will affect the course of our campaign. For the moment, as a {s25}, just follow us and stay close. We'll be moving soon.
+qstr_Moreover_should_you_|Eger, {s24} olursan Savaş Konseyine katılma hakkı kazanacaksın. Burada savaşın kaderini degiştirebilecek kararlar verebilirsin. Şu anda, bir {s25} olarak, sadece emirleri takip et ve yakınlarda kal. Yakında harekete geçecegiz.
 qstr_For_the_moment_just_|Şu an için bizi takip et ve yakın dur. Yakında harekete geçecegiz.
 qstr_{s9}_asked_you_to_sc|{s9} senden {s13}, {s14} ve {s15}'i gözetlemeni ve ona rapor vermeni istedi.
 qstr_You_have_been_most_h|Çok yardımcı oldun, {playername}. Teşekkürler.
@@ -1269,7 +1269,7 @@ qstr_Riders_of_Rohan|Rohan Atlıları
 qstr_Elves_of_Imladris_an|Imladris ve Lothlorien Elfleri
 qstr_Men_of_Dale_Dwarves_|Dale İnsanları, Erebor Cüceleri, Beorn'un soydaşları, ve Kuyutorman Elfleri
 qstr_Ah_{playername}_it_i|Ah, {playername}, hoşgeldin. Savaş bizim kapımızda ve yeminlerini yerine getirmeleri için askerlere ve kaptanlara ihtiyacımız var.^^{S11} ile savaşıyoruz,  güçlü noktalarına ve kalelerine karşı hareket etmeyi umabilmek için gücümüzü toplamalı ve düşmanı zayıflatmalıyız. Düşmanlarımızın her yenilgisi bizi zafere yaklaştırır ve kararlılıgımızı güçlendirir, bu yüzden düşmanımızla her fırsatta savaşacagınıza güveniyorum, sadece bir keşif partisi veya bir savaş birligi bile olabilir. Ancak, yalnızca savaş için acele etmeyin, cesur kaptanlarımız ve müttefiklerimizle birlikte de savaşmalısınız.
-; qstr_About_time_you_showe|About time you showed up, {playername}. We're at war now and I will not tolerate any insubordination. We are fighting against {s11}, but we have to gather our strength and smite the enemy in the field before we can move against their fortresses. Each defeat of our enemies will strengthen our war efforts and bring them closer to their utter destruction. So I trust you to fight our enemy at every opportunity, be it a mere scout party or a war host. Also, you are to support our captains and our allies if you see them fight. Do not fail them or I will know.
+qstr_About_time_you_showe|Tam zamanında çıkageldin {playername}. Şu anda savaştayız ve herhangi bir itaatsizligi müsamaha göstermeyecegim. {s11} ile savaştayız, hasmın kalelerine yürümeden evvel tez vakte gücümüzü toplamalı ve hasmımızı sahada bertaraf etmeliyiz. Hasmımızın her maglubiyeti bizim savaş alanındaki gücümüzü artıracak ve onları kesin yenilgiye bir adım daha yaklaştıracak. O yüzden her fırsatta düşmanla çarpışmanı istiyorum, ister bir izci grubu olsun ister savaş güruhu olsun. Aynı zamanda yüzbaşlarımızı ve müttefiklerimizi savaşırken görürsen onları desteklemek durumundasın. Sakın onları başarısızlıga ugratma yoksa sonuçları agır olur.
 qstr_we_are_fighting_agai|{s13}'e karşı mücadele ediyoruz
 qstr_we_are_not_fighting_|Şu anda hiçkimse ile savaş durumunda degiliz
 qstr_Oh?_Let_me_see_that.|Oh? Bir bakayım ... Çok iyi! Bunu bana getirdigin çok iyi oldu, {playername}. Mührümü bunu aldıgımın kanıtı olarak kabul et ve {s9}'u tekrar gördügün zaman ona saygılarımı ilet.

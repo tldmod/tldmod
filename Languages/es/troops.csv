@@ -520,40 +520,40 @@ trp_dunnish_wolf_guard|Guardia Lobo Dunlendino
 trp_dunnish_wolf_guard_pl|Guardias Lobo Dunlendinos
 trp_dunnish_chieftan|Jinete Cuervo Dunlendino
 trp_dunnish_chieftan_pl|Jinetes Cuervo Dunlendinos
-; trp_i1_khand_bondsman|Khand Bondsman
-; trp_i1_khand_bondsman_pl|Khand Bondsmen
-; trp_i2_khand_pit_dog|Khand Pit Dog
-; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
-; trp_i3_khand_warrior|Khand Warrior
-; trp_i3_khand_warrior_pl|Khand Warriors
-; trp_i4_khand_vet_warrior|Variag Veteran Warrior
-; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
-; trp_i5_khand_war_master|Variag Master of War
-; trp_i5_khand_war_master_pl|Variag Masters of War
-; trp_c2_khand_pony_rider|Khand Pony Rider
-; trp_c2_khand_pony_rider_pl|Khand Pony Riders
-; trp_c3_khand_horseman|Khand Horseman
-; trp_c3_khand_horseman_pl|Khand Horsemen
-; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
-; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
+trp_i1_khand_bondsman|Esclavo de Khand
+trp_i1_khand_bondsman_pl|Esclavos de Khand
+trp_i2_khand_pit_dog|Perro de Pelea de Khand
+trp_i2_khand_pit_dog_pl|Perros de Pelea de Khand
+trp_i3_khand_warrior|Guerrero de Khand
+trp_i3_khand_warrior_pl|Guerreros de Khand
+trp_i4_khand_vet_warrior|Guerrero Veterano Variag
+trp_i4_khand_vet_warrior_pl|Guerreros Veteranos Variag
+trp_i5_khand_war_master|Señor de la Guerra Variag
+trp_i5_khand_war_master_pl|Señores de la Guerra Variag
+trp_c2_khand_pony_rider|Jinete de Póney de Khand
+trp_c2_khand_pony_rider_pl|Jinetes de Póneys de Khand
+trp_c3_khand_horseman|Jinete de Khand
+trp_c3_khand_horseman_pl|Jinetes de Khand
+trp_c4_khand_heavy_horseman|Jinete Pesado de Khand
+trp_c4_khand_heavy_horseman_pl|Jinetes Pesados de Khand
 trp_c5_khand_kataphrakt|Catafracto Variag
 trp_c5_khand_kataphrakt_pl|Catafractos Variag
 trp_c5_khand_lance_kataphrakt|Catafracto con Lanza Variag
 trp_c5_khand_lance_kataphrakt_pl|Catafractos con Lanzas Variag
-; trp_i4_khand_halberdier|Khand Glaiveman
-; trp_i4_khand_halberdier_pl|Khand Glaivemen
+trp_i4_khand_halberdier|Archero de Khand
+trp_i4_khand_halberdier_pl|Archeros de Khand
 trp_i5_khand_halberd_master|Maestro Alabardero de Khand
 trp_i5_khand_halberd_master_pl|Maestros Alabarderos de Khand
-; trp_i3_khand_pitfighter|Khand Pit Fighter
-; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
-; trp_i4_khand_pit_champion|Variag Pit Champion
-; trp_i4_khand_pit_champion_pl|Variag Pit Champions
-; trp_i5_khand_pit_master|Variag Master of the Pits
-; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
-; trp_ac3_khand_skirmisher|Khand Skirmisher
-; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
-; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
-; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
+trp_i3_khand_pitfighter|Luchador del Reñidero de Khand
+trp_i3_khand_pitfighter_pl|Luchadores del Reñidero de Khand
+trp_i4_khand_pit_champion|Campeón del Reñidero Variag
+trp_i4_khand_pit_champion_pl|Campeones del Reñidero Variag
+trp_i5_khand_pit_master|Líder del Reñidero Variag
+trp_i5_khand_pit_master_pl|Líderes del Reñidero Variag
+trp_ac3_khand_skirmisher|Escaramuzador de Khand
+trp_ac3_khand_skirmisher_pl|Escaramuzadores de Khand
+trp_ac4_khand_vet_skirmisher|Escaramuzador Veterano de Khand
+trp_ac4_khand_vet_skirmisher_pl|Escaramuzadores Veteranos de Khand
 trp_ac5_khand_heavy_skirmisher|Escaramuzador Pesado Variag
 trp_ac5_khand_heavy_skirmisher_pl|Escaramuzadores Pesados Variag
 trp_i1_corsair_youth|Marinero de Umbar

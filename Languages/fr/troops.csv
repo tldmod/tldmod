@@ -354,11 +354,11 @@ trp_a4_greenwood_vet_sentinel|Sentinelle vétérante de Verbois
 trp_a4_greenwood_vet_sentinel_pl|Sentinelles vétérantes de Verbois
 trp_a5_greenwood_vigilant|Garde de Verbois
 trp_a5_greenwood_vigilant_pl|Gardes de Verbois
-trp_i2_greenwood_infantry|Lancier de Verbois
+trp_i2_greenwood_infantry|Lanciers de Verbois
 trp_i2_greenwood_infantry_pl|Lanciers de Verbois
-trp_i3_greenwood_vet_infantry|Lancier vétéran de Verbois
+trp_i3_greenwood_vet_infantry|Lanciers vétérans de Verbois
 trp_i3_greenwood_vet_infantry_pl|Lanciers vétérans de Verbois
-trp_i4_greenwood_elite_infantry|Lancier d'élite de Verbois
+trp_i4_greenwood_elite_infantry|Lanciers d'élite de Verbois
 trp_i4_greenwood_elite_infantry_pl|Lanciers d'élite de Verbois
 trp_i5_greenwood_chosen_shieldmaster|Épéiste royal de Thranduil
 trp_i5_greenwood_chosen_shieldmaster_pl|Épéistes royaux de Thranduil
@@ -524,18 +524,18 @@ trp_dunnish_chieftan_pl|Cavaliers du Corbeau du Pays de Dun
 ; trp_i1_khand_bondsman_pl|Khand Bondsmen
 ; trp_i2_khand_pit_dog|Khand Pit Dog
 ; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
-; trp_i3_khand_warrior|Khand Warrior
-; trp_i3_khand_warrior_pl|Khand Warriors
+trp_i3_khand_warrior|Guerrier de Khand
+trp_i3_khand_warrior_pl|Guerriers de Khand 
 ; trp_i4_khand_vet_warrior|Variag Veteran Warrior
 ; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
 ; trp_i5_khand_war_master|Variag Master of War
 ; trp_i5_khand_war_master_pl|Variag Masters of War
-; trp_c2_khand_pony_rider|Khand Pony Rider
-; trp_c2_khand_pony_rider_pl|Khand Pony Riders
-; trp_c3_khand_horseman|Khand Horseman
-; trp_c3_khand_horseman_pl|Khand Horsemen
-; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
-; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
+trp_c2_khand_pony_rider|Cavalier sur poney de Khand 
+trp_c2_khand_pony_rider_pl|Cavaliers sur poney de Khand 
+trp_c3_khand_horseman|Cavalier de Khand 
+trp_c3_khand_horseman_pl|Cavaliers de Khand 
+trp_c4_khand_heavy_horseman|Cavalier lourd de Khand 
+trp_c4_khand_heavy_horseman_pl|Cavaliers lourds de Khand 
 trp_c5_khand_kataphrakt|Cataphracte Variag
 trp_c5_khand_kataphrakt_pl|Cataphractes Variags
 trp_c5_khand_lance_kataphrakt|Lancier cataphracte Variag
@@ -544,16 +544,16 @@ trp_c5_khand_lance_kataphrakt_pl|Lanciers cataphractes Variags
 ; trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|Maître Hallebardier du Khand
 trp_i5_khand_halberd_master_pl|Maîtres Hallebardiers du Khand
-; trp_i3_khand_pitfighter|Khand Pit Fighter
-; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
+trp_i3_khand_pitfighter|Gladiateur de Khand
+trp_i3_khand_pitfighter_pl|Gladiateurs de Khand
 ; trp_i4_khand_pit_champion|Variag Pit Champion
 ; trp_i4_khand_pit_champion_pl|Variag Pit Champions
 ; trp_i5_khand_pit_master|Variag Master of the Pits
 ; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
-; trp_ac3_khand_skirmisher|Khand Skirmisher
-; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
-; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
-; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
+trp_ac3_khand_skirmisher|Tirailleur de Khand 
+trp_ac3_khand_skirmisher_pl|Tirailleurs de Khand
+trp_ac4_khand_vet_skirmisher|Tirailleur vétéran de Khand
+trp_ac4_khand_vet_skirmisher_pl|Tirailleur vétéran de Khand 
 trp_ac5_khand_heavy_skirmisher|Tirailleur lourd Variag
 trp_ac5_khand_heavy_skirmisher_pl|Tirailleurs lourds Variags
 trp_i1_corsair_youth|Marin d'Umbar

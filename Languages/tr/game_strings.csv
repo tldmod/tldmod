@@ -18,7 +18,7 @@ str_color|Renk
 str_flip_horizontal|Yatay tersyüz et
 str_flip_vertical|Dikey tersyüz et
 str_hold_fire|Ateşi Kes
-str_blunt_hold_fire|Kör silahlar / Ateşi Kes
+str_blunt_hold_fire|Bayıltıcı silahlar / Ateşi Kes
 str_tutorial_ammo_refilled|Cephane yenilendi
 str_tutorial_failed|Bu sefer yenildin, ama endişelenme. Talimatları dikkatli bir şekilde takip ederseniz bir daha ki sefere daha iyi bir performans sergileyeceksiniz. Bu egiticiyi yeniden deneyebileceginiz menüye dönmek için TAB tuşuna basın.
 str_tutorial_1_msg_1|Bu ögreticide, hareket ve savaşın temellerini ögreneceksiniz. Mount & Blade'de, etrafa bakmak için fareyi ve klavyenizin WASD tuşlarını kullanın. Egitimdeki ilk göreviniz, odadaki bayragı bulmak ve üzerinde hareket etmektir. Bu egiticiden çıkmak veya oyundaki başka bir alandan çıkmak için istediginiz zaman TAB tuşuna basabilirsiniz. Şimdi bayraga git.
@@ -693,7 +693,7 @@ str_npc14_personalitymatch_speech|{s11} hoşuma gitmeye başladı, hiç söylemi
 str_npc15_personalitymatch_speech|{s11} hoşuma gitmeye başladı, hiç söylemiş miydim ?
 str_npc16_personalitymatch_speech|{s11} hoşuma gitmeye başladı, hiç söylemiş miydim ?
 str_npc17_personalitymatch_speech|Şef. Bence {s11} ormanda iyi yapabilir. Sögütten bir küle söyleyebilirim.
-; str_npc1_personalitymatch_speech_b|I find the company of {s11} very pleasing and her native woodcraft a rare glimpse of what remains of Sindarin skills in the world. You know, my father named me after the legendary Sindarin Elf captain serving King Thingol of Doriath and I always feel a special bond to the fair race.
+str_npc1_personalitymatch_speech_b|{s11}'in yoldaşlıgı beni mest ediyor ve yerel oymacılıgı dünyada Sindarin sanatından kalan nadir bir görüntü. Biliyor musun, babam beni Doriath'lı Kral Thingol'a hizmet eden efsanevi Sindarin Elf kaptanıyla aynı ismi vermiş ve her zaman Elf ırkıyla aramda bir bag oldugunu hissediyorum.
 str_npc2_personalitymatch_speech_b|Evdekiler bana her zaman Ithilien Rangers'la ilgili hikayeler anlatıyordu ve şimdi kendi gözlerimle bunların hepsinin dogru olduklarını görebiliyorum. Eger hepsi {s11} gibiyse, Gondor'un kendim için daha güvenli oldugunu hissediyorum.
 str_npc3_personalitymatch_speech_b|Komutanım, şahsi bir iyilik olarak, bir sonraki savaşta {s11} 'e daha geride kalması için emir verebilir misin? Onun zarar gördügünü görmeye dayanamam,ve bu sadece bir sarhoş konuşması degil.
 str_npc4_personalitymatch_speech_b|Hayatları korumak en asil eylemdir ve dünyalarım çok uzak olsa bile, o tür ruhla akrabalık hissediyorum.

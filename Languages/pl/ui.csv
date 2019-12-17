@@ -1,7 +1,7 @@
 ui_at_learning_limit|(limit ilości punktów umiejętności dla tej rasy)
 ui_not_enough_skill_points_to_learn|(Niewystarczająca ilość punktów umiejętności aby się nauczyć)
 ui_not_enough_attributetype_to_learn_this_skill|(Za mało %s, aby nauczyć się tej umiejętności)
-ui_explanation_agility|Zwinność: Za każdy przyznany punkt dostajesz pięć punktów broni i zwiększoną szybkość ataku o 0,5%. Poniższe umiejętności nie mogą być wyższe niż 1/3 punktów zwinności: Mistrzostwo broni, Tarcza, Atletyka, Jeździectwo, Łucznictwo Konne, Łupienie.
+; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
 ui_retreated_battle|%s zostało skierowanych.
 ui_riding_skill_not_adequate_to_mount|(Umiejętność jeździecka za niska)
 ui_camp|Akcja 
@@ -56,8 +56,8 @@ ui_crouch|Kucanie
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Jesteś pewny, że chcesz zaimportować tę postać?
 ui_explanation_strength|Siła: Każdy punkt dodaje +1 do punktów życia. Następujące umiejętności nie mogą przekroczyć 1/3 siły: Żelazna Skóra, Potężny Cios, Potężny rzut, Siła naciągu.
-ui_explanation_intelligence|Inteligencja: Każdy punkt daje Ci dodatkowy punkt umiejętności. Następujące umiejętności nie mogą przekroczyć 1/3 Charyzmy: Szkolenie, Tropienie, Taktyka, Wyszukiwanie ścieżki, Orientacja w Terenie, Zarządzanie Ekwipunkiem, Opatrywanie Ran, Chirurgia, Pierwsza Pomoc, Inżynieria, Perswazja.
-ui_explanation_charisma|Charyzma: Każdy punkt zwiększa limit oddziału o +1. Następujące umiejętności nie mogą przekroczyć 1/3 Charyzmy: Zarządzanie więźniami, Przywództwo, Handel.
+; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
+; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Zadano %d punktów obrazżeń.
 ui_mission_losses_killed|zabito:
 ui_party_losses|%s  : %d ogłuszonych --- %d zabitych z %d.
@@ -112,7 +112,7 @@ ui_order_button_advance|Do przodu o 10 kroków
 ui_order_button_fall_back|Cofnąć się o 10 kroków
 ui_order_button_spread_out|Rozproszyć się
 ui_order_button_stand_closer|Zgrupować się.
-ui_order_button_mount_horses|Dosiąść koni
+ui_order_button_mount_horses|Dosiądź
 ui_order_button_dismount|Zsiądź
 ui_order_button_hold_fire|Wstrzymać Ogień
 ui_order_button_fire_at_will|Strzelać bez rozkazu
@@ -148,3 +148,5 @@ ui_str_hear_me|%s, słuchajcie mnie!
 ui_return|Powrót
 ui_factions|Frakcje
 ui_troop_upgrades|Szczegóły oddziału
+; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
+; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)

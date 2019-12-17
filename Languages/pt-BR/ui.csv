@@ -1,7 +1,7 @@
 ui_at_learning_limit|(ao limite de aprendizado para esta raça)
 ui_not_enough_skill_points_to_learn|(pontos de habilidade insuficientes para aprender)
 ui_not_enough_attributetype_to_learn_this_skill|(%s insuficientes para aprender essa habilidade)
-ui_explanation_agility|Agilidade: Cada ponto lhe fornece 5 pontos em armamentos e aumenta a velocidade dos armamentos em 0.5%. As seguintes habilidades não podem ser desenvolvidas ao passo de 1/3 de Agilidade: Mestre-de-Armas, Escudo, Atletismo, Equitação, Tiro à Cavalo e Saques.
+; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
 ui_retreated_battle|%s foi encaminhado.
 ui_riding_skill_not_adequate_to_mount|(Habilidade em montaria muito baixa)
 ui_camp|Ações
@@ -56,8 +56,8 @@ ui_crouch|Agachar
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Você tem certeza que deseja importar o personagem?
 ui_explanation_strength|Força: Cada ponto adiciona +1 para Pontos de Vida. As seguintes habilidades não podem ser desenvolvidas além de 1/3 de Força: Pele de Ferro, Poder de Ataque, Poder de Arremesso, Poder de Arco.
-ui_explanation_intelligence|Inteligência: Cada ponto de Inteligência imediatamente adiciona um ponto extra de habilidade. As seguintes habilidades não podem ser desenvolvidas além de 1/3 de Inteligência: Treineiro, Rastreamento, Táticas, Navegação, Reconhecimento, Administração de Inventário, Tratamento de Feridas, Cirurgia, Primeiros Socorros, Engenharia, Persuasão.
-ui_explanation_charisma|Carisma: Cada ponto aumenta o tamanho de seu grupo em +1. As seguintes habilidades não podem ser desenvolvidas além de 1/3 de Carisma: Gerenciamento de Prisioneiros, Liderança, Comércio.
+; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
+; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Causou %d de dano.
 ui_mission_losses_killed|Matou :
 ui_party_losses|%s : %d feridos. --- %d de %d mortos. 
@@ -112,7 +112,7 @@ ui_order_button_advance|Avançar dez passos
 ui_order_button_fall_back|Recuar dez passos
 ui_order_button_spread_out|Espalhem-se
 ui_order_button_stand_closer|Aproximem-se
-ui_order_button_mount_horses|Montar cavalos
+ui_order_button_mount_horses|Montar
 ui_order_button_dismount|Desmontar
 ui_order_button_hold_fire|Cessar fogo
 ui_order_button_fire_at_will|Atirar à vontade
@@ -148,3 +148,5 @@ ui_str_hear_me|%s, escutem-me !
 ui_return|Retornar
 ui_factions|Facções
 ui_troop_upgrades|Melhorias de Tropa
+; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
+; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)

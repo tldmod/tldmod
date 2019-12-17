@@ -1,7 +1,7 @@
 ui_at_learning_limit|(na hranici pre túto rasu)
 ui_not_enough_skill_points_to_learn|(nedostatok bodov schopnosti)
 ui_not_enough_attributetype_to_learn_this_skill|(nedostatok %s pre túto schopnosť)
-ui_explanation_agility|Obratnosť: Každý bod ti dá päť bodov zbraní a zvyšuje rychlosť zbrane o 0,5%. Následujúce schopnosti nemôžu byť zvýšené nad 1/3 Obratnosti: Majter zbrane, Štít, Atletika, Jazdectvo, Streľba zo sedla, Koristenie
+; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
 ui_retreated_battle|%s zbehlo
 ui_riding_skill_not_adequate_to_mount|(Jazdecká schopnosť príliš nízka)
 ui_camp|Činnosti
@@ -56,8 +56,8 @@ ui_crouch|Drepnúť si
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Si si istý, že chceš previesť túto postavu?
 ui_explanation_strength|Sila: Každý bod ti pridáva +1 bodov života. Následujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnoty Sily: Valivuk, Mocný úder, Mocný vrh, Sila napnutia tetivy
-ui_explanation_intelligence|Bystrosť: Každý bod bystrosti ti okamžité dá tiež jeden voľný bod pre schopnosti. Následujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnoty Bystrosti: Cvičiteľ, Stopovanie, Taktika, Cestovanie, Pozorovanie, Veľkosť inventára, Chirurgia, Prvá pomoc, Staviteľ, Presviedčanie
-ui_explanation_charisma|Charizma: každý bod charizmy navyšuje vrchnú hranicu veľkosti tvojej družiny +1. Následujúce schopnosti nemôžu byť velepšené nad 1/3 hodnoty Charizmy: Väzenie, Vodcovstvo,  Obchod
+; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
+; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Spôsobil si %d poškodenia.
 ui_mission_losses_killed|zabitých :
 ui_party_losses|%s : %d  ranených --- %d zabitých z %d.
@@ -112,7 +112,7 @@ ui_order_button_advance|Postup o desať krokov vpred!
 ui_order_button_fall_back|Ústup od desať krokov!
 ui_order_button_spread_out|Rozptýliť!
 ui_order_button_stand_closer|Zomknúť!
-ui_order_button_mount_horses|Do sediel!
+ui_order_button_mount_horses|Nasadnúť
 ui_order_button_dismount|Zosadnúť
 ui_order_button_hold_fire|Zastaviť streľbu
 ui_order_button_fire_at_will|Voľná streľba
@@ -148,3 +148,5 @@ ui_str_hear_me|%s, počúvajte!
 ui_return|Návrat
 ui_factions|Frakcie
 ui_troop_upgrades|Vylepšenia vojakov
+; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
+; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)

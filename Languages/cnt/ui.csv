@@ -1,7 +1,7 @@
 ui_at_learning_limit|(達 到 此 種 族 的 學 習 限 度 )
 ui_not_enough_skill_points_to_learn|(沒 有 足 夠 的 技 能 點 來 學 習 )
 ui_not_enough_attributetype_to_learn_this_skill|(沒 有 足 夠 的 %s來 學 習 這 個 技 能 )
-ui_explanation_agility|敏 捷 ： 每 一 點 增 加 5點 武 器 熟 練 度 ， 並 且 提 高 武 器 速 度 0.5%。 下 列 技 能 不 能 超 過 敏 捷 的 1/3： 盾 防 ， 跑 動 ， 武 器 掌 握 ， 騎 術 ， 騎 射 ， 掠 奪 。 
+; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
 ui_retreated_battle|已 經 圍 住 %s 。 
 ui_riding_skill_not_adequate_to_mount|(騎 術 太 低 )
 ui_camp|行 動 
@@ -56,8 +56,8 @@ ui_crouch|蹲下
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|您確定要導入角色？
 ui_explanation_strength|力 量：每 一 點 使 你 的 生 命 上 限 +1。以 下 技 能 不 可 超 過 力 量 的 三 分 之 一：鐵 骨，強 擊，強 擲，強 弓。
-ui_explanation_intelligence|智 力：每 一 點 給 予 你 額 外 一 點 技 能 點。以 下 技 能 不 可 超 過 智 力 的 三 分 之 一：教 練，跟 蹤，戰 術，嚮 導，偵 察，物 品 管 理，療 傷，手 術，急 救，工 程 學，說 服 力。
-ui_explanation_charisma|魅 力：每 一 點 使 你 的 隊 伍 上 限 +1。以 下 技 能 不 可 超 過 魅 力 的 三 分 之 一：俘 虜 管 理，統 御，交 易。
+; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
+; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|造成%d點傷害
 ui_mission_losses_killed|被殺
 ui_party_losses|%s :%d負傷 --- %d殺死了%d
@@ -112,7 +112,7 @@ ui_order_button_advance|前進十步
 ui_order_button_fall_back|後退十步
 ui_order_button_spread_out|分散
 ui_order_button_stand_closer|集中一起
-ui_order_button_mount_horses|上馬
+ui_order_button_mount_horses|騎 乘 
 ui_order_button_dismount|下 馬
 ui_order_button_hold_fire|停火
 ui_order_button_fire_at_will|自由射擊
@@ -148,3 +148,5 @@ ui_str_hear_me|%s，聽我講！
 ui_return|返回
 ui_factions| 陣 營 
 ui_troop_upgrades|兵 種 升 級
+; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
+; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)
