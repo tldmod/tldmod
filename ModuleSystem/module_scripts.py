@@ -25216,7 +25216,8 @@ command_cursor_scripts = [
     	(eq, ":type", spt_patrol),
     	(store_faction_of_party, ":patrol_fac", ":patrols"),
     	(eq, ":patrol_fac", ":attacking_faction"),
-    	(call_script, "script_accompany_marshall", ":patrols", ":quest_target_troop"),
+		(call_script, "script_party_set_ai_state", ":patrols", spai_accompanying_army, ":quest_target_troop"),
+		(party_set_ai_initiative, ":patrols", 10), #don't react to random enemies much
     (try_end),
 
  	#(quest_get_slot, reg65, "qst_guardian_party_quest", slot_quest_current_state),
