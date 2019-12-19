@@ -507,7 +507,7 @@ scenes = [
 ("lebennin_coast_2" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x000000003c6005000006cdb00000339200005bd50000739d",[],[],"New_outer_terrain_seaside_north_1"), #non_random_coast 2
 ("lebennin_coast_3" ,sf_generate|sf_randomize,"none","none",(0,0),( 100, 100),-100.0,"0x000000003c6005000006cdb000007a7400005bd50000739d",[],[],"New_outer_terrain_seaside_north_1"), #randomized coast
 ("lebennin_coast_4" ,sf_generate|sf_randomize,"none","none",(0,0),( 100, 100),-100.0,"0x000000003c6005000006cdb00000339200005bd50000739d",[],[],"New_outer_terrain_seaside_north_1"), #randomized coast
-("pelennor_1" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x00000000338009b500058d63000062dc00005bd50000739d",[],[],"New_outer_terrain_tirith_1"), #Minas Tirith in the distance
+("pelennor_1" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x00000003300005000009c5a20000132600005bd50000739d",[],[],"New_outer_terrain_tirith_1"), #Minas Tirith in the distance
 ("pelennor_2" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x00000000338009b500058d63000062dc00005bd50000739d",[],[],"New_outer_terrain_tirith_1"), #Minas Tirith in the distance
 ("village_gondor_battlefield_1" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x00000000a00005000006118400005c3000004b3400005792",[],[],"outer_mountains2south"), # Gondor village
 ("village_gondor_battlefield_2" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x00000000a00005000006118400005c3000004b3400005792",[],[],"outer_mountains2south"), # Gondor village
