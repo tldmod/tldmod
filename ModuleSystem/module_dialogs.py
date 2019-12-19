@@ -2833,7 +2833,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (try_end),
     ],
 "{s5}", "lord_defeat_lord_complete",[
-    (call_script, "script_finish_quest", "qst_blank_quest_04", 100),
+    (call_script, "script_finish_quest", "qst_blank_quest_06", 100),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
     ]],
 
@@ -2855,7 +2855,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 [anyone,"lord_start", [
     (check_quest_active, "qst_blank_quest_06"),
-    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
+    (quest_slot_eq, "qst_blank_quest_06", slot_quest_object_troop,"$g_talk_troop"),
     (check_quest_failed, "qst_blank_quest_06"),
     (quest_slot_eq, "qst_blank_quest_06", slot_quest_object_troop,"$g_talk_troop"),],
 "I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "lord_target_lord_failed",[
