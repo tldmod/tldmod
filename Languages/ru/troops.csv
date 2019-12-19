@@ -464,62 +464,62 @@ trp_dismounted_elite_skirmisher_of_rohan|Отборный застрельщик
 trp_dismounted_elite_skirmisher_of_rohan_pl|Отборные застрельщики Рохана
 trp_dismounted_thengel_guard_of_rohan|Роханский воин гвардии Тенгела
 trp_dismounted_thengel_guard_of_rohan_pl|Роханские воины гвардии Тенгела
-trp_harad_desert_warrior|Харадский новобранец
-trp_harad_desert_warrior_pl|Харадские новобранцы
-trp_harad_infantry|Харадский лёгкий пехотинец
-trp_harad_infantry_pl|Харадские лёгкие пехотинцы
-trp_harad_veteran_infantry|Харадский копейщик
-trp_harad_veteran_infantry_pl|Харадские копейщики
-trp_harad_tiger_guard|Воин тигриной гвардии
-trp_harad_tiger_guard_pl|Воины тигриной гвардии
-trp_harad_swordsman|Харадский мечник
-trp_harad_swordsman_pl|Харадские мечники
-trp_harad_lion_guard|Воин львиной гвардии
-trp_harad_lion_guard_pl|Воины львиной гвардии
-trp_harad_skirmisher|Харадский охотник
-trp_harad_skirmisher_pl|Харадские охотники
-trp_harad_archer|Харадский лучник
-trp_harad_archer_pl|Харадские лучники
-trp_harad_eagle_guard|Воин орлиной гвардии
-trp_harad_eagle_guard_pl|Воины орлиной гвардии
-trp_harondor_scout|Харондорский разведчик
-trp_harondor_scout_pl|Харондорские разведчики
-trp_harondor_rider|Харондорский всадник
-trp_harondor_rider_pl|Харондорские всадники
-trp_harondor_light_cavalry|Харондорский лёгкий конник
-trp_harondor_light_cavalry_pl|Харондорские лёгкие конники
-trp_fang_heavy_cavalry|Рыцарь Золотой Змеи
-trp_fang_heavy_cavalry_pl|Рыцари Золотой Змеи
-trp_harad_horse_archer|Харондорский застрельщик
-trp_harad_horse_archer_pl|Харондорские застрельщики
-trp_black_snake_horse_archer|Харондорский конный лучник
-trp_black_snake_horse_archer_pl|Харондорские конные лучники
-trp_gold_serpent_horse_archer|Конный лучник Чёрной змеи
-trp_gold_serpent_horse_archer_pl|Конные лучники Чёрной змеи
-trp_far_harad_tribesman|Дальнехарадский воин племени
-trp_far_harad_tribesman_pl|Дальнехарадские воины племени
-trp_far_harad_champion|Дальнехарадский прославленный воин
-trp_far_harad_champion_pl|Дальнехарадские прославленные воины
-trp_far_harad_panther_guard|Воин гвардии пантеры
-trp_far_harad_panther_guard_pl|Воины гвардии пантеры
-trp_dunnish_wildman|Дунландский дикарь
-trp_dunnish_wildman_pl|Дунландские дикари
-trp_dunnish_warrior|Дунландский воин
-trp_dunnish_warrior_pl|Дунландские воины
-trp_dunnish_pikeman|Дунландский пикинёр
-trp_dunnish_pikeman_pl|Дунландские пикинёры
-trp_dunnish_veteran_pikeman|Дунландский опытный пикинёр
-trp_dunnish_veteran_pikeman_pl|Дунландские опытные пикинёры
-trp_dunnish_raven_rider|Дунландский вороний всадник
-trp_dunnish_raven_rider_pl|Дунландские вороньи всадники
-trp_dunnish_vet_warrior|Дунландский воин-ветеран
-trp_dunnish_vet_warrior_pl|Дунландские воины-ветераны
-trp_dunnish_wolf_warrior|Дунландский волчий воин
-trp_dunnish_wolf_warrior_pl|Дунландские волчьи воины
-trp_dunnish_wolf_guard|Дунландский волчий страж
-trp_dunnish_wolf_guard_pl|Дунландские волчьи стражи
-trp_dunnish_chieftan|Дунландский вороний всадник
-trp_dunnish_chieftan_pl|Дунландские вороньи всадники
+trp_i1_harad_levy|Харадский новобранец
+trp_i1_harad_levy_pl|Харадские новобранцы
+trp_i3_harad_infantry|Харадский лёгкий пехотинец
+trp_i3_harad_infantry_pl|Харадские лёгкие пехотинцы
+trp_i4_harad_spearman|Харадский копейщик
+trp_i4_harad_spearman_pl|Харадские копейщики
+trp_i5_harad_tiger_guard|Воин тигриной гвардии
+trp_i5_harad_tiger_guard_pl|Воины тигриной гвардии
+trp_i4_harad_swordsman|Харадский мечник
+trp_i4_harad_swordsman_pl|Харадские мечники
+trp_i5_harad_lion_guard|Воин львиной гвардии
+trp_i5_harad_lion_guard_pl|Воины львиной гвардии
+trp_a3_harad_hunter|Харадский охотник
+trp_a3_harad_hunter_pl|Харадские охотники
+trp_a4_harad_archer|Харадский лучник
+trp_a4_harad_archer_pl|Харадские лучники
+trp_a5_harad_eagle_guard|Воин орлиной гвардии
+trp_a5_harad_eagle_guard_pl|Воины орлиной гвардии
+trp_c2_harondor_scout|Харондорский разведчик
+trp_c2_harondor_scout_pl|Харондорские разведчики
+trp_c3_harondor_rider|Харондорский всадник
+trp_c3_harondor_rider_pl|Харондорские всадники
+trp_c4_harondor_light_cavalry|Харондорский лёгкий конник
+trp_c4_harondor_light_cavalry_pl|Харондорские лёгкие конники
+trp_c5_harondor_serpent_knight|Рыцарь Золотой Змеи
+trp_c5_harondor_serpent_knight_pl|Рыцари Золотой Змеи
+trp_ac3_harondor_skirmisher|Харондорский застрельщик
+trp_ac3_harondor_skirmisher_pl|Харондорские застрельщики
+trp_ac4_harondor_horse_archer|Харондорский конный лучник
+trp_ac4_harondor_horse_archer_pl|Харондорские конные лучники
+trp_ac5_harondor_black_snake|Конный лучник Чёрной змеи
+trp_ac5_harondor_black_snake_pl|Конные лучники Чёрной змеи
+trp_i2_far_harad_tribesman|Дальнехарадский воин племени
+trp_i2_far_harad_tribesman_pl|Дальнехарадские воины племени
+trp_i4_far_harad_champion|Дальнехарадский прославленный воин
+trp_i4_far_harad_champion_pl|Дальнехарадские прославленные воины
+trp_i5_far_harad_panther_guard|Воин гвардии пантеры
+trp_i5_far_harad_panther_guard_pl|Воины гвардии пантеры
+trp_i1_dun_wildman|Дунландский дикарь
+trp_i1_dun_wildman_pl|Дунландские дикари
+trp_i2_dun_warrior|Дунландский воин
+trp_i2_dun_warrior_pl|Дунландские воины
+trp_i3_dun_pikeman|Дунландский пикинёр
+trp_i3_dun_pikeman_pl|Дунландские пикинёры
+trp_i4_dun_vet_pikeman|Дунландский опытный пикинёр
+trp_i4_dun_vet_pikeman_pl|Дунландские опытные пикинёры
+trp_ac2_dun_crebain_rider|Дунландский вороний всадник
+trp_ac2_dun_crebain_rider_pl|Дунландские вороньи всадники
+trp_i3_dun_vet_warrior|Дунландский воин-ветеран
+trp_i3_dun_vet_warrior_pl|Дунландские воины-ветераны
+trp_i4_dun_wolf_warrior|Дунландский волчий воин
+trp_i4_dun_wolf_warrior_pl|Дунландские волчьи воины
+trp_i5_dun_wolf_guard|Дунландский волчий страж
+trp_i5_dun_wolf_guard_pl|Дунландские волчьи стражи
+trp_ac4_dun_raven_rider|Дунландский вороний всадник
+trp_ac4_dun_raven_rider_pl|Дунландские вороньи всадники
 ; trp_i1_khand_bondsman|Khand Bondsman
 ; trp_i1_khand_bondsman_pl|Khand Bondsmen
 ; trp_i2_khand_pit_dog|Khand Pit Dog
@@ -811,8 +811,8 @@ trp_black_numenorean_captain|Чёрный нуменорец-полководе�
 trp_black_numenorean_captain_pl|Чёрные нуменорцы-полководец
 trp_black_numenorean_lieutenant|Чёрный нуменорец-сотник
 trp_black_numenorean_lieutenant_pl|Чёрный нуменорецы-сотники
-trp_dunnish_night_wolf|Дунландский ночной волк
-trp_dunnish_night_wolf_pl|Дунландские ночные волки
+trp_a5_dun_night_wolf|Дунландский ночной волк
+trp_a5_dun_night_wolf_pl|Дунландские ночные волки
 trp_dunnish_lieutenant|Дунландский верховный вождь
 trp_dunnish_lieutenant_pl|Дунландские верховные вожди
 trp_goblin_chieftain|Гоблинский вождь

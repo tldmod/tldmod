@@ -464,62 +464,62 @@ trp_dismounted_elite_skirmisher_of_rohan|Lutador Desmontado de Elite de Rohan
 trp_dismounted_elite_skirmisher_of_rohan_pl|Lutadores desmontados de Elite de Rohan
 trp_dismounted_thengel_guard_of_rohan|Guarda Thengel Desmontado de Rohan
 trp_dismounted_thengel_guard_of_rohan_pl|Guardas Thengel Desmontados de Rohan
-trp_harad_desert_warrior|Guerreiro de Harad
-trp_harad_desert_warrior_pl|Guerreiros de Harad
-trp_harad_infantry|Soldado de Infantaria Leve de Harad
-trp_harad_infantry_pl|Infantaria Leve de Harad
-trp_harad_veteran_infantry|Soldado de Infantaria de Harad
-trp_harad_veteran_infantry_pl|Infantaria de Harad 
-trp_harad_tiger_guard|Guarda Tigre
-trp_harad_tiger_guard_pl|Guardas Tigre
-trp_harad_swordsman|Espadachim de Harad 
-trp_harad_swordsman_pl|Espadachins de Harad 
-trp_harad_lion_guard|Guarda Leão
-trp_harad_lion_guard_pl|Guardas Leão
-trp_harad_skirmisher|Caçador de Harad
-trp_harad_skirmisher_pl|Caçadores de Harad
-trp_harad_archer|Arqueiro de Harad 
-trp_harad_archer_pl|Arqueiros de Harad 
-trp_harad_eagle_guard|Guarda Águia
-trp_harad_eagle_guard_pl|Guardas Águia
-trp_harondor_scout|Batedor de Harondor 
-trp_harondor_scout_pl|Batedores de Harondor 
-trp_harondor_rider|Cavaleiro de Harondor 
-trp_harondor_rider_pl|Cavaleiros de Harondor 
-trp_harondor_light_cavalry|Cavaleiro Leve de Harondor
-trp_harondor_light_cavalry_pl|Cavalaria Leve de Harondor
-trp_fang_heavy_cavalry|Cavaleiro da Serpente de Ouro
-trp_fang_heavy_cavalry_pl|Cavaleiros da Serpente de Ouro
-trp_harad_horse_archer|Escaramuçador de Harondor
-trp_harad_horse_archer_pl|Escaramuçadores de Harondor
-trp_black_snake_horse_archer|Arqueiro á Cavalo de Harondor
-trp_black_snake_horse_archer_pl|Arqueiros á Cavalo de Harondor
-trp_gold_serpent_horse_archer|Arqueiro Montado da Serpente Negra
-trp_gold_serpent_horse_archer_pl|Arqueiros Montados da Serpente Negra
-trp_far_harad_tribesman|Tribal de Distante Harad
-trp_far_harad_tribesman_pl|Tribais de Distante Harad
-trp_far_harad_champion|Campeão de Distante Harad
-trp_far_harad_champion_pl|Campeões de Distante Harad
-trp_far_harad_panther_guard|Guarda Pantera
-trp_far_harad_panther_guard_pl|Guardas Pantera
-trp_dunnish_wildman|Selvagem da Terra Parda
-trp_dunnish_wildman_pl|Selvagens da Terra Parda
-trp_dunnish_warrior|Guerreiro da Terra Parda
-trp_dunnish_warrior_pl|Guerreiros da Terra Parda
-trp_dunnish_pikeman|Lanceiro da Terra Parda
-trp_dunnish_pikeman_pl|Lanceiros da Terra Parda
-trp_dunnish_veteran_pikeman|Lanceiro Veterano da Terra Parda
-trp_dunnish_veteran_pikeman_pl|Lanceiros Veteranos da Terra Parda
-trp_dunnish_raven_rider|Cavaleiro de Crebain Dunnish
-trp_dunnish_raven_rider_pl|Cavaleiros de Crebain Dunnish
-trp_dunnish_vet_warrior|Guerreiro Veterano da Terra Parda
-trp_dunnish_vet_warrior_pl|Guerreiros Veteranos da Terra Parda
-trp_dunnish_wolf_warrior|Guerreiro Lobo da Terra Parda
-trp_dunnish_wolf_warrior_pl|Guerreiros Lobo da Terra Parda
-trp_dunnish_wolf_guard|Guarda Lobo da Terra Parda
-trp_dunnish_wolf_guard_pl|Guardas Lobo da Terra Parda
-trp_dunnish_chieftan|Cavaleiro Corvo da Terra Parda
-trp_dunnish_chieftan_pl|Cavaleiros Corvo da Terra Parda
+trp_i1_harad_levy|Guerreiro de Harad
+trp_i1_harad_levy_pl|Guerreiros de Harad
+trp_i3_harad_infantry|Soldado de Infantaria Leve de Harad
+trp_i3_harad_infantry_pl|Infantaria Leve de Harad
+trp_i4_harad_spearman|Soldado de Infantaria de Harad
+trp_i4_harad_spearman_pl|Infantaria de Harad 
+trp_i5_harad_tiger_guard|Guarda Tigre
+trp_i5_harad_tiger_guard_pl|Guardas Tigre
+trp_i4_harad_swordsman|Espadachim de Harad 
+trp_i4_harad_swordsman_pl|Espadachins de Harad 
+trp_i5_harad_lion_guard|Guarda Leão
+trp_i5_harad_lion_guard_pl|Guardas Leão
+trp_a3_harad_hunter|Caçador de Harad
+trp_a3_harad_hunter_pl|Caçadores de Harad
+trp_a4_harad_archer|Arqueiro de Harad 
+trp_a4_harad_archer_pl|Arqueiros de Harad 
+trp_a5_harad_eagle_guard|Guarda Águia
+trp_a5_harad_eagle_guard_pl|Guardas Águia
+trp_c2_harondor_scout|Batedor de Harondor 
+trp_c2_harondor_scout_pl|Batedores de Harondor 
+trp_c3_harondor_rider|Cavaleiro de Harondor 
+trp_c3_harondor_rider_pl|Cavaleiros de Harondor 
+trp_c4_harondor_light_cavalry|Cavaleiro Leve de Harondor
+trp_c4_harondor_light_cavalry_pl|Cavalaria Leve de Harondor
+trp_c5_harondor_serpent_knight|Cavaleiro da Serpente de Ouro
+trp_c5_harondor_serpent_knight_pl|Cavaleiros da Serpente de Ouro
+trp_ac3_harondor_skirmisher|Escaramuçador de Harondor
+trp_ac3_harondor_skirmisher_pl|Escaramuçadores de Harondor
+trp_ac4_harondor_horse_archer|Arqueiro á Cavalo de Harondor
+trp_ac4_harondor_horse_archer_pl|Arqueiros á Cavalo de Harondor
+trp_ac5_harondor_black_snake|Arqueiro Montado da Serpente Negra
+trp_ac5_harondor_black_snake_pl|Arqueiros Montados da Serpente Negra
+trp_i2_far_harad_tribesman|Tribal de Distante Harad
+trp_i2_far_harad_tribesman_pl|Tribais de Distante Harad
+trp_i4_far_harad_champion|Campeão de Distante Harad
+trp_i4_far_harad_champion_pl|Campeões de Distante Harad
+trp_i5_far_harad_panther_guard|Guarda Pantera
+trp_i5_far_harad_panther_guard_pl|Guardas Pantera
+trp_i1_dun_wildman|Selvagem da Terra Parda
+trp_i1_dun_wildman_pl|Selvagens da Terra Parda
+trp_i2_dun_warrior|Guerreiro da Terra Parda
+trp_i2_dun_warrior_pl|Guerreiros da Terra Parda
+trp_i3_dun_pikeman|Lanceiro da Terra Parda
+trp_i3_dun_pikeman_pl|Lanceiros da Terra Parda
+trp_i4_dun_vet_pikeman|Lanceiro Veterano da Terra Parda
+trp_i4_dun_vet_pikeman_pl|Lanceiros Veteranos da Terra Parda
+trp_ac2_dun_crebain_rider|Cavaleiro de Crebain Dunnish
+trp_ac2_dun_crebain_rider_pl|Cavaleiros de Crebain Dunnish
+trp_i3_dun_vet_warrior|Guerreiro Veterano da Terra Parda
+trp_i3_dun_vet_warrior_pl|Guerreiros Veteranos da Terra Parda
+trp_i4_dun_wolf_warrior|Guerreiro Lobo da Terra Parda
+trp_i4_dun_wolf_warrior_pl|Guerreiros Lobo da Terra Parda
+trp_i5_dun_wolf_guard|Guarda Lobo da Terra Parda
+trp_i5_dun_wolf_guard_pl|Guardas Lobo da Terra Parda
+trp_ac4_dun_raven_rider|Cavaleiro Corvo da Terra Parda
+trp_ac4_dun_raven_rider_pl|Cavaleiros Corvo da Terra Parda
 ; trp_i1_khand_bondsman|Khand Bondsman
 ; trp_i1_khand_bondsman_pl|Khand Bondsmen
 ; trp_i2_khand_pit_dog|Khand Pit Dog
@@ -811,8 +811,8 @@ trp_black_numenorean_captain|Numenoriano Negro Capitão
 trp_black_numenorean_captain_pl|Numenorianos Negros Capitães
 trp_black_numenorean_lieutenant|Numenoriano Negro Tenente
 trp_black_numenorean_lieutenant_pl|Numenorianos Negros Tenentes
-trp_dunnish_night_wolf|Lobo da Noite Dunland
-trp_dunnish_night_wolf_pl|Lobos da Noite Dunland
+trp_a5_dun_night_wolf|Lobo da Noite Dunland
+trp_a5_dun_night_wolf_pl|Lobos da Noite Dunland
 trp_dunnish_lieutenant|da Terra Parda Hetman
 trp_dunnish_lieutenant_pl|da Terra Parda Hetmen
 trp_goblin_chieftain|Goblin Chefe

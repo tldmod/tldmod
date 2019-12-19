@@ -464,62 +464,62 @@ trp_dismounted_elite_skirmisher_of_rohan|로한 정예 척후병
 trp_dismounted_elite_skirmisher_of_rohan_pl|로한 정예 척후병
 trp_dismounted_thengel_guard_of_rohan|로한 셍겔 근위대
 trp_dismounted_thengel_guard_of_rohan_pl|로한 셍겔 근위대
-trp_harad_desert_warrior|하라드 징집병
-trp_harad_desert_warrior_pl|하라드 징집병
-trp_harad_infantry|하라드 경보병
-trp_harad_infantry_pl|하라드 경보병
-trp_harad_veteran_infantry|하라드 창병
-trp_harad_veteran_infantry_pl|하라드 창병
-trp_harad_tiger_guard|하라드 호랑이 근위 보병
-trp_harad_tiger_guard_pl|하라드 호랑이 근위 보병
-trp_harad_swordsman|하라드 검사
-trp_harad_swordsman_pl|하라드 검사
-trp_harad_lion_guard|하라드 사자 근위 검사
-trp_harad_lion_guard_pl|하라드 사자 근위 검사
-; trp_harad_skirmisher|Harad Hunter
-; trp_harad_skirmisher_pl|Harad Hunters
-trp_harad_archer|하라드 궁수
-trp_harad_archer_pl|하라드 궁수
-trp_harad_eagle_guard|하라드 독수리 근위 궁수
-trp_harad_eagle_guard_pl|하라드 독수리 근위 궁수
-trp_harondor_scout|하론도르 순찰자
-trp_harondor_scout_pl|하론도르 순찰자
-trp_harondor_rider|하론도르 기마대
-trp_harondor_rider_pl|하론도르 기마대
-trp_harondor_light_cavalry|하론도르 경기병
-trp_harondor_light_cavalry_pl|하론도르 경기병
-; trp_fang_heavy_cavalry|Gold Serpent Knight
-; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
-; trp_harad_horse_archer|Harondor Skirmisher
-; trp_harad_horse_archer_pl|Harondor Skirmishers
-; trp_black_snake_horse_archer|Harondor Horse Archer
-; trp_black_snake_horse_archer_pl|Harondor Horse Archers
-trp_gold_serpent_horse_archer|하라드 흑뱀 궁기병
-trp_gold_serpent_horse_archer_pl|하라드 흑뱀 궁기병
-trp_far_harad_tribesman|남끝 하라드 부족민
-trp_far_harad_tribesman_pl|남끝 하라드 부족민
-trp_far_harad_champion|남끝 하라드 챔피언
-trp_far_harad_champion_pl|남끝 하라드 챔피언
-trp_far_harad_panther_guard|표범 근위대
-trp_far_harad_panther_guard_pl|표범 근위대
-trp_dunnish_wildman|던랜드 야만인
-trp_dunnish_wildman_pl|던랜드 야만인
-trp_dunnish_warrior|던랜드 전사
-trp_dunnish_warrior_pl|던랜드 전사
-trp_dunnish_pikeman|던랜드 장창병
-trp_dunnish_pikeman_pl|던랜드 장창병
-trp_dunnish_veteran_pikeman|던랜드 고참 장창병
-trp_dunnish_veteran_pikeman_pl|던랜드 고참 장창병
-; trp_dunnish_raven_rider|Dunnish Crebain Rider
-; trp_dunnish_raven_rider_pl|Dunnish Crebain Riders
-trp_dunnish_vet_warrior|던랜드 고참 전사
-trp_dunnish_vet_warrior_pl|던랜드 고참 전사
-trp_dunnish_wolf_warrior|던랜드 늑대 전사
-trp_dunnish_wolf_warrior_pl|던랜드 늑대 전사
-trp_dunnish_wolf_guard|던랜드 늑대 근위대
-trp_dunnish_wolf_guard_pl|던랜드 늑대 근위대
-trp_dunnish_chieftan|던랜드 큰까마귀 기마대
-trp_dunnish_chieftan_pl|던랜드 큰까마귀 기맏
+trp_i1_harad_levy|하라드 징집병
+trp_i1_harad_levy_pl|하라드 징집병
+trp_i3_harad_infantry|하라드 경보병
+trp_i3_harad_infantry_pl|하라드 경보병
+trp_i4_harad_spearman|하라드 창병
+trp_i4_harad_spearman_pl|하라드 창병
+trp_i5_harad_tiger_guard|하라드 호랑이 근위 보병
+trp_i5_harad_tiger_guard_pl|하라드 호랑이 근위 보병
+trp_i4_harad_swordsman|하라드 검사
+trp_i4_harad_swordsman_pl|하라드 검사
+trp_i5_harad_lion_guard|하라드 사자 근위 검사
+trp_i5_harad_lion_guard_pl|하라드 사자 근위 검사
+; trp_a3_harad_hunter|Harad Hunter
+; trp_a3_harad_hunter_pl|Harad Hunters
+trp_a4_harad_archer|하라드 궁수
+trp_a4_harad_archer_pl|하라드 궁수
+trp_a5_harad_eagle_guard|하라드 독수리 근위 궁수
+trp_a5_harad_eagle_guard_pl|하라드 독수리 근위 궁수
+trp_c2_harondor_scout|하론도르 순찰자
+trp_c2_harondor_scout_pl|하론도르 순찰자
+trp_c3_harondor_rider|하론도르 기마대
+trp_c3_harondor_rider_pl|하론도르 기마대
+trp_c4_harondor_light_cavalry|하론도르 경기병
+trp_c4_harondor_light_cavalry_pl|하론도르 경기병
+; trp_c5_harondor_serpent_knight|Gold Serpent Knight
+; trp_c5_harondor_serpent_knight_pl|Gold Serpent Knights
+; trp_ac3_harondor_skirmisher|Harondor Skirmisher
+; trp_ac3_harondor_skirmisher_pl|Harondor Skirmishers
+; trp_ac4_harondor_horse_archer|Harondor Horse Archer
+; trp_ac4_harondor_horse_archer_pl|Harondor Horse Archers
+trp_ac5_harondor_black_snake|하라드 흑뱀 궁기병
+trp_ac5_harondor_black_snake_pl|하라드 흑뱀 궁기병
+trp_i2_far_harad_tribesman|남끝 하라드 부족민
+trp_i2_far_harad_tribesman_pl|남끝 하라드 부족민
+trp_i4_far_harad_champion|남끝 하라드 챔피언
+trp_i4_far_harad_champion_pl|남끝 하라드 챔피언
+trp_i5_far_harad_panther_guard|표범 근위대
+trp_i5_far_harad_panther_guard_pl|표범 근위대
+trp_i1_dun_wildman|던랜드 야만인
+trp_i1_dun_wildman_pl|던랜드 야만인
+trp_i2_dun_warrior|던랜드 전사
+trp_i2_dun_warrior_pl|던랜드 전사
+trp_i3_dun_pikeman|던랜드 장창병
+trp_i3_dun_pikeman_pl|던랜드 장창병
+trp_i4_dun_vet_pikeman|던랜드 고참 장창병
+trp_i4_dun_vet_pikeman_pl|던랜드 고참 장창병
+; trp_ac2_dun_crebain_rider|Dunnish Crebain Rider
+; trp_ac2_dun_crebain_rider_pl|Dunnish Crebain Riders
+trp_i3_dun_vet_warrior|던랜드 고참 전사
+trp_i3_dun_vet_warrior_pl|던랜드 고참 전사
+trp_i4_dun_wolf_warrior|던랜드 늑대 전사
+trp_i4_dun_wolf_warrior_pl|던랜드 늑대 전사
+trp_i5_dun_wolf_guard|던랜드 늑대 근위대
+trp_i5_dun_wolf_guard_pl|던랜드 늑대 근위대
+trp_ac4_dun_raven_rider|던랜드 큰까마귀 기마대
+trp_ac4_dun_raven_rider_pl|던랜드 큰까마귀 기맏
 ; trp_i1_khand_bondsman|Khand Bondsman
 ; trp_i1_khand_bondsman_pl|Khand Bondsmen
 ; trp_i2_khand_pit_dog|Khand Pit Dog
@@ -811,8 +811,8 @@ trp_black_numenorean_captain|검은 누메노르 대장
 trp_black_numenorean_captain_pl|검은 누메노르 대장
 trp_black_numenorean_lieutenant|검은 누메노르 부관
 trp_black_numenorean_lieutenant_pl|검은 누메노르 대장
-; trp_dunnish_night_wolf|Dunnish Night Wolf
-; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
+; trp_a5_dun_night_wolf|Dunnish Night Wolf
+; trp_a5_dun_night_wolf_pl|Dunnish Night Wolfs
 trp_dunnish_lieutenant|던랜드 단장
 trp_dunnish_lieutenant_pl|던랜드 단장
 trp_goblin_chieftain|고블린 부족장

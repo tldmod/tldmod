@@ -4114,7 +4114,7 @@ presentations = [
       (else_try),
         (eq, ":object", "$g_presentation_obj_item_select_3"),
         (assign, "$intro_presentation_stage", 33),
-        (call_script,"script_start_as_one", "trp_dunnish_wildman"),
+        (call_script,"script_start_as_one", "trp_i1_dun_wildman"),
         (jump_to_menu,"mnu_choose_gender"),
         (presentation_set_duration, 0),
       (try_end),

@@ -464,62 +464,62 @@ trp_dismounted_elite_skirmisher_of_rohan|Rohani talpas elit csatározó
 trp_dismounted_elite_skirmisher_of_rohan_pl|Rohani talpas elit csatározók
 trp_dismounted_thengel_guard_of_rohan|Rohani Thengel talpas őre
 trp_dismounted_thengel_guard_of_rohan_pl|Rohani Thengel talpas őrsége
-trp_harad_desert_warrior|Haradi sorkatona
-trp_harad_desert_warrior_pl|Haradi sorkatonaság
-trp_harad_infantry|Haradi könnyű gyalogos
-trp_harad_infantry_pl|Haradi könnyű gyalogság
-trp_harad_veteran_infantry|Haradi lándzsás
-trp_harad_veteran_infantry_pl|Haradi lándzsások
-trp_harad_tiger_guard|Tigris őr
-trp_harad_tiger_guard_pl|Tigris őrség
-trp_harad_swordsman|Haradi kardforgató
-trp_harad_swordsman_pl|Haradi kardforgatók
-trp_harad_lion_guard|Oroszlán őr
-trp_harad_lion_guard_pl|Oroszlán őrség
-trp_harad_skirmisher|Haradi vadász
-trp_harad_skirmisher_pl|Haradi vadászok
-trp_harad_archer|Haradi íjász
-trp_harad_archer_pl|Haradi íjászok
-trp_harad_eagle_guard|Sas őr
-trp_harad_eagle_guard_pl|Sas őrség
-trp_harondor_scout|Harondori felderítő
-trp_harondor_scout_pl|Harondori felderítők
-trp_harondor_rider|Harondori lovas
-trp_harondor_rider_pl|Harondori lovasság
-trp_harondor_light_cavalry|Harandori könnyűlovas
-trp_harondor_light_cavalry_pl|Harandori könnyűlovasság
-trp_fang_heavy_cavalry|Arany Kígyó lovag
-trp_fang_heavy_cavalry_pl|Arany Kígyó lovagok
-trp_harad_horse_archer|Harondori csatározó
-trp_harad_horse_archer_pl|Harondori csatározók
-trp_black_snake_horse_archer|Harondori lovasíjász
-trp_black_snake_horse_archer_pl|Harondori lovasíjászok
-trp_gold_serpent_horse_archer|Fekete Sikló lovasíjász
-trp_gold_serpent_horse_archer_pl|Fekete Sikló lovasíjászok
-trp_far_harad_tribesman|Messze-haradi törzstag
-trp_far_harad_tribesman_pl|Messze-haradi törzstagok
-trp_far_harad_champion|Messze-haradi bajnok
-trp_far_harad_champion_pl|Messze-haradi bajnokok
-trp_far_harad_panther_guard|Párduc őr
-trp_far_harad_panther_guard_pl|Párduc őrség
-trp_dunnish_wildman|Dún vadember
-trp_dunnish_wildman_pl|Dún vademberek
-trp_dunnish_warrior|Dún harcos
-trp_dunnish_warrior_pl|Dún harcosok
-trp_dunnish_pikeman|Dún pikás
-trp_dunnish_pikeman_pl|Dún pikások
-trp_dunnish_veteran_pikeman|Dún veterán pikás
-trp_dunnish_veteran_pikeman_pl|Dún veterán pikások
-trp_dunnish_raven_rider|Dún Crebain lovas
-trp_dunnish_raven_rider_pl|Dún Crebain lovasság
-trp_dunnish_vet_warrior|Dún veterán harcos
-trp_dunnish_vet_warrior_pl|Dún veterán harcosok
-trp_dunnish_wolf_warrior|Dún Farkasharcos
-trp_dunnish_wolf_warrior_pl|Dún Farkasharcosok
-trp_dunnish_wolf_guard|Dún Farkasőr
-trp_dunnish_wolf_guard_pl|Dún Farkasőrség
-trp_dunnish_chieftan|Dún Hollólovas
-trp_dunnish_chieftan_pl|Dún Hollólovasok
+trp_i1_harad_levy|Haradi sorkatona
+trp_i1_harad_levy_pl|Haradi sorkatonaság
+trp_i3_harad_infantry|Haradi könnyű gyalogos
+trp_i3_harad_infantry_pl|Haradi könnyű gyalogság
+trp_i4_harad_spearman|Haradi lándzsás
+trp_i4_harad_spearman_pl|Haradi lándzsások
+trp_i5_harad_tiger_guard|Tigris őr
+trp_i5_harad_tiger_guard_pl|Tigris őrség
+trp_i4_harad_swordsman|Haradi kardforgató
+trp_i4_harad_swordsman_pl|Haradi kardforgatók
+trp_i5_harad_lion_guard|Oroszlán őr
+trp_i5_harad_lion_guard_pl|Oroszlán őrség
+trp_a3_harad_hunter|Haradi vadász
+trp_a3_harad_hunter_pl|Haradi vadászok
+trp_a4_harad_archer|Haradi íjász
+trp_a4_harad_archer_pl|Haradi íjászok
+trp_a5_harad_eagle_guard|Sas őr
+trp_a5_harad_eagle_guard_pl|Sas őrség
+trp_c2_harondor_scout|Harondori felderítő
+trp_c2_harondor_scout_pl|Harondori felderítők
+trp_c3_harondor_rider|Harondori lovas
+trp_c3_harondor_rider_pl|Harondori lovasság
+trp_c4_harondor_light_cavalry|Harandori könnyűlovas
+trp_c4_harondor_light_cavalry_pl|Harandori könnyűlovasság
+trp_c5_harondor_serpent_knight|Arany Kígyó lovag
+trp_c5_harondor_serpent_knight_pl|Arany Kígyó lovagok
+trp_ac3_harondor_skirmisher|Harondori csatározó
+trp_ac3_harondor_skirmisher_pl|Harondori csatározók
+trp_ac4_harondor_horse_archer|Harondori lovasíjász
+trp_ac4_harondor_horse_archer_pl|Harondori lovasíjászok
+trp_ac5_harondor_black_snake|Fekete Sikló lovasíjász
+trp_ac5_harondor_black_snake_pl|Fekete Sikló lovasíjászok
+trp_i2_far_harad_tribesman|Messze-haradi törzstag
+trp_i2_far_harad_tribesman_pl|Messze-haradi törzstagok
+trp_i4_far_harad_champion|Messze-haradi bajnok
+trp_i4_far_harad_champion_pl|Messze-haradi bajnokok
+trp_i5_far_harad_panther_guard|Párduc őr
+trp_i5_far_harad_panther_guard_pl|Párduc őrség
+trp_i1_dun_wildman|Dún vadember
+trp_i1_dun_wildman_pl|Dún vademberek
+trp_i2_dun_warrior|Dún harcos
+trp_i2_dun_warrior_pl|Dún harcosok
+trp_i3_dun_pikeman|Dún pikás
+trp_i3_dun_pikeman_pl|Dún pikások
+trp_i4_dun_vet_pikeman|Dún veterán pikás
+trp_i4_dun_vet_pikeman_pl|Dún veterán pikások
+trp_ac2_dun_crebain_rider|Dún Crebain lovas
+trp_ac2_dun_crebain_rider_pl|Dún Crebain lovasság
+trp_i3_dun_vet_warrior|Dún veterán harcos
+trp_i3_dun_vet_warrior_pl|Dún veterán harcosok
+trp_i4_dun_wolf_warrior|Dún Farkasharcos
+trp_i4_dun_wolf_warrior_pl|Dún Farkasharcosok
+trp_i5_dun_wolf_guard|Dún Farkasőr
+trp_i5_dun_wolf_guard_pl|Dún Farkasőrség
+trp_ac4_dun_raven_rider|Dún Hollólovas
+trp_ac4_dun_raven_rider_pl|Dún Hollólovasok
 ; trp_i1_khand_bondsman|Khand Bondsman
 ; trp_i1_khand_bondsman_pl|Khand Bondsmen
 ; trp_i2_khand_pit_dog|Khand Pit Dog
@@ -811,8 +811,8 @@ trp_black_numenorean_captain|Fekete númenor kapitány
 trp_black_numenorean_captain_pl|Fekete númenor kapitányok
 trp_black_numenorean_lieutenant|Fekete númenor hadnagy
 trp_black_numenorean_lieutenant_pl|Fekete númenor hadnagyok
-trp_dunnish_night_wolf|Dún éjfarkas
-trp_dunnish_night_wolf_pl|Dún éjfarkasok
+trp_a5_dun_night_wolf|Dún éjfarkas
+trp_a5_dun_night_wolf_pl|Dún éjfarkasok
 trp_dunnish_lieutenant|Dún hetman
 trp_dunnish_lieutenant_pl|Dún hetmanok
 trp_goblin_chieftain|Kobold törzsfőnök

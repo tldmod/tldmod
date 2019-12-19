@@ -464,62 +464,62 @@ trp_dismounted_elite_skirmisher_of_rohan|Archer d'élite du Rohan
 trp_dismounted_elite_skirmisher_of_rohan_pl|Archer s d'élite du Rohan
 trp_dismounted_thengel_guard_of_rohan|Garde de Thengel
 trp_dismounted_thengel_guard_of_rohan_pl|Gardes de Thengel
-trp_harad_desert_warrior|Recrue du Harad
-trp_harad_desert_warrior_pl|Recrues du Harad
-trp_harad_infantry|Infanterie légère du Harad
-trp_harad_infantry_pl|Infanterie légère du Harad
-trp_harad_veteran_infantry|Lancier du Harad
-trp_harad_veteran_infantry_pl|Lanciers du Harad
-trp_harad_tiger_guard|Garde du Tigre
-trp_harad_tiger_guard_pl|Gardes de Tigre
-trp_harad_swordsman|Épéiste du Harad
-trp_harad_swordsman_pl|Épéistes du Harad
-trp_harad_lion_guard|Garde du Lion
-trp_harad_lion_guard_pl|Gardes du Lion
-trp_harad_skirmisher|Chasseur du Harad
-trp_harad_skirmisher_pl|Chasseurs du Harad
-trp_harad_archer|Archer du Harad
-trp_harad_archer_pl|Archers du Harad
-trp_harad_eagle_guard|Garde de l'Aigle
-trp_harad_eagle_guard_pl|Gardes de l'Aigle
-trp_harondor_scout|Éclaireur de l'Harondor
-trp_harondor_scout_pl|Éclaireurs de l'Harondor
-trp_harondor_rider|Cavalier de l'Harondor
-trp_harondor_rider_pl|Cavaliers de l'Harondor
-trp_harondor_light_cavalry|Cavalerie légère de l'Harondor
-trp_harondor_light_cavalry_pl|Cavalerie légère de l'Harondor
-trp_fang_heavy_cavalry|Chevalier du Serpent d'Or
-trp_fang_heavy_cavalry_pl|Chevaliers du Serpent d'Or
-trp_harad_horse_archer|Tirailleur du Harondor
-trp_harad_horse_archer_pl|Tirailleurs du Harondor
-trp_black_snake_horse_archer|Archer monté du Harondor
-trp_black_snake_horse_archer_pl|Archers montés du Harondor
-trp_gold_serpent_horse_archer|Archer monté du Serpent noir
-trp_gold_serpent_horse_archer_pl|Archers montés du Serpent noir
-trp_far_harad_tribesman|Guerrier tribal du Harad Lointain
-trp_far_harad_tribesman_pl|Guerriers tribaux du Harad Lointain
-trp_far_harad_champion|Champion du Harad Lointain
-trp_far_harad_champion_pl|Champions du Harad Lointain
-trp_far_harad_panther_guard|Garde de la Panthère
-trp_far_harad_panther_guard_pl|Gardes de la Panthère
-trp_dunnish_wildman|Homme sauvage du Pays de Dun
-trp_dunnish_wildman_pl|Hommes sauvages du Pays de Dun
-trp_dunnish_warrior|Guerrier du Pays de Dun
-trp_dunnish_warrior_pl|Guerriers du Pays de Dun
-trp_dunnish_pikeman|Piquier du Pays de Dun
-trp_dunnish_pikeman_pl|Piquiers du Pays de Dun
-trp_dunnish_veteran_pikeman|Piquier vétéran du Pays de Dun
-trp_dunnish_veteran_pikeman_pl|Piquiers vétéran du Pays de Dun
-trp_dunnish_raven_rider|Cavalier du Craban du Pays de Dun
-trp_dunnish_raven_rider_pl|Cavaliers du Craban du Pays de Dun
-trp_dunnish_vet_warrior|Guerrier vétéran du Pays de Dun
-trp_dunnish_vet_warrior_pl|Guerriers vétérans du Pays de Dun
-trp_dunnish_wolf_warrior|Guerrier du Loup du Pays de Dun
-trp_dunnish_wolf_warrior_pl|Guerriers du Loup du Pays de Dun
-trp_dunnish_wolf_guard|Garde du Loup du Pays de Dun
-trp_dunnish_wolf_guard_pl|Gardes du Loup du Pays de Dun
-trp_dunnish_chieftan|Cavalier du Corbeau du Pays de Dun
-trp_dunnish_chieftan_pl|Cavaliers du Corbeau du Pays de Dun
+trp_i1_harad_levy|Recrue du Harad
+trp_i1_harad_levy_pl|Recrues du Harad
+trp_i3_harad_infantry|Infanterie légère du Harad
+trp_i3_harad_infantry_pl|Infanterie légère du Harad
+trp_i4_harad_spearman|Lancier du Harad
+trp_i4_harad_spearman_pl|Lanciers du Harad
+trp_i5_harad_tiger_guard|Garde du Tigre
+trp_i5_harad_tiger_guard_pl|Gardes de Tigre
+trp_i4_harad_swordsman|Épéiste du Harad
+trp_i4_harad_swordsman_pl|Épéistes du Harad
+trp_i5_harad_lion_guard|Garde du Lion
+trp_i5_harad_lion_guard_pl|Gardes du Lion
+trp_a3_harad_hunter|Chasseur du Harad
+trp_a3_harad_hunter_pl|Chasseurs du Harad
+trp_a4_harad_archer|Archer du Harad
+trp_a4_harad_archer_pl|Archers du Harad
+trp_a5_harad_eagle_guard|Garde de l'Aigle
+trp_a5_harad_eagle_guard_pl|Gardes de l'Aigle
+trp_c2_harondor_scout|Éclaireur de l'Harondor
+trp_c2_harondor_scout_pl|Éclaireurs de l'Harondor
+trp_c3_harondor_rider|Cavalier de l'Harondor
+trp_c3_harondor_rider_pl|Cavaliers de l'Harondor
+trp_c4_harondor_light_cavalry|Cavalerie légère de l'Harondor
+trp_c4_harondor_light_cavalry_pl|Cavalerie légère de l'Harondor
+trp_c5_harondor_serpent_knight|Chevalier du Serpent d'Or
+trp_c5_harondor_serpent_knight_pl|Chevaliers du Serpent d'Or
+trp_ac3_harondor_skirmisher|Tirailleur du Harondor
+trp_ac3_harondor_skirmisher_pl|Tirailleurs du Harondor
+trp_ac4_harondor_horse_archer|Archer monté du Harondor
+trp_ac4_harondor_horse_archer_pl|Archers montés du Harondor
+trp_ac5_harondor_black_snake|Archer monté du Serpent noir
+trp_ac5_harondor_black_snake_pl|Archers montés du Serpent noir
+trp_i2_far_harad_tribesman|Guerrier tribal du Harad Lointain
+trp_i2_far_harad_tribesman_pl|Guerriers tribaux du Harad Lointain
+trp_i4_far_harad_champion|Champion du Harad Lointain
+trp_i4_far_harad_champion_pl|Champions du Harad Lointain
+trp_i5_far_harad_panther_guard|Garde de la Panthère
+trp_i5_far_harad_panther_guard_pl|Gardes de la Panthère
+trp_i1_dun_wildman|Homme sauvage du Pays de Dun
+trp_i1_dun_wildman_pl|Hommes sauvages du Pays de Dun
+trp_i2_dun_warrior|Guerrier du Pays de Dun
+trp_i2_dun_warrior_pl|Guerriers du Pays de Dun
+trp_i3_dun_pikeman|Piquier du Pays de Dun
+trp_i3_dun_pikeman_pl|Piquiers du Pays de Dun
+trp_i4_dun_vet_pikeman|Piquier vétéran du Pays de Dun
+trp_i4_dun_vet_pikeman_pl|Piquiers vétéran du Pays de Dun
+trp_ac2_dun_crebain_rider|Cavalier du Craban du Pays de Dun
+trp_ac2_dun_crebain_rider_pl|Cavaliers du Craban du Pays de Dun
+trp_i3_dun_vet_warrior|Guerrier vétéran du Pays de Dun
+trp_i3_dun_vet_warrior_pl|Guerriers vétérans du Pays de Dun
+trp_i4_dun_wolf_warrior|Guerrier du Loup du Pays de Dun
+trp_i4_dun_wolf_warrior_pl|Guerriers du Loup du Pays de Dun
+trp_i5_dun_wolf_guard|Garde du Loup du Pays de Dun
+trp_i5_dun_wolf_guard_pl|Gardes du Loup du Pays de Dun
+trp_ac4_dun_raven_rider|Cavalier du Corbeau du Pays de Dun
+trp_ac4_dun_raven_rider_pl|Cavaliers du Corbeau du Pays de Dun
 ; trp_i1_khand_bondsman|Khand Bondsman
 ; trp_i1_khand_bondsman_pl|Khand Bondsmen
 ; trp_i2_khand_pit_dog|Khand Pit Dog
@@ -811,8 +811,8 @@ trp_black_numenorean_captain|Capitaine númenoréen noir
 trp_black_numenorean_captain_pl|Capitaines númenoréens noirs
 trp_black_numenorean_lieutenant|Lieutenant númenoréen noir
 trp_black_numenorean_lieutenant_pl|Lieutenants númenoréens noirs
-trp_dunnish_night_wolf|Loup nocturne du Pays de Dun
-trp_dunnish_night_wolf_pl|Loups nocturne du Pays de Dun
+trp_a5_dun_night_wolf|Loup nocturne du Pays de Dun
+trp_a5_dun_night_wolf_pl|Loups nocturne du Pays de Dun
 trp_dunnish_lieutenant|Lieutenant du Pays de Dun
 trp_dunnish_lieutenant_pl|Lieutenants du Pays de Dun
 trp_goblin_chieftain|Chef de clan gobelin

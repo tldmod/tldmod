@@ -464,62 +464,62 @@ trp_dismounted_elite_skirmisher_of_rohan|ローハン精鋭散兵
 trp_dismounted_elite_skirmisher_of_rohan_pl|ローハン精鋭散兵
 trp_dismounted_thengel_guard_of_rohan|ローハンセンゲル近衛兵
 trp_dismounted_thengel_guard_of_rohan_pl|ローハンセンゲル近衛兵
-trp_harad_desert_warrior|ハラド新兵
-trp_harad_desert_warrior_pl|ハラド新兵
-trp_harad_infantry|ハラド軽装歩兵
-trp_harad_infantry_pl|ハラド軽装歩兵
-trp_harad_veteran_infantry|ハラド槍兵
-trp_harad_veteran_infantry_pl|ハラド槍兵
-trp_harad_tiger_guard|タイガー近衛兵
-trp_harad_tiger_guard_pl|タイガー近衛兵
-trp_harad_swordsman|ハラド剣士
-trp_harad_swordsman_pl|ハラド剣士
-trp_harad_lion_guard|ライオン近衛兵
-trp_harad_lion_guard_pl|ライオン近衛兵
-; trp_harad_skirmisher|Harad Hunter
-; trp_harad_skirmisher_pl|Harad Hunters
-trp_harad_archer|ハラド弓兵
-trp_harad_archer_pl|ハラド弓兵
-trp_harad_eagle_guard|イーグル近衛兵
-trp_harad_eagle_guard_pl|イーグル近衛兵
-trp_harondor_scout|ハロンドール斥候兵
-trp_harondor_scout_pl|ハロンドール斥候兵
-trp_harondor_rider|ハロンドール騎兵
-trp_harondor_rider_pl|ハロンドール騎兵
-trp_harondor_light_cavalry|ハロンドール軽騎兵
-trp_harondor_light_cavalry_pl|ハロンドール軽騎兵
-; trp_fang_heavy_cavalry|Gold Serpent Knight
-; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
-; trp_harad_horse_archer|Harondor Skirmisher
-; trp_harad_horse_archer_pl|Harondor Skirmishers
-; trp_black_snake_horse_archer|Harondor Horse Archer
-; trp_black_snake_horse_archer_pl|Harondor Horse Archers
-trp_gold_serpent_horse_archer|黒の蛇弓騎兵
-trp_gold_serpent_horse_archer_pl|黒の蛇弓騎兵
-trp_far_harad_tribesman|遠ハラド部族民
-trp_far_harad_tribesman_pl|遠ハラド部族民
-trp_far_harad_champion|遠ハラドチャンピオン
-trp_far_harad_champion_pl|遠ハラドチャンピオン
-trp_far_harad_panther_guard|パンサー近衛兵
-trp_far_harad_panther_guard_pl|パンサー近衛兵
-trp_dunnish_wildman|褐色人野人
-trp_dunnish_wildman_pl|褐色人野人
-trp_dunnish_warrior|褐色人突撃兵
-trp_dunnish_warrior_pl|褐色人突撃兵
-trp_dunnish_pikeman|褐色人パイク兵
-trp_dunnish_pikeman_pl|褐色人パイク兵
-trp_dunnish_veteran_pikeman|褐色人ベテランパイク兵
-trp_dunnish_veteran_pikeman_pl|褐色人ベテランパイク兵
-; trp_dunnish_raven_rider|Dunnish Crebain Rider
-; trp_dunnish_raven_rider_pl|Dunnish Crebain Riders
-trp_dunnish_vet_warrior|褐色人ベテラン突撃兵
-trp_dunnish_vet_warrior_pl|褐色人ベテラン突撃兵
-trp_dunnish_wolf_warrior|褐色人狼突撃兵
-trp_dunnish_wolf_warrior_pl|褐色人狼突撃兵
-trp_dunnish_wolf_guard|褐色人狼近衛兵
-trp_dunnish_wolf_guard_pl|褐色人狼近衛兵
-trp_dunnish_chieftan|褐色人大からす騎兵
-trp_dunnish_chieftan_pl|褐色人大からす騎兵
+trp_i1_harad_levy|ハラド新兵
+trp_i1_harad_levy_pl|ハラド新兵
+trp_i3_harad_infantry|ハラド軽装歩兵
+trp_i3_harad_infantry_pl|ハラド軽装歩兵
+trp_i4_harad_spearman|ハラド槍兵
+trp_i4_harad_spearman_pl|ハラド槍兵
+trp_i5_harad_tiger_guard|タイガー近衛兵
+trp_i5_harad_tiger_guard_pl|タイガー近衛兵
+trp_i4_harad_swordsman|ハラド剣士
+trp_i4_harad_swordsman_pl|ハラド剣士
+trp_i5_harad_lion_guard|ライオン近衛兵
+trp_i5_harad_lion_guard_pl|ライオン近衛兵
+; trp_a3_harad_hunter|Harad Hunter
+; trp_a3_harad_hunter_pl|Harad Hunters
+trp_a4_harad_archer|ハラド弓兵
+trp_a4_harad_archer_pl|ハラド弓兵
+trp_a5_harad_eagle_guard|イーグル近衛兵
+trp_a5_harad_eagle_guard_pl|イーグル近衛兵
+trp_c2_harondor_scout|ハロンドール斥候兵
+trp_c2_harondor_scout_pl|ハロンドール斥候兵
+trp_c3_harondor_rider|ハロンドール騎兵
+trp_c3_harondor_rider_pl|ハロンドール騎兵
+trp_c4_harondor_light_cavalry|ハロンドール軽騎兵
+trp_c4_harondor_light_cavalry_pl|ハロンドール軽騎兵
+; trp_c5_harondor_serpent_knight|Gold Serpent Knight
+; trp_c5_harondor_serpent_knight_pl|Gold Serpent Knights
+; trp_ac3_harondor_skirmisher|Harondor Skirmisher
+; trp_ac3_harondor_skirmisher_pl|Harondor Skirmishers
+; trp_ac4_harondor_horse_archer|Harondor Horse Archer
+; trp_ac4_harondor_horse_archer_pl|Harondor Horse Archers
+trp_ac5_harondor_black_snake|黒の蛇弓騎兵
+trp_ac5_harondor_black_snake_pl|黒の蛇弓騎兵
+trp_i2_far_harad_tribesman|遠ハラド部族民
+trp_i2_far_harad_tribesman_pl|遠ハラド部族民
+trp_i4_far_harad_champion|遠ハラドチャンピオン
+trp_i4_far_harad_champion_pl|遠ハラドチャンピオン
+trp_i5_far_harad_panther_guard|パンサー近衛兵
+trp_i5_far_harad_panther_guard_pl|パンサー近衛兵
+trp_i1_dun_wildman|褐色人野人
+trp_i1_dun_wildman_pl|褐色人野人
+trp_i2_dun_warrior|褐色人突撃兵
+trp_i2_dun_warrior_pl|褐色人突撃兵
+trp_i3_dun_pikeman|褐色人パイク兵
+trp_i3_dun_pikeman_pl|褐色人パイク兵
+trp_i4_dun_vet_pikeman|褐色人ベテランパイク兵
+trp_i4_dun_vet_pikeman_pl|褐色人ベテランパイク兵
+; trp_ac2_dun_crebain_rider|Dunnish Crebain Rider
+; trp_ac2_dun_crebain_rider_pl|Dunnish Crebain Riders
+trp_i3_dun_vet_warrior|褐色人ベテラン突撃兵
+trp_i3_dun_vet_warrior_pl|褐色人ベテラン突撃兵
+trp_i4_dun_wolf_warrior|褐色人狼突撃兵
+trp_i4_dun_wolf_warrior_pl|褐色人狼突撃兵
+trp_i5_dun_wolf_guard|褐色人狼近衛兵
+trp_i5_dun_wolf_guard_pl|褐色人狼近衛兵
+trp_ac4_dun_raven_rider|褐色人大からす騎兵
+trp_ac4_dun_raven_rider_pl|褐色人大からす騎兵
 ; trp_i1_khand_bondsman|Khand Bondsman
 ; trp_i1_khand_bondsman_pl|Khand Bondsmen
 ; trp_i2_khand_pit_dog|Khand Pit Dog
@@ -811,8 +811,8 @@ trp_black_numenorean_captain|黒きヌーメノールの隊長
 trp_black_numenorean_captain_pl|黒きヌーメノールの隊長
 trp_black_numenorean_lieutenant|黒きヌーメノールの副隊長
 trp_black_numenorean_lieutenant_pl|黒きヌーメノールの副隊長
-; trp_dunnish_night_wolf|Dunnish Night Wolf
-; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
+; trp_a5_dun_night_wolf|Dunnish Night Wolf
+; trp_a5_dun_night_wolf_pl|Dunnish Night Wolfs
 trp_dunnish_lieutenant|褐色人副司令官
 trp_dunnish_lieutenant_pl|褐色人副司令官
 trp_goblin_chieftain|ゴブリンの酋長

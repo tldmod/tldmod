@@ -571,19 +571,19 @@ game_menus = [
 		(set_visitors, 14, "trp_c5_amroth_vet_knight",	6),
 		(set_visitors, 15, "trp_c6_amroth_swan_knight",		4),
 #		Enemy
-		(set_visitors, 16, "trp_harad_desert_warrior",			6),
-		(set_visitors, 17, "trp_harad_desert_warrior",			6),
-		(set_visitors, 18, "trp_harondor_scout",				6),
-		(set_visitors, 19, "trp_harad_infantry",				6),
-		(set_visitors, 20, "trp_harad_veteran_infantry",		6),
-		(set_visitors, 21, "trp_harad_tiger_guard",				6),
-		(set_visitors, 22, "trp_harad_lion_guard",				6),
-		(set_visitors, 23, "trp_harondor_rider",				6),
-		(set_visitors, 24, "trp_harondor_light_cavalry",		6),
-		(set_visitors, 25, "trp_fang_heavy_cavalry",			6),
-		(set_visitors, 26, "trp_harad_skirmisher",				6),
-		(set_visitors, 27, "trp_harad_archer",					6),
-		(set_visitors, 28, "trp_harad_eagle_guard",				6),
+		(set_visitors, 16, "trp_i1_harad_levy",			6),
+		(set_visitors, 17, "trp_i1_harad_levy",			6),
+		(set_visitors, 18, "trp_c2_harondor_scout",				6),
+		(set_visitors, 19, "trp_i3_harad_infantry",				6),
+		(set_visitors, 20, "trp_i4_harad_spearman",		6),
+		(set_visitors, 21, "trp_i5_harad_tiger_guard",				6),
+		(set_visitors, 22, "trp_i5_harad_lion_guard",				6),
+		(set_visitors, 23, "trp_c3_harondor_rider",				6),
+		(set_visitors, 24, "trp_c4_harondor_light_cavalry",		6),
+		(set_visitors, 25, "trp_c5_harondor_serpent_knight",			6),
+		(set_visitors, 26, "trp_a3_harad_hunter",				6),
+		(set_visitors, 27, "trp_a4_harad_archer",					6),
+		(set_visitors, 28, "trp_a5_harad_eagle_guard",				6),
 		#(set_visitors, 29, "trp_troll_of_moria",				1),
 		(str_store_string, s16, "str_custom_battle_1"),
 
@@ -644,8 +644,8 @@ game_menus = [
 		(set_visitors, 22, "trp_black_numenorean_captain",			5),
 		(set_visitors, 23, "trp_black_numenorean_lieutenant",		4),
 		(set_visitors, 25, "trp_high_captain_of_mordor",			4),
-		(set_visitors, 26, "trp_black_snake_horse_archer",		6),
-		(set_visitors, 27, "trp_gold_serpent_horse_archer",		6),
+		(set_visitors, 26, "trp_ac4_harondor_horse_archer",		6),
+		(set_visitors, 27, "trp_ac5_harondor_black_snake",		6),
 		(str_store_string, s16, "str_custom_battle_2"),
 
      (else_try),
@@ -708,9 +708,9 @@ game_menus = [
 		(set_visitors, 24, "trp_uruk_hai_pikeman",							20),
 		(set_visitors, 25, "trp_fighting_uruk_hai_pikeman",					10),
 		(set_visitors, 26, "trp_fighting_uruk_hai_champion",				10),
-		(set_visitors, 27, "trp_dunnish_wolf_warrior",						30),
-		(set_visitors, 28, "trp_dunnish_warrior",							15),
-		(set_visitors, 29, "trp_dunnish_wolf_guard",						5),
+		(set_visitors, 27, "trp_i4_dun_wolf_warrior",						30),
+		(set_visitors, 28, "trp_i2_dun_warrior",							15),
+		(set_visitors, 29, "trp_i5_dun_wolf_guard",						5),
 		(str_store_string, s16, "str_custom_battle_3"),
      
      (else_try),
@@ -1166,8 +1166,8 @@ game_menus = [
 		(store_random_in_range,":bfac",0,9),  ## bad faction chosen randomly
 		(try_begin),
 			(eq,":bfac",0),(assign,":trp_bad_min","trp_i1_rhun_tribesman"       ),(assign,":trp_bad_max","trp_c6_rhun_dorwinion_noble"    ),(else_try),
-			(eq,":bfac",1),(assign,":trp_bad_min","trp_harad_desert_warrior" ),(assign,":trp_bad_max","trp_gold_serpent_horse_archer" ),(else_try),
-			(eq,":bfac",2),(assign,":trp_bad_min","trp_dunnish_wildman"      ),(assign,":trp_bad_max","trp_dunnish_chieftan"           ),(else_try),
+			(eq,":bfac",1),(assign,":trp_bad_min","trp_i1_harad_levy" ),(assign,":trp_bad_max","trp_ac5_harondor_black_snake" ),(else_try),
+			(eq,":bfac",2),(assign,":trp_bad_min","trp_i1_dun_wildman"      ),(assign,":trp_bad_max","trp_ac4_dun_raven_rider"           ),(else_try),
 			(eq,":bfac",3),(assign,":trp_bad_min","trp_i1_khand_bondsman"     ),(assign,":trp_bad_max","trp_ac5_khand_heavy_skirmisher"),(else_try),
 			(eq,":bfac",4),(assign,":trp_bad_min","trp_i1_corsair_youth"        ),(assign,":trp_bad_max","trp_i5_corsair_master_pikeman"       ),(else_try),
 			(eq,":bfac",5),(assign,":trp_bad_min","trp_orc_snaga_of_isengard"),(assign,":trp_bad_max","trp_fighting_uruk_hai_pikeman"  ),(else_try),
@@ -1433,7 +1433,7 @@ game_menus = [
  "^^^^^^^^^Your Master is the White Hand^Choose your Race", "none",[(assign, "$last_menu", "mnu_start_hand")],[
  ("start_whor",[],"an ORC, serving the White Hand",          [(jump_to_menu,"mnu_start_hand_orc"),]),
  ("start_isur",[],"one of the URUK-HAI, bred in Isengard",           [(call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),(jump_to_menu,"mnu_start_as_one"),]),
- ("start_duma",[],"a MAN of Dunland, the Western Plains",    [(call_script,"script_start_as_one","trp_dunnish_wildman"),       (jump_to_menu,"mnu_choose_gender"),]), #(jump_to_menu,"mnu_choose_skill"),]),
+ ("start_duma",[],"a MAN of Dunland, the Western Plains",    [(call_script,"script_start_as_one","trp_i1_dun_wildman"),       (jump_to_menu,"mnu_choose_gender"),]), #(jump_to_menu,"mnu_choose_skill"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_evil")]),    ]
  ),
@@ -1532,9 +1532,9 @@ game_menus = [
  ),
 ( "start_haradrim",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^You are an Haradrim,^a Man of the Desert.^Select your line", "none",[(assign, "$last_menu", "mnu_start_haradrim")],[
- ("start_1_des",[],"Desert Man",                          [(call_script,"script_start_as_one","trp_harad_desert_warrior"),   (jump_to_menu,"mnu_choose_gender"),]),
- ("start_2_far",[],"Far Harad Tribesman",                 [(call_script,"script_start_as_one","trp_far_harad_tribesman"),    (jump_to_menu,"mnu_choose_gender"),]),
-# ("start_3",[],"Harondor Noble",                      [(call_script,"script_start_as_one","trp_harondor_scout"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_1_des",[],"Desert Man",                          [(call_script,"script_start_as_one","trp_i1_harad_levy"),   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_2_far",[],"Far Harad Tribesman",                 [(call_script,"script_start_as_one","trp_i2_far_harad_tribesman"),    (jump_to_menu,"mnu_choose_gender"),]),
+# ("start_3",[],"Harondor Noble",                      [(call_script,"script_start_as_one","trp_c2_harondor_scout"),(jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_eye_man")]),    ]
  ),
@@ -10271,8 +10271,8 @@ game_menus = [
 	          (eq, ":quest_object_faction","fac_rohan"),
 			  	(try_begin),				
 					(eq, ":random_no", 0),
-					(assign, ":bandit_troop_1", "trp_dunnish_wildman"),
-					(assign, ":bandit_troop_2", "trp_dunnish_raven_rider"),
+					(assign, ":bandit_troop_1", "trp_i1_dun_wildman"),
+					(assign, ":bandit_troop_2", "trp_ac2_dun_crebain_rider"),
 				(else_try),						
 					(assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
 					(assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),	
@@ -10788,9 +10788,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_i1_pel_watchman", 3),(set_visitors, 9, "trp_a3_gon_bowman", 3),(set_visitors, 10, "trp_a2_pel_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_corsair_swordsman", 3),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 3),(set_visitors, 15, "trp_i3_corsair_swordsman", 3),(set_visitors, 16, "trp_i2_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 3),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 3),(set_visitors, 13, "trp_i3_harad_infantry", 5),(set_visitors, 14, "trp_i4_harad_swordsman", 3),(set_visitors, 15, "trp_i3_corsair_swordsman", 3),(set_visitors, 16, "trp_i2_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 3),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_a2_corsair_marine", 3),(set_visitors, 19, "trp_harad_skirmisher", 3),(set_visitors, 20, "trp_a2_corsair_marine", 3),
+						(set_visitors, 18, "trp_a2_corsair_marine", 3),(set_visitors, 19, "trp_a3_harad_hunter", 3),(set_visitors, 20, "trp_a2_corsair_marine", 3),
 				(else_try),
 					(ge, ":level", 25),
 						#ally infantry, entries 2-7
@@ -10798,9 +10798,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_a2_pel_marine", 3),(set_visitors, 9, "trp_a3_gon_bowman", 3),(set_visitors, 10, "trp_a2_pel_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_harad_swordsman", 3),(set_visitors, 14, "trp_harad_infantry", 5),(set_visitors, 15, "trp_i4_corsair_veteran_swordsman", 3),(set_visitors, 16, "trp_i3_corsair_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_i4_harad_swordsman", 3),(set_visitors, 14, "trp_i3_harad_infantry", 5),(set_visitors, 15, "trp_i4_corsair_veteran_swordsman", 3),(set_visitors, 16, "trp_i3_corsair_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_a3_corsair_marksman", 3),(set_visitors, 19, "trp_harad_archer", 3),(set_visitors, 20, "trp_a2_corsair_marine", 3),
+						(set_visitors, 18, "trp_a3_corsair_marksman", 3),(set_visitors, 19, "trp_a4_harad_archer", 3),(set_visitors, 20, "trp_a2_corsair_marine", 3),
 				(try_end),
 			(else_try),
 			#(eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
@@ -10933,9 +10933,9 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_i1_pel_watchman", 3),(set_visitors, 9, "trp_a3_gon_bowman", 2),(set_visitors, 10, "trp_a2_pel_marine", 2),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_i3_harad_infantry", 5),(set_visitors, 14, "trp_i4_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
 						#ally archers, entries 18-20
-						(set_visitors, 18, "trp_a3_corsair_marksman", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_a3_corsair_marksman", 5),
+						(set_visitors, 18, "trp_a3_corsair_marksman", 5),(set_visitors, 19, "trp_a3_harad_hunter", 5),(set_visitors, 20, "trp_a3_corsair_marksman", 5),
 				(else_try),
 					(ge, ":level", 25),
 						#enemy infantry, entries 2-7
@@ -10943,9 +10943,9 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_a2_pel_marine", 3),(set_visitors, 9, "trp_a4_gon_archer", 2),(set_visitors, 10, "trp_a3_pel_vet_marine", 2),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_i3_harad_infantry", 5),(set_visitors, 14, "trp_i4_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
 						#ally archers, entries 18-20
-						(set_visitors, 18, "trp_a3_corsair_marksman", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_a3_corsair_marksman", 5),
+						(set_visitors, 18, "trp_a3_corsair_marksman", 5),(set_visitors, 19, "trp_a3_harad_hunter", 5),(set_visitors, 20, "trp_a3_corsair_marksman", 5),
 				(try_end),
 			(else_try),
 			#(eq, ":object_fac", "fac_rhun"), #If Rhun, Allies are Rhun

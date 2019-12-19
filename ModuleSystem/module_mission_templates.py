@@ -902,7 +902,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
     (agent_get_troop_id, ":agent_trp",":agent"),
     (ge, ":agent_trp", 0),
 
-    (this_or_next|eq, ":agent_trp", "trp_dunnish_wolf_guard"),
+    (this_or_next|eq, ":agent_trp", "trp_i5_dun_wolf_guard"),
     (this_or_next|eq, ":agent_trp", "trp_beorn_lord"),
     (this_or_next|eq, ":agent_trp", "trp_npc17"),
     (eq, ":agent_trp", "trp_player"),
@@ -952,7 +952,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 
       (ge, ":agent_trp", 0),
 
-      (this_or_next|eq, ":agent_trp", "trp_dunnish_wolf_guard"),
+      (this_or_next|eq, ":agent_trp", "trp_i5_dun_wolf_guard"),
       (this_or_next|eq, ":agent_trp", "trp_beorn_lord"),
       (this_or_next|eq, ":agent_trp", "trp_npc17"),
       (eq, ":agent_trp", "trp_player"),

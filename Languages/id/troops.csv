@@ -464,62 +464,62 @@ trp_tutorial_swordsman|Tentara Pedang
 ; trp_dismounted_elite_skirmisher_of_rohan_pl|Elite Skirmishers of Rohan
 ; trp_dismounted_thengel_guard_of_rohan|Thengel Guard of Rohan
 ; trp_dismounted_thengel_guard_of_rohan_pl|Thengel Guards of Rohan
-; trp_harad_desert_warrior|Harad Levy
-; trp_harad_desert_warrior_pl|Harad Levies
-; trp_harad_infantry|Harad Light Infantry
-; trp_harad_infantry_pl|Harad Light Infantry
-; trp_harad_veteran_infantry|Harad Spearman
-; trp_harad_veteran_infantry_pl|Harad Spearmen
-; trp_harad_tiger_guard|Tiger Guard
-; trp_harad_tiger_guard_pl|Tiger Guards
-; trp_harad_swordsman|Harad Swordsman
-; trp_harad_swordsman_pl|Harad Swordsmen
-; trp_harad_lion_guard|Lion Guard
-; trp_harad_lion_guard_pl|Lion Guards
-; trp_harad_skirmisher|Harad Hunter
-; trp_harad_skirmisher_pl|Harad Hunters
-; trp_harad_archer|Harad Archer
-; trp_harad_archer_pl|Harad Archers
-; trp_harad_eagle_guard|Eagle Guard
-; trp_harad_eagle_guard_pl|Eagle Guards
-; trp_harondor_scout|Harondor Scout
-; trp_harondor_scout_pl|Harondor Scouts
-; trp_harondor_rider|Harondor Rider
-; trp_harondor_rider_pl|Harondor Riders
-; trp_harondor_light_cavalry|Harondor Light Cavalry
-; trp_harondor_light_cavalry_pl|Harondor Light Cavalry
-; trp_fang_heavy_cavalry|Gold Serpent Knight
-; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
-; trp_harad_horse_archer|Harondor Skirmisher
-; trp_harad_horse_archer_pl|Harondor Skirmishers
-; trp_black_snake_horse_archer|Harondor Horse Archer
-; trp_black_snake_horse_archer_pl|Harondor Horse Archers
-; trp_gold_serpent_horse_archer|Black Snake Horse Archer
-; trp_gold_serpent_horse_archer_pl|Black Snake Horse Archers
-; trp_far_harad_tribesman|Far Harad Tribesman
-; trp_far_harad_tribesman_pl|Far Harad Tribesmen
-; trp_far_harad_champion|Far Harad Champion
-; trp_far_harad_champion_pl|Far Harad Champions
-; trp_far_harad_panther_guard|Panther Guard
-; trp_far_harad_panther_guard_pl|Panther Guards
-; trp_dunnish_wildman|Dunnish Wildman
-; trp_dunnish_wildman_pl|Dunnish Wildmen
-; trp_dunnish_warrior|Dunnish Warrior
-; trp_dunnish_warrior_pl|Dunnish Warriors
-; trp_dunnish_pikeman|Dunnish Pikeman
-; trp_dunnish_pikeman_pl|Dunnish Pikemen
-; trp_dunnish_veteran_pikeman|Dunnish Veteran Pikeman
-; trp_dunnish_veteran_pikeman_pl|Dunnish Veteran Pikemen
-; trp_dunnish_raven_rider|Dunnish Crebain Rider
-; trp_dunnish_raven_rider_pl|Dunnish Crebain Riders
-; trp_dunnish_vet_warrior|Dunnish Veteran Warrior
-; trp_dunnish_vet_warrior_pl|Dunnish Veteran Warriors
-; trp_dunnish_wolf_warrior|Dunnish Wolf Warrior
-; trp_dunnish_wolf_warrior_pl|Dunnish Wolf Warriors
-; trp_dunnish_wolf_guard|Dunnish Wolf Guard
-; trp_dunnish_wolf_guard_pl|Dunnish Wolf Guards
-; trp_dunnish_chieftan|Dunnish Raven Rider
-; trp_dunnish_chieftan_pl|Dunnish Raven Riders
+; trp_i1_harad_levy|Harad Levy
+; trp_i1_harad_levy_pl|Harad Levies
+; trp_i3_harad_infantry|Harad Light Infantry
+; trp_i3_harad_infantry_pl|Harad Light Infantry
+; trp_i4_harad_spearman|Harad Spearman
+; trp_i4_harad_spearman_pl|Harad Spearmen
+; trp_i5_harad_tiger_guard|Tiger Guard
+; trp_i5_harad_tiger_guard_pl|Tiger Guards
+; trp_i4_harad_swordsman|Harad Swordsman
+; trp_i4_harad_swordsman_pl|Harad Swordsmen
+; trp_i5_harad_lion_guard|Lion Guard
+; trp_i5_harad_lion_guard_pl|Lion Guards
+; trp_a3_harad_hunter|Harad Hunter
+; trp_a3_harad_hunter_pl|Harad Hunters
+; trp_a4_harad_archer|Harad Archer
+; trp_a4_harad_archer_pl|Harad Archers
+; trp_a5_harad_eagle_guard|Eagle Guard
+; trp_a5_harad_eagle_guard_pl|Eagle Guards
+; trp_c2_harondor_scout|Harondor Scout
+; trp_c2_harondor_scout_pl|Harondor Scouts
+; trp_c3_harondor_rider|Harondor Rider
+; trp_c3_harondor_rider_pl|Harondor Riders
+; trp_c4_harondor_light_cavalry|Harondor Light Cavalry
+; trp_c4_harondor_light_cavalry_pl|Harondor Light Cavalry
+; trp_c5_harondor_serpent_knight|Gold Serpent Knight
+; trp_c5_harondor_serpent_knight_pl|Gold Serpent Knights
+; trp_ac3_harondor_skirmisher|Harondor Skirmisher
+; trp_ac3_harondor_skirmisher_pl|Harondor Skirmishers
+; trp_ac4_harondor_horse_archer|Harondor Horse Archer
+; trp_ac4_harondor_horse_archer_pl|Harondor Horse Archers
+; trp_ac5_harondor_black_snake|Black Snake Horse Archer
+; trp_ac5_harondor_black_snake_pl|Black Snake Horse Archers
+; trp_i2_far_harad_tribesman|Far Harad Tribesman
+; trp_i2_far_harad_tribesman_pl|Far Harad Tribesmen
+; trp_i4_far_harad_champion|Far Harad Champion
+; trp_i4_far_harad_champion_pl|Far Harad Champions
+; trp_i5_far_harad_panther_guard|Panther Guard
+; trp_i5_far_harad_panther_guard_pl|Panther Guards
+; trp_i1_dun_wildman|Dunnish Wildman
+; trp_i1_dun_wildman_pl|Dunnish Wildmen
+; trp_i2_dun_warrior|Dunnish Warrior
+; trp_i2_dun_warrior_pl|Dunnish Warriors
+; trp_i3_dun_pikeman|Dunnish Pikeman
+; trp_i3_dun_pikeman_pl|Dunnish Pikemen
+; trp_i4_dun_vet_pikeman|Dunnish Veteran Pikeman
+; trp_i4_dun_vet_pikeman_pl|Dunnish Veteran Pikemen
+; trp_ac2_dun_crebain_rider|Dunnish Crebain Rider
+; trp_ac2_dun_crebain_rider_pl|Dunnish Crebain Riders
+; trp_i3_dun_vet_warrior|Dunnish Veteran Warrior
+; trp_i3_dun_vet_warrior_pl|Dunnish Veteran Warriors
+; trp_i4_dun_wolf_warrior|Dunnish Wolf Warrior
+; trp_i4_dun_wolf_warrior_pl|Dunnish Wolf Warriors
+; trp_i5_dun_wolf_guard|Dunnish Wolf Guard
+; trp_i5_dun_wolf_guard_pl|Dunnish Wolf Guards
+; trp_ac4_dun_raven_rider|Dunnish Raven Rider
+; trp_ac4_dun_raven_rider_pl|Dunnish Raven Riders
 ; trp_i1_khand_bondsman|Variag Bondsman
 ; trp_i1_khand_bondsman_pl|Variag Bondsmen
 ; trp_i2_khand_pit_dog|Warrior of Khand
@@ -810,8 +810,8 @@ trp_tribal_orc_pl|Suku Orc
 ; trp_black_numenorean_captain_pl|Black Numenorean Captains
 ; trp_black_numenorean_lieutenant|Black Numenorean Lieutenant
 ; trp_black_numenorean_lieutenant_pl|Black Numenorean Lieutenants
-; trp_dunnish_night_wolf|Dunnish Night Wolf
-; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
+; trp_a5_dun_night_wolf|Dunnish Night Wolf
+; trp_a5_dun_night_wolf_pl|Dunnish Night Wolfs
 ; trp_dunnish_lieutenant|Dunnish Hetman
 ; trp_dunnish_lieutenant_pl|Dunnish Hetmen
 ; trp_goblin_chieftain|Goblin Chieftain

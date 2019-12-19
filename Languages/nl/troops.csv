@@ -464,62 +464,62 @@ trp_dismounted_elite_skirmisher_of_rohan|Elite Schermutselaar van Rohan
 trp_dismounted_elite_skirmisher_of_rohan_pl|Elite Schermutselaren van Rohan
 trp_dismounted_thengel_guard_of_rohan|Thengel Bewaker van Rohan
 trp_dismounted_thengel_guard_of_rohan_pl|Thengel Bewakers van Rohan
-trp_harad_desert_warrior|Harad Dienstplichtige
-trp_harad_desert_warrior_pl|Harad Dienstplichtigen
-trp_harad_infantry|Harad Lichte Infanterie
-trp_harad_infantry_pl|Harad Lichte Infanterie
-trp_harad_veteran_infantry|Harad Speervechter
-trp_harad_veteran_infantry_pl|Harad Speervechters
-trp_harad_tiger_guard|Tijger Beschermer
-trp_harad_tiger_guard_pl|Tijger Beschermers
-trp_harad_swordsman|Harad Zwaardvechter
-trp_harad_swordsman_pl|Harad Zwaardvechters
-trp_harad_lion_guard|Leeuw Beschermer
-trp_harad_lion_guard_pl|Leeuw Beschermers
-trp_harad_skirmisher|Harad Jager
-trp_harad_skirmisher_pl|Harad Jagers
-trp_harad_archer|Harad Schutter
-trp_harad_archer_pl|Harad Schutters
-trp_harad_eagle_guard|Arend Beschermer
-trp_harad_eagle_guard_pl|Arend Beschermers
-trp_harondor_scout|Harondor Verkenner
-trp_harondor_scout_pl|Harondor Verkenners
-trp_harondor_rider|Harondor Ruiter
-trp_harondor_rider_pl|Harondor Ruiters
-trp_harondor_light_cavalry|Harondor Lichte Cavalerie
-trp_harondor_light_cavalry_pl|Harondor Lichte Cavalerie
-trp_fang_heavy_cavalry|Gouden Slang Ridder
-trp_fang_heavy_cavalry_pl|Gouden Slang Ridders
-trp_harad_horse_archer|Harondor Schermutselaar
-trp_harad_horse_archer_pl|Harondor Shermutselaren
-trp_black_snake_horse_archer|Harondor Ruiter met Boog
-trp_black_snake_horse_archer_pl|Harondor Ruiters met Boog
-trp_gold_serpent_horse_archer|Zwarte Slang Ruiter met Boog
-trp_gold_serpent_horse_archer_pl|Zwarte Slang Ruiter met Boog
-trp_far_harad_tribesman|Far Harad Stamlid
-trp_far_harad_tribesman_pl|Far Harad Stamleden
-trp_far_harad_champion|Far Harad Kampioen
-trp_far_harad_champion_pl|Far Harad Kampioenen
-trp_far_harad_panther_guard|Panter Beschermer
-trp_far_harad_panther_guard_pl|Panter Beschermers
-trp_dunnish_wildman|Donkerse Wilde Man
-trp_dunnish_wildman_pl|Donkerse Wilde Mannen
-trp_dunnish_warrior|Donkerse Krijger
-trp_dunnish_warrior_pl|Donkerse Krijgers
-trp_dunnish_pikeman|Donkerse Piekenier
-trp_dunnish_pikeman_pl|Donkerse Piekeniers
-trp_dunnish_veteran_pikeman|Donkerse Ervaren Piekenier
-trp_dunnish_veteran_pikeman_pl|Donkerse Ervaren Piekeniers
-trp_dunnish_raven_rider|Donkerse Crebain Ruiter
-trp_dunnish_raven_rider_pl|Donkerse Crebain Ruiters
-trp_dunnish_vet_warrior|Donkerse Ervaren Krijger
-trp_dunnish_vet_warrior_pl|Donkerse Ervaren Krijgers
-trp_dunnish_wolf_warrior|Donkerse Wolf Krijger
-trp_dunnish_wolf_warrior_pl|Donkerse wolf Krijger
-trp_dunnish_wolf_guard|Donkerse Wolf Beschermer
-trp_dunnish_wolf_guard_pl|Donkerse Wolf Beschermers
-trp_dunnish_chieftan|Donkerse Raad Ruiter
-trp_dunnish_chieftan_pl|Donkerse Raaf Ruiters
+trp_i1_harad_levy|Harad Dienstplichtige
+trp_i1_harad_levy_pl|Harad Dienstplichtigen
+trp_i3_harad_infantry|Harad Lichte Infanterie
+trp_i3_harad_infantry_pl|Harad Lichte Infanterie
+trp_i4_harad_spearman|Harad Speervechter
+trp_i4_harad_spearman_pl|Harad Speervechters
+trp_i5_harad_tiger_guard|Tijger Beschermer
+trp_i5_harad_tiger_guard_pl|Tijger Beschermers
+trp_i4_harad_swordsman|Harad Zwaardvechter
+trp_i4_harad_swordsman_pl|Harad Zwaardvechters
+trp_i5_harad_lion_guard|Leeuw Beschermer
+trp_i5_harad_lion_guard_pl|Leeuw Beschermers
+trp_a3_harad_hunter|Harad Jager
+trp_a3_harad_hunter_pl|Harad Jagers
+trp_a4_harad_archer|Harad Schutter
+trp_a4_harad_archer_pl|Harad Schutters
+trp_a5_harad_eagle_guard|Arend Beschermer
+trp_a5_harad_eagle_guard_pl|Arend Beschermers
+trp_c2_harondor_scout|Harondor Verkenner
+trp_c2_harondor_scout_pl|Harondor Verkenners
+trp_c3_harondor_rider|Harondor Ruiter
+trp_c3_harondor_rider_pl|Harondor Ruiters
+trp_c4_harondor_light_cavalry|Harondor Lichte Cavalerie
+trp_c4_harondor_light_cavalry_pl|Harondor Lichte Cavalerie
+trp_c5_harondor_serpent_knight|Gouden Slang Ridder
+trp_c5_harondor_serpent_knight_pl|Gouden Slang Ridders
+trp_ac3_harondor_skirmisher|Harondor Schermutselaar
+trp_ac3_harondor_skirmisher_pl|Harondor Shermutselaren
+trp_ac4_harondor_horse_archer|Harondor Ruiter met Boog
+trp_ac4_harondor_horse_archer_pl|Harondor Ruiters met Boog
+trp_ac5_harondor_black_snake|Zwarte Slang Ruiter met Boog
+trp_ac5_harondor_black_snake_pl|Zwarte Slang Ruiter met Boog
+trp_i2_far_harad_tribesman|Far Harad Stamlid
+trp_i2_far_harad_tribesman_pl|Far Harad Stamleden
+trp_i4_far_harad_champion|Far Harad Kampioen
+trp_i4_far_harad_champion_pl|Far Harad Kampioenen
+trp_i5_far_harad_panther_guard|Panter Beschermer
+trp_i5_far_harad_panther_guard_pl|Panter Beschermers
+trp_i1_dun_wildman|Donkerse Wilde Man
+trp_i1_dun_wildman_pl|Donkerse Wilde Mannen
+trp_i2_dun_warrior|Donkerse Krijger
+trp_i2_dun_warrior_pl|Donkerse Krijgers
+trp_i3_dun_pikeman|Donkerse Piekenier
+trp_i3_dun_pikeman_pl|Donkerse Piekeniers
+trp_i4_dun_vet_pikeman|Donkerse Ervaren Piekenier
+trp_i4_dun_vet_pikeman_pl|Donkerse Ervaren Piekeniers
+trp_ac2_dun_crebain_rider|Donkerse Crebain Ruiter
+trp_ac2_dun_crebain_rider_pl|Donkerse Crebain Ruiters
+trp_i3_dun_vet_warrior|Donkerse Ervaren Krijger
+trp_i3_dun_vet_warrior_pl|Donkerse Ervaren Krijgers
+trp_i4_dun_wolf_warrior|Donkerse Wolf Krijger
+trp_i4_dun_wolf_warrior_pl|Donkerse wolf Krijger
+trp_i5_dun_wolf_guard|Donkerse Wolf Beschermer
+trp_i5_dun_wolf_guard_pl|Donkerse Wolf Beschermers
+trp_ac4_dun_raven_rider|Donkerse Raad Ruiter
+trp_ac4_dun_raven_rider_pl|Donkerse Raaf Ruiters
 ; trp_i1_khand_bondsman|Khand Bondsman
 ; trp_i1_khand_bondsman_pl|Khand Bondsmen
 ; trp_i2_khand_pit_dog|Khand Pit Dog
@@ -811,8 +811,8 @@ trp_tribal_orc_pl|Stammen Orks
 ; trp_black_numenorean_captain_pl|Black Numenorean Captains
 ; trp_black_numenorean_lieutenant|Black Numenorean Lieutenant
 ; trp_black_numenorean_lieutenant_pl|Black Numenorean Lieutenants
-; trp_dunnish_night_wolf|Dunnish Night Wolf
-; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
+; trp_a5_dun_night_wolf|Dunnish Night Wolf
+; trp_a5_dun_night_wolf_pl|Dunnish Night Wolfs
 ; trp_dunnish_lieutenant|Dunnish Hetman
 ; trp_dunnish_lieutenant_pl|Dunnish Hetmen
 ; trp_goblin_chieftain|Goblin Chieftain

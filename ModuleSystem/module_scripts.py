@@ -14862,7 +14862,7 @@ scripts = [
 		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_one_handed_wpn,itp_type_polearm+1),(assign,":item",reg0),
 		(gt,":item",0),
 		(assign,":problem", imod_cracked), 
-		(try_begin),(eq, ":troop", "trp_dunnish_wildman"), (assign, ":item", "itm_dunland_spear"), (try_end), # exception!   Otherwie they get "orc club"
+		(try_begin),(eq, ":troop", "trp_i1_dun_wildman"), (assign, ":item", "itm_dunland_spear"), (try_end), # exception!   Otherwie they get "orc club"
 		(try_begin),(store_item_value, ":value", ":item"),(lt,":value", 50),(assign,":problem", 0), (try_end), # pity for pityful weapons!
 		(troop_add_item, "trp_player", ":item", ":problem"),
 	(try_end),
@@ -19545,7 +19545,7 @@ scripts = [
             (is_between,":troop_no","trp_i1_rhun_tribesman","trp_c4_rhun_veteran_swift_horseman"),# Rhun randomized heraldry
             (store_random_in_range,":banner_mesh","mesh_circular_8mosaic1","mesh_circular_8mosaic10"),                                            
         (else_try),
-            (is_between,":troop_no","trp_harad_desert_warrior","trp_gold_serpent_horse_archer"),# Harad randomized heraldry
+            (is_between,":troop_no","trp_i1_harad_levy","trp_ac5_harondor_black_snake"),# Harad randomized heraldry
             (store_random_in_range,":banner_mesh",275,300),                                            
         #(else_try),
             #(eq,"$player_universal_banner",1),                # indicator for the ability to set player's own banner
@@ -21604,7 +21604,7 @@ scripts = [
 	# (try_for_agents, ":agent"), # berserkers heal
 		# (agent_is_alive, ":agent"),
 		# (agent_get_troop_id, ":troop", ":agent"),
-		# (this_or_next|eq, ":troop", "trp_dunnish_wolf_warrior"),
+		# (this_or_next|eq, ":troop", "trp_i4_dun_wolf_warrior"),
 		# (this_or_next|eq, ":troop", "trp_dunnish_berserker"),
 		# (this_or_next|eq, ":troop", "trp_fighting_uruk_hai_berserker"),
 		# (this_or_next|eq, ":troop", "trp_i4_khand_pit_champion"),
@@ -22233,12 +22233,12 @@ scripts = [
 
 		(assign, ":continue", 1),
 		(try_begin),
-			(this_or_next|eq, ":troop_id", "trp_dunnish_night_wolf"),
+			(this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"),
 			(this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"),
 			(this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"),
 			(this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"),
 			(this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"),
-			(this_or_next|eq, ":troop_id", "trp_far_harad_panther_guard"),
+			(this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"),
 			(this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"),
 			(this_or_next|eq, ":troop_id", "trp_olog_hai"),
 			(			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"),
