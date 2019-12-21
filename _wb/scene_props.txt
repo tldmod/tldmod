@@ -5474,7 +5474,7 @@ spr_isen_pillar_steel_adorno 0 0 isen_pillar_steel_adorno bo_isen_pillar_adorno 
 spr_umbar_corsair_ship 0 0 corsair_ship bo_corsair 0
 
 
-spr_arena_barrier_small_ado 0 0 ado_wood_arena_barrier bo_ado_wood_arena_barrier 0
+spr_fence_barrier_small_ado 0 0 ado_wood_arena_barrier bo_ado_wood_arena_barrier 0
 
 
 spr_arena_full_ado 0 0 ado_wood_arena_training bo_ado_wood_arena_training 0
@@ -5705,13 +5705,13 @@ spr_tourney_barrier_ado_short_painted 0 0 ado_wood_tourney_barrier_short_painted
 spr_tourney_barrier_ado_short_painted_dark 0 0 ado_wood_tourney_barrier_short_painted_dark bo_ado_wood_tourney_barrier_short_painted_dark 0
 
 
-spr_tourney_fence_ado 0 0 ado_wood_tourney_fence bo_ado_wood_tourney_fence 0
+spr_fence_simple_ado 0 0 ado_wood_tourney_fence bo_ado_wood_tourney_fence 0
 
 
-spr_tourney_fence_ado_post 0 0 ado_wood_tourney_fence_post bo_ado_wood_tourney_fence_post 0
+spr_fence_simple_ado_post 0 0 ado_wood_tourney_fence_post bo_ado_wood_tourney_fence_post 0
 
 
-spr_tourney_fence_ado_short 0 0 ado_wood_tourney_fence_short bo_ado_wood_tourney_fence_short 0
+spr_fence_simple_ado_short 0 0 ado_wood_tourney_fence_short bo_ado_wood_tourney_fence_short 0
 
 
 spr_tourney_podium_ado 0 0 ado_wood_tourney_podium bo_ado_wood_tourney_podium 0

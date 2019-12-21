@@ -2843,7 +2843,7 @@ scene_props = [
 ("umbar_corsair_ship",0,"corsair_ship","bo_corsair", []),
 
 #Adorno's wood props OSP (renamed for easier findability)
-( "arena_barrier_small_ado"                     ,0,"ado_wood_arena_barrier","bo_ado_wood_arena_barrier",[]),
+( "fence_barrier_small_ado"                     ,0,"ado_wood_arena_barrier","bo_ado_wood_arena_barrier",[]),
 ( "arena_full_ado"                   		 ,0,"ado_wood_arena_training","bo_ado_wood_arena_training",[]),
 ( "bench_fine_ado"                        ,0,"ado_wood_bench_fine","bo_ado_wood_bench_fine",[]),
 ( "bench_plain_ado"                       ,0,"ado_wood_bench_plain","bo_ado_wood_bench_plain",[]),
@@ -2925,9 +2925,9 @@ scene_props = [
 ( "tourney_barrier_ado_short"             ,0,"ado_wood_tourney_barrier_short","bo_ado_wood_tourney_barrier_short",[]),
 ( "tourney_barrier_ado_short_painted"     ,0,"ado_wood_tourney_barrier_short_painted","bo_ado_wood_tourney_barrier_short_painted",[]),
 ( "tourney_barrier_ado_short_painted_dark",0,"ado_wood_tourney_barrier_short_painted_dark","bo_ado_wood_tourney_barrier_short_painted_dark",[]),
-( "tourney_fence_ado"                     ,0,"ado_wood_tourney_fence","bo_ado_wood_tourney_fence",[]),
-( "tourney_fence_ado_post"                ,0,"ado_wood_tourney_fence_post","bo_ado_wood_tourney_fence_post",[]),
-( "tourney_fence_ado_short"               ,0,"ado_wood_tourney_fence_short","bo_ado_wood_tourney_fence_short",[]),
+( "fence_simple_ado"                     ,0,"ado_wood_tourney_fence","bo_ado_wood_tourney_fence",[]),
+( "fence_simple_ado_post"                ,0,"ado_wood_tourney_fence_post","bo_ado_wood_tourney_fence_post",[]),
+( "fence_simple_ado_short"               ,0,"ado_wood_tourney_fence_short","bo_ado_wood_tourney_fence_short",[]),
 ( "tourney_podium_ado"                    ,0,"ado_wood_tourney_podium","bo_ado_wood_tourney_podium",[]),
 ( "tourney_podium_ado_painted"            ,0,"ado_wood_tourney_podium_painted","bo_ado_wood_tourney_podium_painted",[]),
 ( "tourney_podium_ado_painted_dark"       ,0,"ado_wood_tourney_podium_painted_dark","bo_ado_wood_tourney_podium_painted_dark",[]),
