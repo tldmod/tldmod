@@ -1311,7 +1311,7 @@ items =[
 ["dwarf_armor_c","Erebor_Scale_Mail",[("dwarf_scalemail_light",0),("dwarf_scalemail_dwarfonly_backup",imodbits_elf_armor)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2008,weight(23)|head_armor(2)|body_armor(43)|leg_armor(13)|difficulty(18),imodbits_elf_armor,],
 ["dwarf_vest","Dwarven_Tunic",[("dwarf_tunic_erebor",0),("dwarf_tunic_ironhills",imodbits_elf_cloth)],itp_type_body_armor|itp_covers_legs|itp_shop,0,258,weight(5)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_elf_cloth,],
 ["dwarf_vest_b","Iron_Hills_Mail",[("dwarf_mail",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1208,weight(18)|head_armor(0)|body_armor(35)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
-["dwarf_pad_boots","Dwarven_Padded_Boots",[("dwarf_pad_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,708,weight(1)|leg_armor(15)|difficulty(0),imodbits_elf_cloth],
+["dwarf_pad_boots","Dwarven_Padded_Boots",[("fi_boot13_dwarf",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,708,weight(1)|leg_armor(15)|difficulty(0),imodbits_elf_cloth],
 ["dwarf_chain_boots","Dwarven_Mail_Chausses",[("dwarf_chain_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1208,weight(2)|leg_armor(25)|difficulty(0),imodbits_elf_armor],
 ["dwarf_scale_boots","Dwarven_Scale_Boots",[("dwarf_scale_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1508,weight(2)|leg_armor(30)|difficulty(0),imodbits_elf_armor],
 

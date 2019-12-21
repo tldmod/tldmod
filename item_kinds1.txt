@@ -2480,7 +2480,7 @@ itemsfile version 2
  itm_dwarf_vest_b Iron_Hills_Mail Iron_Hills_Mail 1  dwarf_mail 0  16842765 0 1208 704643072 18 100 0 35 10 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_pad_boots Dwarven_Padded_Boots Dwarven_Padded_Boots 1  dwarf_pad_boots 0  69390 0 708 251658240 1 100 0 0 15 0 0 0 0 0 0 0 0
+ itm_dwarf_pad_boots Dwarven_Padded_Boots Dwarven_Padded_Boots 1  fi_boot13_dwarf 0  69390 0 708 251658240 1 100 0 0 15 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_chain_boots Dwarven_Mail_Chausses Dwarven_Mail_Chausses 1  dwarf_chain_boots 0  69390 0 1208 704643072 2 100 0 0 25 0 0 0 0 0 0 0 0
