@@ -3437,40 +3437,48 @@ simple_triggers = [
   #Kham - Cannibalsim / Elven Migration Trigger Start
   (36,
     [
+
+
       #(eq, "$cheat_mode", 1),
-      (store_random_in_range, ":random",0,100), #Chance to trigger
       (try_begin),
-        (map_free),
-        (party_get_num_companions, ":size", "p_main_party"),
-        (gt, ":size", 15), #Don't trigger if less than 15 troops
-        #(assign, reg6, ":random"),
-        #(display_message, "@Random Number - {reg6}", color_good_news),
-        (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
-        (party_get_morale, ":morale", "p_main_party"),
-        
-        (try_begin), #Now we check if we are going to cannibalize or elves wanna go west
-          (neq, ":side", faction_side_good), #Evil only
-          (le, ":random", 45), #45% chance to trigger
-          (call_script, "script_are_there_orcs", "p_main_party"), #Are there orcs/uruks?
-          (gt, reg0, 0),
-          (gt, "$g_player_party_morale_modifier_no_food", 0), #No food
-          (jump_to_menu, "mnu_hungry_orc"),
-        (else_try),
-          (assign, ":chance", 30), #Base chance for it occurring
-          (try_begin), #The conditions that reduce likelihood of triggering start here
-            (is_between, "$current_player_region", region_lebennin, region_n_ithilien),
-            (val_add, ":chance",10),
+        (display_message, "@cannibal trigger 1"),
+        (troop_slot_eq, "trp_player", slot_troop_state, 0),(display_message, "@cannibal trigger 2"),
+        (store_random_in_range, ":random",0,100), #Chance to trigger
+        (try_begin),
+          (map_free),
+          (party_get_num_companions, ":size", "p_main_party"),
+          (gt, ":size", 15), #Don't trigger if less than 15 troops
+          #(assign, reg6, ":random"),
+          #(display_message, "@Random Number - {reg6}", color_good_news),
+          (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
+          (party_get_morale, ":morale", "p_main_party"),
+          
+          (try_begin), #Now we check if we are going to cannibalize or elves wanna go west
+            (neq, ":side", faction_side_good), #Evil only
+            (le, ":random", 45), #45% chance to trigger
+            (call_script, "script_are_there_orcs", "p_main_party"), #Are there orcs/uruks?
+            (gt, reg0, 0),
+            (gt, "$g_player_party_morale_modifier_no_food", 0), #No food
+            (jump_to_menu, "mnu_hungry_orc"),
+          (else_try),
+            (assign, ":chance", 30), #Base chance for it occurring
+            (try_begin), #The conditions that reduce likelihood of triggering start here
+              (is_between, "$current_player_region", region_lebennin, region_n_ithilien),
+              (val_add, ":chance",10),
+            (try_end),
+            (try_begin),
+              (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 1),
+              (val_sub, ":chance", 10),
+            (try_end),
+            (call_script, "script_are_there_elves", "p_main_party"),
+            (gt, reg0,0),
+            (le, ":random", ":chance"),
+            (le, ":morale", low_party_morale),
+            (jump_to_menu, "mnu_leaving_elf"),
           (try_end),
-          (try_begin),
-            (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 1),
-            (val_sub, ":chance", 10),
-          (try_end),
-          (call_script, "script_are_there_elves", "p_main_party"),
-          (gt, reg0,0),
-          (le, ":random", ":chance"),
-          (le, ":morale", low_party_morale),
-          (jump_to_menu, "mnu_leaving_elf"),
         (try_end),
+      (else_try),
+        (troop_set_slot, "trp_player", slot_troop_state, 0),
       (try_end),
   ]),
   

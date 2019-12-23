@@ -9794,7 +9794,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   (else_try),
     (call_script, "script_change_player_party_morale", 8), #If the player just has no food (ie, party morale is > low morale constant, we'll just add +5 morale.
   (try_end),
-  (change_screen_map),]],
+  (troop_set_slot, "trp_player", slot_troop_state, 99), #use this to make sure trigger fires again after 36 hours.
+  #(change_screen_map),
+  (jump_to_menu, "mnu_precannibalism"),
+  ]],
 
 [anyone,"hungry_orc_no_check", 
   [(party_get_skill_level, ":leadership", "p_main_party", skl_leadership),
@@ -9855,7 +9858,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (try_end),
    (else_try),
      (party_get_num_companions, ":troops", "p_main_party"),
-     (val_div, ":troops",20), #Eat 20% of your low level troops
+     #(val_div, ":troops",20), #Eat 20% of your low level troops
      (val_min, ":troops", 15), #Up to a max of 10
      (call_script, "script_remove_highest_or_lowest_level_troop", "p_main_party", ":troops", 0),
      (assign, reg1, ":troops"),
@@ -9870,7 +9873,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (call_script, "script_change_player_party_morale", 4), #If the player just has no food (ie, party morale is > low morale constant, we'll just add +5 morale.
     (try_end),
    (try_end),
-   (change_screen_map)]],
+   (troop_set_slot, "trp_player", slot_troop_state, 99), #use this to make sure trigger fires again after 36 hours.
+   #(change_screen_map)
+   (jump_to_menu, "mnu_precannibalism"),
+   ]],
 
 [anyone,"start", [(this_or_next|eq, "$g_talk_troop", "trp_longing_lorien"), (this_or_next|eq, "$g_talk_troop", "trp_longing_imladris"),(eq, "$g_talk_troop", "trp_longing_woodelf")],"Look, my {lord/lady}, gulls! A wonder they are to me and a trouble to my heart.", "sad_elf_1", []],
 [anyone|plyr,"sad_elf_1", [],"I hear their voices. What news do they bring?", "sad_elf_2", []],
@@ -9892,7 +9898,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   (call_script, "script_change_player_party_morale", 5),
  (try_end),
  (set_show_messages, 1),
- (change_screen_map)]],
+ (troop_set_slot, "trp_player", slot_troop_state, 99), #use this to make sure trigger fires again after 36 hours.
+ #(change_screen_map)
+ (jump_to_menu, "mnu_precannibalism"),
+ ]],
 
 [anyone,"sad_elf_no", [
     (party_get_skill_level, ":leadership", "p_main_party", skl_leadership),
@@ -9975,7 +9984,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (call_script, "script_change_player_party_morale", 4),
    (try_end),
    (set_show_messages, 1),
-   (change_screen_map)]],
+   (troop_set_slot, "trp_player", slot_troop_state, 99), #use this to make sure trigger fires again after 36 hours.
+   #(change_screen_map)
+   (jump_to_menu, "mnu_precannibalism"),
+   ]],
 
 # Morale Troops Dialogue END - Kham
 

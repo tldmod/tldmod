@@ -2291,6 +2291,7 @@ game_menus = [
     (party_get_num_companions, reg1, "p_main_party"),
     (assign, reg0, ":old_size"),
     (display_message, "@Party size increased from {reg0} to {reg1}!", 0x30FFC8),
+    (troop_set_slot, "trp_player", slot_troop_state, 0),
    ]),
    # ("camp_mvtest_free_willy",[],"Free all prisoners (for corrupt saves)",[
     # (spawn_around_party, "p_main_party", "pt_looters"),
@@ -11876,6 +11877,16 @@ game_menus = [
  # "none",
    # [],[("leave",[],"Back...",[(change_screen_return)])],
  # ),
+
+
+## Dummy Menu for Cannibalism. This seems to be needed...
+
+("precannibalism",0,"none","none", 
+   [
+	(change_screen_map),
+   ],[]
+ ),
+
 
 # Death menu. Just a placeholder...
 ( "death", mnf_disable_all_keys,
