@@ -23928,7 +23928,7 @@ command_cursor_scripts = [
 
 		#Debug
 		(try_begin),
-			#(eq, "$cheat_mode", 1),
+			(eq, "$cheat_mode", 1),
 			(str_store_troop_name, s1, ":mintroop"),
 			(try_begin),
 				(eq, ":minmax",0),

@@ -3441,8 +3441,7 @@ simple_triggers = [
 
       #(eq, "$cheat_mode", 1),
       (try_begin),
-        (display_message, "@cannibal trigger 1"),
-        (troop_slot_eq, "trp_player", slot_troop_state, 0),(display_message, "@cannibal trigger 2"),
+        (troop_slot_eq, "trp_player", slot_troop_state, 0),
         (store_random_in_range, ":random",0,100), #Chance to trigger
         (try_begin),
           (map_free),
