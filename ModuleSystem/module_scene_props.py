@@ -2960,6 +2960,8 @@ scene_props = [
 ( "windmill_post_ado_full_sail_red"       ,0,"ado_wood_windmill_post_full_sail_red","bo_ado_wood_windmill_post_full_sail_red",[]),
 ( "windmill_post_ado_sails_off"           ,0,"ado_wood_windmill_post_sails_off","bo_ado_wood_windmill_post_sails_off",[]),
 
+("Dale_Bell_Tower_wood",0,"Dale_church_tower_wood","bo_Dale_church_tower_a", []),
+("Dale_Bell",0,"Dale_bell","0", []),
 
 #InVain props end
 
