@@ -3179,36 +3179,24 @@ ai_scripts = [
 # Input: party1, party2
 # Output: reg0 - distance
 ("get_tld_distance", [
-     (store_script_param, ":party1", 1),
-     (store_script_param, ":party2", 2),
-     # (try_begin), # one is south of WM, the other north of WM
-       # (assign, ":count", 0),
-       # (try_begin),
-         # (call_script, "script_cf_party_is_south_of_white_mountains", ":party1"),
-         # (call_script, "script_cf_party_is_north_of_white_mountains", ":party2"),
-         # (val_add, ":count", 1),
-       # (try_end),
-       # (try_begin),
-         # (call_script, "script_cf_party_is_south_of_white_mountains", ":party2"),
-         # (call_script, "script_cf_party_is_north_of_white_mountains", ":party1"),
-         # (val_add, ":count", 1),
-       # (try_end),
-       # (eq, ":count", 1), #xor, but should never be 2
-	(try_begin),
-		#(call_script, "script_cf_party_west_of_minas_tirith", ":party1"),
-		(call_script, "script_party_which_side_of_white_mountains", ":party2"), (assign, ":s2", reg0),
-		(call_script, "script_party_which_side_of_white_mountains", ":party1"), (assign, ":s1", reg0),
-		(neq, ":s1", ":s2"),  # not on same side
-		(store_distance_to_party_from_party, ":dist1", ":party1", "p_town_minas_tirith"),
-		(store_distance_to_party_from_party, reg0, ":party2", "p_town_minas_tirith"),
-		(val_add, reg0, ":dist1"),
-	(else_try),
-		(store_distance_to_party_from_party, reg0, ":party1", ":party2"),
-	(try_end),
-# (store_distance_to_party_from_party, reg1, ":party1", ":party2"),
-# (str_store_party_name, s13, ":party1"),
-# (str_store_party_name, s14, ":party2"),
-# (display_message, "@Debug: TLD distance between {s13} and {s14}: {reg0} (regular: {reg1})."),
+    (store_script_param, ":party1", 1),
+    (store_script_param, ":party2", 2),
+
+    (try_begin),
+        (call_script, "script_party_which_side_of_white_mountains", ":party2"), (assign, ":s2", reg0),
+        (call_script, "script_party_which_side_of_white_mountains", ":party1"), (assign, ":s1", reg0),
+        (neq, ":s1", ":s2"),  # not on same side
+        (store_distance_to_party_from_party, ":dist1", ":party1", "p_town_minas_tirith"),
+        (store_distance_to_party_from_party, reg0, ":party2", "p_town_minas_tirith"),
+        (val_add, reg0, ":dist1"),
+    (else_try),
+        (store_distance_to_party_from_party, reg0, ":party1", ":party2"),
+    (try_end),
+
+    # (store_distance_to_party_from_party, reg1, ":party1", ":party2"),
+    # (str_store_party_name, s13, ":party1"),
+    # (str_store_party_name, s14, ":party2"),
+    # (display_message, "@Debug: TLD distance between {s13} and {s14}: {reg0} (regular: {reg1})."),
 ]),
 
 # Kham - Attack Center Script
