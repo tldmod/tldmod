@@ -28365,10 +28365,12 @@ if is_a_wb_script==1:
 
 # script_cf_get_nearest_bandit_party
 # Input: none
-# Output: Nearest Bandit Troop to -player party, saves party template too
-
+# Output: First bandit party that is closer than 75 units of distance to the player
+#           If no party is available, returns distance = -1
+#         reg0 - party_id
+#         reg1 - party_template
+#         reg2 - distance
 ("cf_get_nearest_bandit_party", [
-
 	(assign, ":found", 0),
 
 	(try_for_parties, ":nearest_bandit_party"),
@@ -28379,11 +28381,10 @@ if is_a_wb_script==1:
 		(neq, ":party_template", "pt_deserters"), #not deserter troops
 		(call_script, "script_get_tld_distance", "p_main_party", ":nearest_bandit_party"),
 		(assign, ":dist", reg0),
-		#(store_distance_to_party_from_party, ":dist", "p_main_party", ":nearest_bandit_party"),
-		(le, ":dist", 75), 
+		(le, ":dist", 75),
 		(call_script, "script_party_count_fit_for_battle", ":nearest_bandit_party"),
-		(gt, reg0, 0), 
-		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0), 
+		(gt, reg0, 0),
+		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0),
 		(assign, ":found", 1),
 
 		#Debug
@@ -28396,10 +28397,14 @@ if is_a_wb_script==1:
 		(try_end),
 	(try_end),
 
-	(gt, ":troop", 0),
-	(assign, reg0, ":troop"),
-	(assign, reg1, ":party_template"),
-
+	(try_begin),
+		(eq, ":found", 1),
+		(assign, reg0, ":troop"),
+		(assign, reg1, ":party_template"),
+		(assign, reg2, ":dist"),
+	(else_try),
+		(assign, reg2, -1),
+	(try_end),
 ]),
 
 
