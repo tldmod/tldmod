@@ -28411,11 +28411,12 @@ if is_a_wb_script==1:
 # script_cf_init_kill_quest_bandit
 
 ("cf_init_kill_quest_bandit", [
-
 	(store_character_level, ":player_level", "trp_player"),
 	(ge, ":player_level", 2),
-	
+
 	(call_script, "script_cf_get_nearest_bandit_party"),
+	(ge, reg2, 0), # reg2 holds the distance to the bandit party
+
 	(assign, ":target_troop", reg0),
 	(assign, ":target_template", reg1),
 
@@ -28425,10 +28426,9 @@ if is_a_wb_script==1:
 	(store_mul, ":xp_reward", ":amount", 4),
 	(store_add, ":gold_reward", ":xp_reward", 40),
 
-	
 	(store_div, ":rank_reward", ":xp_reward", 20),
 	(val_min, ":rank_reward", 10),
-	
+
 	(store_div, ":exp", ":amount", 3),
 	(val_add, ":exp", 7),
 
@@ -28442,7 +28442,6 @@ if is_a_wb_script==1:
 	(assign, reg62, ":exp"),				#quest_expiration_days
 	(assign, reg63, 10),					#quest_dont_give_again_period
 	(assign, reg64, ":target_template"),	#quest_target_party_template
-
 ]),
 
 # script_cf_init_defeat_lord_quest
