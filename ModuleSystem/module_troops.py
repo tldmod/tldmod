@@ -411,9 +411,9 @@ itm_green_dress = (itm_white_tunic_a, imod_rough)
 itm_gondor_fine_outfit_dress = (itm_white_tunic_a, imod_large_bag) 
 itm_rohan_fine_outfit_dale_dress = (itm_white_tunic_a, imod_rotten) 
 itm_robe_generic_dress = (itm_white_tunic_a, imod_fresh)
-itm_wimple_a = (itm_blackroot_hood, imod_bent)
-itm_wimple_with_veil = (itm_blackroot_hood, imodbit_cracked)
-itm_fine_hat = (itm_blackroot_hood, imodbit_rusty)
+itm_wimple_a = (itm_hood_black, imod_bent)
+itm_wimple_with_veil = (itm_hood_black, imodbit_cracked)
+itm_fine_hat = (itm_hood_black, imodbit_rusty)
 itm_riv_helm_glorfi = (itm_witchking_helmet, imod_rotten)
 itm_troll_feet_boots = (itm_ent_feet_boots, imod_cracked)
 itm_olog_feet_boots = (itm_ent_feet_boots, imod_hardened)
@@ -455,6 +455,25 @@ itm_leather_boots_bad = 		(itm_leather_boots, imod_rusty)
 itm_leather_boots_dark_bad = 	(itm_leather_boots_dark, imod_rusty)
 itm_splinted_greaves_good = 	(itm_splinted_greaves, imod_reinforced)
 itm_rohan_shoes_bad = 			(itm_rohan_shoes, imod_rusty)
+
+#replacing Hoods
+itm_dunedain_helm_a = itm_hood_grey
+itm_gondor_ranger_hood = itm_hood_green
+itm_gondor_ranger_hood_mask = (itm_hood_green, imod_reinforced)
+itm_blackroot_hood = itm_hood_black
+itm_lamedon_hood = itm_hood_grey
+itm_pelargir_hood = itm_hood_grey
+itm_umb_hood = itm_hood_black
+
+#hood variants
+itm_hood_black_good = (itm_hood_black, imod_thick)
+itm_hood_black_bad = (itm_hood_black, imod_rusty)
+itm_hood_green_good = (itm_hood_green, imod_thick)
+itm_hood_green_bad = (itm_hood_green, imod_rusty)
+itm_hood_grey_good = (itm_hood_grey, imod_thick)
+itm_hood_grey_bad = (itm_hood_grey, imod_rusty)
+itm_hood_leather_good = (itm_hood_leather, imod_thick)
+itm_hood_leather_bad = (itm_hood_leather, imod_rusty)
 
 #Dwarf helm variants
 itm_dwarf_helm_coif_reinf = (itm_dwarf_helm_coif, imod_reinforced)
@@ -625,7 +644,7 @@ itm_dale_heavy_c_ok = (itm_dale_heavy_c, imod_plain)
 itm_dale_heavy_c_good = (itm_dale_heavy_c, imod_reinforced)	
 
 #Umbar armours
-itm_umb_hood_mask = (itm_umb_hood, imod_reinforced)
+itm_umb_hood_mask = (itm_hood_black, imod_reinforced)
 itm_umb_helm_c_good = (itm_umb_helm_c, imod_thick)
 itm_umb_helm_d_good = (itm_umb_helm_d, imod_thick)
 itm_umb_shield_e	= (itm_umb_shield_a, imod_thick)
@@ -679,6 +698,9 @@ itm_lorien_heavy_bad = (itm_lorien_armor_c , imod_crude)
 itm_lorien_heavy_cloak = (itm_lorien_armor_c , imod_cloak)
 itm_lorien_heavy_good = (itm_lorien_armor_c , imod_thick)
 itm_lorien_heavy_good_cloak = (itm_lorien_armor_c , imod_lordly)
+itm_lorien_helm_a_good = (itm_lorien_helm_a, imod_thick)
+itm_lorien_helm_b_good = (itm_lorien_helm_b, imod_thick)
+
 
 #Khand helms
 itm_khand_inf_helm_a_good = (itm_khand_inf_helm_a, imod_reinforced)
@@ -802,34 +824,6 @@ troops = [
 #soldiers:
 #######################################
 #@@@@@@@@@@@@%%%%%%%%%%%%%%%%%%
-#Brigands
-# ["brigand_lord","Brigand_Lord","Brigand_Lords",tf_mounted|tfg_gloves|tfg_armor|tfg_helmet|tfg_horse|tfg_boots,0,0,fac_brigands,
-# [itm_leather_jerkin,itm_sword_two_handed_a,itm_sword_two_handed_a,itm_two_handed_axe,itm_wooden_shield,itm_hunter,itm_leather_gloves,itm_splinted_greaves],
-# def_attrib|level(35),wp(205),knows_common|knows_tactics_2|knows_riding_5|knows_shield_2|knows_power_strike_4|knows_ironflesh_4,bandit_face1,bandit_face2],
-# ["brigand_lieutenant","Brigand_Lieutenant","Brigand_Lieutenants",tf_mounted|tfg_gloves|tfg_armor|tfg_helmet|tfg_horse|tfg_boots,0,0,fac_brigands,
-# [itm_leather_jerkin,itm_sword_medieval_c,itm_sword_two_handed_a,itm_sword_two_handed_a,itm_two_handed_axe,itm_wooden_shield,itm_fur_covered_shield,itm_hunter,itm_leather_gloves,itm_leather_boots],
-# def_attrib|level(25),wp(165),knows_common|knows_tactics_1|knows_riding_5|knows_shield_2|knows_power_strike_3|knows_ironflesh_3,bandit_face1,bandit_face2],
-# ["master_brigand","Master_Brigand","Master_Brigands",tf_mounted|tfg_gloves|tfg_armor|tfg_helmet|tfg_horse|tfg_boots,0,0,fac_brigands,
-# [itm_leather_jerkin,itm_sword_medieval_c,itm_sword_medieval_c,itm_sword_two_handed_a,itm_two_handed_axe,itm_wooden_shield,itm_hunter,itm_leather_gloves,itm_leather_boots],
-# def_attrib|level(23),wp(170),knows_common|knows_riding_4|knows_shield_2|knows_power_strike_3|knows_ironflesh_3,bandit_face1,bandit_face2],
-# ["veteran_brigand","Veteran_Brigand","Veteran_Brigands",tf_mounted|tfg_armor|tfg_helmet|tfg_horse|tfg_boots,0,0,fac_brigands,
-# [itm_spear,itm_sword_medieval_c,itm_two_handed_axe,itm_sword_medieval_c,itm_fur_covered_shield,itm_leather_jerkin,itm_mail_boots,itm_saddle_horse,itm_hunter,itm_leather_boots],
-# def_attrib|level(20),wp(120),knows_common|knows_riding_3|knows_shield_2|knows_power_strike_2|knows_ironflesh_2,bandit_face1,bandit_face2],
-# ["brigand","Brigand","Brigands",tfg_armor|tfg_boots,0,0,fac_brigands,
-# [itm_arrows,itm_sword_medieval_c,itm_sword_medieval_c,itm_wooden_shield,itm_wooden_shield,itm_short_bow,itm_fur_coat,itm_leather_boots,itm_leather_boots,itm_sumpter_horse],
-# def_attrib|level(14),wp(100),knows_common|knows_shield_2|knows_power_strike_2|knows_ironflesh_1,bandit_face1,bandit_face2],
-# ["cutthroat","Cutthroat","Cutthroats",tfg_armor|tfg_boots,0,0,fac_brigands,
-# [itm_arrows,itm_sword_medieval_c,itm_wooden_shield,itm_wooden_shield,itm_short_bow,itm_fur_coat,itm_leather_boots,itm_sumpter_horse],
-# def_attrib|level(9),wp(90),knows_common|knows_shield_2|knows_power_strike_1|knows_ironflesh_1,bandit_face1,bandit_face2],
-# ["thug","Thug","looters",tfg_boots,0,0,fac_brigands,
-# [itm_one_handed_war_axe_a,itm_linen_tunic, itm_fur_coat,itm_fur_coat,itm_leather_boots,itm_leather_boots],
-# def_attrib|level(4),wp(80),knows_common,bandit_face1,pirate_face2],
-# ["master_slaver","Master_Slaver","Master_Slavers",tf_mounted|tfg_gloves|tfg_armor|tfg_horse|tfg_boots,0,0,fac_brigands,
-# [itm_quarter_staff,itm_fur_covered_shield,itm_leather_jerkin,itm_hunter,itm_courser,itm_leather_gloves,itm_leather_boots],
-# def_attrib|level(23),wp(165),knows_common|knows_riding_4|knows_shield_2|knows_power_strike_3|knows_ironflesh_3,bandit_face1,bandit_face2],
-# ["brigand_slaver","Brigand_Slaver","Brigand_Slavers",tf_mounted|tfg_armor|tfg_helmet|tfg_boots,0,0,fac_brigands,
-# [itm_quarter_staff,itm_fur_covered_shield,itm_leather_jerkin,itm_mail_boots,itm_saddle_horse,itm_hunter],
-# def_attrib|level(20),wp(125),knows_common|knows_riding_3|knows_shield_2|knows_power_strike_2|knows_ironflesh_2,bandit_face1,bandit_face2],
 
 #Woodmen
 ["i1_woodmen_man","Woodmen_Settler","Woodmen_Settlers",tfg_armor| tfg_boots,0,0,fac_beorn,[itm_gondor_ranger_hood,itm_woodman_tunic,itm_rohan_shoes,itm_beorn_staff, itm_axe_a,],attr_tier_1,wp_tier_1,knows_common|knows_athletics_2|knows_power_strike_1|knows_ironflesh_1,rohan_face_younger_1,rohan_face_middle_2],

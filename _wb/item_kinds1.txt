@@ -333,16 +333,16 @@ itemsfile version 2
  itm_black_tunic Black_Tunic Black_Tunic 1  gondor_tunic 0  553713677 0 100 123731968 2 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_free_green_tunic Green_Tunic Green_Tunic 1  rohan_tunic 0  553713677 0 100 123731968 2 100 0 3 3 0 0 0 0 0 0 0 0
+ itm_hood_black Black_Hood Black_Hood 6  fi_helm10_black 0  hood_black_simple 134  fi_helm10_black_mask 167772160  gondor_wimple_a 8  gondor_wimple_b 2  gondor_fine_fem_hat 4  1073807372 0 100 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_free_red_tunic Red_Tunic Red_Tunic 1  haradrim_tunic 0  553713677 0 100 123731968 2 100 0 3 3 0 0 0 0 0 0 0 0
+ itm_hood_green Green_Hood Green_Hood 3  fi_helm10_green 0  hood_green_simple 134  fi_helm10_green_mask 167772160  1073807372 0 150 167772294 1 100 14 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_free_leather_apron Leather_Apron Leather_Apron 1  smith_leather_apron 0  553713677 0 50 123731968 3 100 0 8 7 0 0 0 0 0 0 0 0
+ itm_hood_grey Grey_Hood Grey_Hood 3  fi_helm10_grey 0  hood_grey_simple 134  hood_grey_large 167772160  1073807372 0 100 167772294 1 100 11 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_free_leather_jerkin Leather_Jerkin Leather_Jerkin 1  generic_leather_jerkin 0  553713677 0 300 123731968 6 100 0 10 6 0 0 0 0 0 0 0 0
+ itm_hood_leather Leather_Hood Leather_Hood 3  fi_helm10_leather 0  hood_leather_simple 134  fi_helm10_leather_mask 167772160  1073807372 0 300 167772294 1 100 15 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_free_fur_coat Dale_Coat Dale_Coat 1  dale_coat 0  553713677 0 400 123731968 6 100 0 13 6 0 0 0 0 0 0 0 0

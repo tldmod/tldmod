@@ -395,7 +395,7 @@ items =[
 ["free_pilgrim_disguise","Pilgrim_Disguise",[("tld_robe_generic_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,25,weight(2)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_cloth,[]],
 
 ###ARMOR
-#handwear
+#handwear, boots
 ["leather_gloves","Leather_Gloves",[("CWE_gloves_a_L",0),("narf_leather_gauntlet_L",imodbits_elf_cloth), ("undeadtest_handL",imodbit_poor)],itp_type_hand_armor|itp_shop,0,200,weight(0.2)|body_armor(2)|difficulty(0),imodbits_cloth,[]],
 ["mail_mittens","Mail_Mittens",[("CWE_gauntlets_crysader_L",0)],itp_type_hand_armor|itp_shop,0,600,weight(1)|body_armor(4)|difficulty(0),imodbits_elf_armor,[]],
 ["leather_boots","Leather_Boots",[("fi_boot13",imodbits_armor_bad),("fi_boot8",0)],itp_type_foot_armor|itp_shop,0,200,weight(1)|leg_armor(12)|difficulty(0),imodbits_cloth],
@@ -409,10 +409,10 @@ items =[
 ["furry_boots","Furry_Boots",[("furry_boots",0)],itp_type_foot_armor|itp_shop,0,150,weight(1)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
 ["free_blue_tunic","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["black_tunic","Black_Tunic",[("gondor_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
-["free_green_tunic","Green_Tunic",[("rohan_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
-["free_red_tunic","Red_Tunic",[("haradrim_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
-["free_leather_apron","Leather_Apron",[("smith_leather_apron",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,50,weight(3)|head_armor(0)|body_armor(8)|leg_armor(7)|difficulty(0),imodbits_cloth,[]],
-["free_leather_jerkin","Leather_Jerkin",[("generic_leather_jerkin",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,300,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["hood_black","Black_Hood",[("fi_helm10_black",0),("hood_black_simple",imodbits_armor_bad),("fi_helm10_black_mask",imodbits_armor_good),("gondor_wimple_a",imodbit_bent),("gondor_wimple_b",imodbit_cracked),("gondor_fine_fem_hat",imodbit_rusty)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,100,weight(1)|head_armor(12)|difficulty(0),imodbits_armor,[]],
+["hood_green","Green_Hood",[("fi_helm10_green",0),("hood_green_simple",imodbits_armor_bad),("fi_helm10_green_mask",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,150,weight(1)|head_armor(14)|difficulty(0),imodbits_armor,[]],
+["hood_grey","Grey_Hood",[("fi_helm10_grey",0),("hood_grey_simple",imodbits_armor_bad),("hood_grey_large",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,100,weight(1)|head_armor(11)|difficulty(0),imodbits_armor,[]],
+["hood_leather","Leather_Hood",[("fi_helm10_leather",0),("hood_leather_simple",imodbits_armor_bad),("fi_helm10_leather_mask",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,300,weight(1)|head_armor(15)|difficulty(0),imodbits_armor,[]],
 ["free_fur_coat","Dale_Coat",[("dale_coat",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,400,weight(6)|head_armor(0)|body_armor(13)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["free_green_dress","Green_Dress",[("rohan_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["free_tld_tunic","Tunic",[("tld_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]], #InVain: Removed script (ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_initialize_civilian_clothes", "tableau_tld_tunic", ":agent_no", ":troop_no")])
