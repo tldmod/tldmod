@@ -6660,7 +6660,7 @@ scripts = [
           (try_begin),
       	    (neg|check_quest_active,"qst_defend_village"),
             (faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
-            (this_or_next|neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
+            (neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
             (neq, ":giver_faction_no", "fac_lorien"), #No villages near Lorien
             (ge, "$g_talk_troop_faction_relation", 2),
             (is_between, ":player_level", 3,21),
