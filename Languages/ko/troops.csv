@@ -650,22 +650,22 @@ trp_fighting_uruk_hai_pikeman|우루크 하이 전투 장창병
 trp_fighting_uruk_hai_pikeman_pl|우루크 하이 전투 장창병
 trp_urukhai_standard_bearer|우루크 하이 지도자
 trp_urukhai_standard_bearer_pl|우루크 하이 지도자
-trp_uruk_snaga_of_mordor|모르도르 우루크 노예
-trp_uruk_snaga_of_mordor_pl|모르도르 우루크 노예
-trp_uruk_of_mordor|모르도르 우루크
-trp_uruk_of_mordor_pl|모르도르 우루크
-trp_large_uruk_of_mordor|모르도르 큰 우루크
-trp_large_uruk_of_mordor_pl|모르도르 큰 우루크
-trp_fell_uruk_of_mordor|모르도르 포악한 우루크
-trp_fell_uruk_of_mordor_pl|모르도르 포악한 우루크
-trp_uruk_slayer_of_mordor|모르도르 우루크 살해자
-trp_uruk_slayer_of_mordor_pl|모르도르 우루크 살해자
-trp_fell_uruk_slayer_of_mordor|모르도르 포악한 우루크 살해자
-trp_fell_uruk_slayer_of_mordor_pl|모르도르 포악한 우루크 살해자
-trp_black_uruk_of_barad_dur|바랏두르 검은 우루크
-trp_black_uruk_of_barad_dur_pl|바랏두르 검은 우루크
-trp_uruk_mordor_standard_bearer|모르도르 우루크 지도자
-trp_uruk_mordor_standard_bearer_pl|모르도르 우루크 지도자
+trp_i1_mordor_uruk_snaga|모르도르 우루크 노예
+trp_i1_mordor_uruk_snaga_pl|모르도르 우루크 노예
+trp_i2_mordor_uruk|모르도르 우루크
+trp_i2_mordor_uruk_pl|모르도르 우루크
+trp_i3_mordor_large_uruk|모르도르 큰 우루크
+trp_i3_mordor_large_uruk_pl|모르도르 큰 우루크
+trp_i4_mordor_fell_uruk|모르도르 포악한 우루크
+trp_i4_mordor_fell_uruk_pl|모르도르 포악한 우루크
+trp_i3_mordor_uruk_slayer|모르도르 우루크 살해자
+trp_i3_mordor_uruk_slayer_pl|모르도르 우루크 살해자
+trp_i4_mordor_fell_uruk_slayer|모르도르 포악한 우루크 살해자
+trp_i4_mordor_fell_uruk_slayer_pl|모르도르 포악한 우루크 살해자
+trp_i5_mordor_black_uruk|바랏두르 검은 우루크
+trp_i5_mordor_black_uruk_pl|바랏두르 검은 우루크
+trp_i5_mordor_uruk_standard_bearer|모르도르 우루크 지도자
+trp_i5_mordor_uruk_standard_bearer_pl|모르도르 우루크 지도자
 ; trp_troll_of_moria|Cave Troll
 ; trp_troll_of_moria_pl|Cave Trolls
 trp_armoured_troll|무장 트롤
@@ -674,36 +674,36 @@ trp_olog_hai|모르도르 올로그 하이
 trp_olog_hai_pl|모르도르 올로그 하이
 trp_ent|엔트
 trp_ent_pl|엔트
-; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
-; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
-; trp_orc_of_guldur|Orc Tracker of Dol Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
-trp_orc_snaga_of_mordor|모르도르 오르크 노예
-trp_orc_snaga_of_mordor_pl|모르도르 오르크 노예
-trp_orc_of_mordor|모르도르 오르크
-trp_orc_of_mordor_pl|모르도르 오르크
-trp_large_orc_of_mordor|모르도르 큰 오르크
-trp_large_orc_of_mordor_pl|모르도르 큰 오르크
-trp_fell_orc_of_mordor|모르도르 포악한 오르크
-trp_fell_orc_of_mordor_pl|모르도르 포악한 오르크
-trp_warg_rider_of_gorgoroth|고르고로스 와르그기수
-trp_warg_rider_of_gorgoroth_pl|고르고로스 와르그기수
-trp_great_warg_rider_of_mordor|우둔 거대 와르그기수
-trp_great_warg_rider_of_mordor_pl|우둔 거대 와르그기수
-; trp_morgul_orc|Orc of Minas Morgul
-; trp_morgul_orc_pl|Orcs of Minas Morgul
-; trp_fell_morgul_orc|Fell Orc of Minas Morgul
-; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
-; trp_orc_tracker_of_mordor|Large Orc Tracker of Dol Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Trackers of Dol Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
-trp_orc_archer_of_mordor|모르도르 오르크 궁수
-trp_orc_archer_of_mordor_pl|모르도르 오르크 궁수
-trp_large_orc_archer_of_mordor|모르도르 큰 오르크 궁수
-trp_large_orc_archer_of_mordor_pl|모르도르 큰 오르크 궁수
-trp_fell_orc_archer_of_mordor|모르도르 포악한 오르크 궁수
-trp_fell_orc_archer_of_mordor_pl|모르도르 포악한 오르크 궁수
+; trp_i1_guldur_orc_snaga|Orc Snaga of Dol Guldur
+; trp_i1_guldur_orc_snaga_pl|Orc Snagas of Dol Guldur
+; trp_a2_guldur_orc_tracker|Orc Tracker of Dol Guldur
+; trp_a2_guldur_orc_tracker_pl|Orc Trackers of Dol Guldur
+trp_i1_mordor_orc_snaga|모르도르 오르크 노예
+trp_i1_mordor_orc_snaga_pl|모르도르 오르크 노예
+trp_i2_mordor_orc|모르도르 오르크
+trp_i2_mordor_orc_pl|모르도르 오르크
+trp_i3_mordor_large_orc|모르도르 큰 오르크
+trp_i3_mordor_large_orc_pl|모르도르 큰 오르크
+trp_i4_mordor_fell_orc|모르도르 포악한 오르크
+trp_i4_mordor_fell_orc_pl|모르도르 포악한 오르크
+trp_c3_mordor_warg_rider|고르고로스 와르그기수
+trp_c3_mordor_warg_rider_pl|고르고로스 와르그기수
+trp_c4_mordor_great_warg_rider|우둔 거대 와르그기수
+trp_c4_mordor_great_warg_rider_pl|우둔 거대 와르그기수
+; trp_i2_mordor_morgul_orc|Orc of Minas Morgul
+; trp_i2_mordor_morgul_orc_pl|Orcs of Minas Morgul
+; trp_i4_mordor_fell_morgul_orc|Fell Orc of Minas Morgul
+; trp_i4_mordor_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+; trp_a3_guldur_large_orc_tracker|Large Orc Tracker of Dol Guldur
+; trp_a3_guldur_large_orc_tracker_pl|Large Orc Trackers of Dol Guldur
+; trp_a4_guldur_fell_orc_tracker|Fell Orc Tracker of Dol Guldur
+; trp_a4_guldur_fell_orc_tracker_pl|Fell Orc Trackers of Dol Guldur
+trp_a2_mordor_orc_archer|모르도르 오르크 궁수
+trp_a2_mordor_orc_archer_pl|모르도르 오르크 궁수
+trp_a3_mordor_large_orc_archer|모르도르 큰 오르크 궁수
+trp_a3_mordor_large_orc_archer_pl|모르도르 큰 오르크 궁수
+trp_a4_mordor_fell_orc_archer|모르도르 포악한 오르크 궁수
+trp_a4_mordor_fell_orc_archer_pl|모르도르 포악한 오르크 궁수
 trp_c3_wolf_rider_of_moria|모리아 늑대기수
 trp_c3_wolf_rider_of_moria_pl|모리아 늑대기수
 trp_c4_warg_rider_of_moria|모리아 와르그기수
@@ -725,48 +725,48 @@ trp_a3_large_goblin_archer_of_moria_pl|모리아 큰 고블린 궁수
 trp_a4_fell_goblin_archer_of_moria|모리아 포악한 고블린 궁수
 trp_a4_fell_goblin_archer_of_moria_pl|모리아 포악한 고블린 궁수
 
-trp_i1_goblin_gundabad|군다바드 고블린
-trp_i1_goblin_gundabad_pl|군다바드 고블린
-trp_i2_orc_gundabad|군다바드 오르크
-trp_i2_orc_gundabad_pl|군다바드 오르크
-trp_i3_orc_fighter_gundabad|군다바드 오르크 투사
-trp_i3_orc_fighter_gundabad_pl|군다바드 오르크 투사
-; trp_i4_fell_orc_warrior_gundabad|Gundabad Orc Warrior
-; trp_i4_fell_orc_warrior_gundabad_pl|Gundabad Orc Warriors
-; trp_i4_orc_beserker_gundabad|Gundabad Orc Berserker
-; trp_i4_orc_beserker_gundabad_pl|Gundabad Orc Berserkers
-; trp_ca4_warg_skirmisher_gundabad|Gundabad Skirmisher
-; trp_ca4_warg_skirmisher_gundabad_pl|Gundabad Skirmishers
-; trp_ca5_goblin_north_clan_skirmisher|Goblin North Clan Skirmisher
-; trp_ca5_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
-trp_c3_goblin_rider_gundabad|군다바드 고블린 기수
-trp_c3_goblin_rider_gundabad_pl|군다바드 고블린 기수
-trp_c4_warg_rider_gundabad|군다바드 와르그기수
-trp_c4_warg_rider_gundabad_pl|군다바드 와르그기수
-trp_c5_goblin_north_clan_rider|북부 부족 고블린 기수
-trp_c5_goblin_north_clan_rider_pl|북부 부족 고블린 기수
+trp_i1_gunda_goblin|군다바드 고블린
+trp_i1_gunda_goblin_pl|군다바드 고블린
+trp_i2_gunda_orc|군다바드 오르크
+trp_i2_gunda_orc_pl|군다바드 오르크
+trp_i3_gunda_orc_fighter|군다바드 오르크 투사
+trp_i3_gunda_orc_fighter_pl|군다바드 오르크 투사
+; trp_i4_gunda_orc_warrior|Gundabad Orc Warrior
+; trp_i4_gunda_orc_warrior_pl|Gundabad Orc Warriors
+; trp_i4_gunda_orc_berserker|Gundabad Orc Berserker
+; trp_i4_gunda_orc_berserker_pl|Gundabad Orc Berserkers
+; trp_ca4_gunda_skirmisher|Gundabad Skirmisher
+; trp_ca4_gunda_skirmisher_pl|Gundabad Skirmishers
+; trp_ca5_gunda_clan_skirmisher|Goblin North Clan Skirmisher
+; trp_ca5_gunda_clan_skirmisher_pl|Goblin North Clan Skirmishers
+trp_c3_gunda_goblin_rider|군다바드 고블린 기수
+trp_c3_gunda_goblin_rider_pl|군다바드 고블린 기수
+trp_c4_gunda_warg_rider|군다바드 와르그기수
+trp_c4_gunda_warg_rider_pl|군다바드 와르그기수
+trp_c5_gunda_clan_rider|북부 부족 고블린 기수
+trp_c5_gunda_clan_rider_pl|북부 부족 고블린 기수
 trp_mountain_goblin|산고블린
 trp_mountain_goblin_pl|산고블린
 trp_tribal_orc|부족 오르크
 trp_tribal_orc_pl|부족 오르크
 trp_tribal_orc_warrior|부족 오르크 전사
 trp_tribal_orc_warrior_pl|부족 오르크 전사
-; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
-; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
-trp_black_numenorean_renegade|검은 누메노르 변절자
-trp_black_numenorean_renegade_pl|검은 누메노르 변절자
-trp_black_numenorean_warrior|검은 누메노르 전사
-trp_black_numenorean_warrior_pl|검은 누메노르 전사
-trp_black_numenorean_veteran_warrior|검은 누메노르 고참 전사
-trp_black_numenorean_veteran_warrior_pl|검은 누메노르 고참 전사
-trp_black_numenorean_champion|검은 누메노르 챔피언
-trp_black_numenorean_champion_pl|검은 누메노르 챔피언
-trp_black_numenorean_assassin|검은 누메노르 암살자
-trp_black_numenorean_assassin_pl|검은 누메노르 암살자
-trp_black_numenorean_veteran_horseman|검은 누메노르 기병
-trp_black_numenorean_veteran_horseman_pl|검은 누메노르 기병
-trp_black_numenorean_horsemaster|검은 누메노르 정예 기병
-trp_black_numenorean_horsemaster_pl|검은 누메노르 정예 기병
+; trp_i5_gunda_orc_champion|Gundabad Orc Champion
+; trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
+trp_i2_mordor_num_renegade|검은 누메노르 변절자
+trp_i2_mordor_num_renegade_pl|검은 누메노르 변절자
+trp_i3_mordor_num_warrior|검은 누메노르 전사
+trp_i3_mordor_num_warrior_pl|검은 누메노르 전사
+trp_i4_mordor_num_vet_warrior|검은 누메노르 고참 전사
+trp_i4_mordor_num_vet_warrior_pl|검은 누메노르 고참 전사
+trp_i5_mordor_num_champion|검은 누메노르 챔피언
+trp_i5_mordor_num_champion_pl|검은 누메노르 챔피언
+trp_i5_mordor_num_assassin|검은 누메노르 암살자
+trp_i5_mordor_num_assassin_pl|검은 누메노르 암살자
+trp_c4_mordor_num_horseman|검은 누메노르 기병
+trp_c4_mordor_num_horseman_pl|검은 누메노르 기병
+trp_c5_mordor_num_knight|검은 누메노르 정예 기병
+trp_c5_mordor_num_knight_pl|검은 누메노르 정예 기병
 trp_noldorin_commander|놀도르 지휘관
 trp_noldorin_commander_pl|놀도르 지휘관
 trp_elf_captain_of_lothlorien|로스로리엔 요정 대장

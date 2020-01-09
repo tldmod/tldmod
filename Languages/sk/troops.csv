@@ -650,22 +650,22 @@ trp_fighting_uruk_hai_pikeman|Bojový kopijník Uruk Hai
 trp_fighting_uruk_hai_pikeman_pl|Bojoví kopijníci Uruk Hai
 trp_urukhai_standard_bearer|Uruk Hai vlajkonoš
 trp_urukhai_standard_bearer_pl|Zástavníci Uruk Hai
-trp_uruk_snaga_of_mordor|Uruk snaga z Mordoru
-trp_uruk_snaga_of_mordor_pl|Uruk snagy z Mordoru
-trp_uruk_of_mordor|Uruk z Mordoru
-trp_uruk_of_mordor_pl|Urukovia z Mordoru
-trp_large_uruk_of_mordor|Veľký Uruk z Mordoru
-trp_large_uruk_of_mordor_pl|Veľkí Urukovia z Mordoru
-trp_fell_uruk_of_mordor|Divoký Uruk z Mordoru
-trp_fell_uruk_of_mordor_pl|Divokí Urukovia z Mordoru
-trp_uruk_slayer_of_mordor|Mordorský Uruk zabijak
-trp_uruk_slayer_of_mordor_pl|Mordorskí Urukovia zabijaci
-trp_fell_uruk_slayer_of_mordor|Divoký Uruk zabijak z Mordoru
-trp_fell_uruk_slayer_of_mordor_pl|Divokí Urukovia zabijaci z Mordoru
-trp_black_uruk_of_barad_dur|Čierny Uruk z Barad Dur
-trp_black_uruk_of_barad_dur_pl|Čierni Urukovia z Barad Dur
-trp_uruk_mordor_standard_bearer|Mordorský vlajkonoš
-trp_uruk_mordor_standard_bearer_pl|Zástavníci Mordoru
+trp_i1_mordor_uruk_snaga|Uruk snaga z Mordoru
+trp_i1_mordor_uruk_snaga_pl|Uruk snagy z Mordoru
+trp_i2_mordor_uruk|Uruk z Mordoru
+trp_i2_mordor_uruk_pl|Urukovia z Mordoru
+trp_i3_mordor_large_uruk|Veľký Uruk z Mordoru
+trp_i3_mordor_large_uruk_pl|Veľkí Urukovia z Mordoru
+trp_i4_mordor_fell_uruk|Divoký Uruk z Mordoru
+trp_i4_mordor_fell_uruk_pl|Divokí Urukovia z Mordoru
+trp_i3_mordor_uruk_slayer|Mordorský Uruk zabijak
+trp_i3_mordor_uruk_slayer_pl|Mordorskí Urukovia zabijaci
+trp_i4_mordor_fell_uruk_slayer|Divoký Uruk zabijak z Mordoru
+trp_i4_mordor_fell_uruk_slayer_pl|Divokí Urukovia zabijaci z Mordoru
+trp_i5_mordor_black_uruk|Čierny Uruk z Barad Dur
+trp_i5_mordor_black_uruk_pl|Čierni Urukovia z Barad Dur
+trp_i5_mordor_uruk_standard_bearer|Mordorský vlajkonoš
+trp_i5_mordor_uruk_standard_bearer_pl|Zástavníci Mordoru
 trp_troll_of_moria|Jaskynný zlobor
 trp_troll_of_moria_pl|Jaskynní zlobri
 trp_armoured_troll|Obrnený zlobor
@@ -674,36 +674,36 @@ trp_olog_hai|Olog Hai z Mordoru
 trp_olog_hai_pl|Olog Hai z Mordoru
 trp_ent|Ent
 trp_ent_pl|Enti
-trp_orc_snaga_of_guldur|Snaga ohyzd z Dol Guldúru
-trp_orc_snaga_of_guldur_pl|Snaga ohyzdu z Dol Guldúru
-trp_orc_of_guldur|Ohyzdí stopár z Dol Guldúru
-trp_orc_of_guldur_pl|Ohyzdí stopári z Dol Guldúru
-trp_orc_snaga_of_mordor|Snaga ohyzd z Mordoru
-trp_orc_snaga_of_mordor_pl|Snaga ohyzdi z Mordoru
-trp_orc_of_mordor|Ohyzd z Mordoru
-trp_orc_of_mordor_pl|Ohyzdi z Mordoru
-trp_large_orc_of_mordor|Veľký ohyzd z Mordoru
-trp_large_orc_of_mordor_pl|Veľkí ohyzdi z Mordoru
-trp_fell_orc_of_mordor|Divoký ohyzd z Mordoru
-trp_fell_orc_of_mordor_pl|Divokí ohyzdi z Mordoru
-trp_warg_rider_of_gorgoroth|Vrrčí jazdec z Gorgorothu
-trp_warg_rider_of_gorgoroth_pl|Vrrčí jazdci z Gorgorothu
-trp_great_warg_rider_of_mordor|Jazdec na veľkom vrrkovy z Udunu
-trp_great_warg_rider_of_mordor_pl|Jazdci na veľkých vrrkoch z Udunu
-trp_morgul_orc|Ohyzd z Minas Morgul
-trp_morgul_orc_pl|Ohyzdi z Minas Morgul
-trp_fell_morgul_orc|Divoký ohyzd z Minas Morgul
-trp_fell_morgul_orc_pl|Divokí ohyzdi z Minas Morgul
-trp_orc_tracker_of_mordor|Veľkí ohyzdí stopári z Minas Morgul
-trp_orc_tracker_of_mordor_pl|Veľkí ohyzdí stopári z Dol Guldúru
-trp_fell_orc_tracker_of_mordor|Divoký ohyzdí stopár z Dol Guldúru
-trp_fell_orc_tracker_of_mordor_pl|Divokí ohyzdí stopári z Dol Guldúru
-trp_orc_archer_of_mordor|Mordorský ohyzdí lukostrelec
-trp_orc_archer_of_mordor_pl|Mordorskí ohyzdí lukostrelci
-trp_large_orc_archer_of_mordor|Veľký ohyzdí lukostrelec z Mordoru
-trp_large_orc_archer_of_mordor_pl|Veľkí ohyzdí lukostrelci z Mordoru
-trp_fell_orc_archer_of_mordor|Divoký ohyzdí lukostrelec z Mordoru
-trp_fell_orc_archer_of_mordor_pl|Divokí ohyzdí lukostrelci z Mordoru
+trp_i1_guldur_orc_snaga|Snaga ohyzd z Dol Guldúru
+trp_i1_guldur_orc_snaga_pl|Snaga ohyzdu z Dol Guldúru
+trp_a2_guldur_orc_tracker|Ohyzdí stopár z Dol Guldúru
+trp_a2_guldur_orc_tracker_pl|Ohyzdí stopári z Dol Guldúru
+trp_i1_mordor_orc_snaga|Snaga ohyzd z Mordoru
+trp_i1_mordor_orc_snaga_pl|Snaga ohyzdi z Mordoru
+trp_i2_mordor_orc|Ohyzd z Mordoru
+trp_i2_mordor_orc_pl|Ohyzdi z Mordoru
+trp_i3_mordor_large_orc|Veľký ohyzd z Mordoru
+trp_i3_mordor_large_orc_pl|Veľkí ohyzdi z Mordoru
+trp_i4_mordor_fell_orc|Divoký ohyzd z Mordoru
+trp_i4_mordor_fell_orc_pl|Divokí ohyzdi z Mordoru
+trp_c3_mordor_warg_rider|Vrrčí jazdec z Gorgorothu
+trp_c3_mordor_warg_rider_pl|Vrrčí jazdci z Gorgorothu
+trp_c4_mordor_great_warg_rider|Jazdec na veľkom vrrkovy z Udunu
+trp_c4_mordor_great_warg_rider_pl|Jazdci na veľkých vrrkoch z Udunu
+trp_i2_mordor_morgul_orc|Ohyzd z Minas Morgul
+trp_i2_mordor_morgul_orc_pl|Ohyzdi z Minas Morgul
+trp_i4_mordor_fell_morgul_orc|Divoký ohyzd z Minas Morgul
+trp_i4_mordor_fell_morgul_orc_pl|Divokí ohyzdi z Minas Morgul
+trp_a3_guldur_large_orc_tracker|Veľkí ohyzdí stopári z Minas Morgul
+trp_a3_guldur_large_orc_tracker_pl|Veľkí ohyzdí stopári z Dol Guldúru
+trp_a4_guldur_fell_orc_tracker|Divoký ohyzdí stopár z Dol Guldúru
+trp_a4_guldur_fell_orc_tracker_pl|Divokí ohyzdí stopári z Dol Guldúru
+trp_a2_mordor_orc_archer|Mordorský ohyzdí lukostrelec
+trp_a2_mordor_orc_archer_pl|Mordorskí ohyzdí lukostrelci
+trp_a3_mordor_large_orc_archer|Veľký ohyzdí lukostrelec z Mordoru
+trp_a3_mordor_large_orc_archer_pl|Veľkí ohyzdí lukostrelci z Mordoru
+trp_a4_mordor_fell_orc_archer|Divoký ohyzdí lukostrelec z Mordoru
+trp_a4_mordor_fell_orc_archer_pl|Divokí ohyzdí lukostrelci z Mordoru
 trp_c3_wolf_rider_of_moria|Vlčí jazdec z Morie
 trp_c3_wolf_rider_of_moria_pl|Vlčí jazdci z Morie
 trp_c4_warg_rider_of_moria|Vrrčí jazdec z Morie
@@ -725,48 +725,48 @@ trp_a3_large_goblin_archer_of_moria_pl|Veľkí gobliní lukostrelci z Morie
 trp_a4_fell_goblin_archer_of_moria|Divoký gobliní lukostrelec z Morie
 trp_a4_fell_goblin_archer_of_moria_pl|Divokí gobliní lukostrelci z Morie
 
-trp_i1_goblin_gundabad|Goblin z Gundabadu
-trp_i1_goblin_gundabad_pl|Goblini z Gundabadu
-trp_i2_orc_gundabad|Ohyzd z Gundabadu
-trp_i2_orc_gundabad_pl|Ohyzdi z Gundabadu
-trp_i3_orc_fighter_gundabad|Bojový ohyzd z Gundabadu
-trp_i3_orc_fighter_gundabad_pl|Bojoví ohyzdi z Gundabadu
-trp_i4_fell_orc_warrior_gundabad| Ohyzdí vojak z Gundabadu
-trp_i4_fell_orc_warrior_gundabad_pl|Ohyzdí vojaci z Gundabadu
-trp_i4_orc_beserker_gundabad|Ohyzdí berserk z Gundabadu
-trp_i4_orc_beserker_gundabad_pl|Ohyzdí berserkovia z Gundabadu
-trp_ca4_warg_skirmisher_gundabad|Gundabadský vrrči strelec
-trp_ca4_warg_skirmisher_gundabad_pl|Gundabadskí vrrči strelci strelci
-trp_ca5_goblin_north_clan_skirmisher|Gobliní vrrči strelec Sevesného klanu goblinov
-trp_ca5_goblin_north_clan_skirmisher_pl|Gobliní vrrčí strelci Severského klanu goblinov
-trp_c3_goblin_rider_gundabad|Gobliní jazdec z Gundabadu
-trp_c3_goblin_rider_gundabad_pl|Gobliní jazdci z Gundabadu
-trp_c4_warg_rider_gundabad|Vrrčí jazdec z Gundabadu
-trp_c4_warg_rider_gundabad_pl|Vrrčí jazdci z Gundabadu
-trp_c5_goblin_north_clan_rider|Jazdec Severského klanu goblinov
-trp_c5_goblin_north_clan_rider_pl|Jazdci Severského klanu goblinov
+trp_i1_gunda_goblin|Goblin z Gundabadu
+trp_i1_gunda_goblin_pl|Goblini z Gundabadu
+trp_i2_gunda_orc|Ohyzd z Gundabadu
+trp_i2_gunda_orc_pl|Ohyzdi z Gundabadu
+trp_i3_gunda_orc_fighter|Bojový ohyzd z Gundabadu
+trp_i3_gunda_orc_fighter_pl|Bojoví ohyzdi z Gundabadu
+trp_i4_gunda_orc_warrior| Ohyzdí vojak z Gundabadu
+trp_i4_gunda_orc_warrior_pl|Ohyzdí vojaci z Gundabadu
+trp_i4_gunda_orc_berserker|Ohyzdí berserk z Gundabadu
+trp_i4_gunda_orc_berserker_pl|Ohyzdí berserkovia z Gundabadu
+trp_ca4_gunda_skirmisher|Gundabadský vrrči strelec
+trp_ca4_gunda_skirmisher_pl|Gundabadskí vrrči strelci strelci
+trp_ca5_gunda_clan_skirmisher|Gobliní vrrči strelec Sevesného klanu goblinov
+trp_ca5_gunda_clan_skirmisher_pl|Gobliní vrrčí strelci Severského klanu goblinov
+trp_c3_gunda_goblin_rider|Gobliní jazdec z Gundabadu
+trp_c3_gunda_goblin_rider_pl|Gobliní jazdci z Gundabadu
+trp_c4_gunda_warg_rider|Vrrčí jazdec z Gundabadu
+trp_c4_gunda_warg_rider_pl|Vrrčí jazdci z Gundabadu
+trp_c5_gunda_clan_rider|Jazdec Severského klanu goblinov
+trp_c5_gunda_clan_rider_pl|Jazdci Severského klanu goblinov
 trp_mountain_goblin|Horský goblin
 trp_mountain_goblin_pl|Horský goblini
 trp_tribal_orc|Kmeňový ohyzd
 trp_tribal_orc_pl|Kmeňoví ohyzdi
 trp_tribal_orc_warrior|Bojový kmneňový ohyzd
 trp_tribal_orc_warrior_pl|Bojoví kmeňoví ohyzdi
-trp_i5_orc_champion_gundabad|Ohyzdí šampión z Gundabadu
-trp_i5_orc_champion_gundabad_pl|Ohyzdí šampióni z Gundabadu
-trp_black_numenorean_renegade|Čierno-Númenorejský odpadlík
-trp_black_numenorean_renegade_pl|Čierno-Númenorejskí odpadlíci
-trp_black_numenorean_warrior|Čierno-Númenorejský bojovník
-trp_black_numenorean_warrior_pl|Čierno-Númenorejskí bojovníci
-trp_black_numenorean_veteran_warrior|Čierno-Númenorejský skúsený vojak
-trp_black_numenorean_veteran_warrior_pl|Čierno-Númenorejskí skúsení vojaci
-trp_black_numenorean_champion|Čierno-Númenorejský šampión
-trp_black_numenorean_champion_pl|Čierno-Númenorejskí šampióni
-trp_black_numenorean_assassin|Čierno-Númenorejský nájomný vrah
-trp_black_numenorean_assassin_pl|Čierno-Númenorejskí nájomní vrazi
-trp_black_numenorean_veteran_horseman|Čierno-Númenorejský jazdec
-trp_black_numenorean_veteran_horseman_pl|Čierno-Númenorejskí jazdci
-trp_black_numenorean_horsemaster|Čierno-Númenorejský majster jazdec
-trp_black_numenorean_horsemaster_pl|Čierno-Númenorejskí majstri jazdci
+trp_i5_gunda_orc_champion|Ohyzdí šampión z Gundabadu
+trp_i5_gunda_orc_champion_pl|Ohyzdí šampióni z Gundabadu
+trp_i2_mordor_num_renegade|Čierno-Númenorejský odpadlík
+trp_i2_mordor_num_renegade_pl|Čierno-Númenorejskí odpadlíci
+trp_i3_mordor_num_warrior|Čierno-Númenorejský bojovník
+trp_i3_mordor_num_warrior_pl|Čierno-Númenorejskí bojovníci
+trp_i4_mordor_num_vet_warrior|Čierno-Númenorejský skúsený vojak
+trp_i4_mordor_num_vet_warrior_pl|Čierno-Númenorejskí skúsení vojaci
+trp_i5_mordor_num_champion|Čierno-Númenorejský šampión
+trp_i5_mordor_num_champion_pl|Čierno-Númenorejskí šampióni
+trp_i5_mordor_num_assassin|Čierno-Númenorejský nájomný vrah
+trp_i5_mordor_num_assassin_pl|Čierno-Númenorejskí nájomní vrazi
+trp_c4_mordor_num_horseman|Čierno-Númenorejský jazdec
+trp_c4_mordor_num_horseman_pl|Čierno-Númenorejskí jazdci
+trp_c5_mordor_num_knight|Čierno-Númenorejský majster jazdec
+trp_c5_mordor_num_knight_pl|Čierno-Númenorejskí majstri jazdci
 trp_noldorin_commander|Noldorský veliteľ
 trp_noldorin_commander_pl|Noldorskí velitelia
 trp_elf_captain_of_lothlorien|Elfský kapitán z Lothlorienu

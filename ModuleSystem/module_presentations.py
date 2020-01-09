@@ -3397,7 +3397,7 @@ presentations = [
       #  (presentation_set_duration, 0),
       #(else_try),
       #  (eq, ":object", "$g_presentation_obj_4"),
-      #  (call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),
+      #  (call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"),
       #  (jump_to_menu,"mnu_start_phase_2"),
       #  (presentation_set_duration, 0),
       (else_try),

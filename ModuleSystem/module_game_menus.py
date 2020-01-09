@@ -121,7 +121,7 @@ game_menus = [
 	 ("go_bback"  ,[],"Go Back",[(change_screen_quit              ),]), 
 	]+concatenate_scripts([[
 	 ("quick"     ,[(eq, cheat_switch, 1),],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_i1_gon_levy"),(jump_to_menu,"mnu_start_phase_2" ),]), 
-	 ("quick2"    ,[(eq, cheat_switch, 1),],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),(jump_to_menu,"mnu_start_phase_2" ),]), 
+	 ("quick2"    ,[(eq, cheat_switch, 1),],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"),(jump_to_menu,"mnu_start_phase_2" ),]), 
 	] for ct in range(cheat_switch)])+[	
 	]
  ),
@@ -343,15 +343,15 @@ game_menus = [
            (call_script,"script_start_as_one","trp_i3_beorning_tolltacker"),
            (assign, "$g_player_troop", "$player_current_troop_type"),
        	   (set_player_troop, "$g_player_troop"),
-           (set_visitor,1,"trp_orc_of_mordor"),
-           (set_visitor,2,"trp_black_numenorean_veteran_warrior"),
+           (set_visitor,1,"trp_i2_mordor_orc"),
+           (set_visitor,2,"trp_i4_mordor_num_vet_warrior"),
            (set_jump_mission,"mt_tutorial_3"),
            (jump_to_scene,"scn_tutorial_3"),(change_screen_mission)]),
       ("tutorial_3b",[(eq,0,1)],"Tutorial 3 b",[(try_begin),
                                                   (ge, "$tutorial_3_state", 12),
                                                   (modify_visitors_at_site,"scn_tutorial_3"),(reset_visitors,0),
-                                                  (set_visitor,1,"trp_orc_of_mordor"),
-                                                  (set_visitor,2,"trp_black_numenorean_veteran_warrior"),
+                                                  (set_visitor,1,"trp_i2_mordor_orc"),
+                                                  (set_visitor,2,"trp_i4_mordor_num_vet_warrior"),
                                                   (set_jump_mission,"mt_tutorial_3_2"),
                                                   (jump_to_scene,"scn_tutorial_3"),
                                                   (change_screen_mission),
@@ -360,7 +360,7 @@ game_menus = [
                                                 (try_end)], "next level"),
 	  ("tutorial_4",[],"Tutorial #4: Riding a horse or a warg. {s4}",[
            (modify_visitors_at_site,"scn_tutorial_4"),(reset_visitors,0),
-           (call_script,"script_start_as_one","trp_ca4_warg_skirmisher_gundabad"),
+           (call_script,"script_start_as_one","trp_ca4_gunda_skirmisher"),
            (assign, "$g_player_troop", "$player_current_troop_type"),
        	   (set_player_troop, "$g_player_troop"),
            (set_jump_mission,"mt_tutorial_4"),
@@ -635,12 +635,12 @@ game_menus = [
 		(set_visitors, 14, "trp_lothlorien_veteran_warden",			5),
 		(set_visitors, 15, "trp_galadhrim_royal_warden",			5),
 #		ENEMY
-		(set_visitors, 16, "trp_black_numenorean_warrior",			5),
-		(set_visitors, 17, "trp_black_numenorean_veteran_warrior",	5),
-		(set_visitors, 18, "trp_black_numenorean_champion",			5),
-		(set_visitors, 19, "trp_black_numenorean_assassin",			5),
-		(set_visitors, 20, "trp_black_numenorean_veteran_horseman",	5),
-		(set_visitors, 21, "trp_black_numenorean_horsemaster",		5),
+		(set_visitors, 16, "trp_i3_mordor_num_warrior",			5),
+		(set_visitors, 17, "trp_i4_mordor_num_vet_warrior",	5),
+		(set_visitors, 18, "trp_i5_mordor_num_champion",			5),
+		(set_visitors, 19, "trp_i5_mordor_num_assassin",			5),
+		(set_visitors, 20, "trp_c4_mordor_num_horseman",	5),
+		(set_visitors, 21, "trp_c5_mordor_num_knight",		5),
 		(set_visitors, 22, "trp_black_numenorean_captain",			5),
 		(set_visitors, 23, "trp_black_numenorean_lieutenant",		4),
 		(set_visitors, 25, "trp_high_captain_of_mordor",			4),
@@ -781,8 +781,8 @@ game_menus = [
 		(set_visitors, 5, "trp_a2_archer_snaga_of_moria",			5),
 		(set_visitors, 6, "trp_a3_large_goblin_archer_of_moria",	5),
 		(set_visitors, 7, "trp_i5_deep_dweller_of_moria",	5),
-		(set_visitors, 8, "trp_i1_goblin_gundabad",				5),
-		(set_visitors, 9, "trp_i2_orc_gundabad",					5),
+		(set_visitors, 8, "trp_i1_gunda_goblin",				5),
+		(set_visitors, 9, "trp_i2_gunda_orc",					5),
 ## ENEMY
 		(set_visitors, 11, "trp_i1_dwarf_apprentice",		3),
 		(set_visitors, 12, "trp_i2_dwarf_warrior",			3),
@@ -808,20 +808,20 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
 
-		(set_visitors, 1, "trp_i3_orc_fighter_gundabad",				8),
-		(set_visitors, 2, "trp_i4_fell_orc_warrior_gundabad",		6),
-		(set_visitors, 3, "trp_i4_orc_beserker_gundabad",			10),
+		(set_visitors, 1, "trp_i3_gunda_orc_fighter",				8),
+		(set_visitors, 2, "trp_i4_gunda_orc_warrior",		6),
+		(set_visitors, 3, "trp_i4_gunda_orc_berserker",			10),
 		(set_visitors, 4, "trp_i4_fell_goblin_of_moria",					6),
 		(set_visitors, 5, "trp_c5_bolg_clan_rider",						2),
 		(set_visitors, 6, "trp_c4_warg_rider_of_moria",					4),
 		(set_visitors, 7, "trp_c3_wolf_rider_of_moria",					4),
-		(set_visitors, 8, "trp_i1_goblin_gundabad",					10),
-		(set_visitors, 9, "trp_i2_orc_gundabad",						12),
-		(set_visitors, 10, "trp_ca4_warg_skirmisher_gundabad",8),
-		(set_visitors, 11, "trp_ca5_goblin_north_clan_skirmisher",		4),
-		(set_visitors, 12, "trp_c4_warg_rider_gundabad",			4),
-		(set_visitors, 13, "trp_c4_warg_rider_gundabad",				4),
-		(set_visitors, 14, "trp_c5_goblin_north_clan_rider",				2),
+		(set_visitors, 8, "trp_i1_gunda_goblin",					10),
+		(set_visitors, 9, "trp_i2_gunda_orc",						12),
+		(set_visitors, 10, "trp_ca4_gunda_skirmisher",8),
+		(set_visitors, 11, "trp_ca5_gunda_clan_skirmisher",		4),
+		(set_visitors, 12, "trp_c4_gunda_warg_rider",			4),
+		(set_visitors, 13, "trp_c4_gunda_warg_rider",				4),
+		(set_visitors, 14, "trp_c5_gunda_clan_rider",				2),
 ## ENEMY
 		(set_visitors, 16, "trp_a1_greenwood_scout",						5),
 		(set_visitors, 17, "trp_a2_greenwood_veteran_scout",				5),
@@ -870,9 +870,9 @@ game_menus = [
 	    (modify_visitors_at_site, "$g_custom_battle_scene"),
 
        	(set_visitor, 0, "$g_player_troop"),
-		(set_visitors, 4, "trp_orc_snaga_of_mordor", 2),
-		(set_visitors, 5, "trp_orc_snaga_of_mordor", 2),
-		(set_visitors, 6, "trp_orc_snaga_of_mordor", 2),
+		(set_visitors, 4, "trp_i1_mordor_orc_snaga", 2),
+		(set_visitors, 5, "trp_i1_mordor_orc_snaga", 2),
+		(set_visitors, 6, "trp_i1_mordor_orc_snaga", 2),
 
 		
 ## ENEMY
@@ -1035,7 +1035,7 @@ game_menus = [
 	   (set_visitors, 1, "trp_orc_of_isengard",	8),
 	   (set_visitors, 2, "trp_olog_hai",	2),
 	   (set_visitors, 16, "trp_olog_hai",	2),
-	   (set_visitors, 17, "trp_orc_of_mordor",	8),
+	   (set_visitors, 17, "trp_i2_mordor_orc",	8),
  	   (str_store_string, s16, "@TEST: Troll vs Troll"),
     (else_try),
 	    # TROLL TEST 3
@@ -1171,9 +1171,9 @@ game_menus = [
 			(eq,":bfac",3),(assign,":trp_bad_min","trp_i1_khand_bondsman"     ),(assign,":trp_bad_max","trp_ac5_khand_heavy_skirmisher"),(else_try),
 			(eq,":bfac",4),(assign,":trp_bad_min","trp_i1_corsair_youth"        ),(assign,":trp_bad_max","trp_i5_corsair_master_pikeman"       ),(else_try),
 			(eq,":bfac",5),(assign,":trp_bad_min","trp_orc_snaga_of_isengard"),(assign,":trp_bad_max","trp_fighting_uruk_hai_pikeman"  ),(else_try),
-			(eq,":bfac",6),(assign,":trp_bad_min","trp_orc_snaga_of_mordor"  ),(assign,":trp_bad_max","trp_fell_orc_archer_of_mordor"  ),(else_try),
+			(eq,":bfac",6),(assign,":trp_bad_min","trp_i1_mordor_orc_snaga"  ),(assign,":trp_bad_max","trp_a4_mordor_fell_orc_archer"  ),(else_try),
 			(eq,":bfac",7),(assign,":trp_bad_min","trp_c3_wolf_rider_of_moria"  ),(assign,":trp_bad_max","trp_i5_deep_dweller_of_moria"),(else_try),
-			(eq,":bfac",8),(assign,":trp_bad_min","trp_i1_goblin_gundabad"      ),(assign,":trp_bad_max","trp_c5_goblin_north_clan_rider"    ),
+			(eq,":bfac",8),(assign,":trp_bad_min","trp_i1_gunda_goblin"      ),(assign,":trp_bad_max","trp_c5_gunda_clan_rider"    ),
 		(try_end),
 
 		(store_random_in_range,":player_good",0,2),
@@ -1424,7 +1424,7 @@ game_menus = [
 ( "start_eye",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^Your Master is the Lidless Eye^Choose your Race", "none",[(assign, "$last_menu", "mnu_start_eye")],[
  ("start_or"  ,[],"an ORC, serving the Lidless Eye"       ,[(jump_to_menu,"mnu_start_eye_orc"),]),
- ("start_ur"  ,[],"an URUK, the new breed of Orcs"        ,[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),  (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_ur"  ,[],"an URUK, the new breed of Orcs"        ,[(call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"),  (jump_to_menu,"mnu_start_as_one"),]),
  ("start_em"  ,[],"a MAN, subjugated by Sauron"           ,[(jump_to_menu,"mnu_start_eye_man"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_evil")]),    ]
@@ -1485,7 +1485,7 @@ game_menus = [
 ( "start_eye_man",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
  ("start_hr",[],"HARADRIM, the desert people from the South",    [(jump_to_menu,"mnu_start_haradrim"),]),  
- ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_renegade"),(jump_to_menu,"mnu_start_numenorean"),]),
+ ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_i2_mordor_num_renegade"),(jump_to_menu,"mnu_start_numenorean"),]),
  ("start_um",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_i1_corsair_youth"),            (jump_to_menu,"mnu_choose_gender"),]),
  ("start_rh",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_i1_rhun_tribesman"),           (jump_to_menu,"mnu_choose_gender"),]),
  ("start_kh",[],"KHAND, the savage people from South-East",      [(call_script,"script_start_as_one","trp_i1_khand_bondsman"),         (jump_to_menu,"mnu_choose_gender"),]),
@@ -1497,8 +1497,8 @@ game_menus = [
 
 ( "start_eye_uruk",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_eye_uruk")],[
- ("start_arm_uruk",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),   (jump_to_menu,"mnu_start_as_one"),]),
- ("start_cav_uruk",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"), (call_script, "script_player_join_faction", "fac_guldur"), (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_arm_uruk",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"),   (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_cav_uruk",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"), (call_script, "script_player_join_faction", "fac_guldur"), (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"_"  ,[]),
  ("go_back",[],"Go back",[
  	#(jump_to_menu, "mnu_start_eye")
@@ -1506,8 +1506,8 @@ game_menus = [
  ),
 ( "start_eye_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_eye_orc")],[
- ("start_arm",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_start_as_one"),]),
- ("start_cav",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_arm",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_i1_mordor_orc_snaga"),   (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_cav",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_i1_guldur_orc_snaga"),   (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"_"  ,[]),
  ("go_back",[],"Go back",[
  	#(jump_to_menu, "mnu_start_eye")
@@ -1517,7 +1517,7 @@ game_menus = [
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_hand_orc")],[
  ("start_armis",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_start_as_one"),]),
  ("start_minmo",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_i1_snaga_of_moria"),       (jump_to_menu,"mnu_start_as_one"),]),
- ("start_cliff",[],"in the cliffs of Mount GUNDABAD",  [(call_script,"script_start_as_one","trp_i1_goblin_gundabad"),      (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_cliff",[],"in the cliffs of Mount GUNDABAD",  [(call_script,"script_start_as_one","trp_i1_gunda_goblin"),      (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"_",[]),
  ("go_back",[],"Go back",[
  	#(jump_to_menu, "mnu_start_hand")
@@ -2132,7 +2132,7 @@ game_menus = [
 
      	("camp_cctest_rout_enemy",[],"Add troops to routed enemies",
 	[
-		(store_random_in_range, ":troop_no", "trp_orc_snaga_of_mordor", "trp_c3_wolf_rider_of_moria"),
+		(store_random_in_range, ":troop_no", "trp_i1_mordor_orc_snaga", "trp_c3_wolf_rider_of_moria"),
 		(party_add_members, "p_routed_enemies", ":troop_no", 1),
     		(party_get_num_companions, reg1, "p_routed_enemies"),
 		(display_message, "@Enemy party size: {reg1}", color_bad_news),
@@ -2321,10 +2321,10 @@ game_menus = [
      # (spawn_around_party, "p_main_party", "pt_mordor_war_party"),
      # (assign, ":troll_party", reg0),
      # (party_clear, ":troll_party"),
-     # (party_add_members, ":troll_party", "trp_black_numenorean_horsemaster", 3),
+     # (party_add_members, ":troll_party", "trp_c5_mordor_num_knight", 3),
      # (party_add_members, ":troll_party", "trp_olog_hai", 3),
-     # (party_add_members, ":troll_party", "trp_orc_archer_of_mordor", 10),
-     # (party_add_members, ":troll_party", "trp_large_orc_of_mordor", 20),
+     # (party_add_members, ":troll_party", "trp_a2_mordor_orc_archer", 10),
+     # (party_add_members, ":troll_party", "trp_i3_mordor_large_orc", 20),
      # (display_message, "@Mordor party with olog hai spawned!", 0x30FFC8),
    # ]),            
    ("camp_mvtest_legend",[],"Enable legendary places.",[
@@ -8514,9 +8514,9 @@ game_menus = [
               (modify_visitors_at_site,"scn_erebor_dungeon_01"),	      
               (reset_visitors),
               (set_visitor,1,"trp_player"),
-              (set_visitor, 2, "trp_i1_goblin_gundabad"),
-              (set_visitor, 3, "trp_i4_fell_orc_warrior_gundabad"),
-              (set_visitor, 4, "trp_i3_orc_fighter_gundabad"),
+              (set_visitor, 2, "trp_i1_gunda_goblin"),
+              (set_visitor, 3, "trp_i4_gunda_orc_warrior"),
+              (set_visitor, 4, "trp_i3_gunda_orc_fighter"),
               (jump_to_scene, "scn_erebor_dungeon_01"),
               (change_screen_mission),
        ],"Open the door."),
@@ -9874,7 +9874,7 @@ game_menus = [
 #      (set_visitors,9,"trp_start_quest_caravaneer", 1),
 #      (set_visitors,17,"trp_tribal_orc", 8),
 #      (set_visitors,18,"trp_mountain_goblin", 8),
-#      (set_visitors,19,"trp_fell_uruk_of_mordor", 1),
+#      (set_visitors,19,"trp_i4_mordor_fell_uruk", 1),
 #      (jump_to_scene,"scn_starting_quest"),
 #      (set_battle_advantage, 0),
 #      (assign, "$g_battle_result", 0),
@@ -9948,7 +9948,7 @@ game_menus = [
 		      (set_visitors,6,"trp_start_quest_caravaneer", 1),
 		      (set_visitors,16,"trp_tribal_orc", 8),
 		      (set_visitors,18,"trp_mountain_goblin", 5),
-		      (set_visitors,20,"trp_fell_uruk_of_mordor", 1),
+		      (set_visitors,20,"trp_i4_mordor_fell_uruk", 1),
 		      (jump_to_scene,"scn_starting_quest"),
 		      (set_battle_advantage, 0),
 		      (assign, "$g_battle_result", 0),
@@ -10072,7 +10072,7 @@ game_menus = [
 		      (try_end),
 		      (set_visitors,20,"trp_tribal_orc", 13),
 		      (set_visitors,22,"trp_tribal_orc_warrior", 10),
-		      (set_visitors,24,"trp_fell_uruk_of_mordor", 1),
+		      (set_visitors,24,"trp_i4_mordor_fell_uruk", 1),
 		      (try_begin),
 		        (this_or_next|eq,"$players_kingdom","fac_woodelf"),
 		        (			  eq,"$players_kingdom","fac_beorn"),
@@ -10275,8 +10275,8 @@ game_menus = [
 					(assign, ":bandit_troop_1", "trp_i1_dun_wildman"),
 					(assign, ":bandit_troop_2", "trp_ac2_dun_crebain_rider"),
 				(else_try),						
-					(assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
-					(assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),	
+					(assign, ":bandit_troop_1", "trp_i3_mordor_large_orc"),
+					(assign, ":bandit_troop_2", "trp_c3_mordor_warg_rider"),	
 				(try_end),
 	        (else_try),
 
@@ -10287,22 +10287,22 @@ game_menus = [
 					(assign, ":bandit_troop_1", "trp_i2_rhun_tribal_warrior"),
 					(assign, ":bandit_troop_2", "trp_ac2_rhun_horse_scout"),
 				(else_try),						
-					(assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
-					(assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),	
+					(assign, ":bandit_troop_1", "trp_i3_mordor_large_orc"),
+					(assign, ":bandit_troop_2", "trp_c3_mordor_warg_rider"),	
 				(try_end),
 		    (else_try),
 	          (eq, ":quest_object_faction","fac_beorn"),
 				(try_begin),
 				  (eq, ":random_no", 0),
-					(assign, ":bandit_troop_1", "trp_i4_fell_orc_warrior_gundabad"),
-					(assign, ":bandit_troop_2", "trp_c4_warg_rider_gundabad"),
+					(assign, ":bandit_troop_1", "trp_i4_gunda_orc_warrior"),
+					(assign, ":bandit_troop_2", "trp_c4_gunda_warg_rider"),
 				(else_try),
 					(assign, ":bandit_troop_1", "trp_i3_large_goblin_of_moria"),
 					(assign, ":bandit_troop_2", "trp_c3_wolf_rider_of_moria"),
 				(try_end),
 			(else_try),
-				(assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
-				(assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),					
+				(assign, ":bandit_troop_1", "trp_i3_mordor_large_orc"),
+				(assign, ":bandit_troop_2", "trp_c3_mordor_warg_rider"),					
 	        (try_end),
 
 		#Set Which Scene Village is at
@@ -10791,7 +10791,7 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_i1_pel_watchman", 3),(set_visitors, 9, "trp_a3_gon_bowman", 3),(set_visitors, 10, "trp_a2_pel_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_corsair_swordsman", 3),(set_visitors, 13, "trp_i3_harad_infantry", 5),(set_visitors, 14, "trp_i4_harad_swordsman", 3),(set_visitors, 15, "trp_i3_corsair_swordsman", 3),(set_visitors, 16, "trp_i2_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 3),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 3),(set_visitors, 13, "trp_i3_harad_infantry", 5),(set_visitors, 14, "trp_i4_harad_swordsman", 3),(set_visitors, 15, "trp_i3_corsair_swordsman", 3),(set_visitors, 16, "trp_i2_corsair_warrior", 5),(set_visitors, 17, "trp_i3_mordor_num_warrior", 3),
 						#enemy archers, entries 18-20
 						(set_visitors, 18, "trp_a2_corsair_marine", 3),(set_visitors, 19, "trp_a3_harad_hunter", 3),(set_visitors, 20, "trp_a2_corsair_marine", 3),
 				(else_try),
@@ -10801,7 +10801,7 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_a2_pel_marine", 3),(set_visitors, 9, "trp_a3_gon_bowman", 3),(set_visitors, 10, "trp_a2_pel_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_i4_harad_swordsman", 3),(set_visitors, 14, "trp_i3_harad_infantry", 5),(set_visitors, 15, "trp_i4_corsair_veteran_swordsman", 3),(set_visitors, 16, "trp_i3_corsair_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_i4_harad_swordsman", 3),(set_visitors, 14, "trp_i3_harad_infantry", 5),(set_visitors, 15, "trp_i4_corsair_veteran_swordsman", 3),(set_visitors, 16, "trp_i3_corsair_swordsman", 5),(set_visitors, 17, "trp_i4_mordor_num_vet_warrior", 5),
 						#enemy archers, entries 18-20
 						(set_visitors, 18, "trp_a3_corsair_marksman", 3),(set_visitors, 19, "trp_a4_harad_archer", 3),(set_visitors, 20, "trp_a2_corsair_marine", 3),
 				(try_end),
@@ -10936,7 +10936,7 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_i1_pel_watchman", 3),(set_visitors, 9, "trp_a3_gon_bowman", 2),(set_visitors, 10, "trp_a2_pel_marine", 2),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_i3_harad_infantry", 5),(set_visitors, 14, "trp_i4_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_i3_harad_infantry", 5),(set_visitors, 14, "trp_i4_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_i3_mordor_num_warrior", 5),
 						#ally archers, entries 18-20
 						(set_visitors, 18, "trp_a3_corsair_marksman", 5),(set_visitors, 19, "trp_a3_harad_hunter", 5),(set_visitors, 20, "trp_a3_corsair_marksman", 5),
 				(else_try),
@@ -10946,7 +10946,7 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_a2_pel_marine", 3),(set_visitors, 9, "trp_a4_gon_archer", 2),(set_visitors, 10, "trp_a3_pel_vet_marine", 2),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_i3_harad_infantry", 5),(set_visitors, 14, "trp_i4_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_i3_harad_infantry", 5),(set_visitors, 14, "trp_i4_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_i3_mordor_num_warrior", 5),
 						#ally archers, entries 18-20
 						(set_visitors, 18, "trp_a3_corsair_marksman", 5),(set_visitors, 19, "trp_a3_harad_hunter", 5),(set_visitors, 20, "trp_a3_corsair_marksman", 5),
 				(try_end),

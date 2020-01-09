@@ -650,22 +650,22 @@ trp_fighting_uruk_hai_pikeman|Kavgacı Uruk Hai Kargıcısı
 trp_fighting_uruk_hai_pikeman_pl|Kavgacı Uruk Hai Kargıcıları
 trp_urukhai_standard_bearer|Uruk Hai Bayrak Taşıyıcısı
 trp_urukhai_standard_bearer_pl|Uruk Hai Bayrak Taşıyıcıları
-trp_uruk_snaga_of_mordor|Mordor'lu Uruk Snaga
-trp_uruk_snaga_of_mordor_pl|Mordor'lu Uruk Snagalar
-trp_uruk_of_mordor|Mordor'lu Uruk
-trp_uruk_of_mordor_pl|Mordor'lu Uruklar
-trp_large_uruk_of_mordor|Büyük Mordor'lu Uruk
-trp_large_uruk_of_mordor_pl|Büyük Mordor'lu Uruklar
-trp_fell_uruk_of_mordor|Mordor'lu Zalim Uruk
-trp_fell_uruk_of_mordor_pl|Mordor'lu Zalim Uruklar
-trp_uruk_slayer_of_mordor|Mordor'lu Uruk Katili
-trp_uruk_slayer_of_mordor_pl|Mordor'lu Uruk Katilleri
-trp_fell_uruk_slayer_of_mordor|Mordor'lu Zalim Uruk Katili
-trp_fell_uruk_slayer_of_mordor_pl|Mordor'lu Zalim Uruk Katilleri
-trp_black_uruk_of_barad_dur|Barad Dur Kara Uruk
-trp_black_uruk_of_barad_dur_pl|Barad Dur Kara Uruklar
-trp_uruk_mordor_standard_bearer|Mordor Bayrak Taşıyıcısı
-trp_uruk_mordor_standard_bearer_pl|Mordor Bayrak Taşıyıcıları
+trp_i1_mordor_uruk_snaga|Mordor'lu Uruk Snaga
+trp_i1_mordor_uruk_snaga_pl|Mordor'lu Uruk Snagalar
+trp_i2_mordor_uruk|Mordor'lu Uruk
+trp_i2_mordor_uruk_pl|Mordor'lu Uruklar
+trp_i3_mordor_large_uruk|Büyük Mordor'lu Uruk
+trp_i3_mordor_large_uruk_pl|Büyük Mordor'lu Uruklar
+trp_i4_mordor_fell_uruk|Mordor'lu Zalim Uruk
+trp_i4_mordor_fell_uruk_pl|Mordor'lu Zalim Uruklar
+trp_i3_mordor_uruk_slayer|Mordor'lu Uruk Katili
+trp_i3_mordor_uruk_slayer_pl|Mordor'lu Uruk Katilleri
+trp_i4_mordor_fell_uruk_slayer|Mordor'lu Zalim Uruk Katili
+trp_i4_mordor_fell_uruk_slayer_pl|Mordor'lu Zalim Uruk Katilleri
+trp_i5_mordor_black_uruk|Barad Dur Kara Uruk
+trp_i5_mordor_black_uruk_pl|Barad Dur Kara Uruklar
+trp_i5_mordor_uruk_standard_bearer|Mordor Bayrak Taşıyıcısı
+trp_i5_mordor_uruk_standard_bearer_pl|Mordor Bayrak Taşıyıcıları
 trp_troll_of_moria|Magara Trolü
 trp_troll_of_moria_pl|Magara Trolleri
 trp_armoured_troll|Zırhlı Troll
@@ -674,36 +674,36 @@ trp_olog_hai|Mordor Olog Hai
 trp_olog_hai_pl|Mordor Olog Hai 
 trp_ent|Agaç Adam
 trp_ent_pl|Agaç Adamlar
-trp_orc_snaga_of_guldur|Dol Guldur Ork Snaga
-trp_orc_snaga_of_guldur_pl|Dol Guldur'lu Ork Snagalar
-trp_orc_of_guldur|Dol Guldur Ork İzcisi
-trp_orc_of_guldur_pl|Dol Guldur Ork İzcileri
-trp_orc_snaga_of_mordor|Mordor'lu Ork Snaga
-trp_orc_snaga_of_mordor_pl|Mordor'lu Ork Snagalar
-trp_orc_of_mordor|Mordor Orku
-trp_orc_of_mordor_pl|Mordor Orkları
-trp_large_orc_of_mordor|Büyük Mordor Orku
-trp_large_orc_of_mordor_pl|Büyük Mordor Orkları
-trp_fell_orc_of_mordor|Zalim Mordor Orku
-trp_fell_orc_of_mordor_pl|Zalim Mordor Orkları
-trp_warg_rider_of_gorgoroth|Gorgoroth Warg Binicisi
-trp_warg_rider_of_gorgoroth_pl|Gorgoroth Warg Binicileri
-trp_great_warg_rider_of_mordor|Udun'un Yüce Warg Binicisi
-trp_great_warg_rider_of_mordor_pl|Udun'un Yüce Warg Binicileri
-trp_morgul_orc|Minas Morgul Orku
-trp_morgul_orc_pl|Minas Morgul Orkları
-trp_fell_morgul_orc|Zalim Minas Morgul Orku
-trp_fell_morgul_orc_pl|Zalim Minas Morgul Orkları
-trp_orc_tracker_of_mordor|Dol Guldur İri Ork izcileri
-trp_orc_tracker_of_mordor_pl|Dol Guldur'ün Büyük Orc izcileri
-trp_fell_orc_tracker_of_mordor|Dol Guldur Zalim Ork İzcisi
-trp_fell_orc_tracker_of_mordor_pl|Dol Guldur Zalim Ork İzcileri
-trp_orc_archer_of_mordor|Mordor'lu Ork Okçusu
-trp_orc_archer_of_mordor_pl|Mordor'lu Ork Okçuları
-trp_large_orc_archer_of_mordor|Mordor'lu Büyük Ork Okçusu
-trp_large_orc_archer_of_mordor_pl|Mordor'lu Büyük Ork Okçuları
-trp_fell_orc_archer_of_mordor|Mordor'lu Zalim Ork Okçusu
-trp_fell_orc_archer_of_mordor_pl|Mordor'lu Zalim Ork Okçuları
+trp_i1_guldur_orc_snaga|Dol Guldur Ork Snaga
+trp_i1_guldur_orc_snaga_pl|Dol Guldur'lu Ork Snagalar
+trp_a2_guldur_orc_tracker|Dol Guldur Ork İzcisi
+trp_a2_guldur_orc_tracker_pl|Dol Guldur Ork İzcileri
+trp_i1_mordor_orc_snaga|Mordor'lu Ork Snaga
+trp_i1_mordor_orc_snaga_pl|Mordor'lu Ork Snagalar
+trp_i2_mordor_orc|Mordor Orku
+trp_i2_mordor_orc_pl|Mordor Orkları
+trp_i3_mordor_large_orc|Büyük Mordor Orku
+trp_i3_mordor_large_orc_pl|Büyük Mordor Orkları
+trp_i4_mordor_fell_orc|Zalim Mordor Orku
+trp_i4_mordor_fell_orc_pl|Zalim Mordor Orkları
+trp_c3_mordor_warg_rider|Gorgoroth Warg Binicisi
+trp_c3_mordor_warg_rider_pl|Gorgoroth Warg Binicileri
+trp_c4_mordor_great_warg_rider|Udun'un Yüce Warg Binicisi
+trp_c4_mordor_great_warg_rider_pl|Udun'un Yüce Warg Binicileri
+trp_i2_mordor_morgul_orc|Minas Morgul Orku
+trp_i2_mordor_morgul_orc_pl|Minas Morgul Orkları
+trp_i4_mordor_fell_morgul_orc|Zalim Minas Morgul Orku
+trp_i4_mordor_fell_morgul_orc_pl|Zalim Minas Morgul Orkları
+trp_a3_guldur_large_orc_tracker|Dol Guldur İri Ork izcileri
+trp_a3_guldur_large_orc_tracker_pl|Dol Guldur'ün Büyük Orc izcileri
+trp_a4_guldur_fell_orc_tracker|Dol Guldur Zalim Ork İzcisi
+trp_a4_guldur_fell_orc_tracker_pl|Dol Guldur Zalim Ork İzcileri
+trp_a2_mordor_orc_archer|Mordor'lu Ork Okçusu
+trp_a2_mordor_orc_archer_pl|Mordor'lu Ork Okçuları
+trp_a3_mordor_large_orc_archer|Mordor'lu Büyük Ork Okçusu
+trp_a3_mordor_large_orc_archer_pl|Mordor'lu Büyük Ork Okçuları
+trp_a4_mordor_fell_orc_archer|Mordor'lu Zalim Ork Okçusu
+trp_a4_mordor_fell_orc_archer_pl|Mordor'lu Zalim Ork Okçuları
 trp_c3_wolf_rider_of_moria|Moria Kurt Binicisi
 trp_c3_wolf_rider_of_moria_pl|Moria Kurt Binicileri
 trp_c4_warg_rider_of_moria|Moria Warg Binicisi
@@ -725,48 +725,48 @@ trp_a3_large_goblin_archer_of_moria_pl|Büyük Moria Goblin Okçuları
 trp_a4_fell_goblin_archer_of_moria|Zalim Moria Goblin Okçusu
 trp_a4_fell_goblin_archer_of_moria_pl|Zalim Moria Goblin Okçuları
 
-trp_i1_goblin_gundabad|Gundabad Goblini
-trp_i1_goblin_gundabad_pl|Gundabad Goblinleri
-trp_i2_orc_gundabad|Gundabad Orku
-trp_i2_orc_gundabad_pl|Gundabad Orkları
-trp_i3_orc_fighter_gundabad|Gundabad Ork Dövüşçüsü
-trp_i3_orc_fighter_gundabad_pl|Gundabad Ork Dövüşçüleri
-trp_i4_fell_orc_warrior_gundabad|Gundabad Ork Savaşçısı
-trp_i4_fell_orc_warrior_gundabad_pl|Gundabad Ork Savaşçıları
-trp_i4_orc_beserker_gundabad|Gundabad Ork Vahşi Savaşçı
-trp_i4_orc_beserker_gundabad_pl|Gundabad Ork Vahşi Savaşçılar
-trp_ca4_warg_skirmisher_gundabad|Gundabad Avcısı
-trp_ca4_warg_skirmisher_gundabad_pl|Gundabad Avcıları
-trp_ca5_goblin_north_clan_skirmisher|Kuzeyli Goblin Klanı Avcısı
-trp_ca5_goblin_north_clan_skirmisher_pl|Kuzeyli Goblin Klanı Avcıları
-trp_c3_goblin_rider_gundabad|Gundabad Goblin Binicisi
-trp_c3_goblin_rider_gundabad_pl|Gundabad Goblin Binicileri
-trp_c4_warg_rider_gundabad|Gundabad Warg Binicisi
-trp_c4_warg_rider_gundabad_pl|Gundabad Warg Binicileri
-trp_c5_goblin_north_clan_rider|Kuzeyli Goblin Klan Binicisi
-trp_c5_goblin_north_clan_rider_pl|Kuzeyli Goblin Klan Binicileri
+trp_i1_gunda_goblin|Gundabad Goblini
+trp_i1_gunda_goblin_pl|Gundabad Goblinleri
+trp_i2_gunda_orc|Gundabad Orku
+trp_i2_gunda_orc_pl|Gundabad Orkları
+trp_i3_gunda_orc_fighter|Gundabad Ork Dövüşçüsü
+trp_i3_gunda_orc_fighter_pl|Gundabad Ork Dövüşçüleri
+trp_i4_gunda_orc_warrior|Gundabad Ork Savaşçısı
+trp_i4_gunda_orc_warrior_pl|Gundabad Ork Savaşçıları
+trp_i4_gunda_orc_berserker|Gundabad Ork Vahşi Savaşçı
+trp_i4_gunda_orc_berserker_pl|Gundabad Ork Vahşi Savaşçılar
+trp_ca4_gunda_skirmisher|Gundabad Avcısı
+trp_ca4_gunda_skirmisher_pl|Gundabad Avcıları
+trp_ca5_gunda_clan_skirmisher|Kuzeyli Goblin Klanı Avcısı
+trp_ca5_gunda_clan_skirmisher_pl|Kuzeyli Goblin Klanı Avcıları
+trp_c3_gunda_goblin_rider|Gundabad Goblin Binicisi
+trp_c3_gunda_goblin_rider_pl|Gundabad Goblin Binicileri
+trp_c4_gunda_warg_rider|Gundabad Warg Binicisi
+trp_c4_gunda_warg_rider_pl|Gundabad Warg Binicileri
+trp_c5_gunda_clan_rider|Kuzeyli Goblin Klan Binicisi
+trp_c5_gunda_clan_rider_pl|Kuzeyli Goblin Klan Binicileri
 trp_mountain_goblin|Dag Goblini
 trp_mountain_goblin_pl|Dag Goblinleri
 trp_tribal_orc|Kabile Orku
 trp_tribal_orc_pl|Kabile Orkları
 trp_tribal_orc_warrior|Kabile Ork Savaşçısı
 trp_tribal_orc_warrior_pl|Kabile Ork Savaşçıları
-trp_i5_orc_champion_gundabad|Gundabad Ork Şampiyonu
-trp_i5_orc_champion_gundabad_pl|Gundabad Ork Şampiyonları
-trp_black_numenorean_renegade|Kara Numenor Haini
-trp_black_numenorean_renegade_pl|Kara Numenor Hainleri
-trp_black_numenorean_warrior|Kara Numenor Savaşçısı
-trp_black_numenorean_warrior_pl|Kara Numenor Savaşçıları
-trp_black_numenorean_veteran_warrior|Kıdemli Kara Numenor Savaşçısı
-trp_black_numenorean_veteran_warrior_pl|Kıdemli Kara Numenor Savaşçıları
-trp_black_numenorean_champion|Kara Numenor Şampiyonu
-trp_black_numenorean_champion_pl|Kara Numenor Şampiyonları
-trp_black_numenorean_assassin|Kara Numenor Suikastçisi
-trp_black_numenorean_assassin_pl|Kara Numenor Suikastçileri
-trp_black_numenorean_veteran_horseman|Kara Numenor Atlısı
-trp_black_numenorean_veteran_horseman_pl|Kara Numenor Atlıları
-trp_black_numenorean_horsemaster|Kara Numenor At Ustası
-trp_black_numenorean_horsemaster_pl|Kara Numenor At Ustaları
+trp_i5_gunda_orc_champion|Gundabad Ork Şampiyonu
+trp_i5_gunda_orc_champion_pl|Gundabad Ork Şampiyonları
+trp_i2_mordor_num_renegade|Kara Numenor Haini
+trp_i2_mordor_num_renegade_pl|Kara Numenor Hainleri
+trp_i3_mordor_num_warrior|Kara Numenor Savaşçısı
+trp_i3_mordor_num_warrior_pl|Kara Numenor Savaşçıları
+trp_i4_mordor_num_vet_warrior|Kıdemli Kara Numenor Savaşçısı
+trp_i4_mordor_num_vet_warrior_pl|Kıdemli Kara Numenor Savaşçıları
+trp_i5_mordor_num_champion|Kara Numenor Şampiyonu
+trp_i5_mordor_num_champion_pl|Kara Numenor Şampiyonları
+trp_i5_mordor_num_assassin|Kara Numenor Suikastçisi
+trp_i5_mordor_num_assassin_pl|Kara Numenor Suikastçileri
+trp_c4_mordor_num_horseman|Kara Numenor Atlısı
+trp_c4_mordor_num_horseman_pl|Kara Numenor Atlıları
+trp_c5_mordor_num_knight|Kara Numenor At Ustası
+trp_c5_mordor_num_knight_pl|Kara Numenor At Ustaları
 trp_noldorin_commander|Noldorin Kumandanı
 trp_noldorin_commander_pl|Noldorin Kumandanları
 trp_elf_captain_of_lothlorien|Lothlorien Elf Kaptanı

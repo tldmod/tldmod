@@ -650,22 +650,22 @@ trp_fighting_uruk_hai_pikeman|Uruk Hai Lutador Lanceiro
 trp_fighting_uruk_hai_pikeman_pl|Uruk Hai Lutadores Lanceiros
 trp_urukhai_standard_bearer|Uruk Hai Carregador de Estandarte
 trp_urukhai_standard_bearer_pl|Uruk Hai Carregadores de Estandarte
-trp_uruk_snaga_of_mordor|Uruk Snaga de Mordor
-trp_uruk_snaga_of_mordor_pl|Uruk Snagas de Mordor
-trp_uruk_of_mordor|Uruk de Mordor
-trp_uruk_of_mordor_pl|Uruks de Mordor
-trp_large_uruk_of_mordor|Uruk Grande de Mordor
-trp_large_uruk_of_mordor_pl|Uruks Grandes de Mordor
-trp_fell_uruk_of_mordor|Uruk Caído de Mordor
-trp_fell_uruk_of_mordor_pl|Uruks Caídos de Mordor
-trp_uruk_slayer_of_mordor|Uruk Matador de Mordor
-trp_uruk_slayer_of_mordor_pl|Uruks Matadores de Mordor
-trp_fell_uruk_slayer_of_mordor|Uruk Caído Matador de Mordor
-trp_fell_uruk_slayer_of_mordor_pl|Uruks Caídos Matadores de Mordor
-trp_black_uruk_of_barad_dur|Uruk Negro de Barad Dur
-trp_black_uruk_of_barad_dur_pl|Uruks Negros de Barad Dur
-trp_uruk_mordor_standard_bearer|Uruk Carregador de Estandarte de Mordor
-trp_uruk_mordor_standard_bearer_pl|Uruks Carregadores de Estandarte de Mordor
+trp_i1_mordor_uruk_snaga|Uruk Snaga de Mordor
+trp_i1_mordor_uruk_snaga_pl|Uruk Snagas de Mordor
+trp_i2_mordor_uruk|Uruk de Mordor
+trp_i2_mordor_uruk_pl|Uruks de Mordor
+trp_i3_mordor_large_uruk|Uruk Grande de Mordor
+trp_i3_mordor_large_uruk_pl|Uruks Grandes de Mordor
+trp_i4_mordor_fell_uruk|Uruk Caído de Mordor
+trp_i4_mordor_fell_uruk_pl|Uruks Caídos de Mordor
+trp_i3_mordor_uruk_slayer|Uruk Matador de Mordor
+trp_i3_mordor_uruk_slayer_pl|Uruks Matadores de Mordor
+trp_i4_mordor_fell_uruk_slayer|Uruk Caído Matador de Mordor
+trp_i4_mordor_fell_uruk_slayer_pl|Uruks Caídos Matadores de Mordor
+trp_i5_mordor_black_uruk|Uruk Negro de Barad Dur
+trp_i5_mordor_black_uruk_pl|Uruks Negros de Barad Dur
+trp_i5_mordor_uruk_standard_bearer|Uruk Carregador de Estandarte de Mordor
+trp_i5_mordor_uruk_standard_bearer_pl|Uruks Carregadores de Estandarte de Mordor
 trp_troll_of_moria|Troll da Caverna
 trp_troll_of_moria_pl|Trolls da Caverna
 trp_armoured_troll|Troll Blindado
@@ -674,36 +674,36 @@ trp_olog_hai|Olog Hai de Mordor
 trp_olog_hai_pl|Olog Hai de Mordor
 trp_ent|Ent
 trp_ent_pl|Ents
-trp_orc_snaga_of_guldur|Snaga Orc de Dol Guldur
-trp_orc_snaga_of_guldur_pl|Snagas Orc de Dol Guldur
-trp_orc_of_guldur|Rastreador Orc de Dol Guldur
-trp_orc_of_guldur_pl|Rastreadores Orc de Dol Guldur
-trp_orc_snaga_of_mordor|Orc Snaga de Mordor
-trp_orc_snaga_of_mordor_pl|Orcs Snagas de Mordor
-trp_orc_of_mordor|Orc de Mordor
-trp_orc_of_mordor_pl|Orcs de Mordor
-trp_large_orc_of_mordor|Orc Grande de Mordor
-trp_large_orc_of_mordor_pl|Orcs Grandes de Mordor
-trp_fell_orc_of_mordor|Orc Caído de Mordor
-trp_fell_orc_of_mordor_pl|Orcs Caídos de Mordor
-trp_warg_rider_of_gorgoroth|Cavaleiro de Warg de Gorgoroth
-trp_warg_rider_of_gorgoroth_pl|Cavaleiros de Warg de Gorgoroth
-trp_great_warg_rider_of_mordor|Cavaleiro de Warg Grande de Udun
-trp_great_warg_rider_of_mordor_pl|Cavaleiros de Warg Grande de Udun
-trp_morgul_orc|Orc de Minas Morgul
-trp_morgul_orc_pl|Orcs de Minas Morgul
-trp_fell_morgul_orc|Orc Caído de Minas Morgul
-trp_fell_morgul_orc_pl|Orcs Caídos de Minas Morgul
-trp_orc_tracker_of_mordor|Rastreador Grande Orc de Dol Guldur
-trp_orc_tracker_of_mordor_pl|Rastreadores Grandes Orc de Dol Guldur
-trp_fell_orc_tracker_of_mordor|Rastreador Caído Orc de Dol Guldur
-trp_fell_orc_tracker_of_mordor_pl|Rastreadores Caídos Orc de Dol Guldur
-trp_orc_archer_of_mordor|Orc Arqueiro de Mordor
-trp_orc_archer_of_mordor_pl|Orcs Arqueiros de Mordor
-trp_large_orc_archer_of_mordor|Orc Grande Arqueiro de Mordor
-trp_large_orc_archer_of_mordor_pl|Orcs Grandes Arqueiros de Mordor
-trp_fell_orc_archer_of_mordor|Orc Caído Arqueiro de Mordor
-trp_fell_orc_archer_of_mordor_pl|Orcs Caídos Arqueiros de Mordor
+trp_i1_guldur_orc_snaga|Snaga Orc de Dol Guldur
+trp_i1_guldur_orc_snaga_pl|Snagas Orc de Dol Guldur
+trp_a2_guldur_orc_tracker|Rastreador Orc de Dol Guldur
+trp_a2_guldur_orc_tracker_pl|Rastreadores Orc de Dol Guldur
+trp_i1_mordor_orc_snaga|Orc Snaga de Mordor
+trp_i1_mordor_orc_snaga_pl|Orcs Snagas de Mordor
+trp_i2_mordor_orc|Orc de Mordor
+trp_i2_mordor_orc_pl|Orcs de Mordor
+trp_i3_mordor_large_orc|Orc Grande de Mordor
+trp_i3_mordor_large_orc_pl|Orcs Grandes de Mordor
+trp_i4_mordor_fell_orc|Orc Caído de Mordor
+trp_i4_mordor_fell_orc_pl|Orcs Caídos de Mordor
+trp_c3_mordor_warg_rider|Cavaleiro de Warg de Gorgoroth
+trp_c3_mordor_warg_rider_pl|Cavaleiros de Warg de Gorgoroth
+trp_c4_mordor_great_warg_rider|Cavaleiro de Warg Grande de Udun
+trp_c4_mordor_great_warg_rider_pl|Cavaleiros de Warg Grande de Udun
+trp_i2_mordor_morgul_orc|Orc de Minas Morgul
+trp_i2_mordor_morgul_orc_pl|Orcs de Minas Morgul
+trp_i4_mordor_fell_morgul_orc|Orc Caído de Minas Morgul
+trp_i4_mordor_fell_morgul_orc_pl|Orcs Caídos de Minas Morgul
+trp_a3_guldur_large_orc_tracker|Rastreador Grande Orc de Dol Guldur
+trp_a3_guldur_large_orc_tracker_pl|Rastreadores Grandes Orc de Dol Guldur
+trp_a4_guldur_fell_orc_tracker|Rastreador Caído Orc de Dol Guldur
+trp_a4_guldur_fell_orc_tracker_pl|Rastreadores Caídos Orc de Dol Guldur
+trp_a2_mordor_orc_archer|Orc Arqueiro de Mordor
+trp_a2_mordor_orc_archer_pl|Orcs Arqueiros de Mordor
+trp_a3_mordor_large_orc_archer|Orc Grande Arqueiro de Mordor
+trp_a3_mordor_large_orc_archer_pl|Orcs Grandes Arqueiros de Mordor
+trp_a4_mordor_fell_orc_archer|Orc Caído Arqueiro de Mordor
+trp_a4_mordor_fell_orc_archer_pl|Orcs Caídos Arqueiros de Mordor
 trp_c3_wolf_rider_of_moria|Cavaleiro de Lobo de Moria
 trp_c3_wolf_rider_of_moria_pl|Cavaleiros de Lobo de Moria
 trp_c4_warg_rider_of_moria|Cavaleiro de Warg de Moria
@@ -725,48 +725,48 @@ trp_a3_large_goblin_archer_of_moria_pl|Goblins Grandes Arqueiros de Moria
 trp_a4_fell_goblin_archer_of_moria|Goblin Caído Arqueiro de Moria
 trp_a4_fell_goblin_archer_of_moria_pl|Goblins Caídos Arqueiros de Moria
 
-trp_i1_goblin_gundabad|Goblin de Gundabad
-trp_i1_goblin_gundabad_pl|Goblins de Gundabad
-trp_i2_orc_gundabad|Orc de Gundabad
-trp_i2_orc_gundabad_pl|Orcs de Gundabad
-trp_i3_orc_fighter_gundabad|Orc Lutador de Gundabad
-trp_i3_orc_fighter_gundabad_pl|Orcs Lutadores de Gundabad
-trp_i4_fell_orc_warrior_gundabad|Guerreiro Orc Gundabad
-trp_i4_fell_orc_warrior_gundabad_pl|Guerreiros Orc Gundabad
-trp_i4_orc_beserker_gundabad|Orc Frenético Gundabad
-trp_i4_orc_beserker_gundabad_pl|Orcs Frenéticos Gundabad
-trp_ca4_warg_skirmisher_gundabad|Escaramuçador Gundabad
-trp_ca4_warg_skirmisher_gundabad_pl|Escaramuçadores Gundabad 
-trp_ca5_goblin_north_clan_skirmisher|Escaramuçador Goblin do Clã do Norte
-trp_ca5_goblin_north_clan_skirmisher_pl|Escaramuçadores Goblin do Clã do Norte
-trp_c3_goblin_rider_gundabad|Goblin Cavaleiro de Gundabad
-trp_c3_goblin_rider_gundabad_pl|Goblins Cavaleiros de Gundabad
-trp_c4_warg_rider_gundabad|Cavaleiro de Warg de Gundabad
-trp_c4_warg_rider_gundabad_pl|Cavaleiros de Warg de Gundabad
-trp_c5_goblin_north_clan_rider|Goblin Cavaleiro Nortenho
-trp_c5_goblin_north_clan_rider_pl|Goblin Cavaleiros Nortenhos
+trp_i1_gunda_goblin|Goblin de Gundabad
+trp_i1_gunda_goblin_pl|Goblins de Gundabad
+trp_i2_gunda_orc|Orc de Gundabad
+trp_i2_gunda_orc_pl|Orcs de Gundabad
+trp_i3_gunda_orc_fighter|Orc Lutador de Gundabad
+trp_i3_gunda_orc_fighter_pl|Orcs Lutadores de Gundabad
+trp_i4_gunda_orc_warrior|Guerreiro Orc Gundabad
+trp_i4_gunda_orc_warrior_pl|Guerreiros Orc Gundabad
+trp_i4_gunda_orc_berserker|Orc Frenético Gundabad
+trp_i4_gunda_orc_berserker_pl|Orcs Frenéticos Gundabad
+trp_ca4_gunda_skirmisher|Escaramuçador Gundabad
+trp_ca4_gunda_skirmisher_pl|Escaramuçadores Gundabad 
+trp_ca5_gunda_clan_skirmisher|Escaramuçador Goblin do Clã do Norte
+trp_ca5_gunda_clan_skirmisher_pl|Escaramuçadores Goblin do Clã do Norte
+trp_c3_gunda_goblin_rider|Goblin Cavaleiro de Gundabad
+trp_c3_gunda_goblin_rider_pl|Goblins Cavaleiros de Gundabad
+trp_c4_gunda_warg_rider|Cavaleiro de Warg de Gundabad
+trp_c4_gunda_warg_rider_pl|Cavaleiros de Warg de Gundabad
+trp_c5_gunda_clan_rider|Goblin Cavaleiro Nortenho
+trp_c5_gunda_clan_rider_pl|Goblin Cavaleiros Nortenhos
 trp_mountain_goblin|Goblin das Montanhas
 trp_mountain_goblin_pl|Goblins das Montanhas
 trp_tribal_orc|Orc Tribal
 trp_tribal_orc_pl|Orcs tribais
 trp_tribal_orc_warrior|Orc Tribal Guerreiro
 trp_tribal_orc_warrior_pl|Orcs Tribais Guerreiros
-trp_i5_orc_champion_gundabad|Campeão Orc Gundabad
-trp_i5_orc_champion_gundabad_pl|Campeões Orc Gundabad
-trp_black_numenorean_renegade|Numenoriano Negro Renegado
-trp_black_numenorean_renegade_pl|Numenorianos Negros Renegados
-trp_black_numenorean_warrior|Numenoriano Negro Guerreiro
-trp_black_numenorean_warrior_pl|Numenorianos Negros Guerreiros
-trp_black_numenorean_veteran_warrior|Numenoriano Negro Guerreiro Veterano
-trp_black_numenorean_veteran_warrior_pl|Numenorianos Negros Guerreiros Veteranos
-trp_black_numenorean_champion|Numenoriano Negro Campeão
-trp_black_numenorean_champion_pl|Numenorianos Negros Campeões
-trp_black_numenorean_assassin|Numenoriano Negro Assassino
-trp_black_numenorean_assassin_pl|Numenorianos Negros Assassinos
-trp_black_numenorean_veteran_horseman|Numenoriano Negro Cavalariço
-trp_black_numenorean_veteran_horseman_pl|Numenorianos Negros Cavalariços
-trp_black_numenorean_horsemaster|Numenoriano Negro Mestre dos Cavalos
-trp_black_numenorean_horsemaster_pl|Numenorianos Negros Mestres dos Cavalos
+trp_i5_gunda_orc_champion|Campeão Orc Gundabad
+trp_i5_gunda_orc_champion_pl|Campeões Orc Gundabad
+trp_i2_mordor_num_renegade|Numenoriano Negro Renegado
+trp_i2_mordor_num_renegade_pl|Numenorianos Negros Renegados
+trp_i3_mordor_num_warrior|Numenoriano Negro Guerreiro
+trp_i3_mordor_num_warrior_pl|Numenorianos Negros Guerreiros
+trp_i4_mordor_num_vet_warrior|Numenoriano Negro Guerreiro Veterano
+trp_i4_mordor_num_vet_warrior_pl|Numenorianos Negros Guerreiros Veteranos
+trp_i5_mordor_num_champion|Numenoriano Negro Campeão
+trp_i5_mordor_num_champion_pl|Numenorianos Negros Campeões
+trp_i5_mordor_num_assassin|Numenoriano Negro Assassino
+trp_i5_mordor_num_assassin_pl|Numenorianos Negros Assassinos
+trp_c4_mordor_num_horseman|Numenoriano Negro Cavalariço
+trp_c4_mordor_num_horseman_pl|Numenorianos Negros Cavalariços
+trp_c5_mordor_num_knight|Numenoriano Negro Mestre dos Cavalos
+trp_c5_mordor_num_knight_pl|Numenorianos Negros Mestres dos Cavalos
 trp_noldorin_commander|Noldorin Comandante
 trp_noldorin_commander_pl|Noldorin Comandantes
 trp_elf_captain_of_lothlorien|Elfo Capitão de Lothlorien

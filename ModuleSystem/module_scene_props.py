@@ -2099,9 +2099,9 @@ scene_props = [
   (display_message,"@Secret place discovered!"),
     (try_for_agents, ":cur_agent"),
       (agent_get_troop_id, ":cur_agent_troop", ":cur_agent"),
-      (this_or_next|eq, ":cur_agent_troop", "trp_i1_goblin_gundabad"),
-      (this_or_next|eq, ":cur_agent_troop", "trp_i4_fell_orc_warrior_gundabad"),
-      (eq, ":cur_agent_troop", "trp_i3_orc_fighter_gundabad"),
+      (this_or_next|eq, ":cur_agent_troop", "trp_i1_gunda_goblin"),
+      (this_or_next|eq, ":cur_agent_troop", "trp_i4_gunda_orc_warrior"),
+      (eq, ":cur_agent_troop", "trp_i3_gunda_orc_fighter"),
       (agent_set_team, ":cur_agent", 1),
     (try_end)])]),
 

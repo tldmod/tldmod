@@ -650,22 +650,22 @@ trp_warg_ghost_h|Grote Warg
 ; trp_fighting_uruk_hai_pikeman_pl|Fighting Uruk Hai Pikemen
 ; trp_urukhai_standard_bearer|Uruk Hai Standard Bearer
 ; trp_urukhai_standard_bearer_pl|Uruk Hai Standard Bearers
-; trp_uruk_snaga_of_mordor|Uruk Snaga of Mordor
-; trp_uruk_snaga_of_mordor_pl|Uruk Snagas of Mordor
-; trp_uruk_of_mordor|Uruk of Mordor
-; trp_uruk_of_mordor_pl|Uruks of Mordor
-; trp_large_uruk_of_mordor|Large Uruk of Mordor
-; trp_large_uruk_of_mordor_pl|Large Uruks of Mordor
-; trp_fell_uruk_of_mordor|Fell Uruk of Mordor
-; trp_fell_uruk_of_mordor_pl|Fell Uruks of Mordor
-; trp_uruk_slayer_of_mordor|Uruk Slayer of Mordor
-; trp_uruk_slayer_of_mordor_pl|Uruk Slayers of Mordor
-; trp_fell_uruk_slayer_of_mordor|Fell Uruk Slayer of Mordor
-; trp_fell_uruk_slayer_of_mordor_pl|Fell Uruk Slayers of Mordor
-; trp_black_uruk_of_barad_dur|Black Uruk of Barad Dur
-; trp_black_uruk_of_barad_dur_pl|Black Uruks of Barad Dur
-; trp_uruk_mordor_standard_bearer|Mordor Standard Bearer
-; trp_uruk_mordor_standard_bearer_pl|Mordor Standard Bearers
+; trp_i1_mordor_uruk_snaga|Uruk Snaga of Mordor
+; trp_i1_mordor_uruk_snaga_pl|Uruk Snagas of Mordor
+; trp_i2_mordor_uruk|Uruk of Mordor
+; trp_i2_mordor_uruk_pl|Uruks of Mordor
+; trp_i3_mordor_large_uruk|Large Uruk of Mordor
+; trp_i3_mordor_large_uruk_pl|Large Uruks of Mordor
+; trp_i4_mordor_fell_uruk|Fell Uruk of Mordor
+; trp_i4_mordor_fell_uruk_pl|Fell Uruks of Mordor
+; trp_i3_mordor_uruk_slayer|Uruk Slayer of Mordor
+; trp_i3_mordor_uruk_slayer_pl|Uruk Slayers of Mordor
+; trp_i4_mordor_fell_uruk_slayer|Fell Uruk Slayer of Mordor
+; trp_i4_mordor_fell_uruk_slayer_pl|Fell Uruk Slayers of Mordor
+; trp_i5_mordor_black_uruk|Black Uruk of Barad Dur
+; trp_i5_mordor_black_uruk_pl|Black Uruks of Barad Dur
+; trp_i5_mordor_uruk_standard_bearer|Mordor Standard Bearer
+; trp_i5_mordor_uruk_standard_bearer_pl|Mordor Standard Bearers
 ; trp_troll_of_moria|Cave Troll
 ; trp_troll_of_moria_pl|Cave Trolls
 ; trp_armoured_troll|Armored Troll
@@ -674,36 +674,36 @@ trp_warg_ghost_h|Grote Warg
 ; trp_olog_hai_pl|Olog Hai of Mordor
 ; trp_ent|Ent
 ; trp_ent_pl|Ents
-; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
-; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
-; trp_orc_of_guldur|Orc Tracker of Dol Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
-; trp_orc_snaga_of_mordor|Orc Snaga of Mordor
-; trp_orc_snaga_of_mordor_pl|Orc Snagas of Mordor
-; trp_orc_of_mordor|Orc of Mordor
-; trp_orc_of_mordor_pl|Orcs of Mordor
-; trp_large_orc_of_mordor|Large Orc of Mordor
-; trp_large_orc_of_mordor_pl|Large Orcs of Mordor
-; trp_fell_orc_of_mordor|Fell Orc of Mordor
-; trp_fell_orc_of_mordor_pl|Fell Orcs of Mordor
-; trp_warg_rider_of_gorgoroth|Warg Rider of Gorgoroth
-; trp_warg_rider_of_gorgoroth_pl|Warg Riders of Gorgoroth
-; trp_great_warg_rider_of_mordor|Great Warg Rider of Udun
-; trp_great_warg_rider_of_mordor_pl|Great Warg Riders of Udun
-; trp_morgul_orc|Orc of Minas Morgul
-; trp_morgul_orc_pl|Orcs of Minas Morgul
-; trp_fell_morgul_orc|Fell Orc of Minas Morgul
-; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
-; trp_orc_tracker_of_mordor|Large Orc Tracker of Dol Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Trackers of Dol Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
-; trp_orc_archer_of_mordor|Orc Archer of Mordor
-; trp_orc_archer_of_mordor_pl|Orc Archers of Mordor
-; trp_large_orc_archer_of_mordor|Large Orc Archer of Mordor
-; trp_large_orc_archer_of_mordor_pl|Large Orc Archers of Mordor
-; trp_fell_orc_archer_of_mordor|Fell Orc Archer of Mordor
-; trp_fell_orc_archer_of_mordor_pl|Fell Orc Archers of Mordor
+; trp_i1_guldur_orc_snaga|Orc Snaga of Dol Guldur
+; trp_i1_guldur_orc_snaga_pl|Orc Snagas of Dol Guldur
+; trp_a2_guldur_orc_tracker|Orc Tracker of Dol Guldur
+; trp_a2_guldur_orc_tracker_pl|Orc Trackers of Dol Guldur
+; trp_i1_mordor_orc_snaga|Orc Snaga of Mordor
+; trp_i1_mordor_orc_snaga_pl|Orc Snagas of Mordor
+; trp_i2_mordor_orc|Orc of Mordor
+; trp_i2_mordor_orc_pl|Orcs of Mordor
+; trp_i3_mordor_large_orc|Large Orc of Mordor
+; trp_i3_mordor_large_orc_pl|Large Orcs of Mordor
+; trp_i4_mordor_fell_orc|Fell Orc of Mordor
+; trp_i4_mordor_fell_orc_pl|Fell Orcs of Mordor
+; trp_c3_mordor_warg_rider|Warg Rider of Gorgoroth
+; trp_c3_mordor_warg_rider_pl|Warg Riders of Gorgoroth
+; trp_c4_mordor_great_warg_rider|Great Warg Rider of Udun
+; trp_c4_mordor_great_warg_rider_pl|Great Warg Riders of Udun
+; trp_i2_mordor_morgul_orc|Orc of Minas Morgul
+; trp_i2_mordor_morgul_orc_pl|Orcs of Minas Morgul
+; trp_i4_mordor_fell_morgul_orc|Fell Orc of Minas Morgul
+; trp_i4_mordor_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+; trp_a3_guldur_large_orc_tracker|Large Orc Tracker of Dol Guldur
+; trp_a3_guldur_large_orc_tracker_pl|Large Orc Trackers of Dol Guldur
+; trp_a4_guldur_fell_orc_tracker|Fell Orc Tracker of Dol Guldur
+; trp_a4_guldur_fell_orc_tracker_pl|Fell Orc Trackers of Dol Guldur
+; trp_a2_mordor_orc_archer|Orc Archer of Mordor
+; trp_a2_mordor_orc_archer_pl|Orc Archers of Mordor
+; trp_a3_mordor_large_orc_archer|Large Orc Archer of Mordor
+; trp_a3_mordor_large_orc_archer_pl|Large Orc Archers of Mordor
+; trp_a4_mordor_fell_orc_archer|Fell Orc Archer of Mordor
+; trp_a4_mordor_fell_orc_archer_pl|Fell Orc Archers of Mordor
 ; trp_c3_wolf_rider_of_moria|Wolf Rider of Moria
 ; trp_c3_wolf_rider_of_moria_pl|Wolf Riders of Moria
 ; trp_c4_warg_rider_of_moria|Warg Rider of Moria
@@ -725,48 +725,48 @@ trp_warg_ghost_h|Grote Warg
 ; trp_a4_fell_goblin_archer_of_moria|Fell Goblin Archer of Moria
 ; trp_a4_fell_goblin_archer_of_moria_pl|Fell Goblin Archers of Moria
 
-; trp_i1_goblin_gundabad|Gundabad Goblin
-; trp_i1_goblin_gundabad_pl|Gundabad Goblins
-; trp_i2_orc_gundabad|Gundabad Orc
-; trp_i2_orc_gundabad_pl|Gundabad Orcs
-; trp_i3_orc_fighter_gundabad|Gundabad Orc Fighter
-; trp_i3_orc_fighter_gundabad_pl|Gundabad Orc Fighters
-; trp_i4_fell_orc_warrior_gundabad|Gundabad Orc Warrior
-; trp_i4_fell_orc_warrior_gundabad_pl|Gundabad Orc Warriors
-; trp_i4_orc_beserker_gundabad|Gundabad Orc Berserker
-; trp_i4_orc_beserker_gundabad_pl|Gundabad Orc Berserkers
-; trp_ca4_warg_skirmisher_gundabad|Gundabad Skirmisher
-; trp_ca4_warg_skirmisher_gundabad_pl|Gundabad Skirmishers
-; trp_ca5_goblin_north_clan_skirmisher|Goblin North Clan Skirmisher
-; trp_ca5_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
-; trp_c3_goblin_rider_gundabad|Gundabad Goblin Rider
-; trp_c3_goblin_rider_gundabad_pl|Gundabad Goblin Riders
-; trp_c4_warg_rider_gundabad|Gundabad Warg Rider
-; trp_c4_warg_rider_gundabad_pl|Gundabad Warg Riders
-; trp_c5_goblin_north_clan_rider|Goblin North Clan Rider
-; trp_c5_goblin_north_clan_rider_pl|Goblin North Clan Riders
+; trp_i1_gunda_goblin|Gundabad Goblin
+; trp_i1_gunda_goblin_pl|Gundabad Goblins
+; trp_i2_gunda_orc|Gundabad Orc
+; trp_i2_gunda_orc_pl|Gundabad Orcs
+; trp_i3_gunda_orc_fighter|Gundabad Orc Fighter
+; trp_i3_gunda_orc_fighter_pl|Gundabad Orc Fighters
+; trp_i4_gunda_orc_warrior|Gundabad Orc Warrior
+; trp_i4_gunda_orc_warrior_pl|Gundabad Orc Warriors
+; trp_i4_gunda_orc_berserker|Gundabad Orc Berserker
+; trp_i4_gunda_orc_berserker_pl|Gundabad Orc Berserkers
+; trp_ca4_gunda_skirmisher|Gundabad Skirmisher
+; trp_ca4_gunda_skirmisher_pl|Gundabad Skirmishers
+; trp_ca5_gunda_clan_skirmisher|Goblin North Clan Skirmisher
+; trp_ca5_gunda_clan_skirmisher_pl|Goblin North Clan Skirmishers
+; trp_c3_gunda_goblin_rider|Gundabad Goblin Rider
+; trp_c3_gunda_goblin_rider_pl|Gundabad Goblin Riders
+; trp_c4_gunda_warg_rider|Gundabad Warg Rider
+; trp_c4_gunda_warg_rider_pl|Gundabad Warg Riders
+; trp_c5_gunda_clan_rider|Goblin North Clan Rider
+; trp_c5_gunda_clan_rider_pl|Goblin North Clan Riders
 ; trp_mountain_goblin|Mountain Goblin
 ; trp_mountain_goblin_pl|Mountain Goblins
 ; trp_tribal_orc|Tribal Orc
 trp_tribal_orc_pl|Stammen Orks
 ; trp_tribal_orc_warrior|Tribal Orc Warrior
 ; trp_tribal_orc_warrior_pl|Tribal Orc Warriors
-; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
-; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
-; trp_black_numenorean_renegade|Black Numenorean Renegade
-; trp_black_numenorean_renegade_pl|Black Numenorean Renegades
-; trp_black_numenorean_warrior|Black Numenorean Warrior
-; trp_black_numenorean_warrior_pl|Black Numenorean Warriors
-; trp_black_numenorean_veteran_warrior|Black Numenorean Veteran Warrior
-; trp_black_numenorean_veteran_warrior_pl|Black Numenorean Veteran Warriors
-; trp_black_numenorean_champion|Black Numenorean Champion
-; trp_black_numenorean_champion_pl|Black Numenorean Champions
-; trp_black_numenorean_assassin|Black Numenorean Assassin
-; trp_black_numenorean_assassin_pl|Black Numenorean Assassins
-; trp_black_numenorean_veteran_horseman|Black Numenorean Horseman
-; trp_black_numenorean_veteran_horseman_pl|Black Numenorean Horsemen
-; trp_black_numenorean_horsemaster|Black Numenorean Horsemaster
-; trp_black_numenorean_horsemaster_pl|Black Numenorean Horsemasters
+; trp_i5_gunda_orc_champion|Gundabad Orc Champion
+; trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
+; trp_i2_mordor_num_renegade|Black Numenorean Renegade
+; trp_i2_mordor_num_renegade_pl|Black Numenorean Renegades
+; trp_i3_mordor_num_warrior|Black Numenorean Warrior
+; trp_i3_mordor_num_warrior_pl|Black Numenorean Warriors
+; trp_i4_mordor_num_vet_warrior|Black Numenorean Veteran Warrior
+; trp_i4_mordor_num_vet_warrior_pl|Black Numenorean Veteran Warriors
+; trp_i5_mordor_num_champion|Black Numenorean Champion
+; trp_i5_mordor_num_champion_pl|Black Numenorean Champions
+; trp_i5_mordor_num_assassin|Black Numenorean Assassin
+; trp_i5_mordor_num_assassin_pl|Black Numenorean Assassins
+; trp_c4_mordor_num_horseman|Black Numenorean Horseman
+; trp_c4_mordor_num_horseman_pl|Black Numenorean Horsemen
+; trp_c5_mordor_num_knight|Black Numenorean Horsemaster
+; trp_c5_mordor_num_knight_pl|Black Numenorean Horsemasters
 ; trp_noldorin_commander|Noldorin Commander
 ; trp_noldorin_commander_pl|Noldorin Commanders
 ; trp_elf_captain_of_lothlorien|Elf Captain of Lothlorien

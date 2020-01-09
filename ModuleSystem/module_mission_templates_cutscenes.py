@@ -444,14 +444,14 @@ mission_templates_cutscenes = [
        # (position_rotate_z, pos1, -11),
         (entry_point_get_position, pos1, 21),
         (set_spawn_position, pos1),
-        (spawn_agent, "trp_black_numenorean_horsemaster"), #has to be in a condition block, or it will crash
+        (spawn_agent, "trp_c5_mordor_num_knight"), #has to be in a condition block, or it will crash
         (agent_set_speed_limit, reg0, 7),
         (position_move_x, pos1, -225), #1.5x column width
         (position_move_y, pos1, -700), # bearer ahead of troops
         (try_for_range, ":unused", 0, 30), #ranks
           (try_for_range, ":unused2", 0, 4), #columns
             (set_spawn_position, pos1),
-            (spawn_agent, "trp_black_uruk_of_barad_dur"),
+            (spawn_agent, "trp_i5_mordor_black_uruk"),
             (agent_set_speed_limit, reg0, 7),
             (position_move_x, pos1, 150), #1.5m between columns
           (try_end),
@@ -529,14 +529,14 @@ mission_templates_cutscenes = [
            # march the troops down the bridge
            (try_for_agents, ":agent_no"), # find everyone and march them off 49
              (agent_get_troop_id, ":agent_troop", ":agent_no"),
-             (this_or_next|eq, ":agent_troop", "trp_black_numenorean_horsemaster"),
-             (eq, ":agent_troop", "trp_black_uruk_of_barad_dur"),
+             (this_or_next|eq, ":agent_troop", "trp_c5_mordor_num_knight"),
+             (eq, ":agent_troop", "trp_i5_mordor_black_uruk"),
              (entry_point_get_position, pos1, 22),
              #(agent_get_position, pos1, ":agent_no"),
              #(position_move_x, pos1, 1350), # correction for angle numerical loss
              #(position_move_y, pos1, 10000),
              (agent_set_scripted_destination, ":agent_no", pos1, 1),
-             (eq, ":agent_troop", "trp_black_numenorean_horsemaster"),
+             (eq, ":agent_troop", "trp_c5_mordor_num_knight"),
              (agent_play_sound, ":agent_no", "snd_nazgul_skreech_long"), #somebody has to screech
            (try_end),
            (val_add, "$g_tld_intro_state", 1),
@@ -553,7 +553,7 @@ mission_templates_cutscenes = [
            # find the leader and make him make yell a little
            (try_for_agents, ":agent_no"), 
              (agent_get_troop_id, ":agent_troop", ":agent_no"),
-             (eq, ":agent_troop", "trp_uruk_mordor_standard_bearer"),
+             (eq, ":agent_troop", "trp_i5_mordor_uruk_standard_bearer"),
              (agent_play_sound, ":agent_no", "snd_uruk_victory"),
            (try_end),
            (val_add, "$g_tld_intro_state", 1),

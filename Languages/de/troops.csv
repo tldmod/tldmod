@@ -650,22 +650,22 @@ trp_fighting_uruk_hai_pikeman|Pikenträger der Kämpfenden Uruk-hai
 trp_fighting_uruk_hai_pikeman_pl|Pikenträger der Kämpfenden Uruk-hai
 trp_urukhai_standard_bearer|Standartenträger der Uruk-hai
 trp_urukhai_standard_bearer_pl|Standartenträger der Uruk-hai
-trp_uruk_snaga_of_mordor|Uruk-Snaga aus Mordor
-trp_uruk_snaga_of_mordor_pl|Uruk-Snagas aus Mordor
-trp_uruk_of_mordor|Uruk aus Mordor
-trp_uruk_of_mordor_pl|Uruks aus Mordor
-trp_large_uruk_of_mordor|Großer Uruk aus Mordor
-trp_large_uruk_of_mordor_pl|Große Uruks aus Mordor
-trp_fell_uruk_of_mordor|Grausamer Uruk aus Mordor
-trp_fell_uruk_of_mordor_pl|Grausame Uruks aus Mordor
-trp_uruk_slayer_of_mordor|Uruk-Schlächter aus Mordor
-trp_uruk_slayer_of_mordor_pl|Uruk-Schlächter aus Mordor
-trp_fell_uruk_slayer_of_mordor|Grausamer Uruk-Schlächter aus Mordor
-trp_fell_uruk_slayer_of_mordor_pl|Grausame Uruk-Schlächter aus Mordor
-trp_black_uruk_of_barad_dur|Schwarzer Uruk von Barad-dur
-trp_black_uruk_of_barad_dur_pl|Schwarze Uruks von Barad-dur
-trp_uruk_mordor_standard_bearer|Standartenträger von Mordor
-trp_uruk_mordor_standard_bearer_pl|Standartenträger von Mordor
+trp_i1_mordor_uruk_snaga|Uruk-Snaga aus Mordor
+trp_i1_mordor_uruk_snaga_pl|Uruk-Snagas aus Mordor
+trp_i2_mordor_uruk|Uruk aus Mordor
+trp_i2_mordor_uruk_pl|Uruks aus Mordor
+trp_i3_mordor_large_uruk|Großer Uruk aus Mordor
+trp_i3_mordor_large_uruk_pl|Große Uruks aus Mordor
+trp_i4_mordor_fell_uruk|Grausamer Uruk aus Mordor
+trp_i4_mordor_fell_uruk_pl|Grausame Uruks aus Mordor
+trp_i3_mordor_uruk_slayer|Uruk-Schlächter aus Mordor
+trp_i3_mordor_uruk_slayer_pl|Uruk-Schlächter aus Mordor
+trp_i4_mordor_fell_uruk_slayer|Grausamer Uruk-Schlächter aus Mordor
+trp_i4_mordor_fell_uruk_slayer_pl|Grausame Uruk-Schlächter aus Mordor
+trp_i5_mordor_black_uruk|Schwarzer Uruk von Barad-dur
+trp_i5_mordor_black_uruk_pl|Schwarze Uruks von Barad-dur
+trp_i5_mordor_uruk_standard_bearer|Standartenträger von Mordor
+trp_i5_mordor_uruk_standard_bearer_pl|Standartenträger von Mordor
 trp_troll_of_moria|Höhlentroll
 trp_troll_of_moria_pl|Höhlentrolle
 trp_armoured_troll|Gepanzerter Troll
@@ -674,36 +674,36 @@ trp_olog_hai|Olog aus Mordor
 trp_olog_hai_pl|Olog-hai aus Mordor
 trp_ent|Ent
 trp_ent_pl|Ents
-trp_orc_snaga_of_guldur|Snaga von Dol Guldur
-trp_orc_snaga_of_guldur_pl|Snagas von Dol Guldur
-trp_orc_of_guldur|Spür-Ork von Dol Guldur
-trp_orc_of_guldur_pl|Spür-Orks von Dol Guldur
-trp_orc_snaga_of_mordor|Snaga aus Mordor
-trp_orc_snaga_of_mordor_pl|Snagas aus Mordor
-trp_orc_of_mordor|Ork aus Mordor
-trp_orc_of_mordor_pl|Orks aus Mordor
-trp_large_orc_of_mordor|Großer Ork aus Mordor
-trp_large_orc_of_mordor_pl|Große Orks aus Mordor
-trp_fell_orc_of_mordor|Grausamer Ork aus Mordor
-trp_fell_orc_of_mordor_pl|Grausame Orks aus Mordor
-trp_warg_rider_of_gorgoroth|Wargreiter von Gorgoroth
-trp_warg_rider_of_gorgoroth_pl|Wargreiter von Gorgoroth
-trp_great_warg_rider_of_mordor|Großer Wargreiter von Udun
-trp_great_warg_rider_of_mordor_pl|Große Wargreiter von Udun
-trp_morgul_orc|Ork von Minas Morgul
-trp_morgul_orc_pl|Orks von Minas Morgul
-trp_fell_morgul_orc|Grausamer Ork von Minas Morgul
-trp_fell_morgul_orc_pl|Grausamer Orks von Minas Morgul
-trp_orc_tracker_of_mordor|Großer Spür-Ork von Dol Guldur
-trp_orc_tracker_of_mordor_pl|Große Spür-Orks von Guldur
-trp_fell_orc_tracker_of_mordor|Grausamer Spür-Ork von Dol Guldur
-trp_fell_orc_tracker_of_mordor_pl|Grausame Spür-Orks von Dol Guldur
-trp_orc_archer_of_mordor|Ork-Bogenschütze aus Mordor
-trp_orc_archer_of_mordor_pl|Ork-Bogenschützen aus Mordor
-trp_large_orc_archer_of_mordor|Großer Ork-Bogenschütze aus Mordor
-trp_large_orc_archer_of_mordor_pl|Große Ork-Bogenschützen aus Mordor
-trp_fell_orc_archer_of_mordor|Grausamer Ork-Bogenschütze aus Mordor
-trp_fell_orc_archer_of_mordor_pl|Grausame Ork-Bogenschützen aus Mordor
+trp_i1_guldur_orc_snaga|Snaga von Dol Guldur
+trp_i1_guldur_orc_snaga_pl|Snagas von Dol Guldur
+trp_a2_guldur_orc_tracker|Spür-Ork von Dol Guldur
+trp_a2_guldur_orc_tracker_pl|Spür-Orks von Dol Guldur
+trp_i1_mordor_orc_snaga|Snaga aus Mordor
+trp_i1_mordor_orc_snaga_pl|Snagas aus Mordor
+trp_i2_mordor_orc|Ork aus Mordor
+trp_i2_mordor_orc_pl|Orks aus Mordor
+trp_i3_mordor_large_orc|Großer Ork aus Mordor
+trp_i3_mordor_large_orc_pl|Große Orks aus Mordor
+trp_i4_mordor_fell_orc|Grausamer Ork aus Mordor
+trp_i4_mordor_fell_orc_pl|Grausame Orks aus Mordor
+trp_c3_mordor_warg_rider|Wargreiter von Gorgoroth
+trp_c3_mordor_warg_rider_pl|Wargreiter von Gorgoroth
+trp_c4_mordor_great_warg_rider|Großer Wargreiter von Udun
+trp_c4_mordor_great_warg_rider_pl|Große Wargreiter von Udun
+trp_i2_mordor_morgul_orc|Ork von Minas Morgul
+trp_i2_mordor_morgul_orc_pl|Orks von Minas Morgul
+trp_i4_mordor_fell_morgul_orc|Grausamer Ork von Minas Morgul
+trp_i4_mordor_fell_morgul_orc_pl|Grausamer Orks von Minas Morgul
+trp_a3_guldur_large_orc_tracker|Großer Spür-Ork von Dol Guldur
+trp_a3_guldur_large_orc_tracker_pl|Große Spür-Orks von Guldur
+trp_a4_guldur_fell_orc_tracker|Grausamer Spür-Ork von Dol Guldur
+trp_a4_guldur_fell_orc_tracker_pl|Grausame Spür-Orks von Dol Guldur
+trp_a2_mordor_orc_archer|Ork-Bogenschütze aus Mordor
+trp_a2_mordor_orc_archer_pl|Ork-Bogenschützen aus Mordor
+trp_a3_mordor_large_orc_archer|Großer Ork-Bogenschütze aus Mordor
+trp_a3_mordor_large_orc_archer_pl|Große Ork-Bogenschützen aus Mordor
+trp_a4_mordor_fell_orc_archer|Grausamer Ork-Bogenschütze aus Mordor
+trp_a4_mordor_fell_orc_archer_pl|Grausame Ork-Bogenschützen aus Mordor
 trp_c3_wolf_rider_of_moria|Wolfsreiter von Moria
 trp_c3_wolf_rider_of_moria_pl|Wolfsreiter von Moria
 trp_c4_warg_rider_of_moria|Wargreiter von Moria
@@ -725,48 +725,48 @@ trp_a3_large_goblin_archer_of_moria_pl|Große Ork-Bogenschützen von Moria
 trp_a4_fell_goblin_archer_of_moria|Grausamer Ork-Bogenschütze von Moria
 trp_a4_fell_goblin_archer_of_moria_pl|Grausame Ork-Bogenschützen von Moria
 
-trp_i1_goblin_gundabad|Snaga von Gundabad
-trp_i1_goblin_gundabad_pl|Snagas von Gundabad
-trp_i2_orc_gundabad|Ork von Gundabad
-trp_i2_orc_gundabad_pl|Orks von Gundabad
-trp_i3_orc_fighter_gundabad|Ork-Kämpfer von Gundabad
-trp_i3_orc_fighter_gundabad_pl|Ork-Kämpfer von Gundabad
-trp_i4_fell_orc_warrior_gundabad|Ork-Krieger von Gundabad
-trp_i4_fell_orc_warrior_gundabad_pl|Ork-Krieger von Gundabad
-trp_i4_orc_beserker_gundabad|Ork-Berserker von Gundabad
-trp_i4_orc_beserker_gundabad_pl|Ork-Berserker von Gundabad
-trp_ca4_warg_skirmisher_gundabad|Scharmützler von Gundabad
-trp_ca4_warg_skirmisher_gundabad_pl|Scharmützler von Gundabad
-trp_ca5_goblin_north_clan_skirmisher|Warg-Scharmützler des Nordens
-trp_ca5_goblin_north_clan_skirmisher_pl|Warg-Scharmützler des Nordens
-trp_c3_goblin_rider_gundabad|Wolfsreiter von Gundabad
-trp_c3_goblin_rider_gundabad_pl|Wolfsreiter von Gundabad
-trp_c4_warg_rider_gundabad|Wargreiter von Gundabad
-trp_c4_warg_rider_gundabad_pl|Wargreiter von Gundabad
-trp_c5_goblin_north_clan_rider|Wargreiter des Nordens
-trp_c5_goblin_north_clan_rider_pl|Wargreiter des Nordens
+trp_i1_gunda_goblin|Snaga von Gundabad
+trp_i1_gunda_goblin_pl|Snagas von Gundabad
+trp_i2_gunda_orc|Ork von Gundabad
+trp_i2_gunda_orc_pl|Orks von Gundabad
+trp_i3_gunda_orc_fighter|Ork-Kämpfer von Gundabad
+trp_i3_gunda_orc_fighter_pl|Ork-Kämpfer von Gundabad
+trp_i4_gunda_orc_warrior|Ork-Krieger von Gundabad
+trp_i4_gunda_orc_warrior_pl|Ork-Krieger von Gundabad
+trp_i4_gunda_orc_berserker|Ork-Berserker von Gundabad
+trp_i4_gunda_orc_berserker_pl|Ork-Berserker von Gundabad
+trp_ca4_gunda_skirmisher|Scharmützler von Gundabad
+trp_ca4_gunda_skirmisher_pl|Scharmützler von Gundabad
+trp_ca5_gunda_clan_skirmisher|Warg-Scharmützler des Nordens
+trp_ca5_gunda_clan_skirmisher_pl|Warg-Scharmützler des Nordens
+trp_c3_gunda_goblin_rider|Wolfsreiter von Gundabad
+trp_c3_gunda_goblin_rider_pl|Wolfsreiter von Gundabad
+trp_c4_gunda_warg_rider|Wargreiter von Gundabad
+trp_c4_gunda_warg_rider_pl|Wargreiter von Gundabad
+trp_c5_gunda_clan_rider|Wargreiter des Nordens
+trp_c5_gunda_clan_rider_pl|Wargreiter des Nordens
 trp_mountain_goblin|Bergork
 trp_mountain_goblin_pl|Bergorks
 trp_tribal_orc|Stammesork
 trp_tribal_orc_pl|Stammesorks
 trp_tribal_orc_warrior|Ork-Stammeskrieger
 trp_tribal_orc_warrior_pl|Ork-Stammeskrieger
-trp_i5_orc_champion_gundabad|Kriegsheld aus Gundabad
-trp_i5_orc_champion_gundabad_pl|Kriegshelden aus Gundabad
-trp_black_numenorean_renegade|Schwarzer Numenorer
-trp_black_numenorean_renegade_pl|Schwarze Numenorer
-trp_black_numenorean_warrior|Krieger der Schwarzen Numenorer
-trp_black_numenorean_warrior_pl|Krieger der Schwarzen Numenorer
-trp_black_numenorean_veteran_warrior|Erfahrener Krieger der Schwarzen Numenorer
-trp_black_numenorean_veteran_warrior_pl|Erfahrene Krieger der Schwarzen Numenorer
-trp_black_numenorean_champion|Kriegsheld der Schwarzen Numenorer
-trp_black_numenorean_champion_pl|Kriegshelden der Schwarzen Numenorer
-trp_black_numenorean_assassin|Meuchler der Schwarzen Numenorer
-trp_black_numenorean_assassin_pl|Meuchler der Schwarzen Numenorer
-trp_black_numenorean_veteran_horseman|Reiter der Schwarzen Numenorer
-trp_black_numenorean_veteran_horseman_pl|Reiter der Schwarzen Numenorer
-trp_black_numenorean_horsemaster|Pferdeherr der Schwarzen Numenorer
-trp_black_numenorean_horsemaster_pl|Pferdeherren der Schwarzen Numenorer
+trp_i5_gunda_orc_champion|Kriegsheld aus Gundabad
+trp_i5_gunda_orc_champion_pl|Kriegshelden aus Gundabad
+trp_i2_mordor_num_renegade|Schwarzer Numenorer
+trp_i2_mordor_num_renegade_pl|Schwarze Numenorer
+trp_i3_mordor_num_warrior|Krieger der Schwarzen Numenorer
+trp_i3_mordor_num_warrior_pl|Krieger der Schwarzen Numenorer
+trp_i4_mordor_num_vet_warrior|Erfahrener Krieger der Schwarzen Numenorer
+trp_i4_mordor_num_vet_warrior_pl|Erfahrene Krieger der Schwarzen Numenorer
+trp_i5_mordor_num_champion|Kriegsheld der Schwarzen Numenorer
+trp_i5_mordor_num_champion_pl|Kriegshelden der Schwarzen Numenorer
+trp_i5_mordor_num_assassin|Meuchler der Schwarzen Numenorer
+trp_i5_mordor_num_assassin_pl|Meuchler der Schwarzen Numenorer
+trp_c4_mordor_num_horseman|Reiter der Schwarzen Numenorer
+trp_c4_mordor_num_horseman_pl|Reiter der Schwarzen Numenorer
+trp_c5_mordor_num_knight|Pferdeherr der Schwarzen Numenorer
+trp_c5_mordor_num_knight_pl|Pferdeherren der Schwarzen Numenorer
 trp_noldorin_commander|Fürst der Noldor
 trp_noldorin_commander_pl|Fürsten der Noldor
 trp_elf_captain_of_lothlorien|Heerführer von Lothlorien

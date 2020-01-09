@@ -650,22 +650,22 @@ trp_fighting_uruk_hai_pikeman|Harcias uruk-hai pikás
 trp_fighting_uruk_hai_pikeman_pl|Harcias uruk-hai pikások
 trp_urukhai_standard_bearer|Uruk-hai zászlóvivő
 trp_urukhai_standard_bearer_pl|Uruk-hai zászlóvivők
-trp_uruk_snaga_of_mordor|Mordori uruk snaga
-trp_uruk_snaga_of_mordor_pl|Mordori uruk snagák
-trp_uruk_of_mordor|Mordori uruk
-trp_uruk_of_mordor_pl|Mordori urukok
-trp_large_uruk_of_mordor|Mordori hatalmas uruk
-trp_large_uruk_of_mordor_pl|Mordori hatalmas urukok
-trp_fell_uruk_of_mordor|Mordori irdatlan uruk
-trp_fell_uruk_of_mordor_pl|Mordori irdatlan urukok
-trp_uruk_slayer_of_mordor|Mordori uruk öldöklő
-trp_uruk_slayer_of_mordor_pl|Mordori uruk öldöklők
-trp_fell_uruk_slayer_of_mordor|Mordori irdatlan uruk öldöklő
-trp_fell_uruk_slayer_of_mordor_pl|Mordori irdatlan uruk öldöklők
-trp_black_uruk_of_barad_dur|Barad-dûri fekete uruk
-trp_black_uruk_of_barad_dur_pl|Barad-dûri fekete urukok
-trp_uruk_mordor_standard_bearer|Mordori zászlóvivő
-trp_uruk_mordor_standard_bearer_pl|Mordori zászlóvivők
+trp_i1_mordor_uruk_snaga|Mordori uruk snaga
+trp_i1_mordor_uruk_snaga_pl|Mordori uruk snagák
+trp_i2_mordor_uruk|Mordori uruk
+trp_i2_mordor_uruk_pl|Mordori urukok
+trp_i3_mordor_large_uruk|Mordori hatalmas uruk
+trp_i3_mordor_large_uruk_pl|Mordori hatalmas urukok
+trp_i4_mordor_fell_uruk|Mordori irdatlan uruk
+trp_i4_mordor_fell_uruk_pl|Mordori irdatlan urukok
+trp_i3_mordor_uruk_slayer|Mordori uruk öldöklő
+trp_i3_mordor_uruk_slayer_pl|Mordori uruk öldöklők
+trp_i4_mordor_fell_uruk_slayer|Mordori irdatlan uruk öldöklő
+trp_i4_mordor_fell_uruk_slayer_pl|Mordori irdatlan uruk öldöklők
+trp_i5_mordor_black_uruk|Barad-dûri fekete uruk
+trp_i5_mordor_black_uruk_pl|Barad-dûri fekete urukok
+trp_i5_mordor_uruk_standard_bearer|Mordori zászlóvivő
+trp_i5_mordor_uruk_standard_bearer_pl|Mordori zászlóvivők
 trp_troll_of_moria|Barlangi troll
 trp_troll_of_moria_pl|Barlangi trollok
 trp_armoured_troll|Páncélozott troll
@@ -674,36 +674,36 @@ trp_olog_hai|Mordori olog-hai
 trp_olog_hai_pl|Mordori olog-haiok
 trp_ent|Ent
 trp_ent_pl|Entek
-; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
-; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
-; trp_orc_of_guldur|Orc Tracker of Dol Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
-trp_orc_snaga_of_mordor|Mordori ork snaga
-trp_orc_snaga_of_mordor_pl|Mordori ork snagák
-trp_orc_of_mordor|Mordori ork
-trp_orc_of_mordor_pl|Mordori orkok
-trp_large_orc_of_mordor|Mordori hatalmas ork
-trp_large_orc_of_mordor_pl|Mordori hatalmas orkok
-trp_fell_orc_of_mordor|Mordori irdatlan ork
-trp_fell_orc_of_mordor_pl|Mordori irdatlan orkok
-trp_warg_rider_of_gorgoroth|Gorgorthi varglovas
-trp_warg_rider_of_gorgoroth_pl|Gorgorothi varglovasság
-trp_great_warg_rider_of_mordor|Udûni irdatlan varglovas
-trp_great_warg_rider_of_mordor_pl|Udûni irdatlan varglovasság
-; trp_morgul_orc|Orc of Minas Morgul
-; trp_morgul_orc_pl|Orcs of Minas Morgul
-; trp_fell_morgul_orc|Fell Orc of Minas Morgul
-; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
-; trp_orc_tracker_of_mordor|Large Orc Tracker of Dol Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Trackers of Dol Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
-trp_orc_archer_of_mordor|Mordori ork íjász
-trp_orc_archer_of_mordor_pl|Mordori ork íjászok
-trp_large_orc_archer_of_mordor|Mordori hatalmas ork íjász
-trp_large_orc_archer_of_mordor_pl|Mordori hatalmas ork íjászok
-trp_fell_orc_archer_of_mordor|Mordori irdatlan ork íjász
-trp_fell_orc_archer_of_mordor_pl|Mordori irdatlan ork íjászok
+; trp_i1_guldur_orc_snaga|Orc Snaga of Dol Guldur
+; trp_i1_guldur_orc_snaga_pl|Orc Snagas of Dol Guldur
+; trp_a2_guldur_orc_tracker|Orc Tracker of Dol Guldur
+; trp_a2_guldur_orc_tracker_pl|Orc Trackers of Dol Guldur
+trp_i1_mordor_orc_snaga|Mordori ork snaga
+trp_i1_mordor_orc_snaga_pl|Mordori ork snagák
+trp_i2_mordor_orc|Mordori ork
+trp_i2_mordor_orc_pl|Mordori orkok
+trp_i3_mordor_large_orc|Mordori hatalmas ork
+trp_i3_mordor_large_orc_pl|Mordori hatalmas orkok
+trp_i4_mordor_fell_orc|Mordori irdatlan ork
+trp_i4_mordor_fell_orc_pl|Mordori irdatlan orkok
+trp_c3_mordor_warg_rider|Gorgorthi varglovas
+trp_c3_mordor_warg_rider_pl|Gorgorothi varglovasság
+trp_c4_mordor_great_warg_rider|Udûni irdatlan varglovas
+trp_c4_mordor_great_warg_rider_pl|Udûni irdatlan varglovasság
+; trp_i2_mordor_morgul_orc|Orc of Minas Morgul
+; trp_i2_mordor_morgul_orc_pl|Orcs of Minas Morgul
+; trp_i4_mordor_fell_morgul_orc|Fell Orc of Minas Morgul
+; trp_i4_mordor_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+; trp_a3_guldur_large_orc_tracker|Large Orc Tracker of Dol Guldur
+; trp_a3_guldur_large_orc_tracker_pl|Large Orc Trackers of Dol Guldur
+; trp_a4_guldur_fell_orc_tracker|Fell Orc Tracker of Dol Guldur
+; trp_a4_guldur_fell_orc_tracker_pl|Fell Orc Trackers of Dol Guldur
+trp_a2_mordor_orc_archer|Mordori ork íjász
+trp_a2_mordor_orc_archer_pl|Mordori ork íjászok
+trp_a3_mordor_large_orc_archer|Mordori hatalmas ork íjász
+trp_a3_mordor_large_orc_archer_pl|Mordori hatalmas ork íjászok
+trp_a4_mordor_fell_orc_archer|Mordori irdatlan ork íjász
+trp_a4_mordor_fell_orc_archer_pl|Mordori irdatlan ork íjászok
 trp_c3_wolf_rider_of_moria|Móriai farkaslovas
 trp_c3_wolf_rider_of_moria_pl|Móriai farkaslovasság
 trp_c4_warg_rider_of_moria|Móriai varglovas
@@ -725,48 +725,48 @@ trp_a3_large_goblin_archer_of_moria_pl|Móriai hatalmas kobold íjászok
 trp_a4_fell_goblin_archer_of_moria|Móriai irdatlan kobold íjász
 trp_a4_fell_goblin_archer_of_moria_pl|Móriai irdatlan kobold íjászok
 
-trp_i1_goblin_gundabad|Gundabadi kobold
-trp_i1_goblin_gundabad_pl|Gundabadi koboldok
-trp_i2_orc_gundabad|Gundabadi ork
-trp_i2_orc_gundabad_pl|Gundabadi orkok
-trp_i3_orc_fighter_gundabad|Gundabadi ork harcos
-trp_i3_orc_fighter_gundabad_pl|Gundabadi ork harcosok
-trp_i4_fell_orc_warrior_gundabad|Gundabadi ork harcos
-trp_i4_fell_orc_warrior_gundabad_pl|Gundabadi ork harcosok
-trp_i4_orc_beserker_gundabad|Gundabadi ork berzerker
-trp_i4_orc_beserker_gundabad_pl|Gundabadi ork berzerkerek
-trp_ca4_warg_skirmisher_gundabad|Gundabadi csatározó
-trp_ca4_warg_skirmisher_gundabad_pl|Gundabadi csatározók
-trp_ca5_goblin_north_clan_skirmisher|Észak klánbeli kobold csatározó
-trp_ca5_goblin_north_clan_skirmisher_pl|Észak klánbeli kobold csatározók
-trp_c3_goblin_rider_gundabad|Gundabadi kobold lovas
-trp_c3_goblin_rider_gundabad_pl|Gundabadi kobold lovasság
-trp_c4_warg_rider_gundabad|Gundabadi varglovas
-trp_c4_warg_rider_gundabad_pl|Gundabadi varglovasság
-trp_c5_goblin_north_clan_rider|Észak klánbeli kobold lovas
-trp_c5_goblin_north_clan_rider_pl|Észak klánbeli kobold lovasság
+trp_i1_gunda_goblin|Gundabadi kobold
+trp_i1_gunda_goblin_pl|Gundabadi koboldok
+trp_i2_gunda_orc|Gundabadi ork
+trp_i2_gunda_orc_pl|Gundabadi orkok
+trp_i3_gunda_orc_fighter|Gundabadi ork harcos
+trp_i3_gunda_orc_fighter_pl|Gundabadi ork harcosok
+trp_i4_gunda_orc_warrior|Gundabadi ork harcos
+trp_i4_gunda_orc_warrior_pl|Gundabadi ork harcosok
+trp_i4_gunda_orc_berserker|Gundabadi ork berzerker
+trp_i4_gunda_orc_berserker_pl|Gundabadi ork berzerkerek
+trp_ca4_gunda_skirmisher|Gundabadi csatározó
+trp_ca4_gunda_skirmisher_pl|Gundabadi csatározók
+trp_ca5_gunda_clan_skirmisher|Észak klánbeli kobold csatározó
+trp_ca5_gunda_clan_skirmisher_pl|Észak klánbeli kobold csatározók
+trp_c3_gunda_goblin_rider|Gundabadi kobold lovas
+trp_c3_gunda_goblin_rider_pl|Gundabadi kobold lovasság
+trp_c4_gunda_warg_rider|Gundabadi varglovas
+trp_c4_gunda_warg_rider_pl|Gundabadi varglovasság
+trp_c5_gunda_clan_rider|Észak klánbeli kobold lovas
+trp_c5_gunda_clan_rider_pl|Észak klánbeli kobold lovasság
 trp_mountain_goblin|Hegyi kobold
 trp_mountain_goblin_pl|Hegyi koboldok
 trp_tribal_orc|Törzsi ork
 trp_tribal_orc_pl|Törzsi orkok
 trp_tribal_orc_warrior|Törzsi ork harcos
 trp_tribal_orc_warrior_pl|Törzsi ork harcosok
-; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
-; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
-trp_black_numenorean_renegade|Fekete númenor köpönyegforgató
-trp_black_numenorean_renegade_pl|Fekete númenor köpönyegforgatók
-trp_black_numenorean_warrior|Fekete númenor harcos
-trp_black_numenorean_warrior_pl|Fekete númenor harcosok
-trp_black_numenorean_veteran_warrior|Fekete númenor veterán harcos
-trp_black_numenorean_veteran_warrior_pl|Fekete númenor veterán harcosok
-trp_black_numenorean_champion|Fekete númenor bajnok
-trp_black_numenorean_champion_pl|Fekete númenor bajnokok
-trp_black_numenorean_assassin|Fekete númenor orgyilkos
-trp_black_numenorean_assassin_pl|Fekete númenor orgyilkosok
-trp_black_numenorean_veteran_horseman|Fekete númenor lovas
-trp_black_numenorean_veteran_horseman_pl|Fekete númenor lovasság
-trp_black_numenorean_horsemaster|Fekete númenor lómester
-trp_black_numenorean_horsemaster_pl|Fekete númenor lómesterek
+; trp_i5_gunda_orc_champion|Gundabad Orc Champion
+; trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
+trp_i2_mordor_num_renegade|Fekete númenor köpönyegforgató
+trp_i2_mordor_num_renegade_pl|Fekete númenor köpönyegforgatók
+trp_i3_mordor_num_warrior|Fekete númenor harcos
+trp_i3_mordor_num_warrior_pl|Fekete númenor harcosok
+trp_i4_mordor_num_vet_warrior|Fekete númenor veterán harcos
+trp_i4_mordor_num_vet_warrior_pl|Fekete númenor veterán harcosok
+trp_i5_mordor_num_champion|Fekete númenor bajnok
+trp_i5_mordor_num_champion_pl|Fekete númenor bajnokok
+trp_i5_mordor_num_assassin|Fekete númenor orgyilkos
+trp_i5_mordor_num_assassin_pl|Fekete númenor orgyilkosok
+trp_c4_mordor_num_horseman|Fekete númenor lovas
+trp_c4_mordor_num_horseman_pl|Fekete númenor lovasság
+trp_c5_mordor_num_knight|Fekete númenor lómester
+trp_c5_mordor_num_knight_pl|Fekete númenor lómesterek
 trp_noldorin_commander|Ñoldori parancsnok
 trp_noldorin_commander_pl|Ñoldori parancsnokok
 trp_elf_captain_of_lothlorien|Lothlórien tünde kapitánya

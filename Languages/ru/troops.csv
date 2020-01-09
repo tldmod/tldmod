@@ -650,22 +650,22 @@ trp_fighting_uruk_hai_pikeman|Бойцовый пикинёр урук-хай
 trp_fighting_uruk_hai_pikeman_pl|Бойцовые пикинёры урук-хай
 trp_urukhai_standard_bearer|Знаменосец урук-хай
 trp_urukhai_standard_bearer_pl|Знаменосцы урук-хай
-trp_uruk_snaga_of_mordor|Мордорский урук снага
-trp_uruk_snaga_of_mordor_pl|Уруки-снаги Мордора
-trp_uruk_of_mordor|Мордорский урук
-trp_uruk_of_mordor_pl|Мордорские уруки
-trp_large_uruk_of_mordor|Мордорский крупный урук
-trp_large_uruk_of_mordor_pl|Мордорские крупные уруки
-trp_fell_uruk_of_mordor|Мордорский урук-рубака
-trp_fell_uruk_of_mordor_pl|Мордорские уруки-рубаки
-trp_uruk_slayer_of_mordor|Мордорский урук-убийца
-trp_uruk_slayer_of_mordor_pl|Мордорские уруки-убийцы
-trp_fell_uruk_slayer_of_mordor|Смертоносный урук Мордора
-trp_fell_uruk_slayer_of_mordor_pl|Смертоносные уруки Мордора
-trp_black_uruk_of_barad_dur|Чёрный урук Барад-Дура
-trp_black_uruk_of_barad_dur_pl|Чёрные уруки Барад-Дура
-trp_uruk_mordor_standard_bearer|Мордорский знаменосец
-trp_uruk_mordor_standard_bearer_pl|Мордорские знаменосцы
+trp_i1_mordor_uruk_snaga|Мордорский урук снага
+trp_i1_mordor_uruk_snaga_pl|Уруки-снаги Мордора
+trp_i2_mordor_uruk|Мордорский урук
+trp_i2_mordor_uruk_pl|Мордорские уруки
+trp_i3_mordor_large_uruk|Мордорский крупный урук
+trp_i3_mordor_large_uruk_pl|Мордорские крупные уруки
+trp_i4_mordor_fell_uruk|Мордорский урук-рубака
+trp_i4_mordor_fell_uruk_pl|Мордорские уруки-рубаки
+trp_i3_mordor_uruk_slayer|Мордорский урук-убийца
+trp_i3_mordor_uruk_slayer_pl|Мордорские уруки-убийцы
+trp_i4_mordor_fell_uruk_slayer|Смертоносный урук Мордора
+trp_i4_mordor_fell_uruk_slayer_pl|Смертоносные уруки Мордора
+trp_i5_mordor_black_uruk|Чёрный урук Барад-Дура
+trp_i5_mordor_black_uruk_pl|Чёрные уруки Барад-Дура
+trp_i5_mordor_uruk_standard_bearer|Мордорский знаменосец
+trp_i5_mordor_uruk_standard_bearer_pl|Мордорские знаменосцы
 trp_troll_of_moria|Пещерный Тролль
 trp_troll_of_moria_pl|Пещерные Тролли
 trp_armoured_troll|Тролль в доспехах
@@ -674,36 +674,36 @@ trp_olog_hai|Мордорский олог-хай
 trp_olog_hai_pl|Мордорские олог-хай
 trp_ent|Энт
 trp_ent_pl|Энты
-trp_orc_snaga_of_guldur|Орк Снага из Дол Гулдура
-trp_orc_snaga_of_guldur_pl|Орки Снаги из Дол Гулдура
-trp_orc_of_guldur|Орк следопыт из Дол Гулдура
-trp_orc_of_guldur_pl|Орки следопыты из Дол Гулдура
-trp_orc_snaga_of_mordor|Мордорский орк снага
-trp_orc_snaga_of_mordor_pl|Орки-снаги Мордора
-trp_orc_of_mordor|Мордорский орк
-trp_orc_of_mordor_pl|Мордорские орки
-trp_large_orc_of_mordor|Крупный мордорский орк
-trp_large_orc_of_mordor_pl|Крупные мордорские орки
-trp_fell_orc_of_mordor|Мордорский орк-рубака
-trp_fell_orc_of_mordor_pl|Мордорские орки-рубаки
-trp_warg_rider_of_gorgoroth|Волчий всадник Горгорота
-trp_warg_rider_of_gorgoroth_pl|Волчьи всадники Горгорота
-trp_great_warg_rider_of_mordor|Удунский всадник на варге
-trp_great_warg_rider_of_mordor_pl|Удунские всадники на варгах
-trp_morgul_orc|Орк из Минас Моргула
-trp_morgul_orc_pl|Орки из Минас Моргула
-; trp_fell_morgul_orc|Fell Orc of Minas Morgul
-; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
-; trp_orc_tracker_of_mordor|Large Orc Tracker of Dol Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Trackers of Dol Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
-trp_orc_archer_of_mordor|Мордорский орк-лучник
-trp_orc_archer_of_mordor_pl|Мордорские орки-лучники
-trp_large_orc_archer_of_mordor|Крупный орк-лучник Мордора
-trp_large_orc_archer_of_mordor_pl|Крупные орки-лучники Мордора
-trp_fell_orc_archer_of_mordor|Свирепый орк-лучник Мордора
-trp_fell_orc_archer_of_mordor_pl|Свирепые орки-лучники Мордора
+trp_i1_guldur_orc_snaga|Орк Снага из Дол Гулдура
+trp_i1_guldur_orc_snaga_pl|Орки Снаги из Дол Гулдура
+trp_a2_guldur_orc_tracker|Орк следопыт из Дол Гулдура
+trp_a2_guldur_orc_tracker_pl|Орки следопыты из Дол Гулдура
+trp_i1_mordor_orc_snaga|Мордорский орк снага
+trp_i1_mordor_orc_snaga_pl|Орки-снаги Мордора
+trp_i2_mordor_orc|Мордорский орк
+trp_i2_mordor_orc_pl|Мордорские орки
+trp_i3_mordor_large_orc|Крупный мордорский орк
+trp_i3_mordor_large_orc_pl|Крупные мордорские орки
+trp_i4_mordor_fell_orc|Мордорский орк-рубака
+trp_i4_mordor_fell_orc_pl|Мордорские орки-рубаки
+trp_c3_mordor_warg_rider|Волчий всадник Горгорота
+trp_c3_mordor_warg_rider_pl|Волчьи всадники Горгорота
+trp_c4_mordor_great_warg_rider|Удунский всадник на варге
+trp_c4_mordor_great_warg_rider_pl|Удунские всадники на варгах
+trp_i2_mordor_morgul_orc|Орк из Минас Моргула
+trp_i2_mordor_morgul_orc_pl|Орки из Минас Моргула
+; trp_i4_mordor_fell_morgul_orc|Fell Orc of Minas Morgul
+; trp_i4_mordor_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+; trp_a3_guldur_large_orc_tracker|Large Orc Tracker of Dol Guldur
+; trp_a3_guldur_large_orc_tracker_pl|Large Orc Trackers of Dol Guldur
+; trp_a4_guldur_fell_orc_tracker|Fell Orc Tracker of Dol Guldur
+; trp_a4_guldur_fell_orc_tracker_pl|Fell Orc Trackers of Dol Guldur
+trp_a2_mordor_orc_archer|Мордорский орк-лучник
+trp_a2_mordor_orc_archer_pl|Мордорские орки-лучники
+trp_a3_mordor_large_orc_archer|Крупный орк-лучник Мордора
+trp_a3_mordor_large_orc_archer_pl|Крупные орки-лучники Мордора
+trp_a4_mordor_fell_orc_archer|Свирепый орк-лучник Мордора
+trp_a4_mordor_fell_orc_archer_pl|Свирепые орки-лучники Мордора
 trp_c3_wolf_rider_of_moria|Волчий всадник Мории
 trp_c3_wolf_rider_of_moria_pl|Волчьи всадники Мории
 trp_c4_warg_rider_of_moria|Морийский всадник на варге
@@ -725,48 +725,48 @@ trp_a3_large_goblin_archer_of_moria_pl|Крупные гоблины-лучни�
 trp_a4_fell_goblin_archer_of_moria|Свирепый гоблин-лучник Мории
 trp_a4_fell_goblin_archer_of_moria_pl|Свирепые гоблины-лучники Мории
 
-trp_i1_goblin_gundabad|Гундабадский гоблин
-trp_i1_goblin_gundabad_pl|Гундабадские гоблины
-trp_i2_orc_gundabad|Гундабадский орк
-trp_i2_orc_gundabad_pl|Гундабадские орки
-trp_i3_orc_fighter_gundabad|Гундабадский орк-боец
-trp_i3_orc_fighter_gundabad_pl|Гундабадские орки-бойцы
-trp_i4_fell_orc_warrior_gundabad|Гундабадский орк-воин
-trp_i4_fell_orc_warrior_gundabad_pl|Гундабадские орки-воины
-trp_i4_orc_beserker_gundabad|Гундабадский орк-берсерк
-trp_i4_orc_beserker_gundabad_pl|Гундабадские орки-берсерки
-trp_ca4_warg_skirmisher_gundabad|Гундабадский лучник
-trp_ca4_warg_skirmisher_gundabad_pl|Гундабадские лучники
-trp_ca5_goblin_north_clan_skirmisher|Гоблин-лучник Северного Клана
-trp_ca5_goblin_north_clan_skirmisher_pl|Гоблины-лучники Северного Клана
-trp_c3_goblin_rider_gundabad|Гундабадский гоблин-всадник
-trp_c3_goblin_rider_gundabad_pl|Гундабадские гоблины-всадники
-trp_c4_warg_rider_gundabad|Гундабадский волчий всадник
-trp_c4_warg_rider_gundabad_pl|Гундабадские волчьи всадники
-trp_c5_goblin_north_clan_rider|Гоблин-всадник из северного клана
-trp_c5_goblin_north_clan_rider_pl|Гоблины-всадники из северных кланов
+trp_i1_gunda_goblin|Гундабадский гоблин
+trp_i1_gunda_goblin_pl|Гундабадские гоблины
+trp_i2_gunda_orc|Гундабадский орк
+trp_i2_gunda_orc_pl|Гундабадские орки
+trp_i3_gunda_orc_fighter|Гундабадский орк-боец
+trp_i3_gunda_orc_fighter_pl|Гундабадские орки-бойцы
+trp_i4_gunda_orc_warrior|Гундабадский орк-воин
+trp_i4_gunda_orc_warrior_pl|Гундабадские орки-воины
+trp_i4_gunda_orc_berserker|Гундабадский орк-берсерк
+trp_i4_gunda_orc_berserker_pl|Гундабадские орки-берсерки
+trp_ca4_gunda_skirmisher|Гундабадский лучник
+trp_ca4_gunda_skirmisher_pl|Гундабадские лучники
+trp_ca5_gunda_clan_skirmisher|Гоблин-лучник Северного Клана
+trp_ca5_gunda_clan_skirmisher_pl|Гоблины-лучники Северного Клана
+trp_c3_gunda_goblin_rider|Гундабадский гоблин-всадник
+trp_c3_gunda_goblin_rider_pl|Гундабадские гоблины-всадники
+trp_c4_gunda_warg_rider|Гундабадский волчий всадник
+trp_c4_gunda_warg_rider_pl|Гундабадские волчьи всадники
+trp_c5_gunda_clan_rider|Гоблин-всадник из северного клана
+trp_c5_gunda_clan_rider_pl|Гоблины-всадники из северных кланов
 trp_mountain_goblin|Горный гоблин
 trp_mountain_goblin_pl|Горные гоблины
 trp_tribal_orc|Дикий орк
 trp_tribal_orc_pl|Дикие орки
 trp_tribal_orc_warrior|Дикий орк-воин
 trp_tribal_orc_warrior_pl|Дикие орки-воины
-; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
-; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
-trp_black_numenorean_renegade|Чёрный нуменорец
-trp_black_numenorean_renegade_pl|Чёрные нуменорцы
-trp_black_numenorean_warrior|Чёрный нуменорец-воин
-trp_black_numenorean_warrior_pl|Чёрные нуменорцы-воины
-trp_black_numenorean_veteran_warrior|Чёрный нуменорец-ветеран
-trp_black_numenorean_veteran_warrior_pl|Чёрные нуменорцы-ветераны
-trp_black_numenorean_champion|Непобедимый чёрный нуменорец
-trp_black_numenorean_champion_pl|Непобедимые чёрные нуменорцы
-trp_black_numenorean_assassin|Чёрный нуменорец-убийца
-trp_black_numenorean_assassin_pl|Чёрные нуменорцы-убийцы
-trp_black_numenorean_veteran_horseman|Чёрный нуменорец-всадник
-trp_black_numenorean_veteran_horseman_pl|Чёрные нуменорцы-всадники
-trp_black_numenorean_horsemaster|Отборный чёрный нуменорец-всадник
-trp_black_numenorean_horsemaster_pl|Отборные чёрные нуменорцы-всадники
+; trp_i5_gunda_orc_champion|Gundabad Orc Champion
+; trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
+trp_i2_mordor_num_renegade|Чёрный нуменорец
+trp_i2_mordor_num_renegade_pl|Чёрные нуменорцы
+trp_i3_mordor_num_warrior|Чёрный нуменорец-воин
+trp_i3_mordor_num_warrior_pl|Чёрные нуменорцы-воины
+trp_i4_mordor_num_vet_warrior|Чёрный нуменорец-ветеран
+trp_i4_mordor_num_vet_warrior_pl|Чёрные нуменорцы-ветераны
+trp_i5_mordor_num_champion|Непобедимый чёрный нуменорец
+trp_i5_mordor_num_champion_pl|Непобедимые чёрные нуменорцы
+trp_i5_mordor_num_assassin|Чёрный нуменорец-убийца
+trp_i5_mordor_num_assassin_pl|Чёрные нуменорцы-убийцы
+trp_c4_mordor_num_horseman|Чёрный нуменорец-всадник
+trp_c4_mordor_num_horseman_pl|Чёрные нуменорцы-всадники
+trp_c5_mordor_num_knight|Отборный чёрный нуменорец-всадник
+trp_c5_mordor_num_knight_pl|Отборные чёрные нуменорцы-всадники
 trp_noldorin_commander|Нолдорский командир
 trp_noldorin_commander_pl|Нолдорские командиры
 trp_elf_captain_of_lothlorien|Командир отряда Лотлориэна
