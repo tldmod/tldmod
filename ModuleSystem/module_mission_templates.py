@@ -2763,7 +2763,7 @@ mission_templates = [ # not used in game
     "You lead your men to battle.",
     [
       # Player
-      (0,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+      (0,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,10,[]),
 
       # Companions (Add more for more companions)
       (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
@@ -2911,7 +2911,7 @@ mission_templates = [ # not used in game
      
 
       # Player:
-      (16,mtef_team_1|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+      (16,mtef_team_1|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,10,[]),
      
       # Companions (Add more for more companions)
       (17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),

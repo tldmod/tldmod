@@ -6581,10 +6581,17 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     "We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?", "lord_mission_defend_question",
 []],
 
+[anyone|plyr,"lord_mission_defend_question",[
+  (party_get_num_companions, ":party_size", "p_main_party"),(ge, ":party_size", 10),],
+    "My men and I are ready. We shall ride out at once.", "lord_mission_defend_accept",
+  []],
+
 [anyone|plyr,"lord_mission_defend_question",
 [],
-    "My men and I are ready. We shall ride out at once.", "lord_mission_defend_accept",
-[]],
+  "I am afraid I may not have enough men with me currently...", "lord_mission_defend_reject",[
+  (display_message, "@Your party must be at least 10 strong to begin this quest", color_neutral_news),
+]],
+
 
 [anyone|plyr,"lord_mission_defend_question",
 [],
@@ -6635,9 +6642,19 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     "{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they are protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?", "lord_mission_raid_village_a",
 []],
 
-[anyone|plyr,"lord_mission_raid_village_a", [],
+[anyone|plyr,"lord_mission_raid_village_a", [
+  (party_get_num_companions, ":party_size", "p_main_party"),(ge, ":party_size", 10),
+ ],
     "I will raid that village, kill every man we see, and enslave all women and children!", "lord_raid_village_accept",
 []],
+
+
+[anyone|plyr,"lord_mission_raid_village_a",
+[],
+  "I cannot raid with these weaklings with me right now...", "lord_raid_village_reject",[
+  (display_message, "@Your party must be at least 10 strong to begin this quest", color_neutral_news),
+]],
+
 
 [anyone|plyr,"lord_mission_raid_village_a", [],
     "I do not have the time to raid puny villages!", "lord_raid_village_reject",

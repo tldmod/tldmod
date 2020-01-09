@@ -1,4 +1,4 @@
-1640
+1641
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1439,6 +1439,7 @@ qstr_I_m_sorry_but_we_can I'm_sorry,_but_we_cannot_aid_them_now.
 qstr_Bah!_Far_more_glory_ Bah!_Far_more_glory_to_be_won_elsewhere_than_with_paltry_piracy.
 qstr_This_raid_does_not_i This_raid_does_not_interest_me._I_shall_win_glory_elsewhere.
 qstr_{s9}_asked_you_to_de {s9}_asked_you_to_destroy_a_scout_camp_near_{s1}.
+qstr_Your_party_must_be_at Your_party_must_be_at_least_10_strong_to_begin_this_quest
 qstr_{s9}_asked_you_to_def {s9}_asked_you_to_defend_a_village_under_attack_near_{s1}.
 qstr_{s9}_asked_you_to_ra {s9}_asked_you_to_raid_a_village_near_{s1}.
 qstr_These_soldiers_may_w These_soldiers_may_well_turn_the_tide_in_my_plans,_{playername}._I_am_confident_you've_trained_them_well._My_thanks_and_my_compliments_to_you.
