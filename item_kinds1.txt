@@ -333,7 +333,7 @@ itemsfile version 2
  itm_black_tunic Black_Tunic Black_Tunic 1  gondor_tunic 0  553713677 0 100 123731968 2 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_hood_black Black_Hood Black_Hood 6  fi_helm10_black 0  hood_black_simple 134  fi_helm10_black_mask 167772160  gondor_wimple_a 8  gondor_wimple_b 2  gondor_fine_fem_hat 4  1073807372 0 100 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
+ itm_hood_black Black_Hood Black_Hood 6  fi_helm10_black 0  hood_black_simple 134  fi_helm10_black_mask 167772160  gondor_wimple_a 1099511627776  gondor_wimple_b 2199023255552  gondor_fine_fem_hat 4398046511104  1073807372 0 100 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_hood_green Green_Hood Green_Hood 3  fi_helm10_green 0  hood_green_simple 134  fi_helm10_green_mask 167772160  1073807372 0 150 167772294 1 100 14 0 0 0 0 0 0 0 0 0 0
@@ -403,7 +403,7 @@ itemsfile version 2
  itm_strong_bow Strong_Bow Strong_Bow 2  strong_bow 0  strong_bow_case 3458764513820540928  6357000 37312532480 400 525450 1.25 100 0 0 85 3 0 94 52 0 0 26 0
 0
 
- itm_elven_bow Elven_Bow Elven_Bow 2  GA_BowE_Longbow_A 0  GA_BowE_Longbow_A_Carry 3458764513820540928  274792456 5905584128 1000 656384 1.5 100 0 0 93 3 0 93 65 0 0 276 0
+ itm_elven_bow Elven_Bow Elven_Bow 2  GA_BowE_Medium_B 0  GA_BowE_Medium_B_Carry 3458764513820540928  274792456 5905584128 1000 656384 1.5 100 0 0 93 3 0 93 65 0 0 276 0
 0
 
  itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  274792456 5905584128 900 525450 1.5 100 0 0 87 4 0 80 58 0 0 276 0
@@ -1547,7 +1547,7 @@ itemsfile version 2
  itm_rohirrim_short_axe Rohirrim_Short_Axe Rohirrim_Short_Axe 1  rohan_1haxe 0  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 35840 100 0 50 0 256 35
 0
 
- itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  38860554243 9223652412881895662 500 287892 4.5 100 0 0 0 0 35840 92 0 76 0 256 35
+ itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  38860554243 9223652412881895662 500 287892 4.5 100 0 0 0 0 40960 100 0 76 0 256 40
 0
 
  itm_rohan_2h_sword Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3 100 0 0 0 0 40960 94 0 101 0 287 40
@@ -1668,25 +1668,25 @@ itemsfile version 2
  itm_rohan_2h_sword2 Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3 100 0 0 0 0 40960 94 0 101 0 287 40
 0
 
- itm_mirkwood_light_scale Light_Woodelf_Scale Light_Woodelf_Scale 1  mirkwood_light_scale 0  16842765 0 1000 704643072 11 100 0 24 4 0 0 0 0 0 0 0 0
+ itm_mirkwood_leather Woodelf_Leather_Armor Woodelf_Leather_Armor 3  mirkwood_leather_b 0  mirkwood_leather_a 134  mirkwood_leather_c 167772160  16842765 0 150 704643206 2 100 0 16 2 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_a Light_Leather Light_Leather 1  mirkwood_leather 0  16842765 0 150 251658240 2 100 0 16 2 0 0 0 0 0 0 0 0
+ itm_mirkwood_pad Greenwood_Quilted_Coat Greenwood_Quilted_Coat 3  mirkwood_quiltedsurcoat_01 0  mirkwood_quiltedsurcoat_01 134  mirkwood_quiltedsurcoat_01_b 167772160  16842765 0 1000 704643206 6 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_b Light_Quilted_and_Scale_Armor Light_Quilted_and_Scale_Armor 1  mirkwood_scalequilted_01 0  16842765 0 1100 704643072 12 100 0 26 12 0 0 0 0 0 0 0 0
+ itm_mirkwood_mail Greenwood_Mail Greenwood_Mail 3  mirkwood_maillewithsurcoat_01_b 0  mirkwood_maillewithsurcoat_01 134  mirkwood_royal 167772160  16842765 0 2500 704643206 17 100 0 30 14 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_c Mirkwood_Royal_Mail Mirkwood_Royal_Mail 1  mirkwood_royal 0  16842765 0 3000 704643072 18 100 0 35 16 0 0 0 0 0 0 0 0
+ itm_mirkwood_scale Greenwood_Light_Scale Greenwood_Light_Scale 3  mirkwood_light_scale 0  mirkwood_scalequilted_01 134  mirkwood_scalequilted_01b 167772160  16842765 0 1100 704643206 12 100 0 26 12 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_d Light_Quilted_Surcoat Light_Quilted_Surcoat 1  mirkwood_quiltedsurcoat_01 0  16842765 0 1000 704643072 6 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_mirkwood_heavy_scale Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643206 23 100 0 38 14 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643072 17 100 0 25 14 0 0 0 0 0 0 0 0
+ itm_free_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643072 17 100 0 25 14 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643072 23 100 0 38 14 0 0 0 0 0 0 0 0
+ itm_free_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643072 23 100 0 38 14 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 104 0 148 0 291 30
@@ -1695,22 +1695,22 @@ itemsfile version 2
  itm_mirkwood_war_spear Mirkwood_War_Spear Mirkwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 500 156672 2.5 100 0 0 0 0 25600 99 0 150 0 287 25
 0
 
- itm_mirkwood_short_spear Mirkwood_Spear Mirkwood_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 500 156672 2.5 100 0 0 0 0 20480 97 0 117 0 283 532
+ itm_mirkwood_short_spear Mirkwood_Spear Mirkwood_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 150 156672 2.5 100 0 0 0 0 20480 97 0 117 0 283 532
 0
 
- itm_mirkwood_knife Mirkwood_White_Knife Mirkwood_White_Knife 2  mirkwood_white_knife 0  scab_mirkwood_white_knife 3458764513820540928  12648450 9223372072313421839 400 286870 0.75 100 0 0 0 0 24576 120 0 51 0 273 24
+ itm_mirkwood_knife Mirkwood_White_Knife Mirkwood_White_Knife 2  mirkwood_white_knife 0  scab_mirkwood_white_knife 3458764513820540928  12648450 9223372072313421839 100 286870 0.75 100 0 0 0 0 24576 120 0 51 0 273 24
 0
 
- itm_mirkwood_axe Mirkwood_Axe Mirkwood_Axe 2  mirkwood_axe 0  mirkwood_axe_carry 3458764513820540928  80019458 9223388530091229198 600 156672 1 100 0 0 0 0 44032 115 0 51 0 256 43
+ itm_mirkwood_axe Mirkwood_Axe Mirkwood_Axe 2  mirkwood_axe 0  mirkwood_axe_carry 3458764513820540928  80019458 9223388530091229198 150 156672 1 100 0 0 0 0 30720 115 0 51 0 256 30
 0
 
- itm_mirkwood_spear_shield_a Mirkwood_Shield Mirkwood_Shield 1  mirkwood_med_shield 0  327687 4831838208 1000 771751936 2 100 0 16 0 0 800 88 0 60 0 0 0
+ itm_mirkwood_spear_shield_a Mirkwood_Shield Mirkwood_Shield 1  mirkwood_med_shield 0  327687 4831838208 700 771751936 2 100 0 16 0 0 800 88 0 60 0 0 0
 0
 
  itm_mirkwood_spear_shield_b Mirkwood_War_Shield Mirkwood_War_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3 100 0 16 0 0 1000 82 0 90 0 0 0
 0
 
- itm_mirkwood_spear_shield_c Mirkwood_Round_Shield Mirkwood_Round_Shield 1  mirkwood_royal_round 0  327687 4831838208 1000 771751936 2 100 0 20 0 0 1000 90 0 50 0 0 0
+ itm_mirkwood_spear_shield_c Mirkwood_Round_Shield Mirkwood_Round_Shield 1  mirkwood_royal_round 0  327687 4831838208 600 771751936 2 100 0 20 0 0 1000 90 0 50 0 0 0
 0
 
  itm_mirkwood_helm_a Mirkwood_Archer_Helm Mirkwood_Archer_Helm 3  mirkwood_helm_a 134  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 300 167772294 1 100 25 0 0 0 0 0 0 0 0 0 0
@@ -2652,7 +2652,7 @@ itemsfile version 2
  itm_ring_b_reward Finwarisil Finwarisil 1  reward_ring_b 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_bow_reward Bow_of_Bard Bow_of_Bard 2  elven_bow 0  elven_bow_carry 3458764513820540928  274731016 5905584128 3000 0 1.5 100 0 0 100 5 0 90 69 0 0 284 0
+ itm_dale_bow_reward Bow_of_Bard Bow_of_Bard 2  GA_BowE_Longbow_A 0  GA_BowE_Longbow_A_Carry 3458764513820540928  274731016 5905584128 3000 0 1.5 100 0 0 100 5 0 90 69 0 0 284 0
 0
 
  itm_explosive_reward Isengard_Mine Isengard_Mine 1  reward_isenmine 0  4107 0 1000 0 5 100 0 0 0 0 0 0 0 0 0 0 0

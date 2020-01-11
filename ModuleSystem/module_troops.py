@@ -411,9 +411,9 @@ itm_green_dress = (itm_white_tunic_a, imod_rough)
 itm_gondor_fine_outfit_dress = (itm_white_tunic_a, imod_large_bag) 
 itm_rohan_fine_outfit_dale_dress = (itm_white_tunic_a, imod_rotten) 
 itm_robe_generic_dress = (itm_white_tunic_a, imod_fresh)
-itm_wimple_a = (itm_hood_black, imod_bent)
-itm_wimple_with_veil = (itm_hood_black, imodbit_cracked)
-itm_fine_hat = (itm_hood_black, imodbit_rusty)
+itm_wimple_a = (itm_hood_black, imod_smelling)
+itm_wimple_with_veil = (itm_hood_black, imod_rotten)
+itm_fine_hat = (itm_hood_black, imod_large_bag)
 itm_riv_helm_glorfi = (itm_witchking_helmet, imod_rotten)
 itm_troll_feet_boots = (itm_ent_feet_boots, imod_cracked)
 itm_olog_feet_boots = (itm_ent_feet_boots, imod_hardened)
@@ -739,6 +739,18 @@ itm_mirkwood_helm_b_good = (itm_mirkwood_helm_b, imod_reinforced)
 itm_mirkwood_helm_c_good = (itm_mirkwood_helm_c, imod_reinforced)
 itm_mirkwood_helm_d_good = (itm_mirkwood_helm_d, imod_reinforced)
 
+#Mirkwood armours
+itm_mirkwood_leather_bad = (itm_mirkwood_leather, imod_cracked)
+itm_mirkwood_leather_good = (itm_mirkwood_leather, imod_reinforced)
+itm_mirkwood_pad_bad = (itm_mirkwood_pad, imod_cracked)
+itm_mirkwood_pad_good = (itm_mirkwood_pad, imod_reinforced)
+itm_mirkwood_mail_bad = (itm_mirkwood_mail, imod_cracked)
+itm_mirkwood_mail_good = (itm_mirkwood_mail, imod_reinforced)
+itm_mirkwood_scale_bad = (itm_mirkwood_scale, imod_cracked)
+itm_mirkwood_scale_good = (itm_mirkwood_scale, imod_reinforced)
+itm_mirkwood_heavy_scale_bad = (itm_mirkwood_heavy_scale, imod_cracked)
+itm_mirkwood_heavy_scale_good = (itm_mirkwood_heavy_scale, imod_reinforced)
+
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face
 # 0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000  bearded player face
  
@@ -1018,21 +1030,21 @@ troops = [
       0,0,0,0],
 	  
 ##MIRKWOOD#####
-["a1_greenwood_scout","Greenwood_Scout","Greenwood_Scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_armor_a,itm_rohan_shoes,itm_leather_boots_dark_bad,itm_short_bow,itm_woodelf_arrows,itm_mirkwood_knife,itm_mirkwood_short_spear,],attr_elf_tier_1,wp_elf_tier_bow_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["a2_greenwood_veteran_scout","Greenwood_Veteran_Scout","Greenwood_Veteran_Scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_bad,itm_mirkwood_armor_a,itm_leather_boots_bad,itm_leather_boots_dark_bad,itm_rohan_shoes,itm_regular_bow,itm_woodelf_arrows,itm_mirkwood_knife,itm_mirkwood_short_spear,],attr_elf_tier_2,wp_elf_tier_bow_2,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_1,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["a3_greenwood_archer","Greenwood_Archer","Greenwood_Archers",tf_woodelf| tfg_ranged| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_bad,itm_mirkwood_armor_a,itm_mirkwood_armor_d,itm_leather_boots, itm_leather_boots_dark,itm_elven_bow,itm_woodelf_arrows,itm_mirkwood_short_spear,],attr_elf_tier_3,wp_elf_tier_bow_3,knows_common|knows_athletics_5|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_3,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["a4_greenwood_veteran_archer","Greenwood_Veteran_Archer","Greenwood_Veteran_Archers",tf_woodelf| tfg_ranged| tfg_gloves| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a,itm_mirkwood_armor_d,itm_mirkwood_boots,itm_leather_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_short_spear,],attr_elf_tier_4,wp_elf_tier_bow_4,knows_common|knows_athletics_6|knows_power_draw_6|knows_power_strike_3|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["a5_greenwood_master_archer","Greenwood_Master_Archer","Greenwood_Master_Archers",tf_woodelf| tfg_ranged| tfg_gloves| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_good,itm_mirkwood_armor_e,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_war_spear,],attr_elf_tier_5,wp_elf_tier_bow_5,knows_common|knows_athletics_7|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["a6_greenwood_chosen_marksman","Thranduil's_Chosen_Marksman","Thranduil's_Chosen_Marksmen",tf_woodelf| tfg_ranged| tfg_gloves|  tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_d,itm_mirkwood_armor_c,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_great_spear,],attr_elf_tier_6,wp_elf_tier_bow_6,knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["a3_greenwood_sentinel","Greenwood_Sentinel","Greenwood_Sentinels",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_bad,itm_mirkwood_armor_a,itm_mirkwood_boots,itm_leather_boots,itm_elven_bow,itm_woodelf_arrows,itm_mirkwood_axe,itm_mirkwood_spear_shield_c,],attr_elf_tier_3,wp_elf_tier_3,knows_common|knows_athletics_6|knows_shield_2|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["a4_greenwood_vet_sentinel","Greenwood_Veteran_Sentinel","Greenwood_Veteran_Sentinels",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a,itm_mirkwood_armor_d,itm_mirkwood_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_axe,itm_mirkwood_spear_shield_c,],attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_8|knows_shield_3|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["a5_greenwood_vigilant","Greenwood_Guardian","Greenwood_Guardians",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_good,itm_mirkwood_armor_d,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_axe,itm_mirkwood_spear_shield_c,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_9|knows_shield_5|knows_power_draw_6|knows_power_strike_5|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["i2_greenwood_infantry","Greenwood_Infantry","Greenwood_Infantry",tf_woodelf| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_good,itm_mirkwood_helm_b,itm_mirkwood_armor_a,itm_mirkwood_armor_d,itm_leather_gloves,itm_mirkwood_boots,itm_leather_boots,itm_mirkwood_war_spear,itm_mirkwood_short_spear,itm_mirkwood_axe,itm_mirkwood_knife,itm_mirkwood_spear_shield_a,],attr_elf_tier_2,wp_elf_tier_2,knows_common|knows_athletics_5|knows_shield_3|knows_power_strike_3|knows_ironflesh_3,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["i3_greenwood_vet_infantry","Greenwood_Veteran_Infantry","Greenwood_Veteran_Infantry",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots |tfg_polearm| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_b_good,itm_mirkwood_helm_c,itm_mirkwood_light_scale,itm_mirkwood_armor_d,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_war_spear,itm_mirkwood_axe,itm_mirkwood_spear_shield_a,],attr_elf_tier_3,wp_elf_tier_3,knows_common|knows_athletics_6|knows_shield_3|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["i4_greenwood_elite_infantry","Greenwood_Elite_Infantry","Greenwood_Elite_Infantry",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots |tfg_polearm| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_c_good,itm_mirkwood_armor_b,itm_mirkwood_armor_e,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_war_spear,itm_mirkwood_axe,itm_mirkwood_spear_shield_b,],attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_7|knows_shield_4|knows_power_strike_5|knows_ironflesh_5,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["i5_greenwood_chosen_shieldmaster","Thranduil's_Chosen_Shield_Master","Thranduil's_Chosen_Shield_Mastes",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots |tfg_polearm| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_d_good,itm_mirkwood_armor_c,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_war_spear,itm_mirkwood_axe,itm_mirkwood_spear_shield_b,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_8|knows_shield_6|knows_power_strike_6|knows_ironflesh_5,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["i5_greenwood_chosen_spearmaster","Thranduil's_Chosen_Spear_Master","Thranduil's_Chosen_Spear_Mastes",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots |tfg_polearm| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_d_good,itm_mirkwood_armor_f,itm_mail_mittens,itm_mirkwood_boots,itm_mirkwood_great_spear,],attr_elf_tier_5,wp_melee(500),knows_common|knows_athletics_8|knows_power_strike_7|knows_ironflesh_7,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["i5_greenwood_standard_bearer","Greenwood_Standard_Bearer","Greenwood_Standard_Bearers",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_d_good,itm_mirkwood_armor_c,itm_leather_gloves,itm_mirkwood_boots,itm_woodelf_banner,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_4|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_10,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["a1_greenwood_scout","Greenwood_Scout","Greenwood_Scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_hood_green_bad, itm_mirkwood_leather_bad,itm_rohan_shoes,itm_leather_boots_dark_bad,itm_short_bow,itm_woodelf_arrows,itm_mirkwood_knife,itm_mirkwood_short_spear,],attr_elf_tier_1,wp_elf_tier_bow_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["a2_greenwood_veteran_scout","Greenwood_Veteran_Scout","Greenwood_Veteran_Scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_bad,itm_hood_green,itm_mirkwood_leather,itm_mirkwood_pad_bad,itm_leather_boots_bad,itm_leather_boots_dark_bad,itm_rohan_shoes,itm_regular_bow,itm_woodelf_arrows,itm_mirkwood_knife,itm_mirkwood_short_spear,itm_mirkwood_axe,],attr_elf_tier_2,wp_elf_tier_bow_2,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_1,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["a3_greenwood_archer","Greenwood_Archer","Greenwood_Archers",tf_woodelf| tfg_ranged| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_bad,itm_mirkwood_pad,itm_leather_boots, itm_leather_boots_dark,itm_elven_bow,itm_woodelf_arrows,itm_mirkwood_short_spear,],attr_elf_tier_3,wp_elf_tier_bow_3,knows_common|knows_athletics_5|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_3,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["a4_greenwood_veteran_archer","Greenwood_Veteran_Archer","Greenwood_Veteran_Archers",tf_woodelf| tfg_ranged| tfg_gloves| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a,itm_mirkwood_pad_good,itm_mirkwood_mail_bad,itm_mirkwood_boots,itm_leather_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_short_spear,],attr_elf_tier_4,wp_elf_tier_bow_4,knows_common|knows_athletics_6|knows_power_draw_6|knows_power_strike_3|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["a5_greenwood_master_archer","Greenwood_Master_Archer","Greenwood_Master_Archers",tf_woodelf| tfg_ranged| tfg_gloves| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_good,itm_mirkwood_mail,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_war_spear,],attr_elf_tier_5,wp_elf_tier_bow_5,knows_common|knows_athletics_7|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["a6_greenwood_chosen_marksman","Thranduil's_Chosen_Marksman","Thranduil's_Chosen_Marksmen",tf_woodelf| tfg_ranged| tfg_gloves|  tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_d,itm_mirkwood_mail_good,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_great_spear,],attr_elf_tier_6,wp_elf_tier_bow_6,knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["a3_greenwood_sentinel","Greenwood_Sentinel","Greenwood_Sentinels",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_bad,itm_hood_green,itm_mirkwood_leather_good,itm_mirkwood_boots,itm_leather_boots,itm_elven_bow,itm_woodelf_arrows,itm_mirkwood_axe,itm_mirkwood_spear_shield_c,],attr_elf_tier_3,wp_elf_tier_3,knows_common|knows_athletics_6|knows_shield_2|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["a4_greenwood_vet_sentinel","Greenwood_Veteran_Sentinel","Greenwood_Veteran_Sentinels",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor|tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a,itm_mirkwood_pad_bad,itm_mirkwood_leather_good,itm_mirkwood_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_axe,itm_mirkwood_spear_shield_c,],attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_8|knows_shield_3|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["a5_greenwood_vigilant","Greenwood_Guardian","Greenwood_Guardians",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_good,itm_mirkwood_mail_bad,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_axe,itm_mirkwood_spear_shield_c,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_9|knows_shield_5|knows_power_draw_6|knows_power_strike_5|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["i2_greenwood_infantry","Greenwood_Infantry","Greenwood_Infantry",tf_woodelf| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_a_good,itm_mirkwood_helm_b,itm_mirkwood_scale_bad,itm_leather_gloves,itm_mirkwood_boots,itm_leather_boots,itm_mirkwood_war_spear,itm_mirkwood_short_spear,itm_mirkwood_axe,itm_mirkwood_knife,itm_mirkwood_spear_shield_a,],attr_elf_tier_2,wp_elf_tier_2,knows_common|knows_athletics_5|knows_shield_3|knows_power_strike_3|knows_ironflesh_3,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["i3_greenwood_vet_infantry","Greenwood_Veteran_Infantry","Greenwood_Veteran_Infantry",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots |tfg_polearm| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_b_good,itm_mirkwood_helm_c,itm_mirkwood_scale,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_war_spear,itm_mirkwood_axe,itm_mirkwood_spear_shield_a,],attr_elf_tier_3,wp_elf_tier_3,knows_common|knows_athletics_6|knows_shield_3|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["i4_greenwood_elite_infantry","Greenwood_Elite_Infantry","Greenwood_Elite_Infantry",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots |tfg_polearm| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_c_good,itm_mirkwood_scale_good,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_war_spear,itm_mirkwood_axe,itm_mirkwood_spear_shield_b,],attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_7|knows_shield_4|knows_power_strike_5|knows_ironflesh_5,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["i5_greenwood_chosen_shieldmaster","Thranduil's_Chosen_Shield_Master","Thranduil's_Chosen_Shield_Mastes",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots |tfg_polearm| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_d_good,itm_mirkwood_scale_good,itm_leather_gloves,itm_mirkwood_boots,itm_mirkwood_war_spear,itm_mirkwood_axe,itm_mirkwood_spear_shield_b,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_8|knows_shield_6|knows_power_strike_6|knows_ironflesh_5,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["i5_greenwood_chosen_spearmaster","Thranduil's_Chosen_Spear_Master","Thranduil's_Chosen_Spear_Mastes",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots |tfg_polearm| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_d_good,itm_mirkwood_heavy_scale,itm_mail_mittens,itm_mirkwood_boots,itm_mirkwood_great_spear,],attr_elf_tier_5,wp_melee(500),knows_common|knows_athletics_8|knows_power_strike_7|knows_ironflesh_7,mirkwood_elf_face_1,mirkwood_elf_face_2],
+["i5_greenwood_standard_bearer","Greenwood_Standard_Bearer","Greenwood_Standard_Bearers",tf_woodelf| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,[itm_mirkwood_helm_d_good,itm_mirkwood_mail_good,itm_leather_gloves,itm_mirkwood_boots,itm_woodelf_banner,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_4|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_10,mirkwood_elf_face_1,mirkwood_elf_face_2],
 
 ["woodelf_items","BUG","_",tf_hero,0,0,fac_woodelf,
    [itm_leather_boots,itm_leather_gloves,itm_short_bow,itm_arrows,itm_sumpter_horse,itm_saddle_horse,itm_good_mace,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
@@ -1392,10 +1404,10 @@ troops = [
    [itm_lorien_bow,itm_elven_arrows,itm_lorien_armor_c,itm_lorien_helm_b,itm_lorien_shield_b,itm_lorien_boots,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knows_inventory_management_1|knows_power_draw_6|knows_tactics_3|knows_tracking_1|knows_riding_3|knows_athletics_4|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
 ["elf_captain_of_mirkwood","Elf_Captain_of_Greenwood","Elf_Captains_of_Greenwood",tf_woodelf| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_woodelf,
-   [itm_elven_arrows,itm_elven_bow,itm_mirkwood_armor_e,itm_mirkwood_helm_b,itm_mirkwood_spear_shield_c,itm_mirkwood_boots,itm_mirkwood_axe],
+   [itm_elven_arrows,itm_elven_bow,itm_mirkwood_heavy_scale,itm_mirkwood_helm_b,itm_mirkwood_spear_shield_c,itm_mirkwood_boots,itm_mirkwood_axe],
       attr_elf_tier_6,wp_elf_tier_6,knows_riding_4|knows_athletics_5|knows_power_draw_7|knows_power_strike_5|knows_ironflesh_5,mirkwood_elf_face_1,mirkwood_elf_face_2],
 ["mirkwood_lieutenant","Greenwood_Lieutenant","Greenwood_Lieutenants",tf_woodelf| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_woodelf,
-   [itm_elven_bow,itm_elven_arrows,itm_mirkwood_armor_c,itm_mirkwood_helm_b,itm_mirkwood_spear_shield_c,itm_mirkwood_boots,itm_mirkwood_axe,],
+   [itm_elven_bow,itm_elven_arrows,itm_mirkwood_heavy_scale,itm_mirkwood_helm_b,itm_mirkwood_spear_shield_c,itm_mirkwood_boots,itm_mirkwood_axe,],
       attr_elf_tier_6,wp_elf_tier_6,knows_riding_3|knows_athletics_4|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
 ["elf_captain_of_rivendell","Elf_Captain_of_Rivendell","Elf_Captains_of_Rivendell",tf_imladris| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,
    [itm_riv_boots,itm_riv_armor_leader,itm_riv_helm_a,itm_riv_shield_b,itm_riv_warhorse,],
@@ -1755,7 +1767,7 @@ troops = [
    [itm_riv_armor_reward,itm_lorien_boots,itm_riv_helm_glorfi,itm_lorien_bow_reward,itm_elven_arrows,itm_elven_arrows,itm_lorien_sword_c,itm_lorien_warhorse,],
       str_30|agi_24|int_18|cha_24|level(55),wp(500),knows_riding_7|knows_ironflesh_6|knows_power_strike_7|knows_athletics_5|knows_tactics_6|knows_prisoner_management_3|knows_leadership_9|knows_power_draw_9|knows_horse_archery_9|knows_weapon_master_8|knows_trainer_6,0x000000018000100a38db6db6db6db6db00000000001db6eb0000000000000000],
 ["npc6","Luevanna","_",tf_female| tfg_ranged| tf_hero| tf_unmoveable_in_party_window,0,0,fac_woodelf,
-   [itm_mirkwood_armor_a,itm_mirkwood_boots,itm_mirkwood_knife,itm_short_bow,itm_woodelf_arrows,],
+   [itm_mirkwood_leather,itm_mirkwood_boots,itm_mirkwood_knife,itm_short_bow,itm_woodelf_arrows,],
       str_8|agi_13|int_12|cha_6|level(1),wp_one_handed(70)|wp_two_handed(40)|wp_polearm(40)|wp_archery(100)|wp_throwing(60),knows_power_draw_2|knows_ironflesh_1|knows_athletics_1|knows_spotting_1|knows_pathfinding_3|knows_tracking_1|knows_wound_treatment_2,0x0000000180004009041d7566cb87608000000000001d24d30000000000000000],
 ["npc7","Kili_Goldfinger","_",tf_dwarf| tf_hero| tf_unmoveable_in_party_window,0,0,fac_dwarf,
    [itm_leather_dwarf_armor_b,itm_dwarf_pad_boots,itm_dwarf_sword_a,itm_dwarf_throwing_axe,itm_dwarf_mattock,itm_dwarf_shield_a,],
@@ -1832,7 +1844,7 @@ troops = [
    [itm_mearas_reward,itm_riv_armor_leader,itm_riv_boots,itm_leather_gloves,itm_riv_tiara,itm_riv_riding_sword,itm_riv_shield_b,itm_riv_spear],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_4|knows_riding_5|knows_persuasion_5|knows_trainer_5,0x0000000bff002001379b74b75346d08d00000000001d969b0000000000000000],
 ["woodelf_lord","King_Thranduil","King",tf_hero| tf_woodelf| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_woodelf,
-   [itm_mirkwood_armor_f,itm_mirkwood_boots,itm_leather_gloves,itm_riv_tiara,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_great_spear,],
+   [itm_mirkwood_heavy_scale,itm_mirkwood_boots,itm_leather_gloves,itm_riv_tiara,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_great_spear,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_riding_10|knows_persuasion_7|knows_trainer_5,0x0000000c00003002189d6e454c6465a500000000001c68f20000000000000000],
 ["moria_lord","Master_Bolg_the_Lesser","Master",tf_hero| tf_uruk| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
    [itm_warg_reward,itm_m_uruk_heavy_c,itm_uruk_helm_e,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_orc_javelin,itm_uruk_falchion_b,],
@@ -2026,10 +2038,10 @@ troops = [
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_2|knows_persuasion_7|knows_power_draw_4,0x00000008a400224736db6db75b6db6db00000000001db6db0000000000000000],
 #Woodelves
 ["knight_3_16","Miriel","_",tf_hero| tf_female| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_woodelf,
-   [itm_riv_tiara,itm_mirkwood_armor_f,itm_mirkwood_boots,itm_leather_gloves,itm_mirkwood_helm_d,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_axe,itm_mirkwood_spear_shield_c,],
+   [itm_riv_tiara,itm_mirkwood_mail_good,itm_mirkwood_boots,itm_leather_gloves,itm_mirkwood_helm_d,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_axe,itm_mirkwood_spear_shield_c,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_1|knows_riding_10|knows_persuasion_7|knows_power_draw_4,0x0000000fc000400c055d7066cb87e08300000000001d44c30000000000000000],
 ["knight_3_17","Gladvaethor","_",tf_hero| tf_woodelf| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_woodelf,
-   [itm_riv_tiara,itm_mirkwood_armor_f,itm_mirkwood_boots,itm_leather_gloves,itm_mirkwood_helm_d,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_spear_shield_c,itm_mirkwood_war_spear],
+   [itm_riv_tiara,itm_mirkwood_mail_good,itm_mirkwood_boots,itm_leather_gloves,itm_mirkwood_helm_d,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_spear_shield_c,itm_mirkwood_war_spear],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_1|knows_riding_10|knows_persuasion_7|knows_power_draw_4,0x0000000fc00030023fc36db75b6ab6db00000000001d36db0000000000000000],
 #Moria
 ["knight_4_1","Whip_Snog","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
@@ -2197,10 +2209,10 @@ troops = [
    [itm_lorien_armor_a,itm_lorien_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,lorien_elf_face_1,lorien_elf_face_2],
 ["smith_thranduils_halls","Thurinor","smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_woodelf,0,0,fac_woodelf,
-   [itm_mirkwood_armor_a,itm_mirkwood_boots,],
+   [itm_mirkwood_pad,itm_mirkwood_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,lorien_elf_face_1,lorien_elf_face_2],
 ["smith_woodelf_camp","Calechir","smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_woodelf,0,0,fac_woodelf,
-   [itm_mirkwood_armor_a,itm_mirkwood_boots,],
+   [itm_mirkwood_pad,itm_mirkwood_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,lorien_elf_face_1,lorien_elf_face_2],
 ["smith_beorn","Beornalaf_Axemaker","smithy",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_beorn,
    [itm_beorn_tunic,itm_leather_boots,],
@@ -2264,7 +2276,7 @@ troops = [
    [itm_lorien_armor_c,itm_lorien_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,lorien_elf_face_1,lorien_elf_face_2],
 ["smith_woodelf_ac","Dhoelath","smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_woodelf,0,0,fac_woodelf,
-   [itm_mirkwood_armor_a,itm_mirkwood_boots,],
+   [itm_mirkwood_pad,itm_mirkwood_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,lorien_elf_face_1,lorien_elf_face_2],
 ["smith_dwarf_ac","Ironhill_Smith","Dwarven_camp_smiths",tf_hero| tf_randomize_face| tf_is_merchant| tf_dwarf,0,0,fac_dwarf,
    [itm_dwarf_vest_b,itm_dwarf_chain_boots,],
@@ -2466,10 +2478,10 @@ troops = [
    [itm_lorien_armor_b,itm_lorien_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_2,lorien_elf_face_1,lorien_elf_face_2],
 ["merchant_thranduils_halls","Supply_Master","elven_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_woodelf,0,0,fac_woodelf,
-   [itm_mirkwood_armor_d,itm_mirkwood_boots,],
+   [itm_mirkwood_pad,itm_mirkwood_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10,lorien_elf_face_1,lorien_elf_face_2],
 ["merchant_woodelf_camp","Supply_Master","elven_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_woodelf,0,0,fac_woodelf,
-   [itm_mirkwood_armor_d,itm_mirkwood_boots,],
+   [itm_mirkwood_pad,itm_mirkwood_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_1,lorien_elf_face_1,lorien_elf_face_2],
 ["merchant_woodmen","Supply_Master","stable_and_warehouse",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_beorn,
    [itm_beorn_tunic,itm_rohan_shoes,],
@@ -2605,7 +2617,7 @@ troops = [
    [itm_lorien_armor_c,itm_lorien_boots,],
       def_attrib|level(2),wp(20),knows_common,lorien_elf_face_1,lorien_elf_face_2],
 ["elder_thalls","Mirkwood_Elder","the_elven_caves",tf_hero| tf_randomize_face| tf_woodelf,0,0,fac_woodelf,
-   [itm_mirkwood_armor_d,itm_mirkwood_boots,],
+   [itm_mirkwood_leather,itm_mirkwood_boots,],
       def_attrib|level(2),wp(20),knows_common,lorien_elf_face_1,lorien_elf_face_2],
 ["elder_imladris","Rivendell_Campmaster","the_camp",tf_hero| tf_randomize_face| tf_imladris,0,0,fac_imladris,
    [itm_riv_armor_light,itm_riv_boots,],
@@ -2666,7 +2678,7 @@ troops = [
    [itm_lorien_armor_c,itm_lorien_boots,],
       def_attrib|level(2),wp(20),knows_common,lorien_elf_face_1,lorien_elf_face_2],
 ["elder_woodelf_ac","Campmaster","the_camp",tf_hero| tf_randomize_face| tf_woodelf,0,0,fac_woodelf,
-   [itm_mirkwood_armor_d,itm_mirkwood_boots,],
+   [itm_mirkwood_leather,itm_mirkwood_boots,],
       def_attrib|level(2),wp(20),knows_common,lorien_elf_face_1,lorien_elf_face_2],
 ["elder_imladris_ac","Campmaster","the_camp",tf_hero| tf_randomize_face| tf_imladris,0,0,fac_imladris,
    [itm_riv_armor_light,itm_riv_boots,],
@@ -2982,7 +2994,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["i6_beorning_bear_warrior","Bear_Warrior","Bear_Warriors",tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_beorn_helmet,itm_beorn_chief,itm_leather_gloves_good,itm_leather_boots, itm_leather_boots_dark,itm_splinted_greaves,itm_beorn_axe_reward,itm_beorn_shield_reward,],attr_tier_6,wp_tier_6,knows_common|knows_athletics_5|knows_power_strike_4|knows_ironflesh_6|knows_shield_7,beorn_face1,beorn_face2],
 
 ["test_vet_archer","Test_Vet_Archer","Test_Vet_Archer",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
-   [itm_mirkwood_armor_e,itm_mirkwood_boots,itm_mirkwood_helm_d],
+   [itm_mirkwood_pad,itm_mirkwood_boots,itm_mirkwood_helm_d],
       attr_elf_tier_6,wp_elf_tier_6|wp_throwing(300), knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
 
 ## Kham - Volunteers
@@ -3013,7 +3025,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["isengard_healer","Nurgal_the_Patcher","_",tf_hero|tf_urukhai,scn_isengard_center|entry(13),0,fac_isengard,[itm_leather_gloves,itm_isen_uruk_light_a,itm_leather_boots],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
 ["guldur_healer","Mornagar_the_Gramaryer","_",tf_hero|tf_evil_man,scn_dol_guldur_center|entry(13),0,fac_guldur,[itm_leather_boots, (itm_rohan_armor_th, imod_old)],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,0x000000047f0024d212014ac90032e05200000000001c84880000000000000000],
 ["gundabad_healer","Lurgakh_Third_Eye","_",tf_orc|tf_hero,scn_gundabad_camp_center|entry(13),0,fac_gundabad,[itm_gundabad_armor_d,itm_orc_furboots],def_attrib|level(2),wp(20),knows_common,0x0000000fc000200b5ff83e35e4f8ed8900000000001f6d470000000000000000],
-["mirkwood_healer","Corwiel_the_Soft-Handed","_",tf_female|tf_hero,scn_thranduils_halls_center|entry(13),0,fac_woodelf,[itm_mirkwood_armor_a,itm_leather_boots],str_15|level(2),wp(20),knows_common,0x00000004bf00400a5b546a3682a4c2cb00000000001d268a0000000000000000],
+["mirkwood_healer","Corwiel_the_Soft-Handed","_",tf_female|tf_hero,scn_thranduils_halls_center|entry(13),0,fac_woodelf,[itm_mirkwood_leather_good,itm_leather_boots],str_15|level(2),wp(20),knows_common,0x00000004bf00400a5b546a3682a4c2cb00000000001d268a0000000000000000],
 
 #Kham Morale Troops
 
@@ -3030,7 +3042,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,lorien_elf_face_1,lorien_elf_face_2],
 
 ["longing_woodelf","Longing_Elf","a1_greenwood_scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
-   [itm_short_bow,itm_woodelf_arrows,itm_mirkwood_armor_a,itm_mirkwood_boots,itm_mirkwood_knife,],
+   [itm_short_bow,itm_woodelf_arrows,itm_mirkwood_leather,itm_mirkwood_boots,itm_mirkwood_knife,],
       attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,mirkwood_elf_face_1,mirkwood_elf_face_2],
 
 ["longing_imladris","Longing_Elf","Rivendell_Scouts",tf_imladris| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
