@@ -28365,10 +28365,12 @@ if is_a_wb_script==1:
 
 # script_cf_get_nearest_bandit_party
 # Input: none
-# Output: Nearest Bandit Troop to -player party, saves party template too
-
+# Output: First bandit party that is closer than 75 units of distance to the player
+#           If no party is available, returns distance = -1
+#         reg0 - party_id
+#         reg1 - party_template
+#         reg2 - distance
 ("cf_get_nearest_bandit_party", [
-
 	(assign, ":found", 0),
 
 	(try_for_parties, ":nearest_bandit_party"),
@@ -28379,11 +28381,10 @@ if is_a_wb_script==1:
 		(neq, ":party_template", "pt_deserters"), #not deserter troops
 		(call_script, "script_get_tld_distance", "p_main_party", ":nearest_bandit_party"),
 		(assign, ":dist", reg0),
-		#(store_distance_to_party_from_party, ":dist", "p_main_party", ":nearest_bandit_party"),
-		(le, ":dist", 75), 
+		(le, ":dist", 75),
 		(call_script, "script_party_count_fit_for_battle", ":nearest_bandit_party"),
-		(gt, reg0, 0), 
-		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0), 
+		(gt, reg0, 0),
+		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0),
 		(assign, ":found", 1),
 
 		#Debug
@@ -28396,21 +28397,26 @@ if is_a_wb_script==1:
 		(try_end),
 	(try_end),
 
-	(gt, ":troop", 0),
-	(assign, reg0, ":troop"),
-	(assign, reg1, ":party_template"),
-
+	(try_begin),
+		(eq, ":found", 1),
+		(assign, reg0, ":troop"),
+		(assign, reg1, ":party_template"),
+		(assign, reg2, ":dist"),
+	(else_try),
+		(assign, reg2, -1),
+	(try_end),
 ]),
 
 
 # script_cf_init_kill_quest_bandit
 
 ("cf_init_kill_quest_bandit", [
-
 	(store_character_level, ":player_level", "trp_player"),
 	(ge, ":player_level", 2),
-	
+
 	(call_script, "script_cf_get_nearest_bandit_party"),
+	(ge, reg2, 0), # reg2 holds the distance to the bandit party
+
 	(assign, ":target_troop", reg0),
 	(assign, ":target_template", reg1),
 
@@ -28420,10 +28426,9 @@ if is_a_wb_script==1:
 	(store_mul, ":xp_reward", ":amount", 4),
 	(store_add, ":gold_reward", ":xp_reward", 40),
 
-	
 	(store_div, ":rank_reward", ":xp_reward", 20),
 	(val_min, ":rank_reward", 10),
-	
+
 	(store_div, ":exp", ":amount", 3),
 	(val_add, ":exp", 7),
 
@@ -28437,7 +28442,6 @@ if is_a_wb_script==1:
 	(assign, reg62, ":exp"),				#quest_expiration_days
 	(assign, reg63, 10),					#quest_dont_give_again_period
 	(assign, reg64, ":target_template"),	#quest_target_party_template
-
 ]),
 
 # script_cf_init_defeat_lord_quest
