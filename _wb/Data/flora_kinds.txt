@@ -430,7 +430,7 @@ zl_fir 21479030784 4
  0 0
  PL_fur3  bo_pl_fur3
  0 0
- PW_pine_3_a_xx  bo_pw_pine_3_a
+ PW_pine_3_a  bo_pw_pine_3_a
  0 0
 zl_fir_tall 21479038984 3
  PL_fur_tall1  bo_pl_fur_tall1
@@ -587,7 +587,7 @@ zl_bush_steppe_wheat 0 3
  PW_bushes12_a_xx  0
  PW_bushes12_b_xx  0
  PW_bushes12_c_xx  0
-zl_pink_tree 42953867268 3
+zl_pink_tree 17184063492 3
  PW_tall_tree_a  bo_pw_tall_tree_a
  0 0
  PW_pine_4_a  bo_pw_pine_4_a
@@ -649,7 +649,7 @@ zl_fir_shubby_single 21479038992 4
 ga_tree_3_a_brown 94489288736 2
  PW_tree_3_a_brown  0
  PW_tree_3_b_brown  0
-CWE_oliva 8594128896 5
+CWE_oliva 8594128900 5
  cwe_oliva_tree_a  oliva_tree_a_col
  0 0
  cwe_oliva_tree_b  oliva_tree_b_col
@@ -660,7 +660,7 @@ CWE_oliva 8594128896 5
  0 0
  cwe_oliva_tree_e  oliva_tree_e_col
  0 0
-CWE_pihta 25773998080 3
+CWE_pihta 25773998084 3
  cwe_pihta_a  pihta_a_col
  0 0
  cwe_pihta_b  pihta_b_col
@@ -674,7 +674,7 @@ CWE_apple_tree 0 6
  cwe_sp_apple_tree_4  bo_sp_apple_tree_4
  cwe_sp_apple_tree_5  bo_sp_apple_tree_5
  cwe_sp_apple_tree_6  bo_sp_apple_tree_6
-CWE_magnolia 8594128896 5
+CWE_magnolia 8594128900 5
  cwe_sp_magnolia_1  bo_sp_magnolia_1
  0 0
  cwe_sp_magnolia_2  bo_sp_magnolia_2
@@ -685,7 +685,7 @@ CWE_magnolia 8594128896 5
  0 0
  cwe_sp_magnolia_5  bo_sp_magnolia_5
  0 0
-CWE_magnolia_large 8594128896 2
+CWE_magnolia_large 8594128900 2
  cwe_sp_magnolia_large_1  bo_sp_magnolia_large_1
  0 0
  cwe_sp_magnolia_large_2  bo_sp_magnolia_large_2
@@ -739,7 +739,7 @@ CWE_myrtle_a 0 3
  cwe_sp_myrtle_a_1  bo_sp_myrtle_a_1
  cwe_sp_myrtle_a_2  bo_sp_myrtle_a_2
  cwe_sp_myrtle_a_3  bo_sp_myrtle_a_3
-CWE_myrtle_b 30068965376 5
+CWE_myrtle_b 12889096196 5
  cwe_sp_myrtle_b_1  bo_sp_myrtle_b_1
  0 0
  cwe_sp_myrtle_b_2  bo_sp_myrtle_b_2
@@ -750,19 +750,24 @@ CWE_myrtle_b 30068965376 5
  0 0
  cwe_sp_myrtle_b_5  bo_sp_myrtle_b_5
  0 0
-CWE_azalia 30068965376 3
+CWE_azalia 17184063492 3
  cwe_sp_azalia_1  0
  0 0
  cwe_sp_azalia_2  0
  0 0
  cwe_sp_azalia_3  0
  0 0
-CWE_beech 0 5
+CWE_beech 8594128900 5
  cwe_sp_beech_1  bo_sp_beech_1
+ 0 0
  cwe_sp_beech_2  bo_sp_beech_2
+ 0 0
  cwe_sp_beech_3  bo_sp_beech_3
+ 0 0
  cwe_sp_beech_4  bo_sp_beech_4
+ 0 0
  cwe_sp_beech_5  bo_sp_beech_5
+ 0 0
 CWE_pine 0 3
  cwe_sp_pine_1  bo_sp_pine_1
  cwe_sp_pine_2  bo_sp_pine_2
@@ -778,17 +783,17 @@ CWE_desert_flora_b 0 5
  cwe_desert_flora_b_3  0
  cwe_desert_flora_b_4  0
  cwe_desert_flora_b_5  0
-CWE_desert_flora_c 0 3
+CWE_desert_flora_c 12885164036 3
  cwe_desert_flora_c_1  0
  cwe_desert_flora_c_2  0
  cwe_desert_flora_c_3  0
-CWE_lavender 214748626944 1
+CWE_lavender 21475098628 1
  cwe_plain_flowers_lavender  0
 CWE_tulips_red 0 1
  cwe_plain_flowers_tulips  0
 CWE_tulips_white 0 1
  cwe_plain_flowers_white  0
-CWE_sagebrush 214748626944 1
+CWE_sagebrush 25770065924 1
  cwe_sagebrush  0
 CWE_reed 0 7
  cwe_sedge_a_1  0
@@ -817,7 +822,7 @@ CWE_weed_b_2 0 4
  cwe_weed_b_2a  0
  cwe_weed_b_2b  0
  cwe_weed_b_2c  0
-cwe_weed_2 0 3
+CWE_weed_2 0 3
  cwe_weed_2  0
  cwe_weed_2a  0
  cwe_weed_2b  0
@@ -831,10 +836,12 @@ CWE_ivy 0 2
  cwe_ivy_2  0
 CWE_ivy_wall 0 1
  cwe_ivy_wall  0
-Jaakko_new_tree_a 0 2
+Jaakko_new_tree_a 17184063492 2
  Jaakko_new_tree_a  bo_Jaakko_new_tree_a
+ 0 0
  Jaakko_new_tree_a_double  bo_Jaakko_new_tree_a_double
-Jaakko_new_cypress 17184063488 2
+ 0 0
+Jaakko_new_cypress 17184063492 2
  Jaakko_new_cypress  bo_Jaakko_new_cypress
  0 0
  Jaakko_new_cypress2  bo_Jaakko_new_cypress2

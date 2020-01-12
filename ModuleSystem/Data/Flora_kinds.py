@@ -226,13 +226,13 @@ fauna_kinds = [
   fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4),
   [['pine_2_a', 'bo_pine_2_a']]),
 
- ('pw_fir2', fkf_tree|density(4), [['PW_pine_2_a_xx', 'bo_pw_pine_2_a']]),
+ ('pw_fir2', fkf_tree|density(4), [['PW_pine_2_a', 'bo_pw_pine_2_a']]),
 
  ('pine_3',
   fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4),
   [['pine_3_a', 'bo_pine_3_a']]),
 
- ('pw_fir3', fkf_tree|density(4), [['PW_pine_3_a_xx', 'bo_pw_pine_3_a']]),
+ ('pw_fir3', fkf_tree|density(4), [['PW_pine_3_a', 'bo_pw_pine_3_a']]),
 
  ('pine_4',
   fkf_plain_forest|fkf_desert_forest|fkf_tree|density(4),
@@ -507,7 +507,7 @@ fauna_kinds = [
   [['PL_fur1', 'bo_pl_fur1'],
    ['PL_fur2', 'bo_pl_fur2'],
    ['PL_fur3', 'bo_pl_fur3'],
-   ['PW_pine_3_a_xx', 'bo_pw_pine_3_a']]),
+   ['PW_pine_3_a', 'bo_pw_pine_3_a']]),
 
  ('zl_fir_tall',
   fkf_steppe|fkf_desert_forest|fkf_tree|density(5),
@@ -650,7 +650,7 @@ fauna_kinds = [
    ['PW_bushes12_c_xx', '0']]),
 
  ('zl_pink_tree',
-  fkf_tree|fkf_plain|density(10),					#InVain: added to plain (Gondor)
+  fkf_tree|fkf_plain|density(4),					#InVain: added to plain (Gondor)
   [['PW_tall_tree_a', 'bo_pw_tall_tree_a'],
    ['PW_pine_4_a', 'bo_pw_pine_4_a'],
    ['PW_pine_6_a', 'bo_pw_pine_6_a']]),
@@ -721,7 +721,7 @@ fauna_kinds = [
 
 ###CWE trees  
  ('CWE_oliva',
-    fkf_tree|density(2),					#InVain: added to plain (Gondor), #removed due to terrain bug
+    fkf_tree|fkf_plain|density(2),					#InVain: added to plain (Gondor),
   [['cwe_oliva_tree_a', 'oliva_tree_a_col'],
    ['cwe_oliva_tree_b', 'oliva_tree_b_col'],
    ['cwe_oliva_tree_c', 'oliva_tree_c_col'],
@@ -729,7 +729,7 @@ fauna_kinds = [
    ['cwe_oliva_tree_e', 'oliva_tree_e_col']]),  
   
  ('CWE_pihta',
-    fkf_tree|density(6),					#InVain: added to plain (Gondor),#removed due to terrain bug
+    fkf_tree|fkf_plain|density(6),					#InVain: added to plain (Gondor),
   [['cwe_pihta_a', 'pihta_a_col'],
    ['cwe_pihta_b', 'pihta_b_col'],
    ['cwe_pihta_c', 'pihta_c_col']
@@ -746,7 +746,7 @@ fauna_kinds = [
    ]),   
   
  ('CWE_magnolia',
-    fkf_tree|density(2),					#InVain: added to plain (Gondor),#removed due to terrain bug
+    fkf_tree|fkf_plain|density(2),					#InVain: added to plain (Gondor)
   [['cwe_sp_magnolia_1', 'bo_sp_magnolia_1'],
    ['cwe_sp_magnolia_2', 'bo_sp_magnolia_2'],
    ['cwe_sp_magnolia_3', 'bo_sp_magnolia_3'],
@@ -755,7 +755,7 @@ fauna_kinds = [
    ]),     
   
  ('CWE_magnolia_large',
-    fkf_tree|density(2),					#InVain: added to plain (Gondor), #removed due to terrain bug
+    fkf_tree|fkf_plain|density(2),					#InVain: added to plain (Gondor)
   [['cwe_sp_magnolia_large_1', 'bo_sp_magnolia_large_1'],
    ['cwe_sp_magnolia_large_2', 'bo_sp_magnolia_large_2'],
    ]),   
@@ -829,7 +829,7 @@ fauna_kinds = [
    ]),   
 
  ('CWE_myrtle_b',
-    fkf_tree|density(7),					#InVain: added to plain (Gondor),
+    fkf_tree|fkf_plain|density(3),					#InVain: added to plain (Gondor),
   [['cwe_sp_myrtle_b_1', 'bo_sp_myrtle_b_1'],
    ['cwe_sp_myrtle_b_2', 'bo_sp_myrtle_b_2'],
    ['cwe_sp_myrtle_b_3', 'bo_sp_myrtle_b_3'],
@@ -838,14 +838,14 @@ fauna_kinds = [
    ]), 
 
  ('CWE_azalia',
-    fkf_tree|density(7),					#InVain: added to plain (Gondor),
+    fkf_tree|fkf_plain|density(4),					#InVain: added to plain (Gondor),
   [['cwe_sp_azalia_1', '0'],
    ['cwe_sp_azalia_2', '0'],
    ['cwe_sp_azalia_3', '0'],
    ]),
 
  ('CWE_beech',
-  0,
+    fkf_tree|fkf_plain|density(2),	
   [['cwe_sp_beech_1', 'bo_sp_beech_1'],
    ['cwe_sp_beech_2', 'bo_sp_beech_2'],
    ['cwe_sp_beech_3', 'bo_sp_beech_3'],
@@ -878,14 +878,14 @@ fauna_kinds = [
    ]),
    
  ('CWE_desert_flora_c',
-  0,
+    fkf_plain|fkf_align_with_ground|density(3),	
   [['cwe_desert_flora_c_1', '0'],
    ['cwe_desert_flora_c_2', '0'],
    ['cwe_desert_flora_c_3', '0'],
    ]),   
 
  ('CWE_lavender',
-  fkf_align_with_ground|density(50),
+  fkf_plain|fkf_align_with_ground|density(5),
   [['cwe_plain_flowers_lavender', '0'],
    ]),   
 
@@ -900,7 +900,7 @@ fauna_kinds = [
    ]),     
    
  ('CWE_sagebrush',
-  fkf_align_with_ground|density(50),
+  fkf_plain|fkf_align_with_ground|density(6),
   [['cwe_sagebrush', '0'],
    ]),    
    
@@ -946,7 +946,7 @@ fauna_kinds = [
    ['cwe_weed_b_2c', '0'],
    ]), 
    
- ('cwe_weed_2',
+ ('CWE_weed_2',
   0,
   [['cwe_weed_2', '0'],
    ['cwe_weed_2a', '0'],
@@ -973,13 +973,13 @@ fauna_kinds = [
    ]), 
 
  ('Jaakko_new_tree_a',
-  0,
+	fkf_plain|fkf_tree|density(4),
   [['Jaakko_new_tree_a', 'bo_Jaakko_new_tree_a'],
    ['Jaakko_new_tree_a_double', 'bo_Jaakko_new_tree_a_double'],
    ]),    
    
  ('Jaakko_new_cypress',
-    fkf_tree|density(4),					#InVain: added to plain (Gondor), #aaand removed due to terrain showing up in other regions (bug)
+    fkf_plain|fkf_tree|density(4),					#InVain: added to plain (Gondor), 
   [['Jaakko_new_cypress', 'bo_Jaakko_new_cypress'],
    ['Jaakko_new_cypress2', 'bo_Jaakko_new_cypress2'],
    ]),    
