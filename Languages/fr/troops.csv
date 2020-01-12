@@ -704,26 +704,26 @@ trp_a3_mordor_large_orc_archer|Grand archer orque du Mordor
 trp_a3_mordor_large_orc_archer_pl|Grands archers orques du Mordor
 trp_a4_mordor_fell_orc_archer|Archer orque féroce du Mordor
 trp_a4_mordor_fell_orc_archer_pl|Archers orques féroces du Mordor
-trp_c3_wolf_rider_of_moria|Chevaucheur de loup de la Moria
-trp_c3_wolf_rider_of_moria_pl|Chevaucheurs de loups de la Moria
-trp_c4_warg_rider_of_moria|Chevaucheur de Warg de la Moria
-trp_c4_warg_rider_of_moria_pl|Chevaucheurs de Wargs de la Moria
-trp_c5_bolg_clan_rider|Cavalier du clan Bolg
-trp_c5_bolg_clan_rider_pl|Cavaliers du clan Bolg
-trp_i1_snaga_of_moria|Snaga de la Moria
-trp_i1_snaga_of_moria_pl|Snagas de la Moria
-trp_i2_goblin_of_moria|Gobelin de la Moria
-trp_i2_goblin_of_moria_pl|Gobelins de la Moria
-trp_i3_large_goblin_of_moria|Grand Gobelin de la Moria
-trp_i3_large_goblin_of_moria_pl|Grands Gobelins de la Moria
-trp_i4_fell_goblin_of_moria|Gobelin féroce de la Moria
-trp_i4_fell_goblin_of_moria_pl|Gobelins féroces de la Moria
-trp_a2_archer_snaga_of_moria|Archer gobelin de la Moria
-trp_a2_archer_snaga_of_moria_pl|Archers gobelins de la Moria
-trp_a3_large_goblin_archer_of_moria|Grand archer gobelin de la Moria
-trp_a3_large_goblin_archer_of_moria_pl|Grands archers gobelins de la Moria
-trp_a4_fell_goblin_archer_of_moria|Archer gobelin féroce de la Moria
-trp_a4_fell_goblin_archer_of_moria_pl|Archers gobelins féroces de la Moria
+trp_c3_moria_wolf_rider|Chevaucheur de loup de la Moria
+trp_c3_moria_wolf_rider_pl|Chevaucheurs de loups de la Moria
+trp_c4_moria_warg_rider|Chevaucheur de Warg de la Moria
+trp_c4_moria_warg_rider_pl|Chevaucheurs de Wargs de la Moria
+trp_c5_moria_clan_rider|Cavalier du clan Bolg
+trp_c5_moria_clan_rider_pl|Cavaliers du clan Bolg
+trp_i1_moria_snaga|Snaga de la Moria
+trp_i1_moria_snaga_pl|Snagas de la Moria
+trp_i2_moria_goblin|Gobelin de la Moria
+trp_i2_moria_goblin_pl|Gobelins de la Moria
+trp_i3_moria_large_goblin|Grand Gobelin de la Moria
+trp_i3_moria_large_goblin_pl|Grands Gobelins de la Moria
+trp_i4_moria_fell_goblin|Gobelin féroce de la Moria
+trp_i4_moria_fell_goblin_pl|Gobelins féroces de la Moria
+trp_a2_moria_goblin_archer|Archer gobelin de la Moria
+trp_a2_moria_goblin_archer_pl|Archers gobelins de la Moria
+trp_a3_moria_large_goblin_archer|Grand archer gobelin de la Moria
+trp_a3_moria_large_goblin_archer_pl|Grands archers gobelins de la Moria
+trp_a4_moria_fell_goblin_archer|Archer gobelin féroce de la Moria
+trp_a4_moria_fell_goblin_archer_pl|Archers gobelins féroces de la Moria
 
 trp_i1_gunda_goblin|Gobelin de Gundabad
 trp_i1_gunda_goblin_pl|Gobelins de Gundabad
@@ -1577,10 +1577,10 @@ trp_hungry_orc|Orque affamé
 trp_longing_lorien|Elfe nostalgique
 trp_longing_woodelf|Elfe nostalgique
 trp_longing_imladris|Elfe nostalgique
-trp_i5_deep_dweller_of_moria|Guerrier d'élite de la Moria
-trp_i5_deep_dweller_of_moria_pl|Guerriers d'élite de la Moria
-trp_i5_orc_chieftain_of_moria|Chef de clan orque de la Moria
-trp_i5_orc_chieftain_of_moria_pl|Chefs de clan orque de la Moria
+trp_i5_moria_deep_dweller|Guerrier d'élite de la Moria
+trp_i5_moria_deep_dweller_pl|Guerriers d'élite de la Moria
+trp_i5_moria_orc_chieftain|Chef de clan orque de la Moria
+trp_i5_moria_orc_chieftain_pl|Chefs de clan orque de la Moria
 trp_c5_rhovanion_noble|Noble du Rhovanion
 trp_c5_rhovanion_noble_pl|Nobles du Rhovanion
 trp_npc18|Turmbathu

@@ -704,26 +704,26 @@ trp_a3_mordor_large_orc_archer|Großer Ork-Bogenschütze aus Mordor
 trp_a3_mordor_large_orc_archer_pl|Große Ork-Bogenschützen aus Mordor
 trp_a4_mordor_fell_orc_archer|Grausamer Ork-Bogenschütze aus Mordor
 trp_a4_mordor_fell_orc_archer_pl|Grausame Ork-Bogenschützen aus Mordor
-trp_c3_wolf_rider_of_moria|Wolfsreiter von Moria
-trp_c3_wolf_rider_of_moria_pl|Wolfsreiter von Moria
-trp_c4_warg_rider_of_moria|Wargreiter von Moria
-trp_c4_warg_rider_of_moria_pl|Wargreiter von Moria
-trp_c5_bolg_clan_rider|Wargreiter von Bolgs Stamm
-trp_c5_bolg_clan_rider_pl|Wargreiter von Bolgs Stamm
-trp_i1_snaga_of_moria|Snaga von Moria
-trp_i1_snaga_of_moria_pl|Snagas von Moria
-trp_i2_goblin_of_moria|Ork von Moria
-trp_i2_goblin_of_moria_pl|Ork von Moria
-trp_i3_large_goblin_of_moria|Großer Ork von Moria
-trp_i3_large_goblin_of_moria_pl|Große Orks von Moria
-trp_i4_fell_goblin_of_moria|Grausamer Ork von Moria
-trp_i4_fell_goblin_of_moria_pl|Grausame Orks von Moria
-trp_a2_archer_snaga_of_moria|Ork-Bogenschütze von Moria
-trp_a2_archer_snaga_of_moria_pl|Ork-Bogenschützen von Moria
-trp_a3_large_goblin_archer_of_moria|Großer Ork-Bogenschütze von Moria
-trp_a3_large_goblin_archer_of_moria_pl|Große Ork-Bogenschützen von Moria
-trp_a4_fell_goblin_archer_of_moria|Grausamer Ork-Bogenschütze von Moria
-trp_a4_fell_goblin_archer_of_moria_pl|Grausame Ork-Bogenschützen von Moria
+trp_c3_moria_wolf_rider|Wolfsreiter von Moria
+trp_c3_moria_wolf_rider_pl|Wolfsreiter von Moria
+trp_c4_moria_warg_rider|Wargreiter von Moria
+trp_c4_moria_warg_rider_pl|Wargreiter von Moria
+trp_c5_moria_clan_rider|Wargreiter von Bolgs Stamm
+trp_c5_moria_clan_rider_pl|Wargreiter von Bolgs Stamm
+trp_i1_moria_snaga|Snaga von Moria
+trp_i1_moria_snaga_pl|Snagas von Moria
+trp_i2_moria_goblin|Ork von Moria
+trp_i2_moria_goblin_pl|Ork von Moria
+trp_i3_moria_large_goblin|Großer Ork von Moria
+trp_i3_moria_large_goblin_pl|Große Orks von Moria
+trp_i4_moria_fell_goblin|Grausamer Ork von Moria
+trp_i4_moria_fell_goblin_pl|Grausame Orks von Moria
+trp_a2_moria_goblin_archer|Ork-Bogenschütze von Moria
+trp_a2_moria_goblin_archer_pl|Ork-Bogenschützen von Moria
+trp_a3_moria_large_goblin_archer|Großer Ork-Bogenschütze von Moria
+trp_a3_moria_large_goblin_archer_pl|Große Ork-Bogenschützen von Moria
+trp_a4_moria_fell_goblin_archer|Grausamer Ork-Bogenschütze von Moria
+trp_a4_moria_fell_goblin_archer_pl|Grausame Ork-Bogenschützen von Moria
 
 trp_i1_gunda_goblin|Snaga von Gundabad
 trp_i1_gunda_goblin_pl|Snagas von Gundabad
@@ -1577,10 +1577,10 @@ trp_hungry_orc|Hungriger Ork
 trp_longing_lorien|Sehnsüchtiger Elb
 trp_longing_woodelf|Sehnsüchtiger Elb
 trp_longing_imladris|Sehnsüchtiger Elb
-trp_i5_deep_dweller_of_moria|Tiefen-Ork von Moria
-trp_i5_deep_dweller_of_moria_pl|Tiefen-Orks von Moria
-trp_i5_orc_chieftain_of_moria|Orkhäuptling von Moria
-trp_i5_orc_chieftain_of_moria_pl|Orkhäuptlinge von Moria
+trp_i5_moria_deep_dweller|Tiefen-Ork von Moria
+trp_i5_moria_deep_dweller_pl|Tiefen-Orks von Moria
+trp_i5_moria_orc_chieftain|Orkhäuptling von Moria
+trp_i5_moria_orc_chieftain_pl|Orkhäuptlinge von Moria
 trp_c5_rhovanion_noble|Edelmann aus Rhovanion
 trp_c5_rhovanion_noble_pl|Edelmänner aus Rhovanion
 trp_npc18|Turmbathu

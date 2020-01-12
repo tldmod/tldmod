@@ -704,26 +704,26 @@ trp_a3_mordor_large_orc_archer|Великий Орк лучник з Мордо�
 trp_a3_mordor_large_orc_archer_pl|Великі Орки лучники з Мордору
 trp_a4_mordor_fell_orc_archer|Лютий орк-лучник з Мордору
 trp_a4_mordor_fell_orc_archer_pl|Люті Орки-лучники з Мордору
-trp_c3_wolf_rider_of_moria|Вовчий вершник Морії
-trp_c3_wolf_rider_of_moria_pl|Вовчі вершники Морії
-trp_c4_warg_rider_of_moria|Морійський вершник на Варзі
-trp_c4_warg_rider_of_moria_pl|Морійські вершники на Варзі
-trp_c5_bolg_clan_rider|Вершник з клану Болгу
-trp_c5_bolg_clan_rider_pl|Вершники з клану Болгу
-trp_i1_snaga_of_moria|Снага Морії
-trp_i1_snaga_of_moria_pl|Снаги Морії
-trp_i2_goblin_of_moria|Гоблін Морії
-trp_i2_goblin_of_moria_pl|Гобліни Морії
-trp_i3_large_goblin_of_moria|Великий Гоблін Морії
-trp_i3_large_goblin_of_moria_pl|Великі Гобліни Морії
-trp_i4_fell_goblin_of_moria|Лютий Гоблін Морії
-trp_i4_fell_goblin_of_moria_pl|Люті Гобліни Морії
-trp_a2_archer_snaga_of_moria|Гоблін лучник Морії
-trp_a2_archer_snaga_of_moria_pl|Гобліни лучники Морії
-trp_a3_large_goblin_archer_of_moria|Великий гоблін-лучник Морії
-trp_a3_large_goblin_archer_of_moria_pl|Великі гобліни-лучники Морії
-trp_a4_fell_goblin_archer_of_moria|Лютий гоблін-лучник Морії
-trp_a4_fell_goblin_archer_of_moria_pl|Люті гобліни-лучники Морії
+trp_c3_moria_wolf_rider|Вовчий вершник Морії
+trp_c3_moria_wolf_rider_pl|Вовчі вершники Морії
+trp_c4_moria_warg_rider|Морійський вершник на Варзі
+trp_c4_moria_warg_rider_pl|Морійські вершники на Варзі
+trp_c5_moria_clan_rider|Вершник з клану Болгу
+trp_c5_moria_clan_rider_pl|Вершники з клану Болгу
+trp_i1_moria_snaga|Снага Морії
+trp_i1_moria_snaga_pl|Снаги Морії
+trp_i2_moria_goblin|Гоблін Морії
+trp_i2_moria_goblin_pl|Гобліни Морії
+trp_i3_moria_large_goblin|Великий Гоблін Морії
+trp_i3_moria_large_goblin_pl|Великі Гобліни Морії
+trp_i4_moria_fell_goblin|Лютий Гоблін Морії
+trp_i4_moria_fell_goblin_pl|Люті Гобліни Морії
+trp_a2_moria_goblin_archer|Гоблін лучник Морії
+trp_a2_moria_goblin_archer_pl|Гобліни лучники Морії
+trp_a3_moria_large_goblin_archer|Великий гоблін-лучник Морії
+trp_a3_moria_large_goblin_archer_pl|Великі гобліни-лучники Морії
+trp_a4_moria_fell_goblin_archer|Лютий гоблін-лучник Морії
+trp_a4_moria_fell_goblin_archer_pl|Люті гобліни-лучники Морії
 
 trp_i1_gunda_goblin|Гоблін Гундабаду
 trp_i1_gunda_goblin_pl|Гобліни Гундабаду
@@ -1577,10 +1577,10 @@ trp_hungry_orc|Голодний Орк
 trp_longing_lorien|Спрямований ельф
 trp_longing_woodelf|Спрямований ельф
 trp_longing_imladris|Спрямований ельф
-trp_i5_deep_dweller_of_moria|Глибинний житель Морії
-trp_i5_deep_dweller_of_moria_pl|Глибинні жителі Морії
-trp_i5_orc_chieftain_of_moria|Орк-командир з Морії
-trp_i5_orc_chieftain_of_moria_pl|Орки-командири Морії
+trp_i5_moria_deep_dweller|Глибинний житель Морії
+trp_i5_moria_deep_dweller_pl|Глибинні жителі Морії
+trp_i5_moria_orc_chieftain|Орк-командир з Морії
+trp_i5_moria_orc_chieftain_pl|Орки-командири Морії
 trp_c5_rhovanion_noble|Знатний вершник Рованіона
 trp_c5_rhovanion_noble_pl|Знатна кіннота Рованіона
 trp_npc18|Турмбату

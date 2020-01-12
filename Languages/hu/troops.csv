@@ -704,26 +704,26 @@ trp_a3_mordor_large_orc_archer|Mordori hatalmas ork íjász
 trp_a3_mordor_large_orc_archer_pl|Mordori hatalmas ork íjászok
 trp_a4_mordor_fell_orc_archer|Mordori irdatlan ork íjász
 trp_a4_mordor_fell_orc_archer_pl|Mordori irdatlan ork íjászok
-trp_c3_wolf_rider_of_moria|Móriai farkaslovas
-trp_c3_wolf_rider_of_moria_pl|Móriai farkaslovasság
-trp_c4_warg_rider_of_moria|Móriai varglovas
-trp_c4_warg_rider_of_moria_pl|Móriai varglovasság
-trp_c5_bolg_clan_rider|A Bolg klán lovasa
-trp_c5_bolg_clan_rider_pl|A Bolg klán lovassága
-trp_i1_snaga_of_moria|Móriai snaga
-trp_i1_snaga_of_moria_pl|Móriai snagák
-trp_i2_goblin_of_moria|Móriai kobold
-trp_i2_goblin_of_moria_pl|Móriai koboldok
-trp_i3_large_goblin_of_moria|Móriai hatalmas kobold
-trp_i3_large_goblin_of_moria_pl|Móriai hatalmas koboldok
-trp_i4_fell_goblin_of_moria|Móriai irdatlan kobold
-trp_i4_fell_goblin_of_moria_pl|Móriai irdatlan koboldok
-trp_a2_archer_snaga_of_moria|Móriai kobold íjász
-trp_a2_archer_snaga_of_moria_pl|Móriai kobold íjászok
-trp_a3_large_goblin_archer_of_moria|Móriai hatalmas kobold íjász
-trp_a3_large_goblin_archer_of_moria_pl|Móriai hatalmas kobold íjászok
-trp_a4_fell_goblin_archer_of_moria|Móriai irdatlan kobold íjász
-trp_a4_fell_goblin_archer_of_moria_pl|Móriai irdatlan kobold íjászok
+trp_c3_moria_wolf_rider|Móriai farkaslovas
+trp_c3_moria_wolf_rider_pl|Móriai farkaslovasság
+trp_c4_moria_warg_rider|Móriai varglovas
+trp_c4_moria_warg_rider_pl|Móriai varglovasság
+trp_c5_moria_clan_rider|A Bolg klán lovasa
+trp_c5_moria_clan_rider_pl|A Bolg klán lovassága
+trp_i1_moria_snaga|Móriai snaga
+trp_i1_moria_snaga_pl|Móriai snagák
+trp_i2_moria_goblin|Móriai kobold
+trp_i2_moria_goblin_pl|Móriai koboldok
+trp_i3_moria_large_goblin|Móriai hatalmas kobold
+trp_i3_moria_large_goblin_pl|Móriai hatalmas koboldok
+trp_i4_moria_fell_goblin|Móriai irdatlan kobold
+trp_i4_moria_fell_goblin_pl|Móriai irdatlan koboldok
+trp_a2_moria_goblin_archer|Móriai kobold íjász
+trp_a2_moria_goblin_archer_pl|Móriai kobold íjászok
+trp_a3_moria_large_goblin_archer|Móriai hatalmas kobold íjász
+trp_a3_moria_large_goblin_archer_pl|Móriai hatalmas kobold íjászok
+trp_a4_moria_fell_goblin_archer|Móriai irdatlan kobold íjász
+trp_a4_moria_fell_goblin_archer_pl|Móriai irdatlan kobold íjászok
 
 trp_i1_gunda_goblin|Gundabadi kobold
 trp_i1_gunda_goblin_pl|Gundabadi koboldok
@@ -1577,10 +1577,10 @@ trp_hungry_orc|Éhes ork
 trp_longing_lorien|Vágyakozó tünde
 trp_longing_woodelf|Vágyakozó tünde
 trp_longing_imladris|Vágyakozó tünde
-trp_i5_deep_dweller_of_moria|Móriai mélylakó
-trp_i5_deep_dweller_of_moria_pl|Móriai mélylakók
-trp_i5_orc_chieftain_of_moria|Mória ork törzsfője
-trp_i5_orc_chieftain_of_moria_pl|Mória ork törzsfői
+trp_i5_moria_deep_dweller|Móriai mélylakó
+trp_i5_moria_deep_dweller_pl|Móriai mélylakók
+trp_i5_moria_orc_chieftain|Mória ork törzsfője
+trp_i5_moria_orc_chieftain_pl|Mória ork törzsfői
 trp_c5_rhovanion_noble|Rhovanioni nemes
 trp_c5_rhovanion_noble_pl|Rhovanioni nemesek
 ; trp_npc18|Turmbathu

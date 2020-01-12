@@ -704,26 +704,26 @@ trp_a3_mordor_large_orc_archer|モルドール大オーク弓兵
 trp_a3_mordor_large_orc_archer_pl|モルドール大オーク弓兵
 trp_a4_mordor_fell_orc_archer|モルドール猛オーク弓兵
 trp_a4_mordor_fell_orc_archer_pl|モルドール猛オーク弓兵
-trp_c3_wolf_rider_of_moria|モリアの狼騎兵
-trp_c3_wolf_rider_of_moria_pl|モリアの狼騎兵
-trp_c4_warg_rider_of_moria|モリアのワーグ騎兵
-trp_c4_warg_rider_of_moria_pl|モリアのワーグ騎兵
-trp_c5_bolg_clan_rider|ボルグ族騎兵
-trp_c5_bolg_clan_rider_pl|ボルグ族騎兵
-trp_i1_snaga_of_moria|モリアスナガ
-trp_i1_snaga_of_moria_pl|モリアスナガ
-trp_i2_goblin_of_moria|モリアゴブリン
-trp_i2_goblin_of_moria_pl|モリアゴブリン
-trp_i3_large_goblin_of_moria|モリア大ゴブリン
-trp_i3_large_goblin_of_moria_pl|モリア大ゴブリン
-trp_i4_fell_goblin_of_moria|モリア猛ゴブリン
-trp_i4_fell_goblin_of_moria_pl|モリア猛ゴブリン
-; trp_a2_archer_snaga_of_moria|Goblin Archer of Moria
-; trp_a2_archer_snaga_of_moria_pl|Goblin Archers of Moria
-trp_a3_large_goblin_archer_of_moria|モリア大ゴブリン弓兵
-trp_a3_large_goblin_archer_of_moria_pl|モリア大ゴブリン弓兵
-trp_a4_fell_goblin_archer_of_moria|モリア猛ゴブリン弓兵
-trp_a4_fell_goblin_archer_of_moria_pl|モリア猛ゴブリン弓兵
+trp_c3_moria_wolf_rider|モリアの狼騎兵
+trp_c3_moria_wolf_rider_pl|モリアの狼騎兵
+trp_c4_moria_warg_rider|モリアのワーグ騎兵
+trp_c4_moria_warg_rider_pl|モリアのワーグ騎兵
+trp_c5_moria_clan_rider|ボルグ族騎兵
+trp_c5_moria_clan_rider_pl|ボルグ族騎兵
+trp_i1_moria_snaga|モリアスナガ
+trp_i1_moria_snaga_pl|モリアスナガ
+trp_i2_moria_goblin|モリアゴブリン
+trp_i2_moria_goblin_pl|モリアゴブリン
+trp_i3_moria_large_goblin|モリア大ゴブリン
+trp_i3_moria_large_goblin_pl|モリア大ゴブリン
+trp_i4_moria_fell_goblin|モリア猛ゴブリン
+trp_i4_moria_fell_goblin_pl|モリア猛ゴブリン
+; trp_a2_moria_goblin_archer|Goblin Archer of Moria
+; trp_a2_moria_goblin_archer_pl|Goblin Archers of Moria
+trp_a3_moria_large_goblin_archer|モリア大ゴブリン弓兵
+trp_a3_moria_large_goblin_archer_pl|モリア大ゴブリン弓兵
+trp_a4_moria_fell_goblin_archer|モリア猛ゴブリン弓兵
+trp_a4_moria_fell_goblin_archer_pl|モリア猛ゴブリン弓兵
 
 trp_i1_gunda_goblin|グンダバドゴブリン
 trp_i1_gunda_goblin_pl|グンダバドゴブリン
@@ -1577,10 +1577,10 @@ trp_start_quest_beorning_pl|ビヨルンカーロックの狂戦士
 ; trp_longing_lorien|Longing Elf
 ; trp_longing_woodelf|Longing Elf
 ; trp_longing_imladris|Longing Elf
-; trp_i5_deep_dweller_of_moria|Deep-Dweller of Moria
-; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
-; trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
-; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
+; trp_i5_moria_deep_dweller|Deep-Dweller of Moria
+; trp_i5_moria_deep_dweller_pl|Deep-Dwellers of Moria
+; trp_i5_moria_orc_chieftain|Orc Chieftain of Moria
+; trp_i5_moria_orc_chieftain_pl|Orc Chieftains of Moria
 ; trp_c5_rhovanion_noble|Rhovanion Noble
 ; trp_c5_rhovanion_noble_pl|Rhovanion Noblemen
 ; trp_npc18|Turmbathu

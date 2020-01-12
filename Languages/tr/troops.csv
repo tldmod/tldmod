@@ -704,26 +704,26 @@ trp_a3_mordor_large_orc_archer|Mordor'lu Büyük Ork Okçusu
 trp_a3_mordor_large_orc_archer_pl|Mordor'lu Büyük Ork Okçuları
 trp_a4_mordor_fell_orc_archer|Mordor'lu Zalim Ork Okçusu
 trp_a4_mordor_fell_orc_archer_pl|Mordor'lu Zalim Ork Okçuları
-trp_c3_wolf_rider_of_moria|Moria Kurt Binicisi
-trp_c3_wolf_rider_of_moria_pl|Moria Kurt Binicileri
-trp_c4_warg_rider_of_moria|Moria Warg Binicisi
-trp_c4_warg_rider_of_moria_pl|Moria Warg Binicileri
-trp_c5_bolg_clan_rider|Bolg Klan Binicisi
-trp_c5_bolg_clan_rider_pl|Bolg Klan Binicileri
-trp_i1_snaga_of_moria|Moria'lı Snaga
-trp_i1_snaga_of_moria_pl|Moria'lı Snagalar
-trp_i2_goblin_of_moria|Moria Goblini
-trp_i2_goblin_of_moria_pl|Moria Goblinleri
-trp_i3_large_goblin_of_moria|Büyük Moria Goblini
-trp_i3_large_goblin_of_moria_pl|Büyük Moria Goblinleri
-trp_i4_fell_goblin_of_moria|Zalim Moria Goblini
-trp_i4_fell_goblin_of_moria_pl|Zalim Moria Goblinleri
-trp_a2_archer_snaga_of_moria|Moria Goblin Okçusu
-trp_a2_archer_snaga_of_moria_pl|Moria Goblin Okçuları
-trp_a3_large_goblin_archer_of_moria|Büyük Moria Goblin Okçusu
-trp_a3_large_goblin_archer_of_moria_pl|Büyük Moria Goblin Okçuları
-trp_a4_fell_goblin_archer_of_moria|Zalim Moria Goblin Okçusu
-trp_a4_fell_goblin_archer_of_moria_pl|Zalim Moria Goblin Okçuları
+trp_c3_moria_wolf_rider|Moria Kurt Binicisi
+trp_c3_moria_wolf_rider_pl|Moria Kurt Binicileri
+trp_c4_moria_warg_rider|Moria Warg Binicisi
+trp_c4_moria_warg_rider_pl|Moria Warg Binicileri
+trp_c5_moria_clan_rider|Bolg Klan Binicisi
+trp_c5_moria_clan_rider_pl|Bolg Klan Binicileri
+trp_i1_moria_snaga|Moria'lı Snaga
+trp_i1_moria_snaga_pl|Moria'lı Snagalar
+trp_i2_moria_goblin|Moria Goblini
+trp_i2_moria_goblin_pl|Moria Goblinleri
+trp_i3_moria_large_goblin|Büyük Moria Goblini
+trp_i3_moria_large_goblin_pl|Büyük Moria Goblinleri
+trp_i4_moria_fell_goblin|Zalim Moria Goblini
+trp_i4_moria_fell_goblin_pl|Zalim Moria Goblinleri
+trp_a2_moria_goblin_archer|Moria Goblin Okçusu
+trp_a2_moria_goblin_archer_pl|Moria Goblin Okçuları
+trp_a3_moria_large_goblin_archer|Büyük Moria Goblin Okçusu
+trp_a3_moria_large_goblin_archer_pl|Büyük Moria Goblin Okçuları
+trp_a4_moria_fell_goblin_archer|Zalim Moria Goblin Okçusu
+trp_a4_moria_fell_goblin_archer_pl|Zalim Moria Goblin Okçuları
 
 trp_i1_gunda_goblin|Gundabad Goblini
 trp_i1_gunda_goblin_pl|Gundabad Goblinleri
@@ -1577,10 +1577,10 @@ trp_hungry_orc|Acıkmış Ork
 trp_longing_lorien|Özlemli Elf
 trp_longing_woodelf|Özlemli Elf
 trp_longing_imladris|Özlemli Elf
-trp_i5_deep_dweller_of_moria|Moria'nın Derin kazıcısı
-trp_i5_deep_dweller_of_moria_pl|Moria'nın Derin kazıcıları
-trp_i5_orc_chieftain_of_moria|Moria Ork Şefi
-trp_i5_orc_chieftain_of_moria_pl|Moria Ork Şefleri
+trp_i5_moria_deep_dweller|Moria'nın Derin kazıcısı
+trp_i5_moria_deep_dweller_pl|Moria'nın Derin kazıcıları
+trp_i5_moria_orc_chieftain|Moria Ork Şefi
+trp_i5_moria_orc_chieftain_pl|Moria Ork Şefleri
 trp_c5_rhovanion_noble|Rhovanion soylusu
 trp_c5_rhovanion_noble_pl|Rhovanion Soyluları
 trp_npc18|Turmbathu

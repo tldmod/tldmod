@@ -704,26 +704,26 @@ trp_a3_mordor_large_orc_archer|Veľký ohyzdí lukostrelec z Mordoru
 trp_a3_mordor_large_orc_archer_pl|Veľkí ohyzdí lukostrelci z Mordoru
 trp_a4_mordor_fell_orc_archer|Divoký ohyzdí lukostrelec z Mordoru
 trp_a4_mordor_fell_orc_archer_pl|Divokí ohyzdí lukostrelci z Mordoru
-trp_c3_wolf_rider_of_moria|Vlčí jazdec z Morie
-trp_c3_wolf_rider_of_moria_pl|Vlčí jazdci z Morie
-trp_c4_warg_rider_of_moria|Vrrčí jazdec z Morie
-trp_c4_warg_rider_of_moria_pl|Vrrčí jazdci z Morie
-trp_c5_bolg_clan_rider|Bolgov kmeňový jazdec
-trp_c5_bolg_clan_rider_pl|Bolgoví kmeňoví jazdci
-trp_i1_snaga_of_moria|Snaga z Morie
-trp_i1_snaga_of_moria_pl|Snagy z Morie
-trp_i2_goblin_of_moria|Goblin z Morie
-trp_i2_goblin_of_moria_pl|Goblini z Morie
-trp_i3_large_goblin_of_moria|Veľký goblin z Morie
-trp_i3_large_goblin_of_moria_pl|Veľkí goblini z Morie
-trp_i4_fell_goblin_of_moria|Divoký goblin z Morie
-trp_i4_fell_goblin_of_moria_pl|Divokí goblini z Morie
-trp_a2_archer_snaga_of_moria|Gobliní lukostrelec z Morie
-trp_a2_archer_snaga_of_moria_pl|Gobliní lukostrelci z Morie
-trp_a3_large_goblin_archer_of_moria|Veľký gobliní lukostrelec z Morie
-trp_a3_large_goblin_archer_of_moria_pl|Veľkí gobliní lukostrelci z Morie
-trp_a4_fell_goblin_archer_of_moria|Divoký gobliní lukostrelec z Morie
-trp_a4_fell_goblin_archer_of_moria_pl|Divokí gobliní lukostrelci z Morie
+trp_c3_moria_wolf_rider|Vlčí jazdec z Morie
+trp_c3_moria_wolf_rider_pl|Vlčí jazdci z Morie
+trp_c4_moria_warg_rider|Vrrčí jazdec z Morie
+trp_c4_moria_warg_rider_pl|Vrrčí jazdci z Morie
+trp_c5_moria_clan_rider|Bolgov kmeňový jazdec
+trp_c5_moria_clan_rider_pl|Bolgoví kmeňoví jazdci
+trp_i1_moria_snaga|Snaga z Morie
+trp_i1_moria_snaga_pl|Snagy z Morie
+trp_i2_moria_goblin|Goblin z Morie
+trp_i2_moria_goblin_pl|Goblini z Morie
+trp_i3_moria_large_goblin|Veľký goblin z Morie
+trp_i3_moria_large_goblin_pl|Veľkí goblini z Morie
+trp_i4_moria_fell_goblin|Divoký goblin z Morie
+trp_i4_moria_fell_goblin_pl|Divokí goblini z Morie
+trp_a2_moria_goblin_archer|Gobliní lukostrelec z Morie
+trp_a2_moria_goblin_archer_pl|Gobliní lukostrelci z Morie
+trp_a3_moria_large_goblin_archer|Veľký gobliní lukostrelec z Morie
+trp_a3_moria_large_goblin_archer_pl|Veľkí gobliní lukostrelci z Morie
+trp_a4_moria_fell_goblin_archer|Divoký gobliní lukostrelec z Morie
+trp_a4_moria_fell_goblin_archer_pl|Divokí gobliní lukostrelci z Morie
 
 trp_i1_gunda_goblin|Goblin z Gundabadu
 trp_i1_gunda_goblin_pl|Goblini z Gundabadu
@@ -1577,10 +1577,10 @@ trp_hungry_orc|Hladný Ohyzd
 trp_longing_lorien|Túžobný Elf
 trp_longing_woodelf|Túžobný Elf
 trp_longing_imladris|Túžobný Elf
-trp_i5_deep_dweller_of_moria|Ohyzd z hĺbin Morie
-trp_i5_deep_dweller_of_moria_pl|Ohyzdi z hĺbin Morie
-trp_i5_orc_chieftain_of_moria|Ohyzdí náčelník z Morie
-trp_i5_orc_chieftain_of_moria_pl|Ohyzdí náčelníci z Morie
+trp_i5_moria_deep_dweller|Ohyzd z hĺbin Morie
+trp_i5_moria_deep_dweller_pl|Ohyzdi z hĺbin Morie
+trp_i5_moria_orc_chieftain|Ohyzdí náčelník z Morie
+trp_i5_moria_orc_chieftain_pl|Ohyzdí náčelníci z Morie
 trp_c5_rhovanion_noble|Rhovanionský šľachtic
 trp_c5_rhovanion_noble_pl|Rhovanionskí šľachtici
 trp_npc18|Turmbathu

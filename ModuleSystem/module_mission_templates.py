@@ -8466,7 +8466,7 @@ tld_remove_riderless_animals,
       (try_begin),
         (eq, "$enemy_reinforcement_stage", 1),
         (assign, "$enemy_reinforcement_stage", 2), #Stage 2
-        (assign, ":enemy_melee_troop", "trp_i1_snaga_of_moria"),
+        (assign, ":enemy_melee_troop", "trp_i1_moria_snaga"),
         (assign, ":enemy_ranged_troop", -1),
         (assign, ":num_enemies", 11),
         (assign, ":continue", 1),
@@ -8474,7 +8474,7 @@ tld_remove_riderless_animals,
         (eq, "$enemy_reinforcement_stage", 2),
         (eq, "$ally_reinforcement_stage", 1), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
-        (assign, ":enemy_melee_troop", "trp_i1_snaga_of_moria"),
+        (assign, ":enemy_melee_troop", "trp_i1_moria_snaga"),
         (assign, ":enemy_ranged_troop", -1),
         (assign, ":num_enemies", 15),
         (assign, ":continue", 1),
@@ -8483,8 +8483,8 @@ tld_remove_riderless_animals,
         (eq, "$enemy_reinforcement_stage", 3),
         (eq, "$ally_reinforcement_stage", 2), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
-        (assign, ":enemy_melee_troop", "trp_i1_snaga_of_moria"),
-        (assign, ":enemy_ranged_troop", "trp_a2_archer_snaga_of_moria"),
+        (assign, ":enemy_melee_troop", "trp_i1_moria_snaga"),
+        (assign, ":enemy_ranged_troop", "trp_a2_moria_goblin_archer"),
         (assign, ":num_enemies", 15),
         (assign, ":continue", 1),
         (assign, "$enemy_reinforcement_stage", 4), #Stage 4
@@ -8492,8 +8492,8 @@ tld_remove_riderless_animals,
         (eq, "$enemy_reinforcement_stage", 4),
         (eq, "$ally_reinforcement_stage", 3), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
-        (assign, ":enemy_melee_troop", "trp_i2_goblin_of_moria"),
-        (assign, ":enemy_ranged_troop", "trp_a2_archer_snaga_of_moria"),
+        (assign, ":enemy_melee_troop", "trp_i2_moria_goblin"),
+        (assign, ":enemy_ranged_troop", "trp_a2_moria_goblin_archer"),
         (assign, ":num_enemies", 16),
         (assign, ":continue", 1),
         (assign, "$enemy_reinforcement_stage", 5), #Stage 5
@@ -8531,8 +8531,8 @@ tld_remove_riderless_animals,
         (eq, "$enemy_reinforcement_stage", 6),
         (eq, "$ally_reinforcement_stage", 5), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
-        (assign, ":enemy_melee_troop", "trp_i3_large_goblin_of_moria"),
-        (assign, ":enemy_ranged_troop", "trp_a3_large_goblin_archer_of_moria"),
+        (assign, ":enemy_melee_troop", "trp_i3_moria_large_goblin"),
+        (assign, ":enemy_ranged_troop", "trp_a3_moria_large_goblin_archer"),
         (assign, ":num_enemies", 16),
         (assign, ":continue", 1),
         (assign, "$enemy_reinforcement_stage", 7), #Stage 7
@@ -8540,7 +8540,7 @@ tld_remove_riderless_animals,
         (eq, "$enemy_reinforcement_stage", 7),
         (eq, "$ally_reinforcement_stage", 6), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
-        (assign, ":enemy_melee_troop", "trp_i5_deep_dweller_of_moria"),
+        (assign, ":enemy_melee_troop", "trp_i5_moria_deep_dweller"),
         (assign, ":enemy_ranged_troop", -1),
         (assign, ":num_enemies", 20),
         (assign, ":continue", 1),
@@ -8559,8 +8559,8 @@ tld_remove_riderless_animals,
         (eq, "$enemy_reinforcement_stage", 9),
         (eq, "$ally_reinforcement_stage", 8), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
-        (assign, ":enemy_melee_troop", "trp_i5_orc_chieftain_of_moria"),
-        (assign, ":enemy_ranged_troop", "trp_i5_deep_dweller_of_moria"),
+        (assign, ":enemy_melee_troop", "trp_i5_moria_orc_chieftain"),
+        (assign, ":enemy_ranged_troop", "trp_i5_moria_deep_dweller"),
         (assign, ":num_enemies", 20),
         (assign, ":continue", 1),
         (assign, "$enemy_reinforcement_stage", 10), #Stage 10
@@ -8568,8 +8568,8 @@ tld_remove_riderless_animals,
         (ge, "$enemy_reinforcement_stage", 10),
         (eq, "$ally_reinforcement_stage", 9), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
-        (assign, ":enemy_melee_troop", "trp_i5_orc_chieftain_of_moria"),
-        (assign, ":enemy_ranged_troop", "trp_i5_deep_dweller_of_moria"),
+        (assign, ":enemy_melee_troop", "trp_i5_moria_orc_chieftain"),
+        (assign, ":enemy_ranged_troop", "trp_i5_moria_deep_dweller"),
         (assign, ":num_enemies", 30),
         (assign, ":continue", 1),
         (val_add, "$enemy_reinforcement_stage", 1), #Stage Infinity
@@ -8639,22 +8639,22 @@ tld_remove_riderless_animals,
     (eq, "$temp", 0), #Un-Paused
     
     (assign, ":num_cont_enemies", 3),
-    (assign, ":cont_enemy_type", "trp_i1_snaga_of_moria"),
+    (assign, ":cont_enemy_type", "trp_i1_moria_snaga"),
 
     (try_begin),
       (is_between, "$enemy_reinforcement_stage", 6, 8), #after troll
       (val_add, ":num_cont_enemies", 1),
-      (assign, ":cont_enemy_type", "trp_i2_goblin_of_moria"),
+      (assign, ":cont_enemy_type", "trp_i2_moria_goblin"),
     (else_try),
       (ge, "$enemy_reinforcement_stage", 8),
       (val_add, ":num_cont_enemies", 2),
-      (assign, ":cont_enemy_type", "trp_i2_goblin_of_moria"),
+      (assign, ":cont_enemy_type", "trp_i2_moria_goblin"),
     (else_try),
       (gt, "$enemy_reinforcement_stage", 9),
       (store_sub, ":reinf_boost", "$enemy_reinforcement_stage", 10),
       (val_add, ":num_cont_enemies", 5),
       (val_add, ":num_cont_enemies", ":reinf_boost"),
-      (assign, ":cont_enemy_type", "trp_i4_fell_goblin_of_moria"),
+      (assign, ":cont_enemy_type", "trp_i4_moria_fell_goblin"),
     (try_end),
 
 

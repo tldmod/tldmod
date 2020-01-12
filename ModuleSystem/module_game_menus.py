@@ -774,13 +774,13 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor,  0, "$g_player_troop"),
 
-		(set_visitors, 1, "trp_i1_snaga_of_moria",					5),
-		(set_visitors, 2, "trp_i2_goblin_of_moria",				5),
-		(set_visitors, 3, "trp_i3_large_goblin_of_moria",			5),
-		(set_visitors, 4, "trp_i4_fell_goblin_of_moria",			5),
-		(set_visitors, 5, "trp_a2_archer_snaga_of_moria",			5),
-		(set_visitors, 6, "trp_a3_large_goblin_archer_of_moria",	5),
-		(set_visitors, 7, "trp_i5_deep_dweller_of_moria",	5),
+		(set_visitors, 1, "trp_i1_moria_snaga",					5),
+		(set_visitors, 2, "trp_i2_moria_goblin",				5),
+		(set_visitors, 3, "trp_i3_moria_large_goblin",			5),
+		(set_visitors, 4, "trp_i4_moria_fell_goblin",			5),
+		(set_visitors, 5, "trp_a2_moria_goblin_archer",			5),
+		(set_visitors, 6, "trp_a3_moria_large_goblin_archer",	5),
+		(set_visitors, 7, "trp_i5_moria_deep_dweller",	5),
 		(set_visitors, 8, "trp_i1_gunda_goblin",				5),
 		(set_visitors, 9, "trp_i2_gunda_orc",					5),
 ## ENEMY
@@ -811,10 +811,10 @@ game_menus = [
 		(set_visitors, 1, "trp_i3_gunda_orc_fighter",				8),
 		(set_visitors, 2, "trp_i4_gunda_orc_warrior",		6),
 		(set_visitors, 3, "trp_i4_gunda_orc_berserker",			10),
-		(set_visitors, 4, "trp_i4_fell_goblin_of_moria",					6),
-		(set_visitors, 5, "trp_c5_bolg_clan_rider",						2),
-		(set_visitors, 6, "trp_c4_warg_rider_of_moria",					4),
-		(set_visitors, 7, "trp_c3_wolf_rider_of_moria",					4),
+		(set_visitors, 4, "trp_i4_moria_fell_goblin",					6),
+		(set_visitors, 5, "trp_c5_moria_clan_rider",						2),
+		(set_visitors, 6, "trp_c4_moria_warg_rider",					4),
+		(set_visitors, 7, "trp_c3_moria_wolf_rider",					4),
 		(set_visitors, 8, "trp_i1_gunda_goblin",					10),
 		(set_visitors, 9, "trp_i2_gunda_orc",						12),
 		(set_visitors, 10, "trp_ca4_gunda_skirmisher",8),
@@ -854,9 +854,9 @@ game_menus = [
 		(set_visitor, 4, "trp_generic_hero_mounted_archer"),
 		
 ## ENEMY
-		(set_visitors, 16, "trp_i1_snaga_of_moria",						5),
-		(set_visitors, 17, "trp_i1_snaga_of_moria",						5),
-		(set_visitors, 18, "trp_i1_snaga_of_moria",						5),
+		(set_visitors, 16, "trp_i1_moria_snaga",						5),
+		(set_visitors, 17, "trp_i1_moria_snaga",						5),
+		(set_visitors, 18, "trp_i1_moria_snaga",						5),
 		
 		(str_store_string, s16, "@Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once-Dwarven city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside the chamber. Barring the gates, Ori and the few survivors set up a final defense."),
 		(set_background_mesh, "mesh_town_erebor"),
@@ -1172,7 +1172,7 @@ game_menus = [
 			(eq,":bfac",4),(assign,":trp_bad_min","trp_i1_corsair_youth"        ),(assign,":trp_bad_max","trp_i5_corsair_master_pikeman"       ),(else_try),
 			(eq,":bfac",5),(assign,":trp_bad_min","trp_i1_isen_orc_snaga"),(assign,":trp_bad_max","trp_i4_isen_fighting_uruk_pikeman"  ),(else_try),
 			(eq,":bfac",6),(assign,":trp_bad_min","trp_i1_mordor_orc_snaga"  ),(assign,":trp_bad_max","trp_a4_mordor_fell_orc_archer"  ),(else_try),
-			(eq,":bfac",7),(assign,":trp_bad_min","trp_c3_wolf_rider_of_moria"  ),(assign,":trp_bad_max","trp_i5_deep_dweller_of_moria"),(else_try),
+			(eq,":bfac",7),(assign,":trp_bad_min","trp_c3_moria_wolf_rider"  ),(assign,":trp_bad_max","trp_i5_moria_deep_dweller"),(else_try),
 			(eq,":bfac",8),(assign,":trp_bad_min","trp_i1_gunda_goblin"      ),(assign,":trp_bad_max","trp_c5_gunda_clan_rider"    ),
 		(try_end),
 
@@ -1516,7 +1516,7 @@ game_menus = [
 ( "start_hand_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_hand_orc")],[
  ("start_armis",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_i1_isen_orc_snaga"),(jump_to_menu,"mnu_start_as_one"),]),
- ("start_minmo",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_i1_snaga_of_moria"),       (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_minmo",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_i1_moria_snaga"),       (jump_to_menu,"mnu_start_as_one"),]),
  ("start_cliff",[],"in the cliffs of Mount GUNDABAD",  [(call_script,"script_start_as_one","trp_i1_gunda_goblin"),      (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"_",[]),
  ("go_back",[],"Go back",[
@@ -2132,7 +2132,7 @@ game_menus = [
 
      	("camp_cctest_rout_enemy",[],"Add troops to routed enemies",
 	[
-		(store_random_in_range, ":troop_no", "trp_i1_mordor_orc_snaga", "trp_c3_wolf_rider_of_moria"),
+		(store_random_in_range, ":troop_no", "trp_i1_mordor_orc_snaga", "trp_c3_moria_wolf_rider"),
 		(party_add_members, "p_routed_enemies", ":troop_no", 1),
     		(party_get_num_companions, reg1, "p_routed_enemies"),
 		(display_message, "@Enemy party size: {reg1}", color_bad_news),
@@ -10297,8 +10297,8 @@ game_menus = [
 					(assign, ":bandit_troop_1", "trp_i4_gunda_orc_warrior"),
 					(assign, ":bandit_troop_2", "trp_c4_gunda_warg_rider"),
 				(else_try),
-					(assign, ":bandit_troop_1", "trp_i3_large_goblin_of_moria"),
-					(assign, ":bandit_troop_2", "trp_c3_wolf_rider_of_moria"),
+					(assign, ":bandit_troop_1", "trp_i3_moria_large_goblin"),
+					(assign, ":bandit_troop_2", "trp_c3_moria_wolf_rider"),
 				(try_end),
 			(else_try),
 				(assign, ":bandit_troop_1", "trp_i3_mordor_large_orc"),

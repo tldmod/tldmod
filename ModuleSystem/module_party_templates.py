@@ -98,7 +98,7 @@ party_templates = [
 ("dunland_scouts"   ,"Dunlending Scouts"   ,icon_dunlander       |carries_goods(1)|pf_show_faction,0,fac_dunland ,scout_personality,[(trp_ac2_dun_crebain_rider,5,10)]), #20-40 fast weaklings
 ("umbar_scouts"     ,"Corsair Scouts"      ,icon_umbar_corsair   |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_i4_corsair_raider,1,2),(trp_a3_corsair_marksman,2,4),(trp_a2_corsair_marine,3,8)]), #33-61
 ("khand_scouts"     ,"Easterling Scouts"   ,icon_cataphract      |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_ac4_khand_vet_skirmisher,1,3),(trp_c3_khand_horseman,2,4),(trp_c2_khand_pony_rider,3,6)]), #33-57 fast and capable
-("moria_scouts"     ,"Moria Scouts"        ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_moria   ,scout_personality,[(trp_c5_bolg_clan_rider,1,1),(trp_c4_warg_rider_of_moria,2,5),(trp_c3_wolf_rider_of_moria,3,6)]), #27-51 fast
+("moria_scouts"     ,"Moria Scouts"        ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_moria   ,scout_personality,[(trp_c5_moria_clan_rider,1,1),(trp_c4_moria_warg_rider,2,5),(trp_c3_moria_wolf_rider,3,6)]), #27-51 fast
 ("guldur_scouts"    ,"Dol Guldur Scouts"   ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_guldur  ,scout_personality,[(trp_a2_guldur_orc_tracker,3,4),(trp_i1_guldur_orc_snaga,8,12)]), #32-61
 ("gundabad_scouts","Gundabad Scouts",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_gundabad,scout_personality,[(trp_c5_gunda_clan_rider,1,2),(trp_c4_gunda_warg_rider,3,6),(trp_c4_gunda_warg_rider,6,10)]), #41-76, was 30-54 fast
 ("rhun_scouts"      ,"Rhun Scouts"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_ac3_rhun_horse_archer,1,3),(trp_c3_rhun_swift_horseman,3,6),(trp_ac2_rhun_horse_scout,5,8)]), #44-86 fast and very capable
@@ -122,7 +122,7 @@ party_templates = [
 ("harad_raiders"   ,"Haradrim Raiders"  ,icon_harad_horseman|carries_goods(2)|pf_show_faction,0,fac_harad   ,soldier_personality,[(trp_i5_harad_tiger_guard,1,1),(trp_a3_harad_hunter,10,20),(trp_i1_harad_levy,11,20)]), #98-176
 ("khand_raiders"   ,"Khand Raiders"     ,icon_cataphract    |carries_goods(2)|pf_show_faction,0,fac_khand   ,soldier_personality,[(trp_c5_khand_kataphrakt,1,1),(trp_c2_khand_pony_rider,5,10),(trp_c4_khand_heavy_horseman,5,15)]), #81-191
 ("umbar_raiders"   ,"Umbar Raiders"     ,icon_umbar_corsair |carries_goods(2)|pf_show_faction,0,fac_umbar   ,soldier_personality,[(trp_i5_corsair_night_raider,1,4),(trp_i4_corsair_raider,3,6),(trp_i3_corsair_swordsman,3,6),(trp_i4_corsair_veteran_swordsman,3,6),(trp_i3_corsair_spearman,3,6),(trp_i2_corsair_warrior,6,15)]), #100-196 good at it
-("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i5_orc_chieftain_of_moria,1,3),(trp_a3_large_goblin_archer_of_moria,3,9),(trp_i3_large_goblin_of_moria,5,15),(trp_a2_archer_snaga_of_moria,8,16)]), #72-176
+("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i5_moria_orc_chieftain,1,3),(trp_a3_moria_large_goblin_archer,3,9),(trp_i3_moria_large_goblin,5,15),(trp_a2_moria_goblin_archer,8,16)]), #72-176
 ("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_guldur  ,soldier_personality,[(trp_a4_guldur_fell_orc_tracker,1,1),(trp_i3_mordor_large_orc,4,10),(trp_i2_mordor_orc,8,16),(trp_a2_guldur_orc_tracker,8,16),(trp_i1_guldur_orc_snaga,15,30)]), #91-184
 ("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_gundabad,soldier_personality,[(trp_c5_gunda_clan_rider,1,3),(trp_ca4_gunda_skirmisher,6,12),(trp_c4_gunda_warg_rider,6,12),(trp_i2_gunda_orc,18,32),(trp_troll_of_moria,0,1)]), #128-234 was 93-163
 ("rhun_raiders"    ,"Rhun Raiders"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,soldier_personality,[(trp_c5_rhun_heavy_noble_cavalry,1,3),(trp_ac3_rhun_horse_archer,8,16),(trp_c3_rhun_light_cavalry,10,20)]), #124-264, was 100-184
@@ -154,7 +154,7 @@ party_templates = [
 ("dunland_war_party" ,"Dunlending_Warband",icon_dunlander_x3     |carries_goods(3)|pf_show_faction,0,fac_dunland ,soldier_personality,[(trp_i5_dun_wolf_guard,2,4),(trp_i4_dun_vet_pikeman,6,12),(trp_i2_dun_warrior,12,24),(trp_ac2_dun_crebain_rider,10,20),(trp_i1_dun_wildman,20,50)]), #214-448 weak
 ("khand_war_party"   ,"Variag_War_Party"   ,icon_cataphract_x3   |carries_goods(3)|pf_show_faction,0,fac_khand   ,soldier_personality,[(trp_i5_khand_war_master,2,4),(trp_c5_khand_kataphrakt,2,4),(trp_i4_khand_vet_warrior,5,10),(trp_i3_khand_warrior,8,16),(trp_c2_khand_pony_rider,10,20),(trp_i2_khand_pit_dog,20,40)]), #277-554
 #("corsair_war_party" ,"Corsair_War_Party" ,icon_umbar_corsair_x3 |carries_goods(3),0,fac_umbar   ,soldier_personality,[(trp_i5_corsair_master_pikeman   ,20,50),(trp_i4_corsair_veteran_swordsman,15,30),(trp_i5_corsair_master_spearman,13,36),(trp_a5_corsair_master_marksman,5,30),(trp_i4_corsair_veteran_swordsman,5,40),(trp_a5_corsair_master_assassin,5,20)]),
-("moria_war_party"   ,"Moria_War_Party"   ,icon_orc_tribal_x4    |carries_goods(3)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i4_fell_goblin_of_moria,5,10),(trp_a3_large_goblin_archer_of_moria,10,20),(trp_i3_large_goblin_of_moria,12,24),(trp_i2_goblin_of_moria,15,30),(trp_i1_snaga_of_moria,20,50),(trp_troll_of_moria,1,2)]), #262-534
+("moria_war_party"   ,"Moria_War_Party"   ,icon_orc_tribal_x4    |carries_goods(3)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i4_moria_fell_goblin,5,10),(trp_a3_moria_large_goblin_archer,10,20),(trp_i3_moria_large_goblin,12,24),(trp_i2_moria_goblin,15,30),(trp_i1_moria_snaga,20,50),(trp_troll_of_moria,1,2)]), #262-534
 #Northern war
 ("dale_war_party"  ,"Dale_War_Party"   ,icon_generic_knight       |carries_goods(3)|pf_show_faction,0,fac_dale   ,soldier_personality,[(trp_i2_dale_man_at_arms,8,13),(trp_i4_dale_sergeant,8,20),(trp_a5_barding_bowman,8,16),(trp_a4_dale_archer,5,20),(trp_i4_dale_billman,10,25),(trp_c2_rhovanion_retainer,4,15)]), # NOT USED and unbalanced 383-953
 #("dwarf_war_party" ,"Dwarven_War_Party",icon_dwarf_x3              |carries_goods(3),0,fac_dwarf  ,soldier_personality,[(trp_i1_dwarf_apprentice      ,8,13),(trp_i6_iron_hills_grors_guard,8,20),(trp_i2_dwarf_warrior,8,16),(trp_i5_dwarf_expert_axeman,5,20),(trp_a2_dwarf_lookout,4,15),(trp_a4_dwarf_bowman,4,15)]),
@@ -303,9 +303,9 @@ party_templates = [
 ("woodelf_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_a3_greenwood_archer,2,4),(trp_a3_greenwood_sentinel,1,2),(trp_i3_greenwood_vet_infantry,1,2),]),
 ("woodelf_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_a4_greenwood_veteran_archer,1,2),(trp_a4_greenwood_vet_sentinel,1,2),(trp_i4_greenwood_elite_infantry,2,4),]),
 #Moria (8-16, 7-13, 5-10)
-("moria_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i1_snaga_of_moria,4,8),(trp_i2_goblin_of_moria,2,4),]), #InVain: traded some t1 for t2 = more infantry for hosts
-("moria_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_large_goblin_archer_of_moria,4,7),(trp_i2_goblin_of_moria,1,2),(trp_i3_large_goblin_of_moria,2,4),(trp_i4_fell_goblin_of_moria,1,2)]), #InVain: t3 archers, t3 inf, some t4 inf
-("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c3_wolf_rider_of_moria,2,4),(trp_i3_large_goblin_of_moria,1,2),(trp_troll_of_moria,1,1),]), #InVain: removed archers, because B has so many, less cav, fewer t3
+("moria_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i1_moria_snaga,4,8),(trp_i2_moria_goblin,2,4),]), #InVain: traded some t1 for t2 = more infantry for hosts
+("moria_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_moria_large_goblin_archer,4,7),(trp_i2_moria_goblin,1,2),(trp_i3_moria_large_goblin,2,4),(trp_i4_moria_fell_goblin,1,2)]), #InVain: t3 archers, t3 inf, some t4 inf
+("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c3_moria_wolf_rider,2,4),(trp_i3_moria_large_goblin,1,2),(trp_troll_of_moria,1,1),]), #InVain: removed archers, because B has so many, less cav, fewer t3
 #Dol Guldur - same as Mordor without uruks and Numenoreans (8-16, 7-13, 5-10)
 ("guldur_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,8,16),]),
 ("guldur_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_guldur_orc_tracker,4,7),(trp_i2_mordor_orc,3,6),]),
@@ -359,7 +359,7 @@ party_templates = [
 ("lorien_recruits"    ,"_",0,0,fac_commoners,0,[(trp_lothlorien_scout,1,3),(trp_lothlorien_infantry,1,1)]), #two T1
 ("imladris_recruits"  ,"_",0,0,fac_commoners,0,[(trp_rivendell_scout,1,2),(trp_dunedain_scout,1,2)]), #two T1
 ("woodelf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_a1_greenwood_scout,1,4)]),
-("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_snaga_of_moria,5,10)]),
+("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_moria_snaga,5,10)]),
 ("guldur_recruits"    ,"_",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,5,10)]),
 ("beorn_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_beorning_man,2,3),(trp_i1_woodmen_man,1,2)]),
 ("woodman_recruits"   ,"_",0,0,fac_commoners,0,[(trp_i1_woodmen_man,2,3),(trp_i1_beorning_man,1,2)]),
@@ -399,7 +399,7 @@ party_templates = [
 ("beorn_caravan"    ,"Woodsmen Caravan"      ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_beorn    ,prisoner_train_personality,[(trp_i4_beorning_sentinel,1,5),(trp_a4_woodmen_archer,5,10),(trp_i4_woodmen_axemen,4,8),(trp_a3_woodmen_scout,8,16),(trp_i3_woodmen_skilled_forester,18,30)]), # strength 198-399
 
 ##Kham Orc Horde
-("orc_horde"   ,"Orc Horde"     ,icon_orc_x4           |carries_goods(6)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i3_large_goblin_of_moria,40,50),(trp_i1_snaga_of_moria,50,80)]), 
+("orc_horde"   ,"Orc Horde"     ,icon_orc_x4           |carries_goods(6)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i3_moria_large_goblin,40,50),(trp_i1_moria_snaga,50,80)]), 
 
 ("vet_archer"  ,"Vet Archer",icon_mirkwood_elf |carries_goods(1)|pf_show_faction,0,fac_lorien ,scout_personality,[(trp_killer_witcher,1,1)]),
 

@@ -704,26 +704,26 @@ trp_a3_mordor_large_orc_archer|魔 多 大 型 半 獸 人 弓 兵
 trp_a3_mordor_large_orc_archer_pl|魔 多 大 型 半 獸 人 弓 兵
 trp_a4_mordor_fell_orc_archer|魔 多 殘 暴 半 獸 人 弓 兵
 trp_a4_mordor_fell_orc_archer_pl|魔 多 殘 暴 半 獸 人 弓 兵
-trp_c3_wolf_rider_of_moria|摩 瑞 亞 狼 騎 手
-trp_c3_wolf_rider_of_moria_pl|摩 瑞 亞 狼 騎 手 
-trp_c4_warg_rider_of_moria|摩 瑞 亞 座 狼 騎 手 
-trp_c4_warg_rider_of_moria_pl|摩 瑞 亞 座 狼 騎 手 
-trp_c5_bolg_clan_rider|博 爾 格 氏 族 騎 手 
-trp_c5_bolg_clan_rider_pl|博 爾 格 氏 族 騎 手 
-trp_i1_snaga_of_moria|摩 瑞 亞 新 兵 
-trp_i1_snaga_of_moria_pl|摩 瑞 亞 新 兵 
-trp_i2_goblin_of_moria|摩 瑞 亞 哥 布 林 
-trp_i2_goblin_of_moria_pl|摩 瑞 亞 哥 布 林 
-trp_i3_large_goblin_of_moria|摩 瑞 亞 大 型 哥 布 林 
-trp_i3_large_goblin_of_moria_pl|摩 瑞 亞 大 型 哥 布 林 
-trp_i4_fell_goblin_of_moria|摩 瑞 亞 殘 暴 哥 布 林 
-trp_i4_fell_goblin_of_moria_pl|摩 瑞 亞 殘 暴 哥 布 林 
-trp_a2_archer_snaga_of_moria|摩 瑞 亞 哥 布 林 弓 兵
-trp_a2_archer_snaga_of_moria_pl|摩 瑞 亞 哥 布 林 弓 兵
-trp_a3_large_goblin_archer_of_moria|摩 瑞 亞 大 型 哥 布 林 弓 兵
-trp_a3_large_goblin_archer_of_moria_pl|摩 瑞 亞 大 型 哥 布 林 弓 兵
-trp_a4_fell_goblin_archer_of_moria|摩 瑞 亞 殘 暴 哥 布 林 弓 兵
-trp_a4_fell_goblin_archer_of_moria_pl|摩 瑞 亞 殘 暴 哥 布 林 弓 兵
+trp_c3_moria_wolf_rider|摩 瑞 亞 狼 騎 手
+trp_c3_moria_wolf_rider_pl|摩 瑞 亞 狼 騎 手 
+trp_c4_moria_warg_rider|摩 瑞 亞 座 狼 騎 手 
+trp_c4_moria_warg_rider_pl|摩 瑞 亞 座 狼 騎 手 
+trp_c5_moria_clan_rider|博 爾 格 氏 族 騎 手 
+trp_c5_moria_clan_rider_pl|博 爾 格 氏 族 騎 手 
+trp_i1_moria_snaga|摩 瑞 亞 新 兵 
+trp_i1_moria_snaga_pl|摩 瑞 亞 新 兵 
+trp_i2_moria_goblin|摩 瑞 亞 哥 布 林 
+trp_i2_moria_goblin_pl|摩 瑞 亞 哥 布 林 
+trp_i3_moria_large_goblin|摩 瑞 亞 大 型 哥 布 林 
+trp_i3_moria_large_goblin_pl|摩 瑞 亞 大 型 哥 布 林 
+trp_i4_moria_fell_goblin|摩 瑞 亞 殘 暴 哥 布 林 
+trp_i4_moria_fell_goblin_pl|摩 瑞 亞 殘 暴 哥 布 林 
+trp_a2_moria_goblin_archer|摩 瑞 亞 哥 布 林 弓 兵
+trp_a2_moria_goblin_archer_pl|摩 瑞 亞 哥 布 林 弓 兵
+trp_a3_moria_large_goblin_archer|摩 瑞 亞 大 型 哥 布 林 弓 兵
+trp_a3_moria_large_goblin_archer_pl|摩 瑞 亞 大 型 哥 布 林 弓 兵
+trp_a4_moria_fell_goblin_archer|摩 瑞 亞 殘 暴 哥 布 林 弓 兵
+trp_a4_moria_fell_goblin_archer_pl|摩 瑞 亞 殘 暴 哥 布 林 弓 兵
 
 trp_i1_gunda_goblin|剛 達 巴 哥 布 林 
 trp_i1_gunda_goblin_pl|剛 達 巴 哥 布 林 
@@ -1577,10 +1577,10 @@ trp_hungry_orc|飢 餓 的 半 獸 人
 trp_longing_lorien|思 鄉 的 精 靈
 trp_longing_woodelf|思 鄉 的 精 靈
 trp_longing_imladris|思 鄉 的 精 靈
-trp_i5_deep_dweller_of_moria|摩 瑞 亞 深 淵 民
-trp_i5_deep_dweller_of_moria_pl|摩 瑞 亞 深 淵 民
-trp_i5_orc_chieftain_of_moria|摩 瑞 亞 半 獸 人 頭 目
-trp_i5_orc_chieftain_of_moria_pl|摩 瑞 亞 半 獸 人 頭 目
+trp_i5_moria_deep_dweller|摩 瑞 亞 深 淵 民
+trp_i5_moria_deep_dweller_pl|摩 瑞 亞 深 淵 民
+trp_i5_moria_orc_chieftain|摩 瑞 亞 半 獸 人 頭 目
+trp_i5_moria_orc_chieftain_pl|摩 瑞 亞 半 獸 人 頭 目
 trp_c5_rhovanion_noble|羅 馬 尼 安 貴 族
 trp_c5_rhovanion_noble_pl|羅 馬 尼 安 貴 族
 trp_npc18|德 伯 乎

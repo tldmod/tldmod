@@ -704,26 +704,26 @@ trp_tutorial_swordsman|Tentara Pedang
 ; trp_a3_mordor_large_orc_archer_pl|Large Orc Archers of Mordor
 ; trp_a4_mordor_fell_orc_archer|Fell Orc Archer of Mordor
 ; trp_a4_mordor_fell_orc_archer_pl|Fell Orc Archers of Mordor
-; trp_c3_wolf_rider_of_moria|Wolf Rider of Moria
-; trp_c3_wolf_rider_of_moria_pl|Wolf Riders of Moria
-; trp_c4_warg_rider_of_moria|Warg Rider of Moria
-; trp_c4_warg_rider_of_moria_pl|Warg Riders of Moria
-; trp_c5_bolg_clan_rider|Bolg Clan Rider
-; trp_c5_bolg_clan_rider_pl|Bolg Clan Riders
-; trp_i1_snaga_of_moria|Snaga of Moria
-; trp_i1_snaga_of_moria_pl|Snagas of Moria
-; trp_i2_goblin_of_moria|Goblin of Moria
-; trp_i2_goblin_of_moria_pl|Goblins of Moria
-; trp_i3_large_goblin_of_moria|Large Goblin of Moria
-; trp_i3_large_goblin_of_moria_pl|Large Goblins of Moria
-; trp_i4_fell_goblin_of_moria|Fell Goblin of Moria
-; trp_i4_fell_goblin_of_moria_pl|Fell Goblins of Moria
-; trp_a2_archer_snaga_of_moria|Goblin Archer of Moria
-; trp_a2_archer_snaga_of_moria_pl|Goblin Archers of Moria
-; trp_a3_large_goblin_archer_of_moria|Large Goblin Archer of Moria
-; trp_a3_large_goblin_archer_of_moria_pl|Large Goblin Archers of Moria
-; trp_i5_deep_dweller_of_moria2|Deep-Dweller of Moria
-; trp_i5_deep_dweller_of_moria2_pl|Deep-Dwellers of Moria
+; trp_c3_moria_wolf_rider|Wolf Rider of Moria
+; trp_c3_moria_wolf_rider_pl|Wolf Riders of Moria
+; trp_c4_moria_warg_rider|Warg Rider of Moria
+; trp_c4_moria_warg_rider_pl|Warg Riders of Moria
+; trp_c5_moria_clan_rider|Bolg Clan Rider
+; trp_c5_moria_clan_rider_pl|Bolg Clan Riders
+; trp_i1_moria_snaga|Snaga of Moria
+; trp_i1_moria_snaga_pl|Snagas of Moria
+; trp_i2_moria_goblin|Goblin of Moria
+; trp_i2_moria_goblin_pl|Goblins of Moria
+; trp_i3_moria_large_goblin|Large Goblin of Moria
+; trp_i3_moria_large_goblin_pl|Large Goblins of Moria
+; trp_i4_moria_fell_goblin|Fell Goblin of Moria
+; trp_i4_moria_fell_goblin_pl|Fell Goblins of Moria
+; trp_a2_moria_goblin_archer|Goblin Archer of Moria
+; trp_a2_moria_goblin_archer_pl|Goblin Archers of Moria
+; trp_a3_moria_large_goblin_archer|Large Goblin Archer of Moria
+; trp_a3_moria_large_goblin_archer_pl|Large Goblin Archers of Moria
+; trp_i5_moria_deep_dweller2|Deep-Dweller of Moria
+; trp_i5_moria_deep_dweller2_pl|Deep-Dwellers of Moria
 ; trp_i1_gunda_goblin|Gundabad Goblin
 ; trp_i1_gunda_goblin_pl|Gundabad Goblins
 ; trp_i2_gunda_orc|Gundabad Orc
@@ -750,8 +750,8 @@ trp_tutorial_swordsman|Tentara Pedang
 trp_tribal_orc_pl|Suku Orc
 ; trp_tribal_orc_warrior|Tribal Orc Warrior
 ; trp_tribal_orc_warrior_pl|Tribal Orc Warriors
-; trp_i5_orc_chieftain_of_moria2|Orc Chieftain of Moria
-; trp_i5_orc_chieftain_of_moria2_pl|Orc Chieftains of Moria
+; trp_i5_moria_orc_chieftain2|Orc Chieftain of Moria
+; trp_i5_moria_orc_chieftain2_pl|Orc Chieftains of Moria
 ; trp_i2_mordor_num_renegade|Black Numenorean Renegade
 ; trp_i2_mordor_num_renegade_pl|Black Numenorean Renegades
 ; trp_i3_mordor_num_warrior|Black Numenorean Warrior
@@ -1576,9 +1576,9 @@ trp_manhunter_pl|Pemburu
 ; trp_longing_lorien|Longing Elf
 ; trp_longing_woodelf|Longing Elf
 ; trp_longing_imladris|Longing Elf
-; trp_i5_deep_dweller_of_moria|Deep-Dweller of Moria
-; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
-; trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
-; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
+; trp_i5_moria_deep_dweller|Deep-Dweller of Moria
+; trp_i5_moria_deep_dweller_pl|Deep-Dwellers of Moria
+; trp_i5_moria_orc_chieftain|Orc Chieftain of Moria
+; trp_i5_moria_orc_chieftain_pl|Orc Chieftains of Moria
 ; trp_c5_rhovanion_noble|Rhovanion Noble
 ; trp_c5_rhovanion_noble_pl|Rhovanion Noblemen
