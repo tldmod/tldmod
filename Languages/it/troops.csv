@@ -590,24 +590,24 @@ trp_i5_corsair_master_spearman|Mastro Lanciere di Umbar
 trp_i5_corsair_master_spearman_pl|Mastri Lancieri di Umbar
 trp_i5_corsair_master_pikeman|Mastro Picchiere di Umbar
 trp_i5_corsair_master_pikeman_pl|Mastri Picchieri di Umbar
-trp_orc_snaga_of_isengard|Orco Snaga di Isengard
-trp_orc_snaga_of_isengard_pl|Orchi Snaga di Isengard
-trp_orc_of_isengard|Orco di Isengard
-trp_orc_of_isengard_pl|Orchi di Isengard
-trp_large_orc_of_isengard|Grande Orco di Isengard
-trp_large_orc_of_isengard_pl|Grandi Orchi di Isengard
-trp_fell_orc_of_isengard|Orco Crudele di Isengard
-trp_fell_orc_of_isengard_pl|Orchi Crudeli di Isengard
-trp_large_orc_despoiler|Orco Grande Saccheggiatore
-trp_large_orc_despoiler_pl|Orchi Grandi Saccheggiatori
-trp_fell_orc_despoiler|Orco Crudele Saccheggiatore
-trp_fell_orc_despoiler_pl|Orchi Crudeli Saccheggiatori
-trp_wolf_rider_of_isengard|Cavalca-Lupo di Isengard
-trp_wolf_rider_of_isengard_pl|Cavalca-Lupi di Isengard
-trp_warg_rider_of_isengard|Cavalca-Warg di Isengard
-trp_warg_rider_of_isengard_pl|Cavalca-Warg di Isengard
-trp_white_hand_rider|Cavaliere della Mano Bianca
-trp_white_hand_rider_pl|Cavalieri della Mano Bianca
+trp_i1_isen_orc_snaga|Orco Snaga di Isengard
+trp_i1_isen_orc_snaga_pl|Orchi Snaga di Isengard
+trp_i2_isen_orc|Orco di Isengard
+trp_i2_isen_orc_pl|Orchi di Isengard
+trp_i3_isen_large_orc|Grande Orco di Isengard
+trp_i3_isen_large_orc_pl|Grandi Orchi di Isengard
+trp_i4_isen_fell_orc|Orco Crudele di Isengard
+trp_i4_isen_fell_orc_pl|Orchi Crudeli di Isengard
+trp_i3_isen_large_orc_despoiler|Orco Grande Saccheggiatore
+trp_i3_isen_large_orc_despoiler_pl|Orchi Grandi Saccheggiatori
+trp_i4_isen_fell_orc_despoiler|Orco Crudele Saccheggiatore
+trp_i4_isen_fell_orc_despoiler_pl|Orchi Crudeli Saccheggiatori
+trp_ac2_isen_wolf_rider|Cavalca-Lupo di Isengard
+trp_ac2_isen_wolf_rider_pl|Cavalca-Lupi di Isengard
+trp_ac3_isen_warg_rider|Cavalca-Warg di Isengard
+trp_ac3_isen_warg_rider_pl|Cavalca-Warg di Isengard
+trp_ac4_isen_white_hand_rider|Cavaliere della Mano Bianca
+trp_ac4_isen_white_hand_rider_pl|Cavalieri della Mano Bianca
 trp_warg_ghost_1b|Warg
 trp_warg_ghost_1b_pl|Wargs
 trp_warg_ghost_1c|Warg
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|Warg Corazzato
 trp_warg_ghost_a3a_pl|Wargs Corazzati
 trp_warg_ghost_h|Warg Gigante
 trp_warg_ghost_h_pl|Wargs Giganti
-trp_uruk_hai_tracker|Inseguitore Uruk-Hai
-trp_uruk_hai_tracker_pl|Inseguitori Uruk-Hai
-trp_large_uruk_hai_tracker|Grande Braccatore Uruk-Hai
-trp_large_uruk_hai_tracker_pl|Grandi Braccatori Uruk-Hai
-trp_fighting_uruk_hai_tracker|Braccatore Combattente Uruk-Hai
-trp_fighting_uruk_hai_tracker_pl|Braccatori Combattenti Uruk-Hai
-trp_fighting_uruk_hai_berserker|Combattente Berserker Uruk-Hai
-trp_fighting_uruk_hai_berserker_pl|Combattenti Berserkers Uruk-Hai
-trp_uruk_snaga_of_isengard|Uruk-Hai Rinato
-trp_uruk_snaga_of_isengard_pl|Uruk-Hai Rinati
-trp_uruk_hai_of_isengard|Uruk-Hai di Isengard
-trp_uruk_hai_of_isengard_pl|Uruk-Hai di Isengard
-trp_large_uruk_hai_of_isengard|Grande Uruk-Hai di Isengard
-trp_large_uruk_hai_of_isengard_pl|Grandi Uruk-Hai di Isengard
-trp_fighting_uruk_hai_warrior|Combattente Guerriero Uruk-Hai
-trp_fighting_uruk_hai_warrior_pl|Combattenti Guerrieri Uruk-Hai
-trp_fighting_uruk_hai_champion|Campione Combattente Uruk-Hai
-trp_fighting_uruk_hai_champion_pl|Campioni Combattenti Uruk-Hai
-trp_uruk_hai_pikeman|Picchiere Uruk-Hai
-trp_uruk_hai_pikeman_pl|Picchieri Uruk-Hai
-trp_fighting_uruk_hai_pikeman|Picchiere Combattente Uruk-Hai
-trp_fighting_uruk_hai_pikeman_pl|Picchieri Combattenti Uruk-Hai
-trp_urukhai_standard_bearer|Portastendardo Uruk-Hai
-trp_urukhai_standard_bearer_pl|Portastendardi Uruk-Hai
+trp_a2_isen_uruk_tracker|Inseguitore Uruk-Hai
+trp_a2_isen_uruk_tracker_pl|Inseguitori Uruk-Hai
+trp_a3_isen_large_uruk_tracker|Grande Braccatore Uruk-Hai
+trp_a3_isen_large_uruk_tracker_pl|Grandi Braccatori Uruk-Hai
+trp_a4_isen_fighting_uruk_tracker|Braccatore Combattente Uruk-Hai
+trp_a4_isen_fighting_uruk_tracker_pl|Braccatori Combattenti Uruk-Hai
+trp_i6_isen_uruk_berserker|Combattente Berserker Uruk-Hai
+trp_i6_isen_uruk_berserker_pl|Combattenti Berserkers Uruk-Hai
+trp_i1_isen_uruk_snaga|Uruk-Hai Rinato
+trp_i1_isen_uruk_snaga_pl|Uruk-Hai Rinati
+trp_i2_isen_uruk|Uruk-Hai di Isengard
+trp_i2_isen_uruk_pl|Uruk-Hai di Isengard
+trp_i3_isen_large_uruk|Grande Uruk-Hai di Isengard
+trp_i3_isen_large_uruk_pl|Grandi Uruk-Hai di Isengard
+trp_i4_isen_fighting_uruk_warrior|Combattente Guerriero Uruk-Hai
+trp_i4_isen_fighting_uruk_warrior_pl|Combattenti Guerrieri Uruk-Hai
+trp_i5_isen_fighting_uruk_champion|Campione Combattente Uruk-Hai
+trp_i5_isen_fighting_uruk_champion_pl|Campioni Combattenti Uruk-Hai
+trp_i3_isen_uruk_pikeman|Picchiere Uruk-Hai
+trp_i3_isen_uruk_pikeman_pl|Picchieri Uruk-Hai
+trp_i4_isen_fighting_uruk_pikeman|Picchiere Combattente Uruk-Hai
+trp_i4_isen_fighting_uruk_pikeman_pl|Picchieri Combattenti Uruk-Hai
+trp_i5_isen_uruk_standard_bearer|Portastendardo Uruk-Hai
+trp_i5_isen_uruk_standard_bearer_pl|Portastendardi Uruk-Hai
 trp_i1_mordor_uruk_snaga|Uruk Snaga di Mordor
 trp_i1_mordor_uruk_snaga_pl|Uruk Snaga di Mordor
 trp_i2_mordor_uruk|Uruk di Mordor

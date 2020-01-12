@@ -590,24 +590,24 @@ trp_a5_greenwood_vigilant_pl|Čuvari Zelene šume
 ; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
 ; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
 ; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
-; trp_orc_snaga_of_isengard|Orc Snaga of Isengard
-; trp_orc_snaga_of_isengard_pl|Orc Snagas of Isengard
-; trp_orc_of_isengard|Orc of Isengard
-; trp_orc_of_isengard_pl|Orcs of Isengard
-; trp_large_orc_of_isengard|Large Orc of Isengard
-; trp_large_orc_of_isengard_pl|Large Orcs of Isengard
-; trp_fell_orc_of_isengard|Fell Orc of Isengard
-; trp_fell_orc_of_isengard_pl|Fell Orcs of Isengard
-; trp_large_orc_despoiler|Large Orc Despoiler
-; trp_large_orc_despoiler_pl|Large Orc Despoilers
-; trp_fell_orc_despoiler|Fell Orc Despoiler
-; trp_fell_orc_despoiler_pl|Fell Orc Despoilers
-; trp_wolf_rider_of_isengard|Wolf Rider of Isengard
-; trp_wolf_rider_of_isengard_pl|Wolf Riders of Isengard
-; trp_warg_rider_of_isengard|Warg Rider of Isengard
-; trp_warg_rider_of_isengard_pl|Warg Riders of Isengard
-trp_white_hand_rider|Jahač Bijele ruke
-trp_white_hand_rider_pl|Jahači Bijele ruke
+; trp_i1_isen_orc_snaga|Orc Snaga of Isengard
+; trp_i1_isen_orc_snaga_pl|Orc Snagas of Isengard
+; trp_i2_isen_orc|Orc of Isengard
+; trp_i2_isen_orc_pl|Orcs of Isengard
+; trp_i3_isen_large_orc|Large Orc of Isengard
+; trp_i3_isen_large_orc_pl|Large Orcs of Isengard
+; trp_i4_isen_fell_orc|Fell Orc of Isengard
+; trp_i4_isen_fell_orc_pl|Fell Orcs of Isengard
+; trp_i3_isen_large_orc_despoiler|Large Orc Despoiler
+; trp_i3_isen_large_orc_despoiler_pl|Large Orc Despoilers
+; trp_i4_isen_fell_orc_despoiler|Fell Orc Despoiler
+; trp_i4_isen_fell_orc_despoiler_pl|Fell Orc Despoilers
+; trp_ac2_isen_wolf_rider|Wolf Rider of Isengard
+; trp_ac2_isen_wolf_rider_pl|Wolf Riders of Isengard
+; trp_ac3_isen_warg_rider|Warg Rider of Isengard
+; trp_ac3_isen_warg_rider_pl|Warg Riders of Isengard
+trp_ac4_isen_white_hand_rider|Jahač Bijele ruke
+trp_ac4_isen_white_hand_rider_pl|Jahači Bijele ruke
 trp_warg_ghost_1b|Worg
 trp_warg_ghost_1b_pl|Worgovi
 trp_warg_ghost_1c|Worg
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|Oklopljeni Worg
 trp_warg_ghost_a3a_pl|Oklopljeni Worgovi
 trp_warg_ghost_h|Golemi Worg
 trp_warg_ghost_h_pl|Golemi Worgovi
-trp_uruk_hai_tracker|Uruk Hai Tragač
-trp_uruk_hai_tracker_pl|Uruk Hai Tragači
-trp_large_uruk_hai_tracker| Veliki Uruk Hai Tragač
-trp_large_uruk_hai_tracker_pl|Veliki Uruk Hai Tragači
-trp_fighting_uruk_hai_tracker| Borbeni Uruk Hai Tragač
-trp_fighting_uruk_hai_tracker_pl| Borbeni Uruk Hai Tragači
-trp_fighting_uruk_hai_berserker| Borbeni Uruk Hai Berserker
-trp_fighting_uruk_hai_berserker_pl|Borbeni Uruk Hai Berserkeri
-trp_uruk_snaga_of_isengard|Uruk Hai  Novorođenče
-trp_uruk_snaga_of_isengard_pl|Uruk Hai  Novorođenčad
-trp_uruk_hai_of_isengard|Uruk Hai iz Isengarda
-trp_uruk_hai_of_isengard_pl|Uruk Hai iz Isengarda
-trp_large_uruk_hai_of_isengard|Veliki Uruk Hai iz Isengarda
-trp_large_uruk_hai_of_isengard_pl|Veliki Uruk Hai iz Isengarda
-trp_fighting_uruk_hai_warrior|Borbeni Uruk Hai ratnik
-trp_fighting_uruk_hai_warrior_pl|Borbeni Uruk Hai ratnici
-trp_fighting_uruk_hai_champion| Borbeni Uruk Hai Prvak
-trp_fighting_uruk_hai_champion_pl|Borbeni Uruk Hai Prvaci
-trp_uruk_hai_pikeman|Uruk Hai Kopljaš
-trp_uruk_hai_pikeman_pl|Uruk Hai Kopljaši
-trp_fighting_uruk_hai_pikeman|Borbeni Uruk Hai kopljaš
-trp_fighting_uruk_hai_pikeman_pl|Borbeni Uruk Hai Kopljaši
-trp_urukhai_standard_bearer|Uruk Hai nositelj Stijega
-trp_urukhai_standard_bearer_pl|Uruk Hai nositelji Stijega
+trp_a2_isen_uruk_tracker|Uruk Hai Tragač
+trp_a2_isen_uruk_tracker_pl|Uruk Hai Tragači
+trp_a3_isen_large_uruk_tracker| Veliki Uruk Hai Tragač
+trp_a3_isen_large_uruk_tracker_pl|Veliki Uruk Hai Tragači
+trp_a4_isen_fighting_uruk_tracker| Borbeni Uruk Hai Tragač
+trp_a4_isen_fighting_uruk_tracker_pl| Borbeni Uruk Hai Tragači
+trp_i6_isen_uruk_berserker| Borbeni Uruk Hai Berserker
+trp_i6_isen_uruk_berserker_pl|Borbeni Uruk Hai Berserkeri
+trp_i1_isen_uruk_snaga|Uruk Hai  Novorođenče
+trp_i1_isen_uruk_snaga_pl|Uruk Hai  Novorođenčad
+trp_i2_isen_uruk|Uruk Hai iz Isengarda
+trp_i2_isen_uruk_pl|Uruk Hai iz Isengarda
+trp_i3_isen_large_uruk|Veliki Uruk Hai iz Isengarda
+trp_i3_isen_large_uruk_pl|Veliki Uruk Hai iz Isengarda
+trp_i4_isen_fighting_uruk_warrior|Borbeni Uruk Hai ratnik
+trp_i4_isen_fighting_uruk_warrior_pl|Borbeni Uruk Hai ratnici
+trp_i5_isen_fighting_uruk_champion| Borbeni Uruk Hai Prvak
+trp_i5_isen_fighting_uruk_champion_pl|Borbeni Uruk Hai Prvaci
+trp_i3_isen_uruk_pikeman|Uruk Hai Kopljaš
+trp_i3_isen_uruk_pikeman_pl|Uruk Hai Kopljaši
+trp_i4_isen_fighting_uruk_pikeman|Borbeni Uruk Hai kopljaš
+trp_i4_isen_fighting_uruk_pikeman_pl|Borbeni Uruk Hai Kopljaši
+trp_i5_isen_uruk_standard_bearer|Uruk Hai nositelj Stijega
+trp_i5_isen_uruk_standard_bearer_pl|Uruk Hai nositelji Stijega
 trp_i1_mordor_uruk_snaga|Uruk Snaga iz Mordora
 trp_i1_mordor_uruk_snaga_pl|Uruk Snage iz Mordora
 trp_i2_mordor_uruk|Uruk iz Mordora

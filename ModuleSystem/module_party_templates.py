@@ -56,7 +56,7 @@ party_templates = [
 
 ("merchant_caravan","Merchant Caravan",icon_mule|carries_goods(20)|pf_auto_remove_in_town|pf_quest_party,0,fac_commoners,escorted_merchant_personality,[(trp_caravan_master,1,1),(trp_caravan_guard,5,25)]),
 ("troublesome_bandits","Troublesome Goblins",icon_orc_tribal|carries_goods(9)|pf_quest_party,0,fac_outlaws,bandit_personality,[(trp_mountain_goblin,14,55)]),
-("fangorn_orcs","Tree-chopping Orcs",icon_orc_x4|carries_goods(9)|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_fighting_uruk_hai_champion,1,1),(trp_large_uruk_hai_of_isengard,3,8),(trp_large_uruk_hai_tracker,8,13),(trp_uruk_snaga_of_isengard,12,24)]),
+("fangorn_orcs","Tree-chopping Orcs",icon_orc_x4|carries_goods(9)|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_i5_isen_fighting_uruk_champion,1,1),(trp_i3_isen_large_uruk,3,8),(trp_a3_isen_large_uruk_tracker,8,13),(trp_i1_isen_uruk_snaga,12,24)]),
 # ("bandits_awaiting_ransom","Bandits Awaiting Ransom",icon_axeman|carries_goods(9)|pf_auto_remove_in_town|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_brigand,24,58),(trp_kidnapped_girl,1,1,pmf_is_prisoner)]),
 # ("kidnapped_girl","Kidnapped Girl",icon_woman|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_kidnapped_girl,1,1)]),
 
@@ -92,8 +92,8 @@ party_templates = [
 
 ("mordor_scouts"    ,"Mordor Scouts"       ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_mordor  ,scout_personality,[(trp_a4_mordor_fell_orc_archer,1,1),(trp_i3_mordor_large_orc,1,3),(trp_a2_mordor_orc_archer,2,5),(trp_i2_mordor_orc,2,6)]), #29-66
 ("morgul_scouts"    ,"Morgul Scouts"       ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_mordor  ,scout_personality,[(trp_a4_mordor_fell_orc_archer,1,1),(trp_i4_mordor_fell_morgul_orc,1,2),(trp_a2_mordor_orc_archer,2,5),(trp_i2_mordor_morgul_orc,3,5)]), #29-66
-("isengard_scouts"  ,"Isengard Scouts"     ,icon_orc_isengard    |carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_fighting_uruk_hai_tracker,1,1),(trp_large_uruk_hai_tracker,2,6),(trp_uruk_hai_tracker,3,7)]), #33-73
-("isengard_scouts_warg","Isengard Warg Riders",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_white_hand_rider,1,1),(trp_warg_rider_of_isengard,3,6),(trp_wolf_rider_of_isengard,3,6)]), #32-56 fast but weaker
+("isengard_scouts"  ,"Isengard Scouts"     ,icon_orc_isengard    |carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_a4_isen_fighting_uruk_tracker,1,1),(trp_a3_isen_large_uruk_tracker,2,6),(trp_a2_isen_uruk_tracker,3,7)]), #33-73
+("isengard_scouts_warg","Isengard Warg Riders",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_ac4_isen_white_hand_rider,1,1),(trp_ac3_isen_warg_rider,3,6),(trp_ac2_isen_wolf_rider,3,6)]), #32-56 fast but weaker
 ("harad_scouts"     ,"Haradrim Scouts"     ,icon_harad_horseman  |carries_goods(1)|pf_show_faction,0,fac_harad   ,scout_personality,[(trp_ac4_harondor_horse_archer,1,1),(trp_ac3_harondor_skirmisher,1,4),(trp_c2_harondor_scout,4,8)]), #31-65
 ("dunland_scouts"   ,"Dunlending Scouts"   ,icon_dunlander       |carries_goods(1)|pf_show_faction,0,fac_dunland ,scout_personality,[(trp_ac2_dun_crebain_rider,5,10)]), #20-40 fast weaklings
 ("umbar_scouts"     ,"Corsair Scouts"      ,icon_umbar_corsair   |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_i4_corsair_raider,1,2),(trp_a3_corsair_marksman,2,4),(trp_a2_corsair_marine,3,8)]), #33-61
@@ -117,7 +117,7 @@ party_templates = [
 
 ("morgul_raiders"  ,"Morgul Raiders"    ,icon_orc           |carries_goods(1)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_i4_mordor_fell_morgul_orc,1,1),(trp_i2_mordor_morgul_orc,15,30),(trp_a2_mordor_orc_archer,15,30)]), #98-188 better raiders
 ("mordor_raiders"  ,"Mordor Raiders"    ,icon_orc           |carries_goods(1)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_i4_mordor_fell_orc,1,1),(trp_i2_mordor_orc,13,26),(trp_a2_mordor_orc_archer,13,26)]), #86-164
-("isengard_raiders","Isengard Raiders"  ,icon_uruk_isengard |carries_goods(1)|pf_show_faction,0,fac_isengard,soldier_personality,[(trp_fighting_uruk_hai_champion,1,1),(trp_large_uruk_hai_of_isengard,3,8),(trp_large_uruk_hai_tracker,8,13),(trp_uruk_snaga_of_isengard,8,13)]), #98-168
+("isengard_raiders","Isengard Raiders"  ,icon_uruk_isengard |carries_goods(1)|pf_show_faction,0,fac_isengard,soldier_personality,[(trp_i5_isen_fighting_uruk_champion,1,1),(trp_i3_isen_large_uruk,3,8),(trp_a3_isen_large_uruk_tracker,8,13),(trp_i1_isen_uruk_snaga,8,13)]), #98-168
 ("dunland_raiders","Dunlending Raiders",icon_dunland_captain|carries_goods(2)|pf_show_faction,0,fac_dunland ,soldier_personality,[(trp_i5_dun_wolf_guard,1,1),(trp_i4_dun_wolf_warrior,2,4),(trp_i3_dun_vet_warrior,4,8),(trp_i2_dun_warrior,8,16)]), #90-164
 ("harad_raiders"   ,"Haradrim Raiders"  ,icon_harad_horseman|carries_goods(2)|pf_show_faction,0,fac_harad   ,soldier_personality,[(trp_i5_harad_tiger_guard,1,1),(trp_a3_harad_hunter,10,20),(trp_i1_harad_levy,11,20)]), #98-176
 ("khand_raiders"   ,"Khand Raiders"     ,icon_cataphract    |carries_goods(2)|pf_show_faction,0,fac_khand   ,soldier_personality,[(trp_c5_khand_kataphrakt,1,1),(trp_c2_khand_pony_rider,5,10),(trp_c4_khand_heavy_horseman,5,15)]), #81-191
@@ -149,7 +149,7 @@ party_templates = [
 
 # Used as patrols, except Dale 
 ("mordor_war_party"  ,"Mordor_War_Party"  ,icon_uruk_x4          |carries_goods(3)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_i5_mordor_uruk_standard_bearer,1,2),(trp_i3_mordor_large_uruk,10,22),(trp_i2_mordor_uruk,16,36),(trp_i2_mordor_orc,60,80),(trp_a2_mordor_orc_archer,40,60),(trp_olog_hai,0,3)]), #310-658 #InVain 356-812 (new formula) added more fodder orcs to make fight more epic, but not so much harder.
-("isengard_war_party","Isengard_War_Party",icon_wargrider_walk_x4|carries_goods(3)|pf_show_faction,0,fac_isengard,soldier_personality,[(trp_urukhai_standard_bearer,1,2),(trp_fighting_uruk_hai_berserker,3,6),(trp_fighting_uruk_hai_champion,3,6),(trp_fighting_uruk_hai_tracker,15,25),(trp_wolf_rider_of_isengard,5,10),(trp_armoured_troll,0,3)]), #275-550
+("isengard_war_party","Isengard_War_Party",icon_wargrider_walk_x4|carries_goods(3)|pf_show_faction,0,fac_isengard,soldier_personality,[(trp_i5_isen_uruk_standard_bearer,1,2),(trp_i6_isen_uruk_berserker,3,6),(trp_i5_isen_fighting_uruk_champion,3,6),(trp_a4_isen_fighting_uruk_tracker,15,25),(trp_ac2_isen_wolf_rider,5,10),(trp_armoured_troll,0,3)]), #275-550
 ("harad_war_party"   ,"Harad_War_Party"   ,icon_harad_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_harad   ,soldier_personality,[(trp_i5_harad_tiger_guard,2,4),(trp_c5_harondor_serpent_knight,2,4),(trp_ac5_harondor_black_snake,2,4),(trp_a4_harad_archer,8,16),(trp_c3_harondor_rider,10,20),(trp_i1_harad_levy,20,40)]), #268-536
 ("dunland_war_party" ,"Dunlending_Warband",icon_dunlander_x3     |carries_goods(3)|pf_show_faction,0,fac_dunland ,soldier_personality,[(trp_i5_dun_wolf_guard,2,4),(trp_i4_dun_vet_pikeman,6,12),(trp_i2_dun_warrior,12,24),(trp_ac2_dun_crebain_rider,10,20),(trp_i1_dun_wildman,20,50)]), #214-448 weak
 ("khand_war_party"   ,"Variag_War_Party"   ,icon_cataphract_x3   |carries_goods(3)|pf_show_faction,0,fac_khand   ,soldier_personality,[(trp_i5_khand_war_master,2,4),(trp_c5_khand_kataphrakt,2,4),(trp_i4_khand_vet_warrior,5,10),(trp_i3_khand_warrior,8,16),(trp_c2_khand_pony_rider,10,20),(trp_i2_khand_pit_dog,20,40)]), #277-554
@@ -202,7 +202,7 @@ party_templates = [
 ("dwarf_caravan"   ,"Dwarven Caravan"   ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_dwarf   ,prisoner_train_personality,[(trp_i4_dwarf_axeman,2,6),(trp_a4_dwarf_bowman,2,4),(trp_i3_dwarf_hardened_warrior,12,24),(trp_a2_dwarf_lookout,16,24),(trp_i2_dwarf_warrior,20,40)]), # strength 264-514
 
 ("mordor_caravan"  ,"Mordor Supply Train"  ,icon_supply_mordor  |carries_goods(10)|pf_show_faction,0,fac_mordor  ,prisoner_train_personality, [(trp_i3_mordor_large_uruk, 4, 12), (trp_a3_mordor_large_orc_archer, 8, 18), (trp_i3_mordor_large_orc, 8, 18), (trp_a2_mordor_orc_archer, 14, 22), (trp_i2_mordor_orc, 18, 30)]), # strength 200-408
-("isengard_caravan","Isengard Supply Train",icon_supply_isengard|carries_goods(10)|pf_show_faction,0,fac_isengard,prisoner_train_personality, [(trp_warg_rider_of_isengard, 3, 8), (trp_large_uruk_hai_of_isengard, 6, 16), (trp_uruk_hai_of_isengard, 6, 10), (trp_uruk_hai_tracker, 6, 10), (trp_orc_of_isengard, 20, 40)]), # strength 159-336
+("isengard_caravan","Isengard Supply Train",icon_supply_isengard|carries_goods(10)|pf_show_faction,0,fac_isengard,prisoner_train_personality, [(trp_ac3_isen_warg_rider, 3, 8), (trp_i3_isen_large_uruk, 6, 16), (trp_i2_isen_uruk, 6, 10), (trp_a2_isen_uruk_tracker, 6, 10), (trp_i2_isen_orc, 20, 40)]), # strength 159-336
 ("gunda_caravan"   ,"Gundabad Supply Train",icon_supply_isengard|carries_goods(10)|pf_show_faction,0,fac_gundabad,prisoner_train_personality, [(trp_c5_gunda_clan_rider, 1, 2), (trp_ca4_gunda_skirmisher, 6, 16), (trp_i4_gunda_orc_berserker, 6, 10), (trp_i2_gunda_orc, 20, 30)]),
 
 ####TLD Prisoner Trains
@@ -220,7 +220,7 @@ party_templates = [
 ("dwarf_p_train"   ,"Dwarven Prisoner Train"   ,icon_mule         |pf_show_faction,0,fac_dwarf   ,prisoner_train_personality,[(trp_i3_dwarf_hardened_warrior,2,4), (trp_a3_dwarf_scout,4,6), (trp_i2_dwarf_warrior,4,6), (trp_a2_dwarf_lookout,8,14), (trp_i1_dwarf_apprentice,25,35)]), # strength 140-220
 
 ("mordor_p_train"  ,"Mordor Prisoner Train"    ,icon_slaver_mordor  |carries_goods(2)|pf_show_faction,0,fac_mordor  , prisoner_train_personality, [(trp_i3_mordor_large_orc,6,8), (trp_a2_mordor_orc_archer,6,10), (trp_i2_mordor_orc,16,24), (trp_a2_mordor_orc_archer,16,24), (trp_i1_mordor_orc_snaga,40,60)]), # strength 196-294
-("isengard_p_train","Isengard Prisoner Train"  ,icon_slaver_isengard|carries_goods(2)|pf_show_faction,0,fac_isengard, prisoner_train_personality, [(trp_warg_rider_of_isengard,4,6), (trp_large_orc_of_isengard,10,14), (trp_orc_of_isengard,24,36), (trp_orc_snaga_of_isengard,40,60)]), # strength 182-268
+("isengard_p_train","Isengard Prisoner Train"  ,icon_slaver_isengard|carries_goods(2)|pf_show_faction,0,fac_isengard, prisoner_train_personality, [(trp_ac3_isen_warg_rider,4,6), (trp_i3_isen_large_orc,10,14), (trp_i2_isen_orc,24,36), (trp_i1_isen_orc_snaga,40,60)]), # strength 182-268
 
 ("kingdom_hero_party","War Party",icon_player_horseman|pf_show_faction|pf_default_behavior,0,fac_commoners,soldier_personality,[]),
 
@@ -267,9 +267,9 @@ party_templates = [
 ("rohan_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_c3_rider_of_rohan,1,2),(trp_ac3_skirmisher_of_rohan,3,5),(trp_i3_footman_of_rohan,1,2),(trp_c2_squire_of_rohan,0,1),]),
 ("rohan_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c4_veteran_rider_of_rohan,1,2),(trp_c4_lancer_of_rohan,1,2),(trp_ac4_veteran_skirmisher_of_rohan,1,2),(trp_i4_veteran_footman_of_rohan,1,2),]),
 #Isengard - two short trees (up to T4/T5), easier to upgrade, so lower tier reinforcements; also extra orcs (8-16, 7-13, 5-10)
-("isengard_reinf_a","_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,1,2),(trp_orc_snaga_of_isengard,2,5),(trp_uruk_hai_tracker,1,2),(trp_uruk_hai_of_isengard,1,2),(trp_orc_of_isengard,2,4),]), #two T1 #InVain: mixed a bit, see Mordor
-("isengard_reinf_b","_",0,0,fac_commoners,0,[(trp_wolf_rider_of_isengard,2,3),(trp_uruk_hai_tracker,2,4),(trp_uruk_hai_of_isengard,1,2),(trp_orc_of_isengard,2,4),(trp_large_uruk_hai_tracker,1,3),(trp_large_orc_of_isengard,1,2),]), #more T2 troops #InVain: More archers, t3 archers+orcs
-("isengard_reinf_c","_",0,0,fac_commoners,0,[(trp_warg_rider_of_isengard,1,2),(trp_large_uruk_hai_of_isengard,1,2),(trp_uruk_hai_pikeman,1,2),(trp_large_orc_of_isengard,1,2),(trp_large_orc_despoiler,1,2),]), #more T3 troops
+("isengard_reinf_a","_",0,0,fac_commoners,0,[(trp_i1_isen_uruk_snaga,1,2),(trp_i1_isen_orc_snaga,2,5),(trp_a2_isen_uruk_tracker,1,2),(trp_i2_isen_uruk,1,2),(trp_i2_isen_orc,2,4),]), #two T1 #InVain: mixed a bit, see Mordor
+("isengard_reinf_b","_",0,0,fac_commoners,0,[(trp_ac2_isen_wolf_rider,2,3),(trp_a2_isen_uruk_tracker,2,4),(trp_i2_isen_uruk,1,2),(trp_i2_isen_orc,2,4),(trp_a3_isen_large_uruk_tracker,1,3),(trp_i3_isen_large_orc,1,2),]), #more T2 troops #InVain: More archers, t3 archers+orcs
+("isengard_reinf_c","_",0,0,fac_commoners,0,[(trp_ac3_isen_warg_rider,1,2),(trp_i3_isen_large_uruk,1,2),(trp_i3_isen_uruk_pikeman,1,2),(trp_i3_isen_large_orc,1,2),(trp_i3_isen_large_orc_despoiler,1,2),]), #more T3 troops
 #Mordor - same as Isengard + Numenorean cavalry (8-16, 7-13, 5-10)
 ("mordor_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,3),(trp_i1_mordor_orc_snaga,2,5),(trp_i2_mordor_uruk,1,2),(trp_i2_mordor_orc,2,4),]), #InVain: less t1, a few t2 = less orc archers for field armies
 ("mordor_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_mordor_orc_archer,2,4),(trp_a3_mordor_large_orc_archer,2,4),(trp_i2_mordor_uruk,2,3),(trp_i2_mordor_orc,3,6),(trp_i3_mordor_large_orc,1,2),(trp_a4_mordor_fell_orc_archer,1,2)]), #InVain: More archers, t3+t4 archers, t3 orcs
@@ -348,7 +348,7 @@ party_templates = [
 
 ("rohan_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,4)]),
 ("rohan_cap_recruits" ,"_",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,6)]),
-("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,2,3),(trp_orc_snaga_of_isengard,2,4)]), #two T1
+("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_isen_uruk_snaga,2,3),(trp_i1_isen_orc_snaga,2,4)]), #two T1
 ("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,2),(trp_i1_mordor_orc_snaga,3,5),(trp_i2_mordor_num_renegade,1,1),]), #two T1 & prize
 ("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,2),(trp_i1_mordor_orc_snaga,3,5)]), #two T1
 ("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,2,3),(trp_i2_mordor_morgul_orc,1,2)]), #T1 T2

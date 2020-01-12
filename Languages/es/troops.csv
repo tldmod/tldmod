@@ -590,24 +590,24 @@ trp_i5_corsair_master_spearman|Maestro Lancero de Umbar
 trp_i5_corsair_master_spearman_pl|Maestros Lanceros de Umbar
 trp_i5_corsair_master_pikeman|Maestro Piquero de Umbar
 trp_i5_corsair_master_pikeman_pl|Maestros Piqueros de Umbar
-trp_orc_snaga_of_isengard|Orco Snaga de Isengard
-trp_orc_snaga_of_isengard_pl|Orcos Snagae de Isengard
-trp_orc_of_isengard|Orco de Isengard
-trp_orc_of_isengard_pl|Orcos de Isengard
-trp_large_orc_of_isengard|Gran Orco de Isengard
-trp_large_orc_of_isengard_pl|Orcos Grandes de Isengard
-trp_fell_orc_of_isengard|Orco Feroz de Isengard
-trp_fell_orc_of_isengard_pl|Orcos Feroces de Isengard
-trp_large_orc_despoiler|Gran Orco Saqueador
-trp_large_orc_despoiler_pl|Orcos Grandes Saqueadores
-trp_fell_orc_despoiler|Orco Feroz Saqueador
-trp_fell_orc_despoiler_pl|Orcos Feroces Saqueadores
-trp_wolf_rider_of_isengard|Jinete de Lobo de Isengard
-trp_wolf_rider_of_isengard_pl|Jinetes de Lobo de Isengard
-trp_warg_rider_of_isengard|Jinete de Huargo de Isengard
-trp_warg_rider_of_isengard_pl|Jinetes de Huargo de Isengard
-trp_white_hand_rider|Jinete de la Mano Blanca
-trp_white_hand_rider_pl|Jinetes de la Mano Blanca
+trp_i1_isen_orc_snaga|Orco Snaga de Isengard
+trp_i1_isen_orc_snaga_pl|Orcos Snagae de Isengard
+trp_i2_isen_orc|Orco de Isengard
+trp_i2_isen_orc_pl|Orcos de Isengard
+trp_i3_isen_large_orc|Gran Orco de Isengard
+trp_i3_isen_large_orc_pl|Orcos Grandes de Isengard
+trp_i4_isen_fell_orc|Orco Feroz de Isengard
+trp_i4_isen_fell_orc_pl|Orcos Feroces de Isengard
+trp_i3_isen_large_orc_despoiler|Gran Orco Saqueador
+trp_i3_isen_large_orc_despoiler_pl|Orcos Grandes Saqueadores
+trp_i4_isen_fell_orc_despoiler|Orco Feroz Saqueador
+trp_i4_isen_fell_orc_despoiler_pl|Orcos Feroces Saqueadores
+trp_ac2_isen_wolf_rider|Jinete de Lobo de Isengard
+trp_ac2_isen_wolf_rider_pl|Jinetes de Lobo de Isengard
+trp_ac3_isen_warg_rider|Jinete de Huargo de Isengard
+trp_ac3_isen_warg_rider_pl|Jinetes de Huargo de Isengard
+trp_ac4_isen_white_hand_rider|Jinete de la Mano Blanca
+trp_ac4_isen_white_hand_rider_pl|Jinetes de la Mano Blanca
 trp_warg_ghost_1b|Huargo
 trp_warg_ghost_1b_pl|Huargos
 trp_warg_ghost_1c|Huargo
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|Huargo de Guerra
 trp_warg_ghost_a3a_pl|Huargos de Guerra
 trp_warg_ghost_h|Huargo Gigante
 trp_warg_ghost_h_pl|Huargos Gigantes
-trp_uruk_hai_tracker|Rastreador Uruk-hai
-trp_uruk_hai_tracker_pl|Rastreadores Uruk-hai
-trp_large_uruk_hai_tracker|Gran Rastreador Uruk-hai
-trp_large_uruk_hai_tracker_pl|Grandes Rastreadores Uruk-hai
-trp_fighting_uruk_hai_tracker|Guerrero Rastreador Uruk-hai
-trp_fighting_uruk_hai_tracker_pl|Guerreros Rastreadores Uruk-hai
-trp_fighting_uruk_hai_berserker|Berserker Uruk-hai
-trp_fighting_uruk_hai_berserker_pl|Berserkers Uruk-hai
-trp_uruk_snaga_of_isengard|Uruk-hai Neonato
-trp_uruk_snaga_of_isengard_pl|Uruk-hai Neonatos
-trp_uruk_hai_of_isengard|Uruk-hai de Isengard
-trp_uruk_hai_of_isengard_pl|Uruk-hai de Isengard
-trp_large_uruk_hai_of_isengard|Gran Uruk-hai de Isengard
-trp_large_uruk_hai_of_isengard_pl|Grandes Uruk-hai de Isengard
-trp_fighting_uruk_hai_warrior|Guerrero Uruk-hai
-trp_fighting_uruk_hai_warrior_pl|Guerreros Uruk-hai
-trp_fighting_uruk_hai_champion|Campeón Uruk-hai
-trp_fighting_uruk_hai_champion_pl|Campeones Uruk-hai
-trp_uruk_hai_pikeman|Piquero Uruk-hai
-trp_uruk_hai_pikeman_pl|Piqueros Uruk-hai
-trp_fighting_uruk_hai_pikeman|Piquero de Combate Uruk-hai
-trp_fighting_uruk_hai_pikeman_pl|Piqueros de Combate Uruk-hai
-trp_urukhai_standard_bearer|Portaestandarte Uruk-hai
-trp_urukhai_standard_bearer_pl|Portaestandartes Uruk-hai
+trp_a2_isen_uruk_tracker|Rastreador Uruk-hai
+trp_a2_isen_uruk_tracker_pl|Rastreadores Uruk-hai
+trp_a3_isen_large_uruk_tracker|Gran Rastreador Uruk-hai
+trp_a3_isen_large_uruk_tracker_pl|Grandes Rastreadores Uruk-hai
+trp_a4_isen_fighting_uruk_tracker|Guerrero Rastreador Uruk-hai
+trp_a4_isen_fighting_uruk_tracker_pl|Guerreros Rastreadores Uruk-hai
+trp_i6_isen_uruk_berserker|Berserker Uruk-hai
+trp_i6_isen_uruk_berserker_pl|Berserkers Uruk-hai
+trp_i1_isen_uruk_snaga|Uruk-hai Neonato
+trp_i1_isen_uruk_snaga_pl|Uruk-hai Neonatos
+trp_i2_isen_uruk|Uruk-hai de Isengard
+trp_i2_isen_uruk_pl|Uruk-hai de Isengard
+trp_i3_isen_large_uruk|Gran Uruk-hai de Isengard
+trp_i3_isen_large_uruk_pl|Grandes Uruk-hai de Isengard
+trp_i4_isen_fighting_uruk_warrior|Guerrero Uruk-hai
+trp_i4_isen_fighting_uruk_warrior_pl|Guerreros Uruk-hai
+trp_i5_isen_fighting_uruk_champion|Campeón Uruk-hai
+trp_i5_isen_fighting_uruk_champion_pl|Campeones Uruk-hai
+trp_i3_isen_uruk_pikeman|Piquero Uruk-hai
+trp_i3_isen_uruk_pikeman_pl|Piqueros Uruk-hai
+trp_i4_isen_fighting_uruk_pikeman|Piquero de Combate Uruk-hai
+trp_i4_isen_fighting_uruk_pikeman_pl|Piqueros de Combate Uruk-hai
+trp_i5_isen_uruk_standard_bearer|Portaestandarte Uruk-hai
+trp_i5_isen_uruk_standard_bearer_pl|Portaestandartes Uruk-hai
 trp_i1_mordor_uruk_snaga|Uruk Snaga de Mordor
 trp_i1_mordor_uruk_snaga_pl|Uruks Snagae de Mordor
 trp_i2_mordor_uruk|Uruk de Mordor

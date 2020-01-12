@@ -590,24 +590,24 @@ trp_i2_far_harad_tribesman|Kaukaisen Haradin heimolainen
 ; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
 ; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
 ; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
-; trp_orc_snaga_of_isengard|Orc Snaga of Isengard
-; trp_orc_snaga_of_isengard_pl|Orc Snagas of Isengard
-; trp_orc_of_isengard|Orc of Isengard
-; trp_orc_of_isengard_pl|Orcs of Isengard
-; trp_large_orc_of_isengard|Large Orc of Isengard
-; trp_large_orc_of_isengard_pl|Large Orcs of Isengard
-; trp_fell_orc_of_isengard|Fell Orc of Isengard
-; trp_fell_orc_of_isengard_pl|Fell Orcs of Isengard
-; trp_large_orc_despoiler|Large Orc Despoiler
-; trp_large_orc_despoiler_pl|Large Orc Despoilers
-; trp_fell_orc_despoiler|Fell Orc Despoiler
-; trp_fell_orc_despoiler_pl|Fell Orc Despoilers
-; trp_wolf_rider_of_isengard|Wolf Rider of Isengard
-; trp_wolf_rider_of_isengard_pl|Wolf Riders of Isengard
-; trp_warg_rider_of_isengard|Warg Rider of Isengard
-; trp_warg_rider_of_isengard_pl|Warg Riders of Isengard
-; trp_white_hand_rider|White Hand Rider
-; trp_white_hand_rider_pl|White Hand Riders
+; trp_i1_isen_orc_snaga|Orc Snaga of Isengard
+; trp_i1_isen_orc_snaga_pl|Orc Snagas of Isengard
+; trp_i2_isen_orc|Orc of Isengard
+; trp_i2_isen_orc_pl|Orcs of Isengard
+; trp_i3_isen_large_orc|Large Orc of Isengard
+; trp_i3_isen_large_orc_pl|Large Orcs of Isengard
+; trp_i4_isen_fell_orc|Fell Orc of Isengard
+; trp_i4_isen_fell_orc_pl|Fell Orcs of Isengard
+; trp_i3_isen_large_orc_despoiler|Large Orc Despoiler
+; trp_i3_isen_large_orc_despoiler_pl|Large Orc Despoilers
+; trp_i4_isen_fell_orc_despoiler|Fell Orc Despoiler
+; trp_i4_isen_fell_orc_despoiler_pl|Fell Orc Despoilers
+; trp_ac2_isen_wolf_rider|Wolf Rider of Isengard
+; trp_ac2_isen_wolf_rider_pl|Wolf Riders of Isengard
+; trp_ac3_isen_warg_rider|Warg Rider of Isengard
+; trp_ac3_isen_warg_rider_pl|Warg Riders of Isengard
+; trp_ac4_isen_white_hand_rider|White Hand Rider
+; trp_ac4_isen_white_hand_rider_pl|White Hand Riders
 ; trp_warg_ghost_1b|Warg
 ; trp_warg_ghost_1b_pl|Wargs
 ; trp_warg_ghost_1c|Warg
@@ -626,30 +626,30 @@ trp_i2_far_harad_tribesman|Kaukaisen Haradin heimolainen
 ; trp_warg_ghost_a3a_pl|Armored Wargs
 ; trp_warg_ghost_h|Huge Warg
 ; trp_warg_ghost_h_pl|Huge Wargs
-; trp_uruk_hai_tracker|Uruk Hai Tracker
-; trp_uruk_hai_tracker_pl|Uruk Hai Trackers
-; trp_large_uruk_hai_tracker|Large Uruk Hai Tracker
-; trp_large_uruk_hai_tracker_pl|Large Uruk Hai Trackers
-; trp_fighting_uruk_hai_tracker|Fighting Uruk Hai Tracker
-; trp_fighting_uruk_hai_tracker_pl|Fighting Uruk Hai Trackers
-; trp_fighting_uruk_hai_berserker|Fighting Uruk Hai Berserker
-; trp_fighting_uruk_hai_berserker_pl|Fighting Uruk Hai Berserkers
-; trp_uruk_snaga_of_isengard|Uruk Hai Newborn
-; trp_uruk_snaga_of_isengard_pl|Uruk Hai Newborns
-; trp_uruk_hai_of_isengard|Uruk Hai of Isengard
-; trp_uruk_hai_of_isengard_pl|Uruk Hai of Isengard
-; trp_large_uruk_hai_of_isengard|Large Uruk Hai of Isengard
-; trp_large_uruk_hai_of_isengard_pl|Large Uruk Hai of Isengard
-; trp_fighting_uruk_hai_warrior|Fighting Uruk Hai Warrior
-; trp_fighting_uruk_hai_warrior_pl|Fighting Uruk Hai Warriors
-; trp_fighting_uruk_hai_champion|Fighting Uruk Hai Champion
-; trp_fighting_uruk_hai_champion_pl|Fighting Uruk Hai Champions
-; trp_uruk_hai_pikeman|Uruk Hai Pikeman
-; trp_uruk_hai_pikeman_pl|Uruk Hai Pikemen
-; trp_fighting_uruk_hai_pikeman|Fighting Uruk Hai Pikeman
-; trp_fighting_uruk_hai_pikeman_pl|Fighting Uruk Hai Pikemen
-; trp_urukhai_standard_bearer|Uruk Hai Standard Bearer
-; trp_urukhai_standard_bearer_pl|Uruk Hai Standard Bearers
+; trp_a2_isen_uruk_tracker|Uruk Hai Tracker
+; trp_a2_isen_uruk_tracker_pl|Uruk Hai Trackers
+; trp_a3_isen_large_uruk_tracker|Large Uruk Hai Tracker
+; trp_a3_isen_large_uruk_tracker_pl|Large Uruk Hai Trackers
+; trp_a4_isen_fighting_uruk_tracker|Fighting Uruk Hai Tracker
+; trp_a4_isen_fighting_uruk_tracker_pl|Fighting Uruk Hai Trackers
+; trp_i6_isen_uruk_berserker|Fighting Uruk Hai Berserker
+; trp_i6_isen_uruk_berserker_pl|Fighting Uruk Hai Berserkers
+; trp_i1_isen_uruk_snaga|Uruk Hai Newborn
+; trp_i1_isen_uruk_snaga_pl|Uruk Hai Newborns
+; trp_i2_isen_uruk|Uruk Hai of Isengard
+; trp_i2_isen_uruk_pl|Uruk Hai of Isengard
+; trp_i3_isen_large_uruk|Large Uruk Hai of Isengard
+; trp_i3_isen_large_uruk_pl|Large Uruk Hai of Isengard
+; trp_i4_isen_fighting_uruk_warrior|Fighting Uruk Hai Warrior
+; trp_i4_isen_fighting_uruk_warrior_pl|Fighting Uruk Hai Warriors
+; trp_i5_isen_fighting_uruk_champion|Fighting Uruk Hai Champion
+; trp_i5_isen_fighting_uruk_champion_pl|Fighting Uruk Hai Champions
+; trp_i3_isen_uruk_pikeman|Uruk Hai Pikeman
+; trp_i3_isen_uruk_pikeman_pl|Uruk Hai Pikemen
+; trp_i4_isen_fighting_uruk_pikeman|Fighting Uruk Hai Pikeman
+; trp_i4_isen_fighting_uruk_pikeman_pl|Fighting Uruk Hai Pikemen
+; trp_i5_isen_uruk_standard_bearer|Uruk Hai Standard Bearer
+; trp_i5_isen_uruk_standard_bearer_pl|Uruk Hai Standard Bearers
 ; trp_i1_mordor_uruk_snaga|Uruk Snaga of Mordor
 ; trp_i1_mordor_uruk_snaga_pl|Uruk Snagas of Mordor
 ; trp_i2_mordor_uruk|Uruk of Mordor

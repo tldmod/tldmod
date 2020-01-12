@@ -163,7 +163,7 @@ mission_templates_cutscenes = [
            (position_set_y, pos1,  100),
            (set_spawn_position, pos1),
            (try_for_range, ":unused", 0, 10),
-             (spawn_agent, "trp_warg_rider_of_isengard"),
+             (spawn_agent, "trp_ac3_isen_warg_rider"),
              (agent_set_team, reg0, 1),
            (try_end),
            (try_for_agents, ":agent_no"), # peasants run and scream!

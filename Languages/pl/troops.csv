@@ -590,24 +590,24 @@ trp_i5_corsair_master_spearman|Umbarski Mistrz Włóczni
 trp_i5_corsair_master_spearman_pl|Umbarscy Mistrzowie Włóczni
 trp_i5_corsair_master_pikeman|Umbarski Mistrz Piki
 trp_i5_corsair_master_pikeman_pl|Umbarscy Mistrzowie Piki
-trp_orc_snaga_of_isengard|Isengardzki Ork Snaga
-trp_orc_snaga_of_isengard_pl|Isengardzkich Orków Snaga
-trp_orc_of_isengard|Isengardzki Ork
-trp_orc_of_isengard_pl|Isengardzkich Orków
-trp_large_orc_of_isengard|Isengardzki Wielki Ork
-trp_large_orc_of_isengard_pl|Isengardzkich Wielkich Orków
-trp_fell_orc_of_isengard|Isengardzki Dziki Ork
-trp_fell_orc_of_isengard_pl|Isengardzkich Dzikich Orków
-trp_large_orc_despoiler|Wielki Ork Rozbójnik
-trp_large_orc_despoiler_pl|Wielkich Orków Rozbójników
-trp_fell_orc_despoiler|Dziki Ork Grabieżca
-trp_fell_orc_despoiler_pl|Dzikich Orków Grabieżców
-trp_wolf_rider_of_isengard|Isengardzki Wilczy Jeździec
-trp_wolf_rider_of_isengard_pl|Isengardzkich Wilczych Jeźdźców
-trp_warg_rider_of_isengard|Isengardzki Jeździec Wargów
-trp_warg_rider_of_isengard_pl|Isengardzkich Jeźdźców Wargów
-trp_white_hand_rider|Jeździec Białej Ręki
-trp_white_hand_rider_pl|Jeźdźców Białej Ręki
+trp_i1_isen_orc_snaga|Isengardzki Ork Snaga
+trp_i1_isen_orc_snaga_pl|Isengardzkich Orków Snaga
+trp_i2_isen_orc|Isengardzki Ork
+trp_i2_isen_orc_pl|Isengardzkich Orków
+trp_i3_isen_large_orc|Isengardzki Wielki Ork
+trp_i3_isen_large_orc_pl|Isengardzkich Wielkich Orków
+trp_i4_isen_fell_orc|Isengardzki Dziki Ork
+trp_i4_isen_fell_orc_pl|Isengardzkich Dzikich Orków
+trp_i3_isen_large_orc_despoiler|Wielki Ork Rozbójnik
+trp_i3_isen_large_orc_despoiler_pl|Wielkich Orków Rozbójników
+trp_i4_isen_fell_orc_despoiler|Dziki Ork Grabieżca
+trp_i4_isen_fell_orc_despoiler_pl|Dzikich Orków Grabieżców
+trp_ac2_isen_wolf_rider|Isengardzki Wilczy Jeździec
+trp_ac2_isen_wolf_rider_pl|Isengardzkich Wilczych Jeźdźców
+trp_ac3_isen_warg_rider|Isengardzki Jeździec Wargów
+trp_ac3_isen_warg_rider_pl|Isengardzkich Jeźdźców Wargów
+trp_ac4_isen_white_hand_rider|Jeździec Białej Ręki
+trp_ac4_isen_white_hand_rider_pl|Jeźdźców Białej Ręki
 trp_warg_ghost_1b|Warg
 trp_warg_ghost_1b_pl|Wargów
 trp_warg_ghost_1c|Warg
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|Opancerzony Warg
 trp_warg_ghost_a3a_pl|Opancerzonych Wargów
 trp_warg_ghost_h|Olbrzymi Warg
 trp_warg_ghost_h_pl|Olbrzymich Wargów
-trp_uruk_hai_tracker|Tropiciel Uruk-Hai
-trp_uruk_hai_tracker_pl|Tropicieli Uruk-Hai
-trp_large_uruk_hai_tracker|Wielki Tropiciel Uruk-Hai
-trp_large_uruk_hai_tracker_pl|Wielkich Tropicieli Uruk-Hai
-trp_fighting_uruk_hai_tracker|Waleczny Tropiciel Uruk-Hai
-trp_fighting_uruk_hai_tracker_pl|Walecznych Tropicieli Uruk-Hai
-trp_fighting_uruk_hai_berserker|Waleczny Berserker Uruk-Hai
-trp_fighting_uruk_hai_berserker_pl|Walecznych Berserkerów Uruk-Hai
-trp_uruk_snaga_of_isengard|Pomiot Uruk-Hai
-trp_uruk_snaga_of_isengard_pl|Pomiotów Uruk-Hai
-trp_uruk_hai_of_isengard|Isengardzki Uruk-Hai
-trp_uruk_hai_of_isengard_pl|Isengardzkich Uruk-Hai
-trp_large_uruk_hai_of_isengard|Isengardzki Wielki Uruk-Hai
-trp_large_uruk_hai_of_isengard_pl|Isengardzkich Wielkich Uruk-Hai
-trp_fighting_uruk_hai_warrior|Waleczny Wojownik Uruk-Hai
-trp_fighting_uruk_hai_warrior_pl|Walecznych Wojowników Uruk-Hai
-trp_fighting_uruk_hai_champion|Waleczny Czempion Uruk-Hai
-trp_fighting_uruk_hai_champion_pl|Walecznych Czempion Uruk-Hai
-trp_uruk_hai_pikeman|Pikinier Uruk-Hai
-trp_uruk_hai_pikeman_pl|Pikinierów Uruk-Hai
-trp_fighting_uruk_hai_pikeman|Waleczny Pikinier Uruk-Hai
-trp_fighting_uruk_hai_pikeman_pl|Walecznych Pikinierów Uruk-Hai
-trp_urukhai_standard_bearer|Chorąży Uruk-Hai
-trp_urukhai_standard_bearer_pl|Chorążych Uruk-Hai
+trp_a2_isen_uruk_tracker|Tropiciel Uruk-Hai
+trp_a2_isen_uruk_tracker_pl|Tropicieli Uruk-Hai
+trp_a3_isen_large_uruk_tracker|Wielki Tropiciel Uruk-Hai
+trp_a3_isen_large_uruk_tracker_pl|Wielkich Tropicieli Uruk-Hai
+trp_a4_isen_fighting_uruk_tracker|Waleczny Tropiciel Uruk-Hai
+trp_a4_isen_fighting_uruk_tracker_pl|Walecznych Tropicieli Uruk-Hai
+trp_i6_isen_uruk_berserker|Waleczny Berserker Uruk-Hai
+trp_i6_isen_uruk_berserker_pl|Walecznych Berserkerów Uruk-Hai
+trp_i1_isen_uruk_snaga|Pomiot Uruk-Hai
+trp_i1_isen_uruk_snaga_pl|Pomiotów Uruk-Hai
+trp_i2_isen_uruk|Isengardzki Uruk-Hai
+trp_i2_isen_uruk_pl|Isengardzkich Uruk-Hai
+trp_i3_isen_large_uruk|Isengardzki Wielki Uruk-Hai
+trp_i3_isen_large_uruk_pl|Isengardzkich Wielkich Uruk-Hai
+trp_i4_isen_fighting_uruk_warrior|Waleczny Wojownik Uruk-Hai
+trp_i4_isen_fighting_uruk_warrior_pl|Walecznych Wojowników Uruk-Hai
+trp_i5_isen_fighting_uruk_champion|Waleczny Czempion Uruk-Hai
+trp_i5_isen_fighting_uruk_champion_pl|Walecznych Czempion Uruk-Hai
+trp_i3_isen_uruk_pikeman|Pikinier Uruk-Hai
+trp_i3_isen_uruk_pikeman_pl|Pikinierów Uruk-Hai
+trp_i4_isen_fighting_uruk_pikeman|Waleczny Pikinier Uruk-Hai
+trp_i4_isen_fighting_uruk_pikeman_pl|Walecznych Pikinierów Uruk-Hai
+trp_i5_isen_uruk_standard_bearer|Chorąży Uruk-Hai
+trp_i5_isen_uruk_standard_bearer_pl|Chorążych Uruk-Hai
 trp_i1_mordor_uruk_snaga|Mordorski Uruk Snaga
 trp_i1_mordor_uruk_snaga_pl|Mordorskich Uruków Snaga
 trp_i2_mordor_uruk|Mordorski Uruk

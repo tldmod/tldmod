@@ -590,24 +590,24 @@ trp_i5_corsair_master_spearman|Umbari lándzsamester
 trp_i5_corsair_master_spearman_pl|Umbari lándzsamesterek
 trp_i5_corsair_master_pikeman|Umbari pikamester
 trp_i5_corsair_master_pikeman_pl|Umbari pikamesterek
-trp_orc_snaga_of_isengard|Vasudvardi ork snaga
-trp_orc_snaga_of_isengard_pl|Vasudvardi ork snagák
-trp_orc_of_isengard|Vasudvardi ork
-trp_orc_of_isengard_pl|Vasudvardi orkok
-trp_large_orc_of_isengard|Vasudvardi hatalmas ork
-trp_large_orc_of_isengard_pl|Vasudvardi hatalmas orkok
-trp_fell_orc_of_isengard|Vasudvardi irdatlan ork
-trp_fell_orc_of_isengard_pl|Vasudvardi irdatlan orkok
-trp_large_orc_despoiler|Hatalmas ork zsákmányszerző
-trp_large_orc_despoiler_pl|Hatalmas ork zsákmányszerzők
-trp_fell_orc_despoiler|Irdatlan ork zsákmányszerző
-trp_fell_orc_despoiler_pl|Irdatlan ork zsákmányszerzők
-trp_wolf_rider_of_isengard|Vasudvardi farkaslovas
-trp_wolf_rider_of_isengard_pl|Vasudvardi farkaslovasság
-trp_warg_rider_of_isengard|Vasudvardi varglovas
-trp_warg_rider_of_isengard_pl|Vasudvardi varglovasság
-trp_white_hand_rider|A Fehér Kéz lovasa
-trp_white_hand_rider_pl|A Fehéz Kéz lovassága
+trp_i1_isen_orc_snaga|Vasudvardi ork snaga
+trp_i1_isen_orc_snaga_pl|Vasudvardi ork snagák
+trp_i2_isen_orc|Vasudvardi ork
+trp_i2_isen_orc_pl|Vasudvardi orkok
+trp_i3_isen_large_orc|Vasudvardi hatalmas ork
+trp_i3_isen_large_orc_pl|Vasudvardi hatalmas orkok
+trp_i4_isen_fell_orc|Vasudvardi irdatlan ork
+trp_i4_isen_fell_orc_pl|Vasudvardi irdatlan orkok
+trp_i3_isen_large_orc_despoiler|Hatalmas ork zsákmányszerző
+trp_i3_isen_large_orc_despoiler_pl|Hatalmas ork zsákmányszerzők
+trp_i4_isen_fell_orc_despoiler|Irdatlan ork zsákmányszerző
+trp_i4_isen_fell_orc_despoiler_pl|Irdatlan ork zsákmányszerzők
+trp_ac2_isen_wolf_rider|Vasudvardi farkaslovas
+trp_ac2_isen_wolf_rider_pl|Vasudvardi farkaslovasság
+trp_ac3_isen_warg_rider|Vasudvardi varglovas
+trp_ac3_isen_warg_rider_pl|Vasudvardi varglovasság
+trp_ac4_isen_white_hand_rider|A Fehér Kéz lovasa
+trp_ac4_isen_white_hand_rider_pl|A Fehéz Kéz lovassága
 trp_warg_ghost_1b|Varg
 trp_warg_ghost_1b_pl|Vargok
 trp_warg_ghost_1c|Varg
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|Páncélozott varg
 trp_warg_ghost_a3a_pl|Páncélozott vargok
 trp_warg_ghost_h|Böszme varg
 trp_warg_ghost_h_pl|Böszme varg
-trp_uruk_hai_tracker|Uruk-hai nyomkövető
-trp_uruk_hai_tracker_pl|Uruk-hai nyomkövetők
-trp_large_uruk_hai_tracker|Hatalmas uruk-hai nyomkövető
-trp_large_uruk_hai_tracker_pl|Hatalmas uruk-hai nyomkövetők
-trp_fighting_uruk_hai_tracker|Harcias uruk-hai nyomkövető
-trp_fighting_uruk_hai_tracker_pl|Harcias uruk-hai nyomkövetők
-trp_fighting_uruk_hai_berserker|Harcias uruk-hai berzerker
-trp_fighting_uruk_hai_berserker_pl|Harcias uruk-hai berzerkerek
-trp_uruk_snaga_of_isengard|Uruk-hai újszülött
-trp_uruk_snaga_of_isengard_pl|Uruk-hai újszülöttek
-trp_uruk_hai_of_isengard|Vasudvardi uruk-hai
-trp_uruk_hai_of_isengard_pl|Vasudvardi uruk-haiok
-trp_large_uruk_hai_of_isengard|Vasudvardi hatalmas uruk-hai
-trp_large_uruk_hai_of_isengard_pl|Vasudvardi hatalmas uruk-haiok
-trp_fighting_uruk_hai_warrior|Harcias uruk-hai harcos
-trp_fighting_uruk_hai_warrior_pl|Harcias uruk-hai harcosok
-trp_fighting_uruk_hai_champion|Harcias uruk-hai bajnok
-trp_fighting_uruk_hai_champion_pl|Harcias uruk-hai bajnokok
-trp_uruk_hai_pikeman|Uruk-hai pikás
-trp_uruk_hai_pikeman_pl|Uruk-hai pikások
-trp_fighting_uruk_hai_pikeman|Harcias uruk-hai pikás
-trp_fighting_uruk_hai_pikeman_pl|Harcias uruk-hai pikások
-trp_urukhai_standard_bearer|Uruk-hai zászlóvivő
-trp_urukhai_standard_bearer_pl|Uruk-hai zászlóvivők
+trp_a2_isen_uruk_tracker|Uruk-hai nyomkövető
+trp_a2_isen_uruk_tracker_pl|Uruk-hai nyomkövetők
+trp_a3_isen_large_uruk_tracker|Hatalmas uruk-hai nyomkövető
+trp_a3_isen_large_uruk_tracker_pl|Hatalmas uruk-hai nyomkövetők
+trp_a4_isen_fighting_uruk_tracker|Harcias uruk-hai nyomkövető
+trp_a4_isen_fighting_uruk_tracker_pl|Harcias uruk-hai nyomkövetők
+trp_i6_isen_uruk_berserker|Harcias uruk-hai berzerker
+trp_i6_isen_uruk_berserker_pl|Harcias uruk-hai berzerkerek
+trp_i1_isen_uruk_snaga|Uruk-hai újszülött
+trp_i1_isen_uruk_snaga_pl|Uruk-hai újszülöttek
+trp_i2_isen_uruk|Vasudvardi uruk-hai
+trp_i2_isen_uruk_pl|Vasudvardi uruk-haiok
+trp_i3_isen_large_uruk|Vasudvardi hatalmas uruk-hai
+trp_i3_isen_large_uruk_pl|Vasudvardi hatalmas uruk-haiok
+trp_i4_isen_fighting_uruk_warrior|Harcias uruk-hai harcos
+trp_i4_isen_fighting_uruk_warrior_pl|Harcias uruk-hai harcosok
+trp_i5_isen_fighting_uruk_champion|Harcias uruk-hai bajnok
+trp_i5_isen_fighting_uruk_champion_pl|Harcias uruk-hai bajnokok
+trp_i3_isen_uruk_pikeman|Uruk-hai pikás
+trp_i3_isen_uruk_pikeman_pl|Uruk-hai pikások
+trp_i4_isen_fighting_uruk_pikeman|Harcias uruk-hai pikás
+trp_i4_isen_fighting_uruk_pikeman_pl|Harcias uruk-hai pikások
+trp_i5_isen_uruk_standard_bearer|Uruk-hai zászlóvivő
+trp_i5_isen_uruk_standard_bearer_pl|Uruk-hai zászlóvivők
 trp_i1_mordor_uruk_snaga|Mordori uruk snaga
 trp_i1_mordor_uruk_snaga_pl|Mordori uruk snagák
 trp_i2_mordor_uruk|Mordori uruk

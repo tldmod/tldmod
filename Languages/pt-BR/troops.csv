@@ -590,24 +590,24 @@ trp_i5_corsair_master_spearman|Mestre Lanceiro de Umbar
 trp_i5_corsair_master_spearman_pl|Mestres Lanceiros de Umbar
 trp_i5_corsair_master_pikeman|Mestre Piqueiro de Umbar
 trp_i5_corsair_master_pikeman_pl|Mestres Piqueiros de Umbar
-trp_orc_snaga_of_isengard|Orc Snaga de Isengard
-trp_orc_snaga_of_isengard_pl|Orcs Snagas de Isengard
-trp_orc_of_isengard|Orc de Isengard
-trp_orc_of_isengard_pl|Orcs de Isengard
-trp_large_orc_of_isengard|Orc Grande de Isengard
-trp_large_orc_of_isengard_pl|Orcs Grandes de Isengard
-trp_fell_orc_of_isengard|Orc Caído de Isengard
-trp_fell_orc_of_isengard_pl|Orcs Caídos de Isengard
-trp_large_orc_despoiler|Orc Grande Saqueador
-trp_large_orc_despoiler_pl|Orcs Grandes Saqueadores
-trp_fell_orc_despoiler|Orc Caído Saqueador
-trp_fell_orc_despoiler_pl|Orcs Caídos Saqueadores
-trp_wolf_rider_of_isengard|Cavaleiro de Lobo de Isengard
-trp_wolf_rider_of_isengard_pl|Cavaleiros de Lobo de Isengard
-trp_warg_rider_of_isengard|Cavaleiro de Warg de Isengard
-trp_warg_rider_of_isengard_pl|Cavaleiros de Warg de Isengard
-trp_white_hand_rider|Cavaleiro da Mão Branca
-trp_white_hand_rider_pl|Cavaleiros da Mão Branca
+trp_i1_isen_orc_snaga|Orc Snaga de Isengard
+trp_i1_isen_orc_snaga_pl|Orcs Snagas de Isengard
+trp_i2_isen_orc|Orc de Isengard
+trp_i2_isen_orc_pl|Orcs de Isengard
+trp_i3_isen_large_orc|Orc Grande de Isengard
+trp_i3_isen_large_orc_pl|Orcs Grandes de Isengard
+trp_i4_isen_fell_orc|Orc Caído de Isengard
+trp_i4_isen_fell_orc_pl|Orcs Caídos de Isengard
+trp_i3_isen_large_orc_despoiler|Orc Grande Saqueador
+trp_i3_isen_large_orc_despoiler_pl|Orcs Grandes Saqueadores
+trp_i4_isen_fell_orc_despoiler|Orc Caído Saqueador
+trp_i4_isen_fell_orc_despoiler_pl|Orcs Caídos Saqueadores
+trp_ac2_isen_wolf_rider|Cavaleiro de Lobo de Isengard
+trp_ac2_isen_wolf_rider_pl|Cavaleiros de Lobo de Isengard
+trp_ac3_isen_warg_rider|Cavaleiro de Warg de Isengard
+trp_ac3_isen_warg_rider_pl|Cavaleiros de Warg de Isengard
+trp_ac4_isen_white_hand_rider|Cavaleiro da Mão Branca
+trp_ac4_isen_white_hand_rider_pl|Cavaleiros da Mão Branca
 trp_warg_ghost_1b|Warg
 trp_warg_ghost_1b_pl|Wargs
 trp_warg_ghost_1c|Warg
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|Warg blindado
 trp_warg_ghost_a3a_pl|Wargs Blindados
 trp_warg_ghost_h|Warg imenso
 trp_warg_ghost_h_pl|Wargs Imensos
-trp_uruk_hai_tracker|Uruk Hai Rastreador
-trp_uruk_hai_tracker_pl|Uruk Hai Rastreadores
-trp_large_uruk_hai_tracker|Uruk Hai Grande Rastreador
-trp_large_uruk_hai_tracker_pl|Uruk Hai Grandes Rastreadores
-trp_fighting_uruk_hai_tracker|Uruk Hai Lutador Rastreador
-trp_fighting_uruk_hai_tracker_pl|Uruk Hai Lutadores Rastreadores
-trp_fighting_uruk_hai_berserker|Uruk Hai Lutador Berserker
-trp_fighting_uruk_hai_berserker_pl|Uruk Hai Lutadores Berserkers
-trp_uruk_snaga_of_isengard|Uruk Hai Recém Nascido
-trp_uruk_snaga_of_isengard_pl|Uruk Hai Recém Nascidos
-trp_uruk_hai_of_isengard|Uruk Hai de Isengard
-trp_uruk_hai_of_isengard_pl|Uruk Hai de Isengard
-trp_large_uruk_hai_of_isengard|Uruk Hai Grande de Isengard
-trp_large_uruk_hai_of_isengard_pl|Uruk Hai Grandes de Isengard
-trp_fighting_uruk_hai_warrior|Uruk Hai Lutador Guerreiro
-trp_fighting_uruk_hai_warrior_pl|Uruk Hai Lutadores Guerreiros
-trp_fighting_uruk_hai_champion|Uruk Hai Lutador Campeão
-trp_fighting_uruk_hai_champion_pl|Uruk Hai Lutadores Campeões
-trp_uruk_hai_pikeman|Uruk Hai Lanceiro
-trp_uruk_hai_pikeman_pl|Uruk Hai Lanceiros
-trp_fighting_uruk_hai_pikeman|Uruk Hai Lutador Lanceiro
-trp_fighting_uruk_hai_pikeman_pl|Uruk Hai Lutadores Lanceiros
-trp_urukhai_standard_bearer|Uruk Hai Carregador de Estandarte
-trp_urukhai_standard_bearer_pl|Uruk Hai Carregadores de Estandarte
+trp_a2_isen_uruk_tracker|Uruk Hai Rastreador
+trp_a2_isen_uruk_tracker_pl|Uruk Hai Rastreadores
+trp_a3_isen_large_uruk_tracker|Uruk Hai Grande Rastreador
+trp_a3_isen_large_uruk_tracker_pl|Uruk Hai Grandes Rastreadores
+trp_a4_isen_fighting_uruk_tracker|Uruk Hai Lutador Rastreador
+trp_a4_isen_fighting_uruk_tracker_pl|Uruk Hai Lutadores Rastreadores
+trp_i6_isen_uruk_berserker|Uruk Hai Lutador Berserker
+trp_i6_isen_uruk_berserker_pl|Uruk Hai Lutadores Berserkers
+trp_i1_isen_uruk_snaga|Uruk Hai Recém Nascido
+trp_i1_isen_uruk_snaga_pl|Uruk Hai Recém Nascidos
+trp_i2_isen_uruk|Uruk Hai de Isengard
+trp_i2_isen_uruk_pl|Uruk Hai de Isengard
+trp_i3_isen_large_uruk|Uruk Hai Grande de Isengard
+trp_i3_isen_large_uruk_pl|Uruk Hai Grandes de Isengard
+trp_i4_isen_fighting_uruk_warrior|Uruk Hai Lutador Guerreiro
+trp_i4_isen_fighting_uruk_warrior_pl|Uruk Hai Lutadores Guerreiros
+trp_i5_isen_fighting_uruk_champion|Uruk Hai Lutador Campeão
+trp_i5_isen_fighting_uruk_champion_pl|Uruk Hai Lutadores Campeões
+trp_i3_isen_uruk_pikeman|Uruk Hai Lanceiro
+trp_i3_isen_uruk_pikeman_pl|Uruk Hai Lanceiros
+trp_i4_isen_fighting_uruk_pikeman|Uruk Hai Lutador Lanceiro
+trp_i4_isen_fighting_uruk_pikeman_pl|Uruk Hai Lutadores Lanceiros
+trp_i5_isen_uruk_standard_bearer|Uruk Hai Carregador de Estandarte
+trp_i5_isen_uruk_standard_bearer_pl|Uruk Hai Carregadores de Estandarte
 trp_i1_mordor_uruk_snaga|Uruk Snaga de Mordor
 trp_i1_mordor_uruk_snaga_pl|Uruk Snagas de Mordor
 trp_i2_mordor_uruk|Uruk de Mordor

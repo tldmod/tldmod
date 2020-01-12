@@ -590,24 +590,24 @@ trp_i5_corsair_master_spearman|Умбарський майстер спису
 trp_i5_corsair_master_spearman_pl|Умбарські майстри спису
 trp_i5_corsair_master_pikeman|Умбарський майстер піки
 trp_i5_corsair_master_pikeman_pl|Умбарські майстри піки
-trp_orc_snaga_of_isengard|Орк-Снага Ізенгарду
-trp_orc_snaga_of_isengard_pl|Орки-Снаги Ізенгарду
-trp_orc_of_isengard|Орк Ізенгарду
-trp_orc_of_isengard_pl|Орки Ізенгарду
-trp_large_orc_of_isengard|Великий орк Ізенгарду
-trp_large_orc_of_isengard_pl|Великі орки Ізенгарду
-trp_fell_orc_of_isengard|Лютий орк Ізенгарду
-trp_fell_orc_of_isengard_pl|Люті орки Ізенгарду
-trp_large_orc_despoiler|Великий орк-мародер
-trp_large_orc_despoiler_pl|Великі орки-мародери
-trp_fell_orc_despoiler|Лютий орк-мародер
-trp_fell_orc_despoiler_pl|Люті орки-мародери
-trp_wolf_rider_of_isengard|Вовчий вершник Ізенгарду
-trp_wolf_rider_of_isengard_pl|Вовчі вершники Ізенгарду
-trp_warg_rider_of_isengard|Ізенгардський вершник на Варзі
-trp_warg_rider_of_isengard_pl|Ізенгардські вершники на Варзі
-trp_white_hand_rider|Вершник Білої долоні
-trp_white_hand_rider_pl|Вершники Білої долоні
+trp_i1_isen_orc_snaga|Орк-Снага Ізенгарду
+trp_i1_isen_orc_snaga_pl|Орки-Снаги Ізенгарду
+trp_i2_isen_orc|Орк Ізенгарду
+trp_i2_isen_orc_pl|Орки Ізенгарду
+trp_i3_isen_large_orc|Великий орк Ізенгарду
+trp_i3_isen_large_orc_pl|Великі орки Ізенгарду
+trp_i4_isen_fell_orc|Лютий орк Ізенгарду
+trp_i4_isen_fell_orc_pl|Люті орки Ізенгарду
+trp_i3_isen_large_orc_despoiler|Великий орк-мародер
+trp_i3_isen_large_orc_despoiler_pl|Великі орки-мародери
+trp_i4_isen_fell_orc_despoiler|Лютий орк-мародер
+trp_i4_isen_fell_orc_despoiler_pl|Люті орки-мародери
+trp_ac2_isen_wolf_rider|Вовчий вершник Ізенгарду
+trp_ac2_isen_wolf_rider_pl|Вовчі вершники Ізенгарду
+trp_ac3_isen_warg_rider|Ізенгардський вершник на Варзі
+trp_ac3_isen_warg_rider_pl|Ізенгардські вершники на Варзі
+trp_ac4_isen_white_hand_rider|Вершник Білої долоні
+trp_ac4_isen_white_hand_rider_pl|Вершники Білої долоні
 trp_warg_ghost_1b|Варг
 trp_warg_ghost_1b_pl|Варги
 trp_warg_ghost_1c|Варг
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|Броньований варг
 trp_warg_ghost_a3a_pl|Броньовані варги
 trp_warg_ghost_h|Величезний варг
 trp_warg_ghost_h_pl|Величезні варги
-trp_uruk_hai_tracker|Слідопит Урук-Хай
-trp_uruk_hai_tracker_pl|Слідопити Урук-Хайї
-trp_large_uruk_hai_tracker|Великий слідопит Урук-Хай
-trp_large_uruk_hai_tracker_pl|Великі слідопити Урук-Хайї
-trp_fighting_uruk_hai_tracker|Бійцівський слідопит Урук-Хай
-trp_fighting_uruk_hai_tracker_pl|Бійцівські слідопити Урук-Хайї
-trp_fighting_uruk_hai_berserker|Бійцівський Берсерк Урук-Хай
-trp_fighting_uruk_hai_berserker_pl|Бійцівські Берсерки Урук-Хайї
-trp_uruk_snaga_of_isengard|Новонароджений Урук-Хай
-trp_uruk_snaga_of_isengard_pl|Новонароджені Урук-Хайї
-trp_uruk_hai_of_isengard|Урук-Хай Ізенгарду
-trp_uruk_hai_of_isengard_pl|Урук-хайї Ізенгарду
-trp_large_uruk_hai_of_isengard|Великий Урук-Хай Ізенгарду
-trp_large_uruk_hai_of_isengard_pl|Великі Урук-Хайї Ізенгарду
-trp_fighting_uruk_hai_warrior|Бійцівський воїн Урук-Хай
-trp_fighting_uruk_hai_warrior_pl|Бійцівські воїни Урук-Хайї
-trp_fighting_uruk_hai_champion|Непереможний бійцівський Урук-Хай
-trp_fighting_uruk_hai_champion_pl|Непереможні бійцівські Урук-Хайї
-trp_uruk_hai_pikeman|Урук-Хай пікінер
-trp_uruk_hai_pikeman_pl|Урук-Хайї пікінери
-trp_fighting_uruk_hai_pikeman|Бійцівський пікінер Урук-Хай
-trp_fighting_uruk_hai_pikeman_pl|Бійцівські пікінери Урук-Хайї
-trp_urukhai_standard_bearer|Прапороносець Урук-Хай
-trp_urukhai_standard_bearer_pl|Прапороносці Урук-Хайї
+trp_a2_isen_uruk_tracker|Слідопит Урук-Хай
+trp_a2_isen_uruk_tracker_pl|Слідопити Урук-Хайї
+trp_a3_isen_large_uruk_tracker|Великий слідопит Урук-Хай
+trp_a3_isen_large_uruk_tracker_pl|Великі слідопити Урук-Хайї
+trp_a4_isen_fighting_uruk_tracker|Бійцівський слідопит Урук-Хай
+trp_a4_isen_fighting_uruk_tracker_pl|Бійцівські слідопити Урук-Хайї
+trp_i6_isen_uruk_berserker|Бійцівський Берсерк Урук-Хай
+trp_i6_isen_uruk_berserker_pl|Бійцівські Берсерки Урук-Хайї
+trp_i1_isen_uruk_snaga|Новонароджений Урук-Хай
+trp_i1_isen_uruk_snaga_pl|Новонароджені Урук-Хайї
+trp_i2_isen_uruk|Урук-Хай Ізенгарду
+trp_i2_isen_uruk_pl|Урук-хайї Ізенгарду
+trp_i3_isen_large_uruk|Великий Урук-Хай Ізенгарду
+trp_i3_isen_large_uruk_pl|Великі Урук-Хайї Ізенгарду
+trp_i4_isen_fighting_uruk_warrior|Бійцівський воїн Урук-Хай
+trp_i4_isen_fighting_uruk_warrior_pl|Бійцівські воїни Урук-Хайї
+trp_i5_isen_fighting_uruk_champion|Непереможний бійцівський Урук-Хай
+trp_i5_isen_fighting_uruk_champion_pl|Непереможні бійцівські Урук-Хайї
+trp_i3_isen_uruk_pikeman|Урук-Хай пікінер
+trp_i3_isen_uruk_pikeman_pl|Урук-Хайї пікінери
+trp_i4_isen_fighting_uruk_pikeman|Бійцівський пікінер Урук-Хай
+trp_i4_isen_fighting_uruk_pikeman_pl|Бійцівські пікінери Урук-Хайї
+trp_i5_isen_uruk_standard_bearer|Прапороносець Урук-Хай
+trp_i5_isen_uruk_standard_bearer_pl|Прапороносці Урук-Хайї
 trp_i1_mordor_uruk_snaga|Урук-Снага Мордору
 trp_i1_mordor_uruk_snaga_pl|Уруки-Снаги Мордору
 trp_i2_mordor_uruk|Урук Мордору

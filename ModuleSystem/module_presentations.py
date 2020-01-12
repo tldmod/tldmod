@@ -4108,7 +4108,7 @@ presentations = [
       (else_try),
         (eq, ":object", "$g_option_evil"),
         (assign, "$intro_presentation_stage", 33),
-        (call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),  
+        (call_script,"script_start_as_one","trp_i1_isen_uruk_snaga"),  
         (jump_to_menu,"mnu_start_as_one"),
         (presentation_set_duration, 0),
       (else_try),

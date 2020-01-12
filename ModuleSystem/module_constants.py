@@ -1178,7 +1178,7 @@ item_warg_begin = itm_warg_1b
 item_warg_end = itm_warg_reward+1
 
 warg_ghost_begin = trp_warg_ghost_1b
-warg_ghost_end = trp_uruk_hai_tracker
+warg_ghost_end = trp_a2_isen_uruk_tracker
 
 trade_goods_begin = itm_human_meat #MV: was itm_smoked_fish
 trade_goods_end = itm_siege_supply
@@ -1353,7 +1353,7 @@ fac_str_guardian = 1700 # was: 1000 # less than this, spawn the guardian party
 faction_init = [
 (fac_gondor  ,4500,mtf_culture_gondor       ,[trp_gondor_lord  ,trp_knight_1_3    ],[trp_i1_gon_levy,     	trp_i2_gon_watchman,       trp_i3_gon_footman,       	trp_i4_gon_swordsman,          	trp_c5_gon_vet_knight, 			trp_a4_gon_archer  	  		 	],[pt_gondor_reinf_a,  pt_gondor_reinf_b,  pt_gondor_reinf_c,  pt_gondor_p_train],  spr_banner_a, icon_mfp_gondor,  [-1,                      trp_i2_gon_watchman,         trp_a4_ithilien_ranger,       trp_i4_gon_swordsman,           trp_i6_gon_tower_swordsman],p_town_minas_tirith,    faction_side_good,theater_SE,p_advcamp_gondor),
 (fac_rohan   ,4950,mtf_culture_rohan_goodmen,[trp_rohan_lord   ,trp_rohan_lord    ],[trp_i1_rohan_youth,      	trp_c2_squire_of_rohan,      trp_c3_rider_of_rohan,         trp_c4_veteran_rider_of_rohan,    trp_c6_rider_guard_of_rohan, 			trp_ac3_skirmisher_of_rohan   	 	],[pt_rohan_reinf_a,   pt_rohan_reinf_b,   pt_rohan_reinf_c,   pt_rohan_p_train],   spr_banner_b, icon_mfp_rohan,   [-1,                      trp_i3_footman_of_rohan,          trp_ac6_skirmisher_guard_of_rohan,   trp_i4_veteran_footman_of_rohan,   trp_c6_king_s_man_of_rohan],         p_town_edoras,          faction_side_good,theater_SW,p_advcamp_rohan),
-(fac_isengard,5500,mtf_culture_orcs         ,[trp_isengard_lord,trp_knight_1_17   ],[trp_orc_snaga_of_isengard,	trp_uruk_hai_of_isengard, 	 trp_large_uruk_hai_of_isengard,trp_fighting_uruk_hai_warrior, trp_white_hand_rider, 					trp_uruk_hai_tracker      		 	],[pt_isengard_reinf_a,pt_isengard_reinf_b,pt_isengard_reinf_c,pt_isengard_p_train],spr_banner_s, icon_mfp_isengard,[trp_orc_of_isengard,     trp_uruk_hai_of_isengard,      trp_uruk_hai_tracker,         trp_fighting_uruk_hai_champion, trp_fighting_uruk_hai_pikeman],   p_town_isengard,        faction_side_hand,theater_SW,p_advcamp_isengard),
+(fac_isengard,5500,mtf_culture_orcs         ,[trp_isengard_lord,trp_knight_1_17   ],[trp_i1_isen_orc_snaga,	trp_i2_isen_uruk, 	 trp_i3_isen_large_uruk,trp_i4_isen_fighting_uruk_warrior, trp_ac4_isen_white_hand_rider, 					trp_a2_isen_uruk_tracker      		 	],[pt_isengard_reinf_a,pt_isengard_reinf_b,pt_isengard_reinf_c,pt_isengard_p_train],spr_banner_s, icon_mfp_isengard,[trp_i2_isen_orc,     trp_i2_isen_uruk,      trp_a2_isen_uruk_tracker,         trp_i5_isen_fighting_uruk_champion, trp_i4_isen_fighting_uruk_pikeman],   p_town_isengard,        faction_side_hand,theater_SW,p_advcamp_isengard),
 (fac_mordor  ,6000,mtf_culture_orcs         ,[trp_mordor_lord  ,trp_knight_2_51   ],[trp_i1_mordor_orc_snaga, 	trp_i2_mordor_orc,           trp_i3_mordor_large_orc,     	trp_i4_mordor_fell_morgul_orc,           trp_c4_mordor_great_warg_rider, 			trp_a2_mordor_orc_archer  		 	],[pt_mordor_reinf_a,  pt_mordor_reinf_b,  pt_mordor_reinf_c,  pt_mordor_p_train],  spr_banner_c, icon_mfp_mordor,  [trp_i1_mordor_orc_snaga, trp_a3_mordor_large_orc_archer,trp_c3_mordor_warg_rider,  trp_i5_mordor_black_uruk,    trp_i3_mordor_uruk_slayer],       p_town_morannon,        faction_side_eye ,theater_SE,p_advcamp_mordor),
 (fac_harad   ,2700,mtf_culture_harad        ,[trp_harad_lord   ,trp_harad_lord    ],[trp_i1_harad_levy,	trp_i3_harad_infantry,          trp_c3_harondor_rider,          	trp_ac4_harondor_horse_archer,  trp_c5_harondor_serpent_knight, 					trp_a4_harad_archer       	   		 	],[pt_harad_reinf_a,   pt_harad_reinf_b,   pt_harad_reinf_c,   -1],                 spr_banner_d, icon_mfp_harad,   [trp_i1_harad_levy,trp_c5_harondor_serpent_knight,        trp_c5_harondor_serpent_knight,       trp_i5_harad_tiger_guard,          trp_i4_harad_spearman],      p_town_harad_camp,      faction_side_eye ,theater_SE,p_advcamp_harad),
 (fac_rhun    ,3500,mtf_culture_evilmen      ,[trp_rhun_lord    ,trp_rhun_lord     ],[trp_i1_rhun_tribesman,      	trp_ac2_rhun_horse_scout,        trp_c3_rhun_swift_horseman,     	trp_ac4_rhun_veteran_horse_archer, trp_c6_rhun_dorwinion_noble, 			trp_ac3_rhun_horse_archer      		 	],[pt_rhun_reinf_a,    pt_rhun_reinf_b,    pt_rhun_reinf_c,    -1],                 spr_banner_f, icon_mfp_rhun,    [trp_i1_rhun_tribesman,      trp_ac4_rhun_veteran_horse_archer, trp_c2_rhun_light_horseman,      trp_i4_rhun_vet_infantry,          trp_c6_rhun_dorwinion_noble],     p_town_rhun_main_camp, faction_side_eye ,theater_N ,p_advcamp_rhun),
@@ -1637,16 +1637,16 @@ center_list = [
 	[icon_mfc_mordor],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med*2, 0, tld_siegable_always),
 # Isengard centers
 (p_town_isengard, [scn_isengard_center, scn_isengard_castle, scn_mordor_prison,scn_mordor_tavern, scn_isengard_arena, scn_isengard_siege,mesh_town_isengard],
-	[trp_barman_isengard, trp_smith_isengard, trp_merchant_isengard, trp_elder_isengard, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
+	[trp_barman_isengard, trp_smith_isengard, trp_merchant_isengard, trp_elder_isengard, pt_isengard_recruits,  trp_isengard_lord,trp_i2_isen_orc,trp_i3_isen_large_orc,trp_a2_isen_uruk_tracker,trp_i2_isen_uruk], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_high, 1, tld_siegable_never),
 (p_town_urukhai_outpost, [scn_uruk_hai_outpost_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_outpost_center_siege, mesh_town_evilcamp],
-	[-1, trp_smith_uoutpost, trp_merchant_uoutpost, trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
+	[-1, trp_smith_uoutpost, trp_merchant_uoutpost, trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_i2_isen_orc,trp_i3_isen_large_orc,trp_a2_isen_uruk_tracker,trp_i2_isen_uruk], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
 (p_town_urukhai_h_camp, [scn_uruk_hai_h_camp_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_h_camp_center_siege, mesh_town_evilcamp],
-	[-1, trp_smith_uhcamp, trp_merchant_uhcamp,trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
+	[-1, trp_smith_uhcamp, trp_merchant_uhcamp,trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_i2_isen_orc,trp_i3_isen_large_orc,trp_a2_isen_uruk_tracker,trp_i2_isen_uruk], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_high, 2, tld_siegable_normal),
 (p_town_urukhai_r_camp, [scn_uruk_hai_r_camp_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_r_camp_center_siege, mesh_town_evilcamp],
-	[-1, trp_smith_urcamp, trp_merchant_urcamp, trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
+	[-1, trp_smith_urcamp, trp_merchant_urcamp, trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_i2_isen_orc,trp_i3_isen_large_orc,trp_a2_isen_uruk_tracker,trp_i2_isen_uruk], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
 # Elf centers
 (p_town_caras_galadhon, [scn_caras_galadhon_center, -1, scn_elf_prison,scn_elf_tavern,scn_elf_arena,scn_caras_galadhon_siege,mesh_town_caras_galadhon],
@@ -1763,7 +1763,7 @@ center_list = [
 	[-1, trp_smith_eastfold, trp_merchant_eastfold, trp_elder_rohan_ac, pt_rohan_recruits, trp_rohan_lord, trp_ac3_skirmisher_of_rohan, trp_c4_lancer_of_rohan, trp_i2_guardsman_of_rohan, trp_i3_footman_of_rohan], 
 	[icon_mfc_rohan],[900],[3,8,4,6,4,5], 0, garrison_limit_med, 3, tld_siegable_always),
 (p_advcamp_isengard, [scn_advcamp_isengard, -1, -1, -1, -1, scn_advcamp_isengard_siege, mesh_town_evilcamp],
-	[-1, trp_smith_urcamp, trp_merchant_urcamp, trp_elder_isengard_ac, pt_isengard_recruits, trp_isengard_lord, trp_orc_of_isengard,trp_large_orc_of_isengard, trp_uruk_hai_tracker, trp_uruk_hai_of_isengard], 
+	[-1, trp_smith_urcamp, trp_merchant_urcamp, trp_elder_isengard_ac, pt_isengard_recruits, trp_isengard_lord, trp_i2_isen_orc,trp_i3_isen_large_orc, trp_a2_isen_uruk_tracker, trp_i2_isen_uruk], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
 (p_advcamp_mordor, [scn_advcamp_mordor, -1, -1, -1, -1, scn_advcamp_mordor_siege, mesh_town_evilcamp],
 	[-1, trp_smith_oscamp, trp_merchant_isengard, trp_elder_mordor_ac, pt_mordor_recruits, trp_mordor_lord, trp_i2_mordor_uruk, trp_i2_mordor_orc, trp_i3_mordor_large_orc, trp_a3_guldur_large_orc_tracker], 

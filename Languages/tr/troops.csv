@@ -590,24 +590,24 @@ trp_i5_corsair_master_spearman|Umbar Mızrak Ustası
 trp_i5_corsair_master_spearman_pl|Umbar Mızrak Ustaları
 trp_i5_corsair_master_pikeman|Umbar Kargı Ustası
 trp_i5_corsair_master_pikeman_pl|Umbar Kargı Ustaları
-trp_orc_snaga_of_isengard|Isengardlı Ork Snaga
-trp_orc_snaga_of_isengard_pl|Isengardlı Ork Snagalar
-trp_orc_of_isengard|Isengard Orku
-trp_orc_of_isengard_pl|Isengard Orkları
-trp_large_orc_of_isengard|Büyük Isengard Orku
-trp_large_orc_of_isengard_pl|Büyük Isengard Orkları
-trp_fell_orc_of_isengard|Zalim Isengard Orku
-trp_fell_orc_of_isengard_pl|Zalim Isengard Orkları
-trp_large_orc_despoiler|Büyük Ork Katil
-trp_large_orc_despoiler_pl|Büyük Ork Katilleri
-trp_fell_orc_despoiler|Zalim Ork Katili
-trp_fell_orc_despoiler_pl|Zalim Ork Katilleri
-trp_wolf_rider_of_isengard|Isengard Kurt Binicisi
-trp_wolf_rider_of_isengard_pl|Isengard Kurt Binicileri
-trp_warg_rider_of_isengard|Isengard Warg Binicisi
-trp_warg_rider_of_isengard_pl|Isengard Warg Binicileri
-trp_white_hand_rider|Ak El Binicisi
-trp_white_hand_rider_pl|Ak El Binicileri
+trp_i1_isen_orc_snaga|Isengardlı Ork Snaga
+trp_i1_isen_orc_snaga_pl|Isengardlı Ork Snagalar
+trp_i2_isen_orc|Isengard Orku
+trp_i2_isen_orc_pl|Isengard Orkları
+trp_i3_isen_large_orc|Büyük Isengard Orku
+trp_i3_isen_large_orc_pl|Büyük Isengard Orkları
+trp_i4_isen_fell_orc|Zalim Isengard Orku
+trp_i4_isen_fell_orc_pl|Zalim Isengard Orkları
+trp_i3_isen_large_orc_despoiler|Büyük Ork Katil
+trp_i3_isen_large_orc_despoiler_pl|Büyük Ork Katilleri
+trp_i4_isen_fell_orc_despoiler|Zalim Ork Katili
+trp_i4_isen_fell_orc_despoiler_pl|Zalim Ork Katilleri
+trp_ac2_isen_wolf_rider|Isengard Kurt Binicisi
+trp_ac2_isen_wolf_rider_pl|Isengard Kurt Binicileri
+trp_ac3_isen_warg_rider|Isengard Warg Binicisi
+trp_ac3_isen_warg_rider_pl|Isengard Warg Binicileri
+trp_ac4_isen_white_hand_rider|Ak El Binicisi
+trp_ac4_isen_white_hand_rider_pl|Ak El Binicileri
 trp_warg_ghost_1b|Binek Kurt
 trp_warg_ghost_1b_pl|Warglar
 trp_warg_ghost_1c|Binek Kurt
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|Zırhlı Binek Kurt
 trp_warg_ghost_a3a_pl|Zırhlı Warglar 
 trp_warg_ghost_h|Dev Kurt
 trp_warg_ghost_h_pl|Dev Warglar
-trp_uruk_hai_tracker|Uruk Hai İz Sürücüsü
-trp_uruk_hai_tracker_pl|Uruk Hai İz Sürücüleri
-trp_large_uruk_hai_tracker|Büyük Uruk Hai İz Sürücüsü
-trp_large_uruk_hai_tracker_pl|Büyük Uruk Hai İz Sürücüleri
-trp_fighting_uruk_hai_tracker|Savaşçı Uruk Hai İz Sürücüsü
-trp_fighting_uruk_hai_tracker_pl|Savaşçı Uruk Hai İz Sürücüleri
-trp_fighting_uruk_hai_berserker|Vahşi Uruk Hai Savaşçısı
-trp_fighting_uruk_hai_berserker_pl|Vahşi Uruk Hai Savaşçıları
-trp_uruk_snaga_of_isengard|Uruk Hai Yeni dogmuş
-trp_uruk_snaga_of_isengard_pl|Uruk Hai Yeni doganlar
-trp_uruk_hai_of_isengard|Isengard Uruk Haisi
-trp_uruk_hai_of_isengard_pl|Isengard Uruk Haileri
-trp_large_uruk_hai_of_isengard|Büyük Isengard Uruk Haisi
-trp_large_uruk_hai_of_isengard_pl|Büyük Isengard Uruk Haileri
-trp_fighting_uruk_hai_warrior|Kavgacı Uruk Hai Savaşçısı
-trp_fighting_uruk_hai_warrior_pl|Kavgacı Uruk Hai Savaşçıları
-trp_fighting_uruk_hai_champion|Kavgacı Uruk Hai Şampiyonu
-trp_fighting_uruk_hai_champion_pl|Kavgacı Uruk Hai Şampiyonları
-trp_uruk_hai_pikeman|Uruk Hai Kargıcısı
-trp_uruk_hai_pikeman_pl|Uruk Hai Kargıcıları
-trp_fighting_uruk_hai_pikeman|Kavgacı Uruk Hai Kargıcısı
-trp_fighting_uruk_hai_pikeman_pl|Kavgacı Uruk Hai Kargıcıları
-trp_urukhai_standard_bearer|Uruk Hai Bayrak Taşıyıcısı
-trp_urukhai_standard_bearer_pl|Uruk Hai Bayrak Taşıyıcıları
+trp_a2_isen_uruk_tracker|Uruk Hai İz Sürücüsü
+trp_a2_isen_uruk_tracker_pl|Uruk Hai İz Sürücüleri
+trp_a3_isen_large_uruk_tracker|Büyük Uruk Hai İz Sürücüsü
+trp_a3_isen_large_uruk_tracker_pl|Büyük Uruk Hai İz Sürücüleri
+trp_a4_isen_fighting_uruk_tracker|Savaşçı Uruk Hai İz Sürücüsü
+trp_a4_isen_fighting_uruk_tracker_pl|Savaşçı Uruk Hai İz Sürücüleri
+trp_i6_isen_uruk_berserker|Vahşi Uruk Hai Savaşçısı
+trp_i6_isen_uruk_berserker_pl|Vahşi Uruk Hai Savaşçıları
+trp_i1_isen_uruk_snaga|Uruk Hai Yeni dogmuş
+trp_i1_isen_uruk_snaga_pl|Uruk Hai Yeni doganlar
+trp_i2_isen_uruk|Isengard Uruk Haisi
+trp_i2_isen_uruk_pl|Isengard Uruk Haileri
+trp_i3_isen_large_uruk|Büyük Isengard Uruk Haisi
+trp_i3_isen_large_uruk_pl|Büyük Isengard Uruk Haileri
+trp_i4_isen_fighting_uruk_warrior|Kavgacı Uruk Hai Savaşçısı
+trp_i4_isen_fighting_uruk_warrior_pl|Kavgacı Uruk Hai Savaşçıları
+trp_i5_isen_fighting_uruk_champion|Kavgacı Uruk Hai Şampiyonu
+trp_i5_isen_fighting_uruk_champion_pl|Kavgacı Uruk Hai Şampiyonları
+trp_i3_isen_uruk_pikeman|Uruk Hai Kargıcısı
+trp_i3_isen_uruk_pikeman_pl|Uruk Hai Kargıcıları
+trp_i4_isen_fighting_uruk_pikeman|Kavgacı Uruk Hai Kargıcısı
+trp_i4_isen_fighting_uruk_pikeman_pl|Kavgacı Uruk Hai Kargıcıları
+trp_i5_isen_uruk_standard_bearer|Uruk Hai Bayrak Taşıyıcısı
+trp_i5_isen_uruk_standard_bearer_pl|Uruk Hai Bayrak Taşıyıcıları
 trp_i1_mordor_uruk_snaga|Mordor'lu Uruk Snaga
 trp_i1_mordor_uruk_snaga_pl|Mordor'lu Uruk Snagalar
 trp_i2_mordor_uruk|Mordor'lu Uruk

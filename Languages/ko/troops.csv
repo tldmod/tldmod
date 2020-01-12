@@ -590,24 +590,24 @@ trp_a5_corsair_master_assassin_pl|해적 암살자
 ; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
 ; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
 ; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
-trp_orc_snaga_of_isengard|아이센가드 오르크 노예
-trp_orc_snaga_of_isengard_pl|아이센가드 오르크 노예
-trp_orc_of_isengard|아이센가드 오르크
-trp_orc_of_isengard_pl|아이센가드 오르크
-trp_large_orc_of_isengard|아이센가드 큰 오르크
-trp_large_orc_of_isengard_pl|아이센가드 큰 오르크
-trp_fell_orc_of_isengard|아이센가드 포악한 오르크
-trp_fell_orc_of_isengard_pl|아이센가드 포악한 오르크
-trp_large_orc_despoiler|큰 오르크 약탈자
-trp_large_orc_despoiler_pl|큰 오르크 약탈자
-trp_fell_orc_despoiler|포악한 오르크  약탈자
-trp_fell_orc_despoiler_pl|포악한 오르크 약탈자
-trp_wolf_rider_of_isengard|아이센가드 오크 늑대기수
-trp_wolf_rider_of_isengard_pl|아이센가드 오크 늑대기수
-trp_warg_rider_of_isengard|아이센가드 오크 와르그기수
-trp_warg_rider_of_isengard_pl|아이센가드 오크 와르그기수
-trp_white_hand_rider|사루만의 기수
-trp_white_hand_rider_pl|사루만의 기수
+trp_i1_isen_orc_snaga|아이센가드 오르크 노예
+trp_i1_isen_orc_snaga_pl|아이센가드 오르크 노예
+trp_i2_isen_orc|아이센가드 오르크
+trp_i2_isen_orc_pl|아이센가드 오르크
+trp_i3_isen_large_orc|아이센가드 큰 오르크
+trp_i3_isen_large_orc_pl|아이센가드 큰 오르크
+trp_i4_isen_fell_orc|아이센가드 포악한 오르크
+trp_i4_isen_fell_orc_pl|아이센가드 포악한 오르크
+trp_i3_isen_large_orc_despoiler|큰 오르크 약탈자
+trp_i3_isen_large_orc_despoiler_pl|큰 오르크 약탈자
+trp_i4_isen_fell_orc_despoiler|포악한 오르크  약탈자
+trp_i4_isen_fell_orc_despoiler_pl|포악한 오르크 약탈자
+trp_ac2_isen_wolf_rider|아이센가드 오크 늑대기수
+trp_ac2_isen_wolf_rider_pl|아이센가드 오크 늑대기수
+trp_ac3_isen_warg_rider|아이센가드 오크 와르그기수
+trp_ac3_isen_warg_rider_pl|아이센가드 오크 와르그기수
+trp_ac4_isen_white_hand_rider|사루만의 기수
+trp_ac4_isen_white_hand_rider_pl|사루만의 기수
 trp_warg_ghost_1b|와르그
 trp_warg_ghost_1b_pl|와르그
 trp_warg_ghost_1c|와르그
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|무장 와르그
 trp_warg_ghost_a3a_pl|무장 와르그
 trp_warg_ghost_h|거대 와르그
 trp_warg_ghost_h_pl|거대 와르그
-trp_uruk_hai_tracker|우루크 하이 길잡이
-trp_uruk_hai_tracker_pl|우루크 하이 길잡이
-trp_large_uruk_hai_tracker|큰 우루크 하이 길잡이
-trp_large_uruk_hai_tracker_pl|큰 우르크 하이 길잡이
-trp_fighting_uruk_hai_tracker|우루크 하이 전투 길잡이
-trp_fighting_uruk_hai_tracker_pl|우루크 하이 전투 길잡이
-trp_fighting_uruk_hai_berserker|우루크 하이 광전사
-trp_fighting_uruk_hai_berserker_pl|우루크 하이 광전사
-trp_uruk_snaga_of_isengard|아이센가드 우루크 하이 새끼
-trp_uruk_snaga_of_isengard_pl|아이센가드 우루크 하이 새끼
-trp_uruk_hai_of_isengard|아이센가드 우루크 하이
-trp_uruk_hai_of_isengard_pl|아이센가드 우루크 하이
-trp_large_uruk_hai_of_isengard|아이센가드 큰 우루크 하이
-trp_large_uruk_hai_of_isengard_pl|아이센가드 큰 우루크 하이
-trp_fighting_uruk_hai_warrior|우루크 하이 전사
-trp_fighting_uruk_hai_warrior_pl|우루크 하이 전사
-trp_fighting_uruk_hai_champion|우루크 하이 챔피언
-trp_fighting_uruk_hai_champion_pl|우루크 하이 챔피언
-trp_uruk_hai_pikeman|우루크 하이 장창병
-trp_uruk_hai_pikeman_pl|우루크 하이 장창병
-trp_fighting_uruk_hai_pikeman|우루크 하이 전투 장창병
-trp_fighting_uruk_hai_pikeman_pl|우루크 하이 전투 장창병
-trp_urukhai_standard_bearer|우루크 하이 지도자
-trp_urukhai_standard_bearer_pl|우루크 하이 지도자
+trp_a2_isen_uruk_tracker|우루크 하이 길잡이
+trp_a2_isen_uruk_tracker_pl|우루크 하이 길잡이
+trp_a3_isen_large_uruk_tracker|큰 우루크 하이 길잡이
+trp_a3_isen_large_uruk_tracker_pl|큰 우르크 하이 길잡이
+trp_a4_isen_fighting_uruk_tracker|우루크 하이 전투 길잡이
+trp_a4_isen_fighting_uruk_tracker_pl|우루크 하이 전투 길잡이
+trp_i6_isen_uruk_berserker|우루크 하이 광전사
+trp_i6_isen_uruk_berserker_pl|우루크 하이 광전사
+trp_i1_isen_uruk_snaga|아이센가드 우루크 하이 새끼
+trp_i1_isen_uruk_snaga_pl|아이센가드 우루크 하이 새끼
+trp_i2_isen_uruk|아이센가드 우루크 하이
+trp_i2_isen_uruk_pl|아이센가드 우루크 하이
+trp_i3_isen_large_uruk|아이센가드 큰 우루크 하이
+trp_i3_isen_large_uruk_pl|아이센가드 큰 우루크 하이
+trp_i4_isen_fighting_uruk_warrior|우루크 하이 전사
+trp_i4_isen_fighting_uruk_warrior_pl|우루크 하이 전사
+trp_i5_isen_fighting_uruk_champion|우루크 하이 챔피언
+trp_i5_isen_fighting_uruk_champion_pl|우루크 하이 챔피언
+trp_i3_isen_uruk_pikeman|우루크 하이 장창병
+trp_i3_isen_uruk_pikeman_pl|우루크 하이 장창병
+trp_i4_isen_fighting_uruk_pikeman|우루크 하이 전투 장창병
+trp_i4_isen_fighting_uruk_pikeman_pl|우루크 하이 전투 장창병
+trp_i5_isen_uruk_standard_bearer|우루크 하이 지도자
+trp_i5_isen_uruk_standard_bearer_pl|우루크 하이 지도자
 trp_i1_mordor_uruk_snaga|모르도르 우루크 노예
 trp_i1_mordor_uruk_snaga_pl|모르도르 우루크 노예
 trp_i2_mordor_uruk|모르도르 우루크

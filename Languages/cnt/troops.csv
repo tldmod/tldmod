@@ -590,24 +590,24 @@ trp_i5_corsair_master_spearman|昂 巴 長 槍 大 師
 trp_i5_corsair_master_spearman_pl|昂 巴 長 槍 大 師
 trp_i5_corsair_master_pikeman|昂 巴 長 矛 大 師
 trp_i5_corsair_master_pikeman_pl|昂 巴 長 矛 大 師
-trp_orc_snaga_of_isengard|艾 辛 格 半 獸 人 新 兵
-trp_orc_snaga_of_isengard_pl|艾 辛 格 半 獸 人 新 兵
-trp_orc_of_isengard|艾 辛 格 半 獸 人 
-trp_orc_of_isengard_pl|艾 辛 格 半 獸 人 
-trp_large_orc_of_isengard|艾 辛 格 大 型 半 獸 人 
-trp_large_orc_of_isengard_pl|艾 辛 格 大 型 半 獸 人 
-trp_fell_orc_of_isengard|艾 辛 格 殘 暴 半 獸 人 
-trp_fell_orc_of_isengard_pl|艾 辛 格 殘 暴 半 獸 人 
-trp_large_orc_despoiler|大 型 半 獸 人 掠 奪 者 
-trp_large_orc_despoiler_pl|大 型 半 獸 人 掠 奪 者 
-trp_fell_orc_despoiler|殘 暴 半 獸 人 掠 奪 者 
-trp_fell_orc_despoiler_pl|殘 暴 半 獸 人 掠 奪 者 
-trp_wolf_rider_of_isengard|艾 辛 格 狼 騎 手
-trp_wolf_rider_of_isengard_pl|艾 辛 格 狼 騎 手
-trp_warg_rider_of_isengard|艾 辛 格 座 狼 騎 手
-trp_warg_rider_of_isengard_pl|艾 辛 格 座 狼 騎 手
-trp_white_hand_rider|白 掌 騎 手
-trp_white_hand_rider_pl|白 掌 騎 手
+trp_i1_isen_orc_snaga|艾 辛 格 半 獸 人 新 兵
+trp_i1_isen_orc_snaga_pl|艾 辛 格 半 獸 人 新 兵
+trp_i2_isen_orc|艾 辛 格 半 獸 人 
+trp_i2_isen_orc_pl|艾 辛 格 半 獸 人 
+trp_i3_isen_large_orc|艾 辛 格 大 型 半 獸 人 
+trp_i3_isen_large_orc_pl|艾 辛 格 大 型 半 獸 人 
+trp_i4_isen_fell_orc|艾 辛 格 殘 暴 半 獸 人 
+trp_i4_isen_fell_orc_pl|艾 辛 格 殘 暴 半 獸 人 
+trp_i3_isen_large_orc_despoiler|大 型 半 獸 人 掠 奪 者 
+trp_i3_isen_large_orc_despoiler_pl|大 型 半 獸 人 掠 奪 者 
+trp_i4_isen_fell_orc_despoiler|殘 暴 半 獸 人 掠 奪 者 
+trp_i4_isen_fell_orc_despoiler_pl|殘 暴 半 獸 人 掠 奪 者 
+trp_ac2_isen_wolf_rider|艾 辛 格 狼 騎 手
+trp_ac2_isen_wolf_rider_pl|艾 辛 格 狼 騎 手
+trp_ac3_isen_warg_rider|艾 辛 格 座 狼 騎 手
+trp_ac3_isen_warg_rider_pl|艾 辛 格 座 狼 騎 手
+trp_ac4_isen_white_hand_rider|白 掌 騎 手
+trp_ac4_isen_white_hand_rider_pl|白 掌 騎 手
 trp_warg_ghost_1b|座 狼 
 trp_warg_ghost_1b_pl|座 狼 
 trp_warg_ghost_1c|座 狼 
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|披 甲 座 狼
 trp_warg_ghost_a3a_pl|披 甲 座 狼 
 trp_warg_ghost_h|巨 型 座 狼 
 trp_warg_ghost_h_pl|巨 型 座 狼 
-trp_uruk_hai_tracker|強 獸 人 追 蹤 者 
-trp_uruk_hai_tracker_pl|強 獸 人 追 蹤 者 
-trp_large_uruk_hai_tracker|大 型 強 獸 人 追 蹤 者 
-trp_large_uruk_hai_tracker_pl|大 型 強 獸 人 追 蹤 者 
-trp_fighting_uruk_hai_tracker|戰 鬥 強 獸 人 追 蹤 者 
-trp_fighting_uruk_hai_tracker_pl|戰 鬥 強 獸 人 追 蹤 者 
-trp_fighting_uruk_hai_berserker|戰 鬥 強 獸 人 狂 戰 士 
-trp_fighting_uruk_hai_berserker_pl|戰 鬥 強 獸 人 狂 戰 士 
-trp_uruk_snaga_of_isengard|新 生 強 獸 人 
-trp_uruk_snaga_of_isengard_pl|新 生 強 獸 人 
-trp_uruk_hai_of_isengard|艾 辛 格 強 獸 人 
-trp_uruk_hai_of_isengard_pl|艾 辛 格 強 獸 人 
-trp_large_uruk_hai_of_isengard|艾 辛 格 大 型 強 獸 人 
-trp_large_uruk_hai_of_isengard_pl|艾 辛 格 大 型 強 獸 人 
-trp_fighting_uruk_hai_warrior|戰 鬥 強 獸 人 戰 士 
-trp_fighting_uruk_hai_warrior_pl|戰 鬥 強 獸 人 戰 士 
-trp_fighting_uruk_hai_champion|戰 鬥 強 獸 人 冠 軍
-trp_fighting_uruk_hai_champion_pl|戰 鬥 強 獸 人 冠 軍
-trp_uruk_hai_pikeman|強 獸 人 長 矛 兵 
-trp_uruk_hai_pikeman_pl|強 獸 人 長 矛 兵 
-trp_fighting_uruk_hai_pikeman|戰 鬥 強 獸 人 長 矛 兵 
-trp_fighting_uruk_hai_pikeman_pl|戰 鬥 強 獸 人 長 矛 兵 
-trp_urukhai_standard_bearer|強 獸 人 掌 旗 手 
-trp_urukhai_standard_bearer_pl|強 獸 人 掌 旗 手 
+trp_a2_isen_uruk_tracker|強 獸 人 追 蹤 者 
+trp_a2_isen_uruk_tracker_pl|強 獸 人 追 蹤 者 
+trp_a3_isen_large_uruk_tracker|大 型 強 獸 人 追 蹤 者 
+trp_a3_isen_large_uruk_tracker_pl|大 型 強 獸 人 追 蹤 者 
+trp_a4_isen_fighting_uruk_tracker|戰 鬥 強 獸 人 追 蹤 者 
+trp_a4_isen_fighting_uruk_tracker_pl|戰 鬥 強 獸 人 追 蹤 者 
+trp_i6_isen_uruk_berserker|戰 鬥 強 獸 人 狂 戰 士 
+trp_i6_isen_uruk_berserker_pl|戰 鬥 強 獸 人 狂 戰 士 
+trp_i1_isen_uruk_snaga|新 生 強 獸 人 
+trp_i1_isen_uruk_snaga_pl|新 生 強 獸 人 
+trp_i2_isen_uruk|艾 辛 格 強 獸 人 
+trp_i2_isen_uruk_pl|艾 辛 格 強 獸 人 
+trp_i3_isen_large_uruk|艾 辛 格 大 型 強 獸 人 
+trp_i3_isen_large_uruk_pl|艾 辛 格 大 型 強 獸 人 
+trp_i4_isen_fighting_uruk_warrior|戰 鬥 強 獸 人 戰 士 
+trp_i4_isen_fighting_uruk_warrior_pl|戰 鬥 強 獸 人 戰 士 
+trp_i5_isen_fighting_uruk_champion|戰 鬥 強 獸 人 冠 軍
+trp_i5_isen_fighting_uruk_champion_pl|戰 鬥 強 獸 人 冠 軍
+trp_i3_isen_uruk_pikeman|強 獸 人 長 矛 兵 
+trp_i3_isen_uruk_pikeman_pl|強 獸 人 長 矛 兵 
+trp_i4_isen_fighting_uruk_pikeman|戰 鬥 強 獸 人 長 矛 兵 
+trp_i4_isen_fighting_uruk_pikeman_pl|戰 鬥 強 獸 人 長 矛 兵 
+trp_i5_isen_uruk_standard_bearer|強 獸 人 掌 旗 手 
+trp_i5_isen_uruk_standard_bearer_pl|強 獸 人 掌 旗 手 
 trp_i1_mordor_uruk_snaga|魔 多 半 獸 人 新 兵 
 trp_i1_mordor_uruk_snaga_pl|魔 多 半 獸 人 新 兵 
 trp_i2_mordor_uruk|魔 多 半 獸 人 

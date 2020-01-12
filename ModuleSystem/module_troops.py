@@ -1210,27 +1210,27 @@ troops = [
 0,0,0,0],
 
 #Isengard
-["orc_snaga_of_isengard","Orc_Snaga_of_Isengard","Orc_Snagas_of_Isengard",tf_orc| tf_no_capture_alive,0,0,fac_isengard,
+["i1_isen_orc_snaga","i1_isen_orc_snaga","Orc_Snagas_of_Isengard",tf_orc| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_coif_bad,itm_orc_coif,itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_wood_club,itm_orc_simple_spear,itm_orc_slasher,itm_orc_axe,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       attr_orc_tier_1,wp_orc_tier_1,knows_athletics_3|knows_power_throw_1|knows_power_strike_1,orc_face1,orc_face2],
-["orc_of_isengard","Orc_of_Isengard","Orcs_of_Isengard",tf_orc| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+["i2_isen_orc","i2_isen_orc","Orcs_of_Isengard",tf_orc| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_ragwrap,itm_isen_orc_armor_c,itm_isen_orc_armor_d,itm_isen_orc_helm_a,itm_isen_orc_helm_b,itm_isen_orc_shield_a,itm_orc_slasher,itm_orc_falchion,itm_orc_machete,itm_isengard_sword,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_wood_club,itm_orc_simple_spear,itm_orc_bill,itm_orc_bill,itm_orc_axe,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_4|knows_power_throw_2|knows_power_strike_3,orc_face2,orc_face3],
-["large_orc_of_isengard","Large_Orc_of_Isengard","Large_Orcs_of_Isengard",tf_orc| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+["i3_isen_large_orc","i3_isen_large_orc","Large_Orcs_of_Isengard",tf_orc| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_ragwrap,itm_evil_gauntlets_b,itm_isen_orc_armor_e,itm_isen_orc_armor_f,itm_isen_orc_helm_b,itm_leather_gloves,itm_isen_orc_shield_a,itm_isen_orc_shield_b,itm_orc_slasher,itm_orc_falchion,itm_orc_sabre,itm_orc_machete,itm_isengard_sword,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_wood_club,itm_orc_simple_spear,itm_orc_bill,itm_orc_axe,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_throw_2|knows_power_strike_4,orc_face4,orc_face5],
-["fell_orc_of_isengard","Fell_Orc_of_Isengard","Fell_Orcs_of_Isengard",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
+["i4_isen_fell_orc","i4_isen_fell_orc","Fell_Orcs_of_Isengard",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_greaves,itm_evil_gauntlets_b,itm_isen_orc_armor_g,itm_isen_orc_helm_c,itm_isen_orc_shield_a,itm_isen_orc_shield_b,itm_orc_club_c,itm_orc_falchion,itm_orc_sabre,itm_orc_machete,itm_isengard_sword,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_orc_simple_spear,itm_orc_bill,itm_orc_bill,itm_orc_axe,],
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_6|knows_power_throw_3|knows_power_strike_4,orc_face6,orc_face7],
-["large_orc_despoiler","Large_Orc_Despoiler","Large_Orc_Despoilers",tf_orc| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+["i3_isen_large_orc_despoiler","i3_isen_large_orc_despoiler","i3_isen_large_orc_despoilers",tf_orc| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_greaves,itm_evil_gauntlets_b,itm_isen_orc_armor_e,itm_isen_orc_armor_f,itm_isen_orc_helm_b,itm_isengard_mallet,itm_orc_sledgehammer,itm_isengard_hammer,itm_twohand_wood_club,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_6|knows_power_strike_4,orc_face8,orc_face9],
-["fell_orc_despoiler","Fell_Orc_Despoiler","Fell_Orc_Despoilers",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
+["i4_isen_fell_orc_despoiler","i4_isen_fell_orc_despoiler","i4_isen_fell_orc_despoilers",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_greaves,itm_evil_gauntlets_b,itm_isen_orc_armor_g,itm_isen_orc_helm_c,itm_isengard_mallet,itm_orc_sledgehammer,itm_isengard_hammer,itm_twohand_wood_club,],
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_7|knows_power_strike_5,orc_face3,orc_face6],
-["wolf_rider_of_isengard","Wolf_Rider_of_Isengard","Wolf_Riders_of_Isengard",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_orc_throwing_arrow,itm_twohand_wood_club,itm_orc_falchion,itm_warg_1d,itm_warg_1b,itm_warg_1c,],attr_orc_tier_2,wp_orc_tier_2,knows_riding_3|knows_power_throw_2|knows_power_strike_2|knows_horse_archery_2,orc_face7,orc_face4],
-["warg_rider_of_isengard","Warg_Rider_of_Isengard","Warg_Riders_of_Isengard",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_uruk_ragwrap,itm_orc_throwing_arrow,itm_orc_scimitar,itm_orc_machete,itm_warg_1d,itm_warg_1b,itm_warg_1c,],attr_orc_tier_3,wp_orc_tier_3,knows_riding_3|knows_power_throw_3|knows_power_strike_3|knows_horse_archery_4,orc_face5,orc_face8],
-["white_hand_rider","White_Hand_Rider","White_Hand_Riders",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_uruk_ragwrap,itm_orc_throwing_arrow,itm_orc_scimitar,itm_orc_falchion,itm_orc_sabre,itm_wargarmored_1b, itm_wargarmored_1c,],attr_orc_tier_4,wp_orc_tier_4,knows_riding_5|knows_power_throw_5|knows_power_strike_4|knows_horse_archery_5,orc_face7,orc_face8],
+["ac2_isen_wolf_rider","ac2_isen_wolf_rider","Wolf_Riders_of_Isengard",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_orc_throwing_arrow,itm_twohand_wood_club,itm_orc_falchion,itm_warg_1d,itm_warg_1b,itm_warg_1c,],attr_orc_tier_2,wp_orc_tier_2,knows_riding_3|knows_power_throw_2|knows_power_strike_2|knows_horse_archery_2,orc_face7,orc_face4],
+["ac3_isen_warg_rider","ac3_isen_warg_rider","Warg_Riders_of_Isengard",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_uruk_ragwrap,itm_orc_throwing_arrow,itm_orc_scimitar,itm_orc_machete,itm_warg_1d,itm_warg_1b,itm_warg_1c,],attr_orc_tier_3,wp_orc_tier_3,knows_riding_3|knows_power_throw_3|knows_power_strike_3|knows_horse_archery_4,orc_face5,orc_face8],
+["ac4_isen_white_hand_rider","ac4_isen_white_hand_rider","ac4_isen_white_hand_riders",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_uruk_ragwrap,itm_orc_throwing_arrow,itm_orc_scimitar,itm_orc_falchion,itm_orc_sabre,itm_wargarmored_1b, itm_wargarmored_1c,],attr_orc_tier_4,wp_orc_tier_4,knows_riding_5|knows_power_throw_5|knows_power_strike_4|knows_horse_archery_5,orc_face7,orc_face8],
 
 # "ghost" warg riders:(invisible riders for lone wargs) number and order match warg items
 ["warg_ghost_1b","Warg","Wargs",tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots |tfg_polearm| tf_no_capture_alive ,0,0,fac_isengard,
@@ -1264,36 +1264,19 @@ troops = [
     
 #Isengard
 # first non ghost-warg
-["uruk_hai_tracker","Uruk_Hai_Tracker","Uruk_Hai_Trackers",tf_urukhai| tf_mounted| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_heavy_d,itm_uruk_ragwrap,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_axe,],attr_tier_2,wp_tier_bow_2,knows_athletics_3|knows_power_draw_2|knows_power_strike_1,uruk_hai_face1,uruk_hai_face2],
-["large_uruk_hai_tracker","Large_Uruk_Hai_Tracker","Large_Uruk_Hai_Trackers",tf_urukhai| tf_mounted| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_e,itm_isen_uruk_heavy_d,itm_isen_uruk_heavy_e,itm_uruk_tracker_boots,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_axe,],attr_evil_tier_3,wp_tier_bow_4,knows_athletics_4|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_2,uruk_hai_face1,uruk_hai_face2],
-["fighting_uruk_hai_tracker","Fighting_Uruk_Hai_Tracker","Fighting_Uruk_Hai_Trackers",tf_urukhai| tf_mounted| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_f,itm_isen_uruk_heavy_e,itm_uruk_tracker_boots,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_sword,],attr_evil_tier_4,wp_tier_bow_5,knows_athletics_4|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_5,uruk_hai_face1,uruk_hai_face2],
-["fighting_uruk_hai_berserker","Fighting_Uruk_Hai_Berserker","Fighting_Uruk_Hai_Berserkers",tf_urukhai| tf_mounted| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_uruk_chain_greaves,itm_isen_uruk_helm_f,itm_isen_uruk_helm_e,itm_evil_gauntlets_a,itm_isen_uruk_light_a,itm_isen_uruk_light_b,itm_isengard_heavy_axe,itm_isengard_mallet,itm_isengard_sword,itm_isengard_halberd,itm_isengard_heavy_sword,],
-      attr_evil_tier_6,wp_tier_6,knows_athletics_7|knows_power_strike_6|knows_ironflesh_10,uruk_hai_face1,uruk_hai_face2],
-["uruk_snaga_of_isengard","Uruk_Hai_Newborn","Uruk_Hai_Newborns",tf_urukhai| tf_mounted| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_uruk_ragwrap,itm_isen_uruk_light_a,itm_isengard_axe,itm_isengard_sword,],
-      attr_evil_tier_1,wp_tier_1,knows_athletics_1|knows_power_strike_1|knows_ironflesh_2,uruk_hai_face1,uruk_hai_face2],
-["uruk_hai_of_isengard","Uruk_Hai_of_Isengard","Uruk_Hai_of_Isengard",tf_urukhai| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_uruk_ragwrap,itm_isen_uruk_helm_a,itm_isen_uruk_light_a,itm_isengard_axe,itm_isengard_spear,itm_isengard_sword,],
-      attr_evil_tier_2,wp_tier_2,knows_athletics_2|knows_power_strike_2|knows_ironflesh_3,uruk_hai_face1,uruk_hai_face2],
-["large_uruk_hai_of_isengard","Large_Uruk_Hai_of_Isengard","Large_Uruk_Hai_of_Isengard",tf_urukhai| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_uruk_chain_greaves,itm_evil_gauntlets_b,itm_isen_uruk_helm_b,itm_isen_uruk_heavy_a,itm_isengard_spear,itm_isengard_heavy_axe,itm_isengard_sword,],
-      attr_evil_tier_3,wp_tier_3,knows_athletics_3|knows_power_strike_3|knows_ironflesh_4,uruk_hai_face1,uruk_hai_face2],
-["fighting_uruk_hai_warrior","Fighting_Uruk_Hai_Warrior","Fighting_Uruk_Hai_Warriors",tf_urukhai|tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_c,itm_isen_uruk_heavy_c,itm_isengard_heavy_axe,itm_isengard_heavy_sword,itm_isen_uruk_shield_b,],
-      attr_evil_tier_4,wp_tier_4,knows_athletics_5|knows_power_strike_5|knows_ironflesh_5,uruk_hai_face1,uruk_hai_face2],
-["fighting_uruk_hai_champion","Fighting_Uruk_Hai_Champion","Fighting_Uruk_Hai_Champions",tf_urukhai|tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_c,itm_isen_uruk_heavy_c,itm_isengard_axe,itm_isen_uruk_shield_b,itm_isengard_hammer,itm_isengard_mallet,itm_isengard_heavy_sword,],
-      attr_evil_tier_5,wp_tier_5,knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,uruk_hai_face1,uruk_hai_face2],
-["uruk_hai_pikeman","Uruk_Hai_Pikeman","Uruk_Hai_Pikemen",tf_urukhai| tf_mounted|tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_uruk_chain_greaves,itm_evil_gauntlets_b,itm_isen_uruk_helm_b,itm_isen_uruk_light_a,itm_isen_uruk_heavy_a,itm_isengard_pike,],
-      attr_evil_tier_3,wp_tier_3,knows_athletics_3|knows_power_strike_3|knows_ironflesh_4,uruk_hai_face1,uruk_hai_face2],
-["fighting_uruk_hai_pikeman","Fighting_Uruk_Hai_Pikeman","Fighting_Uruk_Hai_Pikemen",tf_urukhai|tf_mounted| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_c,itm_isen_uruk_light_d,itm_isengard_pike,itm_isengard_halberd,],
-      attr_evil_tier_4,wp_tier_4,knows_athletics_5|knows_power_strike_5|knows_ironflesh_5,uruk_hai_face1,uruk_hai_face2],
-["urukhai_standard_bearer","Uruk_Hai_Standard_Bearer","Uruk_Hai_Standard_Bearers",tf_urukhai|tf_mounted| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_c,itm_isen_uruk_heavy_c,itm_isengard_banner,],
-      attr_evil_tier_5,wp_tier_5,knows_athletics_2|knows_power_strike_5|knows_ironflesh_10,uruk_hai_face1,uruk_hai_face2],
+["a2_isen_uruk_tracker","Uruk_Hai_Tracker","Uruk_Hai_Trackers",tf_urukhai| tf_mounted| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_heavy_d,itm_uruk_ragwrap,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_axe,],attr_tier_2,wp_tier_bow_2,knows_athletics_4|knows_power_draw_2|knows_power_strike_1,uruk_hai_face1,uruk_hai_face2],
+["a3_isen_large_uruk_tracker","Large_Uruk_Hai_Tracker","Large_Uruk_Hai_Trackers",tf_urukhai| tf_mounted| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_e,itm_isen_uruk_heavy_d,itm_isen_uruk_heavy_e,itm_uruk_tracker_boots,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_axe,],attr_evil_tier_3,wp_tier_bow_4,knows_athletics_6|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_2,uruk_hai_face1,uruk_hai_face2],
+["a4_isen_fighting_uruk_tracker","Fighting_Uruk_Hai_Tracker","Fighting_Uruk_Hai_Trackers",tf_urukhai| tf_mounted| tfg_ranged| tfg_armor| tfg_boots| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_f,itm_isen_uruk_heavy_e,itm_uruk_tracker_boots,itm_isengard_large_bow,itm_isengard_arrow,itm_isengard_sword,],attr_evil_tier_4,wp_tier_bow_5,knows_athletics_7|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_5,uruk_hai_face1,uruk_hai_face2],
+["i6_isen_uruk_berserker","Fighting_Uruk_Hai_Berserker","Fighting_Uruk_Hai_Berserkers",tf_urukhai| tf_mounted| tfg_helm| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_f,itm_isen_uruk_helm_e,itm_isen_uruk_light_a,itm_isen_uruk_light_b,itm_evil_gauntlets_a,itm_uruk_chain_greaves,itm_isengard_heavy_axe,itm_isengard_mallet,itm_isengard_sword,itm_isengard_halberd,itm_isengard_heavy_sword,],attr_evil_tier_6,wp_tier_6,knows_athletics_7|knows_power_strike_6|knows_ironflesh_10,uruk_hai_face1,uruk_hai_face2],
+["i1_isen_uruk_snaga","Uruk_Hai_Newborn","Uruk_Hai_Newborns",tf_urukhai| tf_mounted| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_light_a,itm_uruk_ragwrap,itm_isengard_axe,itm_isengard_sword,],attr_evil_tier_1,wp_tier_1,knows_athletics_1|knows_power_strike_1|knows_ironflesh_2,uruk_hai_face1,uruk_hai_face2],
+["i2_isen_uruk","Uruk_Hai_of_Isengard","Uruk_Hai_of_Isengard",tf_urukhai| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_a,itm_isen_uruk_light_a,itm_uruk_ragwrap,itm_isengard_spear,itm_isengard_axe,itm_isengard_sword,],attr_evil_tier_2,wp_tier_2,knows_athletics_2|knows_power_strike_2|knows_ironflesh_3,uruk_hai_face1,uruk_hai_face2],
+["i3_isen_large_uruk","Large_Uruk_Hai_of_Isengard","Large_Uruk_Hai_of_Isengard",tf_urukhai| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_b,itm_isen_uruk_heavy_a,itm_evil_gauntlets_b,itm_uruk_chain_greaves,itm_isengard_spear,itm_isengard_heavy_axe,itm_isengard_sword,],attr_evil_tier_3,wp_tier_3,knows_athletics_2|knows_power_strike_3|knows_ironflesh_4,uruk_hai_face1,uruk_hai_face2],
+["i4_isen_fighting_uruk_warrior","Fighting_Uruk_Hai_Warrior","Fighting_Uruk_Hai_Warriors",tf_urukhai|tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_c,itm_isen_uruk_heavy_c,itm_evil_gauntlets_a,itm_uruk_chain_greaves,itm_isengard_heavy_axe,itm_isengard_heavy_sword,itm_isen_uruk_shield_b,],attr_evil_tier_4,wp_tier_4,knows_athletics_2|knows_power_strike_5|knows_ironflesh_5,uruk_hai_face1,uruk_hai_face2],
+["i5_isen_fighting_uruk_champion","Fighting_Uruk_Hai_Champion","Fighting_Uruk_Hai_Champions",tf_urukhai|tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_c,itm_isen_uruk_heavy_c,itm_evil_gauntlets_a,itm_uruk_chain_greaves,itm_isengard_mallet,itm_isengard_heavy_sword,itm_isengard_axe,itm_isengard_hammer,itm_isen_uruk_shield_b,],attr_evil_tier_5,wp_tier_5,knows_athletics_3|knows_power_strike_6|knows_ironflesh_6,uruk_hai_face1,uruk_hai_face2],
+["i3_isen_uruk_pikeman","Uruk_Hai_Pikeman","Uruk_Hai_Pikemen",tf_urukhai| tf_mounted|tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_b,itm_isen_uruk_light_a,itm_isen_uruk_heavy_a,itm_uruk_chain_greaves,itm_isengard_pike,],attr_evil_tier_3,wp_tier_3,knows_athletics_2|knows_power_strike_3|knows_ironflesh_4,uruk_hai_face1,uruk_hai_face2],
+["i4_isen_fighting_uruk_pikeman","Fighting_Uruk_Hai_Pikeman","Fighting_Uruk_Hai_Pikemen",tf_urukhai|tf_mounted| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_c,itm_isen_uruk_light_d,itm_evil_gauntlets_a,itm_uruk_chain_greaves,itm_isengard_pike,itm_isengard_halberd,],attr_evil_tier_4,wp_tier_4,knows_athletics_2|knows_power_strike_5|knows_ironflesh_5,uruk_hai_face1,uruk_hai_face2],
+["i5_isen_uruk_standard_bearer","Uruk_Hai_Standard_Bearer","Uruk_Hai_Standard_Bearers",tf_urukhai|tf_mounted| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,[itm_isen_uruk_helm_c,itm_isen_uruk_heavy_c,itm_evil_gauntlets_a,itm_uruk_chain_greaves,itm_isengard_banner,],attr_evil_tier_5,wp_tier_5,knows_athletics_2|knows_power_strike_5|knows_ironflesh_10,uruk_hai_face1,uruk_hai_face2],
+
 #Mordor Uruks
 ["i1_mordor_uruk_snaga","Uruk_Snaga_of_Mordor","Uruk_Snagas_of_Mordor",tf_uruk| tf_no_capture_alive,0,0,fac_mordor,[itm_m_uruk_light_a,itm_m_uruk_light_a_good, itm_m_uruk_light_a_bad,itm_uruk_ragwrap,itm_orc_axe,itm_orc_falchion,itm_orc_sabre,itm_orc_simple_spear,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],attr_evil_tier_1,wp_tier_1,knows_athletics_1|knows_power_strike_1|knows_ironflesh_2,uruk_hai_face1,uruk_hai_face2],
 ["i2_mordor_uruk","Uruk_of_Mordor","Uruks_of_Mordor",tf_uruk| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,[itm_uruk_helm_a,itm_uruk_helm_b,itm_orc_coif,itm_m_uruk_light_b, itm_m_uruk_light_b_good, itm_m_uruk_light_b_bad, itm_m_uruk_light_c_good, itm_m_uruk_light_c_bad,itm_uruk_ragwrap,itm_uruk_spear,itm_uruk_falchion_a,itm_uruk_falchion_b,itm_mordor_uruk_shield_a,],attr_evil_tier_2,wp_tier_2,knows_athletics_2|knows_power_strike_2|knows_ironflesh_3,uruk_hai_face1,uruk_hai_face2],
@@ -3318,21 +3301,21 @@ upgrade(troops,"i4_corsair_veteran_swordsman","i5_corsair_master_swordsman")
 #upgrade(troops,"a4_corsair_assassin","a5_corsair_master_assassin")
 upgrade2(troops,"i4_corsair_veteran_spearman","i5_corsair_master_spearman","i5_corsair_master_pikeman")
 #ISENGARD ORCS
-upgrade2(troops,"orc_snaga_of_isengard","orc_of_isengard","wolf_rider_of_isengard")
-upgrade2(troops,"orc_of_isengard","large_orc_of_isengard","large_orc_despoiler")
-upgrade(troops,"large_orc_of_isengard","fell_orc_of_isengard")
-upgrade(troops,"large_orc_despoiler","fell_orc_despoiler")
-upgrade(troops,"wolf_rider_of_isengard","warg_rider_of_isengard")
-upgrade(troops,"warg_rider_of_isengard","white_hand_rider")
+upgrade2(troops,"i1_isen_orc_snaga","i2_isen_orc","ac2_isen_wolf_rider")
+upgrade2(troops,"i2_isen_orc","i3_isen_large_orc","i3_isen_large_orc_despoiler")
+upgrade(troops,"i3_isen_large_orc","i4_isen_fell_orc")
+upgrade(troops,"i3_isen_large_orc_despoiler","i4_isen_fell_orc_despoiler")
+upgrade(troops,"ac2_isen_wolf_rider","ac3_isen_warg_rider")
+upgrade(troops,"ac3_isen_warg_rider","ac4_isen_white_hand_rider")
 #ISENGARD URUK-HAIS
-upgrade(troops,"uruk_hai_tracker","large_uruk_hai_tracker")
-upgrade(troops,"large_uruk_hai_tracker","fighting_uruk_hai_tracker")
-upgrade2(troops,"uruk_snaga_of_isengard","uruk_hai_of_isengard","uruk_hai_tracker")
-upgrade2(troops,"uruk_hai_of_isengard","large_uruk_hai_of_isengard","uruk_hai_pikeman")
-upgrade(troops,"large_uruk_hai_of_isengard","fighting_uruk_hai_warrior")
-upgrade(troops,"fighting_uruk_hai_warrior","fighting_uruk_hai_champion")
-upgrade(troops,"uruk_hai_pikeman","fighting_uruk_hai_pikeman")
-upgrade(troops,"fighting_uruk_hai_pikeman","fighting_uruk_hai_berserker")
+upgrade(troops,"a2_isen_uruk_tracker","a3_isen_large_uruk_tracker")
+upgrade(troops,"a3_isen_large_uruk_tracker","a4_isen_fighting_uruk_tracker")
+upgrade2(troops,"i1_isen_uruk_snaga","i2_isen_uruk","a2_isen_uruk_tracker")
+upgrade2(troops,"i2_isen_uruk","i3_isen_large_uruk","i3_isen_uruk_pikeman")
+upgrade(troops,"i3_isen_large_uruk","i4_isen_fighting_uruk_warrior")
+upgrade(troops,"i4_isen_fighting_uruk_warrior","i5_isen_fighting_uruk_champion")
+upgrade(troops,"i3_isen_uruk_pikeman","i4_isen_fighting_uruk_pikeman")
+upgrade(troops,"i4_isen_fighting_uruk_pikeman","i6_isen_uruk_berserker")
 #MORDOR ORCS
 upgrade2(troops,"i1_mordor_orc_snaga","i2_mordor_orc","a2_mordor_orc_archer")
 upgrade2(troops,"i2_mordor_orc","i3_mordor_large_orc","c3_mordor_warg_rider")

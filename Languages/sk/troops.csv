@@ -590,24 +590,24 @@ trp_i5_corsair_master_spearman|Majster kopijník z Umbaru
 trp_i5_corsair_master_spearman_pl|Majstri kopijníci z Umbaru
 trp_i5_corsair_master_pikeman|Píkmajster z Umbaru
 trp_i5_corsair_master_pikeman_pl|Píkmajstri z Umbaru
-trp_orc_snaga_of_isengard|Snaga ohyzd z Isengardu
-trp_orc_snaga_of_isengard_pl|Snaga ohyzdi z Isengardu
-trp_orc_of_isengard|Ohyzd z Isengardu
-trp_orc_of_isengard_pl|Ohyzdi z Isengardu
-trp_large_orc_of_isengard|Veľký ohyzd z Isengardu
-trp_large_orc_of_isengard_pl|Veľkí ohyzdi z Isengardu
-trp_fell_orc_of_isengard|Divoký ohyzd z Isengardu
-trp_fell_orc_of_isengard_pl|Divokí ohyzdi z Isengardu
-trp_large_orc_despoiler|Veľký ohyzdí nájazdník
-trp_large_orc_despoiler_pl|Veľkí ohyzdí nájazdníci
-trp_fell_orc_despoiler|Divoký ohyzdí nájazdník
-trp_fell_orc_despoiler_pl|Divokí ohyzdí nájazdníci
-trp_wolf_rider_of_isengard|Vlčí jazdec z Isengardu
-trp_wolf_rider_of_isengard_pl|Vlčí jazdci z Isengardu
-trp_warg_rider_of_isengard|Vrrčí jazdec z Isengardu
-trp_warg_rider_of_isengard_pl|Vrrčí jazdci z Isengardu
-trp_white_hand_rider|Jazdec Bielej Ruky
-trp_white_hand_rider_pl|Jazdci Bielej Ruky
+trp_i1_isen_orc_snaga|Snaga ohyzd z Isengardu
+trp_i1_isen_orc_snaga_pl|Snaga ohyzdi z Isengardu
+trp_i2_isen_orc|Ohyzd z Isengardu
+trp_i2_isen_orc_pl|Ohyzdi z Isengardu
+trp_i3_isen_large_orc|Veľký ohyzd z Isengardu
+trp_i3_isen_large_orc_pl|Veľkí ohyzdi z Isengardu
+trp_i4_isen_fell_orc|Divoký ohyzd z Isengardu
+trp_i4_isen_fell_orc_pl|Divokí ohyzdi z Isengardu
+trp_i3_isen_large_orc_despoiler|Veľký ohyzdí nájazdník
+trp_i3_isen_large_orc_despoiler_pl|Veľkí ohyzdí nájazdníci
+trp_i4_isen_fell_orc_despoiler|Divoký ohyzdí nájazdník
+trp_i4_isen_fell_orc_despoiler_pl|Divokí ohyzdí nájazdníci
+trp_ac2_isen_wolf_rider|Vlčí jazdec z Isengardu
+trp_ac2_isen_wolf_rider_pl|Vlčí jazdci z Isengardu
+trp_ac3_isen_warg_rider|Vrrčí jazdec z Isengardu
+trp_ac3_isen_warg_rider_pl|Vrrčí jazdci z Isengardu
+trp_ac4_isen_white_hand_rider|Jazdec Bielej Ruky
+trp_ac4_isen_white_hand_rider_pl|Jazdci Bielej Ruky
 trp_warg_ghost_1b|Vrrk
 trp_warg_ghost_1b_pl|Vrrci
 trp_warg_ghost_1c|Vrrk
@@ -626,30 +626,30 @@ trp_warg_ghost_a3a|Obrnený Vrrk
 trp_warg_ghost_a3a_pl|Obrnené Vrrky
 trp_warg_ghost_h|Obrovský Vrrk
 trp_warg_ghost_h_pl|Obrovské Vrrky
-trp_uruk_hai_tracker|Uruk Hai stopár
-trp_uruk_hai_tracker_pl|Uruk Hai stopári
-trp_large_uruk_hai_tracker|Veľký Uruk Hai stopár
-trp_large_uruk_hai_tracker_pl|Veľkí Uruk Hai stopáry
-trp_fighting_uruk_hai_tracker|Bojový Uruk Hai stopár
-trp_fighting_uruk_hai_tracker_pl|Bojoví Uruk Hai stopári
-trp_fighting_uruk_hai_berserker|Bojový Uruk Hai berserk
-trp_fighting_uruk_hai_berserker_pl|Bojoví Uruk Hai berserkovia
-trp_uruk_snaga_of_isengard|Novorodený Uruk Hai
-trp_uruk_snaga_of_isengard_pl|Novorodení Uruk Hai
-trp_uruk_hai_of_isengard|Uruk Hai z Isengardu
-trp_uruk_hai_of_isengard_pl|Uruk Hai z Isengardu
-trp_large_uruk_hai_of_isengard|Veľký Uruk Hai z Isengardu
-trp_large_uruk_hai_of_isengard_pl|Veľkí Uruk Hai z Isengardu
-trp_fighting_uruk_hai_warrior|Bojový Uruk Hai
-trp_fighting_uruk_hai_warrior_pl|Bojoví Uruk Hai
-trp_fighting_uruk_hai_champion|Šampión Uruk Hai
-trp_fighting_uruk_hai_champion_pl|Šampióni Uruk Hai
-trp_uruk_hai_pikeman|Kopijník Uruk Hai
-trp_uruk_hai_pikeman_pl|Kopijníci Uruk Hai
-trp_fighting_uruk_hai_pikeman|Bojový kopijník Uruk Hai
-trp_fighting_uruk_hai_pikeman_pl|Bojoví kopijníci Uruk Hai
-trp_urukhai_standard_bearer|Uruk Hai vlajkonoš
-trp_urukhai_standard_bearer_pl|Zástavníci Uruk Hai
+trp_a2_isen_uruk_tracker|Uruk Hai stopár
+trp_a2_isen_uruk_tracker_pl|Uruk Hai stopári
+trp_a3_isen_large_uruk_tracker|Veľký Uruk Hai stopár
+trp_a3_isen_large_uruk_tracker_pl|Veľkí Uruk Hai stopáry
+trp_a4_isen_fighting_uruk_tracker|Bojový Uruk Hai stopár
+trp_a4_isen_fighting_uruk_tracker_pl|Bojoví Uruk Hai stopári
+trp_i6_isen_uruk_berserker|Bojový Uruk Hai berserk
+trp_i6_isen_uruk_berserker_pl|Bojoví Uruk Hai berserkovia
+trp_i1_isen_uruk_snaga|Novorodený Uruk Hai
+trp_i1_isen_uruk_snaga_pl|Novorodení Uruk Hai
+trp_i2_isen_uruk|Uruk Hai z Isengardu
+trp_i2_isen_uruk_pl|Uruk Hai z Isengardu
+trp_i3_isen_large_uruk|Veľký Uruk Hai z Isengardu
+trp_i3_isen_large_uruk_pl|Veľkí Uruk Hai z Isengardu
+trp_i4_isen_fighting_uruk_warrior|Bojový Uruk Hai
+trp_i4_isen_fighting_uruk_warrior_pl|Bojoví Uruk Hai
+trp_i5_isen_fighting_uruk_champion|Šampión Uruk Hai
+trp_i5_isen_fighting_uruk_champion_pl|Šampióni Uruk Hai
+trp_i3_isen_uruk_pikeman|Kopijník Uruk Hai
+trp_i3_isen_uruk_pikeman_pl|Kopijníci Uruk Hai
+trp_i4_isen_fighting_uruk_pikeman|Bojový kopijník Uruk Hai
+trp_i4_isen_fighting_uruk_pikeman_pl|Bojoví kopijníci Uruk Hai
+trp_i5_isen_uruk_standard_bearer|Uruk Hai vlajkonoš
+trp_i5_isen_uruk_standard_bearer_pl|Zástavníci Uruk Hai
 trp_i1_mordor_uruk_snaga|Uruk snaga z Mordoru
 trp_i1_mordor_uruk_snaga_pl|Uruk snagy z Mordoru
 trp_i2_mordor_uruk|Uruk z Mordoru
