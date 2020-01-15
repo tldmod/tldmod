@@ -3183,16 +3183,16 @@ spr_distant_mountain2 69632 0 kkk2 0 0
 spr_laketown 0 0 laketown bo_laketown 0
 
 
-spr_lktn_building_a 0 0 dale_frame_house_a 0 0
+spr_lktn_building_a 0 0 dale_frame_house_a bo_dale_frame_house_a 0
 
 
-spr_lktn_building_b 0 0 dale_house_b 0 0
+spr_lktn_building_b 0 0 dale_house_b bo_dale_house_b 0
 
 
 spr_lktn_building_c 0 0 dale_side_building_a bo_side_building_a_tld 0
 
 
-spr_lktn_building_d 0 0 dale_house_c 0 0
+spr_lktn_building_d 0 0 dale_house_c bo_dale_house_c 0
 
 
 spr_lktn_building_e 0 0 dale_door_extension_a 0 0
@@ -3201,76 +3201,76 @@ spr_lktn_building_e 0 0 dale_door_extension_a 0 0
 spr_lktn_building_f 0 0 dale_passage_house_a bo_passage_house_a_tld 0
 
 
-spr_lktn_building_g 0 0 dale_passage_house_b 0 0
+spr_lktn_building_g 0 0 dale_passage_house_b bo_dale_passage_house_b 0
 
 
-spr_lktn_building_h 0 0 dale_town_house_a 0 0
+spr_lktn_building_h 0 0 dale_town_house_a bo_dale_town_house_a 0
 
 
-spr_lktn_building_i 0 0 dale_town_house_b 0 0
+spr_lktn_building_i 0 0 dale_town_house_b bo_dale_town_house_b 0
 
 
-spr_lktn_building_j 0 0 dale_town_house_c 0 0
+spr_lktn_building_j 0 0 dale_town_house_c bo_dale_town_house_c 0
 
 
-spr_lktn_building_k 0 0 dale_town_house_d 0 0
+spr_lktn_building_k 0 0 dale_town_house_d bo_dale_town_house_d 0
 
 
-spr_lktn_building_l 0 0 dale_town_house_e 0 0
+spr_lktn_building_l 0 0 dale_town_house_e bo_dale_town_house_e 0
 
 
-spr_lktn_building_m 0 0 dale_town_house_f 0 0
+spr_lktn_building_m 0 0 dale_town_house_f bo_dale_town_house_f 0
 
 
-spr_lktn_building_n 0 0 dale_town_house_g 0 0
+spr_lktn_building_n 0 0 dale_town_house_g bo_dale_town_house_g 0
 
 
-spr_lktn_building_o 0 0 dale_town_house_h 0 0
+spr_lktn_building_o 0 0 dale_town_house_h bo_dale_town_house_h 0
 
 
-spr_lktn_building_p 0 0 dale_town_house_i 0 0
+spr_lktn_building_p 0 0 dale_town_house_i bo_dale_town_house_i 0
 
 
-spr_lktn_building_q 0 0 dale_town_house_j 0 0
+spr_lktn_building_q 0 0 dale_town_house_j bo_dale_town_house_j 0
 
 
-spr_lktn_building_r 0 0 dale_town_house_l 0 0
+spr_lktn_building_r 0 0 dale_town_house_l bo_dale_town_house_l 0
 
 
-spr_lktn_building_s 0 0 dale_town_house_m 0 0
+spr_lktn_building_s 0 0 dale_town_house_m bo_dale_town_house_m 0
 
 
-spr_lktn_building_t 0 0 dale_town_house_n 0 0
+spr_lktn_building_t 0 0 dale_town_house_n bo_dale_town_house_n 0
 
 
-spr_lktn_building_u 0 0 dale_town_house_o 0 0
+spr_lktn_building_u 0 0 dale_town_house_o bo_dale_town_house_o 0
 
 
-spr_lktn_building_v 0 0 dale_town_house_p 0 0
+spr_lktn_building_v 0 0 dale_town_house_p bo_dale_town_house_p 0
 
 
-spr_lktn_building_w 0 0 dale_town_house_q 0 0
+spr_lktn_building_w 0 0 dale_town_house_q bo_dale_town_house_q 0
 
 
-spr_lktn_building_x 0 0 dale_town_house_s 0 0
+spr_lktn_building_x 0 0 dale_town_house_s bo_dale_town_house_s 0
 
 
-spr_lktn_building_y 0 0 dale_town_house_t 0 0
+spr_lktn_building_y 0 0 dale_town_house_t bo_dale_town_house_t 0
 
 
-spr_lktn_building_z 0 0 dale_town_house_u 0 0
+spr_lktn_building_z 0 0 dale_town_house_u bo_dale_town_house_u 0
 
 
-spr_lktn_building_aa 0 0 dale_town_house_v 0 0
+spr_lktn_building_aa 0 0 dale_town_house_v bo_dale_town_house_v 0
 
 
-spr_lktn_building_ab 0 0 dale_town_house_y 0 0
+spr_lktn_building_ab 0 0 dale_town_house_y bo_dale_town_house_y 0
 
 
-spr_lktn_building_ac 0 0 dale_town_house_z 0 0
+spr_lktn_building_ac 0 0 dale_town_house_z bo_dale_town_house_z 0
 
 
-spr_lktn_building_ad 0 0 dale_town_house_za 0 0
+spr_lktn_building_ad 0 0 dale_town_house_za bo_dale_town_house_za 0
 
 
 spr_lktn_extension_a 0 0 dale_house_extension_a 0 0

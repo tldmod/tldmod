@@ -1701,83 +1701,36 @@ scene_props = [
 #####DALE PROPS#####
 ("laketown",0,"laketown","bo_laketown", []),
 
-("lktn_building_a",0,"dale_frame_house_a","0", []),
-("lktn_building_b",0,"dale_house_b","0", []),
+("lktn_building_a",0,"dale_frame_house_a","bo_dale_frame_house_a", []),
+("lktn_building_b",0,"dale_house_b","bo_dale_house_b", []),
 ("lktn_building_c",0,"dale_side_building_a","bo_side_building_a_tld", []),
-("lktn_building_d",0,"dale_house_c","0", []),
+("lktn_building_d",0,"dale_house_c","bo_dale_house_c", []),
 ("lktn_building_e",0,"dale_door_extension_a","0", []),
 ("lktn_building_f",0,"dale_passage_house_a","bo_passage_house_a_tld", []),
-("lktn_building_g",0,"dale_passage_house_b","0", []),
-
-##In Vain Dale Scene Modification LKTN Buildings Start
-] + (is_a_wb_sceneprop==1 and [
+("lktn_building_g",0,"dale_passage_house_b","bo_dale_passage_house_b", []),
 ("lktn_building_h",0,"dale_town_house_a","bo_dale_town_house_a", []),
-    ] or [
-("lktn_building_h",0,"dale_town_house_a","0", [])
-]) + [
-
-("lktn_building_i",0,"dale_town_house_b","0", []),
-("lktn_building_j",0,"dale_town_house_c","0", []),
-("lktn_building_k",0,"dale_town_house_d","0", []),
-
-] + (is_a_wb_sceneprop==1 and [
+("lktn_building_i",0,"dale_town_house_b","bo_dale_town_house_b", []),
+("lktn_building_j",0,"dale_town_house_c","bo_dale_town_house_c", []),
+("lktn_building_k",0,"dale_town_house_d","bo_dale_town_house_d", []),
 ("lktn_building_l",0,"dale_town_house_e","bo_dale_town_house_e", []),
-    ] or [
-("lktn_building_l",0,"dale_town_house_e","0", []),
-]) + [
-
-
-("lktn_building_m",0,"dale_town_house_f","0", []),
-("lktn_building_n",0,"dale_town_house_g","0", []),
-
-] + (is_a_wb_sceneprop==1 and [
+("lktn_building_m",0,"dale_town_house_f","bo_dale_town_house_f", []),
+("lktn_building_n",0,"dale_town_house_g","bo_dale_town_house_g", []),
 ("lktn_building_o",0,"dale_town_house_h","bo_dale_town_house_h", []),
 ("lktn_building_p",0,"dale_town_house_i","bo_dale_town_house_i", []),
-    ] or [
-("lktn_building_o",0,"dale_town_house_h","0", []),
-("lktn_building_p",0,"dale_town_house_i","0", []),
-]) + [
-
-
-("lktn_building_q",0,"dale_town_house_j","0", []),
-
-
-] + (is_a_wb_sceneprop==1 and [
+("lktn_building_q",0,"dale_town_house_j","bo_dale_town_house_j", []),
 ("lktn_building_r",0,"dale_town_house_l","bo_dale_town_house_l", []),
-    ] or [
-("lktn_building_r",0,"dale_town_house_l","0", []),
-]) + [
-
-
-("lktn_building_s",0,"dale_town_house_m","0", []),
-("lktn_building_t",0,"dale_town_house_n","0", []),
-("lktn_building_u",0,"dale_town_house_o","0", []),
-("lktn_building_v",0,"dale_town_house_p","0", []),
-("lktn_building_w",0,"dale_town_house_q","0", []),
-("lktn_building_x",0,"dale_town_house_s","0", []),
-
-
-] + (is_a_wb_sceneprop==1 and [
+("lktn_building_s",0,"dale_town_house_m","bo_dale_town_house_m", []),
+("lktn_building_t",0,"dale_town_house_n","bo_dale_town_house_n", []),
+("lktn_building_u",0,"dale_town_house_o","bo_dale_town_house_o", []),
+("lktn_building_v",0,"dale_town_house_p","bo_dale_town_house_p", []),
+("lktn_building_w",0,"dale_town_house_q","bo_dale_town_house_q", []),
+("lktn_building_x",0,"dale_town_house_s","bo_dale_town_house_s", []),
 ("lktn_building_y",0,"dale_town_house_t","bo_dale_town_house_t", []),
-    ] or [
-("lktn_building_y",0,"dale_town_house_t","0", []),
-]) + [
-
-
-("lktn_building_z",0,"dale_town_house_u","0", []),
-("lktn_building_aa",0,"dale_town_house_v","0", []),
-("lktn_building_ab",0,"dale_town_house_y","0", []),
-
-
-] + (is_a_wb_sceneprop==1 and [
+("lktn_building_z",0,"dale_town_house_u","bo_dale_town_house_u", []),
+("lktn_building_aa",0,"dale_town_house_v","bo_dale_town_house_v", []),
+("lktn_building_ab",0,"dale_town_house_y","bo_dale_town_house_y", []),
 ("lktn_building_ac",0,"dale_town_house_z","bo_dale_town_house_z", []),
-    ] or [  
-("lktn_building_ac",0,"dale_town_house_z","0", []),
-]) + [
-
-##In Vain Dale Scene Modification LKTN Buildings END
-
-("lktn_building_ad",0,"dale_town_house_za","0", []),
+("lktn_building_ad",0,"dale_town_house_za","bo_dale_town_house_za", []),
 
 ("lktn_extension_a",0,"dale_house_extension_a","0", []),
 ("lktn_extension_b",0,"dale_house_extension_b","0", []),
