@@ -1,4 +1,4 @@
-1641
+1644
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -162,7 +162,6 @@ qstr_+1_to_Weapon_Mastery +1_to_Weapon_Mastery
 qstr_+1_to_Wound_Treatmen +1_to_Wound_Treatment
 qstr_+1_to_Tactics +1_to_Tactics
 qstr_+1_to_Power_Strike +1_to_Power_Strike
-qstr_when_equipped when_equipped
 qstr_+1_to_Strength +1_to_Strength
 qstr_+1_to_Agility +1_to_Agility
 qstr_+1_to_Leadership +1_to_Leadership
@@ -178,8 +177,12 @@ qstr_rallies rallies
 qstr_+{reg1}_{s3}_in_batt +{reg1}_{s3}_in_battle
 qstr_+1_to_Charisma +1_to_Charisma
 qstr_+1_to_Surgery +1_to_Surgery
+qstr_+1_to_Intelligence +1_to_Intelligence
 qstr_+1_to_Ironflesh +1_to_Ironflesh
 qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
+qstr_when_equipped when_equipped
+qstr_+1_to_Riding +1_to_Riding
+qstr_+1_to_Mounted_Archer +1_to_Mounted_Archery
 qstr_+2_to_Tactics +2_to_Tactics
 qstr_+3_to_Spotting +3_to_Spotting
 qstr_+2_to_Athletics +2_to_Athletics

@@ -501,10 +501,6 @@ items =[
 ##########RIVENDELL SHIELDS##########
 ["riv_shield_a","Rivendell_Shield",[("riv_inf_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop|itp_cant_use_on_horseback,itcf_carry_kite_shield,700,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(85)|weapon_length(82),imodbits_shield_good,[]],
 ["riv_shield_b","Rivendell_Shield",[("riv_cav_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,600,weight(2)|hit_points(800)|body_armor(13)|spd_rtng(92)|weapon_length(60),imodbits_shield_good,[]],
-#["riv_shield_c", "Rivendell Shield",[("riv_inf_shield_long_a",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  218 , weight(2.0)|hit_points(380)|body_armor(1)|spd_rtng(99)|weapon_length(50),imodbits_shield ],
-#["riv_shield_d", "Rivendell Shield",[("riv_inf_shield_long_b",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  318 , weight(2.5)|hit_points(440)|body_armor(1)|spd_rtng(85)|weapon_length(82),imodbits_shield ],
-#["riv_shield_e", "Rivendell Shield",[("riv_inf_shield_short_a",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  418, weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-#["riv_shield_f", "Rivendell Shield",[("riv_inf_shield_short_b",0)], itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  218 , weight(2.0)|hit_points(380)|body_armor(1)|spd_rtng(99)|weapon_length(50),imodbits_shield  ],
 #####RIVENDELL WEAPONS########
 ["riv_bas_sword","Rivendell_Bastard_Sword",[("rivendell_handandahalf1",0),("scab_rivendell_handandahalf1",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_shop,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,294,weight(2.25)|difficulty(0)|spd_rtng(98)|weapon_length(105)|swing_damage(37,cut)|thrust_damage(26,pierce),imodbits_weapon_good,[]],
 ["riv_1h_sword","Rivendell_Sword",[("rivendellsword1",0),("scab_rivendell_sword1",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,700,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(95)|swing_damage(28,cut)|thrust_damage(21,pierce),imodbits_weapon_good,[]],
@@ -1388,7 +1384,7 @@ items =[
 ["corsair_trident","Trident_of_Sea_Fury",[("corsair_trident",0)],itp_type_polearm|itp_unique|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback,itc_pike_upstab|itcf_carry_axe_back,2000,weight(4.5)|difficulty(12)|spd_rtng(94)|weapon_length(166)|thrust_damage(35,pierce),imodbits_weapon_wood],
 ["crebain_reward","Isengard_Crebain",[("prop_reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["miruvor_reward","Miruvor_Flask",[("reward_miruvor",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
-["wheeled_cage","Giant_wheeled_cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
+["wheeled_cage","Giant_Wheeled_Cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
 ["orc_throwing_axes_reward","Gundabad_Flying_Axes",[("orc_throwing_axe",0)],itp_type_thrown|itp_unique|itp_primary|itp_bonus_against_shield,itcf_throw_axe,150,weight(4)|difficulty(0)|shoot_speed(30)|spd_rtng(103)|weapon_length(33)|thrust_damage(46,cut)|max_ammo(5),imodbits_thrown],
 ["corsair_throwing_dagger_reward","Poisoned_Throwing_Daggers",[("corsair_throwing_dagger",0)],itp_type_thrown|itp_unique|itp_primary|0,itcf_throw_knife,200,weight(3.5)|difficulty(0)|shoot_speed(24)|spd_rtng(110)|weapon_length(0)|thrust_damage(50,cut)|max_ammo(10),imodbits_thrown],
 ["dwarf_shield_reward","Shield_of_Kheled-zaram",[("mithril_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_kite_shield,400,weight(3)|hit_points(800)|body_armor(28)|spd_rtng(82)|weapon_length(70),imodbits_none,],

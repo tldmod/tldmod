@@ -1974,7 +1974,7 @@ fac_reward_items_list = [
 #fac_gondor
 [(2,itm_cooking_cauldron,0),(3,itm_herbarium_reward,0),(4,itm_gondor_shield_e, 0), (5, itm_silmarillion_reward, 0), (6, itm_gon_tower_guard, 0), (7, itm_tower_guard_helm, 0), (8, itm_westernesse1h_reward, 0), (9, itm_horn_gondor_reward, 0)],
 #fac_dwarf
-[(2,itm_cooking_cauldron,0),(3,itm_hammer_reward ,0),(4,itm_scroll_reward, 0), (5, itm_dwarf_shield_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_dwarf_armor_c, imod_lordly), (8, itm_dwarf_great_axe_reward, 0), (9, itm_dwarf_helm_p, imod_lordly)],
+[(2,itm_cooking_cauldron,0),(3,itm_hammer_reward ,0),(4,itm_dwarf_throwing_axe, imod_balanced), (5, itm_dwarf_shield_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_dwarf_armor_c, imod_lordly), (8, itm_dwarf_great_axe_reward, 0), (9, itm_dwarf_helm_p, imod_lordly)],
 #fac_rohan
 [(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_rohirrim_courser2, imod_heavy), (5, itm_rohan_lance_banner_horse, imod_balanced), (6, itm_rohan_armor_th, 0), (7, itm_rohan_saddle, 0), (8, itm_eorl_cavalry_sword, 0), (9, itm_mearas_reward, 0)],
 #fac_mordor
@@ -1984,7 +1984,7 @@ fac_reward_items_list = [
 #fac_lorien
 [(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_elven_cloak , 0), (6, itm_silmarillion_reward, 0), (7, itm_lorien_royal_armor, imod_lordly), (8, itm_lorien_bow_reward, 0), (9, itm_phial_reward, 0)],
 #fac_imladris
-[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_miruvor_reward, 0), (6, itm_riv_warhorse2, imod_champion), (7, itm_westernesse2h_reward, 0), (8, itm_shield_of_tuor, 0), (9, itm_riv_armor_reward, 0)],
+[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_scroll_reward, 0), (5, itm_miruvor_reward, 0), (6, itm_riv_warhorse2, imod_champion), (7, itm_westernesse2h_reward, 0), (8, itm_shield_of_tuor, 0), (9, itm_riv_armor_reward, 0)],
 #fac_woodelf
 [(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_mirkwood_bow, imod_balanced), (6, itm_mirkwood_axe, imod_masterwork), (7, itm_ring_b_reward, 0), (8, itm_woodelf_arrows, imod_masterwork), (9, itm_mirkwood_sword_reward, 0)],
 #fac_dale
@@ -1996,7 +1996,7 @@ fac_reward_items_list = [
 #fac_khand
 [(2,itm_cooking_cauldron,0),(3,itm_hammer_reward ,0),(4,itm_khand_lance, imod_balanced), (5, itm_torque_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_variag_kataphrakt, imod_champion), (8, itm_khand_rammace, imod_masterwork),  (9, itm_khand_knife_reward, 0)],
 #fac_umbar
-[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_corsair_throwing_dagger_reward, 0), (5, itm_umb_helm_f, imod_lordly), (6, itm_ring_b_reward, 0), (7, itm_corsair_bow, imod_balanced), (8, itm_umb_armor_f, imod_lordly), (9, itm_corsair_trident, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_corsair_throwing_dagger_reward, 0), (5, itm_leather_gloves_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_corsair_bow, imod_balanced), (8, itm_umb_armor_f, imod_lordly), (9, itm_corsair_trident, 0)],
 #fac_moria
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_warg_reward, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_dwarf_great_pick, imod_old), (8, itm_moria_armor_e, imod_lordly), (9, itm_moria_arrow_reward, 0)],
 #fac_guldur

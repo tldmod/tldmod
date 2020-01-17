@@ -397,11 +397,8 @@ scenes = [
 ("start_rivendell"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 
 ("village_rohan",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000200a98d00009aa68000069df000021f700001290",  [],[],"outer_terrain_rohan"),
-  ] + (is_a_wb_scene==1 and [
 ("village_rohan_2" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000120090a9200052d4f00005c3000004b3400004e30",[],[],"outer_terrain_rohan"),
-  ] or [
-("village_rohan_2" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000200a98d00009aa68000069df000021f700001290",[],[],"outer_terrain_rohan"),
-  ]) + [
+
 
 ("scout_camp_mirk_evil_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b00a11bd8002b8b6000059ce000067f400007f2e",  [],[],"outer_terrain_forest"),
 ("scout_camp_mirk_evil_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b00a11bd8002b8b6000059ce000067f400007f2e",  [],[],"outer_terrain_forest"),

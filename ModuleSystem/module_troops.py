@@ -1836,7 +1836,7 @@ troops = [
    [itm_saddle_horse,itm_dunland_armor_k,itm_dunland_wolfboots,itm_evil_gauntlets_a,itm_dun_helm_e,itm_dun_berserker,itm_dun_shield_b,itm_dunland_javelin,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_persuasion_5|knows_trainer_6,0x000000003f0051c721dc6c71580f36ff00000000001fd2e80000000000000000],
 ["beorn_lord","Chief_Grimbeorn_the_Old","Chief",tf_hero| tfg_shield| tfg_armor| tfg_helm|tfg_boots,0,0,fac_beorn,
-   [itm_beorn_chief,itm_leather_boots,itm_mail_mittens,itm_beorn_helmet,itm_beorn_axe,itm_dwarf_throwing_axe,itm_beorn_shield,],
+   [itm_beorn_chief,itm_leather_boots,itm_mail_mittens,itm_beorn_helmet,itm_beorn_battle_axe,itm_dwarf_throwing_axe,itm_beorn_shield_reward,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_10|knows_persuasion_5|knows_trainer_4,0x0000000d6a00628918d46a72d946e7ae00000000001eeeb90000000000000000],
  
 
@@ -2033,7 +2033,7 @@ troops = [
    [itm_woodmen_heavy,itm_north_nasal_helm_good,itm_leather_boots,itm_2_handed_axe,itm_elven_bow,itm_arrows,],
       attr_tier_6,wp_tier_6,knight_skills_1|knows_riding_10,0x0000000d3f002001134a4a52a34a474b00000000001db6da0000000000000000],
 ["knight_4_12","Beranor_Blackfur","_",tf_hero |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,
-   [itm_beorn_chief,itm_beorn_chief,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,itm_beorn_axe,itm_rohirrim_throwing_axe,itm_beorn_shield,],
+   [itm_beorn_chief,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,itm_beorn_shield_reward,itm_rohirrim_throwing_axe,itm_rohirrim_throwing_axe,itm_beorn_axe_reward,],
       attr_tier_6,wp_tier_6,knight_skills_1|knows_riding_10|knows_persuasion_5,0x0000000bbf0052894dd95757a55accff00000000001d29190000000000000000],
 #Mt. Gundabad
 ["knight_4_16","Whip_Brolgukhsh","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
