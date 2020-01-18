@@ -1239,7 +1239,6 @@ items =[
 ["beorn_chief","Beorning_Chieftan's_Tunic",[("beorn_chieftain",0)],itp_type_body_armor|itp_covers_legs,0,1200,weight(18)|head_armor(0)|body_armor(33)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ######HELMS##########
 ["beorn_helmet","Bear_Skullcap",[("beorn_helmet",0)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(32)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
-#["northm_helm_b", "Northmen Helm",[("skull_cap_new",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #####SHIELDS##########
 ["beorn_shield","Northmen_Shield",[("northmen_shield",0),("northmen_shield",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(3)|hit_points(480)|body_armor(5)|spd_rtng(82)|weapon_length(70),imodbits_shield,],
 ######WEAPONS###########
