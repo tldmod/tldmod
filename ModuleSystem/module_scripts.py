@@ -11209,7 +11209,7 @@ scripts = [
 	(else_try),
 		(eq,":region",region_lorien),
 		(assign, "$small_scene_used", 1),
-		(store_random_in_range, ":scene_to_use", "scn_forest_lorien1", "scn_forest_mirkwood1"),
+		(store_random_in_range, ":scene_to_use", "scn_forest_lorien1", "scn_forest_mirkwood1_small"),
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
@@ -11219,19 +11219,13 @@ scripts = [
 		(assign, "$bs_day_sound", "snd_fangorn_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
-								   
 		(is_between,":region",region_n_mirkwood,region_s_mirkwood+1),
-									
-											  
-																						  
-													   
-													
-			
-								   
-																
 		(assign, "$small_scene_used", 1),
-											  
-		(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_forest_firien1"),
+		(try_begin), (eq, ":small_scene", 1),
+			(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1_small", "scn_forest_firien1"),
+		(else_try),
+			(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_erebor_castle_2"),
+		(try_end),
 		(assign, "$bs_day_sound", "snd_evilforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
