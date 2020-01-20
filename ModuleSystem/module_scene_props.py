@@ -2743,7 +2743,7 @@ scene_props = [
 ( "Gutek_stand_cloth"                          ,0,"Gutek_stand_cloth","bo_stand_cloth",[]),
 ( "Gutek_stand_thatched"                       ,0,"Gutek_stand_thatched","bo_stand_thatched",[]),
 
-( "durins_stone"           			            ,0,"durins_stone","0",[]),
+( "durins_stone"           			            ,0,"durins_stone","bo_durins_stone",[]),
 
 ( "gon_mt_stone_house_a",0,"gondor_stone_house_a","bo_gondor_stone_house_a",[]),
 ( "gon_mt_stone_house_b",0,"gondor_stone_house_b","bo_gondor_stone_house_b",[]),
