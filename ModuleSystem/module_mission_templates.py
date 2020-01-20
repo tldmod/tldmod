@@ -35,7 +35,7 @@ from module_info import wb_compile_switch as is_a_wb_mt
 #
 ####################################################################################################################
 
-pilgrim_disguise  = [itm_blackroot_hood, itm_black_tunic, itm_practice_staff]
+pilgrim_disguise  = [itm_hood_black, itm_black_tunic, itm_practice_staff]
 
 af_castle_lord    = af_override_horse | af_override_weapons | af_require_civilian
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves

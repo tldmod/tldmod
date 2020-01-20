@@ -1969,7 +1969,7 @@ itemsfile version 2
  itm_free_khand_noble_lam Khand_Noble_Armor Khand_Noble_Armor 1  khand_noble_lam 0  16842765 0 3000 704643072 26 100 2 32 13 0 0 0 0 0 0 0 0
 0
 
- itm_variag_greaves Variag_Greaves Variag_Greaves 1  variag_boots 0  69390 0 1000 704643206 3 100 0 0 24 0 0 0 0 0 0 0 0
+ itm_free_variag_greaves Variag_Greaves Variag_Greaves 1  variag_boots 0  69390 0 1000 704643206 3 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
  itm_khand_axe_great Khand_Great_Axe Khand_Great_Axe 1  Khand_Weapon_Axe_Great 0  38996869124 9223635923965575392 300 286870 4.5 100 0 0 0 0 41984 87 0 109 0 256 41
@@ -2239,10 +2239,10 @@ itemsfile version 2
  itm_umb_armor_f Corsair_Noble_Armour Corsair_Noble_Armour 4  corsair_heavy_1 0  corsair_heavy_0 134  corsair_heavy_2 167772160  corsair_heavy_3 268435456  16842765 0 1300 973078662 24 100 0 24 8 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 1  shell_helmet 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 2  shell_helmet 0  shell_helmet_b 167772160  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_b Corsair_Shell_Helm Corsair_Shell_Helm 1  shell_helmet_blue 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_umb_helm_b Corsair_Tall_Helm Corsair_Tall_Helm 2  umbar_tall_helmet 0  umbar_tall_helmet_b 167772160  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_umb_helm_c Corsair_Militia_Helm Corsair_Militia_Helm 2  umbar_militia_helmet 0  umbar_militia_helmet_b 167772160  65548 0 700 167772294 2 100 25 0 0 0 0 0 0 0 0 0 0
@@ -2251,13 +2251,13 @@ itemsfile version 2
  itm_umb_helm_d Corsair_Raider_Helm Corsair_Raider_Helm 2  raider_helmet 0  raider_helmet_b 167772160  65548 0 800 167772294 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_e Corsair_High_Helm Corsair_High_Helm 1  umbar_tall_helmet 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_free_umb_helm_e Corsair_Tall_Helm Corsair_Tall_Helm 1  umbar_tall_helmet 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_f Corsair_High_Helm Corsair_High_Helm 1  umbar_tall_helmet_b 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_free_umb_helm_f Corsair_Tall_Helm Corsair_Tall_Helm 1  umbar_tall_helmet_b 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_hood Black_Hood Black_Hood 3  umbar_hood 0  umbar_hood_mask 251658240  umbar_hood_mask 16777216  65548 0 250 123731968 1 100 10 0 0 0 0 0 0 0 0 0 0
+ itm_free_umb_hood Black_Hood Black_Hood 3  umbar_hood 0  umbar_hood_mask 251658240  umbar_hood_mask 16777216  65548 0 250 123731968 1 100 10 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_corsair_boots Corsair_Boots Corsair_Boots 1  corsair_boots 0  536940302 0 400 123731968 1 100 0 0 14 0 0 0 0 0 0 0 0
