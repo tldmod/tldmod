@@ -396,7 +396,7 @@ items =[
 
 ###ARMOR
 #handwear, boots
-["leather_gloves","Leather_Gloves",[("CWE_gloves_a_L",0),("narf_leather_gauntlet_L",imodbits_elf_cloth), ("undeadtest_handL",imodbit_poor)],itp_type_hand_armor|itp_shop,0,200,weight(0.2)|body_armor(2)|difficulty(0),imodbits_cloth,[]],
+["leather_gloves","Leather_Gloves",[("CWE_gloves_a_L",imodbits_armor_bad),("CWE_gloves_a_h_L",0),("narf_leather_gauntlet_L",imodbits_armor_good), ("undeadtest_handL",imodbit_poor)],itp_type_hand_armor|itp_shop,0,200,weight(0.2)|body_armor(2)|difficulty(0),imodbits_armor,[]],
 ["mail_mittens","Mail_Mittens",[("CWE_gauntlets_crysader_L",0)],itp_type_hand_armor|itp_shop,0,600,weight(1)|body_armor(4)|difficulty(0),imodbits_elf_armor,[]],
 ["leather_boots","Leather_Boots",[("fi_boot13",imodbits_armor_bad),("fi_boot8",0)],itp_type_foot_armor|itp_shop,0,200,weight(1)|leg_armor(12)|difficulty(0),imodbits_cloth],
 ["leather_boots_dark","Rider_Boots",[("fi_boot7",imodbits_armor_bad),("narf_rus_cav_boots",0)],itp_type_foot_armor|itp_shop,0,250,weight(1.2)|leg_armor(14)|difficulty(0),imodbits_cloth],
@@ -685,7 +685,7 @@ items =[
 ["orc_tribal_a","Untreated_Skin",[("orc_tribal_a",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(3)|leg_armor(0)|difficulty(0),imodbits_orc_cloth,],
 ["orc_tribal_b","Untreated_Skin",[("orc_tribal_b",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(2)|leg_armor(1)|difficulty(0),imodbits_orc_cloth,],
 ["orc_tribal_c","Untreated_Skin",[("orc_tribal_c",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(1)|leg_armor(2)|difficulty(0),imodbits_orc_cloth,],
-["evil_gauntlets_a","Black_Gloves",[("CWE_gloves_a_black_L",0),("CWE_gloves_lord_black_L",imodbits_elf_cloth),("CWE_gauntlets_arabs_a_L",imodbit_reinforced)],itp_type_hand_armor|itp_shop,0,500,weight(0.4)|body_armor(2)|difficulty(0),imodbits_orc_cloth],
+["evil_gauntlets_a","Black_Gloves",[("CWE_gloves_a_black_L",imodbits_armor_bad),("CWE_gloves_a_black_L_h",0),("CWE_gloves_lord_black_L",imodbits_elf_cloth),("CWE_gauntlets_arabs_a_L",imodbit_reinforced)],itp_type_hand_armor|itp_shop,0,500,weight(0.4)|body_armor(2)|difficulty(0),imodbits_orc_cloth],
 ["evil_gauntlets_b","Black_Gauntlets",[("narf_wisby_gauntlets_black_L",0),("narf_wisby_gauntlets_red_L",imodbits_armor_good|imodbit_lordly)],itp_type_hand_armor|itp_shop,0,500,weight(1.2)|body_armor(4)|difficulty(0),imodbits_armor|imodbit_lordly],
 #
 ###ISENGARD ITEMS##########
@@ -760,7 +760,7 @@ items =[
 ["orc_club_a","Orc_Club",[("orc_club_a",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack,itc_cleaver|itcf_carry_mace_left_hip,5,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(62)|swing_damage(15,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_club_b","Warg_Rider_Club",[("orc_club_b",0)],itp_type_two_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack|itp_penalty_with_shield,itc_bastardfalchion|itcf_carry_mace_left_hip,350,weight(3)|difficulty(0)|spd_rtng(75)|weapon_length(77)|swing_damage(27,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_club_c","Spiky_Orc_Club",[("orc_club_c",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack,itc_dagger|itcf_carry_mace_left_hip,150,weight(2.5)|difficulty(0)|spd_rtng(85)|weapon_length(70)|swing_damage(20,pierce)|thrust_damage(25,pierce),imodbits_weapon_wood],
-["orc_club_d","Evil_Mace",[("evil_mace",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack|itp_can_knock_down,itc_cleaver|itcf_carry_mace_left_hip,500,weight(3.5)|difficulty(0)|spd_rtng(90)|weapon_length(59)|swing_damage(27,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
+["orc_club_d","Evil_Mace",[("evil_mace",0)],itp_type_one_handed_wpn|itp_primary|itp_can_knock_down,itc_cleaver|itcf_carry_mace_left_hip,500,weight(3.5)|difficulty(0)|spd_rtng(90)|weapon_length(59)|swing_damage(27,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_sledgehammer","Orc_Sledgehammer",[("orc_sledgehammer",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_no_parry|itp_wooden_attack|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced|itp_can_knock_down,itc_cut_two_handed|itcf_carry_back,100,weight(7)|difficulty(0)|spd_rtng(80)|weapon_length(75)|swing_damage(30,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_simple_spear","Orc_Spear",[("orc_simple_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_no_parry|itp_covers_head,itc_lance_upstab,100,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(152)|thrust_damage(22,pierce),imodbits_weapon_wood],
 ["orc_skull_spear","Orc_Skull_Spear",[("orc_skull_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_no_parry|itp_covers_head,itc_lance_upstab,200,weight(3)|difficulty(0)|spd_rtng(92)|weapon_length(162)|thrust_damage(25,pierce),imodbits_weapon_wood],
@@ -1399,7 +1399,7 @@ items =[
 ["moria_arrow_reward","Moria_Poisoned_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows,itcf_carry_quiver_back_right,700,weight(3)|thrust_damage(11,cut)|max_ammo(40)|weapon_length(95),imodbits_missile,[]],
 
 ["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small_new",0)],itp_type_head_armor|itp_unique,0,3000,weight(4)|head_armor(50)|difficulty(15),0],
-["guldur_arrows_reward","Guldur_Arrows",[("khazad_orc_arrow_2",0),("khazad_orc_arrow_2.lod2",ixmesh_flying_ammo),("khazad_orc_arrow_2_quiver",ixmesh_carry)],itp_type_arrows|itp_can_penetrate_shield|itp_crush_through,itcf_carry_quiver_back_right,2000,weight(3)|thrust_damage(3,cut)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
+["black_arrows_reward","Black_Arrows",[("khazad_orc_arrow_2",0),("khazad_orc_arrow_2.lod2",ixmesh_flying_ammo),("khazad_orc_arrow_2_quiver",ixmesh_carry)],itp_type_arrows|itp_can_penetrate_shield|itp_crush_through,itcf_carry_quiver_back_right,2000,weight(3)|thrust_damage(3,cut)|max_ammo(25)|weapon_length(95),imodbits_missile,[]],
 ["leather_boots_reward","Hunter_Boots",[("got_stark_hanter_boots",0)],itp_type_foot_armor|itp_unique,0,200,weight(1)|leg_armor(22)|difficulty(0),imodbits_cloth],
 #["sarustaff","Wizards_Staff",[("sarustaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
 ["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armour",0),("denethor_robe",imodbit_well_made),("dm_nazgulrobe",imodbit_cheap),("pippin",imodbit_battered),("merry",imodbit_chipped),("whiterobe",imodbit_bent), ("old_nazgulrobe",imodbit_old),("galadriel",imodbit_rusty)],itp_type_body_armor|itp_covers_legs,0,4000,weight(35)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(15),imodbits_elf_armor,],

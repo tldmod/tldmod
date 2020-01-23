@@ -8427,7 +8427,7 @@ game_menus = [
 	   (assign, "$spawn_horse", 1),
        #(assign, "$town_entered", 1),
 	   (party_set_slot,"$current_town", slot_center_visited, 1),
-	   (set_jump_entry, 0),
+	   #(set_jump_entry, 0),
        (party_get_slot, ":town_scene", "$current_town", slot_town_center),
 	   (jump_to_scene, ":town_scene"),
        (change_screen_mission),
@@ -8753,6 +8753,7 @@ game_menus = [
 	  ("sail_from_port",[(eq, 0, 1),], "CHEAT",[]),
  ] for ct in range(1-cheat_switch)])+[
 
+#menu no. 19
 	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0)
 						], "Go to the underground caverns.",
 						[
@@ -8760,7 +8761,9 @@ game_menus = [
 						(call_script, "script_initialize_center_scene"),
 						#(set_jump_mission, "mt_town_center"),
 						(jump_to_scene, "scn_isengard_underground"),
-						(change_screen_mission)]),
+						(change_screen_mission)], "Go to the underground caverns"),
+
+#menu no. 20
 	  ("tirith_toplevel",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_minas_tirith"),(eq,"$entry_to_town_forbidden",0)
 						], "Climb up to the top level.",
 						[(assign, "$bs_day_sound", "snd_wind_ambiance"),
@@ -8768,6 +8771,8 @@ game_menus = [
 						 (set_jump_mission, "mt_town_center"),
 						 (jump_to_scene, "scn_minas_tirith_center_top"),
 						 (change_screen_mission)]),
+						 
+#menu no. 21						 
   	  ("erebor_gates",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_erebor"),(eq,"$entry_to_town_forbidden",0)
 						], "Visit the Great Gates.",
 						[(set_jump_mission, "mt_town_center"),

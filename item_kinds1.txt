@@ -303,7 +303,7 @@ itemsfile version 2
  itm_free_pilgrim_disguise Pilgrim_Disguise Pilgrim_Disguise 1  tld_robe_generic_dress 0  553713677 0 25 123731968 2 100 0 14 8 0 0 0 0 0 0 0 0
 0
 
- itm_leather_gloves Leather_Gloves Leather_Gloves 3  CWE_gloves_a_L 0  narf_leather_gauntlet_L 251658240  undeadtest_handL 64  65551 0 200 123731968 0 100 0 2 0 0 0 0 0 0 0 0 0
+ itm_leather_gloves Leather_Gloves Leather_Gloves 4  CWE_gloves_a_L 134  CWE_gloves_a_h_L 0  narf_leather_gauntlet_L 167772160  undeadtest_handL 64  65551 0 200 167772294 0 100 0 2 0 0 0 0 0 0 0 0 0
 0
 
  itm_mail_mittens Mail_Mittens Mail_Mittens 1  CWE_gauntlets_crysader_L 0  65551 0 600 704643072 1 100 0 4 0 0 0 0 0 0 0 0 0
@@ -986,7 +986,7 @@ itemsfile version 2
  itm_orc_tribal_c Untreated_Skin Untreated_Skin 1  orc_tribal_c 0  16781325 0 1 123731968 3 100 0 1 2 0 0 0 0 0 0 0 0
 0
 
- itm_evil_gauntlets_a Black_Gloves Black_Gloves 3  CWE_gloves_a_black_L 0  CWE_gloves_lord_black_L 251658240  CWE_gauntlets_arabs_a_L 134217728  65551 0 500 123731968 0.25 100 0 2 0 0 0 0 0 0 0 0 0
+ itm_evil_gauntlets_a Black_Gloves Black_Gloves 4  CWE_gloves_a_black_L 134  CWE_gloves_a_black_L_h 0  CWE_gloves_lord_black_L 251658240  CWE_gauntlets_arabs_a_L 134217728  65551 0 500 123731968 0.25 100 0 2 0 0 0 0 0 0 0 0 0
 0
 
  itm_evil_gauntlets_b Black_Gauntlets Black_Gauntlets 2  narf_wisby_gauntlets_black_L 0  narf_wisby_gauntlets_red_L 704643072  65551 0 500 704643206 1 100 0 4 0 0 0 0 0 0 0 0 0
@@ -1163,7 +1163,7 @@ itemsfile version 2
  itm_orc_club_c Spiky_Orc_Club Spiky_Orc_Club 1  orc_club_c 0  4407298 9223372040101167119 150 271496 2.5 100 0 0 0 0 20480 85 0 70 0 281 276
 0
 
- itm_orc_club_d Evil_Mace Evil_Mace 1  evil_mace 0  274882314242 9223372040101167118 500 271496 3.5 100 0 0 0 0 27648 90 0 59 0 256 539
+ itm_orc_club_d Evil_Mace Evil_Mace 1  evil_mace 0  274882101250 9223372040101167118 500 271496 3.5 100 0 0 0 0 27648 90 0 59 0 256 539
 0
 
  itm_orc_sledgehammer Orc_Sledgehammer Orc_Sledgehammer 1  orc_sledgehammer 0  313807552516 9223372043053957344 100 271496 7 100 0 0 0 0 30720 80 0 75 0 256 542
@@ -2712,7 +2712,7 @@ itemsfile version 2
  itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small_new 0  4108 0 3000 0 4 100 50 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_guldur_arrows_reward Guldur_Arrows Guldur_Arrows 3  khazad_orc_arrow_2 0  khazad_orc_arrow_2.lod2 2305843009213693952  khazad_orc_arrow_2_quiver 3458764513820540928  4311744517 1610612736 2000 4398046520456 3 100 0 0 0 0 0 0 0 95 30 3 0
+ itm_black_arrows_reward Black_Arrows Black_Arrows 3  khazad_orc_arrow_2 0  khazad_orc_arrow_2.lod2 2305843009213693952  khazad_orc_arrow_2_quiver 3458764513820540928  4311744517 1610612736 2000 4398046520456 3 100 0 0 0 0 0 0 0 95 25 3 0
 0
 
  itm_leather_boots_reward Hunter_Boots Hunter_Boots 1  got_stark_hanter_boots 0  4110 0 200 123731968 1 100 0 0 22 0 0 0 0 0 0 0 0
