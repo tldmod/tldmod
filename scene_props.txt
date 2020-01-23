@@ -3811,7 +3811,7 @@ spr_isen_wood_construction 0 0 isen_wood_construction 0 0
 spr_isen_crane 0 0 isen_crane bo_isen_crane 0
 
 
-spr_isen_awning 0 0 isen_awning bo_awning 0
+spr_isen_awning 0 0 isen_awning bo_arena_block_j_awning 0
 
 
 spr_isen_tower_a 0 0 isen_tower_a bo_isen_tower_a 0
@@ -5019,7 +5019,7 @@ spr_orc_gate_destructible 32768 1500 orc_gate_destructible bo_orc_gate_destructi
 spr_rope_bridge 0 0 rope_bridge_new bo_rope_bridge_new 0
 
 
-spr_arena_awning 0 0 arena_block_j_awning bo_awning 0
+spr_arena_awning 0 0 arena_block_j_awning bo_arena_block_j_awning 0
 
 
 spr_tree_shelter 0 0 tree_shelter_a bo_tree_shelter_a 0

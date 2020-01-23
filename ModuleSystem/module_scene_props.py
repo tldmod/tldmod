@@ -1915,7 +1915,7 @@ scene_props = [
 ("isen_roof_door", 0, "isen_roof_door", "bo_isen_roof_door", []),
 ("isen_wood_construction", 0, "isen_wood_construction", "0", []),
 ("isen_crane", 0, "isen_crane", "bo_isen_crane", []),
-("isen_awning", 0, "isen_awning", "bo_awning", []),
+("isen_awning", 0, "isen_awning", "bo_arena_block_j_awning", []),
 ("isen_tower_a", 0, "isen_tower_a", "bo_isen_tower_a", []),
 ("isen_tower_b", 0, "isen_tower_b", "bo_isen_tower_b", []),
 ("isen_stairs", 0, "isen_stairs", "bo_isen_stairs", []),
@@ -2554,7 +2554,7 @@ scene_props = [
 ], 1500), #500 hit points
 
 ("rope_bridge",0,"rope_bridge_new","bo_rope_bridge_new", []),
-("arena_awning",0,"arena_block_j_awning","bo_awning", []),
+("arena_awning",0,"arena_block_j_awning","bo_arena_block_j_awning", []),
 
 #WB only props below, replaced or hidden in M&B
 ("tree_shelter",0,"tree_shelter_a","bo_tree_shelter_a", []),
