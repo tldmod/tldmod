@@ -2139,8 +2139,8 @@ mission_templates = [ # not used in game
         (replace_scene_props, "spr_troop_guard", "spr_empty"),
 		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
 		(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
-	
-		(replace_scene_props, "spr_troop_civilian", "spr_empty"), #InVain: Added new troop spawn props
+		(replace_scene_props, "spr_troop_moria_troll", "spr_empty"),	
+		(replace_scene_props, "spr_troop_civilian", "spr_empty"),
 		(replace_scene_props, "spr_troop_civilian_sitting_ground", "spr_empty"),
 		(replace_scene_props, "spr_troop_civilian_sitting_chair", "spr_empty"),	
       ]),
