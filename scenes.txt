@@ -144,10 +144,10 @@ scn_linhir_center linhir_center 256 none none 0 0 200 200 -100 0x000000042005591
   0 
   0 
  outer_terrain_steppe 
-scn_dol_amroth_center dol_amroth_center 256 none none 0 0 200 200 -100 0x00000005200005004009c5a200000f5200005bd50000739d 
+scn_dol_amroth_center dol_amroth_center 256 none none 0 0 200 200 -100 0x0000000130000500000d234800000f5200005bd50000739d 
   0 
   0 
- outer_terrain_seaside_1 
+ New_outer_terrain_seaside_east_1 
 scn_edhellond_center edhellond_center 256 none none 0 0 200 200 -100 0x00000000300798b2000380e3000037960000573900003f48 
   0 
   0 
@@ -680,10 +680,10 @@ scn_linhir_siege linhir_siege 256 none none 0 0 200 200 -100 0x000000042005591e0
   0 
   0 
  outer_terrain_steppe 
-scn_dol_amroth_siege dol_amroth_siege 256 none none 0 0 200 200 -100 0x00000005200005004009c5a200000f5200005bd50000739d 
+scn_dol_amroth_siege dol_amroth_siege 256 none none 0 0 200 200 -100 0x0000000130000500000d234800000f5200005bd50000739d 
   0 
   0 
- outer_terrain_seaside_1 
+ New_outer_terrain_seaside_east_1 
 scn_edhellond_siege edhellond_siege 256 none none 0 0 200 200 -100 0x00000000300798b2000380e3000037960000573900003f48 
   0 
   0 
