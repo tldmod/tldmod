@@ -90,26 +90,26 @@ gondor_skills_3 = knows_riding_4|knows_ironflesh_4|knows_power_strike_5|knows_at
 gondor_skills_4 = knows_riding_4|knows_ironflesh_5|knows_power_strike_6|knows_athletics_4|knows_tactics_5|knows_prisoner_management_3|knows_leadership_9
 gondor_skills_5 = knows_riding_4|knows_ironflesh_6|knows_power_strike_7|knows_athletics_5|knows_tactics_6|knows_prisoner_management_3|knows_leadership_10
 
-#TLD troop attributes
-attr_tier_1 =  str_7| agi_6| int_6| cha_6|level(5) #Recruits, 53 matches
-attr_tier_2 = str_10| agi_8| int_6| cha_6|level(10) #Militia, guardsmen, tribal warriors, scouts, squires, 37 matches
-attr_tier_3 = str_13|agi_10| int_6| cha_6|level(15) # low-tier professionals / high-tier militia 47 matches
-attr_tier_4 = str_15|agi_13| int_6| cha_6|level(20) # Standard professionals. These are the "backbone" troops 52 matches
+#TLD troop attributes #For reference, vanilla players start with 28 attribute points, 14 skill points
+attr_tier_1 =  str_8| agi_6| int_6| cha_7|level(5)  #=27; Recruits, 53 matches
+attr_tier_2 = str_10| agi_8| int_6| cha_7|level(10) #=31; Militia, guardsmen, tribal warriors, scouts, squires, 37 matches
+attr_tier_3 = str_13|agi_10| int_6| cha_7|level(15) #=37 low-tier professionals / high-tier militia 47 matches
+attr_tier_4 = str_15|agi_13| int_6| cha_7|level(20) # Standard professionals. These are the "backbone" troops 52 matches
 attr_tier_5 = str_18|agi_16| int_8| cha_8|level(30) # Elite or high-tier professionals
 attr_tier_6 = str_20|agi_18|int_20|cha_20|level(40) # Super elite Rohan, Gondor, some captains
 attr_tier_7 = str_22|agi_22|int_22|cha_22|level(45) #Lords and captains
 
-attr_elf_tier_1 = str_12|agi_12| int_6| cha_6|level(6)
-attr_elf_tier_2 = str_14|agi_14| int_6| cha_6|level(12)
+attr_elf_tier_1 = str_10|agi_10| int_6| cha_6|level(6) #=32
+attr_elf_tier_2 = str_12|agi_12| int_6| cha_6|level(12) #=36
 attr_elf_tier_3 = str_18|agi_18| int_6| cha_6|level(18)
 attr_elf_tier_4 = str_18|agi_24| int_6| cha_6|level(26)
 attr_elf_tier_5 = str_24|agi_27| int_7| cha_7|level(38) #GA upped higher levels a bit
 attr_elf_tier_6 = str_30|agi_30|int_20|cha_20|level(50)
 
-attr_dwarf_tier_1 =  str_9| agi_6| int_6| cha_6|level(6)
-attr_dwarf_tier_2 = str_12| agi_7| int_6| cha_6|level(11)
-attr_dwarf_tier_3 = str_15| agi_9| int_6| cha_6|level(16)
-attr_dwarf_tier_4 = str_18|agi_11| int_6| cha_6|level(21)
+attr_dwarf_tier_1 = str_10| agi_6| int_7| cha_5|level(6) #=28
+attr_dwarf_tier_2 = str_14| agi_6| int_7| cha_5|level(11) #=32
+attr_dwarf_tier_3 = str_15| agi_9| int_7| cha_5|level(16) #=36 (players can start as ironhills t3 warriors)
+attr_dwarf_tier_4 = str_18|agi_11| int_7| cha_6|level(21)
 attr_dwarf_tier_5 = str_24|agi_15| int_8| cha_7|level(35) #GA upped 2 highest levels a bit
 attr_dwarf_tier_6 = str_30|agi_18| int_20| cha_20|level(48)
 
@@ -130,19 +130,19 @@ attr_dwarf_tier_6 = str_30|agi_18| int_20| cha_20|level(48)
 #attr_dwarf_tier_6 = str_24|agi_18| int_4| cha_4|level(57)																																																		 
 
 # InVain: ~halfed orc levels, worse in autocalc, but easier to train and cheaper.
-attr_orc_tier_1 =  str_5| agi_5| int_6| cha_6|level(2)
-attr_orc_tier_2 =  str_7| agi_7| int_6| cha_6|level(5)
-attr_orc_tier_3 =  str_9| agi_8| int_6| cha_6|level(8)
+attr_orc_tier_1 =  str_6| agi_7| int_6| cha_6|level(2) #=25
+attr_orc_tier_2 =  str_8| agi_9| int_6| cha_6|level(5) #=29
+attr_orc_tier_3 =  str_9| agi_9| int_6| cha_6|level(8)
 attr_orc_tier_4 = str_11| agi_9| int_7| cha_7|level(13) #elite orcs
 attr_orc_tier_5 = str_16|agi_11| int_9| cha_9|level(25) #super-elite, Moria and Gundabad only #upped lvl by a lot, because these troops are quite strong
 attr_orc_tier_6 = str_22|agi_12| int_9| cha_9|level(45) #lords only
 
 # InVain: Uruks and evil men (except black numenoreans): Middle ground between orcs and good men, their level simulating their worse equipment in autocalc, but easier to train and cheaper. Elites are good.
-attr_evil_tier_1 =  str_7| agi_5| int_6| int_6|level(3)
-attr_evil_tier_2 = str_10| agi_7| int_6| int_6|level(7)
-attr_evil_tier_3 = str_13|agi_11| int_6| int_6|level(11)
-attr_evil_tier_4 = str_15|agi_15| int_6| int_6|level(16) #Mordor Uruk top tier
-attr_evil_tier_5 = str_18|agi_18| int_4| cha_4|level(28) #evil men elites are strong, Isen Uruk Champions too #upped lvl a bit
+attr_evil_tier_1 =  str_8| agi_6| int_6| cha_6|level(3) #=26
+attr_evil_tier_2 = str_11| agi_7| int_6| cha_6|level(7) #=30
+attr_evil_tier_3 = str_13|agi_10| int_6| cha_6|level(11) #=35
+attr_evil_tier_4 = str_15|agi_15| int_6| cha_6|level(16) #=42 Mordor Uruk top tier
+attr_evil_tier_5 = str_18|agi_18| int_4| cha_6|level(28) #evil men elites are strong, Isen Uruk Champions too #upped lvl a bit
 attr_evil_tier_6 = str_20|agi_20|int_20|cha_20|level(36) #only Isengard berserkers and Rhun Nobles
 
 #TLD weapon proficiencies
