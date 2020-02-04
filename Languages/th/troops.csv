@@ -304,36 +304,36 @@ trp_townsman_pl|ชาวเมือง
 ; trp_c6_amroth_swan_knight_pl|Swan Knights of Dol Amroth
 ; trp_c6_amroth_leader|Captain of Dol Amroth
 ; trp_c6_amroth_leader_pl|Captains of Dol Amroth
-; trp_lothlorien_scout|Lothlorien Scout
-; trp_lothlorien_scout_pl|Lothlorien Scouts
-; trp_lothlorien_veteran_scout|Lothlorien Veteran Scout
-; trp_lothlorien_veteran_scout_pl|Lothlorien Veteran Scouts
-; trp_lothlorien_archer|Lothlorien Archer
-; trp_lothlorien_archer_pl|Lothlorien Archers
-; trp_lothlorien_veteran_archer|Lothlorien Veteran Archer
-; trp_lothlorien_veteran_archer_pl|Lothlorien Veteran Archers
-; trp_lothlorien_master_archer|Lothlorien Master Archer
-; trp_lothlorien_master_archer_pl|Lothlorien Master Archers
-; trp_galadhrim_royal_archer|Galadhrim Royal Archer
-; trp_galadhrim_royal_archer_pl|Galadhrim Royal Archers
+; trp_a1_lorien_scout|Lothlorien Scout
+; trp_a1_lorien_scout_pl|Lothlorien Scouts
+; trp_a2_lorien_warden|Lothlorien Veteran Scout
+; trp_a2_lorien_warden_pl|Lothlorien Veteran Scouts
+; trp_a3_lorien_vet_warden|Lothlorien Archer
+; trp_a3_lorien_vet_warden_pl|Lothlorien Archers
+; trp_a4_lorien_gal_warden|Lothlorien Veteran Archer
+; trp_a4_lorien_gal_warden_pl|Lothlorien Veteran Archers
+; trp_a5_lorien_gal_royal_warden|Lothlorien Master Archer
+; trp_a5_lorien_gal_royal_warden_pl|Lothlorien Master Archers
+; trp_a6_lorien_grey_warden|Galadhrim Royal Archer
+; trp_a6_lorien_grey_warden_pl|Galadhrim Royal Archers
 ; trp_galadhrim_royal_marksman|Galadhrim Royal Marksman
 ; trp_galadhrim_royal_marksman_pl|Galadhrim Royal Marksmen
 ; trp_noldorin_mounted_archer|Noldorin Mounted Archer
 ; trp_noldorin_mounted_archer_pl|Noldorin Mounted Archers
-; trp_lothlorien_infantry|Lothlorien Infantry
-; trp_lothlorien_infantry_pl|Lothlorien Infantry
-; trp_lothlorien_veteran_infantry|Lothlorien Veteran Infantry
-; trp_lothlorien_veteran_infantry_pl|Lothlorien Veteran Infantry
-; trp_lothlorien_elite_infantry|Lothlorien Elite Infantry
-; trp_lothlorien_elite_infantry_pl|Lothlorien Elite Infantry
-; trp_galadhrim_royal_swordsman|Galadhrim Royal Swordsman
-; trp_galadhrim_royal_swordsman_pl|Galadhrim Royal Swordsmen
-; trp_lothlorien_warden|Lothlorien Warden
-; trp_lothlorien_warden_pl|Lothlorien Wardens
-; trp_lothlorien_veteran_warden|Lothlorien Veteran Warden
-; trp_lothlorien_veteran_warden_pl|Lothlorien Veteran Wardens
-; trp_galadhrim_royal_warden|Galadhrim Royal Warden
-; trp_galadhrim_royal_warden_pl|Galadhrim Royal Wardens
+; trp_a2_lorien_archer|Lothlorien Infantry
+; trp_a2_lorien_archer_pl|Lothlorien Infantry
+; trp_a3_lorien_vet_archer|Lothlorien Veteran Infantry
+; trp_a3_lorien_vet_archer_pl|Lothlorien Veteran Infantry
+; trp_a4_lorien_gal_archer|Lothlorien Elite Infantry
+; trp_a4_lorien_gal_archer_pl|Lothlorien Elite Infantry
+; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Swordsman
+; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Swordsmen
+; trp_i3_lorien_inf|Lothlorien Warden
+; trp_i3_lorien_inf_pl|Lothlorien Wardens
+; trp_i4_lorien_gal_inf|Lothlorien Veteran Warden
+; trp_i4_lorien_gal_inf_pl|Lothlorien Veteran Wardens
+; trp_a5_lorien_gal_royal_archer|Galadhrim Royal Warden
+; trp_a5_lorien_gal_royal_archer_pl|Galadhrim Royal Wardens
 ; trp_lothlorien_standard_bearer|Lothlorien Standard Bearer
 ; trp_lothlorien_standard_bearer_pl|Lothlorien Standard Bearers
 ; trp_a1_greenwood_scout|Greenwood Scout

@@ -304,36 +304,36 @@ trp_c3_amroth_vet_squire|Zkušení Panoši Dol Amroth
 ; trp_c6_amroth_swan_knight_pl|Swan Knights of Dol Amroth
 ; trp_c6_amroth_leader|Captain of Dol Amroth
 ; trp_c6_amroth_leader_pl|Captains of Dol Amroth
-trp_lothlorien_scout|Lothloriensky zved
-trp_lothlorien_scout_pl|Loriensti pruzkumnici
-trp_lothlorien_veteran_scout|Lothloriensky zkuseny zved
-trp_lothlorien_veteran_scout_pl|Lothloriensky zkuseni zvedi
-trp_lothlorien_archer|Lothloriensky lucistnik
-trp_lothlorien_archer_pl|Lothloriensti lucistnici
-trp_lothlorien_veteran_archer|Lothloriensky zkuseny lucistnik
-trp_lothlorien_veteran_archer_pl|Lothloriensky zkuseni lucistnici
-trp_lothlorien_master_archer|Lothloriensky mistr lucistnik
-trp_lothlorien_master_archer_pl|Lothloriensky mistri lucistnici
-; trp_galadhrim_royal_archer|Galadhrim Royal Archer
-; trp_galadhrim_royal_archer_pl|Galadhrim Royal Archers
+trp_a1_lorien_scout|Lothloriensky zved
+trp_a1_lorien_scout_pl|Loriensti pruzkumnici
+trp_a2_lorien_warden|Lothloriensky zkuseny zved
+trp_a2_lorien_warden_pl|Lothloriensky zkuseni zvedi
+trp_a3_lorien_vet_warden|Lothloriensky lucistnik
+trp_a3_lorien_vet_warden_pl|Lothloriensti lucistnici
+trp_a4_lorien_gal_warden|Lothloriensky zkuseny lucistnik
+trp_a4_lorien_gal_warden_pl|Lothloriensky zkuseni lucistnici
+trp_a5_lorien_gal_royal_warden|Lothloriensky mistr lucistnik
+trp_a5_lorien_gal_royal_warden_pl|Lothloriensky mistri lucistnici
+; trp_a6_lorien_grey_warden|Galadhrim Royal Archer
+; trp_a6_lorien_grey_warden_pl|Galadhrim Royal Archers
 ; trp_galadhrim_royal_marksman|Galadhrim Royal Marksman
 ; trp_galadhrim_royal_marksman_pl|Galadhrim Royal Marksmen
 ; trp_noldorin_mounted_archer|Noldorin Mounted Archer
 ; trp_noldorin_mounted_archer_pl|Noldorin Mounted Archers
-trp_lothlorien_infantry|Lothloriensky pesak
-trp_lothlorien_infantry_pl|Lothloriensti pesaci
-trp_lothlorien_veteran_infantry|Lothloriensky zkuseny pesak
-trp_lothlorien_veteran_infantry_pl|Lothloriensti zkuseni pesaci
-trp_lothlorien_elite_infantry|Lothloriensky elitni pesak
-trp_lothlorien_elite_infantry_pl|Lothloriensti elitni pesaci
-; trp_galadhrim_royal_swordsman|Galadhrim Royal Swordsman
-; trp_galadhrim_royal_swordsman_pl|Galadhrim Royal Swordsmen
-trp_lothlorien_warden|Lothloriensky ochrance
-trp_lothlorien_warden_pl|Lothloriensti ochranci
-trp_lothlorien_veteran_warden|Lothloriensky zkuseny ochrance
-trp_lothlorien_veteran_warden_pl|Lothloriensti zkuseni ochranci
-; trp_galadhrim_royal_warden|Galadhrim Royal Warden
-; trp_galadhrim_royal_warden_pl|Galadhrim Royal Wardens
+trp_a2_lorien_archer|Lothloriensky pesak
+trp_a2_lorien_archer_pl|Lothloriensti pesaci
+trp_a3_lorien_vet_archer|Lothloriensky zkuseny pesak
+trp_a3_lorien_vet_archer_pl|Lothloriensti zkuseni pesaci
+trp_a4_lorien_gal_archer|Lothloriensky elitni pesak
+trp_a4_lorien_gal_archer_pl|Lothloriensti elitni pesaci
+; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Swordsman
+; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Swordsmen
+trp_i3_lorien_inf|Lothloriensky ochrance
+trp_i3_lorien_inf_pl|Lothloriensti ochranci
+trp_i4_lorien_gal_inf|Lothloriensky zkuseny ochrance
+trp_i4_lorien_gal_inf_pl|Lothloriensti zkuseni ochranci
+; trp_a5_lorien_gal_royal_archer|Galadhrim Royal Warden
+; trp_a5_lorien_gal_royal_archer_pl|Galadhrim Royal Wardens
 trp_lothlorien_standard_bearer|Lothloriensky korouhevnik
 trp_lothlorien_standard_bearer_pl|Lothloriensti korouhevnici
 trp_a1_greenwood_scout|Průzkumník Zeleného hvozdu

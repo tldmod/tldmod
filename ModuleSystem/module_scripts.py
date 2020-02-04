@@ -19668,7 +19668,7 @@ scripts = [
       (else_try) ,(is_between,":tr","trp_i1_pinnath_plainsman" ,"trp_i1_amroth_recruit"        ),(assign, ":bm", "mesh_banner_e05"),
       (else_try) ,(is_between,":tr","trp_i1_lam_clansman"     ,"trp_i1_pinnath_plainsman" ),(assign, ":bm", "mesh_banner_e09"),
       (else_try) ,(is_between,":tr","trp_i1_pel_watchman"       ,"trp_i1_lam_clansman"     ),(assign, ":bm", "mesh_banner_e12"),
-      (else_try) ,(is_between,":tr","trp_i1_amroth_recruit"        ,"trp_lothlorien_scout"        ),(assign, ":bm", "mesh_banner_e16"),
+      (else_try) ,(is_between,":tr","trp_i1_amroth_recruit"        ,"trp_a1_lorien_scout"        ),(assign, ":bm", "mesh_banner_e16"),
       (else_try) ,(is_between,":tr","trp_i1_loss_woodsman"  ,"trp_i3_loss_vet_axeman"),(assign, ":bm", "mesh_banner_e19"),
       (else_try) ,(is_between,":tr","trp_i3_loss_vet_axeman","trp_i5_loss_axemaster" ),(assign, ":bm", "mesh_banner_e20"),
       (else_try) ,(is_between,":tr","trp_i5_loss_axemaster" ,"trp_i1_pel_watchman"       ),(assign, ":bm", "mesh_banner_e21"),
@@ -19712,7 +19712,7 @@ scripts = [
       (else_try) ,(is_between,":tr","trp_i1_lam_clansman"  ,"trp_i1_pinnath_plainsman"),(assign, ":bm", "mesh_banner_e11"),
       (else_try) ,(is_between,":tr","trp_i1_pel_watchman"        ,"trp_i1_lam_clansman"),(assign, ":bm", "mesh_banner_e14"),
       (else_try) ,(is_between,":tr","trp_i1_amroth_recruit"   ,"trp_c6_amroth_swan_knight"),(assign, ":bm", "mesh_banner_e17"),
-      (else_try) ,(is_between,":tr","trp_c6_amroth_swan_knight"   ,"trp_lothlorien_scout"),(assign, ":bm", "mesh_banner_e18"),
+      (else_try) ,(is_between,":tr","trp_c6_amroth_swan_knight"   ,"trp_a1_lorien_scout"),(assign, ":bm", "mesh_banner_e18"),
 	  (else_try) ,(eq,			":tr","trp_knight_1_3"      								 ),(assign, ":bm", "mesh_banner_e18"), #Imrahil
 	  (else_try) ,(eq,			":tr","trp_knight_1_6"      								 ),(assign, ":bm", "mesh_banner_e07"), #Hirluin
 	  (else_try) ,(eq,			":tr","trp_knight_6_1"      								 ),(assign, ":bm", "mesh_banner_e11"), #Dervorin

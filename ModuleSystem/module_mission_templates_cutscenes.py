@@ -625,7 +625,7 @@ mission_templates_cutscenes = [
         (agent_set_hit_points, reg0, 0, 1),
         (position_move_x, pos1, 100),
         (set_spawn_position, pos1),
-        (spawn_agent, "trp_lothlorien_scout"),
+        (spawn_agent, "trp_a1_lorien_scout"),
         (agent_set_team, reg0, 1),
         (agent_set_stand_animation, reg0, "anim_stand_man"),
         (agent_set_hit_points, reg0, 0, 1),
