@@ -366,52 +366,52 @@ trp_i5_greenwood_chosen_spearmaster|Lanceiro Real de Thranduil
 trp_i5_greenwood_chosen_spearmaster_pl|Lanceiros Reais de Thranduil
 trp_i5_greenwood_standard_bearer|Carregador de Estandarte de Greenwood
 trp_i5_greenwood_standard_bearer_pl|Carregadores de Estandarte de Greenwood
-trp_rivendell_scout|Batedor de Valfenda
-trp_rivendell_scout_pl|Batedores de Valfenda
-trp_rivendell_veteran_scout|Batedor Veterano de Valfenda
-trp_rivendell_veteran_scout_pl|Batedores Veteranos de Valfenda
-trp_rivendell_sentinel|Sentinela de Valfenda
-trp_rivendell_sentinel_pl|Sentinelas de Valfenda
-trp_rivendell_veteran_sentinel|Sentinela Veterano de Valfenda
-trp_rivendell_veteran_sentinel_pl|Sentinelas Veteranos de Valfenda
-trp_rivendell_elite_sentinel|Sentinela de Elite de Valfenda
-trp_rivendell_elite_sentinel_pl|Sentinelas de Elite de Valfenda
-trp_rivendell_guardian|Guardião de Valfenda
-trp_rivendell_guardian_pl|Guardiões de Valfenda
-trp_rivendell_infantry|Soldado de Infantaria de Valfenda
-trp_rivendell_infantry_pl|Infantaria de Valfenda
-trp_rivendell_veteran_infantry|Soldado de Infantaria Veterano de Valfenda
-trp_rivendell_veteran_infantry_pl|Infantaria Veterana de Valfenda
-trp_rivendell_elite_infantry|Soldado de Infantaria de Elite de Valfenda
-trp_rivendell_elite_infantry_pl|Infantaria de Elite de Valfenda
-trp_rivendell_royal_infantry|Soldado de Infantaria Real de Valfenda
-trp_rivendell_royal_infantry_pl|Infantaria Real de Valfenda
-trp_rivendell_cavalry|Cavalariço de Valfenda
-trp_rivendell_cavalry_pl|Cavalariços de Valfenda
-trp_knight_of_rivendell|Cavaleiro de Valfenda
-trp_knight_of_rivendell_pl|Cavaleiros de Valfenda
-trp_rivendell_standard_bearer|Carregador de Estandarte de Valfenda
-trp_rivendell_standard_bearer_pl|Carregadores de Estandarte de Valfenda
-trp_dunedain_scout|Batedor Dunedain
-trp_dunedain_scout_pl|Batedores Dunedain
-trp_dunedain_trained_scout|Rastreador Dunedain
-trp_dunedain_trained_scout_pl|Rastreadores Dunedain
-trp_arnor_man_at_arms|Homem de Armas de Arnor
-trp_arnor_man_at_arms_pl|Homens de Armas de Arnor
-trp_arnor_master_at_arms|Mestre das Armas de Arnor
-trp_arnor_master_at_arms_pl|Mestres das Armas de Arnor
-trp_high_swordsman_of_arnor|Alto Espadachim de Arnor
-trp_high_swordsman_of_arnor_pl|Altos Espadachins de Arnor
-trp_arnor_horsemen|Cavalariço de Arnor
-trp_arnor_horsemen_pl|Cavalariços de Arnor
-trp_knight_of_arnor|Cavaleiro de Arnor
-trp_knight_of_arnor_pl|Cavaleiros de Arnor
-trp_dunedain_ranger|Ranger Dunedain
-trp_dunedain_ranger_pl|Rangers Dunedain
-trp_dunedain_veteran_ranger|Ranger Veterano Dunedain
-trp_dunedain_veteran_ranger_pl|Rangers Veteranos Dunedain
-trp_dunedain_master_ranger|Ranger Mestre Dunedain
-trp_dunedain_master_ranger_pl|Rangers Mestres Dunedain
+trp_a1_riv_scout|Batedor de Valfenda
+trp_a1_riv_scout_pl|Batedores de Valfenda
+trp_a2_riv_vet_scout|Batedor Veterano de Valfenda
+trp_a2_riv_vet_scout_pl|Batedores Veteranos de Valfenda
+trp_a3_riv_archer|Sentinela de Valfenda
+trp_a3_riv_archer_pl|Sentinelas de Valfenda
+trp_a4_riv_vet_archer|Sentinela Veterano de Valfenda
+trp_a4_riv_vet_archer_pl|Sentinelas Veteranos de Valfenda
+trp_a5_riv_master_archer|Sentinela de Elite de Valfenda
+trp_a5_riv_master_archer_pl|Sentinelas de Elite de Valfenda
+trp_a6_riv_guardian|Guardião de Valfenda
+trp_a6_riv_guardian_pl|Guardiões de Valfenda
+trp_i3_riv_swordbearer|Soldado de Infantaria de Valfenda
+trp_i3_riv_swordbearer_pl|Infantaria de Valfenda
+trp_i4_riv_vet_swordbearer|Soldado de Infantaria Veterano de Valfenda
+trp_i4_riv_vet_swordbearer_pl|Infantaria Veterana de Valfenda
+trp_i5_riv_swordmaster|Soldado de Infantaria de Elite de Valfenda
+trp_i5_riv_swordmaster_pl|Infantaria de Elite de Valfenda
+trp_i6_riv_champion|Soldado de Infantaria Real de Valfenda
+trp_i6_riv_champion_pl|Infantaria Real de Valfenda
+trp_ac5_riv_rider|Cavalariço de Valfenda
+trp_ac5_riv_rider_pl|Cavalariços de Valfenda
+trp_ac6_riv_knight|Cavaleiro de Valfenda
+trp_ac6_riv_knight_pl|Cavaleiros de Valfenda
+trp_i6_rivendell_standard_bearer|Carregador de Estandarte de Valfenda
+trp_i6_rivendell_standard_bearer_pl|Carregadores de Estandarte de Valfenda
+trp_a1_arnor_scout|Batedor Dunedain
+trp_a1_arnor_scout_pl|Batedores Dunedain
+trp_a2_arnor_vet_scout|Rastreador Dunedain
+trp_a2_arnor_vet_scout_pl|Rastreadores Dunedain
+trp_i3_arnor_swordsman|Homem de Armas de Arnor
+trp_i3_arnor_swordsman_pl|Homens de Armas de Arnor
+trp_i4_arnor_vet_swordsman|Mestre das Armas de Arnor
+trp_i4_arnor_vet_swordsman_pl|Mestres das Armas de Arnor
+trp_i5_arnor_champion|Alto Espadachim de Arnor
+trp_i5_arnor_champion_pl|Altos Espadachins de Arnor
+trp_c4_arnor_horseman|Cavalariço de Arnor
+trp_c4_arnor_horseman_pl|Cavalariços de Arnor
+trp_c5_arnor_knight|Cavaleiro de Arnor
+trp_c5_arnor_knight_pl|Cavaleiros de Arnor
+trp_a3_arnor_ranger|Ranger Dunedain
+trp_a3_arnor_ranger_pl|Rangers Dunedain
+trp_a4_arnor_vet_ranger|Ranger Veterano Dunedain
+trp_a4_arnor_vet_ranger_pl|Rangers Veteranos Dunedain
+trp_a5_arnor_master_ranger|Ranger Mestre Dunedain
+trp_a5_arnor_master_ranger_pl|Rangers Mestres Dunedain
 trp_i1_rohan_youth|Jovem de Rohan
 trp_i1_rohan_youth_pl|Jovens de Rohan
 trp_i2_guardsman_of_rohan|Guarda de Rohan

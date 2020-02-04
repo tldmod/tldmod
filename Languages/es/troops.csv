@@ -366,52 +366,52 @@ trp_i5_greenwood_chosen_spearmaster|Lancero Real de Thranduil
 trp_i5_greenwood_chosen_spearmaster_pl|Lanceros Reales de Thranduil
 trp_i5_greenwood_standard_bearer|Portaestandarte del Bosque Verde
 trp_i5_greenwood_standard_bearer_pl|Portaestandartes del Bosque Verde
-trp_rivendell_scout|Explorador de Rivendel
-trp_rivendell_scout_pl|Exploradores de Rivendel
-trp_rivendell_veteran_scout|Explorador Veterano de Rivendel
-trp_rivendell_veteran_scout_pl|Exploradores Veteranos de Rivendel
-trp_rivendell_sentinel|Centinela de Rivendel
-trp_rivendell_sentinel_pl|Centinelas de Rivendel
-trp_rivendell_veteran_sentinel|Centinela Veterano de Rivendel
-trp_rivendell_veteran_sentinel_pl|Centinelas Veteranos de Rivendel
-trp_rivendell_elite_sentinel|Centinela de Élite de Rivendel
-trp_rivendell_elite_sentinel_pl|Centinelas de Élite de Rivendel
-trp_rivendell_guardian|Guardián de Rivendel
-trp_rivendell_guardian_pl|Guardianes de Rivendel
-trp_rivendell_infantry|Infante de Rivendel
-trp_rivendell_infantry_pl|Infantería de Rivendel
-trp_rivendell_veteran_infantry|Infante Veterano de Rivendel
-trp_rivendell_veteran_infantry_pl|Infantería Veterana de Rivendel
-trp_rivendell_elite_infantry|Infante de Élite de Rivendel
-trp_rivendell_elite_infantry_pl|Infantería de Élite de Rivendel
-trp_rivendell_royal_infantry|Infante Real de Rivendel
-trp_rivendell_royal_infantry_pl|Infantería Real de Rivendel
-trp_rivendell_cavalry|Caballería de Rivendel
-trp_rivendell_cavalry_pl|Caballería de Rivendel
-trp_knight_of_rivendell|Caballero de Rivendel
-trp_knight_of_rivendell_pl|Caballeros de Rivendel
-trp_rivendell_standard_bearer|Portaestandarte de Rivendel
-trp_rivendell_standard_bearer_pl|Portaestandartes de Rivendel
-trp_dunedain_scout|Explorador Dúnadan
-trp_dunedain_scout_pl|Exploradores Dúnedain
-trp_dunedain_trained_scout|Rastreador Dúnadan
-trp_dunedain_trained_scout_pl|Rastreadores Dúnedain
-trp_arnor_man_at_arms|Hombre de Armas de Arnor
-trp_arnor_man_at_arms_pl|Hombres de Armas de Arnor
-trp_arnor_master_at_arms|Maestro de Armas de Arnor
-trp_arnor_master_at_arms_pl|Maestros de Armas de Arnor
-trp_high_swordsman_of_arnor|Alto Espadachín de Arnor
-trp_high_swordsman_of_arnor_pl|Altos Espadachines de Arnor
-trp_arnor_horsemen|Jinete de Arnor
-trp_arnor_horsemen_pl|Jinetes de Arnor
-trp_knight_of_arnor|Caballero de Arnor
-trp_knight_of_arnor_pl|Caballeros de Arnor
-trp_dunedain_ranger|Montaraz Dúnadan
-trp_dunedain_ranger_pl|Montaraces Dúnedain
-trp_dunedain_veteran_ranger|Montaraz Dúnadan Veterano
-trp_dunedain_veteran_ranger_pl|Montaraces Dúnedain Veteranos
-trp_dunedain_master_ranger|Montaraz Experto Dúnadan
-trp_dunedain_master_ranger_pl|Montaraces Expertos Dúnedain
+trp_a1_riv_scout|Explorador de Rivendel
+trp_a1_riv_scout_pl|Exploradores de Rivendel
+trp_a2_riv_vet_scout|Explorador Veterano de Rivendel
+trp_a2_riv_vet_scout_pl|Exploradores Veteranos de Rivendel
+trp_a3_riv_archer|Centinela de Rivendel
+trp_a3_riv_archer_pl|Centinelas de Rivendel
+trp_a4_riv_vet_archer|Centinela Veterano de Rivendel
+trp_a4_riv_vet_archer_pl|Centinelas Veteranos de Rivendel
+trp_a5_riv_master_archer|Centinela de Élite de Rivendel
+trp_a5_riv_master_archer_pl|Centinelas de Élite de Rivendel
+trp_a6_riv_guardian|Guardián de Rivendel
+trp_a6_riv_guardian_pl|Guardianes de Rivendel
+trp_i3_riv_swordbearer|Infante de Rivendel
+trp_i3_riv_swordbearer_pl|Infantería de Rivendel
+trp_i4_riv_vet_swordbearer|Infante Veterano de Rivendel
+trp_i4_riv_vet_swordbearer_pl|Infantería Veterana de Rivendel
+trp_i5_riv_swordmaster|Infante de Élite de Rivendel
+trp_i5_riv_swordmaster_pl|Infantería de Élite de Rivendel
+trp_i6_riv_champion|Infante Real de Rivendel
+trp_i6_riv_champion_pl|Infantería Real de Rivendel
+trp_ac5_riv_rider|Caballería de Rivendel
+trp_ac5_riv_rider_pl|Caballería de Rivendel
+trp_ac6_riv_knight|Caballero de Rivendel
+trp_ac6_riv_knight_pl|Caballeros de Rivendel
+trp_i6_rivendell_standard_bearer|Portaestandarte de Rivendel
+trp_i6_rivendell_standard_bearer_pl|Portaestandartes de Rivendel
+trp_a1_arnor_scout|Explorador Dúnadan
+trp_a1_arnor_scout_pl|Exploradores Dúnedain
+trp_a2_arnor_vet_scout|Rastreador Dúnadan
+trp_a2_arnor_vet_scout_pl|Rastreadores Dúnedain
+trp_i3_arnor_swordsman|Hombre de Armas de Arnor
+trp_i3_arnor_swordsman_pl|Hombres de Armas de Arnor
+trp_i4_arnor_vet_swordsman|Maestro de Armas de Arnor
+trp_i4_arnor_vet_swordsman_pl|Maestros de Armas de Arnor
+trp_i5_arnor_champion|Alto Espadachín de Arnor
+trp_i5_arnor_champion_pl|Altos Espadachines de Arnor
+trp_c4_arnor_horseman|Jinete de Arnor
+trp_c4_arnor_horseman_pl|Jinetes de Arnor
+trp_c5_arnor_knight|Caballero de Arnor
+trp_c5_arnor_knight_pl|Caballeros de Arnor
+trp_a3_arnor_ranger|Montaraz Dúnadan
+trp_a3_arnor_ranger_pl|Montaraces Dúnedain
+trp_a4_arnor_vet_ranger|Montaraz Dúnadan Veterano
+trp_a4_arnor_vet_ranger_pl|Montaraces Dúnedain Veteranos
+trp_a5_arnor_master_ranger|Montaraz Experto Dúnadan
+trp_a5_arnor_master_ranger_pl|Montaraces Expertos Dúnedain
 trp_i1_rohan_youth|Joven de Rohan
 trp_i1_rohan_youth_pl|Jóvenes de Rohan
 trp_i2_guardsman_of_rohan|Guardia de Rohan

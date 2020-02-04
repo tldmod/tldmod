@@ -366,52 +366,52 @@ trp_i1_beorning_man_pl|Beorningo vyrai
 ; trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Royal Spearmen
 ; trp_i5_greenwood_standard_bearer|Greenwood Standard Bearer
 ; trp_i5_greenwood_standard_bearer_pl|Greenwood Standard Bearers
-; trp_rivendell_scout|Rivendell Scout
-; trp_rivendell_scout_pl|Rivendell Scouts
-; trp_rivendell_veteran_scout|Rivendell Veteran Scout
-; trp_rivendell_veteran_scout_pl|Rivendell Veteran Scouts
-; trp_rivendell_sentinel|Rivendell Sentinel
-; trp_rivendell_sentinel_pl|Rivendell Sentinels
-; trp_rivendell_veteran_sentinel|Rivendell Veteran Sentinel
-; trp_rivendell_veteran_sentinel_pl|Rivendell Veteran Sentinels
-; trp_rivendell_elite_sentinel|Rivendell Elite Sentinel
-; trp_rivendell_elite_sentinel_pl|Rivendell Elite Sentinels
-; trp_rivendell_guardian|Rivendell Guardian
-; trp_rivendell_guardian_pl|Rivendell Guardians
-; trp_rivendell_infantry|Rivendell Infantry
-; trp_rivendell_infantry_pl|Rivendell Infantry
-; trp_rivendell_veteran_infantry|Rivendell Veteran Infantry
-; trp_rivendell_veteran_infantry_pl|Rivendell Veteran Infantry
-; trp_rivendell_elite_infantry|Rivendell Elite Infantry
-; trp_rivendell_elite_infantry_pl|Rivendell Elite Infantry
-; trp_rivendell_royal_infantry|Rivendell Royal Infantry
-; trp_rivendell_royal_infantry_pl|Rivendell Royal Infantry
-; trp_rivendell_cavalry|Rivendell Cavalry
-; trp_rivendell_cavalry_pl|Rivendell Cavalry
-; trp_knight_of_rivendell|Knight of Rivendell
-; trp_knight_of_rivendell_pl|Knights of Rivendell
-; trp_rivendell_standard_bearer|Rivendell Standard Bearer
-; trp_rivendell_standard_bearer_pl|Rivendell Standard Bearers
-; trp_dunedain_scout|Dunedain Scout
-; trp_dunedain_scout_pl|Dunedain Scouts
-; trp_dunedain_trained_scout|Dunedain Tracker
-; trp_dunedain_trained_scout_pl|Dunedain Trackers
-; trp_arnor_man_at_arms|Arnor Man at Arms
-; trp_arnor_man_at_arms_pl|Arnor Men at Arms
-; trp_arnor_master_at_arms|Arnor Master at Arms
-; trp_arnor_master_at_arms_pl|Arnor Masters at Arms
-; trp_high_swordsman_of_arnor|High Swordsman of Arnor
-; trp_high_swordsman_of_arnor_pl|High Swordsmen of Arnor
-; trp_arnor_horsemen|Arnor Horseman
-; trp_arnor_horsemen_pl|Arnor Horsemen
-; trp_knight_of_arnor|Knight of Arnor
-; trp_knight_of_arnor_pl|Knights of Arnor
-; trp_dunedain_ranger|Dunedain Ranger
-; trp_dunedain_ranger_pl|Dunedain Rangers
-; trp_dunedain_veteran_ranger|Dunedain Veteran Ranger
-; trp_dunedain_veteran_ranger_pl|Dunedain Veteran Rangers
-; trp_dunedain_master_ranger|Dunedain Master Ranger
-; trp_dunedain_master_ranger_pl|Dunedain Master Rangers
+; trp_a1_riv_scout|Rivendell Scout
+; trp_a1_riv_scout_pl|Rivendell Scouts
+; trp_a2_riv_vet_scout|Rivendell Veteran Scout
+; trp_a2_riv_vet_scout_pl|Rivendell Veteran Scouts
+; trp_a3_riv_archer|Rivendell Sentinel
+; trp_a3_riv_archer_pl|Rivendell Sentinels
+; trp_a4_riv_vet_archer|Rivendell Veteran Sentinel
+; trp_a4_riv_vet_archer_pl|Rivendell Veteran Sentinels
+; trp_a5_riv_master_archer|Rivendell Elite Sentinel
+; trp_a5_riv_master_archer_pl|Rivendell Elite Sentinels
+; trp_a6_riv_guardian|Rivendell Guardian
+; trp_a6_riv_guardian_pl|Rivendell Guardians
+; trp_i3_riv_swordbearer|Rivendell Infantry
+; trp_i3_riv_swordbearer_pl|Rivendell Infantry
+; trp_i4_riv_vet_swordbearer|Rivendell Veteran Infantry
+; trp_i4_riv_vet_swordbearer_pl|Rivendell Veteran Infantry
+; trp_i5_riv_swordmaster|Rivendell Elite Infantry
+; trp_i5_riv_swordmaster_pl|Rivendell Elite Infantry
+; trp_i6_riv_champion|Rivendell Royal Infantry
+; trp_i6_riv_champion_pl|Rivendell Royal Infantry
+; trp_ac5_riv_rider|Rivendell Cavalry
+; trp_ac5_riv_rider_pl|Rivendell Cavalry
+; trp_ac6_riv_knight|Knight of Rivendell
+; trp_ac6_riv_knight_pl|Knights of Rivendell
+; trp_i6_rivendell_standard_bearer|Rivendell Standard Bearer
+; trp_i6_rivendell_standard_bearer_pl|Rivendell Standard Bearers
+; trp_a1_arnor_scout|Dunedain Scout
+; trp_a1_arnor_scout_pl|Dunedain Scouts
+; trp_a2_arnor_vet_scout|Dunedain Tracker
+; trp_a2_arnor_vet_scout_pl|Dunedain Trackers
+; trp_i3_arnor_swordsman|Arnor Man at Arms
+; trp_i3_arnor_swordsman_pl|Arnor Men at Arms
+; trp_i4_arnor_vet_swordsman|Arnor Master at Arms
+; trp_i4_arnor_vet_swordsman_pl|Arnor Masters at Arms
+; trp_i5_arnor_champion|High Swordsman of Arnor
+; trp_i5_arnor_champion_pl|High Swordsmen of Arnor
+; trp_c4_arnor_horseman|Arnor Horseman
+; trp_c4_arnor_horseman_pl|Arnor Horsemen
+; trp_c5_arnor_knight|Knight of Arnor
+; trp_c5_arnor_knight_pl|Knights of Arnor
+; trp_a3_arnor_ranger|Dunedain Ranger
+; trp_a3_arnor_ranger_pl|Dunedain Rangers
+; trp_a4_arnor_vet_ranger|Dunedain Veteran Ranger
+; trp_a4_arnor_vet_ranger_pl|Dunedain Veteran Rangers
+; trp_a5_arnor_master_ranger|Dunedain Master Ranger
+; trp_a5_arnor_master_ranger_pl|Dunedain Master Rangers
 ; trp_i1_rohan_youth|Rohan Youth
 ; trp_i1_rohan_youth_pl|Rohan Youths
 ; trp_i2_guardsman_of_rohan|Guardsman of Rohan

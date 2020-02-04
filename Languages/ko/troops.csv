@@ -366,52 +366,52 @@ trp_i5_greenwood_chosen_spearmaster|스란두일의 왕실 창병
 trp_i5_greenwood_chosen_spearmaster_pl|스란두일의 왕실 창병
 trp_i5_greenwood_standard_bearer|초록숲 지도자
 trp_i5_greenwood_standard_bearer_pl|초록숲 지도자
-trp_rivendell_scout|리븐델 순찰자
-trp_rivendell_scout_pl|리븐델 순찰자
-trp_rivendell_veteran_scout|리븐델 고참 순찰자
-trp_rivendell_veteran_scout_pl|리븐델 고참 순찰자
-trp_rivendell_sentinel|리븐델 파수꾼
-trp_rivendell_sentinel_pl|리븐델 파수꾼
-trp_rivendell_veteran_sentinel|리븐델 고참 파수꾼
-trp_rivendell_veteran_sentinel_pl|리븐델 고참 파수꾼
-trp_rivendell_elite_sentinel|리븐델 정예 파수꾼
-trp_rivendell_elite_sentinel_pl|리븐델 정예 파수꾼
-trp_rivendell_guardian|리븐델 수호자
-trp_rivendell_guardian_pl|리븐델 수호자
-trp_rivendell_infantry|리븐델 보병
-trp_rivendell_infantry_pl|리븐델 보병
-trp_rivendell_veteran_infantry|리븐델 고참 보병
-trp_rivendell_veteran_infantry_pl|리븐델 고참 보병
-trp_rivendell_elite_infantry|리븐델 정예 보병
-trp_rivendell_elite_infantry_pl|리븐델 정예 보병
-trp_rivendell_royal_infantry|리븐델 왕실 보병
-trp_rivendell_royal_infantry_pl|리븐델 왕실 보병
-trp_rivendell_cavalry|리븐델 기병
-trp_rivendell_cavalry_pl|리븐델 기병
-trp_knight_of_rivendell|리븐델 기사
-trp_knight_of_rivendell_pl|리븐델 기사
-trp_rivendell_standard_bearer|리븐델 지도자
-trp_rivendell_standard_bearer_pl|리븐델 지도자
-trp_dunedain_scout|두네다인 순찰자
-trp_dunedain_scout_pl|두네다인 순찰자
-trp_dunedain_trained_scout|두네다인 길잡이
-trp_dunedain_trained_scout_pl|두네다인 길잡이
-trp_arnor_man_at_arms|아르노르 보병
-trp_arnor_man_at_arms_pl|아르노르 보병
-trp_arnor_master_at_arms|아르노르 중장 보병
-trp_arnor_master_at_arms_pl|아르노르 중장 보병
-trp_high_swordsman_of_arnor|아르노르 고위 검사
-trp_high_swordsman_of_arnor_pl|아르노르 고위 검사
-trp_arnor_horsemen|아르노르 기병
-trp_arnor_horsemen_pl|아르노르 기병
-trp_knight_of_arnor|아르노르 기사
-trp_knight_of_arnor_pl|아르노르 기사
-trp_dunedain_ranger|두네다인 레인저
-trp_dunedain_ranger_pl|두네다인 레인저
-trp_dunedain_veteran_ranger|두네다인 고참 레인저
-trp_dunedain_veteran_ranger_pl|두네다인 고참 레인저
-trp_dunedain_master_ranger|두네다인 정예 레인저
-trp_dunedain_master_ranger_pl|두네다인 정예 레인저
+trp_a1_riv_scout|리븐델 순찰자
+trp_a1_riv_scout_pl|리븐델 순찰자
+trp_a2_riv_vet_scout|리븐델 고참 순찰자
+trp_a2_riv_vet_scout_pl|리븐델 고참 순찰자
+trp_a3_riv_archer|리븐델 파수꾼
+trp_a3_riv_archer_pl|리븐델 파수꾼
+trp_a4_riv_vet_archer|리븐델 고참 파수꾼
+trp_a4_riv_vet_archer_pl|리븐델 고참 파수꾼
+trp_a5_riv_master_archer|리븐델 정예 파수꾼
+trp_a5_riv_master_archer_pl|리븐델 정예 파수꾼
+trp_a6_riv_guardian|리븐델 수호자
+trp_a6_riv_guardian_pl|리븐델 수호자
+trp_i3_riv_swordbearer|리븐델 보병
+trp_i3_riv_swordbearer_pl|리븐델 보병
+trp_i4_riv_vet_swordbearer|리븐델 고참 보병
+trp_i4_riv_vet_swordbearer_pl|리븐델 고참 보병
+trp_i5_riv_swordmaster|리븐델 정예 보병
+trp_i5_riv_swordmaster_pl|리븐델 정예 보병
+trp_i6_riv_champion|리븐델 왕실 보병
+trp_i6_riv_champion_pl|리븐델 왕실 보병
+trp_ac5_riv_rider|리븐델 기병
+trp_ac5_riv_rider_pl|리븐델 기병
+trp_ac6_riv_knight|리븐델 기사
+trp_ac6_riv_knight_pl|리븐델 기사
+trp_i6_rivendell_standard_bearer|리븐델 지도자
+trp_i6_rivendell_standard_bearer_pl|리븐델 지도자
+trp_a1_arnor_scout|두네다인 순찰자
+trp_a1_arnor_scout_pl|두네다인 순찰자
+trp_a2_arnor_vet_scout|두네다인 길잡이
+trp_a2_arnor_vet_scout_pl|두네다인 길잡이
+trp_i3_arnor_swordsman|아르노르 보병
+trp_i3_arnor_swordsman_pl|아르노르 보병
+trp_i4_arnor_vet_swordsman|아르노르 중장 보병
+trp_i4_arnor_vet_swordsman_pl|아르노르 중장 보병
+trp_i5_arnor_champion|아르노르 고위 검사
+trp_i5_arnor_champion_pl|아르노르 고위 검사
+trp_c4_arnor_horseman|아르노르 기병
+trp_c4_arnor_horseman_pl|아르노르 기병
+trp_c5_arnor_knight|아르노르 기사
+trp_c5_arnor_knight_pl|아르노르 기사
+trp_a3_arnor_ranger|두네다인 레인저
+trp_a3_arnor_ranger_pl|두네다인 레인저
+trp_a4_arnor_vet_ranger|두네다인 고참 레인저
+trp_a4_arnor_vet_ranger_pl|두네다인 고참 레인저
+trp_a5_arnor_master_ranger|두네다인 정예 레인저
+trp_a5_arnor_master_ranger_pl|두네다인 정예 레인저
 trp_i1_rohan_youth|로한 신병
 trp_i1_rohan_youth_pl|로한 신병
 trp_i2_guardsman_of_rohan|로한 경비병

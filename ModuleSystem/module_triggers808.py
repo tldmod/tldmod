@@ -523,8 +523,8 @@ triggersfile version 1
         (this_or_next|is_between, ":troop", "trp_a1_blackroot_hunter", "trp_i1_amroth_recruit"),
         (this_or_next|is_between, ":troop", "trp_a1_lorien_scout", "trp_a2_lorien_archer"),
         (this_or_next|is_between, ":troop", "trp_i3_lorien_inf", "trp_i2_greenwood_infantry"),
-        (this_or_next|is_between, ":troop", "trp_rivendell_scout", "trp_dunedain_youth"),
-        (this_or_next|is_between, ":troop", "trp_dunedain_ranger", "trp_gondor_youth"),
+        (this_or_next|is_between, ":troop", "trp_a1_riv_scout", "trp_dunedain_youth"),
+        (this_or_next|is_between, ":troop", "trp_a3_arnor_ranger", "trp_gondor_youth"),
         (this_or_next|is_between, ":troop", "trp_a4_gon_archer", "trp_i1_rohan_youth"),
         (this_or_next|is_between, ":troop", "trp_ac3_skirmisher_of_rohan", "trp_c4_lancer_of_rohan"),
         (this_or_next|is_between, ":troop", "trp_a4_harad_archer", "trp_dunnish_youth"),
@@ -545,7 +545,7 @@ triggersfile version 1
         (this_or_next|eq, ":troop", "trp_veteran_constable"),
         (this_or_next|eq, ":troop", "trp_harad_desert_skirmisher"),
         (this_or_next|is_between, ":troop", "trp_c2_amroth_squire", "trp_a1_lorien_scout"),
-        (this_or_next|is_between, ":troop", "trp_dunedain_horse_master", "trp_dunedain_ranger"),
+        (this_or_next|is_between, ":troop", "trp_dunedain_horse_master", "trp_a3_arnor_ranger"),
         (this_or_next|is_between, ":troop", "trp_c2_gon_squire", "trp_a4_gon_archer"),
         (this_or_next|is_between, ":troop", "trp_c4_lancer_of_rohan", "trp_harad_youth"),
         (this_or_next|is_between, ":troop", "trp_harad_cavalry", "trp_a4_harad_archer"),
@@ -1314,9 +1314,9 @@ triggersfile version 1
 (store_troop_count_companions, reg1, "trp_a4_ithilien_ranger", 0),
 (store_troop_count_companions, reg2, "trp_a5_ithilien_vet_ranger", 0),
 (store_troop_count_companions, reg3, "trp_a6_ithilien_master_ranger", 0),
-(store_troop_count_companions, reg4, "trp_dunedain_ranger", 0),
-(store_troop_count_companions, reg5, "trp_dunedain_veteran_ranger", 0),
-(store_troop_count_companions, reg6, "trp_dunedain_master_ranger", 0),
+(store_troop_count_companions, reg4, "trp_a3_arnor_ranger", 0),
+(store_troop_count_companions, reg5, "trp_a4_arnor_vet_ranger", 0),
+(store_troop_count_companions, reg6, "trp_a5_arnor_master_ranger", 0),
 (store_troop_count_companions, reg7, "trp_i3_lorien_inf", 0),
 (store_troop_count_companions, reg8, "trp_i4_lorien_gal_inf", 0),
 (store_troop_count_companions, reg9, "trp_i5_lorien_gal_royal_inf", 0),
@@ -2183,7 +2183,7 @@ triggersfile version 1
 ]),
 
 (0, 0, ti_once, [], [
-(assign, "$peak_rivendell_scouts", 2),
+(assign, "$peak_a1_riv_scouts", 2),
 (assign, "$peak_rivendell_harassers", 1),
 (assign, "$peak_rivendell_war_parties", 1),
 (assign, "$rivendell_status_counter", 0),
@@ -2191,13 +2191,13 @@ triggersfile version 1
 
 (10.1, 0, 0, [
 (ge, "$rivendell_status", 3),
-(store_num_parties_of_template, reg2, "pt_rivendell_scouts"),
-(neg|ge, reg2, "$peak_rivendell_scouts"),
+(store_num_parties_of_template, reg2, "pt_a1_riv_scouts"),
+(neg|ge, reg2, "$peak_a1_riv_scouts"),
    ], [
 (store_random, reg5, 1, 0),
 (val_add, reg5, "p_rivendell_elf_camp"),
 (set_spawn_radius, 1),
-(spawn_around_party, reg5, "pt_rivendell_scouts"),
+(spawn_around_party, reg5, "pt_a1_riv_scouts"),
 ]),
 
 (10.1, 0, 0, [
@@ -2227,13 +2227,13 @@ triggersfile version 1
 
 (20.1, 24, 0, [
 (eq, "$rivendell_status", 2),
-(store_num_parties_of_template, reg2, "pt_rivendell_scouts"),
-(neg|ge, reg2, "$peak_rivendell_scouts"),
+(store_num_parties_of_template, reg2, "pt_a1_riv_scouts"),
+(neg|ge, reg2, "$peak_a1_riv_scouts"),
    ], [
 (store_random, reg5, 1, 0),
 (val_add, reg5, "p_rivendell_elf_camp"),
 (set_spawn_radius, 1),
-(spawn_around_party, reg5, "pt_rivendell_scouts"),
+(spawn_around_party, reg5, "pt_a1_riv_scouts"),
 ]),
 
 (20.1, 24, 0, [
@@ -2263,13 +2263,13 @@ triggersfile version 1
 
 (40.1, 24, 0, [
 (eq, "$rivendell_status", 1),
-(store_num_parties_of_template, reg2, "pt_rivendell_scouts"),
-(neg|ge, reg2, "$peak_rivendell_scouts"),
+(store_num_parties_of_template, reg2, "pt_a1_riv_scouts"),
+(neg|ge, reg2, "$peak_a1_riv_scouts"),
    ], [
 (store_random, reg5, 1, 0),
 (val_add, reg5, "p_rivendell_elf_camp"),
 (set_spawn_radius, 1),
-(spawn_around_party, reg5, "pt_rivendell_scouts"),
+(spawn_around_party, reg5, "pt_a1_riv_scouts"),
 ]),
 
    (40.1, 24, 0, [
@@ -2307,7 +2307,7 @@ triggersfile version 1
     (val_sub, "$rivendell_status", 1),
     (display_message, "str_rivendell_diminished", 4294901760),
     (display_message, "str_rivendell_spent", 0),
-    (assign, "$peak_rivendell_scouts", 1),
+    (assign, "$peak_a1_riv_scouts", 1),
     (assign, "$peak_rivendell_harassers", 1),
     (assign, "$elven_setback", 1),
     (assign, "$rivendell_status_counter", 0),
@@ -2320,7 +2320,7 @@ triggersfile version 1
     (val_sub, "$rivendell_status", 1),
     (display_message, "str_rivendell_diminished", 4294901760),
     (display_message, "str_rivendell_weak", 0),
-    (assign, "$peak_rivendell_scouts", 1),
+    (assign, "$peak_a1_riv_scouts", 1),
     (assign, "$peak_rivendell_harassers", 2),
     (assign, "$elven_setback", 1),
     (assign, "$rivendell_status_counter", 0),
@@ -2359,7 +2359,7 @@ eq, "$rivendell_status", 1),
     (neg|ge, reg0, "$faction_recovery_chance"),
     (assign, "$rivendell_status_counter", 0),
     (val_add, "$rivendell_status", 1),
-    (assign, "$peak_rivendell_scouts", 1),
+    (assign, "$peak_a1_riv_scouts", 1),
     (assign, "$peak_rivendell_harassers", 2),
     (display_message, "str_rivendell_rallied", 4280453922),
     (display_message, "str_rivendell_weak", 0),
@@ -5261,7 +5261,7 @@ store_random, reg5, 1, 0),
     (neg|ge, reg0, "$faction_recovery_chance"),
     (assign, "$rivendell_status_counter", 0),
     (val_add, "$rivendell_status", 1),
-    (assign, "$peak_rivendell_scouts", 1),
+    (assign, "$peak_a1_riv_scouts", 1),
     (assign, "$peak_rivendell_harassers", 2),
     (display_message, "str_rivendell_rallied", 4280453922),
     (display_message, "str_rivendell_weak", 0),

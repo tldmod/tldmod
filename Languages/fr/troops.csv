@@ -366,52 +366,52 @@ trp_i5_greenwood_chosen_spearmaster|Lancier royal de Thranduil
 trp_i5_greenwood_chosen_spearmaster_pl|Lanciers royaux de Thranduil
 trp_i5_greenwood_standard_bearer|Porte-étendard de Verbois
 trp_i5_greenwood_standard_bearer_pl|Porte-étendards de Verbois
-trp_rivendell_scout|Éclaireur de Fondcombe
-trp_rivendell_scout_pl|Éclaireurs de Fondcombe
-trp_rivendell_veteran_scout|Éclaireur vétéran de Fondcombe
-trp_rivendell_veteran_scout_pl|Éclaireurs vétérans de Fondcombe
-trp_rivendell_sentinel|Sentinelle de Fondcombe
-trp_rivendell_sentinel_pl|Sentinelles de Fondcombe
-trp_rivendell_veteran_sentinel|Sentinelle vétérante de Fondcombe
-trp_rivendell_veteran_sentinel_pl|Sentinelles vétérantes de Fondcombe
-trp_rivendell_elite_sentinel|Sentinelle d’élite de Fondcombe
-trp_rivendell_elite_sentinel_pl|Sentinelles d’élite de Fondcombe
-trp_rivendell_guardian|Gardien de Fondcombe
-trp_rivendell_guardian_pl|Gardiens de Fondcombe
-trp_rivendell_infantry|Fantassin de Fondcombe
-trp_rivendell_infantry_pl|Infanterie de Fondcombe
-trp_rivendell_veteran_infantry|Fantassin vétéran de Fondcombe
-trp_rivendell_veteran_infantry_pl|Infanterie vétérane de Fondcombe
-trp_rivendell_elite_infantry|Fantassin d’élite de Fondcombe
-trp_rivendell_elite_infantry_pl|Infanterie d’élite de Fondcombe
-trp_rivendell_royal_infantry|Garde royal de Fondcombe
-trp_rivendell_royal_infantry_pl|Gardes royaux de Fondcombe
-trp_rivendell_cavalry|Cavalier de Fondcombe
-trp_rivendell_cavalry_pl|Cavalerie de Fondcombe
-trp_knight_of_rivendell|Chevalier de Fondcombe
-trp_knight_of_rivendell_pl|Chevaliers de Fondcombe
-trp_rivendell_standard_bearer|Porte-étendard de Fondcombe
-trp_rivendell_standard_bearer_pl|Porte-étendards de Fondcombe
-trp_dunedain_scout|Éclaireur dúnadan
-trp_dunedain_scout_pl|Éclaireurs dúnedain
-trp_dunedain_trained_scout|Pisteur dúnadan
-trp_dunedain_trained_scout_pl|Pisteurs dúnedain
-trp_arnor_man_at_arms|Homme d'armes de l'Arnor
-trp_arnor_man_at_arms_pl|Hommes d'armes de l'Arnor
-trp_arnor_master_at_arms|Maître d'armes de l'Arnor
-trp_arnor_master_at_arms_pl|Maîtres d'armes de l'Arnor
-trp_high_swordsman_of_arnor|Haut-épéiste de l'Arnor
-trp_high_swordsman_of_arnor_pl|Hauts-épéistes de l'Arnor
-trp_arnor_horsemen|Cavalier de l'Arnor
-trp_arnor_horsemen_pl|Cavaliers de l'Arnor
-trp_knight_of_arnor|Chevalier de l'Arnor
-trp_knight_of_arnor_pl|Chevaliers de l'Arnor
-trp_dunedain_ranger|Rôdeur dúnadan
-trp_dunedain_ranger_pl|Rôdeurs dúnedain
-trp_dunedain_veteran_ranger|Rôdeur dúnadan vétéran
-trp_dunedain_veteran_ranger_pl|Rôdeurs dúnedain vétérans
-trp_dunedain_master_ranger|Maître rôdeur dúnadan
-trp_dunedain_master_ranger_pl|Maîtres-rôdeurs dúnedain
+trp_a1_riv_scout|Éclaireur de Fondcombe
+trp_a1_riv_scout_pl|Éclaireurs de Fondcombe
+trp_a2_riv_vet_scout|Éclaireur vétéran de Fondcombe
+trp_a2_riv_vet_scout_pl|Éclaireurs vétérans de Fondcombe
+trp_a3_riv_archer|Sentinelle de Fondcombe
+trp_a3_riv_archer_pl|Sentinelles de Fondcombe
+trp_a4_riv_vet_archer|Sentinelle vétérante de Fondcombe
+trp_a4_riv_vet_archer_pl|Sentinelles vétérantes de Fondcombe
+trp_a5_riv_master_archer|Sentinelle d’élite de Fondcombe
+trp_a5_riv_master_archer_pl|Sentinelles d’élite de Fondcombe
+trp_a6_riv_guardian|Gardien de Fondcombe
+trp_a6_riv_guardian_pl|Gardiens de Fondcombe
+trp_i3_riv_swordbearer|Fantassin de Fondcombe
+trp_i3_riv_swordbearer_pl|Infanterie de Fondcombe
+trp_i4_riv_vet_swordbearer|Fantassin vétéran de Fondcombe
+trp_i4_riv_vet_swordbearer_pl|Infanterie vétérane de Fondcombe
+trp_i5_riv_swordmaster|Fantassin d’élite de Fondcombe
+trp_i5_riv_swordmaster_pl|Infanterie d’élite de Fondcombe
+trp_i6_riv_champion|Garde royal de Fondcombe
+trp_i6_riv_champion_pl|Gardes royaux de Fondcombe
+trp_ac5_riv_rider|Cavalier de Fondcombe
+trp_ac5_riv_rider_pl|Cavalerie de Fondcombe
+trp_ac6_riv_knight|Chevalier de Fondcombe
+trp_ac6_riv_knight_pl|Chevaliers de Fondcombe
+trp_i6_rivendell_standard_bearer|Porte-étendard de Fondcombe
+trp_i6_rivendell_standard_bearer_pl|Porte-étendards de Fondcombe
+trp_a1_arnor_scout|Éclaireur dúnadan
+trp_a1_arnor_scout_pl|Éclaireurs dúnedain
+trp_a2_arnor_vet_scout|Pisteur dúnadan
+trp_a2_arnor_vet_scout_pl|Pisteurs dúnedain
+trp_i3_arnor_swordsman|Homme d'armes de l'Arnor
+trp_i3_arnor_swordsman_pl|Hommes d'armes de l'Arnor
+trp_i4_arnor_vet_swordsman|Maître d'armes de l'Arnor
+trp_i4_arnor_vet_swordsman_pl|Maîtres d'armes de l'Arnor
+trp_i5_arnor_champion|Haut-épéiste de l'Arnor
+trp_i5_arnor_champion_pl|Hauts-épéistes de l'Arnor
+trp_c4_arnor_horseman|Cavalier de l'Arnor
+trp_c4_arnor_horseman_pl|Cavaliers de l'Arnor
+trp_c5_arnor_knight|Chevalier de l'Arnor
+trp_c5_arnor_knight_pl|Chevaliers de l'Arnor
+trp_a3_arnor_ranger|Rôdeur dúnadan
+trp_a3_arnor_ranger_pl|Rôdeurs dúnedain
+trp_a4_arnor_vet_ranger|Rôdeur dúnadan vétéran
+trp_a4_arnor_vet_ranger_pl|Rôdeurs dúnedain vétérans
+trp_a5_arnor_master_ranger|Maître rôdeur dúnadan
+trp_a5_arnor_master_ranger_pl|Maîtres-rôdeurs dúnedain
 trp_i1_rohan_youth|Recrue du Rohan
 trp_i1_rohan_youth_pl|Recrues du Rohan
 trp_i2_guardsman_of_rohan|Gardien du Rohan

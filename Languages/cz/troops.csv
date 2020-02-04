@@ -366,52 +366,52 @@ trp_i5_greenwood_chosen_spearmaster|Thranduilův vznešený kopiník
 trp_i5_greenwood_chosen_spearmaster_pl|Thranduilovi vznešení kopiníci
 trp_i5_greenwood_standard_bearer|Korouhevník Zeleného hvozdu
 trp_i5_greenwood_standard_bearer_pl|Korouhevníci Zeleného hvozdu
-trp_rivendell_scout|Průzkumník z Roklinky
-trp_rivendell_scout_pl|Průzkumníci z Roklinky
-trp_rivendell_veteran_scout|Průzkumník veterán z Roklinky
-trp_rivendell_veteran_scout_pl|Průzkumníci veteráni z Roklinky
-trp_rivendell_sentinel|Strážce z Roklinky
-trp_rivendell_sentinel_pl|Strážci z Roklinky
-trp_rivendell_veteran_sentinel|Strážce veterán z Roklinky
-trp_rivendell_veteran_sentinel_pl|Strážci veteráni z Roklinky
-trp_rivendell_elite_sentinel|Elitní strážce z Roklinky
-trp_rivendell_elite_sentinel_pl|Elitní strážci z Roklinky
-trp_rivendell_guardian|Obránce z Roklinky
-trp_rivendell_guardian_pl|Obránci z Roklinky
-trp_rivendell_infantry|Pěchota z Roklinky
-trp_rivendell_infantry_pl|Pěchota z Roklinky
-trp_rivendell_veteran_infantry|Veteránská pěchota z Roklinky
-trp_rivendell_veteran_infantry_pl|Veteránská pěchota z Roklinky
-trp_rivendell_elite_infantry|Elitní pěchota z Roklinky
-trp_rivendell_elite_infantry_pl|Elitní pěchota z Roklinky
-trp_rivendell_royal_infantry|Vznešená pěchota z Roklinky
-trp_rivendell_royal_infantry_pl|Vznešená pěchota z Roklinky
-trp_rivendell_cavalry|Jízda z Roklinky
-trp_rivendell_cavalry_pl|Jízda z Roklinky
-trp_knight_of_rivendell|Rytíř z Roklinky
-trp_knight_of_rivendell_pl|Rytíři z Roklinky
-trp_rivendell_standard_bearer|Korouhevník z Roklinky
-trp_rivendell_standard_bearer_pl|Korouhevníci z Roklinky
-trp_dunedain_scout|Dunedaiský průzkumník
-trp_dunedain_scout_pl|Dunedainští průzkumníci
-; trp_dunedain_trained_scout|Dunedain Tracker
-; trp_dunedain_trained_scout_pl|Dunedain Trackers
-; trp_arnor_man_at_arms|Arnor Man at Arms
-; trp_arnor_man_at_arms_pl|Arnor Men at Arms
-; trp_arnor_master_at_arms|Arnor Master at Arms
-; trp_arnor_master_at_arms_pl|Arnor Masters at Arms
-; trp_high_swordsman_of_arnor|High Swordsman of Arnor
-; trp_high_swordsman_of_arnor_pl|High Swordsmen of Arnor
-; trp_arnor_horsemen|Arnor Horseman
-; trp_arnor_horsemen_pl|Arnor Horsemen
-; trp_knight_of_arnor|Knight of Arnor
-; trp_knight_of_arnor_pl|Knights of Arnor
-; trp_dunedain_ranger|Dunedain Ranger
-; trp_dunedain_ranger_pl|Dunedain Rangers
-; trp_dunedain_veteran_ranger|Dunedain Veteran Ranger
-; trp_dunedain_veteran_ranger_pl|Dunedain Veteran Rangers
-; trp_dunedain_master_ranger|Dunedain Master Ranger
-; trp_dunedain_master_ranger_pl|Dunedain Master Rangers
+trp_a1_riv_scout|Průzkumník z Roklinky
+trp_a1_riv_scout_pl|Průzkumníci z Roklinky
+trp_a2_riv_vet_scout|Průzkumník veterán z Roklinky
+trp_a2_riv_vet_scout_pl|Průzkumníci veteráni z Roklinky
+trp_a3_riv_archer|Strážce z Roklinky
+trp_a3_riv_archer_pl|Strážci z Roklinky
+trp_a4_riv_vet_archer|Strážce veterán z Roklinky
+trp_a4_riv_vet_archer_pl|Strážci veteráni z Roklinky
+trp_a5_riv_master_archer|Elitní strážce z Roklinky
+trp_a5_riv_master_archer_pl|Elitní strážci z Roklinky
+trp_a6_riv_guardian|Obránce z Roklinky
+trp_a6_riv_guardian_pl|Obránci z Roklinky
+trp_i3_riv_swordbearer|Pěchota z Roklinky
+trp_i3_riv_swordbearer_pl|Pěchota z Roklinky
+trp_i4_riv_vet_swordbearer|Veteránská pěchota z Roklinky
+trp_i4_riv_vet_swordbearer_pl|Veteránská pěchota z Roklinky
+trp_i5_riv_swordmaster|Elitní pěchota z Roklinky
+trp_i5_riv_swordmaster_pl|Elitní pěchota z Roklinky
+trp_i6_riv_champion|Vznešená pěchota z Roklinky
+trp_i6_riv_champion_pl|Vznešená pěchota z Roklinky
+trp_ac5_riv_rider|Jízda z Roklinky
+trp_ac5_riv_rider_pl|Jízda z Roklinky
+trp_ac6_riv_knight|Rytíř z Roklinky
+trp_ac6_riv_knight_pl|Rytíři z Roklinky
+trp_i6_rivendell_standard_bearer|Korouhevník z Roklinky
+trp_i6_rivendell_standard_bearer_pl|Korouhevníci z Roklinky
+trp_a1_arnor_scout|Dunedaiský průzkumník
+trp_a1_arnor_scout_pl|Dunedainští průzkumníci
+; trp_a2_arnor_vet_scout|Dunedain Tracker
+; trp_a2_arnor_vet_scout_pl|Dunedain Trackers
+; trp_i3_arnor_swordsman|Arnor Man at Arms
+; trp_i3_arnor_swordsman_pl|Arnor Men at Arms
+; trp_i4_arnor_vet_swordsman|Arnor Master at Arms
+; trp_i4_arnor_vet_swordsman_pl|Arnor Masters at Arms
+; trp_i5_arnor_champion|High Swordsman of Arnor
+; trp_i5_arnor_champion_pl|High Swordsmen of Arnor
+; trp_c4_arnor_horseman|Arnor Horseman
+; trp_c4_arnor_horseman_pl|Arnor Horsemen
+; trp_c5_arnor_knight|Knight of Arnor
+; trp_c5_arnor_knight_pl|Knights of Arnor
+; trp_a3_arnor_ranger|Dunedain Ranger
+; trp_a3_arnor_ranger_pl|Dunedain Rangers
+; trp_a4_arnor_vet_ranger|Dunedain Veteran Ranger
+; trp_a4_arnor_vet_ranger_pl|Dunedain Veteran Rangers
+; trp_a5_arnor_master_ranger|Dunedain Master Ranger
+; trp_a5_arnor_master_ranger_pl|Dunedain Master Rangers
 ; trp_i1_rohan_youth|Rohan Youth
 ; trp_i1_rohan_youth_pl|Rohan Youths
 trp_i2_guardsman_of_rohan|Rohansky strazce

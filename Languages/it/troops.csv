@@ -366,52 +366,52 @@ trp_i5_greenwood_chosen_spearmaster|Picchiere Reale di Thranduil
 trp_i5_greenwood_chosen_spearmaster_pl|Picchieri Reali di Thranduil
 trp_i5_greenwood_standard_bearer|Portastendardo di Boscoverde
 trp_i5_greenwood_standard_bearer_pl|Portastendardo di Boscoverde
-trp_rivendell_scout|Esploratore di Gran Burrone
-trp_rivendell_scout_pl|Esploratori di Gran Burrone
-trp_rivendell_veteran_scout|Esploratore Veterano di Gran Burrone
-trp_rivendell_veteran_scout_pl|Esploratori Veterani di Gran Burrone
-trp_rivendell_sentinel|Sentinella di Gran Burrone
-trp_rivendell_sentinel_pl|Sentinelle di Gran Burrone
-trp_rivendell_veteran_sentinel|Sentinella Veterana di Gran Burrone
-trp_rivendell_veteran_sentinel_pl|Sentinelle Veterane di Gran Burrone
-trp_rivendell_elite_sentinel|Sentinella d'Élite di Gran Burrone
-trp_rivendell_elite_sentinel_pl|Sentinelle d'Élite di Gran Burrone
-trp_rivendell_guardian|Guardiano di Gran Burrone
-trp_rivendell_guardian_pl|Guardiani di Gran Burrone
-trp_rivendell_infantry|Fante di Gran Burrone
-trp_rivendell_infantry_pl|Fanti di Gran Burrone
-trp_rivendell_veteran_infantry|Fante Veterano di Gran Burrone
-trp_rivendell_veteran_infantry_pl|Fanti Veterani di Gran Burrone
-trp_rivendell_elite_infantry|Fante d'Élite di Gran Burrone
-trp_rivendell_elite_infantry_pl|FantI d'Élite di Gran Burrone
-trp_rivendell_royal_infantry|Fante Reale di Gran Burrone
-trp_rivendell_royal_infantry_pl|Fanti Reali di Gran Burrone
-trp_rivendell_cavalry|Cavallerizzo di Gran Burrone
-trp_rivendell_cavalry_pl|Cavallerizzi di Gran Burrone
-trp_knight_of_rivendell|Cavaliere di Gran Burrone
-trp_knight_of_rivendell_pl|Cavalieri di Gran Burrone
-trp_rivendell_standard_bearer|Portastendardo di Gran Burrone
-trp_rivendell_standard_bearer_pl|Portastendardi di Gran Burrone
-trp_dunedain_scout|Esploratore Dunedain
-trp_dunedain_scout_pl|Esploratori Dunedain
-trp_dunedain_trained_scout|Inseguitore Dunedain
-trp_dunedain_trained_scout_pl|Inseguitori Dunedain
-trp_arnor_man_at_arms|Armigero di Arnor
-trp_arnor_man_at_arms_pl|Armigeri di Arnor
-trp_arnor_master_at_arms|Mastro d'Armi di Arnor
-trp_arnor_master_at_arms_pl|Mastri d'Armi di Arnor
-trp_high_swordsman_of_arnor|Spadaccino Esperto di Arnor
-trp_high_swordsman_of_arnor_pl|Spadaccini Esperti di Arnor
-trp_arnor_horsemen|Cavallerizzo di Arnor
-trp_arnor_horsemen_pl|Cavallerizzi di Arnor
-trp_knight_of_arnor|Cavaliere di Arnor
-trp_knight_of_arnor_pl|Cavalieri di Arnor
-trp_dunedain_ranger|Guardia della Foresta Dunedain
-trp_dunedain_ranger_pl|Guardie della Foresta Dunedain
-trp_dunedain_veteran_ranger|Guardia della Foresta Veterana Dunedain
-trp_dunedain_veteran_ranger_pl|Guardie della Foresta Veterane Dunedain
-trp_dunedain_master_ranger|Guardia della Foresta Esperta Dunedain
-trp_dunedain_master_ranger_pl|Guardie della Foresta Esperte Dunedain
+trp_a1_riv_scout|Esploratore di Gran Burrone
+trp_a1_riv_scout_pl|Esploratori di Gran Burrone
+trp_a2_riv_vet_scout|Esploratore Veterano di Gran Burrone
+trp_a2_riv_vet_scout_pl|Esploratori Veterani di Gran Burrone
+trp_a3_riv_archer|Sentinella di Gran Burrone
+trp_a3_riv_archer_pl|Sentinelle di Gran Burrone
+trp_a4_riv_vet_archer|Sentinella Veterana di Gran Burrone
+trp_a4_riv_vet_archer_pl|Sentinelle Veterane di Gran Burrone
+trp_a5_riv_master_archer|Sentinella d'Élite di Gran Burrone
+trp_a5_riv_master_archer_pl|Sentinelle d'Élite di Gran Burrone
+trp_a6_riv_guardian|Guardiano di Gran Burrone
+trp_a6_riv_guardian_pl|Guardiani di Gran Burrone
+trp_i3_riv_swordbearer|Fante di Gran Burrone
+trp_i3_riv_swordbearer_pl|Fanti di Gran Burrone
+trp_i4_riv_vet_swordbearer|Fante Veterano di Gran Burrone
+trp_i4_riv_vet_swordbearer_pl|Fanti Veterani di Gran Burrone
+trp_i5_riv_swordmaster|Fante d'Élite di Gran Burrone
+trp_i5_riv_swordmaster_pl|FantI d'Élite di Gran Burrone
+trp_i6_riv_champion|Fante Reale di Gran Burrone
+trp_i6_riv_champion_pl|Fanti Reali di Gran Burrone
+trp_ac5_riv_rider|Cavallerizzo di Gran Burrone
+trp_ac5_riv_rider_pl|Cavallerizzi di Gran Burrone
+trp_ac6_riv_knight|Cavaliere di Gran Burrone
+trp_ac6_riv_knight_pl|Cavalieri di Gran Burrone
+trp_i6_rivendell_standard_bearer|Portastendardo di Gran Burrone
+trp_i6_rivendell_standard_bearer_pl|Portastendardi di Gran Burrone
+trp_a1_arnor_scout|Esploratore Dunedain
+trp_a1_arnor_scout_pl|Esploratori Dunedain
+trp_a2_arnor_vet_scout|Inseguitore Dunedain
+trp_a2_arnor_vet_scout_pl|Inseguitori Dunedain
+trp_i3_arnor_swordsman|Armigero di Arnor
+trp_i3_arnor_swordsman_pl|Armigeri di Arnor
+trp_i4_arnor_vet_swordsman|Mastro d'Armi di Arnor
+trp_i4_arnor_vet_swordsman_pl|Mastri d'Armi di Arnor
+trp_i5_arnor_champion|Spadaccino Esperto di Arnor
+trp_i5_arnor_champion_pl|Spadaccini Esperti di Arnor
+trp_c4_arnor_horseman|Cavallerizzo di Arnor
+trp_c4_arnor_horseman_pl|Cavallerizzi di Arnor
+trp_c5_arnor_knight|Cavaliere di Arnor
+trp_c5_arnor_knight_pl|Cavalieri di Arnor
+trp_a3_arnor_ranger|Guardia della Foresta Dunedain
+trp_a3_arnor_ranger_pl|Guardie della Foresta Dunedain
+trp_a4_arnor_vet_ranger|Guardia della Foresta Veterana Dunedain
+trp_a4_arnor_vet_ranger_pl|Guardie della Foresta Veterane Dunedain
+trp_a5_arnor_master_ranger|Guardia della Foresta Esperta Dunedain
+trp_a5_arnor_master_ranger_pl|Guardie della Foresta Esperte Dunedain
 trp_i1_rohan_youth|Giovane di Rohan
 trp_i1_rohan_youth_pl|Giovani di Rohan
 trp_i2_guardsman_of_rohan|Guardia di Rohan
