@@ -2916,7 +2916,51 @@ scene_props = [
 ("Dale_Bell_Tower_wood",0,"Dale_church_tower_wood","bo_Dale_church_tower_a", []),
 ("Dale_Bell",0,"Dale_bell","0", []),
 
-#InVain props end
+("animal_goat",sokf_invisible,"bry_goat","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(store_random_in_range, ":animal_var", 1, 3),														 
+	        (try_begin),
+	        	(eq, ":animal_var",1),
+				(spawn_horse,"itm_animal_small", 0),
+	        (else_try),
+	        	(spawn_horse,"itm_animal_small", imod_cracked),
+			(try_end),
+			])]),
+("animal_cow",sokf_invisible,"bry_cow_a","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(store_random_in_range, ":animal_var", 1, 5),														 
+	        (try_begin),
+	        	(eq, ":animal_var",1),
+				(spawn_horse,"itm_animal_big", 0),
+	        (else_try),
+	        	(eq, ":animal_var",2),
+				(spawn_horse,"itm_animal_big", imod_cracked),
+	        (else_try),
+	        	(eq, ":animal_var",3),
+				(spawn_horse,"itm_animal_big", imod_rusty),
+	        (else_try),
+				(spawn_horse,"itm_animal_big", imod_bent),
+			(try_end),
+			(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+("animal_donkey",sokf_invisible,"bry_wild_donkey","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+  (spawn_horse,"itm_animal_big", imod_rotten),])]),
+("animal_aurochs",sokf_invisible,"spak_yak1","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(store_random_in_range, ":animal_var", 1, 3),														 
+	        (try_begin),
+	        	(eq, ":animal_var",1),
+				(spawn_horse,"itm_animal_big", imod_smelling),
+	        (else_try),
+	        	(spawn_horse,"itm_animal_big", imod_large_bag),
+			(try_end),
+			])]),
+("animal_wolf",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+  (spawn_horse,"itm_wolf", 0),])]),
+("animal_bear",sokf_invisible,"bear","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+  (spawn_horse,"itm_bear", 0),])]),
 
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),

@@ -207,10 +207,10 @@ itemsfile version 2
  itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  4097 0 3000 16106389504 0 100 0 45 0 5 180 62 35 0 0 62 0
 0
 
- itm_free_axe_a Northmen_Axe Northmen_Axe 2  axe_a 0  axe_a_carry 3458764513820540928  80019458 9223388530091229198 300 287892 2 100 0 0 0 0 25600 105 0 45 0 256 25
+ itm_animal_big Big_Animal Big_Animal 7  bry_cow_a 0  bry_cow_b 2  bry_cow_c 4  bry_cow_d 8  bry_wild_donkey 2199023255552  spak_yak1 1099511627776  spak_yak2 4398046511104  18014398509481984 0 10 16106389504 0 10 0 0 0 10 25 5 5 90 0 0 0
 0
 
- itm_free_axe_b Northmen_Bearded_Axe Northmen_Bearded_Axe 2  axe_b 0  axe_b_carry 3458764513820540928  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 27648 98 0 47 0 256 27
+ itm_animal_small Small_Animal Small_Animal 2  bry_goat 0  bry_goat_c 2  18014398509481984 0 10 16106389504 0 10 0 0 0 10 25 5 5 40 0 0 0
 0
 
  itm_free_axe_c Northmen_Axe Northmen_Axe 2  axe_c 0  axe_c_carry 3458764513820540928  80019458 9223388530091229198 350 287892 2 100 0 0 0 0 29696 96 0 57 0 256 29
