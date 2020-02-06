@@ -1,43 +1,43 @@
-; imod_plain|Plain %s
-imod_cracked|Φτωχό
-imod_rusty|Ακατέργαστο
-imod_bent|Στραβό
-; imod_chipped|Chipped %s
-; imod_battered|Battered %s
-imod_poor|Φτωχό
-; imod_crude|Simple %s
-; imod_old|Ancient %s
-imod_cheap|Φτηνό
-imod_fine|Έξοχο
-imod_well_made|Καλοφτιαγμένο
-imod_sharp|Κοφτερό
-imod_balanced|Ισορροπημένη
-; imod_tempered|Tempered %s
-imod_deadly|Θανάσιμο
-; imod_exquisite|Exquisite %s
-; imod_masterwork|Masterwork %s
-; imod_heavy|Heavy %s
-; imod_strong|Strong %s
-; imod_powerful|Powerful %s
-; imod_tattered|Tattered %s
-; imod_ragged|Rough %s
-; imod_rough|Rough %s
-; imod_sturdy|Sturdy %s
-; imod_thick|Robust %s
-; imod_hardened|Hardened %s
-; imod_reinforced|Reinforced %s
-; imod_superb|Superb %s
-; imod_lordly|Masterwork %s
-; imod_lame|Lame %s
-; imod_swaybacked|Swaybacked %s
-; imod_stubborn|Stubborn %s
-; imod_timid|Timid %s
-; imod_meek|Meek %s
-; imod_spirited|Spirited %s
-; imod_champion|Champion %s
-; imod_fresh|Fresh %s
-; imod_day_old|Day-old %s
-; imod_two_day_old|Two Days-old %s
-; imod_smelling|Smelling %s
-; imod_rotten|Rotten %s
-; imod_large_bag|Large Bag of %s
+imod_plain|Σκέτο %s
+imod_cracked|Φτωχό %s
+imod_rusty|Ακατέργαστο %s
+imod_bent|Στραβό %s
+imod_chipped|Φαγωμένο %s
+imod_battered|Ταλαιπωρημένο %s
+imod_poor|Φτωχό %s
+imod_crude|Απλό %s
+imod_old|Αρχαίο %s
+imod_cheap|Φτηνό %s
+imod_fine|Έξοχο %s
+imod_well_made|Καλοφτιαγμένο %s
+imod_sharp|Κοφτερό %s
+imod_balanced|Ισορροπημένο %s
+imod_tempered|Σκληρυμένο %s
+imod_deadly|Θανάσιμο %s
+imod_exquisite|Έξοχο %s
+imod_masterwork|Αριστούργημα %s
+imod_heavy|Βαρύ %s
+imod_strong|Ανθεκτικό %s
+imod_powerful|Δυνατό %s
+imod_tattered|Κουρελιασμένο %s
+imod_ragged|Χοντρό %s
+imod_rough|Χοντρό %s
+imod_sturdy|Ισχυρό %s
+imod_thick|Ανθεκτικό %s
+imod_hardened|Σκληρυμένο %s
+imod_reinforced|Ενισχυμένο %s
+imod_cloak|%s με μανδύα
+imod_lordly|Αριστούργημα %s
+imod_lame|Κουτσό %s
+imod_swaybacked|Προβληματικό %s
+imod_stubborn|Πεισματάρικο %s
+imod_timid|Δειλό %s
+imod_meek|Αιματοβαμμένο %s
+imod_spirited|Σθεναρό %s
+imod_champion|Πρωταθλητής %s
+imod_fresh|Φρέσκο %s
+imod_day_old|Μιας μέρας %s
+imod_two_day_old|Δύο ημερών %s
+imod_smelling|%s που μυρίζει
+imod_rotten|Σάπιο %s
+imod_large_bag|Μεγάλη Φαρέτρα με %s

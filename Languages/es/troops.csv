@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|Arqueros de Pinnath Gelin
 trp_c6_pinnath_leader|Capitán de Pinnath Gelin
 trp_c6_pinnath_leader_pl|Capitanes de Pinnath Gelin
 trp_a1_blackroot_hunter|Cazador del Valle de la Raíz Negra
-trp_a1_blackroot_hunter_pl|Cazadores del Valle de la Raíz Negra
+; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
 trp_a2_blackroot_bowman|Hombre con Arco del Valle de la Raíz Negra
 trp_a2_blackroot_bowman_pl|Hombres con Arco del Valle de la Raíz Negra
 trp_a3_blackroot_archer|Arquero del Valle de la Raíz Negra
@@ -316,24 +316,24 @@ trp_a5_lorien_gal_royal_warden|Maestro Arquero de Lórien
 trp_a5_lorien_gal_royal_warden_pl|Maestros Arqueros de Lórien
 trp_a6_lorien_grey_warden|Arquero Real Galadhrim
 trp_a6_lorien_grey_warden_pl|Arqueros Reales Galadhrim
-trp_a5_lorien_gal_royal_archer|Tirador Real Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Tiradores Reales Galadhrim
+trp_galadhrim_royal_marksman|Tirador Real Galadhrim
+trp_galadhrim_royal_marksman_pl|Tiradores Reales Galadhrim
 trp_noldorin_mounted_archer|Arquero Montado Noldorin
 trp_noldorin_mounted_archer_pl|Arqueros Montados Noldorin
 trp_a2_lorien_archer|Infante de Lórien
-trp_a2_lorien_archer_pl|Infantería de Lórien
+trp_a2_lorien_archer_pl|Infante de Lórien
 trp_a3_lorien_vet_archer|Infante Veterano de Lórien
-trp_a3_lorien_vet_archer_pl|Infantería Veterana de Lórien
+trp_a3_lorien_vet_archer_pl|Infante Veterano de Lórien
 trp_a4_lorien_gal_archer|Infante de Élite de Lórien
-trp_a4_lorien_gal_archer_pl|Infantería de Élite de Lórien
+trp_a4_lorien_gal_archer_pl|Infante de Élite de Lórien
 trp_i5_lorien_gal_royal_inf|Espadachín Real Galadhrim
 trp_i5_lorien_gal_royal_inf_pl|Espadachines Reales Galadhrim
 trp_i3_lorien_inf|Guardián de Lórien
 trp_i3_lorien_inf_pl|Guardianes de Lórien
 trp_i4_lorien_gal_inf|Guardián Veterano de Lórien
 trp_i4_lorien_gal_inf_pl|Guardianes Veteranos de Lórien
-trp_galadhrim_royal_marksman|Guardián Real Galadhrim
-trp_galadhrim_royal_marksman_pl|Guardianes Reales Galadhrim
+trp_a5_lorien_gal_royal_archer|Guardián Real Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Guardianes Reales Galadhrim
 trp_lothlorien_standard_bearer|Portaestandarte de Lórien
 trp_lothlorien_standard_bearer_pl|Portaestandartes de Lórien
 trp_a1_greenwood_scout|Explorador del Bosque Verde
@@ -379,13 +379,13 @@ trp_a5_riv_master_archer_pl|Centinelas de Élite de Rivendel
 trp_a6_riv_guardian|Guardián de Rivendel
 trp_a6_riv_guardian_pl|Guardianes de Rivendel
 trp_i3_riv_swordbearer|Infante de Rivendel
-trp_i3_riv_swordbearer_pl|Infantería de Rivendel
+trp_i3_riv_swordbearer_pl|Infante de Rivendel
 trp_i4_riv_vet_swordbearer|Infante Veterano de Rivendel
-trp_i4_riv_vet_swordbearer_pl|Infantería Veterana de Rivendel
+trp_i4_riv_vet_swordbearer_pl|Infante Veterano de Rivendel
 trp_i5_riv_swordmaster|Infante de Élite de Rivendel
-trp_i5_riv_swordmaster_pl|Infantería de Élite de Rivendel
+trp_i5_riv_swordmaster_pl|Infante de Élite de Rivendel
 trp_i6_riv_champion|Infante Real de Rivendel
-trp_i6_riv_champion_pl|Infantería Real de Rivendel
+trp_i6_riv_champion_pl|Infante Real de Rivendel
 trp_ac5_riv_rider|Caballería de Rivendel
 trp_ac5_riv_rider_pl|Caballería de Rivendel
 trp_ac6_riv_knight|Caballero de Rivendel
@@ -467,7 +467,7 @@ trp_dismounted_thengel_guard_of_rohan_pl|Guardias Thengel de Rohan
 trp_i1_harad_levy|Recluta de Harad
 trp_i1_harad_levy_pl|Reclutas de Harad
 trp_i3_harad_infantry|Infante Ligero Haradrim
-trp_i3_harad_infantry_pl|Infantería Ligera Haradrim
+trp_i3_harad_infantry_pl|Infante Ligero Haradrim
 trp_i4_harad_spearman|Lancero de Harad
 trp_i4_harad_spearman_pl|Lanceros de Harad
 trp_i5_harad_tiger_guard|Guardia Tigre
@@ -496,7 +496,7 @@ trp_ac4_harondor_horse_archer|Arquero Montado de Harondor
 trp_ac4_harondor_horse_archer_pl|Arqueros Montados de Harondor
 trp_ac5_harondor_black_snake|Arquero Montado de la Serpiente Negra
 trp_ac5_harondor_black_snake_pl|Arqueros Montados de la Serpiente Negra
-trp_i2_far_harad_tribesman|Miembro de las Tribus del Lejano Harad
+trp_i2_far_harad_tribesman|Miembro de las tribus de la Lejana Harad
 trp_i2_far_harad_tribesman_pl|Miembros de las Tribus del Lejano Harad
 trp_i4_far_harad_champion|Campeón del Lejano Harad
 trp_i4_far_harad_champion_pl|Campeones del Lejano Harad
@@ -638,7 +638,7 @@ trp_i1_isen_uruk_snaga|Uruk-hai Neonato
 trp_i1_isen_uruk_snaga_pl|Uruk-hai Neonatos
 trp_i2_isen_uruk|Uruk-hai de Isengard
 trp_i2_isen_uruk_pl|Uruk-hai de Isengard
-trp_i3_isen_large_uruk|Gran Uruk-hai de Isengard
+trp_i3_isen_large_uruk|Grandes Uruk-hai de Isengard
 trp_i3_isen_large_uruk_pl|Grandes Uruk-hai de Isengard
 trp_i4_isen_fighting_uruk_warrior|Guerrero Uruk-hai
 trp_i4_isen_fighting_uruk_warrior_pl|Guerreros Uruk-hai
@@ -1037,7 +1037,7 @@ trp_knight_4_1|Castigador Snog
 trp_knight_4_2|Castigador Snotgor
 trp_knight_4_6|General Tuskim
 trp_knight_4_7|General Mugslag
-trp_knight_4_11|Beranhelm
+; trp_knight_4_11|Ruel
 trp_knight_4_12|Beranor Pielnegra
 trp_knight_4_16|Castigador Brolgukhsh
 trp_knight_4_17|Castigador Grumrunt

@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|Arqueiros de Elite de Pinnath Gelin
 trp_c6_pinnath_leader|Capitão de Pinnath Gelin
 trp_c6_pinnath_leader_pl|Capitães de Pinnath Gelin
 trp_a1_blackroot_hunter|Caçador do Vale Raiznegra
-trp_a1_blackroot_hunter_pl|Caçadores do Vale Raiznegra
+; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
 trp_a2_blackroot_bowman|Arqueiro Veterano do Vale Raiznegra
 trp_a2_blackroot_bowman_pl|Arqueiros Veterano do Vale Raiznegra
 trp_a3_blackroot_archer|Arqueiro Mestre do Vale Raiznegra
@@ -305,7 +305,7 @@ trp_c6_amroth_swan_knight_pl|Cavaleiros Cisne de Dol Amroth
 trp_c6_amroth_leader|Capitão de Dol Amroth
 trp_c6_amroth_leader_pl|Capitães de Dol Amroth
 trp_a1_lorien_scout|Batedor de Lothlorien
-trp_a1_lorien_scout_pl|Batedores Lothlorianos
+trp_a1_lorien_scout_pl|Batedores de Lothlorien
 trp_a2_lorien_warden|Batedor Veterano de Lothlorien
 trp_a2_lorien_warden_pl|Batedores Veteranos de Lothlorien
 trp_a3_lorien_vet_warden|Arqueiro de Lothlorien
@@ -316,15 +316,15 @@ trp_a5_lorien_gal_royal_warden|Arqueiro Mestre de Lothlorien
 trp_a5_lorien_gal_royal_warden_pl|Arqueiros Mestres de Lothlorien
 trp_a6_lorien_grey_warden|Arqueiro Real de Galadhrim
 trp_a6_lorien_grey_warden_pl|Arqueiros Reais de Galadhrim
-trp_a5_lorien_gal_royal_archer|Atirador Real de Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Atiradores Reais de Galadhrim
+trp_galadhrim_royal_marksman|Atirador Real de Galadhrim
+trp_galadhrim_royal_marksman_pl|Atiradores Reais de Galadhrim
 trp_noldorin_mounted_archer|Arqueiro Montado Noldorin
 trp_noldorin_mounted_archer_pl|Arqueiros Montados Noldorin
-trp_a2_lorien_archer|Soldado de Infantaria de Lothlorien
+trp_a2_lorien_archer|Infantaria de Lothlorien
 trp_a2_lorien_archer_pl|Infantaria de Lothlorien
-trp_a3_lorien_vet_archer|Soldado de Infantaria Veterano de Lothlorien
+trp_a3_lorien_vet_archer|Infantaria Veterana de Lothlorien
 trp_a3_lorien_vet_archer_pl|Infantaria Veterana de Lothlorien
-trp_a4_lorien_gal_archer|Soldado de Infantaria de Elite de Lothlorien
+trp_a4_lorien_gal_archer|Infantaria de Elite de Lothlorien
 trp_a4_lorien_gal_archer_pl|Infantaria de Elite de Lothlorien
 trp_i5_lorien_gal_royal_inf|Galadhrim Real Espadachim
 trp_i5_lorien_gal_royal_inf_pl|Espadachins Reais de Galadhrim
@@ -332,8 +332,8 @@ trp_i3_lorien_inf|Guardião de Lothlorien
 trp_i3_lorien_inf_pl|Guardiões de Lothlorien
 trp_i4_lorien_gal_inf|Guardião Veterano de Lothlorien
 trp_i4_lorien_gal_inf_pl|Guardiões Veteranos de Lothlorien
-trp_galadhrim_royal_marksman|Guardião Real de Galadhrim
-trp_galadhrim_royal_marksman_pl|Guardiões Reais de Galadhrim
+trp_a5_lorien_gal_royal_archer|Guardião Real de Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Guardiões Reais de Galadhrim
 trp_lothlorien_standard_bearer|Carregador de Estandarte de Lothlorien
 trp_lothlorien_standard_bearer_pl|Carregadores de Estandarte de Lothlorien
 trp_a1_greenwood_scout|Batedor de Greenwood
@@ -378,15 +378,15 @@ trp_a5_riv_master_archer|Sentinela de Elite de Valfenda
 trp_a5_riv_master_archer_pl|Sentinelas de Elite de Valfenda
 trp_a6_riv_guardian|Guardião de Valfenda
 trp_a6_riv_guardian_pl|Guardiões de Valfenda
-trp_i3_riv_swordbearer|Soldado de Infantaria de Valfenda
+trp_i3_riv_swordbearer|Infantaria de Valfenda
 trp_i3_riv_swordbearer_pl|Infantaria de Valfenda
-trp_i4_riv_vet_swordbearer|Soldado de Infantaria Veterano de Valfenda
+trp_i4_riv_vet_swordbearer|Infantaria Veterana de Valfenda
 trp_i4_riv_vet_swordbearer_pl|Infantaria Veterana de Valfenda
-trp_i5_riv_swordmaster|Soldado de Infantaria de Elite de Valfenda
+trp_i5_riv_swordmaster|Infantaria de Elite de Valfenda
 trp_i5_riv_swordmaster_pl|Infantaria de Elite de Valfenda
-trp_i6_riv_champion|Soldado de Infantaria Real de Valfenda
+trp_i6_riv_champion|Infantaria Real de Valfenda
 trp_i6_riv_champion_pl|Infantaria Real de Valfenda
-trp_ac5_riv_rider|Cavalariço de Valfenda
+trp_ac5_riv_rider|Cavalariços de Valfenda
 trp_ac5_riv_rider_pl|Cavalariços de Valfenda
 trp_ac6_riv_knight|Cavaleiro de Valfenda
 trp_ac6_riv_knight_pl|Cavaleiros de Valfenda
@@ -466,7 +466,7 @@ trp_dismounted_thengel_guard_of_rohan|Guarda Thengel Desmontado de Rohan
 trp_dismounted_thengel_guard_of_rohan_pl|Guardas Thengel Desmontados de Rohan
 trp_i1_harad_levy|Guerreiro de Harad
 trp_i1_harad_levy_pl|Guerreiros de Harad
-trp_i3_harad_infantry|Soldado de Infantaria Leve de Harad
+trp_i3_harad_infantry|Infantaria Leve de Harad
 trp_i3_harad_infantry_pl|Infantaria Leve de Harad
 trp_i4_harad_spearman|Soldado de Infantaria de Harad
 trp_i4_harad_spearman_pl|Infantaria de Harad 
@@ -486,7 +486,7 @@ trp_c2_harondor_scout|Batedor de Harondor
 trp_c2_harondor_scout_pl|Batedores de Harondor 
 trp_c3_harondor_rider|Cavaleiro de Harondor 
 trp_c3_harondor_rider_pl|Cavaleiros de Harondor 
-trp_c4_harondor_light_cavalry|Cavaleiro Leve de Harondor
+trp_c4_harondor_light_cavalry|Cavalaria Leve de Harondor
 trp_c4_harondor_light_cavalry_pl|Cavalaria Leve de Harondor
 trp_c5_harondor_serpent_knight|Cavaleiro da Serpente de Ouro
 trp_c5_harondor_serpent_knight_pl|Cavaleiros da Serpente de Ouro
@@ -496,7 +496,7 @@ trp_ac4_harondor_horse_archer|Arqueiro á Cavalo de Harondor
 trp_ac4_harondor_horse_archer_pl|Arqueiros á Cavalo de Harondor
 trp_ac5_harondor_black_snake|Arqueiro Montado da Serpente Negra
 trp_ac5_harondor_black_snake_pl|Arqueiros Montados da Serpente Negra
-trp_i2_far_harad_tribesman|Tribal de Distante Harad
+trp_i2_far_harad_tribesman|Homem da tribo de Harad Distante
 trp_i2_far_harad_tribesman_pl|Tribais de Distante Harad
 trp_i4_far_harad_champion|Campeão de Distante Harad
 trp_i4_far_harad_champion_pl|Campeões de Distante Harad
@@ -638,7 +638,7 @@ trp_i1_isen_uruk_snaga|Uruk Hai Recém Nascido
 trp_i1_isen_uruk_snaga_pl|Uruk Hai Recém Nascidos
 trp_i2_isen_uruk|Uruk Hai de Isengard
 trp_i2_isen_uruk_pl|Uruk Hai de Isengard
-trp_i3_isen_large_uruk|Uruk Hai Grande de Isengard
+trp_i3_isen_large_uruk|Uruk Hai Grandes de Isengard
 trp_i3_isen_large_uruk_pl|Uruk Hai Grandes de Isengard
 trp_i4_isen_fighting_uruk_warrior|Uruk Hai Lutador Guerreiro
 trp_i4_isen_fighting_uruk_warrior_pl|Uruk Hai Lutadores Guerreiros
@@ -1037,7 +1037,7 @@ trp_knight_4_1|Chicote Snog
 trp_knight_4_2|Chicote Snotgor
 trp_knight_4_6|General Tuskim
 trp_knight_4_7|General Mugslag
-trp_knight_4_11|Beranhelm
+; trp_knight_4_11|Ruel
 trp_knight_4_12|Beranor Couronegro
 trp_knight_4_16|Chicote Brolgukhsh
 trp_knight_4_17|Chicote Grumrunt

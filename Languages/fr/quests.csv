@@ -54,7 +54,7 @@ qst_scout_waypoints_text|Aucune
 qst_move_cattle_herd|Déplacer {s12} à {s13}
 qst_move_cattle_herd_text|L'ancien de {s10} vous a demandé de déplacer {s12} à {s13}.
 qst_escort_merchant_caravan|Escorter un convoi de ravitaillement à {s8}
-qst_escort_merchant_caravan_text|Escortez le train de fournitures à {s8} et parlez leur quand vous serez à proximité.
+qst_escort_merchant_caravan_text|Escortez le convoi de ravitaillement à {s8} et parlez leur quand vous serez à proximité.
 qst_deliver_wine|Délivrer {reg5} unités de {s6} à {s4}
 qst_deliver_wine_text|Le {s9} de {s3} vous a demandé de livrer {reg5} unités de {s6} à {s4} en 7 jours.
 qst_troublesome_bandits|Traquez les gobelins gênants.
@@ -81,9 +81,9 @@ qst_deliver_message_hobbit|Au sujet des Hobbits
 qst_blank_quest_01|Défendez les réfugiés
 qst_blank_quest_02|Pourchassez les réfugiés
 qst_blank_quest_03|Bataille navale
-qst_blank_quest_04|Éliminez {s35} {s36} de {s7}
+qst_blank_quest_04|Éliminez {s35} {s6} de {s7}
 qst_blank_quest_05|Éliminez {s35} {s36} troupes.
-qst_blank_quest_06|Défaite {s35} en bataille.
+qst_blank_quest_06|Défaire {s35} au combat.
 
 
 

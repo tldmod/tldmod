@@ -316,13 +316,13 @@ trp_a5_lorien_gal_royal_warden|Meisterschütze von Lothlorien
 trp_a5_lorien_gal_royal_warden_pl|Meisterschützen von Lothlorien
 trp_a6_lorien_grey_warden|Königlicher Schütze der Galadhrim
 trp_a6_lorien_grey_warden_pl|Königliche Schützen der Galadhrim
-trp_a5_lorien_gal_royal_archer|Königlicher Scharfschütze der Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Königliche Scharfschützen der Galadhrim
+trp_galadhrim_royal_marksman|Königlicher Scharfschütze der Galadhrim
+trp_galadhrim_royal_marksman_pl|Königliche Scharfschützen der Galadhrim
 trp_noldorin_mounted_archer|Berittener Bogenschütze der Noldor
 trp_noldorin_mounted_archer_pl|Berittene Bogenschützen der Noldor
 trp_a2_lorien_archer|Schwerträger von Lothlorien
 trp_a2_lorien_archer_pl|Schwerträger von Lothlorien
-trp_a3_lorien_vet_archer|Erfahrener Schwerträger von Lothlorien
+trp_a3_lorien_vet_archer|Erfahrene Schwerträger von Lothlorien
 trp_a3_lorien_vet_archer_pl|Erfahrene Schwerträger von Lothlorien
 trp_a4_lorien_gal_archer|Schwertmeister von Lothlorien
 trp_a4_lorien_gal_archer_pl|Schwertmeister von Lothlorien
@@ -332,8 +332,8 @@ trp_i3_lorien_inf|Wächter von Lothlorien
 trp_i3_lorien_inf_pl|Wächter von Lothlorien
 trp_i4_lorien_gal_inf|Erfahrener Wächter von Lothlorien
 trp_i4_lorien_gal_inf_pl|Erfahrene Wächter von Lothlorien
-trp_galadhrim_royal_marksman|Königlicher Wächter der Galadhrim
-trp_galadhrim_royal_marksman_pl|Königliche Wächter der Galadhrim
+trp_a5_lorien_gal_royal_archer|Königlicher Wächter der Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Königliche Wächter der Galadhrim
 trp_lothlorien_standard_bearer|Standartenträger von Lothlorien
 trp_lothlorien_standard_bearer_pl|Standartenträger von Lothlorien
 trp_a1_greenwood_scout|Späher aus dem Grünwald
@@ -380,11 +380,11 @@ trp_a6_riv_guardian|Ewiger Wächter des Bruchtals
 trp_a6_riv_guardian_pl|Ewiger Wächter des Bruchtals
 trp_i3_riv_swordbearer|Krieger aus Bruchtal
 trp_i3_riv_swordbearer_pl|Krieger aus Bruchtal
-trp_i4_riv_vet_swordbearer|Erfahrener Krieger aus Bruchtal
+trp_i4_riv_vet_swordbearer|Erfahrene Krieger aus Bruchtal
 trp_i4_riv_vet_swordbearer_pl|Erfahrene Krieger aus Bruchtal
 trp_i5_riv_swordmaster|Meisterkrieger aus Bruchtal
 trp_i5_riv_swordmaster_pl|Meisterkrieger aus Bruchtal
-trp_i6_riv_champion|Fürstlicher Kämpfer aus Bruchtal
+trp_i6_riv_champion|Fürstliche Kämpfer aus Bruchtal
 trp_i6_riv_champion_pl|Fürstliche Kämpfer aus Bruchtal
 trp_ac5_riv_rider|Reiter aus Bruchtal
 trp_ac5_riv_rider_pl|Reiter aus Bruchtal
@@ -486,7 +486,7 @@ trp_c2_harondor_scout|Späher aus Harondor
 trp_c2_harondor_scout_pl|Späher aus Harondor
 trp_c3_harondor_rider|Reiter aus Harondor
 trp_c3_harondor_rider_pl|Reiter aus Harondor
-trp_c4_harondor_light_cavalry|Leichtgepanzerter Reiter aus Harondor
+trp_c4_harondor_light_cavalry|Leichtgepanzerte Reiter aus Harondor
 trp_c4_harondor_light_cavalry_pl|Leichtgepanzerte Reiter aus Harondor
 trp_c5_harondor_serpent_knight|Ritter der Goldenen Schlange
 trp_c5_harondor_serpent_knight_pl|Ritter der Goldenen Schlange
@@ -528,18 +528,18 @@ trp_i3_khand_warrior|Krieger aus Khand
 trp_i3_khand_warrior_pl|Krieger aus Khand
 trp_i4_khand_vet_warrior|Erfahrener Krieger aus Khand
 trp_i4_khand_vet_warrior_pl|Erfahrene Krieger aus Khand
-trp_i5_khand_war_master|Variag_Kriegsherr
-trp_i5_khand_war_master_pl|Variag-Kriegsherren
+trp_i5_khand_war_master|Variag-Kriegsmeister
+trp_i5_khand_war_master_pl|Variag-Kriegsmeister
 trp_c2_khand_pony_rider|Ponyreiter aus Khand
 trp_c2_khand_pony_rider_pl|Ponyreiter aus Khand
 trp_c3_khand_horseman|Reiter aus Khand
 trp_c3_khand_horseman_pl|Reiter aus Khand
 trp_c4_khand_heavy_horseman|Gepanzerter Reiter aus Khand
 trp_c4_khand_heavy_horseman_pl|Gepanzerte Reiter aus Khand
-trp_c5_khand_kataphrakt|Variag-Kataphrakt
-trp_c5_khand_kataphrakt_pl|Variag-Kataphrakte
-trp_c5_khand_lance_kataphrakt|Variag-Lanzenkataphrakt
-trp_c5_khand_lance_kataphrakt_pl|Variag-Lanzenkataphrakte
+trp_c5_khand_kataphrakt|Variag-Panzerreiter
+trp_c5_khand_kataphrakt_pl|Variag-Panzerreiter
+trp_c5_khand_lance_kataphrakt|Variag-Panzerreiter
+trp_c5_khand_lance_kataphrakt_pl|Variag-Lanzenreiter
 trp_i4_khand_halberdier|Glevenkrieger aus Khand
 trp_i4_khand_halberdier_pl|Glevenkrieger aus Khand
 trp_i5_khand_halberd_master|Meisterhafter Hellebardenkrieger aus Khand
@@ -638,7 +638,7 @@ trp_i1_isen_uruk_snaga|Uruk-hai-Frischling
 trp_i1_isen_uruk_snaga_pl|Uruk-hai-Frischlinge
 trp_i2_isen_uruk|Kämpfer der Uruk-hai
 trp_i2_isen_uruk_pl|Kämpfer der Uruk-hai
-trp_i3_isen_large_uruk|Großer Kämpfer der Uruk-hai
+trp_i3_isen_large_uruk|Große Kämpfer der Uruk-hai
 trp_i3_isen_large_uruk_pl|Große Kämpfer der Uruk-hai
 trp_i4_isen_fighting_uruk_warrior|Krieger der Kämpfenden Uruk-hai
 trp_i4_isen_fighting_uruk_warrior_pl|Krieger der Kämpfenden Uruk-hai
@@ -1037,7 +1037,7 @@ trp_knight_4_1|Aufseher Snog
 trp_knight_4_2|Aufseher Snotgor
 trp_knight_4_6|General Tuskim
 trp_knight_4_7|General Mugslag
-trp_knight_4_11|Beranhelm
+trp_knight_4_11|Ruel
 trp_knight_4_12|Beranor Schwarzfell
 trp_knight_4_16|Aufseher Brolgukhsh
 trp_knight_4_17|Aufseher Grumrunt

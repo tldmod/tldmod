@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|皮那斯杰林射手
 trp_c6_pinnath_leader|皮那斯杰林卫队长
 trp_c6_pinnath_leader_pl|皮那斯杰林卫队长
 trp_a1_blackroot_hunter|黑谷猎人
-trp_a1_blackroot_hunter_pl|黑谷猎人
+; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
 trp_a2_blackroot_bowman|黑谷弓箭手
 trp_a2_blackroot_bowman_pl|黑谷弓箭手
 trp_a3_blackroot_archer|黑谷射手
@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|罗斯洛立安射手大师
 trp_a5_lorien_gal_royal_warden_pl|罗斯洛立安射手大师
 trp_a6_lorien_grey_warden|罗斯洛立安皇家射手
 trp_a6_lorien_grey_warden_pl|罗斯洛立安皇家射手
-trp_a5_lorien_gal_royal_archer|罗斯洛立安皇家神射手
-trp_a5_lorien_gal_royal_archer_pl|罗斯洛立安皇家神射手
+trp_galadhrim_royal_marksman|罗斯洛立安皇家神射手
+trp_galadhrim_royal_marksman_pl|罗斯洛立安皇家神射手
 trp_noldorin_mounted_archer|诺多精灵骑射手
 trp_noldorin_mounted_archer_pl|诺多精灵骑射手
 trp_a2_lorien_archer|罗斯洛立安步兵
@@ -332,8 +332,8 @@ trp_i3_lorien_inf|罗斯洛立安守护者
 trp_i3_lorien_inf_pl|罗斯洛立安守护者
 trp_i4_lorien_gal_inf|罗斯洛立安资深守护者
 trp_i4_lorien_gal_inf_pl|罗斯洛立安资深守护者
-trp_galadhrim_royal_marksman|罗斯洛立安皇家守护者
-trp_galadhrim_royal_marksman_pl|罗斯洛立安皇家守护者
+trp_a5_lorien_gal_royal_archer|罗斯洛立安皇家守护者
+trp_a5_lorien_gal_royal_archer_pl|罗斯洛立安皇家守护者
 trp_lothlorien_standard_bearer|罗斯洛立安旗手
 trp_lothlorien_standard_bearer_pl|罗斯洛立安旗手
 trp_a1_greenwood_scout|幽暗密林斥候
@@ -382,7 +382,7 @@ trp_i3_riv_swordbearer|瑞文戴尔步兵
 trp_i3_riv_swordbearer_pl|瑞文戴尔步兵
 trp_i4_riv_vet_swordbearer|瑞文戴尔资深步兵
 trp_i4_riv_vet_swordbearer_pl|瑞文戴尔资深步兵
-trp_i5_riv_swordmaster|瑞文戴尔精英步兵
+trp_i5_riv_swordmaster|瑞文戴尔资深步兵
 trp_i5_riv_swordmaster_pl|瑞文戴尔资深步兵
 trp_i6_riv_champion|瑞文戴尔皇家步兵
 trp_i6_riv_champion_pl|瑞文戴尔皇家步兵
@@ -520,40 +520,40 @@ trp_i5_dun_wolf_guard|丹尼斯狼卫
 trp_i5_dun_wolf_guard_pl|丹尼斯狼卫
 trp_ac4_dun_raven_rider|登兰德黑鸦骑兵
 trp_ac4_dun_raven_rider_pl|登兰德黑鸦骑兵
-; trp_i1_khand_bondsman|Khand Bondsman
-; trp_i1_khand_bondsman_pl|Khand Bondsmen
-; trp_i2_khand_pit_dog|Khand Pit Dog
-; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
-; trp_i3_khand_warrior|Khand Warrior
-; trp_i3_khand_warrior_pl|Khand Warriors
-; trp_i4_khand_vet_warrior|Variag Veteran Warrior
-; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
-; trp_i5_khand_war_master|Variag Master of War
-; trp_i5_khand_war_master_pl|Variag Masters of War
-; trp_c2_khand_pony_rider|Khand Pony Rider
-; trp_c2_khand_pony_rider_pl|Khand Pony Riders
-; trp_c3_khand_horseman|Khand Horseman
-; trp_c3_khand_horseman_pl|Khand Horsemen
-; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
-; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
+trp_i1_khand_bondsman|侃德契奴 
+trp_i1_khand_bondsman_pl|侃德契奴 
+trp_i2_khand_pit_dog|侃德斑犬
+trp_i2_khand_pit_dog_pl|侃德斑犬
+trp_i3_khand_warrior|侃德战士
+trp_i3_khand_warrior_pl|侃德战士
+trp_i4_khand_vet_warrior|维瑞亚资深战士
+trp_i4_khand_vet_warrior_pl|维瑞亚资深战士
+trp_i5_khand_war_master|维瑞亚战争大师
+trp_i5_khand_war_master_pl|维瑞亚战争大师
+trp_c2_khand_pony_rider|维瑞亚矮种马骑手
+trp_c2_khand_pony_rider_pl|维瑞亚矮种马骑手
+trp_c3_khand_horseman|侃德骑手
+trp_c3_khand_horseman_pl|侃德骑手
+trp_c4_khand_heavy_horseman|侃德重骑手
+trp_c4_khand_heavy_horseman_pl|侃德重骑手
 trp_c5_khand_kataphrakt|维瑞亚全覆装甲骑兵
 trp_c5_khand_kataphrakt_pl|维瑞亚全覆装甲骑兵
 trp_c5_khand_lance_kataphrakt|维瑞亚全覆装甲枪骑兵
 trp_c5_khand_lance_kataphrakt_pl|维瑞亚全覆装甲枪骑兵
-; trp_i4_khand_halberdier|Khand Glaiveman
-; trp_i4_khand_halberdier_pl|Khand Glaivemen
+trp_i4_khand_halberdier|侃德阔剑士
+trp_i4_khand_halberdier_pl|侃德阔剑士
 trp_i5_khand_halberd_master|侃德斧枪大师
 trp_i5_khand_halberd_master_pl|侃德斧枪大师
-; trp_i3_khand_pitfighter|Khand Pit Fighter
-; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
-; trp_i4_khand_pit_champion|Variag Pit Champion
-; trp_i4_khand_pit_champion_pl|Variag Pit Champions
-; trp_i5_khand_pit_master|Variag Master of the Pits
-; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
-; trp_ac3_khand_skirmisher|Khand Skirmisher
-; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
-; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
-; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
+trp_i3_khand_pitfighter|侃德洞穴斗士
+trp_i3_khand_pitfighter_pl|侃德洞穴斗士
+trp_i4_khand_pit_champion|维瑞亚洞穴冠军
+trp_i4_khand_pit_champion_pl|维瑞亚洞穴冠军
+trp_i5_khand_pit_master|维瑞亚洞穴大师
+trp_i5_khand_pit_master_pl|维瑞亚洞穴大师
+trp_ac3_khand_skirmisher|侃德散兵
+trp_ac3_khand_skirmisher_pl|侃德散兵
+trp_ac4_khand_vet_skirmisher|侃德资深散兵
+trp_ac4_khand_vet_skirmisher_pl|侃德资深散兵
 trp_ac5_khand_heavy_skirmisher|维瑞亚重装散兵
 trp_ac5_khand_heavy_skirmisher_pl|维瑞亚重装散兵
 trp_i1_corsair_youth|昂巴水手
@@ -1037,7 +1037,7 @@ trp_knight_4_1|斯诺格
 trp_knight_4_2|斯娜格尔
 trp_knight_4_6|塔斯克穆将军
 trp_knight_4_7|莫格斯兰将军
-trp_knight_4_11|贝兰海尔姆
+; trp_knight_4_11|Ruel
 trp_knight_4_12|黑发贝兰宁
 trp_knight_4_16|博罗格斯
 trp_knight_4_17|格瑞莫斯

@@ -656,15 +656,15 @@ qstr_Troop_detail|Detalhes de tropa
 ; qstr_{s1}Hit_Points:_{reg|{s1}Hit Points: {reg1}
 ; qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
 ; qstr_{s2}^{reg1}^|{s2}^{reg1}^
-; qstr_{s1}___Agility:|{s1}   Agility:
+qstr_{s1}___Agility:|{s1} Agilidade:
 ; qstr_{s2}{reg1}|{s2}{reg1}
-; qstr_{s1}Main_skills:_^|{s1}Main skills: ^
+qstr_{s1}Main_skills:_^|{s1}Skills principais: ^
 ; qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
 ; qstr_{s2}{reg1}^|{s2}{reg1}^
 ; qstr_{s1}___Athletics:^|{s1}   Athletics:^
-; qstr_{s1}___Riding:^|{s1}   Riding:^
+qstr_{s1}___Riding:^|{s1}Montaria: ^
 ; qstr_{s2}_^|{s2}-^
-; qstr_{s1}___Power_Throw:^|{s1}   Power Throw:^
+qstr_{s1}___Power_Throw:^|{s1} Arremesso:^
 ; qstr_{s1}___Power_Draw:^^|{s1}   Power Draw:^^
 ; qstr_{s2}{reg1}^^|{s2}{reg1}^^
 ; qstr_{s2}_^^|{s2}-^^
@@ -677,7 +677,7 @@ qstr_{s1}___Crossbow:^|{s1} Bestas:^
 qstr_{s1}___Throwing:^|{s1} Arremesso:^
 qstr_{s1}___Slings:|{s1} Estilingues:
 ; qstr_{s2}_|{s2}-
-; qstr__Click_on_the_troop_|(Click on the troop to rotate it)^^Click on pieces of gear ^(helmet, armor, gloves and boots)^ to display them.
+qstr__Click_on_the_troop_|(Clique na tropa para girá-la)^^Clique no equipamento ^(Elmo, armadura, luvas e botas)^ para mostrá-los.
 ; qstr_ready_bows_and_missi|ready bows and missiles
 ; qstr_ready_side_arms|ready side arms
 ; qstr_ready_two_hander|ready two-hander
@@ -685,14 +685,14 @@ qstr_{s1}___Slings:|{s1} Estilingues:
 ; qstr_shields_up|shields up
 ; qstr_doff_shields|doff shields
 ; qstr_Distance___{reg70}__|Distance - {reg70} - {s11} Party - {s12} Troop
-; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield. Your troops feel encouraged by the presence of the Lady.
-; qstr_A_golden_mist_from_Lr|A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.
-; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrifies your men.
-; qstr_Dark_clouds_from_Mord|Dark clouds from Mordor cover the battlefield. The Dark Lord's presence strengthens you and your men.
+qstr_A_golden_mist_from_L|Uma névoa dourada vinda de Lórien cobre o campo de batalha. Suas tropas se sentem encorajadas pela presença da Senhora.
+qstr_A_golden_mist_from_Lr|Uma névoa dourada vinda de Lórien cobre o campo de batalha. A bruxa está perto, causando um frio em sua espinha e na de seus soldados.
+qstr_Dark_clouds_from_Mor|Nuvens negras vindas de Mordor cobrem o campo de batalha. Seus arqueiros têm dificuldade para ver o inimigo, e a presença do mal aterroriza seus homens.
+qstr_Dark_clouds_from_Mord|Nuvens negras vindas de Mordor cobrem o campo de batalha. A presença do Senhor da Escuridão fortalece você e seus homens.
 ; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield. Your troops are slowed down, and the superstitious amongst the men feel scared.
 ; qstr_A_thunderstorm_from_t|A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.
-; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.
-; qstr_A_poisonous_fog_from_|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
+qstr_A_poisonous_fog_from|Uma névoa venenosa vinda de Dol Guldur invade o campo de batalha. Você e seus soldados se sentem enfraquecidos. Existe medo entre os seus homens.
+qstr_A_poisonous_fog_from_|Uma névoa venenosa vinda de Dol Guldur invade o campo de batalha. Você não sente nenhuma mudança, mas você pode ouvir seus inimigos sofrendo e pode sentir o medo deles.
 ; qstr_Your_mount_stumbles!|Your mount stumbles! It seems to be lame.
 qstr_Bitten_by_your_own_w|Mordido pela sua própria montaria warg!
 qstr_You_weigh_too_much_f|Você é muito pesado para montar esse pony! 

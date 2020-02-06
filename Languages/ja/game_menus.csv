@@ -2,30 +2,30 @@ menu_start_game_1|^^^^^^^^^^何のために戦いますか？
 mno_start_good|新しい時代の夜明け
 mno_start_evil|人類の黄昏
 mno_go_bback|戻る
-menu_start_phase_2|^^^^^ここは中つ国。東に広がる闇は日々ふくれあがり、^遠く忘れ去られてきた暗いものたちが、その姿をあらわす。^自由の民は、長く経験したことのない未曾有の戦いに、その身を固くする。^人間、エルフ、ドワーフ、そしてオーク。^すべてのものがそれぞれの運命を演じていく。^^運命の先にあるものは何か、それはまだわからない・・・
+menu_start_phase_2|^^^^^ここは中つ国。東に広がる闇は日々ふくれあがり、^遠く忘れ去られてきた暗いものたちが、その姿をあらわす。^自由の民は、長く経験したことのない未曾有の戦いを前に、その身を固くする。^人間、エルフ、ドワーフ、そしてオーク。^すべてのものがそれぞれの運命を演じていく。^^運命の先にあるものは何か、それはまだわからない・・・
 mno_go_forth|小道で敵を迎え撃て
 menu_start_game_3|^^^^^^^^シナリオを選んでください:
 mno_custom_battle_scenario_1|小規模戦闘、 ゴンドール勢 vs ハラド
-mno_custom_battle_scenario_12|ファクションを選んでください
+mno_custom_battle_scenario_12|所属する勢力を選んでください
 mno_custom_battle_scenario_3|小規模戦闘、 エルフ vs 黒きヌーメノール人
 mno_custom_battle_scenario_4|ヘルム峡谷の攻防戦、 ローハン vs アイゼンガルド
 mno_custom_battle_scenario_5|小規模戦闘、 北方の民 vs リューン
 mno_custom_battle_scenario_6|攻城戦、 オーク vs ドワーフ
 mno_custom_battle_scenario_7|待ち伏せ攻撃、 オーク vs 闇の森のエルフ
-; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
-; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
+mno_custom_battle_scenario_8|ドゥリンの一族の最後の抵抗
+mno_custom_battle_scenario_88|オーク偵察部隊の追跡
 mno_custom_battle_scenario_11|戦闘のテスト(バランス調整をしてください！)
 mno_custom_battle_scenario_10|シーナリーのテスト
 mno_troll_battle_scenario|トロルのテスト
 mno_warg_battle_scenario|ワーグのテスト
 mno_build_your_own_scene|** 自分だけのTLDのシーンを作ろう **
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+menu_tutorial|^^Mount&Bladeの戦闘のチュートリアルへようこそ。 ここでは戦闘における基本や、戦場における兵の指揮の初歩を学べます。
+mno_tutorial_1|チュートリアル#1:移動の基本と武器の種類。 {s1}
+mno_tutorial_2|チュートリアル#2:盾を使った戦闘。 {s2}
+mno_tutorial_3|チュートリアル#3:盾を使わない戦闘。 {s3}
+mno_tutorial_3b_door|次のレベル
+mno_tutorial_4|チュートリアル#4:馬またはワーグの乗り方。 {s4}
+mno_tutorial_5|チュートリアル#5:兵の群れの指揮。 {s5}
 mno_go_back_dot|戻る
 mno_action_view_troop_trees|軍事ツリーを参照する。
 mno_view_upkeep_costs|パーティの維持費を見る
@@ -33,7 +33,7 @@ mno_view_character_report|キャラクター情報を見る
 mno_view_party_size_report|パーティの人数上限を確認する
 mno_view_morale_report|パーティの士気に関する情報を見る
 mno_view_character_report_02|NPCの状態を確認する
-mno_view_faction_strengths_report|各ファクションの勢力値を確認する
+mno_view_faction_strengths_report|各勢力の勢力ポイントを確認する
 mno_view_traits_report|特殊能力を見る
 mno_resume_travelling|旅を続ける
 mno_custom_battle_go|開始
@@ -41,7 +41,7 @@ mno_leave_custom_battle_2|キャンセル
 menu_custom_battle_end|^^^^^^戦闘は終わりました。 {s1} あなたの陣営は敵勢{reg5}名を倒し、味方の兵を{reg6}名失いました。^あなた個人では敵を{reg7}名を倒しました。
 mno_replay|この戦闘をもう一度プレイする
 mno_continue_dot|続ける
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|^^^^^^見事な最期の抵抗でしたが、最後には力尽きてしまいました。^^あなたと同胞たちは{reg5}名の敵を倒しました。^あなた個人では{reg7}名の敵を倒しました。
 mno_replay_cbd|この戦闘をもう一度プレイする
 mno_continue_dot_cbd|続ける
 mno_dot_go_back|戻る
@@ -56,38 +56,38 @@ mno_start_hand|アイゼンガルドのサルマン、白の手
 menu_start_eye|^^^^^^^^^あなたの主人は、瞼のない御目です。^種族を選んでください
 mno_start_or|オーク、瞼のない御目の忠実な下僕
 mno_start_ur|ウルク、新種のオーク
-mno_start_em|人間、サウロンへの服従を誓う
+mno_start_em|人間、サウロンに服従
 menu_start_hand|^^^^^^^^^あなたの主人は、白の手となりました。^種族を選んでください
 mno_start_whor|オーク、白の手のしもべ
-; mno_start_isur|one of the URUK-HAI, bred in Isengard
+mno_start_isur|ウルク＝ハイ、アイゼンガルドの産
 mno_start_duma|人間、西方の平野にある褐色人の国の住人
 menu_start_good_man|^^^^^^^^^^民族を選んでください:
-mno_start_go|ゴンドール、白い塔の王国
-mno_start_ro|ローハン、馬の民
-mno_start_du|ドゥネダイン、いにしえの王族の末裔
-mno_start_be|ビヨルン一党、熊人族
-mno_start_da|谷間の国、北方の王国
-menu_start_good_elf|^^^^^^^^^^どちらの森にお住まいですか、賢者どの？
-mno_start_ri|裂け谷、エルロンド卿の率いる国
-mno_start_lo|ロスロリエン、ガラドリエル夫人の治める国
-mno_start_mi|闇の森、シルヴァン・エルフの国
+mno_start_go|白い塔の王国、ゴンドール
+mno_start_ro|馬の民、ローハン
+mno_start_du|いにしえの王族の末裔、ドゥネダイン
+mno_start_be|熊人族、ビヨルン一党
+mno_start_da|北方の王国、谷間の国
+menu_start_good_elf|^^^^^^^^^^賢者殿、どちらの森にお住まいですか？
+mno_start_ri|エルロンド卿の率いる国、裂け谷
+mno_start_lo|ガラドリエル夫人の治める国、ロスローリエン
+mno_start_mi|シルヴァン・エルフの国、闇の森
 menu_start_good_dwarf|^^^^^^^^^^一族を選んでください:
 mno_start_er|エレボールの住人
 mno_start_ih|くろがね連山の鉱夫
 menu_start_gondor|^^^^^^^^^^ゴンドールのどこの出身ですか？
-mno_start_mt|ミナス・ティリス、首都
-mno_start_ls|ロスサールナッハ、斧使いの国
-mno_start_la|ラメドン、山の民の国
-mno_start_pg|ピンナス・ゲリン、緑丘陵の国
-mno_start_do|ドル・アムロス、白鳥の騎士の国
-mno_start_pe|ペラルギア、海岸沿いの国
-mno_start_bl|黒根谷、弓使いの国
+mno_start_mt|首都、ミナス・ティリス
+mno_start_ls|斧使いの国、ロスサールナッハ
+mno_start_la|山の民の国、ラメドン
+mno_start_pg|緑丘陵の国、ピンナス・ゲリン
+mno_start_do|白鳥の騎士の国、ドル・アムロス
+mno_start_pe|海岸沿いの国、ペラルギア
+mno_start_bl|弓使いの国、黒根谷
 menu_start_eye_man|^^^^^^^^^^民族を選んでください:
-mno_start_hr|ハラドリム、南方の砂漠の民
-mno_start_bn|黒きヌーメノール人、西方から来た背教者
-mno_start_um|ウンバール、南の海からやってきた海賊
-mno_start_rh|リューン、東方の蛮族
-mno_start_kh|ハンド、南東に住む獰猛な民族
+mno_start_hr|南方の砂漠の民、ハラドリム
+mno_start_bn|西方から来た背教者、黒きヌーメノール人
+mno_start_um|南の海からやってきた海賊、ウンバール
+mno_start_rh|東方の蛮族、リューン
+mno_start_kh|南東に住む獰猛な民族、ハンド
 menu_start_eye_uruk|^^^^^^^^^^どこに潜伏しているのですか？
 mno_start_arm_uruk|モルドールに集結する軍勢
 mno_start_cav_uruk|ドル・グルドゥアの洞窟
@@ -98,23 +98,23 @@ menu_start_hand_orc|^^^^^^^^^^どこに潜伏しているのですか？
 mno_start_armis|アイゼンガルドに集結する軍勢
 mno_start_minmo|モリアの坑道
 mno_start_cliff|グンダバド山の絶壁
-menu_start_gondor_mt|^^^^^^^^^^家系を選んでください
+menu_start_gondor_mt|^^^^^^^^^^家柄を選んでください
 mno_start_1_com|平民
 mno_start_2_hib|高貴な生まれ
-menu_start_haradrim|^^^^^^^あなたはハラドリム、^砂漠の民です。^部族を選んでください
+menu_start_haradrim|^^^^^^^あなたは砂漠の民、^ハラドリムです。^部族を選んでください
 mno_start_1_des|砂漠の住人
 mno_start_2_far|遠ハラドの部族
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+menu_start_numenorean|^^^^^^^あなたは暗黒とモルゴスを崇拝する黒きヌーメノール人です。^御目のために活動する場所を選んでください
+mno_start_1_bn|サウロンの口の傍ら、モランノン
+mno_start_2_bn|妖術師の要塞、ドル・グルドゥア
 menu_choose_gender|^^^^^^^^^^あなたの性別は？
 mno_start_male|男性
 mno_start_female|女性
 mno_proc|通常通り続ける
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
-; mno_start_default|Become a {s23} (Default)
-; mno_start_up1|Become a {s21} (Easy)
-; mno_start_up2|Become a {s22} (Easy)
+menu_start_as_one|^^^^^^^^^^どんな戦士ですか？
+mno_start_default|{s23} (標準)
+mno_start_up1|{s21} (簡単)
+mno_start_up2|{s22} (簡単)
 mno_continue|続ける・・・
 menu_character_report|^^^^^パーティの士気:{reg8}^パーティの人数上限:{reg7}^{s5}
 menu_camp|^^^^ここは{s1}です。{s2}^^何をしますか？
@@ -123,14 +123,14 @@ mno_camp_troop|{reg10?部下:}{reg12?および:}{reg11?捕虜:}の確認をす�
 mno_camp_action|アイテムを使う
 mno_camp_wait_here|ここで野営する
 mno_camp_options|TLDのオプション
-; mno_Dev_Menu|Developer Menu
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_Dev_Menu|開発者用メニュー
+menu_dev_menu|これは開発者向けのオプションで、たくさんのチートやツールを利用できます。^^ただ、これらを利用すると開発途中のイベント、トリガー、キャンペーンの^変更などが原因でゲームの動作に支障がでる事があります。^^リスクを理解した上で利用してください！^^バグの報告をする場合は、この開発者メニューを^利用したかどうかも報告してください。
 mno_Cheat_enable|チート/mod作成オプションを有効にする
 menu_game_options|^^^^^^^^項目をクリックするとトグルします
-; mno_game_options_war_level_start|War Starts at Level: {s1}
+mno_game_options_war_level_start|戦争の始まるレベル:{s1}
 mno_game_options_restrict_items|プレイヤーの装備制限:{s7}
 mno_game_options_formations|陣形とAI:{s7}
-; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
+mno_game_options_siege_ai|高度な攻城戦AI:{s7}
 mno_game_options_town_menu|拠点のNPCに常にメニュー画面からアクセス:{s7}
 mno_game_options_cutscenes|カットシーン:{s7}
 mno_game_options_injuries|コンパニオンの怪我:{s7}
@@ -138,27 +138,27 @@ mno_game_options_death|指揮官とコンパニオンが死亡する:{s7}
 mno_game_options_death2|プレイヤーが死亡する(あなたの事ですよ！):{s7}
 mno_game_options_morale|戦闘時の士気システム:{s7}
 mno_game_options_animal_ambushes|動物による襲撃:{s7}
-; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
-; mno_game_options_bright_nights|Brighter Nights:  {s7}.
-; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
+mno_game_options_horse_ko|落馬ダメージの報告:{s7}
+mno_game_options_bright_nights|夜を明るくする:{s7}
+mno_game_options_camera_pref|優先するカメラモード:{s7}
 mno_game_options_tweaks|ゲームプレイの調整・・・
 mno_game_options_back|野営メニューに戻る
 mno_game_options_start_back|戻る
 menu_camp_tweaks|^^^^^^^^調整したい項目を選んでください。
 mno_tweak_options_compat|互換性の調整・・・
 mno_tweak_options_strat|戦略上の調整・・・
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
+mno_tweak_options_battlefield_ai|戦場でのAIの調整・・・
 mno_tweak_options_back|オプションメニューに戻る
 menu_camp_compat_tweaks|^^^^^^^^項目をクリックして調整してください^(SHIFTを押しながらクリックすると数値が減ります)^(これらは互換性に関する調整で、 チートではありません)
 mno_game_options_compat_party|パーティの最大数:{s1}
 mno_game_options_compat_back|調整メニューに戻る
 menu_camp_strat_tweaks|^^^^^^^^項目をクリックするとトグルします^(警告:これらはチートです！)
-mno_strat_tweaks_siege_reqs|包囲攻城戦に必要な勢力値:{s7}
+mno_strat_tweaks_siege_reqs|包囲攻城戦に必要な勢力ポイント:{s7}
 mno_strat_tweaks_siege_relax_rate|包囲攻城戦の必要条件の緩和レート:{reg1}
-mno_strat_tweaks_regen_rate|勢力値の回復レート:{s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
-mno_strat_tweaks_influence_gain_rate|影響力獲得レート:{s7}
-mno_strat_tweaks_rank_gain_rate|ランク獲得レート:{s7}
+mno_strat_tweaks_regen_rate|勢力ポイントの回復レート:{s7}
+mno_strat_tweaks_siege_regen_limit|勢力ポイントの回復速度が遅くなるしきい値:{reg1}
+mno_strat_tweaks_influence_gain_rate|影響力ポイント獲得レート:{s7}
+mno_strat_tweaks_rank_gain_rate|ランクポイント獲得レート:{s7}
 mno_strat_tweaks_back|調整メニューに戻る
 menu_camp_action|^^^^^^^^^ どのアイテムですか？
 mno_camp_customize_defilement|穢された鎧を改造する
@@ -167,7 +167,7 @@ mno_camp_action_4|戻る
 menu_assasins_attack_player_won|あなたは{s3}によって送り込まれた、 {s2}の暗殺者を撃退しました。
 menu_assasins_attack_player_retreat|あなたは命からがら逃げました！
 menu_fangorn_danger|^^^^^^これはおかしい。周囲のあちこちから不穏な物音が聞こえる。^木々がしゃべっているのだろうか？ 大いなる怒りと苦痛が伝わってくる。 どうしますか？
-mno_be_quiet_elf|木々の憎悪はもっともだ。しずかに移動せよ。
+mno_be_quiet_elf|木々の憎悪はもっともだ。静かに移動せよ。
 mno_be_quiet|武器をしまって静かにするんだ！この場から離れるぞ！
 mno_be_bold|かかって来い！植物だの古い伝説だの、私は一切恐れないぞ！
 mno_fight_back|原因をつきとめるぞ！ここ一帯を調べろ！そこの木を一、二本燃やせ！
@@ -178,13 +178,13 @@ mno_ow_get_out|いたた！この呪われた場所から逃げろ！
 menu_fangorn_killed_troop_and_player|^^^^^^あなたは深く、暗い森のなかを探し回った。^^突然、あなたは何かに殴られた！大きな木の枝でも落ちてきて、^頭を直撃したのだろう。^^数分後に意識を取り戻したあなたは、部下たちはあなたほど^幸運には恵まれなかった事を知った。^^
 menu_fangorn_killed_troop_only|^^^^^^^^あなたは深く、暗い森のなかを探し回った。部下たちは恐怖で顔を^ひきつらせている。^^突然、後方で悲鳴が上がった！駆けつけてみると、数人の部下が^血の海に横たわっていた。^^他にも数人の姿が見当たらないが、一体どこへ消えたのか・・・
 mno_get_out|この呪われた場所から離れるぞ！
-menu_can_capture_troll|倒された野生のトロルは、まだ息をしている！^^悪意に満ちたその目は、苦痛と怒りの色をいっぱいに浮かべて^あなたを凝視している。^みずからの血の海の中に力なく横たわっている今でさえ、それは^途方もなく危険に見える・・・
+menu_can_capture_troll|倒されてもまだ、野生のトロルは息をしている！^^それは悪意に満ちたその目に苦痛と怒りの色をいっぱいに浮かべて、^あなたを凝視している。みずからの血の海の中に力なく横たわっている今でさえ、^それは途方もなく危険に見える・・・
 mno_killit|それをいますぐ殺せ。間違いなく息の根を止めろ。
 mno_cageit1|檻に入れて引きずりまわせ。
 mno_cageit2|他のトロルと一緒に檻に入れろ。
 mno_cheat_disabable|チート/mod作成オプションを無効にする。
-menu_drank_ent_water_human|^^^あなたは水を飲んだ。水は、澄んだ、さわやかな味がする。^ジャコウに似た、良い香りもする。^とてもおいしい。^^しかし、あなたは奇妙な、超自然的ともいえる違和感を覚えた。^あなたの直感が、もう二度と、この水を口にしてはならないと訴えて^いる。
-menu_drank_ent_water_orc|^^^あなたは水を飲んだ。 ただの水だ。^突然、 激痛が走り、 あなたはのどを手で押さえた。^毒だ！^あなたはむせ、 黒い血のかたまりを吐き、 意識が遠のくのを感じた。^^痛い、 ちくしょう、 痛いぞ。
+menu_drank_ent_water_human|^^^あなたは水を飲んだ。澄んだ、さわやかな味がする。 ジャコウに似た良い香りもする。とてもおいしい。^^しかし、あなたは奇妙な、超自然的ともいえる違和感を覚えた。 あなたの直感が、もう二度とこの水を口にしてはならない、と訴えている。
+menu_drank_ent_water_orc|^^^あなたは水を飲んだ。ただの水だ。突然激痛が走り、あなたはのどを^手で押さえた。毒だ！あなたはむせ、黒い血のかたまりを吐き、^意識が遠のくのを感じた。^^痛い。ちくしょう、痛いぞ。
 mno_i_shall_surv|し・・・死んで・・・たまるか！
 menu_end_game|^^^^^あなたはついに冒険者としての生活に区切りをつける決心をし、^腰を落ち着ける事にした。あなたは武器や防具を売りさばき、^荷物をまとめると、馬上の人となって夕日を目指して去っていった・・・
 mno_end_game_bye|さようなら。
@@ -195,13 +195,13 @@ mno_leave|立ち去る。
 menu_simple_encounter|^^^^^{s2}^この戦闘に参加できるあなたの部隊は総勢{reg22}名、 対する敵勢は{reg11}名です。^^この戦いは{s3}{s4}で行われます。^^どうしますか？
 mno_encounter_attack|{reg21?攻撃開始:迎え撃つ}。
 mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}よう命令し、 自身は後方に待機する。
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
-; mno_encounter_hide|Hide from the enemy...
+mno_control_allies_menu|影響力ポイントを消費して戦場にいる友軍の指揮をする。
+mno_encounter_hide|敵から隠れる・・・
 mno_special_whip|{s4}を打ちながら威圧する。
 mno_encounter_leave|撤退する。
 mno_encounter_retreat|何人かの兵をしんがりに残し、撤退する。
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_simple|彼らの指揮をとって敵勢へ突撃する
+mno_player_control_allies_back|戻る・・・
 mno_hide_close|続ける・・・
 menu_encounter_retreat_confirm|^^^^^パーティの中で最も高い戦略スキル({reg2})を持つ {reg3?あなた:{s3}}は、 敵を振り切って部隊を無事に撤退させる作戦を 考え出しましたが、 敵の追撃を食い止めるための兵を{reg4}名、 しんがりとして犠牲にしなければなりません。
 mno_leave_behind|この作戦でいこう。彼らの犠牲は無駄にしない。
@@ -229,9 +229,9 @@ mno_pre_join_leave|巻き込まれないようにする。
 menu_join_battle|^^^{s1}と戦っている、 {s2}に加勢します。^敵勢{reg11}名に対して、 戦える状態の味方の兵は{reg22}名です。^^この戦いは{s3}{s4}で行われます。
 mno_join_attack|攻撃を開始する。
 mno_join_order_attack|部下に友軍と共に戦うよう指示をし、自分は後方に待機する。
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|影響力ポイントを消費して戦場にいる友軍の指揮をする。
 mno_join_leave|撤退する。
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|彼らの指揮をとって敵勢へ突撃する
 menu_join_order_attack|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
 mno_enter|入る。
 menu_battlefields|^^^^^^^^^戦場を選んでください・・・
@@ -267,7 +267,7 @@ menu_construct_ladders|パーティメンバーの中で最も高い 技術者�
 mno_build_ladders_cont|準備に取りかかる。
 menu_castle_attack_walls_simulate|{s4}^^自軍犠牲者:{s8}^^敵軍犠牲者:{s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
-; menu_castle_taken_by_friends|Nothing to see here.
+menu_castle_taken_by_friends|ここに用はない。
 menu_castle_taken|{s3}はあなたの軍の手に落ち、 現在、 この{reg2?町:城}は完全にあなたの軍の 管理下におかれています。 {reg1? ここをあなたの領地とすることを 止めるものはいません・・・:}
 menu_castle_taken_2|{s3}はあなたの軍の手に落ち、 現在、 この城は完全にあなたの軍の 管理下におかれています。 {s9}に、 この勝利を報告しましょう。 {s5}
 mno_castle_taken_no_claim|褒美の要求をしない。
@@ -300,24 +300,24 @@ mno_talk_to_castle_commander|{s61}の兵舎へ行く。
 mno_speak_with_elder|{s6}に会う。
 mno_isengard_underground|地下の洞窟へ行く。
 mno_tirith_toplevel|最上層に登る。
-; mno_erebor_gates|Visit the Great Gates.
+mno_erebor_gates|大門へ行く。
 mno_town_leave|立ち去る・・・
 mno_town_leave_door|立ち去る
-; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
+menu_player_initiated_siege_result|{s2}の旗のもと、あなたはこの拠点を攻撃しました。
 menu_disembark|上陸しますか？
 mno_disembark_yes|する
 mno_disembark_no|しない
 menu_ship_reembark|乗船しますか？
 mno_reembark_yes|する
 mno_reembark_no|しない
-menu_center_reports|拠点:{s1}^地代収入:{reg1}デナル^関税収入:{reg2}デナル^食料備蓄:{reg3}日間分
+menu_center_reports|拠点:{s1}^地代収入:{reg1}リソースポイント^関税収入:{reg2}リソースポイント^食料備蓄:{reg3}日間分
 menu_sneak_into_town_suceeded|みすぼらしい浮浪者に変装したあなたは、 衛兵の目をかいくぐって町の中へと入り込みました。
 menu_sneak_into_town_caught|潜入を試みたあなたに衛兵のひとりが気付き、 大声を上げました！ この辺りの衛兵が殺到するまえに、 門の外へ逃げなければなりません！
 mno_sneak_caught_fight|強行突破だ！
 mno_sneak_caught_surrender|降参する。
 menu_sneak_into_town_caught_dispersed_guards|衛兵どもを追い払ったあなたは、 自分の痕跡を消すと、 その場を去った。 追跡者たちは 入り組んだ通りの中に、 あなたを完全に見失った。
 menu_sneak_into_town_caught_ran_away|あなたは門の外へ出ると、 素早く町の外の安全な場所へ撤退した。
-menu_tld_player_defeated|^^^^^突然、 後頭部に激痛が走った！ \\\\ 目の前が真っ暗になり、 あなたの体は震えた。^ここで死ぬのだろうか？
+menu_tld_player_defeated|^^^^^突然、後頭部に激痛が走った！^目の前が真っ暗になり、あなたの体は震えた。^ここで死ぬのだろうか？
 menu_recover_after_death_fangorn|あなたは目を覚ました。 あいかわらず、 あたりはいちめんの森だ。 関節という関節が痛む。 あなたは奇跡的に一命をとりとめたようだ。^^敗北を喫したには違いないが、 少なくとも何が起こったのかを 知る事はできた。^ようやくこの呪われた森の正体を知ったあなたは、 この事実を人に伝えなくてはならない。^^しかし、 信じる者はいるだろうか？
 menu_recover_after_death_moria|^^^^^あなたは意識を取り戻した。 あなたの体はやわらかい地面に横たわり、 新鮮な空気を運ぶそよ風が顔をなでていく。 ここは外だ！^オークどもはあなたが死んだと思い込み、 その辺の暗い穴にあなたを放り込んだのだ。^おそらく、 地下を流れる水脈にここまで運ばれたのだろう。
 mno_whatever|起き上がれ！
@@ -332,22 +332,22 @@ menu_notification_faction_defeated|^^^^^{s1}は敗れました！^{s1}は{s13}�
 menu_ruins|^^^^あなたは{s1}へと近づいていきました。 かつて強固を誇った陣地は完全に破壊され、 わずかに残る城壁や 散乱するさびた武器に、 かろうじてその面影を見ることができる。
 menu_legendary_place|^^^^あなたは噂話を頼りに{s1}を発見しました。 さっそく探索し、 噂が本当かどうか、 自らの手で確かめましょう。
 mno_explore|探索を始める。
-menu_ring_hunter_lair|^^^^Mirkwood Forestから{s1}到着まで指輪ハンターの痕跡を追跡した。指輪ハンター達が宝箱を後にする準備を始めている。
-mno_attack_lair|今すぐ攻撃しろ。
-mno_leave_bandit_lair|今すぐ去れ。
-; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
-; mno_gondor_reinforcement_event_close|Close
-; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+menu_ring_hunter_lair|^^^^闇の森から{s1}到着まで指輪狩り一味の痕跡を追跡した。 指輪狩り一味が宝箱を後にする準備を始めている。
+mno_attack_lair|今すぐ攻撃する。
+mno_leave_bandit_lair|今のところは立ち去る。
+menu_gondor_reinforcement_event|^^^^^救援を求めるミナス・ティリスによって、ゴンドールの烽火がともされた！^^迫りくる暗闇から白の都を守るため、これより南方の領主たちが北上するだろう。
+mno_gondor_reinforcement_event_close|閉じる
+menu_gondor_beacons|あなたはゴンドールの南北に危急を知らせる、 ゴンドールの烽火のうちのひとつである{s1}を見上げた。
 mno_gondor_beacons_close|立ち去る・・・
-; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
-; mno_player_added_to_war_council_close|Close
-; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
-; mno_player_added_to_siege_reports_close|Close
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
-; mno_player_added_to_allow_follow_close|Close
-; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
-; mno_center_besieged_event_close|Close
-; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+menu_player_added_to_war_council|^^^^^ただいま伝令があり、 今や{s24}であるあなたも戦略協議に加わるよう、 {s2}から要請を受けました。 これにより、 あなたは戦争の行方に影響を与える、 戦略上の提案ができるようになりました。
+mno_player_added_to_war_council_close|閉じる
+menu_player_added_to_siege_reports|^^^^^ただいまの伝令によると、 今や{s24}であるあなたにも、 {s2}が敵の拠点を攻撃した際、 または{s2}の拠点が包囲攻撃を受けた際の報告が 届けられるようになったとのことです。
+mno_player_added_to_siege_reports_close|閉じる
+menu_player_added_to_allow_follow|^^^^^ただいまの伝令によると、 {s24}となったあなたに、 {s2}に対して、 あなたに同行するように命令を出す権限が与えられました。 最大で{reg55}部隊の同行が許されています。
+mno_player_added_to_allow_follow_close|閉じる
+menu_center_besieged_event|^^^^^ただいま伝令があり、{s3}の{s2}によって  {s1}が包囲されたとの報告がありました。
+mno_center_besieged_event_close|閉じる
+menu_guardian_party_spawned|^^^^^偵察隊の報告によると、{s6}は首都防衛のための最後の企てとして、 {s7}周辺に大規模な軍を集結させている模様です。
 mno_intro_next|続ける・・・
 mno_start_defend_caravan|隊商を守れ！
 mno_start_raid_caravan|隊商を襲え！
@@ -356,47 +356,47 @@ mno_start_kill_scouts|斥候に自分達の居場所を報告させるな！
 mno_go_your_way|放っておく
 mno_defend_villagers|村人達を守れ！
 mno_raid_villagers|村を襲え！
-; mno_go_away|Leave and regroup for now.
-; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
-; mno_attack_scout_camp|Attack the Scout Camp!
-; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
-; mno_sb_defend_the_town|Board them! Destroy their fleet!
-; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
-; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
-; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
-; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
-; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
-; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
-; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
-; menu_hungry_orc|none
-; menu_leaving_elf|none
-; mno_defend_refugees|Keep your eye out for raiders...
-; mno_attack_refugees|Attack the refugee train...
-; mno_leave_refugees|Leave them for now...
+mno_go_away|一旦撤退して態勢を整えよう。
+menu_scout_camp_quest|偵察野営がすぐ近くに見えます。 あなたは部下たちに戦闘準備を指示しました。
+mno_attack_scout_camp|偵察野営に攻撃開始！
+menu_sea_battle_quest|敵艦に出会いました。船はおたがいに接近し、 乗組員たちは厚板を渡しています・・・
+mno_sb_defend_the_town|敵艦へ切り込め！やつらの船を破壊するのだ！
+mno_sb_attack_the_town|やつらは我々を捕らえるつもりだぞ！船を守れ！
+menu_camp_field_ai|^^^^^項目をクリックするとトグルします。^^^ひとつ、ふたつのオプションをオフにする事でパフォーマンス(FPS)が向上します。
+mno_lord_field_ai|指揮官用の戦場における高度なAI:  {s7}
+mno_horse_archer_field_ai|弓騎兵用の戦場における高度なAI:  {s7}
+mno_vs_orcs_field_ai|弓兵のオークに対する照準精度の向上(オークの頭の上を狙わなくなります):  {s7}
+mno_battlefield_animals|馬、ワーグ以外の動物コンパニオンを戦場に登場させる:  {s7}
+mno_slow_when_wounded|負傷した連絡係の動作速度を遅くする:  {s7}
+mno_battle_encounter_effects|勢力に応じた特殊効果(嵐、霧など):  {s7}
+menu_hungry_orc|none
+menu_leaving_elf|none
+mno_defend_refugees|襲ってくる者がいないか、注意を怠るな・・・
+mno_attack_refugees|難民の群れを襲う・・・
+mno_leave_refugees|一旦やり過ごす・・・
 mno_evil_war_tut_continue|続ける・・・
-; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
-; mno_guardian_party_reject|Send a message you cannot join him.
+menu_guardian_party_quest|{s8}からの伝令によると、 後のないアイゼンガルドは 最後の企みの準備を完了したとの事です。 このアイゼンガルドとの最後の戦いに、 あなたも参加するように要請されています。 最低でも{reg13}名の兵を連れて行く必要があります。 兵が足りなければ、 急いで戦士を補充するように求められています。
+mno_guardian_party_reject|参加することはできない、と伝える。
 mno_guardian_party_send_word|すぐにはせ参じる、と伝える。
-; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
-; mno_training_continue|Begin training...
-; menu_alternate_training_conclusion|{s5}
-; mno_alternate_training_retry|Try again...
-; mno_alternate_training_finish|Leave the arena...
+menu_alternate_training_fight|{reg5}名を相手にします。準備はよろしいですか？
+mno_training_continue|訓練をはじめる・・・
+menu_alternate_training_conclusion|{s5}
+mno_alternate_training_retry|もう一度やる・・・
+mno_alternate_training_finish|この場を去る・・・
 menu_custom_battle_choose_faction1|^^^^^^^^^^陣営とアドバンテージを選んでください
-mno_good_equal|光のファクション
-mno_bad_equal|闇のファクション
+mno_good_equal|光の勢力
+mno_bad_equal|闇の勢力
 mno_replay_prev|前回の設定でもう一度プレイする
-menu_custom_battle_choose_faction2|^^^^^^^^^^光のファクションを選択してください
+menu_custom_battle_choose_faction2|^^^^^^^^^^光の勢力を選択してください
 mno_cb_gondor|ゴンドール
 mno_cb_gondor1|ローハン
-mno_cb_gondor2|ロスロリエン
+mno_cb_gondor2|ロスローリエン
 mno_cb_gondor3|裂け谷のエルフ
 mno_cb_gondor4|闇の森のエルフ
 mno_cb_gondor5|ドワーフ
 mno_cb_gondor6|谷間の国
 mno_cb_gondor7|ビヨルン一党
-menu_custom_battle_choose_faction3|^^^^^^^^^^闇のファクションを選択してください
+menu_custom_battle_choose_faction3|^^^^^^^^^^闇の勢力を選択してください
 mno_cb_mordor|モルドール
 mno_cb_mordor1|アイゼンガルド
 mno_cb_mordor2|褐色人
@@ -406,12 +406,12 @@ mno_cb_mordor5|モリア
 mno_cb_mordor6|グンダバド
 mno_cb_mordor7|リューン
 mno_cb_mordor8|海賊
-mno_rescue_mission|夜の闇にまぎれて妖術師の根城へと潜入した。
-mno_next_rescue_scene_door|さらに進め！
+mno_rescue_mission|夜の闇にまぎれて妖術師の根城へ潜入する。
+mno_next_rescue_scene_door|さらに進むぞ！
 mno_pick_troops1|この任務に同行させる部下を選んでください。 {reg0}名が選択されています
 menu_pick_troops|この潜入任務に誰を連れて行きますか？ 現在、{reg0}名が選択されています。 部下を10名まで連れて行くことが出来ます。
 mno_go_forward|同行者の選択を完了し、任務を遂行する。
-; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
+menu_burial_mound|あなたは{s2}の{s1}が埋葬されている塚に近づいた。 {s28}との戦いで命を落としたのだ。 塚は死んだ敵の刃のかけた武器が積み上げられている。
 mno_pay_respects|ひざまずいて敬意を払う。
 mno_swear_oath|復讐の誓いを立てる！
 mno_despoil|この場所を穢す
@@ -421,12 +421,12 @@ menu_burial_mound_oath|あなたは声を張り上げ、 {s4}の復讐の誓い�
 menu_funeral_pyre_oath|あなたは声を張り上げ、 {s4}の復讐の誓いを立てた。 あなたは{s3}の軍勢に対し、 容赦なく見つけ出してこれを破壊するだろう。 あなたの力強い言葉は風に乗り、 どこまでも遠く運ばれていった。 海の向こう側には届かないと、 誰に断言できるだろう？
 mno_leave_pyre_oath|この場を去る。
 menu_burial_mound_despoil|あなたは{s1}の墓碑をみずからの手で取り壊すと、 墓碑に対して呪いの言葉を浴びせ、 残忍の歌を歌い、 言語に絶する行為を行った。 あなたの部下たちは死者の怒りを恐れて後ずさりをしたが、 あなたの底知れぬ邪悪さに対して敬意を新たにしたようだ。
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+menu_funeral_pyre|あなたは{s2}の{s3}の、 火葬壇の炭となった残がいに近づいた。 {s28}との戦いで命を落としたのだ。 ここで彼の亡骸は彼の親衛兵たちの手によって火葬された。 何もめぼしいものは見当たらない。
 mno_leave_pyre|この場を去る。
 menu_town_ruins|この{s1}は{s2}
 mno_ruin_menu_0|この場所を探索する。
 mno_ruin_leave|立ち去る・・・
-; menu_premutiny|none
+menu_premutiny|none
 menu_death|あなたは殺されました。 戦争の猛威はいまだ弱まる気配すらありませんが、 あなたの役目はここで終わりました。
 menu_animal_ambush|あなたとコンパニオンは、他の兵とはぐれてしまいました。すると突然・・・
 menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}

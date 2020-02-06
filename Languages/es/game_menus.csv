@@ -107,7 +107,7 @@ mno_start_2_far|Miembro de las tribus de la Lejana Harad
 menu_start_numenorean|^^^^^^^Eres uno de los Númenóreanos Negros,^ leal a la Oscuridad y a Morgoth.^Selecciona dónde sirves al Ojo
 mno_start_1_bn|Junto a la Boca de Sauron, en MORANNON
 mno_start_2_bn|En la fortaleza del Nigromante, DOL GULDUR
-menu_choose_gender|^^^^^^^^^^¿Cual es tu sexo?
+menu_choose_gender|^^^^^^^^^^¿Cuál es tu sexo?
 mno_start_male|Hombre
 mno_start_female|Mujer
 mno_proc|Seguir sin más
@@ -327,7 +327,7 @@ menu_recover_after_death_town_alone|Recuperas tu consciencia y te encuentras só
 menu_notification_center_under_siege|¡{s1} ha sido asediado por {s2} de {s3}!
 menu_notification_one_side_left|^^^^^¡La Guerra del Anillo ha terminado!^^Las {s1} han derrotado a todos sus enemigos y se erigen victoriosas!
 menu_notification_total_defeat|^^^^^¡La Guerra del Anillo ha terminado para ti! Las {s1} han sido derrotadas por sus enemigos y tu te has quedado {solo y abandonado/sola y abandonada} tras la derrota.
-menu_notification_your_faction_collapsed|^^^^^¡{s11}, tu antiguo hogar, ha caído!^Pero no temas, otros aliados permanecen activos en la Guerra. Tú, junto con cualquiera de los supervivientes de {s11} que sigan en pie, todavía podéis plantar cara al enemigo y seguir luchando por la victoria de vuestro bando.
+menu_notification_your_faction_collapsed|^^^^^¡{s11}, tu antiguo hogar, ha caído!^Pero no temas, otros aliados permanecen activos en la Guerra. Tú, junto con aquellos supervivientes de {s11} que sigan en pie, todavía podéis plantar cara al enemigo y seguir luchando por la victoria de vuestra causa.
 menu_notification_faction_defeated|^^^^^¡{s1} ha caído!^{s1} ya no existe, gracias los esfuerzos combinados de {s13}.
 menu_ruins|^^^^Te acercas a las {s1}. El que una vez fuera un fuerte campamento fortificado se encuentra ahora arrasado hasta los cimientos, pasto de las llamas, aunque todavía puedes ver los restos de edificaciones y armas oxidadas a ambos lados de tu campo de visión.
 menu_legendary_place|^^^^Has seguido los rumores y encontrado {s1}. A partir de ahora puedes explorar este lugar y comprobar por tu cuenta y riesgo si los rumores de los que tanto has oído hablar son ciertos.

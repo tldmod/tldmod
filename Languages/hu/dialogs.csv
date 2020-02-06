@@ -465,12 +465,14 @@ dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|Er
 ; dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Are you able to send men?
 ; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
 ; dlga_lord_mission_defend_question:lord_mission_defend_accept|My men and I are ready. We shall ride out at once.
-; dlga_lord_mission_defend_question:lord_mission_defend_reject|I am afraid I cannot do this task.
+; dlga_lord_mission_defend_question:lord_mission_defend_reject|I am afraid I may not have enough men with me currently...
+; dlga_lord_mission_defend_question:lord_mission_defend_reject.1|I am afraid I cannot do this task.
 ; dlga_lord_mission_defend_accept:close_window|Thank you, {playername}. Now go, quickly!
 ; dlga_lord_mission_defend_reject:close_window|I see. Then I will send what troops I can. Let us hope we are not too late.
 ; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they are protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
 ; dlga_lord_mission_raid_village_a:lord_raid_village_accept|I will raid that village, kill every man we see, and enslave all women and children!
-; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I do not have the time to raid puny villages!
+; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I cannot raid with these weaklings with me right now...
+; dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|I do not have the time to raid puny villages!
 ; dlga_lord_raid_village_accept:close_window|Then what are you doing standing around here?
 ; dlga_lord_raid_village_reject:close_window|The excuses of cowards. Go away, your cowardly stench is insulting.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Bakacsinerdő varázslóját utolérte a végzete, Hölgyem.

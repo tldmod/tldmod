@@ -465,12 +465,14 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}，我 們 收 
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|你 能 派 出 援 軍 嗎？
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|我 們 可 以，但 動 員 需 要 時 間。我 們 擔 心 到 那 時 就 太 晚 了。 ^^你 和 你 的 手 下 看 起 來 能 快 馬 加 鞭 的 出 發。你 能 幫 忙 保 衛 這 個 村 莊 嗎？
 dlga_lord_mission_defend_question:lord_mission_defend_accept|我 和 我 的 手 下 已 經 準 備 好 了。我 們 會 盡 快 出 發 的。
-dlga_lord_mission_defend_question:lord_mission_defend_reject|我 恐 怕 接 不 了 這 個 任 務。
+; dlga_lord_mission_defend_question:lord_mission_defend_reject|I am afraid I may not have enough men with me currently...
+dlga_lord_mission_defend_question:lord_mission_defend_reject.1|我 恐 怕 接 不 了 這 個 任 務。
 dlga_lord_mission_defend_accept:close_window|謝 謝 你，{playername}。出 發 吧，快！
 dlga_lord_mission_defend_reject:close_window|明 白。那 我 會 盡 可 能 地 派 出 援 軍。希 望 我 們 來 得 及。
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}，附 近 有 一 個 村 莊 很 適 合 收 割。 我 們 的 斥 候 說 他 們 受 到 {s3} 的 保 護，但 人 數 很 少，很 容 易 被 擊 敗。 ^^你 是 我 告 訴 的 第 一 個 指 揮 官。 你 想 如 何 使 用 這 些 情 報？
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|我 會 襲 擊 那 個 村 莊，殺 死 每 一 個 男 人，奴 役 所 有 的 女 人 和 小 孩！
-dlga_lord_mission_raid_village_a:lord_raid_village_reject|我 沒 時 間 去 掠 奪 微 不 足 道 的 村 莊！
+; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I cannot raid with these weaklings with me right now...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|我 沒 時 間 去 掠 奪 微 不 足 道 的 村 莊！
 dlga_lord_raid_village_accept:close_window|那 你 還 在 這 乾 站 著 幹 什 麼？
 dlga_lord_raid_village_reject:close_window|懦 夫 的 藉 口。 走 開，你 的 懦 弱 真 是 侮 辱 人。
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|幽 暗 密 林 的 巫 師 已 經 死 了，女 士。
@@ -659,7 +661,7 @@ dlga_castle_gate_open:close_window.4|{s2} 大 人 不 允 許 你 待 在 這 �
 dlga_start:caravan_help1|感 謝 你 的 幫 助！我 們 得 救 了。我 是 托 巴 爾，受 到 襲 擊 的 時 候 正 在 運 輸 一 些 貨 物。^^你 見 過 那 些 大 型 半 獸 人 嗎？看 起 來 可 不 像 我 們 平 時 能 輕 鬆 搞 定 的 普 通 山 地 種。他 們 盾 牌 的 圖 案 貌 似 是 古 老 的 魔 多 標 誌，很 久 沒 在 大 河 的 這 一 邊 看 到 了。^^邪 惡 正 在 邁 進，戰 爭 就 要 來 了^^我 建 議 你 去 最 近 的 城 鎮 警 告 負 責 人。這 很 重 要，請 盡 快。
 dlga_caravan_help1:caravan_help2|不，我 從 沒 見 過 如 此 大 型 的 半 獸 人。骯 髒 的 東 西...^^我 是 一 名 正 為 未 來 大 戰 做 準 備 的 士 兵。
 dlga_caravan_help2:caravan_help_tut|你 是？果 然 你 是！你 精 湛 的 武 藝 我 已 經 見 識 到 了。^^看 來 我 今 天 確 實 走 運，我 會 趁 此 良 機 返 回 村 莊，把 這 群 骯 髒 野 獸 的 消 息 通 知 給 村 民 們。^^來，這 是 一 些 可 以 在 {s10} 使 用 的 貨 幣。
-dlga_caravan_help_tut:caravan_help3|(資 源 點 教 學)^^ 你 可 以 用 來 從 {s11} 的 人 購 買 物 資 的 資 源 點 與 你 自 己 的 派 系 中 獲 得 的 點 數 不 同，而 是 你 能 在 {s11} 才 能 獲 得 的 點 數。 ^^詳 情 請 參 閱 報 告。
+; dlga_caravan_help_tut:caravan_help3|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of {s11} are not the ones you earned in your own faction, but the ones you will earn in {s11}. ^^See REPORTS for more information.
 dlga_caravan_help3:caravan_help4|祝 你 一 路 平 安，托 巴 爾。我 想 我 們 會 再 見 的。
 dlga_caravan_help4:caravan_help_fac_tut|我 對 此 十 分 期 待。我 的 護 衛 在 這 裡 見 證 了 你 的 戰 鬥，肯 定 會 把 你 的 消 息 告 訴 他 們 的 領 主 的。^^如 果 你 多 次 幫 助 了 領 主 們 的 人 民，你 肯 定 會 在 他 們 之 中 聲 名 大 噪，而 這 將 會 給 你 帶 來 很 多 好 處！^^例 如 我，作 為 一 個 名 人，每 個 月 都 能 因 為 我 的 貢 獻 得 到 一 次 額 外 收 入！
 dlga_caravan_help_fac_tut:caravan_help5|（派 系 軍 銜 教 學）^^軍 銜 點 允 許 你 提 升 你 在 原 本 派 系（和/或 其 它 派 系）中 的 地 位。^^這 將 決 定 你 的 部 隊 人 數 上 限，每 週 的 派 系 資 源 點 收 入，並 解 鎖 一 些 派 系 特 殊 獎 勵。

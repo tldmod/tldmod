@@ -465,12 +465,14 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, recebemos rel
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|És capaz de enviar homem?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Nós podemos, mas levará tempo para mobilizarmos. Nós tememos que talvez seja tarde demais quando conseguirmos. ^^Você e seus homens parecem capazes de cavalgar rapidamente. Vocês podem defender esta vila?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Os meus homens e eu estão prontos. Vamos partir agora.
-dlga_lord_mission_defend_question:lord_mission_defend_reject|Estou com receio que não possa cumprir com esta tarefa.
+dlga_lord_mission_defend_question:lord_mission_defend_reject|Receio que posso não tenho muitos soldados comigo no momento...
+dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Estou com receio que não possa cumprir com esta tarefa.
 dlga_lord_mission_defend_accept:close_window|Obrigado, {playername}. Agora vá, rápido!
 dlga_lord_mission_defend_reject:close_window|Entendo. Então terei que enviar as tropas que puder. Esperemos que não seja tarde demais.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, há uma vila próxima que está madura para colheita. Nossos batedores nos dizem que eles estão protegidos por {s3}, mas eles são poucos e podem facilmente ser derrotados. ^^Acontece de você ser o primeiro comandante que fui contado. O que você quer fazer com essa informação?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Vou invadir essa aldeia, matar todos os homens que vemos e escravizar todas as mulheres e crianças!
-dlga_lord_mission_raid_village_a:lord_raid_village_reject|Eu não tenho tempo para roubar aldeias insignificantes!
+; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I cannot raid with these weaklings with me right now...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Eu não tenho tempo para roubar aldeias insignificantes!
 dlga_lord_raid_village_accept:close_window|Então que vão fazer para ficar aqui?
 dlga_lord_raid_village_reject:close_window|As desculpas de covardes. Vá embora, o seu fedor de medo é insultante.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|O feiticeiro da Floresta das Trevas foi morto , minha senhora.
@@ -659,7 +661,7 @@ dlga_castle_gate_open:close_window.4|Meu senhor {s2} não quero você aqui . Beg
 dlga_start:caravan_help1|Obrigado por ajudar! Nós estamos seguros agora. Meu nome é Torbal, e eu estava apenas entregando algumas mercadorias quando fomos atacados.^^ Você já viu esses Orcs grandes antes? Esses não parecem ser orcs das montanhas comuns que estamos acostumados a rechaçar facilmente. E a pintura em seus escudos é um brasão ancestral de Mordor. Eu não via um desses deste lado do rio a muito tempo. ^^Coisas ruins estão por vir.. A guerra está chegando! ^^Eu recomendo que você vá à vila mais próxima e alerte todos sobre o que viu e a quem quer que esteja no comando por lá. É importando, por favor, vá depressa.
 dlga_caravan_help1:caravan_help2|Não, eu nunca tinha visto um orc tão grande antes. Coisas nojentas... ^^Eu sou um soldado nessa guerra que todos estão sentindo.
 dlga_caravan_help2:caravan_help_tut|És mesmo? Claro que és! Eu vi que eras um guerreiro capaz. ^^Estou cheio de sorte hoje, então eu vou usar esta boa fortuna e vou aproveitar para alertar a aldeia e o meu povo dessas bestas sujas. ^^Aqui tens, fica com algumas moedas usadas por {s10}
-dlga_caravan_help_tut:caravan_help3|(TUTORIAL DE PONTOS DE RECURSO)^^ Pontos de Recurso que você usa para comprar do povo de {s11} não são os mesmos que você ganhou da sua própria facção, mas são aqueles que você vai ganhar em {s11}. ^^Veja REPORTS para mais informação.
+; dlga_caravan_help_tut:caravan_help3|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of {s11} are not the ones you earned in your own faction, but the ones you will earn in {s11}. ^^See REPORTS for more information.
 dlga_caravan_help3:caravan_help4|Que tenhas uma jornada segura, Torbal. Tenho a certeza que nos encontraremos de novo.
 dlga_caravan_help4:caravan_help_fac_tut|Eu estou esperando por isso. Meus guardas aqui viram você lutar e vão definitivamente contar aos seus senhores sobre você. ^^Se você ajudar o povo deles mais algumas vezes, com certeza se tornará renomado entre eles, o que pode levar a grandes coisas! ^^Eu por exemplo, sou bastante conhecido, e tenho até recebido um salário mensal por todo o meu trabalho!
 dlga_caravan_help_fac_tut:caravan_help5|(TUTORIAL DE RANQUES DA FACÇÃO) ^^Pontos de Ranque permitem que você suba nos ranques da sua facção (e/ou outras facções). ^^Isso determinará o tamanha máximo do seu grupo, o salário semanal vindo da facção, e destravará outras recompensas específicas da facção.

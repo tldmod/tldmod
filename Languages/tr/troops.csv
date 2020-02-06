@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|Pinnath Gelin Okçuları
 trp_c6_pinnath_leader|Pinnath Gelin Kaptanı
 trp_c6_pinnath_leader_pl|Pinnath Gelin Kaptanları
 trp_a1_blackroot_hunter|Blackroot Vale Avcısı
-trp_a1_blackroot_hunter_pl|Blackroot Vale Avcıları
+; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
 trp_a2_blackroot_bowman|Blackroot Vale Yay Ustası
 trp_a2_blackroot_bowman_pl|Blackroot Vale Yay Ustaları
 trp_a3_blackroot_archer|Blackroot Vale  Okçusu
@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Lothlorien Usta Okçusu
 trp_a5_lorien_gal_royal_warden_pl|Lothlorien Usta Okçuları
 trp_a6_lorien_grey_warden|Galadhrim Kıraliyet Okçusu
 trp_a6_lorien_grey_warden_pl|Galadhrim Kraliyet Okçuları
-trp_a5_lorien_gal_royal_archer|Galadhrim Kraliyet Nişancısı
-trp_a5_lorien_gal_royal_archer_pl|Galadhrim Kraliyet Nişancıları
+trp_galadhrim_royal_marksman|Galadhrim Kraliyet Nişancısı
+trp_galadhrim_royal_marksman_pl|Galadhrim Kraliyet Nişancıları
 trp_noldorin_mounted_archer|Noldorin Atlı Okçusu
 trp_noldorin_mounted_archer_pl|Nolodrin Atlı Okçuları
 trp_a2_lorien_archer|Lothlorien Piyadesi
@@ -332,8 +332,8 @@ trp_i3_lorien_inf|Lothlorien Gardiyanı
 trp_i3_lorien_inf_pl|Lothlorien Gardiyanları
 trp_i4_lorien_gal_inf|Lothlorien Kıdemli Gardiyanı
 trp_i4_lorien_gal_inf_pl|Lothlorien Kıdemli Gardiyanları
-trp_galadhrim_royal_marksman|Galadhrim Kraliyet Gardiyanı
-trp_galadhrim_royal_marksman_pl|Galadhrim Kraliyet Gardiyanları
+trp_a5_lorien_gal_royal_archer|Galadhrim Kraliyet Gardiyanı
+trp_a5_lorien_gal_royal_archer_pl|Galadhrim Kraliyet Gardiyanları
 trp_lothlorien_standard_bearer|Lothlorien Bayrak Taşıyıcısı
 trp_lothlorien_standard_bearer_pl|Lothlorien Bayrak Taşıyıcıları
 trp_a1_greenwood_scout|Greenwood İzcisi
@@ -486,7 +486,7 @@ trp_c2_harondor_scout|Harandor İzcisi
 trp_c2_harondor_scout_pl|Harondor İzcileri
 trp_c3_harondor_rider|Harondor Atlısı
 trp_c3_harondor_rider_pl|Harondor Atlıları
-trp_c4_harondor_light_cavalry|Harondor Hafif Süvarisi
+trp_c4_harondor_light_cavalry|Harandor Hafif Süvarisi
 trp_c4_harondor_light_cavalry_pl|Harandor Hafif Süvarisi
 trp_c5_harondor_serpent_knight|Altın Engerek Şovalyesi
 trp_c5_harondor_serpent_knight_pl|Altın Engerek Şovalyeleri
@@ -496,7 +496,7 @@ trp_ac4_harondor_horse_archer|Harondor Atlı Okçusu
 trp_ac4_harondor_horse_archer_pl|Harondor Atlı Okçuları
 trp_ac5_harondor_black_snake|Kara Yılan Atlı Okçusu
 trp_ac5_harondor_black_snake_pl|Kara Yılan Atlı Okçuları
-trp_i2_far_harad_tribesman|Uzak Haradli kabile insani
+trp_i2_far_harad_tribesman|Far Harad Kabile Üyesi
 trp_i2_far_harad_tribesman_pl|Uzak Harad Kabilelileri
 trp_i4_far_harad_champion|Uzak Harad Şampiyonu
 trp_i4_far_harad_champion_pl|Uzak Harad Şampiyonları
@@ -548,7 +548,7 @@ trp_i3_khand_pitfighter|Khand Çukur Dövüşçüsü
 trp_i3_khand_pitfighter_pl|Khand Çukur Dövüşçüleri
 trp_i4_khand_pit_champion|Variag Çukur Şampiyonu
 trp_i4_khand_pit_champion_pl|Variag Çukur Şampiyonları
-trp_i5_khand_pit_master|Variag Çukurların Ustası
+trp_i5_khand_pit_master|Kuyu Ustası Variag
 trp_i5_khand_pit_master_pl|Variag Çukurların Ustaları
 trp_ac3_khand_skirmisher|Khand Çatışmacısı
 trp_ac3_khand_skirmisher_pl|Khand Çatışmacıları
@@ -636,10 +636,10 @@ trp_i6_isen_uruk_berserker|Vahşi Uruk Hai Savaşçısı
 trp_i6_isen_uruk_berserker_pl|Vahşi Uruk Hai Savaşçıları
 trp_i1_isen_uruk_snaga|Uruk Hai Yeni dogmuş
 trp_i1_isen_uruk_snaga_pl|Uruk Hai Yeni doganlar
-trp_i2_isen_uruk|Isengard Uruk Haisi
+trp_i2_isen_uruk|Isengard Uruk Haileri
 trp_i2_isen_uruk_pl|Isengard Uruk Haileri
 trp_i3_isen_large_uruk|Büyük Isengard Uruk Haisi
-trp_i3_isen_large_uruk_pl|Büyük Isengard Uruk Haileri
+trp_i3_isen_large_uruk_pl|Büyük Isengard Uruk Haisi
 trp_i4_isen_fighting_uruk_warrior|Kavgacı Uruk Hai Savaşçısı
 trp_i4_isen_fighting_uruk_warrior_pl|Kavgacı Uruk Hai Savaşçıları
 trp_i5_isen_fighting_uruk_champion|Kavgacı Uruk Hai Şampiyonu
@@ -1037,7 +1037,7 @@ trp_knight_4_1|Whip Snog
 trp_knight_4_2|Whip Snotgor
 trp_knight_4_6|General Tuskim
 trp_knight_4_7|General Mugslag
-trp_knight_4_11|Beranhelm
+; trp_knight_4_11|Ruel
 trp_knight_4_12|Beranor Karakürk
 trp_knight_4_16|Whip Brolgukhsh
 trp_knight_4_17|Whip Grumrunt

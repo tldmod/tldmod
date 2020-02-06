@@ -1,7 +1,7 @@
 ui_at_learning_limit|(nejvyšší možná úroveň pro tuto rasu)
 ui_not_enough_skill_points_to_learn|(nedostatek bodu dovednosti)
 ui_not_enough_attributetype_to_learn_this_skill|(nedostatek %s pro tuto dovednost)
-; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
+ui_explanation_agility|Pohyblivost: Za každý bod dostaneš pět zbraňových bodů a zvyšuje se rychlost zacházení se zbraněmi o 0.5%. Nad 1/3 pohyblivosti se nelze naučit tyto schopnosti: mistrovství zbraně, štít, atletika, jezdectví, jízdní lukostřelba a kořistnictví.
 ui_retreated_battle|%s zběhlo.
 ui_riding_skill_not_adequate_to_mount|(jezdecká dovednost je příliš malá)
 ui_camp|Akce
@@ -56,8 +56,8 @@ ui_crouch|Skrčit
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Jste si jistý že chcete Importovat postavu?
 ui_explanation_strength|Síla: Každý bod přidává +1 bod zdraví. Následující schopnosti nemohou být vyvinuty pod 1/3 síly: Železné svaly, Silný Úder, Silný Hod, Síla k natažení luku.
-; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
-; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+ui_explanation_intelligence|Inteligence: Každý bod inteligence ihned přidá jeden bod schopností navíc a při některých příležitostech mírně zvyšuje zisk XP. Nad 1/3 inteligence se nelze naučit tyto schopnosti: cvičitel, stopování, taktika, hledání cesty, pozorování, skladování zásob, ošetřování ran, chirurgie a první pomoc.
+ui_explanation_charisma|Charisma: Každý bod zvyšuje maximální velikost tvé družiny o +1. Nad 1/3 charismatu se nelze naučit tyto schopnosti: správa vězňů, zálesáctví, velitelství a obchod.
 ui_delivered_number_damage|Zasazeno %d poškození.
 ui_mission_losses_killed|Zabil :
 ui_party_losses|%s : %d Zraněno -- %d zabito z %d
@@ -148,5 +148,5 @@ ui_str_hear_me|%s, slyšte mě!
 ui_return|Vrátit
 ui_factions|Frakce
 ui_troop_upgrades|Vylepšení jednotek
-; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
-; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)
+ui_hdr_mode|Vyšší dynamický rozsah (doporučené nastavení je Vypnuto nebo Nízké)
+ui_autoexpore|Automatická expozice (doporučené nastavení je Zapnuto pokud je Vyšší dynamický rozsah zapnutý)

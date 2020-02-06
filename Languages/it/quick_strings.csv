@@ -100,7 +100,7 @@ qstr_Level:_{reg3}^Health|Livello: {reg3}^Punti Ferita: {reg4}
 qstr_Attributes|Attributi
 qstr_STR^AGI^INT^CHA|FOR^AGI^INT^CAR
 qstr_Skills|Abilità
-qstr_Ironflesh^Power_Stri|Resistenza^Potenza d'Attacco^Potenza di Lancio^Scudo^Atleticità^Cavalcare^Arco in Sella
+qstr_Ironflesh^Power_Stri|Resistenza^Potenza d'Attacco^Potenza di Lancio^Potenza di Tiro^Scudo^Atleticità^Cavalcare^Arco in Sella
 qstr_Proficiencies|Competenze
 qstr_1H_Weapons^2H_Weapon|1H Armi^2H Armi^Armi Lunghe^Tiro con l'Arco^Balestre^Lancio
 qstr_Equipment|Equipaggiamento
@@ -567,7 +567,7 @@ qstr_The_strength_of_the_|La forza delle fazioni alleate rimanenti nella zona di
 qstr_{s30}_reinforced_by_|{s30} rifnorzato da {reg65} for faz
 qstr_{s1}_has_been_besieg|{s1} è sotto assedio da parte di {s2} di {s3}.
 qstr_The_forces_of_{s2}_m|Le forze di {s2} marciano su {s15} !
-qstr_Rohan_capital_moved_|La capitale di Rohan si è spostata da Edoras a Hornburg !
+qstr_Rohan_capital_moved_|La capitale di Rohan si è spostata da Edoras a Fosso di Helm !
 qstr_Dale_capital_moved_f|La capitale di Dale si è spostata da Dale a Esgaroth !
 qstr_Gundabad_capital_mov|La capitale di Gundabad si sposta da Gundabad alla Città dei Goblin !
 qstr_The_hosts_of_{s2}_re|Le schiere di {s2} si ritirano verso le loro terre !
@@ -999,7 +999,7 @@ qstr_three_scouts_two_rai|tre esploratori, due assaltattori e una compagnia d'ar
 qstr_You_see_the_village_|Vedi il villaggio sotto attacco. Chiedi alla gran parte delle tue truppe di cercare altri aggressori, mentre prendi un piccolo contingente e ti prepari a difendere la popolazione.
 qstr_You_see_the_village_y|Vedi l'insediamento che hai ordine di attaccare. Tu ed un piccolo gruppo di attaccanti vi preparate ad assaltare l'insediamento, in modo da non essere individuati
 qstr_The_raiders_are_defe|I predatori sono sconfitti ! I pochi che restano vivi e coscienti si affrettano a tornare nell'oscurità da cui sono usciti, terrorizzati dagli abitanti del villaggio e dal loro nuovo campione.
-qstr_Try_as_you_might_you|Fai tutto ciò che è in tuo potere, ma non riesci a sconfiggere i predoni. Essi radono il villaggio al suolo e rendono schiavi gil abitanti che restano.
+qstr_Try_as_you_might_you|Fai tutto ciò che è in tuo potere, ma non riesci a sconfiggere i predoni. Essi radono il villaggio al suolo e rendono schiavi gli abitanti che restano.
 qstr_The_village_has_been|Il villaggio è stato razziato, gli abitanti sono stati uccisi o resi schiavi. L'Oscuro Signore ne sarà compiaciuto.
 qstr_You_failed_to_raid_t|Hai fallito nel razziare il villaggio e vieni mandato in fuga con i tuoi compagni. Senti le grida dei vincitori mentre percepisci lo sguardo di disapprovazione dell'Occhio.
 qstr_The_Scout_Camp_has_b|Il Campo degli Esploratori è stato raso al suolo, questo rallenterà l'avanzata del nemico.
@@ -1145,7 +1145,7 @@ qstr_But_we_did_make_you_|Ma ti abbiamo fatto stupido come nei film. Qualcosa co
 qstr_What_is_news?_Got_an|Quali nuove ? Hai qualche screenshot ?
 qstr_Well_just_look_aroun|Beh guardati attorno, a che ti servono degli screenshots ?
 qstr_Say_cheese!|Sorridi !
-qstr_Why_did_you_make_mod|Perché avete reso l'installazione della mod cosi' complessa ?
+qstr_Why_did_you_make_mod|Perché avete reso l'installazione della mod così complessa ?
 qstr_Well_if_you_are_here|Bene, se sei arrivato fin qui e mi stai parlando, allora hai RTFM dopotutto
 qstr_You_just_got_windyfl|Sei appena stato windyflorato !
 qstr_Merry|Merry

@@ -465,12 +465,14 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, wir haben Nac
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Seid Ihr in der Lage, Truppen dorthin zu senden?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Wir könnten, aber es wird Zeit brauchen, sie zusammenzustellen. Wir befürchten, dass es bis dahin zu spät sein könnte. ^^Ihr und Eure Männer scheinen mir in der Lage, schnell aufzubrechen. Könnt Ihr das Dorf verteidigen?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Meine Männer und ich sind bereit. Wir werden sofort ausziehen.
-dlga_lord_mission_defend_question:lord_mission_defend_reject|Ich fürchte, ich kann diese Aufgabe nicht übernehmen.
+dlga_lord_mission_defend_question:lord_mission_defend_reject|Ich fürchte, ich habe im Moment nicht genügend Männer bei mir...
+dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Ich fürchte, ich kann diese Aufgabe nicht übernehmen.
 dlga_lord_mission_defend_accept:close_window|Habt Dank, {playername}. Nun geht, rasch!
 dlga_lord_mission_defend_reject:close_window|Ich verstehe. Dann werde ich tun, was ich kann. Lasst uns hoffen, dass wir nicht zu spät kommen.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, es gibt ein Dorf hier in der Nähe, reif, um gepflückt zu werden. Unsere Späher berichten, dass es von {s3} beschützt wird, aber es sind nur wenige und sie können leicht besiegt werden. ^^Du bist der erste, dem ich das erzähle. Was willst du mit dieser Nachricht anfangen?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Ich werde das Dorf angreifen, jeden Mann töten und die Frauen und Kinder zu Sklaven machen!
-dlga_lord_mission_raid_village_a:lord_raid_village_reject|Ich habe keine Zeit, mickrige Dörfer zu überfallen.
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|Ich kann mit diesen Schwächlingen noch keine Dörfer überfallen...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Ich habe keine Zeit, mickrige Dörfer zu überfallen.
 dlga_lord_raid_village_accept:close_window|Was stehst du dann noch hier herum?
 dlga_lord_raid_village_reject:close_window|Die Ausrede eines Feiglings. Weg mit dir, der Geruch von Feiglingen widert mich an.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Der Zauberer aus dem Düsterwald ist erschlagen, meine Herrin.

@@ -3,8 +3,8 @@ qst_deliver_message_text|{s9}に{s13}へ手紙を届けるよう頼まれた。 
 qst_deliver_message_to_enemy_lord|{s13}へ手紙を届けよ
 qst_deliver_message_to_enemy_lord_text|{s9}に{s15}の{s13}へ手紙を届けるよう頼まれた。 仕事を請け負った時点では{s13}は{s4}にいた。
 qst_raise_troops|{reg1}名の{s14}を育て上げよ
-; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
-qst_escort_messenger|{s14}まで伝令を護衛せよ
+qst_raise_troops_text|{reg1}名の{s14}を育て上げて {彼/彼女}に引き渡すよう、 {s9}より依頼された。
+qst_escort_messenger|{s14}まで 伝令を護衛せよ
 qst_escort_messenger_text|None
 qst_hunt_down_fugitive|{s4}を追え
 qst_hunt_down_fugitive_text|{s9}より、{s4}という名前のおたずね者を 捕まえるよう頼まれた。 おたずね者は現在、 {s3}に潜んでいるとされている。
@@ -25,19 +25,19 @@ qst_capture_troll_text|{s9}の命令により、 彼の軍隊で利用するた�
 qst_kill_troll|暴れトロルを倒せ
 qst_kill_troll_text|{s13}のはずれで暴れる トロルの脅威から 住民たちを救うよう、 {s9}に頼まれた。
 qst_mirkwood_sorcerer|闇の森の妖術師を殺せ
-qst_mirkwood_sorcerer_text|ドル・グルドゥアの妖術師が行っている邪悪な儀式によって、 ロスロリエンを護るガラドリエルの力が弱められている。 妖術師は生身の人間だが、 その存在はエルフにとっての大きな脅威となっている。 闇の森にいる妖術師を探し出せ。 ドル・グルドゥアからそう遠くない場所にいるはずだ。 妖術師を倒す機会は一度きりしかない。 警戒をさけるため、 隠密な行動が要求されるだろう。
+qst_mirkwood_sorcerer_text|ドル・グルドゥアの妖術師が行っている邪悪な儀式によって、 ロスローリエンを護るガラドリエルの力が弱められている。 妖術師は生身の人間だが、 その存在はエルフにとっての大きな脅威となっている。 闇の森にいる妖術師を探し出せ。 ドル・グルドゥアからそう遠くない場所にいるはずだ。 妖術師を倒す機会は一度きりしかない。 警戒をさけるため、 隠密な行動が要求されるだろう。
 qst_find_lost_spears|ブラードルシン王の失われた槍を見つけ出せ
 qst_find_lost_spears_text|かつてドワーフがブラードルシン王のために 鍛えたと伝わる失われた槍を見つけるよう、 {s9}に頼まれた。 はなれ山の奥深くを探索するには、 ドワーフの許可を得なければならない。
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
-; qst_destroy_scout_camp|Destroy Scout Camp
+qst_defend_village|村を防衛せよ
+qst_raid_village|村を襲撃せよ
+qst_destroy_scout_camp|偵察野営を破壊せよ
 qst_rescue_prisoners|捕虜を{reg1}名救出せよ
 qst_rescue_prisoners_text|捕虜を{reg1}名救出するよう、 {s9}に頼まれた。
 qst_scout_enemy_town|敵の拠点を偵察せよ
 qst_scout_enemy_town_text|{s13}周辺を偵察してくるよう、 {s9}に頼まれた。
 qst_dispatch_scouts|偵察隊を派遣せよ
 qst_dispatch_scouts_text|{s13}付近に偵察隊を派遣するよう、 {s9}に頼まれた。
-qst_eliminate_patrols|敵部隊を{reg1}つ倒せ
+qst_eliminate_patrols|敵部隊を{reg1}部隊撃破せよ
 qst_eliminate_patrols_text|{s13}の敵部隊を{reg1}殲滅するよう、 {s9}に頼まれた。
 qst_lend_surgeon|軍医の{s3}を{s1}に貸す
 qst_lend_surgeon_text|{s1}に、 経験豊富な軍医の{s3}を貸した。
@@ -45,45 +45,45 @@ qst_follow_army|{s9}の部隊に同行せよ
 qst_follow_army_text|None
 qst_report_to_army|{s13}に出頭せよ
 qst_report_to_army_text|None
-qst_deliver_cattle_to_army|食料{reg3}ユニットを {s13}まで届けよ
+qst_deliver_cattle_to_army|食料{reg3}個を {s13}まで届けよ
 qst_deliver_cattle_to_army_text|None
 qst_join_siege_with_army|{s14}攻撃に参加せよ
 qst_join_siege_with_army_text|None
 qst_scout_waypoints|{s13}、 {s14}、 および{s15}を偵察せよ
 qst_scout_waypoints_text|None
-qst_move_cattle_herd|{s12}を{s13}まで護衛せよ
+qst_move_cattle_herd|{s12}を{s13}まで 護衛せよ
 qst_move_cattle_herd_text|{s10}の長老に、 {s12}を{s13}まで護衛するよう、 頼まれた。
-qst_escort_merchant_caravan|{s8}への補給隊を護衛せよ
-; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
-qst_deliver_wine|{s4}へ{s6}を{reg5}ユニット届けよ
-qst_deliver_wine_text|7日以内に{s4}まで{s6}を{reg5}ユニット届けるよう、 {s3}の{s9}に頼まれた。
+qst_escort_merchant_caravan|{s8}への 補給隊を護衛せよ
+qst_escort_merchant_caravan_text|{s8}まで補給隊を護衛し、 目的地付近に到達したらその旨を彼らに報告せよ。
+qst_deliver_wine|{s4}へ {s6}を{reg5}個届けよ
+qst_deliver_wine_text|7日以内に{s4}まで{s6}を{reg5}個届けるよう、 {s3}の{s9}に頼まれた。
 qst_troublesome_bandits|迷惑なゴブリンを退治せよ
 qst_troublesome_bandits_text|町の周辺にいる迷惑なゴブリンを退治するよう、 {s4}の{s9}に頼まれた。
 qst_deal_with_looters|部族オークを退治せよ
 qst_deal_with_looters_text|{s4}周辺にいる、 いくつかの部族オークの群れを退治するよう、 {s4}の長老に頼まれた。
 qst_deal_with_night_bandits|ごろつきゴブリンを退治せよ
 qst_deal_with_night_bandits_text|{s14}に、 夜になると出没するというゴブリンを退治するよう、 {s14}の長老に頼まれた。
-qst_deliver_food|{s3}に食料を{reg5}ユニット供給せよ
-qst_deliver_food_text|10日以内に食料を{reg5}調達してくるよう、 {s3}の{s9}に頼まれた。
-qst_deliver_iron|{s3}に{s6}を{reg5}ユニット供給せよ
-qst_deliver_iron_text|{s6}を{reg5}ユニット調達してくるよう、 {s3}の{s9}に頼まれた。
-; qst_tld_introduction|Go to your faction leader.
+qst_deliver_food|{s3}に 食料を{reg5}個供給せよ
+qst_deliver_food_text|10日以内に食料を{reg5}個調達してくるよう、 {s3}の{s9}に頼まれた。
+qst_deliver_iron|{s3}に {s6}を {reg5}個供給せよ
+qst_deliver_iron_text|{s6}を{reg5}個調達してくるよう、 {s3}の{s9}に頼まれた。
+qst_tld_introduction|所属勢力の指導者に面会せよ
 qst_tld_introduction_text|None
 qst_treebeard_kill_orcs|木を伐採しているオークの一団を倒せ
 qst_treebeard_kill_orcs_text|ファンゴルンの森で木を伐採している オークの一団を倒すよう、 木のひげに頼まれた。
 qst_oath_of_vengeance|復讐の誓い
 qst_oath_of_vengeance_text|{s1}の死に大いに怒ったあなたは、 {s2}の軍勢に対する復讐を誓った。 あなたはこれからの数日間、 できるだけ多くの{s2}の部隊を 殲滅しなければならない。 多くの部下があなたの誓いを目撃しているため、 失敗すれば、 誓いを破った者として 汚名を着せられることになるだろう。 さあ血の狂乱を始めるのだ！
-qst_deliver_gift|{s2}からの{s1}の{s4}を、 {s3}に届けよ
+qst_deliver_gift|{s2}からの{s4}として、 {s1}を {s3}に届けよ
 qst_deliver_gift_text|{s2}からの{s1}の{s4}を、 {s3}に届けるように頼まれた。
-; qst_ring_hunters|Ring Hunters
-; qst_ring_hunters2|Ring Hunters - Completed
-; qst_deliver_message_hobbit|Concerning Hobbits
-; qst_blank_quest_01|Defend Refugees
-; qst_blank_quest_02|Hunt Down Refugees
-; qst_blank_quest_03|Sea Battle
-; qst_blank_quest_04|Kill {s35} {s6} {s7}
-; qst_blank_quest_05|Kill {s35} {s36} troops.
-; qst_blank_quest_06|Defeat {s35} in battle.
+qst_ring_hunters|指輪狩り一味
+qst_ring_hunters2|指輪狩り一味 - 完了
+qst_deliver_message_hobbit|心配するホビット
+qst_blank_quest_01|難民を守れ
+qst_blank_quest_02|難民を襲え
+qst_blank_quest_03|海戦
+qst_blank_quest_04|{s7}の {s6}を {s35}名殺せ
+qst_blank_quest_05|{s36}の兵を{s35}名殺せ
+qst_blank_quest_06|戦闘で{s35}を倒せ
 
 
 
@@ -93,12 +93,12 @@ qst_deliver_gift_text|{s2}からの{s1}の{s4}を、 {s3}に届けるように�
 
 
 
-; qst_blank_quest_16|Reinforce Center
-; qst_blank_quest_17|Slay {reg22} {s6} in battles
+qst_blank_quest_16|拠点を補強せよ
+qst_blank_quest_17|戦場で{reg22}名の{s6}を殺せ
 
 
 
 
-; qst_guardian_party_quest|Isengard's Last Stand
-; qst_quests_end|Quests End
-; qst_quests_end_text|.
+qst_guardian_party_quest|アイゼンガルドの最後の抵抗
+qst_quests_end|Quests End
+qst_quests_end_text|。

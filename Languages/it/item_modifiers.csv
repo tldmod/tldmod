@@ -5,7 +5,7 @@ imod_bent|%s - (Incurvato)
 imod_chipped|%s - (Scheggiato)
 imod_battered|%s - (Malandato)
 imod_poor|%s - (Debole)
-imod_crude|Semplice %s
+imod_crude|%s Semplice
 imod_old|Antico
 imod_cheap|%s - (Economico)
 imod_fine|%s - (Fine)
@@ -26,7 +26,7 @@ imod_sturdy|%s Solido
 imod_thick|%s Robusto
 imod_hardened|%s - (Indurito)
 imod_reinforced|%s - (Rinforzato)
-imod_cloak|%scon mantello
+imod_cloak|%s con mantello
 imod_lordly|%s - (Capolavoro)
 imod_lame|%s - (Azzoppato)
 imod_swaybacked|%s - (Sfiancato)

@@ -465,12 +465,14 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}，我们收到
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|你能够派出一些援军么？
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|我们可以，但动员起来需要时间。我们担心到那时就太晚了。^^你和你的人看起来现在就能骑马离开。你能帮忙守护那个村庄吗？
 dlga_lord_mission_defend_question:lord_mission_defend_accept|我和我的人已经准备好了。我们会尽快出发的。
-dlga_lord_mission_defend_question:lord_mission_defend_reject|我恐怕我完成不了这个任务。
+; dlga_lord_mission_defend_question:lord_mission_defend_reject|I am afraid I may not have enough men with me currently...
+dlga_lord_mission_defend_question:lord_mission_defend_reject.1|我恐怕我完成不了这个任务。
 dlga_lord_mission_defend_accept:close_window|谢谢你，{playername}。现在出发吧，快！
 dlga_lord_mission_defend_reject:close_window|明白。那我会尽可能地派出援军。只希望我们不会太晚。
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}，附近有一座的村庄正适合我们劫掠。我们的斥候告诉我他们受到{s3}的保护，但他们人数很少，我们可以轻易地打败。^^你碰巧是第一个听到这个消息的指挥官。你不打算做点什么？
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|我会袭击那个村庄，杀死我们看到的每一个男人，奴役所有的女人和小孩！
-dlga_lord_mission_raid_village_a:lord_raid_village_reject|我可没时间去掠夺微不足道的村庄！
+; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I cannot raid with these weaklings with me right now...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|我可没时间去掠夺微不足道的村庄！
 dlga_lord_raid_village_accept:close_window|那你还在这儿干站着做什么？
 dlga_lord_raid_village_reject:close_window|懦夫的借口。滚开，你那懦弱的恶臭让我感到恶心。
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|幽暗密林的巫师已经死了，我的女士。
@@ -659,7 +661,7 @@ dlga_castle_gate_open:close_window.4|{s2}大人不允许你待在这里。立刻
 dlga_start:caravan_help1|感谢你的帮助！现在终于安全了。我叫托巴尔，受到袭击的时候正在运输一些货物。^^你见过那么大的半兽人么？看起来可不像是我们平时轻松搞定的普通山地种。他们盾牌的战纹貌似是一种古老的魔多标志，很久没在大河（安都因河）的这一边看到过了。^^恐怖正在踏步，战争就要来了^^我希望你能去最近的城镇，把你在这里所先到的一切告知掌权者。这很重要，请尽快。
 dlga_caravan_help1:caravan_help2|你说得对，我从没见过如此大的半兽人。真是些肮脏的东西…^^我是一名正为未来大战做准备的士兵。
 dlga_caravan_help2:caravan_help_tut|你是一名士兵？毫无疑问！你精湛的武艺我刚刚已经见识过了。^^看来今天的确走运，我应该趁此机会返回村庄，把这群肮脏野兽的消息通知给我的村民们。^^接着，这是一些可以在{s10}。
-dlga_caravan_help_tut:caravan_help3|(资源点教程)^^你可以从{s11}人民那里购买的资源点数不是你在自己阵营中获得的，而是你将在{s11}中获得的。^^的更多信息,请参见报告。
+; dlga_caravan_help_tut:caravan_help3|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of {s11} are not the ones you earned in your own faction, but the ones you will earn in {s11}. ^^See REPORTS for more information.
 dlga_caravan_help3:caravan_help4|祝你一路平安，托巴尔。我想我们会再见面的。
 dlga_caravan_help4:caravan_help_fac_tut|我对此十分期待。我的护卫在这里见证了你的战斗，他们肯定会把你的消息告诉他们的领主的。^^如果你多次帮助了领主们的人民，你肯定会在他们之中声名大噪，而这将会给你带来很多好处！ ^^比如我，作为一个名人，每个月都能因为我的贡献得到一次额外收入！
 dlga_caravan_help_fac_tut:caravan_help5|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
@@ -690,12 +692,12 @@ dlga_beorn_help5:beorn_help6|我们可能粗鲁、多毛，冷酷又神秘。但
 dlga_beorn_help6:beorn_help7|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
 dlga_beorn_help7:close_window|Le fael（辛达林语：谢谢），朋友！再会。
 dlga_beorn_help7:close_window.1|(挥手，一言不发地离开。)
-; dlga_start:kill_scout_1|Great eyes and ears you have there! If you hadn’t warned us, those green-clad tree-climbers would’ve had the jump on us, I warrant - or perhaps escaped, and brought down more of their fellows on our heads! Now they’re for the maggots and crows, and our mission is safe. Ai! The Bosses will be pleased.
+dlga_start:kill_scout_1|你的眼睛和耳朵可真是灵光！如果你没有警告我们，那些斥候一定会扑到我们身上，我敢保证——或者也许是逃脱了，把更多的同伴打倒在我们头上！现在他们正关注着蛆和乌鸦，我们是安全的。哈！魔多人会很高兴的。
 dlga_kill_scout_1:kill_scout_2|看看你把我们带到了哪里去了，半兽人…我可不想在战争正式开始前就被解决掉！
-; dlga_kill_scout_2:kill_scout_3|And war we shall have, indeed! Have no fear, warrior, Mordor is an ally to you and yours. Take this chit - get some supplies. Good for use in all Mordor outposts! Get a round of Orc brew on me!
+dlga_kill_scout_2:kill_scout_3|战争的确会发生！ 别怕，战士，魔多是你们的盟友。拿着这些钱，去买些物资。 足够在所有魔多前哨基地使用！给我来一杯兽人啤酒！
 dlga_kill_scout_3:kill_scout_4|(资源点教程)^^ 能在魔多用于交易的资源点和你在初始派系取得的的资源点不同，你要在魔多取得当地派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。
 dlga_kill_scout_4:kill_scout_5|你想让我们喝半兽人泔水？我们宁愿喝自己的小便。
-; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I’ve won my bet with Gothmog, thanks to you!!^^ I’ll tell him and the other Bosses about you, for sure. Lugbúrz will know how useful you were today, have no fear! The Great Eye is upon you, now!^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
+dlga_kill_scout_5:kill_scout_6|哈！我就知道你们这群外地佬会干这种事！多亏了你，我跟葛斯摩赌赢啦！^^当然，我会把你的一切告诉魔多人。卢茨会知道你今天是多么的有用，不要害怕！现在，魔眼盯上你了！^^但我们的确都忠于自己的同类。屈服于魔眼，臣服于黑魔王，是这样的，但是，在东方做事南方就不会注意到，同样的，帮助魔眼，萨鲁曼是不会在意的。帮助萨鲁曼的话，邪黑塔会质问你为什么要浪费你的时间干那些事。
 dlga_kill_scout_6:kill_scout_7|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
 dlga_kill_scout_7:kill_scout_8|我做什么关你屁事！你这恶心的怪物！滚开！
 dlga_kill_scout_8:close_window|好吧，好吧。走这边！
@@ -902,7 +904,7 @@ dlga_merchant_quest_requested:merchant_quest_brief.1|你乐意帮忙我真的很
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|我有一批{s6}需要运送给位于{s4}的{s10}。我们需要在{reg6}天内把{reg5}单位的{s6}运到{s4}。你能做到么？^^[你将获得{s14}的{reg14}资源点]
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|好，我会按时送达的。
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_stall|恐怕我现在带不了这么多货物。
-; dlga_merchant_quest_requested:merchant_quest_brief.2|Thanks for offering to help.^^This war has waged for so long that some of our centers are no longer looking good.^^Perhaps you can go and reinforce a center in need...
+dlga_merchant_quest_requested:merchant_quest_brief.2|谢谢你提供帮助。^^这场战争已经进行了很长时间，我们的一些中心看起来不再那么好了。^^也许你可以去支援一个有需要的中心…
 dlga_merchant_quest_brief:merchant_quest_brief_reinforce_center|{s5}正在被敌人围攻！我们得赶紧送去支援！^^我需要有人带着至少{reg5}名士兵去支援{s5}。^^ 现在他们已经顾不了精挑细选了，不管是精兵还是农民，来者不拒。^^ 如果你真的能送去支援，他们就能够坚持更久！^^ 你说什么？
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|彳亍口巴，我会尽我所能的。
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|抱歉，恐怕你需要找其他人做这件事儿了。

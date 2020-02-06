@@ -28,21 +28,21 @@ skl_trainer|Cvicitel
 skl_trainer_desc|Kazdy den, kazdy hrdina s touto dovednosti prida nejake zkusenosti kazdemu jinemu clenovy skupiny jehoz uroven je nizsi nez jeho/jeji. Zkusenosti se ziskavaji po:{0,4,10,16,23,30,38,46,55,65,80}. (Osobni dovednost)
 skl_looting|Rabovani
 skl_looting_desc|Tato dovednost zvysi ziskanou korist o 10%% kazdou uroven dovednosti. (Dovednost skupiny)
-skl_horse_archery|Strelba z kone 
+skl_horse_archery|Střelba z koně
 skl_horse_archery_desc|Snizuje sankce na poskozeni a presnosti pri strelbe nebo hazeni na koni. (Osobni dovednost)
-skl_riding|Jezdectvi
+skl_riding|Jezdectví
 skl_riding_desc|Dovoli ti jezdit na konich (nebo jinych zviratach) ktere maji vyssi obtiznost jizdy, a zvysi tvoji rychlost a obratnost. (Osobni dovednost)
 skl_athletics|Kondice
 skl_athletics_desc|Zvysuje tvoji rychlost behu. (Osobni dovednost)
-skl_shield|Stit
+skl_shield|Štít
 skl_shield_desc|Snizuje poskozeni stitum (o 8%% co nova uroven) a zlepsuje rychlost stitu a jeho pokryti. (Osobni dovednost)
 skl_weapon_master|Mistr zbrani
 skl_weapon_master_desc|Umoznuje jednoduseji se naucit dovednosti se zbrani, a zvysuje dovednostni limit. Limity jsou rozdeleny na: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobni dovednost)
 skl_power_draw|Sila napnutí
 skl_power_draw_desc|Umozni postave pouzit mocnejsi luky. Kazdy bod dovednosti( az 4 plus natahovaci narocnost luku) zvysuje poskozeni luku o 14%%. (Osobni dovednost)
-skl_power_throw|Vrh
+skl_power_throw|Síla vrhu
 skl_power_throw_desc|Kazdy bod zvysuje poskozeni zpusobene hodem o 10%%. (Osobni dovednost)
-skl_power_strike|Uder
+skl_power_strike|Síla úderu
 skl_power_strike_desc|Kazdy bod zvysuje poskozeni zbrani na blizko o 8%%. (Osobni dovednost)
 skl_ironflesh|Odolnost
 skl_ironflesh_desc|Kazdy bod zvysi HP o +2. (Osobni dovednost)

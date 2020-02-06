@@ -1,4 +1,4 @@
-fac_no_faction|所属ファクションなし
+fac_no_faction|所属勢力なし
 fac_commoners|平民
 fac_outlaws|野盗
 fac_gondor|ゴンドール
@@ -6,9 +6,9 @@ fac_dwarf|エレボール
 fac_rohan|ローハン
 fac_mordor|モルドール
 fac_isengard|アイゼンガルド
-fac_lorien|ロスロリエン
+fac_lorien|ロスローリエン
 fac_imladris|イムラドリス
-; fac_woodelf|The Woodland Realm
+fac_woodelf|森の王国
 fac_dale|谷間の国
 fac_harad|ハラド
 fac_rhun|リューン
@@ -18,9 +18,9 @@ fac_moria|モリア
 fac_guldur|ドル・グルドゥア
 fac_gundabad|グンダバド
 fac_dunland|褐色人
-; fac_beorn|The Vale of Anduin
-fac_player_supporters_faction|プレイヤーファクション
-fac_player_faction|プレイヤーファクション
+fac_beorn|アンドゥインの谷間
+fac_player_supporters_faction|プレイヤーの勢力
+fac_player_faction|プレイヤーの勢力
 fac_brigands|野盗
 fac_tribal_orcs|オークの部族
 fac_innocents|罪のない人々

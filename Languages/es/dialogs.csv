@@ -59,7 +59,7 @@ dlga_treebeard_about_himself:treebeard_pretalk|(El líder Ent parece adusto y so
 dlga_treebeard_about_himself:treebeard_pretalk.1|Hrummm...Soy el más viejo de mi raza mmmm... Los hombres me conocen como Bárbol y los elfos me llaman Fangorn. Hummm... Yo, Corteza y Zarcillo somos los únicos Ents que hemos habitado los bosques antes de que cayera la Oscuridad. Ya no soy tan flexible como solía ser... el joven Ramaviva puede doblarse y agitarse, como un arbolillo al viento... Hummm... Si las Ent-mujeres estuvieran aquí...
 dlga_treebeard_about_entwives:treebeard_pretalk|(La cara del cabecilla Ent muestra de repente tristeza y su voz es extrañamente profunda.)^'Hummm... Es una triste historia... cuando los bosques estén libres de orcos te la contaré.'
 dlga_treebeard_about_entwives:treebeard_pretalk.1|Hummm... las bellas Ent-mujeres... les encanta plantar y cultivar... tendríamos que haberles hecho más caso... Humm... se marcharon a las Tierras Pardas a cultivar jardines y enseñaron a los hombres a cultivar la tierra... solíamos visitarlas... hasta que... Sauron apareció... las Ent-mujeres ya no están... Hummm... Fimbrethil... y el color de sus espigas maduras... las hemos estado buscando... pero no las hemos encontrado... todavía...
-dlga_treebeard_about_ents:treebeard_pretalk|Hrummm... Somos pastores de árboles y los protegemos de los peligros. Somos más viejos que cualquiera de las razas mortales aunque no tan antiguos como los elfos que nos sacaron de nuestro mutismo. Las cosas han cambiado con el tiempo. Al principio éramos más impacientes y flexibles. A lo largo del tiempo hemos perdido a muchos de los nuestros. Algunos de los nuestros son todavía verdaderos Ents, y andan bastante animados a nuestra manera, pero muchos otros parecen somnolientos, se están poniendo arbóreos, podría decirse. La mayoría de los árboles son sólo árboles, por supuesto; pero muchos están medio despiertos. Algunos han despertado del todo, y unos pocos, bueno, ah, bueno, están volviéndose énticos. Esto nunca cesa. Cuando le ocurre esto a un árbol, descubres que algunos tienen mal corazón. Aún así, hacemos lo que podemos. No obstante, hacemos lo que podemos. Rechazamos a los extranjeros y a los imprudentes, y entrenamos y enseñamos, caminamos y quitamos las malezas.
+dlga_treebeard_about_ents:treebeard_pretalk|Hrummm... Somos pastores de árboles y los protegemos de los peligros. Somos más viejos que cualquiera de las razas mortales, aunque no tan antiguos como los elfos que nos sacaron de nuestro mutismo. Las cosas cambian con los años. Al principio éramos más impacientes, y flexibles. A lo largo del tiempo hemos perdido a muchos de los nuestros. Algunos de los nuestros son todavía verdaderos Ents, y andan bastante animados a nuestra manera, pero muchos otros parecen somnolientos, se están poniendo arbóreos, podría decirse. La mayoría de los árboles son sólo árboles, por supuesto; pero muchos están medio despiertos. Algunos han despertado del todo, y unos pocos, bueno, ah, bueno, están volviéndose énticos. Esto nunca cesa. Cuando le ocurre esto a un árbol, descubres que algunos tienen mal corazón. Aún así, hacemos lo que podemos. Rechazamos a los extranjeros y a los imprudentes, y entrenamos y enseñamos, caminamos y quitamos las malezas.
 dlga_start:close_window.1|¿Mmmmm?
 dlga_start:close_window.2|¿Mmrmmm?
 dlga_start:close_window.3|¿Mmmrrrmm?
@@ -465,12 +465,14 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, hemos recibid
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|¿Puedes enviar tropas?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Es posible movilizarlos, pero llevará tiempo. Temo que para entonces sea demasiado tarde. ^^Tú y tus tropas parecéis estar listos para emprender la marcha rápidamente, ¿podéis defender la aldea?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Mis tropas están listas. Saldremos de inmediato.
-dlga_lord_mission_defend_question:lord_mission_defend_reject|Me temo que no puedo acometer este encargo.
+dlga_lord_mission_defend_question:lord_mission_defend_reject|Me temo que no dispongo de tantos soldados en este momento.
+dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Me temo que no puedo acometer este encargo.
 dlga_lord_mission_defend_accept:close_window|Gracias, {playername}. ¡Ahora ve, deprisa!
 dlga_lord_mission_defend_reject:close_window|Ya veo. Les enviaremos tantas tropas como podamos, esperemos que no sea demasiado tarde.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, hay una aldea cercana que es un objetivo ideal para el saqueo. Nuestros exploradores dicen que sus habitantes están bajo la protección de {s3}, pero son pocos y pueden ser derrotados con facilidad. ^^Resulta que tú eres {el primero/la primera} de nuestros capitanes a quien se lo he dicho. ¿Qué quieres hacer con esta información?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Arrasaré esa aldea, mataré a todo hombre que encuentre y convertiré a sus mujeres e hijos en esclavos.
 dlga_lord_mission_raid_village_a:lord_raid_village_reject|¡No tengo tiempo para saquear aldeuchas!
+dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|¡No tengo tiempo para saquear aldeuchas!
 dlga_lord_raid_village_accept:close_window|¿Entonces por qué sigues aquí todavía?
 dlga_lord_raid_village_reject:close_window|Las excusas de los cobardes. Lárgate, el hedor de tu cobardía es insultante.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Hemos acabado con el hechicero del Bosque Negro, mi Señora.
@@ -882,7 +884,7 @@ dlga_mayor_info_begin:mayor_info_talk|Soy la autoridad local aquí, en {s9}. Se 
 dlga_mayor_info_talk:mayor_info_lord|¿Quién gobierna este sitio?
 dlga_mayor_info_lord:mayor_info_talk|Nuestro señor es {s10}.
 dlga_mayor_info_talk:mayor_pretalk|Eso es todo lo que necesito saber. Gracias.
-dlga_merchant_quest_about_job:merchant_quest_about_job_2|¿Cual es el problema?
+dlga_merchant_quest_about_job:merchant_quest_about_job_2|¿Cuál es el problema?
 dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|¿Qué pasa si no puedo acabarla?
 dlga_merchant_quest_about_job_2:merchant_quest_about_job_working|Bueno, todavía estoy trabajando en ella.
 dlga_merchant_quest_about_job_working:mayor_pretalk|Bien. No tengo dudas de que lo lograrás.
@@ -1015,7 +1017,7 @@ dlga_start:hall_guard_easter_egg|Ah, acaba de pasar la medianoche. ¿Sabes?, hac
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Sí, por favor.
 dlga_hall_guard_easter_egg:close_window|No me interesan las habladurías.
 dlga_hall_guard_easter_egg_scene:close_window|Bueno... un grupo muy poco común de aventureros apareció por aquí hace poco: un hombre, un enano y un elfo, y entonces...
-dlga_start:hall_guard_talk|¿Cuales son tus órdenes, capitán?
+dlga_start:hall_guard_talk|¿Cuáles son tus órdenes, capitán?
 dlga_start:close_window.28|No se nos permite hablar mientras estamos de guardia, capitán.
 dlga_hall_guard_talk:hall_guard_duty|Permaneced alerta y hacedme saber si alguien viene a verme.
 dlga_hall_guard_duty:close_window|Sí, capitán. Como ordenes.
@@ -1027,7 +1029,7 @@ dlga_enemy_defeated:close_window|¡Argg! Odio esto.
 dlga_party_relieved:close_window|Gracias por ayudarnos a acabar con esos bastardos.
 dlga_start:battle_reason_stated|¡Beberé vuestra sangre!
 dlga_member_chat_00:close_window.1|^^¡GRRRR!^^
-dlga_member_chat_00:regular_member_talk|¿Cuales son tus órdenes, capitán?
+dlga_member_chat_00:regular_member_talk|¿Cuáles son tus órdenes, capitán?
 dlga_regular_member_talk:view_regular_char_requested|Cuéntame más sobre ti.
 dlga_view_regular_char_requested:do_regular_member_view_char|Claro, capitán. Déjame contarte todo lo que hay que saber sobre mí.
 dlga_do_regular_member_view_char:regular_member_talk|¿Algo más?

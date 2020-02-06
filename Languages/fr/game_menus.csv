@@ -3,7 +3,7 @@ mno_start_good|L'AUBE d'une nouvelle ère
 mno_start_evil|Le CRÉPUSCULE des Hommes
 mno_go_bback|Retour
 menu_start_phase_2|La Terre du Milieu. ^Une Ombre grandit à l'Est et de sombres créatures remontent des profondeurs de la terre. ^ Les Peuples libres se préparent à la guerre, une guerre telle qu'il n'en a pas été vue depuis le précédent Âge. ^ les Hommes, les Elfes, les Nains et les Orques ; tous joueront leur rôle. ^^ Quel rôle, cependant, cela reste à voir...
-mno_go_forth|Validez vos choix et partez à l'aventure....
+mno_go_forth|Suivez la voie que vous avez choisie...
 menu_start_game_3|^^^^^^^^Choisissez votre scénario :
 mno_custom_battle_scenario_1|Embuscade, Gondor contre Harad
 mno_custom_battle_scenario_12|Choisissez les factions pour la bataille
@@ -24,7 +24,7 @@ mno_tutorial_1|Tutoriel #1: Mouvements Basiques et sélection d'arme. {s1}
 mno_tutorial_2|Tutoriel #2: Combattre avec bouclier {s2}
 mno_tutorial_3|Tutoriel #3: Combattre sans bouclier {s3}
 mno_tutorial_3b_door|niveau suivant
-mno_tutorial_4|Tutoriel #4: Chevaucher un cheval ou warg {s4}
+mno_tutorial_4|Tutoriel #4: Chevaucher un cheval ou un warg {s4}
 mno_tutorial_5|Tutoriel #5: Commander un groupe de soldats {s5}
 mno_go_back_dot|Retour.
 mno_action_view_troop_trees|Regarder l'arbre des troupes.
@@ -104,9 +104,9 @@ mno_start_2_hib|Noble
 menu_start_haradrim|^^^^^^^Vous êtes un Haradrim,^un Homme du Désert.^Sélectionnez votre lignée :
 mno_start_1_des|Homme du désert
 mno_start_2_far|Guerrier tribal du Harad Lointain
-menu_start_numenorean|Vous êtes un Númenóréen Noir, loyal à l'obscurité et à Morgoth. Sélectionnez ou vous servez l'Oeil...
+menu_start_numenorean|Vous êtes un Númenóréen Noir, loyal à l'obscurité et à Morgoth. Choisissez où vous servez l’œil...
 mno_start_1_bn|Aux cotés de la Bouche de Sauron, en Morannon
-mno_start_2_bn|Au cœur de la forteresse du Nécromancien de Dol Guldur
+mno_start_2_bn|Au cœur de la forteresse du Nécromancien, Dol Guldur
 menu_choose_gender|^^^^^^^^^^Votre sexe ?
 mno_start_male|Homme
 mno_start_female|Femme
@@ -138,7 +138,7 @@ mno_game_options_death|Mort permanente pour les seigneurs et les compagnons : {s
 mno_game_options_death2|Mort permanente pour le joueur (c'est VOUS !) : {s7}.
 mno_game_options_morale|Système de moral de bataille : {s7}
 mno_game_options_animal_ambushes|Embuscades des animaux : {s7}
-mno_game_options_horse_ko|Messages de dommage cavalier tombé:  {s7}
+mno_game_options_horse_ko|Messages de dommages des cavaliers tombés:  {s7}
 mno_game_options_bright_nights|Nuits plus Lumineuses:  {s7}.
 mno_game_options_camera_pref|Mode de Caméra Préféré:  {s7}.
 mno_game_options_tweaks|Astuces de gameplay...
@@ -267,7 +267,7 @@ menu_construct_ladders|En tant que membre du groupe avec la plus haute compéten
 mno_build_ladders_cont|Allez-y.
 menu_castle_attack_walls_simulate|{s4}^^Vos pertes : {s8}^^Les pertes ennemies : {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4} ^^Vos pertes : {s8}^^Pertes de vos alliés : {s9}^^Pertes ennemies : {s10}
-menu_castle_taken_by_friends|Rien a voir ici.
+menu_castle_taken_by_friends|Rien à voir ici.
 menu_castle_taken|{s3} est tombé aux mains de vos troupes, et vous avez maintenant le contrôle total {reg2?de la ville:du château}. {reg1? Il semble que rien ne vous empêche de le garder pour vous-même...:}
 menu_castle_taken_2|{s3} est tombé aux mains de vos troupes, et vous avez maintenant le contrôle total du château. Il est temps d'envoyer un messager à {s9} pour annoncer votre victoire. {s5}
 mno_castle_taken_no_claim|Ne demander aucune récompense.

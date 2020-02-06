@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|피나스 겔린 궁수
 trp_c6_pinnath_leader|피나스 겔린 대장
 trp_c6_pinnath_leader_pl|피나스 겔린 전사
 trp_a1_blackroot_hunter|검은뿌리 계곡 사냥꾼
-trp_a1_blackroot_hunter_pl|검은뿌리 계곡 사냥꾼
+; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
 trp_a2_blackroot_bowman|검은뿌리 계곡 활잡이
 trp_a2_blackroot_bowman_pl|검은뿌리 계곡 활잡이
 trp_a3_blackroot_archer|검은뿌리 계곡 궁수
@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|로스로리엔 정예 궁수
 trp_a5_lorien_gal_royal_warden_pl|로스로리엔 정예 궁수
 trp_a6_lorien_grey_warden|갈라드림 왕실 궁수
 trp_a6_lorien_grey_warden_pl|갈라드림 왕실 궁수
-trp_a5_lorien_gal_royal_archer|갈라드림 왕실 저격수
-trp_a5_lorien_gal_royal_archer_pl|갈라드림 왕실 저격수
+trp_galadhrim_royal_marksman|갈라드림 왕실 저격수
+trp_galadhrim_royal_marksman_pl|갈라드림 왕실 저격수
 trp_noldorin_mounted_archer|놀도르인 기마 궁수
 trp_noldorin_mounted_archer_pl|놀도르인 기마 궁수
 trp_a2_lorien_archer|로스로리엔 보병
@@ -332,8 +332,8 @@ trp_i3_lorien_inf|로스로리엔 감시자
 trp_i3_lorien_inf_pl|로스로리엔 감시자
 trp_i4_lorien_gal_inf|로스로리엔 고참 감시자
 trp_i4_lorien_gal_inf_pl|로스로리엔 고참 감시자
-trp_galadhrim_royal_marksman|갈라드림 왕실 감시자
-trp_galadhrim_royal_marksman_pl|갈라드림 왕실 감시자
+trp_a5_lorien_gal_royal_archer|갈라드림 왕실 감시자
+trp_a5_lorien_gal_royal_archer_pl|갈라드림 왕실 감시자
 trp_lothlorien_standard_bearer|로스로리엔 지도자
 trp_lothlorien_standard_bearer_pl|로스로리엔 지도자
 trp_a1_greenwood_scout|초록숲 순찰자
@@ -1037,7 +1037,7 @@ trp_knight_3_17|글라배토르
 ; trp_knight_4_2|Whip Snotgor
 trp_knight_4_6|터스킴 장군
 trp_knight_4_7|머그슬랙 장군
-trp_knight_4_11|베란헬름
+; trp_knight_4_11|Ruel
 trp_knight_4_12|검은 가죽의 베라노르
 ; trp_knight_4_16|Whip Brolgukhsh
 ; trp_knight_4_17|Whip Grumrunt

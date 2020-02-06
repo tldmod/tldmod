@@ -5,7 +5,7 @@ ui_explanation_agility|敏捷性: 1ポイント毎に 5武器ポイントを得�
 ui_retreated_battle|%sは離脱させられました。
 ui_riding_skill_not_adequate_to_mount|(乗馬スキルが足りません)
 ui_camp|アクション
-ui_tutorial_inventory|The Last Daysでは、 装備品を手に入れるには、 リソースポイントが必要になります。 リソースポイントとは、 あるファクションが あなたに対して 物資を提供する意思を どの程度持っているのか、 または、 そのファクションの資源を利用する権利を、 あなたがどの程度持っているか、 を表わしています。
+ui_tutorial_inventory|The Last Daysでは、 装備品を手に入れるには、 リソースポイントが必要になります。 リソースポイントとは、 その勢力が あなたに対して 物資を提供する意思を どの程度持っているのか、 または、 その勢力の資源を利用する権利を、 あなたがどの程度持っているか、 を表わしています。
 ui_you_dont_have_value|払えません:%s
 ui_merchant_cant_afford_value|%s:こんなには捌ききれません！ もうすこしそちらの手元に 残しておいてください  (%s相当の物資を渡しましたが、 上限は%sです)。
 ui_merchant_pay_whatever|不要なんだ、とっておいてくれ。
@@ -32,22 +32,121 @@ ui_horse_charged_for_number_damage|馬が%dのダメージを与えました。
 ui_horse_received_number_damage|馬が%dのダメージを受けました。
 ui_horse_fell_dead|馬が死亡しました・・・
 ui_horse_crippled|馬が怪我をしました・・・
-ui_you_got_value|%sを獲得。
+ui_you_got_value|%s獲得しました。
 ui_has_deserted_the_party|はパーティから去りました。
 ui_have_deserted_the_party|はパーティから去りました。
 ui_loading_textures|テクスチャを読み込んでいます(時間がかかります)・・・
 ui_order_hold_fire_toggle|攻撃止め/攻撃しろ(トグル)
 ui_order_dismount_toggle|下馬/騎乗(トグル)
 ui_mount_horses_e_|%s、騎乗せよ！
-ui_hold_fire_e_|%s、攻撃止め！
-ui_fire_at_will_e_|%s、攻撃！
+ui_hold_fire_e_|%s、撃ち方やめ！
+ui_fire_at_will_e_|%s、撃ち方はじめ！
 ui_recent_messages|メッセージ
 ui_value_denars|%dリソースポイント
 ui_cannot_be_used_on_horseback|馬上での使用不可
 ui_upgrade_to_value|%sへアップグレード
 ui_notification_cant_upgrade|(兵士の入れ替え中はアップグレードできません)
-; ui_lance_control|Lance Control:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused):
-; ui_crouch|Crouch
+ui_lance_control|ランス操作:
+ui_manual_easy|手動(簡単)
+ui_manual_hard|手動(難しい)
+ui_campaign_ai|キャンペーンAI(無効):
+ui_crouch|しゃがむ
+
+# swy: added from this spreadsheet, as requested by our translators:
+#      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
+ui_are_you_sure_you_want_to_import_the_character|本当にそのキャラクタをインポートしますか？
+ui_explanation_strength|体力: 1ポイント毎に 1ヒットポイントを得ます。 以下のスキルは体力の1/3を越えて 上昇させることは出来ません: 鋼の肉体、 強打、 豪投、 弓術
+ui_explanation_intelligence|知性: 1ポイント毎に 1スキルポイントを得ます。 また、獲得する経験値が増える事があります。 以下のスキルは知性の1/3を越えて 成長することは出来ません: 訓練、 追跡術、 戦略、 経路探索、 観測術、 荷物管理、 治療、 手術、 応急手当て
+ui_explanation_charisma|魅力: 1ポイント毎にパーティの サイズ制限を+1します。 以下のスキルは魅力の1/3を越えて 成長することは出来ません: 統率力、 囚人管理、 ワイルドクラフト、 取引
+ui_delivered_number_damage|%dダメージ与えました。
+ui_mission_losses_killed|死者:
+ui_party_losses|%s:負傷%d名---死亡%d/%d名。
+ui_following|追っている相手:
+ui_accompanying|同行している相手:
+ui_dumping_value_items|%d個のアイテムは永久に失われます。 よろしいですか？
+ui_dumping_value_item|アイテムは永久に失われます。 よろしいですか？
+ui_notification_requirements_not_met|この武器を扱うにはスキルか属性が足りません
+ui_disband|解放する
+ui_you_hit_a_friendly_troop|あなたは味方を攻撃しています！
+ui_you_are_not_carrying_any_arrows|矢を持っていません。
+ui_delivered_number_damage_to_horse|馬に%dのダメージを与えました。
+ui_received_number_damage|%dのダメージを受けました。
+ui_you_have_improved_your_proficiency_in_value_to_number|%sの熟練度が%dに上がりました。
+ui_your_proficiency_in_value_has_improved_by_number_to_number|%sの熟練度が+%d上がって%dになりました。
+ui_value_killed_by_value|%sが%sに殺されました。
+ui_value_knocked_unconscious_by_value|%sは%sの攻撃を受けて気絶しました。
+ui_you_got_number_experience|あなたは経験値を%d獲得しました。
+ui_you_have_advanced_to_level_number|あなたのレベルが%dに上がりました。
+ui_you_got_value|%s獲得しました。
+ui_quest_succeeded_value|成功したクエスト:%s
+ui_number_of_companions_exceeds_leadership_limit| 複数の仲間達が あなたの統率力の 限界を超えています。
+ui_number_of_prisoners_exceeds_prisoner_management_limit| 複数の囚人達が 囚人管理能力の 限界を超えています。
+ui_shared_number_experience_within_party|%dの経験値をパーティで分配しました。
+ui_your_relations_with_value_has_improved_from_number_to_number|%sとの親密度が%dから%dに向上しました。
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|%sとの親密度が%dから%dに低下しました。
+ui_you_lost_value|あなたは%sを失いました。
+ui_change_graphics_settings_explanation|変更された設定のうちのいくつかは、 新たなエリアに入ることで更新されます。
+ui_game_log_window|ゲームログ画面
+ui_blunt_short|b
+ui_tracks|足跡
+ui_order_button_hold_fire|[命令]撃ち方やめ
+ui_order_button_fire_at_will|[命令]撃ち方はじめ
+ui_order_button_fire_orders|[命令]武器使用命令
+ui_need_to_learn_prisoner_management|捕虜を確保するには 捕虜管理の スキルが必要です。
+ui_game_log_window|ゲームログ画面
+ui_unbalanced|防御移行時に遅延
+ui_can_crush_through_blocks|防御を崩す効果
+
+ui_order_1|選択 1
+ui_order_2|選択 2
+ui_order_3|選択 3
+ui_order_4|選択 4
+ui_order_5|選択 5
+ui_order_6|選択 6
+ui_order_button_hold_this_position|[命令]ここで待機
+ui_order_button_follow_me|[命令]ついてこい
+ui_order_button_charge|[命令]突撃せよ
+ui_order_button_stand_ground|[命令]集まれ
+ui_order_button_retreat|[命令]後退
+ui_order_button_advance|[命令]10歩前進
+ui_order_button_fall_back|[命令]10歩後退
+ui_order_button_spread_out|[命令]散開せよ
+ui_order_button_stand_closer|[命令]密集隊形をとれ
+ui_order_button_mount_horses|[命令]馬に乗れ
+ui_order_button_dismount|[命令]馬から降りろ
+ui_order_button_hold_fire|[命令]撃ち方やめ
+ui_order_button_fire_at_will|[命令]撃ち方はじめ
+ui_order_button_use_blunt_weapons|[命令]鈍器のみ使え
+ui_order_button_use_any_weapon|[命令]好きな武器を使え
+ui_order_button_movement_orders|[命令]行動命令
+ui_order_button_formation_orders|[命令]陣形命令
+ui_order_button_fire_orders|[命令]武器使用命令
+ui_follow_me_e_|%s、ついて来い！
+ui_charge_e_|%s、突撃！！！
+ui_stand_ground_e_|%s、集まれ！
+ui_retreat_e_|%s、後退！
+ui_mount_horses_e_|%s、騎乗せよ！
+ui_dismount_e_|%s、馬から降りろ！
+ui_advance_e_|%s、10歩前進！
+ui_fall_back_e_|%s、10歩後退！
+ui_stand_closer_e_|%s、密集隊形をとれ！
+ui_spread_out_e_|%s、散開せよ！
+ui_use_blunt_weapons_e_|%s、鈍器のみ使え！
+ui_use_any_weapon_e_|%s、好きな武器を使え！
+ui_hold_fire_e_|%s、撃ち方やめ！
+ui_fire_at_will_e_|%s、撃ち方はじめ！
+ui_hold_this_position_e_|%s、ここで待機！
+ui_infantry|歩兵隊
+ui_archers|弓隊
+ui_cavalry|騎馬隊
+ui_companions|コンパニオン
+ui_everyone_hear_me|全員！
+ui_everyone|全員
+ui_everyone_around_me|近くの兵
+ui_str_hear_me|%s！
+
+ui_return|終了
+ui_factions|勢力
+ui_troop_upgrades|アップグレード
+ui_hdr_mode|HDRモード(オフまたは低いを推奨):
+ui_autoexpore|自動露出(HDRが有効になっている場合は有効を推奨)

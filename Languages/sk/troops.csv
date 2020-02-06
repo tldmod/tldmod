@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|Lukostrelci z Pinnath Gelin
 trp_c6_pinnath_leader|Kapitán z Pinnath Gelin
 trp_c6_pinnath_leader_pl|Kapitáni z Pinnath Gelin
 trp_a1_blackroot_hunter|Lovec z Čiernodolu
-trp_a1_blackroot_hunter_pl|Lovci z Čiernodolu
+; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
 trp_a2_blackroot_bowman|Strelec z Čiernodolu
 trp_a2_blackroot_bowman_pl|Strelci z Čiernodolu
 trp_a3_blackroot_archer|Lukostrelec z Čiernodolu
@@ -305,7 +305,7 @@ trp_c6_amroth_swan_knight_pl|Labutí rytieri z Dol Amrothu
 trp_c6_amroth_leader|Kapitán z Dol Amrothu
 trp_c6_amroth_leader_pl|Kapitáni z Dol Amrothu
 trp_a1_lorien_scout|Lothlorienský prieskumník
-trp_a1_lorien_scout_pl|Lothlorienskí prieskumníci
+trp_a1_lorien_scout_pl|Lorienskí prieskumníci
 trp_a2_lorien_warden|Lothlorienský skúsený prieskumník
 trp_a2_lorien_warden_pl|Lothlorienská skúsení prieskumník
 trp_a3_lorien_vet_warden|Lothlorienský lukostrelec
@@ -316,15 +316,15 @@ trp_a5_lorien_gal_royal_warden|Lothlorienský majster lukostrelec
 trp_a5_lorien_gal_royal_warden_pl|Lothlorienskí majster lukostrelec
 trp_a6_lorien_grey_warden|Urodzený lukostrelec Galadhrim
 trp_a6_lorien_grey_warden_pl|Urodzení lukostrelci Galadhrim
-trp_a5_lorien_gal_royal_archer|Urodzený ostrostrelec Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Urodzení ostrostrelci Galadhrim
+trp_galadhrim_royal_marksman|Urodzený ostrostrelec Galadhrim
+trp_galadhrim_royal_marksman_pl|Urodzení ostrostrelci Galadhrim
 trp_noldorin_mounted_archer|Noldorský jazdecký lukostrelec
 trp_noldorin_mounted_archer_pl|Noldorskí jazdeckí lukostrelci
-trp_a2_lorien_archer|Lothlorienský pešiak
+trp_a2_lorien_archer|Lothlorienská pechota
 trp_a2_lorien_archer_pl|Lothlorienská pechota
-trp_a3_lorien_vet_archer|Lothlorienský skúsený pešiak
+trp_a3_lorien_vet_archer|Lothlorienská skúsená pechota
 trp_a3_lorien_vet_archer_pl|Lothlorienská skúsená pechota
-trp_a4_lorien_gal_archer|Lothlorienský elitný zbrojnoš
+trp_a4_lorien_gal_archer|Lothlorienská elitná pechota
 trp_a4_lorien_gal_archer_pl|Lothlorienská elitná pechota
 trp_i5_lorien_gal_royal_inf|Urodzený šermiar Galadhrim
 trp_i5_lorien_gal_royal_inf_pl|Urodzení šermiari Galadhrim
@@ -332,8 +332,8 @@ trp_i3_lorien_inf|Lothlorienský strážca
 trp_i3_lorien_inf_pl|Lothlorienská stráž
 trp_i4_lorien_gal_inf|Lothlorienský skúsený strážca
 trp_i4_lorien_gal_inf_pl|Lothlorienská skúsená stráž
-trp_galadhrim_royal_marksman|Urodzený strážca Galadhrim
-trp_galadhrim_royal_marksman_pl|Urodzená stráž Galadhrim
+trp_a5_lorien_gal_royal_archer|Urodzený strážca Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Urodzená stráž Galadhrim
 trp_lothlorien_standard_bearer|Lothlorienský vlajkonoš
 trp_lothlorien_standard_bearer_pl|Lothlorienskí zástavníci
 trp_a1_greenwood_scout|Prieskumník z Temnohvozdu
@@ -378,15 +378,15 @@ trp_a5_riv_master_archer|Elitný ochranca Roklinky
 trp_a5_riv_master_archer_pl|Elitní ochrancovia Roklinky
 trp_a6_riv_guardian|Strážca z Roklinky
 trp_a6_riv_guardian_pl|Stráž z Roklinky
-trp_i3_riv_swordbearer|Pešiak z Roklinky
+trp_i3_riv_swordbearer|Roklinská pechota
 trp_i3_riv_swordbearer_pl|Roklinská pechota
-trp_i4_riv_vet_swordbearer|Skúsený pešiak z Roklinky
+trp_i4_riv_vet_swordbearer|Skúsená Roklinská pechota
 trp_i4_riv_vet_swordbearer_pl|Skúsená Roklinská pechota
 trp_i5_riv_swordmaster|Elitný zbrojnoš z Roklinky
-trp_i5_riv_swordmaster_pl|Elitná Roklinská pechota
-trp_i6_riv_champion|Urodzení ťažkoodenec z Roklinky
+trp_i5_riv_swordmaster_pl|Elitný zbrojnoš z Roklinky
+trp_i6_riv_champion|Pechota urodzených z Roklinky
 trp_i6_riv_champion_pl|Pechota urodzených z Roklinky
-trp_ac5_riv_rider|Kavalerista Roklinky
+trp_ac5_riv_rider|Roklinská kavaléria
 trp_ac5_riv_rider_pl|Roklinská kavaléria
 trp_ac6_riv_knight|Rytier z Roklinky
 trp_ac6_riv_knight_pl|Rytieri z Roklinky
@@ -466,7 +466,7 @@ trp_dismounted_thengel_guard_of_rohan|Thengelov rohanský gardista
 trp_dismounted_thengel_guard_of_rohan_pl|Thengelova rohanská garda
 trp_i1_harad_levy|Haradský branec
 trp_i1_harad_levy_pl|Haradskí branci
-trp_i3_harad_infantry|Príslušník ľahkej pechoty Haradu
+trp_i3_harad_infantry|Ľahká pechota Haradu
 trp_i3_harad_infantry_pl|Ľahká pechota Haradu
 trp_i4_harad_spearman|Haradský kopijník
 trp_i4_harad_spearman_pl|Haradskí kopijníci
@@ -486,7 +486,7 @@ trp_c2_harondor_scout|Prieskumník z Harondoru
 trp_c2_harondor_scout_pl|Prieskumníci z Harondoru
 trp_c3_harondor_rider|Jazdec z Harondoru
 trp_c3_harondor_rider_pl|Jazdci z Harondoru
-trp_c4_harondor_light_cavalry|Ľahký jazdec z Harondoru
+trp_c4_harondor_light_cavalry|Ľahká jazda Harondoru
 trp_c4_harondor_light_cavalry_pl|Ľahká jazda Harondoru
 trp_c5_harondor_serpent_knight|Rytier Zlatého Jaštera 
 trp_c5_harondor_serpent_knight_pl|Rytieri zlatého jaštera
@@ -548,7 +548,7 @@ trp_i3_khand_pitfighter|Khandský Jamoví Bojovník
 trp_i3_khand_pitfighter_pl|Khandský Jamový Bojovníci
 trp_i4_khand_pit_champion|Variagský Jamoví Šampión
 trp_i4_khand_pit_champion_pl|Variagský Jamoví Šampióni
-trp_i5_khand_pit_master|Variagský Majster Jám
+; trp_i5_khand_pit_master|Variag Master of the Pits
 trp_i5_khand_pit_master_pl|Variagský Majstri Jám
 trp_ac3_khand_skirmisher|Khandský Šermiar
 trp_ac3_khand_skirmisher_pl|Khandský Šermiar
@@ -638,7 +638,7 @@ trp_i1_isen_uruk_snaga|Novorodený Uruk Hai
 trp_i1_isen_uruk_snaga_pl|Novorodení Uruk Hai
 trp_i2_isen_uruk|Uruk Hai z Isengardu
 trp_i2_isen_uruk_pl|Uruk Hai z Isengardu
-trp_i3_isen_large_uruk|Veľký Uruk Hai z Isengardu
+trp_i3_isen_large_uruk|Veľkí Uruk Hai z Isengardu
 trp_i3_isen_large_uruk_pl|Veľkí Uruk Hai z Isengardu
 trp_i4_isen_fighting_uruk_warrior|Bojový Uruk Hai
 trp_i4_isen_fighting_uruk_warrior_pl|Bojoví Uruk Hai
@@ -1037,7 +1037,7 @@ trp_knight_4_1|Tyran Snog
 trp_knight_4_2|Tyran Snotgor
 trp_knight_4_6|Generál Tuskim
 trp_knight_4_7|Generál Mugslag
-trp_knight_4_11|Beranhelm
+; trp_knight_4_11|Ruel
 trp_knight_4_12|Beranor Černosrsť
 trp_knight_4_16|Tyran Brolgukhsh
 trp_knight_4_17|Tyran Grumrunt

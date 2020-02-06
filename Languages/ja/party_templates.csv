@@ -8,11 +8,11 @@ pt_mound|英雄の塚
 pt_pyre|英雄の火葬壇
 pt_wild_troll|野生のトロル
 pt_raging_trolls|暴れトロル
-pt_looters|オークの部族
+pt_looters|部族オーク
 pt_forest_bandits|はぐれオーク
-pt_mountain_bandits|野生のゴブリン
-pt_steppe_bandits|褐色人の追放人
-pt_sea_raiders|海賊の背教者
+pt_mountain_bandits|山ゴブリン
+pt_steppe_bandits|褐色人の追放者
+pt_sea_raiders|海賊の裏切り者
 pt_deserters|脱走兵
 pt_merchant_caravan|隊商
 pt_troublesome_bandits|迷惑ゴブリン
@@ -33,9 +33,9 @@ pt_lossarnach_auxila|ロスサールナッハ支援部隊
 pt_pinnath_gelin_auxila|ピンナス・ゲリン支援部隊
 pt_ranger_scouts|野伏の偵察隊
 pt_rohan_scouts|ロヒアリム偵察隊
-pt_lorien_scouts|ロスロリエン偵察隊
+pt_lorien_scouts|ロスローリエン偵察隊
 pt_woodelf_scouts|闇の森のエルフ偵察隊
-pt_imladris_scouts|ドゥネダイン斥候兵
+pt_imladris_scouts|ドゥネダイン斥候隊
 pt_dale_scouts|谷間の国偵察隊
 pt_esgaroth_scouts|エスガロス偵察隊
 pt_dwarf_scouts|ドワーフ斥候隊
@@ -56,7 +56,7 @@ pt_rhun_scouts|リューン偵察隊
 pt_gondor_raiders|ゴンドール食料調達隊
 pt_rohan_raiders|ロヒアリム食料調達隊
 pt_imladris_raiders|裂け谷食料調達隊
-pt_lorien_raiders|ロスロリエン食料調達隊
+pt_lorien_raiders|ロスローリエン食料調達隊
 pt_woodelf_raiders|闇の森のエルフ食料調達隊
 pt_dale_raiders|谷間の国食料調達隊
 pt_dwarf_raiders|ドワーフ食料調達隊
@@ -75,7 +75,7 @@ pt_rhun_raiders|リューン遊撃隊
 pt_gondor_patrol|ゴンドール巡察隊
 pt_rohan_patrol|ロヒアリム巡察隊
 pt_imladris_patrol|ドゥネダイン巡察隊
-pt_lorien_patrol|ロスロリエン巡察隊
+pt_lorien_patrol|ロスローリエン巡察隊
 pt_woodelf_patrol|闇の森のエルフ巡察隊
 pt_dale_patrol|谷間の国巡察隊
 pt_esgaroth_patrol|エスガロス巡察隊
@@ -98,21 +98,21 @@ pt_rhun_war_party|リューン軍団
 pt_gondor_company|ミナス・ティリス巡察隊
 pt_rohan_company|ローハン部隊
 pt_imladris_company|裂け谷部隊
-pt_lorien_company|ロスロリエン部隊
+pt_lorien_company|ロスローリエン部隊
 pt_woodelf_company|闇の森のエルフ部隊
 pt_dale_company|谷間の国部隊
 pt_dwarf_company|ドワーフ部隊
 pt_gondor_elite_company|ゴンドール精鋭部隊
 pt_rohan_elite_company|ローハン精鋭部隊
 pt_imladris_elite_company|裂け谷精鋭部隊
-pt_lorien_elite_company|ロスロリエン精鋭部隊
+pt_lorien_elite_company|ロスローリエン精鋭部隊
 pt_woodelf_elite_company|闇の森のエルフ精鋭部隊
 pt_dale_elite_company|谷間の国精鋭部隊
 pt_dwarf_elite_company|ドワーフ精鋭部隊
 pt_gondor_caravan|ゴンドール隊商
 pt_rohan_caravan|ローハン隊商
 pt_imladris_caravan|裂け谷隊商
-pt_lorien_caravan|ロスロリエン隊商
+pt_lorien_caravan|ロスローリエン隊商
 pt_woodelf_caravan|闇の森のエルフ隊商
 pt_dale_caravan|谷間の国隊商
 pt_dwarf_caravan|ドワーフ隊商
@@ -122,7 +122,7 @@ pt_gunda_caravan|グンダバド補給隊
 pt_gondor_p_train|ゴンドール捕虜護送隊
 pt_rohan_p_train|ローハン捕虜護送隊
 pt_imladris_p_train|裂け谷捕虜護送隊
-pt_lorien_p_train|ロスロリエン捕虜護送隊
+pt_lorien_p_train|ロスローリエン捕虜護送隊
 pt_woodelf_p_train|闇の森のエルフ捕虜護送隊
 pt_dale_p_train|谷間の国捕虜護送隊
 pt_dwarf_p_train|ドワーフ捕虜護送隊
@@ -135,12 +135,12 @@ pt_routed_enemies|離脱した敵軍
 pt_legion_minas_morgul|ミナス・モルグル軍団
 pt_legion_udun|ウドゥン軍団
 pt_legion_gorgoroth|ゴルゴロス軍団
-pt_legion_barad_dur|バラド＝ドゥア軍団
-; pt_beorn_messenger|Beorning Messenger
-; pt_village|Village
-; pt_ring_hunters|Ring Hunters
-; pt_scout_camp_small|Scout Camp
-; pt_scout_camp_large|Fortified Scout Camp
-; pt_beorn_caravan|Woodsmen Caravan
-; pt_orc_horde|Orc Horde
-; pt_vet_archer|Veteran Archer
+pt_legion_barad_dur|バラド＝ドゥーア軍団
+pt_beorn_messenger|ビヨルン一党の伝令
+pt_village|村
+pt_ring_hunters|指輪狩り一味
+pt_scout_camp_small|偵察野営
+pt_scout_camp_large|要塞化された偵察野営
+pt_beorn_caravan|森人の隊商
+pt_orc_horde|オークの群れ
+pt_vet_archer|ベテラン弓兵

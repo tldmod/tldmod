@@ -4,18 +4,18 @@ imod_cracked|%s แย่
 imod_bent|%sเบี้ยว
 imod_chipped|%s บิ่น
 ; imod_battered|Battered %s
-imod_poor|%s แย่
+imod_poor|แย่
 ; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_old|%s โบราณ
 imod_cheap| %s ถูก
-; imod_fine|Fine %s
+imod_fine|%s พอใช้ได้
 imod_well_made|%s คุณภาพดี
 imod_sharp|%sแหลม
 imod_balanced|%sสมดุล
 ; imod_tempered|Tempered %s
-; imod_deadly|Deadly %s
+imod_deadly|%s อันตราย
 ; imod_exquisite|Exquisite %s
-; imod_masterwork|Masterwork %s
+imod_masterwork|%s ผลงานระดับเยี่ยมยอด
 imod_heavy|%sหนัก
 imod_strong|%s แข็งแรง
 ; imod_powerful|Powerful %s
@@ -26,13 +26,13 @@ imod_strong|%s แข็งแรง
 ; imod_thick|Robust %s
 ; imod_hardened|Hardened %s
 ; imod_reinforced|Reinforced %s
-; imod_superb|Superb %s
-; imod_lordly|Masterwork %s
+; imod_cloak|%s with cloak
+imod_lordly|%s ผลงานระดับเยี่ยมยอด
 ; imod_lame|Lame %s
 ; imod_swaybacked|Swaybacked %s
 ; imod_stubborn|Stubborn %s
 ; imod_timid|Timid %s
-; imod_meek|Meek %s
+; imod_meek|Blood-covered %s
 ; imod_spirited|Spirited %s
 ; imod_champion|Champion %s
 imod_fresh|%sสดใหม่

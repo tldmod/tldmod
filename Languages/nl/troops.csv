@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|Schutters van Pinnath Gelin
 trp_c6_pinnath_leader|Gezagvoerder van Pinnath Gelin
 trp_c6_pinnath_leader_pl|Gezagvoerders van Pennith Gelin
 ; trp_a1_blackroot_hunter|Hunter of Blackroot Vale
-; trp_a1_blackroot_hunter_pl|Hunter of Blackroot Vale
+; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
 ; trp_a2_blackroot_bowman|Bowman of Blackroot Vale
 ; trp_a2_blackroot_bowman_pl|Bowmen of Blackroot Vale
 ; trp_a3_blackroot_archer|Archer of Blackroot Vale
@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Lothlorien Meester Boogschutter
 trp_a5_lorien_gal_royal_warden_pl|Lothlorien Meester Boogschutters
 trp_a6_lorien_grey_warden|Galadhrim Koninklijke Boogschutters
 trp_a6_lorien_grey_warden_pl|Galadhrim Koninklijke Boogschutters
-trp_a5_lorien_gal_royal_archer|Galadhrim Koninklijke Scherpschutter
-trp_a5_lorien_gal_royal_archer_pl|Galadhrim Koninklijke Scherpschutters
+trp_galadhrim_royal_marksman|Galadhrim Koninklijke Scherpschutter
+trp_galadhrim_royal_marksman_pl|Galadhrim Koninklijke Scherpschutters
 ; trp_noldorin_mounted_archer|Noldorin Mounted Archer
 ; trp_noldorin_mounted_archer_pl|Noldorin Mounted Archers
 trp_a2_lorien_archer|Lothlorien Infanterie
@@ -332,8 +332,8 @@ trp_i3_lorien_inf|Lothlorien Bewaker
 trp_i3_lorien_inf_pl|Lothlorien Bewakers
 trp_i4_lorien_gal_inf|Lothlorien Ervaren Bewaker
 trp_i4_lorien_gal_inf_pl|Lothlorien Ervaren Bewakers
-trp_galadhrim_royal_marksman|Galadhrim Koninklijke Bewaker
-trp_galadhrim_royal_marksman_pl|Galadhrim Koninklijke Bewakers
+trp_a5_lorien_gal_royal_archer|Galadhrim Koninklijke Bewaker
+trp_a5_lorien_gal_royal_archer_pl|Galadhrim Koninklijke Bewakers
 trp_lothlorien_standard_bearer|Lothlorien Vaandeldrager
 trp_lothlorien_standard_bearer_pl|Lothlorien Vaandeldragers
 trp_a1_greenwood_scout|Groenewoud Verkenner
@@ -1037,7 +1037,7 @@ trp_dwarf_lord_pl|Koning
 ; trp_knight_4_2|Whip Snotgor
 ; trp_knight_4_6|General Tuskim
 ; trp_knight_4_7|General Mugslag
-; trp_knight_4_11|Beranhelm
+; trp_knight_4_11|Ruel
 ; trp_knight_4_12|Beranor Blackfur
 ; trp_knight_4_16|Whip Brolgukhsh
 ; trp_knight_4_17|Whip Grumrunt

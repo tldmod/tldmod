@@ -1497,8 +1497,8 @@ qstr__Costs_500_Resource_|(maliyeti 500 kaynak, 5 nüfuz)
 qstr_Ha!_I_can_see_that!_|Ha! Bunu görebiliyorum! Bunu yapabilirim, evet .. Kanınızdan başka, bu iş bedava degil! {S2}
 qstr_Yes_I_see_that._We_c|Evet, görüyorum. Size egilimliyiz Evet, ama bazı malzemeler için sizi göndermem gerekecek. {S2}
 qstr__Costs_1000_Resource_|(Maliyeti 1000 Kaynak, 10 Nüfuz)
-; qstr_I_ll_have_my_worms_d|I'll have my worms deal with you. They are not the best, but sometimes, they get the job done. Tell me when you want them here. {s2}
-; qstr_I_ll_have_my_assista|I'll have my assistants tend to your men. They are still learning, so please bear with them. Let me know when you need them. {s2}
+qstr_I_ll_have_my_worms_d|Elimde seninle anlaşabilecek kurtçuklar var. En iyileri degiller, yinede bazen işlerini dogru yapıyorlar. Onları görmek istediginde bana söyle. {s2}
+qstr_I_ll_have_my_assista|Elimde adamlarınla ilgilenebilecek asistanlar var. Hala ögreniyorlar, bu yüzden lütfen onları mazur gör. Onlara ihtiyacın oldugunda söylemen yeterli. {s2}
 qstr_Alright!_Worms!_Get_|Peki! Solucanlar! Bunun üstesinden gelin ve onunla yüzleşin!
 qstr_Let_us_begin._My_ass|Hadi başlayalım. Asistanlarım sen ve adamlarınla ilgilenecek.
 qstr_All_done!_Ha!_You_di|Hepsi tamam! HaHa! Çok fazla çıglık atmadın, etkileyici! Şimdi git, beni rahat bırak.

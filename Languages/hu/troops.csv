@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|Pinnathi Gelin lövészek
 trp_c6_pinnath_leader|Pinnath Gelini kapitány
 trp_c6_pinnath_leader_pl|Pinnath Gelini kapitányok
 trp_a1_blackroot_hunter|Feketegyökér-völgyi vadász
-trp_a1_blackroot_hunter_pl|Feketegyökér-völgyi vadászok
+; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
 trp_a2_blackroot_bowman|Feketegyökér-völgyi íjász
 trp_a2_blackroot_bowman_pl|Feketegyökér-völgyi íjászok
 trp_a3_blackroot_archer|Feketegyökér-völgyi lövész
@@ -316,15 +316,15 @@ trp_a5_lorien_gal_royal_warden|Lothlórieni mesteríjász
 trp_a5_lorien_gal_royal_warden_pl|Lothlórieni mesteríjászok
 trp_a6_lorien_grey_warden|Galadhrim királyi íjász
 trp_a6_lorien_grey_warden_pl|Galadhrim királyi íjászok
-trp_a5_lorien_gal_royal_archer|Galadhrim királyi mesterlövész
-trp_a5_lorien_gal_royal_archer_pl|Galadhrim királyi mesterlövészek
+trp_galadhrim_royal_marksman|Galadhrim királyi mesterlövész
+trp_galadhrim_royal_marksman_pl|Galadhrim királyi mesterlövészek
 trp_noldorin_mounted_archer|Ñoldor lovasíjász
 trp_noldorin_mounted_archer_pl|Ñoldor lovasíjászok
-trp_a2_lorien_archer|Lothlórieni gyalogos
+trp_a2_lorien_archer|Lothlórieni gyalogság
 trp_a2_lorien_archer_pl|Lothlórieni gyalogság
-trp_a3_lorien_vet_archer|Lothlórieni veterán gyalogos
+trp_a3_lorien_vet_archer|Lothlórieni veterán gyalogság
 trp_a3_lorien_vet_archer_pl|Lothlórieni veterán gyalogság
-trp_a4_lorien_gal_archer|Lothlórieni elit gyalogos
+trp_a4_lorien_gal_archer|Lothlórieni elit gyalogság
 trp_a4_lorien_gal_archer_pl|Lothlórieni elit gyalogság
 trp_i5_lorien_gal_royal_inf|Galadhrim királyi kardforgató
 trp_i5_lorien_gal_royal_inf_pl|Galadhrim királyi kardforgatók
@@ -332,8 +332,8 @@ trp_i3_lorien_inf|Lothlórieni őr
 trp_i3_lorien_inf_pl|Lothlórieni őrség
 trp_i4_lorien_gal_inf|Lothlórieni veterán őr
 trp_i4_lorien_gal_inf_pl|Lothlórieni veterán őrség
-trp_galadhrim_royal_marksman|Galadhrim királyi őr
-trp_galadhrim_royal_marksman_pl|Galadhrim királyi őrség
+trp_a5_lorien_gal_royal_archer|Galadhrim királyi őr
+trp_a5_lorien_gal_royal_archer_pl|Galadhrim királyi őrség
 trp_lothlorien_standard_bearer|Lothlórieni zászlóvivő
 trp_lothlorien_standard_bearer_pl|Lothlórieni zászlóvivők
 trp_a1_greenwood_scout|Zölderdei felderítő
@@ -378,16 +378,16 @@ trp_a5_riv_master_archer|Völgyzugolyi elit őrszem
 trp_a5_riv_master_archer_pl|Völgyzugolyi elit őrszemek
 trp_a6_riv_guardian|Völgyzugolyi őrző
 trp_a6_riv_guardian_pl|Völgyzugolyi őrzők
-trp_i3_riv_swordbearer|Völgyzugolyi gyalogos
+trp_i3_riv_swordbearer|Völgyzugolyi gyalogság
 trp_i3_riv_swordbearer_pl|Völgyzugolyi gyalogság
-trp_i4_riv_vet_swordbearer|Völgyzugolyi veterán gyalogos
+trp_i4_riv_vet_swordbearer|Völgyzugolyi veterán gyalogság
 trp_i4_riv_vet_swordbearer_pl|Völgyzugolyi veterán gyalogság
-trp_i5_riv_swordmaster|Völgyzugolyi elit gyalogos
+trp_i5_riv_swordmaster|Völgyzugolyi elit gyalogság
 trp_i5_riv_swordmaster_pl|Völgyzugolyi elit gyalogság
-trp_i6_riv_champion|Völgyzugolyi királyi gyalogos
+trp_i6_riv_champion|Völgyzugolyi királyi gyalogság
 trp_i6_riv_champion_pl|Völgyzugolyi királyi gyalogság
 trp_ac5_riv_rider|Völgyzugolyi lovas
-trp_ac5_riv_rider_pl|Völgyzugolyi lovasság
+trp_ac5_riv_rider_pl|Völgyzugolyi lovas
 trp_ac6_riv_knight|Völgyzugolyi lovag
 trp_ac6_riv_knight_pl|Völgyzugolyi lovagok
 trp_i6_rivendell_standard_bearer|Völgyzugolyi zászlóvivő 
@@ -466,7 +466,7 @@ trp_dismounted_thengel_guard_of_rohan|Rohani Thengel talpas őre
 trp_dismounted_thengel_guard_of_rohan_pl|Rohani Thengel talpas őrsége
 trp_i1_harad_levy|Haradi sorkatona
 trp_i1_harad_levy_pl|Haradi sorkatonaság
-trp_i3_harad_infantry|Haradi könnyű gyalogos
+trp_i3_harad_infantry|Haradi könnyű gyalogság
 trp_i3_harad_infantry_pl|Haradi könnyű gyalogság
 trp_i4_harad_spearman|Haradi lándzsás
 trp_i4_harad_spearman_pl|Haradi lándzsások
@@ -486,7 +486,7 @@ trp_c2_harondor_scout|Harondori felderítő
 trp_c2_harondor_scout_pl|Harondori felderítők
 trp_c3_harondor_rider|Harondori lovas
 trp_c3_harondor_rider_pl|Harondori lovasság
-trp_c4_harondor_light_cavalry|Harandori könnyűlovas
+trp_c4_harondor_light_cavalry|Harandori könnyűlovasság
 trp_c4_harondor_light_cavalry_pl|Harandori könnyűlovasság
 trp_c5_harondor_serpent_knight|Arany Kígyó lovag
 trp_c5_harondor_serpent_knight_pl|Arany Kígyó lovagok
@@ -636,9 +636,9 @@ trp_i6_isen_uruk_berserker|Harcias uruk-hai berzerker
 trp_i6_isen_uruk_berserker_pl|Harcias uruk-hai berzerkerek
 trp_i1_isen_uruk_snaga|Uruk-hai újszülött
 trp_i1_isen_uruk_snaga_pl|Uruk-hai újszülöttek
-trp_i2_isen_uruk|Vasudvardi uruk-hai
+trp_i2_isen_uruk|Vasudvardi uruk-haiok
 trp_i2_isen_uruk_pl|Vasudvardi uruk-haiok
-trp_i3_isen_large_uruk|Vasudvardi hatalmas uruk-hai
+trp_i3_isen_large_uruk|Vasudvardi hatalmas uruk-haiok
 trp_i3_isen_large_uruk_pl|Vasudvardi hatalmas uruk-haiok
 trp_i4_isen_fighting_uruk_warrior|Harcias uruk-hai harcos
 trp_i4_isen_fighting_uruk_warrior_pl|Harcias uruk-hai harcosok
@@ -1037,7 +1037,7 @@ trp_knight_4_1|Snog korbács
 trp_knight_4_2|Snotgor korbács
 trp_knight_4_6|Tuskim tábornok
 trp_knight_4_7|Mugslag tábornok
-trp_knight_4_11|Beranhelm
+; trp_knight_4_11|Ruel
 trp_knight_4_12|Feketebundájú Beranor
 trp_knight_4_16|Brolgukhsh korbács
 trp_knight_4_17|Grumrunt korbács

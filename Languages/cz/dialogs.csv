@@ -11,7 +11,7 @@ dlga_troll_introduce_1:close_window|Vlastním koně.
 dlga_troll_talk_1:troll_talk_2|Vytroll mě, trolle.
 dlga_troll_talk_1:close_window|Vlastním koně.
 dlga_troll_talk_2:troll_talk_3|Výzva prijata!^^{s4}
-dlga_troll_beaten:troll_talk_1|Klaním se před vaší moudrosti, mistře Baitre od Trollu!
+dlga_troll_beaten:troll_talk_1|Klaním se před vaší moudrosti, mistře Baitre z Trollákova!
 dlga_troll_goodbye:close_window|TROLLLOLOOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Opět zdravím, {playername}!
 dlga_start:hobbit_pippin_talk_met|Opět zdravím, {playername}!
@@ -22,7 +22,7 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Popravdě. Myslím že 
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Musím říct. Myslím ze jsem potkal v Edorasu někoho, jako ty.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Pokud si vzpomínám, tak jsem potkal někoho jako ty v Minas Tirithu.
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Vim. Prisel jsem z dalky! Jsem hobbit, {sire/madam}, z Kraje.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, to musi byt muj drahý bratranec! Peregrin Bral, aneb Pippin, jak mu rikaji. Jsme hobbiti, {sire/madam}, oba dva jsme prisli z Kraje! Jo, starej dobrej Pippin, docela by me zajmalo jak se mu dari v Minas Tirithu.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, to musi byt muj drahý bratranec! Peregrin Bral, aneb Pippin, jak mu rikaji. Jsme hobbiti, {sire/madam}, oba dva jsme prisli z Kraje! Jo, starej dobrej Pippin, docela by me zajmalo jak se mu dari v Minas Tirith.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Ach, to musí být můj drahý bratranec! Smělmír Brandorád, nebo Smíšek mu také říkají. Jsme hobbiti, {sire/madam}, a přišli jsme z Kraje. Oba! Copak Smíšek, Zajímalo by mě, jak se mu daří v Edorasu.
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Mohu Vás požádat o laskavost, můj {pane/má paní}?
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Samozřejmě, {s1}. Co potřebuješ?
@@ -140,7 +140,7 @@ dlga_ziggy_no:close_window.1|Dobrá, veliteli.
 dlga_ziggy_yes:ziggy_choose_prisoners|Výtečně. Který z těchto exemplářů mi můžete dát?
 dlga_ziggy_choose_prisoners:ziggy_no|Nemám žádné, které bych nabídl.
 dlga_ziggy_chosen_prisoner:ziggy_ritual|Děkuji veliteli! Moment... Á ano, toto by mělo stačit... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-; dlga_ziggy_chosen_prisoner:ziggy_ritual.1| What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Co pak to tady máme? Hrdý, vzdorovitý? Vyděšený? To bys měl být. Teď ti dám důvod se bát! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 ; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|Vždycky taková radost přimět nepřítele řádně na patu.
 dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! Tenhle byl až moc slabý! Bezcenný! Dejte mi silnějšího, Velitele, který nezklame!
@@ -375,7 +375,7 @@ dlga_ring_hunter_lair_defeat2:close_window|Myslíte si, že jste vyhráli velké
 dlga_start:beorn_message| {Můj/Má},  {pane/paní}, obdrželi jsme varování že z  {s1} k nám míří velká skupina vyhnanců. Běda, nebylo dost času shlukovat dostatek válečníků. Připravili jsme se na nejhorší, když jsme slyšeli zvuky vřavy.
 dlga_beorn_message:beorn_message2|To nebyli obyčejní psanci. Byli to ti nejhorší z nejhorších stoupenců temného pána, nakonec tady na severu. Jejich velitelé zde ale nebyli. Jejich skrýš leží poblíž Temného hvozdu a já si musím pospíšit.
 ; dlga_beorn_message2:beorn_message_end|Yes, we were warned about the camp also and sent scouts towards it. We saw them burn it down and swiftly ride towards Mordor. If you chose to rush there first, you may not have been able to help us. We are truly grateful for your victory!
-; dlga_beorn_message_end:beorn_message_close|I must report back and tell {s1} about the battle. Go back to your village and dispatch scouts. There may be stragglers.
+dlga_beorn_message_end:beorn_message_close|Musím se hlásit zpátky a říct {s1} o výsledku bitvy. Vrať se do vesnice a vyšli zvědy. V okolí mohou být odpadlíci.
 ; dlga_beorn_message_close:close_window|Yes, commander. We shall remain vigilant and send for more men from the distant hamlets. Your victory today has inspired us all.
 dlga_lord_give_troops:lord_give_troops_check|Posílit mou družinu? Pár vojáků se vždy hodí.
 dlga_lord_give_troops:lord_pretalk|Bohužel se zdá, že nemáš {s14} vojáky pro mě.
@@ -398,8 +398,8 @@ dlga_marshall_suggest:marshall_answer|Měli bychom jezdit obléhat {s1} najednou
 dlga_marshall_suggest:lord_pretalk|Never mind, I trust your judgement.
 dlga_player_siege_discuss:player_siege_discuss_1|Poslouchám, můj pane.
 dlga_player_siege_resource_check:lord_pretalk|Ne, ještě nenadešel správný čas.
-; dlga_player_siege_check_passed:player_siege_accept|Very well. Go, {playername}, and march with the blessings of {s2}. We are counting on you to lead our people to victory.
-; dlga_player_siege_accept:close_window|Thank you, my Lord. I will not let you and {s2} down.
+dlga_player_siege_check_passed:player_siege_accept|Velmi dobře. Teď běž, {playername}, s požehnáním {s2}. Spoléháme na tebe, že povedeš naše lidi k vítězství.
+dlga_player_siege_accept:close_window|Děkuji ti, můj pane. Nezklamu tebe ani {s2}.
 dlga_marshall_answer:close_window|Velmi dobře, {playername}, odložím svůj názor. Posílám posly, aby shromáždili naše síly. ^ Následujte mě a zůstaňte blízko - jdeme na {s4}!
 dlga_lord_talk:deliver_gift_1|Přináším dárek {s1} od {s3} lidem {s2}.
 dlga_send_gift_1:lord_pretalk|Jste už {s4}, {playername}. Bylo by moudré ho nejprve doručit.
@@ -465,12 +465,14 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, dostali jsme 
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Jsi schopen poslat muže?
 ; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Mí muži jsou připravení a já též. Vyjedeme hned.
-dlga_lord_mission_defend_question:lord_mission_defend_reject|Obávám se, že tento úkol nedokážu.
+dlga_lord_mission_defend_question:lord_mission_defend_reject|Obávám se, že se mnou v současné době není dost mužů ...
+dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Obávám se, že tento úkol nedokážu.
 dlga_lord_mission_defend_accept:close_window|Děkuji, {playername}. Vyraž nyní, rychle!
 dlga_lord_mission_defend_reject:close_window|Vidím. Pošlu tam tolik jednotek kolik můžu. Doufám že není pozdě.
-; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they are protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
+dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, nedaleko je vesnice zralá k vyloupení. NAši zvědové hlásí že je chráněna {s3}, ale je jich jen pár a mohou být lehce poraženi . ^^Jste náhodou prvním velitelem, kterému jsem jsem to řekl. Jak chcete s touto informací naložit?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Vypálím tu vesnici, zabiji každého muže co uvidím a zotročím všechny ženy a děti!
-dlga_lord_mission_raid_village_a:lord_raid_village_reject|Nemám čas na přepadení malých vesnic!
+; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I cannot raid with these weaklings with me right now...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Nemám čas na přepadení malých vesnic!
 dlga_lord_raid_village_accept:close_window|Tak proč tu tedy postáváte?
 dlga_lord_raid_village_reject:close_window|Výmluvy zbabělců. Zmiz mi z očí, tvůj zápach zbabělce mě uráží.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Černokněžník z Temného hvozdu byl zabit, má Paní.
@@ -685,11 +687,11 @@ dlga_castle_gate_open:close_window.4|Můj pán {s2} si s tebou nepřeje mluvit. 
 ; dlga_beorn_help3:beorn_help4|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Beorn are not the ones you earned in Lothlorien, but the ones you will earn in Beorn. ^^See REPORTS for more information.
 ; dlga_beorn_help4:beorn_help4a|*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?...
 ; dlga_beorn_help4a:beorn_help5|*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?... Golden mead is sweet and warms the heart, but perhaps elven blades and keen arrows are needed more in these dark days..
-; dlga_beorn_help4:beorn_help5|(place a hand on your heart, nod and smile)
+dlga_beorn_help4:beorn_help5|(položí ruku na své srdce, přikývne a usměje se)
 ; dlga_beorn_help5:beorn_help6|We may be rough and hairy, grim and dark. But we help our friends, those who help us. ^^If our chiefs think you and your actions worthy, we will follow you to battle.
 ; dlga_beorn_help6:beorn_help7|(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.
 ; dlga_beorn_help7:close_window|Le fael, friend! Farewell. 
-; dlga_beorn_help7:close_window.1|(raise your hand and leave without a word)
+dlga_beorn_help7:close_window.1|(zvedne ruku a odejde beze slova)
 ; dlga_start:kill_scout_1|Great eyes and ears you have there! If you hadn’t warned us, those green-clad tree-climbers would’ve had the jump on us, I warrant - or perhaps escaped, and brought down more of their fellows on our heads! Now they’re for the maggots and crows, and our mission is safe. Ai! The Bosses will be pleased.
 ; dlga_kill_scout_1:kill_scout_2|Watch where you’re taking us, Orc. We have not travelled this far to perish in an ambush, before the war has even begun!
 ; dlga_kill_scout_2:kill_scout_3|And war we shall have, indeed! Have no fear, warrior, Mordor is an ally to you and yours. Take this chit - get some supplies. Good for use in all Mordor outposts! Get a round of Orc brew on me!
@@ -698,11 +700,11 @@ dlga_castle_gate_open:close_window.4|Můj pán {s2} si s tebou nepřeje mluvit. 
 ; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I’ve won my bet with Gothmog, thanks to you!!^^ I’ll tell him and the other Bosses about you, for sure. Lugbúrz will know how useful you were today, have no fear! The Great Eye is upon you, now!^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 ; dlga_kill_scout_6:kill_scout_7|(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.
 ; dlga_kill_scout_7:kill_scout_8|What I do is none of your affair, you disgusting creature. Now let’s move!
-; dlga_kill_scout_8:close_window|As you wish, as you wish. This way!
+dlga_kill_scout_8:close_window|Jak si přejete, jak si přejete. Tudy!
 ; dlga_woodelf_help_1:woodelf_help_2.1|I have never seen such a large orc before. Nasty things. Do not fret. I am a Soldier in this coming war that we have all been sensing.
 ; dlga_woodelf_help_2:woodelf_help_3.1|You are? Of course you are! I have seen that you are a capable warrior. I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts.
 ; dlga_woodelf_help_3:close_window|Safe journey to you, Torbal. I'm sure we will meet again.
-; dlga_healers_ask:healer_who|What do you do?.
+dlga_healers_ask:healer_who|Co děláš?
 dlga_healers_ask:healer_wound_ask|Mí muži i já máme zranění, které nevyléčí pouze čas. Můžeš nás vyléčit?
 dlga_healers_ask:healer_injured_ask|Mí muži a já jsme zranění a nemáme čas aby se vyléčili sami. Pomůžeš nám?
 dlga_healers_ask:close_window|nic
@@ -710,7 +712,7 @@ dlga_healers_injured_check:healers_injured_heal|Ano, zúčastni se nás.
 dlga_healers_wound_check:healers_wound_heal|Ano, zúčastni se nás.
 dlga_healers_wound_check:close_window|Teď ne.
 dlga_healers_injured_check:close_window|Teď ne.
-; dlga_hungry_orc_1:hungry_orc_2|What do you expect me to do about it, rat?
+dlga_hungry_orc_1:hungry_orc_2|Co ode mě očekáváš, kryso?
 ; dlga_hungry_orc_2:hungry_orc_choice|Those weaklings over there are no use in a proper fight, anyway. Let us eat THEM!
 ; dlga_hungry_orc_choice:hungry_orc_eat|All right, grab them! [Kill a few weaklings to feed your orcs.]
 ; dlga_hungry_orc_choice:hungry_orc_no_check|No way. None of my men get eaten! Fall back in line or I'll have you eat your own tongue! [Leadership Check]
@@ -731,22 +733,22 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Jmenuji se {playername}.
 ; dlga_ally_thanks_meet_2:close_window.2|Well met {playername}. I am {s1}. Thanks for your help and I hope we meet again.
 ; dlga_start:close_window.13|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
 ; dlga_start:close_window.14|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
-; dlga_start:close_window.15|You turned up just in time, {playername}. I will not forget your help. {s43}
-; dlga_start:close_window.16|Good to see you here, {playername}. {s43}
+dlga_start:close_window.15|Přišel jsi právě včas, {playername}. Nezapomenu na tvou pomoc. {s43}
+dlga_start:close_window.16|Rád tě zde vidím, {playername}. {s43}
 ; dlga_start:close_window.19|Thank you for your help, Commander. You saved {reg1?our lives:my life} out there.
 ; dlga_start:close_window.20|Thank you for your help, Commander. Things didn't look very well for us but then you came up and everything changed.
 ; dlga_start:close_window.21|Thank you for your help, Commander. It was fortunate to have you nearby.
-; dlga_start:freed_hero_answer|I am in your debt for freeing me friend.
-; dlga_freed_hero_answer:freed_hero_answer_1|You're not going anywhere. You'll be my prisoner now!
+dlga_start:freed_hero_answer|Jsem ti dlužný za mé osvobození příteli.
+dlga_freed_hero_answer:freed_hero_answer_1|Nikam nejdeš. Teď budeš mým vězněm!
 ; dlga_freed_hero_answer_1:close_window|Alas. Will my luck never change?
 dlga_freed_hero_answer:freed_hero_answer_2|Jsi volný {s65}. Můžeš jít kam se ti zlíbí.
 ; dlga_freed_hero_answer_2:close_window|Thank you, Commander. I never forget someone who's done me a good turn.
 ; dlga_freed_hero_answer:freed_hero_answer_3|Would you like to join me?
-; dlga_freed_hero_answer_3:close_window|All right I will join you.
+dlga_freed_hero_answer_3:close_window|Dobře, připojím se k tobě.
 ; dlga_freed_hero_answer_3:close_window.1|No, I want to go on my own.
 ; dlga_start:defeat_hero_answer|You'll not live long to enjoy your victory. My kinsmen will soon wipe out the stain of this defeat.
 dlga_defeat_hero_answer:defeat_hero_answer_1|Od ted jste mym zajatcem.
-; dlga_defeat_hero_answer_1:close_window|Damn you. You will regret this.
+dlga_defeat_hero_answer_1:close_window|K čertu s tebou. Toho budeš litovat.
 ; dlga_defeat_hero_answer:defeat_hero_answer_2|You're free to go this time, but don't cross my path again.
 dlga_defeat_hero_answer_2:close_window|Znovu se setkáme.
 ; dlga_start:fugitive_1|Yes, what do you want?

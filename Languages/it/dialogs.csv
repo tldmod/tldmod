@@ -465,12 +465,14 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, abbiamo ricev
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Sei in grado di inviare uomini ?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Potremmo, ma ci vorrà del tempo per mobilitarci. Temiamo di accumulare troppo ritardo. ^^Tu e i tuoi uomini sembrate in grado di viaggiare velocemente. Potete difendere questo villaggio ?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|I miei uomini ed io siamo pronti. Possiamo partire immediatamente.
-dlga_lord_mission_defend_question:lord_mission_defend_reject|Temo di non poter svolgere questo compito.
+dlga_lord_mission_defend_question:lord_mission_defend_reject|Temo di non avere abbastanza uomini con me al momento...
+dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Temo di non poter svolgere questo compito.
 dlga_lord_mission_defend_accept:close_window|Grazie, {playername}. Ora va, rapidamente !
 dlga_lord_mission_defend_reject:close_window|Vedo. Invierò più truppe possibile. Speriamo di non arrivare troppo tardi.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, c'è un villaggio nelle vicinanze che è pronto per la raccolta. I nostri esploratori ci riferiscono che sono protetti da {s3}, ma sono pochi e si possono sconfiggere facilmente. ^^Sei la prima persona a cui lo riferisco. Che intendi fare con quest'informazione?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Assalirò quel villaggio, ucciderò chiunque si metta sulla nostra strada e ridurrò in schiavitù tutte le donne e i bambini !
-dlga_lord_mission_raid_village_a:lord_raid_village_reject|Non ho tempo per razziare deboli villaggii !
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|Non posso fare razzie con smidollati come quelli che ho adesso...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Non ho tempo per razziare deboli villaggi !
 dlga_lord_raid_village_accept:close_window|E allora perché te ne stai qui impalato ?
 dlga_lord_raid_village_reject:close_window|Le scuse di una persona codarda. Vattene, il puzzo della tua vigliaccheria ha infestato l'aria.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Lo stregone di Bosco Atro è stato ucciso, mia Signora.
@@ -656,10 +658,10 @@ dlga_castle_gate_open:close_window.1|Il mio signore {s2} non è al castello in q
 dlga_castle_gate_open:close_window.2|Entra. Sto aprendo i cancelli per te.
 dlga_castle_gate_open:close_window.3|Entra. Ma assicurati che i tuoi uomini si comportino con decenza fra queste mura. Il mio signore {s2} non vuole problemi qui.
 dlga_castle_gate_open:close_window.4|Il mio signore {s2} non ti vuole qui. Vattene, adesso.
-dlga_start:caravan_help1|Grazie per l'aiuto ! Siamo al sicuro adesso. Il mio nome è Torbal, e stavo consegnando alcuni beni quando siamo stati attaccati. ^^ Hai visto questi grandi Orchi prima d'ora ? Questi non sembrano della razza di montagna che siamo abituati a respingere con facilità. Le decorazioni sui loro scudi rappresentano un antico simbolo di Mordor. Non vedo una cosa simile da questo lato del fiume da lungo tempo. ^^ Cose spaventose sono in movimento.. La guerra sta arrivando ! ^^Ti consiglio di raggiungere la più vicina città e di avvertire tutti in merito a ciò che hai visto, specialmente chi è al comando. È importante, quindi fa in fretta.
+dlga_start:caravan_help1|Grazie per l'aiuto ! Siamo al sicuro adesso. Il mio nome è Torbal, e stavo consegnando alcuni beni quando siamo stati attaccati. ^^ Hai visto questi grandi Orchi prima d'ora ? Non sembrano della razza di montagna che siamo abituati a respingere con facilità. Le decorazioni sui loro scudi rappresentano un antico simbolo di Mordor. Non vedo una cosa simile da questo lato del fiume da lungo tempo. ^^ Cose spaventose sono in movimento.. La guerra sta arrivando ! ^^Ti consiglio di raggiungere la più vicina città e di avvertire tutti in merito a ciò che hai visto, specialmente chi è al comando. È importante, quindi fa in fretta.
 dlga_caravan_help1:caravan_help2|No, non ho mai visto un orco così grande prima d'ora. Bestie malvagie.. ^^Sono un soldato di questa guerra che tutti sentono arrivare.
 dlga_caravan_help2:caravan_help_tut|Lo sei ? Certo che lo sei ! Ho saputo che sei un abile guerriero. ^^Sono davvero fortunato oggi, quindi farò tesoro di questa buona sorte e mi affretterò al mio villaggio per avvertire la mia gente di queste bestie immonde. ^^Tieni, prendi un po' della valuta locale usata da {s10}
-dlga_caravan_help_tut:caravan_help3|(INFORMAZIONI SUI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per comprare dalla popolazione di {s11} non sono gli stessi che hai guadagnato all'interno della tua fazione, ma quelli che avrai ottenuto a  {s11}. ^^Controlla la sezione RAPPORTI per maggiori informazioni.
+dlga_caravan_help_tut:caravan_help3|(INFORMAZIONI SUI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per comprare dalla popolazione di {s11} non sono gli stessi che hai guadagnato all'interno della tua fazione, ma quelli che avrai ottenuto a {s11}. ^^Controlla la sezione RAPPORTI per maggiori informazioni.
 dlga_caravan_help3:caravan_help4|Che tu possa fare viaggi sereni, Torbal. Sono certo che c'incontreremo ancora.
 dlga_caravan_help4:caravan_help_fac_tut|Non vedo l'ora. Le mie guardie ti hanno visto combattere e certamente riferiranno al loro signore riguardo a te. ^^Se soccorrerai più volte il loro popolo, certamente diverrai celebre fra di loro, il che potrà portare a grandi cose ! ^^Io stesso sono ben conosciuto, e mi è stato fornito un reddito mensile per ciò che ho fatto !
 dlga_caravan_help_fac_tut:caravan_help5|(GUIDA AI GRADI NELLE FAZIONI) ^^I punti graduatoria ti permettono di salire di grado nella tua fazione (e/o in altre fazioni). ^^Ciò determina il limite di grandezza della tua compagnia, il reddito fornito da ogni fazione e sblocca altre specifiche ricompense dalle fazioni stesse.

@@ -1,12 +1,12 @@
-imod_plain|Plaine %s
+imod_plain| %s ordinaire
 imod_cracked|%s médiocre
-imod_rusty|%s simple
+imod_rusty|%s grossier
 imod_bent|%s tordu
 imod_chipped|%s ébréché
 imod_battered|%s bosselé
 imod_poor|%s médiocre
-imod_crude|Simple
-imod_old|Ancien
+imod_crude|%s simple
+imod_old|%s ancien
 imod_cheap|%s bon marché
 imod_fine|Excellent %s
 imod_well_made|%s bien fait
@@ -20,19 +20,19 @@ imod_heavy|%s lourd
 imod_strong|%s fort
 imod_powerful|%s puissant
 imod_tattered|%s déchiré
-imod_ragged|%s rêche
+imod_ragged|%s usé
 imod_rough|%s rêche
 imod_sturdy|%s solide
-imod_thick|Robuste
-imod_hardened|%s endurci
+imod_thick|%s robuste
+imod_hardened|%s durci
 imod_reinforced|%s résistant
-imod_cloak|%sAvec une cape
+imod_cloak|%s avec une cape
 imod_lordly|Chef d’œuvre %s
 imod_lame|%s estropié
-imod_swaybacked|%s ensorcelé
+imod_swaybacked|%s boiteux
 imod_stubborn|%s têtu
 imod_timid|%s craintif
-imod_meek|Couvert de sang%s
+imod_meek|%s couvert de sang
 imod_spirited|%s courageux
 imod_champion|%s de champion
 imod_fresh|%s frais

@@ -1172,7 +1172,7 @@ str_talk_later_pitiless|¡Vigilad vuestra lengua! Lo que tenga que decir sobre e
 str_talk_later_cunning|Este no es el momento ni el lugar adecuado para hablar de eso. Quizás podamos hablarlo más adelante y en otro lugar, pero de momento seguimos siendo adversarios.
 str_talk_later_sadistic|¡Deberíais mantener la boca cerrada! ¿Qué pasaría si otros vasallos me vieran hablando con vos sobre traicionar a mi señor?
 str_talk_later_goodnatured|¿Así que queréis hablar sobre la rebelión conmigo? Probad de nuevo a hablar conmigo cuando no estemos rodeados por el ejército de mi señor, y escucharé lo que tengáis que decir.
-str_talk_later_upstanding|Cualesquiera que sean mis pensamientos sobre la legitimidad de los sucesores, no hablaré sobre ello aquí y ahora. Si nos volvemos a encontrar en el futuro, escucharé lo que tenéis que decir sobre el asunto. Pero por ahora, consideradme vuestro adversario.
+str_talk_later_upstanding|No es ni el momento ni el lugar adecuado para valorar la legitimidad de los sucesores. Si en un futuro nos volvemos a encontrar escucharé lo que tengáis que decir al respecto. Pero, por ahora, consideradme vuestro adversario.
 str_gossip_about_character_default|Dicen que {s6} no posee ningún rasgo notable.
 str_gossip_about_character_martial|Dicen que {s6} ama la guerra por encima de cualquier otra cosa.
 str_gossip_about_character_quarrelsome|Dicen que {s6} casi llega a las manos con otro vasallo recientemente, porque el otro señor hizo una broma sobre su nariz.
@@ -1440,11 +1440,11 @@ str_gunda_rumor_7|Los hombrecillos sentirán el frío helado que les llevaremos.
 str_gunda_rumor_8|La última vez, Azog y Bolgo casi derrotaron a enanos, elfos y hombres. Pero los monstruos con plumas y los Hombres-oso los salvaron. *escupe*
 str_gunda_rumor_9|La carne de Enano es dura y fibrosa. La carne de Hombre es mejor.
 str_gunda_rumor_10|Los Hombres-oso vinieron de los bosques y se comieron a Boldush. ¡Mala suerte para Boldush! ¡Ja, ja, ja!
-str_gunda_rumor_11|Algunos se fueron a Moria, hay mucho espacio allí. Pero allí también vive Ghâsh, en las profundidades. ¡Mejor mantenerse alejado!
+str_gunda_rumor_11|Algunos se fueron a Moria, hay mucho espacio allí. Pero allí también vive Ghâsh, en lo profundo. ¡Mejor mantenerse lejos!
 str_moria_rumor_begin|Cuando oigas los tambores, ¡corre a esconderte!
-str_moria_rumor_2|¡Ghâsh vive en las profundidades! 
-str_moria_rumor_3|¡Muerte! ¡Muerte! ¡Muerte! Tambores en las profundidades.
-str_moria_rumor_4|Moria es grande, pero allí ya no se esconde ningún enano.
+str_moria_rumor_2|¡Ghâsh vive en lo profundo! 
+str_moria_rumor_3|¡Muerte! ¡Muerte! ¡Muerte! Tambores en los abismos.
+str_moria_rumor_4|Moria es grande, pero aquí ya no se esconde ningún enano.
 str_moria_rumor_5|Los enanos cavaron demasiado hondo. Mejor para nosotros. ¡Ja, ja, ja!
 str_moria_rumor_6|Hay muchos túneles en Moria. No utilizamos todos ellos.
 str_moria_rumor_7|Algunos hombrecillos y enanos burlaron la vigilancia de nuestros centinelas hace poco. Hemos doblado la guardia desde entonces.
@@ -1891,11 +1891,11 @@ str_guldur_gift3|Huevos de Araña Gigante
 str_guldur_gift4|Libros de Magia Oscura
 str_gundabad_gift0|Perforaciones Afiladas de Hueso
 str_gundabad_gift1|Pinturas de Guerra Protectoras
-str_gundabad_gift2|Manteca Cocida de los Enanos
+str_gundabad_gift2|Manteca de Enano Hervida
 str_gundabad_gift3|Ídolos de Cadáveres Momificados
 str_gundabad_gift4|Huargos Negros
 str_dunland_gift0|Queso Maloliente de Cabra
-str_dunland_gift1|Cuchillos para Sacrificios de Pedernal
+str_dunland_gift1|Cuchillos Sacrificiales de Pedernal
 str_dunland_gift2|Brazaletes de Bronce Decorativos
 str_dunland_gift3|Cabras
 str_dunland_gift4|Cráneos y Garras de Lobo
