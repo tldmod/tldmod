@@ -1103,7 +1103,7 @@ items =[
 ["khand_lance","Khand_Lance",[("khand_lance",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable,itc_spear,210,weight(2.5)|difficulty(0)|spd_rtng(88)|weapon_length(218)|thrust_damage(26,pierce),imodbits_weapon_bad],
 ####KHAND SHIELDS
 ["easterling_round_horseman","Easterling_Round_Shield",[("eastershield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(40),imodbits_shield,],
-["variag_gladiator_shield","khand_gladiator_Shield",[("eastershield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(40),imodbits_shield,],
+["variag_gladiator_shield","Easterling_Pit_Shield",[("eastershield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(40),imodbits_shield,],
 ["easterling_hawk_shield","Easterling_Hawk_Shield",[("eastershield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(80),imodbits_shield,],
 ["rhun_bull1_shield","Rhun_Shield",[("eastershield_d",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(6)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
 ["rhun_bull2_shield","Rhun_Shield",[("eastershield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(6)|spd_rtng(90)|weapon_length(50),imodbits_shield,],

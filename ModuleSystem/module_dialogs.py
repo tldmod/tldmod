@@ -270,7 +270,7 @@ dialogs = [
       (eq, ":random", 1),
       (str_store_string, s4, "@i wont a bonerlrord port nao!!11!"),
       (str_store_string, s5, "@Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!"),
-      (str_store_string, s6, "@Bannerlord is running on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband."),
+      (str_store_string, s6, "@Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband."),
     (else_try),
       (eq, ":random", 2),
       (str_store_string, s4, "@dis mod takes 2 long 2 releaze! it sux!!11!"),
