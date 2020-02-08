@@ -211,12 +211,13 @@ qstr_+1_to_Weapon_Mastery|+1 Silah ustalıgına
 qstr_+1_to_Wound_Treatmen|+1 Yara bakımına 
 qstr_+1_to_Tactics|+1 Taktige
 qstr_+1_to_Power_Strike|+1 Güçlü Saldırı
-qstr_when_equipped|Kullanıldıgında
 qstr_+1_to_Strength|+1 Güce 
 qstr_+1_to_Agility|+1 Çeviklik
 qstr_+1_to_Leadership|+1 Liderlige 
 qstr_+1_to_Wildcraft|Yaban Ustası'na +1
 qstr_+1_to_Power_Draw|+1 Güçlü Vuruşa
+; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
+; qstr_Who_might_be_interes|Who might be interested in this?
 qstr_Turns_nature_to_your|Dogayı sizin tarafınıza çevirir (efektler Wildraft ile şekillenir)
 qstr_+1_to_Trainer|Talimcilige +1
 qstr_Recruits_Tribal_Orcs|Kabile Orklarını Topla
@@ -225,10 +226,15 @@ qstr_rallies|toparlamak
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} Savaşta
 qstr_+1_to_Charisma|Karizmaya +1
 qstr_+1_to_Surgery|Cerrahlıga +1
+; qstr_+1_to_Intelligence|+1 to Intelligence
 qstr_+1_to_Ironflesh|Demirvücuda +1
 qstr_+1_to_Prisoner_Mgmt|Esir yönetimine +1
+qstr_when_equipped|Kullanıldıgında
+; qstr_+1_to_Riding|+1 to Riding
+; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
 qstr_+2_to_Tactics|Taktik becerisine +2
 qstr_+3_to_Spotting|Tespit etmeye +3
+; qstr_+2_to_Athletics|+2 to Athletics
 qstr_Less_Dunnish_upkeep|Dunnishlere daha az bakım
 qstr_Less_Wargs_upkeep|Warglara daha az bakım
 qstr_Light_Armor|Hafif Zırh
@@ -1119,17 +1125,17 @@ qstr_How_do_magnets_work?|Mıknatıslar nasıl çalışır?
 qstr_Um..._by_enchanting_|Hmm...Büyülü demirle mi?
 qstr_Magnets_are_made_of_|Mıknatıs yer altından çıkarılan metallerle yapılır. Onlar manyetik çünkü içinde yerçekimi parçaları bulunur.
 qstr_i_wont_a_bonerlrord_|bonnerlord port istiyorom nao!!11!
-qstr_I_m_sure_the_TLD_tea|Eminim ki, TLD takımı fırsat bulduklarında yapmaya çalışacakdır.
-qstr_Install_TLD_in_your_|Bannerlord Mod klasörüne TLD'yi yükleyin, ve module.ini'ye şu satırı ekleyin 'compatible_with_wfas = 1', ve artık hem Warband hem de Warrider 0.202 de oynayabileceksiniz!
+; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
+; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
 qstr_dis_mod_takes_2_long|bu modun güncellenmesi çok uzun zaman alıyor! çok kötü!!11!22
 qstr_Well_there_s_a_lot_o|Çok fazla yeni grafik ve diger şeyler var.Sanırım bu zaman alacak.
 qstr_It_has_been_recently|Kısa bir süre önce yayımlandı, linki kaçırdıysanız, lemonparty.org adresinden indirebilirsiniz.
 qstr_i_wont_decapitated_e|Multide filleri kesmeyecegim, nao!!11!
 qstr_I_don_t_think_there_|TLD'de çok multiplayerın oldugunu sanmıyorum, ancak filler güzel olurdu.
 qstr_There_is_a_hidden_el|TLD'de gizlenmiş bir fil deathmatch modu var, ancak önce tüm savegameLerinizi kaldırmanız, kaydetmeden oyunu 100 oyun günü oynamanız, daha sonra karakter ekranına gitmeniz ve Alt + F4 tuşlarına basmanız gerekiyor. Tamamen buna deger!
-qstr_Did_you_bring_your_z|Zupdog'u getirdin mi?
-qstr_What_s_zupdog?|Zupdog'da ne?
-qstr_My_zupdog_is_ill_but|Zupdog'um hasta, sanırım zupmaiamass satın alacagım.
+; qstr_Y_NO_ChINESE??|Y NO ChINESE??
+; qstr_Just_to_troll_you_tr|Just to troll you, troll!
+; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
 qstr_Wai_no_plate_armour_|Dur bi dakka modda levhalı zırh yok mu ???
 qstr_What_is_plate_armour|Levhalı zırh nedir? Hiç duymadım.
 qstr_Wai_no_female_trolls|Bekle bayan troller mi? Eh?Eh? Or... çocugu!
@@ -1212,7 +1218,7 @@ qstr_I_am_{s4}_{s15}_of_{|Ben {s4}, {s6}'ın {s15}'ıyım
 qstr_I_am_{s4}_a_commande|Ben {s4}, {s6}'ın kumandanıyım.
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? {s8} hakimiyim.:.
 qstr_{playername}_our_sco|{playername}, izcilerimiz başarılarının haberlerini getirdi. Bu günden sonra kutsanmış olarak yaşayasın! {s7} birliklerine karşı aldıgın galibiyet, düşmanımızı yavaşlattı. Şimdi kendi komutanları arasında bir çekişme var, ve açık konuşmak gerekirse bir süre senden korkacaklar. En azından bize bir süre dinlenmemiz için vakit kazandırmış oldun.
-qstr_Well_{playername}_yo|Pekala, {playername}, demek geri döndün, üstelik bize iyi haberler getirdin galiba. Şimdi görüyorum ki sen sadece palavradan ibaret degilsin - ah, keşke o {s7} denenin senin önünde diz çöktügünü bizzat görebilseydim! Düşmanlarımız şüphesiz çaresizce umutsuzluktalardır. Bahse varım akıllarını yitirdiler. Yılanın kafasını kestin yani ve işi bitirdin. Eh, şimdi gerçek zafer kazanmak için orduma liderlik etmeliyim. Üstlerinize katkınız bildirilecek, <Player>. Bu konuda şüphen olmasın.
+; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
 qstr_Alas_that_I_could_no|{s8} topraklarında {s7} denen kişiye mutlak bir son getiremedim, Ama tekrar görüşmemiz gerekirse, dikkat etmelerini söyle.
 qstr__I_should_rather_mak|  {s8} topraklarında {s7} denen kişiye karşı zaferimi şahsen rapor etmeliyim - Büyük zafer benimdir ve sen bunu unutmayacaksınız!
 qstr_Very_well_done_{play|Çok iyi, {playername}! Hem casusu hem de işbirlikçisini tıpkı umdugum gibi yakaladınız, çift şimdi güvenli bir yerde kilitlendi ve sorgulanmayı bekliyorlar. Bazıları açıklama yapacak! Her neyse, başarılarınızdan çok memnunum {playername}, sana bu çantayı minnettarlıgımın göstergesi olarak veriyorum.
@@ -1399,6 +1405,7 @@ qstr_I_m_sorry_but_we_can|Üzgünüm, ama şu anda onlara yardım edemeyiz.
 ; qstr_Bah!_Far_more_glory_|Bah! Far more glory to be won elsewhere than with paltry piracy.
 qstr_This_raid_does_not_i|Bu baskın beni ilgilendirmiyor. Başka bir yerde zafer kazanacagım.
 qstr_{s9}_asked_you_to_de|{s9} sizden {s1} yakınındaki bir keşif kampını imha etmenizi istedi.
+; qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
 qstr_{s9}_asked_you_to_def|{s9}, senden {s1} yakınında saldırı altındaki bir köyü savunmanızı istedi.
 qstr_{s9}_asked_you_to_ra|{s9} sizden {s1} yakınındaki bir köye baskın yapmanızı istedi.
 qstr_These_soldiers_may_w|Bu askerler planlarımda kötü gidebilecek şeyleri tamamen degiştirebilirler, {playername}.Onları iyi egittiginden şüphem yok.Sana teşekkürlerimi ve sayılarımı sunarım.

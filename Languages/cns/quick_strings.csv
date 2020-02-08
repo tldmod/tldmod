@@ -211,12 +211,13 @@ qstr_+1_to_Weapon_Mastery|武器掌握等级+1
 qstr_+1_to_Wound_Treatmen|疗伤等级+1 
 qstr_+1_to_Tactics|战术等级+1 
 qstr_+1_to_Power_Strike|强击等级+1 
-qstr_when_equipped|装备时
 qstr_+1_to_Strength|力+1
 qstr_+1_to_Agility|敏+1
 qstr_+1_to_Leadership|统+1
 qstr_+1_to_Wildcraft|自然力+1
 qstr_+1_to_Power_Draw|强弓等级+1
+; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
+; qstr_Who_might_be_interes|Who might be interested in this?
 qstr_Turns_nature_to_your|你与自然融为一体（效果依荒野求生技能的级别而定）
 qstr_+1_to_Trainer|教练等级+1
 qstr_Recruits_Tribal_Orcs|招募部落半兽人
@@ -225,10 +226,15 @@ qstr_rallies|集结
 qstr_+{reg1}_{s3}_in_batt|在战斗中 +{reg1} {s3}
 qstr_+1_to_Charisma|魅+1
 qstr_+1_to_Surgery|手术等级+1
+; qstr_+1_to_Intelligence|+1 to Intelligence
 qstr_+1_to_Ironflesh|铁骨等级+1
 qstr_+1_to_Prisoner_Mgmt|俘虏管理等级+1 
+qstr_when_equipped|装备时
+; qstr_+1_to_Riding|+1 to Riding
+; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
 qstr_+2_to_Tactics|战术等级+2
 qstr_+3_to_Spotting|侦查等级 +3
+; qstr_+2_to_Athletics|+2 to Athletics
 qstr_Less_Dunnish_upkeep|缺乏丹尼斯维护
 qstr_Less_Wargs_upkeep|缺乏座狼维护
 qstr_Light_Armor|轻甲
@@ -1119,17 +1125,17 @@ qstr_How_do_magnets_work?|磁铁是做什么的？
 qstr_Um..._by_enchanting_|恩...用来吸铁？
 qstr_Magnets_are_made_of_|磁铁是开采自地下的金属做的，它天然就有磁力因为它含有引力的成分。
 qstr_i_wont_a_bonerlrord_|哇想要骑砍2领祖的最后之日啊啊！！
-qstr_I_m_sure_the_TLD_tea|我可以肯定当条件满足是，最后之日团队肯定会完成这一要求的。
-qstr_Install_TLD_in_your_|安装最后之日到骑马与砍杀2：领主的模组文件夹，在module.ini文件中增加一行指令：“compatible_with_wfas = 1”，然后你就可以在战团和Warrider 0.202版里面玩最后之日了。
+; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
+; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
 qstr_dis_mod_takes_2_long|择个模组花了老长时间才发布！烂！！
 qstr_Well_there_s_a_lot_o|嗯，因为有很多新的材质纹理和其它东西要做，我猜这很费时…
 qstr_It_has_been_recently|这个模组的正式版近日发布了，如果你忘了网址，你可以上lemonparty.org去下载。
 qstr_i_wont_decapitated_e|我不会在多人游戏中杀死大象，绝不！！
 qstr_I_don_t_think_there_|我不认为最后之日有联机，不过大象倒是个好点子。
 qstr_There_is_a_hidden_el|有一个大象死亡模式隐藏在最后之日里。但是你要先删掉所有存档，然后开新档，不保存玩100天。接着在角色菜单处按Alt+F4。相信我朋友，这完全值得！
-qstr_Did_you_bring_your_z|你带来沃步思狗了么？
-qstr_What_s_zupdog?|沃步思狗是啥？
-qstr_My_zupdog_is_ill_but|我的沃步思狗病了，当我带来了我的沃步思猪。
+; qstr_Y_NO_ChINESE??|Y NO ChINESE??
+; qstr_Just_to_troll_you_tr|Just to troll you, troll!
+; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
 qstr_Wai_no_plate_armour_|啥？这个模组里没有板甲？
 qstr_What_is_plate_armour|什么是板甲？没听说过。
 qstr_Wai_no_female_trolls|啥？没有母食人妖？恩？恩？你个小婊砸！
@@ -1212,7 +1218,7 @@ qstr_I_am_{s4}_{s15}_of_{|我是{s4}，{s6}的{s15}
 qstr_I_am_{s4}_a_commande|我是{s4}，{s6}的指挥官
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5?和{s8}的统治者。:}
 ; qstr_{playername}_our_sco|{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least.
-; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, <Player>, to your betters. Have no fear about that.
+; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
 ; qstr_Alas_that_I_could_no|Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware.
 ; qstr__I_should_rather_mak| I should rather make report of my victory over {s7} of {s8} myself - the chief glory is mine, and you will not forget it!
 qstr_Very_well_done_{play|做得很好！{playername}！正如我所期望的，你抓住了间谍和他的接头人。他们现在被铐在一起等待问询；他们有很多事情要好好的解释一下了。{playername}，我非常高兴你能完成这个任务。请收下这袋钱，这是你应得的奖赏。
@@ -1399,6 +1405,7 @@ qstr_I_m_sorry_but_we_can|抱歉，我们现在无法支援他们。
 ; qstr_Bah!_Far_more_glory_|Bah! Far more glory to be won elsewhere than with paltry piracy.
 ; qstr_This_raid_does_not_i|This raid does not interest me. I shall win glory elsewhere.
 qstr_{s9}_asked_you_to_de|{s9}希望你摧毁{s1}附近的斥候营地。
+; qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
 qstr_{s9}_asked_you_to_def|{s9}希望你保护{s1}附近一座被攻击的村庄。
 qstr_{s9}_asked_you_to_ra|{s9}希望你能掠夺{s1}附近的一座村庄。
 qstr_These_soldiers_may_w|这些士兵势必会在我的计划中力挽狂澜，{playername}。我能看得出来，你把他们训练的很好。感谢并赞美你！

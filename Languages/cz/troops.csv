@@ -42,8 +42,8 @@ trp_townsman|Mestan
 trp_townsman_pl|Mestane
 trp_watchman|Mestanka
 trp_watchman_pl|Mestanky
-trp_i1_woodmen_man|Lesník
-trp_i1_woodmen_man_pl|Lesníci
+; trp_i1_woodmen_man|Woodmen Settler
+; trp_i1_woodmen_man_pl|Woodmen Settlers
 trp_i2_woodmen_forester|Lesni drevorubec
 trp_i2_woodmen_forester_pl|Lesni drevorubci
 trp_i3_woodmen_skilled_forester|Zkuseny lesni drevorubec
@@ -130,8 +130,8 @@ trp_i3_rhun_tribal_infantry|Rhunský Kmenový Pěšák
 trp_i3_rhun_tribal_infantry_pl|Rhunská Kmenová Pěchota
 trp_i4_rhun_vet_infantry|Rhunský Veteránský Pěšák
 trp_i4_rhun_vet_infantry_pl|Rhunská Veteránská Pěchota
-trp_i5_rhun_ox_warrior|Pesak radu Tura
-trp_i5_rhun_ox_warrior_pl|Pesaci radu Tura
+; trp_i5_rhun_ox_warrior|Warrior of the Ox
+; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
 trp_c2_rhun_light_horseman|Rhunský Lehký Jezdec
 trp_c2_rhun_light_horseman_pl|Rhunští Lehcí Jezdci
 trp_c3_rhun_light_cavalry|Rhůnský člen lehké kavalerie
@@ -306,112 +306,112 @@ trp_c6_amroth_leader|Kapitán z Dol Amrothu
 trp_c6_amroth_leader_pl|Kapitáni z Dol Amrothu
 trp_a1_lorien_scout|Lothloriensky zved
 trp_a1_lorien_scout_pl|Loriensti pruzkumnici
-trp_a2_lorien_warden|Lothloriensky zkuseny zved
-trp_a2_lorien_warden_pl|Lothloriensky zkuseni zvedi
-trp_a3_lorien_vet_warden|Lothloriensky lucistnik
-trp_a3_lorien_vet_warden_pl|Lothloriensti lucistnici
-trp_a4_lorien_gal_warden|Lothloriensky zkuseny lucistnik
-trp_a4_lorien_gal_warden_pl|Lothloriensky zkuseni lucistnici
-trp_a5_lorien_gal_royal_warden|Lothloriensky mistr lucistnik
-trp_a5_lorien_gal_royal_warden_pl|Lothloriensky mistri lucistnici
-trp_a6_lorien_grey_warden|Galadhrimský královský lučištník
-trp_a6_lorien_grey_warden_pl|Galadhrimští královští lučištníci
-trp_galadhrim_royal_marksman|Galadhrimský královský střelec
-trp_galadhrim_royal_marksman_pl|Galadhrimští královští střelci
+trp_a2_lorien_warden|Lothloriensky ochrance
+trp_a2_lorien_warden_pl|Lothloriensti ochranci
+trp_a3_lorien_vet_warden|Lothloriensky zkuseny ochrance
+trp_a3_lorien_vet_warden_pl|Lothloriensti zkuseni ochranci
+; trp_a4_lorien_gal_warden|Galadhrim Warden
+; trp_a4_lorien_gal_warden_pl|Galadhrim Wardens
+trp_a5_lorien_gal_royal_warden|Galadhrimský královský dozorce
+trp_a5_lorien_gal_royal_warden_pl|Galadrimští královští dozorci
+; trp_a6_lorien_grey_warden|Grey Warden
+; trp_a6_lorien_grey_warden_pl|Grey Wardens
+trp_a5_lorien_gal_royal_archer|Galadhrimský královský střelec
+trp_a5_lorien_gal_royal_archer_pl|Galadhrimští královští střelci
 trp_noldorin_mounted_archer|Noldorský lučištník na koni
 trp_noldorin_mounted_archer_pl|Noldorští ličištníci na koni
-trp_a2_lorien_archer|Lothloriensky pesak
-trp_a2_lorien_archer_pl|Lothloriensky pesak
-trp_a3_lorien_vet_archer|Lothloriensky zkuseny pesak
-trp_a3_lorien_vet_archer_pl|Lothloriensky zkuseny pesak
-trp_a4_lorien_gal_archer|Lothloriensky elitni pesak
-trp_a4_lorien_gal_archer_pl|Lothloriensky elitni pesak
-trp_i5_lorien_gal_royal_inf|Galadhrimský královský šermíř
-trp_i5_lorien_gal_royal_inf_pl|Galadhrimští královští šermíři
-trp_i3_lorien_inf|Lothloriensky ochrance
-trp_i3_lorien_inf_pl|Lothloriensti ochranci
-trp_i4_lorien_gal_inf|Lothloriensky zkuseny ochrance
-trp_i4_lorien_gal_inf_pl|Lothloriensti zkuseni ochranci
-trp_a5_lorien_gal_royal_archer|Galadhrimský královský dozorce
-trp_a5_lorien_gal_royal_archer_pl|Galadrimští královští dozorci
+trp_a2_lorien_archer|Lothloriensky lucistnik
+trp_a2_lorien_archer_pl|Lothloriensti lucistnici
+trp_a3_lorien_vet_archer|Lothloriensky zkuseny lucistnik
+trp_a3_lorien_vet_archer_pl|Lothloriensky zkuseni lucistnici
+; trp_a4_lorien_gal_archer|Galadhrim Archer
+; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
+trp_galadhrim_royal_marksman|Galadhrimský královský střelec
+trp_galadhrim_royal_marksman_pl|Galadhrimští královští střelci
+trp_i3_lorien_inf|Lothloriensky pesak
+trp_i3_lorien_inf_pl|Lothloriensky pesak
+; trp_i4_lorien_gal_inf|Galadhrim Infantry
+; trp_i4_lorien_gal_inf_pl|Galadhrim Infantry
+; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Guard
+; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Guards
 trp_lothlorien_standard_bearer|Lothloriensky korouhevnik
 trp_lothlorien_standard_bearer_pl|Lothloriensti korouhevnici
 trp_a1_greenwood_scout|Průzkumník Zeleného hvozdu
 trp_a1_greenwood_scout_pl|Průzkumníci Zeleného hvozdu
 trp_a2_greenwood_veteran_scout|Průzkumník veterán Zeleného hvozdu
 trp_a2_greenwood_veteran_scout_pl|Průzkumníci veteráni Zeleného hvozdu
-trp_a3_greenwood_archer|Lučištník Zeleného hvozdu
-trp_a3_greenwood_archer_pl|Lučištníci Zeleného hvozdu
-trp_a4_greenwood_veteran_archer|Střelec Zeleného hvozdu
-trp_a4_greenwood_veteran_archer_pl|Střelci Zeleného hvozdu
-trp_a5_greenwood_master_archer|Střelec veterán Zeleného hvozdu
-trp_a5_greenwood_master_archer_pl|Střelci veteráni Zeleného hvozdu
-trp_a6_greenwood_chosen_marksman|Thranduilův vznešený střelec
-trp_a6__pl|Thranduilovi vznešení střelci
+trp_a3_greenwood_archer|Střelec Zeleného hvozdu
+trp_a3_greenwood_archer_pl|Střelci Zeleného hvozdu
+trp_a4_greenwood_veteran_archer|Střelec veterán Zeleného hvozdu
+trp_a4_greenwood_veteran_archer_pl|Střelci veteráni Zeleného hvozdu
+; trp_a5_greenwood_master_archer|Greenwood Master Archer
+; trp_a5_greenwood_master_archer_pl|Greenwood Master Archers
+; trp_a6_greenwood_chosen_marksman|Thranduil's Chosen Marksman
+; trp_a6_greenwood_chosen_marksman_pl|Thranduil's Chosen Marksmen
 trp_a3_greenwood_sentinel|Strážce Zeleného hvozdu
 trp_a3_greenwood_sentinel_pl|Strážci Zeleného hvozdu
 trp_a4_greenwood_vet_sentinel|Strážce veterán Zeleného hvozdu
 trp_a4_greenwood_vet_sentinel_pl|Strážci veteráni Zeleného hvozdu
-trp_a5_greenwood_vigilant|Obránce Zeleného hvozdu
-trp_a5_greenwood_vigilant_pl|Obránci Zeleného hvozdu
+; trp_a5_greenwood_vigilant|Greenwood Guardian
+; trp_a5_greenwood_vigilant_pl|Greenwood Guardians
 trp_i2_greenwood_infantry|Pěchota Zeleného hvozdu
 trp_i2_greenwood_infantry_pl|Pěchota Zeleného hvozdu
 trp_i3_greenwood_vet_infantry|Veteránská pěchota Zeleného hvozdu
 trp_i3_greenwood_vet_infantry_pl|Veteránská pěchota Zeleného hvozdu
 trp_i4_greenwood_elite_infantry|Elitní pěchota Zeleného hvozdu
 trp_i4_greenwood_elite_infantry_pl|Elitní pěchota Zeleného hvozdu
-trp_i5_greenwood_chosen_shieldmaster|Thranduilův vznešený šermíř
-trp_i5_greenwood_chosen_shieldmaster_pl|Thranduilovi vznešení šermíři
-trp_i5_greenwood_chosen_spearmaster|Thranduilův vznešený kopiník
-trp_i5_greenwood_chosen_spearmaster_pl|Thranduilovi vznešení kopiníci
+; trp_i5_greenwood_chosen_shieldmaster|Thranduil's Chosen Shield Master
+; trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil's Chosen Shield Masters
+; trp_i5_greenwood_chosen_spearmaster|Thranduil's Chosen Spear Master
+; trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Chosen Spear Masters
 trp_i5_greenwood_standard_bearer|Korouhevník Zeleného hvozdu
 trp_i5_greenwood_standard_bearer_pl|Korouhevníci Zeleného hvozdu
 trp_a1_riv_scout|Průzkumník z Roklinky
 trp_a1_riv_scout_pl|Průzkumníci z Roklinky
 trp_a2_riv_vet_scout|Průzkumník veterán z Roklinky
 trp_a2_riv_vet_scout_pl|Průzkumníci veteráni z Roklinky
-trp_a3_riv_archer|Strážce z Roklinky
-trp_a3_riv_archer_pl|Strážci z Roklinky
-trp_a4_riv_vet_archer|Strážce veterán z Roklinky
-trp_a4_riv_vet_archer_pl|Strážci veteráni z Roklinky
-trp_a5_riv_master_archer|Elitní strážce z Roklinky
-trp_a5_riv_master_archer_pl|Elitní strážci z Roklinky
-trp_a6_riv_guardian|Obránce z Roklinky
-trp_a6_riv_guardian_pl|Obránci z Roklinky
+; trp_a3_riv_archer|Rivendell Archer
+; trp_a3_riv_archer_pl|Rivendell Archers
+; trp_a4_riv_vet_archer|Rivendell Veteran Archer
+; trp_a4_riv_vet_archer_pl|Rivendell Veteran Archers
+; trp_a5_riv_master_archer|Rivendell Master Archer
+; trp_a5_riv_master_archer_pl|Rivendell Master Archers
+; trp_a6_riv_guardian|Guardian of Imladris
+; trp_a6_riv_guardian_pl|Guardians of Imladris
 trp_i3_riv_swordbearer|Pěchota z Roklinky
 trp_i3_riv_swordbearer_pl|Pěchota z Roklinky
 trp_i4_riv_vet_swordbearer|Veteránská pěchota z Roklinky
 trp_i4_riv_vet_swordbearer_pl|Veteránská pěchota z Roklinky
 trp_i5_riv_swordmaster|Elitní pěchota z Roklinky
 trp_i5_riv_swordmaster_pl|Elitní pěchota z Roklinky
-trp_i6_riv_champion|Vznešená pěchota z Roklinky
-trp_i6_riv_champion_pl|Vznešená pěchota z Roklinky
-trp_ac5_riv_rider|Jízda z Roklinky
-trp_ac5_riv_rider_pl|Jízda z Roklinky
-trp_ac6_riv_knight|Rytíř z Roklinky
-trp_ac6_riv_knight_pl|Rytíři z Roklinky
+; trp_i6_riv_champion|Champion of Imladris
+; trp_i6_riv_champion_pl|Champions of Imladris
+; trp_ac5_riv_rider|Rivendell Rider
+; trp_ac5_riv_rider_pl|Rivendell Riders
+; trp_ac6_riv_knight|Knight of Imladris
+; trp_ac6_riv_knight_pl|Knights of Imladris
 trp_i6_rivendell_standard_bearer|Korouhevník z Roklinky
 trp_i6_rivendell_standard_bearer_pl|Korouhevníci z Roklinky
 trp_a1_arnor_scout|Dunedaiský průzkumník
 trp_a1_arnor_scout_pl|Dunedainští průzkumníci
 trp_a2_arnor_vet_scout|Dunedainský stopař
 trp_a2_arnor_vet_scout_pl|Dunedainští stopaři
-trp_i3_arnor_swordsman|Arnorský ozbrojenec
-trp_i3_arnor_swordsman_pl|Arnorští ozbrojenci
-trp_i4_arnor_vet_swordsman|Arnorský mistr ozbrojenec
-trp_i4_arnor_vet_swordsman_pl|Arnorští mistři ozbrojenci
-trp_i5_arnor_champion|Arnorský vyšší šermíř
-trp_i5_arnor_champion_pl|Arnorští vyšší šermíři
-trp_c4_arnor_horseman|Arnorský jezdec
-trp_c4_arnor_horseman_pl|Arnorští jezdci
+; trp_i3_arnor_swordsman|Dunedain Swordsman
+; trp_i3_arnor_swordsman_pl|Dunedain Swordsmen
+; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
+; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
+; trp_i5_arnor_champion|Champion of Arnor
+; trp_i5_arnor_champion_pl|Champions of Arnor
+; trp_c4_arnor_horseman|Dunedain Horseman
+; trp_c4_arnor_horseman_pl|Dunedain Horsemen
 trp_c5_arnor_knight|Arnorský rytíř
 trp_c5_arnor_knight_pl|Arnorští rytíři
 trp_a3_arnor_ranger|Dunedainský hraničář
 trp_a3_arnor_ranger_pl|Dunedainští hraničáři
 trp_a4_arnor_vet_ranger|Dunedainský zkušený hraničář
 trp_a4_arnor_vet_ranger_pl|Dunedainští zkušení hraničáři
-trp_a5_arnor_master_ranger|Dunedainský mistr hraničář
-trp_a5_arnor_master_ranger_pl|Dunedainští mistři hraničáři
+; trp_a5_arnor_master_ranger|Master Ranger of Arnor
+; trp_a5_arnor_master_ranger_pl|Master Rangers of Arnor
 trp_i1_rohan_youth|Rohanský mladík
 trp_i1_rohan_youth_pl|Rohanští mladíci
 trp_i2_guardsman_of_rohan|Rohansky strazce
@@ -466,8 +466,8 @@ trp_dismounted_thengel_guard_of_rohan|Rohanský člen Thengelovy gardy
 trp_dismounted_thengel_guard_of_rohan_pl|Rohanská Thengelova garda
 trp_i1_harad_levy|Haradský odvedenec
 trp_i1_harad_levy_pl|Haradští odvedenci
-trp_i3_harad_infantry|Haradský lehký pěšák
-trp_i3_harad_infantry_pl|Haradská lehká pěchota
+; trp_i3_harad_infantry|Harad Light Footman
+; trp_i3_harad_infantry_pl|Harad Light Footmen
 trp_i4_harad_spearman|Haradský kopiník
 trp_i4_harad_spearman_pl|Haradští kopiníci
 trp_i5_harad_tiger_guard|Tygří strážce
@@ -486,8 +486,8 @@ trp_c2_harondor_scout|Harondorský průzkumník
 trp_c2_harondor_scout_pl|Harondorští průzkumníci
 trp_c3_harondor_rider|Harondorský jezdec
 trp_c3_harondor_rider_pl|Harondorští jezdci
-trp_c4_harondor_light_cavalry|Harondorská lehká kavalérie
-trp_c4_harondor_light_cavalry_pl|Harondorská lehká kavalérie
+; trp_c4_harondor_light_cavalry|Harondor Light Rider
+; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
 trp_c5_harondor_serpent_knight|Rytíř zlatého hada
 trp_c5_harondor_serpent_knight_pl|Rytíři zlatého hada
 trp_ac3_harondor_skirmisher|Harondorský harcovník
@@ -526,8 +526,8 @@ trp_i2_khand_pit_dog|Khandský jámový pes
 trp_i2_khand_pit_dog_pl|Khandští jámoví psi
 trp_i3_khand_warrior|Khandský válečník
 trp_i3_khand_warrior_pl|Khandští válečníci
-trp_i4_khand_vet_warrior|Variagský zkušený válečník
-trp_i4_khand_vet_warrior_pl|Variagští zkušení válečníci
+; trp_i4_khand_vet_warrior|Khand Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Khand Veteran Warriors
 trp_i5_khand_war_master|Variagský mistr války
 trp_i5_khand_war_master_pl|Variagští mistři války
 trp_c2_khand_pony_rider|Khandský jezdec na poníkovi
@@ -536,18 +536,18 @@ trp_c3_khand_horseman|Khandský jezdec
 trp_c3_khand_horseman_pl|Khandští jezdci
 trp_c4_khand_heavy_horseman|Khandský těžký jezdec
 trp_c4_khand_heavy_horseman_pl|Khandští těžcí jezdci
-trp_c5_khand_kataphrakt|Variagský kataphrakt
-trp_c5_khand_kataphrakt_pl|Variagští kataphrakti
-trp_c5_khand_lance_kataphrakt|Variagský kataphrakt s kopím
-trp_c5_khand_lance_kataphrakt_pl|Variagští kataphrakti s kopím
+; trp_c5_khand_kataphrakt|Variag Ironclad
+; trp_c5_khand_kataphrakt_pl|Variag Ironclads
+; trp_c5_khand_lance_kataphrakt|Variag Lancer
+; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
 trp_i4_khand_halberdier|Khandský kůsijník
 trp_i4_khand_halberdier_pl|Khandští kůsijníci
-trp_i5_khand_halberd_master|Khandský mistr halapartník
-trp_i5_khand_halberd_master_pl|Khandští mistři halapartníci
+; trp_i5_khand_halberd_master|Variag Halberd Master
+; trp_i5_khand_halberd_master_pl|Variag Halberd Masters
 trp_i3_khand_pitfighter|Khandský bojovník v jámě
 trp_i3_khand_pitfighter_pl|Khandští bojovníci v jámě
-trp_i4_khand_pit_champion|Variagský šampion arény
-trp_i4_khand_pit_champion_pl|Variagští šampioni arény
+; trp_i4_khand_pit_champion|Khand Pit Champion
+; trp_i4_khand_pit_champion_pl|Khand Pit Champions
 trp_i5_khand_pit_master|Variagský mistr arény
 trp_i5_khand_pit_master_pl|Variagští mistři arény
 trp_ac3_khand_skirmisher|Khandský harcovník
@@ -1588,6 +1588,28 @@ trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_werewolf|Vlkodlak
 trp_werewolf_pl|Vlkodlaci
+trp_moria_troll|Jeskynní Trol
+trp_moria_troll_pl|Jeskynní Trolové
+; trp_moria_vet_troll|Trained Cave Troll
+; trp_moria_vet_troll_pl|Trained Cave Trolls
+; trp_moria_armored_troll|Armored Cave Troll
+; trp_moria_armored_troll_pl|Armored Cave Trolls
+; trp_gunda_troll|Mountain Troll
+; trp_gunda_troll_pl|Mountain Troll
+; trp_gunda_vet_troll|Trained Mountain Troll
+; trp_gunda_vet_troll_pl|Trained Mountain Trolls
+; trp_isen_troll|Isengard Troll
+; trp_isen_troll_pl|Isengard Trolls
+; trp_isen_vet_troll|Isengard Trained Troll
+; trp_isen_vet_troll_pl|Isengard Trained Troll
+; trp_isen_armoured_troll|Isengard Armored Troll
+; trp_isen_armoured_troll_pl|Isengard Armored Trolls
+; trp_mordor_troll|Mordor Troll
+; trp_mordor_troll_pl|Mordor Trolls
+; trp_mordor_vet_troll|Mordor Trained Troll
+; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_mordor_olog_hai|Mordorský Olog Hai 
+trp_mordor_olog_hai_pl|Mordorský Olog Hai 
 trp_mountain_goblin2|Horský goblin
 trp_mountain_goblin2_pl|Horští goblini
 trp_tribal_orc2|Kmenový skřet

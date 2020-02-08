@@ -4,14 +4,14 @@ dlga_mutiny_pretalk_2:close_window|へえ、おおせのとおりに、指揮官
 dlga_start:mutiny_talk_1|なあ、指揮官どの。 話があるんだけどさ・・・ みんなだいぶ機嫌が悪いぜ、 大大不機嫌だ！^ろくに人間の肉は食べれないし、 楽しいこともあんまりない。^みんなあんたは無能だって言ってるぜ、 指揮官どの！
 dlga_mutiny_talk_1:mutiny_talk_2|なんだと？上官に逆らおうというのか？^死をもって償わせるぞ、このウジ虫めが！
 dlga_mutiny_talk_2:close_window|それで、話があるんだけどさ・・・^みんな俺が指揮官どのになればいいって言うんだ・・・ あんたを殺してな！
-dlga_start:troll_introduce_1|Problem?
-dlga_start:troll_talk_1|U mad?
+dlga_start:troll_introduce_1|何だ？
+dlga_start:troll_talk_1|死にたいのか？
 dlga_troll_introduce_1:troll_goodbye|えっ！トロルがしゃべった？！
-dlga_troll_introduce_1:close_window|I own a horse.
-dlga_troll_talk_1:troll_talk_2|Troll me, troll.
-dlga_troll_talk_1:close_window|I own a horse.
-dlga_troll_talk_2:troll_talk_3|Challenge accepted!^^{s4}
-dlga_troll_beaten:troll_talk_1|I bow to your wisdom, Master Baiter of Trolls!
+dlga_troll_introduce_1:close_window|はいじゃあ帰ります。
+dlga_troll_talk_1:troll_talk_2|おいトロル何か言えよトロル。
+dlga_troll_talk_1:close_window|はいじゃあ帰ります。
+dlga_troll_talk_2:troll_talk_3|相手してやろう！^^{s4}
+dlga_troll_beaten:troll_talk_1|おまえは賢いな、トロルでは勝てんわ！
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|やあ、また会ったね、 {playername}！
 dlga_start:hobbit_pippin_talk_met|やあ、また会ったね、 {playername}！
@@ -48,7 +48,7 @@ dlga_treebeard_introduce_5:treebeard_questtalk|(四肢のこわばった巨人�
 dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?さきほど話したように・・・:フゥゥゥム・・・おまえの礼儀正しい態度は好ましい。^{reg1?おまえの種族にしてはめずらしい事だ:再びエルフと話す事ができるのはうれしく思う}。}^エントの女たちがいなくなって以来、時勢はよくない。^冥王によって放たれた、よこしまな生き物たちが、我らの住みかを^破壊しようとしている。素早く、かつあわて者ではない者が必要だ。^我々が次の手を話合っている間、我々を助けてくれる者が必要だ。^たくさんのオークの群れが森に侵入し、火の矢によって木々を^焼き払っている。もしオークたちを退治し、木々への脅威を^取り除いてくれれば、我々は大いに感謝し、おまえを真の友人と^するだろう。オークを退治してくれたら、また話をしよう。
 dlga_treebeard_quest_brief:close_window|オークはまったく下劣な生き物だ。やつらが二度と森に危害を加えないよう、懲らしめてこよう。
 dlga_treebeard_quest_brief:treebeard_pretalk|申し訳ないが、今はこのような事にかまけるわけにはいかないのだ。
-dlga_treebeard_questtalk:close_window|(エントの長老はゆっくりと口を開き、他のエントたちもあなたに^視線を落として、かすかに地面を揺らす、ゆっくりと長く、^深い音を発した。エントたちは笑っているのだ、とあなたは思った。^比較的若い、ナナカマドの木に似たエントが、つま先の七つついた^彼の大きな足で地面を踏みつけると、地面が揺れ、あなたは^あやうく尻餅をつきそうになった。^「待て、せっかち、このわれらの友人の若い戦士が怪我をしたら^どうする。フゥゥゥム・・・わしは木のひげ、エントの最長老だ。^おまえの助けには皆、感謝している・・・フゥゥゥム・・・^今回の成功を祝って、エント水をおまえに贈ろう。」
+dlga_treebeard_questtalk:close_window|(エントの長老はゆっくりと口を開き、他のエントたちもあなたに^視線を落として、かすかに地面を揺らす、ゆっくりと長く、^深い音を発した。エントたちは笑っているのだ、とあなたは思った。^比較的若い、ナナカマドの木に似たエントが、つま先の七つついた^彼の大きな足で地面を踏みつけると、地面が揺れ、あなたは^あやうく尻餅をつきそうになった。^「待て、せっかち、このわれらの友人の若い戦士が怪我をしたら^どうする。フゥゥゥム・・・わしは木の鬚、エントの最長老だ。^おまえの助けには皆、感謝している・・・フゥゥゥム・・・^今回の成功を祝って、エント水をおまえに贈ろう。」
 dlga_treebeard_questtalk:close_window.1|(四肢のこわばった巨人と彼の同胞のエントたちは、そよ風が^彼らの髪やひげをなびかせるにまかせながら、沈黙を保って^立っていた。)
 dlga_treebeard_pretalk:treebeard_talk_response|フゥゥゥム・・・何が知りたいのだ、若い友人よ？
 dlga_treebeard_talk_response:treebeard_about_himself|あなたについてもっと知りたい。
@@ -56,7 +56,7 @@ dlga_treebeard_talk_response:treebeard_about_entwives|エントの女につい�
 dlga_treebeard_talk_response:treebeard_about_ents|エントについて知りたい。
 dlga_treebeard_talk_response:close_window|なんでもない。さようなら。
 dlga_treebeard_about_himself:treebeard_pretalk|(エントの長老は姿勢を正し、荘厳にかまえた。しばらくすると、^彼はゆっくりと話した)^「あわてる必要はない・・・その事については、この森が^オークの脅威から解放された後に話そう。」
-dlga_treebeard_about_himself:treebeard_pretalk.1|フゥゥゥム・・・わしはエントの最長老・・・何人かの人間には^木のひげとして知られ、エルフはわしをファンゴルンと呼ぶ。^フゥムムム・・・わしと木の皮肌、それに木の葉髪は、^暗闇の時代よりも前からこの森に生きている。わしの体はもう、^以前のようには動かないが・・・若いせっかちなどは、風になびく^細い木のように体を折り曲げる事ができる・・・フゥムムム・・・^エントの女さえおればのう・・・
+dlga_treebeard_about_himself:treebeard_pretalk.1|フゥゥゥム・・・わしはエントの最長老・・・何人かの人間には^木の鬚として知られ、エルフはわしをファンゴルンと呼ぶ。^フゥムムム・・・わしと木の皮肌、それに木の葉髪は、^暗闇の時代よりも前からこの森に生きている。わしの体はもう、^以前のようには動かないが・・・若いせっかちなどは、風になびく^細い木のように体を折り曲げる事ができる・・・フゥムムム・・・^エントの女さえおればのう・・・
 dlga_treebeard_about_entwives:treebeard_pretalk|(エントの長老は急に悲しげな表情を見せ、彼の声色は一段と^深くなった。)^「フゥムムム・・・これは悲しい話でな・・・この森からオークが^いなくなったら、話そう。」
 dlga_treebeard_about_entwives:treebeard_pretalk.1|アフゥムムム・・・美しきエントの女たち・・・彼女たちは植物を^植え、育てるのが好きだった・・・わしらは、彼女らの言う事に、^もっと耳を傾けるべきだった・・・フルゥゥゥム・・・彼女らは、^庭園をつくるために茶色の国へ行き、人間たちに肥沃な土地を^つくるすべを教えた・・・わしらもよく訪れたものだが・・・^そのうち、サウロンが襲ってきたのだ・・・エントの女は^いなくなってしまった・・・フゥムムム・・・^たおやかなぶな娘・・・彼女の熟れた木肌の色合い・・・わしらは^探し回った・・・しかし、見つける事ができない・・・いまだに・・・
 dlga_treebeard_about_ents:treebeard_pretalk|フルゥゥゥム・・・わしらは木々の世話人で、彼らを危険から^守っているのだ。わしらはどの人間の種族よりも古いが、わしらを^しゃべれるように治療してくれたエルフたちほどではない。長い^時間が流れるにつれ、さまざまな事が変わった。はじめの頃は、^わしらももっとあわて者で、柔軟性があった。時とともにわしらの^仲間の多くは失われていった。わしらのうちのいくらかは^活気のあるエントであり続けるが、多くは眠り続けるようになり、^おまえたちが木と呼ぶものにふさわしい姿になってしまった。^ほとんどの木はもちろんただの木だが、そのうちの多くは半分^起きているのだ。いくらかははっきりとした意識を持っていて、^いくらかは、いうならば、エントのように変化しつつある。これは^いつもの事だ。木によっては、好ましくない性質をもっている事が^ある。しかし、わしらはわしらに出来る事をするだけだ。侵入者や^おろか者たちを遠ざけ、鍛え、教え、歩き、雑草取りをするのだ。
@@ -86,7 +86,7 @@ dlga_member_scout_1:close_window.1|ちょっと待って{くれ/}、まだ{だ/�
 dlga_do_member_trade:member_talk|他にご用件は？
 dlga_member_chat_00:member_talk|{s5}、ご用件は？
 dlga_member_talk:member_trade|装備を確認させて欲しい。
-dlga_member_trade:do_member_trade|申し訳ないが、これらの装備は 他人にさわらせるわけにはいかないのだ。
+dlga_member_trade:do_member_trade|申し訳ないが、これらの装備は 他の者にさわらせるわけにはいかないのだ。
 dlga_member_trade:do_member_trade.1|さあ、どうぞ・・・
 dlga_member_talk:view_member_char_requested|スキルについて確認したい。
 dlga_view_member_char_requested:do_member_view_char|わかりました、説明しましょう・・・
@@ -111,7 +111,7 @@ dlga_member_background_recap_3:do_member_trade|その後はご存じの通り。
 dlga_do_member_view_char:member_talk|他に何か？
 dlga_start:close_window.6|あなたの準備が整い次第、出発しましょう。
 dlga_start:close_window.7|今日はもう勘弁してもらいたい。 またこんど会いましょう。
-dlga_companion_recruit_signup_response:close_window|残念だけれど、今はこれ以上、 パーティの人数を増やせない{んだ/の}。
+dlga_companion_recruit_signup_response:close_window|残念だ{が/けれど}、今はこれ以上パーティの兵数を増やせないの{だ/}。
 dlga_companion_recruit_rank:close_window|どうやら、あなたはこの辺りでは 今ひとつ尊敬されていないようです、 {playername}殿。 今のあなたは{s29}ですが、 私を部下にするには{s24}になる必要があります [あと{reg3}のランクポイントが必要です]。^もう少しあなたが実績を積んだらまた会いましょう。
 dlga_companion_recruit_rank:companion_recruit_payment.1|今や{s29}となられたあなたに誘われれば、 私も断る理由はありません。
 dlga_companion_recruit_payment_response:close_window|では仕方ない{な/わね}。
@@ -129,11 +129,11 @@ dlga_companion_was_dismissed:companion_rehire|{s5}。 また一緒に旅をし�
 dlga_companion_rehire:companion_recruit_signup_confirm|おかえり、わが友人！
 dlga_companion_rehire:companion_rehire_refused|せっかくだ{が/けど}、これ以上は連れて行けない{んだ/の}。
 dlga_companion_rehire_refused:close_window|そうか・・・また気が変わったら声をかけてくださいね？
-dlga_event_triggered:ziggy_ask_prisoners|指揮官どの、少々よろしいか。おぬしは敵勢を打ち破り、いくらかの^捕虜を手に入れた。結構な事じゃ。わしから素晴らしい贈り物が^あるのじゃが、それと引き換えに頼み事がある。捕虜のうちの一人を、^わしにゆずってもらいたい。
+dlga_event_triggered:ziggy_ask_prisoners|指揮官どの、少々よろしいか。おぬしは敵勢を打ち破り、いくらかの^捕虜を手に入れた。結構な事じゃ。わしから素晴らしい贈り物が^あるのじゃが、それと引き換えに頼み事がある。捕虜のうちの一名を、^わしにゆずってもらいたい。
 dlga_event_triggered:ziggy_ask_prisoners.1|指揮官どの、このたびの勝利に祝いを申し上げる。もし先日の話を^覚えておるならば、わしに捕虜の使い道がある事を知っておろう。^指揮官どの、約束しよう、これはおぬしにとって非常な益となる話じゃ。
 dlga_ziggy_ask_prisoners:ziggy_ask_why|謎めいた話はもうたくさんだ、ジグールフェル！ はっきりと言ってくれ！捕虜をどうするつもりなのだ？
 dlga_ziggy_ask_why:ziggy_reason|指揮官どの、そう慌てるものではない！わしの些細な要求さえ満たして^くれれば、わしの手による不思議をご覧に入れよう。
-dlga_ziggy_reason:ziggy_yes|おもしろそうだな。いいだろう。捕虜のうちの一人を、おまえの・・・保護にまかせよう。
+dlga_ziggy_reason:ziggy_yes|おもしろそうだな。いいだろう。捕虜のうちの一名を、おまえの・・・保護にまかせよう。
 dlga_ziggy_reason:ziggy_no|ジグールフェル、今回はあきらめろ。持ち場へ戻れ。
 dlga_ziggy_no:close_window|承知した、指揮官どの。しかしわれらが贈り物をなげうつのは、^愚かであるぞ。
 dlga_ziggy_no:close_window.1|指揮官どの、承知した。
@@ -211,7 +211,7 @@ dlga_lord_meet_neutral:lord_intro.1|私の名は{playername}です。 なんな�
 dlga_lord_meet_enemy:lord_intro|私は{playername}。
 dlga_lord_meet_enemy:lord_intro.1|我が名は{playername}。 覚えておくがいい、 この先、 嫌というほど耳にすることになろう。
 dlga_start:lord_start.3|おや、{playername}・・・
-dlga_lord_start:lord_generic_mission_completed|おぬしの軍医は、我が友人に手術を受ける決意をさせる事に成功した。 あとは我が友人が順調に回復することを祈るばかりだ。 ともあれ、{playername}よ、 軍医を貸してくれたことに感謝する。おぬしは気高い心を持っている。 私は忘れることはないぞ。
+dlga_lord_start:lord_generic_mission_completed|おぬしの軍医は、我が友に手術を受ける決意をさせる事に成功した。 あとは我が友が順調に回復することを祈るばかりだ。 ともあれ、{playername}よ、 軍医を貸してくれたことに感謝する。おぬしは気高い心を持っている。 私は忘れることはないぞ。
 dlga_lord_start:lord_investigate_fangorn_completed0|{playername}、 どうやらファンゴルンの森から帰ってきたようだな。 何か発見はあったか？
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|木が生きているのです！ 我々の兵を攻撃してきました！
 dlga_lord_investigate_fangorn_completed1:close_window|常々、そうではないかと考えておった。 おぬしはよくやってくれた、{playername}。
@@ -248,8 +248,8 @@ dlga_lord_start:kill_quest_failed|任務に失敗したそうだな。 失望し
 dlga_lord_start:lord_generic_mission_completed.6|{playername}よ。 おぬしの部下たちは、 おぬしの勇敢さをその目に焼き付けたようだ。 私も敬意を表する。
 dlga_kill_quest_failed:close_window|もうこのような事がないように致します。
 dlga_lord_start:lord_follow_spy_completed|{s4}
-dlga_lord_start:lord_follow_spy_half_completed|なんということだ、愚か者め！ 私は二人を捕らえよと言ったはずだ、 {playername}。 これではほとんど意味がない！ 間者がかき集めた情報については、 私は完全に把握しているのだ。 私が狙っていたのは、 連絡係なのだ。 さあ、仕事が半分なら報酬も半分だ。 受け取ったら出て行け。
-dlga_lord_start:lord_follow_spy_half_completed.1|私は、ふたり捕らえよ、といったはずだ、{playername}。 ひとりではない。ふたりだ。 少なくとも、 より重要であった連絡係のほうを捕らえてきたのは 評価してやろう。 あの間者はもう二度と ここへ戻る事はないであろう。 やつの主人が誰なのかは知らぬが、 もうあの間者の使い道はないであろうな。 まあ一応の成果は出たと言えよう。 しかし、 おぬしへの報酬は半分だ。 それで納得せよ。
+dlga_lord_start:lord_follow_spy_half_completed|なんということだ、愚か者め！ 私は二名を捕らえよと言ったはずだ、 {playername}。 これではほとんど意味がない！ 間者がかき集めた情報については、 私は完全に把握しているのだ。 私が狙っていたのは、 連絡係なのだ。 さあ、仕事が半分なら報酬も半分だ。 受け取ったら出て行け。
+dlga_lord_start:lord_follow_spy_half_completed.1|私は、二名を捕らえよ、といったはずだ、{playername}。 一名ではない。二名だ。 少なくとも、 より重要であった連絡係のほうを捕らえてきたのは 評価してやろう。 あの間者はもう二度と ここへ戻る事はないであろう。 やつの主人が誰なのかは知らぬが、 もうあの間者の使い道はないであろうな。 まあ一応の成果は出たと言えよう。 しかし、 おぬしへの報酬は半分だ。 それで納得せよ。
 dlga_lord_start:lord_follow_spy_failed|まったく、{playername}、 おぬしはまったくの役立たずだ。 間者も連絡係も両方取り逃がすとは、 これほどの失態は聞いた事がないわ。 報酬の話などは忘れるがよい。 おぬしにくれてやる物などない。
 dlga_lord_follow_spy_half_completed:lord_pretalk|私は精一杯やったつもりです、{s65}。
 dlga_lord_follow_spy_completed:lord_pretalk|ありがとうございます、{s65}。
@@ -299,12 +299,12 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_deny|恐れ入りますが、彼には�
 dlga_lord_buy_prisoner_accept:lord_pretalk|素晴らしい！ 我が部下が急いで牢獄まで護送しよう。 これで我が軍は優位に立てるはずだ。
 dlga_lord_buy_prisoner_deny:lord_pretalk|それは残念だ、 彼は我が軍にとって大きな意味を持つはずなのにのう、 {playername}。
 dlga_tld_intro_1:lord_pretalk|戦争について:^^- 各勢力は十分な力を持ったときだけ、 包囲攻城戦を仕掛けます。^- ほとんどの拠点において、 包囲攻撃を受けるのは所属する勢力の力が^十分に弱まったときだけです。 通常は、 首都は一番最後に攻撃を受けます。^- 首都を失うか、または勢力ポイントが下限に達した勢力は 敗北します。^- 勢力ポイントは戦いで勝利を収めること、 それと主要な拠点を維持することで上がります。^- 戦いで敗北するか、または拠点を失うと、勢力ポイントは下がります。^- クエストやイベントが勢力ポイントに影響を与えることもあります。^- 勢力ポイントは「レポート」メニューから確認できます。^- 詳細はゲーム概要を見てください。
-dlga_lord_start:lord_pretalk|ああ、{s24}よ、よく来てくれた。^おぬしも知っての通り、{s12}。^{playername}よ、おぬしの任務は、我々の戦いの手伝いだ。^おぬしが私の信頼するに足る者であると証明できれば[レベル{reg1}]、^そこにある箱の使用を許可しよう。個人的な所有物の保管に使うがよい。
+dlga_lord_start:lord_pretalk|ああ、{s24}よ、よく来てくれた。^おぬしも知っての通り、{s12}。^{playername}よ、おぬしの任務は、我々の戦いの手伝いだ。^おぬしが私の信頼するに足る者であると証明できれば[レベル{reg1}]、^そこにある箱の使用を許可しよう。私的な所有物の保管に使うがよい。
 dlga_lord_start:lord_talk|何の用だ？
 dlga_lord_pretalk:lord_talk|他に何か？
 dlga_lord_talk:lord_lend_companion_end|{s65}、 我が部下の{s14}の事ですが、 もし用事が済んでいるのでしたら、 {reg3?彼女:彼}をお返し願いたい。
-dlga_lord_lend_companion_end:lord_pretalk|おぬしの部隊はもうこれ以上人数を増やせないようだ、 {playername}。
-dlga_lord_lend_companion_end:lord_pretalk.1|もちろんだ、{playername}。 {reg3?彼女:彼}のような優秀な{reg3?女:男}を配下に持てて、 おぬしは幸運な指揮官よな。
+dlga_lord_lend_companion_end:lord_pretalk|{playername}よ、おぬしの部隊はもうこれ以上、 兵を増やせないようだ。
+dlga_lord_lend_companion_end:lord_pretalk.1|{playername}よ、もちろんだ。 あのような優秀な者を配下に持てるとは、 おぬしは幸運な指揮官よな。
 dlga_lord_talk:lord_message_delivered|{s9}より、手紙を預かって参りました。
 dlga_lord_talk:lord_message_delivered_enemy|{s9}より、手紙を預かって参りました。
 dlga_lord_talk:lord_active_mission_1|例の任務の件ですが・・・
@@ -465,11 +465,11 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}よ、 我が�
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|救援するための兵を派遣できないのでしょうか？
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|できるのだが、動員には時間がかかる。間に合わない恐れがあるのだ。^^おぬしの部隊はすぐに動けるようだ。村を守ってくれぬか？
 dlga_lord_mission_defend_question:lord_mission_defend_accept|我が部隊は準備ができています。すぐに出発しましょう。
-dlga_lord_mission_defend_question:lord_mission_defend_reject|残念ながら、現在の我が部隊は人数が足りないようです・・・
+dlga_lord_mission_defend_question:lord_mission_defend_reject|残念ながら、現在の我が部隊は兵の数が足りないようです・・・
 dlga_lord_mission_defend_question:lord_mission_defend_reject.1|申し訳ありませんが、この任務を引き受ける事はできません。
 dlga_lord_mission_defend_accept:close_window|{playername}よ、感謝する。 さあ、すぐに出発してくれ！
 dlga_lord_mission_defend_reject:close_window|そうか。ではいま動かせる兵を派遣するとしよう。 これで間に合ってくれる事を願おう。
-dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}、ほど良く熟れて収穫されるのを待つ村がこの近くにある。 偵察隊の話では{s3}が護衛しておるようだが、 少人数らしいので簡単に始末できるであろう。^^偶然だが、この話を聞かせた最初の指揮官はおぬしだ。 この情報を聞いたおぬしは、一体どうするのだ？
+dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}、ほど良く熟れて収穫されるのを待つ村がこの近くにある。 偵察隊の話では{s3}が護衛しておるようだが、 少数らしいので簡単に始末できるであろう。^^偶然だが、この話を聞かせた最初の指揮官はおぬしだ。 この情報を聞いたおぬしは、一体どうするのだ？
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|村を襲い、男は皆殺し、女と子供は奴隷としてくれよう！
 dlga_lord_mission_raid_village_a:lord_raid_village_reject|この貧弱な戦力で襲撃することはできません・・・
 dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|つまらない村を襲うヒマなどありません！
@@ -523,7 +523,7 @@ dlga_lord_mission_capture_troll_accepted:lord_pretalk|おぬしの強さと勇�
 dlga_lord_tell_mission:lord_tell_mission_kill_troll|このような危機は、我々の世代では聞いた事がない。 {s3}の周辺で、 人々が行方不明になっているのだ。 一般の民だけではない、 調査に行った小規模の部隊にも戻ってこない部隊がある。 いろいろな噂が飛び交っているが、 私は何が起こっているのかを把握している。
 dlga_lord_tell_mission_kill_troll:lord_mission_told|野生のトロルだ、{playername}。 邪悪で奇怪な、 巨大な獣だ。 山にあるはずの奴らの暗いねぐらから こんなところまで這い出て来た事は今までなかったが、 少なくとも一頭が {s3}周辺で目撃されている。 どんな妖術でこのような事態が引き起こされたのかは 分らないが、 あの獣は退治しなければならない。
 dlga_lord_mission_told:lord_mission_kill_troll_info_a|そのような獣と、どうやって戦えばよいのでしょうか？
-dlga_lord_mission_kill_troll_info_a:lord_mission_told|確かにトロルは危険な生き物だ。 奴らのあの盛り上がった筋肉は、 信じがたい破壊力を持っている。 その皮膚は鉄のように硬く、 木の幹をまるで棍棒のように扱う。 聞いた話では、 一頭のトロルの繰り出す一撃で、 6人の精強な兵が簡単に倒されるそうな。 人間だけでなく、 馬もトロルを怖がる。 馬に乗って近づこうというのなら、 じゅうぶん気をつけてくれ。
+dlga_lord_mission_kill_troll_info_a:lord_mission_told|確かにトロルは危険な生き物だ。 奴らのあの盛り上がった筋肉は、 信じがたい破壊力を持っている。 その皮膚は鉄のように硬く、 木の幹をまるで棍棒のように扱う。 聞いた話では、 一頭のトロルの繰り出す一撃で、 六名の精強な兵が簡単に倒されるそうな。 人間だけでなく、 馬もトロルを怖がる。 馬に乗って近づこうというのなら、 じゅうぶん気をつけてくれ。
 dlga_lord_mission_told:lord_mission_kill_troll_info_b|モルドールか、アイゼンガルドから送り込まれたのでしょうか？
 dlga_lord_mission_kill_troll_info_b:lord_mission_told|いや、そうではなかろう。 白の魔法使いも黒の塔もあらゆる種の化け物を飼っているが、 私の受けた報告によると、 {s3}を脅かしているトロルは調教されていない、 野生の獣らしい。気をつけるのだぞ、もしかすると一頭以上、 徘徊しているのかも知れぬ。だが、この新たな脅威は、 まだ世に知られない、 敵の術によって引き起こされたものと考えてよいだろう。
 dlga_lord_tell_mission:lord_mission_investigate_fangorn_0|{playername}、 勇猛で信頼のできる下僕であるおぬしに与えられる任務はこれだ。 ファンゴルンの森に関する、 まことに奇妙な噂を聞いてな。 木材を確保するためにわしの配下の者どもを送り込んでいるのだが、 戻らぬ者があるのだ。 指揮官ごと戻らぬ隊もある。 先日などは、 兵が謎の失踪を遂げたとの報告も受けた。 連中は、 幽霊やら、 木々の精霊やら、 いにしえの呪いやらのせいだと言う・・・ ばかげた話だ！ 臆病者や愚か者の使う、 くだらん言い訳だ！
@@ -555,15 +555,15 @@ dlga_lord_mission_deliver_message_accepted:close_window|それは助かる、 {p
 dlga_lord_mission_deliver_message_rejected:lord_pretalk|そうか、まあよい。 では、他の誰かに頼むとしよう。
 dlga_lord_tell_mission:lord_mission_deliver_message.1|{s4}にいる{s15}の{s13}に この手紙を届けたいのだが、 もし近くに行く事があるのなら、おぬしが届けてくれぬか？ 手紙は40日以内に先方に届けられなくてはならん。
 dlga_lord_tell_mission:lord_mission_told|緊急の任務がある・・・ {s14}にいる指揮官たちに、 我が軍の作戦についての指示を伝える伝令を 送らなければならないのだ。 道中が危険すぎて、 もうすでに何度も出発を取りやめざるを 得なかったのだが、 今度こそなんとしても送り出さなければならない。 そこで、せめて護衛だけはしっかりつけたいのだ。 {playername}、 私の信頼するおぬしが{s14}まで護衛してくれれば、 非常にありがたい。
-dlga_lord_tell_mission:lord_mission_told.1|私と長いつきあいの友人である戦士が、 重い病気なのだ。 古いいくさ傷から病気に感染したらしく、 はやく医者に診せないと、 確実に死んでしまうだろう。 彼は私にとって非常に大切な人物なのだ、 {playername}。 だが彼は猪のような頑固者でな、 ここにいる医者など信用ならんと言い張って、 頑として誰にも傷を見せないのだ。 聞いたところによると、 おぬしの部隊には優秀な医者が同行しているそうな。 {reg3?彼女:彼}ならば、 我が友人に手術を受けるよう 説得する事ができるかも知れん。 頼む、 私のこの頼みを聞いてくれたら、 恩は決して忘れない。
+dlga_lord_tell_mission:lord_mission_told.1|私と長いつきあいの友である戦士が、重い病気なのだ。 古いいくさ傷から病気に感染したらしく、はやく医者に診せないと、 確実に死んでしまうだろう。{playername}よ、 彼は私にとって非常に大切な存在なのだ。だがあの者は 猪のような頑固者でな、ここにいる医者など信用ならんと言い張って、 頑として誰にも傷を見せないのだ。聞いたところによると、 おぬしの部隊には優秀な医者が同行しているそうな。その者ならば、 我が友人に手術を受けるよう説得する事ができるかも知れん。 頼む、私のこの頼みを聞いてくれたら、恩は決して忘れない。
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|どのくらい必要なのですか？
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|{s14}を{reg1}名、 育て上げて私に引き渡してくれれば、 充分であろう。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|よろしいでしょう、{s65}。私に{reg1}名の新兵をお預けください。立派な{s14}に育て上げてご覧に入れましょう。
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|{s65}、いい考えがあります。 新人{reg1}名に、闘技場で私が直接稽古をつけましょう。
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|{s65}、私に考えがあります。 新人{reg1}名に、闘技場で私が直接稽古をつけましょう。 {s14}には足りないでしょうが、そのための 第一歩にはなります。
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|{s65}、いい考えがあります。 新兵{reg1}名に、闘技場で私が直接稽古をつけましょう。
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|{s65}、私に考えがあります。 新兵{reg1}名に、闘技場で私が直接稽古をつけましょう。 {s14}には足りないでしょうが、そのための 第一歩にはなります。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|近頃は他人を訓練してやる暇などありません。
-dlga_lord_mission_raise_troops_accepted:close_window|おぬしのお陰で肩の荷が下りたわ、 {playername}。 我が部隊の曹長に、 新人をおぬしの指揮下へ送るよう、 伝えておこう。 それから、 経費の足しに、 おぬしにいくらか前金を渡しておこう。 さあ、 これで充分であろう。 感謝する。
-dlga_lord_mission_raise_troops_alternate:close_window|{playername}よ、それはおもしろい。 兵長に新人どもを闘技場へ送りだすように言おう。 おぬしも行って、連中をしごき上げてくれ。 見物させてもらおう。 申し出に感謝する。
+dlga_lord_mission_raise_troops_accepted:close_window|おぬしのお陰で肩の荷が下りたわ、 {playername}。 我が部隊の曹長に、 新兵をおぬしの指揮下へ送るよう、 伝えておこう。 それから、 経費の足しに、 おぬしにいくらか前金を渡しておこう。 さあ、 これで充分であろう。 感謝する。
+dlga_lord_mission_raise_troops_alternate:close_window|{playername}よ、それはおもしろい。 兵長に新兵どもを闘技場へ送りだすように言おう。 おぬしも行って、連中をしごき上げてくれ。 見物させてもらおう。 申し出に感謝する。
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|お、そうか。 期待していたのだがな。 まあ仕方あるまい。 ではまたな。
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|おぬし向きの仕事がある。{s4}と呼ばれる、 ならず者がおってな。 私の護衛の者をひとり殺害して以来、裁きを受けずに逃げ続けておるのだ。 最近、奴を{s3}で目撃したという情報があった。 奴を捕らえて速やかに裁きを下してくれれば、報酬を出そう。
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|ではその者を探し出し、然るべき裁きを受けさせましょう。
@@ -574,10 +574,10 @@ dlga_lord_tell_mission:lord_mission_told.2|{s6}へ向かっている途中の難
 dlga_lord_tell_mission:lord_mission_told.3|間者からの報告によれば、 {s6}を目指して移動中の難民がおるそうだ。 やつらの足は遅いだろう。 老い、病に苦しみ、死にかけておるからな。 やつらを襲い、 男どもは皆殺し、 そのほかの者は奴隷とせよ。 目的地には絶対にひとりもたどり着かせてはならぬ！
 dlga_lord_tell_mission:lord_mission_told.4|うむ、{s4}で働かせている 奴隷の一部が逃げ出してな。 情けをかけてやっているというのに、あの恩知らずの豚どもめ！ 聞いたところでは、追手の目をくらまそうというつもりか知らぬが、 連中は三手に分れ、{s3}を目指して 必死に逃げているという。 おぬしには、みっつの群れをすべて捕らえ、 {s4}へ なんとしても引きずり戻してもらいたい。 本来ならばやつらを逃亡の罪で縛り首にしてやりたいところだが、 今はとにかく人手が必要なのだ。むち打ちで勘弁してやらねばならん。
 dlga_lord_tell_mission:lord_tell_mission_follow_spy|信頼できる情報によれば、 この拠点に敵の間者が紛れ込んでいるのだという。 そのふてぶてしさはさっさと捕まえて縛り首にしてやりたいところだが、 その者は近々、 ここを離れて奴の連絡係と接触するらしい。 間者がかき集めた情報を、 そやつが受け取るのだ。 間者には大した価値はないが、 連絡係は危険な男だ。 捕らえる事ができれば、 貴重な情報を吐き出させる事ができるだろう・・・
-dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|おぬしはここで間者が出発するのを待ってもらいたい。 間者が出発したら、 密会場所まで隠密に後を追跡するのだ。 間者に追跡を気付かれるような事があってはならぬ。 気付かれれば、 やつらは密会を取りやめてしまうだろう。 連絡係が現れたら、 やつらを襲撃して捕まえるのだ。 二人を捕らえたら、 ここまで連行してくれ。 生きたままでな。
+dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|おぬしはここで間者が出発するのを待ってもらいたい。 間者が出発したら、 密会場所まで隠密に後を追跡するのだ。 間者に追跡を気付かれるような事があってはならぬ。 気付かれれば、 やつらは密会を取りやめてしまうだろう。 連絡係が現れたら、 やつらを襲撃して捕まえるのだ。 二名を捕らえたら、 ここまで連行してくれ。 生きたままでな。
 dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|承知しました、{s65}。
 dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_rejected|せっかくですが、こそこそするのは性に合いません。
-dlga_lord_tell_mission_follow_spy_accepted:close_window|よし、おぬしの事は信頼しておる。 間者が出発したら、 私の部下が追跡するべき者をおぬしに知らせるだろう。 間違いようがない。 忘れないで欲しいのは、 二人とも捕らえて欲しい、 という事だ。 生きたままでな。
+dlga_lord_tell_mission_follow_spy_accepted:close_window|よし、おぬしの事は信頼しておる。 間者が出発したら、 私の部下が追跡するべき者をおぬしに知らせるだろう。 間違いようがない。 忘れないで欲しいのは、 二名とも捕らえて欲しい、 という事だ。 生きたままでな。
 dlga_lord_tell_mission_follow_spy_rejected:lord_pretalk|それは残念だ。 まあ、好きにするがよい、{playername}・・・
 dlga_lord_tell_mission:lord_tell_mission_capture_enemy_hero|難しい任務がある、 {playername}、 おぬしならうまくやってくれるかも知れぬ。 敵の指揮官をひとり捕まえてきて欲しいのだ。 その後、敵の作戦を吐かせたい。 単純な仕事ではあるが、 どの指揮官にも傍には精鋭の親衛隊がついているだろう。 やってくれるか？
 dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_accepted|期待してお待ち下さい、{s65}。
@@ -616,7 +616,7 @@ dlga_prison_guard_talk:prison_guard_ask_prisoners|誰が牢獄に入れられて
 dlga_prison_guard_talk:prison_guard_visit_prison|捕虜と話がしたい。
 dlga_prison_guard_ask_prisoners:prison_guard_talk|今は{s51}です。
 dlga_prison_guard_visit_prison:close_window|どうぞ、お通りください、指揮官殿。
-dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|捕虜と面会するには、 我々の主人の許可をもらう必要がある。
+dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|捕虜との面会には、我が主人の許可が必要だ。
 dlga_prison_guard_visit_prison_2:close_window|そうか。ではそちらを当たろう。
 dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|かたい事を言{うな/わないで}。ここの主は{君だろう/あなたでしょう}。
 dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|へへ。おっしゃる通りで。 それでも、 あなたをお通しするわけには参りません。
@@ -653,24 +653,24 @@ dlga_request_meeting_4:request_meeting_5|そこで待て。いま取り次ぎの
 dlga_request_meeting_5:request_meeting_6|何の用だ・・・
 dlga_request_meeting_6:close_window|よかろう。{s2}がお会いになるそうだ。
 dlga_request_meeting_6:close_window.1|{s2}はお会いにならぬそうだ。去れ。
-dlga_castle_gate_open:close_window|我らが主、{s2}はおぬしを歓迎する、{指揮官殿/ご婦人}。 中へ入られよ。門を開けて進ぜよう。
+dlga_castle_gate_open:close_window|指揮官殿、我らが主、{s2}はおぬしを歓迎する。 門を開けて進ぜよう。中へ入られよ。
 dlga_castle_gate_open:close_window.1|我らが主、{s2}はただいま不在である。 ただ、おぬしが一晩滞在するのは問題なかろう。 中へ入られよ。門を開けて進ぜよう。
 dlga_castle_gate_open:close_window.2|中へ入られよ。門を開けて進ぜよう。
 dlga_castle_gate_open:close_window.3|中へ入られよ。 ただ、城壁の中ではおとなしくして頂こう。 面倒事を起こされては、 我らが主、{s2}に顔向けできぬ。
 dlga_castle_gate_open:close_window.4|我らが主、{s2}はおぬしがここにいる事を好まぬ。 去れ。
 dlga_start:caravan_help1|助けてくれて感謝する！もう大丈夫だろう。私の名はトアバル。^荷を運んでいたところを襲われたのだ。^^あのような大きなオークを見たことがあるかい？我々でも苦も無く^追い払える、よく見る山の同種とは違う。それに、やつらの^持っていた盾に描かれていたのは、いにしえのモルドールの印だ。^あれを河のこちら側で見た記憶はずいぶん長いことない。^^何か恐ろしい事が起こりつつあるのでは・・・戦争が起こるんだ！^^あなたは近くの町に行って、そこの長にここで見た事を伝えるべきだ。^これは大切な事だ、急いでほしい。
-dlga_caravan_help1:caravan_help2|いいや、こんな大きなオークは見たことがない。最悪だ・・・^^誰もが戦争の兆しを感じているこのご時勢だというのに、 私は兵士をやっている。
-dlga_caravan_help2:caravan_help_tut|君が？ もちろんだとも! 君が素晴らしい戦士だということは知っている。 ^^今日はラッキーだと言わざるを得ない、 この幸運がついてる間に、急いで村に行って、 フォウルビーストの危険をみんなに知らせないと。 ^^さあ、これを渡しておこう。 これは{s10}。
+dlga_caravan_help1:caravan_help2|いいや、こんな大きなオークは見たことがない。 おぞましい生き物だ・・・^^誰もが戦争の兆しを感じているが、私はその来るべき戦争に備える兵士だ。
+dlga_caravan_help2:caravan_help_tut|本当かい？やっぱりそうなのか！ 君が優秀な戦士だということはよく分かったよ。 ^^今日の私はついているに違いない。 この幸運が消えないうちに急いで村に帰って、 汚らわしい獣どもの危険をみんなに知らせないといけない。^^さあ、これを渡しておこう。 これは{s10}。
 dlga_caravan_help_tut:caravan_help3|(リソースポイントについて)^^{s11}で使用できるリソースポイントは{s11}で稼いだものだけで、^あなたの所属勢力で手に入るものとは別です。^^詳細はレポート画面を見てください。
-dlga_caravan_help3:caravan_help4|道中カバンに気をつけて。きっとまた会えるだろう。
+dlga_caravan_help3:caravan_help4|旅の無事を祈るよ。きっとまた会えるだろう。
 dlga_caravan_help4:caravan_help_fac_tut|その時を楽しみにしているよ。私の護衛の連中は間違いなくあなたの^活躍を彼らの主君に報告するだろう。^^彼らの民を何度か助けてやればあなたの名が知られるようになり、^あなたの運も開けていくに違いない！^^私自身がそうで、毎月私の仕事に対する報酬までもらっているんだ！
 dlga_caravan_help_fac_tut:caravan_help5|(ランクポイントについて) ^^ランクポイントであなたが所属する勢力(もしくはそれ以外の勢力)^でのあなたの地位が向上します。^^これはパーティの最大規模と、その勢力で週ごとに得られる^リソースポイントを決めます。また、その他にも勢力特有の^特別報奨をアンロックします。
 dlga_caravan_help5:close_window|覚えておく{よ/わ}。ありがとうトアバル、無事を祈る{/わ}。
 dlga_start:caravan_attack1|なんだおまえは？おまえの手出しなど無用だ！
 dlga_caravan_attack3:close_window|弱虫だと？弱虫はおまえだ！(難しい)
 dlga_caravan_attack3:close_window.1|好きにしろ、臆病者め。そこらで野垂れ死にするがいい。
-dlga_start:caravan_res_tut1|*声もなく笑う* 機が熟するのを待つ、ってね、戦士どの！^仲間のなかにはあんたなんか大した事ない、なんて言うやつもいるけど、^俺には分かるぜ。ああそうさ、俺はあんたの戦いぶりを見てたんだ。^あんたに勝てるやつなんかいないね！ {s10}^^だけど、俺たちはみんな自分たちの事にしか興味がないんだ。^そうだろ。御目に仕えよ、冥王に仕えよ。はいお仕えいたしますよ、^でも東で手柄をたてたって、南の連中は知らんぷりだ。逆でも同じさ。^御目のために働いた事なんか、白の手はまるで評価しない。^じゃあご老体のために働くと、なぜそんな無駄な事に時間を^費やすのかと、闇の塔はせいぜい考えるだけなのさ！
-dlga_start:caravan_res_tut2|*声もなく笑う* どうやら俺が新しい隊長になったみたいだ。^あんたはすごい、すごい戦士だぜ！戦利品からあんたの取り分は^持っていきなよ。仲間のなかには、あんたがワーグの餌になるほうに^賭けてたやつもいたけど、俺は知ってたぜ。ああそうさ、俺は^あんたの戦いぶりを見てたんだ。あんたに勝てるやつなんかいないね！^^俺たちの仲間や友軍は、あんたの名前を聞く事になるだろう。^間違いないね！あんたに新しい馬だとか、新しい剣だとかをくれるかも^知れない。弱っちいやつになんか誰も興味はないが、強いのは別だ。^ヘヘ！強いのは味方にいて欲しいだろ？ {s10}^^だけど、俺たちはみんな自分たちの事にしか興味がないんだ。^そうだろ。御目に仕えよ、冥王に仕えよ。はいお仕えいたしますよ、^でも東で手柄をたてたって、南の連中は知らんぷりだ。逆でも同じさ。^御目のために働いた事なんか、白の手はまるで評価しない。^じゃあご老体のために働くと、なぜそんな無駄な事に時間を^費やすのかと、闇の塔はせいぜい考えるだけなのさ！
+dlga_start:caravan_res_tut1|*声もなく笑う* 機が熟するのを待つ、ってね、戦士どの！仲間の なかにはあんたなんか大した事ない、なんて言うやつもいるけど、 俺には分かるぜ。ああそうさ、俺はあんたの戦いぶりを見てたんだ。 あんたに勝てるやつなんかいないね！ {s10}^^だけど、俺たちはみんな自分たちの事にしか興味がないんだ。そうだろ。 御目に仕えよ、冥王に仕えよ。でも東で手柄をたてたって、南の連中は 知らんぷりだ。逆でも同じさ。御目のために働いた事なんか白の手はまるで 評価しないし、ご老体のために働いたって闇の塔は無関心なのさ！
+dlga_start:caravan_res_tut2|*声もなく笑う* どうやら俺が新しい隊長になったみたいだ。あんたは すごい、すごい戦士だぜ！戦利品からあんたの取り分は持っていきなよ。 あんたがワーグの餌になるほうに賭けてたやつもいたけど、俺はあんたの 戦いぶりを見てたんだ。あんたに勝てるやつなんかいないね！^^俺の仲間や友軍は、間違いなくあんたの名前を知る事になるだろう。 あんたに新しい馬だとか、新しい剣だとかをくれるかも知れない。 弱っちいやつになんか誰も興味はないが、強いのは別だ。ヘヘ！ 強いのは味方にいて欲しいだろ？ {s10}^^だけど、俺たちはみんな自分たちの事にしか興味がないんだ。そうだろ。 御目に仕えよ、冥王に仕えよ。でも東で手柄をたてたって、南の連中は 知らんぷりだ。逆でも同じさ。御目のために働いた事なんか白の手はまるで 評価しないし、ご老体のために働いたって闇の塔は無関心なのさ！
 dlga_caravan_res_tut1:caravan_noduel|(リソースポイントについて)^^モルドールで取引されているリソースポイントは^モルドールでしか稼げないものであり、^あなたの所属する勢力で手に入るものとは別です。^^さらなる情報はレポートを参照してください。
 dlga_caravan_res_tut2:caravan_duel1|(リソースポイントについて)^^モルドールで取引されているリソースポイントは^モルドールでしか稼げないものであり、^あなたの所属する勢力で手に入るものとは別です。^^さらなる情報はレポートを参照してください。
 dlga_caravan_noduel:caravan_duel2|その気になれば、あの者を殺す事など造作もない！ あの程度の者を相手に証明すべき事など何もないのだ。
@@ -701,9 +701,9 @@ dlga_kill_scout_5:kill_scout_6|へへ！あんたらよそ者はいつもそう�
 dlga_kill_scout_6:kill_scout_7|(ランクポイントについて) ^^ランクポイントであなたが所属する勢力(もしくはそれ以外の勢力)^でのあなたの地位が向上します。^^これはパーティの最大規模と、その勢力で週ごとに得られる^リソースポイントを決めます。また、その他にも勢力特有の^特別報奨をアンロックします。
 dlga_kill_scout_7:kill_scout_8|この汚らしい獣め。私のする事に、おまえなど一切関係はない。 さあ先を急げ！
 dlga_kill_scout_8:close_window|もちろん、仰せの通りに。さあこっちだぜ！
-dlga_woodelf_help_1:woodelf_help_2.1|こんな大きなオークは見たことがない。最悪だ、クソ！俺が震えているだと？これは武者震いだ。私は戦士だ！！
-dlga_woodelf_help_2:woodelf_help_3.1|おまえが？もちろんだとも！お前が力のある戦士だという事は知っている。 今日は本当に幸運な日だ、この幸運の続いている内に村に急ぎ、 人々にファウルビーストの脅威を知らせなければならない。
-dlga_woodelf_help_3:close_window|道中カバンに気をつけて。きっとまた会えるだろう。
+dlga_woodelf_help_1:woodelf_help_2.1|いいや、こんな大きなオークは見たことがない。 おぞましい生き物だ。あわてる事はない。 誰もが戦争の兆しを感じているが、私はその来るべき戦争に備える兵士だ。
+dlga_woodelf_help_2:woodelf_help_3.1|本当かい？やっぱりそうなのか！ 君が優秀な戦士だということはよく分かったよ。 ^^今日の私はついているに違いない。 この幸運が消えないうちに急いで村に帰って、 汚らわしい獣どもの危険をみんなに知らせないといけない。
+dlga_woodelf_help_3:close_window|旅の無事を祈るよ。きっとまた会えるだろう。
 dlga_healers_ask:healer_who|何ができるのか？
 dlga_healers_ask:healer_wound_ask|私と私の部下たちは、このままでは治らない傷を負っているのだ。治療をしてもらえないだろうか？
 dlga_healers_ask:healer_injured_ask|私と私の部下たちは負傷しているのだが、傷が治るまで待っている時間がないのだ。治療できないだろうか？
@@ -724,21 +724,21 @@ dlga_sad_elf_choice:sad_elf_no|闇の力に脅かされる中つ国を、エル�
 dlga_sad_elf_leave:close_window|指揮官殿、ありがとうございます！^^海へ行こう、海へと行こう！白いカモメたちが鳴いている、^風が吹いている、そして白い泡が飛んでいる。^西へ、西へと去ろう、まるい太陽が落ちていく。
 dlga_start:close_window.11|あぶないところであった。 我々の力を合わせ、 敵勢にたっぷりとお礼をしてやろうではないか。
 dlga_start:close_window.12|我々に戦いを挑むとは、 おぬしは大きな間違いを犯そうとしている。
-dlga_start:ally_thanks_meet|きちんとした挨拶を交わすのはこれが初めてであったな、わが友よ。 我ながら、わが命の恩人の名を知らないとは・・・
+dlga_start:ally_thanks_meet|きちんとした挨拶を交わすのはこれが初めてであったな、わが友よ。 我ながら、わが命を救ってくれた者の名を知らないとは・・・
 dlga_start:ally_thanks_meet.1|危ないところの助勢、かたじけない。 私の名は{s1}。 そちらの名前を伺ってもよろしいか？
 dlga_start:ally_thanks_meet.2|助勢を感謝する。 挨拶はまだであったな？ おぬしの名はなんという？
 dlga_ally_thanks_meet:ally_thanks_meet_2|私の名は{playername}です。
 dlga_ally_thanks_meet_2:close_window|会えて光栄だ、{playername}。 私の名は{s1}、 この恩は一生忘れまい。 私に出来る事があれば、ぜひ言ってくれ。
 dlga_ally_thanks_meet_2:close_window.1|会えて光栄だ、{playername}。 今日の恩は忘れまい。 いつの日か、この恩に報いたいものだ。
 dlga_ally_thanks_meet_2:close_window.2|会えて光栄だ、{playername}。 私は{s1}。 おぬしの助勢に感謝する。 また会おう。
-dlga_start:close_window.13|またあぶないところを助けてもらったな、 {playername}！ まったく、おぬしは私の一番の友人だ。 {s43}
+dlga_start:close_window.13|またあぶないところを助けてもらったな、 {playername}！ まったく、おぬしは私の一番の友だ。 {s43}
 dlga_start:close_window.14|おぬしの助勢があと一歩遅かったら、私の命はなかったであろう！ {playername}よ、心より感謝する！ {s43}
 dlga_start:close_window.15|あぶないところを助けてもらったな、 {playername}！ この事は忘れまい。 {s43}
 dlga_start:close_window.16|{playername}、 ここでおぬしに会えるとはうれしい。 {s43}
 dlga_start:close_window.19|助勢を感謝します、指揮官殿。 あなたのおかげで{reg1?我々:私}は命拾いをしました。
 dlga_start:close_window.20|助勢を感謝します、指揮官殿。 あなたが近くにおられるだけで心強く思います。
 dlga_start:close_window.21|助勢を感謝します、指揮官殿。 あなたが近くにおられたのは我らの幸運でした。
-dlga_start:freed_hero_answer|解放してくれて助かった。 わが友人よ、恩に着る。
+dlga_start:freed_hero_answer|解放してくれて助かった。 わが友よ、恩に着る。
 dlga_freed_hero_answer:freed_hero_answer_1|解放したのではない。 おまえは我が捕虜となったのだ！
 dlga_freed_hero_answer_1:close_window|なんと。我らの運も尽きたのか？
 dlga_freed_hero_answer:freed_hero_answer_2|どこへなりと行かれよ、{s65}。
@@ -754,8 +754,8 @@ dlga_defeat_hero_answer_2:close_window|また会おう。
 dlga_start:fugitive_1|何だ、何か用かい？
 dlga_fugitive_1:fugitive_2|{s4}という名のおたずね者を探している。おまえはその者と特徴が一致するのだ。
 dlga_fugitive_1:close_window|なんでもない。邪魔をしたな。
-dlga_fugitive_2:fugitive_3|何のことだ、俺は知らないぞ。人違いだろう。
-dlga_fugitive_3:fugitive_4|では武器を地面に落とせ。 身に覚えがないのなら、 恐れる理由はないはずだ。 警備隊長のところまで私に同行してもらおう。 私が人違いをしているかどうか、 確認を取る。
+dlga_fugitive_2:fugitive_3|何のことだ、俺は知らないぞ。勘違いだろう。
+dlga_fugitive_3:fugitive_4|では武器を地面に落とせ。 身に覚えがないのなら、 恐れる理由はないはずだ。 警備隊長のところまで私に同行してもらおう。 私が勘違いをしているかどうか、 確認を取る。
 dlga_fugitive_4:close_window|くそっ！てめえにはここで死んでもらう！
 dlga_start:follow_spy_talk|やあ、こんにちは。 今日は本当に良い天気だと思いませんか？ さて、話込むわけにも参りませんので、 私はこれで失礼させていただきます。
 dlga_follow_spy_talk:follow_spy_talk_2|{s1}の名において、おまえを逮捕する！
@@ -814,20 +814,20 @@ dlga_trainer_explain_attack_3:trainer_explain_attack_4|いい戦法ですが、 
 dlga_trainer_explain_attack_4:trainer_explain_attack_5|もし相手が自分の攻撃方向に対して防御の姿勢をとっている場合は、 攻撃を中断して別の攻撃方向を選択する必要がある、と。
 dlga_trainer_explain_attack_5:trainer_combat_pretalk|そうです、 攻撃方向の選択は、 極めて重要な技術です。 攻撃方向には4種類あります。 右へのなぎ払い、 左へのなぎ払い、 上段からの振り下ろし、 そして突きです。 これらはよく考えて選択しなければならない。 [振りの方向を選択するには、 デフォルトの設定ではマウスの左ボタンを押す直前に、 武器の攻撃方向へマウスを移動させます]。
 dlga_trainer_explain_horseback:trainer_combat_pretalk|非常に良い質問です。 馬は戦士にとって、 戦闘をするうえでの最強の武器でしょう。 馬によって移動速度、 高さ、 破壊力、 それと主導権を手に入れることができる。 多くの武器は、 馬上で使うことによってその破壊力を大いに増します。 しかしながら、 相手が馬上にてランスを構えていた場合、 そのどんな相手も一撃必殺の破壊力には、 特に注意を要します。 [ランスを構えるには、 ランスかそれと同等の武器を装備し、 攻撃ボタンも防御ボタンも押さずに馬を走らせます。 ある一定の速度に達すると、 あなたは自然にランスを低く構えます。 そうしたら、 馬を操作してランスを敵に当ててください。]
-dlga_trainer_choose_mode:trainer_choose_mode_player|兵士たちの技術向上のために、 ここでは訓練にいくつかの種類を用意しています。 一本勝負では、 あなたひとりで一人から四人の相手をしていただきます。 団体戦では、 お互い4人から12人づつ二手に分かれて戦います。 最後に、 ガントレットと呼ばれる、 戦士にとって最大の挑戦と言える訓練があります。 あなたひとりで対戦相手の波をさばいてもらいますが、 回を追うごとに相手の人数が増えていきます。 大勢での殴り合いは、 単なる入り乱れての大喧嘩です。^どれにしますか？
+dlga_trainer_choose_mode:trainer_choose_mode_player|兵士たちの技術向上のために、 ここでは訓練にいくつかの種類を用意しています。 一本勝負では、 あなただけで一名から四名の相手をしていただきます。 団体戦では、 お互い四名から十二名づつ、二手に分かれて戦います。 最後に、 ガントレットと呼ばれる、 戦士にとって最大の挑戦と言える訓練があります。 あなたひとりで対戦相手の波をさばいてもらいますが、 回を追うごとに相手の人数が増えていきます。 大勢での殴り合いは、 単なる入り乱れての大喧嘩です。^どれにしますか？
 dlga_trainer_choose_mode_player:trainer_choose_opponents|一本勝負
 dlga_trainer_choose_mode_player:trainer_choose_opponents.1|団体戦
 dlga_trainer_choose_mode_player:trainer_choose_weapon|ガントレット
 dlga_trainer_choose_mode_player:trainer_choose_weapon.1|大勢での殴り合い
 dlga_trainer_choose_mode_player:trainer_pretalk|どれも結構。気が変わった。
-dlga_trainer_choose_opponents:trainer_choose_opponents_player|では対戦相手の人数を選んでいただこう。
-dlga_trainer_choose_opponents_player:trainer_choose_weapon|ひとり
-dlga_trainer_choose_opponents_player:trainer_choose_weapon.1|ふたり
-dlga_trainer_choose_opponents_player:trainer_choose_weapon.2|3人
-dlga_trainer_choose_opponents_player:trainer_choose_weapon.3|4人。今日はツキがある。
-dlga_trainer_choose_opponents_player:trainer_choose_weapon.4|4人
-dlga_trainer_choose_opponents_player:trainer_choose_weapon.5|8人
-dlga_trainer_choose_opponents_player:trainer_choose_weapon.6|12人、私とコンパニオンは無敵だ。
+dlga_trainer_choose_opponents:trainer_choose_opponents_player|では対戦相手の数を選んでいただこう。
+dlga_trainer_choose_opponents_player:trainer_choose_weapon|一名
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.1|二名
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.2|三名
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.3|四名。今日はツキがある。
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.4|四名
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.5|八名
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.6|十二名。私とコンパニオンは無敵だ。
 dlga_trainer_choose_opponents_player:trainer_pretalk|ちょっと待ってくれ、気が変わった。
 dlga_trainer_choose_weapon:trainer_choose_weapon_player|最後に、好きな武器の種類を選んでいただこう。
 dlga_trainer_choose_weapon_player:trainer_begin_training|片手武器
@@ -921,7 +921,7 @@ dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|今は少々、忙�
 dlga_merchant_quest_requested:merchant_quest_brief.7|ありがたい。補給隊の護衛を探していたのだ。あなたなら・・・
 dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|我々は{s8}へ補給隊を送る予定なのですが、^敵の偵察隊がうろついているなか、普段の護衛だけでは心許ありません。^最低でもあと{reg4}名からなる一隊を護衛につければ^大丈夫だろうと考えています。補給隊が7日以内に{s8}に^無事到着するよう、護衛していただけますか？^^[{s14}のリソースポイントを{reg14}稼ぐことができます]
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|いいだろう。その補給隊を護衛する。
-dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|残念だが、我が部隊は護衛できるほどの人数ではないのだ。
+dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|残念だが、我が部隊は護衛できるほどの兵数ではないのだ。
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|すまないが、今は引き受けられない。
 dlga_start:close_window.23|ここからはもう我々だけで大丈夫です。感謝します。
 dlga_start:close_window.24|やあ、もう{s21}まですぐですね。 ここからはもう我々だけで大丈夫です。 ここまでの護衛を感謝します。 あなたに幸運あれ。^^[{s14}のリソースポイントを{reg14}獲得しました]
@@ -938,8 +938,8 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|そのゴブリンの�
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|了解した。そのゴブリンどもを退治しよう。
 dlga_merchant_quest_taken_bandits:close_window|やってくれますか？ありがたい。 幸運を祈ります。
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|残念{だ/ね}。今はこの仕事を引き受ける余裕がない{/のよ}。
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|もちろんあります！ この辺を荒らしまわる、 ごろつきゴブリンどもの一団がいて、 我々の手に負えないんです。 やつらは夜の闇にまぎれて 酔っ払いなどを襲って金目の物を奪い、 衛兵が駆けつける頃には 素早く姿を消してしまうのです。 我々はまだ一匹も捕まえることができていません。 やつらは獲物が一人のときだけを狙い、 複数がいる場合は絶対に姿を現さないのです。 たったひとりでゴブリンどもを倒せる猛者が必要なのです。 それ以外に解決方法があるとは思えません。 やって頂けますか？
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|この辺を荒らしまわる、 ごろつきゴブリンどもの一団がいて、 我々の手に負えないんです。 やつらは夜の闇にまぎれて 酔っ払いなどを襲って金目の物を奪い、 衛兵が駆けつける頃には 素早く姿を消してしまうのです。 我々はまだ一匹も捕まえることができていません。 やつらは獲物が一人のときだけを狙い、 複数がいる場合は絶対に姿を現さないのです。 たったひとりでゴブリンどもを倒せる猛者が必要なのです。 それ以外に解決方法があるとは思えません。 やって頂けますか？
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|もちろんあります！ この辺を荒らしまわる、 ごろつきゴブリンどもの一団がいて、 我々の手に負えないんです。 やつらは夜の闇にまぎれて 酔っ払いなどを襲って金目の物を奪い、 衛兵が駆けつける頃には 素早く姿を消してしまうのです。 我々はまだ一匹も捕まえることができていません。 やつらは獲物が単独であるときだけを狙い、 複数がいる場合は絶対に姿を現さないのです。 たったひとりでゴブリンどもを倒せる猛者が必要なのです。 それ以外に解決方法があるとは思えません。 やって頂けますか？
+dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|この辺を荒らしまわる、 ごろつきゴブリンどもの一団がいて、 我々の手に負えないんです。 やつらは夜の闇にまぎれて 酔っ払いなどを襲って金目の物を奪い、 衛兵が駆けつける頃には 素早く姿を消してしまうのです。 我々はまだ一匹も捕まえることができていません。 やつらは獲物が単独であるときだけを狙い、 複数がいる場合は絶対に姿を現さないのです。 たったひとりでゴブリンどもを倒せる猛者が必要なのです。 それ以外に解決方法があるとは思えません。 やって頂けますか？
 dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|ごろつきゴブリンの退治{だって/ですって}？喜んで引き受け{よう/るわ}！
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|悪い{が/けど}、興味がない{/わ}。
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|これで肩の荷が下りましたよ、 {playername}殿。 成功のあかつきには報酬をはずみますよ。 くれぐれも、 返り討ちに遭わないように気をつけてくださいよ？
@@ -1005,7 +1005,7 @@ dlga_town_dweller_talk:town_dweller_ask_rumor|ここでの最近の話題は？
 dlga_town_dweller_ask_rumor:town_dweller_talk|あなたが興味を持ちそうな話はないよ。
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|脅しているのか？ 衛兵はおまえのような奴には容赦しないぞ。
 dlga_town_dweller_brawl_confirm:close_window|ほう？確かめてみようじゃないか。
-dlga_town_dweller_brawl_confirm:close_window.1|{すまん/ごめんなさい}、人違いだった{/わ}。
+dlga_town_dweller_brawl_confirm:close_window.1|{すまん/ごめんなさい}、間違えた{/わ}。
 dlga_town_dweller_talk:close_window|[立ち去る]
 dlga_start:player_castle_guard_talk|ご用ですか、指揮官殿？
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|見張りのほうはどうだ？

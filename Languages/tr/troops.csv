@@ -42,8 +42,8 @@ trp_townsman|Kasabalı
 trp_townsman_pl|Kasabalılar
 trp_watchman|Kasabalı Kadın 
 trp_watchman_pl|Kasabalı Kadınlar 
-trp_i1_woodmen_man|Korucu
-trp_i1_woodmen_man_pl|Korucular
+; trp_i1_woodmen_man|Woodmen Settler
+; trp_i1_woodmen_man_pl|Woodmen Settlers
 trp_i2_woodmen_forester|Orman Korucusu
 trp_i2_woodmen_forester_pl|Orman Korucuları
 trp_i3_woodmen_skilled_forester|Yetenekli Orman Korucusu
@@ -130,8 +130,8 @@ trp_i3_rhun_tribal_infantry|Rhunlu Kabile Piyadesi
 trp_i3_rhun_tribal_infantry_pl|Rhunlu Kabile Piyadeleri
 trp_i4_rhun_vet_infantry|Rhunlu Kıdemli Piyade
 trp_i4_rhun_vet_infantry_pl|Rhunlu Kıdemli Piyadeler
-trp_i5_rhun_ox_warrior|Oxlu Piyade
-trp_i5_rhun_ox_warrior_pl|Oxlu Piyadeler
+; trp_i5_rhun_ox_warrior|Warrior of the Ox
+; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
 trp_c2_rhun_light_horseman|Rhunlu Hafif Atlı
 trp_c2_rhun_light_horseman_pl|Rhunlu Hafif Atlılar
 trp_c3_rhun_light_cavalry|Rhunlu Hafif Süvari
@@ -306,112 +306,112 @@ trp_c6_amroth_leader|Dol Amroth Kaptanı
 trp_c6_amroth_leader_pl|Dol Amroth Kaptanları
 trp_a1_lorien_scout|Lothlorien İzcisi
 trp_a1_lorien_scout_pl|Lothlorien İzcileri
-trp_a2_lorien_warden|Lothlorien Kıdemli İzcisi
-trp_a2_lorien_warden_pl|Lothlorien Kıdemli İzcileri
-trp_a3_lorien_vet_warden|Lothlorien Okçusu
-trp_a3_lorien_vet_warden_pl|Lothlorien Okçuları
-trp_a4_lorien_gal_warden|Lothlorien Kıdemli Okçusu
-trp_a4_lorien_gal_warden_pl|Lothlorien Kıdemli Okçuları
-trp_a5_lorien_gal_royal_warden|Lothlorien Usta Okçusu
-trp_a5_lorien_gal_royal_warden_pl|Lothlorien Usta Okçuları
-trp_a6_lorien_grey_warden|Galadhrim Kıraliyet Okçusu
-trp_a6_lorien_grey_warden_pl|Galadhrim Kraliyet Okçuları
-trp_galadhrim_royal_marksman|Galadhrim Kraliyet Nişancısı
-trp_galadhrim_royal_marksman_pl|Galadhrim Kraliyet Nişancıları
+trp_a2_lorien_warden|Lothlorien Gardiyanı
+trp_a2_lorien_warden_pl|Lothlorien Gardiyanları
+trp_a3_lorien_vet_warden|Lothlorien Kıdemli Gardiyanı
+trp_a3_lorien_vet_warden_pl|Lothlorien Kıdemli Gardiyanları
+; trp_a4_lorien_gal_warden|Galadhrim Warden
+; trp_a4_lorien_gal_warden_pl|Galadhrim Wardens
+trp_a5_lorien_gal_royal_warden|Galadhrim Kraliyet Gardiyanı
+trp_a5_lorien_gal_royal_warden_pl|Galadhrim Kraliyet Gardiyanları
+; trp_a6_lorien_grey_warden|Grey Warden
+; trp_a6_lorien_grey_warden_pl|Grey Wardens
+trp_a5_lorien_gal_royal_archer|Galadhrim Kraliyet Nişancısı
+trp_a5_lorien_gal_royal_archer_pl|Galadhrim Kraliyet Nişancıları
 trp_noldorin_mounted_archer|Noldorin Atlı Okçusu
 trp_noldorin_mounted_archer_pl|Nolodrin Atlı Okçuları
-trp_a2_lorien_archer|Lothlorien Piyadesi
-trp_a2_lorien_archer_pl|Lothlorien Piyadesi
-trp_a3_lorien_vet_archer|Lothlorien Kıdemli Piyadesi
-trp_a3_lorien_vet_archer_pl|Lothlorien Kıdemli Piyadesi
-trp_a4_lorien_gal_archer|Lothlorien Seçkin Piyadesi
-trp_a4_lorien_gal_archer_pl|Lothlorien Seçkin Piyadesi
-trp_i5_lorien_gal_royal_inf|Galadhrim Kraliyet Kılıç Ustası
-trp_i5_lorien_gal_royal_inf_pl|Galadhrim Kraliyet Kılıç Ustası
-trp_i3_lorien_inf|Lothlorien Gardiyanı
-trp_i3_lorien_inf_pl|Lothlorien Gardiyanları
-trp_i4_lorien_gal_inf|Lothlorien Kıdemli Gardiyanı
-trp_i4_lorien_gal_inf_pl|Lothlorien Kıdemli Gardiyanları
-trp_a5_lorien_gal_royal_archer|Galadhrim Kraliyet Gardiyanı
-trp_a5_lorien_gal_royal_archer_pl|Galadhrim Kraliyet Gardiyanları
+trp_a2_lorien_archer|Lothlorien Okçusu
+trp_a2_lorien_archer_pl|Lothlorien Okçuları
+trp_a3_lorien_vet_archer|Lothlorien Kıdemli Okçusu
+trp_a3_lorien_vet_archer_pl|Lothlorien Kıdemli Okçuları
+; trp_a4_lorien_gal_archer|Galadhrim Archer
+; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
+trp_galadhrim_royal_marksman|Galadhrim Kraliyet Nişancısı
+trp_galadhrim_royal_marksman_pl|Galadhrim Kraliyet Nişancıları
+trp_i3_lorien_inf|Lothlorien Piyadesi
+trp_i3_lorien_inf_pl|Lothlorien Piyadesi
+; trp_i4_lorien_gal_inf|Galadhrim Infantry
+; trp_i4_lorien_gal_inf_pl|Galadhrim Infantry
+; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Guard
+; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Guards
 trp_lothlorien_standard_bearer|Lothlorien Bayrak Taşıyıcısı
 trp_lothlorien_standard_bearer_pl|Lothlorien Bayrak Taşıyıcıları
 trp_a1_greenwood_scout|Greenwood İzcisi
 trp_a1_greenwood_scout_pl|Greenwood İzcileri
 trp_a2_greenwood_veteran_scout|Greenwood Kıdemli İzcisi
 trp_a2_greenwood_veteran_scout_pl|Greenwood Kıdemli İzcileri
-trp_a3_greenwood_archer|Greenwood Yay Ustası
-trp_a3_greenwood_archer_pl|Greenwood Yay Ustaları
-trp_a4_greenwood_veteran_archer|Greenwood Okçusu
-trp_a4_greenwood_veteran_archer_pl|Greenwood Okçuları
-trp_a5_greenwood_master_archer|Greenwood Kıdemli Okçusu
-trp_a5_greenwood_master_archer_pl|Greenwood Kıdemli Okçuları
-trp_a6_greenwood_chosen_marksman|Thranduil'in Kraliyet Nişancısı
-trp_a6__pl|Thranduil'in Kraliyet Nişancıları
+trp_a3_greenwood_archer|Greenwood Okçusu
+trp_a3_greenwood_archer_pl|Greenwood Okçuları
+trp_a4_greenwood_veteran_archer|Greenwood Kıdemli Okçusu
+trp_a4_greenwood_veteran_archer_pl|Greenwood Kıdemli Okçuları
+; trp_a5_greenwood_master_archer|Greenwood Master Archer
+; trp_a5_greenwood_master_archer_pl|Greenwood Master Archers
+; trp_a6_greenwood_chosen_marksman|Thranduil's Chosen Marksman
+; trp_a6_greenwood_chosen_marksman_pl|Thranduil's Chosen Marksmen
 trp_a3_greenwood_sentinel|Greenwood Nöbetçisi
 trp_a3_greenwood_sentinel_pl|Greenwood Nöbetçileri
 trp_a4_greenwood_vet_sentinel|Greenwood Kıdemli Nöbetçisi
 trp_a4_greenwood_vet_sentinel_pl|Greenwood Kıdemli Nöbetçileri
-trp_a5_greenwood_vigilant|Greenwood Askeri
-trp_a5_greenwood_vigilant_pl|Greenwood Askerleri
+; trp_a5_greenwood_vigilant|Greenwood Guardian
+; trp_a5_greenwood_vigilant_pl|Greenwood Guardians
 trp_i2_greenwood_infantry|Greenwood Piyadesi
 trp_i2_greenwood_infantry_pl|Greenwood Piyadeleri
 trp_i3_greenwood_vet_infantry|Greenwood Kıdemli Piyadesi
 trp_i3_greenwood_vet_infantry_pl|Greenwood Kıdemli Piyadesi
 trp_i4_greenwood_elite_infantry|Greenwood Seçkin Piyadesi
 trp_i4_greenwood_elite_infantry_pl|Greenwood Seçkin Piyadesi
-trp_i5_greenwood_chosen_shieldmaster|Thranduil'in Kraliyet Kılıç Ustası
-trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil'in Kraliyet Kılıç Ustaları
-trp_i5_greenwood_chosen_spearmaster|Thranduil'in Kraliyet Mızrakçısı
-trp_i5_greenwood_chosen_spearmaster_pl|Thranduil'in Kraliyet Mızrakçıları
+; trp_i5_greenwood_chosen_shieldmaster|Thranduil's Chosen Shield Master
+; trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil's Chosen Shield Masters
+; trp_i5_greenwood_chosen_spearmaster|Thranduil's Chosen Spear Master
+; trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Chosen Spear Masters
 trp_i5_greenwood_standard_bearer|Greenwood Bayrak Taşıyıcısı
 trp_i5_greenwood_standard_bearer_pl|Greenwood Bayrak Taşıyıcıları
 trp_a1_riv_scout|Ayrıkvadi Gözcüsü
 trp_a1_riv_scout_pl|Ayrıkvadi Gözcüleri
 trp_a2_riv_vet_scout|Ayrıkvadi Kıdemli İzcisi
 trp_a2_riv_vet_scout_pl|Ayrıkvadi Kıdemli İzcileri
-trp_a3_riv_archer|Ayrıkvadi Nöbetçisi
-trp_a3_riv_archer_pl|Ayrıkvadi Nöbetçileri
-trp_a4_riv_vet_archer|Ayrıkvadi Kıdemli Nöbetçisi
-trp_a4_riv_vet_archer_pl|Ayrıkvadi Kıdemli Nöbetçileri
-trp_a5_riv_master_archer|Ayrıkvadi seçkin Nöbetçisi
-trp_a5_riv_master_archer_pl|Ayrıkvadi Seçkin Nöbetçileri
-trp_a6_riv_guardian|Ayrıkvadi Koruyucusu
-trp_a6_riv_guardian_pl|Ayrıkvadi Koruyucuları
+; trp_a3_riv_archer|Rivendell Archer
+; trp_a3_riv_archer_pl|Rivendell Archers
+; trp_a4_riv_vet_archer|Rivendell Veteran Archer
+; trp_a4_riv_vet_archer_pl|Rivendell Veteran Archers
+; trp_a5_riv_master_archer|Rivendell Master Archer
+; trp_a5_riv_master_archer_pl|Rivendell Master Archers
+; trp_a6_riv_guardian|Guardian of Imladris
+; trp_a6_riv_guardian_pl|Guardians of Imladris
 trp_i3_riv_swordbearer|Ayrıkvadi Piyadesi
 trp_i3_riv_swordbearer_pl|Ayrıkvadi Piyadesi
 trp_i4_riv_vet_swordbearer|Ayrıkvadi Kıdemli Piyadesi
 trp_i4_riv_vet_swordbearer_pl|Ayrıkvadi Kıdemli Piyadesi
 trp_i5_riv_swordmaster|Ayrıkvadi Seçkin Piyadesi
 trp_i5_riv_swordmaster_pl|Ayrıkvadi Seçkin Piyadesi
-trp_i6_riv_champion|Ayrıkvadi Kraliyet Piyadesi
-trp_i6_riv_champion_pl|Ayrıkvadi Kraliyet Piyadesi
-trp_ac5_riv_rider|Ayrıkvadi Süvarisi
-trp_ac5_riv_rider_pl|Ayrıkvadi Süvarisi
-trp_ac6_riv_knight|Ayrıkvadi Şovalyesi
-trp_ac6_riv_knight_pl|Ayrıkvadi Şovalyeleri
+; trp_i6_riv_champion|Champion of Imladris
+; trp_i6_riv_champion_pl|Champions of Imladris
+; trp_ac5_riv_rider|Rivendell Rider
+; trp_ac5_riv_rider_pl|Rivendell Riders
+; trp_ac6_riv_knight|Knight of Imladris
+; trp_ac6_riv_knight_pl|Knights of Imladris
 trp_i6_rivendell_standard_bearer|Ayrıkvadi Bayrak Taşıyıcısı
 trp_i6_rivendell_standard_bearer_pl|Ayrıkvadi Bayrak Taşıyıcıları
 trp_a1_arnor_scout|Dunedain İzcisi
 trp_a1_arnor_scout_pl|Dunedain İzcileri
 trp_a2_arnor_vet_scout|Dunedain İz Sürücü
 trp_a2_arnor_vet_scout_pl|Dunedain İz Sürücüleri
-trp_i3_arnor_swordsman|Arnor Askeri
-trp_i3_arnor_swordsman_pl|Arnor Askerleri
-trp_i4_arnor_vet_swordsman|Arnor Usta Askeri
-trp_i4_arnor_vet_swordsman_pl|Arnor Usta Askerleri
-trp_i5_arnor_champion|Arnor'un Üstün Kılıç Ustası
-trp_i5_arnor_champion_pl|Arnor'un Üstün Kılıç Ustaları
-trp_c4_arnor_horseman|Arnor Atlısı
-trp_c4_arnor_horseman_pl|Arnor Atlıları
+; trp_i3_arnor_swordsman|Dunedain Swordsman
+; trp_i3_arnor_swordsman_pl|Dunedain Swordsmen
+; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
+; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
+; trp_i5_arnor_champion|Champion of Arnor
+; trp_i5_arnor_champion_pl|Champions of Arnor
+; trp_c4_arnor_horseman|Dunedain Horseman
+; trp_c4_arnor_horseman_pl|Dunedain Horsemen
 trp_c5_arnor_knight|Arnor Şovalyesi
 trp_c5_arnor_knight_pl|Arnor Şovalyeleri
 trp_a3_arnor_ranger|Dunedain Okçusu
 trp_a3_arnor_ranger_pl|Dunedain Okçuları
 trp_a4_arnor_vet_ranger|Dunedain Kıdemli Okçusu
 trp_a4_arnor_vet_ranger_pl|Dunedain Kıdemli Okçuları
-trp_a5_arnor_master_ranger|Dunedain Usta Okçusu
-trp_a5_arnor_master_ranger_pl|Dunedain Usta Okçuları
+; trp_a5_arnor_master_ranger|Master Ranger of Arnor
+; trp_a5_arnor_master_ranger_pl|Master Rangers of Arnor
 trp_i1_rohan_youth|Rohan Genci
 trp_i1_rohan_youth_pl|Rohan Gençleri
 trp_i2_guardsman_of_rohan|Rohan Koruyucusu
@@ -466,8 +466,8 @@ trp_dismounted_thengel_guard_of_rohan|Rohan Thengel Muhafızı
 trp_dismounted_thengel_guard_of_rohan_pl|Rohan Thengel Muhafızları 
 trp_i1_harad_levy|Harad Askeri
 trp_i1_harad_levy_pl|Harad Askerleri
-trp_i3_harad_infantry|Harad Hafif Piyadesi
-trp_i3_harad_infantry_pl|Harad Hafif Piyadesi
+; trp_i3_harad_infantry|Harad Light Footman
+; trp_i3_harad_infantry_pl|Harad Light Footmen
 trp_i4_harad_spearman|Harad Mızrakçısı
 trp_i4_harad_spearman_pl|Harad Mızrakçıları
 trp_i5_harad_tiger_guard|Kaplan Muhafız
@@ -486,8 +486,8 @@ trp_c2_harondor_scout|Harandor İzcisi
 trp_c2_harondor_scout_pl|Harondor İzcileri
 trp_c3_harondor_rider|Harondor Atlısı
 trp_c3_harondor_rider_pl|Harondor Atlıları
-trp_c4_harondor_light_cavalry|Harandor Hafif Süvarisi
-trp_c4_harondor_light_cavalry_pl|Harandor Hafif Süvarisi
+; trp_c4_harondor_light_cavalry|Harondor Light Rider
+; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
 trp_c5_harondor_serpent_knight|Altın Engerek Şovalyesi
 trp_c5_harondor_serpent_knight_pl|Altın Engerek Şovalyeleri
 trp_ac3_harondor_skirmisher|Harondor Avcısı
@@ -526,8 +526,8 @@ trp_i2_khand_pit_dog|Khand Çukur Köpegi
 trp_i2_khand_pit_dog_pl|Khand Çukur Köpekleri
 trp_i3_khand_warrior|Khand Savaşçısı
 trp_i3_khand_warrior_pl|Khand Savaşçıları
-trp_i4_khand_vet_warrior|Variag Kıdemli Savaşçı
-trp_i4_khand_vet_warrior_pl|Variag Kıdemli Savaşçıları
+; trp_i4_khand_vet_warrior|Khand Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Khand Veteran Warriors
 trp_i5_khand_war_master|Variag Savaş Ustası
 trp_i5_khand_war_master_pl|Variag Savaş Ustaları
 trp_c2_khand_pony_rider|Khand Midilli Binicisi
@@ -536,18 +536,18 @@ trp_c3_khand_horseman|Khand Atlısı
 trp_c3_khand_horseman_pl|Khand Atlıları
 trp_c4_khand_heavy_horseman|Khand Agır Atlısı
 trp_c4_khand_heavy_horseman_pl|Khand Agır Atlıları
-trp_c5_khand_kataphrakt|Variag Zırhlı Süvarisi
-trp_c5_khand_kataphrakt_pl|Variag Zırhlı Süvarileri
-trp_c5_khand_lance_kataphrakt|Variag Zırhlı Mızraklı Süvarisi
-trp_c5_khand_lance_kataphrakt_pl|Variag Zırhlı Mızraklı Süvarileri
+; trp_c5_khand_kataphrakt|Variag Ironclad
+; trp_c5_khand_kataphrakt_pl|Variag Ironclads
+; trp_c5_khand_lance_kataphrakt|Variag Lancer
+; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
 trp_i4_khand_halberdier|Khand Tebercisi
 trp_i4_khand_halberdier_pl|Khand Tebercileri
-trp_i5_khand_halberd_master|Khand Teber Ustası
-trp_i5_khand_halberd_master_pl|Khand Teber Ustaları
+; trp_i5_khand_halberd_master|Variag Halberd Master
+; trp_i5_khand_halberd_master_pl|Variag Halberd Masters
 trp_i3_khand_pitfighter|Khand Çukur Dövüşçüsü
 trp_i3_khand_pitfighter_pl|Khand Çukur Dövüşçüleri
-trp_i4_khand_pit_champion|Variag Çukur Şampiyonu
-trp_i4_khand_pit_champion_pl|Variag Çukur Şampiyonları
+; trp_i4_khand_pit_champion|Khand Pit Champion
+; trp_i4_khand_pit_champion_pl|Khand Pit Champions
 trp_i5_khand_pit_master|Kuyu Ustası Variag
 trp_i5_khand_pit_master_pl|Variag Çukurların Ustaları
 trp_ac3_khand_skirmisher|Khand Çatışmacısı
@@ -1588,6 +1588,28 @@ trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_werewolf|Kurtadam
 trp_werewolf_pl|kurt adamlar
+trp_moria_troll|Magara Trolü
+trp_moria_troll_pl|Magara Trolleri
+; trp_moria_vet_troll|Trained Cave Troll
+; trp_moria_vet_troll_pl|Trained Cave Trolls
+; trp_moria_armored_troll|Armored Cave Troll
+; trp_moria_armored_troll_pl|Armored Cave Trolls
+; trp_gunda_troll|Mountain Troll
+; trp_gunda_troll_pl|Mountain Troll
+; trp_gunda_vet_troll|Trained Mountain Troll
+; trp_gunda_vet_troll_pl|Trained Mountain Trolls
+; trp_isen_troll|Isengard Troll
+; trp_isen_troll_pl|Isengard Trolls
+; trp_isen_vet_troll|Isengard Trained Troll
+; trp_isen_vet_troll_pl|Isengard Trained Troll
+; trp_isen_armoured_troll|Isengard Armored Troll
+; trp_isen_armoured_troll_pl|Isengard Armored Trolls
+; trp_mordor_troll|Mordor Troll
+; trp_mordor_troll_pl|Mordor Trolls
+; trp_mordor_vet_troll|Mordor Trained Troll
+; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_mordor_olog_hai|Mordor Olog Hai 
+trp_mordor_olog_hai_pl|Mordor Olog Hai 
 trp_mountain_goblin2|Dag Goblini
 trp_mountain_goblin2_pl|Dag Goblinleri
 trp_tribal_orc2|Kabile Orku

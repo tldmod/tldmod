@@ -42,8 +42,8 @@ trp_townsman|市 民
 trp_townsman_pl|市 民 
 trp_watchman|女 市 民 
 trp_watchman_pl|女 市 民 
-trp_i1_woodmen_man|山 林 人 
-trp_i1_woodmen_man_pl|山 林 人 
+; trp_i1_woodmen_man|Woodmen Settler
+; trp_i1_woodmen_man_pl|Woodmen Settlers
 trp_i2_woodmen_forester|山 林 人 森 林 行 者 
 trp_i2_woodmen_forester_pl|山 林 人 森 林 行 者 
 trp_i3_woodmen_skilled_forester|山 林 人 熟 練 森 林 行 者 
@@ -130,8 +130,8 @@ trp_i3_rhun_tribal_infantry|盧 恩 部 落 步 兵
 trp_i3_rhun_tribal_infantry_pl|盧 恩 部 落 步 兵
 trp_i4_rhun_vet_infantry|盧 恩 部 落 熟 練 步 兵 
 trp_i4_rhun_vet_infantry_pl|盧 恩 部 落 熟 練 步 兵
-trp_i5_rhun_ox_warrior|盧 恩 神 牛 步 兵
-trp_i5_rhun_ox_warrior_pl|盧 恩 神 牛 步 兵
+; trp_i5_rhun_ox_warrior|Warrior of the Ox
+; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
 trp_c2_rhun_light_horseman|盧 恩 輕 騎 兵
 trp_c2_rhun_light_horseman_pl|盧 恩 輕 騎 兵
 trp_c3_rhun_light_cavalry|盧 恩 輕 騎 兵 
@@ -306,112 +306,112 @@ trp_c6_amroth_leader|多 爾 安 羅 斯 上 尉
 trp_c6_amroth_leader_pl|多 爾 安 羅 斯 上 尉 
 trp_a1_lorien_scout|羅 斯 洛 立 安 斥 候 
 trp_a1_lorien_scout_pl|羅 斯 洛 立 安 斥 候 
-trp_a2_lorien_warden|羅 斯 洛 立 安 熟 練 斥 候 
-trp_a2_lorien_warden_pl|羅 斯 洛 立 安 熟 練 斥 候 
-trp_a3_lorien_vet_warden|羅 斯 洛 立 安 弓 兵
-trp_a3_lorien_vet_warden_pl|羅 斯 洛 立 安 弓 兵
-trp_a4_lorien_gal_warden|羅 斯 洛 立 安 熟 練 弓 兵
-trp_a4_lorien_gal_warden_pl|羅 斯 洛 立 安 熟 練 弓 兵
-trp_a5_lorien_gal_royal_warden|羅 斯 洛 立 安 弓 兵 大 師 
-trp_a5_lorien_gal_royal_warden_pl|羅 斯 洛 立 安 弓 兵 大 師 
-trp_a6_lorien_grey_warden|凱 蘭 崔 姆 皇 家 弓 兵
-trp_a6_lorien_grey_warden_pl|凱 蘭 崔 姆 皇 家 弓 兵
-trp_galadhrim_royal_marksman|凱 蘭 崔 姆 皇 家 神 射 手 
-trp_galadhrim_royal_marksman_pl|凱 蘭 崔 姆 皇 家 神 射 手 
+trp_a2_lorien_warden|羅 斯 洛 立 安 守 望 者 
+trp_a2_lorien_warden_pl|羅 斯 洛 立 安 守 望 隊
+trp_a3_lorien_vet_warden|羅 斯 洛 立 安 熟 練 守 望 者 
+trp_a3_lorien_vet_warden_pl|羅 斯 洛 立 安 熟 練 守 望 隊 
+; trp_a4_lorien_gal_warden|Galadhrim Warden
+; trp_a4_lorien_gal_warden_pl|Galadhrim Wardens
+trp_a5_lorien_gal_royal_warden|凱 蘭 崔 姆 皇 家 守 望 者 
+trp_a5_lorien_gal_royal_warden_pl|凱 蘭 崔 姆 皇 家 守 望 隊
+; trp_a6_lorien_grey_warden|Grey Warden
+; trp_a6_lorien_grey_warden_pl|Grey Wardens
+trp_a5_lorien_gal_royal_archer|凱 蘭 崔 姆 皇 家 神 射 手 
+trp_a5_lorien_gal_royal_archer_pl|凱 蘭 崔 姆 皇 家 神 射 手 
 trp_noldorin_mounted_archer|諾 多 馬 騎 弓 兵 
 trp_noldorin_mounted_archer_pl|諾 多 馬 騎 弓 兵
-trp_a2_lorien_archer|羅 斯 洛 立 安 步 兵 
-trp_a2_lorien_archer_pl|羅 斯 洛 立 安 步 兵 
-trp_a3_lorien_vet_archer|羅 斯 洛 立 安 熟 練 步 兵 
-trp_a3_lorien_vet_archer_pl|羅 斯 洛 立 安 熟 練 步 兵 
-trp_a4_lorien_gal_archer|羅 斯 洛 立 安 精 英 步 兵 
-trp_a4_lorien_gal_archer_pl|羅 斯 洛 立 安 精 英 步 兵 
-trp_i5_lorien_gal_royal_inf|凱 蘭 崔 姆 皇 家 劍 士 
-trp_i5_lorien_gal_royal_inf_pl|凱 蘭 崔 姆 皇 家 劍 士 
-trp_i3_lorien_inf|羅 斯 洛 立 安 守 望 者 
-trp_i3_lorien_inf_pl|羅 斯 洛 立 安 守 望 隊
-trp_i4_lorien_gal_inf|羅 斯 洛 立 安 熟 練 守 望 者 
-trp_i4_lorien_gal_inf_pl|羅 斯 洛 立 安 熟 練 守 望 隊 
-trp_a5_lorien_gal_royal_archer|凱 蘭 崔 姆 皇 家 守 望 者 
-trp_a5_lorien_gal_royal_archer_pl|凱 蘭 崔 姆 皇 家 守 望 隊
+trp_a2_lorien_archer|羅 斯 洛 立 安 弓 兵
+trp_a2_lorien_archer_pl|羅 斯 洛 立 安 弓 兵
+trp_a3_lorien_vet_archer|羅 斯 洛 立 安 熟 練 弓 兵
+trp_a3_lorien_vet_archer_pl|羅 斯 洛 立 安 熟 練 弓 兵
+; trp_a4_lorien_gal_archer|Galadhrim Archer
+; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
+trp_galadhrim_royal_marksman|凱 蘭 崔 姆 皇 家 神 射 手 
+trp_galadhrim_royal_marksman_pl|凱 蘭 崔 姆 皇 家 神 射 手 
+trp_i3_lorien_inf|羅 斯 洛 立 安 步 兵 
+trp_i3_lorien_inf_pl|羅 斯 洛 立 安 步 兵 
+; trp_i4_lorien_gal_inf|Galadhrim Infantry
+; trp_i4_lorien_gal_inf_pl|Galadhrim Infantry
+; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Guard
+; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Guards
 trp_lothlorien_standard_bearer|羅 斯 洛 立 安 掌 旗 手 
 trp_lothlorien_standard_bearer_pl|羅 斯 洛 立 安 掌 旗 手 
 trp_a1_greenwood_scout|巨 綠 森 斥 侯 
 trp_a1_greenwood_scout_pl|巨 綠 森 斥 侯 
 trp_a2_greenwood_veteran_scout|巨 綠 森 熟 練 斥 侯 
 trp_a2_greenwood_veteran_scout_pl|巨 綠 森 熟 練 斥 侯 
-trp_a3_greenwood_archer|巨 綠 森 弓 箭 手 
-trp_a3_greenwood_archer_pl|巨 綠 森 弓 箭 手 
-trp_a4_greenwood_veteran_archer|巨 綠 森 弓 兵
-trp_a4_greenwood_veteran_archer_pl|巨 綠 森 弓 兵
-trp_a5_greenwood_master_archer|巨 綠 森 熟 練 弓 兵
-trp_a5_greenwood_master_archer_pl|巨 綠 森 熟 練 弓 兵
-trp_a6_greenwood_chosen_marksman|瑟 蘭 督 伊 皇 家 神 射 手 
-trp_a6__pl|瑟 蘭 督 伊 皇 家 神 射 手 
+trp_a3_greenwood_archer|巨 綠 森 弓 兵
+trp_a3_greenwood_archer_pl|巨 綠 森 弓 兵
+trp_a4_greenwood_veteran_archer|巨 綠 森 熟 練 弓 兵
+trp_a4_greenwood_veteran_archer_pl|巨 綠 森 熟 練 弓 兵
+; trp_a5_greenwood_master_archer|Greenwood Master Archer
+; trp_a5_greenwood_master_archer_pl|Greenwood Master Archers
+; trp_a6_greenwood_chosen_marksman|Thranduil's Chosen Marksman
+; trp_a6_greenwood_chosen_marksman_pl|Thranduil's Chosen Marksmen
 trp_a3_greenwood_sentinel|巨 綠 森 哨 兵 
 trp_a3_greenwood_sentinel_pl|巨 綠 森 哨 兵 
 trp_a4_greenwood_vet_sentinel|巨 綠 森 熟 練 哨 兵 
 trp_a4_greenwood_vet_sentinel_pl|巨 綠 森 熟 練 哨 兵 
-trp_a5_greenwood_vigilant|巨 綠 森 衛 兵
-trp_a5_greenwood_vigilant_pl|巨 綠 森 衛 兵
+; trp_a5_greenwood_vigilant|Greenwood Guardian
+; trp_a5_greenwood_vigilant_pl|Greenwood Guardians
 trp_i2_greenwood_infantry|巨 綠 森 步 兵 
 trp_i2_greenwood_infantry_pl|巨 綠 森 步 兵 
 trp_i3_greenwood_vet_infantry|巨 綠 森 熟 練 步 兵 
 trp_i3_greenwood_vet_infantry_pl|巨 綠 森 熟 練 步 兵 
 trp_i4_greenwood_elite_infantry|巨 綠 森 精 英 步 兵 
 trp_i4_greenwood_elite_infantry_pl|巨 綠 森 精 英 步 兵 
-trp_i5_greenwood_chosen_shieldmaster|瑟 蘭 督 伊 皇 家 劍 士 
-trp_i5_greenwood_chosen_shieldmaster_pl|瑟 蘭 督 伊 皇 家 劍 士 
-trp_i5_greenwood_chosen_spearmaster|瑟 蘭 督 伊 皇 家 長 槍 兵 
-trp_i5_greenwood_chosen_spearmaster_pl|瑟 蘭 督 伊 皇 家 長 槍 兵 
+; trp_i5_greenwood_chosen_shieldmaster|Thranduil's Chosen Shield Master
+; trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil's Chosen Shield Masters
+; trp_i5_greenwood_chosen_spearmaster|Thranduil's Chosen Spear Master
+; trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Chosen Spear Masters
 trp_i5_greenwood_standard_bearer|巨 綠 森 掌 旗 手 
 trp_i5_greenwood_standard_bearer_pl|巨 綠 森 掌 旗 手 
 trp_a1_riv_scout|瑞 文 戴 爾 斥 候 
 trp_a1_riv_scout_pl|瑞 文 戴 爾 斥 候 
 trp_a2_riv_vet_scout|瑞 文 戴 爾 熟 練 斥 候 
 trp_a2_riv_vet_scout_pl|瑞 文 戴 爾 熟 練 斥 候 
-trp_a3_riv_archer|瑞 文 戴 爾 哨 兵 
-trp_a3_riv_archer_pl|瑞 文 戴 爾 哨 兵 
-trp_a4_riv_vet_archer|瑞 文 戴 爾 熟 練 哨 兵 
-trp_a4_riv_vet_archer_pl|瑞 文 戴 爾 熟 練 哨 兵 
-trp_a5_riv_master_archer|瑞 文 戴 爾 精 英 哨 兵 
-trp_a5_riv_master_archer_pl|瑞 文 戴 爾 精 英 哨 兵 
-trp_a6_riv_guardian|瑞 文 戴 爾 守 護 者
-trp_a6_riv_guardian_pl|瑞 文 戴 爾 守 護 者
+; trp_a3_riv_archer|Rivendell Archer
+; trp_a3_riv_archer_pl|Rivendell Archers
+; trp_a4_riv_vet_archer|Rivendell Veteran Archer
+; trp_a4_riv_vet_archer_pl|Rivendell Veteran Archers
+; trp_a5_riv_master_archer|Rivendell Master Archer
+; trp_a5_riv_master_archer_pl|Rivendell Master Archers
+; trp_a6_riv_guardian|Guardian of Imladris
+; trp_a6_riv_guardian_pl|Guardians of Imladris
 trp_i3_riv_swordbearer|瑞 文 戴 爾 步 兵 
 trp_i3_riv_swordbearer_pl|瑞 文 戴 爾 步 兵 
 trp_i4_riv_vet_swordbearer|瑞 文 戴 爾 熟 練 步 兵 
 trp_i4_riv_vet_swordbearer_pl|瑞 文 戴 爾 熟 練 步 兵 
 trp_i5_riv_swordmaster|瑞 文 戴 爾 精 英 步 兵 
 trp_i5_riv_swordmaster_pl|瑞 文 戴 爾 精 英 步 兵 
-trp_i6_riv_champion|瑞 文 戴 爾 皇 家 步 兵 
-trp_i6_riv_champion_pl|瑞 文 戴 爾 皇 家 步 兵 
-trp_ac5_riv_rider|瑞 文 戴 爾 騎 兵 
-trp_ac5_riv_rider_pl|瑞 文 戴 爾 騎 兵 
-trp_ac6_riv_knight|瑞 文 戴 爾 騎 士 
-trp_ac6_riv_knight_pl|瑞 文 戴 爾 騎 士 
+; trp_i6_riv_champion|Champion of Imladris
+; trp_i6_riv_champion_pl|Champions of Imladris
+; trp_ac5_riv_rider|Rivendell Rider
+; trp_ac5_riv_rider_pl|Rivendell Riders
+; trp_ac6_riv_knight|Knight of Imladris
+; trp_ac6_riv_knight_pl|Knights of Imladris
 trp_i6_rivendell_standard_bearer|瑞 文 戴 爾 掌 旗 手 
 trp_i6_rivendell_standard_bearer_pl|瑞 文 戴 爾 掌 旗 手 
 trp_a1_arnor_scout|登 丹 斥 侯 
 trp_a1_arnor_scout_pl|登 丹 斥 侯 
 trp_a2_arnor_vet_scout|登 丹 追 蹤 者 
 trp_a2_arnor_vet_scout_pl|登 丹 追 蹤 者 
-trp_i3_arnor_swordsman|阿 諾 爾 裝 甲 步 兵 
-trp_i3_arnor_swordsman_pl|阿 諾 爾 裝 甲 步 兵 
-trp_i4_arnor_vet_swordsman|阿 諾 爾 裝 甲 大 師 
-trp_i4_arnor_vet_swordsman_pl|阿 諾 爾 裝 甲 大 師 
-trp_i5_arnor_champion|阿 諾 爾 高 等 劍 士 
-trp_i5_arnor_champion_pl|阿 諾 爾 高 等 劍 士 
-trp_c4_arnor_horseman|阿 諾 爾 騎 兵
-trp_c4_arnor_horseman_pl|阿 諾 爾 騎 兵
+; trp_i3_arnor_swordsman|Dunedain Swordsman
+; trp_i3_arnor_swordsman_pl|Dunedain Swordsmen
+; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
+; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
+; trp_i5_arnor_champion|Champion of Arnor
+; trp_i5_arnor_champion_pl|Champions of Arnor
+; trp_c4_arnor_horseman|Dunedain Horseman
+; trp_c4_arnor_horseman_pl|Dunedain Horsemen
 trp_c5_arnor_knight|阿 諾 爾 騎 士 
 trp_c5_arnor_knight_pl|阿 諾 爾 騎 士 
 trp_a3_arnor_ranger|登 丹 遊 俠 
 trp_a3_arnor_ranger_pl|登 丹 遊 俠 
 trp_a4_arnor_vet_ranger|登 丹 熟 練 遊 俠 
 trp_a4_arnor_vet_ranger_pl|登 丹 熟 練 遊 俠 
-trp_a5_arnor_master_ranger|登 丹 遊 俠 大 師 
-trp_a5_arnor_master_ranger_pl|登 丹 遊 俠 大 師 
+; trp_a5_arnor_master_ranger|Master Ranger of Arnor
+; trp_a5_arnor_master_ranger_pl|Master Rangers of Arnor
 trp_i1_rohan_youth|洛 汗 青 年 
 trp_i1_rohan_youth_pl|洛 汗 青 年 
 trp_i2_guardsman_of_rohan|洛 汗 衛 兵
@@ -466,8 +466,8 @@ trp_dismounted_thengel_guard_of_rohan|洛 汗 塞 哲 爾 衛 兵
 trp_dismounted_thengel_guard_of_rohan_pl|洛 汗 塞 哲 爾 衛 兵
 trp_i1_harad_levy|哈 拉 德 徵 召 兵 
 trp_i1_harad_levy_pl|哈 拉 德 徵 召 兵 
-trp_i3_harad_infantry|哈 拉 德 輕 步 兵 
-trp_i3_harad_infantry_pl|哈 拉 德 輕 步 兵 
+; trp_i3_harad_infantry|Harad Light Footman
+; trp_i3_harad_infantry_pl|Harad Light Footmen
 trp_i4_harad_spearman|哈 拉 德 長 槍 兵 
 trp_i4_harad_spearman_pl|哈 拉 德 長 槍 兵 
 trp_i5_harad_tiger_guard|虎 衛 兵
@@ -486,8 +486,8 @@ trp_c2_harondor_scout|哈 隆 鐸 斥 候
 trp_c2_harondor_scout_pl|哈 隆 鐸 斥 候 
 trp_c3_harondor_rider|哈 隆 鐸 騎 手
 trp_c3_harondor_rider_pl|哈 隆 鐸 騎 手
-trp_c4_harondor_light_cavalry|哈 隆 鐸 輕 騎 兵 
-trp_c4_harondor_light_cavalry_pl|哈 隆 鐸 輕 騎 兵 
+; trp_c4_harondor_light_cavalry|Harondor Light Rider
+; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
 trp_c5_harondor_serpent_knight|金 蛇 騎 士
 trp_c5_harondor_serpent_knight_pl|金 蛇 騎 士
 trp_ac3_harondor_skirmisher|哈 隆 鐸 散 兵
@@ -526,8 +526,8 @@ trp_ac4_dun_raven_rider_pl|登 蘭 德 渡 鴉  騎 手
 ; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
 ; trp_i3_khand_warrior|Khand Warrior
 ; trp_i3_khand_warrior_pl|Khand Warriors
-; trp_i4_khand_vet_warrior|Variag Veteran Warrior
-; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i4_khand_vet_warrior|Khand Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Khand Veteran Warriors
 ; trp_i5_khand_war_master|Variag Master of War
 ; trp_i5_khand_war_master_pl|Variag Masters of War
 ; trp_c2_khand_pony_rider|Khand Pony Rider
@@ -536,18 +536,18 @@ trp_ac4_dun_raven_rider_pl|登 蘭 德 渡 鴉  騎 手
 ; trp_c3_khand_horseman_pl|Khand Horsemen
 ; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
 ; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
-trp_c5_khand_kataphrakt|维 瑞 亞 鐵 甲 騎 兵 
-trp_c5_khand_kataphrakt_pl|维 瑞 亞 鐵 甲 騎 兵 
-trp_c5_khand_lance_kataphrakt|维 瑞 亞 鐵 甲 槍 騎 兵 
-trp_c5_khand_lance_kataphrakt_pl|维 瑞 亞 鐵 甲 槍 騎 兵 
+; trp_c5_khand_kataphrakt|Variag Ironclad
+; trp_c5_khand_kataphrakt_pl|Variag Ironclads
+; trp_c5_khand_lance_kataphrakt|Variag Lancer
+; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
 ; trp_i4_khand_halberdier|Khand Glaiveman
 ; trp_i4_khand_halberdier_pl|Khand Glaivemen
-trp_i5_khand_halberd_master|侃 德 戰 戟 大 師 
-trp_i5_khand_halberd_master_pl|侃 德 戰 戟 大 師 
+; trp_i5_khand_halberd_master|Variag Halberd Master
+; trp_i5_khand_halberd_master_pl|Variag Halberd Masters
 ; trp_i3_khand_pitfighter|Khand Pit Fighter
 ; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
-; trp_i4_khand_pit_champion|Variag Pit Champion
-; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i4_khand_pit_champion|Khand Pit Champion
+; trp_i4_khand_pit_champion_pl|Khand Pit Champions
 ; trp_i5_khand_pit_master|Variag Master of the Pits
 ; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
 ; trp_ac3_khand_skirmisher|Khand Skirmisher
@@ -1588,6 +1588,28 @@ trp_npc19|赫 德 雷 克
 trp_npc20|齊格爾菲爾
 trp_werewolf|狼 人
 trp_werewolf_pl|狼 人
+trp_moria_troll|洞 穴 食 人 妖
+trp_moria_troll_pl|洞 穴 食 人 妖
+; trp_moria_vet_troll|Trained Cave Troll
+; trp_moria_vet_troll_pl|Trained Cave Trolls
+; trp_moria_armored_troll|Armored Cave Troll
+; trp_moria_armored_troll_pl|Armored Cave Trolls
+; trp_gunda_troll|Mountain Troll
+; trp_gunda_troll_pl|Mountain Troll
+; trp_gunda_vet_troll|Trained Mountain Troll
+; trp_gunda_vet_troll_pl|Trained Mountain Trolls
+; trp_isen_troll|Isengard Troll
+; trp_isen_troll_pl|Isengard Trolls
+; trp_isen_vet_troll|Isengard Trained Troll
+; trp_isen_vet_troll_pl|Isengard Trained Troll
+; trp_isen_armoured_troll|Isengard Armored Troll
+; trp_isen_armoured_troll_pl|Isengard Armored Trolls
+; trp_mordor_troll|Mordor Troll
+; trp_mordor_troll_pl|Mordor Trolls
+; trp_mordor_vet_troll|Mordor Trained Troll
+; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_mordor_olog_hai|魔 多 歐 羅 海
+trp_mordor_olog_hai_pl|魔 多 歐 羅 海
 trp_mountain_goblin2|山 地 哥 布 林 
 trp_mountain_goblin2_pl|山 地 哥 布 林 
 trp_tribal_orc2|部 落 半 獸 人

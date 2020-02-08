@@ -30,9 +30,9 @@ itm_arnor_warhorse|Arnorian Oorlogspaard
 itm_dunedain_warhorse|Dunedain Oorlogspaard
 itm_rohirrim_courser|Rohirrim Renpaard
 itm_rohirrim_hunter|Rohirrim Jager
-itm_rohirrim_courser2|Rohirrim Renpaard
+; itm_rohirrim_courser2|Rohirrim Armoured Courser
 itm_rohan_warhorse|Rohirrim Oorlogspaard
-; itm_thengel_warhorse|Rohirrim Heavy Warhorse
+; itm_thengel_warhorse|Eorl Warhorse
 itm_rhun_horse_a|Rhun Paard
 itm_rhun_horse_b|Rhun Paard
 itm_rhun_horse_d|Rhun Paard 
@@ -66,13 +66,7 @@ itm_wargarmored_2b|Gepantererde Warg
 itm_wargarmored_2c|Gepantererde Warg
 itm_wargarmored_3a|Gepantererde Warg
 itm_warg_reward|Grote Warg
-; itm_axe_a|Northmen Axe
-; itm_axe_b|Northmen Bearded Axe
-; itm_axe_c|Northmen Axe
-; itm_axe_d|Northmen Axe
 itm_tree_trunk_club_a|Boomstam
-; itm_long_bearded_axe|Northmen Bearded Longaxe
-; itm_2_handed_axe|Northmen Longaxe
 itm_free_giant_hammer|Gigantische Hamer
 itm_giant_mace|Gigantische Strijdknots
 ; itm_troll_shield_a|Troll Shield
@@ -91,8 +85,22 @@ itm_isengard_arrow|Isengard Pijlen
 itm_leather_gloves|Leren Handschoenen
 itm_mail_mittens|Maliënkolder Hanschoenen
 itm_leather_boots|Leren Schoenen
+; itm_leather_boots_dark|Rider Boots
+; itm_splinted_greaves|Splinted Greaves
 ; itm_white_tunic_a|Civilian Outfit
+itm_rohan_shoes|Leren Schoenen
+; itm_furry_boots|Furry Boots
 itm_black_tunic|Zwarte Tuniek
+; itm_hood_black|Black Hood
+itm_hood_green|Groene Kap
+; itm_hood_grey|Grey Hood
+; itm_hood_leather|Leather Hood
+; itm_axe_a|Northmen Axe
+; itm_axe_b|Northmen Bearded Axe
+; itm_axe_c|Northmen Axe
+; itm_axe_d|Northmen Axe
+; itm_long_bearded_axe|Northmen Bearded Longaxe
+; itm_2_handed_axe|Northmen Longaxe
 itm_shortened_spear|Verkorte Speer
 itm_spear|Speer
 itm_light_lance|Lichte Lans
@@ -110,7 +118,7 @@ itm_dwarf_short_bow|Dwergen Korte Boog
 itm_harad_bow|Harad Gebogen Boog
 itm_lg_bow|Adelaar Guard Boog
 itm_riv_bow|Rivendell Boog
-; itm_rhun_bow|Rhun Bow
+; itm_rhun_bow|Balchoth Bow
 itm_lorien_bow|Galadhrim Boog
 itm_isengard_large_bow|Isengard Grote Boog
 itm_dale_bow|Dale Boog
@@ -122,7 +130,7 @@ itm_heavy_throwing_spear|Zwaar Werpspeer
 itm_javelin|Werpspeer
 itm_harad_javelin|Harad Werpspeer
 itm_gondor_javelin|Gondor Werpspeer
-itm_rohirrim_throwing_axe|Rohirrim Werpbijlen
+; itm_rohirrim_throwing_axe|Northmen Throwing Axes
 itm_loss_throwing_axes|Lossarnach Werpbijlen
 itm_arnor_helm_a|Arnor Helm
 itm_arnor_helm_b|Arnor Helm
@@ -273,9 +281,9 @@ itm_lorien_sword_a|Lorien Langzwaard
 itm_lorien_sword_b|Lorien Kortzwaard
 itm_lorien_sword_c|Lorien Oorlog Zwaard
 itm_lorien_archer|Lorien Booschutter Pantser
-itm_lorien_armor_a|Lorien Infanterie Pantser
-itm_lorien_armor_b|Lorien Zwaar Infanterie Pantser
-itm_lorien_armor_c|Lorien Koninklijk Boogschutter Pantser
+; itm_lorien_armor_a|Lorien Quilted Armor
+; itm_lorien_armor_b|Lorien Mail Armor
+; itm_lorien_armor_c|Lorien Scale Armor
 itm_lorien_armor_d|Lorien Koninklijk Schermer Pantser
 itm_lorien_armor_e|Lorien Beschermer Cape
 itm_lorien_armor_f|Lorien Elite Pantser
@@ -295,8 +303,8 @@ itm_lorien_round_shield|Lorien Rond Schild
 itm_orc_tribal_a|Onbehandelde Huid
 itm_orc_tribal_b|Onbehandelde Huid
 itm_orc_tribal_c|Onbehandelde Huid
-itm_evil_gauntlets_a|Handschoenen
-itm_evil_gauntlets_b|Handschoenen
+; itm_evil_gauntlets_a|Black Gloves
+; itm_evil_gauntlets_b|Black Gauntlets
 itm_isen_orc_armor_a|Isengard Orc Pantser
 itm_isen_orc_armor_b|Isengard Orc Pantser
 itm_isen_orc_armor_c|Isengard Orc Pantser
@@ -408,8 +416,6 @@ itm_m_uruk_light_b|Uruk Leren Pantser
 ; itm_m_uruk_heavy_a|Uruk Heavy Scale
 ; itm_m_uruk_heavy_b|Uruk Platemail
 ; itm_m_uruk_heavy_c|Lugburz Platemail
-itm_m_uruk_heavy_j|Uruk Zwaar Pantser
-; itm_m_uruk_heavy_k|Uruk Guard Armor
 ; itm_m_cap_armor|Mordor Captain Armor
 ; itm_black_num_armor|Black Numenorean Armor
 itm_m_armor_a|Mordor Pantser
@@ -469,10 +475,14 @@ itm_dun_shield_b|Dunnish Schild
 ; itm_dunnish_axe|Dunnish Axe
 ; itm_dunland_spear|Dunnish Spear
 ; itm_dunnish_pike|Dunnish Pike
-itm_rohan_armor_a|Rohan Shirt
-itm_rohan_armor_e|Rohan Maliënkolder
-; itm_rohan_armor_h|Rohan Leather Armor
-itm_rohan_armor_k|Rohan Maliënkolder
+itm_rohan_cav_sword|Rohan Ruiters Zwaard
+itm_rohan_inf_sword|Rohan Zwaard
+itm_rohan_spear|Rohan Speer
+itm_rohan_lance|Rohan Lans
+itm_rohan_sword_c|Rohan Zwaard
+itm_rohirrim_short_axe|Rohirrim Korte Bijl
+; itm_rohirrim_long_hafted_axe|Rohirrim Long Hafted Axe
+itm_rohan_2h_sword|Rohan Oorlogszwaard
 ; itm_rohan_recruit|Rohan Padded Jerkin
 ; itm_rohan_leather|Rohan Leather Vest
 itm_rohan_mail|Rohan Maliënkolder
@@ -487,10 +497,6 @@ itm_rohan_mail|Rohan Maliënkolder
 ; itm_rohan_archer_helmet_a|Rohan Nasal Helm
 ; itm_rohan_archer_helmet_b|Rohan Nasal Helm
 ; itm_rohan_archer_helmet_c|Rohan Guard Helm
-; itm_rohan_cav_helmet_a|Rohan Cavalry Helm
-; itm_rohan_cav_helmet_b|Rohan Cavalry Helm
-; itm_rohan_cav_helmet_c|Rohan Cavalry Helm
-; itm_rohan_captain_helmet|Rohan Captain Helm
 itm_rohan_shield_a|Rohan Schild
 itm_rohan_shield_b|Rohan Schild
 itm_rohan_shield_c|Rohan Schild
@@ -500,36 +506,24 @@ itm_rohan_shield_f|Rohan Schild
 itm_rohan_shield_g|Rohan Koninklijk Schild
 ; itm_rohan_light_greaves|Rohan Light Greaves
 ; itm_rohirrim_war_greaves|Rohirrim War Greaves
-itm_rohan_shoes|Leren Schoenen
-itm_rohan_cav_sword|Rohan Ruiters Zwaard
-itm_rohan_inf_sword|Rohan Zwaard
-itm_rohan_spear|Rohan Speer
-itm_rohan_lance|Rohan Lans
-itm_rohan_sword_c|Rohan Zwaard
-itm_rohirrim_short_axe|Rohirrim Korte Bijl
-; itm_rohirrim_long_hafted_axe|Rohirrim Long Hafted Axe
-itm_rohan_2h_sword|Rohan Oorlogszwaard
-; itm_mirkwood_light_scale|Light Woodelf Scale
-itm_mirkwood_armor_a|Licht Leer
-; itm_mirkwood_armor_b|Light Quilted and Scale Armor
-; itm_mirkwood_armor_c|Mirkwood Royal Mail
-; itm_mirkwood_armor_d|Light Quilted Surcoat
-; itm_mirkwood_armor_e|Light Mail and Surcoat
-; itm_mirkwood_armor_f|Mirkwood Leafscale
+; itm_mirkwood_leather|Woodelf Leather Armor
+; itm_mirkwood_pad|Greenwood Quilted Coat
+; itm_mirkwood_mail|Greenwood Mail
+; itm_mirkwood_scale|Greenwood Light Scale
+; itm_mirkwood_heavy_scale|Mirkwood Leafscale
 itm_mirkwood_great_spear|Mirkwoord Grootse Speer
 itm_mirkwood_war_spear|Mirkwood Oorlogs Speer
 itm_mirkwood_short_spear|Mirkwood Speer
 itm_mirkwood_knife|Mirkwood Wit Mes
-itm_mirkwood_sword|Mirkwoord Zwaard
-itm_mirkwood_spear_shield_a|Mirkwood Speerman Schild
+; itm_mirkwood_axe|Mirkwood Axe
+; itm_mirkwood_spear_shield_a|Mirkwood Shield
 itm_mirkwood_spear_shield_b|Mirkwoord Oorlogsschild
-; itm_mirkwood_spear_shield_c|Mirkwood Swordsman Shield
+; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
 itm_mirkwood_helm_a|Mirkwood Boogschuttershelm
 itm_mirkwood_helm_b|Mirkwood Helm
-; itm_mirkwood_helm_c|Mirkwood Royal Spearman Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Archer Helm
+; itm_mirkwood_helm_c|Mirkwood Heavy Helm
+; itm_mirkwood_helm_d|Mirkwood Royal Helm
 itm_mirkwood_boots|Mirkwood Laarzen
-; itm_mirkwood_leather_greaves|Mirkwood Leather Greaves
 itm_harad_tunic|Harad Tuniek
 ; itm_harad_padded|Harondor Padded Armor
 ; itm_harad_hauberk|Harondor Hauberk
@@ -573,43 +567,26 @@ itm_harad_long_shield_e|Harad Slangenschild
 itm_harad_shield_a|Harondor Schild
 ; itm_harad_shield_b|Harondor Buckler
 ; itm_harad_shield_c|Harondor Buckler
-; itm_harad_tribal_a|Far Harad Shield
-; itm_harad_tribal_b|Far Harad Shield
+
 itm_harad_yellow_shield|Harad Schild
 itm_desert_boots|Woestijnlaarzen
 ; itm_harad_leather_greaves|Harad Greaves
 itm_harad_scale_greaves|Harad Laarzen
 itm_harad_lamellar_greaves|Harad Laarze
-; itm_khand_helmet_a1|Khand Helm With Camail
-itm_khand_helmet_a2|Khand Helm
-; itm_khand_helmet_a3|Khand Veiled Helm
-; itm_khand_helmet_b1|Khand Decorated Helm
-itm_khand_helmet_b2|Khand Gemaskerde Helm
-; itm_khand_helmet_b3|Khand Veiled Helm
-; itm_khand_helmet_b4|Khand Helm With Camail
-itm_khand_helmet_c3|Khand Infanteriehelm
-itm_khand_helmet_c4|Khand Infanteriehelm
-itm_khand_helmet_d1|Khand Gemaskerde Helm
-; itm_khand_helmet_d2|Khand Helm With Camail
-itm_khand_helmet_d3|Khand Gemaskerde Helm
-; itm_khand_helmet_e1|Khand Veiled Helm
-; itm_khand_helmet_e2|Khand Helm With Camail
-itm_khand_helmet_e3|Khand Helm
-; itm_khand_helmet_e4|Khand Veiled Helm
-; itm_khand_helmet_f1|Khand Veiled Helm
-itm_khand_helmet_mask1|Khand Masker
-itm_khand_helmet_mask2|Khand Masker
+itm_khand_inf_helm_a|Khand Helm
+itm_khand_inf_helm_b|Khand Helm
+; itm_khand_inf_helm_c1|Khand Bowl Helm
+; itm_khand_inf_helm_c2|Khand Bowl Helm
+; itm_khand_inf_helm_d|Khand Cone Helm
+; itm_khand_cav_helm_a|Khand Rider Helm
+; itm_khand_cav_helm_b|Khand Rider Helm
+; itm_khand_cav_helm_c|Khand Decorated Helm
+itm_khand_helm_mask|Khand Masker
 ; itm_khand_light|Khand Kilt
-itm_khand_foot_lam_a|Khand Pantser
-itm_khand_foot_lam_b|Khand Pantser
-itm_khand_foot_lam_c|Khand Pantser
-; itm_khand_heavy_lam|Khand Heavy Lamellar
 ; itm_khand_light_lam|Khand Light Lamellar
-; itm_khand_med_lam_b|Khand Medium Lamellar
-; itm_khand_med_lam_c|Khand Medium Lamellar
-; itm_khand_med_lam_d|Khand Medium Lamellar
-itm_khand_noble_lam|Khand Nobel Pantser
-; itm_variag_greaves|Variag Greaves
+; itm_khand_foot_lam|Khand Footman Armor
+; itm_khand_med_lam|Khand Medium Lamellar
+; itm_khand_heavy_lam|Khand Heavy Lamellar
 ; itm_khand_axe_great|Khand Great Axe
 ; itm_khand_axe_winged|Khand Winged Axe
 ; itm_khand_halberd|Khand Halberd
@@ -617,19 +594,18 @@ itm_khand_noble_lam|Khand Nobel Pantser
 ; itm_khand_voulge|Khand Voulge
 ; itm_khand_mace1|Khand Mace
 ; itm_khand_mace2|Khand Mace
-; itm_khand_mace_spiked|Khand Spiked Mace
+; itm_khand_throwing_axe|Khand Throwing Axe
 ; itm_khand_rammace|Khand Ram Mace
 ; itm_khand_pitsword|Pit Fighter Sword
 ; itm_khand_tulwar|Khand Tulwar
 ; itm_khand_2h_tulwar|Khand Tulwar
 itm_khand_lance|Khand Lans
 ; itm_easterling_round_horseman|Easterling Round Shield
-; itm_variag_gladiator_shield|Variag Gladiator Shield
+; itm_variag_gladiator_shield|Easterling Pit Shield
 ; itm_easterling_hawk_shield|Easterling Hawk Shield
 itm_rhun_bull1_shield|Rhun Schild
 itm_rhun_bull2_shield|Rhun Schild
 itm_rhun_bull3_shield|Rhun Schild
-; itm_furry_boots|Furry Boots
 ; itm_rhun_armor_a|Rhun Light Battlewear
 ; itm_rhun_armor_b|Rhun Light Battlewear
 ; itm_rhun_armor_d|Rhun Light Battlewear
@@ -661,41 +637,24 @@ itm_rhun_helm_o|Rhun
 ; itm_rhun_greatfalchion|Savage Great Falchion
 ; itm_rhun_greatsword|Savage Great Sword
 ; itm_rhun_shortsword|Savage Shortsword
-
 ; itm_rhun_sword|Savage Sword
 ; itm_rhun_shield|Rhun Kite Shield
 ; itm_dale_light_a|Dale Militia Jacket
-
 ; itm_dale_light_b|Northmen Light Lamellar
-
 ; itm_dale_med_a|Northmen Heavy Lamellar
-
 ; itm_dale_med_b|Dale Leather Armor
-
 ; itm_dale_med_c|Dale Leather Over Mail
-
 ; itm_dale_med_d|Dale Lamellar Armor
-
 ; itm_dale_heavy_a|Dale Lamellar Over Mail
-
 ; itm_dale_heavy_b|Dale Plated Coat
-
 ; itm_dale_heavy_c|Rhovanion Mail
-
 ; itm_dale_armor_l|Dale Noble Gorget
-
 ; itm_dale_helmet_a|Dale Light Infantry Helm
-
 ; itm_dale_helmet_b|Dale Light Archer Helm
-
 ; itm_dale_helmet_c|Dale Infantry Helm
-
 ; itm_dale_helmet_d|Dale Archer Helm
-
 ; itm_dale_helmet_e|Barding Helm
-
 ; itm_dale_helmet_f|Barding Helm
-
 ; itm_dale_sword|Dale Shortsword
 ; itm_dale_sword_long|Dale Longsword
 ; itm_dale_sword_broad|Dale Infantry Sword
@@ -712,44 +671,23 @@ itm_rhun_helm_o|Rhun
 ; itm_umb_armor_e|Corsair Hauberk
 ; itm_umb_armor_f|Corsair Noble Armour
 ; itm_umb_helm_a|Corsair Shell Helm
-
-; itm_umb_helm_b|Corsair Shell Helm
-
+; itm_umb_helm_b|Corsair Tall Helm
 ; itm_umb_helm_c|Corsair Militia Helm
-
 ; itm_umb_helm_d|Corsair Raider Helm
-
-; itm_umb_helm_e|Corsair High Helm
-
-; itm_umb_helm_f|Corsair High Helm
-
-; itm_umb_hood|Black Hood
-
 ; itm_corsair_boots|Corsair Boots
-
 ; itm_umb_shield_a|Corsair Shield
-
 ; itm_umb_shield_b|Corsair Buckler
-
 ; itm_umb_shield_c|Corsair Buckler
-
 ; itm_umb_shield_d|Corsair Buckler
-
 ; itm_umbar_spear|Umbar Short Spear
-
 ; itm_umbar_cutlass|Umbar Cutlass
-
 ; itm_kraken|Kraken Cutlass
-
 ; itm_umbar_rapier|Umbar Boarding Sword
-
 ; itm_corsair_harpoon|Corsair Harpoon
 ; itm_corsair_sword|Corsair Eket
-
 ; itm_corsair_throwing_dagger|Crooked Throwing Daggers
 ; itm_umbar_pike|Corsair Trident
 ; itm_woodman_tunic|Woodmen Tunic
-
 ; itm_woodman_scout|Woodmen Scout Cape
 ; itm_woodman_padded|Woodmen Padded Armor
 ; itm_beorn_tunic|Beorning Tunic
@@ -757,110 +695,63 @@ itm_rhun_helm_o|Rhun
 ; itm_beorn_heavy|Beorning Heavy Armor
 ; itm_beorn_berserk|Beorning Berserker Kit
 ; itm_beorn_chief|Beorning Chieftan's Tunic
-
 ; itm_beorn_helmet|Bear Skullcap
 ; itm_beorn_shield|Northmen Shield
 ; itm_beorn_axe|Beorning Axe
 ; itm_beorn_staff|Woodmen Staff
 ; itm_beorn_battle_axe|Beorning War Axe
 ; itm_dwarf_shield_a|Dwarven Angular Shield
-
 ; itm_dwarf_shield_b|Dwarven Tower Shield
-
 ; itm_dwarf_shield_c|Dwarven Fighting Shield
-
 ; itm_dwarf_shield_d|Dwarven Round Shield
-
 ; itm_north_round_shield|Northmen Round Shield
-
 itm_free_dwarf_shield_g|Dwergen Schild
-
 itm_free_dwarf_shield_i|Dwergen Schild
-
 itm_free_dwarf_shield_j|Dwergen Schild
-
 itm_free_dwarf_shield_k|Dwergen Schild
-
 ; itm_woodmen_heavy|Mirkwood Armor
-
 itm_dwarf_sword_a|Dwergen Zwaard
-
 ; itm_dwarf_sword_b|Beorning Shortsword
 itm_dwarf_sword_c|Dwergen Zwaard
 itm_dwarf_sword_d|Dwergen Zwaard
-
 ; itm_dwarf_battle_axe|Dwarf Battle Axe
-
 ; itm_dwarf_great_axe|Dwarf Great Axe
-
 ; itm_dwarf_great_mattock|Dwarf Great Mattock
-
 ; itm_dwarf_great_pick|Dwarf Great Pick
-
 ; itm_dwarf_war_pick|Dwarf War Pick
-
 ; itm_dwarf_mattock|Dwarf Mattock
-
 ; itm_dwarf_hand_axe|Dwarf Short Axe
-
 ; itm_dwarf_throwing_axe|Dwarf Throwing Axe
-
 itm_dwarf_spear|Dwergen Speer
-
 ; itm_dwarf_spear_b|Dwarf Pike
-
 ; itm_dwarf_spear_c|Dwarf Longaxe
-
 ; itm_dwarf_helm_coif|Dwarf Coif
-
 ; itm_dwarf_nasal_b|Dwarf Nasal Helm
-
 ; itm_north_skullcap|North Skullcap
-
 ; itm_dwarf_helm_kettle|Dwarf Kettle Helm
-
 ; itm_dwarf_helm_fris|Dwarf Frisian Helm
-
 ; itm_north_leather_skullcap|North Light Skullcap
-
 ; itm_dwarf_hood|Dwarf Hood
-
 ; itm_dwarf_nasal|Dwarf Nasal Tophelm
-
 ; itm_north_nasal_helm|North Nasal Helm
-
 ; itm_dwarf_helm_p|Dwarf King Helm
-
 ; itm_dwarf_miner|Dwarf Light Helm
-
 ; itm_north_chieftain|North Chieftain Helm
-
 ; itm_dwarf_helm_round|Dwarf Round Helm
-
 ; itm_dwarf_helm_sallet|Dwarf Sallet
-
 ; itm_dwarf_armor_d|Iron Hills Coat of Scales
 ; itm_dwarf_armor_a|Erebor Surcoat over Mail
-
 ; itm_leather_dwarf_armor|Dwarven Padded Coat
-
 ; itm_dwarf_armor_b|Erebor Tunic over Mail
-
 ; itm_leather_dwarf_armor_b|Dwarven Padded Jerkin
-
 ; itm_dwarf_armor_c|Erebor Scale Mail
-
 ; itm_dwarf_vest|Dwarven Tunic
-
 ; itm_dwarf_vest_b|Iron Hills Mail
 ; itm_dwarf_pad_boots|Dwarven Padded Boots
 ; itm_dwarf_chain_boots|Dwarven Mail Chausses
 ; itm_dwarf_scale_boots|Dwarven Scale Boots
 ; itm_good_mace|Mace
 ; itm_far_harad_shield_paint|Wicker Shield
-; itm_nazgulrobe|Nazgul Robe
-
-; itm_werewolf|Werewolf
 ; itm_mordor_banner|Mordor Banner
 ; itm_isengard_banner|Isengard banner
 ; itm_woodelf_banner|Mirkwood Banner
@@ -870,7 +761,6 @@ itm_dwarf_spear|Dwergen Speer
 ; itm_amroth_lance_banner|Dol Amroth Lance With Banner
 ; itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
 ; itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
-
 ; itm_ent_water|Strange bowl of water
 itm_map|Kaart van Midden-Aarde
 itm_athelas_reward|Athelas Plant
@@ -886,14 +776,12 @@ itm_athelas_reward|Athelas Plant
 ; itm_orc_brew|Orc Brew
 itm_rohan_saddle|Zadel van Thengel
 ; itm_mearas_reward|Mearh Stallion
-
 ; itm_shield_of_tuor|Shield of Tuor
 ; itm_riv_armor_reward|Rivendell Decorated Armor
 ; itm_westernesse1h_reward|Sword of Westernesse
-; itm_westernesse2h_reward|Sword of The Great Serpent
+; itm_westernesse2h_reward|Sword of Westernesse
 ; itm_mirkwood_sword_reward|Greenwood Relic Sword
 ; itm_nazgul_sword|Wicked Sword
-
 ; itm_cooking_cauldron|Cooking Cauldron
 itm_eorl_cavalry_sword|Zwaard van Eorl
 ; itm_garlic_reward|Garlic
@@ -907,7 +795,7 @@ itm_explosive_reward|Isengard Mijn
 ; itm_corsair_trident|Trident of Sea Fury
 ; itm_crebain_reward|Isengard Crebain
 ; itm_miruvor_reward|Miruvor Flask
-; itm_wheeled_cage|Giant wheeled cage
+; itm_wheeled_cage|Giant Wheeled Cage
 ; itm_orc_throwing_axes_reward|Gundabad Flying Axes
 ; itm_corsair_throwing_dagger_reward|Poisoned Throwing Daggers
 ; itm_dwarf_shield_reward|Shield of Kheled-zaram
@@ -916,15 +804,13 @@ itm_explosive_reward|Isengard Mijn
 ; itm_lorien_bow_reward|Noldorin Bow
 ; itm_elven_cloak|Elven Cloak
 ; itm_dale_sword_reward|Dale Royal Sword
-
 ; itm_dale_armor_reward|Dale Noblemen Mail
-; itm_leather_gloves_reward|Hunting Gloves
+; itm_leather_gloves_reward|Archer Gloves
 ; itm_beorn_shield_reward|Beorning Shield
 ; itm_beorn_axe_reward|Bear Club
 itm_moria_arrow_reward|Moria Gifpijlen
 ; itm_khamul_helm|Helm of Khamul
-; itm_guldur_arrows_reward|Guldur Arrows
-itm_sarustaff|Tovenaar's Staf
+; itm_black_arrows_reward|Black Arrows
 ; itm_rohan_armor_th|Rohan Royal Armor
 ; itm_prisoner_coll_chain|Prisoner Chains
 ; itm_witchking_helmet|Wicked Helm
@@ -934,7 +820,7 @@ itm_feet_chains_dwarf|Voetketenen
 itm_spider|Spin
 itm_bear|Beer
 itm_wolf|Wolf
-; itm_defiled_armor_gondor|Defiled Gondor Leader's Surcoat
+; itm_werewolf|Werewolf
 ; itm_defiled_armor_rohan|Defiled Rohan Hauberk
 ; itm_defiled_armor_dale|Defiled Dale Noble Armor
 ; itm_beorn_axe_no_attack|Beorning Axe

@@ -211,12 +211,13 @@ qstr_+1_to_Weapon_Mastery|+1 武 器 掌 握
 qstr_+1_to_Wound_Treatmen|+1 療 傷
 qstr_+1_to_Tactics|+1 戰 術
 qstr_+1_to_Power_Strike|+1 強 擊
-qstr_when_equipped|已 裝 備 時
 qstr_+1_to_Strength|+1 力 量
 qstr_+1_to_Agility|+1 敏 捷
 qstr_+1_to_Leadership|+1 統 御
 qstr_+1_to_Wildcraft|+1 野 外 求 生
 qstr_+1_to_Power_Draw|+1 強 弓
+; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
+; qstr_Who_might_be_interes|Who might be interested in this?
 qstr_Turns_nature_to_your|將 自 然 轉 化 為 你 的 一 方 (效 果 與 Wildcraft 一 起 擴 展 )
 qstr_+1_to_Trainer|+1 教 練
 qstr_Recruits_Tribal_Orcs|招 募 部 落 獸 人
@@ -225,10 +226,15 @@ qstr_rallies|集 結
 qstr_+{reg1}_{s3}_in_batt|戰 鬥 中 +{reg1} {s3}
 qstr_+1_to_Charisma|+1 魅 力
 qstr_+1_to_Surgery|+1 手 術
+; qstr_+1_to_Intelligence|+1 to Intelligence
 qstr_+1_to_Ironflesh|+1 鐵 骨
 qstr_+1_to_Prisoner_Mgmt|+1 俘 虜 管 理
+qstr_when_equipped|已 裝 備 時
+; qstr_+1_to_Riding|+1 to Riding
+; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
 qstr_+2_to_Tactics|+2 工 程
 qstr_+3_to_Spotting|+3 偵 察
+; qstr_+2_to_Athletics|+2 to Athletics
 qstr_Less_Dunnish_upkeep|減 少 登 丹 的 消 耗
 qstr_Less_Wargs_upkeep|減 少 座 狼 的 消 耗
 qstr_Light_Armor|輕 型 鎧 甲
@@ -1119,17 +1125,17 @@ qstr_How_do_magnets_work?|磁 鐵 是 做 什 麼 的 ？
 qstr_Um..._by_enchanting_|恩...  用 來 吸 鐵 ？
 qstr_Magnets_are_made_of_|磁 鐵 是 開 採 自 地 下 的 金 屬 做 的 ， 它 天 然 就 有 磁 力 因 為 它 含 有 引 力 的 成 分 。
 qstr_i_wont_a_bonerlrord_|哇 想 要 騎 砍 2 領 主 啊 啊 ！ 11 ！
-qstr_I_m_sure_the_TLD_tea|我 可 以 肯 定 當 條 件 滿 足 是 ， 最 後 之 日 團 隊 肯 定 會 完 成 這 一 要 求 的 。
-qstr_Install_TLD_in_your_|安裝最後之日到騎馬與砍殺2：領主的模組文件夾，在module.ini文件中增加一行指令：“compatible_with_wfas = 1”，然後你就可以在戰團和Warrider 0.202版裡面玩最後之日了。
+; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
+; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
 qstr_dis_mod_takes_2_long|擇個模組花了老長時間才發布！爛！ ！
 qstr_Well_there_s_a_lot_o|嗯，因為有很多新的材質紋理和其它東西要做，我猜這很費時…
 qstr_It_has_been_recently|這個模組的正式版近日發布了，如果你忘了網址，你可以上lemonparty.org去下載。
 qstr_i_wont_decapitated_e|我不會在多人遊戲中殺死大象，絕不！ ！
 qstr_I_don_t_think_there_|我不認為最後之日有聯機，不過大象倒是個好點子。
 qstr_There_is_a_hidden_el|有一個大象死亡模式隱藏在最後之日里。但是你要先刪掉所有存檔，然後開新檔，不保存玩100天。接著在角色菜單處按Alt+F4。相信我朋友，這完全值得！
-qstr_Did_you_bring_your_z|你 帶 來 沃 步 思 狗 了 麼 ？
-qstr_What_s_zupdog?|沃 步 思 狗 是 啥 ？
-qstr_My_zupdog_is_ill_but|我 的 沃 步 思 狗 病 了 ， 當 我 帶 來 了 我 的 沃 步 思 豬 。
+; qstr_Y_NO_ChINESE??|Y NO ChINESE??
+; qstr_Just_to_troll_you_tr|Just to troll you, troll!
+; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
 qstr_Wai_no_plate_armour_|啥 ？ 這 個 模 組 裡 沒 有 板 甲 ？
 qstr_What_is_plate_armour|什 麼 是 板 甲 ？ 沒 聽 說 過 。
 qstr_Wai_no_female_trolls|為 何 沒 有 母 食 人 妖? 蛤? 蛤? 你 是 我 的 婊 子!
@@ -1212,7 +1218,7 @@ qstr_I_am_{s4}_{s15}_of_{|我 是 {s4} ， {s6 } 的 {s15}
 qstr_I_am_{s4}_a_commande|我 是 {s4} ， {s6} 的 指 揮 官
 qstr_{s9}{reg5?_and_the_r|{s9} {reg5?和 {s8} 的 統 治 者 。 :}
 qstr_{playername}_our_sco|{playername} ， 我 們 的 探 子 帶 來 了 你 成 功 的 消 息 。 願 你 在 這 幸 福 的 歲 月 裡 度 過 這 一 天 ！ 你 大 勝 利 擊 退 了 {s7} ， 敵 人 的 大 舉 進 攻 的 計 畫 已 經 失 敗 了 。 我 們 希 望 他 們 會 為 了 自 己 的 失 敗 而 吵 架 。 我 們 也 希 望 他 們 現 在 對 你 會 感 到 恐 懼 ！ 至 少 你 讓 我 們 暫 時 休 息 了 一 下 。
-qstr_Well_{playername}_yo|那 麼 ， {playername} ， 你 已 經 回 來 了 ， 而 且 對 我 們 來 說 是 個 好 消 息 。 我 現 在 看 到 你 不 是 在 吹 噓 和 欺 騙 ， 如 果 我 能 親 眼 目 睹 {s7} 落 在 你 面 前 ！ 毫 無 疑 問 ， 我 們 的 敵 人 將 會 非 常 沮 喪 。 我 保 證 ， 他 們 失 去 了 理 智 。 如 他 們 所 說 ， 把 蛇 的 頭 割 下 來 ， 交 易 就 完 成 了 。 好 吧 ， 我 現 在 必 須 帶 領 我 的 主 人 贏 得 真 正 的 勝 利 。 你 的 貢 獻 將 被 報 告 ， <Player> 。 不 要 害 怕 。
+; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
 qstr_Alas_that_I_could_no|唉 ， 我 無 法 終 結 {s8} 的 {s7} ， 但 如 果 我 們 再 次 見 面 ， 那 就 讓 他 們 小 心 吧 。
 qstr__I_should_rather_mak|我 寧 願 自 己 報 告 我 對 {s8} {s7} 的 勝 利 - 主 要 的 榮 耀 是 我 的 ， 你 不 會 忘 記 的 ！
 qstr_Very_well_done_{play|做 得 很 好 ！  {playername} ！ 正 如 我 所 期 望 的 ， 你 抓 住 了 間 諜 和 他 的 接 頭 人 。 他 們 現 在 正 拷 在 一 起 等 待 問 詢 ； 他 們 有 很 多 事 情 要 好 好 的 解 釋 一 下 了 。 {playername} ， 我 非 常 高 興 你 能 完 成 這 個 任 務 。 請 收 下 這 袋 錢 ， 這 是 你 應 得 的 獎 賞 。
@@ -1399,6 +1405,7 @@ qstr_I_m_sorry_but_we_can|對不起，我們現在不能幫助他們。
 qstr_Bah!_Far_more_glory_|呸！在其他地方贏得的榮譽遠遠超過微不足道的海盜。
 qstr_This_raid_does_not_i|這次襲擊對我不感興趣。\n我會在其他地方贏得榮耀。
 qstr_{s9}_asked_you_to_de|{s9} 要你摧毀 {s1} 附近的偵察營。
+; qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
 qstr_{s9}_asked_you_to_def|{s9} 要你保衛 {s1} 附近遭受攻擊的村莊。
 qstr_{s9}_asked_you_to_ra|{s9} 要你襲擊 {s1} 附近的一個村莊。
 qstr_These_soldiers_may_w|這些士兵勢必會在我的計劃中力挽狂瀾，{playername}。\n我相信你訓練得很好。\n我對你非常感謝。

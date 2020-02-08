@@ -30,9 +30,9 @@ itm_arnor_warhorse|亚尔诺战马
 itm_dunedain_warhorse|登丹战马
 itm_rohirrim_courser|洛汗骏马
 itm_rohirrim_hunter|洛汗猎马
-itm_rohirrim_courser2|洛汗骏马
+; itm_rohirrim_courser2|Rohirrim Armoured Courser
 itm_rohan_warhorse|洛汗战马
-itm_thengel_warhorse|洛汗重装战马
+; itm_thengel_warhorse|Eorl Warhorse
 itm_rhun_horse_a|卢恩马
 itm_rhun_horse_b|卢恩马
 itm_rhun_horse_d|卢恩马
@@ -66,13 +66,7 @@ itm_wargarmored_2b|披甲座狼
 itm_wargarmored_2c|披甲座狼
 itm_wargarmored_3a|披甲座狼
 itm_warg_reward|巨型座狼
-itm_axe_a|北方人斧
-itm_axe_b|北方人长毛斧
-itm_axe_c|北方人斧
-itm_axe_d|北方人斧
 itm_tree_trunk_club_a|树干
-itm_long_bearded_axe|北方人长毛巨斧
-itm_2_handed_axe|北方人巨斧
 itm_free_giant_hammer|巨型战锤
 itm_giant_mace|巨型钉头锤
 itm_troll_shield_a|食人妖盾
@@ -91,8 +85,22 @@ itm_isengard_arrow|艾辛格箭
 itm_leather_gloves|皮手套
 itm_mail_mittens|链甲手套
 itm_leather_boots|皮靴
+; itm_leather_boots_dark|Rider Boots
+; itm_splinted_greaves|Splinted Greaves
 itm_white_tunic_a|平民服装
+itm_rohan_shoes|皮鞋
+itm_furry_boots|毛靴
 itm_black_tunic|黑色束腰外衣
+itm_hood_black|黑兜帽
+itm_hood_green|绿色兜帽
+; itm_hood_grey|Grey Hood
+; itm_hood_leather|Leather Hood
+itm_axe_a|北方人斧
+itm_axe_b|北方人长毛斧
+itm_axe_c|北方人斧
+itm_axe_d|北方人斧
+itm_long_bearded_axe|北方人长毛巨斧
+itm_2_handed_axe|北方人巨斧
 itm_shortened_spear|短柄枪
 itm_spear|长枪
 itm_light_lance|轻型骑枪
@@ -110,7 +118,7 @@ itm_dwarf_short_bow|矮人短弓
 itm_harad_bow|哈拉德弯弓
 itm_lg_bow|雕卫弓
 itm_riv_bow|瑞文戴尔弓
-itm_rhun_bow|卢恩弓
+; itm_rhun_bow|Balchoth Bow
 itm_lorien_bow|罗斯洛立安皇家卫队弓
 itm_isengard_large_bow|艾辛格大型弓
 itm_dale_bow|河谷镇弓
@@ -122,7 +130,7 @@ itm_heavy_throwing_spear|重型标枪
 itm_javelin|标枪
 itm_harad_javelin|哈拉德标枪
 itm_gondor_javelin|刚铎标枪
-itm_rohirrim_throwing_axe|洛汗掷斧
+; itm_rohirrim_throwing_axe|Northmen Throwing Axes
 itm_loss_throwing_axes|罗萨那奇掷斧
 itm_arnor_helm_a|亚尔诺头盔
 itm_arnor_helm_b|亚尔诺头盔
@@ -273,9 +281,9 @@ itm_lorien_sword_a|罗斯洛立安长剑
 itm_lorien_sword_b|罗斯洛立安短剑
 itm_lorien_sword_c|罗斯洛立安战剑
 itm_lorien_archer|罗斯洛立安射手甲
-itm_lorien_armor_a|罗斯洛立安步兵甲
-itm_lorien_armor_b|罗斯洛立安重型步兵甲
-itm_lorien_armor_c|罗斯洛立安皇家射手甲
+; itm_lorien_armor_a|Lorien Quilted Armor
+; itm_lorien_armor_b|Lorien Mail Armor
+; itm_lorien_armor_c|Lorien Scale Armor
 itm_lorien_armor_d|罗斯洛立安皇家剑士甲
 itm_lorien_armor_e|罗斯洛立安守护者斗篷
 itm_lorien_armor_f|罗斯洛立安精英甲
@@ -295,8 +303,8 @@ itm_orc_furboot_tall|半兽人皮靴
 itm_orc_tribal_a|未处理的皮肤
 itm_orc_tribal_b|未处理的皮肤
 itm_orc_tribal_c|未处理的皮肤
-itm_evil_gauntlets_a|护手
-itm_evil_gauntlets_b|护手
+; itm_evil_gauntlets_a|Black Gloves
+; itm_evil_gauntlets_b|Black Gauntlets
 itm_isen_orc_armor_a|艾辛格半兽人甲
 itm_isen_orc_armor_b|艾辛格半兽人甲
 itm_isen_orc_armor_c|艾辛格半兽人甲
@@ -407,9 +415,7 @@ itm_m_uruk_med_b|强兽人重链甲
 itm_m_uruk_med_c|强兽人轻鳞甲
 itm_m_uruk_heavy_a|强兽人重鳞甲
 itm_m_uruk_heavy_b|强兽人板甲
-itm_m_uruk_heavy_c|巴拉多要塞板甲
-itm_m_uruk_heavy_j|强兽人重型甲
-itm_m_uruk_heavy_k|强兽人护卫甲
+; itm_m_uruk_heavy_c|Lugburz Platemail
 itm_m_cap_armor|魔多队长甲
 itm_black_num_armor|黑暗努曼诺尔甲
 itm_m_armor_a|魔多甲
@@ -469,10 +475,14 @@ itm_dunnish_war_axe|丹尼斯战斧
 itm_dunnish_axe|丹尼斯斧
 itm_dunland_spear|丹尼斯长枪
 itm_dunnish_pike|丹尼斯长柄枪
-itm_rohan_armor_a|洛汗衫
-itm_rohan_armor_e|洛汗链甲
-itm_rohan_armor_h|洛汗皮甲
-itm_rohan_armor_k|洛汗链甲
+itm_rohan_cav_sword|洛汗骑兵剑
+itm_rohan_inf_sword|洛汗剑
+itm_rohan_spear|洛汗长枪
+itm_rohan_lance|洛汗骑枪
+itm_rohan_sword_c|洛汗剑
+itm_rohirrim_short_axe|洛汗短斧
+itm_rohirrim_long_hafted_axe|洛汗长柄斧
+itm_rohan_2h_sword|洛汗战剑
 itm_rohan_recruit|洛汗加厚短上衣
 itm_rohan_leather|洛汗皮背心
 itm_rohan_mail|洛汗链甲
@@ -487,10 +497,6 @@ itm_rohan_inf_helmet_b|洛汗护眼盔
 itm_rohan_archer_helmet_a|洛汗护鼻盔
 itm_rohan_archer_helmet_b|洛汗护鼻盔
 itm_rohan_archer_helmet_c|洛汗护卫盔
-itm_rohan_cav_helmet_a|洛汗骑兵盔
-itm_rohan_cav_helmet_b|洛汗骑兵盔
-itm_rohan_cav_helmet_c|洛汗骑兵盔
-itm_rohan_captain_helmet|洛汗队长盔
 itm_rohan_shield_a|洛汗盾
 itm_rohan_shield_b|洛汗盾
 itm_rohan_shield_c|洛汗盾
@@ -500,36 +506,24 @@ itm_rohan_shield_f|洛汗盾
 itm_rohan_shield_g|洛汗皇家盾
 itm_rohan_light_greaves|洛汗轻型胫甲
 itm_rohirrim_war_greaves|洛汗战斗胫甲
-itm_rohan_shoes|皮鞋
-itm_rohan_cav_sword|洛汗骑兵剑
-itm_rohan_inf_sword|洛汗剑
-itm_rohan_spear|洛汗长枪
-itm_rohan_lance|洛汗骑枪
-itm_rohan_sword_c|洛汗剑
-itm_rohirrim_short_axe|洛汗短斧
-itm_rohirrim_long_hafted_axe|洛汗长柄斧
-itm_rohan_2h_sword|洛汗战剑
-itm_mirkwood_light_scale|木精灵轻型鳞甲
-itm_mirkwood_armor_a|轻型皮甲
-itm_mirkwood_armor_b|轻型鳞甲
-itm_mirkwood_armor_c|幽暗密林皇家链甲
-itm_mirkwood_armor_d|轻外套
-itm_mirkwood_armor_e|轻型加外套链甲
-itm_mirkwood_armor_f|幽暗密林叶鳞甲
+; itm_mirkwood_leather|Woodelf Leather Armor
+; itm_mirkwood_pad|Greenwood Quilted Coat
+; itm_mirkwood_mail|Greenwood Mail
+; itm_mirkwood_scale|Greenwood Light Scale
+itm_mirkwood_heavy_scale|幽暗密林叶鳞甲
 itm_mirkwood_great_spear|幽暗密林巨型枪
 itm_mirkwood_war_spear|幽暗密林战枪
 itm_mirkwood_short_spear|幽暗密林长枪
 itm_mirkwood_knife|幽暗密林白刃
-itm_mirkwood_sword|幽暗密林剑
-itm_mirkwood_spear_shield_a|幽暗密林枪兵盾
+; itm_mirkwood_axe|Mirkwood Axe
+; itm_mirkwood_spear_shield_a|Mirkwood Shield
 itm_mirkwood_spear_shield_b|幽暗密林战盾
-itm_mirkwood_spear_shield_c|幽暗密林剑士盾
+; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
 itm_mirkwood_helm_a|幽暗密林射手盔
 itm_mirkwood_helm_b|幽暗密林盔
-itm_mirkwood_helm_c|幽暗密林皇家枪兵盔
-itm_mirkwood_helm_d|幽暗密林皇家射手盔
+; itm_mirkwood_helm_c|Mirkwood Heavy Helm
+; itm_mirkwood_helm_d|Mirkwood Royal Helm
 itm_mirkwood_boots|幽暗密林靴
-itm_mirkwood_leather_greaves|幽暗密林皮胫甲
 itm_harad_tunic|哈拉德束腰外衣
 itm_harad_padded|哈隆铎加厚甲
 itm_harad_hauberk|哈隆铎链甲
@@ -573,43 +567,26 @@ itm_harad_long_shield_e|哈拉德蛇纹盾
 itm_harad_shield_a|哈隆铎盾
 itm_harad_shield_b|哈隆铎圆盾
 itm_harad_shield_c|哈隆铎圆盾
-itm_harad_tribal_a|远哈拉德盾
-itm_harad_tribal_b|远哈拉德盾
+
 itm_harad_yellow_shield|哈拉德盾
 itm_desert_boots|沙漠靴
 itm_harad_leather_greaves|哈拉德胫甲
 itm_harad_scale_greaves|哈拉德靴
 itm_harad_lamellar_greaves|哈拉德靴
-itm_khand_helmet_a1|侃德护肩盔
-itm_khand_helmet_a2|侃德盔
-itm_khand_helmet_a3|侃德蒙面盔
-itm_khand_helmet_b1|侃德饰纹盔
-itm_khand_helmet_b2|侃德覆面盔
-itm_khand_helmet_b3|侃德蒙面盔
-itm_khand_helmet_b4|侃德带披肩盔
-itm_khand_helmet_c3|侃德步兵盔
-itm_khand_helmet_c4|侃德步兵盔
-itm_khand_helmet_d1|侃德覆面盔
-itm_khand_helmet_d2|侃德带披肩盔
-itm_khand_helmet_d3|侃德覆面盔
-itm_khand_helmet_e1|侃德蒙面盔
-itm_khand_helmet_e2|侃德带披肩盔
-itm_khand_helmet_e3|侃德盔
-itm_khand_helmet_e4|侃德蒙面盔
-itm_khand_helmet_f1|侃德蒙面盔
-itm_khand_helmet_mask1|侃德面具
-itm_khand_helmet_mask2|侃德面具
+itm_khand_inf_helm_a|侃德盔
+itm_khand_inf_helm_b|侃德盔
+; itm_khand_inf_helm_c1|Khand Bowl Helm
+; itm_khand_inf_helm_c2|Khand Bowl Helm
+; itm_khand_inf_helm_d|Khand Cone Helm
+; itm_khand_cav_helm_a|Khand Rider Helm
+; itm_khand_cav_helm_b|Khand Rider Helm
+itm_khand_cav_helm_c|侃德饰纹盔
+itm_khand_helm_mask|侃德面具
 itm_khand_light|侃德短裙
-itm_khand_foot_lam_a|侃德甲
-itm_khand_foot_lam_b|侃德甲
-itm_khand_foot_lam_c|侃德甲
-itm_khand_heavy_lam|侃德重型板甲
 itm_khand_light_lam|侃德轻型板甲
-itm_khand_med_lam_b|侃德板甲
-itm_khand_med_lam_c|侃德板甲
-itm_khand_med_lam_d|侃德板甲
-itm_khand_noble_lam|侃德贵族甲
-itm_variag_greaves|维瑞亚胫甲
+; itm_khand_foot_lam|Khand Footman Armor
+itm_khand_med_lam|侃德板甲
+itm_khand_heavy_lam|侃德重型板甲
 itm_khand_axe_great|侃德巨斧
 itm_khand_axe_winged|侃德翼斧
 itm_khand_halberd|侃德斧枪
@@ -617,19 +594,18 @@ itm_khand_trident|侃德三叉戟
 itm_khand_voulge|侃德钩镰枪
 itm_khand_mace1|侃德钉头锤
 itm_khand_mace2|侃德钉头锤
-itm_khand_mace_spiked|侃德狼牙棒
+; itm_khand_throwing_axe|Khand Throwing Axe
 itm_khand_rammace|侃德冲锤
 itm_khand_pitsword|侃德洞穴斗士剑
 itm_khand_tulwar|侃德马刀
 itm_khand_2h_tulwar|侃德马刀
 itm_khand_lance|侃德骑枪
 itm_easterling_round_horseman|东方人圆盾
-itm_variag_gladiator_shield|维瑞亚角斗士盾
+; itm_variag_gladiator_shield|Easterling Pit Shield
 itm_easterling_hawk_shield|东方人鹰盾
 itm_rhun_bull1_shield|卢恩盾
 itm_rhun_bull2_shield|卢恩盾
 itm_rhun_bull3_shield|卢恩盾
-itm_furry_boots|毛靴
 itm_rhun_armor_a|卢恩轻型战衣
 itm_rhun_armor_b|卢恩轻型战衣
 itm_rhun_armor_d|卢恩轻型战衣
@@ -661,41 +637,24 @@ itm_rhun_glaive|卢恩长柄刀
 itm_rhun_greatfalchion|野蛮人巨型刀
 itm_rhun_greatsword|野蛮人巨剑
 itm_rhun_shortsword|野蛮人短剑
-
 itm_rhun_sword|野蛮人剑
 itm_rhun_shield|卢恩筝形盾
 itm_dale_light_a|河谷镇民兵夹克
-
 itm_dale_light_b|北方人轻板甲
-
 itm_dale_med_a|北方人重板甲
-
 itm_dale_med_b|河谷镇皮甲
-
 itm_dale_med_c|河谷镇皮罩链甲
-
 itm_dale_med_d|河谷镇板甲
-
 itm_dale_heavy_a|河谷镇罩锁甲板甲
-
 itm_dale_heavy_b|河谷镇加强外套
-
 itm_dale_heavy_c|罗马尼安链甲
-
 itm_dale_armor_l|河谷镇贵族饰领
-
 itm_dale_helmet_a|河谷镇步兵轻型盔
-
 itm_dale_helmet_b|河谷镇射手轻型盔
-
 itm_dale_helmet_c|河谷镇步兵盔
-
 itm_dale_helmet_d|河谷镇射手盔
-
 itm_dale_helmet_e|披甲盔
-
 itm_dale_helmet_f|披甲盔
-
 itm_dale_sword|河谷镇短剑
 itm_dale_sword_long|河谷镇长剑
 itm_dale_sword_broad|河谷镇步兵剑
@@ -712,44 +671,23 @@ itm_umb_armor_d|海盗鳞甲
 itm_umb_armor_e|海盗链甲
 itm_umb_armor_f|海盗贵族甲
 itm_umb_helm_a|海盗壳盔
-
-itm_umb_helm_b|海盗壳盔
-
+; itm_umb_helm_b|Corsair Tall Helm
 itm_umb_helm_c|海盗民兵盔
-
 itm_umb_helm_d|海盗掠夺者盔
-
-itm_umb_helm_e|海盗高盔
-
-itm_umb_helm_f|海盗高盔
-
-itm_umb_hood|黑兜帽
-
 itm_corsair_boots|海盗靴
-
 itm_umb_shield_a|海盗盾
-
 itm_umb_shield_b|海盗圆盾
-
 itm_umb_shield_c|海盗圆盾
-
 itm_umb_shield_d|海盗圆盾
-
 itm_umbar_spear|昂巴短枪
-
 itm_umbar_cutlass|昂巴短剑
-
 itm_kraken|海怪短剑
-
 itm_umbar_rapier|昂巴登船剑
-
 itm_corsair_harpoon|海盗鱼叉
 itm_corsair_sword|海盗刃
-
 itm_corsair_throwing_dagger|弯曲的飞刀
 itm_umbar_pike|海盗三叉戟
 itm_woodman_tunic|林地人束腰外衣
-
 itm_woodman_scout|林地人斥候披肩
 itm_woodman_padded|林地人加厚甲
 itm_beorn_tunic|波宁束腰外衣
@@ -757,110 +695,63 @@ itm_beorn_padded|波宁加厚甲
 itm_beorn_heavy|波宁重型甲
 itm_beorn_berserk|波宁狂战士套件
 itm_beorn_chief|波宁酋长束腰外衣
-
 itm_beorn_helmet|熊头骨
 itm_beorn_shield|北方人盾
 itm_beorn_axe|波宁斧
 itm_beorn_staff|林地人木棒
 itm_beorn_battle_axe|波宁战斧
 itm_dwarf_shield_a|矮人角盾
-
 itm_dwarf_shield_b|矮人塔盾
-
 itm_dwarf_shield_c|矮人战斗盾
-
 itm_dwarf_shield_d|矮人圆盾
-
 itm_north_round_shield|北方人圆盾
-
 itm_free_dwarf_shield_g|矮人盾
-
 itm_free_dwarf_shield_i|矮人盾
-
 itm_free_dwarf_shield_j|矮人盾
-
 itm_free_dwarf_shield_k|矮人盾
-
 itm_woodmen_heavy|幽暗密林甲
-
 itm_dwarf_sword_a|矮人剑
-
 itm_dwarf_sword_b|波宁短剑
 itm_dwarf_sword_c|矮人剑
 itm_dwarf_sword_d|矮人剑
-
 itm_dwarf_battle_axe|矮人战斧
-
 itm_dwarf_great_axe|矮人巨斧
-
 itm_dwarf_great_mattock|矮人巨型鹤嘴锄
-
 itm_dwarf_great_pick|矮人巨型矿镐
-
 itm_dwarf_war_pick|矮人战镐
-
 itm_dwarf_mattock|矮人鹤嘴锄
-
 itm_dwarf_hand_axe|矮人短斧
-
 itm_dwarf_throwing_axe|矮人掷斧
-
 itm_dwarf_spear|矮人长枪
-
 itm_dwarf_spear_b|矮人长枪
-
 itm_dwarf_spear_c|矮人巨斧
-
 itm_dwarf_helm_coif|矮人兜帽
-
 itm_dwarf_nasal_b|矮人护鼻盔
-
 itm_north_skullcap|北方骷髅帽
-
 itm_dwarf_helm_kettle|矮人帽盔
-
 itm_dwarf_helm_fris|矮人椭圆饰纹覆面盔
-
 itm_north_leather_skullcap|北方人轻头骨
-
 itm_dwarf_hood|矮人兜帽
-
 itm_dwarf_nasal|矮人护鼻盔
-
 itm_north_nasal_helm|北方护鼻盔
-
 itm_dwarf_helm_p|矮人国王盔
-
 itm_dwarf_miner|矮人轻型盔
-
 itm_north_chieftain|北方人酋长盔
-
 itm_dwarf_helm_round|矮人圆盔
-
 itm_dwarf_helm_sallet|矮人头盔
-
 itm_dwarf_armor_d|铁丘陵鳞甲外套
 itm_dwarf_armor_a|孤山罩锁甲束腰长衣
-
 itm_leather_dwarf_armor|矮人加厚外套
-
 itm_dwarf_armor_b|孤山罩锁甲束腰外衣
-
 itm_leather_dwarf_armor_b|矮人加厚短上衣
-
 itm_dwarf_armor_c|孤山鳞锁甲
-
 itm_dwarf_vest|矮人束腰外衣
-
 itm_dwarf_vest_b|铁丘陵链甲
 itm_dwarf_pad_boots|矮人加厚靴
 itm_dwarf_chain_boots|矮人链胫甲
 itm_dwarf_scale_boots|矮人鳞甲靴
 itm_good_mace|钉头锤
 itm_far_harad_shield_paint|柳条盾
-itm_nazgulrobe|戒灵长袍
-
-itm_werewolf|狼人
 itm_mordor_banner|魔多旗帜
 itm_isengard_banner|艾辛格旗帜
 itm_woodelf_banner|幽暗密林旗帜
@@ -870,7 +761,6 @@ itm_gondor_lance_banner|刚铎带旗骑枪
 itm_amroth_lance_banner|多尔安罗斯带旗骑枪
 itm_rohan_lance_banner_sun|洛汗烈日旗骑枪
 itm_rohan_lance_banner_horse|洛汗骠骑旗骑枪
-
 itm_ent_water|一碗奇怪的水
 itm_map|中土世界地图
 itm_athelas_reward|阿西拉斯植物
@@ -886,14 +776,12 @@ itm_torque_reward|邪恶颈环
 itm_orc_brew|半兽人酒
 itm_rohan_saddle|先王塞哲尔的马鞍
 itm_mearas_reward|骏马麦赫
-
 itm_shield_of_tuor|图尔之盾
 itm_riv_armor_reward|瑞文戴尔饰纹甲
 itm_westernesse1h_reward|西方皇族之剑
-itm_westernesse2h_reward|大蛇之剑
+itm_westernesse2h_reward|西方皇族之剑
 itm_mirkwood_sword_reward|幽暗密林遗物剑
 itm_nazgul_sword|邪剑
-
 itm_cooking_cauldron|烹饪釜
 itm_eorl_cavalry_sword|先王伊欧的剑
 itm_garlic_reward|大蒜
@@ -907,7 +795,7 @@ itm_explosive_reward|艾辛格矿石
 itm_corsair_trident|海洋之怒三叉戟
 itm_crebain_reward|艾辛格巨鸦
 itm_miruvor_reward|精灵甜酒瓶
-itm_wheeled_cage|巨型笼车
+; itm_wheeled_cage|Giant Wheeled Cage
 itm_orc_throwing_axes_reward|刚达巴飞斧
 itm_corsair_throwing_dagger_reward|萃毒投掷匕首
 itm_dwarf_shield_reward|镜湖盾
@@ -916,15 +804,13 @@ itm_isen_uruk_heavy_reward|强兽人将军甲
 itm_lorien_bow_reward|诺德林弓
 itm_elven_cloak|精灵斗篷
 itm_dale_sword_reward|河谷镇皇家长剑
-
 itm_dale_armor_reward|河谷镇贵族链甲
-itm_leather_gloves_reward|狩猎手套
+; itm_leather_gloves_reward|Archer Gloves
 itm_beorn_shield_reward|波宁盾
 itm_beorn_axe_reward|熊棍
 itm_moria_arrow_reward|摩瑞亚萃毒箭
 itm_khamul_helm|戒灵克哈穆尔的头盔
-itm_guldur_arrows_reward|多尔哥多箭
-itm_sarustaff|巫师法杖
+; itm_black_arrows_reward|Black Arrows
 itm_rohan_armor_th|洛汗皇家盔甲
 itm_prisoner_coll_chain|俘虏手链
 itm_witchking_helmet|邪盔
@@ -934,7 +820,7 @@ itm_feet_chains_dwarf|脚链
 itm_spider|蜘蛛
 itm_bear|熊
 itm_wolf|狼
-itm_defiled_armor_gondor|有污迹的刚铎首领外套
+itm_werewolf|狼人
 itm_defiled_armor_rohan|有污迹的洛汗锁甲
 itm_defiled_armor_dale|有污迹的河谷贵族甲
 itm_beorn_axe_no_attack|波宁斧

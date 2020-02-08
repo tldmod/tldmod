@@ -42,8 +42,8 @@ trp_townsman|Városi
 trp_townsman_pl|Városiak
 trp_watchman|Városi asszony
 trp_watchman_pl|Városi asszonyok
-trp_i1_woodmen_man|Erdőnépi
-trp_i1_woodmen_man_pl|Erdőnépiek
+; trp_i1_woodmen_man|Woodmen Settler
+; trp_i1_woodmen_man_pl|Woodmen Settlers
 trp_i2_woodmen_forester|Erdőnépi erdész
 trp_i2_woodmen_forester_pl|Erdőnépi erdészek
 trp_i3_woodmen_skilled_forester|Erdőnépi tapasztalt erdész
@@ -130,8 +130,8 @@ trp_i3_rhun_tribal_infantry|Rhûni törzsi gyalogos
 trp_i3_rhun_tribal_infantry_pl|Rhûni törzsi gyalogság
 trp_i4_rhun_vet_infantry|Rhûni veterán gyalogos
 trp_i4_rhun_vet_infantry_pl|Rhûni veterán gyalogság
-trp_i5_rhun_ox_warrior|Ökör gyalogos
-trp_i5_rhun_ox_warrior_pl|Ökör gyalogság
+; trp_i5_rhun_ox_warrior|Warrior of the Ox
+; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
 trp_c2_rhun_light_horseman|Rhûni könnyű lovasember
 trp_c2_rhun_light_horseman_pl|Rhûni könnyű lovasemberek
 trp_c3_rhun_light_cavalry|Rhûni könnyűlovas
@@ -306,112 +306,112 @@ trp_c6_amroth_leader|Dol Amrothi kapitány
 trp_c6_amroth_leader_pl|Dol Amrothi kapitányok
 trp_a1_lorien_scout|Lothlórieni felderítő
 trp_a1_lorien_scout_pl|Lothlórieni felderítők
-trp_a2_lorien_warden|Lothlórieni veterán felderítő
-trp_a2_lorien_warden_pl|Lothlórieni veterán felderítői
-trp_a3_lorien_vet_warden|Lothlórieni íjász
-trp_a3_lorien_vet_warden_pl|Lothlórieni íjászok
-trp_a4_lorien_gal_warden|Lothlórieni veterán íjász
-trp_a4_lorien_gal_warden_pl|Lothlórieni veterán íjászok
-trp_a5_lorien_gal_royal_warden|Lothlórieni mesteríjász
-trp_a5_lorien_gal_royal_warden_pl|Lothlórieni mesteríjászok
-trp_a6_lorien_grey_warden|Galadhrim királyi íjász
-trp_a6_lorien_grey_warden_pl|Galadhrim királyi íjászok
-trp_galadhrim_royal_marksman|Galadhrim királyi mesterlövész
-trp_galadhrim_royal_marksman_pl|Galadhrim királyi mesterlövészek
+trp_a2_lorien_warden|Lothlórieni őr
+trp_a2_lorien_warden_pl|Lothlórieni őrség
+trp_a3_lorien_vet_warden|Lothlórieni veterán őr
+trp_a3_lorien_vet_warden_pl|Lothlórieni veterán őrség
+; trp_a4_lorien_gal_warden|Galadhrim Warden
+; trp_a4_lorien_gal_warden_pl|Galadhrim Wardens
+trp_a5_lorien_gal_royal_warden|Galadhrim királyi őr
+trp_a5_lorien_gal_royal_warden_pl|Galadhrim királyi őrség
+; trp_a6_lorien_grey_warden|Grey Warden
+; trp_a6_lorien_grey_warden_pl|Grey Wardens
+trp_a5_lorien_gal_royal_archer|Galadhrim királyi mesterlövész
+trp_a5_lorien_gal_royal_archer_pl|Galadhrim királyi mesterlövészek
 trp_noldorin_mounted_archer|Ñoldor lovasíjász
 trp_noldorin_mounted_archer_pl|Ñoldor lovasíjászok
-trp_a2_lorien_archer|Lothlórieni gyalogság
-trp_a2_lorien_archer_pl|Lothlórieni gyalogság
-trp_a3_lorien_vet_archer|Lothlórieni veterán gyalogság
-trp_a3_lorien_vet_archer_pl|Lothlórieni veterán gyalogság
-trp_a4_lorien_gal_archer|Lothlórieni elit gyalogság
-trp_a4_lorien_gal_archer_pl|Lothlórieni elit gyalogság
-trp_i5_lorien_gal_royal_inf|Galadhrim királyi kardforgató
-trp_i5_lorien_gal_royal_inf_pl|Galadhrim királyi kardforgatók
-trp_i3_lorien_inf|Lothlórieni őr
-trp_i3_lorien_inf_pl|Lothlórieni őrség
-trp_i4_lorien_gal_inf|Lothlórieni veterán őr
-trp_i4_lorien_gal_inf_pl|Lothlórieni veterán őrség
-trp_a5_lorien_gal_royal_archer|Galadhrim királyi őr
-trp_a5_lorien_gal_royal_archer_pl|Galadhrim királyi őrség
+trp_a2_lorien_archer|Lothlórieni íjász
+trp_a2_lorien_archer_pl|Lothlórieni íjászok
+trp_a3_lorien_vet_archer|Lothlórieni veterán íjász
+trp_a3_lorien_vet_archer_pl|Lothlórieni veterán íjászok
+; trp_a4_lorien_gal_archer|Galadhrim Archer
+; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
+trp_galadhrim_royal_marksman|Galadhrim királyi mesterlövész
+trp_galadhrim_royal_marksman_pl|Galadhrim királyi mesterlövészek
+trp_i3_lorien_inf|Lothlórieni gyalogság
+trp_i3_lorien_inf_pl|Lothlórieni gyalogság
+; trp_i4_lorien_gal_inf|Galadhrim Infantry
+; trp_i4_lorien_gal_inf_pl|Galadhrim Infantry
+; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Guard
+; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Guards
 trp_lothlorien_standard_bearer|Lothlórieni zászlóvivő
 trp_lothlorien_standard_bearer_pl|Lothlórieni zászlóvivők
 trp_a1_greenwood_scout|Zölderdei felderítő
 trp_a1_greenwood_scout_pl|Zölderdei felderítők
 trp_a2_greenwood_veteran_scout|Zölderdei veterán felderítő
 trp_a2_greenwood_veteran_scout_pl|Zölderdei veterán felderítők
-trp_a3_greenwood_archer|Zölderdei íjász
-trp_a3_greenwood_archer_pl|Zölderdei íjászok
-trp_a4_greenwood_veteran_archer|Zölderdei lövész
-trp_a4_greenwood_veteran_archer_pl|Zölderdei lövészek
-trp_a5_greenwood_master_archer|Zölderdei veterán lövész
-trp_a5_greenwood_master_archer_pl|Zölderdei veterán lövészek
-trp_a6_greenwood_chosen_marksman|Thranduil királyi mesterlövésze
-trp_a6__pl|Thranduil királyi mesterlövészei
+trp_a3_greenwood_archer|Zölderdei lövész
+trp_a3_greenwood_archer_pl|Zölderdei lövészek
+trp_a4_greenwood_veteran_archer|Zölderdei veterán lövész
+trp_a4_greenwood_veteran_archer_pl|Zölderdei veterán lövészek
+; trp_a5_greenwood_master_archer|Greenwood Master Archer
+; trp_a5_greenwood_master_archer_pl|Greenwood Master Archers
+; trp_a6_greenwood_chosen_marksman|Thranduil's Chosen Marksman
+; trp_a6_greenwood_chosen_marksman_pl|Thranduil's Chosen Marksmen
 trp_a3_greenwood_sentinel|Zölderdei őrszem
 trp_a3_greenwood_sentinel_pl|Zölderdei őrszemek
 trp_a4_greenwood_vet_sentinel|Zölderdei veterán őrszem
 trp_a4_greenwood_vet_sentinel_pl|Zölderdei veterán őrszemek
-trp_a5_greenwood_vigilant|Zölderdei gárdista
-trp_a5_greenwood_vigilant_pl|Zölderdei gárdisták
+; trp_a5_greenwood_vigilant|Greenwood Guardian
+; trp_a5_greenwood_vigilant_pl|Greenwood Guardians
 trp_i2_greenwood_infantry|Zölderdei gyalogos
 trp_i2_greenwood_infantry_pl|Zölderdei gyalogság
 trp_i3_greenwood_vet_infantry|Zölderdei veterán gyalogos
 trp_i3_greenwood_vet_infantry_pl|Zölderdei veterán gyalogság
 trp_i4_greenwood_elite_infantry|Zölderdei elit gyalogos
 trp_i4_greenwood_elite_infantry_pl|Zölderdei elit gyalogság
-trp_i5_greenwood_chosen_shieldmaster|Thranduil királyi kardforgatója
-trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil királyi kardforgatói
-trp_i5_greenwood_chosen_spearmaster|Thranduil királyi lándázsa
-trp_i5_greenwood_chosen_spearmaster_pl|Thranduil királyi lándzsásai
+; trp_i5_greenwood_chosen_shieldmaster|Thranduil's Chosen Shield Master
+; trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil's Chosen Shield Masters
+; trp_i5_greenwood_chosen_spearmaster|Thranduil's Chosen Spear Master
+; trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Chosen Spear Masters
 trp_i5_greenwood_standard_bearer|Zölderdei zászlóvivő
 trp_i5_greenwood_standard_bearer_pl|Zölderdei zászlóvivők
 trp_a1_riv_scout|Völgyzugolyi felderítő
 trp_a1_riv_scout_pl|Völgyzugolyi felderítők
 trp_a2_riv_vet_scout|Völgyzugolyi veterán felderítő
 trp_a2_riv_vet_scout_pl|Völgyzugolyi veterán felderítők
-trp_a3_riv_archer|Völgyzugolyi őrszem
-trp_a3_riv_archer_pl|Völgyzugolyi őrszemek
-trp_a4_riv_vet_archer|Völgyzugolyi veterán őrszem
-trp_a4_riv_vet_archer_pl|Völgyzugolyi veterán őrszemek
-trp_a5_riv_master_archer|Völgyzugolyi elit őrszem
-trp_a5_riv_master_archer_pl|Völgyzugolyi elit őrszemek
-trp_a6_riv_guardian|Völgyzugolyi őrző
-trp_a6_riv_guardian_pl|Völgyzugolyi őrzők
+; trp_a3_riv_archer|Rivendell Archer
+; trp_a3_riv_archer_pl|Rivendell Archers
+; trp_a4_riv_vet_archer|Rivendell Veteran Archer
+; trp_a4_riv_vet_archer_pl|Rivendell Veteran Archers
+; trp_a5_riv_master_archer|Rivendell Master Archer
+; trp_a5_riv_master_archer_pl|Rivendell Master Archers
+; trp_a6_riv_guardian|Guardian of Imladris
+; trp_a6_riv_guardian_pl|Guardians of Imladris
 trp_i3_riv_swordbearer|Völgyzugolyi gyalogság
 trp_i3_riv_swordbearer_pl|Völgyzugolyi gyalogság
 trp_i4_riv_vet_swordbearer|Völgyzugolyi veterán gyalogság
 trp_i4_riv_vet_swordbearer_pl|Völgyzugolyi veterán gyalogság
 trp_i5_riv_swordmaster|Völgyzugolyi elit gyalogság
 trp_i5_riv_swordmaster_pl|Völgyzugolyi elit gyalogság
-trp_i6_riv_champion|Völgyzugolyi királyi gyalogság
-trp_i6_riv_champion_pl|Völgyzugolyi királyi gyalogság
-trp_ac5_riv_rider|Völgyzugolyi lovas
-trp_ac5_riv_rider_pl|Völgyzugolyi lovas
-trp_ac6_riv_knight|Völgyzugolyi lovag
-trp_ac6_riv_knight_pl|Völgyzugolyi lovagok
+; trp_i6_riv_champion|Champion of Imladris
+; trp_i6_riv_champion_pl|Champions of Imladris
+; trp_ac5_riv_rider|Rivendell Rider
+; trp_ac5_riv_rider_pl|Rivendell Riders
+; trp_ac6_riv_knight|Knight of Imladris
+; trp_ac6_riv_knight_pl|Knights of Imladris
 trp_i6_rivendell_standard_bearer|Völgyzugolyi zászlóvivő 
 trp_i6_rivendell_standard_bearer_pl|Völgyzugolyi zászlóvivők
 trp_a1_arnor_scout|Dúnadan felderítő
 trp_a1_arnor_scout_pl|Dúnadan felderítők
 trp_a2_arnor_vet_scout|Dúnadan nyomkövető
 trp_a2_arnor_vet_scout_pl|Dúnadan nyomkövetők
-trp_i3_arnor_swordsman|Arnori fegyverforgató
-trp_i3_arnor_swordsman_pl|Arnori fegyverforgatók
-trp_i4_arnor_vet_swordsman|Arnori fegyvermester
-trp_i4_arnor_vet_swordsman_pl|Arnori fegyvermesterek
-trp_i5_arnor_champion|Arnori főkardforgató
-trp_i5_arnor_champion_pl|Arnori főkardforgatók
-trp_c4_arnor_horseman|Arnori lovas
-trp_c4_arnor_horseman_pl|Arnori lovasok
+; trp_i3_arnor_swordsman|Dunedain Swordsman
+; trp_i3_arnor_swordsman_pl|Dunedain Swordsmen
+; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
+; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
+; trp_i5_arnor_champion|Champion of Arnor
+; trp_i5_arnor_champion_pl|Champions of Arnor
+; trp_c4_arnor_horseman|Dunedain Horseman
+; trp_c4_arnor_horseman_pl|Dunedain Horsemen
 trp_c5_arnor_knight|Arnori lovag
 trp_c5_arnor_knight_pl|Arnori lovagok
 trp_a3_arnor_ranger|Dúnadan kósza
 trp_a3_arnor_ranger_pl|Dúnadan kószák
 trp_a4_arnor_vet_ranger|Dúnadan veterán kósza
 trp_a4_arnor_vet_ranger_pl|Dúnadan veterán kószák
-trp_a5_arnor_master_ranger|Dúnadan mesteri kósza
-trp_a5_arnor_master_ranger_pl|Dúnadan mesteri kószák
+; trp_a5_arnor_master_ranger|Master Ranger of Arnor
+; trp_a5_arnor_master_ranger_pl|Master Rangers of Arnor
 trp_i1_rohan_youth|Rohani ifjonc
 trp_i1_rohan_youth_pl|Rohani ifjoncok
 trp_i2_guardsman_of_rohan|Rohani gárdista
@@ -466,8 +466,8 @@ trp_dismounted_thengel_guard_of_rohan|Rohani Thengel talpas őre
 trp_dismounted_thengel_guard_of_rohan_pl|Rohani Thengel talpas őrsége
 trp_i1_harad_levy|Haradi sorkatona
 trp_i1_harad_levy_pl|Haradi sorkatonaság
-trp_i3_harad_infantry|Haradi könnyű gyalogság
-trp_i3_harad_infantry_pl|Haradi könnyű gyalogság
+; trp_i3_harad_infantry|Harad Light Footman
+; trp_i3_harad_infantry_pl|Harad Light Footmen
 trp_i4_harad_spearman|Haradi lándzsás
 trp_i4_harad_spearman_pl|Haradi lándzsások
 trp_i5_harad_tiger_guard|Tigris őr
@@ -486,8 +486,8 @@ trp_c2_harondor_scout|Harondori felderítő
 trp_c2_harondor_scout_pl|Harondori felderítők
 trp_c3_harondor_rider|Harondori lovas
 trp_c3_harondor_rider_pl|Harondori lovasság
-trp_c4_harondor_light_cavalry|Harandori könnyűlovasság
-trp_c4_harondor_light_cavalry_pl|Harandori könnyűlovasság
+; trp_c4_harondor_light_cavalry|Harondor Light Rider
+; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
 trp_c5_harondor_serpent_knight|Arany Kígyó lovag
 trp_c5_harondor_serpent_knight_pl|Arany Kígyó lovagok
 trp_ac3_harondor_skirmisher|Harondori csatározó
@@ -526,8 +526,8 @@ trp_ac4_dun_raven_rider_pl|Dún Hollólovasok
 ; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
 ; trp_i3_khand_warrior|Khand Warrior
 ; trp_i3_khand_warrior_pl|Khand Warriors
-; trp_i4_khand_vet_warrior|Variag Veteran Warrior
-; trp_i4_khand_vet_warrior_pl|Variag Veteran Warriors
+; trp_i4_khand_vet_warrior|Khand Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Khand Veteran Warriors
 ; trp_i5_khand_war_master|Variag Master of War
 ; trp_i5_khand_war_master_pl|Variag Masters of War
 ; trp_c2_khand_pony_rider|Khand Pony Rider
@@ -536,18 +536,18 @@ trp_ac4_dun_raven_rider_pl|Dún Hollólovasok
 ; trp_c3_khand_horseman_pl|Khand Horsemen
 ; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
 ; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
-trp_c5_khand_kataphrakt|Variag kataphraktosz
-trp_c5_khand_kataphrakt_pl|Variag kataphraktoszok
-trp_c5_khand_lance_kataphrakt|Variag kopjás kataphraktosz
-trp_c5_khand_lance_kataphrakt_pl|Variag kopjás kataphraktoszok
+; trp_c5_khand_kataphrakt|Variag Ironclad
+; trp_c5_khand_kataphrakt_pl|Variag Ironclads
+; trp_c5_khand_lance_kataphrakt|Variag Lancer
+; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
 ; trp_i4_khand_halberdier|Khand Glaiveman
 ; trp_i4_khand_halberdier_pl|Khand Glaivemen
-trp_i5_khand_halberd_master|Khandi alabárdmester
-trp_i5_khand_halberd_master_pl|Khandi alabárdmesterek
+; trp_i5_khand_halberd_master|Variag Halberd Master
+; trp_i5_khand_halberd_master_pl|Variag Halberd Masters
 ; trp_i3_khand_pitfighter|Khand Pit Fighter
 ; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
-; trp_i4_khand_pit_champion|Variag Pit Champion
-; trp_i4_khand_pit_champion_pl|Variag Pit Champions
+; trp_i4_khand_pit_champion|Khand Pit Champion
+; trp_i4_khand_pit_champion_pl|Khand Pit Champions
 ; trp_i5_khand_pit_master|Variag Master of the Pits
 ; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
 ; trp_ac3_khand_skirmisher|Khand Skirmisher
@@ -1588,6 +1588,28 @@ trp_c5_rhovanion_noble_pl|Rhovanioni nemesek
 ; trp_npc20|Zigûrphel
 trp_werewolf|Vérfarkas
 trp_werewolf_pl|Farkasember
+trp_moria_troll|Barlangi troll
+trp_moria_troll_pl|Barlangi trollok
+; trp_moria_vet_troll|Trained Cave Troll
+; trp_moria_vet_troll_pl|Trained Cave Trolls
+; trp_moria_armored_troll|Armored Cave Troll
+; trp_moria_armored_troll_pl|Armored Cave Trolls
+; trp_gunda_troll|Mountain Troll
+; trp_gunda_troll_pl|Mountain Troll
+; trp_gunda_vet_troll|Trained Mountain Troll
+; trp_gunda_vet_troll_pl|Trained Mountain Trolls
+; trp_isen_troll|Isengard Troll
+; trp_isen_troll_pl|Isengard Trolls
+; trp_isen_vet_troll|Isengard Trained Troll
+; trp_isen_vet_troll_pl|Isengard Trained Troll
+; trp_isen_armoured_troll|Isengard Armored Troll
+; trp_isen_armoured_troll_pl|Isengard Armored Trolls
+; trp_mordor_troll|Mordor Troll
+; trp_mordor_troll_pl|Mordor Trolls
+; trp_mordor_vet_troll|Mordor Trained Troll
+; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_mordor_olog_hai|Mordori olog-haiok
+trp_mordor_olog_hai_pl|Mordori olog-haiok
 trp_mountain_goblin2|Hegyi kobold
 trp_mountain_goblin2_pl|Hegyi koboldok
 trp_tribal_orc2|Törzsi ork

@@ -31,8 +31,8 @@ qstr_Opponents_Beaten:_{r|倒した敵兵:{reg1}
 qstr_Opponents_Remaining:|敵兵残り:{reg1}
 qstr_Gauntlet_wave:_1|ガントレット人数:1名
 qstr_Gauntlet_wave:_{reg1|ガントレット:第{reg1}波
-qstr_Remain_in_retirement|このまま引退する
-qstr_Go_back_to_the_adven|冒険に戻る
+qstr_Remain_in_retirement|このまま引退する。
+qstr_Go_back_to_the_adven|冒険に戻る。
 qstr_You_have_retired_at_|{reg5}日間に渡る冒険を終え、 あなたはレベル{reg4}で引退しました。
 qstr_Effect_on_Score|スコア内訳
 qstr_Settlements_owned_by|領有した拠点の数:{reg0}
@@ -145,15 +145,15 @@ qstr_Weapons|武器
 qstr_Armors|防具
 qstr_Others|その他
 qstr_F4___Complex_formati|F4 - 高度な陣形
-qstr_F7___Memorize_div._p|F7 - 分類を保存
-qstr_F8___Default_divisio|F8 - 標準の分類
+qstr_F7___Memorize_div._p|F7 - 分隊の位置を保存
+qstr_F8___Default_divisio|F8 - 分隊の位置をデフォルトに戻す
 qstr_F4___Ranks|F4 - 横陣
 qstr_F5___Shield_Wall|F5 - シールドウォール
 qstr_F6___Wedge|F6 - くさび形
 qstr_F7___Square|F7 - 方陣
 qstr_F8___No_Formation|F8 - 陣形なし
 qstr_Extended_Formations_|陣形とAIの詳細なオプション
-qstr_Put_player_in_divisi|プレイヤーの分類:
+qstr_Put_player_in_divisi|プレイヤーの所属分隊:
 qstr_None|なし
 qstr_Army_rotates_to_face|敵勢の中心に面するように軍団を回転させる:
 qstr_Prevent_AI_from_takin|AIが守備的になるのを無効化:
@@ -211,12 +211,13 @@ qstr_+1_to_Weapon_Mastery|武器熟練スキルに+1
 qstr_+1_to_Wound_Treatmen|治療スキルに+1
 qstr_+1_to_Tactics|戦略スキルに+1
 qstr_+1_to_Power_Strike|強打スキルに+1
-qstr_when_equipped|(要装備)
 qstr_+1_to_Strength|体力に+1
 qstr_+1_to_Agility|敏捷性に+1
 qstr_+1_to_Leadership|統率力スキルに+1
 qstr_+1_to_Wildcraft|ワイルドクラフトに+1
 qstr_+1_to_Power_Draw|弓術スキルに+1
+qstr_The_record_of_Balin_|失踪したバーリン一団の記録。
+qstr_Who_might_be_interes|これに興味を持つとしたら、誰が考えられるだろう？
 qstr_Turns_nature_to_your|自然を味方につける (効果の大小はワイルドクラフトスキルに依存します)
 qstr_+1_to_Trainer|訓練スキルに+1
 qstr_Recruits_Tribal_Orcs|部族オークを徴用可能
@@ -225,10 +226,15 @@ qstr_rallies|檄の回数
 qstr_+{reg1}_{s3}_in_batt|戦場で{s3}に+{reg1}
 qstr_+1_to_Charisma|魅力に+1
 qstr_+1_to_Surgery|手術スキルに+1
+qstr_+1_to_Intelligence|知性に+1
 qstr_+1_to_Ironflesh|鋼の肉体スキルに+1
 qstr_+1_to_Prisoner_Mgmt|囚人管理スキルに+1
+qstr_when_equipped|(要装備)
+qstr_+1_to_Riding|乗馬スキルに+1
+qstr_+1_to_Mounted_Archer|馬上弓術に+1
 qstr_+2_to_Tactics|戦術スキルに+2
 qstr_+3_to_Spotting|観測術スキルに+3
+qstr_+2_to_Athletics|アスレチックに+2
 qstr_Less_Dunnish_upkeep|褐色人の維持費が低下
 qstr_Less_Wargs_upkeep|ワーグ騎兵の維持費が低下
 qstr_Light_Armor|軽装鎧
@@ -254,19 +260,19 @@ qstr_^None|^なし
 qstr_near_the_Great_East_|東街道の近くにある、 荒れ果てたむかしの道
 qstr_near_what_is_left_of|その一部をかろうじて残す古森街道の近くにある、 かつてこの深い森を横切っていた、いにしえのドワーフ道
 qstr_close_to_the_Hand_sh|オルサンクの塔の方角を指し示す、 手の形をしたサルマンの印の近く
-qstr_in_sight_of_the_maje|白の都、ミナス・ティリスの壮大な城壁を望む場所
-qstr_in_sight_of_Edoras_t|ローハンの首都、エドラスを望む場所
-qstr_in_sight_of_the_Horn|ローハンの大要塞、角笛城を望む場所
-qstr_in_sight_of_Dol_Amro|ベルファラスの大公の居住地、ドル・アムロスを望む場所
-qstr_in_sight_of_the_Mora|モルドールの黒門、モランノンを望む場所
-qstr_in_sight_of_Dol_Guld|サウロンの北方の要塞、ドル・グルドゥアを望む場所
+qstr_in_sight_of_the_maje|白の都、ミナス・ティリスの壮大な城壁を望む一帯
+qstr_in_sight_of_Edoras_t|ローハンの首都、エドラスを望む一帯
+qstr_in_sight_of_the_Horn|ローハンの大要塞、角笛城を望む一帯
+qstr_in_sight_of_Dol_Amro|ベルファラスの大公の居住地、ドル・アムロスを望む一帯
+qstr_in_sight_of_the_Mora|モルドールの黒門、モランノンを望む一帯
+qstr_in_sight_of_Dol_Guld|サウロンの北方の要塞、ドル・グルドゥアを望む一帯
 qstr_on_the_green_pasture|ビヨルンの家のまわりに広がるたくさんの花の咲く草地と、 青々とした牧草地
 qstr_on_the_shores_of_Lak|モリアの東門に近い、鏡の湖の岸辺
 qstr_on_the_shores_of_the|湖の町、エスガロスの見える、たての湖の岸辺
 qstr_near_the_coast_of_Go|遠くにカモメの鳴き声や波の音の聞こえる、 ゴンドール沿岸付近
 qstr_in_the_outskirts_of_|ゴンドールのかつての首都、オスギリアスの郊外
-qstr_in_sight_of_the_entr|ドワーフの要塞、エレボールの城門を望む場所
-qstr_in_sight_of_the_dark|闇の塔、オルサンクを望む場所
+qstr_in_sight_of_the_entr|ドワーフの要塞、エレボールの城門を望む一帯
+qstr_in_sight_of_the_dark|闇の塔、オルサンクを望む一帯
 qstr_near_the_Old_Ford_wh|むかしの渡り場の近くの、 古森街道がアンドゥインの大河を渡るところ
 qstr_near_a_big_ford_cros|大きな浅瀬が{s15}の川を渡るところ
 qstr_near_a_small_ford_cr|小さな浅瀬が{s15}の川を渡るところ
@@ -296,10 +302,10 @@ qstr_man|人間
 qstr_riding|突撃して
 qstr_marching|行軍して
 qstr_charging|襲撃して
-qstr_We_know_this_is_your|{playername}、ここがおぬしらの領土であることは、 承知している。おぬしと我らの敵は同じである、 という事を信じてもらいたい。
+qstr_We_know_this_is_your|{playername}よ、 ここがおぬしらの領土であることは承知している。 おぬしと我らの敵は同じである、という事を信じてもらいたい。
 qstr_I_trust_you._{s20}_a|信じよう。{s20}と{s21}は、 互いに友好関係を築かなければならない。
-qstr_There_is_wisdom_in_y|さすがは{playername}、 おぬしは冷静な判断ができるようだ。
-qstr_Why_should_I?_Better|信じろ、だと？ すぐにこの{s20}の地から去れ。
+qstr_There_is_wisdom_in_y|さすがは{playername}。 おぬしは冷静な判断ができるようだ。
+qstr_Why_should_I?_Better|信じろだと？すぐにこの {s20}の地から去れ。
 qstr_We_will_go_in_peace_|我々の任務さえ果たせばすぐに立ち去ろう。 残念ながら、任務の内容を明かすことはできない。
 qstr_Is_this_your_land_{p|ここはおぬしらの土地か、{playername}？ひどいところだな。 まあ安心しろ、我が部隊は我らが主人の命令に従って {s20}に来たまでだ。
 qstr_Yes_go_on_do_whateve|では{s22}の命令に従って、 さっさと任務を遂行するがいい。
@@ -328,7 +334,7 @@ qstr_None_of_your_business|おまえに用はない。
 qstr_You_slaves_of_{s22}_|おまえら{s22}の奴隷どもは、 弱い！ われらの友軍におさまれて、 幸運だったな・・・
 qstr_Look_whom_we_meet_so|おい、はるばるこの地までやってきた我らを、出迎える者の顔をみてみろ。 {s20}の兵士どもだ！ これは喜ぶべきか、不運を嘆くべきなのか。
 qstr_{s20}_and_{s21}_figh|{s20}と{s21}は、 共通の目的を持って戦っている。 この敵地では、 お互い協力するべきだ。
-qstr_In_these_dark_times_|{playername}、この暗い時代では、 みな自分の事で頭が一杯のようだ。だが我らは、 おぬしの旅の無事を祈ろう。
+qstr_In_these_dark_times_|{playername}よ。この暗い時代では、 みな自分の事で頭が一杯のようだ。 だが我らは、おぬしの旅の無事を祈ろう。
 qstr_Neither_good_nor_bad|おぬしの意見などどうでもよい。我らの任務に首を突っ込まないでもらおう。
 qstr_Everybody_on_his_way|みなそれぞれの進むべき道がある、という事だろうな。
 qstr_What_are_you_trying_|{s20}のクズめ、 おまえの目的は何だ？ 我らの戦利品を横取りに来たのか？
@@ -520,10 +526,10 @@ qstr_Mordor_takes_a_capti|モルドールが捕虜を捕まえました
 qstr_Isengard_takes_a_cap|アイゼンガルドが捕虜を捕まえました
 qstr_You_were_grievously_|ひどい怪我を負ったあなたは、死体の山に打ち捨てられました。 あなたは隙をみて城壁を乗り越えて逃げましたが、 敵に目撃されたかも知れません。 急いでこの場を離れたほうがいいでしょう。
 qstr_You_were_grievously_w|あなたは戦闘で重傷を負いました。 部下たちがなんとかあなたを助け出しましたが、 引き換えに多大な犠牲を出してしまいました。
-qstr_You_were_grievously_wo|あなたは戦闘で重傷を負いました。 部下たちがなんとかあなたを助け出しましたが、 引き換えに多大な犠牲を出してしまいました。 不運な事にコンパニオンの数人が捕まり、 {s2}に連行されてしまいました。
+qstr_You_were_grievously_wo|あなたは戦闘で重傷を負いました。 部下たちがなんとかあなたを助け出しましたが、 引き換えに多大な犠牲を出してしまいました。 不運な事にコンパニオンの数名が捕まり、 {s2}に連行されてしまいました。
 qstr_You_were_grievously_wou|あなたは戦闘で重傷を負いました。 部下たちがなんとかあなたを助け出しましたが、 引き換えに多大な犠牲を出してしまいました。 不運な事に妖術師は逃げてしまいました。
 qstr_You_were_grievously_woun|ひどい怪我を負ったあなたは、死体の山に打ち捨てられました。 あなたは隙をみて城壁を乗り越えて逃げましたが、 不運な事に妖術師は逃げてしまいました。
-qstr_Some_of_your_compani|コンパニオンの何人かが、古傷に悩まされています。
+qstr_Some_of_your_compani|コンパニオンの中に、古傷に悩まされている者がいます。
 qstr_Item_you_just_equipp|あなたがいま装備したアイテムは、 この種族では使えないため、 まもなくインベントリに戻されます。^^インベントリに空きが確保されていない場合、 このアイテムは消滅します。
 qstr_Inappropriate_equipm|不適当な装備
 qstr_The_mount_you_just_e|あなたがいま装備した乗り物は、 この種族には扱えません。 この状態で戦闘を行えば、 乗り物の制御に問題がでるでしょう。
@@ -544,10 +550,10 @@ qstr_In_spite_of_their_va|勇敢な抵抗もむなしく、 {s3}は闇の力に�
 qstr_You_bring_dismal_new|暗い知らせですね、魔法使いどの。
 qstr_But_I_also_bring_a_m|まだ希望はある。 {s5}の民はいまだ堅固に持ちこたえておる。 指導者たちは毅然としており、 戦士たちは恐れを知らぬ。
 qstr_Help_them_fight_the_|持てるすべての力を彼らと合わせ、 敵と戦うのだ。 決して屈してはならぬ！ 隙を見せてもならぬ！ この世界にはオークどもより邪悪で強大な力を持ったものがおるのだ。
-qstr_Beware_{playername}_|油断するでないぞ、 {playername}、 闇の力が崩れ落ちておる。 {s3}はその指導者である{s4}とともに陥落した。
+qstr_Beware_{playername}_|{playername}よ、油断するでないぞ。 闇の力が崩れ落ちておる。 {s3}は、 その指導者である{s4}とともに陥落した。
 qstr_What_do_you_want_of_|ご老体、私は何をすればいいのですか？
 qstr_Just_know_that_a_Daw|夜明けがせまっているという事を知っておくのだ。 これは避けられない運命にある。 おぬしがそのときを生きて迎えられたときのために、 心の準備はしておくことだ。
-qstr_Well_met_{playername|おお、 {playername}、 {s24}よ。 おぬしに賭けたわしは間違っていなかった。 闇の力は打ち破られた。 おぬしは少なからぬ働きをしてくれた！
+qstr_Well_met_{playername|おお、{playername}、{s24}よ。 おぬしを見込んだわしの目に、狂いはなかった。 闇の力は打ち破られたのだ。おぬしは少なからぬ働きをしてくれた！
 qstr_Thank_you_Mithrandir|ありがとうございます、ミスランディア！
 qstr_The_wizard_Saruman_i|魔法使いサルマンは消え去り、 バラド＝ドゥーアもその闇の主とともに塵あくたとなって崩れ去った！ 中つ国の民は、 この世界の清きものをすべて飲み込まんとする脅威から開放された。 敵は打ち破られ、 王は戻ったのだ！
 qstr_It_was_a_long_and_bl|多くの犠牲を払った、 長い戦いでした。 我々の親しい友人たちも、 その多くが命を落としてしまいました。
@@ -617,11 +623,11 @@ qstr_Morale_of_your_enemi|敵兵が浮き足立っています！
 qstr_Your_enemies_flee_in|敵兵が恐怖で逃げています！
 qstr_Many_of_your_enemies|多くの敵兵が逃げています。
 qstr_Some_of_your_enemies|一部の敵兵が逃げています。
-qstr_A_few_of_your_enemie|数人の敵兵が逃げています。
+qstr_A_few_of_your_enemie|数名の敵兵が逃げています。
 qstr_Your_troops_flee_in_|味方の兵が恐怖で逃げています！
 qstr_Many_of_your_troops_|多くの味方の兵が逃げています。
 qstr_Some_of_your_troops_|一部の味方の兵が逃げています。
-qstr_A_few_of_your_troops|数人の味方の兵が逃げています。
+qstr_A_few_of_your_troops|数名の味方の兵が逃げています。
 qstr_Gained_permanent_+1_to_P|恒久的に経路探索+1を獲得しました。
 qstr_Gained_permanent_+1_to_S|恒久的に観測術+1を獲得しました。
 qstr_{s11}_recovered_from|{s11}は重傷から回復しました。
@@ -865,11 +871,11 @@ qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|特殊能力:^{s2}
 qstr_^^You_are_{s17}.|^^あなたは{s17}にいます。
 qstr_Assassins_in_the_cam|暗殺者がいます、身を守ってください！
-qstr_Ally_party_size:_{re|友軍の人数:{reg1}
-qstr_Enemy_party_size:_{r|敵軍の人数:{reg1}
+qstr_Ally_party_size:_{re|友軍の兵数:{reg1}
+qstr_Enemy_party_size:_{r|敵軍の兵数:{reg1}
 qstr_Party_count:_{reg0}|パーティの総数:{reg0}
 qstr_Party_position__{reg|パーティの位置 ({reg2}、{reg3})。
-qstr_Party_size_increased|パーティの人数が{reg0}から {reg1}に増えました！
+qstr_Party_size_increased|パーティの兵数が{reg0}から {reg1}に増えました！
 qstr_Faction_strengths_re|各勢力の勢力ポイント一覧:^{s2}
 qstr_Attacking_enemy_part|敵パーティの{s11}を攻撃する
 qstr_Unknown_{reg3}_|不明({reg3})
@@ -912,12 +918,12 @@ qstr_Regular_troops_only|一般の兵のみ
 qstr_Heroes_only|英雄のみ
 qstr_Regulars_and_Heroes|一般の兵と英雄
 qstr_HP_lost_from_poisoni|食中毒でヒットポイントを失いました。
-qstr__{s17}.|、 {s17}
+qstr__{s17}.|、 {s17}。
 qstr_A_group_of_{s1}_is_{|{s1}がこちらに{s10}来ました。
 qstr_You_are_attacking_a_|{s1}を攻撃します。
 qstr_The_battle_against_t|{s1}との戦いは続きます。
 qstr_There_are_{reg39}_al|この戦いには{reg39}名の指揮官が参戦しています。 影響力ポイントを{reg40}消費することで、 彼らの兵を指揮する事ができます。
-qstr_Having_a_small_party|少人数の部隊ならではの強みというのはあるのです・・・ あなたと部下たちは敵勢から姿を隠すと、 念のためにそのまま数時間待機しました。
+qstr_Having_a_small_party|少兵数の部隊ならではの強みというのはあるのです・・・ あなたと部下たちは敵勢から姿を隠すと、 念のためにそのまま数時間待機しました。
 qstr_Your_ability_to_surv|過酷な環境を生き延びる事のできるあなたの能力をもって、 安全に身を隠す事のできる場所を確保しました。(あなたのワイルドクラフトのスキルでは、 {reg1}名の兵とともに身を隠す事ができます)
 qstr_{reg4}_will_be_lost.|兵{reg4}名を失います。
 qstr_{s13}_asked_you_to_r|{s13}より、 最低でも{reg13}名の兵を連れて出頭せよ、 との命令を受けました。
@@ -976,7 +982,7 @@ qstr_The_enemy_has_been_f|敵は撤退を余儀なくされました。 攻撃�
 qstr_The_assasins_beat_yo|暗殺者はあなたを倒し、 息絶えていくあなたを放置しました。
 qstr_You_have_fallen._The|あなたは倒されました。 野盗はあなたから素早く金目のものを奪うと、 夜の闇に消えていきました。 あなたは虫の息ながら、 かろうじて息の根をとめられずに済みました。
 qstr_Luckily_some_of_your|幸いにも、 あなたの戻りが遅いのを案じて探しに来たコンパニオンが、 排水溝に横たわるあなたを発見しました。 あなたは安全な場所に運ばれ、 傷の手当を受けました。
-qstr_Luckily_some_passing|幸いにも、 通りがかった地元の住人たちが、 排水溝に横たわるあなたを発見し、 そこらの物乞いではないと判断しました。 彼らはあなたを安全な場所へ運び、 傷の手当をしました。
+qstr_Luckily_some_passing|幸いにも通りがかった地元の民が排水溝に横たわるあなたを発見し、 そこらの物乞いではないと判断しました。 彼らはあなたを安全な場所へ運び、傷の手当をしてくれました。
 qstr_{s13}^^You_have_succ|{s13}^^潜入に成功しました。
 qstr_the_place|この拠点
 qstr_the_castle|この城
@@ -996,8 +1002,8 @@ qstr_two_scout_parties_an|{s3}の偵察隊2部隊、 および食料調達隊1�
 qstr_two_scout_parties_and|{s3}の偵察隊2部隊、 および遊撃隊1部隊
 qstr_three_scouts_two_for|{s3}の偵察隊3部隊、食料調達隊2部隊、 および巡察隊1部隊
 qstr_three_scouts_two_rai|{s3}の偵察隊3部隊、遊撃隊2部隊、 および軍団1部隊
-qstr_You_see_the_village_|村が無法者どもに襲われているのが見えます。 あなたは少人数の部隊を率いて村人を守る準備にかかる一方、 新手の襲撃団を警戒するように部下の大多数に命じました。
-qstr_You_see_the_village_y|襲撃任務の目標である村が見えます。 あなたは少人数を率いて奇襲をかけるための準備に取り掛かりました。
+qstr_You_see_the_village_|村が無法者どもに襲われているのが見えます。 あなたは部隊のうち少数を率いて村人を守る準備にかかる一方、 部下の大多数にはこの場にとどまって新手の襲撃に備えるよう命じました。
+qstr_You_see_the_village_y|襲撃任務の目標である村が見えます。 あなたは少数を率いて奇襲をかけるための準備に取り掛かりました。
 qstr_The_raiders_are_defe|襲撃者どもを倒しました！ 生き残った数名は村人とその勇者を怖れてあわてて逃げ出し、 元来た闇に消えていきました。
 qstr_Try_as_you_might_you|あなたは精一杯戦いましたが、 襲撃者どもを撃退することはできませんでした。 やつらは村を破壊し、 生き残った村人たちを奴隷にしました。
 qstr_The_village_has_been|村は破壊されました。 村人たちは殺され、 あるいは奴隷として連れ去られました。 冥王はお喜びになるでしょう。
@@ -1077,7 +1083,7 @@ qstr_{s1}_from_{s2}|{s2}の{s1}
 qstr_When_dealing_with_lo|{s11}の民と取引をする場合、 彼らはあなたの顔を知らず、 あなたの{s10}での功績についても、 必ずしも知っているわけではないという事に 注意してください。^^({s11}の民とのやりとりに使用される リソースポイントは {s11}でのみ稼げるもので、 {s10}で稼いだものとは別です。 レポート画面も参照してください。)
 qstr_Info|情報
 qstr_You_came_into_a_poss|やたらと大きなおわんに入った、 奇妙だけども新鮮そうな水を手に入れた。 ジャコウにちょっと似た香りがする。
-qstr_Obtained:_Ent_water.|入手:エント水
+qstr_Obtained:_Ent_water.|入手:エント水。
 qstr_A_little_after_you_f|歩く木から手に入れた毒入りの水から 完全に回復してすぐに、 あなたは妙な副作用が出ていることに気がついた。 配下のうじ虫どもが、 あなたに敬意を払い、 以前よりもあなたを恐れているように見える。 まるで・・・ あなたの体が大きくなったかのように。 間違いない、 以前よりもあなたは少し背が高くなっている。 こんな事が本当に起こり得るのだろうか？
 qstr_Ent_water_effect.|エント水の効用。
 qstr_The_water_you_drank_|エントから入手した水を飲んだあなたは、 自分の体に奇妙な現象が起こっていることに気がついた。 最初は信じられなかったが、 自分の目で確かめてみた以上、 間違いない。 どういうわけか、 あなたの背が高くなっている！ しかし、 水の毒であやうく死ぬところだったのは事実だ。 もう二度とこのような危険を冒すわけにはいかない。
@@ -1115,39 +1121,39 @@ qstr_{reg65?mistress:mast|閣下
 qstr_{reg65?Mistress:Mast|閣下
 qstr_{reg65?madame:sir}|閣下
 qstr_{reg65?Madame:Sir}|閣下
-qstr_How_do_magnets_work?|How do magnets work?
-qstr_Um..._by_enchanting_|Um... by enchanting iron?
-qstr_Magnets_are_made_of_|Magnets are made of metal, which is mined from the ground. They are magnetic because the metal still contains pieces of gravity inside it.
-qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
-qstr_I_m_sure_the_TLD_tea|I'm sure the TLD team will get to it when they can.
-qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
-qstr_Well_there_s_a_lot_o|Well, there's a lot of new graphics and stuff, I guess that takes time.
-qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.
-qstr_i_wont_decapitated_e|i wont decapitated elephants in multi, nao!!11!
-qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
-qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
-qstr_Did_you_bring_your_z|Did you bring your zupdog?
-qstr_What_s_zupdog?|What's zupdog?
-qstr_My_zupdog_is_ill_but|My zupdog is ill, but I brought my zupmaiass.
-qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
-qstr_What_is_plate_armour|What is plate armour? Never heard of it.
-qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
-qstr_WHEN_U_REALSE_MOD?!!|WHEN U REALSE MOD?!!?
-qstr_But_we_did_release._|But we did release. You're in it. And why are you shouting?
-qstr_YES!_ALSO_SOMETIMES_|YES! ALSO SOMETIMES IS!
-qstr_Wai_u_no_work_wiht_o|Wai u no work wiht otehr mods to make a super LOTR mod?
-qstr_Every_mod_team_works|Every mod team works according to their standards, you can't make mods cooperate if their vision is different.
-qstr_Because_we_don_t_hav|Because we don't have a sense of humour and most of them are just too funny for us.
-qstr_In_movies_trolls_are|In movies trolls are big and fat, wai u make me skinny?
-qstr_We_interpreted_Tolki|We interpreted Tolkien like this.
-qstr_But_we_did_make_you_|But we did make you as stupid as in the movies. That's gotta count for something.
-qstr_What_is_news?_Got_an|What is news? Got any screenshots?
-qstr_Well_just_look_aroun|Well just look around you, what do you need screenshots for?
-qstr_Say_cheese!|Say cheese!
-qstr_Why_did_you_make_mod|Why did you make mod installation so complex?
-qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've RTFM successfully after all
-qstr_You_just_got_windyfl|You just got windyflorated!
+qstr_How_do_magnets_work?|磁石はどうしてくっつくの？
+qstr_Um..._by_enchanting_|ええっと・・・鉄に・・・鉄に魔法をかけたから？
+qstr_Magnets_are_made_of_|磁石は地中から掘り出した金属で出来ていて、 その中に地球の重力がちょっと残っています。 それが磁力となっているのです。
+qstr_i_wont_a_bonerlrord_|ボナールロード版はまだかよ！
+qstr_Install_TLD_in_your_|TLDをBannerlordのModulesフォルダに入れて、 module.iniに^”compatible_with_wfas = 1”^の一行を追加してやれば WarbandとWarrider 0.202の両方でプレイできるよ！
+qstr_Bannerlord_is_runnin|Bannerlordはまた別のゲームエンジンを採用しています。 TLDのWarband版をつくったときのようにはいかないのです。
+qstr_dis_mod_takes_2_long|このmodはリリースまでに長くかかりすぎだよ！
+qstr_Well_there_s_a_lot_o|新しいモデルやらマップやら毎回いろいろと追加するので、 どうしても時間がかかってしまうのです。
+qstr_It_has_been_recently|こないだ新バージョンが出たばっかりだよ lemonparty.orgからダウンロードできるよ
+qstr_i_wont_decapitated_e|マルチで象ぬっころしてえええ
+qstr_I_don_t_think_there_|TLDにはマルチプレーヤーモードはありません。 象狩りができたらいいなあ、とは思います。
+qstr_There_is_a_hidden_el|TLDの隠しモードで象デスマッチモードがあるよ^出し方は、まずセーブデータのフォルダを空にしてから^ゲーム内で100日間セーブなしのぶっとおしでプレイ^それからキャラ情報画面に行ってAlt+F4を押す^マジやる価値あり
+qstr_Y_NO_ChINESE??|中国語版ないの？？
+qstr_Just_to_troll_you_tr|トロルトロル、あばばばばー
+qstr_Thanks_to_our_volunt|翻訳ボランティアのみなさんのおかげで、 繁体字と簡体字の翻訳ファイルが利用できるようになりました。 利用の際にはSteam Workshopにあるガイドを よく読んで下さい。
+qstr_Wai_no_plate_armour_|えええなんでプレートアーマーないの？？？
+qstr_What_is_plate_armour|プレートアーマーて何ですか？聞いた事がないです。
+qstr_Wai_no_female_trolls|そんな事より女子は？トロルの女子っていないの？
+qstr_WHEN_U_REALSE_MOD?!!|modのリリースいつ？出るの？出ないの？！！？
+qstr_But_we_did_release._|リリースしただろ。おまえがいまプレイしてるのは何だよ。
+qstr_YES!_ALSO_SOMETIMES_|はい
+qstr_Wai_u_no_work_wiht_o|他のmodとまぜて最強のLOTRゲームつくろうなんて話はないの？
+qstr_Every_mod_team_works|それぞれのmod開発陣にはそれぞれ別の目標があって製作作業も 別々に進められているので、複数のmod間で整合性をとるのは 非常に難しいのです。
+qstr_Because_we_don_t_hav|我々にはどうもユーモアのセンスがないみたいで、 まぜるには他のmodは面白すぎるのです。
+qstr_In_movies_trolls_are|映画じゃトロルはでっかくてマッチョなのに、 なんで俺はこんなにひょろっとしてるの？
+qstr_We_interpreted_Tolki|俺らが原作読んでイメージしてたのは、 おまえみたいな感じなの。
+qstr_But_we_did_make_you_|少なくとも映画と同じくらい馬鹿に設定してあるから、それで満足して。
+qstr_What_is_news?_Got_an|なんかアプデとかあった？新しいスクショとか？ 
+qstr_Well_just_look_aroun|スクショもなにも、今見てるでしょ。
+qstr_Say_cheese!|はい、チーズ！
+qstr_Why_did_you_make_mod|このmodインストールめんどくさすぎ動かねえ
+qstr_Well_if_you_are_here|まあ、これを読んでるのならうまくいったんだよね
+qstr_You_just_got_windyfl|スチーム版はインストールが楽だよ！
 qstr_Merry|メリー
 qstr_Pippin|ピピン
 qstr_the_Citadel|城塞
@@ -1165,7 +1171,7 @@ qstr_Ask_him_if_he_has_an|彼にパイプ草を持ってないか聞いてよ！
 qstr_Tell_him_I_ll_be_the|今度会ったら僕が背の高いほうになるよって言ってよ！
 qstr_Ask_if_he_s_seen_Gan|ガンダルフに会ったか聞いてよ！
 qstr_You_gained_250_exper|経験値を250取得しました。
-qstr_Treebeard_wants_you_|ファンゴルンの森で木を伐採している オークの一団を倒すよう、 木のひげに頼まれた。
+qstr_Treebeard_wants_you_|ファンゴルンの森で木を伐採している オークの一団を倒すよう、 木の鬚に頼まれた。
 qstr_Something_wrong_not_e|なにかがおかしい、偵察隊を編成するための兵が足りない。
 qstr_my_home_town|我が本拠地
 qstr_I_am_in_perfect_heal|体調はとても良い。
@@ -1192,9 +1198,9 @@ qstr_Caught_a_few_straggl|敗残兵でも捕まえましたか、 {s23}殿？
 qstr_I_am_sorry_no_one_el|申し訳ないが、そちらへまわす余裕はない。^{s22}に従って、ここを防衛しなければならないのです。
 qstr_Tough_luck_but_we_do|ついていませんね、今は我々も余裕がない。^また日を改めて来て頂きたい。
 qstr_There_are_brave_sold|危険をかえりみない勇敢な兵士たちはいますが、 この時勢にここの守りをおろそかにするわけにはいきません。^^^[リソースポイントが足りません]
-qstr_We_have_some_spare_t|人手に余裕はありますが、あなたの部隊へまわす兵士はいません。^^^[リソースポイントが足りません]
-qstr_There_are_brave_soldi|城外での任務を志願する勇敢な兵士はいます。^^何人かはあなたに預けてもいいでしょう。
-qstr_There_are_spare_troo|血の気の多めな兵が多少います。^^何人かはあなたに預けてもいいでしょう。
+qstr_We_have_some_spare_t|余裕はありますが、あなたの部隊へまわす兵士はいません。^^^[リソースポイントが足りません]
+qstr_There_are_brave_soldi|城外での任務を志願する勇敢な兵士はいます。^^何名かはあなたに預けてもいいでしょう。
+qstr_There_are_spare_troo|血の気の多めな兵が多少います。^^何名かはあなたに預けてもいいでしょう。
 qstr_Strenghten_defences_|{s21}の守りを固めようというのですか？ 大歓迎です。 ただ、 我が軍は自前の兵しか受け入れません。
 qstr_Strenghten_defences_i|{s21}の守りを固めようというのですか？ 五体満足の兵なら大歓迎です。 ただし我が軍の自前の兵だけにしてください。 よそ者は邪魔なだけです。
 qstr_Please_return_them_i|できるだけ生きて帰してくださいよ。 個人的に彼らの勇気はよく知っているのです。 今はひとりとして無駄にはできない。
@@ -1215,8 +1221,8 @@ qstr_{playername}_our_sco|{playername}よ、おぬしの任務成功は斥候か
 qstr_Well_{playername}_yo|これは{playername}、 どうやら我々にとって良い報せを持って戻ってきてくれたようだな。 おぬしは口先だけの{男/女}ではなかったという事か。 ああ、{s7}がおぬしの前に倒れるさまを、 この目で見れたら！ これで間違いなく敵勢の士気は大きくくじかれたであろう。 なにしろ頭をもがれたのだからな。蛇を殺すのなら頭を落とせ、 というわけだ。さて、この機を逃さず、 私はこれより軍を率いて敵を叩かねばならぬ。 {playername}よ、 おぬしの貢献はおぬしの上官に間違いなく報告しておくぞ。 心安らかにせよ。
 qstr_Alas_that_I_could_no|ああ、この手で{s8}の{s7}の 息の根を止める事ができないとは。ふたたびまみえる事があれば、 やつらには思い知らせてくれよう。
 qstr__I_should_rather_mak|我が勝利の報告は、私みずから直接 {s8}の{s7}に 報告しようと思います。 一番の手柄は私のものだという事を忘れないで頂きたい！
-qstr_Very_well_done_{play|{playername}よ、これは素晴らしい！ 私の期待した通り、間者と連絡係の二人とも捕まえてくれたのだな。 そして彼らは身柄を厳重に拘束され、尋問されるのを待っているという。 彼らにはたっぷりと質問に答えてもらわねばならん！ 何はともあれ、今回のおぬしの働きには非常に感謝しているぞ、 {playername}。 これは私からの感謝の気持ちだ、受け取ってくれ。
-qstr_Beautiful_work_{play|{playername}よ、よくやった！ 私の指示通り、間者と連絡係の二人とも捕まえてくれたのだな。 そして彼らは身柄を厳重に拘束され、尋問されるのを待っているという。 今夜は拷問吏が忙しくなるだろう！何はともあれ、 今回のおぬしの働きには非常に感謝しているぞ、 {playername}。 これは私からの感謝の気持ちだ、受け取ってくれ。
+qstr_Very_well_done_{play|{playername}よ、これは素晴らしい！ 私の期待した通り、間者と連絡係の二名とも捕まえてくれたのだな。 そして彼らは身柄を厳重に拘束され、尋問されるのを待っているという。 彼らにはたっぷりと質問に答えてもらわねばならん！ 何はともあれ、今回のおぬしの働きには非常に感謝しているぞ、 {playername}。 これは私からの感謝の気持ちだ、受け取ってくれ。
+qstr_Beautiful_work_{play|{playername}よ、よくやった！ 私の指示通り、間者と連絡係の二名とも捕まえてくれたのだな。 そして彼らは身柄を厳重に拘束され、尋問されるのを待っているという。 今夜は拷問吏が忙しくなるだろう！何はともあれ、 今回のおぬしの働きには非常に感謝しているぞ、 {playername}。 これは私からの感謝の気持ちだ、受け取ってくれ。
 qstr_Foiling_the_enemy_s_|難民の群れを襲うという敵の企てをくじいた事により、 敵勢の士気が下がりました。 (あなたが{reg18}隊の襲撃隊を撃退した事により、 {s1}の勢力ポイントが{reg19}下がりました)。
 qstr_The_slaughter_and_lo|難民の群れを虐殺し、略奪する事に成功したため、 敵勢の士気が上がりました ({s1}の勢力ポイントが50上がりました)。
 qstr_You_did_however_defe|しかしながら、あなたが{reg18}隊の襲撃隊を撃退したため、 敵勢の士気が下がりました ({s1}の勢力ポイントが{reg19}下がりました)。
@@ -1331,8 +1337,8 @@ qstr_First_sieges_are_onl|まず、拠点攻撃は最強の者にのみ与えら
 qstr_Here_is_all_that_nee|必要な条件は次の通りだ:
 qstr_Firstly_we_must_thin|まず、この作戦の障害となるものを認識せねばならない:
 qstr_You_need_sharp_weapo|強力な武器、兵とワーグを養うための新鮮な食糧、火をくべるための木、^それに弱虫どもをしっかり働かせるためにビールが必要だ。それに加え、^部下のクズどもが隊列を乱さぬようによく目を光らせておかぬと、^敵の城壁にとりつくまえに仲間内で殺し合いが始まってしまう。^我々は皆それぞれの持ち場の事で精一杯で、おぬしの世話までは^できぬぞ。部下のうじ虫どもがさぼらぬよう、必要なものは^しっかりと用意しておくことだ。^[{reg3}のリソースポイント、および{reg15}の影響力ポイントを消費します]
-qstr_Steel_must_be_kept_s|武器の手入れを怠らず、兵と馬はしっかりと食べさせ、火を絶やさず、^水を確保し、怪我人の治療ができるようにしておくこと。作戦を^遂行できないような部隊は、何の役にも立たぬぞ。我々は広く^展開しているために皆すでに手薄で、おぬしの世話まではできぬぞ。^攻城戦で友軍の足を引っ張るような事がないよう、必要なものは^しっかりと用意しておくことだ。^[{reg3}のリソースポイント、および{reg15}の影響力ポイントを消費します]
-qstr_Steel_must_be_kept_sh|武器の手入れを怠らず、兵と馬はしっかりと食べさせ、火を絶やさず、^水を確保し、怪我人の治療ができるようにしておくこと。ささいな事と^考えるかもしれないが、城壁と格闘する事と同じくらい重要な事だ。^我々は広く展開しているために皆すでに手薄で、おぬしの世話までは^できぬぞ。攻城戦で友軍の足を引っ張るような事がないよう、^必要なものはしっかりと用意しておくことだ。^[{reg3}のリソースポイント、および{reg15}の影響力ポイントを消費します]
+qstr_Steel_must_be_kept_s|武器の手入れを怠らず、兵と馬はしっかりと食べさせ、火を絶やさず、^水を確保し、負傷者の治療ができるようにしておくこと。作戦を^遂行できないような部隊は、何の役にも立たぬぞ。我々は広く^展開しているために皆すでに手薄で、おぬしの世話まではできぬぞ。^攻城戦で友軍の足を引っ張るような事がないよう、必要なものは^しっかりと用意しておくことだ。^[{reg3}のリソースポイント、および{reg15}の影響力ポイントを消費します]
+qstr_Steel_must_be_kept_sh|武器の手入れを怠らず、兵と馬はしっかりと食べさせ、火を絶やさず、^水を確保し、負傷者の治療ができるようにしておくこと。ささいな事と^考えるかもしれないが、城壁と格闘する事と同じくらい重要な事だ。^我々は広く展開しているために皆すでに手薄で、おぬしの世話までは^できぬぞ。攻城戦で友軍の足を引っ張るような事がないよう、^必要なものはしっかりと用意しておくことだ。^[{reg3}のリソースポイント、および{reg15}の影響力ポイントを消費します]
 qstr_Next_if_you_try_to_a|次に、もしおぬしが敵の首都攻略を考えておるのなら、誰もおぬしを^止めない場合は私がおぬしを刺し殺す。首都の攻略を行うのは、^我々のあるじが号令したときだけだ。おぬしが相手にするべきは、^弱く、勝てる計算の立つ相手だけだ。
 qstr_Secondly_you_do_not_|二番目に、おぬしには敵の首都を攻撃する権限はない。そのような^拠点を征服するには、我が軍の総力を結集してそれに当たる必要がある。^おぬしが相手にするべきは、大きく弱体化され、勝てる計算の立つ^相手だけだ。
 qstr_Third_{s2}_is_on_its|三番目に、{s2}は独立した作戦行動をとっている。^旨味があるようならば我々もおぬしの部隊と共に戦うであろうが、^おぬしの部隊だけで勝てる計算を立てておかぬと、まずうまくは^いかぬであろう。
@@ -1359,7 +1365,7 @@ qstr_{reg3}_hours.|{reg3}時間。
 qstr_hour.|時間。
 qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
 qstr_You_spent_{reg0}_of_|あなたは{s1}での影響力ポイントを{reg0}消費しました。 残りは{reg1}です。
-qstr_The_War_is_over_{pla|戦争は終わったぞ、 {playername}、 知らなかったのか？
+qstr_The_War_is_over_{pla|{playername}よ、戦争は終わったぞ。 知らなかったのか？
 qstr_We_are_at_war_with_{|我々は{s12}と戦争中だ。 しかし、 もっぱらの交戦相手は{s13}だ。
 qstr_We_are_at_war_with_{s|我々は{s12}と戦争中だ。 しかし、 いまのところは小競り合いが起きているにすぎない。
 qstr_we_are_not_too_conce|彼らよりも、 目の前の敵との戦いに集中している
@@ -1399,10 +1405,11 @@ qstr_I_m_sorry_but_we_can|残念ながら、今は救援におもむく事はで
 qstr_Bah!_Far_more_glory_|勘弁していただきたい！つまらない海賊行為につきあうより、よそで手柄をたてたほうがずっとマシです。
 qstr_This_raid_does_not_i|この作戦には興味をそそられません。手柄はよそでたてようと思います。
 qstr_{s9}_asked_you_to_de|{s1}付近の偵察野営を破壊するよう、 {s9}より命令を受けた。
+qstr_Your_party_must_be_at|このクエストには少なくとも10名以上からなるパーティが必要です
 qstr_{s9}_asked_you_to_def|{s1}付近の村を襲撃から守るよう、 {s9}より命令を受けた。
 qstr_{s9}_asked_you_to_ra|{s1}付近の村を襲撃するよう、 {s9}より命令を受けた。
 qstr_These_soldiers_may_w|この兵士たちは私の作戦の 成功のカギになってくれるはずだ、 {playername}。 兵を鍛え上げるおぬしの手腕は信頼している。 おぬしには感謝と敬意を表したい。
-qstr_Good_work_in_shaping|よくぞ新兵どもを鍛え上げてくれたな、 {playername}、 おぬしは非常に役に立つ。 今回の連中は長持ちするといいが、 まあ駄目だったらまたおぬしに頼もう。
+qstr_Good_work_in_shaping|{playername}、よくぞ新兵どもを鍛え上げてくれたな。 おぬしは非常に役に立つ。今回の連中は長持ちするといいが、 まあ駄目だったらまたおぬしに頼むとしよう。
 qstr_Well_the_soldiers_ar|ご覧の通り、 兵士たちは準備万端です、 閣下。 彼らはお役に立つこととでしょう。
 qstr_Well_you_may_do_as_y|どうぞお好きなように。 また必要があれば、 再び私とコンパニオンたちが腕をふるいましょう。
 qstr_{s9}_asked_you_to_br|{s9}の命令により、 彼の軍隊で利用するための 凶暴なトロルを捕獲してくることになった。
@@ -1414,7 +1421,7 @@ qstr_{s9}_asked_you_to_tak|{s9}より、 {s15}の{s13}へ手紙を届けるよ�
 qstr_{s11}_asked_you_to_e|{s11}より、 {s14}まで伝令を護衛するよう、 頼まれた。
 qstr_Lend_your_experience|経験豊富な軍医の{s3}を{s1}に貸す。
 qstr_No_commander_should_|{playername}よ、 指揮官としてはこのような事は話しづらいのだが、 先日我が部隊を閲兵していたところ、 なんと剣の握り方も知らぬ者がいるではないか。 彼らには勇気の意味を実際に示してやる必要がある。 {playername}よ、おぬしは名の知れた戦士だ。 私の代わりに兵を鍛えてやってくれないか？ 引き受けてくれれば非常に有り難い。
-qstr_No_commander_should_h|{playername}よ、 指揮官としてはこのような事は話しづらいのだが、 先日我が部隊を閲兵していたところ、 何名かを不適格者として処刑するはめになった。 彼らには根性を叩き込んでくれる骨のある人物が必要だ。 根性の足りない者は殺してしまうような人物がな。 {playername}よ、おぬしは名の知れた戦士だ。 私の代わりに兵を鍛えてやってくれないか？ 引き受けてくれれば決して後悔はさせないぞ。
+qstr_No_commander_should_h|{playername}よ、 指揮官としてはこのような事は話しづらいのだが、 先日我が部隊を閲兵していたところ、 何名かを不適格者として処刑するはめになった。 彼らには根性を叩き込んでくれる骨のある者が必要だ。 根性の足りない者は殺してしまうような者がな。 {playername}よ、おぬしは名の知れた戦士だ。 私の代わりに兵を鍛えてやってくれないか？ 引き受けてくれれば決して後悔はさせないぞ。
 qstr_{s9}_asked_you_to_rai|{s9}に{s14}を{reg1}名育て上げ、 彼に引き渡すよう頼まれた。
 qstr_{s9}_asked_you_to_hu|{s9}より、 {s4}という名のおたずね者を捕らえるよう依頼された。 おたずね者は現在、 {s3}に潜んでいるとされている。
 qstr_{s9}_asked_you_to_defe|{s9}の要請により、 {s3}へ向かう、 みっつの難民の一行を護衛する事となった。
@@ -1445,12 +1452,12 @@ qstr_Without_my_help_you_|私の助けがなかったら、おまえたちは皆
 qstr_Without_my_help_you_w|私の助けがなかったら、おまえたちは皆殺しにされて 燃やされていただろう！^^私は近いうちに全世界の支配者となられるであろう、 モルドールのあるじの呼びかけに応えてここまで来たのだ。
 qstr__*snort*_There_is_on|*鼻を鳴らす* 全世界の支配者はただひとりだ、愚か者め。いづれお前も、 ルグブルズのしもべとなるだろう。この弱虫め！
 qstr_*snort*_Another_one_|*鼻を鳴らす* 新しい矢よけ用の肉の壁か！失せろ、この弱虫め。 お前などに用はない。
-qstr_Go_to_Moria_and_get_|モリアへ行って、 かっこいいワーグを手に入れるといいぜ。 それでなかったら、 スナガをいくらか雇ってもいいな！
-qstr_Go_to_Isengard_and_g|アイゼンガルドへ行って、 何か買うといいぜ。 ひょっとすると、 戦闘ウルク＝ハイを配下にできるかも知れないな！
-qstr_Go_up_north_to_Gunda|北のグンダバドへ行くといいぜ。 あいつらは醜い上に頭も悪いが、 いい毛皮を持っているんだ。
-qstr_Get_some_snagas_of_y|俺の部下みたいなスナガをいくらか雇うといいぜ。 あんたはそのうちいっぱしの軍団を指揮するようになるかも知れないな！
-qstr_Our_friends_and_alli|俺たちの仲間や友軍は、あんたの名前を聞く事になるだろう。^間違いないね！あんたに新しい馬だとか、新しい剣だとかをくれるかも^知れない。弱っちいやつになんか誰も興味はないが、強いのは別だ。^ヘヘ！強いのは味方にいて欲しいだろ？戦利品でリューンの連中から^活きのいい馬でも買うといいぜ。食べてもいいし、乗るのにもいい。^あんたの好きにするがいいさ、へへ！
-qstr_Trade_some_of_those_|戦利品でリューンの連中から活きのいい馬でも買うといいぜ。 食べてもいいし、 乗るのにもいい。 あんたの好きにするがいいさ、 へへ！
+qstr_Go_to_Moria_and_get_|モリアへ行って、かっこいいワーグを手に入れるといいぜ。 それでなかったら、スナガをいくらか雇ってもいいな！
+qstr_Go_to_Isengard_and_g|アイゼンガルドへ行って、何か買うといいぜ。ひょっとすると、 戦闘ウルク＝ハイを配下にできるかも知れないな！
+qstr_Go_up_north_to_Gunda|北のグンダバドへ行くといいぜ。あいつらは醜い上に頭も悪いが、 いい毛皮を持っているんだ。
+qstr_Get_some_snagas_of_y|俺の部下みたいなスナガをいくらか雇うといいぜ。あんたはそのうち いっぱしの軍団を指揮するようになるかも知れないな！
+qstr_Our_friends_and_alli|俺たちの仲間や友軍は、あんたの名前を知る事になるだろう。間違い ないね！あんたに新しい馬だとか、新しい剣だとかをくれるかも知れない。 弱っちいやつになんか誰も興味はないが、強いのは別だ。ヘヘ！強いのは 味方にいて欲しいだろ？戦利品でリューンの連中から活きのいい馬でも 買うといいぜ。食べてもいいし、乗るのにもいい。あんたの好きにするが いいさ、へへ！
+qstr_Trade_some_of_those_|戦利品でリューンの連中から活きのいい馬でも買うといいぜ。食べても いいし、乗るのにもいい。あんたの好きにするがいいさ、へへ！
 qstr_That_is_not_a_smart_|リューンの戦士を目の前にして言う事ではないな・・・次に会ったらおまえは殺すとしよう。
 qstr_They_will_all_know_m|すべての者は我が名を知り・・・それを恐怖する事になるだろう。
 qstr_Suilad_mellon!_It_is|スイラド、メロン! 我々の領域で隠された谷の住人と出会うのはめずらしい。 あなたをここへ導いてくれた星々に感謝するとしよう。 もちろんあなたにも。 レ・ハンノン！
@@ -1551,7 +1558,7 @@ qstr_The_{s9}_of_{s3}_ask|{s3}の{s9}より、 {reg5}個の食料を、 {reg6}�
 qstr_The_{s9}_of_{s3}_aske|{s3}の{s9}より、 {reg5}個の{s6}を、 {reg0}日以内に調達してくるよう、 頼まれた。
 qstr_Escort_the_supply_tr|{s8}まで 補給隊を護衛せよ
 qstr_The_{s9}_of_{s4}_aske|{s4}の{s9}より、 集落の近辺をうろつく迷惑なゴブリンどもを退治するよう、 頼まれた。
-qstr_The_{s9}_of_{s14}_ha|{s14}の{s9}より、 {s14}で悪さを働くゴブリンの一団を退治するよう 頼まれた。 ゴブリンどもは夜のあいだだけ出没し、 一人で通りを歩く者だけを狙うという。
+qstr_The_{s9}_of_{s14}_ha|{s14}の{s9}より、 {s14}で悪さを働くゴブリンの一団を退治するよう 頼まれた。 ゴブリンどもは夜のあいだだけ出没し、 単独で通りを歩く者だけを狙うという。
 qstr_refugees|難民
 qstr_slaves|奴隷
 qstr_{s1}_Refugees|{s1}の難民

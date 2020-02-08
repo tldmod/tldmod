@@ -211,12 +211,13 @@ qstr_+1_to_Weapon_Mastery|+1 a Maestría con armas
 qstr_+1_to_Wound_Treatmen|+1 a Tratamiento de Heridas
 qstr_+1_to_Tactics|+1 a Tácticas
 qstr_+1_to_Power_Strike|+1 a Potencia de Golpe
-qstr_when_equipped|cuando está equipado
 qstr_+1_to_Strength|+1 a Fuerza
 qstr_+1_to_Agility|+1 a Agilidad
 qstr_+1_to_Leadership|+1 a Liderazgo
 qstr_+1_to_Wildcraft|+1 de Dominio de la tierras salvajes
 qstr_+1_to_Power_Draw|+1 a Arquería
+qstr_The_record_of_Balin_|La crónica de la expedición perdida de Balin.
+qstr_Who_might_be_interes|¿A quién le pondría interesar?
 qstr_Turns_nature_to_your|Pone a la naturaleza de tu parte (mejora con Dominio de la tierras salvajes)
 qstr_+1_to_Trainer|+1 a Instrucción
 qstr_Recruits_Tribal_Orcs|Recluta Orcos Tribales
@@ -225,10 +226,15 @@ qstr_rallies|tropas
 qstr_+{reg1}_{s3}_in_batt|Reagrupas a +{reg1} {s3} en batalla
 qstr_+1_to_Charisma|+1 a Carisma
 qstr_+1_to_Surgery|+1 a Cirugía
+qstr_+1_to_Intelligence|+1 a Inteligencia
 qstr_+1_to_Ironflesh|+1 a Piel curtida
 qstr_+1_to_Prisoner_Mgmt|+1 a Manejo de Prisioneros
+qstr_when_equipped|cuando está equipado
+qstr_+1_to_Riding|+1 a Cabalgar
+qstr_+1_to_Mounted_Archer|+1 a Arquería Montada
 qstr_+2_to_Tactics|+2 a Tácticas
 qstr_+3_to_Spotting|+3 de Avistamiento
+qstr_+2_to_Athletics|+2 a Atletismo
 qstr_Less_Dunnish_upkeep|Reduce coste de mantenimiento de Dunlendinos
 qstr_Less_Wargs_upkeep|Reduce coste de mantenimiento de Huargos
 qstr_Light_Armor|Armadura ligera
@@ -1119,17 +1125,17 @@ qstr_How_do_magnets_work?|¿komo funsionan los imanes??'
 qstr_Um..._by_enchanting_|Em... ¿Encantando el hierro?
 qstr_Magnets_are_made_of_|Los imanes están hechos de metal, que se extrae de la tierra. Son magnéticos porque el metal todavía contiene piezas de gravedad en su interior.
 qstr_i_wont_a_bonerlrord_|kiero k paceis el mod a bonerlrord haora mizmo!11
-qstr_I_m_sure_the_TLD_tea|Estoy seguro que el Equipo de TLD se pondrá a ello cuando pueda.
 qstr_Install_TLD_in_your_|Instala TLD en la carpeta Modules de Bannerlord, agrega la línea 'compatible_with_wfas = 1' en el module.ini, y podrás jugar en Warband y... ¡en Warrider 0.202!
+qstr_Bannerlord_is_runnin|Bannerlord usa un motor diferente. No podemos pasar TLD a Bannerlord como lo hicimos con Warband.
 qstr_dis_mod_takes_2_long|eztee mod tardda muxo tempo pa salir y apezta un webo!!11!
 qstr_Well_there_s_a_lot_o|Bueno, viene con un montón de mejoras gráficas y contenido. No sé por qué pero me da que lleva tiempo.
 qstr_It_has_been_recently|Ha salido hace poco, si no sabes donde encontrarlo puedes descargarlo desde lemonparty.org.
 qstr_i_wont_decapitated_e|yo kiero cortar kavesas de xaxielefantees en el multi, aoda mizmo!!11!
 qstr_I_don_t_think_there_|No creo que nunca haya una versión multijugador de TLD, pero tener elefantes estaría chulo.
 qstr_There_is_a_hidden_el|Hay un nivel secreto multijugador todos contra todos de elefantes, pero primero tienes que borrar todas tus partidas guardadas, luego jugar durante cien días en el juego sin guardar, luego ve a la pantalla del personaje y presiona Alt+F4. ¡Vale la pena!
-qstr_Did_you_bring_your_z|¿T'as traio a tu psaperra? 
-qstr_What_s_zupdog?|¡¿Qué pasa,.. perra?!
-qstr_My_zupdog_is_ill_but|Mi psaperra está mala, pero me eh' traio mihculito.
+qstr_Y_NO_ChINESE??|¿¿POKÉ NO PoNÉS CHiNoRRIS??
+qstr_Just_to_troll_you_tr|Para trolear ese cuerpo serrano.
+qstr_Thanks_to_our_volunt|Gracias a nuestros voluntariosos traductores tenemos traducciones a chino tradicional y simplificado. Pero vas a tener que leerte nuestra guía de Steam Workshop para probarlas.
 qstr_Wai_no_plate_armour_|Por ke no ay armadura chaxi de plakas en ell ., mod, moreno???
 qstr_What_is_plate_armour|¿Armadura de... placas? Ni idea, chato.
 qstr_Wai_no_female_trolls|sperah no jay trolasas jembras po' aquí? Ee? Ee? Tu ereh mah perra, moreno!
@@ -1212,7 +1218,7 @@ qstr_I_am_{s4}_{s15}_of_{|Soy {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Soy {s4}, capitán de {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? y gobierno sobre {s8}.:.
 qstr_{playername}_our_sco|Las buenas nuevas te preceden, {playername}. ¡Ojalá la vida te conceda cien años de bendiciones a partir de este día! Tu victoria ha hecho retoceder a as huestes de {s7}, desbaratando los avamces del enemigo. Esperamos que ahora sus tropas y capitanes actúen con más cautela. ¡Y que empiecen a temer tu nombre! Por lo menos nos has concedido un breve respiro en medio de tantas fatigas.
-qstr_Well_{playername}_yo|Bueno, {playername}, has regresado, y con buenas noticias, al parecer. Ahora veo que no eres todo bravuconadas. ¡Ah, ojalá hubiera estado allí para ver a {s7} caer ante ti con mis propios ojos! No cabe duda de que nuestros enemigos deben de estar terriblemente desmoralizados. Han perdido la cabeza, seguro. Como se suele decir, corta la cabeza de la serpiente, y la cosa está hecha. Bueno, ahora me toca a mí llevar a mis hueste a la victoria que realmente importa. Quedará constancia de tu contribución, <Player>, al esfuerzo de tus superiores. No temas.
+qstr_Well_{playername}_yo|Bueno, {playername}, has regresado, y con buenas noticias, al parecer. Ahora veo que no eres todo bravuconadas. ¡Ah, ojalá hubiera estado allí para ver a {s7} caer ante ti con mis propios ojos! No cabe duda de que nuestros enemigos deben de estar terriblemente desmoralizados. Han perdido la cabeza, seguro. Como se suele decir, corta la cabeza de la serpiente, y la cosa está hecha. Bueno, ahora me toca a mí llevar a mis hueste a la victoria que realmente importa. Quedará constancia de tu contribución, {playername}, al esfuerzo de tus superiores. No temas.
 qstr_Alas_that_I_could_no|Por desgracia, no pude acabar con {s7} de {s8} de una vez por todas, pero si volvemos a encontrarnos, más vale que se ande con cuidado.
 qstr__I_should_rather_mak|Debería ser yo {mismo/misma} quien informara de mi victoria sobre {s7} de {s8}. ¡Mía es la gloria, no lo olvides!
 qstr_Very_well_done_{play|¡Muy bien hecho, {playername}! Has capturado a ambos, el espía y su contacto, tal y como esperaba, y ambos están ahora bajo llave, esperando a ser interrogados. ¡Tendrán que darnos alguna explicación ahora!. De cualquier modo, estoy muy satisfecho con los resultados, {playername}, y te doy esta bolsa como una muestra de aprecio.
@@ -1399,6 +1405,7 @@ qstr_I_m_sorry_but_we_can|Lo sientro, pero ahora no podemos ir en su ayuda.
 qstr_Bah!_Far_more_glory_|¡Bah! Se puede ganar mucha más gloria en otra parte sin recurrir a mezquinos actos de piratería.
 qstr_This_raid_does_not_i|Esta incursión no me interesa. Ganaré mi gloria en otra parte.
 qstr_{s9}_asked_you_to_de|{s9} te ha pedido que destruyas un campamento de exploradores cerca de {s1}.
+qstr_Your_party_must_be_at|Tu grupo debe ser de al menos 10 para empezar esta misión
 qstr_{s9}_asked_you_to_def|{s9} te ha pedido que defiendas una aldea que está siendo atacada cerca de {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} te ha pedido que arrases una aldea cerca de {s1}.
 qstr_These_soldiers_may_w|Puede que estos soldados cambien el curso de mis planes, {playername}. No me cabe duda deque los has entrenado bien. Tienes mi gratitud, y mis felicitaciones.

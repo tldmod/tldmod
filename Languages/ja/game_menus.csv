@@ -3,7 +3,7 @@ mno_start_good|新しい時代の夜明け
 mno_start_evil|人類の黄昏
 mno_go_bback|戻る
 menu_start_phase_2|^^^^^ここは中つ国。東に広がる闇は日々ふくれあがり、^遠く忘れ去られてきた暗いものたちが、その姿をあらわす。^自由の民は、長く経験したことのない未曾有の戦いを前に、その身を固くする。^人間、エルフ、ドワーフ、そしてオーク。^すべてのものがそれぞれの運命を演じていく。^^運命の先にあるものは何か、それはまだわからない・・・
-mno_go_forth|小道で敵を迎え撃て
+mno_go_forth|定められし運命の道ならば、これを進もう・・・
 menu_start_game_3|^^^^^^^^シナリオを選んでください:
 mno_custom_battle_scenario_1|小規模戦闘、 ゴンドール勢 vs ハラド
 mno_custom_battle_scenario_12|所属する勢力を選んでください
@@ -199,7 +199,7 @@ mno_control_allies_menu|影響力ポイントを消費して戦場にいる友�
 mno_encounter_hide|敵から隠れる・・・
 mno_special_whip|{s4}を打ちながら威圧する。
 mno_encounter_leave|撤退する。
-mno_encounter_retreat|何人かの兵をしんがりに残し、撤退する。
+mno_encounter_retreat|数名の兵をしんがりに残し、撤退する。
 mno_player_control_allies_simple|彼らの指揮をとって敵勢へ突撃する
 mno_player_control_allies_back|戻る・・・
 mno_hide_close|続ける・・・

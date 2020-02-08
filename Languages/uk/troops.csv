@@ -42,8 +42,8 @@ trp_townsman|Міщанин
 trp_townsman_pl|Міщани
 trp_watchman|Горожанка
 trp_watchman_pl|Городяни
-trp_i1_woodmen_man|Лісовик
-trp_i1_woodmen_man_pl|Лісовики
+; trp_i1_woodmen_man|Woodmen Settler
+; trp_i1_woodmen_man_pl|Woodmen Settlers
 trp_i2_woodmen_forester|Доглядач лісу
 trp_i2_woodmen_forester_pl|Доглядачі лісу
 trp_i3_woodmen_skilled_forester|Вмілий доглядач лісу
@@ -130,8 +130,8 @@ trp_i3_rhun_tribal_infantry|Піший воїн рунійського плем�
 trp_i3_rhun_tribal_infantry_pl|Піші воїни рунійіських племен
 trp_i4_rhun_vet_infantry|Рунійський піший воїн-ветеран
 trp_i4_rhun_vet_infantry_pl|Рунійські піші воїни-ветерани
-trp_i5_rhun_ox_warrior|Воїн на волі
-trp_i5_rhun_ox_warrior_pl|Воїни на волах
+; trp_i5_rhun_ox_warrior|Warrior of the Ox
+; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
 trp_c2_rhun_light_horseman|Рунійський легкий вершник
 trp_c2_rhun_light_horseman_pl|Рунійські легкі вершники
 trp_c3_rhun_light_cavalry|Рунійський легкий кіннотник
@@ -306,112 +306,112 @@ trp_c6_amroth_leader|Командир дол-амротського загону
 trp_c6_amroth_leader_pl|Командири дол-амротського загону
 trp_a1_lorien_scout|Лоріенський розвідник
 trp_a1_lorien_scout_pl|Лоріенські розвідники
-trp_a2_lorien_warden|Лоріенський досвідчений розвідник
-trp_a2_lorien_warden_pl|Лоріенські досвідчені розвідники
-trp_a3_lorien_vet_warden|Лоріенський лучник
-trp_a3_lorien_vet_warden_pl|Лоріенські лучники
-trp_a4_lorien_gal_warden|Лоріенський досвідчений стрілець
-trp_a4_lorien_gal_warden_pl|Лоріенські досвідчені стрільці
-trp_a5_lorien_gal_royal_warden|Лоріенський майстерний лучник
-trp_a5_lorien_gal_royal_warden_pl|Лоріенські вправні лучники
-trp_a6_lorien_grey_warden|Королівський лучник галадрім
-trp_a6_lorien_grey_warden_pl|Королівські лучники галадрім
-trp_galadhrim_royal_marksman|Влучний стрілець галадрім
-trp_galadhrim_royal_marksman_pl|Влучні стрілки галадрім
+trp_a2_lorien_warden|Лоріенський страж
+trp_a2_lorien_warden_pl|Лоріенські стражі
+trp_a3_lorien_vet_warden|Лоріенський досвідчений страж
+trp_a3_lorien_vet_warden_pl|Лоріенські досвідчені стражі
+; trp_a4_lorien_gal_warden|Galadhrim Warden
+; trp_a4_lorien_gal_warden_pl|Galadhrim Wardens
+trp_a5_lorien_gal_royal_warden|Королівський страж галадрім
+trp_a5_lorien_gal_royal_warden_pl|Королівські стражі галадрім
+; trp_a6_lorien_grey_warden|Grey Warden
+; trp_a6_lorien_grey_warden_pl|Grey Wardens
+trp_a5_lorien_gal_royal_archer|Влучний стрілець галадрім
+trp_a5_lorien_gal_royal_archer_pl|Влучні стрілки галадрім
 trp_noldorin_mounted_archer|Нолдорський кінний лучник
 trp_noldorin_mounted_archer_pl|Нолдорські кінні лучники
-trp_a2_lorien_archer|Лоріенський піший воїн
-trp_a2_lorien_archer_pl|Лоріенський піший воїн
-trp_a3_lorien_vet_archer|Лоріенські піші воїни
-trp_a3_lorien_vet_archer_pl|Лоріенські піші воїни
-trp_a4_lorien_gal_archer|Лоріенські досвідчені піші воїни
-trp_a4_lorien_gal_archer_pl|Лоріенські досвідчені піші воїни
-trp_i5_lorien_gal_royal_inf|Королівський мечник галадрім
-trp_i5_lorien_gal_royal_inf_pl|Королівські мечники галадрім
-trp_i3_lorien_inf|Лоріенський страж
-trp_i3_lorien_inf_pl|Лоріенські стражі
-trp_i4_lorien_gal_inf|Лоріенський досвідчений страж
-trp_i4_lorien_gal_inf_pl|Лоріенські досвідчені стражі
-trp_a5_lorien_gal_royal_archer|Королівський страж галадрім
-trp_a5_lorien_gal_royal_archer_pl|Королівські стражі галадрім
+trp_a2_lorien_archer|Лоріенський лучник
+trp_a2_lorien_archer_pl|Лоріенські лучники
+trp_a3_lorien_vet_archer|Лоріенський досвідчений стрілець
+trp_a3_lorien_vet_archer_pl|Лоріенські досвідчені стрільці
+; trp_a4_lorien_gal_archer|Galadhrim Archer
+; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
+trp_galadhrim_royal_marksman|Влучний стрілець галадрім
+trp_galadhrim_royal_marksman_pl|Влучні стрілки галадрім
+trp_i3_lorien_inf|Лоріенський піший воїн
+trp_i3_lorien_inf_pl|Лоріенський піший воїн
+; trp_i4_lorien_gal_inf|Galadhrim Infantry
+; trp_i4_lorien_gal_inf_pl|Galadhrim Infantry
+; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Guard
+; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Guards
 trp_lothlorien_standard_bearer|Лоріенський прапороносець
 trp_lothlorien_standard_bearer_pl|Лоріенські прапороносці
 trp_a1_greenwood_scout|Розвідник Темнолісся
 trp_a1_greenwood_scout_pl|Розвідники Темнолісся
 trp_a2_greenwood_veteran_scout|Досвідчений розвідник Темнолісся
 trp_a2_greenwood_veteran_scout_pl|Досвідчені розвідники Темнолісся
-trp_a3_greenwood_archer|Стрілець Темнолісся
-trp_a3_greenwood_archer_pl|Стрільці Темнолісся
-trp_a4_greenwood_veteran_archer|Лучник Темнолісся
-trp_a4_greenwood_veteran_archer_pl|Лучники Темнолісся
-trp_a5_greenwood_master_archer|Досвідчений стрілець Темнолісся
-trp_a5_greenwood_master_archer_pl|Досвідчені стрільці Темнолісся
-trp_a6_greenwood_chosen_marksman|Влучний стрілець Трандуїля
-trp_a6__pl|Влучні стрілці Трандуїля
+trp_a3_greenwood_archer|Лучник Темнолісся
+trp_a3_greenwood_archer_pl|Лучники Темнолісся
+trp_a4_greenwood_veteran_archer|Досвідчений стрілець Темнолісся
+trp_a4_greenwood_veteran_archer_pl|Досвідчені стрільці Темнолісся
+; trp_a5_greenwood_master_archer|Greenwood Master Archer
+; trp_a5_greenwood_master_archer_pl|Greenwood Master Archers
+; trp_a6_greenwood_chosen_marksman|Thranduil's Chosen Marksman
+; trp_a6_greenwood_chosen_marksman_pl|Thranduil's Chosen Marksmen
 trp_a3_greenwood_sentinel|Страж Темнолісся
 trp_a3_greenwood_sentinel_pl|Стражі Темнолісся
 trp_a4_greenwood_vet_sentinel|Досвідчений страж Темнолісся
 trp_a4_greenwood_vet_sentinel_pl|Досвідчені стражі Темнолісся
-trp_a5_greenwood_vigilant|Добірний воїн Темнолісся
-trp_a5_greenwood_vigilant_pl|Добірні воїни Темнолісся
+; trp_a5_greenwood_vigilant|Greenwood Guardian
+; trp_a5_greenwood_vigilant_pl|Greenwood Guardians
 trp_i2_greenwood_infantry|Піхотинець Темнолісся
 trp_i2_greenwood_infantry_pl|Піхотинець Темнолісся
 trp_i3_greenwood_vet_infantry|Піхотинці Темнолісся
 trp_i3_greenwood_vet_infantry_pl|Піхотинці Темнолісся
 trp_i4_greenwood_elite_infantry|Досвідчений піхотинець Темнолісся
 trp_i4_greenwood_elite_infantry_pl|Досвідчені піхотинці Темнолісся
-trp_i5_greenwood_chosen_shieldmaster|Королівський мечник Трандуїля
-trp_i5_greenwood_chosen_shieldmaster_pl|Королівські мечники Трандуїля
-trp_i5_greenwood_chosen_spearmaster|Королівський списоносець Трандуїля
-trp_i5_greenwood_chosen_spearmaster_pl|Королівські списоносці Трандуїля
+; trp_i5_greenwood_chosen_shieldmaster|Thranduil's Chosen Shield Master
+; trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil's Chosen Shield Masters
+; trp_i5_greenwood_chosen_spearmaster|Thranduil's Chosen Spear Master
+; trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Chosen Spear Masters
 trp_i5_greenwood_standard_bearer|Прапороносець Темнолісся
 trp_i5_greenwood_standard_bearer_pl|Прапороносці Темнолісся
 trp_a1_riv_scout|Рівендельський розвідник
 trp_a1_riv_scout_pl|Рівендельські розвідники
 trp_a2_riv_vet_scout|Рівендельський досвідчений розвідник
 trp_a2_riv_vet_scout_pl|Рівендельські досвідчені розвідники
-trp_a3_riv_archer|Рівендельський страж
-trp_a3_riv_archer_pl|Рівендельські стражі
-trp_a4_riv_vet_archer|Рівендельський досвідчений страж
-trp_a4_riv_vet_archer_pl|Рівендельські досвідчені стражі
-trp_a5_riv_master_archer|Рівендельський добірний страж
-trp_a5_riv_master_archer_pl|Рівендельські добірні стражі
-trp_a6_riv_guardian|Рівендельський стражник
-trp_a6_riv_guardian_pl|Рівендельські стражники
+; trp_a3_riv_archer|Rivendell Archer
+; trp_a3_riv_archer_pl|Rivendell Archers
+; trp_a4_riv_vet_archer|Rivendell Veteran Archer
+; trp_a4_riv_vet_archer_pl|Rivendell Veteran Archers
+; trp_a5_riv_master_archer|Rivendell Master Archer
+; trp_a5_riv_master_archer_pl|Rivendell Master Archers
+; trp_a6_riv_guardian|Guardian of Imladris
+; trp_a6_riv_guardian_pl|Guardians of Imladris
 trp_i3_riv_swordbearer|Рівендельскі піхотинці
 trp_i3_riv_swordbearer_pl|Рівендельскі піхотинці
 trp_i4_riv_vet_swordbearer|Рівендельські досвідчені піхотинці
 trp_i4_riv_vet_swordbearer_pl|Рівендельські досвідчені піхотинці
 trp_i5_riv_swordmaster|Рівендельський досвідчений піхотинець
 trp_i5_riv_swordmaster_pl|Рівендельський досвідчений піхотинець
-trp_i6_riv_champion|Рівендельські королівські піхотинці
-trp_i6_riv_champion_pl|Рівендельські королівські піхотинці
-trp_ac5_riv_rider|Рівендельські кіннотники
-trp_ac5_riv_rider_pl|Рівендельські кіннотники
-trp_ac6_riv_knight|Лицар Рівенделлу
-trp_ac6_riv_knight_pl|Лицарі Рівенделлу
+; trp_i6_riv_champion|Champion of Imladris
+; trp_i6_riv_champion_pl|Champions of Imladris
+; trp_ac5_riv_rider|Rivendell Rider
+; trp_ac5_riv_rider_pl|Rivendell Riders
+; trp_ac6_riv_knight|Knight of Imladris
+; trp_ac6_riv_knight_pl|Knights of Imladris
 trp_i6_rivendell_standard_bearer|Рівендельський прапороносець
 trp_i6_rivendell_standard_bearer_pl|Рівендельські прапороносці
 trp_a1_arnor_scout|Розвідник Дунедайн
 trp_a1_arnor_scout_pl|Розвідники Дунедайн
 trp_a2_arnor_vet_scout|Слідопит Дунедайн
 trp_a2_arnor_vet_scout_pl|Слідопити Дунедайн
-trp_i3_arnor_swordsman|Арнорський латник
-trp_i3_arnor_swordsman_pl|Арнорські латники
-trp_i4_arnor_vet_swordsman|Майстерний арнорський латник
-trp_i4_arnor_vet_swordsman_pl|Майстерні арнорські латники
-trp_i5_arnor_champion|Добірний мечник Арнора
-trp_i5_arnor_champion_pl|Добірні мечники Арнора
-trp_c4_arnor_horseman|Арнорський вершник
-trp_c4_arnor_horseman_pl|Арнорські вершники
+; trp_i3_arnor_swordsman|Dunedain Swordsman
+; trp_i3_arnor_swordsman_pl|Dunedain Swordsmen
+; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
+; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
+; trp_i5_arnor_champion|Champion of Arnor
+; trp_i5_arnor_champion_pl|Champions of Arnor
+; trp_c4_arnor_horseman|Dunedain Horseman
+; trp_c4_arnor_horseman_pl|Dunedain Horsemen
 trp_c5_arnor_knight|Лицар Арнора
 trp_c5_arnor_knight_pl|Лицарі Арнора
 trp_a3_arnor_ranger|Рейнджер Дунедайн
 trp_a3_arnor_ranger_pl|Рейнджери Дунедайн
 trp_a4_arnor_vet_ranger|Досвідчений рейнджер Дунедайн
 trp_a4_arnor_vet_ranger_pl|Досвідчені рейнджери Дунедайн
-trp_a5_arnor_master_ranger|Майстерний рейнджер Дунедайн
-trp_a5_arnor_master_ranger_pl|Вправні рейнджери Дунедайн
+; trp_a5_arnor_master_ranger|Master Ranger of Arnor
+; trp_a5_arnor_master_ranger_pl|Master Rangers of Arnor
 trp_i1_rohan_youth|Роганський молодий воїн
 trp_i1_rohan_youth_pl|Роганські молоді воїни
 trp_i2_guardsman_of_rohan|Роганський стражник
@@ -466,8 +466,8 @@ trp_dismounted_thengel_guard_of_rohan|Роганський воїн гварді
 trp_dismounted_thengel_guard_of_rohan_pl|Роганські воїни гвардії Тенгела
 trp_i1_harad_levy|Харадський новобранець
 trp_i1_harad_levy_pl|Харадські новобранці
-trp_i3_harad_infantry|Харадські легкі піхотинці
-trp_i3_harad_infantry_pl|Харадські легкі піхотинці
+; trp_i3_harad_infantry|Harad Light Footman
+; trp_i3_harad_infantry_pl|Harad Light Footmen
 trp_i4_harad_spearman|Харадський списоносець
 trp_i4_harad_spearman_pl|Харадські списоносці
 trp_i5_harad_tiger_guard|Воїн тигрячої гвардії
@@ -486,8 +486,8 @@ trp_c2_harondor_scout|Харондорський розвідник
 trp_c2_harondor_scout_pl|Харондорські розвідники
 trp_c3_harondor_rider|Харондорський вершник
 trp_c3_harondor_rider_pl|Харондорські вершники
-trp_c4_harondor_light_cavalry|Харондорські легкі кіннотники
-trp_c4_harondor_light_cavalry_pl|Харондорські легкі кіннотники
+; trp_c4_harondor_light_cavalry|Harondor Light Rider
+; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
 trp_c5_harondor_serpent_knight|Лицар Золотий Змії
 trp_c5_harondor_serpent_knight_pl|Лицарі Золотий Змії
 trp_ac3_harondor_skirmisher|Харондорський застрільник
@@ -526,8 +526,8 @@ trp_i2_khand_pit_dog|Кхандську Собачу яму
 trp_i2_khand_pit_dog_pl|Кхандські Собачі ями
 trp_i3_khand_warrior|Кхандський Воїн
 trp_i3_khand_warrior_pl|Кхандські Воїни
-trp_i4_khand_vet_warrior|Варягський Воїн-ветеран
-trp_i4_khand_vet_warrior_pl|Варягські Воїни-ветерани
+; trp_i4_khand_vet_warrior|Khand Veteran Warrior
+; trp_i4_khand_vet_warrior_pl|Khand Veteran Warriors
 trp_i5_khand_war_master|Варягський Майстер війни
 trp_i5_khand_war_master_pl|Варягські Майстри війни
 trp_c2_khand_pony_rider|Кхандський вершник на поні
@@ -536,18 +536,18 @@ trp_c3_khand_horseman|Кхандський вершник
 trp_c3_khand_horseman_pl|Кхандські вершники
 trp_c4_khand_heavy_horseman|Важкий Кхандський вершник
 trp_c4_khand_heavy_horseman_pl|Важкі Кхандські вершники
-trp_c5_khand_kataphrakt|Варьягський катафракт
-trp_c5_khand_kataphrakt_pl|Варьягські катафрактари
-trp_c5_khand_lance_kataphrakt|Варьягський катафракт з списом
-trp_c5_khand_lance_kataphrakt_pl|Варьягські катафракти зі списами
+; trp_c5_khand_kataphrakt|Variag Ironclad
+; trp_c5_khand_kataphrakt_pl|Variag Ironclads
+; trp_c5_khand_lance_kataphrakt|Variag Lancer
+; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
 trp_i4_khand_halberdier|Кхандський воїн з глефою
 trp_i4_khand_halberdier_pl|Кхандські воїни з глефою
-trp_i5_khand_halberd_master|Кхандський воїн з алебардою
-trp_i5_khand_halberd_master_pl|Кхандські воїни з алебардою
+; trp_i5_khand_halberd_master|Variag Halberd Master
+; trp_i5_khand_halberd_master_pl|Variag Halberd Masters
 trp_i3_khand_pitfighter|Кхандську бійцівську яму
 trp_i3_khand_pitfighter_pl|Кхандські бійцівські ями
-trp_i4_khand_pit_champion|Варягську яму чемпіона
-trp_i4_khand_pit_champion_pl|Варягські ями чемпіонів
+; trp_i4_khand_pit_champion|Khand Pit Champion
+; trp_i4_khand_pit_champion_pl|Khand Pit Champions
 trp_i5_khand_pit_master|Варягський Господар ям
 trp_i5_khand_pit_master_pl|Варягські Господарі ям
 trp_ac3_khand_skirmisher|Кхандський застрільник
@@ -1588,6 +1588,28 @@ trp_npc19|Хейдрек
 trp_npc20|Зігурфель
 trp_werewolf|Перевертень
 trp_werewolf_pl|Перевертні
+trp_moria_troll|Печерний Троль
+trp_moria_troll_pl|Печерні Тролі
+; trp_moria_vet_troll|Trained Cave Troll
+; trp_moria_vet_troll_pl|Trained Cave Trolls
+; trp_moria_armored_troll|Armored Cave Troll
+; trp_moria_armored_troll_pl|Armored Cave Trolls
+; trp_gunda_troll|Mountain Troll
+; trp_gunda_troll_pl|Mountain Troll
+; trp_gunda_vet_troll|Trained Mountain Troll
+; trp_gunda_vet_troll_pl|Trained Mountain Trolls
+; trp_isen_troll|Isengard Troll
+; trp_isen_troll_pl|Isengard Trolls
+; trp_isen_vet_troll|Isengard Trained Troll
+; trp_isen_vet_troll_pl|Isengard Trained Troll
+; trp_isen_armoured_troll|Isengard Armored Troll
+; trp_isen_armoured_troll_pl|Isengard Armored Trolls
+; trp_mordor_troll|Mordor Troll
+; trp_mordor_troll_pl|Mordor Trolls
+; trp_mordor_vet_troll|Mordor Trained Troll
+; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_mordor_olog_hai|Мордорські Олог-Хайї
+trp_mordor_olog_hai_pl|Мордорські Олог-Хайї
 trp_mountain_goblin2|Гірський гоблін
 trp_mountain_goblin2_pl|Гірські гобліни
 trp_tribal_orc2|Дикій орк
