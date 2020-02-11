@@ -562,28 +562,28 @@ itemsfile version 2
  itm_riv_spear Rivendell_Spear Rivendell_Spear 1  elf_spear_2 0  2152038404 9254615759470988544 700 156672 2.25 100 0 0 0 0 20480 102 0 171 0 286 532
 0
 
- itm_riv_armor_light Rivendell_Armor Rivendell_Armor 1  rivendellrecruitarcher 0  16842765 0 150 251658240 6 100 0 10 6 0 0 0 0 0 0 0 0
+ itm_riv_light Rivendell_Tunic Rivendell_Tunic 2  riv_light 0  riv_light_cloak 268435456  16842765 0 100 520093696 6 100 0 10 6 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_light_inf Rivendell_Armor Rivendell_Armor 1  rivendellrecruitswordfighter 0  16842765 0 1200 704643072 18 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_riv_leather Rivendell_Leather_Armor Rivendell_Leather_Armor 2  riv_leather 0  riv_leather_cloak 268435456  16842765 0 250 973078528 12 100 0 16 6 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_archer Rivendell_Armor Rivendell_Armor 1  rivendellnormalarcher 0  16842765 0 1200 704643072 12 100 0 16 6 0 0 0 0 0 0 0 0
+ itm_riv_foot_mail Rivendell_Mail Rivendell_Mail 4  riv_foot_mail_a 0  riv_foot_mail_a_cloak 268435456  riv_foot_mail_b 167772160  riv_foot_mail_b_cloak 536870912  16842765 0 1200 973078528 22 100 0 28 6 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_m_archer Rivendell_Armor Rivendell_Armor 1  rivendellelitearcher 0  16842765 0 1400 704643072 20 100 0 25 12 0 0 0 0 0 0 0 0
+ itm_riv_foot_scale Rivendell_Scale Rivendell_Scale 4  riv_foot_scale_a 0  riv_foot_scale_a_cloak 268435456  riv_foot_scale_b 167772160  riv_foot_scale_b_cloak 536870912  16842765 0 2200 973078528 25 100 0 36 12 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_med Rivendell_Armor Rivendell_Armor 1  rivendellnormalswordfighter 0  16842765 0 1500 704643072 23 100 0 28 15 0 0 0 0 0 0 0 0
+ itm_riv_surcoat Rivendell_Surcoat Rivendell_Surcoat 4  riv_surcoat_a 0  riv_surcoat_a_cloak 268435456  riv_surcoat_b 167772160  riv_surcoat_b_cloak 536870912  16842765 0 2000 973078528 29 100 0 30 15 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_heavy Rivendell_Armor Rivendell_Armor 1  rivendelleliteswordfighter 0  16842765 0 2500 704643072 28 100 0 38 19 0 0 0 0 0 0 0 0
+ itm_riv_knight Rivendell_Knightly_Armour Rivendell_Knightly_Armour 4  riv_knight_a 0  riv_knight_a_cloak 268435456  riv_knight_b 167772160  riv_knight_b_cloak 536870912  16842765 0 3000 973078528 32 100 0 38 19 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_h_archer Rivendell_Armor Rivendell_Armor 1  rivendellmountedarcher 0  16842765 0 2500 704643072 25 100 0 38 19 0 0 0 0 0 0 0 0
+ itm_riv_armor_h_archer Rivendell_Armor Rivendell_Armor 1  riv_foot_scale_a 0  16842765 0 2500 704643072 25 100 0 38 19 0 0 0 0 0 0 0 0
 0
 
- itm_riv_armor_leader Rivendell_Leader_Armor Rivendell_Leader_Armor 1  rivendellleader 0  16777229 0 5000 704643072 30 100 0 41 20 0 0 0 0 0 0 0 0
+ itm_riv_armor_leader Rivendell_Leader_Armor Rivendell_Leader_Armor 1  riv_knight_b_cloak 0  16777229 0 5000 704643072 30 100 0 41 20 0 0 0 0 0 0 0 0
 0
 
  itm_riv_boots Rivendell_Boots Rivendell_Boots 1  rivendell_boots 0  536940302 0 1200 251658240 1 100 0 0 23 0 0 0 0 0 0 0 0
@@ -926,16 +926,16 @@ itemsfile version 2
  itm_lorien_armor_b Lorien_Mail_Armor Lorien_Mail_Armor 5  lorien_med_1 134  lorien_med_2 0  lorien_med_2_cloak 268435456  lorien_med_3 167772160  lorien_med_3_cloak 536870912  16842765 0 1000 973078662 12 100 0 25 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_c Lorien_Scale_Armor Lorien_Scale_Armor 5  lorien_heavy_1 134  lorien_heavy_2 0  lorien_heavy_2_cloak 268435456  lorien_heavy_3 167772160  lorien_heavy_3_cloak 536870912  16842765 0 1500 973078662 18 100 0 33 10 0 0 0 0 0 0 0 0
+ itm_lorien_armor_c Lorien_Scale_Armor Lorien_Scale_Armor 5  lorien_heavy_1 134  lorien_heavy_2 0  lorien_heavy_2_cloak 268435456  lorien_heavy_3 167772160  lorien_heavy_3_cloak 536870912  16842765 0 1500 973078662 18 100 0 32 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_d Lorien_Royal_Swordsman_Armor Lorien_Royal_Swordsman_Armor 1  lorien_heavy_3_cloak 0  16777229 0 2400 167772294 12 100 0 35 10 0 0 0 0 0 0 0 0
+ itm_free_lorien_armor_d Lorien_Royal_Swordsman_Armor Lorien_Royal_Swordsman_Armor 1  lorien_heavy_3_cloak 0  16777229 0 2400 167772294 12 100 0 35 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_e Lorien_Warden_Cloak Lorien_Warden_Cloak 1  lorien_archer_heavy_cloak 0  16777229 0 700 167772294 12 100 0 28 10 0 0 0 0 0 0 0 0
+ itm_free_lorien_armor_e Lorien_Warden_Cloak Lorien_Warden_Cloak 1  lorien_archer_heavy_cloak 0  16777229 0 700 167772294 12 100 0 28 10 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_f Lorien_Elite_Armor Lorien_Elite_Armor 1  lorien_heavy_3 0  16777229 0 2000 167772294 12 100 0 30 10 0 0 0 0 0 0 0 0
+ itm_free_lorien_armor_f Lorien_Elite_Armor Lorien_Elite_Armor 1  lorien_heavy_3 0  16777229 0 2000 167772294 12 100 0 30 10 0 0 0 0 0 0 0 0
 0
 
  itm_lorien_boots Lothlorien_Boots Lothlorien_Boots 1  lorien_boots 0  69390 0 1500 251658240 1 100 0 0 28 0 0 0 0 0 0 0 0
@@ -956,7 +956,7 @@ itemsfile version 2
  itm_lorien_helm_b Lorien_Archer_Helm Lorien_Archer_Helm 1  lorienhelmetarcherhigh 0  65548 0 1800 704643072 1 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_helm_c Lorien_Infantry_Helm Lorien_Infantry_Helm 1  lorienhelmetinf 0  65548 0 1900 704643072 1 100 42 0 0 0 0 0 0 0 0 0 0
+ itm_lorien_helm_c Lorien_Infantry_Helm Lorien_Infantry_Helm 2  lorienhelmetinf_a 0  lorienhelmetinf_b 704643072  65548 0 1900 704643072 1 100 42 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_free_orc_chain_greaves Orc_Greaves Orc_Greaves 1  orc_chain_greaves_lr 0  65550 0 701 174063750 3 100 0 0 15 0 0 0 0 0 0 0 0
@@ -2131,25 +2131,25 @@ itemsfile version 2
  itm_rhun_shield Rhun_Kite_Shield Rhun_Kite_Shield 1  rhun_shield 0  327687 4831838208 200 251658402 2.5 100 0 5 0 0 480 82 0 80 0 0 0
 0
 
- itm_dale_light_a Dale_Militia_Jacket Dale_Militia_Jacket 2  dale_light_b 1  dale_light_b2 167772160  16842765 0 150 123731968 7 100 0 13 2 0 0 0 0 0 0 0 0
+ itm_dale_light_a Dale_Militia_Jacket Dale_Militia_Jacket 3  dale_light_b1 134  dale_light_b2 1  dale_light_b3 167772160  16842765 0 150 167772294 7 100 0 13 2 0 0 0 0 0 0 0 0
 0
 
- itm_dale_light_b Northmen_Light_Lamellar Northmen_Light_Lamellar 3  northmen_light_a2 1  northmen_light_a3 33554432  northmen_light_a1 134217728  16842765 0 400 123731968 12 100 0 15 6 0 0 0 0 0 0 0 0
+ itm_dale_light_b Northmen_Light_Lamellar Northmen_Light_Lamellar 3  northmen_light_a2 1  northmen_light_a3 33554432  northmen_light_a1 134217728  16842765 0 400 167772294 12 100 0 18 6 0 0 0 0 0 0 0 0
 0
 
- itm_dale_med_a Northmen_Heavy_Lamellar Northmen_Heavy_Lamellar 4  northmen_med_a3 1  northmen_med_a2 134  northmen_med_a1 167772160  northmen_med_a1_pelt 536870912  16842765 0 1100 704643206 19 100 0 22 7 0 0 0 0 0 0 0 0
+ itm_dale_med_a Northmen_Heavy_Lamellar Northmen_Heavy_Lamellar 4  northmen_med_a3 1  northmen_med_a2 134  northmen_med_a1 167772160  northmen_med_a1_pelt 536870912  16842765 0 1100 704643206 19 100 0 26 7 0 0 0 0 0 0 0 0
 0
 
- itm_dale_med_b Dale_Leather_Armor Dale_Leather_Armor 4  dale_med_b 134  dale_med_b2 1  dale_med_b3 167772160  dale_med_b4 536870912  16842765 0 900 660602880 20 100 0 18 6 10 0 0 0 0 0 0 0
+ itm_dale_med_b Dale_Leather_Armor Dale_Leather_Armor 4  dale_med_b 134  dale_med_b2 1  dale_med_b3 167772160  dale_med_b4 536870912  16842765 0 900 704643206 20 100 0 18 6 10 0 0 0 0 0 0 0
 0
 
- itm_dale_med_c Dale_Leather_Over_Mail Dale_Leather_Over_Mail 4  dale_med_c1 134  dale_med_c2 1  dale_med_c3 167772160  dale_med_c1_cloaked 536870912  16842765 0 1300 660602880 27 100 0 26 6 12 0 0 0 0 0 0 0
+ itm_dale_med_c Dale_Leather_Over_Mail Dale_Leather_Over_Mail 4  dale_med_c1 134  dale_med_c2 1  dale_med_c3 167772160  dale_med_c1_cloaked 536870912  16842765 0 1300 704643206 27 100 0 26 6 12 0 0 0 0 0 0 0
 0
 
- itm_dale_med_d Dale_Lamellar_Armor Dale_Lamellar_Armor 2  dale_med_a 1  dale_med_a2 167772160  16842765 0 1000 704643206 25 100 0 24 4 10 0 0 0 0 0 0 0
+ itm_dale_med_d Dale_Lamellar_Armor Dale_Lamellar_Armor 3  dale_med_a1 134  dale_med_a2 1  dale_med_a3 167772160  16842765 0 1000 704643206 25 100 0 24 4 10 0 0 0 0 0 0 0
 0
 
- itm_dale_heavy_a Dale_Lamellar_Over_Mail Dale_Lamellar_Over_Mail 1  dale_heavy_a 0  16842765 0 1400 704643206 32 100 0 34 8 12 0 0 0 0 0 0 0
+ itm_dale_heavy_a Dale_Lamellar_Over_Mail Dale_Lamellar_Over_Mail 4  dale_heavy_a1 134  dale_heavy_a2 1  dale_heavy_a3 167772160  dale_heavy_a_pelt 536870912  16842765 0 1400 704643206 32 100 0 32 8 12 0 0 0 0 0 0 0
 0
 
  itm_dale_heavy_b Dale_Plated_Coat Dale_Plated_Coat 5  dale_heavy_b 134  dale_heavy_b2 1  dale_heavy_b3 33554432  dale_heavy_b_cloaked 134217728  dale_heavy_b_pelt 536870912  16842765 0 1600 704643206 39 100 0 38 11 14 0 0 0 0 0 0 0
@@ -2613,7 +2613,7 @@ itemsfile version 2
  itm_shield_of_tuor Shield_of_Tuor Shield_of_Tuor 1  Avelium_shield_of_tuor 0  266247 4831838208 4000 0 4 100 0 22 0 0 930 77 0 96 0 0 0
 0
 
- itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 704643072 24 100 2 44 20 15 0 0 0 0 0 0 0
+ itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 704643072 24 100 2 45 22 15 0 0 0 0 0 0 0
 0
 
  itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_1h 0  scab_1h_westernesse 3458764513820540928  4198402 9223388564182532111 3000 156672 1.25 100 0 0 0 15 38912 117 0 77 0 301 294
