@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1924
+ 1930
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5811,6 +5811,24 @@ spr_Dale_Bell_Tower_wood 0 0 Dale_church_tower_wood bo_Dale_church_tower_a 0
 
 
 spr_Dale_Bell 0 0 Dale_bell 0 0
+
+
+spr_village_wall 0 0 village_wall bo_village_wall 0
+
+
+spr_well_shaft 0 0 well_shaft bo_well_shaft 0
+
+
+spr_small_wall_f 0 0 small_wall_f bo_small_wall_f 0
+
+
+spr_small_wall_f2 0 0 small_wall_f2 bo_small_wall_f2 0
+
+
+spr_arabian_wall_a 0 0 arabian_wall_a bo_arabian_wall_a 0
+
+
+spr_stairs_a 0 0 stairs_a bo_stairs_a 0
 
 
 spr_animal_goat 16384 0 bry_goat 0 1

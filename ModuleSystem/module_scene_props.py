@@ -2916,6 +2916,14 @@ scene_props = [
 ("Dale_Bell_Tower_wood",0,"Dale_church_tower_wood","bo_Dale_church_tower_a", []),
 ("Dale_Bell",0,"Dale_bell","0", []),
 
+( "village_wall"                               ,0,"village_wall","bo_village_wall",[]), #some more native WB props (replace in MB)
+( "well_shaft"                                 ,0,"well_shaft","bo_well_shaft",[]),
+( "small_wall_f"                               ,0,"small_wall_f","bo_small_wall_f",[]),
+( "small_wall_f2"                              ,0,"small_wall_f2","bo_small_wall_f2",[]),
+( "arabian_wall_a"                             ,0,"arabian_wall_a","bo_arabian_wall_a",[]),
+( "stairs_a"                                   ,0,"stairs_a","bo_stairs_a",[]),
+
+
 ("animal_goat",sokf_invisible,"bry_goat","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":animal_var", 1, 3),														 
