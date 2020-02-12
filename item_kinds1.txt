@@ -541,10 +541,10 @@ itemsfile version 2
  itm_riv_tiara Elf_Lord_Tiara Elf_Lord_Tiara 1  tiara 0  16781324 0 3000 0 2.5 100 60 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_riv_shield_a Rivendell_Shield Rivendell_Shield 1  riv_inf_shield 0  268763143 4831838208 700 771751936 2.5 100 0 20 0 0 1000 85 0 82 0 0 0
+ itm_riv_shield_a Rivendell_Shield Rivendell_Shield 2  riv_inf_shield 771751936  riv_inf_shield_b 0  268763143 4831838208 700 771751936 2.5 100 0 20 0 0 1000 85 0 82 0 0 0
 0
 
- itm_riv_shield_b Rivendell_Shield Rivendell_Shield 1  riv_cav_shield 0  327687 5100273664 600 771751936 2 100 0 13 0 0 800 92 0 60 0 0 0
+ itm_riv_shield_b Rivendell_Shield Rivendell_Shield 2  riv_cav_shield 771751936  riv_inf_shield_b 0  327687 5100273664 600 771751936 2 100 0 13 0 0 800 92 0 60 0 0 0
 0
 
  itm_riv_bas_sword Rivendell_Bastard_Sword Rivendell_Bastard_Sword 2  rivendell_handandahalf1 0  scab_rivendell_handandahalf1 3458764513820540928  4259843 9223635954298781951 294 156672 2.25 100 0 0 0 0 37888 110 0 105 0 282 37
