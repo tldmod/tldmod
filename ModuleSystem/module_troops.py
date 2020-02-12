@@ -764,14 +764,14 @@ itm_mirkwood_heavy_scale_bad = (itm_mirkwood_heavy_scale, imod_cracked)
 itm_mirkwood_heavy_scale_good = (itm_mirkwood_heavy_scale, imod_reinforced)
 
 #Rivendell armours
-itm_riv_armor_light = itm_mirkwood_leather
-itm_riv_armor_light_inf = itm_mirkwood_leather
-itm_riv_armor_archer = itm_mirkwood_leather
-itm_riv_armor_m_archer = itm_mirkwood_leather
-itm_riv_armor_med = itm_mirkwood_leather
+itm_riv_armor_light = itm_riv_light
+itm_riv_armor_light_inf = itm_riv_surcoat
+itm_riv_armor_archer = itm_riv_leather
+itm_riv_armor_m_archer = itm_riv_foot_mail
+itm_riv_armor_med = (itm_riv_surcoat, imod_reinforced)
 itm_riv_armor_heavy = itm_mirkwood_leather
-itm_riv_armor_h_archer = itm_mirkwood_leather
-itm_riv_armor_leader = itm_mirkwood_leather
+itm_riv_armor_h_archer = itm_riv_knight
+itm_riv_armor_leader = (itm_riv_knight, imod_lordly)
 
 itm_riv_light_cloak = (itm_riv_light, imod_cloak)
 itm_riv_leather_cloak = (itm_riv_leather, imod_cloak)
@@ -788,6 +788,8 @@ itm_riv_knight_cloak = (itm_riv_knight, imod_cloak)
 itm_riv_knight_good = (itm_riv_knight, imod_reinforced)
 itm_riv_knight_lordly = (itm_riv_knight, imod_lordly)
 
+itm_riv_shield_a_good = (itm_riv_shield_a, imod_reinforced)
+itm_riv_shield_b_good = (itm_riv_shield_b, imod_reinforced)
 
 
 
@@ -1095,12 +1097,12 @@ troops = [
 ["a4_riv_vet_archer","Rivendell_Veteran_Archer","Rivendell_Veteran_Archers",tf_imladris| tfg_ranged| tfg_gloves| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_b,itm_riv_foot_mail_cloak,itm_leather_gloves,itm_riv_boots,itm_riv_bow,itm_elven_arrows,itm_riv_1h_sword,],attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_5|knows_power_draw_4|knows_power_strike_3|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["a5_riv_master_archer","Rivendell_Master_Archer","Rivendell_Master_Archers",tf_imladris| tfg_ranged| tfg_gloves| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_b,itm_riv_foot_mail_cloak,itm_leather_gloves_good,itm_riv_boots,itm_riv_bow,itm_elven_arrows,itm_riv_bas_sword,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_5|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["a6_riv_guardian","Guardian_of_Imladris","Guardians_of_Imladris",tf_imladris| tfg_ranged| tfg_gloves| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_b,itm_riv_foot_scale_cloak,itm_leather_gloves_good,itm_riv_boots,itm_riv_bow,itm_elven_arrows,itm_riv_bas_sword,],attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_5|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
-["i3_riv_swordbearer","Rivendell_Infantry","Rivendell_Infantry",tf_imladris| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_b,itm_riv_foot_mail,itm_leather_gloves,itm_riv_boots,itm_riv_1h_sword,itm_riv_archer_sword,itm_riv_shield_a,],attr_elf_tier_3,wp_elf_tier_3,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_strike_3|knows_ironflesh_3,rivendell_elf_face_1,rivendell_elf_face_2],
-["i4_riv_vet_swordbearer","Rivendell_Veteran_Infantry","Rivendell_Veteran_Infantry",tf_imladris| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_b,itm_riv_foot_mail_good, itm_riv_surcoat,itm_leather_gloves,itm_riv_boots,itm_riv_1h_sword,itm_riv_shield_a,],attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_5|knows_power_draw_4|knows_power_strike_4|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
-["i5_riv_swordmaster","Rivendell_Elite_Infantry","Rivendell_Elite_Infantry",tf_imladris| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_c,itm_riv_surcoat_good,itm_riv_foot_scale,itm_leather_gloves_good,itm_riv_boots,itm_riv_1h_sword,itm_riv_shield_a,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_5|knows_power_draw_5|knows_power_strike_5|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
-["i6_riv_champion","Champion_of_Imladris","Champions_of_Imladris",tf_imladris| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_c,itm_riv_foot_scale, itm_riv_knight, itm_mail_mittens,itm_riv_boots,itm_riv_1h_sword,itm_riv_bas_sword,itm_riv_shield_a,],attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_5|knows_power_draw_6|knows_power_strike_7|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
+["i3_riv_swordbearer","Rivendell_Swordbearer","Rivendell_Swordbearers",tf_imladris| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_b,itm_riv_foot_mail,itm_leather_gloves,itm_riv_boots,itm_riv_1h_sword,itm_riv_archer_sword,itm_riv_shield_a,],attr_elf_tier_3,wp_elf_tier_3,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_strike_3|knows_ironflesh_3,rivendell_elf_face_1,rivendell_elf_face_2],
+["i4_riv_vet_swordbearer","Rivendell_Veteran_Swordbearer","Rivendell_Veteran_Swordbearers",tf_imladris| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_b,itm_riv_foot_mail_good, itm_riv_surcoat,itm_leather_gloves,itm_riv_boots,itm_riv_1h_sword,itm_riv_shield_a,],attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_5|knows_power_draw_4|knows_power_strike_4|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
+["i5_riv_swordmaster","Rivendell_Swordmaster","Rivendell_Swordmasters",tf_imladris| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_c,itm_riv_surcoat_good,itm_riv_foot_scale,itm_leather_gloves_good,itm_riv_boots,itm_riv_1h_sword,itm_riv_shield_a_good,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_5|knows_power_draw_5|knows_power_strike_5|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
+["i6_riv_champion","Champion_of_Imladris","Champions_of_Imladris",tf_imladris| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_c,itm_riv_foot_scale, itm_riv_knight, itm_mail_mittens,itm_riv_boots,itm_riv_1h_sword,itm_riv_bas_sword,itm_riv_shield_a_good,],attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_5|knows_power_draw_6|knows_power_strike_7|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["ac5_riv_rider","Rivendell_Rider","Rivendell_Riders",tf_imladris| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_b,itm_riv_foot_scale, itm_riv_knight, itm_riv_surcoat,itm_leather_gloves,itm_riv_boots,itm_strong_bow,itm_elven_arrows,itm_riv_bas_sword,itm_riv_shield_b,itm_riv_spear,itm_riv_riding_sword,itm_riv_warhorse,],attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_riding_5|knows_athletics_5|knows_power_draw_5|knows_power_strike_6|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
-["ac6_riv_knight","Knight_of_Imladris","Knights_of_Imladris",tf_imladris| tfg_ranged| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_c,itm_riv_foot_scale_good, itm_riv_knight_good, itm_leather_gloves_good,itm_riv_boots,itm_strong_bow,itm_elven_arrows,itm_riv_bas_sword,itm_riv_shield_b,itm_riv_spear,itm_riv_riding_sword,itm_riv_warhorse2,],attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_riding_6|knows_horse_archery_6|knows_athletics_5|knows_power_draw_6|knows_power_strike_6|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
+["ac6_riv_knight","Knight_of_Imladris","Knights_of_Imladris",tf_imladris| tfg_ranged| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_c,itm_riv_foot_scale_good, itm_riv_knight_good, itm_leather_gloves_good,itm_riv_boots,itm_strong_bow,itm_elven_arrows,itm_riv_bas_sword,itm_riv_shield_b_good,itm_riv_spear,itm_riv_riding_sword,itm_riv_warhorse2,],attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_riding_6|knows_horse_archery_6|knows_athletics_5|knows_power_draw_6|knows_power_strike_6|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["i6_rivendell_standard_bearer","Rivendell_Standard_Bearer","Rivendell_Standard_Bearers",tf_imladris| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,[itm_riv_helm_c,itm_riv_foot_scale_good, itm_riv_knight_good, itm_mail_mittens,itm_riv_boots,itm_imladris_banner,],attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_3|knows_power_draw_6|knows_power_strike_6|knows_ironflesh_10,rivendell_elf_face_1,rivendell_elf_face_2],
 
 #Dunedain #Arnor
@@ -1821,7 +1823,7 @@ troops = [
    [itm_courser,itm_whiterobe_saru,itm_leather_boots,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_6,0x0000000fff004107121a807fc84b82ff00000000001d1ab00000000000000000],
 ["mordor_lord","Mouth_of_Sauron","Satrap",tf_hero| tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
-   [itm_mordor_warhorse2,itm_m_cap_armor,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_hood_black,itm_mordor_longsword,],
+   [itm_mordor_warhorse2,itm_m_cap_armor,itm_uruk_chain_greaves,itm_evil_gauntlets_b_good,itm_hood_black,itm_mordor_longsword,],
       attr_tier_6,wp_tier_6,knight_skills_1|knows_riding_4,0x0000000fff00000012078077c00ff1c000000000001cf0680000000000000000],
 ["harad_lord","Chief_Ul-Ulcari","Chief",tf_hero| tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
    [itm_harad_warhorse,itm_harad_heavy,itm_harad_leather_greaves,itm_evil_gauntlets_a,itm_harad_dragon_helm,itm_harad_khopesh,],
@@ -1830,31 +1832,31 @@ troops = [
    [itm_rhun_horse_e,itm_rhun_armor_k,itm_furry_boots,itm_evil_gauntlets_a,itm_rhun_helm_o,itm_rhun_greatsword,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_5,0x00000004a300640c1a938b5499b6556c00000000001edab90000000000000000],
 ["khand_lord","Shibh_Krukmahur","Shibh",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_evil_man,0,0,fac_khand,
-   [itm_variag_kataphrakt,itm_khand_noble_lam,itm_splinted_greaves_good,itm_evil_gauntlets_a,itm_khand_lance,itm_khand_tulwar,itm_variag_gladiator_shield,],
+   [itm_variag_kataphrakt,itm_khand_noble_lam,itm_splinted_greaves_good,itm_evil_gauntlets_b_good,itm_khand_lance,itm_khand_tulwar,itm_variag_gladiator_shield,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_4,0x0000000f3f00b38712065fd3287f731c00000000001c53780000000000000000],
 ["umbar_lord","Admiral_Tulmir","Admiral",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
-   [itm_umb_armor_f_good,itm_corsair_boots,itm_leather_gloves,itm_umb_helm_a_good,itm_corsair_bow,itm_corsair_arrows,itm_kraken,itm_umb_shield_e],
+   [itm_umb_armor_f_good,itm_corsair_boots,itm_leather_gloves_reward,itm_umb_helm_a_good,itm_corsair_bow,itm_corsair_arrows,itm_kraken,itm_umb_shield_e],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_6,0x0000000e3b004244365b6db99b6db7df00000000001dd6eb0000000000000000],
 ["lorien_lord","Lady_Galadriel","Lady",tf_hero| tf_randomize_face| tf_female| tfg_armor| tfg_helm| tfg_gloves| tfg_boots,0,0,fac_lorien,
    [itm_galadriel,itm_empty_head,itm_empty_legs,itm_empty_hands,],
       attr_tier_6,wp(20),knows_common,0x0000000e3b004000365b6db99b6db7df00000000001dd6eb0000000000000000],
 ["imladris_lord","Lord_Elrond","Lord",tf_hero| tf_imladris| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,
-   [itm_mearas_reward,itm_riv_armor_leader,itm_riv_boots,itm_leather_gloves,itm_riv_tiara,itm_riv_riding_sword,itm_riv_shield_b,itm_riv_spear],
+   [itm_mearas_reward,itm_riv_armor_reward,itm_riv_boots,itm_leather_gloves_reward,itm_riv_tiara,itm_riv_riding_sword,itm_riv_shield_b,itm_riv_spear],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_4|knows_riding_5|knows_persuasion_5|knows_trainer_5,0x0000000bff002001379b74b75346d08d00000000001d969b0000000000000000],
 ["woodelf_lord","King_Thranduil","King",tf_hero| tf_woodelf| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_woodelf,
-   [itm_mirkwood_heavy_scale,itm_mirkwood_boots,itm_leather_gloves,itm_riv_tiara,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_great_spear,],
+   [itm_mirkwood_heavy_scale,itm_mirkwood_boots,itm_evil_gauntlets_a,itm_riv_tiara,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_great_spear,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_persuasion_7|knows_trainer_5,0x0000000c00003002189d6e454c6465a500000000001c68f20000000000000000],
 ["moria_lord","Master_Bolg_the_Lesser","Master",tf_hero| tf_uruk| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
    [itm_warg_reward,itm_m_uruk_heavy_c,itm_uruk_helm_e,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_orc_javelin,itm_uruk_falchion_b,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_4|knows_persuasion_3|knows_leadership_10|knows_tactics_8,0x00000000260010010038c51051df5f5800000000000000000000000000000000],
 ["guldur_lord","Master_Fuinur","Master",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_evil_man,0,0,fac_guldur,
-   [itm_mordor_warhorse,itm_m_cap_armor,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_man_shield_b,itm_mordor_longsword,],
+   [itm_mordor_warhorse,itm_m_cap_armor,itm_uruk_chain_greaves,itm_evil_gauntlets_b_good,itm_mordor_cap_helm,itm_mordor_man_shield_b,itm_mordor_longsword,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_6,0x0000000fcd0005c03586a83d4223b2c200000000001c58e00000000000000000],
 ["gundabad_lord","Master_Burza Krual","Master",tf_hero| tf_uruk| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
    [itm_warg_reward,itm_gundabad_armor_e,itm_orc_greaves,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
       attr_tier_6,wp_tier_6,knight_skills_4|knows_riding_4|knows_trainer_4|knows_persuasion_3|knows_leadership_10|knows_tactics_8,0x0000000026002085003f006fe95aae4000000000000000000000000000000000],
 ["dale_lord","King_Brand","King",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_dale,
-   [itm_dale_warhorse,itm_dale_armor_reward,itm_leather_boots,itm_mail_mittens,itm_dale_helmet_f,itm_dale_sword_reward,itm_dwarf_shield_c_good,itm_lance,],
+   [itm_dale_warhorse,itm_dale_armor_reward,itm_leather_boots,itm_evil_gauntlets_b_good,itm_dale_helmet_f,itm_dale_sword_reward,itm_dwarf_shield_c_good,itm_lance,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_5,0x0000000e3f00018436db75b79b6eb6db00000000001db6eb0000000000000000],
 ["dwarf_lord","King_Dain_II_Ironfoot","King",tf_hero| tf_dwarf| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_armor_c,itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_helm_king_NPC,itm_dwarf_throwing_axe,(itm_dwarf_great_axe,imod_rotten)],
@@ -1863,13 +1865,13 @@ troops = [
    [itm_dunland_armor_k,itm_dunland_wolfboots,itm_evil_gauntlets_a,itm_dun_helm_e,itm_dun_berserker,itm_dun_shield_b,itm_dunland_javelin,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_persuasion_5|knows_trainer_6,0x000000003f0051c721dc6c71580f36ff00000000001fd2e80000000000000000],
 ["beorn_lord","Chief_Grimbeorn_the_Old","Chief",tf_hero| tfg_shield| tfg_armor| tfg_helm|tfg_boots,0,0,fac_beorn,
-   [itm_beorn_chief,itm_leather_boots,itm_mail_mittens,itm_beorn_helmet,itm_beorn_battle_axe,itm_dwarf_throwing_axe,itm_beorn_shield_reward,],
+   [itm_beorn_chief,itm_leather_boots,itm_evil_gauntlets_a,itm_beorn_helmet,itm_beorn_battle_axe,itm_dwarf_throwing_axe,itm_beorn_shield_reward,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_10|knows_persuasion_5|knows_trainer_4,0x0000000d6a00628918d46a72d946e7ae00000000001eeeb90000000000000000],
  
 
  # marshalls which are not also leaders
 ["lorien_marshall","Celeborn","_",tf_hero| tf_lorien| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_lorien,
-   [itm_mearas_reward,itm_lorien_heavy_good_cloak,itm_lorien_boots,itm_leather_gloves,itm_riv_tiara,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
+   [itm_mearas_reward,itm_lorien_heavy_good_cloak,itm_lorien_boots,itm_leather_gloves_reward,itm_riv_tiara,itm_lorien_bow,itm_elven_arrows,itm_lorien_sword_a,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_4|knows_riding_4|knows_riding_5|knows_persuasion_7|knows_trainer_4,0x00000008120000024b146a491440e12400000000001cc4ad0000000000000000],
 
 # ["gondor_marshall","Gondor Marshall","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,

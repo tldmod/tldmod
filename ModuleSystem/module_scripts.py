@@ -13199,7 +13199,8 @@ scripts = [
 				(this_or_next|eq, "$current_town", "p_town_cerin_dolen"),
 				(this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
 				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
-				(			  eq, "$current_town", "p_town_imladris_camp"),
+				(			  eq, "$current_town", "p_town_henneth_annun"),
+				#(			  eq, "$current_town", "p_town_imladris_camp"), #Enough space for lots of walkers
 				(set_visitors, ":entry_no", ":walker_troop_id",1),
 			(else_try),
 				(set_visitors, ":entry_no", ":walker_troop_id",4),
