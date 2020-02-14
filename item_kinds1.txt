@@ -1689,46 +1689,46 @@ itemsfile version 2
  itm_free_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643072 23 100 0 38 14 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 104 0 148 0 291 30
+ itm_mirkwood_great_spear Greenwood_Great_Spear Greenwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 104 0 148 0 291 30
 0
 
- itm_mirkwood_war_spear Mirkwood_War_Spear Mirkwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 500 156672 2.5 100 0 0 0 0 25600 99 0 150 0 287 25
+ itm_mirkwood_war_spear Greenwood_War_Spear Greenwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 500 156672 2.5 100 0 0 0 0 25600 99 0 150 0 287 25
 0
 
- itm_mirkwood_short_spear Mirkwood_Spear Mirkwood_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 150 156672 2.5 100 0 0 0 0 20480 97 0 117 0 283 532
+ itm_mirkwood_short_spear Woodelf_Spear Woodelf_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 150 156672 2.5 100 0 0 0 0 20480 97 0 117 0 283 532
 0
 
- itm_mirkwood_knife Mirkwood_White_Knife Mirkwood_White_Knife 2  mirkwood_white_knife 0  scab_mirkwood_white_knife 3458764513820540928  12648450 9223372072313421839 100 286870 0.75 100 0 0 0 0 24576 120 0 51 0 273 24
+ itm_mirkwood_knife Woodelf_Knife Woodelf_Knife 2  mirkwood_white_knife 0  scab_mirkwood_white_knife 3458764513820540928  12648450 9223372072313421839 100 286870 0.75 100 0 0 0 0 24576 120 0 51 0 273 24
 0
 
- itm_mirkwood_axe Mirkwood_Axe Mirkwood_Axe 2  mirkwood_axe 0  mirkwood_axe_carry 3458764513820540928  80019458 9223388530091229198 150 156672 1 100 0 0 0 0 30720 115 0 51 0 256 30
+ itm_mirkwood_axe Woodelf_Axe Woodelf_Axe 2  mirkwood_axe 0  mirkwood_axe_carry 3458764513820540928  80019458 9223388530091229198 150 156672 1 100 0 0 0 0 30720 115 0 51 0 256 30
 0
 
- itm_mirkwood_spear_shield_a Mirkwood_Shield Mirkwood_Shield 1  mirkwood_med_shield 0  327687 4831838208 700 771751936 2 100 0 16 0 0 800 88 0 60 0 0 0
+ itm_mirkwood_spear_shield_a Woodelf_Shield Woodelf_Shield 1  mirkwood_med_shield 0  327687 4831838208 700 771751936 2 100 0 16 0 0 800 88 0 60 0 0 0
 0
 
- itm_mirkwood_spear_shield_b Mirkwood_War_Shield Mirkwood_War_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3 100 0 16 0 0 1000 82 0 90 0 0 0
+ itm_mirkwood_spear_shield_b Greenwood_War_Shield Greenwood_War_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3 100 0 16 0 0 1000 82 0 90 0 0 0
 0
 
- itm_mirkwood_spear_shield_c Mirkwood_Round_Shield Mirkwood_Round_Shield 1  mirkwood_royal_round 0  327687 4831838208 600 771751936 2 100 0 20 0 0 1000 90 0 50 0 0 0
+ itm_mirkwood_spear_shield_c Woodelf_Round_Shield Woodelf_Round_Shield 1  mirkwood_royal_round 0  327687 4831838208 600 771751936 2 100 0 20 0 0 1000 90 0 50 0 0 0
 0
 
- itm_mirkwood_helm_a Mirkwood_Archer_Helm Mirkwood_Archer_Helm 3  mirkwood_helm_a 134  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 300 167772294 1 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_a Woodelf_Archer_Helm Woodelf_Archer_Helm 3  mirkwood_helm_a 134  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 300 167772294 1 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_b Mirkwood_Helm Mirkwood_Helm 2  mirkwoodnormalspearman_a 0  mirkwoodnormalspearman_b 167772160  65548 0 1200 704643072 1 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_b Greenwood_Helm Greenwood_Helm 2  mirkwoodnormalspearman_a 0  mirkwoodnormalspearman_b 167772160  65548 0 1200 704643072 1 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_c Mirkwood_Heavy_Helm Mirkwood_Heavy_Helm 2  mirkwoodroyalspearman_a 0  mirkwoodroyalspearman_b 167772160  65548 0 2000 704643072 2 100 34 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_c Greenwood_Heavy_Helm Greenwood_Heavy_Helm 2  mirkwoodroyalspearman_a 0  mirkwoodroyalspearman_b 167772160  65548 0 2000 704643072 2 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_d Mirkwood_Royal_Helm Mirkwood_Royal_Helm 2  mirkwoodroyalarcher_a 0  mirkwoodroyalarcher_a 167772160  65548 0 2100 704643072 1 100 36 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_d Greenwood_Royal_Helm Greenwood_Royal_Helm 2  mirkwoodroyalarcher_a 0  mirkwoodroyalarcher_a 167772160  65548 0 2100 704643072 1 100 36 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_free_mirkwood_leather_greaves Mirkwood_Leather_Greaves Mirkwood_Leather_Greaves 1  mirkwood_boots 0  69390 0 1500 251658240 1 100 0 0 28 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_boots Mirkwood_boots Mirkwood_boots 1  mirkwood_boots 0  69390 0 1200 251658240 1 100 0 0 23 0 0 0 0 0 0 0 0
+ itm_mirkwood_boots Woodelf_Boots Woodelf_Boots 1  mirkwood_boots 0  69390 0 1200 251658240 1 100 0 0 23 0 0 0 0 0 0 0 0
 0
 
  itm_harad_tunic Harad_Tunic Harad_Tunic 1  harad_tunic 0  16842765 0 50 123731968 4 100 0 8 3 0 0 0 0 0 0 0 0
@@ -2538,19 +2538,19 @@ itemsfile version 2
  itm_ent_body Ent_Body Ent_Body 5  ent_body 0  olog_body 4  olog_body_b 2097152  isen_olog_body 256  isen_olog_body_b 512  137455734797 0 1 0 58 100 0 62 0 70 0 0 0 0 0 0 0
 0
 
- itm_ent_head_helm Ent_Head Ent_Head 9  ent_head1 0  olog_head 67108864  olog_head_b 134217728  olog_head_c 536870912  ent_head2 2199023255552  ent_head3 274877906944  isen_olog_head 8  isen_olog_head_b 256  isen_olog_head_c 512  4108 0 1 0 58 100 60 0 0 70 0 0 0 0 0 0 0
+ itm_ent_head_helm Ent_Head Ent_Head 10  ent_head1 0  olog_head 67108864  olog_head_b 134217728  olog_head_c 536870912  ent_head1 1099511627776  ent_head2 2199023255552  ent_head3 274877906944  isen_olog_head 8  isen_olog_head_b 256  isen_olog_head_c 512  4108 0 1 0 58 100 60 0 0 70 0 0 0 0 0 0 0
 0
 
- itm_troll_head troll_head troll_head 4  ent_head2 0  troll_head 2199023255552  troll_head_b 549755813888  troll_head_c 274877906944  4108 0 1 0 58 100 40 0 0 70 0 0 0 0 0 0 0
+ itm_troll_head troll_head troll_head 9  ent_head2 0  troll_head 2199023255552  troll_head_b 549755813888  troll_head_c 274877906944  gunda_troll_head 1099511627776  gunda_troll_head_b 137438953472  gunda_troll_head_c 4398046511104  mordor_troll_head 33554432  mordor_troll_head_c 67108864  4108 0 1 0 58 100 40 0 0 70 0 0 0 0 0 0 0
 0
 
- itm_troll_body troll_body troll_body 4  troll_body 0  troll_body 2199023255552  troll_body 549755813888  troll_body 274877906944  137455734797 0 1 0 58 100 0 45 0 70 0 0 0 0 0 0 0
+ itm_troll_body troll_body troll_body 4  troll_body 0  gunda_troll_body 33554432  mordor_troll_body 67108864  troll_body 274877906944  137455734797 0 1 0 58 100 0 45 0 70 0 0 0 0 0 0 0
 0
 
- itm_ent_feet_boots Ent_Feet Ent_Feet 4  ent_foot 0  troll_feet 2  olog_feet 67108864  olog_feet 33554432  4110 0 1 0 58 100 0 0 60 70 0 0 0 0 0 0 0
+ itm_ent_feet_boots Ent_Feet Ent_Feet 6  ent_foot 0  troll_feet 2  gunda_troll_feet 4  mordor_troll_feet 8  olog_feet 67108864  olog_feet 33554432  4110 0 1 0 58 100 0 0 60 70 0 0 0 0 0 0 0
 0
 
- itm_ent_hands Ent_Hands Ent_Hands 2  ent_hand_L 0  troll_handL 2  4111 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
+ itm_ent_hands Ent_Hands Ent_Hands 6  ent_hand_L 0  olog_handL 4398046511104  isen_olog_handL 2199023255552  troll_handL 2  gunda_troll_handL 4  mordor_troll_handL 8  4111 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
 0
 
  itm_free_galadriel Galadriel_suit Galadriel_suit 1  galadriel 0  553652237 0 1 0 33 100 60 80 60 0 0 0 0 0 0 0 0

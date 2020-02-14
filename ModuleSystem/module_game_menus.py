@@ -758,10 +758,10 @@ game_menus = [
 		(set_visitors, 25, "trp_i3_rhun_tribal_infantry",		7),
 		(set_visitors, 26, "trp_i4_rhun_vet_infantry",			7),
 		(set_visitors, 27, "trp_i5_rhun_ox_warrior",		7),
-		(set_visitors, 28, "trp_c2_rhun_light_horseman",       7),
-		(set_visitors, 29, "trp_c3_rhun_light_cavalry",        7),
-		(set_visitors, 30, "trp_c4_rhun_noble_cavalry",        7),
-		(set_visitors, 31, "trp_c6_rhun_dorwinion_noble",	7),
+		(set_visitors, 28, "trp_c2_rhun_horseman",       7),
+		(set_visitors, 29, "trp_c3_rhun_outrider",        7),
+		(set_visitors, 30, "trp_c4_rhun_noble_rider",        7),
+		(set_visitors, 31, "trp_c6_rhun_warlord",	7),
 		(str_store_string, s16, "str_custom_battle_4"),
      
      (else_try),
@@ -1165,7 +1165,7 @@ game_menus = [
 
 		(store_random_in_range,":bfac",0,9),  ## bad faction chosen randomly
 		(try_begin),
-			(eq,":bfac",0),(assign,":trp_bad_min","trp_i1_rhun_tribesman"       ),(assign,":trp_bad_max","trp_c6_rhun_dorwinion_noble"    ),(else_try),
+			(eq,":bfac",0),(assign,":trp_bad_min","trp_i1_rhun_tribesman"       ),(assign,":trp_bad_max","trp_c6_rhun_warlord"    ),(else_try),
 			(eq,":bfac",1),(assign,":trp_bad_min","trp_i1_harad_levy" ),(assign,":trp_bad_max","trp_ac5_harondor_black_snake" ),(else_try),
 			(eq,":bfac",2),(assign,":trp_bad_min","trp_i1_dun_wildman"      ),(assign,":trp_bad_max","trp_ac4_dun_raven_rider"           ),(else_try),
 			(eq,":bfac",3),(assign,":trp_bad_min","trp_i1_khand_bondsman"     ),(assign,":trp_bad_max","trp_ac5_khand_heavy_skirmisher"),(else_try),
@@ -9528,7 +9528,7 @@ game_menus = [
 				(try_end),
 				(assign, ":cur_entry", 29),
 				(try_for_range, ":unused", 0, 3),
-					(set_visitors, ":cur_entry", "trp_c6_rhun_dorwinion_noble", ":high"),
+					(set_visitors, ":cur_entry", "trp_c6_rhun_warlord", ":high"),
 					(val_add, ":cur_entry", 1),
 				(try_end),
 	      (set_battle_advantage, 0),
@@ -10826,7 +10826,7 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_a3_dale_bowman", 3),(set_visitors, 9, "trp_a3_dale_bowman", 3),(set_visitors, 10, "trp_a4_dale_archer", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i2_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_c2_rhun_light_horseman", 5),(set_visitors, 17, "trp_c3_rhun_swift_horseman", 5),
+						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i2_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_c2_rhun_horseman", 5),(set_visitors, 17, "trp_c3_rhun_swift_horseman", 5),
 						#enemy archers, entries 18-20
 						(set_visitors, 18, "trp_ac3_rhun_horse_archer", 4),(set_visitors, 19, "trp_ac3_rhun_horse_archer", 4),(set_visitors, 20, "trp_ac4_rhun_veteran_horse_archer", 4),
 				  
@@ -10837,7 +10837,7 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_a3_dale_bowman", 3),(set_visitors, 9, "trp_a3_dale_bowman", 3),(set_visitors, 10, "trp_a4_dale_archer", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i5_rhun_ox_warrior", 5),(set_visitors, 16, "trp_c3_rhun_light_cavalry", 5),(set_visitors, 17, "trp_c4_rhun_noble_cavalry", 5),
+						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i5_rhun_ox_warrior", 5),(set_visitors, 16, "trp_c3_rhun_outrider", 5),(set_visitors, 17, "trp_c4_rhun_noble_rider", 5),
 						#enemy archers, entries 18-20
 						(set_visitors, 18, "trp_ac4_rhun_veteran_horse_archer", 4),(set_visitors, 19, "trp_ac3_rhun_horse_archer", 4),(set_visitors, 20, "trp_ac4_rhun_veteran_horse_archer", 4),
 						
@@ -10971,7 +10971,7 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_a3_dale_bowman", 4),(set_visitors, 9, "trp_a3_dale_bowman", 4),(set_visitors, 10, "trp_a4_dale_archer", 4),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i2_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_c2_rhun_light_horseman", 5),(set_visitors, 17, "trp_c3_rhun_swift_horseman", 5),
+						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i2_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_c2_rhun_horseman", 5),(set_visitors, 17, "trp_c3_rhun_swift_horseman", 5),
 						#ally archers, entries 18-20
 						(set_visitors, 18, "trp_ac3_rhun_horse_archer", 5),(set_visitors, 19, "trp_ac3_rhun_horse_archer", 5),(set_visitors, 20, "trp_ac4_rhun_veteran_horse_archer", 5),
 				  
@@ -10982,7 +10982,7 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_a4_dale_archer", 3),(set_visitors, 9, "trp_a3_dale_bowman", 3),(set_visitors, 10, "trp_a5_barding_bowman", 3),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i2_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_c2_rhun_light_horseman", 5),(set_visitors, 17, "trp_c3_rhun_swift_horseman", 5),
+						(set_visitors, 12, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_i3_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_i4_rhun_vet_infantry", 5),(set_visitors, 15, "trp_i2_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_c2_rhun_horseman", 5),(set_visitors, 17, "trp_c3_rhun_swift_horseman", 5),
 						#ally archers, entries 18-20
 						(set_visitors, 18, "trp_ac3_rhun_horse_archer", 5),(set_visitors, 19, "trp_ac3_rhun_horse_archer", 5),(set_visitors, 20, "trp_ac4_rhun_veteran_horse_archer", 5),
 						
