@@ -226,15 +226,15 @@ qstr_rallies|rajdy
 qstr_+{reg1}_{s3}_in_batt|+{reg1}{s3} w bitwie
 qstr_+1_to_Charisma|+1 do Charyzmy
 qstr_+1_to_Surgery|+1 do Chirurgii
-; qstr_+1_to_Intelligence|+1 to Intelligence
+qstr_+1_to_Intelligence|+1 do Inteligencji
 qstr_+1_to_Ironflesh|+1 do Wytrzymałości
 qstr_+1_to_Prisoner_Mgmt|+1 do Zarządzania Więźniami
 qstr_when_equipped|gdy wyekwipowany
-; qstr_+1_to_Riding|+1 to Riding
-; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_+1_to_Riding|+1 do Jazdy Konnej
+qstr_+1_to_Mounted_Archer|+1 do Łucznictwa Konnego
 qstr_+2_to_Tactics|+2 do taktyki
 qstr_+3_to_Spotting|+3 do Spostrzegania
-; qstr_+2_to_Athletics|+2 to Athletics
+qstr_+2_to_Athletics|+2 do Atletyki
 qstr_Less_Dunnish_upkeep|Mniejsze utrzymanie Dunlandczyków
 qstr_Less_Wargs_upkeep|Mniejsze utrzymanie Wargów
 qstr_Light_Armor|Lekki pancerz

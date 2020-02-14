@@ -2,42 +2,42 @@ qst_deliver_message|Doruč zprávu {s13}
 qst_deliver_message_text|{s9} tě požádal, abys odnesl zprávu {s13}. {s13} byl v {s4}  když ti byl zadán úkol.
 qst_deliver_message_to_enemy_lord|Doruč zprávu {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} tě požádal, abys odnesl zprávu {s13} z {s15} byl. {s13} v {s4} když ti byl zadán úkol.
-qst_raise_troops|Vytrenuj {reg1} {s14}
-qst_raise_troops_text|{s9} te pozadal, abys vytrenoval {reg1} {s14} a privedl je k {nemu/ni}.
+qst_raise_troops|Vytrénuj {reg1} {s14}
+qst_raise_troops_text|{s9} tě požádal, abys vytrénoval {reg1} {s14} a přivedl je k {němu/ni}.
 qst_escort_messenger|Doprovoď posla do {s14}
 qst_escort_messenger_text|Nic.
 qst_hunt_down_fugitive|Zabij {s4}
 qst_hunt_down_fugitive_text|{s9} tě požádal, abys zabil uprchlíka jménem {s4}. Právě je v {s3}. 
 qst_bring_back_runaway_serfs|Přiveď zpět uprchlé otroky.
 qst_bring_back_runaway_serfs_text|{s9} tě požádal, abys přivedl do {s2} zpět tři skupiny uprchlých otroků. Říkal, že všechny tři skupiny musí utíkat směrem k {s3}.
-qst_follow_spy|Nasleduj speha k setkani. 
-qst_follow_spy_text|{s11} tě žádá o sledování špeha, který opustí {s12}. Musíš být opatrný a nespozorovaný špehem během této cesty, nebo se vrátí zpět. Špeh se musí potka s jeho komplicem, pak na ně zaútoč a zajmi je a vrať je zpět k {s11}.
-qst_capture_enemy_hero|Zajmi nepratelskeho velitele. 
-qst_capture_enemy_hero_text|{s11} tě žáda o uvěznění nepřátelského velitele.
+qst_follow_spy|Následuj špeha k setkání. 
+qst_follow_spy_text|{s11} tě žádá o sledování špeha, který opustí {s12}. Musíš být opatrný a nespozorovaný špehem během této cesty, nebo se vrátí zpět. Špeh se musí potkat s jeho komplicem, pak na ně zaútoč, zajmi je a vrať je zpět k {s11}.
+qst_capture_enemy_hero|Zajmi nepřátelského velitele. 
+qst_capture_enemy_hero_text|{s11} tě žádá o uvěznění nepřátelského velitele.
 qst_lend_companion|Propůjč mi svého společníka {s3} {s9}
-qst_lend_companion_text|{s9} tě žáda o zapůjčení společníka {s3} na jeden týden.
-qst_capture_prisoners|Přines {reg1} nepřátelské vězně.
+qst_lend_companion_text|{s9} tě žádá o zapůjčení společníka {s3} na jeden týden.
+qst_capture_prisoners|Přiveď {reg1} nepřátelské vězně.
 qst_capture_prisoners_text|{s9} chce abys mu přivedl {reg1} nepřátelské vězně.
 qst_investigate_fangorn|Prozkoumej Fangorn.
-qst_investigate_fangorn_text|{s9} te pozadal, abys zjistil, co se deje ve Fangornskem lese, a podal hlaseni.
+qst_investigate_fangorn_text|{s9} tě požádal, abys zjistil, co se děje ve Fangornském lese, a podal hlášení.
 qst_capture_troll|Zajmi trola. 
-qst_capture_troll_text|{s9} Požádaly vás, abyste přivedly divokého trolla a použily ho do vaší armády.
+qst_capture_troll_text|{s9} Požádaly vás, abyste přivedl divokého trolla a použil ho do vaší armády.
 qst_kill_troll|Zneškodni rozzuřeného trolla.
 qst_kill_troll_text|{s9} tě požádal, aby si zprostil {s13} od hrozby Trolla, řádícího v jeho okolí.
-qst_mirkwood_sorcerer|Zabij kouzelníka v Mirkwoodu. 
-qst_mirkwood_sorcerer_text|Galadrielina síla bránící Lothorien byla oslabena nečistými rituály černokněžníka z Dol Gulduru. Přesto že je to smrtelník, představuje pro Elfy velkou hrozbu. Hledej ho v lese Mirkwood, nedaleko samotného Dol Gulduru. Na jeho poražení budeš mít pouze jednu šanci, využij proto plížení, aby si nespustil alarm.
+qst_mirkwood_sorcerer|Zabij kouzelníka v Temném hvozdu. 
+qst_mirkwood_sorcerer_text|Galadrielina síla bránící Lothorien byla oslabena nečistými rituály černokněžníka z Dol Gulduru. Přesto že je to smrtelník, představuje pro Elfy velkou hrozbu. Hledej ho v lesích Temného hvozdu, nedaleko samotného Dol Gulduru. Na jeho poražení budeš mít pouze jednu šanci, proto využij plížení, abys nespustil poplach a zneškodni ho .
 qst_find_lost_spears|Najdi ztracená kopí krále Bladorthina
 qst_find_lost_spears_text|{s9} tě požádal, aby si našel ztracená kopí vyrobena trpaslíky pro krále Bladorthina. Musíš trpaslíky požádat o povolení k hledání kopí v hlubinách Osamělé Hory.
 qst_defend_village|Ubraň vesnici
 qst_raid_village|Vypleň vesnici
 qst_destroy_scout_camp|Znič tábor zvědů
-qst_rescue_prisoners|Zachraň {reg1} Vězně
+qst_rescue_prisoners|Zachraň {reg1} vězně
 qst_rescue_prisoners_text|{s9} chce abys osvobodil {reg1} vězně.
 qst_scout_enemy_town|Prozkoumej nepřátelské město. 
 qst_scout_enemy_town_text|{s9} tě požádal, aby si prozkoumal poblíž {s13}.
-qst_dispatch_scouts|Vysli pruzkumnou skupinu.
+qst_dispatch_scouts|Vyšli průzkumnou skupinu.
 qst_dispatch_scouts_text|{s9}  tě požádal, aby si vyslal zvědy poblíž {s13}.
-qst_eliminate_patrols|Poraž {reg1} nepřátelske skupiny.
+qst_eliminate_patrols|Poraž {reg1} nepřátelské skupiny.
 qst_eliminate_patrols_text|{s9} tě žádá o poražení {reg1} {s13} nepřátelských skupin.
 qst_lend_surgeon|Půjčit svého chirurga {s3} do {s1}
 qst_lend_surgeon_text|Půjč mi zkušeného doktora. {s3} do {s1}.
@@ -54,10 +54,10 @@ qst_scout_waypoints_text|Nic.
 qst_move_cattle_herd|Přesuň se k {s13} {s12}
 qst_move_cattle_herd_text|Stařešina z {s10} tě požádal, aby si donesl nějaké {s12} do {s13}.
 qst_escort_merchant_caravan|Doprovázej zásobování do {s8}
-qst_escort_merchant_caravan_text|Eskortuj zásobovací konvoj do {s8} a promluv si s nimi.
+qst_escort_merchant_caravan_text|Eskortuj zásobovací konvoj do {s8} a promluv si s nimi, když budeš poblíž .
 qst_deliver_wine|Doruč {reg5} jednotek {s6} do {s4}
 qst_deliver_wine_text|{s9} z {s3} tě požádal o doručení {reg5} jednotek {s6} do {s4} do 7 dnu.
-qst_troublesome_bandits|Dopadni problémy dělající gobliny.
+qst_troublesome_bandits|Dopadni gobliny, kteří dělají problémy.
 qst_troublesome_bandits_text| {s9} z {s4} tě požádal, aby si ulovil gobliny v okolí města.
 qst_deal_with_looters|Postarej se o klanové skřety.
 qst_deal_with_looters_text|Stařešina z {s4} tě požádal, aby si se vypořádal s několika tlupami divokých orků okolo {s4}.
@@ -70,12 +70,12 @@ qst_deliver_iron_text|{S9} z {s3} vás požádal, abyste mu přinesl {reg5} jedn
 qst_tld_introduction|Běž za tvým vůdcem frakce.
 qst_tld_introduction_text|Nic.
 qst_treebeard_kill_orcs|Poraž skřetí skupinu kácející stromy.
-qst_treebeard_kill_orcs_text|Treebeard chce aby jsi našel a porazil skřety kteří kácí stromy ve Fangornu.
+qst_treebeard_kill_orcs_text|Stromovous chce aby jsi našel a porazil skřety, kteří kácí stromy ve Fangornu.
 qst_oath_of_vengeance|Přísaha pomsty.
-qst_oath_of_vengeance_text|Rozzuren smrti {s1}, pronesl jsi prisahu pomsty vuci silam {s2}. V nasledujicich dnech musis zničit tolik armad {s2}, kolik je mozne. Jsi si jasne vedom toho, ze tvi nasledovnici byli svedky tve prisahy a nechces aby te povazovali za krivopriseznika. Krveproliti musi zacit!
+qst_oath_of_vengeance_text|Rozzuřen smrtí {s1}, pronesl jsi přísahu pomsty vůči silám {s2}. V následujících dnech musíš zničit tolik armád {s2}, kolik je možné. Jsi si jasně vědom toho, že tví následovnici byli svědky tvé přísahy a nechceš aby tě považovali za křivopřísažníka. Krveprolití musí začít!
 qst_deliver_gift|Doručte {s4} z {s1} od {s2} do {s3}
 qst_deliver_gift_text|Byl jsi požádán o doručení {s4} z {s1} do {s3} z {s2}.
-qst_ring_hunters|hledači prstenu
+qst_ring_hunters|Lovci prstenů
 qst_ring_hunters2|Lovci prstenů - Splněno
 qst_deliver_message_hobbit|Týkající se Hobbitů 
 qst_blank_quest_01|Ochraň uprchlíky
@@ -99,6 +99,6 @@ qst_blank_quest_17|Pobij {reg22} {s6} v bitvách
 
 
 
-qst_guardian_party_quest|Poslední vzdor Železných
+qst_guardian_party_quest|Poslední vzdor Železného pasu
 qst_quests_end|Konec úkolu
 qst_quests_end_text|.

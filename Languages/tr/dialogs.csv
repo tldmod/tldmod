@@ -465,14 +465,14 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, gözcülerimi
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Adam gönderebilecek durumda mısın?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Yapabiliriz, ancak harekete geçmek için hazırlanmamız zaman alacaktır. Korktugumuzdan çok geç orada olabiliriz. ^^ Siz ve adamlarınız görünüşe göre hızla dışarı çıkabiliyorlar. Bu köyü savunur musun?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Ben ve adamlarım hazır. Hemen yola koyulmalıyız.
-dlga_lord_mission_defend_question:lord_mission_defend_reject|Açıkçası şu an yeterince adamım olmadıgı için biraz korkuyorum...
-dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Korkarım ama bu görevi yapamam.
+dlga_lord_mission_defend_question:lord_mission_defend_reject|Korkarım şuan yeteri kadar adamım olmayabilir...
+dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Korkarım bu görevi yapamam.
 dlga_lord_mission_defend_accept:close_window|Teşekkürler,{playername}. şimdi git, Çabuk!
 dlga_lord_mission_defend_reject:close_window|Anlıyorum. O zaman oraya birliklerimi yollayacagım. Umalım da çok geç olmasın.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, yakınlarda bindirmeye hazır bir köy var. Casuslarımız köyün {s3} tarafından korundugunu söylüyor fakat sayıca azlar ve kolayca maglup edilebilirler. ^^Şansa bunu söyledigim ilk kumandan sensin. Bu bilgiyle ne yapmayı planlıyorsun?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Bu kasabaya saldıracagım, gördügüm her adamı öldürüp tüm kadın ve çocukları esir alacagım!
-dlga_lord_mission_raid_village_a:lord_raid_village_reject|Yanımdaki cılızlarla bu yagmayı yapamam...
-dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Bu sıkıcı kasabalara saldıracak kadar boş vaktim yok!
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|Yanımdaki cılızlarla şuan bu yagmayı yapamam...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Bu sefil köylere saldıracak kadar boş vaktim yok!
 dlga_lord_raid_village_accept:close_window|O zaman burada dikilip ne yapıyorsun?
 dlga_lord_raid_village_reject:close_window|Korkak mazeretler. Git burdan kokuşmuş pisligin bana resmen hakaret ediyor.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Kuyutorman büyücüsü katledildi, Leydim.
@@ -661,7 +661,7 @@ dlga_castle_gate_open:close_window.4|Lordum {s2} seni burada istemiyor. Şimdi d
 dlga_start:caravan_help1|Yardımınız için teşekkürler! Şimdi güvendeyiz. Benim adım Torbal, saldırıya ugradıgımda yükleri teslim ediyordum.^^ Daha önce hiç bu kadar büyük orklar gördün mü? Bunlar ilk dagındakiler gibi kolayca defettigimiz gibi degil. Ve kalkanlarındaki boya antik Mordor işareti. Bu nehrin diger tarafını uzun zamandır görmemiştim.^^Korkunç şeyler büyüyor. Savaş yaklaşıyor! ^^Sana en yakındaki şehre gidip oradaki yetkiliyi ve herkesi uyarmanı öneririm. Bu çok önemli, yani lütfen acele et.
 dlga_caravan_help1:caravan_help2|Hayır, daha önce hiç böyle büyük bir Ork görmemiştim. İgrenç şeyler... ^^Ben geldigini artık hepimizin hissettigi bu büyük savaşta bir askerim.
 dlga_caravan_help2:caravan_help_tut|Sen? Tabiki öylesin! Yetenekli bir savaşçı oldugunu gördüm. ^^ Bugün gerçekten şanslı günümdeyim, bu yüzden bu iyi şansı iyi degerlendirmeli ve acilen köyüme gidip halkımı bu igrenç yaratıklara karşı uyarayım. ^^ Buyur, {s10} tarafında geçerli olan paramızdan al.
-dlga_caravan_help_tut:caravan_help3|{S11} kişisinden satın almak için kullanabileceginiz Kaynak Puanları kendi grubunuzda kazandıgınız degil, {s11} 'de kazandıgınız puanlardır. ^^ Daha fazla bilgi için RAPORLAR bölümüne bakınız.
+dlga_caravan_help_tut:caravan_help3|(KAYNAK PUANI EGİTİMİ)^^ {s11} topraklarında alışveriş yapabilecegin kaynak puanları kendi memleketininkiyle aynı degil, {s11} halkının kendi para birimi. ^^Daha çok bilgi için RAPORLAR'a bakın.
 dlga_caravan_help3:caravan_help4|Sana İyi yolculuklar dilerim, Torbal. Eminim ki tekrar karşılaşacagız.
 dlga_caravan_help4:caravan_help_fac_tut|Bunu sabırsızlıkla bekliyorum. Muhafızlarım burada savaşınızı gördüler ve kesinlikle Bunu Lordlarına anlatacaklar. ^^ Onların insanlarına yeteri kadar yardımcı olursanız, aralarında çok ünlü olursunuz ki bu çok güzel şeylere yol açabilir! ^ Ben bunu yaptıgımdan biliyorum bunun için bana aylık maaş bile veriyorlar!
 dlga_caravan_help_fac_tut:caravan_help5|(GRUP SEVİYE DERSLERİ) ^^ Seviye puanları, grubunuzun (ve / veya diger grupların) yükselmesini saglar. ^^ Bu, maksimum parti büyüklügünüzü, haftalık grup kaynak gelirinizi ve diger grup özellikli ödüllerin açılmasını belirleyecektir.

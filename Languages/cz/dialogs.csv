@@ -140,7 +140,7 @@ dlga_ziggy_no:close_window.1|Dobrá, veliteli.
 dlga_ziggy_yes:ziggy_choose_prisoners|Výtečně. Který z těchto exemplářů mi můžete dát?
 dlga_ziggy_choose_prisoners:ziggy_no|Nemám žádné, které bych nabídl.
 dlga_ziggy_chosen_prisoner:ziggy_ritual|Děkuji veliteli! Moment... Á ano, toto by mělo stačit... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Co pak to tady máme? Hrdý, vzdorovitý? Vyděšený? To bys měl být. Teď ti dám důvod se bát! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Co pak to tady máme? Hrdý, vzdorovatel? Vyděšený? To bys měl být. Teď ti dám důvod se bát! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 ; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|Vždycky taková radost přimět nepřítele řádně na patu.
 dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! Tenhle byl až moc slabý! Bezcenný! Dejte mi silnějšího, Velitele, který nezklame!
@@ -374,9 +374,9 @@ dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Nyní ti patří mě.
 dlga_ring_hunter_lair_defeat2:close_window|Myslíte si, že jste vyhráli velké vítězství? Možná bledě potrhaný stín. Bah! Náš válečný pás pochodoval dlouho předtím, než jste dorazili. Jste příliš pozdě na to, abyste zachránili ty, po kterých šli!
 dlga_start:beorn_message| {Můj/Má},  {pane/paní}, obdrželi jsme varování že z  {s1} k nám míří velká skupina vyhnanců. Běda, nebylo dost času shlukovat dostatek válečníků. Připravili jsme se na nejhorší, když jsme slyšeli zvuky vřavy.
 dlga_beorn_message:beorn_message2|To nebyli obyčejní psanci. Byli to ti nejhorší z nejhorších stoupenců temného pána, nakonec tady na severu. Jejich velitelé zde ale nebyli. Jejich skrýš leží poblíž Temného hvozdu a já si musím pospíšit.
-; dlga_beorn_message2:beorn_message_end|Yes, we were warned about the camp also and sent scouts towards it. We saw them burn it down and swiftly ride towards Mordor. If you chose to rush there first, you may not have been able to help us. We are truly grateful for your victory!
+dlga_beorn_message2:beorn_message_end|Ano byli jsme také varování před tímto táborem a vyslali jsme zde nějaké zvědy. Viděli jsme ,že ho sbalili a urychleně vyrazili do Mordoru. Pokud by ses rozhodl prvně vyrazit tam, pravděpodobně by jsi nebyl schopen pomoct nám. Jsme ti zavázání za tvé vítěství.
 dlga_beorn_message_end:beorn_message_close|Musím se hlásit zpátky a říct {s1} o výsledku bitvy. Vrať se do vesnice a vyšli zvědy. V okolí mohou být odpadlíci.
-; dlga_beorn_message_close:close_window|Yes, commander. We shall remain vigilant and send for more men from the distant hamlets. Your victory today has inspired us all.
+dlga_beorn_message_close:close_window|Ano veliteli. Zůstaneme bdělí a pošleme pro vice mužů i do vzdálenějších osad. Toto dnešní vítěství bylo pro nás všechny velkým povzbuzením.   
 dlga_lord_give_troops:lord_give_troops_check|Posílit mou družinu? Pár vojáků se vždy hodí.
 dlga_lord_give_troops:lord_pretalk|Bohužel se zdá, že nemáš {s14} vojáky pro mě.
 dlga_lord_give_troops_check:lord_give_troops_check_1|Podívám se na seznam mužů.
@@ -403,7 +403,7 @@ dlga_player_siege_accept:close_window|Děkuji ti, můj pane. Nezklamu tebe ani {
 dlga_marshall_answer:close_window|Velmi dobře, {playername}, odložím svůj názor. Posílám posly, aby shromáždili naše síly. ^ Následujte mě a zůstaňte blízko - jdeme na {s4}!
 dlga_lord_talk:deliver_gift_1|Přináším dárek {s1} od {s3} lidem {s2}.
 dlga_send_gift_1:lord_pretalk|Jste už {s4}, {playername}. Bylo by moudré ho nejprve doručit.
-dlga_send_gift_1:lord_pretalk.1|Bohužel si nemůžete dovolit poslat dárek právě teď {playername}. ^ ^ [Nedostatek zdrojů]
+dlga_send_gift_1:lord_pretalk.1|Bohužel si nemůžete dovolit poslat dárek právě teď {playername}. ^ ^ [Nedostatek Resource pointů]
 dlga_send_gift_1:send_gift_2|Velmi dobře. Komu by si chtěl doručit dar?
 dlga_send_gift_1:send_gift_2.1|Velmi dobře. Komu chceš dát úplatek?
 dlga_send_gift_2:lord_pretalk|Nevadí.
@@ -456,14 +456,14 @@ dlga_lord_tell_objective:lord_pretalk.11|Přemýšlíme o našem další kroku.
 dlga_lord_tell_objective:lord_pretalk.12|Já nevím: {reg1} {s1}
 dlga_lord_mission_told_kill_quest_targeted:lord_mission_rejected|Nemohu to nemohu provést.
 dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|Nemohu to nemohu provést.
-; dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, we have received word that {s3} has a scout camp nearby, Make sure you are not seen and destroy it before they learn about our plans.
+dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, doneslo se k nám ,že {s3} má nedaleko tábor zvědů. Dej si pozor aby tě neviděli a znič ten tábor dříve než odhalí naše plány.
 dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|Považuj to za vyřízené.
 dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|Nemám na to čas.
 dlga_lord_mission_destroy_scout_camp_accept:close_window|Budeme čekat na zprávu o tvém úspěchu.
 dlga_lord_mission_destroy_scout_camp_reject:close_window|Chápu. To je zklamání.
 dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, dostali jsme zprávu od našich zvědů, že banda nájezdníků je na cestě k vesnici blízko {s12}.
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Jsi schopen poslat muže?
-; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
+dlga_lord_mission_defend_village_b:lord_mission_defend_question|Mohli bychom, ale zabere nám nějaký čas než shromáždíme muže. Obáváme se ,že v té době už by bylo pozdě. ^^Ty a tví muži vypadáte ,že můžete rychle vyrazit. Můžete ty vesničany ochránit?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Mí muži jsou připravení a já též. Vyjedeme hned.
 dlga_lord_mission_defend_question:lord_mission_defend_reject|Obávám se, že se mnou v současné době není dost mužů ...
 dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Obávám se, že tento úkol nedokážu.
@@ -471,7 +471,7 @@ dlga_lord_mission_defend_accept:close_window|Děkuji, {playername}. Vyraž nyní
 dlga_lord_mission_defend_reject:close_window|Vidím. Pošlu tam tolik jednotek kolik můžu. Doufám že není pozdě.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, nedaleko je vesnice zralá k vyloupení. NAši zvědové hlásí že je chráněna {s3}, ale je jich jen pár a mohou být lehce poraženi . ^^Jste náhodou prvním velitelem, kterému jsem jsem to řekl. Jak chcete s touto informací naložit?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Vypálím tu vesnici, zabiji každého muže co uvidím a zotročím všechny ženy a děti!
-; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I cannot raid with these weaklings with me right now...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|Momentálně nemohu s takovouto bandou slabochů vyrazit...
 dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Nemám čas na přepadení malých vesnic!
 dlga_lord_raid_village_accept:close_window|Tak proč tu tedy postáváte?
 dlga_lord_raid_village_reject:close_window|Výmluvy zbabělců. Zmiz mi z očí, tvůj zápach zbabělce mě uráží.
@@ -570,7 +570,7 @@ dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accept
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Momentálně mám příliš práce na to abych ho pronásledoval.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|To je znamenité, {playername}. Budu ti velice vděčný, a tvá statečnost bude samozřejmě řádně poznamenána. Inu, šťastný lov.
 dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|Jak si přeješ, {playername}. Stejně tu jsou spousty lovců hlav co to zvládnou.
-; dlga_lord_tell_mission:lord_mission_told.2|There are refugees on their way to {s6}. They will be moving slow, and as such, is a moving target to our enemies. Defend them until they reach their destination.
+dlga_lord_tell_mission:lord_mission_told.2|Na místo {s6} vyrazili uprchlíci. Protože se budou pohybovat pomalu, budou snadný cíl pro nepřátelé. Ochraňuj je dokud nedorazí do svého cíle.
 ; dlga_lord_tell_mission:lord_mission_told.3|Our spies tell us that there are refugees on their way to {s6}. They will be slow because of all the old, the sick, and the dying. Hunt them down, kill all the men, and take everyone else as slaves. Make sure none arrive at their destination!
 ; dlga_lord_tell_mission:lord_mission_told.4|Well, some of the slaves working in {s4} have run away.  The ungrateful swine, whose lives we spared!  From what I've been hearing, they're running to {s3} as fast as they can, and have split up into three groups to try and avoid capture. I want you to capture all three groups and fetch them back to {s4} by whatever means necessary. I should really have them hanged for attempting to escape, but we need hands now, so I'll let them go off this time with a good beating.
 ; dlga_lord_tell_mission:lord_tell_mission_follow_spy|I have good information that a man in this very town is actually an enemy spy. He should be seized and hanged for his impudence, but we also believe that very soon he will leave town to meet with his master, the man to whom the spy feeds all his little whispers. The spy himself is of little import, but the master is a dangerous man, and could tell us a great deal if we could only get our hands on him...

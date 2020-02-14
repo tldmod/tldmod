@@ -1,15 +1,15 @@
-pt_rescued_prisoners|Osvobozeni zajatci
+pt_rescued_prisoners|Osvobození zajatci
 pt_enemy|Nepřítel
 pt_hero_party|Hrdinova družina
 pt_cattle_herd|Stádo dobytka
 pt_ruins|Ruiny
 pt_legendary_place|Proslulé místo
 pt_mound|Mohyla hrdiny
-pt_pyre|Porebni vatra
-pt_wild_troll|Divoký zlobr
-pt_raging_trolls|Běsnící zlobři
+pt_pyre|Pořební vatra
+pt_wild_troll|Divoký trol
+pt_raging_trolls|Běsnící trolové
 pt_looters|Kmenový skřeti
-pt_forest_bandits|Opoždělí orci
+pt_forest_bandits|Opoždění skřeti
 pt_mountain_bandits|Divocí goblini
 pt_steppe_bandits|Vyhnanci z Vrchoviny
 pt_sea_raiders|Odpadlí Korzáři
@@ -18,8 +18,8 @@ pt_merchant_caravan|Kupecká karavana
 pt_troublesome_bandits|Otravní goblini
 pt_fangorn_orcs|Skřeti dřevorubci
 pt_village_farmers|Vesničané
-pt_spy_partners|Podezřelí poutnící
-pt_spy_partners_evil|Podezřelí poutnící
+pt_spy_partners|Podezřelí poutníci
+pt_spy_partners_evil|Podezřelí poutníci
 pt_runaway_serfs|Uprchlí otroci
 pt_spy|Osamělý jezdec
 pt_spy_evil|Osamělý jezdec
@@ -27,120 +27,120 @@ pt_sacrificed_messenger|Obětovaný posel
 pt_gandalf|Osamělý jezdec
 pt_nazgul|Osamělý jezdec
 pt_gondor_scouts|Gondorští průzkumníci
-pt_blackroot_auxila|Morthondský Pomocný Sbor
-pt_lamedon_auxila|Lamedonsky pomocny sbor
-pt_lossarnach_auxila|Lossarnassky pomocny sbor
-pt_pinnath_gelin_auxila|Pinnath Gelinsky pomocny sbor
+pt_blackroot_auxila|Morthondský pomocný sbor
+pt_lamedon_auxila|Lamedonský pomocný sbor
+pt_lossarnach_auxila|Lossarnasský pomocný sbor
+pt_pinnath_gelin_auxila|Pinnath Gelinský pomocný sbor
 pt_ranger_scouts|Hraničářští průzkumníci
 pt_rohan_scouts|Rohanští průzkumníci
-pt_lorien_scouts|Loriensti pruzkumnici
-pt_woodelf_scouts|Lesni elfi pruzkumnici
-pt_imladris_scouts|Dunedainsti pruzkumnici
-pt_dale_scouts|Pruzkumnici z Dolu
-pt_esgaroth_scouts|Esgarothsti pruzkumnici
-pt_dwarf_scouts|Trpaslici hlidka
-pt_beorn_scouts|Meddedovsti pruzkumnici
-pt_woodmen_scouts|Lesni pruzkumnici
-pt_mordor_scouts|Mordorsti pruzkumnici
-pt_morgul_scouts|Morgulsti pruzkumnici
-pt_isengard_scouts|Pruzkumnici z Zelezneho Pasu
-pt_isengard_scouts_warg|Sarumanovi vrrci jezdci
-pt_harad_scouts|Haradsti pruzkumnici
-pt_dunland_scouts|Vrchovecti pruzkumnici
-pt_umbar_scouts|Korzarsti pruzkumnici
-pt_khand_scouts|Vychodnansti pruzkumnici
-pt_moria_scouts|Morijsti pruzkumnici
-pt_guldur_scouts|Dol Guldursti pruzkumnici
-pt_gundabad_scouts|Pruzkumnici z Gundabadu
-pt_rhun_scouts|Rhunsti pruzkumnici
-pt_gondor_raiders|Gondorsti zasobovaci
-pt_rohan_raiders|Rohirsti zasobovaci
-pt_imladris_raiders|Zasobovaci z Roklinky
-pt_lorien_raiders|Loriensti zasobovaci
-pt_woodelf_raiders|Lesni elfi zasobovaci
-pt_dale_raiders|Zasobovaci z Dolu
-pt_dwarf_raiders|Trpaslici zasobovaci
-pt_ranger_raiders|Hranicarsti najezdnici
-pt_morgul_raiders|Morgulsti najezdnici
-pt_mordor_raiders|Mordorsti najezdnici
-pt_isengard_raiders|Sarumanovi najezdnici
-pt_dunland_raiders|Vrchovecti najezdnici
-pt_harad_raiders|Haradsti najezdnici
-pt_khand_raiders|Najezdnici z Khandu
-pt_umbar_raiders|Umbarsti najezdnici
-pt_moria_raiders|Morijsti najezdnici
-pt_guldur_raiders|Najezdnici z Dol Gulduru
-pt_gundabad_raiders|Najezdnici z Gundabadu
-pt_rhun_raiders|Najezdnici z Rhunu
-pt_gondor_patrol|Gondorska patrola
-pt_rohan_patrol|Rohanska patrola
-pt_imladris_patrol|Dunadanska patrola
-pt_lorien_patrol|Lorienska patrola
-pt_woodelf_patrol|Lesni elfi patrola
-pt_dale_patrol|Dolska patrola
-pt_esgaroth_patrol|Esgarothska patrola
-pt_dwarf_patrol|Trpaslici patrola
-pt_ranger_patrol|Hranicarska patrola
-pt_amroth_patrol|Dol Amrothska patrola
-pt_pelargir_patrol|Pelargirska patrola
-pt_lossarnach_patrol|Lossarnasska patrola
+pt_lorien_scouts|Lothlorienští průzkumníci
+pt_woodelf_scouts|Průzkumníci z Temného hvozdu
+pt_imladris_scouts|Dunedainští průzkumníci
+pt_dale_scouts|Průzkumníci z Dolu
+pt_esgaroth_scouts|Esgarothští průzkumníci
+pt_dwarf_scouts|Trpasličí hlídka
+pt_beorn_scouts|Meddědovští průzkumníci
+pt_woodmen_scouts|Lesní průzkumníci
+pt_mordor_scouts|Mordorští průzkumníci
+pt_morgul_scouts|Morgulští průzkumníci
+pt_isengard_scouts|Průzkumníci z Železného pasu
+pt_isengard_scouts_warg|Sarumanovi jezdci na vrcích
+pt_harad_scouts|Haradští průzkumníci
+pt_dunland_scouts|Průzkumníci z Vrchoviny
+pt_umbar_scouts|Korzarští průzkumníci
+pt_khand_scouts|Vychodnanští průzkumníci
+pt_moria_scouts|Průzkumníci z Morie
+pt_guldur_scouts|Průzkumníci Dol Gulduru
+pt_gundabad_scouts|Průzkumníci z Gundabadu
+pt_rhun_scouts|Rhunští průzkumníci
+pt_gondor_raiders|Gondorští zásobovači
+pt_rohan_raiders|Rohirští zásobovači
+pt_imladris_raiders|Zásobovači z Roklinky
+pt_lorien_raiders|Lorienští zásobovači
+pt_woodelf_raiders|Zásobovači z Temného hvozdu
+pt_dale_raiders|Zásobovači z Dolu
+pt_dwarf_raiders|Trpaslíci zásobovači
+pt_ranger_raiders|Hraničářští nájezdníci
+pt_morgul_raiders|Morgulští nájezdníci
+pt_mordor_raiders|Mordorští nájezdníci
+pt_isengard_raiders|Sarumanovi nájezdníci
+pt_dunland_raiders|Nájezdníci z Vrchoviny
+pt_harad_raiders|Haradští nájezdníci
+pt_khand_raiders|Nájezdníci z Khandu
+pt_umbar_raiders|Umbarští nájezdníci
+pt_moria_raiders|Nájezdníci z Morie
+pt_guldur_raiders|Nájezdníci z Dol Gulduru
+pt_gundabad_raiders|Nájezdníci z Gundabadu
+pt_rhun_raiders|Nájezdníci z Rhunu
+pt_gondor_patrol|Gondorská patrola
+pt_rohan_patrol|Rohanská patrola
+pt_imladris_patrol|Dunadanská patrola
+pt_lorien_patrol|Lothlorienská patrola
+pt_woodelf_patrol|Patrola z Temného hvozdu
+pt_dale_patrol|Dolská patrola
+pt_esgaroth_patrol|Esgarothská patrola
+pt_dwarf_patrol|Trpasličí patrola
+pt_ranger_patrol|Hraničářská patrola
+pt_amroth_patrol|Dol Amrothská patrola
+pt_pelargir_patrol|Pelargirská patrola
+pt_lossarnach_patrol|Lossarnasská patrola
 pt_brv_patrol|Morthondská patrola
-pt_pinnath_patrol|Pinnath Gelinska patrola
-pt_lamedon_patrol|Lamedonska patrola
-pt_mordor_war_party|Mordorska armada
-pt_isengard_war_party|Sarumanova armada
-pt_harad_war_party|Haradska armada
-pt_dunland_war_party|Vrchovecka armada
-pt_khand_war_party|Variazska armada
-pt_moria_war_party|Morijska armada
-pt_dale_war_party|Armada z Dolu
-pt_rhun_war_party|Armada z Rhunu
+pt_pinnath_patrol|Patrola z Pinnath Gelin
+pt_lamedon_patrol|Lamedonská patrola
+pt_mordor_war_party|Mordorská armáda
+pt_isengard_war_party|Sarumanova armáda
+pt_harad_war_party|Haradská armáda
+pt_dunland_war_party|Armáda z Vrchoviny
+pt_khand_war_party|Variagská armáda
+pt_moria_war_party|Armáda z Morie
+pt_dale_war_party|Armáda z Dolu
+pt_rhun_war_party|Armáda z Rhunu
 pt_gondor_company|Patrola z Minas Tirith
-pt_rohan_company|Rohanska druzina
-pt_imladris_company|Druzina z Roklinky
-pt_lorien_company|Lorienska druzina
-pt_woodelf_company|Lesni elfi druzina
-pt_dale_company|Druzina z Dolu
-pt_dwarf_company|Trpaslici druzina
-pt_gondor_elite_company|Gondorska elitni druzina
-pt_rohan_elite_company|Rohanska elitni druzina
-pt_imladris_elite_company|Elitni druzina z Roklinky
-pt_lorien_elite_company|Lorienska elitni druzina
-pt_woodelf_elite_company|Lesni elfi elitni druzina
-pt_dale_elite_company|Elitni druzina z Dolu
-pt_dwarf_elite_company|Trpaslici elitni druzina
-pt_gondor_caravan|Gondorska karavana
-pt_rohan_caravan|Rohanska karavana
+pt_rohan_company|Rohanská družina
+pt_imladris_company|Družina z Roklinky
+pt_lorien_company|Lothlorienská družina
+pt_woodelf_company|Družina z Temného hvozdu
+pt_dale_company|Družina z Dolu
+pt_dwarf_company|Trpasličí družina
+pt_gondor_elite_company|Gondorská elitní družina
+pt_rohan_elite_company|Rohanská elitní družina
+pt_imladris_elite_company|Elitní družina z Roklinky
+pt_lorien_elite_company|Lothlorienská elitní družina
+pt_woodelf_elite_company|Elitní družina z Temného hvozdu
+pt_dale_elite_company|Elitní družina z Dolu
+pt_dwarf_elite_company|Trpasličí elitní družina
+pt_gondor_caravan|Gondorská karavana
+pt_rohan_caravan|Rohanská karavana
 pt_imladris_caravan|Karavana z Roklinky
-pt_lorien_caravan|Lorienska karavana
-pt_woodelf_caravan|Lesni elfi karavana
+pt_lorien_caravan|Lothlorienská karavana
+pt_woodelf_caravan|Karavana z Temného hvozdu
 pt_dale_caravan|Karavana z Dolu
-pt_dwarf_caravan|Trpaslici karavana
-pt_mordor_caravan|Mordorsky zasobovaci konvoj
-pt_isengard_caravan|Sarumanuv zasobovaci konvoj
-pt_gunda_caravan|Zasobovaci konvoj z Gundabadu
-pt_gondor_p_train|Gondorska zajatecka kolona
-pt_rohan_p_train|Rohanska zajatecka kolona
-pt_imladris_p_train|Zajatecka kolona z Roklinky
-pt_lorien_p_train|Lorienska zajatecka kolona
-pt_woodelf_p_train|Lesni elfi zajatecka kolona
-pt_dale_p_train|Zajatecka kolona z Dolu
-pt_dwarf_p_train|Trpaslici zajatecka kolona
-pt_mordor_p_train|Mordorska zajatecka kolona
-pt_isengard_p_train|Sarumanova zajatecka kolona
-pt_kingdom_hero_party|Armada
-pt_caravan_survivors|Prezivsi z karavany
-pt_routed_allies|Rozpraseni spojenci
-pt_routed_enemies|Rozpraseni nepratele
+pt_dwarf_caravan|Trpasličí karavana
+pt_mordor_caravan|Mordorský zásobovací konvoj
+pt_isengard_caravan|Sarumanův zásobovací konvoj
+pt_gunda_caravan|Zásobovací konvoj z Gundabadu
+pt_gondor_p_train|Gondorská zajatecká kolona
+pt_rohan_p_train|Rohanská zajatecká kolona
+pt_imladris_p_train|Zajatecká kolona z Roklinky
+pt_lorien_p_train|Lothlorienská zajatecká kolona
+pt_woodelf_p_train|Zajatecká kolona z Temného hvozdu
+pt_dale_p_train|Zajatecká kolona z Dolu
+pt_dwarf_p_train|Trpasličí zajatecká kolona
+pt_mordor_p_train|Mordorská zajatecká kolona
+pt_isengard_p_train|Sarumanova zajatecká kolona
+pt_kingdom_hero_party|Armáda
+pt_caravan_survivors|Přeživší z karavany
+pt_routed_allies|Rozprášení spojenci
+pt_routed_enemies|Rozprášení nepřátelé
 pt_legion_minas_morgul|Legie z Minas Morgul
 pt_legion_udun|Legie Udunu
 pt_legion_gorgoroth|Legie z Gorgorothu
 pt_legion_barad_dur|Legie z Barad-Dur
-pt_beorn_messenger|Posel Meddedovcu
-pt_village|vesnice
-pt_ring_hunters|hledači prstenu
-pt_scout_camp_small|Tabor zvedu
-pt_scout_camp_large|Opevneny tabor zvedu
+pt_beorn_messenger|Posel Meddědovců
+pt_village|Vesnice
+pt_ring_hunters|Hledači prstenu
+pt_scout_camp_small|Tábor zvědů
+pt_scout_camp_large|Opevněný tábor zvědů
 pt_beorn_caravan|Dřevorubecká karavana
-pt_orc_horde|Skreti horda
+pt_orc_horde|Skřetí horda
 pt_vet_archer|Veterán střelec

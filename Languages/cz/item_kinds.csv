@@ -1,6 +1,6 @@
 itm_horse_meat|Koňské maso
 itm_practice_sword|Cvičný meč
-itm_arena_lance|Rytířské kopí
+itm_arena_lance|Dřevec
 itm_practice_staff|Dřevěná hůl
 itm_practice_bow|Cvičný luk
 itm_wooden_javelin|Dřevěný oštěp
@@ -30,9 +30,9 @@ itm_arnor_warhorse|Arnorský válečný kůň
 itm_dunedain_warhorse|Dunadanský válečný kůň
 itm_rohirrim_courser|Rohanský oř
 itm_rohirrim_hunter|Rohanský lovecký kůň
-; itm_rohirrim_courser2|Rohirrim Armoured Courser
+itm_rohirrim_courser2|Rohanský obrněný oř
 itm_rohan_warhorse|Rohanský válečný kůň
-; itm_thengel_warhorse|Eorl Warhorse
+itm_thengel_warhorse|Eorlův válečný kůň
 itm_rhun_horse_a|Rhunský kůň
 itm_rhun_horse_b|Rhunský kůň
 itm_rhun_horse_d|Rhunský kůň
@@ -52,24 +52,24 @@ itm_dol_amroth_warhorse|Dol Amrothský válečný kůň
 itm_dol_amroth_warhorse2|Dol Amrothský těžký válečný kůň
 itm_gondor_warhorse|Gondorský válečný kůň
 itm_gondor_lam_horse|Lamedonský válečný kůň
-itm_lorien_warhorse|Lorienský válečný kůň
+itm_lorien_warhorse|Lothlorienský válečný kůň
 itm_harad_horse|Haradský kůň
 itm_harad_warhorse|Haradský válečný kůň
-itm_variag_pony|Variažský poník
+itm_variag_pony|Variagský poník
 itm_variag_kataphrakt|Východňanský válečný kůň
-itm_warg_1b|Warg
-itm_warg_1c|Warg
-itm_warg_1d|Warg
-itm_wargarmored_1b|Obrněný warg
-itm_wargarmored_1c|Obrněný warg
-itm_wargarmored_2b|Obrněný warg
-itm_wargarmored_2c|Obrněný warg
-itm_wargarmored_3a|Obrněný warg
-itm_warg_reward|Obrovský warg
+itm_warg_1b|Vrk
+itm_warg_1c|Vrk
+itm_warg_1d|Vrk
+itm_wargarmored_1b|Obrněný vrk
+itm_wargarmored_1c|Obrněný vrk
+itm_wargarmored_2b|Obrněný vrk
+itm_wargarmored_2c|Obrněný vrk
+itm_wargarmored_3a|Obrněný vrk
+itm_warg_reward|Obrovský vrk
 itm_tree_trunk_club_a|Kmen stromu
 itm_free_giant_hammer|Velká palice
 itm_giant_mace|Velký palcat
-itm_troll_shield_a|Trollí štít
+itm_troll_shield_a|Trolí štít
 itm_arrows|Šípy
 itm_gondor_arrows|Gondorské šípy
 itm_orc_javelin|Orkský těžký oštěp
@@ -81,20 +81,20 @@ itm_ithilien_arrows|Ithilijské šípy
 itm_woodelf_arrows|Šípy lesních elfů
 itm_elven_arrows|Elfí šípy
 itm_orc_hook_arrow|Hákový šíp orků
-itm_isengard_arrow|Isengardské šípy
+itm_isengard_arrow|Šípy Železného pasu
 itm_leather_gloves|Kožené rukavice
 itm_mail_mittens|Kroužkové palčáky
 itm_leather_boots|Kožené boty
-; itm_leather_boots_dark|Rider Boots
-; itm_splinted_greaves|Splinted Greaves
+itm_leather_boots_dark|Jezdecké boty
+itm_splinted_greaves|Vyztužené rukavice
 itm_white_tunic_a|Oblek civilisty
 itm_rohan_shoes|Kožené boty
 itm_furry_boots|Kožešinové boty
 itm_black_tunic|Černá tunika
 itm_hood_black|Černá Kápě
 itm_hood_green|Zelená kápě
-; itm_hood_grey|Grey Hood
-; itm_hood_leather|Leather Hood
+itm_hood_grey|Šedá kapuce
+itm_hood_leather|Kožená kapuce
 itm_axe_a|Severská sekyra
 itm_axe_b|Severská Bradatice
 itm_axe_c|Severská sekyra
@@ -103,8 +103,8 @@ itm_long_bearded_axe|Dlouhá Severská Bradatice
 itm_2_handed_axe|Dlouhá Severská Sekera
 itm_shortened_spear|Zkrácené kopí
 itm_spear|Kopí
-itm_light_lance|Lehký oštěp
-itm_lance|Oštěp
+itm_light_lance|Lehký dřevec
+itm_lance|Dřevec
 itm_tab_shield_small_round_b|Kulatý jezdecký štít
 itm_short_bow|Krátký luk
 itm_regular_bow|Luk
@@ -117,21 +117,21 @@ itm_dwarf_horn_bow|Trpasličí luk z rohu
 itm_dwarf_short_bow|Trpasličí krátký luk
 itm_harad_bow|Haradský zakřivený luk
 itm_lg_bow|Luk Orlí stráže
-itm_riv_bow|Rivendelský luk
-; itm_rhun_bow|Balchoth Bow
+itm_riv_bow|Luk Roklinky
+itm_rhun_bow|Balchothský luk
 itm_lorien_bow|Galadhrimský luk
-itm_isengard_large_bow|Isengardský mohutný luk
+itm_isengard_large_bow|Velký luk Železného pasu
 itm_dale_bow|Dolský luk
 itm_uruk_bow|Skřetí luk z rohu
-itm_mirkwood_bow|Mirkwůdský luk
+itm_mirkwood_bow|Luk Temného hvozdu
 itm_dunland_javelin|Dunlandské oštěpy
 itm_orc_throwing_arrow|Šipky orků
 itm_heavy_throwing_spear|Těžké házecí kopí
 itm_javelin|Oštěp
 itm_harad_javelin|Haradský oštěp
 itm_gondor_javelin|Gondorské kopí
-; itm_rohirrim_throwing_axe|Northmen Throwing Axes
-itm_loss_throwing_axes|Lossarnašské házecí sekery
+itm_rohirrim_throwing_axe|Severské vrhací sekery
+itm_loss_throwing_axes|Lossarnašské vrhací sekery
 itm_arnor_helm_a|Arnorská helma
 itm_arnor_helm_b|Arnorská helma
 itm_arnor_helm_c|Arnorská helma
@@ -274,16 +274,16 @@ itm_gondor_citadel_sword|Mec Gondorske citadely
 itm_gondor_cav_sword|Gondorsky jezdecky mec
 itm_gondor_spear|Gondorské kopí
 itm_gondor_tower_spear|Kopí Gondorských strážců veže
-itm_gondor_lance|Gondorské Kopí
+itm_gondor_lance|Gondorský dřevec
 itm_loss_axe|Lossarnašská Bojová Sekera
 itm_loss_war_axe|Lossarnašská válečná sekera
 itm_lorien_sword_a|Loriensky dlouhy mec
 itm_lorien_sword_b|Loriensky kratky mec
 itm_lorien_sword_c|Lorienský válečný meč
 itm_lorien_archer|Lorienská zbroj lučištníka
-; itm_lorien_armor_a|Lorien Quilted Armor
-; itm_lorien_armor_b|Lorien Mail Armor
-; itm_lorien_armor_c|Lorien Scale Armor
+itm_lorien_armor_a|Lorienská prošívaná zbroj
+itm_lorien_armor_b|Lorienská kroužková zbroj
+itm_lorien_armor_c|Lorienská šupinová zbroj
 itm_lorien_armor_d|Lorienská zbroj vznešeného šermíře
 itm_lorien_armor_e|Plast lorienskeho ochrance
 itm_lorien_armor_f|Lorienské Elitní Brnění
@@ -303,8 +303,8 @@ itm_orc_furboot_tall|Skreti kozene boty
 itm_orc_tribal_a|Neošetřená kůže
 itm_orc_tribal_b|Neošetřená kůže
 itm_orc_tribal_c|Neošetřená kůže
-; itm_evil_gauntlets_a|Black Gloves
-; itm_evil_gauntlets_b|Black Gauntlets
+itm_evil_gauntlets_a|Černé rukavice
+itm_evil_gauntlets_b|Černé rukavice
 itm_isen_orc_armor_a|Skreti zbroj ze Zelezneho pasu
 itm_isen_orc_armor_b|Skreti zbroj ze Zelezneho pasu
 itm_isen_orc_armor_c|Skreti zbroj ze Zelezneho pasu
@@ -415,7 +415,7 @@ itm_m_uruk_med_b|Skurutí těžká kroužková zbroj
 itm_m_uruk_med_c|Skurutí lehká šupinová zbroj
 itm_m_uruk_heavy_a|Skurutí těžká šupinová zbroj
 itm_m_uruk_heavy_b|Skurutí plátová zbroj
-; itm_m_uruk_heavy_c|Lugburz Platemail
+itm_m_uruk_heavy_c|Barad-dûrská plátová zbroj
 itm_m_cap_armor|Zbroj kapitána mordoru
 itm_black_num_armor|Zbroj Černých Númenorejců
 itm_m_armor_a|Mordorská zbroj
@@ -478,7 +478,7 @@ itm_dunnish_pike|Dunlandská píka
 itm_rohan_cav_sword|Meč Rohanské jízdy
 itm_rohan_inf_sword|Rohansky mec
 itm_rohan_spear|Rohanský oštěp
-itm_rohan_lance|Rohanské kopí
+itm_rohan_lance|Rohanský dřevec
 itm_rohan_sword_c|Rohansky mec
 itm_rohirrim_short_axe|Rohirska kratka sekyra
 itm_rohirrim_long_hafted_axe|Rohirska sekyra na dlouhem toporu
@@ -506,23 +506,23 @@ itm_rohan_shield_f|Rohansky stit
 itm_rohan_shield_g|Rohanský královský štít
 itm_rohan_light_greaves|Rohanske lehke naholeniky
 itm_rohirrim_war_greaves|Rohirske valecne naholeniky
-; itm_mirkwood_leather|Woodelf Leather Armor
-; itm_mirkwood_pad|Greenwood Quilted Coat
-; itm_mirkwood_mail|Greenwood Mail
-; itm_mirkwood_scale|Greenwood Light Scale
+itm_mirkwood_leather|Zbroj lesních elfů
+itm_mirkwood_pad|Prošívaný kabát Zeleného Hvozdu
+itm_mirkwood_mail|Zbroj Zeleného Hvozdu
+itm_mirkwood_scale|Lehká šupinová zbroj Zeleného Hvozdu
 itm_mirkwood_heavy_scale|Lístko-šupinové brnění z Temného hvozdu
 itm_mirkwood_great_spear|Velké kopí Temného hvozdu
 itm_mirkwood_war_spear|Válečné kopí Temného hvozdu
 itm_mirkwood_short_spear|Mirkwoodské Kopí
 itm_mirkwood_knife|Bily nuz z Temneho hvozdu
-; itm_mirkwood_axe|Mirkwood Axe
-; itm_mirkwood_spear_shield_a|Mirkwood Shield
+itm_mirkwood_axe|Sekera Temného hvozdu
+itm_mirkwood_spear_shield_a|Štít Temného hvozdu
 itm_mirkwood_spear_shield_b|Válečný štít Temného hvozdu
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
+itm_mirkwood_spear_shield_c|Kulatý štít Temného hvozdu
 itm_mirkwood_helm_a|Helma lucistnika z Temneho hvozdu
 itm_mirkwood_helm_b|Přilba z Temného hvozdu
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
+itm_mirkwood_helm_c|Těžká helma Temného hvozdu
+itm_mirkwood_helm_d|Královská helma Temného hvozdu
 itm_mirkwood_boots|Boty z Temneho hvozdu
 itm_harad_tunic|Haradská tunika
 itm_harad_padded|Harondorská prošívanice
@@ -575,16 +575,16 @@ itm_harad_scale_greaves|Haradské boty
 itm_harad_lamellar_greaves|Haradské boty
 itm_khand_inf_helm_a|Khandská Helma
 itm_khand_inf_helm_b|Khandská Helma
-; itm_khand_inf_helm_c1|Khand Bowl Helm
-; itm_khand_inf_helm_c2|Khand Bowl Helm
-; itm_khand_inf_helm_d|Khand Cone Helm
-; itm_khand_cav_helm_a|Khand Rider Helm
-; itm_khand_cav_helm_b|Khand Rider Helm
+itm_khand_inf_helm_c1|Khandská helma
+itm_khand_inf_helm_c2|Khandská helma
+itm_khand_inf_helm_d|Khandská masková helma
+itm_khand_cav_helm_a|Khandská jezdecká helma
+itm_khand_cav_helm_b|Khandská jezdecká helma
 itm_khand_cav_helm_c|Khanská ozdobná helma
 itm_khand_helm_mask|Khandská maska
 itm_khand_light|Khandská suknice
 itm_khand_light_lam|Khandská lehká lamelová zbroj
-; itm_khand_foot_lam|Khand Footman Armor
+itm_khand_foot_lam|Khandská pěší helma
 itm_khand_med_lam|Khandská střední lamelová zbroj
 itm_khand_heavy_lam|Khandská těžká lamelová zbroj
 itm_khand_axe_great|Khandská velká sekera
@@ -594,14 +594,14 @@ itm_khand_trident|Khandský trojzubec
 itm_khand_voulge|Khandská sudlice
 itm_khand_mace1|Khandské kladivo
 itm_khand_mace2|Khandské kladivo
-; itm_khand_throwing_axe|Khand Throwing Axe
+itm_khand_throwing_axe|Khandská vrhací sekera
 itm_khand_rammace|Khandské Beraní kladivo
 itm_khand_pitsword|Meč Khandského bojovníka v jámě
 itm_khand_tulwar|Khandský Tulwar
 itm_khand_2h_tulwar|Khandský Tulwar
 itm_khand_lance|Khandský dřevec
 itm_easterling_round_horseman|Východňanský kulatý štít
-; itm_variag_gladiator_shield|Easterling Pit Shield
+itm_variag_gladiator_shield|Východňanský štít bojovníka v jámě
 itm_easterling_hawk_shield|Východňanský jestřábí štít
 itm_rhun_bull1_shield|Rhůnský štít
 itm_rhun_bull2_shield|Rhůnský štít
@@ -671,7 +671,7 @@ itm_umb_armor_d|Korzárská šupinová zbroj
 itm_umb_armor_e|Korzárské brnění
 itm_umb_armor_f|Korzárské královské brnění
 itm_umb_helm_a|Korzárská skořápka
-; itm_umb_helm_b|Corsair Tall Helm
+itm_umb_helm_b|Korzárská dlouhá helma
 itm_umb_helm_c|Helma Korzárské milice
 itm_umb_helm_d|Helma Korzárských nájezdníků
 itm_corsair_boots|Boty Korzárů
@@ -795,7 +795,7 @@ itm_explosive_reward|Důl Železného pasu
 itm_corsair_trident|Trojzubec mořského hněvu
 itm_crebain_reward|Krebaina Železného pasu
 itm_miruvor_reward|Lahev Miruvoru
-; itm_wheeled_cage|Giant Wheeled Cage
+itm_wheeled_cage|Obří klec na kolech
 itm_orc_throwing_axes_reward|Gundabadské vrhací sekery
 itm_corsair_throwing_dagger_reward|Otrávené vrhací dýky
 itm_dwarf_shield_reward|Štít z Kheled-zaram
@@ -805,12 +805,12 @@ itm_lorien_bow_reward|Noldorský luk
 itm_elven_cloak|Elfí plášť
 itm_dale_sword_reward|Dolský královský meč
 itm_dale_armor_reward|Dolské královské brnění
-; itm_leather_gloves_reward|Archer Gloves
+itm_leather_gloves_reward|Lučištnické rukavice
 itm_beorn_shield_reward|Štít Meddědovců
 itm_beorn_axe_reward|Sekera Meddědovců
 itm_moria_arrow_reward|Otrávené šípy Morie
 itm_khamul_helm|Khamulova helma
-; itm_black_arrows_reward|Black Arrows
+itm_black_arrows_reward|Černé šípy
 itm_rohan_armor_th|Rohanská královská zbroj
 itm_prisoner_coll_chain|Řetězy otroků
 itm_witchking_helmet|Helma pána nazgûlů

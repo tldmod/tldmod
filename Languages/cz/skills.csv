@@ -1,48 +1,48 @@
 skl_trade|Obchod
-skl_trade_desc|Uroven teto dovednosti zajistuje to ze muzes pobrat vice vybavi za mene zdroju. (Dovednost skupiny)
-skl_leadership|Vudcovstvi
-skl_leadership_desc|Kazdy bod zvysuje maximalni pocet jednotek kterym muzes velet o 5, zvysuje moralku skupiny a snizuje zold jednotek o 5 %%. (Vudcova dovednost)
-skl_prisoner_management|Drzeni veznu
-skl_prisoner_management_desc|Kazda uroven teto dovednosti zvysuje maximalni pocet veznu o %d. (Vudcova dovednost)
+skl_trade_desc|Úroveň této dovednosti zajišťuje to že můžeš získat více výbavy za méně Resource pointů. (Dovednost skupiny)
+skl_leadership|Vůdcovství
+skl_leadership_desc|Každý bod zvyšuje maximální počet jednotek, kterým můžeš velet o 5, zvyšuje morálku skupiny a snižuje žold jednotek o 5 %%. (Vůdcova dovednost)
+skl_prisoner_management|Vězeňský management
+skl_prisoner_management_desc|Každá úroveň této dovednosti zvyšuje maximální počet vězňů o %d. (Vůdcova dovednost)
 skl_persuasion|Zálesáctví
-skl_persuasion_desc|Schopnost přežít v divoké přírodě a přizpůsobit si ji k obrazu svému. Tato dovednost zvyšuje schopnost družiny schovat se před nepřítelem, a rychlost tvé družiny v lese. (schopnost družiny)
+skl_persuasion_desc|Schopnost přežít v divoké přírodě a přizpůsobit si ji k obrazu svému. Tato dovednost zvyšuje schopnost družiny schovat se před nepřítelem, a rychlost tvé družiny v lese. (Dovednost skupiny)
 skl_engineer|-----
 skl_engineer_desc|-----
-skl_first_aid|Prvni pomoc
-skl_first_aid_desc|Hrdinovi se obnovi 5%% HP ztracenych v bitve co jeden dovednosti uroven. (Dovednost skupiny)
-skl_surgery|Chirurgie 
-skl_surgery_desc|Kazdy bod teto dovednosti da 4%% sanci ze smrtelne zraneny clen skupiny bude pravdepodobneji zranen nez zabit. (Dovednost skupiny)
+skl_first_aid|První pomoc
+skl_first_aid_desc|Hrdinům se obnoví 5%% HP ztracených v bitvě za úroveň dovednosti. (Dovednost skupiny)
+skl_surgery|Chirurgie
+skl_surgery_desc|Kazdy bod teto dovednosti dá 4%% šanci ze smrtelně zraněný člen skupiny bude pravděnepodobněji zraněn než zabit. (Dovednost skupiny)
 skl_wound_treatment|Léčba zranění
-skl_wound_treatment_desc|Leceni skupiny je o 20%% rychlejsi co uroven dovednosti. (Dovednost skupiny)
-skl_inventory_management|Organizace inventare
-skl_inventory_management_desc|Zvysuje kapacitu inventare o +6 co uroven dovednosti. (Vudcova dovednost)
+skl_wound_treatment_desc|Léčeni skupiny je o 20%% rychlejší za každou úroveň dovednosti. (Dovednost skupiny)
+skl_inventory_management|Organizace inventáře
+skl_inventory_management_desc|Zvyšuje kapacitu inventáře o +6 za každou úroveň dovednosti. (Vůdcova dovednost)
 skl_spotting|Pozorování
-skl_spotting_desc|Skupina vidi o 10%% dal kazdou uroven dovednosti. (Dovednost skupiny)
+skl_spotting_desc|Skupina vidí o 10%% dál každou úroveň dovednosti. (Dovednost skupiny)
 skl_pathfinding|Hledání cest
-skl_pathfinding_desc|Rychlost na mape je o 3%% vetsi kazdou novou uroven dovednosti. (Dovednost skupiny)
+skl_pathfinding_desc|Rychlost na mapě je o 3%% vetší každou novou úroveň dovednosti. (Dovednost skupiny)
 skl_tactics|Taktika
-skl_tactics_desc|Kazde dve urovne teto dovednosti zvysuje bitevni vyhodu o 1. (Dovednost skupiny)
-skl_tracking|Stopovani
-skl_tracking_desc|Stopy poskytnou vice informaci. (Dovednost skupiny)
-skl_trainer|Cvicitel
-skl_trainer_desc|Kazdy den, kazdy hrdina s touto dovednosti prida nejake zkusenosti kazdemu jinemu clenovy skupiny jehoz uroven je nizsi nez jeho/jeji. Zkusenosti se ziskavaji po:{0,4,10,16,23,30,38,46,55,65,80}. (Osobni dovednost)
-skl_looting|Rabovani
-skl_looting_desc|Tato dovednost zvysi ziskanou korist o 10%% kazdou uroven dovednosti. (Dovednost skupiny)
+skl_tactics_desc|Každé dvě úrovně této dovednosti zvyšují bitevní výhodu o 1. (Dovednost skupiny)
+skl_tracking|Stopování
+skl_tracking_desc|Stopy poskytnou více informací. (Dovednost skupiny)
+skl_trainer|Trenér
+skl_trainer_desc|Každý den, každý hrdina s touto dovedností přidá nějaké zkušenosti ostatním členům skupiny jejichž úroveň je nižší než jeho/její. Zkušenosti se dostávají po:{0,4,10,16,23,30,38,46,55,65,80}. (Osobní dovednost)
+skl_looting|Rabování
+skl_looting_desc|Tato dovednost zvýší získanou kořist o 10%% za každou úroveň dovednosti. (Dovednost skupiny)
 skl_horse_archery|Střelba z koně
-skl_horse_archery_desc|Snizuje sankce na poskozeni a presnosti pri strelbe nebo hazeni na koni. (Osobni dovednost)
+skl_horse_archery_desc|Snižuje sankce poškození a přesnosti při střelbě nebo házení na koni. (Osobní dovednost)
 skl_riding|Jezdectví
-skl_riding_desc|Dovoli ti jezdit na konich (nebo jinych zviratach) ktere maji vyssi obtiznost jizdy, a zvysi tvoji rychlost a obratnost. (Osobni dovednost)
+skl_riding_desc|Dovolí ti jezdit na koních (nebo jiných zvířatech) které mají vyšší obtížnost jízdy, a zvýší tvoji rychlost jízdy a manévrovací schopnosti. (Osobní dovednost)
 skl_athletics|Kondice
-skl_athletics_desc|Zvysuje tvoji rychlost behu. (Osobni dovednost)
+skl_athletics_desc|Zvyšuje tvoji rychlost běhu. (Osobní dovednost)
 skl_shield|Štít
-skl_shield_desc|Snizuje poskozeni stitum (o 8%% co nova uroven) a zlepsuje rychlost stitu a jeho pokryti. (Osobni dovednost)
-skl_weapon_master|Mistr zbrani
-skl_weapon_master_desc|Umoznuje jednoduseji se naucit dovednosti se zbrani, a zvysuje dovednostni limit. Limity jsou rozdeleny na: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobni dovednost)
-skl_power_draw|Sila napnutí
-skl_power_draw_desc|Umozni postave pouzit mocnejsi luky. Kazdy bod dovednosti( az 4 plus natahovaci narocnost luku) zvysuje poskozeni luku o 14%%. (Osobni dovednost)
+skl_shield_desc|Snižuje poškození štítů (o 8%% co nová úroveň) a zlepšuje rychlost štítu a jeho pokryti. (Osobní dovednost)
+skl_weapon_master|Mistr zbraní
+skl_weapon_master_desc|Umožňuje jednodušší učení dovedností se zbraní, a zvyšuje dovednostní limit. Limity jsou rozděleny na: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobní dovednost)
+skl_power_draw|Síla napnutí
+skl_power_draw_desc|Umožní postavě použít silnější luky. Každý bod dovednosti (až na 4 plus síla napnutí luku) zvyšuje poškození luku o 14%%. (Osobní dovednost)
 skl_power_throw|Síla vrhu
-skl_power_throw_desc|Kazdy bod zvysuje poskozeni zpusobene hodem o 10%%. (Osobni dovednost)
+skl_power_throw_desc|Každý bod zvyšuje poškození způsobené hodem o 10%%. (Osobní dovednost)
 skl_power_strike|Síla úderu
-skl_power_strike_desc|Kazdy bod zvysuje poskozeni zbrani na blizko o 8%%. (Osobni dovednost)
+skl_power_strike_desc|Každý bod zvyšuje poškození zbraní na blízko o 8%%. (Osobní dovednost)
 skl_ironflesh|Odolnost
-skl_ironflesh_desc|Kazdy bod zvysi HP o +2. (Osobni dovednost)
+skl_ironflesh_desc|Každý bod zvýší HP o +2. (Osobní dovednost)

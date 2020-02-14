@@ -26,7 +26,7 @@ mno_tutorial_3|チュートリアル#3:盾を使わない戦闘。 {s3}
 mno_tutorial_3b_door|次のレベル
 mno_tutorial_4|チュートリアル#4:馬またはワーグの乗り方。 {s4}
 mno_tutorial_5|チュートリアル#5:兵の群れの指揮。 {s5}
-mno_go_back_dot|戻る
+mno_go_back_dot|戻る。
 mno_action_view_troop_trees|軍事ツリーを参照する。
 mno_view_upkeep_costs|パーティの維持費を見る
 mno_view_character_report|キャラクター情報を見る
@@ -39,8 +39,8 @@ mno_resume_travelling|旅を続ける
 mno_custom_battle_go|開始
 mno_leave_custom_battle_2|キャンセル
 menu_custom_battle_end|^^^^^^戦闘は終わりました。 {s1} あなたの陣営は敵勢{reg5}名を倒し、味方の兵を{reg6}名失いました。^あなた個人では敵を{reg7}名を倒しました。
-mno_replay|この戦闘をもう一度プレイする
-mno_continue_dot|続ける
+mno_replay|この戦闘をもう一度プレイする。
+mno_continue_dot|続ける。
 menu_custom_battle_durin_end|^^^^^^見事な最期の抵抗でしたが、最後には力尽きてしまいました。^^あなたと同胞たちは{reg5}名の敵を倒しました。^あなた個人では{reg7}名の敵を倒しました。
 mno_replay_cbd|この戦闘をもう一度プレイする
 mno_continue_dot_cbd|続ける
@@ -279,7 +279,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^逃亡者の強烈な一撃を食�
 menu_town_bandits_succeeded|^^^^^鎌に刈られる小麦のように、 ゴブリンどもはなぎ倒されました！ 立っているのはあなただけで、 ゴブリンどもは残らず気を失ったか、 死んだか、 または虫の息です。 このような脅威を取り除いたあなたに対し、 地元の民はとても感謝することでしょう。
 menu_town_brawl_lost|^^^^^^あなたは倒され、 完全に気を失いました。 彼らは素早くあなたの体から 金目の物を抜き取ると、 何食わぬ顔で普段の生活へと 戻っていきました。
 menu_town_brawl_won|^^^^^あなたが敵をすべて倒すと、 騒動を聞きつけた衛兵が 駆けつけてきました。 あなたは素早く倒れている者たちから 金目の物を抜き取ると、 騒ぎが落ち着くまで身を隠しました。^次に連中と顔を合わせる機会があれば、 彼らはもう少しあなたに敬意を払うでしょう。
-menu_close|何もない。
+menu_close|何でもない。
 menu_town|{s60}に到着しました。{s12}{s13}
 mno_town_menu_0|その辺をうろうろする。
 mno_town_menu_0_door|どこかへ通じる扉。
@@ -438,5 +438,5 @@ mno_scene3|Battlefield7 (file scn battlefield7.sco)
 mno_scene4|Battlefield8 (file scn battlefield8.sco)
 mno_scene5|Battlefield9 (file scn battlefield9.sco)
 mno_back_3dot|戻る・・・
-mno_back|戻る
+mno_back|戻る。
 mno_next|次へ・・・

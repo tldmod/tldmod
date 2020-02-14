@@ -30,9 +30,9 @@ itm_arnor_warhorse|Arnorian Oorlogspaard
 itm_dunedain_warhorse|Dunedain Oorlogspaard
 itm_rohirrim_courser|Rohirrim Renpaard
 itm_rohirrim_hunter|Rohirrim Jager
-; itm_rohirrim_courser2|Rohirrim Armoured Courser
+itm_rohirrim_courser2|Rohirim Gepansterde Renpaard
 itm_rohan_warhorse|Rohirrim Oorlogspaard
-; itm_thengel_warhorse|Eorl Warhorse
+itm_thengel_warhorse|Eorl Oorlogspaard
 itm_rhun_horse_a|Rhun Paard
 itm_rhun_horse_b|Rhun Paard
 itm_rhun_horse_d|Rhun Paard 
@@ -40,8 +40,8 @@ itm_rhun_horse_e|Rhun Zwaar Paard
 itm_rhun_horse_f|Rhun Zwaard Paard
 itm_rhun_horse_g|Rhun Zwaar Paard 
 itm_rhun_horse_h|Rhun Zwaar Paard 
-; itm_dale_horse|Rhovanion Horse
-; itm_dale_warhorse|Rhovanion Warhorse
+itm_dale_horse|Rhovanion Paard
+itm_dale_warhorse|Rhovanion Oorlogspaard
 itm_riv_warhorse|Rivendell Oorlogspaard
 itm_riv_warhorse2|Imladris Ros
 itm_mordor_warhorse|Mordor Oorlogspaard
@@ -69,10 +69,10 @@ itm_warg_reward|Grote Warg
 itm_tree_trunk_club_a|Boomstam
 itm_free_giant_hammer|Gigantische Hamer
 itm_giant_mace|Gigantische Strijdknots
-; itm_troll_shield_a|Troll Shield
+itm_troll_shield_a|Trol Schild
 itm_arrows|Pijlen
 itm_gondor_arrows|Gondor Pijlen
-; itm_orc_javelin|Orc Heavy Javelin
+itm_orc_javelin|Zware Speer Orc
 itm_khergit_arrows|Prikkeldraad Pijlen
 itm_rohan_arrows_2|Rohirrim Pijlen
 itm_harad_arrows|Haradrim Pijlen
@@ -85,22 +85,22 @@ itm_isengard_arrow|Isengard Pijlen
 itm_leather_gloves|Leren Handschoenen
 itm_mail_mittens|Maliënkolder Hanschoenen
 itm_leather_boots|Leren Schoenen
-; itm_leather_boots_dark|Rider Boots
-; itm_splinted_greaves|Splinted Greaves
-; itm_white_tunic_a|Civilian Outfit
+itm_leather_boots_dark|Rijder Schoenen
+itm_splinted_greaves|Gebroken Scheenbeschermers
+itm_white_tunic_a|Burger Kleren
 itm_rohan_shoes|Leren Schoenen
-; itm_furry_boots|Furry Boots
+itm_furry_boots|Harige Schoenen
 itm_black_tunic|Zwarte Tuniek
-; itm_hood_black|Black Hood
+itm_hood_black|Zwarte Kap
 itm_hood_green|Groene Kap
-; itm_hood_grey|Grey Hood
-; itm_hood_leather|Leather Hood
-; itm_axe_a|Northmen Axe
-; itm_axe_b|Northmen Bearded Axe
-; itm_axe_c|Northmen Axe
-; itm_axe_d|Northmen Axe
-; itm_long_bearded_axe|Northmen Bearded Longaxe
-; itm_2_handed_axe|Northmen Longaxe
+itm_hood_grey|Grijze Kap
+itm_hood_leather|Leren Kap
+itm_axe_a|Nordman Bijl
+itm_axe_b|Nordman Gebaarde Bijl
+itm_axe_c|Nordman Bijl
+itm_axe_d|Nordman Bijl
+itm_long_bearded_axe|Nordman Gebaarde Langbijl
+itm_2_handed_axe|Nordman Langbijl
 itm_shortened_spear|Verkorte Speer
 itm_spear|Speer
 itm_light_lance|Lichte Lans
@@ -118,11 +118,11 @@ itm_dwarf_short_bow|Dwergen Korte Boog
 itm_harad_bow|Harad Gebogen Boog
 itm_lg_bow|Adelaar Guard Boog
 itm_riv_bow|Rivendell Boog
-; itm_rhun_bow|Balchoth Bow
+itm_rhun_bow|Balcloth Boog
 itm_lorien_bow|Galadhrim Boog
 itm_isengard_large_bow|Isengard Grote Boog
 itm_dale_bow|Dale Boog
-; itm_uruk_bow|Orc Horn Bow
+itm_uruk_bow|Ork Horn Boog
 itm_mirkwood_bow|Mirkbos Boog
 itm_dunland_javelin|Dunland Werpsperen
 itm_orc_throwing_arrow|Ork Darts
@@ -130,7 +130,7 @@ itm_heavy_throwing_spear|Zwaar Werpspeer
 itm_javelin|Werpspeer
 itm_harad_javelin|Harad Werpspeer
 itm_gondor_javelin|Gondor Werpspeer
-; itm_rohirrim_throwing_axe|Northmen Throwing Axes
+itm_rohirrim_throwing_axe|Nordman Gewerpte Bijlen
 itm_loss_throwing_axes|Lossarnach Werpbijlen
 itm_arnor_helm_a|Arnor Helm
 itm_arnor_helm_b|Arnor Helm
@@ -161,7 +161,7 @@ itm_riv_shield_b|Rivendell Schild
 itm_riv_bas_sword|Rivendell Bastaard Zwaard
 itm_riv_1h_sword|Rivendell Zwaard
 itm_riv_riding_sword|Rivendell Cavalerie Zwaard
-; itm_riv_archer_sword|Rivendell Archer Sword
+itm_riv_archer_sword|Rivendell Boogschutter Zwaard
 itm_riv_spear|Rivendell Speer
 itm_riv_armor_light|Rivendell Pantser
 itm_riv_armor_light_inf|Rivendell Pantser
@@ -211,7 +211,7 @@ itm_gondor_lamedon_leader_helm|Lamedon Hoge Helm
 ; itm_blackroot_footman|Blackroot Vale Jerkin
 ; itm_blackroot_warrior|Blackroot Vale Gambeson
 ; itm_blackroot_leader|Blackroot Vale Mail
-; itm_blackroot_hood|Black Hood
+itm_blackroot_hood|Zwarte Kap
 itm_dol_hauberk|Dol Amroth Maliënkolder
 itm_dol_heavy_mail|Dol Amroth Zwaar Maliënkolder
 itm_dol_padded_coat|Dol Amroth Gewatteerde Jas

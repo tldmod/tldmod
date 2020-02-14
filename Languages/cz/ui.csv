@@ -1,5 +1,5 @@
 ui_at_learning_limit|(nejvyšší možná úroveň pro tuto rasu)
-ui_not_enough_skill_points_to_learn|(nedostatek bodu dovednosti)
+ui_not_enough_skill_points_to_learn|(nedostatek bodů dovednosti)
 ui_not_enough_attributetype_to_learn_this_skill|(nedostatek %s pro tuto dovednost)
 ui_explanation_agility|Pohyblivost: Za každý bod dostaneš pět zbraňových bodů a zvyšuje se rychlost zacházení se zbraněmi o 0.5%. Nad 1/3 pohyblivosti se nelze naučit tyto schopnosti: mistrovství zbraně, štít, atletika, jezdectví, jízdní lukostřelba a kořistnictví.
 ui_retreated_battle|%s zběhlo.
@@ -42,7 +42,7 @@ ui_mount_horses_e_|%s, Nasednout na koně!
 ui_hold_fire_e_|%s, Nestřílet!
 ui_fire_at_will_e_|%s, Střílet dle libosti!
 ui_recent_messages|Posledni Zpravy
-ui_value_denars|%d Zasob.
+ui_value_denars|%d Resource Pts.
 ui_cannot_be_used_on_horseback|Nelze použít na koni
 ui_upgrade_to_value| Povysit na %s
 ui_notification_cant_upgrade|(Nelze povysovat jednotky predane do jine skupiny)

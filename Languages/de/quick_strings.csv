@@ -216,8 +216,8 @@ qstr_+1_to_Agility|+1 Agilität
 qstr_+1_to_Leadership|+1 Führerschaft
 qstr_+1_to_Wildcraft|+1 Wildkunde
 qstr_+1_to_Power_Draw|+1 Bogenzugkraft
-; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
-; qstr_Who_might_be_interes|Who might be interested in this?
+qstr_The_record_of_Balin_|Aufzeichnungen über Balins verlorene Expedition.
+qstr_Who_might_be_interes|Wen könnte das interessieren?
 qstr_Turns_nature_to_your|Bringt die Wildnis auf deine Seite (Wildkunde erhöht Chance)
 qstr_+1_to_Trainer|+1 Ausbilder
 qstr_Recruits_Tribal_Orcs|Rekrutiert Stammeskrieger
@@ -226,15 +226,15 @@ qstr_rallies|Sammelbefehle
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} im Gefecht
 qstr_+1_to_Charisma|+1 Charisma
 qstr_+1_to_Surgery|+1 Chirurgie
-; qstr_+1_to_Intelligence|+1 to Intelligence
+qstr_+1_to_Intelligence|+1 Intelligenz
 qstr_+1_to_Ironflesh|+1 Eisenhaut
 qstr_+1_to_Prisoner_Mgmt|+1 Gefangenenaufsicht
 qstr_when_equipped|wenn ausgerüstet
-; qstr_+1_to_Riding|+1 to Riding
-; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_+1_to_Riding|+1 Reiten
+qstr_+1_to_Mounted_Archer|+1 Berittenes Bogenschießen
 qstr_+2_to_Tactics|+2 Taktik
 qstr_+3_to_Spotting|+3 Aufklärung
-; qstr_+2_to_Athletics|+2 to Athletics
+qstr_+2_to_Athletics|+2 Athletik
 qstr_Less_Dunnish_upkeep|Weniger Unterhalt für Dunländer
 qstr_Less_Wargs_upkeep|Weniger Unterhalt für Warge
 qstr_Light_Armor|Leichte Rüstung
@@ -1125,17 +1125,17 @@ qstr_How_do_magnets_work?|Wie funktionieren Magneten?
 qstr_Um..._by_enchanting_|Ehm... indem Eisen verzaubert wird?
 qstr_Magnets_are_made_of_|Magneten bestehen aus Metall, das aus dem Boden gewonnen wird. Sie sind magnetisch, weil das Metall immer noch Reste von Anziehungskraft in sich trägt.
 qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
+qstr_Bannerlord_is_runnin|Bannerlord läuft auf einer neuen Engine. Wir werden TLD nicht auf Bannerlord portieren können, wie es mit Warband möglich war.
 qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
 qstr_Well_there_s_a_lot_o|Naja, es gibt viele neue Grafiken und so, ich schätze das dauert.
 qstr_It_has_been_recently|Sie ist kürzlich erschienen, solltest du den Link verpasst haben, kannst du sie bei lemonparty.org herunterladen.
 qstr_i_wont_decapitated_e|i wont decapitated elephants in multi, nao!!11!
 qstr_I_don_t_think_there_|Ich glaube nicht, dass es in TLD einen Mehrspielermodus gibt, aber Elefanten wären schön.
 qstr_There_is_a_hidden_el|Es gibt einen versteckten Deathmatch-Modus in TLD, aber du musst zunächst alle gespeicherten Spielstände entfernen, ohne zu speichern für 100 Spieltage spielen, dann auf den Charakterbildschirm wechseln und Alt+F4 drücken. Es lohnt sich!
-; qstr_Y_NO_ChINESE??|Y NO ChINESE??
-; qstr_Just_to_troll_you_tr|Just to troll you, troll!
-; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
+qstr_Y_NO_ChINESE??|Y NO ChINESE??
+qstr_Just_to_troll_you_tr|Just to troll you, troll!
+qstr_Thanks_to_our_volunt|Dank unseren freiwilligen Übersetzern gibt es Übersetzungen ins traditionelle und vereinfachte Chinesisch.
 qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
 qstr_What_is_plate_armour|Was ist ein Plattenpanzer? Noch nie davon gehört.
 qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
@@ -1218,7 +1218,7 @@ qstr_I_am_{s4}_{s15}_of_{|Ich bin {s4}, {s15} von {s6}
 qstr_I_am_{s4}_a_commande|Ich bin {s4}, ein Befehlshaber von {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? und Herr von {s8}.:.
 qstr_{playername}_our_sco|{playername}, unsere Späher haben von Eurem Erfolg berichtet. Möget Ihr nach diesem Tag noch ein langes, gesegnetes Leben haben! Da Ihr die Heerscharen von {s7} mit Eurem Sieg zurückgeworfen habt, wurde der Vormarsch des Feindes ins Stocken gebracht. Es besteht Grund zur Hoffnung, dass nun Zwist unter ihren Kriegern und Hauptleuten besteht. Ebenso steht zu vermuten, dass sie Euren Namen nun zurecht mit Furcht aussprechen! Und schließlich habt Ihr uns mindestens einen kurzen Augenblick der Ruhe verschafft.
-; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
+qstr_Well_{playername}_yo|Nun, {playername}, du bist zurück und bringst uns gute Neuigkeiten, wie es scheint. Ich sehe nun, dass du kein Angeber und Aufschneider bist - ah, wenn ich nur mit eigenen Augen gesehen hätte, wie {s7} vor dir versagt! Unsere Feinde sind nun ohne Zweifel eingeschüchtert, vielleicht beben sie vor Angst. Schlag der Schlange den Kopf ab und der Kampf ist vorbei, so heißt es doch? Nun, ich werde nun meine Armee ausrücken lassen, um den endgültigen Sieg zu erringen. Dein Beitrag wird an die Oberen gemeldet, {playername}, keine Sorge.
 qstr_Alas_that_I_could_no|Ich bedaure, dass ich {s7} von {s8} nicht eigenhändig niedergeschlagen habe. Sollten wir uns erneut auf dem Feld messen, so werde ich diesen Fehler nicht erneut begehen.
 qstr__I_should_rather_mak|Ich werde über meinen Sieg über {s7} von {s8} lieber selbst Bericht erstatten - der größte Ruhm gebührt mir und niemandem anders!
 qstr_Very_well_done_{play|Sehr gut gemacht, {playername}! Ihr habt sowohl den Spion als auch dessen Kontaktmann gefangen genommen, genau wie ich es mir erhofft habe. Die beiden sind nun sicher eingesperrt und warten auf ihre Befragung. Sie werden einiges zu erklären haben! Nun gut, ich bin sehr zufrieden mit Eurem Erfolg, {playername}, und überlasse Euch deshalb diese Summe als Zeichen meiner Wertschätzung.
@@ -1405,7 +1405,7 @@ qstr_I_m_sorry_but_we_can|Es tut mir leid, aber ich kann ihnen gerade nicht helf
 qstr_Bah!_Far_more_glory_|Bah! Woanders gibt es größeren Ruhm zu erringen als mit armseliger Piraterei.
 qstr_This_raid_does_not_i|Dieses Unternehmen interessiert mich nicht. Ich werde woanders größeren Ruhm erringen.
 qstr_{s9}_asked_you_to_de|{s9} bat dich, einen feindlichen Spähposten nahe {s1} zu zerstören.
-; qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
+qstr_Your_party_must_be_at|Dein Trupp muss mindestens 10 Mann stark sein, um diese Aufgabe anzunehmen.
 qstr_{s9}_asked_you_to_def|{s9} bat dich, ein Dorf nahe {s1} vor Plünderern zu schützen.
 qstr_{s9}_asked_you_to_ra|{s9} befahl dir, ein Dorf nahe {s1} zu plündern.
 qstr_These_soldiers_may_w|Diese Soldaten könnten die entscheidenden Figuren in meinen Plänen werden, {playername}. Ich bin mir sicher, dass Ihr sie gut ausgebildet habt. Meinen Dank und meine Anerkennung an Euch.

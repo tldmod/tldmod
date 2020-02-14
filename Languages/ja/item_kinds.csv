@@ -285,8 +285,8 @@ itm_lorien_armor_a|ローリエンのキルトの鎧
 itm_lorien_armor_b|ローリエンの鎖かたびらの鎧
 itm_lorien_armor_c|ローリエンのスケイル鎧
 itm_lorien_armor_d|ローリエン上級剣士の鎧
-itm_lorien_armor_e|ローリエン警備兵のマント
-itm_lorien_armor_f|ローリエンエリートの鎧
+itm_lorien_armor_e|ローリエン巡視兵のマント
+itm_lorien_armor_f|ローリエン上級鎧
 itm_lorien_boots|ロスローリエンのブーツ
 itm_lorien_shield_b|ローリエンの大盾
 itm_lorien_shield_c|ローリエンのカイト盾
@@ -394,7 +394,7 @@ itm_orc_nosehelm|オークの鼻当て付き兜
 itm_orc_kettlehelm|オークのケトル兜
 itm_orc_buckethelm|オークのバケツ兜
 itm_orc_morion|オークのモリオン
-itm_orc_beakhelm|オークのかぎ鼻兜
+itm_orc_beakhelm|オークのくちばし付き兜
 itm_orc_bughelm|オークの虫兜
 itm_orc_visorhelm|オークのバイザー兜
 itm_m_orc_light_a|モルドールオークの軽装鎧
@@ -489,14 +489,14 @@ itm_rohan_mail|ローハンのホバーク
 itm_rohan_rider|ローハンの馬乗りの鎧
 itm_rohan_scale|ローハンのスケイル鎧
 itm_rohan_surcoat|ローハンのシュールコー
-itm_rohan_guard|ローハン衛兵の鎧
+itm_rohan_guard|ローハン近衛兵の鎧
 itm_rohan_light_helmet_a|ローハンの軽装兜
 itm_rohan_light_helmet_b|ローハンの軽装兜
 itm_rohan_inf_helmet_a|ローハンの目当て付き兜
 itm_rohan_inf_helmet_b|ローハンの目当て付き兜
 itm_rohan_archer_helmet_a|ローハンの鼻当て付き兜
 itm_rohan_archer_helmet_b|ローハンの鼻当て付き兜
-itm_rohan_archer_helmet_c|ローハン衛兵の兜
+itm_rohan_archer_helmet_c|ローハン近衛兵の兜
 itm_rohan_shield_a|ローハンの盾
 itm_rohan_shield_b|ローハンの盾
 itm_rohan_shield_c|ローハンの盾
@@ -580,7 +580,7 @@ itm_khand_inf_helm_c2|ハンドの笠形兜
 itm_khand_inf_helm_d|ハンドの円錐形兜
 itm_khand_cav_helm_a|ハンドの騎兵の兜
 itm_khand_cav_helm_b|ハンドの騎兵の兜
-itm_khand_cav_helm_c|ハンドの細工入り兜
+itm_khand_cav_helm_c|ハンドの飾りのついた兜
 itm_khand_helm_mask|ハンドの仮面
 itm_khand_light|ハンドのキルト
 itm_khand_light_lam|ハンドの軽装薄金鎧
@@ -673,7 +673,7 @@ itm_umb_armor_f|海賊の上級鎧
 itm_umb_helm_a|海賊の貝殻兜
 itm_umb_helm_b|海賊の山高兜
 itm_umb_helm_c|海賊民兵の兜
-itm_umb_helm_d|海賊遊撃兵の兜
+itm_umb_helm_d|海賊襲撃兵の兜
 itm_corsair_boots|海賊のブーツ
 itm_umb_shield_a|海賊の盾
 itm_umb_shield_b|海賊のバックラー
@@ -741,7 +741,7 @@ itm_dwarf_helm_round|ドワーフの丸兜
 itm_dwarf_helm_sallet|ドワーフのサレット
 itm_dwarf_armor_d|くろがね連山のスケイルマント
 itm_dwarf_armor_a|エレボールの鎖かたびらとシュールコー
-itm_leather_dwarf_armor|ドワーフのパッドつきマント
+itm_leather_dwarf_armor|ドワーフの当て物の入ったマント
 itm_dwarf_armor_b|エレボールのチュニックと鎖かたびら
 itm_leather_dwarf_armor_b|ドワーフの当て物の入った胴着
 itm_dwarf_armor_c|エレボールのスケイルメイル

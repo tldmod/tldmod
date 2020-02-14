@@ -30,9 +30,9 @@ itm_arnor_warhorse|Arnorian Savaş Atı
 itm_dunedain_warhorse|Dunedain Savaş Atı
 itm_rohirrim_courser|Rohirrim Koşu Atı
 itm_rohirrim_hunter|Rohirrim Av Atı
-; itm_rohirrim_courser2|Rohirrim Armoured Courser
+itm_rohirrim_courser2|Rohirrim Zırhlı Koşu Atı
 itm_rohan_warhorse|Rohirrim Savaş Atı
-; itm_thengel_warhorse|Eorl Warhorse
+itm_thengel_warhorse|Eorl Savaş Atı
 itm_rhun_horse_a|Rhun Atı
 itm_rhun_horse_b|Rhun Atı
 itm_rhun_horse_d|Rhun Atı
@@ -85,16 +85,16 @@ itm_isengard_arrow|Isengard Okları
 itm_leather_gloves|Deri Eldivenler
 itm_mail_mittens|Zırhlı Eldiven
 itm_leather_boots|Deri Botlar
-; itm_leather_boots_dark|Rider Boots
-; itm_splinted_greaves|Splinted Greaves
+itm_leather_boots_dark|Binici Çizmesi
+itm_splinted_greaves|Plakalı Çizme
 itm_white_tunic_a|Sivil Kıyafet
 itm_rohan_shoes|Deri Ayakkabılar
 itm_furry_boots|Kürklü Çizmeler
 itm_black_tunic|Siyah Tunik
 itm_hood_black|Siyah Başlık
 itm_hood_green|Yeşil Başlık
-; itm_hood_grey|Grey Hood
-; itm_hood_leather|Leather Hood
+itm_hood_grey|Gri Başlık
+itm_hood_leather|Deri Başlık
 itm_axe_a|Kuzeyli Baltası
 itm_axe_b|Kuzeyli Sakallı Baltası
 itm_axe_c|Kuzeyli Baltası
@@ -118,7 +118,7 @@ itm_dwarf_short_bow|Cüce Kısa Yayı
 itm_harad_bow|Harad Kıvrımlı Yayı
 itm_lg_bow|Kartal Muhafızı Yayı
 itm_riv_bow|Ayrıkvadi Yayı
-; itm_rhun_bow|Balchoth Bow
+itm_rhun_bow|Balchoth Yayı
 itm_lorien_bow|Galadhrim Yayı
 itm_isengard_large_bow|Isengar Geniş Yayı
 itm_dale_bow|Dale Yayı
@@ -130,7 +130,7 @@ itm_heavy_throwing_spear|Agır Fırlatma Mızragı
 itm_javelin|Cirit
 itm_harad_javelin|Harad Ciriti
 itm_gondor_javelin|Gondor Ciriti
-; itm_rohirrim_throwing_axe|Northmen Throwing Axes
+itm_rohirrim_throwing_axe|Kuzeyli Fırlatma Baltaları
 itm_loss_throwing_axes|Lossarnach Fırlatma Baltaları
 itm_arnor_helm_a|Arnor Kasketi
 itm_arnor_helm_b|Arnor Kasketi
@@ -281,9 +281,9 @@ itm_lorien_sword_a|Lorien Uzun Kılıç
 itm_lorien_sword_b|Lorien Kısa Kılıç
 itm_lorien_sword_c|Lorien Savaş Kılıcı
 itm_lorien_archer|Lorien Okçu Zırhı
-; itm_lorien_armor_a|Lorien Quilted Armor
-; itm_lorien_armor_b|Lorien Mail Armor
-; itm_lorien_armor_c|Lorien Scale Armor
+itm_lorien_armor_a|Lorien Kapiton Zırh
+itm_lorien_armor_b|Lorien Örme Zırh
+itm_lorien_armor_c|Lorien Pullu Zırh
 itm_lorien_armor_d|Lorien Kraliyet Kılıç Ustası Zırhı
 itm_lorien_armor_e|Lorien Gardiyan Pelerini
 itm_lorien_armor_f|Lorien Seçkin Zırhı
@@ -303,8 +303,8 @@ itm_orc_furboot_tall|Ork Kürk Çizme
 itm_orc_tribal_a|İşlenmemiş Deri
 itm_orc_tribal_b|İşlenmemiş Deri
 itm_orc_tribal_c|İşlenmemiş Deri
-; itm_evil_gauntlets_a|Black Gloves
-; itm_evil_gauntlets_b|Black Gauntlets
+itm_evil_gauntlets_a|Siyah Eldiven
+itm_evil_gauntlets_b|Siyah Zırhlı Eldiven
 itm_isen_orc_armor_a|Isengard Ork Zırhı
 itm_isen_orc_armor_b|Isengard Ork Zırhı
 itm_isen_orc_armor_c|Isengard Ork Zırhı 
@@ -415,7 +415,7 @@ itm_m_uruk_med_b|Uruk Agır Giysisi
 itm_m_uruk_med_c|Uruk Hafif Ölçekli Zırh
 itm_m_uruk_heavy_a|Uruk Agır Ölçekli Zırh
 itm_m_uruk_heavy_b|Uruk Plaka Zırhı
-; itm_m_uruk_heavy_c|Lugburz Platemail
+itm_m_uruk_heavy_c|Lugburz Plakalı Zırhı
 itm_m_cap_armor|Mordor Yüzbaşı Zırhı
 itm_black_num_armor|Kara Numenor'lu Zırhı
 itm_m_armor_a|Mordor Zırhı
@@ -506,23 +506,23 @@ itm_rohan_shield_f|Rohan Kalkanı
 itm_rohan_shield_g|Rohan Kraliyet Kalkanı
 itm_rohan_light_greaves|Rohan Hafif Baldır Zırhı
 itm_rohirrim_war_greaves|Rohirrim Savaş Baldır Zırhı
-; itm_mirkwood_leather|Woodelf Leather Armor
-; itm_mirkwood_pad|Greenwood Quilted Coat
-; itm_mirkwood_mail|Greenwood Mail
-; itm_mirkwood_scale|Greenwood Light Scale
+itm_mirkwood_leather|Ormanelfi Deri Zırhı
+itm_mirkwood_pad|Yeşilorman Kapitone Mont
+itm_mirkwood_mail|Yeşilorman Örme Zırhı
+itm_mirkwood_scale|Yeşilorman Hafif Pullu Zırh
 itm_mirkwood_heavy_scale|Kuytuorman Leafscale
 itm_mirkwood_great_spear|Kuytuorman Büyük Mızragı
 itm_mirkwood_war_spear|Kuytuorman Savaş Mızragı
 itm_mirkwood_short_spear|Kuytuorman Mızragı
 itm_mirkwood_knife|Kuytuorman Beyaz Bıçagı
-; itm_mirkwood_axe|Mirkwood Axe
-; itm_mirkwood_spear_shield_a|Mirkwood Shield
+itm_mirkwood_axe|Kuyutorman Baltası
+itm_mirkwood_spear_shield_a|Kuyutorman Kalkanı
 itm_mirkwood_spear_shield_b|Kuytuorman Savaş Kalkanı
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
+itm_mirkwood_spear_shield_c|Kuyutorman Yuvarlak Kalkanı
 itm_mirkwood_helm_a|Kuytuorman Okçu Migferi
 itm_mirkwood_helm_b|Kuytuorman Migferi
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
+itm_mirkwood_helm_c|Kuyutorman Agır Migferi
+itm_mirkwood_helm_d|Kuyutorman Soylu Migferi
 itm_mirkwood_boots|Kuytuorman Çizmeleri
 itm_harad_tunic|Harad Tunigi
 itm_harad_padded|Harondor Pamuklu Zırhı
@@ -575,16 +575,16 @@ itm_harad_scale_greaves|Harad Çizmesi
 itm_harad_lamellar_greaves|Harad Çimesi
 itm_khand_inf_helm_a|Khand Migferi
 itm_khand_inf_helm_b|Khand Migferi
-; itm_khand_inf_helm_c1|Khand Bowl Helm
-; itm_khand_inf_helm_c2|Khand Bowl Helm
-; itm_khand_inf_helm_d|Khand Cone Helm
-; itm_khand_cav_helm_a|Khand Rider Helm
-; itm_khand_cav_helm_b|Khand Rider Helm
+itm_khand_inf_helm_c1|Khand Kase Migfer
+itm_khand_inf_helm_c2|Khand Kase Migfer
+itm_khand_inf_helm_d|Khand Koni Migfer
+itm_khand_cav_helm_a|Khand Binici Migferi
+itm_khand_cav_helm_b|Khand Binici Migferi
 itm_khand_cav_helm_c|Khand Süslenmiş Migferi
 itm_khand_helm_mask|Khand Maskesi
 itm_khand_light|Khand Etegi
 itm_khand_light_lam|Khand Hafif Pullu Zırhı
-; itm_khand_foot_lam|Khand Footman Armor
+itm_khand_foot_lam|Khand Piyade Zırhı
 itm_khand_med_lam|Khand Ortalama Pullu Zırhı 
 itm_khand_heavy_lam|Khand Agır Pullu Zırhı
 itm_khand_axe_great|Khand Büyük Baltası
@@ -594,14 +594,14 @@ itm_khand_trident|Khand Çatallı Mızragı
 itm_khand_voulge|Khand Uzun Saplı Geniş Bıçagı
 itm_khand_mace1|Khand Topuzu
 itm_khand_mace2|Khand Topuzu
-; itm_khand_throwing_axe|Khand Throwing Axe
+itm_khand_throwing_axe|Khand Fırlatma Baltası
 itm_khand_rammace|Khand Koç Topuzu
 itm_khand_pitsword|Çukur Dövüşçüsü Kılıcı
 itm_khand_tulwar|Khand Egri Kılıcı
 itm_khand_2h_tulwar|Khand Egri Kılıcı 
 itm_khand_lance|Khand Mızragı
 itm_easterling_round_horseman|Easterling Yuvarlak Kalkanı
-; itm_variag_gladiator_shield|Easterling Pit Shield
+itm_variag_gladiator_shield|Dogulu Çukur Kalkanı
 itm_easterling_hawk_shield|Easterling Şahin Kalkanı
 itm_rhun_bull1_shield|Rhun Kalkanı
 itm_rhun_bull2_shield|Rhun Kalkanı
@@ -671,7 +671,7 @@ itm_umb_armor_d|Pullu Korsan Zırhı
 itm_umb_armor_e|Korsan Zırh Yelegi
 itm_umb_armor_f|Soylu Korsan Zırhı
 itm_umb_helm_a|Korsan Kabuk Migferi
-; itm_umb_helm_b|Corsair Tall Helm
+itm_umb_helm_b|Korsan Yüksek Migferi
 itm_umb_helm_c|Korsan Milis Migferi
 itm_umb_helm_d|Korsan Akıncı Migferi
 itm_corsair_boots|Korsan Çizmesi
@@ -795,7 +795,7 @@ itm_explosive_reward|Isengard Madeni
 itm_corsair_trident|Deniz Öfkesinin Zıpkını
 itm_crebain_reward|Isengard Kuzgunu
 itm_miruvor_reward|Miruvor Şişesi
-; itm_wheeled_cage|Giant Wheeled Cage
+itm_wheeled_cage|Devasa Tekerlekli Kafes
 itm_orc_throwing_axes_reward|Gundabad Uçan Baltaları
 itm_corsair_throwing_dagger_reward|Zehirli Fırlatma Bıçakları
 itm_dwarf_shield_reward|Kheled-zaram Kalkanı
@@ -805,12 +805,12 @@ itm_lorien_bow_reward|Noldorin Yayı
 itm_elven_cloak|Elf Pelerini
 itm_dale_sword_reward|Dale Kraliyet Kılıcı
 itm_dale_armor_reward|Dale Soylu Giysisi
-; itm_leather_gloves_reward|Archer Gloves
+itm_leather_gloves_reward|Okçu Eldivenleri
 itm_beorn_shield_reward|Beorning Kalkanı
 itm_beorn_axe_reward|Ayı Sopası
 itm_moria_arrow_reward|Moria Zehirli Oku
 itm_khamul_helm|Khamul'un Migferi
-; itm_black_arrows_reward|Black Arrows
+itm_black_arrows_reward|Siyah Oklar
 itm_rohan_armor_th|Rohan Kraliyet Zırhı
 itm_prisoner_coll_chain|Esir Zincirleri
 itm_witchking_helmet|Kötücül Mügfer

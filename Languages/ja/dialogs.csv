@@ -45,12 +45,12 @@ dlga_treebeard_introduce_2:treebeard_introduce_3|邪魔をしてすまない・�
 dlga_treebeard_introduce_3:treebeard_introduce_4|(手足のこわばった巨大な木は、ちいさい枝だとか木の葉、苔に^覆われた口を、ゆっくりと開いた。深く、ゆっくりとした、一面に^とどろく声で、大きな威圧感を感じる語り口だった)^「フゥゥゥム・・・フムム・・・*わし*の名は語らぬ・・・^語る機会もないだろう。長くかかりすぎてのう。わしの名は常に^長く増え続けていて、そしてわしはとても長く生きてきた。だから、^わしの名は物語のようなのだ。わしの本当の名には、おまえたちが^エント語と呼ぶ、我々の言葉で、さまざまな出来事が語られておる。^美しい言葉なのだが、何か意味のある事を言おうとすると、とても^長くかかる。我々は、長い時間をかけて語る意義があって、かつ^長い時間をかけてそれを聞く意義があるときだけ、長い時間を^かけて意味のある事を語るのだ。」
 dlga_treebeard_introduce_4:treebeard_introduce_5|おお、あなたはエントか！多くの伝説で語られるあなたに会えるとは、^光栄だ。邪魔をする気はないのだ、何なら私はすぐにここを^立ち去ろう。
 dlga_treebeard_introduce_5:treebeard_questtalk|(四肢のこわばった巨人と彼の同胞のエントたちは、そよ風が^彼らの髪やひげをなびかせるにまかせながら、数十分の間、沈黙を^保って立っていた。しばらくしてようやくお互いを見やったかと^思うと、エントにしてはめずらしい、気の短そうな、ナナカマドを^思わせる木がしゃべりたそうにし始めた。しかし、彼より先に^四肢のこわばったエントが再び話をはじめた)
-dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?さきほど話したように・・・:フゥゥゥム・・・おまえの礼儀正しい態度は好ましい。^{reg1?おまえの種族にしてはめずらしい事だ:再びエルフと話す事ができるのはうれしく思う}。}^エントの女たちがいなくなって以来、時勢はよくない。^冥王によって放たれた、よこしまな生き物たちが、我らの住みかを^破壊しようとしている。素早く、かつあわて者ではない者が必要だ。^我々が次の手を話合っている間、我々を助けてくれる者が必要だ。^たくさんのオークの群れが森に侵入し、火の矢によって木々を^焼き払っている。もしオークたちを退治し、木々への脅威を^取り除いてくれれば、我々は大いに感謝し、おまえを真の友人と^するだろう。オークを退治してくれたら、また話をしよう。
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?さきほど話したように・・・:フゥゥゥム・・・おまえの礼儀正しい態度は好ましい。^{reg1?おまえの種族にしてはめずらしい事だ:再びエルフと話す事ができるのはうれしく思う}。}^エントの女たちがいなくなって以来、時勢はよくない。^冥王によって放たれた、よこしまな生き物たちが、我らの住みかを^破壊しようとしている。素早く、かつあわて者ではない者が必要だ。^我々が次の手を話合っている間、我々を助けてくれる者が必要だ。^たくさんのオークの群れが森に侵入し、火の矢によって木々を^焼き払っている。もしオークたちを退治し、木々への脅威を^取り除いてくれれば、我々は大いに感謝し、おまえを真の友と^するだろう。オークを退治してくれたら、また話をしよう。
 dlga_treebeard_quest_brief:close_window|オークはまったく下劣な生き物だ。やつらが二度と森に危害を加えないよう、懲らしめてこよう。
 dlga_treebeard_quest_brief:treebeard_pretalk|申し訳ないが、今はこのような事にかまけるわけにはいかないのだ。
-dlga_treebeard_questtalk:close_window|(エントの長老はゆっくりと口を開き、他のエントたちもあなたに^視線を落として、かすかに地面を揺らす、ゆっくりと長く、^深い音を発した。エントたちは笑っているのだ、とあなたは思った。^比較的若い、ナナカマドの木に似たエントが、つま先の七つついた^彼の大きな足で地面を踏みつけると、地面が揺れ、あなたは^あやうく尻餅をつきそうになった。^「待て、せっかち、このわれらの友人の若い戦士が怪我をしたら^どうする。フゥゥゥム・・・わしは木の鬚、エントの最長老だ。^おまえの助けには皆、感謝している・・・フゥゥゥム・・・^今回の成功を祝って、エント水をおまえに贈ろう。」
+dlga_treebeard_questtalk:close_window|(エントの長老はゆっくりと口を開き、他のエントたちもあなたに^視線を落として、かすかに地面を揺らす、ゆっくりと長く、^深い音を発した。エントたちは笑っているのだ、とあなたは思った。^比較的若い、ナナカマドの木に似たエントが、つま先の七つついた^彼の大きな足で地面を踏みつけると、地面が揺れ、あなたは^あやうく尻餅をつきそうになった。^「待て、せっかち、このわれらの友の若い戦士が怪我をしたら^どうする。フゥゥゥム・・・わしは木の鬚、エントの最長老だ。^おまえの助けには皆、感謝している・・・フゥゥゥム・・・^今回の成功を祝って、エント水をおまえに贈ろう。」
 dlga_treebeard_questtalk:close_window.1|(四肢のこわばった巨人と彼の同胞のエントたちは、そよ風が^彼らの髪やひげをなびかせるにまかせながら、沈黙を保って^立っていた。)
-dlga_treebeard_pretalk:treebeard_talk_response|フゥゥゥム・・・何が知りたいのだ、若い友人よ？
+dlga_treebeard_pretalk:treebeard_talk_response|フゥゥゥム・・・何が知りたいのだ、若い友よ？
 dlga_treebeard_talk_response:treebeard_about_himself|あなたについてもっと知りたい。
 dlga_treebeard_talk_response:treebeard_about_entwives|エントの女について知りたい。
 dlga_treebeard_talk_response:treebeard_about_ents|エントについて知りたい。
@@ -126,7 +126,7 @@ dlga_start:companion_rehire|あなたさえその気になれば、 私はいつ
 dlga_start:companion_rehire.1|{s5}、生きていたのですね！ {s6}、 あなたが捕まったのか、 殺されたのか、 または逃げのびたのか、 私にはまったく知るすべがありませんでした。 ずっとここであなたの消息を知る者がいないか、 いろいろ当たっていたんです。 また一緒に旅をするなら、 荷物をまとめて来ますよ？
 dlga_start:companion_was_dismissed|会えてうれしいよ、{s21}！ 実は、どこかで君にばったり会えないかと 期待していたんだ。
 dlga_companion_was_dismissed:companion_rehire|{s5}。 また一緒に旅をしましょうか？
-dlga_companion_rehire:companion_recruit_signup_confirm|おかえり、わが友人！
+dlga_companion_rehire:companion_recruit_signup_confirm|おかえり、わが友よ！
 dlga_companion_rehire:companion_rehire_refused|せっかくだ{が/けど}、これ以上は連れて行けない{んだ/の}。
 dlga_companion_rehire_refused:close_window|そうか・・・また気が変わったら声をかけてくださいね？
 dlga_event_triggered:ziggy_ask_prisoners|指揮官どの、少々よろしいか。おぬしは敵勢を打ち破り、いくらかの^捕虜を手に入れた。結構な事じゃ。わしから素晴らしい贈り物が^あるのじゃが、それと引き換えに頼み事がある。捕虜のうちの一名を、^わしにゆずってもらいたい。
@@ -555,14 +555,14 @@ dlga_lord_mission_deliver_message_accepted:close_window|それは助かる、 {p
 dlga_lord_mission_deliver_message_rejected:lord_pretalk|そうか、まあよい。 では、他の誰かに頼むとしよう。
 dlga_lord_tell_mission:lord_mission_deliver_message.1|{s4}にいる{s15}の{s13}に この手紙を届けたいのだが、 もし近くに行く事があるのなら、おぬしが届けてくれぬか？ 手紙は40日以内に先方に届けられなくてはならん。
 dlga_lord_tell_mission:lord_mission_told|緊急の任務がある・・・ {s14}にいる指揮官たちに、 我が軍の作戦についての指示を伝える伝令を 送らなければならないのだ。 道中が危険すぎて、 もうすでに何度も出発を取りやめざるを 得なかったのだが、 今度こそなんとしても送り出さなければならない。 そこで、せめて護衛だけはしっかりつけたいのだ。 {playername}、 私の信頼するおぬしが{s14}まで護衛してくれれば、 非常にありがたい。
-dlga_lord_tell_mission:lord_mission_told.1|私と長いつきあいの友である戦士が、重い病気なのだ。 古いいくさ傷から病気に感染したらしく、はやく医者に診せないと、 確実に死んでしまうだろう。{playername}よ、 彼は私にとって非常に大切な存在なのだ。だがあの者は 猪のような頑固者でな、ここにいる医者など信用ならんと言い張って、 頑として誰にも傷を見せないのだ。聞いたところによると、 おぬしの部隊には優秀な医者が同行しているそうな。その者ならば、 我が友人に手術を受けるよう説得する事ができるかも知れん。 頼む、私のこの頼みを聞いてくれたら、恩は決して忘れない。
+dlga_lord_tell_mission:lord_mission_told.1|私と長いつきあいの友である戦士が、重い病気なのだ。 古いいくさ傷から病気に感染したらしく、はやく医者に診せないと、 確実に死んでしまうだろう。{playername}よ、 彼は私にとって非常に大切な存在なのだ。だがあの者は 猪のような頑固者でな、ここにいる医者など信用ならんと言い張って、 頑として誰にも傷を見せないのだ。聞いたところによると、 おぬしの部隊には優秀な医者が同行しているそうな。その者ならば、 我が友に手術を受けるよう説得する事ができるかも知れん。 頼む、私のこの頼みを聞いてくれたら、恩は決して忘れない。
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|どのくらい必要なのですか？
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|{s14}を{reg1}名、 育て上げて私に引き渡してくれれば、 充分であろう。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|よろしいでしょう、{s65}。私に{reg1}名の新兵をお預けください。立派な{s14}に育て上げてご覧に入れましょう。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|{s65}、いい考えがあります。 新兵{reg1}名に、闘技場で私が直接稽古をつけましょう。
 dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|{s65}、私に考えがあります。 新兵{reg1}名に、闘技場で私が直接稽古をつけましょう。 {s14}には足りないでしょうが、そのための 第一歩にはなります。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|近頃は他人を訓練してやる暇などありません。
-dlga_lord_mission_raise_troops_accepted:close_window|おぬしのお陰で肩の荷が下りたわ、 {playername}。 我が部隊の曹長に、 新兵をおぬしの指揮下へ送るよう、 伝えておこう。 それから、 経費の足しに、 おぬしにいくらか前金を渡しておこう。 さあ、 これで充分であろう。 感謝する。
+dlga_lord_mission_raise_troops_accepted:close_window|おぬしのお陰で肩の荷が下りたわ、 {playername}。 我が部隊の兵長に、 新兵をおぬしの指揮下へ送るよう、 伝えておこう。 それから、 経費の足しに、 おぬしにいくらか前金を渡しておこう。 さあ、 これで充分であろう。 感謝する。
 dlga_lord_mission_raise_troops_alternate:close_window|{playername}よ、それはおもしろい。 兵長に新兵どもを闘技場へ送りだすように言おう。 おぬしも行って、連中をしごき上げてくれ。 見物させてもらおう。 申し出に感謝する。
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|お、そうか。 期待していたのだがな。 まあ仕方あるまい。 ではまたな。
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|おぬし向きの仕事がある。{s4}と呼ばれる、 ならず者がおってな。 私の護衛の者をひとり殺害して以来、裁きを受けずに逃げ続けておるのだ。 最近、奴を{s3}で目撃したという情報があった。 奴を捕らえて速やかに裁きを下してくれれば、報酬を出そう。
@@ -688,7 +688,7 @@ dlga_beorn_help3:beorn_help4|(リソースポイントについて)^^ビヨル�
 dlga_beorn_help4:beorn_help4a|*朗らかに笑う* エルフも熊の兄弟になれるのかい？・・・
 dlga_beorn_help4a:beorn_help5|*朗らかに笑う* エルフも熊の兄弟になれるのかい？・・・ 黄金色のはちみつ酒は甘く、心を暖めるが、 この暗い時代においてより必要とされるのは、 おそらくエルフの剣と鋭い矢だろう・・・
 dlga_beorn_help4:beorn_help5|(胸に手を当て、うなずいて微笑む)
-dlga_beorn_help5:beorn_help6|わしらは浅黒くていかめしくて毛深くて荒っぽいかも知れん。^だが親切にしてくれる友人には、わしらも親切にするさ。^^もしわしらの長たちがあんたをふさわしい者と考えるなら、 わしらはあんたと共に戦うよ。
+dlga_beorn_help5:beorn_help6|わしらは浅黒くていかめしくて毛深くて荒っぽいかも知れん。^だが親切にしてくれる友には、わしらも親切にするさ。^^もしわしらの長たちがあんたをふさわしい者と考えるなら、 わしらはあんたと共に戦うよ。
 dlga_beorn_help6:beorn_help7|(ランクポイントについて) ^^ランクポイントであなたが所属する勢力(もしくはそれ以外の勢力)^でのあなたの地位が向上します。^^これはパーティの最大規模と、その勢力で週ごとに得られる^リソースポイントを決めます。また、その他にも勢力特有の^特別報奨をアンロックします。
 dlga_beorn_help7:close_window|レ、フィール！友よ！お達者で。
 dlga_beorn_help7:close_window.1|(手をあげ、静かに去る)
@@ -707,7 +707,7 @@ dlga_woodelf_help_3:close_window|旅の無事を祈るよ。きっとまた会�
 dlga_healers_ask:healer_who|何ができるのか？
 dlga_healers_ask:healer_wound_ask|私と私の部下たちは、このままでは治らない傷を負っているのだ。治療をしてもらえないだろうか？
 dlga_healers_ask:healer_injured_ask|私と私の部下たちは負傷しているのだが、傷が治るまで待っている時間がないのだ。治療できないだろうか？
-dlga_healers_ask:close_window|何もない。
+dlga_healers_ask:close_window|何でもない。
 dlga_healers_injured_check:healers_injured_heal|手当をしてもらいたい。
 dlga_healers_wound_check:healers_wound_heal|手当をしてもらいたい。
 dlga_healers_wound_check:close_window|また後にしよう。
@@ -857,7 +857,7 @@ dlga_mayor_talk:mayor_reinforced_center_finished|要請の通り、{s3}の 守�
 dlga_mayor_begin:kill_quest_bandits_failed|私の頼んだ仕事に失敗したそうですね。失望しましたよ、 {playername}殿。
 dlga_kill_quest_bandits_failed:close_window|もうこのような事はないようにしよう。
 dlga_mayor_talk:mayor_deliver_food|さあこれが食料だ。{reg9}個ある。
-dlga_mayor_deliver_food:mayor_deliver_food_completed|よくやってくれました、 {playername}殿、 これで食料庫もじゅうぶんうるおい、 しばらくは飢えを心配する必要もなくなりました。
+dlga_mayor_deliver_food:mayor_deliver_food_completed|{playername}殿、助かりましたよ。 これで食料庫もじゅうぶんうるおい、 しばらくは飢えを心配する必要もなくなりました。
 dlga_mayor_deliver_food_completed:close_window|出来る限りの事はしよう。
 dlga_mayor_begin:mayor_looters_quest_response|やあ、{playername}殿。 経過はどうですか？
 dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|部族オークをいくらか退治した。
@@ -865,7 +865,7 @@ dlga_mayor_looters_quest_response:close_window|まだ報告するような事は
 dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|ええ、我々の斥候がすべて見届けましたよ。 これであの部族オークどもも、 おとなしくなるでしょう！^^[{s14}のリソースポイントを{reg14}x{reg15}獲得しました]
 dlga_mayor_looters_quest_destroyed_2:close_window|それだけではありませんよ！ あなたのおかげで、 部族オークどもの脅威はすべて取り除かれました。 もう襲撃を受けたという報告は来なくなりました。 まだ生き残りがいたとしても、 どこかへ逃げたか、 巣へ戻ったのでしょう。 これでこの辺りも少しは安全になりました！ これであなたの仕事は完了ということでいいでしょう、 {playername}殿。 感謝します、さようなら。
 dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|他になにかありますか？
-dlga_mayor_begin:close_window|よくやってくれました、{playername}殿。 連中を無事に届けてくれたようですね。 我らの上官に、 あなたは信頼できる方だと報告しておきます。^^[{s14}のリソースポイントを{reg14}獲得しました]
+dlga_mayor_begin:close_window|これはこれは、{playername}殿。 連中を無事に届けてくれたようですね。 我らの上官に、 あなたは信頼できる方だと報告しておきます。^^[{s14}のリソースポイントを{reg14}獲得しました]
 dlga_mayor_begin:move_cattle_herd_failed|{s9}に辿り着くまえに、 連中を見失ったそうだな。 おぬしの失態を 我らの上官に説明するのは ひと苦労だったぞ。 何か言う事はあるか？
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|すまない。だが、道中に攻撃を受けたのだ。
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|すまない。夜中に彼らを見失ってしまったのだ。

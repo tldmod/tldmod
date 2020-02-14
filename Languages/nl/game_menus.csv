@@ -1,4 +1,4 @@
-menu_start_game_1|^^^^^^^^^^Waar vecht u voor?
+menu_start_game_1|^^^^^^^^^^Waar vecht je voor?
 mno_start_good|De OPKOMST van een nieuw Tijdperk
 mno_start_evil|De SCHEMERING van Mensheid
 mno_go_bback|Ga Terug
@@ -13,19 +13,19 @@ mno_custom_battle_scenario_5|Skirmish, Noordelijke partijen vs Rhûn
 mno_custom_battle_scenario_6|Beleg Aanval, Orks vs Dwergen
 mno_custom_battle_scenario_7|Valstrik, Orks vs Demsterwold
 mno_custom_battle_scenario_8|Laatste slag van de Durins
-mno_custom_battle_scenario_88|Achtervolging van een Orcen verkennerspartij
-mno_custom_battle_scenario_11|Test Gevechten (toon balans!)
+mno_custom_battle_scenario_88|Achtervolging van een Orken verkennerspartij
+mno_custom_battle_scenario_11|Test Gevechten (Balans Afstemmen)
 mno_custom_battle_scenario_10|Landschap test gevecht
-mno_troll_battle_scenario|Test Trollen Gevecht
-mno_warg_battle_scenario|Test Warg Gevecht
+mno_troll_battle_scenario|Test Trol Gevechten
+mno_warg_battle_scenario|Test Warg Gevechten
 mno_build_your_own_scene|** Maak je eigen scenario voor TLD **
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+menu_tutorial|^^ Welkom bij de Gevechts Oefening voor Mount & Blade. Hier zzal je de basis elementen van gevechten leren zowel een kleine overzicht van troepen commandos tijdens veld gevechten.
+mno_tutorial_1|Oefening #1: Basis bewegingen en wapen selectie. {s1}
+mno_tutorial_2|Oefening #2: Vechten met een schild. {s2}
+mno_tutorial_3|Oefening #3: Vechten zonder een schild. {s3}
+mno_tutorial_3b_door|Volgende level
+mno_tutorial_4|Oefening #4: Rijden van een paard of warg. {s4}
+mno_tutorial_5|Oefening #5: Commanderen van een groep soldaten {s5}
 mno_go_back_dot|Ga terug.
 mno_action_view_troop_trees|Bekijk troepschema's.
 mno_view_upkeep_costs|Bekijk onderhoud kosten.
@@ -37,11 +37,11 @@ mno_view_faction_strengths_report|Bekijk factie sterkte verslag.
 mno_view_traits_report|Bekijk eigenschappen.
 mno_resume_travelling|Hervat Reizen.
 mno_custom_battle_go|Start
-mno_leave_custom_battle_2|Annuleer.
-menu_custom_battle_end|Het gevecht is over. {s1} Jouw kant doodde {reg5} vijanden en verloor {reg6} troepen tijdens het gevecht. ^Jij doodde {reg7} vijanden in het gevecht.
+mno_leave_custom_battle_2|Annuleer
+menu_custom_battle_end|^^^^^^Het gevecht is over. {s1} Jouw kant doodde {reg5} vijanden en verloor {reg6} troepen tijdens het gevecht. ^Jij doodde {reg7} vijanden in het gevecht.
 mno_replay|Speel dit gevecht opnieuw.
 mno_continue_dot|Vervolgen
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|^^^^^^Het was aan admirabele laatste stand maar toch verdoemd.^^ Jij en je manschappen doden {reg5} vijanden.^Jij hebt {reg7} vijanden persoonlijk gedood.
 mno_replay_cbd|Speel dit gevecht opnieuw.
 mno_continue_dot_cbd|Vervolgen
 mno_dot_go_back|. Ga terug
@@ -54,12 +54,12 @@ menu_start_evil|^^^^^^^^^^Wie dien jij?
 mno_start_eye|SAURON van Mordor, de Heer van de Ringen.
 mno_start_hand|SARUMAN van Isengard, de Witte Hand.
 menu_start_eye|^^^^^^^^^Je meester is the Lidless Eye^Kies je Ras
-mno_start_or|een ORC, Ten dienste van the Lidless Eye
+mno_start_or|een ORK, Ten dienste van the Lidless Eye
 mno_start_ur|een URUK, Het nieuwe Orkse ras
 mno_start_em|een Mens, Onderworpen door Sauron.
 menu_start_hand|^^^^^^^^^Je meester is de Witte Hand^Kies je Ras.
 mno_start_whor|Een ORC, Ten dienste van de Witte Hand
-; mno_start_isur|one of the URUK-HAI, bred in Isengard
+mno_start_isur|Een van de URUK-HAI, geboren in Isengard
 mno_start_duma|een MENS uit Dunland, de Westerlijke Vlaktes
 menu_start_good_man|^^^^^^^^^^Kies uw volk:
 mno_start_go|GONDOR, het Koninkrijk van de Witte Toren
@@ -104,17 +104,17 @@ mno_start_2_hib|Hoog Geboren
 menu_start_haradrim|^^^^^^^Je bent een Haradrim,^een Mens van de Woestijn.^Kies uw lijn
 mno_start_1_des|Woestijn Mens
 mno_start_2_far|Far Harad Stamlid
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+menu_start_numenorean|^^^^^^^Jij ben een Zwarte Numenorean, ^Gezworen de duisternis en Morgoth te helpen.^Selecteer waar jij het Oog dient
+mno_start_1_bn|Naast de Mond van Sauron, in MORANNON
+mno_start_2_bn|In het Kasteel van GeestenTovenaars, DOL GULDUR 
 menu_choose_gender|^^^^^^^^^^Je geslacht?
 mno_start_male|Man
 mno_start_female|Vrouw
 mno_proc|Ga door als gewoonlijk
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
-; mno_start_default|Become a {s23} (Default)
-; mno_start_up1|Become a {s21} (Easy)
-; mno_start_up2|Become a {s22} (Easy)
+menu_start_as_one|^^^^^^^^^Wat voor soort Soldaat ben je?
+mno_start_default|Wordt een{s23} (Standaard)
+mno_start_up1|Wordt een {s21} (Makkelijk)
+mno_start_up2|Wordt een {s22} (makkeljik)
 mno_continue|Vervolgen...
 menu_character_report|^^^^^Partij Moraal: {reg8}^Partij Grootte Limiet: {reg7}^{s5}
 menu_camp|^^^^Je bent in {s1}.{s2}^^Wat wil je doen?
@@ -123,14 +123,14 @@ mno_camp_troop|Inspecteer{reg10? troops:}{reg12? and:}{reg11? gevangenen:}.
 mno_camp_action|Gebruik een object.
 mno_camp_wait_here|Wacht hier voor enige tijd.
 mno_camp_options|Verander TLD opties.
-; mno_Dev_Menu|Developer Menu
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_Dev_Menu|Ontwikkelaar Menu
+menu_dev_menu|Er zijn Ontwikkelaars Opties die je cheats/tools geven om mee te spelen.^^Dit is in lopende werkzaamheden en kan het spel crashen.^^gebruiken op eigen risico! ^^\nLaat ons weten dat je het ontwikkelaars menugebruikt hebt als je een bug vindt.
 mno_Cheat_enable|Activeer cheat/modding opties.
 menu_game_options|^^^^^^^^Klik op een optie om omschakelen:
-; mno_game_options_war_level_start|War Starts at Level: {s1}
+mno_game_options_war_level_start|Oorlog start bij Level: {s1} 
 mno_game_options_restrict_items|Beperkte speler uitrusting: {s7}
 mno_game_options_formations|Gevecht formaties en AI: {s7}
-; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
+mno_game_options_siege_ai|Geavanceerde Belegering AI: {s7}
 mno_game_options_town_menu|Stad NPCs altijd bereikbaar vanaf de Menus: {s7}
 mno_game_options_cutscenes|Tussenfilmpjes: {s7}
 mno_game_options_injuries|Blessures voor metgezellen: {s7}
@@ -138,16 +138,16 @@ mno_game_options_death|Permanente dood voor heren en metgezellen: {s7}.
 mno_game_options_death2|Permanente dood voor speler (dat ben JIJ!): {s7}.
 mno_game_options_morale|Gevecht Moraal systeem: {s7}.
 mno_game_options_animal_ambushes|Dierlijke hinderlagen: {s7}.
-; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
-; mno_game_options_bright_nights|Brighter Nights:  {s7}.
-; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
+mno_game_options_horse_ko|Gevallen rijder schade berichten: {s7}
+mno_game_options_bright_nights|Helderde Nachten: {s7}
+mno_game_options_camera_pref|Voorkeurende Camera Mode: {s7}
 mno_game_options_tweaks|Gameplay tweaks...
 mno_game_options_back|Terug naar het kamp menu.
 mno_game_options_start_back|Terug.
 menu_camp_tweaks|^^^^^^^^Kies een optie die u wilt aanpassen.
 mno_tweak_options_compat|Compatibility tweaks...
 mno_tweak_options_strat|Strategie tweaks...
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
+mno_tweak_options_battlefield_ai|Slagveld AI tweaks...
 mno_tweak_options_back|Terug naar het opties menu.
 menu_camp_compat_tweaks|^^^^^^^^Klik op een optie om te veranderen (houd shift ingedrukt om te verlagen):^(Deze zijn voor compatibiliteit en zijn dus geen cheats)
 mno_game_options_compat_party|Maximaal aantal partijen: {s1}
@@ -156,7 +156,7 @@ menu_camp_strat_tweaks|^^^^^^^Klik op een optie:^(Pas op: Dit zijn cheats!)
 mno_strat_tweaks_siege_reqs|Belegering sterkte-eisen: {s7}
 mno_strat_tweaks_siege_relax_rate|Belegering str. eis. ontspanning snelheid: {reg1}
 mno_strat_tweaks_regen_rate|Sterkte regen snelheid: {s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
+mno_strat_tweaks_siege_regen_limit|Factie kracht regenereed langzamer bij: {reg1}
 mno_strat_tweaks_influence_gain_rate|Influentie steiging radius: {s7}
 mno_strat_tweaks_rank_gain_rate|Rank steiging radius: {s7}
 mno_strat_tweaks_back|Terug naar het tweaks menu.
@@ -195,13 +195,13 @@ mno_leave|Ga weg.
 menu_simple_encounter|^^^^^{s2}^Je hebt {reg22} troepen klaar voor het gevecht tegen hun {reg11}.^^Het gevecht neemt zich plaats in {s3}{s4}.^^Je orders?
 mno_encounter_attack|{reg21?Val ze aan:Bereid je voor om aan te vallen}. 
 mno_encounter_order_attack|Order je troepen om {reg21?attack:face them} zonder jou.
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
-; mno_encounter_hide|Hide from the enemy...
+mno_control_allies_menu|Gebruik Influentie om Je Bondgenoten te Commanderen in het Veld.
+mno_encounter_hide|Verstop je voor de vijand...
 mno_special_whip|Ren naar ze toe {s4}.
 mno_encounter_leave|Stop met aanvallen.
 mno_encounter_retreat|Trek terug, laat wat soldaten achter om je te verdedigen.
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_simple|Commandeer ze en Val de vijand aan
+mno_player_control_allies_back|Ga terug...
 mno_hide_close|Vervolgen...
 menu_encounter_retreat_confirm|^^^^^Als partij lid met de hoogste tactiek vaardigheid,({reg2}), {reg3?you devise:{s3} devises} een plan dat er voor zorgt dat je veilig kunt ontsnappen. maar, je moet wat {reg4} soldat achterlaten zodat de vijand je niet kan achtervolgen.
 mno_leave_behind|Ga door. Het offer van deze mannen zal de rest redden.
@@ -229,9 +229,9 @@ mno_pre_join_leave|Doe niet mee.
 menu_join_battle|^^^Je helpt {s2} tegen {s1}.^ Je hebt {reg22} troepen klaar voor de strijd tegen de vijanden {reg11}.^^De strijd neem plaats in {s3}{s4}.
 mno_join_attack|Val de vijand aan.
 mno_join_order_attack|Order je troepen om aan te vallen met je bondgenoten, terwijl je terug blijft.
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|Gebruik influentie Punten om je Bondgenoten te Commanderen in het Veld.
 mno_join_leave|Stop met aanvallen.
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|Commandeer ze en Val de vijand aan
 menu_join_order_attack|{s4}^^Uw slachtoffers: {s8}^^Geallieerden slachtoffers: {s9}^^Vijandelijke slachtoffers: {s10}
 mno_enter|Treed binnen.
 menu_battlefields|^^^^^^^^^Selecteer een veld...
@@ -267,7 +267,7 @@ menu_construct_ladders|Als partij lid met de hoogste Ingenieur vaardigheid ({reg
 mno_build_ladders_cont|Doe het.
 menu_castle_attack_walls_simulate|{s4}^^Uw slachtoffers:{s8}^^Vijandelijke slachtoffers waren: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Uw slachtoffers: {s8}^^Geallieerden slachtoffers: {s9}^^Vijandelijke slachtoffers: {s10}
-; menu_castle_taken_by_friends|Nothing to see here.
+menu_castle_taken_by_friends|Niks te zien hier.
 menu_castle_taken|{s3} is veroverd door je troepen, en u hebt nu de volledige controle over de {reg2?town:castle}. {reg1? Het lijkt erop dat niks u stopt om het voor uzelf over te nemen...:}
 menu_castle_taken_2|{s3} Is veroverd door je troepen, en u hebt nu de volledige controle over het kasteel. Het is tijd om woord te sturen naar {s9} van uw overwinning. {s5}
 mno_castle_taken_no_claim|Vraag geen beloningen.
@@ -300,10 +300,10 @@ mno_talk_to_castle_commander|Bezoek de {s61} Barakken.
 mno_speak_with_elder|Spreek met de {s6}.
 mno_isengard_underground|Ga naar de ondergrondse grotten.
 mno_tirith_toplevel|Klim naar het hoogste niveau.
-; mno_erebor_gates|Visit the Great Gates.
+mno_erebor_gates|Bezoek de Grote Poorten.
 mno_town_leave|Ga weg...
 mno_town_leave_door|Verlaat het gebied
-; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
+menu_player_initiated_siege_result|Je hebt deze center aangevallen in de naam van {s2}
 menu_disembark|Wilt u uitstappen?
 mno_disembark_yes|Ja.
 mno_disembark_no|Nee.
@@ -335,19 +335,19 @@ mno_explore|Verken deze plaats.
 menu_ring_hunter_lair|^^^^Je hebt het spoor van de Ringjagers door Demsterwold gevolgd en je bent aan de {s1} gekomen. Je ziet hen zich voorbereiden om te vertrekken met een kist.
 mno_attack_lair|Val hen nu aan.
 mno_leave_bandit_lair|Vertrek momenteel.
-; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
-; mno_gondor_reinforcement_event_close|Close
-; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+menu_gondor_reinforcement_event|^^^^^^De Bakens van Gondor zijn aangestoken, Minas Tirith vraagt om hulp!^^De Heren van de zuide leengoeden zullen nu naar het noorden marcheren om de Grote Witte Stad te verdedigen tegen de Duisternis.
+mno_gondor_reinforcement_event_close|Sluiten
+menu_gondor_beacons|Je kijkt op naar {s1}, een van de waarschuwings bakens van Gondor, gebruikt om alarm te slaan in Noord en Zuid Gondor
 mno_gondor_beacons_close|Ga weg...
-; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
-; mno_player_added_to_war_council_close|Close
-; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
-; mno_player_added_to_siege_reports_close|Close
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
-; mno_player_added_to_allow_follow_close|Close
-; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
-; mno_center_besieged_event_close|Close
-; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+menu_player_added_to_war_council|^^^^^Een boodschapper is geariveerd en verteld je dat nu als {s24} gevraagd bent door {s2} om jje bij de oorlogsraad aan te sluiten. Je kan nu strategieen die de oorlog beinvloeden sugesteren.
+mno_player_added_to_war_council_close|Sluiten
+menu_player_added_to_siege_reports|^^^^^Een boodschapper is geariveerd en verteld je dat nu als {s24} Boodschappen krijgt als {s2} een belegering voert of als {s2} belegerd wordt.
+mno_player_added_to_siege_reports_close|Sluiten
+menu_player_added_to_allow_follow|^^^^^Een boodschapper is geariveerd en verteld je dat nu als {s24} Je {s2} mag commanderen voor een totaal of {reg55} maximaale volgers.
+mno_player_added_to_allow_follow_close|Sluiten
+menu_center_besieged_event|^^^^^Een boodschapper is geariveerd en verteld dat {s1} is belegerd door {s2} en {s3}
+mno_center_besieged_event_close|Sluiten
+menu_guardian_party_spawned|^^^^^Verkenners rapporteren dat {s6} een groote leger in de buurt van {s7} hebben gezien, in een laatste poging om hun hoofdstad te verdedigen.
 mno_intro_next|Vervolgen...
 mno_start_defend_caravan|Verdedig de Karavaan!
 mno_start_raid_caravan|Plunder de Karavaan!
@@ -356,33 +356,33 @@ mno_start_kill_scouts|Houd de verkenners tegen die jouw aankomst gaan melden!
 mno_go_your_way|Laat ze alleen
 mno_defend_villagers|Verdedig de Dorpelingen!
 mno_raid_villagers|Plunder het Dorp!
-; mno_go_away|Leave and regroup for now.
-; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
-; mno_attack_scout_camp|Attack the Scout Camp!
-; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
-; mno_sb_defend_the_town|Board them! Destroy their fleet!
-; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
-; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
-; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
-; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
-; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
-; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
-; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
-; menu_hungry_orc|none
-; menu_leaving_elf|none
-; mno_defend_refugees|Keep your eye out for raiders...
-; mno_attack_refugees|Attack the refugee train...
-; mno_leave_refugees|Leave them for now...
+mno_go_away|Verlaat en hergroep voor nu.
+menu_scout_camp_quest|Je ziet een verkenners kamp dichtbij. Je beriedt je mannen voor en valt aan.
+mno_attack_scout_camp|Val de Verkenners Kamp Aan!
+menu_sea_battle_quest|Je ontmoet een vijandelijke vloot, De schepen komen dichterbij en de matrosen gooien de planken neer...
+mno_sb_defend_the_town|Ga aan boord! Sloop hun vloot!
+mno_sb_attack_the_town|Ze proberen ons te onderscheppen! Verdedig de vloot!
+menu_camp_field_ai|^^^^^Klik op een optie om het uit of aan te doen.^^^Het uitzetten van een of meerdere opties zal de Prestatie verbeteren (FPS)
+mno_lord_field_ai|Heren Hebben Verbeterde Slagveld AI: {s7}
+mno_horse_archer_field_ai|Paard Booschutters hebben verbeterde Slagveld AI: {s7}
+mno_vs_orcs_field_ai|Boogschutters hebben een betere mikpunt tegen orks (richt niet boven orks hoofd): {s7}
+mno_battlefield_animals|Geen-Warg / Paard Kameraden Spawnen in strijd: {s7}
+mno_slow_when_wounded|Agenten worden traag wanneer verwondt: {s7}
+mno_battle_encounter_effects|Speciale Factie gebaseerde effecten of het slagveld (bijv. Stormen en misten): {s7}
+menu_hungry_orc|Geen
+menu_leaving_elf|Geen
+mno_defend_refugees|Houd een oog open voor plunderaars...
+mno_attack_refugees|Val de vluchtelingen karavan aan...
+mno_leave_refugees|Laat hun voor nu...
 mno_evil_war_tut_continue|Vervolgen...
-; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
-; mno_guardian_party_reject|Send a message you cannot join him.
+menu_guardian_party_quest|{s8} zegt dat Isengard achter hun aan zit en dat ze een laatste verdedeging poging doen. Hij wenst dat jij hem helpt met jouw leger, em als je niet genoeg krijgers hebt dat je snel meer moet krijgen. je moet minimaal {reg13} krijgers hebben.
+mno_guardian_party_reject|Zend een bericht dat je hem niet kan helpen.
 mno_guardian_party_send_word|Stuur woord dat u zich binnenkort aansluit.
-; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
-; mno_training_continue|Begin training...
-; menu_alternate_training_conclusion|{s5}
-; mno_alternate_training_retry|Try again...
-; mno_alternate_training_finish|Leave the arena...
+menu_alternate_training_fight|Je zal {reg5} aanvallen. Ben je voorbereid?
+mno_training_continue|Begin training...
+menu_alternate_training_conclusion|{s5}
+mno_alternate_training_retry|Probeer opnieuw...
+mno_alternate_training_finish|Verlaat de arena...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Kies een kant en voordeel:
 mno_good_equal|Goede factie
 mno_bad_equal|Kwade factie
@@ -411,7 +411,7 @@ mno_next_rescue_scene_door|Verder doorgaan!
 mno_pick_troops1|Kies metgezellen voor de missie, {reg0} geselecteerd
 menu_pick_troops|Wie zou je meenemen in deze stealth missie? Momenteel kies je {reg0} metgezellen. Je kan tot 10 troepen meenemen
 mno_go_forward|Beëindig het kiezen van metgezellen en ga verder.
-; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
+menu_burial_mound|Je nadert de begravings plek van {s1}en {s2}. Verslagen in de strijd met {s28}. Het ligt vol met wapens van verslagen vijanden.
 mno_pay_respects|Knielen en geef je respect.
 mno_swear_oath|Zweer een eed van wraak!
 mno_despoil|Ontheilig de plek
@@ -421,12 +421,12 @@ menu_burial_mound_oath|Je zweert luid een eed van wraak voor de dood van {s4}. J
 menu_funeral_pyre_oath|Je zweert luid een eed van wraak voor de dood van {s4}. Je zou onophoudelijk zoeken naar de krachten van de {s3} en ze vernietigen. Je woorden raken heel ver en kunnen waarschijnlijk gehoord woorden nabij de zee.
 mno_leave_pyre_oath|Verlaat de brandstapel.
 menu_burial_mound_despoil|Je breekt het monument van {s1} af met je eigen handen, en je verontreinigt de stenen met vloeken, smerige gezangen en onuitspreekbare daden. Je metgezellen vallen terug in angst voor de dood, maar ze lijken steeds meer respect te hebben voor je boosheid.
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+menu_funeral_pyre|Je nadert de verbrande achterblijvselen van de begravings vuur van {s3} en {s2}. Verslagen door {s28}. Hier was het lichaam cermonieeel verbrand door zijn personlijke bodyguards. Niks van waarde is overgebleven.
 mno_leave_pyre|Verlaat de brandstapel.
 menu_town_ruins|Wanneer je nadert, zie je dat {s1} is {s2}
 mno_ruin_menu_0|Verken de plaats.
 mno_ruin_leave|Ga weg...
-; menu_premutiny|none
+menu_premutiny|Geen
 menu_death|Je bent gedood, Hoewel de oorlog nog steeds woedt, zal je er niet langer een deel van uitmaken.
 menu_animal_ambush|U en uw gezelschap zijn gescheiden van de rest van uw partij, wanneer plotseling...
 menu_animal_ambush_success|De {s2} {reg0?fall:falls} Valt voor je als een tarwe aan ene zeis! Al snel liggen al uw aanvallers op de vloer, dood of gewond. {s3}

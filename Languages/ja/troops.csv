@@ -62,8 +62,8 @@ trp_a5_woodmen_night_stalker|闇の森 ナイトストーカー
 trp_a5_woodmen_night_stalker_pl|闇の森 ナイトストーカー
 trp_i1_beorning_man|ビヨルンの男
 trp_i1_beorning_man_pl|ビヨルンの男
-trp_i2_beorning_warrior|ビヨルン 突撃兵
-trp_i2_beorning_warrior_pl|ビヨルン 突撃兵
+trp_i2_beorning_warrior|ビヨルン 戦士
+trp_i2_beorning_warrior_pl|ビヨルン 戦士
 trp_i3_beorning_tolltacker|ビヨルン トールテーカー
 trp_i3_beorning_tolltacker_pl|ビヨルン トールテーカー
 trp_i4_beorning_sentinel|ビヨルン 哨兵
@@ -124,8 +124,8 @@ trp_c4_rhun_veteran_swift_horseman|リューン ベテラン軽騎兵
 trp_c4_rhun_veteran_swift_horseman_pl|リューン ベテラン軽騎兵
 trp_c5_rhun_falcon_horseman|ファルコン 騎兵
 trp_c5_rhun_falcon_horseman_pl|ファルコン 騎兵
-trp_i2_rhun_tribal_warrior|リューン 歩兵
-trp_i2_rhun_tribal_warrior_pl|リューン 歩兵
+trp_i2_rhun_tribal_warrior|リューン 部族の戦士
+trp_i2_rhun_tribal_warrior_pl|リューン 部族の戦士
 trp_i3_rhun_tribal_infantry|リューン 突撃兵
 trp_i3_rhun_tribal_infantry_pl|リューン 突撃兵
 trp_i4_rhun_vet_infantry|リューン ベテラン突撃兵
@@ -144,10 +144,10 @@ trp_c6_rhun_dorwinion_noble|ドルウィニオン 上級騎兵
 trp_c6_rhun_dorwinion_noble_pl|ドルウィニオン 上級騎兵
 trp_i1_dwarf_apprentice|見習いドワーフ
 trp_i1_dwarf_apprentice_pl|見習いドワーフ
-trp_i2_dwarf_warrior|突撃ドワーフ
-trp_i2_dwarf_warrior_pl|突撃ドワーフ
-trp_i3_dwarf_hardened_warrior|重装突撃ドワーフ
-trp_i3_dwarf_hardened_warrior_pl|重装突撃ドワーフ
+trp_i2_dwarf_warrior|戦士ドワーフ
+trp_i2_dwarf_warrior_pl|戦士ドワーフ
+trp_i3_dwarf_hardened_warrior|重戦士ドワーフ
+trp_i3_dwarf_hardened_warrior_pl|重戦士ドワーフ
 trp_i4_dwarf_spearman|槍ドワーフ
 trp_i4_dwarf_spearman_pl|槍ドワーフ
 trp_i5_dwarf_pikeman|パイクドワーフ
@@ -224,8 +224,8 @@ trp_a5_ithilien_vet_ranger|イシリアンの野伏 ベテラン
 trp_a5_ithilien_vet_ranger_pl|イシリアンの野伏 ベテラン
 trp_a6_ithilien_master_ranger|イシリアンの野伏 達人
 trp_a6_ithilien_master_ranger_pl|イシリアンの野伏 達人
-trp_a6_ithilien_leader|イシリアンの野伏 リーダー
-trp_a6_ithilien_leader_pl|イシリアンの野伏 リーダー
+trp_a6_ithilien_leader|イシリアンの野伏 隊長
+trp_a6_ithilien_leader_pl|イシリアンの野伏 隊長
 trp_i1_loss_woodsman|ロスサールナッハ 山男
 trp_i1_loss_woodsman_pl|ロスサールナッハ 山男
 trp_i2_loss_axeman|ロスサールナッハ 斧兵
@@ -236,8 +236,8 @@ trp_i4_loss_heavy_axeman|ロスサールナッハ 重装斧兵
 trp_i4_loss_heavy_axeman_pl|ロスサールナッハ 重装斧兵
 trp_i5_loss_axemaster|ロスサールナッハ 精鋭斧兵
 trp_i5_loss_axemaster_pl|ロスサールナッハ 精鋭斧兵
-trp_i6_loss_leader|ロスサールナッハ キャプテン
-trp_i6_loss_leader_pl|ロスサールナッハ キャプテン
+trp_i6_loss_leader|ロスサールナッハ 隊長
+trp_i6_loss_leader_pl|ロスサールナッハ 隊長
 trp_i1_pel_watchman|ペラルギア 衛兵
 trp_i1_pel_watchman_pl|ペラルギア 衛兵
 trp_a2_pel_marine|ペラルギア 水兵
@@ -248,8 +248,8 @@ trp_i2_pel_infantry|ペラルギア 突撃兵
 trp_i2_pel_infantry_pl|ペラルギア 突撃兵
 trp_i3_pel_vet_infantry|ペラルギア ベテラン突撃兵
 trp_i3_pel_vet_infantry_pl|ペラルギア ベテラン突撃兵
-trp_i6_pel_leader|ペラルギア キャプテン
-trp_i6_pel_leader_pl|ペラルギア キャプテン
+trp_i6_pel_leader|ペラルギア 隊長
+trp_i6_pel_leader_pl|ペラルギア 隊長
 trp_a6_pel_marine_leader|ペラルギア 水兵長
 trp_a6_pel_marine_leader_pl|ペラルギア 水兵長
 trp_i1_lam_clansman|ラメドン 民兵
@@ -264,8 +264,8 @@ trp_i5_lam_champion|ラメドン チャンピオン
 trp_i5_lam_champion_pl|ラメドン チャンピオン
 trp_c5_lam_knight|ラメドン 騎士
 trp_c5_lam_knight_pl|ラメドン 騎士
-trp_c6_lam_leader|ラメドン キャプテン
-trp_c6_lam_leader_pl|ラメドン キャプテン
+trp_c6_lam_leader|ラメドン 隊長
+trp_c6_lam_leader_pl|ラメドン 隊長
 trp_i1_pinnath_plainsman|ピンナス・ゲリン 民兵
 trp_i1_pinnath_plainsman_pl|ピンナス・ゲリン 民兵
 trp_c2_pinnath_rider|ピンナス・ゲリン 騎兵
@@ -276,8 +276,8 @@ trp_a2_pinnath_bowman|ピンナス・ゲリン 射手
 trp_a2_pinnath_bowman_pl|ピンナス・ゲリン 射手
 trp_a3_pinnath_archer|ピンナス・ゲリン 弓兵
 trp_a3_pinnath_archer_pl|ピンナス・ゲリン 弓兵
-trp_c6_pinnath_leader|ピンナス・ゲリン キャプテン
-trp_c6_pinnath_leader_pl|ピンナス・ゲリン キャプテン
+trp_c6_pinnath_leader|ピンナス・ゲリン 隊長
+trp_c6_pinnath_leader_pl|ピンナス・ゲリン 隊長
 trp_a1_blackroot_hunter|黒根谷 猟師
 trp_a1_blackroot_hunter_pl|黒根谷 猟師
 trp_a2_blackroot_bowman|黒根谷 射手
@@ -302,8 +302,8 @@ trp_c5_amroth_vet_knight|ドル・アムロス ベテラン騎士
 trp_c5_amroth_vet_knight_pl|ドル・アムロス ベテラン騎士
 trp_c6_amroth_swan_knight|ドル・アムロス 白鳥の騎士
 trp_c6_amroth_swan_knight_pl|ドル・アムロス 白鳥の騎士
-trp_c6_amroth_leader|ドル・アムロス キャプテン
-trp_c6_amroth_leader_pl|ドル・アムロス キャプテン
+trp_c6_amroth_leader|ドル・アムロス 隊長
+trp_c6_amroth_leader_pl|ドル・アムロス 隊長
 trp_a1_lorien_scout|ロスローリエン 斥候兵
 trp_a1_lorien_scout_pl|ロスローリエン 斥候兵
 trp_a2_lorien_warden|ロスローリエン 巡視兵
@@ -424,10 +424,10 @@ trp_i5_elite_footman_of_rohan|ローハン 精鋭歩兵
 trp_i5_elite_footman_of_rohan_pl|ローハン 精鋭歩兵
 trp_i6_footman_guard_of_rohan|ローハン フォルクヴィネ近衛兵
 trp_i6_footman_guard_of_rohan_pl|ローハン フォルクヴィネ近衛兵
-trp_i6_frealaf_raider|フレアラフ 遊撃兵
-trp_i6_frealaf_raider_pl|フレアラフ 遊撃兵
-trp_i5_raider_of_rohan|ローハン 遊撃兵
-trp_i5_raider_of_rohan_pl|ローハン 遊撃兵
+trp_i6_frealaf_raider|フレアラフ 襲撃兵
+trp_i6_frealaf_raider_pl|フレアラフ 襲撃兵
+trp_i5_raider_of_rohan|ローハン 襲撃兵
+trp_i5_raider_of_rohan_pl|ローハン 襲撃兵
 trp_i6_warden_of_methuseld|黄金館の番兵
 trp_i6_warden_of_methuseld_pl|黄金館の番兵
 trp_ac3_skirmisher_of_rohan|ローハン 散兵
@@ -504,18 +504,18 @@ trp_i5_far_harad_panther_guard|豹 近衛兵
 trp_i5_far_harad_panther_guard_pl|豹 近衛兵
 trp_i1_dun_wildman|褐色人 野人
 trp_i1_dun_wildman_pl|褐色人 野人
-trp_i2_dun_warrior|褐色人 突撃兵
-trp_i2_dun_warrior_pl|褐色人 突撃兵
+trp_i2_dun_warrior|褐色人 戦士
+trp_i2_dun_warrior_pl|褐色人 戦士
 trp_i3_dun_pikeman|褐色人 パイク兵
 trp_i3_dun_pikeman_pl|褐色人 パイク兵
 trp_i4_dun_vet_pikeman|褐色人 ベテランパイク兵
 trp_i4_dun_vet_pikeman_pl|褐色人 ベテランパイク兵
 trp_ac2_dun_crebain_rider|褐色人 クリバイン騎兵
 trp_ac2_dun_crebain_rider_pl|褐色人 クリバイン騎兵
-trp_i3_dun_vet_warrior|褐色人 ベテラン突撃兵
-trp_i3_dun_vet_warrior_pl|褐色人 ベテラン突撃兵
-trp_i4_dun_wolf_warrior|褐色人 狼突撃兵
-trp_i4_dun_wolf_warrior_pl|褐色人 狼突撃兵
+trp_i3_dun_vet_warrior|褐色人 ベテラン戦士
+trp_i3_dun_vet_warrior_pl|褐色人 ベテラン戦士
+trp_i4_dun_wolf_warrior|褐色人 狼戦士
+trp_i4_dun_wolf_warrior_pl|褐色人 狼戦士
 trp_i5_dun_wolf_guard|褐色人 狼近衛兵
 trp_i5_dun_wolf_guard_pl|褐色人 狼近衛兵
 trp_ac4_dun_raven_rider|褐色人 大からす騎兵
@@ -556,14 +556,14 @@ trp_ac4_khand_vet_skirmisher|ハンド ベテラン散兵
 trp_ac4_khand_vet_skirmisher_pl|ハンド ベテラン散兵
 trp_ac5_khand_heavy_skirmisher|ヴァリアグ 重装散兵
 trp_ac5_khand_heavy_skirmisher_pl|ヴァリアグ 重装散兵
-trp_i1_corsair_youth|ウンバール 水兵
-trp_i1_corsair_youth_pl|ウンバール 水兵
-trp_i2_corsair_warrior|ウンバール 突撃兵
-trp_i2_corsair_warrior_pl|ウンバール 突撃兵
+trp_i1_corsair_youth|ウンバール 船乗り
+trp_i1_corsair_youth_pl|ウンバール 船乗り
+trp_i2_corsair_warrior|ウンバール 戦士
+trp_i2_corsair_warrior_pl|ウンバール 戦士
 trp_i3_corsair_spearman|ウンバール 槍兵
 trp_i3_corsair_spearman_pl|ウンバール 槍兵
-trp_i4_corsair_raider|海賊 遊撃兵
-trp_i4_corsair_raider_pl|海賊 遊撃兵
+trp_i4_corsair_raider|海賊 襲撃兵
+trp_i4_corsair_raider_pl|海賊 襲撃兵
 trp_i5_corsair_night_raider|海賊 夜襲兵
 trp_i5_corsair_night_raider_pl|海賊 夜襲兵
 trp_a2_corsair_marine|ウンバール 水兵
@@ -640,8 +640,8 @@ trp_i2_isen_uruk|アイゼンガルド ウルク＝ハイ
 trp_i2_isen_uruk_pl|アイゼンガルド ウルク＝ハイ
 trp_i3_isen_large_uruk|アイゼンガルド 大ウルク＝ハイ
 trp_i3_isen_large_uruk_pl|アイゼンガルド 大ウルク＝ハイ
-trp_i4_isen_fighting_uruk_warrior|戦闘ウルク＝ハイ 突撃兵
-trp_i4_isen_fighting_uruk_warrior_pl|戦闘ウルク＝ハイ 突撃兵
+trp_i4_isen_fighting_uruk_warrior|戦闘ウルク＝ハイ 戦士
+trp_i4_isen_fighting_uruk_warrior_pl|戦闘ウルク＝ハイ 戦士
 trp_i5_isen_fighting_uruk_champion|戦闘ウルク＝ハイ チャンピオン
 trp_i5_isen_fighting_uruk_champion_pl|戦闘ウルク＝ハイ チャンピオン
 trp_i3_isen_uruk_pikeman|ウルク＝ハイ パイク兵
@@ -729,8 +729,8 @@ trp_i1_gunda_goblin|グンダバド  ゴブリン
 trp_i1_gunda_goblin_pl|グンダバド  ゴブリン
 trp_i2_gunda_orc|グンダバド  オーク
 trp_i2_gunda_orc_pl|グンダバド  オーク
-trp_i3_gunda_orc_fighter|グンダバド  オーク突撃兵
-trp_i3_gunda_orc_fighter_pl|グンダバド  オーク突撃兵
+trp_i3_gunda_orc_fighter|グンダバド  オーク闘士
+trp_i3_gunda_orc_fighter_pl|グンダバド  オーク闘士
 trp_i4_gunda_orc_warrior|グンダバド  オーク戦士
 trp_i4_gunda_orc_warrior_pl|グンダバド  オーク戦士
 trp_i4_gunda_orc_berserker|グンダバド  オーク狂戦士
@@ -755,10 +755,10 @@ trp_i5_gunda_orc_champion|グンダバド  オークチャンピオン
 trp_i5_gunda_orc_champion_pl|グンダバド  オークチャンピオン
 trp_i2_mordor_num_renegade|黒きヌーメノール 背教者
 trp_i2_mordor_num_renegade_pl|黒きヌーメノール 背教者
-trp_i3_mordor_num_warrior|黒きヌーメノール 突撃兵
-trp_i3_mordor_num_warrior_pl|黒きヌーメノール 突撃兵
-trp_i4_mordor_num_vet_warrior|黒きヌーメノール ベテラン突撃兵
-trp_i4_mordor_num_vet_warrior_pl|黒きヌーメノール ベテラン突撃兵
+trp_i3_mordor_num_warrior|黒きヌーメノール 戦士
+trp_i3_mordor_num_warrior_pl|黒きヌーメノール 戦士
+trp_i4_mordor_num_vet_warrior|黒きヌーメノール ベテラン戦士
+trp_i4_mordor_num_vet_warrior_pl|黒きヌーメノール ベテラン戦士
 trp_i5_mordor_num_champion|黒きヌーメノール チャンピオン
 trp_i5_mordor_num_champion_pl|黒きヌーメノール チャンピオン
 trp_i5_mordor_num_assassin|黒きヌーメノール 暗殺兵
@@ -851,8 +851,8 @@ trp_refugee|難民
 trp_refugee_pl|難民
 trp_peasant_woman|農民の女
 trp_peasant_woman_pl|農民の女
-trp_caravan_master|隊商のリーダー
-trp_caravan_master_pl|隊商のリーダー
+trp_caravan_master|隊商の隊長
+trp_caravan_master_pl|隊商の隊長
 trp_caravan_guard|隊商の護衛
 trp_caravan_guard_pl|隊商の護衛
 trp_messenger_man|伝令
