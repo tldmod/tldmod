@@ -29,13 +29,13 @@ str_tutorial_1_msg_5|Jak vidíte na opačně straně místnosti je terč. Vaší
 str_tutorial_1_msg_6|Dobrá práce! Naučili jste se základy pohybu a útočení. S trochou dalšího procvičování se v nich zdokonalíte. V druhém tutoriálu se můžete naučit pokročilé techniky boje a utkat se s ozbrojenými soupeři. Pro návrat do tutoriálové nabídky můžete kdykoliv stisknout klávesu Tab.
 str_tutorial_2_msg_1|Tento tutoriál Vás naučí jak se bránit pomocí štítu a jak bojovat s ozbrojenými soupeři. Prozatím jste vybaveni pouze štítem. Vaším úkolem není útočit, ale úspěšně se chránit před zraněním pomocí štítu. V další místnosti na Vás čeká ozbrojený soupeř, který se bude snažit, jak nejlépe bude moci, Vás zbít do bezvědomí. Vy se zatím musíte bránit Vaším štítem tak, že budete držet pravé tlačítko na myši. Nyní jděte do další místnosti a utkejte se s protivníkem. Nezapomeňte, že můžete kdykoliv stisknout klávesu Tab, abyste ukončili tento tutoriál, nebo opustili jakoukoliv oblast ve hře.
 str_tutorial_2_msg_2|Drž pravé tlačitko myši, aby jsi zvedl štít. Zkus takto vydržet po třicet sekund. Zbývá ti {reg3} sekund.
-; str_tutorial_2_msg_3|Well done, you've succeeded in defending against an armed opponent. The next phase of this tutorial will pit you and your shield against a force of enemy archers. Move on to the next room when you're ready to face the archers.
-; str_tutorial_2_msg_4|Defend yourself from arrows by raising your shield with the right mouse button. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
-; str_tutorial_2_msg_5|Excellent, you've put up a succesful defence against archers. There is a reward waiting for you in the next room.
-; str_tutorial_2_msg_6|In the default configuration, the F key on your keyboard is used for non-violent interaction with objects and humans in the gameworld. To pick up the sword on the altar, look at it and press F when you see the word 'Equip'.
-; str_tutorial_2_msg_7|A fine weapon! Now you can use it to deliver a bit of payback. Go back through the door and dispose of the archers you faced earlier.
-; str_tutorial_2_msg_8|Very good. Your last task before finishing this tutorial is to face the squire. Go through the door now and show him your steel!
-; str_tutorial_2_msg_9|Congratulations! You have now learned how to defend yourself with a shield and even had your first taste of combat with armed opponents. Give it a bit more practice and you'll soon be a renowned swordsman. The next tutorial covers directional defence, which is one of the most important elements of Mount&Blade combat. You can press the Tab key at any time to return to the tutorial menu.
+str_tutorial_2_msg_3|Dobrá práce, ubránil jste se proti ozbrojenému protivníkovi. Další fáze tohoto tutoriálu vám dá štít a pošle protí vám jednotku Lučistníků. Jděte do další místnosti až budete připraven čelit lučistníkům.
+str_tutorial_2_msg_4|Braň se před šípy tím že zvedneš svůj štít pravým tlačítkem myši. Zkus takto vydržet třicet sekund. Zbývá ti {reg3} sekund.
+str_tutorial_2_msg_5|Dobrá práce, Ubránil jsi se proti lukostřelcům. V další místnosti na tebe čeká odměna.
+str_tutorial_2_msg_6|V původním nastavení, tlačítko F je používáno pro interakci s objekty a lidmy v herním světě. Aby jsi zvedl měč z oltáře, koukej na něj a zmáčnki F až uvidíš nápis "vybavit",
+str_tutorial_2_msg_7|Dobrá zbraň! Teď ji můžeš použít pro menší odplatu. Jdi zpátky dveřmi, kterýma jsi přišel a zlikviduj lučištníky, kterým jsi čelil před chvílí.
+str_tutorial_2_msg_8|Velmi dobře. Tvůj poslední úkol před dokončením tutoriálu je se utkat s rytířem. Jdi skrz dveře a ukaž mu své ostří!
+str_tutorial_2_msg_9|Gratulujeme! Naučil ses jak se bránit se štítem a okusil jsi poprvé jaké je bojovat s ozbrojenými protivníky. Když budeš poctivě trénovat, brzy budeš slavný šermíř. Další výuka zahrne poziční bránění, což je jeden z nejdůležitějších elementů boje v Mount&Blade. Můžeš stisknout klávesu Tab kdykoliv, aby ses vrátil do menu výuky.
 ; str_tutorial_3_msg_1|This tutorial is intended to give you an overview of parrying and defence without a shield. Parrying attacks with your weapon is a little bit more difficult than blocking them with a shield. When you are defending with a weapon, you are only protected from one direction, the direction in which your weapon is set. If you are blocking upwards, you will parry any overhead swings coming against you, but you will not stop thrusts or attacks to your sides. Either of these attacks would still be able to hit you. That's why, in order to survive without a shield, you must learn directional defence. Go pick up up the axe now to begin practice.
 ; str_tutorial_3_msg_2|By default, the direction in which you defend (by clicking and holding your right mouse button) is determined by the attack direction of your closest opponent. For example, if your opponent is readying a thrust attack, pressing and holding the right mouse button will parry thrust attacks, but not side or overhead attacks. You must watch your opponent carefully and only initiate your parry AFTER the enemy starts to attack. If you start BEFORE he readies an attack, you may parry the wrong way altogether! Now it's time for you to move on to the next room, where you'll have to defend yourself against an armed opponent. Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple axe. Your axe's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead. Move on to the next room when you are ready to initiate the fight.
 ; str_tutorial_3_msg_3|Press and hold down the right mouse button to defend yourself with your axe after your opponent starts his attack. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
@@ -43,17 +43,17 @@ str_tutorial_2_msg_2|Drž pravé tlačitko myši, aby jsi zvedl štít. Zkus tak
 ; str_tutorial_3_msg_5|Press and hold down the right mouse button to defend yourself with your axe after your opponent starts his attack. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
 ; str_tutorial_3_msg_6|Congratulations, you still stand despite the enemy's best efforts. The time has now come to attack as well as defend. Approach the door and press the F key when you see the word 'Go'.
 ; str_tutorial_3_2_msg_1|Your axe's attacks have been enabled again. Your first opponent is waiting in the next room. Defeat him by a combination of attack and defence.
-; str_tutorial_3_2_msg_2|Defeat your opponent with your axe.
+str_tutorial_3_2_msg_2|Poraz nepřítele pomocí sekery.
 ; str_tutorial_3_2_msg_3|Excellent. Now the only thing standing in your way is one last opponent. He is in the next room. Move in and knock him down.
-; str_tutorial_3_2_msg_4|Defeat your opponent with your axe.
+str_tutorial_3_2_msg_4|Poraz nepřítele pomocí sekery.
 ; str_tutorial_3_2_msg_5|Well done! In this tutorial you have learned how to fight ably without a shield. Train hard and train well, and no one shall be able to lay a stroke on you. In the next tutorial you may learn horseback riding and cavalry combat. You can press the Tab key at any time to return to the tutorial menu.
 ; str_tutorial_4_msg_1|Welcome to the fourth tutorial. In this sequence you'll learn about riding a horse/warg and how to perform various martial exercises on horseback. We'll start by getting you mounted up. Approach the horse, and press the 'F' key when you see the word 'Mount'.
 ; str_tutorial_4_msg_2|While on horseback, the WASD keys control your horse's movement, not your own. Ride your horse and try to follow the flag around the course. When you reach the flag, it will move to the next waypoint on the course until you reach the finish.
 ; str_tutorial_4_msg_3|Very good. Next we'll cover attacking enemies from horseback. Approach the flag now.
 ; str_tutorial_4_msg_4|Draw your sword (using the mouse wheel) and destroy the four targets. Try hitting the dummies as you pass them at full gallop -- this provides an extra challenge, but the additional speed added to your blow will allow you to do more damage. The easiest way of doing this is by pressing and holding the left mouse button until the right moment, releasing it just before you pass the target.
-; str_tutorial_4_msg_5|Excellent work. Now let us try some target shooting from horseback. Go near the flag now.
+str_tutorial_4_msg_5|Skvělá práce. Teď si vyzkoušíme střelbu z koňského hřbetu. Posuň se k vlajce.
 ; str_tutorial_4_msg_6|Locate the archery target beside the riding course and shoot it three times with your bow. Although you are not required to ride while shooting, it's recommended that you try to hit the target at various speeds and angles to get a feel for how your horse's speed and course affects your aim.
-; str_tutorial_4_msg_7|Congratulations, you have finished this tutorial. You can press the Tab key at any time to return to the tutorial menu.
+str_tutorial_4_msg_7|Gratuluji dokončil jsi tento tutorial. Pro návrat do do menu tutorialu zmáčkni Tab.
 ; str_tutorial_5_msg_1|Welcome to the fifth and final tutorial, which gives you a brief overview of how to command troops in battle, one of the most important aspects in Mount & Blade.^^The first command menu that you have to learn are movement commands, which can be found by pressing the F1 key. Press that now and explore the many movement options you can give your troops in battle.^^For this first step, command your troops to follow you and move up the hill where the flag and pointer is.
 ; str_tutorial_5_msg_2|Excellent. Your troops have followed you up the hill. Now you have a good view of the battlefield.^^This time, ask your troops to hold this hill by pressing the F1 command menu again, and selecting Hold this Position (F1).^^Once you have done that, you will notice your troops stop following you and hold the position you asked them to.^^This is a good time to learn the second command menu, which revolves around troop basic formations.^^This menu allows you to command your troops to tighten up their ranks, to hold against infantry charges, or spread apart to resist archer volleys.^^Commanding your troops to move forward or backward ten paces using this command menu allows your troops to move while keeping their formation.^^After exploring the different options, keep your troops holding this hill and move alone towards the opposite hill, where the flag and the pointer is.
 ; str_tutorial_5_msg_3|Great. As you can see, your infantry is holding where you asked them to. Now, move towards the windmill by yourself.
@@ -77,8 +77,8 @@ str_cant_use_inventory_now|Teď nelze vstoupit do inventáře.
 str_cant_use_inventory_arena|V aréně nelze vstoupit do inventáře.
 str_cant_use_inventory_disguised|Nelze vstoupit do inventáře, když jsi v přestrojení.
 str_cant_use_inventory_tutorial|V trénovacím táboře nelze vstoupit do inventáře.
-str_1_denar|1 Bod Zkušeností.
-str_reg1_denars|{reg1} Body Prostředků.
+str_1_denar|1 Resource Point.
+str_reg1_denars|{reg1} Resource Pointy.
 str_january_reg1_reg2|T.A.{reg2}, Narvinyë {reg1} (Led)
 str_february_reg1_reg2|T.A.{reg2}, Nénimë {reg1} (Úno)
 str_march_reg1_reg2|T.A.{reg2}, Súlìmë {reg1} (Bře)
@@ -248,53 +248,258 @@ str_persuasion_summary_bad|Snažíš se přesvědčit {s50}, ale {reg51?she:he} 
 str_persuasion_summary_average|{s50} se osvědčil jako zkušený řečník s bystrou myslí a zdá se, že nemůžeš přednést nic konkrétního, co by {reg51?ona:on} nemohl odbýt s rozumem. Nakonec, nikdo z vás nedokáže získat vedoucí pozici v této diskuzi.
 str_persuasion_summary_good|Prostřednictvím rychlého uvažování a bezproblémové argumentace se vám podaří uvést svůj případ dobře, což nutí {s50} uznat několik bodů. Nicméně {reg51? She: she} stále vyjadřuje pochybnosti o vaší žádosti.
 ; str_persuasion_summary_very_good|You deliver an impassioned speech that echoes through all listening ears like poetry. The world itself seems to quiet down in order to hear you better . The inspiring words have moved {s50} deeply, and {reg51?she:he} looks much more well-disposed towards helping you.
+str_name_1|Adanedhel
+str_name_2|Ondoher
+str_name_3|Aerandir
+str_name_4|Agarwaen
+str_name_5|Ailinel
+str_name_6|Aldarion
+str_name_7|Almarian
+str_name_8|Amandil
+str_name_9|Amlaith
+str_name_10|Anardil
+str_name_11|Anborn
+str_name_12|Andróg
+str_name_13|Angbor
+str_name_14|Arador
+str_name_15|Araglas
+str_name_16|Arahael
+str_name_17|Arantar
+str_name_18|Arassuil
+str_name_19|Alcarin
+str_name_20|Belegund
+str_name_21|Bereg
+str_name_22|Bergil
+str_name_23|Borthand
+str_name_24|Ceorl
+str_name_25|Ciryon
+str_name_26|Damrod
+str_name_27|Derufin
+str_name_28|Dorlas
+str_name_29|Duilin
+str_name_30|Duinhir
+str_name_31|Egalmoth
+str_name_32|Emeldir
+str_name_33|Eradan
+str_name_34|Erellont
+str_name_35|Erendis
+str_name_36|Falathar
+str_name_37|Fengel
+str_name_38|Forweg
+str_name_39|Frumgar
+str_name_40|Fuinur
+str_name_41|Galdor
+str_name_42|Gethron
+str_name_43|Gorlim
+str_name_44|Grithnir
+str_name_45|Gundor
+str_name_46|Hador
+str_name_47|Haldar
+str_name_48|Hallacar
+str_name_49|Hathol
+str_name_50|Herion
+str_name_51|Hild
+str_name_52|Hunthor
+str_name_53|Imlach
+str_name_54|Ioreth
+str_name_55|Ivorwen
+str_name_56|Labadal
+str_name_57|Larnach
+str_name_58|Magor
+str_name_59|Mairen
+str_name_60|Malach
+str_name_61|Malantur
+str_name_62|Malvegil
+str_name_63|Mardil
+str_name_64|Meneldur
+str_name_65|Minalcar
+str_name_66|Minohtar
+str_name_67|Ondoher
+str_name_68|Orleg
+str_name_69|Orodreth
+str_name_70|Ostoher
+str_name_71|Pelendur
+str_name_72|Ragnor
+str_name_73|Sador
+str_name_74|Súrion
+str_name_75|Thorongil
+str_name_76|Turambar
+str_name_77|Ulfast
+str_name_78|Ulwarth
+str_name_79|Valacar
+str_name_80|Wulf
+str_name_elf_1|Merlkir
+str_name_elf_2|Romanoir
+str_name_elf_3|Aegnor
+str_name_elf_4|Amdír
+str_name_elf_5|Amras
+str_name_elf_6|Annael
+str_name_elf_7|Aredhel
+str_name_elf_8|Arminas
+str_name_elf_9|Caranthir
+str_name_elf_10|Curufin
+str_name_elf_11|Daeron
+str_name_elf_12|Eluchíl
+str_name_elf_13|Edrahil
+str_name_elf_14|Eluréd
+str_name_elf_15|Erestor
+str_name_elf_16|Faelivrin
+str_name_elf_17|Finrod
+str_name_elf_18|Felagund
+str_name_elf_19|Galathil
+str_name_elf_20|Galdor
+str_name_elf_21|Gelmir
+str_name_elf_22|Gildor
+str_name_elf_23|Guilin
+str_name_elf_24|Ithilbor
+str_name_elf_25|Lindir
+str_name_elf_26|Lómion
+str_name_elf_27|Maedhros
+str_name_elf_28|Maeglin
+str_name_elf_29|Malgalad
+str_name_elf_30|Nellas
+str_name_elf_31|Nerdanel
+str_name_elf_32|Nerwen
+str_name_elf_33|Nimloth
+str_name_elf_34|Orodreth
+str_name_elf_35|Oropher
+str_name_elf_36|Orophin
+str_name_elf_37|Saeros
+str_name_dwarf_1|Assistnik
+str_name_dwarf_2|Vader
+str_name_dwarf_3|Azaghâl
+str_name_dwarf_4|Bifur
+str_name_dwarf_5|Bofur
+str_name_dwarf_6|Bombur
+str_name_dwarf_7|Borin
+str_name_dwarf_8|Dori
+str_name_dwarf_9|Dwalin
+str_name_dwarf_10|Farin
+str_name_dwarf_11|Frár
+str_name_dwarf_12|Frerin
+str_name_dwarf_13|Frór
+str_name_dwarf_14|Gamil
+str_name_dwarf_15|Gróin
+str_name_dwarf_16|Grór
+str_name_dwarf_17|Ibun
+str_name_dwarf_18|Khîm
+str_name_dwarf_19|Lóni
+str_name_dwarf_20|Mîm
+str_name_dwarf_21|Nár
+str_name_dwarf_22|Narvi
+str_name_dwarf_23|Nori
+str_name_dwarf_24|Óin
+str_name_dwarf_25|Ori
+str_name_dwarf_26|Telchar
+str_name_dwarf_27|Marco
+str_name_dwarf_28|Octo
+str_name_orc_1|Triglav
+str_name_orc_2|Adgulg
+str_name_orc_3|Aghed
+str_name_orc_4|Aguk
+str_name_orc_5|Alog
+str_name_orc_6|Azhug
+str_name_orc_7|Bagdud
+str_name_orc_8|Bargulg
+str_name_orc_9|Bog
+str_name_orc_10|Borug
+str_name_orc_11|Bulgan
+str_name_orc_12|Bumhug
+str_name_orc_13|Carguk
+str_name_orc_14|Dalthu
+str_name_orc_15|Derthag
+str_name_orc_16|Dregu
+str_name_orc_17|Dugarod
+str_name_orc_18|Ertguth
+str_name_orc_19|Fandagh
+str_name_orc_20|Farghed
+str_name_orc_21|Fozhug
+str_name_orc_22|Furbog
+str_name_orc_23|Gholug
+str_name_orc_24|Gnalurg
+str_name_orc_25|Grug
+str_name_orc_26|Haguk
+str_name_orc_27|Hoknuk
+str_name_orc_28|Igmut
+str_name_orc_29|Jolagh
+str_name_orc_30|Jukha
+str_name_orc_31|Karguk
+str_name_orc_32|Klog
+str_name_orc_33|Krothu
+str_name_orc_34|Kulgha
+str_name_orc_35|Margulg
+str_name_orc_36|Mazhug
+str_name_orc_37|Naghat
+str_name_orc_38|Nugbu
+str_name_orc_39|Nurbag
+str_name_orc_40|Oggha
+str_name_orc_41|Olodagh
+str_name_orc_42|Omogulg
+str_name_orc_43|Opoguk
+str_name_orc_44|Orgoth
+str_name_orc_45|Perthag
+str_name_orc_46|Pofhug
+str_name_orc_47|Prutha
+str_name_orc_48|Raguk
+str_name_orc_49|Romarod
+str_name_orc_50|Rugbu
+str_name_orc_51|Sargulg
+str_name_orc_52|Slog
+str_name_orc_53|Suhgan
+str_name_orc_54|Surgha
+str_name_orc_55|Torug
+str_name_orc_56|Turbag
+str_name_orc_57|Urghat
+str_name_orc_58|Varguk
+str_name_orc_59|Zlog
+str_name_orc_60|Zunuguk
 str_surname_1|{s50} z Tarnostu
 str_surname_2|{s50} z Lossarnachu
 str_surname_3|{s50} z Erechu
 str_surname_4|{s50} z Edhellondu
-; str_surname_5|{s50} of Pelargir
-; str_surname_6|{s50} of Linhir
-; str_surname_7|{s50} of Ethring
-; str_surname_8|{s50} of Aldburg
-; str_surname_9|{s50} of Isengard
-; str_surname_10|{s50} of Westfold
-; str_surname_11|{s50} of Erebor
-; str_surname_12|{s50} of Eastfold
-; str_surname_13|{s50} of Morannon
-; str_surname_14|{s50} of Cirith Ungol
-; str_surname_15|{s50} of Osgiliath
-; str_surname_16|{s50} of Moria
-; str_surname_17|{s50} of Dale
-; str_surname_18|{s50} of Esgaroth
-; str_surname_19|{s50} of Dol Guldur
-; str_surname_20|{s50} of Gundabad
-; str_surname_21|{s50} the Long
-; str_surname_22|{s50} the Gaunt
-; str_surname_23|{s50} the Nazgul
-; str_surname_24|{s50} the Sparrow
-; str_surname_25|{s50} the Cursed
-; str_surname_26|{s50} the Scarred
-; str_surname_27|{s50} the Fair
-; str_surname_28|{s50} the Grim
-; str_surname_29|{s50} the Red
-; str_surname_30|{s50} the Black
-; str_surname_31|{s50} the Tall
-; str_surname_32|{s50} the Star-Eyed
-; str_surname_33|{s50} the Fearless
-; str_surname_34|{s50} the Tree-biter
-; str_surname_35|{s50} the Cunning
-; str_surname_36|{s50} the Coward
-; str_surname_37|{s50} the Bright
-; str_surname_38|{s50} the Quick
-; str_surname_39|{s50} the Minstrel
-; str_surname_40|{s50} the Bold
-; str_surname_41|{s50} the Hot-Head
+str_surname_5|{s50} z Pelargiru
+str_surname_6|{s50} z Linhiru
+str_surname_7|{s50} z Ethringu
+str_surname_8|{s50} z Aldburgu
+str_surname_9|{s50} z Železného pasu
+str_surname_10|{s50} z Westfoldu
+str_surname_11|{s50} z Ereboru
+str_surname_12|{s50} z Východního úvalu
+str_surname_13|{s50} z Morannonu
+str_surname_14|{s50} z Cirith Ungol
+str_surname_15|{s50} z Osgiliathu
+str_surname_16|{s50} z Morie
+str_surname_17|{s50} z Dolu
+str_surname_18|{s50} z Esgarothu
+str_surname_19|{s50} z Dol Gulduru
+str_surname_20|{s50} z Gundabadu
+str_surname_21|{s50} Dlouhý
+str_surname_22|{s50} Vyzáblý
+str_surname_23|Nazgul {s50}
+str_surname_24|Sparrow {s50}
+str_surname_25|{s50} Prokletý
+str_surname_26|{s50} Zjizvený
+str_surname_27|{s50} Poctivý
+str_surname_28|{s50} Ponurý
+str_surname_29|{s50} Červený
+str_surname_30|{s50} Černý
+str_surname_31|{s50} Vysoký
+str_surname_32|{s50} Hvězdné oko
+str_surname_33|{s50} Nebojácný
+str_surname_34|{s50} Dřevorubec
+str_surname_35|{s50} Mazaný
+str_surname_36|{s50} Zbabělec
+str_surname_37|{s50} Veselý
+str_surname_38|{s50} Rychlý
+str_surname_39|{s50} Básník
+str_surname_40|{s50} Drzý
+str_surname_41|{s50} Horká hlava
 str_number_of_troops_killed_reg1|Zabito jednotek: {reg1}
 str_number_of_troops_wounded_reg1|Zraneno jednotek: {reg1}
 str_number_of_own_troops_killed_reg1|Zabito spojeneckych jednotek: {reg1}
 str_number_of_own_troops_wounded_reg1|Zraneno spojeneckych jednotek: {reg1}
 str_retreat|Ustup!
-; str_siege_continues|Fighting Continues...
+str_siege_continues|Bojování pokračuje...
 str_casualty_display|Tvoje ztraty: {s10}^Nepratelske ztraty: {s11}{s12}
 str_casualty_display_hp|Byl jsi zranen za {reg1} HP.
 str_quest_log_updated|Seznam úkolů je aktualizován...
@@ -314,8 +519,8 @@ str_steal_from_villagers|krast od chudych vesnicanu
 str_rob_caravan|okrast obchodni karavanu
 str_sell_slavery|prodat lidi do otroctvi
 str_men_hungry|doslo nam jidlo
-; str_men_unpaid|not be able to pay the men
-; str_excessive_casualties|sacrifice so many of our soldiers
+str_men_unpaid|neschopný platit mužům
+str_excessive_casualties|obětoval tolik našich vojáků
 str_surrender|vzdat se nepriteli
 str_flee_battle|utect z bitvy
 ; str_pay_bandits|pay off common bandits
@@ -335,9 +540,9 @@ str_battle_fate_5|Byl jsem zajat, ale pozdeji se mi podarilo uteci.
 ; str_not_happy|not at all happy about
 ; str_miserable|downright appalled at
 str_morale_reg1|Moralka: {reg1}
-; str_bar_enthusiastic|                   Enthusiastic
-; str_bar_content|              Content
-; str_bar_weary|          Weary
+str_bar_enthusiastic|                   Nadšený
+str_bar_content|              Obsah
+str_bar_weary|          Slabý
 ; str_bar_disgruntled|     Disgruntled
 ; str_bar_miserable|  Miserable
 str_here_plus_space|zde
@@ -457,7 +662,7 @@ str_npc2_backstory_b|Byl jsem vytrenovan jako strazce Minas Tirith, abych udrzov
 ; str_npc12_backstory_later|I have my orders. Any trespasser found by my lads up here are to be stripped; teeth, nails, hair and all. But I've got my watchers. We know there are funny things going on: with the big bosses going off to war, and all that. Big things going on away west, they say. Sitting here doin' nothing is more than my belly's worth.
 ; str_npc13_backstory_later|My role here goes well for the dark cause, and once more the Northerners fear the south. I see great victories ahead, and rivers of blood left in our wake. But with each victory I see my kin corrupted, their hearts twisted to his evil will. The sight of it leads me to despair.
 ; str_npc14_backstory_later|You have returned stranger, it is perhaps an omen. I have been reading the waters, and I have seen them darken. The sea changes the eyes of a man, and teaches him to use his eyes to listen to her language.
-; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions. Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions.   Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
 ; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
 ; str_npc17_backstory_later|I've seen a very old pine the other day. Pines can get very old. You have to respect old trees. But I've also seen some that don't respect trees at all. You respect trees, don't you?
 ; str_npc1_backstory_response_1|If you can get leave, I have much need of an experienced warrior and a tracker.
@@ -469,7 +674,7 @@ str_npc2_backstory_b|Byl jsem vytrenovan jako strazce Minas Tirith, abych udrzov
 ; str_npc7_backstory_response_1|Indeed, a dwarven warrior would be welcome in my company.
 ; str_npc8_backstory_response_1|We can use a healer and a herbalist.
 ; str_npc9_backstory_response_1|I reckon we could put a berserker to a good use.
-; str_npc10_backstory_response_1|You will do.
+str_npc10_backstory_response_1|Ty to uděláš
 ; str_npc11_backstory_response_1|How 'bout loping off with me?
 ; str_npc12_backstory_response_1|How 'bout slippin' off with me.
 ; str_npc13_backstory_response_1|How about following me?
@@ -537,11 +742,11 @@ str_npc17_backstory_response_2|Ne omlouvám se. Jdeme do války ne na botanickou
 ; str_npc7_signup_response_1|Very well, Master Dwarf, you are welcome to join us.
 ; str_npc8_signup_response_1|You will be safe with us, I promise. We will be leaving shortly.
 ; str_npc9_signup_response_1|Very good. Do as you are told, and I'll feed you well.
-; str_npc10_signup_response_1|Very well. Let's go.
-; str_npc11_signup_response_1|Very well. Let's go.
+str_npc10_signup_response_1|Velmi dobře. Pojďme
+str_npc11_signup_response_1|Velmi dobře. Pojďme
 ; str_npc12_signup_response_1|I reckon we could put you to good use.
 ; str_npc13_signup_response_1|I reckon we could put you to good use.
-; str_npc14_signup_response_1|Very well. Let's go.
+str_npc14_signup_response_1|Velmi dobře. Pojďme
 ; str_npc15_signup_response_1|Hmmm. I admire your... confidence. Get your gear together.
 ; str_npc16_signup_response_1|How about following me?
 ; str_npc17_signup_response_1|Great! I hope you won't talk of trees all the time though.
@@ -554,11 +759,11 @@ str_npc17_backstory_response_2|Ne omlouvám se. Jdeme do války ne na botanickou
 ; str_npc7_signup_response_2|Sorry, I happen to like Elves.
 ; str_npc8_signup_response_2|I'm sorry, everyone fights in my company.
 ; str_npc9_signup_response_2|I've changed my mind. Whoever is looking for you might come for me next.
-; str_npc10_signup_response_2|I've changed my mind.
+str_npc10_signup_response_2|Změnil jsem názor.
 str_npc11_signup_response_2|Nepotřebuji tě otroku.
-; str_npc12_signup_response_2|I've changed my mind.
-; str_npc13_signup_response_2|I've changed my mind.
-; str_npc14_signup_response_2|I've changed my mind.
+str_npc12_signup_response_2|Změnil jsem názor.
+str_npc13_signup_response_2|Změnil jsem názor.
+str_npc14_signup_response_2|Změnil jsem názor.
 ; str_npc15_signup_response_2|Actually, I think I'll look for a real healer and not a braggart.
 str_npc16_signup_response_2|Mám toho dost.
 ; str_npc17_signup_response_2|On the other hand, I think I've changed my mind. You're a bit of a nut, aren't you?
@@ -608,107 +813,107 @@ str_npc16_payment_response|Ctim predky, tvoje i svoje. [stoji {reg14}/{reg15} Vl
 ; str_npc1_2ary_morality_speech|Captain, I have been raised as a Dúnadan, both in valor and honour. I would prefer if we don't {s21}.
 ; str_npc4_2ary_morality_speech|Your pardon, commander. Women of my station will accept death but not dishonour. To {s21} brings shame to my house and ancestors.
 ; str_npc15_2ary_morality_speech|Hi-hi-hi! You are cunning, Oh Lord! You take the gold, and nod, and say 'yes master' but all the time you planned this! Hi-Hi! Only, we must be careful, that The Big One does not see you deceiving him...
-; str_npc1_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc2_personalityclash_speech|Did I mention I hate {s11}?
+str_npc1_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc2_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
 ; str_npc3_personalityclash_speech|Commander, how come we ended up with {s11} in our company? He's nimble enough on foot, I reckon, but he talks of ambushes too often for my liking - not unlike the cautious nature of his people.
-; str_npc4_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc5_personalityclash_speech|Did I mention I hate {s11}?
+str_npc4_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc5_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
 ; str_npc6_personalityclash_speech|{playername}, I just saw {s11} walk brazenly over a nest of young birds. His clumsiness destroyed the young lives of innocent creatures.
 ; str_npc7_personalityclash_speech|Lord {s11} does well in a battle, but I wonder if he blinds the enemy by the shine of his hair? Or they fall in awe of his fame and uppity demeanor?
 ; str_npc8_personalityclash_speech|Commander, I must lodge a complaint against {s11}. He continues to pester me about making him a certain brew called 'the green fairy'.
-; str_npc9_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc10_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc11_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc12_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc13_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc14_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc15_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc16_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc17_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc1_personalityclash_speech_b|I hate {s11}.
-; str_npc2_personalityclash_speech_b|I hate {s11}.
+str_npc9_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc10_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc11_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc12_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc13_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc14_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc15_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc16_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc17_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc1_personalityclash_speech_b|Nenávidím {s11}.
+str_npc2_personalityclash_speech_b|Nenávidím {s11}.
 ; str_npc3_personalityclash_speech_b|I don't have a quarrel with the people of Gondor, but we would do better with more bold horsemen and less reluctant ground-huggers, if you catch my drift.
-; str_npc4_personalityclash_speech_b|I hate {s11}.
-; str_npc5_personalityclash_speech_b|I hate {s11}.
+str_npc4_personalityclash_speech_b|Nenávidím {s11}.
+str_npc5_personalityclash_speech_b|Nenávidím {s11}.
 ; str_npc6_personalityclash_speech_b|His dwarven ways may serve him well underground, albeit it's a wonder he hasn't fallen down an ugly shaft. Maybe he should have.
 ; str_npc7_personalityclash_speech_b|We would do better with a dwarven hero, someone like Durin the Deathless of old, and let the Elves prance around their forests.
 ; str_npc8_personalityclash_speech_b|It is made from wormwood soaked in liquor and apparently favored by minstrels and vagrants for seeing things that are not there. I doubt you'll approve of your soldiers chasing air on the battlefield, as much as it may be amusing to watch.
-; str_npc9_personalityclash_speech_b|I hate {s11}.
-; str_npc10_personalityclash_speech_b|I hate {s11}.
-; str_npc11_personalityclash_speech_b|I hate {s11}.
-; str_npc12_personalityclash_speech_b|I hate {s11}.
-; str_npc13_personalityclash_speech_b|I hate {s11}.
-; str_npc14_personalityclash_speech_b|I hate {s11}.
-; str_npc15_personalityclash_speech_b|I hate {s11}.
-; str_npc16_personalityclash_speech_b|I hate {s11}.
-; str_npc17_personalityclash_speech_b|I hate {s11}.
-; str_npc1_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc2_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc3_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc4_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc5_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc6_personalityclash2_speech|Did I mention I hate {s11}?
+str_npc9_personalityclash_speech_b|Nenávidím {s11}.
+str_npc10_personalityclash_speech_b|Nenávidím {s11}.
+str_npc11_personalityclash_speech_b|Nenávidím {s11}.
+str_npc12_personalityclash_speech_b|Nenávidím {s11}.
+str_npc13_personalityclash_speech_b|Nenávidím {s11}.
+str_npc14_personalityclash_speech_b|Nenávidím {s11}.
+str_npc15_personalityclash_speech_b|Nenávidím {s11}.
+str_npc16_personalityclash_speech_b|Nenávidím {s11}.
+str_npc17_personalityclash_speech_b|Nenávidím {s11}.
+str_npc1_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc2_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc3_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc4_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc5_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc6_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
 ; str_npc7_personalityclash2_speech|A nice little scrap, eh captain? If only slightly ruined by the conduct of that Elf-woman {s11}.
-; str_npc8_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc9_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc10_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc11_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc12_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc13_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc14_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc15_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc16_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc17_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc1_personalityclash2_speech_b|I hate {s11}.
-; str_npc2_personalityclash2_speech_b|I hate {s11}.
-; str_npc3_personalityclash2_speech_b|I hate {s11}.
-; str_npc4_personalityclash2_speech_b|I hate {s11}.
-; str_npc5_personalityclash2_speech_b|I hate {s11}.
-; str_npc6_personalityclash2_speech_b|I hate {s11}.
+str_npc8_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc9_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc10_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc11_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc12_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc13_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc14_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc15_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc16_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc17_personalityclash2_speech|Zmínil jsem že nenávidím {s11}?
+str_npc1_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc2_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc3_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc4_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc5_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc6_personalityclash2_speech_b|Nenávidím {s11}.
 ; str_npc7_personalityclash2_speech_b|I saw her cowering in the rear, barely releasing an arrow or two in the general direction of the enemy. I say let her go to take care of the birds and bees, so we can go on with the bloody work of slaying the enemy.
-; str_npc8_personalityclash2_speech_b|I hate {s11}.
-; str_npc9_personalityclash2_speech_b|I hate {s11}.
-; str_npc10_personalityclash2_speech_b|I hate {s11}.
-; str_npc11_personalityclash2_speech_b|I hate {s11}.
-; str_npc12_personalityclash2_speech_b|I hate {s11}.
-; str_npc13_personalityclash2_speech_b|I hate {s11}.
-; str_npc14_personalityclash2_speech_b|I hate {s11}.
-; str_npc15_personalityclash2_speech_b|I hate {s11}.
-; str_npc16_personalityclash2_speech_b|I hate {s11}.
-; str_npc17_personalityclash2_speech_b|I hate {s11}.
+str_npc8_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc9_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc10_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc11_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc12_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc13_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc14_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc15_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc16_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc17_personalityclash2_speech_b|Nenávidím {s11}.
 ; str_npc1_personalitymatch_speech|Have you noticed the grace of {s11} in that last battle? The way she moves around the enemy just before striking the final blow? It's like the stories of old, when elven maidens displayed as much poise on the battlefield as in their beautiful forest courts.
 ; str_npc2_personalitymatch_speech|Excuse me, commander. I was just helping {s11} with minor weapon repairs after that last scrap, and he even promised to teach me how to improve my strikes.
 ; str_npc3_personalitymatch_speech|Is not a Rohan shieldmaiden in full charge a sight to behold? Granted, our womenfolk are better off by the hearth, but after seeing {s11} strike down the enemy in that last battle, I'm beginning to have doubts.
 ; str_npc4_personalitymatch_speech|A battle of great deeds, commander, and my congratulations on the victory. I noticed how {s11} quietly and surely took care of the wounded and ailing, even as the last of the enemy got what they deserved.
-; str_npc5_personalitymatch_speech|Did I mention I like {s11}?
+str_npc5_personalitymatch_speech|Zmínil jsem že mám rád {s11}?
 ; str_npc6_personalitymatch_speech|{playername}, as much as I hate battles, I can't help but notice my Lord {s11} riding out in full splendor and bearing down on the ugly creatures like a hawk.
 ; str_npc7_personalitymatch_speech|Bloody and victorious, just as I like it! I did, however, sustain a flesh wound that {s11} was kind enough to bandage promptly.
 ; str_npc8_personalitymatch_speech|Another victory for you, commander, and I admire your skill in sparing the lives of our men. Warriors like {s11} seem to be of great use in your battle plans.
-; str_npc9_personalitymatch_speech|Did I mention I like {s11}?
-; str_npc10_personalitymatch_speech|Did I mention I like {s11}?
-; str_npc11_personalitymatch_speech|Did I mention I like {s11}?
-; str_npc12_personalitymatch_speech|Did I mention I like {s11}?
-; str_npc13_personalitymatch_speech|Did I mention I like {s11}?
-; str_npc14_personalitymatch_speech|Did I mention I like {s11}?
-; str_npc15_personalitymatch_speech|Did I mention I like {s11}?
-; str_npc16_personalitymatch_speech|Did I mention I like {s11}?
+str_npc9_personalitymatch_speech|Zmínil jsem že mám rád {s11}?
+str_npc10_personalitymatch_speech|Zmínil jsem že mám rád {s11}?
+str_npc11_personalitymatch_speech|Zmínil jsem že mám rád {s11}?
+str_npc12_personalitymatch_speech|Zmínil jsem že mám rád {s11}?
+str_npc13_personalitymatch_speech|Zmínil jsem že mám rád {s11}?
+str_npc14_personalitymatch_speech|Zmínil jsem že mám rád {s11}?
+str_npc15_personalitymatch_speech|Zmínil jsem že mám rád {s11}?
+str_npc16_personalitymatch_speech|Zmínil jsem že mám rád {s11}?
 ; str_npc17_personalitymatch_speech|Umm, chief. I think {s11} could make it well in the woods. Can tell an ash from a willow.
 ; str_npc1_personalitymatch_speech_b|I find the company of {s11} very pleasing and her native woodcraft a rare glimpse of what remains of Sindarin skills in the world. You know, my father named me after the legendary Sindarin Elf captain serving King Thingol of Doriath and I always feel a special bond to the fair race.
 ; str_npc2_personalitymatch_speech_b|My folks at home always told me stories about the Ithilien Rangers and now I can see for myself they are all true. If they are all like {s11}, I feel Gondor is safer for it.
 ; str_npc3_personalitymatch_speech_b|Commander, as a personal favour, might I ask if you can order {s11} to stay more to the rear in the next battle? I could not stand to see her harmed, and it's not the ale talking.
 ; str_npc4_personalitymatch_speech_b|To preserve lives is the noblest deed, and I feel kinship with that kind soul, even if our worlds are far apart.
-; str_npc5_personalitymatch_speech_b|I like {s11}.
+str_npc5_personalitymatch_speech_b|Mám rád {s11}.
 ; str_npc6_personalitymatch_speech_b|I wonder just how old is he. Maybe a dozen of centuries older than me? Never mind, you wouldn't understand.
 ; str_npc7_personalitymatch_speech_b|{s11} and her Dale-kin, even if not quite up to dwarven warrior standards, have proven to be steadfast allies in this War. A good choice for a friend and companion among Men, if I may say so.
 ; str_npc8_personalitymatch_speech_b|The people of Dale have a deep regard for the hardy Lonely Mountain Dwarven-folk, as friends and protectors despite our different race and customs.
-; str_npc9_personalitymatch_speech_b|I like {s11}.
-; str_npc10_personalitymatch_speech_b|I like {s11}.
-; str_npc11_personalitymatch_speech_b|I like {s11}.
-; str_npc12_personalitymatch_speech_b|I like {s11}.
-; str_npc13_personalitymatch_speech_b|I like {s11}.
-; str_npc14_personalitymatch_speech_b|I like {s11}.
-; str_npc15_personalitymatch_speech_b|I like {s11}.
-; str_npc16_personalitymatch_speech_b|I like {s11}.
+str_npc9_personalitymatch_speech_b|Mám rád {s11}.
+str_npc10_personalitymatch_speech_b|Mám rád {s11}.
+str_npc11_personalitymatch_speech_b|Mám rád {s11}.
+str_npc12_personalitymatch_speech_b|Mám rád {s11}.
+str_npc13_personalitymatch_speech_b|Mám rád {s11}.
+str_npc14_personalitymatch_speech_b|Mám rád {s11}.
+str_npc15_personalitymatch_speech_b|Mám rád {s11}.
+str_npc16_personalitymatch_speech_b|Mám rád {s11}.
 ; str_npc17_personalitymatch_speech_b|My people get along well with the Woodelves. They like trees too. I like trees too. We all like trees.
 ; str_npc1_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
 ; str_npc2_retirement_speech|I'm getting a bit tired of the warrior's life, I'll retire.
@@ -736,13 +941,13 @@ str_npc16_payment_response|Ctim predky, tvoje i svoje. [stoji {reg14}/{reg15} Vl
 ; str_npc7_rehire_speech|My axe is ready, {playername}. Shall I rejoin you?
 ; str_npc8_rehire_speech|You are a welcome sight. Shall I join you once again?
 ; str_npc9_rehire_speech|Gulm is ready to kill for you again. Are we going?
-; str_npc10_rehire_speech|Can I serve you once again?
-; str_npc11_rehire_speech|Can I serve you once again?
-; str_npc12_rehire_speech|Can I serve you once again?
-; str_npc13_rehire_speech|Can I serve you once again?
-; str_npc14_rehire_speech|Can I serve you once again?
+str_npc10_rehire_speech|Mohu ti zase posloužit?
+str_npc11_rehire_speech|Mohu ti zase posloužit?
+str_npc12_rehire_speech|Mohu ti zase posloužit?
+str_npc13_rehire_speech|Mohu ti zase posloužit?
+str_npc14_rehire_speech|Mohu ti zase posloužit?
 ; str_npc15_rehire_speech|Aah, Great Lord! I have searched so long for you, as word of your glorious deeds rings across Middle Earth! Surely you have missed my skills? You will welcome me once more to complete your Great Army?
-; str_npc16_rehire_speech|Can I serve you once again?
+str_npc16_rehire_speech|Mohu ti zase posloužit?
 ; str_npc17_rehire_speech|Hey. Time to move on again? Trees don't move much. But I like to move. But I like trees too.
 ; str_npc1_home_intro|Captain, we are approaching Osgiliath now, so let us be on the lookout for friend and foe alike.
 ; str_npc2_home_intro|Be vigilant, commander, that must be Minas Morgul over there. Do you feel that something is watching us?
@@ -753,13 +958,13 @@ str_npc16_payment_response|Ctim predky, tvoje i svoje. [stoji {reg14}/{reg15} Vl
 ; str_npc7_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
 ; str_npc8_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
 ; str_npc9_home_intro|Curses! That must be Hornburg over there, master.
-; str_npc10_home_intro|Hey, look!
-; str_npc11_home_intro|Hey, look!
-; str_npc12_home_intro|Hey, look!
-; str_npc13_home_intro|Hey, look!
-; str_npc14_home_intro|Hey, look!
-; str_npc15_home_intro|Hey, look!
-; str_npc16_home_intro|Hey, look!
+str_npc10_home_intro|Hej, podívej!
+str_npc11_home_intro|Hej, podívej!
+str_npc12_home_intro|Hej, podívej!
+str_npc13_home_intro|Hej, podívej!
+str_npc14_home_intro|Hej, podívej!
+str_npc15_home_intro|Hej, podívej!
+str_npc16_home_intro|Hej, podívej!
 ; str_npc17_home_intro|Ooooo, mallorns grow here! One should never cut down a mallorn, they're just too beautiful!
 ; str_npc1_home_description|It was a fair city once, the capital of Gondor of old, full of people and laughter. Now it lies deserted and ruined, the old Anduin flowing wearily through a ghost town.
 ; str_npc2_home_description|It was called Minas Ithil many years ago, and stories are told of how moonlight filled its inner courts with silver light and its walls gleamed silver and white. Gondor watchmen peered over the walls to the east and kept watch beyond Ephel Dúath.
@@ -818,7 +1023,7 @@ str_npc3_honorific|velitel
 str_npc4_honorific|velitel
 str_npc5_honorific|velitel
 str_npc6_honorific|valecnik
-; str_npc7_honorific|captain
+str_npc7_honorific|kapitán
 str_npc8_honorific|velitel
 str_npc9_honorific|Mistr
 str_npc10_honorific|Mistr
@@ -1202,19 +1407,19 @@ str_theater_sw|Rohan
 ; str_party_greet_friend_gondor|Hail, friend of the White Tree!
 ; str_party_greet_enemy_gondor|Draw your swords if you dare, enemies of Gondor!
 ; str_party_greet_friend_dwarf|Hail from the Durin's folk, dwarf-friend!
-; str_party_greet_enemy_dwarf|Baruk Khazâd! Khazâd ai-mênu!
+str_party_greet_enemy_dwarf|Baruk Khazâd! Khazâd ai-mênu!
 ; str_party_greet_friend_rohan|Hail and well met, Rohirrim friend!
 ; str_party_greet_enemy_rohan|The Riders of Rohan are here to challenge you!
 ; str_party_greet_friend_mordor|Victory for the Eye!
 ; str_party_greet_enemy_mordor|Your heads will look nice on the gates of Morannon!
 ; str_party_greet_friend_isengard|Hail the White Hand!
-; str_party_greet_enemy_isengard|The Wise Master shall be pleased when I show him your bodies!
+str_party_greet_enemy_isengard|Můj Pán bude potěšen až mu ukážu vaše mrtvá těla!
 ; str_party_greet_friend_lorien|Hail, friend of fair Lorien!
 ; str_party_greet_enemy_lorien|Foul thing, we will put an end to your suffering!
 ; str_party_greet_friend_imladris|Hail, friend of Imladris and Elrond!
 ; str_party_greet_enemy_imladris|Today we make battle, enemies of Imladris and all that is fair!
 ; str_party_greet_friend_woodelf|Hail, friend of the Silvan Elves of Mirkwood!
-; str_party_greet_enemy_woodelf|All who enter Mirkwood with malice shall never leave!
+str_party_greet_enemy_woodelf|Každý, kdo vstoupí do Temného hvozdu se zlobou se nikdy nevrátí!
 ; str_party_greet_friend_dale|Hail, friend of proud Dale!
 ; str_party_greet_enemy_dale|Draw your swords, we are the Men of Dale!
 ; str_party_greet_friend_harad|Welcome, friend of the Haradrim!
@@ -1499,281 +1704,281 @@ str_subfaction_gondor_name6|Morthond
 ; str_ent_rumor_begin|Do not be hasty now...
 ; str_ent_rumor_2|Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses.
 ; str_ent_rumor_3|The Old Entish is a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to.
-; str_gondor_rank_0|Commoner of Gondor
-; str_gondor_rank_1|Soldier of Gondor
-; str_gondor_rank_2|Sergeant of Gondor
+str_gondor_rank_0|Prostý občan Gondoru
+str_gondor_rank_1|Voják Gondoru
+str_gondor_rank_2|Seržant Gondoru
 str_gondor_rank_3|Rytíř Gondoru
-; str_gondor_rank_4|Tower Guard of Gondor
-; str_gondor_rank_5|Citadel Knight of Gondor
-; str_gondor_rank_6|Steward's Guard of Gondor
-; str_gondor_rank_7|Captain of Gondor
-; str_gondor_rank_8|Champion of Gondor
-; str_gondor_rank_9|Hero of Gondor
-; str_dwarf_rank_0|Dwarven Greenbeard
-; str_dwarf_rank_1|Dwarven Miner
-; str_dwarf_rank_2|Dwarven Warrior
-; str_dwarf_rank_3|Dwarven Longbeard
-; str_dwarf_rank_4|Dwarven Axe
-; str_dwarf_rank_5|Dwarven Master Axe
-; str_dwarf_rank_6|Dwarven Greybeard
-; str_dwarf_rank_7|Dwarven Captain
-; str_dwarf_rank_8|Dwarven Chief
-; str_dwarf_rank_9|Hero of the Halls
-; str_rohan_rank_0|Ceorl, Commoner of Rohan
-; str_rohan_rank_1|Thain, Servant of Rohan
-; str_rohan_rank_2|Léod, Freeman of Rohan
-; str_rohan_rank_3|Rohir, Rider of Rohan
-; str_rohan_rank_4|Scyldbora, Shieldbearer of Rohan
-; str_rohan_rank_5|Swéordbora, Swordbearer of Rohan
-; str_rohan_rank_6|Frumgar, First Spear of Rohan
-; str_rohan_rank_7|Bealdoraed, Master Adviser of Rohan
-; str_rohan_rank_8|Eorl, Nobleman of Rohan
-; str_rohan_rank_9|Haleth, Hero of Rohan
-; str_mordor_rank_0|Worm
-; str_mordor_rank_1|Snaga
-; str_mordor_rank_2|Backstabber of Gorgoroth
-; str_mordor_rank_3|Sentry of Cirith Ungol
-; str_mordor_rank_4|Slavedriver of Udûn
-; str_mordor_rank_5|Despoiler of Durthang
-; str_mordor_rank_6|Watchman of Morannon
-; str_mordor_rank_7|Captain of Minas Morgul
-; str_mordor_rank_8|Commander of Barad-dûr
-; str_mordor_rank_9|Scourge of Mankind
-; str_isengard_rank_0|Rat
-; str_isengard_rank_1|Snaga
-; str_isengard_rank_2|Crankturner
-; str_isengard_rank_3|Treeburner
-; str_isengard_rank_4|Wargfeeder
-; str_isengard_rank_5|Ironsmelter
-; str_isengard_rank_6|Forgemaster
-; str_isengard_rank_7|Captain of Orthanc
-; str_isengard_rank_8|Commander of Legions
-; str_isengard_rank_9|White Right Hand of the Wizard
-; str_lorien_rank_0|Sador, Faithful to Lorien
-; str_lorien_rank_1|Tauron, Forester of Lorien
-; str_lorien_rank_2|Mifaron, Grey Hunter of Lorien
-; str_lorien_rank_3|Thindirith, Grey Guard of Lorien
-; str_lorien_rank_4|Thangyl, Shieldbearer of Lorien
-; str_lorien_rank_5|Maglagyl, Swordbearer of Lorien
-; str_lorien_rank_6|Tiribrannon, Warden of Lorien
-; str_lorien_rank_7|Glaurchir, Grandmaster of Lorien
-; str_lorien_rank_8|Galadhîr, Radiant Lord of Lorien
-; str_lorien_rank_9|Thalion, Hero of Lorien
-; str_imladris_rank_0|Háno, Brother of Imladris
-; str_imladris_rank_1|Macar, Warrior of Imladris
-; str_imladris_rank_2|Sindacollo, Grey Cloak of Imladris
-; str_imladris_rank_3|Luinëcollo, Blue Cloak of Imladris
-; str_imladris_rank_4|Turmacolindo, Shieldbearer of Imladris
-; str_imladris_rank_5|Langocolindo, Swordbearer of Imladris
-; str_imladris_rank_6|Aráto, Champion of Imladris
-; str_imladris_rank_7|Hesto, Captain of Imladris
-; str_imladris_rank_8|Runando, Redeemer of Imladris
-; str_imladris_rank_9|Callo, Hero of Imladris
-; str_woodelf_rank_0|Sador, Faithful to Greenwood
-; str_woodelf_rank_1|Tauron, Forester of Greenwood
-; str_woodelf_rank_2|Hirfaron, Master Hunter of Greenwood
-; str_woodelf_rank_3|Calendirith, Green Guard of Greenwood
-; str_woodelf_rank_4|Thangyl, Shieldbearer of Greenwood
-; str_woodelf_rank_5|Maglagyl, Swordbearer of Greenwood
-; str_woodelf_rank_6|Tiribrannon, Warden of Greenwood
-; str_woodelf_rank_7|Pengherdir, Bowmaster of Greenwood
-; str_woodelf_rank_8|Armagor, Royal Swordsman of Greenwood
-; str_woodelf_rank_9|Thalion, Hero of Greenwood
-; str_dale_rank_0|Commoner of Dale
-; str_dale_rank_1|Freeman of Dale
-; str_dale_rank_2|Soldier of Dale
-; str_dale_rank_3|Boatman of Dale
-; str_dale_rank_4|Shieldbearer of Dale
-; str_dale_rank_5|Swordbearer of Dale
-; str_dale_rank_6|Barding, Archer of Dale
-; str_dale_rank_7|Captain of Dale
-; str_dale_rank_8|Lake Master of Dale
-; str_dale_rank_9|Hero of Dale
-; str_harad_rank_0|Initiate of the Tribe
-; str_harad_rank_1|Adult of the Tribe
-; str_harad_rank_2|Warrior of the Tribe
-; str_harad_rank_3|Lionslayer
-; str_harad_rank_4|Snakecharmer
-; str_harad_rank_5|Mumakil Handler
-; str_harad_rank_6|Black Snake Guard
-; str_harad_rank_7|Captain of Harondor
-; str_harad_rank_8|General of the Great Desert
-; str_harad_rank_9|The Golden Serpent
-; str_rhun_rank_0|Plainsman of Rhun
-; str_rhun_rank_1|Serf of Rhun
-; str_rhun_rank_2|Warrior of Rhun
-; str_rhun_rank_3|Bull Warrior of Rhun
-; str_rhun_rank_4|Shieldbearer of Rhun
-; str_rhun_rank_5|Swordbearer of Rhun
-; str_rhun_rank_6|Horsemaster of Rhun
-; str_rhun_rank_7|Warlord of Rhun
-; str_rhun_rank_8|Chief of the Steppe Clans
-; str_rhun_rank_9|Khamûl's Right Hand
-; str_khand_rank_0|Plainsman of Khand
-; str_khand_rank_1|Serf of Khand
-; str_khand_rank_2|Warrior of Khand
-; str_khand_rank_3|Hawk Warrior of Khand
-; str_khand_rank_4|Shieldbearer of Khand
-; str_khand_rank_5|Swordbearer of Khand
-; str_khand_rank_6|Horsemaster of Khand
-; str_khand_rank_7|Warlord of the Variags
-; str_khand_rank_8|Chief of the Variag Clans
-; str_khand_rank_9|Legendary Conqueror
-; str_umbar_rank_0|Landlubber
-; str_umbar_rank_1|Deck Hand
-; str_umbar_rank_2|Sailor
-; str_umbar_rank_3|Harpooner
-; str_umbar_rank_4|Throatcutter
-; str_umbar_rank_5|Plunderer
-; str_umbar_rank_6|Sailmaster
-; str_umbar_rank_7|Captain of Umbar
-; str_umbar_rank_8|Commander of the Fleet
-; str_umbar_rank_9|Grand Admiral of the Seas
-; str_moria_rank_0|Maggot
-; str_moria_rank_1|Snaga
-; str_moria_rank_2|Tunnel Rat
-; str_moria_rank_3|Cave Forager
-; str_moria_rank_4|Plunderer of the Mines
-; str_moria_rank_5|Despoiler of the Halls
-; str_moria_rank_6|Dwarfbane
-; str_moria_rank_7|Goblin Warlord
-; str_moria_rank_8|Goblin Chief
-; str_moria_rank_9|Terror from the Deep
-; str_guldur_rank_0|Worm
-; str_guldur_rank_1|Snaga
-; str_guldur_rank_2|Backstabber of Gorgoroth
-; str_guldur_rank_3|Sentry of Cirith Ungol
-; str_guldur_rank_4|Slavedriver of Udûn
-; str_guldur_rank_5|Despoiler of Durthang
-; str_guldur_rank_6|Watchman of Morannon
-; str_guldur_rank_7|Captain of Minas Morgul
-; str_guldur_rank_8|Commander of Barad-dûr
-; str_guldur_rank_9|Scourge of Mankind
-; str_gundabad_rank_0|Turd
-; str_gundabad_rank_1|Snaga
-; str_gundabad_rank_2|Tunnel Rat
-; str_gundabad_rank_3|Cave Forager
-; str_gundabad_rank_4|Plunderer of the Hills
-; str_gundabad_rank_5|Despoiler of the Mountains
-; str_gundabad_rank_6|Dwarfbane
-; str_gundabad_rank_7|Wargrider Warlord
-; str_gundabad_rank_8|Great Goblin
-; str_gundabad_rank_9|Pillager of the North
-; str_dunland_rank_0|Pup
-; str_dunland_rank_1|Dog
-; str_dunland_rank_2|Wardog
+str_gondor_rank_4|Gondorský Strážce citadely
+str_gondor_rank_5|Gondorský Rytíř citadely
+str_gondor_rank_6|Gondorská Správcova stráž
+str_gondor_rank_7|Gondorský kapitán
+str_gondor_rank_8|Šampion Gondoru
+str_gondor_rank_9|Hrdina Gondoru
+str_dwarf_rank_0|Trpaslík zelenáč
+str_dwarf_rank_1|Trpaslík kopáč
+str_dwarf_rank_2|Trpaslík válečník
+str_dwarf_rank_3|Trpasličí starší
+str_dwarf_rank_4|Trpaslík sekerník
+str_dwarf_rank_5|Trpaslík mistr sekerník
+str_dwarf_rank_6|Trpaslík mudrc
+str_dwarf_rank_7|Kapitán Trpaslíků
+str_dwarf_rank_8|Trpasličí Náčelník
+str_dwarf_rank_9|Hrdina ze Síní
+str_rohan_rank_0|Ceorl, Prostý občan Rohanu
+str_rohan_rank_1|Thain, Služebník Rohanu
+str_rohan_rank_2|Léod, Svobodný člověk Rohanu
+str_rohan_rank_3|Rohir, Jezdec Rohanu
+str_rohan_rank_4|Scyldbora, Štítonoš Rohanu
+str_rohan_rank_5|Swéordbora, Pán meče Rohanu
+str_rohan_rank_6|Frumgar, Vrchní kopiník Rohanu
+str_rohan_rank_7|Bealdoraed, Mistra rádce Rohanu
+str_rohan_rank_8|Eorl, Šlechtic Rohanu
+str_rohan_rank_9|Haleth, Hrdina Rohanu
+str_mordor_rank_0|Červ
+str_mordor_rank_1|Snaga
+str_mordor_rank_2|Záškodník z Gorgoroth
+str_mordor_rank_3|Hlídač z Cirith Ungol
+str_mordor_rank_4|Otrokář z  Udûnu
+str_mordor_rank_5|Plenitel z Durthangu
+str_mordor_rank_6|Strážce z Morannonu
+str_mordor_rank_7|Kapitán z Minas Morgul
+str_mordor_rank_8|Velitel z Barad-dûru
+str_mordor_rank_9|Zkáza lidstva
+str_isengard_rank_0|Krysa
+str_isengard_rank_1|Snaga
+str_isengard_rank_2|Sluha
+str_isengard_rank_3|Palič stromů
+str_isengard_rank_4|Krmitel vrků
+str_isengard_rank_5|Slévač
+str_isengard_rank_6|Mistr pecí
+str_isengard_rank_7|Kapitán věže Orthanc
+str_isengard_rank_8|Velitel Legií
+str_isengard_rank_9|Pravá ruka Bílé ruky
+str_lorien_rank_0|Sador, Věrný Lorienu
+str_lorien_rank_1|Tauron, Lesník z Lorienu
+str_lorien_rank_2|Mifaron, Šedý lovec z Lorienu
+str_lorien_rank_3|Thindirith, Šedý strážce Lorienu
+str_lorien_rank_4|Thangyl, Štítonoš Lorienu
+str_lorien_rank_5|Maglagyl, Pán meče z Lorienu
+str_lorien_rank_6|Tiribrannon, Správce z Lorienu
+str_lorien_rank_7|Glaurchir, Velmistr z Lorienu
+str_lorien_rank_8|Galadhîr, Oslnivý Pán Lorienu
+str_lorien_rank_9|Thalion, Hrdina Lorienu
+str_imladris_rank_0|Háno, Bratr z Roklinky
+str_imladris_rank_1|Macar, Válečník z Roklinky
+str_imladris_rank_2|Sindacollo, Šedá kápě z Roklinky
+str_imladris_rank_3|Luinëcollo, Modrá kápě z Roklinky
+str_imladris_rank_4|Turmacolindo, Štítonoš z Roklinky
+str_imladris_rank_5|Langocolindo, Pán meče z Roklinky
+str_imladris_rank_6|Aráto, Šampion z Roklinky
+str_imladris_rank_7|Hesto, Kapitán z Roklinky
+str_imladris_rank_8|Runando, Spasitel z Roklinky
+str_imladris_rank_9|Callo, Hrdina z Roklinky
+str_woodelf_rank_0|Sador, Věrný Zelenému hvozdu
+str_woodelf_rank_1|Tauron, Lesník ze Zeleného hvozdu
+str_woodelf_rank_2|Hirfaron, Mistr Lovec ze Zeleného hvozdu
+str_woodelf_rank_3|Calendirith, Zelená stráž ze Zeleného hvozdu
+str_woodelf_rank_4|Thangyl, Štítonoš ze Zeleného hvozdu
+str_woodelf_rank_5|Maglagyl, Pán meče ze Zeleného hvozdu
+str_woodelf_rank_6|Tiribrannon, Správce ze Zeleného hvozdu
+str_woodelf_rank_7|Pengherdir, Mistr luku ze Zeleného hvozdu
+str_woodelf_rank_8|Armagor, Královský šermíř ze Zeleného hvozdu
+str_woodelf_rank_9|Thalion, Hrdina ze Zeleného hvozdu
+str_dale_rank_0|Prostý občan Dolu
+str_dale_rank_1|Svobodný občan Dolu
+str_dale_rank_2|Voják Dolu
+str_dale_rank_3|Lodník z Dolu
+str_dale_rank_4|Štítonoš Dolu
+str_dale_rank_5|Pán meče z Dolu
+str_dale_rank_6|Barding, Lučištník z Dolu
+str_dale_rank_7|Kapitán Dolu
+str_dale_rank_8|Mistr jezera z Dolu
+str_dale_rank_9|Hrdina Dolu
+str_harad_rank_0|Nováček Klanu
+str_harad_rank_1|Dospělý Klanu
+str_harad_rank_2|Válečník Klanu
+str_harad_rank_3|Zabiják lvů
+str_harad_rank_4|Zaříkávač hadů
+str_harad_rank_5|Správce Olifantů
+str_harad_rank_6|Stráž Černého hada
+str_harad_rank_7|Kapitán Harondoru
+str_harad_rank_8|Generál Zlaté pouště
+str_harad_rank_9|Zlatý Had
+str_rhun_rank_0|Rhunský rovinář
+str_rhun_rank_1|Nevolník Rhunu
+str_rhun_rank_2|Válečník Rhunu
+str_rhun_rank_3|Býčí válečník Rhunu
+str_rhun_rank_4|Štítonoš Rhunu
+str_rhun_rank_5|Pán meče z Rhunu
+str_rhun_rank_6|Pán koní z Rhunu
+str_rhun_rank_7|Náčelník Rhunu
+str_rhun_rank_8|Náčelník stepních klanů
+str_rhun_rank_9|Khamûlova Pravá ruka
+str_khand_rank_0|Khandský rovinář
+str_khand_rank_1|Nevolník Khandu
+str_khand_rank_2|Válečník Khandu
+str_khand_rank_3|Jestřábí válečník Khandu
+str_khand_rank_4|Štítonoš Khandu
+str_khand_rank_5|Pán meče z Khandu
+str_khand_rank_6|Pán koní z Khandu
+str_khand_rank_7|Náčelník z Variagsu
+str_khand_rank_8|Náčelník Variagských klanů
+str_khand_rank_9|Legendární dobyvatel
+str_umbar_rank_0|Nezkušený námořník
+str_umbar_rank_1|Lodní pomocník
+str_umbar_rank_2|Námořník
+str_umbar_rank_3|Harpunář
+str_umbar_rank_4|Hrdlořez
+str_umbar_rank_5|Plenitel
+str_umbar_rank_6|Zkušený námořník
+str_umbar_rank_7|Kapitán Umbaru
+str_umbar_rank_8|Velitel flotily
+str_umbar_rank_9|Vrchní Admirál Moří
+str_moria_rank_0|Larva
+str_moria_rank_1|Snaga
+str_moria_rank_2|Tunelová Krysa
+str_moria_rank_3|Jeskynní padouch
+str_moria_rank_4|Drancovník dolů
+str_moria_rank_5|Plenitel síní
+str_moria_rank_6|Prokletý trpaslík
+str_moria_rank_7|Gobliní Válečník
+str_moria_rank_8|Gobliní Náčelník
+str_moria_rank_9|Postrach z hlubin
+str_guldur_rank_0|Červ
+str_guldur_rank_1|Snaga
+str_guldur_rank_2|Záškodník z Gorgoroth
+str_guldur_rank_3|Hlídač z Cirith Ungol
+str_guldur_rank_4|Otrokář z  Udûnu
+str_guldur_rank_5|Plenitel z Durthangu
+str_guldur_rank_6|Strážce z Morannonu
+str_guldur_rank_7|Kapitán z Minas Morgul
+str_guldur_rank_8|Velitel z Barad-dûru
+str_guldur_rank_9|Zkáza lidstva
+str_gundabad_rank_0|Hovno
+str_gundabad_rank_1|Snaga
+str_gundabad_rank_2|Tunelová Krysa
+str_gundabad_rank_3|Jeskynní padouch
+str_gundabad_rank_4|Plenitel z Kopců
+str_gundabad_rank_5|Vykrádač z Hor
+str_gundabad_rank_6|Prokletý trpaslík
+str_gundabad_rank_7|Velitel vrčích jezdců
+str_gundabad_rank_8|Slavný Goblin
+str_gundabad_rank_9|Drancíř Severu
+str_dunland_rank_0|Štěně
+str_dunland_rank_1|Pes
+str_dunland_rank_2|Hlídač
 str_dunland_rank_3|Vlk
-; str_dunland_rank_4|Strong Wolf
-; str_dunland_rank_5|Dire Wolf
-; str_dunland_rank_6|Great Wolf
-; str_dunland_rank_7|Wolfpack Leader
-; str_dunland_rank_8|Chief of the Clans
-; str_dunland_rank_9|Freca's Avenger
-; str_beorn_rank_0|Forest Cub
-; str_beorn_rank_1|Forest Tracker
-; str_beorn_rank_2|Forest Hunter
-; str_beorn_rank_3|Forest Ranger
-; str_beorn_rank_4|Forest Shieldbearer
-; str_beorn_rank_5|Forest Axebearer
-; str_beorn_rank_6|Forest Bear
-; str_beorn_rank_7|Forest Great Bear
-; str_beorn_rank_8|Forest Giant
-; str_beorn_rank_9|Hero of the Forests
-; str_tld_introduction|TLD Introduction - you should go to Edoras.
-; str_tld_erebor_dungeon|The smell of death surrounds this place. I'd better be careful.
-; str_tld_spear_hit|Ouch!
-; str_fullname_region_unknown|an unnamed region, somewhere in Middle Earth
-; str_fullname_region_pelennor|Pelennor Fields, the plains around Minas Tirith, capital of the Realm of Gondor
-; str_fullname_region_subfac_pelargir|the Fiefdom of Lebennin, part of the Realm of Gondor
-; str_fullname_region_subfac_dol_amroth|Belfalas, the costal region in the South of Gondor
-; str_fullname_region_subfac_ethring|Ringló Vale, a valley of the Realm of Gondor
-; str_fullname_region_subfac_lossarnach|the Fiefdom of Lossarnach, also known as the Vale of Flowers, part of the Realm of Gondor
-; str_fullname_region_subfac_pinnath_gelin|the Green Hills of Pinnath Gelin, a region in the Realm of Gondor
-; str_fullname_region_subfac_blackroot|the Fiefdom of Lamedon, part of the Realm of Gondor
-; str_fullname_region_n_ithilien|North Ithilien, easternmost province of the Realm of Gondor
-; str_fullname_region_c_ithilien|Emyn Arnen, a range of hills in the central regions of Ithilien, across the Great River from Minas Tirith
-; str_fullname_region_s_ithilien|South Ithilien, easternmost province of the Realm of Gondor
-; str_fullname_region_druadan_forest|Drúadan Forest, the Gondor Forest of the Drúedain
-; str_fullname_region_firien_wood|Firien wood, the Whispering Wood, a Gondor forest of oaks
-; str_fullname_region_anorien|Anórien, the Sun-land, a valley between the White Mountains and the Anduin river
-; str_fullname_region_rohan0|the Folde, the heart of Rohan
-; str_fullname_region_rohan1|the Eastemnet, a part of Rohan, the Riddermark
-; str_fullname_region_rohan2|the Westemnet, a part of Rohan, the Riddermark
-; str_fullname_region_rohan3|the Eastfold, a part of Rohan, the Riddermark
-; str_fullname_region_rohan4|the Westfold, a part of Rohan, the Riddermark
-; str_fullname_region_rohan5|Helm's Deep, a valley of the White Mountains, in Rohan
-; str_fullname_region_the_wold|the Wold, the Northeastern area of the Riddermark of Rohan
-; str_fullname_region_gap_of_rohan|the Gap of Rohan, the westernmost border of Rohan, a contested area between the Rohirrim and the Dunlendings.
-; str_fullname_region_entwash|the Mouths of the Entwash, where the Rohan river Entwash joins the Anduin
-; str_fullname_region_wetwang|Nindalf, the swamps of Wetwang
-; str_fullname_region_dead_marshes|the Dead Marshes, the ancient battlefield of the great Battle of Dagor Dagorlad, now a cursed place
-; str_fullname_region_isengard|the plains around Isengard
-; str_fullname_region_fangorn|the Fangorn forest, where trees are said to talk.
-; str_fullname_region_brown_lands|the Brown Lands, covering the expanse between the Emyn Muil and Mirkwood
-; str_fullname_region_dagorlad|the Dagorlad, the great, treeless, expanse of The Battle Plain, before the gates of Mordor
-; str_fullname_region_n_undeep|the North Undeep, the larger of the two Anduin meanders
-; str_fullname_region_s_undeep|the South Undeep, the lesser of the two large Anduin bends
-; str_fullname_region_emyn_muil|Emyn Muil, the rocky hills above the inflow of the Entwash
-; str_fullname_region_misty_mountains|the foothills of Misty Mountains
-; str_fullname_region_lorien|Lothlórien, the forest of the Sindar elves, where the golden Mallorns grow
-; str_fullname_region_anduin_banks|the valley of Anduin, between Misty Mountains and Mirkwood
-; str_fullname_region_n_mirkwood|the dense forests of northern Mirkwood, home of the Woodelves
-; str_fullname_region_s_mirkwood|the dense forest of southern Mirkwood, said to be infested by strange creatures
-; str_fullname_region_above_mirkwook|Northen Rhovanion, the area between Mirkwood and the Grey Mountains in the North
-; str_fullname_region_grey_mountains|the foothills of Grey Mountains, where Dwarves dwell
-; str_fullname_region_mordor|Mordor, the dark Realm of Sauron
-; str_fullname_region_dimrill|Dimrill Dale, at the feet of the Mountains of Moria
-; str_fullname_region_s_rebor|the realm of Dale, at the feet of the Lonely Mountain
-; str_shortname_region_unknown|an unnamed region
-; str_shortname_region_pelennor|Pelennor Fields
-; str_shortname_region_subfac_pelargir|the Fiefdom of Lebennin
-; str_shortname_region_subfac_dol_amroth|Belfalas
-; str_shortname_region_subfac_ethring|Ringló Vale
-; str_shortname_region_subfac_lossarnach|the Fiefdom of Lossarnach
-; str_shortname_region_subfac_pinnath_gelin|the region of Pinnath Gelin
-; str_shortname_region_subfac_blackroot|the Fiefdom of Lamedon
-; str_shortname_region_n_ithilien|North Ithilien
-; str_shortname_region_c_ithilien|Emyn Arnen
-; str_shortname_region_s_ithilien|South Ithilien
-; str_shortname_region_druadan_forest|Drúadan Forest
-; str_shortname_region_firien_wood|Firien wood
-; str_shortname_region_anorien|Anórien
-; str_shortname_region_rohan0|the Folde
-; str_shortname_region_rohan1|Eastemnet
-; str_shortname_region_rohan2|Westemnet
-str_shortname_region_rohan3|Vychodni uval
-str_shortname_region_rohan4|Zapadni uval
-; str_shortname_region_rohan5|Helm's Deep
-; str_shortname_region_the_wold|the Wold
-; str_shortname_region_gap_of_rohan|the Gap of Rohan
-; str_shortname_region_entwash|the Mouths of the Entwash
-; str_shortname_region_wetwang|Nindalf
-; str_shortname_region_dead_marshes|the Dead Marshes
-; str_shortname_region_isengard|the plains around Isengard
-; str_shortname_region_fangorn|Fangorn
-; str_shortname_region_brown_lands|the Brown Lands
-; str_shortname_region_misty_mountains|the foothills of Misty Mountains
-; str_shortname_region_lorien_|Lorien
-; str_shortname_region_anduin_banks_|the valley of Anduin
-; str_shortname_region_n_mirkwood_|North Mirkwood
-; str_shortname_region_s_mirkwood_|South Mirkwood
-; str_shortname_region_above_mirkwook|Northen Rhovanion
-; str_shortname_region_grey_mountains|the foothills of Grey Mountains
-; str_shortname_region_mordor|the Land of Mordor
-; str_shortname_region_dimrill|Dimrill Dale
-; str_shortname_region_s_erebor|the realm of Dale
-; str_trait_title_elf_friend|Elf Friend
-; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced and you may now attempt to give orders to elven armies.
-; str_trait_title_gondor_friend|Steward's Blessing
-; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced and you may now attempt to give orders to Gondorian armies.
-; str_trait_title_rohan_friend|King's Man
-; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced and you may now attempt to give orders to the armies of the Riddermark.
-; str_trait_title_brigand_friend|Barbarian Champion
-; str_trait_desc_brigand_friend|You have become highly esteemed by the barbarian tribes serving Sauron as a result of your impressive displays in the arena. You may now recruit barbarians at reduced cost.
-; str_trait_title_blessed|Blessed
-; str_trait_desc_blessed|You sense that you have been blessed by powers from beyond the sea, and perhaps further away still. You do not know why this has happened or what it may mean but you are certain that it is so.
-; str_trait_title_reverent|Reverent
-; str_trait_desc_reverent|You have acquired a reputation for reverence and wisdom. Men and Elves are more likely to listen to your counsel.
+str_dunland_rank_4|Silný Vlk
+str_dunland_rank_5|Strašlivý Vlk
+str_dunland_rank_6|Mocný Vlk
+str_dunland_rank_7|Vůdce smečky
+str_dunland_rank_8|Náčelník Klanů
+str_dunland_rank_9|Frecův mstitel
+str_beorn_rank_0|Lesní mládě
+str_beorn_rank_1|Lesní stopař
+str_beorn_rank_2|Lesní lovec
+str_beorn_rank_3|Lesní hraničář
+str_beorn_rank_4|Lesní štítonoš
+str_beorn_rank_5|Lesní sekerník
+str_beorn_rank_6|Lesní Medvěd
+str_beorn_rank_7|Lesní silný Medvěd
+str_beorn_rank_8|Lesní Obr
+str_beorn_rank_9|Hrdina Lesa
+str_tld_introduction|TLD úvod - měl bys jít do Edrasu
+str_tld_erebor_dungeon|Pach smrti obklopuje toto místo. Měl bys být radši opatrný.
+str_tld_spear_hit|Ouch!
+str_fullname_region_unknown|nepojmenovaný region někde ve Středozemi
+str_fullname_region_pelennor|Peleonorská pole, pláně obklopující Minas Tirith, hlavní město Gondorské říše
+str_fullname_region_subfac_pelargir|knížectví Lebennin, část Gondorské říše
+str_fullname_region_subfac_dol_amroth|Belfalas, pobřežní region na jihu Gondoru
+str_fullname_region_subfac_ethring|údolí řeky Ringló, údolí Gondorské říše
+str_fullname_region_subfac_lossarnach|knížectví Lossarnach, také známé jako Údolí Květin, součást Gondorské říše
+str_fullname_region_subfac_pinnath_gelin|Zelené kopce Pinnath Gelin, oblast Gondorské říše
+str_fullname_region_subfac_blackroot|knížectví Lamedon, součást Gondorské říše
+str_fullname_region_n_ithilien|Severní Ithilien, nejvýchodnější provincie Gondorské říše
+str_fullname_region_c_ithilien|Emyn Arnen, rozsáhlé kopce v centrální oblasti Ithilienu, přes řeku Anduinu od Minas Tirith
+str_fullname_region_s_ithilien|Jižní Ithilien, nejvýchodnější provincie Gondorské říše
+str_fullname_region_druadan_forest|Drúadanský les, Gondorský les Drúedain
+str_fullname_region_firien_wood|les Firien, Šeptající les, Gondorský dubový les
+str_fullname_region_anorien|Anórien, Sluneční země, údolí mezi Bílými Horami a řekou Anduin
+str_fullname_region_rohan0|Úvaly, srdce Rohanu
+str_fullname_region_rohan1|Východní polonina, součást Rohanu, Jízdmarky
+str_fullname_region_rohan2|Západní polonina, součást Rohanu, Jízdmarky
+str_fullname_region_rohan3|Východní úval, součást Rohanu, Jízdmarky
+str_fullname_region_rohan4|Západní úval, součást Rohanu, Jízdmarky
+str_fullname_region_rohan5|Helmův žleb, údolí Bílých Hor v Rohanu
+str_fullname_region_the_wold|Vysočina, nejsevernější oblast Jizdmarky Rohanu
+str_fullname_region_gap_of_rohan|Rohanská brána, nejzápadnější hranice Rohanu, sporné území mezi Rohiry a lidmi z Vrchoviny.
+str_fullname_region_entwash|ústí řeky Entvy, kde se Rohanská řeka Entva vlévá do Anduiny
+str_fullname_region_wetwang|Nindalf, bažiny Vlhké pláně
+str_fullname_region_dead_marshes|Mrtvé močály, prastaré bojiště velké bitvy na Dagorladu, nyní prokleté místo
+str_fullname_region_isengard|Pláně Železného pasu
+str_fullname_region_fangorn|Fangornský les, kde se říká že stromy mluví.
+str_fullname_region_brown_lands|Hnědé země, pokrývající rozlehlé území mezi Emyn Muil a Temným hvozdem
+str_fullname_region_dagorlad|Dagorlad, obrovsky rozsáhlé bitevní pole, bez stromů před branami Mordoru
+str_fullname_region_n_undeep|Severní Nehlubiny, větší ze dvou meandrů Anduiny
+str_fullname_region_s_undeep|Jižní Nehlubiny, menší ze dvou meandrů Anduiny
+str_fullname_region_emyn_muil|Emyn Muil, skalnaté kopce nad přítokem Entvy
+str_fullname_region_misty_mountains|předhůří Mlžných hor
+str_fullname_region_lorien|Lothlórien, les Stříbrných Elfů, kde rostou zlaté Mallorny
+str_fullname_region_anduin_banks|údolí Anduiny, mezi Mlžnými horami a Temným hvozdem
+str_fullname_region_n_mirkwood|hustý les severního Temného hvozdu, domov Lesních Elfů
+str_fullname_region_s_mirkwood|hustý les jižního Temného hvozdu, říká se že je zamořen podivnými tvory
+str_fullname_region_above_mirkwook|Severní Rhovanion, oblast mezi Temným hvozdem a Šedými horami na severu
+str_fullname_region_grey_mountains|předhůří Šedých hor, kde přebývají Trpaslíci
+str_fullname_region_mordor|Mordor, temná říše Saurona
+str_fullname_region_dimrill|Rmutný Dol, na úpatí hor Morie
+str_fullname_region_s_rebor|říše Dolu, na úpatí Osamělé Hory
+str_shortname_region_unknown|nepojmenovaný region
+str_shortname_region_pelennor|Pelennorská pole
+str_shortname_region_subfac_pelargir|knížectví Lebennin
+str_shortname_region_subfac_dol_amroth|Belfalas
+str_shortname_region_subfac_ethring|Údolí řeky Ringló
+str_shortname_region_subfac_lossarnach|knížectví Lossarnach
+str_shortname_region_subfac_pinnath_gelin|oblast Pinnath Gelin
+str_shortname_region_subfac_blackroot|knížectví Lamedon
+str_shortname_region_n_ithilien|Severní Ithilien
+str_shortname_region_c_ithilien|Emyn Arnen
+str_shortname_region_s_ithilien|Jižní Ithilien
+str_shortname_region_druadan_forest|Drúadanský les
+str_shortname_region_firien_wood|Firienský les
+str_shortname_region_anorien|Anórien
+str_shortname_region_rohan0|Úvaly
+str_shortname_region_rohan1|Východní polonina
+str_shortname_region_rohan2|Západní polonina
+str_shortname_region_rohan3|Východní úval
+str_shortname_region_rohan4|Západní úval
+str_shortname_region_rohan5|Helmův Žleb
+str_shortname_region_the_wold|Vysočina
+str_shortname_region_gap_of_rohan|Rohanská Brána
+str_shortname_region_entwash|Ústí Entvy
+str_shortname_region_wetwang|Nindalf
+str_shortname_region_dead_marshes|Mrtvé močály
+str_shortname_region_isengard|pláně Železného pasu
+str_shortname_region_fangorn|Fangorn
+str_shortname_region_brown_lands|Hnědé země
+str_shortname_region_misty_mountains|předhůří Mlžných hor
+str_shortname_region_lorien_|Lorien
+str_shortname_region_anduin_banks_|údolí Anduiny
+str_shortname_region_n_mirkwood_|Severní Temný hvozd
+str_shortname_region_s_mirkwood_|Jižní Temný hvozd
+str_shortname_region_above_mirkwook|Severní Rhovanion
+str_shortname_region_grey_mountains|předhůří Šedých hor
+str_shortname_region_mordor|Země Mordoru
+str_shortname_region_dimrill|Rmutný dol
+str_shortname_region_s_erebor|říše Dolu
+str_trait_title_elf_friend|Přítel Elfů
+str_trait_desc_elf_friend|Stal si se vysoce váženým mezi Elfy a považují tě za důvěryhodného spojence. Cena na rekrutování elfů byla snížena a nyní se můžeš pokusit dávat rozkazy elfím armádám.
+str_trait_title_gondor_friend|Správcovo požehnání
+str_trait_desc_gondor_friend|Stal si se vysoce váženým u správce Denethora a jako výsledek, se zvýšilo tvé postavení mezi lidem Gondoru Ceny na rekrutování gondořanů byly sníženy a nyní se můžeš pokusit dávat rozkazy Gondorským armádám.
+str_trait_title_rohan_friend|Králův člověk
+str_trait_desc_rohan_friend|Stal si se vysoce váženým u Krále Theodena Rohanského a jako výsledek, se zvýšilo tvé postavení mezi lidem Rohanu. Ceny na rekrutování Rohirů byly sníženy a nyní se můžeš pokusit dávat rozkazy armádám Jízdmarky.
+str_trait_title_brigand_friend|Barbarský šampion
+str_trait_desc_brigand_friend|Za tvé působivé výsledky v aréně, si se stal vysoce váženým u barbarských kmenů sloužících Sauronovi. Nyní můžeš rekrutovat barbary za sníženou cenu.
+str_trait_title_blessed|Požehnaný
+str_trait_desc_blessed|Cítíš že jsi byl požehnán silami zpoza moře a možná ještě dál. Nevíš, proč se to stalo nebo co to může znamenat, ale jsi si jistý, že tomu tak je.
+str_trait_title_reverent|Uctivý
+str_trait_desc_reverent|Získali jste reputaci za úctu a moudrost. Lidé a elfové jsou nyní nakloněnější tvým radám.
 ; str_trait_title_merciful|Merciful
 str_trait_desc_merciful|Vybudoval sis povest muze milosrdne zachazejiciho se zlymi muzi slouzicimi Nepriteli. Mnozi zoceleni muzi pod tvym velenim nesouhlasi s tvym chovanim a trpi tim jejich moralka. Avsak mezi moudrymi je na tve milosrdenstvi nahlizeno jako na projev vzneseneho ducha a ziskavas bonusovy vliv.
 ; str_trait_title_bravery|Bravery
@@ -1806,15 +2011,15 @@ str_trait_desc_oathbreaker|Slozil jsi desivou prisahu, ale nedovedl jsi ji k nap
 ; str_trait_desc_battle_scarred|You have suffered horrific wounds during your many campaigns yet you still live to tell the tale. Your scarred and knotted flesh now conspires with hard experience to increase your resistance to injury. While others may find your appearance somewhat shocking your followers consider it an affirmation of your battle experience. They subsequently receive a weekly morale bonus.
 ; str_trait_title_fell_beast|Fell Beast
 ; str_trait_desc_fell_beast|Your hide is riven with the knotted scars of countless battles and your evil will is likewise hard and unyielding. Even by the standards of orc, uruk and troll-kind you are judged a fell and dangerous beast. Those who serve you cry your name in joy when you take to the field. You are an avatar of war itself and there is little you fear.
-; str_trait_title_butcher|Butcher
+str_trait_title_butcher|Řezník
 ; str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat. You also get more human meat after every battle.
 ; str_trait_title_well_travelled|Well-Travelled
 ; str_trait_desc_well_travelled|On stone paved roads and mossy animal paths, over the tallest mountains and in the deepest vales, you've discovered hidden places and seen long forgotten marvels. From your experiences, you've learnt to spot enemies before they see you, and the easiest route for your troops.
-; str_wound_head|a heavy blow to the head
-; str_wound_chest|some cracked ribs
-; str_wound_arm|a badly maimed arm
-; str_wound_leg|a badly maimed leg
-; str_gondor_gift0|Fresh Fruit and Wine
+str_wound_head|těžký úder do hlavy
+str_wound_chest|nějaká nalomená žebra
+str_wound_arm|ošklivě zmrzačená paže
+str_wound_leg|ošklivě zmrzačená noha
+str_gondor_gift0|Čerstvé ovoce a víno
 ; str_gondor_gift1|Richly Dyed Cloth
 ; str_gondor_gift2|Ancient Tomes and Family Trees
 ; str_gondor_gift3|Spices and Incense
@@ -1906,16 +2111,16 @@ str_dunland_gift3|Kozy
 ; str_beorn_gift4|Well Trained Ponies
 ; str_cmenu_follow|Accompany
 ; str_reset_to_default|Reset to Default
-; str_done|Done
-; str_gondor1|Gondor1
-; str_gondor2|Gondor2
-; str_gondor3|Gondor3
-; str_gondor4|Gondor4
-; str_gondor5|Gondor5
-; str_gondor6|Gondor6
-; str_gondor7|Gondor7
-; str_gondor8|Gondor8
-; str_gondor_end|Gondor1
+str_done|Hotovo
+str_gondor1|Gondor1
+str_gondor2|Gondor2
+str_gondor3|Gondor3
+str_gondor4|Gondor4
+str_gondor5|Gondor5
+str_gondor6|Gondor6
+str_gondor7|Gondor7
+str_gondor8|Gondor8
+str_gondor_end|Gondor1
 ; str_gondor_intro|^It is a bitter thought, that a hero of this great kingdom should die within the sight of his land, unaided and helpless.^^The news of Boromir’s death passed like a swift wind through all of Gondor, even to the plains of Pinnath Gelin and the hills of Lamedon, even to the shores of Pelargir and the coasts of Dol Amroth. The hearts of all your people are filled with grief and pity; and more besides, with fear and foreboding, for Gondor is hard pressed and sore beset, ringed by implacable foes or uncertain friends.^^The Shadow rises in the East, as of old; the fractious Corsairs of Umbar grow bolder; the wild men of the East and South press their claims upon Gondorian land.^^No longer can you stand by and wait. Trust you have placed in your captains; sword and spear they will place in your hand. Gondor wanes, but Gondor still stands; and even the end of its strength is still very strong. You have resolved yourself to play what part you may in this coming war against the servants of the Nameless. Much is spoken of in the councils of the great and wise, to which you are not privy, but there is one thing you feel you can be sure of.^^If the valiant hearts of Gondor should fail, and Minas Tirith be lost, then the last light of the West will be extinguished. All will fall beneath the Shadow.
 ; str_dwarf_intro|^The Kingdom under the Mountain has done well, of that there can be no dispute. Old King Dáin has just passed his two hundred and fiftieth year, and by any measure he is fabulously wealthy. Under his rule, Erebor thrives, and knows greatness. The waterways, fountains and pools of neighbouring Dale bear witness to how your builders have surpassed the skill of even your forefathers, though their secrets of metalwork have regrettably been lost.^^Yet a darkness from Mordor entered these halls, when Sauron’s foul envoy, with his breath like the hiss of snakes, came bearing evil words. Heavy have been the hearts of your chieftains since then, for the power that has re-entered Mordor has not changed. The Shadow grows and draws nearer - already the Enemy is moving, and war will soon begin.^^You have sworn to take up arms, and stand with your friends against your foes. You will resist, with hope or without it.^^But if the bravery of the Dwarves of Erebor should prove insufficient, then the glory of Durin’s folk will fade away and be forgotten. All will fall beneath the Shadow.
 ; str_rohan_intro|^In these days of doubt, one thing you know to be true: open war lies before the proud people of Rohan. None may live now as they have lived, and few shall keep what they call their own. Some close to the King’s ear speak craven counsels, but you have determined to go to him, take a grim oath of service, and stand with such fell-handed captains and thanes as will protect the herds and herdfolk.^^Saruman of Isengard has declared lordship over the lands of Rohan, and bitter is the fighting with Orcs, Wolf-riders and the evil Men of Dunland. The Lord of the Black Land to the east sends raiding parties to steal your horses, choosing always the black ones. Your heart misgives you, for it seems to you that enemies beset your people both east and west.^^But still you will give battle, for if aught is said of the Rohirrim, it is of your unfailing valour in arms, though foe should beleaguer you, or fire encircle you. The steeds of Rohan will stride as wind in the morning. And if death should come for you, then a mound will be raised, but for now, war calls you. Let horse be bridled, horn be sounded!^^Yet, if even the courage of the Sons and Daughters of Eorl should fail, then the last hope of Rohan will fade and die away. The horn will blow no more. All will fall beneath the Shadow.
@@ -1954,13 +2159,13 @@ str_dunland_gift3|Kozy
 ; str_beorn_intro_2|^On your way to Beorn’s House, you come upon some allies preparing to ambush a company of Orcs.
 ; str_intro_strings_2_end|Intro 2 END
 str_gondor_faction_intro|^Jižní Království Gondorské, “země kamene” v Sindarinu, je obydleno potomky starověkých Númenorů. Pod vládou Správce Denethora, tito pyšní muži stojí jako první a možná i poslední linie obrany před Nepřítelem.^^Gondorské ozbrojené síly se skládají z jednotek pocházejících ze všech jednotlivých knížectví. Dohromady vzniká standardní armáda s řádnými a dobře vyzbrojenými vojáky: Dol Amrothská těžká kavalerie, zelení lučištníci a kopiníci z Pinnath Gelin, lučištníci z Morthondu, sekerníci z Lossarnachu, těžkooděnci z Pelagiru nebo otrlí klanoví válečníci z Lamedonu.
-; str_dwarf_faction_intro|^Dwarves, also known as Durin’s Folk, are short, tough and doughty warriors. They are renowned for the craftsmanship of their weaponry and armour, though they say with regret that they cannot match the lost arts of their ancestors. In these latter days, they come from the Lonely Mountain and the Iron Hills.^^Their army consists of an infantry line, a scout/archer line and an Iron Hills line (their heaviest hard-hitting infantry).
-; str_rohan_faction_intro|^Rohirrim are the horse lords of the Mark of Rohan, led by king Théoden.^^Rohirrim have very good cavalry, ranging from heavy lancers to agile horse archers. They have an infantry line as well, branching into shieldwall-forming troops and heavy swordsmen bearing longswords.
-; str_mordor_faction_intro|^Mordor represents Sauron’s own forces bred in the darkness of the Black Land.^^Armies of Mordor consist of orcs, Uruks and evil men (Black Númenoreans). Uruks of Mordor are a better-equipped and stronger breed of orcs, but have no archery line. Most regular orcs are infantry, skirmishers or archers, but there are also orc warg-riders. Black Númenoreans are comparatively rare, but very dangerous as infantry or cavalry. Sauron has also bred fierce battle trolls, but they’re extremely hard to obtain.
-; str_isengard_faction_intro|^Isengard is ruled by Saruman, the traitor wizard. He created his own version of orcs: the Uruk-hai.^^The forces of Isengard are quite well-equipped, though the weapons and armour may seem crude. The orcs are comparable to any other orcs, but the Uruk-hai are truly deadly killing machines wielding pikes, halberds, heavy axes and nasty cleavers. They also have the largest and most powerful bows among any of the orcish races.
-; str_lorien_faction_intro|^The Elves of Lothlórien, known as the tree-dwelling “Galadhrim”, are a powerful group of Nandor and Sindar living in the Lórien woods, led by Lord Celeborn and Lady Galadriel.^^Their forces consist of an infantry line and a scout line, with the occasional incorporation of an elite unit of Noldorin horse archers. All their troops are highly skilled, equipped with the finest arms and armour of Elven make, and overall extremely deadly in combat. A rain of arrows from under the forest cover, followed by a devastating infantry charge, is their main tactic.
-; str_imladris_faction_intro|^The Elves of Imladris (Rivendell) are Sindar and Noldor led by Lord Elrond and his two sons. They are custodians of the ancient lore of the west, as well as powerful and ancient artifacts dating back to the First Age. Under their banner, the Dúnedain of the North march as well – the remnants of the broken Northern kingdoms of Men are tall dark-haired rangers and nobles, clad in sturdy leathers or ancient maille.^^The soldiers of Imladris are among the most highly-skilled in Middle-Earth, and are extremely well-equipped. Their armies are capable of considerable tactical flexibility.
-; str_woodelf_faction_intro|^The Silvan Elves, called “wood-elves” in ancient times, live today in Mirkwood, led by King Thranduil.^^The Elves of Mirkwood have a competent infantry line that features both spears and swords. Their scouts and archers are the mainstay of their armies, more so than for their cousins of Lórien. Their armour is light but affords a great deal of protection.
+str_dwarf_faction_intro|^Trpaslíci, také známí jako Durinův lid, jsou malí, podsadití a chrabří válečníci. Jsou známí pro své řemeslné umění výroby zbraní a zbrojí, i když říkají že litují že se nemohou rovnat ztracenému umění svých předků. V těchto dnech pocházejí z Osamělé hory a Železných hor.^^Jejich armáda se skládá z linie pěchoty, střelecké linie a linie z Železných hor (jejich nejtěžší tvrdá pěchota).
+str_rohan_faction_intro|^Rohirové jsou páni koní z Jízdmarky Rohanu, které vede král Théoden.^^Rohirové jsou velmi dobří jezdci, vyzbrojeni od těžkých dřevců po  hbité luky. Mají také pěchotu, dělící se na jednotky vyžívající štítové hradby a těžké pěšáky s dlouhými meči .
+str_mordor_faction_intro|^Mordor reprezentuje Sauronovy vlastní uchovávané v Temné zemi.^^Armády Mordoru se skládají ze skřetů, Skurutů a zlých lidí (Černých Númenorejců). Skuruti z Mordoru jsou lépe vybavení a je silnější než odnož skřetů, ale nemohou být lukostřelci. Ti nejobyčejnější skřeti jsou pěchota, harcovníci nebo lučištníci, ale také jezdci na vrcích. Černí Númenorejci jsou poměrně vzácní, ale velmi nebezpeční jako pěšáci nebo jezdci. Sauron také disponuje odnoží divokých bojových trollů, ale ty je extrémně těžké získat.
+str_isengard_faction_intro|^Železnému pasu vládne Saruman, kouzelník zrádce, který vytvořil svou vlastní verzi skřetů: Skurut-hai.^^Síly Železného pasu jsou celkem dobře vybaveny, brněním a zbraněmi, které vypadají hrubě. Skřeti Železného pasu vypadají jako obyčejní skřeti, ale Skurut-hai jsou opravdové smrtící mašiny vyzbrojené kopími, halapartnami, těžkými sekyrami a ohavnými meči. Mají také větší a silnější luky než ostatní skřetí rasy.
+str_lorien_faction_intro|^Elfové z Lothlórienu, známí také jako lesní lidé “Galadhrim”, jsou mocná skupina  Nandorských a Šedých elfů žijících v Lórienských lesích, které vede Lord Celeborn a Paní Galadriel.^^Jejich armády se skládají z linie pěší a střelecké, s občasným začleněním elitních jednotek Noldorinských střelců na koních. Všechny jejich jednotky jsou vysoce zkušené, vyzbrojené nejlepšími zbraněmi a zbrojemi elfské výroby a jsou obecně extrémně nebezpečné v boji. Sprcha šípů z lesního krytu, následována zničujícím útokem pěchoty, patří mezi jejich hlavní taktiku boje.
+str_imladris_faction_intro|^Elfové z Imladris (Roklinky) jsou Šedí elfové a Noldorové vedení Pánem Elrondem a jeho dvěma syny. Jsou to ochránci prastarých tradic západozemí, stejně jako mocných a prastarých artefaktů z éry Prvního Věku. Pode jejich vlajkami pochodují také Dúnedani ze Severu – zbytky zlomeného národa Severního království lidí. Vysocí tmavovlasí hraničáři a šlechtici oděni do robustních kožených nebo prastarých zbrojí.^^Vojáci Roklinky jsou většinou ti nejschopnější v Středozemi, a jsou extrémně dobře vybaveni. Jejich armády jsou schopné značné taktické flexibility.
+str_woodelf_faction_intro|^Stříbrní elfové, také nazýváni “lesní elfové” v časech minulých, dnes žijí v Temném Hvozdu. Vede je král Thranduil.^^Elfové z Temného Hvozdu mají a schopnou pěchotu, která disponuje jak kopími tak meči. Jejich zvědové a střelci jsou oporou jejich armády, více než je to u jejich bratranců z Lórienu. Jejich zbroje jsou lehké, ale poskytují velkou ochranu.
 ; str_dale_faction_intro|^Dale is a city rebuilt by Northmen who share ancestry with the Rohirrim, joined by the survivors from the lake city of Esgaroth (after it was burnt down by Smaug).^^Men of Dale provide tough infantry focused on polearms, famous archer troops including the legendary Barding bowmen, and a merchant guard line acting as reasonably good cavalry.
 ; str_harad_faction_intro|^The Haradrim, the “hosts of the South” in Sindarin, come from the deserts and rainforests of the far South. They have a fondness for wearing bright colours and heavy gold ornamentation in warfare.^^Haradrim have average but competent infantry (skirmishers/archers and spearmen/swordsmen) from Great Harad, a cavalry line (incorporating both heavy cavalry and horse archers) from Harondor and a Far Harad line of tribal warriors.
 ; str_rhun_faction_intro|^Men of Rhûn are tribal Easterlings hailing from around the sea of Rhûn, far to the east.^^The bulk of their army is cavalry - horse archers and lancers, both very lightly-equipped. Their top-tier cavalrymen ride much larger and heavier mounts, with more barding. Their infantrymen are also quite lightly-armoured and wield large axes and swords. In the open field, a cavalry host of Rhûn can be a fearsome force to face.
@@ -2012,7 +2217,7 @@ str_npc27_intro|Vy!
 ; str_npc21_intro_response_1|Greetings, my Lady. With whom do I have the honour to speak?
 ; str_npc22_intro_response_1|Hail Elf-lord! It's a great honour to meet you.
 ; str_npc23_intro_response_1|Is this how the Silvan Elves greet their guests?
-str_npc24_intro_response_1|{playername} k vasim sluzbam. Jak se dari Durinovu lidu?
+str_npc24_intro_response_1|{playername} k vašim službám. Jak se daří Durinovu lidu?
 ; str_npc25_intro_response_1|Greetings. I was wondering if there are any volunteers here to join us in our travels.
 ; str_npc26_intro_response_1|Hold your threats, Uruk, before it comes to blows - I am not a snitch.
 str_npc27_intro_response_1|Kdo jste?
@@ -2075,7 +2280,7 @@ str_npc22_backstory_a|Mohl jsi slyset pribehy o mych cinech v davnych a smrtelny
 ; str_npc24_backstory_response_1|Indeed, a dwarven warrior would be welcome in my company.
 ; str_npc25_backstory_response_1|We can use a healer and a herbalist.
 ; str_npc26_backstory_response_1|I reckon we could put a berserker to a good use.
-; str_npc27_backstory_response_1|You will do.
+str_npc27_backstory_response_1|Ty to uděláš
 ; str_npc18_backstory_response_2|Pah! A murderous pit dog is not fit to be a companion of mine.
 ; str_npc19_backstory_response_2|You talk of great deeds. Go and do some of your own, before you approach me again!
 ; str_npc20_backstory_response_2|Pah! I'm guessing your bark is far worse than your bite. I have work to do!
@@ -2115,7 +2320,7 @@ str_npc27_backstory_response_2|Nepotřebuji tě otroku.
 ; str_npc24_signup_response_1|Very well, Master Dwarf, you are welcome to join us.
 ; str_npc25_signup_response_1|You will be safe with us, I promise. We will be leaving shortly.
 ; str_npc26_signup_response_1|Very good. Do as you are told, and I'll feed you well.
-; str_npc27_signup_response_1|Very well. Let's go.
+str_npc27_signup_response_1|Velmi dobře. Pojďme
 ; str_npc18_signup_response_2|Your are fierce... perhaps too fierce. A little more time in the stocks for now might teach you obedience.
 ; str_npc19_signup_response_2|You shall have to sit on these bales of hay for a little longer, 'Prince'.
 ; str_npc20_signup_response_2|Your brag and abuse grate upon my ears. Tame your tongue before we speak again!
@@ -2125,7 +2330,7 @@ str_npc27_backstory_response_2|Nepotřebuji tě otroku.
 ; str_npc24_signup_response_2|Sorry, I happen to like Elves.
 ; str_npc25_signup_response_2|I'm sorry, everyone fights in my company.
 ; str_npc26_signup_response_2|I've changed my mind. Whoever is looking for you might come for me next.
-; str_npc27_signup_response_2|I've changed my mind.
+str_npc27_signup_response_2|Změnil jsem názor.
 ; str_npc18_payment|Surely, a mighty commander of your stature has only but to say the word, and they will release me. [costs {reg14} Influence with {s14}]
 ; str_npc19_payment|It seems Daeglaf the Black may seek some excuse to hold me here, Commander. [costs {reg14} Influence with {s14}]
 ; str_npc20_payment|Rather, it is you who would do well not to disappoint me or the Master we both serve. Have you done well enough in his estimation? [costs {reg14} Influence with {s14}]
@@ -2143,7 +2348,7 @@ str_npc27_payment|Pridal bych se k tobe, ale moje sluzba je zde. [stoji {reg14} 
 ; str_npc22_payment_response|Trust me, you will be more useful with me. [costs {reg14}/{reg15} Influence]
 ; str_npc23_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
 ; str_npc24_payment_response|Master Dwalin will understand that a battle-worthy dwarf should not be kept from our enemies for too long. [costs {reg14}/{reg15} Influence]
-str_npc25_payment_response|Kralovo zdravi je dulezite, ale se mnou zachranis mnohem vic zivotu. [stoji {reg14}/{reg15} Vlivu]
+str_npc25_payment_response|Královo zdraví je důležité, ale se mnou zachráníš mnohem víc životů. [stojí {reg14}/{reg15} Bodů vlivu]
 ; str_npc26_payment_response|Oh, but the guard won't dare stop you, if you are with me. [costs {reg14}/{reg15} Influence]
 ; str_npc27_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
 ; str_npc18_morality_speech|Great One! My thirst for blood is unslaked! Why do we {s21}, like cowards? Let me fight them!
@@ -2169,63 +2374,63 @@ str_npc25_payment_response|Kralovo zdravi je dulezite, ale se mnou zachranis mno
 ; str_npc18_personalityclash_speech|Great One, if you value Varfang as a warrior, I beg that you keep him as far away from me as possible. I have already warned him that his hands must not go where I will not let them, or I shall chop them off and feed them to his horse. 
 ; str_npc19_personalityclash_speech|Commander, I wonder greatly that you retain the services of a lowly creature like Ufthak. Of course, the orc-kind are scum and arrow-shields for our true warriors, but he stalks around the camp giving orders to man and orc alike, as if he were one with authority. I hope you do not miss him too greatly if I slay him. Or perhaps I will simply cleave off the end of his ugly nose.
 ; str_npc20_personalityclash_speech|The Southron Lykyada should learn manners, and be taught humility. Insolent is his tongue, and overproud his bearing! I care not that he is a captain among his men - a foolish lesser race they are, in any case, slow to recognise greatness or bow to their betters as they should! If he knew but a small part of what I could do to him...
-; str_npc21_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc22_personalityclash_speech|Did I mention I hate {s11}?
+str_npc21_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
+str_npc22_personalityclash_speech|Zmínil jsem že nenávidím {s11}?
 ; str_npc23_personalityclash_speech|{playername}, I just saw {s11} walk brazenly over a nest of young birds. His clumsiness destroyed the young lives of innocent creatures.
 ; str_npc24_personalityclash_speech|Lord {s11} does well in a battle, but I wonder if he blinds the enemy by the shine of his hair? Or they fall in awe of his fame and uppity demeanor?
 ; str_npc25_personalityclash_speech|Commander, I must lodge a complaint against {s11}. He continues to pester me about making him a certain brew called 'the green fairy'.
-; str_npc26_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc27_personalityclash_speech|Did I mention I hate {s11}?
-; str_npc18_personalityclash_speech_b|Gulm is not only a treacherous beast, Great One - he is proud of being one. He was telling us his story again around the campfire last night, and boasting of his foul deed. You would do well to watch that creature, Great One. If he could betray his commanders when serving the White Hand, what's to stop him from doing the same with you?
-; str_npc19_personalityclash_speech_b|I hate {s11}.
-; str_npc20_personalityclash_speech_b|Every time I set eyes upon Fuldimir, a nameless rage within me rises. No, no, it is nothing he has done. But he and his people, the sea-dogs of Umbar, are most unworthy of their blood. They dare call themselves heirs of ancient Anadûnê - but of course, they say 'Númenor', not knowing any better. Why, I would suppose that barely a drop of the true blood is to be found in Fuldimir's veins! Perhaps, if you can spare him, I could find out for myself...
-; str_npc21_personalityclash_speech_b|I hate {s11}.
-; str_npc22_personalityclash_speech_b|I hate {s11}.
+str_npc26_personalityclash_speech|Zmínil jsem se že nenávidím {s11}?
+str_npc27_personalityclash_speech|Zmínil jsem se že nenávidím {s11}?
+; str_npc18_personalityclash_speech_b|Great One, I wish to ask, what is the blood price you have set on Varfang's head? If it happens that I kill or maim him, I would pay it to you as recompense. He was leering at me after that battle, licking his foul lips. If he looks at me that way again, I'll carve his eyeballs out and feed them to him.
+; str_npc19_personalityclash_speech_b|As I expected, the cowardly orc calling himself Ufthak is of little worth in battle. He skulks behind the line, doing but little to aid his fellows. Your cause - and my fight for my throne - will not be helped overmuch by his kind, I think.
+; str_npc20_personalityclash_speech_b|If Lykyada's hands were not of such use to us, Commander, I should remove them from his arms. You know that I am in the habit of walking among our fallen foes after a battle - there is great power in the fear and pain of the dying for one who has the art to use it, though none of you have the knowing of it. Yet he, that swarthy Southron, stalks around giving the gift of a swift death to those whose hurts are too deep for capture. That grain of mercy in his heart prevented me from basking in the death-glow of the fallen! How important is his precious honour to you, I wonder?
+str_npc21_personalityclash_speech_b|Nenávidím {s11}.
+str_npc22_personalityclash_speech_b|Nenávidím {s11}.
 ; str_npc23_personalityclash_speech_b|His dwarven ways may serve him well underground, albeit it's a wonder he hasn't fallen down an ugly shaft. Maybe he should have.
 ; str_npc24_personalityclash_speech_b|We would do better with a dwarven hero, someone like Durin the Deathless of old, and let the Elves prance around their forests.
 ; str_npc25_personalityclash_speech_b|It is made from wormwood soaked in liquor and apparently favored by minstrels and vagrants for seeing things that are not there. I doubt you'll approve of your soldiers chasing air on the battlefield, as much as it may be amusing to watch.
-; str_npc26_personalityclash_speech_b|I hate {s11}.
-; str_npc27_personalityclash_speech_b|I hate {s11}.
-; str_npc18_personalityclash2_speech|Great One, I wish to ask, what is the blood price you have set on Varfang's head? If it happens that I kill or maim him, I would pay it to you as recompense. He was leering at me after that battle, licking his foul lips. If he looks at me that way again, I'll carve his eyeballs out and feed them to him.
-; str_npc19_personalityclash2_speech|As I expected, the cowardly orc calling himself Ufthak is of little worth in battle. He skulks behind the line, doing but little to aid his fellows. Your cause - and my fight for my throne - will not be helped overmuch by his kind, I think.
-; str_npc20_personalityclash2_speech|If Lykyada's hands were not of such use to us, Commander, I should remove them from his arms. You know that I am in the habit of walking among our fallen foes after a battle - there is great power in the fear and pain of the dying for one who has the art to use it, though none of you have the knowing of it. Yet he, that swarthy Southron, stalks around giving the gift of a swift death to those whose hurts are too deep for capture. That grain of mercy in his heart prevented me from basking in the death-glow of the fallen! How important is his precious honour to you, I wonder?
-; str_npc21_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc22_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc23_personalityclash2_speech|Did I mention I hate {s11}?
+str_npc26_personalityclash_speech_b|Nenávidím {s11}.
+str_npc27_personalityclash_speech_b|Nenávidím {s11}.
+; str_npc18_personalityclash2_speech|Gulm is not only a treacherous beast, Great One - he is proud of being one. He was telling us his story again around the campfire last night, and boasting of his foul deed. You would do well to watch that creature, Great One. If he could betray his commanders when serving the White Hand, what's to stop him from doing the same with you?
+str_npc19_personalityclash2_speech|Nenávidím {s11}
+; str_npc20_personalityclash2_speech|Every time I set eyes upon Fuldimir, a nameless rage within me rises. No, no, it is nothing he has done. But he and his people, the sea-dogs of Umbar, are most unworthy of their blood. They dare call themselves heirs of ancient Anadûnê - but of course, they say 'Númenor', not knowing any better. Why, I would suppose that barely a drop of the true blood is to be found in Fuldimir's veins! Perhaps, if you can spare him, I could find out for myself...
+str_npc21_personalityclash2_speech|Zmínil jsem se že nenávidím {s11}?
+str_npc22_personalityclash2_speech|Zmínil jsem se že nenávidím {s11}?
+str_npc23_personalityclash2_speech|Zmínil jsem se že nenávidím {s11}?
 ; str_npc24_personalityclash2_speech|A nice little scrap, eh captain? If only slightly ruined by the conduct of that Elf-woman {s11}.
-; str_npc25_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc26_personalityclash2_speech|Did I mention I hate {s11}?
-; str_npc27_personalityclash2_speech|Did I mention I hate {s11}?
+str_npc25_personalityclash2_speech|Zmínil jsem se že nenávidím {s11}?
+str_npc26_personalityclash2_speech|Zmínil jsem se že nenávidím {s11}?
+str_npc27_personalityclash2_speech|Zmínil jsem se že nenávidím {s11}?
 ; str_npc18_personalityclash2_speech_b|That misshapen creature Gulm had better guard his neck, or I'll slice through it! I was about to slay a foe, but he stepped in front of me and made the kill that should have been mine. Then he had the gall to turn around and sneer at me! He and his kind had better remember that they were bred to serve us! Honourless curs.
-; str_npc19_personalityclash2_speech_b|I hate {s11}.
+str_npc19_personalityclash2_speech_b|Nenávidím {s11}.
 ; str_npc20_personalityclash2_speech_b|He cannot possibly be one of us. No, not one like Fuldimir. No, our blood cannot have thinned so much, our line cannot have fallen so far! Do none of you mark how little he speaks of the true speech, how in appearance he is much more like unto those of Haradwaith than of my lost home? We had heroes among us - heroes, who fought with swiftness and strength to rival the Eldar! Fuldimir is slow, and clumsy, and... No, I feel the cold wind blowing out of the West. It chills me... it chills me!
-; str_npc21_personalityclash2_speech_b|I hate {s11}.
-; str_npc22_personalityclash2_speech_b|I hate {s11}.
-; str_npc23_personalityclash2_speech_b|I hate {s11}.
+str_npc21_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc22_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc23_personalityclash2_speech_b|Nenávidím {s11}.
 ; str_npc24_personalityclash2_speech_b|I saw her cowering in the rear, barely releasing an arrow or two in the general direction of the enemy. I say let her go to take care of the birds and bees, so we can go on with the bloody work of slaying the enemy.
-; str_npc25_personalityclash2_speech_b|I hate {s11}.
-; str_npc26_personalityclash2_speech_b|I hate {s11}.
-; str_npc27_personalityclash2_speech_b|I hate {s11}.
+str_npc25_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc26_personalityclash2_speech_b|Nenávidím {s11}.
+str_npc27_personalityclash2_speech_b|Nenávidím {s11}.
 ; str_npc18_personalitymatch_speech|Great One, do you mark how deadly Lykyada is in battle? How swift his arrows, how sharp his blade! With your permission, Great One, I should like to spend more time training under his tutelage. He has much he could teach me that could make me more useful to you.
 ; str_npc19_personalitymatch_speech|The joy of battle sings in my blood! And in Varfang's too, I can see. The man is a terror to behold on the battlefield, laughing as he rides down the worthless foes who flee. These men from the East intrigue me, Commander. We could learn much of horsemanship from them, if the Rohirrim will not teach the Dunlendings after I come into my own.
 ; str_npc20_personalitymatch_speech|Behold Bolzog. Bolzog the Great! See how he scurries with his bow-legged gait, coming and going at my whim, doing everything I ask of him. Just as a proper little 'urku' should, I say. I quite like him, Commander. Bolzog! Bring me the unguent! Now!
 ; str_npc21_personalitymatch_speech|A battle of great deeds, commander, and my congratulations on the victory. I noticed how {s11} quietly and surely took care of the wounded and ailing, even as the last of the enemy got what they deserved.
-; str_npc22_personalitymatch_speech|Did I mention I like {s11}?
+str_npc22_personalitymatch_speech|Zmínil jsem se že mám rád {s11}?
 ; str_npc23_personalitymatch_speech|{playername}, as much as I hate battles, I can't help but notice my Lord {s11} riding out in full splendor and bearing down on the ugly creatures like a hawk.
 ; str_npc24_personalitymatch_speech|Bloody and victorious, just as I like it! I did, however, sustain a flesh wound that {s11} was kind enough to bandage promptly.
 ; str_npc25_personalitymatch_speech|Another victory for you, commander, and I admire your skill in sparing the lives of our men. Warriors like {s11} seem to be of great use in your battle plans.
-; str_npc26_personalitymatch_speech|Did I mention I like {s11}?
-; str_npc27_personalitymatch_speech|Did I mention I like {s11}?
+str_npc26_personalitymatch_speech|Zmínil jsem se že mám rád {s11}?
+str_npc27_personalitymatch_speech|Zmínil jsem se že mám rád {s11}?
 ; str_npc18_personalitymatch_speech_b|Great One, it speaks well of you that a warrior like Lykyada fights under your banner. I had thought all Southerners weak and decadent, not so different from the men of the West, but if they have more like him among their ranks, then the days of the West are indeed coming to an end.
 ; str_npc19_personalitymatch_speech_b|Commander, Varfang and I were sharing a skin of wine around the campfires last night. Deep-counselled I deem him, for ever mindful is he of the deeds of his forebears, as one should be. I know not if, as he says, the spirits of our ancestors are with us. Indeed, I like not the thought. But a king must know the story of his blood, of mothers and fathers aforetimes. Varfang is one such who knows this.
 ; str_npc20_personalitymatch_speech_b|I have never met an 'urku' quite like Bolzog. Oh, I grant you he is unlovely to look upon, but in all my long years he is the first one I've ever encountered who can do more than simply sneak, skulk and slaughter. His gnarled hands are surprisingly deft. Yes, so surprisingly deft... It may be that he can learn more of the arts of bone and sinew than I had reckoned at first.
 ; str_npc21_personalitymatch_speech_b|To preserve lives is the noblest deed, and I feel kinship with that kind soul, even if our worlds are far apart.
-; str_npc22_personalitymatch_speech_b|I like {s11}.
+str_npc22_personalitymatch_speech_b|Mám rád {s11}.
 ; str_npc23_personalitymatch_speech_b|I wonder just how old is he. Maybe a dozen of centuries older than me? Never mind, you wouldn't understand.
 ; str_npc24_personalitymatch_speech_b|{s11} and her Dale-kin, even if not quite up to dwarven warrior standards, have proven to be steadfast allies in this War. A good choice for a friend and companion among Men, if I may say so.
 ; str_npc25_personalitymatch_speech_b|The people of Dale have a deep regard for the hardy Lonely Mountain Dwarven-folk, as friends and protectors despite our different race and customs.
-; str_npc26_personalitymatch_speech_b|I like {s11}.
-; str_npc27_personalitymatch_speech_b|I like {s11}.
+str_npc26_personalitymatch_speech_b|Mám rád {s11}.
+str_npc27_personalitymatch_speech_b|Mám rád {s11}.
 ; str_npc18_retirement_speech|I think I want to settle down and raise a family and, I dunno, do embroidery or shit. Bye.
 ; str_npc19_retirement_speech|Listen, strange men standing around claiming royal bastardy is no basis for a system of government.
 ; str_npc20_retirement_speech|Maybe anger isn't the way. All we need is love. Why can't we all get along?
@@ -2245,7 +2450,7 @@ str_npc25_payment_response|Kralovo zdravi je dulezite, ale se mnou zachranis mno
 ; str_npc24_rehire_speech|My axe is ready, {playername}. Shall I rejoin you?
 ; str_npc25_rehire_speech|You are a welcome sight. Shall I join you once again?
 ; str_npc26_rehire_speech|Gulm is ready to kill for you again. Are we going?
-; str_npc27_rehire_speech|Can I serve you once again?
+str_npc27_rehire_speech|Mohu ti zase posloužit?
 ; str_npc18_home_intro|Ah, the Anduin. Great One, you will have heard of the great victories of the Wainriders many generations ago? They made an alliance with us Variags, and together our warriors crushed the pitiful armies of Gondor, under the king they called Ondoher. What a glorious slaughter our forefathers must have enjoyed!
 ; str_npc19_home_intro|Ah, Edoras. My rightful seat. Look up there, Commander, at the Golden Hall. Only a few generations ago, it was at the very doors of Meduseld that the last son of Helm Hammerhand was slain, and thereafter Wulf was King, for a time. Not the Wulf who is a Chief of Dunland now, of course - that one is a mere mongrel bearing the name of a greater creature.
 ; str_npc20_home_intro|Ah, the Lonely Mountain. The last bastion of Durin's Folk, is it not, in these latter days? It is pleasant to see it with my own eyes at last. Pleasant, yes... but not as pleasant as the memory of that Dwarf's dying moments, which I made longer with my arts. Hardy are the Dwarfs, indeed! Yet Aulë the Maker did them no favours in making them so capable of suffering.
@@ -2255,7 +2460,7 @@ str_npc25_payment_response|Kralovo zdravi je dulezite, ale se mnou zachranis mno
 ; str_npc24_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
 ; str_npc25_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
 ; str_npc26_home_intro|Curses! That must be Hornburg over there, master.
-; str_npc27_home_intro|Hey, look!
+str_npc27_home_intro|Hej, podívej!
 ; str_npc18_home_description|Our wise ones told us all about that war. If it hadn't been for the weakness of the Southerners, losing a battle they should have won, the Gondorians would never have won the Battle of the Camp. The chariots of the Wainriders were smashed, and many fierce heroes died in the swamps of the Dead Marshes.
 ; str_npc19_home_description|I would see our peoples united, as they have been in the past. No more will women of dun hair nurse sickly babies at their bosoms, while their fair-haired cousins feast on meat and swoon from wine in warm halls. No more will the black-haired hill man look with resentment upon the herds of horses owned by a crofter with hair of gold. As king, I will see justice done - but first, let the tyrants of Rohan pay their weregild.
 ; str_npc20_home_description|I remember him well - Thráin, son of Thrór. Foolhardy, vainglorious would-be scion of a broken line, claimant of a worthless throne! Great torment he endured at my hands. But no one withstands the will of Zigûrphel for long, Commander. No one. I took his Ring from him, in the dungeons of Dol Guldur, and sent it on to the Dark Tower for a great reward. High I rose then, in the Dark Lord's favour!
@@ -2286,13 +2491,100 @@ str_npc25_payment_response|Kralovo zdravi je dulezite, ale se mnou zachranis mno
 ; str_npc25_home_recap|I am a healer and a herbalist from Dale.
 ; str_npc26_home_recap|Gulm will tell you if you must know. But talk doesn't make enemies dead.
 ; str_npc27_home_recap|I'll make this short.
-; str_npc18_honorific|Great One
-; str_npc19_honorific|Commander
-; str_npc20_honorific|Commander
+str_npc18_honorific|Hrůzný
+str_npc19_honorific|Velitel
+str_npc20_honorific|Velitel
 str_npc21_honorific|velitel
 str_npc22_honorific|velitel
-str_npc23_honorific|valecnik
-; str_npc24_honorific|captain
+str_npc23_honorific|vválečník
+str_npc24_honorific|kapitán
 str_npc25_honorific|velitel
-str_npc26_honorific|Pan
-str_npc27_honorific|Pan
+str_npc26_honorific|Mistr
+str_npc27_honorific|Mistr
+; str_gondor_guildmaster_companion_player_ask|By leave of the Lord of Gondor, I seek valiant confederates. Are there such in this place?
+; str_gondor_guildmaster_companion_none|Nay, Commander. What valour we have is needed to defend our own walls. You may go to the barracks and find soldiers of courage and experience - mayhap more the former than the latter, I fear. Ever have we been traders, crafters and farmers. The finest of our soldiers go to the capital to enlist - perhaps you should try the White City.
+; str_gondor_guildmaster_companion_player_none_ok|Very well. I thank you for your counsel.
+; str_gondor_guildmaster_player_found_ok|I thank you. May the good will of all good people go with you.
+; str_gondor_mt_guildmaster_companion|Why, Commander, there is one, and gladly shall I tell you of him; he is a gate guard, by the name of Cirdil, and even now I warrant you’ll find him at his rounds. He is dutiful and brave - but I spoke with him of late, and it seems to me he wishes to do more than simply stand his watch on the walls while the Shadow gathers beyond them. Surely he will be happy to venture out from the White City in your company.
+; str_gondor_ha_guildmaster_companion| Indeed there are. High in the esteem of our Captain Faramir are two of our commanders, Mablung and Damrod. Damrod is away at our Captain’s behest; but Mablung may be found in the cave yonder, a little way along this path here. We Rangers know much of woodlore and archery; Mablung stands above many of us. He is a man of prowess, and accounted one of our finest. Mayhap he will be given leave to accompany you for a time.
+; str_rohan_guildmaster_companion_player_ask|By leave of Theoden King, I seek the aid of valiant Rohirrim. Will any stout warriors here follow me?
+; str_rohan_guildmaster_companion_none|It were better if you sought to bring aid, rather than asked for it. Horses, swords, spears - these things we need at present. As for your question: go to the barracks. There you will find those of our people willing to ride forth, such as they are - many beardless youths still, and still others unskilled herders and tenders of flocks.
+; str_rohan_guildmaster_companion_player_none_ok|I do take thought for your people as well, Thain. Farewell.
+; str_rohan_guildmaster_player_found_ok|That counsel seems good to me. Health be with thee at thy coming and going!
+; str_rohan_edoras_guildmaster_companion|Indeed, there may be. Dark indeed must the days become before our women ride out to war alongside the menfolk - yet our fearless and high-hearted Lady Eowyn, whom all love, rides and fights as well as any Marshal. Some shieldmaidens have trained with her from childhood, and several may be found around the Golden Hall. Hardy indeed are our women! Seek one called Galmyne - she is skilled in many arts of war, and goes about like a mare chafing at an ill-fitting bridle, for she has not been given leave to ride out with the men.
+; str_lorien_guildmaster_companion_player_ask|Elder, I seek aid. The least among the Elves of Lorien fight like heroes of old; will any here join my cause?
+; str_lorien_guildmaster_companion_none|Evil has been seen and heard even here, among the mallorn-trees; sorrow has been known. In happier days we plucked the strings of harps; in these days we have indeed become skilled at the plucking of bowstrings. I cannot speak of heroes among us, but you should speak to the commander of our garrison here. Perhaps some few of our people may consent to join you for a time.
+; str_lorien_guildmaster_companion_player_none_ok|I had hoped for fairer words in this fair land of yours. But it shall be as you say, Elder.
+; str_lorien_guildmaster_player_found_ok|I thank you for your counsel, Elder. Tiro ven Elbereth!
+; str_lorien_ca_guildmaster_companion|Nan Belain, here is a wonder indeed! At any other time I might have had naught but disappointment for you, but now in the company of the Lord and Lady of the Wood stands none other than the Lord Glorfindel, hero of more battles than even I can remember. I know little of such a great champion’s purpose here - he arrived with the host of Elrond, Lord of Imladris, and his own counsel he keeps, speaking only with Lord Celeborn and Lady Galadriel. Seek him out, Commander. Perhaps his cause may be joined to yours.
+; str_beorn_guildmaster_companion_player_ask|Your advice, good fellow - are there any warriors of remarkable prowess here?
+; str_beorn_guildmaster_companion_none|Well, I don’t know about that. Your question isn’t very clear. What kind of “remarkable prowess” do you want that you can’t find among our garrison, I ask you? We fight with stout staves and sharp hatchets, we shoot well enough with bows. I don’t know what more you could ask for.
+; str_beorn_guildmaster_companion_player_none_ok|Well, then, I suppose I’d best be off. Good day to you, woodsman.
+; str_beorn_guildmaster_player_found_ok|I see. Well, I shall look around for this “Dimborn”. Good day to you, woodsman.
+; str_beorn_house_guildmaster_companion|Well, now, there’s a question. I’d say any of us could fight off a goblin or warg well enough, but our chief’s nephew is stouter than most. Spends most of his time just staring at trees, though. Or at nothing in particular. More thew than thought, if you take my meaning. Still, he’s gentle with his friends but fierce to his enemies, as one should be. Walks the woods as well as any Elf, I’d say. We call him Dimborn; not to be unkind, you understand, but we like calling things and people what they are. He ought to be around here somewhere.
+; str_woodelf_guildmaster_companion_player_ask|By leave of Thranduil Elvenking, I seek champions of the Greenwood to fight in my command, Elder.
+; str_woodelf_guildmaster_companion_none|Indeed? Then you may ask those of our garrison, and mayhap some will be willing to follow you. But I sense your desire runs deeper than that. Do you fancy yourself a great hero, like those from Nargothrond or Gondolin of old? Our finest warriors are needed to guard against the growing shadow in Mirkwood. Take with you what soldiers we can spare, and be content.
+; str_woodelf_guildmaster_companion_player_none_ok|Very well, Elder. As you say.
+; str_woodelf_guildmaster_player_found_ok|I thank you for your counsel, Elder. Navaer!
+; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit - she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands - you may speak with her. Harthon gerithach lend vaer!
+; str_dale_guildmaster_companion_player_ask|Good master, I seek stout warriors of prowess to fight beside me in this war.
+; str_dale_guildmaster_companion_none|Well, now. Here in our town, we have always plied our trades and managed our affairs quietly, and not until recently have we had a great need for fighting men. I suppose you might ask at our barracks, and find what recruits you can from our garrison. I know of none among our captains here who would abandon his post to follow you.
+; str_dale_guildmaster_companion_player_none_ok|I will do that, good master. Farewell to you.
+; str_dale_guildmaster_player_found_ok|Oft the unbidden gift proves the best value. I will speak to Faniul. Farewell!
+; str_dale_main_guildmaster_companion|Well, the King and his Lords have the best claim on the service of good captains. I don’t know that any of great renown are left to follow you - but are mere fighting men all you need? What about binders of wounds, versed in herblore? I know of one such - Faniul, personal healer to the King. She was midwife to my sister - and do not look askance at her age: she is of stout heart and sturdier than she looks. I warrant she’ll bear up well under the strains of travel. Why, I think I see her taking her ease over there, in this courtyard.
+; str_dwarf_guildmaster_companion_player_ask|Good master, there seem to be some valiant warriors here. Will any follow my company?
+; str_dwarf_guildmaster_companion_none|Well, you’re not wrong, there, about our skill in battle, but aren’t our lads from our garrison here good enough for you? Apart from them, I don’t know anyone else who might satisfy you - you talk as though you were a king of some sort, looking for a great champion, like in the old days. Valiant is as valiant does, say I!
+; str_dwarf_guildmaster_companion_player_none_ok|You needn’t get so annoyed, good master, I was simply asking. Good day to you.
+; str_dwarf_guildmaster_player_found_ok|That is excellent to hear, good master. Good day to you!
+; str_dwarf_erebor_guildmaster_companion|Oh ho! It’s warriors you’re after, are you? Then I have just the Dwarf for you: look for one Kili Goldfinger. A most excellent and audacious Dwarf he is, and a credit to his clan. Fights almost as well as a Longbeard, though he’s still fairly young as we reckon it. Quite good at story-telling, too, and he favours the cheerful sort of tale. Go and have a talk with him - I shouldn’t think he needs much persuading to follow you out into the wide world and do his bit for the war. Now, let me see… he’s not down here at the moment. Not the Great Chamber, either. The upper halls, perhaps - look for him there.
+; str_rhun_guildmaster_companion_player_ask|I heard there were great warriors here. Where are they? Who are worthy to join me?
+; str_rhun_guildmaster_companion_none|Not all our warriors here are blooded, but each of them is stronger and braver than any ten Dalishmen! Go and ask the arms master to see if he can spare any for you.
+; str_rhun_guildmaster_companion_player_none_ok|I ask for great warriors, and you show me drinkers of mother’s milk. Pah!
+; str_rhun_guildmaster_player_found_ok|That is good to hear. Finally - a warrior with spirit!
+; str_rhun_maincamp_guildmaster_companion|Our greatest swordbearers and riders fight in the retinues of our warlords. But there is one who has found favour with none of our chiefs so far. Not because he is weak; far from it! He does not curb his tongue when he speaks, and he has spoken loudly against our chieftains, saying they are slow to act and over-cautious. If he had his way, I wager the countryside would be covered in flames by now. His name is Varfang, and he spends his hours training near the prisoner cages, not far from this tent.
+; str_guldur_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
+; str_guldur_guildmaster_companion_none|O ho! What do we have here? A great captain, are you? I reckon your bark’s worse than your bite, and no mistake. Orders are orders: you draw your troops from our garrison here, and that’s that. Keep talking like that where they’ve got ears to hear, though, and someone will stick a knife in your back one of these days, see if they don’t.
+; str_guldur_guildmaster_companion_player_none_ok|You’ll watch your words with me, if you know what’s good for you.
+; str_guldur_guildmaster_player_found_ok|Scared witless by this woman, are you? I’ll go see if she’s all you make her out to be. This had better not be a waste of my time!
+; str_guldur_main_guildmaster_companion|We’ve got stout lads aplenty, curse you. Ha… I know what you’re really after. Oh yes, indeed, I know just where you should go, Commander. See that cave over there, with steps leading down? If our boys get hurt badly enough we send them down there, and I reckon almost a third of them make it back up, har! They can do very strange things, down there… and that one in particular, the woman… she gives me the shivers, and that’s saying something. They say she’s got something to do with Number One, or even Higher Up, if you take my meaning. Talk to her, if you dare.
+; str_moria_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
+; str_moria_guildmaster_companion_none|Proper warriors, {she/he} says! I reckon any of our snaga could give any of your lubbers a good drubbing. We’re a tough lot, we are, and no mistake. Go speak to our barracks master - but speak with respect, mind, or you’ll not get our stout fellows to follow you. Knife you as soon as your back is turned, if you don’t speak proper.
+; str_moria_guildmaster_companion_player_none_ok|I’ll speak how I like to the lot of you. I save my respect for those much Higher Up than your sort!
+; str_moria_guildmaster_player_found_ok|Garn! A sawbones, you say? Among this lot? All right, I’ll have a talk with him, but you’d better hope you aren’t telling me a crock of rubbish.
+; str_moria_main_guildmaster_companion|Ha! Losing more than you can keep, are you? Throwing our stout lads into the meat grinder, and then cursing when you find you haven’t got enough left to win your battles? A right splendid commander you are, oh yes. Very well - look over there! I’ll give you a helpful hint now, and you’ll remember it, yes? You see that fellow on the crates, the one with blood all over his hands, muttering to himself? Not much of a killer, but where’s the blood from, I hear you ask? Why, it’s the blood from some of our fighters he’s helped put back on their feet. He’s a sawbones, that one. You’ll see for yourself, the next time you lead your troops into another mess and find you need some stitching done.
+; str_isengard_guildmaster_companion_player_ask|I’ve heard about the fighting Uruk-hai. So far, I’m not impressed. Where are the greatest among them?
+; str_isengard_guildmaster_companion_none|Leading patrols and armies of their own, no doubt - why would they lower themselves to fight under your command? They’ve got their own Orders to follow, from Higher Up. If you want fighting lads, go talk to the garrison chief! We’ve got stout fellows aplenty.
+; str_isengard_guildmaster_companion_player_none_ok|This rabble isn’t what you make it out to be. Stout fellows? Fighting lads? Snagas aplenty, more like. Slavering swine.
+; str_isengard_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!
+; str_isengard_main_guildmaster_companion|A great commander you are, it is plain to see, and wisely do you choose to take only the bravest and most skilled fighters under your banner. And yet, if you will take my counsel - a battle is won not merely with iron and sinew, Commander, but with guile and foreknowledge of the foeman’s doings, his comings and goings. We have a scoutmaster here, an Orc who has sworn allegiance to Saruman the Great. I have heard that he spent many years in the Misty Mountains, catching and taming wargs. A skilled tracker and hunter is Durgash. You will find him a most useful helper, Commander. Look - I see him, standing near the warg pit.
+; str_isengard_hunting_camp_guildmaster_companion|O ho! So you think our finest lads should humble themselves and take orders from you, do you? You’re a bold one, and no mistake. I know just the fellow for you. Calls himself Gulm, and he’s a proper fierce one, he is. Never seen anyone take so much pleasure in bashing in skulls and breaking bones with that mallet of his. And the more foes he kills, the more savage he seems to get. I don’t rightly know where he is at the moment, though - but he’s in this camp for sure, trying not to attract attention for some reason. Does that sound suitable for you, O Great Commander, taking an Uruk-hai berserker into your camp?
+; str_dunland_guildmaster_companion_player_ask|So, these are the Men of the hills who serve the White Hand! A sorry-looking lot. Where are your fighters of note?
+; str_dunland_guildmaster_companion_none|Following those greater than you, no doubt. If you want warriors, speak to the training masters. See for yourself if any of our young pups will follow you into battle.
+; str_dunland_guildmaster_companion_player_none_ok|Curs and whelps! It is no wonder your people were driven into the hills by the men of Rohan.
+; str_dunland_guildmaster_player_found_ok|A treacherous wolf, I would hardly keep by my side. But a tame hunting dog, I might consider. Let me see which one this Heidrek proves to be.
+; str_dunland_main_guildmaster_companion|Despise us at your peril! Even a wretched cur will snap at your heels in a fight. We will have our vengeance on the Forgoil and their allies - and likely it will be Heidrek whom we’ll follow into Edoras. He’s a mongrel, that one - says he’s the grandson of a strawhead king, for all that he looks no different from any of us. He’s a terror in the training yard. If Chief Daeglaf doesn’t watch his back he just might find Heidrek’s spear in it one of these days. Maybe he’ll deign to follow you, if he thinks you’re worth his time. Look for him at the main campfire, where our chieftains stand.
+; str_khand_guildmaster_companion_player_ask|I heard there were great warriors here. Where are they? Who are worthy to join me?
+; str_khand_guildmaster_companion_none|Those who have earned their death masks wish to follow commanders of still greater renown, but you may look for new recruits among our pitfighters and levies. Do not presume more than your station, Commander! 
+; str_khand_guildmaster_companion_player_none_ok|I ask for warriors and you show me pit slaves and unblooded peasants. Waste my time at your peril.
+; str_khand_guildmaster_player_found_ok|She sounds like a killer, right enough - but can her ferocity be leashed to useful purpose? We shall have to see.
+; str_khand_main_guildmaster_companion|So you want great warriors? We have them aplenty. But let me tell you of one whose savagery even we find astonishing. Her name is Turmbathu - yes, a woman! I would not have believed it myself had I not seen her in the fighting pit with my own eyes. Defeated three men at once, and killed one of them. Unfortunate, that - the one she killed was a son of Great Lord Lurmsakun, and so now you may find her among the prisoners, awaiting a painful death… unless you, Commander, can intercede. Such a pity, to waste such strength.
+; str_umbar_guildmaster_companion_player_ask|So, the people here fancy themselves heirs of greatness, do they? Can anyone here stand proof of such claims?
+; str_umbar_guildmaster_companion_none|You come at the wrong time, Commander. Now we’re all basking in the glory of capturing this holding, and working out the equitable distribution of its wealth - to put it another way, the captains are all at one another’s throats, heated words are being said, and it will not be long ere blood of Umbar is spilled by Umbar hands. Some of the sailors are unhappy, and may consent to follow you instead of their former captains. That’s the best I can do for you at the moment, Commander.
+; str_umbar_guildmaster_companion_player_none_ok|Disappointing. But not unexpected of sea-dogs. I shall have to look elsewhere for the quality I seek.
+; str_umbar_guildmaster_player_found_ok|A corsair with a code of honour! Not unheard of, but not often found. I care only that he will go where I command, and kill as I instruct.
+; str_umbar_main_guildmaster_companion|Why, if I guess aright you seek the finest fighters among us to join your ranks. After the recent burning of our Haven, I’m afraid our best sailors and raiders follow only our most experienced captains. But I have a friend, named Fuldimir, who has been passed over for promotion too many times, to my mind. It’s that strange way of thinking he has - he will not steal, he says, from any who still draw breath. Where’s the sense in that, I ask you? Still, he is handy with a cutlass, and as tough as any hardy seafarer. Here he is, in this tent - you may speak with him.
+; str_mordor_guildmaster_companion_player_ask|So, these are the finest in the Black Land, are they? Not much to look at. Tell me who’s actually useful in a scrap.
+; str_mordor_guildmaster_companion_none|O ho, a mighty champion is here, I see! And of course, the mighty champion wants only the very best fighters, and no mistake! Well, well! Maybe you’ll find that some of the lads here have plans of their own, to rise high in the sight of the Eye. Maybe you’ll find Lugbúrz thinks a little better of them than of you. Won’t surprise me, ha! Why don’t you just go along to the barracks and requisition your troops like everyone else.
+; str_mordor_guildmaster_companion_player_none_ok|Oh, I’ll remember this slight, mark my words. Do me a good turn, and I’ll not forget it, but speak uncivilly to me, and you’ll soon see what I can do about that.
+; str_mordor_guildmaster_player_found_ok|Well, I’ve struck a bit of luck at last, I see! You’ve done well. I’ll report your contribution.
+; str_mordor_morgul_guildmaster_companion|You’ll want an Uruk for that, mark my words. The best fighters for sure in this sorry-looking lot. Now, if you’re looking for a trusty lad to watch your back in a fight, I’ll tell you straight: you’ll not find better than old Gorbag. Used to be a comrade of mine, before I got assigned here, a while after the Great Signal went up. Now that he’s off the patrol lists, he could join up with you right enough. He ought to be up there somewhere, by that big ruined Tower where the Bosses meet to talk sometimes. Looking down at the rest of these dunghill rats - he likes to do that, he does, ha!
+; str_harad_guildmaster_companion_player_ask|I heard there were great warriors here. Where are they? Who are worthy to join me?
+; str_harad_guildmaster_companion_none|It is not accordant to our creed for our greatest to join with such as thee, O Commander. In the world, there are the great and the small; for soldiers such as ourselves, always we stand in this relation to one another. I counsel you to seek out those who could learn from you in battle; it is better not to try yoking a mighty stallion to a weakly-made plow, for the stallion would then destroy the plow, to the detriment of all.
+; str_harad_guildmaster_companion_player_none_ok|If I understand you correctly, you’ve just disrespected me. I’ll remember this.
+; str_harad_guildmaster_player_found_ok|I see. I hope this Lykyada is as great a warrior as you say he is.
+; str_harad_main_guildmaster_companion| I heard a story around the fires: when the Black Serpent called his bannermen, who are some of our finest horse archers, many boasted of how all the treasures of the West would soon be theirs; but one whom we call Lykyada stood apart and remained silent. And when they asked him what he hoped to take from the West, he stooped, scooped up a handful of sand, and said, “What do I require that the land of my birth has not already given me? Behold, I make a gift to them of the sand on which I have stood.” And so saying, he let the wind from the east blow the sand away, into the west. Then all who heard this repented of their injudicious words, and swore to follow his lead. If he finds you worthy, Commander, he may follow yours. Look for him where he stands in attendance upon our chieftains.
+; str_rohan_hornburg_guildmaster_companion|All here at the Hornburg have their given duties, Commander - all save one, I should say. Maybe that one will ride out with you, for otherwise he should be lucky if another Éored will consent to have him! A drunken sot is our Ulfas - good cheer he brings to his comrades, and he is a skilled Rider, but loth is he to set down a tankard without first draining it! Look for him in the hall yonder, if that does not trouble you.
+; str_imladris_guildmaster_companion_player_ask|Elder, I seek the aid of renowned warriors, Man or Elf, from the fabled North.
+; str_imladris_guildmaster_companion_none|Look well, Commander. Before you is perhaps the last great muster of the North, in this Age and any Age hereafter. Man and Elf alike, we who have come here do not hope to return. From the Last Homely House we have come; from the vales and forests of Eriador the last of the Núnatani, whom you call Dúnedain, have come. Each of us has his appointed tasks - none may follow you as you wish, save that you exercise your writ and recruit from our garrison. 
+str_imladris_guildmaster_companion_player_none_ok|Rozumím Starší. Děkuji za tvůj čas.
+str_imladris_guildmaster_player_found_ok|Rozumím Starší. Děkuji za tvůj čas.

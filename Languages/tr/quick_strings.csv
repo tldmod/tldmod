@@ -217,7 +217,7 @@ qstr_+1_to_Leadership|+1 Liderlige
 qstr_+1_to_Wildcraft|Yaban Ustası'na +1
 qstr_+1_to_Power_Draw|+1 Güçlü Vuruşa
 qstr_The_record_of_Balin_|Balin'in kayıp seferinin kayıtları
-; qstr_Who_might_be_interes|Who might be interested in this?
+qstr_Who_might_be_interes|Kim bununla ilgilenebilir?
 qstr_Turns_nature_to_your|Dogayı sizin tarafınıza çevirir (efektler Wildraft ile şekillenir)
 qstr_+1_to_Trainer|Talimcilige +1
 qstr_Recruits_Tribal_Orcs|Kabile Orklarını Topla
@@ -226,15 +226,15 @@ qstr_rallies|toparlamak
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} Savaşta
 qstr_+1_to_Charisma|Karizmaya +1
 qstr_+1_to_Surgery|Cerrahlıga +1
-; qstr_+1_to_Intelligence|+1 to Intelligence
+qstr_+1_to_Intelligence|Zeka yetenegine +1
 qstr_+1_to_Ironflesh|Demirvücuda +1
 qstr_+1_to_Prisoner_Mgmt|Esir yönetimine +1
 qstr_when_equipped|Kullanıldıgında
-; qstr_+1_to_Riding|+1 to Riding
-; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_+1_to_Riding|Binicilik becerisine +1
+qstr_+1_to_Mounted_Archer|Atlı okçuluk becerisine +1
 qstr_+2_to_Tactics|Taktik becerisine +2
 qstr_+3_to_Spotting|Tespit etmeye +3
-; qstr_+2_to_Athletics|+2 to Athletics
+qstr_+2_to_Athletics|Atletizm becerisine +2
 qstr_Less_Dunnish_upkeep|Dunnishlere daha az bakım
 qstr_Less_Wargs_upkeep|Warglara daha az bakım
 qstr_Light_Armor|Hafif Zırh
@@ -1405,7 +1405,7 @@ qstr_I_m_sorry_but_we_can|Üzgünüm, ama şu anda onlara yardım edemeyiz.
 ; qstr_Bah!_Far_more_glory_|Bah! Far more glory to be won elsewhere than with paltry piracy.
 qstr_This_raid_does_not_i|Bu baskın beni ilgilendirmiyor. Başka bir yerde zafer kazanacagım.
 qstr_{s9}_asked_you_to_de|{s9} sizden {s1} yakınındaki bir keşif kampını imha etmenizi istedi.
-; qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
+qstr_Your_party_must_be_at|Bu göreve başlamak için grubunun en az 10 asker gücünde olması gerekiyor
 qstr_{s9}_asked_you_to_def|{s9}, senden {s1} yakınında saldırı altındaki bir köyü savunmanızı istedi.
 qstr_{s9}_asked_you_to_ra|{s9} sizden {s1} yakınındaki bir köye baskın yapmanızı istedi.
 qstr_These_soldiers_may_w|Bu askerler planlarımda kötü gidebilecek şeyleri tamamen degiştirebilirler, {playername}.Onları iyi egittiginden şüphem yok.Sana teşekkürlerimi ve sayılarımı sunarım.

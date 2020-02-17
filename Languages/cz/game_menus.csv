@@ -41,8 +41,8 @@ mno_leave_custom_battle_2|Zrušit.
 menu_custom_battle_end|^^^^^^Bitva skončila. {s1} Tvá strana zabila {reg5} nepřátel a ztratila {reg6} jednotek během bitvy.^Ty sám jsi zabil {reg7} protivníku v boji.
 mno_replay|Znovu hrát tuto bitvu.
 mno_continue_dot|Pokračovat.
-menu_custom_battle_durin_end|^^^^^^Byl to obdivuhodný vzdor, ale nakonec zahubený^^ Ty a tvoji příbuzní jste zabili {reg5} nepřátel.^Ty osobně si zabil {reg7} nepřátel v boji.
-mno_replay_cbd|Znovu hrat tuto bitvu.
+menu_custom_battle_durin_end|^^^^^^Byl to obdivuhodný poslední vzdor, ale nakonec neúspěšný^^ Ty a tvoji příbuzní jste zabili {reg5} nepřátel.^Ty osobně si zabil {reg7} nepřátel v boji.
+mno_replay_cbd|Znovu hrát tuto bitvu.
 mno_continue_dot_cbd|Pokračovat.
 mno_dot_go_back|. Jdi zpět
 menu_start_good|^^^^^^^^^^Zvol si rasu:
@@ -59,7 +59,7 @@ mno_start_ur|SKURUT, nove skřetí plémě
 mno_start_em|ČLOVĚK, zotročený Sauronem
 menu_start_hand|^^^^^^^^^Tvým pánem je Bílá Ruka^Zvol si rasu
 mno_start_whor|SKŘET, sloužící Bílé Ruce
-mno_start_isur|jeden z URUK-HAI, vychován v Isengard
+mno_start_isur|jeden ze SKURUT-HAI, vypěstován v Železném pasu
 mno_start_duma|ČLOVĚK z Vrchoviny, ze Západních plání
 menu_start_good_man|^^^^^^^^^^Zvol svůj lid:
 mno_start_go|GONDOR, království Bílé věže
@@ -124,17 +124,17 @@ mno_camp_action|Použít předmět.
 mno_camp_wait_here|Nějakou dobu tady tábořit.
 mno_camp_options|Změnit NASTAVENÍ TLD.
 mno_Dev_Menu|Menu pro vývojáře
-menu_dev_menu|Tohle jsou Vývojářské nastavení, které vám dají hodně cheatů/nástrojů se kterými si můžete hrát.^^ Nicméně, to povede k některým WIP událostem, spoštěčům, změnám v kampani, které můžou vám můžou shodit hru^^ Používat jen na vlastní nebezpečí! ^^ Také, když nahlašujete bugy, řekněte nám prosím, jestli používáte Vývojářské menu.
+menu_dev_menu|Tohle je Vývojářské nastavení, které vám zpřístupní hodně cheatů/nástrojů se kterými můžete hrát.^^ Nicméně, to povede k některým WIP událostem, spoštěčům a změnám v kampani, které můžou způsobit pády hry^^ Používej je na vlastní nebezpečí! ^^ Také, když nahlašujete bugy, řekněte nám prosím, jestli používáte Vývojářské menu.
 mno_Cheat_enable|Zapnout cheaty/modderské nastavení.
 menu_game_options|^^^^^^^^Klikni na možnost pro přepnutí:
 mno_game_options_war_level_start|Válka začíná na úrovni: {s1}
 mno_game_options_restrict_items|Omezené hráčovo vybavení: {s7}
 mno_game_options_formations|Bitevní formace a speciální umělá inteligence: {s7}
-mno_game_options_siege_ai|Pokročilé obléhací AI: {s7}
+mno_game_options_siege_ai|Pokročilé obléhací UI: {s7}
 mno_game_options_town_menu|NPC ve městech vždy dostupná z Menu: {s7}
 mno_game_options_cutscenes|Příběhové filmečky: {s7}
 mno_game_options_injuries|Společníci mohou byt zraněni: {s7}.
-mno_game_options_death|Velitele vsech frakci a spolecnici mohou trvale zemrit: {s7}.
+mno_game_options_death|Velitele všech frakcí a společnici mohou trvale zemřít: {s7}.
 mno_game_options_death2|Hráč (TY!) může trvale umřít: {s7}.
 mno_game_options_morale|System bitevní morálky: {s7}
 mno_game_options_animal_ambushes|Divoká zviřata: {s7}
@@ -147,7 +147,7 @@ mno_game_options_start_back|Zpět.
 menu_camp_tweaks|^^^^^^^^Vyber možnost kterou chceš upravit.
 mno_tweak_options_compat|Úpravy kompatibility...
 mno_tweak_options_strat|Strategické úpravy...
-mno_tweak_options_battlefield_ai|Nastavení AI v boji
+mno_tweak_options_battlefield_ai|Nastavení UI v boji
 mno_tweak_options_back|Zpět do menu nastavení.
 menu_camp_compat_tweaks|^^^^^^^^Klikni na možnost pro změnu (podrž SHIFT k sníženi):^(tohle slouží k zvýšeni kompatibility s různými počítači a nejedna se o cheaty)
 mno_game_options_compat_party|Maximální množství skupin na mapě: {s1}
@@ -180,32 +180,32 @@ menu_fangorn_killed_troop_only|^^^^^^^^Procházíš hustým a temným lese. Tví
 mno_get_out|Musíme zmizet z tohoto prokletého místa!
 menu_can_capture_troll|Poražení divocí skřeti stále dýchají!^^Jejich ďábelské oči na tebe shlížejí, plné bolesti a zuřivosti.^I teď když byli poraženi, a leží bezmocně v kaluži jejich krve, stále vypadají velmi nebezpečně...
 mno_killit|Doraž to a ujisti se že je to mrtvé.
-mno_cageit1|Zamkněte to do klece a táhněte to s sebou.
-mno_cageit2|Zavři to do klece s ostatními skřety
+mno_cageit1|Zamkněte to do klece a táhněte to za sebou.
+mno_cageit2|Zavři to do klece s ostatními troly.
 mno_cheat_disabable|Vypnout cheaty/nastaveni módu.
 menu_drank_ent_water_human|^^^Napil jsi se vody. Chutná čistě a svěže. Má pižmovou vůni.^Cítíš se osvěžen.^^Nicméně, máš také zvláštní nepřirozený pocit. Něco ti říká, že bude lepší nikdy více nepít tuto vodu.
 menu_drank_ent_water_orc|^^^Napil jsi se vody. Je to prostě voda. ^Náhle jsi chytil své hrdlo v záchvatu bolesti.^Otráven!^Dusíš se, vyzvracíš černou krev a málem zemřeš.^^Bolí to, ó jak to bolí. 
 mno_i_shall_surv|Já... musím... přežít!
-menu_end_game|^^^^^Volba je vykonána a ty se rozhoduješ pro zanechání života dobrodruha a usídlíš se. Prodáš veškeré své zbraně a brnění, posbíráš svůj majetek a vyjedeš vstříc západu slunce.
+menu_end_game|^^^^^Volba je vykonána a ty volíš zanechání života dobrodruha a usídlení se. Prodáš veškeré své zbraně a brnění, posbíráš svůj majetek a vyjedeš vstříc západu slunce....
 mno_end_game_bye|Šťastnou cestu.
 menu_cattle_herd|Narazil jsi na nějaké lidi.
-mno_cattle_drive_away|Rozkázat jim aby tě následovali
+mno_cattle_drive_away|Rozkázat jim aby tě následovali.
 mno_cattle_stop|Přimět je aby zastavili.
 mno_leave|Odejít.
 menu_simple_encounter|^^^^^{s2}^Máš k dispozici {reg22} jednotek k boji proti jejich {reg11}.^^Bitva se odehrává v{s3}{s4}.^^Jaké jsou tvé rozkazy?
-mno_encounter_attack|{reg21?Zaútočte na ně:Připravte se čelit jim}.
-mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?attack:face them} bez tebe.
+mno_encounter_attack|{reg21?Zaútočte na ně:Připravte se jim čelit}.
+mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?zaútočili:se jim postavili} bez tebe.
 mno_control_allies_menu|Použij svůj vliv, abys velel svým spojencům v boji.
 mno_encounter_hide|Skryj se před nepřítelem...
-mno_special_whip|Spěchej kupředu, směrem k nim, praskající {s4}.
-mno_encounter_leave|uvolnit se od nepřítele.
-mno_encounter_retreat|Nech za sebou nějaké vojáky, aby kryli tvůj ústup.
+mno_special_whip|Spěcháte směrem k nim, praskající {s4}.
+mno_encounter_leave|uvolnit se.
+mno_encounter_retreat|Nechat za sebou nějaké vojáky, aby kryli tvůj ústup.
 mno_player_control_allies_simple|Zavel a zaútoč na nepřítele
 mno_player_control_allies_back|Jdi zpět...
 mno_hide_close|Pokračuj
-menu_encounter_retreat_confirm|^^^^^Jako nejzkusenejsi taktik v druzine,   ({reg2}), {reg3?navrhujes:{s3} navrhuje} plan, ktery tobe a tvym muzum umozni uprchnout a zachranit si zivot,   ale budes muset obetovat {reg4} vojáku, aby zastavili nepratelske pronasledovani.
-mno_leave_behind|Vykonat. Obětováním těchto mužů zachráníš ostatní.
-mno_dont_leave_behind|Ne. My nikoho neopustíme
+menu_encounter_retreat_confirm|^^^^^Jako nejzkušenější taktik v družině,   ({reg2}), {reg3?navrhuješ:{s3} navrhuje} plán, který tobě a tvým mužům umožní uprchnout a zachránit si život,   ale budeš muset nechat vzadu {reg4} vojáku, aby zastavili nepřátelské pronásledování.
+mno_leave_behind|Vykonat. Obětováním těchto zachráníš zbytek.
+mno_dont_leave_behind|Ne. My nikoho neopustíme.
 menu_encounter_retreat|^^^^^Prikazal jsi {reg4} svym vojakum zadrzet nepritele, zatimco ustupujes se zbytkem druziny.
 menu_order_attack_begin|Tvoje jedno se připravují na útok nepřítele
 mno_order_attack_begin|Dát příkaz k zahájení útoku.

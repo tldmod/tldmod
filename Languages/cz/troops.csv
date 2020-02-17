@@ -430,12 +430,12 @@ trp_i5_raider_of_rohan|Rohanský jezdec
 trp_i5_raider_of_rohan_pl|Rohanští jezdci
 trp_i6_warden_of_methuseld|Strážce Zlaté síně
 trp_i6_warden_of_methuseld_pl|Strážci Zlaté síně
-trp_ac3_skirmisher_of_rohan|Rohanský harcovník
-trp_ac3_skirmisher_of_rohan_pl|Rohanští harcovníci
-trp_ac4_veteran_skirmisher_of_rohan|Zkušený Rohanský harcovník
-trp_ac4_veteran_skirmisher_of_rohan_pl|Zkušení Rohanští harcovníci
-trp_ac5_elite_skirmisher_of_rohan|Elitní Rohanský harcovník
-trp_ac5_elite_skirmisher_of_rohan_pl|Elitní Rohanští harcovníci
+trp_ac3_skirmisher_of_rohan|Rohanský záškodník
+trp_ac3_skirmisher_of_rohan_pl|Rohanští záškodníci
+trp_ac4_veteran_skirmisher_of_rohan|Zkušený Rohanský záškodník
+trp_ac4_veteran_skirmisher_of_rohan_pl|Zkušení Rohanští záškodníci
+trp_ac5_elite_skirmisher_of_rohan|Elitní Rohanský záškodník
+trp_ac5_elite_skirmisher_of_rohan_pl|Elitní Rohanští záškodníci
 trp_ac6_skirmisher_guard_of_rohan|Člen Thengelovy gardy
 trp_ac6_skirmisher_guard_of_rohan_pl|Rohanská Thengelova garda
 trp_c4_lancer_of_rohan|Rohanský kopiník
@@ -458,10 +458,10 @@ trp_c6_rider_guard_of_rohan|Člen Eorlské gardy
 trp_c6_rider_guard_of_rohan_pl|Rohanská Eorlská garda
 trp_i6_2h_guard_of_rohan|Rohanský strážce Hlásky
 trp_i6_2h_guard_of_rohan_pl|Rohanští strážci Hlásky
-trp_dismounted_veteran_skirmisher_of_rohan|Rohanský zkušený harcovník
-trp_dismounted_veteran_skirmisher_of_rohan_pl|Rohanští zkušení harcovníci
-trp_dismounted_elite_skirmisher_of_rohan|Elitní Rohanský harcovník
-trp_dismounted_elite_skirmisher_of_rohan_pl|Elitní Rohanští harcovníci
+trp_dismounted_veteran_skirmisher_of_rohan|Rohanský zkušený záškodník
+trp_dismounted_veteran_skirmisher_of_rohan_pl|Rohanští zkušení záškodníci
+trp_dismounted_elite_skirmisher_of_rohan|Elitní Rohanský záškodník
+trp_dismounted_elite_skirmisher_of_rohan_pl|Elitní Rohanští záškodníci
 trp_dismounted_thengel_guard_of_rohan|Člen Thengelovy gardy
 trp_dismounted_thengel_guard_of_rohan_pl|Rohanská Thengelova garda
 trp_i1_harad_levy|Haradský odvedenec
@@ -490,8 +490,8 @@ trp_c4_harondor_light_cavalry|Harondorský lehký jezdec
 trp_c4_harondor_light_cavalry_pl|Harondorští lehcí jezdci
 trp_c5_harondor_serpent_knight|Rytíř zlatého hada
 trp_c5_harondor_serpent_knight_pl|Rytíři zlatého hada
-trp_ac3_harondor_skirmisher|Harondorský harcovník
-trp_ac3_harondor_skirmisher_pl|Harondorští harcovníci
+trp_ac3_harondor_skirmisher|Harondorský záškodník
+trp_ac3_harondor_skirmisher_pl|Harondorští záškodníci
 trp_ac4_harondor_horse_archer|Harondorský jízdní lukostřelec
 trp_ac4_harondor_horse_archer_pl|Harondorská lukostřelecká jízda
 trp_ac5_harondor_black_snake|Jízdní lukostřelec Černého hada
@@ -550,12 +550,12 @@ trp_i4_khand_pit_champion|Variagský šampion arény
 trp_i4_khand_pit_champion_pl|Variagští šampioni arény
 trp_i5_khand_pit_master|Variagský mistr arény
 trp_i5_khand_pit_master_pl|Variagští mistři arény
-trp_ac3_khand_skirmisher|Khandský harcovník
-trp_ac3_khand_skirmisher_pl|Khandští harcovníci
-trp_ac4_khand_vet_skirmisher|Khandský harcovník veterán
-trp_ac4_khand_vet_skirmisher_pl|Khandští harcovníci veteráni
-trp_ac5_khand_heavy_skirmisher|Variagský  těžký harcovník
-trp_ac5_khand_heavy_skirmisher_pl|Variagští těžcí harcovníci
+trp_ac3_khand_skirmisher|Khandský záškodník
+trp_ac3_khand_skirmisher_pl|Khandští záškodníci
+trp_ac4_khand_vet_skirmisher|Khandský záškodník veterán
+trp_ac4_khand_vet_skirmisher_pl|Khandští záškodníci veteráni
+trp_ac5_khand_heavy_skirmisher|Variagský  těžký záškodník
+trp_ac5_khand_heavy_skirmisher_pl|Variagští těžcí záškodníci
 trp_i1_corsair_youth|Umbarský námořník
 trp_i1_corsair_youth_pl|Umbarští námořníci
 trp_i2_corsair_warrior|Umbarský válečník
@@ -628,42 +628,42 @@ trp_warg_ghost_h|Obrovský vrk
 trp_warg_ghost_h_pl|Obrovští vrci
 trp_a2_isen_uruk_tracker|Skurut-hai stopař
 trp_a2_isen_uruk_tracker_pl|Skurut-hai stopaři
-trp_a3_isen_large_uruk_tracker|Velký skurut-hai stopař
-trp_a3_isen_large_uruk_tracker_pl|Velcí skurut-hai stopaři
-trp_a4_isen_fighting_uruk_tracker|Bojový stopař Uruk Hai
-trp_a4_isen_fighting_uruk_tracker_pl|Bojoví stopaři Uruk Hai
-trp_i6_isen_uruk_berserker|Bojový bersekr Uruk Hai
-trp_i6_isen_uruk_berserker_pl|Bojoví bersekři Uruk Hai
-trp_i1_isen_uruk_snaga|Novorozený Uruk Hai
-trp_i1_isen_uruk_snaga_pl|Novorození Uruk Hai
-trp_i2_isen_uruk|Uruk Hai ze Železného pasu
-trp_i2_isen_uruk_pl|Uruk Hai ze Železného pasu
-trp_i3_isen_large_uruk|Velký Uruk Hai ze Železného pasu
-trp_i3_isen_large_uruk_pl|Velcí Uruk Hai ze Železného pasu
-trp_i4_isen_fighting_uruk_warrior|Bojový válečník Uruk Hai
-trp_i4_isen_fighting_uruk_warrior_pl| Bojoví válečníci Uruk Hai
-trp_i5_isen_fighting_uruk_champion|Bojovík šampion Uruk Hai
-trp_i5_isen_fighting_uruk_champion_pl|Bojovníci šampioni Uruk Hai
-trp_i3_isen_uruk_pikeman|Kopiník Uruk Hai
-trp_i3_isen_uruk_pikeman_pl|Kopiníci Uruk Hai
-trp_i4_isen_fighting_uruk_pikeman|Bojový kopiník Uruk Hai
-trp_i4_isen_fighting_uruk_pikeman_pl|Bojoví kopiníci Uruk Hai
-trp_i5_isen_uruk_standard_bearer|Kourouhevník Uruk Hai
-trp_i5_isen_uruk_standard_bearer_pl|Kourouhevníci Uruk Hai
-trp_i1_mordor_uruk_snaga|Uruk snaga z Mordoru
-trp_i1_mordor_uruk_snaga_pl|Urukové Snagové z Mordoru
-trp_i2_mordor_uruk|Uruk z Mordoru
-trp_i2_mordor_uruk_pl|Urukové z Mordoru
-trp_i3_mordor_large_uruk|Velký Uruk z Mordoru
-trp_i3_mordor_large_uruk_pl|Velcí Urukové z Morodoru
-trp_i4_mordor_fell_uruk|Obrovský Uruk z Morodoru
-trp_i4_mordor_fell_uruk_pl|Obrovští Urukové z Mordoru
-trp_i3_mordor_uruk_slayer|Uruk zabiják z Mordoru
-trp_i3_mordor_uruk_slayer_pl|Urukové zabijáci z Mordoru
-trp_i4_mordor_fell_uruk_slayer|Obří Uruk zabiják z Mordoru
-trp_i4_mordor_fell_uruk_slayer_pl|Obří Urukové zabijáci z Mordoru
-trp_i5_mordor_black_uruk|Černý Uruk z Barad Dur
-trp_i5_mordor_black_uruk_pl|Černí Urukové z Barad Dur
+trp_a3_isen_large_uruk_tracker|Velký Skurut-hai stopař
+trp_a3_isen_large_uruk_tracker_pl|Velcí Skurut-hai stopaři
+trp_a4_isen_fighting_uruk_tracker|Bojový stopař Skurut-hai
+trp_a4_isen_fighting_uruk_tracker_pl|Bojoví stopaři Skurut-hai
+trp_i6_isen_uruk_berserker|Bojový bersekr Skurut-hai
+trp_i6_isen_uruk_berserker_pl|Bojoví bersekři Skurut-hai
+trp_i1_isen_uruk_snaga|Novorozený Skurut-hai
+trp_i1_isen_uruk_snaga_pl|Novorození Skurut-hai
+trp_i2_isen_uruk|Skurut-hai ze Železného pasu
+trp_i2_isen_uruk_pl|Skurut-hai ze Železného pasu
+trp_i3_isen_large_uruk|Velký Skurut-hai ze Železného pasu
+trp_i3_isen_large_uruk_pl|Velcí Skurut-hai ze Železného pasu
+trp_i4_isen_fighting_uruk_warrior|Bojový válečník Skurut-hai
+trp_i4_isen_fighting_uruk_warrior_pl| Bojoví válečníci Skurut-hai
+trp_i5_isen_fighting_uruk_champion|Bojovík šampion Skurut-hai
+trp_i5_isen_fighting_uruk_champion_pl|Bojovníci šampioni Skurut-hai
+trp_i3_isen_uruk_pikeman|Kopiník Skurut-hai
+trp_i3_isen_uruk_pikeman_pl|Kopiníci Skurut-hai
+trp_i4_isen_fighting_uruk_pikeman|Bojový kopiník Skurut-hai
+trp_i4_isen_fighting_uruk_pikeman_pl|Bojoví kopiníci Skurut-hai
+trp_i5_isen_uruk_standard_bearer|Kourouhevník Skurut-hai
+trp_i5_isen_uruk_standard_bearer_pl|Kourouhevníci Skurut-hai
+trp_i1_mordor_uruk_snaga|Skurut snaga z Mordoru
+trp_i1_mordor_uruk_snaga_pl|Skurutové Snagové z Mordoru
+trp_i2_mordor_uruk|Skurut z Mordoru
+trp_i2_mordor_uruk_pl|Skurutové z Mordoru
+trp_i3_mordor_large_uruk|Velký Skurut z Mordoru
+trp_i3_mordor_large_uruk_pl|Velcí Skurutové z Morodoru
+trp_i4_mordor_fell_uruk|Obrovský Skurut z Morodoru
+trp_i4_mordor_fell_uruk_pl|Obrovští Skurutové z Mordoru
+trp_i3_mordor_uruk_slayer|Skurut zabiják z Mordoru
+trp_i3_mordor_uruk_slayer_pl|Skurutové zabijáci z Mordoru
+trp_i4_mordor_fell_uruk_slayer|Obří Skurut zabiják z Mordoru
+trp_i4_mordor_fell_uruk_slayer_pl|Obří Skurutové zabijáci z Mordoru
+trp_i5_mordor_black_uruk|Černý Skurut z Barad Dur
+trp_i5_mordor_black_uruk_pl|Černí Skurutové z Barad Dur
 trp_i5_mordor_uruk_standard_bearer|Korouhevník Mordoru
 trp_i5_mordor_uruk_standard_bearer_pl|Korouhevníci Mordoru
 trp_troll_of_moria|Jeskynní Trol
@@ -737,8 +737,8 @@ trp_i4_gunda_orc_berserker|Skřet bersekr z Gundabadu
 trp_i4_gunda_orc_berserker_pl|Skřeti bersekři z Gundabadu
 trp_ca4_gunda_skirmisher|Harcovník z Gundabadu
 trp_ca4_gunda_skirmisher_pl|Harcovníci z Gundabadu
-trp_ca5_gunda_clan_skirmisher|Goblin harcovník ze Severního klanu
-trp_ca5_gunda_clan_skirmisher_pl|Goblinové harcovníci ze Severního klanu
+trp_ca5_gunda_clan_skirmisher|Goblin záškodník ze Severního klanu
+trp_ca5_gunda_clan_skirmisher_pl|Goblinové záškodníci ze Severního klanu
 trp_c3_gunda_goblin_rider|Goblin jezdec z Gundabadu
 trp_c3_gunda_goblin_rider_pl|Goblinové jezdci z Gundabadu
 trp_c4_gunda_warg_rider|Jezdec na Vrku z Gundabadu
@@ -1525,7 +1525,7 @@ trp_city_guard_pl|městská stráž
 trp_orc_sentry|Skřetí hlídka
 trp_orc_sentry_pl|skřetí hlídka
 trp_uruk_hai_sentry|Skurut-haiská hlídka
-trp_uruk_hai_sentry_pl|skurut-haiská hlídka
+trp_uruk_hai_sentry_pl|Skurut-haiská hlídka
 trp_black_numenorean_sorcerer|Černý Numenorejec Černokněžník 
 trp_black_numenorean_sorcerer_pl|Černý Numenorejec černokněžník 
 trp_black_numenorean_acolyte|Černý Numenorejec akolyta
@@ -1554,7 +1554,7 @@ trp_ring_hunter_three|Lovec prstenu
 trp_ring_hunter_three_pl|Hledači prstenu
 trp_ring_hunter_four|Lovec prstenu
 trp_ring_hunter_four_pl|Hledači prstenu
-trp_start_quest_uruk|Uruk kapitán z Mordoru
+trp_start_quest_uruk|Skurut kapitán z Mordoru
 trp_start_quest_orc|Skřetí poručík z Mordoru
 trp_start_quest_orc_pl|Velcí skřeti z Mordoru
 trp_start_quest_woodelf|Galadhrimský královský ostrostřelec
@@ -1572,7 +1572,7 @@ trp_isengard_healer|Nurgal Záplata
 trp_guldur_healer|Mornagar Gramatik
 trp_gundabad_healer|Lurgakh Třetí oko
 trp_mirkwood_healer|Corwiel Jemnoruký
-trp_hungry_uruk|Hladový skurut
+trp_hungry_uruk|Hladový Skurut
 trp_hungry_orc|Hladový skřet
 trp_longing_lorien|Toužící Elf
 trp_longing_woodelf|Toužící Elf

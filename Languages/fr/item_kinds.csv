@@ -86,15 +86,15 @@ itm_leather_gloves|Gants en cuir
 itm_mail_mittens|Mitaines de mailles
 itm_leather_boots|Bottes en cuir
 ; itm_leather_boots_dark|Rider Boots
-; itm_splinted_greaves|Splinted Greaves
+itm_splinted_greaves|Jambières renforcées
 itm_white_tunic_a|Tenue civil
 itm_rohan_shoes|Chaussures de cuir
 itm_furry_boots|Bottes de fourrure
 itm_black_tunic|Tunique noire
 itm_hood_black|Capuchon noir
 itm_hood_green|Capuchon vert
-; itm_hood_grey|Grey Hood
-; itm_hood_leather|Leather Hood
+itm_hood_grey|Capuchon gris
+itm_hood_leather|Capuchon en cuir
 itm_axe_a|Hache d'Homme du Nord
 itm_axe_b|Hache à barbe d'Homme du Nord
 itm_axe_c|Hache d'Homme du Nord
@@ -118,7 +118,7 @@ itm_dwarf_short_bow|Arc court nain
 itm_harad_bow|Arc incurvé du Harad
 itm_lg_bow|Arc de la Garde de l'Aigle
 itm_riv_bow|Arc de Fondcombe
-; itm_rhun_bow|Balchoth Bow
+itm_rhun_bow|Arc balchoth
 itm_lorien_bow|Arc galadhrim
 itm_isengard_large_bow|Arc long de l'Isengard
 itm_dale_bow|Arc de Dale
@@ -303,8 +303,8 @@ itm_orc_furboot_tall|Bottes orques de fourrure
 itm_orc_tribal_a|Peau non traitée
 itm_orc_tribal_b|Peau non traitée
 itm_orc_tribal_c|Peau non traité
-; itm_evil_gauntlets_a|Black Gloves
-; itm_evil_gauntlets_b|Black Gauntlets
+itm_evil_gauntlets_a|Gants noirs
+itm_evil_gauntlets_b|Gantelets noirs
 itm_isen_orc_armor_a|Armure orque de l'Isengard
 itm_isen_orc_armor_b|Armure orque de l'Isengard
 itm_isen_orc_armor_c|Armure orque de l'Isengard
@@ -506,7 +506,7 @@ itm_rohan_shield_f|Bouclier du Rohan
 itm_rohan_shield_g|Bouclier royal du Rohan
 itm_rohan_light_greaves|Jambières légères du Rohan
 itm_rohirrim_war_greaves|Jambières de guerre du Rohan
-; itm_mirkwood_leather|Woodelf Leather Armor
+itm_mirkwood_leather|Armure en cuir des Elfes Sylvains
 ; itm_mirkwood_pad|Greenwood Quilted Coat
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
@@ -515,14 +515,14 @@ itm_mirkwood_great_spear|Grande lance de la Forêt Noire
 itm_mirkwood_war_spear|Lance de guerre de la Forêt Noire
 itm_mirkwood_short_spear|Lance de la Forêt Noire
 itm_mirkwood_knife|Couteau blanc de la Forêt Noire
-; itm_mirkwood_axe|Mirkwood Axe
-; itm_mirkwood_spear_shield_a|Mirkwood Shield
+itm_mirkwood_axe|Hache de la Forêt Noire
+itm_mirkwood_spear_shield_a|Bouclier de la Forêt Noire
 itm_mirkwood_spear_shield_b|Bouclier de guerre de la Forêt Noire
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
+itm_mirkwood_spear_shield_c|Bouclier rond de la Forêt Noire
 itm_mirkwood_helm_a|Casque d'archer de la Forêt Noire
 itm_mirkwood_helm_b|Casque de la Forêt Noire
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
+itm_mirkwood_helm_c|Casque lourd de la Forêt Noire
+itm_mirkwood_helm_d|Casque royal de la Forêt Noire
 itm_mirkwood_boots|Bottes de la Forêt Noire
 itm_harad_tunic|Tunique du Harad
 itm_harad_padded|Armure matelassée du Harondor
@@ -805,12 +805,12 @@ itm_lorien_bow_reward|Arc ñoldorin
 itm_elven_cloak|Cape elfique
 itm_dale_sword_reward|Épée royale de Dale
 itm_dale_armor_reward|Cotte de mailles de noble de Dale
-; itm_leather_gloves_reward|Archer Gloves
+itm_leather_gloves_reward|Gants d'archer
 itm_beorn_shield_reward|bouclier ennuyeux
 itm_beorn_axe_reward|Massue ours
 itm_moria_arrow_reward|Flèches empoisonnées de la Moria
 itm_khamul_helm|Heaume de Khamûl
-; itm_black_arrows_reward|Black Arrows
+itm_black_arrows_reward|Flèches noires
 itm_rohan_armor_th|Armure royale du Rohan
 itm_prisoner_coll_chain|Chaînes de prisonnier
 itm_witchking_helmet|Heaume maléfique
