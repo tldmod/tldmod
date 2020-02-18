@@ -735,5 +735,6 @@ script_flash_and_animate = 733
 script_get_position_and_teleport_behind_agent = 734
 script_wield_agent_weapons = 735
 script_cf_surrounded_pushback = 736
+script_get_hp_shield_value = 737
 
 

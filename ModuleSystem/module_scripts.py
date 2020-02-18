@@ -2040,10 +2040,18 @@ scripts = [
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
 	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
 
+	#(call_script, "script_get_hp_shield_value", "trp_troll_of_moria"),
 	(troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, MORIA_TROLL_HP_SHIELD),
+
+	#(call_script, "script_get_hp_shield_value", "trp_olog_hai"),
 	(troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
+
+	#(call_script, "script_get_hp_shield_value", "trp_armoured_troll"),
 	(troop_set_slot, "trp_armoured_troll", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
+
+	#(call_script, "script_get_hp_shield_value", "trp_ent"),
 	(troop_set_slot, "trp_ent", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
+	
 
 	#Init Health Regeneration on Kill
 
@@ -29008,4 +29016,14 @@ if is_a_wb_script==1:
 	    (try_end),
 	(try_end),
 ]),
+
+#script_get_hp_shield_value
+#outputs HP shield value to reg0
+("get_hp_shield_value", 
+	[
+		(store_script_param_1, ":troop_id"),
+
+		(store_skill_level, ":ironflesh",  skl_ironflesh, ":troop_id",),
+		(store_mul, reg0, ":ironflesh", 50), # Kham: Change to what value we want. Moria Troll needs higher HP shield cause unarmoured.
+	]),
 ]

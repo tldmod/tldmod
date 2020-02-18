@@ -1629,6 +1629,9 @@ scene_props = [
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":instance_no"),
     (prop_instance_get_starting_position, pos1, ":instance_no"),
+    (particle_system_burst,"psys_pistol_smoke",pos1,200),
+    (particle_system_burst,"psys_pistol_smoke",pos1,200),
+    (particle_system_burst,"psys_pistol_smoke",pos1,200),
     (position_rotate_x, pos1, 85),
     (prop_instance_animate_to_position, ":instance_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
