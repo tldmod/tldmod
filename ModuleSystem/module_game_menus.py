@@ -9654,7 +9654,7 @@ game_menus = [
 ## Kham - Player Added to Allow Party Follow
 
 ("player_added_to_allow_follow",0,
-   "^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.",
+   "^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.",
     "none",
     [   (set_background_mesh, "mesh_ui_default_menu_window"),
         (set_fixed_point_multiplier, 100),
