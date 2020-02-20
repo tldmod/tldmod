@@ -432,6 +432,7 @@ itm_tree_trunk_club_b = (itm_tree_trunk_club_a, imod_poor)
 itm_tree_trunk_invis = (itm_tree_trunk_club_a, imod_old)
 itm_giant_hammer = (itm_giant_mace, imod_poor)
 itm_giant_mace_b = (itm_giant_mace, imod_old)
+itm_troll_shield_b = (itm_troll_shield_a, imod_poor)
 
 itm_olog_body = (itm_ent_body, imod_rusty)
 itm_olog_body_b = (itm_ent_body, imod_tattered)
@@ -1326,7 +1327,7 @@ troops = [
    [itm_giant_mace, itm_giant_mace_b,itm_giant_hammer,itm_isen_olog_feet,itm_isen_olog_body,itm_isen_olog_body_b,itm_isen_olog_head_a,itm_isen_olog_head_b,itm_isen_olog_head_c,itm_isen_olog_hands],
       str_255| agi_3| int_3| cha_3|level(61),wp(175),knows_power_strike_7|knows_ironflesh_13,troll_face1,troll_face2],
 ["olog_hai","Olog_Hai_of_Mordor","Olog_Hai_of_Mordor",tf_troll|tfg_shield| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_giant_mace, itm_troll_shield_a, itm_troll_shield_a,itm_giant_mace_b,itm_giant_hammer,itm_olog_feet,itm_olog_body,itm_olog_body_b,itm_olog_head_a,itm_olog_head_b,itm_olog_head_c,itm_olog_hands],
+   [itm_giant_mace, itm_troll_shield_a,itm_giant_mace_b,itm_giant_hammer,itm_olog_feet,itm_olog_body,itm_olog_body_b,itm_olog_head_a,itm_olog_head_b,itm_olog_head_c,itm_olog_hands],
       str_255| agi_3| int_3| cha_3|level(61),wp(250),knows_power_strike_8|knows_ironflesh_15,troll_face1,troll_face2],
 ["ent","Ent","Ents",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_commoners,
    [itm_tree_trunk_invis,itm_ent_body,itm_ent_hands,itm_ent_feet_boots,itm_ent_head,itm_ent_water,itm_ent_head_2,itm_ent_head_3,],

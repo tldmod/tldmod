@@ -234,7 +234,7 @@ itemsfile version 2
  itm_giant_mace Giant_Mace Giant_Mace 3  giant_mace 0  giant_hammer 64  giant_mace_b 256  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 80 0 130 0 542 542
 0
 
- itm_troll_shield_a Troll_Shield Troll_Shield 1  troll_shield_a 0  266247 5100273664 100 251658402 50 100 0 10 0 0 500 96 0 115 0 0 0
+ itm_troll_shield_a Troll_Shield Troll_Shield 2  troll_shield_a 0  troll_shield_b 64  266247 5100273664 100 251658402 50 100 0 10 0 0 500 96 0 115 0 0 0
 0
 
  itm_free_olog_feet_boots Olog_Hai_Feet Olog_Hai_Feet 1  olog_feet 0  137438957582 0 1 0 58 100 0 0 62 70 0 0 0 0 0 0 0
@@ -2550,7 +2550,7 @@ itemsfile version 2
  itm_ent_feet_boots Ent_Feet Ent_Feet 6  ent_foot 0  troll_feet 2  gunda_troll_feet 4  mordor_troll_feet 8  olog_feet 67108864  olog_feet 33554432  4110 0 1 0 58 100 0 0 60 70 0 0 0 0 0 0 0
 0
 
- itm_ent_hands Ent_Hands Ent_Hands 6  ent_hand_L 0  olog_handL 4398046511104  isen_olog_handL 2199023255552  troll_handL 2  gunda_troll_handL 4  mordor_troll_handL 8  4111 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
+ itm_ent_hands Ent_Hands Ent_Hands 6  ent_hand_L 0  olog_hand_L 4398046511104  isen_olog_hand_L 2199023255552  troll_handL 2  gunda_troll_handL 4  mordor_troll_handL 8  4111 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
 0
 
  itm_free_galadriel Galadriel_suit Galadriel_suit 1  galadriel 0  553652237 0 1 0 33 100 60 80 60 0 0 0 0 0 0 0 0
