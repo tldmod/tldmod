@@ -2269,19 +2269,15 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 (ti_on_agent_hit, 0, 0, [
 	
-# Trigger Param 1: receiver agent no
- # Trigger Param 2: dealer agent no
- # Trigger Param 3: inflicted damage
- # Trigger Param 4: raw damage (before being soaked by armor)
- # Trigger Param 5: hit bone
- # Trigger Param 6: item kind no
- # Trigger Param 7: item modifier
- # Trigger Param 8: missile item kind no
- # Trigger Param 9: missile item modifier
- # Trigger Param 10: damage type
- # Position Register 0: position of the blow
- #                      rotation gives the direction of the blow
- # Trigger Result: if set, damage dealt to agent
+    # trigger param 1 = damage inflicted agent_id
+    # trigger param 2 = attacker agent_id
+    # trigger param 3 = inflicted damage
+    # trigger param 4 = hit bone
+    # trigger param 5 = item_id of missile used to attack (if attack was with a ranged weapon)
+    # reg0            = weapon item_id
+    # pos0            = position of the hit area, rotation fields contain the direction of the blow
+    # If (set_trigger_result) is used in the code with operation parameter equal or greater than zero, it will override the inflicted damage.
+
 
  	(store_trigger_param_2, ":dealer"),
 
@@ -2291,12 +2287,19 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
  	(agent_get_troop_id, ":troll_dealer", ":dealer"),
  	(troop_get_type, ":type_dealer", ":troll_dealer"),
  	(eq, ":type_dealer", tf_troll),
+	(neq, reg0, "itm_troll_aoe"),
  	
 	],[
 
 	(store_trigger_param_1, ":receiver"),
  	(store_trigger_param_2, ":dealer"),
  	#(store_trigger_param_3, ":damage"),
+	(assign, ":weapon", reg0),
+    (gt, ":weapon", 0),
+	#(assign, ":hit_pos", pos0),
+	#(str_store_item_name, s1, reg0),
+	#(display_message, "@weapon: {s1}"),
+	#(display_debug_message, "@weapon: {s1}"),
 
  	(agent_is_active, ":receiver"),
  	(agent_is_alive, ":receiver"),
@@ -2311,8 +2314,9 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
     (agent_get_position, pos3, ":receiver"), #throwback + aoe around the receiver, to have it somewhat directional
     (set_fixed_point_multiplier, 100),
+	(item_get_horse_speed, ":aoe", ":weapon"),
 
-    (try_for_agents, ":aoe_hit", pos3, 100), #tweakable
+    (try_for_agents, ":aoe_hit", pos3, ":aoe"),
       (agent_is_active, ":aoe_hit"),
       (agent_is_alive, ":aoe_hit"),
       (agent_is_human, ":aoe_hit"),
@@ -2386,32 +2390,17 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
           (agent_start_running_away, ":victim_horse"),
           (agent_stop_running_away, ":victim_horse"),
         (try_end),
-        #(set_fixed_point_multiplier, 1),
-        #(store_random_in_range,":random_timings",1,5),
-        #(agent_set_animation_progress, ":aoe_hit", ":random_timings"), # differentiate timings a bit
 
       (try_end),
-
-      (agent_get_wielded_item, ":item", ":dealer", 0), #InVain: Calculate raw damage, since trigger only prints out damage-armour. Formula: damage = base_damage* (1+ power_strike*0,08) = [base_damage*100 + (base_damage*power_strike*8)]/100
-      (item_get_swing_damage, ":damage", ":item"), #base_damage
-	  (store_skill_level,":power_strike",skl_power_strike,":dealer"),
-	  (val_mul, ":power_strike", 8), #8% damage bonus per power strike, not taking into account weapon proficiency
-	  (val_mul, ":power_strike", ":damage"), 
-	  
-	  (val_mul, ":damage", 100),
-	  (val_add, ":damage", ":power_strike"),
-	 
-	  (store_random_in_range, ":rand_damage", 150, 250), #tweakable, randomize aoe damage a bit	 
-      (val_div, ":damage", ":rand_damage"),
-	  (val_max, ":damage", 2),
 	  
 	  (try_begin),
 			(neq, ":aoe_hit", ":receiver"),
-			(agent_deliver_damage_to_agent, ":dealer", ":aoe_hit", ":damage"),
-
-	  #(store_agent_hit_points, ":hp", ":aoe_hit", 1), 
-	  #(val_sub,":hp",":damage"),
-	  #(agent_set_hit_points, ":aoe_hit", ":hp", 1),
+			(agent_deliver_damage_to_agent, ":dealer", ":aoe_hit", -1, "itm_troll_aoe"),
+			#(agent_deliver_damage_to_agent_advanced, ":aoe_damage", ":dealer", ":aoe_hit", -1, "itm_troll_aoe"),
+ # 			(agent_deliver_damage_to_agent_advanced, <destination>, <attacker_agent_id>, <agent_id>, <value>, [weapon_item_id]),
+			#(assign, reg6, ":aoe_damage"),
+			#(display_message, "@aoe hit damage: {reg6}"),
+			#(display_debug_message, "@aoe hit damage: {reg6}"),
 	  (try_end),
 
     (try_end),
@@ -2640,8 +2629,8 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(try_begin),
 			(agent_get_troop_id, ":troop_id", ":troll"),
 			(troop_has_item_equipped,":troop_id","itm_troll_shield_a"),
-			# (this_or_next|eq, ":troop_id", "trp_olog_hai"),
-			# (eq, ":troop_id", "trp_armoured_troll"),
+			# (this_or_next|eq, ":troop_id", "trp_mordor_olog_hai"),
+			# (eq, ":troop_id", "trp_isen_armored_troll"),
  			(agent_set_wielded_item, ":troll", "itm_troll_shield_a"),
  			(agent_refill_wielded_shield_hit_points, ":troll"),
  		(try_end),

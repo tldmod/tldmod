@@ -44,8 +44,8 @@ party_templates = [
 # ("manhunters","Manhunters",icon_generic_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,9,40)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
-("wild_troll",       "Wild Troll",          icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_troll_of_moria,1,2),]),
-("raging_trolls",    "Raging Trolls",       icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_troll_of_moria,1,3),]),
+("wild_troll",       "Wild Troll",          icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_moria_troll,1,2),]),
+("raging_trolls",    "Raging Trolls",       icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_moria_troll,1,3),]),
 ("looters",          "Tribal Orcs",         icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
 ("forest_bandits",   "Orc Stragglers",      icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
 ("mountain_bandits", "Wild Goblins",        icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_mountain_goblin,2,40)]),
@@ -124,7 +124,7 @@ party_templates = [
 ("umbar_raiders"   ,"Umbar Raiders"     ,icon_umbar_corsair |carries_goods(2)|pf_show_faction,0,fac_umbar   ,soldier_personality,[(trp_i5_corsair_night_raider,1,4),(trp_i4_corsair_raider,3,6),(trp_i3_corsair_swordsman,3,6),(trp_i4_corsair_veteran_swordsman,3,6),(trp_i3_corsair_spearman,3,6),(trp_i2_corsair_warrior,6,15)]), #100-196 good at it
 ("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i5_moria_orc_chieftain,1,3),(trp_a3_moria_large_goblin_archer,3,9),(trp_i3_moria_large_goblin,5,15),(trp_a2_moria_goblin_archer,8,16)]), #72-176
 ("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_guldur  ,soldier_personality,[(trp_a4_guldur_fell_orc_tracker,1,1),(trp_i3_mordor_large_orc,4,10),(trp_i2_mordor_orc,8,16),(trp_a2_guldur_orc_tracker,8,16),(trp_i1_guldur_orc_snaga,15,30)]), #91-184
-("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_gundabad,soldier_personality,[(trp_c5_gunda_clan_rider,1,3),(trp_ca4_gunda_skirmisher,6,12),(trp_c4_gunda_warg_rider,6,12),(trp_i2_gunda_orc,18,32),(trp_troll_of_moria,0,1)]), #128-234 was 93-163
+("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_gundabad,soldier_personality,[(trp_c5_gunda_clan_rider,1,3),(trp_ca4_gunda_skirmisher,6,12),(trp_c4_gunda_warg_rider,6,12),(trp_i2_gunda_orc,18,32),(trp_moria_troll,0,1)]), #128-234 was 93-163
 ("rhun_raiders"    ,"Rhun Raiders"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,soldier_personality,[(trp_c5_rhun_warrider,1,3),(trp_ac3_rhun_horse_archer,8,16),(trp_c3_rhun_outrider,10,20)]), #124-264, was 100-184
 
 
@@ -148,13 +148,13 @@ party_templates = [
 ("lamedon_patrol" ,"Lamedon Patrol"  ,icon_lamedon_horseman|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_c6_lam_leader,1,1),(trp_c5_lam_knight,6,14),(trp_i5_lam_champion,3,6),(trp_i4_lam_warrior,8,20),(trp_i3_lam_veteran,10,24)]), #253-541 #InVain 270-600, added more cavalry
 
 # Used as patrols, except Dale 
-("mordor_war_party"  ,"Mordor_War_Party"  ,icon_uruk_x4          |carries_goods(3)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_i5_mordor_uruk_standard_bearer,1,2),(trp_i3_mordor_large_uruk,10,22),(trp_i2_mordor_uruk,16,36),(trp_i2_mordor_orc,60,80),(trp_a2_mordor_orc_archer,40,60),(trp_olog_hai,0,3)]), #310-658 #InVain 356-812 (new formula) added more fodder orcs to make fight more epic, but not so much harder.
-("isengard_war_party","Isengard_War_Party",icon_wargrider_walk_x4|carries_goods(3)|pf_show_faction,0,fac_isengard,soldier_personality,[(trp_i5_isen_uruk_standard_bearer,1,2),(trp_i6_isen_uruk_berserker,3,6),(trp_i5_isen_fighting_uruk_champion,3,6),(trp_a4_isen_fighting_uruk_tracker,15,25),(trp_ac2_isen_wolf_rider,5,10),(trp_armoured_troll,0,3)]), #275-550
+("mordor_war_party"  ,"Mordor_War_Party"  ,icon_uruk_x4          |carries_goods(3)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_i5_mordor_uruk_standard_bearer,1,2),(trp_i3_mordor_large_uruk,10,22),(trp_i2_mordor_uruk,16,36),(trp_i2_mordor_orc,60,80),(trp_a2_mordor_orc_archer,40,60),(trp_mordor_olog_hai,0,3)]), #310-658 #InVain 356-812 (new formula) added more fodder orcs to make fight more epic, but not so much harder.
+("isengard_war_party","Isengard_War_Party",icon_wargrider_walk_x4|carries_goods(3)|pf_show_faction,0,fac_isengard,soldier_personality,[(trp_i5_isen_uruk_standard_bearer,1,2),(trp_i6_isen_uruk_berserker,3,6),(trp_i5_isen_fighting_uruk_champion,3,6),(trp_a4_isen_fighting_uruk_tracker,15,25),(trp_ac2_isen_wolf_rider,5,10),(trp_isen_armored_troll,0,3)]), #275-550
 ("harad_war_party"   ,"Harad_War_Party"   ,icon_harad_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_harad   ,soldier_personality,[(trp_i5_harad_tiger_guard,2,4),(trp_c5_harondor_serpent_knight,2,4),(trp_ac5_harondor_black_snake,2,4),(trp_a4_harad_archer,8,16),(trp_c3_harondor_rider,10,20),(trp_i1_harad_levy,20,40)]), #268-536
 ("dunland_war_party" ,"Dunlending_Warband",icon_dunlander_x3     |carries_goods(3)|pf_show_faction,0,fac_dunland ,soldier_personality,[(trp_i5_dun_wolf_guard,2,4),(trp_i4_dun_vet_pikeman,6,12),(trp_i2_dun_warrior,12,24),(trp_ac2_dun_crebain_rider,10,20),(trp_i1_dun_wildman,20,50)]), #214-448 weak
 ("khand_war_party"   ,"Variag_War_Party"   ,icon_cataphract_x3   |carries_goods(3)|pf_show_faction,0,fac_khand   ,soldier_personality,[(trp_i5_khand_war_master,2,4),(trp_c5_khand_kataphrakt,2,4),(trp_i4_khand_vet_warrior,5,10),(trp_i3_khand_warrior,8,16),(trp_c2_khand_pony_rider,10,20),(trp_i2_khand_pit_dog,20,40)]), #277-554
 #("corsair_war_party" ,"Corsair_War_Party" ,icon_umbar_corsair_x3 |carries_goods(3),0,fac_umbar   ,soldier_personality,[(trp_i5_corsair_master_pikeman   ,20,50),(trp_i4_corsair_veteran_swordsman,15,30),(trp_i5_corsair_master_spearman,13,36),(trp_a5_corsair_master_marksman,5,30),(trp_i4_corsair_veteran_swordsman,5,40),(trp_a5_corsair_master_assassin,5,20)]),
-("moria_war_party"   ,"Moria_War_Party"   ,icon_orc_tribal_x4    |carries_goods(3)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i4_moria_fell_goblin,5,10),(trp_a3_moria_large_goblin_archer,10,20),(trp_i3_moria_large_goblin,12,24),(trp_i2_moria_goblin,15,30),(trp_i1_moria_snaga,20,50),(trp_troll_of_moria,1,2)]), #262-534
+("moria_war_party"   ,"Moria_War_Party"   ,icon_orc_tribal_x4    |carries_goods(3)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i4_moria_fell_goblin,5,10),(trp_a3_moria_large_goblin_archer,10,20),(trp_i3_moria_large_goblin,12,24),(trp_i2_moria_goblin,15,30),(trp_i1_moria_snaga,20,50),(trp_moria_troll,1,2)]), #262-534
 #Northern war
 ("dale_war_party"  ,"Dale_War_Party"   ,icon_generic_knight       |carries_goods(3)|pf_show_faction,0,fac_dale   ,soldier_personality,[(trp_i2_dale_man_at_arms,8,13),(trp_i4_dale_sergeant,8,20),(trp_a5_barding_bowman,8,16),(trp_a4_dale_archer,5,20),(trp_i4_dale_billman,10,25),(trp_c2_rhovanion_retainer,4,15)]), # NOT USED and unbalanced 383-953
 #("dwarf_war_party" ,"Dwarven_War_Party",icon_dwarf_x3              |carries_goods(3),0,fac_dwarf  ,soldier_personality,[(trp_i1_dwarf_apprentice      ,8,13),(trp_i6_iron_hills_grors_guard,8,20),(trp_i2_dwarf_warrior,8,16),(trp_i5_dwarf_expert_axeman,5,20),(trp_a2_dwarf_lookout,4,15),(trp_a4_dwarf_bowman,4,15)]),
@@ -273,7 +273,7 @@ party_templates = [
 #Mordor - same as Isengard + Numenorean cavalry (8-16, 7-13, 5-10)
 ("mordor_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,3),(trp_i1_mordor_orc_snaga,2,5),(trp_i2_mordor_uruk,1,2),(trp_i2_mordor_orc,2,4),]), #InVain: less t1, a few t2 = less orc archers for field armies
 ("mordor_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_mordor_orc_archer,2,4),(trp_a3_mordor_large_orc_archer,2,4),(trp_i2_mordor_uruk,2,3),(trp_i2_mordor_orc,3,6),(trp_i3_mordor_large_orc,1,2),(trp_a4_mordor_fell_orc_archer,1,2)]), #InVain: More archers, t3+t4 archers, t3 orcs
-("mordor_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_i3_mordor_large_uruk,1,1),(trp_i3_mordor_uruk_slayer,0,1),(trp_i3_mordor_large_orc,1,2),(trp_olog_hai,0,1),]), #InVain: Removed t3 archers
+("mordor_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_i3_mordor_large_uruk,1,1),(trp_i3_mordor_uruk_slayer,0,1),(trp_i3_mordor_large_orc,1,2),(trp_mordor_olog_hai,0,1),]), #InVain: Removed t3 archers
 #Harad (7-14, 5-10, 4-8)
 ("harad_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_harondor_scout,1,2),(trp_i2_far_harad_tribesman,1,2),(trp_i1_harad_levy,5,10),]),
 ("harad_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_ac3_harondor_skirmisher,1,2),(trp_a3_harad_hunter,2,4),(trp_i3_harad_infantry,1,2),(trp_i2_far_harad_tribesman,1,2),]),
@@ -305,11 +305,11 @@ party_templates = [
 #Moria (8-16, 7-13, 5-10)
 ("moria_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i1_moria_snaga,4,8),(trp_i2_moria_goblin,2,4),]), #InVain: traded some t1 for t2 = more infantry for hosts
 ("moria_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_moria_large_goblin_archer,4,7),(trp_i2_moria_goblin,1,2),(trp_i3_moria_large_goblin,2,4),(trp_i4_moria_fell_goblin,1,2)]), #InVain: t3 archers, t3 inf, some t4 inf
-("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c3_moria_wolf_rider,2,4),(trp_i3_moria_large_goblin,1,2),(trp_troll_of_moria,1,1),]), #InVain: removed archers, because B has so many, less cav, fewer t3
+("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c3_moria_wolf_rider,2,4),(trp_i3_moria_large_goblin,1,2),(trp_moria_troll,1,1),]), #InVain: removed archers, because B has so many, less cav, fewer t3
 #Dol Guldur - same as Mordor without uruks and Numenoreans (8-16, 7-13, 5-10)
 ("guldur_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,8,16),]),
 ("guldur_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_guldur_orc_tracker,4,7),(trp_i2_mordor_orc,3,6),]),
-("guldur_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_a3_guldur_large_orc_tracker,2,4),(trp_i3_mordor_large_orc,1,2),(trp_olog_hai,0,1),]),
+("guldur_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_a3_guldur_large_orc_tracker,2,4),(trp_i3_mordor_large_orc,1,2),(trp_mordor_olog_hai,0,1),]),
 #Beornings - two trees, Beornings favored over Woodmen (7-14, 5-10, 4-8)
 ("beorn_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i2_beorning_warrior,2,4),(trp_i1_beorning_man,2,4),(trp_i1_woodmen_man,3,6)]),
 ("beorn_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_woodmen_scout,2,4),(trp_i3_woodmen_skilled_forester,1,2),(trp_i3_beorning_tolltacker,1,2),(trp_i3_beorning_carrock_lookout,1,2)]),
@@ -317,7 +317,7 @@ party_templates = [
 #Mt. Gundabad - see Moria (8-16, 7-13, 5-10)
 ("gundabad_reinf_a","_",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,6,12),(trp_i2_gunda_orc,5,8)]), #InVain: traded some t1 for t2 /#InVain: increased number of infantry by 50%, so lords have less space left for warg riders (hope this works)
 ("gundabad_reinf_b","_",0,0,fac_commoners,0,[(trp_ca4_gunda_skirmisher,1,3),(trp_i2_gunda_orc,3,5),(trp_i3_gunda_orc_fighter,2,3),]), #InVain t3 orcs, less t2 orcs
-("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_c3_gunda_goblin_rider,1,2),(trp_i3_gunda_orc_fighter,2,3),(trp_troll_of_moria,1,1),]), 
+("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_c3_gunda_goblin_rider,1,2),(trp_i3_gunda_orc_fighter,2,3),(trp_moria_troll,1,1),]), 
 #Dale (7-14, 5-10, 4-8)
 ("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,1,2),(trp_i2_dale_man_at_arms,1,2),(trp_a2_dale_scout,1,2),(trp_i1_dale_militia,5,10),]), #InVain: added 
 ("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,0,1),(trp_a3_dale_bowman,3,5),(trp_i3_dale_spearman,1,2),(trp_i3_dale_swordsman,1,2),]),
@@ -379,10 +379,10 @@ party_templates = [
 
 # Mordor Legions
 
-("legion_minas_morgul","Legion_of_Minas_Morgul",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_olog_hai,10,10),(trp_i4_mordor_fell_uruk,30,60),(trp_i4_mordor_fell_morgul_orc,25,55),(trp_i2_mordor_morgul_orc, 25, 50),(trp_a3_mordor_large_orc_archer, 25, 50)]),
-("legion_udun","Legion_of_Udun",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_c4_mordor_great_warg_rider,20,30),(trp_a4_mordor_fell_orc_archer,30,45),(trp_i4_mordor_fell_uruk_slayer, 30, 45),(trp_i3_mordor_large_orc,30,90),(trp_olog_hai,10,10)]),
-("legion_gorgoroth","Legion_of_Gorgoroth",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_c5_mordor_num_knight,30,30),(trp_olog_hai,10,10),(trp_c3_mordor_warg_rider,30,50),(trp_i3_mordor_large_orc,40,90),(trp_a3_mordor_large_orc_archer,20,40)]),
-("legion_barad_dur","Legion_of_Barad-Dur",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_captain_of_mordor,5,5),(trp_i5_mordor_black_uruk,60,60),(trp_i4_mordor_fell_orc,90,90),(trp_a4_mordor_fell_orc_archer,60,60),(trp_olog_hai,15,15)]),
+("legion_minas_morgul","Legion_of_Minas_Morgul",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_mordor_olog_hai,10,10),(trp_i4_mordor_fell_uruk,30,60),(trp_i4_mordor_fell_morgul_orc,25,55),(trp_i2_mordor_morgul_orc, 25, 50),(trp_a3_mordor_large_orc_archer, 25, 50)]),
+("legion_udun","Legion_of_Udun",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_c4_mordor_great_warg_rider,20,30),(trp_a4_mordor_fell_orc_archer,30,45),(trp_i4_mordor_fell_uruk_slayer, 30, 45),(trp_i3_mordor_large_orc,30,90),(trp_mordor_olog_hai,10,10)]),
+("legion_gorgoroth","Legion_of_Gorgoroth",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_c5_mordor_num_knight,30,30),(trp_mordor_olog_hai,10,10),(trp_c3_mordor_warg_rider,30,50),(trp_i3_mordor_large_orc,40,90),(trp_a3_mordor_large_orc_archer,20,40)]),
+("legion_barad_dur","Legion_of_Barad-Dur",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_captain_of_mordor,5,5),(trp_i5_mordor_black_uruk,60,60),(trp_i4_mordor_fell_orc,90,90),(trp_a4_mordor_fell_orc_archer,60,60),(trp_mordor_olog_hai,15,15)]),
 
 ##Kham Quests ####
 ##Kham  Ring Hunters Start ####

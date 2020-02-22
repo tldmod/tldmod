@@ -213,16 +213,16 @@ itemsfile version 2
  itm_animal_small Small_Animal Small_Animal 2  bry_goat 0  bry_goat_c 2  18014398509481984 0 10 16106389504 0 10 0 0 0 10 25 5 5 40 0 0 0
 0
 
- itm_free_axe_c Northmen_Axe Northmen_Axe 2  axe_c 0  axe_c_carry 3458764513820540928  80019458 9223388530091229198 350 287892 2 100 0 0 0 0 29696 96 0 57 0 256 29
+ itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  4385144836 512 1 0 58 100 0 0 0 0 30720 80 70 200 0 542 542
 0
 
- itm_free_axe_d Northmen_Axe Northmen_Axe 2  axe_d 0  axe_d_carry 3458764513820540928  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 31744 94 0 60 0 256 31
+ itm_troll_weapon_dmg Giant_Mace Giant_Mace 4  dummy_mesh 2  orc_sledgehammer_troll 8  giant_mace 0  giant_hammer 524288  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 100 100 110 0 542 542
 0
 
- itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 3  troll_club 0  tree_trunk_club 64  dummy_mesh 256  141822394371 9259400833873739810 1 0 58 100 0 0 0 0 20480 70 0 155 0 532 532
+ itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 6  dummy_mesh 0  bone_cudgel_troll 128  troll_club 8  tree_trunk_club 1024  orc_club_a_troll 262144  giant_mace_b 524288  141822394371 9259400833873739810 1 0 58 100 0 0 0 0 25600 90 150 130 0 537 537
 0
 
- itm_free_long_bearded_axe Northmen_Bearded_Longaxe Northmen_Bearded_Longaxe 1  long_bearded_axe 0  38996869124 9223635923965575392 800 156672 7 100 0 0 0 10 46080 84 0 106 0 256 45
+ itm_troll_aoe troll_aoe troll_aoe 1  dummy_mesh 0  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 1024 90 0 110 0 513 513
 0
 
  itm_free_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  38996869124 9223635923965575392 700 156672 8 100 0 0 0 10 48128 82 0 110 0 256 47
@@ -249,10 +249,10 @@ itemsfile version 2
  itm_free_olog_head_helm_c Olog_Hai_Head Olog_Hai_Head 1  olog_head_c 0  137438957580 0 1 0 58 100 62 0 0 70 0 0 0 0 0 0 0
 0
 
- itm_olog_body Olog_Hai_Armor Olog_Hai_Armor 3  olog_body 0  olog_body 4  olog_body_b 2097152  137455734797 0 1 0 58 100 0 62 0 70 0 0 0 0 0 0 0
+ itm_free_olog_body Olog_Hai_Armor Olog_Hai_Armor 3  olog_body 0  olog_body 4  olog_body_b 2097152  137455734797 0 1 0 58 100 0 62 0 70 0 0 0 0 0 0 0
 0
 
- itm_olog_body_b Olog_Hai_Armor Olog_Hai_Armor 1  olog_body_b 0  137455734797 0 1 0 58 100 0 62 0 70 0 0 0 0 0 0 0
+ itm_free_olog_body_b Olog_Hai_Armor Olog_Hai_Armor 1  olog_body_b 0  137455734797 0 1 0 58 100 0 62 0 70 0 0 0 0 0 0 0
 0
 
  itm_free_olog_hands Olog_Hai_Hands Olog_Hai_Hands 1  olog_hand_L 0  137438957583 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
@@ -2541,7 +2541,7 @@ itemsfile version 2
  itm_ent_head_helm Ent_Head Ent_Head 10  ent_head1 0  olog_head 67108864  olog_head_b 134217728  olog_head_c 536870912  ent_head1 1099511627776  ent_head2 2199023255552  ent_head3 274877906944  isen_olog_head 8  isen_olog_head_b 256  isen_olog_head_c 512  4108 0 1 0 58 100 60 0 0 70 0 0 0 0 0 0 0
 0
 
- itm_troll_head troll_head troll_head 9  ent_head2 0  troll_head 2199023255552  troll_head_b 549755813888  troll_head_c 274877906944  gunda_troll_head 1099511627776  gunda_troll_head_b 137438953472  gunda_troll_head_c 4398046511104  mordor_troll_head 33554432  mordor_troll_head_c 67108864  4108 0 1 0 58 100 40 0 0 70 0 0 0 0 0 0 0
+ itm_troll_head troll_head troll_head 9  ent_head2 0  troll_head 2199023255552  troll_head_b 549755813888  troll_head_c 274877906944  gunda_troll_head 1099511627776  gunda_troll_head_b 137438953472  gunda_troll_head_c 4398046511104  mordor_troll_head 33554432  mordor_troll_head_b 67108864  4108 0 1 0 58 100 40 0 0 70 0 0 0 0 0 0 0
 0
 
  itm_troll_body troll_body troll_body 4  troll_body 0  gunda_troll_body 33554432  mordor_troll_body 67108864  troll_body 274877906944  137455734797 0 1 0 58 100 0 45 0 70 0 0 0 0 0 0 0

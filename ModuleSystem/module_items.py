@@ -26,6 +26,22 @@ from module_info import wb_compile_switch as is_a_wb_item
 ####################################################################################################################
 #
 
+#raw_damage = weapon_damage * hold_bonus * speed_bonus * (proficiency*0.01*0.15+0.85) * (powerstrike * 0,08 + 1) + STR/5
+
+#effective_damage = raw_damage - soak_factor - ((1 - 1/reduction_factor) * (raw_damage - soak_factor)) 
+
+	# if item_flags & itp_extra_penetration:
+		# soak_factor *= module.ini_extra_penetration_soak_factor
+		# reduction_factor *= module.ini_extra_penetration_reduction_factor
+		
+	# if hit_bone == head:
+		# effective_damage *= 1.2
+
+		# if item_is_ranged:
+			# effective_damage *= 1.75
+	# elif hit_bone == calf or hit_bone == thigh:
+		# effective_damage *= 0.9
+
 
 def troll_aoe(item):
   return (ti_on_weapon_attack, [
@@ -339,21 +355,15 @@ items =[
 
 ["animal_big","Big_Animal", [("bry_cow_a",0),("bry_cow_b",imodbit_cracked),("bry_cow_c",imodbit_rusty),("bry_cow_d",imodbit_bent),("bry_wild_donkey",imodbit_rotten),("spak_yak1",imodbit_smelling),("spak_yak2",imodbit_large_bag)],itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(90),imodbits_horse_basic],
 ["animal_small","Small_Animal", [("bry_goat",0),("bry_goat_c",imodbit_cracked)],		itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(40),imodbits_horse_basic],
-["free_axe_c","Northmen_Axe",[("axe_c",0),("axe_c_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,350,weight(2)|difficulty(0)|spd_rtng(96)|weapon_length(57)|swing_damage(29,cut)|thrust_damage(0,pierce),imodbits_weapon],
-["free_axe_d","Northmen_Axe",[("axe_d",0),("axe_d_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(94)|weapon_length(60)|swing_damage(31,cut)|thrust_damage(0,pierce),imodbits_weapon],
 
+#Troll weapons
+["troll_weapon_long","Giant_Halberd",[("isengard_halberd_troll",0),],																																			itp_type_polearm|itp_two_handed|itp_primary|itp_crush_through|itp_bonus_against_shield|itp_can_penetrate_shield,itcf_overswing_polearm|0,1,													weight(250)|difficulty(0)|spd_rtng(80)|weapon_length(200)|swing_damage(30,blunt)|thrust_damage(30,blunt)|horse_speed(70),0,[]],
+["troll_weapon_dmg","Giant_Mace",[("0",imodbit_cracked),("orc_sledgehammer_troll",imodbit_bent),("giant_mace",0),("giant_hammer",imodbit_strong)],																itp_no_pick_up_from_ground|itp_type_two_handed_wpn|itp_primary|itp_crush_through|itp_bonus_against_shield|itp_can_penetrate_shield,itc_troll_attack|0,1,									weight(250)|difficulty(0)|spd_rtng(100)|weapon_length(110)|swing_damage(30,blunt)|thrust_damage(30,blunt)|horse_speed(100),0,[]],
+["tree_trunk_club_a","Tree_Trunk",[("0",0),("bone_cudgel_troll",imodbit_crude),("troll_club",imodbit_bent),("tree_trunk_club",imodbit_fine),("orc_club_a_troll",imodbit_heavy),("giant_mace_b",imodbit_strong)],itp_no_pick_up_from_ground|itp_type_two_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_penetrate_shield|itp_bonus_against_shield,itc_troll_attack|0,1,	weight(250)|difficulty(0)|spd_rtng(90)|weapon_length(130)|swing_damage(25,blunt)|thrust_damage(25,blunt)|horse_speed(150),0, []],
 
-# ["troll_feet_boots","Troll_Feet",[("troll_feet",0)],itp_no_pick_up_from_ground|itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(55)|leg_armor(55)|difficulty(70),0],
-# ["troll_head_helm","Troll_Head",[("troll_head",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
-# ["troll_head_helm_b","Troll_Head",[("troll_head_b",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
-# ["troll_head_helm_c","Troll_Head",[("troll_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
-# #
-["tree_trunk_club_a","Tree_Trunk",[("troll_club",0),("tree_trunk_club",imodbit_poor),("0",imodbit_old)],itp_no_pick_up_from_ground|itp_type_two_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_penetrate_shield|itp_bonus_against_shield,itc_troll_attack|0,1,weight(250)|difficulty(0)|spd_rtng(70)|weapon_length(155)|swing_damage(20,blunt)|thrust_damage(20,blunt),0, []],
+["troll_aoe","troll_aoe",[("0",0),],itp_no_pick_up_from_ground|itp_type_two_handed_wpn|itp_primary|itp_crush_through|itp_bonus_against_shield|itp_can_penetrate_shield,itc_troll_attack|0,1,									weight(250)|difficulty(0)|spd_rtng(90)|weapon_length(110)|swing_damage(1,blunt)|thrust_damage(1,blunt)|horse_speed(0),0,[]],
 
-#free Dec 2019 (moved down)
-["free_long_bearded_axe","Northmen_Bearded_Longaxe",[("long_bearded_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,800,weight(7)|difficulty(10)|spd_rtng(84)|weapon_length(106)|swing_damage(45,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 ["free_2_handed_axe","Northmen_Longaxe",[("2_handed_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,700,weight(8)|difficulty(10)|spd_rtng(82)|weapon_length(110)|swing_damage(47,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
-
 # ["tree_trunk_club_b","Tree_Trunk",[("tree_trunk_club",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
 # ["tree_trunk_invis","Tree_Trunk",[("0",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
 ["free_giant_hammer","Giant_Hammer",[("giant_hammer",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(80,cut)|thrust_damage(65,cut),0],
@@ -364,8 +374,8 @@ items =[
 ["free_olog_head_helm","Olog_Hai_Head",[("olog_head",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
 ["free_olog_head_helm_b","Olog_Hai_Head",[("olog_head_b",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
 ["free_olog_head_helm_c","Olog_Hai_Head",[("olog_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
-["olog_body","Olog_Hai_Armor",[("olog_body",0),("olog_body",imodbit_rusty),("olog_body_b",imodbit_tattered)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
-["olog_body_b","Olog_Hai_Armor",[("olog_body_b",0)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
+["free_olog_body","Olog_Hai_Armor",[("olog_body",0),("olog_body",imodbit_rusty),("olog_body_b",imodbit_tattered)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
+["free_olog_body_b","Olog_Hai_Armor",[("olog_body_b",0)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
 ["free_olog_hands","Olog_Hai_Hands",[("olog_hand_L",0)],itp_no_pick_up_from_ground|itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(70),0],
 #
 # warg ghost items...  (mtarini)
@@ -1331,7 +1341,7 @@ items =[
 #Trolls and Ents
 ["ent_body","Ent_Body",[("ent_body",0),("olog_body",imodbit_rusty),("olog_body_b",imodbit_tattered),("isen_olog_body",imodbit_old),("isen_olog_body_b",imodbit_cheap),],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
 ["ent_head_helm","Ent_Head",[("ent_head1",0),("olog_head",imodbit_hardened),("olog_head_b",imodbit_reinforced),("olog_head_c",imodbit_lordly),("ent_head1",imodbit_smelling),("ent_head2",imodbit_rotten),("ent_head3",imodbit_day_old),("isen_olog_head",imodbit_bent),("isen_olog_head_b",imodbit_old),("isen_olog_head_c",imodbit_cheap)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
-["troll_head","troll_head",[("ent_head2",0),("troll_head",imodbit_rotten),("troll_head_b",imodbit_two_day_old),("troll_head_c",imodbit_day_old),("gunda_troll_head",imodbit_smelling),("gunda_troll_head_b",imodbit_fresh),("gunda_troll_head_c",imodbit_large_bag),("mordor_troll_head",imodbit_thick),("mordor_troll_head_c",imodbit_hardened)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
+["troll_head","troll_head",[("ent_head2",0),("troll_head",imodbit_rotten),("troll_head_b",imodbit_two_day_old),("troll_head_c",imodbit_day_old),("gunda_troll_head",imodbit_smelling),("gunda_troll_head_b",imodbit_fresh),("gunda_troll_head_c",imodbit_large_bag),("mordor_troll_head",imodbit_thick),("mordor_troll_head_b",imodbit_hardened)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
 ["troll_body","troll_body",[("troll_body",0),("gunda_troll_body",imodbit_thick),("mordor_troll_body",imodbit_hardened),("troll_body",imodbit_day_old)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(45)|leg_armor(0)|difficulty(70),0,],
 ["ent_feet_boots","Ent_Feet",[("ent_foot",0),("troll_feet",imodbit_cracked),("gunda_troll_feet",imodbit_rusty),("mordor_troll_feet",imodbit_bent),("olog_feet",imodbit_hardened),("olog_feet",imodbit_thick)],itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(60)|difficulty(70),0],
 ["ent_hands","Ent_Hands",[("ent_hand_L",0),("olog_hand_L",imodbit_large_bag),("isen_olog_hand_L",imodbit_rotten),("troll_handL",imodbit_cracked),("gunda_troll_handL",imodbit_rusty),("mordor_troll_handL",imodbit_bent)],itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(70),0],

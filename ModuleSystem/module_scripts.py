@@ -2040,14 +2040,14 @@ scripts = [
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
 	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
 
-	(call_script, "script_get_hp_shield_value", "trp_troll_of_moria"),
-	#(troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, MORIA_TROLL_HP_SHIELD),
+	(call_script, "script_get_hp_shield_value", "trp_moria_troll"),
+	#(troop_set_slot, "trp_moria_troll", slot_troop_hp_shield, MORIA_TROLL_HP_SHIELD),
 
-	(call_script, "script_get_hp_shield_value", "trp_olog_hai"),
-	#(troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
+	(call_script, "script_get_hp_shield_value", "trp_mordor_olog_hai"),
+	#(troop_set_slot, "trp_mordor_olog_hai", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
 
-	(call_script, "script_get_hp_shield_value", "trp_armoured_troll"),
-	#(troop_set_slot, "trp_armoured_troll", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
+	(call_script, "script_get_hp_shield_value", "trp_isen_armored_troll"),
+	#(troop_set_slot, "trp_isen_armored_troll", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
 
 	(call_script, "script_get_hp_shield_value", "trp_ent"),
 	#(troop_set_slot, "trp_ent", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
@@ -22255,7 +22255,7 @@ scripts = [
 			(this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"),
 			(this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"),
 			(this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"),
-			(this_or_next|eq, ":troop_id", "trp_olog_hai"),
+			(this_or_next|eq, ":troop_id", "trp_mordor_olog_hai"),
 			(			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"),
 			(assign, ":continue", 0),
 		(try_end),

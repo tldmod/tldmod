@@ -1821,7 +1821,7 @@ scene_props = [
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-    (assign, ":troop", "trp_troll_of_moria"),
+    (assign, ":troop", "trp_moria_troll"),
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand"),])]),
   
 

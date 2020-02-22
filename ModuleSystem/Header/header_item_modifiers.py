@@ -42,6 +42,10 @@ imod_smelling    = 40 # No effects. Used in Native to track perishable foods.
 imod_rotten      = 41 # No effects. Used in Native to track perishable foods.
 imod_large_bag   = 42 # Increased item amount. Repeated shot for crossbows.
 
+#leg armor = accuracy?
+#spd_rtng = horse_maneuver?
+#shoot_speed = shield_height = horse_speed
+#thrust_damage = horse_charge?
 
 imodbit_plain = 1
 imodbit_cracked = 2

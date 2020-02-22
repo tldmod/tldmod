@@ -6705,8 +6705,8 @@ tld_remove_riderless_animals,
 
         (le, ":random", ":troll_chance"), #10-15% Chance it is a troll!
         (assign, ":interloper", 2), #Interloper 2 = Trolls
-        (assign, ":interloper_1", "trp_troll_of_moria"),
-        (assign, ":interloper_2", "trp_troll_of_moria"),
+        (assign, ":interloper_1", "trp_moria_troll"),
+        (assign, ":interloper_2", "trp_moria_troll"),
       
       (else_try),
 
@@ -8511,7 +8511,7 @@ tld_remove_riderless_animals,
         (eq, "$enemy_reinforcement_stage", 5),
         (eq, "$ally_reinforcement_stage", 4), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
-        (assign, ":enemy_melee_troop", "trp_troll_of_moria"),
+        (assign, ":enemy_melee_troop", "trp_moria_troll"),
         (assign, ":enemy_ranged_troop", -1),
         (assign, "$temp2", 1),
         (assign, ":num_enemies", 1),
@@ -8549,7 +8549,7 @@ tld_remove_riderless_animals,
         (eq, "$enemy_reinforcement_stage", 8),
         (eq, "$ally_reinforcement_stage", 7), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
-        (assign, ":enemy_melee_troop", "trp_armoured_troll"),
+        (assign, ":enemy_melee_troop", "trp_isen_armored_troll"),
         (assign, ":enemy_ranged_troop", -1),
         (assign, ":num_enemies", 2),
         (assign, "$temp2", 2),

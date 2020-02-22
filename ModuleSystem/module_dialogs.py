@@ -2368,12 +2368,12 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
    #"{playername}! I asked you to bring me one troll beast.", "lord_capture_troll_completed0",[
    #  ]],
    
-[anyone|plyr, "lord_active_mission_2", [(party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_troll_of_moria"),
+[anyone|plyr, "lord_active_mission_2", [(party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_moria_troll"),
                     (ge, ":num_trolls", 2), 
                     (store_partner_quest,":lords_quest"),(eq,":lords_quest","qst_capture_troll"),], 
 "Master, I hereby give you not one, but a pair of beasts!","lord_capture_troll_completed_two_trolls",[]],
 
-[anyone|plyr, "lord_active_mission_2", [(party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_troll_of_moria"),
+[anyone|plyr, "lord_active_mission_2", [(party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_moria_troll"),
                     (eq, ":num_trolls", 1), 
                     (store_partner_quest,":lords_quest"),(eq,":lords_quest","qst_capture_troll"),
                     ],  
@@ -2386,7 +2386,7 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
   [ (call_script, "script_finish_quest", "qst_capture_troll", 100),
           (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
     (troop_remove_item,"trp_player","itm_wheeled_cage"), # Take his cage back
-    (party_remove_prisoners, "p_main_party", "trp_troll_of_moria", 2)]],
+    (party_remove_prisoners, "p_main_party", "trp_moria_troll", 2)]],
 
 [anyone|plyr, "lord_capture_troll_completed_two_trolls_thankyou",[(troops_can_join, 1),],
 "Can a savage beast be made to obey commands?","lord_capture_troll_completed_two_trolls_thankyou_info",[]],
@@ -2407,14 +2407,14 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
 "Are you questioning the abilities of your Master, {playername}? This beast is trained to attack enemies on sight. This is enough. But, you and your warriors keep at due distance from the beast when it fights, and never stand between it and its victims.","lord_capture_troll_completed_two_trolls_thankyou",[]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_accept",[],
-"Now bring havoc to my enemies with your new gift","lord_pretalk", [(party_add_members, "p_main_party", "trp_troll_of_moria", 1)]],
+"Now bring havoc to my enemies with your new gift","lord_pretalk", [(party_add_members, "p_main_party", "trp_moria_troll", 1)]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_refuse",[],
 "As you wish, then. Someone else among of my servants will known how to use this mighty tool of war.","lord_pretalk",[]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[(faction_slot_ge, "$g_talk_troop_faction", slot_faction_influence, 10)],
 "You dare ask for an fully armoured battle troll, {playername}, to keep under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.","lord_pretalk",
-  [(party_add_members, "p_main_party", "trp_armoured_troll", 1),
+  [(party_add_members, "p_main_party", "trp_isen_armored_troll", 1),
    (call_script, "script_spend_influence_of", 10, "$g_talk_troop_faction"),]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_raise",[(neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_influence, 10)],
@@ -2426,7 +2426,7 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
   (call_script, "script_finish_quest", "qst_capture_troll", 100),
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",5),
   (troop_remove_item,"trp_player","itm_wheeled_cage"), # Take his cage back
-  (party_remove_prisoners, "p_main_party", "trp_troll_of_moria", 1)]],
+  (party_remove_prisoners, "p_main_party", "trp_moria_troll", 1)]],
   
 [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_capture_troll"),

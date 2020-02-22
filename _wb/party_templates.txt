@@ -9,8 +9,8 @@ pt_ruins Ruins 141 0 1 7 25 1 1 0 -1 -1 -1 -1 -1
 pt_legendary_place Legendary_Place 136 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_mound Hero_Mound 2114735 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_pyre Hero_Pyre 2114735 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
-pt_wild_troll Wild_Troll 262271 0 26 494 352 1 2 0 -1 -1 -1 -1 -1 
-pt_raging_trolls Raging_Trolls 262271 0 26 494 352 1 3 0 -1 -1 -1 -1 -1 
+pt_wild_troll Wild_Troll 262271 0 26 494 951 1 2 0 -1 -1 -1 -1 -1 
+pt_raging_trolls Raging_Trolls 262271 0 26 494 951 1 3 0 -1 -1 -1 -1 -1 
 pt_looters Tribal_Orcs 1125899906842747 0 2 494 395 0 1 0 394 2 25 0 -1 -1 -1 -1 
 pt_forest_bandits Orc_Stragglers 1125899906842747 0 2 494 395 0 8 0 394 3 40 0 393 1 30 0 -1 -1 -1 
 pt_mountain_bandits Wild_Goblins 1125899906842747 0 2 494 393 2 40 0 -1 -1 -1 -1 -1 
@@ -73,7 +73,7 @@ pt_khand_raiders Khand_Raiders 562949957615714 0 14 238 285 1 1 0 282 5 10 0 284
 pt_umbar_raiders Umbar_Raiders 562949957615718 0 15 238 300 1 4 0 299 3 6 0 305 3 6 0 306 3 6 0 298 3 6 0 297 6 15 0 
 pt_moria_raiders Moria_Raiders 562949957615737 0 16 238 934 1 3 0 379 3 9 0 376 5 15 0 378 8 16 0 -1 -1 
 pt_guldur_raiders Dol_Guldur_Raiders 562949957615739 0 17 238 367 1 1 0 360 4 10 0 359 8 16 0 357 8 16 0 356 15 30 0 -1 
-pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 3 0 387 6 12 0 390 6 12 0 383 18 32 0 352 0 1 0 -1 
+pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 3 0 387 6 12 0 390 6 12 0 383 18 32 0 951 0 1 0 -1 
 pt_rhun_raiders Rhun_Raiders 281474980905057 0 13 238 79 1 3 0 66 8 16 0 77 10 20 0 -1 -1 -1 
 pt_gondor_patrol Gondor_Patrol 562949957615719 0 3 238 114 1 1 0 118 3 6 0 108 3 6 0 117 8 20 0 107 8 20 0 -1 
 pt_rohan_patrol Rohirrim_Patrol 562949957615728 0 5 238 233 1 1 0 232 3 6 0 234 3 6 0 231 6 14 0 230 6 14 0 239 8 20 0 
@@ -90,12 +90,12 @@ pt_lossarnach_patrol Lossarnach_Patrol 562949957615722 0 3 238 130 1 1 0 129 3 8
 pt_brv_patrol Blackroot_Patrol 562949957615723 0 3 238 156 1 1 0 153 4 8 0 152 6 12 0 154 8 16 0 151 10 20 0 -1 
 pt_pinnath_patrol Pinnath_Patrol 562949957615721 0 3 238 150 1 1 0 149 3 6 0 147 3 6 0 148 6 16 0 146 8 20 0 -1 
 pt_lamedon_patrol Lamedon_Patrol 562949957615726 0 3 238 144 1 1 0 143 6 14 0 142 3 6 0 141 8 20 0 140 10 24 0 -1 
-pt_mordor_war_party Mordor_War_Party 844424934326353 0 6 238 351 1 2 0 346 10 22 0 345 16 36 0 359 60 80 0 368 40 60 0 354 0 3 0 
-pt_isengard_war_party Isengard_War_Party 844424934326354 0 7 238 343 1 2 0 335 3 6 0 340 3 6 0 334 15 25 0 320 5 10 0 353 0 3 0 
+pt_mordor_war_party Mordor_War_Party 844424934326353 0 6 238 351 1 2 0 346 10 22 0 345 16 36 0 359 60 80 0 368 40 60 0 962 0 3 0 
+pt_isengard_war_party Isengard_War_Party 844424934326354 0 7 238 343 1 2 0 335 3 6 0 340 3 6 0 334 15 25 0 320 5 10 0 959 0 3 0 
 pt_harad_war_party Harad_War_Party 844424934326359 0 12 238 250 2 4 0 259 2 4 0 262 2 4 0 254 8 16 0 257 10 20 0 247 20 40 0 
 pt_dunland_war_party Dunlending_Warband 844424934326366 0 19 238 274 2 4 0 270 6 12 0 268 12 24 0 271 10 20 0 267 20 50 0 -1 
 pt_khand_war_party Variag_War_Party 844424934326361 0 14 238 281 2 4 0 285 2 4 0 280 5 10 0 279 8 16 0 282 10 20 0 278 20 40 0 
-pt_moria_war_party Moria_War_Party 844424934326363 0 16 238 377 5 10 0 379 10 20 0 376 12 24 0 375 15 30 0 374 20 50 0 352 1 2 0 
+pt_moria_war_party Moria_War_Party 844424934326363 0 16 238 377 5 10 0 379 10 20 0 376 12 24 0 375 15 30 0 374 20 50 0 951 1 2 0 
 pt_dale_war_party Dale_War_Party 844424934326346 0 11 238 48 8 13 0 54 8 20 0 52 8 16 0 51 5 20 0 57 10 25 0 59 4 15 0 
 pt_rhun_war_party Rhun_War_Party 844424934326360 0 13 238 80 2 4 0 79 5 10 0 70 8 16 0 67 8 16 0 72 12 24 0 64 18 36 0 
 pt_gondor_company Minas_Tirith_Patrol 1125899911037037 0 3 238 429 1 1 0 114 2 4 0 113 8 16 0 108 10 20 0 118 10 20 0 105 10 20 0 
@@ -165,7 +165,7 @@ pt_isengard_reinf_b _ 0 0 1 0 320 2 3 0 332 2 4 0 337 1 2 0 315 2 4 0 333 1 3 0 
 pt_isengard_reinf_c _ 0 0 1 0 321 1 2 0 338 1 2 0 341 1 2 0 316 1 2 0 318 1 2 0 -1 
 pt_mordor_reinf_a _ 0 0 1 0 344 1 3 0 358 2 5 0 345 1 2 0 359 2 4 0 -1 -1 
 pt_mordor_reinf_b _ 0 0 1 0 368 2 4 0 369 2 4 0 345 2 3 0 359 3 6 0 360 1 2 0 370 1 2 0 
-pt_mordor_reinf_c _ 0 0 1 0 362 1 2 0 346 1 1 0 348 0 1 0 360 1 2 0 354 0 1 0 -1 
+pt_mordor_reinf_c _ 0 0 1 0 362 1 2 0 346 1 1 0 348 0 1 0 360 1 2 0 962 0 1 0 -1 
 pt_harad_reinf_a _ 0 0 1 0 256 1 2 0 263 1 2 0 247 5 10 0 -1 -1 -1 
 pt_harad_reinf_b _ 0 0 1 0 260 1 2 0 253 2 4 0 248 1 2 0 263 1 2 0 -1 -1 
 pt_harad_reinf_c _ 0 0 1 0 261 1 2 0 258 1 2 0 264 1 2 0 251 1 1 0 249 0 1 0 -1 
@@ -189,16 +189,16 @@ pt_woodelf_reinf_b _ 0 0 1 0 183 2 4 0 187 1 2 0 191 1 2 0 -1 -1 -1
 pt_woodelf_reinf_c _ 0 0 1 0 184 1 2 0 188 1 2 0 192 2 4 0 -1 -1 -1 
 pt_moria_reinf_a _ 0 0 1 0 374 4 8 0 375 2 4 0 -1 -1 -1 -1 
 pt_moria_reinf_b _ 0 0 1 0 379 4 7 0 375 1 2 0 376 2 4 0 377 1 2 0 -1 -1 
-pt_moria_reinf_c _ 0 0 1 0 371 2 4 0 376 1 2 0 352 1 1 0 -1 -1 -1 
+pt_moria_reinf_c _ 0 0 1 0 371 2 4 0 376 1 2 0 951 1 1 0 -1 -1 -1 
 pt_guldur_reinf_a _ 0 0 1 0 356 8 16 0 -1 -1 -1 -1 -1 
 pt_guldur_reinf_b _ 0 0 1 0 357 4 7 0 359 3 6 0 -1 -1 -1 -1 
-pt_guldur_reinf_c _ 0 0 1 0 362 1 2 0 366 2 4 0 360 1 2 0 354 0 1 0 -1 -1 
+pt_guldur_reinf_c _ 0 0 1 0 362 1 2 0 366 2 4 0 360 1 2 0 962 0 1 0 -1 -1 
 pt_beorn_reinf_a _ 0 0 1 0 39 2 4 0 38 2 4 0 29 3 6 0 -1 -1 -1 
 pt_beorn_reinf_b _ 0 0 1 0 35 2 4 0 31 1 2 0 40 1 2 0 43 1 2 0 -1 -1 
 pt_beorn_reinf_c _ 0 0 1 0 41 1 3 0 44 2 3 0 32 1 2 0 -1 -1 -1 
 pt_gundabad_reinf_a _ 0 0 1 0 382 6 12 0 383 5 8 0 -1 -1 -1 -1 
 pt_gundabad_reinf_b _ 0 0 1 0 387 1 3 0 383 3 5 0 384 2 3 0 -1 -1 -1 
-pt_gundabad_reinf_c _ 0 0 1 0 389 1 2 0 384 2 3 0 352 1 1 0 -1 -1 -1 
+pt_gundabad_reinf_c _ 0 0 1 0 389 1 2 0 384 2 3 0 951 1 1 0 -1 -1 -1 
 pt_dale_reinf_a _ 0 0 1 0 59 1 2 0 48 1 2 0 49 1 2 0 47 5 10 0 -1 -1 
 pt_dale_reinf_b _ 0 0 1 0 59 0 1 0 50 3 5 0 56 1 2 0 53 1 2 0 -1 -1 
 pt_dale_reinf_c _ 0 0 1 0 61 2 4 0 57 1 2 0 54 1 2 0 -1 -1 -1 
@@ -243,10 +243,10 @@ pt_dunland_recruits _ 0 0 1 0 267 3 7 0 -1 -1 -1 -1 -1
 pt_caravan_survivors Caravan_Survivors 562949953421386 0 26 7 441 5 5 0 -1 -1 -1 -1 -1 
 pt_routed_allies Routed_Allies 844424930132044 0 2 7 -1 -1 -1 -1 -1 -1 
 pt_routed_enemies Routed_Enemies 844424930132044 0 2 7 -1 -1 -1 -1 -1 -1 
-pt_legion_minas_morgul Legion_of_Minas_Morgul 844424930132049 0 6 238 419 1 1 0 354 10 10 0 347 30 60 0 365 25 55 0 364 25 50 0 369 25 50 0 
-pt_legion_udun Legion_of_Udun 844424930132049 0 6 238 419 1 1 0 363 20 30 0 370 30 45 0 349 30 45 0 360 30 90 0 354 10 10 0 
-pt_legion_gorgoroth Legion_of_Gorgoroth 844424930132049 0 6 238 419 1 1 0 403 30 30 0 354 10 10 0 362 30 50 0 360 40 90 0 369 20 40 0 
-pt_legion_barad_dur Legion_of_Barad-Dur 844424930132049 0 6 238 419 1 1 0 418 5 5 0 350 60 60 0 361 90 90 0 370 60 60 0 354 15 15 0 
+pt_legion_minas_morgul Legion_of_Minas_Morgul 844424930132049 0 6 238 419 1 1 0 962 10 10 0 347 30 60 0 365 25 55 0 364 25 50 0 369 25 50 0 
+pt_legion_udun Legion_of_Udun 844424930132049 0 6 238 419 1 1 0 363 20 30 0 370 30 45 0 349 30 45 0 360 30 90 0 962 10 10 0 
+pt_legion_gorgoroth Legion_of_Gorgoroth 844424930132049 0 6 238 419 1 1 0 403 30 30 0 962 10 10 0 362 30 50 0 360 40 90 0 369 20 40 0 
+pt_legion_barad_dur Legion_of_Barad-Dur 844424930132049 0 6 238 419 1 1 0 418 5 5 0 350 60 60 0 361 90 90 0 370 60 60 0 962 15 15 0 
 pt_beorn_messenger Beorning_Messenger 281474980905036 0 20 183 45 1 1 0 -1 -1 -1 -1 -1 
 pt_village Village 2376839 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_ring_hunters Ring_Hunters 562949953683555 0 1 494 896 1 1 0 898 10 15 0 285 10 15 0 900 12 20 0 901 20 35 0 899 15 30 0 

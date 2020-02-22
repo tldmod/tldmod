@@ -1165,7 +1165,7 @@ tld_move_ai = (0.01, 0, 0, [(eq,"$field_ai_lord",1)],
       #(this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
       #(this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
       #(this_or_next|eq, ":lord", "trp_nazgul"),
-      #(this_or_next|eq, ":lord", "trp_olog_hai"),
+      #(this_or_next|eq, ":lord", "trp_mordor_olog_hai"),
       #(is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
@@ -1195,7 +1195,7 @@ tld_ai_kicking = (1, 0, 0, [(eq,"$field_ai_lord",1)],
       #(this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
       #(this_or_next|eq, ":lord", "trp_nazgul"),
       #(this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
-      #(this_or_next|eq, ":lord", "trp_olog_hai"),
+      #(this_or_next|eq, ":lord", "trp_mordor_olog_hai"),
       #(is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
@@ -1257,7 +1257,7 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
       #(this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
       #(this_or_next|eq, ":lord", "trp_nazgul"),
       #(this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
-      #(this_or_next|eq, ":lord", "trp_olog_hai"),
+      #(this_or_next|eq, ":lord", "trp_mordor_olog_hai"),
       #(is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active, ":agent1"),
@@ -1912,7 +1912,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
 
     (try_begin),
-      (this_or_next|is_between, ":troop_id", "trp_troll_of_moria", "trp_ent"),
+      (this_or_next|is_between, ":troop_id", "trp_moria_troll", "trp_ent"),
 	  (is_between, ":troop_id", "trp_moria_troll", "trp_ent2"), #new troll range
       (gt, ":current_hp_shield", 0),
 
@@ -1948,7 +1948,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       (try_end),
 
     # (else_try),
-      # (eq, ":troop_id", "trp_troll_of_moria"),
+      # (eq, ":troop_id", "trp_moria_troll"),
       # (gt, ":current_hp_shield", 0),
 
       # #(assign, reg55, ":damage"),
@@ -2002,9 +2002,13 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       (eq, ":dealer", ":player"),
       (assign, reg60, ":damage"),
       (display_message, "@Delivered {reg60} damage."),
+	  (set_show_messages, 0),
       (set_trigger_result, 0),
+	  (set_show_messages, 1),
     (else_try),
+	  (set_show_messages, 0),
       (set_trigger_result, 0),
+	  (set_show_messages, 1),
     (try_end),
 
     (assign, reg0, ":weapon"),
