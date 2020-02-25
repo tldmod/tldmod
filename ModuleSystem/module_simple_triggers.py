@@ -136,8 +136,8 @@ simple_triggers = [
       (try_end),
   ]),
   
-  # (10) Reducing luck by 1 in every 180 hours
-  (180,[(val_sub, "$g_player_luck", 1),(val_max, "$g_player_luck", 0),]),
+  # (10) Reducing luck by 1 in every 180 hours #No luck in TLD
+  #(180,[(val_sub, "$g_player_luck", 1),(val_max, "$g_player_luck", 0),]),
   
   # (11)Party Morale: Move morale towards target value.
   (24,[(call_script, "script_get_player_party_morale_values"),

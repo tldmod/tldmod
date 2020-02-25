@@ -1811,7 +1811,7 @@ scripts = [
 	(assign, "$g_ent_water_ever_drunk", 0),
 	(assign, "$g_ent_water_taking_effect", 0),
 	(assign, "$number_of_player_deaths", 0),      
-	(assign, "$g_player_luck", 200),
+	#(assign, "$g_player_luck", 200), #no luck in TLD
 	(assign, "$disable_npc_complaints", 0), #MV: back to 0
 	(assign, "$tld_war_began",0),
 	(assign, "$prev_day", 1),
@@ -25857,7 +25857,7 @@ command_cursor_scripts = [
 		(store_script_param_1, ":troop_id"),
 
 		(store_skill_level, ":ironflesh",  skl_ironflesh, ":troop_id",),
-		(store_mul, reg0, ":ironflesh", 30), # Kham: Change to what value we want. Moria Troll needs higher HP shield cause unarmoured.
+		(store_mul, reg0, ":ironflesh", 50), # Kham: Change to what value we want. Moria Troll needs higher HP shield cause unarmoured.
 		(troop_set_slot, ":troop_id", slot_troop_hp_shield, reg0),
 	]),
 
