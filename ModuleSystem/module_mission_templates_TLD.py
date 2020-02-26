@@ -2214,7 +2214,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	(eq, ":type", tf_troll),
 
 	(agent_set_speed_modifier, ":troll", 65),
-	(agent_set_max_hit_points, ":troll", 35),
+	#(agent_set_max_hit_points, ":troll", 35),
 	(agent_ai_set_aggressiveness, ":troll", 500),
 
  ]),
@@ -2622,7 +2622,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(val_add, ":time_last_charge", 10),
 		(gt, ":time", ":time_last_charge"),
 		(agent_set_slot, ":troll", slot_troll_agent_charging, 0),
-		(agent_set_speed_modifier, ":troll", 50),
+		(agent_set_speed_modifier, ":troll", 65),
 		(assign, reg65, ":time"),
 		(assign, reg66, ":time_last_charge"),
 		#(display_message, "@Charge turned off -- Time: {reg65}, Last Charge: {reg66}"),

@@ -1868,11 +1868,19 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
     (troop_get_slot, ":shield", ":troop_id", slot_troop_hp_shield),
     (agent_set_slot, ":agent", slot_agent_hp_shield_active, 1),
     (agent_set_slot, ":agent", slot_agent_hp_shield, ":shield"),
+	
+	(try_begin), #make up for reduced troll strength
+		(troop_get_type, ":race", ":troop_id"),
+		(eq, ":race", tf_troll),
+		(agent_set_max_hit_points, ":agent", 300,1),
+	(try_end),
+		
+		
 
     #Debug
-    #(assign, reg2, ":shield"),
-    #(str_store_troop_name, s33, ":troop_id"),
-    #(display_message, "@{s33}: {reg2} set hp shield."),   
+    (assign, reg2, ":shield"),
+    (str_store_troop_name, s33, ":troop_id"),
+    (display_message, "@{s33}: {reg2} set hp shield."),   
 
   ])
 
@@ -1941,10 +1949,17 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 		(troop_get_slot, ":hp_shield", ":troop_id", slot_troop_hp_shield),		
         (store_div, ":couched_damage", ":hp_shield", 3),
         (assign, ":damage", ":couched_damage"),
-        (agent_set_animation, ":agent", "anim_strike3_abdomen_front"), 
+        (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+		(play_sound, "snd_troll_grunt_long"),		
       (else_try),
         (ge, ":damage", 30),
         (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+		(play_sound, "snd_troll_grunt"),
+	  (else_try),
+		(lt, ":current_hp_shield", 100),
+        (ge, ":damage", 15),
+        (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+		(play_sound, "snd_troll_grunt_long"),
       (try_end),
 
     # (else_try),
@@ -1993,19 +2008,20 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (try_end),
       
       #Debug
-      #(assign, reg3, ":current_hp_shield"),
-      #(display_message, "@Hp shield: {reg3} left."), 
+      (assign, reg3, ":current_hp_shield"),
+      (display_message, "@Hp shield: {reg3} left."), 
 
    
     
     (try_begin),
-      (eq, ":dealer", ":player"),
+      #(eq, ":dealer", ":player"),
       (assign, reg60, ":damage"),
       (display_message, "@Delivered {reg60} damage."),
 	  (set_show_messages, 0),
       (set_trigger_result, 0),
 	  (set_show_messages, 1),
     (else_try),
+		(eq, ":dealer", ":player"),
 	  (set_show_messages, 0),
       (set_trigger_result, 0),
 	  (set_show_messages, 1),

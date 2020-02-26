@@ -213,13 +213,13 @@ itemsfile version 2
  itm_animal_small Small_Animal Small_Animal 2  bry_goat 0  bry_goat_c 2  18014398509481984 0 10 16106389504 0 10 0 0 0 10 25 5 5 40 0 0 0
 0
 
- itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  4385144836 512 1 0 58 100 0 0 0 0 30720 80 70 200 0 542 542
+ itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  4385144836 512 1 0 58 100 0 0 0 0 30720 70 70 200 0 542 542
 0
 
- itm_troll_weapon_dmg Giant_Mace Giant_Mace 4  0 2  orc_sledgehammer_troll 8  giant_mace 0  giant_hammer 524288  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 100 100 110 0 542 542
+ itm_troll_weapon_dmg Giant_Mace Giant_Mace 4  0 2  orc_sledgehammer_troll 8  giant_mace 1  giant_hammer 524288  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 80 100 110 0 542 542
 0
 
- itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 6  0 0  bone_cudgel_troll 128  troll_club 8  tree_trunk_club 1024  orc_club_a_troll 262144  giant_mace_b 524288  141822394371 9259400833873739810 1 0 58 100 0 0 0 0 25600 90 150 130 0 537 537
+ itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 6  0 0  bone_cudgel_troll 128  troll_club 8  tree_trunk_club 1024  orc_club_a_troll 262144  giant_mace_b 524288  141822394371 9259400833873739810 1 0 58 100 0 0 0 0 25600 70 150 130 0 537 537
 0
 
  itm_troll_aoe troll_aoe troll_aoe 1  0 0  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 1024 90 0 110 0 513 513
@@ -234,7 +234,7 @@ itemsfile version 2
  itm_giant_mace Giant_Mace Giant_Mace 3  giant_mace 0  giant_hammer 64  giant_mace_b 256  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 80 0 130 0 542 542
 0
 
- itm_troll_shield_a Troll_Shield Troll_Shield 2  troll_shield_a 0  troll_shield_b 64  266247 5100273664 100 251658402 50 100 0 10 0 0 500 96 0 115 0 0 0
+ itm_troll_shield_a Troll_Shield Troll_Shield 2  troll_shield_a 0  troll_shield_b 64  137439219719 5100273664 100 251658402 50 100 0 10 0 0 500 96 0 60 0 0 0
 0
 
  itm_free_olog_feet_boots Olog_Hai_Feet Olog_Hai_Feet 1  olog_feet 0  137438957582 0 1 0 58 100 0 0 62 70 0 0 0 0 0 0 0
@@ -273,7 +273,7 @@ itemsfile version 2
  itm_orc_javelin Orc_Heavy_Javelin Orc_Heavy_Javelin 1  orc_javelin 0  71368714 262144 400 4398046781448 5 100 0 0 83 1 0 89 30 88 2 311 0
 0
 
- itm_khergit_arrows Barbed_Arrows Barbed_Arrows 3  rohan_arrow2 0  rohan_arrow2_flying 2305843009213693952  rohan_quiver 3458764513820540928  65541 1342177280 300 4398046520456 3.5 100 0 0 0 0 0 0 0 95 30 2 0
+ itm_khergit_arrows Rohirrim_Arrows Rohirrim_Arrows 3  rohan_arrow1 0  rohan_arrow1_flying 2305843009213693952  rohan_quiver2 3458764513820540928  65541 1342177280 300 4398046520456 3.5 100 0 0 0 0 0 0 0 95 30 2 0
 0
 
  itm_free_rohan_arrows_2 Rohirrim_Arrows Rohirrim_Arrows 3  rohan_arrow1 0  rohan_arrow1_flying 2305843009213693952  rohan_quiver2 3458764513820540928  65541 1342177280 300 4398046520456 3.5 100 0 0 0 0 0 0 0 95 30 2 0

@@ -1811,7 +1811,7 @@ scripts = [
 	(assign, "$g_ent_water_ever_drunk", 0),
 	(assign, "$g_ent_water_taking_effect", 0),
 	(assign, "$number_of_player_deaths", 0),      
-	#(assign, "$g_player_luck", 200), #no luck in TLD
+	(assign, "$g_player_luck", 200), #no luck in TLD
 	(assign, "$disable_npc_complaints", 0), #MV: back to 0
 	(assign, "$tld_war_began",0),
 	(assign, "$prev_day", 1),
@@ -28947,6 +28947,7 @@ if is_a_wb_script==1:
 	(try_end),
 	]),
 
+#script_cf_surrounded_pushback
 ("cf_surrounded_pushback", [
 	(store_script_param_1, ":agent"),\
 	(store_script_param_2, ":step"),
