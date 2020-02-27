@@ -149,7 +149,7 @@ str_he|On
 str_she|Ona
 str_s3s_s2|{s3}ův {s2}
 str_s5_is_s51|{s5} je {s51}.
-str_s5_is_the_ruler_of_s51|{s5} je vládce {s51}.
+str_s5_is_the_ruler_of_s51|{s5} je vládce frakce {s51}.
 str_s5_is_a_nobleman_of_s6|{s5} je šlechtic z {s6}.
 str_relation_mnus_100|Pomstychtivý
 str_relation_mnus_90|Pomstychtivý
@@ -171,23 +171,23 @@ str_relation_plus_60|Milostivý
 str_relation_plus_70|Nakloněný
 str_relation_plus_80|Loajální
 str_relation_plus_90|Oddaný
-str_relation_mnus_100_ns|{s60} je pomstichtivý k tobě.
-str_relation_mnus_90_ns|{s60} je pomstichtivý k tobě.
-str_relation_mnus_80_ns|{s60} je pomstichtivý vůči tobě.
-str_relation_mnus_70_ns|{s60} je nenávistný k tobě.
-str_relation_mnus_60_ns|{s60} je nenávistný k tobě.
-str_relation_mnus_50_ns|{s60} je nepřátelský k tobě.
-str_relation_mnus_40_ns|{s60} je rozzlobený na tebe.
-str_relation_mnus_30_ns|{s60} je rozmrzelý k tobě.
-str_relation_mnus_20_ns|{s60} je reptá na tebe.
-str_relation_mnus_10_ns|{s60} je podezřívavý k tobě.
-str_relation_plus_0_ns|{s60} je lhostejný k tobě.
-str_relation_plus_10_ns|{s60} je ochoten spolupracovat s tebou.
-str_relation_plus_20_ns|{s60} je vítající k tobě.
-str_relation_plus_30_ns|{s60} je příznivý k tobě.
-str_relation_plus_40_ns|{s60} je podporující k tobě.
-str_relation_plus_50_ns|{s60} je přátelský k tobě.
-str_relation_plus_60_ns|{s60} je vlídný k tobě.
+str_relation_mnus_100_ns|{s60} je vůči tobě pomstychtivý.
+str_relation_mnus_90_ns|{s60} je vůči tobě pomstychtivý.
+str_relation_mnus_80_ns|{s60} je vůči tobě pomstychtivý.
+str_relation_mnus_70_ns|{s60} je vůči tobě nenávistný.
+str_relation_mnus_60_ns|{s60} je vůči tobě nenávistný.
+str_relation_mnus_50_ns|{s60} je vůči tobě nepřátelský.
+str_relation_mnus_40_ns|{s60} je na tebe rozzlobený.
+str_relation_mnus_30_ns|{s60} je na tebe rozmrzelý.
+str_relation_mnus_20_ns|{s60} na tebe nadává.
+str_relation_mnus_10_ns|{s60} je k tobě podezřívavý.
+str_relation_plus_0_ns|{s60} je k tobě lhostejný.
+str_relation_plus_10_ns|{s60} je ochoten s tebou spolupracovat.
+str_relation_plus_20_ns|{s60} tě vítá.
+str_relation_plus_30_ns|{s60} je k tobě příznivý.
+str_relation_plus_40_ns|{s60} tě podporuje.
+str_relation_plus_50_ns|{s60} je k tobě přátelský.
+str_relation_plus_60_ns|{s60} je k tobě vlídný.
 str_relation_plus_70_ns|{s60} je ti nakloněn.
 str_relation_plus_80_ns|{s60} je ti věrný.
 str_relation_plus_90_ns|{s60} je ti oddán.
@@ -1740,7 +1740,7 @@ str_mordor_rank_2|Záškodník z Gorgoroth
 str_mordor_rank_3|Hlídač z Cirith Ungol
 str_mordor_rank_4|Otrokář z  Udûnu
 str_mordor_rank_5|Plenitel z Durthangu
-str_mordor_rank_6|Strážce z Morannonu
+str_mordor_rank_6|Strážce z Černé brány
 str_mordor_rank_7|Kapitán z Minas Morgul
 str_mordor_rank_8|Velitel z Barad-dûru
 str_mordor_rank_9|Zkáza lidstva
@@ -1850,7 +1850,7 @@ str_guldur_rank_2|Záškodník z Gorgoroth
 str_guldur_rank_3|Hlídač z Cirith Ungol
 str_guldur_rank_4|Otrokář z  Udûnu
 str_guldur_rank_5|Plenitel z Durthangu
-str_guldur_rank_6|Strážce z Morannonu
+str_guldur_rank_6|Strážce z Černé brány
 str_guldur_rank_7|Kapitán z Minas Morgul
 str_guldur_rank_8|Velitel z Barad-dûru
 str_guldur_rank_9|Zkáza lidstva

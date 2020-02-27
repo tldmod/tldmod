@@ -130,8 +130,8 @@ trp_i3_rhun_tribal_infantry|Soldado Tribal de Rhun
 trp_i3_rhun_tribal_infantry_pl|Soldados Tribais de Rhun
 trp_i4_rhun_vet_infantry|Soldado Tribal Veterano de Rhun
 trp_i4_rhun_vet_infantry_pl|Soldados Tribais Veteranos de Rhun
-; trp_i5_rhun_ox_warrior|Warrior of the Ox
-; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
+trp_i5_rhun_ox_warrior|Guerreiro de Ox
+trp_i5_rhun_ox_warrior_pl|Guerreiros de Ox
 trp_c2_rhun_light_horseman|Cavaleiro Leve de Rhun
 trp_c2_rhun_light_horseman_pl|Cavaleiros Leves de Rhun
 trp_c3_rhun_light_cavalry|Soldado de Cavalaria Leve de Rhun
@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|Arqueiros de Elite de Pinnath Gelin
 trp_c6_pinnath_leader|Capitão de Pinnath Gelin
 trp_c6_pinnath_leader_pl|Capitães de Pinnath Gelin
 trp_a1_blackroot_hunter|Caçador do Vale Raiznegra
-; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
+trp_a1_blackroot_hunter_pl|Caçadores do Vale Raiz Negra
 trp_a2_blackroot_bowman|Arqueiro Veterano do Vale Raiznegra
 trp_a2_blackroot_bowman_pl|Arqueiros Veterano do Vale Raiznegra
 trp_a3_blackroot_archer|Arqueiro Mestre do Vale Raiznegra
@@ -310,12 +310,12 @@ trp_a2_lorien_warden|Guardião de Lothlorien
 trp_a2_lorien_warden_pl|Guardiões de Lothlorien
 trp_a3_lorien_vet_warden|Guardião Veterano de Lothlorien
 trp_a3_lorien_vet_warden_pl|Guardiões Veteranos de Lothlorien
-; trp_a4_lorien_gal_warden|Galadhrim Warden
-; trp_a4_lorien_gal_warden_pl|Galadhrim Wardens
+trp_a4_lorien_gal_warden|Guardião de Galadhrim
+trp_a4_lorien_gal_warden_pl|Guardiões de Galadhrim 
 trp_a5_lorien_gal_royal_warden|Guardião Real de Galadhrim
 trp_a5_lorien_gal_royal_warden_pl|Guardiões Reais de Galadhrim
-; trp_a6_lorien_grey_warden|Grey Warden
-; trp_a6_lorien_grey_warden_pl|Grey Wardens
+trp_a6_lorien_grey_warden|Guardião cinza
+trp_a6_lorien_grey_warden_pl|Guardiões cinzas
 trp_a5_lorien_gal_royal_archer|Atirador Real de Galadhrim
 trp_a5_lorien_gal_royal_archer_pl|Atiradores Reais de Galadhrim
 trp_noldorin_mounted_archer|Arqueiro Montado Noldorin
@@ -324,16 +324,16 @@ trp_a2_lorien_archer|Arqueiro de Lothlorien
 trp_a2_lorien_archer_pl|Arqueiros de Lothlorien
 trp_a3_lorien_vet_archer|Arqueiro Veterano de Lothlorien
 trp_a3_lorien_vet_archer_pl|Arqueiros Veteranos Lothlorien
-; trp_a4_lorien_gal_archer|Galadhrim Archer
-; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
+trp_a4_lorien_gal_archer|Arqueiro de Galadhrim
+trp_a4_lorien_gal_archer_pl|Arqueiros de Galadhrim
 trp_galadhrim_royal_marksman|Atirador Real de Galadhrim
 trp_galadhrim_royal_marksman_pl|Atiradores Reais de Galadhrim
 trp_i3_lorien_inf|Infantaria de Lothlorien
 trp_i3_lorien_inf_pl|Infantaria de Lothlorien
-; trp_i4_lorien_gal_inf|Galadhrim Infantry
-; trp_i4_lorien_gal_inf_pl|Galadhrim Infantry
-; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Guard
-; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Guards
+trp_i4_lorien_gal_inf|infantaria de Galadhrim
+trp_i4_lorien_gal_inf_pl|infantaria de Galadhrim
+trp_i5_lorien_gal_royal_inf|Guarda Real de Galadhrim
+trp_i5_lorien_gal_royal_inf_pl|Guardas Reais de Galadhrim
 trp_lothlorien_standard_bearer|Carregador de Estandarte de Lothlorien
 trp_lothlorien_standard_bearer_pl|Carregadores de Estandarte de Lothlorien
 trp_a1_greenwood_scout|Batedor de Greenwood
@@ -344,16 +344,16 @@ trp_a3_greenwood_archer|Arqueiro de Greenwood
 trp_a3_greenwood_archer_pl|Arqueiros de Greenwood
 trp_a4_greenwood_veteran_archer|Arqueiro Veterano de Greenwood
 trp_a4_greenwood_veteran_archer_pl|Arqueiros Veteranos de Greenwood
-; trp_a5_greenwood_master_archer|Greenwood Master Archer
-; trp_a5_greenwood_master_archer_pl|Greenwood Master Archers
-; trp_a6_greenwood_chosen_marksman|Thranduil's Chosen Marksman
-; trp_a6_greenwood_chosen_marksman_pl|Thranduil's Chosen Marksmen
+trp_a5_greenwood_master_archer|Arqueiro mestre da Floresta Verde
+trp_a5_greenwood_master_archer_pl|Arqueiros mestres da Floresta Verde
+trp_a6_greenwood_chosen_marksman|Atirador escolhido de Thranduil
+trp_a6_greenwood_chosen_marksman_pl|Atiradores escolhidos de Thranduil
 trp_a3_greenwood_sentinel|Sentinela de Greenwood
 trp_a3_greenwood_sentinel_pl|Sentinelas de Greenwood
 trp_a4_greenwood_vet_sentinel|Sentinela Veterano de Greenwood
 trp_a4_greenwood_vet_sentinel_pl|Sentinelas Veteranos de Greenwood
-; trp_a5_greenwood_vigilant|Greenwood Guardian
-; trp_a5_greenwood_vigilant_pl|Greenwood Guardians
+trp_a5_greenwood_vigilant|Protetor da Floresta Verde
+trp_a5_greenwood_vigilant_pl|Protetores da Floresta Verde
 trp_i2_greenwood_infantry|Lanceiro de Greenwood
 trp_i2_greenwood_infantry_pl|Lanceiros de Greenwood
 trp_i3_greenwood_vet_infantry|Lanceiro Veterano de Greenwood

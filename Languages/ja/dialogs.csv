@@ -142,7 +142,7 @@ dlga_ziggy_choose_prisoners:ziggy_no|今そちらへまわす余裕がない。
 dlga_ziggy_chosen_prisoner:ziggy_ritual|指揮官どの、礼を言う！少し待ってもらおう・・・うむ、これならば^うまくいくであろう・・・アガンヌーロ・ブルダン・キヌム！^カドー・ナック、イードー・ウグル＝ダラド・ダーイラ！
 dlga_ziggy_chosen_prisoner:ziggy_ritual.1|どれどれ、見てやろう。尊大で反抗的といったところかの？少しばかり、^怖れを感じておるのか？ではわしがまことの恐怖を与えてやろう！^アガンヌーロ・ブルダン・キヌム！カドー・ナック、^イードー・ウグル＝ダラド・ダーイラ！
 dlga_ziggy_ritual:ziggy_ritual_succeed|おお・・・これじゃ！指揮官どの、見よ！我、ジグールフェルの^偉業をとくと見るがよい！アングバンドの狼を知っておるか？^ドラウグルインは？または、ヴァリノールの猟犬フアンを殺した、^強大なカルハロスは？冥王がその意に添うように捕らえた者を^ねじ曲げるのと同様、われらも小さな魂を呼び寄せ、^大いなる闇の獣としてつなぎ合わせるのじゃ！もちろん、この者の^持つ力はドラウグルインの子孫には程遠いが、役に立つであろう。
-dlga_ziggy_ritual:ziggy_ritual_succeed.1|追い立てまわされる敵勢を見るのが楽しみだ。
+dlga_ziggy_ritual:ziggy_ritual_succeed.1|追い立てまわされる敵勢を見るのが楽しみじゃのう。
 dlga_ziggy_ritual:ziggy_choose_prisoners|くっ！か弱すぎたか！役立たずめ！指揮官どの、もっと強い、 我が術に耐えられる者が必要じゃ！
 dlga_ziggy_ritual_succeed:close_window|当然ながら、われらには少々休息が必要じゃ。 また捕虜を引き渡してくれれば、再び我が術を披露しよう。
 dlga_companion_objection_response:close_window|ありがとう、{君/あなた}の心遣いに感謝する{よ/わ}。
@@ -397,7 +397,7 @@ dlga_marshall_ask:marshall_suggest|聞こう、{playername}。 提案とは何�
 dlga_marshall_suggest:marshall_answer|いますぐ{s1}を包囲するべきだ。
 dlga_marshall_suggest:lord_pretalk|なんでもない、そちらの判断にまかせる。
 dlga_player_siege_discuss:player_siege_discuss_1|伺いましょう、閣下。
-dlga_player_siege_resource_check:lord_pretalk|いや、まだ時期尚早である。
+dlga_player_siege_resource_check:lord_pretalk|いえ、まだ時期尚早であると考えます。
 dlga_player_siege_check_passed:player_siege_accept|よかろう。ゆけ、{playername}。 {s2}の祝福と共に進軍するがよい。 我が民を勝利へと導いてくれると期待しているぞ。
 dlga_player_siege_accept:close_window|閣下、ありがとうございます。 あなたと{s2}の民を失望させることはありません。
 dlga_marshall_answer:close_window|よかろう。{playername}よ、ここはおぬしの意見に従おう。 我が軍の各部隊にも伝令を飛ばすとしよう。^おぬしは私に同行するがよい。 これより{s4}を目指して進軍する！

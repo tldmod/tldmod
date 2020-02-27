@@ -314,8 +314,8 @@ trp_a4_lorien_gal_warden|Galadhrimský dozorce
 trp_a4_lorien_gal_warden_pl|Galadhrimští dozorci
 trp_a5_lorien_gal_royal_warden|Galadhrimský královský dozorce
 trp_a5_lorien_gal_royal_warden_pl|Galadrimští královští dozorci
-trp_a6_lorien_grey_warden|Šedý poutník
-trp_a6_lorien_grey_warden_pl|Šedí poutníci
+trp_a6_lorien_grey_warden|Šedý strážce
+trp_a6_lorien_grey_warden_pl|Šedí strážci
 trp_a5_lorien_gal_royal_archer|Galadhrimský královský lučištník
 trp_a5_lorien_gal_royal_archer_pl|Galadhrimští královští lučištníci
 trp_noldorin_mounted_archer|Noldorský lučištník na koni
@@ -1079,13 +1079,13 @@ trp_smith_hannun_pl|hraničářský sklad
 trp_smith_candros|Kalimdor
 trp_smith_candros_pl|kovárna
 trp_smith_edoras|Eaoden Ocelmistr
-trp_smith_edoras_pl|Králova kovárna
+trp_smith_edoras_pl|Královu kovárnu
 trp_smith_aldburg|Fulm Železné Kopyto
 trp_smith_aldburg_pl|kovárna
 trp_smith_hornburg|Aldhelm
 trp_smith_hornburg_pl|kovárna
 trp_smith_eastemnet|Eadfrid
-trp_smith_eastemnet_pl|kovárna
+trp_smith_eastemnet_pl|kovárnu
 trp_smith_westfold|Deor Přilbotepec
 trp_smith_westfold_pl|kovárna
 trp_smith_westemnet|Zbrojíř
@@ -1181,7 +1181,7 @@ trp_smith_khand_ac_pl|kovárna
 trp_smith_umbar_ac|Fuinir Padělatel
 trp_smith_umbar_ac_pl|kovárna
 trp_barman_mtirith|majitel krčmy
-trp_barman_mtirith_pl|Citadela
+trp_barman_mtirith_pl|Citadelu
 trp_barman_pelargir|majitel krčmy
 trp_barman_pelargir_pl|Hrad
 trp_barman_linhir|majitel krčmy
@@ -1203,7 +1203,7 @@ trp_barman_hannun_pl|tajná jeskyně
 trp_barman_calembel|majitel krčmy
 trp_barman_calembel_pl|Hrad
 trp_barman_edoras|majitel krčmy
-trp_barman_edoras_pl|Meduseld, zlatá síň
+trp_barman_edoras_pl|Meduseld, Zlatá síň
 trp_barman_aldburg|majitel krčmy
 trp_barman_aldburg_pl|Hrad
 trp_barman_hornburg|majitel krčmy
@@ -1382,11 +1382,11 @@ trp_elder_aldburg|Alburgský místodržící
 trp_elder_aldburg_pl|městečko
 trp_elder_hornburg|Hornburgský místodržící
 trp_elder_hornburg_pl|pevnost
-trp_elder_eastemnet|Mistodržící Východního Emnetu
+trp_elder_eastemnet|Místodržící Východní poloniny
 trp_elder_eastemnet_pl|městečko
 trp_elder_westfold|Mistodžící Západního Úvalu
 trp_elder_westfold_pl|městečko
-trp_elder_westemnet|Místodržící Západního Emnetu
+trp_elder_westemnet|Místodržící Západní poloniny
 trp_elder_westemnet_pl|městečko
 trp_elder_eastfold|Místodžící Východního Úvalu
 trp_elder_eastfold_pl|městečko

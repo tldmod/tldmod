@@ -12,20 +12,20 @@ ui_merchant_pay_whatever|Ne, nic z toho nepotřebuji, nechte si to,
 ui_horse|Osedlat
 ui_reclaim_your_sold_goods|Než to uděláte,vraťte zboží které jste si vzali 
 ui_return_your_bought_goods|Než to uděláte,vraťte zboží které jste si vzali 
-ui_return_price|pri vraceni:  +%d B. Zdr.
-ui_sell_price|pri predani: +%d B. Zdr.
-ui_reclaim_price|získat zpět: - %d B. Zdr.
-ui_buying_price|vzít: - %d B. Zdr.
+ui_return_price|při vrácení: +%d Res.P.
+ui_sell_price|při předání: +%d Res.P.
+ui_reclaim_price|získat zpět: - %d Res.P.
+ui_buying_price|vzít: - %d Res.P.
 ui_notification_riding_skill_not_enough|Tvoje jezdecké dovednosti nejsou dostatečné k jízdě na tomto.
 ui_notification_payment_value|Spotrebuje %s
 ui_notification_payment_receive_value|Ziska %s
 ui_weekly_cost_value|Údržba: %s
 ui_sell|dát
 ui_hire|Naverbovat
-ui_notification_cant_hire|(nedostatek B. Zdr. pro naverbování)
-ui_joining_cost_weekly_wage|Odvod: %d B. Zdr.  --  Udrzba: %d B. Zdr.
-ui_weekly_wage|Údržba: %d B. Zdr.
-ui_price|Cena: %d B. Zdr.
+ui_notification_cant_hire|(nedostatek Res.P. pro naverbování)
+ui_joining_cost_weekly_wage|Odvod: %d Res.P.  --  Údržba: %d Res.P.
+ui_weekly_wage|Údržba: %d Res.P.
+ui_price|Cena: %d Res.P.
 ui_cant_reload_this_weapon_on_horseback|Tato zbraň nejde nabít na koni.
 ui_delivered_number_damage_to_horse|Zasazeno %d poškození koni/vrku.
 ui_horse_charged_for_number_damage|Kůň zaútočíl za %d poškození.
@@ -44,7 +44,7 @@ ui_fire_at_will_e_|%s, Střílet dle libosti!
 ui_recent_messages|Posledni Zpravy
 ui_value_denars|%d Resource Pts.
 ui_cannot_be_used_on_horseback|Nelze použít na koni
-ui_upgrade_to_value| Povysit na %s
+ui_upgrade_to_value| Povýšit na %s
 ui_notification_cant_upgrade|(Nelze povysovat jednotky predane do jine skupiny)
 ui_lance_control|Ovládání Kopí:
 ui_manual_easy|Manuál (Jednoduchý)

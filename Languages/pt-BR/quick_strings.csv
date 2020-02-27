@@ -216,8 +216,8 @@ qstr_+1_to_Agility|+1 em Agilidade
 qstr_+1_to_Leadership|+1 em Liderança
 qstr_+1_to_Wildcraft|+1 para Criação Selvagem
 qstr_+1_to_Power_Draw|+1 Força de puxão
-; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
-; qstr_Who_might_be_interes|Who might be interested in this?
+qstr_The_record_of_Balin_|O registro da expedição perdida de Balin.
+qstr_Who_might_be_interes|Quem estaria interessado nisto?
 qstr_Turns_nature_to_your|Trás a Natureza para seu lado (efeito escala com Criação Selvagem)
 qstr_+1_to_Trainer|+1 em Treinador
 qstr_Recruits_Tribal_Orcs|Recruta Orcs Tribais
@@ -226,15 +226,15 @@ qstr_rallies|reunião
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} em batalha
 qstr_+1_to_Charisma|+1 em Carisma
 qstr_+1_to_Surgery|+1 em Cirurgia
-; qstr_+1_to_Intelligence|+1 to Intelligence
+qstr_+1_to_Intelligence|+1 de Inteligência
 qstr_+1_to_Ironflesh|+1 em Pele de Ferro
 qstr_+1_to_Prisoner_Mgmt|+1 em Administração de Prisioneiros
 qstr_when_equipped|quando equipado
-; qstr_+1_to_Riding|+1 to Riding
-; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_+1_to_Riding|+1 de Montaria
+qstr_+1_to_Mounted_Archer|+1 de Arquearia Montada
 qstr_+2_to_Tactics|+2 para táticas
 qstr_+3_to_Spotting|+3 em Enxergar
-; qstr_+2_to_Athletics|+2 to Athletics
+qstr_+2_to_Athletics|+2 de Atletismo
 qstr_Less_Dunnish_upkeep|Menor Despesa com Terrapardenses
 qstr_Less_Wargs_upkeep|Menor Despesa com Wargs
 qstr_Light_Armor|Armadura Leve
@@ -640,40 +640,40 @@ qstr_gains_Faction_Streng|ganha Força de Facção conforme as notícias de sua 
 qstr_Something_wrong_not_|Algo está errado, não há tropas suficientes para remover
 qstr_Raiders|Bandidos
 qstr_have_won_the_sea_bat|ganhou a batalha naval, desmoralizando suas tropas. O inimigo pode tomar vantagem dessa derrota e atacar mais frequentemente.
-; qstr_loses_Faction_Strength|loses Faction Strength due to the destructive raid.
-; qstr_loses_Faction_Strength_|loses Faction Strength due to the your success at the sea.
+qstr_loses_Faction_Strength|perde Força de Facção devido à incursão destrutiva.
+qstr_loses_Faction_Strength_|perde Força de Facção devido ao seu sucesso no mar.
 qstr_You_spent_{reg67}_of|Você gastou {reg67} da sua influência com {s1}, tem {reg66} restando.
 qstr_No_Troops_Left.|Não restam mais tropas.
 qstr_avoid_melee|Evitar corpo a corpo
 qstr_stand_and_fight|Ficar e Lutar
 qstr_Everyone|Todos
 qstr_Shield___{reg31}_|Escudo (-{reg31})
-; qstr_Power_Draw___{reg31}|Power Draw (-{reg31})
+qstr_Power_Draw___{reg31}|Poder de Puxada (-{reg31})
 qstr_Riding___{reg31}_|Montaria (-{reg31})
 qstr_Horse_Archery___{reg|Arqueiro a cavalo (-{reg31})
-; qstr_Athletics___{reg31}_|Athletics (-{reg31})
+qstr_Athletics___{reg31}_|Atletismo (-{reg31})
 ; qstr_No_Skill_Penalty_Ass|No Skill Penalty Assigned
 qstr_Inventory|Inventário
 qstr_Show_stats|Mostrar estatísticas
 qstr_Show_item_details__|Mostrar detalhes de item
 qstr_Troop_detail|Detalhes de tropa
-; qstr_{s1}^|{s1}^
-; qstr_{s1}Level:_{reg1}^|{s1}Level: {reg1}^
-; qstr_{s1}Hit_Points:_{reg|{s1}Hit Points: {reg1}
+qstr_{s1}^|{s1}^
+qstr_{s1}Level:_{reg1}^|{s1}Nível: {reg1}^
+qstr_{s1}Hit_Points:_{reg|{s1}Pontos de Vida: {reg1}
 ; qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
-; qstr_{s2}^{reg1}^|{s2}^{reg1}^
+qstr_{s2}^{reg1}^|{s2}^{reg1}^
 qstr_{s1}___Agility:|{s1} Agilidade:
-; qstr_{s2}{reg1}|{s2}{reg1}
+qstr_{s2}{reg1}|{s2}{reg1}
 qstr_{s1}Main_skills:_^|{s1}Skills principais: ^
 ; qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
-; qstr_{s2}{reg1}^|{s2}{reg1}^
+qstr_{s2}{reg1}^|{s2}{reg1}^
 ; qstr_{s1}___Athletics:^|{s1}   Athletics:^
 qstr_{s1}___Riding:^|{s1}Montaria: ^
-; qstr_{s2}_^|{s2}-^
+qstr_{s2}_^|{s2}-^
 qstr_{s1}___Power_Throw:^|{s1} Arremesso:^
 ; qstr_{s1}___Power_Draw:^^|{s1}   Power Draw:^^
-; qstr_{s2}{reg1}^^|{s2}{reg1}^^
-; qstr_{s2}_^^|{s2}-^^
+qstr_{s2}{reg1}^^|{s2}{reg1}^^
+qstr_{s2}_^^|{s2}-^^
 qstr_{s1}Weapons:^|{s1}Armas:^
 qstr_{s1}___One_Handed:^|{s1} Uma Mão:^
 qstr_{s1}___Two_Handed:^|{s1} Duas Mãos:^
@@ -684,34 +684,34 @@ qstr_{s1}___Throwing:^|{s1} Arremesso:^
 qstr_{s1}___Slings:|{s1} Estilingues:
 ; qstr_{s2}_|{s2}-
 qstr__Click_on_the_troop_|(Clique na tropa para girá-la)^^Clique no equipamento ^(Elmo, armadura, luvas e botas)^ para mostrá-los.
-; qstr_ready_bows_and_missi|ready bows and missiles
-; qstr_ready_side_arms|ready side arms
-; qstr_ready_two_hander|ready two-hander
-; qstr_ready_polearms|ready polearms
-; qstr_shields_up|shields up
-; qstr_doff_shields|doff shields
+qstr_ready_bows_and_missi|preparar arcos e projéteis
+qstr_ready_side_arms|preparar armas secundárias
+qstr_ready_two_hander|preparar duas-mãos
+qstr_ready_polearms|preparar Armas de Haste
+qstr_shields_up|levantar escudos
+qstr_doff_shields|descartar escudos
 ; qstr_Distance___{reg70}__|Distance - {reg70} - {s11} Party - {s12} Troop
 qstr_A_golden_mist_from_L|Uma névoa dourada vinda de Lórien cobre o campo de batalha. Suas tropas se sentem encorajadas pela presença da Senhora.
 qstr_A_golden_mist_from_Lr|Uma névoa dourada vinda de Lórien cobre o campo de batalha. A bruxa está perto, causando um frio em sua espinha e na de seus soldados.
 qstr_Dark_clouds_from_Mor|Nuvens negras vindas de Mordor cobrem o campo de batalha. Seus arqueiros têm dificuldade para ver o inimigo, e a presença do mal aterroriza seus homens.
 qstr_Dark_clouds_from_Mord|Nuvens negras vindas de Mordor cobrem o campo de batalha. A presença do Senhor da Escuridão fortalece você e seus homens.
-; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield. Your troops are slowed down, and the superstitious amongst the men feel scared.
-; qstr_A_thunderstorm_from_t|A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.
+qstr_A_thunderstorm_from_|Uma tempestade vinda das Montanhas Nebulosas encobre o campo de batalha. Suas tropas sofrem lentidão, e os supersticiosos entre os homens acovardam-se.
+qstr_A_thunderstorm_from_t|Uma tempestade vinda das Montanhas Nebulosas encobre o campo de batalha. Arqueiros têm dificuldade neste tempo.
 qstr_A_poisonous_fog_from|Uma névoa venenosa vinda de Dol Guldur invade o campo de batalha. Você e seus soldados se sentem enfraquecidos. Existe medo entre os seus homens.
 qstr_A_poisonous_fog_from_|Uma névoa venenosa vinda de Dol Guldur invade o campo de batalha. Você não sente nenhuma mudança, mas você pode ouvir seus inimigos sofrendo e pode sentir o medo deles.
-; qstr_Your_mount_stumbles!|Your mount stumbles! It seems to be lame.
+qstr_Your_mount_stumbles!|Sua montaria tropeça! Parece que ficou coxo.
 qstr_Bitten_by_your_own_w|Mordido pela sua própria montaria warg!
 qstr_You_weigh_too_much_f|Você é muito pesado para montar esse pony! 
 qstr_Your_mount_rears_ref|Sua montaria volta, se recusando a obedecer seus comandos!
 qstr_Fixed_Custom_Camera|Câmera Customizada Fixa
-; qstr_Press_Ctrl_+_Left_/_|Press Ctrl + Left / Ctrl + Right Arrow Keys to Switch Shoulders
+qstr_Press_Ctrl_+_Left_/_|Pressione Ctrl + Seta Esquerda / Ctrl + Seta Direita para Trocar de Ombros.
 qstr_Use_+/__to_zoom_in/o|Use +/- para dar + ou - zoom
-; qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
+qstr_Use_Up/Down_arrow_ke|Use teclas de seta Cima/Baixo para inclinar para cima/baixo.
 qstr_Fixed_Camera___Right|Câmera Fixa - Ombro Direito
 qstr_Fixed_Camera___Left_|Câmera Fixa - Ombro Esquerdo
-; qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.
+qstr_While_visiting_towns|Enquanto visita cidades, assentamentos e campos, você pode andar por aí conversar com pessoas. Membros de facções diferentes possuem coisas diferentes à dizer - alguns compartilharão seus próprios pensamentos, outro compartilharão rumores. Ambas informações podem ajudar a compreender melhor a cultura desta pessoa ou de sua facção, ou elas podem mostrar pistas para encontrar lugares secretos, ou dicas e truques para viajar pela Vastidão e lutar na Guerra do Anel.
 qstr_Cannot_leave_now.|Não pode sair agora.
-; qstr_You_have_found_the_l|You have found the local smithy... (+{reg3} XP)
+qstr_You_have_found_the_l|Você encontrou o ferreiro local... (+{reg3} XP)
 ; qstr_You_have_found_the_lo|You have found the local authority...(+{reg3} XP)
 ; qstr_You_have_found_the_loc|You have found the local warehouse...(+{reg3} XP)
 ; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.

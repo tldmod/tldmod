@@ -16,8 +16,8 @@ qst_capture_enemy_hero|Zajmi nepřátelského velitele.
 qst_capture_enemy_hero_text|{s11} tě žádá o uvěznění nepřátelského velitele.
 qst_lend_companion|Propůjč mi svého společníka {s3} {s9}
 qst_lend_companion_text|{s9} tě žádá o zapůjčení společníka {s3} na jeden týden.
-qst_capture_prisoners|Přiveď {reg1} nepřátelské vězně.
-qst_capture_prisoners_text|{s9} chce abys mu přivedl {reg1} nepřátelské vězně.
+qst_capture_prisoners|Přiveď nepřátelské vězně v počtu {reg1} .
+qst_capture_prisoners_text|{s9} chce abys mu přivedl nepřátelské vězně v počtu {reg1}.
 qst_investigate_fangorn|Prozkoumej Fangorn.
 qst_investigate_fangorn_text|{s9} tě požádal, abys zjistil, co se děje ve Fangornském lese, a podal hlášení.
 qst_capture_troll|Zajmi trola. 

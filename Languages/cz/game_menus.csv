@@ -117,7 +117,7 @@ mno_start_up1|Staň se {s21} (Easy)
 mno_start_up2|Staň se {s22} (Easy)
 mno_continue|Pokračuj...
 menu_character_report|^^^^^Skupinová morálka: {reg8}^Maximální velikost skupiny: {reg7}^{s5}
-menu_camp|^^^^Jsi v {s1}.{s2}^^Co chceš dělat?
+menu_camp|^^^^Jsi v oblasti {s1}.{s2}^^Co chceš dělat?
 mno_camp_scene|Projít si okolí.
 mno_camp_troop|Prohlédnout{reg10? vojáky:}{reg12? and:}{reg11? zajatce:}.
 mno_camp_action|Použít předmět.
@@ -280,11 +280,11 @@ menu_town_bandits_succeeded|^^^^^Goblini před tebou padají jako obílí před 
 menu_town_brawl_lost|^^^^^^Dostali tě. Lidé, na které si zaútočil tě rychle prohledají a seberou cennosti, než se vrátí ke svým denním činostem.
 menu_town_brawl_won|^^^^^Porazil si všechny nepřátele a stráže, které byly poslány k potlačení nepokoje. Rychle je prohledáš pro cennosti a zmizíš dokud se vztek neuklidní.^Možná příště ukážou více respektu a ustoupí.
 menu_close|Nic.
-menu_town|Dorazil jsi do {s60}.{s12}{s13}
+menu_town|Dorazil jsi do místa {s60}. {s12}{s13}
 mno_town_menu_0|Jdi na nějeké místo.
 mno_town_menu_0_door|Dveře do nějaké lokace.
-mno_town_approach|Prijet bliz k {s1}...
-mno_town_castle|Jdi do  {s1}.
+mno_town_approach|Navštívit {s1}...
+mno_town_castle|Jdi na {s1}.
 mno_town_castle_door|Dveře do hradu.
 mno_town_center|Jdi na hlavní náměstí...
 mno_town_center_door|Dveře do centra města.
@@ -296,7 +296,7 @@ mno_dungeon_enter|Hledej ztracená kopí v horách.
 mno_dungeon_enter_door|Otevřít dveře.
 mno_dwarven_warehouse|Navštivte trpasličí sklad
 mno_dwarven_warehouse_door|vstup do trpasličího skladu
-mno_talk_to_castle_commander|Navštiv {s61} Kasárnu.
+mno_talk_to_castle_commander|Navštívit kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
 mno_isengard_underground|Jdi do podzemních jeskyň.
 mno_tirith_toplevel|Vyšplhej na horní patro.
