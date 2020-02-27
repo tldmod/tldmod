@@ -407,9 +407,9 @@ simple_triggers = [
         (troop_get_slot, ":hero_party", ":troop_no", slot_troop_leaded_party),
         (gt, ":hero_party", centers_end),
         (party_is_active, ":hero_party"),
-        (store_skill_level, ":trainer_level", skl_trainer, ":troop_no"),
-        (val_add, ":trainer_level", 2),
-        (store_mul, ":xp_gain", ":trainer_level", 500),
+        (store_skill_level, ":trainer_level", skl_trainer, ":troop_no"), #lords have between 3 and 7 trainer skill
+        (val_add, ":trainer_level", 2), #5 - 9
+        (store_mul, ":xp_gain", ":trainer_level", 500), #2500 - 4500
         (party_upgrade_with_xp, ":hero_party", ":xp_gain"),
       (try_end),
       

@@ -2137,10 +2137,6 @@ presentations = [
         (try_end),
         (store_div, ":total_item_value_effect", ":total_item_value", 200),
         (val_add, ":total_effect", ":total_item_value_effect"),
-        #renown
-        # (troop_get_slot, ":renown", "trp_player", slot_troop_renown),
-        # (store_div, ":renown_effect", ":renown", 1),
-        # (val_add, ":total_effect", ":renown_effect"),
         #enemies and friends
         (assign, ":num_enemies", 0),
         (assign, ":num_friends", 0),

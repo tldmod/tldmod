@@ -1355,8 +1355,6 @@ ai_scripts = [
             (ge, ":commander_party", 0),
             (assign, ":old_target_to_follow_other_party", ":commander_party"),
           (try_end),
-
-          #(troop_get_slot, ":hero_renown", ":troop_no", slot_troop_renown), #MV: no renown influence on following marshalls
           (assign, ":num_available_to_follow", 0),
           (try_begin),
             (eq, "p_main_party", ":old_target_to_follow_other_party"),
@@ -1370,8 +1368,6 @@ ai_scripts = [
             (eq, ":troop_faction", ":faction_no"),
             (troop_get_slot, ":other_party", ":other_hero", slot_troop_leaded_party),
             (ge, ":other_party", 0),
-            #(troop_get_slot, ":other_hero_renown", ":other_hero", slot_troop_renown),
-            #(lt, ":hero_renown", ":other_hero_renown"),
             (neg|party_slot_ge, ":other_party", slot_party_commander_party, 0), #other party is not under command itself.
             #MV: disregard distance when deciding to follow - our map is too large for that kind of finesse, and we have too few lords per faction
             # (store_distance_to_party_from_party, ":dist", ":other_party", ":party_no"),
@@ -1408,8 +1404,6 @@ ai_scripts = [
             (eq, ":troop_faction", ":faction_no"),
             (troop_get_slot, ":other_party", ":other_hero", slot_troop_leaded_party),
             (ge, ":other_party", 0),
-            #(troop_get_slot, ":other_hero_renown", ":other_hero", slot_troop_renown),
-            #(lt, ":hero_renown", ":other_hero_renown"),
             (neg|party_slot_ge, ":other_party", slot_party_commander_party, 0), #other party is not under command itself.
             #(store_distance_to_party_from_party, ":dist", ":other_party", ":party_no"),
             #(lt, ":dist", 25),
@@ -2525,13 +2519,15 @@ ai_scripts = [
          (try_for_range, ":unused", 0, ":num_tries"),
             (call_script, "script_hire_men_to_kingdom_hero_party", ":hero"),
          (try_end),
-         # upgrade troops in party based on hero renown  
+         # upgrade troops in party based on hero renown  #InVain: Replace renown with trainer
          (store_random_in_range, ":xp_rounds", 2, 6),
-         (troop_get_slot, ":renown", ":hero", slot_troop_renown),
-         (store_div, ":renown_xp_rounds", ":renown", 100),
-         (val_add, ":xp_rounds", ":renown_xp_rounds"),
+         #(troop_get_slot, ":renown", ":hero", slot_troop_renown), #800 for lords, 1100 for kings
+         #(store_div, ":renown_xp_rounds", ":renown", 100), #8 -11
+         #(val_add, ":xp_rounds", ":renown_xp_rounds"), #10x - 16x
+		 (store_skill_level, ":trainer_level", skl_trainer, ":hero"), #lords have between 3 and 7 trainer skill
+		 (val_add, ":trainer_level", 5), #8x - 13, slightly less initial train-up than before
          (try_for_range, ":unused", 0, ":xp_rounds"),
-            (call_script, "script_upgrade_hero_party", ":party", 4000),
+            (call_script, "script_upgrade_hero_party", ":party", 4000), #40000-64000
          (try_end),
       (try_end),
       

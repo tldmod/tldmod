@@ -919,24 +919,6 @@ triggers = [
           (troop_set_slot, ":npc", slot_troop_met_previously, 1),
         (try_end),
         
-        ###Check for coming out of retirement
-        # (troop_get_slot, ":occupation", ":npc", slot_troop_occupation),
-        # (try_begin),
-        # (eq, ":occupation", slto_retirement),
-        # (troop_get_slot, ":renown_min", ":npc", slot_troop_return_renown),
-        
-        # (str_store_troop_name, s31, ":npc"),
-        # (troop_get_slot, ":player_renown", "trp_player", slot_troop_renown),
-        # (assign, reg4, ":player_renown"),
-        # (assign, reg5, ":renown_min"),
-        # #                (display_message, "@Test {s31}  for retirement return {reg4}, {reg5}."),
-        
-        # (gt, ":player_renown", ":renown_min"),
-        # (troop_set_slot, ":npc", slot_troop_personalityclash_penalties, 0),
-        # (troop_set_slot, ":npc", slot_troop_morality_penalties, 0),
-        # (troop_set_slot, ":npc", slot_troop_occupation, 0),
-        # (try_end),
-        
         
         
         

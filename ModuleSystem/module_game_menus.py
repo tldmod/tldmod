@@ -439,7 +439,6 @@ game_menus = [
 		(try_end),
 	(try_end),
 	(str_store_troop_name, s10, "$g_player_troop"),
-#	(troop_get_slot, reg2, "trp_player", slot_troop_renown),
 	(str_store_string, s9, "@-={s10}=-^{s11}^^^{s13}^^^{s15}."),
     ],
     [ 
@@ -1787,9 +1786,6 @@ game_menus = [
 
     (call_script, "script_game_get_party_companion_limit"),
     (assign, ":party_size_limit", reg0),
-    #(troop_get_slot, ":renown", "trp_player", slot_troop_renown),
-    #(assign, reg5, ":renown"),
-    #(assign, reg6, "$player_honor"),
     (assign, reg7, ":party_size_limit"),
     (party_get_morale, reg8, "p_main_party"),
 	# CppCoder: Injury Report. Feel free to edit/remove/improve. :)
@@ -1867,8 +1863,6 @@ game_menus = [
       (try_end),
     (try_end),
 
-    # (troop_get_slot, ":renown", "trp_player", slot_troop_renown),
-    # (val_div, ":renown", 25),
     (try_begin),(gt, ":leadership", 0),(str_store_string, s2, "@ +"),
      (else_try),                       (str_store_string, s2, "@ "),
     (try_end),
@@ -1878,14 +1872,10 @@ game_menus = [
     (try_begin),(gt, ":ranks", 0),(str_store_string, s4, "@ +"),
      (else_try),                   (str_store_string, s4, "@ "),
     (try_end),
-    # (try_begin),(gt, ":renown", 0),(str_store_string, s4, "@ +"),
-    #  (else_try),                   (str_store_string, s4, "@ "),
-    # (try_end),
     (assign, reg5, ":party_size_limit"),
     (assign, reg1, ":leadership"),
     (assign, reg2, ":charisma"),
     (assign, reg3, ":ranks"),
-    # (assign, reg3, ":renown"),
     (str_clear, s5),
     (try_begin),
       (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),

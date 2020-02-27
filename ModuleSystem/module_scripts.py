@@ -1617,14 +1617,15 @@ scripts = [
         (val_div, ":renown", 2),
         (try_begin),
 			(faction_slot_eq, ":kingdom_hero_faction", slot_faction_leader, ":kingdom_hero"),
-			(troop_set_slot, ":kingdom_hero", slot_troop_loyalty, 100),
-			(store_random_in_range, ":random_renown", 250, 400),
-        (else_try),
-			(store_random_in_range, ":random_loyalty", 50, 100),
-			(troop_set_slot, ":kingdom_hero", slot_troop_loyalty, ":random_loyalty"),
-			(store_random_in_range, ":random_renown", 100, 200),
+			#(troop_set_slot, ":kingdom_hero", slot_troop_loyalty, 100), #InVain: No loyalty in TLD
+			#(store_random_in_range, ":random_renown", 250, 400),
+			(assign, ":renown_bonus", 300), #InVain: no renown randomization, but let's keep the bonus for now until we decide what to do with renown.
+        #(else_try),
+			#(store_random_in_range, ":random_loyalty", 50, 100),
+			#(troop_set_slot, ":kingdom_hero", slot_troop_loyalty, ":random_loyalty"), #InVain: No loyalty in TLD
+			#(store_random_in_range, ":random_renown", 100, 200),
         (try_end),
-		(val_add, ":renown", ":random_renown"),
+		(val_add, ":renown", ":renown_bonus"),
 		(troop_set_slot, ":kingdom_hero", slot_troop_renown, ":renown"),
 		(store_random_in_range, ":random_readiness", 0, 100),
 		(troop_set_slot, ":kingdom_hero", slot_troop_readiness_to_join_army, ":random_readiness"),
@@ -3290,10 +3291,6 @@ scripts = [
 	  (val_mul, ":total", orc_bonus_nominator  ),
 	  (val_div, ":total", orc_bonus_denominator),
 	  (val_add, ":limit", ":total"),
-	  # no player renown in TLD	
-      # (troop_get_slot, ":troop_renown", "trp_player", slot_troop_renown),
-      # (store_div, ":renown_bonus", ":troop_renown", 25),
-      # (val_add, ":limit", ":renown_bonus"),
       
       # MV: Add ranks bonus - note that it also counts ranks with dead and turned-hostile factions
       (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
@@ -3469,17 +3466,17 @@ scripts = [
         (gt, ":party_leader", 0), #Kham fix
         (is_between, ":party_leader", kingdom_heroes_begin, kingdom_heroes_end),
         (store_faction_of_party, ":faction_id", ":party_no"),
-        (assign, ":limit", 10),
+        (assign, ":limit", 40), #InVain: Was 10, increased by 30 to make up for removed renown bonus
 
-        (store_skill_level, ":skill", "skl_leadership", ":party_leader"),
-        (store_attribute_level, ":charisma", ":party_leader", ca_charisma),
+        (store_skill_level, ":skill", "skl_leadership", ":party_leader"), #3-10 leadership for lords, 15-50 skill bonus
+        (store_attribute_level, ":charisma", ":party_leader", ca_charisma), #=20 Charisma for most lords
         (val_mul, ":skill", 5),
         (val_add, ":limit", ":skill"),
-        (val_add, ":limit", ":charisma"),
+        (val_add, ":limit", ":charisma"), # limit= 10+CHA+(Lea+5), between 45 and 80 troops limit
 
-        (troop_get_slot, ":troop_renown", ":party_leader", slot_troop_renown),
-        (store_div, ":renown_bonus", ":troop_renown", 25),
-        (val_add, ":limit", ":renown_bonus"),
+        # (troop_get_slot, ":troop_renown", ":party_leader", slot_troop_renown), #~800 renown, 1100 for kings #InVain: Removed renown
+        # (store_div, ":renown_bonus", ":troop_renown", 25), #= 32 - 44
+        # (val_add, ":limit", ":renown_bonus"), #= between 77 - 124 troops limit
 
         (try_begin),
           (faction_slot_eq, ":faction_id", slot_faction_marshall, ":party_leader"),
@@ -3489,7 +3486,7 @@ scripts = [
           	(val_add, ":limit", 100), #Kham - Make Gondor Marshall bit stronger. Lets test! (Feb 16, 2017)
           	(display_message, "@Gondor AI Tweaks - Make Gondor marshall a bit stronger"),
           (else_try),
-          	(val_add, ":limit", 70), #TLD: was 100, kings were too strong
+          	(val_add, ":limit", 70), #TLD: was 100, kings were too strong --> around 200 base limit for marshalls
           (try_end),
         (try_end),
       (try_end),
@@ -14658,7 +14655,7 @@ scripts = [
     (try_end),
 ]),
 
-# script_calculate_troop_score_for_center
+# script_calculate_troop_score_for_center #InVain: Not used in TLD
 # Input: arg1 = troop_no, arg2 = center_no
 # Output: reg0 = score
 ("calculate_troop_score_for_center",
@@ -14686,8 +14683,8 @@ scripts = [
         (val_add, ":num_center_points", 1),
       (try_end),
     (try_end),
-    (troop_get_slot, ":troop_renown", ":troop_no", slot_troop_renown),
-    (store_add, ":score", 500, ":troop_renown"),
+    #(store_add, ":score", 500, ":troop_renown"),
+	(store_add, ":score", 500, 1000), #just a fictional number to keep out renown. 
     (val_div, ":score", ":num_center_points"),
     (store_random_in_range, ":random", 50, 100),
     (val_mul, ":score", ":random"),
@@ -15324,7 +15321,6 @@ scripts = [
          (gt, reg3, 1), #MV: non-humans are male
          (assign, reg3, 0),
        (try_end),
-#       (troop_get_slot, reg5, ":troop_no", slot_troop_renown),
        (str_clear, s59),
        (try_begin),
 #         (troop_get_slot, ":relation", ":troop_no", slot_troop_player_relation),
@@ -15347,7 +15343,6 @@ scripts = [
          (assign, reg10, 1),
        (try_end),
        (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}", 0),
-#       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}Renown: {reg5}.{reg9?^{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}", 0),
        (add_troop_note_tableau_mesh, ":troop_no", "tableau_troop_note_mesh"),
 
        ] + (is_a_wb_script==1 and [
@@ -16853,7 +16848,7 @@ scripts = [
 
 ]),
 
-#script_event_player_captured_as_prisoner
+#script_event_player_captured_as_prisoner #InVain: Not used in TLD
 ("event_player_captured_as_prisoner",
     [   #Removing followers of the player
         (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
@@ -16917,7 +16912,7 @@ scripts = [
  ]),
 #NPC morale both returns a string and reg0 as the morale value
 
-# "script_retire_companion"
+# "script_retire_companion" #InVain: Not used in TLD
 ("retire_companion",
  [   (store_script_param_1, ":npc"),
     (store_script_param_2, ":length"),
@@ -16932,7 +16927,6 @@ scripts = [
     ]),
 
 #script_reduce_companion_morale_for_clash
-#script_calculate_ransom_amount_for_troop
 # INPUT: arg1 = troop_no for companion1 arg2 = troop_no for companion2 arg3 = slot_for_clash_state
 # slot_for_clash_state means: 1=give full penalty to companion1; 2=give full penalty to companion2; 3=give penalty equally
 ("reduce_companion_morale_for_clash",[
@@ -16958,7 +16952,7 @@ scripts = [
     (troop_set_slot, ":companion_2", slot_troop_personalityclash_penalties, ":grievance_2"),
 ]),
 
-#script_calculate_ransom_amount_for_troop
+#script_calculate_ransom_amount_for_troop #InVain: This is largely inconsequential in TLD, could be cleaned up
 # INPUT: arg1 = troop_no
 # OUTPUT: reg0 = ransom_amount
 ("calculate_ransom_amount_for_troop",
@@ -17778,7 +17772,7 @@ scripts = [
       (val_div, "$g_average_center_value_per_faction", ":num_factions"),
 ]),
 
-# script_remove_cattles_if_herd_is_close_to_party
+# script_remove_cattles_if_herd_is_close_to_party #InVain: Not used in TLD
 # Input: arg1 = party_no, arg2 = maximum_number_of_cattles_required
 # Output: reg0 = number_of_cattles_removed
 ("remove_cattles_if_herd_is_close_to_party",
@@ -17980,7 +17974,6 @@ scripts = [
        (is_between, "$g_talk_troop_relation", -5, 5),
 
        (assign, ":relevance", 25),
-#       (troop_get_slot, ":plyr_renown", "trp_player", slot_troop_renown),
 #normal_banner_begin
        (troop_get_slot, ":banner", "trp_player", slot_troop_banner_scene_prop),
 #custom_banner_begin
