@@ -9413,11 +9413,8 @@ scripts = [
       (try_for_range, ":unused", 0 , ":num_rounds"),
         (try_begin),
           (lt, ":party_size", ":ideal_size"),
-#          (gt, ":hiring_budget", reinforcement_cost),
           (gt, ":party_no", 0),
           (call_script, "script_cf_reinforce_party", ":party_no"),
-#          (val_sub, ":cur_wealth", reinforcement_cost),
-#          (party_set_slot, ":nearby_center", slot_town_wealth, ":cur_wealth"), # TLD: wealth change to town
         (else_try),
           (gt, ":party_size", ":ideal_top_size"),
           (party_get_num_companion_stacks, ":num_stacks", ":party_no"),
@@ -9472,6 +9469,28 @@ scripts = [
   # (display_message, "@DEBUG: {s1} reinforces, current:{reg1} ideal:{reg2} new:{reg3}.", 0x30FFC8),
   # (try_end),
   #MV test code end
+  
+	#InVain: Piggyback troll recruitment, for elite trolls only (base trolls are done by party templates)
+	(try_begin),
+		(store_div, ":max_trolls", ":party_size", 50),
+		(try_begin),
+			(eq,":troop_faction","fac_mordor"),
+			(party_count_members_of_type,":num", ":party_no", "trp_mordor_olog_hai"),
+			(lt, ":num", ":max_trolls"),
+			(party_add_members, ":party_no", "trp_mordor_olog_hai", 1),
+		  (else_try),
+			(eq,":troop_faction","fac_isengard"),
+			(party_count_members_of_type,":num", ":party_no", "trp_isen_armored_troll"),
+			(lt, ":num", ":max_trolls"),
+			(party_add_members, ":party_no", "trp_isen_armored_troll", 1),
+		  (else_try),
+			(eq,":troop_faction","fac_isengard"),
+			(party_count_members_of_type,":num", ":party_no", "trp_moria_armored_troll"),
+			(lt, ":num", ":max_trolls"),
+			(party_add_members, ":party_no", "trp_moria_armored_troll", 1),
+		(try_end),
+	(try_end),
+		
 ]),
 
 # script_find_random_nearby_friendly_town
