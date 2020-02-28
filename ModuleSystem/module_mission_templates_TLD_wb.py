@@ -1942,6 +1942,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 		(eq, ":swing_damage_type", 2), #maces, hammers, clubs
 		(val_mul, ":damage", 2),
 		(val_div, ":damage", 3),
+		#(display_message, "@blunt weapon found"),
       (try_end),
 
       (try_begin),
@@ -2016,25 +2017,24 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (try_end),
       
       #Debug
-      (assign, reg3, ":current_hp_shield"),
-      (display_message, "@Hp shield: {reg3} left."), 
+      #(assign, reg3, ":current_hp_shield"),
+      #(display_message, "@Hp shield: {reg3} left."), 
 
    
     
     (try_begin),
-      #(eq, ":dealer", ":player"),
+      (eq, ":dealer", ":player"),
       (assign, reg60, ":damage"),
       (display_message, "@Delivered {reg60} damage."),
 	  (set_show_messages, 0),
       (set_trigger_result, 0),
-	  (set_show_messages, 1),
-    (else_try),
-		(eq, ":dealer", ":player"),
-	  (set_show_messages, 0),
-      (set_trigger_result, 0),
-	  (set_show_messages, 1),
-    (try_end),
 
+    (else_try),
+		#(eq, ":dealer", ":player"),
+      (set_trigger_result, 0),
+    (try_end),
+	
+	(set_show_messages, 1),
     (assign, reg0, ":weapon"),
 
   ])  

@@ -948,7 +948,7 @@ game_menus = [
 	    # TROLL TEST
        (eq, "$g_custom_battle_scenario", 10),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
-       (assign, "$g_player_troop", "trp_i5_gon_vet_swordsman"),
+       (assign, "$g_player_troop", "trp_c3_pinnath_knight"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
 			(try_for_range, ":trolls", trp_moria_troll, trp_ent2),
@@ -956,7 +956,7 @@ game_menus = [
 			(try_end),
        (set_visitor, 0, "$g_player_troop"),
 	   (set_visitors, 1, "trp_i5_gon_vet_spearman",		8),
-	   (set_visitors, 16, "trp_mordor_olog_hai",				1),
+	   (set_visitors, 16, "trp_mordor_troll",				1),
 	   (str_store_string, s16, "@TEST: troll VS infantry"),
      (else_try),
        (eq, "$g_custom_battle_scenario", 17),
