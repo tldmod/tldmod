@@ -812,7 +812,7 @@ scripts = [
 	  (try_begin),
         (eq, ":race", tf_troll),
 		(val_add, ":wage", 5),
-		(val_mul, ":wage", 27),# trolls cost x 27
+		(val_mul, ":wage", 10),# trolls cost x 27, #InVain: reduced to 10, which still amounts to ~800
 	  (try_end),
 	  
       (try_begin), #mounted troops cost 50% more than the normal cost

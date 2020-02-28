@@ -1928,21 +1928,29 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       (agent_get_bone_position, pos1, ":agent", 7, 1),
       (get_distance_between_positions, ":dist", pos0, pos1),
       #(assign, reg57, ":dist"),
+	  #(assign, reg56, ":damage"),
+      #(display_message, "@{s2} weapon - {reg55} Before - {reg56} after - {reg57} Dist from Head"),
 
       (try_begin),
         (eq, ":type", itp_type_bow),
         (gt, ":dist", 30),
         (val_div, ":damage", 3),
+	  (else_try),
+		(item_get_thrust_damage_type, ":thrust_damage_type", ":weapon"),
+		(neq, ":thrust_damage_type", 1), #exclude spears
+		(item_get_swing_damage_type, ":swing_damage_type", ":weapon"),
+		(eq, ":swing_damage_type", 2), #maces, hammers, clubs
+		(val_mul, ":damage", 2),
+		(val_div, ":damage", 3),
       (try_end),
-
-      #(assign, reg56, ":damage"),
-      #(display_message, "@{s2} weapon - {reg55} Before - {reg56} after - {reg57} Dist from Head"),
 
       (try_begin),
         (neg|item_has_property, ":weapon", itp_couchable),
         (ge, ":damage", 100),
         (val_div, ":damage", 2),
         (val_add, ":damage", 10),
+		(agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+		(play_sound, "snd_troll_grunt_long"),
       (else_try),
         (item_has_property, ":weapon", itp_couchable),
         (ge, ":damage", 100),
