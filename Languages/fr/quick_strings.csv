@@ -248,6 +248,8 @@ qstr_nothing|rien
 qstr_Good|Bien
 qstr_Med|moyen
 qstr_Bad|Mauvais
+; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
+; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
 qstr_{reg4}_killed_{reg5}|{reg4} tués, {reg5} blessés, {reg6} en déroute
 qstr_{reg4}_killed_{reg5}_|{reg4} tués, {reg5} blessés
 qstr_{reg4}_killed_{reg5}_r|{reg4} tués, {reg5} en déroute
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|Votre monture trébuche ! Elle semble boiter.
 qstr_Bitten_by_your_own_w|Mordu par votre propre Warg !
 qstr_You_weigh_too_much_f|Vous êtes trop lourd pour un poney !
 qstr_Your_mount_rears_ref|Votre monture se cabre, elle refuse d'obéir à vos ordres !
+; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|Caméra personnalisée réglée. 
 qstr_Press_Ctrl_+_Left_/_|Appuyer sur Ctrl + flèche de gauche / Ctrl + flèche de droite pour changer d'épaule.
+; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
 qstr_Use_+/__to_zoom_in/o|Utilisez + ou - pour zoomer et dé-zoomer.
 qstr_Use_Up/Down_arrow_ke|Utilisez les flèches Haut et Bas pour incliner vers le haut ou le bas
 qstr_Fixed_Camera___Right|Caméra réglée - épaule droite 
 qstr_Fixed_Camera___Left_|Caméra réglée - épaule gauche
+; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|Pendant que vous visitez les villes, forteresses et camps, vous pouvez parler aux gens alentour. Les membres des différentes factions ont des choses différentes à raconter - certains vous donneront leur avis, d'autres les rumeurs. Toutes ces informations peuvent vous donner une meilleure compréhension de la culture de votre interlocuteur, ou elle peuvent contenir des indices pour trouver des lieux secrets ou des astuces pour traverser les Régions Sauvages et combattre dans la Guerre de l'Anneau.
 qstr_Cannot_leave_now.|Impossible de partir maintenant.
 qstr_You_have_found_the_l|Vous avez trouvé le forgeron local...(+{reg3} XP)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|Vous attaquez un groupe de {s1}.
 qstr_The_battle_against_t|La bataille contre le groupe de {s1} continue.
 qstr_There_are_{reg39}_al|Il y'a {reg39} commandants alliés dans cette bataille. Vous pouvez les commander eux et leurs troupes pour {reg40} points d'influence.
 qstr_Having_a_small_party|Avoir un petit groupe à ses avantages... Vous et vos troupes vous cachez de l'ennemi pendant quelques heures pour être sur de ne pas avoir été vus.
-qstr_Your_ability_to_surv|Votre habilité à survivre en environnement hostiles vous à permis de trouver un endroit sur pour vous cacher. (Vottre compétence en Vie Forestière vous permet de vous cacher avec {reg1} troupes)
+; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
 qstr_{reg4}_will_be_lost.|{reg4} seront perdus.
 qstr_{s13}_asked_you_to_r|{s13} vous demande de lui faire votre rapport avec au moins {reg13} hommes.
 qstr_{s13}_ordered_you_to|{s13} vous a ordonné de rejoindre l'assaut contre {s14}.
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3} a eu vent de votre victoire contre {s4}.
 qstr_Even_though_there_we|Malgré l'absence d'alliés pour témoigner de votre victoire, vous troupes acclament néanmoins votre triomphe.
 qstr_{s1}_of_{s3}_managed|{s1} de {s3} a réussi à s'échapper.
 qstr_Prisoners_rescued_so|Prisonniers secourus jusqu'ici : {reg1}
-qstr_Victory_comment._Pla|Commentaire de victoire. Le joueur était seul.
-qstr_Ordinary_victory_com|Commentaire de victoire ordinaire. Le joueur a fourni au moins 40 % des forces.
-qstr_Player_participation|Commentaire de participation du joueur. L'ennemi avait au moins 1k de force de départ.
-qstr_No_victory_comment._|Pas de commentaire de victoire. La bataille était de petite envergure, et le joueur a fourni moins de 40 % de la force alliée.
 qstr_{reg1}_kills_of_{s1}|{reg1} tués de la faction {s1} comptés pour le Serment TOTAL tués: {reg0}
-qstr_Some_of_your_tendons|Certains de vos tendons ont été endommagés dans la bataille. Vous perdez 1 point de Force.
-qstr_You_took_a_nasty_wou|Vous avez reçu une vilaine blessure qui vous fera boiter, même après guérison. Vous perdez 1 point d'Agilité.
-qstr_You_have_trouble_thi|Vous avez du mal à ordonner vos pensées après la bataille, peut-être à cause d'un coup particulièrement violent à la tête, et de fréquents maux de tête tourmentent désormais votre existence. Votre Intelligence est réduite de 1 point.
 qstr_Perhaps_I_m_getting_|Peut-être suis-je malchanceux...
 qstr_Retirement_is_starti|La retraite commence à sonner de mieux en mieux.
 qstr_No_matter!_I_will_pe|Peu importe ! Je vais persévérer !
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|Comment fonctionnent les aimants ?
 qstr_Um..._by_enchanting_|Um... avec du fer enchanté ?
 qstr_Magnets_are_made_of_|Les aimants sont faits de métal, qui est extrait du sol. Ils sont magnétiques parce que le métal contient toujours des morceaux de gravité à l'intérieur.
 qstr_i_wont_a_bonerlrord_|je vo un portaje bonerlrrd nao !! 11
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Install_TLD_in_your_|Installez TLD dans le répertoire Modules de Bannerlord, ajoutez la ligne 'compatible_with_wfas = 1' dans module.ini, et vous pourrez y jouer à la fois avec Warband ET Warrider 0.202 !
 qstr_dis_mod_takes_2_long|ce mode a mi 2 an a sortir ! ces nulle!
 qstr_Well_there_s_a_lot_o|Et bien, il y a beaucoup de nouveaux graphismes et autres, j'imagine que ça prend du temps.
 qstr_It_has_been_recently|Il est sorti récemment. Si vous avez manqué le lien, vous pouvez le télécharger à lemonparty.org.

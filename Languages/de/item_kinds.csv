@@ -73,7 +73,7 @@ itm_troll_shield_a|Trollschild
 itm_arrows|Pfeile
 itm_gondor_arrows|Pfeile von Gondor
 itm_orc_javelin|Schwerer Ork-Wurfspeer
-itm_khergit_arrows|Widerhakenpfeile
+itm_khergit_arrows|Pfeile aus Rohan
 itm_rohan_arrows_2|Pfeile aus Rohan
 itm_harad_arrows|Pfeile aus Harad
 itm_corsair_arrows|Pfeile aus Umbar
@@ -85,8 +85,6 @@ itm_isengard_arrow|Pfeile von Isengart
 itm_leather_gloves|Lederhandschuhe
 itm_mail_mittens|Panzerhandschuhe
 itm_leather_boots|Lederstiefel
-itm_leather_boots_dark|Reiterstiefel
-itm_splinted_greaves|Nördliche Beinschienen
 itm_white_tunic_a|Bürgerkleidung
 itm_rohan_shoes|Lederschuhe
 itm_furry_boots|Pelzstiefel
@@ -95,7 +93,6 @@ itm_hood_black|Schwarze Kapuze
 itm_hood_green|Grüne Kapuze
 itm_hood_grey|Graue Kapuze
 itm_hood_leather|Lederkapuze
-itm_axe_a|Nordmannaxt
 itm_axe_b|Bartaxt der Nordmänner
 itm_axe_c|Nordmannaxt
 itm_axe_d|Nordmannaxt
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Schwert aus Bruchtal
 itm_riv_riding_sword|Reiterschwert aus Bruchtal
 itm_riv_archer_sword|Kurzschwert aus Bruchtal
 itm_riv_spear|Speer aus Bruchtal
-itm_riv_armor_light|Rüstung aus Bruchtal
-itm_riv_armor_light_inf|Rüstung aus Bruchtal
-itm_riv_armor_archer|Rüstung aus Bruchtal
-itm_riv_armor_m_archer|Rüstung aus Bruchtal
-itm_riv_armor_med|Rüstung aus Bruchtal
-itm_riv_armor_heavy|Rüstung aus Bruchtal
+itm_riv_light|Wams aus Bruchtal
+itm_riv_leather|Lederrüstung aus Bruchtal
+itm_riv_foot_mail|Kettenhemd aus Bruchtal
+itm_riv_foot_scale|Schuppenpanzer aus Bruchtal
+itm_riv_surcoat|Waffenrock aus Bruchtal
+itm_riv_knight|Ritterrüstung aus Bruchtal
 itm_riv_armor_h_archer|Rüstung aus Bruchtal
 itm_riv_armor_leader|Fürstliche Rüstung aus Bruchtal
 itm_riv_boots|Stiefel aus Bruchtal
@@ -193,15 +190,15 @@ itm_gondor_med_greaves|Mittlere Beinschienen aus Gondor
 itm_gondor_heavy_greaves|Kettenbeinschienen aus Gondor
 itm_gondorian_light_helm|Soldatenhelm aus Gondor
 itm_gondor_infantry_helm|Schwerer Soldatenhelm aus Gondor
-itm_gondor_auxila_helm|Hilfstruppenhelm aus Gondor
+itm_gondor_auxila_helm|Leichter Helm aus Gondor
 itm_gondorian_light_helm_b|Schützenhelm aus Gondor
-itm_gondorian_archer_helm|Schwerer Schützenhelm aus Gondor
+itm_gondorian_archer_helm|Schützenhelm aus Gondor
 itm_tower_archer_helm|Schützenhelm der Turmwache
 itm_gondor_leader_helm|Hauptmannshelm von Gondor
 itm_tower_guard_helm|Helm der Turmwache
 itm_gondor_citadel_knight_helm|Helm der Ritter der Veste
 itm_gondor_squire_helm|Knappenhelm aus Gondor
-itm_gondor_knight_helm|Ritterhelm aus Gondor
+itm_gondor_knight_helm|Reiterhelm aus Gondor
 itm_gondor_dolamroth_helm|Helm aus Dol Amroth
 itm_swan_knight_helm|Helm der Schwanenritter
 itm_gondor_lamedon_helm|Helm aus Lamedon
@@ -465,7 +462,6 @@ itm_dun_helm_a|Wolfskappe aus Dunland
 itm_dun_helm_b|Geweihkappe aus Dunland
 itm_dun_helm_c|Hoher Helm aus Dunland
 itm_dun_helm_d|Hoher Helm aus Dunland
-
 itm_dun_helm_e|Geweihhelm aus Dunland
 itm_dun_shield_a|Schild aus Dunland
 itm_dun_shield_b|Schild aus Dunland
@@ -511,19 +507,20 @@ itm_mirkwood_pad|Polsterwams aus dem Grünwald
 itm_mirkwood_mail|Kettenhemd aus dem Grünwald
 itm_mirkwood_scale|Leichte Schuppenrüstung aus dem Grünwald
 itm_mirkwood_heavy_scale|Grünblatt-Rüstung
-itm_mirkwood_great_spear|Großer Speer aus dem Düsterwald
-itm_mirkwood_war_spear|Kriegsspeer aus dem Düsterwald
-itm_mirkwood_short_spear|Speer aus dem Düsterwald
-itm_mirkwood_knife|Weißes Messer aus dem Düsterwald
-itm_mirkwood_axe|Düsterwald-Axt
-itm_mirkwood_spear_shield_a|Schild aus dem Düsterwald
-itm_mirkwood_spear_shield_b|Kriegsschild aus dem Düsterwald
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
-itm_mirkwood_helm_a|Schützenhelm aus dem Düsterwald
-itm_mirkwood_helm_b|Helm aus dem Düsterwald
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
-itm_mirkwood_boots|Stiefel aus dem Düsterwald
+itm_mirkwood_great_spear|Großer Speer aus dem Grünwald
+itm_mirkwood_war_spear|Kriegsspeer aus dem Grünwald
+itm_mirkwood_short_spear|Speer der Waldelben
+itm_mirkwood_knife|Kampfmesser der Waldelben
+itm_mirkwood_axe|Axt der Waldelben
+itm_mirkwood_spear_shield_a|Schild der Waldelben
+itm_mirkwood_spear_shield_b|Kriegsschild aus dem Grünwald
+itm_mirkwood_spear_shield_c|Rundschild der Waldelben
+itm_mirkwood_helm_a|Leichter Helm der Waldelben
+itm_mirkwood_helm_b|Helm aus dem Grünwald
+itm_mirkwood_helm_c|Schwerer Helm aus dem Grünwald
+itm_mirkwood_helm_d|Königlicher Helm aus dem Grünwald
+itm_free_mirkwood_leather_greaves|Lederbeinschienen aus dem Düsterwald
+itm_mirkwood_boots|Stiefel der Waldelben
 itm_harad_tunic|Tunika aus Harad
 itm_harad_padded|Gepolsterte Rüstung aus Harondor
 itm_harad_hauberk|Brünne aus Harondor
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Schlangenschild aus Harad
 itm_harad_shield_a|Schild aus Harondor
 itm_harad_shield_b|Faustschild aus Harad
 itm_harad_shield_c|Faustschild aus Harondor
-
 itm_harad_yellow_shield|Schild aus Harad
 itm_desert_boots|Wüstenstiefel
 itm_harad_leather_greaves|Beinschienen aus Harad
@@ -751,7 +747,6 @@ itm_dwarf_pad_boots|Gepolsterte Zwergenstiefel
 itm_dwarf_chain_boots|Zwergische Panzerhosen
 itm_dwarf_scale_boots|Zwergische Eisenstiefel
 itm_good_mace|Streitkolben
-itm_far_harad_shield_paint|Korbschild
 itm_mordor_banner|Banner von Mordor
 itm_isengard_banner|Banner von Isengart
 itm_woodelf_banner|Banner des Düsterwalds
@@ -811,7 +806,9 @@ itm_beorn_axe_reward|Bärenpranke
 itm_moria_arrow_reward|Giftpfeile aus Moria
 itm_khamul_helm|Helm von Khamul
 itm_black_arrows_reward|Schwarze Pfeile
+itm_leather_boots_reward|Jägerstiefel
 itm_rohan_armor_th|Königliche Rüstung von Rohan
+itm_wilderness_amulet|Amulett der Wildnis
 itm_prisoner_coll_chain|Gefangenenketten
 itm_witchking_helmet|Bösartiger Helm
 itm_lorien_royal_armor|Königliche Rüstung von Lorien

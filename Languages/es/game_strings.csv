@@ -2178,14 +2178,14 @@ str_dunland_faction_intro|^Los Dunlendinos son los “hombres salvajes de las Ti
 str_beorn_faction_intro|^Los Beórnidas, los descendientes de Beorn, son un pueblo de los valles del curso superior del Anduin, entre el Bosque Negro y las Montañas Nubladas. Habitan mayoritariamente en los bosques, aunque defienden el Viejo Vado para mantenerlo abierto al comercio, cobrando un peaje a las caravanas de mercaderes por este servicio.^^Como leñadores y hombres de los bosques, esgrimen gruesos garrotes y hachas afiladas, pero llevan poca armadura. La infantería pesada Beórnida también lucha con escudos. Los guardabosques Beórnidas son hábiles con el arco y proporcionan una valiosa línea de arqueros.
 str_intro_faction_intro_strings_end|intro facción FIN
 str_gondor_extra_info|Pueblos Libres^^Difícil^^Gondor (Sureste)^^Príncipe Imrahil^^Mordor, Umbar, Khand, Harad
-str_dwarf_extra_info|Pueblos Libres^^Fácil^^Rhovanion del Norte (Norte)^^Rey Dáin II Pie de Hierro^^Rhun, Gundabad
+str_dwarf_extra_info|Pueblos Libres^^Fácil^^Rhovanion del Norte (Norte)^^Rey Dáin II Pie de Hierro^^Rhûn, Gundabad
 str_rohan_extra_info|Pueblos Libres^^Media^^Rohan (Suroeste)^^Rey Théoden^^Isengard, Dunlendinos
 str_mordor_extra_info|Sauron^^Fácil^^Gondor (Sureste)^^Gothmog^^Gondor
 str_isengard_extra_info|Saruman^^Fácil^^Rohan (Suroeste)^^Ugluk^^Rohan
 str_lorien_extra_info|Pueblos Libres^^Muy fácil^^Rhovanion del Sur (Centro)^^Celeborn^^Moria, Dol Guldur
 str_imladris_extra_info|Pueblos Libres^^Muy fácil^^Rhovanion del Sur (Centro)^^Señor Elrond^^Moria, Dol Guldur
 str_woodelf_extra_info|Pueblos Libres^^Muy fácil^^Rhovanion del Sur (Centro)^^Rey Thranduil^^Moria, Dol Guldur
-str_dale_extra_info|Pueblos Libres^^Media^^Rhovanion del Norte (Norte)^^Rey Brand^^Rhun, Gundabad
+str_dale_extra_info|Pueblos Libres^^Media^^Rhovanion del Norte (Norte)^^Rey Brand^^Rhûn, Gundabad
 str_harad_extra_info|Sauron^^Fácil^^Gondor (Sureste)^^Jefe Ul-Ulcari^^Gondor
 str_rhun_extra_info|Sauron^^Difícil^^Rhovanion del Norte (Norte)^^Jarl Helcaroth^^Valle, Erebor, Biosque Negro, Beórnidas
 str_khand_extra_info|Sauron^^Fácil^^Gondor (Sureste)^^Shibh Krukmahur^^Gondor
@@ -2194,7 +2194,7 @@ str_moria_extra_info|Saruman^^Muy difícil^^Rhovanion del Sur (Centro)^^Amo Bolg
 str_guldur_extra_info|Sauron^^Muy difícil^^Rhovanion del Sur (Centro)^^Amo Fuinur^^Imladris, Lothlórien
 str_gundabad_extra_info|Saruman^^Muy difícil^^Rhovanion del Norte (Norte)^^Amo Burza Krual^^Valle, Erebor, Bosque Negro, Beórnidas
 str_dunland_extra_info|Saruman^^Difícil^^Rohan (Suroeste)^^Jefe Daeglaf el Negro^^Rohan
-str_beorn_extra_info|Pueblos Libres^^Difícil^^Rhovanion del Norte (Norte)^^Jefe Grimbeorn el Viejo^^Rhun, Gundabad
+str_beorn_extra_info|Pueblos Libres^^Difícil^^Rhovanion del Norte (Norte)^^Jefe Grimbeorn el Viejo^^Rhûn, Gundabad
 str_intro_strings_extra_end|Intro EXTRA FIN
 str_gundabad_intro|Vienes del lejano norte, de las tierras de la perdida Angmar, tras recibir nuevas de la guerra que se avecina. Durante innumerables años, tú y los tuyos habéis quebrado muchos escudos enanos con vuestras hachas y lanzas, habéis aplastado muchos cuerpos destrozados de hombres y elfos bajo las garras de vuestros feroces huargos, habéis desollado los pellejos de los hombres-oso para llevarlos como abrigo. Los grandes salones de Gundabad en las Montañas Nubladas vuelven a ser vuestros, como lo fueron en los tiempos de Bolgo y Azog.^^Muchos de los tuyos han perecido a lo largo de los años, muchos de ellos muertos a traición en estos mismos salones y túneles, pero aún quedan muchos más. En el pasado os habéis divertido mucho con los pequeños y codiciosos cavadores, y con sus amigos, ¡y os divertiréis de nuevo, cuando marchéis sobre ellos y lo toméis todo para vosotros!^^Venganza por Bolgo, por Azog, por el Gran Trasgo... ¡venganza para los trasgos de Gundabad!
 str_show_keybinds|Configuraciones de teclas especiales: ^^ Teclas de formciones:^ Líneas - J ^ Muro de escudos - K ^ Cuña - L ^ Cuadro - ; ^ Eliminar formaciones - U ^^ Cambiar modos de uso de armas - O ^^ Cambiar modos de cámara - CTRL+END ^^ Arengar - V ^^ Llamar montura - M ^^ Ver órdenes / minimapa - Retroceso

@@ -73,7 +73,7 @@ itm_giant_mace|거대한 철퇴
 itm_arrows|화살
 itm_gondor_arrows|곤도르 화살
 ; itm_orc_javelin|Orc Heavy Javelin
-itm_khergit_arrows|미늘 화살
+itm_khergit_arrows|로히림 화살
 itm_rohan_arrows_2|로히림 화살
 itm_harad_arrows|하라드림 화살
 itm_corsair_arrows|해적 화살
@@ -85,8 +85,6 @@ itm_isengard_arrow|아이센가드 화살
 itm_leather_gloves|가죽 장갑
 itm_mail_mittens|사슬 장갑
 itm_leather_boots|가죽 부츠
-; itm_leather_boots_dark|Rider Boots
-; itm_splinted_greaves|Splinted Greaves
 ; itm_white_tunic_a|Civilian Outfit
 itm_rohan_shoes|가죽 신발
 ; itm_furry_boots|Furry Boots
@@ -95,7 +93,6 @@ itm_black_tunic|검은색 튜닉
 itm_hood_green|녹색 후드
 ; itm_hood_grey|Grey Hood
 ; itm_hood_leather|Leather Hood
-; itm_axe_a|Northmen Axe
 ; itm_axe_b|Northmen Bearded Axe
 ; itm_axe_c|Northmen Axe
 ; itm_axe_d|Northmen Axe
@@ -163,12 +160,12 @@ itm_riv_1h_sword|리븐델 검
 itm_riv_riding_sword|리븐델 기병 검
 ; itm_riv_archer_sword|Rivendell Archer Sword
 itm_riv_spear|리븐델 창
-itm_riv_armor_light|리븐델 방어구
-itm_riv_armor_light_inf|리븐델 방어구
-itm_riv_armor_archer|리븐델 방어구
-itm_riv_armor_m_archer|리븐델 방어구
-itm_riv_armor_med|리븐델 방어구
-itm_riv_armor_heavy|리븐델 방어구 
+; itm_riv_light|Rivendell Tunic
+; itm_riv_leather|Rivendell Leather Armor
+; itm_riv_foot_mail|Rivendell Mail
+; itm_riv_foot_scale|Rivendell Scale
+; itm_riv_surcoat|Rivendell Surcoat
+; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|리븐델 방어구 
 itm_riv_armor_leader|리븐델 대장 갑옷
 itm_riv_boots|리븐델 부츠
@@ -193,15 +190,15 @@ itm_gondor_med_greaves|곤도르인 정강이 보호대
 itm_gondor_heavy_greaves|곤도르인 사슬 정강이 보호대
 itm_gondorian_light_helm|곤도르인 시종 투구
 itm_gondor_infantry_helm|곤도르 보병 투구
-itm_gondor_auxila_helm|곤도르 보충대 투구
+; itm_gondor_auxila_helm|Gondor Light Helm
 itm_gondorian_light_helm_b|곤도르인 궁병 투구
-itm_gondorian_archer_helm|곤도르인 궁수 투구
+; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|타워 궁수 투구
 itm_gondor_leader_helm|곤도르 고급 투구
 itm_tower_guard_helm|타워가드 투구
 itm_gondor_citadel_knight_helm|시타델 기사단 투구
 itm_gondor_squire_helm|곤도르 귀족 투구
-itm_gondor_knight_helm|곤도르 기사단 투구
+; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|돌 암로스 투구
 itm_swan_knight_helm|백조기사단 투구
 itm_gondor_lamedon_helm|라메돈 투구
@@ -465,7 +462,6 @@ itm_dun_helm_a|던랜드인 늑대 모자
 itm_dun_helm_b|던랜드인 뿔 모자
 itm_dun_helm_c|던랜드인 높은 투구
 itm_dun_helm_d|던랜드인 높은 투구
-
 ; itm_dun_helm_e|Dunnish Antler Helm
 itm_dun_shield_a|던랜드인 방패
 itm_dun_shield_b|던랜드인 방패
@@ -511,19 +507,20 @@ itm_rohirrim_war_greaves|로한인 전쟁 정강이 보호대
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
 ; itm_mirkwood_heavy_scale|Mirkwood Leafscale
-itm_mirkwood_great_spear|어둠숲 거대한 창
-itm_mirkwood_war_spear|어둠숲 전쟁 창
-itm_mirkwood_short_spear|어둠숲 창
-itm_mirkwood_knife|어둠숲 하얀 칼
-; itm_mirkwood_axe|Mirkwood Axe
-; itm_mirkwood_spear_shield_a|Mirkwood Shield
-itm_mirkwood_spear_shield_b|어둠숲 전쟁 방패
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
-itm_mirkwood_helm_a|어둠숲 궁수 투구
-itm_mirkwood_helm_b|어둠숲 투구
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
-itm_mirkwood_boots|어둠숲 부츠
+; itm_mirkwood_great_spear|Greenwood Great Spear
+; itm_mirkwood_war_spear|Greenwood War Spear
+; itm_mirkwood_short_spear|Woodelf Spear
+; itm_mirkwood_knife|Woodelf Knife
+; itm_mirkwood_axe|Woodelf Axe
+; itm_mirkwood_spear_shield_a|Woodelf Shield
+; itm_mirkwood_spear_shield_b|Greenwood War Shield
+; itm_mirkwood_spear_shield_c|Woodelf Round Shield
+; itm_mirkwood_helm_a|Woodelf Archer Helm
+; itm_mirkwood_helm_b|Greenwood Helm
+; itm_mirkwood_helm_c|Greenwood Heavy Helm
+; itm_mirkwood_helm_d|Greenwood Royal Helm
+itm_free_mirkwood_leather_greaves|어둠숲 가죽 정강이 보호대
+; itm_mirkwood_boots|Woodelf Boots
 itm_harad_tunic|하라드 튜닉
 itm_harad_padded|하론도르를 패드를 덧댄 갑옷
 itm_harad_hauberk|하론도르 사슬갑옷
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|하라드 뱀 방패
 itm_harad_shield_a|하론도르 방패
 itm_harad_shield_b|하론도르 버클러
 itm_harad_shield_c|하론도르 버클러
-
 itm_harad_yellow_shield|하라드 방패
 itm_desert_boots|사막 부츠
 itm_harad_leather_greaves|하라드 정강이 보호대
@@ -751,7 +747,6 @@ itm_dwarf_sword_d|난쟁이 검
 ; itm_dwarf_chain_boots|Dwarven Mail Chausses
 ; itm_dwarf_scale_boots|Dwarven Scale Boots
 ; itm_good_mace|Mace
-; itm_far_harad_shield_paint|Wicker Shield
 ; itm_mordor_banner|Mordor Banner
 ; itm_isengard_banner|Isengard banner
 ; itm_woodelf_banner|Mirkwood Banner
@@ -811,7 +806,9 @@ itm_dwarf_sword_d|난쟁이 검
 ; itm_moria_arrow_reward|Moria Poisoned Arrows
 ; itm_khamul_helm|Helm of Khamul
 ; itm_black_arrows_reward|Black Arrows
+; itm_leather_boots_reward|Hunter Boots
 ; itm_rohan_armor_th|Rohan Royal Armor
+; itm_wilderness_amulet|Wilderness Amulet
 ; itm_prisoner_coll_chain|Prisoner Chains
 ; itm_witchking_helmet|Wicked Helm
 ; itm_lorien_royal_armor|Lorien Royal Armor

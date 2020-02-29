@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Pelo quê que você luta?
 mno_start_good|O amanhecer de uma nova Era
 mno_start_evil|O crepúsculo do homem
+; mno_faction_intros|Learn about the different factions of Middle-Earth
 mno_go_bback|Voltar
 menu_start_phase_2|^^^^^ Terra-Média. Uma sombra está crescendo no Oriente, ^ e coisas da escuridão avançam de onde se escondem . ^ Os povos livres se preparam para a guerra , como a de que não foi visto por uma época . ^ Homens, Elfos, Anões e Orcs ; todos vão desempenhar o seu papel . ^^ Qual papel , no entanto, permanece a ser visto...
 mno_go_forth|Vá em frente no caminho que escolheu...
+mno_change_tld_options|Modificar as opções do TLD.
 menu_start_game_3|^^^^^^^^Escolha o seu cenário:
 mno_custom_battle_scenario_1|Escaramuçada , facções de Gondor vs Harad
 mno_custom_battle_scenario_12|Escolha as facções para batalha
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Teste de cenário de batalha
 mno_troll_battle_scenario|Teste de batalhas de Trolls
 mno_warg_battle_scenario|Teste de Batalhas de Warg
 mno_build_your_own_scene|** Construa seu próprio cenário para TLD **
+mno_go_back|Retornar/Regressar
 ; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
 ; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
 ; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Select your race:
 mno_start_ma|HOMEM
 mno_start_el|ELFO
 mno_start_dw|ANÃO
-mno_go_back|Retornar/Regressar
 menu_start_evil|^^^^^^^^^^Quem você serve?
 mno_start_eye|SAURON de Mordor, o Senhor dos Anéis
 mno_start_hand|SARUMAN de Isengard, a Mão Branca
@@ -161,7 +163,6 @@ mno_game_options_compat_party|Número máximo de grupos: {s1}
 ; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 ; mno_strat_tweaks_back|Back to tweaks menu.
 ; menu_camp_action|^^^^^^^^^     Which object?
-; mno_camp_customize_defilement|Customize Defiled Armor
 mno_camp_drink_water|Beber a Água de Ent!
 mno_camp_action_4|Voltar.
 menu_assasins_attack_player_won|Conseguiu derrotar com sucesso os assassinos de {s2}, enviados por {s3}.
@@ -299,6 +300,7 @@ mno_dungeon_enter_door|Abrir a porta.
 mno_talk_to_castle_commander|Visite o {s61} Barracks.
 mno_speak_with_elder|Falar com o {s6}.
 mno_isengard_underground|Ir para as cavernas subterrâneas.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Suba até o topo.
 ; mno_erebor_gates|Visit the Great Gates.
 mno_town_leave|Sair...
@@ -343,7 +345,7 @@ mno_gondor_beacons_close|Sair...
 ; mno_player_added_to_war_council_close|Close
 ; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
 ; mno_player_added_to_siege_reports_close|Close
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 ; mno_player_added_to_allow_follow_close|Close
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 ; mno_center_besieged_event_close|Close

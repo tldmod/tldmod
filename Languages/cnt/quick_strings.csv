@@ -248,6 +248,8 @@ qstr_nothing|沒 有 東 西
 qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
+; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
+; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
 qstr_{reg4}_killed_{reg5}|{reg4} 人 被 殺 ， {reg5} 人 受 傷 ， {reg6} 人 逃 跑
 qstr_{reg4}_killed_{reg5}_|{reg4} 人 被 殺 ， {reg5} 人 受 傷
 qstr_{reg4}_killed_{reg5}_r|{reg4} 人 被 殺 ， {reg5} 人 逃 跑
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|你 的 坐 騎 走 路 磕 磕 絆 絆 ！ 看 起 �
 qstr_Bitten_by_your_own_w|你 被 自 己 的 座 狼 咬 了 !
 qstr_You_weigh_too_much_f|你 太 重 了 不 適 合 矮 種 馬  ！
 qstr_Your_mount_rears_ref|你 的 坐 騎 受 到 驚 嚇 ！ 拒 絕 服 從 你 的 命 令 ！
+; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|固 定 自 定 義 相 機
 qstr_Press_Ctrl_+_Left_/_|按 Ctrl + Left / Ctrl + Right 箭 頭 鍵 切 換 護 肩
+; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
 qstr_Use_+/__to_zoom_in/o|按 下 +/-   來   放 大 / 縮 小
 qstr_Use_Up/Down_arrow_ke|使 用 上 / 下 箭 頭 鍵 以 前 傾 / 後 傾 
 qstr_Fixed_Camera___Right|固 定 相 機 — 右 肩
 qstr_Fixed_Camera___Left_|固 定 相 機 — 左 肩
+; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|在 參 觀 城 鎮 ， 定 居 點 和 營 地 時 ， 您 可 以 與 周 圍 的 人 交 談 。 不 同 派 別 的 成 員 有 不 同 的 話 要 說 - 有 些 人 會 讓 你 自 己 思 考 ， 有 些 人 會 分 享 謠 言 。 兩 者 都 可 以 讓 你 更 好 地 了 解 這 個 人 的 文 化 和 派 系 ， 或 者 他 們 可 能 會 找 到 尋 找 秘 密 地 點 的 線 索 ， 或 者 是 在 荒 野 中 旅 行 並 在 環 戰 中 戰 鬥 的 秘 訣 和 技 巧 。
 qstr_Cannot_leave_now.|現 在 不 能 離 開
 qstr_You_have_found_the_l|你 找 到 了 當 地 的 鐵 匠 鋪...... (+{reg3} XP)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|你 正 攻 擊 一 群 {s1}
 qstr_The_battle_against_t|對 抗 一 群 {s1} 的 戰 鬥 繼 續
 qstr_There_are_{reg39}_al|在 這 場 戰 鬥 中 有 {reg39} 盟 軍 指 揮 官 。   你 可 以 命 令 他 們 和 他 們 的 部 隊 獲 得 {reg40} 影 響 點 。
 qstr_Having_a_small_party|舉 辦 小 型 派 對 有 其 好 處 ......  你 和 你 的 部 隊 躲 避 敵 人 幾 個 小 時 ， 以 確 保 你 不 被 看 見 。
-qstr_Your_ability_to_surv|您 在 惡 劣 環 境 中 生 存 的 能 力 使 您 能 夠 找 到 一 個 安 全 的 地 方 來 隱 藏 。 (你 的 野 外 技 能 讓 你 可 以 隱 藏 {reg1} 部 隊 )
+; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
 qstr_{reg4}_will_be_lost.|{reg4} 將 會 失 去 。
 qstr_{s13}_asked_you_to_r|{s13} 希 望 你 帶 著 至 少 {reg13} 名 士 兵 向 他 報 告 。
 qstr_{s13}_ordered_you_to|{s13} 命 令 你 參 加 對 {s14} 的 攻 擊 。
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3} 得 知 了 你 戰 勝 {s4} 的 消 息 。
 qstr_Even_though_there_we|即 使 沒 有 盟 友 見 證 你 的 勝 利 ， 你 的 部 隊 仍 然 會 慶 祝 你 的 勝 利 。
 qstr_{s1}_of_{s3}_managed|{s3} 的 {s1} 設 法 逃 離 了 。
 qstr_Prisoners_rescued_so|到 目 前 為 止 解 救 的 囚 犯 ： {reg1}
-qstr_Victory_comment._Pla|評 價 ： 勝 利 ， 玩 家 靠 自 己 的 力 量 勝 利 了 。
-qstr_Ordinary_victory_com|評 價 ： 普 通 勝 利 ， 玩 家 至 少 提 供 了 40 % 的 助 力 。
-qstr_Player_participation|評 價 ， 重 在 參 與 ， 敵 人 至 少 有 1000 點 初 始 力 量 。
-qstr_No_victory_comment._|評 價 ： 普 通  ， 小 型 沖 突 的 同 時 玩 家 盡 力 不 超 過 友 軍 的 40%
 qstr_{reg1}_kills_of_{s1}|{reg1} 殺 死 {s1} 派 系 軍 隊 計 入 誓 言 。 殺 得 總 數 ： {reg0}
-qstr_Some_of_your_tendons|你 的 一 些 肌 腱 在 戰 鬥 中 拉 傷 了 ， 力 量 -1
-qstr_You_took_a_nasty_wou|你 腿 上 的 傷 即 使 痊 癒 也 會 導 致 跛 足 ， 敏 捷 -1
-qstr_You_have_trouble_thi|戰 後 你 才 發 現 頭 傷 導 致 了 頻 繁 的 頭 痛 ， 智 力 -1
 qstr_Perhaps_I_m_getting_|也 許 我 的 運 氣 在 變 差 ....
 qstr_Retirement_is_starti|退 休 越 來 越 像 是 個 好 主 意 。
 qstr_No_matter!_I_will_pe|無 妨 ！ 我 還 能 堅 持 ！
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|磁 鐵 是 做 什 麼 的 ？
 qstr_Um..._by_enchanting_|恩...  用 來 吸 鐵 ？
 qstr_Magnets_are_made_of_|磁 鐵 是 開 採 自 地 下 的 金 屬 做 的 ， 它 天 然 就 有 磁 力 因 為 它 含 有 引 力 的 成 分 。
 qstr_i_wont_a_bonerlrord_|哇 想 要 騎 砍 2 領 主 啊 啊 ！ 11 ！
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Install_TLD_in_your_|安裝最後之日到騎馬與砍殺2：領主的模組文件夾，在module.ini文件中增加一行指令：“compatible_with_wfas = 1”，然後你就可以在戰團和Warrider 0.202版裡面玩最後之日了。
 qstr_dis_mod_takes_2_long|擇個模組花了老長時間才發布！爛！ ！
 qstr_Well_there_s_a_lot_o|嗯，因為有很多新的材質紋理和其它東西要做，我猜這很費時…
 qstr_It_has_been_recently|這個模組的正式版近日發布了，如果你忘了網址，你可以上lemonparty.org去下載。

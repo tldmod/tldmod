@@ -248,6 +248,8 @@ qstr_nothing|Hiçbir şey
 qstr_Good|İyi
 qstr_Med|İdare eder
 qstr_Bad|Kötü
+; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
+; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
 qstr_{reg4}_killed_{reg5}|{reg4} ölü, {reg5} yaralı, {reg6} kaçak
 qstr_{reg4}_killed_{reg5}_|{reg4} ölü, {reg5} yaralı
 qstr_{reg4}_killed_{reg5}_r|{reg4} ölü, {reg5} kaçak
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|Bineginiz tökezliyor! Sakatlanmış gibi görünüyor
 qstr_Bitten_by_your_own_w|Kendi wargın tarafından ısırıldın
 qstr_You_weigh_too_much_f|Bir midilli için çok agırsın
 qstr_Your_mount_rears_ref|Bineginiz şahlanıyor, emirlerinize itaat etmeyi reddediyor!
+; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|Özel Kamerayı Ayarla
 qstr_Press_Ctrl_+_Left_/_|Omuz Degiştirmek için Ctrl+Sol/Ctrl/Sag Yön Tuşlarına basınız
+; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
 qstr_Use_+/__to_zoom_in/o|+/- kullan yaklaş/uzaklaş
 qstr_Use_Up/Down_arrow_ke|Yukarı ve aşagı egim vermek için up/down tuşlarını kullanın
 qstr_Fixed_Camera___Right|Sabit Kamera - Sag Omuz
 qstr_Fixed_Camera___Left_|Sabit Kamera - Sol Omuz
+; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|Kasabaları ziyaret ederken, yerleşkelerde ve kamplarda etrafta yürüyen insanlarla konuşabilirsin. Farklı tarafların halkları, farklı şeyler söyleyebilirler. Bazıları düşüncelerini, bazıları ise söylentileri sizinle paylaşacaktır. Her ikisi de  bölgenin kültürünü ve tarafını daha iyi anlatmak, gizli bölgeleri bulma ipuçları, Yaban Hayatı boyunca seyahat etmek, Yüzük Savaşında bulunma ipuçları ve püf noktaları saglamak için kullanılabilir.
 qstr_Cannot_leave_now.|Şimdi ayrılamazsın
 qstr_You_have_found_the_l|Yerel demirciyi buldun...(+{reg3} XP)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|Sen {s1}'in grubuna saldırıyorsun.
 qstr_The_battle_against_t|{s1} grubuna karşı savaş devam ediyor.
 qstr_There_are_{reg39}_al|Savaşta {reg39} adet müttefik komutan var. {reg40} Nüfuz puanı karşılıgında onları ve askerlerini yönetebilirsin.
 qstr_Having_a_small_party|Küçük bir partiye sahip olmanın faydaları var... Siz ve birlikleriniz, görülemeyeceginizden emin olmak için düşmandan birkaç saat saklanabilirsiniz.
-qstr_Your_ability_to_surv|Zorlu ortamlarda hayatta kalabilmeniz, saklanacak güvenli bir yer bulmanızı saglar. (Yaban Ustası yeteneginiz, {reg1} birlikleri ile saklanmanıza izin verir)
+; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
 qstr_{reg4}_will_be_lost.|{reg4} Kaybedildi.
 qstr_{s13}_asked_you_to_r|{s13}, senden en az {reg13} birlikle kendisine haber vermeni rica etti.
 qstr_{s13}_ordered_you_to|{s13} Senden {s14}' e karşı yaptıgı saldırıya katılmanı emretti
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3} , {s4} karşısında kazandıgın zaferine tanık
 qstr_Even_though_there_we|Yakınlarınızda zaferinize şahitlik edecek hiçbir müttefik olmasa da, birlikleriniz yine de zaferinizi kutlar.
 qstr_{s1}_of_{s3}_managed|{s3}lü {s1}  kaçmana yardım etti.
 qstr_Prisoners_rescued_so|{reg1} adet Mahkum kurtarıldı. 
-qstr_Victory_comment._Pla|Zafer yorumu. Oyuncu yalnızdı
-qstr_Ordinary_victory_com|Olagan zafer yorumu. Oyuncu en az %40 güçlendi.
-qstr_Player_participation|Oyuncu katılım yorumu. Düşmanın en azından 1k gücü vardı.
-qstr_No_victory_comment._|Zafer yorumu yok. Savaş küçüktü ve Oyuncu, müttefik gücün yüzde 40'ından daha azını sagladı
 qstr_{reg1}_kills_of_{s1}|{s1} tarafından yemin için geçerli {reg1} adet öldürme var. TOPLAM öldürülen: {reg0}
-qstr_Some_of_your_tendons|Bazı tendonların savaşta zarar gördü. 1 güç kaybettin.
-qstr_You_took_a_nasty_wou|İyileştikten sonra bile hafifçe topallamana neden olacak kötü bir yara aldın. Çevikligini 1 kaybettin.
-qstr_You_have_trouble_thi|Savaştan sonra, belki de kafana gelen sert bir vuruştan dolayı sık sık baş agrıları çekiyorsun ve artık eskisi gibi düşünmekte zorlanıyorsun. İstihbarat 1 azaldı.
 qstr_Perhaps_I_m_getting_|Belki de şansızlaşıyorum...
 qstr_Retirement_is_starti|Emeklilik kulaga artık daha hoş gelmeye başlıyor.
 qstr_No_matter!_I_will_pe|Önemi yok! Ben direnecegim!
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|Mıknatıslar nasıl çalışır?
 qstr_Um..._by_enchanting_|Hmm...Büyülü demirle mi?
 qstr_Magnets_are_made_of_|Mıknatıs yer altından çıkarılan metallerle yapılır. Onlar manyetik çünkü içinde yerçekimi parçaları bulunur.
 qstr_i_wont_a_bonerlrord_|bonnerlord port istiyorom nao!!11!
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Install_TLD_in_your_|Bannerlord Mod klasörüne TLD'yi yükleyin, ve module.ini'ye şu satırı ekleyin 'compatible_with_wfas = 1', ve artık hem Warband hem de Warrider 0.202 de oynayabileceksiniz!
 qstr_dis_mod_takes_2_long|bu modun güncellenmesi çok uzun zaman alıyor! çok kötü!!11!22
 qstr_Well_there_s_a_lot_o|Çok fazla yeni grafik ve diger şeyler var.Sanırım bu zaman alacak.
 qstr_It_has_been_recently|Kısa bir süre önce yayımlandı, linki kaçırdıysanız, lemonparty.org adresinden indirebilirsiniz.

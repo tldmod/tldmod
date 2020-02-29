@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Wofür kämpfst du?
 mno_start_good|Den BEGINN eines neuen Zeitalters.
 mno_start_evil|Den UNTERGANG der Menschheit.
+mno_faction_intros|Lerne mehr über die Völker von Mittelerde
 mno_go_bback|Zurück.
 menu_start_phase_2|^^^^^ Mittelerde. Ein Schatten regt sich im Osten, ^ und dunkle Geheimnisse, die lange verborgen lagen, offenbaren sich. ^ Die freien Völker bereiten sich auf einen Krieg vor. Einen Krieg, wie ihn die Welt seit einem Zeitalter nicht gesehen hat. ^ Menschen, Elben, Zwerge und Orks; sie alle werden ihre Rolle spielen. ^^ Welche dies jedoch sein wird, kann nur die Zukunft zeigen...
 mno_go_forth|Betritt nun den Pfad deines Schicksals...
+mno_change_tld_options|TLD-Optionen ändern.
 menu_start_game_3|^^^^^^^^Wähle ein Szenario:
 mno_custom_battle_scenario_1|Gefecht; Reiche von Gondor vs. Harad
 mno_custom_battle_scenario_12|Wähle die Fraktionen für das Gefecht.
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Kulissentest: Schlacht
 mno_troll_battle_scenario|Test: Trollschlachten
 mno_warg_battle_scenario|Test: Wargschlachten
 mno_build_your_own_scene|** Erstelle deine eigene Szene für TLD **
+mno_go_back|Zurück
 menu_tutorial|^^ Willkommen im Kampftutorial für Mount&Blade. Hier wirst du die Grundlagen des Kampfes lernen und auch einen kurzen Überblick über das Kommandieren von Truppen in der Schlacht erhalten.
 mno_tutorial_1|Tutorial #1: Bewegung und Waffen. {s1}
 mno_tutorial_2|Tutorial #2: Kämpfen mit Schild. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Wählt Eure Art:
 mno_start_ma|MENSCH
 mno_start_el|ELB
 mno_start_dw|ZWERG
-mno_go_back|Zurück
 menu_start_evil|^^^^^^^^^^Wem dienst du?
 mno_start_eye|SAURON von Mordor, dem Herrn der Ringe
 mno_start_hand|SARUMAN von Isengart, der Weißen Hand
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Einflusssteigerungsrate: {s7}
 mno_strat_tweaks_rank_gain_rate|Rangsteigerungsrate: {s7}
 mno_strat_tweaks_back|Zurück zum Optimierungs-Menü.
 menu_camp_action|^^^^^^^^^ Welchen Gegenstand?
-mno_camp_customize_defilement|Geschändete Rüstung anpassen
 mno_camp_drink_water|Trink das Entwasser!
 mno_camp_action_4|Zurück.
 menu_assasins_attack_player_won|Du hast die Attentäter aus {s2}, ausgesandt von {s3}, besiegt.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Betritt das Warenlager
 mno_talk_to_castle_commander|Besuche die Kasernen von {s61}
 mno_speak_with_elder|Sprich mit dem {s6}.
 mno_isengard_underground|Gehe zu den unterirdischen Höhlen.
+mno_isengard_underground_door|Gehe hinab in die Gruben
 mno_tirith_toplevel|Klettere auf die höchste Ebene.
 mno_erebor_gates|Suche das Haupttor auf.
 mno_town_leave|Verlassen...

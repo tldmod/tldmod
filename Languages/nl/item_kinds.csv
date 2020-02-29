@@ -73,7 +73,7 @@ itm_troll_shield_a|Trol Schild
 itm_arrows|Pijlen
 itm_gondor_arrows|Gondor Pijlen
 itm_orc_javelin|Zware Speer Orc
-itm_khergit_arrows|Prikkeldraad Pijlen
+itm_khergit_arrows|Rohirrim Pijlen
 itm_rohan_arrows_2|Rohirrim Pijlen
 itm_harad_arrows|Haradrim Pijlen
 itm_corsair_arrows|Piraten Pijlen
@@ -85,8 +85,6 @@ itm_isengard_arrow|Isengard Pijlen
 itm_leather_gloves|Leren Handschoenen
 itm_mail_mittens|Maliënkolder Hanschoenen
 itm_leather_boots|Leren Schoenen
-itm_leather_boots_dark|Rijder Schoenen
-itm_splinted_greaves|Gebroken Scheenbeschermers
 itm_white_tunic_a|Burger Kleren
 itm_rohan_shoes|Leren Schoenen
 itm_furry_boots|Harige Schoenen
@@ -95,7 +93,6 @@ itm_hood_black|Zwarte Kap
 itm_hood_green|Groene Kap
 itm_hood_grey|Grijze Kap
 itm_hood_leather|Leren Kap
-itm_axe_a|Nordman Bijl
 itm_axe_b|Nordman Gebaarde Bijl
 itm_axe_c|Nordman Bijl
 itm_axe_d|Nordman Bijl
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Rivendell Zwaard
 itm_riv_riding_sword|Rivendell Cavalerie Zwaard
 itm_riv_archer_sword|Rivendell Boogschutter Zwaard
 itm_riv_spear|Rivendell Speer
-itm_riv_armor_light|Rivendell Pantser
-itm_riv_armor_light_inf|Rivendell Pantser
-itm_riv_armor_archer|Rivendell Pantser
-itm_riv_armor_m_archer|Rivendell Pantser
-itm_riv_armor_med|Rivendell Pantser
-itm_riv_armor_heavy|Rivendell Pantser
+; itm_riv_light|Rivendell Tunic
+; itm_riv_leather|Rivendell Leather Armor
+; itm_riv_foot_mail|Rivendell Mail
+; itm_riv_foot_scale|Rivendell Scale
+; itm_riv_surcoat|Rivendell Surcoat
+; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|Rivendell Pantser
 itm_riv_armor_leader|Rivendell Leider Pantser
 itm_riv_boots|Rivendell Schoenen
@@ -193,15 +190,15 @@ itm_gondor_med_greaves|Gondorian Medium Pantserplaten
 itm_gondor_heavy_greaves|Gondorian Maliënkolder Pantserplaten
 itm_gondorian_light_helm|Gondorian Livreiknecht Helm
 itm_gondor_infantry_helm|Gondor Infanterie Helm
-itm_gondor_auxila_helm|Gondorian Assists Helm
+; itm_gondor_auxila_helm|Gondor Light Helm
 itm_gondorian_light_helm_b|Gondorian Schutter Helm
-itm_gondorian_archer_helm|Gondorian Boogschutters Helm
+; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|Toren Boogschutters Helm
 itm_gondor_leader_helm|Gondor Hoge Helm
 itm_tower_guard_helm|Toren Bewaker Helm
 itm_gondor_citadel_knight_helm|Citadel Ridder Helm
 itm_gondor_squire_helm|Gondor Schildknaap Helm
-itm_gondor_knight_helm|Gondor Ridder Helm
+; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Dol Amroth Helm
 itm_swan_knight_helm|Zwaan Ridder Helm
 itm_gondor_lamedon_helm|Lamedon Helm
@@ -465,7 +462,6 @@ itm_dun_helm_a|Dunnish Wolven Pet
 itm_dun_helm_b|Dunnish Geweien Pet
 itm_dun_helm_c|Dunnish Lang Helm
 itm_dun_helm_d|Dunnish Lang Helm
-
 ; itm_dun_helm_e|Dunnish Antler Helm
 itm_dun_shield_a|Dunnish Schild
 itm_dun_shield_b|Dunnish Schild
@@ -511,19 +507,20 @@ itm_rohan_shield_g|Rohan Koninklijk Schild
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
 ; itm_mirkwood_heavy_scale|Mirkwood Leafscale
-itm_mirkwood_great_spear|Mirkwoord Grootse Speer
-itm_mirkwood_war_spear|Mirkwood Oorlogs Speer
-itm_mirkwood_short_spear|Mirkwood Speer
-itm_mirkwood_knife|Mirkwood Wit Mes
-; itm_mirkwood_axe|Mirkwood Axe
-; itm_mirkwood_spear_shield_a|Mirkwood Shield
-itm_mirkwood_spear_shield_b|Mirkwoord Oorlogsschild
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
-itm_mirkwood_helm_a|Mirkwood Boogschuttershelm
-itm_mirkwood_helm_b|Mirkwood Helm
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
-itm_mirkwood_boots|Mirkwood Laarzen
+; itm_mirkwood_great_spear|Greenwood Great Spear
+; itm_mirkwood_war_spear|Greenwood War Spear
+; itm_mirkwood_short_spear|Woodelf Spear
+; itm_mirkwood_knife|Woodelf Knife
+; itm_mirkwood_axe|Woodelf Axe
+; itm_mirkwood_spear_shield_a|Woodelf Shield
+; itm_mirkwood_spear_shield_b|Greenwood War Shield
+; itm_mirkwood_spear_shield_c|Woodelf Round Shield
+; itm_mirkwood_helm_a|Woodelf Archer Helm
+; itm_mirkwood_helm_b|Greenwood Helm
+; itm_mirkwood_helm_c|Greenwood Heavy Helm
+; itm_mirkwood_helm_d|Greenwood Royal Helm
+; itm_free_mirkwood_leather_greaves|Mirkwood Leather Greaves
+; itm_mirkwood_boots|Woodelf Boots
 itm_harad_tunic|Harad Tuniek
 ; itm_harad_padded|Harondor Padded Armor
 ; itm_harad_hauberk|Harondor Hauberk
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Harad Slangenschild
 itm_harad_shield_a|Harondor Schild
 ; itm_harad_shield_b|Harondor Buckler
 ; itm_harad_shield_c|Harondor Buckler
-
 itm_harad_yellow_shield|Harad Schild
 itm_desert_boots|Woestijnlaarzen
 ; itm_harad_leather_greaves|Harad Greaves
@@ -751,7 +747,6 @@ itm_dwarf_spear|Dwergen Speer
 ; itm_dwarf_chain_boots|Dwarven Mail Chausses
 ; itm_dwarf_scale_boots|Dwarven Scale Boots
 ; itm_good_mace|Mace
-; itm_far_harad_shield_paint|Wicker Shield
 ; itm_mordor_banner|Mordor Banner
 ; itm_isengard_banner|Isengard banner
 ; itm_woodelf_banner|Mirkwood Banner
@@ -811,7 +806,9 @@ itm_explosive_reward|Isengard Mijn
 itm_moria_arrow_reward|Moria Gifpijlen
 ; itm_khamul_helm|Helm of Khamul
 ; itm_black_arrows_reward|Black Arrows
+; itm_leather_boots_reward|Hunter Boots
 ; itm_rohan_armor_th|Rohan Royal Armor
+; itm_wilderness_amulet|Wilderness Amulet
 ; itm_prisoner_coll_chain|Prisoner Chains
 ; itm_witchking_helmet|Wicked Helm
 ; itm_lorien_royal_armor|Lorien Royal Armor

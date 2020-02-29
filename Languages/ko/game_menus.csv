@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^자네는 무엇을 위해 싸우는가?
 mno_start_good|새로운 시대의 시작
 mno_start_evil|인간의 황혼
+; mno_faction_intros|Learn about the different factions of Middle-Earth
 mno_go_bback|돌아가기
 menu_start_phase_2|^^^^^미들 어스. 동쪽의 암운은 짙어지고,^ 암흑의 족속들은 오랜 은둔을 끝내고 나오고 있다.^ 자유민들은 그들이 이제껏 보지 못 한 전쟁을 준비하고 있다.^인간, 요정, 난쟁이 그리고 오크들은 그들의 역할을 행할것이다.^^다만, 어떠한 역할인가는 앞으로 지켜봐야 할 것이리라...
 mno_go_forth|당신이 선택한 길을 따라 앞으로 가십시오...
+mno_change_tld_options|제 3세계 옵션 변경
 menu_start_game_3|^^^^^^^당신의 이야기를 선택하세요:
 mno_custom_battle_scenario_1|교전, 곤도르 vs 하라드
 mno_custom_battle_scenario_12|전투를 위한 진영을 선택하세요.
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|배경 연습 전투
 mno_troll_battle_scenario|연습 트롤 전투
 mno_warg_battle_scenario|연습 와르그 전투
 mno_build_your_own_scene|**제 3시대에서 당신만의 이야기를 만드세요 **
+mno_go_back|돌아가기
 menu_tutorial|마운트 블레이드 전투 튜토리얼에 오신것을 환영합니다. 여기서 당신은 군대  개요 필드 명령과 같은 기본적인 전투를 배울수 있습니다.
 mno_tutorial_1|튜토리얼 #1: 기본 이동 및 무기 선택. {s1}
 mno_tutorial_2|튜토리얼 #2: 방패를 들고 싸우기. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^당신의 종족을 선택하세요:
 mno_start_ma|인간
 mno_start_el|요정
 mno_start_dw|난쟁이
-mno_go_back|돌아가기
 menu_start_evil|^^^^^^^^^^누구를 위해 싸우시겠습니까?
 mno_start_eye|모르도르, 반지의 제왕 사우론
 mno_start_hand|아이센가드, 백색의 사루만
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|영향력 획득 비율: {s7}
 mno_strat_tweaks_rank_gain_rate|지위 획득 비율: {s7}
 mno_strat_tweaks_back|조정 메뉴로 돌아가기
 menu_camp_action|^^^^^^^^^어떤 물건을 선택하시겠습니까?
-mno_camp_customize_defilement|더럽혀진 방어구 커스터마이징
 mno_camp_drink_water|엔트물을 마시세요!
 mno_camp_action_4|돌아가기
 menu_assasins_attack_player_won|당신은 {s3}에 의해 보내진 암살자들을 {s2}에서 성공적으로 물리쳤습니다.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|드워프 창고에 들어가기
 mno_talk_to_castle_commander|{s61}의 병영을 방문
 mno_speak_with_elder|{s6}와(과) 대화
 mno_isengard_underground|지하 선술집에 들어가기
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|꼭대기층으로 올라가기
 ; mno_erebor_gates|Visit the Great Gates.
 mno_town_leave|떠나기
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^전령이 말하길{s2}가 당신을 그�
 mno_player_added_to_war_council_close|닫기
 menu_player_added_to_siege_reports|^^^^^전령이 와 말하길, 당신은 {s24}로서 {s2}가 적진을 공략하거나 되려 {s2}가 공략당할 때 보고를 받게 될 것이라고 했습니다.
 mno_player_added_to_siege_reports_close|닫기
-menu_player_added_to_allow_follow|^^^^^전령이 당신에게 다가와서 당신은 이제 최대 {reg55}명의 군사를 가진 {s24}로서 {s2}에게 당신을 따르도록 명령할 수 있다고 전했습니다. 
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|닫기
 menu_center_besieged_event|^^^^^전령이 당신에게 황급히 달려와 {s3}의 {s2}가 {s1}을 포위하고 있다고 보고했습니다.
 mno_center_besieged_event_close|닫기

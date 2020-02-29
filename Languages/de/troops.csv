@@ -132,16 +132,16 @@ trp_i4_rhun_vet_infantry|Angesehener Stammeskrieger aus Rhun
 trp_i4_rhun_vet_infantry_pl|Angesehene Stammeskrieger aus Rhun
 trp_i5_rhun_ox_warrior|Ochsenkrieger
 trp_i5_rhun_ox_warrior_pl|Ochsenkrieger
-trp_c2_rhun_light_horseman|Leichter Reiter aus Rhun
-trp_c2_rhun_light_horseman_pl|Leichte Reiter aus Rhun
-trp_c3_rhun_light_cavalry|Erfahrener leichter Reiter aus Rhun
-trp_c3_rhun_light_cavalry_pl|Erfahrene leichte Reiter aus Rhun
-trp_c4_rhun_noble_cavalry|Stammesfürst aus Rhun
-trp_c4_rhun_noble_cavalry_pl|Stammesfürsten aus Rhun
-trp_c5_rhun_heavy_noble_cavalry|Gepanzerter Stammesfürst aus Rhun
-trp_c5_rhun_heavy_noble_cavalry_pl|Gepanzerte Stammesfürsten aus Rhun
-trp_c6_rhun_dorwinion_noble|Stammesfürst von Dorwinion
-trp_c6_rhun_dorwinion_noble_pl|Stammesfürsten von Dorwinion
+trp_c2_rhun_horseman|Reiter von Rhûn
+trp_c2_rhun_horseman_pl|Reiter von Rhûn
+trp_c3_rhun_outrider|Vorreiter von Rhûn
+trp_c3_rhun_outrider_pl|Vorreiter von Rhûn
+trp_c4_rhun_noble_rider|Edelreiter von Rhûn
+trp_c4_rhun_noble_rider_pl|Edelreiter von Rhûn
+trp_c5_rhun_warrider|Kriegsreiter von Rhûn
+trp_c5_rhun_warrider_pl|Kriegsreiter von Rhûn
+trp_c6_rhun_warlord|Kriegsherr von Rhûn
+trp_c6_rhun_warlord_pl|Kriegsherren von Rhûn
 trp_i1_dwarf_apprentice|Junger Zwerg
 trp_i1_dwarf_apprentice_pl|Junge Zwerge
 trp_i2_dwarf_warrior|Zwergenkrieger vom Erebor
@@ -197,7 +197,7 @@ trp_i5_gon_vet_swordsman_pl|Erfahrene Schwerträger aus Gondor
 trp_i6_gon_tower_swordsman|Schwerträger der Turmwache
 trp_i6_gon_tower_swordsman_pl|Schwertträger der Turmwache
 trp_c1_gon_nobleman|Edelmann aus Gondor
-trp_c1_gon_nobleman_pl|Edelmänner aus Gondor
+trp_c1_gon_nobleman_pl|Edelmann aus Gondor
 trp_c2_gon_squire|Knappe aus Gondor
 trp_c2_gon_squire_pl|Knappen aus Gondor
 trp_c3_gon_vet_squire|Erfahrener Knappe aus Gondor
@@ -378,12 +378,12 @@ trp_a5_riv_master_archer|Meisterschütze aus Bruchtal
 trp_a5_riv_master_archer_pl|Meisterschützen aus Bruchtal
 trp_a6_riv_guardian|Wächter von Imladris
 trp_a6_riv_guardian_pl|Wächter von Imladris
-trp_i3_riv_swordbearer|Krieger aus Bruchtal
-trp_i3_riv_swordbearer_pl|Krieger aus Bruchtal
-trp_i4_riv_vet_swordbearer|Erfahrene Krieger aus Bruchtal
-trp_i4_riv_vet_swordbearer_pl|Erfahrene Krieger aus Bruchtal
-trp_i5_riv_swordmaster|Meisterkrieger aus Bruchtal
-trp_i5_riv_swordmaster_pl|Meisterkrieger aus Bruchtal
+trp_i3_riv_swordbearer|Schwerträger aus Bruchtal
+trp_i3_riv_swordbearer_pl|Schwerträger aus Bruchtal
+trp_i4_riv_vet_swordbearer|Erfahrener Schwerträger aus Bruchtal
+trp_i4_riv_vet_swordbearer_pl|Erfahrene Schwerträger aus Bruchtal
+trp_i5_riv_swordmaster|Schwertmeister aus Bruchtal
+trp_i5_riv_swordmaster_pl|Schwertmeister aus Bruchtal
 trp_i6_riv_champion|Held von Imladris
 trp_i6_riv_champion_pl|Helden von Imladris
 trp_ac5_riv_rider|Reiter aus Bruchtal
@@ -947,6 +947,7 @@ trp_npc14|Fuldimir
 trp_npc15|Bolzog
 trp_npc16|Varfang
 trp_npc17|Dimborn
+trp_knight_6_2|Golasgil
 trp_gondor_lord|Truchsess Denethor
 trp_gondor_lord_pl|Truchsess
 trp_rohan_lord|König Theoden
@@ -1598,18 +1599,36 @@ trp_gunda_troll|Bergtroll
 trp_gunda_troll_pl|Bergtrolle
 trp_gunda_vet_troll|Abgerichteter Bergtroll
 trp_gunda_vet_troll_pl|Abgerichtete Bergtrolle
+trp_gunda_placeholder|Abgerichteter Bergtroll
+trp_gunda_placeholder_pl|Abgerichtete Bergtrolle
 trp_isen_troll|Troll von Isengard
 trp_isen_troll_pl|Trolle von Isengard
 trp_isen_vet_troll|Abgerichteter Troll von Isengard
 trp_isen_vet_troll_pl|Abgerichtete Trolle von Isengard
-trp_isen_armoured_troll|Gepanzerter Troll von Isengard
-trp_isen_armoured_troll_pl|Gepanzerte Trolle von Isengard
+trp_isen_armored_troll|Gepanzerter Troll von Isengard
+trp_isen_armored_troll_pl|Gepanzerte Trolle von Isengard
 trp_mordor_troll|Troll aus Mordor
 trp_mordor_troll_pl|Trolle aus Mordor
 trp_mordor_vet_troll|Abgerichteter Troll aus Mordor
 trp_mordor_vet_troll_pl|Abgerichtete Trolle aus Mordor
 trp_mordor_olog_hai|Olog-hai aus Mordor
 trp_mordor_olog_hai_pl|Olog-hai aus Mordor
+trp_troll_placeholder_1|Höhlentroll
+trp_troll_placeholder_1_pl|Höhlentrolle
+trp_troll_placeholder_2|Höhlentroll
+trp_troll_placeholder_2_pl|Höhlentrolle
+trp_troll_placeholder_3|Höhlentroll
+trp_troll_placeholder_3_pl|Höhlentrolle
+trp_troll_placeholder_4|Höhlentroll
+trp_troll_placeholder_4_pl|Höhlentrolle
+trp_troll_placeholder_5|Höhlentroll
+trp_troll_placeholder_5_pl|Höhlentrolle
+trp_troll_placeholder_6|Höhlentroll
+trp_troll_placeholder_6_pl|Höhlentrolle
+trp_wild_troll|Wilder Höhlentroll
+trp_wild_troll_pl|Wilde Höhlentrolle
+trp_ent2|Ent
+trp_ent2_pl|Ents
 trp_mountain_goblin2|Bergork
 trp_mountain_goblin2_pl|Bergorks
 trp_tribal_orc2|Stammesork

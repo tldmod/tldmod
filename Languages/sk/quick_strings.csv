@@ -248,6 +248,8 @@ qstr_nothing|nič
 qstr_Good|Dobrý
 qstr_Med|Stredný
 qstr_Bad|Zlý
+; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
+; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
 qstr_{reg4}_killed_{reg5}|{reg4} mŕtvych, {reg5} ranených, {reg6} zbehlo 
 qstr_{reg4}_killed_{reg5}_|{reg4} mŕtvych, {reg5} ranených
 qstr_{reg4}_killed_{reg5}_r|{reg4} mŕtvych, {reg5} zbehlo
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|Tvoje jazdecké zviera sa zasekáva! Zdá sa, že je c
 qstr_Bitten_by_your_own_w|Tvoj vrrk ťa pohryzol! 
 qstr_You_weigh_too_much_f|Na poníka si príliš ťažký!
 qstr_Your_mount_rears_ref|Tvoje jazdecké zviera sa vzpätilo, nechce ťa poslúchať!
+; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|Upravená Vlastná Kamera
 qstr_Press_Ctrl_+_Left_/_|Stlač Ctrl + Ľavú / Ctrl + Pravú šipku klávesy pre prepnutie pohľadu cez rameno.
+; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
 qstr_Use_+/__to_zoom_in/o|Stlač +/- pre približovanie/odďaľovanie
 qstr_Use_Up/Down_arrow_ke|Stlač Hornú/Dolnú šipku pre posúvanie kamery hore/dole
 qstr_Fixed_Camera___Right|Upravená kamery - Pravé rameno
 qstr_Fixed_Camera___Left_|Upravená kamera - Ľavé rameno
+; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|Behom návštevy miest, usadlostí a táborov si môžeš pohovoriť s okoloidúcimi. Členovia rôznych frakcií ti povedia rôzne veci - niektorí ti vyrozprávajú svoje myšlienky, iní budú šíriť drby. Obe tieto veci ti dajú čiastočný prehľad, aby si dokázal lepšie pochopiť kultúru frakcie osoby, s ktorou rozprávaš, alebo ti môžu čo-to prezradiť o tajných miestach a zákutiach v danej frakcii, či dať tipy a triky pre cestovanie divočinou a bojovaní vo Vojne o Prsteň.
 qstr_Cannot_leave_now.|Teraz nemôžeš odísť.
 qstr_You_have_found_the_l|Našiel si miestneho kováča... (+{reg3} XP)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|Útočíš na skupinu {s1}.
 qstr_The_battle_against_t|Bitka proti skupine {s1} pokračuje.
 qstr_There_are_{reg39}_al|Na bojovom poli si sa ocitol v prítomnosti {reg39} spojeneckých veliteľov. Môžeš stáť v čele ich družín za {reg40} bodov vplyvu.
 qstr_Having_a_small_party|Vedenie malej družiny má svoje výhody...Ty a tvoje jednotky sa schovávate niekoľko hodín pred nepriateľmi, aby ste sa uistili, že vás nik nespozoruje.
-qstr_Your_ability_to_surv|Tvoja schopnosť prežiť za drsných podmienok ti umožňuje nájsť si bezpečnú skrýšu. (Tvoja schopnosť Zbojníctvo ti dovoľuje schovať sa s {reg1} jednotkami)
+; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
 qstr_{reg4}_will_be_lost.|{reg4} zahynie.
 qstr_{s13}_asked_you_to_r|{s13} ťa žiada, aby si sa k nemu dostavil najmenej s {reg13} jednotkami.
 qstr_{s13}_ordered_you_to|{s13} ti prikazuje, aby si sa pridal k útoku proti {s14}.
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3} bol svedkom tvojho víťazstva nad {s4}.
 qstr_Even_though_there_we|Aj keď sa nijaký spojenec nestal svedkom tvojho víťazstva, tvoji muži i tak rozjarene oslavujú triumf.
 qstr_{s1}_of_{s3}_managed|{s1} z {s3} utiekol.
 qstr_Prisoners_rescued_so|Oslobodených väzňov: {reg1}
-qstr_Victory_comment._Pla|Víťazný komentár. Hráč bol sám
-qstr_Ordinary_victory_com|Bežný víťazný komentár. Hráč poskytol aspoň 40 percent síl.
-qstr_Player_participation|Hráčov komentár o účasti. Nepriateľ mal počiatočnú silu aspoň 1000.
-qstr_No_victory_comment._|Žiadny víťazný komentár. Bitka bola malá, a hráč poskytol menej ako 40 spojeneckých síl.
 qstr_{reg1}_kills_of_{s1}|{reg1} zabití {s1} jednotiek frakcie sa započítalo do Prísahy. Celkových zabití: {reg0}
-qstr_Some_of_your_tendons|Niektoré šľachy boli v boji poranené. Strácaš 1 silu.
-qstr_You_took_a_nasty_wou|Utrpel si ťažké zranenie, kvôli ktorému budeš krívať i keď sa vylieči. Strácaš 1 pohyblivosť.
-qstr_You_have_trouble_thi|Po boji sa nedokážeš sústrediť a triezvo premýšľať, zrejme kvôli utrženému ťažkému úderu do hlavy, a pravidelným bolestiam hlavy. Tvoja inteligencia klesla o 1.
 qstr_Perhaps_I_m_getting_|Možno mám nešťastie...
 qstr_Retirement_is_starti|Dôchodok znie stále ako lepší a lepší nápad.
 qstr_No_matter!_I_will_pe|Na tom nezáleží! Vytrvám!
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|Ako fungujú magnety?
 qstr_Um..._by_enchanting_|Um... očarovaním železa?
 qstr_Magnets_are_made_of_|Magnety sú vyrábané z kovu, ktorý sa ťaží zo zeme, a tá obsahuje magnetické čiastočky. Preto je kov magnetický.
 qstr_i_wont_a_bonerlrord_|Kcem tendo mót kompatibiľní s Bannerlod!!11!
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Install_TLD_in_your_|Nainštaluj si TLD do priečinku Bannerlord Modules, pridaj riadok 'compatible_with_wfas = 1' do module.ini, a tak budeš môcť hrať TLD na Warbande i na Warrideri 0.202!
 qstr_dis_mod_takes_2_long|Na dendo mót je treba šakaď 2 hodiny! To ie na prd!!11!
 qstr_Well_there_s_a_lot_o|Nuž, je v ňom veľa nových grafickým modelov a iných vecičiek. Asi to nejakú tu chvíľu potrvá.
 qstr_It_has_been_recently|Bol nedávno vydaný. Pokiaľ ti chýba odkaz, môžeš si ho stiahnuť na lemonparty.org.

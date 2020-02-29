@@ -331,7 +331,7 @@ dlga_find_lost_spears_permission_yes:lord_pretalk|Y te doy las gracias por ello,
 dlga_lord_talk:tell_dorwinion_sack|Mi señor, he encontrado un saco con el emblema descolorido de unas uvas, y que contenía algunas astillas de madera y fragmentos de metal; podrían ser los restos de una lanza.
 dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Muy interesante. Este antiguo saco parece haber llevado la marca de los vinos más escelentes, vinos que sólo podrían venir de Dorwinion.
 dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|También he encontrado este yelmo de Rhûn en el saco. ¿Podría ser una pista que nos conduzca a las Lanzas?
-dlga_tell_dorwinion_sack_3:lord_pretalk|Las caravanas a menudo son asaltadas por el camino. Ese yelmo es de un explorador de Rhun. Sigue el río en dirección sur hasta el Mar de Rhun, busca las rutas comerciales que van a Dorwinion, y puede que encuentres lo que buscas. NOTA: ESTA MISIÓN TODAVÍA NO ESTÁ COMPLETADA. CONTINUARÁ.
+dlga_tell_dorwinion_sack_3:lord_pretalk|Lo normal es que a las caravanas las asalten por el camino. Ese yelmo es de un explorador de Rhûn; sigue el río en dirección sur hasta el Mar de Rhûn, busca las rutas comerciales que van a Dorwinion, y puede que encuentres lo que buscas. NOTA: ESTA MISIÓN TODAVÍA NO ESTÁ COMPLETADA. CONTINUARÁ.
 dlga_lord_talk:lord_healer_wound_ask|He oído que conoces las artes de curación. ¿Es esto cierto, y puedes ayudarme?
 dlga_lord_healer_wound_ask:lord_pretalk|{s1}
 dlga_lord_healer_wound_ask:lord_healer_wound_ask_check|{s1}
@@ -1029,6 +1029,7 @@ dlga_enemy_defeated:close_window|¡Argg! Odio esto.
 dlga_party_relieved:close_window|Gracias por ayudarnos a acabar con esos bastardos.
 dlga_start:battle_reason_stated|¡Beberé vuestra sangre!
 dlga_member_chat_00:close_window.1|^^¡GRRRR!^^
+dlga_member_chat_00:close_window.2|^^Grrarrrr.....^^
 dlga_member_chat_00:regular_member_talk|¿Cuáles son tus órdenes, capitán?
 dlga_regular_member_talk:view_regular_char_requested|Cuéntame más sobre ti.
 dlga_view_regular_char_requested:do_regular_member_view_char|Claro, capitán. Déjame contarte todo lo que hay que saber sobre mí.

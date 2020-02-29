@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Za co bojuješ?
 mno_start_good|ÚSVIT nového věku
 mno_start_evil|SOUMRAK lidstva
+mno_faction_intros|Nauč se o různých frakcích Středozemě
 mno_go_bback|Zpět
 menu_start_phase_2|^^^^^ Středozem. Na Východě se zvedá Stín, ^ přichází odtamtud dlouho skryté a  temné věci. ^ Svobodné národy se připravují na válku. Válku jakou nezažily po celý věk. ^ Lidé, elfové, trpaslíci a skřeti - všichni budou hrát svou roli. ^^ Jakou roli, to se teprve ukáže...
 mno_go_forth|Vydej se po své zvolené cestě...
+mno_change_tld_options|Změnit NASTAVENÍ TLD.
 menu_start_game_3|^^^^^^^^Zvol si scénář:
 mno_custom_battle_scenario_1|Šarvátka, Gondor proti Haradu
 mno_custom_battle_scenario_12|Vyber frakce pro bitvu
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Testovací bitva pro procedurálně generovanou sc
 mno_troll_battle_scenario|Testovací bitvy se zlobry
 mno_warg_battle_scenario|Testovací bitvy s vrrky
 mno_build_your_own_scene|**Postav svou vlastni scénu pro TLD**
+mno_go_back|Zpět
 menu_tutorial|Vítejte do bojového tutoriálu hry Mount & Blade. Tady se naučíš základy boje a řízení tvé vlastní armády.
 mno_tutorial_1|Tutoriál #1: Základní pohyb a výběr zbraní. {s1}
 mno_tutorial_2|Tutoriál #2: Boj se štítem. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Zvol si rasu:
 mno_start_ma|ČLOVĚK
 mno_start_el|ELF
 mno_start_dw|TRPASLÍK
-mno_go_back|Zpět
 menu_start_evil|^^^^^^^^^^Komu sloužíš?
 mno_start_eye|SAURONOVI z Mordoru, Pánu Prstenů
 mno_start_hand|SARUMANOVI ze Železného pasu, Bílé Ruce
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Nárůst vlivu: {s7}
 mno_strat_tweaks_rank_gain_rate|Nárůst úrovně: {s7}
 mno_strat_tweaks_back|Zpět do menu úprav.
 menu_camp_action|^^^^^^^^^ Který předmět?
-mno_camp_customize_defilement|Vytvoř si Poskvrněnou Zbroj
 mno_camp_drink_water|Vypij Entí vodu!
 mno_camp_action_4|Zpět.
 menu_assasins_attack_player_won|Vrazi z {s2}, poslání {s3} byli poraženi!
@@ -192,7 +193,7 @@ menu_cattle_herd|Narazil jsi na nějaké lidi.
 mno_cattle_drive_away|Rozkázat jim aby tě následovali.
 mno_cattle_stop|Přimět je aby zastavili.
 mno_leave|Odejít.
-menu_simple_encounter|^^^^^{s2}^Máš k dispozici {reg22} jednotek k boji proti jejich {reg11}.^^Bitva se odehrává v{s3}{s4}.^^Jaké jsou tvé rozkazy?
+menu_simple_encounter|^^^^^{s2}^Máš k dispozici {reg22} jednotek k boji proti jejich {reg11}.^^Bitva se odehrává v {s3}{s4}.^^Jaké jsou tvé rozkazy?
 mno_encounter_attack|{reg21?Zaútočte na ně:Připravte se jim čelit}.
 mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?zaútočili:se jim postavili} bez tebe.
 mno_control_allies_menu|Použij svůj vliv, abys velel svým spojencům v boji.
@@ -284,7 +285,7 @@ menu_town|Dorazil jsi do místa {s60}. {s12}{s13}
 mno_town_menu_0|Jdi na nějeké místo.
 mno_town_menu_0_door|Dveře do nějaké lokace.
 mno_town_approach|Navštívit {s1}...
-mno_town_castle|Jdi na {s1}.
+mno_town_castle|Jdi do {s1}.
 mno_town_castle_door|Dveře do hradu.
 mno_town_center|Jdi na hlavní náměstí...
 mno_town_center_door|Dveře do centra města.
@@ -299,10 +300,11 @@ mno_dwarven_warehouse_door|vstup do trpasličího skladu
 mno_talk_to_castle_commander|Navštívit kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
 mno_isengard_underground|Jdi do podzemních jeskyň.
+mno_isengard_underground_door|Jdi do podzemních jeskyní
 mno_tirith_toplevel|Vyšplhej na horní patro.
 mno_erebor_gates|Navštiv Velké Brány.
-mno_town_leave|Opusť...
-mno_town_leave_door|Opusť Území
+mno_town_leave|Odejít...
+mno_town_leave_door|Opustit oblast
 menu_player_initiated_siege_result|Zaútočil jsi na centrum pod vlajkou {s2}.
 menu_disembark|Přeješ si vystoupit?
 mno_disembark_yes|Ano.
@@ -338,12 +340,12 @@ mno_leave_bandit_lair|Odejít prozatím.
 menu_gondor_reinforcement_event|^^^^^ Svítí majáky Gondoru, Minas Tirith žádá o pomoc! ^^ Pánové jižních lénoří nyní pochodují na sever, aby bránili Bílé město před přicházející temnotou.
 mno_gondor_reinforcement_event_close|Zavřít
 menu_gondor_beacons|Podíváte se na {s1}, jeden z výstražných majáků Gondoru, který se používal ke zvýšení poplachu v severním a jižním Gondoru.
-mno_gondor_beacons_close|Opusť...
+mno_gondor_beacons_close|Odejít...
 menu_player_added_to_war_council|^^^^^Posel k tobě dorazil a řekl ti, jako {s24}, {s2} tě požádal aby jsi se stal členem jeho válečné rady. Nyní můžeš navrhovat strategie které mohou ovlivnit průběh války.
 mno_player_added_to_war_council_close|Zavřít
 menu_player_added_to_siege_reports|^^^^^Posel k tobě dorazil a řekl ti že nyní, jako {s24}, budeš obdržovat nahlášeni kdykoli {s2} oblehne město nebo když {s2} města jsou obléhány.
 mno_player_added_to_siege_reports_close|Zavřít
-menu_player_added_to_allow_follow|^^^^^Dorazil posel a řekli ti, že jelikož jsi teď {s24}, budeš moci přikázat {s2} aby tě následovali, maximálně {reg55} následovníků.
+menu_player_added_to_allow_follow|^^^^^Dorazil posel a řekli ti, že jelikož jsi teď {s24}, budeš moci přikázat {s2} aby tě následovali, maximálně {reg55} skupin.
 mno_player_added_to_allow_follow_close|Zavřít
 menu_center_besieged_event|Posel k tobě dorazil a řekl ti, že {s1} je obléhán {s2} z {s3}.
 mno_center_besieged_event_close|Zavřít
@@ -425,7 +427,7 @@ menu_funeral_pyre|Přistupuješ k spáleným zbytkům pohřební hranice {s3} z 
 mno_leave_pyre|Odejít od vatry.
 menu_town_ruins|Když se přiblížíš, vidíš že {s1} je {s2}
 mno_ruin_menu_0|Prozkoumat to místo.
-mno_ruin_leave|Opusť...
+mno_ruin_leave|Odejít...
 menu_premutiny|žádný
 menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
 menu_animal_ambush|ty a tví přátelé jste se ocitli mimo vaši skupinu, když najednou...

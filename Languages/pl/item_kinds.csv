@@ -73,7 +73,7 @@ itm_troll_shield_a|Tarcza Troli
 itm_arrows|Strzały
 itm_gondor_arrows|Gondorskie Strzały
 itm_orc_javelin|Ciężki Oszczep Orków
-itm_khergit_arrows|Haczykowate Strzały
+itm_khergit_arrows|Rohańskie Strzały
 itm_rohan_arrows_2|Rohańskie Strzały
 itm_harad_arrows|Haradzkie Strzały
 itm_corsair_arrows|Korsarskie Strzały
@@ -85,8 +85,6 @@ itm_isengard_arrow|Isengardzkie Strzały
 itm_leather_gloves|Skórzane Rękawice
 itm_mail_mittens|Kolcze Rękawice
 itm_leather_boots|Skórzane Buty
-itm_leather_boots_dark|Buty Jeźdźca
-; itm_splinted_greaves|Splinted Greaves
 itm_white_tunic_a|Cywilne ubranie
 itm_rohan_shoes|Skórzane Buty
 itm_furry_boots|Futrzane Buty
@@ -95,7 +93,6 @@ itm_hood_black|Czarny Kaptur
 itm_hood_green|Zielony Kaptur
 itm_hood_grey|Szary Kaptur
 itm_hood_leather|Skórzany Kaptur
-itm_axe_a|Topór Północy
 itm_axe_b|Północny Brodaty Topór
 itm_axe_c|Topór Północy
 itm_axe_d|Topór Północy
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Miecz z Rivendell
 itm_riv_riding_sword|Miecz Kawaleryjski z Rivendell
 itm_riv_archer_sword|Miecz Zwiadowcy z Rivendell
 itm_riv_spear|Włócznia z Rivendell
-itm_riv_armor_light|Zbroja z Rivendell
-itm_riv_armor_light_inf|Zbroja z Rivendell
-itm_riv_armor_archer|Zbroja z Rivendell
-itm_riv_armor_m_archer|Zbroja z Rivendell
-itm_riv_armor_med|Zbroja z Rivendell
-itm_riv_armor_heavy|Zbroja z Rivendell
+; itm_riv_light|Rivendell Tunic
+; itm_riv_leather|Rivendell Leather Armor
+; itm_riv_foot_mail|Rivendell Mail
+; itm_riv_foot_scale|Rivendell Scale
+; itm_riv_surcoat|Rivendell Surcoat
+; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|Zbroja z Rivendell
 itm_riv_armor_leader|Skórzana Zbroja z Rivendell
 itm_riv_boots|Buty z Rivendell
@@ -193,15 +190,15 @@ itm_gondor_med_greaves|Gondorskie Porządne Nagolenniki
 itm_gondor_heavy_greaves|Gondorskie Kolcze Nogawice
 itm_gondorian_light_helm|Gondorski Hełm Piechura
 itm_gondor_infantry_helm|Gondorski Hełm Piechoty
-itm_gondor_auxila_helm|Gondorski Hełm Auxilii
+; itm_gondor_auxila_helm|Gondor Light Helm
 itm_gondorian_light_helm_b|Gondorski Hełm Łucznika
-itm_gondorian_archer_helm|Gondorski Hełm Strzelca
+; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|Hełm Strzelca Cytadeli
 itm_gondor_leader_helm|Gondorski Wspaniały Hełm
 itm_tower_guard_helm|Hełm Gwardii Cytadeli
 itm_gondor_citadel_knight_helm|Hełm Rycerza Cytadeli
 itm_gondor_squire_helm|Gondorski Hełm Giermka
-itm_gondor_knight_helm|Gondorski Hełm Rycerza
+; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Hełm z Dol Amroth
 itm_swan_knight_helm|Hełm Łabędziego Rycerza
 itm_gondor_lamedon_helm|Lamedoński Hełm
@@ -415,7 +412,7 @@ itm_m_uruk_med_b|Ciężka Kolczuga Uruk
 itm_m_uruk_med_c|Lekka Zbroja Uruk
 itm_m_uruk_heavy_a|Ciężka Zbroja Uruk
 itm_m_uruk_heavy_b|Płytowa Zbroja Uruk
-; itm_m_uruk_heavy_c|Lugburz Platemail
+itm_m_uruk_heavy_c|Lugburz Płytowa Zbroja
 itm_m_cap_armor|Mordorska Zbroja Kapitana
 itm_black_num_armor|Zbroja Czarnych Numenorejczyków
 itm_m_armor_a|Mordorska Zbroja
@@ -465,7 +462,6 @@ itm_dun_helm_a|Dunlandzka Wilcza Czapa
 itm_dun_helm_b|Dunlandzka Jelenia Czapa
 itm_dun_helm_c|Dunlandzki Wspaniały Hełm
 itm_dun_helm_d|Dunlandzki Wspaniały Hełm
-
 itm_dun_helm_e|Dunlandzki Hełm z Porożem
 itm_dun_shield_a|Dunlandzka Tarcza
 itm_dun_shield_b|Dunlandzka Tarcza
@@ -511,19 +507,20 @@ itm_rohirrim_war_greaves|Rohańskie Wojenne Nagolenniki
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
 itm_mirkwood_heavy_scale|Zbroja z Mrocznej Puszczy
-itm_mirkwood_great_spear|Długa Włócznia z Mrocznej Puszczy
-itm_mirkwood_war_spear|Bitewna Włócznia z Mrocznej Puszczy
-itm_mirkwood_short_spear|Włócznia z Mrocznej Puszczy
-itm_mirkwood_knife|Biały Nóż z Mrocznej Puszczy
-; itm_mirkwood_axe|Mirkwood Axe
-; itm_mirkwood_spear_shield_a|Mirkwood Shield
-itm_mirkwood_spear_shield_b|Wojenna Tarcza z Mrocznej Puszczy
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
-itm_mirkwood_helm_a|Hełm Łucznika z Mrocznej Puszczy
-itm_mirkwood_helm_b|Hełm z Mrocznej Puszczy
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
-itm_mirkwood_boots|Buty z Mrocznej Puszczy
+; itm_mirkwood_great_spear|Greenwood Great Spear
+; itm_mirkwood_war_spear|Greenwood War Spear
+; itm_mirkwood_short_spear|Woodelf Spear
+; itm_mirkwood_knife|Woodelf Knife
+; itm_mirkwood_axe|Woodelf Axe
+; itm_mirkwood_spear_shield_a|Woodelf Shield
+; itm_mirkwood_spear_shield_b|Greenwood War Shield
+; itm_mirkwood_spear_shield_c|Woodelf Round Shield
+; itm_mirkwood_helm_a|Woodelf Archer Helm
+; itm_mirkwood_helm_b|Greenwood Helm
+; itm_mirkwood_helm_c|Greenwood Heavy Helm
+; itm_mirkwood_helm_d|Greenwood Royal Helm
+itm_free_mirkwood_leather_greaves|Skórzane Nagolenniki z Mrocznej Puszczy
+; itm_mirkwood_boots|Woodelf Boots
 itm_harad_tunic|Haradzka Szata
 itm_harad_padded|Przeszywanica z Harondoru
 itm_harad_hauberk|Kolczuga z Harondoru
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Haradzka Tarcza Węża
 itm_harad_shield_a|Tarcza z Harondoru
 itm_harad_shield_b|Puklerz z Harondor
 itm_harad_shield_c|Puklerz z Harondor
-
 itm_harad_yellow_shield|Haradzka Tarcza
 itm_desert_boots|Pustynne Buty
 itm_harad_leather_greaves|Haradzkie Nagolenniki
@@ -751,7 +747,6 @@ itm_dwarf_pad_boots|Krasnoludzkie Skórzane Buty
 itm_dwarf_chain_boots|Krasnoludzkie Kolcze Nogawice
 itm_dwarf_scale_boots|Krasnoludzkie Łuskowe Nogawice
 itm_good_mace|Buława
-itm_far_harad_shield_paint|Wiklinowa Tarcza
 itm_mordor_banner|Sztandar Mordoru
 itm_isengard_banner|Sztandar Isengardu
 itm_woodelf_banner|Sztandar Mrocznej Puszczy
@@ -811,7 +806,9 @@ itm_beorn_axe_reward|Niedźwiedzia Pałka
 itm_moria_arrow_reward|Zatrute Strzały z Morii
 itm_khamul_helm|Hełm Khamula
 itm_black_arrows_reward|Czarne Strzały
+; itm_leather_boots_reward|Hunter Boots
 itm_rohan_armor_th|Królewska Zbroja Rohanu
+; itm_wilderness_amulet|Wilderness Amulet
 itm_prisoner_coll_chain|Łańcuchy Więzienne
 itm_witchking_helmet|Złowieszcza Korona Czarnoksięstwa
 itm_lorien_royal_armor|Królewska Zbroja z Lorien

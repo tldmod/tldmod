@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^Minkä puolesta taistelet?
 mno_start_good|uuden aikakauden KOITE
 mno_start_evil|ihmisen HÄMÄRÄ
+mno_faction_intros|Opi eri Keski-Maan ryhmistä
 mno_go_bback|Mene takaisin
 menu_start_phase_2|^^^^^ Keski-Maa. Varjo kasvaa idässä^ ja esiin tulevat pimeät asiat, jotka ovat pitkän aikaa olleet piilossa. ^ Vapaat ihmiset valmistautuvat sotaan, jonka kaltaista ei olla nähty sukupolveen. ^ Ihmiset, haltiat, kääpiöt ja örkit; kaikki haluavat esittää heidän osaansa. ^^ Mitä osaa, kuitenkin jää nähtäväksi...
 mno_go_forth|Mene eteenpäin valitsemaasi polkua...
+mno_change_tld_options|Vaihda TLD asetuksia.
 menu_start_game_3|^^^^^^^^^Valitse sinun käsikirjoitus:
 mno_custom_battle_scenario_1|Yhteenotto, Gondorin ryhmittymä vs Harad
 mno_custom_battle_scenario_12|Valitse ryhmittymät taisteluun
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Maisemien testitaistelu
 mno_troll_battle_scenario|Testi peikkotaistelut
 mno_warg_battle_scenario|Testi villisusitaistelut
 mno_build_your_own_scene|** Rakenna oma taistelupaikkasi TLD:tä varten **
+mno_go_back|Mene takaisin
 menu_tutorial|^^ Tervetuloa taistelualkuoppaaseen Mount & Bladessa. Tässä opit perusteet taistelemisesta ja hiukan joukkojen komentamisesta taistelun aikana.
 mno_tutorial_1|Alkukurssi #1: Perusliike ja aseen valitsiminen. {s1}
 mno_tutorial_2|Alkukurssi #2: Taistelu kilven kanssa. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Valitse Rotusi:
 mno_start_ma|IHMINEN
 mno_start_el|HALTIA
 mno_start_dw|KÄÄPIÖ
-mno_go_back|Mene takaisin
 menu_start_evil|^^^^^^^^^^Ketä luulet Palvelevasi?
 mno_start_eye|Mordorin SAURON, Sormusten herra
 mno_start_hand|Rautapihan SARUMAN, Valkoinen Käsi
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Vaikutusvallan ansaitsemistahti: {s7}
 mno_strat_tweaks_rank_gain_rate|Arvon ansaitsemistahti: {s7}
 mno_strat_tweaks_back|Takaisin asetusvalikkoon.
 menu_camp_action|^^^^^^^^^ Mikä kohde?
-mno_camp_customize_defilement|Kustomoi tärveltyä panssaria
 mno_camp_drink_water|Juo Entin vettä!
 mno_camp_action_4|Takaisin...
 menu_assasins_attack_player_won|Olet onnistuneesti peitonnut salamurhaajat {s2}sta, lähetettynä {s3} puolesta.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Käy sisään kääpiövarastoon
 mno_talk_to_castle_commander|Vieraile {s61} baraakeilla.
 mno_speak_with_elder|Puhu  {s6}n kanssa.
 mno_isengard_underground|Mene maanalaisiin luolastoihin.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Kiipeä ylimmälle tasolle.
 mno_erebor_gates|Vieraile Isoilla porteilla
 mno_town_leave|Poistu...
@@ -343,7 +345,7 @@ mno_gondor_beacons_close|Poistu...
 mno_player_added_to_war_council_close|Sulje
 ; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
 mno_player_added_to_siege_reports_close|Sulje
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Sulje
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 mno_center_besieged_event_close|Sulje

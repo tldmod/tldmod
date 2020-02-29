@@ -248,6 +248,8 @@ qstr_nothing|ничего
 qstr_Good|Хорошо
 qstr_Med|Средне
 qstr_Bad|Плохо
+; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
+; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
 qstr_{reg4}_killed_{reg5}|{reg4} убито, {reg5} ранено, {reg6} сбежали
 qstr_{reg4}_killed_{reg5}_|{reg4} убито, {reg5} ранено
 qstr_{reg4}_killed_{reg5}_r|{reg4} убито, {reg5} сбежали
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|Ваш скакун спотыкается! Кажет
 qstr_Bitten_by_your_own_w|Вас укусил собственный варг!
 qstr_You_weigh_too_much_f|Ваш вес слишком велик для низкорослой лошади!
 qstr_Your_mount_rears_ref|Ваш скакун несётся прочь, не подчиняясь вам!
+; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|Закрепленная настраиваемая камера
 ; qstr_Press_Ctrl_+_Left_/_|Press Ctrl + Left / Ctrl + Right Arrow Keys to Switch Shoulders
+; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
 qstr_Use_+/__to_zoom_in/o|Нажмите + / - чтобы увеличить / уменьшить
 qstr_Use_Up/Down_arrow_ke|Нажмите стрелки вверх / вниз на клавиатуре чтобы наклонить вверх / вниз
 qstr_Fixed_Camera___Right|Закреплённая камера - правое плечо
 qstr_Fixed_Camera___Left_|Закреплённая камера - левое плечо
+; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|Посещая города, поселки и лагеря, вы можете общаться с людьми, гуляющими вокруг. Члены разных фракций могут рассказывать разные вещи: одни позволят вам самим задать вопрос, другие поделятся интересными слухами. Они могут дать вам лучшее понимание их культуры и фракции, могут помочь найти секретные локации или поделятся советами и хитростями для путешествий по Диким землям и сражений в Войне Кольца.
 qstr_Cannot_leave_now.|Сейчас нельзя уйти.
 qstr_You_have_found_the_l|Вы обнаружили местную кузницу... (+50 ХР)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|Вы напали на отряд {s1}.
 qstr_The_battle_against_t|Продолжается битва с отрядом {s1}.
 ; qstr_There_are_{reg39}_al|There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points.
 ; qstr_Having_a_small_party|Having a small party has its benefits...You and your troops hide from the enemy for a few hours to be sure that you are not seen.
-; qstr_Your_ability_to_surv|Your ability to survive in harsh environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
+; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
 ; qstr_{reg4}_will_be_lost.|{reg4} will be lost.
 qstr_{s13}_asked_you_to_r|{s13} попросил вас прибыть к нему, имея при себе не менее {reg13} воинов.
 qstr_{s13}_ordered_you_to|{s13} приказал вам присоединиться к штурму твердыни {s14}.
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s4} побеждён вами, и {s3} стал св�
 ; qstr_Even_though_there_we|Even though there were no allies to witness your victory, your troops nevertheless celebrate your triumph.
 qstr_{s1}_of_{s3}_managed|{s1} из державы {s3} сумел сбежать.
 qstr_Prisoners_rescued_so|Освобождённые пленники: {reg1}
-qstr_Victory_comment._Pla|Комментарий к победе. Игрок был один.
-qstr_Ordinary_victory_com|Обычный комментарий к победе. Воины игрока составили не менее 40% от сил союзников.
-qstr_Player_participation|Комментарий к участию игрока в битве. Изначальный показатель силы врага был не менее 1000.
-qstr_No_victory_comment._|Без комментария к битве. Битва была мала, а воины игрока составили менее 40% от сил союзников.
 ; qstr_{reg1}_kills_of_{s1}|{reg1} kills of {s1} faction troops counted towards Oath. TOTAL Kills: {reg0}
-qstr_Some_of_your_tendons|Вы повредили сухожилие в битве. Вы теряете 1 очко силы.
-qstr_You_took_a_nasty_wou|Вы получили серьёзную рану, из-за которой хромаете даже после того, как она зажила. Вы теряете 1 очко ловкости.
-qstr_You_have_trouble_thi|Вы плохо соображаете после битвы, возможно, потому что получили удар по голове и теперь головные боли отравляют вашу жизнь. Вы теряете 1 очко интеллекта. 
 qstr_Perhaps_I_m_getting_|Возможно, я становлюсь неудачником...
 qstr_Retirement_is_starti|Уход на покой прельщает всё больше и больше.
 qstr_No_matter!_I_will_pe|Не имеет значения! Я буду стойко идти к победе!
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|Как работает магнит?
 qstr_Um..._by_enchanting_|Эм... притягивает железо?
 qstr_Magnets_are_made_of_|Магниты делаются из металла, добываемого из земли. Они обладают магнетизмом, потому что металл всё ещё содержит внутри силу притяжения.
 qstr_i_wont_a_bonerlrord_|йа хачу играть в эты мод на банерлорде! Сичас!!11!
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Install_TLD_in_your_|Установите TLD в папку Modules Баннерлорда, добавьте строчку 'compatible with bannerlord = 1' в файл module.ini - и вы сможете сыграть в этот мод на Баннерлорде!
 qstr_dis_mod_takes_2_long|этыт мод слишкам долга делают! ацтой!!11!
 qstr_Well_there_s_a_lot_o|Ну, в моде много новой графики и предметов - полагаю, всё это требует времени.
 qstr_It_has_been_recently|Мод уже вышел. Если вы потеряли ссылку, то можете скачать его на сайте lemonparty.org.

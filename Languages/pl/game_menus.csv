@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^O co walczysz?
 mno_start_good|ŚWIT nowej Ery
 mno_start_evil|ZMIERZCH Ludzi
+mno_faction_intros|Dowiedz się o różnych frakcjach Śródziemia
 mno_go_bback|Wróć
 menu_start_phase_2|^^^^^Śródziemie. Cień rośnie na Wschodzie, a mroczne stwory, dawno ukryte, pojawiają się ponownie. ^Wolni ludzie szykują się do wojny, wojny której nie widziano od wieków. ^Ludzie, Ely, Krasnoludy i Orkowie; wszyscy odegrają swoją rolę.^^Jaką, to się okaże... 
 mno_go_forth|Podążaj naprzód obraną przez Ciebie ścieżką...
+mno_change_tld_options|Zmień opcje TLD.
 menu_start_game_3|^^^^^^^^Wybierz scenariusz:
 mno_custom_battle_scenario_1|            Potyczka, Gondor vs Harad
 mno_custom_battle_scenario_12|Wybierz frakcje do bitwy
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Test bitwy krajobrazowej
 mno_troll_battle_scenario|Test bitew troli.
 mno_warg_battle_scenario|Test walki wargów
 mno_build_your_own_scene|** Zbuduj własną scenę dla TLD **
+mno_go_back|Wróć
 menu_tutorial|^^Witaj w samouczku walki. Tutaj nauczysz się podstaw walki oraz dowodzenia jednostkami w czasie bitwy.
 mno_tutorial_1|Tutorial #1: Podstawowe ruchy i wybór broni. {s1}
 mno_tutorial_2|Tutorial #2:Walka z tarczą. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Wybierz rasę:
 mno_start_ma|CZŁOWIEK
 mno_start_el|ELF
 mno_start_dw|KRASNOLUD 
-mno_go_back|Wróć
 menu_start_evil|^^^^^^^^^^Komu Służysz?
 mno_start_eye|Sauron z Mordoru, Władca Pierścieni
 mno_start_hand|Saruman z Isengardu, Biała Dłoń
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Szybkość zdobywania wpływów : {s7} Norm
 mno_strat_tweaks_rank_gain_rate|Szybkość zdobywania rangi : {s7} Normal-Normalna Doubled-Podwójna Tripled-Potrójna Quadrupled-Poczwórna
 mno_strat_tweaks_back|Wróć do menu ulepszeń.
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
-mno_camp_customize_defilement|Dostosuj Zplugawiony Pancerz
 mno_camp_drink_water|Wypić Wodę Entów!
 mno_camp_action_4|Wróć.
 menu_assasins_attack_player_won|Udało ci się pokonać zabójców {s2}, których nasłał {s3}.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Wejdź do magazynu Krasnoludów
 mno_talk_to_castle_commander|Odwiedź baraki.
 mno_speak_with_elder|Rozmawiaj z miejscowymi władzami.
 mno_isengard_underground|Udaj się do podziemnych jaskini.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
 mno_erebor_gates|Odwiedź Wielką Bramę
 mno_town_leave|Odejdź...
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^Przyszedł i poinformował, że teraz, jak
 mno_player_added_to_war_council_close|Zamknij
 menu_player_added_to_siege_reports|^^^^A powiadomił Cię, że teraz, jako {s24}, będziesz otrzymywać raporty, gdy {s2} oblężymy centrum lub gdy centra {s2} będą oblężone.
 mno_player_added_to_siege_reports_close|Zamknij
-menu_player_added_to_allow_follow|^^^^^Przyszedł i poinformował, że teraz, jako {s24}, będziesz miał możliwość podążania za Tobą poleceniem {s2}, łącznie dla maksymalnej liczby naśladowców {s55}
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Zamknij
 menu_center_besieged_event|^^^^Wiadomość informująca, że {s1} było oblężone przez {s2} z {s3}.
 mno_center_besieged_event_close|Zamknij

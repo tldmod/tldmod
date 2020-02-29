@@ -1,9 +1,11 @@
 menu_start_game_1|Pour quoi vous battrez-vous?
 mno_start_good|L'AUBE d'une nouvelle ère
 mno_start_evil|Le CRÉPUSCULE des Hommes
+mno_faction_intros|En savoir plus sur les différentes factions de la Terre du Milieu
 mno_go_bback|Retour
 menu_start_phase_2|La Terre du Milieu. ^Une Ombre grandit à l'Est et de sombres créatures remontent des profondeurs de la terre. ^ Les Peuples libres se préparent à la guerre, une guerre telle qu'il n'en a pas été vue depuis le précédent Âge. ^ les Hommes, les Elfes, les Nains et les Orques ; tous joueront leur rôle. ^^ Quel rôle, cependant, cela reste à voir...
 mno_go_forth|Suivez la voie que vous avez choisie...
+mno_change_tld_options|Changer les options de TLD.
 menu_start_game_3|^^^^^^^^Choisissez votre scénario :
 mno_custom_battle_scenario_1|Embuscade, Gondor contre Harad
 mno_custom_battle_scenario_12|Choisissez les factions pour la bataille
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Bataille de test de scène
 mno_troll_battle_scenario|Batailles de test de Trolls
 mno_warg_battle_scenario|Batailles de test de Wargs
 mno_build_your_own_scene|** Construisez votre propre scène pour TLD **
+mno_go_back|Retour
 menu_tutorial|^^Bienvenue au Tutoriel de Combat de Mount & Blade. Ici vous apprendrez les bases du combat ainsi qu'un aperçu du commandement de troupes sur le champ de bataille. 
 mno_tutorial_1|Tutoriel #1: Mouvements Basiques et sélection d'arme. {s1}
 mno_tutorial_2|Tutoriel #2: Combattre avec bouclier {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Choisissez votre race :
 mno_start_ma|Homme
 mno_start_el|Elfe
 mno_start_dw|Nain
-mno_go_back|Retour
 menu_start_evil|Qui sera votre maitre?
 mno_start_eye|Sauron
 mno_start_hand|Saroumane
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Taux de gain d'influence: {s7}
 mno_strat_tweaks_rank_gain_rate|Taux de gain de points de rang: {s7}
 mno_strat_tweaks_back|Retour au menu des options.
 menu_camp_action|^^^^^^^^^ Quel objet ?
-mno_camp_customize_defilement|Personnaliser armure souillée
 mno_camp_drink_water|Boire de l'Eau des Ents !
 mno_camp_action_4|Retour.
 menu_assasins_attack_player_won|Vous avez vaincu avec succès les assassins de {s2}, envoyé par {s3}.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Entrer dans l'entrepôt des nains.
 mno_talk_to_castle_commander|Se rendre aux baraquements {s61}.
 mno_speak_with_elder|Parler avec le {s6}.
 mno_isengard_underground|Aller vers les cavernes souterraines.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Grimper au dernier niveau.
 mno_erebor_gates|Visiter les Grandes Portes.
 mno_town_leave|Partir
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^Un messager est arrivé et vous informe qu
 mno_player_added_to_war_council_close|Fermer
 menu_player_added_to_siege_reports|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, vous recevrez des rapports si {s2} assiège une fief ou quand les fiefs de {s2} sont assiégés.
 mno_player_added_to_siege_reports_close|Fermer
-menu_player_added_to_allow_follow|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, vous êtes autorisé à commander {s2} de vous suivre, pour un total de {reg55} compagnons maximum.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Fermer
 menu_center_besieged_event|^^^^^Un messager est arrivé et vous informe que {s1} est assiégé par {s2} de {s3}.
 mno_center_besieged_event_close|Fermer

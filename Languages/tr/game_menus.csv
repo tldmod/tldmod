@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
 mno_start_good|Yeni bir çagın ŞAFAGI
 mno_start_evil|İnsanların Alacakaranlıgı
+mno_faction_intros|Orta Dünya'nın farklı taraflarını ögrenin
 mno_go_bback|Geri Dön
 menu_start_phase_2|^^^^^ Orta Dünya. Doguda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çagdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtigin yolda ilerle...
+mno_change_tld_options|TLD ayarını degiştir
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Çatışma, Gondor, Harad'a karşı
 mno_custom_battle_scenario_12|Savaş için tarafları seç
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Manzara Test Savaşı
 mno_troll_battle_scenario|Troll savaşını test et
 mno_warg_battle_scenario|Warg savaşını test et
 mno_build_your_own_scene|**TLD için kendi Sahneni Oluştur**
+mno_go_back|Geri dön
 menu_tutorial|^^At & Kılıç Savaş Ögreticisine hoş geldin. Burada nasıl savaşacagından tut, birliklerini savaş alanında nasıl yönlendirecegine kadar ögreneceksin.
 mno_tutorial_1|Ögretici #1: Temel Hareketler ve silah seçimi. {s1}
 mno_tutorial_2|Tutorial #2: Kalkan ile birlikte dövüşmek. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Irkını seç
 mno_start_ma|İNSAN
 mno_start_el|ELF
 mno_start_dw|CÜCE
-mno_go_back|Geri dön
 menu_start_evil|^^^^^^^^^^Kime hizmet ediyorsun?
 mno_start_eye|Mordor'dan SAURON, Yüzüklerin Efendisi
 mno_start_hand|Isengard'dan SARUMAN, Ak El
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Nüfuz kazanım oranı: {s7}
 mno_strat_tweaks_rank_gain_rate|Rütbe kazanım oranı: {s7}
 mno_strat_tweaks_back|Ayarlar menüsüne dön.
 menu_camp_action|^^^^^^^^ Hangi Eşya?
-mno_camp_customize_defilement|Bozulmuş zırhı kişileştir
 mno_camp_drink_water|Ent Suyundan İç !
 mno_camp_action_4|Geri.
 menu_assasins_attack_player_won|{s3} tarafından gönderilen {s2} suikastçilerini başarıyla alt ettin.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Cüce erzak deposuna gir
 mno_talk_to_castle_commander|{s61} kışlasını ziyaret et.
 mno_speak_with_elder| {s6} ile konuş
 mno_isengard_underground|Yeraltı magaralarına git.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Zirveye tırman.
 mno_erebor_gates|Büyük Kapıları ziyaret et.
 mno_town_leave|Ayrıl...
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^Bir ulak geldi ve şuanda sana {s24} olara
 mno_player_added_to_war_council_close|Kapat
 menu_player_added_to_siege_reports|^^^^^Bir ulak geldi ve şuanda {s24} olarak, her ne zaman {s2} bir merkezi kuşattıgında veya {s2}'nin merkezleri kuşatıldıgında sana bir rapor gönderilecegini söylüyor.
 mno_player_added_to_siege_reports_close|Kapat
-menu_player_added_to_allow_follow|^^^^^Bir ulak geldi ve şuanda bir {s24} olarak bir {s2}'yi maksimum takipçi sayısı {reg55} olarak seni takip etmesini emredebilecegini duyurdu.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Kapat
 menu_center_besieged_event|^^^^^{s1}'in {s3}'ten {s2} tarafından kuşatıldıgını bildiren bir ulak geldi.
 mno_center_besieged_event_close|Kapat

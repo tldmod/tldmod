@@ -1029,6 +1029,7 @@ dlga_enemy_defeated:close_window|啊！我最恨这个了。
 dlga_party_relieved:close_window|谢谢你帮我们对抗那群杂种。
 dlga_start:battle_reason_stated|我会把你的头骨当碗使的！
 dlga_member_chat_00:close_window.1|^^咆哮！^^
+; dlga_member_chat_00:close_window.2|^^Grrrrr.....^^
 dlga_member_chat_00:regular_member_talk|听候差遣！指挥官。
 dlga_regular_member_talk:view_regular_char_requested|给我说说你都会什么。
 dlga_view_regular_char_requested:do_regular_member_view_char|好的，指挥官。这就是我的全部信息了。

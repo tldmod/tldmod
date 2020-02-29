@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^你 為 哪 一 方 而 戰 ？ 
 mno_start_good|新 紀 元 的 黎 明 
 mno_start_evil|人 類 的 黃 昏 
+mno_faction_intros|了 解 中 土 世 界 不 同 的 派 系
 mno_go_bback|後 退 
 menu_start_phase_2|^^^^^ 中 土 世 界。 黑 暗 的 陰 影 正 在 東 方 蔓 延 ·· ^潛 伏 了 近 一 個 紀 元 的 邪 惡 勢 力 重 現 世 間 。 ^中 土 的 自 由 之 人 類 是 否 可 以 再 一 次 戰 勝 黑 暗 。 ^人 類 、 精 靈 、 矮 人 和 獸 人 ， 各 種 勢 力 在 這 里 繼 續 角 逐 ^^現 在， 善 良 與 邪 惡 的 戰 爭 即 將 拉 開 帷 幕 ... 
 mno_go_forth|往你選擇的道路前進
+mno_change_tld_options|修 改 TLD 選 項
 menu_start_game_3|^^^^^^^^選 擇 你 的 戰 役 ： 
 mno_custom_battle_scenario_1|小 規 模 戰 役 ， 剛 鐸 vs哈 拉 德 
 mno_custom_battle_scenario_12|選 擇 戰 鬥 派 系 
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|風 景 測 試 戰 鬥
 mno_troll_battle_scenario|測 試 食 人 妖 戰 鬥 
 mno_warg_battle_scenario|測 試 坐 狼 戰 鬥 
 mno_build_your_own_scene|** 建 造 你 自 己 的 TLD場 景 **
+mno_go_back|後 退 
 menu_tutorial|^^ 歡 迎 來 到 騎 馬 與 砍 殺 的 戰 鬥 教 學。在 這 裡 你 會 學 習 到 戰 鬥 的 基 本，和 戰 場 指 揮 部 隊 的 概 略。
 mno_tutorial_1|教 學 #1: 基 本 移 動 和 武 器 選 項 {s1}
 mno_tutorial_2|教 學 #2: 持 盾 戰 鬥 {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^選 擇 你 的 種 族 ：
 mno_start_ma|人 類 
 mno_start_el|精 靈 
 mno_start_dw|矮 人 
-mno_go_back|後 退 
 menu_start_evil|^^^^^^^^^^你 要 效 忠 與 誰 ？ 
 mno_start_eye|魔 多 的 索 倫 ， 魔 戒 之 王 
 mno_start_hand|艾 辛 格 的 薩 魯 曼 ， 白 袍 巫 師 
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|影 響 力 增 加 率 ： {s7}
 mno_strat_tweaks_rank_gain_rate|等 級 增 加 率 ： {s7}
 mno_strat_tweaks_back|返 回 調 整 選 單 
 menu_camp_action|^^^^^^^^^ 哪 件 事 ？ 
-mno_camp_customize_defilement|自 訂 汙 損 裝 甲 
 mno_camp_drink_water|喝 下 樹 人 之 水 ！ 
 mno_camp_action_4|後 退 
 menu_assasins_attack_player_won|你 成 功 擊 敗 從 {s2}來 的 刺 客 ， {s3}的 手 下。 
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|進 入 矮 人 倉 庫
 mno_talk_to_castle_commander|訪 問 {s61}兵 營 
 mno_speak_with_elder|與 {s6}談 話 
 mno_isengard_underground|前 往 地 底 洞 穴 
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|爬 到 最 上 層 
 mno_erebor_gates|前 往 榮 耀 大 門 。
 mno_town_leave|離 開 ...
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^一 位 信 差 抵 達 並 告 訴 你，
 mno_player_added_to_war_council_close|關 閉
 menu_player_added_to_siege_reports|^^^^^一 位 信 差 抵 達 並 告 訴 你， 作 為 {s24}， 每 當 {s2} 攻 擊 一 個 中 心 或 {s2} 的 中 心 受 到 攻 擊 時，你 將 收 到 報 告。
 mno_player_added_to_siege_reports_close|關 閉
-menu_player_added_to_allow_follow|^^^^^一 位 信 差 抵 達 並 告 訴 你， 作 為 {s24}，你 將 可 以 命 令 {s2} 跟 隨 你， 跟 隨 者 的 上 限 是 {reg55} 人
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|關 閉
 menu_center_besieged_event|^^^^^一 位 信 差 抵 達 並 報 告 {s1} 正 被 {s3} 的 {s2} 攻 打
 mno_center_besieged_event_close|關 閉

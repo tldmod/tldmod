@@ -77,11 +77,11 @@ qstr_Faction_Side:^^Campa|Strana frakce:^^Obtížnost kampaně:^^Hlavní město:
 qstr_Campaign_Difficulty_|Obtížnost hlavní kampaně se odvíjí od síly základní frakce, nepřátel v dané oblasti, vývojového strom frakce a vybavení jednotek.
 qstr_Rallies:|Armády:
 qstr_View_Keybinds__Press|Klávesové zkratky (Stiskni Insert)
-qstr_What_do_you_fight_fo|Zač bojuješ?
+qstr_What_do_you_fight_fo|^^^^^^^^^^Za co bojuješ?
 qstr_Go_Back...|Jdi zpět...
 qstr_Learn_about_the_diff|Nauč se o různých frakcích Středozemě
-qstr_The_DAWN_of_a_New_Er|ÚSVIT nového věku
-qstr_The_TWILIGHT_of_Man|SOUMRAK lidstva
+qstr_The_DAWN_of_a_New_Er|za ÚSVIT nového věku
+qstr_The_TWILIGHT_of_Man|za SOUMRAK lidstva
 qstr_Select_your_Race?|Zvol si svou rasu?
 qstr_Man|Člověk
 qstr_Elf|Elf
@@ -158,8 +158,8 @@ qstr_None|Nic.
 qstr_Army_rotates_to_face|Armáda se otáčí aby byla čelem k centru nepřátel:
 qstr_Prevent_AI_from_takin|Zakázat UI zaujmout obranné postavení:
 qstr_AI_Controls_Troops_W|Ovládání UI, když je hráč KO:
-qstr_You_gained_{reg0}_Re|Dostal jsi {reg0} Resource Pointů z {reg0}.
-qstr_You_lost_{reg0}_Reso|Ztratil jsi {reg0} Resource Pointů z {reg0}.
+qstr_You_gained_{reg0}_Re|Dostal jsi {reg0} Resource Pointů k frakci {s0}.
+qstr_You_lost_{reg0}_Reso|Ztratil jsi {reg0} Resource Pointů u frakce {s0}.
 qstr_{s24}:|{s24}:
 qstr_Great_Hope_of_{s5}|Velká Naděje {s5}u
 qstr_Hope_of_{s5}|Naděje {s5}u
@@ -180,7 +180,7 @@ qstr_Useful_Tool_of_{s5}|Užitečný nástroj od {s5}
 qstr_Servant_of_{s5}|Sluha  {s5}
 qstr_Unknown_to_{s5}|Známi pre {s5}
 qstr_You_have_been_{reg1?|Byl jsi {reg1?povysen:degradovan} na {s24} ({reg0})!
-qstr_You_{reg1?earned:los|{reg1?Ziskavas:Ztracis} {reg11} bodů Hodnosti {reg12?and {reg12} Vlivu :}u {s11}.
+qstr_You_{reg1?earned:los|{reg1?Ziskavas:Ztracis} {reg11} bodů Hodnosti {reg12?and {reg12} Vlivu :}s {s11}.
 qstr_You_spent_{reg10}_of|Utratil jsi {reg10} Vlivu u {s1}, zbyva {reg11}.
 qstr_Troop_upkeep:|Náklady Vojáků:
 qstr_{s11}_and_{s10}|{s11} a {s10}
@@ -204,7 +204,7 @@ qstr_+1_to_Riding_Skill|+1 k Jezdecké Dovednosti
 qstr_during_battles|během bitev
 qstr_+1_to_Pathfinding|+1 k Hledání cest
 qstr_+1_to_Athletics|+1 k Atletice
-qstr_Use_from|Použít formaci
+qstr_Use_from|Použít předmět
 qstr_Action_Menu|Menu Akce
 qstr_+1_to_First_Aid|+1 k První Pomoci
 qstr_+1_to_Weapon_Mastery|+1 k Mistrovství Zbraní
@@ -215,7 +215,7 @@ qstr_+1_to_Strength|+1 k Síle
 qstr_+1_to_Agility|+1 k Obratnosti
 qstr_+1_to_Leadership|+1 k Vedení
 qstr_+1_to_Wildcraft|+1 to Zálesáctví
-qstr_+1_to_Power_Draw|+1 k Síle Nápřahu
+qstr_+1_to_Power_Draw|+1 k Síle Napnutí
 qstr_The_record_of_Balin_|Záznam Balinovy ztracené expedice.
 qstr_Who_might_be_interes|Kdo by se o to mohl zajímat?
 qstr_Turns_nature_to_your|Obrátí přírodu na tvou stranu (ovlivňuje schopnost Zálesáctví)
@@ -248,6 +248,8 @@ qstr_nothing|nic
 qstr_Good|Dobre
 qstr_Med|Neutrální
 qstr_Bad|Zle
+qstr_{s77}_received_{reg8|{s77} obdržel {reg84} bonusových XP
+qstr_You_gained_{reg84}_i|Získal jsi {reg84} inteligence-bonus XP
 qstr_{reg4}_killed_{reg5}|{reg4} zabito, {reg5} zraneno, {reg6} uprchlo
 qstr_{reg4}_killed_{reg5}_|{reg4} zabito, {reg5} zraneno
 qstr_{reg4}_killed_{reg5}_r|{reg4} zabito, {reg5} uprchlo
@@ -431,7 +433,7 @@ qstr_no_holdings|žádné državy
 qstr_{s57}_and_{s58}|{s57} a {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?She:He}
-qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} je vladař {s56}.^:{s54} slouží {s55} z {s56}.^}}{reg9?{reg3?Ona:On} je {reg3?lady:lord} z {s58}.:}{s59}{reg10?^{reg3?Ona:On} padl na bojišti!:}
+qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} je vůdce frakce {s56}.^:{s54} slouží {s55} z {s56}.^}}{reg9?{reg3?Jí:Jemu} {reg3?patří:patří} {s58}.:}{s59}{reg10?^{reg3?Ona:On} padl na bojišti!:}
 qstr_The_last_time_you_sa|Když jsi {reg1?jí:ho} naposledy viděl, {s1}
 qstr_The_last_time_you_he|Když jsi o {reg1?ní:něm} naposledy slyšel, {s1}
 qstr_The_{s50}|{s50}
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|Tvůj kůň zakopl! Vypadá že je chromý.
 qstr_Bitten_by_your_own_w|Kousl tě vlastní vrk!
 qstr_You_weigh_too_much_f|Vážíš příliš mnoho pro poníka!
 qstr_Your_mount_rears_ref|Tvůj kůň se plaší, odmítá poslouchat tvé příkazy!
+qstr_Cannot_Change_Camera|Nelze změnit mód kamery když jsi v pohledu první osoby.
+qstr_Switch_Back_to_3rd_P|Přepnout zpět na pohled třetí osoby na cyklickou kameru.
 qstr_Fixed_Custom_Camera|Fixní vlastní kamera
 qstr_Press_Ctrl_+_Left_/_|Stiskni Ctrl + Levou/ Ctrl + Pravou šipku k přehození ramen
+; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
 qstr_Use_+/__to_zoom_in/o|Použij +/- k přiblížení/oddálení
 qstr_Use_Up/Down_arrow_ke|Použij šipku Nahoru/Dolů k naklonění nahoru/dolů
 qstr_Fixed_Camera___Right|Fixní kamera - Pravé rameno
 qstr_Fixed_Camera___Left_|Fixní kamera - Levé rameno
+; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|Když navštěvuješ města, osady a tábory můžeš mluvit s lidmi chodícími okolo. Členové různých frakcí ti řeknou různé věci - někteří ti svěří své myšlenky, jiní ti poví nějaké fámy. Oba vám mohou pouze poskytnout lepší porozumění kultuře a frakci dané osoby nebo by mohli poskytnout stopy k nalezení tajných míst, tipů a triků pro cestování divočinou a bojování ve válce o Prsten.
 qstr_Cannot_leave_now.|Teď nemůžeš odejít.
 qstr_You_have_found_the_l|Našel jsi místního kováře... (+{reg3} XP)
@@ -836,8 +842,8 @@ qstr_You_wish_old_man_my_|Přál by sis staříku, aby můj vzhled přes rameno 
 qstr_You_should_really_se|Opravdu bys měl vidět Facebookové fotky Správce Denetora, je skvělý!
 qstr_Press_Space_to_conti|Stiskni MEZERNÍK k pokračování...
 qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} do příštího povýšení^
-qstr_Influence:^_{reg11}_|Vliv:^ {reg11} (with {s16})^
-qstr_Resource_Points:^_{r|Resource Pointy:^ {reg12} (in {s16})^
+qstr_Influence:^_{reg11}_|Vliv:^ {reg11} ({s16})^
+qstr_Resource_Points:^_{r|Resource Pointy:^ {reg12} ({s16})^
 qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} do příštího povýšení^
 qstr_{s13}_{reg11}__with_|{s13} {reg11} ({s16})^
 qstr_{s15}_{reg12}__in_{s|{s15} {reg12} ({s16})^
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|Útočíš na skupinu {s1}.
 qstr_The_battle_against_t|Bitva proti skupině {s1} pokračuje.
 qstr_There_are_{reg39}_al|V této bitvě je {reg39} spojeneckých velitelů. Můžeš velet jim a jejich jednotkám za {reg40} bodů vlivu.
 qstr_Having_a_small_party|Mít malou skupinu má své výhody...Ty a tví vojáci jste se schovali před nepřáteli na pár hodin aby bylo jisté že tě neviděli.
-qstr_Your_ability_to_surv|Tvá schopnost přežití v divočině ti pomohla najít bezpečné místo pro úkryt. (Tvá dovednost Zálesáctví ti dovolila skrýt tebe a  {reg1} vojáků)
+; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
 qstr_{reg4}_will_be_lost.|{reg4} bude ztraceno.
 qstr_{s13}_asked_you_to_r|{s13} tě požádal aby se mu hlásil s alespoň {reg13} jednotkami.
 qstr_{s13}_ordered_you_to|{s13} ti nařídil aby ses připojil k útoku proti {s14}.
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3} byl svědkem tvého vítězství proti {s4}.
 qstr_Even_though_there_we|Přesto že tvému vítězství nepřihlížel nikdo z tvých spojenců, tví vojáci oslavují tvůj triumf.
 qstr_{s1}_of_{s3}_managed|{s1} z {s3} uprchl.
 qstr_Prisoners_rescued_so|Osvobozených vězňů: {reg1}
-; qstr_Victory_comment._Pla|Victory comment. Player was alone
-; qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
-; qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
-; qstr_No_victory_comment._|No victory comment. The battle was small, and the player provided less than 40 percent of allied strength
 qstr_{reg1}_kills_of_{s1}|{reg1} zabití vojáků frakce {s1} započítáno do Přísahy. CELKOVĚ zabito: {reg0}
-qstr_Some_of_your_tendons|Některé z tvých šlach byly poraněny v bitvě. Ztrácíš 1 bod síly.
-qstr_You_took_a_nasty_wou|Utržil jsi ošklivou ránu, která ti způsobí, že budeš kulhat i po uzdravení. Ztrácíš 1 bod obratnosti.
-qstr_You_have_trouble_thi|Máš problém normálně uvažovat, pravděpodobně po tvrdém úderu do hlavu a trápí tě časté bolesti hlavy. Tvá inteligence je snížena o 1 bod.
 qstr_Perhaps_I_m_getting_|Možná začínám mít smůlu...
 qstr_Retirement_is_starti|Důchod začíná znít lépe a lépe.
 qstr_No_matter!_I_will_pe|Bez ohledu na to, vytrvám!
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|Jak fungují magnety?
 ; qstr_Um..._by_enchanting_|Um... by enchanting iron?
 ; qstr_Magnets_are_made_of_|Magnets are made of metal, which is mined from the ground. They are magnetic because the metal still contains pieces of gravity inside it.
 ; qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
 ; qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
 ; qstr_Well_there_s_a_lot_o|Well, there's a lot of new graphics and stuff, I guess that takes time.
 ; qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.
@@ -1298,10 +1296,10 @@ qstr_Gundabad|Gundabad
 ; qstr_I_am_sorry._I_cannot|I am sorry. I cannot attend to you as a {s25} as there are more pressing issues. {s2}
 ; qstr_Yes_I_am_and_I_can_h|Yes, I am, and I can help you for a price.
 ; qstr_You_heard_right_and_|You heard right, and yes, I can aid you.
-; qstr__Costs_1000_Resource|(Costs 1000 Resource, 5 Influence)
+qstr__Costs_1000_Resource|(Stojí 1000 Resource, 5 bodů vlivu)
 ; qstr_I_can_see_that._I_ll|I can see that. I'll have my men stand guard while I deal with you. It will take some time. {s2}
 ; qstr_Yes_I_see_that._I_ca|Yes, I see that. I can do tend to you yes, but it will take me away from important tasks. {s2}
-; qstr__Costs_1500_Resource|(Costs 1500 Resource, 10 Influence)
+qstr__Costs_1500_Resource|(Stojí 1500 Resource, 10 bodů vlivu)
 ; qstr_I_ll_have_my_persona|I'll have my personal healers deal with you. They are the best. Tell me when you want them here. {s2}
 ; qstr_I_ll_have_my_personal|I'll have my personal healers tend to your men. They are the best at what they do. Let me know when you need them. {s2}
 ; qstr_I_ll_have_them_here_|I'll have them here shortly.

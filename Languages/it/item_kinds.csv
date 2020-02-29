@@ -73,7 +73,7 @@ itm_troll_shield_a|Scudo di Troll
 itm_arrows|Frecce
 itm_gondor_arrows|Frecce di Gondor
 itm_orc_javelin|Giavellotto Pesante Orchesco
-itm_khergit_arrows|Frecce seghettate
+itm_khergit_arrows|Frecce Rohirrim
 itm_rohan_arrows_2|Frecce Rohirrim
 itm_harad_arrows|Frecce Rohirrim
 itm_corsair_arrows|Frecce corsare
@@ -85,8 +85,6 @@ itm_isengard_arrow|Frecce di Isengard
 itm_leather_gloves|Guanti in cuoio
 itm_mail_mittens|Guanti in maglia
 itm_leather_boots|Stivali di cuoio
-itm_leather_boots_dark|Stivali da Cavallerizzo
-itm_splinted_greaves|Gambali Steccati
 itm_white_tunic_a|Vesti Civili
 itm_rohan_shoes|Scarpe di Pelle
 itm_furry_boots|Stivali di Pelliccia
@@ -95,7 +93,6 @@ itm_hood_black|Cappuccio Nero
 itm_hood_green|Cappuccio Verde
 itm_hood_grey|Cappuccio Grigio
 itm_hood_leather|Cappuccio di Cuoio
-itm_axe_a|Ascia Nordica
 itm_axe_b|Ascia Barbuta Nordica
 itm_axe_c|Ascia Nordica
 itm_axe_d|Ascia Nordica
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Spada di Gran Burrone
 itm_riv_riding_sword|Spada da cavalleria di Gran Burrone
 itm_riv_archer_sword|Spada da Arciere di Gran Burrone
 itm_riv_spear|Lancia di Gran Burrone
-itm_riv_armor_light|Armatura di Gran Burrone
-itm_riv_armor_light_inf|Armatura di Gran Burrone
-itm_riv_armor_archer|Armatura di Gran Burrone
-itm_riv_armor_m_archer|Armatura di Gran Burrone
-itm_riv_armor_med|Armatura di Gran Burrone
-itm_riv_armor_heavy|Armatura di Gran Burrone
+itm_riv_light|Tunica di Gran Burrone
+itm_riv_leather|Armatura di Cuoio di Gran Burrone
+itm_riv_foot_mail|Maglia di Gran Burrone
+itm_riv_foot_scale|Armatura a Scaglie di Gran Burrone
+itm_riv_surcoat|Sorcotto di Gran Burrone
+itm_riv_knight|Armatura da Cavaliere di Gran Burrone
 itm_riv_armor_h_archer|Armatura di Gran Burrone
 itm_riv_armor_leader|Armatura nobile di Gran Burrone
 itm_riv_boots|Stivali di Gran Burrone
@@ -193,15 +190,15 @@ itm_gondor_med_greaves|Gambali Medi Gondoriani
 itm_gondor_heavy_greaves|Gambali di Maglia Gondoriani
 itm_gondorian_light_helm|Elmo da fante di Gondor
 itm_gondor_infantry_helm|Elmo da fante di Gondor
-itm_gondor_auxila_helm|Elmo ausiliare gondoriano
+itm_gondor_auxila_helm|Elmo Leggero Gondoriano
 itm_gondorian_light_helm_b|Elmo da arciere novizio gondoriano
-itm_gondorian_archer_helm|Elmo da arciere gondoriano
+itm_gondorian_archer_helm|Elmo da Arciere Gondoriano
 itm_tower_archer_helm|Elmo da arciere della torre
 itm_gondor_leader_helm|Alto elmo di Gondor
 itm_tower_guard_helm|Elmo da guardia della torre
 itm_gondor_citadel_knight_helm|Elmo da cavaliere della cittadella
 itm_gondor_squire_helm|Elmo da scudiero di Gondor
-itm_gondor_knight_helm|Elmo da cavaliere di Gondor
+itm_gondor_knight_helm|Elmo da Cavaliere Gondoriano
 itm_gondor_dolamroth_helm|Elmo di Dol Amroth
 itm_swan_knight_helm|Elmo da Cavaliere Cigno
 itm_gondor_lamedon_helm|Elmo del Lamedon
@@ -378,7 +375,7 @@ itm_orc_throwing_axes|Asce da Lancio Orchesche
 itm_orc_bow|Arco Orchesco
 itm_orc_shield_a|Scudo Orchesco
 itm_orc_shield_b|Scudo Orchesco
-itm_orc_shield_c|Scudo orchesco della Torre
+itm_orc_shield_c|Scudo Torre Orchesco
 itm_mordor_orc_shield_a|Scudo Orchesco di Mordor
 itm_mordor_orc_shield_b|Scudo Orchesco di Mordor
 itm_mordor_orc_shield_c|Scudo Orchesco di Mordor
@@ -465,7 +462,6 @@ itm_dun_helm_a|Copricapo Lupo Dunlandiano
 itm_dun_helm_b|Copricapo con Corna Dunlandiano
 itm_dun_helm_c|Elmo Alto Dunlandiano
 itm_dun_helm_d|Elmo Alto Dunlandiano
-
 itm_dun_helm_e|Elmo Ramificato Dunlandiano
 itm_dun_shield_a|Scudo Dunlandiano
 itm_dun_shield_b|Scudo Dunlandiano
@@ -511,19 +507,20 @@ itm_mirkwood_pad|Mantello Trapuntato di Boscoverde
 itm_mirkwood_mail|Cotta di Maglia di Boscoverde
 itm_mirkwood_scale|Armatura a Scaglie Leggera di Boscoverde
 itm_mirkwood_heavy_scale|Armatura a Scaglie di Bosco Atro
-itm_mirkwood_great_spear|Lancia Suprema di Bosco Atro
-itm_mirkwood_war_spear|Lancia da Guerra di Bosco Atro
-itm_mirkwood_short_spear|Lancia di Bosco Atro
-itm_mirkwood_knife|Coltello Bianco di Bosco Atro
-itm_mirkwood_axe|Ascia di Bosco Atro
-itm_mirkwood_spear_shield_a|Scudo di Bosco Atro
-itm_mirkwood_spear_shield_b|Scudo da Guerra di Bosco Atro
-itm_mirkwood_spear_shield_c|Scudo Rotondo di Bosco Atro
-itm_mirkwood_helm_a|Elmo da Arciere di Bosco Atro
-itm_mirkwood_helm_b|Elmo di Bosco Atro
-itm_mirkwood_helm_c|Elmo Pesante di Helm
-itm_mirkwood_helm_d|Elmo Reale di Helm
-itm_mirkwood_boots|Stivali di Bosco Atro
+itm_mirkwood_great_spear|Lancia Suprema di Boscoverde
+itm_mirkwood_war_spear|Lancia da Guerra di Boscoverde
+itm_mirkwood_short_spear|Lancia degli Elfi Silvani
+itm_mirkwood_knife|Coltello degli Elfi Silvani
+itm_mirkwood_axe|Ascia degli Elfi Silvani
+itm_mirkwood_spear_shield_a|Scudo degli Elfi Silvani
+itm_mirkwood_spear_shield_b|Scudo da Guerra di Boscoverde
+itm_mirkwood_spear_shield_c|Scudo Tondo degli Elfi Silvani
+itm_mirkwood_helm_a|Elmo da Arciere degli Elfi Silvani
+itm_mirkwood_helm_b|Elmo di Boscoverde
+itm_mirkwood_helm_c|Elmo Pesante di Boscoverde
+itm_mirkwood_helm_d|Elmo Reale di Boscoverde
+itm_free_mirkwood_leather_greaves|Gambali in cuoio di Bosco Atro
+itm_mirkwood_boots|Stivali degli Elfi Silvani
 itm_harad_tunic|Tunica Harad
 itm_harad_padded|Gambesone dell'Harondor
 itm_harad_hauberk|Usbergo dell'Harondor
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Scudo del Serpente Haradrim
 itm_harad_shield_a|Scudo Harondor
 itm_harad_shield_b|Brocchiero dell'Harondor
 itm_harad_shield_c|Brocchiero dell'Harondor
-
 itm_harad_yellow_shield|Scudo Haradrim
 itm_desert_boots|Stivali da Deserto
 itm_harad_leather_greaves|Gambali Haradrim
@@ -660,8 +656,8 @@ itm_dale_sword_long|Spada Lunga di Dale
 itm_dale_sword_broad|Spada da Fanteria di Dale
 itm_dale_pike|Lancia di Dale
 itm_dale_billhook|Roncola di Dale
-itm_dale_shield_a|Scudo della Torre di Dale
-itm_dale_shield_b|Scudo della Torre di Dale
+itm_dale_shield_a|Scudo Torre di Dale
+itm_dale_shield_b|Scudo Torre di Dale
 itm_dale_shield_c|Scudo Tondo di Dale
 itm_dale_shield_d|Scudo di Dale
 itm_umb_armor_a|Veste in Pelle Corsara
@@ -701,7 +697,7 @@ itm_beorn_axe|Ascia di Beorn
 itm_beorn_staff|Asta Beorniana
 itm_beorn_battle_axe|Ascia da Guerra di Beorn
 itm_dwarf_shield_a|Scudo Angolare Nanico
-itm_dwarf_shield_b|Scudo della Torre Nanica
+itm_dwarf_shield_b|Scudo Torre Nanico
 itm_dwarf_shield_c|Scudo da Combattimento Nanico
 itm_dwarf_shield_d|Scudo Tondo Nanico
 itm_north_round_shield|Scudo Tondo Nordico
@@ -751,7 +747,6 @@ itm_dwarf_pad_boots|Stivali Imbottiti Nanici
 itm_dwarf_chain_boots|Gambali in Cotta di Maglia Nanici
 itm_dwarf_scale_boots|Stivali a Scaglie Nanici
 itm_good_mace|Mazza
-itm_far_harad_shield_paint|Scudo di Vimini
 itm_mordor_banner|Stendardo di Mordor
 itm_isengard_banner|Stendardo di Isengard
 itm_woodelf_banner|Stendardo di Bosco Atro
@@ -811,7 +806,9 @@ itm_beorn_axe_reward|Mazza Orso
 itm_moria_arrow_reward|Frecce avvelenate di Moria
 itm_khamul_helm|Elmo di Khamul
 itm_black_arrows_reward|Frecce Nere
+itm_leather_boots_reward|Stivali da Cacciatore
 itm_rohan_armor_th|Armatura Reale di Rohan
+itm_wilderness_amulet|Amuleto della Natura Selvaggia
 itm_prisoner_coll_chain|Catene del Prigioniero
 itm_witchking_helmet|Elmo Maledetto
 itm_lorien_royal_armor|Armatura Reale di Lorien

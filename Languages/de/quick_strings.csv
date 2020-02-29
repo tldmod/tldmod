@@ -248,6 +248,8 @@ qstr_nothing|nichts
 qstr_Good|Gut
 qstr_Med|Mittel
 qstr_Bad|Schlecht
+qstr_{s77}_received_{reg8|Intelligenzbonus: {s77} erhält {reg84} Erfahrung
+qstr_You_gained_{reg84}_i|Intelligenzbonus: Du erhältst {reg84} Erfahrung.
 qstr_{reg4}_killed_{reg5}|{reg4} getötet, {reg5} verwundet, {reg6} geflohen
 qstr_{reg4}_killed_{reg5}_|{reg4} getötet, {reg5} verwundet
 qstr_{reg4}_killed_{reg5}_r|{reg4} getötet, {reg5} geflohen
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|Dein Reittier stolpert! Es scheint zu lahmen.
 qstr_Bitten_by_your_own_w|Dein eigener Warg hat dich gebissen!
 qstr_You_weigh_too_much_f|Du bist zu schwer für ein Pony!
 qstr_Your_mount_rears_ref|Dein Reittier bockt. Es gehorcht dir nicht!
+qstr_Cannot_Change_Camera|Die Kameraeinstellung kann nicht im First-Person-Modus umgestellt werden.
+qstr_Switch_Back_to_3rd_P|Wechsle in den 3rd-Person-Modus, um die Kamera umzustellen.
 qstr_Fixed_Custom_Camera|Feste Kamera
 qstr_Press_Ctrl_+_Left_/_|Drücke Strg+linke Pfeiltaste / Strg+rechte Pfeiltaste um die Schulteransicht zu wechseln
+qstr_Press_Ctrl_+_Down_to|Drücke STRG+Pfeil-unten, um die Kamera zu zentrieren.
 qstr_Use_+/__to_zoom_in/o|Drücke +/- um zu zoomen
 qstr_Use_Up/Down_arrow_ke|Drücke Pfeiltasten Hoch/Runter, um den Winkel zu verändern
 qstr_Fixed_Camera___Right|Feste Kamera - Rechte Schulter
 qstr_Fixed_Camera___Left_|Feste Kamera - Linke Schulter
+qstr_Fixed_Camera___Cente|Feste Kamera - zentriert
 qstr_While_visiting_towns|In Städten, Festungen und Lagern kannst du dich mit den Leuten unterhalten. Angehörige verschiedener Fraktionen haben unterschiedliches zu sagen. Einige werden ihre Sorgen und Hoffnungen mit dir teilen, andere das neueste Gerücht. Beides kann dir zu einem besseren Verständnis der jeweiligen Kultur verhelfen, oder aber Hinweise auf geheime Orte oder Tipps und Tricks für das Reisen durch Mittelerde und das Kämpfen im Ringkrieg bieten. 
 qstr_Cannot_leave_now.|Du kannst jetzt nicht gehen.
 qstr_You_have_found_the_l|Örtliche Schmiede gefunden... (+{reg3} XP)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|Du greifst eine Gruppe von {s1} an.
 qstr_The_battle_against_t|Der Kampf gegen die Gruppe von {s1} setzt sich fort.
 qstr_There_are_{reg39}_al|Du kämpfst gemeinsam mit {reg39} verbündeten Befehlshabern. Übernimm den Befehl für {reg40} Einflusspunkte.
 qstr_Having_a_small_party|Ein kleiner Trupp hat seine Vorteile... Du und deine Truppen verbergen sich vor dem Feind. Ihr verharrt einige Stunden, um sicherzugehen, dass ihr nicht gesehen werdet.
-qstr_Your_ability_to_surv|Dank deiner guten Kenntnis der Wildnis findest du einen sicheren Ort, um deinen Trupp vor den Augen der Feinde zu verbergen. (Wildkunde-Fähigkeit erlaubt dir, bis zu {reg1} Truppen zu verstecken.)
+qstr_Your_ability_to_mast|Dank deiner Macht über die Wildnis findest du einen sicheren Ort, um deinen Trupp vor den Augen der Feinde zu verbergen. (Wildkunde-Fähigkeit erlaubt dir, bis zu {reg1} Truppen zu verstecken.)
 qstr_{reg4}_will_be_lost.|{reg4} Soldaten werden zurückgelassen.
 qstr_{s13}_asked_you_to_r|{s13} bat dich, dich mit mindestens {reg13} Truppen bei ihm zu melden.
 qstr_{s13}_ordered_you_to|{s13} befahl dir, dich dem Angriff gegen {s14} anzuschließen.
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3} ist Zeuge deines Sieges gegen {s4}.
 qstr_Even_though_there_we|Auch wenn niemand sonst deinen Sieg bezeugen kann, feiern immerhin deine Truppen ihren Triumph.
 qstr_{s1}_of_{s3}_managed|{s1} von {s3} konnte entkommen.
 qstr_Prisoners_rescued_so|Bisher befreite Gefangene: {reg1}
-qstr_Victory_comment._Pla|Siegeskommentar. Spieler war alleine
-qstr_Ordinary_victory_com|Gewöhnlicher Siegeskommentar. Der Spieler stellte zumindest 40 Prozent der Kräfte.
-qstr_Player_participation|Spieler Teilnahmekommentar. Der Gegner hatte zu Beginn zumindest 1000 Startkraft.
-qstr_No_victory_comment._|Kein Siegeskommentar. Das Gefecht war klein, und der Spieler stellte weniger als 40 Prozent der vereinigten Kraft
 qstr_{reg1}_kills_of_{s1}|{reg1} getötete Truppen von {s1} zählen für deinen Schwur. Insgesamt Getötete: {reg0}
-qstr_Some_of_your_tendons|Einige deiner Sehnen trugen im Gefecht Verletzungen davon. Deine Stärke wird um 1 reduziert.
-qstr_You_took_a_nasty_wou|Du hast eine garstige Wunde erlitten, dank derer du selbst nach der Heilung noch humpeln wirst. Deine Agilität wird um 1 reduziert.
-qstr_You_have_trouble_thi|Du kannst nach dem Gefecht keinen klaren Gedanken fassen, vielleicht durch einen erlittenen Schlag auf den Kopf, und nun wirst du von häufigen Kopfschmerzen geplagt. Deine Intelligenz wird um 1 reduziert.
 qstr_Perhaps_I_m_getting_|Vielleicht hat sich das Glück gegen mich gewandt...
 qstr_Retirement_is_starti|Ruhestand fängt an besser und besser zu klingen.
 qstr_No_matter!_I_will_pe|Macht nichts! Ich werde es schaffen!
@@ -1126,7 +1125,6 @@ qstr_Um..._by_enchanting_|Ehm... indem Eisen verzaubert wird?
 qstr_Magnets_are_made_of_|Magneten bestehen aus Metall, das aus dem Boden gewonnen wird. Sie sind magnetisch, weil das Metall immer noch Reste von Anziehungskraft in sich trägt.
 qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
 qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-qstr_Bannerlord_is_runnin|Bannerlord läuft auf einer neuen Engine. Wir werden TLD nicht auf Bannerlord portieren können, wie es mit Warband möglich war.
 qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
 qstr_Well_there_s_a_lot_o|Naja, es gibt viele neue Grafiken und so, ich schätze das dauert.
 qstr_It_has_been_recently|Sie ist kürzlich erschienen, solltest du den Link verpasst haben, kannst du sie bei lemonparty.org herunterladen.

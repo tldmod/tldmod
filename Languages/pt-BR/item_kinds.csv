@@ -73,7 +73,7 @@ itm_troll_shield_a|Escudo de Troll
 itm_arrows|Flechas
 itm_gondor_arrows|Flechas de Gondor
 itm_orc_javelin|Dardo Pesado Orc
-itm_khergit_arrows|Flechas Farpadas
+itm_khergit_arrows|Flechas de Rohan
 itm_rohan_arrows_2|Flechas de Rohan
 itm_harad_arrows|Flechas dos Haradrim
 itm_corsair_arrows|Flechas dos Corsários
@@ -85,8 +85,6 @@ itm_isengard_arrow|Flechas de Isengard
 itm_leather_gloves|Luvas de Couro
 itm_mail_mittens|Luvas de Cota-Malha
 itm_leather_boots|Botas de couro
-itm_leather_boots_dark|Botas de Cavaleiro
-itm_splinted_greaves|Grevas Lascadas
 itm_white_tunic_a|Roupa de Civil
 itm_rohan_shoes|Sapatos de Couro
 itm_furry_boots|Botas de Pele
@@ -95,7 +93,6 @@ itm_hood_black|Capuz Preto
 itm_hood_green|Capuz Verde
 itm_hood_grey|Capuz Cinza
 itm_hood_leather|Capuz de Couro
-itm_axe_a|Machado dos Homens do Norte
 itm_axe_b|Machado Barbado dos Homens do Norte
 itm_axe_c|Machado dos Homens do Norte
 itm_axe_d|Machado dos Homens do Norte
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Espada de Valfenda
 itm_riv_riding_sword|Espada de Cavalaria de Valfenda
 itm_riv_archer_sword|Espada de Arqueiro de Valfenda
 itm_riv_spear|Lança de Valfenda
-itm_riv_armor_light|Armadura de Valfenda
-itm_riv_armor_light_inf|Armadura de Valfenda 
-itm_riv_armor_archer|Armadura de Valfenda 
-itm_riv_armor_m_archer|Armadura de Valfenda 
-itm_riv_armor_med|Armadura de Valfenda 
-itm_riv_armor_heavy|Armadura de Valfenda 
+; itm_riv_light|Rivendell Tunic
+; itm_riv_leather|Rivendell Leather Armor
+; itm_riv_foot_mail|Rivendell Mail
+; itm_riv_foot_scale|Rivendell Scale
+; itm_riv_surcoat|Rivendell Surcoat
+; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|Armadura de Valfenda 
 itm_riv_armor_leader|Armadura de Líder de Valfenda
 itm_riv_boots|Botas de Valfenda
@@ -193,15 +190,15 @@ itm_gondor_med_greaves|Grevas Médias Gondorianas
 itm_gondor_heavy_greaves|Grevas de Cota-Malha Gondorianas
 itm_gondorian_light_helm|Elmo de Soldado de Gondor
 itm_gondor_infantry_helm|Elmo da Infantaria de Gondor
-itm_gondor_auxila_helm|Elmo Auxiliar Gondoriano
+; itm_gondor_auxila_helm|Gondor Light Helm
 itm_gondorian_light_helm_b|Elmo de Homem de Arco Gondoriano
-itm_gondorian_archer_helm|Elmo de Arqueiro Gondoriano
+; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|Elmo de Arqueiro da Torre
 itm_gondor_leader_helm|Elmo de Nobre de Gondor
 itm_tower_guard_helm|Elmo de Guarda da Torre
 itm_gondor_citadel_knight_helm|Elmo de Cavaleiro da Cidadela
 itm_gondor_squire_helm|Elmo de Escudeiro de Gondor
-itm_gondor_knight_helm|Elmo de Cavaleiro de Gondor
+; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Elmo de Dol Amroth
 itm_swan_knight_helm|Elmo de Cavaleiro Cisne
 itm_gondor_lamedon_helm|Elmo de Lamedon
@@ -415,7 +412,7 @@ itm_m_uruk_med_b|Cota de Malha Uruk Pesado
 itm_m_uruk_med_c|Escama Uruk Leve
 itm_m_uruk_heavy_a|Escama Uruk Pesado
 itm_m_uruk_heavy_b|Placa de Malha Uruk
-itm_m_uruk_heavy_c|Placa de Malha de Lugburz 
+itm_m_uruk_heavy_c|Placa de Malha Lugburz
 itm_m_cap_armor|Armadura de Capitão de Mordor
 itm_black_num_armor|Armadura de Numenoriano Negro
 itm_m_armor_a|Armadura de Mordor
@@ -465,7 +462,6 @@ itm_dun_helm_a|Touca de Lobo Terrapardense
 itm_dun_helm_b|Touca de Veado Terrapardense
 itm_dun_helm_c|Elmo Alto Terrapardense
 itm_dun_helm_d|Elmo Alto Terrapardense
-
 itm_dun_helm_e|Elmo de Antler de Dunnish
 itm_dun_shield_a|Escudo Terrapardense
 itm_dun_shield_b|Escudo Terrapardense
@@ -511,19 +507,20 @@ itm_mirkwood_leather|Armadura de Couro de Elfo Silvestre
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
 itm_mirkwood_heavy_scale|Escama de Folha Floresta das Trevas
-itm_mirkwood_great_spear|Lança Grande da Floresta das Trevas
-itm_mirkwood_war_spear|Lança de Guerra da Floresta das Trevas
-itm_mirkwood_short_spear|Lança da Floresta das Trevas
-itm_mirkwood_knife|Faca Branca da Floresta das Trevas
-; itm_mirkwood_axe|Mirkwood Axe
-; itm_mirkwood_spear_shield_a|Mirkwood Shield
-itm_mirkwood_spear_shield_b|Escudo de Guerra da Floresta das Trevas
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
-itm_mirkwood_helm_a|Elmo de Arqueiro da Floresta das Trevas
-itm_mirkwood_helm_b|Elmo da Floresta das Trevas
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
-itm_mirkwood_boots|Botas da Floresta das Trevas
+; itm_mirkwood_great_spear|Greenwood Great Spear
+; itm_mirkwood_war_spear|Greenwood War Spear
+; itm_mirkwood_short_spear|Woodelf Spear
+; itm_mirkwood_knife|Woodelf Knife
+; itm_mirkwood_axe|Woodelf Axe
+; itm_mirkwood_spear_shield_a|Woodelf Shield
+; itm_mirkwood_spear_shield_b|Greenwood War Shield
+; itm_mirkwood_spear_shield_c|Woodelf Round Shield
+; itm_mirkwood_helm_a|Woodelf Archer Helm
+; itm_mirkwood_helm_b|Greenwood Helm
+; itm_mirkwood_helm_c|Greenwood Heavy Helm
+; itm_mirkwood_helm_d|Greenwood Royal Helm
+itm_free_mirkwood_leather_greaves|Perneiras de Couro da Floresta das Trevas
+; itm_mirkwood_boots|Woodelf Boots
 itm_harad_tunic|Túnica de Harad
 itm_harad_padded|Armadura Acolchoada de Harondor
 itm_harad_hauberk|Alabarda de Harondor
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Escudo Serpente de Harad
 itm_harad_shield_a|Escudo de Harondor
 itm_harad_shield_b|Broquel de Harondor
 itm_harad_shield_c|Broquel de Harondor
-
 itm_harad_yellow_shield|Escudo de Harad
 itm_desert_boots|Botas de Deserto
 itm_harad_leather_greaves|Perneiras de Harad
@@ -751,7 +747,6 @@ itm_dwarf_pad_boots|Botas Acolchoadas Anãs
 itm_dwarf_chain_boots|Calças de Cota de Malha Anãs
 itm_dwarf_scale_boots|Botas de Escamas Anãs
 itm_good_mace|Maça
-itm_far_harad_shield_paint|Escudo de Vime
 itm_mordor_banner|Brasão de Mordor
 itm_isengard_banner|Brasão de Isengard
 itm_woodelf_banner|Brasão da Floresta das Trevas
@@ -811,7 +806,9 @@ itm_beorn_axe_reward|Porrete do Urso
 itm_moria_arrow_reward|Flechas Envenenadas de Moria
 itm_khamul_helm|Elmo de Khamul
 ; itm_black_arrows_reward|Black Arrows
+; itm_leather_boots_reward|Hunter Boots
 itm_rohan_armor_th|Armadura Real de Rohan
+; itm_wilderness_amulet|Wilderness Amulet
 itm_prisoner_coll_chain|Correntes de prisioneiro
 itm_witchking_helmet|Elmo corrompido
 itm_lorien_royal_armor|Armadura Real de Lorien

@@ -248,6 +248,8 @@ qstr_nothing|nic
 qstr_Good|Dobre
 qstr_Med|Średnie
 qstr_Bad|Słabe
+; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
+; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
 qstr_{reg4}_killed_{reg5}|{reg4} nie żyje, {reg5} odnosi rany
 qstr_{reg4}_killed_{reg5}_|{reg4} zabity, {reg5} zraniony
 qstr_{reg4}_killed_{reg5}_r|{reg4} zabito, {reg5} zbiegło
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|Twój wierzchowiec okulał!
 qstr_Bitten_by_your_own_w|Ugryzion{y/a} przez własnego warga!
 qstr_You_weigh_too_much_f|Masz zbyt dużą masę na kuca!
 qstr_Your_mount_rears_ref|Twój wierzchowiec siada, nie słucha twoich poleceń!
+; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|Poprawiona Kamera Użytkownika
 qstr_Press_Ctrl_+_Left_/_|Naciśnij Ctrl + Lewo / Ctrl + klawisze strzałek w prawo, aby zmienić ramiona
+; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
 qstr_Use_+/__to_zoom_in/o|Użyj +/- aby przybliżyć/oddalić
 qstr_Use_Up/Down_arrow_ke|Użyj strzałek Góra/Dół aby przechylić w górę/dół
 qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
 qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
+; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|Odwiedzając miasta, osady i obozy, możesz porozmawiać z ludźmi, którzy chodzą po okolicy. Członkowie różnych frakcji mają różne rzeczy do powiedzenia - niektórzy pozwolą ci na własne myśli, inni podzielą się plotkami. Obydwaj mogą jedynie lepiej zrozumieć kulturę i frakcję danej osoby, albo mogą znaleźć wskazówki, jak znaleźć tajne miejsca lub porady i wskazówki dotyczące podróżowania przez Pustkowie i walki w Wojnie o Pierścień.
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
 qstr_You_have_found_the_l|Znalazłeś miejscową kuźnię ... (+ {reg3} XP)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|Napotkał{eś/aś} jakąś grupę. Po chwili okazuje s
 qstr_The_battle_against_t|Bitwa z {s1} trwa.
 qstr_There_are_{reg39}_al|Jest {reg39} sojuszniczych dowódców w tej bitwie. Możesz dowodzić nimi i ich jednostkami za {reg40} punktów wpływu.
 qstr_Having_a_small_party|Posiadanie małej imprezy ma swoje zalety ... Ty i twoi żołnierze ukrywacie się przed wrogiem przez kilka godzin, aby mieć pewność, że nie zobaczycie.
-qstr_Your_ability_to_surv|Twoja zdolność przetrwania w trudnych warunkach pozwoli ci znaleźć bezpieczne miejsce do ukrycia się. (Twoje umiejętności w Wildcraft pozwalają ukryć się z oddziałami {reg1})
+; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
 qstr_{reg4}_will_be_lost.|{reg4} zostanie utracone.
 qstr_{s13}_asked_you_to_r|{s13} poprosił, byś zgłosił{/a} się do niego z co najmiej {reg13} żołnierzami.
 qstr_{s13}_ordered_you_to|{s13} rozkazał, byś przyłączył{/a} się do szturmu przeciw: {s14}.
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3} był świadkiem twej bitwy z {s4}.
 qstr_Even_though_there_we|Mimo że nie było żadnych sprzymierzeńców, którzy mogliby być świadkami twojego zwycięstwa, twoje wojska świętują twoje zwycięstwo.
 qstr_{s1}_of_{s3}_managed|{s1} ({s3}) zdołał uciec.
 qstr_Prisoners_rescued_so|Dotychczas uratowani więźniowie: {reg1}
-qstr_Victory_comment._Pla|Komentarz do zwycięstwa. Gracz był sam
-qstr_Ordinary_victory_com|Zwykły komentarz do zwycięstwa. The player provided at least 40 percent forces.
-qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
-qstr_No_victory_comment._|No victory comment. The battle was small, and the player provided less than 40 percent of allied strength
 qstr_{reg1}_kills_of_{s1}|{reg1} zabójstwa oddziałów frakcji {s1} wliczają się do Przysięgi. TOTAL Kills: {reg0}
-qstr_Some_of_your_tendons|Kilka twoich ścięgien zostało poważnie uszkodzonych w czasie walki. Tracisz 1 punkt siły.
-qstr_You_took_a_nasty_wou|Odniosł{e/a}ś paskudną ranę, która sprawi, że nawet po jej wyleczeniu będziesz lekko utykać na jedną nogę. Tracisz 1 punkt zręczności.
-qstr_You_have_trouble_thi|Po bitwie, w której nieszczęśliwie otrzymał{e/a}ś silny cios w skroń, masz problemy z koncentracją myśli i nieustannie nękają cię silne bóle głowy. Twoja inteligencja obniża się o 1.
 qstr_Perhaps_I_m_getting_|Chyba zaczynam mieć pecha...
 qstr_Retirement_is_starti|Przejście w stan spoczynku zaczyna brzmieć coraz przyjemniej.
 qstr_No_matter!_I_will_pe|Nieważne! Wytrwam!
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|Jak działają magnesy?
 qstr_Um..._by_enchanting_|Um ... poprzez zaklęcie żelaza?
 qstr_Magnets_are_made_of_|Magnesy są wykonane z metalu, który wykopuje się ziemi.Mają właściwości magnetyczne gdyż metal wciąż zawiera cząsteczki grawitacji w sobie.
 qstr_i_wont_a_bonerlrord_|Chcę NAO Boner portu panie !! 11!
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Install_TLD_in_your_|Zainstaluj TLD w Twoim folderze Bannerlord Modules, dodaj linię 'compatible_with_wfas = 1' do pliku module.ini, aby grać zarówno w Warband-zie ORAZ Warrider-ze 0.202!
 qstr_dis_mod_takes_2_long|Piehdole!!!21@ kiedy ten mod wyjdzie!!11!
 qstr_Well_there_s_a_lot_o|Cóż, jest dużo nowych grafik i innych rzeczy, wydaje mi się, że to zajmuje czas.
 qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.

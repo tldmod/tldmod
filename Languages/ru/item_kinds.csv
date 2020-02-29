@@ -73,7 +73,7 @@ itm_troll_shield_a|Щит тролля
 itm_arrows|Стрелы
 itm_gondor_arrows|Гондорские стрелы
 itm_orc_javelin|Орочий тяжёлый дротик
-itm_khergit_arrows|Зазубренные стрелы
+itm_khergit_arrows|Роханские стрелы
 itm_rohan_arrows_2|Роханские стрелы
 itm_harad_arrows|Харадские стрелы
 itm_corsair_arrows|Корсарские стрелы
@@ -85,17 +85,14 @@ itm_isengard_arrow|Изенгардские стрелы
 itm_leather_gloves|Кожаные перчатки
 itm_mail_mittens|Кольчужные рукавицы
 itm_leather_boots|Кожаные сапоги
-; itm_leather_boots_dark|Rider Boots
-; itm_splinted_greaves|Splinted Greaves
 itm_white_tunic_a|Одежда горожанина
 itm_rohan_shoes|Кожаные ботинки
 itm_furry_boots|Меховые сапоги
 itm_black_tunic|Чёрная одежда
 itm_hood_black|Чёрный капюшон
 itm_hood_green|Зелёный капюшон
-; itm_hood_grey|Grey Hood
-; itm_hood_leather|Leather Hood
-itm_axe_a|Северный топор
+itm_hood_grey|Серый Капюшон
+itm_hood_leather|Кожаный Капюшон
 itm_axe_b|Северный бородовидный топор
 itm_axe_c|Северный топор
 itm_axe_d|Северный топор
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Ривендельский меч
 itm_riv_riding_sword|Ривендельский кавалерийский меч
 itm_riv_archer_sword|Ривенделлский Меч Лучника
 itm_riv_spear|Ривендельское копьё
-itm_riv_armor_light|Ривендельская броня
-itm_riv_armor_light_inf|Ривендельская броня
-itm_riv_armor_archer|Ривендельская броня
-itm_riv_armor_m_archer|Ривендельская броня
-itm_riv_armor_med|Ривендельская броня
-itm_riv_armor_heavy|Ривендельская броня
+; itm_riv_light|Rivendell Tunic
+; itm_riv_leather|Rivendell Leather Armor
+; itm_riv_foot_mail|Rivendell Mail
+; itm_riv_foot_scale|Rivendell Scale
+; itm_riv_surcoat|Rivendell Surcoat
+; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|Ривендельская броня
 itm_riv_armor_leader|Ривендельская броня военачальника
 itm_riv_boots|Ривендельскые сапоги
@@ -193,15 +190,15 @@ itm_gondor_med_greaves|Гондорские средние поножи
 itm_gondor_heavy_greaves|Гондорские кольчужные поножи
 itm_gondorian_light_helm|Гондорский шлем пехотинца
 itm_gondor_infantry_helm|Гондорский шлем пехотинца
-itm_gondor_auxila_helm|Гондорский шлем ополченца
+; itm_gondor_auxila_helm|Gondor Light Helm
 itm_gondorian_light_helm_b|Гондорский шлем лучника
-itm_gondorian_archer_helm|Гондорский шлем лучника
+; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|Шлем лучника Башни
 itm_gondor_leader_helm|Гондорский превосходный шлем
 itm_tower_guard_helm|Шлем Стража Башни
 itm_gondor_citadel_knight_helm|Шлем Рыцаря Цитадели
 itm_gondor_squire_helm|Гондорский шлем оруженосца
-itm_gondor_knight_helm|Гондорский рыцарский шлем
+; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Дол-амротский шлем
 itm_swan_knight_helm|Лебединый рыцарский шлем
 itm_gondor_lamedon_helm|Ламедонский шлем
@@ -415,7 +412,7 @@ itm_m_uruk_med_b|Урукская тяжёлая кольчуга
 itm_m_uruk_med_c|Урукская лёгкая чешуйчатая броня
 itm_m_uruk_heavy_a|Урукская тяжёлая чешуйчатая броня
 itm_m_uruk_heavy_b|Урукская пластинчатая броня
-; itm_m_uruk_heavy_c|Lugburz Platemail
+itm_m_uruk_heavy_c|Доспех Лугбурза
 itm_m_cap_armor|Мордорская броня полководца
 itm_black_num_armor|Броня чёрного нуменорца
 itm_m_armor_a|Мордорская броня
@@ -465,7 +462,6 @@ itm_dun_helm_a|Дунландский волчий шлем
 itm_dun_helm_b|Дунландский рогатый шлем
 itm_dun_helm_c|Дунландский высокий шлем
 itm_dun_helm_d|Дунландский высокий шлем
-
 itm_dun_helm_e|Дунландский Олений Шлем
 itm_dun_shield_a|Дунландский щит
 itm_dun_shield_b|Дунландский щит
@@ -511,19 +507,20 @@ itm_rohirrim_war_greaves|Роханские боевые поножи
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
 itm_mirkwood_heavy_scale|Чешуйчатый доспех Лихолесья
-itm_mirkwood_great_spear|Темнолесское большое копьё
-itm_mirkwood_war_spear|Темнолесское боевое копьё
-itm_mirkwood_short_spear|Темнолесское копьё
-itm_mirkwood_knife|Темнолесский белый кинжал
-; itm_mirkwood_axe|Mirkwood Axe
-; itm_mirkwood_spear_shield_a|Mirkwood Shield
-itm_mirkwood_spear_shield_b|Темнолесский боевой щит
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
-itm_mirkwood_helm_a|Темнолесский шлем лучника
-itm_mirkwood_helm_b|Темнолесский шлем
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
-itm_mirkwood_boots|Темнолесские сапоги
+; itm_mirkwood_great_spear|Greenwood Great Spear
+; itm_mirkwood_war_spear|Greenwood War Spear
+; itm_mirkwood_short_spear|Woodelf Spear
+; itm_mirkwood_knife|Woodelf Knife
+; itm_mirkwood_axe|Woodelf Axe
+; itm_mirkwood_spear_shield_a|Woodelf Shield
+; itm_mirkwood_spear_shield_b|Greenwood War Shield
+itm_mirkwood_spear_shield_c|Круглый Щит Лесных Эльфов
+itm_mirkwood_helm_a|Шлем Лучника Лесных Эльфов
+; itm_mirkwood_helm_b|Greenwood Helm
+; itm_mirkwood_helm_c|Greenwood Heavy Helm
+; itm_mirkwood_helm_d|Greenwood Royal Helm
+itm_free_mirkwood_leather_greaves|Темнолесские кожаные поножи
+itm_mirkwood_boots|Ботинки Лесных Эльфов
 itm_harad_tunic|Харадская одежда
 itm_harad_padded|Харондорская подбитая броня
 itm_harad_hauberk|Харондорский хауберк
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Харадский змеиный щит
 itm_harad_shield_a|Харондорский щит
 itm_harad_shield_b|Харондорский баклер
 itm_harad_shield_c|Харондорский баклер
-
 itm_harad_yellow_shield|Харадский щит
 itm_desert_boots|Пустынные сапоги
 itm_harad_leather_greaves|Харадские поножи
@@ -751,7 +747,6 @@ itm_dwarf_pad_boots|Гномьи подбитые сапоги
 itm_dwarf_chain_boots|Гномьи кольчужные чулки
 itm_dwarf_scale_boots|Гномьи чешуйчатые сапоги
 itm_good_mace|Булава
-itm_far_harad_shield_paint|Плетёный щит
 itm_mordor_banner|Мордорское знамя
 itm_isengard_banner|Изенгардское знамя
 itm_woodelf_banner|Темнолесское знамя
@@ -805,13 +800,15 @@ itm_lorien_bow_reward|Нолдорский лук
 itm_elven_cloak|Эльфийский плащ
 itm_dale_sword_reward|Дэйльский королевский меч
 itm_dale_armor_reward|Дэйльская благородная кольчуга
-; itm_leather_gloves_reward|Archer Gloves
+itm_leather_gloves_reward|Перчатки Лучника
 itm_beorn_shield_reward|беорнингский щит
 itm_beorn_axe_reward|Медвежья дубина
 itm_moria_arrow_reward|Морийские отравленные стрелы
 itm_khamul_helm|Шлем Хамула
-; itm_black_arrows_reward|Black Arrows
+itm_black_arrows_reward|Черные Стрелы
+itm_leather_boots_reward|Охотничье Сапоги
 itm_rohan_armor_th|Роханская королевская броня
+; itm_wilderness_amulet|Wilderness Amulet
 itm_prisoner_coll_chain|Кандалы
 itm_witchking_helmet|Ужасный шлем
 itm_lorien_royal_armor|Лориэнская королевская броня

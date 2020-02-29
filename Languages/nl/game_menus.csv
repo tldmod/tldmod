@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Waar vecht je voor?
 mno_start_good|De OPKOMST van een nieuw Tijdperk
 mno_start_evil|De SCHEMERING van Mensheid
+; mno_faction_intros|Learn about the different factions of Middle-Earth
 mno_go_bback|Ga Terug
 menu_start_phase_2|Midden Aarde. Een schaduw is groeiende in het Oosten, en donkere zaken komen naar voren die lang zijn verborgen. De vrije mensheid bereidt zich voor op oorlog, wat lange tijd niet is gezien. Mensen, Elven, Dwergen en Orks; allen spelen hun rol. Welke rol, blijft echter nog te bezien...
 mno_go_forth|Ga heen op jouw gekozen pad...
+mno_change_tld_options|Verander TLD opties.
 menu_start_game_3|^^^^^^^^Kies je scenario:
 mno_custom_battle_scenario_1|Skirmish, Gondor facties vs Harad
 mno_custom_battle_scenario_12|Kies facties voor gevecht
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Landschap test gevecht
 mno_troll_battle_scenario|Test Trol Gevechten
 mno_warg_battle_scenario|Test Warg Gevechten
 mno_build_your_own_scene|** Maak je eigen scenario voor TLD **
+mno_go_back|Ga terug
 menu_tutorial|^^ Welkom bij de Gevechts Oefening voor Mount & Blade. Hier zzal je de basis elementen van gevechten leren zowel een kleine overzicht van troepen commandos tijdens veld gevechten.
 mno_tutorial_1|Oefening #1: Basis bewegingen en wapen selectie. {s1}
 mno_tutorial_2|Oefening #2: Vechten met een schild. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Kies je ras:
 mno_start_ma|MENS
 mno_start_el|ELF
 mno_start_dw|DWERG
-mno_go_back|Ga terug
 menu_start_evil|^^^^^^^^^^Wie dien jij?
 mno_start_eye|SAURON van Mordor, de Heer van de Ringen.
 mno_start_hand|SARUMAN van Isengard, de Witte Hand.
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Influentie steiging radius: {s7}
 mno_strat_tweaks_rank_gain_rate|Rank steiging radius: {s7}
 mno_strat_tweaks_back|Terug naar het tweaks menu.
 menu_camp_action|^^^^^^^^^ Welk object?
-mno_camp_customize_defilement|Aangepast verontreinigd Pantser
 mno_camp_drink_water|Drink het Ent Water!
 mno_camp_action_4|Terug.
 menu_assasins_attack_player_won|Je hebt de moordenaars succesvol afgeslagen van {s2}, gestuurd door {s3}. 
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Ga binnen in het Warenhuis van de Dwergen.
 mno_talk_to_castle_commander|Bezoek de {s61} Barakken.
 mno_speak_with_elder|Spreek met de {s6}.
 mno_isengard_underground|Ga naar de ondergrondse grotten.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Klim naar het hoogste niveau.
 mno_erebor_gates|Bezoek de Grote Poorten.
 mno_town_leave|Ga weg...
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^Een boodschapper is geariveerd en verteld 
 mno_player_added_to_war_council_close|Sluiten
 menu_player_added_to_siege_reports|^^^^^Een boodschapper is geariveerd en verteld je dat nu als {s24} Boodschappen krijgt als {s2} een belegering voert of als {s2} belegerd wordt.
 mno_player_added_to_siege_reports_close|Sluiten
-menu_player_added_to_allow_follow|^^^^^Een boodschapper is geariveerd en verteld je dat nu als {s24} Je {s2} mag commanderen voor een totaal of {reg55} maximaale volgers.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Sluiten
 menu_center_besieged_event|^^^^^Een boodschapper is geariveerd en verteld dat {s1} is belegerd door {s2} en {s3}
 mno_center_besieged_event_close|Sluiten

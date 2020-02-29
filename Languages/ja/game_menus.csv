@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^何のために戦いますか？
 mno_start_good|新しい時代の夜明け
 mno_start_evil|人類の黄昏
+mno_faction_intros|中つ国のさまざまな勢力について調べる
 mno_go_bback|戻る
 menu_start_phase_2|^^^^^ここは中つ国。東に広がる闇は日々ふくれあがり、^遠く忘れ去られてきた暗いものたちが、その姿をあらわす。^自由の民は、長く経験したことのない未曾有の戦いを前に、その身を固くする。^人間、エルフ、ドワーフ、そしてオーク。^すべてのものがそれぞれの運命を演じていく。^^運命の先にあるものは何か、それはまだわからない・・・
 mno_go_forth|定められし運命の道ならば、これを進もう・・・
+mno_change_tld_options|TLDのオプション
 menu_start_game_3|^^^^^^^^シナリオを選んでください:
 mno_custom_battle_scenario_1|小規模戦闘、 ゴンドール勢 vs ハラド
 mno_custom_battle_scenario_12|所属する勢力を選んでください
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|シーナリーのテスト
 mno_troll_battle_scenario|トロルのテスト
 mno_warg_battle_scenario|ワーグのテスト
 mno_build_your_own_scene|** 自分だけのTLDのシーンを作ろう **
+mno_go_back|戻る
 menu_tutorial|^^Mount&Bladeの戦闘のチュートリアルへようこそ。 ここでは戦闘における基本や、戦場における兵の指揮の初歩を学べます。
 mno_tutorial_1|チュートリアル#1:移動の基本と武器の種類。 {s1}
 mno_tutorial_2|チュートリアル#2:盾を使った戦闘。 {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^種族を選んでください:
 mno_start_ma|人間
 mno_start_el|エルフ
 mno_start_dw|ドワーフ
-mno_go_back|戻る
 menu_start_evil|^^^^^^^^^^誰に仕えますか？
 mno_start_eye|モルドールのサウロン、指輪王
 mno_start_hand|アイゼンガルドのサルマン、白の手
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|影響力ポイント獲得レート:{s7}
 mno_strat_tweaks_rank_gain_rate|ランクポイント獲得レート:{s7}
 mno_strat_tweaks_back|調整メニューに戻る
 menu_camp_action|^^^^^^^^^ どのアイテムですか？
-mno_camp_customize_defilement|穢された鎧を改造する
 mno_camp_drink_water|エント水を飲むぞ！
 mno_camp_action_4|戻る
 menu_assasins_attack_player_won|あなたは{s3}によって送り込まれた、 {s2}の暗殺者を撃退しました。
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|ドワーフの倉庫に入る
 mno_talk_to_castle_commander|{s61}の兵舎へ行く。
 mno_speak_with_elder|{s6}に会う。
 mno_isengard_underground|地下の洞窟へ行く。
+mno_isengard_underground_door|地下の洞窟へ行く。
 mno_tirith_toplevel|最上層に登る。
 mno_erebor_gates|大門へ行く。
 mno_town_leave|立ち去る・・・

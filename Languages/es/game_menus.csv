@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^¿Por qué fin lucháis?
 mno_start_good|Por el AMANECER de una nueva Era
 mno_start_evil|Por el OCASO del Hombre
+mno_faction_intros|Aprende más sobre las diferentes facciones de la Tierra Media
 mno_go_bback|Volver atrás
 menu_start_phase_2|^^^^^La Tierra Media: una sombra crece en el Este, ^y criaturas oscuras que llevaban mucho tiempo ocultas salen de sus escondites. ^Los pueblos libres se preparan para la guerra, una guerra como no se ha visto desde la última Edad. ^Hombres, Elfos, Enanos y Orcos; todos jugarán su papel. ^^Qué papel, sin embargo, todavía está por ver... 
 mno_go_forth|Sigue adelante por el camino elegido...
+mno_change_tld_options|Cambiar opciones de TLD.
 menu_start_game_3|^^^^^^^^Elige tu escenario:
 mno_custom_battle_scenario_1|Escaramuza, Facciones de Gondor contra Harad
 mno_custom_battle_scenario_12|Elegir facciones para la batalla
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Batalla de prueba de escenarios
 mno_troll_battle_scenario|Batallas de prueba de trolls
 mno_warg_battle_scenario|Batallas de prueba de huargos
 mno_build_your_own_scene|** Construir tu propio escenario para TLD **
+mno_go_back|Volver atrás
 menu_tutorial|^^ Te damos la bienvenida al Tutorial de Combate de Mount & Blade. Aquí aprenderás las mecánicas básicas del combate, así como una breve introducción a comandar tropas en las batallas campales.
 mno_tutorial_1|Tutorial #1: Movimientos básicos y selección de armas. {s1}
 mno_tutorial_2|Tutorial #2: Luchar con escudo. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Elige tu raza:
 mno_start_ma|HOMBRE
 mno_start_el|ELFO
 mno_start_dw|ENANO
-mno_go_back|Volver atrás
 menu_start_evil|^^^^^^^^^^¿Quién será tu Señor?
 mno_start_eye|SAURON de Mordor, el Señor de los Anillos
 mno_start_hand|SARUMAN de Isengard, la Mano Blanca
@@ -86,7 +88,7 @@ menu_start_eye_man|^^^^^^^^^^Elige a tu pueblo:
 mno_start_hr|HARADRIM, las gentes de los desiertos del Sur
 mno_start_bn|NUMENÓREANOS NEGROS, los renegados del Oeste
 mno_start_um|UMBAR, Los piratas de los mares del Sur
-mno_start_rh|RHUN, los bárbaros del Este
+mno_start_rh|RHÛN, los bárbaros del Este
 mno_start_kh|KHAND, el pueblo salvaje del Sureste
 menu_start_eye_uruk|^^^^^^^^^^¿Desde donde acechas al enemigo?
 mno_start_arm_uruk|desde los ejércitos reunidos en MORDOR
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Velocidad de obtención de influencia: {s7}
 mno_strat_tweaks_rank_gain_rate|Velocidad de obtención de rango: {s7}
 mno_strat_tweaks_back|Volver al menú de ajustes.
 menu_camp_action|^^^^^^^^^     ¿Qué objeto?
-mno_camp_customize_defilement|Personalizar Armadura Profanada
 mno_camp_drink_water|¡Beber el Agua de los Ents!
 mno_camp_action_4|Atrás.
 menu_assasins_attack_player_won|Has derrotado los asesinos de {s2}, enviados por {s3}.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Entrar en el Almacén Enano.
 mno_talk_to_castle_commander|Visitar el cuartel de {s61}.
 mno_speak_with_elder|Hablar con el {s6}.
 mno_isengard_underground|Ir a las cavernas subterráneas.
+mno_isengard_underground_door|Ir a las cavernas subterráneas.
 mno_tirith_toplevel|Ir al nivel superior.
 mno_erebor_gates|Visitar las Grandes Puertas.
 mno_town_leave|Irse...

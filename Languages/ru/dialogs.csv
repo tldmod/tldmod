@@ -465,13 +465,13 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, развед�
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Ты можешь отправить посланцев?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Мы можем, но мобилизация займёт время. Мы опасаемся, что опоздаем. ^^Твой отряд, кажется, может выступить быстро. Ты сможешь защитить эту деревню?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Мы готовы и выступим немедленно.
-; dlga_lord_mission_defend_question:lord_mission_defend_reject|I am afraid I may not have enough men with me currently...
+dlga_lord_mission_defend_question:lord_mission_defend_reject|Я боюсь, у меня не достаточно людей сейчас
 dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Я боюсь, что не смогу выполнить эту задачу.
 dlga_lord_mission_defend_accept:close_window|Благодарю тебя, {playername}. Теперь поторопись!
 dlga_lord_mission_defend_reject:close_window|Понятно. Тогда я пошлю столько войск, сколько смогу. Будем надеяться, что мы не слишком опоздаем.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, неподалёку есть деревня, которая словно просится быть разграбленной. Разведчики говорят что её защищают {s3}, но их немного и их легко будет победить. ^^Так получается что ты - первый из командиров, которому я это говорю. Что ты будешь делать с этой информацией?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Я разграблю эту деревню и убью в ней всех мужчин, а женщин и детей сделаю рабами!
-; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I cannot raid with these weaklings with me right now...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|Я не могу сейчас совершать набеги с этими слабаками...
 dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|У меня нет времени грабить жалкие деревни!
 dlga_lord_raid_village_accept:close_window|Тогда почему ты всё еще здесь? 
 dlga_lord_raid_village_reject:close_window|Оправдываются трусы. Убирайся, твой трусливый бубнёж выводит меня из себя.
@@ -1029,6 +1029,7 @@ dlga_enemy_defeated:close_window|Аргх! Ненавижу это.
 dlga_party_relieved:close_window|Спасибо, что помогли нам справиться с этими ублюдками.
 dlga_start:battle_reason_stated|Я сделаю кубок из твоего черепа!
 dlga_member_chat_00:close_window.1|^^ГРРРР!^^ 
+dlga_member_chat_00:close_window.2|^^Гррррр.....^^
 dlga_member_chat_00:regular_member_talk|Каков будет приказ, командир?
 dlga_regular_member_talk:view_regular_char_requested|Расскажи мне о себе.
 dlga_view_regular_char_requested:do_regular_member_view_char|Да, командир. Давайте я расскажу вам всё, что следует обо мне знать.

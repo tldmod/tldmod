@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^你为何而战？
 mno_start_good|新纪元的黎明
 mno_start_evil|人类的黄昏
+mno_faction_intros|了解中土的不同派系
 mno_go_bback|返回
 menu_start_phase_2|^^^^^中土世界。 黑暗的阴影正在东方蔓延，^潜伏了近一个纪元的邪恶势力重现世间。 ^中土世界的自由之民能否再一次战胜黑暗。 ^人类，精灵，矮人和半兽人，各种势力在这里继续角逐^^这场战争的走向如何？让我们拭目以待…
 mno_go_forth|向着你选择的道路前进
+mno_change_tld_options|更改最后之日选项。
 menu_start_game_3|^^^^^^^^选择情景：
 mno_custom_battle_scenario_1|小规模冲突，刚铎vs哈拉德
 mno_custom_battle_scenario_12|选择出战派系
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|场景测试战
 mno_troll_battle_scenario|食人妖测试战
 mno_warg_battle_scenario|座狼测试战
 mno_build_your_own_scene|**建立你的最后之日场景**
+mno_go_back|返回
 menu_tutorial|^^欢迎使用骑砍的战斗教程。 在這裡，您将学习战斗的基本知识，以及野战期间部队指挥的简要概述。
 mno_tutorial_1|教程#1：基本动作和武器选择。{s1}
 mno_tutorial_2|教程#2：持盾作战。{s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^选择你的种族：
 mno_start_ma|人类
 mno_start_el|精灵
 mno_start_dw|矮人
-mno_go_back|返回
 menu_start_evil|^^^^^^^^^^你向何人效忠？
 mno_start_eye|魔多的索伦，众戒之王
 mno_start_hand|艾辛格的萨鲁曼，白手
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|影响力提升速度：{s7}
 mno_strat_tweaks_rank_gain_rate|军衔提升速度：{s7}
 mno_strat_tweaks_back|返回调整菜单.
 menu_camp_action|^^^^^^^^^ 你要做何事?
-mno_camp_customize_defilement|自定义护甲污迹
 mno_camp_drink_water|喝树人水
 mno_camp_action_4|返回.
 menu_assasins_attack_player_won|你杀掉了自{s2}来的刺客，他们听命于{s3}。
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|进入矮人仓库
 mno_talk_to_castle_commander|访问{s61}兵营。
 mno_speak_with_elder|和{s6}谈谈。
 mno_isengard_underground|前往地下洞穴。
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|爬上顶层。
 mno_erebor_gates|前往雄伟的大门。
 mno_town_leave|离开…
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^一个信使来了并且告诉你，{s24}�
 mno_player_added_to_war_council_close|关闭
 menu_player_added_to_siege_reports|^^^^^一个信使到达并告诉你，作为{s24}，无论{s2}围攻一个据点还是当{s2}的据点中心被围攻时，你都能够收到报告。
 mno_player_added_to_siege_reports_close|关闭
-menu_player_added_to_allow_follow|^^^^^一个信使到达并告诉你，作为{s24}，你能够命令{s2}跟随你，你最多能够有{reg55}跟随者。
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|关闭
 menu_center_besieged_event|^^^^^一个信使到达并报告{s1}已经被{s3}的{s2}围攻。
 mno_center_besieged_event_close|关闭

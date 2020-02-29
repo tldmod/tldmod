@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Za čo budeš bojovať?
 mno_start_good|ÚSVIT Nového Veku
 mno_start_evil|SÚMRAK Ľudskej Rasy
+mno_faction_intros|Zoznámte sa s rôznymi frakciami Strednej Zeme
 mno_go_bback|Späť
 menu_start_phase_2|^^^^^ Stredozem. Temnota na Východe narastá, ^ prichádzajú odtiaľ dlho schované temné bytosti. ^ Slobodné národy sa pripravujú na vojnu. Vojnu, ktorú nezažili už celý vek. ^ Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju rolu. ^^ Jakú rolu, to sa ešte ukáže...
 mno_go_forth|Vydaj sa na svoju zvolenú cestu...
+mno_change_tld_options|Zmeniť nastavenia TLD.
 menu_start_game_3|^^^^^^^^Zvoľ si scénar
 mno_custom_battle_scenario_1|Bitka, Gondorské frakcie proti Haradu
 mno_custom_battle_scenario_12|Vyber si frakcie pre bitku
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Testovacia bitka scény
 mno_troll_battle_scenario|Bitka pre testovanie trolov
 mno_warg_battle_scenario|Bitka pre testovanie vrrkov
 mno_build_your_own_scene|** Vybuduj svoju vlastnú scénu pre TLD **
+mno_go_back|Späť
 menu_tutorial|^^ Vitaj v Návode Boja pre Mount & Blade. Naučíš sa tu základy boja a dostaneš tiež stručný prehľad o rozkazoch, ktoré môžeš dávať svojím jednotkám na bojovom poli.
 mno_tutorial_1|Cvičenie #1: Základný pohyb a výber zbrane. {s1}
 mno_tutorial_2|Cvičenie #2: Boj zo štítom. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Zvol si svojú rasu:
 mno_start_ma|ČLOVEK
 mno_start_el|ELF
 mno_start_dw|TRPASLÍK
-mno_go_back|Späť
 menu_start_evil|^^^^^^^^^^Komu slúžiš?
 mno_start_eye|Sauronovi z Mordoru, Pánovi Prsteňov
 mno_start_hand|Sarumanovi z Isengardu, Bielej Ruke
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Hodnota získaného Vplyvu: {s7}
 mno_strat_tweaks_rank_gain_rate|Hodnota získanej Hodnosti: {s7}
 mno_strat_tweaks_back|Späť do menu úprav.
 menu_camp_action|^^^^^^^^^ Ktorý predmet?
-mno_camp_customize_defilement|Vytvor si Poškvrnené Brnenie
 mno_camp_drink_water|Vypi Entskú Vodu!
 mno_camp_action_4|Späť.
 menu_assasins_attack_player_won|Vrahovia z {s2}, poslaný {s3}, boli úspešne porazený.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Vstúpiť do trpasličieho skladiska
 mno_talk_to_castle_commander|Ísť do {s61} kasární.
 mno_speak_with_elder|Prehovoriť s {s6}.
 mno_isengard_underground|Ísť do podzemných jaskýň.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Vyšplhať na horné poschodie.
 mno_erebor_gates|Navštívte Veľké Brány.
 mno_town_leave|Odísť...
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^Posol, ktorý dorazil, ti oznámil, že ť
 mno_player_added_to_war_council_close|Zavrieť
 menu_player_added_to_siege_reports|Prišiel posol a povedal vám, že teraz, ako {s24}, budete dostávať správy vždy, keď {s2} obliehajú centrá alebo keď sú strediská {s2} obťažované.
 mno_player_added_to_siege_reports_close|Zavrieť
-menu_player_added_to_allow_follow|Prišiel posol a povedal vám, že teraz, ako {s24}, budete mať povolený príkaz {s2}, ktorý vás bude nasledovať, pre celkom maximálnych nasledovníkov {reg55}.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Zavrieť
 menu_center_besieged_event|^^^^^Posol ti doniesol správu že {s1} je obliehané {s2}om z {s3}u.
 mno_center_besieged_event_close|Zavrieť

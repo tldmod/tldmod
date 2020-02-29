@@ -73,7 +73,7 @@ itm_troll_shield_a|Escudo de Troll
 itm_arrows|Flechas
 itm_gondor_arrows|Flechas de Gondor
 itm_orc_javelin|Jabalina Pesada Orca
-itm_khergit_arrows|Flechas Dentadas
+itm_khergit_arrows|Flechas Rohirrim
 itm_rohan_arrows_2|Flechas Rohirrim
 itm_harad_arrows|Flechas Haradrim
 itm_corsair_arrows|Flechas Corsarias
@@ -85,8 +85,6 @@ itm_isengard_arrow|Flechas de Isengard
 itm_leather_gloves|Guantes de Cuero
 itm_mail_mittens|Manoplas de Malla
 itm_leather_boots|Botas de Cuero
-itm_leather_boots_dark|Botas de Jinete
-itm_splinted_greaves|Grebas de Láminas
 itm_white_tunic_a|Atuendo de Civil
 itm_rohan_shoes|Zapatos de Cuero
 itm_furry_boots|Botas Peludas
@@ -95,7 +93,6 @@ itm_hood_black|Capucha Negra
 itm_hood_green|Capucha Verde
 itm_hood_grey|Capucha Gris
 itm_hood_leather|Capucha de Cuero
-itm_axe_a|Hacha Norteña
 itm_axe_b|Hacha Barbada Norteña
 itm_axe_c|Hacha Norteña
 itm_axe_d|Hacha Norteña
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Espada de Rivendel
 itm_riv_riding_sword|Espada de Caballería de Rivendel
 itm_riv_archer_sword|Espada de Arquero de Rivendel
 itm_riv_spear|Lanza de Rivendel
-itm_riv_armor_light|Armadura Ligera de Rivendel
-itm_riv_armor_light_inf|Armadura Ligera de Rivendel
-itm_riv_armor_archer|Armadura de Arquero de Rivendel
-itm_riv_armor_m_archer|Armadura de Arquero de Rivendel
-itm_riv_armor_med|Armadura de Rivendel
-itm_riv_armor_heavy|Armadura Pesada de Rivendel
+itm_riv_light|Túnica de Rivendel
+itm_riv_leather|Armadura de Cuero de Rivendel
+itm_riv_foot_mail|Cota de Malla de Rivendel
+itm_riv_foot_scale|Armadura de Escamas de Rivendel
+itm_riv_surcoat|Sobrevesta de Rivendel
+itm_riv_knight|Armadura de Caballero de Rivendel
 itm_riv_armor_h_archer|Armadura Pesada de Arquero de Rivendel
 itm_riv_armor_leader|Armadura de Líder de Rivendel
 itm_riv_boots|Botas de Rivendel
@@ -193,7 +190,7 @@ itm_gondor_med_greaves|Grebas Medias de Gondor
 itm_gondor_heavy_greaves|Grebas Reforzadas de Gondor
 itm_gondorian_light_helm|Yelmo de Infante de Gondor
 itm_gondor_infantry_helm|Yelmo de Infantería de Gondor
-itm_gondor_auxila_helm|Yelmo de Auxiliar de Gondor
+itm_gondor_auxila_helm|Yelmo Ligero de Gondor
 itm_gondorian_light_helm_b|Yelmo Ligero de Arquero de Gondor
 itm_gondorian_archer_helm|Yelmo de Arquero de Gondor
 itm_tower_archer_helm|Yelmo de Arquero de la Torre
@@ -201,7 +198,7 @@ itm_gondor_leader_helm|Yelmo Alto de Gondor
 itm_tower_guard_helm|Yelmo de la Guardia de la Torre
 itm_gondor_citadel_knight_helm|Yelmo de Caballero de la Ciudadela
 itm_gondor_squire_helm|Yelmo de Escudero de Gondor
-itm_gondor_knight_helm|Yelmo de Caballero de Gondor
+itm_gondor_knight_helm|Yelmo de Caballería de Gondor
 itm_gondor_dolamroth_helm|Yelmo de Dol Amroth
 itm_swan_knight_helm|Yelmo de Caballero Cisne
 itm_gondor_lamedon_helm|Yelmo de Lamedon
@@ -465,7 +462,6 @@ itm_dun_helm_a|Gorro de Lobo Dunlendino
 itm_dun_helm_b|Gorro con Cuernos Dunlendino
 itm_dun_helm_c|Yelmo Alto Dunlendino
 itm_dun_helm_d|Yelmo Alto Dunlendino
-
 itm_dun_helm_e|Yelmo Astado Dunlendino
 itm_dun_shield_a|Escudo Dunlendino
 itm_dun_shield_b|Escudo Dunlendino
@@ -509,21 +505,22 @@ itm_rohirrim_war_greaves|Grebas de Guerra de Rohan
 itm_mirkwood_leather|Armadura de Cuero de los Elfos del Bosque
 itm_mirkwood_pad|Cota Acolchada del Bosque Verde
 itm_mirkwood_mail|Malla del Bosque Verde
-itm_mirkwood_scale|Armadura Ligera de Ecamas del Bosque Verde
+itm_mirkwood_scale|Armadura Ligera de Escamas del Bosque Verde
 itm_mirkwood_heavy_scale|Armadura Hojaescama del Bosque Negro
-itm_mirkwood_great_spear|Gran Lanza del Bosque Negro 
-itm_mirkwood_war_spear|Lanza de Guerra del Bosque Negro
-itm_mirkwood_short_spear|Lanza del Bosque Negro
-itm_mirkwood_knife|Cuchillo Blanco del Bosque Negro
-itm_mirkwood_axe|Hacha del Bosque Negro
-itm_mirkwood_spear_shield_a|Escudo del Bosque Negro
-itm_mirkwood_spear_shield_b|Escudo de Guerra del Bosque Negro
-itm_mirkwood_spear_shield_c|Escudo Redondo del Bosque Negro
-itm_mirkwood_helm_a|Yelmo de Arquero del Bosque Negro
-itm_mirkwood_helm_b|Yelmo del Bosque Negro
-itm_mirkwood_helm_c|Yelmo Pesado del Bosque Negro
-itm_mirkwood_helm_d|Yelmo Real del Bosque Negro
-itm_mirkwood_boots|Botas del Bosque Negro
+itm_mirkwood_great_spear|Gran Lanza del Bosque Verde
+itm_mirkwood_war_spear|Lanza de Guerra del Bosque Verde
+itm_mirkwood_short_spear|Lanza de los Elfos del Bosque
+itm_mirkwood_knife|Cuchillo de los Elfos del Bosque
+itm_mirkwood_axe|Hacha de los Elfos del Bosque
+itm_mirkwood_spear_shield_a|Cuchillo de los Elfos del Bosque
+itm_mirkwood_spear_shield_b|Escudo de Guerra del Bosque Verde
+itm_mirkwood_spear_shield_c|Escudo Redondo de los Elfos del Bosque
+itm_mirkwood_helm_a|Yelmo de Arquero de los Elfos del Bosque
+itm_mirkwood_helm_b|Yelmo del Bosque Verde
+itm_mirkwood_helm_c|Yelmo Pesado del Bosque Verde
+itm_mirkwood_helm_d|Yelmo Real del Bosque Verde
+itm_free_mirkwood_leather_greaves|Grebas de Cuero del Bosque Negro
+itm_mirkwood_boots|Botas de los Elfos del Bosque
 itm_harad_tunic|Túnica de Harad
 itm_harad_padded|Armadura Acolchada de Harondor
 itm_harad_hauberk|Cota de Malla de Harondor
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Escudo Serpiente de Harad
 itm_harad_shield_a|Escudo de Harondor
 itm_harad_shield_b|Rodela de Harondor
 itm_harad_shield_c|Rodela de Harondor
-
 itm_harad_yellow_shield|Escudo de Harad
 itm_desert_boots|Botas del Desierto
 itm_harad_leather_greaves|Grebas de Harad
@@ -583,10 +579,10 @@ itm_khand_cav_helm_b|Yelmo de Jinete de Khand
 itm_khand_cav_helm_c|Yelmo Decorado de Khand
 itm_khand_helm_mask|Máscara de Khand
 itm_khand_light|Kilt de Khand
-itm_khand_light_lam|Armadura de Láminas Ligera de Khand
+itm_khand_light_lam|Armadura Ligera de Láminas de Khand
 itm_khand_foot_lam|Armadura de Infante de Khand
-itm_khand_med_lam|Armadura de Láminas Media de Khand
-itm_khand_heavy_lam|Armadura de Láminas Pesada de Khand
+itm_khand_med_lam|Armadura de Láminas de Khand
+itm_khand_heavy_lam|Armadura Pesada de Láminas de Khand
 itm_khand_axe_great|Gran Hacha de Khand
 itm_khand_axe_winged|Hacha de Aletas de Khand
 itm_khand_halberd|Alabarda de Khand
@@ -640,8 +636,8 @@ itm_rhun_shortsword|Espada Corta Salvaje
 itm_rhun_sword|Espada Salvaje
 itm_rhun_shield|Escudo Cometa de Rhûn
 itm_dale_light_a|Chaqueta de la Milicia de Valle
-itm_dale_light_b|Armadura de Láminas Ligera Norteña
-itm_dale_med_a|Armadura de Láminas Pesada Norteña
+itm_dale_light_b|Armadura Ligera de Láminas Norteña
+itm_dale_med_a|Armadura Pesada de Láminas Norteña
 itm_dale_med_b|Armadura de Cuero de Valle
 itm_dale_med_c|Armadura de Cuero Sobre Malla de Valle
 itm_dale_med_d|Armadura de Láminas de Valle
@@ -751,7 +747,6 @@ itm_dwarf_pad_boots|Botas Acolchadas Enanas
 itm_dwarf_chain_boots|Calzas de Malla Enanas
 itm_dwarf_scale_boots|Botas de Escamas Enanas
 itm_good_mace|Maza
-itm_far_harad_shield_paint|Escudo de Mimbre
 itm_mordor_banner|Estandarte de Mordor
 itm_isengard_banner|Estandarte de Isengard
 itm_woodelf_banner|Estandarte del Bosque Negro
@@ -811,7 +806,9 @@ itm_beorn_axe_reward|Garrote de Oso
 itm_moria_arrow_reward|Flechas Envenenadas de Moria
 itm_khamul_helm|Yelmo de Khamul
 itm_black_arrows_reward|Flechas Negras
+itm_leather_boots_reward|Botas de cazador
 itm_rohan_armor_th|Armadura Real de Rohan
+itm_wilderness_amulet|Amuleto de las Tierras Salvajes
 itm_prisoner_coll_chain|Cadenas de Prisionero
 itm_witchking_helmet|Casco Maldito
 itm_lorien_royal_armor|Armadura Real de Lórien

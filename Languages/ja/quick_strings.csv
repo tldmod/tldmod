@@ -248,6 +248,8 @@ qstr_nothing|なし
 qstr_Good|良
 qstr_Med|平凡
 qstr_Bad|悪
+qstr_{s77}_received_{reg8|{s77}は{reg84}のボーナス経験値を獲得しました
+qstr_You_gained_{reg84}_i|あなたは知性ボーナスとして{reg84}の経験値を獲得しました
 qstr_{reg4}_killed_{reg5}|{reg4}名死亡、{reg5}名負傷、{reg6}名離脱
 qstr_{reg4}_killed_{reg5}_|{reg4}名死亡、{reg5}名負傷
 qstr_{reg4}_killed_{reg5}_r|{reg4}名死亡、{reg5}名離脱
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|あなたの馬がよろめいています！どうや
 qstr_Bitten_by_your_own_w|あなたのワーグが噛み付いてきました！
 qstr_You_weigh_too_much_f|ポニーに乗るには、あなたは重すぎます！
 qstr_Your_mount_rears_ref|あなたの馬は座り込んでしまい、命令を拒絶しています！
+qstr_Cannot_Change_Camera|一人称視点ではカメラモードの変更はできません。
+qstr_Switch_Back_to_3rd_P|三人称視点に切り替えてカメラモードを変更する。
 qstr_Fixed_Custom_Camera|固定カスタムカメラ
 qstr_Press_Ctrl_+_Left_/_|Ctrl+左矢印/Ctrl+右矢印キーで肩口の切り替え
+qstr_Press_Ctrl_+_Down_to|Ctrl+下矢印キーで中央
 qstr_Use_+/__to_zoom_in/o|+/-でズームイン、ズームアウト
 qstr_Use_Up/Down_arrow_ke|上下の矢印キーで傾きの調整
 qstr_Fixed_Camera___Right|固定カメラ - 右肩
 qstr_Fixed_Camera___Left_|固定カメラ - 左肩
+qstr_Fixed_Camera___Cente|固定カメラ - 中央
 qstr_While_visiting_towns|町や拠点、野営のなかでは、歩き回っている人々と話をすることができます。 話の内容は各勢力によって違い、 自分たちの考えだったり、 うわさ話だったりします。 どちらもその人物の文化と所属勢力についての理解を深めるだけのものですが、 秘密の場所のヒントや、 旅をする上や指輪戦争を戦う上でのヒントやコツを話してくれる事もあります。
 qstr_Cannot_leave_now.|今は離脱できません。
 qstr_You_have_found_the_l|鍛冶屋をみつけました・・・(+{reg3} XP)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|{s1}を攻撃します。
 qstr_The_battle_against_t|{s1}との戦いは続きます。
 qstr_There_are_{reg39}_al|この戦いには{reg39}名の指揮官が参戦しています。 影響力ポイントを{reg40}消費することで、 彼らの兵を指揮する事ができます。
 qstr_Having_a_small_party|少数部隊ならではの強みというのはあるのです・・・ あなたと部下たちは敵勢から姿を隠すと、 念のためにそのまま数時間待機しました。
-qstr_Your_ability_to_surv|過酷な環境を生き延びる事のできるあなたの能力をもって、 安全に身を隠す事のできる場所を確保しました。(あなたのワイルドクラフトのスキルでは、 {reg1}名の兵とともに身を隠す事ができます)
+qstr_Your_ability_to_mast|自然環境の利用に長けるあなたの能力をもって、 安全に身を隠す事のできる場所を確保しました。(あなたのワイルドクラフトのスキルでは、 {reg1}名の兵とともに身を隠す事ができます)
 qstr_{reg4}_will_be_lost.|兵{reg4}名を失います。
 qstr_{s13}_asked_you_to_r|{s13}より、 最低でも{reg13}名の兵を連れて出頭せよ、 との命令を受けました。
 qstr_{s13}_ordered_you_to|あなたも{s14}攻めに加わるよう、 {s13}より命令が下されました。
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|あなたの{s4}戦の勝利を{s3}が見届けまし�
 qstr_Even_though_there_we|あなたの勝利を見届ける友軍はいませんが、それでもあなたの兵たちはこの勝利を祝いました。
 qstr_{s1}_of_{s3}_managed|{s3}の{s1}は逃げのびました。
 qstr_Prisoners_rescued_so|これまでに救出した捕虜の数:{reg1}名
-qstr_Victory_comment._Pla|勝利のコメント。 プレイヤー単独。
-qstr_Ordinary_victory_com|一般的な勝利のコメント。 全兵力の40%以上をプレイヤーの部隊が占める。
-qstr_Player_participation|プレイヤーが参加したときのコメント。 戦闘開始時の敵兵力が1000以上。
-qstr_No_victory_comment._|勝利のコメントなし。 小規模の戦闘かつプレイヤーの部隊は全兵力の40%以下。
 qstr_{reg1}_kills_of_{s1}|誓いを遂げるために{s1}の兵を{reg1}名殺した。 殺害数合計: {reg0}名
-qstr_Some_of_your_tendons|あなたはこの戦闘で筋を痛めました。 体力が1下がりました。
-qstr_You_took_a_nasty_wou|あなたはこの戦闘でひどい傷を負い、 傷の完治後も少し足をひきずるようになりました。 敏捷性が1下がりました。
-qstr_You_have_trouble_thi|頭を強く打ったせいか、 あなたは慢性的な頭痛に悩まされるようになってしまい、 考えをまとめるのに苦労するようになりました。 知性が1下がりました。
 qstr_Perhaps_I_m_getting_|最近、 ツキがなくなってきたようだ・・・
 qstr_Retirement_is_starti|あなたは最近、 引退の事を考える時間が多くなってきました。
 qstr_No_matter!_I_will_pe|どんな事があろうと、がんばるぞ！
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|磁石はどうしてくっつくの？
 qstr_Um..._by_enchanting_|ええっと・・・鉄に・・・鉄に魔法をかけたから？
 qstr_Magnets_are_made_of_|磁石は地中から掘り出した金属で出来ていて、 その中に地球の重力がちょっと残っています。 それが磁力となっているのです。
 qstr_i_wont_a_bonerlrord_|ボナールロード版はまだかよ！
-qstr_Install_TLD_in_your_|TLDをBannerlordのModulesフォルダに入れて、 module.iniに^”compatible_with_wfas = 1”^の一行を追加してやれば WarbandとWarrider 0.202の両方でプレイできるよ！
-qstr_Bannerlord_is_runnin|Bannerlordはまた別のゲームエンジンを採用しています。 TLDのWarband版をつくったときのようにはいかないのです。
+qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
 qstr_dis_mod_takes_2_long|このmodはリリースまでに長くかかりすぎだよ！
 qstr_Well_there_s_a_lot_o|新しいモデルやらマップやら毎回いろいろと追加するので、 どうしても時間がかかってしまうのです。
 qstr_It_has_been_recently|こないだ新バージョンが出たばっかりだよ lemonparty.orgからダウンロードできるよ

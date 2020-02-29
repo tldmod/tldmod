@@ -73,7 +73,7 @@ itm_troll_shield_a|Trolí štít
 itm_arrows|Šípy
 itm_gondor_arrows|Gondorské šípy
 itm_orc_javelin|Orkský těžký oštěp
-itm_khergit_arrows|Ostnaté šípy
+itm_khergit_arrows|Rohanské šípy
 itm_rohan_arrows_2|Rohanské šípy
 itm_harad_arrows|Haradské šípy
 itm_corsair_arrows|Korzárské šípy
@@ -85,8 +85,6 @@ itm_isengard_arrow|Šípy Železného pasu
 itm_leather_gloves|Kožené rukavice
 itm_mail_mittens|Kroužkové palčáky
 itm_leather_boots|Kožené boty
-itm_leather_boots_dark|Jezdecké boty
-itm_splinted_greaves|Vyztužené rukavice
 itm_white_tunic_a|Oblek civilisty
 itm_rohan_shoes|Kožené boty
 itm_furry_boots|Kožešinové boty
@@ -95,7 +93,6 @@ itm_hood_black|Černá Kápě
 itm_hood_green|Zelená kápě
 itm_hood_grey|Šedá kapuce
 itm_hood_leather|Kožená kapuce
-itm_axe_a|Severská sekera
 itm_axe_b|Severská Bradatice
 itm_axe_c|Severská sekera
 itm_axe_d|Severská sekera
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Rivendelský meč
 itm_riv_riding_sword|Rivendelský jezdecký meč
 itm_riv_archer_sword|Rivendellský lučišnický Meč
 itm_riv_spear|Rivendelské kopí
-itm_riv_armor_light|Rivendelská zbroj
-itm_riv_armor_light_inf|Rivendelská zbroj
-itm_riv_armor_archer|Rivendelská zbroj
-itm_riv_armor_m_archer|Rivendelská zbroj
-itm_riv_armor_med|Rivendelská zbroj
-itm_riv_armor_heavy|Rivendelská zbroj
+itm_riv_light|Tunika z Roklinky
+itm_riv_leather|Kožená zbroj Roklinky
+itm_riv_foot_mail|Zbroj Roklinky
+itm_riv_foot_scale|Šupinová zbroj Roklinky
+itm_riv_surcoat|Plášť Roklinky
+itm_riv_knight|Rytířská zbroj Roklinky
 itm_riv_armor_h_archer|Rivendelská zbroj
 itm_riv_armor_leader|Zbroj Rivendelského vůdce
 itm_riv_boots|Rivendelské boty
@@ -193,7 +190,7 @@ itm_gondor_med_greaves|Gondorské střední holenice
 itm_gondor_heavy_greaves|Gondorské kroužkové holenice
 itm_gondorian_light_helm|Gondorská pěší helma
 itm_gondor_infantry_helm|Gondorská pěchotní přilbice
-itm_gondor_auxila_helm|Gondorská přilba pomocných sborů
+itm_gondor_auxila_helm|Gondorská lehká helma
 itm_gondorian_light_helm_b|Gondorská přilba mužů s lukem
 itm_gondorian_archer_helm|Gondorská lučištnická přilbice
 itm_tower_archer_helm|Přilba lučištníků Stráže citadely
@@ -465,7 +462,6 @@ itm_dun_helm_a|Dunlandská vlčí čapka
 itm_dun_helm_b|Dunlandská čapka s parohy
 itm_dun_helm_c|Dunlandská vysoká čapka
 itm_dun_helm_d|Dunlandská vysoká čapka
-
 itm_dun_helm_e|Dunlandská helma s parohy
 itm_dun_shield_a|Dunlandský štít
 itm_dun_shield_b|Dunlandský štít
@@ -511,19 +507,20 @@ itm_mirkwood_pad|Prošívaný kabát Zeleného Hvozdu
 itm_mirkwood_mail|Zbroj Zeleného Hvozdu
 itm_mirkwood_scale|Lehká šupinová zbroj Zeleného Hvozdu
 itm_mirkwood_heavy_scale|Lístko-šupinové brnění z Temného hvozdu
-itm_mirkwood_great_spear|Velké kopí Temného hvozdu
-itm_mirkwood_war_spear|Válečné kopí Temného hvozdu
-itm_mirkwood_short_spear|Kopí Temného hvozdu
-itm_mirkwood_knife|Bílý nůž z Temného hvozdu
-itm_mirkwood_axe|Sekera Temného hvozdu
-itm_mirkwood_spear_shield_a|Štít Temného hvozdu
-itm_mirkwood_spear_shield_b|Válečný štít Temného hvozdu
-itm_mirkwood_spear_shield_c|Kulatý štít Temného hvozdu
-itm_mirkwood_helm_a|Helma lučištníka Temného hvozdu
-itm_mirkwood_helm_b|Přilba z Temného hvozdu
-itm_mirkwood_helm_c|Těžká helma Temného hvozdu
-itm_mirkwood_helm_d|Královská helma Temného hvozdu
-itm_mirkwood_boots|Boty z Temného hvozdu
+itm_mirkwood_great_spear|Velké kopí Zeleného hvozdu
+itm_mirkwood_war_spear|Válečné kopí Zeleného hvozdu
+itm_mirkwood_short_spear|Kopí Lesních elfů
+itm_mirkwood_knife|Nůž Lesních elfů
+itm_mirkwood_axe|Sekera Lesních elfů
+itm_mirkwood_spear_shield_a|Štít Lesních elfů
+itm_mirkwood_spear_shield_b|Válečný štít Zeleného hvozdu
+itm_mirkwood_spear_shield_c|Kulatý štít Lesních elfů
+itm_mirkwood_helm_a|Helma lučištníka Lesních elfů
+itm_mirkwood_helm_b|Přilba z Zeleného hvozdu
+itm_mirkwood_helm_c|Těžká helma Zeleného hvozdu
+itm_mirkwood_helm_d|Královská helma Zeleného hvozdu
+itm_free_mirkwood_leather_greaves|Kožené naholeníky z Temného hvozdu
+itm_mirkwood_boots|Boty Lesních elfů
 itm_harad_tunic|Haradská tunika
 itm_harad_padded|Harondorská prošívanice
 itm_harad_hauberk|Harondorské brnění
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Haradský Hadí štít
 itm_harad_shield_a|Harondorský štít
 itm_harad_shield_b|Harondorský štít
 itm_harad_shield_c|Harondorský štít
-
 itm_harad_yellow_shield|Haradský štít
 itm_desert_boots|Pouštní boty
 itm_harad_leather_greaves|Haradské naholeníky
@@ -751,7 +747,6 @@ itm_dwarf_pad_boots|Trpasličí vycpávané boty
 itm_dwarf_chain_boots|Trpasličí kroužkové nohavice
 itm_dwarf_scale_boots|Trpasličí šupinové boty
 itm_good_mace|Palice
-itm_far_harad_shield_paint|Proutěný štít
 itm_mordor_banner|Zástava Mordoru
 itm_isengard_banner|Zástava Železného pasu
 itm_woodelf_banner|Zástava Temného hvozdu
@@ -811,7 +806,9 @@ itm_beorn_axe_reward|Sekera Meddědovců
 itm_moria_arrow_reward|Otrávené šípy Morie
 itm_khamul_helm|Khamulova helma
 itm_black_arrows_reward|Černé šípy
+itm_leather_boots_reward|Lovecké boty
 itm_rohan_armor_th|Rohanská královská zbroj
+itm_wilderness_amulet|Amulet divočiny
 itm_prisoner_coll_chain|Řetězy otroků
 itm_witchking_helmet|Helma pána nazgûlů
 itm_lorien_royal_armor|Lorienské královské brnění

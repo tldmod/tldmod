@@ -73,7 +73,7 @@ itm_troll_shield_a|Bouclier Troll
 itm_arrows|Flèches
 itm_gondor_arrows|Flèches du Gondor
 itm_orc_javelin|Javelot Lourd d'Orque
-itm_khergit_arrows|Flèches acérées
+itm_khergit_arrows|Flèches rohirrim
 itm_rohan_arrows_2|Flèches rohirrim
 itm_harad_arrows|Flèches haradrim
 itm_corsair_arrows|Flèches corsaires
@@ -85,8 +85,6 @@ itm_isengard_arrow|Flèches de l'Isengard
 itm_leather_gloves|Gants en cuir
 itm_mail_mittens|Mitaines de mailles
 itm_leather_boots|Bottes en cuir
-; itm_leather_boots_dark|Rider Boots
-itm_splinted_greaves|Jambières renforcées
 itm_white_tunic_a|Tenue civil
 itm_rohan_shoes|Chaussures de cuir
 itm_furry_boots|Bottes de fourrure
@@ -95,7 +93,6 @@ itm_hood_black|Capuchon noir
 itm_hood_green|Capuchon vert
 itm_hood_grey|Capuchon gris
 itm_hood_leather|Capuchon en cuir
-itm_axe_a|Hache d'Homme du Nord
 itm_axe_b|Hache à barbe d'Homme du Nord
 itm_axe_c|Hache d'Homme du Nord
 itm_axe_d|Hache d'Homme du Nord
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Épée de Fondcombe
 itm_riv_riding_sword|Épée de cavalerie de Fondcombe
 itm_riv_archer_sword|Épée d'archer de Fondcombe
 itm_riv_spear|Lance de Fondcombe
-itm_riv_armor_light|Armure de Fondcombe
-itm_riv_armor_light_inf|Armure de Fondcombe
-itm_riv_armor_archer|Armure de Fondcombe
-itm_riv_armor_m_archer|Armure de Fondcombe
-itm_riv_armor_med|Armure de Fondcombe
-itm_riv_armor_heavy|Armure de Fondcombe
+; itm_riv_light|Rivendell Tunic
+; itm_riv_leather|Rivendell Leather Armor
+; itm_riv_foot_mail|Rivendell Mail
+; itm_riv_foot_scale|Rivendell Scale
+; itm_riv_surcoat|Rivendell Surcoat
+; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|Armure de Fondcombe
 itm_riv_armor_leader|Armure de seigneur de Fondcombe
 itm_riv_boots|Bottes de Fondcombe
@@ -193,15 +190,15 @@ itm_gondor_med_greaves|Jambières moyennes gondoriennes
 itm_gondor_heavy_greaves|Jambières de mailles gondoriennes
 itm_gondorian_light_helm|Heaume de fantassin gondorien
 itm_gondor_infantry_helm|Heaume d'infanterie gondorien
-itm_gondor_auxila_helm|Heaume d'auxiliaire gondorien
+; itm_gondor_auxila_helm|Gondor Light Helm
 itm_gondorian_light_helm_b|Heaume d'archer novice gondorien
-itm_gondorian_archer_helm|Heaume d'archer gondorien
+; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|Heaume d'Archer de la Tour
 itm_gondor_leader_helm|Heaume du Gondor
 itm_tower_guard_helm|Heaume de Garde de la Tour
 itm_gondor_citadel_knight_helm|Heaume de Chevalier de la Citadelle
 itm_gondor_squire_helm|Heaume d'écuyer du Gondor
-itm_gondor_knight_helm|Heaume de chevalier du Gondor
+; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Heaume de Dol Amroth
 itm_swan_knight_helm|Heaume de Chevalier du Cygne
 itm_gondor_lamedon_helm|Casque du Lamedon
@@ -415,7 +412,7 @@ itm_m_uruk_med_b|Cotte de mailles lourde uruk
 itm_m_uruk_med_c|Armure d'écailles légère uruk
 itm_m_uruk_heavy_a|Armure d'écailles lourde uruk
 itm_m_uruk_heavy_b|Armure de plates uruk
-; itm_m_uruk_heavy_c|Lugburz Platemail
+itm_m_uruk_heavy_c|Armure de plates de Lugburz
 itm_m_cap_armor|Armure de capitaine du Mordor
 itm_black_num_armor|Armure de Númenóréen Noir
 itm_m_armor_a|Armure du Mordor
@@ -465,7 +462,6 @@ itm_dun_helm_a|Capuchon de loup de Dun
 itm_dun_helm_b|Capuchon à andouillers de Dun
 itm_dun_helm_c|Grand casque du Pays de Dun
 itm_dun_helm_d|Grand casque du Pays de Dun
-
 itm_dun_helm_e|Casque à Ramures du Pays de Dun
 itm_dun_shield_a|Bouclier du Pays de Dun
 itm_dun_shield_b|Bouclier du Pays de Dun
@@ -511,19 +507,20 @@ itm_mirkwood_leather|Armure en cuir des Elfes Sylvains
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
 itm_mirkwood_heavy_scale|Cuirasse de feuilles de la Forêt Noire
-itm_mirkwood_great_spear|Grande lance de la Forêt Noire
-itm_mirkwood_war_spear|Lance de guerre de la Forêt Noire
-itm_mirkwood_short_spear|Lance de la Forêt Noire
-itm_mirkwood_knife|Couteau blanc de la Forêt Noire
-itm_mirkwood_axe|Hache de la Forêt Noire
-itm_mirkwood_spear_shield_a|Bouclier de la Forêt Noire
-itm_mirkwood_spear_shield_b|Bouclier de guerre de la Forêt Noire
-itm_mirkwood_spear_shield_c|Bouclier rond de la Forêt Noire
-itm_mirkwood_helm_a|Casque d'archer de la Forêt Noire
-itm_mirkwood_helm_b|Casque de la Forêt Noire
-itm_mirkwood_helm_c|Casque lourd de la Forêt Noire
-itm_mirkwood_helm_d|Casque royal de la Forêt Noire
-itm_mirkwood_boots|Bottes de la Forêt Noire
+; itm_mirkwood_great_spear|Greenwood Great Spear
+; itm_mirkwood_war_spear|Greenwood War Spear
+; itm_mirkwood_short_spear|Woodelf Spear
+; itm_mirkwood_knife|Woodelf Knife
+; itm_mirkwood_axe|Woodelf Axe
+; itm_mirkwood_spear_shield_a|Woodelf Shield
+; itm_mirkwood_spear_shield_b|Greenwood War Shield
+; itm_mirkwood_spear_shield_c|Woodelf Round Shield
+; itm_mirkwood_helm_a|Woodelf Archer Helm
+; itm_mirkwood_helm_b|Greenwood Helm
+; itm_mirkwood_helm_c|Greenwood Heavy Helm
+; itm_mirkwood_helm_d|Greenwood Royal Helm
+itm_free_mirkwood_leather_greaves|Jambières de cuir de la Forêt Noire
+; itm_mirkwood_boots|Woodelf Boots
 itm_harad_tunic|Tunique du Harad
 itm_harad_padded|Armure matelassée du Harondor
 itm_harad_hauberk|Haubert du Harondor
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Bouclier serpent du Harad
 itm_harad_shield_a|Bouclier du Harondor
 itm_harad_shield_b|Rondache du Harondor
 itm_harad_shield_c|Rondache du Harondor
-
 itm_harad_yellow_shield|Bouclier du Harad
 itm_desert_boots|Bottes du désert
 itm_harad_leather_greaves|Jambières du Harad
@@ -751,7 +747,6 @@ itm_dwarf_pad_boots|Bottes naines rembourrées
 itm_dwarf_chain_boots|Chausses naines avec mailles
 itm_dwarf_scale_boots|Bottes d'écailles naines
 itm_good_mace|Massue
-itm_far_harad_shield_paint|Bouclier d'osier
 itm_mordor_banner|Bannière du Mordor
 itm_isengard_banner|Bannière de l'Isengard
 itm_woodelf_banner|Bannière de la Forêt Noire
@@ -811,7 +806,9 @@ itm_beorn_axe_reward|Massue ours
 itm_moria_arrow_reward|Flèches empoisonnées de la Moria
 itm_khamul_helm|Heaume de Khamûl
 itm_black_arrows_reward|Flèches noires
+; itm_leather_boots_reward|Hunter Boots
 itm_rohan_armor_th|Armure royale du Rohan
+; itm_wilderness_amulet|Wilderness Amulet
 itm_prisoner_coll_chain|Chaînes de prisonnier
 itm_witchking_helmet|Heaume maléfique
 itm_lorien_royal_armor|Armure royale de la Lórien

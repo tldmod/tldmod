@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Per cosa combatti ?
 mno_start_good|L'alba di una nuova Era
 mno_start_evil|Il tramonto degli Uomini
+mno_faction_intros|Scopri le diverse fazioni della Terra di Mezzo
 mno_go_bback|Torna Indietro
 menu_start_phase_2|Terra di Mezzo. Un'ombra cresce a oriente, ^ oscure entità da lungo tempo nascoste, emergono  nuovamente. ^ I popoli liberi si preparano alla guerra, di una portata tale come non se n'era vista da un'era. ^ Uomini, Elfi, Nani e Orchi; tutti ne saranno parte. ^^ Cosa avverrà, comunque, è tutto da vedere... 
 mno_go_forth|Prosegui per il sentiero che hai scelto...
+mno_change_tld_options|Cambia le opzioni di TLD.
 menu_start_game_3|^^^^^^^^Scegli il tuo scenario:
 mno_custom_battle_scenario_1|Schermaglia, Fazioni di Gondor vs Harad
 mno_custom_battle_scenario_12|Scegli le fazioni per la battaglia
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Testa Scenario Battaglia
 mno_troll_battle_scenario|Testa Battaglie con Troll
 mno_warg_battle_scenario|Testa Battaglie con Mannari
 mno_build_your_own_scene|** Costruisci il tuo personale scenario per TLD **
+mno_go_back|Torna Indietro
 menu_tutorial|^^ Ti diamo il benvenuto alle lezioni di combattimento di TLD. Qui apprenderai le basi del combattimento, oltre ad una panoramica sui comandi da impartire alle truppe sul campo di battaglia.
 mno_tutorial_1|Lezione #1: Movimenti di base e selezione dell'arma. {s1}
 mno_tutorial_2|Lezione #2: Combattimento con lo scudo. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Seleziona la tua razza:
 mno_start_ma|UOMO
 mno_start_el|ELFO
 mno_start_dw|NANO
-mno_go_back|Torna Indietro
 menu_start_evil|^^^^^^^^^^Chi servi ?
 mno_start_eye|Sauron di Mordor, il Signore degli Anelli
 mno_start_hand|Saruman di Isengard, la Mano Bianca
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Tasso d'influenza guadagnata: {s7}
 mno_strat_tweaks_rank_gain_rate|Tasso di Rango guadagnato: {s7}
 mno_strat_tweaks_back|Ritorna al menu delle modifiche.
 menu_camp_action|^^^^^^^^^ Quale oggetto ?
-mno_camp_customize_defilement|Personalizza armatura corrotta
 mno_camp_drink_water|Bevi l'acqua Ent !
 mno_camp_action_4|Indietro.
 menu_assasins_attack_player_won|Hai sconfitto con successo gli assassini da {s2}, inviati da {s3}.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Entra nel Magazzino dei Nani
 mno_talk_to_castle_commander|Visita le caserme di {s61}.
 mno_speak_with_elder|Parla con il {s6}.
 mno_isengard_underground|Dirigiti verso le caverne sotterranee 
+mno_isengard_underground_door|Dirigiti verso le caverne sotterranee
 mno_tirith_toplevel|Raggiungi il livello più alto
 mno_erebor_gates|Visita i Grandi Cancelli.
 mno_town_leave|Vattene...
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^È giunto un messaggero che ti ha riferito
 mno_player_added_to_war_council_close|Chiudi
 menu_player_added_to_siege_reports|^^^^^È giunto un messaggero e ti ha riferito che ora, in qualità di {s24}, riceverai un rapporto ogni volta che {s2} assedierà un centro o quando un centro appartenente a {s2} verrà assediato.
 mno_player_added_to_siege_reports_close|Chiudi
-menu_player_added_to_allow_follow|^^^^^È giunto un messaggero che ti ha riferito che adesso, in qualità di {s24}, avrai facoltà di comandare {s2} perché ti seguano, per un totale di {reg55} al seguito.
+menu_player_added_to_allow_follow|^^^^^È giunto un messaggero, ti riferisce che adesso in qualità di {s24}, avrai facoltà di comandare {s2} perché ti seguano, per un totale di {reg55} al seguito.
 mno_player_added_to_allow_follow_close|Chiudi
 menu_center_besieged_event|^^^^^Giunge un messaggero informando che {s1} è sotto assedio da parte di {s2} di {s3}.
 mno_center_besieged_event_close|Chiudi

@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Za sta se boris?
 mno_start_good|Zora nove ere 
 mno_start_evil|Sumrak covecanstva
+; mno_faction_intros|Learn about the different factions of Middle-Earth
 mno_go_bback|Idi nazad
 menu_start_phase_2|^^^^^ Srednja Zemlja. Senka se nadzire na istoku, ^ i mracne stvari izlaze na povrsinu koje nisu vidjene dosta vremena. ^ Slobodni ljudo se spemaju za rat,rat koji nisu mogucni ni zamisliti. ^ Ljudi, Vilenjaci, Patuljci i Orkovi; svi ce ucestvvati. ^^ Kako? To cemo tek videti...
 mno_go_forth|Idi napred ka tvom izabranom putu...
+mno_change_tld_options|Promeni TLD opcije.
 menu_start_game_3|^^^^^^^^Izaberite vas scenario:
 mno_custom_battle_scenario_1|Sukob, Gondor protiv Harada
 mno_custom_battle_scenario_12|Izaberite frakcije za bitku
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Scenska test bitka
 mno_troll_battle_scenario|Troll test bitke
 mno_warg_battle_scenario|Warg test bitke
 mno_build_your_own_scene|** Napravi tvoju scenu za TLD **
+mno_go_back|Idi nazad
 menu_tutorial|^^Dobrodosli u Combat Tutorijal za Mount & Blade. Ovde ces nauciti osnove u borbi, kao i kratak pregled komandi vojske tokom bitke.
 mno_tutorial_1|Tutorijal #1: Osnovni pokreti i odabir oruzija. {s1}
 mno_tutorial_2|Tutorijal #2: Borba sa stitom. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Izaberi tvoju rasu:
 mno_start_ma|Covek
 mno_start_el|Vilenjak
 mno_start_dw|Patuljak
-mno_go_back|Idi nazad
 menu_start_evil|^^^^^^^^^^Kome sluzis?
 mno_start_eye|SAURONU od Mordora, gospodaru prstenova
 mno_start_hand|SARUMANU od Isengarda, beloj ruci
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Brzina dobijanja uticaja: {s7}
 mno_strat_tweaks_rank_gain_rate|Brzina dobijanja cina: {s7}
 mno_strat_tweaks_back|Vrati se nazad.
 menu_camp_action|^^^^^^^^^ Koji objekat?
-mno_camp_customize_defilement|Modifikuj slab oklop
 mno_camp_drink_water|Popij malo Ent vode!
 mno_camp_action_4|Nazad.
 menu_assasins_attack_player_won|Uspesno si pobedio ubice od {s2}, poslate od {s3}.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Uđji u skladište patuljaka.
 mno_talk_to_castle_commander|Poseti {s61} kasarnu.
 mno_speak_with_elder|Razgovaraj sa {s6}.
 mno_isengard_underground|Idi u podzemne pecine.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Popenji se na vrh.
 ; mno_erebor_gates|Visit the Great Gates.
 mno_town_leave|Napusti...
@@ -343,7 +345,7 @@ mno_gondor_beacons_close|Napusti...
 ; mno_player_added_to_war_council_close|Close
 ; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
 ; mno_player_added_to_siege_reports_close|Close
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 ; mno_player_added_to_allow_follow_close|Close
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 ; mno_center_besieged_event_close|Close

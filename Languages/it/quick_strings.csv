@@ -248,6 +248,8 @@ qstr_nothing|Niente
 qstr_Good|Bene
 qstr_Med|Mediamente forti
 qstr_Bad|Cattivo
+qstr_{s77}_received_{reg8|{s77} ha ottenuto {reg84} Punti Esperienza bonus
+qstr_You_gained_{reg84}_i|Hai ottenuto {reg84} Punti Esperienza bonus per la tua Intelligenza.
 qstr_{reg4}_killed_{reg5}|{reg4} uccisi, {reg5} feriti, {reg6} in rotta
 qstr_{reg4}_killed_{reg5}_|{reg4} uccisi, {reg5} feriti
 qstr_{reg4}_killed_{reg5}_r|{reg4} uccisi, {reg5} in rotta
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|Il tuo animale incespica ! Sembra sia zoppo.
 qstr_Bitten_by_your_own_w|Sei stato morso dal tuo stesso Warg !
 qstr_You_weigh_too_much_f|Pesi troppo per un pony !
 qstr_Your_mount_rears_ref|La bestia s'impenna, rifiuta di obbedire ai tuoi comandi !
+qstr_Cannot_Change_Camera|Non puoi cambiare la Modalità Camera mentre sei in Prima Persona
+qstr_Switch_Back_to_3rd_P|Passare alla vista in 3za persona per scorrere modalità
 qstr_Fixed_Custom_Camera|Telecamera Personalizzata
 qstr_Press_Ctrl_+_Left_/_|Premi CTRL + FRECCIA SX / CTRL + FRECCIA DX per cambiare spalla
+qstr_Press_Ctrl_+_Down_to|Premi Ctrl + Giù per centrare
 qstr_Use_+/__to_zoom_in/o|Usa +/- per zoomare dentro/fuori
 qstr_Use_Up/Down_arrow_ke|Usa le frecce su/giù per inclinare su/giù
 qstr_Fixed_Camera___Right|Inquadratura Fissa - Spalla Destra
 qstr_Fixed_Camera___Left_|Inquadratura Fissa - Spalla Sinistra
+qstr_Fixed_Camera___Cente|Inquadratura Fissa - Centrata
 qstr_While_visiting_towns|Mentre visiti le città, gli insediamenti e gli accampamenti, puoi parlare con le persone che vi si aggirano. I membri delle diverse fazioni hanno cose differenti da dire - alcuni ti sveleranno i loro timori, altri condivideranno indiscrezioni e voci di corridoio. Tutti potranno comunque darti una migliore comprensione della cultura della loro fazione, oppure potrebbero essere detentori d'indizi per trovare luoghi segreti, o di consigli per viaggiare nella natura selvaggia e combattere nella Guerra dell'Anello.
 qstr_Cannot_leave_now.|Non puoi allontanarti in questo momento.
 qstr_You_have_found_the_l|Hai trovato il fabbro locale...(+{reg3} XP)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|Stai attaccando un gruppo di {s1}.
 qstr_The_battle_against_t|La battaglia contro il gruppo di {s1} continua.
 qstr_There_are_{reg39}_al|Ci sono {reg39} comandanti alleati in questa battaglia. Puoi dare ordini a loro e alle loro truppe per {reg40} Punti Influenza.
 qstr_Having_a_small_party|Avere una piccola compagnia ha i suoi vantaggi... Tu e i tuoi uomini potete restare nascosti al nemico per qualche ora per non essere visti.
-qstr_Your_ability_to_surv|La tua capacità di sopravvivere in ambienti difficili ti permette di trovare un posto sicuro dove nasconderti. (La tua abilità in Mimetismo ti permette di nasconderti con {reg1} soldati)
+qstr_Your_ability_to_mast|La tua capacità di sopravvivere in ambienti difficili ti permette di trovare un posto sicuro dove nasconderti. (La tua abilità in Mimetismo ti permette di nasconderti con {reg1} soldati)
 qstr_{reg4}_will_be_lost.|{reg4} sarà perduta.
 qstr_{s13}_asked_you_to_r|{s13} Ti ha chiesto di fare rapporto da lui con almeno {reg13} truppe.
 qstr_{s13}_ordered_you_to|{s13} Ti ha ordinato di unirti nell'assalto contro {s14}.
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3} Testimonia la tua vittoria contro {s4}.
 qstr_Even_though_there_we|Benché non vi siano alleati a testimoniare la tua vittoria, le tue truppe nondimeno celebrano il tuo trionfo.
 qstr_{s1}_of_{s3}_managed|{s1} di {s3} ha trovato il modo di fuggire.
 qstr_Prisoners_rescued_so|Prigionieri salvati per ora: {reg1}
-qstr_Victory_comment._Pla|Commento della vittoria. Il giocatore era solo
-qstr_Ordinary_victory_com|Commento di vittoria ordinario. Il giocatore ha provveduto almeno il 40 percento delle forze.
-qstr_Player_participation|Commento di partecipazione del giocatore. Il nemico ha almeno 1k di potenza iniziale
-qstr_No_victory_comment._|Nessuno commento di vittoria. La battaglia era piccola, e il giocatore a provveduto a meno del 40 percento della forza alleata
 qstr_{reg1}_kills_of_{s1}|{reg1} uccisioni di {s1} truppe della fazione contate per il giuramento. TOTALE abbattimenti: {reg0}
-qstr_Some_of_your_tendons|Parte dei tuoi tendini sono stati danneggiati durante la battaglia. Perdi 1 punto in Forza
-qstr_You_took_a_nasty_wou|Hai subito una grave ferita che ti lascerà leggermente zoppo anche dopo la sua guarigione. Perdi 1 di agiltà.
-qstr_You_have_trouble_thi|Dopo la battaglia hai difficoltà a concentrarti, forse a causa di un colpo alla testa particolarmente forte, e frequenti mal di testa ora tormentano la tua esistenza. La tua intelligenza viene ridotta di 1.
 qstr_Perhaps_I_m_getting_|Forse sto diventando sfortunato...
 qstr_Retirement_is_starti|Il ritiro comincia a suonarti sempre meglio.
 qstr_No_matter!_I_will_pe|Non importa ! Continuerò a provarci !
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|Come funzionano i magneti ?
 qstr_Um..._by_enchanting_|Um... dal ferro incantato ?
 qstr_Magnets_are_made_of_|I magneti sono fatti di metallo, che viene estratto dal terreno . Sono magnetici perché il metallo contiene ancora pezzi di gravità all'interno di esso.
 qstr_i_wont_a_bonerlrord_|Io non...un comdnte...al prto...!!11 !
-qstr_Install_TLD_in_your_|Installa TLD nella cartella Modules di Warband, aggiungi la riga 'compatible_with_wfas = 1' in module.ini, e puoi giocare sia su Warband che Warrider 0.202 ! 
-qstr_Bannerlord_is_runnin|Bannerlord gira su un motore diverso. Non saremo in grado di trasferire TLD su Bannerlord come lo abbiamo portato su Warband.
+qstr_Install_TLD_in_your_|Installa TLD nella cartella Modules di Warband, aggiungere la riga 'compatible_with_wfas = 1' in module.ini, e puoi giocare sia su Warband che Warrider 0.202 !
 qstr_dis_mod_takes_2_long|fratè c'hanno messo troopo pè sta mod ! fa cagare !!11!
 qstr_Well_there_s_a_lot_o|Beh, ci sono un sacco di nuove grafiche e roba, penso che richiede tempo.
 qstr_It_has_been_recently|Di recente è stato rilasciato, se vi siete persi il link, è possibile scaricarlo a lemonparty.org.

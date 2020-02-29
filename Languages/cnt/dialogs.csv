@@ -1029,6 +1029,7 @@ dlga_enemy_defeated:close_window|噁 啊 ! 我 討 厭 這 樣 。
 dlga_party_relieved:close_window|謝 謝 你 幫 我 們 對 付 那 些 渾 蛋 。
 dlga_start:battle_reason_stated|我 會 用 你 的 頭 顱 當 酒 杯 !
 dlga_member_chat_00:close_window.1|^^吼!^^
+; dlga_member_chat_00:close_window.2|^^Grrrrr.....^^
 dlga_member_chat_00:regular_member_talk|有 命 令 嗎，指 揮 官?
 dlga_regular_member_talk:view_regular_char_requested|告 訴 我 關 於 你 自 己 的 事
 dlga_view_regular_char_requested:do_regular_member_view_char|是 的 指 揮 官 。 讓 我 告 訴 你 所 有 我 的 事 。

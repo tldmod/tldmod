@@ -559,8 +559,8 @@ dlga_lord_tell_mission:lord_mission_deliver_message.1|Musím doručit dopis pat�
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Kolik mužů potřebujete?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Pokud vycvičíte {reg1} {s14} a přivedete mi je, tak by to mělo stačit.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Samozřejmě, {s65}. Dej mi {reg1} čerstvých rekrutů a já je vycvičím aby byly {s14}.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Nabýzím jinou metodu, {s65}. Vezmu {reg1} čerstvých rekrutů do arény a něčemu je přiučím
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Nabýzím jinou metodu, {s65}. Vezmu {reg1} čerstvých rekrutů do arény a něčemu je přiučím. Sice z nich nebudou {s14}, ale aspoň se zlepší.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Nabízím jinou metodu, {s65}. Vezmu {reg1} čerstvých rekrutů do arény a něčemu je přiučím
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Nabízím jinou metodu, {s65}. Vezmu {reg1} čerstvých rekrutů do arény a něčemu je přiučím. Sice z nich nebudou {s14}, ale aspoň se zlepší.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Tyto dny jsem příliš zaneprázdněn abych někoho trénoval.
 ; dlga_lord_mission_raise_troops_accepted:close_window|You've taken a weight off my shoulders, {playername}. I shall tell my sergeants to send you the recruits and attach them to your command. Also, I'll advance you some money to help with expenses. Here, this purse should do it. Thank you for your help.
 ; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the arena. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
@@ -1029,6 +1029,7 @@ dlga_enemy_defeated:close_window|Arggh! Tohle nenávidím.
 dlga_party_relieved:close_window|Děkujeme ti za tvou pomoc proti těm bastardům.
 dlga_start:battle_reason_stated|Budu pít s tvé lebky.
 dlga_member_chat_00:close_window.1|Vrčí.
+; dlga_member_chat_00:close_window.2|^^Grrrrr.....^^
 dlga_member_chat_00:regular_member_talk|Vaše rozkazy, veliteli?
 dlga_regular_member_talk:view_regular_char_requested|Řekni mi něco o sobě.
 ; dlga_view_regular_char_requested:do_regular_member_view_char|Yes, Commander. Let me tell you all there is to know about me.

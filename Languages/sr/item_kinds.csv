@@ -73,7 +73,7 @@ itm_troll_shield_a|Trolski štit
 itm_arrows|Strele
 itm_gondor_arrows|Gondorske Strele
 itm_orc_javelin|Orkovsko teško kratko koplje
-itm_khergit_arrows|Bodljikave Strele
+itm_khergit_arrows|Rohirimske Strele
 itm_rohan_arrows_2|Rohirimske Strele
 itm_harad_arrows|Haradrimske Strele
 itm_corsair_arrows|Gusarske strele
@@ -85,8 +85,6 @@ itm_isengard_arrow|Isengardske Strele
 itm_leather_gloves|Kožne Rukavice
 itm_mail_mittens|Mrežaste Rukavice
 itm_leather_boots|Kožne Cipele
-; itm_leather_boots_dark|Rider Boots
-; itm_splinted_greaves|Splinted Greaves
 itm_white_tunic_a|Civilno odelo
 itm_rohan_shoes|Kozne Cizme
 ; itm_furry_boots|Furry Boots
@@ -95,7 +93,6 @@ itm_hood_black|Crna kapuljača
 itm_hood_green|Zelena kapuljaca
 ; itm_hood_grey|Grey Hood
 ; itm_hood_leather|Leather Hood
-itm_axe_a|Severnjačka sekira
 itm_axe_b|Severnjacka bradata sekira
 itm_axe_c|Severnjacka sekira
 itm_axe_d|Severnjačka sekira
@@ -163,12 +160,12 @@ itm_riv_1h_sword|Rivendalski Mač
 itm_riv_riding_sword|Rivendalski Konjanički Mač
 itm_riv_archer_sword|Rivendelski streljački mač
 itm_riv_spear|Rivendalsko Koplje
-itm_riv_armor_light|Rivendalski Oklop
-itm_riv_armor_light_inf|Rivendalski Oklop
-itm_riv_armor_archer|Rivendalski Oklop
-itm_riv_armor_m_archer|Rivendalski Oklop
-itm_riv_armor_med|Rivendalski Oklop
-itm_riv_armor_heavy|Rivendalski Oklop
+; itm_riv_light|Rivendell Tunic
+; itm_riv_leather|Rivendell Leather Armor
+; itm_riv_foot_mail|Rivendell Mail
+; itm_riv_foot_scale|Rivendell Scale
+; itm_riv_surcoat|Rivendell Surcoat
+; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|Rivendalski Oklop
 itm_riv_armor_leader|Oklop Rivendalskog Vođe
 itm_riv_boots|Rivendalske Cipele
@@ -193,15 +190,15 @@ itm_gondor_med_greaves|Gondorske srednje čizme
 itm_gondor_heavy_greaves|Gondorske verižnačke čizme
 itm_gondorian_light_helm|Kaciga Gondorskog Pešadinca
 itm_gondor_infantry_helm|Kaciga Gondorske Pešadije
-itm_gondor_auxila_helm|Gondorska plaćenički šlem
+; itm_gondor_auxila_helm|Gondor Light Helm
 itm_gondorian_light_helm_b|Gondorski streljački šlem
-itm_gondorian_archer_helm|Gondorski streljački šlem
+; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|Kaciga Strelca Kule
 itm_gondor_leader_helm|Gondorska visoka kaciga
 itm_tower_guard_helm|Kaciga Čuvara Kule
 itm_gondor_citadel_knight_helm|Kaciga Viteza Citadele
 itm_gondor_squire_helm|Kaciga Plemića Gondora
-itm_gondor_knight_helm|Kaciga Viteza Gondora
+; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Kaciga Dol Amrota
 itm_swan_knight_helm|Kaciga Labudovog Viteza
 itm_gondor_lamedon_helm|Lamedonska Kaciga
@@ -465,7 +462,6 @@ itm_dun_helm_a|Dunska Vuk Kaciga
 itm_dun_helm_b|Dunska Kaciga Sa Rogovima
 itm_dun_helm_c|Dunska Velika Kaciga
 itm_dun_helm_d|Dunska Velika Kaciga
-
 ; itm_dun_helm_e|Dunnish Antler Helm
 itm_dun_shield_a|Dunski Stit
 itm_dun_shield_b|Dunski Stit
@@ -511,19 +507,20 @@ itm_rohirrim_war_greaves|Rohirim Ratne Cizme
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
 ; itm_mirkwood_heavy_scale|Mirkwood Leafscale
-itm_mirkwood_great_spear|Mirkvodovo Veliko Koplje
-itm_mirkwood_war_spear|Mirkvudovo Ratno Koplje
-itm_mirkwood_short_spear|Mirkvudovo Koplje
-itm_mirkwood_knife|Mirkvudov Beli Noz
-; itm_mirkwood_axe|Mirkwood Axe
-; itm_mirkwood_spear_shield_a|Mirkwood Shield
-itm_mirkwood_spear_shield_b|Mirkvudov Ratni Stit
-; itm_mirkwood_spear_shield_c|Mirkwood Round Shield
-itm_mirkwood_helm_a|Kaciga Strelaca Mirkvuda
-itm_mirkwood_helm_b|Kaciga Mirkvuda
-; itm_mirkwood_helm_c|Mirkwood Heavy Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Helm
-itm_mirkwood_boots|Cizme Mirkvuda
+; itm_mirkwood_great_spear|Greenwood Great Spear
+; itm_mirkwood_war_spear|Greenwood War Spear
+; itm_mirkwood_short_spear|Woodelf Spear
+; itm_mirkwood_knife|Woodelf Knife
+; itm_mirkwood_axe|Woodelf Axe
+; itm_mirkwood_spear_shield_a|Woodelf Shield
+; itm_mirkwood_spear_shield_b|Greenwood War Shield
+; itm_mirkwood_spear_shield_c|Woodelf Round Shield
+; itm_mirkwood_helm_a|Woodelf Archer Helm
+; itm_mirkwood_helm_b|Greenwood Helm
+; itm_mirkwood_helm_c|Greenwood Heavy Helm
+; itm_mirkwood_helm_d|Greenwood Royal Helm
+itm_free_mirkwood_leather_greaves|Mirkvudske Kozne Cizme
+; itm_mirkwood_boots|Woodelf Boots
 itm_harad_tunic|Haradsla Tunika
 itm_harad_padded|Harondorski Tapacirani Oklop
 itm_harad_hauberk|Harodnorska Oklopna Kosulja
@@ -567,7 +564,6 @@ itm_harad_long_shield_e|Haradski Zmija Stit
 itm_harad_shield_a|Harondor Stit
 itm_harad_shield_b|Harondor Mali Stit
 itm_harad_shield_c|Harondor Mali Stit
-
 itm_harad_yellow_shield|Haradski Stit
 itm_desert_boots|Pustinjska Obuca
 itm_harad_leather_greaves|Haradske Oklopne Cizme
@@ -751,7 +747,6 @@ itm_harad_lamellar_greaves|Haradske Cizme
 ; itm_dwarf_chain_boots|Dwarven Mail Chausses
 ; itm_dwarf_scale_boots|Dwarven Scale Boots
 ; itm_good_mace|Mace
-; itm_far_harad_shield_paint|Wicker Shield
 ; itm_mordor_banner|Mordor Banner
 ; itm_isengard_banner|Isengard banner
 ; itm_woodelf_banner|Mirkwood Banner
@@ -811,7 +806,9 @@ itm_harad_lamellar_greaves|Haradske Cizme
 ; itm_moria_arrow_reward|Moria Poisoned Arrows
 ; itm_khamul_helm|Helm of Khamul
 ; itm_black_arrows_reward|Black Arrows
+; itm_leather_boots_reward|Hunter Boots
 ; itm_rohan_armor_th|Rohan Royal Armor
+; itm_wilderness_amulet|Wilderness Amulet
 ; itm_prisoner_coll_chain|Prisoner Chains
 ; itm_witchking_helmet|Wicked Helm
 ; itm_lorien_royal_armor|Lorien Royal Armor

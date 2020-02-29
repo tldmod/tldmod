@@ -248,6 +248,8 @@ qstr_nothing|Nada
 qstr_Good|Bien
 qstr_Med|Normal
 qstr_Bad|Mal
+qstr_{s77}_received_{reg8|{s77} ha recibido {reg84} puntos adicionales de experiencia.
+qstr_You_gained_{reg84}_i|Has ganado {reg84} experiencia por bonif. de Inteligencia
 qstr_{reg4}_killed_{reg5}|{reg4} muertos, {reg5} heridos, {reg6} huidos
 qstr_{reg4}_killed_{reg5}_|{reg4} muertos, {reg5} heridos
 qstr_{reg4}_killed_{reg5}_r|{reg4} muertos, {reg5} huidos
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|¡Tu montura trastabilla! Parece haber quedado coja...
 qstr_Bitten_by_your_own_w|¡Tu propio huargo te ha mordido!
 qstr_You_weigh_too_much_f|¡Pesas demasiado para montar un poney!
 qstr_Your_mount_rears_ref|¡Tu montura se encabrita, negándose a obedecer tus órdenes!
+qstr_Cannot_Change_Camera|No puedes cambiar el modo de cámara si estás en primera persona.
+qstr_Switch_Back_to_3rd_P|Vuelve a la vista en 3ª persona para cambiar la cámara.
 qstr_Fixed_Custom_Camera|Cámara personalizada fija
 qstr_Press_Ctrl_+_Left_/_|Pulsa Ctrl + flecha Izq. / Ctrl + flecha Der. para cambiar la cámara de hombro
+qstr_Press_Ctrl_+_Down_to|Pulsa Ctrl + Abajo para centrar
 qstr_Use_+/__to_zoom_in/o|Utiliza + / - para acercar y alejar
 qstr_Use_Up/Down_arrow_ke|Utiliza las flechas Arriba / Abajo para subir o bajar el punto de vista
 qstr_Fixed_Camera___Right|Cámara: hombro derecho
 qstr_Fixed_Camera___Left_|Cámara fija: hombro izquierdo
+qstr_Fixed_Camera___Cente|Cámara fija - Centrada
 qstr_While_visiting_towns|Mientras visitas los diferentes asentamientos, ciudades y campamentos, puedes hablar con la gente que veas deambulando por sus calles. Los miembros de las diferentes facciones tendrán cosas diferentes que decir: algunos compartirán sus pensamientos, otros compartirán rumores. En ambos casos, estos comentarios pueden ayudarte a comprender mejor la cultura y la facción  del personaje, o pueden contener pistas para encontrar lugares secretos, o trucos y consejos para viajar por las tierras salvajes y  y luchar en la Guerra del Anillo.
 qstr_Cannot_leave_now.|No puedes abandonar ahora.
 qstr_You_have_found_the_l|Has encontrado al herrero local... (+{reg3} Exp.)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|Estás atacando a un grupo de {s1}.
 qstr_The_battle_against_t|La batalla contra el grupo de {s1} continúa.
 qstr_There_are_{reg39}_al|Hay {reg39} capitanes aliados en esta batalla. Puedes asumir el mando de sus huestes en combate por {reg40} puntos de influencia.
 qstr_Having_a_small_party|Tener un grupo pequeño tiene sus ventajas... Tus tropas y tú os escondéis del enemigo durante unas horas para aseguraros de no ser vistos.
-qstr_Your_ability_to_surv|Tu habilidad para sobrevivir en entornos inhóspitos te permite encontrar un lugar seguro para esconderte. (Tu habilidad de Dominio de las tierras salvajes te permite esconderte con {reg1} tropas)
+qstr_Your_ability_to_mast|Tu capacidad para desenvolverte en tu entorno te ha permitido encontrar un lugar seguro donde esconderte (tu habilidad de Dominio de las Tierras Salvajes te permite esconderte con {reg1} tropas).
 qstr_{reg4}_will_be_lost.|{reg4} soldados se perderán.
 qstr_{s13}_asked_you_to_r|{s13} te ha pedido que te presentes ante él con al menos {reg13} tropas.
 qstr_{s13}_ordered_you_to|{s13} te ha ordenado unirte al asalto contra {s14}.
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3} son testigos de tu victoria sobre {s4}.
 qstr_Even_though_there_we|Aunque no ha habido aliados para ser testigos de tu victoria, tus tropas celebran el triunfo igualmente.
 qstr_{s1}_of_{s3}_managed|{s1} de {s3} ha logrado escapar.
 qstr_Prisoners_rescued_so|Prisioneros rescatados hasta el momento: {reg1}
-qstr_Victory_comment._Pla|Comentario de victoria. El jugador estaba solo.
-qstr_Ordinary_victory_com|Comentario de victoria ordinario. El jugador proveyó al menos el 40 por ciento de las fuerzas.
-qstr_Player_participation|Comentario de participación del jugador. El enemigo tenía al menos 1k de fuerza al comenzar.
-qstr_No_victory_comment._|Sin comentario de victoria. La batalla fue pequeña, y el jugador proveyó menos del 40 por ciento de la fuerza aliada
 qstr_{reg1}_kills_of_{s1}|{reg1} muertes de tropas de la facción de {s1} de las necesarias para cumplir el juramento. Muertes totales: {reg0}
-qstr_Some_of_your_tendons|Algunos de tus tendones han sido dañados en la batalla. Pierdes 1 de Fuerza.
-qstr_You_took_a_nasty_wou|Te has llevado una fea herida que te causará una ligera cojera, incluso después de curarse. Pierdes 1 de agilidad.
-qstr_You_have_trouble_thi|Te cuesta pensar con claridad después de la batalla, puede que por un golpe particularmente duro que recibiste en el cráneo, y ahora tienes frecuentes dolores de cabeza. Pierdes 1 de inteligencia.
 qstr_Perhaps_I_m_getting_|Quizás estoy teniendo mala suerte...
 qstr_Retirement_is_starti|Retirarse empieza a parecerme una buena idea.
 qstr_No_matter!_I_will_pe|¡No importa! ¡Sobreviviré!
@@ -1126,7 +1125,6 @@ qstr_Um..._by_enchanting_|Em... ¿Encantando el hierro?
 qstr_Magnets_are_made_of_|Los imanes están hechos de metal, que se extrae de la tierra. Son magnéticos porque el metal todavía contiene piezas de gravedad en su interior.
 qstr_i_wont_a_bonerlrord_|kiero k paceis el mod a bonerlrord haora mizmo!11
 qstr_Install_TLD_in_your_|Instala TLD en la carpeta Modules de Bannerlord, agrega la línea 'compatible_with_wfas = 1' en el module.ini, y podrás jugar en Warband y... ¡en Warrider 0.202!
-qstr_Bannerlord_is_runnin|Bannerlord usa un motor diferente. No podemos pasar TLD a Bannerlord como lo hicimos con Warband.
 qstr_dis_mod_takes_2_long|eztee mod tardda muxo tempo pa salir y apezta un webo!!11!
 qstr_Well_there_s_a_lot_o|Bueno, viene con un montón de mejoras gráficas y contenido. No sé por qué pero me da que lleva tiempo.
 qstr_It_has_been_recently|Ha salido hace poco, si no sabes donde encontrarlo puedes descargarlo desde lemonparty.org.

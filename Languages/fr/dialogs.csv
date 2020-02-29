@@ -1029,6 +1029,7 @@ dlga_enemy_defeated:close_window|Arggh ! Je déteste ça.
 dlga_party_relieved:close_window|Merci de nous avoir aidés contre ces bâtards.
 dlga_start:battle_reason_stated|Je boirai dans votre crâne !
 dlga_member_chat_00:close_window.1|^^GROWL !^^
+; dlga_member_chat_00:close_window.2|^^Grrrrr.....^^
 dlga_member_chat_00:regular_member_talk|Quel sont vos ordres Commandant ?
 dlga_regular_member_talk:view_regular_char_requested|Parlez-moi de vous.
 dlga_view_regular_char_requested:do_regular_member_view_char|Oui, Commandant. Permettez-moi de vous dire tout ce qu'il y a à savoir sur moi.

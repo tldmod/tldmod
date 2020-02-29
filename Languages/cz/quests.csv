@@ -1,6 +1,6 @@
-qst_deliver_message|Doruč zprávu {s13}
+qst_deliver_message|Doruč zprávu pro {s13}
 qst_deliver_message_text|{s9} tě požádal, abys odnesl zprávu {s13}. {s13} byl v {s4}  když ti byl zadán úkol.
-qst_deliver_message_to_enemy_lord|Doruč zprávu {s13}
+qst_deliver_message_to_enemy_lord|Doruč zprávu pro {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} tě požádal, abys odnesl zprávu {s13} z {s15} byl. {s13} v {s4} když ti byl zadán úkol.
 qst_raise_troops|Vytrénuj {reg1} {s14}
 qst_raise_troops_text|{s9} tě požádal, abys vytrénoval {reg1} {s14} a přivedl je k {němu/ni}.
@@ -16,7 +16,7 @@ qst_capture_enemy_hero|Zajmi nepřátelského velitele.
 qst_capture_enemy_hero_text|{s11} tě žádá o uvěznění nepřátelského velitele.
 qst_lend_companion|Propůjč mi svého společníka {s3} {s9}
 qst_lend_companion_text|{s9} tě žádá o zapůjčení společníka {s3} na jeden týden.
-qst_capture_prisoners|Přiveď nepřátelské vězně v počtu {reg1} .
+qst_capture_prisoners|Přiveď nepřátelské vězně v počtu {reg1}
 qst_capture_prisoners_text|{s9} chce abys mu přivedl nepřátelské vězně v počtu {reg1}.
 qst_investigate_fangorn|Prozkoumej Fangorn.
 qst_investigate_fangorn_text|{s9} tě požádal, abys zjistil, co se děje ve Fangornském lese, a podal hlášení.
@@ -51,7 +51,7 @@ qst_join_siege_with_army|Připoj se k obléhání {s14}
 qst_join_siege_with_army_text|Nic.
 qst_scout_waypoints|Prozkoumej {s13}, {s14} a {s15}
 qst_scout_waypoints_text|Nic.
-qst_move_cattle_herd|Přesuň se k {s13} {s12}
+qst_move_cattle_herd|Dostaň {s12} do {s13}
 qst_move_cattle_herd_text|Stařešina z {s10} tě požádal, aby si donesl nějaké {s12} do {s13}.
 qst_escort_merchant_caravan|Doprovázej zásobování do {s8}
 qst_escort_merchant_caravan_text|Eskortuj zásobovací konvoj do {s8} a promluv si s nimi, když budeš poblíž .

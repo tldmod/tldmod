@@ -248,6 +248,8 @@ qstr_nothing|没什么
 qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
+; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
+; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
 qstr_{reg4}_killed_{reg5}|{reg4}被杀，{reg5}受伤，{reg6}被击溃
 qstr_{reg4}_killed_{reg5}_|{reg4}被杀，{reg5}受伤
 qstr_{reg4}_killed_{reg5}_r|{reg4}被杀，{reg5}被击溃
@@ -703,12 +705,16 @@ qstr_Your_mount_stumbles!|你的坐骑走路磕磕绊绊！看起来是瘸腿了
 qstr_Bitten_by_your_own_w|你被自己的座狼咬了!
 qstr_You_weigh_too_much_f|你的身板矮种马经受不起！
 qstr_Your_mount_rears_ref|你的坐骑受到惊吓！拒绝服从你的命令！
+; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|固定自定义相机
 qstr_Press_Ctrl_+_Left_/_|按Ctrl+左方向键/Ctrl+右方向键切换肩膀显示位
+; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
 qstr_Use_+/__to_zoom_in/o|按+/-键以拉近拉远
 qstr_Use_Up/Down_arrow_ke|使用上/下箭头键以前倾/后倾
 qstr_Fixed_Camera___Right|固定相机—右肩
 qstr_Fixed_Camera___Left_|固定相机—左肩
+; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|当访问城镇、据点和营地时，你可以与四处走动的人们谈话。不同派系的人有不同的事可说—一些能够让你理解他们的想法，其它的会分享他们的传闻。他们都能够让你更加了解他们的文化和派系，有时他们可能知道找到神秘地点的线索，或是在野外生存和在魔戒圣战中战斗的技巧和窍门。
 qstr_Cannot_leave_now.|现在不能离开。
 qstr_You_have_found_the_l|你找到了当地铁匠…(+{reg3}经验)
@@ -924,7 +930,7 @@ qstr_You_are_attacking_a_|你正攻击一群{s1}
 qstr_The_battle_against_t|对抗一群{s1}的战斗继续
 qstr_There_are_{reg39}_al|在{reg39}这场战斗中有盟友指挥官。你可以使用{reg40}影响点命令他们和他们的部队。
 qstr_Having_a_small_party|小队伍有小的好处…你和你的士兵可以在敌人面前隐藏几个小时而不被发现。
-qstr_Your_ability_to_surv|能够在恶劣环境下生存的能力使你找到了一个安全的藏身之地。（你的荒野求生技能允许你和{reg1}部队一起隐藏）
+; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
 qstr_{reg4}_will_be_lost.|你将丢下{reg4}。
 qstr_{s13}_asked_you_to_r|{s13}希望你带着至少{reg13}名士兵向他报告。
 qstr_{s13}_ordered_you_to|{s13}命令你参加对{s14}的攻击。
@@ -940,14 +946,7 @@ qstr_{s3}_witnesses_your_|{s3}得知了你战胜{s4}的消息。
 qstr_Even_though_there_we|即使没有友军见证你的胜利，仍有你的士兵来庆贺你的成就。
 qstr_{s1}_of_{s3}_managed|{s3}的{s1}设法逃离了。
 qstr_Prisoners_rescued_so|到目前为止解救的囚犯：{reg1}
-qstr_Victory_comment._Pla|评价：胜利，玩家靠自己的力量胜利了。
-qstr_Ordinary_victory_com|评价：普通胜利，玩家至少提供了40%的助力。
-qstr_Player_participation|评价，重在参与，敌人至少有1000点初始强度。
-qstr_No_victory_comment._|评价：无，小型冲突的同时玩家尽力不超过友军的40%
 qstr_{reg1}_kills_of_{s1}|{s1}派系士兵击杀数{reg1}，已计入誓言。总击杀：{reg0}
-qstr_Some_of_your_tendons|你的一些肌腱在战斗中拉伤了，力 -1。
-qstr_You_took_a_nasty_wou|你腿上的伤即使痊愈也会导致跛足，敏 -1。
-qstr_You_have_trouble_thi|战后你才发现头伤导致了频繁的头痛，智 -1。
 qstr_Perhaps_I_m_getting_|也许我的运气在变差…
 qstr_Retirement_is_starti|退休越来越像是个好主意了。
 qstr_No_matter!_I_will_pe|无妨！我还能坚持！
@@ -1125,8 +1124,7 @@ qstr_How_do_magnets_work?|磁铁是做什么的？
 qstr_Um..._by_enchanting_|恩...用来吸铁？
 qstr_Magnets_are_made_of_|磁铁是开采自地下的金属做的，它天然就有磁力因为它含有引力的成分。
 qstr_i_wont_a_bonerlrord_|哇想要骑砍2领祖的最后之日啊啊！！
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_Bannerlord_is_runnin|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Install_TLD_in_your_|安装最后之日到骑马与砍杀2：领主的模组文件夹，在module.ini文件中增加一行指令：“compatible_with_wfas = 1”，然后你就可以在战团和Warrider 0.202版里面玩最后之日了。
 qstr_dis_mod_takes_2_long|择个模组花了老长时间才发布！烂！！
 qstr_Well_there_s_a_lot_o|嗯，因为有很多新的材质纹理和其它东西要做，我猜这很费时…
 qstr_It_has_been_recently|这个模组的正式版近日发布了，如果你忘了网址，你可以上lemonparty.org去下载。

@@ -132,16 +132,16 @@ trp_i4_rhun_vet_infantry|Infante Veterano de Rhûn
 trp_i4_rhun_vet_infantry_pl|Infantería Veterana de Rhûn
 trp_i5_rhun_ox_warrior|Guerrero del Buey
 trp_i5_rhun_ox_warrior_pl|Guerreros del Buey
-trp_c2_rhun_light_horseman|Jinete Ligero de Rhûn
-trp_c2_rhun_light_horseman_pl|Jinetes Ligeros de Rhûn
-trp_c3_rhun_light_cavalry|Soldado de Caballería Ligera de Rhûn
-trp_c3_rhun_light_cavalry_pl|Caballería Ligera de Rhûn
-trp_c4_rhun_noble_cavalry|Soldado de Caballería Noble de Rhûn
-trp_c4_rhun_noble_cavalry_pl|Caballería Noble de Rhûn
-trp_c5_rhun_heavy_noble_cavalry|Soldado de Caballería Noble Pesado de Rhun
-trp_c5_rhun_heavy_noble_cavalry_pl|Caballería Noble Pesada de Rhûn
-trp_c6_rhun_dorwinion_noble|Noble de Dorwinion de Rhûn
-trp_c6_rhun_dorwinion_noble_pl|Nobles de Dorwinion de Rhûn
+trp_c2_rhun_horseman|Jinete de Rhûn
+trp_c2_rhun_horseman_pl|Jinetes de Rhûn
+trp_c3_rhun_outrider|Batidor de Rhûn
+trp_c3_rhun_outrider_pl|Batidores de Rhûn
+trp_c4_rhun_noble_rider|Jinete Noble de Rhûn
+trp_c4_rhun_noble_rider_pl|Jinetes Nobles de Rhûn
+trp_c5_rhun_warrider|Jinete Guerrero de Rhûn
+trp_c5_rhun_warrider_pl|Jinetes Guerreros de Rhûn
+trp_c6_rhun_warlord|Señor de la Guerra de Rhûn
+trp_c6_rhun_warlord_pl|Señores de la Guerra de Rhûn
 trp_i1_dwarf_apprentice|Aprendiz Enano
 trp_i1_dwarf_apprentice_pl|Aprendices Enanos
 trp_i2_dwarf_warrior|Guerrero Enano
@@ -197,7 +197,7 @@ trp_i5_gon_vet_swordsman_pl|Espadachines Veteranos de Gondor
 trp_i6_gon_tower_swordsman|Espadachín de la Guardia de la Torre
 trp_i6_gon_tower_swordsman_pl|Espadachines de la Guardia de la Torre
 trp_c1_gon_nobleman|Noble de Gondor
-trp_c1_gon_nobleman_pl|Nobles de Gondor
+trp_c1_gon_nobleman_pl|Noble de Gondor
 trp_c2_gon_squire|Escudero de Gondor
 trp_c2_gon_squire_pl|Escuderos de Gondor
 trp_c3_gon_vet_squire|Escudero Veterano de Gondor
@@ -379,11 +379,11 @@ trp_a5_riv_master_archer_pl|Maestros Arqueros de Rivendel
 trp_a6_riv_guardian|Guardián de Imladris
 trp_a6_riv_guardian_pl|Guardianes de Imladris
 trp_i3_riv_swordbearer|Infante de Rivendel
-trp_i3_riv_swordbearer_pl|Infante de Rivendel
+trp_i3_riv_swordbearer_pl|Infantes de Rivendel
 trp_i4_riv_vet_swordbearer|Infante Veterano de Rivendel
-trp_i4_riv_vet_swordbearer_pl|Infante Veterano de Rivendel
+trp_i4_riv_vet_swordbearer_pl|Infantes Veteranos de Rivendel
 trp_i5_riv_swordmaster|Infante de Élite de Rivendel
-trp_i5_riv_swordmaster_pl|Infante de Élite de Rivendel
+trp_i5_riv_swordmaster_pl|Infantes de Élite de Rivendel
 trp_i6_riv_champion|Campeón de Imladris
 trp_i6_riv_champion_pl|Campeones de Imladris
 trp_ac5_riv_rider|Jinete de Rivendel
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|Jinetes de Khand
 trp_c4_khand_heavy_horseman|Jinete Pesado de Khand
 trp_c4_khand_heavy_horseman_pl|Jinetes Pesados de Khand
 trp_c5_khand_kataphrakt|Catafracto Variag
-trp_c5_khand_kataphrakt_pl|Catafractos Variag
+trp_c5_khand_kataphrakt_pl|Catafracto Variag
 trp_c5_khand_lance_kataphrakt|Catafracto con Lanza Variag
-trp_c5_khand_lance_kataphrakt_pl|Catafractos con Lanzas Variag
+trp_c5_khand_lance_kataphrakt_pl|Catafracto con Lanza Variag
 trp_i4_khand_halberdier|Archero de Khand
 trp_i4_khand_halberdier_pl|Archeros de Khand
 trp_i5_khand_halberd_master|Maestro Alabardero Variag
@@ -947,6 +947,7 @@ trp_npc14|Fuldimir
 trp_npc15|Bolzog
 trp_npc16|Varfang
 trp_npc17|Tarugo
+trp_knight_6_2|Golasgil
 trp_gondor_lord|Senescal Denethor
 trp_gondor_lord_pl|Senescal
 trp_rohan_lord|Rey Théoden
@@ -1595,21 +1596,39 @@ trp_moria_vet_troll_pl|Trolls de las Cavernas Domados
 trp_moria_armored_troll|Troll de las Cavernas con Armadura
 trp_moria_armored_troll_pl|Trolls de las Cavernas con Armadura
 trp_gunda_troll|Troll de las Montañas
-trp_gunda_troll_pl|Troll de las Montañas
+trp_gunda_troll_pl|Trolls de las Montañas
 trp_gunda_vet_troll|Troll de las Montañas Domado
 trp_gunda_vet_troll_pl|Troll de las Montañas Domados
+trp_gunda_placeholder|Troll de las Montañas Domado
+trp_gunda_placeholder_pl|Troll de las Montañas Domados
 trp_isen_troll|Troll de Isengard
 trp_isen_troll_pl|Trolls de Isengard
 trp_isen_vet_troll|Troll Domado de Isengard
-trp_isen_vet_troll_pl|Troll Domado de Isengard
-trp_isen_armoured_troll|Troll de Isengard con Armadura
-trp_isen_armoured_troll_pl|Trolls de Isengard con Armadura
+trp_isen_vet_troll_pl|Trolls Domados de Isengard
+trp_isen_armored_troll|Troll de Isengard con Armadura
+trp_isen_armored_troll_pl|Trolls de Isengard con Armadura
 trp_mordor_troll|Troll de Mordor
 trp_mordor_troll_pl|Trolls de Mordor
 trp_mordor_vet_troll|Troll de Mordor Domado
 trp_mordor_vet_troll_pl|Trolls de Mordor Domados
 trp_mordor_olog_hai|Olog-hai de Mordor
 trp_mordor_olog_hai_pl|Olog-hai de Mordor
+trp_troll_placeholder_1|Troll de las Cavernas
+trp_troll_placeholder_1_pl|Trolls de las Cavernas
+trp_troll_placeholder_2|Troll de las Cavernas
+trp_troll_placeholder_2_pl|Trolls de las Cavernas
+trp_troll_placeholder_3|Troll de las Cavernas
+trp_troll_placeholder_3_pl|Trolls de las Cavernas
+trp_troll_placeholder_4|Troll de las Cavernas
+trp_troll_placeholder_4_pl|Trolls de las Cavernas
+trp_troll_placeholder_5|Troll de las Cavernas
+trp_troll_placeholder_5_pl|Trolls de las Cavernas
+trp_troll_placeholder_6|Troll de las Cavernas
+trp_troll_placeholder_6_pl|Trolls de las Cavernas
+trp_wild_troll|Troll Salvaje de las Cavernas
+trp_wild_troll_pl|Trolls Salvajes de las Cavernas
+trp_ent2|Ent
+trp_ent2_pl|Ents
 trp_mountain_goblin2|Trasgo de Montaña
 trp_mountain_goblin2_pl|Trasgos de Montaña
 trp_tribal_orc2|Orco Tribal

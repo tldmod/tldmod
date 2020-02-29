@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Miért küzdesz?
 mno_start_good|egy új korszak HAJNALA
 mno_start_evil|az Emberek ALKONYA
+mno_faction_intros|Tanulj Középfölde különböző népeiről
 mno_go_bback|Vissza
 menu_start_phase_2|^^^^^ Középfölde. Egy árnyék növekszik Keleten, ^ és sötét dolgok bújnak elő, melyek sokáig rejtőztek. ^ A szabad népek felkészülnek a háborúra, egy olyanra melyet évszázadok óta nem látott a világ. ^ Emberek, Tündék, Törpék, Orkok; mindannyian kiveszik belőle a részüket. ^^ Hogy milyen részt, azt még nem tudni,..
 mno_go_forth|Haladj előre a választott utadon...
+mno_change_tld_options|Az Utolsó Napok beállításainak megváltoztatása.
 menu_start_game_3|^^^^^^^^Válaszd ki a körülményeket:
 mno_custom_battle_scenario_1|Csatározás, Gondor népei Harad ellen
 mno_custom_battle_scenario_12|Válaszd ki a népeket a csatára
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Látvány tesztharc
 mno_troll_battle_scenario|Troll Csata Tesztelés
 mno_warg_battle_scenario|Varg Csata Tesztelés
 mno_build_your_own_scene|** Alkosd meg saját csatajelenetedet az Utolsó Napokhoz **
+mno_go_back|Vissza
 menu_tutorial|^^ Légy üdvözölve a Mount & Blade Harci Oktatómódjában. Itt megfogod tanulni a harc alapjait, és egy átfogó áttekintést is kapsz majd az egységek irányításáról a csatatéren.
 mno_tutorial_1|Oktatás #1: Alapvető mozgás és fegyverválasztás. {s1}
 mno_tutorial_2|Oktatás #2: Harc pajzzsal. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Válassz fajt:
 mno_start_ma|EMBER
 mno_start_el|TÜNDE
 mno_start_dw|TÖRP
-mno_go_back|Vissza
 menu_start_evil|^^^^^^^^^^Kit szolgálsz?
 mno_start_eye|a Mordori SZAURONt, a Gyűrűk Urát
 mno_start_hand|a Vasudvardi SZARUMÁNt, a Fehér Kezet
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Befolyás szerezésének üteme: {s7}
 mno_strat_tweaks_rank_gain_rate|Rang szerzésének üteme: {s7}
 mno_strat_tweaks_back|Vissza a finomítások menübe.
 menu_camp_action|^^^^^^^^^     Melyik tárgy?
-mno_camp_customize_defilement|Beszennyezet páncél testreszabása
 mno_camp_drink_water|Idd meg az Entvizet!
 mno_camp_action_4|Vissza.
 menu_assasins_attack_player_won|Sikeresen legyőzted a(z) {s2} bérgyilkosait, melyeket {s3} küldött.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Lépj be a Törp Raktárba
 mno_talk_to_castle_commander|Látogasd meg a/az {s61} barakkokat.
 mno_speak_with_elder|Beszélj {s6}-val/vel
 mno_isengard_underground|Menj a földalatti barlangokba.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Mássz fel a legfelső szintre.
 mno_erebor_gates|Nézd meg a Nagy Kapukat.
 mno_town_leave|Távozás...
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^Egy hírnök érkezett és azt mondta, hog
 mno_player_added_to_war_council_close|Bezár
 menu_player_added_to_siege_reports|^^^^^Egy hírnök érkezett és azt mondta, hogy mostantól, mint {s24}, mostantól jelentéseket kapsz ha valaha {s2} megostromol egy központot vagy amikor {s2} központjait megostromolják.
 mno_player_added_to_siege_reports_close|Bezár
-menu_player_added_to_allow_follow|^^^^^Egy hírnök érkezett és azt mondta, hogy mostantól, mint {s24}, mostantól megparancsolhatod {s2}nak/nek hogy kövessen, összesen {reg55} követő áráért.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Bezár
 menu_center_besieged_event|^^^^^Egy hírnök érkezett azt jelentve hogy {s1} ostrom alá lett véve a {s3}ból/ből érkező {s2} által.
 mno_center_besieged_event_close|Bezár

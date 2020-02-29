@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^За що ти б'єшся?
 mno_start_good|ЗОРЯ нової Ери
 mno_start_evil|СУТІНКИ Людства
+mno_faction_intros|Дізнатися про фракції Середзем'я
 mno_go_bback|Повернутись назад
 menu_start_phase_2|^^^^^ Середзем'я. Темрява зростає на Сході, ^ і темні створіння, що давно ховались, виходять назовні. ^ Вільні народи готуються до війни, якої не бачили вже цілий вік. ^ Люди, Ельфи, Гноми та Орки; усі зіграють свою роль. ^^ Яку саме, між тим, ще буде видно...
 mno_go_forth|Вступити на обраний вами шлях...
+mno_change_tld_options|Змінити налаштування TLD
 menu_start_game_3|^^^^^^^^Оберіть сценарій:
 mno_custom_battle_scenario_1|Сутичка, Гондор проти Харада
 mno_custom_battle_scenario_12|Оберіть сторони для битви
@@ -19,6 +21,7 @@ mno_custom_battle_scenario_10|Тест сцени тестова битва
 mno_troll_battle_scenario|Тест битв з Тролями.
 mno_warg_battle_scenario|Тест битв з Варгами.
 mno_build_your_own_scene|**Створіть власну сцену для TLD**
+mno_go_back|Повернутись назад
 menu_tutorial|Ласкаво просимо керівництво Бойовими навичками до Mount and blade. Тут ви вивчите основи бою, а також отримаєте коротку ввідну по командуванню військами в польових битвах.
 mno_tutorial_1|Навчання #1: Пересування і вибір зброї. {s1}
 mno_tutorial_2|Навчання #2: Бій з щитом. {s2}
@@ -49,7 +52,6 @@ menu_start_good|^^^^^^^^^^Оберіть свою расу:
 mno_start_ma|ЛЮДИНА
 mno_start_el|ЕЛЬФ
 mno_start_dw|ГНОМ
-mno_go_back|Повернутись назад
 menu_start_evil|^^^^^^^^^^Кому служитимеш?
 mno_start_eye|САУРОНОВІ з Мордору, Володареві Кілець
 mno_start_hand|САРУМАНОВІ Білому, Білій Руці
@@ -161,7 +163,6 @@ mno_strat_tweaks_influence_gain_rate|Приріст очок впливу: {s7}
 mno_strat_tweaks_rank_gain_rate|Приріст очок рангу: {s7}
 mno_strat_tweaks_back|Повернутися в меню опцій.
 menu_camp_action|^^^^^^^^^ Який предмет?
-mno_camp_customize_defilement|Зайнятися зіпсованими обладунками
 mno_camp_drink_water|Випити ентійскую воду!
 mno_camp_action_4|Назад.
 menu_assasins_attack_player_won|Ви успішно впоралися з вбивцями з держави {s2}, підісланими полководцем {s3}.
@@ -299,6 +300,7 @@ mno_dwarven_warehouse_door|Увійти в склад гномів
 mno_talk_to_castle_commander|Увійти в казарми фракції {s61}.
 mno_speak_with_elder|Увійти в казарми Фракції {s6}.
 mno_isengard_underground|Увійти в підземелля.
+; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Зійти на верхній рівень.
 mno_erebor_gates|Відвідати Великі Врата.
 mno_town_leave|Продовжити...
@@ -343,7 +345,7 @@ menu_player_added_to_war_council|^^^^^Посильний повідомляє В
 mno_player_added_to_war_council_close|Закрити
 menu_player_added_to_siege_reports|^^^^^Посильний повідомляє Вам що тепер, як {s24}, Ви будете отримувати донесення кожен раз, коли {s2} тримає в облозі гарнізон або коли гарнізон {s2} піддається ворожої облозі.
 mno_player_added_to_siege_reports_close|Закрити
-menu_player_added_to_allow_follow|^^^^^Посильний повідомляє Вам що тепер, як {s24}, Ви можете переказати {s2} слідувати за Вами, при цьому число супроводжуючих загонів не може перевищувати {reg55}.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Закрити
 menu_center_besieged_event|^^^^^Прибув посильний, який повідомив, що {s1} в даний час знаходиться під облогою {s2} з держави {s3}.
 mno_center_besieged_event_close|Закрити
