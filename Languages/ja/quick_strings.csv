@@ -930,7 +930,7 @@ qstr_You_are_attacking_a_|{s1}を攻撃します。
 qstr_The_battle_against_t|{s1}との戦いは続きます。
 qstr_There_are_{reg39}_al|この戦いには{reg39}名の指揮官が参戦しています。 影響力ポイントを{reg40}消費することで、 彼らの兵を指揮する事ができます。
 qstr_Having_a_small_party|少数部隊ならではの強みというのはあるのです・・・ あなたと部下たちは敵勢から姿を隠すと、 念のためにそのまま数時間待機しました。
-qstr_Your_ability_to_mast|自然環境の利用に長けるあなたの能力をもって、 安全に身を隠す事のできる場所を確保しました。(あなたのワイルドクラフトのスキルでは、 {reg1}名の兵とともに身を隠す事ができます)
+qstr_Your_ability_to_mast|自然環境の利用に長けるあなたの能力をもって、 安全に身を隠す事のできる場所を確保しました。 (あなたのワイルドクラフトのスキルでは、 {reg1}名の兵とともに身を隠す事ができます)
 qstr_{reg4}_will_be_lost.|兵{reg4}名を失います。
 qstr_{s13}_asked_you_to_r|{s13}より、 最低でも{reg13}名の兵を連れて出頭せよ、 との命令を受けました。
 qstr_{s13}_ordered_you_to|あなたも{s14}攻めに加わるよう、 {s13}より命令が下されました。
@@ -1124,7 +1124,7 @@ qstr_How_do_magnets_work?|磁石はどうしてくっつくの？
 qstr_Um..._by_enchanting_|ええっと・・・鉄に・・・鉄に魔法をかけたから？
 qstr_Magnets_are_made_of_|磁石は地中から掘り出した金属で出来ていて、 その中に地球の重力がちょっと残っています。 それが磁力となっているのです。
 qstr_i_wont_a_bonerlrord_|ボナールロード版はまだかよ！
-qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
+qstr_Install_TLD_in_your_|TLDをBannerlordのModulesフォルダに入れて、 module.iniに^”compatible_with_wfas = 1”^の一行を追加してやれば WarbandとWarrider 0.202の両方でプレイできるよ！
 qstr_dis_mod_takes_2_long|このmodはリリースまでに長くかかりすぎだよ！
 qstr_Well_there_s_a_lot_o|新しいモデルやらマップやら毎回いろいろと追加するので、 どうしても時間がかかってしまうのです。
 qstr_It_has_been_recently|こないだ新バージョンが出たばっかりだよ lemonparty.orgからダウンロードできるよ

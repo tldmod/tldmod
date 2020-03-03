@@ -705,7 +705,7 @@ qstr_Your_mount_stumbles!|Bineginiz tökezliyor! Sakatlanmış gibi görünüyor
 qstr_Bitten_by_your_own_w|Kendi wargın tarafından ısırıldın
 qstr_You_weigh_too_much_f|Bir midilli için çok agırsın
 qstr_Your_mount_rears_ref|Bineginiz şahlanıyor, emirlerinize itaat etmeyi reddediyor!
-; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+qstr_Cannot_Change_Camera|Birinci Şahıstayken Kamera Modu Degiştirilemez.
 ; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|Özel Kamerayı Ayarla
 qstr_Press_Ctrl_+_Left_/_|Omuz Degiştirmek için Ctrl+Sol/Ctrl/Sag Yön Tuşlarına basınız

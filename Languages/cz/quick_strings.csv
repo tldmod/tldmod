@@ -178,8 +178,8 @@ qstr_Ally_of_{s5}|Spojenec {s5}u
 qstr_Accomplice_of_{s5}|Stoupenec od {s5}
 qstr_Useful_Tool_of_{s5}|Užitečný nástroj od {s5}
 qstr_Servant_of_{s5}|Sluha  {s5}
-qstr_Unknown_to_{s5}|Známi pre {s5}
-qstr_You_have_been_{reg1?|Byl jsi {reg1?povysen:degradovan} na {s24} ({reg0})!
+qstr_Unknown_to_{s5}|Neznámý pro {s5}
+qstr_You_have_been_{reg1?|Byl jsi {reg1?povýšen:degradován} na {s24} ({reg0})!
 qstr_You_{reg1?earned:los|{reg1?Ziskavas:Ztracis} {reg11} bodů Hodnosti {reg12?and {reg12} Vlivu :}s {s11}.
 qstr_You_spent_{reg10}_of|Utratil jsi {reg10} Vlivu u {s1}, zbyva {reg11}.
 qstr_Troop_upkeep:|Náklady Vojáků:
@@ -432,7 +432,7 @@ qstr_{s5}_has_a_strength_|{s5} má skupinu o velikosti {reg1} mužů.
 qstr_no_holdings|žádné državy
 qstr_{s57}_and_{s58}|{s57} a {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
-qstr_{reg3?She:He}|{reg3?She:He}
+qstr_{reg3?She:He}|{reg3?Ona:On}
 qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} je vůdce frakce {s56}.^:{s54} slouží {s55} z {s56}.^}}{reg9?{reg3?Jí:Jemu} {reg3?patří:patří} {s58}.:}{s59}{reg10?^{reg3?Ona:On} padl na bojišti!:}
 qstr_The_last_time_you_sa|Když jsi {reg1?jí:ho} naposledy viděl, {s1}
 qstr_The_last_time_you_he|Když jsi o {reg1?ní:něm} naposledy slyšel, {s1}
@@ -709,12 +709,12 @@ qstr_Cannot_Change_Camera|Nelze změnit mód kamery když jsi v pohledu první o
 qstr_Switch_Back_to_3rd_P|Přepnout zpět na pohled třetí osoby na cyklickou kameru.
 qstr_Fixed_Custom_Camera|Fixní vlastní kamera
 qstr_Press_Ctrl_+_Left_/_|Stiskni Ctrl + Levou/ Ctrl + Pravou šipku k přehození ramen
-; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
+qstr_Press_Ctrl_+_Down_to|Ctrl + šipka dolů k vycentrování
 qstr_Use_+/__to_zoom_in/o|Použij +/- k přiblížení/oddálení
 qstr_Use_Up/Down_arrow_ke|Použij šipku Nahoru/Dolů k naklonění nahoru/dolů
 qstr_Fixed_Camera___Right|Fixní kamera - Pravé rameno
 qstr_Fixed_Camera___Left_|Fixní kamera - Levé rameno
-; qstr_Fixed_Camera___Cente|Fixed Camera - Center
+qstr_Fixed_Camera___Cente|Fixní kamera - centrovaná
 qstr_While_visiting_towns|Když navštěvuješ města, osady a tábory můžeš mluvit s lidmi chodícími okolo. Členové různých frakcí ti řeknou různé věci - někteří ti svěří své myšlenky, jiní ti poví nějaké fámy. Oba vám mohou pouze poskytnout lepší porozumění kultuře a frakci dané osoby nebo by mohli poskytnout stopy k nalezení tajných míst, tipů a triků pro cestování divočinou a bojování ve válce o Prsten.
 qstr_Cannot_leave_now.|Teď nemůžeš odejít.
 qstr_You_have_found_the_l|Našel jsi místního kováře... (+{reg3} XP)
@@ -726,11 +726,11 @@ qstr_Forming_ranks.|Formovat řady.
 qstr_{reg2?You:Your_mount|{reg2?Ty jsi:Tvůj kůň} obdržel {reg1}b. extra poškození!
 qstr_{reg2?You_strike:You|{reg2?Tvůj útok:Útok tvého koně} působí {reg1}b. bonusového poškození!
 qstr_Division_Placement|Umisťování divizí
-; qstr_Complex_Formations|Complex Formations
+qstr_Complex_Formations|Komplex formací
 qstr_Formations_turned_OF|VYPNOUT formace v menu nastavení
-; qstr_Division_{reg1}_{s2}_g|Division {reg1} {s2} goes to its memorized position...
-; qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms line (memorized).
-; qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized).
+qstr_Division_{reg1}_{s2}_g|Divize {reg1} {s2} jde do zapamatované formace...
+qstr_Division_{reg1}_{s2}_f|Divize {reg1} {s2} formuje řadu (zapamatováno).
+qstr_Division_{reg1}_{s2}_fo|Divize {reg1} {s2} formuje {reg0} řad (zapamatováno).
 ; qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Three_Nazgul_are_cir|Tři Nazgůlové krouží na obloze nad bojištěm!
 qstr_Two_Nazgul_are_circl|Dva Nazgůlové krouží na obloze nad bojištěm!
@@ -759,11 +759,11 @@ qstr_You_have_been_knocke|Byl jsi omráčen jednotkou {s22}.
 qstr_{s21}_has_been_knock|{s21} byl sražen z {reg23?svého:svého} koně, když padl.
 qstr_{s21}_{reg24?killed:|{s21} {reg24?zabit:omráčen} jednotkou {s22}.
 qstr_A_bear_has_been_summ|Medvěd byl přivolán do bitvy!
-; qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.
-; qstr_You_can_also_order_y|You can also order your troops to cycle through the type of weapon you want them to use.^^ Press O to cycle between Weapon Order types. Press P to cycle between Shield Order types.
-; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.
+qstr_In_The_Last_Days_of_|V TLD tví vojáci na začátku každé bitvy drží pozici, místo toho aby slepě útočili.^^Aby jsi přikázal svým jednotkám formování stiskni 'J' pro řady, 'K' pro štítovou  hradbu, 'L' pro klín, ';' pro čtverec. Pro rozpuštění formace stiskni 'U'. ^Pokud tví vojáci utíkají, stiskni 'V', aby jsi je seskupil. Můžeš mít pouze omezený počet svolání za bitvu a počet závisí na tvém vůdcovství a charisma.
+qstr_You_can_also_order_y|Můžeš také přikázat vojákům aby měnili mezi typy zbraní, které chceš aby vojáci používali.^^ Stiskni O ke změně mezi typy zbraní. Stiskni P ke změně mezi typy štítů.
+qstr_The_Last_Days_of_the|TLD má implementovanou vlastní kameru, která má vynahradit limitace kamery, vzhledek k menším rasám jako jsou skřeti a trpaslíci.^^Stiskni CTRL + END ke změně mezi 2 módy kamery: Fixním a Volným.^^ Fixní mód má optimální pozici pro všechny rasy, nicméně nemůže být nakonfigurován. Můžeš stisknout CTRL + Levá/Pravá šipka, ke změně ramene.^^Volný mód posazuje postavu doprostřed obrazovky. Můžeš stisknout CTRL + šipku Nahoru/Dolů k naklonění kamery a CTRL + Numpad +/- k přiblížení.^^Podívej se do informací jak se ovládají jednotlivé módy kamery.
 qstr_Battlefield_is_too_s|Bojiště je příliš malé na složité formace UI.
-; qstr_You_have_a_clear_per|You have a clear perception of great imminent danger, from all around you!
+qstr_You_have_a_clear_per|Jasně vnímáš velké, bezprostřední nebezpečí všude kolem tebe!
 qstr_New_ent_reached_batt|Nový Ent dorazil na bitevní scénu...
 qstr_You_receive_word_tha|Dostal jsi zprávu že vesnice Meddědovců byla napadena. Meddědovci ztrácí Sílu frakce.
 qstr_You_receive_word_that|Dostal jsi zprávu že vůdce lovců prstenu byl viděn jak cestuje do Mordoru s hrudníkem v závěsu. Mordorská Síla frakce stoupá.
@@ -781,15 +781,15 @@ qstr_End_them_all!|Zabte je všechny!
 qstr_Drive_them_back!|Odražte je!
 qstr_Protect_the_City!|Chraňte město!
 qstr_Forward!_Board_them!|Kupředu! Naloďte je!
-; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
+qstr_The_Last_Days_of_the_|TLD má velmi odlišný systém obléhání UI než Native. Všechny jednotky, včetně hráčových, jsou rozděleny mezi různé týmy (levé křídlo, střed, pravé křídlo).^^ Hráč má na starosti vedení svého týmu, zatím co UI vede ostatní týmy. To dovoluje chytřejší, na týmu založené, obléhací bitvy.^^Počátečním jednotkám a posilám je přikázán útok během prvních pár sekund bitvy a po tom můžeš svému týmů znova velet.
 qstr_Reached_Gauntlet_wav|Dosaženo nepřátelské vlny {reg1}!
 qstr_Ballista:_out_of_amm|Balista: došla munice!
-; qstr_Ballista:_turn_CURSO|Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fire T, exit F
+qstr_Ballista:_turn_CURSO|Balista: ovládání CURSOR, míření LSHIFT, střelba SPACE, zapálit T, opustit F
 qstr_Ballista:_out_of_ammo|Balista: došla munice
 qstr_The_ladders_on_Deepi|Žebříky na zdech Žlebu! Pozor!
 qstr_THREE.._TWO..._ONE..|TŘI.. DVA... JEDNA.... BOJ!
-; qstr_You_have_come_upon_t|You have come upon the ruins of Amon Hen, the Hill of Sight, a Gondorian watch-tower atop which rests the Seat of Seeing^^You sense that this place was once great but has long been forgotten
-; qstr_You_have_come_upon_th|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters^^Dead grasses and rotting reeds loom up in the mists like ragged shadows of long forgotten summers, and bodies of men, elves, and orcs float in the murky depths^^The air feels cold and clammy, and you can't help but shiver as you see candle-lights flickering in the eyes of an elf corpse just beneath the water's surface
+qstr_You_have_come_upon_t|Přišel jsi na úpatí ruin Amon Hen, Vrch vidění, Gondorská strážní věž na vrcholu, kde odpočívá Stolec vidění^^Cítíš, že toto kdysi důležité místo, je již dlouho zapomenuto
+qstr_You_have_come_upon_th|Dorazil jsi k Mrtvým močálům, místu bitvy o Dagorlad během Války poslední Aliance^^Močály pohltily kdysi travnatou pláň a nyní jediné co je zde zelené tak je spodina živých plevelů na tmavých mastných površích vyschlých vod^^V mlhách se vynořily mrtvé trávy a hnijící rákosí jako roztrhané stíny dávno zapomenutých lét a těla lidí, elfů a skřetů se vznášejí v temných hlubinách^^Vzduch je chladný a vlhký. Nemůžeš si pomoci, ale chvěješ se, když vidíš, jak se v očích mrtvol elfů, těsně pod hladinou vody objevují blikající světla svíček.
 ; qstr_You_have_entered_the|You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The fortress of Dol Guldur is nearby and it casts a dark shadow over the forest. The woods here feel sickly and full of decay. Ancient oak trees are overrun with rot and fungus and great tangling webs stretch from trunk to trunk^^ The air is everlastingly still and dark and stuffy, and it feels like you are slowly being suffocated
 ; qstr_You_have_found_the_D|You have found the Dwarven Warehouse where the Legendary Spears could be. Report what you find to {s3}
 qstr_Leave_the_Warehouse?|Opustit skladiště?

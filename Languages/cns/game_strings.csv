@@ -248,12 +248,12 @@ str_persuasion_summary_bad|你试着说服{s50}，但是{reg51?她:他}从最开
 str_persuasion_summary_average|{s50}被证实是一个有着尖锐思想且很能辩论的人，你基本就没有办法使{reg51?她:他}反过来接受你的任何观点。最终，在这场辩论中，你们两人都没能使对方偏向各自的立场。
 str_persuasion_summary_good|凭借敏捷的思维和流畅的辩论，你设法把你的观点论证得很好，迫使{s50}认同你的一些观点。然而{reg51?她:他}仍然对你的要求表示怀疑。
 str_persuasion_summary_very_good|你富有激情的演讲像诗歌一样在听众耳朵里回想。整个世界似乎都安静下来以便更清楚地听你演讲。这些激励人心的话语把{s50}深深打动了，{reg51?她:他}看起来非常乐意帮助你。
-; str_name_1|Adanedhel
-; str_name_2|Ondoher
-; str_name_3|Aerandir
-; str_name_4|Agarwaen
-; str_name_5|Ailinel
-; str_name_6|Aldarion
+str_name_1|阿丹德尔
+str_name_2|奥德赫尔
+str_name_3|阿兰蒂尔
+str_name_4|奥格威恩
+str_name_5|艾尼尔
+str_name_6|艾戴恩
 ; str_name_7|Almarian
 ; str_name_8|Amandil
 ; str_name_9|Amlaith
@@ -314,7 +314,7 @@ str_name_54|洛瑞丝
 ; str_name_64|Meneldur
 ; str_name_65|Minalcar
 ; str_name_66|Minohtar
-; str_name_67|Ondoher
+str_name_67|奥德赫尔
 ; str_name_68|Orleg
 ; str_name_69|Orodreth
 ; str_name_70|Ostoher
@@ -2544,8 +2544,8 @@ str_rohan_guildmaster_player_found_ok|我觉得这个建议不错。祝你永远
 ; str_rhun_maincamp_guildmaster_companion|Our greatest swordbearers and riders fight in the retinues of our warlords. But there is one who has found favour with none of our chiefs so far. Not because he is weak; far from it! He does not curb his tongue when he speaks, and he has spoken loudly against our chieftains, saying they are slow to act and over-cautious. If he had his way, I wager the countryside would be covered in flames by now. His name is Varfang, and he spends his hours training near the prisoner cages, not far from this tent.
 ; str_guldur_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
 ; str_guldur_guildmaster_companion_none|O ho! What do we have here? A great captain, are you? I reckon your bark’s worse than your bite, and no mistake. Orders are orders: you draw your troops from our garrison here, and that’s that. Keep talking like that where they’ve got ears to hear, though, and someone will stick a knife in your back one of these days, see if they don’t.
-; str_guldur_guildmaster_companion_player_none_ok|You’ll watch your words with me, if you know what’s good for you.
-; str_guldur_guildmaster_player_found_ok|Scared witless by this woman, are you? I’ll go see if she’s all you make her out to be. This had better not be a waste of my time!
+str_guldur_guildmaster_companion_player_none_ok|如果不想找死，就注意你的言辞！
+str_guldur_guildmaster_player_found_ok|你被这个女人吓懵了?我将去看看是否她如你所说的那样。这最好不是在浪费我的时间。
 ; str_guldur_main_guildmaster_companion|We’ve got stout lads aplenty, curse you. Ha… I know what you’re really after. Oh yes, indeed, I know just where you should go, Commander. See that cave over there, with steps leading down? If our boys get hurt badly enough we send them down there, and I reckon almost a third of them make it back up, har! They can do very strange things, down there… and that one in particular, the woman… she gives me the shivers, and that’s saying something. They say she’s got something to do with Number One, or even Higher Up, if you take my meaning. Talk to her, if you dare.
 ; str_moria_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
 ; str_moria_guildmaster_companion_none|Proper warriors, {she/he} says! I reckon any of our snaga could give any of your lubbers a good drubbing. We’re a tough lot, we are, and no mistake. Go speak to our barracks master - but speak with respect, mind, or you’ll not get our stout fellows to follow you. Knife you as soon as your back is turned, if you don’t speak proper.
