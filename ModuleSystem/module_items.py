@@ -342,14 +342,14 @@ items =[
 
 #########WARGS#########
 #first non-horse / first warg in list: warg_1b (see in module_constants)
-["warg_1b","Warg",[("warg_1B",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(64)|horse_charge(35),imodbits_horse_basic|imodbits_warg,[]],
-["warg_1c","Warg",[("warg_1C",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(64)|horse_charge(35),imodbits_horse_basic|imodbits_warg,[]],
-["warg_1d","Warg",[("warg_1D",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(64)|horse_charge(35),imodbits_horse_basic|imodbits_warg,[]],
-["wargarmored_1b","Armored_Warg",[("wargArmored_1B",0)],itp_type_horse|itp_shop,0,1200,hit_points(100)|body_armor(25)|difficulty(4)|horse_speed(33)|horse_maneuver(61)|horse_charge(38),imodbits_horse_basic|imodbits_warg,[]],
-["wargarmored_1c","Armored_Warg",[("wargArmored_1C",0)],itp_type_horse|itp_shop,0,1200,hit_points(100)|body_armor(25)|difficulty(4)|horse_speed(33)|horse_maneuver(61)|horse_charge(38),imodbits_horse_basic|imodbits_warg,[]],
-["wargarmored_2b","Armored_Warg",[("wargArmored_2B",0)],itp_type_horse|itp_shop,0,1200,hit_points(110)|body_armor(30)|difficulty(4)|horse_speed(33)|horse_maneuver(61)|horse_charge(40),imodbits_horse_basic|imodbits_warg,[]],
-["wargarmored_2c","Armored_Warg",[("wargArmored_2C",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(33)|horse_maneuver(61)|horse_charge(40),imodbits_horse_basic|imodbits_warg,[]],
-["wargarmored_3a","Armored_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_shop,0,2500,hit_points(130)|body_armor(35)|difficulty(5)|horse_speed(33)|horse_maneuver(60)|horse_charge(45),imodbits_horse_basic|imodbits_warg,[]],
+["warg_1b","Warg",[("warg_1B",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(64)|horse_charge(35)|horse_scale(95),imodbits_horse_basic|imodbits_warg,[]],
+["warg_1c","Warg",[("warg_1C",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(64)|horse_charge(35)|horse_scale(95),imodbits_horse_basic|imodbits_warg,[]],
+["warg_1d","Warg",[("warg_1D",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(64)|horse_charge(35)|horse_scale(95),imodbits_horse_basic|imodbits_warg,[]],
+["wargarmored_1b","Armored_Warg",[("wargArmored_1B",0)],itp_type_horse|itp_shop,0,1200,hit_points(100)|body_armor(25)|difficulty(4)|horse_speed(33)|horse_maneuver(61)|horse_charge(38)|horse_scale(95),imodbits_horse_basic|imodbits_warg,[]],
+["wargarmored_1c","Armored_Warg",[("wargArmored_1C",0)],itp_type_horse|itp_shop,0,1200,hit_points(100)|body_armor(25)|difficulty(4)|horse_speed(33)|horse_maneuver(61)|horse_charge(38)|horse_scale(95),imodbits_horse_basic|imodbits_warg,[]],
+["wargarmored_2b","Armored_Warg",[("wargArmored_2B",0)],itp_type_horse|itp_shop,0,1200,hit_points(110)|body_armor(30)|difficulty(4)|horse_speed(33)|horse_maneuver(61)|horse_charge(40)|horse_scale(95),imodbits_horse_basic|imodbits_warg,[]],
+["wargarmored_2c","Armored_Warg",[("wargArmored_2C",0)],itp_type_horse|itp_shop,0,1200,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(33)|horse_maneuver(61)|horse_charge(40)|horse_scale(95),imodbits_horse_basic|imodbits_warg,[]],
+["wargarmored_3a","Armored_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_shop,0,2500,hit_points(130)|body_armor(35)|difficulty(5)|horse_speed(33)|horse_maneuver(60)|horse_charge(45)|horse_scale(95),imodbits_horse_basic|imodbits_warg,[]],
 ["warg_reward","Huge_Warg",[("wargArmored_huge",0)],itp_type_horse|itp_unique,0,3000,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic,[]],
 #first non WARG item: itm_warg_reward+1
 
@@ -970,11 +970,11 @@ items =[
 ["free_rohan_inf_sword2","Rohan_Sword",[("rohan_sword_b",0),("scab_rohan_sword_b",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(100)|weapon_length(95)|swing_damage(29,cut)|thrust_damage(22,pierce),imodbits_weapon],
 ["free_rohan_spear2","Rohan_Spear",[("rohan_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_spear_upstab,189,weight(2.5)|difficulty(0)|spd_rtng(92)|weapon_length(170)|swing_damage(16,blunt)|thrust_damage(29,pierce),imodbits_weapon_wood],
 ["free_rohan_lance2","Rohan_Lance",[("rohan_lance",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable,itc_pike,300,weight(2.5)|difficulty(0)|spd_rtng(88)|weapon_length(208)|thrust_damage(26,pierce),imodbits_weapon_wood],
-# rohan_lance_standard
 ["free_rohan_sword_c2","Rohan_Sword",[("rohan_sword_c",0),("scab_rohan_sword_c",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(96)|swing_damage(29,cut)|thrust_damage(21,pierce),imodbits_weapon],
 ["free_rohirrim_short_axe2","Rohirrim_Short_Axe",[("rohan_1haxe",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_secondary|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,500,weight(2)|difficulty(0)|spd_rtng(100)|weapon_length(50)|swing_damage(35,cut)|thrust_damage(0,pierce),imodbits_weapon],
 ["free_rohirrim_long_hafted_axe2","Rohirrim_Long_Hafted_Axe",[("rohan_2haxe",0)],itp_type_two_handed_wpn|itp_primary|itp_shop|itp_penalty_with_shield|itp_bonus_against_shield|itp_wooden_parry|itp_crush_through|itp_unbalanced,itc_bastardfalchion|itcf_carry_axe_left_hip,500,weight(4.5)|difficulty(0)|spd_rtng(92)|weapon_length(76)|swing_damage(35,cut)|thrust_damage(0,pierce),imodbits_weapon],
 ["free_rohan_2h_sword2","Rohan_War_Sword",[("rohan_sword_a_2h",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itc_greatsword|itcf_carry_sword_back,524,weight(3)|difficulty(0)|spd_rtng(94)|weapon_length(101)|swing_damage(40,cut)|thrust_damage(31,pierce),imodbits_weapon],
+
 ###TLD WOODELF ITEMS##########
 #ARMORS##########
 ["mirkwood_leather","Woodelf_Leather_Armor",[("mirkwood_leather_b",0),("mirkwood_leather_a",imodbits_armor_bad),("mirkwood_leather_c",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,150,weight(2)|head_armor(0)|body_armor(16)|leg_armor(2)|difficulty(0),imodbits_armor|imodbit_lordly,],
@@ -1004,6 +1004,7 @@ items =[
 #free Dec 2019
 ["free_mirkwood_leather_greaves","Mirkwood_Leather_Greaves",[("mirkwood_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1500,weight(1)|leg_armor(28)|difficulty(0),imodbits_elf_cloth],
 ["mirkwood_boots","Woodelf_Boots",[("mirkwood_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1200,weight(1)|leg_armor(23)|difficulty(0),imodbits_elf_cloth],
+
 #####TLD HARAD ITEMS##########
 ###########ARMOR##########
 ["harad_tunic","Harad_Tunic",[("harad_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,50,weight(4)|head_armor(0)|body_armor(8)|leg_armor(3)|difficulty(0),imodbits_cloth,],
