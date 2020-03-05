@@ -118,6 +118,10 @@ companion_home_description_3
 player_hire_troop
 player_hire_troop_take
 player_hire_troop_give
+player_hire_trolls_take
+player_hire_trolls_how_many
+player_hire_troll_buy_done
+player_hire_troll_buy_not_enough
 tld_sell_prisoners
 tld_sell_prisoners_check
 tld_sell_prisoners_2
@@ -596,6 +600,10 @@ prisoner_slaughter_02
 town_merchant_talk
 trade_requested_weapons
 trade_requested_horse
+player_upgrade_trolls_take
+player_upgrade_trolls_ask
+player_upgrade_troll_buy_done
+player_upgrade_troll_not_enough
 merchant_trade
 merchant_gossip
 town_dweller_talk

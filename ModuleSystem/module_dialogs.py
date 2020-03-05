@@ -871,9 +871,9 @@ dialogs = [
   (party_get_num_companion_stacks,":stacks","p_main_party"),
   (assign, ":num_werewolves", 0),
   (try_for_range,":stack",0,":stacks"),
-    (party_stack_get_troop_id, ":troop_id", ":stack"),
+    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
     (eq, ":troop_id", "trp_werewolf"),
-    (val_add, ":num_werewolves", 1),
+    (party_stack_get_size, ":num_werewolves", "p_main_party", ":stack"),
   (try_end),
   (store_character_level, ":ziggy_level", "trp_npc20"),
   (store_sub, ":ziggy_wolves", ":ziggy_level", 17),
@@ -888,9 +888,9 @@ dialogs = [
   (party_get_num_companion_stacks,":stacks","p_main_party"),
   (assign, ":num_werewolves", 0),
   (try_for_range,":stack",0,":stacks"),
-    (party_stack_get_troop_id, ":troop_id", ":stack"),
+    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
     (eq, ":troop_id", "trp_werewolf"),
-    (val_add, ":num_werewolves", 1),
+    (party_stack_get_size, ":num_werewolves", "p_main_party", ":stack"),
   (try_end),
   (store_character_level, ":ziggy_level", "trp_npc20"),
   (store_sub, ":ziggy_wolves", ":ziggy_level", 17),
@@ -1730,6 +1730,13 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (else_try), (str_store_string, s33, "@So, you are {s23}. I hear you fight for our {s25} friends, so I guess I should consider you an ally."), # player unknown
     (try_end),
 
+    #TLD Kham - If troll, bend.
+    (try_begin),
+      (troop_get_type, ":is_troll", "$g_talk_troop"),
+      (eq, ":is_troll", tf_troll),
+      (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+    (try_end),
+
     # just to see if someone can be given away: backup party, then see if troops which can be given away 
     (call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
     (call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_encountered_party_faction")],
@@ -1822,6 +1829,63 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
       #(change_screen_exchange_members, 0,":reserve_party"), # doesn't work without changing context...
       (jump_to_menu, "mnu_auto_player_garrison"), #...therefore, hackery ensues
   ]],
+
+# TLD Kham - Player Hire Troll
+
+[anyone|plyr,"player_hire_troop", 
+  [
+   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
+   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+   (gt, ":rank", 3),], 
+  "Give me some trolls!", "player_hire_trolls_take", []],
+
+[anyone,"player_hire_trolls_take", 
+  [
+
+    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+    (store_character_level, ":troll_level", ":fac_troll"),
+    (val_div, ":troll_level", 2), #Inf. Cost
+    (assign, reg21, ":troll_level"),
+  ], 
+  "It will cost {reg21} influence.", "player_hire_trolls_how_many", []],
+
+
+
+[anyone|plyr,"player_hire_trolls_how_many", 
+  [ 
+    (faction_get_slot, reg20, "$g_talk_troop_faction", slot_faction_influence),
+    (ge, reg20, reg21), #reg21 is inf cost
+  ], 
+  "I'll take the lot.", "player_hire_troll_buy_done", []],
+
+[anyone|plyr,"player_hire_trolls_how_many", 
+  [ 
+    (faction_get_slot, reg20, "$g_talk_troop_faction", slot_faction_influence),
+    (lt, reg20, reg21), #reg21 is inf cost
+  ], 
+  "I don't have enough", "player_hire_troll_buy_not_enough", []],
+
+[anyone|plyr,"player_hire_trolls_how_many", 
+  [], 
+  "Never mind...", "player_hire_troll_buy_not_enough", []],
+
+[anyone,"player_hire_troll_buy_not_enough", 
+  [], 
+  "Wasting my time...", "close_window", []],
+
+[anyone,"player_hire_troll_buy_done", 
+  [], 
+  "Don't let them die all that once...", "close_window", 
+  [
+    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+    (call_script, "script_spend_influence_of", reg21, "$g_talk_troop_faction"),
+    (party_add_members, "p_main_party", ":fac_troll", 1),
+  ]],
+
+# TLD Kham - Player Hire Troll END
+
+
 
 # Training
 [anyone|plyr,"player_hire_troop",[ (neg|party_slot_eq, "$g_encountered_party", slot_town_arena, -1)], 
@@ -12401,6 +12465,133 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone|plyr,"town_merchant_talk", [(is_between,"$g_talk_troop",horse_merchants_begin,horse_merchants_end),(call_script, "script_check_equipped_items", "trp_player")],
 "I am thinking of getting a mount.", "trade_requested_horse",[]],
+
+# TLD Kham - Player Upgrade Troll
+
+[anyone|plyr,"town_merchant_talk", 
+  [
+   (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
+   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
+   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+   (gt, ":rank", 5),
+   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+   (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
+   (party_get_num_companion_stacks,":stacks","p_main_party"),
+   (assign, ":num_trolls", 0),
+   (try_for_range,":stack",0,":stacks"),
+    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
+    (eq, ":troop_id", ":fac_troll_up"),
+    (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
+   (try_end),
+   (gt, ":num_trolls", 0),
+
+  ], 
+  "I want to upgrade my trolls!", "player_upgrade_trolls_take", []],
+
+[anyone,"player_upgrade_trolls_take", 
+  [
+
+   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+   (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
+   (troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
+   (gt, ":armoured", 0), 
+   (party_get_num_companion_stacks,":stacks","p_main_party"),
+   (assign, ":num_trolls", 0),
+   (try_for_range,":stack",0,":stacks"),
+    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
+    (eq, ":troop_id", ":fac_troll_up"), #They have unarmoured ones?
+    (val_add, ":num_trolls", 1),
+   (try_end),
+   (gt, ":num_trolls", 0),
+   (store_character_level, ":price", ":armoured"),
+   (val_mul, ":price", 300), 
+   (assign, reg21, ":price"),
+
+  ], 
+  "We can armour one and it will cost {reg21} resource points...", "player_upgrade_trolls_ask", []],
+
+[anyone,"player_upgrade_trolls_take", 
+  [
+
+   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+   (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
+   (troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
+   (le, ":armoured", 0), 
+
+  ], 
+  "We don't do that here...", "close_window", []],
+
+[anyone,"player_upgrade_trolls_take", 
+  [
+
+   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+   (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
+   (troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
+   (gt, ":armoured", 0), 
+   (party_get_num_companion_stacks,":stacks","p_main_party"),
+   (assign, ":num_trolls", 0),
+   (try_for_range,":stack",0,":stacks"),
+    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
+    (eq, ":troop_id", ":fac_troll_up"), #They have unarmoured ones?
+    (val_add, ":num_trolls", 1),
+   (try_end),
+   (le, ":num_trolls", 0),
+
+  ], 
+  "We can't armour the trolls you have here. Go where you found them.", "close_window", []],
+
+[anyone|plyr,"player_upgrade_trolls_ask", 
+  [ 
+    (faction_get_slot,  ":rp", "$g_talk_troop_faction", slot_faction_respoint),
+    (ge, ":rp", reg21), #reg21 is rps cost
+  ], 
+  "I'll armour one of them.", "player_upgrade_troll_buy_done", []],
+
+[anyone|plyr,"player_upgrade_trolls_ask", 
+  [ 
+    (faction_get_slot,  ":rp", "$g_talk_troop_faction", slot_faction_respoint),
+    (lt, ":rp", reg21), #reg21 is rps cost
+  ], 
+  "I don't have enough", "player_upgrade_troll_not_enough", []],
+
+[anyone|plyr,"player_upgrade_trolls_ask", 
+  [], 
+  "Never mind...", "player_upgrade_troll_not_enough", []],
+
+[anyone,"player_upgrade_troll_not_enough", 
+  [], 
+  "Wasting my time...", "close_window", []],
+
+[anyone,"player_upgrade_troll_buy_done", 
+  [], 
+  "Good...", "close_window", 
+  [
+   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+   (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
+   (troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
+   (gt, ":armoured", 0), 
+   (party_get_num_companion_stacks,":stacks","p_main_party"),
+   (assign, ":num_trolls", 0),
+   (try_for_range,":stack",0,":stacks"),
+    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
+    (eq, ":troop_id", ":fac_troll_up"), #They have unarmoured ones?
+    (val_add, ":num_trolls", 1),
+   (try_end),
+   (gt, ":num_trolls", 0),
+   (store_character_level, ":price", ":armoured"),
+   (val_mul, ":price", -300), 
+   (party_remove_members, "p_main_party", ":fac_troll_up", 1),
+   (party_add_members, "p_main_party", ":armoured", 1),
+   (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":price"),
+  ]],
+
+# TLD Kham - Player Upgrade Troll END
+
 
 [anyone,"trade_requested_weapons", [], "Ah, yes commander. These wares are the best you'll find anywhere.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
   (change_screen_trade)]],

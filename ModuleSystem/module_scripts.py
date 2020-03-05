@@ -1401,7 +1401,8 @@ scripts = [
 	(faction_set_slot, faction_init[x][0], slot_faction_tier_3_troop    , faction_init[x][4][2])  for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_tier_4_troop    , faction_init[x][4][3])  for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_tier_5_troop    , faction_init[x][4][4])  for x in range(len(faction_init)) ]+[
-	(faction_set_slot, faction_init[x][0], slot_faction_ranged_troop	, faction_init[x][4][5])  for x in range(len(faction_init)) ]+[
+	(faction_set_slot, faction_init[x][0], slot_faction_ranged_troop		, faction_init[x][4][5])  for x in range(len(faction_init)) ]+[
+	(faction_set_slot, faction_init[x][0], slot_faction_troll_troop			, faction_init[x][4][6])  for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_reinforcements_a, faction_init[x][5][0])  for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_reinforcements_b, faction_init[x][5][1])  for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_reinforcements_c, faction_init[x][5][2])  for x in range(len(faction_init)) ]+[
@@ -1931,7 +1932,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",10),
+    (assign,"$savegame_version",11),
 
 	] + (is_a_wb_script==1 and [
 
@@ -2077,6 +2078,10 @@ scripts = [
    	(troop_set_slot, "trp_badass_theo", slot_troop_has_combat_ai, 1),
    	(troop_set_slot, "trp_killer_witcher", slot_troop_has_combat_ai, 1),
 
+  #Armoured Troll Variants
+  (troop_set_slot, "trp_moria_vet_troll", slot_troop_troll_armoured_variant, "trp_moria_armored_troll"),
+  (troop_set_slot, "trp_isen_vet_troll", slot_troop_troll_armoured_variant, "trp_isen_armored_troll"),
+  (troop_set_slot, "trp_mordor_vet_troll", slot_troop_troll_armoured_variant, "trp_mordor_olog_hai"),
 
 	] or []) + [
 
@@ -15662,6 +15667,14 @@ scripts = [
 		(position_transform_position_to_parent, pos3, pos5, pos1),
 		(cur_tableau_add_mesh, ":banner_mesh", pos3, 400, 0),
 	(try_end),
+
+  #TLD Kham - If troll, bend.
+	(try_begin),
+	  (troop_get_type, ":is_troll", ":troop_no"),
+	  (eq, ":is_troll", tf_troll),
+	  (assign, ":animation", "anim_troll_or_ent_bend_continue"),
+	(try_end),
+
 	(cur_tableau_add_troop, ":troop_no", pos2, ":animation" , 0),
 
 	(cur_tableau_set_camera_position, pos5),
@@ -15769,6 +15782,13 @@ scripts = [
        (position_move_z, pos5, ":camera_distance", 0),
        (position_move_x, pos5, 5, 0),
 
+		  #TLD Kham - If troll, bend.
+			(try_begin),
+			  (troop_get_type, ":is_troll", ":troop_no"),
+			  (eq, ":is_troll", tf_troll),
+			  (assign, ":animation", "anim_troll_or_ent_bend_continue"),
+			(try_end),
+			
        (try_begin),
          (troop_is_hero, ":troop_no"),
          (cur_tableau_add_troop, ":troop_no", pos2, ":animation", -1),
@@ -15834,6 +15854,13 @@ scripts = [
        (position_rotate_x, pos5, ":camera_pitch"),
        (position_move_z, pos5, ":camera_distance", 0),
        (position_move_x, pos5, 5, 0),
+
+		  #TLD Kham - If troll, bend.
+			(try_begin),
+			  (troop_get_type, ":is_troll", ":troop_no"),
+			  (eq, ":is_troll", tf_troll),
+			  (assign, ":animation", "anim_troll_or_ent_bend_continue"),
+			(try_end),
 
        (try_begin),
          (troop_is_hero, ":troop_no"),
@@ -23786,6 +23813,18 @@ command_cursor_scripts = [
     	(call_script, "script_initialize_guildmaster_companion_strings"),
     	(assign, "$savegame_version", 10),
     (try_end),
+
+    (try_begin), #Kham - March 2020
+    	(lt, "$savegame_version", 10),
+  		(troop_set_slot, "trp_moria_vet_troll", slot_troop_troll_armoured_variant, "trp_moria_armored_troll"),
+  		(troop_set_slot, "trp_isen_vet_troll", slot_troop_troll_armoured_variant, "trp_isen_armored_troll"),
+  		(troop_set_slot, "trp_mordor_vet_troll", slot_troop_troll_armoured_variant, "trp_mordor_olog_hai"),
+			(faction_set_slot, "fac_moria", slot_faction_troll_troop, "trp_moria_troll"),
+			(faction_set_slot, "fac_isengard", slot_faction_troll_troop, "trp_isen_troll"),
+  		(faction_set_slot, "fac_mordor", slot_faction_troll_troop, "trp_mordor_troll"),
+  		(faction_set_slot, "fac_gundabad", slot_faction_troll_troop, "trp_gunda_troll"),
+    	(assign, "$savegame_version", 11),
+    (try_end),
 ]),
 
 #Kham
@@ -25874,6 +25913,7 @@ command_cursor_scripts = [
 	]),
 
 ]
+
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
 
