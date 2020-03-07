@@ -1834,19 +1834,30 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone|plyr,"player_hire_troop", 
   [
-   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
-   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
-   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
-   (gt, ":rank", 3),], 
-  "Give me some trolls!", "player_hire_trolls_take", []],
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+  ], 
+  "Some of the commanders have some trolls in their ranks. I want to have those too.", "player_hire_trolls_take", []],
 
 [anyone,"player_hire_trolls_take", 
   [
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
+   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+   (le, ":rank", 3),], 
+  "You are nobody, maggot. Go away.", "close_window", []],
 
-    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
-    (store_character_level, ":troll_level", ":fac_troll"),
-    (val_div, ":troll_level", 2), #Inf. Cost
-    (assign, reg21, ":troll_level"),
+
+[anyone,"player_hire_trolls_take", 
+  
+  [
+   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+   (gt, ":fac_troll", 0),
+   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
+   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+   (gt, ":rank", 3),
+   (store_character_level, ":troll_level", ":fac_troll"),
+   (val_div, ":troll_level", 2), #Inf. Cost
+   (assign, reg21, ":troll_level"),
   ], 
   "It will cost {reg21} influence.", "player_hire_trolls_how_many", []],
 
@@ -1865,6 +1876,21 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (lt, reg20, reg21), #reg21 is inf cost
   ], 
   "I don't have enough", "player_hire_troll_buy_not_enough", []],
+
+[anyone|plyr,"player_hire_trolls_how_many", 
+  [], 
+  "I want armoured ones. Can I have those?", "player_hire_troll_armoured", []],
+
+[anyone,"player_hire_troll_armoured", 
+  [
+    (try_begin),
+      (eq, "$g_talk_troop_faction", "fac_gundabad"),
+      (str_store_string, s55, "@Armours are for weaklings... Gundabad Trolls don't wear these"),
+    (else_try),
+      (str_store_string, s55, "@Do I look like a smith to you? Go talk to the smith."),
+    (try_end),
+  ], 
+  "{s55}", "player_hire_trolls_how_many", []],
 
 [anyone|plyr,"player_hire_trolls_how_many", 
   [], 
@@ -12471,10 +12497,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone|plyr,"town_merchant_talk", 
   [
    (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
-   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
-   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
-   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
-   (gt, ":rank", 5),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
    (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
    (party_get_num_companion_stacks,":stacks","p_main_party"),
@@ -12491,8 +12514,30 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"player_upgrade_trolls_take", 
   [
+   (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
+   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+   (le, ":rank", 5),
+   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+   (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
+   (party_get_num_companion_stacks,":stacks","p_main_party"),
+   (assign, ":num_trolls", 0),
+   (try_for_range,":stack",0,":stacks"),
+    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
+    (eq, ":troop_id", ":fac_troll_up"),
+    (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
+   (try_end),
+   (gt, ":num_trolls", 0),
 
-   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+  ], 
+  "Who are you to ask this of me, maggot? Go away. (Rank not high enough)", "close_window", []],
+
+
+[anyone,"player_upgrade_trolls_take", 
+  [
+
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
    (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
    (troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),

@@ -1816,7 +1816,7 @@ troops = [
    [itm_umb_armor_a,itm_corsair_boots,itm_umb_shield_a,itm_corsair_throwing_dagger,itm_umbar_rapier,],
       str_10|agi_9|int_7|cha_7|level(5),wp(80),knows_athletics_1|knows_power_throw_2|knows_power_strike_1|knows_trade_2|knows_looting_2,0x00000001b70032453add7524dc76d74900000000001d35330000000000000000],
 ["npc15","Bolzog","_",tf_orc| tf_hero| tf_unmoveable_in_party_window,0,0,fac_moria,
-   [itm_moria_armor_a,itm_orc_machete,orc_face_normal],
+   [itm_moria_armor_a,itm_orc_machete],
       str_9|agi_10|int_12|cha_4|level(7),wp(80),knows_athletics_2|knows_power_throw_1|knows_power_strike_1|knows_ironflesh_1|knows_wound_treatment_2|knows_first_aid_2|knows_surgery_1,0x00000001ab00200d35627276a42e150c00000000001dca2c0000000000000000],
 ["npc16","Varfang","_",tf_mounted| tf_hero| tf_unmoveable_in_party_window,0,0,fac_rhun,
    [itm_rhun_armor_a,itm_furry_boots,itm_rhun_sword,itm_light_lance,itm_rhun_helm_g,itm_rhun_horse_a,],
