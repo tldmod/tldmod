@@ -1215,7 +1215,7 @@ items =[
 ["umb_helm_d","Corsair_Raider_Helm",[("raider_helmet",0),("raider_helmet_b",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["free_umb_helm_e","Corsair_Tall_Helm",[("umbar_tall_helmet",0)],itp_type_head_armor|itp_shop,0,1200,weight(3)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["free_umb_helm_f","Corsair_Tall_Helm",[("umbar_tall_helmet_b",0)],itp_type_head_armor|itp_shop,0,1200,weight(3)|head_armor(35)|difficulty(0),imodbits_elf_armor],
-["free_umb_hood","Black_Hood",[("umbar_hood",0),("umbar_hood_mask",imodbits_elf_cloth),("umbar_hood_mask",imodbit_sturdy)],itp_type_head_armor|itp_shop,0,250,weight(1)|head_armor(10)|difficulty(0),imodbits_cloth],
+["corsair_trident","Trident_of_Sea_Fury",[("corsair_trident",0)],itp_type_polearm|itp_unique|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback,itc_pike_upstab|itcf_carry_axe_back,2000,weight(4.5)|difficulty(12)|spd_rtng(94)|weapon_length(166)|thrust_damage(35,pierce),imodbits_weapon_wood],
 ["corsair_boots","Corsair_Boots",[("corsair_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,400,weight(1)|leg_armor(14)|difficulty(0),imodbits_cloth],
 ########SHIELDS##########
 ["umb_shield_a","Corsair_Shield",[("corsair_buckler_long_a",0),("corsair_buckler_long_a_carry",ixmesh_carry),("corsair_buckler_long_b",imodbits_armor_good),("corsair_buckler_long_b_carry",ixmesh_carry|imodbits_armor_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2)|hit_points(420)|body_armor(1)|spd_rtng(89)|weapon_length(35),imodbits_shield,],
@@ -1353,7 +1353,7 @@ items =[
 ["empty_head","empty head",[("0",0),("chieftainhelm",imodbit_old), ("pointedhelmet", imodbit_poor)],itp_type_head_armor|itp_unique|itp_covers_beard|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],
 #### TLD REWARD ITEMS BEGIN
 # magic items begin
-["ent_water","Strange_bowl_of_water",[("ent_water",0)],itp_unique|itp_type_goods,0,200,weight(2)|abundance(0)|0,imodbits_none],
+["ent_water","Strange_Bowl_of_Water",[("ent_water",0)],itp_unique|itp_type_goods,0,200,weight(2)|abundance(0)|0,imodbits_none],
 ["map","Maps_of_Middle_Earth",[("middle_earth_map",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["athelas_reward","Athelas_Plant",[("athelas_plant",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["phial_reward","Light_of_Galadriel",[("galadriel_light",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
@@ -1385,8 +1385,9 @@ items =[
 ["ring_b_reward","Finwarisil",[("reward_ring_b",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["dale_bow_reward","Bow_of_Bard",[("GA_BowE_Longbow_A",0),("GA_BowE_Longbow_A_Carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,3000,weight(1.5)|difficulty(5)|shoot_speed(69)|spd_rtng(90)|thrust_damage(28,pierce)|accuracy(100),0,[] ],
 ["explosive_reward","Isengard_Mine",[("reward_isenmine",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
-["corsair_trident","Trident_of_Sea_Fury",[("corsair_trident",0)],itp_type_polearm|itp_unique|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback,itc_pike_upstab|itcf_carry_axe_back,2000,weight(4.5)|difficulty(12)|spd_rtng(94)|weapon_length(166)|thrust_damage(35,pierce),imodbits_weapon_wood],
-["crebain_reward","Isengard_Crebain",[("prop_reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
+#Next one moved to Umbar items Mar 2020
+["corsair_trident2","Trident_of_Sea_Fury",[("corsair_trident",0)],itp_type_polearm|itp_unique|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback,itc_pike_upstab|itcf_carry_axe_back,2000,weight(4.5)|difficulty(12)|spd_rtng(94)|weapon_length(166)|thrust_damage(35,pierce),imodbits_weapon_wood],
+["crebain_reward","Crebain",[("prop_reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(1)|abundance(0)|0,imodbits_none],
 ["miruvor_reward","Miruvor_Flask",[("reward_miruvor",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["wheeled_cage","Giant_Wheeled_Cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
 ["orc_throwing_axes_reward","Gundabad_Flying_Axes",[("orc_throwing_axe",0)],itp_type_thrown|itp_unique|itp_primary|itp_bonus_against_shield,itcf_throw_axe,150,weight(4)|difficulty(0)|shoot_speed(30)|spd_rtng(103)|weapon_length(33)|thrust_damage(46,cut)|max_ammo(5),imodbits_thrown],
@@ -1399,13 +1400,13 @@ items =[
 #["lorien_sword_reward","Galadhrim_Sword",[("lorien_sword_hand_and_half",0),("scab_lorien_sword_hand_and_half",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,900,weight(2.5)|difficulty(0)|spd_rtng(115)|weapon_length(103)|swing_damage(43,cut)|thrust_damage(33,pierce),imodbits_none],
 ["dale_sword_reward","Dale_Royal_Sword",[("Mandible_royal_sword",0),("Mandible_royal_sword_scabbard",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_unique,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(12)|spd_rtng(97)|weapon_length(110)|swing_damage(48,cut)|thrust_damage(30,pierce),imodbits_none],
 ["dale_armor_reward","Dale_Noblemen_Mail",[("dale_reward",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(25)|head_armor(4)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_none,],
-["leather_gloves_reward","Archer_Gloves",[("CWE_gloves_king_L",0),("ent_hand_L",imodbit_tattered),("olog_hand_L",imodbit_rusty),("isen_olog_hand_L",imodbit_old)],itp_type_hand_armor|itp_unique,0,200,weight(0.2)|body_armor(3)|difficulty(0),imodbits_none,[]],
+["leather_gloves_reward","Archer_Gloves",[("CWE_gloves_king_L",0),("ent_hand_L",imodbit_tattered),("olog_hand_L",imodbit_rusty),("isen_olog_hand_L",imodbit_old)],itp_type_hand_armor|itp_unique,0,2000,weight(0.2)|body_armor(3)|difficulty(0),imodbits_none,[]],
 ["beorn_shield_reward","Beorning_Shield",[("beorning_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,  430 , weight(4.5)|hit_points(690)|body_armor(9)|spd_rtng(95)|weapon_length(70),imodbits_shield,],
 ["beorn_axe_reward","Bear_Club",[("beorning_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_knock_down,itc_scimitar|itcf_carry_mace_left_hip,2000,weight(4.5)|difficulty(8)|spd_rtng(93)|weapon_length(67)|swing_damage(32,blunt),imodbits_weapon_good],
 ["moria_arrow_reward","Moria_Poisoned_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows,itcf_carry_quiver_back_right,700,weight(3)|thrust_damage(11,cut)|max_ammo(40)|weapon_length(95),imodbits_missile,[]],
 
 ["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small_new",0)],itp_type_head_armor|itp_unique,0,3000,weight(4)|head_armor(50)|difficulty(15),0],
-["black_arrows_reward","Black_Arrows",[("khazad_orc_arrow_2",0),("khazad_orc_arrow_2.lod2",ixmesh_flying_ammo),("khazad_orc_arrow_2_quiver",ixmesh_carry)],itp_type_arrows|itp_can_penetrate_shield|itp_crush_through,itcf_carry_quiver_back_right,2000,weight(3)|thrust_damage(3,cut)|max_ammo(25)|weapon_length(95),imodbits_missile,[]],
+["black_arrows_reward","Black_Arrows",[("khazad_orc_arrow_2",0),("khazad_orc_arrow_2.lod2",ixmesh_flying_ammo),("khazad_orc_arrow_2_quiver",ixmesh_carry),("rohan_arrow2_black",imodbit_masterwork),("rohan_arrow2_black_flying",ixmesh_flying_ammo|imodbit_masterwork),("rohan_quiver2_black",ixmesh_carry|imodbit_masterwork)],itp_type_arrows|itp_can_penetrate_shield|itp_crush_through,itcf_carry_quiver_back_right,2000,weight(3)|thrust_damage(3,cut)|max_ammo(25)|weapon_length(95),imodbits_missile,[]],
 ["leather_boots_reward","Hunter_Boots",[("got_stark_hanter_boots",0)],itp_type_foot_armor|itp_unique,0,200,weight(1)|leg_armor(22)|difficulty(0),imodbits_cloth],
 #["sarustaff","Wizards_Staff",[("sarustaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
 ["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armour",0),("denethor_robe",imodbit_well_made),("dm_nazgulrobe",imodbit_cheap),("pippin",imodbit_battered),("merry",imodbit_chipped),("whiterobe",imodbit_bent), ("old_nazgulrobe",imodbit_old),("galadriel",imodbit_rusty)],itp_type_body_armor|itp_covers_legs,0,4000,weight(35)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(15),imodbits_elf_armor,],
@@ -1423,8 +1424,8 @@ items =[
 
 #next three freed up (disabled most traces of defilement system)
 ["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(30)|horse_speed(60)|horse_maneuver(60)|horse_charge(25)|horse_scale(100)|difficulty(10),imodbits_none,[]],
-["defiled_armor_rohan","Defiled_Rohan_Hauberk",[("defile_rohan",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1600,weight(17)|head_armor(0)|body_armor(25)|leg_armor(9)|difficulty(0),imodbits_none, [(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_defiled_rohan_armor",0)])]],
-["defiled_armor_dale","Defiled_Dale_Noble_Armor",[("defile_dale",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(21)|head_armor(2)|body_armor(30)|leg_armor(11)|difficulty(0),imodbits_none, [(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_defiled_dale_armor",0)])]],
+["thrush_reward","Thrush",[("prop_reward_thrush",0)],itp_unique|itp_type_goods,0,1000,weight(1)|abundance(0)|0,imodbits_none],
+["gauntlets_reward","Iron_Fists",[("narf_demi_gauntlets_L",0),],itp_type_hand_armor|itp_unique,0,2000,weight(2)|body_armor(6)|difficulty(0),imodbits_none,[]],
 
 #last item for MnB
 ["save_compartibility_item10","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],

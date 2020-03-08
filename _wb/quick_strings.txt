@@ -1,4 +1,4 @@
-1869
+1871
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -263,7 +263,9 @@ qstr_when_equipped when_equipped
 qstr_+1_to_Riding +1_to_Riding
 qstr_+1_to_Mounted_Archer +1_to_Mounted_Archery
 qstr_+2_to_Tactics +2_to_Tactics
-qstr_+3_to_Spotting +3_to_Spotting
+qstr_+{reg1}_to_Spotting +{reg1}_to_Spotting
+qstr__Scales_with_Wildcra (Scales_with_Wildcraft)
+qstr_+1_to_Spotting +1_to_Spotting
 qstr_+2_to_Athletics +2_to_Athletics
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
 qstr_Less_Wargs_upkeep Less_Wargs_upkeep

@@ -2257,7 +2257,7 @@ itemsfile version 2
  itm_free_umb_helm_f Corsair_Tall_Helm Corsair_Tall_Helm 1  umbar_tall_helmet_b 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_free_umb_hood Black_Hood Black_Hood 3  umbar_hood 0  umbar_hood_mask 251658240  umbar_hood_mask 16777216  65548 0 250 123731968 1 100 10 0 0 0 0 0 0 0 0 0 0
+ itm_corsair_trident Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  274763780 9236601365055144192 2000 271496 4.5 100 0 0 0 12 0 94 0 166 0 291 0
 0
 
  itm_corsair_boots Corsair_Boots Corsair_Boots 1  corsair_boots 0  536940302 0 400 123731968 1 100 0 0 14 0 0 0 0 0 0 0 0
@@ -2565,7 +2565,7 @@ itemsfile version 2
  itm_empty_head empty_head empty_head 3  dummy_mesh 0  chieftainhelm 256  pointedhelmet 64  208305917964 0 1 0 58 100 50 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_ent_water Strange_bowl_of_water Strange_bowl_of_water 1  ent_water 0  4107 0 200 0 2 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_ent_water Strange_Bowl_of_Water Strange_Bowl_of_Water 1  ent_water 0  4107 0 200 0 2 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_map Maps_of_Middle_Earth Maps_of_Middle_Earth 1  middle_earth_map 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2658,10 +2658,10 @@ itemsfile version 2
  itm_explosive_reward Isengard_Mine Isengard_Mine 1  reward_isenmine 0  4107 0 1000 0 5 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_corsair_trident Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  274763780 9236601365055144192 2000 271496 4.5 100 0 0 0 12 0 94 0 166 0 291 0
+ itm_corsair_trident2 Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  274763780 9236601365055144192 2000 271496 4.5 100 0 0 0 12 0 94 0 166 0 291 0
 0
 
- itm_crebain_reward Isengard_Crebain Isengard_Crebain 1  prop_reward_crebain 0  4107 0 1000 0 5 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_crebain_reward Crebain Crebain 1  prop_reward_crebain 0  4107 0 1000 0 1 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_miruvor_reward Miruvor_Flask Miruvor_Flask 1  reward_miruvor 0  4107 0 1000 0 5 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2697,7 +2697,7 @@ itemsfile version 2
  itm_dale_armor_reward Dale_Noblemen_Mail Dale_Noblemen_Mail 1  dale_reward 0  16781325 0 2000 0 25 100 4 38 15 0 0 0 0 0 0 0 0
 0
 
- itm_leather_gloves_reward Archer_Gloves Archer_Gloves 4  CWE_gloves_king_L 0  ent_hand_L 2097152  olog_hand_L 4  isen_olog_hand_L 256  4111 0 200 0 0 100 0 3 0 0 0 0 0 0 0 0 0
+ itm_leather_gloves_reward Archer_Gloves Archer_Gloves 4  CWE_gloves_king_L 0  ent_hand_L 2097152  olog_hand_L 4  isen_olog_hand_L 256  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 430 251658402 4.5 100 0 9 0 0 690 95 0 70 0 0 0
@@ -2712,7 +2712,7 @@ itemsfile version 2
  itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small_new 0  4108 0 3000 0 4 100 50 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_black_arrows_reward Black_Arrows Black_Arrows 3  khazad_orc_arrow_2 0  khazad_orc_arrow_2.lod2 2305843009213693952  khazad_orc_arrow_2_quiver 3458764513820540928  4311744517 1610612736 2000 4398046520456 3 100 0 0 0 0 0 0 0 95 25 3 0
+ itm_black_arrows_reward Black_Arrows Black_Arrows 6  khazad_orc_arrow_2 0  khazad_orc_arrow_2.lod2 2305843009213693952  khazad_orc_arrow_2_quiver 3458764513820540928  rohan_arrow2_black 131072  rohan_arrow2_black_flying 2305843009213825024  rohan_quiver2_black 3458764513820672000  4311744517 1610612736 2000 4398046520456 3 100 0 0 0 0 0 0 0 95 25 3 0
 0
 
  itm_leather_boots_reward Hunter_Boots Hunter_Boots 1  got_stark_hanter_boots 0  4110 0 200 123731968 1 100 0 0 22 0 0 0 0 0 0 0 0
@@ -2751,13 +2751,11 @@ itemsfile version 2
  itm_werewolf Werewolf Werewolf 1  mm_warg_a 0  4097 0 1200 0 0 100 0 30 0 10 130 60 60 100 0 25 0
 0
 
- itm_defiled_armor_rohan Defiled_Rohan_Hauberk Defiled_Rohan_Hauberk 1  defile_rohan 0  16781325 0 1600 0 17 100 0 25 9 0 0 0 0 0 0 0 0
-1
--50  1 1981 2 46 0 
+ itm_thrush_reward Thrush Thrush 1  prop_reward_thrush 0  4107 0 1000 0 1 100 0 0 0 0 0 0 0 0 0 0 0
+0
 
- itm_defiled_armor_dale Defiled_Dale_Noble_Armor Defiled_Dale_Noble_Armor 1  defile_dale 0  16781325 0 2000 0 21 100 2 30 11 0 0 0 0 0 0 0 0
-1
--50  1 1981 2 47 0 
+ itm_gauntlets_reward Iron_Fists Iron_Fists 1  narf_demi_gauntlets_L 0  4111 0 2000 0 2 100 0 6 0 0 0 0 0 0 0 0 0
+0
 
  itm_save_compartibility_item10 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
