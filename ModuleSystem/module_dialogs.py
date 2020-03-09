@@ -1834,13 +1834,17 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone|plyr,"player_hire_troop", 
   [
-   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
+   (try_begin),
+    (eq, "$g_encountered_party", "p_town_dol_guldur"),
+    (assign, "$g_talk_troop_faction", "fac_guldur"),
+   (try_end),
   ], 
   "Some of the commanders have some trolls in their ranks. I want to have those too.", "player_hire_trolls_take", []],
 
 [anyone,"player_hire_trolls_take", 
   [
-   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
    (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
    (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
    (le, ":rank", 3),], 
@@ -1898,7 +1902,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone,"player_hire_troll_buy_not_enough", 
   [], 
-  "Wasting my time...", "close_window", []],
+  "Wasting my time...", "close_window", [(call_script, "script_stand_back"),]],
 
 [anyone,"player_hire_troll_buy_done", 
   [], 
@@ -1907,6 +1911,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
     (call_script, "script_spend_influence_of", reg21, "$g_talk_troop_faction"),
     (party_add_members, "p_main_party", ":fac_troll", 1),
+    (call_script, "script_stand_back"),
   ]],
 
 # TLD Kham - Player Hire Troll END
@@ -12497,7 +12502,13 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone|plyr,"town_merchant_talk", 
   [
    (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
-   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
+
+   (try_begin),
+    (eq, "$g_encountered_party", "p_town_dol_guldur"),
+    (assign, "$g_talk_troop_faction", "fac_guldur"),
+   (try_end),
+
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
    (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
    (party_get_num_companion_stacks,":stacks","p_main_party"),
@@ -12512,32 +12523,40 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
   ], 
   "I want to upgrade my trolls!", "player_upgrade_trolls_take", []],
 
+
 [anyone,"player_upgrade_trolls_take", 
   [
    (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
-   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
    (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
    (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
    (le, ":rank", 5),
+
+  ], 
+  "Who are you to ask this of me, maggot? Go away. (Rank not high enough)", "close_window", [(call_script, "script_stand_back")]],
+
+[anyone,"player_upgrade_trolls_take", 
+  [
+   (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
+   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
-   (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
    (party_get_num_companion_stacks,":stacks","p_main_party"),
    (assign, ":num_trolls", 0),
    (try_for_range,":stack",0,":stacks"),
     (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
-    (eq, ":troop_id", ":fac_troll_up"),
+    (eq, ":troop_id", ":fac_troll"),
     (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
    (try_end),
    (gt, ":num_trolls", 0),
 
   ], 
-  "Who are you to ask this of me, maggot? Go away. (Rank not high enough)", "close_window", []],
-
+  "You trolls are too weak. Go and blood them some more.", "close_window", [(call_script, "script_stand_back")]],
 
 [anyone,"player_upgrade_trolls_take", 
   [
 
-   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
    (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
    (troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
@@ -12567,7 +12586,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (le, ":armoured", 0), 
 
   ], 
-  "We don't do that here...", "close_window", []],
+  "We don't do that here...", "close_window", [(call_script, "script_stand_back")]],
 
 [anyone,"player_upgrade_trolls_take", 
   [
@@ -12587,7 +12606,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (le, ":num_trolls", 0),
 
   ], 
-  "We can't armour the trolls you have here. Go where you found them.", "close_window", []],
+  "We can't armour the trolls you have here. Go where you found them.", "close_window", [(call_script, "script_stand_back")]],
 
 [anyone|plyr,"player_upgrade_trolls_ask", 
   [ 
@@ -12609,7 +12628,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"player_upgrade_troll_not_enough", 
   [], 
-  "Wasting my time...", "close_window", []],
+  "Wasting my time...", "close_window", [(call_script, "script_stand_back")]],
 
 [anyone,"player_upgrade_troll_buy_done", 
   [], 
@@ -12633,6 +12652,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (party_remove_members, "p_main_party", ":fac_troll_up", 1),
    (party_add_members, "p_main_party", ":armoured", 1),
    (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":price"),
+   (call_script, "script_stand_back")
   ]],
 
 # TLD Kham - Player Upgrade Troll END
