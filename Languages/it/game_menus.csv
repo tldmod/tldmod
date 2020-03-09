@@ -114,8 +114,8 @@ mno_start_male|Uomo
 mno_start_female|Donna
 mno_proc|Prosegui
 menu_start_as_one|^^^^^^^^^^Che genere di combattente sei?
-mno_start_default|Divieni un {s23} (Predefinito)
-mno_start_up1|Divieni un {s21} (Facile)
+mno_start_default|Diventa {s23} (Predefinito)
+mno_start_up1|Diventa {s21} (Facile)
 mno_start_up2|Diventa un {s22} (Facile)
 mno_continue|Continua...
 menu_character_report|^^^^^Morale della Compagnia: {reg8}^Limite Dimensioni Compagnia: {reg7}^{s5}

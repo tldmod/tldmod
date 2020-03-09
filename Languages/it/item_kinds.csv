@@ -21,7 +21,7 @@ itm_metal_scraps_medium|Metallo di buona qualità
 itm_metal_scraps_good|Metallo di ottima qualità
 itm_oliphant|Olifante
 itm_sumpter_horse|Cavallo da soma
-itm_saddle_horse|Cavallo da sella
+itm_saddle_horse|Cavallo da soma
 itm_steppe_horse|Cavallo delle steppe
 itm_courser|Corsiero
 itm_hunter|Cacciatore
@@ -251,13 +251,13 @@ itm_lossarnach_scale_cap|Cappello di Scaglie di Lossarnach
 itm_lossarnach_greaves|Gambali di Lossarnach
 itm_gondor_shield_a|Scudo Quadrato di Gondor
 itm_gondor_shield_b|Scudo a Mandorla di Gondor
-itm_gondor_shield_c|Scudo Torre di Gondor
+itm_gondor_shield_c|Scudo a Torre di Gondor
 itm_gondor_shield_d|Scudo a Mandorla di Gondor
 itm_gondor_shield_e|Scudo della Cittadella di Gondor
 itm_gon_tab_shield_a|Scudo Araldico Rotondo di Gondor
 itm_gon_tab_shield_b|Scudo Araldico Quadrato di Gondor
 itm_gon_tab_shield_c|Scudo Araldico a Mandorla di Gondor
-itm_gon_tab_shield_d|Scudo Torre Araldico di Gondor
+itm_gon_tab_shield_d|Scudo a Torre Araldico di Gondor
 itm_amroth_sword_a|Spada di Dol Amroth
 itm_amroth_sword_b|Spada da Cavaliere di Dol Amroth
 itm_gondor_sword|Spada da Fanteria di Gondor
@@ -285,7 +285,7 @@ itm_lorien_armor_d|Armatura da Spadaccino Regale di Lorien
 itm_lorien_armor_e|Mantello da Custode di Lorien
 itm_lorien_armor_f|Armatura d'Élite di Lorien
 itm_lorien_boots|Stivali di Lothorien
-itm_lorien_shield_b|Scudo Torre di Lorien
+itm_lorien_shield_b|Scudo a Torre di Lorien
 itm_lorien_shield_c|Scudo a Mandorla di Lorien
 itm_lorien_round_shield|Scudo Rotondo di Lorien
 itm_lorien_helm_a|Elmo da Arciere di Lorien
@@ -375,7 +375,7 @@ itm_orc_throwing_axes|Asce da Lancio Orchesche
 itm_orc_bow|Arco Orchesco
 itm_orc_shield_a|Scudo Orchesco
 itm_orc_shield_b|Scudo Orchesco
-itm_orc_shield_c|Scudo Torre Orchesco
+itm_orc_shield_c|Scudo a Torre Orchesco
 itm_mordor_orc_shield_a|Scudo Orchesco di Mordor
 itm_mordor_orc_shield_b|Scudo Orchesco di Mordor
 itm_mordor_orc_shield_c|Scudo Orchesco di Mordor
@@ -656,8 +656,8 @@ itm_dale_sword_long|Spada Lunga di Dale
 itm_dale_sword_broad|Spada da Fanteria di Dale
 itm_dale_pike|Lancia di Dale
 itm_dale_billhook|Roncola di Dale
-itm_dale_shield_a|Scudo Torre di Dale
-itm_dale_shield_b|Scudo Torre di Dale
+itm_dale_shield_a|Scudo a Torre di Dale
+itm_dale_shield_b|Scudo a Torre di Dale
 itm_dale_shield_c|Scudo Tondo di Dale
 itm_dale_shield_d|Scudo di Dale
 itm_umb_armor_a|Veste in Pelle Corsara
@@ -697,7 +697,7 @@ itm_beorn_axe|Ascia di Beorn
 itm_beorn_staff|Asta Beorniana
 itm_beorn_battle_axe|Ascia da Guerra di Beorn
 itm_dwarf_shield_a|Scudo Angolare Nanico
-itm_dwarf_shield_b|Scudo Torre Nanico
+itm_dwarf_shield_b|Scudo a Torre Nanico
 itm_dwarf_shield_c|Scudo da Combattimento Nanico
 itm_dwarf_shield_d|Scudo Tondo Nanico
 itm_north_round_shield|Scudo Tondo Nordico

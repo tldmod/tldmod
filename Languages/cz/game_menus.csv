@@ -341,15 +341,15 @@ menu_gondor_reinforcement_event|^^^^^ Svítí majáky Gondoru, Minas Tirith žá
 mno_gondor_reinforcement_event_close|Zavřít
 menu_gondor_beacons|Podíváte se na {s1}, jeden z výstražných majáků Gondoru, který se používal ke zvýšení poplachu v severním a jižním Gondoru.
 mno_gondor_beacons_close|Odejít...
-menu_player_added_to_war_council|^^^^^Posel k tobě dorazil a řekl ti, jako {s24}, {s2} tě požádal aby jsi se stal členem jeho válečné rady. Nyní můžeš navrhovat strategie které mohou ovlivnit průběh války.
+menu_player_added_to_war_council|^^^^^Dorazil k tobě posel a řekl ti, že jako {s24},jsi byl požádán aby jsi se stal součástí válečné rady frakce {s2}. Nyní můžeš navrhovat strategie které mohou ovlivnit průběh války.
 mno_player_added_to_war_council_close|Zavřít
-menu_player_added_to_siege_reports|^^^^^Posel k tobě dorazil a řekl ti že nyní, jako {s24}, budeš obdržovat nahlášeni kdykoli {s2} oblehne město nebo když {s2} města jsou obléhány.
+menu_player_added_to_siege_reports|^^^^^Dorazil k tobě posel a řekl ti že nyní, jako {s24}, obdržíš hlášení kdykoli {s2} oblehne město nebo když budou města {s2} v obležení.
 mno_player_added_to_siege_reports_close|Zavřít
-menu_player_added_to_allow_follow|^^^^^Dorazil posel a řekli ti, že jelikož jsi teď {s24}, budeš moci přikázat {s2} aby tě následovali, maximálně {reg55} skupin.
+menu_player_added_to_allow_follow|^^^^^Dorazil posel a řekli ti, že jelikož jsi teď {s24}, budeš moci přikázat {s2} aby tě následovali, maximálně {reg55} stoupenců.
 mno_player_added_to_allow_follow_close|Zavřít
 menu_center_besieged_event|Posel k tobě dorazil a řekl ti, že {s1} je obléhán {s2} z {s3}.
 mno_center_besieged_event_close|Zavřít
-menu_guardian_party_spawned|^^^^^Zvědové hlásí že {s6} shromáždil velkou armádu v blízkosti {s7},jako poslední naději jak zabránit postupu na hlavní město.
+menu_guardian_party_spawned|^^^^^Zvědové hlásí že {s6} shromáždil velkou armádu v blízkosti {s7}, jako poslední naději jak zabránit postupu na hlavní město.
 mno_intro_next|Pokračuj
 mno_start_defend_caravan|braň karavanu
 mno_start_raid_caravan|přepadni karavanu
