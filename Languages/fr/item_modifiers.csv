@@ -1,43 +1,43 @@
-imod_plain| %s ordinaire
+imod_plain|%s simple
 imod_cracked|%s médiocre
-imod_rusty|%s grossier
-imod_bent|%s tordu
-imod_chipped|%s ébréché
-imod_battered|%s bosselé
+imod_rusty|%s sommaire
+imod_bent|%s en mauvais état
+imod_chipped|%s d'une grande usure
+imod_battered|%s avec cabosses
 imod_poor|%s médiocre
 imod_crude|%s simple
 imod_old|%s ancien
 imod_cheap|%s bon marché
-imod_fine|Excellent %s
-imod_well_made|%s bien fait
-imod_sharp|%s aiguisé
-imod_balanced|%s équilibré
-imod_tempered|%s trempé
-imod_deadly|%s mortel
-imod_exquisite|%s exquis
-imod_masterwork|Chef d’œuvre %s
-imod_heavy|%s lourd
-imod_strong|%s fort
-imod_powerful|%s puissant
-imod_tattered|%s déchiré
-imod_ragged|%s usé
-imod_rough|%s rêche
-imod_sturdy|%s solide
+imod_fine|%s de qualité
+imod_well_made|%s de fabrication soignée
+imod_sharp|%s d'un bon tranchant
+imod_balanced|%s d'un bon équilibre
+imod_tempered|%s en métal trempé
+imod_deadly|%s de la mort
+imod_exquisite|%s admirable
+imod_masterwork|%s de maître
+imod_heavy|%s de poids
+imod_strong|%s solide
+imod_powerful|%s d'une grande puissance
+imod_tattered|%s en lambeaux
+imod_ragged|%s rustique
+imod_rough|%s rustique
+imod_sturdy|%s robuste
 imod_thick|%s robuste
-imod_hardened|%s durci
-imod_reinforced|%s résistant
-imod_cloak|%s avec une cape
-imod_lordly|Chef d’œuvre %s
-imod_lame|%s estropié
-imod_swaybacked|%s boiteux
-imod_stubborn|%s têtu
+imod_hardened|%s rigide
+imod_reinforced|%s très solide
+imod_cloak|%s avec cape
+imod_lordly|%s de maître
+imod_lame|%s boiteux
+imod_swaybacked|%s ensellé
+imod_stubborn|%s borné
 imod_timid|%s craintif
 imod_meek|%s couvert de sang
-imod_spirited|%s courageux
+imod_spirited|%s fougueux
 imod_champion|%s de champion
-imod_fresh|%s frais
-imod_day_old|%s frais du jour
-imod_two_day_old|%s datant de deux jours
-imod_smelling|%s puant
-imod_rotten|%s pourri
-imod_large_bag|Grand sac de %s 
+imod_fresh|%s du jour
+imod_day_old|%s de la veille
+imod_two_day_old|%s de l'avant-veille
+imod_smelling|%s avec une forte odeur
+imod_rotten|%s en décomposition
+imod_large_bag|Grand sac de %s

@@ -1,9 +1,9 @@
 skinkey_chin_size|Taille du menton
 skinkey_chin_shape|Forme du menton
-skinkey_chin_forward|Avancée du menton
+skinkey_chin_forward|Saillie du menton
 skinkey_jaw_width|Largeur de la mâchoire
-skinkey_lower_lip|Lèvre inférieur
-skinkey_upper_lip|Lèvre supérieur
+skinkey_lower_lip|Lèvre inférieure
+skinkey_upper_lip|Lèvre supérieure
 skinkey_mouth_nose_distance|Distance bouche-nez
 skinkey_mouth_width|Largeur de la bouche
 skinkey_nostril_size|Taille des narines
@@ -11,7 +11,7 @@ skinkey_nose_height|Hauteur du nez
 skinkey_nose_width|Largeur du nez
 skinkey_nose_size|Taille du nez
 skinkey_nose_shape|Forme du nez
-skinkey_nose_bridge|Construction du nez
+skinkey_nose_bridge|Arête du nez
 
 skinkey_eye_width|Largeur des yeux
 skinkey_eye_to_eye_dist|Écart entre les yeux
@@ -19,15 +19,15 @@ skinkey_eye_shape|Forme des yeux
 skinkey_eye_depth|Profondeur des yeux
 skinkey_eyelids|Paupières
 skinkey_cheeks|Joues
-skinkey_cheek_bones|Ossature des joues
+skinkey_cheek_bones|Pommettes
 skinkey_eyebrow_height|Hauteur des sourcils
 
 skinkey_eyebrow_shape|Forme des sourcils
-skinkey_temple_width|Largeur entre les tempes
+skinkey_temple_width|Largeur des tempes
 skinkey_face_depth|Profondeur du visage
-skinkey_face_ratio|Relation des parties du visage
+skinkey_face_ratio|Proportions du visage
 skinkey_face_width|Largeur du visage
-skinkey_post_edit|Reprendre
+skinkey_post_edit|Reprendre la personnalisation
 skinkey_jaw_position|Position de la mâchoire
 skinkey_eyebrow_position|Position des sourcils
 skinkey_eyebrow_depth|Profondeur des sourcils

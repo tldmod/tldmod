@@ -1,7 +1,7 @@
-pt_rescued_prisoners|Prisonniers libérés
+pt_rescued_prisoners|Prisonniers secourus
 pt_enemy|Ennemi
 pt_hero_party|Groupe du héros
-pt_cattle_herd|Troupeau de bétail
+pt_cattle_herd|Bétail
 pt_ruins|Ruines
 pt_legendary_place|Lieu légendaire
 pt_mound|Tertre de héros
@@ -14,10 +14,10 @@ pt_mountain_bandits|Gobelins sauvages
 pt_steppe_bandits|Parias du Pays de Dun
 pt_sea_raiders|Corsaires renégats
 pt_deserters|Déserteurs
-pt_merchant_caravan|Caravane de marchands
+pt_merchant_caravan|Caravane
 pt_troublesome_bandits|Gobelins gênants
 pt_fangorn_orcs|Orques bûcherons 
-pt_village_farmers|Paysans
+pt_village_farmers|Fermiers
 pt_spy_partners|Voyageurs méfiants
 pt_spy_partners_evil|Voyageurs méfiants
 pt_runaway_serfs|Esclaves en fuite
@@ -34,12 +34,12 @@ pt_pinnath_gelin_auxila|Auxiliaires de Pinnath Gelin
 pt_ranger_scouts|Éclaireurs rangers
 pt_rohan_scouts|Éclaireurs rohirrims
 pt_lorien_scouts|Éclaireurs de la Lórien
-pt_woodelf_scouts|Éclaireurs elfes de la Forêt Noire
+pt_woodelf_scouts|Éclaireurs elfes de Grand'Peur
 pt_imladris_scouts|Éclaireurs dúnedain
 pt_dale_scouts|Éclaireurs de Dale 
 pt_esgaroth_scouts|Éclaireurs d'Esgaroth
 pt_dwarf_scouts|Guetteurs nains
-pt_beorn_scouts|Éclaireurs beornides
+pt_beorn_scouts|Éclaireurs béorniens
 pt_woodmen_scouts|Éclaireurs forestiers
 pt_mordor_scouts|Éclaireurs du Mordor
 pt_morgul_scouts|Éclaireurs de Minas Morgul
@@ -57,7 +57,7 @@ pt_gondor_raiders|Fourrageurs du Gondor
 pt_rohan_raiders|Fourrageurs rohirrim
 pt_imladris_raiders|Fourrageurs d'Imladris
 pt_lorien_raiders|Fourrageurs de la Lothlórien 
-pt_woodelf_raiders|Fourrageurs de la Forêt Noire
+pt_woodelf_raiders|Fourrageurs de Grand'Peur
 pt_dale_raiders|Fourrageurs de Dale
 pt_dwarf_raiders|Fourrageurs nains
 pt_ranger_raiders|Pillards rangers
@@ -76,11 +76,11 @@ pt_gondor_patrol|Patrouille du Gondor
 pt_rohan_patrol|Patrouille de Rohirrim
 pt_imladris_patrol|Patrouille de Dúnedain
 pt_lorien_patrol|Patrouille de la Lórien
-pt_woodelf_patrol|Patrouille de la Forêt Noire
+pt_woodelf_patrol|Patrouille de Grand'Peur
 pt_dale_patrol|Patrouille de Dale
 pt_esgaroth_patrol|Patrouille d'Esgaroth
-pt_dwarf_patrol|Patrouille de Nains
-pt_ranger_patrol|Patrouille de Rangers
+pt_dwarf_patrol|Patrouille de nains
+pt_ranger_patrol|Patrouille de rangers
 pt_amroth_patrol|Patrouille de Dol Amroth
 pt_pelargir_patrol|Patrouille de Pelargir
 pt_lossarnach_patrol|Patrouille du Lossarnach
@@ -99,21 +99,21 @@ pt_gondor_company|Patrouille de Minas Tirith
 pt_rohan_company|Compagnie du Rohan
 pt_imladris_company|Compagnie de Fondcombe
 pt_lorien_company|Compagnie de la Lothlórien
-pt_woodelf_company|Compagnie de la Forêt Noire
+pt_woodelf_company|Compagnie de Grand'Peur
 pt_dale_company|Compagnie de Dale
-pt_dwarf_company|Compagnie de Nains
+pt_dwarf_company|Compagnie de nains
 pt_gondor_elite_company|Compagnie d'élite du Gondor
 pt_rohan_elite_company|Compagnie d'élite du Rohan
 pt_imladris_elite_company|Compagnie d'élite de Fondcombe
 pt_lorien_elite_company|Compagnie d'élite de la Lothlórien
-pt_woodelf_elite_company|Compagnie d'élite des Elfes Sylvains
+pt_woodelf_elite_company|Compagnie d'élite des elfes Sylvains
 pt_dale_elite_company|Compagnie d'élite de Dale
 pt_dwarf_elite_company|Compagnie d'élite naine
 pt_gondor_caravan|Caravane du Gondor
 pt_rohan_caravan|Caravane du Rohan
 pt_imladris_caravan|Caravane de Fondcombe
 pt_lorien_caravan|Caravane de la Lothlórien
-pt_woodelf_caravan|Caravane de la Forêt noire
+pt_woodelf_caravan|Caravane de Grand'Peur
 pt_dale_caravan|Caravane de Dale
 pt_dwarf_caravan|Caravane naine 
 pt_mordor_caravan|Convoi d'approvisionnement du Mordor
@@ -123,12 +123,12 @@ pt_gondor_p_train|Convoi de prisonniers du Gondor
 pt_rohan_p_train|Convoi de prisonniers du Rohan
 pt_imladris_p_train|Convoi de prisonniers de Fondcombe
 pt_lorien_p_train|Convoi de prisonniers de la Lothlórien
-pt_woodelf_p_train|Convoi de prisonniers de la Forêt Noire
+pt_woodelf_p_train|Convoi de prisonniers de Grand'Peur
 pt_dale_p_train|Convoi de prisonniers de Dale
-pt_dwarf_p_train|Convoi de prisonniers des Nains
+pt_dwarf_p_train|Convoi de prisonniers des nains
 pt_mordor_p_train|Convoi de prisonniers du Mordor
 pt_isengard_p_train|Convoi de prisonniers de l'Isengard
-pt_kingdom_hero_party|Armée de campagne
+pt_kingdom_hero_party|Compagnie militaire
 pt_caravan_survivors|Survivants d'une caravane
 pt_routed_allies|Alliés en déroute
 pt_routed_enemies|Ennemis en déroute
@@ -138,9 +138,9 @@ pt_legion_gorgoroth|Légion de Gorgoroth
 pt_legion_barad_dur|Légion de Barad-Dûr
 pt_beorn_messenger|Messager Béornien
 pt_village|Village
-pt_ring_hunters|Chasseurs d'Anneau
+pt_ring_hunters|Chasseurs d'anneau
 pt_scout_camp_small|Camp d'éclaireurs
 pt_scout_camp_large|Camp fortifié d'éclaireurs
-pt_beorn_caravan|Caravane des Hommes des bois
-pt_orc_horde|Horde d'orcs 
-pt_vet_archer|Archer vétéran 
+pt_beorn_caravan|Caravane des hommes des bois
+pt_orc_horde|Horde d'orques
+pt_vet_archer|Archer vétéran

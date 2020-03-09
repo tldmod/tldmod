@@ -7,7 +7,7 @@ p_town_lossarnach|Lossarnach
 p_town_tarnost|Tarnost
 p_town_erech|Erech
 p_town_pinnath_gelin|Pinnath Gelin
-p_town_west_osgiliath|Osgiliath-ouest
+p_town_west_osgiliath|Osgiliath ouest
 p_town_henneth_annun|Henneth Annûn
 p_town_cair_andros|Cair Andros
 p_town_calembel|Calembel
@@ -31,16 +31,16 @@ p_town_caras_galadhon|Caras Galadhon
 p_town_cerin_dolen|Cerin Dolen
 p_town_cerin_amroth|Cerin Amroth
 p_town_thranduils_halls|Halls de Thranduil
-p_town_woodelf_camp|Camp des Elfes sylvains
-p_town_woodelf_west_camp|Camp occidental des Elfes sylvains
+p_town_woodelf_camp|Camp des elfes sylvains
+p_town_woodelf_west_camp|Camp occidental des elfes sylvains
 p_town_woodsmen_village|Village de Forestiers
 p_town_beorning_village|Village de Béornides
 p_town_beorn_house|Maison de Beorn
 p_town_moria|Portes de la Moria
-p_town_troll_cave|Caverne troll
+p_town_troll_cave|Caverne de trolls
 p_town_dale|Dale
 p_town_esgaroth|Esgaroth
-p_town_dunland_camp|Campement des Hommes de Dûn
+p_town_dunland_camp|Campement des hommes de Dûn
 p_town_harad_camp|Campement des Haradrim
 p_town_khand_camp|Campement de Khand
 p_town_umbar_camp|Camp corsaire
@@ -55,7 +55,7 @@ p_town_gundabad_ne_outpost|Avant-poste nord-est de Gundabad
 p_town_gundabad_nw_outpost|Avant-poste nord-ouest de Gundabad
 p_town_goblin_north_outpost|Gobelinville
 p_town_goblin_south_outpost|Avant-poste sud gobelin
-p_town_gundabad_m_outpost|Avant-poste de Gundabad dans la Forêt Noire
+p_town_gundabad_m_outpost|Avant-poste de Gundabad dans Grand'Peur
 p_town_erebor|Erebor
 p_town_ironhill_camp|Carrière des Monts du Fer
 p_advcamp_gondor|Camp avancé du Gondor
@@ -68,7 +68,7 @@ p_advcamp_khand|Camp avancé de Khand
 p_advcamp_umbar|Camp avancé d'Umbar
 p_advcamp_lorien|Camp avancé de la Lórien
 p_advcamp_imladris|Camp avancé d'Imladris
-p_advcamp_woodelf|Camp avancé de la Forêt Noire
+p_advcamp_woodelf|Camp avancé de Grand'Peur
 p_advcamp_moria|Camp avancé de la Moria
 p_advcamp_guldur|Camp avancé de Dol Guldur
 p_advcamp_gundabad|Camp avancé de Gundabad
@@ -104,4 +104,4 @@ p_legend_mirkwood|Forêt de Mirkwood
 p_legend_fangorn|Chambre des Ents de Fangorn
 p_ring_hunter_lair|Repaire des Chasseurs d'Anneau
 p_raft|Hommes du radeau
-p_ancient_ruins|Ruines anciennes
+p_ancient_ruins|Ruines Antiques
