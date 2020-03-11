@@ -1,4 +1,4 @@
-1871
+1870
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -837,7 +837,6 @@ qstr_Formations_turned_OF Formations_turned_OFF_in_options_menu
 qstr_Division_{reg1}_{s2}_g Division_{reg1}_{s2}_goes_to_its_memorized_position...
 qstr_Division_{reg1}_{s2}_f Division_{reg1}_{s2}_forms_line_(memorized).
 qstr_Division_{reg1}_{s2}_fo Division_{reg1}_{s2}_forms_{reg0}_lines_(memorized).
-qstr_{s33}:_{reg2}_set_hp {s33}:_{reg2}_set_hp_shield.
 qstr_Delivered_{reg60}_da Delivered_{reg60}_damage.
 qstr_DEBUG__Health_Regen_ DEBUG_(Health_Regen):_{s1}_regains_{reg0}%_health.__=_+{reg1}%_STR
 qstr_Three_Nazgul_are_cir Three_Nazgul_are_circling_in_the_sky_above_the_battlefield!

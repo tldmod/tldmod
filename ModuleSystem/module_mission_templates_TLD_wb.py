@@ -1878,9 +1878,9 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
 		
 
     #Debug
-    (assign, reg2, ":shield"),
-    (str_store_troop_name, s33, ":troop_id"),
-    (display_message, "@{s33}: {reg2} set hp shield."),   
+    #(assign, reg2, ":shield"),
+    #(str_store_troop_name, s33, ":troop_id"),
+    #(display_message, "@{s33}: {reg2} set hp shield."),   
 
   ])
 

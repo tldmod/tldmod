@@ -111,26 +111,26 @@ particle_systems = [
      0,                       #rotation damping
      ),
         ("game_blood_black", psf_billboard_3d |psf_randomize_size|psf_randomize_rotation,  "prt_mesh_blood_black_1",
-     500, 0.65, 3, 0.5, 0, 0,        #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     1000, 0.65, 3, 0.5, 0, 0,        #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
      (0.0, 0.7), (0.7, 0.7),          #alpha keys
      (0.1, 0.7), (1, 0.7),      #red keys
      (0.1, 0.7), (1, 0.7),       #green keys
      (0.1, 0.7), (1, 0.7),      #blue keys
-     (0.0, 0.015),   (1, 0.018),  #scale keys
-     (0, 0.05, 0),               #emit box size
+     (0.0, 0.030),   (1, 0.036),  #scale keys
+     (0, 0.07, 0),               #emit box size
      (0, 1.0, 0.3),                #emit velocity
      0.9,                       #emit dir randomness
      0,                         #rotation speed
      0,                         #rotation damping
     ),
     ("game_blood_black_2", psf_billboard_3d | psf_randomize_size|psf_randomize_rotation ,  "prt_mesh_blood_black_3",
-     2000, 0.6, 3, 0.3, 0, 0,        #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     3000, 0.6, 3, 0.3, 0, 0,        #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
      (0.0, 0.25), (0.7, 0.1),        #alpha keys
      (0.1, 0.7), (1, 0.7),      #red keys
      (0.1, 0.7), (1, 0.7),       #green keys
      (0.1, 0.7), (1, 0.7),      #blue keys
-     (0.0, 0.15),   (1, 0.35),    #scale keys
-     (0.01, 0.2, 0.01),             #emit box size
+     (0.0, 0.30),   (1, 0.70),    #scale keys
+     (0.03, 0.4, 0.03),             #emit box size
      (0.2, 0.3, 0),                 #emit velocity
      0.3,                         #emit dir randomness
      150,                       #rotation speed

@@ -1845,10 +1845,20 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone,"player_hire_trolls_take", 
   [
    (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
+   (party_get_free_companions_capacity,reg10,"p_main_party"), (le,reg10,0),
+  ], 
+  "You can't handle too many troops. Go and leave some or get some killed.", "close_window", [(call_script, "script_stand_back")]],
+
+[anyone,"player_hire_trolls_take", 
+  [
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
    (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
    (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+   (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), 
+   (str_store_string_reg, s25, s24), #to s25 (current rank)
+   (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 4), #to s24
    (le, ":rank", 3),], 
-  "You are nobody, maggot. Go away.", "close_window", []],
+  "You are nobody, maggot. Go away.(You need to be {s24} or higher)", "close_window", [(call_script, "script_stand_back")]],
 
 
 [anyone,"player_hire_trolls_take", 
@@ -1873,13 +1883,6 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (ge, reg20, reg21), #reg21 is inf cost
   ], 
   "I'll take the lot.", "player_hire_troll_buy_done", []],
-
-[anyone|plyr,"player_hire_trolls_how_many", 
-  [ 
-    (faction_get_slot, reg20, "$g_talk_troop_faction", slot_faction_influence),
-    (lt, reg20, reg21), #reg21 is inf cost
-  ], 
-  "I don't have enough", "player_hire_troll_buy_not_enough", []],
 
 [anyone|plyr,"player_hire_trolls_how_many", 
   [], 
@@ -5587,6 +5590,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (store_mul, ":gift_cost_a", ":gift_no", ":gift_no"),
   (store_mul, ":gift_cost", ":gift_cost_a", 500),
   (store_add, reg14, ":gift_cost", 500),
+  (call_script,"script_update_respoint"),
   (faction_get_slot,  ":rps", "$g_talk_troop_faction", slot_faction_respoint),
   (ge,":rps",reg14), # Player must be able to afford gift...
   (str_store_string, s1, "@{s2} [{reg14} Resource Points]"),  
@@ -12510,12 +12514,11 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (try_end),
 
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
-   (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
    (party_get_num_companion_stacks,":stacks","p_main_party"),
    (assign, ":num_trolls", 0),
    (try_for_range,":stack",0,":stacks"),
     (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
-    (eq, ":troop_id", ":fac_troll_up"),
+    (eq, ":troop_id", ":fac_troll"),
     (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
    (try_end),
    (gt, ":num_trolls", 0),
@@ -12530,28 +12533,14 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
    (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
    (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+   (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), 
+   (str_store_string_reg, s25, s24), #to s25 (current rank)
+   (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 6), #to s24
    (le, ":rank", 5),
 
   ], 
-  "Who are you to ask this of me, maggot? Go away. (Rank not high enough)", "close_window", [(call_script, "script_stand_back")]],
+  "Who are you to ask this of me, maggot? Go away. (You need to be {s24} or higher)", "close_window", [(call_script, "script_stand_back")]],
 
-[anyone,"player_upgrade_trolls_take", 
-  [
-   (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
-   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
-   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
-   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
-   (party_get_num_companion_stacks,":stacks","p_main_party"),
-   (assign, ":num_trolls", 0),
-   (try_for_range,":stack",0,":stacks"),
-    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
-    (eq, ":troop_id", ":fac_troll"),
-    (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
-   (try_end),
-   (gt, ":num_trolls", 0),
-
-  ], 
-  "You trolls are too weak. Go and blood them some more.", "close_window", [(call_script, "script_stand_back")]],
 
 [anyone,"player_upgrade_trolls_take", 
   [
@@ -12575,6 +12564,24 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
   ], 
   "We can armour one and it will cost {reg21} resource points...", "player_upgrade_trolls_ask", []],
+
+[anyone,"player_upgrade_trolls_take", 
+  [
+   (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
+   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
+   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+   (party_get_num_companion_stacks,":stacks","p_main_party"),
+   (assign, ":num_trolls", 0),
+   (try_for_range,":stack",0,":stacks"),
+    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
+    (eq, ":troop_id", ":fac_troll"),
+    (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
+   (try_end),
+   (gt, ":num_trolls", 0),
+
+  ], 
+  "You trolls are too weak. Go and blood them some more.", "close_window", [(call_script, "script_stand_back")]],
 
 [anyone,"player_upgrade_trolls_take", 
   [
@@ -12610,13 +12617,14 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone|plyr,"player_upgrade_trolls_ask", 
   [ 
+    (call_script,"script_update_respoint"),
     (faction_get_slot,  ":rp", "$g_talk_troop_faction", slot_faction_respoint),
     (ge, ":rp", reg21), #reg21 is rps cost
   ], 
   "I'll armour one of them.", "player_upgrade_troll_buy_done", []],
 
 [anyone|plyr,"player_upgrade_trolls_ask", 
-  [ 
+  [ (call_script,"script_update_respoint"),
     (faction_get_slot,  ":rp", "$g_talk_troop_faction", slot_faction_respoint),
     (lt, ":rp", reg21), #reg21 is rps cost
   ], 
