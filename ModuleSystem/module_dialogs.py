@@ -1840,14 +1840,14 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (assign, "$g_talk_troop_faction", "fac_guldur"),
    (try_end),
   ], 
-  "Some of the commanders have some trolls in their ranks. I want to have those too.", "player_hire_trolls_take", []],
+  "I am a commander worthy of a fighting Troll - give me one!", "player_hire_trolls_take", []],
 
 [anyone,"player_hire_trolls_take", 
   [
    (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
    (party_get_free_companions_capacity,reg10,"p_main_party"), (le,reg10,0),
   ], 
-  "You can't handle too many troops. Go and leave some or get some killed.", "close_window", [(call_script, "script_stand_back")]],
+  "Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.", "close_window", [(call_script, "script_stand_back")]],
 
 [anyone,"player_hire_trolls_take", 
   [
@@ -1858,7 +1858,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
    (str_store_string_reg, s25, s24), #to s25 (current rank)
    (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 4), #to s24
    (le, ":rank", 3),], 
-  "You are nobody, maggot. Go away.(You need to be {s24} or higher)", "close_window", [(call_script, "script_stand_back")]],
+  "You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)", "close_window", [(call_script, "script_stand_back")]],
 
 
 [anyone,"player_hire_trolls_take", 
@@ -1876,32 +1876,35 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   "It will cost {reg21} influence.", "player_hire_trolls_how_many", []],
 
 
+[anyone|plyr,"player_hire_trolls_take", 
+  [], 
+  "I’ve changed my mind.", "close_window", [(call_script, "script_stand_back")]],
 
 [anyone|plyr,"player_hire_trolls_how_many", 
   [ 
     (faction_get_slot, reg20, "$g_talk_troop_faction", slot_faction_influence),
     (ge, reg20, reg21), #reg21 is inf cost
   ], 
-  "I'll take the lot.", "player_hire_troll_buy_done", []],
+  "A fearsome beast. And now, it is mine!", "player_hire_troll_buy_done", []],
 
 [anyone|plyr,"player_hire_trolls_how_many", 
   [], 
-  "I want armoured ones. Can I have those?", "player_hire_troll_armoured", []],
+  "They will fight better with sheets of iron protecting them. Make it so!", "player_hire_troll_armoured", []],
 
 [anyone,"player_hire_troll_armoured", 
   [
     (try_begin),
       (eq, "$g_talk_troop_faction", "fac_gundabad"),
-      (str_store_string, s55, "@Armours are for weaklings... Gundabad Trolls don't wear these"),
+      (str_store_string, s55, "@Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!"),
     (else_try),
-      (str_store_string, s55, "@Do I look like a smith to you? Go talk to the smith."),
+      (str_store_string, s55, "@Do I look like a smith to you? Pah. Go talk to one."),
     (try_end),
   ], 
   "{s55}", "player_hire_trolls_how_many", []],
 
 [anyone|plyr,"player_hire_trolls_how_many", 
   [], 
-  "Never mind...", "player_hire_troll_buy_not_enough", []],
+  "I’ve changed my mind.", "player_hire_troll_buy_not_enough", []],
 
 [anyone,"player_hire_troll_buy_not_enough", 
   [], 
@@ -1909,7 +1912,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone,"player_hire_troll_buy_done", 
   [], 
-  "Don't let them die all that once...", "close_window", 
+  "Take good care of this big fellow now, and he’ll take good care of you! Ha!", "close_window", 
   [
     (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
     (call_script, "script_spend_influence_of", reg21, "$g_talk_troop_faction"),
@@ -12506,30 +12509,30 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone|plyr,"town_merchant_talk", 
   [
    (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
-   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
+   (this_or_next|neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
+   (eq, "$g_talk_troop_faction", "fac_gundabad"),
 
    (try_begin),
     (eq, "$g_encountered_party", "p_town_dol_guldur"),
     (assign, "$g_talk_troop_faction", "fac_guldur"),
    (try_end),
 
-   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
    (party_get_num_companion_stacks,":stacks","p_main_party"),
    (assign, ":num_trolls", 0),
    (try_for_range,":stack",0,":stacks"),
     (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
-    (eq, ":troop_id", ":fac_troll"),
+    (is_between, ":troop_id", "trp_moria_troll", "trp_mountain_goblin2"), #Troll Range
     (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
    (try_end),
    (gt, ":num_trolls", 0),
 
   ], 
-  "I want to upgrade my trolls!", "player_upgrade_trolls_take", []],
+  "I want to strengthen my trolls!", "player_upgrade_trolls_take", []],
 
 
 [anyone,"player_upgrade_trolls_take", 
   [
-   (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
+
    (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
    (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
    (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
@@ -12539,13 +12542,13 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (le, ":rank", 5),
 
   ], 
-  "Who are you to ask this of me, maggot? Go away. (You need to be {s24} or higher)", "close_window", [(call_script, "script_stand_back")]],
+  "Who are you to ask this of me? Pah! Begone! (You need to be {s24} or higher)", "close_window", [(call_script, "script_stand_back")]],
 
 
 [anyone,"player_upgrade_trolls_take", 
   [
 
-   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
+   (neq, "$g_talk_troop_faction", "fac_gundabad"),
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
    (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
    (troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
@@ -12563,13 +12566,11 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (assign, reg21, ":price"),
 
   ], 
-  "We can armour one and it will cost {reg21} resource points...", "player_upgrade_trolls_ask", []],
+  "You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)", "player_upgrade_trolls_ask", []],
 
 [anyone,"player_upgrade_trolls_take", 
   [
-   (is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
-   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
-   (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
+   (neq, "$g_talk_troop_faction", "fac_gundabad"),
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
    (party_get_num_companion_stacks,":stacks","p_main_party"),
    (assign, ":num_trolls", 0),
@@ -12581,16 +12582,13 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (gt, ":num_trolls", 0),
 
   ], 
-  "You trolls are too weak. Go and blood them some more.", "close_window", [(call_script, "script_stand_back")]],
+  "Your trolls are like mewling babes. Get them blooded good and proper first!", "close_window", [(call_script, "script_stand_back")]],
 
 [anyone,"player_upgrade_trolls_take", 
   [
 
-   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
-   (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
-   (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
-   (troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
-   (le, ":armoured", 0), 
+
+   (eq, "$g_talk_troop_faction", "fac_gundabad"),
 
   ], 
   "We don't do that here...", "close_window", [(call_script, "script_stand_back")]],
@@ -12598,22 +12596,27 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone,"player_upgrade_trolls_take", 
   [
 
-   (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
+   (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
    (troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
-   (troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
-   (gt, ":armoured", 0), 
    (party_get_num_companion_stacks,":stacks","p_main_party"),
    (assign, ":num_trolls", 0),
    (try_for_range,":stack",0,":stacks"),
     (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
-    (eq, ":troop_id", ":fac_troll_up"), #They have unarmoured ones?
-    (val_add, ":num_trolls", 1),
+    (is_between, ":troop_id", "trp_moria_troll", "trp_mountain_goblin2"), #Troll Range
+    (neq, ":troop_id", ":fac_troll_up"), #if none of them are from smith's faction
+    (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
    (try_end),
-   (le, ":num_trolls", 0),
+   (gt, ":num_trolls", 0), #if none of them are from smith's faction
 
   ], 
-  "We can't armour the trolls you have here. Go where you found them.", "close_window", [(call_script, "script_stand_back")]],
+  "Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!", "close_window", [(call_script, "script_stand_back")]],
+
+
+[anyone|plyr,"player_upgrade_trolls_take", 
+  [], 
+  "Forget it", "player_upgrade_troll_not_enough", []],
+
 
 [anyone|plyr,"player_upgrade_trolls_ask", 
   [ 
@@ -12628,11 +12631,11 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (faction_get_slot,  ":rp", "$g_talk_troop_faction", slot_faction_respoint),
     (lt, ":rp", reg21), #reg21 is rps cost
   ], 
-  "I don't have enough", "player_upgrade_troll_not_enough", []],
+  "Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle", "player_upgrade_troll_not_enough", []],
 
 [anyone|plyr,"player_upgrade_trolls_ask", 
   [], 
-  "Never mind...", "player_upgrade_troll_not_enough", []],
+  "Forget it", "player_upgrade_troll_not_enough", []],
 
 [anyone,"player_upgrade_troll_not_enough", 
   [], 
@@ -12640,7 +12643,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"player_upgrade_troll_buy_done", 
   [], 
-  "Good...", "close_window", 
+  "Yes… yes! Come here, you big lunk, you...", "close_window", 
   [
    (faction_slot_ge, "$g_talk_troop_faction", slot_faction_troll_troop, 0),
    (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
