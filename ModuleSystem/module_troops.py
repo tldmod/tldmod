@@ -813,6 +813,32 @@ itm_riv_knight_lordly = (itm_riv_knight, imod_lordly)
 itm_riv_shield_a_good = (itm_riv_shield_a, imod_reinforced)
 itm_riv_shield_b_good = (itm_riv_shield_b, imod_reinforced)
 
+#Beorning armour variants
+itm_woodman_tunic_bad			= (itm_woodman_tunic, imod_cracked)
+itm_woodman_tunic_cloak			= (itm_woodman_tunic, imod_cloak)
+itm_woodman_tunic_good			= (itm_woodman_tunic, imod_reinforced)
+itm_woodman_tunic_good_cloak	= (itm_woodman_tunic, imod_lordly)
+itm_woodman_scout_bad			= (itm_woodman_scout, imod_cracked)
+itm_woodman_scout_cloak			= (itm_woodman_scout, imod_cloak)
+itm_woodman_scout_good			= (itm_woodman_scout, imod_reinforced)
+itm_woodman_scout_good_cloak	= (itm_woodman_scout, imod_lordly)
+itm_woodman_padded_bad			= (itm_woodman_padded, imod_cracked)
+itm_woodman_padded_cloak		= (itm_woodman_padded, imod_cloak)
+itm_woodman_padded_good			= (itm_woodman_padded, imod_reinforced)
+itm_woodman_padded_good_cloak	= (itm_woodman_padded, imod_lordly)
+itm_woodmen_heavy_bad			= (itm_woodmen_heavy, imod_cracked)
+itm_woodmen_heavy_cloak			= (itm_woodmen_heavy, imod_cloak)
+itm_woodmen_heavy_good			= (itm_woodmen_heavy, imod_reinforced)
+itm_woodmen_heavy_good_cloak	= (itm_woodmen_heavy, imod_lordly)
+
+itm_beorn_tunic_bad				= (itm_beorn_tunic, imod_cracked)
+itm_beorn_tunic_good			= (itm_beorn_tunic, imod_reinforced)
+itm_beorn_padded_bad			= (itm_beorn_padded, imod_cracked)
+itm_beorn_padded_good			= (itm_beorn_padded, imod_reinforced)
+itm_beorn_heavy_bad				= (itm_beorn_heavy, imod_cracked)
+itm_beorn_heavy_good			= (itm_beorn_heavy, imod_reinforced)
+itm_beorn_berserk_bad			= (itm_beorn_berserk, imod_cracked)
+itm_beorn_berserk_good			= (itm_beorn_berserk, imod_reinforced)
 
 
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face
@@ -2627,7 +2653,7 @@ troops = [
    [itm_m_uruk_light_b,itm_uruk_greaves,],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["elder_isengard","Grima_Wormtongue","the_city",tf_hero| tf_evil_man,0,0,fac_isengard,
-   [itm_evil_light_armor,itm_leather_boots,],
+   [itm_evil_light_armor,itm_leather_boots_dark_bad,],
       def_attrib|level(2),wp(20),knows_common,0x000000003f0000032038a06b587590c500000000001d3a880000000000000000],
 ["elder_cgaladhon","Lorien Loremaster","the_elven_forest_fortress",tf_hero| tf_randomize_face| tf_lorien,0,0,fac_lorien,
    [itm_lorien_armor_c,itm_lorien_boots,],
@@ -3326,17 +3352,12 @@ upgrade(troops,"ac4_harondor_horse_archer","ac5_harondor_black_snake")
 upgrade(troops,"i2_far_harad_tribesman","i4_far_harad_champion")
 upgrade(troops,"i4_far_harad_champion","i5_far_harad_panther_guard")
 #DUNLAND
-upgrade2(troops,"i1_dun_wildman","i2_dun_warrior","ac2_dun_crebain_rider")
-upgrade2(troops,"i2_dun_warrior","i3_dun_vet_warrior","i3_dun_pikeman")
+upgrade(troops,"i1_dun_wildman","i2_dun_warrior")
+upgrade2(troops,"i2_dun_warrior","i3_dun_vet_warrior","ac2_dun_crebain_rider")
 upgrade(troops,"i3_dun_pikeman","i4_dun_vet_pikeman")
 upgrade(troops,"ac2_dun_crebain_rider","ac4_dun_raven_rider")
-#upgrade(troops,"dunnish_long_spearman","dunnish_pike_master")
-#upgrade(troops,"dunnish_horseman","i5_dun_wolf_guard")
-upgrade(troops,"i3_dun_vet_warrior","i4_dun_wolf_warrior")
+upgrade2(troops,"i3_dun_vet_warrior","i4_dun_wolf_warrior","i3_dun_pikeman")
 upgrade2(troops,"i4_dun_wolf_warrior","a5_dun_night_wolf","i5_dun_wolf_guard")
-#upgrade2(troops,"dunnish_axeman","dunnish_veteran_axeman","i4_dun_wolf_warrior")
-#upgrade(troops,"dunnish_veteran_axeman","dunnish_axe_master")
-#upgrade2(troops,"i4_dun_wolf_warrior","dunnish_berserker","dunnish_crebain_raider")
 #EASTERLINGS
 upgrade2(troops,"i1_khand_bondsman","i2_khand_pit_dog","c2_khand_pony_rider")
 upgrade2(troops,"i2_khand_pit_dog","i3_khand_warrior","i3_khand_pitfighter")

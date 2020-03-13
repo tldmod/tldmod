@@ -1898,7 +1898,7 @@ scene_props = [
           (val_div, ":blue", 100),
           (set_current_color,":red", ":green", ":blue"),
           (set_position_delta,0,0,0),
-          (add_point_light, 30, 5),
+          (add_point_light, 30, 30),
       ]),
     ]),
 ("door_aw_tomb",sokf_destructible|spr_hit_points(1),"door_a","bo_door_a",   [

@@ -12532,7 +12532,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"player_upgrade_trolls_take", 
   [
-
+   (neq, "$g_talk_troop_faction", "fac_gundabad"),
    (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_troll_troop, -1),
    (party_get_free_companions_capacity,reg10,"p_main_party"), (gt,reg10,0),
    (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
