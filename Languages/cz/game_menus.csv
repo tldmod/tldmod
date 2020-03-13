@@ -67,7 +67,7 @@ menu_start_good_man|^^^^^^^^^^Zvol svůj lid:
 mno_start_go|GONDOR, království Bílé věže
 mno_start_ro|ROHAN, lidé koní
 mno_start_du|DUNADÁNI, prastará dynastie lidí
-mno_start_be|MEDDĚDOVCI, lidé medvěda
+mno_start_be|MEDDĚDOVCI, medvědí lidé
 mno_start_da|severní království DOLU
 menu_start_good_elf|^^^^^^^^^^ve kterém lese přebýváš, Starší?
 mno_start_ri|ROKLINKA, dům pána Elronda
@@ -222,12 +222,12 @@ menu_kingdom_army_quest_join_siege_order|{s8} poslal zprávu, aby si se připoji
 menu_kingdom_army_follow_failed|Neuposlechl jsi přímý rozkaz a nenásledoval jsi {s8}. Posílá zprávu, že je přesvědčen, že jsi měl mnohem urgentnější úkol, ale jeho trpělivost není nekonečná.
 menu_battle_debrief|{s11}^Tve ztraty:{s8}{s10}^^Nepratelske ztraty:{s9}
 mno_inspect_troll|prohledat padlého trola
-menu_pre_join|přišel jsi k bitvě mezi {s2} a {s1}. rozhodneš se k
-mno_pre_join_help_attackers|jít na pomoc {s2}.
-mno_pre_join_help_defenders|přiběhneš na pomoc  {s1}.
-mno_pre_join_help_refugees|přiběhneš na pomoc  {s1}.
+menu_pre_join|^^^^^Dorazil jsi k bitvě mezi {s2} a {s1}. Rozhodneš se...
+mno_pre_join_help_attackers|Pomoci {s2}.
+mno_pre_join_help_defenders|Přispěchat na pomoc {s1}.
+mno_pre_join_help_refugees|Přispěchat na pomoc {s1}.
 mno_pre_join_leave|Nezapojit se.
-menu_join_battle|^^^pomáháš {s2} proti {s1}.^ máš {reg22} připravených proti {reg11}.^^ 
+menu_join_battle|^^^Pomáháš {s2} proti {s1}.^ Máš {reg22} připravených vojáků proti {reg11} nepřátelům.^^Bitva se odehrává v {s3}{s4}.
 mno_join_attack|Zaútočit na nepřítele.
 mno_join_order_attack|Nařiď svým jednotkám, aby zaútočili s tvými spojenic, mezitím co ty zůstaneš vzadu.
 mno_control_allies_join_menu|Použij body vlivnosti, abys velel svým spojencům v boji
@@ -336,7 +336,7 @@ menu_legendary_place|^^^^Sleduješ zvěsti a nacházíš {s1}. Nyní můžeš pr
 mno_explore|Prozkoumej toto místo.
 menu_ring_hunter_lair|^^^^Sledoval jsi stopy Lovců Prstenu skrz Temný hvozd a došel jsi k {s1}. Vidíš je ,jak se chystají odejít s truhlou.
 mno_attack_lair|Zaútoč na ně teď
-mno_leave_bandit_lair|Odejít prozatím.
+mno_leave_bandit_lair|Prozatím odejít.
 menu_gondor_reinforcement_event|^^^^^ Svítí majáky Gondoru, Minas Tirith žádá o pomoc! ^^ Pánové jižních lénoří nyní pochodují na sever, aby bránili Bílé město před přicházející temnotou.
 mno_gondor_reinforcement_event_close|Zavřít
 menu_gondor_beacons|Podíváte se na {s1}, jeden z výstražných majáků Gondoru, který se používal ke zvýšení poplachu v severním a jižním Gondoru.
@@ -358,7 +358,7 @@ mno_start_kill_scouts|Zastav průzkumníky před informováním o tvém přícho
 mno_go_your_way|Nech je na pokoji.
 mno_defend_villagers|braň vesničany !
 mno_raid_villagers|přepadni vesnici
-mno_go_away|Odejít a přeskupit se prozatím.
+mno_go_away|Prozatím odejít a přeskupit se.
 menu_scout_camp_quest|Nedaleko vidíš tábor průzkumníků. Velíš k útoku na ně
 mno_attack_scout_camp|Zaútočit na tábořiště zvědů!
 menu_sea_battle_quest|Potkáte nepřátelskou flotilu. Lodě se blíží a námořníci hodí prkna ...
@@ -397,7 +397,7 @@ mno_cb_gondor3|Roklinka
 mno_cb_gondor4|Temný hvozd
 mno_cb_gondor5|Trpaslíci
 mno_cb_gondor6|Dol
-mno_cb_gondor7|Meddedovci
+mno_cb_gondor7|Meddědovci
 menu_custom_battle_choose_faction3|^^^^^^^^^^Vyber frakci zla
 mno_cb_mordor|Mordor
 mno_cb_mordor1|Zelezny Pas

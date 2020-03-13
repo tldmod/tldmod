@@ -162,11 +162,11 @@ dlga_companion_home_description:companion_home_description_2|Reknete mi vice.
 dlga_companion_home_description:close_window|Ted opravdu neni vhodna doba na vykecavani se. 
 dlga_companion_home_description:close_window.1|Byl bych radsi, kdyby mne moji spolecnici nezatezovali takovymi malichernostmi. 
 dlga_start:player_hire_troop|{s33}^^Já velím ustavené posádce v {s21}. Chtěl jsi mě vidět?
-dlga_player_hire_troop:player_hire_troop_give|Někteří vojáci v mé skupině by zde byli užitečnější, pre obranu{s21}
+dlga_player_hire_troop:player_hire_troop_give|Někteří vojáci v mé skupině by zde byli užitečnější, aby bránili {s21}.
 dlga_player_hire_troop:close_window|Chci si prohlédnout své vojáky, co zde sídlí.
 dlga_player_hire_troop:close_window.1|Potrebuji nejaky trenink.
 dlga_player_hire_troop:tld_sell_prisoners|Dovezl jsem vam nejake zajatce.
-dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Podívejme se ty zoufalče
+dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Podívejme se na ty zoufalce.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Nech mě si prohlédnout záznamy žaláře
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Zmenil jste svůj nazor, eh?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Postaram se o to, aby jste z nasich zalaru nikdy nevylezl.
@@ -210,7 +210,7 @@ dlga_lord_meet_neutral:lord_intro|Jmenuji se {playername}.
 dlga_lord_meet_neutral:lord_intro.1|Moje jméno je {playername}. K vašim službám.
 dlga_lord_meet_enemy:lord_intro|Jmenuji se {playername}.
 dlga_lord_meet_enemy:lord_intro.1|Říkají mi {playername}. Zapamatuj si to, hodně o mě uslyšíš.
-dlga_start:lord_start.3|Dobře, {playername}...
+dlga_start:lord_start.3|{playername}? Copak ...?
 dlga_lord_start:lord_generic_mission_completed|Váš chirurg se mi podařilo přesvědčit mého přítele a učinil operaci. Teď, co můžeme udělat, je modlit se za jeho zotavení. Každopádně vám děkuji, že jste mi půjčil svého lékaře, {playername}. Máte ušlechtilého ducha. Nezapomenu na to.
 dlga_lord_start:lord_investigate_fangorn_completed0|{playername}, vrátil ses z Fangornu, co ji tam zjistil?
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|Ty stromy jsou živé! Útočí na nás!
@@ -722,49 +722,49 @@ dlga_sad_elf_2:sad_elf_choice|Ach, příběhy z moře a z ještě větší dálk
 dlga_sad_elf_choice:sad_elf_leave|Cítím tvou bolest. Svou část na této válce jsi vykonal. Smíš odejít.
 dlga_sad_elf_choice:sad_elf_no|Elfové se nemohou ze vytratit ze Středozemě do stínů. V této válce nebojujeme jenom sami za sebe a každý z nás musí sehrát svou roli. Nemohu tě nechat odejít. [Zkouška vůdcovství]
 ; dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
-; dlga_start:close_window.11|You have come just in time. Let us join our forces now and teach our enemy a lesson.
-; dlga_start:close_window.12|You are making a big mistake by fighting against us.
-; dlga_start:ally_thanks_meet|I don't think we have met properly my friend. You just saved my life out there, and I still don't know your name...
-; dlga_start:ally_thanks_meet.1|Your help was most welcome stranger. My name is {s1}. Can I learn yours?
-; dlga_start:ally_thanks_meet.2|Thanks for your help, stranger. We haven't met properly yet, have we? What is your name?
+dlga_start:close_window.11|Dorazili jste v pravou chvíli. Pojďme společně našemu nepříteli dát lekci.
+dlga_start:close_window.12|Děláš velkou chybu, pokud chceš bojovat proti nám.
+dlga_start:ally_thanks_meet|Myslím že jsme zatím nebyli řádně představeni. Právě jsi mi zachránil život a já ani nevím jak se jmenuješ...
+dlga_start:ally_thanks_meet.1|Velice děkuji za pomoc cizinče. Jmenuji se {s1}. Smím znát tvé jméno?
+dlga_start:ally_thanks_meet.2|Děkuji za pomoc cizinče. Zatím nás nikdo nepředstavil. Jak se jmenuješ?
 dlga_ally_thanks_meet:ally_thanks_meet_2|Jmenuji se {playername}.
-; dlga_ally_thanks_meet_2:close_window|Well met indeed {playername}. My name is {s1} and I am forever in your debt. If there is ever anything I can help you with, just let me know...
-; dlga_ally_thanks_meet_2:close_window.1|Well met {playername}. I am in your debt for what you just did. I hope one day I will find a way to repay it.
-; dlga_ally_thanks_meet_2:close_window.2|Well met {playername}. I am {s1}. Thanks for your help and I hope we meet again.
-; dlga_start:close_window.13|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
-; dlga_start:close_window.14|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
+dlga_ally_thanks_meet_2:close_window|{playername}, opravdu rád tě poznávám. Já jsem {s1} a navždy jsem tvým dlužníkem. Pokud bych mohl někdy s něčím pomoci, stačí říct...
+dlga_ally_thanks_meet_2:close_window.1|{playername}, rád tě poznávám. Za to co jsi právě udělal jsem tvým dlužníkem. Doufám že jednoho dne dostanu příležitost ti to oplatit.
+dlga_ally_thanks_meet_2:close_window.2|{playername}, rád tě poznávám. Já jsem {s1}. Děkuji ti za pomoc a doufám, že se ještě setkáme.
+dlga_start:close_window.13|{playername}! Opět jsi nás zachránil. Jsi opravdu skutečný přítel. {s43}
+dlga_start:close_window.14|{playername}! Dorazil jsi na poslední chvíli. Ani dokáži dostatečně vyjádřit svůj vděk. {s43}
 dlga_start:close_window.15|Přišel jsi právě včas, {playername}. Nezapomenu na tvou pomoc. {s43}
 dlga_start:close_window.16|Rád tě zde vidím, {playername}. {s43}
-; dlga_start:close_window.19|Thank you for your help, Commander. You saved {reg1?our lives:my life} out there.
-; dlga_start:close_window.20|Thank you for your help, Commander. Things didn't look very well for us but then you came up and everything changed.
-; dlga_start:close_window.21|Thank you for your help, Commander. It was fortunate to have you nearby.
+dlga_start:close_window.19|Veliteli, děkuji za vaši pomoc. Bez tebe by to byl náš konec.
+dlga_start:close_window.20|Veliteli, děkuji za vaši pomoc. Vypadalo s námi bledě, ale váš příchod všechno změnil.
+dlga_start:close_window.21|Veliteli, děkuji za vaši pomoc. Ještě že jste byl poblíž.
 dlga_start:freed_hero_answer|Jsem ti dlužný za mé osvobození příteli.
 dlga_freed_hero_answer:freed_hero_answer_1|Nikam nejdeš. Teď budeš mým vězněm!
 ; dlga_freed_hero_answer_1:close_window|Alas. Will my luck never change?
 dlga_freed_hero_answer:freed_hero_answer_2|Jsi volný {s65}. Můžeš jít kam se ti zlíbí.
 ; dlga_freed_hero_answer_2:close_window|Thank you, Commander. I never forget someone who's done me a good turn.
-; dlga_freed_hero_answer:freed_hero_answer_3|Would you like to join me?
+dlga_freed_hero_answer:freed_hero_answer_3|Nechtěl by ses ke mě přidat?
 dlga_freed_hero_answer_3:close_window|Dobře, připojím se k tobě.
-; dlga_freed_hero_answer_3:close_window.1|No, I want to go on my own.
+dlga_freed_hero_answer_3:close_window.1|Ne, chci jít sám.
 ; dlga_start:defeat_hero_answer|You'll not live long to enjoy your victory. My kinsmen will soon wipe out the stain of this defeat.
 dlga_defeat_hero_answer:defeat_hero_answer_1|Od ted jste mym zajatcem.
 dlga_defeat_hero_answer_1:close_window|K čertu s tebou. Toho budeš litovat.
 ; dlga_defeat_hero_answer:defeat_hero_answer_2|You're free to go this time, but don't cross my path again.
 dlga_defeat_hero_answer_2:close_window|Znovu se setkáme.
-; dlga_start:fugitive_1|Yes, what do you want?
-; dlga_fugitive_1:fugitive_2|I am looking for a fugitive by the name of {s4}. You fit his description.
-; dlga_fugitive_1:close_window|Nothing. Sorry to trouble you.
-; dlga_fugitive_2:fugitive_3|I do not know what you are talking about. You must have confused me with someone else.
-; dlga_fugitive_3:fugitive_4|Then drop your sword. If you are innocent, you have nothing to fear. We'll go now and talk to the guard captain to see who is confused.
-; dlga_fugitive_4:close_window|Damn you! You will not be going anywhere!
-; dlga_start:follow_spy_talk|Good day. Such fine weather don't you think? If you'll excuse me now I must go on my way.
-; dlga_follow_spy_talk:follow_spy_talk_2|In the name of {s1}, you are under arrest!
-; dlga_follow_spy_talk_2:close_window|You won't get me alive!
-; dlga_follow_spy_talk:close_window|Never mind me. I was just passing by.
-; dlga_start:spy_partners_talk|Greetings.
-; dlga_spy_partners_talk:spy_partners_talk_2|In the name of {s1} You are under arrest!
-; dlga_spy_partners_talk_2:close_window|You will have to fight us first!
-; dlga_spy_partners_talk:close_window|Never mind me. I was just passing by.
+dlga_start:fugitive_1|Co chceš?
+dlga_fugitive_1:fugitive_2|Hledám uprchlíka jménem {s4}, jehož popis sedí přesně na tebe.
+dlga_fugitive_1:close_window|Nic, omlouvám se za vyrušení.
+dlga_fugitive_2:fugitive_3|Netuším o čem to mluvíš. Musel sis mě s někým splést.
+dlga_fugitive_3:fugitive_4|V tom případě odhoď meč. Pokud jsi nevinný, nemáš se čeho bát. Půjdeme si promluvit s kapitánem stráží a uvidíme kdo se plete.
+dlga_fugitive_4:close_window|K čertu s tebou. Ty už nikam nepůjdeš!
+dlga_start:follow_spy_talk|Dobrý den, máme to dneska ale krásně, nemyslíte? Pokud mě omluvíte, musím už vyrazit.
+dlga_follow_spy_talk:follow_spy_talk_2|{s1} nařídil vaše zadržení, tímto vás zatýkám!
+dlga_follow_spy_talk_2:close_window|Živého mě nedostanete!
+dlga_follow_spy_talk:close_window|Nevšímejte si mě. Jen procházím.
+dlga_start:spy_partners_talk|Zdravím.
+dlga_spy_partners_talk:spy_partners_talk_2|{s1} nařídil vaše zadržení. Tímto vás zatýkám!
+dlga_spy_partners_talk_2:close_window|Tak si to zkus!
+dlga_spy_partners_talk:close_window|Nevšímejte si mě. Jen procházím.
 ; dlga_start:runaway_serf_intro_1|Good day master.
 ; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by your {s4} whom you are running from. He will not punish you if you return now.
 ; dlga_runaway_serf_intro_2:runaway_serf_intro_3|My good master. Our lives at {s1} was unbearable. We worked all day long and still went to bed hungry. We are going to {s6} to start a new life, where we will be treated like humans.

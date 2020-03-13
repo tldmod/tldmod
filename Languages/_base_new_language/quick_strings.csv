@@ -240,12 +240,13 @@ qstr_+1_to_Weapon_Mastery|+1 to Weapon Mastery
 qstr_+1_to_Wound_Treatmen|+1 to Wound Treatment
 qstr_+1_to_Tactics|+1 to Tactics
 qstr_+1_to_Power_Strike|+1 to Power Strike
-qstr_when_equipped|when equipped
 qstr_+1_to_Strength|+1 to Strength
 qstr_+1_to_Agility|+1 to Agility
 qstr_+1_to_Leadership|+1 to Leadership
 qstr_+1_to_Wildcraft|+1 to Wildcraft
 qstr_+1_to_Power_Draw|+1 to Power Draw
+qstr_The_record_of_Balin_|The record of Balin's lost expedition.
+qstr_Who_might_be_interes|Who might be interested in this?
 qstr_Turns_nature_to_your|Turns nature to your side (effect scales with Wildcraft)
 qstr_+1_to_Trainer|+1 to Trainer
 qstr_Recruits_Tribal_Orcs|Recruits Tribal Orcs
@@ -254,10 +255,17 @@ qstr_rallies|rallies
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} in battle
 qstr_+1_to_Charisma|+1 to Charisma
 qstr_+1_to_Surgery|+1 to Surgery
+qstr_+1_to_Intelligence|+1 to Intelligence
 qstr_+1_to_Ironflesh|+1 to Ironflesh
 qstr_+1_to_Prisoner_Mgmt|+1 to Prisoner Mgmt
+qstr_when_equipped|when equipped
+qstr_+1_to_Riding|+1 to Riding
+qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
 qstr_+2_to_Tactics|+2 to Tactics
-qstr_+3_to_Spotting|+3 to Spotting
+qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
+qstr__Scales_with_Wildcra|(Scales with Wildcraft)
+qstr_+1_to_Spotting|+1 to Spotting
+qstr_+2_to_Athletics|+2 to Athletics
 qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
 qstr_Less_Wargs_upkeep|Less Wargs upkeep
 qstr_Light_Armor|Light Armor
@@ -278,8 +286,8 @@ qstr_Bad|Bad
 qstr_{reg79}_shared_XP|{reg79} shared XP
 qstr_{s77}_has_{reg80}_in|{s77} has {reg80} int - {reg81} Int Bonus Multi before dividing by 3 - {reg82} after dividing by 3
 qstr_{reg83}_INT_XP_Bonus|{reg83} INT XP Bonus before dividing by 100 - {reg84} after dividing by 100
-qstr_{s77}_received_{reg6|{s77} received {reg64} bonus XP
-qstr_You_gained_{reg64}_i|You gained {reg64} intelligence-bonus XP
+qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
+qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
 qstr_{reg4}_killed_{reg5}|{reg4} killed, {reg5} wounded, {reg6} routed
 qstr_{reg4}_killed_{reg5}_|{reg4} killed, {reg5} wounded
 qstr_{reg4}_killed_{reg5}_r|{reg4} killed, {reg5} routed
@@ -831,6 +839,7 @@ qstr_A_Nazgul_is_circling|A Nazgul is circling in the sky above the battlefield!
 qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
 qstr_Your_mount_is_scared|Your mount is scared by the {reg73?ent:troll}!
+qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
 qstr_Nazgul_sweep!|Nazgul sweep!
 qstr_You_and_your_horse_p|You and your horse panic, the Nazgul cries are unbearable!
 qstr_Your_horse_panics_th|Your horse panics, the Nazgul cries are unbearable!
@@ -1142,7 +1151,7 @@ qstr_The_battle_against_t|The battle against the group of {s1} continues.
 qstr_CHEAT:_healed!!!|CHEAT: healed!!!
 qstr_There_are_{reg39}_al|There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points.
 qstr_Having_a_small_party|Having a small party has its benefits...You and your troops hide from the enemy for a few hours to be sure that you are not seen.
-qstr_Your_ability_to_surv|Your ability to survive in harsh environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
+qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
 qstr_{reg4}_will_be_lost.|{reg4} will be lost.
 qstr_{s13}_asked_you_to_r|{s13} asked you to report to him with at least {reg13} troops.
 qstr_{s13}_ordered_you_to|{s13} ordered you to join the assault against {s14}.
@@ -1160,16 +1169,9 @@ qstr_Even_though_there_we|Even though there were no allies to witness your victo
 qstr_{s1}_of_{s3}_managed|{s1} of {s3} managed to escape.
 qstr_{s17}|{s17}
 qstr_Prisoners_rescued_so|Prisoners rescued so far: {reg1}
-qstr_Victory_comment._Pla|Victory comment. Player was alone
-qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
-qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
-qstr_No_victory_comment._|No victory comment. The battle was small, and the player provided less than 40 percent of allied strength
 qstr_{reg1}_kills_of_{s1}|{reg1} kills of {s1} faction troops counted towards Oath. TOTAL Kills: {reg0}
 qstr_DEBUG:_Target_Party_|DEBUG: Target Party - YES
 qstr_DEBUG:_Target_Party__|DEBUG: Target Party - NO
-qstr_Some_of_your_tendons|Some of your tendons have been damaged in the battle. You lose 1 strength.
-qstr_You_took_a_nasty_wou|You took a nasty wound which will cause you to limp slightly even after it heals. Your lose 1 agility.
-qstr_You_have_trouble_thi|You have trouble thinking straight after the battle, perhaps from a particularly hard hit to your head, and frequent headaches now plague your existence. Your intelligence is reduced by 1.
 qstr_Perhaps_I_m_getting_|Perhaps I'm getting unlucky...
 qstr_Retirement_is_starti|Retirement is starting to sound better and better.
 qstr_No_matter!_I_will_pe|No matter! I will persevere!
@@ -1353,17 +1355,17 @@ qstr_How_do_magnets_work?|How do magnets work?
 qstr_Um..._by_enchanting_|Um... by enchanting iron?
 qstr_Magnets_are_made_of_|Magnets are made of metal, which is mined from the ground. They are magnetic because the metal still contains pieces of gravity inside it.
 qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
-qstr_I_m_sure_the_TLD_tea|I'm sure the TLD team will get to it when they can.
 qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible with wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
+qstr_Bannerlord_runs_on_a|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
 qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
 qstr_Well_there_s_a_lot_o|Well, there's a lot of new graphics and stuff, I guess that takes time.
 qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.
 qstr_i_wont_decapitated_e|i wont decapitated elephants in multi, nao!!11!
 qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
 qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
-qstr_Did_you_bring_your_z|Did you bring your zupdog?
-qstr_What_s_zupdog?|What's zupdog?
-qstr_My_zupdog_is_ill_but|My zupdog is ill, but I brought my zupmaiass.
+qstr_Y_NO_ChINESE??|Y NO ChINESE??
+qstr_Just_to_troll_you_tr|Just to troll you, troll!
+qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
 qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
 qstr_What_is_plate_armour|What is plate armour? Never heard of it.
 qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
@@ -1418,6 +1420,8 @@ qstr_So_you_are_{s23}._I_|So, you are {s23}. I hear you fight for our {s25} frie
 qstr_I_need_volunteers_wi|I need volunteers willing to follow me on dangerous missions.
 qstr_I_need_some_soldiers|I need some soldiers to replace my dead.
 qstr_{playername}_s_Reser|{playername}'s Reserves
+qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
+qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
 qstr_Excellent_job_{s23}!|Excellent job, {s23}! I wish all our commanders were as dedicated as you.^
 qstr_Nicely_done_{s23}.|Nicely done, {s23}.
 qstr_Good_work_{s23}.|Good work, {s23}.
@@ -1446,7 +1450,7 @@ qstr_I_am_{s4}_{s15}_of_{|I am {s4}, {s15} of {s6}
 qstr_I_am_{s4}_a_commande|I am {s4}, a commander of {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? and the ruler of {s8}.:.
 qstr_{playername}_our_sco|{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least.
-qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, <Player>, to your betters. Have no fear about that.
+qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
 qstr_Alas_that_I_could_no|Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware.
 qstr__I_should_rather_mak| I should rather make report of my victory over {s7} of {s8} myself - the chief glory is mine, and you will not forget it!
 qstr_Very_well_done_{play|Very well done, {playername}! You captured both the spy and his handler, just as I'd hoped, and the pair are now safely locked up, waiting to be questioned. They will have some explaining to do! Anyway, I'm very pleased with your success, {playername}, and I give you this purse as a token of my appreciation.
@@ -1637,6 +1641,7 @@ qstr_I_m_sorry_but_we_can|I'm sorry, but we cannot aid them now.
 qstr_Bah!_Far_more_glory_|Bah! Far more glory to be won elsewhere than with paltry piracy.
 qstr_This_raid_does_not_i|This raid does not interest me. I shall win glory elsewhere.
 qstr_{s9}_asked_you_to_de|{s9} asked you to destroy a scout camp near {s1}.
+qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
 qstr_{s9}_asked_you_to_def|{s9} asked you to defend a village under attack near {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} asked you to raid a village near {s1}.
 qstr_These_soldiers_may_w|These soldiers may well turn the tide in my plans, {playername}. I am confident you've trained them well. My thanks and my compliments to you.

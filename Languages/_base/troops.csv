@@ -487,7 +487,7 @@ trp_c2_harondor_scout_pl|Harondor Scouts
 trp_c3_harondor_rider|Harondor Rider
 trp_c3_harondor_rider_pl|Harondor Riders
 trp_c4_harondor_light_cavalry|Harondor Light Rider
-trp_c4_harondor_light_cavalry_pl|Harondor Light Cavalry
+trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
 trp_c5_harondor_serpent_knight|Gold Serpent Knight
 trp_c5_harondor_serpent_knight_pl|Gold Serpent Knights
 trp_ac3_harondor_skirmisher|Harondor Skirmisher
@@ -518,8 +518,8 @@ trp_i4_dun_wolf_warrior|Dunnish Wolf Warrior
 trp_i4_dun_wolf_warrior_pl|Dunnish Wolf Warriors
 trp_i5_dun_wolf_guard|Dunnish Wolf Guard
 trp_i5_dun_wolf_guard_pl|Dunnish Wolf Guards
-trp_ac5_dun_raven_rider|Dunnish Raven Rider
-trp_ac5_dun_raven_rider_pl|Dunnish Raven Riders
+trp_ac5_dun_raven_rider|Dunnish Night Raven
+trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
 trp_i1_khand_bondsman|Khand Bondsman
 trp_i1_khand_bondsman_pl|Khand Bondsmen
 trp_i2_khand_pit_dog|Khand Pit Dog
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|Khand Horsemen
 trp_c4_khand_heavy_horseman|Khand Heavy Horseman
 trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
 trp_c5_khand_kataphrakt|Variag Ironclad
-trp_c5_khand_kataphrakt_pl|Variag Ironclad
+trp_c5_khand_kataphrakt_pl|Variag Ironclads
 trp_c5_khand_lance_kataphrakt|Variag Lancer
-trp_c5_khand_lance_kataphrakt_pl|Variag Lancer
+trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
 trp_i4_khand_halberdier|Khand Glaiveman
 trp_i4_khand_halberdier_pl|Khand Glaivemen
 trp_i5_khand_halberd_master|Variag Halberd Master

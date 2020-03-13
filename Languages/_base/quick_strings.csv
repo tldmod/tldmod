@@ -233,7 +233,9 @@ qstr_when_equipped|when equipped
 qstr_+1_to_Riding|+1 to Riding
 qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
 qstr_+2_to_Tactics|+2 to Tactics
-qstr_+3_to_Spotting|+3 to Spotting
+qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
+qstr__Scales_with_Wildcra|(Scales with Wildcraft)
+qstr_+1_to_Spotting|+1 to Spotting
 qstr_+2_to_Athletics|+2 to Athletics
 qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
 qstr_Less_Wargs_upkeep|Less Wargs upkeep
@@ -738,6 +740,7 @@ qstr_A_Nazgul_is_circling|A Nazgul is circling in the sky above the battlefield!
 qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
 qstr_Your_mount_is_scared|Your mount is scared by the {reg73?ent:troll}!
+qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!																								
 qstr_Nazgul_sweep!|Nazgul sweep!
 qstr_You_and_your_horse_p|You and your horse panic, the Nazgul cries are unbearable!
 qstr_Your_horse_panics_th|Your horse panics, the Nazgul cries are unbearable!
@@ -1188,6 +1191,8 @@ qstr_So_you_are_{s23}._I_|So, you are {s23}. I hear you fight for our {s25} frie
 qstr_I_need_volunteers_wi|I need volunteers willing to follow me on dangerous missions.
 qstr_I_need_some_soldiers|I need some soldiers to replace my dead.
 qstr_{playername}_s_Reser|{playername}'s Reserves
+qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
+qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
 qstr_Excellent_job_{s23}!|Excellent job, {s23}! I wish all our commanders were as dedicated as you.^
 qstr_Nicely_done_{s23}.|Nicely done, {s23}.
 qstr_Good_work_{s23}.|Good work, {s23}.

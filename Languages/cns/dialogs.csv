@@ -320,7 +320,7 @@ dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|你为孤山做出了巨大�
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|谢谢你，{s3}。
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|现在你会怎么做？
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|我们不会对谋杀我们亲族的凶手置之不理。我们必将令此等加害我族者灭亡。从刚达巴山之巅到卡扎督姆之底，我们要让迷雾山脉被半兽人的血染为黑色。
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}，我希望帮助{s4}人们来为巴林远征队复仇。\ndlga_dwarf_lord_book_give_i:lord_pretalk|祝你好运。
+dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}，我希望帮助{s4}人们来为巴林远征队复仇。\ndlga_dwarf_lord_book_give_i:lord_pretalk  = "祝你好运。"
 dlga_dwarf_lord_book_give_i:lord_pretalk|那就祝你好运了
 dlga_dwarf_lord_avenge:close_window|很好，{playername}。带上都灵一族的祝福给我们的敌人带去死亡吧。让他们知道我们的人民曾经历的痛苦和恐惧
 dlga_lord_talk:find_lost_spears_permission|大人，我希望能进入孤山寻找布拉多辛王丢失的长枪。

@@ -510,16 +510,16 @@ trp_i3_dun_pikeman|Dunlandský kopiník
 trp_i3_dun_pikeman_pl|Dunlandští kopiníci
 trp_i4_dun_vet_pikeman|Dunlandský zkušený kopiník
 trp_i4_dun_vet_pikeman_pl|Dunlandští zkušení kopiníci
-trp_ac4_dun_crebain_rider|Dunlandský krebainský jezdec
-trp_ac4_dun_crebain_rider_pl|Dunlandští krebainští jezdci
+trp_ac2_dun_crebain_rider|Dunlandský krebainský jezdec
+trp_ac2_dun_crebain_rider_pl|Dunlandští krebainští jezdci
 trp_i3_dun_vet_warrior|Dunlandský zkušený válečník
 trp_i3_dun_vet_warrior_pl|Dunlandští zkušení válečníci
 trp_i4_dun_wolf_warrior|Dunlandský Vlčí válečník
 trp_i4_dun_wolf_warrior_pl|Dunlandští Vlčí válečníci
 trp_i5_dun_wolf_guard|Dunlandský Vlčí střážce
 trp_i5_dun_wolf_guard_pl|Dunlandštá Vlčí strážci
-trp_ac5_dun_raven_rider|Dunlandský Havraní jezdec
-trp_ac5_dun_raven_rider_pl|Dunlandští Havraní jezdci
+trp_ac4_dun_raven_rider|Dunlandský Havraní jezdec
+trp_ac4_dun_raven_rider_pl|Dunlandští Havraní jezdci
 trp_i1_khand_bondsman|Khanský nevolník
 trp_i1_khand_bondsman_pl|Khandští nevolníci
 trp_i2_khand_pit_dog|Khandský arénový pes
@@ -1058,7 +1058,7 @@ trp_smith_pelargir_pl|kovárnu
 trp_smith_linhir|Zbrojíř Bor
 trp_smith_linhir_pl|kovárnu
 trp_smith_dolamroth|Kovář Haldad
-trp_smith_dolamroth_pl|Amrothští kováři
+trp_smith_dolamroth_pl|Amrothské kováře
 trp_smith_edhellond|Ryis Ohýbač Železa
 trp_smith_edhellond_pl|kovárnu
 trp_smith_lossarnach|Sekerář Berin
@@ -1112,11 +1112,11 @@ trp_smith_uhcamp_pl|táborovou kovárnu
 trp_smith_urcamp|Glurk
 trp_smith_urcamp_pl|táborovou kovárnu
 trp_smith_cgaladhon|Lukař Dirufin
-trp_smith_cgaladhon_pl|elfí výrobci zbraní
+trp_smith_cgaladhon_pl|elfí výrobce zbraní
 trp_smith_cdolen|Šípař Dimirian
-trp_smith_cdolen_pl|elfí výrobci zbraní
+trp_smith_cdolen_pl|elfí výrobce zbraní
 trp_smith_camroth|Getasistan
-trp_smith_camroth_pl|elfí výrobci zbraní
+trp_smith_camroth_pl|elfí výrobce zbraní
 trp_smith_thranduils_halls|Thurinor
 trp_smith_thranduils_halls_pl|kovárnu
 trp_smith_woodelf_camp|Calechir
@@ -1130,7 +1130,7 @@ trp_smith_dale_pl|kovárnu
 trp_smith_esgaroth|Lukař Kelegarn
 trp_smith_esgaroth_pl|kovárnu
 trp_smith_erebor|Thror Kladivář
-trp_smith_erebor_pl|cenění trpasličí kováři
+trp_smith_erebor_pl|ceněné trpasličí kováře
 trp_smith_dunland|Dorrowuld Železné Kopí
 trp_smith_dunland_pl|kovárnu
 trp_smith_harad|Har Lamželezo
@@ -1140,7 +1140,7 @@ trp_smith_khand_pl|kovárnu
 trp_smith_umbar|Fuinir Padělatel
 trp_smith_umbar_pl|kovárnu
 trp_smith_imladris|Duifirian
-trp_smith_imladris_pl|elfí výrobci zbraní
+trp_smith_imladris_pl|elfí výrobce zbraní
 trp_smith_dolguldur|Stazg Dulbas
 trp_smith_dolguldur_pl|kovárnu
 trp_smith_north_rhun|Ognjemir Kladivo
@@ -1148,7 +1148,7 @@ trp_smith_north_rhun_pl|provizorní kovárnu
 trp_smith_gundabad|Blurg Sněhový Šmelinář
 trp_smith_gundabad_pl|kovárnu
 trp_smith_ironhill|Kovář z Železných hor
-trp_smith_ironhill_pl|trpasličí táboroví kováři
+trp_smith_ironhill_pl|trpasličí táborové kováře
 trp_town_50_weaponsmith|Shruklug brousič nožů
 trp_town_50_weaponsmith_pl|kovárnu
 trp_smith_gondor_ac|Bor Zbrojíř
@@ -1160,11 +1160,11 @@ trp_smith_mordor_ac_pl|kovárnu
 trp_smith_isengard_ac|Burz Železomlat
 trp_smith_isengard_ac_pl|podzemní kovárnu
 trp_smith_lorien_ac|Dimirian Šípař
-trp_smith_lorien_ac_pl|elfí výrobci zbraní
+trp_smith_lorien_ac_pl|elfí výrobce zbraní
 trp_smith_woodelf_ac|Dhoelath
 trp_smith_woodelf_ac_pl|kovárnu
 trp_smith_dwarf_ac|Kovář ze Železných hor
-trp_smith_dwarf_ac_pl|trpasličí táboroví kováři
+trp_smith_dwarf_ac_pl|trpasličí táborové kováře
 trp_smith_gundabad_ac|Blurg Sněhový Šmelinář
 trp_smith_gundabad_ac_pl|kovárnu
 trp_smith_rhun_ac|Branimir Bronnik
@@ -1172,7 +1172,7 @@ trp_smith_rhun_ac_pl|provizorní kovárnu
 trp_smith_guldur_ac|Shtazg Dulbash
 trp_smith_guldur_ac_pl|kovárnu
 trp_smith_imladris_ac|Duifirian
-trp_smith_imladris_ac_pl|elfí výrobci zbraní
+trp_smith_imladris_ac_pl|elfí výrobce zbraní
 trp_smith_dunland_ac|Dorrowuld Železné Kopí
 trp_smith_dunland_ac_pl|kovárnu
 trp_smith_harad_ac|Har Lamželezo
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|hradu ve sromech
 trp_barman_thalls|majitel krčmy
 trp_barman_thalls_pl|trůnního sálu
 trp_barman_beorn|majitel krčmy
-trp_barman_beorn_pl|Meddědova důmu
+trp_barman_beorn_pl|Meddědova domu
 trp_barman_moria|majitel krčmy
 trp_barman_moria_pl|náčelníkovy komnaty
 trp_barman_dale|majitel krčmy
@@ -1308,15 +1308,15 @@ trp_merchant_uhcamp_pl|vrčí jámu a sklad
 trp_merchant_urcamp|Správce proviantu
 trp_merchant_urcamp_pl|vrčí jámu a sklad
 trp_merchant_cgaladhon|Správce proviantu
-trp_merchant_cgaladhon_pl|elfské zásoby
+trp_merchant_cgaladhon_pl|elfské zásobovače
 trp_merchant_cdolen|Správce proviantu
-trp_merchant_cdolen_pl|elfské zásoby
+trp_merchant_cdolen_pl|elfské zásobovače
 trp_merchant_camroth|Správce proviantu
-trp_merchant_camroth_pl|elfské zásoby
+trp_merchant_camroth_pl|elfské zásobovače
 trp_merchant_thranduils_halls|Správce proviantu
-trp_merchant_thranduils_halls_pl|elfské zásoby
+trp_merchant_thranduils_halls_pl|elfské zásobovače
 trp_merchant_woodelf_camp|Správce proviantu
-trp_merchant_woodelf_camp_pl|elfské zásoby
+trp_merchant_woodelf_camp_pl|elfské zásobovače
 trp_merchant_woodmen|Správce proviantu
 trp_merchant_woodmen_pl|stáje a skladiště
 trp_merchant_beorn|Správce proviantu
@@ -1328,7 +1328,7 @@ trp_merchant_dale_pl|stáje a skladiště
 trp_merchant_esgaroth|Správce proviantu
 trp_merchant_esgaroth_pl|stáje a skladiště
 trp_merchant_erebor|Správce proviantu
-trp_merchant_erebor_pl|trpasličí zásoby
+trp_merchant_erebor_pl|trpasličí zásobovače
 trp_merchant_dunland|Dunladský pán skrýše
 trp_merchant_dunland_pl|táborovou skrýš
 trp_merchant_harad|Haradský pán skrýše
@@ -1338,7 +1338,7 @@ trp_merchant_khand_pl|táborovou skrýš
 trp_merchant_umbar|Správce proviantu
 trp_merchant_umbar_pl|táborovou skrýš
 trp_merchant_imladris|Správce proviantu
-trp_merchant_imladris_pl|táborové zásoby
+trp_merchant_imladris_pl|táborové zásobovače
 trp_merchant_dolguldur|Správce proviantu
 trp_merchant_dolguldur_pl|stáje a skladiště
 trp_merchant_north_rhun|Správce proviantu
@@ -1348,7 +1348,7 @@ trp_merchant_south_rhun_pl|táborovou skrýš
 trp_merchant_gundabad|Správce proviantu
 trp_merchant_gundabad_pl|táborovou skrýš
 trp_merchant_ironhill|Správce proviantu
-trp_merchant_ironhill_pl|trpasličí zásoby
+trp_merchant_ironhill_pl|trpasličí zásobovače
 trp_town_50_horse_merchant|Gobrip Žlutý zub
 trp_town_50_horse_merchant_pl|vrčí jámu a sklad
 trp_merchant_calembel|Správce proviantu
@@ -1400,7 +1400,7 @@ trp_elder_cungol_pl|tábor
 trp_elder_isengard|Grima Červivec
 trp_elder_isengard_pl|město
 trp_elder_cgaladhon|Lorienský učenec
-trp_elder_cgaladhon_pl|elfská lesní pevnost
+trp_elder_cgaladhon_pl|elfskou lesní pevnost
 trp_elder_cdolen|Lorienský učenec
 trp_elder_cdolen_pl|ležení
 trp_elder_camroth|Lorienský učenec
@@ -1410,9 +1410,9 @@ trp_elder_thalls_pl|elfí jeskyně
 trp_elder_imladris|Důstojník zásobovací služby z Roklinky
 trp_elder_imladris_pl|tábor
 trp_elder_wvillage|Pierre Dřevorubec
-trp_elder_wvillage_pl|vesnice
+trp_elder_wvillage_pl|vesnici
 trp_elder_beorn|Beornský starší
-trp_elder_beorn_pl|osada
+trp_elder_beorn_pl|osadu
 trp_elder_harad|Haradský vůdce tábora
 trp_elder_harad_pl|tábor
 trp_elder_rhun|Rhunský vůdce tábora

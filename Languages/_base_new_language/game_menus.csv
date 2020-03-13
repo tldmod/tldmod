@@ -202,7 +202,6 @@ mno_camp_cctest_gain_traits|Get All Traits
 mno_camp_cctest_parties|Count Parties
 mno_camp_cctest_items|Refactionize Items
 mno_camp_cctest_pos|Print Coords x100
-mno_camp_cctest_defiled|Add WIP Items
 mno_camp_cctest_return|Back to dev menu.
 menu_camp_mvtest|What do you want to test today?
 mno_camp_mvtest_pimp|Pimp me up first!
@@ -372,7 +371,6 @@ mno_race_rivendell|Rivendell
 mno_race_mirkwood|Mirkwood
 mno_race_evil_male|Evil Male
 menu_camp_action|^^^^^^^^^     Which object?
-mno_camp_customize_defilement|Customize Defiled Armor
 mno_camp_drink_water|Drink the Ent Water!
 mno_camp_action_4|Back.
 menu_assasins_attack_player_won|You have successfully defeated assassins from {s2}, sent by {s3}.
@@ -536,6 +534,7 @@ mno_moria_enter|Return into main hall of Moria trough the secret entrance
 mno_moria_enter_door|Enter Moria.
 mno_moria_secret|{s12}
 mno_cheat_steal_book|CHEAT: steal book now
+mno_cheat_steal_book_door|Get the book
 mno_player_castle_initiate_siege|Attack the {reg6?town:castle}...
 mno_town_sneak|TEST: Disguise yourself and try to sneak into the town.
 mno_castle_start_siege|Besiege the {reg6?town:castle}.
@@ -598,6 +597,7 @@ mno_castle_cheat_town_exterior|CHEAT: Exterior.
 mno_castle_cheat_dungeon|CHEAT: Prison.
 mno_cheat_town_start_siege|CHEAT: Besiege the {reg6?town:castle}...
 mno_isengard_underground|Go to the underground caverns.
+mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Climb up to the top level.
 mno_erebor_gates|Visit the Great Gates.
 mno_town_leave|Leave...
@@ -655,7 +655,7 @@ menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that 
 mno_player_added_to_war_council_close|Close
 menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
 mno_player_added_to_siege_reports_close|Close
-menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Close
 menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 mno_center_besieged_event_close|Close
@@ -779,6 +779,7 @@ mno_ruin_menu_0|Explore the place.
 mno_ruin_leave|Leave...
 menu_premutiny|none
 menu_mutiny|{s1}
+menu_precannibalism|none
 menu_death|You have been killed. Though the war still rages on, you will no longer be part of it.
 menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
 menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
@@ -791,7 +792,7 @@ mno_scene3|Battlefield7 (file scn battlefield7.sco)
 mno_scene4|Battlefield8 (file scn battlefield8.sco)
 mno_scene5|Battlefield9 (file scn battlefield9.sco)
 mno_back_3dot|Back...
-menu_choose_scenes_0|Choose a scene: (Page 1 of 32)
+menu_choose_scenes_0|Choose a scene: (Page 1 of 33)
 mno_back|Go back.
 mno_next|Next...
 mno_choose_scene_0|advcamp bad: generate
@@ -807,7 +808,7 @@ mno_choose_scene_9|advcamp gondor: generate
 mno_choose_scene_10|advcamp gondor siege: generate
 mno_choose_scene_11|advcamp good: generate
 mno_choose_scene_12|advcamp good siege: generate
-menu_choose_scenes_13|Choose a scene: (Page 2 of 32)
+menu_choose_scenes_13|Choose a scene: (Page 2 of 33)
 mno_previous|Previous...
 mno_choose_scene_13|advcamp guldur: generate
 mno_choose_scene_14|advcamp guldur siege: generate
@@ -822,7 +823,7 @@ mno_choose_scene_22|advcamp isengard siege: generate
 mno_choose_scene_23|advcamp khand: generate
 mno_choose_scene_24|advcamp khand siege: generate
 mno_choose_scene_25|advcamp lorien: generate
-menu_choose_scenes_26|Choose a scene: (Page 3 of 32)
+menu_choose_scenes_26|Choose a scene: (Page 3 of 33)
 mno_choose_scene_26|advcamp lorien siege: generate
 mno_choose_scene_27|advcamp mirkwood: generate
 mno_choose_scene_28|advcamp mirkwood siege: generate
@@ -836,7 +837,7 @@ mno_choose_scene_35|advcamp rohan: generate
 mno_choose_scene_36|advcamp rohan siege: generate
 mno_choose_scene_37|advcamp umbar: generate
 mno_choose_scene_38|advcamp umbar siege: generate
-menu_choose_scenes_39|Choose a scene: (Page 4 of 32)
+menu_choose_scenes_39|Choose a scene: (Page 4 of 33)
 mno_choose_scene_39|aldburg center: generate
 mno_choose_scene_40|aldburg siege: generate
 mno_choose_scene_41|amath dollen fortress: generate
@@ -850,7 +851,7 @@ mno_choose_scene_48|battlefield2: generate
 mno_choose_scene_49|battlefield3: generate
 mno_choose_scene_50|battlefield4: generate
 mno_choose_scene_51|battlefield5: generate
-menu_choose_scenes_52|Choose a scene: (Page 5 of 32)
+menu_choose_scenes_52|Choose a scene: (Page 5 of 33)
 mno_choose_scene_52|battlefield6: generate
 mno_choose_scene_53|battlefield7: generate
 mno_choose_scene_54|battlefield8: generate
@@ -864,7 +865,7 @@ mno_choose_scene_61|beorning village siege: generate
 mno_choose_scene_62|black shield fortress: generate
 mno_choose_scene_63|black shield fortress siege easterlings: generate
 mno_choose_scene_64|black shield fortress siege player: generate
-menu_choose_scenes_65|Choose a scene: (Page 6 of 32)
+menu_choose_scenes_65|Choose a scene: (Page 6 of 33)
 mno_choose_scene_65|bridge 1: generate
 mno_choose_scene_66|cair andros castle: indoors
 mno_choose_scene_67|cair andros center: generate
@@ -878,7 +879,7 @@ mno_choose_scene_74|castle 1 exterior: generate
 mno_choose_scene_75|castle 1 interior: indoors
 mno_choose_scene_76|castle 1 prison: indoors
 mno_choose_scene_77|cerin amroth center: generate
-menu_choose_scenes_78|Choose a scene: (Page 7 of 32)
+menu_choose_scenes_78|Choose a scene: (Page 7 of 33)
 mno_choose_scene_78|cerin amroth siege: generate
 mno_choose_scene_79|cerin dolen center: generate
 mno_choose_scene_80|cerin dolen siege: generate
@@ -892,7 +893,7 @@ mno_choose_scene_87|dale siege: generate
 mno_choose_scene_88|dale siege inner: generate
 mno_choose_scene_89|deadmarshes: generate  = "auto entry points"
 mno_choose_scene_90|dimrill dale: generate  = "auto entry points|randomize"
-menu_choose_scenes_91|Choose a scene: (Page 8 of 32)
+menu_choose_scenes_91|Choose a scene: (Page 8 of 33)
 mno_choose_scene_91|dol amroth castle: indoors
 mno_choose_scene_92|dol amroth center: generate
 mno_choose_scene_93|dol amroth siege: generate
@@ -906,7 +907,7 @@ mno_choose_scene_100|dolguldur outside 1: generate
 mno_choose_scene_101|dolguldur outside 2: generate
 mno_choose_scene_102|duel scene: generate
 mno_choose_scene_103|dunland camp center: generate
-menu_choose_scenes_104|Choose a scene: (Page 9 of 32)
+menu_choose_scenes_104|Choose a scene: (Page 9 of 33)
 mno_choose_scene_104|dunland camp siege: generate
 mno_choose_scene_105|dwarf arena: indoors
 mno_choose_scene_106|east emnet center: generate
@@ -920,7 +921,7 @@ mno_choose_scene_113|edhellond center: generate
 mno_choose_scene_114|edhellond siege: generate
 mno_choose_scene_115|edoras castle: indoors
 mno_choose_scene_116|edoras center: generate
-menu_choose_scenes_117|Choose a scene: (Page 10 of 32)
+menu_choose_scenes_117|Choose a scene: (Page 10 of 33)
 mno_choose_scene_117|edoras outside 1: generate
 mno_choose_scene_118|edoras outside 2: generate
 mno_choose_scene_119|edoras siege: generate
@@ -934,7 +935,7 @@ mno_choose_scene_126|erebor castle 2: indoors
 mno_choose_scene_127|erebor center: indoors
 mno_choose_scene_128|erebor dungeon 01: indoors
 mno_choose_scene_129|erebor outside: generate
-menu_choose_scenes_130|Choose a scene: (Page 11 of 32)
+menu_choose_scenes_130|Choose a scene: (Page 11 of 33)
 mno_choose_scene_130|erebor siege: generate
 mno_choose_scene_131|erebor siege inner: generate
 mno_choose_scene_132|erech center: generate
@@ -948,7 +949,7 @@ mno_choose_scene_139|esgaroth outside 2: generate  = "randomize"
 mno_choose_scene_140|esgaroth siege: generate
 mno_choose_scene_141|ethring center: generate
 mno_choose_scene_142|ethring siege: generate
-menu_choose_scenes_143|Choose a scene: (Page 12 of 32)
+menu_choose_scenes_143|Choose a scene: (Page 12 of 33)
 mno_choose_scene_143|fangorn: generate
 mno_choose_scene_144|field 1: generate
 mno_choose_scene_145|field 2: generate
@@ -962,7 +963,7 @@ mno_choose_scene_152|ford small1: generate
 mno_choose_scene_153|ford small2: generate
 mno_choose_scene_154|ford small3: generate
 mno_choose_scene_155|forest1: generate
-menu_choose_scenes_156|Choose a scene: (Page 13 of 32)
+menu_choose_scenes_156|Choose a scene: (Page 13 of 33)
 mno_choose_scene_156|forest2: generate
 mno_choose_scene_157|forest3: generate
 mno_choose_scene_158|forest4: generate
@@ -976,7 +977,7 @@ mno_choose_scene_165|forest fangorn5: generate
 mno_choose_scene_166|forest firien1: generate
 mno_choose_scene_167|forest firien2: generate
 mno_choose_scene_168|forest firien3: generate
-menu_choose_scenes_169|Choose a scene: (Page 14 of 32)
+menu_choose_scenes_169|Choose a scene: (Page 14 of 33)
 mno_choose_scene_169|forest ithilien1: generate
 mno_choose_scene_170|forest ithilien2: generate
 mno_choose_scene_171|forest ithilien3: generate
@@ -988,255 +989,261 @@ mno_choose_scene_176|forest lorien3: generate
 mno_choose_scene_177|forest lorien4: generate
 mno_choose_scene_178|forest lorien5: generate
 mno_choose_scene_179|forest mirkwood1: generate
-mno_choose_scene_180|forest mirkwood2: generate
-mno_choose_scene_181|forest mirkwood3: generate
-menu_choose_scenes_182|Choose a scene: (Page 15 of 32)
-mno_choose_scene_182|forest mirkwood4: generate
-mno_choose_scene_183|forest mirkwood5: generate
-mno_choose_scene_184|forest some1: generate
-mno_choose_scene_185|forest some2: generate
-mno_choose_scene_186|goblin north outpost center: no horses  = "indoors|generate"
-mno_choose_scene_187|goblin north outpost center siege: generate
-mno_choose_scene_188|goblin south outpost center: generate
-mno_choose_scene_189|goblin south outpost center siege: generate
-mno_choose_scene_190|gondor arena: generate
-mno_choose_scene_191|gondor castle: indoors
-mno_choose_scene_192|gondor castle a: indoors
-mno_choose_scene_193|gondor castle b: indoors
-mno_choose_scene_194|gondor castle c: indoors
-menu_choose_scenes_195|Choose a scene: (Page 16 of 32)
-mno_choose_scene_195|gondor prison: indoors
-mno_choose_scene_196|gondor tavern: indoors
-mno_choose_scene_197|great east road: generate  = "randomize"
-mno_choose_scene_198|gundabad camp center: generate
-mno_choose_scene_199|gundabad mirkwood outpost: generate
-mno_choose_scene_200|gundabad mirkwood outpost siege: generate
-mno_choose_scene_201|gundabad ne outpost center: generate
-mno_choose_scene_202|gundabad ne outpost center siege: generate
-mno_choose_scene_203|gundabad nw outpost center: generate
-mno_choose_scene_204|gundabad nw outpost center siege: generate
-mno_choose_scene_205|gundabad siege: generate
-mno_choose_scene_206|gundabad siege inner: generate
-mno_choose_scene_207|handsign: generate  = "auto entry points"
-menu_choose_scenes_208|Choose a scene: (Page 17 of 32)
-mno_choose_scene_208|harad arena: generate
-mno_choose_scene_209|harad camp center: generate
-mno_choose_scene_210|harad camp siege: generate
-mno_choose_scene_211|henneth annun castle: indoors
-mno_choose_scene_212|henneth annun center: generate
-mno_choose_scene_213|hornburg castle: generate
-mno_choose_scene_214|hornburg center: generate
-mno_choose_scene_215|hornburg near: generate
-mno_choose_scene_216|hornburg outside 1: generate
-mno_choose_scene_217|hornburg outside 2: generate
-mno_choose_scene_218|hornburg siege: generate
-mno_choose_scene_219|hornburg siege inner: generate
-mno_choose_scene_220|ironhill camp center: generate
-menu_choose_scenes_221|Choose a scene: (Page 18 of 32)
-mno_choose_scene_221|ironhill camp siege: generate
-mno_choose_scene_222|isengard arena: generate
-mno_choose_scene_223|isengard castle: indoors
-mno_choose_scene_224|isengard center: generate
-mno_choose_scene_225|isengard center flooded: generate
-mno_choose_scene_226|isengard outside: generate  = "auto entry points|randomize"
-mno_choose_scene_227|isengard siege: generate
-mno_choose_scene_228|isengard underground: generate
-mno_choose_scene_229|khand arena: generate
-mno_choose_scene_230|khand camp center: generate
-mno_choose_scene_231|khand camp siege: generate
-mno_choose_scene_232|lair forest bandits: generate
-mno_choose_scene_233|lebennin 1: generate
-menu_choose_scenes_234|Choose a scene: (Page 19 of 32)
-mno_choose_scene_234|lebennin 2: generate
-mno_choose_scene_235|lebennin 3: generate
-mno_choose_scene_236|lebennin 4: generate
-mno_choose_scene_237|lebennin coast 1: generate
-mno_choose_scene_238|lebennin coast 2: generate
-mno_choose_scene_239|lebennin coast 3: generate  = "randomize"
-mno_choose_scene_240|lebennin coast 4: generate  = "randomize"
-mno_choose_scene_241|linhir center: generate
-mno_choose_scene_242|linhir siege: generate
-mno_choose_scene_243|lossarnach center: generate
-mno_choose_scene_244|lossarnach siege: generate
-mno_choose_scene_245|minas morgul center: generate
-mno_choose_scene_246|minas morgul siege: generate
-menu_choose_scenes_247|Choose a scene: (Page 20 of 32)
-mno_choose_scene_247|minas morgul siege inner: generate
-mno_choose_scene_248|minas tirith castle: indoors  = "force skybox"
-mno_choose_scene_249|minas tirith center: generate
-mno_choose_scene_250|minas tirith center mid: generate
-mno_choose_scene_251|minas tirith center top: generate
-mno_choose_scene_252|minas tirith outside: generate  = "auto entry points"
-mno_choose_scene_253|minas tirith siege: generate
-mno_choose_scene_254|minas tirith siege inner: generate
-mno_choose_scene_255|mirkwood: generate
-mno_choose_scene_256|mirkwood ambush: generate
-mno_choose_scene_257|morannon castle: generate
-mno_choose_scene_258|morannon center: generate
-mno_choose_scene_259|morannon outside 1: generate
-menu_choose_scenes_260|Choose a scene: (Page 21 of 32)
-mno_choose_scene_260|morannon outside 2: generate
-mno_choose_scene_261|morannon siege: generate
-mno_choose_scene_262|morannon siege inner: generate
-mno_choose_scene_263|mordor arena: generate
-mno_choose_scene_264|mordor castle: indoors
-mno_choose_scene_265|mordor castle a: indoors
-mno_choose_scene_266|mordor castle b: indoors
-mno_choose_scene_267|mordor prison: indoors
-mno_choose_scene_268|mordor tavern: indoors
-mno_choose_scene_269|moria castle: indoors
-mno_choose_scene_270|moria center: generate
-mno_choose_scene_271|moria deep mines: generate  = "auto entry points"
-mno_choose_scene_272|moria outside 1: generate
-menu_choose_scenes_273|Choose a scene: (Page 22 of 32)
-mno_choose_scene_273|moria outside 2: generate
-mno_choose_scene_274|moria secret entry: generate  = "auto entry points"
-mno_choose_scene_275|moria siege: generate
-mno_choose_scene_276|mountain ambush: generate  = "randomize"
-mno_choose_scene_277|north rhun camp center: generate
-mno_choose_scene_278|north rhun camp siege: generate
-mno_choose_scene_279|old forest road: generate
-mno_choose_scene_280|orc sentry camp center: generate
-mno_choose_scene_281|orc sentry camp center siege: generate
-mno_choose_scene_282|osgiliath outskirts: generate
-mno_choose_scene_283|osgiliath outskirts 2: generate
-mno_choose_scene_284|osgiliath outskirts 3: generate
-mno_choose_scene_285|osgiliath outskirts 4: generate
-menu_choose_scenes_286|Choose a scene: (Page 23 of 32)
-mno_choose_scene_286|pelargir center: generate
-mno_choose_scene_287|pelargir siege: generate
-mno_choose_scene_288|pelennor 1: generate
-mno_choose_scene_289|pelennor 2: generate
-mno_choose_scene_290|pinnath gelin center: generate
-mno_choose_scene_291|pinnath gelin siege: generate
-mno_choose_scene_292|quick battle 1: generate
-mno_choose_scene_293|quick battle 2: generate
-mno_choose_scene_294|quick battle 3: generate
-mno_choose_scene_295|quick battle 4: generate
-mno_choose_scene_296|quick battle 5: generate
-mno_choose_scene_297|quick battle 6: generate
-mno_choose_scene_298|quick battle 7: generate
-menu_choose_scenes_299|Choose a scene: (Page 24 of 32)
-mno_choose_scene_299|quick battle ambush: generate
-mno_choose_scene_300|quick battle corsair: generate
-mno_choose_scene_301|quick battle random: generate  = "randomize"
-mno_choose_scene_302|random scene: generate  = "auto entry points|randomize"
-mno_choose_scene_303|random scene desert: generate  = "randomize"
-mno_choose_scene_304|random scene desert forest: generate  = "randomize"
-mno_choose_scene_305|random scene desert small: generate  = "randomize"
-mno_choose_scene_306|random scene north: generate  = "randomize"
-mno_choose_scene_307|random scene north forest: generate  = "randomize"
-mno_choose_scene_308|random scene north small: generate  = "randomize"
-mno_choose_scene_309|random scene parade: generate  = "randomize"
-mno_choose_scene_310|random scene plain: generate  = "randomize"
-mno_choose_scene_311|random scene plain forest: generate  = "randomize"
-menu_choose_scenes_312|Choose a scene: (Page 25 of 32)
-mno_choose_scene_312|random scene plain forest custom 5: generate
-mno_choose_scene_313|random scene plain small: generate  = "randomize"
-mno_choose_scene_314|random scene snow: generate  = "randomize"
-mno_choose_scene_315|random scene snow forest: generate  = "randomize"
-mno_choose_scene_316|random scene snow small: generate  = "randomize"
-mno_choose_scene_317|random scene steppe: generate  = "randomize"
-mno_choose_scene_318|random scene steppe forest: generate  = "randomize"
-mno_choose_scene_319|random scene steppe small: generate  = "randomize"
-mno_choose_scene_320|rhun arena: generate
-mno_choose_scene_321|rhun north camp center: generate
-mno_choose_scene_322|rhun north camp siege: generate
-mno_choose_scene_323|rhun south camp center: generate
-mno_choose_scene_324|rhun south camp siege: generate
-menu_choose_scenes_325|Choose a scene: (Page 26 of 32)
-mno_choose_scene_325|rivendell camp center: generate
-mno_choose_scene_326|rivendell camp siege: generate
-mno_choose_scene_327|rivercross: generate
-mno_choose_scene_328|rohan arena: generate
-mno_choose_scene_329|rohan castle: indoors
-mno_choose_scene_330|rohan castle a: indoors
-mno_choose_scene_331|rohan castle b: indoors
-mno_choose_scene_332|rohan prison: indoors
-mno_choose_scene_333|rohan tavern: indoors
-mno_choose_scene_334|s erebor: generate  = "auto entry points|randomize"
-mno_choose_scene_335|scout camp gondor battlefield 1: generate
-mno_choose_scene_336|scout camp gondor battlefield 2: generate
-mno_choose_scene_337|scout camp gondor evil big: generate
-menu_choose_scenes_338|Choose a scene: (Page 27 of 32)
-mno_choose_scene_338|scout camp gondor evil small: generate
-mno_choose_scene_339|scout camp gondor good big: generate
-mno_choose_scene_340|scout camp gondor good small: generate
-mno_choose_scene_341|scout camp mirk evil big: generate
-mno_choose_scene_342|scout camp mirk evil small: generate
-mno_choose_scene_343|scout camp mirk good big: generate
-mno_choose_scene_344|scout camp mirk good small: generate
-mno_choose_scene_345|scout camp north evil big: generate
-mno_choose_scene_346|scout camp north evil small: generate
-mno_choose_scene_347|scout camp north good big: generate
-mno_choose_scene_348|scout camp north good small: generate
-mno_choose_scene_349|scout camp rohan evil big: generate
-mno_choose_scene_350|scout camp rohan evil small: generate
-menu_choose_scenes_351|Choose a scene: (Page 28 of 32)
-mno_choose_scene_351|scout camp rohan good big: generate
-mno_choose_scene_352|scout camp rohan good small: generate
-mno_choose_scene_353|sea battle north: generate
-mno_choose_scene_354|sea battle south: generate
-mno_choose_scene_355|small ford: generate
-mno_choose_scene_356|start lorien: generate
-mno_choose_scene_357|start rivendell: generate
-mno_choose_scene_358|start woodelf: generate
-mno_choose_scene_359|starting quest: generate
-mno_choose_scene_360|tarnost center: generate
-mno_choose_scene_361|tarnost siege: generate
-mno_choose_scene_362|test scene: generate
-mno_choose_scene_363|thranduil hall room: indoors  = "force skybox"
-menu_choose_scenes_364|Choose a scene: (Page 29 of 32)
-mno_choose_scene_364|thranduils halls center: generate
-mno_choose_scene_365|thranduils halls siege: generate
-mno_choose_scene_366|tld sorcerer forest a: generate
-mno_choose_scene_367|tld sorcerer forest b: generate
-mno_choose_scene_368|tld sorcerer forest c: generate
-mno_choose_scene_369|town alley: generate
-mno_choose_scene_370|town store: indoors
-mno_choose_scene_371|town walls: generate
-mno_choose_scene_372|troll cave center: generate
-mno_choose_scene_373|troll cave siege: generate
-mno_choose_scene_374|tutorial 1: indoors
-mno_choose_scene_375|tutorial 2: indoors
-mno_choose_scene_376|tutorial 3: indoors
-menu_choose_scenes_377|Choose a scene: (Page 30 of 32)
-mno_choose_scene_377|tutorial 4: generate
-mno_choose_scene_378|tutorial 5: generate
-mno_choose_scene_379|umbar arena: generate
-mno_choose_scene_380|umbar camp center: generate
-mno_choose_scene_381|umbar camp siege: generate
-mno_choose_scene_382|umbar camp siege inner: generate
-mno_choose_scene_383|underground warehouse: generate
-mno_choose_scene_384|uruk hai h camp center: generate
-mno_choose_scene_385|uruk hai h camp center siege: generate
-mno_choose_scene_386|uruk hai outpost center: generate
-mno_choose_scene_387|uruk hai outpost center siege: generate
-mno_choose_scene_388|uruk hai r camp center: generate
-mno_choose_scene_389|uruk hai r camp center siege: generate
-menu_choose_scenes_390|Choose a scene: (Page 31 of 32)
-mno_choose_scene_390|village 1: generate
-mno_choose_scene_391|village 2: generate
-mno_choose_scene_392|village 3: generate
-mno_choose_scene_393|village anduin: generate
-mno_choose_scene_394|village gondor: generate
-mno_choose_scene_395|village gondor battlefield 1: generate
-mno_choose_scene_396|village gondor battlefield 2: generate
-mno_choose_scene_397|village north: generate
-mno_choose_scene_398|village rohan: generate
-mno_choose_scene_399|west emnet center: generate
-mno_choose_scene_400|west emnet siege: generate
-mno_choose_scene_401|west osgiliath castle: indoors
-mno_choose_scene_402|west osgiliath center: generate
-menu_choose_scenes_403|Choose a scene: (Page 32 of 32)
-mno_choose_scene_403|west osgiliath siege: generate
-mno_choose_scene_404|westfold center: generate
-mno_choose_scene_405|westfold siege: generate
-mno_choose_scene_406|woodelf camp center: generate
-mno_choose_scene_407|woodelf camp siege: generate
-mno_choose_scene_408|woodelf west camp center: generate
-mno_choose_scene_409|woodelf west camp siege: generate
-mno_choose_scene_410|woodsmen village2 center: generate
-mno_choose_scene_411|woodsmen village2 siege: generate
-mno_choose_scene_412|woodsmen village center: generate
-mno_choose_scene_413|woodsmen village siege: generate
+mno_choose_scene_180|forest mirkwood1 small: generate
+mno_choose_scene_181|forest mirkwood2: generate
+menu_choose_scenes_182|Choose a scene: (Page 15 of 33)
+mno_choose_scene_182|forest mirkwood2 small: generate
+mno_choose_scene_183|forest mirkwood3: generate
+mno_choose_scene_184|forest mirkwood3 small: generate
+mno_choose_scene_185|forest mirkwood4: generate
+mno_choose_scene_186|forest mirkwood4 small: generate
+mno_choose_scene_187|forest mirkwood5: generate
+mno_choose_scene_188|forest mirkwood5 small: generate
+mno_choose_scene_189|forest some1: generate
+mno_choose_scene_190|forest some2: generate
+mno_choose_scene_191|goblin north outpost center: no horses  = "indoors|generate"
+mno_choose_scene_192|goblin north outpost center siege: generate
+mno_choose_scene_193|goblin south outpost center: generate
+mno_choose_scene_194|goblin south outpost center siege: generate
+menu_choose_scenes_195|Choose a scene: (Page 16 of 33)
+mno_choose_scene_195|gondor arena: generate
+mno_choose_scene_196|gondor castle: indoors
+mno_choose_scene_197|gondor castle a: indoors
+mno_choose_scene_198|gondor castle b: indoors
+mno_choose_scene_199|gondor castle c: indoors
+mno_choose_scene_200|gondor prison: indoors
+mno_choose_scene_201|gondor tavern: indoors
+mno_choose_scene_202|great east road: generate  = "randomize"
+mno_choose_scene_203|gundabad camp center: generate
+mno_choose_scene_204|gundabad mirkwood outpost: generate
+mno_choose_scene_205|gundabad mirkwood outpost siege: generate
+mno_choose_scene_206|gundabad ne outpost center: generate
+mno_choose_scene_207|gundabad ne outpost center siege: generate
+menu_choose_scenes_208|Choose a scene: (Page 17 of 33)
+mno_choose_scene_208|gundabad nw outpost center: generate
+mno_choose_scene_209|gundabad nw outpost center siege: generate
+mno_choose_scene_210|gundabad siege: generate
+mno_choose_scene_211|gundabad siege inner: generate
+mno_choose_scene_212|handsign: generate  = "auto entry points"
+mno_choose_scene_213|harad arena: generate
+mno_choose_scene_214|harad camp center: generate
+mno_choose_scene_215|harad camp siege: generate
+mno_choose_scene_216|henneth annun castle: indoors
+mno_choose_scene_217|henneth annun center: generate
+mno_choose_scene_218|hornburg castle: generate
+mno_choose_scene_219|hornburg center: generate
+mno_choose_scene_220|hornburg near: generate
+menu_choose_scenes_221|Choose a scene: (Page 18 of 33)
+mno_choose_scene_221|hornburg outside 1: generate
+mno_choose_scene_222|hornburg outside 2: generate
+mno_choose_scene_223|hornburg siege: generate
+mno_choose_scene_224|hornburg siege inner: generate
+mno_choose_scene_225|ironhill camp center: generate
+mno_choose_scene_226|ironhill camp siege: generate
+mno_choose_scene_227|isengard arena: generate
+mno_choose_scene_228|isengard castle: indoors
+mno_choose_scene_229|isengard center: generate
+mno_choose_scene_230|isengard center flooded: generate
+mno_choose_scene_231|isengard outside: generate  = "auto entry points|randomize"
+mno_choose_scene_232|isengard siege: generate
+mno_choose_scene_233|isengard underground: generate
+menu_choose_scenes_234|Choose a scene: (Page 19 of 33)
+mno_choose_scene_234|khand arena: generate
+mno_choose_scene_235|khand camp center: generate
+mno_choose_scene_236|khand camp siege: generate
+mno_choose_scene_237|lair forest bandits: generate
+mno_choose_scene_238|lebennin 1: generate
+mno_choose_scene_239|lebennin 2: generate
+mno_choose_scene_240|lebennin 3: generate
+mno_choose_scene_241|lebennin 4: generate
+mno_choose_scene_242|lebennin coast 1: generate
+mno_choose_scene_243|lebennin coast 2: generate
+mno_choose_scene_244|lebennin coast 3: generate  = "randomize"
+mno_choose_scene_245|lebennin coast 4: generate  = "randomize"
+mno_choose_scene_246|linhir center: generate
+menu_choose_scenes_247|Choose a scene: (Page 20 of 33)
+mno_choose_scene_247|linhir siege: generate
+mno_choose_scene_248|lossarnach center: generate
+mno_choose_scene_249|lossarnach siege: generate
+mno_choose_scene_250|minas morgul center: generate
+mno_choose_scene_251|minas morgul siege: generate
+mno_choose_scene_252|minas morgul siege inner: generate
+mno_choose_scene_253|minas tirith castle: indoors  = "force skybox"
+mno_choose_scene_254|minas tirith center: generate
+mno_choose_scene_255|minas tirith center mid: generate
+mno_choose_scene_256|minas tirith center top: generate
+mno_choose_scene_257|minas tirith outside: generate  = "auto entry points"
+mno_choose_scene_258|minas tirith siege: generate
+mno_choose_scene_259|minas tirith siege inner: generate
+menu_choose_scenes_260|Choose a scene: (Page 21 of 33)
+mno_choose_scene_260|mirkwood: generate
+mno_choose_scene_261|mirkwood ambush: generate
+mno_choose_scene_262|morannon castle: generate
+mno_choose_scene_263|morannon center: generate
+mno_choose_scene_264|morannon outside 1: generate
+mno_choose_scene_265|morannon outside 2: generate
+mno_choose_scene_266|morannon siege: generate
+mno_choose_scene_267|morannon siege inner: generate
+mno_choose_scene_268|mordor arena: generate
+mno_choose_scene_269|mordor castle: indoors
+mno_choose_scene_270|mordor castle a: indoors
+mno_choose_scene_271|mordor castle b: indoors
+mno_choose_scene_272|mordor prison: indoors
+menu_choose_scenes_273|Choose a scene: (Page 22 of 33)
+mno_choose_scene_273|mordor tavern: indoors
+mno_choose_scene_274|moria castle: indoors
+mno_choose_scene_275|moria center: generate
+mno_choose_scene_276|moria deep mines: generate  = "auto entry points"
+mno_choose_scene_277|moria outside 1: generate
+mno_choose_scene_278|moria outside 2: generate
+mno_choose_scene_279|moria secret entry: generate  = "auto entry points"
+mno_choose_scene_280|moria siege: generate
+mno_choose_scene_281|mountain ambush: generate  = "randomize"
+mno_choose_scene_282|north rhun camp center: generate
+mno_choose_scene_283|north rhun camp siege: generate
+mno_choose_scene_284|old forest road: generate
+mno_choose_scene_285|orc sentry camp center: generate
+menu_choose_scenes_286|Choose a scene: (Page 23 of 33)
+mno_choose_scene_286|orc sentry camp center siege: generate
+mno_choose_scene_287|osgiliath outskirts: generate
+mno_choose_scene_288|osgiliath outskirts 2: generate
+mno_choose_scene_289|osgiliath outskirts 3: generate
+mno_choose_scene_290|osgiliath outskirts 4: generate
+mno_choose_scene_291|pelargir center: generate
+mno_choose_scene_292|pelargir siege: generate
+mno_choose_scene_293|pelennor 1: generate
+mno_choose_scene_294|pelennor 2: generate
+mno_choose_scene_295|pinnath gelin center: generate
+mno_choose_scene_296|pinnath gelin siege: generate
+mno_choose_scene_297|quick battle 1: generate
+mno_choose_scene_298|quick battle 2: generate
+menu_choose_scenes_299|Choose a scene: (Page 24 of 33)
+mno_choose_scene_299|quick battle 3: generate
+mno_choose_scene_300|quick battle 4: generate
+mno_choose_scene_301|quick battle 5: generate
+mno_choose_scene_302|quick battle 6: generate
+mno_choose_scene_303|quick battle 7: generate
+mno_choose_scene_304|quick battle ambush: generate
+mno_choose_scene_305|quick battle corsair: generate
+mno_choose_scene_306|quick battle random: generate  = "randomize"
+mno_choose_scene_307|random scene: generate  = "auto entry points|randomize"
+mno_choose_scene_308|random scene desert: generate  = "randomize"
+mno_choose_scene_309|random scene desert forest: generate  = "randomize"
+mno_choose_scene_310|random scene desert small: generate  = "randomize"
+mno_choose_scene_311|random scene north: generate  = "randomize"
+menu_choose_scenes_312|Choose a scene: (Page 25 of 33)
+mno_choose_scene_312|random scene north forest: generate  = "randomize"
+mno_choose_scene_313|random scene north small: generate  = "randomize"
+mno_choose_scene_314|random scene parade: generate  = "randomize"
+mno_choose_scene_315|random scene plain: generate  = "randomize"
+mno_choose_scene_316|random scene plain forest: generate  = "randomize"
+mno_choose_scene_317|random scene plain forest custom 5: generate
+mno_choose_scene_318|random scene plain small: generate  = "randomize"
+mno_choose_scene_319|random scene snow: generate  = "randomize"
+mno_choose_scene_320|random scene snow forest: generate  = "randomize"
+mno_choose_scene_321|random scene snow small: generate  = "randomize"
+mno_choose_scene_322|random scene steppe: generate  = "randomize"
+mno_choose_scene_323|random scene steppe forest: generate  = "randomize"
+mno_choose_scene_324|random scene steppe small: generate  = "randomize"
+menu_choose_scenes_325|Choose a scene: (Page 26 of 33)
+mno_choose_scene_325|rhun arena: generate
+mno_choose_scene_326|rhun north camp center: generate
+mno_choose_scene_327|rhun north camp siege: generate
+mno_choose_scene_328|rhun south camp center: generate
+mno_choose_scene_329|rhun south camp siege: generate
+mno_choose_scene_330|rivendell camp center: generate
+mno_choose_scene_331|rivendell camp siege: generate
+mno_choose_scene_332|rivercross: generate
+mno_choose_scene_333|rohan arena: generate
+mno_choose_scene_334|rohan castle: indoors
+mno_choose_scene_335|rohan castle a: indoors
+mno_choose_scene_336|rohan castle b: indoors
+mno_choose_scene_337|rohan prison: indoors
+menu_choose_scenes_338|Choose a scene: (Page 27 of 33)
+mno_choose_scene_338|rohan tavern: indoors
+mno_choose_scene_339|s erebor: generate  = "auto entry points|randomize"
+mno_choose_scene_340|scout camp gondor battlefield 1: generate
+mno_choose_scene_341|scout camp gondor battlefield 2: generate
+mno_choose_scene_342|scout camp gondor evil big: generate
+mno_choose_scene_343|scout camp gondor evil small: generate
+mno_choose_scene_344|scout camp gondor good big: generate
+mno_choose_scene_345|scout camp gondor good small: generate
+mno_choose_scene_346|scout camp mirk evil big: generate
+mno_choose_scene_347|scout camp mirk evil small: generate
+mno_choose_scene_348|scout camp mirk good big: generate
+mno_choose_scene_349|scout camp mirk good small: generate
+mno_choose_scene_350|scout camp north evil big: generate
+menu_choose_scenes_351|Choose a scene: (Page 28 of 33)
+mno_choose_scene_351|scout camp north evil small: generate
+mno_choose_scene_352|scout camp north good big: generate
+mno_choose_scene_353|scout camp north good small: generate
+mno_choose_scene_354|scout camp rohan evil big: generate
+mno_choose_scene_355|scout camp rohan evil small: generate
+mno_choose_scene_356|scout camp rohan good big: generate
+mno_choose_scene_357|scout camp rohan good small: generate
+mno_choose_scene_358|sea battle north: generate
+mno_choose_scene_359|sea battle south: generate
+mno_choose_scene_360|small ford: generate
+mno_choose_scene_361|start lorien: generate
+mno_choose_scene_362|start rivendell: generate
+mno_choose_scene_363|start woodelf: generate
+menu_choose_scenes_364|Choose a scene: (Page 29 of 33)
+mno_choose_scene_364|starting quest: generate
+mno_choose_scene_365|tarnost center: generate
+mno_choose_scene_366|tarnost siege: generate
+mno_choose_scene_367|test scene: generate
+mno_choose_scene_368|thranduil hall room: indoors  = "force skybox"
+mno_choose_scene_369|thranduils halls center: generate
+mno_choose_scene_370|thranduils halls siege: generate
+mno_choose_scene_371|tld sorcerer forest a: generate
+mno_choose_scene_372|tld sorcerer forest b: generate
+mno_choose_scene_373|tld sorcerer forest c: generate
+mno_choose_scene_374|town alley: generate
+mno_choose_scene_375|town store: indoors
+mno_choose_scene_376|town walls: generate
+menu_choose_scenes_377|Choose a scene: (Page 30 of 33)
+mno_choose_scene_377|troll cave center: generate
+mno_choose_scene_378|troll cave siege: generate
+mno_choose_scene_379|tutorial 1: indoors
+mno_choose_scene_380|tutorial 2: indoors
+mno_choose_scene_381|tutorial 3: indoors
+mno_choose_scene_382|tutorial 4: generate
+mno_choose_scene_383|tutorial 5: generate
+mno_choose_scene_384|umbar arena: generate
+mno_choose_scene_385|umbar camp center: generate
+mno_choose_scene_386|umbar camp siege: generate
+mno_choose_scene_387|umbar camp siege inner: generate
+mno_choose_scene_388|underground warehouse: generate
+mno_choose_scene_389|uruk hai h camp center: generate
+menu_choose_scenes_390|Choose a scene: (Page 31 of 33)
+mno_choose_scene_390|uruk hai h camp center siege: generate
+mno_choose_scene_391|uruk hai outpost center: generate
+mno_choose_scene_392|uruk hai outpost center siege: generate
+mno_choose_scene_393|uruk hai r camp center: generate
+mno_choose_scene_394|uruk hai r camp center siege: generate
+mno_choose_scene_395|village 1: generate
+mno_choose_scene_396|village anduin: generate
+mno_choose_scene_397|village gondor: generate
+mno_choose_scene_398|village gondor 2: generate
+mno_choose_scene_399|village gondor battlefield 1: generate
+mno_choose_scene_400|village gondor battlefield 2: generate
+mno_choose_scene_401|village north: generate
+mno_choose_scene_402|village rohan: generate
+menu_choose_scenes_403|Choose a scene: (Page 32 of 33)
+mno_choose_scene_403|village rohan 2: generate
+mno_choose_scene_404|west emnet center: generate
+mno_choose_scene_405|west emnet siege: generate
+mno_choose_scene_406|west osgiliath castle: indoors
+mno_choose_scene_407|west osgiliath center: generate
+mno_choose_scene_408|west osgiliath siege: generate
+mno_choose_scene_409|westfold center: generate
+mno_choose_scene_410|westfold siege: generate
+mno_choose_scene_411|woodelf camp center: generate
+mno_choose_scene_412|woodelf camp siege: generate
+mno_choose_scene_413|woodelf west camp center: generate
+mno_choose_scene_414|woodelf west camp siege: generate
+mno_choose_scene_415|woodsmen village2 center: generate
+menu_choose_scenes_416|Choose a scene: (Page 33 of 33)
+mno_choose_scene_416|woodsmen village2 siege: generate
+mno_choose_scene_417|woodsmen village center: generate
+mno_choose_scene_418|woodsmen village siege: generate
