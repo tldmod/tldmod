@@ -22322,6 +22322,7 @@ scripts = [
 		(assign, ":continue", 1),
 		(try_begin),
 			(this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"),
+			(this_or_next|eq, ":troop_id", "trp_ac5_dun_raven_rider"),
 			(this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"),
 			(this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"),
 			(this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"),
