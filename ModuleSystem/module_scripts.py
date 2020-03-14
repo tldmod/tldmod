@@ -9322,6 +9322,8 @@ scripts = [
 	  (try_begin),
         (eq, ":party_type", spt_town),
 		(eq, ":party_faction", "fac_gondor"),
+		(party_get_slot, ":subfac", ":party_no", slot_party_subfaction),
+		(neq, ":subfac", 0),
         (party_get_slot, ":party_template_a", ":party_no", slot_town_reinforcements_a),
         (party_get_slot, ":party_template_b", ":party_no", slot_town_reinforcements_b),
         (party_get_slot, ":party_template_c", ":party_no", slot_town_reinforcements_c),
