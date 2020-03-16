@@ -2283,7 +2283,7 @@ mission_templates = [ # not used in game
 	#  make ent spawn at random
 	(ti_on_agent_spawn, 0, 0, [],
 	[
-     		(store_trigger_param_1, ":agent"),
+ 		(store_trigger_param_1, ":agent"),
 	 	(agent_get_troop_id, ":trp", ":agent"), 
 
 	 	(eq, ":trp", "trp_ent"), # a ent is spawned!
@@ -2298,39 +2298,58 @@ mission_templates = [ # not used in game
 	]),
 
 	# initial conditions: 1 or 2 ents
-	(0, 0, ti_once,[],[
-			(assign,"$battle_won",0),
-			(assign,"$defender_reinforcement_stage",0),
-			(assign,"$attacker_reinforcement_stage",0),
-			(assign,"$g_presentation_battle_active", 0),
-			
-			# start with 1 or 2 ents
-			(store_current_scene, ":cur_scene"),
-			(modify_visitors_at_site, ":cur_scene"), 
-			(reset_visitors),
-			#(set_visitor,0,"trp_player"),
-			
-			(store_random_in_range,":n_ents",-1,3),(val_max,":n_ents",1), #  2 ents once in four
-			(add_visitors_to_current_scene,4,"trp_ent",":n_ents"), # add the (1 or 2) ent(s) to start with
-			#(call_script, "script_place_player_banner_near_inventory"),
-			(call_script, "script_combat_music_set_situation_with_culture"),
-			(display_message, "@You have a clear perception of great imminent danger, from all around you!",color_bad_news),
-			
-			]),
+	(0, 0, ti_once,[
+
+      (assign,"$battle_won",0),
+      (assign,"$defender_reinforcement_stage",0),
+      (assign,"$attacker_reinforcement_stage",0),
+      (assign,"$g_presentation_battle_active", 0),
+      
+      # start with 1 or 2 ents
+      #(store_current_scene, ":cur_scene"),
+      #(modify_visitors_at_site, ":cur_scene"), 
+      #(reset_visitors),
+      #(set_visitor,0,"trp_player"),
+      
+      (store_random_in_range,":n_ents",-1,3),(val_max,":n_ents",1), #  2 ents once in four
+      (try_for_range, ":unused", 0, ":n_ents"),
+        (spawn_agent, "trp_ent"),
+        (agent_set_team, reg0, 0),
+      (try_end),
+
+      #(add_visitors_to_current_scene,4,"trp_ent",":n_ents"), # add the (1 or 2) ent(s) to start with
+      #(call_script, "script_place_player_banner_near_inventory"),
+      (call_script, "script_combat_music_set_situation_with_culture"),
+      (display_message, "@You have a clear perception of great imminent danger, from all around you!",color_bad_news),
+
+
+    ],[]),
+
+
 	(ti_before_mission_start, 0, 0, [],
 			[(team_set_relation, 1, 0, -1),
 			(team_set_relation, 1, 2, -1)]),
-	# add new ents from time to time
-	(30,0,0, [], [
-			(store_random_in_range,":d100",1,101),
-			(lt,":d100", 10), #  5% of the times...
-			(this_or_next|lt,":d100",8), # 8%: every 35 secs an ent appears anyway
-			(gt,"$g_fangorn_rope_pulled",10), # or an ent appears at cost of 10 points of 
-			(val_sub,"$g_fangorn_rope_pulled",10),
-			(val_max,"$g_fangorn_rope_pulled",0),
-			#(store_random_in_range,":entry_point",2,5),
-			(add_visitors_to_current_scene, 4, "trp_ent", 1),
-			(display_message, "@New ent reached battle scene...")]),
+	
+  # add new ents from time to time
+	(30,0,0, 
+
+    [
+      (store_random_in_range,":d100",1,101),
+      (lt,":d100", 10), #  5% of the times...
+      (this_or_next|lt,":d100",8), # 8%: every 35 secs an ent appears anyway
+      (gt,"$g_fangorn_rope_pulled",10), # or an ent appears at cost of 10 points of 
+      (val_sub,"$g_fangorn_rope_pulled",10),
+      (val_max,"$g_fangorn_rope_pulled",0),
+      #(store_random_in_range,":entry_point",2,5),
+      #(add_visitors_to_current_scene, 4, "trp_ent", 1),
+
+      (spawn_agent, "trp_ent"),
+      (agent_set_team, reg0, 0),
+
+      (display_message, "@New ent reached battle scene...")
+
+    ], []),
+
 	(1, 4, ti_once, [(main_hero_fallen)],[
 			(assign, "$pin_player_fallen", 1),
 			(str_store_string, s5, "str_retreat"),
@@ -2339,6 +2358,7 @@ mission_templates = [ # not used in game
 			(set_mission_result,-1),
 			(call_script, "script_count_mission_casualties_from_agents"),
 			(finish_mission,0)]),
+
 	#common_battle_inventory,
 ]),
 ( "assasins_attack",mtf_battle_mode,-1,#TLD - assasins attack begin (Kolba)
