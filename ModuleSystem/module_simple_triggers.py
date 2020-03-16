@@ -110,7 +110,15 @@ simple_triggers = [
   ]),
   
   # (6) Music,
-  (1,[(map_free),(call_script, "script_music_set_situation_with_culture", mtf_sit_travel),]),
+  (1,[(map_free),(call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
+
+# Piggyback for Horse Archer AI option
+  (try_begin),
+    (neq, "$options_horse_archer_ai", "$field_ai_horse_archer"),
+    (assign, "$field_ai_horse_archer", "$options_horse_archer_ai"), # Used to keep track of player choice.
+  (try_end),
+
+    ]),
   
   # (7) Pay day, every four days here
   (24.1 * 4,[ (call_script, "script_make_player_pay_upkeep")]),
@@ -1351,38 +1359,9 @@ simple_triggers = [
       (try_end),
   ]),
   
-  # (41) Spawn some bandits & quest party templates
+  # (41) Spawn some bandits 
   (24,[
       (call_script, "script_spawn_bandits"), ## Kham Edit - 24 hours instead of 36, to give player a bit more bandits to fight pre-war.
-      
-      (try_begin),
-        (check_quest_active, "qst_eliminate_patrols"),
-        (neg|check_quest_concluded, "qst_eliminate_patrols"),
-        (quest_get_slot, ":target", "qst_eliminate_patrols", slot_quest_target_party_template),
-        (quest_get_slot, ":center", "qst_eliminate_patrols", slot_quest_target_center),
-        (gt, ":center", 0),
-        (set_spawn_radius, 5),
-        (spawn_around_party, ":center", ":target"),
-        (str_store_party_name, s2, reg0),
-        (str_store_party_name, s3, ":center"),
-        (store_random_in_range, ":random", 0, 100), #40% chance for the message to come up, just to make it less spammy.
-        (try_begin),
-          (le, ":random", 40),
-          (display_message, "@Your scouts have reported that there is a {s2} near {s3}."),
-        (try_end),
-      (try_end),
-      
-      # Looters for Deal With Looters Quest
-      (try_begin),
-        (check_quest_active, "qst_deal_with_looters"),
-        (neg|check_quest_concluded, "qst_deal_with_looters"),
-        (quest_get_slot, ":party_template", "qst_deal_with_looters", slot_quest_target_party_template),
-        (set_spawn_radius, 7),
-        (spawn_around_party, "p_main_party", ":party_template"),
-        (party_set_flags, reg0, pf_quest_party, 1),
-        (party_set_faction, reg0, "fac_neutral"), #Kham: so they don't get into fights
-        #(display_message, "@DEBUG: Looter party spawned"),
-      (try_end),
       
   ]),
   
@@ -3805,6 +3784,59 @@ simple_triggers = [
   ] or [ ]) + [
 
 ]),
+
+# Quest Helper Trigger 
+
+  
+(12, 
+
+  [
+    
+    (try_begin),
+      (check_quest_active, "qst_eliminate_patrols"),
+      (neg|check_quest_concluded, "qst_eliminate_patrols"),
+      (quest_get_slot, ":target", "qst_eliminate_patrols", slot_quest_target_party_template),
+      (quest_get_slot, ":center", "qst_eliminate_patrols", slot_quest_target_center),
+      (gt, ":center", 0),
+      (set_spawn_radius, 5),
+      (spawn_around_party, ":center", ":target"),
+      (str_store_party_name, s2, reg0),
+      (str_store_party_name, s3, ":center"),
+      (store_random_in_range, ":random", 0, 100), #40% chance for the message to come up, just to make it less spammy.
+      (try_begin),
+        (le, ":random", 40),
+        (display_message, "@Your scouts have reported that there is a {s2} near {s3}."),
+      (try_end),
+    (try_end),
+      
+    # Looters for Deal With Looters Quest
+    (try_begin),
+      (check_quest_active, "qst_deal_with_looters"),
+      (neg|check_quest_concluded, "qst_deal_with_looters"),
+      (quest_get_slot, ":party_template", "qst_deal_with_looters", slot_quest_target_party_template),
+      (set_spawn_radius, 7),
+      (spawn_around_party, "p_main_party", ":party_template"),
+      (party_set_flags, reg0, pf_quest_party, 1),
+      (party_set_faction, reg0, "fac_neutral"), #Kham: so they don't get into fights
+      #(display_message, "@DEBUG: Looter party spawned"),
+    (try_end),
+
+    (try_begin),
+      (check_quest_active, "qst_blank_quest_17"),
+      (neg|check_quest_concluded, "qst_blank_quest_17"),
+      (quest_get_slot, ":target_template", "qst_blank_quest_17", slot_quest_target_party_template),
+      (quest_get_slot, ":target_troop", "qst_blank_quest_17", slot_quest_target_troop),
+      (set_spawn_radius, 7),
+      (spawn_around_party, "p_main_party", ":target_template"),
+      (assign, ":spawned", reg0),
+      (party_set_flags, ":spawned", pf_quest_party, 1),
+      (party_set_faction, ":spawned", "fac_neutral"), #Kham: so they don't get into fights
+      (store_random_in_range, ":rand", 8, 15),
+      (party_force_add_members, ":spawned", ":target_troop", ":rand"),
+    (try_end),
+      
+]),
+
   
   
   ##############################################
@@ -3826,7 +3858,7 @@ simple_triggers = [
   #(999,[]), # Replaced by Battle Encounter Effects
   
   #trigger reserved for future save game compatibility
-  (999,[]), 
+  #(999,[]),  # Replaced by Quest Helper Spawns
   #trigger reserved for future save game compatibility
   (999,[]),
   #trigger reserved for future save game compatibility

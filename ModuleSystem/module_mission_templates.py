@@ -2131,7 +2131,11 @@ mission_templates = [ # not used in game
     [ (ti_on_agent_spawn,0,0,[],[(store_trigger_param_1, ":agent_no"),
 								(agent_get_troop_id, ":troop_no", ":agent_no"),
 								(neq, ":troop_no", "trp_player"),
-								(agent_set_team, ":agent_no", 1)]),
+								(agent_set_team, ":agent_no", 1),
+                ] + (is_a_wb_mt==1 and [
+                (agent_set_is_alarmed, ":agent_no", 1),
+                ] or []) + [
+                ]),
       (ti_before_mission_start, 0, 0,[],[(team_set_relation, 1, 0, 0),(team_set_relation, 2, 0, 0),  #MV: both player and bandits neutral to guards
         #remove cabbage guard spawn points
         (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
@@ -2160,6 +2164,18 @@ mission_templates = [ # not used in game
            (jump_to_menu, "mnu_town_bandits_succeeded"),
          (try_end),
          (finish_mission)]),
+
+    (1, 0, 0, 
+      [
+        (assign,"$telling_counter",0),
+        (set_show_messages, 0),
+          (try_begin),
+            (lt, "$telling_counter", 4),
+            (team_give_order, 1, grc_everyone, mordr_charge),
+          (try_end),
+        (set_show_messages, 1),
+      ], 
+      []),
 ]),
 ( "town_brawl",0,-1,
   "Town brawl with walkers",

@@ -1941,6 +1941,7 @@ scripts = [
 	(assign, "$bright_nights",1), #Kham - Brighter Nights
 	(assign, "$field_ai_lord",1), #Kham - Battlefield Lord AI
 	(assign, "$field_ai_horse_archer",1), #Kham - Battlefield Horse Archer AI
+	(assign, "$options_horse_archer_ai", "$field_ai_horse_archer"), # Used to keep track of player choice.
 	(assign, "$field_ai_archer_aim",1), #Kham - Battlefield Archer Aim
 	(assign, "$advanced_siege_ai",1), #Kham - Advanced Siege AI - default is ON
 	(assign, "$pref_cam_mode", 0), #Kham - Camera Preference - Default is Default
@@ -24841,7 +24842,7 @@ command_cursor_scripts = [
 	(assign, reg59, ":xp_reward"),			#quest_xp_reward
 	(assign, reg60, ":gold_reward"),		#quest_gold_reward
 	(assign, reg61, ":rank_reward"),		#quest_rank_reward
-	(assign, reg62, 20),					#quest_expiration_days
+	(assign, reg62, 30),					#quest_expiration_days
 	(assign, reg63, 15),					#quest_dont_give_again_period
 	(assign, reg64, ":type"),				#quest_target_party_template - analog for troop type
 
@@ -24882,7 +24883,7 @@ command_cursor_scripts = [
 	(assign, reg59, ":xp_reward"),			#quest_xp_reward
 	(assign, reg60, ":gold_reward"),		#quest_gold_reward
 	(assign, reg61, ":rank_reward"),		#quest_rank_reward
-	(assign, reg62, 20),					#quest_expiration_days
+	(assign, reg62, 30),					#quest_expiration_days
 	(assign, reg63, 15),					#quest_dont_give_again_period
 
 ]),

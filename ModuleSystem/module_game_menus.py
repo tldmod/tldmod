@@ -4221,7 +4221,7 @@ game_menus = [
 	("cheat_raise_troops",[],"Raise Troops",[(assign,"$cheat_imposed_quest","qst_raise_troops")]),
 	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
 	("cheat_attack_refugees",[],"Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),
-	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
+	("night_bandits",[],"Night Bandits",[(assign,"$cheat_imposed_quest","qst_deal_with_night_bandits")]),
 	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
 	("scout_camp", [], "Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
 	("defend_village", [], "Defend Village", [(assign, "$cheat_imposed_quest", "qst_defend_village")]),
@@ -11071,7 +11071,9 @@ game_menus = [
     ("horse_archer_field_ai",[(str_clear, s7),(try_begin),(neq, "$field_ai_horse_archer", 1),(str_store_string, s7, "@OFF"),
 								(else_try),(str_store_string, s7, "@ON"),(try_end),
         ],"Horse Archers Have Improved Battlefield AI:  {s7}",[
-        (store_sub, "$field_ai_horse_archer", 1, "$field_ai_horse_archer"),(val_clamp, "$field_ai_horse_archer", 0, 2), (jump_to_menu, "mnu_auto_field_ai")]),
+        (store_sub, "$field_ai_horse_archer", 1, "$field_ai_horse_archer"),(val_clamp, "$field_ai_horse_archer", 0, 2), 
+		(assign, "$options_horse_archer_ai", "$field_ai_horse_archer"), # Used to keep track of player choice.
+        (jump_to_menu, "mnu_auto_field_ai")]),
 
    ("vs_orcs_field_ai",[(str_clear, s7),(try_begin),(neq, "$field_ai_archer_aim", 1),(str_store_string, s7, "@OFF"),
 								(else_try),(str_store_string, s7, "@ON"),(try_end),
