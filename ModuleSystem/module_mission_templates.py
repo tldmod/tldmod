@@ -2241,8 +2241,8 @@ mission_templates = [ # not used in game
 	(0,mtef_defenders|mtef_team_0,0,0,0,[]),
 	(1,mtef_defenders|mtef_team_0,0,0,0,[]),
 
-	(4,mtef_attackers|mtef_team_1,0,0,1,[]), 
-	(4,mtef_attackers|mtef_team_1,0,0,12,[]), # troops
+	(4,mtef_attackers|mtef_team_1,0,0,6,[]), 
+	(4,mtef_attackers|mtef_team_1,0,0,6,[]), # troops
 
      	(4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),
      	(4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,0,[]),

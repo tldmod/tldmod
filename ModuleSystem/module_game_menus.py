@@ -4056,21 +4056,6 @@ game_menus = [
 	  (try_begin),
 	    (lt,":chance",60),
 		(call_script,"script_fangorn_fight_ents"),
-		(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien1"),       
-		#(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
-		(val_max,"$g_fangorn_rope_pulled", 21), # this also means ents gets a max reinforcement of at least 3 
-		(assign, "$g_encountered_party", "p_legend_fangorn"), # just so that the find music script dosn't go nuts
-        	(set_jump_mission,"mt_fangorn_battle"),
-        	(jump_to_scene,":scene_to_use" ),
-        
-		(set_battle_advantage, 0),
-        	(assign, "$g_battle_result", 0),
-        	(assign, "$g_next_menu", "mnu_fangorn_battle_debrief"),		
-        	(jump_to_menu, "mnu_battle_debrief"),
-        	(assign, "$g_mt_mode", vba_normal),
-		(assign, "$cant_leave_encounter", 1),
-        	(change_screen_mission),
-
 	(else_try),
 		(val_add,"$g_fangorn_rope_pulled", 30), 
 		(val_clamp,"$g_fangorn_rope_pulled", 0,75), 

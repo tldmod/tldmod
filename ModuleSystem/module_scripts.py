@@ -1303,32 +1303,21 @@ scripts = [
 #script_fangorn_fight_ents
 # Script: start a battle with wandering ents  (mtarini)
 ("fangorn_fight_ents",[
-	#(assign, ":ent_troop", "trp_ent"), # should be ents!
-	#(call_script, "script_setup_random_scene"),
-	(set_jump_mission,"mt_fangorn_battle"),
-	(jump_to_scene, "scn_random_scene_plain_forest"),
-	(modify_visitors_at_site, "scn_random_scene_plain_forest"),
+	(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien1"),       
+	#(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
+	(val_max,"$g_fangorn_rope_pulled", 21), # this also means ents gets a max reinforcement of at least 3 
+	(assign, "$g_encountered_party", "p_legend_fangorn"), # just so that the find music script dosn't go nuts
 	(reset_visitors),
+	(modify_visitors_at_site, ":scene_to_use"),
 	(set_party_battle_mode),
-	#(store_random_in_range,":n_ents1",1,5),
-	#(store_random_in_range,":n_ents2",1,5),
-	#(store_add,":n_ents",":n_ents1",":n_ents2"), # 2d5 ents!  
-	#(set_visitor, 3, ":ent_troop"),
-	#(set_visitor, 2, ":ent_troop"),
-	#(set_visitors, 3, ":ent_troop", ":n_ents2"),
-	#(set_visitors, 16, ":ent_troop", ":n_ents2"),
-	#(set_visitors, 17, ":ent_troop", ":n_ents2"),
-	#(set_visitors, 0, ":ent_troop", ":n_ents2"),
-	#(set_visitors, 1, ":ent_troop", ":n_ents2"),
-	#(set_visitors, 2, "trp_farmer", "$qst_eliminate_bandits_infesting_village_num_villagers"),
+	(set_jump_mission,"mt_fangorn_battle"),
+	(jump_to_scene,":scene_to_use" ),
 	(set_battle_advantage, 0),
 	(assign, "$g_battle_result", 0),
-	#(set_jump_mission,"mt_fangorn_battle"),
-	#(display_message,"@You lead the exploration inside Fangorn forest..."),
-	(assign, "$g_next_menu", "mnu_fangorn_battle_debrief"),        
-	(jump_to_menu, "mnu_battle_debrief"),
 	(assign, "$g_mt_mode", vba_normal),
 	(assign, "$cant_leave_encounter", 1),
+	(assign, "$g_next_menu", "mnu_fangorn_battle_debrief"),        
+	(jump_to_menu, "mnu_battle_debrief"),
 	(change_screen_mission),
 ]),
 #############################  TLD FANGORN SCRIPTS  END ##############################
