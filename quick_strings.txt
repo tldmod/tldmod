@@ -1,4 +1,4 @@
-1642
+1614
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -34,27 +34,6 @@ qstr_Gauntlet_wave:_1 Gauntlet_wave:_1
 qstr_Gauntlet_wave:_{reg1 Gauntlet_wave:_{reg1}
 qstr_Remain_in_retirement Remain_in_retirement.
 qstr_Go_back_to_the_adven Go_back_to_the_adventuring.
-qstr_You_have_retired_at_ You_have_retired_at_level_{reg4}_after_{reg5}_days_of_adventuring.
-qstr_Effect_on_Score Effect_on_Score
-qstr_Settlements_owned_by Settlements_owned_by_you:_{reg0}
-qstr_{reg0?+:}{reg0} {reg0?+:}{reg0}
-qstr_Friendly_Settlements Friendly_Settlements:_{reg0}
-qstr_Hostile_Settlements: Hostile_Settlements:_{reg0}
-qstr_{reg0} {reg0}
-qstr_Friendly_Lords:_{reg Friendly_Lords:_{reg0}
-qstr_Enemy_Lords:_{reg0} Enemy_Lords:_{reg0}
-qstr_Victories:_{reg0} Victories:_{reg0}
-qstr_Defeats:_{reg0} Defeats:_{reg0}
-qstr_Quests_Completed:_{r Quests_Completed:_{reg0}
-qstr_Companions_Found:_{r Companions_Found:_{reg0}
-qstr_Companions_Lost/Depa Companions_Lost/Departed:_{reg0}
-qstr_Wealth:_{reg0}_denar Wealth:_{reg0}_denars
-qstr_Inventory:_{reg0}_de Inventory:_{reg0}_denars
-qstr_Experience:_{reg0} Experience:_{reg0}
-qstr_Days_Passed:_{reg0} Days_Passed:_{reg0}
-qstr_Difficulty:_{reg0}% Difficulty:_{reg0}%
-qstr_{reg3?+:}{reg0} {reg3?+:}{reg0}
-qstr_TOTAL_SCORE:_{reg0} TOTAL_SCORE:_{reg0}
 qstr_______ ______
 qstr_A_peaceful_village_n A_peaceful_village_not_far_from_Westfold...
 qstr_The_War_is_upon_Roha The_War_is_upon_Rohan!
@@ -642,6 +621,7 @@ qstr_{s3}{s1}{s0} {s3}{s1}{s0}
 qstr_{s3}{s2}{s0} {s3}{s2}{s0}
 qstr_{s1}_{s0} {s1},_{s0}
 qstr_{s1}_and_{s0} {s1}_and_{s0}
+qstr_{reg0} {reg0}
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
@@ -1556,10 +1536,6 @@ qstr_One_{s6}_left_the_pa One_{s6}_left_the_party.
 qstr_I_understand._I_will I_understand._I_will_stay_with_you._For_a_while.
 qstr_I_have_played_my_rol I_have_played_my_role_for_many_long_years,_for_many_lifetimes_of_mortal_men._This_war_is_for_Mankind_to_fight._I_will_leave_for_the_West_and_some_may_decide_to_follow_me.
 qstr_{reg1}_Veteran_Elves {reg1}_Veteran_Elves_decided_to_leave_your_party.
-qstr_You_chose_well_{sir/ You_chose_well,_{sir/madam}._My_lads_know_how_to_keep_their_word_and_earn_their_pay.
-qstr_Well_done_{sir/madam Well_done,_{sir/madam}._Keep_the_money_and_wine_coming_our_way,_and_there's_no_foe_in_Calradia_you_need_fear.
-qstr_We_are_at_your_servi We_are_at_your_service,_{sir/madam}._Point_us_in_the_direction_of_those_who_need_hurting,_and_we'll_do_the_rest.
-qstr_You_will_not_be_diss You_will_not_be_dissapointed_{sir/madam}._You_will_not_find_better_warriors_in_all_Calradia.
 qstr_What_an_amazing_feat What_an_amazing_feat_of_arms!
 qstr_Well_done! Well_done!
 qstr_Nice_legwork. Nice_legwork.
@@ -1602,11 +1578,7 @@ qstr_The_{s11}_of_{s10}_a The_{s11}_of_{s10}_asked_you_to_escort_some_{s12}_to_{
 qstr__Guards_slaughter_hi _Guards,_slaughter_him!
 qstr_Slaughter_him_for_fr Slaughter_him_for_fresh_human_meat!
 qstr_This_is_{s5}_Command This_is_{s5},_Commander.
-qstr_{s6}_This_place_and_ {s6}_This_place_and_the_surrounding_lands_belong_to_you_of_course,_my_{lord/lady}.
-qstr_{s6}_This_place_and_t {s6}_This_place_and_the_surrounding_lands_belong_to_{s7}_of_{s8}.
-qstr_{s3}_and_{s5} {s3}_and_{s5}
-qstr_{s3}_{s5} {s3},_{s5}
-qstr_{reg20?We_mostly_pro {reg20?We_mostly_produce_{s5}_here:We_don't_produce_much_here_these_days}._If_you_would_like_to_learn_more,_you_can_speak_with_our_{reg4?guildmaster:village_elder}._He_is_nearby,_right_over_there.
+qstr_{s6}_This_place_and_ {s6}_This_place_and_the_surrounding_lands_belong_to_{s7}_of_{s8}.
 qstr_Hey_scum!_I_can_fix_ Hey_scum!_I_can_fix_that_jaw_of_yours.
 qstr_Watch_where_you_re_g Watch_where_you're_going,_maggot!
 qstr_I_don_t_like_your_fa I_don't_like_your_face!_I_think_it_needs_some_fixing.

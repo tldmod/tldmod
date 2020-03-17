@@ -497,11 +497,6 @@ runaway_serf_talk_again_return_2
 mayor_deliver_wine
 mayor_pretalk
 mayor_deliver_wine_incomplete
-mercenary_tavern_talk
-mercenary_after_recruited
-mercenary_after_recruited_2
-mercenary_tavern_talk_hire
-tavern_mercenary_cant_lead
 trainer_pretalk
 trainer_talk
 trainer_combat_begin
@@ -608,10 +603,6 @@ merchant_gossip
 town_dweller_talk
 town_dweller_ask_fugitive
 town_dweller_ask_info
-town_dweller_ask_situation
-town_dweller_poor
-town_dweller_poor_paid
-town_dweller_poor_not_paid
 town_dweller_ask_rumor
 town_dweller_brawl
 town_dweller_brawl_confirm
