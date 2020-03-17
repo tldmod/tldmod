@@ -803,55 +803,16 @@ You can press TAB anytime to leave the tutorial."),
 
 
 # Retirement Texts: s7=village name; s8=castle name; s9=town name #No retirement in TLD
-  # ("retirement_text_1", "Only too late do you realise that your money won't last.\
- # It doesn't take you long to fritter away what little you bothered to save,\
- # and you fare poorly in several desperate attempts to start adventuring again.\
- # You end up a beggar in {s9}, living on alms and the charity of the church."),
-  # ("retirement_text_2", "Only too late do you realise that your money won't last.\
- # It doesn't take you long to fritter away what little you bothered to save.\
- # Once every denar has evaporated in your hands you are forced to start a life of crime in the backstreets of {s9},\
- # using your skills to eke out a living robbing coppers from women and poor townsmen."),
-  # ("retirement_text_3", "Only too late do you realise that your money won't last.\
- # It doesn't take you long to fritter away what little you bothered to save,\
- # and you end up a penniless drifter, going from tavern to tavern\
- # blagging drinks from indulgent patrons by regaling them with war stories that no one ever believes."),
-  # ("retirement_text_4", "The silver you've saved doesn't last long,\
- # but you manage to put together enough to buy some land near the village of {s7}.\
- # There you become a free farmer, and you soon begin to attract potential {wives/husbands}.\
- # In time the villagers come to treat you as their local hero.\
- # You always receive a place of honour at feasts, and your exploits are told and retold in the pubs and taverns\
- # so that the children may keep a memory of you for ever and ever."),
-  # ("retirement_text_5", "The silver you've saved doesn't last long,\
- # but it's enough to buy a small tavern in {s9}. Although the locals are wary of you at first,\
- # they soon accept you into their midst. In time your growing tavern becomes a popular feasthall and meeting place.\
- # People come for miles to eat or stay there due to your sheer renown and the epic stories you tell of your adventuring days."),
-  # ("retirement_text_6", "You've saved wisely throughout your career,\
- # and now your silver and your intelligence allow you to make some excellent investments to cement your future.\
- # After buying several shops and warehouses in {s9}, your shrewdness turns you into one of the most prominent merchants in town,\
- # and you soon become a wealthy {man/woman} known as much for your trading empire as your exploits in battle."),
-  # ("retirement_text_7", "As a landed noble, however minor, your future is all but assured.\
- # You settle in your holdfast at {s7}, administrating the village and fields,\
- # adjudicating the local courts and fulfilling your obligations to your liege lord.\
- # Occasionally your liege calls you to muster and command in his campaigns, but these stints are brief,\
- # and you never truly return to the adventuring of your younger days. You have already made your fortune.\
- # With your own hall and holdings, you've few wants that your personal wealth and the income of your lands cannot afford you."),
-  # ("retirement_text_8", "There is no question that you've done very well for yourself.\
- # Your extensive holdings and adventuring wealth are enough to guarantee you a rich and easy life for the rest of your days.\
- # Retiring to your noble seat in {s8}, you exchange adventure for politics,\
- # and you soon establish yourself as a considerable power in your liege lord's kingdom.\
- # With intrigue to busy yourself with, your own forests to hunt, a hall to feast in and a hundred fine war stories to tell,\
- # you have little trouble making the best of the years that follow."),
-  # ("retirement_text_9", "As a reward for your competent and loyal service,\
- # your liege lord decrees that you be given a hereditary title, joining the major nobility of the realm.\
- # Soon you complete your investitute as baron of {s7}, and you become one of your liege's close advisors\
- # and adjutants. Your renown garners you much subtle pull and influence as well as overt political power.\
- # Now you spend your days playing the games of power, administering your great fiefs,\
- # and recounting the old times of adventure and glory."),
-  # ("retirement_text_10", "Though you started from humble beginnings, your liege lord holds you in high esteem,\
- # and a ripple of shock passes through the realm when he names you to the hereditary title of {count/countess} of {s9}.\
- # Vast fiefs and fortunes are now yours to rule. You quickly become your liege's most trusted advisor,\
- # almost his equal and charged with much of the running of his realm,\
- # and you sit a throne in your own splendourous palace as one of the most powerful figures in Calradia."),
+  ("retirement_text_1", "Unused"),
+  ("retirement_text_2", "Unused"),
+  ("retirement_text_3", "Unused"),
+  ("retirement_text_4", "Unused"),
+  ("retirement_text_5", "Unused"),
+  ("retirement_text_6", "Unused"),
+  ("retirement_text_7", "Unused"),
+  ("retirement_text_8", "Unused"),
+  ("retirement_text_9", "Unused"),
+  ("retirement_text_10", "Unused"),
 
 
 #NPC companion changes begin
@@ -1501,60 +1462,60 @@ You can press TAB anytime to leave the tutorial."),
 
 #Beginning of game comments
 
-# ("comment_intro_liege_affiliated", "I am told that you are pledged to one of the pretenders who disputes my claim to the crown of Calradia. But we may still talk."),
+("comment_intro_liege_affiliated", "Unused"),
 
-# ("comment_intro_famous_liege", "Your fame runs before you! Perhaps it is time that you sought a liege worthy of your valor."),
-# ("comment_intro_famous_martial", "Your fame runs before you! Perhaps we shall test each other's valor in a tournament, or on the battlefield!"),
-# ("comment_intro_famous_badtempered", "I've heard of you. Well, I'm not one for bandying words, so if you have anything to say, out with it."),
-# ("comment_intro_famous_pitiless", "I know your name. It strikes fear in men's hearts. That is good. Perhaps we should speak together, some time."),
-# ("comment_intro_famous_cunning", "Ah, yes. At last we meet. You sound like a good {man/woman} to know. Let us speak together, from time to time."),
-# ("comment_intro_famous_sadistic", "I know your name -- and from what I hear, I'll warrant that many a grieving widow knows too. But that is no concern of mine."),
-# ("comment_intro_famous_goodnatured", "I've heard of you! It's very good to finally make your acquaintance."),
-# ("comment_intro_famous_upstanding", "I know your name. They say you are a most valiant warrior. I can only hope that your honour and mercy matches your valor."),
+("comment_intro_famous_liege", "Unused"),
+("comment_intro_famous_martial", "Unused"),
+("comment_intro_famous_badtempered", "Unused"),
+("comment_intro_famous_pitiless", "Unused"),
+("comment_intro_famous_cunning", "Unused"),
+("comment_intro_famous_sadistic", "Unused"),
+("comment_intro_famous_goodnatured", "Unused"),
+("comment_intro_famous_upstanding", "Unused"),
 
-# ("comment_intro_noble_liege", "I see that you carry a nobleman's banner, although I do not recognize the device. Know that I am always looking for good men to fight for me, once they prove themselves to be worthy of my trust."),
-# ("comment_intro_noble_martial", "I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps one day we shall test each other's valor in a tournament, or on the battlefield!"),
-# ("comment_intro_noble_badtempered", "I don't recognize the device on your banner. No doubt another foreigner come to our lands, as if we didn't have so many here already."),
-# ("comment_intro_noble_pitiless", "I see that you carry a nobleman's banner, but I do not recognize the device. Another vulture come to grow fat on the leftovers of war, no doubt!"),
-# ("comment_intro_noble_cunning", "I see that you carry a nobleman's banner, but I do not recognize the device. Still, it is always worthwhile to make the acquaintance of {men/women} who may one day prove themselves to be great warriors."),
-# ("comment_intro_noble_sadistic", "I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps you are the bastard {son/daughter} of a puffed-up cattle thief? Or perhaps you stole it?"),
-# ("comment_intro_noble_goodnatured", "I see that you carry a nobleman's banner, but I do not recognize the device. Forgive my ignorance, {sir/madame}! It is good to make your acquaitance."),
-# ("comment_intro_noble_upstanding", "I see that you carry a nobleman's banner, but I do not recognize the device. No doubt you have come to Calradia in search of wealth and glory. If this indeed is the case, then I only ask that you show mercy to those poor souls caught in the path of war."),
+("comment_intro_noble_liege", "Unused"),
+("comment_intro_noble_martial", "Unused"),
+("comment_intro_noble_badtempered", "Unused"),
+("comment_intro_noble_pitiless", "Unused"),
+("comment_intro_noble_cunning", "Unused"),
+("comment_intro_noble_sadistic", "Unused"),
+("comment_intro_noble_goodnatured", "Unused"),
+("comment_intro_noble_upstanding", "Unused"),
 
-# ("comment_intro_common_liege", "You may be of common birth, but know that I am always looking for good men to fight for me, if they can prove themselves to be worthy of my trust."),
-# ("comment_intro_common_martial", "Perhaps you are not of gentle birth, but if you prove yourself a {man/woman} of valor, then I would be pleased to try my strength against yours in the tournament or on the battlefield."),
-# ("comment_intro_common_badtempered", "Speak quickly, if you have anything to say, for I have no time to be bandying words with common soldiers of fortune."),
-# ("comment_intro_common_pitiless", "You have the look of a mercenary, another vulture come to grow fat on the misery of this land."),
-# ("comment_intro_common_cunning", "Well... I have not heard of you, but you have the look of a {man/woman} who might make something of {himself/herself}, some day."),
-# ("comment_intro_common_sadistic", "Normally I cut the throats of impudent commoners who barge into my presence uninvited, but I am in a good mood today."),
-# ("comment_intro_common_goodnatured", "Well, you look like a good enough sort."),
-# ("comment_intro_common_upstanding", "Peace to you, and always remember to temper your valor with mercy, your courage with honour."),
+("comment_intro_common_liege", "Unused"),
+("comment_intro_common_martial", "Unused"),
+("comment_intro_common_badtempered", "Unused"),
+("comment_intro_common_pitiless", "Unused"),
+("comment_intro_common_cunning", "Unused"),
+("comment_intro_common_sadistic", "Unused"),
+("comment_intro_common_goodnatured", "Unused"),
+("comment_intro_common_upstanding", "Unused"),
 
 
 #Actions vis-a-vis civilians
-  # ("comment_you_raided_my_village_enemy_benevolent",    "You have attacked innocent farmers under my protection in the village of {s51}.  I will punish you for your misdeeds!"), 
-  # ("comment_you_raided_my_village_enemy_spiteful",      "You have raided my village of {s51}, destroying my property and killing the tenants. I will take my compensation in blood!"), 
-  # ("comment_you_raided_my_village_enemy_coldblooded",   "You have raided my village of {s51}, destroying my property and killing the tenants. I will make you think twice before you disrupt my revenues like that again."), 
-  # ("comment_you_raided_my_village_enemy",               "You have raided my village of {s51}, destroying my property and killing tenants under my protection. You will pay the price for your crime!"), 
-  # ("comment_you_raided_my_village_unfriendly_spiteful", "You have raided my village of {s51}. Do it again and I'll gut you like a fish."),
-  # ("comment_you_raided_my_village_friendly",            "You have raided my village of {s51}. This will place a grave strain on our friendship."),
-  # ("comment_you_raided_my_village_default",             "You have raided my village of {s51}. If you continue to behave this way, we may soon come to blows."),
+  ("comment_you_raided_my_village_enemy_benevolent",    "Unused"), 
+  ("comment_you_raided_my_village_enemy_spiteful",      "Unused"), 
+  ("comment_you_raided_my_village_enemy_coldblooded",   "Unused"), 
+  ("comment_you_raided_my_village_enemy",              "Unused"), 
+  ("comment_you_raided_my_village_unfriendly_spiteful", "Unused"), 
+  ("comment_you_raided_my_village_friendly",            "Unused"), 
+  ("comment_you_raided_my_village_default",             "Unused"), 
 
-  # ("comment_you_robbed_my_village_enemy_coldblooded", "You have robbed my tenants in the village of {s51}. I take that as a personal insult."), 
-  # ("comment_you_robbed_my_village_enemy",             "You have robbed innocent farmers under my protection in the village of {s51}.  I will punish you for your misdeeds!"), 
-  # ("comment_you_robbed_my_village_friendly_spiteful", "I have heard that you pinched some food from my tenants at {s51}. Well, I'll not begrudge you a scrap or two, but keep in mind that I'm the one who must listen to their whining afterward."),
-  # ("comment_you_robbed_my_village_friendly",          "I have heard that you requisitioned supplies from my tenants at {s51}. I am sure that you would not have done so were you not desperately in need."),
-  # ("comment_you_robbed_my_village_default",           "You have robbed my tenants in the village of {s51}. If you continue to behave this way, we may soon come to blows."),
+  ("comment_you_robbed_my_village_enemy_coldblooded", "Unused"), 
+  ("comment_you_robbed_my_village_enemy",             "Unused"), 
+  ("comment_you_robbed_my_village_friendly_spiteful", "Unused"), 
+  ("comment_you_robbed_my_village_friendly",          "Unused"), 
+  ("comment_you_robbed_my_village_default",          "Unused"), 
 
-  # ("comment_you_accosted_my_caravan_enemy",          "You have been accosting caravans under my protection. But your trail of brigandage will soon come to an end."),
-  # ("comment_you_accosted_my_caravan_default",        "You have been accosting caravans under my protection. This sort of behavior must stop."),
+  ("comment_you_accosted_my_caravan_enemy",          "Unused"), 
+  ("comment_you_accosted_my_caravan_default",        "Unused"), 
 
-  # ("comment_you_helped_villagers_benevolent",                "I heard that you gave charity to my tenants in the village of {s51}. I had been neglectful in my duties as lord and protector, and I appreciate what you have done."),
-  # ("comment_you_helped_villagers_friendly_cruel",            "I heard that you gave charity to my tenants in the village of {s51}. I appreciate that you meant well, but I'd rather you not undercut my authority like that."),
-  # ("comment_you_helped_villagers_friendly",                  "I heard that you gave charity to my tenants in the village of {s51}. Times are hard, and I know that you mean well, so I will not object to you providing them with assistance."),
-  # ("comment_you_helped_villagers_unfriendly_spiteful",       "I heard that you gave charity to my tenants in the village of {s51}. As amusing as it is to see you grubbing for favor among my vassals, I would ask you to mind your own business."),
-  # ("comment_you_helped_villagers_cruel",                     "I heard that you gave charity to my tenants in the village of {s51}. As the peasants' lord and protector, it is most properly my duty to assist them in times of hardship. You may mean well, but your actions still undercut my authority. I would thank you to leave them alone."),
-  # ("comment_you_helped_villagers_default",                   "I heard that you gave charity to my tenants in the village of {s51}. Times are hard, and I know that you mean well, but try not to make a habit of it. I am their lord and protector, and I would rather not have them go looking to strangers for assistance."),
+  ("comment_you_helped_villagers_benevolent",                "Unused"), 
+  ("comment_you_helped_villagers_friendly_cruel",            "Unused"), 
+  ("comment_you_helped_villagers_friendly",                  "Unused"), 
+  ("comment_you_helped_villagers_unfriendly_spiteful",       "Unused"), 
+  ("comment_you_helped_villagers_cruel",                     "Unused"), 
+  ("comment_you_helped_villagers_default",                   "Unused"), 
 
 
 #Combat-related events
@@ -1566,9 +1527,9 @@ You can press TAB anytime to leave the tutorial."),
   ("comment_you_captured_a_castle_allied_unfriendly",          "I heard that you have besieged and taken {s51}. Whatever our differences in the past, I must offer you my congratulations."), 
   ("comment_you_captured_a_castle_allied",                     "I heard that you have besieged and taken {s51}. We have them on the run!"), 
 
-  # ("comment_you_captured_my_castle_enemy_spiteful",            "I hear that you have broken into my home at {s51}. I hope the dungeon is to your liking, as you will be spending much time there in the years to come."),
-  # ("comment_you_captured_my_castle_enemy_chivalrous",          "You hold {s51}, my rightful fief. I hope you will give me the chance to win it back!"),
-  # ("comment_you_captured_my_castle_enemy",                     "You have something that belongs to me -- {s51}. I will make you relinquish it."),
+  ("comment_you_captured_my_castle_enemy_spiteful",            "Unused"), 
+  ("comment_you_captured_my_castle_enemy_chivalrous",         "Unused"), 
+  ("comment_you_captured_my_castle_enemy",                     "Unused"), 
 
 ###Add some variation to these
   ("comment_we_defeated_a_lord_unfriendly_spiteful",           "I suppose you will want to drink to the memory of our victory over {s54}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces."), 
@@ -1659,10 +1620,10 @@ You can press TAB anytime to leave the tutorial."),
   ("comment_you_defeated_my_friend_enemy_spiteful",   "Your fame runs before you, {playername}. {s54} may have fallen for your tricks, but if you fight me, you'll find a me a much more slippery foe."), 
   ("comment_you_defeated_my_friend_enemy",            "They say that you have defeated {s54}. But I will be a truer test of your skill at arms."), 
 
-  # ("comment_you_captured_a_lord_allied_friendly_spiteful",   "I heard that you captured {s54}. I hope that you squeezed him for every denar."), 
-  # ("comment_you_captured_a_lord_allied_unfriendly_spiteful", "I heard that you captured {s54}. Your coffers must be well-bloated with ransom by now. Such a pity that money cannot transform a low-born cur into a gentleman!"), 
-  # ("comment_you_captured_a_lord_allied_chivalrous",          "I heard that you captured {s54}. Well done. I assume, of course, that he has been been treated with the honours due his rank."), 
-  # ("comment_you_captured_a_lord_allied",                     "I heard that you captured {s54}. Well done. His ransom must be worth quite something."), 
+  ("comment_you_captured_a_lord_allied_friendly_spiteful",   "Unused"), 
+  ("comment_you_captured_a_lord_allied_unfriendly_spiteful", "Unused"), 
+  ("comment_you_captured_a_lord_allied_chivalrous",          "Unused"), 
+  ("comment_you_captured_a_lord_allied",                     "Unused"), 
 
   ("comment_you_let_go_a_lord_allied_chivalrous",            "I heard that you captured {s54}, but then let him go. Such chivalry does a credit to our cause."),
   ("comment_you_let_go_a_lord_allied_upstanding",            "I heard that you captured {s54}, but then let him go. Well, that was an honourable course of action, if possibly also a dangerous one."),
@@ -1679,38 +1640,38 @@ You can press TAB anytime to leave the tutorial."),
 
 
 #Internal faction events
-  # ("comment_pledged_allegiance_allied_martial_unfriendly",             "I heard that you have pledged allegiance to our lord, {s54}. Pray do not disgrace us by behaving in a cowardly fashion."),
-  # ("comment_pledged_allegiance_allied_martial",                        "I heard that you have pledged allegiance to our lord, {s54}. I look forward to fighting alongside you against our foes."),
-  # ("comment_pledged_allegiance_allied_quarrelsome_unfriendly",         "I heard that you have pledged allegiance to our lord, {s54}. Bah. Do yourself a favor, and stay out of my way."),
-  # ("comment_pledged_allegiance_allied_quarrelsome",                    "I heard that you have pledged allegiance to our lord, {s54}. Fight hard against our foes, respect your betters, and don't cross me, and we'll get along fine."),
-  # ("comment_pledged_allegiance_allied_selfrighteous_unfriendly",       "I heard that you have pledged allegiance to our lord, {s54}. If I were he, I would not trust you to clean the sculleries."),
-  # ("comment_pledged_allegiance_allied_selfrighteous",                  "I heard that you have pledged allegiance to our lord, {s54}. Fight bravely and you will be well-rewarded. Betray us, and we shall make of you the kind of example that will not soon be forgotten."),
-  # ("comment_pledged_allegiance_allied_cunning_unfriendly",             "I heard that you have pledged allegiance to our lord, {s54}. I do not pretend to be happy about his decision, but perhaps it is better to have you inside our tent pissing out, than the other way around."),
-  # ("comment_pledged_allegiance_allied_cunning",                        "I heard that you have pledged allegiance to our lord, {s54}. That is good. The more skilled fighters we have with us in these troubled times, the better. I shall be watching your progress."),
-  # ("comment_pledged_allegiance_allied_debauched_unfriendly",           "I heard that you have pledged allegiance to our lord, {s54}. No doubt you will soon betray him, and I will have the pleasure of watching you die a traitor's death."),
-  # ("comment_pledged_allegiance_allied_debauched",                      "I heard that you have pledged allegiance to our lord, {s54}. Excellent... I am sure that you and I will become very good friends. But remember -- if you betray us, it will be the biggest mistake you will ever make."),
-  # ("comment_pledged_allegiance_allied_goodnatured_unfriendly",         "I heard that you have pledged allegiance to our lord, {s54}. Well, I can't say that I would have trusted you, but perhaps you deserve the benefit of the doubt."),
-  # ("comment_pledged_allegiance_allied_goodnatured",                    "I heard that you have pledged allegiance to our lord, {s54}. Good {man/woman}! Our lord is a noble soul, and rewards loyalty and valor with kindness and generosity."),
-  # ("comment_pledged_allegiance_allied_upstanding_unfriendly",          "I heard that you have pledged allegiance to our lord, {s54}. Alas, from what I know of you I fear that you will disgrace us, but I will be happy if you prove me wrong."),
-  # ("comment_pledged_allegiance_allied_upstanding",                     "I heard that you have pledged allegiance to our lord, {s54}. Fight against our foes with valor, but also with honour and compassion. A good name is as valuable as a sharp sword or a swift horse in affairs of arms."),
+  ("comment_pledged_allegiance_allied_martial_unfriendly",             "Unused"), 
+  ("comment_pledged_allegiance_allied_martial",                        "Unused"), 
+  ("comment_pledged_allegiance_allied_quarrelsome_unfriendly",         "Unused"), 
+  ("comment_pledged_allegiance_allied_quarrelsome",                    "Unused"), 
+  ("comment_pledged_allegiance_allied_selfrighteous_unfriendly",       "Unused"), 
+  ("comment_pledged_allegiance_allied_selfrighteous",                  "Unused"), 
+  ("comment_pledged_allegiance_allied_cunning_unfriendly",             "Unused"), 
+  ("comment_pledged_allegiance_allied_cunning",                        "Unused"), 
+  ("comment_pledged_allegiance_allied_debauched_unfriendly",           "Unused"), 
+  ("comment_pledged_allegiance_allied_debauched",                      "Unused"), 
+  ("comment_pledged_allegiance_allied_goodnatured_unfriendly",         "Unused"), 
+  ("comment_pledged_allegiance_allied_goodnatured",                    "Unused"), 
+  ("comment_pledged_allegiance_allied_upstanding_unfriendly",          "Unused"), 
+  ("comment_pledged_allegiance_allied_upstanding",                     "Unused"), 
 
 
-  # ("comment_our_king_granted_you_a_fief_allied_friendly_cruel",     "I heard that {s54} granted you {s51} as a fief. Don't forget -- spare the whip and spoil the peasant!"),
-  # ("comment_our_king_granted_you_a_fief_allied_friendly_cynical",   "I heard that {s54} granted you {s51} as a fief. I am glad to see you prosper -- but be careful. Men are vipers, envious and covetous of their neighbours' wealth. Stay close to me, and I'll watch your back."),
+  ("comment_our_king_granted_you_a_fief_allied_friendly_cruel",     "Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_friendly_cynical",   "Unused"), 
 
-  # ("comment_our_king_granted_you_a_fief_allied_friendly",              "I heard that {s54} granted you {s51} as a fief. May your new lands prosper."),
-  # ("comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding", "I heard that {s54} granted you {s51} as a fief. But keep in mind that pride goes before a fall."),
-  # ("comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful",   "I heard that {s54} granted you {s51} as a fief. I suspect, however, that fortune is only raising you up so as to humble you even more, when it casts you back into the dung from whence you came."),
-  # ("comment_our_king_granted_you_a_fief_allied_spiteful",              "I heard that {s54} granted you {s51} as a fief. Let's hope you are indeed deserving of our lord's favor."),
+  ("comment_our_king_granted_you_a_fief_allied_friendly",              "Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding", "Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful",   "Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_spiteful",             "Unused"), 
 
-  # ("comment_our_king_granted_you_a_fief_allied",                       "I heard that {s54} granted you {s51} as a fief. You seem to be doing very well for yourself."),
+  ("comment_our_king_granted_you_a_fief_allied",                       "Unused"), 
 
-  # ("comment_you_renounced_your_alliegance_enemy_friendly",             "I heard that you renounced your allegiance to our lord, {s54}. It grieves me that we must now meet on the field of battle."),
-  # ("comment_you_renounced_your_alliegance_friendly",                   "I heard that you renounced your allegiance to our lord, {s54}. Let us pray that we may not come to blows."),
-  # ("comment_you_renounced_your_alliegance_unfriendly_spiteful",        "I always had you figured for a traitor to {s54}, and now it seems I was proven right. I hope you are prepared to die a traitor's death!"),
-  # ("comment_you_renounced_your_alliegance_unfriendly_moralizing",      "I heard that you renounced your allegiance to our lord, {s54}. I am forced to consider you a traitor."),
-  # ("comment_you_renounced_your_alliegance_enemy",                      "I heard that you renounced your allegiance to our lord, {s54}. Well, it is the way of the world for old comrades to become enemies."),
-  # ("comment_you_renounced_your_alliegance_default",                    "I heard that you renounced your allegiance to our lord, {s54}. Well, that is your decision, but do not expect me to go easy on you when we meet on the battlefield."),
+  ("comment_you_renounced_your_alliegance_enemy_friendly",             "Unused"), 
+  ("comment_you_renounced_your_alliegance_friendly",                  "Unused"), 
+  ("comment_you_renounced_your_alliegance_unfriendly_spiteful",        "Unused"), 
+  ("comment_you_renounced_your_alliegance_unfriendly_moralizing",      "Unused"), 
+  ("comment_you_renounced_your_alliegance_enemy",                      "Unused"), 
+  ("comment_you_renounced_your_alliegance_default",                    "Unused"), 
 
 
   ("personality_archetypes",   "liege"),
