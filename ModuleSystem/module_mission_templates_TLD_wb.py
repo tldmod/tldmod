@@ -3545,81 +3545,81 @@ formations_triggers_moto = [ #4 triggers
   ]),
   
   #kludge formation superiority
-  (ti_on_agent_hit, 0, 0, [
-      (eq, "$tld_option_formations", 2),
-      (store_trigger_param, ":missile", 5),
-      (le, ":missile", 0),
-      (store_trigger_param, ":inflicted_agent_id", 1),
-      (agent_is_active,":inflicted_agent_id"),
-      (agent_is_human, ":inflicted_agent_id"),
-      (agent_is_alive, ":inflicted_agent_id"),
-    ], [
-      (store_trigger_param, ":inflicted_agent_id", 1),
-      (store_trigger_param, ":dealer_agent_id", 2),
-      (store_trigger_param, ":inflicted_damage", 3),
-      
-      (try_begin),
-        (neq, ":inflicted_agent_id", "$fplayer_agent_no"),
-        (neq, ":dealer_agent_id", "$fplayer_agent_no"),
-        
-        (agent_get_team, ":inflicted_team", ":inflicted_agent_id"),
-        (agent_get_division, ":inflicted_division", ":inflicted_agent_id"),
-        (store_add, ":slot", slot_team_d0_formation, ":inflicted_division"),
-        (team_get_slot, ":inflicted_formation", ":inflicted_team", ":slot"),
-        
-        (agent_get_team, ":dealer_team", ":dealer_agent_id"),
-        (agent_get_division, ":dealer_division", ":dealer_agent_id"),
-        (store_add, ":slot", slot_team_d0_formation, ":dealer_division"),
-        (team_get_slot, ":dealer_formation", ":dealer_team", ":slot"),
-        
-        (try_begin),
-          (eq, ":inflicted_formation", 0),
-          (neq, ":dealer_formation", 0),
-          
-          (store_add, ":slot", slot_team_d0_percent_in_place, ":dealer_division"),
-          (team_slot_ge, ":dealer_team", ":slot", 80),
-          
-          (store_add, ":slot", slot_team_d0_formation_space, ":dealer_division"),
-          (team_get_slot, ":spacing", ":dealer_team", ":slot"),
-          
-          (try_begin),
-            (eq, ":spacing", 0),
-            (val_mul, ":inflicted_damage", 6),
-          (else_try),
-            (eq, ":spacing", 1),
-            (val_mul, ":inflicted_damage", 5),
-          (else_try),
-            (val_mul, ":inflicted_damage", 4),
-          (try_end),
-          (val_div, ":inflicted_damage", 2),
-          
-        (else_try),
-          (neq, ":inflicted_formation", 0),
-          (eq, ":dealer_formation", 0),
-          
-          (store_add, ":slot", slot_team_d0_percent_in_place, ":inflicted_division"),
-          (team_slot_ge, ":inflicted_team", ":slot", 80),
-          
-          (store_add, ":slot", slot_team_d0_formation_space, ":inflicted_division"),
-          (team_get_slot, ":spacing", ":inflicted_team", ":slot"),
-          
-          (val_mul, ":inflicted_damage", 2),
-          (try_begin),
-            (eq, ":spacing", 0),
-            (val_div, ":inflicted_damage", 6),
-          (else_try),
-            (eq, ":spacing", 1),
-            (val_div, ":inflicted_damage", 5),
-          (else_try),
-            (val_div, ":inflicted_damage", 4),
-          (try_end),
-          
-          (val_max, ":inflicted_damage", 1),
-        (try_end),
-      (try_end),
-      
-      (set_trigger_result, ":inflicted_damage"),
-  ]),
+#  (ti_on_agent_hit, 0, 0, [
+#      (eq, "$tld_option_formations", 2),
+#      (store_trigger_param, ":missile", 5),
+#      (le, ":missile", 0),
+#      (store_trigger_param, ":inflicted_agent_id", 1),
+#      (agent_is_active,":inflicted_agent_id"),
+#      (agent_is_human, ":inflicted_agent_id"),
+#      (agent_is_alive, ":inflicted_agent_id"),
+#    ], [
+#      (store_trigger_param, ":inflicted_agent_id", 1),
+#      (store_trigger_param, ":dealer_agent_id", 2),
+#      (store_trigger_param, ":inflicted_damage", 3),
+#      
+#      (try_begin),
+#        (neq, ":inflicted_agent_id", "$fplayer_agent_no"),
+#        (neq, ":dealer_agent_id", "$fplayer_agent_no"),
+#        
+#        (agent_get_team, ":inflicted_team", ":inflicted_agent_id"),
+#        (agent_get_division, ":inflicted_division", ":inflicted_agent_id"),
+#        (store_add, ":slot", slot_team_d0_formation, ":inflicted_division"),
+#        (team_get_slot, ":inflicted_formation", ":inflicted_team", ":slot"),
+#        
+#        (agent_get_team, ":dealer_team", ":dealer_agent_id"),
+#        (agent_get_division, ":dealer_division", ":dealer_agent_id"),
+#        (store_add, ":slot", slot_team_d0_formation, ":dealer_division"),
+#        (team_get_slot, ":dealer_formation", ":dealer_team", ":slot"),
+#        
+#        (try_begin),
+#          (eq, ":inflicted_formation", 0),
+#          (neq, ":dealer_formation", 0),
+#          
+#          (store_add, ":slot", slot_team_d0_percent_in_place, ":dealer_division"),
+#          (team_slot_ge, ":dealer_team", ":slot", 80),
+#          
+#          (store_add, ":slot", slot_team_d0_formation_space, ":dealer_division"),
+#          (team_get_slot, ":spacing", ":dealer_team", ":slot"),
+#          
+#          (try_begin),
+#            (eq, ":spacing", 0),
+#            (val_mul, ":inflicted_damage", 6),
+#          (else_try),
+#            (eq, ":spacing", 1),
+#            (val_mul, ":inflicted_damage", 5),
+#          (else_try),
+#            (val_mul, ":inflicted_damage", 4),
+#          (try_end),
+#          (val_div, ":inflicted_damage", 2),
+#          
+#        (else_try),
+#          (neq, ":inflicted_formation", 0),
+#          (eq, ":dealer_formation", 0),
+#          
+#          (store_add, ":slot", slot_team_d0_percent_in_place, ":inflicted_division"),
+#          (team_slot_ge, ":inflicted_team", ":slot", 80),
+#          
+#          (store_add, ":slot", slot_team_d0_formation_space, ":inflicted_division"),
+#          (team_get_slot, ":spacing", ":inflicted_team", ":slot"),
+#          
+#          (val_mul, ":inflicted_damage", 2),
+#          (try_begin),
+#            (eq, ":spacing", 0),
+#            (val_div, ":inflicted_damage", 6),
+#          (else_try),
+#            (eq, ":spacing", 1),
+#            (val_div, ":inflicted_damage", 5),
+#          (else_try),
+#            (val_div, ":inflicted_damage", 4),
+#          (try_end),
+#          
+#          (val_max, ":inflicted_damage", 1),
+#        (try_end),
+#      (try_end),
+#      
+#      (set_trigger_result, ":inflicted_damage"),
+#  ]),
   
   # Trigger file: formations_victory_trigger
   (2, 0, ti_once, [

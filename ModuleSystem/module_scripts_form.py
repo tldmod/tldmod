@@ -5642,6 +5642,31 @@ formAI_scripts = [
         (agent_get_position, pos60, ":ai_leader"),
         (team_give_order, ":team_no", grc_everyone, mordr_hold),
         (team_set_order_position, ":team_no", grc_everyone, pos60),
+      (else_try),
+        (eq, ":battle_tactic", 0),
+        (team_get_leader, ":ai_leader", ":team_no"),
+        (ge, ":ai_leader", 0),
+        (agent_is_alive, ":ai_leader"),
+        (call_script, "script_team_get_average_position_of_enemies", ":team_no"),
+        (copy_position, pos80, pos0),
+        (agent_get_position, pos81, ":ai_leader"),
+        (position_transform_position_to_local, pos82, pos81, pos80), #pos62 = vector to enemy w.r.t leader
+        (position_normalize_origin, ":distance_to_enemy", pos82),
+        (convert_from_fixed_point, ":distance_to_enemy"),
+        (assign, reg17, ":distance_to_enemy"),
+        (position_get_x, ":dir_x", pos82),
+        (position_get_y, ":dir_y", pos82),
+        (val_mul, ":dir_x", 23),
+        (val_mul, ":dir_y", 23), #move 23 meters
+        (position_set_x, pos82, ":dir_x"),
+        (position_set_y, pos82, ":dir_y"),
+      
+        (position_transform_position_to_parent, pos83, pos81, pos82), #pos63 is 23m away from leader in the direction of the enemy.
+        (position_set_z_to_ground_level, pos83),
+      
+        (team_give_order, ":team_no", grc_everyone, mordr_hold),
+        (team_set_order_position, ":team_no", grc_everyone, pos83),
+        (team_give_order, ":team_no", grc_everyone, mordr_spread_out),
       (try_end),
 # formations additions
 	  (try_begin),
@@ -5725,9 +5750,21 @@ formAI_scripts = [
 		  (agent_set_position, ":ai_leader", pos22),
 #end formations code
           (agent_get_position, pos1, ":ai_leader"),
+
+       	  # TLD Kham
+          (assign, ":continue", 0),
           (try_begin),
-            (lt, ":distance_to_enemy", 50),
+            (ge, ":mission_time", 60),
+            (assign, ":continue", 1),
+          (else_try),
             (ge, ":mission_time", 30),
+            (lt, ":distance_to_enemy", 120), 
+            (assign, ":continue", 1),
+          (try_end),
+          # TLD Kham - End
+
+          (try_begin),
+          	(eq, ":continue", 1),
             (assign, ":battle_tactic", 0),
 			(call_script, "script_formation_end", ":team_no", grc_infantry),#formations code
 			(call_script, "script_formation_end", ":team_no", grc_archers),	#formations code
@@ -12004,6 +12041,31 @@ formAI_scripts = [
         (agent_get_position, pos60, ":ai_leader"),
         (team_give_order, ":team_no", grc_everyone, mordr_hold),
         (team_set_order_position, ":team_no", grc_everyone, pos60),
+      (else_try),
+        (eq, ":battle_tactic", 0),
+        (team_get_leader, ":ai_leader", ":team_no"),
+        (ge, ":ai_leader", 0),
+        (agent_is_alive, ":ai_leader"),
+        (call_script, "script_team_get_average_position_of_enemies", ":team_no"),
+        (copy_position, pos80, pos0),
+        (agent_get_position, pos81, ":ai_leader"),
+        (position_transform_position_to_local, pos82, pos81, pos80), #pos62 = vector to enemy w.r.t leader
+        (position_normalize_origin, ":distance_to_enemy", pos82),
+        (convert_from_fixed_point, ":distance_to_enemy"),
+        (assign, reg17, ":distance_to_enemy"),
+        (position_get_x, ":dir_x", pos82),
+        (position_get_y, ":dir_y", pos82),
+        (val_mul, ":dir_x", 23),
+        (val_mul, ":dir_y", 23), #move 23 meters
+        (position_set_x, pos82, ":dir_x"),
+        (position_set_y, pos82, ":dir_y"),
+      
+        (position_transform_position_to_parent, pos83, pos81, pos82), #pos63 is 23m away from leader in the direction of the enemy.
+        (position_set_z_to_ground_level, pos83),
+      
+        (team_give_order, ":team_no", grc_everyone, mordr_hold),
+        (team_set_order_position, ":team_no", grc_everyone, pos83),
+        (team_give_order, ":team_no", grc_everyone, mordr_spread_out),
       (try_end),
 # formations additions
 	  (call_script, "script_division_reset_places_moto"),
@@ -12144,10 +12206,21 @@ formAI_scripts = [
 		  (agent_set_position, ":ai_leader", pos49),
 #end formations code
           (agent_get_position, pos1, ":ai_leader"),
+
+          # TLD Kham
+          (assign, ":continue", 0),
           (try_begin),
-            (lt, ":distance_to_enemy", 50),
+            (ge, ":mission_time", 60),
+            (assign, ":continue", 1),
+          (else_try),
             (ge, ":mission_time", 30),
-            (assign, ":battle_tactic", 0),
+            (lt, ":distance_to_enemy", 120), 
+            (assign, ":continue", 1),
+          (try_end),
+          # TLD Kham - End
+
+          (try_begin),
+          	(eq, ":continue", 1),
 			(call_script, "script_formation_end_moto", ":team_no", grc_infantry),	#formations
 			(call_script, "script_formation_end_moto", ":team_no", grc_archers),	#formations
 			(call_script, "script_formation_end_moto", ":team_no", grc_cavalry),	#formations
