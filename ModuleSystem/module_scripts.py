@@ -1952,7 +1952,7 @@ scripts = [
 	(assign, "$first_time", 0),	#squelch compiler warnings
 	(assign, "$FormAI_autorotate", 1), #Autorotate for New Formations force to 1
 	(assign, "$player_deploy_troops", 1), #Make sure troops hold when battle starts.
-	(assign, "$FormAI_AI_Control_Troops", 1), #AI Control Dead Player's Troops (FormV5)
+	(assign, "$FormAI_AI_Control_Troops", 0), #AI Control Dead Player's Troops (FormV5)
 	(assign, "$slow_when_wounded",1), #Kham - Agents get slower when wounded
 	(assign, "$battle_encounter_effects",1), #Kham - Special Effects on Battlefield
 
