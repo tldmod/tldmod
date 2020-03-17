@@ -11398,6 +11398,7 @@ scripts = [
 		(assign, reg10,":scene_to_use"), (display_message,"@debug: using scene ID N. {reg10}"),
 	(try_end),
 	(jump_to_scene,":scene_to_use"),
+	(call_script, "script_maybe_relocate_player_from_z0"),
 
 ]),
 
