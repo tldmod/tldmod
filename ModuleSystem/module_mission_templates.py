@@ -2256,6 +2256,7 @@ mission_templates = [ # not used in game
 	[
 		(try_begin),
 			(eq, "$battle_won", 1),
+      (assign, "$g_battle_result", 1),
 			(call_script, "script_count_mission_casualties_from_agents"),
 			(finish_mission,0),
 		(else_try), #MV added this section

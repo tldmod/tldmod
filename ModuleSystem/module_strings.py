@@ -3748,4 +3748,6 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("imladris_guildmaster_companion_player_none_ok", "I understand, Elder. I thank you for your time."),
 ("imladris_guildmaster_player_found_ok", "I understand, Elder. I thank you for your time."),
 
+# Show Keybind for New Form
+("show_keybinds_form", "Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace"),
 ]

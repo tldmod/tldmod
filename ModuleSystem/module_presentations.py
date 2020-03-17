@@ -3278,7 +3278,12 @@ presentations = [
         (set_fixed_point_multiplier, 1000),
         
         (str_clear, s12),
-        (create_text_overlay, "$show_key_binds", "str_show_keybinds", tf_center_justify),
+        (assign, ":keybind_string", "str_show_keybinds"),
+        (try_begin),
+          (eq, "$tld_option_formations", 2),
+          (assign, ":keybind_string", "str_show_keybinds_form"),
+        (try_end),
+        (create_text_overlay, "$show_key_binds", ":keybind_string", tf_center_justify),
         (overlay_set_color, "$show_key_binds", 0xDDDDDD),
         (position_set_x, pos1, 859),
         (position_set_y, pos1, 450),
