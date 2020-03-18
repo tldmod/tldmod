@@ -692,7 +692,7 @@ items =[
 ["orc_tribal_a","Untreated_Skin",[("orc_tribal_a",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(3)|leg_armor(0)|difficulty(0),imodbits_orc_cloth,],
 ["orc_tribal_b","Untreated_Skin",[("orc_tribal_b",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(2)|leg_armor(1)|difficulty(0),imodbits_orc_cloth,],
 ["orc_tribal_c","Untreated_Skin",[("orc_tribal_c",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(1)|leg_armor(2)|difficulty(0),imodbits_orc_cloth,],
-["evil_gauntlets_a","Black_Gloves",[("CWE_gloves_a_black_L",imodbits_armor_bad),("CWE_gloves_a_black_L_h",0),("CWE_gloves_lord_black_L",imodbits_elf_cloth),("CWE_gauntlets_arabs_a_L",imodbit_reinforced)],itp_type_hand_armor|itp_shop,0,500,weight(0.4)|body_armor(2)|difficulty(0),imodbits_orc_cloth],
+["evil_gauntlets_a","Black_Gloves",[("CWE_gloves_a_black_L",imodbits_armor_bad),("CWE_gloves_a_black_h_L",0),("CWE_gloves_lord_black_L",imodbits_elf_cloth),("CWE_gauntlets_arabs_a_L",imodbit_reinforced)],itp_type_hand_armor|itp_shop,0,500,weight(0.4)|body_armor(2)|difficulty(0),imodbits_orc_cloth],
 ["evil_gauntlets_b","Black_Gauntlets",[("narf_wisby_gauntlets_black_L",0),("narf_wisby_gauntlets_red_L",imodbits_armor_good|imodbit_lordly)],itp_type_hand_armor|itp_shop,0,500,weight(1.2)|body_armor(4)|difficulty(0),imodbits_armor|imodbit_lordly],
 #
 ###ISENGARD ITEMS##########
