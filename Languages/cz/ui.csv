@@ -1,26 +1,26 @@
 ui_at_learning_limit|(nejvyšší možná úroveň pro tuto rasu)
-ui_not_enough_skill_points_to_learn|(nedostatek bodů dovednosti)
-ui_not_enough_attributetype_to_learn_this_skill|(nedostatek %s pro tuto dovednost)
-ui_explanation_agility|Pohyblivost: Za každý bod dostaneš pět zbraňových bodů a zvyšuje se rychlost zacházení se zbraněmi o 0.5%. Nad 1/3 pohyblivosti se nelze naučit tyto schopnosti: mistrovství zbraně, štít, atletika, jezdectví, jízdní lukostřelba a kořistnictví.
+ui_not_enough_skill_points_to_learn|(nedostatek bodů schopností)
+ui_not_enough_attributetype_to_learn_this_skill|(málo vlastnosti %s pro tuto schopnost)
+ui_explanation_agility|Pohyblivost: Za každý bod dostaneš pět zbraňových bodů a zvyšuje se rychlost zacházení se zbraněmi o 0.5%. Nad 1/3 pohyblivosti se nelze naučit tyto schopnosti: Mistr zbraní, Štít, Kondice, Jezdectví, Střelba z koně a Rabování.
 ui_retreated_battle|%s zběhlo.
-ui_riding_skill_not_adequate_to_mount|(jezdecká dovednost je příliš malá)
+ui_riding_skill_not_adequate_to_mount|(Jezdectví příliš nízké)
 ui_camp|Akce
-ui_tutorial_inventory|V Posledních Dnech, budeš potřebovat Body Zásob k získání vybavení. Body Zásob jsou měřítkem jak ochotné frakce jsou k zásobování tě, a na kolik frakčních zásob máš nárok.
+ui_tutorial_inventory|V TLD, budeš potřebovat Resource pointy k získání vybavení. Resource pointy jsou měřítkem toho jak moc jsou frakce ochotné tě zásobovat a kolik z frakčních zdrojů jste oprávněni použít.
 ui_you_dont_have_value|Nemáš %s
 ui_merchant_cant_afford_value|Dal jsi nám více než jsme potřebovali! Možná si nech něco pro sebe ( dáváš nám zboží za %s, my můžeme mít pouze  %s)
-ui_merchant_pay_whatever|Ne, nic z toho nepotřebuji, nechte si to,
+ui_merchant_pay_whatever|Ne, nic z toho nepotřebuji, nechte si to.
 ui_horse|Osedlat
 ui_reclaim_your_sold_goods|Než to uděláte,vraťte zboží které jste si vzali 
 ui_return_your_bought_goods|Než to uděláte,vraťte zboží které jste si vzali 
 ui_return_price|při vrácení: +%d Res.P.
-ui_sell_price|při předání: +%d Res.P.
+ui_sell_price|prodej: +%d Res.P.
 ui_reclaim_price|získat zpět: - %d Res.P.
-ui_buying_price|vzít: - %d Res.P.
-ui_notification_riding_skill_not_enough|Tvoje jezdecké dovednosti nejsou dostatečné k jízdě na tomto.
-ui_notification_payment_value|Spotrebuje %s
-ui_notification_payment_receive_value|Ziska %s
+ui_buying_price|cena: - %d Res.P.
+ui_notification_riding_skill_not_enough|Tvé jezdectví není dostatečné pro toto zvíře.
+ui_notification_payment_value|Spotřebuje %s
+ui_notification_payment_receive_value|Získá %s
 ui_weekly_cost_value|Údržba: %s
-ui_sell|dát
+ui_sell|Prodat
 ui_hire|Naverbovat
 ui_notification_cant_hire|(nedostatek Res.P. pro naverbování)
 ui_joining_cost_weekly_wage|Odvod: %d Res.P.  --  Údržba: %d Res.P.
@@ -29,9 +29,9 @@ ui_price|Cena: %d Res.P.
 ui_cant_reload_this_weapon_on_horseback|Tato zbraň nejde nabít na koni.
 ui_delivered_number_damage_to_horse|Zasazeno %d poškození koni/vrku.
 ui_horse_charged_for_number_damage|Kůň zaútočíl za %d poškození.
-ui_horse_received_number_damage|Kůň dostal %d poškození .
-ui_horse_fell_dead|Jezdecke zvire padlo...
-ui_horse_crippled|Jezdecke zvire zchromlo...
+ui_horse_received_number_damage|Kůň obdržel %d poškození .
+ui_horse_fell_dead|Jezdecké zvíře padlo...
+ui_horse_crippled|Jezdecké zvíře je chromé...
 ui_you_got_value|%s obdrženo.
 ui_has_deserted_the_party|opustil skupinu.
 ui_have_deserted_the_party|opustili skupinu.
@@ -41,11 +41,11 @@ ui_order_dismount_toggle|Přikázat Sesednout z/Nasednout na (přepnout)
 ui_mount_horses_e_|%s, Nasednout na koně!
 ui_hold_fire_e_|%s, Nestřílet!
 ui_fire_at_will_e_|%s, Střílet dle libosti!
-ui_recent_messages|Posledni Zpravy
+ui_recent_messages|Poslední zprávy
 ui_value_denars|%d Resource Pts.
 ui_cannot_be_used_on_horseback|Nelze použít na koni
 ui_upgrade_to_value| Povýšit na %s
-ui_notification_cant_upgrade|(Nelze povysovat jednotky predane do jine skupiny)
+ui_notification_cant_upgrade|(Nelze povýšit jednotky v jiné skupině)
 ui_lance_control|Ovládání Kopí:
 ui_manual_easy|Manuál (Jednoduchý)
 ui_manual_hard|Manuál (těžký)
@@ -55,32 +55,32 @@ ui_crouch|Skrčit
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Jste si jistý že chcete Importovat postavu?
-ui_explanation_strength|Síla: Každý bod přidává +1 bod zdraví. Následující schopnosti nemohou být vyvinuty pod 1/3 síly: Železné svaly, Silný Úder, Silný Hod, Síla k natažení luku.
-ui_explanation_intelligence|Inteligence: Každý bod inteligence ihned přidá jeden bod schopností navíc a při některých příležitostech mírně zvyšuje zisk XP. Nad 1/3 inteligence se nelze naučit tyto schopnosti: cvičitel, stopování, taktika, hledání cesty, pozorování, skladování zásob, ošetřování ran, chirurgie a první pomoc.
-ui_explanation_charisma|Charisma: Každý bod zvyšuje maximální velikost tvé družiny o +1. Nad 1/3 charismatu se nelze naučit tyto schopnosti: správa vězňů, zálesáctví, velitelství a obchod.
+ui_explanation_strength|Síla: Každý bod přidává +1 bod zdraví. Nad 1/3 pohyblivosti se nelze naučit tyto schopnosti: Odolnost, Síla úderu, Síla vrhu, Síla napnutí.
+ui_explanation_intelligence|Inteligence: Každý bod inteligence ihned přidá jeden bod schopností navíc a při některých příležitostech mírně zvyšuje zisk XP. Nad 1/3 inteligence se nelze naučit tyto schopnosti: Trenér, Stopování, Taktika, Hledání cest, Pozorování, Organizace inventáře, Léčba zranění, Chirurgie a První pomoc.
+ui_explanation_charisma|Charisma: Každý bod zvyšuje maximální velikost tvé družiny o +1. Nad 1/3 charismatu se nelze naučit tyto schopnosti: Zálesáctví, Vězeňský management, Vůdcovství a Obchod.
 ui_delivered_number_damage|Zasazeno %d poškození.
 ui_mission_losses_killed|Zabil :
 ui_party_losses|%s : %d Zraněno -- %d zabito z %d
 ui_following|Následující.
 ui_accompanying|Následující
-ui_dumping_value_items|%d Předmětů bude navždy ztraceno, jste si jist?
+ui_dumping_value_items|%d předmětů bude navždy ztraceno, jste si jist?
 ui_dumping_value_item|Jeden předmět bude ztracen na vždy, jste si jist?
 ui_notification_requirements_not_met|Nemáte dostatečnou dovednost nebo Atribut pro tuto zbraň.
-ui_disband|Rozpustit.
+ui_disband|Propustit
 ui_you_hit_a_friendly_troop|Zasáhl jsi spřátelenou Jednotku!
 ui_you_are_not_carrying_any_arrows|Nemáš u sebe žádné šípy.
 ui_delivered_number_damage_to_horse|Zasazeno %d poškození koni/vrku.
 ui_received_number_damage|Obdrženo %d poškození.
 ui_you_have_improved_your_proficiency_in_value_to_number|Zvýšil jsi svou dovednost v %s na %d.
-ui_your_proficiency_in_value_has_improved_by_number_to_number|Tvá dovednost v %s se zvýšila o +%d na %d.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Tvá dovednost %s se zvýšila o +%d na %d.
 ui_value_killed_by_value|%s byl zabit jednotkou %s.
 ui_value_knocked_unconscious_by_value|%s byl omráčen jednotkou %s.
 ui_you_got_number_experience|Získal jsi %d zkušeností.
 ui_you_have_advanced_to_level_number|Postoupil jsi na úroveň %d.
 ui_you_got_value|%s obdrženo.
 ui_quest_succeeded_value|Úkol dokončen %s.
-ui_number_of_companions_exceeds_leadership_limit|Množství společníků přesahuje limit veliteství.
-ui_number_of_prisoners_exceeds_prisoner_management_limit|Množství věznů přesahuje limit správy věžnů.
+ui_number_of_companions_exceeds_leadership_limit|Množství společníků přesahuje limit vůdcovství.
+ui_number_of_prisoners_exceeds_prisoner_management_limit|Množství vězňů přesahuje limit vězeňského managementu.
 ui_shared_number_experience_within_party|Rozděleno %d zkušeností s družinou.
 ui_your_relations_with_value_has_improved_from_number_to_number|Tvé vztahy s %s se zvýšily z %d na %d.
 ui_your_relations_with_value_has_deteriorated_from_number_to_number|Tvé vztahy s %s se snížily z %d na%d.
@@ -136,12 +136,12 @@ ui_use_any_weapon_e_|%s, používejte zbraně dle vlastního uvážení!
 ui_hold_fire_e_|%s, Nestřílet!
 ui_fire_at_will_e_|%s, Střílet dle libosti!
 ui_hold_this_position_e_|%s, držte tuto pozici!
-ui_infantry|Pechota
-ui_archers|Lucistnici
-ui_cavalry|Jizda
+ui_infantry|Pěchota
+ui_archers|Lučištníci
+ui_cavalry|Jízda
 ui_companions|Společníci
 ui_everyone_hear_me|Všichni, poslouchejte mě!
-ui_everyone|Vsichni
+ui_everyone|Všichni
 ui_everyone_around_me|Blízcí vojáci
 ui_str_hear_me|%s, slyšte mě!
 

@@ -510,16 +510,16 @@ trp_i3_dun_pikeman|Picchiere del Dunland
 trp_i3_dun_pikeman_pl|Picchieri del Dunland
 trp_i4_dun_vet_pikeman|Picchiere Veterano del Dunland
 trp_i4_dun_vet_pikeman_pl|Picchieri Veterani del Dunland
-trp_ac2_dun_crebain_rider|Cavallerizzo Crebain del Dunland
-trp_ac2_dun_crebain_rider_pl|Cavallerizzi Crebain del Dunland
+trp_ac4_dun_crebain_rider|Cavallerizzo Crebain del Dunland
+trp_ac4_dun_crebain_rider_pl|Cavallerizzi Crebain del Dunland
 trp_i3_dun_vet_warrior|Guerriero Veterano del Dunland
 trp_i3_dun_vet_warrior_pl|Guerrieri Veterani del Dunland
 trp_i4_dun_wolf_warrior|Guerriero Dunlandiano dell'Ordine del Lupo
 trp_i4_dun_wolf_warrior_pl|Guerrieri Dunlandiani dell'Ordine del Lupo
 trp_i5_dun_wolf_guard|Guardia Dunlandiana dell'Ordine del Lupo
 trp_i5_dun_wolf_guard_pl|Guardie Dunlandiane dell'Ordine del Lupo
-trp_ac4_dun_raven_rider|Cavallerizzo Corvo del Dunland
-trp_ac4_dun_raven_rider_pl|Cavallerizzi Corvo del Dunland
+trp_ac5_dun_raven_rider|Corvo Notturno Dunlandiano
+trp_ac5_dun_raven_rider_pl|Corvi Notturni Dunlandiani
 trp_i1_khand_bondsman|Schiavo di Khand
 trp_i1_khand_bondsman_pl|Schiavi di Khand
 trp_i2_khand_pit_dog|Cane delle Fosse di Khand
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|Cavalieri di Khand
 trp_c4_khand_heavy_horseman|Cavaliere Pesante di Khand
 trp_c4_khand_heavy_horseman_pl|Cavalieri Pesanti di Khand
 trp_c5_khand_kataphrakt|Catafratto Variago 
-trp_c5_khand_kataphrakt_pl|Catafratto Variago 
+trp_c5_khand_kataphrakt_pl|Catafratti Variaghi
 trp_c5_khand_lance_kataphrakt|Lanciere Variago
-trp_c5_khand_lance_kataphrakt_pl|Lanciere Variago
+trp_c5_khand_lance_kataphrakt_pl|Lancieri Variaghi
 trp_i4_khand_halberdier|Spadaccino di Khand
 trp_i4_khand_halberdier_pl|Spadaccini di Khand
 trp_i5_khand_halberd_master|Mastro d'Alabarda Variago
@@ -811,8 +811,8 @@ trp_black_numenorean_captain|Capitano Numenoreano Nero
 trp_black_numenorean_captain_pl|Capitani Numenoreani Neri
 trp_black_numenorean_lieutenant|Tenente Numenoreano Nero
 trp_black_numenorean_lieutenant_pl|Tenenti Numenoreani Neri
-trp_a5_dun_night_wolf|Lupo della Notte Dunlandiano
-trp_a5_dun_night_wolf_pl|Lupi della Notte Dunlandiani
+trp_a5_dun_night_wolf|Lupo Notturno Dunlandiano
+trp_a5_dun_night_wolf_pl|Lupi Notturni Dunlandiani
 trp_dunnish_lieutenant|Etmano del Dunland
 trp_dunnish_lieutenant_pl|Etmani del Dunland
 trp_goblin_chieftain|Capo Goblin

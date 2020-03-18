@@ -254,6 +254,7 @@ mno_dont_leave_behind|Não. Ninguém ficará para trás.
 ; menu_castle_outside|You are outside {s2}.{s11} {s3} {s4}
 ; mno_moria_enter|Return into main hall of Moria trough the secret entrance
 ; mno_moria_enter_door|Enter Moria.
+; mno_cheat_steal_book_door|Get the book
 ; mno_castle_start_siege|Besiege the {reg6?town:castle}.
 mno_castle_leave|Sair.
 ; menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}

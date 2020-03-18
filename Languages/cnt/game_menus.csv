@@ -254,6 +254,7 @@ mno_moria_exit_scene|找 到 你 的 出 路 ！
 menu_castle_outside|你 在 {s2}的 外 面 。 {s11} {s3} {s4}
 mno_moria_enter|從 秘 密 入 口 回 到 摩 瑞 亞 的 主 殿 
 mno_moria_enter_door|進 入 摩 瑞 亞 
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|圍 攻 這 個 {reg6?城 鎮 :城 堡 }。 
 mno_castle_leave|離 開 
 menu_castle_besiege|你 正 在 圍 攻 {s1}。 {s2} {s3}

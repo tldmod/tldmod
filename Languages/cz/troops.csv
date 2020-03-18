@@ -487,7 +487,7 @@ trp_c2_harondor_scout_pl|Harondorští průzkumníci
 trp_c3_harondor_rider|Harondorský jezdec
 trp_c3_harondor_rider_pl|Harondorští jezdci
 trp_c4_harondor_light_cavalry|Harondorský lehký jezdec
-trp_c4_harondor_light_cavalry_pl|Harondorská lehká kavalérie
+trp_c4_harondor_light_cavalry_pl|Harondorští lehcí jezdci
 trp_c5_harondor_serpent_knight|Rytíř zlatého hada
 trp_c5_harondor_serpent_knight_pl|Rytíři zlatého hada
 trp_ac3_harondor_skirmisher|Harondorský záškodník
@@ -510,16 +510,16 @@ trp_i3_dun_pikeman|Dunlandský kopiník
 trp_i3_dun_pikeman_pl|Dunlandští kopiníci
 trp_i4_dun_vet_pikeman|Dunlandský zkušený kopiník
 trp_i4_dun_vet_pikeman_pl|Dunlandští zkušení kopiníci
-trp_ac2_dun_crebain_rider|Dunlandský krebainský jezdec
-trp_ac2_dun_crebain_rider_pl|Dunlandští krebainští jezdci
+trp_ac4_dun_crebain_rider|Dunlandský krebainský jezdec
+trp_ac4_dun_crebain_rider_pl|Dunlandští krebainští jezdci
 trp_i3_dun_vet_warrior|Dunlandský zkušený válečník
 trp_i3_dun_vet_warrior_pl|Dunlandští zkušení válečníci
 trp_i4_dun_wolf_warrior|Dunlandský Vlčí válečník
 trp_i4_dun_wolf_warrior_pl|Dunlandští Vlčí válečníci
 trp_i5_dun_wolf_guard|Dunlandský Vlčí střážce
 trp_i5_dun_wolf_guard_pl|Dunlandštá Vlčí strážci
-trp_ac4_dun_raven_rider|Dunlandský Havraní jezdec
-trp_ac4_dun_raven_rider_pl|Dunlandští Havraní jezdci
+trp_ac5_dun_raven_rider|Dunlandský Noční Havran
+trp_ac5_dun_raven_rider_pl|Dunlandští Noční Havrani
 trp_i1_khand_bondsman|Khanský nevolník
 trp_i1_khand_bondsman_pl|Khandští nevolníci
 trp_i2_khand_pit_dog|Khandský arénový pes
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|Khandští jezdci
 trp_c4_khand_heavy_horseman|Khandský těžký jezdec
 trp_c4_khand_heavy_horseman_pl|Khandští těžcí jezdci
 trp_c5_khand_kataphrakt|Variagský obrněnec
-trp_c5_khand_kataphrakt_pl|Variagský obrněnec
+trp_c5_khand_kataphrakt_pl|Variagští obrněnci
 trp_c5_khand_lance_kataphrakt|Variagský kataphrakt s kopím
-trp_c5_khand_lance_kataphrakt_pl|Variagský kataphrakt s kopím
+trp_c5_khand_lance_kataphrakt_pl|Variagští kataphrakti s kopím
 trp_i4_khand_halberdier|Khandský kůsijník
 trp_i4_khand_halberdier_pl|Khandští kůsijníci
 trp_i5_khand_halberd_master|Khandský mistr halapartník

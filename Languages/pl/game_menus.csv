@@ -254,6 +254,7 @@ mno_moria_exit_scene|Znajdź drogę powrotną!
 menu_castle_outside|W pobliżu znajduje się {s2}.{s11} {s3} {s4}
 mno_moria_enter|Wróć do głównej sali Morii przez sekretne wejście.
 mno_moria_enter_door|Wejdź do Morii.
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|Oblegaj {reg6?miasto:zamek}.
 mno_castle_leave|Odejdź.
 menu_castle_besiege|Oblegasz {s1}. {s2} {s3}

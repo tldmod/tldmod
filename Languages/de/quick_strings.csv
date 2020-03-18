@@ -233,7 +233,9 @@ qstr_when_equipped|wenn ausgerüstet
 qstr_+1_to_Riding|+1 Reiten
 qstr_+1_to_Mounted_Archer|+1 Berittenes Bogenschießen
 qstr_+2_to_Tactics|+2 Taktik
-qstr_+3_to_Spotting|+3 Aufklärung
+qstr_+{reg1}_to_Spotting|+{reg1} Aufklärung
+qstr__Scales_with_Wildcra|(Verstärkt durch Wildkunde)
+qstr_+1_to_Spotting|+1 Aufklärung
 qstr_+2_to_Athletics|+2 Athletik
 qstr_Less_Dunnish_upkeep|Weniger Unterhalt für Dunländer
 qstr_Less_Wargs_upkeep|Weniger Unterhalt für Warge
@@ -738,6 +740,7 @@ qstr_A_Nazgul_is_circling|Ein Nazgul kreist über dem Schlachtfeld!
 qstr_Some_of_your_human_t|Einige deiner menschlichen Truppen fürchten die Dunkelheit nicht. (Nachttruppen büßen nachts keine Waffenfertigkeiten ein.)
 qstr_You_are_filled_with_|Der Anblick der Feinde erfüllt dich durch und durch mit gerechtem Zorn (Berserkermodus aktiv).
 qstr_Your_mount_is_scared|Dein Reittier fürchtet sich vor dem {reg73?Ent:Troll}!
+qstr_Your_mount_is_scared_|Dein Reittier fürchtet sich vor dem {reg73?Ent:Troll}, doch du kannst es beherrschen!
 qstr_Nazgul_sweep!|Nazgul fliegt an!
 qstr_You_and_your_horse_p|Du und dein Pferd erstarren vor Furcht. Die Nazgul-Schreie sind unerträglich!
 qstr_Your_horse_panics_th|Dein Pferd gerät in Panik. Die Nazgul-Schreie sind unerträglich!
@@ -1188,6 +1191,8 @@ qstr_So_you_are_{s23}._I_|Ihr seid also {s23}. Ich habe gehört, Ihr kämpft fü
 qstr_I_need_volunteers_wi|Ich suche Freiwillige, dich mich auf gefährliche Missionen begleiten.
 qstr_I_need_some_soldiers|Ich brauche einige Soldaten, die meine Toten ersetzen.
 qstr_{playername}_s_Reser|{playername}s Reserven
+qstr_Maybe_the_weaklings_|Die Schwächlinge aus dem Süden müssen ihre weichhäutigen Trolle vielleicht mit Rüstungen schützen, doch nicht wir - unsere Trolle sind aus Gundabad!
+qstr_Do_I_look_like_a_smi|Sehe ich aus wie ein Schmied? Pah! Geh und sprich mit einem, wenn du Rüstungen brauchst.
 qstr_Excellent_job_{s23}!|Hervorragende Arbeit, {23}! Ich wünschte all unsere Anführer wären so hingebungsvoll wie du.^
 qstr_Nicely_done_{s23}.|Schön gemacht, {s23}.
 qstr_Good_work_{s23}.|Gute Arbeit, {s23}.
@@ -1440,7 +1445,7 @@ qstr_My_spies_tell_me_the|Meine Spione berichten mir, dass der Feind in {s13} et
 qstr_{s9}_asked_you_to_di|{s9} bat dich, einen Spähtrupp nahe {s13} auszusenden.^Treibe 7 Soldaten von {s15} auf, von denen mindestens einer {s14} ist, nähere dich {s13} und sprich zu dem {s14}, um den Trupp auszusenden.
 qstr_We_need_to_take_the_|Wir müssen die Schlacht zum Feind tragen, {playername}. Zur Zeit können wir nur seine Stoßtrupps und Boten treffen. Ich will, dass Ihr {reg1} {s13}-Trupps vernichtet, damit wir wieder die Oberhand gewinnen.
 qstr_We_need_to_grind_dow|Wir müssen unsere wertlosen Feinde niederringen, {playername}. Ihre Patrouillen und Versorgungszüge werden für meinen Geschmack zu selbstbewusst. Ich will, dass Ihr {reg1} {s13}-Trupps vernichtet, damit sie wieder fürchten lernen, was sie erwartet.
-qstr_{s9}_asked_you_to_el|{s9} beauftragte dich, {reg1} {reg13}-Trupps zu vernichten.
+qstr_{s9}_asked_you_to_el|{s9} beauftragte dich, {reg1} {s13}-Trupps zu vernichten.
 qstr_{s9}_asked_you_to_fr|{s9} bat dich, {s13} von der Bedrohung des Trolls zu befreien, der in der Umgebung wütet.
 qstr_the_Dwarves_so_that_|Zwergengold, sodass Ihr, wenn Ihr den Erebor oder die Eisenberge besucht, einige der sagenumwobenen Zwergenwaffen erstehen könnt.
 qstr_Gondor_so_that_if_yo|Geld aus Gondor, sodass Ihr, wenn Ihr einmal durch dieses Land ziehen solltet, dort einen der berühmten Harnische erwerben könnt.

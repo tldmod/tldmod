@@ -487,7 +487,7 @@ trp_c2_harondor_scout_pl|Харондорські розвідники
 trp_c3_harondor_rider|Харондорський вершник
 trp_c3_harondor_rider_pl|Харондорські вершники
 ; trp_c4_harondor_light_cavalry|Harondor Light Rider
-trp_c4_harondor_light_cavalry_pl|Харондорські легкі кіннотники
+; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
 trp_c5_harondor_serpent_knight|Лицар Золотий Змії
 trp_c5_harondor_serpent_knight_pl|Лицарі Золотий Змії
 trp_ac3_harondor_skirmisher|Харондорський застрільник
@@ -510,16 +510,16 @@ trp_i3_dun_pikeman|Дунландський пікінер
 trp_i3_dun_pikeman_pl|Дунландські пікінери
 trp_i4_dun_vet_pikeman|Дунландський досвідчений пікінер
 trp_i4_dun_vet_pikeman_pl|Дунландські досвідчені пікінери
-trp_ac2_dun_crebain_rider|Дунландський чорний воронячий вершник
-trp_ac2_dun_crebain_rider_pl|Дунландські чорні воронячі вершники
+trp_ac4_dun_crebain_rider|Дунландський чорний воронячий вершник
+trp_ac4_dun_crebain_rider_pl|Дунландські чорні воронячі вершники
 trp_i3_dun_vet_warrior|Дунландський воїн-ветеран
 trp_i3_dun_vet_warrior_pl|Дунландські воїни-ветерани
 trp_i4_dun_wolf_warrior|Дунландський вовчий воїн
 trp_i4_dun_wolf_warrior_pl|Дунландські вовчі воїни
 trp_i5_dun_wolf_guard|Дунландський вовчий страж
 trp_i5_dun_wolf_guard_pl|Дунландські вовчі стражники
-trp_ac4_dun_raven_rider|Дунландський воронячий вершник
-trp_ac4_dun_raven_rider_pl|Дунландські воронячі вершники
+; trp_ac5_dun_raven_rider|Dunnish Night Raven
+; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
 trp_i1_khand_bondsman|Кхандський раб
 trp_i1_khand_bondsman_pl|Кхандський раб
 trp_i2_khand_pit_dog|Кхандську Собачу яму
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|Кхандські вершники
 trp_c4_khand_heavy_horseman|Важкий Кхандський вершник
 trp_c4_khand_heavy_horseman_pl|Важкі Кхандські вершники
 ; trp_c5_khand_kataphrakt|Variag Ironclad
-; trp_c5_khand_kataphrakt_pl|Variag Ironclad
+; trp_c5_khand_kataphrakt_pl|Variag Ironclads
 ; trp_c5_khand_lance_kataphrakt|Variag Lancer
-; trp_c5_khand_lance_kataphrakt_pl|Variag Lancer
+; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
 trp_i4_khand_halberdier|Кхандський воїн з глефою
 trp_i4_khand_halberdier_pl|Кхандські воїни з глефою
 ; trp_i5_khand_halberd_master|Variag Halberd Master

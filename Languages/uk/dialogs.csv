@@ -164,6 +164,17 @@ dlga_companion_home_description:close_window.1|Я вважаю за краще, 
 dlga_start:player_hire_troop|{s33}^^Я відповідаю за підготовку місцевого гарнізону {s21}. Ви хотіли мене бачити?
 dlga_player_hire_troop:player_hire_troop_give|Деякі з солдатів моєї групи більше знадобляться для оборони твердині {s21}.
 dlga_player_hire_troop:close_window|Я хочу провести огляд моїх солдатів, залишених тут.
+; dlga_player_hire_troop:player_hire_trolls_take|I am a commander worthy of a fighting Troll - give me one!
+; dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
+; dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
+; dlga_player_hire_trolls_take:player_hire_trolls_how_many|It will cost {reg21} influence.
+; dlga_player_hire_trolls_take:close_window.2|I’ve changed my mind.
+; dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|A fearsome beast. And now, it is mine!
+; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
+; dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
+; dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|I’ve changed my mind.
+; dlga_player_hire_troll_buy_not_enough:close_window|Wasting my time...
+; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
 dlga_player_hire_troop:close_window.1|Мені потрібно потренуватися.
 dlga_player_hire_troop:tld_sell_prisoners|Я маю кілька полонених...
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Давайте поглянемо на цих покидьків.
@@ -979,6 +990,18 @@ dlga_start:town_merchant_talk|Вітаю, Командире. Як я можу �
 dlga_start:town_merchant_talk.1|Доброго дня. Чим можу допомогти?
 dlga_town_merchant_talk:trade_requested_weapons|Я хочу запросити нове спорядження. Покажіть мені, що у вас на складі.
 dlga_town_merchant_talk:trade_requested_horse|Я хочу отримати тварину для верхової їзди.
+; dlga_town_merchant_talk:player_upgrade_trolls_take|I want to strengthen my trolls!
+; dlga_player_upgrade_trolls_take:close_window|Who are you to ask this of me? Pah! Begone! (You need to be {s24} or higher)
+; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
+; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
+; dlga_player_upgrade_trolls_take:close_window.2|We don't do that here...
+; dlga_player_upgrade_trolls_take:close_window.3|Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!
+; dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Forget it
+; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
+; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
+; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Forget it
+; dlga_player_upgrade_troll_not_enough:close_window|Wasting my time...
+; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
 dlga_trade_requested_weapons:merchant_trade|А, так, Командире. Тут кращі припаси, ніж де б то не було.
 dlga_trade_requested_horse:merchant_trade|Жорстокі звірі для їзди і вбивств, і м'ясо щоб їх годувати! Тобі ніде не знайти кращих звірів.
 dlga_merchant_trade:town_merchant_talk|Щось ще?

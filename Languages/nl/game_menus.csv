@@ -254,6 +254,7 @@ mno_moria_exit_scene|Vind de uitgang!
 menu_castle_outside|Je bent buiten {s2}.{s11} {s3} {s4}
 mno_moria_enter|Ga terug naar de grootste hal van Moria via de geheime ingang.
 mno_moria_enter_door|Treed Moria binnen.
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|Beleger de {reg6?town:castle}.
 mno_castle_leave|Ga weg.
 menu_castle_besiege|U ben bezig met belegeren van {s1}. {s2} {s3}

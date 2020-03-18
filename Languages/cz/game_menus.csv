@@ -207,30 +207,30 @@ mno_hide_close|Pokračuj
 menu_encounter_retreat_confirm|^^^^^Jako nejzkušenější taktik v družině,   ({reg2}), {reg3?navrhuješ:{s3} navrhuje} plán, který tobě a tvým mužům umožní uprchnout a zachránit si život,   ale budeš muset nechat vzadu {reg4} vojáku, aby zastavili nepřátelské pronásledování.
 mno_leave_behind|Vykonat. Obětováním těchto zachráníš zbytek.
 mno_dont_leave_behind|Ne. My nikoho neopustíme.
-menu_encounter_retreat|^^^^^Prikazal jsi {reg4} svym vojakum zadrzet nepritele, zatimco ustupujes se zbytkem druziny.
-menu_order_attack_begin|Tvoje jedno se připravují na útok nepřítele
+menu_encounter_retreat|^^^^^Přikázal jsi {reg4} svým vojákům zadržet nepřítele, zatímco ustupuješ se zbytkem družiny.
+menu_order_attack_begin|^^^^^^          Tvé jednotky se připravují na útok nepřítele.
 mno_order_attack_begin|Dát příkaz k zahájení útoku.
-mno_call_back|Zavolat zpet
+mno_call_back|Zavolat je zpět.
 menu_order_attack_2|^{s4}^Tvoje ztráty: {s8}^^Ztráty nepřítele: {s9}
 mno_order_attack_continue|Rozkaž svým vojákům, aby dál útočili.
 mno_order_retreat|Povolej své vojáky zpět.
 menu_kingdom_army_quest_report_to_army|{s8} ti poslal zprávu že si přeje aby jsi se připojil k novému tažení. máš sebou vzít nejméně {reg13} jednotek. jestli nemáš dostatek jednotek, máš je co nejdříve naverbovat
-mno_reject|Pošli zprávu, že jsi příliš zaneprázdněný
+mno_reject|Pošli zprávu, že jsi příliš zaneprázdněný.
 mno_send_word|Pošli zprávu, že se k němu brzy připojíš.
-menu_kingdom_army_quest_messenger|{s8} poslal zprávu, že si s tebou potřebuje promluvit o jedné záležitosti, která je potřeba vykonat. Chce tě vidět co nejdříve to bude možné.
+menu_kingdom_army_quest_messenger|{s8} poslal zprávu, že si s tebou potřebuje promluvit o jedné záležitosti, kterou je potřeba vykonat. Chce tě vidět co nejdříve to bude možné.
 menu_kingdom_army_quest_join_siege_order|{s8} poslal zprávu, aby si se připojil k obléhání a přípravám k hlavnímu útoku na {s9}. Musíš dostat své jednotku k {s9} za jakoukoliv cenu.
 menu_kingdom_army_follow_failed|Neuposlechl jsi přímý rozkaz a nenásledoval jsi {s8}. Posílá zprávu, že je přesvědčen, že jsi měl mnohem urgentnější úkol, ale jeho trpělivost není nekonečná.
-menu_battle_debrief|{s11}^Tve ztraty:{s8}{s10}^^Nepratelske ztraty:{s9}
-mno_inspect_troll|prohledat padlého trola
-menu_pre_join|^^^^^Dorazil jsi k bitvě mezi {s2} a {s1}. Rozhodneš se...
+menu_battle_debrief|{s11}^Tvé ztráty:{s8}{s10}^^Nepřátelské ztráty:{s9}
+mno_inspect_troll|Prohledat padlého trola
+menu_pre_join|^^^^^Dorazil jsi k bitvě mezi {s2} a {s1}. Rozhodl ses...
 mno_pre_join_help_attackers|Pomoci {s2}.
 mno_pre_join_help_defenders|Přispěchat na pomoc {s1}.
 mno_pre_join_help_refugees|Přispěchat na pomoc {s1}.
 mno_pre_join_leave|Nezapojit se.
 menu_join_battle|^^^Pomáháš {s2} proti {s1}.^ Máš {reg22} připravených vojáků proti {reg11} nepřátelům.^^Bitva se odehrává v {s3}{s4}.
 mno_join_attack|Zaútočit na nepřítele.
-mno_join_order_attack|Nařiď svým jednotkám, aby zaútočili s tvými spojenic, mezitím co ty zůstaneš vzadu.
-mno_control_allies_join_menu|Použij body vlivnosti, abys velel svým spojencům v boji
+mno_join_order_attack|Nařiď svým jednotkám, aby zaútočili s tvými spojenci, mezitím co ty zůstaneš vzadu.
+mno_control_allies_join_menu|Použij body vlivu, abys velel svým spojencům v boji.
 mno_join_leave|Uvolnit se od nepřítele.
 mno_player_control_allies_join_menu|Zavel a zaútoč na nepřítele
 menu_join_order_attack|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^Nepřátelské ztráty: {s10}
@@ -243,17 +243,18 @@ mno_enter_f4|Pole 4
 mno_enter_f5|Pole 5
 menu_join_siege_outside|^^^^^^{s1} je obléháno {s2}.
 mno_approach_besiegers|Přijeď k obléhacímu táboru.
-mno_pass_through_siege|Projdi zkrz obléhací linie a vejdi {s1}.
+mno_pass_through_siege|Projdi skrz obléhací linie a vejdi {s1}.
 menu_cut_siege_without_fight|Dobyvatelé ti umožnili přístup k branám bez obtíží.
-menu_besiegers_camp_with_allies|{s1} zustava oblezen. Zastavy {s2} vlaji nad taborem oblehatelu, kde jste ty a tvi muzi vitani.
-mno_talk_to_siege_commander|Požádej velitele o sejití.
+menu_besiegers_camp_with_allies|{s1} zůstává v obležení. Zástavy {s2} vlají nad táborem obléhatelů, kde jsi se svými muži vítán.
+mno_talk_to_siege_commander|Požádej o schůzku s velitelem.
 mno_join_siege_with_allies|Připoj se k dalšímu útoku.
 mno_join_siege_stay_back|Nařiď tvým vojákům, aby se přidali k dalšímu útoku bez tebe.
-menu_moria_must_escape|^^Zda se, ze kniha pojednava o poslednim pokusu trpasliku o znovuosidleni Morie. Pokus, ktery zjevne skoncil desivou smrti vsech zucastnenych. Behem procitani knihy narazis na slova 'pravostribro'! Behem studovani stranek ti najednou dochazi, ze jde o popis trpaslicich sluji nekde v nizsich patrech. Hah!  Nebylo by to skvele odkryt dlouho ztraceny trpaslici mithril!?  ^Dychtive nasleduje popsany smer, skrz uzke klikatici se tunely a dal...  ^...^Po nekolika hodinach neplodneho patrani chapes, ze jsi ztracen v Morii a potřebujes najit cestu ven.
+menu_moria_must_escape|^^Zdá se, že kniha pojednává o posledním pokusu trpaslíků o znovu osídlení Morie. Pokus, který zjevně skončil děsivou smrtí všech zúčastněných. Během pročítání knihy narazíš na slova 'pravostříbro'! Během studování stránek ti najednou dochází, že jde o popis trpasličích slují někde v nižších patrech. Hah!  Nebylo by to skvělé odkrýt dlouho ztracený trpasličí mithril!?  ^Dychtivě následuješ popsaný směr, skrz úzké, klikatící se tunely a dal...  ^...^Po několika hodinách neplodného pátrání chápeš, ze jsi ztracen v Morii a potřebuješ najít cestu ven.
 mno_moria_exit_scene|Najdi cestu ven!
 menu_castle_outside|Jsi venku {s2}.{s11} {s3} {s4}
-mno_moria_enter|Vrať se do hlavní síně Morie zkrz tajný vstup.
+mno_moria_enter|Vrať se do hlavní síně Morie skrze tajný vstup
 mno_moria_enter_door|Vejdi do Morie.
+mno_cheat_steal_book_door|Získat knihu
 mno_castle_start_siege|obléhat {reg6?town:castle}.
 mno_castle_leave|Odejit
 menu_castle_besiege|Obléháš {s1}. {s2} {s3}
@@ -345,7 +346,7 @@ menu_player_added_to_war_council|^^^^^Dorazil k tobě posel a řekl ti, že jako
 mno_player_added_to_war_council_close|Zavřít
 menu_player_added_to_siege_reports|^^^^^Dorazil k tobě posel a řekl ti že nyní, jako {s24}, obdržíš hlášení kdykoli {s2} oblehne město nebo když budou města {s2} v obležení.
 mno_player_added_to_siege_reports_close|Zavřít
-menu_player_added_to_allow_follow|^^^^^Dorazil posel a řekli ti, že jelikož jsi teď {s24}, budeš moci přikázat {s2} aby tě následovali, maximálně {reg55} stoupenců.
+menu_player_added_to_allow_follow|^^^^^Dorazil posel a řekli ti, že jelikož jsi teď {s24}, budeš moci přikázat, aby tě následovaly {s2}, maximální počet skupin, které tě mohou následovat je {reg55}.
 mno_player_added_to_allow_follow_close|Zavřít
 menu_center_besieged_event|Posel k tobě dorazil a řekl ti, že {s1} je obléhán {s2} z {s3}.
 mno_center_besieged_event_close|Zavřít

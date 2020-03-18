@@ -487,7 +487,7 @@ trp_c2_harondor_scout_pl|Harondor Verkenners
 trp_c3_harondor_rider|Harondor Ruiter
 trp_c3_harondor_rider_pl|Harondor Ruiters
 trp_c4_harondor_light_cavalry|Harandor Lichte Rijder
-trp_c4_harondor_light_cavalry_pl|Harondor Lichte Cavalerie
+trp_c4_harondor_light_cavalry_pl|Harandor Lichte Rijders
 trp_c5_harondor_serpent_knight|Gouden Slang Ridder
 trp_c5_harondor_serpent_knight_pl|Gouden Slang Ridders
 trp_ac3_harondor_skirmisher|Harondor Schermutselaar
@@ -510,16 +510,16 @@ trp_i3_dun_pikeman|Donkerse Piekenier
 trp_i3_dun_pikeman_pl|Donkerse Piekeniers
 trp_i4_dun_vet_pikeman|Donkerse Ervaren Piekenier
 trp_i4_dun_vet_pikeman_pl|Donkerse Ervaren Piekeniers
-trp_ac2_dun_crebain_rider|Donkerse Crebain Ruiter
-trp_ac2_dun_crebain_rider_pl|Donkerse Crebain Ruiters
+trp_ac4_dun_crebain_rider|Donkerse Crebain Ruiter
+trp_ac4_dun_crebain_rider_pl|Donkerse Crebain Ruiters
 trp_i3_dun_vet_warrior|Donkerse Ervaren Krijger
 trp_i3_dun_vet_warrior_pl|Donkerse Ervaren Krijgers
 trp_i4_dun_wolf_warrior|Donkerse Wolf Krijger
 trp_i4_dun_wolf_warrior_pl|Donkerse wolf Krijger
 trp_i5_dun_wolf_guard|Donkerse Wolf Beschermer
 trp_i5_dun_wolf_guard_pl|Donkerse Wolf Beschermers
-trp_ac4_dun_raven_rider|Donkerse Raad Ruiter
-trp_ac4_dun_raven_rider_pl|Donkerse Raaf Ruiters
+; trp_ac5_dun_raven_rider|Dunnish Night Raven
+; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
 trp_i1_khand_bondsman|Khand Bondman
 trp_i1_khand_bondsman_pl|Khand Bondmannen
 trp_i2_khand_pit_dog|Khand Kuil Hond
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|Khand Paard Rijders
 trp_c4_khand_heavy_horseman|Khand Zware Paard Rijder
 trp_c4_khand_heavy_horseman_pl|Khand Zware Paard Rijders
 trp_c5_khand_kataphrakt|Variag Pantser
-trp_c5_khand_kataphrakt_pl|Variag Pantser
+trp_c5_khand_kataphrakt_pl|Variag Pantsers
 trp_c5_khand_lance_kataphrakt|Variag Lansier
-trp_c5_khand_lance_kataphrakt_pl|Variag Lansier
+trp_c5_khand_lance_kataphrakt_pl|Variag Lansiers
 trp_i4_khand_halberdier|Khand Lansman
 trp_i4_khand_halberdier_pl|Khand Lansmannen
 trp_i5_khand_halberd_master|Variag Hellebaard Meester

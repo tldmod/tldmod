@@ -254,6 +254,7 @@ mno_moria_exit_scene|Шукати шлях назовні!
 menu_castle_outside|Перед вами {s2}.{S11} {s3} {s4}
 mno_moria_enter|Повернутися до головної зали Морії через потаємний хід
 mno_moria_enter_door|Увійти в Морію.
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|Ні {reg6?town:castle}.
 mno_castle_leave|Продовжити.
 menu_castle_besiege|Ви осадите {s1}. {S2} {s3}

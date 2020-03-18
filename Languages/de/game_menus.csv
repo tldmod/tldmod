@@ -254,6 +254,7 @@ mno_moria_exit_scene|Finde einen Weg hinaus!
 menu_castle_outside|Du befindest dich außerhalb von {s2}.{s11} {s3} {s4}
 mno_moria_enter|Kehre durch den geheimen Eingang in die Haupthalle Morias zurück
 mno_moria_enter_door|Betrete Moria.
+mno_cheat_steal_book_door|Nimm das Buch
 mno_castle_start_siege|Belagere die {reg6?Stadt:Feste}.
 mno_castle_leave|Verlassen
 menu_castle_besiege|Du belagerst {s1}. {s2} {s3}

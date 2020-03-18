@@ -510,16 +510,16 @@ trp_i3_dun_pikeman|Piquero Dunlendino
 trp_i3_dun_pikeman_pl|Piqueros Dunlendinos
 trp_i4_dun_vet_pikeman|Piquero Veterano Dunlendino
 trp_i4_dun_vet_pikeman_pl|Piqueros Veteranos Dunlendinos
-trp_ac2_dun_crebain_rider|Jinete de Craban Dunlendino
-trp_ac2_dun_crebain_rider_pl|Jinetes de Crebain Dunlendinos
+trp_ac4_dun_crebain_rider|Jinete de Craban Dunlendino
+trp_ac4_dun_crebain_rider_pl|Jinetes de Crebain Dunlendinos
 trp_i3_dun_vet_warrior|Guerrero Veterano Dunlendino
 trp_i3_dun_vet_warrior_pl|Guerreros Veteranos Dunlendinos
 trp_i4_dun_wolf_warrior|Guerrero Lobo Dunlendino
 trp_i4_dun_wolf_warrior_pl|Guerreros Lobo Dunlendinos
 trp_i5_dun_wolf_guard|Guardia Lobo Dunlendino
 trp_i5_dun_wolf_guard_pl|Guardias Lobo Dunlendinos
-trp_ac4_dun_raven_rider|Jinete Cuervo Dunlendino
-trp_ac4_dun_raven_rider_pl|Jinetes Cuervo Dunlendinos
+; trp_ac5_dun_raven_rider|Dunnish Night Raven
+; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
 trp_i1_khand_bondsman|Esclavo de Khand
 trp_i1_khand_bondsman_pl|Esclavos de Khand
 trp_i2_khand_pit_dog|Perro de Pelea de Khand
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|Jinetes de Khand
 trp_c4_khand_heavy_horseman|Jinete Pesado de Khand
 trp_c4_khand_heavy_horseman_pl|Jinetes Pesados de Khand
 trp_c5_khand_kataphrakt|Catafracto Variag
-trp_c5_khand_kataphrakt_pl|Catafracto Variag
+trp_c5_khand_kataphrakt_pl|Catafractos Variag
 trp_c5_khand_lance_kataphrakt|Catafracto con Lanza Variag
-trp_c5_khand_lance_kataphrakt_pl|Catafracto con Lanza Variag
+trp_c5_khand_lance_kataphrakt_pl|Catafractos con Lanzas Variag
 trp_i4_khand_halberdier|Archero de Khand
 trp_i4_khand_halberdier_pl|Archeros de Khand
 trp_i5_khand_halberd_master|Maestro Alabardero Variag

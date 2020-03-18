@@ -487,7 +487,7 @@ trp_c2_harondor_scout_pl|哈隆铎斥候
 trp_c3_harondor_rider|哈隆铎骑手
 trp_c3_harondor_rider_pl|哈隆铎骑手
 ; trp_c4_harondor_light_cavalry|Harondor Light Rider
-trp_c4_harondor_light_cavalry_pl|哈隆铎轻骑兵
+; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
 trp_c5_harondor_serpent_knight|金蛇骑士
 trp_c5_harondor_serpent_knight_pl|金蛇骑士
 trp_ac3_harondor_skirmisher|哈隆铎散兵
@@ -510,16 +510,16 @@ trp_i3_dun_pikeman|丹尼斯长柄枪手
 trp_i3_dun_pikeman_pl|丹尼斯长柄枪手
 trp_i4_dun_vet_pikeman|丹尼斯资深长柄枪手
 trp_i4_dun_vet_pikeman_pl|丹尼斯资深长柄枪手
-trp_ac2_dun_crebain_rider|登兰德骑兵
-trp_ac2_dun_crebain_rider_pl|登兰德骑兵
+trp_ac4_dun_crebain_rider|登兰德骑兵
+trp_ac4_dun_crebain_rider_pl|登兰德骑兵
 trp_i3_dun_vet_warrior|丹尼斯资深战士
 trp_i3_dun_vet_warrior_pl|丹尼斯资深战士
 trp_i4_dun_wolf_warrior|丹尼斯狼战
 trp_i4_dun_wolf_warrior_pl|丹尼斯狼战
 trp_i5_dun_wolf_guard|丹尼斯狼卫
 trp_i5_dun_wolf_guard_pl|丹尼斯狼卫
-trp_ac4_dun_raven_rider|登兰德黑鸦骑兵
-trp_ac4_dun_raven_rider_pl|登兰德黑鸦骑兵
+; trp_ac5_dun_raven_rider|Dunnish Night Raven
+; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
 trp_i1_khand_bondsman|侃德契奴 
 trp_i1_khand_bondsman_pl|侃德契奴 
 trp_i2_khand_pit_dog|侃德斑犬
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|侃德骑手
 trp_c4_khand_heavy_horseman|侃德重骑手
 trp_c4_khand_heavy_horseman_pl|侃德重骑手
 ; trp_c5_khand_kataphrakt|Variag Ironclad
-; trp_c5_khand_kataphrakt_pl|Variag Ironclad
+; trp_c5_khand_kataphrakt_pl|Variag Ironclads
 ; trp_c5_khand_lance_kataphrakt|Variag Lancer
-; trp_c5_khand_lance_kataphrakt_pl|Variag Lancer
+; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
 trp_i4_khand_halberdier|侃德阔剑士
 trp_i4_khand_halberdier_pl|侃德阔剑士
 ; trp_i5_khand_halberd_master|Variag Halberd Master

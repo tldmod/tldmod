@@ -254,6 +254,7 @@ mno_moria_exit_scene|Etsi tiesi ulos!
 menu_castle_outside|Olet ulkona {s2}.{s11} {s3} {s4}
 mno_moria_enter|Palaa Morian pääsaliin salaisen käytävän kautta.
 mno_moria_enter_door|Astu moriaan.
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|Piiritä {reg6?town:castle}.
 mno_castle_leave|Poistu.
 menu_castle_besiege|Olet piirittämässä {s1}. {s2} {s3}

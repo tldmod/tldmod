@@ -254,6 +254,7 @@ mno_moria_exit_scene|Pronađi izlaz!
 menu_castle_outside|Ispred si {s2}.{s11} {s3} {s4}
 mno_moria_enter|Vrati se u glavnu dvoranu Morije kroz skriveni ulaz
 mno_moria_enter_door|Uđi u Moriju.
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|Izvrši opsadu {reg6?town:castle}.
 mno_castle_leave|Odlazi.
 menu_castle_besiege|Vršiš opsadu {s1.} {s2} {s3}

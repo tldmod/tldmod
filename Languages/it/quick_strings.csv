@@ -233,7 +233,9 @@ qstr_when_equipped|Se equipaggiato
 qstr_+1_to_Riding|+1 a Cavalcare
 qstr_+1_to_Mounted_Archer|+1 in Arco in Sella
 qstr_+2_to_Tactics|+2 in Tattica
-qstr_+3_to_Spotting|+3 in Avvistamento
+qstr_+{reg1}_to_Spotting|+{reg1} in Avvistamento
+qstr__Scales_with_Wildcra|(Scaglie Mimetiche)
+qstr_+1_to_Spotting|+1 in Avvistamento
 qstr_+2_to_Athletics|+2 in Atleticità
 qstr_Less_Dunnish_upkeep|Minore gestione Dunlandiana
 qstr_Less_Wargs_upkeep|Minore gestione Wargs
@@ -738,6 +740,7 @@ qstr_A_Nazgul_is_circling|Un Nazgul vola circolarmente nei cieli sul campo di ba
 qstr_Some_of_your_human_t|Alcune delle tue truppe umane non sono scoraggiate dall'oscurità. (I Combattenti Notturni non sono influenzati dai rigori della notte)
 qstr_You_are_filled_with_|La rabbia ti pervade mentre fissi il nemico (Berserk attivo).
 qstr_Your_mount_is_scared|La tua bestia è spaventata dal {reg73?Ent:Troll} !
+qstr_Your_mount_is_scared_|La tua cavalcatura è spaventata da {reg73?ent:troll}, ma puoi domarla !
 qstr_Nazgul_sweep!|Spazzata Nazgul !
 qstr_You_and_your_horse_p|Tu e il tuo cavallo andate nel panico, le urla dei Nazgul sono insopportabili !
 qstr_Your_horse_panics_th|Il tuo cavallo va nel panico, le urla dei Nazgul sono insopportabili !
@@ -1188,6 +1191,8 @@ qstr_So_you_are_{s23}._I_|Così, tu sei {s23}. Ho saputo che hai combattuto per 
 qstr_I_need_volunteers_wi|Ho bisogno di volontari desiderosi di seguirmi in missioni pericolose.
 qstr_I_need_some_soldiers|Ho bisogno di alcuni soldati per rimpiazzare i caduti.
 qstr_{playername}_s_Reser|Riserve di {playername}
+qstr_Maybe_the_weaklings_|Forse i deboli del sud hanno messo armature sui loro Troll dalla pelle morbida. Non noi - i nostri Troll sono di Gundabad !
+qstr_Do_I_look_like_a_smi|Ti sembro un fabbro? Bah. Vai a parlare con qualcun altro.
 qstr_Excellent_job_{s23}!|Eccellente lavoro, {s23} ! Vorrei che tutti i comandanti si dedicassero come fai tu.^
 qstr_Nicely_done_{s23}.|Ben fatto, {s23}.
 qstr_Good_work_{s23}.|Ottimo lavoro, {s23}.

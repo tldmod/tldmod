@@ -756,7 +756,7 @@ itm_gondor_lance_banner|Lance du Gondor avec bannière
 itm_amroth_lance_banner|Lance de Dol Amroth avec bannière
 itm_rohan_lance_banner_sun|Lance rohirrim avec bannière du Soleil
 itm_rohan_lance_banner_horse|Lance rohirrim avec bannière du Cheval
-itm_ent_water|Étrange cuvette d'eau
+; itm_ent_water|Strange Bowl of Water
 itm_map|Cartes de la Terre du Milieu
 itm_athelas_reward|Athelas
 itm_phial_reward|Lumière de Galadriel
@@ -788,7 +788,7 @@ itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Arc de Bard
 itm_explosive_reward|Mine de l'Isengard
 itm_corsair_trident|Trident de la Furie de la Mer
-itm_crebain_reward|Crebain de l'Isengard
+; itm_crebain_reward|Crebain
 itm_miruvor_reward|Flasque de Miruvor
 itm_wheeled_cage|Cage sur roues géante
 itm_orc_throwing_axes_reward|Haches de lancer de Gundabad

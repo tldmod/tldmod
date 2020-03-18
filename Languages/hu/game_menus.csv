@@ -254,6 +254,7 @@ mno_moria_exit_scene|Találd meg a kifelé vezető utat!
 menu_castle_outside|Kint vagy {s2}.{s11} {s3} {s4}
 mno_moria_enter|Visszatérés Mória főcsarnokába a titkos bejáraton keresztül.
 mno_moria_enter_door|Belépés Móriába.
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|{reg6?város:kastély} megostromlása.
 mno_castle_leave|Távozás.
 menu_castle_besiege|Ostrom alá veszed {s1}. {s2} {s3}

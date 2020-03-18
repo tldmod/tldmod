@@ -254,6 +254,7 @@ mno_moria_exit_scene|找到一条出去的路！
 menu_castle_outside|你在{s2}的外面。{s11} {s3} {s4}
 mno_moria_enter|利用秘密入口重新进入摩瑞亚大厅
 mno_moria_enter_door|进入摩瑞亚
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|围攻{reg6?城镇:城堡}。
 mno_castle_leave|离开
 menu_castle_besiege|你正在围攻{s1}。 {s2} {s3}
@@ -377,7 +378,7 @@ mno_defend_refugees|注意袭击者……
 mno_attack_refugees|攻击难民队…
 mno_leave_refugees|暂时离开他们……
 mno_evil_war_tut_continue|继续...
-menu_guardian_party_quest|  = "{s8}送信说艾辛格已经到了最后关头，并且已经准备好最后一战。他希望你能够加入最后的战斗对抗艾辛格的敌人。你需要至少带着{reg13}名士兵加入大军，如果你没有足够的士兵，你需要抓紧时间训练出来。"
+menu_guardian_party_quest||{s8}送信说艾辛格已经到了最后关头，并且已经准备好最后一战。他希望你能够加入最后的战斗对抗艾辛格的敌人。你需要至少带着{reg13}名士兵加入大军，如果你没有足够的士兵，你需要抓紧时间训练出来。
 mno_guardian_party_reject|让信使回去报告，说你不能加入他。
 mno_guardian_party_send_word|让信使回去报告，告诉他你很快就会过去。
 menu_alternate_training_fight|你的对手将会是{reg5}。准备好了吗？

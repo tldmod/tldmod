@@ -487,7 +487,7 @@ trp_c2_harondor_scout_pl|Harondor İzcileri
 trp_c3_harondor_rider|Harondor Atlısı
 trp_c3_harondor_rider_pl|Harondor Atlıları
 trp_c4_harondor_light_cavalry|Harondor Hafif Atlısı
-trp_c4_harondor_light_cavalry_pl|Harandor Hafif Süvarisi
+trp_c4_harondor_light_cavalry_pl|Harondor Hafif Atlıları
 trp_c5_harondor_serpent_knight|Altın Engerek Şovalyesi
 trp_c5_harondor_serpent_knight_pl|Altın Engerek Şovalyeleri
 trp_ac3_harondor_skirmisher|Harondor Avcısı
@@ -510,16 +510,16 @@ trp_i3_dun_pikeman|Dunnish Mızrakçısı
 trp_i3_dun_pikeman_pl|Dunnish Mızrakçıları
 trp_i4_dun_vet_pikeman|Dunnish Kıdemli Mızrakçısı
 trp_i4_dun_vet_pikeman_pl|Dunnish Kıdemli Mızrakçıları
-trp_ac2_dun_crebain_rider|Dunland Crebain Binicisi
-trp_ac2_dun_crebain_rider_pl|Dunland Crebain Binicileri
+trp_ac4_dun_crebain_rider|Dunland Crebain Binicisi
+trp_ac4_dun_crebain_rider_pl|Dunland Crebain Binicileri
 trp_i3_dun_vet_warrior|Dunnish Kıdemli Savaşçısı
 trp_i3_dun_vet_warrior_pl|Dunnish Kıdemli Savaşçıları
 trp_i4_dun_wolf_warrior|Dunnish Kurt Savaşçısı
 trp_i4_dun_wolf_warrior_pl|Dunnish Kurt Savaşçıları
 trp_i5_dun_wolf_guard|Dunnish Kurt Muhafızı
 trp_i5_dun_wolf_guard_pl|Dunnish Kurt Muhafızları
-trp_ac4_dun_raven_rider|Dunnish Kuzgun Atlısı
-trp_ac4_dun_raven_rider_pl|Dunnish Kuzgun Atlıları
+; trp_ac5_dun_raven_rider|Dunnish Night Raven
+; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
 trp_i1_khand_bondsman|Khand Kölesi
 trp_i1_khand_bondsman_pl|Khand Köleleri
 trp_i2_khand_pit_dog|Khand Çukur Köpegi
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|Khand Atlıları
 trp_c4_khand_heavy_horseman|Khand Agır Atlısı
 trp_c4_khand_heavy_horseman_pl|Khand Agır Atlıları
 trp_c5_khand_kataphrakt|Variag Zırhlısı
-trp_c5_khand_kataphrakt_pl|Variag Zırhlısı
+trp_c5_khand_kataphrakt_pl|Variag Zırhlıları
 trp_c5_khand_lance_kataphrakt|Variag Mızraklısı
-trp_c5_khand_lance_kataphrakt_pl|Variag Mızraklısı
+trp_c5_khand_lance_kataphrakt_pl|Variag Mızraklıları
 trp_i4_khand_halberdier|Khand Tebercisi
 trp_i4_khand_halberdier_pl|Khand Tebercileri
 trp_i5_khand_halberd_master|Variag Teber Ustası

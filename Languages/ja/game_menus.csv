@@ -254,6 +254,7 @@ mno_moria_exit_scene|出口を探すんだ！
 menu_castle_outside|ここは{s2}の外です。 {s11} {s3} {s4}
 mno_moria_enter|秘密の入り口を通って、モリアの大広間へ行く
 mno_moria_enter_door|モリアに入る。
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|この{reg6?町:城}を包囲する。
 mno_castle_leave|立ち去る。
 menu_castle_besiege|あなたは{s1}の包囲を準備しています。 {s2} {s3}

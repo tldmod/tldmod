@@ -164,6 +164,17 @@ dlga_companion_home_description:close_window.1|Ich bevorzuge es, wenn meine Begl
 dlga_start:player_hire_troop|{s33}^^Ich befehlige die Truppen hier in {s21}. Ihr wolltet mich sehen?
 dlga_player_hire_troop:player_hire_troop_give|Einige meiner Männer wären hier von größerem Nutzen, um {s21} zu verteidigen.
 dlga_player_hire_troop:close_window|Ich will meine Truppen hier überprüfen.
+dlga_player_hire_troop:player_hire_trolls_take|Ich brauche einen Kampftroll!
+dlga_player_hire_trolls_take:close_window|Gepanzerte Trolle, was? Nicht jeder Troll kann eine Rüstung tragen. Komm wieder, wenn du einen genügend abgerichtet hast.
+dlga_player_hire_trolls_take:close_window.1|Du? Du armselige Made. Geh mir aus den Augen! Kampftroll - natürlich... (Du musst {s24} oder höher sein.)
+dlga_player_hire_trolls_take:player_hire_trolls_how_many|Das kostet {reg21} Einfluss.
+dlga_player_hire_trolls_take:close_window.2|Ich habe meine Meinung geändert.
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Ein furchterregendes Biest! Und nun gehorcht es mir!
+dlga_player_hire_trolls_how_many:player_hire_troll_armoured|Trolle kämpfen besser, wenn starkes Eisen sie beschützt. Mach das!
+dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Ich habe meine Meinung geändert.
+dlga_player_hire_troll_buy_not_enough:close_window|Du verschwendest meine Zeit...
+dlga_player_hire_troll_buy_done:close_window|Kümmere dich gut um deinen neuen großen Freund und er wird dir gute Dienste leisten!
 dlga_player_hire_troop:close_window.1|Ich brauche etwas Übung.
 dlga_player_hire_troop:tld_sell_prisoners|Ich bringe Euch einige Gefangene.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Lass uns diesen jämmerlichen Abschaum ansehen.
@@ -979,6 +990,18 @@ dlga_start:town_merchant_talk|Seid gegrüßt, Hauptmann. Wie kann ich Euch diene
 dlga_start:town_merchant_talk.1|Guten Tag, was kann ich für Euch tun?
 dlga_town_merchant_talk:trade_requested_weapons|Ich brauche neue Ausrüstung. Zeigt mir, was Ihr in Eurem Warenlager habt.
 dlga_town_merchant_talk:trade_requested_horse|Ich denke darüber nach, mir ein Reittier zuzulegen.
+dlga_town_merchant_talk:player_upgrade_trolls_take|Ich will meine Trolle ausrüsten!
+dlga_player_upgrade_trolls_take:close_window|Wer bist du, dass du das von mir verlangst? Pah, veschwinde! (Du musst {s24} oder höher sein.)
+dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Du hast dich um unsere Sache verdient gemacht. Wir werden diesen Burschen mit Eisen beschirmen! (Kostet {reg21} Resourcenpunkte.)
+dlga_player_upgrade_trolls_take:close_window.1|Deine Trolle sind wie Welpen! Du musst sie erst abrichten, ehe sie Rüstungen tragen können!
+dlga_player_upgrade_trolls_take:close_window.2|Sowas machen wir hier nicht.
+dlga_player_upgrade_trolls_take:close_window.3|Deine Trolle können nichtmal richtig sprechen. Sie gehören nicht zu uns. Nimm sie wieder mit dahin, wo du sie her hast!
+dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Vergiss es.
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|Ich werden einen von ihnen ausrüsten.
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Ich verdiene das wohl noch nicht. Ich werde dich nicht damit behelligen.
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Vergiss es.
+dlga_player_upgrade_troll_not_enough:close_window|Du verschwendest meine Zeit...
+dlga_player_upgrade_troll_buy_done:close_window|Braver Bursche! Komm her, du großer Trottel...
 dlga_trade_requested_weapons:merchant_trade|Ah, natürlich, Hauptmann. Diese Waren sind die besten weit und breit.
 dlga_trade_requested_horse:merchant_trade|Grimmige Tiere, fürs Reiten und Töten, und auch Fleisch um sie damit zu füttern. Du wirst keine besseren Viecher als diese finden.
 dlga_merchant_trade:town_merchant_talk|Sonst noch etwas?

@@ -254,6 +254,7 @@ mno_moria_exit_scene|나갈 길을 찾는다!
 menu_castle_outside|당신은 {s2}의 야외에 있습니다.{s11} {s3} {s4}
 mno_moria_enter|비밀 입구를 통해 모리아의 본관으로 돌아가기
 mno_moria_enter_door|모리아에 입장
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|{reg6?town:castle} 포위하기
 mno_castle_leave|떠나기
 menu_castle_besiege|당신은 {s1}을 포위하고 있습니다. {s2} {s3}
@@ -269,7 +270,7 @@ mno_build_ladders_cont|실행
 menu_castle_attack_walls_simulate|{s4}^^아군 사상자: {s8}^^적군 사상자: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^아군 사상자: {s8}^^동맹 사상자: {s9}^^적군 사상자: {s10}
 ; menu_castle_taken_by_friends|Nothing to see here.
-menu_castle_taken|여기는 볼 일이 없습니다.\nmenu_castle_taken  = "{s3}는 당신의 군대에게 함락 되었고, 지금 당신은 {reg2?도시의:성의} 모든 통제권을 가졌습니다.{reg1? 당신이 이 곳을 취하는 것을 막을 자는 아무도 없는 것으로 보입니다...:}"
+menu_castle_taken|여기는 볼 일이 없습니다.\nmenu_castle_taken|{s3}는 당신의 군대에게 함락 되었고, 지금 당신은 {reg2?도시의:성의} 모든 통제권을 가졌습니다.{reg1? 당신이 이 곳을 취하는 것을 막을 자는 아무도 없는 것으로 보입니다...:}
 menu_castle_taken_2|{s3}은 당신의 군사에게 함락되었고, 당신은 성의 모든 통제권을 가졌습니다. {s9}에게 당신의 승리에 대한 서신을 보낼 시간입니다. {s5}
 mno_castle_taken_no_claim|보상 요구하지 않기
 menu_siege_started_defender|{s1}은(는) {s2}에 대한 공성전을 감행하고 있습니다. ^{reg22}명의 아군을 이끌고 {reg11}명의 적을 상대해야 합니다. 당신은...

@@ -254,6 +254,7 @@ mno_moria_exit_scene|Trouver la sortie
 menu_castle_outside|Vous êtes à l'extérieur de {s2}. {s11} {s3} {s4}
 mno_moria_enter|Retourner au hall principal de la Moria par l'entrée secrète.
 mno_moria_enter_door|Entrer dans la Moria.
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|Assiéger {reg6?la ville:le château}.
 mno_castle_leave|Partir.
 menu_castle_besiege|Vous assiégez {s1}. {s2} {s3}

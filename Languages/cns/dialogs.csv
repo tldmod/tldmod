@@ -164,6 +164,17 @@ dlga_companion_home_description:close_window.1|我更希望我的同伴不因琐
 dlga_start:player_hire_troop|{s33}^^我全权负责驻守在{s21}的部队。听说你要见我？
 dlga_player_hire_troop:player_hire_troop_give|我队伍里的一些士兵能够帮助防守{s21}。
 dlga_player_hire_troop:close_window|我想检查驻扎在这里的士兵。
+; dlga_player_hire_troop:player_hire_trolls_take|I am a commander worthy of a fighting Troll - give me one!
+; dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
+; dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
+; dlga_player_hire_trolls_take:player_hire_trolls_how_many|It will cost {reg21} influence.
+; dlga_player_hire_trolls_take:close_window.2|I’ve changed my mind.
+; dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|A fearsome beast. And now, it is mine!
+; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
+; dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
+; dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|I’ve changed my mind.
+; dlga_player_hire_troll_buy_not_enough:close_window|Wasting my time...
+; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
 dlga_player_hire_troop:close_window.1|我需要一些训练。
 dlga_player_hire_troop:tld_sell_prisoners|我给你带来了一些囚犯。
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33}让我们瞧瞧这些可怜的渣滓！
@@ -320,7 +331,7 @@ dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|你为孤山做出了巨大�
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|谢谢你，{s3}。
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|现在你会怎么做？
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|我们不会对谋杀我们亲族的凶手置之不理。我们必将令此等加害我族者灭亡。从刚达巴山之巅到卡扎督姆之底，我们要让迷雾山脉被半兽人的血染为黑色。
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}，我希望帮助{s4}人们来为巴林远征队复仇。\ndlga_dwarf_lord_book_give_i:lord_pretalk  = "祝你好运。"
+dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}，我希望帮助{s4}人们来为巴林远征队复仇。\ndlga_dwarf_lord_book_give_i:lord_pretalk|祝你好运。
 dlga_dwarf_lord_book_give_i:lord_pretalk|那就祝你好运了
 dlga_dwarf_lord_avenge:close_window|很好，{playername}。带上都灵一族的祝福给我们的敌人带去死亡吧。让他们知道我们的人民曾经历的痛苦和恐惧
 dlga_lord_talk:find_lost_spears_permission|大人，我希望能进入孤山寻找布拉多辛王丢失的长枪。
@@ -979,6 +990,18 @@ dlga_start:town_merchant_talk|向你问好，指挥官，我今天能有幸为�
 dlga_start:town_merchant_talk.1|日安。有什么我可以效劳的吗？
 dlga_town_merchant_talk:trade_requested_weapons|我需要新的装备，跟我说说你的仓库中都有什么好东西。
 dlga_town_merchant_talk:trade_requested_horse|我正考虑弄一匹坐骑。
+; dlga_town_merchant_talk:player_upgrade_trolls_take|I want to strengthen my trolls!
+; dlga_player_upgrade_trolls_take:close_window|Who are you to ask this of me? Pah! Begone! (You need to be {s24} or higher)
+; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
+; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
+; dlga_player_upgrade_trolls_take:close_window.2|We don't do that here...
+; dlga_player_upgrade_trolls_take:close_window.3|Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!
+; dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Forget it
+; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
+; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
+; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Forget it
+; dlga_player_upgrade_troll_not_enough:close_window|Wasting my time...
+; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
 dlga_trade_requested_weapons:merchant_trade|啊，好的指挥官。你在任何地方都不会找到比我这儿更好的货物了。
 dlga_trade_requested_horse:merchant_trade|我这的坐骑不论是用来杀人还是旅行都是绝对的首选，过了这个村可就没这个店了！
 dlga_merchant_trade:town_merchant_talk|还有其他的事情么？

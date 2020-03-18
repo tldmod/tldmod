@@ -254,6 +254,7 @@ mno_moria_exit_scene|Najdi cestu von!
 menu_castle_outside|Si vonku {s2}.{s11} {s3} {s4}
 mno_moria_enter|Vráť sa do hlavnej siene Morie skrz tajný vstup.
 mno_moria_enter_door|Vstúpiť do Morie.
+; mno_cheat_steal_book_door|Get the book
 mno_castle_start_siege|Obliehať {reg6?mesto:hrad}.
 mno_castle_leave|Odísť.
 menu_castle_besiege|Obliehaš {s1}. {s2} {s3}

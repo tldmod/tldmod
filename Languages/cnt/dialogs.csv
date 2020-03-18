@@ -164,6 +164,17 @@ dlga_companion_home_description:close_window.1|我 希 望 我 的 同 伴 不 �
 dlga_start:player_hire_troop|{s33}^^我 全 權 負 責 駐 守 在 {s21} 的 部 隊。你 找 我 嗎？
 dlga_player_hire_troop:player_hire_troop_give|我 隊 伍 裡 的 一 些 士 兵 能 在 這 幫 忙 防 守 {s21}。
 dlga_player_hire_troop:close_window|我 想 檢 閱 我 駐 紮 在 這 裡 的 士 兵。
+; dlga_player_hire_troop:player_hire_trolls_take|I am a commander worthy of a fighting Troll - give me one!
+; dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
+; dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
+; dlga_player_hire_trolls_take:player_hire_trolls_how_many|It will cost {reg21} influence.
+; dlga_player_hire_trolls_take:close_window.2|I’ve changed my mind.
+; dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|A fearsome beast. And now, it is mine!
+; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
+; dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
+; dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|I’ve changed my mind.
+; dlga_player_hire_troll_buy_not_enough:close_window|Wasting my time...
+; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
 dlga_player_hire_troop:close_window.1|我 需 要 一 些 訓 練。
 dlga_player_hire_troop:tld_sell_prisoners|我 為 你 帶 來 了 一 些 囚 犯。
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} 讓 我 們 瞧 瞧 這 些 可 悲 的 渣 籽！
@@ -979,6 +990,18 @@ dlga_start:town_merchant_talk|日 安 ， 指 揮 官 。 今 天 您 需 要 �
 dlga_start:town_merchant_talk.1|日 安 ， 我 能 為 你 做 什 麼 呢 ?
 dlga_town_merchant_talk:trade_requested_weapons|我 想 要 購 買 新 的 裝 備 ， 讓 我 看 看 你 的 倉 庫 裡 有 什 麼 貨 。
 dlga_town_merchant_talk:trade_requested_horse|我 在 想 要 買 一 隻 坐 騎 。
+; dlga_town_merchant_talk:player_upgrade_trolls_take|I want to strengthen my trolls!
+; dlga_player_upgrade_trolls_take:close_window|Who are you to ask this of me? Pah! Begone! (You need to be {s24} or higher)
+; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
+; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
+; dlga_player_upgrade_trolls_take:close_window.2|We don't do that here...
+; dlga_player_upgrade_trolls_take:close_window.3|Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!
+; dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Forget it
+; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
+; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
+; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Forget it
+; dlga_player_upgrade_troll_not_enough:close_window|Wasting my time...
+; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
 dlga_trade_requested_weapons:merchant_trade|歐 ， 是 的 指 揮 官 。 這 些 商 品 是 你 隨 處 可 見 的 野 獸 啊 。
 dlga_trade_requested_horse:merchant_trade|兇 猛 的 戰 鬥 坐 騎 ， 還 附 贈 餵 食 牠 們 的 肉 ! 你 找 不 到 比 我 這 裡 更 好 的 野 獸 了  。
 dlga_merchant_trade:town_merchant_talk|還 有 其 他 的 嗎?

@@ -1710,8 +1710,8 @@ str_gondor_rank_2|Seržant Gondoru
 str_gondor_rank_3|Rytíř Gondoru
 str_gondor_rank_4|Gondorský Strážce citadely
 str_gondor_rank_5|Gondorský Rytíř citadely
-str_gondor_rank_6|Gondorská Správcova stráž
-str_gondor_rank_7|Gondorský kapitán
+str_gondor_rank_6|Gondorský Správcův strážce
+str_gondor_rank_7|Kapitán Gondoru
 str_gondor_rank_8|Šampion Gondoru
 str_gondor_rank_9|Hrdina Gondoru
 str_dwarf_rank_0|Trpaslík zelenáč
@@ -1731,7 +1731,7 @@ str_rohan_rank_3|Rohir, Jezdec Rohanu
 str_rohan_rank_4|Scyldbora, Štítonoš Rohanu
 str_rohan_rank_5|Swéordbora, Pán meče Rohanu
 str_rohan_rank_6|Frumgar, Vrchní kopiník Rohanu
-str_rohan_rank_7|Bealdoraed, Mistra rádce Rohanu
+str_rohan_rank_7|Bealdoraed, Mistr rádce Rohanu
 str_rohan_rank_8|Eorl, Šlechtic Rohanu
 str_rohan_rank_9|Haleth, Hrdina Rohanu
 str_mordor_rank_0|Červ
@@ -1800,7 +1800,7 @@ str_harad_rank_2|Válečník Klanu
 str_harad_rank_3|Zabiják lvů
 str_harad_rank_4|Zaříkávač hadů
 str_harad_rank_5|Správce Olifantů
-str_harad_rank_6|Stráž Černého hada
+str_harad_rank_6|Strážce Černého hada
 str_harad_rank_7|Kapitán Harondoru
 str_harad_rank_8|Generál Zlaté pouště
 str_harad_rank_9|Zlatý Had

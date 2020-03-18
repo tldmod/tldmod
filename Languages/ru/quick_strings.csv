@@ -233,7 +233,9 @@ qstr_when_equipped|когда надето на персонажа
 ; qstr_+1_to_Riding|+1 to Riding
 ; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
 qstr_+2_to_Tactics|+2 к тактике
-qstr_+3_to_Spotting|+3 к навыку слежения
+; qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
+; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
+; qstr_+1_to_Spotting|+1 to Spotting
 ; qstr_+2_to_Athletics|+2 to Athletics
 qstr_Less_Dunnish_upkeep|Снижает содержание дунландцев
 qstr_Less_Wargs_upkeep|Снижает содержание всадников на варгах
@@ -738,6 +740,7 @@ qstr_A_Nazgul_is_circling|Назгул кружит над полем боя!
 ; qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 ; qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
 ; qstr_Your_mount_is_scared|Your mount is scared by the {reg73?ent:troll}!
+; qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
 qstr_Nazgul_sweep!|Назгул атакует!
 qstr_You_and_your_horse_p|Вы и ваша лошадь в ужасе, крики назгула невыносимы!
 qstr_Your_horse_panics_th|Ваша лошадь несётся прочь, крики назгула невыносимы!
@@ -1188,6 +1191,8 @@ qstr_So_you_are_{s23}._I_|Итак, вы {s23}. Я слышал, ты сража
 qstr_I_need_volunteers_wi|Мне нужны добровольцы, готовые последовать за мной, несмотря на опасность.
 qstr_I_need_some_soldiers|Мне нужны воины, чтобы восполнить потери.
 qstr_{playername}_s_Reser|Резерв игрока
+; qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
+; qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
 qstr_Excellent_job_{s23}!|Превосходная работа, {s23}! Хотелось бы, чтобы все наши командиры были столь же преданны, сколь и ты^
 qstr_Nicely_done_{s23}.|Отлично сработано, {s23}.
 qstr_Good_work_{s23}.|Хорошая работа, {s23}.

@@ -233,7 +233,9 @@ qstr_when_equipped|gdy wyekwipowany
 qstr_+1_to_Riding|+1 do Jazdy Konnej
 qstr_+1_to_Mounted_Archer|+1 do Łucznictwa Konnego
 qstr_+2_to_Tactics|+2 do taktyki
-qstr_+3_to_Spotting|+3 do Spostrzegania
+; qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
+; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
+; qstr_+1_to_Spotting|+1 to Spotting
 qstr_+2_to_Athletics|+2 do Atletyki
 qstr_Less_Dunnish_upkeep|Mniejsze utrzymanie Dunlandczyków
 qstr_Less_Wargs_upkeep|Mniejsze utrzymanie Wargów
@@ -738,6 +740,7 @@ qstr_A_Nazgul_is_circling|Nagul krąży nad polem bitwy!
 qstr_Some_of_your_human_t|Niektóre z twoich ludzkich żołnierzy nie są przestraszone przez ciemność. (Nocne oddziały nie podlegają karom nocnym)
 qstr_You_are_filled_with_|Jesteś wypełniony po prostu wściekłością, gdy patrzysz na wroga (aktywny Berserk).
 qstr_Your_mount_is_scared|Twój wierzchowiec jest przestraszony przez {reg73?ent: troll}!
+; qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
 qstr_Nazgul_sweep!|Nadlatuje Nazgul!
 qstr_You_and_your_horse_p|Ty i twój koń panikujecie, wrzask Nazgula jest nie do zniesienia!
 qstr_Your_horse_panics_th|Twój koń panikuje, wrzask Nazgula jest nie do zniesienia!
@@ -1188,6 +1191,8 @@ qstr_So_you_are_{s23}._I_|Więc jesteś {s23}. Słyszałem, że wspomagasz naszy
 qstr_I_need_volunteers_wi|Potrzebuję ochotników do niebezpiecznej misji.
 qstr_I_need_some_soldiers|Potrzebuję nowych żołnierzy, by zastąpili martwych.
 qstr_{playername}_s_Reser|Rezerwy {playername}
+; qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
+; qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
 qstr_Excellent_job_{s23}!|Doskonała robota, {s23}! Życzę wszystkim naszym dowódcom równego poświęcenia.^
 qstr_Nicely_done_{s23}.|Ładnie, {s23}.
 qstr_Good_work_{s23}.|Dobra robota, {s23}.
