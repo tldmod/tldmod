@@ -1921,7 +1921,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",11),
+    (assign,"$savegame_version",12),
 
 	] + (is_a_wb_script==1 and [
 
@@ -23883,6 +23883,20 @@ command_cursor_scripts = [
   		(faction_set_slot, "fac_mordor", slot_faction_troll_troop, "trp_mordor_troll"),
   		(faction_set_slot, "fac_gundabad", slot_faction_troll_troop, "trp_gunda_troll"),
     	(assign, "$savegame_version", 11),
+    (try_end),
+
+    (try_begin), #Kham - March 2020
+    	(lt, "$savegame_version", 11),
+			(try_for_range, ":kingdoms", kingdoms_begin, kingdoms_end),
+				(neq, ":kingdoms", "fac_moria"),
+				(neq, ":kingdoms", "fac_isengard"),
+				(neq, ":kingdoms", "fac_mordor"),
+				(neq, ":kingdoms", "fac_gundabad"),
+				(neq, ":kingdoms", "fac_guldur"),
+				(faction_set_slot, ":kingdoms", slot_faction_troll_troop, -1),
+			(try_end),
+  		(faction_set_slot, "fac_guldur", slot_faction_troll_troop, "trp_mordor_troll"),
+    	(assign, "$savegame_version", 12),
     (try_end),
 ]),
 
