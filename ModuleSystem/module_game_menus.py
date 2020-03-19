@@ -5529,6 +5529,7 @@ game_menus = [
         # The conditions should make sure that always another screen or menu is called.
         (assign, ":done", 0),
 
+	(call_script, "script_maybe_relocate_player_from_z0"),
 	(try_begin),
 		(ge, "$battle_won", 0), # (CppCoder): Battle was won, or was neutral
 					# (CppCoder): Gonna do more testing, is this required? Even if a battle is lost, shouldn't the troops spawn?
@@ -6048,6 +6049,7 @@ game_menus = [
     "You shouldn't be reading this...",
     "none",
     [     (play_track, "track_captured", 1),
+		  (call_script, "script_maybe_relocate_player_from_z0"),
           # Free prisoners
           (party_get_num_prisoner_stacks, ":num_prisoner_stacks","p_main_party"),
           (try_for_range, ":stack_no", 0, ":num_prisoner_stacks"),

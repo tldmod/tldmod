@@ -3729,7 +3729,7 @@ scripts = [
 		(eq,":item_no","itm_phial_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Wildcraft"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to Leadership"),(try_end),
-		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to Intelligence"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@+1 to Intelligence"),(try_end),
         (set_trigger_result, color_item_text_bonus),
       (else_try),
 		(eq,":item_no","itm_khand_knife_reward"),
@@ -11398,7 +11398,6 @@ scripts = [
 		(assign, reg10,":scene_to_use"), (display_message,"@debug: using scene ID N. {reg10}"),
 	(try_end),
 	(jump_to_scene,":scene_to_use"),
-	(call_script, "script_maybe_relocate_player_from_z0"),
 
 ]),
 
