@@ -1921,7 +1921,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",12),
+    (assign,"$savegame_version",13),
 
 	] + (is_a_wb_script==1 and [
 
@@ -6881,7 +6881,8 @@ scripts = [
         (else_try),          #mtarini: Saruman wants a troll be captured
           (eq, ":quest_no", "qst_capture_troll"),
 		  (try_begin),
-			(eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest
+			(this_or_next|eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest
+			(eq, ":giver_troop", "trp_guldur_lord"),
 			(ge, ":player_level", 7),
 			(assign, ":quest_expiration_days", 15),
 			(assign, ":quest_dont_give_again_period", 20),
@@ -6889,7 +6890,7 @@ scripts = [
 			(assign, ":quest_importance", 3),
 			(assign, ":quest_xp_reward", 1500),
 			(assign, ":quest_gold_reward", 500),
-			(assign, ":quest_rank_reward", 45),
+			(assign, ":quest_rank_reward", 10),
 			(assign, ":result", ":quest_no"),
 		  (try_end),
         (else_try),
