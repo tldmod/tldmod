@@ -23900,6 +23900,22 @@ command_cursor_scripts = [
   		(faction_set_slot, "fac_guldur", slot_faction_troll_troop, "trp_mordor_troll"),
     	(assign, "$savegame_version", 12),
     (try_end),
+	
+    (try_begin), #InVain - March 2020
+    	(le, "$savegame_version", 12),	
+			(try_for_range, ":trolls", trp_moria_troll, trp_ent2),
+				(troop_set_type, ":trolls", tf_troll),
+				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
+				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
+				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
+				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
+				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
+				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
+				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
+				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
+			(try_end),
+		(assign, "$savegame_version", 13),
+	(try_end),		   
 ]),
 
 #Kham
