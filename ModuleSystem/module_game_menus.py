@@ -3448,8 +3448,8 @@ game_menus = [
     ("what_theater",[], "Which Theater Am I in / Followers?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
   	(assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news),
   	(call_script, "script_cf_find_target_patrolling_enemy_lord_in_theater", "fac_gondor"),]),
-    ("what_region",[], "Get Troop Number", 
-    	[(call_script, "script_party_count_fit_regulars", "p_main_party"), (display_message, "@{reg0} Fit Regulars"), (call_script, "script_party_count_fit_for_battle", "p_main_party"), (display_message, "@{reg0} Fit for battle"), 
+    ("what_region",[], "Add 1000000 XP to Party", 
+    	[(party_add_xp, "p_main_party", 1000000), (display_message, "@XP added", color_good_news),
     	]),
     ("player_control_allies",[],"Battlesize set to {reg66}", [(options_set_battle_size, reg66),]),
      ] or []) + [
