@@ -3358,14 +3358,14 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
 					(store_random_in_range, ":random", 0, ":riding_chance"),
 						#(assign, reg6, ":random"),
 						#(display_message, "@random = {reg6}"),
-					(try_begin),(le,":random",2),(agent_set_animation,":horse","anim_horse_rear"      ),(agent_play_sound,":horse","snd_neigh"),
+					(try_begin),(le,":random",1),(agent_set_animation,":horse","anim_horse_rear"      ),(agent_play_sound,":horse","snd_neigh"),
 					 #(else_try),(eq,":random",1),(agent_set_animation,":horse","anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"), #these animations don't seem to bring the horse to a stop
 					 #(else_try),(eq,":random",2),(agent_set_animation,":horse","anim_horse_turn_left"),(agent_play_sound,":horse","snd_horse_low_whinny"),
 					(try_end),
                     # let the player know what happened
 					(try_begin),
                         (eq, ":rider", ":player_agent"),
-                        (is_between, ":random", 0, 3),
+                        (is_between, ":random", 0, 2),
                         (display_message, "@Your mount is scared by the {reg73?ent:troll}!",color_bad_news),
 					   (else_try),
 					    (eq, ":rider", ":player_agent"),

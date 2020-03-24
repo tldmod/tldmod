@@ -1872,7 +1872,7 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
 	(try_begin), #make up for reduced troll strength
 		(troop_get_type, ":race", ":troop_id"),
 		(eq, ":race", tf_troll),
-		(agent_set_max_hit_points, ":agent", 300,1),
+		(agent_set_max_hit_points, ":agent", 150,1),
 	(try_end),
 		
 		
@@ -1935,7 +1935,14 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
         (eq, ":type", itp_type_bow),
         (gt, ":dist", 30),
         (val_div, ":damage", 3),
-	  (else_try),
+	  (else_try), #buff spears, note: also affects swing attacks (blunt spears attacks, halberds etc)
+		(item_has_property, ":weapon", itp_type_polearm),
+		(item_get_thrust_damage_type, ":thrust_damage_type", ":weapon"),
+		(eq, ":thrust_damage_type", 1), #check for spears, also finds halberds, bills etc
+		(val_mul, ":damage", 3),
+		(val_div, ":damage", 2),
+		#(display_message, "@spear found"),
+	  (else_try), #nerf blunt weapons		
 		(item_get_thrust_damage_type, ":thrust_damage_type", ":weapon"),
 		(neq, ":thrust_damage_type", 1), #exclude spears
 		(item_get_swing_damage_type, ":swing_damage_type", ":weapon"),

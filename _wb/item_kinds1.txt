@@ -216,7 +216,7 @@ itemsfile version 2
  itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  4385144836 512 1 0 58 100 0 0 0 0 30720 70 70 200 0 542 542
 0
 
- itm_troll_weapon_dmg Giant_Mace Giant_Mace 4  dummy_mesh 2  orc_sledgehammer_troll 8  giant_mace 1  giant_hammer 524288  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 80 100 110 0 542 542
+ itm_troll_weapon_dmg Giant_Mace Giant_Mace 4  dummy_mesh 2  orc_sledgehammer_troll 8  giant_mace 1  giant_hammer 524288  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 85 100 110 0 542 542
 0
 
  itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 6  dummy_mesh 0  bone_cudgel_troll 128  troll_club 8  tree_trunk_club 1024  orc_club_a_troll 262144  giant_mace_b 524288  141822394371 9259400833873739810 1 0 58 100 0 0 0 0 25600 70 150 130 0 537 537
@@ -2535,7 +2535,7 @@ itemsfile version 2
  itm_free_pippin_outfit hobbit_outfit hobbit_outfit 1  pippin 0  16781325 0 1 0 1 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_ent_body Ent_Body Ent_Body 5  ent_body 0  olog_body 4  olog_body_b 2097152  isen_olog_body 256  isen_olog_body_b 512  137455734797 0 1 0 58 100 0 62 0 70 0 0 0 0 0 0 0
+ itm_ent_body Ent_Body Ent_Body 5  ent_body 0  olog_body 4  olog_body_b 2097152  isen_olog_body 256  isen_olog_body_b 512  137455734797 0 1 0 58 100 0 55 0 70 0 0 0 0 0 0 0
 0
 
  itm_ent_head_helm Ent_Head Ent_Head 10  ent_head1 0  olog_head 67108864  olog_head_b 134217728  olog_head_c 536870912  ent_head1 1099511627776  ent_head2 2199023255552  ent_head3 274877906944  isen_olog_head 8  isen_olog_head_b 256  isen_olog_head_c 512  4108 0 1 0 58 100 60 0 0 70 0 0 0 0 0 0 0
@@ -2544,7 +2544,7 @@ itemsfile version 2
  itm_troll_head troll_head troll_head 9  ent_head2 0  troll_head 2199023255552  troll_head_b 549755813888  troll_head_c 274877906944  gunda_troll_head 1099511627776  gunda_troll_head_b 137438953472  gunda_troll_head_c 4398046511104  mordor_troll_head 33554432  mordor_troll_head_b 67108864  4108 0 1 0 58 100 40 0 0 70 0 0 0 0 0 0 0
 0
 
- itm_troll_body troll_body troll_body 4  troll_body 0  gunda_troll_body 33554432  mordor_troll_body 67108864  troll_body 274877906944  137455734797 0 1 0 58 100 0 45 0 70 0 0 0 0 0 0 0
+ itm_troll_body troll_body troll_body 4  troll_body 0  gunda_troll_body 33554432  mordor_troll_body 67108864  troll_body 274877906944  137455734797 0 1 0 58 100 0 40 0 70 0 0 0 0 0 0 0
 0
 
  itm_ent_feet_boots Ent_Feet Ent_Feet 6  ent_foot 0  troll_feet 2  gunda_troll_feet 4  mordor_troll_feet 8  olog_feet 67108864  olog_feet 33554432  4110 0 1 0 58 100 0 0 60 70 0 0 0 0 0 0 0

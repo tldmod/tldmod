@@ -23773,6 +23773,9 @@ command_cursor_scripts = [
 #Input: none
 #Output: Updated game state
 ("update_savegame",[
+    (try_for_range, ":trolls", trp_moria_troll, trp_ent2),
+		(call_script, "script_get_hp_shield_value", ":trolls"),
+	(try_end),		   
     (try_begin),
         (lt,"$savegame_version",1),
         (call_script,"script_migrate_volunteer_system"),
@@ -25980,7 +25983,7 @@ command_cursor_scripts = [
 		(store_script_param_1, ":troop_id"),
 
 		(store_skill_level, ":ironflesh",  skl_ironflesh, ":troop_id",),
-		(store_mul, reg0, ":ironflesh", 50), # Kham: Change to what value we want. Moria Troll needs higher HP shield cause unarmoured.
+		(store_mul, reg0, ":ironflesh", 40), # tweakable. Slot is updated via savegame compat script.
 		(troop_set_slot, ":troop_id", slot_troop_hp_shield, reg0),
 	]),
 
