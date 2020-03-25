@@ -6890,7 +6890,7 @@ scripts = [
 			(assign, ":quest_importance", 3),
 			(assign, ":quest_xp_reward", 1500),
 			(assign, ":quest_gold_reward", 500),
-			(assign, ":quest_rank_reward", 10),
+			(assign, ":quest_rank_reward", 20),
 			(assign, ":result", ":quest_no"),
 		  (try_end),
         (else_try),

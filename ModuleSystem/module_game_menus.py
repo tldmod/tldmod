@@ -4127,18 +4127,18 @@ game_menus = [
 	("killit",[],"Dispatch it, now. Make sure it dies.",[(jump_to_menu,"$g_next_menu")],),
 	("cageit1",[
 	  (player_has_item,"itm_wheeled_cage"),(troops_can_join_as_prisoner,1),
-	  (party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_moria_troll"),(eq, ":num_trolls", 0),
+	  (party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_wild_troll"),(eq, ":num_trolls", 0),
 	 ],
 	 "Cage it and drag it around.",[
-      (party_add_prisoners, "p_main_party", "trp_moria_troll", 1),
+      (party_add_prisoners, "p_main_party", "trp_wild_troll", 1),
 	  (display_message,"@Troll caged in wheeled cage."),
       (jump_to_menu,"$g_next_menu")],
 	),
 	("cageit2",[ # capture a second troll as prisoner
 	   (player_has_item,"itm_wheeled_cage"),(troops_can_join_as_prisoner,1),
-	   (party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_moria_troll"),(eq, ":num_trolls", 1),
+	   (party_count_prisoners_of_type, ":num_trolls", "p_main_party", "trp_wild_troll"),(eq, ":num_trolls", 1),
 	],"Cage it together with the other troll.",[
-      (party_add_prisoners, "p_main_party", "trp_moria_troll", 1),
+      (party_add_prisoners, "p_main_party", "trp_wild_troll", 1),
 	  (display_message,"@A second troll is caged in wheeled cage."),
       (jump_to_menu,"$g_next_menu")],
 	),

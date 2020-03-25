@@ -1920,7 +1920,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
 
     (try_begin),
-      (this_or_next|is_between, ":troop_id", "trp_moria_troll", "trp_ent"),
+      (this_or_next|is_between, ":troop_id", "trp_troll_of_moria", "trp_ent"), #old troll range
 	  (is_between, ":troop_id", "trp_moria_troll", "trp_ent2"), #new troll range
       (gt, ":current_hp_shield", 0),
 
