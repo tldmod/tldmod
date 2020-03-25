@@ -4095,7 +4095,6 @@ game_menus = [
     "^^^A great victory!^^^So this is what all the myths about Fangorn meant...",
 	"none",[],[
 	("continue",[],"Continue...",[
-		(change_screen_map),
 		(try_begin),
 			(check_quest_active, "qst_investigate_fangorn"),
 			(neg|check_quest_succeeded, "qst_investigate_fangorn"),
@@ -4103,6 +4102,7 @@ game_menus = [
 			(call_script, "script_succeed_quest", "qst_investigate_fangorn"),
 			(troop_add_item, "trp_player", "itm_ent_water", 0), #MV: reward for defeating the Ents
 		(try_end),
+		(change_screen_map),
 	]),
  ]),
 ( "fangorn_killed_player_only",0, # player only was killed by fangorn

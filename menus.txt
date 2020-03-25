@@ -147,7 +147,7 @@ menu_fangorn_search_fails 0 ^^^^^^You_search_the_dark,_thick_forest_but_find_not
 menu_fangorn_battle_debrief 0 you_shouldn't_be_reading_this none 8 4 0 31 2 144115188075855968 1 2133 2 144115188075855884 0 2060 1 73 5 0 2133 2 144115188075855962 145 2060 1 169 3 0 0
 
 menu_fangorn_battle_debrief_won 0 ^^^A_great_victory!^^^So_this_is_what_all_the_myths_about_Fangorn_meant... none 0 1
- mno_continue  0  Continue...  8 2052 0 4 0 200 1 10 2147483850 1 10 2147483851 1 10 1 2 258 10 1530 3 0 850 0 3 0  . 
+ mno_continue  0  Continue...  8 4 0 200 1 10 2147483850 1 10 2147483851 1 10 1 2 258 10 1530 3 0 850 0 3 0 2052 0  . 
 menu_fangorn_killed_player_only 0 ^^^^^^You_wander_in_the_thick,_dark_forest.^All_of_a_sudden_you_are_hit_by_something!_Maybe_a_heavy_branch_fell_on_your_head?^You_stay_unconcious_only_for_minutes._You_are_badly_hurt_but_you_can_go_on. none 2 2120 3 72057594037927946 144115188075856280 6 2031 1 72057594037927946 1
  mno_ow_get_out  0  Ouch!_Let's_get_out_of_this_cursed_place!  1 2060 1 169  . 
 menu_fangorn_killed_troop_and_player 0 ^^^^^^You_wander_in_the_thick,_dark_forest.^^All_of_a_sudden_you_are_hit_by_something!_Maybe_a_heavy_branch_fell_on_your_head.^^When_you_recover,_minutes_later,_you_find_that_not_all_of_your_troops_were_that_lucky.^^ none 2 2120 3 72057594037927946 144115188075856280 6 2031 1 72057594037927946 1

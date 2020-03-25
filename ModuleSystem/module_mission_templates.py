@@ -2285,6 +2285,12 @@ mission_templates = [ # not used in game
 	(ti_on_agent_spawn, 0, 0, [],
 	[
  		(store_trigger_param_1, ":agent"),
+
+    ] + (is_a_wb_mt==1 and [
+    (agent_is_active, ":agent"),
+    ] or []) + [
+    (agent_is_human, ":agent"),
+    (agent_is_alive, ":agent"),
 	 	(agent_get_troop_id, ":trp", ":agent"), 
 
 	 	(eq, ":trp", "trp_ent"), # a ent is spawned!
@@ -2335,6 +2341,7 @@ mission_templates = [ # not used in game
 	(30,0,0, 
 
     [
+      (neg|all_enemies_defeated, 0),
       (store_random_in_range,":d100",1,101),
       (lt,":d100", 10), #  5% of the times...
       (this_or_next|lt,":d100",8), # 8%: every 35 secs an ent appears anyway
