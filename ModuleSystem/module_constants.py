@@ -1497,8 +1497,8 @@ ws_caravan_chance = 25 # no chance below str. 2000
 #ws_host_chance = 35
 
 # TLD Party limit multiplier. Maximum number of parties for faction strength 3500 (double that for 7000). (Namely strength*multiplier/3500 is the party number limit)
-# Kham - Increased by varied amount (March 2017)
-ws_scout_limit_multiplier = 25 #+11 increase
+# Kham - Increased by varied amount (March 2017) # InVain - reduced number of scouts again so early game is not as cluttered
+ws_scout_limit_multiplier = 17 #+11 increase #-8 decrease
 ws_raider_limit_multiplier = 15 #+6 increase
 ws_patrol_limit_multiplier = 12 #+6 increase
 ws_caravan_limit_multiplier = 10 #+5 increase

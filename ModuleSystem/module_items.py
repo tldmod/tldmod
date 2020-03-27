@@ -302,7 +302,7 @@ items =[
 # scraps_end in constants points here
 ["oliphant","Oliphaunt",[("oliphant",0)],itp_type_horse,0,1,hit_points(255)|body_armor(255)|difficulty(255)|horse_speed(1)|horse_maneuver(1)|horse_charge(500),imodbits_horse_basic|0],
 
-["sumpter_horse","Sumpter_Horse",[("sumpter_horse",0)],itp_type_horse|itp_shop,0,50,hit_points(40)|body_armor(1)|difficulty(1)|horse_speed(28)|horse_maneuver(33)|horse_charge(5),imodbits_horse_basic|imodbits_horse_basic,[]],
+["sumpter_horse","Sumpter_Horse",[("sumpter_horse",0),("CWE_horse_light_a",imodbit_cracked),("CWE_horse_light_b",imodbit_rusty),("CWE_horse_light_c",imodbit_bent)],itp_type_horse|itp_shop,0,50,hit_points(40)|body_armor(1)|difficulty(1)|horse_speed(28)|horse_maneuver(33)|horse_charge(5),imodbits_horse_basic|imodbits_horse_basic,[]],
 ["saddle_horse","Saddle_Horse",[("saddle_horse",0)],itp_type_horse|itp_shop,0,120,hit_points(60)|body_armor(7)|difficulty(1)|horse_speed(39)|horse_maneuver(34)|horse_charge(8),imodbits_horse_basic|imodbits_horse_basic,[]],
 ["steppe_horse","Steppe_Horse",[("steppe_horse",0)],itp_type_horse|itp_shop,0,120,hit_points(70)|body_armor(10)|difficulty(2)|horse_speed(35)|horse_maneuver(41)|horse_charge(7),imodbits_horse_basic|imodbits_horse_basic,[]],
 ["courser","Courser",[("courser",0)],itp_type_horse|itp_shop,0,400,hit_points(70)|body_armor(10)|difficulty(2)|horse_speed(43)|horse_maneuver(37)|horse_charge(11),imodbits_horse_basic|imodbits_horse_basic,[]],
@@ -353,8 +353,8 @@ items =[
 ["warg_reward","Huge_Warg",[("wargArmored_huge",0)],itp_type_horse|itp_unique,0,3000,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic,[]],
 #first non WARG item: itm_warg_reward+1
 
-["animal_big","Big_Animal", [("bry_cow_a",0),("bry_cow_b",imodbit_cracked),("bry_cow_c",imodbit_rusty),("bry_cow_d",imodbit_bent),("bry_wild_donkey",imodbit_rotten),("spak_yak1",imodbit_smelling),("spak_yak2",imodbit_large_bag)],itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(90),imodbits_horse_basic],
-["animal_small","Small_Animal", [("bry_goat",0),("bry_goat_c",imodbit_cracked)],		itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(40),imodbits_horse_basic],
+["animal_big","Big_Animal", [("bry_cow_a",0),("bry_cow_b",imodbit_cracked),("bry_cow_c",imodbit_rusty),("bry_cow_d",imodbit_bent),("CWE_cow_mod_a",imodbit_chipped),("bry_wild_donkey",imodbit_rotten),("spak_yak1",imodbit_smelling),("spak_yak2",imodbit_large_bag)],itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(90),imodbits_horse_basic],
+["animal_small","Small_Animal", [("bry_goat",0),("bry_goat_c",imodbit_cracked),("CWE_sheep_mod_a",imodbit_rusty),("CWE_sheep_mod_b",imodbit_bent)],		itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(60),imodbits_horse_basic],
 
 #Troll weapons
 ["troll_weapon_long","Giant_Halberd",[("isengard_halberd_troll",0),],																																		itp_no_pick_up_from_ground|itp_type_polearm|itp_two_handed|itp_primary|itp_crush_through|itp_bonus_against_shield|itp_can_penetrate_shield,itcf_overswing_polearm|0,1,													weight(250)|difficulty(0)|spd_rtng(70)|weapon_length(200)|swing_damage(30,blunt)|thrust_damage(30,blunt)|horse_speed(70),0,[]],
