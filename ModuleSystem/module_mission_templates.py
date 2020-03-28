@@ -1091,9 +1091,9 @@ tld_common_peacetime_scripts = [
 
 tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
 
-  (ti_before_mission_start,  0, 0, [],
-  [
-    (try_begin),
+  (ti_before_mission_start,  0, 0, [], # swy: in march 2020 we found that this doesn't work; a mission trigger is too late, it needs to be done during scene dispatch, around the time of setting up entry points.
+  [                                    #      we haven't yet tried that, in general adding the sf_muddy_water flag should be enough, as it works every time as long as the 'river_mud' material exists somewhere,
+    (try_begin),                       #      but it's not dynamically configurable for Isengard and special occasions. that's when (set_river_shader_to_mud) may be actually useful, but not here.
       (store_current_scene, ":cur_scene"),
       (this_or_next|eq,  ":cur_scene", "scn_morannon_outside_1"),
       (this_or_next|eq,  ":cur_scene", "scn_morannon_outside_2"),																 

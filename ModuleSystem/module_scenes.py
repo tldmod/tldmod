@@ -93,12 +93,12 @@ scenes = [
   ("westfold_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000620049cbd00025896000048e90000164400002b3f",[],[],"outer_terrain_rohan"),
   ("west_emnet_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000320045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
   ("eastfold_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],[],"outer_mountains2south"),
-  ("morannon_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
-  ("minas_morgul_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000330000500000d23480000274f00005bd50000739d",[],[],"New_outer_mountains2east_mordor"),
+  ("morannon_center"        ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
+  ("minas_morgul_center"    ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x0000000330000500000d23480000274f00005bd50000739d",[],[],"New_outer_mountains2east_mordor"),
   #("minas_morgul_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"), 
   ("cirith_ungol_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000002200e95140006398d0000372f00004a8900005ff2",[],[],"outer_terrain_rohan"),
   ("orc_sentry_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003300005000009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
-  ("isengard_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000320000500000d234800002ba680005bd500005b5d",[],[],"outer_terrain_isen"),
+  ("isengard_center"        ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x0000000320000500000d234800002ba680005bd500005b5d",[],[],"outer_terrain_isen"),
   ("uruk_hai_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300014800002b4aa000074e600006c260000125a",[],[],"outer_terrain_rohan"),
   ("uruk_hai_h_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000020054b320004390d00003b3500006f8c00006dbd",[],[],"outer_terrain_plain"),
   ("uruk_hai_r_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200014800002b4aa000074e600006c260000125a",[],[],"New_outer_terrain_anduin"),
@@ -124,7 +124,7 @@ scenes = [
   ]) + [
 
   ("dunland_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],["player_chest"],"outer_terrain_rohan"),
-  ("harad_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],["player_chest"],"outer_terrain_steppe"),
+  ("harad_camp_center"      ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],["player_chest"],"outer_terrain_steppe"),
   ("khand_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000020040de3000699aa00005234000048ba000004b5",[],["player_chest"],"outer_terrain_rohan"),
   ("umbar_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000002001c9a50007e1ed0000154e800026f300004e2d",[],["player_chest"],"New_outer_terrain_seaside_west"),  
   #("umbar_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"        0x3002898a80051d440000154e000026f300004e2d",[],["player_chest"]), #old corsair camp
@@ -134,7 +134,7 @@ scenes = [
   ("dol_guldur_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003b0050d0d0004b12c000072f5000027d200005f66",[],[],"New_outer_terrain_forest"),
 #  ("dol_guldur_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),
 
-  ("north_rhun_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_flat"),
+  ("north_rhun_camp_center" ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_flat"),
   ("gundabad_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200005000009c5a200000f5200005bd50000739d",[],["player_chest"],"New_outer_mountains2south_helmsdeep"),
   ("ironhill_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007200016da000364d9000060f500007591000064e7",[],[],"outer_terrain_steppe"),
 
@@ -236,15 +236,15 @@ scenes = [
 ("random_scene_parade"  ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_forest"),#GA, faction troops parade (custom battle)
 
 ("beorn_castle",sf_indoors,"lofotrinterior2","bo_lofotrinterior2",(-100,-100),(100,100),-100,"0",[],["player_chest"]),
-("moria_castle",sf_indoors,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]),
+("moria_castle",sf_indoors|sf_muddy_water,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]),
 ("hornburg_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000240002800000691a400003efe00004b34000059be",[],[]),
 ("morannon_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],["player_chest"],"outer_mountains2west_mordor"),
 
 # Legendary places
 ("amon_hen"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000630000500000c2304000003ce000047ca0000794b",[],[],"outer_terrain_osgiliath_9"),
-("deadmarshes",sf_generate|sf_auto_entry_points,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_flat"),
-("mirkwood"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
-("fangorn"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
+("deadmarshes",sf_generate|sf_auto_entry_points|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_flat"),
+("mirkwood"   ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
+("fangorn"    ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 
 # Siege scenes
 ("cair_andros_siege"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
@@ -290,17 +290,17 @@ scenes = [
 ("small_ford"   ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 ("rivercross"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000030081763000989a20000338e00004f2c00005cfb",[],[],"outer_terrain_plain"),
 
-("tld_sorcerer_forest_a" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b01917000004e93c00007b15000077bd00004d24",[],[],"outer_terrain_forest"),
-("tld_sorcerer_forest_b" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000000b00ed9260002c8b000007af400006f7d00001e9c",[],[],"outer_terrain_forest"),
-("tld_sorcerer_forest_c" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000000b00c9c1c0004691300007af400005f5f00007f2f",[],[],"outer_terrain_forest"),
+("tld_sorcerer_forest_a" ,sf_generate|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x00000001b01917000004e93c00007b15000077bd00004d24",[],[],"outer_terrain_forest"),
+("tld_sorcerer_forest_b" ,sf_generate|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x00000000b00ed9260002c8b000007af400006f7d00001e9c",[],[],"outer_terrain_forest"),
+("tld_sorcerer_forest_c" ,sf_generate|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x00000000b00c9c1c0004691300007af400005f5f00007f2f",[],[],"outer_terrain_forest"),
 
-("moria_secret_entry" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
+("moria_secret_entry" ,sf_generate|sf_auto_entry_points|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 
-("moria_deep_mines" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000640002800000691a400003efe00004b34000059be",[],[]),
+("moria_deep_mines" ,sf_generate|sf_auto_entry_points|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x0000000640002800000691a400003efe00004b34000059be",[],[]),
 
 ("advcamp_good" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("advcamp_bad" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
-("isengard_underground" ,sf_generate,"none","none",(0,0),(200,200),-100,"0x0000000440000500000c9b2600003efe00004b34000059be",[],[]),
+("isengard_underground" ,sf_generate|sf_muddy_water,"none","none",(0,0),(200,200),-100,"0x0000000440000500000c9b2600003efe00004b34000059be",[],[]),
 
 #forest scenes for using in rnd
 ("forest_fangorn1"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
@@ -366,9 +366,9 @@ scenes = [
 
 ("advcamp_good_siege",sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("moria_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000008160b00000f768000576c00001d2c",[],[]),
-("minas_morgul_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000330000500000d23480000274f00005bd50000739d",[],[],"New_outer_mountains2east_mordor"),
+("minas_morgul_siege",sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x0000000330000500000d23480000274f00005bd50000739d",[],[],"New_outer_mountains2east_mordor"),
 	#("minas_morgul_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
-("morannon_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
+("morannon_siege"    ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
 
 ("minas_tirith_outside" ,sf_generate|sf_auto_entry_points,"none","none",(84,457),( 339, 532),-100.0,"0x00000003300005000009c5a20000348600005bd50000739d",[],[],"outer_terrain_tirith_1"), #InVain changed terrain code: Has grass now!
 ("isengard_outside" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-100.0,"0x000000032001c500000791fd0000738000005bd50000739d",[],[],"outer_terrain_isen_low_far"),
@@ -481,8 +481,8 @@ scenes = [
 ("hornburg_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"New_outer_mountains2south_helmsdeep"),
 ("dolamroth_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000023c6794b10005153c00005c3000004b3400005792",  [],[],"outer_terrain_seaside_1"), #Dublicates for now, might make the scenes non-randomized, later, so I'll need two for variety
 ("dolamroth_outside_2",sf_generate|sf_randomize|sf_auto_entry_points,"none", "none", (0,0),(100,100),-100,"0x000000023c6794b10005153c00005c3000004b3400005792",  [],[],"outer_terrain_seaside_1"), #randomized
-("morannon_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b01489340005014000002601000021f700001290",  [],[],"New_outer_mountains2south_morannon"),
-("morannon_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b01489340005014000002601000021f700001290",  [],[],"New_outer_mountains2south_morannon"),
+("morannon_outside_1",sf_generate|sf_muddy_water,"none", "none", (0,0),(100,100),-100,"0x00000000b01489340005014000002601000021f700001290",  [],[],"New_outer_mountains2south_morannon"),
+("morannon_outside_2",sf_generate|sf_muddy_water,"none", "none", (0,0),(100,100),-100,"0x00000000b01489340005014000002601000021f700001290",  [],[],"New_outer_mountains2south_morannon"),
 ("dolguldur_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b01917000004e93c00007b15000077bd00004d24",  [],[],"New_outer_mountains2east_mordor"),
 ("dolguldur_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b01917000004e93c00007b15000077bd00004d24",  [],[],"New_outer_mountains2east_mordor"),
 ("beorn_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b062c90d0005a96a000075f30000786900001ef5",  [],[],"outer_terrain_plain"),
@@ -596,11 +596,11 @@ scenes = [
 ("advcamp_gundabad_siege" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("advcamp_rhun_siege" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 
-("forest_mirkwood1"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"),
-("forest_mirkwood2"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b0190c8080058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood3"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
-("forest_mirkwood4"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood5"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
+("forest_mirkwood1"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"),
+("forest_mirkwood2"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b0190c8080058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"),
+("forest_mirkwood3"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
+("forest_mirkwood4"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
+("forest_mirkwood5"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
 
 ("erebor_castle_2",sf_indoors ,"erebor_throne_room_b", "bo_erebor_throne_room_b", (-40,-40),(40,40),-100,"0",[],["player_chest"]), 
 
