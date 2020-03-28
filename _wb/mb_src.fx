@@ -5920,12 +5920,25 @@ VS_OUTPUT_FONT vs_mtarini_progressbar(float4 vPosition : POSITION, float4 vColor
    return Out;
 }
 
+PS_OUTPUT /* ps_main_no_shadow */ ps_mtarini_progressbar(VS_OUTPUT_FONT_X In, uniform const bool swy_is_ui = false, uniform const bool swy_is_faction_mix = false) 
+{ 
+   PS_OUTPUT Output;
+   float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
+   INPUT_TEX_GAMMA(tex_col.rgb);
+
+   Output.RGBColor  =  tex_col;
+   Output.RGBColor +=  1 - In.Color; /* swy: we need to 'undarken' the plant regions with our black edge mask; so reverse the mask colors and add them to the original texture */
+   OUTPUT_GAMMA(Output.RGBColor.rgb);
+
+   return Output;
+}
+
 technique mtarini_progressbar
 {
    pass P0
    {
       VertexShader = compile vs_2_0 vs_mtarini_progressbar();
-      PixelShader = compile ps_2_0 ps_main_no_shadow();
+      PixelShader  = compile ps_2_0 ps_mtarini_progressbar();
    }
 }
 
