@@ -5360,6 +5360,8 @@ struct VS_DEPTHED_FLARE
 	
 	float4 projCoord			: TEXCOORD1;
 	float  Depth				: TEXCOORD2;
+	float3 ViewPos				: TEXCOORD3;
+	float4 WorldPos				: TEXCOORD4;
 };
 
 VS_DEPTHED_FLARE vs_main_depthed_flare(float4 vPosition : POSITION, float4 vColor : COLOR, float2 tc : TEXCOORD0)
@@ -5385,6 +5387,8 @@ VS_DEPTHED_FLARE vs_main_depthed_flare(float4 vPosition : POSITION, float4 vColo
 	float4 vWorldPos = (float4)mul(matWorld,vPosition);
 	float d = length(P);
 	Out.Fog = get_fog_amount_new(d, vWorldPos.z);
+	Out.WorldPos = vWorldPos;
+	Out.ViewPos = P;
 
 	return Out;
 }
@@ -5422,9 +5426,20 @@ PS_OUTPUT ps_main_depthed_flare(VS_DEPTHED_FLARE In, uniform const bool sun_like
 			Output.RGBColor.a *= alpha_factor;
 		}
 	}
-	
+
 	//Output.RGBColor.rgb = float3(0.8,0,0);
 	//Output.RGBColor.w = 1;
+
+	/* swy: add a (hopefully) soft (and glitchless) fade out when intersecting against the water plane; mainly for the fog particles in Minas Morgul */
+	Output.RGBColor *= smoothstep(0.0, 1, In.WorldPos.z);
+
+
+	/* swy: fade out the translucent elements that are about to intersect with the camera */
+	if (!sun_like)
+		if (blend_adding)
+			Output.RGBColor   *= clamp(abs(In.ViewPos.z) / 2, 0, 1);
+		else
+			Output.RGBColor.a *= clamp(abs(In.ViewPos.z) / 2, 0, 1);
 	
 	return Output;
 }
