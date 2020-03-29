@@ -1392,12 +1392,13 @@ PS_OUTPUT ps_main_water( VS_OUTPUT_WATER In, uniform const bool use_high, unifor
 	}
 	Output.RGBColor.rgb += cWaterColor * fog_fresnel_factor;
 	
-	/* swy: when the mod-set uniform is not negative we use it as a mud color replacement; even for non-muddy water */
+	/* swy: when the mod-set uniform is positive we use it as a mud color replacement;
+	        even for non-muddy water; the alpha channel is initialized to -1 */
 	if (swy_river_tinting_color.a > 0)
 	{
 		Output.RGBColor.rgb += float3(swy_river_tinting_color.r,
 		                              swy_river_tinting_color.g,
-		                              swy_river_tinting_color.b) * (1.0f - saturate(dot(vView, normal)));
+		                              swy_river_tinting_color.b) * clamp(1.0f - saturate(dot(vView, normal)), 0.8, 1);
 	}
 	else if (mud_factor)
 	{
@@ -5442,7 +5443,10 @@ PS_OUTPUT ps_main_depthed_flare(VS_DEPTHED_FLARE In, uniform const bool sun_like
 	//Output.RGBColor.w = 1;
 
 	/* swy: add a (hopefully) soft (and glitchless) fade out when intersecting against the water plane; mainly for the fog particles in Minas Morgul */
-	Output.RGBColor *= smoothstep(0.0, 1, In.WorldPos.z);
+  Output.RGBColor *= smoothstep(0.0, 1 + fwidth(In.Tex0).x * 90 /* <- thicker gradient in the distance via UV derivatives*/, In.WorldPos.z);
+	//Output.RGBColor = lerp(Output.RGBColor, float4(1,0,0,1), smoothstep(0.0, 4 + fwidth(In.Tex0).x * 280, In.WorldPos.z));
+	//Output.RGBColor = lerp(float4(0,0,1,1), float4(1,0,0,1), fwidth(In.Tex0.x) / 60);
+	//Output.RGBColor = float4((fwidth(In.Tex0)).xx * 40,1-length(In.ViewPos),1);
 
 
 	/* swy: fade out the translucent elements that are about to intersect with the camera */
@@ -5463,7 +5467,7 @@ technique soft_sunflare
 	pass P0
 	{
 		VertexShader = vs_main_depthed_flare_compiled;
-		PixelShader = compile ps_2_0 ps_main_depthed_flare(true,true);
+		PixelShader = compile ps_2_a ps_main_depthed_flare(true,true);
 	}
 }
 
@@ -5473,7 +5477,7 @@ technique soft_particle_add
 	pass P0
 	{
 		VertexShader = vs_main_depthed_flare_compiled;
-		PixelShader = compile ps_2_0 ps_main_depthed_flare(false,true);
+		PixelShader = compile ps_2_a ps_main_depthed_flare(false,true);
 	}
 }
 
@@ -5482,7 +5486,7 @@ technique soft_particle_modulate
 	pass P0
 	{
 		VertexShader = vs_main_depthed_flare_compiled;
-		PixelShader = compile ps_2_0 ps_main_depthed_flare(false,false);
+		PixelShader = compile ps_2_a ps_main_depthed_flare(false,false);
 	}
 }
 #endif
