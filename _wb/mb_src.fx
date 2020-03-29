@@ -1352,6 +1352,7 @@ PS_OUTPUT ps_main_water( VS_OUTPUT_WATER In, uniform const bool use_high, unifor
 	}
 	if(mud_factor)
 	{
+    
 		Output.RGBColor.rgb += lerp( tex.rgb*float3(0.105, 0.175, 0.160)*fresnel, tex.rgb, fresnel);
 	}
 	else
@@ -1394,13 +1395,13 @@ PS_OUTPUT ps_main_water( VS_OUTPUT_WATER In, uniform const bool use_high, unifor
 	/* swy: when the mod-set uniform is not negative we use it as a mud color replacement; even for non-muddy water */
 	if (swy_river_tinting_color.a > 0)
 	{
-		Output.RGBColor.rgb -= float3(swy_river_tinting_color.r,
+		Output.RGBColor.rgb += float3(swy_river_tinting_color.r,
 		                              swy_river_tinting_color.g,
 		                              swy_river_tinting_color.b) * (1.0f - saturate(dot(vView, normal)));
 	}
-	else if(mud_factor)
+	else if (mud_factor)
 	{
-		Output.RGBColor.rgb += float3(0.01f, 0.002f, 0.002f) * (1.0f - saturate(dot(vView, normal)));
+		Output.RGBColor.rgb += float3(0.022f, 0.02f, 0.005f) * (1.0f - saturate(dot(vView, normal)));
 	}
 	
 	

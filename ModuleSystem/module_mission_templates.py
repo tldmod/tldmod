@@ -1135,7 +1135,7 @@ tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
       (this_or_next|eq,  ":cur_scene", "scn_minas_morgul_siege"),
       (             eq,  ":cur_scene", "scn_minas_morgul_center"),
       
-      (call_script, "script_tld_internal_set_river_color_tinting", True, int(0.01 * 1e6), int(0.002 * 1e6), int(0.002 * 1e6)), # swy: dark brown (see the module_Scripts definition for more)
+      (call_script, "script_tld_internal_set_river_color_tinting", True, -int(0.01 * 1e6), -int(0.002 * 1e6), -int(0.002 * 1e6)), # swy: subtractive dark brown (see the module_scripts definition for more; but here it makes it look funkier because the numbers are negative)
     (else_try),
     
       (call_script, "script_tld_internal_set_river_color_tinting", False, 0, 0, 0),
