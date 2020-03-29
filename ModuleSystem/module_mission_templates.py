@@ -1128,6 +1128,19 @@ tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
       
       (set_river_shader_to_mud),
     (try_end),
+    
+    # swy: new water river shader tinting functionality; Warband-only, replace that Minas Morgul poop color :)
+    (try_begin),
+      (store_current_scene, ":cur_scene"),
+      (this_or_next|eq,  ":cur_scene", "scn_minas_morgul_siege"),
+      (             eq,  ":cur_scene", "scn_minas_morgul_center"),
+      
+      (call_script, "script_tld_internal_set_river_color_tinting", True, int(0.01 * 1e6), int(0.002 * 1e6), int(0.002 * 1e6)), # swy: dark brown (see the module_Scripts definition for more)
+    (else_try),
+    
+      (call_script, "script_tld_internal_set_river_color_tinting", False, 0, 0, 0),
+    (try_end),
+
   ]),
 
 ] or [])

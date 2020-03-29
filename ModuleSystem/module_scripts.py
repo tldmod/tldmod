@@ -29001,7 +29001,7 @@ if is_a_wb_script==1:
   ]),
 
 
-  #tld_internal_set_good_or_evil_ui
+  #tld_internal_set_good_or_evil_ui (Warband-only)
   #  INPUT: none
   # OUTPUT: none
   ("tld_internal_set_good_or_evil_ui",
@@ -29024,8 +29024,38 @@ if is_a_wb_script==1:
       ] or []) + [
 
   ]),
+  
+  
+  #tld_internal_set_river_color_tinting (Warband-only)
+  #  INPUT: arg1 = the custom water multiplier is enabled or not
+  #  INPUT: arg2 =   red color, in fixed-point format
+  #  INPUT: arg3 = green color, in fixed-point format
+  #  INPUT: arg4 =  blue color, in fixed-point format
+  # OUTPUT: none
+  ("tld_internal_set_river_color_tinting",
+    [ (set_fixed_point_multiplier, 1e6), # swy: six zeros, change it accordingly: 1000000 => 0.005 * 1e6 = 5000.0 => use 5000 as your variable (we can't use floating point numbers in the game .txt interpreter, only in the Python/msys part)
 
+      ] + (is_a_wb_script==1 and [
+      
+      (store_script_param_1, ":enabled"),
+      (store_script_param_2, ":r"),
+      (store_script_param,   ":g", 3),
+      (store_script_param,   ":b", 4),
+      
+      # swy: here are some (hopefully) useful examples:
+      #                          |RED    |GREEN  |BLUE
+      #               dark brown: 0.01f,  0.002f, 0.002f -> (call_script, "script_tld_internal_set_river_color_tinting",  True, int(0.01  * 1e6), int(0.002 * 1e6), int(0.002 * 1e6)),
+      #       original mud color: 0.022f, 0.02f,  0.005f -> (call_script, "script_tld_internal_set_river_color_tinting",  True, int(0.022 * 1e6), int(0.02  * 1e6), int(0.005 * 1e6)),
+      #     disable this thingie: any     any     any    -> (call_script, "script_tld_internal_set_river_color_tinting", False, 0, 0, 0),
+      
+      (set_shader_param_float4, "@swy_river_tinting_color", ":r", ":g", ":b", ":enabled"), # the alpha slot is used for the enablement conditional
+      
+      #swy-- note: by default/at startup this 'swy_river_tinting_color' uniform is set to float4(-1.f, -1.f, -1.f, -1.f);
+      #            keep in mind that you can use the river_mud effect (or not) with this, it works independently.
 
+      ] or []) + [
+
+  ]),
 
 ("flash_and_animate", [
 	

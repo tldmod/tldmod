@@ -732,9 +732,10 @@ script_saruman_storm_effect = 730
 script_guldur_fog_effect = 731
 script_agent_reassign_team = 732
 script_tld_internal_set_good_or_evil_ui = 733
-script_flash_and_animate = 734
-script_get_position_and_teleport_behind_agent = 735
-script_wield_agent_weapons = 736
-script_cf_surrounded_pushback = 737
+script_tld_internal_set_river_color_tinting = 734
+script_flash_and_animate = 735
+script_get_position_and_teleport_behind_agent = 736
+script_wield_agent_weapons = 737
+script_cf_surrounded_pushback = 738
 
 

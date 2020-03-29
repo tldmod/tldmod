@@ -29,6 +29,9 @@ float swy_ui_evil = 0.0f;
 /* swyter-- used to make everything darker when the Mordor faction is strong */
 float swy_mordor_strength_factor = 1.0f;
 
+/* swyter-- used */
+float4 swy_river_tinting_color = float4(-1.f, -1.f, -1.f, -1.f);
+
 #if !defined (PS_2_X)
 	#error "define high quality shader profile: PS_2_X ( ps_2_b or ps_2_a )"
 #endif
@@ -1388,9 +1391,16 @@ PS_OUTPUT ps_main_water( VS_OUTPUT_WATER In, uniform const bool use_high, unifor
 	}
 	Output.RGBColor.rgb += cWaterColor * fog_fresnel_factor;
 	
-	if(mud_factor)
+	/* swy: when the mod-set uniform is not negative we use it as a mud color replacement; even for non-muddy water */
+	if (swy_river_tinting_color.a > 0)
 	{
-		Output.RGBColor.rgb += float3(0.022f, 0.02f, 0.005f) * (1.0f - saturate(dot(vView, normal)));
+		Output.RGBColor.rgb -= float3(swy_river_tinting_color.r,
+		                              swy_river_tinting_color.g,
+		                              swy_river_tinting_color.b) * (1.0f - saturate(dot(vView, normal)));
+	}
+	else if(mud_factor)
+	{
+		Output.RGBColor.rgb += float3(0.01f, 0.002f, 0.002f) * (1.0f - saturate(dot(vView, normal)));
 	}
 	
 	
@@ -1473,7 +1483,7 @@ technique watermap_mud
 	pass P0
 	{
 		VertexShader = compile vs_2_0 vs_main_water();
-		PixelShader = compile ps_2_0 ps_main_water(false, true, true);
+		PixelShader = compile ps_2_a ps_main_water(false, true, true);
 	}
 }
 technique watermap_mud_high
