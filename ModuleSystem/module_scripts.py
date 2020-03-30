@@ -1921,7 +1921,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",13),
+    (assign,"$savegame_version",14),
 
 	] + (is_a_wb_script==1 and [
 
@@ -23916,7 +23916,34 @@ command_cursor_scripts = [
 				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
 			(try_end),
 		(assign, "$savegame_version", 13),
-	(try_end),		   
+	(try_end),	
+	
+    (try_begin), #InVain - March 2020, fix troll stats for old savegames
+    	(le, "$savegame_version", 13),	
+			(try_for_range, ":trolls", trp_moria_troll, trp_ent2),
+			
+				(store_skill_level, ":ironflesh", skl_ironflesh, ":trolls"),
+				(lt, ":ironflesh", 6), #so we don't affect new savegames which already have correct troll stats
+				(troop_raise_skill, ":trolls", skl_ironflesh, -15),
+				(troop_raise_skill, ":trolls", skl_ironflesh, 10),
+				
+				(store_skill_level, ":power_strike", skl_power_strike, ":trolls"),
+				(lt, ":power_strike", 5), #so we don't affect new savegames which already have correct troll stats
+				(troop_raise_skill, ":trolls", skl_power_strike, -15),
+				(troop_raise_skill, ":trolls", skl_power_strike, 10),
+				
+				(store_proficiency_level, ":one_handed", wpt_one_handed_weapon, ":trolls"),
+				(lt, ":one_handed", 70), #so we don't affect new savegames which already have correct troll stats
+				(troop_raise_proficiency_linear, ":trolls", wpt_one_handed_weapon, -100),
+				(troop_raise_proficiency_linear, ":trolls", wpt_one_handed_weapon, 80),
+				
+				(store_proficiency_level, ":two_handed", wpt_two_handed_weapon, ":trolls"),
+				(lt, ":one_handed", 70), #so we don't affect new savegames which already have correct troll stats
+				(troop_raise_proficiency_linear, ":two_handed", wpt_two_handed_weapon, -100),
+				(troop_raise_proficiency_linear, ":two_handed", wpt_two_handed_weapon, 80),
+			(try_end),
+		(assign, "$savegame_version", 14),
+	(try_end),		
 ]),
 
 #Kham
