@@ -54,7 +54,7 @@ fauna_kinds = [
   [['PW_grass_bush_a_xx', '0'], ['PW_grass_bush_b_xx', '0']]),
   
  ('grass_saz', #white flowers
-  fkf_plain|fkf_steppe|fkf_snow|fkf_steppe_forest|fkf_snow_forest|fkf_on_green_ground|fkf_guarantee|density(198),
+  fkf_plain|fkf_steppe|fkf_snow|fkf_steppe_forest|fkf_snow_forest|fkf_on_green_ground|density(198),
   [['PW_grass_bush_c_xx', '0'], ['PW_grass_bush_c_xx', '0']]),
   
  ('grass_purple', #purple flowers
@@ -66,7 +66,7 @@ fauna_kinds = [
   [['PW_fern_big', '0'],['PW_fern_a_xx', '0'], ['PW_fern_b_xx', '0']]),
   
  ('grass_steppe',
-  fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_desert_forest|fkf_point_up|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|density(1500),
+  fkf_steppe|fkf_steppe_forest|fkf_point_up|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|density(1500),
   [['PW_grass_e_xx', '0'],
    ['PW_grass_yellow_b_xx', '0'],
    ['PW_grass_yellow_b_xx', '0'],
@@ -384,8 +384,8 @@ fauna_kinds = [
    ['tree_12_b', 'bo_tree_12_b'],
    ['tree_12_c', 'bo_tree_12_c']]),
 
- ('pw_pine_bushes_group', #dester version of zl_tree_12
-  fkf_desert|fkf_desert_forest|fkf_guarantee|density(12),
+ ('pw_pine_bushes_group', #desert version of zl_tree_12
+  fkf_desert|fkf_desert_forest|density(12),
   [['PW_tree_12_a', 'bo_pw_tree_12_a'],
    ['PW_tree_12_b', 'bo_pw_tree_12_b'],
    ['PW_tree_12_c', 'bo_pw_tree_12_c']]),
@@ -656,17 +656,17 @@ fauna_kinds = [
    ['PW_pine_6_a', 'bo_pw_pine_6_a']]),
 
  ('zl_rockformation',
-  fkf_desert|fkf_desert_forest|fkf_realtime_ligting|fkf_rock|density(1),
+  fkf_desert|fkf_desert_forest|fkf_steppe|fkf_realtime_ligting|fkf_rock|density(3),
   [['PW_rock_c', 'bo_pw_rock_c'],
    ['PW_rock_e', 'bo_pw_rock_e'],
    ['PW_rock_k', 'bo_pw_rock_k']]),
 
  ('zl_white_flowers',
-  fkf_align_with_ground|fkf_grass|density(2),
+  fkf_align_with_ground|density(2),
   [['PW_grass_bush_l01', '0'], ['PW_grass_bush_l02', '0']]),
 
  ('zl_yellow_flowers',
-  fkf_align_with_ground|fkf_grass|density(2),
+  fkf_align_with_ground|density(2),
   [['PW_spiky_plant', '0']]),
 
  ('rock',
@@ -676,10 +676,10 @@ fauna_kinds = [
 
  ('rock_snowy2', fkf_tree, [['PW_tree_snowy_b', 'bo_pw_tree_snowy_b']]),
 
- ('zl_reed', fkf_snow|fkf_guarantee|density(194), [['GA_reed1', '0']]),
+ ('zl_reed', fkf_snow|density(194), [['GA_reed1', '0']]),
 
  ('ga_grass_snow',
-  fkf_snow|fkf_snow_forest|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|density(1666),
+  fkf_snow|fkf_snow_forest|fkf_align_with_ground|fkf_grass|fkf_guarantee|density(1666),
   [['PW_grass_a_xx', '0'],
    ['PW_grass_b_xx', '0'],
    ['PW_grass_b_xx', '0'],
@@ -687,14 +687,14 @@ fauna_kinds = [
    ['PW_grass_e_xx', '0']]),
 
  ('ga_bushes04_a_snow',
-  fkf_snow|fkf_snow_forest|fkf_align_with_ground|fkf_guarantee|density(390),
+  fkf_snow|fkf_snow_forest|fkf_align_with_ground|density(390),
   [['PW_bushes04_a_xx', '0'],
    ['PW_bushes04_b_xx', '0'],
    ['PW_bushes04_c_xx', '0']]),
 
- ('ga_grass_desert',
+ ('ga_grass_desert', #desert grass must not be flagged as grass
  #fkf_desert|fkf_desert_forest|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|fkf_has_colony_props|density(2012),
-  fkf_desert|fkf_desert_forest|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|density(2012),
+  fkf_desert|fkf_desert_forest|fkf_align_with_ground|fkf_guarantee|density(2012),
   [['PW_grass_e_xx', '0'],
    ['PW_grass_yellow_b_xx', '0'],
    ['PW_grass_yellow_b_xx', '0'],
