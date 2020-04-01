@@ -1519,10 +1519,8 @@ troops = [
 ["captain_of_gondor","Captain_of_Gondor","Captains_of_Gondor",tf_gondor| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gon_leader_surcoat_cloak,itm_gondor_leader_helm,itm_mail_mittens,itm_gondor_heavy_greaves,itm_gondor_shield_e,itm_gondor_bastard,itm_gondor_warhorse,],
       attr_tier_6,wp_tier_6,knows_common|knows_riding_1|knows_athletics_4|knows_shield_3|knows_power_strike_5|knows_ironflesh_6,gondor_face1,gondor_face2],
-#["high_captain_of_gondor","High_Captain_of_Gondor","High_Captains_of_Gondor",tf_mounted|tfg_gloves|tfg_shield|tfg_armor|tfg_helmet|tfg_horse|tfg_boots,0,0,fac_gondor,
-#[itm_gon_tower_knight,itm_gondor_leader_helm,itm_mail_mittens,itm_mail_mittens,itm_mail_boots,itm_gondor_shield_a,itm_sword_medieval_c,itm_sword_viking_1,itm_gondor_warhorse],
-#def_attrib|level(40),wp(255),knows_common|knows_riding_2|knows_athletics_6|knows_shield_4|knows_power_strike_6|knows_ironflesh_6,gondor_face1,gondor_face2],
-["end_leaders","bug","bug",0,0,0,fac_gondor,   [],      0,0,0,0],
+	  
+["end_leaders","bug","bug",0,0,0,fac_gondor,   [],      0,0,0,0], #808 range call, not used anymore
 #END# Captains and lieutenants of all factions
 #Agents begin
 ["nobleman","Nobleman","Noblemen",tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_commoners,
@@ -2897,7 +2895,7 @@ troops = [
               def_attrib|level(17),wp(120),knows_common,mercenary_face_1,mercenary_face_2],
 
 # Troops for scripting purpose. Make sure these are the last troops. (by foxyman)
-["troops_end","troops_end","troops_end",tf_hero,no_scene,reserved,fac_commoners,[],0,0,0,0,0],
+["troops_end","troops_end","troops_end",tf_hero,no_scene,reserved,fac_commoners,[],0,0,0,0,0], #unused
 ["no_troop","_","the place",tf_hero,0,0,fac_commoners,[],0,0,0,0,0],
 ["skill2item_type","_","_",tf_hero,0,0,fac_commoners,[],0,0,0,0,0], # array for working with merchant skills as indicator of quantity of items in shop
 ["traits","_","_",tf_hero,0,0,fac_commoners,[],0,0,0,0,0], # array of traits (0/1)
@@ -3036,6 +3034,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
   [(itm_dunland_armor_k,imod_poor),(itm_leather_gloves,imod_poor),itm_dunland_wolfboots,(itm_empty_head,imod_poor), itm_dunnish_war_axe, itm_orc_shield_b, itm_orc_shield_c],
     attr_tier_3,wp_tier_4,knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
 
+#unused
 ["dummy_troop",  "bug","_", tf_hero, 0, 0, fac_gondor, [], lord_attrib,0,0,0],
 ["dummy_troop_b","bug","_", tf_hero, 0, 0, fac_gondor, [], lord_attrib,0,0,0],
     
@@ -3181,7 +3180,10 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["wild_troll","Wild_Cave_Troll","Wild_Cave_Trolls",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_tribal_orcs,[itm_troll_head_a,itm_troll_head_b,itm_troll_head_c,itm_troll_body,itm_troll_hands,itm_troll_feet,itm_tree_trunk_club_b,itm_tree_trunk_invis,],str_25| agi_3| int_3| cha_3|level(40),wp(100),knows_power_strike_3|knows_ironflesh_13,troll_face1,troll_face2],
 ["ent2","Ent","Ents",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_commoners,[itm_ent_head, itm_ent_head_2, itm_ent_head_3,itm_ent_body,itm_ent_hands,itm_ent_feet_boots,itm_tree_trunk_invis,itm_ent_water,],str_25| agi_3| int_3| cha_3|level(63),wp(250),knows_power_strike_15|knows_ironflesh_15,troll_face1,troll_face2],
 
-#Tribal orcs moved out of item factionization range	(not wired in yet because of some range issue), enabled March 2020 because range issue has been fixed in the meantime
+["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["multiplayer_profile_troop_female","multiplayer_profile_troop_female","multiplayer_profile_troop_female", tf_hero|tf_female, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+
+#Tribal orcs moved out of item factionization range, activate around June 2020
 ["mountain_goblin","Mountain_Goblin","Mountain_Goblins",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_tribal_a,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_orc_shield_a,itm_orc_shield_b,itm_orc_shield_c,itm_orc_ragwrap,itm_skull_club,itm_twohand_wood_club,itm_bone_cudgel,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_3|knows_power_strike_2,orc_face3,orc_face4],
@@ -3194,26 +3196,27 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["tribal_orc_chief","Tribal_Orc_Chief","Tribal_Orc_Chiefs",tf_orc| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_coif,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_orc_sabre,itm_orc_simple_spear,itm_orc_ragwrap,itm_orc_machete,],
 attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,orc_face2],
-	
-["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 
-["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
-["multiplayer_profile_troop_female","multiplayer_profile_troop_female","multiplayer_profile_troop_female", tf_hero|tf_female, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["future_troop_6","Mountain_Goblin","Mountain_Goblins",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
+   [itm_orc_tribal_a,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_orc_shield_a,itm_orc_shield_b,itm_orc_shield_c,itm_orc_ragwrap,itm_skull_club,itm_twohand_wood_club,itm_bone_cudgel,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
+      attr_orc_tier_2,wp_orc_tier_2,knows_athletics_3|knows_power_strike_2,orc_face3,orc_face4],
+["future_troop_7","Tribal_Orc","Tribal_Orcs",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
+   [itm_orc_tribal_a,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_twohand_wood_club,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
+      attr_orc_tier_1,wp_orc_tier_1,knows_athletics_3,orc_face1,orc_face2],
+["future_troop_8","Tribal_Orc_Warrior","Tribal_Orc_Warriors",tf_orc| tfg_armor| tf_no_capture_alive,0,0,fac_tribal_orcs,
+   [itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_wood_club,itm_twohand_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
+      attr_orc_tier_2,wp_orc_tier_2,knows_athletics_4,orc_face7,orc_face6],	
+["future_troop_9","Tribal_Orc_Chief","Tribal_Orc_Chiefs",tf_orc| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_tribal_orcs,
+   [itm_orc_coif,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_orc_sabre,itm_orc_simple_spear,itm_orc_ragwrap,itm_orc_machete,],
+attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,orc_face2],
+["future_troop_10","Tribal_Orc_Chief","Tribal_Orc_Chiefs",tf_orc| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_tribal_orcs,
+   [itm_orc_coif,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_orc_sabre,itm_orc_simple_spear,itm_orc_ragwrap,itm_orc_machete,],
+attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,orc_face2],
 
-["future_troop_6", "Compatibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["future_troop_7", "Compatibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["future_troop_8", "Compatibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["future_troop_9", "Compatibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["future_troop_10","Compatibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-    
+["last","BUG","BUG",0,0,0,fac_commoners,[],0,0,0,0],    #the last troop must stay a stub, so that range calls for all troops include the last but one troop.
 ]
  
 #
-#upgrade(troops,"veteran_brigand","master_brigand")
-#upgrade2(troops,"brigand","veteran_brigand","brigand_slaver")
-#upgrade(troops,"cutthroat","brigand")
-#upgrade(troops,"thug","cutthroat")
-#upgrade(troops,"brigand_slaver","master_slaver")
 #WOODMEN
 upgrade2(troops,"i1_woodmen_man","i2_woodmen_forester","a2_woodmen_tracker")
 upgrade(troops,"i2_woodmen_forester","i3_woodmen_skilled_forester")

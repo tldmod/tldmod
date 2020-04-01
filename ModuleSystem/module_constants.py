@@ -1310,7 +1310,8 @@ def concatenate_scripts(block_list):
     return result
 
 tld_troops_begin = trp_player
-tld_troops_end = trp_troops_end
+#tld_troops_end = trp_troops_end
+tld_troops_end = trp_last #This range is only called for day/night penalties. Extended to affect all troops (also heroes)
 tld_player_level_to_begin_war = 8
 tld_player_level_to_own_chest = 10
 

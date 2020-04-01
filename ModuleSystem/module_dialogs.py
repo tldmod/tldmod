@@ -11865,7 +11865,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (assign, ":num_trolls", 0),
    (try_for_range,":stack",0,":stacks"),
     (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
-    (is_between, ":troop_id", "trp_moria_troll", "trp_mountain_goblin2"), #Troll Range
+    (is_between, ":troop_id", "trp_moria_troll", "trp_multiplayer_profile_troop_male"), #Troll Range
     (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
    (try_end),
    (gt, ":num_trolls", 0),
@@ -11947,7 +11947,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (assign, ":num_trolls", 0),
    (try_for_range,":stack",0,":stacks"),
     (party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
-    (is_between, ":troop_id", "trp_moria_troll", "trp_mountain_goblin2"), #Troll Range
+    (is_between, ":troop_id", "trp_moria_troll", "trp_multiplayer_profile_troop_male"), #Troll Range
     (neq, ":troop_id", ":fac_troll_up"), #if none of them are from smith's faction
     (party_stack_get_size, ":num_trolls", "p_main_party", ":stack"),
    (try_end),

@@ -1921,7 +1921,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",14),
+    (assign,"$savegame_version",15),
 
 	] + (is_a_wb_script==1 and [
 
@@ -16719,7 +16719,7 @@ scripts = [
 	    (troop_set_slot, "trp_npc20", slot_troop_rank_request, 5),  #TLD
 
 	    #Others (placeholder)
-	    (try_for_range, ":placeholder_troops", "trp_npc21", "trp_last"),
+	    (try_for_range, ":placeholder_troops", "trp_npc21", "trp_werewolf"),
 		   	(troop_set_slot, ":placeholder_troops", slot_troop_morality_type, -1),
 		    (troop_set_slot, ":placeholder_troops", slot_troop_morality_value, 0), 
 		    (troop_set_slot, ":placeholder_troops", slot_troop_2ary_morality_type, -1), 
@@ -23944,6 +23944,14 @@ command_cursor_scripts = [
 			(try_end),
 		(assign, "$savegame_version", 14),
 	(try_end),		
+	
+	(try_begin), #InVain - April 2020, fix Goblin stats for old savegames
+    	(le, "$savegame_version", 14),	
+			(try_for_range, ":trolls", trp_mountain_goblin, trp_future_troop_10),
+			(troop_set_type, ":trolls", tf_orc),
+			(try_end),
+		(assign, "$savegame_version", 15),
+	(try_end),	
 ]),
 
 #Kham
