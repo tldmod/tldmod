@@ -71,7 +71,7 @@ mno_start_be|BEORNINGS, o povo Urso
 mno_start_da|O reino de Valle
 menu_start_good_elf|^^^^^^^^^^Em qual floresta você vive, Ancião?
 mno_start_ri|VALFENDA, do Senhor Elrond
-mno_start_lo|LOTHLÓRIEN, da Senhora Galadriel
+mno_start_lo|LOTHLORIEN, da Senhora Galadriel
 mno_start_mi|FLORESTA DAS TREVAS, terra dos Elfos Silvestres
 menu_start_good_dwarf|^^^^^^^^^^Selecione a sua linhagem:
 mno_start_er|um morador de EREBOR
@@ -254,7 +254,7 @@ mno_moria_exit_scene|Encontrar uma saída!
 menu_castle_outside|Você saiu {s2}.{s11} {s3} {s4}
 mno_moria_enter|Retornar para o corredor principal de Moria através da passagem secreta.
 mno_moria_enter_door|Entrar em Moria.
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|Pegue o livro
 mno_castle_start_siege|Cercar {reg6?town:castle}.
 mno_castle_leave|Partir.
 menu_castle_besiege|Você está sitiando {s1}. {s2} {s3}
@@ -301,7 +301,7 @@ mno_dwarven_warehouse_door|Entrar no Armazém Dwarven
 mno_talk_to_castle_commander|Visitar o {s61} Quartel.
 mno_speak_with_elder|Conversar com o {s6}.
 mno_isengard_underground|Ir para as cavernas subterrâneas.
-; mno_isengard_underground_door|Go to the underground caverns
+mno_isengard_underground_door|Vá para as cavernas subterrâneas
 mno_tirith_toplevel|Escalar para o andar superior.
 mno_erebor_gates|Visite os Grande Portões.
 mno_town_leave|Ir embora...
@@ -346,7 +346,7 @@ menu_player_added_to_war_council|^^^^^^Um mensageiro chegou e lhe informou que a
 mno_player_added_to_war_council_close|Fechar
 menu_player_added_to_siege_reports|^^^^^^Um mensageiro se aproxima para lhe informar que, sendo um {s24}, agora receberá relatórios sempre que {s2} ataca um centro ou quando os centros de {s2} são atacados.
 mno_player_added_to_siege_reports_close|Fechar
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^Um mensageiro chegou e lhe disse que agora, como {s24}, você poderá ordenar que {s2} o siga, para um total de {reg55} no máximo de seguidores.
 mno_player_added_to_allow_follow_close|Fechar
 menu_center_besieged_event|^^^^^^Um mensageiro aproxima informa que {s1} está sendo atacada por {s2} de {s3}.
 mno_center_besieged_event_close|Fechar

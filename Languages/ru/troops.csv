@@ -42,8 +42,8 @@ trp_townsman|Горожанин
 trp_townsman_pl|Горожане
 trp_watchman|Горожанка
 trp_watchman_pl|Горожанки
-; trp_i1_woodmen_man|Woodmen Settler
-; trp_i1_woodmen_man_pl|Woodmen Settlers
+trp_i1_woodmen_man|Лесной житель
+trp_i1_woodmen_man_pl|Лесные жители
 trp_i2_woodmen_forester|Смотритель леса
 trp_i2_woodmen_forester_pl|Смотрители леса
 trp_i3_woodmen_skilled_forester|Опытный смотритель леса
@@ -130,18 +130,18 @@ trp_i3_rhun_tribal_infantry|Пеший воин рунийского племе�
 trp_i3_rhun_tribal_infantry_pl|Пешие воины рунийиских племён
 trp_i4_rhun_vet_infantry|Рунийский пеший воин-ветеран
 trp_i4_rhun_vet_infantry_pl|Рунийские пешие воины-ветераны
-; trp_i5_rhun_ox_warrior|Warrior of the Ox
-; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
+trp_i5_rhun_ox_warrior|Воловий рубака
+trp_i5_rhun_ox_warrior_pl|Воловьи рубаки
 trp_c2_rhun_horseman|Всадник Рун
 trp_c2_rhun_horseman_pl|Всадник Рун
-; trp_c3_rhun_outrider|Outrider of Rhun
-; trp_c3_rhun_outrider_pl|Outriders of Rhun
-; trp_c4_rhun_noble_rider|Noble Rider of Rhun
-; trp_c4_rhun_noble_rider_pl|Noble Riders of Rhun
+trp_c3_rhun_outrider|Наездник Руна
+trp_c3_rhun_outrider_pl|Наездники Руна
+trp_c4_rhun_noble_rider|Знатный всадник Руна
+trp_c4_rhun_noble_rider_pl|Знатные всадники Руна
 ; trp_c5_rhun_warrider|Warrider of Rhun
 ; trp_c5_rhun_warrider_pl|Warriders of Rhun
 trp_c6_rhun_warlord|Военачальник Руна
-; trp_c6_rhun_warlord_pl|Warlords of Rhun
+trp_c6_rhun_warlord_pl|Военачальники Руна
 trp_i1_dwarf_apprentice|Гном-новобранец
 trp_i1_dwarf_apprentice_pl|Гномы-новобранцы
 trp_i2_dwarf_warrior|Воин гномов
@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|Лучники Пиннат-Гелина
 trp_c6_pinnath_leader|Командир пиннат-гелинского отряда
 trp_c6_pinnath_leader_pl|Командиры пиннат-гелинских отрядов
 trp_a1_blackroot_hunter|Охотник из долины Чернокорня
-; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
+trp_a1_blackroot_hunter_pl|Охотники из долины Чернокорня
 trp_a2_blackroot_bowman|Стрелок из долины Чернокорня
 trp_a2_blackroot_bowman_pl|Стрелки из долины Чернокорня
 trp_a3_blackroot_archer|Лучник из долины Чернокорня
@@ -310,12 +310,12 @@ trp_a2_lorien_warden|Лориэнский страж
 trp_a2_lorien_warden_pl|Лориэнские стражи
 trp_a3_lorien_vet_warden|Лориэнский опытный страж
 trp_a3_lorien_vet_warden_pl|Лориэнские опытные стражи
-; trp_a4_lorien_gal_warden|Galadhrim Warden
-; trp_a4_lorien_gal_warden_pl|Galadhrim Wardens
+trp_a4_lorien_gal_warden|Галадримский страж
+trp_a4_lorien_gal_warden_pl|Галадримские стражи
 trp_a5_lorien_gal_royal_warden|Королевский страж галадрим
 trp_a5_lorien_gal_royal_warden_pl|Королевские стражи галадрим
-; trp_a6_lorien_grey_warden|Grey Warden
-; trp_a6_lorien_grey_warden_pl|Grey Wardens
+trp_a6_lorien_grey_warden|Серый страж
+trp_a6_lorien_grey_warden_pl|Серые стражи
 trp_a5_lorien_gal_royal_archer|Меткий стрелок галадрим
 trp_a5_lorien_gal_royal_archer_pl|Меткие стрелки галадрим
 trp_noldorin_mounted_archer|Нолдорский конный лучник
@@ -324,16 +324,16 @@ trp_a2_lorien_archer|Лориэнский лучник
 trp_a2_lorien_archer_pl|Лориэнские лучники
 trp_a3_lorien_vet_archer|Лориэнский опытный лучник
 trp_a3_lorien_vet_archer_pl|Лориэнские опытные лучники
-; trp_a4_lorien_gal_archer|Galadhrim Archer
-; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
+trp_a4_lorien_gal_archer|Галадримский лучник
+trp_a4_lorien_gal_archer_pl|Галадримские лучники
 trp_galadhrim_royal_marksman|Меткий стрелок галадрим
 trp_galadhrim_royal_marksman_pl|Меткие стрелки галадрим
 trp_i3_lorien_inf|Лориэнские пешие воины
 trp_i3_lorien_inf_pl|Лориэнские пешие воины
-; trp_i4_lorien_gal_inf|Galadhrim Infantry
-; trp_i4_lorien_gal_inf_pl|Galadhrim Infantry
-; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Guard
-; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Guards
+trp_i4_lorien_gal_inf|Галадримский пехотинец
+trp_i4_lorien_gal_inf_pl|Галадримская пехота
+trp_i5_lorien_gal_royal_inf|Галадримский королевский гвардеец
+trp_i5_lorien_gal_royal_inf_pl|Галадримские королевские гвардейцы
 trp_lothlorien_standard_bearer|Лориэнский знаменосец
 trp_lothlorien_standard_bearer_pl|Лориэнские знаменосцы
 trp_a1_greenwood_scout|Разведчик Темнолесья
@@ -344,50 +344,50 @@ trp_a3_greenwood_archer|Лучник Темнолесья
 trp_a3_greenwood_archer_pl|Лучники Темнолесья
 trp_a4_greenwood_veteran_archer|Опытный лучник Темнолесья
 trp_a4_greenwood_veteran_archer_pl|Опытные лучники Темнолесья
-; trp_a5_greenwood_master_archer|Greenwood Master Archer
-; trp_a5_greenwood_master_archer_pl|Greenwood Master Archers
-; trp_a6_greenwood_chosen_marksman|Thranduil's Chosen Marksman
-; trp_a6_greenwood_chosen_marksman_pl|Thranduil's Chosen Marksmen
+trp_a5_greenwood_master_archer|Искусный лучник Темнолесья
+trp_a5_greenwood_master_archer_pl|Искусные лучники Темнолесья
+trp_a6_greenwood_chosen_marksman|Отборный стрелок Трандуиля
+trp_a6_greenwood_chosen_marksman_pl|Отборные стрелки Трандуиля
 trp_a3_greenwood_sentinel|Страж Темнолесья
 trp_a3_greenwood_sentinel_pl|Стражи Темнолесья
 trp_a4_greenwood_vet_sentinel|Опытный страж Темнолесья
 trp_a4_greenwood_vet_sentinel_pl|Опытные стражи Темнолесья
-; trp_a5_greenwood_vigilant|Greenwood Guardian
-; trp_a5_greenwood_vigilant_pl|Greenwood Guardians
+trp_a5_greenwood_vigilant|Хранитель Темнолесья
+trp_a5_greenwood_vigilant_pl|Хранители Темнолесья
 trp_i2_greenwood_infantry|Пехотинец Темнолесья
 trp_i2_greenwood_infantry_pl|Пехотинцы Темнолесья
 trp_i3_greenwood_vet_infantry|Опытный пехотинец Темнолесья
 trp_i3_greenwood_vet_infantry_pl|Опытные пехотинцы Темнолесья
 trp_i4_greenwood_elite_infantry|Отборный пехотинец Темнолесья
 trp_i4_greenwood_elite_infantry_pl|Отборные пехотинцы Темнолесья
-; trp_i5_greenwood_chosen_shieldmaster|Thranduil's Chosen Shield Master
-; trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil's Chosen Shield Masters
-; trp_i5_greenwood_chosen_spearmaster|Thranduil's Chosen Spear Master
-; trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Chosen Spear Masters
+trp_i5_greenwood_chosen_shieldmaster|Отборный мастер-защитник Трандуиля
+trp_i5_greenwood_chosen_shieldmaster_pl|Трандуильские отборные защитники
+trp_i5_greenwood_chosen_spearmaster|Отборный мастер-копейщик Трандуиля
+trp_i5_greenwood_chosen_spearmaster_pl|Трандуильские отборные копейщики
 trp_i5_greenwood_standard_bearer|Знаменосец Темнолесья
 trp_i5_greenwood_standard_bearer_pl|Знаменосцы Темнолесья
 trp_a1_riv_scout|Ривендельский разведчик
 trp_a1_riv_scout_pl|Ривендельские разведчики
 trp_a2_riv_vet_scout|Ривендельский опытный разведчик
 trp_a2_riv_vet_scout_pl|Ривендельские опытные разведчики
-; trp_a3_riv_archer|Rivendell Archer
-; trp_a3_riv_archer_pl|Rivendell Archers
-; trp_a4_riv_vet_archer|Rivendell Veteran Archer
-; trp_a4_riv_vet_archer_pl|Rivendell Veteran Archers
-; trp_a5_riv_master_archer|Rivendell Master Archer
-; trp_a5_riv_master_archer_pl|Rivendell Master Archers
+trp_a3_riv_archer|Ривендельский лучник
+trp_a3_riv_archer_pl|Ривендельские лучники
+trp_a4_riv_vet_archer|Ривендельский опытный лучник
+trp_a4_riv_vet_archer_pl|Ривендельские опытные лучники
+trp_a5_riv_master_archer|Ривендельский искусный лучник
+trp_a5_riv_master_archer_pl|Ривендельские искусные лучники
 ; trp_a6_riv_guardian|Guardian of Imladris
 ; trp_a6_riv_guardian_pl|Guardians of Imladris
-; trp_i3_riv_swordbearer|Rivendell Swordbearer
-; trp_i3_riv_swordbearer_pl|Rivendell Swordbearers
-; trp_i4_riv_vet_swordbearer|Rivendell Veteran Swordbearer
-; trp_i4_riv_vet_swordbearer_pl|Rivendell Veteran Swordbearers
-; trp_i5_riv_swordmaster|Rivendell Swordmaster
-; trp_i5_riv_swordmaster_pl|Rivendell Swordmasters
+trp_i3_riv_swordbearer|Ривендельский мечник
+trp_i3_riv_swordbearer_pl|Ривендельские мечники
+trp_i4_riv_vet_swordbearer|Ривендельский опытный мечник
+trp_i4_riv_vet_swordbearer_pl|Ривендельские опытные мечники
+trp_i5_riv_swordmaster|Ривендельский мастер меча
+trp_i5_riv_swordmaster_pl|Искусные ривендельские мечники
 ; trp_i6_riv_champion|Champion of Imladris
 ; trp_i6_riv_champion_pl|Champions of Imladris
-; trp_ac5_riv_rider|Rivendell Rider
-; trp_ac5_riv_rider_pl|Rivendell Riders
+trp_ac5_riv_rider|Ривендельский всадник
+trp_ac5_riv_rider_pl|Ривендельские всадники
 ; trp_ac6_riv_knight|Knight of Imladris
 ; trp_ac6_riv_knight_pl|Knights of Imladris
 trp_i6_rivendell_standard_bearer|Ривендельский знаменосец

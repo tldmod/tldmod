@@ -7,7 +7,7 @@ ui_riding_skill_not_adequate_to_mount|(Jezdectví příliš nízké)
 ui_camp|Akce
 ui_tutorial_inventory|V TLD, budeš potřebovat Resource pointy k získání vybavení. Resource pointy jsou měřítkem toho jak moc jsou frakce ochotné tě zásobovat a kolik z frakčních zdrojů jste oprávněni použít.
 ui_you_dont_have_value|Nemáš %s
-ui_merchant_cant_afford_value|Dal jsi nám více než jsme potřebovali! Možná si nech něco pro sebe ( dáváš nám zboží za %s, my můžeme mít pouze  %s)
+ui_merchant_cant_afford_value|%s: Dáváš nám více než potřebujeme! Možná si toho nech více pro sebe ( dáváš nám zboží za %s, bereme jenom %s).
 ui_merchant_pay_whatever|Ne, nic z toho nepotřebuji, nechte si to.
 ui_horse|Osedlat
 ui_reclaim_your_sold_goods|Než to uděláte,vraťte zboží které jste si vzali 
@@ -61,8 +61,8 @@ ui_explanation_charisma|Charisma: Každý bod zvyšuje maximální velikost tvé
 ui_delivered_number_damage|Zasazeno %d poškození.
 ui_mission_losses_killed|Zabil :
 ui_party_losses|%s : %d Zraněno -- %d zabito z %d
-ui_following|Následující.
-ui_accompanying|Následující
+ui_following|Sleduje
+ui_accompanying|Doprovází
 ui_dumping_value_items|%d předmětů bude navždy ztraceno, jste si jist?
 ui_dumping_value_item|Jeden předmět bude ztracen na vždy, jste si jist?
 ui_notification_requirements_not_met|Nemáte dostatečnou dovednost nebo Atribut pro tuto zbraň.
@@ -83,7 +83,7 @@ ui_number_of_companions_exceeds_leadership_limit|Množství společníků přesa
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Množství vězňů přesahuje limit vězeňského managementu.
 ui_shared_number_experience_within_party|Rozděleno %d zkušeností s družinou.
 ui_your_relations_with_value_has_improved_from_number_to_number|Tvé vztahy s %s se zvýšily z %d na %d.
-ui_your_relations_with_value_has_deteriorated_from_number_to_number|Tvé vztahy s %s se snížily z %d na%d.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Tvé vztahy s %s se snížily z %d na %d.
 ui_you_lost_value|Ztratil jsi %s.
 ui_change_graphics_settings_explanation|Některé změny budou vidět při vstupu do nové oblasti.
 ui_game_log_window|Okno herního logu.

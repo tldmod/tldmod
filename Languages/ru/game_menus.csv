@@ -254,7 +254,7 @@ mno_moria_exit_scene|Искать путь наружу!
 menu_castle_outside|Перед вами {s2}.{s11} {s3} {s4}
 mno_moria_enter|Вернуться в главный зал Мории через потайной ход
 mno_moria_enter_door|Войти в Морию.
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|Взять книгу
 mno_castle_start_siege|Нет.
 mno_castle_leave|Продолжить
 menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
@@ -301,7 +301,7 @@ mno_dwarven_warehouse_door|Войти в склад гномов
 mno_talk_to_castle_commander|Войти в казармы фракции {s61}.
 mno_speak_with_elder|Поговорить с местным управителем.
 mno_isengard_underground|Войти в подземелье.
-; mno_isengard_underground_door|Go to the underground caverns
+mno_isengard_underground_door|Войти в подземелье
 mno_tirith_toplevel|Взойти на верхний уровень.
 mno_erebor_gates|Посетить Великие Врата.
 mno_town_leave|Продолжить...
@@ -346,7 +346,7 @@ menu_player_added_to_war_council|^^^^^Посыльный сообщает Вам
 mno_player_added_to_war_council_close|Закрыть
 menu_player_added_to_siege_reports|^^^^^Посыльный сообщает Вам что теперь, в качестве {s24}, Вы будете получать донесения каждый раз, когда {s2} осаждает гарнизон или когда гарнизон {s2} подвергается вражеской осаде.
 mno_player_added_to_siege_reports_close|Закрыть
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^Прибыл гонец и сообщает вам, что теперь, в качестве {s24}, вам дозволено приказать {s2} следовать за вами, при этом число сопровождающих отрядов не может превышать {reg55}.
 mno_player_added_to_allow_follow_close|Закрыть
 menu_center_besieged_event|^^^^^Прибыл посыльный, сообщивший, что {s1} в настоящее время находится под осадой {s2} из державы {s3}.
 mno_center_besieged_event_close|Закрыть

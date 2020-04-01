@@ -147,7 +147,7 @@ qstr_Others|Прочее
 qstr_F4___Complex_formati|F4 - Сложные формации
 qstr_F7___Memorize_div._p|F7 - запомнить позицию подразделения
 qstr_F8___Default_divisio|F8 - Разместить подразделение по умолчанию
-qstr_F4___Ranks|F4 - Ряды
+qstr_F4___Ranks|F4 - Шеренга
 qstr_F5___Shield_Wall|F5 - Стена щитов
 qstr_F6___Wedge|F6 - Клин
 qstr_F7___Square|F7 - Квадрат
@@ -216,8 +216,8 @@ qstr_+1_to_Agility|+1 к ловкости
 qstr_+1_to_Leadership|+1 к навыку лидерства
 qstr_+1_to_Wildcraft|+1 к знанию леса
 qstr_+1_to_Power_Draw|+1 к навыку мощного выстрела
-; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
-; qstr_Who_might_be_interes|Who might be interested in this?
+qstr_The_record_of_Balin_|Записи пропавшей экспедиции Балина.
+qstr_Who_might_be_interes|Кому это может быть интересно?
 qstr_Turns_nature_to_your|Силы природы будут сражаться за Вас (эффект растёт с навыком Знание леса)
 qstr_+1_to_Trainer|+1 к навыку обучения
 qstr_Recruits_Tribal_Orcs|Позволяет рекрутировать диких орков
@@ -226,22 +226,22 @@ qstr_rallies|сигналы к сбору
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} во время битвы
 qstr_+1_to_Charisma|+1 к харизме
 qstr_+1_to_Surgery|+1 к навыку хирургии
-; qstr_+1_to_Intelligence|+1 to Intelligence
+qstr_+1_to_Intelligence|+1 к интеллекту
 qstr_+1_to_Ironflesh|+1 к навыку железной кожи
 qstr_+1_to_Prisoner_Mgmt|+1 к навыку содержания пленных
 qstr_when_equipped|когда надето на персонажа
-; qstr_+1_to_Riding|+1 to Riding
-; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_+1_to_Riding|+1 к Верховой езде
+qstr_+1_to_Mounted_Archer|+1 к Верховой стрельбе
 qstr_+2_to_Tactics|+2 к тактике
-; qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
-; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
-; qstr_+1_to_Spotting|+1 to Spotting
-; qstr_+2_to_Athletics|+2 to Athletics
+qstr_+{reg1}_to_Spotting|+{reg1} к Слежению
+qstr__Scales_with_Wildcra|(Растёт с навыком Знание леса)
+qstr_+1_to_Spotting|+1 к Слежению
+qstr_+2_to_Athletics|+2 к Атлетике
 qstr_Less_Dunnish_upkeep|Снижает содержание дунландцев
 qstr_Less_Wargs_upkeep|Снижает содержание всадников на варгах
 qstr_Light_Armor|Лёгкая броня
 qstr_+{reg1}_to_Party_Mor|+{reg1} к боевому духу отряда
-; qstr_Shoot_Speed:_{reg55}|Shoot Speed: {reg55}
+qstr_Shoot_Speed:_{reg55}|Скорость стрельбы: {reg55}
 qstr_Do_you_want_to_disem|Вы хотите высадиться?
 qstr_Move_here|Перейти
 qstr_View_notes|Заметки
@@ -250,8 +250,8 @@ qstr_nothing|ничего
 qstr_Good|Хорошо
 qstr_Med|Средне
 qstr_Bad|Плохо
-; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
-; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
+qstr_{s77}_received_{reg8|{s77} получил {reg84} бонусных очков опыта
+qstr_You_gained_{reg84}_i|Вы получили {reg84} бонусных очков опыта
 qstr_{reg4}_killed_{reg5}|{reg4} убито, {reg5} ранено, {reg6} сбежали
 qstr_{reg4}_killed_{reg5}_|{reg4} убито, {reg5} ранено
 qstr_{reg4}_killed_{reg5}_r|{reg4} убито, {reg5} сбежали
@@ -707,40 +707,40 @@ qstr_Your_mount_stumbles!|Ваш скакун спотыкается! Кажет
 qstr_Bitten_by_your_own_w|Вас укусил собственный варг!
 qstr_You_weigh_too_much_f|Ваш вес слишком велик для низкорослой лошади!
 qstr_Your_mount_rears_ref|Ваш скакун несётся прочь, не подчиняясь вам!
-; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
-; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
+qstr_Cannot_Change_Camera|В режиме от первого лица, невозможно сменить режим камеры.
+qstr_Switch_Back_to_3rd_P|Вернитесь к виду от третьего лица, чтобы вращать камерой.
 qstr_Fixed_Custom_Camera|Закрепленная настраиваемая камера
-; qstr_Press_Ctrl_+_Left_/_|Press Ctrl + Left / Ctrl + Right Arrow Keys to Switch Shoulders
-; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
+qstr_Press_Ctrl_+_Left_/_|Используйте комбинации клавиш Ctrl + Стрелка Влево / Ctrl + Стрелка Вправо для переключения плеч
+qstr_Press_Ctrl_+_Down_to|Нажмите Ctrl + Стрелка Вниз, чтобы центрировать камеру
 qstr_Use_+/__to_zoom_in/o|Нажмите + / - чтобы увеличить / уменьшить
 qstr_Use_Up/Down_arrow_ke|Нажмите стрелки вверх / вниз на клавиатуре чтобы наклонить вверх / вниз
 qstr_Fixed_Camera___Right|Закреплённая камера - правое плечо
 qstr_Fixed_Camera___Left_|Закреплённая камера - левое плечо
-; qstr_Fixed_Camera___Cente|Fixed Camera - Center
+qstr_Fixed_Camera___Cente|Закреплённая камера - центр
 qstr_While_visiting_towns|Посещая города, поселки и лагеря, вы можете общаться с людьми, гуляющими вокруг. Члены разных фракций могут рассказывать разные вещи: одни позволят вам самим задать вопрос, другие поделятся интересными слухами. Они могут дать вам лучшее понимание их культуры и фракции, могут помочь найти секретные локации или поделятся советами и хитростями для путешествий по Диким землям и сражений в Войне Кольца.
 qstr_Cannot_leave_now.|Сейчас нельзя уйти.
-qstr_You_have_found_the_l|Вы обнаружили местную кузницу... (+50 ХР)
-; qstr_You_have_found_the_lo|You have found the local authority...(+{reg3} XP)
-; qstr_You_have_found_the_loc|You have found the local warehouse...(+{reg3} XP)
-; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.
+qstr_You_have_found_the_l|Вы нашли местную кузницу... (+{reg3} опыта)
+qstr_You_have_found_the_lo|Вы нашли местного управителя... (+{reg3} опыта)
+qstr_You_have_found_the_loc|Вы нашли местные склады... (+{reg3} опыта)
+qstr_You_look_through_Hen|Вы смотрите сквозь Хеннет Аннун, Окно Заката. Это поистине прекрасное зрелище восстанавливает вашу веру в Запад и сверхъестественные силы.
 qstr__cancelled_the_{reg1|(отменены {reg10} очков опыта за убийство пленников)
 qstr_Forming_ranks.|Воины строятся шеренгами.
-; qstr_{reg2?You:Your_mount|{reg2?You:Your mount} received {reg1} extra damage!
+qstr_{reg2?You:Your_mount|{reg2?Вам:Вашей лошади} дополнительно нанесено {reg1} урона!
 ; qstr_{reg2?You_strike:You|{reg2?You strike:Your horse charges} for {reg1} bonus damage!
 qstr_Division_Placement|Передвижение подразделений.
 qstr_Complex_Formations|Сложные формации
-; qstr_Formations_turned_OF|Formations turned OFF in options menu
-; qstr_Division_{reg1}_{s2}_g|Division {reg1} {s2} goes to its memorized position...
-; qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms line (memorized).
-; qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized).
-; qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
+qstr_Formations_turned_OF|Формации выключены в настройках
+qstr_Division_{reg1}_{s2}_g|Подразделение {reg1} {s2} движется к заданной позиции...
+qstr_Division_{reg1}_{s2}_f|Подразделение {reg1} {s2} строится в линию (сохранено).
+qstr_Division_{reg1}_{s2}_fo|Подразделение {reg1} {s2} строится в {reg0} линии (сохранено).
+qstr_DEBUG__Health_Regen_|DEBUG (Восст. здоровья): {s1} восстанавливает {reg0}% здоровья. = +{reg1}% СИЛ
 qstr_Three_Nazgul_are_cir|Три Назгула кружат в небе над полем битвы!
 qstr_Two_Nazgul_are_circl|Два Назгула кружат в небе над полем битвы!
 qstr_A_Nazgul_is_circling|Назгул кружит над полем боя!
-; qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
-; qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
-; qstr_Your_mount_is_scared|Your mount is scared by the {reg73?ent:troll}!
-; qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
+qstr_Some_of_your_human_t|Некоторые из ваших человеческих воинов не боятся темноты.(Ночные воины не подвержены штрафам в ночное время)
+qstr_You_are_filled_with_|Вы наполняетесь яростью, когда видите врага (активен Берсерк).
+qstr_Your_mount_is_scared|Ваш скакун напуган  {reg73?ent:troll}!
+qstr_Your_mount_is_scared_|Ваш скакун напуган {reg73?ent:troll}, но вы можете успокоить его!
 qstr_Nazgul_sweep!|Назгул атакует!
 qstr_You_and_your_horse_p|Вы и ваша лошадь в ужасе, крики назгула невыносимы!
 qstr_Your_horse_panics_th|Ваша лошадь несётся прочь, крики назгула невыносимы!
@@ -748,23 +748,23 @@ qstr_You_cower_in_terror_|Вы сьёживаетесь от страха, кр�
 qstr_knocked_unconscious|оглушён
 qstr_Nazgul_diving_attack|Назгул спикировал на воина {s11}!
 qstr_{s11}_is_{s10}_in_th|{s11} {s10} во время нападения назгула!
-; qstr_Received_{reg66}_dam|Received {reg66} damage.
+qstr_Received_{reg66}_dam|Получено {reg66} урона.
 qstr_You_yell_for_your_ho|Вы призываете вашего коня.
 qstr_{s1}_s_morale:_{reg1|{s1}, боевой дух: {reg1}
-; qstr_You_do_not_need_to_r|You do not need to rally your troops yet.
+qstr_You_do_not_need_to_r|Пока не требуется созыв ваших войск.
 qstr_You_rally_your_troop|Вы созываете своих воинов!
 qstr_{s5}_rallies_{reg65?|{s5} вдохновляет {reg65?её:его} войск!
 qstr_You_have_killed_{reg|Вы убили {reg1} врагов в этой битве! 
 qstr_Your_bravery_inspire|Ваша отвага вдохновляет ваших воинов! 
-; qstr_Your_mount_has_falle|Your mount has fallen to the ground beneath you!
-; qstr_Receive_{reg22}_dama|Receive {reg22} damage.
-; qstr_You_have_been_knocke|You have been knocked unconscious by {s22}.
-; qstr_{s21}_has_been_knock|{s21} has been knocked off of {reg23?her:his} mount when it fell.
-; qstr_{s21}_{reg24?killed:|{s21} {reg24?killed:knocked unconscious} by {s22}.
+qstr_Your_mount_has_falle|Ваше ездовое животное упало на землю прямо под вами!
+qstr_Receive_{reg22}_dama|Получено {reg22} урона.
+qstr_You_have_been_knocke|{s22} сбивает вас с ног, вы теряете сознание.
+qstr_{s21}_has_been_knock|{s21} сваливается со {reg23?своего:своего} ездового животного, когда тот упал.
+qstr_{s21}_{reg24?killed:|{s21} {reg24?убит:оглушен} {s22}.
 qstr_A_bear_has_been_summ|Медведь был призван в битву!
-; qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.
-; qstr_You_can_also_order_y|You can also order your troops to cycle through the type of weapon you want them to use.^^ Press O to cycle between Weapon Order types. Press P to cycle between Shield Order types.
-; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.
+qstr_In_The_Last_Days_of_|В Последние дни Третьей эпохи, в начале каждого сражения, ваши войска будут занимать позиции и удерживать их, вместо того чтобы слепо атаковать.^^Чтобы приказать войскам занять определённый строй, нажмите 'J' для Шеренги, 'K' для Стены щитов, 'L' для Клина, ';' для Карэ. Чтобы отменить формации, нажмите 'U'. ^Если ваши войска бегут с поля, вы можете нажать 'V', чтобы сплотить их. За бой вы получаете ограниченное количество сигналов сбора войск, их количество зависит от ваших навыков лидерства и харизмы.
+qstr_You_can_also_order_y|Вы также можете приказать своим войскам переключиться на определённый тип оружия, которое они будут использовать в бою. Переключение циклическое.^^ Нажмите O, чтобы приказать войскам сменить тип оружия. Нажмите P для переключения режима использования щитов.
+qstr_The_Last_Days_of_the|В Последние дни Третьей эпохи была добавлена специальная камера, чтобы обойти стандартные ограничения камеры в отношении более коротких рас (например, орков и гномов).^^Нажмите CTRL + END, чтобы переключиться между 2 режимами камеры: фиксированное положение и свободный режим.^^Фиксированное положение является оптимальным положением для всех рас, однако данный режим не может быть настроен. Вы можете нажать CTRL+Стрелка влево/вправо, чтобы переключить вид из-за плеч.^^В свободном режиме персонаж размещается по середине экрана. Вы можете нажать CTRL+Стрелка вверх/вниз для наклона камеры и CTRL+ Numpad +/- для изменения масштаба.^^Информацию о том, как управлять различными режимами камеры, см. на странице Информация.
 qstr_Battlefield_is_too_s|Поле боя слишком мало для сложных формаций.
 qstr_You_have_a_clear_per|Вы отчётливо ощущаете опасность, надвигающуюся отовсюду!
 qstr_New_ent_reached_batt|Ещё один энт появился на поле боя...
@@ -776,24 +776,24 @@ qstr_Get_all_of_them!|Кончайте их!
 qstr_Kill_them_all!|Убить их всех!
 qstr_Toss_them_overboard!|Бросить их за борт!
 qstr_It_is_a_good_day_to_|Хороший денёк, чтобы умереть!
-; qstr_All_hands_on_deck!_T|All hands on deck! Throw them back!
+qstr_All_hands_on_deck!_T|Свистать всех наверх! Отдыхать!
 qstr_Ally_reinforcements_|Прибыло подкрепление союзников
 qstr_Forward_men!|Вперёд!
 qstr_Leave_none_of_these_|Не щадите этих мерзавцев!
 qstr_End_them_all!|Кончай их!
 qstr_Drive_them_back!|Дави их назад!
 qstr_Protect_the_City!|Защищать город!
-; qstr_Forward!_Board_them!|Forward! Board them!
-; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
+qstr_Forward!_Board_them!|Вперед! Взять их на абордаж!
+qstr_The_Last_Days_of_the_|В Последние дни Третьей эпохи появился продвинутый ИИ осад, разительно отличающийся от стандартного. Все войска, включая принадлежащих игроку, распределяются между различными командами (левый фланг / центр / правый фланг).^^ Затем игроку под командование переходит одна из команд, в то же время, искусственный интеллект отвечает за командование остальными командами. Это позволяет проводить более интересные, основанные на отрядах, осадные баталии.^^ Стартовые войска и подкрепления получают приказ АТАКОВАТЬ в течение первых нескольких секунд после развертывания. После этого можно будет снова приказывать вашей команде.
 qstr_Reached_Gauntlet_wav|Вы дожили до {reg1} волны противников!
 qstr_Ballista:_out_of_amm|Баллиста: кончились стрелы!
 qstr_Ballista:_turn_CURSO|Баллиста: повернуть КУРСОРОМ, нацелить левым SHIFT, выстрелить ПРОБЕЛОМ, поджечь T, уйти F
 qstr_Ballista:_out_of_ammo|Баллиста: кончились стрелы
 qstr_The_ladders_on_Deepi|Лестницы уже у Стены! Будьте начеку!
 qstr_THREE.._TWO..._ONE..|ТРИ... ДВА... ОДИН... В БОЙ!
-; qstr_You_have_come_upon_t|You have come upon the ruins of Amon Hen, the Hill of Sight, a Gondorian watch-tower atop which rests the Seat of Seeing^^You sense that this place was once great but has long been forgotten
-; qstr_You_have_come_upon_th|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters^^Dead grasses and rotting reeds loom up in the mists like ragged shadows of long forgotten summers, and bodies of men, elves, and orcs float in the murky depths^^The air feels cold and clammy, and you can't help but shiver as you see candle-lights flickering in the eyes of an elf corpse just beneath the water's surface
-; qstr_You_have_entered_the|You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The fortress of Dol Guldur is nearby and it casts a dark shadow over the forest. The woods here feel sickly and full of decay. Ancient oak trees are overrun with rot and fungus and great tangling webs stretch from trunk to trunk^^ The air is everlastingly still and dark and stuffy, and it feels like you are slowly being suffocated
+qstr_You_have_come_upon_t|Вы наткнулись на развалины Амон Хэн, Холм зрения. Гондорской сторожевой башни, на вершине которой находится Место Видения, вы чувствуете, что это место когда-то было великим, но давно уже забыто
+qstr_You_have_come_upon_th|Вы натолкнулись на Мёртвые Топи, место битвы при Дагорладе во время Войны Последнего Союза^^Болота поглотили то, что когда-то было травянистой равниной, и теперь единственная зелень - это мертвенно-бледные водоросли на тёмных, масляных поверхностях мрачных вод^^Мёртвая трава и гниющие тростники едва вырисовываются в тумане, как тени давно забытых лет, а в тёмных глубинах вод плавают тела людей, эльфов и орков^^Воздух вокруг холодный и влажный, вас пробирает озноб, когда встречаете мерцающие огоньки свечей в глазах эльфского трупа прямо под поверхностью воды
+qstr_You_have_entered_the|Вы вошли в лес Южного Темнолесья, когда-то известный как Великое Зеленолесье^^Крепость Дол Гулдур, находящаяся неподалеку, отбрасывает темную тень на лес. Здешние леса кажутся мёртвыми и болезненными. Древние дубы переполнены гнилью и грибком, а огромные запутанные паутины тянутся от ствола к стволу^^ Воздух вечно неподвижен, темен и душен, и кажется, что вы медленно задыхаетесь
 qstr_You_have_found_the_D|Вы нашли гномий склад, в котором могли быть легендарные копья. {s3} должен узнать об этом.
 qstr_Leave_the_Warehouse?|Покинуть склад?
 qstr_Leave_the_place_in_s|Тихо уйти из этого места?
@@ -815,28 +815,28 @@ qstr_The_sorcerer_has_joi|Колдун вступил в бой! Убить ег
 qstr_The_sorcerer_is_dead|Колдун мёртв!
 qstr_The_battle_is_won!|Битва выиграна!
 qstr_A_band_of_tribal_orc|Появилась группа Диких орков!
-; qstr_Gaaaar!!_We_wants_th|Gaaaar!! We wants those human meat!
-; qstr_{s31}_scouts_have_ap|{s31} scouts have appeared!
-; qstr_Those_are_ours!_We_h|Those are ours! We have been tracking them since they left! No one stands in our way!
-; qstr_Trolls_appeared!|Trolls appeared!
-; qstr_Gaaaar!!|Gaaaar!!
-; qstr_{s31}_scouts_have_app|{s31} scouts have appeared to aid the refugees!
+qstr_Gaaaar!!_We_wants_th|Гаааар!! Нам нужно человеческого мяса!
+qstr_{s31}_scouts_have_ap|Замечены разведчики {s31}!
+qstr_Those_are_ours!_We_h|Это наши! Мы следим за ними с тех пор, как они ушли! Никто не стоит на нашем пути!
+qstr_Trolls_appeared!|Появились тролли!
+qstr_Gaaaar!!|Гаааар!!
+qstr_{s31}_scouts_have_app|Явились разведчики {s31}, чтобы помочь беженцам!
 qstr_Hurry_men!_Help_the_|Скорее! Помогите беженцам! Убейте всех подонков и не дайте им сбежать!
 qstr_Cannot_leave|Невозможно уйти
-; qstr_Longbeard_Kinsman|Longbeard Kinsman
-; qstr_Ori_Longbeard|Ori Longbeard
-; qstr_We_shall_make_our_st|We shall make our stand here! FOR BALIN!
+qstr_Longbeard_Kinsman|Длиннобородый Кинсман
+qstr_Ori_Longbeard|Ори Длиннобородый
+qstr_We_shall_make_our_st|Мы будем стоять здесь до конца! ЗА БАЛИНА!
 qstr_Noooo!_You_orcs_will|Нееееет! Вы, орки, заплатите за это!
-; qstr_Arghhh!!_Nooo!!|Arghhh!! Nooo!!
-; qstr_I_will_take_down_as_|I will take down as many as I can before I fall!
-; qstr_Raaa!!|Raaa!!
+qstr_Arghhh!!_Nooo!!|Ааах!! Неееет!!
+qstr_I_will_take_down_as_|Я снесу столько голов, сколько смогу, прежде чем паду!
+qstr_Raaa!!|Рааа!!
 qstr_Kill_the_dwarves!|Убить гномов!
 qstr_Finish_them!|Кончай их!
-; qstr_We_will_feast_on_you|We will feast on your flesh!
+qstr_We_will_feast_on_you|Мы устроим пир на твоём трупе!
 qstr_Dwarf_meat!|Гномье мясо!
-; qstr_Eru_Iluvatar_has_dec|Eru Iluvatar has decided the fate of Balin's Company, and it cannot be changed.
+qstr_Eru_Iluvatar_has_dec|Эру Илуватар, Отец всего, предрешил судьбу компании Балина, и изменить её нельзя.
 qstr_They_are_coming....!|Они идут....!
-; qstr_Who...dares...enter.|Who...dares...enter...
+qstr_Who...dares...enter.|Кто...осмелился...вступить...
 qstr_You_are_not_welcome_|Тебе здесь не рады!
 qstr_Finally_I_found_you!|Наконец-то я нашёл тебя! Давай выбираться отсюда!
 qstr_You...are....ours...|Ты... наш...
@@ -844,14 +844,14 @@ qstr_Look_at_my_over_the_|Погляди, как красиво я выгляж�
 qstr_You_wish_old_man_my_|Как хочешь, старик, но мой ракурс с плеча противника красивее!
 qstr_You_should_really_se|Тебе действительно стоит посмотреть фотки наместника Денетора на Фэйсбуке, он потрясающий!
 qstr_Press_Space_to_conti|Нажмите Пробел, чтобы продолжить...
-; qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} until next promotion^
-; qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})^
-; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})^
-; qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} until next promotion^
-; qstr_{s13}_{reg11}__with_|{s13} {reg11} (with {s16})^
-; qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
-; qstr_Four_years_after_bri|Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once-Dwarven city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside the chamber. Barring the gates, Ori and the few survivors set up a final defense.
-; qstr_You_chase_an_orc_sco|You chase an orc scout party into the forest...
+qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} до следующего повышения^
+qstr_Influence:^_{reg11}_|Влияние:^ {reg11} (в державе {s16})^
+qstr_Resource_Points:^_{r|Очки снабжения:^ {reg12} (в державе {s16})^
+qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} до следующего повышения^
+qstr_{s13}_{reg11}__with_|{s13} {reg11} (в державе {s16})^
+qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (в державе {s16})^
+qstr_Four_years_after_bri|Через четыре года, после того, как группа гномов из Эребора попыталась занять некогда бывший гномий город Кхазад-дум, Балин был убит орочьей стрелой, когда тот вглядывался в Зеркальное озеро, его компания тут же вступила в бой со множеством орков, идущими вверх по реке Серебрянка. После продолжительных отступлений от Восточных ворот и Первого Зала, затем от Моста Кхазад-дум и Второго Зала, оставшиеся Длиннобороды были вынуждены вернуться обратно в Двадцать первый Зал. После неудачной попытки сбежать через Врата Дурина, в которых погиб Оин, Чертог Мазарбул стала последним пристанищем колонии после потери Двадцать первого Зала, сразу за этим чертогом. Заперев ворота, Ори и, те немногие, кто остались в живых, организовали последнюю оборону.
+qstr_You_chase_an_orc_sco|Вы гоните группу орков-разведчиков в лес...
 qstr_^No_food:___{reg7}|^Нечего есть: -{reg7}
 qstr_Current_party_morale|Текущий боевой дух отряда равен {reg5}.^В данный момент модификаторы боевого духа отряда таковы:^^Базовый боевой дух: +50^Размер отряда: {s2}{reg1}^Лидерство: {s3}{reg2}^Разнообразие пищи: {s4}{reg3}{s5}^Специальные предметы: {s6}{reg6}^Недавние события: {s7}{reg4}^ИТОГО: {reg5}
 qstr_Defending|Обороняется
@@ -931,10 +931,10 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Отряд {s1} {s10} на вас.
 qstr_You_are_attacking_a_|Вы напали на отряд {s1}.
 qstr_The_battle_against_t|Продолжается битва с отрядом {s1}.
-; qstr_There_are_{reg39}_al|There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points.
-; qstr_Having_a_small_party|Having a small party has its benefits...You and your troops hide from the enemy for a few hours to be sure that you are not seen.
-; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
-; qstr_{reg4}_will_be_lost.|{reg4} will be lost.
+qstr_There_are_{reg39}_al|В битве есть командиры союзников {reg39}. Вы можете командовать ими и их войсками за {reg40} очков влияния.
+qstr_Having_a_small_party|Наличие небольшой группы имеет свои преимущества... Вы и ваш отряд прячетесь от врага на несколько часов, чтобы быть уверенными, что вас не заметили.
+qstr_Your_ability_to_mast|Ваша способность знания местности позволила вам найти безопасное место, чтобы спрятаться. (Ваш навык Знание леса позволяет вам спрятаться от войск {reg1})
+qstr_{reg4}_will_be_lost.|{reg4} будет потеряно.
 qstr_{s13}_asked_you_to_r|{s13} попросил вас прибыть к нему, имея при себе не менее {reg13} воинов.
 qstr_{s13}_ordered_you_to|{s13} приказал вам присоединиться к штурму твердыни {s14}.
 qstr_You_were_victorious!|Вы одержали победу!
@@ -1058,10 +1058,10 @@ qstr_{s1}_has_been_defeat|{s1} потерпел поражение. Задани
 qstr_You_must_follow_{s1}|{s1} хочет, чтобы вы следовали за ним!
 qstr_You_must_follow_{s1}!|{s1} хочет, чтобы вы следовали за ним! Это последнее предупреждение!
 qstr_{s1}_parties_defeate|{s1} отряды уничтожены: {reg1} вне {reg2}
-; qstr_{reg65}_Moria_and/or|{reg65} Moria and/or Gundabad troops killed. (Counter refreshes every hour)
-; qstr_{reg65}_{s3}_troops_|{reg65} {s3} troops killed. (Counter refreshes every hour)
-; qstr_{reg66}_{s5}_troops_|{reg66} {s5} troops killed. (Counter refreshes every hour)
-; qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} troops killed. (Counter refreshes every hour)
+qstr_{reg65}_Moria_and/or|{reg65} воинов Мории и/или Гундабада убито. (Счетчик обновляется каждый час)
+qstr_{reg65}_{s3}_troops_|{reg65} {s3} воинов убито. (Счетчик обновляется каждый час)
+qstr_{reg66}_{s5}_troops_|{reg66} {s5} воинов убито. (Счетчик обновляется каждый час)
+qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} воинов убито. (Счетчик обновляется каждый час)
 ; qstr_{reg68}_{s10}_killed|{reg68} {s10} killed. (Counter refreshes every hour)
 qstr_{s1}_is_scouted.|{s1} разведан.
 qstr_The_Age_of_Men_has_f|Эпоха Людей подошла к концу. Теперь Две Твердыни собирают оставшиеся войска и созывают союзников, чтобы решить, кто станет единственным правителем Средиземья!
@@ -1382,10 +1382,10 @@ qstr__under_your_orders|, под вашим руководством
 ; qstr_Mercy_I_crave!_To_fa|Mercy, I crave! To face {s7} in open battle is sheer folly! I cannot do this thing!
 ; qstr_strong_warriors_from|strong warriors from {s7}
 ; qstr_champions_from_{s7}_|champions from {s7}, the strongest in the field
-; qstr_{playername}_the_men|{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to challenge and defeat {reg22} {s6}.
+qstr_{playername}_the_men|{playername}, в народе ходят слухи о жестокости войск неприятеля. Слухи об этих ужасах деморализуют людей. Нужно показать нашим людям, что им нечего бояться. Я хочу, чтобы ты бросил{/а} вызов и победил{/а} {reg22} {s6}.
 ; qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!
 ; qstr_I_will_do_what_you_a|I will do what you asked, and the men will witness.
-; qstr_high_level_troops_fr|high level troops from
+qstr_high_level_troops_fr|воинов высокого уровня из
 ; qstr_elite_level_troops_f|elite level troops from
 ; qstr_{s9}_wants_you_to_pe|{s9} wants you to personally defeat {reg22} {s6} {s7}.
 ; qstr_I_want_you_to_person|I want you to personally slay

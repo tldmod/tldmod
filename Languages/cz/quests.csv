@@ -31,17 +31,17 @@ qst_find_lost_spears_text|{s9} tě požádal, aby si našel ztracená kopí vyro
 qst_defend_village|Ubraň vesnici
 qst_raid_village|Vypleň vesnici
 qst_destroy_scout_camp|Znič tábor zvědů
-qst_rescue_prisoners|Zachraň {reg1} vězně
+qst_rescue_prisoners|Zachraň {reg1} vězňů
 qst_rescue_prisoners_text|{s9} chce abys osvobodil {reg1} vězňů.
-qst_scout_enemy_town|Prozkoumej nepřátelské město. 
+qst_scout_enemy_town|Prozkoumej nepřátelské město
 qst_scout_enemy_town_text|{s9} tě požádal, aby si prozkoumal oblast poblíž {s13}.
 qst_dispatch_scouts|Vyšli průzkumnou skupinu.
 qst_dispatch_scouts_text|{s9}  tě požádal, aby si vyslal zvědy poblíž {s13}.
-qst_eliminate_patrols|Poraž {reg1} nepřátelské skupiny.
+qst_eliminate_patrols|Eliminuj {reg1} nepřátelských skupin.
 qst_eliminate_patrols_text|{s9} tě žádá o poražení {reg1} {s13} nepřátelských skupin.
 qst_lend_surgeon|Půjčit svého chirurga {s3} do {s1}
 qst_lend_surgeon_text|Půjč mi zkušeného doktora. {s3} do {s1}.
-qst_follow_army|Následuj {s9}ovu armádu.
+qst_follow_army|Následuj armádu od {s9}.
 qst_follow_army_text|Nic.
 qst_report_to_army|Hlas se u {s13}
 qst_report_to_army_text|Nic.

@@ -251,39 +251,39 @@ mno_join_siege_with_allies|Připoj se k dalšímu útoku.
 mno_join_siege_stay_back|Nařiď tvým vojákům, aby se přidali k dalšímu útoku bez tebe.
 menu_moria_must_escape|^^Zdá se, že kniha pojednává o posledním pokusu trpaslíků o znovu osídlení Morie. Pokus, který zjevně skončil děsivou smrtí všech zúčastněných. Během pročítání knihy narazíš na slova 'pravostříbro'! Během studování stránek ti najednou dochází, že jde o popis trpasličích slují někde v nižších patrech. Hah!  Nebylo by to skvělé odkrýt dlouho ztracený trpasličí mithril!?  ^Dychtivě následuješ popsaný směr, skrz úzké, klikatící se tunely a dal...  ^...^Po několika hodinách neplodného pátrání chápeš, ze jsi ztracen v Morii a potřebuješ najít cestu ven.
 mno_moria_exit_scene|Najdi cestu ven!
-menu_castle_outside|Jsi venku {s2}.{s11} {s3} {s4}
+menu_castle_outside| Před tebou je {s2}. {s11} {s3} {s4}
 mno_moria_enter|Vrať se do hlavní síně Morie skrze tajný vstup
 mno_moria_enter_door|Vejdi do Morie.
 mno_cheat_steal_book_door|Získat knihu
-mno_castle_start_siege|obléhat {reg6?town:castle}.
-mno_castle_leave|Odejit
-menu_castle_besiege|Obléháš {s1}. {s2} {s3}
+mno_castle_start_siege|Obléhat {reg6?město:hrad}.
+mno_castle_leave|Odejít
+menu_castle_besiege|Začínáš obléhat {s1}. {s2} {s3}
 mno_siege_request_meeting|Zažádej si o sejití s velitelem hradu.
-mno_wait_24_hours|Počkat do zítřka.
-mno_castle_lead_attack|Veď tvé vojáky do útoku.
-mno_attack_stay_back|Nařiď svým vojákům, aby zaútočili, mezitím co se budeš držet zpátky.
-mno_build_ladders|Připravit žebříky na útok na zdi.
-mno_lift_siege|zrušit obléhání
-menu_siege_attack_meets_sally|obránci provedli protiútok
-menu_construct_ladders|Jakožto člen skupiny s nejvyššími Inženýrskými dovednostmi ({reg2}), {reg3?you estimate:{s3} estimates} že ti bude trvat {reg4} hodin postavit žebříky pro útok.
+mno_wait_24_hours|Počkat do zítra.
+mno_castle_lead_attack|Veď své vojáky do útoku.
+mno_attack_stay_back|Nařiď svým vojákům, aby zaútočili, mezitím co se budeš držet zpátky...
+mno_build_ladders|Připravit žebříky na útok na hradby.
+mno_lift_siege|Opustit obléhání.
+menu_siege_attack_meets_sally|^^^^^^Obránci vyrazili aby se střetli s tvým útokem.
+menu_construct_ladders|Jakožto člen skupiny s nejvyššími Inženýrskými dovednostmi ({reg2}), {reg3?odhaduješ:{s3} odhaduje} že bude trvat {reg4} hodin postavit žebříky pro útok.
 mno_build_ladders_cont|Udělej to.
-menu_castle_attack_walls_simulate|{s4}^^Tvoje ztráty:{s8}^^Nepřátelské ztráty: {s9}
-menu_castle_attack_walls_with_allies_simulate|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^Nepřátelské ztráty: {s10}
+menu_castle_attack_walls_simulate|{s4}^^Tvé ztráty: {s8}^^Nepřátelské ztráty: {s9}
+menu_castle_attack_walls_with_allies_simulate|{s4}^^Tvé ztráty: {s8}^^Spojenecké ztráty: {s9}^^Nepřátelské ztráty: {s10}
 menu_castle_taken_by_friends|Tady není nic k vidění.
-menu_castle_taken|{s3} padl pod tvým nátlakem a teď máš plnou kontrolu nad {reg2?town:castle}.  {reg1? Zdá se, že ti nic nebrání v tom, vzít si ho pro sebe...:} 
+menu_castle_taken|{s3} padl a teď máš plnou kontrolu nad {reg2?městem:hradem}. {reg1? Zdá se, že ti nic nebrání v tom, zabrat si ho pro sebe...:} 
 menu_castle_taken_2|{s3} padl pod tvým nátlakem a teď máš plnou kontrolu nad tímto hradem. Je čas poslat zprávu {s9}  o tvém vítězství. {s5}
-mno_castle_taken_no_claim|Nežádej o odměnu.
+mno_castle_taken_no_claim|Nežádat o odměnu.
 menu_siege_started_defender|{s1} zahajuje útok na opevnění {s2}. Máš {reg22} bojeschopných jednotek proti nepřátelským {reg11}. Rozhodneš se...
 mno_siege_defender_join_battle|Připojit se k bitvě.
 mno_siege_defender_troops_join_battle|Přikaž svým mužům, aby se připojili do bitvy bez tebe.
-menu_siege_join_defense|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^Nepřátelské ztráty: {s10}
+menu_siege_join_defense|{s4}^^Tvé ztráty: {s8}^^Spojenecké ztráty: {s9}^^Nepřátelské ztráty: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Těžký úder od uprchlíka tě posílá k zemi, hlava se ti točí a oči tmavnou. Čas běží. Když znovu otevřeš oči, zjišťuješ, že si pomlácený a zkrvavený, ale naštěstí žádná rána není smrtelná.
 menu_town_bandits_succeeded|^^^^^Goblini před tebou padají jako obílí před kosou! Brzy stojíš sám, zatímco většina útočníků leží v bezvědomí, mrtvá nebo umírající. Místní obyvatelé by byli jistě velmi vděční za to, že jsi je zachránil před tímto nebezpečím.
-menu_town_brawl_lost|^^^^^^Dostali tě. Lidé, na které si zaútočil tě rychle prohledají a seberou cennosti, než se vrátí ke svým denním činostem.
-menu_town_brawl_won|^^^^^Porazil si všechny nepřátele a stráže, které byly poslány k potlačení nepokoje. Rychle je prohledáš pro cennosti a zmizíš dokud se vztek neuklidní.^Možná příště ukážou více respektu a ustoupí.
+menu_town_brawl_lost|^^^^^^Byl jsi omráčen. Lidé, na které si zaútočil tě rychle prohledají a seberou cennosti, než se vrátí ke svým denním činnostem.
+menu_town_brawl_won|^^^^^Porazil si všechny nepřátele a stráže, které byly poslány k potlačení nepokojů. Rychle je prohledáš pro cennosti a zmizíš dokud se vztek neuklidní.^Možná příště ukážou více respektu a ustoupí.
 menu_close|Nic.
 menu_town|Dorazil jsi do místa {s60}. {s12}{s13}
-mno_town_menu_0|Jdi na nějeké místo.
+mno_town_menu_0|Jdi na nějaké místo.
 mno_town_menu_0_door|Dveře do nějaké lokace.
 mno_town_approach|Navštívit {s1}...
 mno_town_castle|Jdi do {s1}.
@@ -297,10 +297,10 @@ mno_town_prison_door|Dveře do vězení.
 mno_dungeon_enter|Hledej ztracená kopí v horách.
 mno_dungeon_enter_door|Otevřít dveře.
 mno_dwarven_warehouse|Navštivte trpasličí sklad
-mno_dwarven_warehouse_door|vstup do trpasličího skladu
+mno_dwarven_warehouse_door|Vstup do trpasličího skladu
 mno_talk_to_castle_commander|Navštívit kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
-mno_isengard_underground|Jdi do podzemních jeskyň.
+mno_isengard_underground|Jdi do podzemních jeskyní.
 mno_isengard_underground_door|Jdi do podzemních jeskyní
 mno_tirith_toplevel|Vyšplhej na horní patro.
 mno_erebor_gates|Navštiv Velké Brány.
@@ -314,79 +314,79 @@ menu_ship_reembark|Přeješ si nastoupit?
 mno_reembark_yes|Ano.
 mno_reembark_no|Ne.
 menu_center_reports|Název města: {s1}^Příjem z pronájmu: {reg1} denárů^Tarifní příjem: {reg2} denárů^Zásoby jídla: na {reg3} dní
-menu_sneak_into_town_suceeded|Přestrojil ses v oděvech chudého poutníka, oklamal jsi stráže a přišel si do města.
+menu_sneak_into_town_suceeded|Přestrojil ses do oděvů  chudého poutníka, oklamal jsi stráže a přišel si do města.
 menu_sneak_into_town_caught|Když ses pokoušel vplížit do města, jeden ze stráží tě poznal a vyvolal poplach! Musíš utéct přes bránu než tě všechny ostatní stráže ve městě obklíčí!
 mno_sneak_caught_fight|Pokus se probojovat ven!
-mno_sneak_caught_surrender|vzdát se.
-menu_sneak_into_town_caught_dispersed_guards|Utíkáte před stráží a snadno zakrýváte stopy než utečete, ztratily jste pronásledovatele.
-menu_sneak_into_town_caught_ran_away|probil jsi si cestu zpět k bráně a rychle se stahuješ z města
+mno_sneak_caught_surrender|Vzdát se.
+menu_sneak_into_town_caught_dispersed_guards|Utíkáte před strážemi a zakrýváte stopy než utečete, snadno se ztrácíte pronásledovatelům v bludišti uliček.
+menu_sneak_into_town_caught_ran_away|Našel jsi si cestu zpět k bráně a rychle se stahuješ do bezpečí mimo město.
 menu_tld_player_defeated|^^^^^Najednou začneš cítit tříštivou bolest vzadu v hlavě! \\ Třeseš se, když celý svět vedle tebe upadá do temnoty...^Je tohle tvůj konec?
-menu_recover_after_death_fangorn|Vzbudil ses. Stále se nacházíš v lese. Každá kost tě bolí. Zázrakem jsi přežil.^^Byla to porážka, alespoň jsi byl schopen vidět, co se stalo. ^Teď už víš, co se v tomto prokletém lese děje,^a přežil jsi, abys tohle mohl říct. ^^Bude ti někdo vůbec věřit?  
-menu_recover_after_death_moria|^^^^^ Znovu získáváte svou pozornost. Ležíte na měkké půdě, svěží vzduch na tváři. Jste venku! ^ Orkové vás považovali za mrtvé a hodili vás do nějaké kalné jámy. ^ Museli jste být neseni na povrch podzemním proudem.
+menu_recover_after_death_fangorn|Vzbudil ses. Stále se nacházíš v lese. Každá kost tě bolí. Zázrakem jsi přežil.^^Byla to porážka, alespoň jsi byl schopen vidět, co se stalo. ^Teď už víš, co se v tomto prokletém lese děje^a přežil jsi, abys jsi mohl vyprávět. ^^Bude ti někdo vůbec věřit?  
+menu_recover_after_death_moria|^^^^^Nabíráš vědomí. Ležíš na měkké půdě, svěží vánek ti vane po tváři. Jsi venku! ^ Skřeti tě považovali za mrtvého a hodili tě do nějaké kalné jámy. ^ Na povrch tě musel vynést podzemní proud.
 mno_whatever|Vstaň!
-menu_recover_after_death_default|^^^^^ Znovu získáváte svou pozornost. Ležíte na místě, kde jste padli. Nepřátelé vás museli považovat za mrtvé a nechat vás tam. Zdá se však, že žádná z vašich ran nebyla smrtelná, a přestože se cítíte strašně, zjistíte, že stále můžete chodit. Vstáváte a snažíte se hledat další přeživší z vaší strany.
-menu_recover_after_death_town|^^^^ Znovu získáváte svou pozornost a ocitnete se na okraji města. Jsi živí! Nikdo není v okolí a vy využijete svou šanci se odtáhnout mimo město. Zdá se, že žádná z vašich ran nebyla smrtelná, a přestože se cítíte strašně, můžete stále chodit.
-menu_recover_after_death_town_alone|Znovu získáváte svou pozornost a ocitnete se na okraji města. Jsi živí! Nikdo není v okolí a vy využijete svou šanci se odtáhnout mimo město. Vaši společníci vás našli. Zdá se, že žádná z vašich ran nebyla smrtelná, a přestože se cítíte strašně, můžete stále chodit.
+menu_recover_after_death_default|^^^^^Nabýváš vědomí. Ležíš na místě, kde jsi padli. Nepřátelé tě museli považovat za mrtvého a nechali tě tam. Zdá se však, že žádná z tvých ran nebyla smrtelná a přestože se cítíš strašně, zjišťuješ, že stále můžeš chodit. Vstáváš a snažíš se hledat další přeživší z tvé skupiny.
+menu_recover_after_death_town|^^^^Nabýváš vědomí a ocitáš se na okraji města. Jsi živý! Nikdo není v okolí a ty využíváš svou šanci a vlečeš se mimo město. Zdá se, že žádná z tvých ran nebyla smrtelná a přestože se cítíš strašně, můžeš stále chodit.
+menu_recover_after_death_town_alone|Nabýváš vědomí a ocitáš se na okraji města. Jsi živý! Nikdo není v okolí a ty využíváš svou šanci a vlečeš se mimo město. Našli tě tví společníci. Zdá se, že žádná z tvých ran nebyla smrtelná a přestože se cítíš strašně, můžeš stále chodit.
 menu_notification_center_under_siege|{s1} je obléháno {s2} z {s3}!
-menu_notification_one_side_left|^^^^^Valka o Prsten je u konce!^^{s1} porazil vsechny sve nepratele a stava se vitezem!
-menu_notification_total_defeat|^^^^^Valka o Prsten pro tebe konci!^^{s1} byl porazen neprateli a zustavas sam a porazen!
-menu_notification_your_faction_collapsed|^^^^^Tva domovina, {s11}, byla porazena!^Ostatni i nadale bojuji ve Valce. S ostatnimi, kdo zbyli z {s11}, muzes tale pomoci sve strane k vitezstvi.
-menu_notification_faction_defeated|^^^^^{s1} Je poražen!^{s1} je mrtvý, byl poražen jednotkami {s13}!
-menu_ruins|^^^^Prijizdis k {s1}. Kdysi silne sidlo bylo vypaleno do zakladu, ackoliv stale rozpoznavas stopy po opevneni a roztrousene zrezivele zbrane.
-menu_legendary_place|^^^^Sleduješ zvěsti a nacházíš {s1}. Nyní můžeš prozkoumat toto místo a přesvědčit se sám, zda jsou fámy pravdivé.
+menu_notification_one_side_left|^^^^^Válka o Prsten je u konce!^^{s1} porazil všechny své nepřátelé a zvítězil!
+menu_notification_total_defeat|^^^^^Válka o Prsten pro tebe končí!^^{s1} byl poražen nepřáteli a ty zůstáváš sám a poražen!
+menu_notification_your_faction_collapsed|^^^^^Tvá domovina, {s11}, byla poražena!^Ostatní i nadále bojují ve Valce. S ostatními, kdo zbyli z {s11}, můžeš stále pomoci své straně k vítězství.
+menu_notification_faction_defeated|^^^^^{s1} Je poražen!^{s1} zanikl, byl poražen jednotkami {s13}!
+menu_ruins|^^^^Přijíždíš k {s1}. Kdysi silné sídlo bylo vypáleno do základu, ačkoliv stále rozpoznáš stopy po opevnění a roztroušené rezavé zbraně.
+menu_legendary_place|^^^^Následoval jsi zvěsti a našel {s1}. Nyní můžeš prozkoumat toto místo a přesvědčit se sám, zda jsou fámy pravdivé.
 mno_explore|Prozkoumej toto místo.
-menu_ring_hunter_lair|^^^^Sledoval jsi stopy Lovců Prstenu skrz Temný hvozd a došel jsi k {s1}. Vidíš je ,jak se chystají odejít s truhlou.
-mno_attack_lair|Zaútoč na ně teď
+menu_ring_hunter_lair|^^^^Sledoval jsi stopy Lovců Prstenu skrz Temný hvozd a došel jsi k {s1}. Vidíš je, jak se chystají odejít s truhlou.
+mno_attack_lair|Zaútoč na ně hned
 mno_leave_bandit_lair|Prozatím odejít.
-menu_gondor_reinforcement_event|^^^^^ Svítí majáky Gondoru, Minas Tirith žádá o pomoc! ^^ Pánové jižních lénoří nyní pochodují na sever, aby bránili Bílé město před přicházející temnotou.
+menu_gondor_reinforcement_event|^^^^^Svítí majáky Gondoru, Minas Tirith žádá o pomoc! ^^ Pánové jižních knížectví nyní pochodují na sever, aby bránili Bílé město před přicházející temnotou.
 mno_gondor_reinforcement_event_close|Zavřít
-menu_gondor_beacons|Podíváte se na {s1}, jeden z výstražných majáků Gondoru, který se používal ke zvýšení poplachu v severním a jižním Gondoru.
+menu_gondor_beacons|Podíváš se nahoru na {s1}, jeden z výstražných majáků Gondoru, který se používal ke spuštění poplachu v severním a jižním Gondoru.
 mno_gondor_beacons_close|Odejít...
-menu_player_added_to_war_council|^^^^^Dorazil k tobě posel a řekl ti, že jako {s24},jsi byl požádán aby jsi se stal součástí válečné rady frakce {s2}. Nyní můžeš navrhovat strategie které mohou ovlivnit průběh války.
+menu_player_added_to_war_council|^^^^^Dorazil k tobě posel a řekl ti, že teď, když jsi {s24}, požádal tě {s2}, aby jsi se stal součástí jeho válečné rady. Nyní můžeš navrhovat strategie které mohou ovlivnit průběh války.
 mno_player_added_to_war_council_close|Zavřít
 menu_player_added_to_siege_reports|^^^^^Dorazil k tobě posel a řekl ti že nyní, jako {s24}, obdržíš hlášení kdykoli {s2} oblehne město nebo když budou města {s2} v obležení.
 mno_player_added_to_siege_reports_close|Zavřít
 menu_player_added_to_allow_follow|^^^^^Dorazil posel a řekli ti, že jelikož jsi teď {s24}, budeš moci přikázat, aby tě následovaly {s2}, maximální počet skupin, které tě mohou následovat je {reg55}.
 mno_player_added_to_allow_follow_close|Zavřít
-menu_center_besieged_event|Posel k tobě dorazil a řekl ti, že {s1} je obléhán {s2} z {s3}.
+menu_center_besieged_event|^^^^^Dorazil k tobě posel a řekl ti, že {s2} z {s3} obléhá {s1}.
 mno_center_besieged_event_close|Zavřít
 menu_guardian_party_spawned|^^^^^Zvědové hlásí že {s6} shromáždil velkou armádu v blízkosti {s7}, jako poslední naději jak zabránit postupu na hlavní město.
-mno_intro_next|Pokračuj
-mno_start_defend_caravan|braň karavanu
-mno_start_raid_caravan|přepadni karavanu
-mno_start_ambush_orcs|Přepadni skřety
-mno_start_kill_scouts|Zastav průzkumníky před informováním o tvém příchodu.
-mno_go_your_way|Nech je na pokoji.
-mno_defend_villagers|braň vesničany !
-mno_raid_villagers|přepadni vesnici
+mno_intro_next|Pokračuj...
+mno_start_defend_caravan|Braň karavanu!
+mno_start_raid_caravan|Přepadni karavanu!
+mno_start_ambush_orcs|Přepadni skřety!
+mno_start_kill_scouts|Zabraň průzkumníkům informovat o tvém příchodu!
+mno_go_your_way|Nech je na pokoji
+mno_defend_villagers|Braň vesničany!
+mno_raid_villagers|Přepadni vesnici!
 mno_go_away|Prozatím odejít a přeskupit se.
-menu_scout_camp_quest|Nedaleko vidíš tábor průzkumníků. Velíš k útoku na ně
-mno_attack_scout_camp|Zaútočit na tábořiště zvědů!
-menu_sea_battle_quest|Potkáte nepřátelskou flotilu. Lodě se blíží a námořníci hodí prkna ...
+menu_scout_camp_quest|Nedaleko vidíš tábor zvědů. Připravuješ své muže na útok na ně
+mno_attack_scout_camp|Zaútočit na tábor zvědů!
+menu_sea_battle_quest|Potkáváš nepřátelskou flotilu. Lodě se blíží a námořníci shazují prkna...
 mno_sb_defend_the_town|Naloďte se! Zničte jejich flotilu!
-mno_sb_attack_the_town|Snaží se nás chytit! Ubraňte flotilu!
-menu_camp_field_ai|^^^^^ Kliknutím na možnost přepnete. ^^^ Vypnutí jedné nebo více možností zlepší výkon (FPS)
-mno_lord_field_ai|Lordi mají vylepšené AI na bojišti: {s7}
-mno_horse_archer_field_ai|Jízdní lučištníci mají vylepšené AI na bojišti: {s7}
-mno_vs_orcs_field_ai|Lučištníci mají lepší zaměřování proti skřetům (nestřílí jim nad hlavy): {s7}
+mno_sb_attack_the_town|Snaží se nás zastavit! Braňte flotilu!
+menu_camp_field_ai|^^^^^Klikni na možnost abys ji přepnul.^^^Vypnutí jedné nebo více možností zlepší výkon (FPS)
+mno_lord_field_ai|Lordi mají vylepšenou UI na bojišti: {s7}
+mno_horse_archer_field_ai|Jízdní lučištníci mají vylepšenou UI na bojišti: {s7}
+mno_vs_orcs_field_ai|Lučištníci mají lepší zaměřování proti skřetům (nemíří jim nad hlavy): {s7}
 mno_battlefield_animals|Nevrkové/Koňské doprovody se spawnují v boji: {s7}
 mno_slow_when_wounded|Agenti jsou zpomaleni, když jsou zraněni: {s7}
 mno_battle_encounter_effects|Speciální efekty frakcí na bojišti (bouře,mlhy...): {s7}
 menu_hungry_orc|žádný
 menu_leaving_elf|žádný
 mno_defend_refugees|Dej si pozor na nájezdníky...
-mno_attack_refugees|Zaútočit na družinu uprchlíků...
-mno_leave_refugees|Nech je prozatím...
-mno_evil_war_tut_continue|Pokračuj
+mno_attack_refugees|Zaútočit na karavanu uprchlíků...
+mno_leave_refugees|Nech je, prozatím...
+mno_evil_war_tut_continue|Pokračuj...
 menu_guardian_party_quest|{s8} posílá zprávu že Železný pas je na kolenou a připravil poslední obranu. Přeje si aby ses připoji do poslední bitvy proti armádě Železného pasu. Máš sebou vzít {reg13} jednotek. Jestli nemáš dostatek jednotek, máš je co nejdříve naverbovat
-mno_guardian_party_reject|Poslat zprávu, že se nemůžeš připojit.
+mno_guardian_party_reject|Poslat zprávu, že se k němu nemůžeš připojit.
 mno_guardian_party_send_word|Pošli zprávu, že se k němu brzy připojíš.
-menu_alternate_training_fight|Budeš čelit {reg5}. Jsi připravený?
+menu_alternate_training_fight|Budeš čelit {reg5} nepřátelům. Jsi připravený?
 mno_training_continue|Začít s výcvikem...
 menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Zkusit znova...
 mno_alternate_training_finish|Opustit arénu...
-menu_custom_battle_choose_faction1|^^^^^^^^^^Vyber si svoji stranu a výhod:
+menu_custom_battle_choose_faction1|^^^^^^^^^^Vyber si svoji stranu a výhodu:
 mno_good_equal|Frakce dobra
 mno_bad_equal|Frakce zla
 mno_replay_prev|Přehrát předchozí nastavení
@@ -401,29 +401,29 @@ mno_cb_gondor6|Dol
 mno_cb_gondor7|Meddědovci
 menu_custom_battle_choose_faction3|^^^^^^^^^^Vyber frakci zla
 mno_cb_mordor|Mordor
-mno_cb_mordor1|Zelezny Pas
+mno_cb_mordor1|Železný pas
 mno_cb_mordor2|Vrchovina
 mno_cb_mordor3|Harad
 mno_cb_mordor4|Východňané
 mno_cb_mordor5|Morie
 mno_cb_mordor6|Gundabad
 mno_cb_mordor7|Rhun
-mno_cb_mordor8|Korzaři
-mno_rescue_mission|Proplížit se do doupěte kouzelníků, pod úkrytem noci.
+mno_cb_mordor8|Korzáři
+mno_rescue_mission|Proplížit se do doupěte kouzelníka, pod úkrytem noci.
 mno_next_rescue_scene_door|Pokračuj vpřed!
-mno_pick_troops1|Vyber spolecniky pro tento ukol, {reg0} vybrano
-menu_pick_troops|Koho by jste si sebou vzal na tajnou misi? Momentálně jsi vybral {reg0} společníků. Můžete si sebou vzít až 10 jednotek.
-mno_go_forward|Ukoncit vyber spolecniku a pokracovat.
+mno_pick_troops1|Vyber společníky pro tento úkol, {reg0} vybráno
+menu_pick_troops|Koho by jsi si sebou vzal na tajnou misi? Momentálně jsi vybral {reg0} společníků. Můžete si sebou vzít až 10 jednotek
+mno_go_forward|Ukončit výběr společníků a pokračovat.
 menu_burial_mound|Blížíš se k zakopané hromadě {s1} z {s2}, poražených v bitvě s jednotkami {s28}. Zbraně padlých jsou poházeny okolo.
 mno_pay_respects|Poklekněte a projevte úctu.
-mno_swear_oath|Slozit prisahu pomsty!
-mno_despoil|Znesvetit toto misto
+mno_swear_oath|Složit přísahu pomsty!
+mno_despoil|Znesvětit toto místo
 mno_leave_mound|Opustit mohylu.
-menu_burial_mound_respects|Poklekl jsi a prokázal úctu jsi úctu {s1}, tiše pronášíš modlitbu za spočinutí duše v posmrtném životě.  Nezbývá nic jiného co by se dalo udělat.
-menu_burial_mound_oath|Hlasite prisahas pomstu za smrt {s4}. Bez odpocinku budes patrat po muzich {s3}  a unicis je. Tva slova odnasi vitr a kdo vi, zda je nebylo slyset za morem?
-menu_funeral_pyre_oath|Hlasite prisahas pomstu za smrt {s4}. Bez odpocinku budes patrat po muzich {s3}  a unicis je. Tva slova odnasi vitr a kdo vi, zda je nebylo slyset za morem?
+menu_burial_mound_respects|Poklekl jsi a prokázal úctu jsi úctu {s1}, tiše pronášíš modlitbu za klidné spočinutí jeho duše v posmrtném životě.  Nezbývá nic jiného co by se dalo udělat.
+menu_burial_mound_oath|Hlasitě přísaháš pomstu za smrt {s4}. Bez odpočinku budeš pátrat po mužích {s3} a zničíš je. Tvá slova odnáší vítr daleko a kdo ví, zda je nebylo slyšet až za mořem?
+menu_funeral_pyre_oath|Hlasitě přísaháš pomstu za smrt {s4}. Bez odpočinku budeš pátrat po mužích {s3} a zničíš je. Tvá slova odnáší vítr daleko a kdo ví, zda je nebylo slyšet až za mořem?
 mno_leave_pyre_oath|Odejít od vatry.
-menu_burial_mound_despoil|Strhl jsi sochu {s1} vlastníma rukama a ničíš každý kámen kletbami, zlými zpěvy a nepopsatelnými akty. Tví následovníci ustupují ve strachu z mrtvých ale zdá se že jsi opět získal jejich respekt díky své krutosti.
+menu_burial_mound_despoil|Strhl jsi sochu {s1} vlastníma rukama a znesvěcuješ každý kámen kletbami, zlými zpěvy a nepopsatelnými akty. Tví následovníci ustupují ve strachu z mrtvých ale zdá se že jsi opět získal jejich respekt díky své bezbožnosti.
 menu_funeral_pyre|Přistupuješ k spáleným zbytkům pohřební hranice {s3} z {s2}. Poražených v bitvě silami {s28}. Tady tato mrtvola byla slavnostně spálena jeho osobními strážci. Nezůstalo nic cenného.
 mno_leave_pyre|Odejít od vatry.
 menu_town_ruins|Když se přiblížíš, vidíš že {s1} je {s2}
@@ -431,13 +431,13 @@ mno_ruin_menu_0|Prozkoumat to místo.
 mno_ruin_leave|Odejít...
 menu_premutiny|žádný
 menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
-menu_animal_ambush|ty a tví přátelé jste se ocitli mimo vaši skupinu, když najednou...
-menu_animal_ambush_success|{s2} {reg0?fall:falls} se objevili před tebou jako blesk z čistého nebe! Zanedlouho všichni útočníci leží na zemi, zranění nebo mrtví. {s3}
+menu_animal_ambush|Ty a tví společníci jste se ocitli odděleni od zbytku vaši skupiny, když najednou...
+menu_animal_ambush_success|{s2} před tebou {reg0?padli:padli} jako obilí před kosou! Zanedlouho všichni útočníci leží na zemi, zranění nebo mrtví. {s3}
 menu_animal_ambush_fail|Zvířata vás koušou a trhají {reg0?,: a tvého společníka{reg2?s,:,}} ale naštěstí se ti podařilo je odrazit. Doufejme že na tebe znova nezaútočí .
 menu_build_your_scene|Zde si můžeš vytvořit vlastní bitevní scénář, použitím jednoho ze slotů níže a Editačního módu (musíš nejdříve přepnout editační mód na ZAPNOUT v M&B spouštěcí obrazovce v Nastavení). Poté můžeš odeslat scénář, který jsi vytvořil (jmenovitě, sco soubory ze složky TLD/SceneObj)  developerskému týmu TLD, a pokud bude dobrý, může se objevit v pozdějším vydání jako jeden z náhodných bojovišť!^^ Zkus specifikovat ve kterém regionu na mapě chceš aby se scénář odehrával.^ Pár rad: vyhni se hluboké vodě, strmým horám  a dalším nedosažitelným místům pokud nejsi zkušený vývojář a nevíš jak zabránit AI jednotkám aby chodily tam kde nechceš, a vytvoř AI síť na jiném místě.^ (Vložení #0-1 je pro útočníky, #4 pro obránce, nedotýkej se #5-8
 mno_scene1|Bojiště5 (file scn battlefield5.sco)
 mno_scene2|Bojiště6 (file scn battlefield6.sco)
-mno_scene3|Bojiště 7 (file scn battlefield7.sco)
+mno_scene3|Bojiště7 (file scn battlefield7.sco)
 mno_scene4|Bojiště8 (file scn battlefield8.sco)
 mno_scene5|Bojiště9 (file scn battlefield9.sco)
 mno_back_3dot|Zpět...

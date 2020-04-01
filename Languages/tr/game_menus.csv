@@ -254,7 +254,7 @@ mno_moria_exit_scene|Çıkış yolunu bul!
 menu_castle_outside|Dışarıdasın {s2}.{s11} {s3} {s4}
 mno_moria_enter|Gizli girişten Moria'nın ana salonuna dön.
 mno_moria_enter_door|Moria'ya gir
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|Kitabı al
 mno_castle_start_siege|{reg6?kasaba:kale}.'yi kuşat.
 mno_castle_leave|Ayrıl.
 menu_castle_besiege|{s1}. {s2} {s3} 'leri kuşatıyorsun.

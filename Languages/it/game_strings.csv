@@ -1215,7 +1215,7 @@ str_surrender_offer_default|Fermo ! Mi arrendo !
 str_surrender_offer_martial|Fermo ! Mi arrendo !
 str_surrender_offer_quarrelsome|Basta ! Hai vinto questa volta, cane ! Ah.. Che vergogna !
 str_surrender_offer_pitiless|Mi arrendo ! Hai vinto. Che questo giorno sia maledetto !
-str_surrender_offer_cunning|Stop ! Mi arrendo a te !
+str_surrender_offer_cunning|Fermo ! Mi arrendo a te !
 str_surrender_offer_sadistic|Mi arrendo ! Mi arrendo ! Richiama i tuoi mastini !
 str_surrender_offer_goodnatured|Mi arrendo ! Congratulazioni per la tua vittoria, {sire, mia signora}
 str_surrender_offer_upstanding|Mi arrendo ! Garantiscimi l'onore delle armi e ottieni il credito che ti spetta !
@@ -1738,7 +1738,7 @@ str_mordor_rank_0|Verme
 str_mordor_rank_1|Snaga
 str_mordor_rank_2|Traditore di Gorgoroth
 str_mordor_rank_3|Sentinella di Cirith Ungol
-str_mordor_rank_4|schiavista di Udùn
+str_mordor_rank_4|Schiavista di Udùn
 str_mordor_rank_5|Saccheggiatore di Durthang
 str_mordor_rank_6|Guardiano di Morannon
 str_mordor_rank_7|Capitano di Minas Morgul
@@ -1848,7 +1848,7 @@ str_guldur_rank_0|Verme
 str_guldur_rank_1|Snaga
 str_guldur_rank_2|Traditore di Gorgoroth
 str_guldur_rank_3|Sentinella di Cirith Ungol
-str_guldur_rank_4|schiavista di Udùn
+str_guldur_rank_4|Schiavista di Udùn
 str_guldur_rank_5|Saccheggiatore di Durthang
 str_guldur_rank_6|Guardiano di Morannon
 str_guldur_rank_7|Capitano di Minas Morgul
@@ -2343,7 +2343,7 @@ str_npc26_payment|Vorrei partire con voi, ma le guardie al cancello non mi fareb
 str_npc27_payment|Vorrei unirmi a voi, ma il mio posto è qui. [Costo: {reg14} Punti Influenza di {s14}]
 str_npc18_payment_response|Non ho dubbi su questo. I sottoposti di Lurmsakun non oseranno rifiutarmi. [costo {reg14}/{reg15} Punti Influenza]
 str_npc19_payment_response|Il capo Daeglaf dovrà cedere di fronte al mio volere, una volta che l'avrò reso chiaro. [costo {reg14}/{reg15} Punti Influenza]
-str_npc20_payment_response|In effetti ce l'ho. Vieni ora ! Non è, dopo tutto, uno snaga da niente che seguirai. [costo {reg14}/{reg15} Punti Influenza]
+str_npc20_payment_response|In effetti li ho fatti. Vieni ora ! Non è, dopo tutto, uno snaga da niente che seguirai. [costo {reg14}/{reg15} Punti Influenza]
 str_npc21_payment_response|È una causa nobile, ma sono sicuro che si possa trovare un sostituto. [Costo: {reg14}/{reg15} Punti Influenza]
 str_npc22_payment_response|Fidati di me, sarai più utile al mio fianco. [Costo: {reg14}/{reg15} Punti Influenza]
 str_npc23_payment_response|D'ora in avanti, obbedirai a me. [Costo: {reg14}/{reg15} Punti Influenza]
@@ -2545,7 +2545,7 @@ str_rhun_maincamp_guildmaster_companion|I nostri migliori spadaccini e cavalieri
 str_guldur_guildmaster_companion_player_ask|Tutto quello che vedo qui è una marmaglia di infidi pigroni, più inlcini a scappare che a combattere. Dove sono i tuoi guerrieri?
 str_guldur_guildmaster_companion_none|O ho ! Cos'abbiamo qui ? Un grande capitano, non è vero ? Immagino che il tuo latrato sia peggiore del tuo morso, non mi sbaglio. Gli ordini sono ordini: prendi le tue truppe dalla guarnigione qui, e questo è tutto. Continua a blaterare in questo modo dove ci sono orecchie che possono sentirti, e qualcuno ti ficcherà un coltello nella schiena uno di questi giorni, vedrai se non succede.
 str_guldur_guildmaster_companion_player_none_ok|Dovrai fare attenzione a ciò che dici con me, se ci tieni al tuo bene.
-str_guldur_guildmaster_player_found_ok|Hai paura di quella donna, vero? Andrò a vedere se lei può essere ciò che fa per te. Sarà meglio che non sia tutto uno spreco di tempo !
+str_guldur_guildmaster_player_found_ok|Hai paura di quella donna, vero? Andrò a vedere se lei è come la fai sembrare. Sarà meglio che non si risolva tutto in uno spreco di tempo !
 str_guldur_main_guildmaster_companion|Abbiamo ragazzi robusti in abbondanza, maledizione. Ha... Io lo so cosa stai cercando. Oh si, davvero, so dove dovresti andare, Comandante. Vedi quella caverna laggiù, con le scale che scendono ? Se i nostri ragazzi si fanno abbastanza male li mandiamo laggiù, e devo dire che almeno un terzo viene rimesso insieme, har ! Possono fare delle cose davvero strane là sotto... e c'è una persona in particolare, la donna... mi dà i brividi, questo dice tutto. Dicono che lei ha qualcosa a che fare con il Numero Uno, o L'Elevato, se capisci cosa intendo. Parlale, se ne hai il coraggio.
 str_moria_guildmaster_companion_player_ask|Tutto quello che vedo qui è una marmaglia di infidi pigroni, più inlcini a scappare che a combattere. Dove sono i tuoi guerrieri?
 str_moria_guildmaster_companion_none|Veri guerrieri, dice {lei/lui} ! Penso che chiunque fra i nostri snaga potrebbe dare ai tuoi zoticoni una bella bastonata. Siamo dei duri, eccome, senza dubbio. Va a parlare con capo della caserma - ma parla con rispetto, pensa, o non convincerai i nostri compagni a seguirti. Ti arriverà un coltello nella schiena appena ti volti, se non parlerai come si deve.

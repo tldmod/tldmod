@@ -1,7 +1,7 @@
 ui_at_learning_limit|(лимит изучения для этой расы)
 ui_not_enough_skill_points_to_learn|(не хватает очков навыков для обучения)
 ui_not_enough_attributetype_to_learn_this_skill|(Недостаточно %s для изучения навыка)
-; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
+ui_explanation_agility|Ловкость: каждое очко дает пять очков оружия и увеличивает скорость оружия на 0,5%. Следующие навыки не могут быть развиты выше 1/3 ловкости: Владение оружием, Владение щитом, Атлетика, Верховая езда, Верховая стрельба, Сбор трофеев.
 ui_retreated_battle|%s отступил с поля боя
 ui_riding_skill_not_adequate_to_mount|(Навыка верховой езды недостаточно)
 ui_camp|Лагерь
@@ -59,7 +59,7 @@ ui_are_you_sure_you_want_to_import_the_character|Вы уверены, что х�
 ; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
 ; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ; ui_delivered_number_damage|Delivered %d damage.
-; ui_mission_losses_killed|killed :
+ui_mission_losses_killed|убито :
 ; ui_party_losses|%s  : %d wounded --- %d killed of %d.
 ; ui_following|Following 
 ; ui_accompanying|Accompanying 
