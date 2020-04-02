@@ -1309,17 +1309,22 @@ scripts = [
 	(assign, "$g_encountered_party", "p_legend_fangorn"), # just so that the find music script dosn't go nuts
 	(reset_visitors),
 	(modify_visitors_at_site, ":scene_to_use"),
+	(set_jump_entry, 0), 
+  (set_visitor, 4, "trp_player"),
+  (store_random_in_range, ":num_ents", 1, 3),
+  (set_visitors, 0, "trp_ent", ":num_ents"),
 	(set_party_battle_mode),
-	(set_jump_mission,"mt_fangorn_battle"),
-	(jump_to_scene,":scene_to_use" ),
 	(set_battle_advantage, 0),
 	(assign, "$g_battle_result", 0),
 	(assign, "$g_mt_mode", vba_normal),
 	(assign, "$cant_leave_encounter", 1),
-	(assign, "$g_next_menu", "mnu_fangorn_battle_debrief"),        
-	(jump_to_menu, "mnu_battle_debrief"),
+	(assign, "$g_next_menu", "mnu_fangorn_battle_debrief"), 
+	(set_jump_mission,"mt_fangorn_battle_new"),
+	(jump_to_scene,":scene_to_use" ),
 	(change_screen_mission),
 ]),
+
+
 #############################  TLD FANGORN SCRIPTS  END ##############################
 
 ##############################  GAME START MEGASCRIPT  ###############################

@@ -2124,8 +2124,14 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 
 	(eq, "$tld_option_crossdressing", 0),
 	(get_player_agent_no, "$current_player_agent"),
+	] + ( is_a_wb_mt==1 and [
+	(agent_is_active, "$current_player_agent"),
+	] or []) + [
 	(agent_get_horse,":mount","$current_player_agent"),
 	(ge, ":mount", 0),
+	] + ( is_a_wb_mt==1 and [
+	(agent_is_active, ":mount"),
+	] or []) + [
 	(agent_get_item_id,":mount_item", ":mount"),
 	
 	(try_begin), # lame horses can stall
@@ -2164,8 +2170,14 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 		
 	],[
 	(get_player_agent_no, ":player"),
+	] + ( is_a_wb_mt==1 and [
+	(agent_is_active, ":player"),
+	] or []) + [
 	(agent_get_horse,":mount",":player"),
 	(ge, ":mount", 0),
+	] + ( is_a_wb_mt==1 and [
+	(agent_is_active, ":mount"),
+	] or []) + [
 	(agent_get_item_id,":mount_item", ":mount"),
 	(try_begin), # wargs rear and byte
 		(is_between, ":mount_item", item_warg_begin, item_warg_end),

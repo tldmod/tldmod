@@ -6890,6 +6890,177 @@ tld_remove_riderless_animals,
 
 ]),
 
+
+# New Fangorn MT
+
+(
+    "fangorn_battle_new",mtf_battle_mode|mtf_synch_inventory,charge,
+    "You lead your men to battle.",
+    [
+      # Enemies
+      (0,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+     
+      # Player:
+      (4,mtef_team_1|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,8,[]),
+      (4,mtef_team_1|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,8,[]),
+     
+
+   ],
+  # Triggers
+  tld_common_wb_muddy_water+
+  tld_common_battle_scripts+
+  common_deathcam_triggers +
+  moto_formations_triggers +  [
+  
+
+  common_battle_on_player_down,
+
+  # Make the teams enemies... and disable morale
+  (ti_before_mission_start, 0, 0, [], [(team_set_relation, 1, 0, -1),(assign, "$battle_won", 0), (assign, "$tld_option_morale", 0),]),
+
+  (0, 0, ti_once, 
+  [
+
+    # Make enemies charge...
+    (set_show_messages, 0),
+      (team_give_order, 0, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+  ], 
+  []),
+
+  (1, 60, ti_once, 
+  [
+    (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated, 0),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  ],
+  [
+    (finish_mission, 1)
+  ]),
+
+  (ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (eq, "$battle_won", 1),
+      (assign,"$g_battle_result",1),
+      (jump_to_menu, "mnu_fangorn_battle_debrief"),
+      (assign, "$tld_option_morale", 1),
+      (finish_mission),
+    (else_try),
+      (main_hero_fallen),
+      (jump_to_menu, "mnu_fangorn_battle_debrief"),
+      (assign, "$tld_option_morale", 1),
+      (finish_mission),
+    (try_end),
+    # Apply health changes...
+    (try_begin),
+      (this_or_next|eq, "$battle_won", 1),
+      (main_hero_fallen),
+      (try_for_agents, ":agent"),
+        (gt, ":agent",0),
+        (agent_is_human, ":agent"),
+        (agent_get_troop_id, ":troop", ":agent"),
+        (troop_is_hero, ":troop"),
+        (this_or_next|eq, ":troop", "trp_player"),
+        (this_or_next|is_between, ":troop", companions_begin, companions_end),
+        (is_between, ":troop", new_companions_begin, new_companions_end),
+        (store_agent_hit_points,":hp",":agent",0),
+        (call_script, "script_get_max_skill_of_player_party", "skl_wound_treatment"),
+        (store_mul, ":medic", reg0, 5),
+        (val_add, ":hp", ":medic"),
+        (val_clamp, ":hp", 0, 100),
+        (troop_set_health, ":troop", ":hp"),
+      (try_end),
+    (try_end),
+  ]),
+  
+#    #  make ent spawn at random
+#  (ti_on_agent_spawn, 0, 0, [],
+#  [
+#    (store_trigger_param_1, ":agent"),
+#
+#    ] + (is_a_wb_mt==1 and [
+#    (agent_is_active, ":agent"),
+#    ] or []) + [
+#    (agent_is_human, ":agent"),
+#    (agent_is_alive, ":agent"),
+#    (agent_get_troop_id, ":trp", ":agent"), 
+#
+#    (eq, ":trp", "trp_ent"), # a ent is spawned!
+#    (mission_cam_get_position, pos11), 
+#    # spawn it at random pos
+#    (try_for_range, ":unused", 0, 50),
+#          (call_script, "script_store_random_scene_position_in_pos10" ),
+#      (position_is_behind_position, pos10, pos11), # ent appear always out of view >:-)
+#      (assign, ":unused", 50), # ends for loop
+#    (end_try),
+#    (agent_set_position, ":agent", pos10),
+#  ]),
+#
+  # initial conditions: 1 or 2 ents
+  (0, 0, ti_once,[
+
+      (assign,"$battle_won",0),
+      (assign,"$defender_reinforcement_stage",0),
+      (assign,"$attacker_reinforcement_stage",0),
+      (assign,"$g_presentation_battle_active", 0),
+
+      (call_script, "script_combat_music_set_situation_with_culture"),
+      (display_message, "@You have a clear perception of great imminent danger, from all around you!",color_bad_news),
+
+    ],[]),
+  
+  # add new ents from time to time
+  (30,0,0, 
+
+    [
+      (neg|all_enemies_defeated, 0),
+      (store_random_in_range,":d100",1,101),
+      (lt,":d100", 10), #  5% of the times...
+      (this_or_next|lt,":d100",8), # 8%: every 35 secs an ent appears anyway
+      (gt,"$g_fangorn_rope_pulled",10), # or an ent appears at cost of 10 points of 
+      (val_sub,"$g_fangorn_rope_pulled",10),
+      (val_max,"$g_fangorn_rope_pulled",0),
+      #(store_random_in_range,":entry_point",2,5),
+      #(add_visitors_to_current_scene, 4, "trp_ent", 1),
+
+      (spawn_agent, "trp_ent"),
+      (agent_set_team, reg0, 0),
+
+      ] + (is_a_wb_mt==1 and [
+      (get_player_agent_no, ":player"),
+      (call_script, "script_get_position_and_teleport_behind_agent", ":player", reg0, 1000),
+       ] or [
+      (call_script, "script_store_random_scene_position_in_pos10" ),
+      (agent_set_position, reg0, pos10),
+      ]) + [
+
+      (display_message, "@New ent reached battle scene...")
+
+    ], []),
+
+
+  common_inventory_not_available, 
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+  common_battle_inventory,      
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
+      
+    ],
+  ),
+
+
 # Tutorial MTs
 
 ] + (is_a_wb_mt==1 and [

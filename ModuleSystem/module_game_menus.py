@@ -4087,21 +4087,44 @@ game_menus = [
 		(else_try),
 			(assign, "$recover_after_death_menu", "mnu_recover_after_death_fangorn"),
 		#	(jump_to_menu, "mnu_tld_player_defeated"),
-			(jump_to_menu, "mnu_auto_return_to_map"),
+			(jump_to_menu, "mnu_fangorn_battle_debrief_won"),
 		(try_end),
 	 ],[]
  ),
 ( "fangorn_battle_debrief_won",0, # player faced fangor dangers, and won!
-    "^^^A great victory!^^^So this is what all the myths about Fangorn meant...",
-	"none",[],[
-	("continue",[],"Continue...",[
+    "{s55}",
+	"none",[		
 		(try_begin),
+			(eq, "$g_battle_result", 1),
+			(str_store_string, s55, "@^^^A great victory!^^^So this is what all the myths about Fangorn meant..."),
+		(else_try),
+			(neq, "$g_battle_result", 1),
+			(str_store_string, s55, "@^^^Defeated...^^^Scattered in the Fangorn Forest... Alone..."),
+		(try_end),],[
+	("continue",[
+
+		(try_begin),
+			(eq, "$g_battle_result", 1),
+			(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
+			(str_store_string, s55, "@^^^A great victory!^^^So this is what all the myths about Fangorn meant..."),
 			(check_quest_active, "qst_investigate_fangorn"),
 			(neg|check_quest_succeeded, "qst_investigate_fangorn"),
 			(neg|check_quest_failed, "qst_investigate_fangorn"),
 			(call_script, "script_succeed_quest", "qst_investigate_fangorn"),
 			(troop_add_item, "trp_player", "itm_ent_water", 0), #MV: reward for defeating the Ents
+		(else_try),
+			(eq, "$g_battle_result", 1),
+			(neg|check_quest_active, "qst_investigate_fangorn"),
+			(str_store_string, s55, "@^^^A great victory!^^^So this is what all the myths about Fangorn meant..."),
+		(else_try),
+			(neq, "$g_battle_result", 1),
+			(assign, "$recover_after_death_menu", "mnu_recover_after_death_fangorn"),
+			(str_store_string, s55, "@^^^Defeated...^^^Scattered in the Fangorn Forest... Alone..."),
+		#	(jump_to_menu, "mnu_tld_player_defeated"),
+			(jump_to_menu, "mnu_auto_return_to_map"),
 		(try_end),
+
+	],"Continue...",[
 		(change_screen_map),
 	]),
  ]),
@@ -4211,7 +4234,7 @@ game_menus = [
 	("night_bandits",[],"Night Bandits",[(assign,"$cheat_imposed_quest","qst_deal_with_night_bandits")]),
 	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
 	("scout_camp", [], "Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
-	("defend_village", [], "Defend Village", [(assign, "$cheat_imposed_quest", "qst_defend_village")]),
+	("defend_village", [], "Investigate Fangorn", [(assign, "$cheat_imposed_quest", "qst_investigate_fangorn")]),
 	("raid_village", [], "Raid Village", [(assign, "$cheat_imposed_quest", "qst_raid_village")]),
     ("eliminate_patrols", [], "Defeat Target Lord", [(assign, "$cheat_imposed_quest", "qst_blank_quest_06")]),
     ("eliminate_troll", [], "Dispatch Troll", [
