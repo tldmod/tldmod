@@ -256,7 +256,7 @@ qstr_{reg4}_killed_{reg5}|{reg4} zabito, {reg5} zraněno, {reg6} uprchlo
 qstr_{reg4}_killed_{reg5}_|{reg4} zabito, {reg5} zraněno
 qstr_{reg4}_killed_{reg5}_r|{reg4} zabito, {reg5} uprchlo
 qstr_{reg4}_wounded_{reg5|{reg4} zraněno, {reg5} uprchlo
-qstr_killed|zabil
+qstr_killed|zabit
 qstr_routed|utekl
 qstr_wounded|zranil
 qstr_{s0}^TOTAL:_{reg3}__|{s0}^CELKOVĚ: {reg3} ({s2})
@@ -581,7 +581,7 @@ qstr_Rohan_capital_moved_|Rohanské hlavní město se přesunuto z Edorasu do He
 qstr_Dale_capital_moved_f|Dolské hlavní město přesunuto z Dolu do Esgarothu!
 qstr_Gundabad_capital_mov|Gundabadské hlavní město přesunuto z Gundabadu do Gobliního města!
 qstr_The_hosts_of_{s2}_re|Hordy z {s2} ustupují do svých domovů!
-qstr____Ruins_of_{s1}___|   Ruiny {s1}   
+qstr____Ruins_of_{s1}___|{s1} (Ruiny)
 qstr_ranks|řady
 qstr_shield_wall|štítová hradba
 qstr_wedge|klín
@@ -776,7 +776,7 @@ qstr_Get_all_of_them!|Dostaňte je všechny!
 qstr_Kill_them_all!|Zabijte je všechny!
 qstr_Toss_them_overboard!|Hoďte je přes palubu!
 qstr_It_is_a_good_day_to_|To je dobrý den na smrt!
-qstr_All_hands_on_deck!_T|Všichni na palubu! Hoďte je zpátky!
+qstr_All_hands_on_deck!_T|Všichni na palubu! Odrazte je!
 qstr_Ally_reinforcements_|Spojenecké posily dorazily
 qstr_Forward_men!|Kupředu, chlapi!
 qstr_Leave_none_of_these_|Nenechte žádné z těchto špinavců naživu!
@@ -1038,7 +1038,7 @@ qstr_You_have_found_the_s|Našel jsi čaroděje!
 qstr_You_cannot_leave_unt|Nemůžeš odejít dokud nesetřeseš stráže!
 qstr_Kill_him_quickly_bef|Zabij ho, rychle než uteče!
 qstr_Enraged_by_the_death|Rozzuřen smrtí {s4}, pronesl jsi přísahu pomsty vůči silám {s3}. V následujících dnech musíš zlikvidovat tolik jednotek {s3}, kolik je možné. Jsi si jasně vědom toho, že tví následovnici byli svědky tvé přísahy a nechceš aby tě považovali za křivopřísažníka. Krveprolití může začít!
-qstr_flooded._Somebody_or|zaplaveny. Někdo musel zničit přehrady na Želízu.
+qstr_flooded._Somebody_or|zaplaveno. Někdo musel zničit přehrady na Želízu.
 qstr_destroyed._Only_smol|zničeno. Zbyly pouze doutnající ruiny.
 qstr_^^^You_lost_your_fig|^^^Prohrál jsi boj proti vzbouřenci! ^Vypadá to že tví skřeti mají nyní nového velitele.
 qstr_^^^You_have_slain_th|^^^Zabil jsi provinilce a ostatní skřeti rychle zapadli zpátky do řady. ^Na nějakou dobu budou ti červi jistě potichu.
@@ -1345,7 +1345,7 @@ qstr_Steel_must_be_kept_sh|Ocel musí být ostrá, muži i koně v plné síle, 
 qstr_Next_if_you_try_to_a|Dále, pokud se pokusíš zaútočit na nepřátelské hlavní město, pokud ještě nebudeš mrtvý dorazím tě já.. Zde napochodujeme pouze pokud to zavelí Mistr. Ty jdi tam, kde je nepřítel slabý a může být poražen.
 qstr_Secondly_you_do_not_|Zadruhé, nemáš povolení vést naše lidi proti nepřátelskému hlavnímu městu. Tyto místa mohou být přemožena pouze s plnou sílou našich sjednocených jednotek. Zaútočit můžeš pouze pokud bude nepřítel oslabený dostatečně na to aby byl poražen.
 qstr_Third_{s2}_is_on_its|Zatřetí, {s2} je na svém vlastním tažení. Budeme bojovat po vašem boku pokud budou přípravy vypadat dobře, ale raději buď dostatečně silný abys vyhrál i sám, v opačném případe dlouho nevydržíš.
-qstr_Furthermore_you_must|Mimoto musíš vědět že {s2} je zaměstnaný vlastním tažením. Naše vlajky tě budou následovat do boje, když to okolnosti povolí, ale nevěř na naději — možná budeš nucen stát sám.
+qstr_Furthermore_you_must|Mimoto musíš vědět že {s2} je zaměstnaný vlastním tažením. Naše vlajky tě budou následovat do boje, když to okolnosti dovolí, ale nedělej si plané naděje — možná budeš nucen stát sám.
 qstr_Last_remember_that_a|Nakonec pamatuj, že jako {s25}, si nemůžeš dovolit zklamat Mistra. Když budeš bojovat je v sázce příliš mnoho pro {s2} — pokud neuspěješ, budeš si přát aby ses nikdy nenarodil.
 qstr_Finally_remember_tha|Konečně, pamatuj že jako {s25}, žiješ a umíráš podle svých úspěchů a nezdarů. Když vpochoduješ do bitvy je toho v sázce mnoho pro {s2} — pokud zklameš, důsledky budou nedozírné.
 qstr_Finally_remember_that|Konečně, pamatuj že jako {s25}, můžeš získat slávu, můžeš nazývat vítězstvím svým vlastním, ale všichni kdo žijí v {s2} zaplatí vysokou cenu v případě tvého selhání. Osud frakce {s2} si vezeš sebou do bitvy — pokud zklameš, důsledky budou nedozírné.
@@ -1380,8 +1380,8 @@ qstr_Accursed_be_those_wh|Prokletí ať jsou ti, kdo v tento den následují {s7
 qstr_{s9}_wants_you_to_de|{s9} chce, aby jsi porazil {s35} z {s36} v bitvě.
 qstr_I_humbly_ask_that_yo|Pokorně vás žádám, abyste pro tento úkol našli někoho jiného. Nemyslím si, že bych mohl bojovat nejlépe proti {s7}.
 qstr_Mercy_I_crave!_To_fa|Milost, prosím! Bojovat tváří v tvář proti {s7} je čiré bláznovství! To nemůžu udělat!
-qstr_strong_warriors_from|silní válečníci z {s7}
-qstr_champions_from_{s7}_|šampioni z {s7}, nejsilnější na bojišti
+qstr_strong_warriors_from|silných válečníků z {s7}
+qstr_champions_from_{s7}_|šampionů z {s7}, těch nejsilnějších na bojišti
 qstr_{playername}_the_men|{playername}, muži slyšeli příběhy o divokých nepřátelských vojácích. Tyto hrozivé příběhy muže demoralizují. Chci aby jsi ukázal mužům že se nemusí ničeho bát. Chci abys porazil {reg22} {s6}.
 qstr_{playername}_I_want_|{playername}, chci aby jsi ukázal mužům, že nepřátelští vojáci jsou neškodní. Chci aby jsi osobně zabil {reg22} {s6}! Udělej to aby jsi ukázal že jsme nejsilnější!
 qstr_I_will_do_what_you_a|Udělám co žádáš a muži mi budou svědky.
@@ -1536,7 +1536,7 @@ qstr_Good_moves_but_you_m|Dobré pohyby, ale ještě máš na čem pracovat.
 qstr_More_than_half_of_th|Víc než polovina soupeřů, to není špatné
 qstr_You_ll_need_to_try_h|Budeš se muset snažit více.
 qstr_Well..._better_here_|No... lepší tady než v boji, ne?
-qstr_We_ve_been_sent_by_L|Byli jsme posláni od {s3}. Přišli jsme abychom spojili naši sílu s vaší.
+qstr_We_ve_been_sent_by_L|Posílá nás {s3}. Přišli jsme abychom se k vám připojili a spojili naše síly.
 qstr_Lord_{s3}_has_sent_u|Lord {s3} nás poslal, abychom se přidali k flotile útočící na {s4}.
 qstr_Excellent_{playernam|Skvěle, {playername}! Slyšel jsem že jsi jim dal více než jsem žádal. Skvělá práce.^^ Tady, vezmi si to jako extra odměnu za překročení našich očekávání. ^^ Musíme vyhrát tuhle válku co nejdříve.
 qstr_Excellent_{playername|Skvěle, {playername}. To jim určitě pomůže. Musíme vyhrát tuhle válku co nejdříve.

@@ -248,77 +248,77 @@ str_persuasion_summary_bad|Вы проявляете чудеса убежден
 str_persuasion_summary_average|{s50} ведет разговор очень хорошо и на всякий ваш аргумент находит логичное возражение. В итоге разговор так ни к чему вас и не приводит.
 str_persuasion_summary_good|Вы быстро думаете и приводите веские аргументы, и в итоге {s50} неохотно соглашается с вами. Однако {reg51?у нее:у него} все еще есть сомнения касательно вашей просьбы.
 str_persuasion_summary_very_good|Вы произносите пламенную речь, которая звучит для всех как поэзия. Кажется, что весь мир затих и внимательно прислушивается к вам. {s50} проникается вашими словами и соглашается вам помочь.
-; str_name_1|Adanedhel
-; str_name_2|Ondoher
-; str_name_3|Aerandir
-; str_name_4|Agarwaen
-; str_name_5|Ailinel
-; str_name_6|Aldarion
-; str_name_7|Almarian
-; str_name_8|Amandil
-; str_name_9|Amlaith
-; str_name_10|Anardil
-; str_name_11|Anborn
-; str_name_12|Andróg
+str_name_1|Аданедхел
+str_name_2|Ондохер
+str_name_3|Аэрандир
+str_name_4|Агарваен
+str_name_5|Айлинель
+str_name_6|Алдарион
+str_name_7|Алмариан
+str_name_8|Амандил
+str_name_9|Амлаитх
+str_name_10|Анардил
+str_name_11|Анборн
+str_name_12|Андрог
 str_name_13|Ангбор
-; str_name_14|Arador
-; str_name_15|Araglas
-; str_name_16|Arahael
-; str_name_17|Arantar
-; str_name_18|Arassuil
-; str_name_19|Alcarin
-; str_name_20|Belegund
-; str_name_21|Bereg
-; str_name_22|Bergil
-; str_name_23|Borthand
-; str_name_24|Ceorl
-; str_name_25|Ciryon
-; str_name_26|Damrod
-; str_name_27|Derufin
-; str_name_28|Dorlas
-; str_name_29|Duilin
+str_name_14|Арадор
+str_name_15|Араглас
+str_name_16|Арахаел
+str_name_17|Арантар
+str_name_18|Арассуил
+str_name_19|Алкарин
+str_name_20|Белегунд
+str_name_21|Берег
+str_name_22|Бергил
+str_name_23|Бортханд
+str_name_24|Кеорл
+str_name_25|Цирион
+str_name_26|Дамрод
+str_name_27|Деруфин
+str_name_28|Дорлас
+str_name_29|Дуилин
 str_name_30|Дуинхир
-; str_name_31|Egalmoth
-; str_name_32|Emeldir
-; str_name_33|Eradan
-; str_name_34|Erellont
-; str_name_35|Erendis
-; str_name_36|Falathar
-; str_name_37|Fengel
+str_name_31|Эгалмотх
+str_name_32|Эмелдир
+str_name_33|Эрадан
+str_name_34|Эреллонт
+str_name_35|Эрендис
+str_name_36|Фалатхар
+str_name_37|Фенгел
 ; str_name_38|Forweg
 ; str_name_39|Frumgar
 ; str_name_40|Fuinur
-; str_name_41|Galdor
+str_name_41|Галдор
 ; str_name_42|Gethron
 ; str_name_43|Gorlim
 ; str_name_44|Grithnir
-; str_name_45|Gundor
-; str_name_46|Hador
-; str_name_47|Haldar
+str_name_45|Гундор
+str_name_46|Хадор
+str_name_47|Халдар
 ; str_name_48|Hallacar
 ; str_name_49|Hathol
 ; str_name_50|Herion
-; str_name_51|Hild
-; str_name_52|Hunthor
-; str_name_53|Imlach
+str_name_51|Хилд
+str_name_52|Хунтхор
+str_name_53|Имлах
 str_name_54|Лорет
-; str_name_55|Ivorwen
-; str_name_56|Labadal
-; str_name_57|Larnach
-; str_name_58|Magor
-; str_name_59|Mairen
-; str_name_60|Malach
-; str_name_61|Malantur
-; str_name_62|Malvegil
-; str_name_63|Mardil
-; str_name_64|Meneldur
-; str_name_65|Minalcar
-; str_name_66|Minohtar
-; str_name_67|Ondoher
-; str_name_68|Orleg
+str_name_55|Ифорвен
+str_name_56|Лабадал
+str_name_57|Ларнах
+str_name_58|Магор
+str_name_59|Майрен
+str_name_60|Малах
+str_name_61|Малантур
+str_name_62|Малфегил
+str_name_63|Мардил
+str_name_64|Менелдур
+str_name_65|Миналкар
+str_name_66|Минохтар
+str_name_67|Ондохер
+str_name_68|Орлег
 ; str_name_69|Orodreth
-; str_name_70|Ostoher
-; str_name_71|Pelendur
+str_name_70|Остохер
+str_name_71|Пелендур
 ; str_name_72|Ragnor
 ; str_name_73|Sador
 ; str_name_74|Súrion
@@ -347,7 +347,7 @@ str_name_54|Лорет
 ; str_name_elf_17|Finrod
 ; str_name_elf_18|Felagund
 ; str_name_elf_19|Galathil
-; str_name_elf_20|Galdor
+str_name_elf_20|Галдор
 ; str_name_elf_21|Gelmir
 ; str_name_elf_22|Gildor
 ; str_name_elf_23|Guilin
@@ -381,7 +381,7 @@ str_name_elf_36|Орофин
 ; str_name_dwarf_14|Gamil
 ; str_name_dwarf_15|Gróin
 ; str_name_dwarf_16|Grór
-; str_name_dwarf_17|Ibun
+str_name_dwarf_17|Ибун
 ; str_name_dwarf_18|Khîm
 ; str_name_dwarf_19|Lóni
 ; str_name_dwarf_20|Mîm
@@ -447,12 +447,12 @@ str_name_elf_36|Орофин
 ; str_name_orc_52|Slog
 ; str_name_orc_53|Suhgan
 ; str_name_orc_54|Surgha
-; str_name_orc_55|Torug
-; str_name_orc_56|Turbag
-; str_name_orc_57|Urghat
-; str_name_orc_58|Varguk
-; str_name_orc_59|Zlog
-; str_name_orc_60|Zunuguk
+str_name_orc_55|Торуг
+str_name_orc_56|Турбаг
+str_name_orc_57|Ургхат
+str_name_orc_58|Варгук
+str_name_orc_59|Злог
+str_name_orc_60|Зунгук
 str_surname_1|{s50} из Тарноста
 str_surname_2|{s50} из Лоссарнаха
 str_surname_3|{s50} из Эреха

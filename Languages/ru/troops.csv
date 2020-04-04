@@ -138,8 +138,8 @@ trp_c3_rhun_outrider|Наездник Руна
 trp_c3_rhun_outrider_pl|Наездники Руна
 trp_c4_rhun_noble_rider|Знатный всадник Руна
 trp_c4_rhun_noble_rider_pl|Знатные всадники Руна
-; trp_c5_rhun_warrider|Warrider of Rhun
-; trp_c5_rhun_warrider_pl|Warriders of Rhun
+trp_c5_rhun_warrider|Воин из Руна
+trp_c5_rhun_warrider_pl|Воины из Руна
 trp_c6_rhun_warlord|Военачальник Руна
 trp_c6_rhun_warlord_pl|Военачальники Руна
 trp_i1_dwarf_apprentice|Гном-новобранец
@@ -376,42 +376,42 @@ trp_a4_riv_vet_archer|Ривендельский опытный лучник
 trp_a4_riv_vet_archer_pl|Ривендельские опытные лучники
 trp_a5_riv_master_archer|Ривендельский искусный лучник
 trp_a5_riv_master_archer_pl|Ривендельские искусные лучники
-; trp_a6_riv_guardian|Guardian of Imladris
-; trp_a6_riv_guardian_pl|Guardians of Imladris
+trp_a6_riv_guardian|Хранитель Имладриса
+trp_a6_riv_guardian_pl|Стражи Имладриса
 trp_i3_riv_swordbearer|Ривендельский мечник
 trp_i3_riv_swordbearer_pl|Ривендельские мечники
 trp_i4_riv_vet_swordbearer|Ривендельский опытный мечник
 trp_i4_riv_vet_swordbearer_pl|Ривендельские опытные мечники
 trp_i5_riv_swordmaster|Ривендельский мастер меча
 trp_i5_riv_swordmaster_pl|Искусные ривендельские мечники
-; trp_i6_riv_champion|Champion of Imladris
-; trp_i6_riv_champion_pl|Champions of Imladris
+trp_i6_riv_champion|Чемпион Имладриса
+trp_i6_riv_champion_pl|Чемпионы Имладриса
 trp_ac5_riv_rider|Ривендельский всадник
 trp_ac5_riv_rider_pl|Ривендельские всадники
-; trp_ac6_riv_knight|Knight of Imladris
-; trp_ac6_riv_knight_pl|Knights of Imladris
+trp_ac6_riv_knight|Рыцарь Имладриса
+trp_ac6_riv_knight_pl|Рыцари Имладриса
 trp_i6_rivendell_standard_bearer|Ривендельский знаменосец
 trp_i6_rivendell_standard_bearer_pl|Ривендельские знаменосцы
 trp_a1_arnor_scout|Разведчик дунедайн
 trp_a1_arnor_scout_pl|Разведчики дунедайн
 trp_a2_arnor_vet_scout|Следопыт дунедайн
 trp_a2_arnor_vet_scout_pl|Следопыты дунедайн
-; trp_i3_arnor_swordsman|Dunedain Swordsman
-; trp_i3_arnor_swordsman_pl|Dunedain Swordsmen
-; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
-; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
+trp_i3_arnor_swordsman|Дунедианский Мечник
+trp_i3_arnor_swordsman_pl|Дунедианские Мечники
+trp_i4_arnor_vet_swordsman|Дунедианский Опытный Мечник
+trp_i4_arnor_vet_swordsman_pl|Дунедианские Опытные Мечники
 trp_i5_arnor_champion|Чемпион Арнора
 trp_i5_arnor_champion_pl|Чемпионы Арнора
 trp_c4_arnor_horseman|Дунедианский Всадник
-; trp_c4_arnor_horseman_pl|Dunedain Horsemen
+trp_c4_arnor_horseman_pl|Дунедианские Всадники
 trp_c5_arnor_knight|Рыцарь Арнора
 trp_c5_arnor_knight_pl|Рыцари Арнора
 trp_a3_arnor_ranger|Рейнджер дунедайн
 trp_a3_arnor_ranger_pl|Рейнджеры дунедайн
 trp_a4_arnor_vet_ranger|Опытный рейнджер дунедайн
 trp_a4_arnor_vet_ranger_pl|Опытные рейнджеры дунедайн
-; trp_a5_arnor_master_ranger|Master Ranger of Arnor
-; trp_a5_arnor_master_ranger_pl|Master Rangers of Arnor
+trp_a5_arnor_master_ranger|Мастер Рейнджер из Арнора
+trp_a5_arnor_master_ranger_pl|Мастер рейнджеров Арнора
 trp_i1_rohan_youth|Роханский молодой воин
 trp_i1_rohan_youth_pl|Роханские молодые воины
 trp_i2_guardsman_of_rohan|Роханский стражник
@@ -466,8 +466,8 @@ trp_dismounted_thengel_guard_of_rohan|Роханский воин гвардии
 trp_dismounted_thengel_guard_of_rohan_pl|Роханские воины гвардии Тенгела
 trp_i1_harad_levy|Харадский новобранец
 trp_i1_harad_levy_pl|Харадские новобранцы
-; trp_i3_harad_infantry|Harad Light Footman
-; trp_i3_harad_infantry_pl|Harad Light Footmen
+trp_i3_harad_infantry|Харадский лёгкий пехотинец
+trp_i3_harad_infantry_pl|Харадские лёгкие пехотинцы
 trp_i4_harad_spearman|Харадский копейщик
 trp_i4_harad_spearman_pl|Харадские копейщики
 trp_i5_harad_tiger_guard|Воин тигриной гвардии
@@ -486,8 +486,8 @@ trp_c2_harondor_scout|Харондорский разведчик
 trp_c2_harondor_scout_pl|Харондорские разведчики
 trp_c3_harondor_rider|Харондорский всадник
 trp_c3_harondor_rider_pl|Харондорские всадники
-; trp_c4_harondor_light_cavalry|Harondor Light Rider
-; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
+trp_c4_harondor_light_cavalry|Харондорский Легкий Всадник
+trp_c4_harondor_light_cavalry_pl|Харондорские Легкие Всадник
 trp_c5_harondor_serpent_knight|Рыцарь Золотой Змеи
 trp_c5_harondor_serpent_knight_pl|Рыцари Золотой Змеи
 trp_ac3_harondor_skirmisher|Харондорский застрельщик
@@ -518,42 +518,42 @@ trp_i4_dun_wolf_warrior|Дунландский волчий воин
 trp_i4_dun_wolf_warrior_pl|Дунландские волчьи воины
 trp_i5_dun_wolf_guard|Дунландский волчий страж
 trp_i5_dun_wolf_guard_pl|Дунландские волчьи стражи
-; trp_ac5_dun_raven_rider|Dunnish Night Raven
-; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
-; trp_i1_khand_bondsman|Khand Bondsman
-; trp_i1_khand_bondsman_pl|Khand Bondsmen
-; trp_i2_khand_pit_dog|Khand Pit Dog
-; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+trp_ac5_dun_raven_rider|Дунландский Ночной Ворон
+trp_ac5_dun_raven_rider_pl|Дунландские Ночные Вороны
+trp_i1_khand_bondsman|Хандский Раб
+trp_i1_khand_bondsman_pl|Хандские Рабы
+trp_i2_khand_pit_dog|Хандский Пит Дог
+trp_i2_khand_pit_dog_pl|Хандские Пит Доги
 trp_i3_khand_warrior|Хандский Воин
-; trp_i3_khand_warrior_pl|Khand Warriors
-; trp_i4_khand_vet_warrior|Khand Veteran Warrior
-; trp_i4_khand_vet_warrior_pl|Khand Veteran Warriors
-; trp_i5_khand_war_master|Variag War Master
-; trp_i5_khand_war_master_pl|Variag War Masters
-; trp_c2_khand_pony_rider|Khand Pony Rider
-; trp_c2_khand_pony_rider_pl|Khand Pony Riders
-; trp_c3_khand_horseman|Khand Horseman
-; trp_c3_khand_horseman_pl|Khand Horsemen
-; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
-; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
-; trp_c5_khand_kataphrakt|Variag Ironclad
-; trp_c5_khand_kataphrakt_pl|Variag Ironclads
-; trp_c5_khand_lance_kataphrakt|Variag Lancer
-; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
-; trp_i4_khand_halberdier|Khand Glaiveman
-; trp_i4_khand_halberdier_pl|Khand Glaivemen
-; trp_i5_khand_halberd_master|Variag Halberd Master
-; trp_i5_khand_halberd_master_pl|Variag Halberd Masters
-; trp_i3_khand_pitfighter|Khand Pit Fighter
-; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
-; trp_i4_khand_pit_champion|Khand Pit Champion
-; trp_i4_khand_pit_champion_pl|Khand Pit Champions
-; trp_i5_khand_pit_master|Variag Master of the Pits
-; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
-; trp_ac3_khand_skirmisher|Khand Skirmisher
-; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
-; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
-; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
+trp_i3_khand_warrior_pl|Хандские Войны
+trp_i4_khand_vet_warrior|Хандский Опытный Воин
+trp_i4_khand_vet_warrior_pl|Хандские Опытные Войны
+trp_i5_khand_war_master|Варяжский Мастер Войны
+trp_i5_khand_war_master_pl|Варягские Мастера Войны
+trp_c2_khand_pony_rider|Хандский Всадник на пони
+trp_c2_khand_pony_rider_pl|Хандские Всадники на пони
+trp_c3_khand_horseman|Хандский Всадник
+trp_c3_khand_horseman_pl|Хандские Всадники
+trp_c4_khand_heavy_horseman|Хандский Тяжелый Всадник
+trp_c4_khand_heavy_horseman_pl|Хандские Тяжелые Всадники
+trp_c5_khand_kataphrakt|Варьягский Броненосец
+trp_c5_khand_kataphrakt_pl|Варьягские Броненосецы
+trp_c5_khand_lance_kataphrakt|Варьягский Улан
+trp_c5_khand_lance_kataphrakt_pl|Варьягские Уланы
+trp_i4_khand_halberdier|Хандский Перчаточник
+trp_i4_khand_halberdier_pl|Хандские Перчаточники
+trp_i5_khand_halberd_master|Варьягский Мастер Алебарды
+trp_i5_khand_halberd_master_pl|Варьягские Мастера Алебарды
+trp_i3_khand_pitfighter|Боец Ямы Ханд
+trp_i3_khand_pitfighter_pl|Боецы Ямы Ханд
+trp_i4_khand_pit_champion|Хандский Пит Чемпион
+trp_i4_khand_pit_champion_pl|Хандские Пит Чемпионы
+trp_i5_khand_pit_master|Варяжский мастер-ям
+trp_i5_khand_pit_master_pl|Варяжские мастера-ям
+trp_ac3_khand_skirmisher| Хандский застрельщик
+trp_ac3_khand_skirmisher_pl|Хандские застрельщики
+trp_ac4_khand_vet_skirmisher|Хандский опытный застрельщик
+trp_ac4_khand_vet_skirmisher_pl|Хандские опытные застрельщики
 trp_ac5_khand_heavy_skirmisher|Тяжёлый варьягский застрельщик
 trp_ac5_khand_heavy_skirmisher_pl|Тяжёлые варьягские застрельщики
 trp_i1_corsair_youth|Умбарский моряк
@@ -692,12 +692,12 @@ trp_c4_mordor_great_warg_rider|Удунский всадник на варге
 trp_c4_mordor_great_warg_rider_pl|Удунские всадники на варгах
 trp_i2_mordor_morgul_orc|Орк из Минас Моргула
 trp_i2_mordor_morgul_orc_pl|Орки из Минас Моргула
-; trp_i4_mordor_fell_morgul_orc|Fell Orc of Minas Morgul
-; trp_i4_mordor_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
-; trp_a3_guldur_large_orc_tracker|Large Orc Tracker of Dol Guldur
-; trp_a3_guldur_large_orc_tracker_pl|Large Orc Trackers of Dol Guldur
-; trp_a4_guldur_fell_orc_tracker|Fell Orc Tracker of Dol Guldur
-; trp_a4_guldur_fell_orc_tracker_pl|Fell Orc Trackers of Dol Guldur
+trp_i4_mordor_fell_morgul_orc|Павший Орк из  Минас Моргул
+trp_i4_mordor_fell_morgul_orc_pl|Павшие Орки из Минас Моргул
+trp_a3_guldur_large_orc_tracker|Большой Орк Следопыт из Дол Гулдура
+trp_a3_guldur_large_orc_tracker_pl|Болшие Орки Следопыты из Дол Гулдура
+trp_a4_guldur_fell_orc_tracker|Павший Орк Следопыт из Дол Гулдура 
+trp_a4_guldur_fell_orc_tracker_pl|Павшие Орки Следопыты из Дол Гулдура
 trp_a2_mordor_orc_archer|Мордорский орк-лучник
 trp_a2_mordor_orc_archer_pl|Мордорские орки-лучники
 trp_a3_mordor_large_orc_archer|Крупный орк-лучник Мордора
@@ -751,8 +751,8 @@ trp_tribal_orc|Дикий орк
 trp_tribal_orc_pl|Дикие орки
 trp_tribal_orc_warrior|Дикий орк-воин
 trp_tribal_orc_warrior_pl|Дикие орки-воины
-; trp_i5_gunda_orc_champion|Gundabad Orc Champion
-; trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
+trp_i5_gunda_orc_champion|Гундабадский Орк Чемпион
+trp_i5_gunda_orc_champion_pl|Гундабадские Орки Чемпионы
 trp_i2_mordor_num_renegade|Чёрный нуменорец
 trp_i2_mordor_num_renegade_pl|Чёрные нуменорцы
 trp_i3_mordor_num_warrior|Чёрный нуменорец-воин
@@ -947,7 +947,7 @@ trp_npc14|Фулдимир
 trp_npc15|Болзог
 trp_npc16|Варфанг
 trp_npc17|Димборн
-; trp_knight_6_2|Golasgil
+trp_knight_6_2|Голасгиль
 trp_gondor_lord|Наместник Денетор
 trp_gondor_lord_pl|Наместник
 trp_rohan_lord|Король Теоден
@@ -1038,7 +1038,7 @@ trp_knight_4_1|Сног, Хозяин кнута
 trp_knight_4_2|Снотгор, Хозяин кнута
 trp_knight_4_6|Воевода Туским
 trp_knight_4_7|Воевода Мугслаг
-; trp_knight_4_11|Ruel
+trp_knight_4_11|Руэл
 trp_knight_4_12|Беранор Чёрный Мех
 trp_knight_4_16|Бролгухш, Хозяин кнута
 trp_knight_4_17|Грумрунт, Хозяин кнута
@@ -1591,26 +1591,26 @@ trp_werewolf|Оборотень
 trp_werewolf_pl|Оборотни
 trp_moria_troll|Пещерный Тролль
 trp_moria_troll_pl|Пещерные Тролли
-; trp_moria_vet_troll|Trained Cave Troll
-; trp_moria_vet_troll_pl|Trained Cave Trolls
-; trp_moria_armored_troll|Armored Cave Troll
-; trp_moria_armored_troll_pl|Armored Cave Trolls
-; trp_gunda_troll|Mountain Troll
-; trp_gunda_troll_pl|Mountain Trolls
-; trp_gunda_vet_troll|Trained Mountain Troll
-; trp_gunda_vet_troll_pl|Trained Mountain Trolls
-; trp_gunda_placeholder|Trained Mountain Troll
-; trp_gunda_placeholder_pl|Trained Mountain Trolls
-; trp_isen_troll|Isengard Troll
-; trp_isen_troll_pl|Isengard Trolls
-; trp_isen_vet_troll|Isengard Trained Troll
-; trp_isen_vet_troll_pl|Isengard Trained Trolls
-; trp_isen_armored_troll|Isengard Armored Troll
-; trp_isen_armored_troll_pl|Isengard Armored Trolls
-; trp_mordor_troll|Mordor Troll
-; trp_mordor_troll_pl|Mordor Trolls
-; trp_mordor_vet_troll|Mordor Trained Troll
-; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_moria_vet_troll|Обученный Пещерный Тролль
+trp_moria_vet_troll_pl|Обученные Пещерные Тролли
+trp_moria_armored_troll|Бронированный Пещерный Тролль
+trp_moria_armored_troll_pl|Бронированные Пещерные Тролли
+trp_gunda_troll|Горный Тролль
+trp_gunda_troll_pl|Горные Тролли
+trp_gunda_vet_troll|Обученный Горный Тролль
+trp_gunda_vet_troll_pl|Обученный Горный Тролль
+trp_gunda_placeholder|Обученный Горный Тролль
+trp_gunda_placeholder_pl|Обученные Горные Тролли
+trp_isen_troll|Изенгардский Тролль
+trp_isen_troll_pl|Изенгардские Тролли
+trp_isen_vet_troll|Изенгардский Обученный Тролль
+trp_isen_vet_troll_pl|Изенгардские Обученные Тролли
+trp_isen_armored_troll|Изенгардский Бронированный Тролль
+trp_isen_armored_troll_pl|Изенгардские Бронированные Тролли
+trp_mordor_troll|Мордорский Тролль
+trp_mordor_troll_pl|Мордорский Тролль
+trp_mordor_vet_troll|Мордорский Обученный Тролль
+trp_mordor_vet_troll_pl|Мордорские Обученные Тролли
 trp_mordor_olog_hai|Мордорский олог-хай
 trp_mordor_olog_hai_pl|Мордорский олог-хай
 trp_troll_placeholder_1|Пещерный Тролль
@@ -1625,8 +1625,8 @@ trp_troll_placeholder_5|Пещерный Тролль
 trp_troll_placeholder_5_pl|Пещерные Тролли
 trp_troll_placeholder_6|Пещерный Тролль
 trp_troll_placeholder_6_pl|Пещерные Тролли
-; trp_wild_troll|Wild Cave Troll
-; trp_wild_troll_pl|Wild Cave Trolls
+trp_wild_troll|Дикий Пещерный Тролль
+trp_wild_troll_pl|Дикие Пещерные Тролли
 trp_ent2|Энт
 trp_ent2_pl|Энты
 trp_mountain_goblin2|Горный гоблин

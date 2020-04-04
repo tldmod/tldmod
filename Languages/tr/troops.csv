@@ -134,8 +134,8 @@ trp_i5_rhun_ox_warrior|Boga Savaşçısı
 trp_i5_rhun_ox_warrior_pl|Boga Savaşçıları
 trp_c2_rhun_horseman|Rhun Atlısı
 trp_c2_rhun_horseman_pl|Rhun Atlıları
-; trp_c3_rhun_outrider|Outrider of Rhun
-; trp_c3_rhun_outrider_pl|Outriders of Rhun
+trp_c3_rhun_outrider|Rhun Atlı Uşagı
+trp_c3_rhun_outrider_pl|Rhun Atlı Uşakları
 trp_c4_rhun_noble_rider|Rhun Soylu Süvari
 trp_c4_rhun_noble_rider_pl|Rhun Soylu Süvarileri
 trp_c5_rhun_warrider|Rhun Savaş Binicisi
@@ -518,8 +518,8 @@ trp_i4_dun_wolf_warrior|Dunnish Kurt Savaşçısı
 trp_i4_dun_wolf_warrior_pl|Dunnish Kurt Savaşçıları
 trp_i5_dun_wolf_guard|Dunnish Kurt Muhafızı
 trp_i5_dun_wolf_guard_pl|Dunnish Kurt Muhafızları
-; trp_ac5_dun_raven_rider|Dunnish Night Raven
-; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
+trp_ac5_dun_raven_rider|Dunnish Gece Kuzgunu
+trp_ac5_dun_raven_rider_pl|Dunnish Gece Kuzgunları
 trp_i1_khand_bondsman|Khand Kölesi
 trp_i1_khand_bondsman_pl|Khand Köleleri
 trp_i2_khand_pit_dog|Khand Çukur Köpegi

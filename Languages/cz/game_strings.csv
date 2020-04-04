@@ -1091,19 +1091,19 @@ str_comment_you_captured_a_castle_allied|Slyšel jsem, že jsi obléhal a vzal {
 ; str_comment_we_defeated_a_lord_unfriendly|I will not forget how we fought together against {s54}, but I can also not forget the other matters that lie between us.
 ; str_comment_we_defeated_a_lord_cruel|That was a great victory over {s54}, wasn't it? We made of his army a feast for the crows!
 ; str_comment_we_defeated_a_lord_quarrelsome|I won't forget how we whipped {s54}? I enjoyed that.
-; str_comment_we_defeated_a_lord_upstanding|I will not forget our victory over {s54}. Let us once again give thanks to heaven, and pray that we not grow too proud.
+str_comment_we_defeated_a_lord_upstanding|Nikdy nezapomenu naše vítězství nad {s54}. Ještě jednou vzdejme díky nebesům a modleme se nás nezaslepila naše pýcha.
 ; str_comment_we_defeated_a_lord_default|That was a great victory over {s54}, wasn't it? I am honoured to have fought by your side.
 ; str_comment_we_fought_in_siege_unfriendly_spiteful|I suppose you will want to drink to the memory of our capture of {s51}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
 ; str_comment_we_fought_in_siege_unfriendly|I will not forget how we together we stormed {s51}, but I can also not forget the other matters that lie between us.
 ; str_comment_we_fought_in_siege_cruel|I won't forget how we broke through the walls of {s51} and put its defenders to the sword. It is a sweet memory.
 ; str_comment_we_fought_in_siege_quarrelsome|Remember how the enemy squealed when we came over the walls of {s51}? They had thought they were safe! We wiped the smug smiles of their faces!
-str_comment_we_fought_in_siege_upstanding|Nezapomenu jak jsme dobyli {s51}. Ještě jednou děkujme nebi a doufejme že jsme moc nezpychli.
+str_comment_we_fought_in_siege_upstanding|Nikdy nezapomenu jak jsme dobyli {s51}. Ještě jednou vzdejme díky nebesům a modleme se nás nezaslepila naše pýcha.
 str_comment_we_fought_in_siege_default|Nezapomenu jak jsme spolu dobyli {s51}. Je mi ctí, že jsem bojoval na tvé straně.
 ; str_comment_we_fought_in_major_battle_unfriendly_spiteful|I suppose you will want to drink to the memory of our great victory near {s51}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
 ; str_comment_we_fought_in_major_battle_unfriendly|I will not forget how we fought together in the great battle near {s51}, but I can also not forget the other matters that lie between us.
 ; str_comment_we_fought_in_major_battle_cruel|I won't forget the great battle near {s51}, when we broke through the enemy lines and they ran screaming before us. It is a sweet memory.
 ; str_comment_we_fought_in_major_battle_quarrelsome|That was a fine fight near {s51}, when we made those bastards run!
-; str_comment_we_fought_in_major_battle_upstanding|I will not forget how we fought side by side at the great battle near {s51}. Let us once again give thanks to heaven, and pray that we not grow too proud.
+str_comment_we_fought_in_major_battle_upstanding|Nikdy nezapomenu jak jsme bojovali bok po boku v té obrovské bitvě nedaleko {s51}. vzdejme ještě jednou díky nebesům a modleme se aby nás nezaslepila naše pýcha.
 ; str_comment_we_fought_in_major_battle_default|I will not forget how we fought side by side at the great battle near {s51}. I am honoured to have fought by your side.
 ; str_comment_you_defeated_a_lord_allied_liege|So, you crossed swords with that rascal they call {s54}, and emerged victorious. I am very happy to hear that.
 ; str_comment_you_defeated_a_lord_allied_unfriendly_spiteful|I heard that you fought and defeated {s54}. Every dog has its day, I suppose.
@@ -1242,7 +1242,7 @@ str_enemy_meet_quarrelsome|Kdo k sakru jsi?
 ; str_battle_won_cunning|Now, we must be sure to press our advantage, so that the blood shed today is not wasted.
 ; str_battle_won_sadistic|Now let us strip their dead and leave them for the crows, so that all will know the fate of those who come against us.
 ; str_battle_won_goodnatured|That was a good scrap! No joy like the joy of victory, eh?
-; str_battle_won_upstanding|Now, let us give thanks to the heavens for our victory, and mourn the many fine men who have fallen today.
+str_battle_won_upstanding|Teď vzdejme díky nebesům za naše vítězství a truchleme nad mnoha dobrými muži, kteří dnes padli.
 ; str_battle_won_grudging_default|You helped turn the tide on the field, today. Whatever I may think of you, I cannot fault you for your valor.
 ; str_battle_won_grudging_martial|{playername} -- you have shown yourself a worthy {man/woman} today, whatever your misdeeds in the past.
 ; str_battle_won_grudging_quarrelsome|Hmf. Yours is not a face which I normally like to see, but I suppose today I should thank you for your help.
@@ -1314,7 +1314,7 @@ str_enemy_meet_quarrelsome|Kdo k sakru jsi?
 ; str_lord_insult_cunning|careless oaf
 ; str_lord_insult_sadistic|sniveling cur
 ; str_lord_insult_goodnatured|unpleasant fellow
-; str_lord_insult_upstanding|disgraceful scoundrel
+str_lord_insult_upstanding|hanebného ničemy
 ; str_rebellion_dilemma_default|[liege]
 ; str_rebellion_dilemma_martial|{s45} was clearly wronged. Although I gave an oath to {s46}, it does not bind me to support him if he usurped his throne illegally.
 ; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself .

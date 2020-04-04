@@ -164,14 +164,14 @@ dlga_companion_home_description:close_window.1|Yandaşlarımın beni böyle öne
 dlga_start:player_hire_troop|{s21} 'de ki ordunun başındaki benim {s33}^^. Beni mi görmek istedin?
 dlga_player_hire_troop:player_hire_troop_give|Grubumdaki bazı askerlerin burada savunmada olması daha faydalı olacaktır {s21}.
 dlga_player_hire_troop:close_window|Burada ki askerlerimi teftiş etmek istiyorum.
-dlga_player_hire_troop:player_hire_trolls_take|Ben bir savaş Troll'üne layık bir komutanım - bana bir tane ver!
-dlga_player_hire_trolls_take:close_window|Kendi Kara Lejyon'unu yetiştirmek istiyorsun, degil mi? Tamamen büyümüş bir Troll'e sahip olunca tekrar gel.
-dlga_player_hire_trolls_take:close_window.1|Sen? Seni küçük kurtçuk. Kaybol gözümün önünden. Troll'le savaşacakmış, tabii. ({lvl24} ya da daha yüksek olmalısınız)
+dlga_player_hire_troop:player_hire_trolls_take|Ben bir savaş Troll'üne layık bir komutanım - bana birini ver!
+dlga_player_hire_trolls_take:close_window|Kendi Kara Lejyon'unu yetiştirmek istiyorsun, degil mi? Tamamen büyümüş bir Troll'ü orduna alabilirsen tekrar gel.
+dlga_player_hire_trolls_take:close_window.1|Sen? Seni küçük kurtçuk. Kaybol gözümün önünden. Savaş Troll'üymüş, tabii. ({s24} ya da daha yüksek olmalısınız)
 dlga_player_hire_trolls_take:player_hire_trolls_how_many|Bu sana {reg21} nüfuza mal olacak.
 dlga_player_hire_trolls_take:close_window.2|Fikrimi degiştirdim.
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Korkunç bir canavar. Ve şimdi, benim!
 dlga_player_hire_trolls_how_many:player_hire_troll_armoured|Onları koruyan demir saclarla daha iyi savaşacaklar. Öyleyse yap!
-dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{d55}
+dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Fikrimi degiştirdim.
 dlga_player_hire_troll_buy_not_enough:close_window|Zamanımı harcıyorsun...
 dlga_player_hire_troll_buy_done:close_window|Şimdi bu büyük adama iyi bakın, o da size iyi bakacaktır! Ha!
@@ -991,7 +991,7 @@ dlga_start:town_merchant_talk.1|İyi günler, senin için ne yapabilirim?
 dlga_town_merchant_talk:trade_requested_weapons|Yeni ekipmanlar talep etmek istiyorum. Dükkanında olanları göster bana.
 dlga_town_merchant_talk:trade_requested_horse|Bir binek almayı düşünüyorum.
 dlga_town_merchant_talk:player_upgrade_trolls_take|Trollerimi güçlendirmek istiyorum!
-dlga_player_upgrade_trolls_take:close_window|Sen kimsin ki bunu bana soruyorsun? Hah! Kaybol! ({lvl24} ya da daha yüksek olmalısınız)
+dlga_player_upgrade_trolls_take:close_window|Sen kimsin ki bunu bana soruyorsun? Hah! Kaybol! ({s24} ya da daha yüksek olmalısınız)
 dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Bize iyi dönüşler yaptın. Buradaki çocuga demir koymaya yardım edecegiz! ({reg21} kaynak puanı)
 dlga_player_upgrade_trolls_take:close_window.1|Troll'lerin bebek gibi aglıyor. Onları iyice bir kana bula önce!
 dlga_player_upgrade_trolls_take:close_window.2|Bunu burada yapmıyoruz...

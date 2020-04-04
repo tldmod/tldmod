@@ -356,11 +356,11 @@ dlga_lord_healers_wound_check:lord_healers_wound_heal|Ano, věnujte se nám.
 dlga_lord_healers_wound_check:lord_pretalk|Teď ne.
 dlga_lord_healers_injured_check:lord_pretalk|Teď ne.
 dlga_lord_talk:ring_hunters_start|Můj pane, jsem připraven vykonat více náročných úkolů abych ti pomohl a ukončil tak tuto válku. Co ode mě potřebuješ?
-dlga_ring_hunters_start:ring_hunters_check|{playername}, vykonal si velké skutky a prokázal si, že si hoden úkolu, který ti teď zadám. Věřím, že se s touto záležitostí jak nejlépe dovedeš, ale pamatuj, že náš nepřítel je nebezpečný a krveprolití bude nevyhnutelné. Je tvoje společnost dostatečně silná na bitvu?
+dlga_ring_hunters_start:ring_hunters_check|{playername}, vykonal si velké skutky a prokázal si, že si hoden úkolu, který ti teď zadám. Věřím, že se s touto záležitostí jak nejlépe dovedeš, ale pamatuj, že náš nepřítel je nebezpečný a krveprolití bude nevyhnutelné. Je tvá družina dostatečně silná na bitvu?
 dlga_ring_hunters_check:ring_hunters_1|Ano, můj pane. Mám jednotku dobře trénovaných můžu. Jsme připraveni na cokoli
 dlga_ring_hunters_check:ring_hunters_check_failed|Bojím se že ne, můj pane.
 dlga_ring_hunters_check_failed:lord_pretalk|Nejsi tedy připravený na tento úkol, {playername}. Běž a sežeň více vojáků.
-dlga_ring_hunters_1:ring_hunters_2|Výborně. Sever byl nedávno mořen záškodnickými skupinami vyhnanců, kteří plení vesnice a přepadávají cestovatele, hledajíce prsteny jakehokoliv druhu. Tvým úkolem je tyto bandity ulovit a učinit konec jejich úkolu. Přeživší jejich posledního plenění nahlásili dvě skupiny. První se vrací s jejich kořistí do jejich tábora na okraji Temného hvozdu. Ta druhá postupuje směrem k domu Beorna ve velkém množství a obávám se toho, co by se mohlo stát, pokud jim to nepřekazíme.
+dlga_ring_hunters_1:ring_hunters_2|Výborně. Sever byl nedávno zamořen záškodnickými skupinami vyhnanců, kteří plení vesnice a přepadávají cestovatele, hledajíce prsteny jakéhokoliv druhu. Tvým úkolem je tyto bandity ulovit a učinit konec jejich úkolu. Přeživší jejich posledního plenění nahlásili dvě skupiny. První se vrací s jejich kořistí do jejich tábora na okraji Temného hvozdu. Ta druhá postupuje směrem k Meddědovu domu ve velkém množství a obávám se toho, co by se mohlo stát, pokud jim to nepřekazíme.
 dlga_ring_hunters_2:ring_hunters_what|Co tam mohli hledat, můj pane?
 dlga_ring_hunters_2:ring_hunters_accept|Můj pane, udělám vše co je v mých silách, abych zastavil ty... 'Lovce Prstenu'
 dlga_ring_hunters_2:ring_hunters_reject|Nejsem zatím připravený na takovýto úkol.
@@ -382,7 +382,7 @@ dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Tvoje běsnění je u
 dlga_ring_hunters_party_attack_2:close_window|Zkontrolujte jejich balení a prsty. Jeden uložte k mučení. Všichni ostatní jsou k jídlu!
 dlga_start:ring_hunter_lair_defeat|Ten prsten patří Pánu temna. Nemůžeš ho mít!
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Nyní ti patří mě.
-dlga_ring_hunter_lair_defeat2:close_window|Myslíte si, že jste vyhráli velké vítězství? Možná bledě potrhaný stín. Bah! Náš válečný pás pochodoval dlouho předtím, než jste dorazili. Jste příliš pozdě na to, abyste zachránili ty, po kterých šli!
+dlga_ring_hunter_lair_defeat2:close_window|Myslíš si, že jsi vybojoval velké vítězství? Možná bledě potrhaný stín. Bah! Náš válečný pás pochodoval dlouho předtím, než jste dorazili. Jdete příliš pozdě na to, abyste zachránili ty, po kterých šli!
 dlga_start:beorn_message| {Můj/Má},  {pane/paní}, obdrželi jsme varování že z  {s1} k nám míří velká skupina vyhnanců. Běda, nebylo dost času shlukovat dostatek válečníků. Připravili jsme se na nejhorší, když jsme slyšeli zvuky vřavy.
 dlga_beorn_message:beorn_message2|To nebyli obyčejní psanci. Byli to ti nejhorší z nejhorších stoupenců temného pána, nakonec tady na severu. Jejich velitelé zde ale nebyli. Jejich skrýš leží poblíž Temného hvozdu a já si musím pospíšit.
 dlga_beorn_message2:beorn_message_end|Ano byli jsme také varování před tímto táborem a vyslali jsme zde nějaké zvědy. Viděli jsme ,že ho sbalili a urychleně vyrazili do Mordoru. Pokud by ses rozhodl prvně vyrazit tam, pravděpodobně by jsi nebyl schopen pomoct nám. Jsme ti zavázání za tvé vítěství.
@@ -396,7 +396,7 @@ dlga_lord_give_troops_check_1:lord_pretalk.1|Nemáme tady využití pro tyto voj
 dlga_lord_talk:lord_get_reward_item_ask|Chci si požádat o zvláštní věc.
 dlga_lord_get_reward_item_ask:lord_talk|Zdá se, že nemáš místo mezi svými věcmi. Uvolni si místo a vrať se.
 dlga_lord_get_reward_item_ask:lord_get_reward_item|Nezapomeň, že pro zvláštní položky musíš mít určitou hodnost a vliv. Co žádáš?
-dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [costs {reg14}/{reg15} Influence]
+dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [stojí {reg14}/{reg15} vlivu]
 dlga_lord_get_reward_item:lord_pretalk|Tak nic.
 dlga_lord_get_reward_item_answer:lord_pretalk|Dobrá, použij ho k zničení nepřátel.
 dlga_lord_talk:marshall_ask|Rád bych se s tebou poradil o válce.
@@ -405,13 +405,13 @@ dlga_marshall_ask:lord_pretalk.1|Jsi vynikající velitel {playername}, ale tvů
 dlga_marshall_ask:lord_pretalk.2|Nemůžeme si dovolit potkat se s nepřítelem, {playername}. Stále potřebujeme budovat své síly a budeme silní, bohužel jsme jen {s23}.
 dlga_marshall_ask:lord_pretalk.3|Jsme na výpravě, {playername}, tvá rada musí počkat. 
 dlga_marshall_ask:marshall_suggest|Poslouchám, {playername}. Co navrhuješ?
-dlga_marshall_suggest:marshall_answer|Měli bychom jezdit obléhat {s1} najednou.
-dlga_marshall_suggest:lord_pretalk|Never mind, I trust your judgement.
+dlga_marshall_suggest:marshall_answer|Měli bychom jet obléhat {s1} najednou.
+dlga_marshall_suggest:lord_pretalk|Nevadí, věřím tvému úsudku.
 dlga_player_siege_discuss:player_siege_discuss_1|Poslouchám, můj pane.
 dlga_player_siege_resource_check:lord_pretalk|Ne, ještě nenadešel správný čas.
 dlga_player_siege_check_passed:player_siege_accept|Velmi dobře. Teď běž, {playername}, s požehnáním {s2}. Spoléháme na tebe, že povedeš naše lidi k vítězství.
 dlga_player_siege_accept:close_window|Děkuji ti, můj pane. Nezklamu tebe ani {s2}.
-dlga_marshall_answer:close_window|Velmi dobře, {playername}, odložím svůj názor. Posílám posly, aby shromáždili naše síly. ^ Následujte mě a zůstaňte blízko - jdeme na {s4}!
+dlga_marshall_answer:close_window|Velmi dobře, {playername}, věřím tvému úsudku. Pošlu tedy posly, aby shromáždili naše síly.^Následuj mne a zůstaň nablízku - vzhůru na {s4}!
 dlga_lord_talk:deliver_gift_1|Přináším dárek {s1} od {s3} lidem {s2}.
 dlga_send_gift_1:lord_pretalk|Jste už {s4}, {playername}. Bylo by moudré ho nejprve doručit.
 dlga_send_gift_1:lord_pretalk.1|Bohužel si nemůžete dovolit poslat dárek právě teď {playername}. ^ ^ [Nedostatek Resource pointů]
@@ -428,7 +428,7 @@ dlga_lord_give_order:lord_give_order_answer|Následuj mě. [stojí {reg1}/{reg2}
 dlga_lord_give_order:lord_give_order_details_ask|Jdi do... [stojí {reg1}/{reg2} vlivu]
 dlga_lord_give_order:lord_give_order_details_ask.1|Hlídkuj v okolí... [stojí {reg1}/{reg2} vlivu]
 dlga_lord_give_order:lord_give_order_details_ask.2|Útoč na nepřátele kolem... [stojí {reg1}/{reg2} vlivu]
-dlga_lord_give_order:lord_give_order_assault|Společně si můžeme vzít {s11}. Měli byste okamžitě zaútočit ... [Costs {reg1}/{reg2} influence]
+dlga_lord_give_order:lord_give_order_assault|Společně si můžeme vzít {s11}. Měli byste okamžitě zaútočit ... [stojí {reg1}/{reg2} vlivu]
 dlga_lord_give_order_assault:lord_pretalk|{s4} vede obléhání. Navrhuji promluvit si s ním.
 dlga_lord_give_order_assault:lord_pretalk.1|Nejsme zcela připraveni. Potřebujeme další {s11}
 dlga_lord_give_order_assault:close_window|Dobrá -- Zaútočte na hradby!
@@ -487,9 +487,9 @@ dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Nemám čas na přep
 dlga_lord_raid_village_accept:close_window|Tak proč tu tedy postáváte?
 dlga_lord_raid_village_reject:close_window|Výmluvy zbabělců. Zmiz mi z očí, tvůj zápach zbabělce mě uráží.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Černokněžník z Temného hvozdu byl zabit, má Paní.
-dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Odpusťte mi, má Paní, ale naléhavější záležitosti mi zabránili v zabití černokežníka, a mezitím utekl.
+dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Odpusťte, má Paní, ale naléhavé záležitosti mi zabránily v zabití čaroděje a on mezitím uprchl.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Černokněžník z Temného hvozdu pořád žije. Přerušili jsme jeho kouzla, ale uprchl.
-dlga_lord_mission_sorcerer_completed:lord_pretalk|Ano {playername}, pocítila jsem jeho smrt. Závoj čarodejnictví odvanul z lesa a mnoho mé síly se vrátilo. Vykonal jsi velkou službu pro náš lid a za ni ti náleží dárek. Vem si tohle...
+dlga_lord_mission_sorcerer_completed:lord_pretalk|Ano {playername}, cítila jsem jeho smrt. Závoj čarodejnictví odvanul z lesa a mnoho z mé síly se vrátilo. Vykonal jsi velkou službu pro náš lid a za ni ti náleží dárek. Vem si tohle...
 dlga_lord_mission_sorcerer_failed:lord_pretalk|Ano {playername}, cítím, že tmavé umění nepřítele, které se na nás stále naléhá. Jeho úsilí se nyní zdá být větší. Je nešťastné, že jste ho nemohli zastavit. Není pochyb o tom, že v budoucnu přijme dodatečná opatření, která budou proti našim snahám. Pravděpodobně nikdy nebude nalezen, zatímco Dol Guldur stále stojí. Děkuji za vaše úsilí, ale teď mě nechte. Stávám se unavená.
 dlga_lord_active_mission_1:lord_lend_companion_end|Ty bys chtěl svého společníka zpět? Chápu...
 dlga_lord_active_mission_1:lord_pretalk|Prosím tě o trpělivost, {playername}, pořád tvého společníka potřebuji, vrať se prosím, až bude po všem.
@@ -510,7 +510,7 @@ dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|Našel jsem {s4} ukr�
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|Obávám se, že uprchl.
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|A je nám bez něj o hodně lépe! Děkuji, {playername}, že jsi zbavil toho dávno zaníceného trnu. Je dobře, že se ti dá věřit, že si dokážeš taktně poradit. Poslal jsem našim lidem správu, a můžeš počítat se zásobami od nás.
 dlga_lord_hunt_down_fugitive_success_2:lord_hunt_down_fugitive_reward_accept|Děkuji, {s65}.
-dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|Upozorním správce na tvoji službu, {playername}. Opětovně, máš můj vděk za zbavení se toho {s44}.
+dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|Oznámím nadřízené o tvé službě, {playername}. Ještě jednou ti děkuji že jsi mne zbavil toho {s44}.
 dlga_lord_hunt_down_fugitive_fail:lord_pretalk|Je to smutný den kdy ten {s44} znovu dokázal vyhnout mému dosahu. Myslel jsem že to dokážeš, {playername}. Očividně jsem se zmýlil.
 dlga_lord_active_mission_2:lord_active_mission_3|Pracuji na tom.
 dlga_lord_active_mission_2:lord_mission_failed|Obávám se, že to nezvládnu.
@@ -553,11 +553,11 @@ dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|Boj�
 dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|Vidím, že ta volnost je tím lepším dílem vaší chrabrost. Možná byste se měli držet průzkumných povinností.
 dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|Tak hodně štěstí!
 dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|K dispozici je důležitá služba, kterou můžete poskytnout našim lidem, {playername}.
-dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|Moje síla bránit a zachovat Lothlorien byla omezena přístroji nepřítele. Veliký čaroděj Dol Guldur vyvolává silné kouzlo, které brání naší obraně. Ačkoli je smrtelník, stal se jedním z nepřátel největších žáků při použití tajných rituálů a představuje velkou hrozbu pro naše lidi. Musíte ho lovit a zničit!
-dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Kde najdu kouzelníka, má paní?
-dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Vyhledejte ho v lese Mirkwoodu, nedaleko Dol Guldur. Je oba dobře střeženým a opatrným nepřítelem, takže budete muset použít tajnost, abyste zabránili tomu, aby byl alarm vyveden. Pokud unikne, přemístí se na další temná místa, o kterých nepoznáme, a pokračuje v jeho bezbožnosti bez jakýchkoli obav. Bude jen jedna možnost porazit ho. Hodně závisí na vašem úspěchu. Jděte s našimi požehnáními.
-dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Jak přikazuješ, má Paní. Udělám jak nejlépe dovedu ke zničení tohoto zla.
-dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Odpusť mi, má paní. Mám několik naléhavých záležitostí, abych se mohl zúčastnit, než mohu pomoci svým lidem s touto záležitostí.
+dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|Moje síla bránit a zachovat Lothlorien byla omezena pomocí nástroje nepřítele. Veliký čaroděj z Dol Guldur vyvolává silné kouzlo, které omezuje naší obranu. Ačkoli je smrtelník, stal se jedním nejlepších žáků nepřítele. Jeho tajné rituálů a představují velikou hrozbu pro náš lid. Musíš ho najít a neškodnit!
+dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Kde najdu toho kouzelníka, má paní?
+dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Vyhledejte ho v lese temného hvozdu, nedaleko samotného Dol Guldur. Je  dobře hlídaný a obezřetný, takže budete muset použít utajení, aby jsi zabránili tomu spuštění alarmu. Pokud unikne, přemístí se na další temné místo, o kterém nevíme a bude bez pochyby pokračovat v jeho bezbožnosti. Bude jen jedna možnost porazit ho. Na vašem úspěchu, závisí mnoho. Teď jsi, máš mé požehnání.
+dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Jak přikazuješ, má Paní. Udělám co budu moct, abych zničil toto zlo.
+dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Odpusť mi, má Paní. Mám nějaké naléhavé záležitosti, než budu moct pomoci tvému lidu.
 dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Rozumím, {playername}. Ale nedělejte to příliš dlouho, protože snaha odolat jeho magii mě unavuje.
 dlga_lord_tell_mission:lord_mission_deliver_message|Potřebuji poslat dopis {s13}, který by měl být právě v {s4}. Budete-li tam směřovat, donesl byste mu to? Písmeno musí být v jeho rukou za 30 dní.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Zajisté, {s4}  je po cestě a rád tam zajedu.
@@ -596,7 +596,7 @@ dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_r
 dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|Líbí se mi tvé nadšení pro věc. Běž a přines mi jednoho z našich nepřátel. Při tvém návratu si v mých síních připijeme na tvé zdraví. A samozřejmě odměním tvé služby...
 dlga_lord_tell_mission_capture_enemy_hero_rejected:lord_pretalk|Zřejmě ti chybí vůle. Inu {playername} holt si budu muset najít někoho jiného.
 dlga_lord_tell_mission:lord_tell_mission_lend_companion|Momentálně pro tebe žádný úkol nemám, ale tvůj společník {s3} je {reg3?zkušené děvče:zkušený chlapík} a já bych potřeboval někoho s {reg3?jejími:jeho} schopnostmi. Necháš {reg3?ji:ho} na chvíli se mnou?
-dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|Jak dlouho budeš potřebovat {reg3?her:him} ?
+dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|Na jak dlouho bys {reg3?jí:ho} potřeboval?
 dlga_lord_tell_mission_lend_companion_2:lord_mission_lend_companion_told|Jenom pár dní, nanejvýš týden.
 dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_accepted|Tak tedy s tebou ponechám {s3} na jeden týden.
 dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_rejected|Je mi líto, ale nemohu být bez {s3} celý týden.

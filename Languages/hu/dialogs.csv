@@ -135,7 +135,7 @@ dlga_ziggy_ask_prisoners:ziggy_ask_why|Elég a rejtélyeidből, Zigûrphel! Mond
 dlga_ziggy_ask_why:ziggy_reason|Türelem, türelem Parancsnok! Csak nézze el nekem ezt a csekélyke gondot, és mutatok önnek egy csodát.
 ; dlga_ziggy_reason:ziggy_yes|You intrigue me. Very well. I will leave one of the captives to your... tender care.
 dlga_ziggy_reason:ziggy_no|Ne most, Zigûrphel. Menj vissza a posztodra. 
-; dlga_ziggy_no:close_window|Very well, Commander, but you would be a fool to forego my gift.
+dlga_ziggy_no:close_window|Nagyon jól, parancsnok, de bolond lenne, ha elhagyná az ajándékomat.
 ; dlga_ziggy_no:close_window.1|Very well, Commander.
 dlga_ziggy_yes:ziggy_choose_prisoners|Kitűnő. Melyik példányokat adnád oda?
 dlga_ziggy_choose_prisoners:ziggy_no|Nincs semmi, amit felajánlhatnék.

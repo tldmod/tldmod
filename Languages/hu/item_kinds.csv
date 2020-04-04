@@ -30,9 +30,9 @@ itm_arnor_warhorse|Arnoriai csataló
 itm_dunedain_warhorse|Dúnadan csataló
 itm_rohirrim_courser|Rohír rohamló
 itm_rohirrim_hunter|Rohír vadászló
-; itm_rohirrim_courser2|Rohirrim Armoured Courser
+itm_rohirrim_courser2|Rohír Páncélozott Rohamló
 itm_rohan_warhorse|Rohír csataló
-; itm_thengel_warhorse|Eorl Warhorse
+itm_thengel_warhorse|Eorl Csataló
 itm_rhun_horse_a|Rhûni ló
 itm_rhun_horse_b|Rhûni ló
 itm_rhun_horse_d|Rhûni ló
@@ -91,8 +91,8 @@ itm_furry_boots|Szőrmés csizmák
 itm_black_tunic|Fekete tunika
 itm_hood_black|Fekete csuklya
 itm_hood_green|Zöld csuklya
-; itm_hood_grey|Grey Hood
-; itm_hood_leather|Leather Hood
+itm_hood_grey|Szürke Csuklya
+itm_hood_leather|Börcsuklya
 itm_axe_b|Északlakó szakállas balta
 itm_axe_c|Északlakó balta
 itm_axe_d|Északlakó balta
@@ -115,7 +115,7 @@ itm_dwarf_short_bow|Törp rövid íj
 itm_harad_bow|Haradi visszacsapó íj
 itm_lg_bow|Sas Őrség íja
 itm_riv_bow|Völgyzugolyi íj
-; itm_rhun_bow|Balchoth Bow
+itm_rhun_bow|Balchoth ij
 itm_lorien_bow|Galadhrim íj
 itm_isengard_large_bow|Vasudvardi hatalmas íj
 itm_dale_bow|Suhatagi íj

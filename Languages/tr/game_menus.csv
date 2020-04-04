@@ -1,11 +1,11 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
 mno_start_good|Yeni bir çagın ŞAFAGI
 mno_start_evil|İnsanların Alacakaranlıgı
-mno_faction_intros|Orta Dünya'nın farklı taraflarını ögrenin
+mno_faction_intros|Orta Dünya'nın farklı tarafları hakkında bilgi edinin
 mno_go_bback|Geri Dön
 menu_start_phase_2|^^^^^ Orta Dünya. Doguda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çagdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtigin yolda ilerle...
-mno_change_tld_options|TLD ayarını degiştir
+mno_change_tld_options|TLD ayarlarını degiştir.
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Çatışma, Gondor, Harad'a karşı
 mno_custom_battle_scenario_12|Savaş için tarafları seç
@@ -346,7 +346,7 @@ menu_player_added_to_war_council|^^^^^Bir ulak geldi ve şuanda sana {s24} olara
 mno_player_added_to_war_council_close|Kapat
 menu_player_added_to_siege_reports|^^^^^Bir ulak geldi ve şuanda {s24} olarak, her ne zaman {s2} bir merkezi kuşattıgında veya {s2}'nin merkezleri kuşatıldıgında sana bir rapor gönderilecegini söylüyor.
 mno_player_added_to_siege_reports_close|Kapat
-menu_player_added_to_allow_follow|^^^^^Bir ulak geldi ve şuanda {s24} olarak, her ne zaman {s2} bir merkezi kuşattıgında veya {s2}'nin merkezleri kuşatıldıgında sana bir rapor gönderilecegini söylüyor.
+menu_player_added_to_allow_follow|^^^^^Bir ulak geldi ve şuanda {s24} olarak, senin en fazla {reg55} takipçin karşılıgında, {s2}'i seni takip etmesi için komuta edebilecegini söyledi.
 mno_player_added_to_allow_follow_close|Kapat
 menu_center_besieged_event|^^^^^{s1}'in {s3}'ten {s2} tarafından kuşatıldıgını bildiren bir ulak geldi.
 mno_center_besieged_event_close|Kapat
