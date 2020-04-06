@@ -1926,7 +1926,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",15),
+    (assign,"$savegame_version", 16),
 
 	] + (is_a_wb_script==1 and [
 
@@ -16715,8 +16715,8 @@ scripts = [
 	    (troop_set_slot, "trp_npc20", slot_troop_morality_value, 2), 
 	    (troop_set_slot, "trp_npc20", slot_troop_2ary_morality_type, tmt_aristocratic), 
 	    (troop_set_slot, "trp_npc20", slot_troop_2ary_morality_value, 3),
-	    (troop_set_slot, "trp_npc20", slot_troop_personalityclash_object, "trp_npc14"), #Fuldimir
-	    (troop_set_slot, "trp_npc20", slot_troop_personalityclash2_object, "trp_npc13"),  #Lykada
+	    (troop_set_slot, "trp_npc20", slot_troop_personalityclash_object, "trp_npc13"), #Lykada
+	    (troop_set_slot, "trp_npc20", slot_troop_personalityclash2_object, "trp_npc14"),  #Fuldimir
 	    (troop_set_slot, "trp_npc20", slot_troop_personalitymatch_object, "trp_npc15"),  #Bolzog
 	    (troop_set_slot, "trp_npc20", slot_troop_home, "p_town_erebor"),
 	    (troop_set_slot, "trp_npc20", slot_troop_payment_request, 2000 / companionPriceMult ),
@@ -23956,6 +23956,13 @@ command_cursor_scripts = [
 			(troop_set_type, ":trolls", tf_orc),
 			(try_end),
 		(assign, "$savegame_version", 15),
+	(try_end),	
+	
+	(try_begin), #InVain - April 2020, fix Ziggy NPC clash dialogue
+		(le, "$savegame_version", 15),	
+			(troop_set_slot, "trp_npc20", slot_troop_personalityclash_object, "trp_npc13"), #Lykada
+			(troop_set_slot, "trp_npc20", slot_troop_personalityclash2_object, "trp_npc14"),  #Fuldimir
+			(assign, "$savegame_version", 16),
 	(try_end),	
 ]),
 
