@@ -267,7 +267,7 @@ dlga_lord_follow_spy_completed:lord_pretalk|Teşekkür ederim, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hımm, siz nasıl isterseniz, {s65}.
 dlga_lord_start:lord_generic_mission_completed.7|Mültecilere güvenle eşlik ettigine dair raporlar aldım. Sana minnettarız, {playername}. Bu savaşta en çok masumlar acı çekiyor.
 dlga_lord_start:lord_defend_refugees_failed|{playername}, raporlarıma göre mülteciler; yagmacıların saldırısına ugramış ve hepsi katledilmiş. Bu çok üzücü.
-dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Beni affedin, {s65}. Onları korumakta başarısız oldum.\n
+dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Beni affedin, {s65}. Onları korumakta başarısız oldum.
 dlga_lord_defend_refugees_failed_1a:lord_pretalk|Savaşlarda en çok zulmü masumlar çeker. İlerleyen zamanlarda daha çok mülteci grupları olabilir,  {playername}. Umarım bir sonraki sefere daha hazırlıklı olursun.
 dlga_lord_start:lord_defend_refugees_half_completed|Aldıgım raporlara göre sadece {reg17} mülteci trenleri hedeflerine ulaşmış. Bu ne kadar talihsiz bir durum olsa da savaşın bedeli budur. {playername}, gelecekte daha fazla mülteci treni olabilir. Umarım bir dahaki sefere daha hazırlıklı olursun.
 dlga_lord_defend_refugees_half_completed:lord_pretalk|Gelecek sefere daha hazırlıklı olacagım lordum.
@@ -331,7 +331,7 @@ dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|Erebor'a çok iyi hizmet etti
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Teşekkür ederim, {s3}.
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|Şimdi ne yapacaksınız?
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|Soydaşlarımızın cinayetlerini cezasız bırakmayacagız. Bize bunu yapanların üzerine dehşet ve ölüm saçacagız. Gundabad Dagı'nın eteklerinden, Khazad-dûm'un en derin çukurlarına ve Sisli Daglar'a kadar her yer goblin kanının siyahına bulanacak. 
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|Balin ve yoldaşlarının intikamını almak için size yardım etmektir dilegim...
+dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, Balin ve yoldaşlarının intikamını almak için {s4} halkına yardım etmek isterim...
 dlga_dwarf_lord_book_give_i:lord_pretalk|Size iyi şanslar dilerim.
 dlga_dwarf_lord_avenge:close_window|Çok iyi,  {playername}. Durin'in Soyu'nun lütuflarıyla git ve düşmanlarımıza ölüm getir. Onlara bizim halkımızın bildigi acıyı ve korkuyu göster. 
 dlga_lord_talk:find_lost_spears_permission|Lordum, Kral Bladorthin'in kayıp mızrakları için Yalnız Daglar'a girmek istiyorum.
@@ -428,7 +428,7 @@ dlga_lord_give_order:lord_give_order_answer|Beni takip et. [Costs {reg1}/{reg2} 
 dlga_lord_give_order:lord_give_order_details_ask|Git... [Costs {reg1}/{reg2} influence]
 dlga_lord_give_order:lord_give_order_details_ask.1|Etrafında devriye gez... [Costs {reg1}/{reg2} influence] 
 dlga_lord_give_order:lord_give_order_details_ask.2|Çevresindeki düşmanlarla ilgilen... [Costs {reg1}/{reg2} influence] 
-dlga_lord_give_order:lord_give_order_assault|Sen ve ben birlikte [s11]'i alabiliriz. Senin durmaksızın saldırman gerek!.. [[reg1]/[reg2]  tesir puanı harcar]
+dlga_lord_give_order:lord_give_order_assault|Sen ve ben birlikte {s11} alabiliriz. Senin bir an önce saldırman gerek!.. [{reg1}/{reg2} nüfus puanı harcar]
 dlga_lord_give_order_assault:lord_pretalk|{s4} bu kuşatmayı yönetiyor. Onlarla konuşmanı öneririm.
 dlga_lord_give_order_assault:lord_pretalk.1|Hazırlıklarımız henüz tamamlanmadı. Başka bir {s11} daha ihtiyacımız var.
 dlga_lord_give_order_assault:close_window|Peki -- Duvarlara Saldırın!
@@ -505,7 +505,7 @@ dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|Minnettarım dostum. So
 dlga_capture_enemy_hero_thank_2:lord_pretalk|Kesinlikle, {s65}.
 dlga_capture_enemy_hero_thank_2:lord_pretalk.1|Bir şey degildi.
 dlga_lord_active_mission_2:lord_raise_troops_thank|Tabii. {reg1} tane {s13} yetiştirdim. Onları alabilirsiniz.
-dlga_lord_active_mission_2:lord_raise_troops_thank.1|Kesinlikle.. Ben [reg2] askerlerini talim ettirdim, ve onlardan [reg1]'i iyi durumda. Onları alabilirsin, onlar savaş için daha fazla hazırlanmalı.  
+dlga_lord_active_mission_2:lord_raise_troops_thank.1|Kesinlikle.. Ben {reg2} askerlerini talim ettirdim, ve onlardan {reg1} tanesi iyi egitildi. Onları alabilirsin, savaş için daha fazla hazırlanmalılar.  
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|{s4}'ü {s3}'te saklanırken buldum ve cezasını verdim.
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|Üzgünüm o kaçtı.
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|Ve hepimiz onsuz çok daha iyi olacagız. Teşekkürler, {playername}, beni bu çıbandan kurtardıgın için. Güvenilir oldugunu ve işlerin uygun bir biçimde üstesinden gelebildigini bilmek güzel. Üstlerimize bir not yolladım, artık ek levazımat konusunda bize güvenebilirsin.

@@ -164,17 +164,17 @@ dlga_companion_home_description:close_window.1|Je préfère que mes compagnons n
 dlga_start:player_hire_troop|{s33}^^Je suis en charge des forces stationnées ici à {s21}. Vous vouliez me voir ?
 dlga_player_hire_troop:player_hire_troop_give|Certains des guerriers de mon groupe seraient plus utiles ici à défendre {s21}.
 dlga_player_hire_troop:close_window|Je veux passer en revue mes guerriers stationnés ici.
-; dlga_player_hire_troop:player_hire_trolls_take|I am a commander worthy of a fighting Troll - give me one!
-; dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
-; dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
-; dlga_player_hire_trolls_take:player_hire_trolls_how_many|It will cost {reg21} influence.
-; dlga_player_hire_trolls_take:close_window.2|I’ve changed my mind.
-; dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|A fearsome beast. And now, it is mine!
-; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
-; dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
-; dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|I’ve changed my mind.
-; dlga_player_hire_troll_buy_not_enough:close_window|Wasting my time...
-; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
+dlga_player_hire_troop:player_hire_trolls_take|Je suis un commandant qui mérite un troll de combat. Donnez m'en un !
+dlga_player_hire_trolls_take:close_window|Vous cherchez à monter votre propre Légion Noire, n'est-ce pas ? Revenez quand vous pourrez ajouter un troll adulte à vos rangs.
+dlga_player_hire_trolls_take:close_window.1|Vous ? Espèce de petit asticot. Hors de ma vue ! Un troll de combat, et puis quoi encore ? (Vous devez être {s24} ou plus haut)
+dlga_player_hire_trolls_take:player_hire_trolls_how_many|Cela coûtera {reg21} en influence.
+dlga_player_hire_trolls_take:close_window.2|J'ai changé d'avis.
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Une bête redoutable. Et maintenant, elle est à moi !
+dlga_player_hire_trolls_how_many:player_hire_troll_armoured|Ils se battront mieux avec des plaques de fer pour les protéger. Faites en sorte qu'il en soit ainsi !
+dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|J'ai changé d'avis.
+dlga_player_hire_troll_buy_not_enough:close_window|Je perd mon temps...
+dlga_player_hire_troll_buy_done:close_window|Prenez bien soin de ce grand gaillard maintenant, et il prendra bien soin de vous ! Ha !
 dlga_player_hire_troop:close_window.1|J'ai besoin d’un peu d’entraînement.
 dlga_player_hire_troop:tld_sell_prisoners|Je vous ai apporté quelques prisonniers.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{ s33} Voyons voir ces misérables.
@@ -990,18 +990,18 @@ dlga_start:town_merchant_talk|Salutations Commandant. Comment puis-je vous servi
 dlga_start:town_merchant_talk.1|Bonjour. Que puis-je faire pour vous ?
 dlga_town_merchant_talk:trade_requested_weapons|J'aimerais demander un nouvel équipement. Montrez-moi ce que vous avez dans votre entrepôt.
 dlga_town_merchant_talk:trade_requested_horse|Je pense me procurer une monture.
-; dlga_town_merchant_talk:player_upgrade_trolls_take|I want to strengthen my trolls!
-; dlga_player_upgrade_trolls_take:close_window|Who are you to ask this of me? Pah! Begone! (You need to be {s24} or higher)
-; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
-; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
-; dlga_player_upgrade_trolls_take:close_window.2|We don't do that here...
-; dlga_player_upgrade_trolls_take:close_window.3|Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!
-; dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Forget it
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Forget it
-; dlga_player_upgrade_troll_not_enough:close_window|Wasting my time...
-; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
+dlga_town_merchant_talk:player_upgrade_trolls_take|Je veux rendre mes trolls plus forts !
+dlga_player_upgrade_trolls_take:close_window|Qui êtes-vous pour me demander cela ? Peuh ! Allez-vous-en ! (Vous devez être {s24} ou plus)
+dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Vous nous avez rendu de nombreux services. Nous allons vous aider à mettre un peu de fer sur votre gars ! ({reg21} points de ressources)
+dlga_player_upgrade_trolls_take:close_window.1|Vos trolls sont comme des bébés qui chialent. Commencez par bien les faire saigner !
+dlga_player_upgrade_trolls_take:close_window.2|Nous ne faisons pas ça ici...
+dlga_player_upgrade_trolls_take:close_window.3|Vos trolls ne parlent même pas correctement ! Ils ne sont pas de notre espèce. Ramenez-les d'où ils viennent !
+dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Oubliez ça
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|Je vais blinder l'un d'eux.
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Peut-être que je ne l'ai pas encore mérité. Je ne vais pas vous déranger davantage avec cette broutille.
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Oubliez ça
+dlga_player_upgrade_troll_not_enough:close_window|Je perd mon temps...
+dlga_player_upgrade_troll_buy_done:close_window|Oui... oui ! Viens ici, gros tas, espèce de...
 dlga_trade_requested_weapons:merchant_trade|Ah, oui commandant. Ces marchandises sont les meilleures que vous trouverez.
 dlga_trade_requested_horse:merchant_trade|De fiers montures pour chevaucher et tuer, ainsi que la nourriture pour les nourrir ! Vous ne trouverez pas de meilleures bêtes ailleurs.
 dlga_merchant_trade:town_merchant_talk|Autre chose ?

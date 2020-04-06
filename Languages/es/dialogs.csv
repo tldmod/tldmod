@@ -44,12 +44,12 @@ dlga_treebeard_introduce_1:treebeard_introduce_2|(Estás a punto de hablar cuand
 dlga_treebeard_introduce_2:treebeard_introduce_3|Perdonad mi intrusión... No soy más que {un viajero cansado/una viajera cansada} que busca escapar de ciertos acontecimientos recientes... me llamo {playername}. ¿Puedo preguntar quiénes sois?
 dlga_treebeard_introduce_3:treebeard_introduce_4|(El gigante arbóreo de rígidos movimientos abre lentamente la boca; escondida detrás de pequeñas ramas, hojas y musgo. Con una voz profunda, lenta y resonante responde de manera imperiosa:)^  'Hrum, hum... No te diré cómo me llamo, no por ahora al menos. Ante todo me llevaría mucho tiempo; mi nombre crece continuamente; de modo que mi nombre es como una historia. Los nombres verdaderos cuentan la historia de quienes los llevan, en mi lenguaje, en el Viejo Éntico, como podría decirse. Es un lenguaje encantador, pero lleva mucho tiempo decir algo en él, pues nunca decimos nada, a no ser que valga la pena pasar mucho tiempo hablando y escuchando..'
 dlga_treebeard_introduce_4:treebeard_introduce_5|¡Oh, así que eres un Ent! He oído muchas leyendas sobre vosotros y es un honor estar en tu presencia. No deseo molestar y me iré si así me lo pides.
-dlga_treebeard_introduce_5:treebeard_questtalk|(El gigante de rígidos movimientos y sus compañeros Ents permanecen quietos durante varios minutos en silencio mientras una brisa pasa a través de sus frondosos cabellos y barbas. Se miran los unos a los otros durante un momento hasta que un extrañamente impaciente Ent con aspecto de serbal hace ademán de querer hablar. Sin embargo, permanece en silencio hasta que el gigante Ent de movimientos rígidos comienza a hablar de nuevo:)
+dlga_treebeard_introduce_5:treebeard_questtalk|(El gigante de miembros rígidos y los otros Ents que lo acompañan permanecen quietos durante varios minutos en silencio mientras una brisa pasa a través de sus frondosos cabellos y barbas. Se miran los unos a los otros durante un momento hasta que un Ent inusualmente impaciente  con aspecto de serbal hace ademán de querer hablar. Sin embargo, permanece en silencio hasta que el Ent gigante de miembros rígidos comienza a hablar de nuevo:)
 dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Como estaba diciendo...: Hrum... Apreciamos la gran cortesía que nos demuestras. {reg1?Resulta poco común verla en gentes de tu raza:¡Qué gusto hablar con elfos de nuevo!}} Las cosas no han ido bien desde que las Ent-mujeres desaparecieron, y ahora hay muchas criaturas malvadas del Señor Oscuro intentando destruir nuestros hogares. Buscamos a alguien enérgico pero prudente. Alguien que pueda ayudarnos mientras discutimos nuestros próximos movimientos.^Muchas hordas de orcos han asaltado el bosque y quemado nuestros árboles con sus proyectiles de fuego; si pudieras derrotar a los orcos y asegurarte de que no vuelven a amenazar el bosque, te estaríamos agradecidos y te consideraríamos {un auténtico amigo/una auténtica amiga}. Hazlo y hablaremos de nuevo.
 dlga_treebeard_quest_brief:close_window|Los orcos son sin duda criaturas detestables. Me aseguraré de que no vuelvan a hacer daño al bosque.
 dlga_treebeard_quest_brief:treebeard_pretalk|Lo siento. Pero ahora mismo tengo prisa.
 dlga_treebeard_questtalk:close_window|(El líder Ent abre lentamente su boca escondida y los otros Ents te miran y comienzan también a emitir un largo y profundo sonido que hace que el suelo tiemble ligeramente - te das cuenta de que se están riendo a la manera de los Ents. Un Ent relativamente joven con aspecto de serbal golpea el suelo con sus pies de siete dedos y el temblor del suelo casi te hace caer.)^'Con cuidado, Ramaviva, no queremos lastimar a quien nos ha ayudado con tanto valor. Humm... Me llamo Bárbol, soy el más antiguo de los Ents, y todos te agradecemos lo que has hecho... Humm... Déjame regalarte un poco de Agua Ent para celebrar tu victoria.'
-dlga_treebeard_questtalk:close_window.1|(El gigante de miembros rígidos y sus compañeros Ents permanecen de pie en silencio mientras la brisa pasa a través de sus cabellos frondosos y de sus barbas.)
+dlga_treebeard_questtalk:close_window.1|(El gigante de miembros rígidos y los otros Ents que lo acompañan permanecen quietos y en silencio mientras la brisa pasa a través de sus frondosos cabellos y barbas.)
 dlga_treebeard_pretalk:treebeard_talk_response|Hrumm... ¿Qué deseas saber, mi joven {amigo/amiga}?
 dlga_treebeard_talk_response:treebeard_about_himself|Cuéntame más sobre ti.
 dlga_treebeard_talk_response:treebeard_about_entwives|Cuéntame más sobre las Ent-mujeres.
@@ -164,17 +164,17 @@ dlga_companion_home_description:close_window.1|Preferiría que mis compañeros n
 dlga_start:player_hire_troop|{s33}^^Estoy a cargo de las fuerzas guarnecidas en {s21}. ¿Querías verme?
 dlga_player_hire_troop:player_hire_troop_give|Algunos de los soldados a mi cargo serían más útiles aquí, para defender {s21}.
 dlga_player_hire_troop:close_window|Quiero pasar revista a mis tropas guarnecidas aquí.
-dlga_player_hire_troop:player_hire_trolls_take|Como capitán que soy necesito un troll de guerra; dame lo que merezco.
-dlga_player_hire_trolls_take:close_window|¿Veo que quieres reforzar tu legión negra, eh? Vuelve cuando puedas incorporar un troll de verdad a tus filas.
-dlga_player_hire_trolls_take:close_window.1|¿Quién, tú? Fuera de aquí, gusano. Un troll de guerra... sí, claro.  (Necesitas ser al menos {s24})
+dlga_player_hire_troop:player_hire_trolls_take|Como capitán que soy, necesito un troll de guerra; ¡dame lo que merezco!
+dlga_player_hire_trolls_take:close_window|Así que pretendes levantar tu propia Legión Negra, ¿eh? Vuelve cuando puedas incorporar a tus filas un troll de verdad.
+dlga_player_hire_trolls_take:close_window.1|¿Quién, tú? Fuera de aquí, gusano. Un troll de guerra..., sí, claro.  (Necesitas ser al menos {s24})
 dlga_player_hire_trolls_take:player_hire_trolls_how_many|Costará {reg21} puntos de influencia.
 dlga_player_hire_trolls_take:close_window.2|He cambiado de parecer.
-dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Una bestia temible, toda mía.
-dlga_player_hire_trolls_how_many:player_hire_troll_armoured|Lucharán mejor bajo el peso protector de tus planchas de hierro. Que así sea.
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Una bestia temible, ¡y ahora es toda mía!
+dlga_player_hire_trolls_how_many:player_hire_troll_armoured|Lucharán mejor bajo el peso protector de tus planchas de hierro. Encárgate de que así sea.
 dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|He cambiado de opinión.
 dlga_player_hire_troll_buy_not_enough:close_window|Menuda pérdida de tiempo...
-dlga_player_hire_troll_buy_done:close_window|¡Cuida bien de este grandullón y el cuidado será mutuo! ¡Jaja!
+dlga_player_hire_troll_buy_done:close_window|¡Cuida bien de este grandullón y él cuidará bien de ti! ¡Ja, ja!
 dlga_player_hire_troop:close_window.1|Necesito entrenarme un poco.
 dlga_player_hire_troop:tld_sell_prisoners|Te he traído algunos prisioneros.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Déjame ver a esos desgraciados.
@@ -477,12 +477,12 @@ dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|¿Puedes enviar
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Es posible movilizarlos, pero llevará tiempo. Temo que para entonces sea demasiado tarde. ^^Tú y tus tropas parecéis estar listos para emprender la marcha rápidamente, ¿podéis defender la aldea?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Mis tropas están listas. Saldremos de inmediato.
 dlga_lord_mission_defend_question:lord_mission_defend_reject|Me temo que no dispongo de tantos soldados en este momento.
-dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Me temo que no puedo acometer este encargo.
+dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Me temo que no puedo acometer esta tarea.
 dlga_lord_mission_defend_accept:close_window|Gracias, {playername}. ¡Ahora ve, deprisa!
 dlga_lord_mission_defend_reject:close_window|Ya veo. Les enviaremos tantas tropas como podamos, esperemos que no sea demasiado tarde.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, hay una aldea cercana que es un objetivo ideal para el saqueo. Nuestros exploradores dicen que sus habitantes están bajo la protección de {s3}, pero son pocos y pueden ser derrotados con facilidad. ^^Resulta que tú eres {el primero/la primera} de nuestros capitanes a quien se lo he dicho. ¿Qué quieres hacer con esta información?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Arrasaré esa aldea, mataré a todo hombre que encuentre y convertiré a sus mujeres e hijos en esclavos.
-dlga_lord_mission_raid_village_a:lord_raid_village_reject|¡No tengo tiempo para saquear aldeuchas!
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|No puedo hacer una expedición de saqueo ahora mismo con estos imnútiles que me acompañan... 
 dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|¡No tengo tiempo para saquear aldeuchas!
 dlga_lord_raid_village_accept:close_window|¿Entonces por qué sigues aquí todavía?
 dlga_lord_raid_village_reject:close_window|Las excusas de los cobardes. Lárgate, el hedor de tu cobardía es insultante.
@@ -891,7 +891,7 @@ dlga_mayor_talk:merchant_quest_last_offered_job|Sobre esa tarea que necesitabas 
 dlga_mayor_talk:merchant_quest_about_job|Sobre esa tarea que me asignaste...
 dlga_mayor_talk:mayor_talk_ask_location|Deseo conocer el paradero de alguien.
 dlga_mayor_talk:close_window|[Irse]
-dlga_mayor_info_begin:mayor_info_talk|Soy la autoridad local aquí, en {s9}. Se podría decir que estoy a cargo de las tareas cotidianas. Siempre hay cosas que hacer, así que si quieres ayudar sólo tienes que decírmelo.
+dlga_mayor_info_begin:mayor_info_talk|Soy la persona a cargo de {s9}. Se podría decir que organizo las tareas cotidianas. Siempre hay cosas que hacer, así que si quieres ayudar sólo tienes que decírmelo.
 dlga_mayor_info_talk:mayor_info_lord|¿Quién gobierna este sitio?
 dlga_mayor_info_lord:mayor_info_talk|Nuestro señor es {s10}.
 dlga_mayor_info_talk:mayor_pretalk|Eso es todo lo que necesito saber. Gracias.
@@ -899,7 +899,7 @@ dlga_merchant_quest_about_job:merchant_quest_about_job_2|¿Cuál es el problema?
 dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|¿Qué pasa si no puedo acabarla?
 dlga_merchant_quest_about_job_2:merchant_quest_about_job_working|Bueno, todavía estoy trabajando en ella.
 dlga_merchant_quest_about_job_working:mayor_pretalk|Bien. No tengo dudas de que lo lograrás.
-dlga_merchant_quest_last_offered_job:merchant_quest_brief|Eh, quieres recapacitar sobre ello. Bien...
+dlga_merchant_quest_last_offered_job:merchant_quest_brief|Si quieres pensarlo con calma. No pasa nada...
 dlga_merchant_quest_what_if_fail:mayor_pretalk|Espero que no me falles. No nos podemos permitir perder la carga que llevas contigo.
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Bueno, haz todo lo posible para terminarla.
 dlga_merchant_quest_taken:mayor_pretalk|Excelente. Cuento contigo. Buena suerte.
@@ -949,7 +949,7 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Necesito que alguien d
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|De acuerdo. Daré caza a esos trasgos.
 dlga_merchant_quest_taken_bandits:close_window|¿Lo harás? Me alegra mucho oír eso. Que tengas suerte.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Lo siento. No tengo tiempo para eso ahora mismo.
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|¡Claro que tengo una misión para ti! Existe un grupo de peligrosos trasgos sembrando el caos por todo el lugar, y ya no sé cómo acabar con ellos. Han estado asaltando y robando a reclutas borrachos aprovechando la oscuridad de la noche, y desapareciendo rápidamente antes de que llegaran los guardias. No hemos sido capaces de capturar a uno solo de ellos. Sólo atacan a personas aisladas, nunca se han atrevido a asaltar a los que van en grupo. Necesito a alguien que pueda enfrentarse a estos trasgos en solitario y acabe con ellos. Ésta parece ser la única manera para hacerlo. ¿Estás a la altura de las circunstancias?
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|¡Claro que tengo una misión para ti! Existe un grupo de peligrosos trasgos sembrando el caos por los alrededores, y ya no sé cómo acabar con ellos. Han estado atacando pro sorpresa y robando a reclutas borrachos aprovechando la oscuridad de la noche, y desapareciendo rápidamente antes de que llegaran los guardias. No hemos sido capaces de capturar a uno solo de ellos. Solo atacan a personas aisladas, nunca se han atrevido a asaltar a los que van en grupo. Necesito a alguien que pueda enfrentarse a estos trasgos en solitario y acabe con ellos. Esta parece ser la única manera para hacerlo. ¿Estás a la altura de las circunstancias?
 dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Hay una banda de peligrosos trasgos sembrando el caos por todo el lugar, y ya no sé como acabar con ellos. Han estado asaltando y robando a reclutas borrachos aprovechando la oscuridad de la noche, y desapareciendo rápidamente antes de que llegaran los guardias . No hemos sido capaces de capturar a uno solo de ellos. Sólo atacan a gente aislada, y nunca se han atrevido a asaltar a los que van en grupo. Necesito a alguien que pueda enfrentarse a estos trasgos en solitario y acabe con ellos. Ésta parece ser la única manera para hacerlo. ¿Estás a la altura de este reto?
 dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|¿Matar trasgos? ¡Por supuesto, será un placer!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, no me interesa.
@@ -966,10 +966,10 @@ dlga_goods_trade_completed:goods_merchant_talk|¿Algo más?
 dlga_goods_merchant_talk:close_window|No, gracias.
 dlga_start:troublesome_bandits_intro_1|¿Qué? Vamos a matar. Robaremos tu comida y tus caballos y nos los comeremos. Y luego te comeremos a ti.
 dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|Vais a lamentar causar problemas en estas tierras. No deberíais haber abandonado vuestras guaridas en las montañas.
-dlga_troublesome_bandits_intro_2:close_window|¡Matar ahora! ¡Comer luego! 
+dlga_troublesome_bandits_intro_2:close_window|¡Matar... ahora! ¡Comer... luego! 
 dlga_start:fangorn_orcs_intro_1|¿Eh? Al Viejo no le gustará que interrumpas el trabajo de sus sirvientes.
 dlga_fangorn_orcs_intro_1:fangorn_orcs_intro_2|¡Dejad de hacer daño a este bosque y marchaos, o lo lamentaréis! 
-dlga_fangorn_orcs_intro_2:close_window|¡Jo, jo, jo! ¡Talaremos y quemaremos lo que nos apetezca! Una vez que hayamos terminado contigo...
+dlga_fangorn_orcs_intro_2:close_window|¡Jo, jo, jo! ¡Talaremos y quemaremos lo que nos apetezca! Una vez nos hagamos contigo...
 dlga_start:disbanded_troop_ask|¿Quieres que te sigamos?
 dlga_disbanded_troop_ask:disbanded_troop_join|Sí. Cabalguemos juntos.
 dlga_disbanded_troop_ask:close_window|No, esta vez no.
@@ -991,26 +991,26 @@ dlga_start:town_merchant_talk.1|Buenos días. ¿Qué puedo hacer por ti?
 dlga_town_merchant_talk:trade_requested_weapons|Quiero solicitar nuevo equipamiento. Enséñame lo que tengas.
 dlga_town_merchant_talk:trade_requested_horse|Estaba pensando en hacerme con una nueva montura.
 dlga_town_merchant_talk:player_upgrade_trolls_take|¡Quiero que mis trolls sean más fuertes!
-dlga_player_upgrade_trolls_take:close_window|¿Quién te crees que eres? ¿Con qué autoridad? ¡Fuera, largo! (Necesitas ser al menos {s24})
-dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Nos has ayudado mucho. Te devolveremos el favor con una buena dosis de hierro para tu pequeñín! ({reg21} puntos de recursos)
-dlga_player_upgrade_trolls_take:close_window.1|Tus trolls todavía huelen a leche, dales un buen bañito de sangre para dejarlos a punto.
+dlga_player_upgrade_trolls_take:close_window|¿Quién te crees que eres para pedirme algo así? ¡Fuera, largo! (Necesitas ser al menos {s24})
+dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Nos has ayudado mucho. Te devolveremos el favor echándole un poco de hierro encima a tu pequeñín! ({reg21} puntos de recursos)
+dlga_player_upgrade_trolls_take:close_window.1|Tus trolls todavía huelen a leche. ¡Primero dales un buen baño de sangre y después hablaremos!
 dlga_player_upgrade_trolls_take:close_window.2|Aquí no hacemos esas cosas...
-dlga_player_upgrade_trolls_take:close_window.3|¡Tus trolls hablan la mar de raro! No son de los nuestros; llévatelos por dónde has venido.
+dlga_player_upgrade_trolls_take:close_window.3|¡Tus trolls ni siquiera saben hablar como es debido! No son de los nuestros; llévatelos por dónde has venido.
 dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Olvídalo.
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|Dame uno y le haremos una armadura a medida.
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Puede que no lo merezca. No te incomodaré más con nimiedades.
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Olvídalo.
 dlga_player_upgrade_troll_not_enough:close_window|Menuda pérdida de tiempo...
-dlga_player_upgrade_troll_buy_done:close_window|¡Bien, bieeen! Ven a mí, gigante tontorrón.
+dlga_player_upgrade_troll_buy_done:close_window|¡Bien, bieeen! Ven conmigo, gigante tontorrón.
 dlga_trade_requested_weapons:merchant_trade|Ah, sí, capitán. Estas son las mejores armas que podrás encontrar en estos lares.
 dlga_trade_requested_horse:merchant_trade|¡Las monturas más audaces para cabalgar y combatir, y la comida para alimentarlas, y a tus tropas! No encontrarás mejores bestias en ningún otro sitio.
 dlga_merchant_trade:town_merchant_talk|¿Alguna cosa más?
-dlga_town_merchant_talk:merchant_gossip|Dime. ¿De qué habla la gente estos días? 
+dlga_town_merchant_talk:merchant_gossip|¿Sabes lo que se cuenta por aquí últimamente? 
 dlga_town_merchant_talk:close_window|Adiós.
 dlga_start:town_dweller_talk|¿Disculpa?
 dlga_start:town_dweller_talk.1|Buenos días, comandante.
 dlga_town_dweller_talk:town_dweller_ask_fugitive|Estoy buscando a un fugitivo llamado {s4}. Me han dicho que puede estar escondido por aquí.
-dlga_town_dweller_ask_fugitive:close_window|Los forasteros van y vienen por aquí. Si se esconde por los alrededores, seguro que das con él si buscas un poco.
+dlga_town_dweller_ask_fugitive:close_window|Bueno, los forasteros van y vienen. Pero si se esconde en las cercanías seguro que das con él, si buscas un poco.
 dlga_town_dweller_talk:town_dweller_ask_info|¿Qué me puedes decir sobre este sitio?
 dlga_town_dweller_talk:town_dweller_ask_info.1|¿Qué me puedes decir sobre este lugar?
 dlga_town_dweller_talk:town_dweller_ask_situation|¿Qué tal es la vida por aquí?
@@ -1025,9 +1025,9 @@ dlga_town_dweller_ask_situation:town_dweller_talk|Son tiempos difíciles, {seño
 dlga_town_dweller_ask_situation:town_dweller_talk.1|Son tiempos difíciles, {señor/señora}. Pero debemos dar gracias por lo que tenemos.
 dlga_town_dweller_ask_situation:town_dweller_talk.2|No nos va mal {señor/señora}. Debemos dar gracias por lo que tenemos.
 dlga_town_dweller_talk:town_dweller_ask_rumor|¿Qué es lo que se comenta por aquí?
-dlga_town_dweller_ask_rumor:town_dweller_talk|No sé nada que pudiera ser de interés para ti.
+dlga_town_dweller_ask_rumor:town_dweller_talk|Creo que no sé nada que pudiera resultarte de interés.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|¿Me estás amenazando? Los guardias conocen bien a la gente de tu calaña. 
-dlga_town_dweller_brawl_confirm:close_window|¿Ah sí? Vamos a ver lo valiente que eres.
+dlga_town_dweller_brawl_confirm:close_window|¿Ah, sí? Vamos a ver lo valiente que eres.
 dlga_town_dweller_brawl_confirm:close_window.1|No, te he confundido con otro.
 dlga_town_dweller_talk:close_window|[Irse]
 dlga_start:player_castle_guard_talk|¿Sí, capitán?
@@ -1036,21 +1036,21 @@ dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Todo en calma, capit�
 dlga_player_castle_guard_talk_3:close_window|Bien. Mantén los ojos bien abiertos.
 dlga_start:close_window.26|Buenos días, capitán. Me alegra contar con tu presencia aquí, en {s10}.
 dlga_start:close_window.27|Cuida tus modales y no tendremos ningún problema.
-dlga_start:hall_guard_easter_egg|Ah, acaba de pasar la medianoche. ¿Sabes?, hace poco sucedió algo extraño. ¿Quieres escucharlo?
+dlga_start:hall_guard_easter_egg|Ah, acaba de pasar la medianoche. ¿Sabes qué?, hace poco sucedió algo de lo más extraño. ¿Quieres escucharlo?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Sí, por favor.
-dlga_hall_guard_easter_egg:close_window|No me interesan las habladurías.
+dlga_hall_guard_easter_egg:close_window|No, me suena a tontería.
 dlga_hall_guard_easter_egg_scene:close_window|Bueno... un grupo muy poco común de aventureros apareció por aquí hace poco: un hombre, un enano y un elfo, y entonces...
 dlga_start:hall_guard_talk|¿Cuáles son tus órdenes, capitán?
-dlga_start:close_window.28|No se nos permite hablar mientras estamos de guardia, capitán.
+dlga_start:close_window.28|No se nos permite hablar mientras estemos de guardia, capitán.
 dlga_hall_guard_talk:hall_guard_duty|Permaneced alerta y hacedme saber si alguien viene a verme.
 dlga_hall_guard_duty:close_window|Sí, capitán. Como ordenes.
 dlga_hall_guard_talk:hall_guard_arrest|¡Quiero que arrestéis a este hombre inmediatamente!
 dlga_hall_guard_arrest:hall_guard_arrest_2|¿A quién quieres arrestar, capitán?
 dlga_hall_guard_arrest_2:close_window|Ah, perdonad mi fervor, muchachos.
-dlga_hall_guard_arrest_2:close_window.1|Olvídalo. Encontraré otra forma de solucionarlo.
-dlga_enemy_defeated:close_window|¡Argg! Odio esto.
+dlga_hall_guard_arrest_2:close_window.1|Olvídalo. Ya buscaré yo la solución.
+dlga_enemy_defeated:close_window|¡Argg! Esto es insoportable.
 dlga_party_relieved:close_window|Gracias por ayudarnos a acabar con esos bastardos.
-dlga_start:battle_reason_stated|¡Beberé vuestra sangre!
+dlga_start:battle_reason_stated|¡Beberé de vuestra blanca calavera!
 dlga_member_chat_00:close_window.1|^^¡GRRRR!^^
 dlga_member_chat_00:close_window.2|^^Grrarrrr.....^^
 dlga_member_chat_00:regular_member_talk|¿Cuáles son tus órdenes, capitán?

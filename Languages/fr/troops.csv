@@ -487,7 +487,7 @@ trp_c2_harondor_scout_pl|Éclaireurs de l'Harondor
 trp_c3_harondor_rider|Cavalier de l'Harondor
 trp_c3_harondor_rider_pl|Cavaliers de l'Harondor
 trp_c4_harondor_light_cavalry|Cavalier léger de l'Harondor
-; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
+trp_c4_harondor_light_cavalry_pl|Cavaliers légers de l'Harondor
 trp_c5_harondor_serpent_knight|Chevalier du Serpent d'Or
 trp_c5_harondor_serpent_knight_pl|Chevaliers du Serpent d'Or
 trp_ac3_harondor_skirmisher|Tirailleur du Harondor
@@ -518,8 +518,8 @@ trp_i4_dun_wolf_warrior|Guerrier du Loup du Pays de Dun
 trp_i4_dun_wolf_warrior_pl|Guerriers du Loup du Pays de Dun
 trp_i5_dun_wolf_guard|Garde du Loup du Pays de Dun
 trp_i5_dun_wolf_guard_pl|Gardes du Loup du Pays de Dun
-; trp_ac5_dun_raven_rider|Dunnish Night Raven
-; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
+trp_ac5_dun_raven_rider|Corbeau de Nuit du Pays de Dun
+trp_ac5_dun_raven_rider_pl|Corbeaux de Nuit du Pays de Dun
 trp_i1_khand_bondsman|Serf Khand
 trp_i1_khand_bondsman_pl|Mercenaire Khand
 trp_i2_khand_pit_dog|Chien de fosse Khand 
@@ -537,9 +537,9 @@ trp_c3_khand_horseman_pl|Cavaliers de Khand
 trp_c4_khand_heavy_horseman|Cavalier lourd de Khand 
 trp_c4_khand_heavy_horseman_pl|Cavaliers lourds de Khand 
 trp_c5_khand_kataphrakt|Variag cuirassé
-; trp_c5_khand_kataphrakt_pl|Variag Ironclads
+trp_c5_khand_kataphrakt_pl|Variags cuirassés
 trp_c5_khand_lance_kataphrakt|Lancier Variag
-; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
+trp_c5_khand_lance_kataphrakt_pl|Lanciers Variags
 trp_i4_khand_halberdier|Épéiste du Khand
 trp_i4_khand_halberdier_pl|Épéistes du Khand
 trp_i5_khand_halberd_master|Maître hallebardier Variag

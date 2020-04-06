@@ -634,7 +634,7 @@ qstr_Some_of_your_troops_|Birliklerinizin bazıları muharebeden kaçıyor.
 qstr_A_few_of_your_troops|Birliklerinizin birazı muharebeden kaçıyor.
 qstr_Gained_permanent_+1_to_P|+1 Taktik Kalıcı olarak kazanıldı.
 qstr_Gained_permanent_+1_to_S|+1 Güç Kalıcı olarak kazanıldı.
-qstr_{s11}_recovered_from|{s1} agır bir yaradan kurtuldu.
+qstr_{s11}_recovered_from|{s11} agır bir yaradan kurtuldu.
 qstr_Volunteers|Gönüllüler
 qstr_Reserves|Rezervler
 qstr_have_taken_measure_o|Klanınızın güncel gücünü ölçtü ve büyüdü.
@@ -661,7 +661,7 @@ qstr_Inventory|Envanter
 qstr_Show_stats|İstatistikleri göster
 qstr_Show_item_details__|Eşya ayrıntılarını göster
 qstr_Troop_detail|Birim Detayları
-qstr_{s1}^|{s1}^\n
+qstr_{s1}^|{s1}^
 qstr_{s1}Level:_{reg1}^|{s1}Level: {reg1}^
 qstr_{s1}Hit_Points:_{reg|{s1}Hasar puanı: {reg1}
 qstr_{s1}Atributes:_^___S|{s1}Özellikler: ^   Güç:^
@@ -678,9 +678,9 @@ qstr_{s1}___Power_Throw:^|{s1} Güçlü Fırlatma:^
 qstr_{s1}___Power_Draw:^^|{s1} Güçlü Germe:^^
 qstr_{s2}{reg1}^^|{s2}{reg1}^^
 qstr_{s2}_^^|{s2}-^^
-qstr_{s1}Weapons:^|[s1]Silahlar:^
-qstr_{s1}___One_Handed:^|[s1] Tek El:^
-qstr_{s1}___Two_Handed:^|[s1] Çift El:^
+qstr_{s1}Weapons:^|{s1}Silahlar:^
+qstr_{s1}___One_Handed:^|{s1} Tek Elli:^
+qstr_{s1}___Two_Handed:^|{s1} Çift Elli:^
 qstr_{s1}___Polearms:^|{s1} Gönderli Silah:^
 qstr_{s1}___Archery:^|{s1} Okçuluk:^
 qstr_{s1}___Crossbow:^|{s1} Arbalet:^
@@ -694,7 +694,7 @@ qstr_ready_two_hander|Çift Elli Silah hazırlayın
 qstr_ready_polearms|Gönderli silahları hazır!
 qstr_shields_up|Kalkanlar Yukarı
 qstr_doff_shields|Kalkanları indirin
-qstr_Distance___{reg70}__|Mesafe - {reg70} - {s11} Parti - {s12} Ünite\n
+qstr_Distance___{reg70}__|Mesafe - {reg70} - {s11} Grup - {s12} Asker
 qstr_A_golden_mist_from_L|Lórien'den altın bir sis savaş alanını kapatıyor. Birlikleriniz, Leydi'nin varlıgı ile cesaretlendirilmiş hissediyor.
 qstr_A_golden_mist_from_Lr|Lórien'den altın bir sis savaş alanını kapsıyor. Cadı yakınlarda, sen ve askerlerin omurganızda bir ürperti hissediyorsunuz.
 qstr_Dark_clouds_from_Mor|Mordor'dan gelen kara bulutlar savaş alanını örtüyor. Okçularınız düşmanı görmekte zorlanıyorlar ve kötülügün varlıgı adamlarınızı korkutuyor.
@@ -730,7 +730,7 @@ qstr_{reg2?You_strike:You|{reg2?You strike:Your horse charges} {reg1} için bonu
 qstr_Division_Placement|Birlik Yerleşimi
 qstr_Complex_Formations|Karmaşık Formasyonlar
 qstr_Formations_turned_OF|Formasyonlar ayarlar menusunden kapandı.
-qstr_Division_{reg1}_{s2}_g|Bölük {reg1} {s2} ezberlenmiş pozisyona dogru ilerler...\n
+qstr_Division_{reg1}_{s2}_g|Bölük {reg1} {s2} bilinen pozisyona dogru ilerliyor...
 qstr_Division_{reg1}_{s2}_f|{reg1} . Kuvvetler {s2} çizgi oluşturdu(Ezberlendi)
 qstr_Division_{reg1}_{s2}_fo|{reg1}. Kuvvetleri {s2} {reg0} Tane Çizgi oluşturdu(Ezberlendi).
 qstr_DEBUG__Health_Regen_|DEBUG (Can Yenileme): {s1}  {reg0}% can kazandı.  = +{reg1}% STR

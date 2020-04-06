@@ -169,7 +169,7 @@ dlga_player_hire_troop:close_window|Chciał{/a}bym przeprowdzić inspekcję tu s
 ; dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
 ; dlga_player_hire_trolls_take:player_hire_trolls_how_many|It will cost {reg21} influence.
 ; dlga_player_hire_trolls_take:close_window.2|I’ve changed my mind.
-; dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|A fearsome beast. And now, it is mine!
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Przerażająca bestia. A teraz, jest moja!
 ; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
 ; dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
 ; dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|I’ve changed my mind.
