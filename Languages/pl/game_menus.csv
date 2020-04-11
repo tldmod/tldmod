@@ -254,7 +254,7 @@ mno_moria_exit_scene|Znajdź drogę powrotną!
 menu_castle_outside|W pobliżu znajduje się {s2}.{s11} {s3} {s4}
 mno_moria_enter|Wróć do głównej sali Morii przez sekretne wejście.
 mno_moria_enter_door|Wejdź do Morii.
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|Zabierz księgę.
 mno_castle_start_siege|Oblegaj {reg6?miasto:zamek}.
 mno_castle_leave|Odejdź.
 menu_castle_besiege|Oblegasz {s1}. {s2} {s3}
@@ -301,7 +301,7 @@ mno_dwarven_warehouse_door|Wejdź do magazynu Krasnoludów
 mno_talk_to_castle_commander|Odwiedź baraki.
 mno_speak_with_elder|Rozmawiaj z miejscowymi władzami.
 mno_isengard_underground|Udaj się do podziemnych jaskini.
-; mno_isengard_underground_door|Go to the underground caverns
+mno_isengard_underground_door|Wejdź do podziemnych jaskiń
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
 mno_erebor_gates|Odwiedź Wielką Bramę
 mno_town_leave|Odejdź...
@@ -346,7 +346,7 @@ menu_player_added_to_war_council|^^^^^Przyszedł i poinformował, że teraz, jak
 mno_player_added_to_war_council_close|Zamknij
 menu_player_added_to_siege_reports|^^^^A powiadomił Cię, że teraz, jako {s24}, będziesz otrzymywać raporty, gdy {s2} oblężymy centrum lub gdy centra {s2} będą oblężone.
 mno_player_added_to_siege_reports_close|Zamknij
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|Przybył posłaniec i powiedział, że możesz teraz, jako {s24}, rozkazać {s2} podążać za tobą, towarzyszyć armii może maksymalnie {reg55} oddziałów
 mno_player_added_to_allow_follow_close|Zamknij
 menu_center_besieged_event|^^^^Wiadomość informująca, że {s1} było oblężone przez {s2} z {s3}.
 mno_center_besieged_event_close|Zamknij

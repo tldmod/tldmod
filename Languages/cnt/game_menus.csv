@@ -4,7 +4,7 @@ mno_start_evil|人 類 的 黃 昏
 mno_faction_intros|了 解 中 土 世 界 不 同 的 派 系
 mno_go_bback|後 退 
 menu_start_phase_2|^^^^^ 中 土 世 界。 黑 暗 的 陰 影 正 在 東 方 蔓 延 ·· ^潛 伏 了 近 一 個 紀 元 的 邪 惡 勢 力 重 現 世 間 。 ^中 土 的 自 由 之 人 類 是 否 可 以 再 一 次 戰 勝 黑 暗 。 ^人 類 、 精 靈 、 矮 人 和 獸 人 ， 各 種 勢 力 在 這 里 繼 續 角 逐 ^^現 在， 善 良 與 邪 惡 的 戰 爭 即 將 拉 開 帷 幕 ... 
-mno_go_forth|往你選擇的道路前進
+mno_go_forth|往 你 選 擇 的 道 路 前 進...
 mno_change_tld_options|修 改 TLD 選 項
 menu_start_game_3|^^^^^^^^選 擇 你 的 戰 役 ： 
 mno_custom_battle_scenario_1|小 規 模 戰 役 ， 剛 鐸 vs哈 拉 德 
@@ -106,8 +106,8 @@ mno_start_2_hib|貴 族
 menu_start_haradrim|^^^^^^^你 是 一 名 哈 拉 德 人 ， ^沙 漠 之 民 。 ^選 擇 你 的 出 身 
 mno_start_1_des|沙 漠 人
 mno_start_2_far|遙 遠 哈 拉 德 威 治 部 落 成 員 
-menu_start_numenorean|^^^^^^^你 是 黑 努 美 諾 爾 ，^忠 於 黑 暗 和 魔 苟 斯 。^選 擇 你 服 務 的 地 方
-mno_start_1_bn|在 黑 門 附 近 的 索 倫 之 口
+menu_start_numenorean|^^^^^^^你 是 黑 努 美 諾 爾 人，^忠 於 黑 暗 和 魔 苟 斯 。^選 擇 你 服 務 邪 眼 的 地 方
+mno_start_1_bn|在 黑 門 的 索 倫 之 口 身 旁
 mno_start_2_bn|在 死 靈 法 師 的 堡 壘 ， 多 爾 哥 多
 menu_choose_gender|^^^^^^^^^^你 的 性 別 ？ 
 mno_start_male|男 
@@ -202,7 +202,7 @@ mno_special_whip|往 前 衝 突 破 {s4}。
 mno_encounter_leave|不 打 了。
 mno_encounter_retreat|撤 退 ， 留 下 一 些 士 兵 掩 護 主 力 撤 退 。 
 mno_player_control_allies_simple|指 揮 他 們 向 敵 人 進 攻
-mno_player_control_allies_back|回 去 ...
+mno_player_control_allies_back|返 回...
 mno_hide_close|繼 續 ...
 menu_encounter_retreat_confirm|^^^^^隊 員 中 最 高 戰 術 技 能 為 ({reg2}) 級 ，{reg3?你 擬 定 :{s3}擬 定 }了 一 個 計 劃 ， 讓 你 和 你 的 主 力 部 隊 能 逃 離 戰 鬥 。 但 是 你 必 須 犧 牲 {reg4}名 士 兵 來 進 行 掩 護 。 
 mno_leave_behind|實 行 計 劃， 犧 牲 那 些 人 來 拯 救 其 他  人 。  
@@ -254,7 +254,7 @@ mno_moria_exit_scene|找 到 你 的 出 路 ！
 menu_castle_outside|你 在 {s2}的 外 面 。 {s11} {s3} {s4}
 mno_moria_enter|從 秘 密 入 口 回 到 摩 瑞 亞 的 主 殿 
 mno_moria_enter_door|進 入 摩 瑞 亞 
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|拿 起 書
 mno_castle_start_siege|圍 攻 這 個 {reg6?城 鎮 :城 堡 }。 
 mno_castle_leave|離 開 
 menu_castle_besiege|你 正 在 圍 攻 {s1}。 {s2} {s3}
@@ -301,7 +301,7 @@ mno_dwarven_warehouse_door|進 入 矮 人 倉 庫
 mno_talk_to_castle_commander|訪 問 {s61}兵 營 
 mno_speak_with_elder|與 {s6}談 話 
 mno_isengard_underground|前 往 地 底 洞 穴 
-; mno_isengard_underground_door|Go to the underground caverns
+mno_isengard_underground_door|前 往 地 底 洞 穴 
 mno_tirith_toplevel|爬 到 最 上 層 
 mno_erebor_gates|前 往 榮 耀 大 門 。
 mno_town_leave|離 開 ...
@@ -346,7 +346,7 @@ menu_player_added_to_war_council|^^^^^一 位 信 差 抵 達 並 告 訴 你，
 mno_player_added_to_war_council_close|關 閉
 menu_player_added_to_siege_reports|^^^^^一 位 信 差 抵 達 並 告 訴 你， 作 為 {s24}， 每 當 {s2} 攻 擊 一 個 中 心 或 {s2} 的 中 心 受 到 攻 擊 時，你 將 收 到 報 告。
 mno_player_added_to_siege_reports_close|關 閉
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^一 位 信 差 抵 達 並 告 訴 你， 作 為 {s24}，你 將 可 以 命 令 {s2} 跟 隨 你， 跟 隨 者 的 上 限 是 {reg55} 人
 mno_player_added_to_allow_follow_close|關 閉
 menu_center_besieged_event|^^^^^一 位 信 差 抵 達 並 報 告 {s1} 正 被 {s3} 的 {s2} 攻 打
 mno_center_besieged_event_close|關 閉

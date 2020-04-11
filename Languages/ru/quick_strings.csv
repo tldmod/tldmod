@@ -946,7 +946,7 @@ qstr_^^Ally_Casualties:{s|^^Потери союзников:{s0}
 ; qstr_You_and_{s3}_celebra|You and {s3} celebrate your victory against {s4}.
 qstr_News_of_your_victory|В {s3} пришли вести о том, что отряд державы {s4} разгромлен вашим войском.
 qstr_{s3}_witnesses_your_|{s4} побеждён вами, и {s3} стал свидетелем этого.
-; qstr_Even_though_there_we|Even though there were no allies to witness your victory, your troops nevertheless celebrate your triumph.
+qstr_Even_though_there_we|хотя не было союзников, чтобы засвидетельствовать вашу победу, ваши войска, тем не менее, празднуют вашу победу
 qstr_{s1}_of_{s3}_managed|{s1} из державы {s3} сумел сбежать.
 qstr_Prisoners_rescued_so|Освобождённые пленники: {reg1}
 ; qstr_{reg1}_kills_of_{s1}|{reg1} kills of {s1} faction troops counted towards Oath. TOTAL Kills: {reg0}
@@ -1004,15 +1004,15 @@ qstr_{s11}_{s13}|{s11}, {s13}
 ; qstr_two_scout_parties_and|two scout parties and a raider party from {s3}
 ; qstr_three_scouts_two_for|three scouts, two foragers, and a patrol from {s3}
 ; qstr_three_scouts_two_rai|three scouts, two raiders, and a war party from {s3}
-; qstr_You_see_the_village_|You see the village being raided by bandits. You ask most of your troops to watch out for other raiders while you take a small group and prepare to defend villagers.
-; qstr_You_see_the_village_y|You see the village you were tasked to raid. You and a small group of your raiders prepare to attack the village so as not to be seen.
+qstr_You_see_the_village_|Вы видите, как на деревню нападают бандиты. Вы просите большинство ваших войск, чтобы следить за другими рейдерами в то время как вы берете небольшую группу и подготовиться к защите жителей деревни.
+qstr_You_see_the_village_y|Вы видите деревню, на которою вам было поручено напасть. Вы и небольшая группа ваших рейдеров готовитесь напасть на деревню, чтобы не быть замеченным.
 qstr_The_raiders_are_defe|Грабители разбиты! Те из них, которым посчастливилось остаться на ногах, улепётывают во тьму, из которой явились, устрашенные гневом жителей деревни и их новым защитником. 
 qstr_Try_as_you_might_you|Хоть вы и пытались, но всё же не смогли победить грабителей. Они сровняли деревню с землей, и увели оставшихся крестьян в рабство.
 qstr_The_village_has_been|Деревню сровняли с землей, а жителей захватили в плен. Тёмный Властелин будет удовлетворён.
 qstr_You_failed_to_raid_t|Вы не смогли разграбить деревню и убегаете в страхе вместе со своими воинами. Вы слышите боевые кличи победителей и ощущаете на себе неодобрительный взгляд Ока.
-; qstr_The_Scout_Camp_has_b|The Scout Camp has been razed, This will slow the advance of the enemy.
-; qstr_You_failed_to_destro|You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly stuck.
-; qstr_You_have_defeated_the|You have defeated the raiding fleet! This is a heavy blow to the enemy's plans!
+qstr_The_Scout_Camp_has_b|Лагерь наблюдателей был разрушен, это замедлит продвижение противника.
+qstr_You_failed_to_destro|вы не смогли уничтожить лагерь наблюдателей. Враг принял меры вашей фракции и решительно ударил.
+qstr_You_have_defeated_the|Вы победили рейдерский флот! Это тяжелый удар по планам противника!
 ; qstr_You_defeated_the_int|You defeated the intercepting fleet! Even though you do not have enough strength left to raid the city, this is a great victory!
 ; qstr_You_drove_back_the_e|You drove back the enemy fleet, but lost most of your ships!
 ; qstr_You_were_defeated_by|You were defeated by the intercepting fleet and failed to raid the city!

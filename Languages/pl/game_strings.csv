@@ -248,7 +248,7 @@ str_persuasion_summary_bad|Starasz się mówić przekonywująco, ale {reg51?a:} 
 str_persuasion_summary_average|{s50} okazuje się mieć bystry umysł oraz talent mówcy i nie udaje ci się podać ani jednego mocnego argumentu, którego {reg51?ona:on} by nie obalił{reg51?a:} racjonalnym myśleniem. W końcu, ani tobie, ani {reg51?jej:jemu} nie udaje się przekonać strony przeciwnej do swych racji.
 str_persuasion_summary_good|Dzięki szybkiemu myśleniu i dobrej argumentacji, udało ci się świetnie przedstawić sprawę, a {s50} przyznaje ci rację w kilku przypadkach. Dalej jednak wyraża wątpliwości co twej prośby.
 str_persuasion_summary_very_good|Wygłaszasz namiętną przemowę, która w uszach wszystkich słuchających osób odbija się echem, niczym poezja. Cały świat zdał się na chwilę zamilknąć, by lepiej cię usłyszeć. {s50} wydaje się poruszon{reg51?a:y} twymi słowami i znacznie bardziej skłonn{reg51?a:y} ci pomóc.
-; str_name_1|Adanedhel
+str_name_1|Adanedhel
 ; str_name_2|Ondoher
 ; str_name_3|Aerandir
 ; str_name_4|Agarwaen
@@ -564,7 +564,7 @@ str_npc15_intro|Chwała oku, wojowniku!
 str_npc16_intro|Nie często widzę nieznajomego spacerującego pośród namiotów wschodnich ziem. Co Cię tu sprowadza? Mów szybko.
 str_npc17_intro|Cześć. Czy podobają ci się tutejsze lasy ?
 str_npc1_intro_response_1|Witaj, Tropicielu. Jak miewają się Strażnicy z Południa?
-str_npc2_intro_response_1|Mój interes jest interesem Gondoru, kim ty jesteś?
+str_npc2_intro_response_1|Mój interes jest interesem Gondoru, a kim ty jesteś?
 str_npc3_intro_response_1|Również cię pozdrawia, czy wydarzyło się coś niepokojącego?
 str_npc4_intro_response_1|Witaj, moja Pani. Z kim mam honor rozmawiać?
 str_npc5_intro_response_1|Witaj elfi Władco! To wielki zaszczyt móc cię spotkać
@@ -598,15 +598,15 @@ str_npc15_intro_response_2|Hmmf. Trzymaj swoje małe łapy przy sobie, Snago.
 str_npc16_intro_response_2|Pilnuj swoich własnych spraw!
 str_npc17_intro_response_2|Tak, te lasy są cudowne, lecz muszę już iść.
 str_npc1_backstory_a|Przybywasz w nieodpowiedniej chwili, przyjacielu. Ithilien jest przepełnione wrogimi najeźdzcami i zwiadowcami, a niektórzy widzieli także wielkie bandy orków. Próbujemy nie pozwolić tym potworą przejść przez Wielką Rzekę, co wielokrotnie nam się udało . Kapitan Faramir jest odważny i dzięki niemu nie złamiemy się przed Cieniem. 
-str_npc2_backstory_a|Ah, jakże mi miło że chcesz o mnie wiedzieć więcej. Zostałem ostatnio mianowany strażnikiem komnat Jego Mości Zarządcy, jest to godna służba, nawet jeśli nie dzieje się zbyt wiele.
+str_npc2_backstory_a|Ah, jakże mi miło że chcesz o mnie wiedzieć więcej. Zostałem ostatnio mianowany strażnikiem komnat Namiestnika, jest to godna służba, nawet jeśli nie dzieje się zbyt wiele.
 str_npc3_backstory_a|Cóż, mój stary hełm tutaj jest coraz mniejszy z minuty na minutę , a ziemia wydaje chwiejne jakbym jechał złośliwy folię . Ach, gdybym tylko nie pił całe to piwo w nocy - I zwykle mam dobrą głowę do picia, więc musi to być rzęsiste ork napar .
 str_npc4_backstory_a|Nazywam się Gálmynë , i ja zrobiłem to moja sprawa, wiedzieć twoje {playername} . Pozwól mi wyjaśnić , dlaczego.
 str_npc5_backstory_a|Być może słyszeliście opowieści o moich czynach w bitwach przeszłości i zapomniane przez śmiertelnych ludzi . W pełni czasów tej wojny jest jeszcze inny czas niebezpieczeństwa dla Eldarów , ale będzie to ostatnia wojna .
 str_npc6_backstory_a|\nPrzepraszam za moją zuchwałość , obcy , ale nie mamy wielu turystów tutaj i te, które pochodzą nie wyglądają bardzo wiarygodnie. Zaledwie tydzień temu , ten karzeł pojawił się i ... Nieważne . Nazywam się Luevanna , z leśnych elfów z Mrocznej Puszczy ..
-str_npc7_backstory_a|Uprzejmy chcę was zapytać , {playername} . Walczymy off wtargnięcia z Easterlingów i orków Gundabad , ale do tej pory nic nie my i nasi sojusznicy Dale nie może obsłużyć .
-str_npc8_backstory_a|Jestem pewien, że można znaleźć kilka drobnych wolontariuszy jeśli mówić do kwatermistrza w koszarach . Jeśli chodzi o mnie , jestem tylko uzdrowicielem i zielarz od skromnych umiejętności.
+str_npc7_backstory_a|Dziękuję, że pytasz, {playername} . Nękają nas najazdy Easterlingów i orków z Gundabadu, ale do tej pory ani my ani nasi sojusznicy z Dale nie możemy sobie z nimi poradzić.
+str_npc8_backstory_a|Jestem pewien, że można znaleźć kilku chętnych, jeśli pomówisz z kwatermistrzem w koszarach. Jeśli chodzi o mnie, jestem tylko skromnym uzdrowicielem.
 str_npc9_backstory_a|Masz szczęście! Nazywają mnie Gulm. Wypatroszyłem mojego sierżanta i teraz jego sługi polują na mnie. Ten bezwartościowy knur wiedział że to nadejdzie! Raz, gdy wpadliśmy w zasadzkę słomogłowych. A on to przegrał. "Odwrót" krzyczał, a potem uciekł. Tylko Gulm i kilku innych stało niewzruszenie i przełamało ich szarżę. Po tym już tylko zrobiliśmy miazgę z blondynów (heh heh heh). Ale gdyby nie my silni, wszyscy bylibyśmy pokarmem dla robali.
-str_npc10_backstory_a|I jestem Durgash
+str_npc10_backstory_a|Jestem Durgash
 str_npc11_backstory_a|They call me Ufthak! My unit is dead and gone to worms. If you need a warrior, it is me.
 str_npc12_backstory_a|I am Gorbag!
 str_npc13_backstory_a|I am Lykyada!
@@ -615,23 +615,23 @@ str_npc15_backstory_a|I am Bolzog!
 str_npc16_backstory_a|Cóż, teraz to nieznajomy powinien się najpierw zadeklarować. Jestem jednak Varfangiem rodziny Balchoth. . . Mogę powiedzieć, że jeszcze nie słyszeliście pieśni lub opowieści z mojej ziemi, które mówią o Balchocie, ponieważ samo to imię sprawdziłoby waszą odwagę i napełniło wasze serce bólem.
 str_npc17_backstory_a|Nazywają mnie Dímborn i pracuję w lesie. Miło jest tam. Lubię lasy . Wiele drzew w lesie. Lubię drzewa. Pracowałem już w lesie przez całe moje życie , bo jestem silna i ponieważ lubię drzew.
 str_npc1_backstory_b|Powinieneś wiedzieć, że jestem Ithilien Ranger of dunedaińskich opadania i męstwa . Wiem, że dużo śledzenia i harcerstwa i moje umiejętności w łuk i miecz jest znany orka . Mogę również trenować każdą duszę , która jest skłonna do walki pochodzących cień.
-str_npc2_backstory_b|\nI został przeszkolony jako stróż Minas Tirith , aby utrzymać porządek w White City i służyć mój Lord Steward .
+str_npc2_backstory_b|\nSzkoliłem się na strażnika Minas Tirith, aby utrzymać porządek w Białym Mieście i służyć Namiestnikowi .
 str_npc3_backstory_b|Jestem jeźdźcem Westfold éored - wyjechali beze mnie na długi patrol do stadniny Isen. Wiem, że ich zachowanie będzie godne zielonego sztandaru, ale obawiam się, że wielu z nich nie wróci
 str_npc4_backstory_b|\nUrodziłam się w rodzinie szlacheckiej i służyłam Lady Eowinie jako towarzyszka odkąd byłyśmy dziećmi. Nasi ojcowie byli na tyle mądrzy, aby umożliwić nam trenowanie sztuki wojennej u boku naszych braci. Tak  zostałyśmy wojowniczkami Rohanu .
-str_npc5_backstory_b|Lord Erlond posłał mnie jako emisariusz do Lord Celeborna , w celu uzyskania pomocy i porady, jak jest to potrzebne w wojnie w tej części Rhovanionu .
-str_npc6_backstory_b|Lubię chodzić ukrytymi ścieżkami w naszym pięknym lesie. Czasami poruszać się cicho przez drzewa i obserwować zwyczaje wielu leśnych zwierząt. Piosenka rzadkiego ptaka , gniazdowania z dzika są tak piękne do mnie jak zderzenie broni i wielkich ścianach mają Edainów .
-str_npc7_backstory_b|\nI pomógł poprawić obronę Ereboru i przeszkoleni trochę młodszego krasnoludzkiego ludowej, pod kierunkiem mój czcigodny ojciec Dwalin , jak to mamy w zwyczaju .
-str_npc8_backstory_b|\nMam traktować mojego króla Marka na zaparcia , wspólne złe samopoczucie wpływa ludzi idzie na wojnę. Światło napar z piołunu , a obie wnętrzności i umysł są wprowadzane swobodnie.
+str_npc5_backstory_b|Lord Elrond posłał mnie jako emisariusza do Lorda Celeborna, abym wspomógł go mieczem oraz radą podczas wojny w tej części Rhovanionu .
+str_npc6_backstory_b|Lubię chodzić ukrytymi ścieżkami w naszym pięknym lesie. Czasami przemykam wśród drzew i obserwuję zwyczaje leśnych zwierząt. Śpiew rzadkiego ptaka, legowisko dzika są dla mnie tak piękne jak szczęk broni i potężne mury dla Edainów .
+str_npc7_backstory_b|Pomagałem przy umocnieniach Ereboru i szkoliłem młodych krasnoludów, pod czujnym okiem mojego czcigodnego ojca Dwalina, to u nas tradycja
+str_npc8_backstory_b|Leczyłem króla Branda na zaparcia, częstą dolegliwość idących na wojnę.  Łyk naparu z piołunu i zarówno wnętrzności jak umysł są wolne od problemu
 str_npc9_backstory_b|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.
-str_npc10_backstory_b|Jestem Wilczym Jeźdzcem z Isengardu oraz trackera .
+str_npc10_backstory_b|Jestem Wilczym Jeźdzcem z Isengardu oraz jednym ze zwiadowców.
 str_npc11_backstory_b|You should know that I am an Orc Snaga in service to the Great Eye. I will kill for you!
 str_npc12_backstory_b|I am an Uruk Slayer of Mordor.
 str_npc13_backstory_b|I am a Gold Serpent Horse Archer.
 str_npc14_backstory_b|I am an Umbar Sailor.
 str_npc15_backstory_b|I am a Snaga of Moria and a healer.
 str_npc16_backstory_b|Balchot był zaciętą rasą mężczyzn z mojej ojczyzny, zabitych przez te dziwaki wszystkim z wyjątkiem kilku mężczyzn. Ścigał się jak bestie ciężkie jak jedzenie dla swoich ostrzy. Krew przelana przez te ostrza jest tą samą krwią, która płynie we mnie, bo w moim domu trwa.
-str_npc17_backstory_b|Można zrobić wiele rzeczy z drzew , wiesz. To , co robię. Pracuję z drzew i dokonać rzeczy z drzew . Czasami także krzewy . Ale lubię drzew więcej .
-str_npc1_backstory_c|\nJednak obawiam się , że są beznadziejnie liczniejsze tu w Ithilien , a my nie potrwa długo bez wzmocnień lub bardziej zdecydowanym działaniem przez nasz Steward . Równie dobrze mogę pomóc , gdzie moje działania będą stanowić więcej , jeśli mój kapitanie Faramir daje mi odejść.
+str_npc17_backstory_b|Można zrobić wiele rzeczy z drzew. Na tym polega moja praca. Zajmuję się drzewami, a potem robię z nich przedmioty. Czasami też z krzewów, ale wolę jednak inne drewno.
+str_npc1_backstory_c|Jednak obawiam się, że jest nas zbyt mało w Ithilien, a nie utrzymamy się dłużej bez posiłków lub zdecydowanego działania  ze strony Namiestnika. Mogę jechać, tam gdzie bardziej przyda się moja pomoc, ale tylko jeśli kapitan Faramir na to pozwoli.
 str_npc2_backstory_c|However important my duty here is, I'm quite anxious to see real combat and... elves and talking trees and oliphants! You seem well-travelled, commander, and I don't mean that as a slight on your appearance, not by a fathom. I learn quickly and can cook... well, good enough for soldiers that is. Am I not mistaken that you are looking for volunteers?
 str_npc3_backstory_c|Oto i ja zhańbiony i zgorzkniały. Mój éored jest już pewnie daleko stąd i pewnie nie będę miał jak do nich dołączyć - na pewno nie z tyloma orkami i dzikusami plądrującymi te równiny. Być może potrzebujesz w swej drużynie jeźdźca Rohirrimskiego?
 str_npc4_backstory_c|Pewnie jesteś świadom, iż niewiasty, jakkolwiek pełne talentów, nie mają prawa podróżować z éoredami. Niemniej, wątpię by czekanie przy palenisku z nadzieją, że wojownicy powrócą jest mym przeznaczeniem. Nie będę siedziała bezczynnie aż wszystkie me szanse na dobre czyny przepadną wraz z końcem wojny! Z przyjemnością przyjmę cię jako mego kompana, wojowniku.
@@ -648,7 +648,7 @@ str_npc14_backstory_c|Maybe you can be my next Captain.
 str_npc15_backstory_c|Maybe you can be my next master.
 str_npc16_backstory_c|Maybe you can be my next Chieftain.
 str_npc17_backstory_c|Jeżeli wybierasz się do lasu, to może mógłbym pójść z tobą? Tam jest wiele interesujących drzew, wiesz? Mógłbym ci wiele o nich opowiedzieć.
-str_npc1_backstory_later|Przeprowadziłem zwiady na południu, aż do Emyn Arnen. Jest tam duża aktywność Wroga i wiele orków wpadło w naszą zasadzkę. Niestety, to tylko tyle orkowych głów krąży po wąwozach, widzieliśmy mnóstwo plugawych stworzeń w marszu. Boję się o moje Ithilien i losy Gondoru.
+str_npc1_backstory_later|Dowodziłem wieloma oddziałami zwiadowczymi na południu, aż do Emyn Arnen. Jest tam spora aktywność Wroga i wiele orków wpadło w naszą zasadzkę. Niestety, po wąwozach wciąż kręcą się orkowie, widzieliśmy przemarsz mnóstwa plugawych stworzeń. Boję się o Ithilien i losy Gondoru.
 str_npc2_backstory_later|Mieliśmy zaledwie kilku gości ostatnio, a jeszcze mniej ma zamiar przybyć. Zgaduję że to nie wróży nic dobrego.
 str_npc3_backstory_later|Ciągle brak wieści o moim éoredzie, a chętnym by na orków pojechać.
 str_npc4_backstory_later|Coraz więcej jeźdźców wraca z okaleczonymi ciałami, a ja staram się pomóc gdzie mogę. Jednak wciąż czuję się jak w klatce.
@@ -952,7 +952,7 @@ str_npc17_rehire_speech|Hej. Czas znowu ruszać? Drzewa nie ruszają się wiele.
 str_npc1_home_intro|Kapitanie zbliżamy się do Osgiliath, powinniśmy rozejrzeć się za zarówno druhami jak i za wrogami.
 str_npc2_home_intro|Bądź czujny, dowódco. To musi być Minas Morgul. Czujesz, jakby coś nas obserwowało?
 str_npc3_home_intro|Słowo rady, dowódco. Teraz zbliżamy się do Entwood, a konie stają się niespokojne. Niektórzy nazywają też las Fangorn.
-str_npc4_home_intro|Zatrzymajmy się tu na chwilę, komandorze. Przed nami, między Anduinem i Limightem, znajduje się Pole Celebransa, gdzie Eorl the Young jeździł z pomocą naszych sprzymierzeńców Gondoru.
+str_npc4_home_intro|Zatrzymajmy się tu na chwilę, dowódco. Przed nami, pomiędzy Anduiną i  rzeką Limight, znajdują się Pola Celebrant, gdzie Eorl Młody pojechał na pomoc naszym sprzymierzeńcom z Gondoru.
 str_npc5_home_intro|Daro! To Angrenost i czarna wieża Orthanca. Wiele się zmieniło od czasu, gdy je ostatnio widziałem, a żadna na lepsze.
 str_npc6_home_intro|Wybacz, {playername}. Ścieżki tutaj stały się bardziej poplątane i część z nich prowadzi do ślepych zaułków. Musieliśmy dotrzeć do Dol Guldur.
 str_npc7_home_intro|Oy, kapitanie! To musi być stara droga do wschodniej bramy Khazad-dûm, albo Morii, jak wolisz. W oddali widać błyszczące jezioro Kheled-zâram, a przez chmury trzy wierzchołki znane z łaski tej części Gór Mglistych.
@@ -966,8 +966,8 @@ str_npc14_home_intro|Hej, spójrz!
 str_npc15_home_intro|Hej, spójrz!
 str_npc16_home_intro|Hej, spójrz!
 str_npc17_home_intro|Oooooo, rosną tutaj Mallorny! Nie powinni ich ścinać, one są po prostu zbyt piękne!
-str_npc1_home_description|Kiedyś było to uczciwe miasto, stolica Gondoru, pełna ludzi i śmiechu. Teraz jest opuszczony i zrujnowany, stary Anduin płynie znużonym przez miasto duchów.
-str_npc2_home_description|Nazywał się Minas Ithil wiele lat temu, a historie opowiadane są o tym, jak światło księżyca wypełniało jego wewnętrzne sady srebrnym światłem, a jego ściany lśniły srebrno-białymi. Strażnicy Gondoru przyglądali się murom na wschodzie i trzymali straż za Ephel Dúath.
+str_npc1_home_description|Kiedyś było to piękne miasto, stolica Gondoru, pełna ludzi i śmiechu. Teraz stoi opuszczone i zrujnowane, a stara Anduina płynie powoli przez miasto duchów.
+str_npc2_home_description|Wiele lat temu nazywało się Minas Ithil. Opowiada się o tym, jak światło księżyca wypełniało jego dziedzińce srebrnym światłem, a jego mury lśniły bielą. Strażnicy Gondoru patrolowali posterunki i obserwując Ephel Dúath.
 str_npc3_home_description|Jest gęsty od pni i gałęzi i wszelkiego rodzaju drzew i nie chciałbym się tam wybierać, ponieważ dziwaczne stworzenia wędrują po lesie, nie wszystkie z nich są nieszkodliwe.
 str_npc4_home_description|Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...
 str_npc5_home_description|Raz zbudowane przez Królestwo Południowe, obecnie domem dla tego, którego nazywaliśmy Białym Czarodziejem, bez wątpienia knującego, jak zwiększyć jego moc kosztem innych.
@@ -1459,7 +1459,7 @@ str_rohan_rumor_7|Widziałem rasy pustynnych klaczy i konie Variagów. Konie Roh
 str_rohan_rumor_8|Wargowie są wolniejsi od koni, lecz obracają się szybciej. Mogą także delikatnie konkurować z dobrze odżywionym koniem bojowym.
 str_rohan_rumor_9|Armie maszerują na Rohan z pikami i włóczniami do przeciwstawienia się naszej kawalerii. Zdrajca Saruman wytnie cały las Fangorn przygotowując swoje wojska zanim ta wojna się skończy.
 str_rohan_rumor_10|Bycie najlepszym jeźdźcem w kraju zaczyna się od wyszkolenia najlepszych koni.
-str_rohan_rumor_11|Większość koni, które widzisz w Gondorze, pochodzi od nas. Oni wolą nieco silniejszego, wolniejszego konia, który może udźwignąć ich ciężką zbroję.
+str_rohan_rumor_11|Większość koni, które widzisz w Gondorze, pochodzi od nas. Wolą oni nieco silniejsze, lecz wolniejsze, wierzchowce, które będą w stanie udźwignąć ciężką zbroję.
 str_rohan_rumor_12|W Rohanie mówimy, że koń jest jak człowiek. Więc, jeśli koń jest dobry, jest dobry jak człowiek, a jeśli koń jest zły, jest zły jak człowiek. A jeśli koń jest głodny, jest głodny jak człowiek, a jeśli koń jest smutny, jest smutny tak jakby to człowiek był smutny. A my mówimy, że jeśli koń jest szczęśliwy, jest jak człowiek szczęśliwy. Mówimy, że jeśli koń jest zły, to tak, jakby człowiek był zły. Mówimy, że jeśli koń idzie, to idzie tak jak człowiek, mówimy, że jeśli koń jest stary, to jest jak człowiek kiedy jest stary, i mówimy, że jeśli koń jest młody, jest jak  człowiek kiedy jest młody. A jeśli koń jest mały, to jest jak mały człowiek.
 str_rohan_rumor_13|Orki Sarumana są groźne, ale nie noszą silnego pancerza. Nie są żadnym wyzwaniem dla dobrego topora.
 str_rohan_rumor_14|Nasze toporki do miotana i włócznie mogą wydawać się nieporęczne, ale ile masz szans, aby wyrzucić pocisk, zanim dotrze do ciebie wróg? Zrób to licząc, rzucając coś z pewną ilością ciężaru.
@@ -1475,7 +1475,7 @@ str_gondor_rumor_4|My trudzimy nasze ziemie, tak jak robiliśmy to od pokoleń. 
 str_gondor_rumor_5|Zasoby Cienia dla wojny wydają się nieograniczone, ale są ponoszone na tyłach ogromnej puli niewolniczej pracy.
 str_gondor_rumor_6|Wiemy o elfach na północy, ale w dzisiejszych czasach nikt nie wybiera się by je kiedykolwiek zobaczyć.
 str_gondor_rumor_7|Znowu ujrzę Białe Drzewo w kwiecie na dworach królów, a Srebrna Korona powróci, a Minas Tirith w pokoju: Minas Anor znowu jak dawniej, pełna światła, wysoka i piękna, piękna jak królowa wśród innych królowych .
-str_gondor_rumor_8|Dlaczego Umbar ciągle nas najeżdża? Ich korsarze mieli by większy zysk z handlu z nami. Jaka grabież mogłaby się mierzyć z bogactwami które by wynieśli sprzedając stare Numenoriańskie artefakty Gondoriańskiej szlachcie?
+str_gondor_rumor_8|Dlaczego Umbar ciągle nas najeżdża? Ich korsarze mieli by większy zysk z handlu z nami. Jaka grabież mogłaby się mierzyć z bogactwami które by zdobyli sprzedając stare Numenorskie artefakty Gondorskiej szlachcie?
 str_gondor_rumor_9|Wojna musi być, podczas gdy my bronimy naszego życia przed niszczycielem, który pożre wszystko; ale ja nie kocham jasnego miecza za jego ostrość, ani strzały za jej szybkość, ani wojownika za jego chwałę. Kocham tylko to, co oni bronią.
 str_gondor_rumor_10|Gil-galad był królem elfów. Z niego harfiarze smutno śpiewają: ten ostatni, którego królestwo było sprawiedliwe i wolne między Górami a Morzem.
 str_gondor_rumor_11|Dol Guldur? Nigdy o tym nie słyszałem.
@@ -1623,7 +1623,7 @@ str_dale_rumor_10|Nasz dobrobyt pochodzi z handlu z krasnoludami i elfami. Ale c
 str_harad_rumor_begin|Czarny wąż uderzy zwinnie i śmiertelnie.
 str_harad_rumor_2|Na Węża! Nasze bestie wdeptają Gondorczyków w ziemię.
 str_harad_rumor_3|Odum vermajál otí verthaba av daranaja-e-jatánus!  (Morduj i pal za złoto Czarnoksiężnika)
-str_harad_rumor_4|W Gondorze jest masa złota oraz świecidełek. I jeszcze więcej w dalszych ziemiach.
+str_harad_rumor_4|W Gondorze jest masa złota oraz świecidełek. I pewnie jeszcze więcej na ziemiach za nim
 str_harad_rumor_5|Złapiemy słabeuszy z zachodu i złorzymy ich w ofierze Wężowemu Bogu.
 str_harad_rumor_6|Korsarze są użyteczni, umieją dobrze żeglować, ale są brudni i opryszczkowi z wyglądu i podstępni w zachowaniu.
 str_harad_rumor_7|Pantery z Far Harad polują na ofiarę w osłonie nocy. Nasi wrogowie nie zobaczą ich przyjścia. . .
@@ -1891,7 +1891,7 @@ str_fullname_region_unknown|do nienazwanej krainy, gdzieś w Śródziemiu
 str_fullname_region_pelennor|na Pola Pelennoru, równin wokół Minas Tirith, stolicy Królestwa Gondoru
 str_fullname_region_subfac_pelargir|na Lenno Lebenninu, części Królestwa Gondoru
 str_fullname_region_subfac_dol_amroth|Belfalas, nadmorska prowincja na północy gondoru. 
-str_fullname_region_subfac_ethring|do Ringló Vale, kraina Królestwa Gondoru
+str_fullname_region_subfac_ethring|do Ringló Vale, krainy Królestwa Gondoru
 str_fullname_region_subfac_lossarnach|na Lenno Lossarnach, znane również jako Dolina Kwiatów, część Królestwa Gondoru
 str_fullname_region_subfac_pinnath_gelin|na Zielone Wzgórza Pinnath Gelin, krainy Królestwa Gondoru
 str_fullname_region_subfac_blackroot|na Lenno Lamedonu, części Królestwa Gondoru

@@ -1,7 +1,7 @@
 ui_at_learning_limit|(達 到 此 種 族 的 學 習 限 度 )
 ui_not_enough_skill_points_to_learn|(沒 有 足 夠 的 技 能 點 來 學 習 )
 ui_not_enough_attributetype_to_learn_this_skill|(沒 有 足 夠 的 %s來 學 習 這 個 技 能 )
-; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
+ui_explanation_agility|敏 捷 ： 每 一 點 增 加 5 點 武 器 熟 練 度 ， 並 且 提 高 武 器 速 度 0.5%。 下 列 技 能 不 能 超 過 敏 捷 的 1/3： 盾 防 ， 跑 動 ， 武 器 掌 握 ， 騎 術 ， 騎 射 ， 掠 奪 。 
 ui_retreated_battle|已 經 圍 住 %s 。 
 ui_riding_skill_not_adequate_to_mount|(騎 術 太 低 )
 ui_camp|行 動 
@@ -50,35 +50,35 @@ ui_lance_control|騎 槍 控 制:
 ui_manual_easy|手 動 (簡 單)
 ui_manual_hard|手 動 (困 難)
 ui_campaign_ai|戰 略 人 工 智 慧 (未 使 用):
-ui_crouch|蹲下
+ui_crouch|蹲 下
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-ui_are_you_sure_you_want_to_import_the_character|您確定要導入角色？
+ui_are_you_sure_you_want_to_import_the_character|你 確 定 要 導 入 角 色 嗎？
 ui_explanation_strength|力 量：每 一 點 使 你 的 生 命 上 限 +1。以 下 技 能 不 可 超 過 力 量 的 三 分 之 一：鐵 骨，強 擊，強 擲，強 弓。
-; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
-; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
-ui_delivered_number_damage|造成%d點傷害
-ui_mission_losses_killed|被殺
-ui_party_losses|%s :%d負傷 --- %d殺死了%d
-ui_following|跟隨中
-ui_accompanying|隨同
-ui_dumping_value_items|%d物品會永久丟失，確定嗎？
-ui_dumping_value_item|一樣物品會永久丟失，確定嗎？
-ui_notification_requirements_not_met|您不俱備此武器所需的技能或屬性
+ui_explanation_intelligence|智 力：每 一 點 給 予 你 額 外 一 點 技 能 點，並 在 某 些 事 件 下 少 量 提 升 所 得 經 驗 值。以 下 技 能 不 可 超 過 智 力 的 三 分 之 一：教 練，跟 蹤，戰 術，嚮 導，偵 察，物 品 管 理，療 傷，手 術，急 救。
+ui_explanation_charisma|魅 力：每 一 點 使 你 的 隊 伍 上 限 +1。以 下 技 能 不 可 超 過 魅 力 的 三 分 之 一：俘 虜 管 理，綠 野 仙 蹤，統 御，交 易。
+ui_delivered_number_damage|造 成 %d 點 傷 害
+ui_mission_losses_killed|殺 了：
+ui_party_losses|%s：%d 負 傷 --- %d 殺 死 了 %d
+ui_following|跟 隨
+ui_accompanying|隨 同
+ui_dumping_value_items|%d物 品 會 永 久 丟 失，確 定 嗎？
+ui_dumping_value_item|一 樣 物 品 會 永 久 丟 失，確 定 嗎？
+ui_notification_requirements_not_met|你 不 俱 備 此 武 器 所 需 的 技 能 或 屬 性
 ui_disband|遣散
 ui_you_hit_a_friendly_troop|你 擊 中 友 方 部 隊！
-ui_you_are_not_carrying_any_arrows|你沒有任何弓箭
+ui_you_are_not_carrying_any_arrows|你 沒 有 攜 帶 任 何 箭
 ui_delivered_number_damage_to_horse|給 對 方 的 坐 騎 造 成 %d點 傷 害 。 
-ui_received_number_damage|受 到 %d點 傷 害 。 
-ui_you_have_improved_your_proficiency_in_value_to_number|你提高了熟練程度由%s到%d
-ui_your_proficiency_in_value_has_improved_by_number_to_number|你的熟練程度由%s經由＋%d提升到%d
-ui_value_killed_by_value|%s已被%s殺死
-ui_value_knocked_unconscious_by_value|%s被%s擊昏了
-ui_you_got_number_experience|你獲得%d經驗值
-ui_you_have_advanced_to_level_number|你已升級到%d
+ui_received_number_damage|受 到 %d 點 傷 害 。 
+ui_you_have_improved_your_proficiency_in_value_to_number|你 提 高 了 熟 練 程 度 由 %s 到 %d
+ui_your_proficiency_in_value_has_improved_by_number_to_number|你 的 熟 練 程 度 由 %s 經 由 ＋%d 提 升 到 %d
+ui_value_killed_by_value|%s 已 被 %s 殺 死
+ui_value_knocked_unconscious_by_value|%s 被 %s 擊 昏 了
+ui_you_got_number_experience|你 獲 得 %d 經 驗 值
+ui_you_have_advanced_to_level_number|你 已 升 級 到 %d 等
 ui_you_got_value|獲 得  %s。
-ui_quest_succeeded_value|任務達成:%s
+ui_quest_succeeded_value|任 務 達 成 ：%s
 ui_number_of_companions_exceeds_leadership_limit|部隊人數超過你的統御技能
 ui_number_of_prisoners_exceeds_prisoner_management_limit|俘虜人數超過你的俘虜管理技能
 ui_shared_number_experience_within_party|與 隊 伍 分 享 %d 經 驗 值。
@@ -87,7 +87,7 @@ ui_your_relations_with_value_has_deteriorated_from_number_to_number|你與%s關�
 ui_you_lost_value|你損失了%s
 ui_change_graphics_settings_explanation|您進行的某些更改將在您進入新區域時生效。
 ui_game_log_window|遊戲日誌
-ui_blunt_short|B
+ui_blunt_short|b
 ui_tracks|跟蹤
 ui_order_button_hold_fire|停火
 ui_order_button_fire_at_will|自由射擊
@@ -148,5 +148,5 @@ ui_str_hear_me|%s，聽我講！
 ui_return|返回
 ui_factions| 陣 營 
 ui_troop_upgrades|兵 種 升 級
-; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
-; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)
+ui_hdr_mode|HDR 模 式 (  建 議 設 定 為 關 閉 或 低 )：
+ui_autoexpore|自 動 曝 光 ( 如 HDR 已 開 啓，建 議 設 定 為 開 啓 )

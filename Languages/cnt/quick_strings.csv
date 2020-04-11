@@ -216,8 +216,8 @@ qstr_+1_to_Agility|+1 敏 捷
 qstr_+1_to_Leadership|+1 統 御
 qstr_+1_to_Wildcraft|+1 野 外 求 生
 qstr_+1_to_Power_Draw|+1 強 弓
-; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
-; qstr_Who_might_be_interes|Who might be interested in this?
+qstr_The_record_of_Balin_|巴 林 的 失 落 探 險 隊 的 紀 錄
+qstr_Who_might_be_interes|誰 會 對 這 個 有 興 趣？
 qstr_Turns_nature_to_your|將 自 然 轉 化 為 你 的 一 方 (效 果 與 Wildcraft 一 起 擴 展 )
 qstr_+1_to_Trainer|+1 教 練
 qstr_Recruits_Tribal_Orcs|招 募 部 落 獸 人
@@ -226,17 +226,17 @@ qstr_rallies|集 結
 qstr_+{reg1}_{s3}_in_batt|戰 鬥 中 +{reg1} {s3}
 qstr_+1_to_Charisma|+1 魅 力
 qstr_+1_to_Surgery|+1 手 術
-; qstr_+1_to_Intelligence|+1 to Intelligence
+qstr_+1_to_Intelligence|+1 智 力
 qstr_+1_to_Ironflesh|+1 鐵 骨
 qstr_+1_to_Prisoner_Mgmt|+1 俘 虜 管 理
 qstr_when_equipped|已 裝 備 時
-; qstr_+1_to_Riding|+1 to Riding
-; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_+1_to_Riding|+1 騎 術
+qstr_+1_to_Mounted_Archer|+1 騎 射 
 qstr_+2_to_Tactics|+2 工 程
-; qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
-; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
-; qstr_+1_to_Spotting|+1 to Spotting
-; qstr_+2_to_Athletics|+2 to Athletics
+qstr_+{reg1}_to_Spotting|+{reg1} 偵 察
+qstr__Scales_with_Wildcra|野 外 求 生 比 例
+qstr_+1_to_Spotting|+1 偵 察
+qstr_+2_to_Athletics|+2 跑 動
 qstr_Less_Dunnish_upkeep|減 少 登 丹 的 消 耗
 qstr_Less_Wargs_upkeep|減 少 座 狼 的 消 耗
 qstr_Light_Armor|輕 型 鎧 甲
@@ -250,8 +250,8 @@ qstr_nothing|沒 有 東 西
 qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
-; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
-; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
+qstr_{s77}_received_{reg8|{s77} 得 到 {reg84} 額 外 經 驗 值
+qstr_You_gained_{reg84}_i|你 得 到 {reg84} 智 力 加 成 的 經 驗 值
 qstr_{reg4}_killed_{reg5}|{reg4} 人 被 殺 ， {reg5} 人 受 傷 ， {reg6} 人 逃 跑
 qstr_{reg4}_killed_{reg5}_|{reg4} 人 被 殺 ， {reg5} 人 受 傷
 qstr_{reg4}_killed_{reg5}_r|{reg4} 人 被 殺 ， {reg5} 人 逃 跑
@@ -707,7 +707,7 @@ qstr_Your_mount_stumbles!|你 的 坐 騎 走 路 磕 磕 絆 絆 ！ 看 起 �
 qstr_Bitten_by_your_own_w|你 被 自 己 的 座 狼 咬 了 !
 qstr_You_weigh_too_much_f|你 太 重 了 不 適 合 矮 種 馬  ！
 qstr_Your_mount_rears_ref|你 的 坐 騎 受 到 驚 嚇 ！ 拒 絕 服 從 你 的 命 令 ！
-; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+qstr_Cannot_Change_Camera|第 一 人 稱 時 不 能 改 變 視 覺 模 式
 ; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|固 定 自 定 義 相 機
 qstr_Press_Ctrl_+_Left_/_|按 Ctrl + Left / Ctrl + Right 箭 頭 鍵 切 換 護 肩
@@ -740,7 +740,7 @@ qstr_A_Nazgul_is_circling|一 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
 qstr_Some_of_your_human_t|你 的 軍 隊 並 沒 有 被 黑 暗 嚇 倒 。 (夜 間 軍 隊 不 受 夜 間 懲 罰 的 影 響 )
 qstr_You_are_filled_with_|當 你 注 視 著 敵 人 時 ， 你 充 滿 了 憤 怒 (狂 暴 活 躍 )。
 qstr_Your_mount_is_scared|你 的 座 騎 被 {reg73?樹 人:巨 魔} 驚 嚇 到 了!
-; qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
+qstr_Your_mount_is_scared_|你 的 座 騎 被 {reg73?ent:troll} 嚇 到 了，但 你 能 夠 駕 馭 牠！
 qstr_Nazgul_sweep!|戒 靈 來 了 ！
 qstr_You_and_your_horse_p|你 和 你 的 馬 恐 慌 ， 戒 靈 的 叫 聲 難 以 忍 受 ！
 qstr_Your_horse_panics_th|你 的 馬 恐 慌 ， 戒 靈 的 叫 聲 難 以 忍 受 ！
