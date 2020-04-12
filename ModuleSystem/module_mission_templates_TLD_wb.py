@@ -1869,10 +1869,13 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
     (agent_set_slot, ":agent", slot_agent_hp_shield_active, 1),
     (agent_set_slot, ":agent", slot_agent_hp_shield, ":shield"),
 	
-	(try_begin), #make up for reduced troll strength
+	(try_begin), #make up for reduced troll strength, also assign troll pushback cooldown
 		(troop_get_type, ":race", ":troop_id"),
 		(eq, ":race", tf_troll),
 		(agent_set_max_hit_points, ":agent", 150,1),
+		(store_mission_timer_a_msec, ":spawn_time"),
+		(val_add, ":spawn_time", 30000),
+		(agent_set_slot, ":agent", slot_agent_troll_swing_move, ":spawn_time"), #this slot is overwritten once mission time > spawn time +30 secs and if the troll qualifies for pushback
 	(try_end),
 		
 		

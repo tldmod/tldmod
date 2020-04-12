@@ -9507,25 +9507,25 @@ scripts = [
   # (try_end),
   #MV test code end
   
-	#InVain: Piggyback troll recruitment, for elite trolls only (base trolls are done by party templates)
+	#InVain: Piggyback troll recruitment for lords
 	(try_begin),
-		(store_div, ":max_trolls", ":party_size", 50),
-		(try_begin),
-			(eq,":troop_faction","fac_mordor"),
-			(party_count_members_of_type,":num", ":party_no", "trp_mordor_olog_hai"),
-			(lt, ":num", ":max_trolls"),
-			(party_add_members, ":party_no", "trp_mordor_olog_hai", 1),
-		  (else_try),
-			(eq,":troop_faction","fac_isengard"),
-			(party_count_members_of_type,":num", ":party_no", "trp_isen_armored_troll"),
-			(lt, ":num", ":max_trolls"),
-			(party_add_members, ":party_no", "trp_isen_armored_troll", 1),
-		  (else_try),
-			(eq,":troop_faction","fac_isengard"),
-			(party_count_members_of_type,":num", ":party_no", "trp_moria_armored_troll"),
-			(lt, ":num", ":max_trolls"),
-			(party_add_members, ":party_no", "trp_moria_armored_troll", 1),
-		(try_end),
+		(faction_get_slot, ":fac_troll",  ":troop_faction", slot_faction_troll_troop),
+		(gt, ":fac_troll", 0), #check for troll factions
+		(troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
+		(troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
+		
+		(store_div, ":max_trolls", ":party_size", 40),
+		(store_div, ":max_armoured_trolls", ":party_size", 80),
+
+		(party_count_members_of_type,":num_base_trolls", ":party_no", ":fac_troll"),		
+		(lt, ":num_base_trolls", ":max_trolls"),
+		(party_add_members, ":party_no", ":fac_troll", 1),
+		
+		(gt, ":armoured", 0), #rules out Gundabad
+		(party_count_members_of_type,":num_armoured", ":party_no", ":armoured"),
+		(lt, ":num_armoured", ":max_armoured_trolls"),
+		(party_add_members, ":party_no", ":armoured", 1),
+		
 	(try_end),
 		
 ]),
@@ -29175,7 +29175,7 @@ if is_a_wb_script==1:
 
 
 	(agent_get_position, pos69, ":agent"),
-	(agent_get_team, ":agent_team", ":agent"),
+	#(agent_get_team, ":agent_team", ":agent"),
 
 	(set_fixed_point_multiplier, 100),
 
@@ -29192,8 +29192,9 @@ if is_a_wb_script==1:
 			(agent_is_active, ":count"),
 			(agent_is_human, ":count"),
 			(gt, ":count", 0),
-			(agent_get_team, ":count_team", ":count"),
-			(neq, ":count_team", ":agent_team"),
+			#(agent_get_team, ":count_team", ":count"), #trolls also react against friendly troops, keep your distance!
+			#(teams_are_enemies, ":count_team", ":agent_team"),
+			#(neq, ":count_team", ":agent_team"),
 			(agent_get_troop_id, ":troop_id", ":count"),
 			(troop_get_type, ":race", ":troop_id"),
 			(neq, ":race", tf_troll),
@@ -29209,22 +29210,30 @@ if is_a_wb_script==1:
 
 		(ge, ":counter", 4), #when surrounded by 4 enemies
 		(agent_set_animation, ":agent", "anim_troll_pushback"),
+		(agent_play_sound, ":agent", "snd_troll_grunt_long"),
 
 		(agent_set_slot, ":agent", slot_agent_troll_swing_status, 1),
 		(store_mission_timer_a_msec, ":timer"),
 		
 		#Debug:
-		#(assign, reg78, ":timer"),
-		#(display_message, "@{reg78} - Current Time", color_good_news),
+		# (assign, reg78, ":timer"),
+		# (display_message, "@{reg78} - ready Time", color_good_news),
 		
-		(val_add, ":timer", 2000),
+		(val_add, ":timer", 1000),
+		# (assign, reg78, ":timer"),
+		# (display_message, "@{reg78} - minimal hit Time", color_good_news),
+		
 		(agent_set_slot, ":agent", slot_agent_troll_swing_move, ":timer"),
 	(else_try),
 		(eq, ":step", 2),
 
 		(agent_slot_eq, ":agent", slot_agent_troll_swing_status, 1),
 		(store_mission_timer_a_msec, ":timer_2"),
-		(agent_slot_ge, ":agent", slot_agent_troll_swing_move, ":timer_2"),
+		#(agent_slot_ge, ":agent", slot_agent_troll_swing_move, ":timer_2"),
+		(agent_get_slot, ":hit_timer", ":agent", slot_agent_troll_swing_move),
+		(ge, ":timer_2", ":hit_timer"),
+		# (assign, reg78, ":timer_2"),
+		# (display_message, "@{reg78} - actual hit Time", color_good_news),
 
 		(try_for_agents, ":nearby", pos69, 300),
 			(neq, ":nearby", ":agent"),
@@ -29249,8 +29258,28 @@ if is_a_wb_script==1:
 		      (agent_stop_running_away, ":target_horse"),
 		    (try_end),
 		  	(agent_set_animation, ":nearby", ":hit_anim"),
-  		    (agent_slot_eq, ":agent", slot_agent_troll_swing_status, 0),
+			
+			  (store_random_in_range, ":rand_sound", 0, 6),
+			  (try_begin),
+				(eq, ":rand_sound", 0),
+				(agent_play_sound, ":agent", "snd_wooden_hit_low_armor_low_damage"), #play sound from troll, not victim, to prevent sound overflow.
+			  (else_try),
+				(eq, ":rand_sound", 1),
+				(agent_play_sound, ":agent", "snd_wooden_hit_low_armor_high_damage"),
+			  (else_try),
+				(eq, ":rand_sound", 2),
+				(agent_play_sound, ":agent", "snd_wooden_hit_high_armor_low_damage"),
+			  (else_try),
+				(eq, ":rand_sound", 3),
+				(agent_play_sound, ":agent", "snd_wooden_hit_high_armor_low_damage"),
+			  (else_try),
+				(eq, ":rand_sound", 4),
+				(agent_play_sound, ":agent", "snd_wooden_hit_high_armor_high_damage"),
+			  (else_try),
+				(agent_play_sound, ":agent", "snd_blunt_hit"),
+			  (try_end),  		    
 	    (try_end),
+		(agent_set_slot, ":agent", slot_agent_troll_swing_status, 0),
 	(try_end),
 ]),
 

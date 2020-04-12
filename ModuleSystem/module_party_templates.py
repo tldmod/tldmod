@@ -269,11 +269,11 @@ party_templates = [
 #Isengard - two short trees (up to T4/T5), easier to upgrade, so lower tier reinforcements; also extra orcs (8-16, 7-13, 5-10)
 ("isengard_reinf_a","_",0,0,fac_commoners,0,[(trp_i1_isen_uruk_snaga,1,2),(trp_i1_isen_orc_snaga,2,5),(trp_a2_isen_uruk_tracker,1,2),(trp_i2_isen_uruk,1,2),(trp_i2_isen_orc,2,4),]), #two T1 #InVain: mixed a bit, see Mordor
 ("isengard_reinf_b","_",0,0,fac_commoners,0,[(trp_ac2_isen_wolf_rider,2,3),(trp_a2_isen_uruk_tracker,2,4),(trp_i2_isen_uruk,1,2),(trp_i2_isen_orc,2,4),(trp_a3_isen_large_uruk_tracker,1,3),(trp_i3_isen_large_orc,1,2),]), #more T2 troops #InVain: More archers, t3 archers+orcs
-("isengard_reinf_c","_",0,0,fac_commoners,0,[(trp_ac3_isen_warg_rider,1,2),(trp_i3_isen_large_uruk,1,2),(trp_i3_isen_uruk_pikeman,1,2),(trp_i3_isen_large_orc,1,2),(trp_i3_isen_large_orc_despoiler,1,2),(trp_isen_troll,1,1),]), #more T3 troops
+("isengard_reinf_c","_",0,0,fac_commoners,0,[(trp_ac3_isen_warg_rider,1,2),(trp_i3_isen_large_uruk,1,2),(trp_i3_isen_uruk_pikeman,1,2),(trp_i3_isen_large_orc,1,2),(trp_i3_isen_large_orc_despoiler,1,2),]), #more T3 troops
 #Mordor - same as Isengard + Numenorean cavalry (8-16, 7-13, 5-10)
 ("mordor_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,3),(trp_i1_mordor_orc_snaga,2,5),(trp_i2_mordor_uruk,1,2),(trp_i2_mordor_orc,2,4),]), #InVain: less t1, a few t2 = less orc archers for field armies
 ("mordor_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_mordor_orc_archer,2,4),(trp_a3_mordor_large_orc_archer,2,4),(trp_i2_mordor_uruk,2,3),(trp_i2_mordor_orc,3,6),(trp_i3_mordor_large_orc,1,2),(trp_a4_mordor_fell_orc_archer,1,2)]), #InVain: More archers, t3+t4 archers, t3 orcs
-("mordor_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_i3_mordor_large_uruk,1,1),(trp_i3_mordor_uruk_slayer,0,1),(trp_i4_mordor_fell_orc,1,2),(trp_i4_mordor_fell_morgul_orc,1,2),(trp_mordor_troll,1,1),]), #InVain: Removed t3 archers, add t4 Mordor + Morgul orcs
+("mordor_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_i3_mordor_large_uruk,1,1),(trp_i3_mordor_uruk_slayer,0,1),(trp_i4_mordor_fell_orc,1,2),(trp_i4_mordor_fell_morgul_orc,1,2),]), #InVain: Removed t3 archers, add t4 Mordor + Morgul orcs
 #Harad (7-14, 5-10, 4-8)
 ("harad_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_harondor_scout,1,2),(trp_i2_far_harad_tribesman,1,2),(trp_i1_harad_levy,5,10),]),
 ("harad_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_ac3_harondor_skirmisher,1,2),(trp_a3_harad_hunter,2,4),(trp_i3_harad_infantry,1,2),(trp_i2_far_harad_tribesman,1,2),]),
@@ -305,11 +305,11 @@ party_templates = [
 #Moria (8-16, 7-13, 5-10)
 ("moria_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i1_moria_snaga,4,8),(trp_i2_moria_goblin,2,4),]), #InVain: traded some t1 for t2 = more infantry for hosts
 ("moria_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_moria_large_goblin_archer,4,7),(trp_i2_moria_goblin,1,2),(trp_i3_moria_large_goblin,2,4),(trp_i4_moria_fell_goblin,1,2)]), #InVain: t3 archers, t3 inf, some t4 inf
-("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c3_moria_wolf_rider,2,4),(trp_i3_moria_large_goblin,1,2),(trp_moria_troll,1,1),]), #InVain: removed archers, because B has so many, less cav, fewer t3
+("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c3_moria_wolf_rider,2,4),(trp_i3_moria_large_goblin,1,2),]), #InVain: removed archers, because B has so many, less cav, fewer t3
 #Dol Guldur - same as Mordor without uruks and Numenoreans (8-16, 7-13, 5-10)
 ("guldur_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,6,12),(trp_a2_guldur_orc_tracker,2,4)]), #added some t2 archers
 ("guldur_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a3_guldur_large_orc_tracker,4,7),(trp_i2_mordor_orc,1,2),(trp_i3_mordor_large_orc,1,2),]), #InVain: t3 archers, t3 inf
-("guldur_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_a4_guldur_fell_orc_tracker,2,4),(trp_i4_mordor_fell_orc,1,2),(trp_mordor_troll,1,1),]),
+("guldur_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_a4_guldur_fell_orc_tracker,2,4),(trp_i4_mordor_fell_orc,1,2),]),
 #Beornings - two trees, Beornings favored over Woodmen (7-14, 5-10, 4-8)
 ("beorn_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i2_beorning_warrior,2,4),(trp_i1_beorning_man,2,4),(trp_i1_woodmen_man,3,6)]),
 ("beorn_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_woodmen_scout,2,4),(trp_i3_woodmen_skilled_forester,1,2),(trp_i3_beorning_tolltacker,1,2),(trp_i3_beorning_carrock_lookout,1,2)]),
@@ -317,7 +317,7 @@ party_templates = [
 #Mt. Gundabad - see Moria (8-16, 7-13, 5-10)
 ("gundabad_reinf_a","_",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,6,12),(trp_i2_gunda_orc,5,8)]), #InVain: traded some t1 for t2 /#InVain: increased number of infantry by 50%, so lords have less space left for warg riders (hope this works)
 ("gundabad_reinf_b","_",0,0,fac_commoners,0,[(trp_ca4_gunda_skirmisher,1,3),(trp_i2_gunda_orc,3,5),(trp_i3_gunda_orc_fighter,2,3),]), #InVain t3 orcs, less t2 orcs
-("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_c3_gunda_goblin_rider,1,2),(trp_i3_gunda_orc_fighter,2,3),(trp_gunda_troll,1,1),]), 
+("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_c3_gunda_goblin_rider,1,2),(trp_i3_gunda_orc_fighter,2,3),]), 
 #Dale (7-14, 5-10, 4-8)
 ("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,1,2),(trp_i2_dale_man_at_arms,1,2),(trp_a2_dale_scout,1,2),(trp_i1_dale_militia,5,10),]), #InVain: added 
 ("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,0,1),(trp_a3_dale_bowman,3,5),(trp_i3_dale_spearman,1,2),(trp_i3_dale_swordsman,1,2),]),

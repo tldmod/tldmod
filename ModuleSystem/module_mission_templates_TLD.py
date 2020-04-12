@@ -2423,7 +2423,6 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 (5, 5, 7, [(gt, "$trolls_in_battle", 0)], 
 	[
-
  	(try_for_agents, ":troll"),
 		(agent_is_active, ":troll"),
 		(agent_is_alive, ":troll"),
@@ -2432,6 +2431,9 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(agent_get_troop_id, ":troll_troop_id", ":troll"),
 		(troop_get_type, ":troll_type", ":troll_troop_id"),
 		(eq, ":troll_type", tf_troll),
+		(store_mission_timer_a_msec, ":timer"), 
+		(agent_get_slot, ":cooldown", ":troll", slot_agent_troll_swing_move), #pushback cooldown slot set after troll (re-)spawn
+		(ge, ":timer", ":cooldown"),
 		(call_script, "script_cf_surrounded_pushback", ":troll", 1),
 	(try_end),
 
@@ -2439,7 +2441,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 # Surrounded Pushback - Step 2
 
-(0, 0, 0, [
+(0.1, 0, 0.5, [
 	(gt, "$trolls_in_battle", 0),
 	(assign, ":troll_found", 0),
  	(try_for_agents, ":troll"),
@@ -2452,13 +2454,15 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(troop_get_type, ":troll_type", ":troll_troop_id"),
 		(eq, ":troll_type", tf_troll),
 		(agent_slot_eq, ":troll", slot_agent_troll_swing_status, 1),
+		(store_mission_timer_a_msec, ":timer_2"),
+		(agent_get_slot, ":hit_timer", ":troll", slot_agent_troll_swing_move),
+		(ge, ":timer_2", ":hit_timer"),
 		(assign, ":troll_found", 1),
 	(try_end),
 
 	(eq, ":troll_found", 1),
 
 	],[
-
  	(try_for_agents, ":troll"),
 		(agent_is_active, ":troll"),
 		(agent_is_alive, ":troll"),
@@ -2495,6 +2499,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(eq, ":troll_type", tf_troll),
 		(agent_get_slot, ":last_charge", ":troll", slot_troll_agent_last_charge),
 	 	(store_mission_timer_a, ":time"),
+		(ge, ":time", 45), #no charge right after start of the battle
 	 	(try_begin),
 	 		(eq, ":last_charge", 0),
 	 		(assign, ":cooldown", 0),
