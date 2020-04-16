@@ -216,10 +216,10 @@ itemsfile version 2
  itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  141824098308 512 1 0 58 100 0 0 0 0 30720 70 70 200 0 542 542
 0
 
- itm_troll_weapon_dmg Giant_Mace Giant_Mace 4  0 2  orc_sledgehammer_troll 8  giant_mace 1  giant_hammer 524288  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 85 100 110 0 542 542
+ itm_troll_weapon_dmg Giant_Mace Giant_Mace 4  0 2  orc_sledgehammer_troll 8  giant_mace 1  giant_hammer 524288  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 85 50 110 0 542 542
 0
 
- itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 6  0 0  bone_cudgel_troll 128  troll_club 8  tree_trunk_club 1024  orc_club_a_troll 262144  giant_mace_b 524288  141822394371 9259400833873739810 1 0 58 100 0 0 0 0 25600 70 150 130 0 537 537
+ itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 6  0 0  bone_cudgel_troll 128  troll_club 8  tree_trunk_club 1024  orc_club_a_troll 262144  giant_mace_b 524288  141822394371 9259400833873739810 1 0 58 100 0 0 0 0 25600 70 100 130 0 537 537
 0
 
  itm_troll_aoe troll_aoe troll_aoe 1  0 0  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 1024 90 0 110 0 513 513

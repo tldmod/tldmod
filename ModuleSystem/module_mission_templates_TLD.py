@@ -2225,7 +2225,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	(troop_get_type, ":type", ":troop_id"),
 	(eq, ":type", tf_troll),
 
-	(agent_set_speed_modifier, ":troll", 65),
+	(agent_set_speed_modifier, ":troll", 100),
 	#(agent_set_max_hit_points, ":troll", 35),
 	(agent_ai_set_aggressiveness, ":troll", 500),
 
@@ -2305,7 +2305,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 	(store_trigger_param_1, ":receiver"),
  	(store_trigger_param_2, ":dealer"),
- 	#(store_trigger_param_3, ":damage"),
+ 	(store_trigger_param_3, ":damage"),
 	(assign, ":weapon", reg0),
     (gt, ":weapon", 0),
 	#(assign, ":hit_pos", pos0),
@@ -2333,7 +2333,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
       (agent_is_alive, ":aoe_hit"),
       (agent_is_human, ":aoe_hit"),
       (neq, ":aoe_hit", ":dealer"), #don't hit yourself
-      (gt, ":aoe_hit", 0),
+	  (gt, ":aoe_hit", 0),				  
       #(agent_get_position, pos17, ":aoe_hit"),
       #(neg|position_is_behind_position, pos17, pos18),
       (agent_get_troop_id, ":victim_troop_id", ":aoe_hit"),
@@ -2358,52 +2358,51 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(agent_slot_eq, ":aoe_hit", slot_agent_knocked_down, 0),
 		(assign, ":continue_ko", 1),
 		(agent_set_slot, ":aoe_hit", slot_agent_knocked_down, 1),
-		(val_add, ":timer", 4), #4 seconds after Knock Down
+		(val_add, ":timer", 6), #4 seconds after Knock Down #InVain: Slightly increased to avoid stunlocking by multiple trolls
 		(agent_set_slot, ":aoe_hit", slot_agent_last_knockdown_time, ":timer"),
 	  (try_end),
       
       (eq, ":continue_ko", 1),
 
-      (try_begin),
-      # human (non trolls, non horse) victims
-        (try_begin),
-          (eq, ":flyback_anim", 0),
-      # troll is in front of victim
-          (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise_from_left"), # send them flying back
-        (else_try),
-          (eq, ":flyback_anim", 1),
-          (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise"), # send them flying back
-        (else_try),
-          (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_near_rise"),
-        (try_end),
+		(try_begin),
+		  # human (non trolls, non horse) victims
+			(try_begin),
+			  (eq, ":flyback_anim", 0),
+		  # troll is in front of victim
+			  (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise_from_left"), # send them flying back
+			(else_try),
+			  (eq, ":flyback_anim", 1),
+			  (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise"), # send them flying back
+			(else_try),
+			  (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_near_rise"),
+			(try_end),
 
-      (store_random_in_range, ":rand_sound", 0, 6),
-      (try_begin),
-        (eq, ":rand_sound", 0),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_low_armor_low_damage"),
-      (else_try),
-        (eq, ":rand_sound", 1),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_low_armor_high_damage"),
-      (else_try),
-        (eq, ":rand_sound", 2),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_low_damage"),
-      (else_try),
-        (eq, ":rand_sound", 3),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_low_damage"),
-      (else_try),
-        (eq, ":rand_sound", 4),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_high_damage"),
-      (else_try),
-        (agent_play_sound, ":aoe_hit", "snd_blunt_hit"),
-      (try_end),
+			(store_random_in_range, ":rand_sound", 0, 6),
+			(try_begin),
+				(eq, ":rand_sound", 0),
+				(agent_play_sound, ":aoe_hit", "snd_wooden_hit_low_armor_low_damage"),
+			  (else_try),
+				(eq, ":rand_sound", 1),
+				(agent_play_sound, ":aoe_hit", "snd_wooden_hit_low_armor_high_damage"),
+			  (else_try),
+				(eq, ":rand_sound", 2),
+				(agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_low_damage"),
+			  (else_try),
+				(eq, ":rand_sound", 3),
+				(agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_low_damage"),
+			  (else_try),
+				(eq, ":rand_sound", 4),
+				(agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_high_damage"),
+			  (else_try),
+				(agent_play_sound, ":aoe_hit", "snd_blunt_hit"),
+			(try_end),
 
-        (try_begin),
-          (gt, ":victim_horse", 1),
-          (agent_start_running_away, ":victim_horse"),
-          (agent_stop_running_away, ":victim_horse"),
-        (try_end),
-
-      (try_end),
+			(try_begin),
+			  (gt, ":victim_horse", 1),
+			  (agent_start_running_away, ":victim_horse"),
+			  (agent_stop_running_away, ":victim_horse"),
+			(try_end),
+		(try_end),
 	  
 	  (try_begin),
 			(neq, ":aoe_hit", ":receiver"),
@@ -2416,6 +2415,12 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	  (try_end),
 
     (try_end),
+	
+	(get_player_agent_no, ":player"),
+	(eq, ":receiver", ":player"),
+	(display_message, "@player {s5} hit"),
+	(val_div, ":damage", 2),
+	(set_trigger_result, ":damage"),
 
 ]),
 
@@ -2423,6 +2428,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 (5, 5, 7, [(gt, "$trolls_in_battle", 0)], 
 	[
+	
  	(try_for_agents, ":troll"),
 		(agent_is_active, ":troll"),
 		(agent_is_alive, ":troll"),
@@ -2435,6 +2441,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(agent_get_slot, ":cooldown", ":troll", slot_agent_troll_swing_move), #pushback cooldown slot set after troll (re-)spawn
 		(ge, ":timer", ":cooldown"),
 		(call_script, "script_cf_surrounded_pushback", ":troll", 1),
+		#(display_message, "@pushback step 1"),
 	(try_end),
 
 	]),
@@ -2473,6 +2480,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(eq, ":troll_type", tf_troll),
 		(agent_slot_eq, ":troll", slot_agent_troll_swing_status, 1),
 		(call_script, "script_cf_surrounded_pushback", ":troll", 2),
+		#(display_message, "@pushback step 2"),
 	(try_end),
 
 	]),
@@ -2489,7 +2497,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 	(assign, ":troll_charging", 0), 
 
- 	(try_for_agents, ":troll"),
+ 	(try_for_agents, ":troll"), #Find trolls, apply cooldown timers
 		(agent_is_active, ":troll"),
  		(agent_is_alive, ":troll"),
  		(agent_is_human, ":troll"),
@@ -2499,35 +2507,37 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(eq, ":troll_type", tf_troll),
 		(agent_get_slot, ":last_charge", ":troll", slot_troll_agent_last_charge),
 	 	(store_mission_timer_a, ":time"),
-		(ge, ":time", 45), #no charge right after start of the battle
+		(ge, ":time", 45), #Initial cooldown (InVain)
 	 	(try_begin),
 	 		(eq, ":last_charge", 0),
-	 		(assign, ":cooldown", 0),
+	 		(assign, ":cooldown", 0), # @kham: Initial cooldown could probably also be applied here? 
 	 	(else_try),
 	 		(assign, ":cooldown", 30),
 	 	(try_end),
 
-		(lt, ":troll_charging", 1),
+		(lt, ":troll_charging", 1), #First troll found? Block try_for_agents loop here
 	 	(val_add, ":troll_charging",1),
  		
  		(agent_slot_eq, ":troll", slot_troll_agent_charging, 0),
 		(val_add, ":last_charge", ":cooldown"),
-		(gt, ":time", ":last_charge"),
-	 	(agent_set_speed_modifier, ":troll", 500),
+		(gt, ":time", ":last_charge"), #check cooldown timer ( @kham: Why is it done _after_ the loop block?)
+		#(display_message, "@troll charge found troll"),
+	 	(agent_set_speed_modifier, ":troll", 500), #make him sprint
 	 	(agent_set_slot, ":troll", slot_troll_agent_charging, 1),
 	 	(store_mission_timer_a, ":time"),
 	 	(agent_set_slot, ":troll", slot_troll_agent_last_charge, ":time"),
 
 	 	(agent_get_position, pos15, ":troll"),
 
-        (try_for_agents, ":nearby_agent_no", pos15, 450),
+        (try_for_agents, ":nearby_agent_no", pos15, 450), #Find nearby agents, assign flyback animation and sound, riderless horses run away
+			#(display_message, "@troll charge initial pushback"),
 	 		(agent_is_active, ":nearby_agent_no"),
 	 		(agent_is_alive, ":nearby_agent_no"),
 	 		(agent_is_human, ":nearby_agent_no"),
 	 		(gt, ":nearby_agent_no", 0),
 	 		(neq, ":nearby_agent_no", ":troll"), #don't hit yourself
 	 		
-	 		(agent_get_position, pos16,":nearby_agent_no"),
+	 		(agent_get_position, pos16,":nearby_agent_no"), # @kham: What's this, why the double check with different distances?
 			(get_distance_between_positions,":dist",pos15,pos16),
 			(le, ":dist", 400),
 
@@ -2586,8 +2596,8 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(store_random_in_range,":random_timings",1,5),
 			(agent_set_animation_progress, ":nearby_agent_no", ":random_timings"), # differentiate timings a bit
 		(try_end),
+		
 		(agent_play_sound, ":troll", "snd_troll_grunt_long"),
-		(store_random_in_range, ":rand_charge", 0, 100),
 	 	(try_begin), 
 			(troop_has_item_equipped,":troll_troop_id","itm_troll_shield_a"),
 	 		(agent_refill_wielded_shield_hit_points, ":troll"),
@@ -2597,6 +2607,8 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(agent_set_wielded_item, ":troll", -1),
 			(agent_set_wielded_item, ":troll", ":troll_weapon"),
 	 	(try_end),
+		
+		(store_random_in_range, ":rand_charge", 0, 100),
 		(try_begin),
 			(lt, ":rand_charge", 50),
 	 		(agent_set_animation, ":troll", "anim_troll_roar", 0),
@@ -2612,7 +2624,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 # Troll Charge Deactivate
 (5, 0, 1, [
 
-	(gt, "$trolls_in_battle"),
+	(gt, "$trolls_in_battle"), #  @kham: Missing argument? Apparently it works anyway?
 	],[
 
 	(try_for_agents, ":troll"),
@@ -2624,7 +2636,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(agent_get_slot, ":knocked_down", ":troll", slot_agent_knocked_down),
 		(agent_get_slot, ":knocked_down_time", ":troll", slot_agent_last_knockdown_time),
 
-		(try_begin),
+		(try_begin), # @kham: This is actually not only for troll charge deactivation, right? It clears the slot for all previously knocked down agents?
 			(eq, ":knocked_down", 1),
 			(ge, ":time", ":knocked_down_time"),
 			(agent_set_slot, ":troll", slot_agent_knocked_down, 0),
@@ -2634,12 +2646,13 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(troop_get_type, ":troll_type", ":troll_troop_id"),
 		(eq, ":troll_type", tf_troll),
 		(agent_slot_eq, ":troll", slot_troll_agent_charging, 1),
-		(agent_get_slot, ":time_last_charge", ":troll", slot_troll_agent_last_charge),
+		#(display_message, "@troll charge deactivate found charging troll"),
+		(agent_get_slot, ":time_last_charge", ":troll", slot_troll_agent_last_charge), # @kham: Check if the charge has lasted for at least 10 seconds?
 		(store_mission_timer_a, ":time"),
 		(val_add, ":time_last_charge", 10),
 		(gt, ":time", ":time_last_charge"),
 		(agent_set_slot, ":troll", slot_troll_agent_charging, 0),
-		(agent_set_speed_modifier, ":troll", 65),
+		(agent_set_speed_modifier, ":troll", 100),
 		(assign, reg65, ":time"),
 		(assign, reg66, ":time_last_charge"),
 		#(display_message, "@Charge turned off -- Time: {reg65}, Last Charge: {reg66}"),
@@ -2649,7 +2662,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			# (this_or_next|eq, ":troop_id", "trp_mordor_olog_hai"),
 			# (eq, ":troop_id", "trp_isen_armored_troll"),
  			(agent_set_wielded_item, ":troll", "itm_troll_shield_a"),
- 			(agent_refill_wielded_shield_hit_points, ":troll"),
+ 			(agent_refill_wielded_shield_hit_points, ":troll"), # @kham: Does this serve any special purpose, or is it just to make troll shields sturdier?
  		(try_end),
 	(try_end), 
 		
@@ -2657,9 +2670,10 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 # Troll Charge Mode Pushbacks
 
-(0.2,0.5,2, [(gt, "$trolls_in_battle", 0)],[
+(0.2,0.5,2, [(gt, "$trolls_in_battle", 0)],[ # @kham: Rearm timing intended? A charge lasts 10 seconds, so there will be at most 4 pushbacks per charge?
 
-	(try_for_agents,":troll"),
+	(try_for_agents,":troll"), # @kham: This is actually the old "Troll doesn't listen to orders" code, right?
+		#(display_message, "@troll charge MV"),
 		(agent_is_alive,":troll"),
 		(agent_is_human,":troll"),
 		(agent_is_active, ":troll"),
@@ -2714,13 +2728,15 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(troop_get_type, ":troll_type", ":troll_troop_id"),
 		(eq, ":troll_type", tf_troll),
 		(agent_slot_eq, ":troll", slot_troll_agent_charging, 1),
+		#(display_message, "@troll charge pushback found charging troll"),
  		(agent_get_position, pos19, ":troll"),
  		
  		(agent_ai_get_num_cached_enemies, ":nearby_enemies", ":troll"),
         (gt, ":nearby_enemies", 0),
 
-        (try_for_range, ":nearby_agent_no", 0, ":nearby_enemies"),
-	 		(agent_is_active, ":nearby_agent_no"),
+        (try_for_range, ":nearby_agent_no", 0, ":nearby_enemies"), # @kham: Does this actually work without an additional agent_ai_get_cached_enemy check? 
+			#(display_message, "@troll charge pushback find victims"),
+			(agent_is_active, ":nearby_agent_no"),
 	 		(agent_is_alive, ":nearby_agent_no"),
 	 		(agent_is_human, ":nearby_agent_no"),
 	 		(gt, ":nearby_agent_no", 0),
@@ -2728,7 +2744,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	 		
 	 		(agent_get_position, pos9,":nearby_agent_no"),
 			(get_distance_between_positions,":dist",pos19,pos9),
-			(le, ":dist", 400),
+			(le, ":dist", 400), #only affect agents closer than 4m
 
 			(agent_get_troop_id, ":victim_troop_id", ":nearby_agent_no"),
 			(troop_get_type, ":victim_type", ":victim_troop_id"),

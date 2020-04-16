@@ -9386,6 +9386,33 @@ scripts = [
 		(store_random_in_range, ":rand2", 0, 100), (le, ":rand2", 10), # 20% of times... #InVain lowered probability because Tower Guards are just too damn strong...
 		(assign, ":party_template", "pt_gondor_reinf_d"),
 	  (try_end),
+	  
+	  (try_begin), #InVain: Piggyback troll recruitment for towns
+		(eq, ":party_type", spt_town),
+		(faction_get_slot, ":fac_troll",  ":party_faction", slot_faction_troll_troop),
+		(gt, ":fac_troll", 0), #check for troll factions
+		(troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
+		(troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
+		
+			(try_begin),
+			(eq, ":party_faction", fac_gundabad),
+			(assign, ":armoured", ":fac_troll_up"),
+			(try_end),
+		
+		(party_get_num_companions, ":party_size", ":party_no"),
+		(store_div, ":max_trolls", ":party_size", 100),
+		(store_div, ":max_armoured_trolls", ":party_size", 150),
+
+		(party_count_members_of_type,":num_base_trolls", ":party_no", ":fac_troll"),		
+		(lt, ":num_base_trolls", ":max_trolls"),
+		(party_add_members, ":party_no", ":fac_troll", 1),
+		
+		(this_or_next|faction_slot_eq, ":party_faction", slot_faction_capital, ":party_no"),
+		(eq, ":party_no", "p_town_minas_morgul"),
+		(party_count_members_of_type,":num_armoured", ":party_no", ":armoured"),
+		(lt, ":num_armoured", ":max_armoured_trolls"),
+		(party_add_members, ":party_no", ":armoured", 1),
+	  (try_end),
       
       (try_begin),
         (gt, ":party_template", 0),
@@ -9514,8 +9541,8 @@ scripts = [
 		(troop_get_upgrade_troop, ":fac_troll_up", ":fac_troll", 0),
 		(troop_get_slot, ":armoured", ":fac_troll_up", slot_troop_troll_armoured_variant),
 		
-		(store_div, ":max_trolls", ":party_size", 40),
-		(store_div, ":max_armoured_trolls", ":party_size", 80),
+		(store_div, ":max_trolls", ":party_size", 60),
+		(store_div, ":max_armoured_trolls", ":party_size", 100),
 
 		(party_count_members_of_type,":num_base_trolls", ":party_no", ":fac_troll"),		
 		(lt, ":num_base_trolls", ":max_trolls"),
@@ -29186,7 +29213,7 @@ if is_a_wb_script==1:
 	(try_begin),
 		(eq, ":step", 1),
 
-		(try_for_agents, ":count", pos69, 200),
+		(try_for_agents, ":count", pos69, 400),
 			(neq, ":count", ":agent"),
 			(agent_is_alive, ":count"),
 			(agent_is_active, ":count"),
@@ -29197,20 +29224,29 @@ if is_a_wb_script==1:
 			#(neq, ":count_team", ":agent_team"),
 			(agent_get_troop_id, ":troop_id", ":count"),
 			(troop_get_type, ":race", ":troop_id"),
-			(neq, ":race", tf_troll),
+			#(neq, ":race", tf_troll),
+				(try_begin),
+					(eq, ":race", tf_troll),
+					(val_sub, ":counter", 5), #pushback is less probable if another troll is around
+					(display_message, "@troll counted: minus 4"),
+				(try_end),
 		  	(neg|is_between, ":troop_id", warg_ghost_begin, warg_ghost_end),
   	      	(neg|is_between, ":troop_id", "trp_spider", "trp_dorwinion_sack"),
       		(neq, ":troop_id", "trp_werewolf"),
 		  	(val_add, ":counter", 1),
+			(assign, reg78, ":counter"),
+			(display_message, "@counter: {reg78}"),
 		(try_end),
 
 		#Debug:
 		#(assign, reg77, ":counter"),
 		#(display_message, "@{reg77} agents nearby", color_bad_news),
 
-		(ge, ":counter", 4), #when surrounded by 4 enemies
+		#(ge, ":counter", 4), #when surrounded by 4 enemies
+		(store_random_in_range, ":pushback_chance", 0, 11), #actually, let's make it slightly random: 10% pushback chance per troop in range
+		(ge, ":counter", ":pushback_chance"),
 		(agent_set_animation, ":agent", "anim_troll_pushback"),
-		(agent_play_sound, ":agent", "snd_troll_grunt_long"),
+		(agent_play_sound, ":agent", "snd_troll_yell"),
 
 		(agent_set_slot, ":agent", slot_agent_troll_swing_status, 1),
 		(store_mission_timer_a_msec, ":timer"),
@@ -29218,8 +29254,10 @@ if is_a_wb_script==1:
 		#Debug:
 		# (assign, reg78, ":timer"),
 		# (display_message, "@{reg78} - ready Time", color_good_news),
-		
-		(val_add, ":timer", 1000),
+		(store_random_in_range, ":rand_timing", 800, 1200), #avoid simultaneous pushbacks
+		(val_add, ":timer", ":rand_timing"),
+		(val_div, ":rand_timing", 200),
+		(agent_set_animation_progress, ":agent", ":rand_timing"),
 		# (assign, reg78, ":timer"),
 		# (display_message, "@{reg78} - minimal hit Time", color_good_news),
 		
@@ -29235,7 +29273,7 @@ if is_a_wb_script==1:
 		# (assign, reg78, ":timer_2"),
 		# (display_message, "@{reg78} - actual hit Time", color_good_news),
 
-		(try_for_agents, ":nearby", pos69, 300),
+		(try_for_agents, ":nearby", pos69, 200),
 			(neq, ":nearby", ":agent"),
 			(agent_is_alive, ":nearby"),
 			(agent_is_active, ":nearby"),
@@ -29258,6 +29296,9 @@ if is_a_wb_script==1:
 		      (agent_stop_running_away, ":target_horse"),
 		    (try_end),
 		  	(agent_set_animation, ":nearby", ":hit_anim"),
+			(set_fixed_point_multiplier, 1),
+			(store_random_in_range,":random_timings",1,5),
+			(agent_set_animation_progress, ":nearby", ":random_timings"), # differentiate timings a bit
 			
 			  (store_random_in_range, ":rand_sound", 0, 6),
 			  (try_begin),

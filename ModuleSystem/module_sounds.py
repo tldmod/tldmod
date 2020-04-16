@@ -231,7 +231,7 @@ sounds = [
 ("dwarf_victory",sf_priority_5|sf_vol_10, ["silence.wav","silence.wav","silence.wav","dwarf8.wav","man_victory_54.wav","man_victory_57.wav","man_victory_71.wav"]),
 #tf_troll = 10
 ("troll_die",sf_priority_10,  ["troll_death_1.wav"]),
-("troll_hit",sf_priority_7|sf_vol_10, ["troll_hit_1.wav","troll_hit_1.wav","troll_hit_1.wav"]), 
+("troll_hit",sf_priority_7|sf_vol_10, ["troll_hit_1.wav","troll_hit_1.wav","troll_grunt_2.wav"]), 
 ("troll_grunt",sf_priority_6|sf_vol_4, ["troll_grunt_1.wav","troll_grunt_2.wav", "troll_growl.wav", "troll_roar.wav"]), 
 ("troll_grunt_long",sf_priority_5|sf_vol_8, ["troll_grunt_2.wav","troll_hit_2.wav","troll_roar.wav"]), 
 ("troll_yell",sf_priority_6|sf_vol_8, ["troll_grunt_2.wav","troll_hit_2.wav","troll_roar.wav"]), 

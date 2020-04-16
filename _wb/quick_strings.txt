@@ -1,4 +1,4 @@
-1844
+1845
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -842,6 +842,7 @@ qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
+qstr_player_{s5}_hit player_{s5}_hit
 qstr_Your_mount_has_falle Your_mount_has_fallen_to_the_ground_beneath_you!
 qstr_Receive_{reg22}_dama Receive_{reg22}_damage.
 qstr_You_have_been_knocke You_have_been_knocked_unconscious_by_{s22}.

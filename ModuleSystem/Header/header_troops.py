@@ -179,6 +179,8 @@ agi_27           = bignum | 0x00001b00
 agi_28           = bignum | 0x00001c00
 agi_29           = bignum | 0x00001d00
 agi_30           = bignum | 0x00001e00
+agi_127          = bignum | 0x00007f00  # InVain
+agi_255          = bignum | 0x0000ff00  # InVain
 
 int_3            = bignum | 0x00030000
 int_4            = bignum | 0x00040000
