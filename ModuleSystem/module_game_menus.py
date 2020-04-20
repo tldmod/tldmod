@@ -4688,6 +4688,7 @@ game_menus = [
             (assign, "$cant_leave_encounter", 0),
           (try_end),
           (eq, "$g_leave_encounter",1),
+		  (call_script, "script_maybe_relocate_player_from_z0"),
           (change_screen_return),
         (try_end),
 
@@ -6323,6 +6324,7 @@ game_menus = [
 ##          (call_script, "script_party_copy", "p_ally_party_backup", "p_collective_ally"),
         (else_try), #second or more turn
           (eq, "$g_leave_encounter",1),
+		  (call_script, "script_maybe_relocate_player_from_z0"),
           (change_screen_return),
         (try_end),
 
