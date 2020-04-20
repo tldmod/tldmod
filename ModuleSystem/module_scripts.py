@@ -29228,14 +29228,14 @@ if is_a_wb_script==1:
 				(try_begin),
 					(eq, ":race", tf_troll),
 					(val_sub, ":counter", 5), #pushback is less probable if another troll is around
-					(display_message, "@troll counted: minus 4"),
+					#(display_message, "@troll counted: minus 4"),
 				(try_end),
 		  	(neg|is_between, ":troop_id", warg_ghost_begin, warg_ghost_end),
   	      	(neg|is_between, ":troop_id", "trp_spider", "trp_dorwinion_sack"),
       		(neq, ":troop_id", "trp_werewolf"),
 		  	(val_add, ":counter", 1),
 			(assign, reg78, ":counter"),
-			(display_message, "@counter: {reg78}"),
+			#(display_message, "@counter: {reg78}"),
 		(try_end),
 
 		#Debug:
@@ -29273,7 +29273,7 @@ if is_a_wb_script==1:
 		# (assign, reg78, ":timer_2"),
 		# (display_message, "@{reg78} - actual hit Time", color_good_news),
 
-		(try_for_agents, ":nearby", pos69, 200),
+		(try_for_agents, ":nearby", pos69, 400),
 			(neq, ":nearby", ":agent"),
 			(agent_is_alive, ":nearby"),
 			(agent_is_active, ":nearby"),
@@ -29296,8 +29296,8 @@ if is_a_wb_script==1:
 		      (agent_stop_running_away, ":target_horse"),
 		    (try_end),
 		  	(agent_set_animation, ":nearby", ":hit_anim"),
-			(set_fixed_point_multiplier, 1),
-			(store_random_in_range,":random_timings",1,5),
+			#(set_fixed_point_multiplier, 1),
+			(store_random_in_range,":random_timings",100,500), #fixed point multiplier needs to stay 100 in this loop
 			(agent_set_animation_progress, ":nearby", ":random_timings"), # differentiate timings a bit
 			
 			  (store_random_in_range, ":rand_sound", 0, 6),
