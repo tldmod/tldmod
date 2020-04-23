@@ -1926,7 +1926,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version", 16),
+    (assign,"$savegame_version", 17),
 
 	] + (is_a_wb_script==1 and [
 
@@ -10848,22 +10848,18 @@ scripts = [
 	(else_try),
 		# ithilien? (north or south)
 		(is_between, ":x", -7084, -5890 ),(is_between, ":y", -2243, 6500), 
-		(try_begin),(ge,":y",5546),
+		(try_begin),(ge,":y",4700),
 		 	(assign, reg1, region_s_ithilien),
-		(else_try),(ge,":y",1143),
+		(else_try),(ge,":y",2460),
 		 	(assign, reg1, region_c_ithilien),
 		(else_try),
 		 	(assign, reg1, region_n_ithilien),
 		(try_end),
 	(else_try),
-		# s _ ithilien?  (second chance)
-		(is_between, ":x", -8000, -3400 ),(is_between, ":y", 6000,8500), (lt, ":diff", -1065),
+		# # s _ ithilien?  (second chance)
+		(is_between, ":x", -8000, -3400 ),(is_between, ":y", 6000,8500), 
+		(lt, ":diff", -10650),
 		(assign, reg1, region_s_ithilien),
-	(else_try),
-		# c_ ithilien?  (second chance)
-		(is_between, ":x", -7800, -4700 ),(is_between, ":y", -3500,6500), 
-		(position_set_x,pos20,-3215),(position_set_y,pos20,4185),(position_set_z,pos20,0.0),(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",850),
-		(assign, reg1, region_c_ithilien),
 	(else_try),
 		# entwash? (delta entwash or wetwand)
 		(position_set_x,pos20,-3710),(position_set_y,pos20,-1570),(position_set_z,pos20,0.0),
@@ -10879,10 +10875,25 @@ scripts = [
 		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
 		(assign, reg1, region_lorien),
 	(else_try),
-		#plennor fields?
+		#pelennor fields?
 		(position_set_x,pos20,-5306),(position_set_y,pos20,+2132),(position_set_z,pos20,0),
 		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",700),
 		(assign, reg1, region_pelennor), 
+	(else_try),
+		#pelennor fields 2nd chance
+		(party_get_position, pos20 ,"p_town_minas_tirith"),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",600), #make it slightly bigger than Minas Tirith landmark range (350)
+		(assign, reg1, region_pelennor), 
+	(else_try),
+		# c_ ithilien?  (second chance, after Pelennor)
+		(position_set_x,pos20,-6000),(position_set_y,pos20,3700),(position_set_z,pos20,0.0),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",1150),
+		(assign, reg1, region_c_ithilien),
+	(else_try),
+		# s _ ithilien?  (second chance, after c_ithilien)
+		(position_set_x,pos20,-6400),(position_set_y,pos20,5900),(position_set_z,pos20,0.0),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",1900),
+		(assign, reg1, region_s_ithilien),
 	(else_try),		
 		# determine on which side of the white mountains...
 		#(store_mul,":k",":x",374.4),(store_mul,":k2",":y",1000), (val_add,":k",":k2"), 
@@ -10977,11 +10988,11 @@ scripts = [
 		(is_between, ":x", -8005,-3026 ),(is_between, ":y",   -10668,  -5261),
 		(assign, reg1, region_brown_lands),
 	(else_try),
-		#  InVain Dimrill Dale?
+		# Dimrill Dale?
 		(is_between, ":x", 3380, 5900 ),(is_between, ":y", -15396, -13843), 
 		(assign, reg1, region_dimrill),
 	(else_try),
-		#  InVain South of Erebor
+		# South of Erebor? (Realm of Dale)
 		(is_between, ":x", -6800, -5558 ),(is_between, ":y", -22800, -21875), 
 		(assign, reg1, region_s_erebor),
 	(else_try),
@@ -23990,6 +24001,40 @@ command_cursor_scripts = [
 			(troop_set_slot, "trp_npc20", slot_troop_personalityclash_object, "trp_npc13"), #Lykada
 			(troop_set_slot, "trp_npc20", slot_troop_personalityclash2_object, "trp_npc14"),  #Fuldimir
 			(assign, "$savegame_version", 16),
+	(try_end),	
+	
+	(try_begin), #InVain - April 2020, fix Goblin names for old savegames, clear remnants of former troop's inventory, add some stub items
+    	(le, "$savegame_version", 16),	
+
+			(troop_set_name, "trp_mountain_goblin", "@Mountain Goblin"),
+			(troop_remove_item, "trp_mountain_goblin", "itm_white_tunic_a"), 
+			(troop_remove_item, "trp_mountain_goblin", "itm_leather_boots"),
+			(troop_add_item, "trp_mountain_goblin", "itm_orc_simple_spear"),
+			(troop_add_item, "trp_mountain_goblin", "itm_orc_tribal_a"),
+			
+			(troop_set_name, "trp_tribal_orc", "@Tribal Orc"),
+			(troop_remove_item, "trp_tribal_orc", "itm_white_tunic_a"), 
+			(troop_remove_item, "trp_tribal_orc", "itm_leather_boots"),
+			(troop_add_item, "trp_mountain_goblin", "itm_orc_tribal_a"),
+			(troop_add_item, "trp_tribal_orc", "itm_wood_club"),
+			
+			(troop_set_name, "trp_tribal_orc_warrior", "@Tribal Orc Warrior"),
+			(troop_add_item, "trp_mountain_goblin", "itm_orc_tribal_c"),
+			(troop_add_item, "trp_mountain_goblin", "itm_orc_simple_spear"),
+			
+			(troop_set_name, "trp_tribal_orc_chief", "@Tribal Orc Chief"),
+			(troop_add_item, "trp_mountain_goblin", "itm_orc_tribal_c"),
+			(troop_add_item, "trp_mountain_goblin", "itm_orc_sabre"),
+			
+		    ] + (is_a_wb_script==1 and [
+			(troop_set_plural_name, "trp_mountain_goblin", "@Mountain Goblins"),
+			(troop_set_plural_name, "trp_tribal_orc", "@Tribal Orcs"),
+			(troop_set_plural_name, "trp_tribal_orc_warrior", "@Tribal Orc Warriors"),
+			(troop_set_plural_name, "trp_tribal_orc_chief", "@Tribal Orc Chiefs"),
+			] or [
+			]) + [
+			
+		(assign, "$savegame_version", 17),
 	(try_end),	
 ]),
 

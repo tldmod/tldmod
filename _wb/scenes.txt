@@ -224,7 +224,7 @@ scn_minas_morgul_center minas_morgul_center 4352 none none 0 0 100 100 -100 0x00
   0 
   0 
  New_outer_mountains2east_mordor 
-scn_cirith_ungol_center cirith_ungol_center 256 none none 0 0 100 100 -100 0x00000002200e95140006398d0000372f00004a8900005ff2 
+scn_cirith_ungol_center cirith_ungol_center 4352 none none 0 0 100 100 -100 0x00000002200e95140006398d0000372f00004a8900005ff2 
   0 
   0 
  outer_terrain_rohan 
@@ -236,11 +236,11 @@ scn_isengard_center isengard_center 4352 none none 0 0 100 100 -100 0x0000000320
   0 
   0 
  outer_terrain_isen 
-scn_uruk_hai_outpost_center uruk_hai_outpost_center 256 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
+scn_uruk_hai_outpost_center uruk_hai_outpost_center 4352 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
   0 
   0 
  outer_terrain_rohan 
-scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 256 none none 0 0 100 100 -100 0x0000000020054b320004390d00003b3500006f8c00006dbd 
+scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 4352 none none 0 0 100 100 -100 0x0000000020054b320004390d00003b3500006f8c00006dbd 
   0 
   0 
  outer_terrain_plain 
@@ -292,7 +292,7 @@ scn_erebor_center erebor_center 1 hallfini_wb bo_hallfini_wb_inner_tld -100 -200
   0 
   0 
  0 
-scn_dunland_camp_center dunland_camp_center 256 none none 0 0 100 100 -100 0x00000007a009c7070002589600002b6300001ef60000122e 
+scn_dunland_camp_center dunland_camp_center 4352 none none 0 0 100 100 -100 0x00000007a009c7070002589600002b6300001ef60000122e 
   0 
   1  833 
  outer_terrain_rohan 
@@ -300,7 +300,7 @@ scn_harad_camp_center harad_camp_center 4352 none none 0 0 100 100 -100 0x000000
   0 
   1  833 
  outer_terrain_steppe 
-scn_khand_camp_center khand_camp_center 256 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
+scn_khand_camp_center khand_camp_center 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
   1  833 
  outer_terrain_rohan 
@@ -312,7 +312,7 @@ scn_rivendell_camp_center rivendell_camp_center 256 none none 0 0 100 100 -100 0
   0 
   1  833 
  outer_terrain_plain 
-scn_dol_guldur_center dol_guldur_center 256 none none 0 0 100 100 -100 0x00000003b0050d0d0004b12c000072f5000027d200005f66 
+scn_dol_guldur_center dol_guldur_center 4352 none none 0 0 100 100 -100 0x00000003b0050d0d0004b12c000072f5000027d200005f66 
   0 
   0 
  New_outer_terrain_forest 
@@ -320,7 +320,7 @@ scn_north_rhun_camp_center north_rhun_camp_center 4352 none none 0 0 100 100 -10
   0 
   1  833 
  outer_terrain_flat 
-scn_gundabad_camp_center gundabad_camp_center 256 none none 0 0 100 100 -100 0x00000003200005000009c5a200000f5200005bd50000739d 
+scn_gundabad_camp_center gundabad_camp_center 4352 none none 0 0 100 100 -100 0x00000003200005000009c5a200000f5200005bd50000739d 
   0 
   1  833 
  New_outer_mountains2south_helmsdeep 
@@ -564,11 +564,11 @@ scn_mordor_castle_b mordor_castle_b 1 interior_castle_morgul bo_interior_castle_
   0 
   1  833 
  0 
-scn_rhun_south_camp_center rhun_south_camp_center 256 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_rhun_south_camp_center rhun_south_camp_center 4352 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
  outer_terrain_flat 
-scn_rhun_north_camp_center rhun_north_camp_center 256 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_rhun_north_camp_center rhun_north_camp_center 4352 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
  outer_terrain_flat 
@@ -580,11 +580,11 @@ scn_gundabad_nw_outpost_center gundabad_nw_outpost_center 256 none none 0 0 100 
   0 
   0 
  outer_mountains2north 
-scn_gundabad_mirkwood_outpost gundabad_mirkwood_outpost 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_gundabad_mirkwood_outpost gundabad_mirkwood_outpost 4352 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
  outer_terrain_forest 
-scn_dol_guldur_north_outpost_center dol_guldur_north_outpost_center 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_dol_guldur_north_outpost_center dol_guldur_north_outpost_center 4352 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
  outer_terrain_forest 
@@ -820,23 +820,23 @@ scn_isengard_underground isengard_underground 4352 none none 0 0 200 200 -100 0x
   0 
   0 
  0 
-scn_forest_fangorn1 forest_fangorn1 256 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
+scn_forest_fangorn1 forest_fangorn1 4352 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
   0 
   0 
  outer_terrain_forest 
-scn_forest_fangorn2 forest_fangorn2 256 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
+scn_forest_fangorn2 forest_fangorn2 4352 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
   0 
   0 
  outer_terrain_forest 
-scn_forest_fangorn3 forest_fangorn3 256 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
+scn_forest_fangorn3 forest_fangorn3 4352 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
   0 
   0 
  outer_terrain_forest 
-scn_forest_fangorn4 forest_fangorn4 256 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
+scn_forest_fangorn4 forest_fangorn4 4352 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
   0 
   0 
  outer_terrain_forest 
-scn_forest_fangorn5 forest_fangorn5 256 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
+scn_forest_fangorn5 forest_fangorn5 4352 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
   0 
   0 
  outer_terrain_forest 
@@ -976,11 +976,11 @@ scn_erebor_siege erebor_siege 256 none none 0 0 100 100 -100 0x00000001300005000
   0 
   0 
  outer_mountains2west 
-scn_gundabad_siege gundabad_siege 256 none none 0 0 100 100 -100 0x00000003200005000009c5a200000f5200005bd50000739d 
+scn_gundabad_siege gundabad_siege 4352 none none 0 0 100 100 -100 0x00000003200005000009c5a200000f5200005bd50000739d 
   0 
   0 
  New_outer_mountains2south_helmsdeep 
-scn_dol_guldur_siege dol_guldur_siege 256 none none 0 0 100 100 -100 0x00000003b0050d0d0004b12c000072f5000027d200005f66 
+scn_dol_guldur_siege dol_guldur_siege 4352 none none 0 0 100 100 -100 0x00000003b0050d0d0004b12c000072f5000027d200005f66 
   0 
   0 
  New_outer_terrain_forest 
@@ -1064,11 +1064,11 @@ scn_village_rohan_2 village_rohan_2 256 none none 0 0 100 100 -100 0x00000001200
   0 
   0 
  outer_terrain_rohan 
-scn_scout_camp_mirk_evil_small scout_camp_mirk_evil_small 256 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
+scn_scout_camp_mirk_evil_small scout_camp_mirk_evil_small 4352 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
   0 
   0 
  outer_terrain_forest 
-scn_scout_camp_mirk_evil_big scout_camp_mirk_evil_big 256 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
+scn_scout_camp_mirk_evil_big scout_camp_mirk_evil_big 4352 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
   0 
   0 
  outer_terrain_forest 
@@ -1180,31 +1180,31 @@ scn_beorning_village_siege beorning_village_siege 256 none none 0 0 100 100 -100
   0 
   0 
  outer_terrain_plain 
-scn_troll_cave_siege troll_cave_siege 256 none none 0 0 100 100 -100 0x00000001b00005000005a16c00006794000027d200006794 
+scn_troll_cave_siege troll_cave_siege 4352 none none 0 0 100 100 -100 0x00000001b00005000005a16c00006794000027d200006794 
   0 
   0 
  outer_mountains2north 
-scn_dunland_camp_siege dunland_camp_siege 256 none none 0 0 100 100 -100 0x00000007a009c7070002589600002b6300001ef60000122e 
+scn_dunland_camp_siege dunland_camp_siege 4352 none none 0 0 100 100 -100 0x00000007a009c7070002589600002b6300001ef60000122e 
   0 
   1  833 
  outer_terrain_rohan 
-scn_harad_camp_siege harad_camp_siege 256 none none 0 0 100 100 -100 0x000000072005591e00040506000059a100002cd500005052 
+scn_harad_camp_siege harad_camp_siege 4352 none none 0 0 100 100 -100 0x000000072005591e00040506000059a100002cd500005052 
   0 
   1  833 
  outer_terrain_steppe 
-scn_khand_camp_siege khand_camp_siege 256 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
+scn_khand_camp_siege khand_camp_siege 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
   1  833 
  outer_terrain_rohan 
-scn_north_rhun_camp_siege north_rhun_camp_siege 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_north_rhun_camp_siege north_rhun_camp_siege 4352 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
   0 
   1  833 
  outer_terrain_flat 
-scn_rhun_south_camp_siege rhun_south_camp_siege 256 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_rhun_south_camp_siege rhun_south_camp_siege 4352 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
  outer_terrain_flat 
-scn_rhun_north_camp_siege rhun_north_camp_siege 256 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_rhun_north_camp_siege rhun_north_camp_siege 4352 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
  outer_terrain_flat 
@@ -1220,11 +1220,11 @@ scn_orc_sentry_camp_center_siege orc_sentry_camp_center_siege 256 none none 0 0 
   0 
   0 
  outer_terrain_osgiliath_9 
-scn_uruk_hai_outpost_center_siege uruk_hai_outpost_center_siege 256 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
+scn_uruk_hai_outpost_center_siege uruk_hai_outpost_center_siege 4352 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
   0 
   0 
  outer_terrain_rohan 
-scn_uruk_hai_h_camp_center_siege uruk_hai_h_camp_center_siege 256 none none 0 0 100 100 -100 0x0000000020054b320004390d00003b3500006f8c00006dbd 
+scn_uruk_hai_h_camp_center_siege uruk_hai_h_camp_center_siege 4352 none none 0 0 100 100 -100 0x0000000020054b320004390d00003b3500006f8c00006dbd 
   0 
   0 
  outer_terrain_plain 
@@ -1240,11 +1240,11 @@ scn_gundabad_nw_outpost_center_siege gundabad_nw_outpost_center_siege 256 none n
   0 
   0 
  outer_mountains2north 
-scn_gundabad_mirkwood_outpost_siege gundabad_mirkwood_outpost_siege 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_gundabad_mirkwood_outpost_siege gundabad_mirkwood_outpost_siege 4352 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
  outer_terrain_forest 
-scn_dol_guldur_north_outpost_center_siege dol_guldur_north_outpost_center_siege 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_dol_guldur_north_outpost_center_siege dol_guldur_north_outpost_center_siege 4352 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
  outer_terrain_forest 
@@ -1308,11 +1308,11 @@ scn_morannon_outside_2 morannon_outside_2 4352 none none 0 0 100 100 -100 0x0000
   0 
   0 
  New_outer_mountains2south_morannon 
-scn_dolguldur_outside_1 dolguldur_outside_1 256 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
+scn_dolguldur_outside_1 dolguldur_outside_1 4352 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
   0 
   0 
  New_outer_mountains2east_mordor 
-scn_dolguldur_outside_2 dolguldur_outside_2 256 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
+scn_dolguldur_outside_2 dolguldur_outside_2 4352 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
   0 
   0 
  New_outer_mountains2east_mordor 

@@ -1,4 +1,4 @@
-1845
+1853
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -695,6 +695,14 @@ qstr_loses_Faction_Strengt loses_Faction_Strength_due_to_the_destruction_of_thei
 qstr_gains_Faction_Streng gains_Faction_Strength_as_news_of_your_victory_spreads.
 qstr_{s11}_{s10} {s11}_{s10}
 qstr_{s13}_{s14} {s13}_{s14}
+qstr_Mountain_Goblin Mountain_Goblin
+qstr_Tribal_Orc Tribal_Orc
+qstr_Tribal_Orc_Warrior Tribal_Orc_Warrior
+qstr_Tribal_Orc_Chief Tribal_Orc_Chief
+qstr_Mountain_Goblins Mountain_Goblins
+qstr_Tribal_Orcs Tribal_Orcs
+qstr_Tribal_Orc_Warriors Tribal_Orc_Warriors
+qstr_Tribal_Orc_Chiefs Tribal_Orc_Chiefs
 qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
 qstr_Troop:_{s6}___Level: Troop:_{s6}_-_Level:_{reg1}
 qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}
