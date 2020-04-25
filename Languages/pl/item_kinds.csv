@@ -160,12 +160,12 @@ itm_riv_1h_sword|Miecz z Rivendell
 itm_riv_riding_sword|Miecz Kawaleryjski z Rivendell
 itm_riv_archer_sword|Miecz Zwiadowcy z Rivendell
 itm_riv_spear|Włócznia z Rivendell
-; itm_riv_light|Rivendell Tunic
-; itm_riv_leather|Rivendell Leather Armor
-; itm_riv_foot_mail|Rivendell Mail
+itm_riv_light|Tunika z Rivendell
+itm_riv_leather|Skórzany pancerz z Rivendell
+itm_riv_foot_mail|Kolczuga z Rivendell
 ; itm_riv_foot_scale|Rivendell Scale
-; itm_riv_surcoat|Rivendell Surcoat
-; itm_riv_knight|Rivendell Knightly Armour
+itm_riv_surcoat|Surkot z Rivendell
+itm_riv_knight|Zbroja rycerska z Rivendell
 itm_riv_armor_h_archer|Zbroja z Rivendell
 itm_riv_armor_leader|Skórzana Zbroja z Rivendell
 itm_riv_boots|Buty z Rivendell
@@ -190,15 +190,15 @@ itm_gondor_med_greaves|Gondorskie Porządne Nagolenniki
 itm_gondor_heavy_greaves|Gondorskie Kolcze Nogawice
 itm_gondorian_light_helm|Gondorski Hełm Piechura
 itm_gondor_infantry_helm|Gondorski Hełm Piechoty
-; itm_gondor_auxila_helm|Gondor Light Helm
+itm_gondor_auxila_helm|Gondorski lekki hełm
 itm_gondorian_light_helm_b|Gondorski Hełm Łucznika
-; itm_gondorian_archer_helm|Gondor Archer Helm
+itm_gondorian_archer_helm|Gondorski Hełm Łucznika
 itm_tower_archer_helm|Hełm Strzelca Cytadeli
 itm_gondor_leader_helm|Gondorski Wspaniały Hełm
 itm_tower_guard_helm|Hełm Gwardii Cytadeli
 itm_gondor_citadel_knight_helm|Hełm Rycerza Cytadeli
 itm_gondor_squire_helm|Gondorski Hełm Giermka
-; itm_gondor_knight_helm|Gondor Cavalry Helm
+itm_gondor_knight_helm|Gondorski Hełm Kawalerzysty
 itm_gondor_dolamroth_helm|Hełm z Dol Amroth
 itm_swan_knight_helm|Hełm Łabędziego Rycerza
 itm_gondor_lamedon_helm|Lamedoński Hełm
@@ -278,9 +278,9 @@ itm_lorien_sword_a|Długi Miecz z Lorien
 itm_lorien_sword_b|Krótki Miecz z Lorien
 itm_lorien_sword_c|Wojenny Miecz z Lorien
 itm_lorien_archer|Miecz Łucznika z Lorien
-; itm_lorien_armor_a|Lorien Quilted Armor
-; itm_lorien_armor_b|Lorien Mail Armor
-; itm_lorien_armor_c|Lorien Scale Armor
+itm_lorien_armor_a|Pikowany Pancerz z Lorien
+itm_lorien_armor_b|Kolczuga z Lorien
+itm_lorien_armor_c|Zbroja płytowa z Lorien
 itm_lorien_armor_d|Królewska Zbroja Mitrza Miecza z Lorien
 itm_lorien_armor_e|Płaszcz Strażnika z Lorien
 itm_lorien_armor_f|Elitarna Zbroja z Lorien
@@ -504,7 +504,7 @@ itm_rohan_light_greaves|Rohańskie lekkie Nagoleenniki
 itm_rohirrim_war_greaves|Rohańskie Wojenne Nagolenniki
 ; itm_mirkwood_leather|Woodelf Leather Armor
 ; itm_mirkwood_pad|Greenwood Quilted Coat
-; itm_mirkwood_mail|Greenwood Mail
+itm_mirkwood_mail|Kolczuga z Greenwood
 ; itm_mirkwood_scale|Greenwood Light Scale
 itm_mirkwood_heavy_scale|Zbroja z Mrocznej Puszczy
 ; itm_mirkwood_great_spear|Greenwood Great Spear

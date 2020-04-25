@@ -285,9 +285,9 @@ str_name_34|Эреллонт
 str_name_35|Эрендис
 str_name_36|Фалатхар
 str_name_37|Фенгел
-; str_name_38|Forweg
-; str_name_39|Frumgar
-; str_name_40|Fuinur
+str_name_38|Форвег
+str_name_39|Фрумгар
+str_name_40|Фулнир
 str_name_41|Галдор
 ; str_name_42|Gethron
 ; str_name_43|Gorlim
@@ -349,14 +349,14 @@ str_name_71|Пелендур
 ; str_name_elf_19|Galathil
 str_name_elf_20|Галдор
 ; str_name_elf_21|Gelmir
-; str_name_elf_22|Gildor
+str_name_elf_22|Гилдор
 ; str_name_elf_23|Guilin
 ; str_name_elf_24|Ithilbor
 ; str_name_elf_25|Lindir
 ; str_name_elf_26|Lómion
 ; str_name_elf_27|Maedhros
 ; str_name_elf_28|Maeglin
-; str_name_elf_29|Malgalad
+str_name_elf_29|Малгалад
 ; str_name_elf_30|Nellas
 ; str_name_elf_31|Nerdanel
 ; str_name_elf_32|Nerwen
@@ -423,12 +423,12 @@ str_name_dwarf_17|Ибун
 ; str_name_orc_28|Igmut
 ; str_name_orc_29|Jolagh
 ; str_name_orc_30|Jukha
-; str_name_orc_31|Karguk
+str_name_orc_31|Каргук
 ; str_name_orc_32|Klog
-; str_name_orc_33|Krothu
-; str_name_orc_34|Kulgha
-; str_name_orc_35|Margulg
-; str_name_orc_36|Mazhug
+str_name_orc_33|Крозу
+str_name_orc_34|Кулгха
+str_name_orc_35|Маргугл
+str_name_orc_36|Мазук
 ; str_name_orc_37|Naghat
 ; str_name_orc_38|Nugbu
 ; str_name_orc_39|Nurbag
@@ -2170,9 +2170,9 @@ str_gondor_end|Гондор1
 ; str_harad_faction_intro|^The Haradrim, the “hosts of the South” in Sindarin, come from the deserts and rainforests of the far South. They have a fondness for wearing bright colours and heavy gold ornamentation in warfare.^^Haradrim have average but competent infantry (skirmishers/archers and spearmen/swordsmen) from Great Harad, a cavalry line (incorporating both heavy cavalry and horse archers) from Harondor and a Far Harad line of tribal warriors.
 ; str_rhun_faction_intro|^Men of Rhûn are tribal Easterlings hailing from around the sea of Rhûn, far to the east.^^The bulk of their army is cavalry - horse archers and lancers, both very lightly-equipped. Their top-tier cavalrymen ride much larger and heavier mounts, with more barding. Their infantrymen are also quite lightly-armoured and wield large axes and swords. In the open field, a cavalry host of Rhûn can be a fearsome force to face.
 ; str_khand_faction_intro|^The Variags of Khand are fierce Easterling raiders who wear terrifying battlemasks into battle.^^They rely on fast light infantry (skirmishers and blademasters) and heavy axemen, while their cavalry line contains both light agile skirmishers and heavy kataphracts. The light infantry fling devastating volleys of throwing spears while screening the advance of the main host. The most savage among them charge into battle wearing little armour, attacking with great strength and ferocity.
-; str_umbar_faction_intro|^The Corsairs of Umbar are southern enemies of Gondor, descendants of the Black Númenoreans who conduct numerous raids on Gondor’s coastlines.^^Corsairs employ both lightly-armoured skirmishers and heavier swordmasters as well as skilled longbowmen. Being a mainly seafaring force, they favour armour that sacrifices toughness for mobility.
-; str_moria_faction_intro|^Orcs of Moria occupy the halls of Khazad Dúm, once a mighty Dwarven kingdom.^^Like regular orcs, their forces consist of a mix of infantry, archers, skirmishers and warg-riders, but generally they have better equipment than other orcs, because they use metal scraps found in Moria. Some lucky few among them also have access to bits of looted dwarven armour and weapons. Orc Chieftains of Moria have proved themselves stronger and fiercer than their kin, and they are fearsome in battle.
-; str_guldur_faction_intro|^Dol Guldur is an old fortress of Sauron in Mirkwood – indeed, it is the reason “Greenwood the Great” is now known by this darker name.^^Here, a contingent loyal to Mordor trains and prepares a great host, sending out frequent raiding parties against the Elves as well as the parties of Men who pass through the woods. The troops of Dol Guldur are mostly orcs, with a lineup very similar to Mordor’s (infantry, skirmishers, archers, warg riders), but with somewhat less variety.
+str_umbar_faction_intro|^Умбарские корсары - южные враги Гондора, потомки черных Нуменорцев, которые проводили бесчисленные набеги на Гондорскую береговую линию. ^^Корсары используют легко-вооруженных застрельщиков и более тяжелых мечников, а так же опытных лучников. Будучи в основном мореплавателями, они жертвуют броней ради мобильности
+str_moria_faction_intro|^Орки Мории занимают залы Кхазад-Дума, некогда могущественного гномьего королевства. ^^Как  и у обычных орков их силы состоят из смеси пехоты, лучников, застрельщиков и наездников варгов, однако в основном они лучше экипированы, чем обычные орки благодаря остаткам железа найденным в Мории. Некоторые везунчики имеют доступ к украденным частям гномьей брони и оружия. Вожди Орков Мории показали себя как сильнейшие и свирепейшие из своего рода, они очень опасны в бою.
+str_guldur_faction_intro|^Дол Гулдур - это старая крепость Саурона в Лихолесье. Именно она причина по которой "Великое Зеленолесье" теперь известно под своим темным именем. ^^Здесь верный Мордору готовят и  тренируют великое воинство, совершают частые набеги на Эльфов и на группы Людей проходящих через лес. Войска Дол Гулдура преимущественно состоят из орков в таком же составе как и Мордорские орки (пехота, лучники, застрельщики и наездники варгов), но с меньшем разнообразием.
 ; str_gundabad_faction_intro|^Gundabad was a place sacred to the Dwarves, but in these days it has become a massive Orc stronghold in the northern mountains.^^The Gundabad orcs, though more savage than their fellows from other places, fight much like any other orcs, with a similar army lineup (infantry, archers, skirmishers, warg riders). Their equipment is primitive and their fighting style barbaric. Their warg riders are unrivalled in toughness and ferocity. Some among the orcs of Gundabad can even whip themselves into a battle-frenzy.
 ; str_dunland_faction_intro|^The Dunlendings are the “wild men of Dunland”, enemies of the Rohirrim who drove them from their homeland.^^Dunland is barren and poor. The Dunlendings wear very little real armour – mostly furs and cured leather, with some metal signifying status. For weaponry, they wield long pikes and antler axes, with rare swords serving as emblems of prestige. Their horses are thin and weak, certainly no match for the steeds of Rohan, though occasionally the Dunlendings will ride them into battle as skirmishers. In battle, the pikemen advance en masse, presenting a crude but formidable wall of sharp polearms. Some Dunlendings have also cultivated affinity with creatures of the wild, and may unleash packs of savage wolves against their foes.
 ; str_beorn_faction_intro|^Beornings, the descendants of Beorn, are a people of the upper Vales of Anduin, between Mirkwood and the Misty Mountains. They dwell mostly in the forests, though they keep the Old Ford clear for trade, exacting a toll on merchant caravans for their service.^^As woodsmen, they wield stout sticks and sharp axes, but wear little in the way of armour. Heavier Beorning infantry fight with shields as well. Beorning foresters are skilled bowmen and provide a valuable archer line.
@@ -2203,7 +2203,7 @@ str_show_keybinds|Специальные клавиши: ^^ Клавиши по�
 str_formations|В Меню Битвы есть следующие формации:^^- РЯДЫ с сильнейшими бойцами спереди^- СТЕНА ЩИТОВ, ряды с щитами спереди и длинным оружием позади^- КЛИН с лучими бойцами на острие^- КВАДРАТ без определённого порядка^- БЕЗ ФОРМАЦИИ^^Даже в последнем случае, игрок может создать формацию до 4 рядов, приказывая ВСТАТЬ ПЛОТНЕЕ соответствующее число раз.
 ; str_npc18_intro|Great One, hold a moment! I would speak with you!
 ; str_npc19_intro|Hold a moment, Commander. I would have words with you. No, no, you need not kneel, even though you speak to one of royal blood.
-; str_npc20_intro|Wait. You. I've seen you. I know your face. A dream I had, of you - but why would it be you? Now that I see you with mine own eyes, you are little more than a lowly snaga!
+str_npc20_intro|Подожди. Ты. Я уже видел твое лицо. У меня был сон о тебе, но как это может быть ты ? Теперь, когда я увидел тебя своими собственными глазами, я осознал, что ты не больше чем жалкий червяк
 str_npc21_intro|Добро пожаловать в Медусельд, воин!
 str_npc22_intro|Приветствую, {playername}. Маэ гованнен!
 str_npc23_intro|Оставь меня в покое, {незнакомец/незнакомка}. Я не хочу с тобой разговаривать.
@@ -2212,7 +2212,7 @@ str_npc25_intro|Добро пожаловать в Дэйл, путник! Че�
 str_npc26_intro|Тсс! Если ты будешь махать страже, я перережу тебе глотку и отдам варгам!
 str_npc27_intro|Ты!
 ; str_npc18_intro_response_1|A slave in stocks, bound for death, would speak with me? What have you to say?
-; str_npc19_intro_response_1|Royal blood you say? Ha! What makes you think you have even a drop of it?
+str_npc19_intro_response_1|Королевская кровь ? Ха! Что заставляет тебя думать, что ты имеешь хотя бы ее каплю 
 ; str_npc20_intro_response_1|Look here, what do you mean by this, witch? Who are you?
 str_npc21_intro_response_1|Приветствую, моя госпожа. С кем я имею честь говорить?
 str_npc22_intro_response_1|Приветствую, эльфийский владыка! Большая честь - познакомиться с вами.
@@ -2272,7 +2272,7 @@ str_npc25_backstory_later|Я нанесла ещё один визит наше�
 str_npc26_backstory_later|Чем, по-вашему, я занимаюсь? Гулм просто сидит тут и ждёт, пока какой-нибудь подлый снага не пришьёт его в темноте. Возьмите меня с собой: я хорошо послужу вам.
 str_npc27_backstory_later|Вы передумали? Я буду хорошо служить.
 ; str_npc18_backstory_response_1|If you are truly as ferocious as you look, perhaps you could fight for me. After we feed you up a bit, of course.
-; str_npc19_backstory_response_1|Very well. As long as you can fight in the battle line, you can be of use, Dunlending.
+str_npc19_backstory_response_1|ОЧень хорошо. Пока можешь сражаться на передовой ты можешь быть полезен, Дунландец
 ; str_npc20_backstory_response_1|Strange way of asking to join me, witch. But very well, you may come along.
 str_npc21_backstory_response_1|Я не откажусь от помощи роханской девы щита, буде таковая предложена.
 str_npc22_backstory_response_1|Возможно, это прозвучит довольно нахально, но в моём отряде пригодились бы твои навыки. Особенно в свете грядущих битв.
@@ -2321,7 +2321,7 @@ str_npc24_signup_response_1|Очень хорошо, уважаемый гном
 str_npc25_signup_response_1|С нам ты в безопасности, даю слово. Мы скоро выезжаем.
 str_npc26_signup_response_1|Очень хорошо. Делай, что говорят, и я хорошо тебя накормлю.
 str_npc27_signup_response_1|Очень хорошо. Пошли.
-; str_npc18_signup_response_2|Your are fierce... perhaps too fierce. A little more time in the stocks for now might teach you obedience.
+str_npc18_signup_response_2|Ты буйный... возможно даже слишком буйный. Еще немного времени в загоне научат тебя повиновению.
 ; str_npc19_signup_response_2|You shall have to sit on these bales of hay for a little longer, 'Prince'.
 ; str_npc20_signup_response_2|Your brag and abuse grate upon my ears. Tame your tongue before we speak again!
 str_npc21_signup_response_2|Простите, сударыня, может быть, в другой раз.
@@ -2392,7 +2392,7 @@ str_npc25_personalityclash_speech_b|Оно сделано из полыни, в�
 str_npc26_personalityclash_speech_b|{s11} вызывает у меня только ненависть.
 str_npc27_personalityclash_speech_b|{s11} вызывает у меня только ненависть.
 ; str_npc18_personalityclash2_speech|Gulm is not only a treacherous beast, Great One - he is proud of being one. He was telling us his story again around the campfire last night, and boasting of his foul deed. You would do well to watch that creature, Great One. If he could betray his commanders when serving the White Hand, what's to stop him from doing the same with you?
-; str_npc19_personalityclash2_speech|I hate {s11}
+str_npc19_personalityclash2_speech|{s11} вызывает у меня только ненависть.
 ; str_npc20_personalityclash2_speech|Every time I set eyes upon Fuldimir, a nameless rage within me rises. No, no, it is nothing he has done. But he and his people, the sea-dogs of Umbar, are most unworthy of their blood. They dare call themselves heirs of ancient Anadûnê - but of course, they say 'Númenor', not knowing any better. Why, I would suppose that barely a drop of the true blood is to be found in Fuldimir's veins! Perhaps, if you can spare him, I could find out for myself...
 str_npc21_personalityclash2_speech|Доводилось ли мне говорить, что {s11} меня бесит?
 str_npc22_personalityclash2_speech|Доводилось ли мне говорить, что {s11} меня бесит?
@@ -2441,7 +2441,7 @@ str_npc24_retirement_speech|Воинский быт меня немного ут
 str_npc25_retirement_speech|Воинский быт меня немного утомил. Я ухожу на покой.
 str_npc26_retirement_speech|Воинский быт меня немного утомил. Я ухожу на покой.
 str_npc27_retirement_speech|Воинский быт меня немного утомил. Я ухожу на покой.
-; str_npc18_rehire_speech|My blade yet thirsts for blood, Great One. Let me come with you again!
+str_npc18_rehire_speech|Мой меч все еще жаждет крови, Великий. Позволь мне пойти с тобой еще раз.
 ; str_npc19_rehire_speech|It is good to see you again, Commander. Give me leave to rejoin your company.
 ; str_npc20_rehire_speech|Let us be off, Commander. This war will not be won with idleness!
 str_npc21_rehire_speech|И снова добро пожаловать. Можем ли мы продолжить с того места, на котором остановились?
@@ -2537,7 +2537,7 @@ str_npc27_honorific|Повелитель
 ; str_dwarf_guildmaster_companion_player_none_ok|You needn’t get so annoyed, good master, I was simply asking. Good day to you.
 ; str_dwarf_guildmaster_player_found_ok|That is excellent to hear, good master. Good day to you!
 ; str_dwarf_erebor_guildmaster_companion|Oh ho! It’s warriors you’re after, are you? Then I have just the Dwarf for you: look for one Kili Goldfinger. A most excellent and audacious Dwarf he is, and a credit to his clan. Fights almost as well as a Longbeard, though he’s still fairly young as we reckon it. Quite good at story-telling, too, and he favours the cheerful sort of tale. Go and have a talk with him - I shouldn’t think he needs much persuading to follow you out into the wide world and do his bit for the war. Now, let me see… he’s not down here at the moment. Not the Great Chamber, either. The upper halls, perhaps - look for him there.
-; str_rhun_guildmaster_companion_player_ask|I heard there were great warriors here. Where are they? Who are worthy to join me?
+str_rhun_guildmaster_companion_player_ask|Я слышал о великих войнах из этих мест. Где они ? Кто достоин присоединится ко мне ?
 ; str_rhun_guildmaster_companion_none|Not all our warriors here are blooded, but each of them is stronger and braver than any ten Dalishmen! Go and ask the arms master to see if he can spare any for you.
 ; str_rhun_guildmaster_companion_player_none_ok|I ask for great warriors, and you show me drinkers of mother’s milk. Pah!
 ; str_rhun_guildmaster_player_found_ok|That is good to hear. Finally - a warrior with spirit!
@@ -2563,7 +2563,7 @@ str_npc27_honorific|Повелитель
 ; str_dunland_guildmaster_companion_player_none_ok|Curs and whelps! It is no wonder your people were driven into the hills by the men of Rohan.
 ; str_dunland_guildmaster_player_found_ok|A treacherous wolf, I would hardly keep by my side. But a tame hunting dog, I might consider. Let me see which one this Heidrek proves to be.
 ; str_dunland_main_guildmaster_companion|Despise us at your peril! Even a wretched cur will snap at your heels in a fight. We will have our vengeance on the Forgoil and their allies - and likely it will be Heidrek whom we’ll follow into Edoras. He’s a mongrel, that one - says he’s the grandson of a strawhead king, for all that he looks no different from any of us. He’s a terror in the training yard. If Chief Daeglaf doesn’t watch his back he just might find Heidrek’s spear in it one of these days. Maybe he’ll deign to follow you, if he thinks you’re worth his time. Look for him at the main campfire, where our chieftains stand.
-; str_khand_guildmaster_companion_player_ask|I heard there were great warriors here. Where are they? Who are worthy to join me?
+str_khand_guildmaster_companion_player_ask|Я слышал о великих войнах из этих мест. Где они ? Кто достоин присоединится ко мне ?
 ; str_khand_guildmaster_companion_none|Those who have earned their death masks wish to follow commanders of still greater renown, but you may look for new recruits among our pitfighters and levies. Do not presume more than your station, Commander! 
 ; str_khand_guildmaster_companion_player_none_ok|I ask for warriors and you show me pit slaves and unblooded peasants. Waste my time at your peril.
 ; str_khand_guildmaster_player_found_ok|She sounds like a killer, right enough - but can her ferocity be leashed to useful purpose? We shall have to see.
@@ -2578,13 +2578,13 @@ str_npc27_honorific|Повелитель
 ; str_mordor_guildmaster_companion_player_none_ok|Oh, I’ll remember this slight, mark my words. Do me a good turn, and I’ll not forget it, but speak uncivilly to me, and you’ll soon see what I can do about that.
 ; str_mordor_guildmaster_player_found_ok|Well, I’ve struck a bit of luck at last, I see! You’ve done well. I’ll report your contribution.
 ; str_mordor_morgul_guildmaster_companion|You’ll want an Uruk for that, mark my words. The best fighters for sure in this sorry-looking lot. Now, if you’re looking for a trusty lad to watch your back in a fight, I’ll tell you straight: you’ll not find better than old Gorbag. Used to be a comrade of mine, before I got assigned here, a while after the Great Signal went up. Now that he’s off the patrol lists, he could join up with you right enough. He ought to be up there somewhere, by that big ruined Tower where the Bosses meet to talk sometimes. Looking down at the rest of these dunghill rats - he likes to do that, he does, ha!
-; str_harad_guildmaster_companion_player_ask|I heard there were great warriors here. Where are they? Who are worthy to join me?
+str_harad_guildmaster_companion_player_ask|Я слышал о великих войнах из этих мест. Где они ? Кто достоин присоединится ко мне ?
 ; str_harad_guildmaster_companion_none|It is not accordant to our creed for our greatest to join with such as thee, O Commander. In the world, there are the great and the small; for soldiers such as ourselves, always we stand in this relation to one another. I counsel you to seek out those who could learn from you in battle; it is better not to try yoking a mighty stallion to a weakly-made plow, for the stallion would then destroy the plow, to the detriment of all.
-; str_harad_guildmaster_companion_player_none_ok|If I understand you correctly, you’ve just disrespected me. I’ll remember this.
+str_harad_guildmaster_companion_player_none_ok|Похоже, что ты не уважаешь меня, если я правильно понял. Я запомню это.
 ; str_harad_guildmaster_player_found_ok|I see. I hope this Lykyada is as great a warrior as you say he is.
 ; str_harad_main_guildmaster_companion| I heard a story around the fires: when the Black Serpent called his bannermen, who are some of our finest horse archers, many boasted of how all the treasures of the West would soon be theirs; but one whom we call Lykyada stood apart and remained silent. And when they asked him what he hoped to take from the West, he stooped, scooped up a handful of sand, and said, “What do I require that the land of my birth has not already given me? Behold, I make a gift to them of the sand on which I have stood.” And so saying, he let the wind from the east blow the sand away, into the west. Then all who heard this repented of their injudicious words, and swore to follow his lead. If he finds you worthy, Commander, he may follow yours. Look for him where he stands in attendance upon our chieftains.
 ; str_rohan_hornburg_guildmaster_companion|All here at the Hornburg have their given duties, Commander - all save one, I should say. Maybe that one will ride out with you, for otherwise he should be lucky if another Éored will consent to have him! A drunken sot is our Ulfas - good cheer he brings to his comrades, and he is a skilled Rider, but loth is he to set down a tankard without first draining it! Look for him in the hall yonder, if that does not trouble you.
 ; str_imladris_guildmaster_companion_player_ask|Elder, I seek the aid of renowned warriors, Man or Elf, from the fabled North.
 ; str_imladris_guildmaster_companion_none|Look well, Commander. Before you is perhaps the last great muster of the North, in this Age and any Age hereafter. Man and Elf alike, we who have come here do not hope to return. From the Last Homely House we have come; from the vales and forests of Eriador the last of the Núnatani, whom you call Dúnedain, have come. Each of us has his appointed tasks - none may follow you as you wish, save that you exercise your writ and recruit from our garrison. 
-; str_imladris_guildmaster_companion_player_none_ok|I understand, Elder. I thank you for your time.
-; str_imladris_guildmaster_player_found_ok|I understand, Elder. I thank you for your time.
+str_imladris_guildmaster_companion_player_none_ok|Я понимаю, Старейшина. Спасибо за уделенное время
+str_imladris_guildmaster_player_found_ok|Я понимаю, Старейшина. Спасибо за уделенное время

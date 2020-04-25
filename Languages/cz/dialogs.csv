@@ -259,9 +259,9 @@ dlga_lord_start:kill_quest_failed|Doslechl jsem se, že jsi nedokázal udělat t
 dlga_lord_start:lord_generic_mission_completed.6|Tví muži byli svědky tvé odvahy v bitvě, {playername}. Získal jsi můj respekt.
 dlga_kill_quest_failed:close_window|Příště to udělám lépe.
 dlga_lord_start:lord_follow_spy_completed|{s4}
-dlga_lord_start:lord_follow_spy_half_completed|Zatraceně a k čertu s tebou! Chtěl jsem DVA vězně, {playername} -- co jsi předvedl je na hraně neschopnosti! Už vím vše co věděl ten zvěd, chtěl jsem jeho společníka! Tady máš, půl úkolu znamená půl odměny. Vem si to a zmiz.
-dlga_lord_start:lord_follow_spy_half_completed.1|Chtěl jsem dva vězně, {playername} ne jednoho. Dva. No, ale zajal jsi jeho pomocníka, ten je důležitější. Zvěd se sem neodváží vrát a bude svému pánovi k ničemu. To je lepší než nic. Ale chápeš, že ti za půl práce dám půl odměny.
-dlga_lord_start:lord_follow_spy_failed|No, {playername}. Jsi zřejmě jsi naprosto neshopný. Nedokázat zajmout špeha I jeho pomocníka, znamená úplně nové výšiny selhání. Na odměnu zapomeň, nezasloužíš si ji.
+dlga_lord_start:lord_follow_spy_half_completed|Zatraceně a k čertu s tebou! Chtěl jsem DVA vězně, {playername} -- co jsi předvedl je na hraně neschopnosti! Už vím vše co věděl ten zvěd, chtěl jsem jeho šéfa! Tady máš, půl úkolu znamená půl odměny. Vem si to a zmiz.
+dlga_lord_start:lord_follow_spy_half_completed.1|{playername}, žádal jsem dva vězně, ne jednoho. Dva. No, ale zajal jsi jeho šéfa, ten je důležitější. Zvěd se sem neodváží vrátit a svému pánovi, se ukázal jako neschopný v každém ohledu. To je lepší než nic. Ale chápeš, že ti za půl práce dám půl odměny.
+dlga_lord_start:lord_follow_spy_failed|Opravdu, {playername}, jsi naprosto neschopný. Neschopnost zajmout špeha I jeho pomocníka, odhalila úplně nové výšiny selhání. Na odměnu zapomeň, neudělala jsi nic za co by sis ji zasloužil.
 dlga_lord_follow_spy_half_completed:lord_pretalk|Dělal jsem, co jsem mohl, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Děkuji, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hrm. Jak si přejete, {s65}.

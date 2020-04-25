@@ -1,27 +1,27 @@
-dlga_start:mutiny_pretalk_1|喂 ， {playername}. 告 訴 你.. 弟 兄 們 在 抱 怨! 想 多 點 樂 子, 少 點 行 軍.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|歸 隊，蛆 蟲 ！我 們 處 於 戰 爭 中 而 我 是 你 們 的 指 揮 官。
-dlga_mutiny_pretalk_2:close_window|如 您 所 願, 指 揮 官, 如 您 所 願...
-dlga_start:mutiny_talk_1|喂，指 揮 官。告 訴 你... 弟 兄 們 不 高 興！一 點 都 不 高 興！ ^沒 人 肉 吃，沒 樂 子 找！ ^伙 計 們 認 為 指 揮 官 你 不 夠 好！
-dlga_mutiny_talk_1:mutiny_talk_2|什 麼? 在 戰 爭 期 間 叛 變? 這 可 是 死 刑 哪，蛆 蟲!!
-dlga_mutiny_talk_2:close_window|告 訴 你... 弟 兄 們 認 為 在 我 殺 了 你 以 後 會 是 個 更 好 的 指 揮 官!
-dlga_start:troll_introduce_1|有 問 題 嗎?
-dlga_start:troll_talk_1|你 瘋 了?
-dlga_troll_introduce_1:troll_goodbye|哇! 一 隻 會 說 話 的 食 人 妖?!
-dlga_troll_introduce_1:close_window|我 有 一 匹 馬.
-dlga_troll_talk_1:troll_talk_2|來 整 我 啊 ，食 人 妖。 (Troll me, Troll.)
-dlga_troll_talk_1:close_window|我 有 一 匹 馬.
-dlga_troll_talk_2:troll_talk_3|接 受 挑 戰!^^{s4}
-dlga_troll_beaten:troll_talk_1|我 向 你 的 智 慧 致 敬，食 人 妖 誘 捕 大 師!
-dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
-dlga_start:hobbit_merry_talk_met|又 見 面 了{playername}!
-dlga_start:hobbit_pippin_talk_met|又 見 面 了{playername}!
-dlga_start:hobbit_general_talk_1|您 好, {先 生/女 士}! 我 的 名 字 是 梅 里 雅 達 克 烈 酒 鹿 但 你 可 以 叫 我 梅 里!
-dlga_start:hobbit_general_talk_1.1|您 好, {先 生/女 士}! 我 的 名 字 是 皮 瑞 格 林 圖 克 但 是 你 可 以 叫 我 皮 聘!
-dlga_hobbit_general_talk_1:close_window|我 現 在 沒 有 時 間。
-dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|話 說，我 從 未 見 過 你 的 種 族.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|話 說，我 從 來 沒 在 伊 多 拉 斯 遇 到 跟 你 一 樣 的 人。
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|話 說，我 從 來 沒 在 米 納 斯 提 里 斯 遇 到 跟 你 一 樣 的 人。
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|我 知 道。我 來 自 遠 方! 我 是 一 個 哈 比 人， {先 生/女 士}，我 來 自 夏 爾。
+dlga_start:mutiny_pretalk_1|喂，{playername}。告訴你.. ^弟兄們在抱怨！想多點樂子，少點行軍。
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|歸隊，蛆蟲！我們正在戰爭中而我是你們的指揮官。
+dlga_mutiny_pretalk_2:close_window|如你所願，指揮官，如你所願...
+dlga_start:mutiny_talk_1|喂，指揮官。告訴你... 弟兄們不高興！一點都不高興！ ^沒人肉吃，沒樂子找！ ^弟兄們認為指揮官你不夠好！
+dlga_mutiny_talk_1:mutiny_talk_2|什麼？ 在戰爭期間叛變？ 這可是要判死刑的，蛆蟲！
+dlga_mutiny_talk_2:close_window|讓我們告訴你... 弟兄們認為在我殺了你以後會是個更好的指揮官！
+dlga_start:troll_introduce_1|有問題嗎？
+dlga_start:troll_talk_1|生氣了？
+dlga_troll_introduce_1:troll_goodbye|哇！一隻會說話的巨魔？！
+dlga_troll_introduce_1:close_window|我有一匹馬。
+dlga_troll_talk_1:troll_talk_2|來抓我啊，巨魔。
+dlga_troll_talk_1:close_window|我有一匹馬。
+dlga_troll_talk_2:troll_talk_3|接受挑戰！^^{s4}
+dlga_troll_beaten:troll_talk_1|我向你的智慧致敬，天才巨魔小釣手！
+dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL！
+dlga_start:hobbit_merry_talk_met|又見面了，{playername}！
+dlga_start:hobbit_pippin_talk_met|又見面了，{playername}！
+dlga_start:hobbit_general_talk_1|你好，{先生/女士}！我的名字是梅里雅達克·烈酒鹿但你可以叫我梅里！
+dlga_start:hobbit_general_talk_1.1|你好，{先生/女士}！我的名字是皮瑞格林·圖克但你可以叫我皮聘！
+dlga_hobbit_general_talk_1:close_window|我現在沒空。
+dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|話說，我從未見過你這種人。
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|話說，我想我在伊多拉斯有遇到跟你一樣的人。
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|話說，我想我在米那斯提力斯有遇到跟你一樣的人。
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|我知道。我來自遠方！我是一個哈比人，{先生/女士}，來自夏爾。
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|噢，那 肯 定 是 我 親 愛 的 表 親 了! 皮 瑞 格 林 圖 克，或 人 稱 皮 聘。我 們 是 哈 比 人。{先 生/女 士}, 我 們 來 自 夏 爾，我 們 兩 個 都 是! 真 懷 念 皮 聘，不 知 道 他 在 米 納 斯 提 里 斯 過 得 好 不 好。
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|噢，那 肯 定 是 我 親 愛 的 表 親 了! 梅 里 雅 達 克 烈 酒 鹿，或 人 稱 梅 里。我 們 是 哈 比 人。{先 生/女 士}, 而 且 我 們 來 自 夏 爾，我 們 兩 個 都 是! 真 懷 念 梅 里，不 知 道 他 在 伊 多 拉 斯 過 得 好 不 好。
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|可 以 請 你 幫 個 忙 嗎，{大 人/女 士}。
@@ -213,7 +213,7 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window.1|我 們 會 與 你 
 dlga_party_encounter_offer_dont_fight:close_window|我 欠 你 一 個 人 情，是 吧？嗯… 好。這 次 我 就 放 過 你。
 dlga_party_encounter_offer_dont_fight:close_window.1|哈 哈，但 我 想 和 你 戰 鬥。
 dlga_start:close_window.8|滾，臭 乞 丐！
-dlga_start:lord_start|這 不 是 我 英 勇 的 冠 軍  {playername} 嗎…
+dlga_start:lord_start|這 不 是 我 英 勇 的 勇 士  {playername} 嗎…
 dlga_start:lord_start.1|很 高 興 再 次 見 到 你，{playername}…
 dlga_start:lord_start.2|我 們 又 見 面 了，{playername}…
 dlga_start:lord_meet_neutral|我 認 識 你 嗎?

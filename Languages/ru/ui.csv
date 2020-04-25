@@ -55,8 +55,8 @@ ui_crouch|Пригнуться
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Вы уверены, что хотите импортировать этого персонажа?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
-; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
+ui_explanation_strength|Сила: Каждое очко добавляет +1 к очкам здоровья. Следующие навыки не могут быть развиты выше 1/3 от Силы: Железная кожа, Сильный бросок, Сильный выстрел.
+ui_explanation_intelligence|Интеллект: Каждое очко Интеллекта немедленно дает дополнительное очко навыков и немного увеличивает прирост опыта от некоторых действий. Следующие навыки не могут быть развиты выше 1/3 от интеллекта: Обучение, Слежение, Тактика,Поиск следов, Обнаружение, Управление инвентарем, Перевязка ран, Хирургия и Первая помощь.
 ui_explanation_charisma|Харизма: Каждое очко увеличивает ваш лимит размера отряда на +1. Следующие навыки не могут быть развиты за пределами 1/3 Харизмы: управление пленными,дикое ремесло, лидерство, торговля.
 ui_delivered_number_damage|Нанесено %d урона 
 ui_mission_losses_killed|убито :
@@ -71,82 +71,82 @@ ui_you_hit_a_friendly_troop|Вы попали в дружественного в
 ui_you_are_not_carrying_any_arrows|У тебя нет никаких стрел.
 ui_delivered_number_damage_to_horse|Нанесено %d урона животному.
 ui_received_number_damage|Получено %d урона
-; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
-; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
+ui_you_have_improved_your_proficiency_in_value_to_number|Вы улучшили навык с %s до %d
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Ваш навык %s улучшился с +%d до %d
 ui_value_killed_by_value|%s убит %s
-; ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
+ui_value_knocked_unconscious_by_value|%s оглушён %s
 ui_you_got_number_experience|Вы получили %d опыта.
 ui_you_have_advanced_to_level_number|Вы перешли на уровень %d.
 ui_you_got_value|Вы получили %s.
 ui_quest_succeeded_value|Задание выполнено: %s
-; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
-; ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
-; ui_shared_number_experience_within_party|Shared %d experience within party.
-; ui_your_relations_with_value_has_improved_from_number_to_number|Your relations with %s has improved from %d to %d.
-; ui_your_relations_with_value_has_deteriorated_from_number_to_number|Your relations with %s has deteriorated from %d to %d.
+ui_number_of_companions_exceeds_leadership_limit|Количество компаньонов превысило доступный лимит 
+ui_number_of_prisoners_exceeds_prisoner_management_limit|Количество заключенных превысило доступный лимит 
+ui_shared_number_experience_within_party|Разделено %d опыта с отрядом
+ui_your_relations_with_value_has_improved_from_number_to_number|Ваши отношения с %s улучшились с%d до %d
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Ваши отношения с %s ухудшились с %d до %d
 ui_you_lost_value|Вы потеряли %s
-; ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
-; ui_game_log_window|Game Log Window
+ui_change_graphics_settings_explanation|Некоторые изменения которые вы сделаны будут иметь эффект, когда вы перейдете в новую зону
+ui_game_log_window|Окно Игровых Логов
 ui_blunt_short|б
-; ui_tracks|Tracks
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_fire_orders|Fire orders
-; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
-; ui_game_log_window|Game Log Window
-; ui_unbalanced|Unbalanced
-; ui_can_crush_through_blocks|Can crush through blocks
+ui_tracks|Следы
+ui_order_button_hold_fire|Прекратить огонь
+ui_order_button_fire_at_will|Стрелять по готовности
+ui_order_button_fire_orders|Приказ атаковать 
+ui_need_to_learn_prisoner_management|Вам нужно повысить навык управления пленниками, чтобы взять заключенных.
+ui_game_log_window|Окно Игровых Логов
+ui_unbalanced|Несбалансированный 
+ui_can_crush_through_blocks|Пробивает блок
 
-; ui_order_1|Select Order 1
-; ui_order_2|Select Order 2
-; ui_order_3|Select Order 3
-; ui_order_4|Select Order 4
-; ui_order_5|Select Order 5
-; ui_order_6|Select Order 6
-; ui_order_button_hold_this_position|Hold this position
+ui_order_1|Выбрать приказ 1
+ui_order_2|Выбрать приказ 2
+ui_order_3|Выбрать приказ 3
+ui_order_4|Выбрать приказ 4
+ui_order_5|Выбрать приказ 5
+ui_order_6|Выбрать приказ 6
+ui_order_button_hold_this_position|Держать позиции
 ui_order_button_follow_me|За мной 
 ui_order_button_charge|В атаку
-; ui_order_button_stand_ground|Stand ground
-; ui_order_button_retreat|Retreat
-; ui_order_button_advance|Advance ten paces
-; ui_order_button_fall_back|Fall back ten paces
-; ui_order_button_spread_out|Spread out
-; ui_order_button_stand_closer|Stand closer
+ui_order_button_stand_ground|Удерживать позицию
+ui_order_button_retreat|Отступить 
+ui_order_button_advance|Вперед на десять шагов
+ui_order_button_fall_back|Отступить на десять шагов
+ui_order_button_spread_out|Рассредоточится
+ui_order_button_stand_closer|Держаться вместе
 ui_order_button_mount_horses|Сесть верхом
 ui_order_button_dismount|Спешиться
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_use_blunt_weapons|Use only blunt weapons
-; ui_order_button_use_any_weapon|Use weapons at will
-; ui_order_button_movement_orders|Movement orders
-; ui_order_button_formation_orders|Formation orders
-; ui_order_button_fire_orders|Fire orders
-; ui_follow_me_e_|%s, follow me!
-; ui_charge_e_|%s, charge!!!
-; ui_stand_ground_e_|%s, stand ground!
-; ui_retreat_e_|%s, retreat!
+ui_order_button_hold_fire|Прекратить огонь
+ui_order_button_fire_at_will|Стрелять по готовности
+ui_order_button_use_blunt_weapons|Использовать только дробящее оружие. 
+ui_order_button_use_any_weapon|Использовать оружие на свое усмотрение
+ui_order_button_movement_orders|Приказ двигаться
+ui_order_button_formation_orders|Построение
+ui_order_button_fire_orders|Приказ атаковать 
+ui_follow_me_e_|%s, за мной!
+ui_charge_e_|%s, в атаку!!!
+ui_stand_ground_e_|%s, держать строй!
+ui_retreat_e_|%s, отступаем!
 ui_mount_horses_e_|%s, сесть верхом!
-; ui_dismount_e_|%s, dismount!
-; ui_advance_e_|%s, advance ten paces!
-; ui_fall_back_e_|%s, fall back ten paces!
-; ui_stand_closer_e_|%s, stand closer!
-; ui_spread_out_e_|%s, spread out!
-; ui_use_blunt_weapons_e_|%s, use only blunt weapons!
-; ui_use_any_weapon_e_|%s, use weapons at will!
+ui_dismount_e_|%s, спешится!
+ui_advance_e_|%s, вперед на десять шагов!
+ui_fall_back_e_|%s, отступить на десять шагов!
+ui_stand_closer_e_|%s, держитесь вместе! 
+ui_spread_out_e_|%s, рассредоточиться!
+ui_use_blunt_weapons_e_|%s, использовать только дробящее оружие!
+ui_use_any_weapon_e_|%s, используйте оружие на свое усмотрение !
 ui_hold_fire_e_|%s, не стрелять!
 ui_fire_at_will_e_|%s, стрелять по готовности!
-; ui_hold_this_position_e_|%s, hold this position!
+ui_hold_this_position_e_|%s, удерживать эту позицию!
 ui_infantry|Пехота
 ui_archers|Лучники
 ui_cavalry|Конница
-; ui_companions|Companions
-; ui_everyone_hear_me|Everyone, hear me!
+ui_companions|Спутники
+ui_everyone_hear_me|Слушайте все!
 ui_everyone|Все
-; ui_everyone_around_me|Nearby Soldiers
-; ui_str_hear_me|%s, hear me!
+ui_everyone_around_me|Ближайшие войны
+ui_str_hear_me|%s, слушай меня!
 
-; ui_return|Return
-; ui_factions|Factions
-; ui_troop_upgrades|Troop upgrades
-; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
-; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)
+ui_return|Вернуться
+ui_factions|Фракции
+ui_troop_upgrades|Улучшения войск
+ui_hdr_mode|HDR режим ( рекомендовано ВКЛ или НИЗКИЙ)
+ui_autoexpore|Авто-экспозиция ( рекомендуется ВКЛ если HDR  включен) 
