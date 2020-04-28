@@ -6,6 +6,22 @@ grass 6442469687300 6
  PW_grass_b_xx  0
  PW_grass_b_xx  0
  PW_grass_e_xx  0
+grass_steppe 6442469689352 4
+ PW_grass_e_xx  0
+ PW_grass_yellow_b_xx  0
+ PW_grass_yellow_b_xx  0
+ PW_grass_e_xx  0
+ga_grass_snow 7155433082896 5
+ PW_grass_a_xx  0
+ PW_grass_b_xx  0
+ PW_grass_b_xx  0
+ PW_grass_b_xx  0
+ PW_grass_e_xx  0
+ga_grass_desert 8641491247136 4
+ PW_grass_e_xx  0
+ PW_grass_yellow_b_xx  0
+ PW_grass_yellow_b_xx  0
+ PW_grass_e_xx  0
 grass_bush 429497650220 2
  PW_grass_bush_a_xx  0
  PW_grass_bush_b_xx  0
@@ -19,11 +35,6 @@ fern 4294968087552 3
  PW_fern_big  0
  PW_fern_a_xx  0
  PW_fern_b_xx  0
-grass_steppe 6442469689352 4
- PW_grass_e_xx  0
- PW_grass_yellow_b_xx  0
- PW_grass_yellow_b_xx  0
- PW_grass_e_xx  0
 grass_bush_g 1717987707916 3
  PW_grass_bush_g01_xx  0
  PW_grass_bush_g02_xx  0
@@ -44,6 +55,12 @@ grass_bush_k 1717987704844 2
 grass_bush_l 214748627972 2
  PW_grass_bush_l01  0
  PW_grass_bush_l02  0
+zl_white_flowers 8590196736 2
+ PW_grass_bush_l01  0
+ PW_grass_bush_l02  0
+zl_bush_white_flowers 0 2
+ PW_grass_bush_l01  0
+ PW_grass_bush_l02  0
 thorn_a 214748627980 4
  PW_thorn_a  0
  PW_thorn_b  0
@@ -55,6 +72,10 @@ common_plant 300647721000 1
  PW_common_plant_xx  0
 small_plant 214748630028 1
  PW_big_bush_xx  0
+seedy_plant 214748367884 1
+ PW_big_bush_xx  0
+big_bush 128849021964 1
+ PW_big_bush_xx  0
 buddy_plant 214748367876 2
  PW_buddy_plant_xx  0
  PW_buddy_plant_b_xx  0
@@ -63,12 +84,10 @@ yellow_flower 214748626948 2
  PW_yellow_flower_b  0
 spiky_plant 214748626948 1
  PW_spiky_plant  0
-seedy_plant 214748367884 1
- PW_big_bush_xx  0
+zl_yellow_flowers 8590196736 1
+ PW_spiky_plant  0
 blue_flower 128849019908 1
  PW_blue_flower_xx  0
-big_bush 128849021964 1
- PW_big_bush_xx  0
 bushes02_a 85899347988 3
  PW_bushes02_a  bo_pw_bushes02_a
  PW_bushes02_b  bo_pw_bushes02_a
@@ -78,6 +97,10 @@ bushes03_a 231928243256 3
  PW_bushes03_b_xx  0
  PW_bushes03_c_xx  0
 bushes04_a 438086675516 3
+ PW_bushes04_a_xx  0
+ PW_bushes04_b_xx  0
+ PW_bushes04_c_xx  0
+ga_bushes04_a_snow 1675037511696 3
  PW_bushes04_a_xx  0
  PW_bushes04_b_xx  0
  PW_bushes04_c_xx  0
@@ -95,7 +118,15 @@ bushes08_a 300647713804 3
  PW_bushes08_a_xx  0
  PW_bushes08_b_xx  0
  PW_bushes08_c_xx  0
+zl_bush_08 0 3
+ PW_bushes08_a_xx  0
+ PW_bushes08_b_xx  0
+ PW_bushes08_c_xx  0
 bushes09_a 438086674480 3
+ PW_bushes09_a  0
+ PW_bushes09_b  0
+ PW_bushes09_c  0
+zl_fir_bush 42949681192 3
  PW_bushes09_a  0
  PW_bushes09_b  0
  PW_bushes09_c  0
@@ -103,7 +134,15 @@ bushes10_a 300647713792 3
  PW_bushes10_a  bo_pw_bushes10_a
  PW_bushes10_b  bo_pw_bushes10_b
  PW_bushes10_c  bo_pw_bushes10_c
+zl_birch_green_bush 0 3
+ PW_bushes10_a  0
+ PW_bushes10_b  0
+ PW_bushes10_c  0
 bushes11_a 300647722040 3
+ PW_bushes11_a  0
+ PW_bushes11_b  0
+ PW_bushes11_c  0
+zl_shalebush 8589942784 3
  PW_bushes11_a  0
  PW_bushes11_b  0
  PW_bushes11_c  0
@@ -111,204 +150,183 @@ bushes12_a 214748629000 3
  PW_bushes12_a_xx  0
  PW_bushes12_b_xx  0
  PW_bushes12_c_xx  0
-aspen 94491443200 3
- aspen_a  bo_aspen_a
- aspen_b  bo_aspen_b
- aspen_c  bo_aspen_c
+zl_bush_steppe_wheat 0 3
+ PW_bushes12_a_xx  0
+ PW_bushes12_b_xx  0
+ PW_bushes12_c_xx  0
+pw_gray_bush 21479100464 2
+ PW_tree_3_a_gray  0
+ PW_tree_3_b_gray  0
+pw_snow_bushes 17179869184 1
+ PW_tree_19_a  0
+ga_tree_3_a_brown 94489288736 2
+ PW_tree_3_a_brown  0
+ PW_tree_3_b_brown  0
+pw_ground_thorn 0 3
+ PW_tree_9_a_xx  0
+ PW_tree_9_a_xx  0
+ PW_tree_9_a_xx  0
 pw_small_rock_group 94491715624 3
  PW_small_rock_group_a  0
  PW_small_rock_group_b  0
  PW_small_rock_group_c  0
-pine_1 17184074752 2
- pine_1_a  bo_pine_1_a
- pine_1_b  bo_pine_1_b
-pw_fir 17184065536 2
+rock 128853214208 2
  PW_pine_1_a  bo_pw_pine_1_a
  PW_pine_1_b  bo_pw_pine_1_b
-pine_2 17184074752 1
- pine_2_a  bo_pine_2_a
-pw_fir2 17184063488 1
- PW_pine_2_a  bo_pw_pine_2_a
-pine_3 17184074752 1
- pine_3_a  bo_pine_3_a
-pw_fir3 17184063488 1
- PW_pine_3_a  bo_pw_pine_3_a
-pine_4 17184072704 1
- pine_4_a  bo_pine_4_a
-pw_pine_group2 8594137088 1
- PW_pine_4_a  bo_pw_pine_4_a
-pine_6 17184072704 1
- pine_6_a  bo_pine_6_a
-pw_pine_group1 8594137088 1
- PW_pine_6_a  bo_pw_pine_6_a
-snowy_pine 4194304 1
- PW_tree_snowy_a  bo_pw_tree_snowy_a
-snowy_pine_2 4194304 1
- PW_snowy_pine_2  bo_pw_snowy_pine_2
 small_rock 17184066568 2
  PW_rock_a  bo_PW_rock_a
  PW_rock_b  bo_PW_rock_b
 rock_snowy 4194304 3
- PW_rock_snowy_a  bo_pw_rock_snowy_a
- PW_rock_snowy_b  bo_pw_rock_snowy_b
- PW_rock_snowy_c  bo_pw_rock_snowy_c
+ rock_snowy_a  bo_rock_snowy_a
+ rock_snowy_b  bo_rock_snowy_b
+ rock_snowy_c  bo_rock_snowy_c
+rock_snowy2 4194304 1
+ PW_tree_snowy_b  bo_pw_tree_snowy_b
+pw_man_skeleton 0 3
+ PW_tree_7_a_color  0
+ PW_tree_7_b_color  0
+ PW_tree_7_c_color  0
+aspen 94491443200 3
+ aspen_a  bo_aspen_a
+ aspen_b  bo_aspen_b
+ aspen_c  bo_aspen_c
+pine_1 17184074752 2
+ pine_1_a  bo_pine_1_a
+ pine_1_b  bo_pine_1_b
+pine_2 17184074752 1
+ pine_2_a  bo_pine_2_a
+pine_3 17184074752 1
+ pine_3_a  bo_pine_3_a
+pine_4 17184072704 1
+ pine_4_a  bo_pine_4_a
+pine_6 17184072704 1
+ pine_6_a  bo_pine_6_a
 tree_1 25769804800 1
  PW_tree_9_a_xx  0
 tree_2 0 2
  tree_2_a  bo_tree_2_a
  tree_2_b  bo_tree_2_b
-pw_fir_shibby 17184071680 2
- PW_tree_2_a  bo_PW_tree_2_a
- PW_tree_2_b  bo_pw_tree_2_b
 tree_3 21479096324 2
  tree_3_a  bo_tree_3_a
+
  tree_3_b  bo_tree_3_b
-pw_gray_bush 21479100464 2
- PW_tree_3_a_gray  0
- PW_tree_3_b_gray  0
+
 tree_4 17184064512 2
  tree_4_a  bo_tree_4_a
+
  tree_4_b  bo_tree_4_b
-pw_birch_yellow 17184065536 2
- PW_tree_4_a  bo_pw_tree_4_a
- PW_tree_4_b  bo_pw_tree_4_b
+
 tree_5 300647711744 4
  tree_5_a  bo_tree_5_a
  tree_5_b  bo_tree_5_b
  tree_5_c  bo_tree_5_c
  tree_5_d  bo_tree_5_d
-pw_birch_green 17184065536 5
- PW_tree_5_a  bo_pw_tree_5_a
- PW_tree_5_b  bo_pw_tree_5_b
- PW_tree_5_c  bo_pw_tree_5_c
- PW_tree_5_d  bo_pw_tree_5_d
- PW_tree_5_a_yellow  bo_pw_tree_5_a
 tree_6 21479030788 4
  tree_6_a  bo_tree_6_a
+
  tree_6_b  bo_tree_6_b
+
  tree_6_c  bo_tree_6_c
+
  tree_6_d  bo_tree_6_d
-pw_fir_shubby_group 4194304 4
- PW_tree_6_a  bo_pw_tree_6_a
- PW_tree_6_b  bo_pw_tree_6_b
- PW_tree_6_c  bo_pw_tree_6_c
- PW_tree_6_d  bo_pw_tree_6_d
+
 tree_7 0 3
  tree_7_a  bo_tree_7_a
  tree_7_b  bo_tree_7_b
  tree_7_c  bo_tree_7_c
-pw_man_skeleton 0 3
- PW_tree_7_a_color  0
- PW_tree_7_b_color  0
- PW_tree_7_c_color  0
 tree_8 17184064516 3
  tree_8_a  bo_tree_8_a
+
  tree_8_b  bo_tree_8_b
+
  tree_8_c  bo_tree_8_c
-pw_leaf_green_group 0 3
- PW_tree_8_a  bo_pw_tree_8_a
- PW_tree_8_b  bo_pw_tree_8_b
- PW_tree_8_c  bo_pw_tree_8_c
+
 tree_9 214752560128 3
  tree_9_a  bo_tree_9_a
+
  tree_9_b  bo_tree_9_a
+
  tree_9_c  bo_tree_9_a
-pw_ground_thorn 0 3
- PW_tree_9_a_xx  0
- PW_tree_9_a_xx  0
- PW_tree_9_a_xx  0
+
 tree_10 17184064512 3
  tree_10_a  bo_tree_10_a
+
  tree_10_b  bo_tree_10_a
+
  tree_10_c  bo_tree_10_a
-pw_branchy_green_group 17184063488 3
- PW_tree_10_a  bo_pw_tree_10_a
- PW_tree_10_b  bo_pw_tree_10_b
- PW_tree_10_c  bo_pw_tree_10_c
+
 tree_11 17184064516 3
  tree_11_a  bo_tree_11_a
+
  tree_11_b  bo_tree_11_a
+
  tree_11_c  bo_tree_11_a
-pw_branchy_green_group2 17184063488 3
- PW_tree_11_a  bo_pw_tree_11_a
- PW_tree_11_b  bo_pw_tree_11_b
- PW_tree_11_c  bo_pw_tree_11_c
+
 tree_12 17184063488 3
  tree_12_a  bo_tree_12_a
+
  tree_12_b  bo_tree_12_b
+
  tree_12_c  bo_tree_12_c
-pw_pine_bushes_group 51539615776 3
- PW_tree_12_a  bo_pw_tree_12_a
- PW_tree_12_b  bo_pw_tree_12_b
- PW_tree_12_c  bo_pw_tree_12_c
+
 tree_14 4194304 3
  tree_14_a  bo_tree_14_a
+
  tree_14_b  bo_tree_14_b
+
  tree_14_c  bo_tree_14_c
-pw_tall_leaf 17184063488 3
- PW_tree_14_a  bo_pw_tree_14_a
- PW_tree_14_b  bo_pw_tree_14_b
- PW_tree_14_c  bo_pw_tree_14_c
+
 tree_15 274882101248 3
  tree_15_a  bo_tree_15_a
+
  tree_15_b  bo_tree_15_b
+
  tree_15_c  bo_tree_15_c
-pw_leaf_yellow2 17184065536 3
- PW_tree_15_a  bo_pw_tree_15_a
- PW_tree_15_b  bo_pw_tree_15_b
- PW_tree_15_c  bo_pw_tree_15_c
+
 tree_16 163212952576 2
  tree_16_a  bo_tree_16_a
+
  tree_16_b  bo_tree_16_b
-pw_pine_small_group 163212959744 2
- PW_tree_16_a  bo_pw_tree_16_a
- PW_tree_16_b  bo_pw_tree_16_b
+
 tree_17 17184064512 4
  tree_17_a  bo_tree_17_a
+
  tree_17_b  bo_tree_17_b
+
  tree_17_c  bo_tree_17_c
+
  tree_17_d  bo_tree_17_d
-pw_birch_green_group 17184063488 4
- PW_tree_17_a  bo_pw_tree_17_a
- PW_tree_17_b  bo_pw_tree_17_b
- PW_tree_17_c  bo_pw_tree_17_c
- PW_tree_17_d  bo_pw_tree_17_d
-tree_plane 17184064512 2
- tree_18_a  bo_tree_18_a
- tree_18_b  bo_tree_18_b
-pw_birch_yellow_group 17184063488 2
- PW_tree_18_a  bo_pw_tree_18_a
- PW_tree_18_b  bo_pw_tree_18_b
+
 tree_19 17184064512 1
  tree_19_a  bo_tree_19_a
-pw_snow_bushes 17179869184 1
- PW_tree_19_a  0
+
 beech 12889097216 2
  tree_20_a  bo_tree_20_a
+
  tree_20_b  bo_tree_20_b
-pw_leaf_yellow2_group 12889096192 2
- PW_tree_20_a  bo_pw_tree_20_a
- PW_tree_20_b  bo_pw_tree_20_b
+
+tree_plane 17184064512 2
+ tree_18_a  bo_tree_18_a
+
+ tree_18_b  bo_tree_18_b
+
 tall_tree 17184064516 1
  tall_tree_a  bo_tall_tree_a
-pw_pine_group3 8594137088 1
- PW_tall_tree_a  bo_pw_tall_tree_a
+
 tree_e 17184064516 3
  tree_e_1  bo_tree_e_1
+
  tree_e_2  bo_tree_e_2
+
  tree_e_3  bo_tree_e_3
-pw_fir_shubby_small_group 17184071680 3
- PW_tree_e_1  bo_pw_tree_e_1
- PW_tree_e_2  bo_pw_tree_e_2
- PW_tree_e_3  bo_pw_tree_e_3
+
 tree_f 4194304 3
  tree_f_1  bo_tree_f_1
+
  tree_f_2  bo_tree_f_1
+
  tree_f_3  bo_tree_f_1
-pw_leaf_yellow_group 17184063488 3
- PW_tree_f_1  bo_pw_tree_f_1
- PW_tree_f_2  bo_pw_tree_f_2
- PW_tree_f_3  bo_pw_tree_f_3
+
 grape_vineyard 0 1
  grape_vineyard  bo_grape_vineyard
 grape_vineyard_stake 0 1
@@ -318,35 +336,143 @@ wheat 0 4
  wheat_b  0
  wheat_c  0
  wheat_d  0
+pw_fir 17184065536 2
+ PW_pine_1_a  bo_pw_pine_1_a
+
+ PW_pine_1_b  bo_pw_pine_1_b
+
+pw_fir2 17184063488 1
+ PW_pine_2_a  bo_pw_pine_2_a
+
+pw_fir3 17184063488 1
+ PW_pine_3_a  bo_pw_pine_3_a
+
+snowy_pine 4194304 1
+ PW_tree_snowy_a  bo_pw_tree_snowy_a
+
+snowy_pine_2 4194304 1
+ PW_snowy_pine_2  bo_pw_snowy_pine_2
+
+pw_pine_group1 8594137088 1
+ PW_pine_6_a  bo_pw_pine_6_a
+
+pw_pine_group2 8594137088 1
+ PW_pine_4_a  bo_pw_pine_4_a
+
+pw_pine_group3 8594137088 1
+ PW_tall_tree_a  bo_pw_tall_tree_a
+
+zl_pink_tree 17184063492 3
+ PW_tall_tree_a  bo_pw_tall_tree_a
+
+ PW_pine_4_a  bo_pw_pine_4_a
+
+ PW_pine_6_a  bo_pw_pine_6_a
+
 zl_fir 21479030784 4
  PL_fur1  bo_pl_fur1
+
  PL_fur2  bo_pl_fur2
+
  PL_fur3  bo_pl_fur3
+
  PW_pine_3_a  bo_pw_pine_3_a
+
 zl_fir_tall 21479038976 3
  PL_fur_tall1  bo_pl_fur_tall1
+
  PL_fur_tall2  bo_pl_fur_tall2
+
  PL_fur_tall3  bo_pl_fur_tall3
+
 zl_fir_shubby 4299169792 5
  PW_tree_2_a  bo_PW_tree_2_a
+
  PW_tree_2_b  bo_pw_tree_2_b
+
  PW_tree_e_1  bo_pw_tree_e_1
+
  PW_tree_e_2  bo_pw_tree_e_2
+
  PW_tree_e_3  bo_pw_tree_e_3
-zl_birch_yellow 4194304 2
- PW_tree_4_a  bo_pw_tree_4_a
- PW_tree_4_b  bo_pw_tree_4_b
-zl_birch_green 4194304 4
- PW_tree_5_a  bo_pw_tree_5_a
- PW_tree_5_b  bo_pw_tree_5_b
- PW_tree_5_c  bo_pw_tree_5_c
- PW_tree_5_d  bo_pw_tree_5_d
+
 zl_fir_shubby_group 8594137088 4
  PW_tree_6_a  bo_pw_tree_6_a
+
  PW_tree_6_b  bo_pw_tree_6_b
+
  PW_tree_6_c  bo_pw_tree_6_c
+
  PW_tree_6_d  bo_pw_tree_6_d
+
+pw_fir_shubby_small_group 17184071680 3
+ PW_tree_e_1  bo_pw_tree_e_1
+
+ PW_tree_e_2  bo_pw_tree_e_2
+
+ PW_tree_e_3  bo_pw_tree_e_3
+
+pw_fir_shubby_group 4194304 4
+ PW_tree_6_a  bo_pw_tree_6_a
+
+ PW_tree_6_b  bo_pw_tree_6_b
+
+ PW_tree_6_c  bo_pw_tree_6_c
+
+ PW_tree_6_d  bo_pw_tree_6_d
+
+pw_fir_shibby 17184071680 2
+ PW_tree_2_a  bo_PW_tree_2_a
+
+ PW_tree_2_b  bo_pw_tree_2_b
+
+zl_fir_shubby_single 21479038992 4
+ PW_tree_2_a_single1  bo_pw_tree_2_a_single1
+
+ PW_tree_2_a_single2  0
+
+ PW_tree_2_a_single3  bo_pw_tree_2_a_single3
+
+ PW_tree_2_a_single2_dark  0
+
+zl_birch_yellow 4194304 2
+ PW_tree_4_a  bo_pw_tree_4_a
+
+ PW_tree_4_b  bo_pw_tree_4_b
+
+pw_birch_yellow 17184065536 2
+ PW_tree_4_a  bo_pw_tree_4_a
+
+ PW_tree_4_b  bo_pw_tree_4_b
+
+zl_birch_green 4194304 4
+ PW_tree_5_a  bo_pw_tree_5_a
+
+ PW_tree_5_b  bo_pw_tree_5_b
+
+ PW_tree_5_c  bo_pw_tree_5_c
+
+ PW_tree_5_d  bo_pw_tree_5_d
+
+pw_birch_green 17184065536 5
+ PW_tree_5_a  bo_pw_tree_5_a
+
+ PW_tree_5_b  bo_pw_tree_5_b
+
+ PW_tree_5_c  bo_pw_tree_5_c
+
+ PW_tree_5_d  bo_pw_tree_5_d
+
+ PW_tree_5_a_yellow  bo_pw_tree_5_a
+
 zl_green2_group 4194304 3
+ PW_tree_8_a  bo_pw_tree_8_a
+
+ PW_tree_8_b  bo_pw_tree_8_b
+
+ PW_tree_8_c  bo_pw_tree_8_c
+
+pw_leaf_green_group 0 3
  PW_tree_8_a  bo_pw_tree_8_a
  PW_tree_8_b  bo_pw_tree_8_b
  PW_tree_8_c  bo_pw_tree_8_c
@@ -356,131 +482,180 @@ zl_skeleton_man 0 3
  PW_tree_7_c  0
 zl_green_group_small 4194304 3
  PW_tree_10_a  bo_pw_tree_10_a
+
  PW_tree_10_b  bo_pw_tree_10_b
+
  PW_tree_10_c  bo_pw_tree_10_c
+
 zl_green_group_large 4194304 3
  PW_tree_11_a  bo_pw_tree_11_a
+
  PW_tree_11_b  bo_pw_tree_11_b
+
  PW_tree_11_c  bo_pw_tree_11_c
+
+pw_branchy_green_group 17184063488 3
+ PW_tree_10_a  bo_pw_tree_10_a
+
+ PW_tree_10_b  bo_pw_tree_10_b
+
+ PW_tree_10_c  bo_pw_tree_10_c
+
+pw_branchy_green_group2 17184063488 3
+ PW_tree_11_a  bo_pw_tree_11_a
+
+ PW_tree_11_b  bo_pw_tree_11_b
+
+ PW_tree_11_c  bo_pw_tree_11_c
+
 zl_tree_12 17184064512 3
+ PW_tree_12_a  bo_pw_tree_12_a
+
+ PW_tree_12_b  bo_pw_tree_12_b
+
+ PW_tree_12_c  bo_pw_tree_12_c
+
+pw_pine_bushes_group 51539615776 3
  PW_tree_12_a  bo_pw_tree_12_a
  PW_tree_12_b  bo_pw_tree_12_b
  PW_tree_12_c  bo_pw_tree_12_c
 zl_birch_tall 17184065536 3
  PW_tree_14_a  bo_pw_tree_14_a
+
  PW_tree_14_b  bo_pw_tree_14_b
+
  PW_tree_14_c  bo_pw_tree_14_c
+
+pw_tall_leaf 17184063488 3
+ PW_tree_14_a  bo_pw_tree_14_a
+
+ PW_tree_14_b  bo_pw_tree_14_b
+
+ PW_tree_14_c  bo_pw_tree_14_c
+
 zl_tree_15 17184064512 3
  PW_tree_15_a  bo_pw_tree_15_a
+
  PW_tree_15_b  bo_pw_tree_15_b
+
  PW_tree_15_c  bo_pw_tree_15_c
+
+pw_leaf_yellow2 17184065536 3
+ PW_tree_15_a  bo_pw_tree_15_a
+
+ PW_tree_15_b  bo_pw_tree_15_b
+
+ PW_tree_15_c  bo_pw_tree_15_c
+
 zl_tree_16 17184064512 2
  PW_tree_16_a  bo_pw_tree_16_a
+
  PW_tree_16_b  bo_pw_tree_16_b
+
+pw_pine_small_group 163212959744 2
+ PW_tree_16_a  bo_pw_tree_16_a
+
+ PW_tree_16_b  bo_pw_tree_16_b
+
 zl_birch_green_group 4194304 4
  PW_tree_17_a  bo_pw_tree_17_a
+
  PW_tree_17_b  bo_pw_tree_17_b
+
  PW_tree_17_c  bo_pw_tree_17_c
+
  PW_tree_17_d  bo_pw_tree_17_d
+
+pw_birch_green_group 17184063488 4
+ PW_tree_17_a  bo_pw_tree_17_a
+
+ PW_tree_17_b  bo_pw_tree_17_b
+
+ PW_tree_17_c  bo_pw_tree_17_c
+
+ PW_tree_17_d  bo_pw_tree_17_d
+
 zl_birch_yellow_group 4194304 2
  PW_tree_18_a  bo_pw_tree_18_a
+
  PW_tree_18_b  bo_pw_tree_18_b
+
+pw_birch_yellow_group 17184063488 2
+ PW_tree_18_a  bo_pw_tree_18_a
+
+ PW_tree_18_b  bo_pw_tree_18_b
+
 zl_aspen_yellow 4194304 3
  PW_tree_f_1  bo_pw_tree_f_1
+
  PW_tree_f_2  bo_pw_tree_f_2
+
  PW_tree_f_3  bo_pw_tree_f_3
+
+pw_leaf_yellow_group 17184063488 3
+ PW_tree_f_1  bo_pw_tree_f_1
+
+ PW_tree_f_2  bo_pw_tree_f_2
+
+ PW_tree_f_3  bo_pw_tree_f_3
+
 zl_aspen_yellow_group 4194304 2
  PW_tree_20_a  bo_pw_tree_20_a
+
  PW_tree_20_b  bo_pw_tree_20_b
+
+pw_leaf_yellow2_group 12889096192 2
+ PW_tree_20_a  bo_pw_tree_20_a
+
+ PW_tree_20_b  bo_pw_tree_20_b
+
 zl_aspen_yellow_bush 12889098248 3
  PL_aspen_yellowbush1  0
+
  PL_aspen_yellowbush2  0
+
  PL_aspen_yellowbush3  0
+
 zl_oak_group 8594128900 3
  PL_oak_group1  bo_pl_oak_group1
+
  PL_oak_group2  bo_pl_oak_group2
+
  PL_oak_group3  bo_pl_oak_group3
-zl_bush_white_flowers 0 2
- PW_grass_bush_l01  0
- PW_grass_bush_l02  0
-zl_bush_08 0 3
- PW_bushes08_a_xx  0
- PW_bushes08_b_xx  0
- PW_bushes08_c_xx  0
-zl_fir_bush 42949681192 3
- PW_bushes09_a  0
- PW_bushes09_b  0
- PW_bushes09_c  0
-zl_birch_green_bush 0 3
- PW_bushes10_a  0
- PW_bushes10_b  0
- PW_bushes10_c  0
-zl_shalebush 8589942784 3
- PW_bushes11_a  0
- PW_bushes11_b  0
- PW_bushes11_c  0
-zl_bush_steppe_wheat 0 3
- PW_bushes12_a_xx  0
- PW_bushes12_b_xx  0
- PW_bushes12_c_xx  0
-zl_pink_tree 17184063492 3
- PW_tall_tree_a  bo_pw_tall_tree_a
- PW_pine_4_a  bo_pw_pine_4_a
- PW_pine_6_a  bo_pw_pine_6_a
+
 zl_rockformation 12887072808 3
  PW_rock_c  bo_pw_rock_c
  PW_rock_e  bo_pw_rock_e
  PW_rock_k  bo_pw_rock_k
-zl_white_flowers 8590196736 2
- PW_grass_bush_l01  0
- PW_grass_bush_l02  0
-zl_yellow_flowers 8590196736 1
- PW_spiky_plant  0
-rock 128853214208 2
- PW_pine_1_a  bo_pw_pine_1_a
- PW_pine_1_b  bo_pw_pine_1_b
-rock_snowy2 4194304 1
- PW_tree_snowy_b  bo_pw_tree_snowy_b
 zl_reed 833223655440 1
  GA_reed1  0
-ga_grass_snow 7155433082896 5
- PW_grass_a_xx  0
- PW_grass_b_xx  0
- PW_grass_b_xx  0
- PW_grass_b_xx  0
- PW_grass_e_xx  0
-ga_bushes04_a_snow 1675037511696 3
- PW_bushes04_a_xx  0
- PW_bushes04_b_xx  0
- PW_bushes04_c_xx  0
-ga_grass_desert 8641491247136 4
- PW_grass_e_xx  0
- PW_grass_yellow_b_xx  0
- PW_grass_yellow_b_xx  0
- PW_grass_e_xx  0
 zl_fir_tall_hs 21479041024 4
  PW_fir_tall_d  bo_PW_fir_tall_d
+
  PW_fir_tall_f  bo_PW_fir_tall_f
+
  PW_fir_tall_h  bo_PW_fir_tall_h
+
  PW_fir_tall_i  bo_PW_fir_tall_i
-zl_fir_shubby_single 21479038992 4
- PW_tree_2_a_single1  bo_pw_tree_2_a_single1
- PW_tree_2_a_single2  0
- PW_tree_2_a_single3  bo_pw_tree_2_a_single3
- PW_tree_2_a_single2_dark  0
-ga_tree_3_a_brown 94489288736 2
- PW_tree_3_a_brown  0
- PW_tree_3_b_brown  0
+
 CWE_oliva 8594128900 5
  cwe_oliva_tree_a  oliva_tree_a_col
+
  cwe_oliva_tree_b  oliva_tree_b_col
+
  cwe_oliva_tree_c  oliva_tree_c_col
+
  cwe_oliva_tree_d  oliva_tree_d_col
+
  cwe_oliva_tree_e  oliva_tree_e_col
+
 CWE_pihta 25773998084 3
  cwe_pihta_a  pihta_a_col
+
  cwe_pihta_b  pihta_b_col
+
  cwe_pihta_c  pihta_c_col
+
 CWE_apple_tree 0 6
  cwe_sp_apple_tree_1  bo_sp_apple_tree_1
  cwe_sp_apple_tree_2  bo_sp_apple_tree_2
@@ -490,13 +665,20 @@ CWE_apple_tree 0 6
  cwe_sp_apple_tree_6  bo_sp_apple_tree_6
 CWE_magnolia 8594128900 5
  cwe_sp_magnolia_1  bo_sp_magnolia_1
+
  cwe_sp_magnolia_2  bo_sp_magnolia_2
+
  cwe_sp_magnolia_3  bo_sp_magnolia_3
+
  cwe_sp_magnolia_4  bo_sp_magnolia_4
+
  cwe_sp_magnolia_5  bo_sp_magnolia_5
+
 CWE_magnolia_large 8594128900 2
  cwe_sp_magnolia_large_1  bo_sp_magnolia_large_1
+
  cwe_sp_magnolia_large_2  bo_sp_magnolia_large_2
+
 CWE_peach_tree 0 5
  cwe_sp_peach_tree_1  bo_sp_peach_tree_1
  cwe_sp_peach_tree_2  bo_sp_peach_tree_2
@@ -548,20 +730,33 @@ CWE_myrtle_a 0 3
  cwe_sp_myrtle_a_3  bo_sp_myrtle_a_3
 CWE_myrtle_b 12889096196 5
  cwe_sp_myrtle_b_1  bo_sp_myrtle_b_1
+
  cwe_sp_myrtle_b_2  bo_sp_myrtle_b_2
+
  cwe_sp_myrtle_b_3  bo_sp_myrtle_b_3
+
  cwe_sp_myrtle_b_4  bo_sp_myrtle_b_4
+
  cwe_sp_myrtle_b_5  bo_sp_myrtle_b_5
+
 CWE_azalia 17184063492 3
  cwe_sp_azalia_1  0
+
  cwe_sp_azalia_2  0
+
  cwe_sp_azalia_3  0
+
 CWE_beech 8594128900 5
  cwe_sp_beech_1  bo_sp_beech_1
+
  cwe_sp_beech_2  bo_sp_beech_2
+
  cwe_sp_beech_3  bo_sp_beech_3
+
  cwe_sp_beech_4  bo_sp_beech_4
+
  cwe_sp_beech_5  bo_sp_beech_5
+
 CWE_pine 0 3
  cwe_sp_pine_1  bo_sp_pine_1
  cwe_sp_pine_2  bo_sp_pine_2
@@ -632,10 +827,14 @@ CWE_ivy_wall 0 1
  cwe_ivy_wall  0
 Jaakko_new_tree_a 17184063492 2
  Jaakko_new_tree_a  bo_Jaakko_new_tree_a
+
  Jaakko_new_tree_a_double  bo_Jaakko_new_tree_a_double
+
 Jaakko_new_cypress 17184063492 2
  Jaakko_new_cypress  bo_Jaakko_new_cypress
+
  Jaakko_new_cypress2  bo_Jaakko_new_cypress2
+
 grass_flower_white_nofade 0 2
  PW_grass_flower_c_xx  0
  PW_grass_flower_c_xx  0

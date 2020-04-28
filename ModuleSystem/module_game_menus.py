@@ -10401,7 +10401,7 @@ game_menus = [
 			    (this_or_next|eq,":raid_village_faction", "fac_lorien"),
 			    (this_or_next|eq,":raid_village_faction", "fac_woodelf"),
 			    (neg|is_between, ":raid_village_faction", kingdoms_begin, kingdoms_end),  ## For some reason, the search counts 'ruins' etc. This takes them out! 
-			    (assign,":raid_village_faction", "fac_rohan"), ## Rohan is the closest to areas where elves would mostly be.
+			    (assign,":raid_village_faction", "fac_beorn"), ## Beornings is the closest to areas where elves would mostly be.
 	     	(try_end),
 	     	(faction_get_slot, ":tier_1_troop", ":raid_village_faction", slot_faction_tier_1_troop),
 	     	(faction_get_slot, ":tier_2_troop", ":raid_village_faction", slot_faction_tier_2_troop),
