@@ -6722,6 +6722,7 @@ scripts = [
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_object_faction",":cur_object_center"), ## Store Faction of Object Center - So that we can set up appropriate raiders
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
+			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             (ge, ":dist", 20),
             (assign, ":quest_object_faction", ":cur_object_faction"),
             (assign, ":quest_target_party_template", "pt_village"),
@@ -6823,6 +6824,7 @@ scripts = [
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
+			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             #(ge, ":dist", 20),
             (assign, ":quest_target_faction", ":cur_target_faction"),
             (assign, ":quest_target_party_template", "pt_village"),
@@ -6908,6 +6910,7 @@ scripts = [
 			(call_script, "script_cf_select_random_town_with_faction", ":giver_faction_no"),#Can fail
 			(assign, ":cur_object_center", reg0),
 			(neq, ":cur_object_center", ":giver_center_no"),#Skip current center
+			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             #(call_script, "script_get_random_enemy_center", ":giver_party_no"),
             #(assign, ":cur_target_center", reg0),
             #(ge, ":cur_target_center", 0),
@@ -7265,7 +7268,8 @@ scripts = [
             (call_script, "script_get_troop_attached_party", ":cur_target_troop"),
             (assign, ":cur_target_center", reg0),#cur_target_center will definitely be a valid center
             (neq,":giver_center_no", ":cur_target_center"),#Skip current center
-
+			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
+			
             (assign, ":quest_target_center", ":cur_target_center"),
             (assign, ":quest_target_troop", ":cur_target_troop"),
             #(assign, ":quest_xp_reward", 30), #TLD: changed to 30-50
@@ -7314,6 +7318,7 @@ scripts = [
             (assign, ":cur_target_center", reg0),
             (assign, ":cur_target_dist", reg1),
             (neq, ":cur_target_center", ":giver_center_no"),
+			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             
             (store_mul, ":quest_xp_reward", 200, ":cur_target_dist"), # 200-400
             (val_div, ":quest_xp_reward", tld_max_quest_distance),
@@ -7657,6 +7662,7 @@ scripts = [
             (assign, ":cur_target_center", reg0),
             (assign, ":dist", reg1),
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
+			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             (ge, ":dist", 20),
             (assign, ":quest_target_party_template", "pt_runaway_serfs"),
             (assign, ":quest_object_center", ":cur_object_center"),
@@ -11032,7 +11038,7 @@ scripts = [
 		(is_between, ":x", -4595,  -3750),(is_between, ":y",  -13519,  -12885),
 		(assign, reg1, region_s_mirkwood),
 	(else_try),
-		# near misty mountains...
+		# near misty mountains... (not working?)
 		(is_between, ":x", 4100, 6000),(is_between, ":y",  -10902, -18090),
 		(assign, reg1, region_misty_mountains),
 	(else_try),
@@ -11050,7 +11056,7 @@ scripts = [
 	(else_try),
 		(is_between, ":x", -3900,1800),
 		(assign, reg1, region_anduin_banks),
-	(else_try),	
+	(else_try),	#doesn't show up
 		(lt, ":x", 0),(lt,  ":y",  -23662),
 		(assign, reg1, region_above_mirkwook),
 	(try_end),
@@ -24406,6 +24412,8 @@ command_cursor_scripts = [
 		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
 		(ge, reg0, 10), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
+		(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
+
 
 		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
 		(ge, ":cur_target_center",0), #Should be valid center
@@ -24608,6 +24616,7 @@ command_cursor_scripts = [
 		#(display_log_message, "@DEBUG: Distance {reg0}", color_bad_news),
 		(le, reg0, 20), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
+		(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
 
 		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
 		(ge, ":cur_target_center",0), #Should be valid center
