@@ -1,4 +1,4 @@
-1621
+1622
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -809,6 +809,7 @@ qstr_Enemy_party_size:_{r Enemy_party_size:_{reg1}
 qstr_Spawned_routed_parti Spawned_routed_parties!
 qstr_Party_count:_{reg0} Party_count:_{reg0}
 qstr_Party_position__{reg Party_position_({reg2},{reg3}).
+qstr_XP_added XP_added
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...(assumes_war_starts_at_level_8)
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...

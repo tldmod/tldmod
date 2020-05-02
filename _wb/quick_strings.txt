@@ -1016,6 +1016,7 @@ qstr_Enemy_party_size:_{r Enemy_party_size:_{reg1}
 qstr_Spawned_routed_parti Spawned_routed_parties!
 qstr_Party_count:_{reg0} Party_count:_{reg0}
 qstr_Party_position__{reg Party_position_({reg2},{reg3}).
+qstr_XP_added XP_added
 qstr_You_have_been_pimped You_have_been_pimped_up!
 qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...(assumes_war_starts_at_level_8)
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
@@ -1089,7 +1090,6 @@ qstr_Kham_Cheat_Mode_ON! Kham_Cheat_Mode_ON!
 qstr_1_troll_added! 1_troll_added!
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{reg63}_followers {reg63}_followers
-qstr_XP_added XP_added
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!

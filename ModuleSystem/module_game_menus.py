@@ -2181,6 +2181,10 @@ game_menus = [
       		(position_get_y, reg3, pos13),
       		(display_message, "@Party position ({reg2},{reg3}).", 0x30FFC8),
 	]),
+
+    ("party_add_xp",[], "Add 1000000 XP to Party", 
+    	[(party_add_xp, "p_main_party", 1000000), (display_message, "@XP added", color_good_news),
+	]),
 #     	("camp_cctest_defiled",[],"Add WIP Items",
 #	[
 #		(troop_add_item, "trp_player","itm_defiled_armor_gondor"),
