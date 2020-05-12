@@ -32,7 +32,7 @@ itm_rohirrim_courser|Rohański Rumak
 itm_rohirrim_hunter|Rohański Łowca
 itm_rohirrim_courser2|Rohański Zbrojny rumak
 itm_rohan_warhorse|Rohański Koń Bojowy
-; itm_thengel_warhorse|Eorl Warhorse
+itm_thengel_warhorse|Koń Bojowy Eorl
 itm_rhun_horse_a|Koń z Rhunu
 itm_rhun_horse_b|Koń z Rhunu
 itm_rhun_horse_d|Koń z Rhunu
@@ -115,7 +115,7 @@ itm_dwarf_short_bow|Krasnoludzki Krótki Łuk
 itm_harad_bow|Haradzki Wygięty Łuk
 itm_lg_bow|Łuk Gwardii Orła
 itm_riv_bow|Łuk z Rivendell
-; itm_rhun_bow|Balchoth Bow
+itm_rhun_bow|Łuk Balchotha
 itm_lorien_bow|Łuk Galadrimów
 itm_isengard_large_bow|Isengardzki Wielki Łuk
 itm_dale_bow|Łuk z Dale
@@ -127,7 +127,7 @@ itm_heavy_throwing_spear|Ciężka Włócznia do Rzucania
 itm_javelin|Oszczep
 itm_harad_javelin|Haradzki Oszczep
 itm_gondor_javelin|Gondorski Oszczep
-; itm_rohirrim_throwing_axe|Northmen Throwing Axes
+itm_rohirrim_throwing_axe|Toporki do rzucania Ludzi Północy
 itm_loss_throwing_axes|Toporki do Rzucania z Lossarnach
 itm_arnor_helm_a|Arnorski Hełm
 itm_arnor_helm_b|Arnorski Hełm
@@ -163,7 +163,7 @@ itm_riv_spear|Włócznia z Rivendell
 itm_riv_light|Tunika z Rivendell
 itm_riv_leather|Skórzany pancerz z Rivendell
 itm_riv_foot_mail|Kolczuga z Rivendell
-; itm_riv_foot_scale|Rivendell Scale
+itm_riv_foot_scale|Zbroja łuskowa Rivendell
 itm_riv_surcoat|Surkot z Rivendell
 itm_riv_knight|Zbroja rycerska z Rivendell
 itm_riv_armor_h_archer|Zbroja z Rivendell
@@ -502,16 +502,16 @@ itm_rohan_shield_f|Rohańska Tarcza
 itm_rohan_shield_g|Rohańska Królewska Tarcza
 itm_rohan_light_greaves|Rohańskie lekkie Nagoleenniki
 itm_rohirrim_war_greaves|Rohańskie Wojenne Nagolenniki
-; itm_mirkwood_leather|Woodelf Leather Armor
+itm_mirkwood_leather|Skórzany pancerz Leśnych Elfów
 ; itm_mirkwood_pad|Greenwood Quilted Coat
 itm_mirkwood_mail|Kolczuga z Greenwood
 ; itm_mirkwood_scale|Greenwood Light Scale
 itm_mirkwood_heavy_scale|Zbroja z Mrocznej Puszczy
-; itm_mirkwood_great_spear|Greenwood Great Spear
-; itm_mirkwood_war_spear|Greenwood War Spear
-; itm_mirkwood_short_spear|Woodelf Spear
-; itm_mirkwood_knife|Woodelf Knife
-; itm_mirkwood_axe|Woodelf Axe
+itm_mirkwood_great_spear|Wielka Włócznia Zielonego Lasu
+itm_mirkwood_war_spear|Włócznia Bojowa Zielonego Lasu
+itm_mirkwood_short_spear|Włócznia Leśnych Elfów
+itm_mirkwood_knife|Nóż Leśnych Elfów
+itm_mirkwood_axe|Topór Leśnych Elfów
 ; itm_mirkwood_spear_shield_a|Woodelf Shield
 ; itm_mirkwood_spear_shield_b|Greenwood War Shield
 ; itm_mirkwood_spear_shield_c|Woodelf Round Shield
@@ -667,7 +667,7 @@ itm_umb_armor_d|Zbroja Łuskowa Korsarza
 itm_umb_armor_e|Kolczuga Korsarza
 itm_umb_armor_f|Szlachecka Zbroja Korsarza
 itm_umb_helm_a|Muszlowy Hełm Korsarza
-; itm_umb_helm_b|Corsair Tall Helm
+itm_umb_helm_b|Wysoki Hełm Korsarzy
 itm_umb_helm_c|Hełm Korsarza
 itm_umb_helm_d|Hełm Łupieżcy z Umbaru
 itm_corsair_boots|Buty Korsarza
@@ -806,7 +806,7 @@ itm_beorn_axe_reward|Niedźwiedzia Pałka
 itm_moria_arrow_reward|Zatrute Strzały z Morii
 itm_khamul_helm|Hełm Khamula
 itm_black_arrows_reward|Czarne Strzały
-; itm_leather_boots_reward|Hunter Boots
+itm_leather_boots_reward|Buty Łowcy
 itm_rohan_armor_th|Królewska Zbroja Rohanu
 ; itm_wilderness_amulet|Wilderness Amulet
 itm_prisoner_coll_chain|Łańcuchy Więzienne

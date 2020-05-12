@@ -711,7 +711,7 @@ qstr_Your_mount_rears_ref|Twój wierzchowiec siada, nie słucha twoich poleceń!
 ; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|Poprawiona Kamera Użytkownika
 qstr_Press_Ctrl_+_Left_/_|Naciśnij Ctrl + Lewo / Ctrl + klawisze strzałek w prawo, aby zmienić ramiona
-; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
+qstr_Press_Ctrl_+_Down_to|Naciśnij Ctrl + Strzałka w dół, by wycentrować.
 qstr_Use_+/__to_zoom_in/o|Użyj +/- aby przybliżyć/oddalić
 qstr_Use_Up/Down_arrow_ke|Użyj strzałek Góra/Dół aby przechylić w górę/dół
 qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
@@ -1135,7 +1135,7 @@ qstr_i_wont_decapitated_e|i wont decapitated elephants in multi, nao!!11!
 qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
 qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
 ; qstr_Y_NO_ChINESE??|Y NO ChINESE??
-; qstr_Just_to_troll_you_tr|Just to troll you, troll!
+qstr_Just_to_troll_you_tr|Żeby cię strollować, Trollu!
 ; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
 qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
 qstr_What_is_plate_armour|What is plate armour? Never heard of it.
@@ -1408,7 +1408,7 @@ qstr_I_m_sorry_but_we_can|Przykro mi, ale nie możemy im teraz pomóc.
 qstr_Bah!_Far_more_glory_|Bah! Znacznie więcej chwały można zdobyć w innym miejscu niż przy lichym piractwie.
 qstr_This_raid_does_not_i|Ten nalot mnie nie interesuje. W innym miejscu zdobędę chwałę.
 qstr_{s9}_asked_you_to_de|{s9} poprosił cię o zniszczenie obozu scoutów w pobliżu {s1}.
-; qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
+qstr_Your_party_must_be_at|Musisz mieć przynajmniej dziesięciu ludzi w oddziale, żeby móc się podjąć tego zadania.
 qstr_{s9}_asked_you_to_def|{s9} poprosił Cię o obronę wioski zaatakowanej w pobliżu {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} poprosił Cię o nalot na wioskę w pobliżu {s1}.
 qstr_These_soldiers_may_w|Ci żołnierze bardzo mi się przydadzą, {playername}. Jestem pewien, że bardzo dobrze ich wyszkolił{e/a}ś. Dziękuję.

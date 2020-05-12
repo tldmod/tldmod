@@ -176,7 +176,7 @@ dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Ho cambiato id
 dlga_player_hire_troll_buy_not_enough:close_window|Sprecando il mio tempo...
 dlga_player_hire_troll_buy_done:close_window|Prenditi cura di questo grande compagno ora, e lui si prenderà cura di te ! Ha !
 dlga_player_hire_troop:close_window.1|Ho bisogno di addestramento.
-dlga_player_hire_troop:tld_sell_prisoners|Ti ho portato prigionieri.
+dlga_player_hire_troop:tld_sell_prisoners|Ho qualcosa per te.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Diamo un'occhiata a questa misera feccia.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Fammi controllare le registrazioni delle nostre prigioni.
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Hai cambiato idea, eh ?
@@ -324,13 +324,13 @@ dlga_lord_talk:dwarf_lord_book|{s3}, c'è una faccenda che devo portare alla tua
 dlga_dwarf_lord_book:dwarf_lord_book_give|Parla liberamente, {playername}.
 dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|Ho esplorato le profondità delle Miniere di Moria e ho trovato registrazioni della compagnia di Balin.
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|Stai parlando dei miei parenti come se fossero un ricordo. È così che stanno le cose?
-dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|Temo che sia così. Ho cercato ulteriormente, ma ero incalzato dai goblins, ed erano in gran numero. Ho potuto portare solo questo...
+dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|Temo che sia così. Ho cercato ulteriormente, ma i goblins mi erano addosso, ed erano in gran numero. Ho potuto portare solo questo...
 dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'Non possiamo uscire. Non possiamo uscire...Stanno arrivando.'
 dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|Così è come temevo. Avevo sconsigliato a Balin d'intraprendere questa spedizione, ma lui era risoluto. Sono stato un folle a lasciarlo andare.
 dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|Hai reso ad Erebor un gran servigio, {playername}, e le tue azioni non rimarranno prive di ricompensa.
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Grazie, {s3}.
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|Cosa farai adesso?
-dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|Non lasceremo gli assassini del nostro sangue senza risposta. Porteremo rovina e morte a coloro che ci hanno fatto del male. Dalle vette del Monte. Gundabad alle più profonde fosse di Khazad-dûm, le Montagne Nebbiose saranno macchiate di sangue goblin.
+dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|Non lasceremo gli assassini del nostro sangue senza risposta. Porteremo rovina e morte a coloro che ci hanno fatto del male. Dalle vette del Monte Gundabad alle più profonde fosse di Khazad-dûm, le Montagne Nebbiose saranno macchiate di sangue goblin.
 dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, vorrei aiutare la gente di {s4} a vendicare Balin e i suoi.
 dlga_dwarf_lord_book_give_i:lord_pretalk|Ti auguro buona fortuna.
 dlga_dwarf_lord_avenge:close_window|Molto bene, {playername}. Va con la benedizione delle genti di Durin e porta la morte ai nostri nemici. Fa in modo che conoscano il dolore e la paura che il nostro popolo ha dovuto assaporare.

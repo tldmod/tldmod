@@ -290,14 +290,14 @@ str_name_39|Фрумгар
 str_name_40|Фулнир
 str_name_41|Галдор
 ; str_name_42|Gethron
-; str_name_43|Gorlim
-; str_name_44|Grithnir
+str_name_43|Горлим
+str_name_44|Грихнир
 str_name_45|Гундор
 str_name_46|Хадор
 str_name_47|Халдар
-; str_name_48|Hallacar
+str_name_48|Халлакар
 ; str_name_49|Hathol
-; str_name_50|Herion
+str_name_50|Херион
 str_name_51|Хилд
 str_name_52|Хунтхор
 str_name_53|Имлах
@@ -319,15 +319,15 @@ str_name_68|Орлег
 ; str_name_69|Orodreth
 str_name_70|Остохер
 str_name_71|Пелендур
-; str_name_72|Ragnor
-; str_name_73|Sador
+str_name_72|Рагнор
+str_name_73|Садор
 ; str_name_74|Súrion
 ; str_name_75|Thorongil
-; str_name_76|Turambar
+str_name_76|Турамбар
 ; str_name_77|Ulfast
 ; str_name_78|Ulwarth
 ; str_name_79|Valacar
-; str_name_80|Wulf
+str_name_80|Вулф
 ; str_name_elf_1|Merlkir
 ; str_name_elf_2|Romanoir
 ; str_name_elf_3|Aegnor
@@ -2570,7 +2570,7 @@ str_khand_guildmaster_companion_player_ask|Я слышал о великих в�
 ; str_khand_main_guildmaster_companion|So you want great warriors? We have them aplenty. But let me tell you of one whose savagery even we find astonishing. Her name is Turmbathu - yes, a woman! I would not have believed it myself had I not seen her in the fighting pit with my own eyes. Defeated three men at once, and killed one of them. Unfortunate, that - the one she killed was a son of Great Lord Lurmsakun, and so now you may find her among the prisoners, awaiting a painful death… unless you, Commander, can intercede. Such a pity, to waste such strength.
 ; str_umbar_guildmaster_companion_player_ask|So, the people here fancy themselves heirs of greatness, do they? Can anyone here stand proof of such claims?
 ; str_umbar_guildmaster_companion_none|You come at the wrong time, Commander. Now we’re all basking in the glory of capturing this holding, and working out the equitable distribution of its wealth - to put it another way, the captains are all at one another’s throats, heated words are being said, and it will not be long ere blood of Umbar is spilled by Umbar hands. Some of the sailors are unhappy, and may consent to follow you instead of their former captains. That’s the best I can do for you at the moment, Commander.
-; str_umbar_guildmaster_companion_player_none_ok|Disappointing. But not unexpected of sea-dogs. I shall have to look elsewhere for the quality I seek.
+str_umbar_guildmaster_companion_player_none_ok|Разочаровывающие. Но не неожиданно для морского пса. Я должен поискать где-то еще для нужного мне качества. 
 ; str_umbar_guildmaster_player_found_ok|A corsair with a code of honour! Not unheard of, but not often found. I care only that he will go where I command, and kill as I instruct.
 ; str_umbar_main_guildmaster_companion|Why, if I guess aright you seek the finest fighters among us to join your ranks. After the recent burning of our Haven, I’m afraid our best sailors and raiders follow only our most experienced captains. But I have a friend, named Fuldimir, who has been passed over for promotion too many times, to my mind. It’s that strange way of thinking he has - he will not steal, he says, from any who still draw breath. Where’s the sense in that, I ask you? Still, he is handy with a cutlass, and as tough as any hardy seafarer. Here he is, in this tent - you may speak with him.
 ; str_mordor_guildmaster_companion_player_ask|So, these are the finest in the Black Land, are they? Not much to look at. Tell me who’s actually useful in a scrap.

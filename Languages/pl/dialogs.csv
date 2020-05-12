@@ -165,16 +165,16 @@ dlga_start:player_hire_troop|{s33}^^Wspieram obronę {s21}. Chcesz mnie widzieć
 dlga_player_hire_troop:player_hire_troop_give|Część żołnierzy mego oddziału przydała by się bardziej tutaj, broniąc {s21}.
 dlga_player_hire_troop:close_window|Chciał{/a}bym przeprowdzić inspekcję tu stacjonujących moich żołnierzy.
 dlga_player_hire_troop:player_hire_trolls_take|Jestem dowódcą godnym posiadania Trolla w armii - chcę jednego.
-; dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
+dlga_player_hire_trolls_take:close_window|Pragniesz stworzyć swój własny Czarny Legion? Wróć, kiedy będziesz mógł dodać dorosłego trolla do swojego oddziału.
 dlga_player_hire_trolls_take:close_window.1|Ty? Nędzny robaku. Zjeżdżaj. trolla się zachciało. (Musisz posiadać rangę {s24} lub wyższą)
 dlga_player_hire_trolls_take:player_hire_trolls_how_many|To będzie kosztować {reg21} wpływu
 dlga_player_hire_trolls_take:close_window.2|Zmienił{em/am} zdanie.
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Przerażająca bestia. A teraz, jest moja!
-; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
-; dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
+dlga_player_hire_trolls_how_many:player_hire_troll_armoured|Będą lepiej walczyć jak będą mieli jakiś pancerz. Załatw je.
+dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Zmienił{em/am} zdanie.
 dlga_player_hire_troll_buy_not_enough:close_window|Marnujesz mój czas...
-; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
+dlga_player_hire_troll_buy_done:close_window|Zajmij się dobrze tym dużym kolegą, a on dobrze zajmie się tobą! Ha!
 dlga_player_hire_troop:close_window.1|Chciał{/a}bym się nieco podszkolić.
 dlga_player_hire_troop:tld_sell_prisoners|Przyprowadził{e/a}m ci kilku więźniów.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Zobaczmy tych nądznych tchórzy.
@@ -482,7 +482,7 @@ dlga_lord_mission_defend_accept:close_window|Dziękuje ci, {playername}. Teraz r
 dlga_lord_mission_defend_reject:close_window|Tego oczekiwałem. Więc wyślę jakichkolwiek żołnierzy jakich mogę. Módlmy się że nie jest za późno.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername} W pobliżu znajduje się wioska, która jest łatwa do zdobycia. Nasi zwiadowcy mówią, że są chronieni przez {s3}, ale są nieliczni i łatwo można ich pokonać. Zdarza się, że jesteś pierwszym dowódcą, któremu to powiedziałem. Co chcesz zrobić z tymi informacjami?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Napadnę na tą wioskę, zabije każdego mężczyznę którego zobaczę, i zniewolę wszystkie kobiety i dzieci!
-; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I cannot raid with these weaklings with me right now...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|Nie mogę napadać z tymi słabeuszami...
 dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Nie mam czasu napadać na słabe wioski!
 dlga_lord_raid_village_accept:close_window|Więc co ty robisz stojąc tu?
 dlga_lord_raid_village_reject:close_window|Wyjaśnienia dla tchórzy. Odejdź, twój tchórzliwy smród jest obraźliwy.
@@ -990,18 +990,18 @@ dlga_start:town_merchant_talk|Witam Pan{ie/i}. Czym mogę dziś służyć?
 dlga_start:town_merchant_talk.1|Witam. W czym mogę służyć?
 dlga_town_merchant_talk:trade_requested_weapons|Chcę zapytać o nowy ekwipunek. Pokaż mi, co masz na stanie.
 dlga_town_merchant_talk:trade_requested_horse|Myślę o zakupie konia.
-; dlga_town_merchant_talk:player_upgrade_trolls_take|I want to strengthen my trolls!
+dlga_town_merchant_talk:player_upgrade_trolls_take|Chcę wzmocnić moje trolle!
 dlga_player_upgrade_trolls_take:close_window|Kim ty jesteś, żeby do mnie o to pytać? Pff! Wynoś się! (Musisz posiadać rangę {s24} lub wyższą)
 ; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
 ; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
 dlga_player_upgrade_trolls_take:close_window.2|Nie robimy tu takich rzeczy.
-; dlga_player_upgrade_trolls_take:close_window.3|Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!
+dlga_player_upgrade_trolls_take:close_window.3|Te trolle nawet nie potrafią mówić normalnie. Takich nam nie trzeba. Zabierz je tam, skąd przyszły.
 dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Nie ważne.
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|Opancerzę jednego z nich
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Być może nie zasłużyłem jeszcze na to. Nie będę ci przeszkadzał tą drobnostką.
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Nie ważne.
 dlga_player_upgrade_troll_not_enough:close_window|Marnujesz mój czas.
-; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
+dlga_player_upgrade_troll_buy_done:close_window|Tak, tak, chodź tu. Tak, ty...
 dlga_trade_requested_weapons:merchant_trade|Ach, tak, Pani{e/}. Lepszego ekwipunku nie znajdziesz nigdzie indziej.
 dlga_trade_requested_horse:merchant_trade|Ostry uchwyt do jazdy i zabijania oraz mięso, którym można je karmić! Nie znajdziesz lepszych bestii niż te nigdzie indziej.
 dlga_merchant_trade:town_merchant_talk|Coś jeszcze?
@@ -1052,7 +1052,7 @@ dlga_enemy_defeated:close_window|Arggh! Nienawidzę tego.
 dlga_party_relieved:close_window|Dzięki, że pomogł{eś/aś} nam w walce przeciw tym draniom.
 dlga_start:battle_reason_stated|Z twej czaszki zrobię sobie kielich!
 dlga_member_chat_00:close_window.1|Wyruszymy gdy będziesz gotow{reg5?a:y}.
-; dlga_member_chat_00:close_window.2|^^Grrrrr.....^^
+dlga_member_chat_00:close_window.2|^^Grrrrr.....^^
 dlga_member_chat_00:regular_member_talk|Co rozkażesz, {Mój Panie/Moja Pani}?
 dlga_regular_member_talk:view_regular_char_requested|Opowiedz mi o sobie
 dlga_view_regular_char_requested:do_regular_member_view_char|Dobrze, Pani{e/}. Powiem ci wszystko, co powin{ieneś/naś} o mnie wiedzieć.

@@ -372,10 +372,10 @@ trp_a2_riv_vet_scout|Doświadczony Zwiadowca Rivendell
 trp_a2_riv_vet_scout_pl|Doświadczonych Zwiadowców Rivendell
 ; trp_a3_riv_archer|Rivendell Archer
 ; trp_a3_riv_archer_pl|Rivendell Archers
-; trp_a4_riv_vet_archer|Rivendell Veteran Archer
-; trp_a4_riv_vet_archer_pl|Rivendell Veteran Archers
-; trp_a5_riv_master_archer|Rivendell Master Archer
-; trp_a5_riv_master_archer_pl|Rivendell Master Archers
+trp_a4_riv_vet_archer|Łucznik Weteran Rivendell
+trp_a4_riv_vet_archer_pl|Łucznicy Weterani Rivendell
+trp_a5_riv_master_archer|Mistrz Łuku Rivendell
+trp_a5_riv_master_archer_pl|Mistrzowie Łuku Rivendell
 trp_a6_riv_guardian|Strażnik Rivendell
 trp_a6_riv_guardian_pl|Strażników Rivendell
 trp_i3_riv_swordbearer|Zbrojny Rivendell
@@ -384,8 +384,8 @@ trp_i3_riv_swordbearer_pl|Zbrojnych Rivendell
 ; trp_i4_riv_vet_swordbearer_pl|Rivendell Veteran Swordbearers
 trp_i5_riv_swordmaster|Mistrz Miecza z Rivendell
 trp_i5_riv_swordmaster_pl|Mistrzów Miecza z Rivendell
-; trp_i6_riv_champion|Champion of Imladris
-; trp_i6_riv_champion_pl|Champions of Imladris
+trp_i6_riv_champion|Czempion z Imladris
+trp_i6_riv_champion_pl|Czempioni z Imladris
 trp_ac5_riv_rider|Jeździec Rivendell
 trp_ac5_riv_rider_pl|Jeźdźców Rivendell
 trp_ac6_riv_knight|Rycerz Imladris
@@ -396,8 +396,8 @@ trp_a1_arnor_scout|Zwiadowca Dunedainów
 trp_a1_arnor_scout_pl|Oddział Zwiadowców Dunedainów
 trp_a2_arnor_vet_scout|Tropiciel Dunedainów
 trp_a2_arnor_vet_scout_pl|Tropicieli Dunedainów
-; trp_i3_arnor_swordsman|Dunedain Swordsman
-; trp_i3_arnor_swordsman_pl|Dunedain Swordsmen
+trp_i3_arnor_swordsman|Miecznik Dunedainów
+trp_i3_arnor_swordsman_pl|Miecznicy Dunedainów
 ; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
 ; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
 ; trp_i5_arnor_champion|Champion of Arnor

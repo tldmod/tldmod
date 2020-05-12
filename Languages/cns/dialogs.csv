@@ -165,15 +165,15 @@ dlga_start:player_hire_troop|{s33}^^我全权负责驻守在{s21}的部队。听
 dlga_player_hire_troop:player_hire_troop_give|我队伍里的一些士兵能够帮助防守{s21}。
 dlga_player_hire_troop:close_window|我想检查驻扎在这里的士兵。
 ; dlga_player_hire_troop:player_hire_trolls_take|I am a commander worthy of a fighting Troll - give me one!
-; dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
-; dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
-; dlga_player_hire_trolls_take:player_hire_trolls_how_many|It will cost {reg21} influence.
-; dlga_player_hire_trolls_take:close_window.2|I’ve changed my mind.
-; dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|A fearsome beast. And now, it is mine!
+dlga_player_hire_trolls_take:close_window|想建立自己的暗黑军团，是吗？ 等你可以将成熟的巨魔添加到自己的队伍中的时候再说吧。
+dlga_player_hire_trolls_take:close_window.1|你？ 你这个卑微的蛆虫。 滚出我的视线。 战斗巨魔，确实. (你需要成为{s24}或者更高)
+dlga_player_hire_trolls_take:player_hire_trolls_how_many|它将花费{reg21}影响力
+dlga_player_hire_trolls_take:close_window.2|我改变主意了。
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|可怕的野兽。 现在，它是我的了！
 ; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
-; dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
-; dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|I’ve changed my mind.
-; dlga_player_hire_troll_buy_not_enough:close_window|Wasting my time...
+dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|我改变主意了。
+dlga_player_hire_troll_buy_not_enough:close_window|浪费我的时间...
 ; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
 dlga_player_hire_troop:close_window.1|我需要一些训练。
 dlga_player_hire_troop:tld_sell_prisoners|我给你带来了一些囚犯。
@@ -996,11 +996,11 @@ dlga_town_merchant_talk:trade_requested_horse|我正考虑弄一匹坐骑。
 ; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
 ; dlga_player_upgrade_trolls_take:close_window.2|We don't do that here...
 ; dlga_player_upgrade_trolls_take:close_window.3|Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!
-; dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Forget it
+dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|算了
 ; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
 ; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Forget it
-; dlga_player_upgrade_troll_not_enough:close_window|Wasting my time...
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|算了
+dlga_player_upgrade_troll_not_enough:close_window|浪费我的时间...
 ; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
 dlga_trade_requested_weapons:merchant_trade|啊，好的指挥官。你在任何地方都不会找到比我这儿更好的货物了。
 dlga_trade_requested_horse:merchant_trade|我这的坐骑不论是用来杀人还是旅行都是绝对的首选，过了这个村可就没这个店了！

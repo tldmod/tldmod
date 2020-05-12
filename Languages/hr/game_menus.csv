@@ -101,7 +101,7 @@ mno_start_armis|u vojskama ISENGARDA
 mno_start_minmo|u Rudnicima MORIJE
 mno_start_cliff|na brdima GUNDABADA
 ; menu_start_gondor_mt|^^^^^^^^^^Select your Lineage
-; mno_start_1_com|Commoner
+mno_start_1_com|Obični ljudi
 mno_start_2_hib|Plemići
 menu_start_haradrim|^^^^^^^Ti si Haradrim,^čovijek iz pustinje.^Izaberi svoju lozu
 mno_start_1_des|Pustinjski čovijek
@@ -339,17 +339,17 @@ mno_explore|Istraži ovo mjesto.
 ; mno_attack_lair|Attack them now
 ; mno_leave_bandit_lair|Leave for now.
 ; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
-; mno_gondor_reinforcement_event_close|Close
+mno_gondor_reinforcement_event_close|Zatvori
 ; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
 mno_gondor_beacons_close|Napusti...
 ; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
-; mno_player_added_to_war_council_close|Close
+mno_player_added_to_war_council_close|Zatvori
 ; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
-; mno_player_added_to_siege_reports_close|Close
+mno_player_added_to_siege_reports_close|Zatvori
 ; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
-; mno_player_added_to_allow_follow_close|Close
+mno_player_added_to_allow_follow_close|Zatvori
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
-; mno_center_besieged_event_close|Close
+mno_center_besieged_event_close|Zatvori
 ; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 mno_intro_next|Nastavi...
 ; mno_start_defend_caravan|Defend the Caravan!

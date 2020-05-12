@@ -132,16 +132,16 @@ trp_i4_rhun_vet_infantry|卢恩资深步兵
 trp_i4_rhun_vet_infantry_pl|卢恩资深步兵
 ; trp_i5_rhun_ox_warrior|Warrior of the Ox
 ; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
-; trp_c2_rhun_horseman|Horseman of Rhun
-; trp_c2_rhun_horseman_pl|Horsemen of Rhun
-; trp_c3_rhun_outrider|Outrider of Rhun
-; trp_c3_rhun_outrider_pl|Outriders of Rhun
-; trp_c4_rhun_noble_rider|Noble Rider of Rhun
-; trp_c4_rhun_noble_rider_pl|Noble Riders of Rhun
+trp_c2_rhun_horseman|卢恩骑手
+trp_c2_rhun_horseman_pl|卢恩骑手
+trp_c3_rhun_outrider|卢恩护卫
+trp_c3_rhun_outrider_pl|卢恩护卫
+trp_c4_rhun_noble_rider|卢恩贵族骑兵
+trp_c4_rhun_noble_rider_pl|卢恩贵族骑兵
 ; trp_c5_rhun_warrider|Warrider of Rhun
 ; trp_c5_rhun_warrider_pl|Warriders of Rhun
 trp_c6_rhun_warlord|卢恩军阀
-; trp_c6_rhun_warlord_pl|Warlords of Rhun
+trp_c6_rhun_warlord_pl|卢恩军阀
 trp_i1_dwarf_apprentice|矮人学徒
 trp_i1_dwarf_apprentice_pl|矮人学徒
 trp_i2_dwarf_warrior|矮人战士
@@ -324,8 +324,8 @@ trp_a2_lorien_archer|罗斯洛立安射手
 trp_a2_lorien_archer_pl|罗斯洛立安射手
 trp_a3_lorien_vet_archer|罗斯洛立安资深射手
 trp_a3_lorien_vet_archer_pl|罗斯洛立安资深射手
-; trp_a4_lorien_gal_archer|Galadhrim Archer
-; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
+trp_a4_lorien_gal_archer|罗斯洛立安弓箭手
+trp_a4_lorien_gal_archer_pl|罗斯洛立安弓箭手
 trp_galadhrim_royal_marksman|罗斯洛立安皇家神射手
 trp_galadhrim_royal_marksman_pl|罗斯洛立安皇家神射手
 trp_i3_lorien_inf|罗斯洛立安步兵
@@ -518,8 +518,8 @@ trp_i4_dun_wolf_warrior|丹尼斯狼战
 trp_i4_dun_wolf_warrior_pl|丹尼斯狼战
 trp_i5_dun_wolf_guard|丹尼斯狼卫
 trp_i5_dun_wolf_guard_pl|丹尼斯狼卫
-; trp_ac5_dun_raven_rider|Dunnish Night Raven
-; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
+trp_ac5_dun_raven_rider|邓尼什暗夜乌鸦
+trp_ac5_dun_raven_rider_pl|邓尼什暗夜乌鸦
 trp_i1_khand_bondsman|侃德契奴 
 trp_i1_khand_bondsman_pl|侃德契奴 
 trp_i2_khand_pit_dog|侃德斑犬
@@ -947,7 +947,7 @@ trp_npc14|弗达墨
 trp_npc15|博扎克
 trp_npc16|瓦尔凡
 trp_npc17|丁博
-; trp_knight_6_2|Golasgil
+trp_knight_6_2|戈拉斯吉尔
 trp_gondor_lord|摄政王迪耐瑟二世
 trp_gondor_lord_pl|摄政王
 trp_rohan_lord|希优顿国王
@@ -1591,26 +1591,26 @@ trp_werewolf|狼人
 trp_werewolf_pl|狼人
 trp_moria_troll|洞穴食人妖
 trp_moria_troll_pl|洞穴食人妖
-; trp_moria_vet_troll|Trained Cave Troll
-; trp_moria_vet_troll_pl|Trained Cave Trolls
-; trp_moria_armored_troll|Armored Cave Troll
-; trp_moria_armored_troll_pl|Armored Cave Trolls
-; trp_gunda_troll|Mountain Troll
-; trp_gunda_troll_pl|Mountain Trolls
-; trp_gunda_vet_troll|Trained Mountain Troll
-; trp_gunda_vet_troll_pl|Trained Mountain Trolls
-; trp_gunda_placeholder|Trained Mountain Troll
-; trp_gunda_placeholder_pl|Trained Mountain Trolls
-; trp_isen_troll|Isengard Troll
-; trp_isen_troll_pl|Isengard Trolls
-; trp_isen_vet_troll|Isengard Trained Troll
-; trp_isen_vet_troll_pl|Isengard Trained Trolls
-; trp_isen_armored_troll|Isengard Armored Troll
-; trp_isen_armored_troll_pl|Isengard Armored Trolls
-; trp_mordor_troll|Mordor Troll
-; trp_mordor_troll_pl|Mordor Trolls
-; trp_mordor_vet_troll|Mordor Trained Troll
-; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_moria_vet_troll|资深洞穴食人妖
+trp_moria_vet_troll_pl|资深洞穴食人妖
+trp_moria_armored_troll|披甲洞穴食人妖
+trp_moria_armored_troll_pl|披甲洞穴食人妖
+trp_gunda_troll|山地巨魔
+trp_gunda_troll_pl|山地巨魔
+trp_gunda_vet_troll|资深山地巨魔
+trp_gunda_vet_troll_pl|资深山地巨魔
+trp_gunda_placeholder|资深山地巨魔
+trp_gunda_placeholder_pl|资深山地巨魔
+trp_isen_troll|艾辛格巨魔
+trp_isen_troll_pl|艾辛格巨魔
+trp_isen_vet_troll|艾辛格资深巨魔
+trp_isen_vet_troll_pl|艾辛格资深巨魔
+trp_isen_armored_troll|艾辛格披甲巨魔
+trp_isen_armored_troll_pl|艾辛格披甲巨魔
+trp_mordor_troll|魔多巨魔
+trp_mordor_troll_pl|魔多巨魔
+trp_mordor_vet_troll|魔多资深巨魔
+trp_mordor_vet_troll_pl|魔多资深巨魔
 trp_mordor_olog_hai|魔多异化食人妖
 trp_mordor_olog_hai_pl|魔多异化食人妖
 trp_troll_placeholder_1|洞穴食人妖
@@ -1625,8 +1625,8 @@ trp_troll_placeholder_5|洞穴食人妖
 trp_troll_placeholder_5_pl|洞穴食人妖
 trp_troll_placeholder_6|洞穴食人妖
 trp_troll_placeholder_6_pl|洞穴食人妖
-; trp_wild_troll|Wild Cave Troll
-; trp_wild_troll_pl|Wild Cave Trolls
+trp_wild_troll|洞穴食人妖
+trp_wild_troll_pl|洞穴食人妖
 trp_ent2|树人
 trp_ent2_pl|树人
 trp_mountain_goblin2|山地半兽人
