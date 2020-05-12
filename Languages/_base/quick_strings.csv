@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|have won the sea battle, demoralizing your troops. The
 qstr_loses_Faction_Strength|loses Faction Strength due to the destructive raid.
 qstr_loses_Faction_Strength_|loses Faction Strength due to the your success at the sea.
 qstr_You_spent_{reg67}_of|You spent {reg67} of your influence with {s1}, with {reg66} remaining.
+
+qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+
+qstr_{s1}_{s0}|{s1}, {s0}
+qstr_{s1}_and_{s0}|{s1} and {s0}
+
 qstr_No_Troops_Left.|No Troops Left.
 qstr_avoid_melee|avoid melee
 qstr_stand_and_fight|stand and fight
