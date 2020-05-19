@@ -392,7 +392,7 @@ qstr_These_Elves_will_fal|Questi Elfi cadranno sotto le nostre lame !
 qstr_Raahh!_Draw_your_wea|Raaah ! Sguainate le armi, feccia di {s16} ! Stanotte festeggeremo con le interiora di {s15} !
 qstr_Rha!_{s14}More_{s15}|Rha ! {s14}Ancora corpi  di {s15} da sfigurare con le nostre terribili armi !
 qstr_Slaughter_these_puny|Massacrate questi penosi di {s18} adesso ! Poi metteremo a fuoco le loro case e uccideremo le lore famiglie. 
-qstr_Death_to_the_trespas|Morte ai trangressori sulle terre di {s16} !
+qstr_Death_to_the_trespas|Morte agli intrusi sulle terre di {s16} !
 qstr_CHARGE!_Let_s_clear_|CARICA ! Ripuliamo {s17} dalla feccia {s18} {s19} !
 qstr_{s14}Now_that_{s19}s|{s14} Ora la feccia {s19} assaggerà la furia della gente orso !
 qstr_Attack!|Attacco ! 
@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|ha vinto la battaglia sul mare, demoralizzando le tue 
 qstr_loses_Faction_Strength|Perde Forza Fazione a causa della distruttiva incursione.
 qstr_loses_Faction_Strength_|Perde Forza Fazione a causa del tuo successo in mare.
 qstr_You_spent_{reg67}_of|Hai speso {reg67} della tua influenza con {s1}, ne hai {reg66} rimanenti.
+
+qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?era:Dovrebbe essere {s5}.
+
+qstr_{s1}_{s0}|{s1}, {s0}
+qstr_{s1}_and_{s0}|{s1} e {s0}
+
 qstr_No_Troops_Left.|Nessuna Truppa Rimasta.
 qstr_avoid_melee|evita lo scontro fisico
 qstr_stand_and_fight|Resta e combatti

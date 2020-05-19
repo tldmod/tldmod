@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|han ganado la batalla naval, desmoralizando a tus trop
 qstr_loses_Faction_Strength|pierde fuerza de facción debido a un asalto destructivo.
 qstr_loses_Faction_Strength_|pierde fuerza de facción debido a tus éxitos navales.
 qstr_You_spent_{reg67}_of|Gastas {reg67} de tu influencia con {s1}, te quedan {reg66}.
+
+qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?estaba:está} cerca de {s5}.
+
+qstr_{s1}_{s0}|{s1}, {s0}
+qstr_{s1}_and_{s0}|{s1} y {s0}
+
 qstr_No_Troops_Left.|No quedan tropas.
 qstr_avoid_melee|evitar cuerpo a cuerpo
 qstr_stand_and_fight|luchar sin un paso atrás

@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|à gagné la bataille navale, démoralisant vos troupe
 qstr_loses_Faction_Strength|perd de la Force de Faction suite au raid destructeur.
 qstr_loses_Faction_Strength_|perd de la Force de Faction suite à votre succès en mer.
 qstr_You_spent_{reg67}_of|Vous dépensez {reg67} de votre influence avec {s1}, il vous en reste {reg66}.
+
+qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?se trouvait:se trouve} dans les environs de {s5}.
+
+qstr_{s1}_{s0}|{s1}, {s0}
+qstr_{s1}_and_{s0}|{s1} et {s0}
+
 qstr_No_Troops_Left.|Plus de soldats.
 qstr_avoid_melee|éviter le corps-à-corps
 qstr_stand_and_fight|tenir et se battre

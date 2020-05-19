@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|hat die Seeschlacht gewonnen, deine Truppen verlieren 
 qstr_loses_Faction_Strength|wird durch den Überfall geschwächt.
 qstr_loses_Faction_Strength_|wird durch deinen Sieg auf See geschwächt.
 qstr_You_spent_{reg67}_of|Du verwendest {reg67} Einfluss in {s1}, {reg66} verbleiben.
+
+; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+
+; qstr_{s1}_{s0}|{s1}, {s0}
+; qstr_{s1}_and_{s0}|{s1} and {s0}
+
 qstr_No_Troops_Left.|Keine Truppen mehr.
 qstr_avoid_melee|Vermeidet Nahkampf
 qstr_stand_and_fight|Haltet Stand und kämpft

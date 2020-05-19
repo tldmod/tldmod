@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|はこの海戦に勝利し、あなたの兵は殲滅
 qstr_loses_Faction_Strength|は破壊的な襲撃を受けたため、 勢力ポイントが下がりました。
 qstr_loses_Faction_Strength_|はあなたの海における活躍により、 勢力ポイントが下がりました。
 qstr_You_spent_{reg67}_of|あなたは{s1}での影響力ポイントを{reg67}消費しました。 残りは{reg66}です。
+
+; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+
+; qstr_{s1}_{s0}|{s1}, {s0}
+; qstr_{s1}_and_{s0}|{s1} and {s0}
+
 qstr_No_Troops_Left.|兵はもういません。
 qstr_avoid_melee|近接武器をさける
 qstr_stand_and_fight|立ち上がって戦う

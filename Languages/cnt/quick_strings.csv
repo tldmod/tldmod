@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|贏 得 了 海 戰 ， 使 你 的 軍 隊 士 氣 �
 qstr_loses_Faction_Strength|由 於 破 壞 性 突 襲 ， 失 去 了 派 系 力 量
 qstr_loses_Faction_Strength_|由 於 你 在 海 上 的 成 功 ， 失 去 了 派 系 力 量 。
 qstr_You_spent_{reg67}_of|您 使 用 {s1} {reg67} 影 響 了 {reg67} ， 並 留 下 {reg66} 。
+
+; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+
+; qstr_{s1}_{s0}|{s1}, {s0}
+; qstr_{s1}_and_{s0}|{s1} and {s0}
+
 qstr_No_Troops_Left.|士 兵 們 一 個 不 剩 。
 qstr_avoid_melee|避 免 近 戰
 qstr_stand_and_fight|靠 攏 戰 鬥

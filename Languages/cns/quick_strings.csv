@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|敌人赢得了海战的胜利，这打击了你的士
 qstr_loses_Faction_Strength|受到破坏性的突袭会失去势力值
 qstr_loses_Faction_Strength_|因为你在海上的成功，敌对派系力量下降了。
 qstr_You_spent_{reg67}_of|你花费了{reg67}你的影响力用于{s1}，还剩下{reg66}影响力。
+
+; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+
+; qstr_{s1}_{s0}|{s1}, {s0}
+; qstr_{s1}_and_{s0}|{s1} and {s0}
+
 qstr_No_Troops_Left.|士兵们一个不剩。
 qstr_avoid_melee|避免近战
 qstr_stand_and_fight|防守和作战

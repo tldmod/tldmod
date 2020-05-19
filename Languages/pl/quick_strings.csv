@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|wygrałem morską bitwę, demoralizując twoje oddzia�
 qstr_loses_Faction_Strength|traci siłę rażenia dzięki niszczycielskiemu nalotowi.
 qstr_loses_Faction_Strength_|traci siłę rażenia dzięki twojemu sukcesowi na morzu.
 qstr_You_spent_{reg67}_of|Wydałeś {reg67} swojego wpływu na {s1}, pozostając {reg66}.
+
+; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+
+; qstr_{s1}_{s0}|{s1}, {s0}
+; qstr_{s1}_and_{s0}|{s1} and {s0}
+
 qstr_No_Troops_Left.|Brak jednostek
 qstr_avoid_melee|unikaj walki wręcz
 qstr_stand_and_fight|stój i walcz

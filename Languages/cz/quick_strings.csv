@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|vyhráli námořní bitvu a demoralizovali tvé jednot
 qstr_loses_Faction_Strength|frakce ztrácí Sílu, kvůli ničivému nájezdu.
 qstr_loses_Faction_Strength_|frakce ztrácí Sílu, díky tvému úspěchu na moři.
 qstr_You_spent_{reg67}_of|Utratil jsi {reg67} bodů vlivu s frakcí {s1}, zbývá ti {reg66}.
+
+; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+
+; qstr_{s1}_{s0}|{s1}, {s0}
+; qstr_{s1}_and_{s0}|{s1} and {s0}
+
 qstr_No_Troops_Left.|Nezbývají žádní vojáci.
 qstr_avoid_melee|vyhnout se boji z blízka
 qstr_stand_and_fight|stát a bojovat

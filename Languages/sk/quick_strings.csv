@@ -647,6 +647,12 @@ qstr_have_won_the_sea_bat|vyhrali morskú bitku, demoralizovali svoje jednotky. 
 qstr_loses_Faction_Strength|stráca silu frakcie v dôsledku ničivého náletu.
 qstr_loses_Faction_Strength_|stráca silu frakcie kvôli vášmu úspechu na mori.
 qstr_You_spent_{reg67}_of|Strávil si {reg 67} svojho vplyvu s {s1}, pričom zostal {reg 66}.
+
+; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+
+; qstr_{s1}_{s0}|{s1}, {s0}
+; qstr_{s1}_and_{s0}|{s1} and {s0}
+
 qstr_No_Troops_Left.|Neostávajú žiadne jednotky.
 qstr_avoid_melee|vyhnúť sa bitky na blízko 
 qstr_stand_and_fight|postaviť sa a bojovať
