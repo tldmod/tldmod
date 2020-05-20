@@ -4213,7 +4213,42 @@ from module_info import wb_compile_switch
 
 if wb_compile_switch==1:
 
+  #swy-- retrieve a few external parameters like the git/revision count and the build date
+  #      and mode, we can build a dynamic string and then show it in the main menu; on wb.
+  import os, subprocess
+  import datetime
+  
+  tld_now = datetime.datetime.utcnow()
+  tld_revision = "¿?"
+  
+  if 'SVNREV' in os.environ:
+    tld_revision = os.environ["SVNREV"]   
+  else:
+    from subprocess import check_output, CalledProcessError, STDOUT
 
+    try:
+      output = check_output('git rev-list --count BASE..HEAD', stderr=STDOUT, shell=True).decode()
+      tld_revision = int(output) + 1 
+        
+    except Exception as e:
+      print("  [i] git command-line client not set in path, revision won't appear in the main menu: ")
+      print(e)
+      pass
+    
+  tld_tags = []
+    
+  if is_a_wb_cutscene:
+    tld_tags.append("wb")
+  
+  if cheat_switch:
+    tld_tags.append("dev")
+    
+  # HTTPS://TLDMOD.GITHUB.IO   ^" + \
+  tld_version_string = str("@"            + \
+                           " rev %s %s ^" + \
+                           " Built %s   ") % (tld_revision, " | ".join(tld_tags), tld_now.strftime("%Y-%m-%d %H:%M"))
+  # --
+  
   presentations+=[
     ("game_start", mesh_load_window, 0,
     [
@@ -4232,6 +4267,16 @@ if wb_compile_switch==1:
          (position_set_x, pos1, 0),
          (position_set_y, pos1, 0),
          (overlay_set_position, ":mmstatue", pos1),
+         
+         # swy-- add the version number and date in the main menu if we can retrieve at msys build time
+         (create_text_overlay, reg1, tld_version_string, tf_left_align),
+         (position_set_x, pos1,            800),
+         (position_set_y, pos1,            800),
+         (overlay_set_size, reg1,         pos1),
+         (position_set_x, pos1,            195),
+         (position_set_y, pos1,              0),
+         (overlay_set_position, reg1,     pos1),
+         (overlay_set_color,    reg1, 0x292421),
        ]),
     ]),
 

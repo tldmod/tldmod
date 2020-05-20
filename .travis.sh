@@ -7,10 +7,10 @@ echo HI THERE!
 
 # grab the revision count between the oldest and the latest commit,
 # parse the changelog page to find the previous one on steam
-SVNREV=$((`curl -u "$ghuser:$ghtoken" -s "https://api.github.com/repos/tldmod/tldmod/compare/BASE...HEAD" | jq '.total_commits'` + 1))
+SVNREV=$((`curl -u "$ghuser:$ghtoken" -s "https://api.github.com/repos/tldmod/tldmod/compare/BASE...HEAD" | jq '.total_commits'` + 1)); export SVN_REV
 
 PREREV=$(curl -s 'http://steamcommunity.com/sharedfiles/filedetails/changelog/299974223' | \
-         sed -n 's/^.*Equivalent to nightly r\([0-9]*\).*$/\1/p' | head -1)
+         sed -n 's/^.*Equivalent to nightly r\([0-9]*\).*$/\1/p' | head -1); export PREREV
 
 
 # prefix the new changelog with the standard introduction and
