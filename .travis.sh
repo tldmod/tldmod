@@ -97,19 +97,15 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental 
                           -e 's/.*\.py.*//I' \
                           -e 's/.*\.log.*//I' \
                           -e 's/.*\.exe.*//I' \
-                          -e 's/.*\.bik.*//I' \
-                          -e 's/.*\.fxo.*//I' \
-                          -e 's/.*\.tx.*//I' \
+                          -e 's/.*\.tx\/.*//I' \
                           -e 's/.*\.bat.*//I' \
-                          -e 's/.*\.dll.*//I' \
-                          -e 's/.*\.h.*//I' \
                           -e 's/.*\.odt.*//I' \
                           -e 's/.*\.psd.*//I' \
+                          -e 's/.*\.xcf.*//I' \
                           -e 's/.*\.zip.*//I' \
                           -e 's/.*\.rar.*//I' \
                           -e 's/.*\.cdd.*//I' \
                           -e 's/.*\.lua.*//I' \
-                          -e 's/.*\.htm.*//I' \
                           -e 's/.*\.nsi.*//I' \
                           -e 's/.*\/[\_|\.][^wT][^b].*//' \
                           -e '/^$/d' \
