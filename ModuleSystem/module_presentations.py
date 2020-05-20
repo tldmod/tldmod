@@ -4240,7 +4240,7 @@ if wb_compile_switch==1:
   if is_a_wb_cutscene:
     tld_tags.append("wb")
   
-  if cheat_switch:
+  if cheat_switch == 1:
     tld_tags.append("dev")
 
   tld_version_string = str(

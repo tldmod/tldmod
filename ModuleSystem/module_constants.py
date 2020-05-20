@@ -1895,7 +1895,7 @@ color_list = [ 0xFF8f4531, 0xFF315458, 0xFF373736, 0xFFa48b28, 0xFF497735, 0xFF8
                # default banners			   
                0xFF212221, 0xFF212221, 0xFF2E3B10, 0xFF425D7B, 0xFF394608 ]
             
-# foxyman
+# foxyman (swy: this option controls most of the TLD developer options and menus)
 cheat_switch = 1
 # TLD faction ranks end
 

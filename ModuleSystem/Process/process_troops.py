@@ -7,6 +7,8 @@ from module_troops import *
 from process_common import *
 #from process_operations import *
 
+#swy-- always compile this file in M&B 1.011 mode; no matter what (!)
+wb_compile_switch = 0
 
 num_face_numeric_keys = 4
 

@@ -1,7 +1,13 @@
 import string
 
+from process_operations import *
 from process_common import *
 from module_items import *
+
+from module_info import wb_compile_switch as is_a_wb_item
+
+#swy-- always compile this file in M&B 1.011 mode; no matter what (!)
+wb_compile_switch = 0
 
 def get_item_code(item):
   prefix = "it_"
@@ -27,7 +33,6 @@ def write_items(variable_list,variable_uses,tag_uses,quick_strings):
     item_variations = item[2]
     for item_variation in item_variations:
       #swy-- different dummy mesh for warband, for invisible objects, fixes galadriel's appearance, meshes have to have more than two characters to work.
-      from module_info import wb_compile_switch as is_a_wb_item
       item_variation = list(item_variation)
       # if (is_a_wb_item and item_variation[0]=="0") or (index<=(len(items)/2)):
       # if (is_a_wb_item and item_variation[0]=="0") or (index>=(len(items)/2)):
@@ -69,10 +74,7 @@ def write_items(variable_list,variable_uses,tag_uses,quick_strings):
 print "Exporting item data..."
 save_python_header()
 
-from module_info import *
 
-from process_common import *
-from process_operations import *
 
 variable_uses = []
 variables = load_variables(export_dir,variable_uses)

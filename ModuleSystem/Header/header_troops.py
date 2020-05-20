@@ -1,4 +1,8 @@
 from header_common import *
+from module_info import wb_compile_switch
+
+#swy-- always compile this file in M&B 1.011 mode; no matter what (!)
+wb_compile_switch = 0
 
 ###################################################
 # header_troops.py

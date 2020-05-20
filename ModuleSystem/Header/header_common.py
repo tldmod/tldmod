@@ -5,8 +5,8 @@
 ###################################################
 
 ##### COMPILER SWITCHES
-wb_compile_switch = 0
-cheat_switch = 1
+# wb_compile_switch = 0 #swy-- this one is automatically set in build_module_wb.bat -> module_info.py
+# cheat_switch = 1      #swy-- this one is set in module_constants.py; don't override it here
 #####
 
 bignum = 0x40000000000000000000000000000000
