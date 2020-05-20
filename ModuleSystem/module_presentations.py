@@ -4242,11 +4242,12 @@ if wb_compile_switch==1:
   
   if cheat_switch:
     tld_tags.append("dev")
-    
-  # HTTPS://TLDMOD.GITHUB.IO   ^" + \
-  tld_version_string = str("@"            + \
-                           " rev %s %s ^" + \
-                           " Built %s   ") % (tld_revision, " | ".join(tld_tags), tld_now.strftime("%Y-%m-%d %H:%M"))
+
+  tld_version_string = str(
+    "@"            + \
+    " rev %s %s ^" + \
+    " Built %s   ") % (tld_revision, " | ".join(tld_tags), tld_now.strftime("%Y-%m-%d %H:%M")
+  )
   # --
   
   presentations+=[
@@ -4269,12 +4270,9 @@ if wb_compile_switch==1:
          (overlay_set_position, ":mmstatue", pos1),
          
          # swy-- add the version number and date in the main menu if we can retrieve at msys build time
-         (create_text_overlay, reg1, tld_version_string, tf_left_align),
-         (position_set_x, pos1,            800),
-         (position_set_y, pos1,            800),
-         (overlay_set_size, reg1,         pos1),
-         (position_set_x, pos1,            195),
-         (position_set_y, pos1,              0),
+         (create_text_overlay,  reg1, tld_version_string, tf_left_align),
+         (position_set_x,       pos1,      195),
+         (position_set_y,       pos1,        0),
          (overlay_set_position, reg1,     pos1),
          (overlay_set_color,    reg1, 0x292421),
        ]),

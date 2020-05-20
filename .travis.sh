@@ -7,7 +7,7 @@ echo HI THERE!
 
 # grab the revision count between the oldest and the latest commit,
 # parse the changelog page to find the previous one on steam
-SVNREV=$((`curl -u "$ghuser:$ghtoken" -s "https://api.github.com/repos/tldmod/tldmod/compare/BASE...HEAD" | jq '.total_commits'` + 1)); export SVN_REV
+SVNREV=$((`curl -u "$ghuser:$ghtoken" -s "https://api.github.com/repos/tldmod/tldmod/compare/BASE...HEAD" | jq '.total_commits'` + 1)); export SVNREV
 
 PREREV=$(curl -s 'http://steamcommunity.com/sharedfiles/filedetails/changelog/299974223' | \
          sed -n 's/^.*Equivalent to nightly r\([0-9]*\).*$/\1/p' | head -1); export PREREV
@@ -94,6 +94,23 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental 
                           -e 's/.*\.yml.*//I' \
                           -e 's/.*\.sh.*//I' \
                           -e 's/.*\.git.*//I' \
+                          -e 's/.*\.py.*//I' \
+                          -e 's/.*\.log.*//I' \
+                          -e 's/.*\.exe.*//I' \
+                          -e 's/.*\.bik.*//I' \
+                          -e 's/.*\.fxo.*//I' \
+                          -e 's/.*\.tx.*//I' \
+                          -e 's/.*\.bat.*//I' \
+                          -e 's/.*\.dll.*//I' \
+                          -e 's/.*\.h.*//I' \
+                          -e 's/.*\.odt.*//I' \
+                          -e 's/.*\.psd.*//I' \
+                          -e 's/.*\.zip.*//I' \
+                          -e 's/.*\.rar.*//I' \
+                          -e 's/.*\.cdd.*//I' \
+                          -e 's/.*\.lua.*//I' \
+                          -e 's/.*\.htm.*//I' \
+                          -e 's/.*\.nsi.*//I' \
                           -e 's/.*\/[\_|\.][^wT][^b].*//' \
                           -e '/^$/d' \
                           -e 's/^.+TLD_GA\///' > diff_mod.txt
