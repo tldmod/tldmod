@@ -11399,11 +11399,24 @@ game_menus = [
   #Kham - Training END
 
 
-( "auto_quit",0,
+#swy-- avoid crashing from mnu_start_game_1 when returning to the main menu from anywhere else (i.e. prsnt_faction_selection_good)
+#   -- this is every bit as stupid as it looks; i almost gave up.
+#   --
+#   -- seems like (change_screen_quit) needs to be in the consequences block of an actual menu for it to work at all,
+#   -- and it turns out mnf_auto_enter just clicks the first option in the list, so we have a match made in heaven.
+( "auto_quit", mnf_auto_enter,
     "This menu automatically returns to caller.",
-    "none",
-    [(change_screen_quit)],[]
+    "none",[],
+    [
+        ("go_back",[],"Go back",[(change_screen_quit)])    
+    ]
  ),
+
+#( "auto_quit",0,
+#    "This menu automatically returns to caller.",
+#    "none",
+#    [(change_screen_quit)],[]
+# ),
 
 ##### Guardian Party Quest END ##########
 
