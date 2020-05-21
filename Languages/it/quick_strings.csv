@@ -648,7 +648,7 @@ qstr_loses_Faction_Strength|Perde Forza Fazione a causa della distruttiva incurs
 qstr_loses_Faction_Strength_|Perde Forza Fazione a causa del tuo successo in mare.
 qstr_You_spent_{reg67}_of|Hai speso {reg67} della tua influenza con {s1}, ne hai {reg66} rimanenti.
 
-qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?era:Dovrebbe essere {s5}.
+qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?era:dovrebbe essere vicino a {s5}.
 
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} e {s0}
