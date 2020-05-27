@@ -15238,6 +15238,16 @@ scripts = [
        (assign, "$merchant_quest_last_offerer", -1),
        (assign, "$merchant_offered_quest", -1),
      (try_end),
+	 (try_begin), #find remaining quest target parties, and remove their neutral flag (spawned from Quest Helper Trigger )
+	   (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),
+	   (eq, ":quest_no", "qst_blank_quest_17"),
+	   (quest_get_slot, ":target_template", ":quest_no", slot_quest_target_party_template),
+		(try_for_parties, ":quest_targets"),
+			(party_get_template_id, ":party_template", ":quest_targets"),
+			(eq, ":party_template", ":target_template"),
+			(party_set_faction, ":quest_targets", "fac_outlaws"),
+		(try_end),
+     (try_end),
 ]),
 #script_cancel_quest
 # INPUT: arg1 = quest_no
@@ -15258,6 +15268,16 @@ scripts = [
        (is_between, ":quest_no", "qst_blank_quest_16", "qst_blank_quest_18"), 
        (assign, "$merchant_quest_last_offerer", -1),
        (assign, "$merchant_offered_quest", -1),
+     (try_end),
+	 (try_begin), #find remaining quest target parties, and remove their neutral flag (spawned from Quest Helper Trigger )
+	   (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),
+	   (eq, ":quest_no", "qst_blank_quest_17"),
+	   (quest_get_slot, ":target_template", ":quest_no", slot_quest_target_party_template),
+		(try_for_parties, ":quest_targets"),
+			(party_get_template_id, ":party_template", ":quest_targets"),
+			(eq, ":party_template", ":target_template"),
+			(party_set_faction, ":quest_targets", "fac_outlaws"),
+		(try_end),
      (try_end),
 ]),
 
