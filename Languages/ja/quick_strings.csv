@@ -233,9 +233,9 @@ qstr_when_equipped|(要装備)
 qstr_+1_to_Riding|乗馬スキルに+1
 qstr_+1_to_Mounted_Archer|馬上弓術に+1
 qstr_+2_to_Tactics|戦術スキルに+2
-; qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
-; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
-; qstr_+1_to_Spotting|+1 to Spotting
+qstr_+{reg1}_to_Spotting|スポッティングに+{reg1}
+qstr__Scales_with_Wildcra|（ワイルドクラフトの鱗)
+qstr_+1_to_Spotting|スポッティングに+1
 qstr_+2_to_Athletics|アスレチックに+2
 qstr_Less_Dunnish_upkeep|褐色人の維持費が低下
 qstr_Less_Wargs_upkeep|ワーグ騎兵の維持費が低下
@@ -648,10 +648,10 @@ qstr_loses_Faction_Strength|は破壊的な襲撃を受けたため、 勢力ポ
 qstr_loses_Faction_Strength_|はあなたの海における活躍により、 勢力ポイントが下がりました。
 qstr_You_spent_{reg67}_of|あなたは{s1}での影響力ポイントを{reg67}消費しました。 残りは{reg66}です。
 
-; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+qstr_{s2}_{reg3?was:is_ar|{s2}{reg3?た:周りにあります{s5}.
 
-; qstr_{s1}_{s0}|{s1}, {s0}
-; qstr_{s1}_and_{s0}|{s1} and {s0}
+qstr_{s1}_{s0}|{s1},{s0}
+qstr_{s1}_and_{s0}|{s1}および{s0}
 
 qstr_No_Troops_Left.|兵はもういません。
 qstr_avoid_melee|近接武器をさける
@@ -746,7 +746,7 @@ qstr_A_Nazgul_is_circling|戦場の上空でナズグールが旋回していま
 qstr_Some_of_your_human_t|あなたの兵のうち、いくらかは人間にもかかわらず闇の力にひるんでいません(ナイト系の兵は夜間のペナルティを受けません)。
 qstr_You_are_filled_with_|敵の姿を目にしたあなたは、怒りで満たされました(狂戦士が発動しました)。
 qstr_Your_mount_is_scared|あなたの馬は{reg73?エント:トロル}に怯えています！
-; qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
+qstr_Your_mount_is_scared_|あなたの山は{reg73によっておびえているか。ent：トロール}が、あなたはそれを習得することができます！
 qstr_Nazgul_sweep!|ナズグールの攻撃！
 qstr_You_and_your_horse_p|ナズグールの耐え難い叫び声に、あなたと馬は動揺しています！
 qstr_Your_horse_panics_th|ナズグールの耐え難い叫び声に、あなたの馬が動揺しています！
@@ -1197,8 +1197,8 @@ qstr_So_you_are_{s23}._I_|ああ、あなたが{s23}殿か。 {s25}に味方を�
 qstr_I_need_volunteers_wi|私と共に危険な任務におもむく事をいとわない者はいないか。
 qstr_I_need_some_soldiers|兵に欠員が出た。補充をしたい。
 qstr_{playername}_s_Reser|{playername}の予備兵
-; qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
-; qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
+qstr_Maybe_the_weaklings_|たぶん、南の弱者たちは、柔らかい肌のトロールに鎧をつけたのかもしれません。 私たちではない-私たちのトロールはGundabadのものです！
+qstr_Do_I_look_like_a_smi|私はあなたに鍛冶屋のように見えますか？ パー 話しに行って
 qstr_Excellent_job_{s23}!|見事です、{s23}殿！ 他の指揮官も、あなたくらい真面目にやってくれるといいのですが。^
 qstr_Nicely_done_{s23}.|{s23}殿、お見事です。
 qstr_Good_work_{s23}.|{s23}殿、ご苦労様です。

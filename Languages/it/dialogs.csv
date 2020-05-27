@@ -26,7 +26,7 @@ dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, doveva trattarsi
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Oh, doveva trattarsi del mio caro cugino ! Meriadoc Brandybuck, o Merry come viene chiamato. Siamo Hobbits, {sire/mia signora}, e veniamo dalla Contea, tutti e due ! Caro vecchio Merry, mi domando come se la stia passando a Edoras..
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Vorrei chiederti un favore, {mio signore/mia signora}.
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Certo, {s1}. Di che si tratta?
-dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Potresti consegnare un messaggio a mio cugino, {s1}? Si trova presso {s2}, a {s3}, al servizio di {s4}.
+dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Potresti consegnare un messaggio a mio cugino, {s1} ? Si trova presso {s2}, a {s3}, al servizio di {s4}.
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Passerò per {s1} e sarà mio piacere trasmettere questo messaggio a tuo cugino.
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Mi spiace, {s1}, ma non ne ho il tempo.
 dlga_hobbit_general_talk_ask_accept:close_window|Grazie ! {s1}

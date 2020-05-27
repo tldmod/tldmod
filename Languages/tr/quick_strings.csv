@@ -648,10 +648,10 @@ qstr_loses_Faction_Strength|Yıkıcı baskın nedeniyle Taraf Kuvveti kaybedilir
 qstr_loses_Faction_Strength_|denizdeki başarılarından dolayı Taraf Kuvveti kaybetti.
 qstr_You_spent_{reg67}_of|{s1} 'e olan etkinizin {reg67} kadarını kullandın, {reg66} kaldı.
 
-; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+qstr_{s2}_{reg3?was:is_ar|{S2} {reg3?oldu: {S5} civarındadır.
 
-; qstr_{s1}_{s0}|{s1}, {s0}
-; qstr_{s1}_and_{s0}|{s1} and {s0}
+qstr_{s1}_{s0}|{S1}, {s0}
+qstr_{s1}_and_{s0}|{s1} ve {S0}
 
 qstr_No_Troops_Left.|hiç birlik kalmadı.
 qstr_avoid_melee|Yakın dövüşü önlemek

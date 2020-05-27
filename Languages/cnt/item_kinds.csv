@@ -67,14 +67,15 @@ itm_wargarmored_2c|披 甲 座 狼
 itm_wargarmored_3a|披 甲 座 狼 
 itm_warg_reward|巨 型 座 狼 
 itm_tree_trunk_club_a|樹 幹 
-itm_free_giant_hammer|巨 鎚 
+
 itm_giant_mace|巨 錘 
 itm_troll_shield_a|食 人 妖 盾 牌
 itm_arrows|箭 
 itm_gondor_arrows|剛 鐸 箭 
 itm_orc_javelin|半 獸 人 重 型 鏢 槍
 itm_khergit_arrows|洛 汗 箭 
-itm_rohan_arrows_2|洛 汗 箭 
+
+
 itm_harad_arrows|哈 拉 德 箭 
 itm_corsair_arrows|海 盜 箭 
 itm_ithilien_arrows|伊 錫 利 恩 箭 
@@ -85,14 +86,18 @@ itm_isengard_arrow|艾 辛 格 箭
 itm_leather_gloves|皮 手 套 
 itm_mail_mittens|鏈 甲 手 套 
 itm_leather_boots|皮 靴 
+; itm_leather_boots_dark|Rider Boots
+; itm_splinted_greaves|Splinted Greaves
 itm_white_tunic_a|平 民 服 裝
 itm_rohan_shoes|皮 鞋
 itm_furry_boots|毛 靴
+
 itm_black_tunic|黑 色 寬 鬆 外 衣 
 itm_hood_black|黑 色 兜 帽
 itm_hood_green|綠 色 兜 帽
 itm_hood_grey|灰 色 兜 帽
 itm_hood_leather|皮 兜 帽
+itm_axe_a|北 方 斧
 itm_axe_b|北 方 鉤 斧
 itm_axe_c|北 方 斧
 itm_axe_d|北 方 斧
@@ -132,7 +137,8 @@ itm_loss_throwing_axes|羅 蕯 那 奇 擲 斧
 itm_arnor_helm_a|亞 爾 諾 盔
 itm_arnor_helm_b|亞 爾 諾 盔
 itm_arnor_helm_c|亞 爾 諾 盔
-itm_dunedain_helm_a|登 丹 兜 帽
+
+
 itm_dunedain_helm_b|亞 爾 諾 裝 飾 盔
 itm_arnor_armor_a|亞 爾 諾 鎧 甲
 itm_arnor_armor_b|亞 爾 諾 鎧 甲
@@ -144,8 +150,10 @@ itm_arnor_greaves|亞 爾 諾 脛 甲
 itm_arnor_splinted|亞 爾 諾 夾 板 脛 甲
 itm_arnor_shield_a|亞 爾 諾 盾
 itm_arnor_shield_c|亞 爾 諾 騎 兵 盾
-itm_arnor_shield_b|亞 爾 諾 盾
-itm_arnor_shield_d|亞 爾 諾 騎 兵 盾
+
+
+
+
 itm_arnor_sword_a|亞 爾 諾 半 手 劍
 itm_arnor_sword_c|亞 爾 諾 半 手 劍
 itm_arnor_sword_f|亞 爾 諾 短 劍
@@ -188,16 +196,19 @@ itm_gondor_ranger_hood_mask|剛 鐸 遊 俠 兜 帽
 itm_gondor_light_greaves|剛 鐸 皮 脛 甲
 itm_gondor_med_greaves|剛 鐸 中 型 脛 甲
 itm_gondor_heavy_greaves|剛 鐸 鎖 子 脛 甲
-itm_gondorian_light_helm|剛 鐸 步 兵 盔
+
+
 itm_gondor_infantry_helm|剛 鐸 步 兵 盔
 itm_gondor_auxila_helm|剛 鐸 輕 型 盔
-itm_gondorian_light_helm_b|剛 鐸 弓 箭 手 盔
+
+
 itm_gondorian_archer_helm|剛 鐸 弓 兵 盔
 itm_tower_archer_helm|塔 弓 兵 盔
 itm_gondor_leader_helm|剛 鐸 高 等 盔
 itm_tower_guard_helm|塔 衛 隊 盔
 itm_gondor_citadel_knight_helm|堡 壘 騎 士 盔
-itm_gondor_squire_helm|剛 鐸 鄉 紳 盔
+
+
 itm_gondor_knight_helm|剛 鐸 騎 兵 盔
 itm_gondor_dolamroth_helm|多 爾 安 羅 斯 盔
 itm_swan_knight_helm|天 鵝 騎 士 盔
@@ -281,9 +292,11 @@ itm_lorien_archer|羅 斯 洛 立 安 弓 兵 鎧 甲
 itm_lorien_armor_a|羅 斯 洛 立 安 縫 製 鎧 甲
 itm_lorien_armor_b|羅 斯 洛 立 安 鎖 子 甲
 itm_lorien_armor_c|羅 斯 洛 立 安 鱗 甲
-itm_lorien_armor_d|羅 斯 洛 立 安 皇 家  劍 士 鎧 甲
-itm_lorien_armor_e|羅 斯 洛 立 安 守 望 者 披 風
-itm_lorien_armor_f|羅 斯 洛 立 安 菁 英 鎧 甲
+
+
+
+
+
 itm_lorien_boots|羅 斯 洛 立 安 靴 子
 itm_lorien_shield_b|羅 斯 洛 立 安 塔 盾
 itm_lorien_shield_c|羅 斯 洛 立 安 箏 盾
@@ -291,12 +304,14 @@ itm_lorien_round_shield|羅 斯 洛 立 安 圓 盾
 itm_lorien_helm_a|羅 斯 洛 立 安 弓 兵 盔
 itm_lorien_helm_b|羅 斯 洛 立 安 弓 兵 盔
 itm_lorien_helm_c|羅 斯 洛 立 安 步 兵 盔
-itm_orc_chain_greaves|半 獸 人 脛 甲
+
+
 itm_orc_coif|半 獸 人 頭 盔
 itm_orc_greaves|半 獸 人 鏈 靴
 itm_orc_ragwrap|半 獸 人 破 布 巾
 itm_orc_furboots|半 獸 人 毛 靴
-itm_orc_furboot_tall|半 獸 人 毛 靴
+
+
 itm_orc_tribal_a|未 治 療 的 皮 膚
 itm_orc_tribal_b|未 治 療 的 皮 膚
 itm_orc_tribal_c|未 治 療 的 皮 膚
@@ -332,7 +347,7 @@ itm_isen_uruk_helm_c|強 獸 人 盔
 itm_isen_uruk_helm_d|強 獸 人 上 尉 盔
 itm_isen_uruk_helm_e|強 獸 人 追 蹤 者 盔
 itm_isen_uruk_helm_f|強 獸 人 追 蹤 者 盔
-itm_uruk_pike_a|半 獸 人 長 矛
+
 itm_uruk_pike_b|魔 多 長 矛
 itm_uruk_falchion_a|半 獸 人 彎 刀
 itm_uruk_falchion_b|半 獸 人 彎 刀
@@ -356,7 +371,7 @@ itm_wood_club|木 棍
 itm_twohand_wood_club|大 木 棍
 itm_bone_cudgel| 骨 棒
 itm_skull_club|頭 骨 棍
-itm_orc_club_a|半 獸 人 棍
+
 itm_orc_club_b|座 狼 騎 手 棍
 itm_orc_club_c|半 獸 人 帶 刺 棍
 itm_orc_club_d|邪 惡 戰 錘
@@ -519,7 +534,7 @@ itm_mirkwood_helm_a|木 精 靈 弓 兵 盔
 itm_mirkwood_helm_b|巨 綠 森 盔
 itm_mirkwood_helm_c|巨 綠 森 重 型 盔
 itm_mirkwood_helm_d|巨 綠 森 皇 家 盔
-itm_free_mirkwood_leather_greaves|幽 暗 密 林 皮 脛 甲
+
 itm_mirkwood_boots|木 精 靈 靴 子
 itm_harad_tunic|哈 拉 德 寬 鬆 外 衣
 itm_harad_padded|哈 隆 鐸 加 厚 布 甲
@@ -659,7 +674,8 @@ itm_dale_billhook|河 谷 鎮 鍥 刀
 itm_dale_shield_a|河 谷 鎮 塔 盾
 itm_dale_shield_b|河 谷 鎮 塔 盾
 itm_dale_shield_c|河 谷 鎮 圓 盾
-itm_dale_shield_d|河 谷 鎮 盾
+
+
 itm_umb_armor_a|海 盜 皮 革 背 心
 itm_umb_armor_b|海 盜 皮 甲
 itm_umb_armor_c|海 盜 輕 型 鱗 甲
@@ -670,6 +686,7 @@ itm_umb_helm_a|海 盜 硬 殼 盔
 itm_umb_helm_b|海 盜 高 盔
 itm_umb_helm_c|海 盜 民 兵 盔
 itm_umb_helm_d|海 盜 掠 奪 者 盔
+itm_corsair_trident|海 怒 三 叉 戟
 itm_corsair_boots|海 盜 靴 子
 itm_umb_shield_a|海 賊 盾
 itm_umb_shield_b|海 盜 圓 盾
@@ -701,10 +718,10 @@ itm_dwarf_shield_b|矮 人 塔 盾
 itm_dwarf_shield_c|矮 人 戰 鬥 盾
 itm_dwarf_shield_d|矮 人 圓 盾
 itm_north_round_shield|北 方 人 圓 盾
-itm_free_dwarf_shield_g|矮 人 盾
-itm_free_dwarf_shield_i|矮 人 盾
-itm_free_dwarf_shield_j|矮 人 盾
-itm_free_dwarf_shield_k|矮 人 盾
+
+
+
+
 itm_woodmen_heavy|幽 暗 密 林 鎧 甲
 itm_dwarf_sword_a|矮 人 劍
 itm_dwarf_sword_b|比 翁 短 劍
@@ -787,7 +804,8 @@ itm_ring_a_reward|突 卡 利 西 之 戒
 itm_ring_b_reward|芬 瓦 利 西 之 戒
 itm_dale_bow_reward|巴 德 之 弓
 itm_explosive_reward|艾 辛 格 炸 彈
-itm_corsair_trident|海 怒 三 叉 戟
+
+itm_corsair_trident2|海 怒 三 叉 戟
 itm_crebain_reward|克 拉 班 烏 鴉
 itm_miruvor_reward|米 盧 沃 酒
 itm_wheeled_cage|巨 型 有 輪 籠 子
@@ -818,6 +836,11 @@ itm_spider|蜘 蛛
 itm_bear|熊 
 itm_wolf|狼 
 itm_werewolf|狼 人
-itm_defiled_armor_rohan|骯 髒 的 洛 汗 皇 家 胸 甲
-itm_defiled_armor_dale|骯 髒 的 河 谷 鎮 貴 族 鎧 甲
+
+; itm_thrush_reward|Thrush
+
+; itm_gauntlets_reward|Iron Fists
+
+; itm_stones_siege|Siege Stones
+
 itm_beorn_axe_no_attack|比 翁 斧

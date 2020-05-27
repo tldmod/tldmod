@@ -315,7 +315,7 @@ qstr_Is_this_your_land_{p|È questa la tua terra, {playername} ? Questo posto pu
 qstr_Yes_go_on_do_whateve|Bene, andate, fate ciò che {s22} dice.
 qstr_Of_course.|Naturalmente.
 qstr_I_don_t_like_this._W|Tutto questo non mi piace. Cosa porta il tuo gruppo qui, fino a {s21} ?
-qstr_Do_you_fear_us_{play|Hai paura di noi, {playername} da {s20}? Mmm, cosa nascondi a {s22}?^^Lasciaci in pace e nessuno si farà male.
+qstr_Do_you_fear_us_{play|Hai paura di noi, {playername} da {s20} ? Mmm, cosa nascondi a {s22} ?^^Lasciaci in pace e nessuno si farà male.
 qstr_It_s_a_servant_of_{s|È un servo di {s22}. Temi {s23}, {playername} !
 qstr_Our_allies_are_you?_|Siete quindi nostri alleati ? Allora potete passare.
 qstr_And_we_shall_not_kil|E potremmo non ucciderti, per adesso.
@@ -341,7 +341,7 @@ qstr_{s20}_and_{s21}_figh|{s20} e {s21} combattono per una causa comune. Dovremm
 qstr_In_these_dark_times_|In questi tempi oscuri, ognuno bada a se stesso, {playername}.^Ma voglio augurarvi un viaggio sicuro verso casa.
 qstr_Neither_good_nor_bad|Né buone né cattive. I nostri affari ci appartengono.
 qstr_Everybody_on_his_way|Ognuno per la sua strada, allora.
-qstr_What_are_you_trying_|Cosa stai cercando di fare, feccia di {s20}? Predare il nostro bottino?
+qstr_What_are_you_trying_|Cosa stai cercando di fare, feccia di {s20} ? Predare il nostro bottino ?
 qstr_Ha!_Soon_there_will_|Ha ! Presto ci sarà bottino per tutti.
 qstr_Yes._Unless_you_get_|Si. A meno che tu non venga ucciso prima.
 qstr_You_don_t_get_any_sp|Non avrai alcuna parte di bottino se TU verrai ucciso, feccia di {s21}.
@@ -511,7 +511,7 @@ qstr__+1_intelligence_ski|(+1 intelligenza, +15 abilità con armi a distanza)
 qstr_The_cracked_ribs_hav|Le costole rotte sono guarite.
 qstr__+20_weapon_skill_|(+20 all'abilità con le armi)
 qstr_{s1}_has_had_his_hea|La vita di {s1} è stata potenziata.
-qstr_News_has_arrived_tha|Giunge notizia secondo cui {s1} di {s2} ha trovato la morte in battaglia contro le forze di {s28}!
+qstr_News_has_arrived_tha|Giunge notizia secondo cui {s1} di {s2} ha trovato la morte in battaglia contro le forze di {s28} !
 qstr_{s1}_s_Burial_Mound|Tumulo funebre di {s1}
 qstr_{s1}_s_Funeral_Pyre|Pira funeraria di {s1}
 qstr_{s1}_is_logged_as_de|{s1} è annotato come deceduto
@@ -1027,7 +1027,7 @@ qstr_Imladris|Imladris
 qstr_Woodelf|Elfo Silvano
 qstr_^^^^^^^You_come_upon|^^^^^^^Arrivi presso i profughi che stanno lasciando {s2} diretti a {s3}.^^Sono soprattutto vecchi e infermi, accompagnati da donne e bambini.^^Ci sono delle guardie, ma non abbastanza per poter proteggere tutti da un'incursione.
 qstr_^^^^^^^You_come_upon_|^^^^^^^T'imbatti sui rifugiati sulle cui tracce eri sin da {s2}. Sembra che siano diretti verso {s3}, e si tratta per lo più di vecchi e infermi. ^^ Ci sono alcune guardie, ma non a sufficienza per impedire a te e a tuoi di ucciderli tutti.
-qstr_^^At_last_the_Master|^^Infine, il Padrone sta facendo la sua mossa ! Le torce bruciano luminose. Le armi affilate brillano. Tu e i tuoi coraggiosi compagni riceverete ben presto l'ordine di marciare. Ah, ci sarà da combattere, molto, e gloria per tutti !^^Ha ricevuto l'onore di essere convocato in udienza dal Padrone nella sua torre. Probabilmente i tuoi primi ordini riguarderanno lavori di snaga - razzia un villaggio qui, preda una carovana là.. Ma dari prova di te molto presto. Chi osa dire che non potrai avere un ruolo di comandante di {s2} a {s3}?^^La Guerra è iniziata; la caduta dell'Uomo e dei loro alleati ha inizio !
+qstr_^^At_last_the_Master|^^Infine, il Padrone sta facendo la sua mossa ! Le torce bruciano luminose. Le armi affilate brillano. Tu e i tuoi coraggiosi compagni riceverete ben presto l'ordine di marciare. Ah, ci sarà da combattere, molto, e gloria per tutti !^^Ha ricevuto l'onore di essere convocato in udienza dal Padrone nella sua torre. Probabilmente i tuoi primi ordini riguarderanno lavori di snaga - razzia un villaggio qui, preda una carovana là.. Ma dari prova di te molto presto. Chi osa dire che non potrai avere un ruolo di comandante di {s2} a {s3} ?^^La Guerra è iniziata; la caduta dell'Uomo e dei loro alleati ha inizio !
 qstr_^^Your_head_suddenly|^^Nella tua mente si materializza una visione - l'Occhio fiammeggiante. Intorno a te i tuoi guerrieri si fermano. In qualche modo, sai che in quel momento tutti voi udite la stessa chiamata, avete la stessa visione. Grande è la magia dell'Occhio senza Palpebra - grande è il potere di Barad-dûr !.^^ Il sapere, pur senza parola, ti penetra fin nelle ossa. Il tempo è giunto. Il Signore Oscuro comanda - dovrai marciare sui tuoi nemici in guerra aperta. Giungeranno ordini da {s2} a {s3}. La tua parte all'inizio non sarà importante, ma darai prova di te ben presto.^^ La Guerra è iniziata; la caduta dell'Ovest è prossima ! 
 qstr_{s13}_asked_you_to_j|{s13} ti ha chiesto di unirti al suo esercito con almeno {reg13} soldati e raggiungere l'ultima difesa di Isengard.
 qstr_You_defeated_{reg5}_|Hai abbattuto {reg5} avversari e hai colpito il tuo comandante.
@@ -1203,7 +1203,7 @@ qstr_Excellent_job_{s23}!|Eccellente lavoro, {s23} ! Vorrei che tutti i comandan
 qstr_Nicely_done_{s23}.|Ben fatto, {s23}.
 qstr_Good_work_{s23}.|Ottimo lavoro, {s23}.
 qstr_The_more_you_capture|Più ne catturi, meglio è, {s23}.
-qstr_Caught_a_few_straggl|Acciuffati alcuni dispersi, {s23}?
+qstr_Caught_a_few_straggl|Acciuffati alcuni dispersi, {s23} ?
 qstr_I_am_sorry_no_one_el|Mi dispiace, non ho nessuno pronto per andare.^Serviranno {s22} mantenendo le difese qui.
 qstr_Tough_luck_but_we_do|È una sfortuna, ma non ne abbiamo. Torna più tardi.
 qstr_There_are_brave_sold|Ci sono soldati coraggiosi disposti a rischiare le loro vite, ma in questi tempi bui non posso permettere loro di lasciare le difese qui.^^^[Punti Risorsa non sufficienti] 
@@ -1254,7 +1254,7 @@ qstr_This_raid_was_ill_fa|Questo assalto è stato marchiato dalla sfortuna sin d
 qstr_This_is_evil_news_yo|Sono davvero cattive notizie quelle che porti. Le vele nere si fanno sempre più audaci, e ora tutta Belfalas giace sempre più sotto la loro ombra. Non t'incolperò più di tanto, {playername}, per il tuo fallimento, ma non possiamo negare di aver subito un duro colpo, davvero pesante. Va ora. Le speranze si affievoliscono per Gondor, e ora dovremo proteggere ciò che rimane.
 qstr_This_is_evil_news_you|Porti amare notizie. Gli Easterling si fanno sempre più audaci, mentre Esgaroth brucia. Non ti rimprovererò più di tanto, {playername}, per il tuo fallimento, ma abbiamo subito davvero un duro colpo. Va ora. Le speranze si affievoliscono per il nostro regno, e dobbiamo combattere per tenere in vita ciò che ne è rimasto.
 qstr_Pah!_It_seems_you_we|Bah ! Sembra che tu abbia perso il tuo piede marino, {playername}. Ora se ne stanno comodi, questi uomini di Gondor, nell'alto delle loro torri, vanitosi come re, ridendo di noi mentre le vele nere bruciano ! Forse una costrizione ai remi di una galera sarebbe la punizione giusta per i tuoi uomini; peccatto che siano sotto il tuo comando e non al mio. L'occhio non ne sarà compiaciuto. Vattene ora.
-qstr_Have_you_nothing_bet|Non hai niente di meglio che deboli scuse per giustificare il tuo fallimento, {playername}? Forse non sei così forte come pensavo. Servi la nostra causa meglio di così in futuro, {playername}. Non ci srà pietà per i deboli !
+qstr_Have_you_nothing_bet|Non hai niente di meglio che deboli scuse per giustificare il tuo fallimento, {playername} ? Forse non sei così forte come pensavo. Servi la nostra causa meglio di così in futuro, {playername}. Non ci srà pietà per i deboli !
 qstr_{playername}_we_have|{playername}, abbiamo messo Isengard in ginocchio. Hanno allestito la loro ultima difesa e stanno proteggendo Saruman nella sua torre. Calvalca con me per incontrarli !
 qstr_Are_you_ready_to_mee|Sei in grado di affrontare l'ultima difesa di Isengard?
 qstr_I_am_ready_to_ride_w|Posso cavalcare con te contro Isengard.
@@ -1380,7 +1380,7 @@ qstr_We_are_at_war_with_{s|Siamo in guerra con {s12}. Tuttavia, ci sono solo sch
 qstr_we_are_not_too_conce|loro non ci preoccupano più di tanto al momento, visto che stiamo combattendo altri nemici più vicini a casa
 qstr__under_your_orders|, ai tuoi ordini
 qstr_{playername}_you_may|{playername}, potresti aver visto gli eserciti di {s7}. Di tutti i capitani schierati contro di noi, al momento {s7} di {s8} ha ottenuto più fama degli altri. La loro semplice presenza sul campo di battaglia è sufficiente per incoraggiare i nostri nemici e indebolire la risolutezza dei nostri alleati.  {playername}, se vuoi compiere un grande gesto in questa guerra, distruggi l'esercito di {s7} in campo aperto, alla vista di tutti ! Questo potrà riaccendere la speranza, e riempire di timore il cuore di coloro che vogliono contrastarci.
-qstr_Do_you_mark_how_our_|Hai notato come i nostri combattenti più coraggiosi vacillano alla semplice menzione di {s7} di {s8}? Un grande guerriero, oh sì, un capitano capace. Non possiamo permettere che si scateni in questo modo ! Ovunque viene mostrata la loro faccia, le nostre linee arretrano e i nostri nemici trovano nuovo coraggio. Non può essere. Comando che tu, {playername}, vada a sfidare e sconfigga i soldati di {s7} in aperta battaglia. La vista di {s7} colpito da te congelerebbe il sangue il midollo dei suoi seguaci, e mostrerebbe alle nostre truppe che i nostri nemici possono essere abbattuti !
+qstr_Do_you_mark_how_our_|Hai notato come i nostri combattenti più coraggiosi vacillano alla semplice menzione di {s7} di {s8} ? Un grande guerriero, oh sì, un capitano capace. Non possiamo permettere che si scateni in questo modo ! Ovunque viene mostrata la loro faccia, le nostre linee arretrano e i nostri nemici trovano nuovo coraggio. Non può essere. Comando che tu, {playername}, vada a sfidare e sconfigga i soldati di {s7} in aperta battaglia. La vista di {s7} colpito da te congelerebbe il sangue il midollo dei suoi seguaci, e mostrerebbe alle nostre truppe che i nostri nemici possono essere abbattuti !
 qstr_This_is_a_chance_for|Questa è un'occasione per mostrare le mie qualità. Devo sconfiggere {s7} di fronte al nemico e degli alleati.
 qstr_Accursed_be_those_wh|Maledetto sia chi segue {s7} in questo giorno, perché li abbatterò affinché tutti possano vederli !
 qstr_{s9}_wants_you_to_de|{s9} desidera che tu abbatta {s35} di {s36} in battaglia.
@@ -1419,7 +1419,7 @@ qstr_{s9}_asked_you_to_def|{s9} ti ha chiesto di difendere un villaggio sotto at
 qstr_{s9}_asked_you_to_ra|{s9} ti ha chiesto di assalire un villaggio nei pressi di {s1}.
 qstr_These_soldiers_may_w|Questi soldati potrebbero di sicuro dare la svolta ai miei piani, {playername}. Sono certo che li hai addestrati bene. I miei ringraziamenti e complimenti vanno a te.
 qstr_Good_work_in_shaping|Ottimo lavoro nell' addestramento di quelle reclute, {playername}, sei stato utilissimo. Fiduciosamente dureranno di piu' dell' ultima volta, ma torna a trovarmi se non lo fanno.
-qstr_Well_the_soldiers_ar|Bene, i soldati sono sotto il suo comando, signore. Sono certo che ve ne prenderete cura.
+qstr_Well_the_soldiers_ar|Bene, i soldati sono sotto il tuo comando. Sono certo che ne avrai cura.
 qstr_Well_you_may_do_as_y|Bene, fai come vuoi. Io ed i miei compagni possiamo sempre diventare piu' tosti se necessario.
 qstr_{s9}_asked_you_to_br|{s9} ti ha chiesto di riportare un troll selvaggio da usare nella sua armata.
 qstr_{s9}_asked_you_to_fi|{s9} ti ha chiesto di scoprire cosa succede nella Foresta di Fangorn, e di fare rapporto.
@@ -1504,7 +1504,7 @@ qstr_Our_Golden_Valley_gi|La nostra Valle Dorata abbonda di doni e un amico di L
 qstr_I_shall_keep_that_in|Dovrò tenerlo a mente. ^^ Hantanyel, áva márië !
 qstr_That_may_be_so_some_|Così può essere, alcune strade del mondo sono contorte.^^ Boe i 'waen !
 qstr_I_seldom_wander_far_|Raramente mi allontano da casa. Andiamo via di qui, il più velocemente possibile. Ci potrebbero essere altri goblin che si aggirano da queste parti.
-qstr_Who_are_you?_A_mere_|Chi sei tu? Un semplice {s25}? Non ho tempo per quelli della tua sorta ! Lasciami in pace ! {s2}
+qstr_Who_are_you?_A_mere_|Chi sei tu? Un semplice {s25} ? Non ho tempo per quelli della tua sorta ! Lasciami in pace ! {s2}
 qstr_What_do_you_want?|Che cosa vuoi ?
 qstr_Greetings_{playernam|Salute, {playername}. Cosa posso fare per te?
 qstr_What?_You_come_to_me|Cosa ? Vieni da me e non sai di cosa mi occupo ? Dai un'occhiata in giro.^^ Vedi del sangue ? Senti dei lamenti ? Senti il loro dolore ? Questo è ciò che faccio ! Rompo cose per renderle migliori! Se vieni da me, ferito e dolorante, posso farti sentire meglio !
