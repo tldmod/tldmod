@@ -1,4 +1,4 @@
-1622
+1621
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -801,7 +801,6 @@ qstr_{s1}^^Factions_are_n {s1}^^Factions_are_normally_sieged_when_below_{reg1}_s
 qstr_Savagery Savagery
 qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
-qstr_current_terrain:_{re current_terrain:_{reg78}
 qstr_^^You_are_{s17}. ^^You_are_{s17}.
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_Ally_party_size:_{re Ally_party_size:_{reg1}

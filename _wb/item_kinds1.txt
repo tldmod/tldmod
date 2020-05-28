@@ -553,13 +553,13 @@ itemsfile version 2
  itm_riv_1h_sword Rivendell_Sword Rivendell_Sword 2  rivendellsword1 0  scab_rivendell_sword1 3458764513820540928  4259842 9223388564182532111 700 156672 1.25 100 0 0 0 0 28672 103 0 95 0 277 28
 0
 
- itm_riv_riding_sword Rivendell_Cavalry_Sword Rivendell_Cavalry_Sword 2  rivendelllongsword1 0  scab_rivendelllongsword1 3458764513820540928  4259842 9223388564182532111 700 156672 2 100 0 0 0 0 28672 98 0 103 0 277 28
+ itm_riv_riding_sword Rivendell_Longsword Rivendell_Longsword 2  rivendelllongsword1 0  scab_rivendelllongsword1 3458764513820540928  4259842 9223388564182532111 700 156672 2 100 0 0 0 0 28672 98 0 103 0 277 28
 0
 
- itm_riv_archer_sword Rivendell_Archer_Sword Rivendell_Archer_Sword 2  rivendellshortsword1 0  scab_rivendell_shortsword1 3458764513820540928  4259842 9223388564182532111 700 156672 1.25 100 0 0 0 0 28672 110 0 80 0 277 28
+ itm_riv_archer_sword Rivendell_Short_Sword Rivendell_Short_Sword 2  rivendellshortsword1 0  scab_rivendell_shortsword1 3458764513820540928  4259842 9223388564182532111 700 156672 1.25 100 0 0 0 0 28672 110 0 80 0 277 28
 0
 
- itm_riv_spear Rivendell_Spear Rivendell_Spear 1  elf_spear_2 0  2152038404 9254615759470988544 700 156672 2.25 100 0 0 0 0 20480 102 0 171 0 286 532
+ itm_riv_spear Rivendell_Spear Rivendell_Spear 1  riv_spear 0  2152038404 9254615759470988544 700 156672 2.25 100 0 0 0 0 20480 102 0 171 0 286 532
 0
 
  itm_riv_light Rivendell_Tunic Rivendell_Tunic 2  riv_light 0  riv_light_cloak 268435456  16842765 0 100 520093696 6 100 0 10 6 0 0 0 0 0 0 0 0
@@ -2685,7 +2685,7 @@ itemsfile version 2
  itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_h 0  16781325 0 3002 0 40 100 0 38 17 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  6295560 2952794112 3000 0 1.5 100 0 0 90 5 0 99 54 0 0 280 0
+ itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  6295560 2952794112 3000 0 1.5 100 0 0 90 5 0 96 54 0 0 277 0
 0
 
  itm_elven_cloak Elven_Cloak Elven_Cloak 1  elven_cloak 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
