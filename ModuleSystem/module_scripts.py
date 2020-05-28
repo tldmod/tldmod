@@ -546,6 +546,14 @@ scripts = [
           (store_add,                ":rank_multiplier", "$tld_option_rank_gain_rate", 1),
           (val_mul,   ":difference", ":rank_multiplier"),
           #swy-- 
+		  
+		  (try_begin), #InVain: Home faction bonus
+			(eq, "$players_kingdom", ":fac"),
+			(gt, ":difference", 0),
+			(val_mul, ":difference", 120),
+			(val_div, ":difference", 100),
+			#(display_message, "@home faction bonus"),
+		  (try_end),
 
           (val_add, ":val", ":difference"),
           (ge,      ":val", 0), #no negative rank points
@@ -584,7 +592,12 @@ scripts = [
             (assign, ":news_color", color_bad_news),
           (try_end),
 #          (display_message, "@{reg1?Earned:Lost} {reg12} influence with {s11}.", ":news_color"), # MV: why do this??
-          (display_message, "@You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.", ":news_color"),
+		  (try_begin), #InVain: Home faction bonus
+			(eq, "$players_kingdom", ":fac"),
+			(display_message, "@You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.", ":news_color"),
+		  (else_try),
+			(display_message, "@You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.", ":news_color"),
+		  (try_end),
           
           # rank increased?
           (try_begin),
@@ -15238,7 +15251,7 @@ scripts = [
        (assign, "$merchant_quest_last_offerer", -1),
        (assign, "$merchant_offered_quest", -1),
      (try_end),
-	 (try_begin), #find remaining quest target parties, and remove their neutral flag (spawned from Quest Helper Trigger )
+	 (try_begin), #find remaining quest target parties, make them normal parties (spawned from Quest Helper Trigger )
 	   (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),
 	   (eq, ":quest_no", "qst_blank_quest_17"),
 	   (quest_get_slot, ":target_template", ":quest_no", slot_quest_target_party_template),
@@ -15246,6 +15259,7 @@ scripts = [
 			(party_get_template_id, ":party_template", ":quest_targets"),
 			(eq, ":party_template", ":target_template"),
 			(party_set_faction, ":quest_targets", "fac_outlaws"),
+			(party_set_flags, ":quest_targets", pf_quest_party, 0),
 		(try_end),
      (try_end),
 ]),
@@ -15269,7 +15283,7 @@ scripts = [
        (assign, "$merchant_quest_last_offerer", -1),
        (assign, "$merchant_offered_quest", -1),
      (try_end),
-	 (try_begin), #find remaining quest target parties, and remove their neutral flag (spawned from Quest Helper Trigger )
+	 (try_begin), #find remaining quest target parties, make them normal parties (spawned from Quest Helper Trigger )
 	   (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),
 	   (eq, ":quest_no", "qst_blank_quest_17"),
 	   (quest_get_slot, ":target_template", ":quest_no", slot_quest_target_party_template),
@@ -15277,6 +15291,7 @@ scripts = [
 			(party_get_template_id, ":party_template", ":quest_targets"),
 			(eq, ":party_template", ":target_template"),
 			(party_set_faction, ":quest_targets", "fac_outlaws"),
+			(party_set_flags, ":quest_targets", pf_quest_party, 0),
 		(try_end),
      (try_end),
 ]),

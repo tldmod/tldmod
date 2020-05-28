@@ -1,4 +1,4 @@
-1621
+1622
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -103,7 +103,8 @@ qstr_Useful_Tool_of_{s5} Useful_Tool_of_{s5}
 qstr_Servant_of_{s5} Servant_of_{s5}
 qstr_Unknown_to_{s5} Unknown_to_{s5}
 qstr_You_have_been_{reg1? You_have_been_{reg1?promoted:demoted}_to_{s24}_({reg0})!
-qstr_You_{reg1?earned:los You_{reg1?earned:lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
+qstr_You_{reg1?earned:los You_{reg1?earned:lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_your_home_faction_{s11}.
+qstr_You_{reg1?earned:lost You_{reg1?earned:lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
 qstr_You_spent_{reg10}_of You_spent_{reg10}_of_your_influence_with_{s1},_with_{reg11}_remaining.
 qstr_Troop_upkeep: Troop_upkeep:
 qstr_{s11}_and_{s10} {s11}_and_{s10}

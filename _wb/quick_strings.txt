@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_an_URUK_HAI^_bred_in an_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_3228_wb__dev_^_ _rev_3228_wb_|_dev_^_Built_2020-05-27_10:37___
+qstr__rev_4_wb__dev_^_Bui _rev_4_wb_|_dev_^_Built_2020-05-28_19:57___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -183,7 +183,8 @@ qstr_Useful_Tool_of_{s5} Useful_Tool_of_{s5}
 qstr_Servant_of_{s5} Servant_of_{s5}
 qstr_Unknown_to_{s5} Unknown_to_{s5}
 qstr_You_have_been_{reg1? You_have_been_{reg1?promoted:demoted}_to_{s24}_({reg0})!
-qstr_You_{reg1?earned:los You_{reg1?earned:lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
+qstr_You_{reg1?earned:los You_{reg1?earned:lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_your_home_faction_{s11}.
+qstr_You_{reg1?earned:lost You_{reg1?earned:lost}_{reg11}_rank_points_{reg12?and_{reg12}_influence_:}with_{s11}.
 qstr_You_spent_{reg10}_of You_spent_{reg10}_of_your_influence_with_{s1},_with_{reg11}_remaining.
 qstr_Troop_upkeep: Troop_upkeep:
 qstr_{s11}_and_{s10} {s11}_and_{s10}
@@ -1009,7 +1010,6 @@ qstr_{s1}^^Factions_are_n {s1}^^Factions_are_normally_sieged_when_below_{reg1}_s
 qstr_Savagery Savagery
 qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
-qstr_current_terrain:_{re current_terrain:_{reg78}
 qstr_^^You_are_{s17}. ^^You_are_{s17}.
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
 qstr_Ally_party_size:_{re Ally_party_size:_{reg1}

@@ -10828,12 +10828,13 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (quest_slot_eq, "qst_blank_quest_17", slot_quest_object_troop,"$g_talk_troop"),],
 "I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "kill_quest_bandits_failed",[
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
-	(try_begin), #find remaining quest target parties, and remove their neutral flag (spawned from Quest Helper Trigger )
+	(try_begin), #find remaining quest target parties, make them normal parties (spawned from Quest Helper Trigger )
 	   (quest_get_slot, ":target_template", "qst_blank_quest_17", slot_quest_target_party_template),
 		(try_for_parties, ":quest_targets"),
 			(party_get_template_id, ":party_template", ":quest_targets"),
 			(eq, ":party_template", ":target_template"),
 			(party_set_faction, ":quest_targets", "fac_outlaws"),
+			(party_set_flags, ":quest_targets", pf_quest_party, 0),
 		(try_end),
 	(try_end),
     (cancel_quest, "qst_blank_quest_17"),
