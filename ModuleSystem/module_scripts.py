@@ -4890,7 +4890,7 @@ scripts = [
       #      (val_div, ":player_party_xp_gain", ":num_total_shares"),
       (assign, ":player_party_xp_gain", ":total_gain"),
       
-      (store_random_in_range, ":r", 50, 100),
+      (store_random_in_range, ":r", 80, 100), #InVain: was 50-100, decrease randomness
       (val_mul, ":player_party_xp_gain", ":r"),
       (val_div, ":player_party_xp_gain", 100),
       
@@ -4898,41 +4898,51 @@ scripts = [
 
       # TLD - XP Bonus for INT Characters
 
-      (party_get_num_companions, ":num_companions_main", "p_main_party"),
       (assign, reg79, ":player_party_xp_gain"),
-      (store_div, ":base_xp_share", ":player_party_xp_gain", ":num_companions_main"),
+      (store_div, ":base_xp_share", ":player_party_xp_gain", 100),
 
       (party_get_num_companion_stacks, ":num_stacks_new", "p_main_party"),
       (try_for_range, ":stack", 0, ":num_stacks_new"),
       	(party_stack_get_troop_id, ":stack_troop_new", "p_main_party", ":stack"),
       	(troop_is_hero, ":stack_troop_new"),
       	(store_attribute_level, ":int", ":stack_troop_new", ca_intelligence),
+		(ge, ":int", 10),
       	(assign, reg80, ":int"),
-      	(store_mul, ":int_xp_bonus_multi", ":int", 10),
-      	(assign, reg81, ":int_xp_bonus_multi"),
-      	(val_div, ":int_xp_bonus_multi", 3),
-      	(assign, reg82, ":int_xp_bonus_multi"),
-      	(val_max, ":int_xp_bonus_multi", 1),
-      	(store_mul, ":int_xp_bonus", ":base_xp_share", ":int_xp_bonus_multi"),
-      	(assign, reg83, ":int_xp_bonus"),
-      	(val_div, ":int_xp_bonus", 100),
-      	(assign, reg84, ":int_xp_bonus"),
+      	# (store_mul, ":int_xp_bonus_multi", ":int", 10),
+      	# (assign, reg81, ":int_xp_bonus_multi"),
+      	# (val_div, ":int_xp_bonus_multi", 3),
+      	# (assign, reg82, ":int_xp_bonus_multi"),
+      	# (val_max, ":int_xp_bonus_multi", 1),
+		# (store_mul, ":int_xp_bonus", ":base_xp_share", ":int_xp_bonus_multi"),
+      	# (assign, reg83, ":int_xp_bonus"),
+      	# (val_div, ":int_xp_bonus", 100),
+      	# (assign, reg84, ":int_xp_bonus"),
+		
+		#InVain: New formula, exponential growth for much bigger effect
+		(store_sub, ":int_xp_bonus_multi", ":int", 5),
+		(val_mul, ":int_xp_bonus_multi",":int_xp_bonus_multi"), #exponential base
+		(assign, reg81, ":int_xp_bonus_multi"),
+		(val_div, ":int_xp_bonus_multi", 14), #soften growth a bit
+		(assign, reg83, ":int_xp_bonus_multi"),
+		(store_mul, ":int_xp_bonus", ":base_xp_share", ":int_xp_bonus_multi"),
+		(assign, reg84, ":int_xp_bonus"),
+
       	(val_max, ":int_xp_bonus", 1),
       	(add_xp_to_troop, ":stack_troop_new", ":int_xp_bonus"),
       	
       	#Debug
-      	(try_begin),
-      		(eq, "$cheat_mode", 1),
-	      	(str_store_troop_name, s77, ":stack_troop_new"),
-	      	(display_message, "@{reg79} shared XP", color_good_news),
-	      	(display_message, "@{s77} has {reg80} int - {reg81} Int Bonus Multi before dividing by 3 - {reg82} after dividing by 3"),
-	      	(display_message, "@{reg83} INT XP Bonus before dividing by 100 - {reg84} after dividing by 100"),
-	      	(display_message, "@{s77} received {reg84} bonus XP", color_good_news),
-	    (try_end),
+      	# (try_begin),
+      		# (eq, "$cheat_mode", 1),
+	      	# (str_store_troop_name, s77, ":stack_troop_new"),
+	      	# (display_message, "@{reg79} shared XP", color_good_news),
+	      	# (display_message, "@{s77} has INT={reg80} - INT*INT={reg81}"),
+	      	# (display_message, "@{reg83} reduced INT XP multi"),
+	      	# (display_message, "@{s77} received {reg84} bonus XP", color_good_news),
+	    # (try_end),
 
 	    (try_begin),
 	    	(eq, ":stack_troop_new", "trp_player"),
-	    	(gt, ":int_xp_bonus", 0),
+	    	(gt, ":int_xp_bonus", 50), #don't inform about peanuts
 	    	(display_message, "@You gained {reg84} intelligence-bonus XP", color_good_news),
 	    (try_end),
 
@@ -10271,7 +10281,21 @@ scripts = [
         (call_script, "script_change_player_relation_with_troop", ":quest_giver", ":quest_importance"),
       (try_end),
       
+	  #InVain: Bonus quest XP from intelligence
+	  #(assign, reg78, ":quest_xp_reward"),
+	  (store_attribute_level, ":int", "trp_player", ca_intelligence),
+	  (store_mul, ":int_xp_multi", ":int",":int"),
+	  (val_div, ":int_xp_multi", 8),
+	  (val_add, ":int_xp_multi", 100),
+	  #(assign, reg79, ":int_xp_multi"),
+	  (val_mul, ":quest_xp_reward", ":int_xp_multi"),
+	  (val_div, ":quest_xp_reward", 100),
+	  #(assign, reg80, ":quest_xp_reward"),
+	  
+	  #(display_message, "@base xp: {reg78}; multi: {reg79}; XP reward: {reg80}"),
+	  
       (add_xp_as_reward, ":quest_xp_reward"),
+	  
       (call_script, "script_add_faction_rps", ":quest_faction", ":quest_gold_reward"),
       (call_script, "script_increase_rank", ":quest_faction", ":quest_rank_reward"),
       (call_script, "script_end_quest", ":quest_no"),

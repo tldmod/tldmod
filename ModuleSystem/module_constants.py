@@ -1714,7 +1714,7 @@ center_list = [
 
 (p_town_rhun_main_camp, [scn_north_rhun_camp_center, -1, -1,-1, scn_rhun_arena,scn_north_rhun_camp_siege, mesh_town_rhun_north],
 	[-1, trp_smith_north_rhun, trp_merchant_north_rhun, trp_elder_rhun, pt_rhun_recruits,  trp_rhun_lord, trp_c4_rhun_noble_rider, trp_i4_rhun_vet_infantry, trp_i1_rhun_tribesman, trp_i2_rhun_tribal_warrior, ], 
-	[icon_mfc_rhun],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_high, 2, tld_siegable_capital),
+	[icon_mfc_rhun],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 2, tld_siegable_capital),
 (p_town_rhun_south_camp, [scn_rhun_south_camp_center, -1, -1,-1,-1,scn_rhun_south_camp_siege, mesh_town_rhun],
 	[-1, trp_smith_north_rhun, trp_merchant_south_rhun, trp_elder_rhun_ac, pt_rhun_recruits,  trp_rhun_lord, trp_c4_rhun_noble_rider, trp_i4_rhun_vet_infantry, trp_i1_rhun_tribesman, trp_i2_rhun_tribal_warrior, ], 
 	[icon_mfc_rhun],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med, 2, tld_siegable_always),
@@ -1724,7 +1724,7 @@ center_list = [
 # Gundabad camp
 (p_town_gundabad,     [scn_gundabad_camp_center, -1, -1,-1, scn_mordor_arena,scn_gundabad_siege, mesh_town_gundabad],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_elder_gunda, pt_gundabad_cap_recruits, trp_gundabad_lord,trp_i1_gunda_goblin,trp_i2_gunda_orc,trp_i3_gunda_orc_fighter,trp_c4_gunda_warg_rider], 
-	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_med, 900, 2, tld_siegable_capital),
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, 900, 2, tld_siegable_capital),
 (p_town_gundabad_ne_outpost, [scn_gundabad_ne_outpost_center, -1, -1,-1,-1,scn_gundabad_ne_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_no_troop, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_i1_gunda_goblin,trp_i2_gunda_orc,trp_i3_gunda_orc_fighter,trp_c4_gunda_warg_rider], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
