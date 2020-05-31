@@ -4943,7 +4943,7 @@ scripts = [
 	    (try_begin),
 	    	(eq, ":stack_troop_new", "trp_player"),
 	    	(gt, ":int_xp_bonus", 50), #don't inform about peanuts
-	    	(display_message, "@You gained {reg84} intelligence-bonus XP", color_good_news),
+	    	(display_message, "@You gained {reg84} experience from your intelligence.", color_good_news),
 	    (try_end),
 
       (try_end),
@@ -24434,6 +24434,8 @@ command_cursor_scripts = [
 ## Kham Quest Scripts
 
 #Defend Refugee Quest
+#script_cf_init_quest_defend_refugees
+#qst_blank_quest_01
 
 ("cf_init_quest_defend_refugees", [
 		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
@@ -24639,6 +24641,9 @@ command_cursor_scripts = [
 ]),
 
 # Hunt Down Refugee Quest
+#script_cf_init_quest_hunt_refugees
+#qst_blank_quest_02
+
 ("cf_init_quest_hunt_refugees", [
 		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
 		(neq, ":side", faction_side_good),
@@ -24790,7 +24795,8 @@ command_cursor_scripts = [
 ]),
 
 #script_cf_init_quest_reinforce_center
-#script_cf_init_quest_reinforce_center
+#qst_blank_quest_16
+
 ("cf_init_quest_reinforce_center",
   [
 
@@ -24875,6 +24881,8 @@ command_cursor_scripts = [
 ]),
 
 #script_cf_init_quest_sea_battle
+#qst_blank_quest_03
+
 ("cf_init_quest_sea_battle", [
 
 	(store_character_level, ":player_level", "trp_player"),
@@ -25030,6 +25038,7 @@ command_cursor_scripts = [
 		
 
 # script_cf_init_kill_quest
+# qst_blank_quest_04
 
 ("cf_init_kill_quest_target", [
 
@@ -25052,11 +25061,11 @@ command_cursor_scripts = [
 			(le, ":random_troop", 5),
 			(assign, ":target", ":tier_3_troop"),
 			(store_random_in_range, ":amount", 15, 26),
-			(store_mul, ":xp_reward", ":amount", 25),
+			(store_mul, ":xp_reward", ":amount", 25), #375 - 650
 			(assign, ":type", 1),
 		(else_try),
 			(assign, ":target", ":tier_4_troop"),
-			(store_random_in_range, ":amount", 16, 21),
+			(store_random_in_range, ":amount", 16, 21), #640-840
 			(store_mul, ":xp_reward", ":amount", 40),
 			(assign, ":type", 2),
 		(try_end),
@@ -25069,10 +25078,10 @@ command_cursor_scripts = [
 
 	(try_end),
 
-	(store_add, ":gold_reward", ":xp_reward", 75),
+	(store_add, ":gold_reward", ":xp_reward", 75), #450-715
 	(try_begin),
-		(store_div, ":rank_reward", ":xp_reward", 20),
-		(val_min, ":rank_reward", 30),
+		(store_div, ":rank_reward", ":xp_reward", 20), #18-42
+		(val_min, ":rank_reward", 30), #18-30
 	(try_end),
 	
 	(assign, reg54, ":target_faction"),		#quest_target_faction
@@ -25080,9 +25089,9 @@ command_cursor_scripts = [
 	(assign, reg56, ":target"),				#quest_target_troop
 	(assign, reg57, ":amount"),				#quest_target_amount
 	(assign, reg58, 10),					#quest_importance
-	(assign, reg59, ":xp_reward"),			#quest_xp_reward
-	(assign, reg60, ":gold_reward"),		#quest_gold_reward
-	(assign, reg61, ":rank_reward"),		#quest_rank_reward
+	(assign, reg59, ":xp_reward"),			#quest_xp_reward #375-840
+	(assign, reg60, ":gold_reward"),		#quest_gold_reward #450-715
+	(assign, reg61, ":rank_reward"),		#quest_rank_reward #18-30
 	(assign, reg62, 30),					#quest_expiration_days
 	(assign, reg63, 15),					#quest_dont_give_again_period
 	(assign, reg64, ":type"),				#quest_target_party_template - analog for troop type
@@ -25090,6 +25099,7 @@ command_cursor_scripts = [
 ]),
 
 # script_cf_init_kill_quest_faction
+#qst_blank_quest_05
 
 ("cf_init_kill_quest_faction", [
 
@@ -25102,8 +25112,8 @@ command_cursor_scripts = [
 	(store_faction_of_party, ":target_faction", ":target_center"),
 
 	(store_mul, ":amount", ":player_level", 3),
-	(store_mul, ":xp_reward", ":amount", 5),
-	(store_add, ":gold_reward", ":xp_reward", 75),
+	(store_mul, ":xp_reward", ":amount", 5), # lvl*15
+	(store_add, ":gold_reward", ":xp_reward", 75), #lvl*15+75
 
 	(try_begin),
 		(store_div, ":rank_reward", ":xp_reward", 20),
@@ -28766,6 +28776,7 @@ if is_a_wb_script==1:
 
 
 # script_cf_init_kill_quest_bandit
+# qst_blank_quest_17
 
 ("cf_init_kill_quest_bandit", [
 	(store_character_level, ":player_level", "trp_player"),
@@ -28780,14 +28791,14 @@ if is_a_wb_script==1:
 	(store_random_in_range, ":amount", 15, 26),
 	(val_add, ":amount", ":player_level"),
 
-	(store_mul, ":xp_reward", ":amount", 4),
-	(store_add, ":gold_reward", ":xp_reward", 40),
+	(store_mul, ":xp_reward", ":amount", 4), #min. 68-104
+	(store_add, ":gold_reward", ":xp_reward", 40), #min. 108-144
 
-	(store_div, ":rank_reward", ":xp_reward", 20),
+	(store_div, ":rank_reward", ":xp_reward", 20), #min. 3-5
 	(val_min, ":rank_reward", 10),
 
-	(store_div, ":exp", ":amount", 3),
-	(val_add, ":exp", 7),
+	(store_div, ":exp", ":amount", 3), #min 5-8
+	(val_add, ":exp", 7), #min 12-15
 
 	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
 	(assign, reg56, ":target_troop"),		#quest_target_troop
@@ -28802,6 +28813,7 @@ if is_a_wb_script==1:
 ]),
 
 # script_cf_init_defeat_lord_quest
+#qst_blank_quest_06
 
 ("cf_init_defeat_lord_quest", [
 

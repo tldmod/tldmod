@@ -1,4 +1,4 @@
-1618
+1620
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -184,7 +184,7 @@ qstr_nothing nothing
 qstr_Good Good
 qstr_Med Med
 qstr_Bad Bad
-qstr_You_gained_{reg84}_i You_gained_{reg84}_intelligence-bonus_XP
+qstr_You_gained_{reg84}_e You_gained_{reg84}_experience_from_your_intelligence.
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
 qstr_{reg4}_killed_{reg5}_ {reg4}_killed,_{reg5}_wounded
 qstr_{reg4}_killed_{reg5}_r {reg4}_killed,_{reg5}_routed
@@ -1232,6 +1232,7 @@ qstr_It_is_my_duty_to_prot It_is_my_duty_to_protect_our_allies.
 qstr_I_am_{s4}_{s15}_of_{ I_am_{s4},_{s15}_of_{s6}
 qstr_I_am_{s4}_a_commande I_am_{s4},_a_commander_of_{s6}
 qstr_{s9}{reg5?_and_the_r {s9}{reg5?_and_the_ruler_of_{s8}.:.
+qstr__{s3}_gained_{reg78} _{s3}_gained_{reg78}_experience.
 qstr_{playername}_our_sco {playername},_our_scouts_brought_word_of_your_success._May_you_live_beyond_this_day_in_years_of_blessedness!_With_the_hosts_of_{s7}_thrown_back_by_your_victory,_the_enemy’s_great_advance_has_faltered._We_may_hope_that_there_is_now_contention_within_their_ranks,_and_among_their_captains._And,_too,_we_may_hope_that_they_now_hold_a_healthy_fear_of_you!_You_have_won_us_a_brief_rest_from_weariness,_at_the_least.
 qstr_Well_{playername}_yo Well,_{playername},_you’ve_returned,_and_with_good_news_for_us,_it_would_seem._I_see_now_you_are_not_only_made_of_brag_and_hot_air_-_ah,_if_only_I_could_have_seen_{s7}_fall_before_you_with_my_own_eyes!_Our_foes_are_now_desperately_disheartened,_no_doubt._Lost_their_heads,_I_warrant._Cut_off_the_head_of_a_serpent,_as_they_say,_and_the_deal’s_done._Well,_I_must_now_lead_my_host_to_win_the_real_victory._Your_contribution_will_be_reported,_{playername},_to_your_betters._Have_no_fear_about_that.
 qstr_Alas_that_I_could_no Alas_that_I_could_not_bring_a_final_end_to_{s7}_of_{s8},_but_if_we_should_meet_again,_let_them_beware.
@@ -1293,6 +1294,7 @@ qstr_Ah_{playername}_it_i Ah,_{playername},_it_is_good_you_have_come._War_is_at_
 qstr_About_time_you_showe About_time_you_showed_up,_{playername}._We're_at_war_now_and_I_will_not_tolerate_any_insubordination._We_are_fighting_against_{s11},_but_we_have_to_gather_our_strength_and_smite_the_enemy_in_the_field_before_we_can_move_against_their_fortresses._Each_defeat_of_our_enemies_will_strengthen_our_war_efforts_and_bring_them_closer_to_their_utter_destruction._So_I_trust_you_to_fight_our_enemy_at_every_opportunity,_be_it_a_mere_scout_party_or_a_war_host._Also,_you_are_to_support_our_captains_and_our_allies_if_you_see_them_fight._Do_not_fail_them_or_I_will_know.
 qstr_we_are_fighting_agai we_are_fighting_against_{s13}
 qstr_we_are_not_fighting_ we_are_not_fighting_anyone_at_the_moment
+qstr__{s14}_gained_{reg78 _{s14}_gained_{reg78}_experience.
 qstr_Oh?_Let_me_see_that. Oh?_Let_me_see_that..._Well_well_well!_It_was_good_of_you_to_bring_me_this,_{playername}._Take_my_seal_as_proof_that_I've_received_it,_and_give_my_regards_to_{s9}_when_you_see_him_again.
 qstr_Give_me_that!_Hrmph! Give_me_that!_Hrmph!_Good_that_you_brought_me_this,_{playername},_you_are_a_useful_servant._Tell_{s9}_to_employ_you_more_often.
 qstr_What?_Let_me_see_tha What?_Let_me_see_that..._Hmmm._It_was_good_of_you_to_bring_me_this,_{playername}._Now_begone.

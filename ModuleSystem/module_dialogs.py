@@ -2364,7 +2364,18 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                        (quest_slot_eq, "qst_lend_surgeon", slot_quest_giver_troop, "$g_talk_troop")],
 "Your surgeon managed to convince my friend and made the operation.  All we can do now is pray for his recovery.\
  Anyway, I thank you for lending your surgeon to me, {playername}. You have a noble spirit. I will not forget it.", "lord_generic_mission_completed",
-  [(call_script, "script_finish_quest", "qst_lend_surgeon", 100),
+  [(quest_get_slot,":quest_object_troop", "qst_lend_surgeon", slot_quest_object_troop),
+  (store_attribute_level, ":int", ":quest_object_troop", ca_intelligence),
+  (val_mul, ":int",":int"),
+  (assign, ":reward_xp", 500),
+  (val_mul, ":reward_xp",":int"),
+  (val_div, ":reward_xp", 300),
+  (add_xp_to_troop, ":reward_xp", ":quest_object_troop"),
+  (str_store_troop_name,s3,":quest_object_troop"),
+  (assign, reg78, ":reward_xp"),
+  (display_message, "@ {s3} gained {reg78} experience."),
+  
+  (call_script, "script_finish_quest", "qst_lend_surgeon", 100),
   (troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
 
   #TLD quests fail/success BEGIN:
@@ -3875,17 +3886,28 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone,"lord_lend_companion_end",[],
 "Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky commander to have such worthy companions.", "lord_pretalk", [
     (quest_get_slot, ":quest_target_troop", "qst_lend_companion", slot_quest_target_troop),
+	#(quest_get_slot, ":duration", slot_quest_target_amount),
     (party_add_members, "p_main_party", ":quest_target_troop", 1),
     # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 3),
     # (add_xp_as_reward, 100),
     (call_script, "script_finish_quest", "qst_lend_companion", 100),
-    (add_xp_to_troop, 200, ":quest_target_troop"), #Lets give em XP
     (str_store_troop_name,s14,":quest_target_troop"),
     (troop_get_type, reg3, ":quest_target_troop"),
     (try_begin),
       (gt, reg3, 1), #MV: non-humans are male
       (assign, reg3, 0),
-    (try_end)]],
+	(try_end),
+	  
+    (assign, ":reward_xp", 500),
+	(store_attribute_level, ":int", ":quest_target_troop", ca_intelligence),
+	(store_character_level, ":lvl", ":quest_target_troop"),
+    (val_mul, ":int",":lvl"),  
+	(val_mul, ":reward_xp",":int"),
+	(val_div, ":reward_xp", 100),
+	#(val_mul, ":reward_xp",":duration"), #scale with days you have to give them away, in case we want to make duration vary in future. Doesn't yet work, because slot_quest_target_amount is actually the campaign date
+    (add_xp_to_troop, ":reward_xp", ":quest_target_troop"), #Lets give em XP
+    (assign, reg78, ":reward_xp"),
+    (display_message, "@ {s14} gained {reg78} experience."),]],
    
   #[anyone|plyr,"lord_talk",[(check_quest_active,"qst_collect_debt"),
                             # (quest_slot_eq,  "qst_collect_debt", slot_quest_current_state, 0),
