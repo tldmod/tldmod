@@ -2168,11 +2168,11 @@ scripts = [
     	(val_div, ":to_add", 60), #   base: [num-garrison] / 100 #InVain: was 20
 	    (call_script, "script_get_faction_rank", ":fac"),
 	    (assign, ":rank", reg0),
-		(val_mul, ":rank", 2), #added by InVain
+		(val_mul, ":rank", 2), #InVain
 	    (val_add, ":to_add", ":rank"), #  + rank
 	    (store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
-	    #(val_div, ":lead_bonus", 2), #disabled by InVain
-	    (val_add, ":to_add", ":lead_bonus"),   # +leadership / 2
+	    #(val_div, ":lead_bonus", 2), #disabled, InVain
+	    (val_add, ":to_add", ":lead_bonus"), 
 	    # orc bonus
 	    (assign, ":is_orc_faction", 0),
 	    (try_begin),
@@ -2186,14 +2186,22 @@ scripts = [
 	  	(try_end),
 	    # town relations bonus +size*rel/100
 	    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
-		(val_mul, ":center_relation", 2), #added by Invain
+		(val_mul, ":center_relation", 2), #Invain
 	    (val_add, ":center_relation", 100),
 	    (val_mul, ":to_add", ":center_relation"), (val_div, ":to_add", 100),
 	    
 	    (assign, ":ideal_size", ":to_add"),
-		
-		# compute how many soldiers to add to volunteers
 		(store_party_size, ":vol_total", ":volunteers"),
+		
+		#InVain: before adding new volunteers, we train the old ones, using the same formula as above (without garrison size)
+		(store_add, ":vol_xp", ":rank", ":lead_bonus"),
+		(val_mul, ":vol_xp", ":center_relation"),
+		(val_mul, ":vol_xp", ":vol_total"), #multiply with number of current volunteers
+		(val_div, ":vol_xp", 10),
+		(party_upgrade_with_xp, ":volunteers", ":vol_xp"),
+		
+		
+		# compute how many soldiers to add to volunteers		
 		(val_sub, ":to_add", ":vol_total"), # how many troops to add/remove to volunteers (in theory)
 		(val_mul, ":to_add", 2), (val_div, ":to_add", 3), # fill 2/3 of the gap per time
 		(store_random_in_range, ":rand", 0, 5), (val_add, ":rand", -2), (val_add, ":to_add", ":rand"), # plus random -2 .. +2
