@@ -35,29 +35,8 @@ qstr_Gauntlet_wave:_1|Gauntlet wave: 1
 qstr_Gauntlet_wave:_{reg1|Gauntlet wave: {reg1}
 qstr_Remain_in_retirement|Remain in retirement.
 qstr_Go_back_to_the_adven|Go back to the adventuring.
-qstr_You_have_retired_at_|You have retired at level {reg4} after {reg5} days of adventuring.
-qstr_Effect_on_Score|Effect on Score
-qstr_Settlements_owned_by|Settlements owned by you: {reg0}
-qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
-qstr_Friendly_Settlements|Friendly Settlements: {reg0}
-qstr_Hostile_Settlements:|Hostile Settlements: {reg0}
-qstr_{reg0}|{reg0}
-qstr_Friendly_Lords:_{reg|Friendly Lords: {reg0}
-qstr_Enemy_Lords:_{reg0}|Enemy Lords: {reg0}
-qstr_Victories:_{reg0}|Victories: {reg0}
-qstr_Defeats:_{reg0}|Defeats: {reg0}
-qstr_Quests_Completed:_{r|Quests Completed: {reg0}
-qstr_Companions_Found:_{r|Companions Found: {reg0}
-qstr_Companions_Lost/Depa|Companions Lost/Departed: {reg0}
-qstr_Wealth:_{reg0}_denar|Wealth: {reg0} denars
-qstr_Inventory:_{reg0}_de|Inventory: {reg0} denars
-qstr_Experience:_{reg0}|Experience: {reg0}
-qstr_Days_Passed:_{reg0}|Days Passed: {reg0}
-qstr_Difficulty:_{reg0}%|Difficulty: {reg0}%
-qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
-qstr_TOTAL_SCORE:_{reg0}|TOTAL SCORE: {reg0}
 qstr_swy_ui_opacity|swy ui opacity
-qstr_______|      
+    
 qstr_A_peaceful_village_n|A peaceful village not far from Westfold...
 qstr_The_War_is_upon_Roha|The War is upon Rohan!
 qstr_Minas_Tirith___The_W|Minas Tirith - The White City
@@ -104,6 +83,7 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_an_URUK_HAI^_bred_in|an URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
+qstr__rev_9_wb__dev_^_Bui| rev 9 wb | dev ^ Built 2020-06-01 16:12   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
@@ -202,7 +182,8 @@ qstr_Useful_Tool_of_{s5}|Useful Tool of {s5}
 qstr_Servant_of_{s5}|Servant of {s5}
 qstr_Unknown_to_{s5}|Unknown to {s5}
 qstr_You_have_been_{reg1?|You have been {reg1?promoted:demoted} to {s24} ({reg0})!
-qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.
+qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.
+qstr_You_{reg1?earned:lost|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.
 qstr_You_spent_{reg10}_of|You spent {reg10} of your influence with {s1}, with {reg11} remaining.
 qstr_Troop_upkeep:|Troop upkeep:
 qstr_{s11}_and_{s10}|{s11} and {s10}
@@ -283,11 +264,7 @@ qstr_nothing|nothing
 qstr_Good|Good
 qstr_Med|Med
 qstr_Bad|Bad
-qstr_{reg79}_shared_XP|{reg79} shared XP
-qstr_{s77}_has_{reg80}_in|{s77} has {reg80} int - {reg81} Int Bonus Multi before dividing by 3 - {reg82} after dividing by 3
-qstr_{reg83}_INT_XP_Bonus|{reg83} INT XP Bonus before dividing by 100 - {reg84} after dividing by 100
-qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
-qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
+qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
 qstr_{reg4}_killed_{reg5}|{reg4} killed, {reg5} wounded, {reg6} routed
 qstr_{reg4}_killed_{reg5}_|{reg4} killed, {reg5} wounded
 qstr_{reg4}_killed_{reg5}_r|{reg4} killed, {reg5} routed
@@ -712,6 +689,14 @@ qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of thei
 qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
 qstr_{s11}_{s10}|{s11} {s10}
 qstr_{s13}_{s14}|{s13} {s14}
+qstr_Mountain_Goblin|Mountain Goblin
+qstr_Tribal_Orc|Tribal Orc
+qstr_Tribal_Orc_Warrior|Tribal Orc Warrior
+qstr_Tribal_Orc_Chief|Tribal Orc Chief
+qstr_Mountain_Goblins|Mountain Goblins
+qstr_Tribal_Orcs|Tribal Orcs
+qstr_Tribal_Orc_Warriors|Tribal Orc Warriors
+qstr_Tribal_Orc_Chiefs|Tribal Orc Chiefs
 qstr_Something_wrong_not_|Something wrong, not enough troops to remove
 qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
 qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
@@ -742,6 +727,7 @@ qstr_{s3}{s1}{s0}|{s3}{s1}{s0}
 qstr_{s3}{s2}{s0}|{s3}{s2}{s0}
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} and {s0}
+qstr_{reg0}|{reg0}
 qstr_No_Troops_Left.|No Troops Left.
 qstr_avoid_melee|avoid melee
 qstr_stand_and_fight|stand and fight
@@ -801,6 +787,7 @@ qstr_A_thunderstorm_from_t|A thunderstorm from the Misty Mountains rages over th
 qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.
 qstr_A_poisonous_fog_from_|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
 qstr_swy_ui_evil|swy ui evil
+qstr_swy_river_tinting_co|swy river tinting color
 qstr_Your_mount_stumbles!|Your mount stumbles! It seems to be lame.
 qstr_Bitten_by_your_own_w|Bitten by your own warg mount!
 qstr_You_weigh_too_much_f|You weigh too much for a pony!
@@ -817,9 +804,9 @@ qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
 qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.
 qstr_Cannot_leave_now.|Cannot leave now.
-qstr_You_have_found_the_l|You have found the local smithy... (+{reg3} XP)
-qstr_You_have_found_the_lo|You have found the local authority...(+{reg3} XP)
-qstr_You_have_found_the_loc|You have found the local warehouse...(+{reg3} XP)
+qstr_You_have_found_the_l|You have found the local smithy.
+qstr_You_have_found_the_lo|You have found the local authority.
+qstr_You_have_found_the_loc|You have found the local warehouse.
 qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.
 qstr__cancelled_the_{reg1|(cancelled the {reg10} exp pts earned from killing prisoners)
 qstr_Forming_ranks.|Forming ranks.
@@ -855,6 +842,7 @@ qstr_You_rally_your_troop|You rally your troops!
 qstr_{s5}_rallies_{reg65?|{s5} rallies {reg65?her:his} troops!
 qstr_You_have_killed_{reg|You have killed {reg1} enemies in this battle!
 qstr_Your_bravery_inspire|Your bravery inspires your troops!
+qstr_player_{s5}_hit|player {s5} hit
 qstr_Your_mount_has_falle|Your mount has fallen to the ground beneath you!
 qstr_Receive_{reg22}_dama|Receive {reg22} damage.
 qstr_You_have_been_knocke|You have been knocked unconscious by {s22}.
@@ -1019,6 +1007,7 @@ qstr_Enemy_party_size:_{r|Enemy party size: {reg1}
 qstr_Spawned_routed_parti|Spawned routed parties!
 qstr_Party_count:_{reg0}|Party count: {reg0}
 qstr_Party_position__{reg|Party position ({reg2},{reg3}).
+qstr_XP_added|XP added
 qstr_You_have_been_pimped|You have been pimped up!
 qstr_9000_XP_added___now_|9000 XP added - now wait for the War...(assumes war starts at level 8)
 qstr_Good_factions_defeat|Good factions defeated! Now wait for it...
@@ -1092,8 +1081,6 @@ qstr_Kham_Cheat_Mode_ON!|Kham Cheat Mode ON!
 qstr_1_troll_added!|1 troll added!
 qstr_Raft_Men_party_enabl|Raft Men party enabled. They are down River Running
 qstr_{reg63}_followers|{reg63} followers
-qstr_{reg0}_Fit_Regulars|{reg0} Fit Regulars
-qstr_{reg0}_Fit_for_battl|{reg0} Fit for battle
 qstr_Orc_Horde_Spawned!|Orc Horde Spawned!
 qstr_Vet_Archer_Spawned!|Vet Archer Spawned!
 qstr_Killer_WItcher_Spawn|Killer WItcher Spawned, Badass King Theo added!
@@ -1115,6 +1102,8 @@ qstr_Tripled|Tripled
 qstr_Quadrupled|Quadrupled
 qstr_You_drank_the_Ent_Wa|You drank the Ent Water...
 qstr_Fangorn_search:_fail|Fangorn search: failed.
+qstr_^^^A_great_victory!^|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
+qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|Troll caged in wheeled cage.
 qstr_A_second_troll_is_ca|A second troll is caged in wheeled cage.
 qstr_Here_you_are.|Here you are.
@@ -1276,7 +1265,6 @@ qstr_Your_party_is_spotte|Your party is spotted by {s1}.
 qstr_Party_has_nothing_to|Party has nothing to eat!
 qstr_DEBUG:_Player_Contro|DEBUG: Player Control Allies RESET
 qstr_You_pay_for_accommod|You pay for accommodation.
-qstr_Your_scouts_have_rep|Your scouts have reported that there is a {s2} near {s3}.
 qstr_The_troll_outside_{s|The troll outside {s2} was killed. Mission canceled.
 qstr_{s1}_was_killed_on_t|{s1} was killed on the battlefield. Mission canceled.
 qstr_{s1}_has_been_defeat|{s1} has been defeated. Mission canceled.
@@ -1309,6 +1297,7 @@ qstr_{s5}_has_stopped_fol|{s5} has stopped following you.
 qstr_You_have_{reg69}_all|You have {reg69} ally party following you
 qstr_You_have_{reg69}_ally|You have {reg69} ally parties following you
 qstr_The_forces_of_{s2}_h|The forces of {s2} have regrouped and march on to {s15}!
+qstr_Your_scouts_have_rep|Your scouts have reported that there is a {s2} near {s3}.
 qstr_{s1}_from_{s2}|{s1} from {s2}
 qstr_When_dealing_with_lo|When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.^^(the Resource Points which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)
 qstr_Info|Info
@@ -1449,6 +1438,7 @@ qstr_It_is_my_duty_to_prot|It is my duty to protect our allies.
 qstr_I_am_{s4}_{s15}_of_{|I am {s4}, {s15} of {s6}
 qstr_I_am_{s4}_a_commande|I am {s4}, a commander of {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? and the ruler of {s8}.:.
+qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
 qstr_{playername}_our_sco|{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least.
 qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
 qstr_Alas_that_I_could_no|Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware.
@@ -1510,6 +1500,7 @@ qstr_Ah_{playername}_it_i|Ah, {playername}, it is good you have come. War is at 
 qstr_About_time_you_showe|About time you showed up, {playername}. We're at war now and I will not tolerate any insubordination. We are fighting against {s11}, but we have to gather our strength and smite the enemy in the field before we can move against their fortresses. Each defeat of our enemies will strengthen our war efforts and bring them closer to their utter destruction. So I trust you to fight our enemy at every opportunity, be it a mere scout party or a war host. Also, you are to support our captains and our allies if you see them fight. Do not fail them or I will know.
 qstr_we_are_fighting_agai|we are fighting against {s13}
 qstr_we_are_not_fighting_|we are not fighting anyone at the moment
+qstr__{s14}_gained_{reg78| {s14} gained {reg78} experience.
 qstr_Oh?_Let_me_see_that.|Oh? Let me see that... Well well well! It was good of you to bring me this, {playername}. Take my seal as proof that I've received it, and give my regards to {s9} when you see him again.
 qstr_Give_me_that!_Hrmph!|Give me that! Hrmph! Good that you brought me this, {playername}, you are a useful servant. Tell {s9} to employ you more often.
 qstr_What?_Let_me_see_tha|What? Let me see that... Hmmm. It was good of you to bring me this, {playername}. Now begone.
@@ -1757,10 +1748,6 @@ qstr_One_{s6}_left_the_pa|One {s6} left the party.
 qstr_I_understand._I_will|I understand. I will stay with you. For a while.
 qstr_I_have_played_my_rol|I have played my role for many long years, for many lifetimes of mortal men. This war is for Mankind to fight. I will leave for the West and some may decide to follow me.
 qstr_{reg1}_Veteran_Elves|{reg1} Veteran Elves decided to leave your party.
-qstr_You_chose_well_{sir/|You chose well, {sir/madam}. My lads know how to keep their word and earn their pay.
-qstr_Well_done_{sir/madam|Well done, {sir/madam}. Keep the money and wine coming our way, and there's no foe in Calradia you need fear.
-qstr_We_are_at_your_servi|We are at your service, {sir/madam}. Point us in the direction of those who need hurting, and we'll do the rest.
-qstr_You_will_not_be_diss|You will not be dissapointed {sir/madam}. You will not find better warriors in all Calradia.
 qstr_What_an_amazing_feat|What an amazing feat of arms!
 qstr_Well_done!|Well done!
 qstr_Nice_legwork.|Nice legwork.
@@ -1803,11 +1790,7 @@ qstr_The_{s11}_of_{s10}_a|The {s11} of {s10} asked you to escort some {s12} to {
 qstr__Guards_slaughter_hi| Guards, slaughter him!
 qstr_Slaughter_him_for_fr|Slaughter him for fresh human meat!
 qstr_This_is_{s5}_Command|This is {s5}, Commander.
-qstr_{s6}_This_place_and_|{s6} This place and the surrounding lands belong to you of course, my {lord/lady}.
-qstr_{s6}_This_place_and_t|{s6} This place and the surrounding lands belong to {s7} of {s8}.
-qstr_{s3}_and_{s5}|{s3} and {s5}
-qstr_{s3}_{s5}|{s3}, {s5}
-qstr_{reg20?We_mostly_pro|{reg20?We mostly produce {s5} here:We don't produce much here these days}. If you would like to learn more, you can speak with our {reg4?guildmaster:village elder}. He is nearby, right over there.
+qstr_{s6}_This_place_and_|{s6} This place and the surrounding lands belong to {s7} of {s8}.
 qstr_Hey_scum!_I_can_fix_|Hey scum! I can fix that jaw of yours.
 qstr_Watch_where_you_re_g|Watch where you're going, maggot!
 qstr_I_don_t_like_your_fa|I don't like your face! I think it needs some fixing.

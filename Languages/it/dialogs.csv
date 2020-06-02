@@ -450,7 +450,7 @@ dlga_lord_talk_ask_location:lord_talk_ask_location_2|Molto bene, potrei avere o 
 dlga_lord_talk_ask_location_2:lord_pretalk|Niente, ti chiedo scusa.
 dlga_lord_talk_ask_about_war_2:lord_talk_ask_about_war_details|Dimmi di più a proposito della guerra con {s1}.
 dlga_lord_talk_ask_about_war_2:lord_pretalk|È tutto quello che volevo sapere. Grazie.
-dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Noi siamo {s22} e loro sono {s23}. In tutto, {s9}.
+dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Noi siamo {s22} e loro sono {s23}. Complessivamente, {s9}.
 dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|Oggi è un buon giorno per combattere, {s4} !
 dlga_lord_tell_objective:lord_pretalk|Che sto facendo ? Cosa ti sembra stia facendo !? Sono un prigioniero !
 dlga_lord_tell_objective:lord_pretalk.1|Non sto comandando nessun uomo per ora.
