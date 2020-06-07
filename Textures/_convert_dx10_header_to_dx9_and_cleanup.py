@@ -2,6 +2,7 @@ import io
 import struct
 import os
 import collections
+import sys
 
 from pathlib import Path
 
@@ -29,18 +30,30 @@ class DDSD:
     PITCH = 0x8
     LINEARSIZE = 0x80000
   
-with open('CWE_AppleTreeLeaves_1.dds', 'rb+') as f:
-    print(f)
+  
+dds_folder = "."
+
+if len(sys.argv) > 1:
+    dds_folder = sys.argv[1]
+    print (" [i] using provided folder path `%s`..." % dds_folder)
+else:
+    print (" [i] using current folder to search and fix DDS files...")
+
+
+for file_path in Path(dds_folder).glob('*.dds'):
+  with open(file_path, 'rb+') as f:
     magic = struct.unpack('4s', f.read(4))[0]
     f.seek(0x54)
     fourc = struct.unpack('4s', f.read(4))[0];
     
-    print("magic", (magic), magic == b'DDS ', fourc, len(fourc[:4]), len(b'DX10'), fourc[:4] == b'DX10')
+    assert(magic == b'DDS ')
+    
+    print (" [-] opening %s" % file_path)
 
     # swy: first things first, try to convert a newer DirectX 10-style (expanded) header to a DirectX 9, as they contain the same data
     #      so that the game and OpenBRF can actually open and read it. we should be able to map them without much fuss.
     if fourc == b"DX10":
-        print("wut")
+        print("   [i] found DX10 header; trying to map to DX9 fourCC value.")
     
         f.seek(0x80) # dxgiFormat
         dxgi = struct.unpack('<I', f.read(4))[0]
@@ -88,12 +101,10 @@ with open('CWE_AppleTreeLeaves_1.dds', 'rb+') as f:
         DXGI.FORMAT_BC5_TYPELESS]:
             oldf = b'ATI2'
             
-            
-        print("oldf", oldf, fourc)
         if oldf:
             f.seek(os.SEEK_END); total_size = f.tell()
             
-            print("fixo", alph, dxgi, oldf, total_size);
+            print("   [>] found fourCC: ", alph, dxgi, oldf, total_size);
             
             # swy: replace that DX10 tag by the actual thing
             f.seek(0x54) # fourCC
@@ -111,12 +122,12 @@ with open('CWE_AppleTreeLeaves_1.dds', 'rb+') as f:
         
     # swy: we couldn't convert it to a valid DX9 format; unchanged, leave it alone
     if fourc == b'DX10':
-        print("unchanged; this is probably BC7 or other DX10-exclusive DDS format that we can't map back.")
-        exit()
+        print("   [!] unchanged; this is probably BC7 or other DX10-exclusive DDS format that we can't map back.")
+        continue
         
     if (fourc not in [b'DXT1', b'DXT2', b'DXT3', b'DXT4', b'DXT5', b'ATI1', b'ATI2']):
-        print("the", fourc, " DDS type is unsupported; skipping")
-        exit()
+        print("   [!] the", fourc, " DDS type is unsupported; skipping")
+        continue
 
     # swy: now let's try to fix the pitch/linear size mess; every encoder uses their own combination of flags, screw the standards ¯\_(ツ)_/¯
     #      MSDN says that compressed textures should always use DDSD_LINEARSIZE, because this is an union we find all kinds of things here;
@@ -137,15 +148,22 @@ with open('CWE_AppleTreeLeaves_1.dds', 'rb+') as f:
     pitchsize  = int(int(width    + 3) / 4) * \
                  int(int(fourc in [b'DXT1', b'ATI1']) and 8 or 16) # swy: all the other formats use 16 bytes per 4x4 pixel block; only those two are 8 bytes
 
+
+    if ((flags & DDSD.LINEARSIZE) and linear_or_pitch == linearsize) or \
+       ((flags & DDSD.PITCH)      and linear_or_pitch == pitchsize ):
+        sys.stdout.write('\r')
+        # print("   [+] the current linear-or-pitch seems correct; skipping...")
+        continue
+
     f.seek(0x14)
-    print("chabnge", linear_or_pitch, linearsize, pitchsize, fourc, fourc in [b'DXT1', b'ATI1'] and 8 or 16)
+    print("   [i] bad linear-or-pitch: ", linear_or_pitch, linearsize, pitchsize, fourc, fourc in [b'DXT1', b'ATI1'] and 8 or 16)
     
     if linear_or_pitch != 0: # swy: not exactly standard-compliant; but we'll let it (empty fields) slide     
         if (flags & DDSD.LINEARSIZE) and not linear_or_pitch == linearsize:
-            f.write(struct.pack('<I', linearsize)); print("a")
+            f.write(struct.pack('<I', linearsize));                              print("      a)  correcting wrong linearsize from %u to %u."     % (linear_or_pitch, linearsize))
         elif (flags & DDSD.PITCH) and not linear_or_pitch == pitchsize:
-            f.write(struct.pack('<I', pitchsize)); print("b")
+            f.write(struct.pack('<I', pitchsize));                               print("      b)  correcting wrong pitch from %u to %u."           % (linear_or_pitch, pitchsize))
         else:
-            f.write(struct.pack('<I', linearsize)); print("c")
+            f.write(struct.pack('<I', linearsize));                              print("      c)  setting missing DDSD_LINEARSIZE flag and filling field with %u."  % linearsize )
             f.seek(0x8)
             f.write(struct.pack('<I', (flags & ~DDSD.PITCH) | DDSD.LINEARSIZE))
