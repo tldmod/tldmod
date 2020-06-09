@@ -1,10 +1,9 @@
+# -*- coding: utf8 -*-
 import io
 import struct
 import os
 import collections
 import sys
-
-from pathlib import Path
 
 class DXGI:
     FORMAT_BC1_TYPELESS = 70
@@ -40,7 +39,23 @@ else:
     print (" [i] using current folder to search and fix DDS files...")
 
 
-for file_path in Path(dds_folder).glob('*.dds'):
+dds_glob = []
+
+try:
+    from pathlib import Path
+    dds_glob = Path(dds_folder).glob('*.dds')
+
+except: # swy: python 2 does not include pathlib by default, so fallback to this: https://stackoverflow.com/a/2186565/674685
+    import fnmatch
+    import os
+    
+    matches = []
+    for root, dirnames, filenames in os.walk(dds_folder):
+        for filename in fnmatch.filter(filenames, '*.dds'):
+            dds_glob.append(os.path.join(root, filename))
+            
+
+for file_path in dds_glob:
   with open(file_path, 'rb+') as f:
     magic = struct.unpack('4s', f.read(4))[0]
     f.seek(0x54)
@@ -74,7 +89,7 @@ for file_path in Path(dds_folder).glob('*.dds'):
         DXGI.FORMAT_BC2_UNORM_SRGB, \
         DXGI.FORMAT_BC2_TYPELESS ]:
         
-#           if alph == DDS.ALPHA_MODE_PREMULTIPLIED: (it doesn't matter if we do things correctly; it's un unsupported)
+#           if alph == DDS.ALPHA_MODE_PREMULTIPLIED: (it doesn't matter if we do things correctly; it's unsupported by most loaders)
 #               oldf = b'DXT2'
 #           else:
                 oldf = b'DXT3'
@@ -84,7 +99,7 @@ for file_path in Path(dds_folder).glob('*.dds'):
         DXGI.FORMAT_BC3_UNORM_SRGB, \
         DXGI.FORMAT_BC3_TYPELESS ]:
         
-#           if alph == DDS.ALPHA_MODE_PREMULTIPLIED: (it doesn't matter if we do things correctly; it's un unsupported)
+#           if alph == DDS.ALPHA_MODE_PREMULTIPLIED: (it doesn't matter if we do things correctly; it's unsupported by most loaders)
 #               oldf = b'DXT4'
 #           else:
                 oldf = b'DXT5'

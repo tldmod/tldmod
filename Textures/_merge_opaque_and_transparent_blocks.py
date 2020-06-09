@@ -1,10 +1,9 @@
+# -*- coding: utf8 -*-
 import io
 import struct
 import os
 import collections
 import sys
-
-from pathlib import Path
 
 class DXGI:
     FORMAT_BC1_TYPELESS = 70
