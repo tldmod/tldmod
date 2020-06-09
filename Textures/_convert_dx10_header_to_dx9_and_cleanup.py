@@ -74,9 +74,9 @@ for file_path in Path(dds_folder).glob('*.dds'):
         DXGI.FORMAT_BC2_UNORM_SRGB, \
         DXGI.FORMAT_BC2_TYPELESS ]:
         
-            if alph == DDS.ALPHA_MODE_PREMULTIPLIED:
-                oldf = b'DXT2'
-            else:
+#           if alph == DDS.ALPHA_MODE_PREMULTIPLIED: (it doesn't matter if we do things correctly; it's un unsupported)
+#               oldf = b'DXT2'
+#           else:
                 oldf = b'DXT3'
 
         if dxgi in [ \
@@ -84,9 +84,9 @@ for file_path in Path(dds_folder).glob('*.dds'):
         DXGI.FORMAT_BC3_UNORM_SRGB, \
         DXGI.FORMAT_BC3_TYPELESS ]:
         
-            if alph == DDS.ALPHA_MODE_PREMULTIPLIED:
-                oldf = b'DXT4'
-            else:
+#           if alph == DDS.ALPHA_MODE_PREMULTIPLIED: (it doesn't matter if we do things correctly; it's un unsupported)
+#               oldf = b'DXT4'
+#           else:
                 oldf = b'DXT5'
         
         if dxgi in [ \
