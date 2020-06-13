@@ -193,7 +193,7 @@ scenes = [
 ("field_4",sf_generate,"none", "none", (0,0),(100,100),-100,"0x30054da28004050000005a76800022aa00002e3b",    [],[],"outer_terrain_steppe"),
 ("field_5",sf_generate,"none", "none", (0,0),(100,100),-100,"0x30054da28004050000005a76800022aa00002e3b",    [],[],"outer_terrain_steppe"),
 
-## Abhuva TLD Battlefield Scenes (unused)
+## Abhuva TLD Battlefield Scenes (unused, use for interiors?)
 ("battle_scene_plain_01",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x000000023001c600000691a400003efe00004b34000059be",[],[], "outer_terrain_plain"), ## Plain Battle Field with a small farm and a road crossing the map
 ("battle_scene_plain_02",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000230054800000691a400003efe00004b34000011d9",[],[], "outer_terrain_plain"), ## Plain Battle Field with a road crossing the map and a river with small bridge, lake with a fisher-house
 ("bridge_1",sf_generate,"none", "none", (0,0),(120,120),-100,"0x3a078bb2000589630000667200002fb90000179c",[],[], "outer_terrain_plain"), ## Plain Bridge Battle with destroyed buildings
@@ -236,7 +236,7 @@ scenes = [
 ("random_scene_parade"  ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_forest"),#GA, faction troops parade (custom battle)
 
 ("beorn_castle",sf_indoors,"lofotrinterior2","bo_lofotrinterior2",(-100,-100),(100,100),-100,"0",[],["player_chest"]),
-("moria_castle",sf_indoors|sf_muddy_water,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]),
+("moria_castle",sf_indoors|sf_muddy_water,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]), #unused
 ("hornburg_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000240002800000691a400003efe00004b34000059be",[],[]),
 ("morannon_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],["player_chest"],"outer_mountains2west_mordor"),
 
@@ -276,12 +276,12 @@ scenes = [
 ("eastfold_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],[],"outer_mountains2south"),
 ("east_osgiliath_siege",sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
 ("cirith_ungol_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000002200e95140006398d0000372f00004a8900005ff2",[],[],"outer_terrain_rohan"),
-# various battlefield scenes
+# various battlefield scenes, use these slots for future sieges
 #("battlefield1" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 ("battlefield2" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
 ("battlefield3" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"outer_terrain_plain"),
 ("battlefield4" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield5" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],["dorwinion_sack"],"outer_terrain_plain"),
+("battlefield5" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_plain"),
 ("battlefield6" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_plain"),
 ("battlefield7" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"),
 ("battlefield8" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b0190c8080058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"),
@@ -472,6 +472,7 @@ scenes = [
 ("village_north",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003386c9370007b5ed000041800000026d00001a96",  [],[],"outer_terrain_plain"),
 
 ## In Vain New Ambience Scenes Cont'd (Most versions are identical scenes with changed spawn positions)
+
 ("osgiliath_outskirts_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000030000500000334cc000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
 ("osgiliath_outskirts_3",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000300005000003d4f1000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
 ("osgiliath_outskirts_4",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000300005000003d4f1000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
@@ -517,16 +518,11 @@ scenes = [
 ("sea_battle_north" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"New_outer_terrain_seaside_1"),
 
 # Tutorial Scenes
-("tutorial_1",sf_indoors,"tutorial_1_scene", "bo_tutorial_1_scene", (-100,-100),(100,100),-100,"0",
-  [],[]),
-("tutorial_2",sf_indoors,"tutorial_2_scene", "bo_tutorial_2_scene", (-100,-100),(100,100),-100,"0",
-  [],[]),
-("tutorial_3",sf_indoors,"tutorial_3_scene", "bo_tutorial_3_scene", (-100,-100),(100,100),-100,"0",
-  [],[]),
-("tutorial_4",sf_generate,"none", "none", (0,0),(120,120),-100,"0x30000500400360d80000189f00002a8380006d91",
-  [],[], "outer_terrain_plain"),
-("tutorial_5",sf_generate,"none", "none", (0,0),(120,120),-100,"0x3a06dca80005715c0000537400001377000011fe",
-  [],[], "outer_terrain_plain"),
+("dale_village_battlefield_1" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x000000012000050000075dd200003efe00004b34000059be",[],[],"outer_terrain_plain"), # Dale rural area
+("old_tutorial_2",sf_indoors,"tutorial_2_scene", "bo_tutorial_2_scene", (-100,-100),(100,100),-100,"0",[],[]),
+("old_tutorial_3",sf_indoors,"tutorial_3_scene", "bo_tutorial_3_scene", (-100,-100),(100,100),-100,"0",[],[]),
+("old_tutorial_4",sf_generate,"none", "none", (0,0),(120,120),-100,"0x30000500400360d80000189f00002a8380006d91",[],[], "outer_terrain_plain"),
+("old_tutorial_5",sf_generate,"none", "none", (0,0),(120,120),-100,"0x3a06dca80005715c0000537400001377000011fe",[],[], "outer_terrain_plain"),
 
 # some more missing siege scenes
 
@@ -602,8 +598,23 @@ scenes = [
 ("forest_mirkwood4"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
 ("forest_mirkwood5"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
 
+# Non-campaign scenes (these can savely be kept at the end of the file and moved with each extension, whereas campaign scenes are stored within savegame files, for whatever reason)
+# Tutorial Scenes
+("tutorial_1",sf_indoors,"tutorial_1_scene", "bo_tutorial_1_scene", (-100,-100),(100,100),-100,"0",
+  [],[]),
+("tutorial_2",sf_indoors,"tutorial_2_scene", "bo_tutorial_2_scene", (-100,-100),(100,100),-100,"0",
+  [],[]),
+("tutorial_3",sf_indoors,"tutorial_3_scene", "bo_tutorial_3_scene", (-100,-100),(100,100),-100,"0",
+  [],[]),
+("tutorial_4",sf_generate,"none", "none", (0,0),(120,120),-100,"0x30000500400360d80000189f00002a8380006d91",
+  [],[], "outer_terrain_plain"),
+("tutorial_5",sf_generate,"none", "none", (0,0),(120,120),-100,"0x3a06dca80005715c0000537400001377000011fe",
+  [],[], "outer_terrain_plain"),
+
+#Moria custom mission
 ("erebor_castle_2",sf_indoors ,"erebor_throne_room_b", "bo_erebor_throne_room_b", (-40,-40),(40,40),-100,"0",[],["player_chest"]), 
 
+#Ghost custom mission
 ("random_scene_plain_forest_custom_5",sf_generate,"none", "none", (0,0),(240,240),-0.5,"0x00000000bc618a63000d234800004a3e00005cd6000045cc",
   [],[], "outer_terrain_forest"),
 ]

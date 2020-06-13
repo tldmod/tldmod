@@ -176,10 +176,24 @@ rock 128853214208 2
 small_rock 17184066568 2
  PW_rock_a  bo_PW_rock_a
  PW_rock_b  bo_PW_rock_b
-rock_snowy 4194304 3
- rock_snowy_a  bo_rock_snowy_a
- rock_snowy_b  bo_rock_snowy_b
- rock_snowy_c  bo_rock_snowy_c
+rock_mossy_big_zf 4194304 3
+ zf_rock_big_1  bo_rock_snowy_a
+ zf_rock_big_2  bo_rock_snowy_b
+ zf_rock_big_3  bo_rock_snowy_c
+rock_mossy_med_zf 4194304 6
+ zf_rock_medium_1  bo_rock_snowy_a
+ zf_rock_medium_2  bo_rock_snowy_b
+ zf_rock_medium_3  bo_rock_snowy_c
+ zf_rock_medium_4  bo_rock_snowy_a
+ zf_rock_medium_5  bo_rock_snowy_b
+ zf_rock_medium_6  bo_rock_snowy_c
+rock_mossy_group_zf 4194304 6
+ zf_small_rock_group_1  0
+ zf_small_rock_group_2  0
+ zf_small_rock_group_3  0
+ zf_small_rock_group_4  0
+ zf_small_rock_group_5  0
+ zf_small_rock_group_6  0
 rock_snowy2 4194304 1
  PW_tree_snowy_b  bo_pw_tree_snowy_b
 pw_man_skeleton 0 3
