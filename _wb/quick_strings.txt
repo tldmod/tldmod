@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_an_URUK_HAI^_bred_in an_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_22_wb__dev_^_Bu _rev_22_wb_|_dev_^_Built_2020-06-13_11:22___
+qstr__rev_23_wb__dev_^_Bu _rev_23_wb_|_dev_^_Built_2020-06-15_18:01___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -880,9 +880,9 @@ qstr_Drive_them_back! Drive_them_back!
 qstr_Protect_the_City! Protect_the_City!
 qstr_Forward!_Board_them! Forward!_Board_them!
 qstr_The_Last_Days_of_the_ The_Last_Days_of_the_Third_Age_has_an_Advanced_Siege_AI,_vastly_different_from_Native._All_troops,_including_the_player's,_are_distributed_amongst_different_teams_(Left_Flank_/_Center_/_Right_Flank).^^_The_player_is_then_in_charge_of_commanding_their_team,_while_the_AI_is_in_charge_of_commanding_the_other_teams._This_allows_for_a_smarter,_squad-based,_siege_battles.^^_Starting_troops_and_reinforcements_are_commanded_to_CHARGE_during_the_first_few_seconds_after_deployment._After_that,_your_team_can_be_commanded_again.
+qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}_Defenders:_{reg0}/{reg2}/{reg4}
 qstr_DEBUG:_Attackers_go_ DEBUG:_Attackers_go_back_to_regular_attack_mode
 qstr_DEBUG:_Attackers_do_ DEBUG:_Attackers_do_not_stall_on_ladders_triggered
-qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}_Defenders:_{reg0}/{reg2}/{reg4}
 qstr_Reached_Gauntlet_wav Reached_Gauntlet_wave_{reg1}!
 qstr_Ballista:_out_of_amm Ballista:_out_of_ammo!
 qstr_Ballista:_turn_CURSO Ballista:_turn_CURSOR,_aim_LSHIFT,_shoot_SPACE,_set_fire_T,_exit_F

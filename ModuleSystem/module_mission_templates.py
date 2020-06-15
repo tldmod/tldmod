@@ -4297,7 +4297,7 @@ mission_templates = [ # not used in game
       common_battle_inventory,
 ]),
 
-( "castle_attack_walls_ladder",mtf_battle_mode,-1,
+( "castle_attack_walls_ladder",mtf_battle_mode,-1, #base siege mt
   "You attack the walls of the castle...",
     [
 
@@ -4424,8 +4424,10 @@ mission_templates = [ # not used in game
   ## I added Siege order exception (charge) to attackers for Umbar Camp, so that they do not get stuck on boats.
   ## I also added an exception to Dol Amroth, but this may no longer be needed.
 
+#initial commands
   (3, 0, 0, [(lt,"$telling_counter",3)],[ # need to repeat orders several times for the bitches to listen
     (val_add, "$telling_counter",1),
+	#(display_message, "@initial commands fired"),
     (set_show_messages, 0),
     (assign,":defteam","$defender_team"),
     (assign,":atkteam","$attacker_team"),
@@ -4441,9 +4443,9 @@ mission_templates = [ # not used in game
       (team_give_order, ":defteam", grc_cavalry, mordr_stand_closer),
       (team_set_order_position, ":defteam", grc_infantry, pos10), 
       (team_set_order_position, ":defteam", grc_cavalry, pos10), 
-      #(team_set_order_position, ":atkteam", grc_everyone, pos10), #InVain: Just disable this line if we want attacker infantry to charge and attacker player to command own troops freely.
-	  (team_give_order, ":atkteam", grc_infantry, mordr_charge),
-	  (team_give_order, ":atkteam", grc_cavalry, mordr_charge), #InVain: Let's try this instead. Less prone to attackers getting stuck.
+      (team_set_order_position, ":atkteam", grc_everyone, pos10),
+	  #(team_give_order, ":atkteam", grc_infantry, mordr_charge),
+	  #(team_give_order, ":atkteam", grc_cavalry, mordr_charge),
       (entry_point_get_position, pos10, ":entry2"), #TLD, was 10
       (team_give_order, ":atkteam", grc_archers, mordr_hold),
       (team_set_order_position, ":atkteam", grc_archers, pos10),
@@ -4639,7 +4641,7 @@ mission_templates = [ # not used in game
       (team_give_order, "$defender_team_3", grc_cavalry, mordr_charge),
       (set_show_messages, 1),
       #(display_message,"@Defenders: infantry CHARGE!!"),
-      (ge, "$defender_reinforcement_stage", 14),
+      (ge, "$defender_reinforcement_stage", 18),  #InVain: slightly increased, was 14
       (set_show_messages, 0),
       (team_give_order, "$defender_team"  , grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
       (team_give_order, "$defender_team_2", grc_everyone, mordr_charge),
@@ -4682,7 +4684,7 @@ mission_templates = [ # not used in game
      (try_end),
      (try_begin),
       (eq, "$cheat_mode", 1),
-      (display_message, "@DEBUG: Attackers go back to regular attack mode"),
+      #(display_message, "@DEBUG: Attackers go back to regular attack mode"),
      (try_end),
    ]),
 
@@ -4702,7 +4704,7 @@ mission_templates = [ # not used in game
      (try_end),
      (try_begin),
       (eq, "$cheat_mode", 1),
-      (display_message, "@DEBUG: Attackers do not stall on ladders triggered"),
+      #(display_message, "@DEBUG: Attackers do not stall on ladders triggered"),
      (try_end),
    ]),
   common_battle_check_friendly_kills,
@@ -4718,7 +4720,7 @@ mission_templates = [ # not used in game
      [(try_for_agents, ":agent"),
         (agent_is_alive,":agent"),
         (agent_is_human,":agent"),
-		    (neg|agent_is_defender,":agent"), #InVain: So only attackers get redistributed. I know that this is crude :)
+		    (neg|agent_is_defender,":agent"), #InVain: So only attackers get redistributed. 
         (agent_slot_eq,":agent",slot_agent_arena_team_set,0),
         (store_random_in_range, ":team", 0,3),
         #(try_begin), # when gate breached assign more people to medium team (which is gate oriented)
@@ -4745,11 +4747,9 @@ mission_templates = [ # not used in game
           (agent_set_team, ":agent", ":player_team"),
           #(display_message, "@Adding agent to player team"),
         (try_end),
-    (try_end),
-    ]),
-
+    (try_end),]),													 
   ## This Block checks if chokepoints are taken. (trigger_check_chokepoints)
-  ## We check the troop slot of trp_no_troop (0,1,2) which corresponds to each choke point (entry 41,42,43)
+  ## We check the troop slot of trp_no_troop (defenders: 0,1,2) (attackers: 3,4,5) which corresponds to each choke point (entry 41,42,43)
   ## If we find less than 2 defenders near the chokepoint, we consider that chokepoint taken and the team that is assigned to that choke point is asked to charge.
 
   (10, 0, 0,[(store_mission_timer_a, ":mission_time"), (gt, ":mission_time", 30)], [# check if targets are captured by attackers; only fire after 30 seconds.
@@ -4758,11 +4758,14 @@ mission_templates = [ # not used in game
       (troop_set_slot,"trp_no_troop",":slot",0),
       #(display_message, "@DEBUG: Slot Set to 0"),
     (try_end),
+
+  ## Step 1: Fill up defender and attacker chokepoint slots	
     (try_for_agents, ":agent"),
       (agent_is_alive,":agent"),
       (agent_is_defender,":agent"),
       (agent_get_position, pos0, ":agent"),
       (try_for_range, ":entry",41,44), 
+		#(assign, reg10, ":entry"),
         (store_sub,":slot",":entry",41), #0, 1, 2
         (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # proceed with counting defenders if choke not captured yet
         #(display_message, "@found valid defender"),
@@ -4771,22 +4774,25 @@ mission_templates = [ # not used in game
         (lt,":dist", 500),
         (troop_get_slot,":x","trp_no_troop",":slot"), #+1 defender found
         (val_add, ":x", 1), #Kham - Add this here, to count number of defenders.
-        #(display_message, "@DEBUG: +1 defender found", color_good_news),
+		#(assign, reg11, ":x"),
+        #(display_message, "@DEBUG: entry {reg10}: +1 defender found, total {reg11}", color_good_news),
         (troop_set_slot,"trp_no_troop",":slot",":x"),
       (try_end),
     (else_try),
       (neg|agent_is_defender, ":agent"), #attacker
       (agent_get_position, pos0, ":agent"),
       (try_for_range, ":entry",41,44),
+		#(assign, reg10, ":entry"),
         (store_sub,":slot",":entry",38), #3, 4, 5
-        (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # proceed with counting defenders if choke not captured yet
+        (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # proceed with counting attackers if choke not captured yet
         #(display_message, "@found valid defender"),
-        (entry_point_get_position, pos10, ":entry"), # count defenders in proximity of choke points
+        (entry_point_get_position, pos10, ":entry"), # count attackers in proximity of choke points
         (get_distance_between_positions, ":dist", pos0, pos10),
         (lt,":dist", 800),
         (troop_get_slot,":x","trp_no_troop",":slot"), #+1 attacker found
         (val_add, ":x", 1), #Kham - Add this here, to count number of attacker.
-        #(display_message, "@DEBUG: +1 attacker found", color_good_news),
+		#(assign, reg11, ":x"),
+        #(display_message, "@DEBUG: entry {reg10}: +1 attacker found, total {reg11}", color_good_news),
         (troop_set_slot,"trp_no_troop",":slot",":x"),
       (try_end),
     (try_end),
@@ -4795,26 +4801,46 @@ mission_templates = [ # not used in game
     (get_player_agent_no, ":player_agent"),
     (agent_get_team, ":player_team", ":player_agent"),
 
-    (try_for_range, ":slot",0,3),
-      (neg|troop_slot_ge,"trp_no_troop",":slot",2), #if 0-1 defenders standing -> make attacking team and defender reinfs charge at will (if not > = 2, charge)
+## Step 2: Now, compare slots counts
+    (try_for_range, ":slot",0,3), #defender slots
+		
+		#debug
+		#(store_add, reg10, ":slot", 41), #get entry number
+		#(troop_get_slot, reg11,"trp_no_troop",":slot"), #get number of defenders
+		#(assign, reg11, ":slot"), 
+		#(display_message, "@Entry {reg10}: {reg11} defenders"),
+		
+      
+	  (neg|troop_slot_ge,"trp_no_troop",":slot",2), #if 0-1 defenders standing -> make attacking team and defender reinfs charge at will (if not > = 2, charge)
       (troop_set_slot,"trp_no_troop",":slot",-1),
-      (store_mul,":defteam",":slot",2),(store_add,":atkteam",":defteam",1),
+      (store_mul,":defteam",":slot",2),(store_add,":atkteam",":defteam",1), #this just calls the relevant team numbers from the slot number
       #(assign, reg11, ":defteam"), (assign, reg12, ":atkteam"),
       #(display_message, "@DEBUG: Defender Team - {reg11}; Attacker Team - {reg12}", color_bad_news),
+	  #(display_message, "@No defenders at entry {reg10}: Teams charge"),
       (this_or_next|neq, ":defteam", ":player_team"),
       (             neq, ":atkteam", ":player_team"),
       (team_give_order, ":defteam", grc_everyone, mordr_charge),
       (team_give_order, ":atkteam", grc_everyone, mordr_charge),
-      #(store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"), #sieges work better if archers charge, too
+      (store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"),
+      #(team_give_order, ":atkteam", grc_archers, mordr_spread_out), #discard this order for now, in case they stack
       #(team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
-      #(team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
-      #(team_set_order_position, ":atkteam", grc_archers, pos10),
+																	  
+      (team_set_order_position, ":atkteam", grc_archers, pos10),
       
     (try_end),
 
-    (try_for_range, ":slot_attacker", 3,6),
-      (troop_slot_ge,"trp_no_troop",":slot",3), #if there are 3 attackers in the area, charge.
-      (troop_set_slot,"trp_no_troop",":slot",-1),
+    (try_for_range, ":slot_attacker", 3,6), #attacker slots
+	
+		#debug
+		#(assign, reg12, 0),
+		#(assign, reg13, 0),
+		#(store_add, reg12, ":slot_attacker", 38), #get entry number
+		#(troop_get_slot, reg13,"trp_no_troop",":slot_attacker"), #get number of attackers
+		#(display_message, "@Entry {reg12}: {reg13} attackers"),
+				
+		(troop_slot_ge,"trp_no_troop",":slot_attacker",3), #if there are 3 attackers in the area, charge.
+		#(display_message, "@more than 2 attackers at entry {reg12}, charge."),
+      (troop_set_slot,"trp_no_troop",":slot_attacker",-1),
       (try_begin),
         (eq, ":slot_attacker", 3),
         (assign, ":atkteam", 1),
