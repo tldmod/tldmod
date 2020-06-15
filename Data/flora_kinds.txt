@@ -177,23 +177,29 @@ small_rock 17184066568 2
  PW_rock_a  bo_PW_rock_a
  PW_rock_b  bo_PW_rock_b
 rock_mossy_big_zf 4194304 3
- zf_rock_big_1  bo_rock_snowy_a
- zf_rock_big_2  bo_rock_snowy_b
- zf_rock_big_3  bo_rock_snowy_c
+ zf_rock_big_1  bo_zf_rock_big_1
+ zf_rock_big_2  bo_zf_rock_big_2
+ zf_rock_big_3  bo_zf_rock_big_3
 rock_mossy_med_zf 4194304 6
- zf_rock_medium_1  bo_rock_snowy_a
- zf_rock_medium_2  bo_rock_snowy_b
- zf_rock_medium_3  bo_rock_snowy_c
- zf_rock_medium_4  bo_rock_snowy_a
- zf_rock_medium_5  bo_rock_snowy_b
- zf_rock_medium_6  bo_rock_snowy_c
-rock_mossy_group_zf 4194304 6
+ zf_rock_medium_1  bo_zf_rock_medium_1
+ zf_rock_medium_2  bo_zf_rock_medium_2
+ zf_rock_medium_3  bo_zf_rock_medium_3
+ zf_rock_medium_4  bo_zf_rock_medium_4
+ zf_rock_medium_5  bo_zf_rock_medium_5
+ zf_rock_medium_6  bo_zf_rock_medium_6
+rock_mossy_small_group_zf 4194304 6
  zf_small_rock_group_1  0
  zf_small_rock_group_2  0
  zf_small_rock_group_3  0
  zf_small_rock_group_4  0
  zf_small_rock_group_5  0
  zf_small_rock_group_6  0
+rock_mossy_flagstones_zf 4194304 5
+ zf_flagstones_1  bo_zf_flagstones_1
+ zf_flagstones_2  bo_zf_flagstones_2
+ zf_flagstones_3  bo_zf_flagstones_3
+ zf_flagstones_4  bo_zf_flagstones_4
+ zf_flagstones_5  bo_zf_flagstones_5
 rock_snowy2 4194304 1
  PW_tree_snowy_b  bo_pw_tree_snowy_b
 pw_man_skeleton 0 3
@@ -222,14 +228,10 @@ tree_2 0 2
  tree_2_b  bo_tree_2_b
 tree_3 21479096324 2
  tree_3_a  bo_tree_3_a
-
  tree_3_b  bo_tree_3_b
-
 tree_4 17184064512 2
  tree_4_a  bo_tree_4_a
-
  tree_4_b  bo_tree_4_b
-
 tree_5 300647711744 4
  tree_5_a  bo_tree_5_a
  tree_5_b  bo_tree_5_b
@@ -237,62 +239,39 @@ tree_5 300647711744 4
  tree_5_d  bo_tree_5_d
 tree_6 21479030788 4
  tree_6_a  bo_tree_6_a
-
  tree_6_b  bo_tree_6_b
-
  tree_6_c  bo_tree_6_c
-
  tree_6_d  bo_tree_6_d
-
 tree_7 0 3
  tree_7_a  bo_tree_7_a
  tree_7_b  bo_tree_7_b
  tree_7_c  bo_tree_7_c
 tree_8 17184064516 3
  tree_8_a  bo_tree_8_a
-
  tree_8_b  bo_tree_8_b
-
  tree_8_c  bo_tree_8_c
-
 tree_9 214752560128 3
  tree_9_a  bo_tree_9_a
-
  tree_9_b  bo_tree_9_a
-
  tree_9_c  bo_tree_9_a
-
 tree_10 17184064512 3
  tree_10_a  bo_tree_10_a
-
  tree_10_b  bo_tree_10_a
-
  tree_10_c  bo_tree_10_a
-
 tree_11 17184064516 3
  tree_11_a  bo_tree_11_a
-
  tree_11_b  bo_tree_11_a
-
  tree_11_c  bo_tree_11_a
-
 tree_12 17184063488 3
  tree_12_a  bo_tree_12_a
-
  tree_12_b  bo_tree_12_b
-
  tree_12_c  bo_tree_12_c
-
 tree_14 4194304 3
  tree_14_a  bo_tree_14_a
-
  tree_14_b  bo_tree_14_b
-
  tree_14_c  bo_tree_14_c
-
 tree_15 274882101248 3
  tree_15_a  bo_tree_15_a
-
  tree_15_b  bo_tree_15_b
 
  tree_15_c  bo_tree_15_c

@@ -324,7 +324,7 @@ fauna_kinds = [
    ['zf_rock_medium_5', 'bo_zf_rock_medium_5'],
    ['zf_rock_medium_6', 'bo_zf_rock_medium_6'],]),
    
- ('rock_mossy_group_zf',
+ ('rock_mossy_small_group_zf',
   fkf_tree,
   [['zf_small_rock_group_1', '0'],
    ['zf_small_rock_group_2', '0'],
@@ -332,6 +332,14 @@ fauna_kinds = [
    ['zf_small_rock_group_4', '0'],
    ['zf_small_rock_group_5', '0'],
    ['zf_small_rock_group_6', '0']]),
+   
+ ('rock_mossy_flagstones_zf',
+  fkf_tree,
+  [['zf_flagstones_1', 'bo_zf_flagstones_1'],
+   ['zf_flagstones_2', 'bo_zf_flagstones_2'],
+   ['zf_flagstones_3', 'bo_zf_flagstones_3'],
+   ['zf_flagstones_4', 'bo_zf_flagstones_4'],
+   ['zf_flagstones_5', 'bo_zf_flagstones_5'],]),
   
 # ('rock_snowy', #actual snowy pines
 #  fkf_tree,

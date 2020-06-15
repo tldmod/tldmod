@@ -1,4 +1,4 @@
-187
+188
 grass 6442469687300 6
  PW_grass_yellow_e  0
  PW_grass_a_xx  0
@@ -202,7 +202,7 @@ rock_mossy_med_zf 4194304 6
  0 0
  zf_rock_medium_6  bo_zf_rock_medium_6
  0 0
-rock_mossy_group_zf 4194304 6
+rock_mossy_small_group_zf 4194304 6
  zf_small_rock_group_1  0
  0 0
  zf_small_rock_group_2  0
@@ -214,6 +214,17 @@ rock_mossy_group_zf 4194304 6
  zf_small_rock_group_5  0
  0 0
  zf_small_rock_group_6  0
+ 0 0
+rock_mossy_flagstones_zf 4194304 5
+ zf_flagstones_1  bo_zf_flagstones_1
+ 0 0
+ zf_flagstones_2  bo_zf_flagstones_2
+ 0 0
+ zf_flagstones_3  bo_zf_flagstones_3
+ 0 0
+ zf_flagstones_4  bo_zf_flagstones_4
+ 0 0
+ zf_flagstones_5  bo_zf_flagstones_5
  0 0
 rock_snowy2 4194304 1
  PW_tree_snowy_b  bo_pw_tree_snowy_b
