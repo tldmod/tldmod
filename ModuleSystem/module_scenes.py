@@ -277,16 +277,16 @@ scenes = [
 ("east_osgiliath_siege",sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
 ("cirith_ungol_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000002200e95140006398d0000372f00004a8900005ff2",[],[],"outer_terrain_rohan"),
 # various battlefield scenes, use these slots for future sieges
-#("battlefield1" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
-("battlefield2" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield3" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"outer_terrain_plain"),
-("battlefield4" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield5" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield6" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield7" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"),
-("battlefield8" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b0190c8080058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"),
-("battlefield9" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
-("battlefield10",sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
+("custom_1" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000230000500000691a4000009e100004b34000070b7",[],[],"outer_terrain_plain"), #plain big
+("custom_2" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000130000500000691a4000009e100004b34000070b7",[],[],"outer_terrain_plain"), #plain med
+("custom_3" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001300005000003d8f600003efe00004b34000059be",[],[],"outer_terrain_plain"), #plain small
+("custom_4" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000220000500000691a40000065c00004b34000070b7",[],[],"outer_terrain_rohan"), 	#steppe big
+("custom_5" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000120000500000691a40000065c00004b34000070b7",[],[],"outer_terrain_rohan"),	#steppe med
+("custom_6" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001200005000003d8f600003efe00004b34000059be",[],[],"outer_terrain_rohan"),	#steppe small
+("custom_7" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002b0000500000691a40000065c00004b3400000dfd",[],[],"outer_terrain_forest"),	#forest big
+("custom_8" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b0000500000691a40000065c00004b34000039d4",[],[],"outer_terrain_forest"),	#forest med
+("custom_9" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b00005000003d8f60000442500004b340000152d",[],[],"outer_terrain_forest"),	#forest small
+#("battlefield10",sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
 ("small_ford"   ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 ("rivercross"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000030081763000989a20000338e00004f2c00005cfb",[],[],"outer_terrain_plain"),
 
@@ -384,7 +384,7 @@ scenes = [
 
 #CC: Scenes for lost spears quest (based on moria)
 
-("underground_warehouse",sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005000004a92a00000f768000576c00001d2c",[],["player_chest"]),
+("underground_warehouse" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_plain"),
 ("amath_dollen_fortress",sf_generate,"none","none",(0,0),(90,90),-0.5,"0x000000025c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_flat"),
 
 ("mirkwood_ambush"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
