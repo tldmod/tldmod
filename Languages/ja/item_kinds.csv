@@ -67,15 +67,12 @@ itm_wargarmored_2c|重装ワーグ
 itm_wargarmored_3a|重装ワーグ
 itm_warg_reward|巨大ワーグ
 itm_tree_trunk_club_a|木の幹
-
 itm_giant_mace|巨大メイス
 itm_troll_shield_a|トロルの盾
 itm_arrows|矢
 itm_gondor_arrows|ゴンドールの矢
 itm_orc_javelin|オークの投げ大槍
 itm_khergit_arrows|ロヒアリムの矢
-
-
 itm_harad_arrows|ハラドリムの矢
 itm_corsair_arrows|海賊の矢
 itm_ithilien_arrows|イシリアンの矢
@@ -91,7 +88,6 @@ itm_splinted_greaves|鉄板を張ったすね当て
 itm_white_tunic_a|市民の服
 itm_rohan_shoes|革靴
 itm_furry_boots|毛皮のブーツ
-
 itm_black_tunic|黒のチュニック
 itm_hood_black|黒い頭巾
 itm_hood_green|緑の頭巾
@@ -137,8 +133,6 @@ itm_loss_throwing_axes|ロスサールナッハの投げ斧
 itm_arnor_helm_a|アルノールの兜
 itm_arnor_helm_b|アルノールの兜
 itm_arnor_helm_c|アルノールの兜
-
-
 itm_dunedain_helm_b|アルノールの細工入り兜
 itm_arnor_armor_a|アルノールの鎧
 itm_arnor_armor_b|アルノールの鎧
@@ -150,10 +144,6 @@ itm_arnor_greaves|アルノールのすね当て
 itm_arnor_splinted|アルノールの補強されたすね当て
 itm_arnor_shield_a|アルノールの盾
 itm_arnor_shield_c|アルノール騎兵の盾
-
-
-
-
 itm_arnor_sword_a|アルノールのバスタードソード
 itm_arnor_sword_c|アルノールのバスタードソード
 itm_arnor_sword_f|アルノールの短剣
@@ -165,8 +155,8 @@ itm_riv_shield_a|裂け谷の盾
 itm_riv_shield_b|裂け谷の盾
 itm_riv_bas_sword|裂け谷のバスタードソード
 itm_riv_1h_sword|裂け谷の剣
-itm_riv_riding_sword|裂け谷騎兵の剣
-itm_riv_archer_sword|裂け谷弓兵の剣
+; itm_riv_riding_sword|Rivendell Longsword
+; itm_riv_archer_sword|Rivendell Short Sword
 itm_riv_spear|裂け谷の槍
 itm_riv_light|裂け谷のチュニック
 itm_riv_leather|裂け谷の皮鎧
@@ -196,19 +186,13 @@ itm_gondor_ranger_hood_mask|ゴンドール野伏の頭巾
 itm_gondor_light_greaves|ゴンドールの革のすね当て
 itm_gondor_med_greaves|ゴンドールのすね当て
 itm_gondor_heavy_greaves|ゴンドールの鎖のすね当て
-
-
 itm_gondor_infantry_helm|ゴンドール歩兵の兜
 itm_gondor_auxila_helm|ゴンドールの軽装兜
-
-
 itm_gondorian_archer_helm|ゴンドール弓兵の兜
 itm_tower_archer_helm|塔の弓兵の兜
 itm_gondor_leader_helm|ゴンドールの上級兜
 itm_tower_guard_helm|塔近衛兵の兜
 itm_gondor_citadel_knight_helm|城塞の騎士の兜
-
-
 itm_gondor_knight_helm|ゴンドール騎兵の兜
 itm_gondor_dolamroth_helm|ドル・アムロスの兜
 itm_swan_knight_helm|白鳥の騎士の兜
@@ -292,11 +276,6 @@ itm_lorien_archer|ローリエン弓兵の鎧
 itm_lorien_armor_a|ローリエンのキルトの鎧
 itm_lorien_armor_b|ローリエンの鎖かたびらの鎧
 itm_lorien_armor_c|ローリエンのスケイル鎧
-
-
-
-
-
 itm_lorien_boots|ロスローリエンのブーツ
 itm_lorien_shield_b|ローリエンの大盾
 itm_lorien_shield_c|ローリエンのカイト盾
@@ -304,14 +283,10 @@ itm_lorien_round_shield|ローリエンの丸盾
 itm_lorien_helm_a|ローリエン弓兵の兜
 itm_lorien_helm_b|ローリエン弓兵の兜
 itm_lorien_helm_c|ローリエン歩兵の兜
-
-
 itm_orc_coif|オークの帽子
 itm_orc_greaves|オークの鎖ブーツ
 itm_orc_ragwrap|オークのぼろ布
 itm_orc_furboots|オークの毛皮ブーツ
-
-
 itm_orc_tribal_a|剥いだだけの皮
 itm_orc_tribal_b|剥いだだけの皮
 itm_orc_tribal_c|剥いだだけの皮
@@ -347,7 +322,6 @@ itm_isen_uruk_helm_c|ウルク＝ハイの兜
 itm_isen_uruk_helm_d|ウルク＝ハイキャプテンの兜
 itm_isen_uruk_helm_e|ウルク＝ハイ追跡兵の兜
 itm_isen_uruk_helm_f|ウルク＝ハイ追跡兵の兜
-
 itm_uruk_pike_b|モルドールのパイク
 itm_uruk_falchion_a|ウルクのファルシオン
 itm_uruk_falchion_b|ウルクのファルシオン
@@ -371,7 +345,6 @@ itm_wood_club|木の棍棒
 itm_twohand_wood_club|大きい木の棍棒
 itm_bone_cudgel|骨の棍棒
 itm_skull_club|どくろの棍棒
-
 itm_orc_club_b|ワーグ乗りの棍棒
 itm_orc_club_c|とげつきのオークの棍棒
 itm_orc_club_d|闇のメイス
@@ -674,8 +647,6 @@ itm_dale_billhook|谷間の国のビル
 itm_dale_shield_a|谷間の国の大盾
 itm_dale_shield_b|谷間の国の大盾
 itm_dale_shield_c|谷間の国の丸盾
-
-
 itm_umb_armor_a|海賊の皮のベスト
 itm_umb_armor_b|海賊の革鎧
 itm_umb_armor_c|海賊の軽装スケイル鎧
@@ -718,10 +689,6 @@ itm_dwarf_shield_b|ドワーフの大盾
 itm_dwarf_shield_c|ドワーフの戦闘盾
 itm_dwarf_shield_d|ドワーフの丸盾
 itm_north_round_shield|北国人の丸盾
-
-
-
-
 itm_woodmen_heavy|闇の森の鎧
 itm_dwarf_sword_a|ドワーフの剣
 itm_dwarf_sword_b|ビヨルン一党の短剣
@@ -804,7 +771,6 @@ itm_ring_a_reward|テュルカリシル
 itm_ring_b_reward|フィンワリシル
 itm_dale_bow_reward|バルドの弓
 itm_explosive_reward|アイゼンガルドの地雷
-
 itm_corsair_trident2|海の怒りの三つ又
 itm_crebain_reward|クレバン
 itm_miruvor_reward|ミルヴォールの水筒
@@ -836,11 +802,7 @@ itm_spider|大蜘蛛
 itm_bear|熊
 itm_wolf|狼
 itm_werewolf|巨狼
-
 itm_thrush_reward|ツグミ
-
 itm_gauntlets_reward|鉄の拳
-
 itm_stones_siege|攻城石
-
 itm_beorn_axe_no_attack|ビヨルン一党の斧

@@ -504,16 +504,6 @@ str_casualty_display|自軍犠牲者:{s10}^敵軍犠牲者:{s11}{s12}
 str_casualty_display_hp|^あなたは負傷してヒットポイントを{reg1}失いました。
 str_quest_log_updated|クエストログが更新されました・・・
 str_banner_selection_text|あなたは自分の戦旗をかかげる事を許されました。戦旗はあなたの^地位を表わし、栄誉をもたらします。どの戦旗を選びますか？
-str_retirement_text_1|このままでは資金が底をつくと、 あなたが気が付いた時には、 もう手遅れでした。 なけなしの蓄えもあっという間に使い果たしてしまったあなたは、 必死の金策に走るも、 ことごとく失敗に終わりました。 とうとう{s9}の物乞いに身をやつしたあなたは、 施しと教会からの救済を頼りに生きるのでした。
-str_retirement_text_2|このままでは資金が底をつくと、 あなたが気が付いた時には、 もう手遅れでした。 なけなしの蓄えもあっという間に使い果たして一文無しになったあなたは、 いままでに身に付けた技能を使って、 {s9}の裏通りで、 貧しい市民や女性から小銭を奪い取って生計を立てる、 犯罪者となりました。
-str_retirement_text_3|このままでは資金が底をつくと、 あなたが気が付いた時には、 もう手遅れでした。 なけなしの蓄えもあっという間に使い果たしてしまったあなたは、 無一文の根無し草として、 宿から宿へと流れては、 誰も信じない自身の武辺話を披露し、 太っ腹な客に酒をせびる日々を送るのでした。
-str_retirement_text_4|蓄えこそ長続きしなかったものの、 あなたは{s7}の村の近くに、 いくらかの土地を買う事ができました。 そこであなたは独立した農家としての生活を始め、 のちに{妻/夫}となる人物とも出会いました。 その後、 村の人々はあなたを村の名士として扱うようになり、 村の祭りでは常にあなたは特別扱いされるようになりました。 あなたの冒険物語は酒場や宿屋で幾度も語られ、 さらには世代を超えて、 ずっと語り継がれるのでした。
-str_retirement_text_5|蓄えこそ長続きしなかったものの、 あなたは{s9}に、 ちいさい宿屋を買う事ができました。 始めは客足もまばらだったあなたの宿屋ですが、 すぐに地元の人々の憩いの場となりました。 その後、 あなたの宿屋は多くの人々でにぎわう、 人気の旅館に成長しました。 多くの客が、 旅館の食事と、 あなたの語る有名な冒険物語を目当てに、 遠くからはるばる訪れるのでした。
-str_retirement_text_6|あなたが現役時代に賢く貯め続けていた資金を、 安定した将来のために使う時が今こそやってきました。 {s9}にあるいくつかの店と倉庫を買ったあなたは、 持ち前の商才もあって、 街で一番の商人に成長を遂げました。 裕福な{大旦那/大旦那}となったあなたの大商人としての名声は、 あなたの冒険物語と同じくらい知られるようになるのでした。
-str_retirement_text_7|小さいながらも土地を持つ貴族として、 あなたの未来は保障されています。 あなたは領地のある{s7}にしっかりと根を下ろし、 所有する村や農地の面倒を見て、 地元の裁判を取り仕切ります。 主君に対しては、 家臣として課せられた義務を果たします。 時には主君の遠征軍への召集を受けることもありますが、 それはほんの限られた役割で、 若い頃のような冒険をすることはもうありません。 あなたはもうすでに成功を収めたのです。 自分の館と領地を持ったあなたは、 身の丈を超えた欲を出す事もなく、 不自由のない余生を送ったのでした。
-str_retirement_text_8|あなたが人生の成功者である事に、 疑いの余地はありません。 あなたの所有する広大な領地と冒険で稼いだ富は、 何の不自由もない、 豊かな余生を約束してくれます。 {s8}の貴族に収まったあなたは、 かつての冒険の日々から政治の世界へと転身すると、 あっという間に王国有数の有力者としての地位を築きました。 忙しく策謀をめぐらせ、 領有する森で狩りを楽しみ、 館で晩餐会を開いては自分の武辺話を披露するあなたは、 存分に余生を楽しんだのでした。
-str_retirement_text_9|あなたの功績と忠誠に対する褒賞として、 あなたは主君より、 相続権を持つ、 大貴族の一員に名を連ねる栄誉を与えられました。 {s7}を領有する貴族となったあなたは、 主君が何事においても相談を図る、 重要な側近のひとりとなります。 あなたの名声は少なからぬ政治的引力を持ち、 あなたは大きな権力を持つようになります。 あなたは残された人生を政治の世界に費やすとともに、 広大な領地を経営し、 自身の昔の冒険と栄光の日々を人々に語って過ごすのでした。
-str_retirement_text_10|主君より非常な尊敬を受けているとはいえ、 下賤の出のあなたが、 {s9}{伯爵/伯爵}として大貴族の一員に叙せられた事は、 王国中に大きな波紋を呼びました。 いまやあなたは広大な領土と、 莫大な富を手に入れたのです。 その後まもなく主君の最も重用する相談役として、 ほとんど主君に並ぶほどの権力を手にしたあなたは、 王国運営の実権を握り、 カルラディアで最も力を持つ人物のひとりとして君臨するのでした。
 str_loot_village|罪のない村人を襲う
 str_steal_from_villagers|貧しい村人からものを盗む
 str_rob_caravan|隊商を襲う
@@ -1034,59 +1024,11 @@ str_npc14_honorific|船長
 str_npc15_honorific|ご主人さま
 str_npc16_honorific|将軍
 str_npc17_honorific|隊長
-str_comment_intro_liege_affiliated|私のカルラディアの王位継承に異議を唱え、 みずからが王になろうという連中がおる。 聞いたところでは、 おぬしはそのうちのひとりに忠誠を誓ったそうだな。 まあ、 おぬしの話だけは聞いてやろう。
-str_comment_intro_famous_liege|おぬし、 ずいぶんと名を上げておるようだな！ その武勇にふさわしい主君を持つべき時が来たのではないか？
-str_comment_intro_famous_martial|おぬし、 ずいぶんと名を上げておるようだな！ 一度、 手合わせ願いたいのう。 闘技会でも、 戦場でも良いぞ！
-str_comment_intro_famous_badtempered|おぬしの名は聞いた事がある。 私はごちゃごちゃと言葉を交わすのは好まぬ。 もし言いたい事があるのなら言うがいい。
-str_comment_intro_famous_pitiless|おぬしの名は知っておる。 耳にした者の心に、 戦慄をもたらす名だ。 素晴らしい。 一度、 ゆっくりと話をしようではないか。
-str_comment_intro_famous_cunning|ほう、 これはこれは。 ようやく会えたな。 おぬしは好ましい{男/女}のようだ。 お互い仲良くしようではないか。
-str_comment_intro_famous_sadistic|おぬしの名は知っておる。 聞いたところによると、 おぬしの名を呪う未亡人は少なくないようだ。 悪くない。
-str_comment_intro_famous_goodnatured|おぬしの名は存じておるぞ！ かねがね、 おぬしに会いたいと願っていた。
-str_comment_intro_famous_upstanding|おぬしの名は知っている。 聞いたところでは、 最も勇敢な戦士と呼ばれているらしいな。 勇猛さを誇るのも良いが、 名誉を重んじ、 情けを知る事も大事であるぞ。
-str_comment_intro_noble_liege|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がないな。 私は私に仕えるにふさわしい、 信頼のおける、 実績のある者を常に探しておるぞ。
-str_comment_intro_noble_martial|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がないな。 一度、 手合わせ願いたいのう。 闘技会でも、 戦場でも良いぞ！
-str_comment_intro_noble_badtempered|おぬしの掲げるその戦旗にある紋章、 私は見た事がない。 どうやら我が国に、 またひとりよそ者が増えたようだな。
-str_comment_intro_noble_pitiless|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がない。 どうせ戦場に残った金目の物を漁る、 ハゲワシであろう！
-str_comment_intro_noble_cunning|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がない。 だが、 いづれ偉大な戦士となる可能性のある{男/女}と面識を持っておくのは、 悪い事ではあるまい。
-str_comment_intro_noble_sadistic|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がない。 思い上がった下賤の牛泥棒の{息子/娘}といったところか？ それともその戦旗は盗んだものか？
-str_comment_intro_noble_goodnatured|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は私の記憶にない。 {将軍/将軍}殿、 私の無知を詫びよう！ お会いできて光栄だ。
-str_comment_intro_noble_upstanding|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は私の記憶にない。 おおかた、 富と栄誉を求めてカルラディアへやって来たのであろう。 もしそうなら、 おぬしにはぜひ、 戦争に巻き込まれる者たちへの哀れみの心を持って頂きたい。
-str_comment_intro_common_liege|おぬしは確かに平民の生まれかも知れぬが、 私は私に仕えるにふさわしい、 信頼のおける、 実績のある者を常に探しておるぞ。
-str_comment_intro_common_martial|おぬしは確かに平民の生まれかも知れぬが、 勇猛なる{男/女}として名を上げさえすれば、 私は喜んで相手してやろう。 闘技会でも、 戦場でも良いぞ。
-str_comment_intro_common_badtempered|何か言うべき事があるのなら、 さっさと吐き出すがいい。 私は傭兵風情を相手におしゃべりをする暇などないのだ。
-str_comment_intro_common_pitiless|見たところ、 おぬしは傭兵か。 この地の混乱を嗅ぎつけたハゲワシがまた一羽、 流れてきたというわけだな。
-str_comment_intro_common_cunning|ほほう・・・ おぬしの名は聞いた事がないが、 なかなかモノになりそうな{男/女}ではないか。 いづれ{勇者/勇者}として名を上げるのかも知れぬな。
-str_comment_intro_common_sadistic|いつもなら私の前に乱入してくる厚かましい平民など、 のど笛をかき切ってやるのだが、 私は今日は機嫌が良い。
-str_comment_intro_common_goodnatured|ふむ、 おぬしは好ましい人物のように見えるな。
-str_comment_intro_common_upstanding|おぬしに平穏あれ。 武勇と情け、 それに勇気と名誉。 これらは、 どれが欠けてもいけないという事を、 肝に銘じておくがいい。
-str_comment_you_raided_my_village_enemy_benevolent|おぬし、 我が庇護下にある{s51}の村に住む、 罪もない農民たちを襲ったそうだな。 この手で成敗してくれる！
-str_comment_you_raided_my_village_enemy_spiteful|おぬし、 我が{s51}の村を襲って破壊行為に及んだあげく、 住民たちを殺したそうだな。 その罪は、 おぬしの血でもって償ってもらうぞ！
-str_comment_you_raided_my_village_enemy_coldblooded|おぬし、 我が{s51}の村を襲って破壊行為に及んだあげく、 住民たちを殺したそうだな。 私の資産に手を出せばどうなるのか、 おぬしに思い知らせてやろう。
-str_comment_you_raided_my_village_enemy|おぬし、 我が{s51}の村を襲って破壊行為に及んだあげく、 住民たちを殺したそうだな。 おぬしの犯した罪を、 償ってもらうぞ！
-str_comment_you_raided_my_village_unfriendly_spiteful|おぬし、 我が{s51}の村を襲ったそうだな。 今度やったら、 おぬしのはらわたを、 引きずり出してくれる。
-str_comment_you_raided_my_village_friendly|おぬし、 我が{s51}の村を襲ったそうだな。 我々の友情も、 これまでかのう。
-str_comment_you_raided_my_village_default|おぬし、 我が{s51}の村を襲ったそうだな。 おぬしがそのつもりなら、 私にも考えがある。
-str_comment_you_robbed_my_village_enemy_coldblooded|おぬし、 我が{s51}の村の住人に対して、 略奪を働いたそうだな。 これは私に対する挑戦と見てよいな。
-str_comment_you_robbed_my_village_enemy|おぬし、 我が{s51}の村の罪もない農民に対して、 略奪を働いたそうだな。 その罪の深さを、 思い知らせてくれよう！
-str_comment_you_robbed_my_village_friendly_spiteful|おぬし、 我が{s51}の住人から食料を盗んだそうだな。 多少は多目にみてやるが、 あの連中の陳情をいちいち聞いてやらねばならないのは、 私だという事を忘れるなよ。
-str_comment_you_robbed_my_village_friendly|おぬし、 我が{s51}の住人たちから、 食料を徴発したらしいな。 それほど切羽詰まっておったわけでもなかろう。
-str_comment_you_robbed_my_village_default|おぬし、 我が{s51}の村の住人から盗みを働いたらしいな。 おぬしがそのつもりなら、 私にも考えがある。
-str_comment_you_accosted_my_caravan_enemy|おぬし、 私の隊商から金を巻き上げておるらしいな。 図に乗るのもいいかげんにしてもらおう。
-str_comment_you_accosted_my_caravan_default|おぬし、 私の隊商から金を巻き上げておるらしいな。 許しがたい蛮行だ。
-str_comment_you_helped_villagers_benevolent|おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 礼を言う。 私は領主として何もしてやれなかった。
-str_comment_you_helped_villagers_friendly_cruel|聞いたところによると、 おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 おぬしに悪気はないのであろうが、 私の権威を低下させるような行いは、 遠慮してもらいたい。
-str_comment_you_helped_villagers_friendly|おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 文句をつけるつもりはない。 時勢は厳しく、 おぬしにも悪気はないのであろうからな。
-str_comment_you_helped_villagers_unfriendly_spiteful|聞いたところによると、 おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 どういうつもりなのかは知らぬが、 余計な事はしないでもらいたい。
-str_comment_you_helped_villagers_cruel|聞いたところによると、 おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 我が民が苦しい時に助けの手を差し伸べるのは、 彼らの領主である私の務めである。 おぬしには私の権威を傷つけるような行いは、 慎んでもらいたい。
-str_comment_you_helped_villagers_default|聞いたところによると、 おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 時勢は厳しく、 おぬしにも悪気はないのであろうが、 彼らを甘やかすのは慎んでもらいたい。 彼らの領主は私だ。 我が民がよそ者の助けを求めるような事は、 好ましいとは言えぬ。
 str_comment_you_captured_a_castle_allied_friendly|おぬし、 {s51}を落としたそうだな。 偉業だ。 友として、 私も誇らしい！
 str_comment_you_captured_a_castle_allied_spiteful|おぬし、 {s51}を落としたそうだな。 よくやった！ この調子でやつらの要塞すべてを踏み荒らし、 財宝を根こそぎ奪い、 悲嘆にくれる未亡人どもをはべらせ、 葡萄酒を楽しもうではないか。
 str_comment_you_captured_a_castle_allied_unfriendly_spiteful|おぬし、 {s51}を落としたそうだな。 まあ、 運の良い日というのは誰にでもあるそうな。 せいぜい今のうちに、 最後となるかも知れぬ勝利の味を、 かみしめておくがいい。
 str_comment_you_captured_a_castle_allied_unfriendly|おぬし、 {s51}を落としたそうだな。 我らの間にはわだかまりもあるが、 今日のところは、 素直におぬしの勝利を祝福しよう。
 str_comment_you_captured_a_castle_allied|おぬし、 {s51}を落としたそうだな。 ついにやつらを追い出してやったわ！
-str_comment_you_captured_my_castle_enemy_spiteful|私の留守を狙って{s51}を襲ったのは、 おぬしらしいな。 牢獄で自分の愚かさを嘆くがいい。
-str_comment_you_captured_my_castle_enemy_chivalrous|おぬしの居座る{s51}は、 私の正統なる領地だ。 必ずや、 取り戻してくれる！
-str_comment_you_captured_my_castle_enemy|おぬしの居座る{s51}は、 本来ならば私の領地だ。 きっと返してもらうぞ。
 str_comment_we_defeated_a_lord_unfriendly_spiteful|我々の{s54}戦の勝利を祝って 祝杯でも挙げようと考えているのなら、 やめておけ。 おぬしがいままでに犯した不義の行いの数々は、 あの程度で拭いとれるものではないのだからな。
 str_comment_we_defeated_a_lord_unfriendly|{s54}戦でおぬしと共に戦った事は決して忘れないが、 我々の間にあるわだかまりもまた、 決して忘れる事はできない。
 str_comment_we_defeated_a_lord_cruel|あの{s54}との戦いは、我々の大勝利であったな？ 敵勢を丸ごとからすの餌にしてくれたわ！
@@ -1154,10 +1096,6 @@ str_comment_you_defeated_my_friend_enemy_pragmatic|おぬし、 {s54}を打ち�
 str_comment_you_defeated_my_friend_enemy_chivalrous|おぬしが{s54}を打ち倒したと聞いて以来、 おぬしと剣を交えるのを楽しみにしておった。
 str_comment_you_defeated_my_friend_enemy_spiteful|{playername}、 おぬしは名ばかりが先行しておるようだ。 {s54}はおぬしの巧妙な罠にはめられたようだが、 私はそうはいかぬぞ
 str_comment_you_defeated_my_friend_enemy|{s54}を倒したのは、 おぬしらしいな。 私はそう簡単には倒せぬぞ。
-str_comment_you_captured_a_lord_allied_friendly_spiteful|おぬし、 {s54}を捕らえたそうだな。 あやつからは、 身代金をたっぷりとしぼりとってやるがよい。
-str_comment_you_captured_a_lord_allied_unfriendly_spiteful|おぬし、 {s54}を捕らえたそうだな。 おぬしの金庫は、 やつの身代金でさぞかし潤ったであろう。 まあ、 金があったところで、 下賎の者は下賎のままだがな！
-str_comment_you_captured_a_lord_allied_chivalrous|おぬし、 {s54}を捕らえたそうだな。 よくやった。 無論、 あの者には身分に相応の待遇を与えているのであろうな。
-str_comment_you_captured_a_lord_allied|おぬし、 {s54}を捕らえたそうだな。 でかした。 奴ならば、 身代金をたっぷり取れるだろうな。
 str_comment_you_let_go_a_lord_allied_chivalrous|おぬし、 {s54}を捕らえたにもかかわらず、 逃がしてやったらしいな。 見上げたものだ。 我が軍の誇りと言えよう。
 str_comment_you_let_go_a_lord_allied_upstanding|おぬし、 {s54}を捕らえたにもかかわらず、 逃がしてやったらしいな。 見上げたものだが、 危険な行為でもあるぞ。
 str_comment_you_let_go_a_lord_allied_coldblooded|おぬし、 {s54}を捕らえたにもかかわらず、 逃がしてやったらしいな。 見上げた騎士道精神と言えるのかも知れぬが、 騎士道精神で戦争に勝てると考えているのなら、 大間違いだ。
@@ -1168,33 +1106,6 @@ str_comment_you_let_me_go_enemy_chivalrous|このあいだは、 おぬしの情
 str_comment_you_let_me_go_enemy_coldblooded|このあいだは、 おぬしの情けによってこの身は逃がされた。 だが、 お互い敵同士なのは変わらぬ。 私に同じ情けを期待してもらっては困るぞ。
 str_comment_you_let_me_go_enemy|このあいだは、 おぬしの情けによってこの身は逃がされた。 その事については、 感謝しよう。 だが、 我々はいまだ交戦中なのだ。
 str_comment_you_let_me_go_default|このあいだは、 おぬしの情けによってこの身は逃がされた。 おぬしの寛大な処置には感謝する。 我々両国間の争いが止んだのは、 喜ばしい。
-str_comment_pledged_allegiance_allied_martial_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 卑怯な行いをして、 我らの名をおとしめるような事のないように願いたい。
-str_comment_pledged_allegiance_allied_martial|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 おぬしと共に敵を打ち破るのを、 楽しみにしておるぞ。
-str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 フン。 私の邪魔だけはするなよ。
-str_comment_pledged_allegiance_allied_quarrelsome|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 敵によく当たり、 目上を敬い、 そして私に逆らう事のないようにな。 それさえ心がければ、 おぬしもうまくやっていけるだろう。
-str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 皿洗いを雇うにしても、 もう少しましな者はあるであろうにな。
-str_comment_pledged_allegiance_allied_selfrighteous|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 勇敢に戦えば、 じゅうぶん報奨されるであろう。 もし我らを裏切るような事があれば、 みせしめとして世に語り継がれるような目にあわせてくれよう。
-str_comment_pledged_allegiance_allied_cunning_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 率直に言って、 おぬしのような者を我が陣営に置くのはどうかと思うが、 まあ敵陣にあるよりはましなのかも知れぬ。
-str_comment_pledged_allegiance_allied_cunning|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 よくぞ決断した。 この困難な時代には、 優秀な戦士は多ければ多いほどいい。 おぬしには注目しておるぞ。
-str_comment_pledged_allegiance_allied_debauched_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 おぬしが将来、 裏切りを働くのは間違いない。 裏切り者として死ぬおぬしを見るのは、 楽しみだ。
-str_comment_pledged_allegiance_allied_debauched|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 素晴らしい・・・ 我々はうまくやっていけるだろう。 だが、 これだけは肝に銘じておくがいい。 もし我らを裏切れば、 かならず後悔する事になろう。
-str_comment_pledged_allegiance_allied_goodnatured_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 おぬしを信用する気には到底なれぬが、 それもおぬしの魅力のうちなのであろうな。
-str_comment_pledged_allegiance_allied_goodnatured|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 見所のある{男/女}よな！ 高貴なる心をお持ちの陛下は、 勇猛かつ忠実な者への褒賞を惜しむ事がないぞ。
-str_comment_pledged_allegiance_allied_upstanding_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 おぬしについては、 あまり良い評判は聞かぬが、 評判など今後の働き次第でどうにでもなる。 期待しておるぞ。
-str_comment_pledged_allegiance_allied_upstanding|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 勇気をもって敵に当たるのは当然のことながら、 おぬしには名誉と哀れみの心も忘れないでもらいたい。 戦場においては、 勇名とは磨き上げた剣や、 選りすぐりの駿馬に勝るとも劣らぬ価値があるのだ。
-str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 領民は甘やかすとつけ上がる！ 覚えておけ。
-str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 おぬしの出世は喜ばしい。 だが気をつけろ。 人間というものは、 他人が富を手に入れる事をねたましく思っては、 その横取りを狙う、 毒蛇なのだ。 何かあったら、 遠慮なく私を頼るがいい。 喜んで面倒を見て進ぜよう。
-str_comment_our_king_granted_you_a_fief_allied_friendly|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 おぬしの領地が栄る事を祈ろう。
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 絶頂の後に来るのは転落、 とならないように気をつけるのだな。
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 まあ、 どうせおぬしなど、 その身が膨れ上がるほど、 元来た肥溜めへと転落するのが早まるクチであろう。
-str_comment_our_king_granted_you_a_fief_allied_spiteful|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 陛下のご好意を裏切るような事がなければいいがな。
-str_comment_our_king_granted_you_a_fief_allied|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 おぬしは、 順調に出世しておるようだな。
-str_comment_you_renounced_your_alliegance_enemy_friendly|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 戦場でおぬしと敵味方に分れなければならないとは、 つらいことだ。
-str_comment_you_renounced_your_alliegance_friendly|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 お互い戦場では顔を合わせたくないものだな。
-str_comment_you_renounced_your_alliegance_unfriendly_spiteful|常々、 おぬしは{s54}陛下を裏切ると考えておったが、 やはりというべきか。 おぬしには、 裏切り者にふさわしい死をくれてやろう！
-str_comment_you_renounced_your_alliegance_unfriendly_moralizing|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 これでは、 おぬしの事を裏切り者と考えざるを得ない。
-str_comment_you_renounced_your_alliegance_enemy|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 世の常とはいえ、 昨日の戦友が今日の敵とはな。
-str_comment_you_renounced_your_alliegance_default|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 それがおぬしの選ぶ道ならば致し方あるまいが、 戦場で出会っても、 私に手加減など期待してくれるなよ。
 str_personality_archetypes|君主
 str_martial|軍人
 str_quarrelsome|短気

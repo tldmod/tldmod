@@ -33,27 +33,6 @@ qstr_Gauntlet_wave:_1|Oleada de refuerzos: 1
 qstr_Gauntlet_wave:_{reg1|Oleada de refuerzos: {reg1}
 qstr_Remain_in_retirement|Terminar la aventura y continuar en retiro.
 qstr_Go_back_to_the_adven|Volver a la aventura.
-qstr_You_have_retired_at_|Te has retirado al nivel {reg4} tras {reg5} días de aventuras.
-qstr_Effect_on_Score|Efecto en la puntuación
-qstr_Settlements_owned_by|Vuestros asentamientos: {reg0}
-qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
-qstr_Friendly_Settlements|Asentamientos aliados: {reg0}
-qstr_Hostile_Settlements:|Asentamientos hostiles: {reg0}
-qstr_{reg0}|{reg0}
-qstr_Friendly_Lords:_{reg|Señores aliados: {reg0}
-qstr_Enemy_Lords:_{reg0}|Señores enemigos: {reg0}
-qstr_Victories:_{reg0}|Victorias: {reg0}
-qstr_Defeats:_{reg0}|Derrotas: {reg0}
-qstr_Quests_Completed:_{r|Misiones Completadas: {reg0}
-qstr_Companions_Found:_{r|Compañeros Encontrados: {reg0}
-qstr_Companions_Lost/Depa|Compañeros perdidos/retirados: {reg0}
-qstr_Wealth:_{reg0}_denar|Riqueza: {reg0} monedas en recursos
-qstr_Inventory:_{reg0}_de|Inventario: {reg0} monedas
-qstr_Experience:_{reg0}|Experiencia: {reg0}
-qstr_Days_Passed:_{reg0}|Días transcurridos: {reg0}
-qstr_Difficulty:_{reg0}%|Dificultad: {reg0}%
-qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
-qstr_TOTAL_SCORE:_{reg0}|PUNTUACIÓN TOTAL: {reg0}
 qstr_A_peaceful_village_n|En una pacífica aldea no lejos del Folde Oeste...
 qstr_The_War_is_upon_Roha|¡La Guerra ha llegado a Rohan!
 qstr_Minas_Tirith___The_W|Minas Tirith; La Ciudad Blanca
@@ -180,7 +159,8 @@ qstr_Useful_Tool_of_{s5}|Instrumento útil de {s5}
 qstr_Servant_of_{s5}|Sirviente de {s5}
 qstr_Unknown_to_{s5}|Desconocido para {s5}
 qstr_You_have_been_{reg1?|¡Te han {reg1?ascendido:degradado} a {s24} ({reg0})!
-qstr_You_{reg1?earned:los|Has {reg1?ganado:perdido} {reg11} puntos de rango {reg12?y {reg12} de influencia :} con {s11}.
+qstr_You_{reg1?earned:los|Has {reg1?ganado:perdido} {reg11} puntos de rango {reg12?y {reg12} de influencia :}con tu facción de origen; {s11}.
+qstr_You_{reg1?earned:lost|Has {reg1?ganado:perdido} {reg11} puntos de rango {reg12?y {reg12} de influencia :}con {s11}.
 qstr_You_spent_{reg10}_of|Has gastado {reg10} de tu influencia con {s1}, te quedan {reg11}.
 qstr_Troop_upkeep:|Mantenimiento de Tropas:
 qstr_{s11}_and_{s10}|{s11} y {s10}
@@ -250,8 +230,7 @@ qstr_nothing|Nada
 qstr_Good|Bien
 qstr_Med|Normal
 qstr_Bad|Mal
-qstr_{s77}_received_{reg8|{s77} ha recibido {reg84} puntos adicionales de experiencia.
-qstr_You_gained_{reg84}_i|Has ganado {reg84} experiencia por bonif. de Inteligencia
+qstr_You_gained_{reg84}_e|Has ganado {reg84} puntos de experiencia gracias a tu inteligencia.
 qstr_{reg4}_killed_{reg5}|{reg4} muertos, {reg5} heridos, {reg6} huidos
 qstr_{reg4}_killed_{reg5}_|{reg4} muertos, {reg5} heridos
 qstr_{reg4}_killed_{reg5}_r|{reg4} muertos, {reg5} huidos
@@ -619,7 +598,6 @@ qstr_mounted_archer|arqueros montados
 qstr_support|apoyo
 qstr_bodyguard|guardaespaldas
 qstr_undetermined_type_of|tipo indeterminado
-
 qstr_{s1}_has_fled_the_ba|¡{s1} ha huido de la batalla!
 qstr_Your_troops_are_at_{|¡Tus tropas tienen un {reg1}% de cohesión (+{reg3}% de bonificación), los enemigos tienen un {reg2}%!
 qstr_Morale_of_your_troop|¡La moral de tus tropas flaquea!
@@ -647,12 +625,9 @@ qstr_have_won_the_sea_bat|han ganado la batalla naval, desmoralizando a tus trop
 qstr_loses_Faction_Strength|pierde fuerza de facción debido a un asalto destructivo.
 qstr_loses_Faction_Strength_|pierde fuerza de facción debido a tus éxitos navales.
 qstr_You_spent_{reg67}_of|Gastas {reg67} de tu influencia con {s1}, te quedan {reg66}.
-
 qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?estaba:está} cerca de {s5}.
-
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} y {s0}
-
 qstr_No_Troops_Left.|No quedan tropas.
 qstr_avoid_melee|evitar cuerpo a cuerpo
 qstr_stand_and_fight|luchar sin un paso atrás
@@ -725,9 +700,9 @@ qstr_Fixed_Camera___Left_|Cámara fija: hombro izquierdo
 qstr_Fixed_Camera___Cente|Cámara fija - Centrada
 qstr_While_visiting_towns|Mientras visitas los diferentes asentamientos, ciudades y campamentos, puedes hablar con la gente que veas deambulando por sus calles. Los miembros de las diferentes facciones tendrán cosas diferentes que decir: algunos compartirán sus pensamientos, otros compartirán rumores. En ambos casos, estos comentarios pueden ayudarte a comprender mejor la cultura y la facción  del personaje, o pueden contener pistas para encontrar lugares secretos, o trucos y consejos para viajar por las tierras salvajes y  y luchar en la Guerra del Anillo.
 qstr_Cannot_leave_now.|No puedes abandonar ahora.
-qstr_You_have_found_the_l|Has encontrado al herrero local... (+{reg3} Exp.)
-qstr_You_have_found_the_lo|Has encontrado a la autoridad local...(+{reg3} Exp.)
-qstr_You_have_found_the_loc|Has encontrado el almacén local...(+{reg3} Exp.)
+qstr_You_have_found_the_l|Has encontrado al herrero local...
+qstr_You_have_found_the_lo|Has encontrado a la autoridad local...
+qstr_You_have_found_the_loc|Has encontrado el almacén local...
 qstr_You_look_through_Hen|Miras a través de la cortina de agua de Henneth Annûn, la Ventana del Sol Poniente. La hermosa vista restaura tu fe en el Oeste y enlos Poderes de más allá.
 qstr__cancelled_the_{reg1|(cancelados los {reg10} pts. de exp. ganados por matar prisioneros)
 qstr_Forming_ranks.|Formando filas.
@@ -1057,7 +1032,6 @@ qstr_The_war_expands_comm|¡La guerra se recrudece, y los capitanes cada vez son
 qstr_Your_party_is_spotte|Tu grupo ha sido divisado por {s1}.
 qstr_Party_has_nothing_to|¡Tu grupo no tiene nada para comer!
 qstr_You_pay_for_accommod|Pagas por el alojamiento.
-qstr_Your_scouts_have_rep|Tus exploradores te informan de que hay {s2} cerca de {s3}.
 qstr_The_troll_outside_{s|Alguien ha matado al troll en las afueras de {s2}. Misión cancelada.
 qstr_{s1}_was_killed_on_t|{s1} ha muerto en el campo de batalla. Misión cancelada.
 qstr_{s1}_has_been_defeat|{s1} ha sufrido una derrota. Misión cancelada.
@@ -1087,6 +1061,7 @@ qstr_{s5}_has_stopped_fol|{s5} ha dejado de seguirte.
 qstr_You_have_{reg69}_all|Tienes {reg69} grupo aliado siguiéndote
 qstr_You_have_{reg69}_ally|Tienes {reg69} grupos aliados siguiéndote
 qstr_The_forces_of_{s2}_h|¡Las fuerzas de {s2} se han reagrupado y marchan hacia {s15}!
+qstr_Your_scouts_have_rep|Tus exploradores te informan de que hay {s2} cerca de {s3}.
 qstr_{s1}_from_{s2}|{s1} de {s2}
 qstr_When_dealing_with_lo|Cuando trates con la gente de {s11}, recuerda que no te conocen y que no tienen por qué reconocer los méritos que has conseguido al servicio de {s10}.^^(los Puntos de Recursos de los que dispones con la gente de {s11} no son los mismos que con {s10}, sino los que ganes con {s11}; echa un vistazo al menú de informes)
 qstr_Info|Información
@@ -1134,6 +1109,7 @@ qstr_Um..._by_enchanting_|Em... ¿Encantando el hierro?
 qstr_Magnets_are_made_of_|Los imanes están hechos de metal, que se extrae de la tierra. Son magnéticos porque el metal todavía contiene piezas de gravedad en su interior.
 qstr_i_wont_a_bonerlrord_|kiero k paceis el mod a bonerlrord haora mizmo!11
 qstr_Install_TLD_in_your_|Instala TLD en la carpeta Modules de Bannerlord, agrega la línea 'compatible_with_wfas = 1' en el module.ini, y podrás jugar en Warband y... ¡en Warrider 0.202!
+qstr_Bannerlord_runs_on_a|Bannerlord usa un motor diferente. No podemos pasar TLD a Bannerlord como lo hicimos con Warband.
 qstr_dis_mod_takes_2_long|eztee mod tardda muxo tempo pa salir y apezta un webo!!11!
 qstr_Well_there_s_a_lot_o|Bueno, viene con un montón de mejoras gráficas y contenido. No sé por qué pero me da que lleva tiempo.
 qstr_It_has_been_recently|Ha salido hace poco, si no sabes donde encontrarlo puedes descargarlo desde lemonparty.org.
@@ -1226,6 +1202,7 @@ qstr_It_is_my_duty_to_prot|Es mi deber proteger a nuestros aliados.
 qstr_I_am_{s4}_{s15}_of_{|Soy {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Soy {s4}, capitán de {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? y gobierno sobre {s8}.:.
+qstr__{s3}_gained_{reg78}|{s3} ha ganado {reg78} puntos de experiencia.
 qstr_{playername}_our_sco|Las buenas nuevas te preceden, {playername}. ¡Ojalá la vida te conceda cien años de bendiciones a partir de este día! Tu victoria ha hecho retoceder a as huestes de {s7}, desbaratando los avamces del enemigo. Esperamos que ahora sus tropas y capitanes actúen con más cautela. ¡Y que empiecen a temer tu nombre! Por lo menos nos has concedido un breve respiro en medio de tantas fatigas.
 qstr_Well_{playername}_yo|Bueno, {playername}, has regresado, y con buenas noticias, al parecer. Ahora veo que no eres todo bravuconadas. ¡Ah, ojalá hubiera estado allí para ver a {s7} caer ante ti con mis propios ojos! No cabe duda de que nuestros enemigos deben de estar terriblemente desmoralizados. Han perdido la cabeza, seguro. Como se suele decir, corta la cabeza de la serpiente, y la cosa está hecha. Bueno, ahora me toca a mí llevar a mis hueste a la victoria que realmente importa. Quedará constancia de tu contribución, {playername}, al esfuerzo de tus superiores. No temas.
 qstr_Alas_that_I_could_no|Por desgracia, no pude acabar con {s7} de {s8} de una vez por todas, pero si volvemos a encontrarnos, más vale que se ande con cuidado.
@@ -1287,6 +1264,7 @@ qstr_Ah_{playername}_it_i|Ah, {playername}, me alegra que hayas venido. La guerr
 qstr_About_time_you_showe|Ya era hora de que aparecieras, {playername}. Ahora estamos en guerra y no toleraré ninguna insubordinación. Nos enfrentamos a {s11}, pero tenemos que reunir fuerzas y aplastar al enemigo en el camp antes de poder marchar contra sus fortalezas. Cada derrota de nuestros enemigos fortalecerá nuestro esfuerzo de guerra y los acercará un paso más hacia su absoluta destrucción. Así que confío en que aprovecharás cualquier oportunidad para enfrentarte a nuestros enemigos, ya sea una partida de exploradores o una hueste de guerreros. Además, debes prestar apoyo a nuestros capitanes y a nuestros aliados si los ves envueltos en un combate. No los falles, o lo sabré.
 qstr_we_are_fighting_agai|estamos luchando contra {s13}
 qstr_we_are_not_fighting_|no estamos en guerra con nadie ahora mismo
+qstr__{s14}_gained_{reg78|{s14} ha ganado {reg78} puntos de experiencia.
 qstr_Oh?_Let_me_see_that.|¿Oh? Déjame verlo... ¡Bien, bien, bien! Has hecho bien en traerme esto, {playername}. Aquí tienes mi sello como prueba de que lo he recibido, saluda a {s9} de mi parte cuando lo vuelvas a ver.
 qstr_Give_me_that!_Hrmph!|¡Dame eso! ¡Hum! Has hecho bien en traerme esto, {playername}, eres {un sirviente/una servidora} útil. Dile a {s9} que haga uso de ti más a menudo.
 qstr_What?_Let_me_see_tha|¿Qué? Déjame verlo... Hummm. Has hecho bien en traérmelo, {playername}. Ahora, fuera.
@@ -1530,10 +1508,6 @@ qstr_One_{s6}_left_the_pa|Un {s6} ha abandonado el grupo.
 qstr_I_understand._I_will|Lo entiendo. Me quedaré contigo. Por un tiempo.
 qstr_I_have_played_my_rol|He hecho mi parte durante muchos largos años, durante muchas vidas de hombres mortales. Esta guerra deben librarla los Hombres. Yo partiré al Oeste y puede que otros decidan seguirme.
 qstr_{reg1}_Veteran_Elves|{reg1} Elfos veteranos han decidido abandonar el grupo.
-qstr_You_chose_well_{sir/|Has elegido bien, {señor/señora}. Mis muchachos saben mantener su palabra y ganarse el sueldo
-qstr_Well_done_{sir/madam|Bien hecho, {señor/señora}. Encárgate de que nos llegue un flujo constante de dinero y vino y no habrá enemigo en Calradia capaz de hacernos daño.
-qstr_We_are_at_your_servi|Estamos a tu servicio, {señor/señora}. Dinos a quién cazar, y haremos el resto.
-qstr_You_will_not_be_diss|No te decepcionaré {señor/señora}. No encontrarás mejores guerreros.
 qstr_What_an_amazing_feat|¡Qué proeza de armas!
 qstr_Well_done!|¡Bien hecho!
 qstr_Nice_legwork.|Excelente juego de piernas.
@@ -1576,11 +1550,7 @@ qstr_The_{s11}_of_{s10}_a|El {s11} de {s10} te ha pedido que escoltes a algunos 
 qstr__Guards_slaughter_hi|¡Guardias, acabad con él!
 qstr_Slaughter_him_for_fr|¡Acabad con él si queréis carne humana fresca!
 qstr_This_is_{s5}_Command|Estamos en {s5}, capitán.
-qstr_{s6}_This_place_and_|{s6} Este lugar y sus alrededores te pertenecen a ti y sólo a ti, mi {señor/señora}.
 qstr_{s6}_This_place_and_t|{s6} Este lugar y sus cercanías pertenecen a {s7} de {s8}.
-qstr_{s3}_and_{s5}|{s3} y {s5}
-qstr_{s3}_{s5}|{s3}, {s5}
-qstr_{reg20?We_mostly_pro|{reg20?Aquí producimos sobre todo {s5}:Ahora mismo no producimos casi nada}. Si queréis saber más, podéis hablar con nuestro {reg4?maestro de la cofradía:anciano}. Está justo allí.
 qstr_Hey_scum!_I_can_fix_|¡Oye, tú, escoria! Creo que te voy a arreglar esa mandíbula tuya.
 qstr_Watch_where_you_re_g|Mira por donde vas, ¡Gusano!
 qstr_I_don_t_like_your_fa|¡No me gusta tu cara! Creo que necesita algún arreglo.

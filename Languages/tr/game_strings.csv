@@ -504,16 +504,6 @@ str_casualty_display|Kayıpların: {s10}^Düşman Kayıpları: {s11}{s12}
 str_casualty_display_hp|Şu kadar darbe puanına yaralandın: {reg1}
 str_quest_log_updated|Görev defteri güncellendi...
 str_banner_selection_text|Sancak taşıma hakkını kazandın.Sancagın mevkini gösterecek ve sana saygınlık kazandıracak.Hangi sancagı seçmek istiyorsun?
-str_retirement_text_1|Paranın fazla daynamayacagını fark ettiginde çok geç oldu. Kazandıgın azıcık parayı da boşa harcaman fazla zamanını almadı, ve bir kaç umutsuz maceracılık girişimi için yeniden zavallıca yola çıktın. {s9}'de yardım ve sadakalar ile geçimini saglayan bir dilenci olarak yaşamını sonlandırdın.
-str_retirement_text_2|Paranın fazla daynmayacagını fark ettiginde çok geç oldu. Biriktirdigin azıcık parayı boşa harcaman da fazla zamanını almadı.Elindeki tüm dinarlar buharlaştıkdan sonra {s9}'ın arka sokaklarında suç hayatına girmeye zorlandın ve hayatını şehirli fakir adamlardan ve kadınlardan çaldıgın bakırlarla sürdürdün.
-str_retirement_text_3|Paranın fazla dayanmayacagını fark ettiginde çok geç oldu. Biriktirdigin parayı bitirmen çok uzun sürmedi ve sonunda beş kuruşsuz kaldın. Meyhane meyhane dolaşıp içki dilenip ve karşılıgında kimsenin inanmadıgı savaş hikayeleri anlattın.
-str_retirement_text_4|Biriktirdigin gümüş çok fazla dayanmadı,fakat {s7} köyünün yakınlarında toprak almana yetti. Burada özgür bir çiftçi oldun, ve kısa zaman sonra potansiyel {karılarının/kocalarının} dikkatini çekmeye başladın. Zamanla köylüler sana yerel bir kahramanmışsın  gibi davranmaya başladılar. Ziyafetlerde her zaman onur köşesinde oturdun, ve kahramanlıkların meyhaneler ve tavernalarda defalarca anlatıldı. Böylece çocukların zihninde sonsuza kadar yer tuttun,
-str_retirement_text_5|Biriktirdigin gümüş uzun süre dayanmadı fakat {s9} da küçük bir meyhane almaya yetti. Başta yerliler senden endişeliydi ama kısa zamanda alıştılar. Zaman içinde büyüyen meyhane popüler bir ziyafet ve buluşma mekanı haline geldi. İnsanlar uzun yollardan konaklama yemek ve anlattıgın destansı maceralarının hikayeleri için geldiler.
-str_retirement_text_6|Kariyerin boyunca akıllıca para biriktirdin ve şimdi gümüşün ve zekan sayesinde akıllı yatırımlar yapıyorsun. {s9} da birkaç dükkan ve depo aldıktan sonra keskin zekan seni şehirdeki en ünlü tüccarlardan biri yapıyor, kısa zamanda varlıklı bir {adam/kadın} oldun ve savaşdaki kahramanlıkların kadar ticaret imparatorlugunla da ün saldın.
-str_retirement_text_7|Her ne kadar küçük de olsa soylu bir toprak sahibi olarak, gelecegini garanti altına aldın.{s7} yakınlarına yerleştin.Köy ve tarlaları idare etmek, yerel mahkemelere başkanlık etmek ve lordun için yükümlülüklerini yerine getirmek neredeyse tüm vaktini alıyor.Bazen arkadaşların seni kendi gruplarına komuta etmeye çagırıyor, ancak bu gibi olaylar kısa sürüyor ve bunlar asla gençlik günlerininki gibi heyecanlı olmuyor. Zaten servet yaptıgın için böyle şeylere de artık ihtiyacın yok. Artık hayattan tek bir istegin var o da kalan ömrünü saglıklı bir şekilde tamamlamak.
-str_retirement_text_8|Kendini çok iyi idare ettigin su götürmez bir gerçek. Geniş toprakların ve maceracılıktan gelen servetin, hayatının sonuna kadar zengin ve rahat bir yaşamı garantilemen için yeterli. {s8}ndeki soylu makamından emekli olmanla, macera yerine politikaya atıldın ve kısa zamanda hükümdarının krallıgında dikkate alınır ve  güce sahip oldun. Kendini oyalayacak entrikalar, avlanacak ormanların, ziyafet verecek salonların ve anlatacak onlarca güzel savaş hikayenle, sonraki yılların tadını çıkarman hiç de zor olmuyor.
-str_retirement_text_9|Lordun, etkin ve sadık hizmetlerine ödül olarak sana bir soyluluk ünvanı verilmesinde karar kıldı. Bundan sonra eylemlerine {s7} Baronu olarak devam edeceksin ve efendinin en yakın danışmanlarından biri olacaksın. Şimdi günlerini güç oyunlarıyla, mülklerini yöneterek ve eski günlerdeki ihtişamı yad ederek geçireceksin.
-str_retirement_text_10|Mütevazi bir noktadan başladıysan da, lordunun gözünde büyük itibara sahipsin ve sana {s9} {kontu/kontesi} olarak soysal bir ünvan verildiginde ülkede bir şok dalgası oluşuyor. Geniş topraklar ve servet artık senin ellerinde. Hızlıca lordunun en güvenilir müşaviri oluyorsun, neredeyse dengi ve toprak yönetimi adına çogu işi yapıyorsun ve Orta Dünyanın en güçlü figürlerinden birisi olarak ihtişamlı sarayındaki tahtına oturuyorsun.
 str_loot_village|suçsuz köylülere saldır.
 str_steal_from_villagers|Fakir Köylülerden Çal
 str_rob_caravan|Bir Tüccar Karavanı Soy.
@@ -1034,59 +1024,11 @@ str_npc14_honorific|Kaptan
 str_npc15_honorific|Usta
 str_npc16_honorific|Kabile Şefi
 str_npc17_honorific|Şef
-str_comment_intro_liege_affiliated|Hükümdar olma istegime karşı olan birine sadakatini sundugunu söylediler. Ama hala konuşabiliriz.
-str_comment_intro_famous_liege|Şöhretin senden önde gidiyor! Belki kendine cesaretine yaraşır bir lider bulma vakti gelmiştir, ne dersin?
-str_comment_intro_famous_martial|Şöhretin senden önde gidiyor! Belki bir gün bir turnuvada ya da savaş meydanında birbirimizin mertligini sınama fırsatı buluruz.
-str_comment_intro_famous_badtempered|Adını daha önce de duymuştum! Öyle laf kalabalıgı yapılmasını sevmem. Diyecegin birşey varsa hemen söyle!"
-str_comment_intro_famous_pitiless|Senin adını duymuştum. Askerlerin içine korku salan bir isim. Bu iyi. Belki senle ben bir ara konuşmalıyız.
-str_comment_intro_famous_cunning|Ah, evet. Nihayet karşılaştık. Tanışılması İyi olacak bir {adama/kadına} benziyorsun. Arada bir konuşalım.
-str_comment_intro_famous_sadistic|Adını biliyorum – ve duyduklarıma göre yas tutan pek çok dul kadın da biliyor. Ama bu benim meselem degil tabiki.
-str_comment_intro_famous_goodnatured|Seni duymuştum daha önce! Nihayet tanıştıgıma çok memnun oldum.
-str_comment_intro_famous_upstanding|Adını biliyorum. Pek yigit bir savaşçıymışsın. Umarım şerefin ve merhametin de yigitligine yakışır tabiattadır.
-str_comment_intro_noble_liege|Soylu birinin sancagını taşıdgını görüyorum, ama sancagın kendisini tanımıyorum. Aklında olsun, her zaman benim için savaşacak iyi adamlara ihtiyacım var, güvenime layık olduklarını ıspatlamak kaydıyla tabi.
-str_comment_intro_noble_martial|Soylu birinin sancagını taşıdgını görüyorum, ama sancagın kendisini tanımıyorum. Belki de bir gün karşılıklı mertligimizi bir turnuvada göstermeliyiz. Yada savaş alanında!
-str_comment_intro_noble_badtempered|Soylu birinin sancagını taşıdgını görüyorum, ama sancagın kendisini tanımıyorum. Yine bir yabancı daha topraklarımıza yerleşmiş demekki. Sanki halihazırdakiler yetmiyormuş gibi!
-str_comment_intro_noble_pitiless|Soylu birinin sancagını taşıdgını görüyorum, ama sancagın kendisini tanımıyorum. Savaştan gerikalanların malzemelerin üzerine konan başka bir akbabadır kesin!
-str_comment_intro_noble_cunning|Soylu birinin sancagını taşıdgını görüyorum, ama sancagın kendisini tanımıyorum. Yine de, bir gün kendilerini büyük bir savaşçı olarak kanıtlama ihtimali olan {erkeklerle/kadınlarla} tanışmak bu zahmete deger.
-str_comment_intro_noble_sadistic|Soylu birinin sancagını taşıdgını görüyorum, ama sancagın kendisini tanımıyorum. Belki de sen biraz ün kazanmış bir soyguncunun gayrımeşru {oglusun/kızısın}? Yada bunu bir yerlerden çalmışsındır.
-str_comment_intro_noble_goodnatured|Soylu birinin sancagını taşıdgını görüyorum, ama sancagın kendisini tanımıyorum. Cehaletimi bagışla, {bey/hanım}! Tanıştıgıma memnun oldum.
-str_comment_intro_noble_upstanding|Soylu birinin sancagını taşıdgını görüyorum, ama sancagın kendisini tanımıyorum. Kuşkusuz buraya zenginlik ve şöhret için geldin. Eger durum buysa ortada kalan masum ve korumasız canlara merhamet göstermeni rica ediyorum.
-str_comment_intro_common_liege|Alt tabakadan biri olabilirsin, ama unutma her zaman benim için savaşacak iyi adamlara ihtiyacım oluyor.Tabi eger bana güvenilir olduklarını kanıtlarlarsa.
-str_comment_intro_common_martial|Soylu dogmamış olabilirsin, ama eger mertlik sahibi yaman bir {adam/kadın} olarak kendini kanıtlarsan kuvvetimi sana karşı bir turnuva veya savaş alanında sınava sokmayı elbette isterim.
-str_comment_intro_common_badtempered|Eger söyleyecegin birşey varsa çabuk konuş, çünkü alelade askerlerle laf yarıştırarak harcayacak vaktim yok!
-str_comment_intro_common_pitiless|Paralı asker görüntüsü var sende, bu diyarın acılarıyla beslenip semirecek olan başka bir akbaba daha!
-str_comment_intro_common_cunning|Adını daha önce hiç duymadım ama birgün kendini ispatlayabilecek bir {adama/kadına} benziyorsun{./.}
-str_comment_intro_common_sadistic|Normalde huzuruma habersizce çıkıveren ayaktakımının gırtlagını keserim ama bugün iyi bir günümdeyim.
-str_comment_intro_common_goodnatured|Hmm... Yeterince iyi bir tipe benziyorsun.
-str_comment_intro_common_upstanding|arış seninle olsun ve yigitligini merhamet, cesaretini de şerefle harmanlamayı unutma!
-str_comment_you_raided_my_village_enemy_benevolent|{s51} köyünde korumam altında bulunan masum çiftçilerimi soymuşsun! Yaptıkların için seni cezalandıracagım.
-str_comment_you_raided_my_village_enemy_spiteful|{s51} isimli köyümü talan etmişsin, mülkümü hasara ugratıp çiftçilerimi öldürüyorsun! Tazminatımı kan olarak alacagım!
-str_comment_you_raided_my_village_enemy_coldblooded|{s51} isimli köyümü talan etmişsin, mülkümü hasara ugratıp çiftçilerimi öldürüyorsun. Bundan sonra artık mülklerimze zarar vermeden önce bir defa daha düşüneceksin!
-str_comment_you_raided_my_village_enemy|{s51} isimli köyümü talan etmişsin, mülkümü hasara ugratıp çiftçilerimi öldürüyorsun! Bu suçunun cezasını çekeceksin!
-str_comment_you_raided_my_village_unfriendly_spiteful|{s51}'deki köyümü basmışsın. Yeniden yaparsan senin iç organlarını balık gibi dışarı çıkarırım.
-str_comment_you_raided_my_village_friendly|{s51}'deki köyümü basmışsın.Bu dostlugumuzda büyük bir gerginlik yaratacak.
-str_comment_you_raided_my_village_default|{s51}'deki köyümü basmışsın.Bu şekilde davranmaya devam edersen yakında başına kötü bir şey gelebilir.
-str_comment_you_robbed_my_village_enemy_coldblooded|{s51}'deki kiracılarımı soymuşsun.Bunu kişisel bir hakaret olarak alıyorum.
-str_comment_you_robbed_my_village_enemy|{s51}'deki korumam altında olan masum çiftçileri soymuşsun.Seni yaptıgın kötülüklerden dolayı cezalandıracagım!
-str_comment_you_robbed_my_village_friendly_spiteful|Duyum ki {s51} köyümdeki çiftçilerimden iyiyecek malzeme araklamışsın. Sana karşı bir garez yaratacagım falan yok, ama unutma sonradan bütün köylülerin aglayıp sızlanmalarını ben dinliyorum.
-str_comment_you_robbed_my_village_friendly|{s51} köyümdeki mahsüllerden bir kısmına el koydugunu söylediler bana. Eminim ki bu mallara gerçekten acil ihtiyacın olmasa bunu yapmazdın.
-str_comment_you_robbed_my_village_default|{s51} köyümdeki mahsüllerden bir kısmına el koydugunu söylediler bana. Eminim ki bu mallara gerçekten acil ihtiyacın olmasa bunu yapmazdın.
-str_comment_you_accosted_my_caravan_enemy|Korumamın altında karavanlara saldırmışsın.Haydutluk günleriniz çok yakında sona erecek.
-str_comment_you_accosted_my_caravan_default|Benim korumam altındaki kervanları rahatsız ediyormuşsun. Bu tip hareketler son bulmalı!
-str_comment_you_helped_villagers_benevolent|Duyduguma göre {s51} köyümdeki çiftçilere sadaka vermişsin. Bir lord ve koruyucu olarak onlara karşı vazifelerimi aksattım. Yaptıgın şey için teşekkür ederim.
-str_comment_you_helped_villagers_friendly_cruel|Duyduguma göre {s51} köyümdeki çiftçilere sadaka vermişsin. İyi niyetli oldugunu biliyorum ama benim altımı bu şekilde oymamanı tercih ederim.
-str_comment_you_helped_villagers_friendly|Duyduguma göre {s51} köyümdeki çiftçilere sadaka vermişsin. Bu zor zamanlarda iyi niyetli oldugunu bildigim için seni önlemeyecegim. Teşekkürler.
-str_comment_you_helped_villagers_unfriendly_spiteful|Duyduguma göre {s51} köyümdeki çiftçilere sadaka vermişsin. Hizmetkarlarım arasında fırsatçılık yaptıgını izlemek her ne kadar eglenceli olsa da, kendi işine bakmanı isteyecegim senden.
-str_comment_you_helped_villagers_cruel|Duyduguma göre {s51} köyümdeki çiftçilere sadaka vermişsin. Çiftçilerin koruyucusu olarak zor zamanlarında onlara yardımcı olmak benim vazifemdir.İyi niyetle yaptıgını biliyorum ancak bu tip hareketler otoritemin altını oymaya devam ediyor. Onlara bir daha yaklaşmazsan sana müteşekkir olacagım.
-str_comment_you_helped_villagers_default|Duyduguma göre {s51} köyümdeki çiftçilere sadaka vermişsin. Zor zamanlardayız, ve niyetinin iyi oldugunu biliyorum ancak bunu bir alışkanlık haline getirmemeye çalış. Onların lordu ve koruyucusu benim ve yardımı başkalarında aramaya alışmalarını istemem.
 str_comment_you_captured_a_castle_allied_friendly|Duydum ki kuşattıgın {s51} sana teslim olmuş. Bu büyük bir işti! Sana dostum demekten gurur duyuyorum.
 str_comment_you_captured_a_castle_allied_spiteful|Duydum ki kuşattıgın {s51} sana teslim olmuş. İyi iş!! Yakında bütün kalelerini yagmalayabilecek, bütün zenginliklerini soyabilecek ve yas tutan dullarını kendimize hizmet ettirebilecegiz!
 str_comment_you_captured_a_castle_allied_unfriendly_spiteful|Duydum ki kuşattıgın {s51} sana teslim olmuş. Herkesin şanslı bir günü vardır derler. Üstadların gelip seni ait oldugun çukura göndermeden önce sürebildigin kadar keyfini sür bakalım.
 str_comment_you_captured_a_castle_allied_unfriendly|Duydum ki kuşattıgın {s51} sana teslim olmuş. Geçmişte aramızda sorunlar olmuş olsa da, seni tebrik ediyorum.
 str_comment_you_captured_a_castle_allied|Duydum ki kuşattıgın {s51} sana teslim olmuş. Bizden kaçıyorlar artık!
-str_comment_you_captured_my_castle_enemy_spiteful|Duydum ki {s51}nde haneme tecavüz etmişsin. Umarım zindanlar hoşuna gidiyordur çünkü önümüzdeki yıllar boyunca orada çok uzun zaman geçireceksin.
-str_comment_you_captured_my_castle_enemy_chivalrous|Benim yurtlugum olan {s51} üzerinde mülkiyet ilan etmişsin. Umarım onu geri kazanma şansını verirsin bana.
-str_comment_you_captured_my_castle_enemy|Bana ait olan bir şeyi elinde tutuyorsun – {s51}. Ondan vazgeçmeni saglayacagım.
 str_comment_we_defeated_a_lord_unfriendly_spiteful|Sanıyorum {s54} zaferimizin hatırasına kadeh kaldırmak istiyorsun. Şarabını boşuna harcama derim. Şu anda kadar yapmış oldugun utanç verici eylemlerin lekesini silmek için daha büyük şeylere ihtiyacın var.
 str_comment_we_defeated_a_lord_unfriendly|{s54} karşısında nasıl da omuz omuza savaştıgımızı unutmayacagım, ama aramızdaki diger mevzuları da unutmayacagım.
 str_comment_we_defeated_a_lord_cruel|{s54} karşısında yaşadıgımız büyük bir zaferdi, degil mi? Ordusunu kargalara yem yaptık.
@@ -1154,10 +1096,6 @@ str_comment_you_defeated_my_friend_enemy_pragmatic|{s54} sana yenilmiş olabilir
 str_comment_you_defeated_my_friend_enemy_chivalrous|Duydum ki {s54} sana teslim olmuş. O andan beri seninle kılıç çarpıştırmayı bekledim.
 str_comment_you_defeated_my_friend_enemy_spiteful|Şöhretin senden önce ilerliyor, {playername}. {s54} senin hilelerini yutmuş olabilir ancak benimle savaşırsan çok daha kıvrak bir rakip oldugumu farkedeceksin
 str_comment_you_defeated_my_friend_enemy|Duydum ki {s54} sana yenilmiş. Ancak ben senin savaşma yeteneklerini gerçek bir testten geçirecegim.
-str_comment_you_captured_a_lord_allied_friendly_spiteful|Duydum ki {s54} sana teslim olmuş. Umarım her bir dinar için ayrı sıkıştırmışsındır onu.
-str_comment_you_captured_a_lord_allied_unfriendly_spiteful|Duydum ki {s54} sana teslim olmuş. Şimdiden bavullarını fidyeyle doldurmuşsundur. Paranın soylu olmayan birini bir centilmen yapamaması ne yazık.
-str_comment_you_captured_a_lord_allied_chivalrous|Duydum ki {s54} sana teslim olmuş. İyi iş. Rütbesine yaraşır bir şekilde itibar edildigini varsayıyorum tabiki.
-str_comment_you_captured_a_lord_allied|Duyduguma göre {s54} 'ı yakalamışsın. Aferin. Fidyesi çok fazla olmalı.
 str_comment_you_let_go_a_lord_allied_chivalrous|Duydum ki {s54} sana teslim olmuş, ama onun gitmesine izin vermişsin. Böyle bir mertlik davamıza da çok şey kazandırır.
 str_comment_you_let_go_a_lord_allied_upstanding|Duydum ki {s54} sana teslim olmuş, ama onun gitmesine izin vermişsin. Bu şerefli bir hareket olmuş. Ama aynı zamanda tehlikeli de.
 str_comment_you_let_go_a_lord_allied_coldblooded|Duydum ki {s54} sana teslim olmuş, ama onun gitmesine izin vermişsin. Bu çok zarif bir hareket olmuş. Ama zerafet savaş kazandırmıyor.
@@ -1168,33 +1106,6 @@ str_comment_you_let_me_go_enemy_chivalrous|Son karşılaşmamızda senin merhame
 str_comment_you_let_me_go_enemy_coldblooded|Son karşılaşmamızda senin merhametine sıgınmıştım ve sen gitmeme izin vermiştin. Ama biz hala düşmanız ve senin merhametini aynı şekilde ödeyecegimi garanti edemem.
 str_comment_you_let_me_go_enemy|Son karşılaşmamızda senin merhametine sıgınmıştım ve sen gitmeme izin vermiştin. Bu çok zarifti. Ama hala savaştayız...
 str_comment_you_let_me_go_default|Son karşılaşmamızda senin merhametine sıgınmıştım ve sen gitmeme izin vermiştin. Bu çok zarifçeydi ve krallıklarımız artık savaş içinde olmadıkları için mutluyum.
-str_comment_pledged_allegiance_allied_martial_unfriendly|Lordumuz, {s54}'a sadakatini sundugını duydum.Korkakça davranarak hepimizi utandırmamak için dua et!
-str_comment_pledged_allegiance_allied_martial|Lordumuz, {s54}'a sadakatini sundugını duydum. Seninle omuz omuza düşmana karşı savaşmayı dört gözle bekliyorum.
-str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|Lordumuz, {s54}'a sadakatini sundugını duydum. Breh! Sadece yolumda durmamaya bak.
-str_comment_pledged_allegiance_allied_quarrelsome|Lordumuz, {s54}'a sadakatini sundugını duydum. Düşmanlarımıza karşı mertçe savaştıgın, senden iyilere saygı duydugun ve bana ters yapmadıgın sürece iyi anlaşırız.
-str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|Lordumuz, {s54}'a sadakatini sundugını duydum. Onun yerinde olsam sana bulaşıkları bile yıkatmazdım.
-str_comment_pledged_allegiance_allied_selfrighteous|Lordumuz, {s54}'a sadakatini sundugını duydum. Cesurca savaş; ödülün büyük olsun. Bize ihanet et; sana verecegimiz cezalar nesiller boyu herkese ibret olsun
-str_comment_pledged_allegiance_allied_cunning_unfriendly|Lordumuz, {s54}'a sadakatini sundugını duydum. Bu karardan çok memnun oldugumu söyleyemeyecegim ama belki seni bizim çadın içine alıp dışarı işemeni saglamak faydalı olabilir
-str_comment_pledged_allegiance_allied_cunning|Lordumuz, {s54}'a sadakatini sundugını duydum. Bu iyi. Bu zor zamanlarda kendi tarafımıza alabildigimiz kadar yetenekli savaşçıları almamız gerekiyor. Gelişimini yakından izliyor olacagım.
-str_comment_pledged_allegiance_allied_debauched_unfriendly|Lordumuz, {s54}'a sadakatini sundugını duydum. Kuşkusuz ona yakında ihanet edeceksin ve ben de bir hainin ölümünü seyretmekten büyük keyif alacagım.
-str_comment_pledged_allegiance_allied_debauched|Lordumuz, {s54}'a sadakatini sundugını duydum. Harika... seninle çok iyi dost olacagımızdan eminim. Ama unutma, eger bizlere ihanet edersen bu hayatında yaptıgın en büyük yanlış olur!
-str_comment_pledged_allegiance_allied_goodnatured_unfriendly|Lordumuz, {s54}'a sadakatini sundugını duydum. Sana güvenirdim diyemeyecegim, ama sanırım bir şansı hak ediyorsun.
-str_comment_pledged_allegiance_allied_goodnatured|Lordumuz, {s54}'a sadakatini sundugını duydum. İyi {adam/kadın}! Lordumuz çok soyludur ve sadakati cömertçe ödüllendirir.
-str_comment_pledged_allegiance_allied_upstanding_unfriendly|Lordumuz, {s54}'a sadakatini sundugını duydum. Senin hakkında duyduklarım dogruysa bizi büyük ihtimalle utandıracagını düşünüyorum ama elbette ki beni yanıltmandan mutluluk duyarım.
-str_comment_pledged_allegiance_allied_upstanding|Lordumuz, {s54}'a sadakatini sundugını duydum. Düşmanlarımıza karşı cesaretle ama aynı zamanda onurlu ve merhametli bir şekilde savaş. Savaş meydanında iyi bir nam keskin bir kılıçtan veya hızlı bir attan daha degerlidir.
-str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|Duyduguma göre {s54} tarafından {s51} sana ödül olarak baglanmış. Unutma, kırbacı esirge ve köylüyü şımart.
-str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|Duyduguma göre {s54} tarafından {s51} sana ödül olarak baglanmış. Refaha ulaştıgını görmek memnun edici-- ama dikkat et. İnsan komşusunun zenginliklerine haset ve kıskançlıkla bakar. Bana yakın dur ki senin arkanı kollayabileyim.
-str_comment_our_king_granted_you_a_fief_allied_friendly|Duyduguma göre {s54} tarafından {s51} sana ödül olarak baglanmış. Toprakların zenginleşir umarım.
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|Duyduguma göre {s54} tarafından {s51} sana ödül olarak baglanmış. Ancak unutma ki düşerken ilk kaybolan deger gururdur.
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|Duyduguma göre {s54} tarafından {s51} sana ödül olarak baglanmış. Sanırım talih şimdi yüzüne gülüp seni sersemletiyor ki, tekrar geldigin pislik yuvasına seni geri çarptıgı zaman aklın başına tam gelsin.
-str_comment_our_king_granted_you_a_fief_allied_spiteful|Duyduguma göre {s54} tarafından {s51} sana ödül olarak baglanmış. Umalım da gerçekten lordumuzun cömertligini kabul ediyor ol.
-str_comment_our_king_granted_you_a_fief_allied|Duyduguma göre {s54} tarafından {s51} sana ödül olarak baglanmış. Yaptıgın işi biliyor gibisin.
-str_comment_you_renounced_your_alliegance_enemy_friendly|Duydum ki lordumuz {s54} adına ettigin sadakat yeminini bozmuşsun. Artık savaş alanında görüşecek olmamız üzücü bir düşünce.
-str_comment_you_renounced_your_alliegance_friendly|Duydum ki lordumuz {s54} adına ettigin sadakat yeminini bozmuşsun. Dileyelim ki bir çatışma içine girmeyelim.
-str_comment_you_renounced_your_alliegance_unfriendly_spiteful|Senin {s54}'a bir hainlik yapacagını biliyordum ve öyle görünüyor ki dogru çıktım. Umarım bir hain şeklinde ölmeye hazırsındır!
-str_comment_you_renounced_your_alliegance_unfriendly_moralizing|Duydum ki lordumuz {s54} adına ettigin sadakat yeminini bozmuşsun. Seni bir hain olarak kabul etmek zorundayım.
-str_comment_you_renounced_your_alliegance_enemy|Duydum ki lordumuz {s54} adına ettigin sadakat yeminini bozmuşsun. Eh, eski yoldaşların düşman olmaları bu dünyanın bir düzeni.
-str_comment_you_renounced_your_alliegance_default|Duydum ki lordumuz {s54} adına ettigin sadakat yeminini bozmuşsun. Bu senin kararındır. Ama savaş meydanında karşılaştıgımızda sana iyilik yapmamı bekleme!
 str_personality_archetypes|sadık
 str_martial|Savaşçı
 str_quarrelsome|huysuz

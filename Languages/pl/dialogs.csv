@@ -791,17 +791,6 @@ dlga_mayor_talk:mayor_deliver_wine|Miał{em/am} dostarczyć ci {s4}. W sumie bę
 dlga_mayor_deliver_wine:mayor_pretalk|Wreszcie! Zapasy prawie mi się skończyły. Zapłaciłem z góry za te {s4}. Proszę, weź te {reg5} PP. To uczciwa zapłata. Dobrze się spisał{e/a}ś, {s9} będzie zadowolony. Szepnę mu o tobie dobre słówko, gdy go spotkam.
 dlga_mayor_talk:mayor_deliver_wine_incomplete|Kazano mi dostarczyć ci {s4}. Miało tego być w sumie {reg9} szt., ale część ładunku stracił{em/am} po drodze.
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|Zaatakowali cię bandyci, co? Masz szczęście, że przeżył{eś/aś}. W każdym razie nie mogę zapłacić ci więcej niż {reg5} PP. A {s9} się dowie, że moje zamówienie nie zostało w pełni zrealizowane.
-dlga_start:mercenary_tavern_talk|Czy nie potrzebujesz może najemników, Pani{e/}? {reg3?Ja i {reg4?{reg3} moich ludzi:jeden z moich ludzi} szukamy:Szukam} zatrudnienia. Przyłączymy się do ciebie za jedyne {reg5} denarów.
-dlga_start:mercenary_after_recruited|Jakieś rozkazy, Pani{e/}?
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|Przygotujcie się. Wyruszamy o świcie.
-dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|Nie śpieszcie się. Zostaniemy w tym mieście jeszcze przez jakiś czas.
-dlga_mercenary_after_recruited_2:close_window|Tak, Pani{e/}. Będziemy gotowi do drogi gdy tylko rozkażesz.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|W porządku. Najmę was wszystkich. Oto {reg5} denarów.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|W porządku. Ale mogę nająć tylko {reg6} z was. Oto {reg5} denarów.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|To brzmi nieźle. Jednakże obecnie nie stać mnie by wynająć nowych ludzi.
-dlga_tavern_mercenary_cant_lead:close_window|Szkoda. Cóż, {reg3?zamarudzimy:zamarudzę} tu jeszcze przez jakiś czas, w razie gdybyś potrzebował{/a} kogoś wynająć.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|To brzmi nieźle. Jednakże obecnie nie mogę poprowadzić więcej ludzi.
-dlga_mercenary_tavern_talk:close_window|Przykro mi. Akurat nie potrzebuję nowych ludzi.
 dlga_start:trainer_pretalk|Przetrwał{e/a}ś {reg2} fal Próby. {s4}
 dlga_start:trainer_pretalk.1|Bardzo dobrze, wyeliminował{e/a}ś wszystkich oponentów.
 dlga_start:trainer_talk|Dzień dobry. Got{ów/owa}, by trochę dziś poćwiczyć?
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|Szukam człowieka zwanego {s4}.
 dlga_town_dweller_ask_fugitive:close_window|Różni nieznajomi nas odwiedzają, Pani{e/}. Jeśli się tu ukrywa, to z pewnością go znajdziesz, gdy rozejrzysz się po okolicy.
 dlga_town_dweller_talk:town_dweller_ask_info|Co możesz mi powiedzieć o tej wiosce?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Co możesz mi powiedzieć o tym miejscu?
-dlga_town_dweller_talk:town_dweller_ask_situation|Jak się tu żyje?
-dlga_town_dweller_ask_situation:town_dweller_poor|Moją rodzinę spotkało wielkie nieszczęście, Pani{e/}. Zaraza zniszczyła nam plony, a moje biedne dzieci leżą w domu, głodne i chore. Moi sąsiedzi chętnie by mi pomogli, ale sami są zbyt ubodzy.
-dlga_town_dweller_ask_situation:town_dweller_poor.1|Moje życie pełne jest nieszczęść, Pani{e/}. Od miesięcy nie potrafię znaleźć pracy, a moje biedne dzieci codziennie chodzą spać głodne. Moi sąsiedzi chętnie by mi pomogli, ale sami są zbyt ubodzy.
-dlga_town_dweller_poor:town_dweller_poor_paid|Więc weź te 300 denarów. Mam nadzieję, że to pomoże tobie i twej rodzinie.
-dlga_town_dweller_poor:town_dweller_poor_not_paid|Zatem musisz mocniej się starać i znosić swój ciężar bez narzekania.
-dlga_town_dweller_poor_not_paid:close_window|Tak, Pani{e/}. Zrobię tak, jak mówisz.
-dlga_town_dweller_poor_paid:close_window|{Mój dobry Panie/Moja dobra Pani}, jesteś dla nas tak{i/a} hojn{y/a}. Opowiem wszystkim o tym, jak nam pomogł{e/a}ś.
-dlga_town_dweller_ask_situation:close_window|Dzięki za twą hojność, Pani{e/}. Z tą pomocą nasze życie się polepszy. Będę się za ciebie modlić co dzień.
-dlga_town_dweller_ask_situation:town_dweller_talk|Nastały trudne czasy, Pani{e/}. Pracujemy ciężko całymi dniami, a i tak zazwyczaj chodzimy spać głodni.
-dlga_town_dweller_ask_situation:town_dweller_talk.1|Nastały ciężkie czasy, Pani{e/}. Ale musimy być wdzieczni za to, co mamy.
-dlga_town_dweller_ask_situation:town_dweller_talk.2|Nie jest tak źle, Pani{e/}. Musimy być wdzieczni za to, co mamy.
+dlga_town_dweller_talk:town_dweller_talk|Jak się tu żyje?
 dlga_town_dweller_talk:town_dweller_ask_rumor|Jakieś nowe plotki w okolicy?
 dlga_town_dweller_ask_rumor:town_dweller_talk|Nie wiem o niczym, co mogło by cię zainteresować.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Grozisz mi? Straż tylko czeka na takich jak ty.

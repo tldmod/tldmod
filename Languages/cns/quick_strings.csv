@@ -33,27 +33,6 @@ qstr_Gauntlet_wave:_1|第1波
 qstr_Gauntlet_wave:_{reg1|第{reg1}波
 qstr_Remain_in_retirement|确定退休
 qstr_Go_back_to_the_adven|回到冒险
-qstr_You_have_retired_at_|你从长达{reg5}天的冒险中退休了，等级为{reg4}。
-qstr_Effect_on_Score|有效分数
-qstr_Settlements_owned_by|您的领地数：{reg0}
-qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
-qstr_Friendly_Settlements|对您友善的聚居地：{reg0}
-qstr_Hostile_Settlements:|对您敌对的聚居地：{reg0}
-qstr_{reg0}|{reg0}
-qstr_Friendly_Lords:_{reg|对您友善的领主：{reg0}
-qstr_Enemy_Lords:_{reg0}|对您敌对的领主：{reg0}
-qstr_Victories:_{reg0}|胜仗：{reg0}
-qstr_Defeats:_{reg0}|败仗：{reg0}
-qstr_Quests_Completed:_{r|完成任务数：{reg0}
-qstr_Companions_Found:_{r|发现同伴：{reg0}
-qstr_Companions_Lost/Depa|同伴走失/离开：{reg0}
-qstr_Wealth:_{reg0}_denar|财富：{reg0}第纳尔
-qstr_Inventory:_{reg0}_de|物品栏价值：{reg0}第纳尔
-qstr_Experience:_{reg0}|总经验：{reg0}
-qstr_Days_Passed:_{reg0}|总天数：{reg0}
-qstr_Difficulty:_{reg0}%|难度：{reg0}％
-qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
-qstr_TOTAL_SCORE:_{reg0}|总分数：{reg0}
 qstr_A_peaceful_village_n|一个距洛汗西谷不远的宁静小村
 qstr_The_War_is_upon_Roha|战争正在接近洛汗！
 qstr_Minas_Tirith___The_W|米那斯提力斯—白城
@@ -180,7 +159,8 @@ qstr_Useful_Tool_of_{s5}|{s5}的工具
 qstr_Servant_of_{s5}|{s5}的奴仆
 qstr_Unknown_to_{s5}|{s5}的路人
 qstr_You_have_been_{reg1?|你已经 {reg1?晋升:降职}为{s24} ({reg0})！
-qstr_You_{reg1?earned:los|你在{s11}{reg1?获得:失去}了{reg11}军功{reg12?和{reg12}影响力:}。
+; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.
+qstr_You_{reg1?earned:lost|你在{s11}{reg1?获得:失去}了{reg11}军功{reg12?和{reg12}影响力:}。
 qstr_You_spent_{reg10}_of|你花费了{s1}的{reg10}影响力,你还剩{reg11}影响力。
 qstr_Troop_upkeep:|部队维护：
 qstr_{s11}_and_{s10}|{s11}和{s10}
@@ -250,8 +230,7 @@ qstr_nothing|没什么
 qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
-; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
-; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
+; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
 qstr_{reg4}_killed_{reg5}|{reg4}被杀，{reg5}受伤，{reg6}被击溃
 qstr_{reg4}_killed_{reg5}_|{reg4}被杀，{reg5}受伤
 qstr_{reg4}_killed_{reg5}_r|{reg4}被杀，{reg5}被击溃
@@ -619,7 +598,6 @@ qstr_mounted_archer|骑射手
 qstr_support|支援
 qstr_bodyguard|护卫
 qstr_undetermined_type_of|未定类型
-
 qstr_{s1}_has_fled_the_ba|{s1}逃离了战场！
 qstr_Your_troops_are_at_{|我军士气为{reg1}%(+{reg3}%加成)，敌军士气为{reg2}%！
 qstr_Morale_of_your_troop|我军士气动摇了！
@@ -647,12 +625,9 @@ qstr_have_won_the_sea_bat|敌人赢得了海战的胜利，这打击了你的士
 qstr_loses_Faction_Strength|受到破坏性的突袭会失去势力值
 qstr_loses_Faction_Strength_|因为你在海上的成功，敌对派系力量下降了。
 qstr_You_spent_{reg67}_of|你花费了{reg67}你的影响力用于{s1}，还剩下{reg66}影响力。
-
 ; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
-
 ; qstr_{s1}_{s0}|{s1}, {s0}
 ; qstr_{s1}_and_{s0}|{s1} and {s0}
-
 qstr_No_Troops_Left.|士兵们一个不剩。
 qstr_avoid_melee|避免近战
 qstr_stand_and_fight|防守和作战
@@ -725,9 +700,9 @@ qstr_Fixed_Camera___Left_|固定相机—左肩
 ; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|当访问城镇、据点和营地时，你可以与四处走动的人们谈话。不同派系的人有不同的事可说—一些能够让你理解他们的想法，其它的会分享他们的传闻。他们都能够让你更加了解他们的文化和派系，有时他们可能知道找到神秘地点的线索，或是在野外生存和在魔戒圣战中战斗的技巧和窍门。
 qstr_Cannot_leave_now.|现在不能离开。
-qstr_You_have_found_the_l|你找到了当地铁匠…(+{reg3}经验)
-qstr_You_have_found_the_lo|你找到了地方长官…(+{reg3} 经验)
-qstr_You_have_found_the_loc|你找到了当地仓库…(+{reg3} 经验)
+; qstr_You_have_found_the_l|You have found the local smithy.
+; qstr_You_have_found_the_lo|You have found the local authority.
+; qstr_You_have_found_the_loc|You have found the local warehouse.
 qstr_You_look_through_Hen|你端详汉那斯安南，也就是落日之窗。美丽的景色恢复了你对西方和世界的信心。
 qstr__cancelled_the_{reg1|(取消了杀囚获得的{reg10}经验值)
 qstr_Forming_ranks.|正在列阵。
@@ -1057,7 +1032,6 @@ qstr_The_war_expands_comm|随着战事的如火如荼，指挥官们变得更加
 qstr_Your_party_is_spotte|你的部队被{s1}发现了。
 qstr_Party_has_nothing_to|部队食物短缺了！
 qstr_You_pay_for_accommod|你支付了宿金。
-qstr_Your_scouts_have_rep|你的斥候打听到消息，在{s3}附近有一个{s2}
 qstr_The_troll_outside_{s|{s2}外的食人妖被杀了。任务取消。
 qstr_{s1}_was_killed_on_t|{s1}已经战死沙场。任务取消。
 qstr_{s1}_has_been_defeat|{s1}已被击败。任务取消。
@@ -1087,6 +1061,7 @@ qstr_{s5}_has_stopped_fol|{s5}不再跟随你。
 qstr_You_have_{reg69}_all|你有{reg69}友军部队跟随着你。
 qstr_You_have_{reg69}_ally|你有{reg69}友军部队跟随着你。
 qstr_The_forces_of_{s2}_h|{s2}的军队已经再次集结并向{s15}进军中！
+qstr_Your_scouts_have_rep|你的斥候打听到消息，在{s3}附近有一个{s2}
 qstr_{s1}_from_{s2}|自{s2}来的{s1}
 qstr_When_dealing_with_lo|请记住，在{s11}与当地人交易的时候，他们不认识你，也不一定承认你在{s10}取得的功绩。(能在{s11}用于交易的资源点和你在{s10}取得的的资源点不同，你要在{s11}取得当地派系的资源点以便与当地人交易；查看报告菜单获取更多消息)
 qstr_Info|信息
@@ -1134,6 +1109,7 @@ qstr_Um..._by_enchanting_|恩...用来吸铁？
 qstr_Magnets_are_made_of_|磁铁是开采自地下的金属做的，它天然就有磁力因为它含有引力的成分。
 qstr_i_wont_a_bonerlrord_|哇想要骑砍2领祖的最后之日啊啊！！
 qstr_Install_TLD_in_your_|安装最后之日到骑马与砍杀2：领主的模组文件夹，在module.ini文件中增加一行指令：“compatible_with_wfas = 1”，然后你就可以在战团和Warrider 0.202版里面玩最后之日了。
+; qstr_Bannerlord_runs_on_a|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
 qstr_dis_mod_takes_2_long|择个模组花了老长时间才发布！烂！！
 qstr_Well_there_s_a_lot_o|嗯，因为有很多新的材质纹理和其它东西要做，我猜这很费时…
 qstr_It_has_been_recently|这个模组的正式版近日发布了，如果你忘了网址，你可以上lemonparty.org去下载。
@@ -1226,6 +1202,7 @@ qstr_It_is_my_duty_to_prot|保护盟友是我的天职。
 qstr_I_am_{s4}_{s15}_of_{|我是{s4}，{s6}的{s15}
 qstr_I_am_{s4}_a_commande|我是{s4}，{s6}的指挥官
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5?和{s8}的统治者。:}
+; qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
 ; qstr_{playername}_our_sco|{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least.
 ; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
 ; qstr_Alas_that_I_could_no|Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware.
@@ -1287,6 +1264,7 @@ qstr_Elves_of_Imladris_an|瑞文戴尔和罗斯洛立安的精灵
 ; qstr_About_time_you_showe|About time you showed up, {playername}. We're at war now and I will not tolerate any insubordination. We are fighting against {s11}, but we have to gather our strength and smite the enemy in the field before we can move against their fortresses. Each defeat of our enemies will strengthen our war efforts and bring them closer to their utter destruction. So I trust you to fight our enemy at every opportunity, be it a mere scout party or a war host. Also, you are to support our captains and our allies if you see them fight. Do not fail them or I will know.
 qstr_we_are_fighting_agai|我们目前正与{s13}交战
 qstr_we_are_not_fighting_|我们目前没有与任何人交战
+; qstr__{s14}_gained_{reg78| {s14} gained {reg78} experience.
 qstr_Oh?_Let_me_see_that.|哦？让我看看…很好很好！非常感谢你把这封信带给我，{playername}。拿着徽章作为我收到信的证物，下次见到{s9}的时候请代我向他问好。
 qstr_Give_me_that!_Hrmph!|给我的？哇啊！很好！{playername}。你能把这个带给我，说明你是个有用的仆人。告诉{s9}，让他多用用你。
 qstr_What?_Let_me_see_tha|什么？让我看看…恩，{playername}。感谢你把这封信带给我，现在你可以走了。
@@ -1530,10 +1508,6 @@ qstr_One_{s6}_left_the_pa|一名{s6}离开了队伍。
 ; qstr_I_understand._I_will|I understand. I will stay with you. For a while.
 ; qstr_I_have_played_my_rol|I have played my role for many long years, for many lifetimes of mortal men. This war is for Mankind to fight. I will leave for the West and some may decide to follow me.
 ; qstr_{reg1}_Veteran_Elves|{reg1} Veteran Elves decided to leave your party.
-qstr_You_chose_well_{sir/|明智的选择，{先生/女士}。我的伙计们知道如何履行诺言，但他们也知道如何收取报酬。
-qstr_Well_done_{sir/madam|好的，{先生/女士}。拿着你的钱和红酒跟在我的身后，卡拉迪亚将没人让你感到畏惧。
-qstr_We_are_at_your_servi|听候差遣，{先生/女士}。请将目标的方向只给我，我们会完成剩下的部分的。
-qstr_You_will_not_be_diss|不会令您失望的，{先生/女士}。整个卡拉迪亚都找不出像我们这样精锐的战士。
 qstr_What_an_amazing_feat|多么惊人的战功啊！
 qstr_Well_done!|干的漂亮！
 qstr_Nice_legwork.|出色的外勤。
@@ -1576,11 +1550,7 @@ qstr_The_{s11}_of_{s10}_a|{s10}的{s11}希望你能护送一些{s12}到{s13}。
 qstr__Guards_slaughter_hi|守卫，解决掉他！
 qstr_Slaughter_him_for_fr|宰了他吃肉！
 qstr_This_is_{s5}_Command|这里是{s5}，指挥官。
-qstr_{s6}_This_place_and_|{s6}这里和它的周边当然都属于你，{领主/夫人}大人。
 qstr_{s6}_This_place_and_t|{s6}这里和它的周边都属于{s8}的{s7}
-qstr_{s3}_and_{s5}|{s3}和{s5}
-qstr_{s3}_{s5}|{s3}，{s5}
-qstr_{reg20?We_mostly_pro|{reg20?我们这里主要是出产{s5}:这些天我们这里几乎什么都没有出产}。如果你想了解更多的情况，你可以去问{reg4?行政长官:村中长老}。他在附近，就在那边。
 qstr_Hey_scum!_I_can_fix_|嘿渣滓！看来你的下巴要修理修理了！
 qstr_Watch_where_you_re_g|看看你正朝哪个方向跑，渣滓！
 qstr_I_don_t_like_your_fa|我不喜欢你的长相，我认为该给你做个整容手术了。

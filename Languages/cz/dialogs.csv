@@ -165,16 +165,16 @@ dlga_start:player_hire_troop|{s33}^^Já velím posádce v {s21}. Chtěl jsi mě 
 dlga_player_hire_troop:player_hire_troop_give|Někteří vojáci v mé skupině by zde byli užitečnější, aby bránili {s21}.
 dlga_player_hire_troop:close_window|Chci si prohlédnout své vojáky, co zde sídlí.
 dlga_player_hire_troop:player_hire_trolls_take|Jsem velitel, který je hoden bojového zlobra - dej mi jednoho!
-; dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
+dlga_player_hire_trolls_take:close_window|Chtěl by jsi založit vlastní Černou Legii, co? Vrať se až budeš mít plně vyrostlého Trolla ve svých řadách.
 dlga_player_hire_trolls_take:close_window.1|Ty? Ty malý červe. Zmiz mi z očí. Bojový zlobr, to určitě. (Musíš být {s24} nebo vyšší)
 dlga_player_hire_trolls_take:player_hire_trolls_how_many|Bude tě to stát {reg21} vlivu.
 dlga_player_hire_trolls_take:close_window.2|Změnil jsem názor.
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Hrůzostrašná bestie. A teď, je moje!
-; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
+dlga_player_hire_trolls_how_many:player_hire_troll_armoured|Budou bojovat lépe když je budou chránit železné plechy. Postarej se o to!
 dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Změnil jsem názor.
-; dlga_player_hire_troll_buy_not_enough:close_window|Wasting my time...
-; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
+dlga_player_hire_troll_buy_not_enough:close_window|Mrháš mým časem...
+dlga_player_hire_troll_buy_done:close_window|Dobře se postarej o tohohle velikána a on se postará o tebe! Ha!
 dlga_player_hire_troop:close_window.1|Potřebuji nějaký trénink.
 dlga_player_hire_troop:tld_sell_prisoners|Přivedl jsem vám nějake zajatce.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Podívejme se na ubohou spodinu.
@@ -269,7 +269,7 @@ dlga_lord_start:lord_generic_mission_completed.7|Donesly se mi zprávy, že vši
 dlga_lord_start:lord_defend_refugees_failed|{playername}, donesly se mi zprávy o tom, že uprchlíci byli napadeni útočníky a zmasakrováni. Tohle je velké zklamání...
 dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Odpusť mi, {s65}, Nebyl jsem schopen je ubránit.
 dlga_lord_defend_refugees_failed_1a:lord_pretalk|Jsou to nevinní, kdo ve válkách nejvíce trpí. Je možné, že v budoucnu bude více těchto uprchlických karavan. Doufám, že příště budete lépe {připrave/připravena}.
-dlga_lord_start:lord_defend_refugees_half_completed|Donesly se mi zprávy, že pouze {reg17} uprchlické karavany dorazily do cíle. Je to smutné, ale to je daň za válku. Je možné, že v budoucnu bude více těchto uprchlických karavan. Doufám, že příště budete lépe {připrave/připravena}.
+dlga_lord_start:lord_defend_refugees_half_completed|Donesly se mi zprávy, že pouze {reg17} uprchlické karavany dorazily do cíle. Je to smutné, ale to je daň za válku. Je možné, že v budoucnu bude více těchto uprchlických karavan. Doufám, že příště budeš lépe {připraven/připravena}.
 dlga_lord_defend_refugees_half_completed:lord_pretalk|Příště budu lépe připraven, můj lorde.
 dlga_lord_start:lord_generic_mission_completed.8|Donesly se mi hlášení, že všichni uprchlíci byli zabiti a, že zajatecké transporty dorazí zanedlouho... {Vedl/Vedla} sis dobře. Tohle je pouze začátek, ale brzy budeme tomuto území vládnout.
 dlga_lord_start:lord_hunt_refugees_failed|{playername}, naši špióni nám říkají, že jste nezachytili {reg1} vlaků uprchlíků. Jsou slabé a pomalé, a přesto selžete. K čemu nám jste?
@@ -707,10 +707,10 @@ dlga_beorn_help7:close_window.1|(zvedne ruku a odejde beze slova)
 ; dlga_kill_scout_1:kill_scout_2|Watch where you’re taking us, Orc. We have not travelled this far to perish in an ambush, before the war has even begun!
 ; dlga_kill_scout_2:kill_scout_3|And war we shall have, indeed! Have no fear, warrior, Mordor is an ally to you and yours. Take this chit - get some supplies. Good for use in all Mordor outposts! Get a round of Orc brew on me!
 dlga_kill_scout_3:kill_scout_4|(RESOURCE POINT TUTORIAL)^^ Resource pointy které potřebuješ na nákupy v Mordoru nejsou ty stejné které získáš u své frakce, ale ty které získaš v Mordoru. ^^See REPORTS for more information.
-; dlga_kill_scout_4:kill_scout_5|You want us to drink Orc swill? We'd rather be drinking our own piss.
+dlga_kill_scout_4:kill_scout_5|Chceš abychom pily Orkské splašky? Radši bychom pily vlastní moč.
 ; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I’ve won my bet with Gothmog, thanks to you!!^^ I’ll tell him and the other Bosses about you, for sure. Lugbúrz will know how useful you were today, have no fear! The Great Eye is upon you, now!^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_kill_scout_6:kill_scout_7|(TURTORIAL FRAKČNÍCH HODNOSTÍ) ^^Body hodností ti umožňují postupovat řebříčkem hodností tvé frakce (i dalších frakcí). ^^Tyto hodnosti ovlivňují tvojí maximální velikost družiny, příjem resource pointů a odemykají specifické odměny.
-; dlga_kill_scout_7:kill_scout_8|What I do is none of your affair, you disgusting creature. Now let’s move!
+dlga_kill_scout_7:kill_scout_8|Do toho co dělám ti nic není ty odporné stvoření. A teď pohyb!
 dlga_kill_scout_8:close_window|Jak si přejete, jak si přejete. Tudy!
 dlga_woodelf_help_1:woodelf_help_2.1|Nikdy předtím jsem tak velké skřety neviděl. Odporná stvoření. Ale už se tím netrap. Jsem voják, ve válce kterou všichni cítíme přicházet.
 dlga_woodelf_help_2:woodelf_help_3.1|Jsi? Samozřejmě že jsi! Viděl jsem že jsi schopný bojovník. Dnes jsem měl opravdové štěstí, takže ho nebudu dál pokoušet a pospíším rovnou do své vesnice a všechny varuji před těmito odpornými bestiemi.
@@ -724,9 +724,9 @@ dlga_healers_wound_check:healers_wound_heal|Ano, věnujte se nám.
 dlga_healers_wound_check:close_window|Teď ne.
 dlga_healers_injured_check:close_window|Teď ne.
 dlga_hungry_orc_1:hungry_orc_2|Co ode mě očekáváš, kryso?
-; dlga_hungry_orc_2:hungry_orc_choice|Those weaklings over there are no use in a proper fight, anyway. Let us eat THEM!
-; dlga_hungry_orc_choice:hungry_orc_eat|All right, grab them! [Kill a few weaklings to feed your orcs.]
-; dlga_hungry_orc_choice:hungry_orc_no_check|No way. None of my men get eaten! Fall back in line or I'll have you eat your own tongue! [Leadership Check]
+dlga_hungry_orc_2:hungry_orc_choice|Ty padavky támhle jsou nepoužitelné v pořádném boji. POJĎME JE SEŽRAT!
+dlga_hungry_orc_choice:hungry_orc_eat|Dobře, vemte je! [Zabíj pár padavek aby jsi nakrmil své orky.]
+dlga_hungry_orc_choice:hungry_orc_no_check|Nikdy. Žádný z mích mužů nebude sežrán! Zapadni do řady nebo tě nechám sežrat tvů vlastní jazyk! [Zkouška vedení]
 dlga_start:sad_elf_1|Podívejte {lord/lady} rackové! Vidět je tady mě překvapuje a znepokojuje.
 dlga_sad_elf_1:sad_elf_2|Slyším je. Jaké novinky nám sdělují?
 dlga_sad_elf_2:sad_elf_choice|Ach, příběhy z moře a z ještě větší dálky. {Lord/Lady} jsem už unavený z této války kterou vedeme, unavený ze samotné země po které kráčíme. Omavám se že Ennor (Středozem) je pro mě ztracen. Nech mě odejít!
@@ -751,16 +751,16 @@ dlga_start:close_window.20|Veliteli, děkuji za vaši pomoc. Vypadalo s námi bl
 dlga_start:close_window.21|Veliteli, děkuji za vaši pomoc. Ještě že jste byl poblíž.
 dlga_start:freed_hero_answer|Jsem ti dlužný za mé osvobození příteli.
 dlga_freed_hero_answer:freed_hero_answer_1|Nikam nejdeš. Teď budeš mým vězněm!
-; dlga_freed_hero_answer_1:close_window|Alas. Will my luck never change?
+dlga_freed_hero_answer_1:close_window|Běda. Změní se moje stěstí někdy?
 dlga_freed_hero_answer:freed_hero_answer_2|Jsi volný {s65}. Můžeš jít kam se ti zlíbí.
-; dlga_freed_hero_answer_2:close_window|Thank you, Commander. I never forget someone who's done me a good turn.
+dlga_freed_hero_answer_2:close_window|Děkuji Veliteli. Nikdy nezapomenu na někoho kdo mi prokázal maličkost.
 dlga_freed_hero_answer:freed_hero_answer_3|Nechtěl by ses ke mě přidat?
 dlga_freed_hero_answer_3:close_window|Dobře, připojím se k tobě.
 dlga_freed_hero_answer_3:close_window.1|Ne, chci jít sám.
-; dlga_start:defeat_hero_answer|You'll not live long to enjoy your victory. My kinsmen will soon wipe out the stain of this defeat.
+dlga_start:defeat_hero_answer|Nebudeš žít dost dlouho aby jsi si užil své vítěztví. Moji příbuzní brzy smažou tuto skvrnu poražení.
 dlga_defeat_hero_answer:defeat_hero_answer_1|Od ted jste mym zajatcem.
 dlga_defeat_hero_answer_1:close_window|K čertu s tebou. Toho budeš litovat.
-; dlga_defeat_hero_answer:defeat_hero_answer_2|You're free to go this time, but don't cross my path again.
+dlga_defeat_hero_answer:defeat_hero_answer_2|Pro teď můžeš jít ale už mi nelez znovu do cesty.
 dlga_defeat_hero_answer_2:close_window|Znovu se setkáme.
 dlga_start:fugitive_1|Co chceš?
 dlga_fugitive_1:fugitive_2|Hledám uprchlíka jménem {s4}, jehož popis sedí přesně na tebe.
@@ -782,26 +782,15 @@ dlga_start:runaway_serf_intro_1|Dobrý den pane.
 ; dlga_runaway_serf_intro_3:runaway_serf_go_back|You have gone against our laws by running from slavery. You will go back to {s1} now!
 dlga_runaway_serf_go_back:close_window|Dobře pane. Jak si přejete. Vyrazím teď zpět do {s5}.
 ; dlga_start:runaway_serf_talk_caught|Good day master. We were heading back to {s5}, but I am afraid we lost our way.
-; dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now!
+dlga_runaway_serf_talk_caught:runaway_serf_go_back|Nepokoušej moji trpělivost. Teď se vrátíš!
 dlga_start:runaway_serf_talk_again_return|Jsme na cestě zpět do {s5} pane.
-; dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Make haste now. The sooner you return the better.
+dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Pohni si. Čím dříve se vrátíš tím lépe.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|dobrá, pokračujeme
 dlga_runaway_serf_talk_again_return_2:close_window|jistě můj pane, jak si přejete
 dlga_mayor_talk:mayor_deliver_wine|Bylo mi řečeno, abych ti dodal {reg9} jednotek {s4}.
 ; dlga_mayor_deliver_wine:mayor_pretalk|At last! Our stocks were almost depleted. I had arranged for the delivery of the {s4} in advance. And give {s9} my regards.^^[earned {reg14} Resource Points of {s14}]
 ; dlga_mayor_talk:mayor_deliver_wine_incomplete|I was on a mission to deliver you {reg9} units of {s4}, but I lost some of the cargo to the enemy.
 ; dlga_mayor_deliver_wine_incomplete:mayor_pretalk|They will pay for this! Well, at least we have some {s4}. Thank you anyway.^^[earned {reg14} Resource Points of {s14}]
-; dlga_start:mercenary_tavern_talk|Do you have a need for mercenaries, Commander? {reg3?Me and {reg4?{reg3} of my mates:one of my mates} are:I am} looking for a master. We'll join you for {reg5} denars.
-dlga_start:mercenary_after_recruited|jaké jsou rozkazy veliteli ?
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|připravte se, za úsvitu vyrazíme
-; dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|Take your time. We'll be staying in this town for a while.
-; dlga_mercenary_after_recruited_2:close_window|Yes, Commander. We'll be ready when you tell us to leave.
-; dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|All right. I will hire all of you. Here is {reg5} denars.
-; dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|All right. But I can only hire {reg6} of you. Here is {reg5} denars.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|To zní dobře. Ale nemůžu si teď dovolit najmout další muže.
-; dlga_tavern_mercenary_cant_lead:close_window|That's a pity. Well, {reg3?we will:I will} be lingering around here for a while, if you need to hire anyone.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|To zní dobře. Ale nemůžu teď vést další muže.
-dlga_mercenary_tavern_talk:close_window|Je mi líto. Teď žádné další muže nepotřebuji.
 ; dlga_start:trainer_pretalk|You have survived up to Gauntlet wave {reg2}. {s4}
 dlga_start:trainer_pretalk.1|Velmi dobře, zneškodnil jsi všechny protivníky.
 dlga_start:trainer_talk|Dobrý den. Připraven na dnešní trénink?
@@ -814,7 +803,7 @@ dlga_trainer_combat_pretalk:trainer_talk_combat|Co jiného chceš ještě vědě
 dlga_trainer_talk_combat:trainer_explain_defense|Řekni mi, jak se bránit.
 dlga_trainer_talk_combat:trainer_explain_attack|Řekni mi něco o útočení se zbraněmi.
 dlga_trainer_talk_combat:trainer_explain_horseback|Řekni mi něco o bojování na koni.
-; dlga_trainer_talk_combat:trainer_pretalk|I guess I know all the theory I need. Let's talk about something else.
+dlga_trainer_talk_combat:trainer_pretalk|Myslím že znám veškerou teorii kterou potřebuji. Pojďme se pobavit o něčem jiném.
 ; dlga_trainer_explain_defense:trainer_explain_defense_2|Good question. The first thing you should know as a fighter is how to defend yourself. Keeping yourself out of harm's way is the first rule of combat, and it is much more important than giving harm to others. Everybody can swing a sword around and hope to cut some flesh, but only those fighters that are experts at defense live to tell of it.
 ; dlga_trainer_explain_defense_2:trainer_explain_defense_3|Now. Defending yourself is easiest if you are equipped with a shield. Just block with your shield. [Hold down the right mouse button to defend yourself with the shield.] In this state, you will be able to deflect all attacks that come from your front. However, you will still be open to strikes from your sides or your back.
 dlga_trainer_explain_defense_3:trainer_explain_defense_4|co když nemám štít ? 
@@ -822,7 +811,7 @@ dlga_trainer_explain_defense_3:trainer_explain_defense_4|co když nemám štít 
 ; dlga_trainer_explain_attack:trainer_explain_attack_2|Good question. Attacking is the best defence, they say. A tactic many fighters find useful is taking an offensive stance and readying your weapon for attack, waiting for the right moment for swinging it. [You can ready your weapon for attack by pressing and holding down the left mouse button.]
 dlga_trainer_explain_attack_2:trainer_explain_attack_3|To zní užitečně.
 ; dlga_trainer_explain_attack_3:trainer_explain_attack_4|It is a good tactic, but remember that, your opponent may see that and take a defensive stance against the direction you are swinging your weapon. If that happens, you must break your attack and quickly attack from another direction [You may cancel your current attack by quickly tapping the right mouse button].
-; dlga_trainer_explain_attack_4:trainer_explain_attack_5|If my opponent is defending against the direction I am attacking from, I will break and use another direction.
+dlga_trainer_explain_attack_4:trainer_explain_attack_5|Jestli že můj nepřítel brání směr ze kterého útočím, stáhnu se a zaůtočím z jiného.
 ; dlga_trainer_explain_attack_5:trainer_combat_pretalk|Yes, selecting the direction you swing your weapon is a crucial skill. There are four main directions you may use: right swing, left swing, overhead swing and thrust. You must use each one wisely. [to control your swing direction with default controls, move your mouse in the direction you want to swing from as you press the left mouse button].
 ; dlga_trainer_explain_horseback:trainer_combat_pretalk|Very good question. A horse may be a warrior's most powerful weapon in combat. It gives you speed, height, power and initiative. A lot of deadly weapons will become even deadlier on horseback. However you must pay particular attention to horse-mounted enemies couching their lances, as they may take down any opponent in one hit. [To use the couched lance yourself, wield a lance or similar weapon, and speed up your horse without pressing attack or defense buttons. after you reach a speed, you'll lower your lance. Then try to target your enemies by maneuvering your horse.]
 ; dlga_trainer_choose_mode:trainer_choose_mode_player|We have several training modes to improve our soldiers' skills. Single combat will pit you against one to four opponents, in team combat your team of four will face four, eight or twelve combatants, and, finally, Gauntlet is the ultimate challenge for any warrior - you'll face waves of increasing number of opponents all by yourself. Mass melee is a simple brawl.^Which one do you prefer?
@@ -857,12 +846,12 @@ dlga_start:mayor_begin.1|Dobrý den, {playername}.
 ; dlga_mayor_talk:mayor_deliver_iron|I've brought you better quality metal, {reg9} units of {s4}, when you requested {s3}.
 ; dlga_mayor_talk:mayor_deliver_iron.1|Here's your metal supply, {reg9} units of {s4}.
 ; dlga_mayor_talk:mayor_deliver_iron.2|I've brought more metal, {reg8} units of {s4}, when you requested {reg9}.
-; dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Very nice work, {playername}. Our smiths will find ways to put everything they are given to good use.
+dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Dobrá práce {playername}. Naši kováři najdou dobrý způsob jak zužitkovat vše co jim bylo dáno.
 dlga_mayor_deliver_iron_completed:close_window|Dělám co je v mích silách.
-; dlga_mayor_sea_battle_start:mayor_sea_battle_question|Excellent! We are in dire need of crewmen. Are you ready to board the ships?
+dlga_mayor_sea_battle_start:mayor_sea_battle_question|Výborně! Hrozně potřebujeme novou posádku. Jsi připraven na nalodění?
 dlga_mayor_sea_battle_question:mayor_sea_battle_yes|Ano jsem.
 dlga_mayor_sea_battle_question:mayor_sea_battle_no|Potřebuji nějaký čas, abych se připravil.
-; dlga_mayor_sea_battle_yes:close_window|Good. Have your troops board the ship now, we will set sail soon.
+dlga_mayor_sea_battle_yes:close_window|Dobře. Přikaž svým jednotkám ať nastoupí na loď, brzy odplouváme.
 dlga_mayor_sea_battle_no:close_window|Pospěš si, nemáme moc času, než budeme muset odplout.
 ; dlga_mayor_talk:mayor_reinforced_center_finished|I have reinforced {s3} as you have asked me to.
 dlga_mayor_begin:kill_quest_bandits_failed|Doslechl jsem se, že si nesplnil, o co jsem tě žádal. To je zklamání,{playername}.
@@ -883,7 +872,7 @@ dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|Je mi to líto. Ti lid�
 ; dlga_move_cattle_herd_failed_2:close_window|Well, it was your responsibility to deliver them safely, no matter what.  You should know that the commander demanded to know who is responsible for this failure.  So I told him it was you.
 ; dlga_mayor_begin:mayor_friendly_pretalk|I have heard about your deeds. You have given those goblins the punishment they deserved.  You are really as good as they say.^^[earned {reg14} Resource Points of {s14}]
 dlga_mayor_begin:mayor_talk|Co pro vás mohu udělat?
-; dlga_mayor_friendly_pretalk:mayor_talk|Now... What else may I do for you?
+dlga_mayor_friendly_pretalk:mayor_talk|Co pro vás ještě mohu udělat?
 dlga_mayor_pretalk:mayor_talk|Ano?
 dlga_mayor_talk:mayor_info_begin|Můžeš mi říct o tom co děláš?
 dlga_mayor_talk:merchant_quest_requested|Jak mohu posloužit naší věci?
@@ -899,14 +888,14 @@ dlga_merchant_quest_about_job:merchant_quest_about_job_2|Co ty na to?
 dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|Co když ho nebudu moci splnit?
 dlga_merchant_quest_about_job_2:merchant_quest_about_job_working|No, pořád na tom pracuji.
 dlga_merchant_quest_about_job_working:mayor_pretalk|Dobře, jsem s jist, že to zvládneš.
-; dlga_merchant_quest_last_offered_job:merchant_quest_brief|Eh, you want to reconsider that. Good...
+dlga_merchant_quest_last_offered_job:merchant_quest_brief|Eh, chceš si to ještě rozmyslet. Dobře...
 dlga_merchant_quest_what_if_fail:mayor_pretalk|Doufám, že neselžeš. Nemůžeme si dovolit ztratit náklad, který neseš.
-; dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Well, just do your best to finish it.
+dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Prostě udělej to nejlepší aby jsi to dokončil.
 dlga_merchant_quest_taken:mayor_pretalk|Výborně. Spoléhám na tebe. Hodně štěstí.
-; dlga_merchant_quest_stall:mayor_pretalk|Well, I'll see to find someone else. But tell me if you change your mind.
+dlga_merchant_quest_stall:mayor_pretalk|Najdu si někoho jiného. Ale řekni mi jestli si to rozmyslíš.
 ; dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
 dlga_mayor_talk_ask_location_2:mayor_pretalk|Na tom nezalezi.
-; dlga_merchant_quest_requested:merchant_quest_brief|Well, you look able enough. I think I might have something you could do.
+dlga_merchant_quest_requested:merchant_quest_brief|Vypadáš dost schopně. Myslím že tu mám něco o co by jsi se mohl postarat.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Nedaleko {s5} se nedávno bojovalo. Ten zmatek přilákal několik tlup kmenových skřetů, kteří drancovali v okolí. Někdo by jim měl dát co proto. Co na to říkáš?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Ano, udělám to.
 dlga_merchant_quest_looters_choice:merchant_quest_stall|Obávám se, že na to si musíte najít někoho jiného.
@@ -927,14 +916,14 @@ dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Omlouvám se, ale na
 dlga_merchant_quest_requested:merchant_quest_brief.5|Úkol říkáš? Potřebuji, aby nám někdo dovezl zásoby rud a kovů. Doly a silnice už nejsou bezpečné, a získat suroviny je stále těžší a těžší. Nepřítel asi má vlastní záhadné způsoby těžby rudy, protože skřeti a jiná odporná stvoření chodí odění v kovu. Kvalita kovu odpovídá nositelům, je to slabé a levné železu, kterému bychom v jiných časech nevěřil, ale doba je zlá, a naši slévači se naučili pracovat i se špatným kovem. I troška pomůže.
 dlga_merchant_quest_requested:merchant_quest_brief.6|Úkol říkáš? Pán si každý den žádá nové vojáky, nikdy pro něj nejsou dost dobří. Zbroj neroste na stromech, víš? Ty ponravy starající se o zásoby rudy jsou slaboši a podrazáci, snadno je někdo povije a my přijdeme o zásoby. Ale lidi, elfové, chodí si v lesklém drahém kovu, jako králové. I chudáci. Ober jejich mrtvoly a přines mi kov, {playername}. Z libry kovu udělá náš slévač zbroj pro celou tlupu.
 ; dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|We need {reg5} units of {s6} in {reg6} days, before our weaponsmiths run out of raw materials. What do you say?
-; dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|Alright. I will get the metal scraps and bring them to you.
+dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|Dobře. Seženu ty kovový šrot a přinesu ti ho.
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Jsem příliš zaneprázdněn, abych se s tím vypořádal.
 dlga_merchant_quest_requested:merchant_quest_brief.7|Děkuji že nabízíš pomoc. Vlastně jsem hledal někoho, kdo by eskortoval zásobovací karavanu. Možná bys to mohl udělat ty...
 ; dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|I am going to send a supply train to {s8}. However with all those enemy patrols out there, I don't want to send them without an extra escort. A group at least {reg4} would offer them adequate protection. Can you lead that supply train to {s8} in 7 days?^^[you will earn {reg14} Resource Points of {s14}]
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Dobře. Doprovodím tu zásobovací karavanu.
-; dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|I am afraid I don't have that many soldiers with me.
+dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Obávám že se sebou nemám tolik vojáků.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Omluvám se. Zrovna teď nemohu.
-; dlga_start:close_window.23|We can cover the rest of the way ourselves. Thanks.
+dlga_start:close_window.23|Pokryjeme zbytek cesty samy. Díky.
 ; dlga_start:close_window.24|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
 dlga_start:merchant_caravan_intro_1|Zdravím. Ty musíš být náš doprovod, že?
 ; dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Yes. My name is {playername}. I will lead you to {s1}.
@@ -1000,7 +989,7 @@ dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Zapomeň na to
 ; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
 ; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Zapomeň na to
-; dlga_player_upgrade_troll_not_enough:close_window|Wasting my time...
+dlga_player_upgrade_troll_not_enough:close_window|Mrháš mým časem...
 ; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
 dlga_trade_requested_weapons:merchant_trade|Á, ano veliteli. Tohle zboží je nejlepší, jaké je k nalezení.
 ; dlga_trade_requested_horse:merchant_trade|Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|Hledám uprchlíka jménem {s4}
 dlga_town_dweller_ask_fugitive:close_window|Cizinci k nám přicházejí. Jestli tu je, určitě ho najdeš, když se po něm porozhlédneš.
 dlga_town_dweller_talk:town_dweller_ask_info|Co mi řekneš o této vesnici?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Co mi povíš o tomto místě?
-dlga_town_dweller_talk:town_dweller_ask_situation|Jak se tu žije?
-dlga_town_dweller_ask_situation:town_dweller_poor|Neštěstí zasáhlo mou rodinu {sir/madam}. Nemoc nám zničila úrodu a mé děti leží doma nemocné a hladové. Mí sousedi jsou příliš chudí na to, aby mi pomohli. 
-dlga_town_dweller_ask_situation:town_dweller_poor.1|Můj život je nuzný,  {sir/madam}. Nenašel jsem práci po celé měsíce a moje děti usínají každou noc hladové. Mí sousedi jsou moc chudí na to, aby mi pomohli.
-dlga_town_dweller_poor:town_dweller_poor_paid|Vem si těchto 300 denárů. Snad pomůžou tobě a tvé rodině.
-dlga_town_dweller_poor:town_dweller_poor_not_paid|Pak tedy musíš pracovat tvrději a nést své břemeno bez stěžování si.
-dlga_town_dweller_poor_not_paid:close_window|Ano {pane/paní} , udělám co si přejete.
-; dlga_town_dweller_poor_paid:close_window|{My lord/My good lady}.  You are so good and generous. I will tell everyone how you helped us.
-; dlga_town_dweller_ask_situation:close_window|Thank you for your kindness {sir/madam}. With your help our lives will be better. I will pray for you everyday.
-; dlga_town_dweller_ask_situation:town_dweller_talk|Times are hard, {sir/madam}. We work hard all day and yet we go to sleep hungry most nights.
-; dlga_town_dweller_ask_situation:town_dweller_talk.1|Times are hard, {sir/madam}. But we must count our blessings.
-; dlga_town_dweller_ask_situation:town_dweller_talk.2|We are not doing too badly {sir/madam}. We must count our blessings.
+dlga_town_dweller_talk:town_dweller_talk|Jak se tu žije?
 dlga_town_dweller_talk:town_dweller_ask_rumor|Jaké jsou tady nejnovější zvěsti?
 ; dlga_town_dweller_ask_rumor:town_dweller_talk|I don't know anything that would be of interest to you.
 ; dlga_town_dweller_brawl:town_dweller_brawl_confirm|Are you threatening me? The guards hardly wait for your type to show up.

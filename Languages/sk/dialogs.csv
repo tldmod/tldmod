@@ -791,17 +791,6 @@ dlga_mayor_talk:mayor_deliver_wine|Bol som poverený dodať {reg9} kusov {s4}.
 dlga_mayor_deliver_wine:mayor_pretalk|Tak predsa! Naše sklady u sú skoro vyčerpané. Dodávku {s4} som pripravil prednostne. A pozdravuj odo mňa {s9}.^^[získaných {reg14} Bodov Zásob {s14u}]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|Plnil som úlohu doviesť vám {reg9} kusov {s4}, ale o kus náklady som kvôli nepriateľom prišiel.
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|Za to zaplatia! Nuž, aspoň že máme nejaké {s4}. Aj tak ti ďakujem.^^[získaných {reg14} Bodov Zásob {s14u}]
-dlga_start:mercenary_tavern_talk|Potrebuješ žoldnierov, Kapitán?  {reg3?Ja a {reg4?{reg3} z mojich druhov:jeden z mojich druhov} hľadáme:hľadám} kapitána. Pridáme sa k tebe za {reg5} denárov.
-dlga_start:mercenary_after_recruited|Rozkazy, Kapitán?
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|Pripravte sa na pochod. Vyrazíme za svitania.
-dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|Odpočiňte si. Zostaneme v tomto meste ešte nejakú dobu.
-dlga_mercenary_after_recruited_2:close_window|Áno, kapitán. Budeme pripravený keď zavelíte k pochodu. 
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|V poriadku. Najímám si vás všetkých. Tu je {reg5} denárov.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|V poriadku. Ale môžem si najať len {reg6} z vás. Tu je {reg5} denárov.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|To znie dobre. Ale nemôžem si teraz dovoliť najať viac mužov.
-dlga_tavern_mercenary_cant_lead:close_window|To je škoda. Nuž, {reg3?zdržíme:zdržím} sa tu ešte nejaký čas, pokiaľ by si potreboval niekoho najať. 
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|To znie dobre. Ale nemôžem už veliť viacerým mužom.
-dlga_mercenary_tavern_talk:close_window|Je mi ľúto, ale nepotrebujem práve teraz viac mužov. 
 dlga_start:trainer_pretalk|Prežil si do vlny Výzvy {reg2}. {s4}
 dlga_start:trainer_pretalk.1|Pekne, porazil si všetkých svojich súperov.
 dlga_start:trainer_talk|Dobrý deň. Pripravený na dnešný tréning ?
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|Hľadám istého utečenca v me
 dlga_town_dweller_ask_fugitive:close_window|Do nášho mesta chodieva veľa cudzincov. Ak sa tu schováva, určite ho nájdete, len sa dobre porozhliadnite po okolí.
 dlga_town_dweller_talk:town_dweller_ask_info|Čo mi môžeš povedať o tejto dedine?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Čo mi môžeš povedať o tomto mieste?
-dlga_town_dweller_talk:town_dweller_ask_situation|Ako sa tu žije?
-dlga_town_dweller_ask_situation:town_dweller_poor|Pohroma padla na moju rodinu, {pane/paní}. Nákaza zničila úrodu na našich poliach, a chudáci moje deti ležia doma hladné a choré. Moji susedia sú rovnako chudobní, nemôžeme si pomôcť.
-dlga_town_dweller_ask_situation:town_dweller_poor.1|Môj život je na nič, {pane/paní}. Nebol som schopný nájsť prácu už niekoľko mesiacov, a chudáci moje deti chodia spávať každú noc hladné. Moji susedia sú rovnako chudobní, nemôžu mi pomôcť.
-dlga_town_dweller_poor:town_dweller_poor_paid|Vezmi si týchto 300 denárov. Dúfam, že pomôžu tebe i tvojej rodine. 
-dlga_town_dweller_poor:town_dweller_poor_not_paid|V tom prípade musíš pracovať usilovnejšie a zvládať ťažkosti bez sťažností.
-dlga_town_dweller_poor_not_paid:close_window|Áno {pane/paní}. Urobím ako vravíte.
-dlga_town_dweller_poor_paid:close_window|{Môj pane/Moja dobrá paní}. Ste veľmi štedrá a veľkorysá. Každému poviem, ako ste nám pomohli.
-dlga_town_dweller_ask_situation:close_window|Ďakujem za vašu nesmiernu láskavosť {pane/paní}. Díky vašej pomoci budú naše životy určite lepšie. Budem sa za vás modliť každý deň.
-dlga_town_dweller_ask_situation:town_dweller_talk|Časy sú kruté,  {pane/paní}. Ťažko pracujeme od svitu do mrku a aj tak chodíme väčšinou spávať hladný.
-dlga_town_dweller_ask_situation:town_dweller_talk.1|Časy sú kruté, {pane/paní}. Ale musíme byť rádi aspoň za to, čo máme.
-dlga_town_dweller_ask_situation:town_dweller_talk.2|Nevedie sa nám zle {pane/paní}. Musíme byť rádi za to, čo máme.
+dlga_town_dweller_talk:town_dweller_talk|Ako sa tu žije?
 dlga_town_dweller_talk:town_dweller_ask_rumor|O čom sa tu v poslednom čase vedú klebety?
 dlga_town_dweller_ask_rumor:town_dweller_talk|Neviem o ničom, čo by vás zaujímalo.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Vyhrážaš sa mi? Stráže len čakajú na to, než sa objaví nejaký problémový typ ako si ty.

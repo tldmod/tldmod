@@ -791,17 +791,6 @@ dlga_mayor_talk:mayor_deliver_wine|Ich soll Euch {reg9} Einheiten {s4} bringen.
 dlga_mayor_deliver_wine:mayor_pretalk|Endlich! Unsere Vorräte waren fast erschöpft. Ich hatte diese Menge {s4} bereits seit langem bestellt. Und überbringt {s9} meine Empfehlungen.^^ [{reg14} Ressourcenpunkte von {s14} verdient]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|Ich hatte den Auftrag, Euch {reg9} Einheiten {s4} zu liefern, aber ich habe einen Teil der Lieferung an den Feind verloren.
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|Sie werden dafür bezahlen! Nun, wenigstens haben wir diese kleine Menge {s4}. Trotzdem danke!^^[{reg14} Ressourcenpunkte von {s14} verdient]
-dlga_start:mercenary_tavern_talk|Hast du Bedarf an Söldnern, Hauptmann? {reg3?Ich und {reg4?{reg3} meiner Kameraden: einer meiner Kameraden} sind:sind} auf der Suche nach einem neuen Herrn. Für {reg5} Dinare werden wir uns dir anschließen.
-dlga_start:mercenary_after_recruited|Was sind Eure Befehle?
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|Bereitet Euch vor, wir ziehen im Morgengrauen weiter.
-dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|Lasst Euch Zeit. Wir werden hier eine Weile bleiben.
-dlga_mercenary_after_recruited_2:close_window|Ja, {Herr/Herrin}. Wir sind bereit, wenn Ihr losziehen wollt.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|In Ordnung. Ich werde alle von euch in Sold nehmen. Hier sind {reg5} Dinare.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|In Ordnung. Ich kann aber nur {reg6} von euch in Sold nehmen. Hier sind {reg5} Dinare.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|Das klingt gut, aber ich kann es mir zur Zeit nicht leisten, mehr Männer anzuwerben.
-dlga_tavern_mercenary_cant_lead:close_window|Das ist schade. Nun, {reg3?wir werden:ich werde} hier noch eine Weile bleiben, falls Ihr uns braucht.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|Das klingt gut, aber ich kann zur Zeit nicht noch mehr Männer mitnehmen.
-dlga_mercenary_tavern_talk:close_window|Tut mir leid, aber ich brauche zur Zeit keine weiteren Männer.
 dlga_start:trainer_pretalk|Du hast eine Gantelet-Welle {reg2} überlebt. {s4}
 dlga_start:trainer_pretalk.1|Sehr gut, du hast alle Gegner ausgeschaltet.
 dlga_start:trainer_talk|Hallo. Bereit für weitere Ausbildung?
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|Ich suche einen Flüchtigen nam
 dlga_town_dweller_ask_fugitive:close_window|Fremde kommen und gehen in diesem Ort. Wenn er hier ist, findet Ihr ihn sicher, wenn Ihr Euch umschaut.
 dlga_town_dweller_talk:town_dweller_ask_info|Was könnt Ihr mir über dieses Dorf erzählen?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Was könnt Ihr mir über diesen Ort erzählen?
-dlga_town_dweller_talk:town_dweller_ask_situation|Wie ist das Leben hier?
-dlga_town_dweller_ask_situation:town_dweller_poor|Meine Familie wurde vom Unglück getroffen, {Herr/Herrin}. Eine Seuche hat die Ernte vernichtet und meine armen Kinder sind hungrig und krank. Meine Nachbarn sind genauso arm und können mir nicht helfen.
-dlga_town_dweller_ask_situation:town_dweller_poor.1|Mein Leben ist armselig, {Herr/Herrin}. Ich habe seit Monaten keine Arbeit und meine armen Kinder müssen jeden Abend hungrig ins Bett. Meine Nachbarn sind selbst zu arm, um mir zu helfen.
-dlga_town_dweller_poor:town_dweller_poor_paid|Dann nimm diese 300 Dinare. Ich hoffe, das wird dir und deiner Familie helfen.
-dlga_town_dweller_poor:town_dweller_poor_not_paid|Dann musst du härter arbeiten und deine Bürde ohne Beschwerden ertragen.
-dlga_town_dweller_poor_not_paid:close_window|Ja, {Herr/Herrin}. Ich werde tun, was Ihr sagt.
-dlga_town_dweller_poor_paid:close_window|{Mein Herr/Meine Herrin}, Ihr seid zu großzügig. Ich werde jedem erzählen, dass Ihr uns geholfen habt.
-dlga_town_dweller_ask_situation:close_window|Danke für deine Güte, {mein Herr/meine Dame}. Meine deiner Hilfe werden unsere Leben besser. Ich werde jeden Tag für dich beten.
-dlga_town_dweller_ask_situation:town_dweller_talk|Die Zeiten sind schwierig, {Herr/Herrin}. Wir arbeiten jeden Tag sehr hart und müssen trotzdem meistens hungrig zu Bett gehen.
-dlga_town_dweller_ask_situation:town_dweller_talk.1|Die Zeiten sind schwierig, {Herr/Herrin}. Aber wir müssen dankbar sein für das, was wir haben.
-dlga_town_dweller_ask_situation:town_dweller_talk.2|Uns geht es nicht allzu schlecht, {Herr/Herrin}. Wir sind dankbar für das, was wir haben.
+dlga_town_dweller_talk:town_dweller_talk|Wie ist das Leben hier?
 dlga_town_dweller_talk:town_dweller_ask_rumor|Was ist das neueste Gerücht hier?
 dlga_town_dweller_ask_rumor:town_dweller_talk|Ich weiß von nichts, was Euch interessieren würde.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Drohst du mir? Die Wachen hier haben nur auf jemanden wie dich gewartet.

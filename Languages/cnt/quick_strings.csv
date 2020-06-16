@@ -33,27 +33,6 @@ qstr_Gauntlet_wave:_1|第 1 波
 qstr_Gauntlet_wave:_{reg1|第 {reg1} 波
 qstr_Remain_in_retirement|退 休
 qstr_Go_back_to_the_adven|回 到 冒 險
-qstr_You_have_retired_at_|在 {reg5} 天 冒 險 之 後 ， 你 已 經 在 {reg4} 等 級 退 休 了 。
-qstr_Effect_on_Score|有 效 分 數
-qstr_Settlements_owned_by|屬 於 你 的 設 施 : {reg0}
-qstr_{reg0?+:}{reg0}|{reg0?+:} {reg0}
-qstr_Friendly_Settlements|友 好 設 施 : {reg0}
-qstr_Hostile_Settlements:|敵 對 設 施 : {reg0}
-qstr_{reg0}|{reg0}
-qstr_Friendly_Lords:_{reg|友 好 君 主 : {reg0}
-qstr_Enemy_Lords:_{reg0}|敵 對 君 主 : {reg0}
-qstr_Victories:_{reg0}|勝 利 次 數 : {reg0}
-qstr_Defeats:_{reg0}|死 亡 次 數 : {reg0}
-qstr_Quests_Completed:_{r| 已 完 成 任 務 : {reg0}
-qstr_Companions_Found:_{r|找 到 同 伴 : {reg0}
-qstr_Companions_Lost/Depa|失 去 同 伴 / 同 伴 離 隊 : {reg0}
-qstr_Wealth:_{reg0}_denar|財 富：{reg0} 迪 納 爾
-qstr_Inventory:_{reg0}_de|庫 存：{reg0} 迪 納 爾
-qstr_Experience:_{reg0}|經 驗 值 : {reg0}
-qstr_Days_Passed:_{reg0}|經 過 天 數 : {reg0}
-qstr_Difficulty:_{reg0}%|困 難 度 : {reg0}%
-qstr_{reg3?+:}{reg0}|{reg3?+:} {reg0}
-qstr_TOTAL_SCORE:_{reg0}|總 分 : {reg0}
 qstr_A_peaceful_village_n|一 個 在 西 谷 不 遠 處 的 平 靜 村 子
 qstr_The_War_is_upon_Roha|戰 爭 要 蔓 延 到 洛 汗 了！
 qstr_Minas_Tirith___The_W|米 那 斯 提 力 斯 - 潔 白 之 城
@@ -180,7 +159,8 @@ qstr_Useful_Tool_of_{s5}|實 用 的 工 具 {s5}
 qstr_Servant_of_{s5}|{s5} 的 僕 人
 qstr_Unknown_to_{s5}|{s5} 的 未 知
 qstr_You_have_been_{reg1?|你 已 經 {reg1?晉 升:降 職} 為 {s24} ({reg0})！
-qstr_You_{reg1?earned:los|你 因 為 {s11} {reg1?earned:lost} 了 {reg11} 地 位 點 數 以 及  {reg12?and {reg12} 影 響 力 : }
+; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.
+qstr_You_{reg1?earned:lost|你 因 為 {s11} {reg1?earned:lost} 了 {reg11} 地 位 點 數 以 及  {reg12?and {reg12} 影 響 力 : }
 qstr_You_spent_{reg10}_of|你 在 {s1} 上 花 費 了 {reg10} 的 影 響 力，還 剩 下 {reg11}  點 。
 qstr_Troop_upkeep:|部 隊 維 護 ：
 qstr_{s11}_and_{s10}|{s11} 和 {s10}
@@ -250,8 +230,7 @@ qstr_nothing|沒 有 東 西
 qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
-qstr_{s77}_received_{reg8|{s77} 得 到 {reg84} 額 外 經 驗 值
-qstr_You_gained_{reg84}_i|你 得 到 {reg84} 智 力 加 成 的 經 驗 值
+; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
 qstr_{reg4}_killed_{reg5}|{reg4} 人 被 殺 ， {reg5} 人 受 傷 ， {reg6} 人 逃 跑
 qstr_{reg4}_killed_{reg5}_|{reg4} 人 被 殺 ， {reg5} 人 受 傷
 qstr_{reg4}_killed_{reg5}_r|{reg4} 人 被 殺 ， {reg5} 人 逃 跑
@@ -619,7 +598,6 @@ qstr_mounted_archer|騎 射 手
 qstr_support|幫 助
 qstr_bodyguard|護 衛
 qstr_undetermined_type_of|不 確 定 的 類 型
-
 qstr_{s1}_has_fled_the_ba|{s1} 逃 離 了 戰 場 ！
 qstr_Your_troops_are_at_{|我 軍 士 氣 為  {reg1}% (+ {reg3} % 加 成 ) ， 敵 軍 士 氣 為 {reg2}%！
 qstr_Morale_of_your_troop|我 軍 士 氣 動 搖 了 ！
@@ -647,12 +625,9 @@ qstr_have_won_the_sea_bat|贏 得 了 海 戰 ， 使 你 的 軍 隊 士 氣 �
 qstr_loses_Faction_Strength|由 於 破 壞 性 突 襲 ， 失 去 了 派 系 力 量
 qstr_loses_Faction_Strength_|由 於 你 在 海 上 的 成 功 ， 失 去 了 派 系 力 量 。
 qstr_You_spent_{reg67}_of|您 使 用 {s1} {reg67} 影 響 了 {reg67} ， 並 留 下 {reg66} 。
-
 ; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
-
 ; qstr_{s1}_{s0}|{s1}, {s0}
 ; qstr_{s1}_and_{s0}|{s1} and {s0}
-
 qstr_No_Troops_Left.|士 兵 們 一 個 不 剩 。
 qstr_avoid_melee|避 免 近 戰
 qstr_stand_and_fight|靠 攏 戰 鬥
@@ -725,9 +700,9 @@ qstr_Fixed_Camera___Left_|固 定 相 機 — 左 肩
 ; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|在 參 觀 城 鎮 ， 定 居 點 和 營 地 時 ， 您 可 以 與 周 圍 的 人 交 談 。 不 同 派 別 的 成 員 有 不 同 的 話 要 說 - 有 些 人 會 讓 你 自 己 思 考 ， 有 些 人 會 分 享 謠 言 。 兩 者 都 可 以 讓 你 更 好 地 了 解 這 個 人 的 文 化 和 派 系 ， 或 者 他 們 可 能 會 找 到 尋 找 秘 密 地 點 的 線 索 ， 或 者 是 在 荒 野 中 旅 行 並 在 環 戰 中 戰 鬥 的 秘 訣 和 技 巧 。
 qstr_Cannot_leave_now.|現 在 不 能 離 開
-qstr_You_have_found_the_l|你 找 到 了 當 地 的 鐵 匠 鋪...... (+{reg3} XP)
-qstr_You_have_found_the_lo|你 找 到 了 地 方 當 局... (+{reg3} XP)
-qstr_You_have_found_the_loc|你 找 到 了 當 地 的 倉 庫... (+{reg3} XP)
+; qstr_You_have_found_the_l|You have found the local smithy.
+; qstr_You_have_found_the_lo|You have found the local authority.
+; qstr_You_have_found_the_loc|You have found the local warehouse.
 qstr_You_look_through_Hen|你 透 過 漢 那 斯 安 南 ， 日 落 之 窗 看 。  美 麗 的 景 象 恢 復 了 你 對 西 方 和 超 越 大 國 的 信 心 。
 qstr__cancelled_the_{reg1|(取 消 了 殺 囚 獲 得 了 {reg10} 經 驗 值 )
 qstr_Forming_ranks.|正 在 列 陣
@@ -1057,7 +1032,6 @@ qstr_The_war_expands_comm|隨 著 戰 事 的 如 水 火 般 激 烈 ， 指 �
 qstr_Your_party_is_spotte|你 的 部 隊 被 {s1} 發 現 了 。
 qstr_Party_has_nothing_to|部 隊 食 物 短 缺 了 ！
 qstr_You_pay_for_accommod|你 支 付 了 宿 金 。
-qstr_Your_scouts_have_rep|你 的 斥 候 打 聽 到 消 息 ， 在 {s3} 附 近 有 一 個 {s2}
 qstr_The_troll_outside_{s|巨 魔 在 {s2} 外 的 被 殺 了 。 任 務 取 消 。
 qstr_{s1}_was_killed_on_t|{s1} 已 經 戰 死 沙 場 。 任 務 取 消 。
 qstr_{s1}_has_been_defeat|{s1} 已 被 擊 敗 。 任 務 取 消 。
@@ -1087,6 +1061,7 @@ qstr_{s5}_has_stopped_fol|{s5} 不 再 跟 隨 你 。
 qstr_You_have_{reg69}_all|你 有 {reg69} 盟 友 跟 著 你
 qstr_You_have_{reg69}_ally|你 有 {reg69} 一 群 盟 友 跟 著 你
 qstr_The_forces_of_{s2}_h|{s2 }的 力 量 重 新 集 結 並 前 進 到 {s15} ！
+qstr_Your_scouts_have_rep|你 的 斥 候 打 聽 到 消 息 ， 在 {s3} 附 近 有 一 個 {s2}
 qstr_{s1}_from_{s2}|{s1} 來 自 {s2}
 qstr_When_dealing_with_lo|請 記 住 ， 在 {s11} 與 當 地 人 交 易 的 時 候 ， 他 們 不 認 識 你 ， 也 不 一 定 承 認 你 在 {s10} 取 得 的 功 績。^^(能 在 {s11} 用 於 交 易 的 資 源 點 和 你 在 {s10} 取 得 的 的 資 源 點 不 同 ， 你 要 在 {s11} 取 得 當 地 派 系 的 資 源 點 以 便 與 當 地 人 交 易 ； 查 看 報 告 菜 單 獲 取 更 多 消 息 )
 qstr_Info|信 息
@@ -1134,6 +1109,7 @@ qstr_Um..._by_enchanting_|恩...  用 來 吸 鐵 ？
 qstr_Magnets_are_made_of_|磁 鐵 是 開 採 自 地 下 的 金 屬 做 的 ， 它 天 然 就 有 磁 力 因 為 它 含 有 引 力 的 成 分 。
 qstr_i_wont_a_bonerlrord_|哇 想 要 騎 砍 2 領 主 啊 啊 ！ 11 ！
 qstr_Install_TLD_in_your_|安裝最後之日到騎馬與砍殺2：領主的模組文件夾，在module.ini文件中增加一行指令：“compatible_with_wfas = 1”，然後你就可以在戰團和Warrider 0.202版裡面玩最後之日了。
+; qstr_Bannerlord_runs_on_a|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
 qstr_dis_mod_takes_2_long|擇個模組花了老長時間才發布！爛！ ！
 qstr_Well_there_s_a_lot_o|嗯，因為有很多新的材質紋理和其它東西要做，我猜這很費時…
 qstr_It_has_been_recently|這個模組的正式版近日發布了，如果你忘了網址，你可以上lemonparty.org去下載。
@@ -1226,6 +1202,7 @@ qstr_It_is_my_duty_to_prot|保 護 盟 友 是 我 的 職 責 。
 qstr_I_am_{s4}_{s15}_of_{|我 是 {s4} ， {s6 } 的 {s15}
 qstr_I_am_{s4}_a_commande|我 是 {s4} ， {s6} 的 指 揮 官
 qstr_{s9}{reg5?_and_the_r|{s9} {reg5?和 {s8} 的 統 治 者 。 :}
+; qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
 qstr_{playername}_our_sco|{playername} ， 我 們 的 探 子 帶 來 了 你 成 功 的 消 息 。 願 你 在 這 幸 福 的 歲 月 裡 度 過 這 一 天 ！ 你 大 勝 利 擊 退 了 {s7} ， 敵 人 的 大 舉 進 攻 的 計 畫 已 經 失 敗 了 。 我 們 希 望 他 們 會 為 了 自 己 的 失 敗 而 吵 架 。 我 們 也 希 望 他 們 現 在 對 你 會 感 到 恐 懼 ！ 至 少 你 讓 我 們 暫 時 休 息 了 一 下 。
 ; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
 qstr_Alas_that_I_could_no|唉 ， 我 無 法 終 結 {s8} 的 {s7} ， 但 如 果 我 們 再 次 見 面 ， 那 就 讓 他 們 小 心 吧 。
@@ -1287,6 +1264,7 @@ qstr_Ah_{playername}_it_i|啊，{playername}，你 能 來 真 好。戰 爭 就
 qstr_About_time_you_showe|關 於 你 出 現 的 時 間，{playername}。我 們 現 在 正 在 交  戰，我 不 能 容 忍 任 何 不 服 從 命 令 的 行 為。我 們 正 在 與 {s11} 交 戰，但 我 們 必 須 集  中 力 量，削 弱 敵 人，然 後 才 能 攻 打 他 們 的 據 點 和 要 塞。敵 人 的 每 一 次 失 敗 都 將 加 強 我 們 的 戰 爭 士 氣，使 他 們 更 接 近 於  徹 底 的 毀 滅。我 相 信 你 會 抓 住 每 一 個 機 會 來 對 抗 我 們 的 敵 人，以 偵 察 隊 或 是 主 帥 的 身 份。此 外，如 果 你 看 到 他  們 的 戰 鬥，你 將 支 援 我 們 的 領 主 和 我 們 的 盟 友。不 要 讓 他 們 失 望，否 則 我 會 知 道。
 qstr_we_are_fighting_agai|我們目前正與 {s13} 交戰
 qstr_we_are_not_fighting_|我們目前沒有與任何人交戰
+; qstr__{s14}_gained_{reg78| {s14} gained {reg78} experience.
 qstr_Oh?_Let_me_see_that.|哦？讓我看看…  很好很好！\n非常感謝你把這封信帶給我，{playername}。\n拿著徽章作為我收到信的證物，下次見到 {s9} 的時候請代我向他問好。
 qstr_Give_me_that!_Hrmph!|給我的？哇啊！很好！{playername}。\n你能把這個帶給我，說明你是個有用的僕人。\n告訴 {s9}，讓他多用用你。
 qstr_What?_Let_me_see_tha|什麼？讓我看看…   恩，{playername}。\n感謝你把這封信帶給我，現在你可以走了。
@@ -1530,10 +1508,6 @@ qstr_One_{s6}_left_the_pa|一 位 {s6} 離 開 了 隊 伍。
 qstr_I_understand._I_will|我明白。 我會陪著你。 一陣子。
 qstr_I_have_played_my_rol|很長一段時間裡，我扮演了我的角色，對於許多凡人來說都是如此。\n這場戰爭是為了人類的戰鬥。\n我將前往西方，有些人可能會決定跟著我。
 qstr_{reg1}_Veteran_Elves|{reg1} 資 深 的 精 靈 決 定 離 開 你 的 隊 伍。
-qstr_You_chose_well_{sir/|明智的選擇，{先生/女士}。\n我的伙計們知道如何守信和掙錢。
-qstr_Well_done_{sir/madam|好的，{先生/女士}。\n拿著你的錢和紅酒跟在我的身後，卡拉迪亞將沒人讓你感到畏懼。
-qstr_We_are_at_your_servi|聽候差遣，{先生/女士}。\n請將目標的方向只給我，我們會完成剩下的部分的。
-qstr_You_will_not_be_diss|不會令您失望的，{先生/女士}。\n整個卡拉迪亞都找不出像我們這樣精銳的戰士。
 qstr_What_an_amazing_feat|多麼驚人的戰功啊！
 qstr_Well_done!|幹的漂亮！
 qstr_Nice_legwork.|出色的外勤。
@@ -1576,11 +1550,7 @@ qstr_The_{s11}_of_{s10}_a|{s10}的{s11}希望你能護送一些{s12}到{s13}。
 qstr__Guards_slaughter_hi|守衛，解決掉他！
 qstr_Slaughter_him_for_fr|宰了他吃肉！
 qstr_This_is_{s5}_Command|這裡是 {s5}，指揮官。
-qstr_{s6}_This_place_and_|{s6} 這里和它的周邊當然都屬於你，{領主/夫人}大人。
 qstr_{s6}_This_place_and_t|{s6} 這里和它的周邊都屬於{s8}的{s7}
-qstr_{s3}_and_{s5}|{s3} 和 {s5}
-qstr_{s3}_{s5}|{s3}，{s5}
-qstr_{reg20?We_mostly_pro|{reg20?我們這裡主要是出產{s5}:這些天我們這裡幾乎什麼都沒有出產}。如果你想了解更多的情況，你可以去問{reg4?行政長官:村中長老}。他在附近，就在那邊。
 qstr_Hey_scum!_I_can_fix_|嘿渣滓！看來你的下巴要修理修理了！
 qstr_Watch_where_you_re_g|看看你正朝哪個方向跑，渣滓！
 qstr_I_don_t_like_your_fa|我不喜歡你的長相，我認為該給你做個整容手術了。

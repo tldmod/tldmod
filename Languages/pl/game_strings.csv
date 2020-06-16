@@ -504,16 +504,6 @@ str_casualty_display|Twoje straty:^{s10}. ^^Straty przeciwnika:^{s11}{s12}
 str_casualty_display_hp|^Raniono cię na {reg1} punktów zdrowia.
 str_quest_log_updated|Dziennik zadań został zaktualizowany....
 str_banner_selection_text|Masz teraz prawo do niesienia własnego sztandaru. Sztandar podkreśla twój status, jest zaszczytem i powodem do chluby. Który sztandar wybierasz?
-str_retirement_text_1|Zbyt późno zdajesz sobie sprawę, że zebrane pieniądze nie wystarcza ci na długo. Szybko roztrwaniasz zebrany majątek, po czym podejmujesz się jeszcze kilku desperackich prób powrotu do życia łowcy przygód. W efekcie kończysz jako żebra{k/czka} w mieście {s9}, żyjąc z jałmużny i dobroci kościoła.
-str_retirement_text_2| Zbyt późno zdajesz sobie sprawę, że zebrane pieniądze nie wystarcza ci na długo. Szybko roztrwaniasz zebrany majątek. Kiedy już wszystkie denary wyparowały z twoich rąk, jesteś zmuszon{y/a} rozpocząć życie przestępcy w mieście {s9}, i używając swoich umiejętności ledwie wiążesz koniec z końcem,  kradnąc miedziaki kobietom i biednym mieszczanom.
-str_retirement_text_3| Zbyt późno zdajesz sobie sprawę, że zebrane pieniądze nie wystarcza ci na długo. Szybko roztrwaniasz zebrany majątek i kończysz jako włóczęga bez grosza przy duszy. Błądzisz od gospody do gospody z nadzieją, że znajdzie się jakaś przychylna osoba, która postawi ci napitek w zamian za twoje opowieści wojenne, w które i tak nikt nie wierzy.
-str_retirement_text_4|Zebrane przez ciebie srebro nie wystarczyło na długo, ale odłożył{e/a}ś na tyle dużo, by kupić trochę ziemi w pobliżu wsi {s7}. Zostajesz woln{ym rolnikiem/ą farmerką}  i szybko przyciągasz potencjaln{e żony/ych mężów}. Z czasem wieśniacy zaczynają cię traktować jak swoj{ego/ą} miejscow{ego/ą} bohater{a/kę}. Zawsze dostajesz honorowe miejsce podczas festynów, a twoje wyczyny są tematami licznych rozmów w karczmach i gospodach. Opowieści o tobie są przekazywane z ust do ust, tak, aby przyszłe pokolenia pamiętały o tobie zawsze.
-str_retirement_text_5|Zebrane przez ciebie srebro nie wystarczyło na długo, ale odłożył{e/a}ś na tyle dużo, by kupić małą gospodę w {s9}. Mimo iż z początku miejscowi nie byli zbyt przychylni, to szybko się do ciebie przekonali. Z czasem twoja gospoda staje się głównym miejscem spotkań i biesiad. Ludzie przybywają z daleka,  by zjeść posiłek lub zatrzymać się na noc, przyciągani twą czystą reputacją i nadzieją na usłyszenie choć jednej z twoich epickich opowieści o przygodach, które przeżył{e/a}ś.
-str_retirement_text_6|Rozsądnie oszczędzał{e/a}ś i teraz twe srebro oraz twoja inteligencja pozwalają ci na doskonałe inwestycje, by zapewnić ci pewną. Po kupnie kilku sklepów i magazynów w mieście {s9}, twoja bystrość umysłu zamienia cię w jednego z najbardziej wyróżniających się kupców w mieście i szybko stajesz się bogat{ym człowiekiem/ą kobietą}, znaną zarówno z własnego imperium handlowego, jak i dawnych wyczynów na polach bitew.
-str_retirement_text_7|Jako szlachc{ic/anka} z nadaną ziemią, masz zagwarantowaną przyszłość. Osiadasz w {s7}, zarządzając wioską i lennami, rozstrzygając miejscowym sądom  i wypełniając obowiązki wobec swego pana. Od czasu do czasu twój pan wzywa cię, byś dowodził{/a} w jego kampaniach wojennych, ale to tylko tymczasowo i nigdy już tak naprawdę nie wracasz do niegdysiejszego, pełnego podróżowania życia łowcy przygód. Wykuł{e/a}ś już własny los. Z własnym dworem i posiadłościami, niewiele masz pragnień, których nie m{mógłbyś/mogłabyś} zaspokoić.
-str_retirement_text_8|Nie ma wątpliwości co do tego, że dobrze się urządził{e/a}. Twoje obszerne włości i zebrany majątek wystarczają, by zapewnić ci bogaty i łatwy żywot, aż po kres twych dni. Osiadasz w mieście {s8}, wymieniasz podróżowanie na politykę i wkrótce zyskujesz znaczną władzę w królestwie twego pana. Z intrygami, w które można się mieszać, własnymi lasami do polowań, sporym dworem i setkami świetnych opowieści wojennych do opowiedzenia, żyjesz pełnią życia i z nadchodzących lat wyciągasz to, co najlepsze.
-str_retirement_text_9|W nagrodę za dobrą i lojalną służbę, twój pan orzeka, iż nada ci dziedziczny tytuł szlachecki. Wkrótce spełnia swe obietnice, mianując cię {baronem/baronową} miasta  {s7} i jego blisk{im doradcą i adiutantem/ą doradczynią}.Twoja reputacja daje ci spore wpływy i niemałą władzę polityczną. Teraz dni mijają ci na grach o wielką potęgę, zarządzaniu swoimi rozległymi lennami i wspominaniu starych czasów nieustannego podróżowania i chwały.
-str_retirement_text_10|Mimo iż skromnie zacz{ąłeś/ęłaś}, twój pan wielce cię szanuje i królestwem lekko wstrząsa wiadomość, gdy nadaje ci dziedziczny tytuł {hrabi/hrabiny} miasta {s9}. Rozległe lenna i majątki są teraz pod twoim władaniem. Wkrótce zostajesz najbardziej zaufan{ym doradcą/ą doradczynią} swego pana, prawie jako jemu równ{y/a}, w dużej mierze rządzisz królestwem i zasiadasz na tronie w swoim własnym wspaniałym pałacu, jako jedna z najpotężniejszych osób w Calradii.
 str_loot_village|atakujemy niewinnych wieśniaków
 str_steal_from_villagers|okradamy biednych wieśniaków
 str_rob_caravan|napadamy na karawany kupieckie
@@ -1034,59 +1024,11 @@ str_npc14_honorific|{Kapitanie/Kapitano}
 str_npc15_honorific|pani{e/}
 str_npc16_honorific|Herszcie
 str_npc17_honorific|wodzu
-str_comment_intro_liege_affiliated|Powiedziano mi, żeś związan{y/a} z jednym z pretendentów, którzy kwestionują moje prawa do korony. Porozmawiać jednak możemy.
-str_comment_intro_famous_liege|Twoja sława cię wyprzedza! Może nadszedł czas, byś poszukał{/a} suzerena godnego ciebie.
-str_comment_intro_famous_martial|Twoja sława cię wyprzedza! Może powinniśmy się zmierzyć w turnieju, albo na polu bitwy!
-str_comment_intro_famous_badtempered|Słyszałem o tobie. Nie należę do osób, które lubią pogaduszki, więc jeśli masz coś ważnego do powiedzenia, to się streszczaj.
-str_comment_intro_famous_pitiless|Znam twe imię. Wywołuje strach w sercach wielu ludzi. A to dobrze. Może powinniśmy porozmawiać.
-str_comment_intro_famous_cunning|Ach, tak. Wreszcie się spotykamy. Chodzą słuchy, żeś wyjątkową osobą i że dobrze jest cię znać.
-str_comment_intro_famous_sadistic|Znam twe imię -- a z tego co słyszałem, zapewniam cię, że wiele zasmuconych wdów zna je także. Ale to nie moja sprawa.
-str_comment_intro_famous_goodnatured|Słyszałem o tobie! Bardzo dobrze, że wreszcie się poznaliśmy.
-str_comment_intro_famous_upstanding|Znam twe imię. Mawiają, żeś dzieln{y/a} {wojak/wojowniczka}. Mam tylko nadzieję, że honor i miłosierdzie idą w parze z twą odwagą.
-str_comment_intro_noble_liege|Widzę, że niesiesz szlachecki sztandar, jednak nie rozpoznaję znajdującego się na nim rysunku. Wiedz, że zawsze szukam zdolnych ludzi, którzy by dla mnie walczyli, jeżeli tylko okażą się warci mojego zaufania.
-str_comment_intro_noble_martial|Widzę, że niesiesz szlachecki sztandar, jednak nie rozpoznaję znajdującego się na nim rysunku. Może pewnego dnia staniemy przeciw sobie w turnieju albo na polu bitwy, by sprawdzić naszą odwagę!
-str_comment_intro_noble_badtempered|Nie rozpoznaję rysunku na twym sztandarze. Bez wątpienia jesteś kolejn{ym/ą} cudzoziem{cem/ką}, któr{y/a} przybywa do nas z innych krain, zupełnie jakbyśmy was tu mieli za mało.
-str_comment_intro_noble_pitiless|Widzę, że niesiesz szlachecki sztandar, jednak nie rozpoznaję znajdującego się na nim rysunku. Kolejny sęp, który przybywa żerować na ziemiach dotkniętych wojną, bez ochyby!
-str_comment_intro_noble_cunning|Widzę, że niesiesz szlachecki sztandar, jednak nie rozpoznaję znajdującego się na nim rysunku. Dobrze jednak poznać każdego, kto kiedyś może się okazać wielkim wojownikiem.
-str_comment_intro_noble_sadistic|Widzę, że niesiesz szlachecki sztandar, jednak nie rozpoznaję znajdującego się na nim rysunku. Może jesteś bękartem odętego złodzieja bydła? A może komuś go ukradł{e/a}ś?
-str_comment_intro_noble_goodnatured|Widzę, że niesiesz szlachecki sztandar, jednak nie rozpoznaję znajdującego się na nim rysunku. Wybacz mi mój brak wiedzy, Pani{e/}! Miło mi cię poznać.
-str_comment_intro_noble_upstanding|Widzę, że niesiesz szlachecki sztandar, jednak nie rozpoznaję znajdującego się na nim rysunku. Bez wątpienia przybył{e/a}ś do Calradii w poszukiwaniu bogactwa i sławy. Jeśli tak właśnie jest, to proszę cię tylko o okazywanie litości tym nieszczęśnikom, na których się natkniesz w swych wojennych wyprawach.
-str_comment_intro_common_liege|Może i wywodzisz się z plebsu, wiedz jednak, że zawsze szukam zdolnych ludzi, którzy by dla mnie walczyli. Jeśli tylko okażą się warci mojego zaufania.
-str_comment_intro_common_martial|Może i nie jesteś szlachetnie urodzon{y/a}, ale jeśli dowiedziesz swej dzielności, wtedy z przyjemnością stanę z tobą w szranki na arenie lub polu bitwy, by sprawdzić kto wspanialszym wojownikiem.
-str_comment_intro_common_badtempered|Mów szybko, jeśli masz coś do powiedzenia, gdyż nie mam czasu ma pogaduszki z byle wojakami.
-str_comment_intro_common_pitiless|Wyglądasz na najemni{ka/czkę}, jeszcze jednego sępa, który przybywa, by żerować na niedolach tej krainy.
-str_comment_intro_common_cunning|Cóż... Nie słyszałem o tobie, ale wyglądasz mi na osobę, o której kiedyś może być głośno.
-str_comment_intro_common_sadistic|Zazwyczaj podrzynam gardła bezczelnej hołocie, która mnie niepokoi, ale mam dzisiaj dobry humor.
-str_comment_intro_common_goodnatured|Cóż, wyglądasz na zacną osobę.
-str_comment_intro_common_upstanding|Pokój z tobą, i zawsze pamiętaj, by łagodzić waleczność miłosierdziem, zaś odwagę - honorem.
-str_comment_you_raided_my_village_enemy_benevolent|Zaatakował{e/a}ś niewinnych rolników ze wsi {s51}, znajdujących się pod moją protekcją. Ukarzę cię za twe niecne czyny!
-str_comment_you_raided_my_village_enemy_spiteful|Napadł{e/a}ś na moją wieś, {s51}, niszcząc moją własność mordując mieszkańców. Rachunek wyrównam twą krwią!
-str_comment_you_raided_my_village_enemy_coldblooded|Napadł{e/a}ś na moją wieś, {s51}, niszcząc moją własność mordując mieszkańców. Sprawię, że dwa razy się zastanowisz, zanim znów najedziesz moje lenna.
-str_comment_you_raided_my_village_enemy|Napadł{e/a}ś na moją wieś, {s51}, niszcząc moją własność mordując mieszkańców, którzy byli pod moją protekcją. Zapłacisz za są zbrodnię!
-str_comment_you_raided_my_village_unfriendly_spiteful|Napadł{e/a}ś na moją wieś, {s51}. Zrób to jeszcze raz, a wypatroszę cię jak rybę.
-str_comment_you_raided_my_village_friendly|Napadł{e/a}ś na moją wieś, {s51}. To był ostatni gwóźdź do trumny naszej przyjaźni.
-str_comment_you_raided_my_village_default|Napadł{e/a}ś na moją wieś, {s51}. Jeśli nadal będziesz się tak zachowywać, możesz się spodziewać zwady.
-str_comment_you_robbed_my_village_enemy_coldblooded|Okradł{e/a}ś mieszkańców mojej wsi, {s51}. Biorę to jako osobistą zniewagę.
-str_comment_you_robbed_my_village_enemy|Okradł{e/a}ś niewinnych rolników ze wsi {s51}, znajdujących się pod moją protekcją. Ukarzę cię za twe niecne czyny!
-str_comment_you_robbed_my_village_friendly_spiteful|Słyszałem, że zwędził{e/a}ś trochę żywności moim poddanym we wsi {s51}. Cóż, nie będę ci żałował kąska, czy dwóch, ale zapamiętaj sobie, że to ja potem muszę słuchać skomleń tych wieśniaków.
-str_comment_you_robbed_my_village_friendly|Słyszałem, że zarekwirował{e/a}ś zapasy moim poddanym we wsi {s51}. Jestem pewien, że nie zrobił{/a}byś tego, gdybyś nie był{/a} w ogromnej potrzebie.
-str_comment_you_robbed_my_village_default|Ograbił{e/a}ś moich poddanych we wsi {s51}. Jeśli nadal będziesz się tak zachowywać, możesz się spodziewać zwady.
-str_comment_you_accosted_my_caravan_enemy|Nękasz karawany będące pod moją protekcją. Ale twoje zbójeckie napady wkrótce się skończą.
-str_comment_you_accosted_my_caravan_default|Napadasz na karawany będące pod moją protekcją. To się musi skończyć.
-str_comment_you_helped_villagers_benevolent|Doszły mnie słuchy, żeś wykazał{/a} się dobroczynnością wobec moich poddanych we wsi {s51}. Zaniedbywałem swoje obowiązki jako pana i protektora i doceniam to, co zrobił{e/a}ś.
-str_comment_you_helped_villagers_friendly_cruel|Doszły mnie słuchy, żeś wykazał{/a} się dobroczynnością wobec moich poddanych we wsi {s51}. Doceniam to, że chciał{e/a}ś dobrze, jednak wolałbym, byś więcej w ten sposób nie podkopywał{/a} mojego autorytetu.
-str_comment_you_helped_villagers_friendly|Doszły mnie słuchy, żeś wykazał{/a} się dobroczynnością wobec moich poddanych we wsi {s51}. Ciężkie mamy czasy i wiem, że chcesz jak najlepiej, więc nie będę się oponował, gdy będziesz ich wpierał{/a}.
-str_comment_you_helped_villagers_unfriendly_spiteful|Doszły mnie słuchy, żeś wykazał{/a} się dobroczynnością wobec moich poddanych we wsi {s51}. Zaiste zabawnie jest patrzeć, jak harujesz, by podlizać się moim wasalom. Wolałbym jednak, byś pilnował{/a} własnego nosa.
-str_comment_you_helped_villagers_cruel|Doszły mnie słuchy, żeś wykazał{/a} się dobroczynnością wobec moich poddanych we wsi {s51}. Jako pana i protektora tych chłopów, moim świętym obowiązkiem jest pomagać im w trudnych chwilach. Może i chciał{e/a}ś dobrze, ale twe czyny mimo wszystko pokopują mój autorytet. Lepiej będzie, jeśli zostawisz moich poddanych w spokoju.
-str_comment_you_helped_villagers_default|Doszły mnie słuchy, żeś wykazał{/a} się dobroczynnością wobec moich poddanych we wsi {s51}. Ciężkie nastały czasy i wiem, że chciał{e/a}ś dobrze, ale oby nie weszło ci to w nawyk. To ja jestem ich panem i protektorem i wolałbym, by to do mnie, nie do obcych zwracali się z prośbą o pomoc.
 str_comment_you_captured_a_castle_allied_friendly|Słyszałem, że oblegał{e/a}ś i zdobył{e/a}ś {s51}. To był wspaniały wyczyn i jestem dumny, że mogę cię zwać mym przyjacielem!
 str_comment_you_captured_a_castle_allied_spiteful|Słyszałem, że oblegał{e/a}ś i zdobył{e/a}ś {s51}. Dobra robota! Wkrótce będziemy mieć wszystkie ich fortece do złupienia, ich skarbce do przetrząśnięcia i ich zasmucone wdowy do służenia nam.
 str_comment_you_captured_a_castle_allied_unfriendly_spiteful|Słyszałem, że oblegał{e/a}ś i zdobył{e/a}ś {s51}. Cóż, każda {kundel/suka} ma swój dzień, czy jak tam mawiają. Ciesz się póki możesz, bo nadejdzie dzień, że lepsi od ciebie wykopią cię z powrotem na chłód i deszcz, gdzie jest twoje miejsce.
 str_comment_you_captured_a_castle_allied_unfriendly|Słyszałem, że oblegał{e/a}ś i zdobył{e/a}ś {s51}. Pomimo naszych sprzeczek w przeszłości, muszę ci pogratulować.
 str_comment_you_captured_a_castle_allied|Słyszałem, że obegał{e/a}ś i zdobył{e/a}ś {s51}. Nasi wrogowie uciekają teraz w popłochu!
-str_comment_you_captured_my_castle_enemy_spiteful|Doszły mnie słuchy, żeś wtargn{ął/ęła} na należący do mnie {s51}. Mam nadzieję, że loch przypadł ci do gustu, bo spędzisz w nim sporo czasu.
-str_comment_you_captured_my_castle_enemy_chivalrous|Przej{ąłeś/ęłaś} {s51}, który prawnie należy do mnie. Mam nadzieję, że dasz mi szansę, bym mógł go odzyskać!
-str_comment_you_captured_my_castle_enemy|Masz coś, co do mnie należy -- {s51}. Tak cię urządzę, że z radością mi go oddasz.
 str_comment_we_defeated_a_lord_unfriendly_spiteful|Pewnie będziesz chciał{/a} napitkiem uczcić bitwę, w której {s54} poznał prawdziwą siłę naszych oddziałów, ponosząc dotkliwą klęskę. Cóż, zachowaj wino na inną okazję -- potrzeba znacznie więcej niż coś takiego, by wymazać z mej pamięci wszystkie twe haniebne czyny.
 str_comment_we_defeated_a_lord_unfriendly|Nigdy nie zapomnę tego, jak {s54} został przez nas pokonany, jednak nie mogę też zapomnieć wszystkich sporów, które miały miejsce między nami.
 str_comment_we_defeated_a_lord_cruel|Pamiętasz dzień, w którym {s54} stanął przeciw nam? To była piękna wiktoria! Z jego armii zrobiliśmy wtedy prawdziwą ucztę dla wron!
@@ -1154,10 +1096,6 @@ str_comment_you_defeated_my_friend_enemy_pragmatic|{s54} co prawda pozwolił ci 
 str_comment_you_defeated_my_friend_enemy_chivalrous|Doszły mnie słuchy, że {s54} został przez ciebie pokonany i od tamtego czasu niepokoi się na samą myśl o tym, że kiedyś znów może skrzyżować z tobą miecze.
 str_comment_you_defeated_my_friend_enemy_spiteful|Twoja sława cię wyprzedza, {playername}. {s54} dał się złapać na twe sztuczki, ale jeśli zmierzysz się ze mną, przekonasz się, żem jest znacznie trudniejszym przeciwnikiem.
 str_comment_you_defeated_my_friend_enemy|Mawiają, że {s54} został przez ciebie pokonany. Ze mną tak łatwo ci nie pójdzie.
-str_comment_you_captured_a_lord_allied_friendly_spiteful|Słyszałem, że {s54} został przez ciebie wzięty do niewoli. Mam nadzieję, że wydusiłeś z niego każdego denara.
-str_comment_you_captured_a_lord_allied_unfriendly_spiteful|Słyszałem, że {s54} został przez ciebie wzięty do niewoli. Twe skrzynie muszą być pełne po brzegi od okupu. Jaka szkoda, że nawet tak wielka suma nie jest w stanie przemienić nisko urodzonego kundla w szlachcica!
-str_comment_you_captured_a_lord_allied_chivalrous|Słyszałem, że {s54} został przez ciebie wzięty do niewoli. Dobra robota. Mniemam oczywiście, że był traktowany z należytym mu szacunkiem.
-str_comment_you_captured_a_lord_allied|Słyszałem, że {s54} został przez ciebie wzięty do niewoli. Dobra robota. Zapewne niemały za niego dostał{e/a}ś okup.
 str_comment_you_let_go_a_lord_allied_chivalrous|Słyszałem, że {s54} został przez ciebie wzięty do niewoli, ale po jakimś czasie go wypuścił{e/a}ś. Taka rycerskość może tylko pomóc naszej sprawie.
 str_comment_you_let_go_a_lord_allied_upstanding|Słyszałem, że {s54} został przez ciebie wzięty do niewoli, ale po jakimś czasie go wypuścił{e/a}ś. Cóż, to był honorowy czyn... i bez wątpienia niebezpieczny.
 str_comment_you_let_go_a_lord_allied_coldblooded|Słyszałem, że {s54} został przez ciebie wzięty do niewoli, ale po jakimś czasie go wypuścił{e/a}ś. To było bardzo rycerskie, jednakże rycerskość nie wygrywa wojen.
@@ -1168,33 +1106,6 @@ str_comment_you_let_me_go_enemy_chivalrous|Gdy ostatnio się spotkaliśmy, byłe
 str_comment_you_let_me_go_enemy_coldblooded|Gdy ostatnio się spotkaliśmy, byłem na twej łasce i pozwolił{e/a}ś mi odejść wolno. Nadal jednak jesteśmy wrogami i nie mogę ci obiecać, że zachowam się tak samo.
 str_comment_you_let_me_go_enemy|Gdy ostatnio się spotkaliśmy, byłem na twej łasce i pozwolił{e/a}ś mi odejść wolno. To było miłe z twojej strony. Ale nadal toczymy ze sobą wojnę.
 str_comment_you_let_me_go_default|Gdy ostatnio się spotkaliśmy, byłem na twej łasce i pozwolił{e/a}ś mi odejść wolno. To było miłe z twojej strony i cieszę się, że nasze królestwa już nie prowadzą ze sobą wojny.
-str_comment_pledged_allegiance_allied_martial_unfriendly|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Modlę się byś nie zhańbił{/a} nas wszystkich swym tchórzowskim zachowaniem.
-str_comment_pledged_allegiance_allied_martial|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Już nie mogę sie doczekać dnia, w którym będziemy walczyć ramię w ramię z naszymi wrogom.
-str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Bah. Lepiej dla ciebie będzie, jeśli nie będziesz mi wchodzić w drogę.
-str_comment_pledged_allegiance_allied_quarrelsome|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Odważnie stawiaj czoła naszym wrogom, szanuj lepszych od siebie i nie wchodź mi w drogę, a wszystko będzie dobrze.
-str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Gdybym był na jego miejscu, nie zaufałbym ci nawet gdyby chodziło o sprzątnięcie stajni.
-str_comment_pledged_allegiance_allied_selfrighteous|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Walcz dzielnie, a zostaniesz szczodrze nagrodzon{y/a}. Zdradź nas, a zrobimy z ciebie przykład, o którym długo nikt nie zapomni.
-str_comment_pledged_allegiance_allied_cunning_unfriendly|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Nie będę udawał, że nie cieszy mnie ta decyzja, ale może rzeczywiście lepiej jest cię mieć wśród nas, gdzie będziemy przynajmniej będziemy mieli na ciebie oko.
-str_comment_pledged_allegiance_allied_cunning|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. To dobrze. Im więcej biegłych wojowników mamy po swojej w tych trudnych czasach, tym lepiej. Będę śledził twe postępy.
-str_comment_pledged_allegiance_allied_debauched_unfriendly|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Bez wątpienia wkrótce go zdradzisz, a wtedy z przyjemnością będę patrzył, jak kończysz na szafocie.
-str_comment_pledged_allegiance_allied_debauched|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Wspaniale... Jestem pewien, że zostaniemy dobrymi przyjaciółmi. Ale pamiętaj -- jeśli nas zdradzisz, będzie to największy błąd, jaki w życiu popełnił{e/a}ś.
-str_comment_pledged_allegiance_allied_goodnatured_unfriendly|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Cóż, nie mogę rzec, bym ci tak samo wierzył, ale być może zasługujesz na ten brak zaufania.
-str_comment_pledged_allegiance_allied_goodnatured|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Świetnie! Nasz pan to szlachetny człowiek i szczodrze nagradza posłuszeństwo i odwagę.
-str_comment_pledged_allegiance_allied_upstanding_unfriendly|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Z tego co o tobie słyszałem, boję się, że przyniesiesz hańbę nam wszystkim. Będę jednak szczęśliwy, jeśli dowiedziesz, że jestem w błędzie.
-str_comment_pledged_allegiance_allied_upstanding|Doszły mnie słuchy, że {s54} przyjął twą przysięgę oddania. Walcz dzielnie z naszymi wrogami, ale też okazuj im litość. Dobre imię jest tak samo cenne jak ostry miecz i rączy koń, jeśli idzie o wojaczkę.
-str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|Doszły mnie słuchy, że {s54} przyznał ci {s51}. Nie zapomnij -- oszczędzając bata, psujesz chłopa!
-str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|Doszły mnie słuchy, że {s54} przyznał ci {s51}. Cieszę się, że dobrze ci się wiedzie -- ale bądź ostrożn{y/a}. Niektórzy ludzie są jak żmije, zawistni i łapczywi na bogactwo sąsiada. Trzymaj się blisko mnie, a będę nad tobą czuwał.
-str_comment_our_king_granted_you_a_fief_allied_friendly|Doszły mnie słuchy, że {s54} przyznał ci {s51}. Oby twe nowe ziemie pomyślnie się rozwijały.
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|Doszły mnie słuchy, że {s54} przyznał ci {s51}. Lecz pamiętaj o tym, że duma kroczy przed upadkiem.
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|Doszły mnie słuchy, że {s54} przyznał ci {s51}. Spodziewam się jednak, że los sprzyja ci teraz tylko po to, by już wkrótce odesłać cię z powrotem w to łajno, z którego przysz{ed/}ł{e/a}ś.
-str_comment_our_king_granted_you_a_fief_allied_spiteful|Doszły mnie słuchy, że {s54} przyznał ci {s51}. Miejmy nadzieję, że naprawdę zasługujesz na przychylność naszego pana.
-str_comment_our_king_granted_you_a_fief_allied|Doszły mnie słuchy, że {s54} przyznał ci {s51}. Jak widać nieźle sobie radzisz.
-str_comment_you_renounced_your_alliegance_enemy_friendly|Doszły mnie słuchy, żeś się wyrzekł{/a} posłuszeństwa wobec naszego pana. Smuci mnie, że teraz będziemy musieli stanąć przeciw sobie na polu bitwy.
-str_comment_you_renounced_your_alliegance_friendly|Doszły mnie słuchy, żeś się wyrzekł{/a} posłuszeństwa wobec naszego pana. Módlmy się, by między nami nie doszło do bitki.
-str_comment_you_renounced_your_alliegance_unfriendly_spiteful|Zawsze uważałem cię za zdrac{ę/zynię} i teraz okazuje się, że miałem słuszność. Mam nadzieję, żeś got{ów/owa} umrzeć bolesną śmiercią!
-str_comment_you_renounced_your_alliegance_unfriendly_moralizing|Doszły mnie słuchy, żeś się wyrzekł{/a} posłuszeństwa wobec naszego pana. Jestem zmuszony uznać cię za zdrajc{ę/zynię}.
-str_comment_you_renounced_your_alliegance_enemy|Doszły mnie słuchy, żeś się wyrzekł{/a} posłuszeństwa wobec naszego pana. Cóż, czasami tak jest, że starzy przyjaciele stają się nowymi wrogami.
-str_comment_you_renounced_your_alliegance_default|Doszły mnie słuchy, żeś się wyrzekł{/a} posłuszeństwa wobec naszego pana. Cóż, to twoja decyzja, ale nie oczekuj ode mnie, bym lekko się z tobą obchodził, gdy spotkamy się na polu bitwy.
 str_personality_archetypes|suzeren
 str_martial|wojowniczy
 str_quarrelsome|zrzędliwy

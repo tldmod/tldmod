@@ -791,17 +791,6 @@ dlga_mayor_talk:mayor_deliver_wine|Se me ha ordenado traerte {reg9} unidades de 
 dlga_mayor_deliver_wine:mayor_pretalk|¡Por fin! Nuestros suministros estaban casi agotados. Había acordado que se nos enviara {s4} por adelantado en previsión de esta situación. Y saluda a {s9} de mi parte.^^[has conseguido {reg14} Puntos de Recursos de {s14}]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|Tenía ordenes de entregarte {reg9} unidades de {s4}, pero perdí parte de la carga a manos del enemigo.
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|¡Pagarán por esto! Bueno, por lo menos tenemos {s4}. Gracias de todos modos.^^[has conseguido {reg14} Puntos de Recursos de {s14}]
-dlga_start:mercenary_tavern_talk|¿Necesitáis mercenarios, capitán? {reg3?Yo y {reg4?{reg3} de mis compañeros:uno de mis compañeros} estamos:estoy} buscando una compañía de soldados a la que unirnos. Nos uniremos a ti por {reg5} denarios.
-dlga_start:mercenary_after_recruited|¿Cuáles son tus órdenes, capitán?
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|Recoged vuestras cosas. Partiremos al alba.
-dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|Tomaos vuestro tiempo. Nos quedaremos aquí durante algún tiempo.
-dlga_mercenary_after_recruited_2:close_window|De acuerdo, capitán. Estaremos listos para partir.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|De acuerdo. Os contrataré a todos vosotros. Aquí tenéis {reg5} denarios.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|De acuerdo. Pero sólo puedo contratar a {reg6} de vosotros. Aquí tenéis {reg5} denarios.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|Suena bastante bien. Pero no me puedo permitir contratar a más soldados en este momento.
-dlga_tavern_mercenary_cant_lead:close_window|Es una pena. Bueno, {reg3?estaremos:estaré} esperando por aquí durante algún tiempo, si es que necesitas contratar a alguien.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|Eso suena bien. Pero no puedo admitir a ningún soldado más ahora mismo.
-dlga_mercenary_tavern_talk:close_window|Lo siento, pero no necesito a ningún soldado más ahora mismo.
 dlga_start:trainer_pretalk|Has sobrevivido hasta el entrenamiento de supervivencia {reg2}. {s4}
 dlga_start:trainer_pretalk.1|Muy bien, has acabado con todos tus oponentes.
 dlga_start:trainer_talk|Buenos días, ¿te apetece entrenar un poco?
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|Estoy buscando a un fugitivo ll
 dlga_town_dweller_ask_fugitive:close_window|Bueno, los forasteros van y vienen. Pero si se esconde en las cercanías seguro que das con él, si buscas un poco.
 dlga_town_dweller_talk:town_dweller_ask_info|¿Qué me puedes decir sobre este sitio?
 dlga_town_dweller_talk:town_dweller_ask_info.1|¿Qué me puedes decir sobre este lugar?
-dlga_town_dweller_talk:town_dweller_ask_situation|¿Qué tal es la vida por aquí?
-dlga_town_dweller_ask_situation:town_dweller_poor|La desgracia ha golpeado a mi familia, {señor/señora}. Una plaga ha destruido mis cosechas, y mis pobres hijos están en casa hambrientos y enfermos. Mis vecinos son demasiado pobres para poder ayudarme.
-dlga_town_dweller_ask_situation:town_dweller_poor.1|Tengo una vida miserable, {señor/señora}. No he podido encontrar un trabajo en meses, y mis pobres hijos se van a dormir cada noche con el estómago vacío. Mis vecinos son demasiado pobres para ayudarme.
-dlga_town_dweller_poor:town_dweller_poor_paid|Entonces toma estos 300 denarios. Espero que esto os ayude a ti y a tu familia.
-dlga_town_dweller_poor:town_dweller_poor_not_paid|Entonces debes trabajar más duramente y llevar tu carga sin rechistar.
-dlga_town_dweller_poor_not_paid:close_window|Sí, {señor/señora}. Haré lo que decís. 
-dlga_town_dweller_poor_paid:close_window|{Mi buen señor/Mi buena señora}. Muchas gracias por vuestra ayuda. Le diré a todo el mundo cómo nos habéis ayudado.
-dlga_town_dweller_ask_situation:close_window|Agradezco tu amabilidad, {señor/señora}. Con vuestra ayuda nuestras vida serán más llevaderas. Rezaré por ti cada día.
-dlga_town_dweller_ask_situation:town_dweller_talk|Son tiempos difíciles, {señor/señora}. Trabajamos durante todo el día y aún así muchas noches nos acostamos con el estómago vacío.
-dlga_town_dweller_ask_situation:town_dweller_talk.1|Son tiempos difíciles, {señor/señora}. Pero debemos dar gracias por lo que tenemos.
-dlga_town_dweller_ask_situation:town_dweller_talk.2|No nos va mal {señor/señora}. Debemos dar gracias por lo que tenemos.
+dlga_town_dweller_talk:town_dweller_talk|¿Qué tal es la vida por aquí?
 dlga_town_dweller_talk:town_dweller_ask_rumor|¿Qué es lo que se comenta por aquí?
 dlga_town_dweller_ask_rumor:town_dweller_talk|Creo que no sé nada que pudiera resultarte de interés.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|¿Me estás amenazando? Los guardias conocen bien a la gente de tu calaña. 

@@ -791,17 +791,6 @@ dlga_mayor_talk:mayor_deliver_wine|Sana {reg9} tane {s4} birligi teslim etmem s�
 dlga_mayor_deliver_wine:mayor_pretalk|Sonunda! Stoklarımız neredeyse tükenmişti. {s4} teslimatını ayarlamıştım. Ve {s9}'e selamlarımı ilet.^^[{reg14} {s14} Kaynak Puanı kazanıldı]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|Size {reg9} tane {s4} getirecegim bir görevdeydim, fakat kargonun bir kısmını düşmana kaybettim.
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|Buna para öderler. En azından biraz {s4}ümüz var. Yine de teşekkürler.^^[ {reg14} tane {s14} Kaynak Puanı kazandın]
-dlga_start:mercenary_tavern_talk|Paralı askerlere ihtiyacınız var mı, Kumandan? {reg3?Ben ve {reg4?{reg3} arkadaşlarım:arkadaşım} : } yeni bir patron arıyoruz. {reg5} dinar karşılıgında size katılabiliriz.
-dlga_start:mercenary_after_recruited|Emriniz var mı, Komutanım?
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|Hazırlıklarınızı yapın. Şafakta yola çıkıyoruz.
-dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|Acele etmeyin. Burada bir süre kalacagız.
-dlga_mercenary_after_recruited_2:close_window|Evet, Komutanım. Ayrılmamızı söylediginizde hazır olacagız.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|Tamamdır. Hepinizi kiralıyorum. İşte {reg5} dinar.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|Tamamdır. Fakat yalnızca {reg6} kişiyi kiralayabilrim. İşte {reg5} dinar.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|Kulaga iyi geliyor. Fakat artık daha fazla adam almaya gücüm yetmez.
-dlga_tavern_mercenary_cant_lead:close_window|Çok yazık. Eger birilerini işe almak istersen burada {reg3?olacagız:olacagım}.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|Kulaga iyi geliyor. Fakat artık daha fazla adam yönetemem.
-dlga_mercenary_tavern_talk:close_window|Üzgünüm. Şu anda daha fazla adama ihtiyacım yok.
 dlga_start:trainer_pretalk|Eldiven {reg2} turuna kadar hayatta kaldınız. {s4}
 dlga_start:trainer_pretalk.1|Çok iyi, tüm rakiplerini alt ettin.
 dlga_start:trainer_talk|İyi günler. Biraz egitime hazır mısın?
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|{s4} namına bir firariyi arıy
 dlga_town_dweller_ask_fugitive:close_window|Bir sürü yabancı gelip geçer bizim kasabadan. Eger burada saklanıyorsa, etrafa bakarsan mutlaka bulursun onu.
 dlga_town_dweller_talk:town_dweller_ask_info|Bu kasaba hakkında bana ne anlatabilirsin?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Bu yer hakkında bana ne anlatabilirsin?
-dlga_town_dweller_talk:town_dweller_ask_situation|Buralarda hayat nasıl?
-dlga_town_dweller_ask_situation:town_dweller_poor|Felaket ailemi vurdu  {beyim/hanımım}. Bir veba salgını tarlalarımızdaki ekinleri heba etti, ve çocuklarım evde hasta ve aç yatıyorlar. Komşularımın kendine hayrı yok.
-dlga_town_dweller_ask_situation:town_dweller_poor.1|Hayatım çok perişan, {sir/madam}. Aylardır iş bulamıyorum, ve gariban çocuklarım her gece yataga aç giriyor.Komşularımda bize yardım edemeyecek kadar fakir.
-dlga_town_dweller_poor:town_dweller_poor_paid|O zaman şu 300 dinarı al. Umarım bu sana ve ailene yardımcı olur.
-dlga_town_dweller_poor:town_dweller_poor_not_paid|Öyleyse sen daha çok çalışmalı ve yüküne şikayet etmeden katlanmalısın.
-dlga_town_dweller_poor_not_paid:close_window|Evet {sir/madam}. Dediginiz gibi yapacagım.
-dlga_town_dweller_poor_paid:close_window|{Efendim}. Çok iyi ve çok cömert birisiniz, bize ne kadar yardımcı oldugunuzdan herkesi haberdar edecegim.
-dlga_town_dweller_ask_situation:close_window|{Efendim}, gösterdiginiz lütuf için müteşekkirim. Yardımlarınız sayesinde hayatımız daha iyi hale geldi. Yatıp kalkıp size dua edecegim.
-dlga_town_dweller_ask_situation:town_dweller_talk|Zor zamanlar {efendim/madam}. Tüm gün çalışıyoruz ama çogu geceler yataga aç giriyoruz.
-dlga_town_dweller_ask_situation:town_dweller_talk.1|Müşkül zamanlar {efendim/madam}, ama yatıp kalkıp halimize şükretmeliyiz.
-dlga_town_dweller_ask_situation:town_dweller_talk.2|Yuvarlanıp gidiyoruz {efendim/madam}, halimize şükretmeliyiz.
+dlga_town_dweller_talk:town_dweller_talk|Buralarda hayat nasıl?
 dlga_town_dweller_talk:town_dweller_ask_rumor|Buralardaki son söylentiler nedir?
 dlga_town_dweller_ask_rumor:town_dweller_talk|Senin ilgini çekecek bir şey var mı bilmiyorum.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Beni tehdit mi ediyorsun? Muhafızlar senin gibi tiplerin yüzünü göstermesini sabırsızlıkla bekliyorlar.

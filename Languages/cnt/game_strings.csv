@@ -504,16 +504,6 @@ str_casualty_display|我 軍 傷 亡：{s10}^敵 軍 傷 亡：{s11}{s12}
 str_casualty_display_hp|^你 受 到 {reg1} 點 傷 害。
 str_quest_log_updated|任 務 清 單 已 更 新…
 str_banner_selection_text|你 已 被 授 予 一 面 旗 幟。你 的 旗 幟 象 徵 你 的 地 位 並 帶 來 榮 譽。你 想 要 選 擇 哪 一 面 旗 幟？
-str_retirement_text_1|直 到 現 在 你 才 明 白 金 錢 不 會 長 久。在 很 短 時 間 就 能 全 都 浪 費 在 小 小 的 事 上，而 你 繼 續 在 絕 望 中 嘗 試 重 新 開 始 旅 途。你 最 終 在 {s9} 成 為 了 乞 丐，生 活 在 施 捨 與 教 會 的 慈 悲 中。
-str_retirement_text_2|直 到 現 在 你 才 明 白 金 錢 不 會 長 久。在 很 短 時 間 就 能 全 都 浪 費 在 小 小 的 事 上。所 有 的 迪 納 爾 都 從 你 手 中 蒸 發 掉，你 被 迫 於 {s9} 的 後 巷 活 在 犯 罪 當 中，用 你 僅 餘 的 技 能 掠 奪 女 人 和 窮 人 的 破 銅 爛 鐵。
-str_retirement_text_3|當你意識到你將入不敷出的時候已經晚了。即使精打細算你也很快花光了身上所有的錢，最後作為一個身無分文的流浪者，從一個酒館漂流到另一個酒館，靠講些沒人相信的戰爭故事來討口酒喝。
-str_retirement_text_4|你存下來的錢並不能維持多久，但是你想辦法湊了足夠的錢在{s7}村莊的附近買了一小片地。當上了自由農。很快你就吸引了未來的{妻子/丈夫}。現在你就成了當地的英雄。你時常在宴會上得到人們的尊重，而你的冒險經歷在酒館和客棧一遍又一遍地被人們口口相傳，所以孩子們將永遠記得你的事蹟。
-str_retirement_text_5|你存下來的錢並不能維持多久，不過還是夠用來在{s9}城買個小酒館。儘管當地人一開始對你有所提防，他們很快就接受容納了你。現在你讓酒館成了一個受歡迎的宴會和見面場所。人們從數英里以外趕來吃飯和留宿，因為他們都被你絕對的聲望和你所說的那些冒險歲月裡眼花繚亂的故事迷住了。
-str_retirement_text_6|你在你的冒險生涯中精明地存下錢來，而現在你的銀子和你的聰明才智讓你進行了一些極好的投資來鞏固你的未來。收購了{s9}城的幾個鋪子和倉庫之後，你的機智讓你成為城裡最為卓越的商人之一，並且你很快成為一個富有的{人/人}，你的貿易帝國就像你的戰爭事蹟一樣聞名。
-str_retirement_text_7|作為一個有封地的貴族，不管封地有多小，你的未來也差不多可以確定了。你遷入了你的領地{s7}，主宰著村莊和農田，支配著地方法院並且向你的君主履行著你的義務。有時候你的君主召集你並且在他的戰役中聽命，但是這些日常工作還是簡單的，而你再也沒有真正回到你年輕時候的冒險經歷。你已經置下大筆財富。因為擁有自己的領主大廳和領地，除了你健康的體魄和自己的領地所能給予給你的以外，你也沒有別的奢求了。
-str_retirement_text_8|毫無疑問，你為你自己做的非常好。你廣闊的領地和積累的財富足夠保證你在餘下的日子裡過著富足而省心的生活。退休在你的封地{s8}，你改變你的冒險生涯而轉向政治，很快你就在你君主的王國里面建立了自己相當可觀的權威。隨著自己的興趣愛好忙碌，在自己的林地裡打獵，在領主大廳里大擺宴席，以及吹噓著上百個耐聽的戰爭事蹟，你無憂無慮地讓剩餘的每一年都過的有滋有味。
-str_retirement_text_9|作為你得力和忠心服務的回報，你的君主宣布你被授予一個世襲的頭銜，加入了王國最顯赫的貴族圈。很快你完成了作為{s7}男爵的授勳儀式，並且你成為了你君主的近臣和副手之一。你蘊藏的聲望給予了你很多無形的影響力進而成為你公開的政治能力。現在你在權力遊戲之中消磨時光，管理著你巨大的封地，並且敘述著當年的冒險與光榮。
-str_retirement_text_10|儘管你出身卑微，你的君主卻對你尊重有加，當他賜予你{s9}城的{伯爵/女爵}世襲頭銜的時候在當地士族中引起了軒然大波。巨大的封地和財富現在供你支配。你很快成為了你的君主最信任的謀臣，幾乎和他平起平坐並且處理他領土的大部分事務，而且作為中土大陸最有權勢的角色你在你那光彩奪目的宮殿里安放了一個與之相配的王座。
 str_loot_village|攻 擊 無 辜 的 村 民
 str_steal_from_villagers|從 窮 困 的 村 民 手 中 偷 竊
 str_rob_caravan|掠 奪 一 個 商 人 旅 隊
@@ -1034,59 +1024,11 @@ str_npc14_honorific|隊長
 str_npc15_honorific|主 人 
 str_npc16_honorific|首領
 str_npc17_honorific|首 領 
-str_comment_intro_liege_affiliated|有人告訴我你已經向某個質疑我王位的人起誓。但是我們仍然可以談談。
-str_comment_intro_famous_liege|你的名聲來的比你的人快！也許你該尋求一個配得上你的英勇的君主了。
-str_comment_intro_famous_martial|你的名聲來的比你的人快！或許我們該在競技場或者戰場上比較一下雙方的勇武！
-str_comment_intro_famous_badtempered|我聽說過你。無需客套，請直言吧。
-str_comment_intro_famous_pitiless|我知道你的名字，它讓很多人從心裡感到害怕。這很好，或許我們該找個時間好好談談。
-str_comment_intro_famous_cunning|哈，我們終於見面了，感覺你是一位值得我認識的{紳士/淑女}。讓我們好好談談吧。
-str_comment_intro_famous_sadistic|我聽說過你—如果我沒記錯的話，很多悲傷的喪偶之人也知道你的名字。不過這些都跟我無關。
-str_comment_intro_famous_goodnatured|久仰大名，今日得見果然名不虛傳。
-str_comment_intro_famous_upstanding|我聽說過你，他們說你是最英勇的戰士。希望你的榮譽和仁慈與勇猛相配。
-str_comment_intro_noble_liege|我看你帶著面貴族的旗子，不過我不認得這個徽標。你應該知道，我總在尋找能為我而戰的勇士。當然，是在他們證明自己可以被信賴之後。
-str_comment_intro_noble_martial|我看你帶著面貴族的旗子，不過我不認得這個徽標。或許我們該在競技場或者戰場上比較一下雙方的勇武！
-str_comment_intro_noble_badtempered|我不認得你旗子上的這個徽標。一定又是個外鄉人到這裡來了，好像這裡還不夠多似的。
-str_comment_intro_noble_pitiless|看你帶著面貴族的旗子，不過我不認得這個徽標。毫無疑問，又一隻戰爭的禿鷹。
-str_comment_intro_noble_cunning|我看你帶著面貴族的旗子，不過我不認得這個徽標。可能有一天{你/妳}會證明自己是一位偉大的戰士，交上這樣的朋友總是很划算的。
-str_comment_intro_noble_sadistic|我看你帶著面貴族的旗子，不過我不認得這個徽標。或者你是個該死偷牛賊的{兒子/女兒}？或者是你偷了這面旗幟？
-str_comment_intro_noble_goodnatured|我看你帶著面貴族的旗子，不過我不認得這個徽標。請原諒我的無知，這位{先生/女士}。很高興認識你。
-str_comment_intro_noble_upstanding|我看你帶著面貴族的旗子，不過我不認得這個徽標。毫無疑問你是來卡拉迪亞尋找財富和榮譽。真是這樣的話我隻請求你對那些戰爭中無辜的靈魂仁慈一些罷。
-str_comment_intro_common_liege|也許你的出身很平常。但你應該知道，我總在尋找能為我而戰的勇士。當然，是在他們證明自己可以被信賴之後。
-str_comment_intro_common_martial|也許你的出身很平常。但如果你想證明{你/妳}的勇敢，我很可以跟你在競技場或戰場上來較量一下。
-str_comment_intro_common_badtempered|有話快說，我可不想浪費時間跟傭兵扯淡。
-str_comment_intro_common_pitiless|你長的一副僱傭軍的樣子，又是一隻戰爭的禿鷹。
-str_comment_intro_common_cunning|好吧，我沒聽說過你，不過你看起來就像個{大人物/大人物}。也許未來有那麼一天，{你/妳}會出人頭地的。
-str_comment_intro_common_sadistic|對那些不請自來放肆無禮的無名之輩，通常我會直接切開他們的喉嚨。不過我今天心情不錯。
-str_comment_intro_common_goodnatured|嗯，你看起來蠻像一個好人。
-str_comment_intro_common_upstanding|願你平安，並希望你永遠記住—英勇相配仁慈之心，膽識用於磊落之處。
-str_comment_you_raided_my_village_enemy_benevolent|你竟敢屠殺我守護的{s51}的無辜平民，你將為你的罪行付出代價。
-str_comment_you_raided_my_village_enemy_spiteful|你膽敢掠奪我的{s51}，毀壞我的產業，並屠殺我的租戶。你將用鮮血來償還！
-str_comment_you_raided_my_village_enemy_coldblooded|你掠奪了我的{s51}，毀壞了我的產業，屠殺了我的租戶。在此奉勸你三思後行。
-str_comment_you_raided_my_village_enemy|你掠奪了我的{s51}，毀壞了我的產業，屠殺了受我保護的租戶。你會為你的罪行付出代價的！
-str_comment_you_raided_my_village_unfriendly_spiteful|你掠奪了我的{s51}，第二次我會像收拾魚那樣捏爆你的魚泡！
-str_comment_you_raided_my_village_friendly|你掠奪了我的{s51}，很遺憾我們之間的裂痕已經無法修不了。
-str_comment_you_raided_my_village_default|你掠奪了我的{s51}，如果你繼續這樣做，我們真的會打起來。
-str_comment_you_robbed_my_village_enemy_coldblooded|你在我的{s51}搶奪我的租戶，這是對我個人的侮辱。
-str_comment_you_robbed_my_village_enemy|你竟敢在我守護的{s51}搶劫無辜的農民，你將為你的罪行付出代價。
-str_comment_you_robbed_my_village_friendly_spiteful|我聽說你在我的{s51}強徵租戶的口糧。我並不在意你拿走的那點兒東西。但你要記住，究竟是誰要傾聽他們的哭訴。
-str_comment_you_robbed_my_village_friendly|我聽說你在我的{s51}強行徵糧。我相信如果不是迫不得已，你是不會這麼做的。
-str_comment_you_robbed_my_village_default|你在我的{s51}強行徵糧。如果你繼續這樣做，我們真的會打起來。
-str_comment_you_accosted_my_caravan_enemy|你竟敢對我保護下的商隊下手，看來你的盜匪生涯就要結束了。
-str_comment_you_accosted_my_caravan_default|你竟然想對我保護下的商隊下手，這種行為必須立即停止。
-str_comment_you_helped_villagers_benevolent|我聽說你在我的{s51}行善，作為領主和保護者的我卻忽略了自己的責任。非常感激你為我做的這些。
-str_comment_you_helped_villagers_friendly_cruel|我聽說你在我的{s51}行善。我想你的初衷是好的，但我不希望你再這樣隨意損害我的威信。
-str_comment_you_helped_villagers_friendly|我聽說你在我的{s51}行善。世道艱難，我也知道你的初衷是好的，所以我不反對你對他們提供幫助。
-str_comment_you_helped_villagers_unfriendly_spiteful|我聽說你在我的{s51}行善。看你在我的租戶中間賺取好感真是有趣，不過勸你還是先管好自己再說吧。
-str_comment_you_helped_villagers_cruel|我聽說你在我的{s51}行善。作為領主和保護者，那些是我的責任。世道艱難，我也知道你的初衷是好的，但你這樣還是在損害我的威信。如果你能不管他們的話我會很感激的。
-str_comment_you_helped_villagers_default|我聽說你在我的{s51}行善。世道艱難，我也知道你的初衷是好的，但樂於助人並不是個好習慣。作為領主和保護者，我可不想讓他們期待來自陌生人的幫助。
 str_comment_you_captured_a_castle_allied_friendly|我聽說你包圍並攻下了{s51}。這是一場偉大的勝利，能與你為友是我的榮幸。
 str_comment_you_captured_a_castle_allied_spiteful|我聽說你包圍並攻下了{s51}。幹得好！很快，我們就能佔領他們的城堡，洗劫他們的國庫，強迫他們的女人給我們倒酒！
 str_comment_you_captured_a_castle_allied_unfriendly_spiteful|我聽說你包圍並攻下了{s51}。好吧，瓦片也有翻身時，當然這不是我說的。勸你在被趕回老巢之前好好享受吧。
 str_comment_you_captured_a_castle_allied_unfriendly|我聽說你包圍並攻下了{s51}。不管我們以前有多少分歧，我還是奉上我的祝賀。
 str_comment_you_captured_a_castle_allied|我聽說你包圍並攻下了{s51}。我們把他們打跑了！
-str_comment_you_captured_my_castle_enemy_spiteful|我聽說你闖入了我位於{s51}的家。希望地牢對你的胃口，因為你會在那里安度餘生的。
-str_comment_you_captured_my_castle_enemy_chivalrous|你佔領了我的封地{s51}，希望你能給我機會贏它回來。
-str_comment_you_captured_my_castle_enemy|你有些東西是屬於我的—{s51}。我會讓你放棄它的。
 str_comment_we_defeated_a_lord_unfriendly_spiteful|我想你會因為我們對{s54}的勝利小酌一杯。不過勸你還是省省吧—至少在你洗淨前恥之前。
 str_comment_we_defeated_a_lord_unfriendly|我不會忘記當初我們是如何並肩作戰對抗{s54}，但我也不會忘記那些橫在我們之間的過節。
 str_comment_we_defeated_a_lord_cruel|對{s54}的戰鬥是一場偉大的勝利，不是麼？我們把敵人的部隊變成了一場烏鴉的盛宴！
@@ -1154,10 +1096,6 @@ str_comment_you_defeated_my_friend_enemy_pragmatic|你也許可以打敗{s54}，
 str_comment_you_defeated_my_friend_enemy_chivalrous|我聽說你打敗了{s54}，從那時候起我就渴望與你交手。
 str_comment_you_defeated_my_friend_enemy_spiteful|你有點名過其實，{playername}。 {s54}也許敗在你的小把戲之下，但是如果你跟我打，你將發現我更難纏。
 str_comment_you_defeated_my_friend_enemy|聽說你打敗了{s54}。但我將會真正測試你的能力。
-str_comment_you_captured_a_lord_allied_friendly_spiteful|我聽說你抓住{s54}了。我希望你能榨出他身上的每一枚第納爾。
-str_comment_you_captured_a_lord_allied_unfriendly_spiteful|我聽說你抓住{s54}了。你的箱子裡現在一定裝滿了贖金。但是很可惜錢不能使你從一個低賤的野狗變成紳士的！
-str_comment_you_captured_a_lord_allied_chivalrous|我聽說你抓住{s54}了。幹得不錯，當然我認為，他現在應該受到了與他身份相稱的待遇。
-str_comment_you_captured_a_lord_allied|我聽說你抓住{s54}了。幹得不錯，他的贖金一定很豐厚。
 str_comment_you_let_go_a_lord_allied_chivalrous|我聽說你抓住{s54}了，但是你把他放走了。這樣的騎士精神對我來說是一種榮譽。
 str_comment_you_let_go_a_lord_allied_upstanding|我聽說你抓住{s54}了，但是你把他放走了。很好，這是一個光榮的做法，但是同時也可能是一種危險的做法。
 str_comment_you_let_go_a_lord_allied_coldblooded|我聽說你抓住{s54}了，但是你把他放走了。對你來說，這是一件富有騎士精神的做法，但是騎士精神贏不了戰爭。
@@ -1168,33 +1106,6 @@ str_comment_you_let_me_go_enemy_chivalrous|我們上次遇到的時候，你對�
 str_comment_you_let_me_go_enemy_coldblooded|我們上次遇到的時候，你對我很仁慈，並放我走了。但是我們仍然是敵人，我不會以同樣的方式對你仁慈的。
 str_comment_you_let_me_go_enemy|我們上次遇到的時候，你對我很仁慈，並放我走了。你很仁慈，但是我們仍然在交戰中。
 str_comment_you_let_me_go_default|我們上次遇到的時候，你對我很仁慈，並放我走了。你很仁慈，而且我很高興我們的國家不再交戰了。
-str_comment_pledged_allegiance_allied_martial_unfriendly|我聽說你已經發誓效忠我們的國王{s54}了。祈禱你不會表現出懦弱的樣子而使我們都感到丟臉。
-str_comment_pledged_allegiance_allied_martial|我聽說你已經發誓效忠我們的國王{s54}了。我一直都想和你並肩對抗我們的敵人
-str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|我聽說你已經發誓效忠我們的國王{s54}了。呸！你就自重吧，離我遠點。
-str_comment_pledged_allegiance_allied_quarrelsome|我聽說你已經發誓效忠我們的國王{s54}了。努力和我們的敵人戰鬥，尊敬你的前輩，而且不要妨礙我。這樣我們就能和諧相處了。
-str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|我聽說你已經發誓效忠我們的國王{s54}了。如果我是他，我就不會信任你能當好火頭軍。
-str_comment_pledged_allegiance_allied_selfrighteous|我聽說你已經發誓效忠我們的國王{s54}了。勇敢地戰鬥，你將會獲得更多的報酬。背叛我們的話，我們會一輩子記仇的。
-str_comment_pledged_allegiance_allied_cunning_unfriendly|我聽說你已經發誓效忠我們的國王{s54}了。我不會假意地對他的決定表示高興，但是也許讓你加入我們的陣營比加入別的好多了。
-str_comment_pledged_allegiance_allied_cunning|我聽說你已經發誓效忠我們的國王{s54}了。太好了，在這個動亂的年代，你這樣的能幹的戰士越多越好。我將看著你成長。
-str_comment_pledged_allegiance_allied_debauched_unfriendly|我聽說你已經發誓效忠我們的國王{s54}了。不用懷疑，你很快就會背叛他，而我很樂意看到你受到叛國者應該受到的下場。
-str_comment_pledged_allegiance_allied_debauched|我聽說你已經發誓效忠我們的國王{s54}了。非常棒…我確信你和我將會成為很好的朋友。但記住，如果你出賣我們，這將是你犯的最大的錯誤。
-str_comment_pledged_allegiance_allied_goodnatured_unfriendly|我聽說你已經發誓效忠我們的國王{s54}了。好吧，我不能說我將信任你，但是也許在沒有確實證據之前是這樣。
-str_comment_pledged_allegiance_allied_goodnatured|我聽說你已經發誓效忠我們的國王{s54}了。好的{先生/姑娘}！我們的國王是一個高尚的人，他會慷慨仁慈地獎勵忠心且英勇的人。
-str_comment_pledged_allegiance_allied_upstanding_unfriendly|我聽說你已經發誓效忠我們的國王{s54}了。唉，自從我認識你開始，我就擔心你給我們丟臉，但是我希望你能證明我是錯的。
-str_comment_pledged_allegiance_allied_upstanding|我聽說你已經發誓效忠我們的國王{s54}了。勇敢地和我們的敵人戰鬥，但是也要保持榮譽和憐憫。一個好的名聲對於部隊來說就像利刃和千里馬那樣有價值。
-str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|我聽說{s54}把{s51}封給你了。一定要牢記—鞭打鞭子、掠奪農民！
-str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|我聽說{s54}把{s51}封給你了。我很高興見到你的成功，但要當心。人們對他們鄰居的財富是險惡，嫉妒和貪婪的。和我靠近些，我會幫你提防後面的。
-str_comment_our_king_granted_you_a_fief_allied_friendly|我聽說{s54}把{s51}封給你了。希望你的新封地變得繁榮起來。
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|我聽說{s54}把{s51}封給你了，但要記住—驕者必敗。
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|我聽說{s54}把{s51}封給你了。我想不管怎麼說，這筆巨大的財富只能暫時提升你的地位；當你被丟回你來時的糞坑中時，你的身份就會越發的低微。
-str_comment_our_king_granted_you_a_fief_allied_spiteful|我聽說{s54}把{s51}封給你了。我希望你能確實配得上吾王的稱讚。
-str_comment_our_king_granted_you_a_fief_allied|我聽說{s54}把{s51}封給你了。你靠自己一個人似乎幹得很好。
-str_comment_you_renounced_your_alliegance_enemy_friendly|我聽說你放棄了對我們國王{s54}的效忠。這令我很傷心，因為我們得在戰場上兵戎相見了
-str_comment_you_renounced_your_alliegance_friendly|我聽說你放棄了對我們國王{s54}的效忠。讓我們祈禱我們不要開始互相廝殺。
-str_comment_you_renounced_your_alliegance_unfriendly_spiteful|我一直在{s54}面前把你形容成一個叛國者，而現在似乎我的觀點被證明是正確的。我希望你準備好接受一個叛國者應得的下場了。
-str_comment_you_renounced_your_alliegance_unfriendly_moralizing|我聽說你放棄了對我們國王{s54}的效忠。我不得不把你看作是一個叛國者。
-str_comment_you_renounced_your_alliegance_enemy|我聽說你放棄了對我們國王{s54}的效忠。好吧，世界的發展總是讓舊時同伴變成敵人。
-str_comment_you_renounced_your_alliegance_default|我聽說你放棄了對我們國王{s54}的效忠。好吧，這是你的決定。但別指望我會在將來我們戰場相遇的時候對你手下留情。
 str_personality_archetypes|領主
 str_martial|好戰的
 str_quarrelsome|易怒的

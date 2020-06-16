@@ -33,27 +33,6 @@ qstr_Gauntlet_wave:_1|Vyzývateľská skupina: 1
 qstr_Gauntlet_wave:_{reg1|Vyzývateľská skupina: {reg1}
 qstr_Remain_in_retirement|Zostať na dôchodku.
 qstr_Go_back_to_the_adven|Vrátiť sa k dobrodružstvu.
-qstr_You_have_retired_at_|Rozhodol si sa odísť do dôchodku na úrovni {reg4} po {reg5} dňoch dobrodružného života.
-qstr_Effect_on_Score|Vplyv na skóre
-qstr_Settlements_owned_by|Hrady/usadlosti vlastníš: {reg0}
-qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
-qstr_Friendly_Settlements|Priateľské hrady a usadlosti: {reg0}
-qstr_Hostile_Settlements:|Znepriatelené hrady a usadlosti: {reg0}
-qstr_{reg0}|{reg0}
-qstr_Friendly_Lords:_{reg|Priateľský lordi: {reg0}
-qstr_Enemy_Lords:_{reg0}|Znepriatelený lordi: {reg0}
-qstr_Victories:_{reg0}|Víťazstiev: {reg0}
-qstr_Defeats:_{reg0}|Porážky: {reg0}
-qstr_Quests_Completed:_{r|Splnených úloh: {reg0}
-qstr_Companions_Found:_{r|Objavených spoločníkov: {reg0}
-qstr_Companions_Lost/Depa|Stratených/prepustených spoločníkov: {reg0}
-qstr_Wealth:_{reg0}_denar|Bohatstvo: {reg0} denárov
-qstr_Inventory:_{reg0}_de|Inventár: {reg0} denárov
-qstr_Experience:_{reg0}|Skúsenosti: {reg0}
-qstr_Days_Passed:_{reg0}|Uplynulých dní: {reg0}
-qstr_Difficulty:_{reg0}%|Obťažnosť: {reg0}%
-qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
-qstr_TOTAL_SCORE:_{reg0}|CELKOVÉ SKÓRE: {reg0}
 qstr_A_peaceful_village_n|Mierumilovná dedinka neďaleko Západného úvalu...
 qstr_The_War_is_upon_Roha|V Rohane sa rozpútala vojna!
 qstr_Minas_Tirith___The_W|Minas Tirith - Biele Mesto
@@ -180,7 +159,8 @@ qstr_Useful_Tool_of_{s5}|Cenný nástroj {s5}u
 qstr_Servant_of_{s5}|Služobník {s5}u
 qstr_Unknown_to_{s5}|Neznámy v {s5}e
 qstr_You_have_been_{reg1?|Bol si {reg1?povýšený:degradovaný} na {s24} ({reg0})!
-qstr_You_{reg1?earned:los|{reg1?Ziskáváš:Strácaš} {reg11} bodov Hodnosti {reg12?a {reg12} Vplyvu :}v {s11}.
+; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.
+qstr_You_{reg1?earned:lost|{reg1?Ziskáváš:Strácaš} {reg11} bodov Hodnosti {reg12?a {reg12} Vplyvu :}v {s11}.
 qstr_You_spent_{reg10}_of|Použil si {reg10} tvojho Vplyvu v {s1}, zostáva ti {reg11}.
 qstr_Troop_upkeep:|Žold vojaka:
 qstr_{s11}_and_{s10}|{s11} a {s10}
@@ -250,8 +230,7 @@ qstr_nothing|nič
 qstr_Good|Dobrý
 qstr_Med|Stredný
 qstr_Bad|Zlý
-; qstr_{s77}_received_{reg8|{s77} received {reg84} bonus XP
-; qstr_You_gained_{reg84}_i|You gained {reg84} intelligence-bonus XP
+; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
 qstr_{reg4}_killed_{reg5}|{reg4} mŕtvych, {reg5} ranených, {reg6} zbehlo 
 qstr_{reg4}_killed_{reg5}_|{reg4} mŕtvych, {reg5} ranených
 qstr_{reg4}_killed_{reg5}_r|{reg4} mŕtvych, {reg5} zbehlo
@@ -619,7 +598,6 @@ qstr_mounted_archer|montovaný lukostrelec
 qstr_support|podpora
 qstr_bodyguard|osobný strážca
 qstr_undetermined_type_of|neurčitý typ
-
 qstr_{s1}_has_fled_the_ba|{s1} utiekol z boja!
 qstr_Your_troops_are_at_{|Tvoje jednotky sú na {reg1}% jednoty (+{reg3}% bonus), nepriateľ na {reg2}%!
 qstr_Morale_of_your_troop|Morálka tvojich jednotiek kolísa!
@@ -647,12 +625,9 @@ qstr_have_won_the_sea_bat|vyhrali morskú bitku, demoralizovali svoje jednotky. 
 qstr_loses_Faction_Strength|stráca silu frakcie v dôsledku ničivého náletu.
 qstr_loses_Faction_Strength_|stráca silu frakcie kvôli vášmu úspechu na mori.
 qstr_You_spent_{reg67}_of|Strávil si {reg 67} svojho vplyvu s {s1}, pričom zostal {reg 66}.
-
 ; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
-
 ; qstr_{s1}_{s0}|{s1}, {s0}
 ; qstr_{s1}_and_{s0}|{s1} and {s0}
-
 qstr_No_Troops_Left.|Neostávajú žiadne jednotky.
 qstr_avoid_melee|vyhnúť sa bitky na blízko 
 qstr_stand_and_fight|postaviť sa a bojovať
@@ -725,9 +700,9 @@ qstr_Fixed_Camera___Left_|Upravená kamera - Ľavé rameno
 ; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|Behom návštevy miest, usadlostí a táborov si môžeš pohovoriť s okoloidúcimi. Členovia rôznych frakcií ti povedia rôzne veci - niektorí ti vyrozprávajú svoje myšlienky, iní budú šíriť drby. Obe tieto veci ti dajú čiastočný prehľad, aby si dokázal lepšie pochopiť kultúru frakcie osoby, s ktorou rozprávaš, alebo ti môžu čo-to prezradiť o tajných miestach a zákutiach v danej frakcii, či dať tipy a triky pre cestovanie divočinou a bojovaní vo Vojne o Prsteň.
 qstr_Cannot_leave_now.|Teraz nemôžeš odísť.
-qstr_You_have_found_the_l|Našiel si miestneho kováča... (+{reg3} XP)
-qstr_You_have_found_the_lo|Našiel si miestnu autoritu... (+{reg3} XP)
-qstr_You_have_found_the_loc|Našiel si miestne skladište...(+{reg3} XP)
+; qstr_You_have_found_the_l|You have found the local smithy.
+; qstr_You_have_found_the_lo|You have found the local authority.
+; qstr_You_have_found_the_loc|You have found the local warehouse.
 qstr_You_look_through_Hen|Hľadíš skrz Henneth Annun, Okno zapadajúceho slnka. Prekrásny výhľad v tebe obnoví vieru v Západ a Moc za Veľkým morom.
 qstr__cancelled_the_{reg1|(zrušených {reg10} exp. bodov získaných za zabitie väzňov)
 qstr_Forming_ranks.|Formujú línie
@@ -1057,7 +1032,6 @@ qstr_The_war_expands_comm|Vojna sa rozrástla, velitelia sú trúfalejší! (Na 
 qstr_Your_party_is_spotte|Tvoju družinu pozorujú z {s1}u.
 qstr_Party_has_nothing_to|Družina hladuje!
 qstr_You_pay_for_accommod|Platíš za ubytovanie.
-qstr_Your_scouts_have_rep|Tvoji prieskumníci hlásia, že sa {s2} nachádza neďaleko {s3}u.
 qstr_The_troll_outside_{s|Zlobor pred {s2}om bol zabitý. Misia je zrušená. 
 qstr_{s1}_was_killed_on_t|{s1} bol zabitý v boji. Úloha zrušená.
 qstr_{s1}_has_been_defeat|{s1} bol porazený. Misia zrušená.
@@ -1087,6 +1061,7 @@ qstr_{s5}_has_stopped_fol|{s5} ťa už nesprevádza.
 qstr_You_have_{reg69}_all|{reg69} spojenecká družina ťa následuje.
 qstr_You_have_{reg69}_ally|Následuje ťa {reg69} družín spojencov.
 qstr_The_forces_of_{s2}_h|Armády {s2}u sa preskupili a pochodujú na {s15}!
+qstr_Your_scouts_have_rep|Tvoji prieskumníci hlásia, že sa {s2} nachádza neďaleko {s3}u.
 qstr_{s1}_from_{s2}|{s1} z {s2}
 qstr_When_dealing_with_lo|Pokiaľ jednáš s miestnymi v {s11}e, a nemuseli sa ešte dopočuť o tvojich úspechoch v {s10}e. ^^(Body Zásob, ktorým disponuješ medzi obyvateľstvom v {s11}e, nie sú rovnaké, aké si získal v {s10}, ale rovnaké, aké bude i naďalej získavať v {s11} -- pozri Hlásenie)
 qstr_Info|Info
@@ -1134,6 +1109,7 @@ qstr_Um..._by_enchanting_|Um... očarovaním železa?
 qstr_Magnets_are_made_of_|Magnety sú vyrábané z kovu, ktorý sa ťaží zo zeme, a tá obsahuje magnetické čiastočky. Preto je kov magnetický.
 qstr_i_wont_a_bonerlrord_|Kcem tendo mót kompatibiľní s Bannerlod!!11!
 qstr_Install_TLD_in_your_|Nainštaluj si TLD do priečinku Bannerlord Modules, pridaj riadok 'compatible_with_wfas = 1' do module.ini, a tak budeš môcť hrať TLD na Warbande i na Warrideri 0.202!
+; qstr_Bannerlord_runs_on_a|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
 qstr_dis_mod_takes_2_long|Na dendo mót je treba šakaď 2 hodiny! To ie na prd!!11!
 qstr_Well_there_s_a_lot_o|Nuž, je v ňom veľa nových grafickým modelov a iných vecičiek. Asi to nejakú tu chvíľu potrvá.
 qstr_It_has_been_recently|Bol nedávno vydaný. Pokiaľ ti chýba odkaz, môžeš si ho stiahnuť na lemonparty.org.
@@ -1226,6 +1202,7 @@ qstr_It_is_my_duty_to_prot|Je mojou povinnosťou chrániť našich spojencov.
 qstr_I_am_{s4}_{s15}_of_{|Som {s4}, {s15} z {s6}u
 qstr_I_am_{s4}_a_commande|Som {s4}, veliteľ {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? a panovník {s8}.:.
+; qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
 qstr_{playername}_our_sco|{playername}, naši priezkumníci nám zvestovali tvoje víťazstvo. Bodaj by ťa skrz tento deň oslavovali až do tvojich požehnaných rokov. Porážka vojsk z {s7} tvojou rukou spomalila postup nepriateľov. Dúfajme, že v ich šíkoch zavládla neistota a velitelia zakolísali. V ich srdciach si si vyslúžil dôvodný strach. A v neposlednom rade si povzbudil nášho ducha.
 ; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
 qstr_Alas_that_I_could_no|Škoda že som nedokázal priviesť {s7} z {s8} k ich koncu, ale pokiaľ sa s nimi ešte niekedy stretneme, neváhajme.
@@ -1287,6 +1264,7 @@ qstr_Ah_{playername}_it_i|Ah, {playername}, som rád, že prichádzaš. Vojna je
 qstr_About_time_you_showe|Doteperil si sa práve včas, {playername}. Sme vo vojne a ja nebudem trpieť žiadne spurné výstrely. Bojujeme proti {s11}, ale musíme zhromáždiť naše sily a rozdrviť nepriateľov na bojovom poli než si budeme môcť zgustnúť na ich pevnostiach. Každé víťazstvo nad nimi je krokom k ich zhube a nášmu víťazstvu. Takže dúfam, že ak na teba narazia, či už to bude len cháska zvedov alebo i celá vojnová družina, budú o hlavu kratší. Taktiež pomôž našim veliteľom a spojenco, ak ich uvidíš zápoliť. Sklam ich a ja sa to dozviem.
 qstr_we_are_fighting_agai|Vedieme vojnu proti {s13}
 qstr_we_are_not_fighting_|momentálne s nikým nebojujeme
+; qstr__{s14}_gained_{reg78| {s14} gained {reg78} experience.
 qstr_Oh?_Let_me_see_that.|Oh? Ukáž mi ho.. Výborne! Je dobre, že si mi ho doručil, {playername}. Tuto, moja pečať ako dôkaz že som dopis obdržal, pozdravuj {s9} keď sa znova stretnete.
 qstr_Give_me_that!_Hrmph!|Daj to sem! Hrmph! Je dobré, že si mi ho doručil, {playername}, si užitočným služobníkom. Povedz {s9}, aby ti udeľoval prácu častejšie.
 qstr_What?_Let_me_see_tha|Čo je? Ukáž mi ho... Hmmm. Veľmi dobre, že si mi ho priniesol, {playername}. A teraz zmizni.
@@ -1530,10 +1508,6 @@ qstr_One_{s6}_left_the_pa|Jeden {s6} opustil družinu.
 qstr_I_understand._I_will|Rozumiem. Zostanem s tebou. Na chvíľu.
 qstr_I_have_played_my_rol|Zohrával som svoju úlohu po mnohé dlhé roky, po mnohé životy smrteľníkov. S touto vojnou sa musí vysporiadať ľudstvo. Odplávam na Západ a niektorí sa budu môcť rozhodnúť, či sa ku mne pridajú.
 qstr_{reg1}_Veteran_Elves|{reg1} skúsených elfov sa rozhodlo opustiť tvoju družinu.
-qstr_You_chose_well_{sir/|Vyberaj múdro, {pane/pani}. Moji chlapci vedia, ako dodržať slovo a vyrobiť si svoj plat.
-qstr_Well_done_{sir/madam|Výborne, {pane/pani}. Nechaj zlato a víno prúdiť smerom k nám a v Calradii nenájdeš nepriateľa.
-qstr_We_are_at_your_servi|Sme ti k službám, {pane/pani}. Povedz, komu by neuškodilo pár podpásoviek a my sa postaráme o zbytok.
-qstr_You_will_not_be_diss|Nesklameme vás {pane/paní}, V Calradii lepších bojovníkov nenajdeš.
 qstr_What_an_amazing_feat|Skvelá práca so zbraňami!
 qstr_Well_done!|Výborne!
 qstr_Nice_legwork.|Dobrá koordinácia nôh
@@ -1576,11 +1550,7 @@ qstr_The_{s11}_of_{s10}_a|{s11} z {s10} ťa poveril, aby si eskortoval nejakých
 qstr__Guards_slaughter_hi|Stráže, zabite ho!
 qstr_Slaughter_him_for_fr|Zabite ho na čerstvé ľudské mäso!
 qstr_This_is_{s5}_Command|Toto je {s5}, Veliteľ.
-qstr_{s6}_This_place_and_|{s6} Toto miesto a priľahlé zeme patria samozrejme tebe, môj {pane/pani}.
 qstr_{s6}_This_place_and_t|{s6} Toto miesto a priľahlé zeme patria {s7} z {s8}.
-qstr_{s3}_and_{s5}|{s3} a {s5}
-qstr_{s3}_{s5}|{s3}, {s5}
-qstr_{reg20?We_mostly_pro|{reg20?Produkujeme tu hlavne {s5}:V tejto dobe neprodukujeme veľké množstvo}. Pokiaľ by si chcel vedieť viac, porozprávaj sa s naším {reg4?cechovným majstrom:starostom}. Je neďaleko, hneď tamto.
 qstr_Hey_scum!_I_can_fix_|Hej, červ! Môžem ti trochu poupraviť sánku.
 qstr_Watch_where_you_re_g|Dávaj pozor kam ideš, špina!
 qstr_I_don_t_like_your_fa|Nepáči sa mi tvoj ksicht! Myslím, že by sa mu hodila menšia úprava.

@@ -791,17 +791,6 @@ dlga_mayor_talk:mayor_deliver_wine|有人叫我带{reg9}单位的{s4}给你。
 dlga_mayor_deliver_wine:mayor_pretalk|可算来了！我们的货舱基本上都空了，我只好把{s4}的订单提前了。帮我向{s9}问好。^^[获得{s14}的{reg14}资源点]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|我本应携带{reg9}单位的{s4}给你，但少部分货物被敌人抢走了。
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|他们早晚会为此付出代价的！至少我们有一些{s4}。不管怎样我都要谢谢你！[获得{s14}的{reg14}资源点]
-dlga_start:mercenary_tavern_talk|指挥官，你需要雇佣兵吗？{reg3?我和{reg4?{reg3}名同伴:另一名同伴} 正:我正}寻找雇主。 仅仅需要{reg5}第纳尔，我们就会加入你。
-dlga_start:mercenary_after_recruited|有什么命令么？指挥官。
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|做好准备。我们要开拔了。
-dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|别急，我们还要在这个镇子呆上一段时间。
-dlga_mercenary_after_recruited_2:close_window|是的，指挥官，我们随时准备好开出发了。
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|好的。我要雇佣你们所有的人。这是{reg5}第纳尔。
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|好的。但是我只能雇佣{reg6}个人。这是{reg5}第纳尔。
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|你的话听上去不错。但是我现在没有足够的佣金去雇佣更多的人了。
-dlga_tavern_mercenary_cant_lead:close_window|那就很遗憾了。好吧，{reg3?我们会:我会}在这附近逗留一会的，如果你需要雇佣兵的话。
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|你的话听上去不错。但是我现在无法带上更多的人了。
-dlga_mercenary_tavern_talk:close_window|抱歉。我现在不需要人手。
 dlga_start:trainer_pretalk|你已经存活到了第{reg2}波。{s4}
 dlga_start:trainer_pretalk.1|非常好，你击败了你的对手们。
 dlga_start:trainer_talk|日安。今天准备来点训练吗？
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|我正在追捕一名叫{s4}的
 dlga_town_dweller_ask_fugitive:close_window|我们这里有不少来来往往的陌生人。要是他真就躲藏在这里，你在周围四处转转应该就能看到。
 dlga_town_dweller_talk:town_dweller_ask_info|你能告诉我这个村子的相关情况么？
 dlga_town_dweller_talk:town_dweller_ask_info.1|你能跟我说说这个地方么？
-dlga_town_dweller_talk:town_dweller_ask_situation|这里的生活如何？
-dlga_town_dweller_ask_situation:town_dweller_poor|灾难早就降临到我家了，{先生/女士}。一场瘟疫把我田里的麦子全毁了，我可怜的孩子躺在家里又病又饿。我的邻里也同样很穷，他们根本帮不了我。
-dlga_town_dweller_ask_situation:town_dweller_poor.1|我的命太苦了，{先生/女士}。我已经一个月都找不到工作了，我可怜的孩子每天晚上都饿着肚子。我的邻里也同样很穷，他们根本帮不了我。
-dlga_town_dweller_poor:town_dweller_poor_paid|那么收下这300第纳尔。我希望这可以帮助你和你的家人。
-dlga_town_dweller_poor:town_dweller_poor_not_paid|你需要更努力的工作，承担你的责任，而不是整日抱怨。
-dlga_town_dweller_poor_not_paid:close_window|是的{先生/女士}。我会照你说的做的。
-dlga_town_dweller_poor_paid:close_window|{大人/好心的夫人}，你真是太慷慨了。我要告诉所有人你是怎么帮助我的。
-dlga_town_dweller_ask_situation:close_window|谢谢你的好心，{先生/女士}。有了你的帮助我们会过的更好，我会每天为你祈祷的。
-dlga_town_dweller_ask_situation:town_dweller_talk|日子不好过啊，{先生/女士}。我们每天都在努力工作，但大部分晚上却还是饿着肚子上床。
-dlga_town_dweller_ask_situation:town_dweller_talk.1|日子不好过啊，{先生/女士}。不过还是谢天谢地。
-dlga_town_dweller_ask_situation:town_dweller_talk.2|我们过得还不差，{先生/女士}。谢天谢地。
+dlga_town_dweller_talk:town_dweller_talk|这里的生活如何？
 dlga_town_dweller_talk:town_dweller_ask_rumor|最近这附近有什么有趣的传闻么？
 dlga_town_dweller_ask_rumor:town_dweller_talk|我目前还没听到过任何你会感兴趣的传闻。
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|你在威胁我？那些守卫可是迫不及待的等着你露面呢。

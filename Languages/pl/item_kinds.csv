@@ -67,15 +67,12 @@ itm_wargarmored_2c|Opancerzony Warg
 itm_wargarmored_3a|Opancerzony Warg
 itm_warg_reward|Olbrzymi Warg
 itm_tree_trunk_club_a|Pień
-
 itm_giant_mace|Wielka Maczuga
 itm_troll_shield_a|Tarcza Troli
 itm_arrows|Strzały
 itm_gondor_arrows|Gondorskie Strzały
 itm_orc_javelin|Ciężki Oszczep Orków
 itm_khergit_arrows|Rohańskie Strzały
-
-
 itm_harad_arrows|Haradzkie Strzały
 itm_corsair_arrows|Korsarskie Strzały
 itm_ithilien_arrows|Strzały z Ithilien
@@ -91,7 +88,6 @@ itm_leather_boots_dark|Buty Jeźdźca
 itm_white_tunic_a|Cywilne ubranie
 itm_rohan_shoes|Skórzane Buty
 itm_furry_boots|Futrzane Buty
-
 itm_black_tunic|Czarna Tunika
 itm_hood_black|Czarny Kaptur
 itm_hood_green|Zielony Kaptur
@@ -137,8 +133,6 @@ itm_loss_throwing_axes|Toporki do Rzucania z Lossarnach
 itm_arnor_helm_a|Arnorski Hełm
 itm_arnor_helm_b|Arnorski Hełm
 itm_arnor_helm_c|Arnorski Hełm
-
-
 itm_dunedain_helm_b|Arnorski Zdobiony Hełm
 itm_arnor_armor_a|Arnorska Zbroja
 itm_arnor_armor_b|Arnorska Zbroja
@@ -150,10 +144,6 @@ itm_arnor_greaves|Arnorskie Nagolenniki
 itm_arnor_splinted|Arnorskie Paskowe Nagolenniki
 itm_arnor_shield_a|Arnorska Tarcza
 itm_arnor_shield_c|Arnorska Tarcza Kawaleryjska
-
-
-
-
 itm_arnor_sword_a|Arnorski Miecz Półtoraręczny
 itm_arnor_sword_c|Arnorski Miecz Półtoraręczny
 itm_arnor_sword_f|Arnorski Krótki Miecz
@@ -165,8 +155,8 @@ itm_riv_shield_a|Tarcza z Rivendell
 itm_riv_shield_b|Tarcza z Rivendell
 itm_riv_bas_sword|Miecz Półtoraręczny z Rivendell
 itm_riv_1h_sword|Miecz z Rivendell
-itm_riv_riding_sword|Miecz Kawaleryjski z Rivendell
-itm_riv_archer_sword|Miecz Zwiadowcy z Rivendell
+; itm_riv_riding_sword|Rivendell Longsword
+; itm_riv_archer_sword|Rivendell Short Sword
 itm_riv_spear|Włócznia z Rivendell
 itm_riv_light|Tunika z Rivendell
 itm_riv_leather|Skórzany pancerz z Rivendell
@@ -196,19 +186,13 @@ itm_gondor_ranger_hood_mask|Gondorski Kaptur Zwiadowcy
 itm_gondor_light_greaves|Gondorskie Skórzane Nagolenniki
 itm_gondor_med_greaves|Gondorskie Porządne Nagolenniki
 itm_gondor_heavy_greaves|Gondorskie Kolcze Nogawice
-
-
 itm_gondor_infantry_helm|Gondorski Hełm Piechoty
 itm_gondor_auxila_helm|Gondorski lekki hełm
-
-
 itm_gondorian_archer_helm|Gondorski Hełm Łucznika
 itm_tower_archer_helm|Hełm Strzelca Cytadeli
 itm_gondor_leader_helm|Gondorski Wspaniały Hełm
 itm_tower_guard_helm|Hełm Gwardii Cytadeli
 itm_gondor_citadel_knight_helm|Hełm Rycerza Cytadeli
-
-
 itm_gondor_knight_helm|Gondorski Hełm Kawalerzysty
 itm_gondor_dolamroth_helm|Hełm z Dol Amroth
 itm_swan_knight_helm|Hełm Łabędziego Rycerza
@@ -292,11 +276,6 @@ itm_lorien_archer|Miecz Łucznika z Lorien
 itm_lorien_armor_a|Pikowany Pancerz z Lorien
 itm_lorien_armor_b|Kolczuga z Lorien
 itm_lorien_armor_c|Zbroja płytowa z Lorien
-
-
-
-
-
 itm_lorien_boots|Buty z Lothlorien
 itm_lorien_shield_b|Pawęż z Lorien
 itm_lorien_shield_c|Trójkątna Tarcza z Lorien
@@ -304,14 +283,10 @@ itm_lorien_round_shield|Okrągła Tarcza z Lorien
 itm_lorien_helm_a|Hełm Łucznika z Lorien
 itm_lorien_helm_b|Hełm Łucznika z Lorien
 itm_lorien_helm_c|Hełm Piechoty z Lorien
-
-
 itm_orc_coif|Orkowa Czacha
 itm_orc_greaves|Orkowe Kolcze Buty
 itm_orc_ragwrap|Orkowe Szmaty
 itm_orc_furboots|Orkowe Futrzane Buty
-
-
 itm_orc_tribal_a|Niegarbowana Skóra
 itm_orc_tribal_b|Niegarbowana Skóra
 itm_orc_tribal_c|Niegarbowana Skóra
@@ -347,7 +322,6 @@ itm_isen_uruk_helm_c|Hełm Uruk-hai
 itm_isen_uruk_helm_d|Hełm Wodza Uruk-hai
 itm_isen_uruk_helm_e|Hełm Tropiciela Uruk-hai
 itm_isen_uruk_helm_f|Hełm Tropiciela Uruk-hai
-
 itm_uruk_pike_b|Mordorska Pika
 itm_uruk_falchion_a|Ostrze Uruków
 itm_uruk_falchion_b|Tasak Uruków
@@ -371,7 +345,6 @@ itm_wood_club|Drewniana Maczuga
 itm_twohand_wood_club|Dłua Drewniana Maczuga
 itm_bone_cudgel|Kościana Pałka
 itm_skull_club|Laga z Czaszką
-
 itm_orc_club_b|Buława Jeźdźcy Wargów
 itm_orc_club_c|Kolczasta Orkowa Pałka
 itm_orc_club_d|Złowroga Buława
@@ -674,8 +647,6 @@ itm_dale_billhook|Glewia z Dale
 itm_dale_shield_a|Tarcza Wieży z Dale
 itm_dale_shield_b|Tarcza Wieży z Dale
 itm_dale_shield_c|Okrągła Tarcza z Dale
-
-
 itm_umb_armor_a|Corairska Skórzana Kamizelka 
 itm_umb_armor_b|Skórzana Zbroja Korsarza
 itm_umb_armor_c|Lekka Zbroja Łuskowa Korsarza
@@ -718,10 +689,6 @@ itm_dwarf_shield_b|Krasnoludzka Tarcza Wieży
 itm_dwarf_shield_c|Krasnoludzka Tarcza Bojowa
 itm_dwarf_shield_d|Krasnoludzka Okrągła Tarcza 
 itm_north_round_shield|Okrągła Tarcza Ludzi Północy
-
-
-
-
 itm_woodmen_heavy|Zbroja z Mirkwood
 itm_dwarf_sword_a|Krasnoludzki Miecz
 itm_dwarf_sword_b|Krótki Miecz Beorningów
@@ -804,7 +771,6 @@ itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Łuk Barda
 itm_explosive_reward|Isengardzka Mina
-
 itm_corsair_trident2|Trójząb Morskiego Gniewu
 ; itm_crebain_reward|Crebain
 itm_miruvor_reward|Manierka z Miruvorem
@@ -836,11 +802,7 @@ itm_spider|Pająk
 itm_bear|Niedźwiedź
 itm_wolf|Wilk
 itm_werewolf|Wilkołak
-
 ; itm_thrush_reward|Thrush
-
 ; itm_gauntlets_reward|Iron Fists
-
 ; itm_stones_siege|Siege Stones
-
 itm_beorn_axe_no_attack|Topór Beorningów

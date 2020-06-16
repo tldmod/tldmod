@@ -791,17 +791,6 @@ dlga_mayor_talk:mayor_deliver_wine|君に{s4}を{reg9}個届けるよう頼ま�
 dlga_mayor_deliver_wine:mayor_pretalk|ようやく届いた！ 我々の在庫はもう、 尽きかけていたところです。 前もって{s4}の手配は済ませていたんです。 {s9}にはよろしく伝えてください。^^[{s14}のリソースポイントを{reg14}獲得しました]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|君に{s4}を{reg9}個届けるよう 頼まれたのだが、 荷をいくつか、敵に奪われてしまった。
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|やつらめ、思い知らせてやる！ まあ、少なくとも{s4}はいくらか届いたわけです。 感謝します。^^[{s14}のリソースポイントを{reg14}獲得しました]
-dlga_start:mercenary_tavern_talk|指揮官殿、 人手は要りませんか？ {reg3?俺と{reg4?{reg3}人の仲間:仲間のうちのひとり}は:俺は}、 雇ってくれるひとを探してる傭兵なんです。 {reg5}デナルでどうです？
-dlga_start:mercenary_after_recruited|隊長、ご命令は？
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|支度をして{くれ/}。我々は夜明けと共に出発する。
-dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|そうあわてるな。我々はしばらくここに滞在する。
-dlga_mercenary_after_recruited_2:close_window|了解です、隊長。声をかけてくだされば、すぐに出発できます。
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|いい{だろう/わ}。全員面倒を見{てやる/ましょう}。さあ、{reg5}デナル{だ/よ}。
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|いい{だろう/わ}。{だが/でも}、雇えるのは{reg6}人だけ{だ/よ}。さあ、{reg5}デナル{だ/よ}。
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|悪くない{な/わね}。{だが/でも}、今は人手は足りているの{だ/}。
-dlga_tavern_mercenary_cant_lead:close_window|残念ですね。 まあ、 {reg3?我々:俺}はしばらくこの辺りでふらふらしてますから、 気が変わったら声をかけてくださいよ。
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|悪くない{な/わね}。{だが/でも}、もうこれ以上、私の部隊は人を増やせない{んだ/の}。
-dlga_mercenary_tavern_talk:close_window|残念{だったな/ね}。今は間に合っている{/の}。
 dlga_start:trainer_pretalk|ガントレットの第{reg2}波までいきましたね。 {s4}
 dlga_start:trainer_pretalk.1|素晴らしい。全員倒してしまいました。
 dlga_start:trainer_talk|訓練日和ですな。さっそくはじめますか？
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|{s4}という名のおたずね
 dlga_town_dweller_ask_fugitive:close_window|ここはよそ者でも自由に出入りできます。 もしここに隠れているのなら、 探せば必ず見つかると思いますよ。
 dlga_town_dweller_talk:town_dweller_ask_info|この村について教えてくれないか{/しら}？
 dlga_town_dweller_talk:town_dweller_ask_info.1|この場所について教えてくれないか{/しら}？
-dlga_town_dweller_talk:town_dweller_ask_situation|ここでの生活はどう{だい/}？
-dlga_town_dweller_ask_situation:town_dweller_poor|わしら家族は、 災害にみまわれたんです、 {旦那/ご婦人}。 畑の作物は疫病でやられてしまい、 病気の子供たちは腹を空かせて寝込んでいます。 私の近所の連中も、 みんな自分たちの事で精一杯で、 余所を助ける余裕なんかありません。
-dlga_town_dweller_ask_situation:town_dweller_poor.1|ひどいもんですよ、 {旦那/ご婦人}。 私はもう何月も仕事が見つかりません。 かわいそうな子供たちは、 毎晩腹を空かせながら寝ています。 私の近所の連中も、 みんな自分たちの事で精一杯で、 余所を助ける余裕なんかありません。
-dlga_town_dweller_poor:town_dweller_poor_paid|では、 この300デナルを受け取って{くれ/ちょうだい}。 これを{君/あなた}と家族の助けにするといい{/わ}。
-dlga_town_dweller_poor:town_dweller_poor_not_paid|一生懸命さが足りないのではないかな。黙々と働けばいい。
-dlga_town_dweller_poor_not_paid:close_window|はい、 {旦那/ご婦人}。 おっしゃる通りです。
-dlga_town_dweller_poor_paid:close_window|{旦那さま/ご婦人}。 あなたはなんて気前がよろしいのでしょう。 あなたに助けて頂いた事は、 皆に話します。
-dlga_town_dweller_ask_situation:close_window|これはご親切に、 ありがとうございます、 {旦那さま/ご婦人}。 これで何とかやっていけそうです。 これから毎日、 あなたにお祈りいたします。
-dlga_town_dweller_ask_situation:town_dweller_talk|世知辛い世の中ですよ、 {旦那/ご婦人}。 こんなに働いているのに、 ほとんど毎日、 腹を空かせたまま寝なければならない。
-dlga_town_dweller_ask_situation:town_dweller_talk.1|世知辛い世の中ですよ、 {旦那/ご婦人}。 でも、 自分たちを信じてやっていくしかありません。
-dlga_town_dweller_ask_situation:town_dweller_talk.2|ぼちぼちですよ、 {旦那/ご婦人}。 自分たちを信じてやっていくだけです。
+dlga_town_dweller_talk:town_dweller_talk|ここでの生活はどう{だい/}？
 dlga_town_dweller_talk:town_dweller_ask_rumor|ここでの最近の話題は？
 dlga_town_dweller_ask_rumor:town_dweller_talk|あなたが興味を持ちそうな話はないよ。
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|脅しているのか？ 衛兵はおまえのような奴には容赦しないぞ。

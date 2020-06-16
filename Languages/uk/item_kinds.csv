@@ -67,15 +67,12 @@ itm_wargarmored_2c|Броньований варг
 itm_wargarmored_3a|Броньований варг
 itm_warg_reward|Величезний варг
 itm_tree_trunk_club_a|Стовбур дерева
-
 itm_giant_mace|Величезна булава
 itm_troll_shield_a|Щит троля
 itm_arrows|Стріли
 itm_gondor_arrows|Гондорські стріли
 itm_orc_javelin|Оркський важкий дротик
 itm_khergit_arrows|Роханські стріли
-
-
 itm_harad_arrows|Харадські стріли
 itm_corsair_arrows|Корсарські стріли
 itm_ithilien_arrows|Ітіліенські стріли
@@ -91,7 +88,6 @@ itm_leather_boots|Шкіряні чоботи
 itm_white_tunic_a|Одяг городянина
 itm_rohan_shoes|Шкіряні черевики
 itm_furry_boots|Хутряні чоботи
-
 itm_black_tunic|Чорний одяг
 itm_hood_black|Чорний капюшон
 itm_hood_green|Зелений капюшон
@@ -137,8 +133,6 @@ itm_loss_throwing_axes|Лоссарнахські метальні сокири
 itm_arnor_helm_a|Арнорський шолом
 itm_arnor_helm_b|Арнорський шолом
 itm_arnor_helm_c|Арнорський шолом
-
-
 itm_dunedain_helm_b|Арнорський прикрашений шолом
 itm_arnor_armor_a|Арнорська броня
 itm_arnor_armor_b|Арнорська броня
@@ -150,10 +144,6 @@ itm_arnor_greaves|Арнорські наголінники
 itm_arnor_splinted|Арнорські пластинчасті наголінники
 itm_arnor_shield_a|Арнорський щит
 itm_arnor_shield_c|Арнорський кавалерійський щит
-
-
-
-
 itm_arnor_sword_a|Арнорський меч-бастард
 itm_arnor_sword_c|Арнорський меч-бастард
 itm_arnor_sword_f|Арнорський короткий меч
@@ -165,8 +155,8 @@ itm_riv_shield_a|Рівенділський щит
 itm_riv_shield_b|Рівенділський щит
 itm_riv_bas_sword|Рівенділський меч-бастард
 itm_riv_1h_sword|Рівенділський меч
-itm_riv_riding_sword|Рівенділський кавалерійський меч
-itm_riv_archer_sword|Рівенділський Меч Лучника
+; itm_riv_riding_sword|Rivendell Longsword
+; itm_riv_archer_sword|Rivendell Short Sword
 itm_riv_spear|Рівенділський спис
 ; itm_riv_light|Rivendell Tunic
 ; itm_riv_leather|Rivendell Leather Armor
@@ -196,19 +186,13 @@ itm_gondor_ranger_hood_mask|Ґондорський капюшон рейндже
 itm_gondor_light_greaves|Ґондорські шкіряні наголінники
 itm_gondor_med_greaves|Ґондорські середні наголінники
 itm_gondor_heavy_greaves|Ґондорські кольчужні наголінники
-
-
 itm_gondor_infantry_helm|Ґондорський шолом піхотинця
 ; itm_gondor_auxila_helm|Gondor Light Helm
-
-
 ; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|Шолом лучника Вежі
 itm_gondor_leader_helm|Ґондорський чудовий шолом
 itm_tower_guard_helm|Шолом Охоронця Вежі
 itm_gondor_citadel_knight_helm|Шолом Лицаря Цитаделі
-
-
 ; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Дол-Амротський шолом
 itm_swan_knight_helm|Лебединий лицарський шолом
@@ -292,11 +276,6 @@ itm_lorien_archer|Лоріенська броня лучника
 ; itm_lorien_armor_a|Lorien Quilted Armor
 ; itm_lorien_armor_b|Lorien Mail Armor
 ; itm_lorien_armor_c|Lorien Scale Armor
-
-
-
-
-
 itm_lorien_boots|Лоріенські черевики
 itm_lorien_shield_b|Лоріенський баштовий щит
 itm_lorien_shield_c|Лоріенський краплеподібний щит
@@ -304,14 +283,10 @@ itm_lorien_round_shield|Лоріенський круглий щит
 itm_lorien_helm_a|Лоріенський шолом лучника
 itm_lorien_helm_b|Лоріенський шолом лучника
 itm_lorien_helm_c|Лоріенський шолом піхотинця
-
-
 itm_orc_coif|Оркський черепник
 itm_orc_greaves|Оркські кольчужні чоботи
 itm_orc_ragwrap|Оркські рвані обмотки
 itm_orc_furboots|Оркські хутряні чоботи
-
-
 itm_orc_tribal_a|Необроблена шкіра
 itm_orc_tribal_b|Необроблена шкіра
 itm_orc_tribal_c|Необроблена шкіра
@@ -347,7 +322,6 @@ itm_isen_uruk_helm_c|Урук-хайський шолом
 itm_isen_uruk_helm_d|Урук-хайський шолом полководця
 itm_isen_uruk_helm_e|Урук-хайський шолом слідопита
 itm_isen_uruk_helm_f|Урук-хайський шолом слідопита
-
 itm_uruk_pike_b|Мордорська піка
 itm_uruk_falchion_a|Урукський фальшіон
 itm_uruk_falchion_b|Урукський фальшіон
@@ -371,7 +345,6 @@ itm_wood_club|Дерев'яна дубина
 itm_twohand_wood_club|Велика дерев'яна дубина
 itm_bone_cudgel|Кістяна дубина
 itm_skull_club|Дубина з черепом
-
 itm_orc_club_b|Дубина вовчого вершника
 itm_orc_club_c|Шпичаста оркська дубина
 itm_orc_club_d|Зловісна булава
@@ -674,8 +647,6 @@ itm_dale_billhook|Дейльская алебарда
 itm_dale_shield_a|Дейльский баштовий щит
 itm_dale_shield_b|Дейльский баштовий щит
 itm_dale_shield_c|Дейльский круглий щит
-
-
 itm_umb_armor_a|Шкіряний жилет Корсарів
 itm_umb_armor_b|Корсарська шкіряна броня
 itm_umb_armor_c|Підбита броня Корсарів
@@ -718,10 +689,6 @@ itm_dwarf_shield_b|Гномів баштовий щит
 itm_dwarf_shield_c|Гномів бойової щит
 itm_dwarf_shield_d|Гномів круглий щит
 itm_north_round_shield|Північний круглий щит
-
-
-
-
 itm_woodmen_heavy|Броня Лихолісся
 itm_dwarf_sword_a|Гном'ячий меч
 itm_dwarf_sword_b|Беорнінгський короткий меч
@@ -804,7 +771,6 @@ itm_ring_a_reward|Тулькарісіль
 itm_ring_b_reward|Фінварісіль
 itm_dale_bow_reward|Лук Барда
 itm_explosive_reward|Ізенґардська міна
-
 itm_corsair_trident2|Тризуб гнів моря
 ; itm_crebain_reward|Crebain
 itm_miruvor_reward|Фляжка Мірувору
@@ -836,11 +802,7 @@ itm_spider|Павук
 itm_bear|Ведмідь
 itm_wolf|Вовк
 itm_werewolf|Перевертень
-
 ; itm_thrush_reward|Thrush
-
 ; itm_gauntlets_reward|Iron Fists
-
 ; itm_stones_siege|Siege Stones
-
 itm_beorn_axe_no_attack|Беорнінгська сокира

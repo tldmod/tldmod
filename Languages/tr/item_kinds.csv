@@ -67,15 +67,12 @@ itm_wargarmored_2c|Zırhlı Kurt
 itm_wargarmored_3a|Zırhlı Kurt
 itm_warg_reward|Dev Kurt
 itm_tree_trunk_club_a|Agaç Gövdesi
-
 itm_giant_mace|Devasa Topuz
 itm_troll_shield_a|Troll Kalkanı
 itm_arrows|Oklar
 itm_gondor_arrows|Gondor Okları
 itm_orc_javelin|Ork Agır Ciriti
 itm_khergit_arrows|Rohirrim Okları
-
-
 itm_harad_arrows|Haradrim Okları
 itm_corsair_arrows|Korsan Okları
 itm_ithilien_arrows|Ithilien Okları
@@ -91,7 +88,6 @@ itm_splinted_greaves|Plakalı Çizme
 itm_white_tunic_a|Sivil Kıyafet
 itm_rohan_shoes|Deri Ayakkabılar
 itm_furry_boots|Kürklü Çizmeler
-
 itm_black_tunic|Siyah Tunik
 itm_hood_black|Siyah Başlık
 itm_hood_green|Yeşil Başlık
@@ -137,8 +133,6 @@ itm_loss_throwing_axes|Lossarnach Fırlatma Baltaları
 itm_arnor_helm_a|Arnor Kasketi
 itm_arnor_helm_b|Arnor Kasketi
 itm_arnor_helm_c|Arnor Kasketi
-
-
 itm_dunedain_helm_b|Arnor Süslenmiş Kasket
 itm_arnor_armor_a|Arnorian Zırhı
 itm_arnor_armor_b|Arnorian Zırhı
@@ -150,10 +144,6 @@ itm_arnor_greaves|Arnorian Baldır Zırhı
 itm_arnor_splinted|Arnorian Parçalanmış Baldır Zırhı
 itm_arnor_shield_a|Arnorian Kalkanı
 itm_arnor_shield_c|Arnorian Süvari Kalkanı
-
-
-
-
 itm_arnor_sword_a|Arnorian Piç Kılıç
 itm_arnor_sword_c|Arnorian Piç Kılıç
 itm_arnor_sword_f|Arnor Kısa Kılıç
@@ -165,8 +155,8 @@ itm_riv_shield_a|Ayrıkvadi Kalkanı
 itm_riv_shield_b|Ayrıkvadi Kalkanı
 itm_riv_bas_sword|Ayrıkvadi Piç Kılıcı
 itm_riv_1h_sword|Ayrıkvadi Kılıcı
-itm_riv_riding_sword|Ayrıkvadi Süveri Kılıcı
-itm_riv_archer_sword|Ayrıkvadi Okçu Kılıcı
+; itm_riv_riding_sword|Rivendell Longsword
+; itm_riv_archer_sword|Rivendell Short Sword
 itm_riv_spear|Ayrıkvadi Mızragı
 itm_riv_light|Ayrıkvadi Tunigi
 itm_riv_leather|Ayrıkvadi Deri Zırhı
@@ -196,19 +186,13 @@ itm_gondor_ranger_hood_mask|Gondor Okçu Başlıgı
 itm_gondor_light_greaves|Gondor Deri Baldır Zırhı
 itm_gondor_med_greaves|Gondor Ortalama Baldır Zırhı
 itm_gondor_heavy_greaves|Gondor Örgü Baldır Zırhı
-
-
 itm_gondor_infantry_helm|Gondor Piyade Migferi
 itm_gondor_auxila_helm|Gondor Hafif Migferi
-
-
 itm_gondorian_archer_helm|Gondor Okçu Migferi
 itm_tower_archer_helm|Kule Okçusu Migferi
 itm_gondor_leader_helm|Gondor Üstün Migferi
 itm_tower_guard_helm|Kule Gardiyanı Migferi
 itm_gondor_citadel_knight_helm|Kale Şovalyesi Migferi
-
-
 itm_gondor_knight_helm|Gondor Süvari Migferi
 itm_gondor_dolamroth_helm|Dol Amroth Migferi
 itm_swan_knight_helm|Kugu Şovalye Migferi
@@ -292,11 +276,6 @@ itm_lorien_archer|Lorien Okçu Zırhı
 itm_lorien_armor_a|Lorien Kapiton Zırh
 itm_lorien_armor_b|Lorien Örme Zırh
 itm_lorien_armor_c|Lorien Pullu Zırh
-
-
-
-
-
 itm_lorien_boots|Lothlorien Çizmesi
 itm_lorien_shield_b|Lorien Kule Kalkan
 itm_lorien_shield_c|Lorien Uçurtma Kalkan
@@ -304,14 +283,10 @@ itm_lorien_round_shield|Lorien Yuvarlak Kalkan
 itm_lorien_helm_a|Lorien Okçu Migferi
 itm_lorien_helm_b|Lorien Okçu Migferi
 itm_lorien_helm_c|Lorien Piyade Migferi
-
-
 itm_orc_coif|Ork Kafatası başlık
 itm_orc_greaves|Ork Zincir Çizme
 itm_orc_ragwrap|Ork Bandana
 itm_orc_furboots|Ork Kürk Çizme
-
-
 itm_orc_tribal_a|İşlenmemiş Deri
 itm_orc_tribal_b|İşlenmemiş Deri
 itm_orc_tribal_c|İşlenmemiş Deri
@@ -347,7 +322,6 @@ itm_isen_uruk_helm_c|Uruk-Hai Migferi
 itm_isen_uruk_helm_d|Uruk-Hai Yüzbaşı Migferi
 itm_isen_uruk_helm_e|Uruk-Hai Yüzbaşı Migferi
 itm_isen_uruk_helm_f|Uruk-Hai İzci Migferi
-
 itm_uruk_pike_b|Mordor Kargısı
 itm_uruk_falchion_a|Uruk Orak Kılıcı
 itm_uruk_falchion_b|Uruk Orak Kılıcı
@@ -371,7 +345,6 @@ itm_wood_club|Tahta Sopa
 itm_twohand_wood_club|Büyük Tahta Sopa
 itm_bone_cudgel|Kemik Sopası
 itm_skull_club|Kafatası Sopası
-
 itm_orc_club_b|Warg Binici Sopası
 itm_orc_club_c|Dikenli Ork Sopası
 itm_orc_club_d|Ugursuz Gürz
@@ -674,8 +647,6 @@ itm_dale_billhook|Dale Keskisi
 itm_dale_shield_a|Dale Kule Kalkanı
 itm_dale_shield_b|Dale Kule Kalkanı
 itm_dale_shield_c|Dale Yuvarlak Kalkanı
-
-
 itm_umb_armor_a|Korsan Deri Yelegi
 itm_umb_armor_b|Korsan Deri Zırhı
 itm_umb_armor_c|Pullu Hafif Korsan Zırhı
@@ -718,10 +689,6 @@ itm_dwarf_shield_b|Cüce Kule Kalkanı
 itm_dwarf_shield_c|Cüce Savaş Kalkanı
 itm_dwarf_shield_d|Cüce Yuvarlak Kalkanı
 itm_north_round_shield|Kuzeyli Yuvarlak Kalkan
-
-
-
-
 itm_woodmen_heavy|Kuyutorman Zırhı
 itm_dwarf_sword_a|Cüce Kılıcı
 itm_dwarf_sword_b|Beorning Kısa Kılıcı
@@ -804,7 +771,6 @@ itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Ozanın Yayı
 itm_explosive_reward|Isengard Madeni
-
 itm_corsair_trident2|Deniz Öfkesinin Zıpkını
 itm_crebain_reward|Isengard Kargası
 itm_miruvor_reward|Miruvor Şişesi
@@ -836,11 +802,7 @@ itm_spider|Örümcek
 itm_bear|Ayı
 itm_wolf|Kurt
 itm_werewolf|Kurtadam
-
 itm_thrush_reward|Mantar
-
 itm_gauntlets_reward|Demir Yumruk
-
 itm_stones_siege|Kuşat Stonesma Taşları
-
 itm_beorn_axe_no_attack|Beorning Baltası

@@ -791,17 +791,6 @@ dlga_fugitive_4:close_window|Légy átkozott! Nem mész te sehova!
 ; dlga_mayor_deliver_wine:mayor_pretalk|At last! Our stocks were almost depleted. I had arranged for the delivery of the {s4} in advance. And give {s9} my regards.^^[earned {reg14} Resource Points of {s14}]
 ; dlga_mayor_talk:mayor_deliver_wine_incomplete|I was on a mission to deliver you {reg9} units of {s4}, but I lost some of the cargo to the enemy.
 ; dlga_mayor_deliver_wine_incomplete:mayor_pretalk|They will pay for this! Well, at least we have some {s4}. Thank you anyway.^^[earned {reg14} Resource Points of {s14}]
-; dlga_start:mercenary_tavern_talk|Do you have a need for mercenaries, Commander? {reg3?Me and {reg4?{reg3} of my mates:one of my mates} are:I am} looking for a master. We'll join you for {reg5} denars.
-; dlga_start:mercenary_after_recruited|Any orders, Commander?
-; dlga_mercenary_after_recruited:mercenary_after_recruited_2|Make your preparations. We'll be moving at dawn.
-; dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|Take your time. We'll be staying in this town for a while.
-; dlga_mercenary_after_recruited_2:close_window|Yes, Commander. We'll be ready when you tell us to leave.
-; dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|All right. I will hire all of you. Here is {reg5} denars.
-; dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|All right. But I can only hire {reg6} of you. Here is {reg5} denars.
-; dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|That sounds good. But I can't afford to hire any more men right now.
-; dlga_tavern_mercenary_cant_lead:close_window|That's a pity. Well, {reg3?we will:I will} be lingering around here for a while, if you need to hire anyone.
-; dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|That sounds good. But I can't lead any more men right now.
-; dlga_mercenary_tavern_talk:close_window|Sorry. I don't need any other men right now.
 ; dlga_start:trainer_pretalk|You have survived up to Gauntlet wave {reg2}. {s4}
 ; dlga_start:trainer_pretalk.1|Very good, you've eliminated all the opponents.
 ; dlga_start:trainer_talk|Good day. Ready for some training today?
@@ -1013,17 +1002,7 @@ dlga_merchant_trade:town_merchant_talk|Volna még más is?
 ; dlga_town_dweller_ask_fugitive:close_window|Strangers come and go to our town. If he is hiding here, you will surely find him if you look around.
 ; dlga_town_dweller_talk:town_dweller_ask_info|What can you tell me about this village?
 ; dlga_town_dweller_talk:town_dweller_ask_info.1|What can you tell me about this place?
-; dlga_town_dweller_talk:town_dweller_ask_situation|How is life here?
-; dlga_town_dweller_ask_situation:town_dweller_poor|Disaster has struck my family, {sir/madam}. A pestilence has ruined the crops on our fields, and my poor children lie at home hungry and sick. My neighbours are too poor themselves to help me.
-; dlga_town_dweller_ask_situation:town_dweller_poor.1|My life is miserable, {sir/madam}. I haven't been able to find a job for months, and my poor children go to bed hungry each night. My neighbours are too poor themselves to help me.
-; dlga_town_dweller_poor:town_dweller_poor_paid|Then take these 300 denars. I hope this will help you and your family.
-; dlga_town_dweller_poor:town_dweller_poor_not_paid|Then you must work harder and bear your burden without complaining.
-; dlga_town_dweller_poor_not_paid:close_window|Yes {sir/madam}. I will do as you say.
-; dlga_town_dweller_poor_paid:close_window|{My lord/My good lady}.  You are so good and generous. I will tell everyone how you helped us.
-; dlga_town_dweller_ask_situation:close_window|Thank you for your kindness {sir/madam}. With your help our lives will be better. I will pray for you everyday.
-; dlga_town_dweller_ask_situation:town_dweller_talk|Times are hard, {sir/madam}. We work hard all day and yet we go to sleep hungry most nights.
-; dlga_town_dweller_ask_situation:town_dweller_talk.1|Times are hard, {sir/madam}. But we must count our blessings.
-; dlga_town_dweller_ask_situation:town_dweller_talk.2|We are not doing too badly {sir/madam}. We must count our blessings.
+; dlga_town_dweller_talk:town_dweller_talk|How is life here?
 ; dlga_town_dweller_talk:town_dweller_ask_rumor|What is the latest rumor around here?
 ; dlga_town_dweller_ask_rumor:town_dweller_talk|I don't know anything that would be of interest to you.
 ; dlga_town_dweller_brawl:town_dweller_brawl_confirm|Are you threatening me? The guards hardly wait for your type to show up.

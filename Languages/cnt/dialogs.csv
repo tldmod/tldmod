@@ -791,17 +791,6 @@ dlga_mayor_talk:mayor_deliver_wine|有 人 找 我 去 送 你 {reg9} 單 位 �
 dlga_mayor_deliver_wine:mayor_pretalk|最 後，我 們 的 糧 食 都 耗 盡 了。我 已 經 預 先 安 排 來 自 {s4} 的 補 給。還 有 我 對 {s9} 的 問 候。^^[ 得 到 {s14} 的 {reg14} 資 源 點 ]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|我 是 被 委 派 來 給 你 {reg9} 單 位 的 {s4}，但 有 一 部 分 被 敵 人 搶 去 了。
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|他 們 會 為 此 付 出 代 價！但 至 少 我 們 還 有 一 點 {s4}。無 論 如 何 謝 謝 你 了。^^[ 得 到 {s14} 的 {reg14} 資 源 點 ]
-dlga_start:mercenary_tavern_talk|你 是 否 需 要 傭 兵，指 揮 官？ {reg3?我 和{reg4?{reg3} 位 伙 伴：我 的 一 個 伙 伴} 們：一 起} 正 在 尋 找 雇 主。 雇 傭 我 們 只 要 {reg5} 迪 納 爾。
-dlga_start:mercenary_after_recruited|有 命 令 嗎，指 揮 官？
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|做 好 準 備。我 們 會 在 黎 明 時 起 程。
-dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|慢 慢 來。我 們 會 在 這 城 鎮 逗 留 片 刻。
-dlga_mercenary_after_recruited_2:close_window|是，指 揮 官。當 你 告 訴 我 們 離 開 時，我 們 會 準 備 就 緒。
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|好 吧。我 會 雇 用 你 們 全 部 人。這 是 {reg5} 迪 納 爾。
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|好 吧。但 我 只 能 雇 用 你 們 {reg6} 人。這 是 {reg5} 迪 納 爾。
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|聽 起 來 很 好。但 我 現 在 無 法 雇 用 更 多 的 人。
-dlga_tavern_mercenary_cant_lead:close_window|真 遺 憾。 好 吧，{reg3？我 們 會：我 會} 在 這 裡 徘 徊 一 段 時 間，如 果 你 需 要 雇 用 任 何 人 的 話。
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|聽 起 來 很 好。但 我 現 在 無 法 帶 領 更 多 的 人。
-dlga_mercenary_tavern_talk:close_window|抱 歉。我 現 在 不 需 要 更 多 的 人 手。
 dlga_start:trainer_pretalk|你 存 活 到 了 錦 標 賽 回 合 {reg2}. {s4}
 dlga_start:trainer_pretalk.1|非 常 好，你 打 倒 了 所 有 敵 人。
 dlga_start:trainer_talk|你 好。準 備 好 接 受 今 天 的 訓 練 嗎？
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|我 正 在 找 一 個 名 叫
 dlga_town_dweller_ask_fugitive:close_window|這 座 城 鎮 有 很 多 陌 生 人 進 出 ， 如 果 他 躲 在 這 裡 的 話 ， 你 一 定 能 在 這 附 近 找 到 他 的 。
 dlga_town_dweller_talk:town_dweller_ask_info|你 能 跟 我 聊 一 下 有 關 這 座 村 子 的 事 嗎 ?
 dlga_town_dweller_talk:town_dweller_ask_info.1|你 有 什 麼 有 關 這 個 地 方 的 是 能 告 訴 我 嗎 ?
-dlga_town_dweller_talk:town_dweller_ask_situation|這 裡 的 生 活 如 何 ?
-dlga_town_dweller_ask_situation:town_dweller_poor|災 厄 已 經 降 臨 在 我 的 家 庭 身 上 了  {sir/madam} 。一 場 瘟 疫 毀 了 我 們 所 有 的 作 物 跟 我 們 的 土 地 ， 而 我 可 憐 的 孩 子 們 在 家 裡 又 餓 又 病 。 我 的 鄰 居 們 則 是 太 窮 了 也 無 幫 助 我 們 。
-dlga_town_dweller_ask_situation:town_dweller_poor.1|我 的 生 活 很 悲 慘 , {sir/madam} 。 我 已 經 好 幾 個 月 找 不 到 工 作 了 ， 我 可 憐 的 孩 子 只 能 每 個 晚 上 餓 著 肚 子 睡 覺 ， 我 的 鄰 居 也 都 太 窮 苦 所 以 幫 不 了 我 。
-dlga_town_dweller_poor:town_dweller_poor_paid|這 樣 的 話 拿 著 這 300 第 納 爾 。 我 希 望 這 能 幫 助 到 你 跟 你 的 家 人 。
-dlga_town_dweller_poor:town_dweller_poor_not_paid|這 樣 的 話 你 必 須 更 努 力 的 工 作 並 且 不 抱 怨 其 中 的 苦 難 與 負 擔 。
-dlga_town_dweller_poor_not_paid:close_window|是 的 {sir/madam} 。 我 會 照 你 說 的 做 。
-dlga_town_dweller_poor_paid:close_window|{My lord/My good lady} 。 你 真 是 個 慷 慨 的 好 人 。 我 會 跟 所 有 人 說 你 怎 麼 幫 助 我 們 的 。
-dlga_town_dweller_ask_situation:close_window|謝 謝 你 的 仁 慈  {sir/madam} 。 有 了 你 的 幫 助 我 們 的 生 活 會 更 好 的 ， 我 每 天 都 會 為 你 祈 禱 的 。
-dlga_town_dweller_ask_situation:town_dweller_talk|現 在 是 艱 難 時 期 ， {sir/madam} 。 我 們 每 田 從 早 幹 活 幹 到 晚 但 我 們 大 多 數 夜 晚 還 是 餓 著 肚 子 睡 覺 。
-dlga_town_dweller_ask_situation:town_dweller_talk.1|這 陣 子 日 子 不 好 過 ， {sir/madam} 。 但 我 們 必 須 知 足 。
-dlga_town_dweller_ask_situation:town_dweller_talk.2|我 們 在 這 裡 幹 得 還 不 錯 {sir/madam} 。 我 們 一 定  有 被 祝 福 。
+dlga_town_dweller_talk:town_dweller_talk|這 裡 的 生 活 如 何 ?
 dlga_town_dweller_talk:town_dweller_ask_rumor|最 近 這 裡 最 新 的 傳 言 是 什 麼 ?
 dlga_town_dweller_ask_rumor:town_dweller_talk|我 不 知 道 任 何 會 引 起 你 興 趣 的 東 西 。
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|你 是 在 威 脅 我 嗎 ? 警 衛 們 等 你 這 種 人 出 現 很 久 了 。

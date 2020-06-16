@@ -504,16 +504,6 @@ str_casualty_display|Suas baixas: {s10}^Baixas inimigas: {s11}{s12}
 str_casualty_display_hp|^Você foi incapacitado tomando {reg1} pontos de vida.
 str_quest_log_updated|Registro de missão foi atualizado...
 str_banner_selection_text|Você recebeu o direito de carregar um brasão. Seu brasão significa seu lugar na hierarquia e te confere honra. Qual será seu brasão?
-str_retirement_text_1|Você percebe muito tarde que seu dinheiro não irá durar. Não demora até que você gaste o pouco que guardou, você tenta desesperadamente recomeçar a vida de aventureiro mas falha miseravelmente. Você termina como um mendigo em {s9}, vivendo de esmolas e da caridade da igreja.
-str_retirement_text_2|Você percebe muito tarde que seu dinheiro não irá durar. Não demora até que você gaste o pouco que guardou. Depois que cada denário se foi você é forçado a ingressar em uma vida de crimes nos becos escuros de {s9}, usando suas habilidade para prolongar a vida roubando asses de mulheres e pobres cidadãos.
-str_retirement_text_3|Você percebe muito tarde que seu dinheiro não irá durar. Não demora até que você gaste o pouco que guardou, e você termina sem nenhum asse, indo de taverna em taverna pedindo bebidas a clientes indulgentes em troca de histórias de guerra que ninguém nunca acredita.
-str_retirement_text_4|O dinheiro que você guardou não dura muito tempo, mas você consegue o suficiente para comprar um pouco de terra proximo a vila de {s7}. Ali você se torna um fazendeiro, e logo começa a atrair {esposas/maridos} em potencial. Após algum tempo os moradores passam a te tratar como um herói local. Você sempre recebe um lugar de honra nos banquetes, e seus feitos são contados e recontados nos bares e tavernas para que assim as crianças possam manter sua memória viva para sempre.
-str_retirement_text_5|O dinheiro que você guardou não dura muito tempo, mas é o bastante para comprar uma pequena taverna em {s9}. Apesar de os moradores locais desconfiarem de você a princípio, eles logo te aceitam em seu meio. Com o passar do tempo sua taverna se torna um salão de festas popular, alem de um ponto de referencia. Pessoas viajam milhas para comer ou passar a noite devido ao seu renome e as épicas historias que você conta dos seus dias de aventureiro.
-str_retirement_text_6|Você economizou sabiamente durante sua carreira, e agora seu dinheiro e sua inteligencia tornam possivel que você faça excelentes investimentos para cementar seu futuro. Depois de comprar varias lojas e armazens em {s9}, sua astúcia faz de você um dos mais proeminentes mercadores da cidade, e você rapidamente se torna um {homem/mulher} rico conhecido tanto pelo seu império comercial quanto pelos seus feitos em batalha.
-str_retirement_text_7|Como um membro da nobreza menor, seu futuro está praticamente assegurado. Você se instala em seu imóvel em {s7}, administrando a vila e seus campos, presidindo a corte local e cumprindo suas obrigações ao seu soberano. Ocasionalmente seu soberano chama você para convocar seus vassalos e comandar suas campanhas, mas essas tarefas são rapidas, e você nunca retorna realmente as aventuras de seus dias passados. Você ja fez sua fortuna. Com seu próprio salão e posses, existem poucas coisas que sua riqueza pessoas e renda das terras não podem comprar.
-str_retirement_text_8|Não há duvidas que você fez muito bem a você mesmo. Suas extensivas posses e riquezas são suficientes para garantir a você uma vida rica e fácil até o fim dos seus dias. Retirando-se para seu lugar de nobre em {s8}, você troca aventuras por política, e rapidamente se estabelece como um poder consideravel no reino de seu soberano. Com intrigas para se ocupar, suas próprias florestas para caçar, um salão para se banquetear e centenas de histórias de guerra para contar, você tem muito pouco com o que se preocupar nos anos que seguem.
-str_retirement_text_9|Como recompensa pelo seu leal e competente serviço, seu soberano decretou que fosse dado a você um título, se juntando assim, a nobreza do reino. logo você recebe seu título formalmente, Barão de {s7}, e se torna um dos mais próximos conselheiros de seu soberano. Seu renome garante a você grande influencia e evidente poder político. Agora você passa seus dias jogando os jogos de poder, administrando seus grandes feudos, e relembrando os velhos tempos de aventura e glória.
-str_retirement_text_10|Apesar de ter começado humildemente, seu soberano tem você em alta estima, e uma onda de surpresa passa pelo reino quando ele te nomeia {conde/condessa} de {s9}. Vastos feudos e fortunas são suas agora para governar. Você rapidamente se torna o conselheiro no qual seu soberano mais confia, quase seu igual e responsável por grande parte das ações do reino, você se senta em um trono no seu esplendido palacio como umas das mais poderosas figuras da Terra Média.
 str_loot_village|atacar moradores inocentes
 str_steal_from_villagers|roubar de moradores pobres
 str_rob_caravan|roubar uma caravana mercante
@@ -1034,59 +1024,11 @@ str_npc14_honorific|Capitão
 str_npc15_honorific|Mestre
 str_npc16_honorific|Chefe
 str_npc17_honorific|Chefe
-str_comment_intro_liege_affiliated|Disseram-me que você está comprometido com um dos pretendentes que contesta minha reivindicação à coroa de Calradia. Mas ainda podemos conversar.
-str_comment_intro_famous_liege|Sua fama corre diante de você! Talvez esteja na hora de você procurar um liege digno de seu valor.
-str_comment_intro_famous_martial|Sua fama corre diante de você! Talvez testemos o valor um do outro em um torneio ou no campo de batalha!
-str_comment_intro_famous_badtempered|Eu ouvi falar de você. Bem, eu não sou do tipo que fala palavras, então se você tem algo a dizer, saia com isso.
-str_comment_intro_famous_pitiless|Eu sei o seu nome. Isso causa medo no coração dos homens. Isso é bom. Talvez devêssemos conversar juntos, algum tempo.
-str_comment_intro_famous_cunning|Ah, sim. Finalmente nos encontramos. Você parece uma boa {homem / mulher} para saber. Vamos conversar juntos, de tempos em tempos.
-str_comment_intro_famous_sadistic|Eu sei o seu nome - e pelo que ouvi, vou garantir que muitas viúvas em luto também sabem. Mas isso não é da minha conta.
-str_comment_intro_famous_goodnatured|Ouvi falar de você! É muito bom finalmente conhecê-lo.
-str_comment_intro_famous_upstanding|Eu sei o seu nome. Eles dizem que você é um guerreiro mais valente. Só posso esperar que sua honra e misericórdia correspondam ao seu valor.
-str_comment_intro_noble_liege|Vejo que você carrega uma faixa de nobre, embora eu não reconheça o dispositivo. Saiba que estou sempre procurando por homens bons para lutar por mim, uma vez que eles provem ser dignos da minha confiança.
-str_comment_intro_noble_martial|Vejo que você carrega uma faixa de nobre, mas não reconheço o dispositivo. Talvez um dia testemos a bravura um do outro em um torneio ou no campo de batalha!
-str_comment_intro_noble_badtempered|Não reconheço o dispositivo no seu banner. Sem dúvida, outro estrangeiro vem a nossas terras, como se já não tivéssemos tantos aqui.
-str_comment_intro_noble_pitiless|Vejo que você carrega uma faixa de nobre, mas não reconheço o dispositivo. Outro urubu veio a engordar nas sobras da guerra, sem dúvida!
-str_comment_intro_noble_cunning|Vejo que você carrega um estandarte de nobre, mas não reconheço o dispositivo. Ainda assim, sempre vale a pena conhecer os {men / women} que um dia poderão provar ser grandes guerreiros.
-str_comment_intro_noble_sadistic|Vejo que você carrega uma faixa de nobre, mas não reconheço o dispositivo. Talvez você seja o filho da mãe de um ladrão de gado inchado? Ou talvez você a roubou?
-str_comment_intro_noble_goodnatured|Vejo que você carrega uma faixa de nobre, mas não reconheço o dispositivo. Perdoe minha ignorância, {senhor / madame}! É bom fazer sua aquiescência.
-str_comment_intro_noble_upstanding|Vejo que você carrega uma bandeira de nobre, mas não reconheço o dispositivo. Sem dúvida, você veio a Calradia em busca de riqueza e glória. Se esse for realmente o caso, peço apenas que mostre misericórdia para aquelas pobres almas apanhadas no caminho da guerra "
-str_comment_intro_common_liege|Você pode ter um nascimento comum, mas saiba que estou sempre procurando homens bons para lutar por mim, se eles puderem provar que são dignos da minha confiança.
-str_comment_intro_common_martial|Talvez você não tenha um nascimento gentil, mas se você se provar um homem valioso, ficaria satisfeito em tentar minha força contra a sua no torneio ou no campo de batalha.
-str_comment_intro_common_badtempered|Fale rapidamente, se você tem algo a dizer, pois não tenho tempo para falar com soldados comuns da fortuna.
-str_comment_intro_common_pitiless|Você tem a aparência de um mercenário, outro abutre veio a engordar com a miséria desta terra.
-str_comment_intro_common_cunning|Bem ... eu não ouvi falar de você, mas você tem a aparência de um {homem / mulher} que pode fazer algo de si mesmo algum dia.
-str_comment_intro_common_sadistic|Normalmente cortei a garganta de plebeus insolentes que invadem minha presença sem ser convidado, mas hoje estou de bom humor.
-str_comment_intro_common_goodnatured|Bem, você parece uma espécie boa o suficiente.
-str_comment_intro_common_upstanding|Paz com você, e lembre-se sempre de temperar seu valor com misericórdia, sua coragem com honra.
-str_comment_you_raided_my_village_enemy_benevolent|Você atacou fazendeiros inocentes sob minha proteção na vila de {s51}. Vou puni-lo por seus crimes!
-str_comment_you_raided_my_village_enemy_spiteful|Você invadiu minha vila de {s51}, destruindo minha propriedade e matando os inquilinos. Vou receber minha compensação em sangue!
-str_comment_you_raided_my_village_enemy_coldblooded|Você invadiu minha vila de {s51}, destruindo minha propriedade e matando os inquilinos. Eu farei você pensar duas vezes antes de interromper minhas receitas assim novamente.
-str_comment_you_raided_my_village_enemy|Você invadiu minha vila de {s51}, destruindo minha propriedade e matando inquilinos sob minha proteção. Você pagará o preço pelo seu crime!
-str_comment_you_raided_my_village_unfriendly_spiteful|Você invadiu minha vila de {s51}. Faça de novo e eu estriparei você como um peixe.
-str_comment_you_raided_my_village_friendly|Você invadiu minha aldeia de {s51}. Isso colocará uma grande pressão em nossa amizade.
-str_comment_you_raided_my_village_default|Você invadiu minha aldeia de {s51}. Se você continuar se comportando dessa maneira, em breve poderemos ter problemas.
-str_comment_you_robbed_my_village_enemy_coldblooded|Você roubou meus inquilinos na vila de {s51}. Entendo isso como um insulto pessoal.
-str_comment_you_robbed_my_village_enemy|Você roubou agricultores inocentes sob minha proteção na aldeia de {s51}. Vou puni-lo por seus crimes!
-str_comment_you_robbed_my_village_friendly_spiteful|Ouvi dizer que você beliscou um pouco de comida de meus inquilinos em {s51}. Bem, não vou te invejar nem um ou dois recados, mas lembre-se de que sou eu quem deve ouvir o queixoso depois. 
-str_comment_you_robbed_my_village_friendly|Ouvi dizer que você requisitou suprimentos de meus inquilinos em {s51}. Tenho certeza de que você não teria feito isso se não estivesse desesperadamente necessitado.
-str_comment_you_robbed_my_village_default|Você roubou meus inquilinos na vila de {s51}. Se você continuar se comportando dessa maneira, em breve poderemos ter problemas.
-str_comment_you_accosted_my_caravan_enemy|Você está abordando caravanas sob minha proteção. Mas sua trilha de bandidos em breve chegará ao fim.
-str_comment_you_accosted_my_caravan_default|Você está abordando caravanas sob minha proteção. Esse tipo de comportamento deve parar.
-str_comment_you_helped_villagers_benevolent|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Fui negligente em meus deveres como senhor e protetor, e aprecio o que você fez.
-str_comment_you_helped_villagers_friendly_cruel|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Aprecio que você foi bem-intencionado, mas prefiro que você não mine minha autoridade assim.
-str_comment_you_helped_villagers_friendly|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Os tempos são difíceis, e eu sei que você está bem, então não vou me opor a você, fornecendo assistência.
-str_comment_you_helped_villagers_unfriendly_spiteful|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Por mais divertido que seja vê-lo procurando por favor entre os meus vassalos, eu pediria que cuidasse da sua vida.
-str_comment_you_helped_villagers_cruel|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Como senhor e protetor dos camponeses, é muito mais meu dever ajudá-los em tempos difíceis. Você pode querer dizer bem, mas suas ações ainda minou minha autoridade. Agradeço a você por deixá-los em paz. 
-str_comment_you_helped_villagers_default|Ouvi dizer que você deu caridade aos meus inquilinos na vila de {s51}. Os tempos são difíceis, e eu sei que você está bem, mas tente não criar um hábito. Eu sou seu senhor e protetor, e Eu preferiria que eles não procurassem ajuda por estranhos. 
 str_comment_you_captured_a_castle_allied_friendly|Ouvi dizer que você sitiou e levou {s51}. Isso foi um grande morto, e tenho orgulho de chamá-lo de meu amigo!
 str_comment_you_captured_a_castle_allied_spiteful|Ouvi dizer que você sitiou e tomou {s51}. Bom trabalho! Em breve, teremos todas as suas fortalezas para despojar, seus tesouros para saquear, suas viúvas em luto para nos servir o nosso vinho.
 str_comment_you_captured_a_castle_allied_unfriendly_spiteful|Ouvi dizer que você sitiou e tomou {s51}. Bem, todo cachorro tem seu dia, ou é o que eles dizem. Aprecie enquanto você pode, até que seus apostadores o chutem de volta no frio onde você pertence.
 str_comment_you_captured_a_castle_allied_unfriendly|Ouvi dizer que você sitiou e aceitou {s51}. Quaisquer que sejam as nossas diferenças no passado, devo oferecer-lhe meus parabéns.
 str_comment_you_captured_a_castle_allied|Ouvi dizer que você sitiou e tomou {s51}. Nós os pegamos fugindo!
-str_comment_you_captured_my_castle_enemy_spiteful|Ouvi dizer que você invadiu minha casa em {s51}. Espero que a masmorra seja do seu agrado, pois você passará muito tempo nos próximos anos.
-str_comment_you_captured_my_castle_enemy_chivalrous|Você tem {s51}, meu legítimo feudo. Espero que você me dê a chance de recuperá-lo!
-str_comment_you_captured_my_castle_enemy|Você tem algo que me pertence - {s51}. Eu farei você desistir.
 str_comment_we_defeated_a_lord_unfriendly_spiteful|Suponho que você queira beber em memória da nossa vitória sobre {s54}. Bem, salve seu vinho - será necessário mais do que isso para eliminar a mancha de suas desgraças anteriores.
 str_comment_we_defeated_a_lord_unfriendly|Não esquecerei como lutamos juntos contra {s54}, mas também não esquecerei os outros assuntos que existem entre nós.
 str_comment_we_defeated_a_lord_cruel|Foi uma grande vitória sobre {s54}, não foi? Nós fizemos do exército dele um banquete para os corvos!
@@ -1154,10 +1096,6 @@ str_comment_you_defeated_my_friend_enemy_pragmatic|Você pode ter vencido {s54},
 str_comment_you_defeated_my_friend_enemy_chivalrous|Ouvi dizer que você derrotou {s54} e, desde então, está ansioso para cruzar espadas com você.
 str_comment_you_defeated_my_friend_enemy_spiteful|Sua fama corre antes de você, {playername}. {s54} pode ter caído nos seus truques, mas se você lutar comigo, você encontrará para mim um inimigo muito mais escorregadio.
 str_comment_you_defeated_my_friend_enemy|Eles dizem que você derrotou {s54}. Mas eu serei um teste mais verdadeiro de sua habilidade nas armas.
-str_comment_you_captured_a_lord_allied_friendly_spiteful|Ouvi dizer que você capturou {s54}. Espero que você o tenha apertado a cada denar.
-str_comment_you_captured_a_lord_allied_unfriendly_spiteful|Ouvi dizer que você capturou {s54}. Seus cofres devem estar cheios de resgate a essa altura. Uma pena que o dinheiro não possa transformar um vilão em um cavalheiro!
-str_comment_you_captured_a_lord_allied_chivalrous|Ouvi dizer que você capturou {s54}. Muito bem. Suponho, é claro, que ele foi tratado com as honras devido à sua classificação.
-str_comment_you_captured_a_lord_allied|Ouvi dizer que você capturou {s54}. Muito bem. O resgate dele deve valer bastante.
 str_comment_you_let_go_a_lord_allied_chivalrous|Ouvi dizer que você capturou {s54}, mas depois o soltou. Essa cavalaria faz um crédito à nossa causa.
 str_comment_you_let_go_a_lord_allied_upstanding|Ouvi dizer que você capturou {s54}, mas depois o soltou. Bem, esse foi um curso de ação honroso, se possível, também perigoso.
 str_comment_you_let_go_a_lord_allied_coldblooded|Ouvi dizer que você capturou {s54}, mas depois o soltou. Isso foi muito gentil de sua parte, mas a cavalaria não vence guerras.
@@ -1168,33 +1106,6 @@ str_comment_you_let_me_go_enemy_chivalrous|Quando nos conhecemos, você me teve 
 str_comment_you_let_me_go_enemy_coldblooded|Quando nos conhecemos, você me teve à sua mercê e me permitiu ir em liberdade. Mas ainda somos inimigos, e não posso prometer retribuir sua misericórdia em espécie.
 str_comment_you_let_me_go_enemy|Quando nos conhecemos pela última vez, você me teve à sua mercê e me permitiu ir livre. Isso foi gentil da sua parte. Mas ainda estamos em guerra.
 str_comment_you_let_me_go_default|Quando nos conhecemos pela última vez, você me teve à sua mercê e me permitiu ir livre. Isso foi gentil da sua parte, e estou feliz que nossos reinos não estejam mais em guerra.
-str_comment_pledged_allegiance_allied_martial_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Ore para não nos desonrar, nos comportando de maneira covarde.
-str_comment_pledged_allegiance_allied_martial|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Estou ansioso para lutar ao seu lado contra nossos inimigos.
-str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Bah. Faça um favor a si mesmo e fique fora do meu caminho.
-str_comment_pledged_allegiance_allied_quarrelsome|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Lute duro contra nossos inimigos, respeite seus apostadores e não me atravesse, e vamos nos dar bem.
-str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Se eu fosse ele, não confiaria em você para limpar a copa.
-str_comment_pledged_allegiance_allied_selfrighteous|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Lute corajosamente e você será bem recompensado. Traia-nos, e faremos de você o tipo de exemplo que não será esquecido em breve.
-str_comment_pledged_allegiance_allied_cunning_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Eu não finjo estar feliz com a decisão dele, mas talvez seja melhor tê-lo dentro da nossa barraca, do que o contrário.
-str_comment_pledged_allegiance_allied_cunning|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Isso é bom. Quanto mais habilidosos lutadores tivermos conosco nesses tempos difíceis, melhor. Observarei seu progresso.
-str_comment_pledged_allegiance_allied_debauched_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Sem dúvida, você o trairá em breve e terei o prazer de vê-lo morrer na morte de um traidor.
-str_comment_pledged_allegiance_allied_debauched|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Excelente ... Tenho certeza de que você e eu nos tornaremos muito bons amigos. Mas lembre-se - se você nos trair, será o maior erro você jamais fará. 
-str_comment_pledged_allegiance_allied_goodnatured_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Bem, não posso dizer que confiaria em você, mas talvez você mereça o benefício da dúvida.
-str_comment_pledged_allegiance_allied_goodnatured|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Bom {homem / mulher}! Nosso senhor é uma alma nobre, e recompensa lealdade e valor com bondade e generosidade.
-str_comment_pledged_allegiance_allied_upstanding_unfriendly|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Infelizmente, pelo que sei de você, temo que você nos desonre, mas ficarei feliz se você me provar que estou errado.
-str_comment_pledged_allegiance_allied_upstanding|Ouvi dizer que você prometeu lealdade ao nosso senhor, {s54}. Lute contra nossos inimigos com bravura, mas também com honra e compaixão. Um bom nome é tão valioso quanto uma espada afiada ou um cavalo veloz em assuntos de armas. . 
-str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Não se esqueça - poupe o chicote e estrague o camponês!
-str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Fico feliz em vê-lo prosperar - mas tenha cuidado. Os homens são víboras, invejosos e cobiçosos da riqueza de seus vizinhos. Fique perto de mim e Eu vou cuidar de suas costas. 
-str_comment_our_king_granted_you_a_fief_allied_friendly|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Que suas novas terras prosperem.
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Mas lembre-se de que o orgulho é anterior a uma queda.
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Suspeito, no entanto, que a fortuna esteja apenas levantando você para humilhá-lo ainda mais, quando o lança de volta para o estrume de onde você veio. . 
-str_comment_our_king_granted_you_a_fief_allied_spiteful|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Vamos torcer para que você realmente mereça o favor de nosso senhor.
-str_comment_our_king_granted_you_a_fief_allied|Ouvi dizer que {s54} concedeu a você {s51} como feudo. Você parece estar se saindo muito bem.
-; str_comment_you_renounced_your_alliegance_enemy_friendly|I heard that you renounced your allegiance to our lord, {s54}. It grieves me that we must now meet on the field of battle.
-; str_comment_you_renounced_your_alliegance_friendly|I heard that you renounced your allegiance to our lord, {s54}. Let us pray that we may not come to blows.
-; str_comment_you_renounced_your_alliegance_unfriendly_spiteful|I always had you figured for a traitor to {s54}, and now it seems I was proven right. I hope you are prepared to die a traitor's death!
-; str_comment_you_renounced_your_alliegance_unfriendly_moralizing|I heard that you renounced your allegiance to our lord, {s54}. I am forced to consider you a traitor.
-; str_comment_you_renounced_your_alliegance_enemy|I heard that you renounced your allegiance to our lord, {s54}. Well, it is the way of the world for old comrades to become enemies.
-; str_comment_you_renounced_your_alliegance_default|I heard that you renounced your allegiance to our lord, {s54}. Well, that is your decision, but do not expect me to go easy on you when we meet on the battlefield.
 str_personality_archetypes|liege
 str_martial|marcial
 str_quarrelsome|mal-humorado

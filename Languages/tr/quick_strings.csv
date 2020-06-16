@@ -33,27 +33,6 @@ qstr_Gauntlet_wave:_1|Gauntlet bölüm:1
 qstr_Gauntlet_wave:_{reg1|Gauntlet bölüm: {reg1}
 qstr_Remain_in_retirement|Emekli Olarak Kal.
 qstr_Go_back_to_the_adven|Maceracılıga geri dön.
-qstr_You_have_retired_at_|{reg5} gün maceracılıktan sonra {reg4}. seviyede emekli oldun.
-qstr_Effect_on_Score|Skor üzerindeki etki
-qstr_Settlements_owned_by|Sahip oldugun yerleşkeler: {reg0}
-qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
-qstr_Friendly_Settlements|Dost Yerleşkeler: {reg0}
-qstr_Hostile_Settlements:|Hasım Yerleşkeler: {reg0}
-qstr_{reg0}|{reg0}
-qstr_Friendly_Lords:_{reg|Dost Lordlar: {reg0}
-qstr_Enemy_Lords:_{reg0}|Hasım Lordlar: {reg0}
-qstr_Victories:_{reg0}|Zaferler: {reg0}
-qstr_Defeats:_{reg0}|Yenilgiler: {reg0}
-qstr_Quests_Completed:_{r|Tamamlanan Görevler: {reg0}
-qstr_Companions_Found:_{r|Bulunan Yoldaşlar: {reg0}
-qstr_Companions_Lost/Depa|Ölen/Kaybolan Yoldaşlar: {reg0}
-qstr_Wealth:_{reg0}_denar|Servet:  {reg0} dinar
-qstr_Inventory:_{reg0}_de|Envanter:  {reg0} dinar
-qstr_Experience:_{reg0}|Deneyim:  {reg0}
-qstr_Days_Passed:_{reg0}|Geçen Gün:  {reg0}
-qstr_Difficulty:_{reg0}%|Zorluk: {reg0}%
-qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
-qstr_TOTAL_SCORE:_{reg0}|TOPLAM SKOR:  {reg0}
 qstr_A_peaceful_village_n|Westfold'dan fazla uzak olmayan barışçıl bir köy...
 qstr_The_War_is_upon_Roha|Savaş Rohan'a geliyor!
 qstr_Minas_Tirith___The_W|Minas Tirith - Ak Şehir
@@ -180,7 +159,8 @@ qstr_Useful_Tool_of_{s5}|{s5}'in Kullanışlı Aracı
 qstr_Servant_of_{s5}|{s5}'in Hizmetkarı
 qstr_Unknown_to_{s5}|{s5}'in Bilinmeyeni
 qstr_You_have_been_{reg1?|{s24} ({reg0}) rütbesine {reg1?yükseldin:düştün}!
-qstr_You_{reg1?earned:los|Sen {s11} ile {reg11} rütbe puanı  {reg12?ve {reg12} Nüfuz :} {reg1?kazandın:kaybettin} .
+; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.
+qstr_You_{reg1?earned:lost|Sen {s11} ile {reg11} rütbe puanı  {reg12?ve {reg12} Nüfuz :} {reg1?kazandın:kaybettin} .
 qstr_You_spent_{reg10}_of|Kararların sonucunda {reg10} ikna gücünü {s1} ile harcadın kalan puanın {reg11}
 qstr_Troop_upkeep:|Asker bakımı:
 qstr_{s11}_and_{s10}|{s11} ve {s10}
@@ -250,8 +230,7 @@ qstr_nothing|Hiçbir şey
 qstr_Good|İyi
 qstr_Med|İdare eder
 qstr_Bad|Kötü
-qstr_{s77}_received_{reg8|{s77}  {reg84} ek XP kazandı
-qstr_You_gained_{reg84}_i|{reg84}  zeka-ek XPsi kazandın
+; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
 qstr_{reg4}_killed_{reg5}|{reg4} ölü, {reg5} yaralı, {reg6} kaçak
 qstr_{reg4}_killed_{reg5}_|{reg4} ölü, {reg5} yaralı
 qstr_{reg4}_killed_{reg5}_r|{reg4} ölü, {reg5} kaçak
@@ -619,7 +598,6 @@ qstr_mounted_archer|Atlı okçu
 qstr_support|destek
 qstr_bodyguard|muhafız
 qstr_undetermined_type_of|belirsiz tür
-
 qstr_{s1}_has_fled_the_ba|{s1} savaştan kaçtı!
 qstr_Your_troops_are_at_{|Birlikleriniz {reg1}% c uyumludur. (+%{reg3} bonus), Düşman %{reg2}!
 qstr_Morale_of_your_troop|Birliklerinizin morali kırıldı
@@ -647,12 +625,9 @@ qstr_have_won_the_sea_bat|Deniz savaşını kazanmak birliklerinizin moralini d�
 qstr_loses_Faction_Strength|Yıkıcı baskın nedeniyle Taraf Kuvveti kaybedilir.
 qstr_loses_Faction_Strength_|denizdeki başarılarından dolayı Taraf Kuvveti kaybetti.
 qstr_You_spent_{reg67}_of|{s1} 'e olan etkinizin {reg67} kadarını kullandın, {reg66} kaldı.
-
 qstr_{s2}_{reg3?was:is_ar|{S2} {reg3?oldu: {S5} civarındadır.
-
 qstr_{s1}_{s0}|{S1}, {s0}
 qstr_{s1}_and_{s0}|{s1} ve {S0}
-
 qstr_No_Troops_Left.|hiç birlik kalmadı.
 qstr_avoid_melee|Yakın dövüşü önlemek
 qstr_stand_and_fight|Durun ve dövüşün
@@ -725,9 +700,9 @@ qstr_Fixed_Camera___Left_|Sabit Kamera - Sol Omuz
 qstr_Fixed_Camera___Cente|Sabitlenmiş Kamera - Merkez
 qstr_While_visiting_towns|Kasabaları ziyaret ederken, yerleşkelerde ve kamplarda etrafta yürüyen insanlarla konuşabilirsin. Farklı tarafların halkları, farklı şeyler söyleyebilirler. Bazıları düşüncelerini, bazıları ise söylentileri sizinle paylaşacaktır. Her ikisi de  bölgenin kültürünü ve tarafını daha iyi anlatmak, gizli bölgeleri bulma ipuçları, Yaban Hayatı boyunca seyahat etmek, Yüzük Savaşında bulunma ipuçları ve püf noktaları saglamak için kullanılabilir.
 qstr_Cannot_leave_now.|Şimdi ayrılamazsın
-qstr_You_have_found_the_l|Yerel demirciyi buldun...(+{reg3} XP)
-qstr_You_have_found_the_lo|Yerel idareyi buldun...(+{reg3} XP)
-qstr_You_have_found_the_loc|Yerel erzak deposunu buldun...(+{reg3} XP)
+; qstr_You_have_found_the_l|You have found the local smithy.
+; qstr_You_have_found_the_lo|You have found the local authority.
+; qstr_You_have_found_the_loc|You have found the local warehouse.
 qstr_You_look_through_Hen|Günbatımının Penceresi Henneth Annun'a bakıyorsun. Güzel manzara, Batı'ya olan inancınızı ve ötesindeki Güçleri yeniden canlandırıyor.
 qstr__cancelled_the_{reg1|(Mahkumları öldürmekten kazanılan {reg10} tecrübe puanları iptal edildi)
 qstr_Forming_ranks.|Sıralamalar.
@@ -1057,7 +1032,6 @@ qstr_The_war_expands_comm|Savaş genişliyor, komutanlar cesurlaşıyor! (Kuşat
 qstr_Your_party_is_spotte|Grubun {s1} tarafından tespit edildin.
 qstr_Party_has_nothing_to|Partinin yiyecek hiç bir şeyi yok!
 qstr_You_pay_for_accommod|Barınmak için para ödüyorsun.
-qstr_Your_scouts_have_rep|İzcilerimiz, {s3} yakınında bir {s2} oldugunu bildirdi.
 qstr_The_troll_outside_{s|Troll dışarıda {s2} öldürüldü. Görev iptal edildi.
 qstr_{s1}_was_killed_on_t|{s1} savaş alanında katledildi. Görev iptal edildi.
 qstr_{s1}_has_been_defeat|{s1} maglup edildi. Görev iptal edildi.
@@ -1087,6 +1061,7 @@ qstr_{s5}_has_stopped_fol|{s5} Seni takip etmeyi bıraktı.
 qstr_You_have_{reg69}_all|Seni takip eden bir {reg69} müttefik partin var
 qstr_You_have_{reg69}_ally|Seni takip eden bir {reg69} müttefik partin var
 qstr_The_forces_of_{s2}_h|{S2} Kuvvetleri toparlandı ve {s15}  tarafına yürüyorlar!
+qstr_Your_scouts_have_rep|İzcilerimiz, {s3} yakınında bir {s2} oldugunu bildirdi.
 qstr_{s1}_from_{s2}|{s2}'den {s1}
 qstr_When_dealing_with_lo|{s11}'in yerlileriyle konuşurken unutma ki onlar seni tanımıyorlar ve senin {s10}'da kazandıklarını bilmiyorlar.^^({s11} bölgesinden olan kişilere dagıtabilecegin beceri puanları {s10} bölgesinde kazandıklarınla aynı degil. {s11} bölgesinden kazandıklarını sadece bu bölgeden olan kişilere dagıtabilirsin, -- bilgi için ayrıca için rapor ekranına göz atabilirsin.)
 qstr_Info|Bilgi.
@@ -1134,6 +1109,7 @@ qstr_Um..._by_enchanting_|Hmm...Büyülü demirle mi?
 qstr_Magnets_are_made_of_|Mıknatıs yer altından çıkarılan metallerle yapılır. Onlar manyetik çünkü içinde yerçekimi parçaları bulunur.
 qstr_i_wont_a_bonerlrord_|bonnerlord port istiyorom nao!!11!
 qstr_Install_TLD_in_your_|Bannerlord Mod klasörüne TLD'yi yükleyin, ve module.ini'ye şu satırı ekleyin 'compatible_with_wfas = 1', ve artık hem Warband hem de Warrider 0.202 de oynayabileceksiniz!
+; qstr_Bannerlord_runs_on_a|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
 qstr_dis_mod_takes_2_long|bu modun güncellenmesi çok uzun zaman alıyor! çok kötü!!11!22
 qstr_Well_there_s_a_lot_o|Çok fazla yeni grafik ve diger şeyler var.Sanırım bu zaman alacak.
 qstr_It_has_been_recently|Kısa bir süre önce yayımlandı, linki kaçırdıysanız, lemonparty.org adresinden indirebilirsiniz.
@@ -1226,6 +1202,7 @@ qstr_It_is_my_duty_to_prot|Müttefiklerimizi korumak benim görevimdir.
 qstr_I_am_{s4}_{s15}_of_{|Ben {s4}, {s6}'ın {s15}'ıyım
 qstr_I_am_{s4}_a_commande|Ben {s4}, {s6}'ın kumandanıyım.
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? {s8} hakimiyim.:.
+; qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
 qstr_{playername}_our_sco|{playername}, izcilerimiz başarılarının haberlerini getirdi. Bu günden sonra kutsanmış olarak yaşayasın! {s7} birliklerine karşı aldıgın galibiyet, düşmanımızı yavaşlattı. Şimdi kendi komutanları arasında bir çekişme var, ve açık konuşmak gerekirse bir süre senden korkacaklar. En azından bize bir süre dinlenmemiz için vakit kazandırmış oldun.
 qstr_Well_{playername}_yo|{playername} Döndün, ve iyi haberlerle gelmiş gibisin. Sırf övünmek ve sıcak havadan oluşmadıgını görüyorum - ah, eger {s7} 'in senin önünde düştügünü görebilseydim! Düşmanlarımız hiç şüphesiz ümidini kaybetmiştir. Kafalarını da kaybetmişlerdir, eminim. Söylendigi gibi yılanın kafasını kes ve olay bitmiştir. Şimdi gerçek zaferi kazanmak için ordumu sürmeliyim. Katkın üstlerine bildirilecek {playername}, bu konuda endişen olmasın.
 qstr_Alas_that_I_could_no|{s8} topraklarında {s7} denen kişiye mutlak bir son getiremedim, Ama tekrar görüşmemiz gerekirse, dikkat etmelerini söyle.
@@ -1287,6 +1264,7 @@ qstr_Ah_{playername}_it_i|Ah, {playername}, hoşgeldin. Savaş bizim kapımızda
 qstr_About_time_you_showe|Tam zamanında çıkageldin {playername}. Şu anda savaştayız ve herhangi bir itaatsizligi müsamaha göstermeyecegim. {s11} ile savaştayız, hasmın kalelerine yürümeden evvel tez vakte gücümüzü toplamalı ve hasmımızı sahada bertaraf etmeliyiz. Hasmımızın her maglubiyeti bizim savaş alanındaki gücümüzü artıracak ve onları kesin yenilgiye bir adım daha yaklaştıracak. O yüzden her fırsatta düşmanla çarpışmanı istiyorum, ister bir izci grubu olsun ister savaş güruhu olsun. Aynı zamanda yüzbaşlarımızı ve müttefiklerimizi savaşırken görürsen onları desteklemek durumundasın. Sakın onları başarısızlıga ugratma yoksa sonuçları agır olur.
 qstr_we_are_fighting_agai|{s13}'e karşı mücadele ediyoruz
 qstr_we_are_not_fighting_|Şu anda hiçkimse ile savaş durumunda degiliz
+; qstr__{s14}_gained_{reg78| {s14} gained {reg78} experience.
 qstr_Oh?_Let_me_see_that.|Oh? Bir bakayım ... Çok iyi! Bunu bana getirdigin çok iyi oldu, {playername}. Mührümü bunu aldıgımın kanıtı olarak kabul et ve {s9}'u tekrar gördügün zaman ona saygılarımı ilet.
 qstr_Give_me_that!_Hrmph!|Ver şunu bana! Hıh! Bunu bana getirdigin iyi oldu, {playername}, sen faydalı bir hizmetcisin. {s9} 'a söyle seni daha sık çalıştırsın.
 qstr_What?_Let_me_see_tha|Ne? Şuna bir bakayım... Hmmm. Bana bunu getirdigin iyi oldu {playername}. Şimdi Defol.
@@ -1530,10 +1508,6 @@ qstr_One_{s6}_left_the_pa|Bir  {s6} grubu terketti.
 qstr_I_understand._I_will|Anlıyorum. Seninle kalacagım. Bir süre için.
 qstr_I_have_played_my_rol|Uzun yıllar boyunca, ölümlü insanların birçok yaşamı boyunca rolümü oynadım. Bu savaş, insanların savaşması içindir. Batı'ya gidecegim ve belki de bazıları benimle gelmeye karar verebilir.
 qstr_{reg1}_Veteran_Elves|{reg1} Kıdemli Elfler grubunuzdan ayrılmaya karar verdi.
-qstr_You_chose_well_{sir/|İyi seçim, {efendim/hanımefendi}. Adamlarım sözlerini tutmasını ve ücretlerini haketmesini bilirler.
-qstr_Well_done_{sir/madam|Bravo, {beyim/hanımım}. Siz parayı ve şarabı bizden esirgemeyin, biz de Orta Dünya'da korkmanız gereken hiçbir düşman kalmadıgından emin olalım.
-qstr_We_are_at_your_servi|Hizmetinizdeyiz, {beyim/hanımım}.Bize incitilmesi gerekenlerin yönünü işaret edin, ve biz gerisini halledelim.
-qstr_You_will_not_be_diss|Hayâl kırıklıgına ugramayacaksınız {beyim/hanımım}.Tüm Orta Dünya'da bundan daha iyi savaşçılar bulamazsınız.
 qstr_What_an_amazing_feat|Ne şahane usta eller bunlar!
 qstr_Well_done!|Aferin!
 qstr_Nice_legwork.|Ayak hareketlerin yerinde.
@@ -1576,11 +1550,7 @@ qstr_The_{s11}_of_{s10}_a|{s10}'nün yaşlısı {s11} senden {s13}'e biraz {s12}
 qstr__Guards_slaughter_hi|Muhafızlar, öldürün onu!
 qstr_Slaughter_him_for_fr|Taze İnsan eti için onu öldürün!
 qstr_This_is_{s5}_Command|Bu {s5}, Komutanım.
-qstr_{s6}_This_place_and_|{s6} Burası ve çevreleyen araziler tabii ki size ait, benim {lordum/leydim}.
 qstr_{s6}_This_place_and_t|{s6} Burası ve çevredeki araziler {s8}'den {s7} 'e ait.
-qstr_{s3}_and_{s5}|{s3} ve {s5}
-qstr_{s3}_{s5}|{s3}, {s5}
-qstr_{reg20?We_mostly_pro|Burada {reg20?bizim genellikle ürettigimiz şey {s5} :bu günlerle fazla bir şey üretmiyoruz}. Eger daha fazla bilgi istiyorsan,{reg4?lonca başkanıyla:köyün yaşlısıyla} konuşabilirsin. İşte orada duruyor.
 qstr_Hey_scum!_I_can_fix_|İstersen çenenin şeklini düzeltebilirim, seni pislik!
 qstr_Watch_where_you_re_g|Nereye gittigine dikkat et, ezik herif!
 qstr_I_don_t_like_your_fa|Senin yüzünü begenmedim. Bence biraz düzeltilmeye ihtiyacı var.

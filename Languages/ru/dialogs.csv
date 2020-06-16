@@ -791,17 +791,6 @@ dlga_mayor_talk:mayor_deliver_wine|Меня попросили доставит�
 dlga_mayor_deliver_wine:mayor_pretalk|Наконец-то! Наши запасы почти на исходе. Я заблаговременно запросил поставку {s4}. И передайте {s9} мою благодарность.^^[получено {reg14} очков снабжения фракции {s14}]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|Меня попросили доставить вам {reg9} бочонков {s4}, но, к сожалению, часть груза досталась врагам.
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|Они поплатятся за это! Что ж, у нас осталось хоть немного {s4}. В любом случае - спасибо вам.^^[получено {reg14} очков снабжения фракции {s14}]
-dlga_start:mercenary_tavern_talk|Do you have a need for mercenaries, Commander? {reg3?Me and {reg4?{reg3} of my mates:one of my mates} are:I am} looking for a master. We'll join you for {reg5} denars.
-dlga_start:mercenary_after_recruited|Any orders, Commander?
-dlga_mercenary_after_recruited:mercenary_after_recruited_2|Make your preparations. We'll be moving at dawn.
-dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|Take your time. We'll be staying in this town for a while.
-dlga_mercenary_after_recruited_2:close_window|Yes, Commander. We'll be ready when you tell us to leave.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|All right. I will hire all of you. Here is {reg5} denars.
-dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|All right. But I can only hire {reg6} of you. Here is {reg5} denars.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|That sounds good. But I can't afford to hire any more men right now.
-dlga_tavern_mercenary_cant_lead:close_window|That's a pity. Well, {reg3?we will:I will} be lingering around here for a while, if you need to hire anyone.
-dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|That sounds good. But I can't lead any more men right now.
-dlga_mercenary_tavern_talk:close_window|Sorry. I don't need any other men right now.
 dlga_start:trainer_pretalk|Вы дожили до {reg2} волны противников. {s4}
 dlga_start:trainer_pretalk.1|Очень хорошо, вы победили всех противников.
 dlga_start:trainer_talk|Добрый день. Готовы к тренировке?
@@ -1013,17 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|Я ищу беглого пре
 dlga_town_dweller_ask_fugitive:close_window|Чужаки приходят и уходят. Если он прячется где-то здесь, то вы обязательно его найдёте - стоит лишь поискать.
 dlga_town_dweller_talk:town_dweller_ask_info|Что вы можете рассказать об этой деревне?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Что вы можете рассказать об этом месте?
-dlga_town_dweller_talk:town_dweller_ask_situation|Ну и как здесь живётся?
-dlga_town_dweller_ask_situation:town_dweller_poor|Disaster has struck my family, {sir/madam}. A pestilence has ruined the crops on our fields, and my poor children lie at home hungry and sick. My neighbours are too poor themselves to help me.
-dlga_town_dweller_ask_situation:town_dweller_poor.1|My life is miserable, {sir/madam}. I haven't been able to find a job for months, and my poor children go to bed hungry each night. My neighbours are too poor themselves to help me.
-dlga_town_dweller_poor:town_dweller_poor_paid|Then take these 300 denars. I hope this will help you and your family.
-dlga_town_dweller_poor:town_dweller_poor_not_paid|Then you must work harder and bear your burden without complaining.
-dlga_town_dweller_poor_not_paid:close_window|Yes {sir/madam}. I will do as you say.
-dlga_town_dweller_poor_paid:close_window|{My lord/My good lady}.  You are so good and generous. I will tell everyone how you helped us.
-dlga_town_dweller_ask_situation:close_window|Спасибо за вашу доброту, {господин/госпожа}. С вашей помощью мы стали жить лучше. Я буду молиться за вас каждый день.
-dlga_town_dweller_ask_situation:town_dweller_talk|Времена нынче тяжёлые, {господин/госпожа}. Мы трудимся целыми днями, но всё равно каждый вечер отправляемся спать, страдая от голода.
-dlga_town_dweller_ask_situation:town_dweller_talk.1|Времена нынче тяжёлые, {господин/госпожа}. Но нам стоит радоваться и тому, что мы имеем.
-dlga_town_dweller_ask_situation:town_dweller_talk.2|Ну, у нас всё не так плохо, {господин/госпожа}. Мы должны радоваться своему счастью.
+dlga_town_dweller_talk:town_dweller_talk|Ну и как здесь живётся?
 dlga_town_dweller_talk:town_dweller_ask_rumor|Какие слухи ходят по округе в последнее время?
 dlga_town_dweller_ask_rumor:town_dweller_talk|Я не знаю ничего такого, что было бы вам интересно.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Ты мне угрожаешь? Стражники вряд ли ждали, что тут появится такой тип, как ты.
