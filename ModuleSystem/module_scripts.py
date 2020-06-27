@@ -4936,7 +4936,7 @@ scripts = [
 		(assign, reg84, ":int_xp_bonus"),
 
       	(val_max, ":int_xp_bonus", 1),
-      	(add_xp_to_troop, ":stack_troop_new", ":int_xp_bonus"),
+      	(add_xp_to_troop, ":int_xp_bonus", ":stack_troop_new", ),
       	
       	#Debug
       	# (try_begin),
