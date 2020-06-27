@@ -1425,7 +1425,7 @@ items =[
 #next three freed up (disabled most traces of defilement system)
 ["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(30)|horse_speed(60)|horse_maneuver(60)|horse_charge(25)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 ["thrush_reward","Thrush",[("prop_reward_thrush",0)],itp_unique|itp_type_goods,0,1000,weight(1)|abundance(0)|0,imodbits_none],
-["gauntlets_reward","Iron_Fists",[("narf_demi_gauntlets_L",0),],itp_type_hand_armor|itp_unique,0,2000,weight(2)|body_armor(6)|difficulty(15),imodbits_none,[]],
+["gauntlets_reward","Iron_Fists",[("narf_finger_gauntlets_L",0),],itp_type_hand_armor|itp_unique,0,2000,weight(2)|body_armor(6)|difficulty(15),imodbits_none,[]],
 
 #last item for MnB
 ["save_compartibility_item10","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
