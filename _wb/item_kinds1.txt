@@ -2471,7 +2471,7 @@ itemsfile version 2
  itm_leather_dwarf_armor_b Dwarven_Padded_Jerkin Dwarven_Padded_Jerkin 2  dwarf_padtunic 0  dwarf_padmail 251658240  16842765 0 908 251658240 10 100 0 18 8 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_armor_c Erebor_Scale_Mail Erebor_Scale_Mail 2  dwarf_scalemail_light 0  dwarf_scalemail_dwarfonly_backup 704643072  16842765 0 2008 704643072 23 100 2 43 13 18 0 0 0 0 0 0 0
+ itm_dwarf_armor_c Erebor_Scale_Mail Erebor_Scale_Mail 2  dwarf_scalemail_light 0  dwarf_scalemail 704643072  16842765 0 2008 704643072 23 100 2 43 13 18 0 0 0 0 0 0 0
 0
 
  itm_dwarf_vest Dwarven_Tunic Dwarven_Tunic 2  dwarf_tunic_erebor 0  dwarf_tunic_ironhills 251658240  16842765 0 258 251658240 5 100 0 14 6 0 0 0 0 0 0 0 0
