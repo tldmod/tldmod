@@ -197,6 +197,7 @@ map_icons = map_icons_scribbler + [
       [
          # (dialog_box, "@LOLOL","@INITIALIZED morannon"),
            (call_script, "script_tld_internal_set_good_or_evil_ui"),
+		   (gt, "$savegame_version", 0), #InVain: We need this condition so the script doesn't fire before the savegame version is assigned in script_game_start
            (call_script, "script_update_savegame"),
       ]
     ),
