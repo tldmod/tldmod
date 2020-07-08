@@ -1553,7 +1553,7 @@ itemsfile version 2
  itm_rohan_2h_sword Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3 100 0 0 0 0 40960 94 0 101 0 287 40
 0
 
- itm_rohan_recruit Rohan_Padded_Jerkin Rohan_Padded_Jerkin 3  rohan_recruit_poor 134  rohan_recruit 0  rohan_recruit_reinforced 33554432  16842765 0 50 123731968 4 100 0 8 2 0 0 0 0 0 0 0 0
+ itm_rohan_recruit Rohan_Padded_Jerkin Rohan_Padded_Jerkin 3  rohan_padded_1 134  rohan_padded_2 0  rohan_padded_3 33554432  16842765 0 50 123731968 4 100 0 8 2 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_leather Rohan_Leather_Vest Rohan_Leather_Vest 4  rohan_lamellar_poor 134  rohan_lamellar 0  rohan_lamellar_cape 268435456  rohan_lamellar_reinforced 167772160  16842765 0 300 436207750 9 100 0 13 9 0 0 0 0 0 0 0 0
@@ -1686,7 +1686,7 @@ itemsfile version 2
  itm_free_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643072 17 100 0 25 14 0 0 0 0 0 0 0 0
 0
 
- itm_free_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 4000 704643072 23 100 0 38 14 0 0 0 0 0 0 0 0
+ itm_mirkwood_sword Woodelf_Sword Woodelf_Sword 2  mirkwood_shortsword 0  scab_mirkwood_shortsword 3458764513820540928  12648450 9223372071508115471 250 286870 1.25 100 0 0 0 0 29696 103 0 76 0 283 29
 0
 
  itm_mirkwood_great_spear Greenwood_Great_Spear Greenwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 104 0 148 0 291 30
@@ -1710,7 +1710,7 @@ itemsfile version 2
  itm_mirkwood_spear_shield_b Greenwood_War_Shield Greenwood_War_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3 100 0 16 0 0 1000 82 0 90 0 0 0
 0
 
- itm_mirkwood_spear_shield_c Woodelf_Round_Shield Woodelf_Round_Shield 1  mirkwood_royal_round 0  327687 4831838208 600 771751936 2 100 0 20 0 0 1000 90 0 50 0 0 0
+ itm_mirkwood_spear_shield_c Woodelf_Round_Shield Woodelf_Round_Shield 1  mirkwood_royal_round 0  327687 5100273664 600 771751936 2 100 0 20 0 0 1000 90 0 50 0 0 0
 0
 
  itm_mirkwood_helm_a Woodelf_Archer_Helm Woodelf_Archer_Helm 3  mirkwood_helm_a 134  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 300 167772294 1 100 25 0 0 0 0 0 0 0 0 0 0
@@ -2134,10 +2134,10 @@ itemsfile version 2
  itm_dale_light_a Dale_Militia_Jacket Dale_Militia_Jacket 3  dale_light_b1 134  dale_light_b2 1  dale_light_b3 167772160  16842765 0 150 167772294 7 100 0 13 2 0 0 0 0 0 0 0 0
 0
 
- itm_dale_light_b Northmen_Light_Lamellar Northmen_Light_Lamellar 3  northmen_light_a2 1  northmen_light_a3 33554432  northmen_light_a1 134217728  16842765 0 400 167772294 12 100 0 18 6 0 0 0 0 0 0 0 0
+ itm_dale_light_b Northmen_Light_Lamellar Northmen_Light_Lamellar 5  northmen_light_a2 134  northmen_light_a3 1  northmen_light_a3_cloak 268435456  northmen_light_a1 167772160  northmen_light_a1_cloak 536870912  16842765 0 400 973078662 12 100 0 18 6 0 0 0 0 0 0 0 0
 0
 
- itm_dale_med_a Northmen_Heavy_Lamellar Northmen_Heavy_Lamellar 4  northmen_med_a3 1  northmen_med_a2 134  northmen_med_a1 167772160  northmen_med_a1_pelt 536870912  16842765 0 1100 704643206 19 100 0 26 7 0 0 0 0 0 0 0 0
+ itm_dale_med_a Northmen_Heavy_Lamellar Northmen_Heavy_Lamellar 5  northmen_med_a3 1  northmen_med_a3_cloak 268435456  northmen_med_a2 134  northmen_med_a1 167772160  northmen_med_a1_pelt 536870912  16842765 0 1100 704643206 19 100 0 26 7 0 0 0 0 0 0 0 0
 0
 
  itm_dale_med_b Dale_Leather_Armor Dale_Leather_Armor 4  dale_med_b 134  dale_med_b2 1  dale_med_b3 167772160  dale_med_b4 536870912  16842765 0 900 704643206 20 100 0 18 6 10 0 0 0 0 0 0 0
@@ -2158,7 +2158,7 @@ itemsfile version 2
  itm_dale_heavy_c Rhovanion_Mail Rhovanion_Mail 2  northmen_heavy_a 1  northmen_heavy_b 167772160  16842765 0 1600 704643206 32 100 0 33 12 0 0 0 0 0 0 0 0
 0
 
- itm_free_dale_armor_j Dale_Cloak_Long_Maille Dale_Cloak_Long_Maille 1  dale_heavy_b 0  16842765 0 1500 704643072 19 100 0 35 12 0 0 0 0 0 0 0 0
+ itm_north_leather Northmen_Leather_Vest Northmen_Leather_Vest 3  northmen_light_b1 134  northmen_light_b2 1  northmen_light_b3 167772160  16842765 0 100 167772294 7 100 0 13 2 0 0 0 0 0 0 0 0
 0
 
  itm_free_dale_armor_k Dale_Noble_Armor Dale_Noble_Armor 1  northmen_heavy_b 0  16842765 0 2000 704643072 22 100 2 38 15 0 0 0 0 0 0 0 0
@@ -2324,7 +2324,7 @@ itemsfile version 2
  itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftain 0  16777229 0 1200 704643206 18 100 0 33 15 0 0 0 0 0 0 0 0
 0
 
- itm_beorn_helmet Bear_Skullcap Bear_Skullcap 1  beorn_helmet 0  65548 0 800 704643206 2 100 32 0 0 0 0 0 0 0 0 0 0
+ itm_beorn_helmet Bear_Skullcap Bear_Skullcap 2  beorn_helmet_light 134  beorn_helmet 0  65548 0 800 704643206 2 100 32 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_shield Northmen_Shield Northmen_Shield 2  northmen_shield 0  northmen_shield 771751936  327687 4831838208 200 251658402 3 100 0 5 0 0 480 82 0 70 0 0 0
