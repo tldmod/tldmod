@@ -481,28 +481,28 @@ itemsfile version 2
  itm_dunedain_helm_b Arnor_Decorated_Helm Arnor_Decorated_Helm 1  arnor_helm_a 0  65548 0 1500 704643072 4 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_a Arnorian_Armor Arnorian_Armor 1  arnor_blue 0  16842765 0 2300 704643072 27 100 0 40 13 0 0 0 0 0 0 0 0
+ itm_arnor_armor_a Arnorian_Armor Arnorian_Armor 1  arnor_blue 0  16842765 0 2300 704643072 27 100 0 35 13 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_b Arnorian_Armor Arnorian_Armor 1  arnor_brown 0  16842765 0 2300 704643072 27 100 0 40 13 0 0 0 0 0 0 0 0
+ itm_arnor_armor_b Arnorian_Armor Arnorian_Armor 1  arnor_brown 0  16842765 0 2300 704643072 27 100 0 35 13 0 0 0 0 0 0 0 0
 0
 
  itm_arnor_armor_c Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger 0  16842765 0 300 704643072 5 100 0 14 8 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_d Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger_b 0  16842765 0 300 704643072 5 100 0 14 8 0 0 0 0 0 0 0 0
+ itm_arnor_armor_d Dunedain_Ranger_Leather Dunedain_Ranger_Leather 1  arnor_ranger_b 0  16842765 0 400 704643072 5 100 0 16 8 0 0 0 0 0 0 0 0
 0
 
  itm_arnor_armor_e Arnorian_Reinforced_Jerkin Arnorian_Reinforced_Jerkin 1  arnor_reinf_jerkin 0  16842765 0 1200 251658240 15 100 0 20 10 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_f Arnorian_High_Armor Arnorian_High_Armor 1  arnor_knight 0  16842765 0 3100 704643072 33 100 0 42 15 0 0 0 0 0 0 0 0
+ itm_arnor_armor_f Arnorian_High_Armor Arnorian_High_Armor 1  arnor_knight 0  16842765 0 3100 704643072 33 100 0 38 15 0 0 0 0 0 0 0 0
 0
 
  itm_arnor_greaves Arnorian_Greaves Arnorian_Greaves 1  narf_splinted_greaves_nospurs 0  69390 0 800 704643072 3.5 100 0 0 28 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_splinted Arnorian_Splinted_Greaves Arnorian_Splinted_Greaves 1  narf_splinted_greaves_nospurs 0  69390 0 1200 704643072 3.5 100 0 0 28 0 0 0 0 0 0 0 0
+ itm_free_arnor_splinted Arnorian_Splinted_Greaves Arnorian_Splinted_Greaves 1  narf_splinted_greaves_nospurs 0  69390 0 1200 704643072 3.5 100 0 0 28 0 0 0 0 0 0 0 0
 0
 
  itm_arnor_shield_a Arnor_Shield Arnor_Shield 1  arnor_shield_inf 0  327687 5100273664 400 771751936 2 100 0 14 0 0 380 100 0 50 0 0 0
@@ -1674,7 +1674,7 @@ itemsfile version 2
  itm_mirkwood_pad Greenwood_Quilted_Coat Greenwood_Quilted_Coat 3  mirkwood_quiltedsurcoat_01 0  mirkwood_quiltedsurcoat_01 134  mirkwood_quiltedsurcoat_01_b 167772160  16842765 0 1000 704643206 6 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_mail Greenwood_Mail Greenwood_Mail 3  mirkwood_maillewithsurcoat_01_b 0  mirkwood_maillewithsurcoat_01 134  mirkwood_royal 167772160  16842765 0 2500 704643206 17 100 0 30 14 0 0 0 0 0 0 0 0
+ itm_mirkwood_mail Greenwood_Mail Greenwood_Mail 3  mirkwood_maillewithsurcoat_01_b 0  mirkwood_maillewithsurcoat_01 134  mirkwood_royal 167772160  16842765 0 2500 704643206 17 100 0 29 14 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_scale Greenwood_Light_Scale Greenwood_Light_Scale 3  mirkwood_light_scale 0  mirkwood_scalequilted_01 134  mirkwood_scalequilted_01b 167772160  16842765 0 1100 704643206 12 100 0 26 12 0 0 0 0 0 0 0 0
@@ -2685,7 +2685,7 @@ itemsfile version 2
  itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_h 0  16781325 0 3002 0 40 100 0 38 17 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  6295560 2952794112 3000 0 1.5 100 0 0 90 5 0 96 54 0 0 277 0
+ itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  6295560 2952794112 3000 0 1.5 100 0 0 93 5 0 96 54 0 0 277 0
 0
 
  itm_elven_cloak Elven_Cloak Elven_Cloak 1  elven_cloak 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
