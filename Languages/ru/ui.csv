@@ -1,9 +1,9 @@
 ui_at_learning_limit|(лимит изучения для этой расы)
 ui_not_enough_skill_points_to_learn|(не хватает очков навыков для обучения)
 ui_not_enough_attributetype_to_learn_this_skill|(Недостаточно %s для изучения навыка)
-ui_explanation_agility|Ловкость: каждое очко дает пять очков оружия и увеличивает скорость оружия на 0,5%. Следующие навыки не могут быть развиты выше 1/3 ловкости: Владение оружием, Владение щитом, Атлетика, Верховая езда, Верховая стрельба, Сбор трофеев.
-ui_retreated_battle|%s отступил с поля боя
-ui_riding_skill_not_adequate_to_mount|(Навыка верховой езды недостаточно)
+ui_explanation_agility|Ловкость: каждое очко дает пять очков владения оружием и увеличивает скорость атаки на 0,5%. Следующие навыки не могут быть развиты выше 1/3 ловкости: Владение оружием, Владение щитом, Атлетика, Верховая езда, Верховая стрельба, Сбор трофеев.
+ui_retreated_battle|%s сбежал с поля боя.
+ui_riding_skill_not_adequate_to_mount|(Не хватает навыка)
 ui_camp|Лагерь
 ui_tutorial_inventory|Чтобы получать снаряжение в моде The Last Days, вам нужны очки снабжения. Они являются мерой материальной поддержки со стороны фракции и того, сколь много ресурсов данной фракции вам позволено использовать.
 ui_you_dont_have_value|У вас нет %s.
@@ -35,7 +35,7 @@ ui_horse_crippled|Животное охромело...
 ui_you_got_value|Вы получили %s.
 ui_has_deserted_the_party| покинул отряд.
 ui_have_deserted_the_party| покинули отряд.
-ui_loading_textures|Загрузка текстур (потерпите)...
+ui_loading_textures|Загрузка Текстур (потерпите)...
 ui_order_hold_fire_toggle|Не стрелять/Стрельба без приказа
 ui_order_dismount_toggle|Сесть верхом/Спешиться
 ui_mount_horses_e_|%s, сесть верхом!
@@ -50,20 +50,20 @@ ui_lance_control|Управление копьём:
 ui_manual_easy|Вручную (Легко)
 ui_manual_hard|Вручную (Сложно)
 ui_campaign_ai|ИИ Кампании (не используется):
-ui_crouch|Пригнуться
+ui_crouch|Присесть
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Вы уверены, что хотите импортировать этого персонажа?
-ui_explanation_strength|Сила: Каждое очко добавляет +1 к очкам здоровья. Следующие навыки не могут быть развиты выше 1/3 от Силы: Железная кожа, Сильный бросок, Сильный выстрел.
+ui_explanation_strength|Сила: Каждое очко добавляет +1 очко к здоровью. Следующие навыки не могут быть развиты выше 1/3 от Силы: Железная кожа, Сильный бросок, Сильный удар, Сильный выстрел.
 ui_explanation_intelligence|Интеллект: Каждое очко Интеллекта немедленно дает дополнительное очко навыков и немного увеличивает прирост опыта от некоторых действий. Следующие навыки не могут быть развиты выше 1/3 от интеллекта: Обучение, Слежение, Тактика,Поиск следов, Обнаружение, Управление инвентарем, Перевязка ран, Хирургия и Первая помощь.
-ui_explanation_charisma|Харизма: Каждое очко увеличивает размер отряда на +1. Следующие навыки не могут превышать 1/3 Харизмы: управление пленными, знание леса, лидерство, торговля.
+ui_explanation_charisma|Харизма: Каждое очко увеличивает размер отряда на +1. Следующие навыки не могут превышать 1/3 Харизмы: Управление пленными, Знание леса, Лидерство, Торговля.
 ui_delivered_number_damage|Нанесено %d урона 
 ui_mission_losses_killed|убито :
 ui_party_losses|%s : %d ранено --- %d убито из %d
 ui_following|Следование 
 ui_accompanying|Сопровождающий
-ui_dumping_value_items|%d предметы будут навсегда потеряны, в уверенны ?
+ui_dumping_value_items|%d предметы будут навсегда потеряны
 ui_dumping_value_item|Предмет будет навсегда потерян, вы уверены?
 ui_notification_requirements_not_met|Вам не хватает навыков, чтобы использовать это оружие
 ui_disband|Распустить
@@ -103,15 +103,15 @@ ui_order_3|Выбрать приказ 3
 ui_order_4|Выбрать приказ 4
 ui_order_5|Выбрать приказ 5
 ui_order_6|Выбрать приказ 6
-ui_order_button_hold_this_position|Держать позиции
-ui_order_button_follow_me|За мной 
+ui_order_button_hold_this_position|Удерживать позиции!
+ui_order_button_follow_me|За мной!
 ui_order_button_charge|В атаку
-ui_order_button_stand_ground|Удерживать позицию
+ui_order_button_stand_ground|Стоять на месте!
 ui_order_button_retreat|Отступить 
-ui_order_button_advance|Вперед на десять шагов
+ui_order_button_advance|Продвинуться на десять шагов
 ui_order_button_fall_back|Отступить на десять шагов
-ui_order_button_spread_out|Рассредоточится
-ui_order_button_stand_closer|Держаться вместе
+ui_order_button_spread_out|Рассредоточится!
+ui_order_button_stand_closer|Сомкнуть ряды!
 ui_order_button_mount_horses|Сесть верхом
 ui_order_button_dismount|Спешиться
 ui_order_button_hold_fire|Прекратить огонь

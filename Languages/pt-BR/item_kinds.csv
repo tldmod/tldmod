@@ -155,15 +155,15 @@ itm_riv_shield_a|Escudo de Valfenda
 itm_riv_shield_b|Escudo de Valfenda 
 itm_riv_bas_sword|Espada Bastarda de Valfenda
 itm_riv_1h_sword|Espada de Valfenda
-; itm_riv_riding_sword|Rivendell Longsword
-; itm_riv_archer_sword|Rivendell Short Sword
+itm_riv_riding_sword|Espada Longa de Valfenda
+itm_riv_archer_sword|Espada Curta de Valfenda
 itm_riv_spear|Lança de Valfenda
-; itm_riv_light|Rivendell Tunic
-; itm_riv_leather|Rivendell Leather Armor
-; itm_riv_foot_mail|Rivendell Mail
-; itm_riv_foot_scale|Rivendell Scale
+itm_riv_light|Túnica de Valfenda
+itm_riv_leather|Armadura de Couro de Valfenda
+itm_riv_foot_mail|Malha de Aço de Valfenda
+itm_riv_foot_scale|Escalas de Valfenda
 ; itm_riv_surcoat|Rivendell Surcoat
-; itm_riv_knight|Rivendell Knightly Armour
+itm_riv_knight|Armadura de Cavaleiro de Valfenda
 itm_riv_armor_h_archer|Armadura de Valfenda 
 itm_riv_armor_leader|Armadura de Líder de Valfenda
 itm_riv_boots|Botas de Valfenda
@@ -187,13 +187,13 @@ itm_gondor_light_greaves|Grevas de Couro Gondorianas
 itm_gondor_med_greaves|Grevas Médias Gondorianas
 itm_gondor_heavy_greaves|Grevas de Cota-Malha Gondorianas
 itm_gondor_infantry_helm|Elmo da Infantaria de Gondor
-; itm_gondor_auxila_helm|Gondor Light Helm
-; itm_gondorian_archer_helm|Gondor Archer Helm
+itm_gondor_auxila_helm|Elmo Leve de Gondor
+itm_gondorian_archer_helm|Elmo de Arqueiro de Gondor
 itm_tower_archer_helm|Elmo de Arqueiro da Torre
 itm_gondor_leader_helm|Elmo de Nobre de Gondor
 itm_tower_guard_helm|Elmo de Guarda da Torre
 itm_gondor_citadel_knight_helm|Elmo de Cavaleiro da Cidadela
-; itm_gondor_knight_helm|Gondor Cavalry Helm
+itm_gondor_knight_helm|Elmo de Cavalaria de Gondor
 itm_gondor_dolamroth_helm|Elmo de Dol Amroth
 itm_swan_knight_helm|Elmo de Cavaleiro Cisne
 itm_gondor_lamedon_helm|Elmo de Lamedon
@@ -495,9 +495,9 @@ itm_mirkwood_leather|Armadura de Couro de Elfo Silvestre
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
 itm_mirkwood_heavy_scale|Escama de Folha Floresta das Trevas
-; itm_mirkwood_great_spear|Greenwood Great Spear
-; itm_mirkwood_war_spear|Greenwood War Spear
-; itm_mirkwood_short_spear|Woodelf Spear
+itm_mirkwood_great_spear|Lança Grande da Floresta Verde
+itm_mirkwood_war_spear|Lança de Guerra da Floresta Verde
+itm_mirkwood_short_spear|Lança de Elfo Silvestre
 ; itm_mirkwood_knife|Woodelf Knife
 ; itm_mirkwood_axe|Woodelf Axe
 ; itm_mirkwood_spear_shield_a|Woodelf Shield

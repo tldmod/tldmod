@@ -42,8 +42,8 @@ trp_townsman|Mieszczanin
 trp_townsman_pl|Mieszczan
 trp_watchman|Mieszczanka
 trp_watchman_pl|Mieszczanki
-; trp_i1_woodmen_man|Woodmen Settler
-; trp_i1_woodmen_man_pl|Woodmen Settlers
+trp_i1_woodmen_man|Leśny Osadnik
+trp_i1_woodmen_man_pl|Leśnych Osadników
 trp_i2_woodmen_forester|Leśnik
 trp_i2_woodmen_forester_pl|Leśników
 trp_i3_woodmen_skilled_forester|Doświadczony Leśnik
@@ -134,14 +134,14 @@ trp_i5_rhun_ox_warrior|Wojownik Byka
 trp_i5_rhun_ox_warrior_pl|Wojowników Byka
 trp_c2_rhun_horseman|Jeździec Rhun
 trp_c2_rhun_horseman_pl|Jeźdźców Rhun
-; trp_c3_rhun_outrider|Outrider of Rhun
-; trp_c3_rhun_outrider_pl|Outriders of Rhun
-; trp_c4_rhun_noble_rider|Noble Rider of Rhun
-; trp_c4_rhun_noble_rider_pl|Noble Riders of Rhun
-; trp_c5_rhun_warrider|Warrider of Rhun
-; trp_c5_rhun_warrider_pl|Warriders of Rhun
+trp_c3_rhun_outrider|Foryś z Rhunu
+trp_c3_rhun_outrider_pl|Forysie z Rhunu
+trp_c4_rhun_noble_rider|Szlachetny Jeździec z Rhunu
+trp_c4_rhun_noble_rider_pl|Szlachetni Jeźdźcy z Rhunu
+trp_c5_rhun_warrider|Jeźdźca Wojny Rhunu
+trp_c5_rhun_warrider_pl|Jeźdźców Wojny Rhunu
 trp_c6_rhun_warlord|Pan Wojny Rhunu
-; trp_c6_rhun_warlord_pl|Warlords of Rhun
+trp_c6_rhun_warlord_pl|Panów Wojny Rhunu
 trp_i1_dwarf_apprentice|Uczeń-Krasnolud
 trp_i1_dwarf_apprentice_pl|Uczniów-Krasnoludów
 trp_i2_dwarf_warrior|Krasnolud Wojownik
@@ -352,8 +352,8 @@ trp_a3_greenwood_sentinel|Wartownik Zielonego Lasu
 trp_a3_greenwood_sentinel_pl|Wartowników Zielonego Lasu
 trp_a4_greenwood_vet_sentinel|Doświadczony Wartownik Zielonego Lasu
 trp_a4_greenwood_vet_sentinel_pl|Doświadczonych Wartowników Zielonego Lasu
-; trp_a5_greenwood_vigilant|Greenwood Guardian
-; trp_a5_greenwood_vigilant_pl|Greenwood Guardians
+trp_a5_greenwood_vigilant|Opiekun Zielonego Lasu
+trp_a5_greenwood_vigilant_pl|Opiekunowie Zielonego Lasu
 trp_i2_greenwood_infantry|Piechur Zielonego Lasu
 trp_i2_greenwood_infantry_pl|Piechurów Zielonego Lasu
 trp_i3_greenwood_vet_infantry|Doborowy Piechur Zielonego Lasu
@@ -370,8 +370,8 @@ trp_a1_riv_scout|Zwiadowca Rivendell
 trp_a1_riv_scout_pl|Zwiadowców Rivendell
 trp_a2_riv_vet_scout|Doświadczony Zwiadowca Rivendell
 trp_a2_riv_vet_scout_pl|Doświadczonych Zwiadowców Rivendell
-; trp_a3_riv_archer|Rivendell Archer
-; trp_a3_riv_archer_pl|Rivendell Archers
+trp_a3_riv_archer|Łucznik z Rivendell
+trp_a3_riv_archer_pl|Łucznicy z Rivendell
 trp_a4_riv_vet_archer|Łucznik Weteran Rivendell
 trp_a4_riv_vet_archer_pl|Łucznicy Weterani Rivendell
 trp_a5_riv_master_archer|Mistrz Łuku Rivendell
@@ -380,8 +380,8 @@ trp_a6_riv_guardian|Strażnik Rivendell
 trp_a6_riv_guardian_pl|Strażników Rivendell
 trp_i3_riv_swordbearer|Zbrojny Rivendell
 trp_i3_riv_swordbearer_pl|Zbrojnych Rivendell
-; trp_i4_riv_vet_swordbearer|Rivendell Veteran Swordbearer
-; trp_i4_riv_vet_swordbearer_pl|Rivendell Veteran Swordbearers
+trp_i4_riv_vet_swordbearer|Miecznik z Rivendell
+trp_i4_riv_vet_swordbearer_pl|Miecznik z Rivendell
 trp_i5_riv_swordmaster|Mistrz Miecza z Rivendell
 trp_i5_riv_swordmaster_pl|Mistrzów Miecza z Rivendell
 trp_i6_riv_champion|Czempion z Imladris
@@ -398,10 +398,10 @@ trp_a2_arnor_vet_scout|Tropiciel Dunedainów
 trp_a2_arnor_vet_scout_pl|Tropicieli Dunedainów
 trp_i3_arnor_swordsman|Miecznik Dunedainów
 trp_i3_arnor_swordsman_pl|Miecznicy Dunedainów
-; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
-; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
-; trp_i5_arnor_champion|Champion of Arnor
-; trp_i5_arnor_champion_pl|Champions of Arnor
+trp_i4_arnor_vet_swordsman|Doświadczony Zbrojny Dunedainów
+trp_i4_arnor_vet_swordsman_pl|Doświadczeni Zbrojni Dunedainowie
+trp_i5_arnor_champion|Mistrz z Arnoru
+trp_i5_arnor_champion_pl|Mistrzowie z Arnoru
 trp_c4_arnor_horseman|Kawalerzysta Duedainów
 trp_c4_arnor_horseman_pl|Kawalerii Dunedainów
 trp_c5_arnor_knight|Rycerz Arnoru
@@ -466,8 +466,8 @@ trp_dismounted_thengel_guard_of_rohan|Rohański Gwardzista Thengela
 trp_dismounted_thengel_guard_of_rohan_pl|Rohańskich Gwardzistów Thengela
 trp_i1_harad_levy|Haradrimski Poborowy
 trp_i1_harad_levy_pl|Haradrimskich Poborowych
-; trp_i3_harad_infantry|Harad Light Footman
-; trp_i3_harad_infantry_pl|Harad Light Footmen
+trp_i3_harad_infantry|Haradrimski Lekki Piechur
+trp_i3_harad_infantry_pl|Haradrimscy Lekki Piechurzy
 trp_i4_harad_spearman|Haradrimski Włócznik
 trp_i4_harad_spearman_pl|Haradrimskich Włóczników
 trp_i5_harad_tiger_guard|Gwardzista Tygrysa
@@ -486,8 +486,8 @@ trp_c2_harondor_scout|Zwiadowca z Harondoru
 trp_c2_harondor_scout_pl|Zwiadowców z Harondoru
 trp_c3_harondor_rider|Jeździec z Harondoru
 trp_c3_harondor_rider_pl|Jeźdźców z Harondoru
-; trp_c4_harondor_light_cavalry|Harondor Light Rider
-; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
+trp_c4_harondor_light_cavalry|Lekki Jeździec z Harondoru
+trp_c4_harondor_light_cavalry_pl|Lekkich Jeźdźców z Harondoru
 trp_c5_harondor_serpent_knight|Rycerz Złotego Węża
 trp_c5_harondor_serpent_knight_pl|Rycerz Złotego Węża
 trp_ac3_harondor_skirmisher|Harondor Skirmisher
@@ -522,20 +522,20 @@ trp_ac5_dun_raven_rider|Nocny Kruk z Dunlandu
 trp_ac5_dun_raven_rider_pl|Nocne Kruki z Dunlandu
 trp_i1_khand_bondsman|Khanadzki niewolnik
 trp_i1_khand_bondsman_pl|Khanadzdzy niewolnicy
-; trp_i2_khand_pit_dog|Khand Pit Dog
-; trp_i2_khand_pit_dog_pl|Khand Pit Dogs
+trp_i2_khand_pit_dog|Pies z Khandu
+trp_i2_khand_pit_dog_pl|Psy z Khandu
 trp_i3_khand_warrior|Khanadzki Wojownik
 trp_i3_khand_warrior_pl|Khanadzkich Wojowników
-; trp_i4_khand_vet_warrior|Khand Veteran Warrior
-; trp_i4_khand_vet_warrior_pl|Khand Veteran Warriors
-; trp_i5_khand_war_master|Variag War Master
-; trp_i5_khand_war_master_pl|Variag War Masters
+trp_i4_khand_vet_warrior|Doświadczony Wojownik z Khandu
+trp_i4_khand_vet_warrior_pl|Doświadczonych Wojowników z Khandu
+trp_i5_khand_war_master|Mistrz Wojny Variagów
+trp_i5_khand_war_master_pl|Mistrzów Wojny Variagów
 trp_c2_khand_pony_rider|Khanadzki Jeździec Kucy
 trp_c2_khand_pony_rider_pl|Khanadzkich Jeźdzców Kucy
 trp_c3_khand_horseman|Khanadzki Jeździec 
-; trp_c3_khand_horseman_pl|Khand Horsemen
-; trp_c4_khand_heavy_horseman|Khand Heavy Horseman
-; trp_c4_khand_heavy_horseman_pl|Khand Heavy Horsemen
+trp_c3_khand_horseman_pl|Konnych Jeźdźców z Khandu
+trp_c4_khand_heavy_horseman|Ciężki Konny Jeździec z Khandu
+trp_c4_khand_heavy_horseman_pl|Ciężkich Konnych Jeźdźców z Khadu
 ; trp_c5_khand_kataphrakt|Variag Ironclad
 ; trp_c5_khand_kataphrakt_pl|Variag Ironclads
 ; trp_c5_khand_lance_kataphrakt|Variag Lancer
@@ -1607,8 +1607,8 @@ trp_isen_troll_pl|Trolli z Isengardu
 ; trp_isen_vet_troll_pl|Isengard Trained Trolls
 ; trp_isen_armored_troll|Isengard Armored Troll
 ; trp_isen_armored_troll_pl|Isengard Armored Trolls
-; trp_mordor_troll|Mordor Troll
-; trp_mordor_troll_pl|Mordor Trolls
+trp_mordor_troll|Mordorski Troll
+trp_mordor_troll_pl|Mordorskie Trolle
 ; trp_mordor_vet_troll|Mordor Trained Troll
 ; trp_mordor_vet_troll_pl|Mordor Trained Trolls
 trp_mordor_olog_hai|Mordorskich Olog-Hai

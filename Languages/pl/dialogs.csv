@@ -672,7 +672,7 @@ dlga_castle_gate_open:close_window.4|Mój pan, {s2}, nie chce cię tu widzieć. 
 dlga_start:caravan_help1|Dziękuje za pomoc! Teraz jesteśmy bezpieczni. Mam na imię Torbal, i właśnie przewoziłem towary kiedy nagle zostaliśmy zaatakowani. ^^Widziałeś już kiedyś tak wielkich orków? Nie wyglądają na górskie, które dotychczas z łatwością odpędzaliśmy. I malunek na ich tarczach, starożytny znak Mordoru. Już dawno nie widziałem ich po tej stronie rzeki. Straszne rzeczy się dzieją... Wojna się zbliża! ^^Radzę Ci udać się do najbliższego miasta i powiadomić o wszystkim co tutaj zobaczyłeś. To jest bardzo ważne, dlatego proszę cię żebyś się pospieszył. 
 dlga_caravan_help1:caravan_help2|Nie, Nigdy wcześniej nie widziałem tak dużego orka. Obrzydlistwo... ^^Jestem Żołnierzem w nadchodzącej wojnie, wszyscy musimy być czujni.
 dlga_caravan_help2:caravan_help_tut|Jesteś? Oczywiście, że jesteś! Widziałem, że staniesz się wojownikiem. ^^ Jestem rzeczywiście szczęśliwy dzisiaj, więc będę musiał skorzystać z tego szczęścia i udam się do mojej wioski i ostrzec moich ludzi przed tymi plugawymi bestiami. ^^ Trzymaj, masz trochę lokalnej waluty używanej przez {s10}
-; dlga_caravan_help_tut:caravan_help3|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of {s11} are not the ones you earned in your own faction, but the ones you will earn in {s11}. ^^See REPORTS for more information.
+dlga_caravan_help_tut:caravan_help3|(SAMOUCZEK NA TEMAT PUNKTÓW ZAOPATRZENIA)^^ Punkty Zaopatrzenia które możesz użyć do handlu z mieszkańcami z {s11} nie są tymi które zdobywasz w swojej frakcji, ale tymi które zdobędziesz w {s11}. ^^Sprawdź RAPORTY aby otrzymać więcej informacji.
 dlga_caravan_help3:caravan_help4|Bezpiecznej podróży Torbal. Jestem pewny, że jeszcze się spotkamy.
 dlga_caravan_help4:caravan_help_fac_tut|Nie mogę się doczekać naszego kolejnego spotkania. Moi strażnicy widzieli jak walczysz i na pewno opowiedzą swojemu panu o Tobie. ^^Jeśli pomożesz ich ludziom wystarczająco, to na pewno staniesz się popularny wśród nich, co będzie skutkowało wieloma wspaniałymi rzeczami! ^^Ja jestem dobrze znany, i otrzymuje nawet miesięczny dochód za to wszystko co robię!
 dlga_caravan_help_fac_tut:caravan_help5|(SAMOUCZEK NA TEMAT RANG) ^^ Punkty Rangi pozwalają na awans w szeregach twojej frakcji (oraz innych). Zostaniesz automatycznie awansowany na wyższą rangę jak tylko zdobędziesz wymaganą ilość Punktów Rangi ^^Ranga decyduje o maksymalnej wielkości twojego oddziału oraz pozwala na otrzymanie specjalnych nagród od władcy frakcji. W zależności od tego jak wysoką masz rangę będziesz też otrzymywał dzienny żołd.
@@ -981,8 +981,8 @@ dlga_town_merchant_talk:trade_requested_weapons|Chcę zapytać o nowy ekwipunek.
 dlga_town_merchant_talk:trade_requested_horse|Myślę o zakupie konia.
 dlga_town_merchant_talk:player_upgrade_trolls_take|Chcę wzmocnić moje trolle!
 dlga_player_upgrade_trolls_take:close_window|Kim ty jesteś, żeby do mnie o to pytać? Pff! Wynoś się! (Musisz posiadać rangę {s24} lub wyższą)
-; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
-; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
+dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Przysłużyłeś się nam. W zamian otrzymasz od nas nieco żelastwa! ({reg21} resource points)
+dlga_player_upgrade_trolls_take:close_window.1|Twoje trolle są jak łkające dzieci. Daj im zaznać nieco krwistej kąpieli!
 dlga_player_upgrade_trolls_take:close_window.2|Nie robimy tu takich rzeczy.
 dlga_player_upgrade_trolls_take:close_window.3|Te trolle nawet nie potrafią mówić normalnie. Takich nam nie trzeba. Zabierz je tam, skąd przyszły.
 dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Nie ważne.

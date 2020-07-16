@@ -249,210 +249,210 @@ str_persuasion_summary_average|{s50} okazuje się mieć bystry umysł oraz talen
 str_persuasion_summary_good|Dzięki szybkiemu myśleniu i dobrej argumentacji, udało ci się świetnie przedstawić sprawę, a {s50} przyznaje ci rację w kilku przypadkach. Dalej jednak wyraża wątpliwości co twej prośby.
 str_persuasion_summary_very_good|Wygłaszasz namiętną przemowę, która w uszach wszystkich słuchających osób odbija się echem, niczym poezja. Cały świat zdał się na chwilę zamilknąć, by lepiej cię usłyszeć. {s50} wydaje się poruszon{reg51?a:y} twymi słowami i znacznie bardziej skłonn{reg51?a:y} ci pomóc.
 str_name_1|Adanedhel
-; str_name_2|Ondoher
-; str_name_3|Aerandir
-; str_name_4|Agarwaen
-; str_name_5|Ailinel
-; str_name_6|Aldarion
-; str_name_7|Almarian
-; str_name_8|Amandil
-; str_name_9|Amlaith
-; str_name_10|Anardil
-; str_name_11|Anborn
-; str_name_12|Andróg
+str_name_2|Ondoher
+str_name_3|Aerandir
+str_name_4|Agarwaen
+str_name_5|Ailinel
+str_name_6|Aldarion
+str_name_7|Almarian
+str_name_8|Amandil
+str_name_9|Amlaith
+str_name_10|Anardil
+str_name_11|Anborn
+str_name_12|Andróg
 str_name_13|Angbor
-; str_name_14|Arador
-; str_name_15|Araglas
-; str_name_16|Arahael
-; str_name_17|Arantar
-; str_name_18|Arassuil
-; str_name_19|Alcarin
-; str_name_20|Belegund
-; str_name_21|Bereg
-; str_name_22|Bergil
-; str_name_23|Borthand
-; str_name_24|Ceorl
-; str_name_25|Ciryon
-; str_name_26|Damrod
-; str_name_27|Derufin
-; str_name_28|Dorlas
-; str_name_29|Duilin
+str_name_14|Arador
+str_name_15|Araglas
+str_name_16|Arahael
+str_name_17|Arantar
+str_name_18|Arassuil
+str_name_19|Alcarin
+str_name_20|Belegund
+str_name_21|Bereg
+str_name_22|Bergil
+str_name_23|Borthand
+str_name_24|Ceorl
+str_name_25|Ciryon
+str_name_26|Damrod
+str_name_27|Derufin
+str_name_28|Dorlas
+str_name_29|Duilin
 str_name_30|Duinhir
-; str_name_31|Egalmoth
-; str_name_32|Emeldir
-; str_name_33|Eradan
-; str_name_34|Erellont
-; str_name_35|Erendis
-; str_name_36|Falathar
-; str_name_37|Fengel
-; str_name_38|Forweg
-; str_name_39|Frumgar
-; str_name_40|Fuinur
-; str_name_41|Galdor
-; str_name_42|Gethron
-; str_name_43|Gorlim
-; str_name_44|Grithnir
-; str_name_45|Gundor
-; str_name_46|Hador
-; str_name_47|Haldar
-; str_name_48|Hallacar
-; str_name_49|Hathol
-; str_name_50|Herion
-; str_name_51|Hild
-; str_name_52|Hunthor
-; str_name_53|Imlach
+str_name_31|Egalmoth
+str_name_32|Emeldir
+str_name_33|Eradan
+str_name_34|Erellont
+str_name_35|Erendis
+str_name_36|Falathar
+str_name_37|Fengel
+str_name_38|Forweg
+str_name_39|Frumgar
+str_name_40|Fuinur
+str_name_41|Galdor
+str_name_42|Gethron
+str_name_43|Gorlim
+str_name_44|Grithnir
+str_name_45|Gundor
+str_name_46|Hador
+str_name_47|Haldar
+str_name_48|Hallacar
+str_name_49|Hathol
+str_name_50|Herion
+str_name_51|Hild
+str_name_52|Hunthor
+str_name_53|Imlach
 str_name_54|Ioreth
-; str_name_55|Ivorwen
-; str_name_56|Labadal
-; str_name_57|Larnach
-; str_name_58|Magor
-; str_name_59|Mairen
-; str_name_60|Malach
-; str_name_61|Malantur
-; str_name_62|Malvegil
-; str_name_63|Mardil
-; str_name_64|Meneldur
-; str_name_65|Minalcar
-; str_name_66|Minohtar
-; str_name_67|Ondoher
-; str_name_68|Orleg
-; str_name_69|Orodreth
-; str_name_70|Ostoher
-; str_name_71|Pelendur
-; str_name_72|Ragnor
-; str_name_73|Sador
-; str_name_74|Súrion
-; str_name_75|Thorongil
-; str_name_76|Turambar
-; str_name_77|Ulfast
-; str_name_78|Ulwarth
-; str_name_79|Valacar
-; str_name_80|Wulf
-; str_name_elf_1|Merlkir
-; str_name_elf_2|Romanoir
-; str_name_elf_3|Aegnor
-; str_name_elf_4|Amdír
-; str_name_elf_5|Amras
-; str_name_elf_6|Annael
-; str_name_elf_7|Aredhel
-; str_name_elf_8|Arminas
-; str_name_elf_9|Caranthir
-; str_name_elf_10|Curufin
-; str_name_elf_11|Daeron
-; str_name_elf_12|Eluchíl
-; str_name_elf_13|Edrahil
-; str_name_elf_14|Eluréd
-; str_name_elf_15|Erestor
-; str_name_elf_16|Faelivrin
-; str_name_elf_17|Finrod
-; str_name_elf_18|Felagund
-; str_name_elf_19|Galathil
-; str_name_elf_20|Galdor
-; str_name_elf_21|Gelmir
-; str_name_elf_22|Gildor
-; str_name_elf_23|Guilin
-; str_name_elf_24|Ithilbor
-; str_name_elf_25|Lindir
-; str_name_elf_26|Lómion
-; str_name_elf_27|Maedhros
-; str_name_elf_28|Maeglin
-; str_name_elf_29|Malgalad
-; str_name_elf_30|Nellas
-; str_name_elf_31|Nerdanel
-; str_name_elf_32|Nerwen
-; str_name_elf_33|Nimloth
-; str_name_elf_34|Orodreth
-; str_name_elf_35|Oropher
+str_name_55|Ivorwen
+str_name_56|Labadal
+str_name_57|Larnach
+str_name_58|Magor
+str_name_59|Mairen
+str_name_60|Malach
+str_name_61|Malantur
+str_name_62|Malvegil
+str_name_63|Mardil
+str_name_64|Meneldur
+str_name_65|Minalcar
+str_name_66|Minohtar
+str_name_67|Ondoher
+str_name_68|Orleg
+str_name_69|Orodreth
+str_name_70|Ostoher
+str_name_71|Pelendur
+str_name_72|Ragnor
+str_name_73|Sador
+str_name_74|Súrion
+str_name_75|Thorongil
+str_name_76|Turambar
+str_name_77|Ulfast
+str_name_78|Ulwarth
+str_name_79|Valacar
+str_name_80|Wulf
+str_name_elf_1|Merlkir
+str_name_elf_2|Romanoir
+str_name_elf_3|Aegnor
+str_name_elf_4|Amdír
+str_name_elf_5|Amras
+str_name_elf_6|Annael
+str_name_elf_7|Aredhel
+str_name_elf_8|Arminas
+str_name_elf_9|Caranthir
+str_name_elf_10|Curufin
+str_name_elf_11|Daeron
+str_name_elf_12|Eluchíl
+str_name_elf_13|Edrahil
+str_name_elf_14|Eluréd
+str_name_elf_15|Erestor
+str_name_elf_16|Faelivrin
+str_name_elf_17|Finrod
+str_name_elf_18|Felagund
+str_name_elf_19|Galathil
+str_name_elf_20|Galdor
+str_name_elf_21|Gelmir
+str_name_elf_22|Gildor
+str_name_elf_23|Guilin
+str_name_elf_24|Ithilbor
+str_name_elf_25|Lindir
+str_name_elf_26|Lómion
+str_name_elf_27|Maedhros
+str_name_elf_28|Maeglin
+str_name_elf_29|Malgalad
+str_name_elf_30|Nellas
+str_name_elf_31|Nerdanel
+str_name_elf_32|Nerwen
+str_name_elf_33|Nimloth
+str_name_elf_34|Orodreth
+str_name_elf_35|Oropher
 str_name_elf_36|Orophin
-; str_name_elf_37|Saeros
-; str_name_dwarf_1|Assistnik
-; str_name_dwarf_2|Vader
-; str_name_dwarf_3|Azaghâl
-; str_name_dwarf_4|Bifur
-; str_name_dwarf_5|Bofur
-; str_name_dwarf_6|Bombur
-; str_name_dwarf_7|Borin
-; str_name_dwarf_8|Dori
-; str_name_dwarf_9|Dwalin
-; str_name_dwarf_10|Farin
-; str_name_dwarf_11|Frár
-; str_name_dwarf_12|Frerin
-; str_name_dwarf_13|Frór
-; str_name_dwarf_14|Gamil
-; str_name_dwarf_15|Gróin
-; str_name_dwarf_16|Grór
-; str_name_dwarf_17|Ibun
-; str_name_dwarf_18|Khîm
-; str_name_dwarf_19|Lóni
-; str_name_dwarf_20|Mîm
-; str_name_dwarf_21|Nár
-; str_name_dwarf_22|Narvi
-; str_name_dwarf_23|Nori
-; str_name_dwarf_24|Óin
-; str_name_dwarf_25|Ori
-; str_name_dwarf_26|Telchar
-; str_name_dwarf_27|Marco
-; str_name_dwarf_28|Octo
-; str_name_orc_1|Triglav
-; str_name_orc_2|Adgulg
-; str_name_orc_3|Aghed
-; str_name_orc_4|Aguk
-; str_name_orc_5|Alog
-; str_name_orc_6|Azhug
-; str_name_orc_7|Bagdud
-; str_name_orc_8|Bargulg
-; str_name_orc_9|Bog
-; str_name_orc_10|Borug
-; str_name_orc_11|Bulgan
-; str_name_orc_12|Bumhug
-; str_name_orc_13|Carguk
-; str_name_orc_14|Dalthu
-; str_name_orc_15|Derthag
-; str_name_orc_16|Dregu
-; str_name_orc_17|Dugarod
-; str_name_orc_18|Ertguth
-; str_name_orc_19|Fandagh
-; str_name_orc_20|Farghed
-; str_name_orc_21|Fozhug
-; str_name_orc_22|Furbog
-; str_name_orc_23|Gholug
-; str_name_orc_24|Gnalurg
-; str_name_orc_25|Grug
-; str_name_orc_26|Haguk
-; str_name_orc_27|Hoknuk
-; str_name_orc_28|Igmut
-; str_name_orc_29|Jolagh
-; str_name_orc_30|Jukha
-; str_name_orc_31|Karguk
-; str_name_orc_32|Klog
-; str_name_orc_33|Krothu
-; str_name_orc_34|Kulgha
-; str_name_orc_35|Margulg
-; str_name_orc_36|Mazhug
-; str_name_orc_37|Naghat
-; str_name_orc_38|Nugbu
-; str_name_orc_39|Nurbag
-; str_name_orc_40|Oggha
-; str_name_orc_41|Olodagh
-; str_name_orc_42|Omogulg
-; str_name_orc_43|Opoguk
-; str_name_orc_44|Orgoth
-; str_name_orc_45|Perthag
-; str_name_orc_46|Pofhug
-; str_name_orc_47|Prutha
-; str_name_orc_48|Raguk
-; str_name_orc_49|Romarod
-; str_name_orc_50|Rugbu
-; str_name_orc_51|Sargulg
-; str_name_orc_52|Slog
-; str_name_orc_53|Suhgan
-; str_name_orc_54|Surgha
-; str_name_orc_55|Torug
-; str_name_orc_56|Turbag
-; str_name_orc_57|Urghat
-; str_name_orc_58|Varguk
-; str_name_orc_59|Zlog
-; str_name_orc_60|Zunuguk
+str_name_elf_37|Saeros
+str_name_dwarf_1|Assistnik
+str_name_dwarf_2|Vader
+str_name_dwarf_3|Azaghâl
+str_name_dwarf_4|Bifur
+str_name_dwarf_5|Bofur
+str_name_dwarf_6|Bombur
+str_name_dwarf_7|Borin
+str_name_dwarf_8|Dori
+str_name_dwarf_9|Dwalin
+str_name_dwarf_10|Farin
+str_name_dwarf_11|Frár
+str_name_dwarf_12|Frerin
+str_name_dwarf_13|Frór
+str_name_dwarf_14|Gamil
+str_name_dwarf_15|Gróin
+str_name_dwarf_16|Grór
+str_name_dwarf_17|Ibun
+str_name_dwarf_18|Khîm
+str_name_dwarf_19|Lóni
+str_name_dwarf_20|Mîm
+str_name_dwarf_21|Nár
+str_name_dwarf_22|Narvi
+str_name_dwarf_23|Nori
+str_name_dwarf_24|Óin
+str_name_dwarf_25|Ori
+str_name_dwarf_26|Telchar
+str_name_dwarf_27|Marco
+str_name_dwarf_28|Octo
+str_name_orc_1|Triglav
+str_name_orc_2|Adgulg
+str_name_orc_3|Aghed
+str_name_orc_4|Aguk
+str_name_orc_5|Alog
+str_name_orc_6|Azhug
+str_name_orc_7|Bagdud
+str_name_orc_8|Bargulg
+str_name_orc_9|Bog
+str_name_orc_10|Borug
+str_name_orc_11|Bulgan
+str_name_orc_12|Bumhug
+str_name_orc_13|Carguk
+str_name_orc_14|Dalthu
+str_name_orc_15|Derthag
+str_name_orc_16|Dregu
+str_name_orc_17|Dugarod
+str_name_orc_18|Ertguth
+str_name_orc_19|Fandagh
+str_name_orc_20|Farghed
+str_name_orc_21|Fozhug
+str_name_orc_22|Furbog
+str_name_orc_23|Gholug
+str_name_orc_24|Gnalurg
+str_name_orc_25|Grug
+str_name_orc_26|Haguk
+str_name_orc_27|Hoknuk
+str_name_orc_28|Igmut
+str_name_orc_29|Jolagh
+str_name_orc_30|Jukha
+str_name_orc_31|Karguk
+str_name_orc_32|Klog
+str_name_orc_33|Krothu
+str_name_orc_34|Kulgha
+str_name_orc_35|Margulg
+str_name_orc_36|Mazhug
+str_name_orc_37|Naghat
+str_name_orc_38|Nugbu
+str_name_orc_39|Nurbag
+str_name_orc_40|Oggha
+str_name_orc_41|Olodagh
+str_name_orc_42|Omogulg
+str_name_orc_43|Opoguk
+str_name_orc_44|Orgoth
+str_name_orc_45|Perthag
+str_name_orc_46|Pofhug
+str_name_orc_47|Prutha
+str_name_orc_48|Raguk
+str_name_orc_49|Romarod
+str_name_orc_50|Rugbu
+str_name_orc_51|Sargulg
+str_name_orc_52|Slog
+str_name_orc_53|Suhgan
+str_name_orc_54|Surgha
+str_name_orc_55|Torug
+str_name_orc_56|Turbag
+str_name_orc_57|Urghat
+str_name_orc_58|Varguk
+str_name_orc_59|Zlog
+str_name_orc_60|Zunuguk
 str_surname_1|{s50} z Tarnost
 str_surname_2|{s50} z Lossarnach
 str_surname_3|{s50} z Erech
@@ -2253,8 +2253,8 @@ str_npc25_payment|Before I leave, I'll need {reg3} Resources to provide our King
 str_npc26_payment|Before we leave, I'll need {reg3} Resources to bribe the guards at the gate.
 str_npc27_payment|I'll join you for {reg3} Resources.
 str_npc18_payment_response|Nie ma wątpliwości. Ludzie Lurmsakun nie śmią mi odmówić. [koszt {reg14}/{reg15} Relacje]
-; str_npc19_payment_response|Chief Daeglaf will have to give way before my wish, once I make it plain. [costs {reg14}/{reg15} Influence]
-; str_npc20_payment_response|Indeed I have. Come now! It is not, after all, a lowly snaga you will follow. [costs {reg14}/{reg15} Influence]
+str_npc19_payment_response|Naczelnik Daeglaf będzie musiał ulec mojemu życzeniu, gdy tylko to wyjaśnię. [costs {reg14}/{reg15} Influence]
+str_npc20_payment_response|Oczywiście. Ruszajmy więc! W końcu jakby na to nie patrzeć, nie będziesz podążał za pokornym snagiem. [costs {reg14}/{reg15} Influence]
 str_npc21_payment_response|Everything for a noble cause. Here's {reg3} Resources.
 str_npc22_payment_response|I'll gladly help with {reg3} Resources.
 str_npc23_payment_response|Here's {reg3} Resources.
@@ -2431,42 +2431,42 @@ str_npc27_honorific|Mistrz
 ; str_beorn_guildmaster_companion_player_ask|Your advice, good fellow - are there any warriors of remarkable prowess here?
 ; str_beorn_guildmaster_companion_none|Well, I don’t know about that. Your question isn’t very clear. What kind of “remarkable prowess” do you want that you can’t find among our garrison, I ask you? We fight with stout staves and sharp hatchets, we shoot well enough with bows. I don’t know what more you could ask for.
 ; str_beorn_guildmaster_companion_player_none_ok|Well, then, I suppose I’d best be off. Good day to you, woodsman.
-; str_beorn_guildmaster_player_found_ok|I see. Well, I shall look around for this “Dimborn”. Good day to you, woodsman.
+str_beorn_guildmaster_player_found_ok|Już rozumiem. No cóż, w takim razie rozejrzę się za "Dimbornem". Miłego dnia, leśniku.
 ; str_beorn_house_guildmaster_companion|Well, now, there’s a question. I’d say any of us could fight off a goblin or warg well enough, but our chief’s nephew is stouter than most. Spends most of his time just staring at trees, though. Or at nothing in particular. More thew than thought, if you take my meaning. Still, he’s gentle with his friends but fierce to his enemies, as one should be. Walks the woods as well as any Elf, I’d say. We call him Dimborn; not to be unkind, you understand, but we like calling things and people what they are. He ought to be around here somewhere.
 ; str_woodelf_guildmaster_companion_player_ask|By leave of Thranduil Elvenking, I seek champions of the Greenwood to fight in my command, Elder.
 ; str_woodelf_guildmaster_companion_none|Indeed? Then you may ask those of our garrison, and mayhap some will be willing to follow you. But I sense your desire runs deeper than that. Do you fancy yourself a great hero, like those from Nargothrond or Gondolin of old? Our finest warriors are needed to guard against the growing shadow in Mirkwood. Take with you what soldiers we can spare, and be content.
-; str_woodelf_guildmaster_companion_player_none_ok|Very well, Elder. As you say.
+str_woodelf_guildmaster_companion_player_none_ok|Oczywiście, Starszy. Wszystko zostanie zrobione jak według twego rozkazu.
 ; str_woodelf_guildmaster_player_found_ok|I thank you for your counsel, Elder. Navaer!
 ; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit - she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands - you may speak with her. Harthon gerithach lend vaer!
-; str_dale_guildmaster_companion_player_ask|Good master, I seek stout warriors of prowess to fight beside me in this war.
+str_dale_guildmaster_companion_player_ask|Poszukuję krzepkich, walecznych wojowników gotowych na walkę.
 ; str_dale_guildmaster_companion_none|Well, now. Here in our town, we have always plied our trades and managed our affairs quietly, and not until recently have we had a great need for fighting men. I suppose you might ask at our barracks, and find what recruits you can from our garrison. I know of none among our captains here who would abandon his post to follow you.
 str_dale_guildmaster_companion_player_none_ok|Zrobie to, miłościwy panie. Bywaj.
 ; str_dale_guildmaster_player_found_ok|Oft the unbidden gift proves the best value. I will speak to Faniul. Farewell!
 ; str_dale_main_guildmaster_companion|Well, the King and his Lords have the best claim on the service of good captains. I don’t know that any of great renown are left to follow you - but are mere fighting men all you need? What about binders of wounds, versed in herblore? I know of one such - Faniul, personal healer to the King. She was midwife to my sister - and do not look askance at her age: she is of stout heart and sturdier than she looks. I warrant she’ll bear up well under the strains of travel. Why, I think I see her taking her ease over there, in this courtyard.
-; str_dwarf_guildmaster_companion_player_ask|Good master, there seem to be some valiant warriors here. Will any follow my company?
+str_dwarf_guildmaster_companion_player_ask|Wygląda na to, że jest tutaj kilku dzielnych wojowników. Czy któryś z nich może dołączyć do mojej drużyny?
 ; str_dwarf_guildmaster_companion_none|Well, you’re not wrong, there, about our skill in battle, but aren’t our lads from our garrison here good enough for you? Apart from them, I don’t know anyone else who might satisfy you - you talk as though you were a king of some sort, looking for a great champion, like in the old days. Valiant is as valiant does, say I!
 ; str_dwarf_guildmaster_companion_player_none_ok|You needn’t get so annoyed, good master, I was simply asking. Good day to you.
 str_dwarf_guildmaster_player_found_ok|Wspaniale to słyszeć mistrzu. Miłego dnia życzę!
 ; str_dwarf_erebor_guildmaster_companion|Oh ho! It’s warriors you’re after, are you? Then I have just the Dwarf for you: look for one Kili Goldfinger. A most excellent and audacious Dwarf he is, and a credit to his clan. Fights almost as well as a Longbeard, though he’s still fairly young as we reckon it. Quite good at story-telling, too, and he favours the cheerful sort of tale. Go and have a talk with him - I shouldn’t think he needs much persuading to follow you out into the wide world and do his bit for the war. Now, let me see… he’s not down here at the moment. Not the Great Chamber, either. The upper halls, perhaps - look for him there.
 str_rhun_guildmaster_companion_player_ask|Słyszałem, że znajdują się tu świetni wojownicy. Gdzie oni są? Kto jest godzien by do mnie dołączyć?
 ; str_rhun_guildmaster_companion_none|Not all our warriors here are blooded, but each of them is stronger and braver than any ten Dalishmen! Go and ask the arms master to see if he can spare any for you.
-; str_rhun_guildmaster_companion_player_none_ok|I ask for great warriors, and you show me drinkers of mother’s milk. Pah!
+str_rhun_guildmaster_companion_player_none_ok|Pytałem się o wielkich wojowników, a ty pokazujesz mi maminsynków. Żałosne!
 str_rhun_guildmaster_player_found_ok|Wspaniale to słyszeć. Nareszcie - wojownik z duchem walki!
 ; str_rhun_maincamp_guildmaster_companion|Our greatest swordbearers and riders fight in the retinues of our warlords. But there is one who has found favour with none of our chiefs so far. Not because he is weak; far from it! He does not curb his tongue when he speaks, and he has spoken loudly against our chieftains, saying they are slow to act and over-cautious. If he had his way, I wager the countryside would be covered in flames by now. His name is Varfang, and he spends his hours training near the prisoner cages, not far from this tent.
-; str_guldur_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
+str_guldur_guildmaster_companion_player_ask|Jedyne co tutaj widzę to zbiorowisko zdradliwego motłochu, bardziej skorego do ucieczki niż walki. Gdzie twoi prawdziwi wojownicy?
 ; str_guldur_guildmaster_companion_none|O ho! What do we have here? A great captain, are you? I reckon your bark’s worse than your bite, and no mistake. Orders are orders: you draw your troops from our garrison here, and that’s that. Keep talking like that where they’ve got ears to hear, though, and someone will stick a knife in your back one of these days, see if they don’t.
-; str_guldur_guildmaster_companion_player_none_ok|You’ll watch your words with me, if you know what’s good for you.
+str_guldur_guildmaster_companion_player_none_ok|Lepiej, żebyś uważał przy mnie na słowa, jeśli wiesz co dla ciebie dobre.
 ; str_guldur_guildmaster_player_found_ok|Scared witless by this woman, are you? I’ll go see if she’s all you make her out to be. This had better not be a waste of my time!
 ; str_guldur_main_guildmaster_companion|We’ve got stout lads aplenty, curse you. Ha… I know what you’re really after. Oh yes, indeed, I know just where you should go, Commander. See that cave over there, with steps leading down? If our boys get hurt badly enough we send them down there, and I reckon almost a third of them make it back up, har! They can do very strange things, down there… and that one in particular, the woman… she gives me the shivers, and that’s saying something. They say she’s got something to do with Number One, or even Higher Up, if you take my meaning. Talk to her, if you dare.
-; str_moria_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
+str_moria_guildmaster_companion_player_ask|Jedyne co tutaj widzę to zbiorowisko zdradliwego motłochu, bardziej skorego do ucieczki niż walki. Gdzie twoi prawdziwi wojownicy?
 ; str_moria_guildmaster_companion_none|Proper warriors, {she/he} says! I reckon any of our snaga could give any of your lubbers a good drubbing. We’re a tough lot, we are, and no mistake. Go speak to our barracks master - but speak with respect, mind, or you’ll not get our stout fellows to follow you. Knife you as soon as your back is turned, if you don’t speak proper.
-; str_moria_guildmaster_companion_player_none_ok|I’ll speak how I like to the lot of you. I save my respect for those much Higher Up than your sort!
+str_moria_guildmaster_companion_player_none_ok|Będę z wami rozmawiał tak jak mi się podoba. Zachowuję swój respekt dla tych o wiele ważniejszych od takich jak ty!
 ; str_moria_guildmaster_player_found_ok|Garn! A sawbones, you say? Among this lot? All right, I’ll have a talk with him, but you’d better hope you aren’t telling me a crock of rubbish.
 ; str_moria_main_guildmaster_companion|Ha! Losing more than you can keep, are you? Throwing our stout lads into the meat grinder, and then cursing when you find you haven’t got enough left to win your battles? A right splendid commander you are, oh yes. Very well - look over there! I’ll give you a helpful hint now, and you’ll remember it, yes? You see that fellow on the crates, the one with blood all over his hands, muttering to himself? Not much of a killer, but where’s the blood from, I hear you ask? Why, it’s the blood from some of our fighters he’s helped put back on their feet. He’s a sawbones, that one. You’ll see for yourself, the next time you lead your troops into another mess and find you need some stitching done.
 str_isengard_guildmaster_companion_player_ask|Słyszałem o walecznych Uruk-hai. Jak narazie mi nie zaimponowali. Gdzie są najlepsi z nich ?
 ; str_isengard_guildmaster_companion_none|Leading patrols and armies of their own, no doubt - why would they lower themselves to fight under your command? They’ve got their own Orders to follow, from Higher Up. If you want fighting lads, go talk to the garrison chief! We’ve got stout fellows aplenty.
 ; str_isengard_guildmaster_companion_player_none_ok|This rabble isn’t what you make it out to be. Stout fellows? Fighting lads? Snagas aplenty, more like. Slavering swine.
-; str_isengard_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!
+str_isengard_guildmaster_player_found_ok|Jeżeli umie zabijać, to zabieram go ze sobą. Jeśli nie, wypatroszę go jak rybę. I jeżeli okaże się być kolejnym nic nie wartym robalem, wrócę tutaj i zapłacisz za marnowanie mojego czasu!
 ; str_isengard_main_guildmaster_companion|A great commander you are, it is plain to see, and wisely do you choose to take only the bravest and most skilled fighters under your banner. And yet, if you will take my counsel - a battle is won not merely with iron and sinew, Commander, but with guile and foreknowledge of the foeman’s doings, his comings and goings. We have a scoutmaster here, an Orc who has sworn allegiance to Saruman the Great. I have heard that he spent many years in the Misty Mountains, catching and taming wargs. A skilled tracker and hunter is Durgash. You will find him a most useful helper, Commander. He's usually lurking around the warg pits.
 ; str_isengard_hunting_camp_guildmaster_companion|O ho! So you think our finest lads should humble themselves and take orders from you, do you? You’re a bold one, and no mistake. I know just the fellow for you. Calls himself Gulm, and he’s a proper fierce one, he is. Never seen anyone take so much pleasure in bashing in skulls and breaking bones with that mallet of his. And the more foes he kills, the more savage he seems to get. I don’t rightly know where he is at the moment, though - but he’s in this camp for sure, trying not to attract attention for some reason. Does that sound suitable for you, O Great Commander, taking an Uruk-hai berserker into your camp?
 ; str_dunland_guildmaster_companion_player_ask|So, these are the Men of the hills who serve the White Hand! A sorry-looking lot. Where are your fighters of note?
@@ -2476,23 +2476,23 @@ str_isengard_guildmaster_companion_player_ask|Słyszałem o walecznych Uruk-hai.
 ; str_dunland_main_guildmaster_companion|Despise us at your peril! Even a wretched cur will snap at your heels in a fight. We will have our vengeance on the Forgoil and their allies - and likely it will be Heidrek whom we’ll follow into Edoras. He’s a mongrel, that one - says he’s the grandson of a strawhead king, for all that he looks no different from any of us. He’s a terror in the training yard. If Chief Daeglaf doesn’t watch his back he just might find Heidrek’s spear in it one of these days. Maybe he’ll deign to follow you, if he thinks you’re worth his time. Look for him at the main campfire, where our chieftains stand.
 str_khand_guildmaster_companion_player_ask|Słyszałem, że znajdują się tu świetni wojownicy. Gdzie oni są? Kto jest godzien by do mnie dołączyć?
 ; str_khand_guildmaster_companion_none|Those who have earned their death masks wish to follow commanders of still greater renown, but you may look for new recruits among our pitfighters and levies. Do not presume more than your station, Commander! 
-; str_khand_guildmaster_companion_player_none_ok|I ask for warriors and you show me pit slaves and unblooded peasants. Waste my time at your peril.
-; str_khand_guildmaster_player_found_ok|She sounds like a killer, right enough - but can her ferocity be leashed to useful purpose? We shall have to see.
+str_khand_guildmaster_companion_player_none_ok|Pytam o wojowników, a ty pokazujesz mi nędznych niewolników i nieobeznanych z wojną wieśniaków. Zmarnuj więcej mojego czasu, a nie gwarantuję że nie stanie ci się krzywda.
+str_khand_guildmaster_player_found_ok|Brzmi jak prawdziwy zabójca, czy jednak jej okrucieństwo da się przerodzić w cokolwiek pożytecznego? Będziemy musieli się przekonać.
 ; str_khand_main_guildmaster_companion|So you want great warriors? We have them aplenty. But let me tell you of one whose savagery even we find astonishing. Her name is Turmbathu - yes, a woman! I would not have believed it myself had I not seen her in the fighting pit with my own eyes. Defeated three men at once, and killed one of them. Unfortunate, that - the one she killed was a son of Great Lord Lurmsakun, and so now you may find her among the prisoners, awaiting a painful death… unless you, Commander, can intercede. Such a pity, to waste such strength.
 ; str_umbar_guildmaster_companion_player_ask|So, the people here fancy themselves heirs of greatness, do they? Can anyone here stand proof of such claims?
 ; str_umbar_guildmaster_companion_none|You come at the wrong time, Commander. Now we’re all basking in the glory of capturing this holding, and working out the equitable distribution of its wealth - to put it another way, the captains are all at one another’s throats, heated words are being said, and it will not be long ere blood of Umbar is spilled by Umbar hands. Some of the sailors are unhappy, and may consent to follow you instead of their former captains. That’s the best I can do for you at the moment, Commander.
-; str_umbar_guildmaster_companion_player_none_ok|Disappointing. But not unexpected of sea-dogs. I shall have to look elsewhere for the quality I seek.
-; str_umbar_guildmaster_player_found_ok|A corsair with a code of honour! Not unheard of, but not often found. I care only that he will go where I command, and kill as I instruct.
+str_umbar_guildmaster_companion_player_none_ok|Zawodzące. Ale nie aż tak niespodziewane, jeżeli chodzi o morskie psy. Będę musiał szukać głębiej by odnaleźć jakość której szukam.
+str_umbar_guildmaster_player_found_ok|Korsarz z kodeksem honoru! Niespotykane. Jedyne czego oczekuję to to, że ruszy gdzie mu rozkażę, i zabije tak jak mu powiem.
 ; str_umbar_main_guildmaster_companion|Why, if I guess aright you seek the finest fighters among us to join your ranks. After the recent burning of our Haven, I’m afraid our best sailors and raiders follow only our most experienced captains. But I have a friend, named Fuldimir, who has been passed over for promotion too many times, to my mind. It’s that strange way of thinking he has - he will not steal, he says, from any who still draw breath. Where’s the sense in that, I ask you? Still, he is handy with a cutlass, and as tough as any hardy seafarer. Here he is, in this tent - you may speak with him.
 ; str_mordor_guildmaster_companion_player_ask|So, these are the finest in the Black Land, are they? Not much to look at. Tell me who’s actually useful in a scrap.
 ; str_mordor_guildmaster_companion_none|O ho, a mighty champion is here, I see! And of course, the mighty champion wants only the very best fighters, and no mistake! Well, well! Maybe you’ll find that some of the lads here have plans of their own, to rise high in the sight of the Eye. Maybe you’ll find Lugbúrz thinks a little better of them than of you. Won’t surprise me, ha! Why don’t you just go along to the barracks and requisition your troops like everyone else.
 ; str_mordor_guildmaster_companion_player_none_ok|Oh, I’ll remember this slight, mark my words. Do me a good turn, and I’ll not forget it, but speak uncivilly to me, and you’ll soon see what I can do about that.
-; str_mordor_guildmaster_player_found_ok|Well, I’ve struck a bit of luck at last, I see! You’ve done well. I’ll report your contribution.
+str_mordor_guildmaster_player_found_ok|Na reszcie zdarzyło się coś dobrego! Dobrze się spisałeś. Przekażę im o twoim wkładzie.
 ; str_mordor_morgul_guildmaster_companion|You’ll want an Uruk for that, mark my words. The best fighters for sure in this sorry-looking lot. Now, if you’re looking for a trusty lad to watch your back in a fight, I’ll tell you straight: you’ll not find better than old Gorbag. Used to be a comrade of mine, before I got assigned here, a while after the Great Signal went up. Now that he’s off the patrol lists, he could join up with you right enough. He ought to be up there somewhere, by that big ruined Tower where the Bosses meet to talk sometimes. Looking down at the rest of these dunghill rats - he likes to do that, he does, ha!
 str_harad_guildmaster_companion_player_ask|Słyszałem, że znajdują się tu świetni wojownicy. Gdzie oni są? Kto jest godzien by do mnie dołączyć?
 ; str_harad_guildmaster_companion_none|It is not accordant to our creed for our greatest to join with such as thee, O Commander. In the world, there are the great and the small; for soldiers such as ourselves, always we stand in this relation to one another. I counsel you to seek out those who could learn from you in battle; it is better not to try yoking a mighty stallion to a weakly-made plow, for the stallion would then destroy the plow, to the detriment of all.
-; str_harad_guildmaster_companion_player_none_ok|If I understand you correctly, you’ve just disrespected me. I’ll remember this.
-; str_harad_guildmaster_player_found_ok|I see. I hope this Lykyada is as great a warrior as you say he is.
+str_harad_guildmaster_companion_player_none_ok|Jeśli dobrze cię rozumiem, właśnie okazałeś wobec mnie brak szacunku. Zapamiętam to sobie.
+str_harad_guildmaster_player_found_ok|Rozumiem. Mam nadzieję, że Lykyada jest tak dobrym jak twierdzisz.
 ; str_harad_main_guildmaster_companion| I heard a story around the fires: when the Black Serpent called his bannermen, who are some of our finest horse archers, many boasted of how all the treasures of the West would soon be theirs; but one whom we call Lykyada stood apart and remained silent. And when they asked him what he hoped to take from the West, he stooped, scooped up a handful of sand, and said, “What do I require that the land of my birth has not already given me? Behold, I make a gift to them of the sand on which I have stood.” And so saying, he let the wind from the east blow the sand away, into the west. Then all who heard this repented of their injudicious words, and swore to follow his lead. If he finds you worthy, Commander, he may follow yours. Look for him where he stands in attendance upon our chieftains.
 ; str_rohan_hornburg_guildmaster_companion|All here at the Hornburg have their given duties, Commander - all save one, I should say. Maybe that one will ride out with you, for otherwise he should be lucky if another Éored will consent to have him! A drunken sot is our Ulfas - good cheer he brings to his comrades, and he is a skilled Rider, but loth is he to set down a tankard without first draining it! Look for him in the hall yonder, if that does not trouble you.
 ; str_imladris_guildmaster_companion_player_ask|Elder, I seek the aid of renowned warriors, Man or Elf, from the fabled North.

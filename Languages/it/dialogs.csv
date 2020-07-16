@@ -299,7 +299,7 @@ dlga_lord_report_to_army_asked:lord_report_to_army_completed|Ho un esercito di s
 dlga_lord_report_to_army_asked:lord_report_to_army_continue|Non ho un numero sufficiente di truppe ancora. Avrò bisogno di più tempo.
 dlga_lord_report_to_army_completed:close_window|Eccellente. Ti manderò a chiamare quando avrò qualche missione per te. {s3}
 dlga_lord_report_to_army_continue:close_window|Faresti meglio a sbrigarti. Presto muoveremo contro il nemico e avrò bisogno di ogni uomo disponibile.
-dlga_lord_start:lord_mission_told_scout_waypoints|{playername}, mi servono dei volontari per esplorare l'area. Siamo a corto d'informazioni, e  devo soltanto avere un quadro migliore della situazione prima di procedere. Voglio che tu vada a {s13}, {s14} e {s15} e che tu faccia rapporto di tutto quello che trovi.
+dlga_lord_start:lord_mission_told_scout_waypoints|{playername}, mi servono dei volontari per esplorare l'area. Siamo a corto d'informazioni e  devo semplicemente avere un quadro migliore della situazione prima di procedere. Voglio che tu vada a {s13}, {s14} e {s15} , facendo poi rapporto su tutto ciò che hai scoperto.
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepted|Hai trovato il tuo volontario, sire.
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_rejected|Mi spiace ma devo rifiutare.
 dlga_lord_mission_told_scout_waypoints_accepted:close_window|Bene ! Passa semplicemente vicino a {s13}, {s14} e {s15} e controlla cosa c'è da quelle parti. Prendi nota di tutto ciò che trovi e ritorna da me il prima possibile.
@@ -360,15 +360,15 @@ dlga_ring_hunters_start:ring_hunters_check|{playername}, hai compiuto grandi ges
 dlga_ring_hunters_check:ring_hunters_1|Si, mio signore. Ho un gruppo di uomini ben addestrati, temprati per la battaglia. Siamo pronti a tutto.
 dlga_ring_hunters_check:ring_hunters_check_failed|Temo di no, mio signore.
 dlga_ring_hunters_check_failed:lord_pretalk|Vedo che non è il momento per te di assumerti un simile incarico, {playername}. Va e raccogli più truppe.
-dlga_ring_hunters_1:ring_hunters_2|Eccellente. Il Nord è stato recentemente tormentato da predatori, fanno incursioni in villaggi e agguati ai viaggiatori alla ricerca di anelli di ogni sorta. Devi dare la caccia a questi nemici e porre fine alla loro ricerca. I sopravvissuti del loro ultimo saccheggio hanno segnalato due gruppi. Il primo sta tornando con il bottino al loro accampamento nei pressi di Bosco Atro. L'altro avanza verso la Casa di Beorn in gran numero, e temo ciò che potrebbe accadere se saranno lasciati senza che qualcuno li contrasti.
+dlga_ring_hunters_1:ring_hunters_2|Eccellente. Il Nord è stato recentemente tormentato da una banda di fuorilegge saccheggiatori che fa incursioni nei villaggi e agguati ai viaggiatori alla ricerca di anelli di ogni sorta. Devi dare la caccia a questi banditi e porre fine alla loro ricerca. I sopravvissuti del loro ultimo saccheggio hanno segnalato due gruppi. Il primo sta tornando con il bottino al loro accampamento nei pressi di Bosco Atro. L'altro avanza verso la Casa di Beorn in gran numero e temo ciò che potrebbe accadere, se qualcuno non lo fermerà.
 dlga_ring_hunters_2:ring_hunters_what|Mio signore, di cosa potrebbero essere alla ricerca ?
 dlga_ring_hunters_2:ring_hunters_accept|Mio signore, farò tutto il necessario per fermare questi.. 'Cacciatori dell'Anello'
 dlga_ring_hunters_2:ring_hunters_reject|Non sono ancora pronto per un simile incarico.
-dlga_ring_hunters_accept:close_window|Col coraggio nel vostro cuore e acciaio affilato nelle vostre mani, ne sarai in grado, {playername}. Attenderemo notizie in merito al tuo successo.
+dlga_ring_hunters_accept:close_window|Col coraggio nel tuo cuore e l'acciaio affilato nelle tue mani ne sarai in grado {playername}. Attenderemo notizie in merito al tuo successo.
 dlga_ring_hunters_reject:lord_pretalk|Vedo. Fammi sapere quando lo sarai, ma fa in fretta, non vogliamo che abbiano successo.
 dlga_ring_hunters_what:ring_hunters_2|I disegni del nemico ci sono nascosti, ma possiamo vedere che questi emissari sono decisi a trovare ciò che stanno cercando. Non posso rivelare tutto quello che sappiamo, poiché mantenere l'equilibrio e la segretezza è cosa della massima importanza. Qualsiasi cosa stiano cercando dev'essere un'arma potente, per causare grande distruzione nel nome dell'Oscuro Signore.
 dlga_ring_hunters_what:ring_hunters_2.1|L'Oscuro Signore in precedenza inviò emissari a diversi clan nanici, facendo domande circa gli anelli del potere donati al nostro popolo. Questi potrebbero cercare quegli anelli, o altri simili... Quale che sia la natura di questi anelli, non devono cadere nelle mani dell'Oscuro Signore.
-dlga_lord_talk:ring_hunter_party_defeated|Mio signore, giungo portando amare notizie... Benché abbia sconfitto i Cacciatori dell'Anello che terrorizzavano i villaggi, i loro capi non c'erano. Potrebbero aver trovato ciò che stavano cercando
+dlga_lord_talk:ring_hunter_party_defeated|Mio signore, giungo portando amare notizie... Benché abbia sconfitto i Cacciatori dell'Anello che terrorizzavano i villaggi, i loro capi non c'erano. Potrebbero aver trovato ciò che stavano cercando.
 dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|Non si tratta di cattive notizie, {playername}. Abbiamo udito della tua grande vittoria ! Le vite in quei villaggi sono più imporanti per la nostra causa di qualsiasi arma. Mentre parliamo, i Beorniani stanno ammassando le loro forze, rinvigoriti dalla tua vittoria. Oltre a questo, non crediamo che questi Cacciatori dell'Anello abbiano trovato quello che stavano cercando. Se si trattava dell'arma che temevamo, avremmo percepito qualcosa.. una perturbazione.
 dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|Ne sono felice, allora. Qualsiasi cosa sia quest'arma.. potrebbero essere ancora alla sua ricerca. Continuerò a vigilare e a cercare questi Cacciatori dell'Anello.
 dlga_ring_hunter_quest_end:close_window|Tutti lo desideriamo. Grazie ancora una volta per i tuoi servigi, {playername}.
@@ -450,7 +450,7 @@ dlga_lord_talk_ask_location:lord_talk_ask_location_2|Molto bene, potrei avere o 
 dlga_lord_talk_ask_location_2:lord_pretalk|Niente, ti chiedo scusa.
 dlga_lord_talk_ask_about_war_2:lord_talk_ask_about_war_details|Dimmi di più a proposito della guerra con {s1}.
 dlga_lord_talk_ask_about_war_2:lord_pretalk|È tutto quello che volevo sapere. Grazie.
-dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Noi siamo {s22} e loro sono {s23}. Complessivamente, {s9}.
+dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Il nostro livello è {s22} mentre il loro è {s23}. Complessivamente, {s9}.
 dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|Oggi è un buon giorno per combattere, {s4} !
 dlga_lord_tell_objective:lord_pretalk|Che sto facendo ? Cosa ti sembra stia facendo !? Sono un prigioniero !
 dlga_lord_tell_objective:lord_pretalk.1|Non sto comandando nessun uomo per ora.
@@ -501,7 +501,7 @@ dlga_lord_active_mission_2:lord_generic_mission_thank.2|Certo. Ho esplorato {s13
 dlga_lord_active_mission_2:lord_generic_mission_thank.3|Certo. Ho inviato gli esploratori.
 dlga_lord_active_mission_2:lord_generic_mission_thank.4|Infatti. Ho sconfitto abbastanza plotoni nemici.
 dlga_lord_active_mission_2:capture_enemy_hero_thank|Oh, sicuro. Ho catturato un comandante nemico per te.
-dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|Hai i miei ringraziamenti, amico mio. Sarà perfetto per l'interrogatorio. Hai fatto un buon lavoro.
+dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|Hai i miei ringraziamenti, amico mio. Sarà perfetto per l'interrogatorio. Hai fatto proprio un buon lavoro.
 dlga_capture_enemy_hero_thank_2:lord_pretalk|Certamente, {s65}.
 dlga_capture_enemy_hero_thank_2:lord_pretalk.1|Niente di che..
 dlga_lord_active_mission_2:lord_raise_troops_thank|Certamente. Ho addestrato {reg1} {s13}. Puoi prenderli.
@@ -590,10 +590,10 @@ dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|Lo far
 dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_rejected|No, questo genere di cose non fa per me.
 dlga_lord_tell_mission_follow_spy_accepted:close_window|Bene, sono certo che farai un buon lavoro. Uno dei miei uomini ti segnalerà la spia quando partirà, così che tu possa sapere chi dovrai seguire. Ricorda, li voglio entrambi e li voglio vivi.
 dlga_lord_tell_mission_follow_spy_rejected:lord_pretalk|È una vergogna. Beh, continua da dove hai interrrotto, {playername}...
-dlga_lord_tell_mission:lord_tell_mission_capture_enemy_hero|C'è un difficile lavoro che dev'essere fatto, {playername}, e tu potresti essere colui che potrebbe portarlo a termine. Ho bisogno di qualcuno che catturi un comandante nemico e lo porti da me. Successivamente, avrò modo d'interrogarlo in merito ai piani di battaglia. È un lavoro abbastanza semplice, ma chiunque tenterai di catturare sarà certamente protetto da un gruppo di guardia personale. Sei pronto a combattere ?
+dlga_lord_tell_mission:lord_tell_mission_capture_enemy_hero|C'è un difficile lavoro che dev'essere fatto, {playername}, e tu potresti essere colui che potrebbe portarlo a termine. Ho bisogno di qualcuno che catturi un comandante nemico e lo porti da me. Successivamente, avrò modo d'interrogarlo in merito ai piani di battaglia. È un lavoro abbastanza semplice, ma chiunque tenterai di catturare sarà certamente protetto da una scorta personale d'élite. Sei pronto a combattere ?
 dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_accepted|Consideralo fatto, {s65}.
 dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_rejected|Debbo rifiutare, {s65}. Non voglio trovarmi vicino a nessuno di loro.
-dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|Mi piace il tuo spirito ! Va e portami uno dei nostri nemici, e brinderò al tuo nome nella mia sala quando farai ritorno ! E ricompenserò il tuo impegno, naturalmente..
+dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|Mi piace il tuo spirito ! Va e portami uno dei nostri nemici, così brinderò al tuo nome nella mia sala quando farai ritorno ! Naturalmente, i tuoi sforzi saranno ricompensati...
 dlga_lord_tell_mission_capture_enemy_hero_rejected:lord_pretalk|Chiaramente non possiedi il coraggio che ritenevo avessi. Molto bene, {playername}, troverò qualcun altro.
 dlga_lord_tell_mission:lord_tell_mission_lend_companion|Non ho un incarico per te adesso, ma un componente del tuo esercito, {s3}, mostra di essere abile come {reg3?ragazza:ragazzo} e ho bisogno di {reg3?qualcuno:qualcuno} dotato di queste capacità. Potresti concedermi i {reg3?suoi:suoi} servigi per un periodo ?
 dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|Per quanto tempo avrai bisogno di {reg3?lei:lui} ?

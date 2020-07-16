@@ -510,9 +510,9 @@ str_rob_caravan|deruba una carovana mercantile
 str_sell_slavery|vendi persone in schiavitù
 str_men_hungry|rimanere senza cibo
 str_men_unpaid|non si possa pagare questa persona
-str_excessive_casualties|sacrificare tanti nostri soldati
+str_excessive_casualties|Sacrificare tanti nostri soldati
 str_surrender|arrendersi al nemico
-str_flee_battle|costretti a fuggire dalla battaglia
+str_flee_battle|fuggire dalla battaglia
 str_pay_bandits|paga i comuni banditi
 str_fail_quest|si fallisca in una missione nella quale ci siamo impegnati dando la nostra parola d'onore
 str_squander_money|sperpera i denari datici con fiducia
@@ -797,7 +797,7 @@ str_npc3_morality_speech|Comandante, noi Eorlingas non siamo mai stati {s21}. I 
 str_npc4_morality_speech|Non prestare attenzione a ciò che dicono i soldati, alle volte {s21} è la più saggia linea d'azione. Anche io apprezzo le vite risparmiate e le ferite evitate, ma solo per poter combattere un altro giorno, quando il fato volgerà a nostro favore.
 str_npc5_morality_speech|Devi riconsiderare le tue azioni, comandante. {s21} non ci rende più onorevoli dei nostri nemici e riduce la fiducia dei nostri alleati.
 str_npc7_morality_speech|Non ho gradito la tua decisione di {s21}. Cadere in battaglia è un onore per ogni nano con la testa sulle spalle, ma combattere in una compagnia guidata da un codardo è una vera disgrazia. Cosa diranno i miei cugini, se dovessero venirlo a sapere ?
-str_npc8_morality_speech|Comandante, devo obiettare. {s21} è crudele e inutile per gli uomini. Faccio quello che posso per alleviare le loro sofferenze, ma ti prego di non fare altri dispendiosi errori.
+str_npc8_morality_speech|Comandante, devo obiettare. {s21} lo trovo inutilmente crudele. Faccio quello che posso per alleviare le loro sofferenze, ma ti prego di non fare altri dispendiosi errori.
 str_npc9_morality_speech|Gli Uruk-Hai combattenti decidono mai di {s21}. Se il capo mostra poco coraggio, potrebbe trovarsi solo nel cuore della notte. Gulm ha parlato.
 str_npc15_morality_speech|Puoi pensare che Bolzog il Grande può curare tutto, {playername}, ma anche io ho i miei limiti ! Se continui a {s21} anche il mio talento avrà difficoltà ! Devi darmi una mano ! Non posso far risorgere i morti, se muoiono o vengono fatti a pezzi !
 str_npc1_2ary_morality_speech|Comandante, sono stato creciuto come Dúnadan, sia nel valore che nell'onore. Preferirei che noi non {s21}.
@@ -894,7 +894,7 @@ str_npc3_personalitymatch_speech_b|Comandante, come favore personale, posso chie
 str_npc4_personalitymatch_speech_b|Salvare vite è l'atto più nobile che ci sia, e mi sento affine a quell'anima gentile, benché i nostri mondi siano distanti tra loro.
 str_npc5_personalitymatch_speech_b|Mi piace {s11}.
 str_npc6_personalitymatch_speech_b|Pensavo a quanto fosse vecchio.  Forse una dozzina di secoli più di me ? Non importa, tu non capiresti.
-str_npc7_personalitymatch_speech_b|{s11} e la sua Dale-kin, anche se non sono allo stesso livello dei guerrieri nani, hanno mostrato d'essere validi alleati in questa guerra. Una buona scelta sia come amico che come alleato, fra gli uomini, se posso dirlo.
+str_npc7_personalitymatch_speech_b|{s11} e i combattenti di Dale, sebbene non possano essere considerati allo stesso livello dei guerrieri nani, stanno dimostrando di essere un valido aiuto in questa guerra. Se posso permettermi, credo che siano, fra gli umani, una buona scelta sia come amici che come alleati.
 str_npc8_personalitymatch_speech_b|Come amici e protettori, la gente di Dale ha una profonda considerazione per il popolo dei Nani che vive nella Montagna Solitaria, nonostante la differenza di razza, gli usi e i costumi.
 str_npc9_personalitymatch_speech_b|Mi piace {s11}.
 str_npc10_personalitymatch_speech_b|Mi piace {s11}.
@@ -1302,7 +1302,7 @@ str_faction_strength_crushed|Schiacciato
 str_faction_strength_spent_and_wavering|Esaurito e vacillante
 str_faction_strength_weakened|Indebolito
 str_faction_strength_fair|Discreto
-str_faction_strength_average|Medi
+str_faction_strength_average|Medio
 str_faction_strength_strong|Forte
 str_faction_strength_quite_strong|Piuttosto forte
 str_faction_strength_very_strong|Molto forte
@@ -1631,7 +1631,7 @@ str_dwarf_rank_2|Nano Guerriero
 str_dwarf_rank_3|Nano Lungobarba
 str_dwarf_rank_4|Ascia Nanica
 str_dwarf_rank_5|Grande Ascia Nanica
-str_dwarf_rank_6|Nani Barbagrigia
+str_dwarf_rank_6|Nano Barbagrigia
 str_dwarf_rank_7|Capitano Nanico
 str_dwarf_rank_8|Nano Capo
 str_dwarf_rank_9|Eroe delle sale
@@ -2269,7 +2269,7 @@ str_npc21_morality_speech|Non prestare attenzione a ciò che dicono i soldati, a
 str_npc22_morality_speech|Devi riconsiderare le tue azioni, comandante. {s21} non ci rende più onorevoli dei nostri nemici e riduce la fiducia dei nostri alleati.
 str_npc23_morality_speech|[Nessun codice morale primario]
 str_npc24_morality_speech|Non ho gradito la tua decisione di {s21}. Cadere in battaglia è un onore per ogni nano con la testa sulle spalle, ma combattere in una compagnia guidata da un codardo è una vera disgrazia. Cosa diranno i miei cugini, se dovessero venirlo a sapere ?
-str_npc25_morality_speech|Comandante, devo obiettare. {s21} è inutilmente crudele verso gli uomini. Faccio quello che posso per alleviare le loro sofferenze, ma ti prego di non fare altri dispendiosi errori.
+str_npc25_morality_speech|Comandante, devo obiettare. {s21} lo trovo inutilmente crudele. Faccio quello che posso per alleviare le loro sofferenze, ma ti prego di non fare altri dispendiosi errori.
 str_npc26_morality_speech|Gli Uruk-Hai combattenti decidono mai di {s21}. Se il capo mostra poco coraggio, potrebbe trovarsi solo nel cuore della notte. Gulm ha parlato.
 str_npc27_morality_speech|[Nessun codice morale primario]
 str_npc18_2ary_morality_speech|Non mi sono unito a te per {s21}, oh Grande, ma per sguazzare nel sangue dei nostri nemici ! Puoi fare uso della tua strategia per adesso, ma dammi presto un buon massacro, ti prego !
@@ -2338,7 +2338,7 @@ str_npc20_personalitymatch_speech_b|Non ho mai incontrato un 'urku' come Bolzog.
 str_npc21_personalitymatch_speech_b|Salvare vite è l'atto più nobile che ci sia, e mi sento affine a quell'anima gentile, benché i nostri mondi siano distanti tra loro.
 str_npc22_personalitymatch_speech_b|Mi piace {s11}.
 str_npc23_personalitymatch_speech_b|Pensavo a quanto fosse vecchio.  Forse una dozzina di secoli più di me ? Non importa, tu non capiresti.
-str_npc24_personalitymatch_speech_b|{s11} e la sua Dale-kin, anche se non sono allo stesso livello dei guerrieri nani, hanno mostrato d'essere validi alleati in questa guerra. Una buona scelta sia come amico che come alleato, fra gli uomini, se posso dirlo.
+str_npc24_personalitymatch_speech_b|{s11} e i combattenti di Dale, sebbene non possano essere considerati allo stesso livello dei guerrieri nani, stanno dimostrando di essere un valido aiuto in questa guerra. Se posso permettermi, credo che siano, fra gli umani, una buona scelta sia come amici che come alleati.
 str_npc25_personalitymatch_speech_b|Quali amici e protettori, la gente di Dale ha una profonda considerazione per il popolo dei Nani che vive nella Montagna Solitaria, nonostante la differenza di razza, di usi e costumi.
 str_npc26_personalitymatch_speech_b|Mi piace {s11}.
 str_npc27_personalitymatch_speech_b|Mi piace {s11}.

@@ -76,38 +76,38 @@ trp_i4_beorning_carrock_fighter|Беорнингский Боец Каррока
 trp_i4_beorning_carrock_fighter_pl|Беорнингские Бойцы Каррока
 trp_i5_beorning_carrock_berserker|Беорнингский Берсерк Каррока
 trp_i5_beorning_carrock_berserker_pl|Беорнингские Берсерки Каррока
-trp_i1_dale_militia|Дейльский ополченец
-trp_i1_dale_militia_pl|Дейльские ополченцы
-trp_i2_dale_man_at_arms|Дейльский латник
-trp_i2_dale_man_at_arms_pl|Дейльские латники
-trp_a2_dale_scout|Разведчик Дейла
-trp_a2_dale_scout_pl|Разведчики Дейла
+trp_i1_dale_militia|Ополченец Дэйла
+trp_i1_dale_militia_pl|Ополченцы Дэйла
+trp_i2_dale_man_at_arms|Ратник Дэйла
+trp_i2_dale_man_at_arms_pl|Ратники Дэйла
+trp_a2_dale_scout|Разведчик Дэйла
+trp_a2_dale_scout_pl|Разведчики Дэйла
 trp_a3_dale_bowman|Лучник Дейла
 trp_a3_dale_bowman_pl|Лучники Дейла
-trp_a4_dale_archer|Стрелок Дейла
-trp_a4_dale_archer_pl|Стрелки Дейла
-trp_a5_barding_bowman|Бард-Лучник
-trp_a5_barding_bowman_pl|Барды-Лучники
-trp_i3_dale_swordsman|Мечник Дейла
-trp_i3_dale_swordsman_pl|Мечники Дейла
-trp_i4_dale_sergeant|Сержант Дейла
-trp_i4_dale_sergeant_pl|Сержанты Дейла
-trp_i5_dale_hearthman|Гвардеец Дейла
-trp_i5_dale_hearthman_pl|Гвардейцы Дейла
-trp_i3_dale_spearman|Дейльский копейщик
-trp_i3_dale_spearman_pl|Дейльские копейщики
+trp_a4_dale_archer|Стрелец Дейла
+trp_a4_dale_archer_pl|Стрельцы Дэйла
+trp_a5_barding_bowman|Лучник Барда
+trp_a5_barding_bowman_pl|Лучники Барда
+trp_i3_dale_swordsman|Мечник Дэйла
+trp_i3_dale_swordsman_pl|Мечники Дэйла
+trp_i4_dale_sergeant|Латник Дэйла
+trp_i4_dale_sergeant_pl|Латники Дэйла
+trp_i5_dale_hearthman|Дружинник Дэйла
+trp_i5_dale_hearthman_pl|Дружинники Дэйла
+trp_i3_dale_spearman|Копейщик Дэйла
+trp_i3_dale_spearman_pl|Копейщики Дэйла
 trp_i4_dale_billman|Дейльский воин с глефой
 trp_i4_dale_billman_pl|Дейльские воины с глефами
 trp_i5_dale_bill_master|Дейльский искусный воин с глефой
 trp_i5_dale_bill_master_pl|Дейльские искусные воины с глефами
-trp_c2_rhovanion_retainer|Сквайр северных земель
-trp_c2_rhovanion_retainer_pl|Сквайры северных земель
-trp_c3_rhovanion_auxilia|Всадник северных земель
-trp_c3_rhovanion_auxilia_pl|Конница северных земель
+trp_c2_rhovanion_retainer|Дворянин Дэйла
+trp_c2_rhovanion_retainer_pl|Дворяне Дэйла
+trp_c3_rhovanion_auxilia|Всадник Дэйла
+trp_c3_rhovanion_auxilia_pl|Всадники Дэйла
 trp_c4_rhovanion_rider|Всадник Рованиона
-trp_c4_rhovanion_rider_pl|Конница Рованиона
-trp_ac5_rhovanion_marchwarden|Смотритель пустошей Рованиона
-trp_ac5_rhovanion_marchwarden_pl|Смотрители пустошей Рованиона
+trp_c4_rhovanion_rider_pl|Всадники Рованиона
+trp_ac5_rhovanion_marchwarden|Смотритель Пустошей Рованиона
+trp_ac5_rhovanion_marchwarden_pl|Смотрители Пустошей Рованиона
 trp_i1_rhun_tribesman|Рунийский дикарь
 trp_i1_rhun_tribesman_pl|Рунийские дикари
 trp_ac2_rhun_horse_scout|Рунийский конный разведчик
@@ -136,48 +136,48 @@ trp_c2_rhun_horseman|Всадник Рун
 trp_c2_rhun_horseman_pl|Всадник Рун
 trp_c3_rhun_outrider|Наездник Руна
 trp_c3_rhun_outrider_pl|Наездники Руна
-trp_c4_rhun_noble_rider|Знатный всадник Руна
-trp_c4_rhun_noble_rider_pl|Знатные всадники Руна
+trp_c4_rhun_noble_rider|Знатный Всадник Руна
+trp_c4_rhun_noble_rider_pl|Знатные Всадники Руна
 trp_c5_rhun_warrider|Рунийский Всадник Войны
 trp_c5_rhun_warrider_pl|Рунийские Всадники Войны
 trp_c6_rhun_warlord|Военачальник Руна
 trp_c6_rhun_warlord_pl|Военачальники Руна
-trp_i1_dwarf_apprentice|Гном-новобранец
-trp_i1_dwarf_apprentice_pl|Гномы-новобранцы
-trp_i2_dwarf_warrior|Воин гномов
-trp_i2_dwarf_warrior_pl|Воины гномов
-trp_i3_dwarf_hardened_warrior|Закалённый воин гномов
-trp_i3_dwarf_hardened_warrior_pl|Закалённые воины гномов
-trp_i4_dwarf_spearman|Гном с копьём
-trp_i4_dwarf_spearman_pl|Гномы с копьями
-trp_i5_dwarf_pikeman|Гном с пикой
-trp_i5_dwarf_pikeman_pl|Гномы с пиками
-trp_i6_dwarf_longpikeman|Гном с длинной пикой
-trp_i6_dwarf_longpikeman_pl|Гномы с длинными пиками
-trp_i4_dwarf_axeman|Гном с топором
-trp_i4_dwarf_axeman_pl|Гномы с топорами
-trp_i5_dwarf_expert_axeman|Опытный гном с топором
-trp_i5_dwarf_expert_axeman_pl|Опытные гномы с топорами
-trp_i6_dwarf_longbeard_axeman|Длиннобородый гном с топором
-trp_i6_dwarf_longbeard_axeman_pl|Длиннобородые гномы с топорами
-trp_a2_dwarf_lookout|Гном-дозорный
-trp_a2_dwarf_lookout_pl|Гномы-дозорные
-trp_a3_dwarf_scout|Гном-разведчик
-trp_a3_dwarf_scout_pl|Гномы-разведчики
-trp_a4_dwarf_bowman|Гном-стрелок
-trp_a4_dwarf_bowman_pl|Гномы-стрелки
-trp_i6_dwarf_longaxeman|Гном секироносец
-trp_i6_dwarf_longaxeman_pl|Гномы секироносцы
-trp_i3_iron_hills_warrior|Воин из Железных Холмов
-trp_i3_iron_hills_warrior_pl|Воины из Железных Холмов
-trp_i2_iron_hills_miner|Рудокоп с Железных холмов
-trp_i2_iron_hills_miner_pl|Рудокопы с Железных холмов
-trp_i4_iron_hills_infantry|Пехотинцы с Железных холмов
-trp_i4_iron_hills_infantry_pl|Пехотинцы с Железных холмов
-trp_i5_iron_hills_battle_dwarf|Гном-воитель с Железных холмов
-trp_i5_iron_hills_battle_dwarf_pl|Гномы-воители с Железных холмов
-trp_i6_iron_hills_grors_guard|Воин гвардии Грора
-trp_i6_iron_hills_grors_guard_pl|Воины гвардии Грора
+trp_i1_dwarf_apprentice|Гном-Новобранец
+trp_i1_dwarf_apprentice_pl|Гномы-Новобранцы
+trp_i2_dwarf_warrior|Гном-Воин
+trp_i2_dwarf_warrior_pl|Гномы-Воины
+trp_i3_dwarf_hardened_warrior|Гном-Ветеран
+trp_i3_dwarf_hardened_warrior_pl|Гномы-Ветераны
+trp_i4_dwarf_spearman|Гном-Копьеносец
+trp_i4_dwarf_spearman_pl|Гномы-Копьеносцы
+trp_i5_dwarf_pikeman|Гном-Пикинер
+trp_i5_dwarf_pikeman_pl|Гномы-Пикинеры
+trp_i6_dwarf_longpikeman|Длиннобородый Пикинер
+trp_i6_dwarf_longpikeman_pl|Длиннобородые Пикинеры
+trp_i4_dwarf_axeman|Гном-Рубака
+trp_i4_dwarf_axeman_pl|Гномы-Рубаки
+trp_i5_dwarf_expert_axeman|Гном-Воитель
+trp_i5_dwarf_expert_axeman_pl|Гномы-Воители
+trp_i6_dwarf_longbeard_axeman|Длиннобородый Королевский Страж
+trp_i6_dwarf_longbeard_axeman_pl|Длиннобородые Королевские Стражи
+trp_a2_dwarf_lookout|Гном-Дозорный
+trp_a2_dwarf_lookout_pl|Гномы-Дозорные
+trp_a3_dwarf_scout|Гном-Разведчик
+trp_a3_dwarf_scout_pl|Гномы-Разведчики
+trp_a4_dwarf_bowman|Гном-Стрелок
+trp_a4_dwarf_bowman_pl|Гномы-Стрелки
+trp_i6_dwarf_longaxeman|Длиннобородый Секироносец
+trp_i6_dwarf_longaxeman_pl|Длиннобородые Секироносцы
+trp_i3_iron_hills_warrior|Воин Железных Холмов
+trp_i3_iron_hills_warrior_pl|Воины Железных Холмов
+trp_i2_iron_hills_miner|Рудокоп Железных Холмов
+trp_i2_iron_hills_miner_pl|Рудокопы Железных Холмов
+trp_i4_iron_hills_infantry|Пехотинец Железных Холмов
+trp_i4_iron_hills_infantry_pl|Пехотинцы Железных Холмов
+trp_i5_iron_hills_battle_dwarf|Воитель Железных Холмов
+trp_i5_iron_hills_battle_dwarf_pl|Воители Железных Холмов
+trp_i6_iron_hills_grors_guard|Гвардеец Грора
+trp_i6_iron_hills_grors_guard_pl|Гвардейцы Грора
 trp_i1_gon_levy|Гондорский новобранец
 trp_i1_gon_levy_pl|Гондорские новобранцы
 trp_i2_gon_watchman|Гондорский стражник
@@ -334,38 +334,38 @@ trp_i4_lorien_gal_inf|Галадримский пехотинец
 trp_i4_lorien_gal_inf_pl|Галадримская пехота
 trp_i5_lorien_gal_royal_inf|Галадримский королевский гвардеец
 trp_i5_lorien_gal_royal_inf_pl|Галадримские королевские гвардейцы
-trp_lothlorien_standard_bearer|Лориэнский знаменосец
-trp_lothlorien_standard_bearer_pl|Лориэнские знаменосцы
-trp_a1_greenwood_scout|Разведчик Темнолесья
-trp_a1_greenwood_scout_pl|Разведчики Темнолесья
-trp_a2_greenwood_veteran_scout|Опытный разведчик Темнолесья
-trp_a2_greenwood_veteran_scout_pl|Опытные разведчики Темнолесья
-trp_a3_greenwood_archer|Лучник Темнолесья
-trp_a3_greenwood_archer_pl|Лучники Темнолесья
-trp_a4_greenwood_veteran_archer|Опытный лучник Темнолесья
-trp_a4_greenwood_veteran_archer_pl|Опытные лучники Темнолесья
-trp_a5_greenwood_master_archer|Искусный лучник Темнолесья
-trp_a5_greenwood_master_archer_pl|Искусные лучники Темнолесья
-trp_a6_greenwood_chosen_marksman|Отборный стрелок Трандуиля
-trp_a6_greenwood_chosen_marksman_pl|Отборные стрелки Трандуиля
-trp_a3_greenwood_sentinel|Страж Темнолесья
-trp_a3_greenwood_sentinel_pl|Стражи Темнолесья
-trp_a4_greenwood_vet_sentinel|Опытный страж Темнолесья
-trp_a4_greenwood_vet_sentinel_pl|Опытные стражи Темнолесья
-trp_a5_greenwood_vigilant|Хранитель Темнолесья
-trp_a5_greenwood_vigilant_pl|Хранители Темнолесья
-trp_i2_greenwood_infantry|Пехотинец Темнолесья
-trp_i2_greenwood_infantry_pl|Пехотинцы Темнолесья
-trp_i3_greenwood_vet_infantry|Опытный пехотинец Темнолесья
-trp_i3_greenwood_vet_infantry_pl|Опытные пехотинцы Темнолесья
-trp_i4_greenwood_elite_infantry|Отборный пехотинец Темнолесья
-trp_i4_greenwood_elite_infantry_pl|Отборные пехотинцы Темнолесья
-trp_i5_greenwood_chosen_shieldmaster|Отборный мастер-защитник Трандуиля
-trp_i5_greenwood_chosen_shieldmaster_pl|Трандуильские отборные защитники
-trp_i5_greenwood_chosen_spearmaster|Отборный мастер-копейщик Трандуиля
-trp_i5_greenwood_chosen_spearmaster_pl|Трандуильские отборные копейщики
-trp_i5_greenwood_standard_bearer|Знаменосец Темнолесья
-trp_i5_greenwood_standard_bearer_pl|Знаменосцы Темнолесья
+trp_lothlorien_standard_bearer|Лориэнский Знаменосец
+trp_lothlorien_standard_bearer_pl|Лориэнские Знаменосцы
+trp_a1_greenwood_scout|Разведчик Зеленолесья
+trp_a1_greenwood_scout_pl|Разведчики Зеленолесья
+trp_a2_greenwood_veteran_scout|Опытный Разведчик Зеленолесья
+trp_a2_greenwood_veteran_scout_pl|Опытные Разведчики Зеленолесья
+trp_a3_greenwood_archer|Лучник Зеленолесья
+trp_a3_greenwood_archer_pl|Лучники Зеленолесья
+trp_a4_greenwood_veteran_archer|Опытный Лучник Зеленолесья
+trp_a4_greenwood_veteran_archer_pl|Опытные Лучники Зеленолесья
+trp_a5_greenwood_master_archer|Искусный Лучник Зеленолесья
+trp_a5_greenwood_master_archer_pl|Искусные Лучники Зеленолесья
+trp_a6_greenwood_chosen_marksman|Отборный Стрелок Трандуила
+trp_a6_greenwood_chosen_marksman_pl|Отборные Стрелки Трандуила
+trp_a3_greenwood_sentinel|Дозорный Зеленолесья
+trp_a3_greenwood_sentinel_pl|Дозорные Зеленолесья
+trp_a4_greenwood_vet_sentinel|Страж Зеленолесья
+trp_a4_greenwood_vet_sentinel_pl|Стражи Зеленолесья
+trp_a5_greenwood_vigilant|Хранитель Зеленолесья
+trp_a5_greenwood_vigilant_pl|Хранители Зеленолесья
+trp_i2_greenwood_infantry|Пехотинец Зеленолесья
+trp_i2_greenwood_infantry_pl|Пехотинцы Зеленолесья
+trp_i3_greenwood_vet_infantry|Опытный Пехотинец Зеленолесья
+trp_i3_greenwood_vet_infantry_pl|Опытные Пехотинцы Зеленолесья
+trp_i4_greenwood_elite_infantry|Гвардеец Зеленолесья
+trp_i4_greenwood_elite_infantry_pl|Гвардейцы Зеленолесья
+trp_i5_greenwood_chosen_shieldmaster|Отборный Щитоносец Трандуила
+trp_i5_greenwood_chosen_shieldmaster_pl|Отборные Щитоносцы Трандуила
+trp_i5_greenwood_chosen_spearmaster|Отборный Копьеносец Трандуила
+trp_i5_greenwood_chosen_spearmaster_pl|Отборные Копьеносцы Трандуила
+trp_i5_greenwood_standard_bearer|Знаменосец Зеленолесья
+trp_i5_greenwood_standard_bearer_pl|Знаменосцы Зеленолесья
 trp_a1_riv_scout|Ривендельский разведчик
 trp_a1_riv_scout_pl|Ривендельские разведчики
 trp_a2_riv_vet_scout|Ривендельский опытный разведчик
@@ -773,10 +773,10 @@ trp_elf_captain_of_lothlorien|Командир отряда Лотлориэна
 trp_elf_captain_of_lothlorien_pl|Командиры отрядов Лотлориэна
 trp_lothlorien_lieutenant|Лориэнский сотник
 trp_lothlorien_lieutenant_pl|Лориэнские сотники
-trp_elf_captain_of_mirkwood|Полководец Темнолесья
-trp_elf_captain_of_mirkwood_pl|Полководцы Темнолесья
-trp_mirkwood_lieutenant|Темнолесский сотник
-trp_mirkwood_lieutenant_pl|Темнолесские сотники
+trp_elf_captain_of_mirkwood|Полководец Зеленолесья
+trp_elf_captain_of_mirkwood_pl|Полководцы Зеленолесья
+trp_mirkwood_lieutenant|Темнолесский Сотник
+trp_mirkwood_lieutenant_pl|Темнолесские Сотники
 trp_elf_captain_of_rivendell|Полководец Ривенделла
 trp_elf_captain_of_rivendell_pl|Полководцы Ривенделла
 trp_rivendell_lieutenant|Ривендельский сотник
@@ -968,7 +968,7 @@ trp_lorien_lord|Владычица Галадриэль
 trp_lorien_lord_pl|Владычица
 trp_imladris_lord|Владыка Эльронд
 trp_imladris_lord_pl|Владыка
-trp_woodelf_lord|Король Трандуиль
+trp_woodelf_lord|Король Трандуил
 trp_woodelf_lord_pl|Король
 trp_moria_lord|Господин Болг Младший
 trp_moria_lord_pl|Господин
@@ -1130,7 +1130,7 @@ trp_smith_dale_pl|кузницу
 trp_smith_esgaroth|Келегарн Мастер Луков
 trp_smith_esgaroth_pl|кузницу
 trp_smith_erebor|Трор Молотобоец
-trp_smith_erebor_pl|прославленные гномьи кузни
+trp_smith_erebor_pl|Прославленные Кузницы Гномов
 trp_smith_dunland|Дорровульд Железная Пика
 trp_smith_dunland_pl|кузницу
 trp_smith_harad|Хар Сталелом
@@ -1147,8 +1147,8 @@ trp_smith_north_rhun|Огнемир Кладиво
 trp_smith_north_rhun_pl|полевую кузницу
 trp_smith_gundabad|Блург Снегопродавец
 trp_smith_gundabad_pl|кузницу
-trp_smith_ironhill|Кузнец с Железных холмов
-trp_smith_ironhill_pl|гномью полевую кузницу
+trp_smith_ironhill|Грунгни Грумбаки
+trp_smith_ironhill_pl|Полевую Кузницу Гномов
 trp_town_50_weaponsmith|Шруклуг Точильщик Ножей
 trp_town_50_weaponsmith_pl|кузницу
 trp_smith_gondor_ac|Бор Оружейник
@@ -1163,7 +1163,7 @@ trp_smith_lorien_ac|Димириан Стрелодел
 trp_smith_lorien_ac_pl|эльфийские оружейные мастерские
 trp_smith_woodelf_ac|Доэлат
 trp_smith_woodelf_ac_pl|кузницу
-trp_smith_dwarf_ac|Кузнец с Железных холмов
+trp_smith_dwarf_ac|Грунгрон Грумбаки
 trp_smith_dwarf_ac_pl|гномью полевую кузницу
 trp_smith_gundabad_ac|Блург Снегопродавец
 trp_smith_gundabad_ac_pl|кузницу
@@ -1236,14 +1236,14 @@ trp_barman_camroth_pl|древесный замок
 trp_barman_thalls|Хозяин таверны
 trp_barman_thalls_pl|тронный зал
 trp_barman_beorn|Хозяин таверны
-trp_barman_beorn_pl|дом Беорна
+trp_barman_beorn_pl|Дом Беорна
 trp_barman_moria|Хозяин таверны
 trp_barman_moria_pl|палаты Подгорного короля
 trp_barman_dale|Хозяин таверны
 trp_barman_dale_pl|замок
 trp_barman_esgaroth|Хозяин таверны
 trp_barman_esgaroth_pl|чертоги правителя
-trp_barman_erebor|Хозяин таверны
+trp_barman_erebor|Хозяин Таверны
 trp_barman_erebor_pl|Гвардеец Трора
 trp_barman_dolguldur|Хозяин таверны
 trp_barman_dolguldur_pl|замок
@@ -1317,18 +1317,18 @@ trp_merchant_thranduils_halls|Ведающий запасами
 trp_merchant_thranduils_halls_pl|эльфийские склады
 trp_merchant_woodelf_camp|Ведающий запасами
 trp_merchant_woodelf_camp_pl|эльфийские склады
-trp_merchant_woodmen|Ведающий запасами
+trp_merchant_woodmen|Келольф Запасливый
 trp_merchant_woodmen_pl|конюшню и склад
-trp_merchant_beorn|Ведающий запасами
+trp_merchant_beorn|Беренгар Медоед
 trp_merchant_beorn_pl|конюшню и склад
 trp_merchant_moria|Ведающий запасами
 trp_merchant_moria_pl|волчью яму и склад
-trp_merchant_dale|Ведающий запасами
+trp_merchant_dale|Жирослав Кладовщик
 trp_merchant_dale_pl|конюшню и склад
-trp_merchant_esgaroth|Ведающий запасами
+trp_merchant_esgaroth|Премысл Рыболов
 trp_merchant_esgaroth_pl|конюшню и склад
-trp_merchant_erebor|Ведающий запасами
-trp_merchant_erebor_pl|гномьи склады
+trp_merchant_erebor|Фрарин Широкозад
+trp_merchant_erebor_pl|Гномьи Склады
 trp_merchant_dunland|Дунлендинг-ведающий запасами
 trp_merchant_dunland_pl|полевой склад
 trp_merchant_harad|Харадец-ведающий запасами
@@ -1347,8 +1347,8 @@ trp_merchant_south_rhun|Ведающий запасами
 trp_merchant_south_rhun_pl|полевой склад
 trp_merchant_gundabad|Ведающий запасами
 trp_merchant_gundabad_pl|полевой склад
-trp_merchant_ironhill|Ведающий запасами
-trp_merchant_ironhill_pl|гномий склад
+trp_merchant_ironhill|Дави Тиндронгол
+trp_merchant_ironhill_pl|Гномьи Склады
 trp_town_50_horse_merchant|Гобрип Желтозуб
 trp_town_50_horse_merchant_pl|волчью яму и склад
 trp_merchant_calembel|Ведающий запасами
@@ -1411,7 +1411,7 @@ trp_elder_imladris|Управитель лагеря Ривенделла
 trp_elder_imladris_pl|лагерь
 trp_elder_wvillage|Пьер Лесовик
 trp_elder_wvillage_pl|деревню
-trp_elder_beorn|Беорнингский старейшина
+trp_elder_beorn|Старейшина Асбеорн
 trp_elder_beorn_pl|деревню
 trp_elder_harad|Харадский управитель лагеря
 trp_elder_harad_pl|лагерь
@@ -1431,8 +1431,8 @@ trp_elder_dale|Дейльский управитель
 trp_elder_dale_pl|город
 trp_elder_esgaroth|Управитель Эсгарота
 trp_elder_esgaroth_pl|Озёрный город
-trp_elder_erebor|Управитель Эребора
-trp_elder_erebor_pl|подгорные чертоги
+trp_elder_erebor|Анкор Камненог
+trp_elder_erebor_pl|Подгорные Чертоги
 trp_elder_dolguldur|Гулдурский управитель
 trp_elder_dolguldur_pl|чёрную твердыню
 trp_elder_gondor_ac|Управитель лагеря
@@ -1491,7 +1491,7 @@ trp_fugitive_man|Подозрительный человек
 trp_fugitive_man_pl|Подозрительные люди
 trp_fugitive_elf|Подозрительный эльф
 trp_fugitive_elf_pl|Подозрительные эльфы
-trp_fugitive_dwarf|Подозрительный гном
+trp_fugitive_dwarf|Подозрительный Гном
 trp_fugitive_dwarf_pl|Подозрительные гномы
 trp_fugitive_orc|Подозрительный орк
 trp_fugitive_orc_pl|Подозрительные орки
@@ -1564,12 +1564,12 @@ trp_start_quest_mordor_scout|Мордорский проводник
 trp_start_quest_mordor_scout_pl|Мордорские проводники
 trp_start_quest_beorning|Беорнингский Берсерк Каррока
 trp_start_quest_beorning_pl|Беорнингские Берсерки Каррока
-trp_i6_beorning_bear_warrior|Воин-медведь
-trp_i6_beorning_bear_warrior_pl|Воины-медведи
+trp_i6_beorning_bear_warrior|Воин-Медведь
+trp_i6_beorning_bear_warrior_pl|Воины-Медведи
 trp_morannon_healer|Окстук Лекарь
 trp_minas_tirith_healer|Лорет
 trp_edoras_healer|Фрея Целительница
-trp_isengard_healer|Нургал Штопатель
+trp_isengard_healer|Нургал Штопальщик
 trp_guldur_healer|Морнагар Грамарир
 trp_gundabad_healer|Лургакх Третий Глаз
 trp_mirkwood_healer|Корвиль Мягкорукий
@@ -1611,8 +1611,8 @@ trp_mordor_troll|Мордорский Тролль
 trp_mordor_troll_pl|Мордорские Тролли
 trp_mordor_vet_troll|Мордорский Выдрессированный Тролль
 trp_mordor_vet_troll_pl|Мордорские Выдрессированные Тролли
-trp_mordor_olog_hai|Мордорский олог-хай
-trp_mordor_olog_hai_pl|Мордорский олог-хай
+trp_mordor_olog_hai|Олог-Хай Мордора
+trp_mordor_olog_hai_pl|Олог-Хаи Мордора
 trp_troll_placeholder_1|Пещерный Тролль
 trp_troll_placeholder_1_pl|Пещерные Тролли
 trp_troll_placeholder_2|Пещерный Тролль
@@ -1629,11 +1629,11 @@ trp_wild_troll|Дикий Пещерный Тролль
 trp_wild_troll_pl|Дикие Пещерные Тролли
 trp_ent2|Энт
 trp_ent2_pl|Энты
-trp_mountain_goblin|Горный гоблин
-trp_mountain_goblin_pl|Горные гоблины
-trp_tribal_orc|Дикий орк
-trp_tribal_orc_pl|Дикие орки
-trp_tribal_orc_warrior|Дикий орк-воин
-trp_tribal_orc_warrior_pl|Дикие орки-воины
-trp_tribal_orc_chief|Вождь диких орков
-trp_tribal_orc_chief_pl|Вожди диких орков
+trp_mountain_goblin|Горный Гоблин
+trp_mountain_goblin_pl|Горные Гоблины
+trp_tribal_orc|Дикий Орк
+trp_tribal_orc_pl|Дикие Орки
+trp_tribal_orc_warrior|Дикий Орк-Воин
+trp_tribal_orc_warrior_pl|Дикие Орки-Воины
+trp_tribal_orc_chief|Вождь Диких Орков
+trp_tribal_orc_chief_pl|Вожди Диких Орков

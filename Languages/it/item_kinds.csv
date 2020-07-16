@@ -80,9 +80,9 @@ itm_woodelf_arrows|Frecce degli Elfi Silvani
 itm_elven_arrows|Frecce elfiche
 itm_orc_hook_arrow|Frecce orchesche uncinate 
 itm_isengard_arrow|Frecce di Isengard
-itm_leather_gloves|Guanti in cuoio
+itm_leather_gloves|Guanti di Cuoio
 itm_mail_mittens|Guanti in maglia
-itm_leather_boots|Stivali di cuoio
+itm_leather_boots|Stivali di Cuoio
 itm_leather_boots_dark|Stivali da Cavallerizzo
 itm_splinted_greaves|Gambali Steccati
 itm_white_tunic_a|Vesti Civili
@@ -136,9 +136,9 @@ itm_arnor_helm_c|Elmo di Arnor
 itm_dunedain_helm_b|Elmo Arnor decorato
 itm_arnor_armor_a|Armatura Arnoriana
 itm_arnor_armor_b|Armatura Arnoriana
-itm_arnor_armor_c|Veste di cuoio Dúnedain
-itm_arnor_armor_d|Veste di cuoio Dúnedain
-itm_arnor_armor_e|Gilet rinforzato Arnoriano
+itm_arnor_armor_c|Veste di Cuoio Dúnedain
+itm_arnor_armor_d|Veste di Cuoio Dúnedain
+itm_arnor_armor_e|Giustacuore Rinforzato Arnoriano
 itm_arnor_armor_f|Alta armatura Arnoriana 
 itm_arnor_greaves|Gambali Arnoriani
 itm_arnor_splinted|Gambali Steccati Arnoriani
@@ -147,7 +147,7 @@ itm_arnor_shield_c|Scudo da cavalleria di Arnor
 itm_arnor_sword_a|Spada bastarda di Arnor
 itm_arnor_sword_c|Spada bastarda di Arnor
 itm_arnor_sword_f|Spada corta di Arnor
-itm_riv_helm_a|Calotta di cuoio di Gran Burrone
+itm_riv_helm_a|Calotta di Cuoio di Gran Burrone
 itm_riv_helm_b|Elmo da arciere di Gran Burrone
 itm_riv_helm_c|Elmo da fante di Gran Burrone
 itm_riv_tiara|Tiara da Elfo nobile
@@ -168,11 +168,11 @@ itm_riv_armor_h_archer|Armatura di Gran Burrone
 itm_riv_armor_leader|Armatura nobile di Gran Burrone
 itm_riv_boots|Stivali di Gran Burrone
 itm_gon_footman|Cotta di maglia di Gondor
-itm_gon_jerkin|Gilet di Gondor
+itm_gon_jerkin|Giustacuore di Gondor
 itm_gon_regular|Maglia pesante di Gondor
 itm_gon_bowman|Trapunta di Gondor
 itm_gon_archer|Trapunta con mantello di Gondor
-itm_gon_noble_cloak|Gilet da nobile di Gondor
+itm_gon_noble_cloak|Giustacuore Nobiliare di Gondor
 itm_gon_squire|Maglia con mantello di Gondor
 itm_gon_knight|Maglia pesante con mantello di Gondor
 itm_gon_ranger_cloak|Mantello da ramingo di Gondor
@@ -225,7 +225,7 @@ itm_pinnath_leader|Armatura da Cavaliere di Pinnath Gelin
 itm_pinnath_vet_footman|Armatura da fante delle Pinnath Gelin
 itm_pinnath_warrior|Armatura da guerriero delle Pinnath Gelin
 itm_pel_footman|Armatura da fante di Pelargir
-itm_pel_jerkin|Gilet di Pelargir
+itm_pel_jerkin|Giustacuore di Pelargir
 itm_pel_leader|Armatura da condottiero di Pelargir
 itm_pel_marine|Fante di Marina di Pelargir
 itm_pelargir_marine_leader|Condottiero della marina di Pelargir
