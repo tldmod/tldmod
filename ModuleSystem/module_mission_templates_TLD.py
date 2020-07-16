@@ -2418,7 +2418,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	
 	(get_player_agent_no, ":player"),
 	(eq, ":receiver", ":player"),
-	(display_message, "@player {s5} hit"),
+	#(display_message, "@player {s5} hit"),
 	(val_div, ":damage", 2),
 	(set_trigger_result, ":damage"),
 
