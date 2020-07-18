@@ -404,23 +404,23 @@ items =[
 
 ###ARMOR
 #handwear, boots
-["leather_gloves","Leather_Gloves",[("CWE_gloves_a_L",imodbits_armor_bad),("CWE_gloves_a_h_L",0),("narf_leather_gauntlet_L",imodbits_armor_good), ("undeadtest_handL",imodbit_poor)],itp_type_hand_armor|itp_shop,0,200,weight(0.2)|body_armor(2)|difficulty(0),imodbits_armor,[]],
+["leather_gloves","Leather_Gloves",[("CWE_gloves_a_L",imodbits_armor_bad),("CWE_gloves_a_h_L",0),("narf_leather_gauntlet_L",imodbits_armor_good), ("undeadtest_handL",imodbit_poor)],itp_type_hand_armor|itp_shop,0,150,weight(0.2)|body_armor(2)|difficulty(0),imodbits_armor,[]],
 ["mail_mittens","Mail_Mittens",[("CWE_gauntlets_crysader_L",0)],itp_type_hand_armor|itp_shop,0,600,weight(1)|body_armor(4)|difficulty(0),imodbits_elf_armor,[]],
 ["leather_boots","Leather_Boots",[("fi_boot13",imodbits_armor_bad),("fi_boot8",0)],itp_type_foot_armor|itp_shop,0,200,weight(1)|leg_armor(12)|difficulty(0),imodbits_cloth],
 ["leather_boots_dark","Rider_Boots",[("fi_boot7",imodbits_armor_bad),("narf_rus_cav_boots",0)],itp_type_foot_armor|itp_shop,0,250,weight(1.2)|leg_armor(14)|difficulty(0),imodbits_cloth],
-["splinted_greaves","Splinted_Greaves",[("fi_boot9",0),("narf_rus_splint_greaves",imodbits_armor_good)],itp_type_foot_armor|itp_shop,0,500,weight(3.5)|leg_armor(24)|difficulty(0),imodbits_armor|imodbit_lordly],
+["splinted_greaves","Splinted_Greaves",[("fi_boot9",0),("narf_rus_splint_greaves",imodbits_armor_good)],itp_type_foot_armor|itp_shop,0,1000,weight(3.5)|leg_armor(24)|difficulty(0),imodbits_armor|imodbit_lordly],
 
 # TLD civilian wear
 #all marked civilian items free Jan 2017, -> itm_white_tunic_a
 ["white_tunic_a","Civilian_Outfit",[("gondor_tunic_b",0),("generic_tunic_a",imodbit_day_old),("tld_robe_generic_dress",imodbit_fresh),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),("rohan_dress",imodbit_rough),("dale_coat",imodbit_powerful),("generic_leather_jerkin",imodbit_exquisite),("smith_leather_apron",imodbit_deadly),("rohan_tunic",imodbit_sharp),("dale_tunic",imodbit_well_made),("generic_tunic_c",imodbit_cheap),("gondor_dress_a",imodbit_poor),("gondor_dress_b",imodbit_old),],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(1)|difficulty(0),imodbits_cloth,[]],
 ["rohan_shoes","Leather_Shoes",[("fi_boot14",imodbits_armor_bad),("narf_rus_shoes",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,50,weight(0.6)|leg_armor(6)|difficulty(0),imodbits_cloth],
-["furry_boots","Furry_Boots",[("furry_boots",0)],itp_type_foot_armor|itp_shop,0,150,weight(1)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
+["furry_boots","Furry_Boots",[("furry_boots",0)],itp_type_foot_armor|itp_shop,0,100,weight(1)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
 ["free_blue_tunic","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["black_tunic","Black_Tunic",[("gondor_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["hood_black","Black_Hood",[("fi_helm10_black",0),("hood_black_simple",imodbits_armor_bad),("fi_helm10_black_mask",imodbits_armor_good),("gondor_wimple_a",imodbit_smelling),("gondor_wimple_b",imodbit_rotten),("gondor_fine_fem_hat",imodbit_large_bag)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,100,weight(1)|head_armor(12)|difficulty(0),imodbits_armor,[]],
-["hood_green","Green_Hood",[("fi_helm10_green",0),("hood_green_simple",imodbits_armor_bad),("fi_helm10_green_mask",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,150,weight(1)|head_armor(14)|difficulty(0),imodbits_armor,[]],
-["hood_grey","Grey_Hood",[("fi_helm10_grey",0),("hood_grey_simple",imodbits_armor_bad),("hood_grey_large",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,100,weight(1)|head_armor(11)|difficulty(0),imodbits_armor,[]],
-["hood_leather","Leather_Hood",[("fi_helm10_leather",0),("hood_leather_simple",imodbits_armor_bad),("fi_helm10_leather_mask",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,300,weight(1)|head_armor(15)|difficulty(0),imodbits_armor,[]],
+["hood_green","Green_Hood",[("fi_helm10_green",0),("hood_green_simple",imodbits_armor_bad),("fi_helm10_green_mask",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,120,weight(1)|head_armor(14)|difficulty(0),imodbits_armor,[]],
+["hood_grey","Grey_Hood",[("fi_helm10_grey",0),("hood_grey_simple",imodbits_armor_bad),("hood_grey_large",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,80,weight(1)|head_armor(11)|difficulty(0),imodbits_armor,[]],
+["hood_leather","Leather_Hood",[("fi_helm10_leather",0),("hood_leather_simple",imodbits_armor_bad),("fi_helm10_leather_mask",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,250,weight(1)|head_armor(15)|difficulty(0),imodbits_armor,[]],
 ["free_fur_coat","Dale_Coat",[("dale_coat",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,400,weight(6)|head_armor(0)|body_armor(13)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["free_green_dress","Green_Dress",[("rohan_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["free_tld_tunic","Tunic",[("tld_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]], #InVain: Removed script (ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_initialize_civilian_clothes", "tableau_tld_tunic", ":agent_no", ":troop_no")])
@@ -523,7 +523,7 @@ items =[
 ["riv_knight","Rivendell_Knightly_Armour",[("riv_knight_a",0),("riv_knight_a_cloak",imodbit_cloak),("riv_knight_b",imodbits_armor_good),("riv_knight_b_cloak",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(32)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(0),imodbits_elf_armor|imodbit_cloak,[]],
 ["riv_armor_h_archer","Rivendell_Armor",[("riv_foot_scale_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(25)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(0),imodbits_elf_armor,[]],
 ["riv_armor_leader","Rivendell_Leader_Armor",[("riv_knight_b_cloak",0)],itp_type_body_armor|itp_covers_legs,0,5000,weight(30)|head_armor(0)|body_armor(41)|leg_armor(20)|difficulty(0),imodbits_elf_armor,[]],
-["riv_boots","Rivendell_Boots",[("rivendell_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,1200,weight(1)|leg_armor(23)|difficulty(0),imodbits_elf_cloth],
+["riv_boots","Rivendell_Boots",[("rivendell_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,1000,weight(1)|leg_armor(20)|difficulty(0),imodbits_elf_cloth],
 
 ####GONDOR ITEMS##########
 ####ARMORS
@@ -544,7 +544,7 @@ items =[
 ["gondor_ranger_hood","Green_Hood",[("gondor_ranger_hood",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,100,weight(0.5)|head_armor(13)|difficulty(0),imodbits_cloth,[]],
 ["gondor_ranger_hood_mask","Gondor_Ranger_Hood",[("gondor_ranger_hood_mask",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,400,weight(0.6)|head_armor(15)|difficulty(0),imodbits_elf_cloth,[]],
 ["gondor_light_greaves","Gondorian_Leather_Greaves",[("gondor_light_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,600,weight(1.5)|leg_armor(16)|difficulty(0),imodbits_cloth,[]],
-["gondor_med_greaves","Gondorian_Medium_Greaves",[("gondor_medium_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1000,weight(3)|leg_armor(22)|difficulty(0),imodbits_armor|imodbit_lordly,[]],
+["gondor_med_greaves","Gondorian_Medium_Greaves",[("gondor_medium_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,900,weight(3)|leg_armor(20)|difficulty(0),imodbits_armor|imodbit_lordly,[]],
 ["gondor_heavy_greaves","Gondorian_Mailed_Greaves",[("gondor_heavy_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1300,weight(4)|leg_armor(25)|difficulty(0),imodbits_armor|imodbit_lordly,[]],
 ####Helms #free Dec 2019
 ["free_gondorian_light_helm","Gondorian_Footman_Helm",[("gondor_footman_helm",0)],itp_type_head_armor,0,900,weight(2)|head_armor(29)|difficulty(0),imodbits_armor | imodbit_cracked,[]],
@@ -553,13 +553,13 @@ items =[
 ["free_gondorian_light_helm_b","Gondorian_Bowman_Helm",[("gondor_bowman_helm",0)],itp_type_head_armor,0,500,weight(1.5)|head_armor(25)|difficulty(0),imodbits_armor,[]],
 ["gondorian_archer_helm","Gondor_Archer_Helm",[("gondor_bowman_helm",imodbits_armor_bad),("gondor_archer_helm",imodbit_plain),("gondor_archer_helm",0),("gondor_archer_helm2",imodbits_elf_armor)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(27)|difficulty(0),imodbits_armor|imodbit_lordly,[]],
 ["tower_archer_helm","Tower_Archer_Helm",[("gondor_tower_archer_helm",0)],itp_type_head_armor|itp_shop,0,1200,weight(2.5)|head_armor(31)|difficulty(0),imodbits_elf_armor,[]],
-["gondor_leader_helm","Gondor_High_Helmet",[("gondor_leader_helm",0)],itp_type_head_armor|itp_shop,0,3000,weight(3.5)|head_armor(41)|difficulty(0),imodbits_elf_armor,[]],
+["gondor_leader_helm","Gondor_High_Helmet",[("gondor_leader_helm",0)],itp_type_head_armor|itp_shop,0,3500,weight(3.5)|head_armor(41)|difficulty(0),imodbits_elf_armor,[]],
 ["tower_guard_helm","Tower_Guard_Helm",[("gondor_tower_guard_helm",0)],itp_type_head_armor,0,4000,weight(4)|head_armor(46)|difficulty(0),imodbits_elf_armor,[]],
 ["gondor_citadel_knight_helm","Citadel_Knight_Helm",[("gondor_citadel_knight_helm",0)],itp_type_head_armor|itp_shop,0,3000,weight(3.5)|head_armor(40)|difficulty(0),imodbits_elf_armor,[]],
 ["free_gondor_squire_helm","Gondor_Squire_Helm",[("gondor_squire_helm",itp_type_head_armor)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(29)|difficulty(0),imodbits_elf_armor],
 ["gondor_knight_helm","Gondor_Cavalry_Helm",[("gondor_squire_helm",0),("gondor_knight_helm",imodbit_plain),("gondor_knight_helm",0),("gondor_knight_helm2",imodbits_elf_armor)],itp_type_head_armor|itp_shop,0,1300,weight(3)|head_armor(35)|difficulty(0),imodbits_armor|imodbit_lordly],
 ["gondor_dolamroth_helm","Dol_Amroth_Helm",[("gondor_dolamroth_helm_1",imodbits_armor_bad),("gondor_dolamroth_helm_2",imodbit_plain),("gondor_dolamroth_helm_2",0),("gondor_dolamroth_helm_3",imodbits_elf_armor)],itp_type_head_armor|itp_shop,0,1300,weight(3)|head_armor(35)|difficulty(0),imodbits_armor|imodbit_lordly],
-["swan_knight_helm","Swan_Knight_Helm",[("gondor_dolamroth_knight_helm",0)],itp_type_head_armor|itp_shop,0,1500,weight(3.5)|head_armor(42)|difficulty(0),imodbits_elf_armor],
+["swan_knight_helm","Swan_Knight_Helm",[("gondor_dolamroth_knight_helm",0)],itp_type_head_armor|itp_shop,0,3500,weight(3.5)|head_armor(42)|difficulty(0),imodbits_elf_armor],
 ["gondor_lamedon_helm","Lamedon_Helm",[("gondor_lamedon_helm",0)],itp_type_head_armor|itp_shop,0,1100,weight(2)|head_armor(32)|difficulty(0),imodbits_elf_armor],
 ["gondor_lamedon_leader_helm","Lamedon_High_Helmet",[("gondor_lamedon_leader_helm",0)],itp_type_head_armor|itp_shop,0,1400,weight(3)|head_armor(36)|difficulty(0),imodbits_elf_armor],
 ###BRV
@@ -605,7 +605,7 @@ items =[
 ["pelargir_hood","White_Hood",[("pelargir_hood",0)],itp_type_head_armor|itp_civilian|itp_shop,0,100,weight(1)|head_armor(10)|difficulty(0),imodbits_cloth],
 ["pelargir_helmet_light","Pelargir_Helm",[("pelargir_helmet_light",0)],itp_type_head_armor|itp_shop,0,1100,weight(2)|head_armor(32)|difficulty(0),imodbits_elf_armor],
 ["pelargir_helmet_heavy","Pelargir_Heavy_Helm",[("pelargir_helmet_heavy",0)],itp_type_head_armor|itp_shop,0,1400,weight(3)|head_armor(38)|difficulty(0),imodbits_elf_armor],
-["pelargir_greaves","Pelargir_Greaves",[("pelargir_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,800,weight(3)|leg_armor(23)|difficulty(0),imodbits_elf_armor],
+["pelargir_greaves","Pelargir_Greaves",[("pelargir_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1100,weight(3)|leg_armor(23)|difficulty(0),imodbits_elf_armor],
 ######LOS
 ["lossarnach_shirt","Lossarnach_Shirt",[("lossarnach_shirt",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,100,weight(6)|head_armor(0)|body_armor(8)|leg_armor(4)|difficulty(0),imodbits_elf_cloth,],
 ["lossarnach_axeman","Lossarnach_Axeman_Armor",[("lossarnach_axeman",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(13)|head_armor(0)|body_armor(16)|leg_armor(5)|difficulty(0),imodbits_elf_cloth,],
@@ -667,7 +667,7 @@ items =[
 ["free_lorien_armor_e","Lorien_Warden_Cloak",[("lorien_archer_heavy_cloak",0)],itp_type_body_armor|itp_covers_legs,0,700,weight(12)|head_armor(0)|body_armor(28)|leg_armor(10)|difficulty(0),imodbits_armor,],
 ["free_lorien_armor_f","Lorien_Elite_Armor",[("lorien_heavy_3",0)],itp_type_body_armor|itp_covers_legs,0,2000,weight(12)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_armor,],
 #
-["lorien_boots","Lothlorien_Boots",[("lorien_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1500,weight(1)|leg_armor(28)|difficulty(0),imodbits_elf_cloth],
+["lorien_boots","Lothlorien_Boots",[("lorien_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1100,weight(1)|leg_armor(22)|difficulty(0),imodbits_elf_cloth],
 ########LORIEN SHIELDS#####
 ["lorien_shield_b","Lorien_Tower_Shield",[("lorien_kite",0)],itp_type_shield|itp_wooden_parry|itp_shop|itp_cant_use_on_horseback,itcf_carry_kite_shield,700,weight(2)|hit_points(1000)|body_armor(20)|spd_rtng(82)|weapon_length(90),imodbits_shield_good,],
 ["lorien_shield_c","Lorien_Kite_Shield",[("lorien_kite_small",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,500,weight(2)|hit_points(800)|body_armor(18)|spd_rtng(92)|weapon_length(70),imodbits_shield_good,],
@@ -767,7 +767,7 @@ items =[
 ["orc_club_b","Warg_Rider_Club",[("orc_club_b",0)],itp_type_two_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack|itp_penalty_with_shield,itc_bastardfalchion|itcf_carry_mace_left_hip,350,weight(3)|difficulty(0)|spd_rtng(75)|weapon_length(77)|swing_damage(27,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_club_c","Spiky_Orc_Club",[("orc_club_c",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack,itc_dagger|itcf_carry_mace_left_hip,150,weight(2.5)|difficulty(0)|spd_rtng(85)|weapon_length(70)|swing_damage(20,pierce)|thrust_damage(25,pierce),imodbits_weapon_wood],
 ["orc_club_d","Evil_Mace",[("evil_mace",0)],itp_type_one_handed_wpn|itp_primary|itp_can_knock_down,itc_cleaver|itcf_carry_mace_left_hip,500,weight(3.5)|difficulty(0)|spd_rtng(90)|weapon_length(59)|swing_damage(27,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
-["orc_sledgehammer","Orc_Sledgehammer",[("orc_sledgehammer",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_no_parry|itp_wooden_attack|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced|itp_can_knock_down,itc_cut_two_handed|itcf_carry_back,100,weight(7)|difficulty(0)|spd_rtng(80)|weapon_length(75)|swing_damage(30,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
+["orc_sledgehammer","Orc_Sledgehammer",[("orc_sledgehammer",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_no_parry|itp_wooden_attack|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced|itp_can_knock_down,itc_cut_two_handed|itcf_carry_back,100,weight(7)|difficulty(0)|spd_rtng(80)|weapon_length(75)|swing_damage(27,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_simple_spear","Orc_Spear",[("orc_simple_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_no_parry|itp_covers_head,itc_lance_upstab,100,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(152)|thrust_damage(22,pierce),imodbits_weapon_wood],
 ["orc_skull_spear","Orc_Skull_Spear",[("orc_skull_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_no_parry|itp_covers_head,itc_lance_upstab,200,weight(3)|difficulty(0)|spd_rtng(92)|weapon_length(162)|thrust_damage(25,pierce),imodbits_weapon_wood],
 ["orc_bill","Orc_Bill",[("orc_bill",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_no_parry|itp_cant_use_on_horseback,itc_no_parry_staff|itcf_carry_spear,400,weight(4.5)|difficulty(0)|spd_rtng(83)|weapon_length(122)|swing_damage(30,cut)|thrust_damage(12,pierce),imodbits_weapon_bad],
@@ -984,12 +984,12 @@ items =[
 ["mirkwood_heavy_scale","Mirkwood_Leafscale",[("mirkwood_scaleovermaille_01",0),],itp_type_body_armor|itp_covers_legs|itp_shop,0,4000, weight(23)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(14)|difficulty(0),imodbits_armor|imodbit_lordly,],
 #next two free Jan 2020
 ["free_mirkwood_armor_e","Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(17)|head_armor(0)|body_armor(25)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_sword","Woodelf_Sword",[("mirkwood_shortsword",0),("scab_mirkwood_shortsword",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_primary|itp_secondary,itc_dagger|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,250,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(76)|swing_damage(29,cut)|thrust_damage(27,pierce),imodbits_weapon_bad],
+["mirkwood_sword","Woodelf_Sword",[("mirkwood_shortsword",0),("scab_mirkwood_shortsword",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_primary|itp_secondary,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,250,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(76)|swing_damage(29,cut)|thrust_damage(27,pierce),imodbits_weapon_bad],
 #WEAPONS##########
 ["mirkwood_great_spear","Greenwood_Great_Spear",[("mirkwood_great_spear_large",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_spear_upstab,900,weight(2.5)|difficulty(0)|spd_rtng(104)|weapon_length(148)|swing_damage(30,cut)|thrust_damage(35,pierce),imodbits_weapon_good],
 ["mirkwood_war_spear","Greenwood_War_Spear",[("mirkwood_war_spear",0)],            itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_spear_upstab,500,weight(2.5)|difficulty(0)|spd_rtng(99)|weapon_length(150)|swing_damage(25,cut)|thrust_damage(31,pierce),imodbits_weapon_good],
 ["mirkwood_short_spear","Woodelf_Spear",[("mirkwood_short_spear",0)],            itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_wooden_parry,itc_spear_upstab,150,weight(2.5)|difficulty(0)|spd_rtng(97)|weapon_length(117)|swing_damage(20,blunt)|thrust_damage(27,pierce),imodbits_weapon_good],
-["mirkwood_knife","Woodelf_Knife",[("mirkwood_white_knife",0),("scab_mirkwood_white_knife",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_primary|itp_secondary,itc_dagger|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,100,weight(0.75)|difficulty(0)|spd_rtng(120)|weapon_length(51)|swing_damage(24,cut)|thrust_damage(17,pierce),imodbits_weapon_bad],
+["mirkwood_knife","Woodelf_Knife",[("mirkwood_white_knife",0),("scab_mirkwood_white_knife",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_primary|itp_secondary,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,100,weight(0.75)|difficulty(0)|spd_rtng(120)|weapon_length(51)|swing_damage(24,cut)|thrust_damage(17,pierce),imodbits_weapon_bad],
 ["mirkwood_axe","Woodelf_Axe",[("mirkwood_axe",0),("mirkwood_axe_carry",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,150,weight(1)|difficulty(0)|spd_rtng(115)|weapon_length(51)|swing_damage(30,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 #SHIELDS##########
 ["mirkwood_spear_shield_a","Woodelf_Shield",[("mirkwood_med_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,700,weight(2)|hit_points(800)|body_armor(16)|spd_rtng(88)|weapon_length(60),imodbits_shield_good,],
@@ -1003,7 +1003,7 @@ items =[
 ####BOOTS
 #free Dec 2019
 ["free_mirkwood_leather_greaves","Mirkwood_Leather_Greaves",[("mirkwood_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1500,weight(1)|leg_armor(28)|difficulty(0),imodbits_elf_cloth],
-["mirkwood_boots","Woodelf_Boots",[("mirkwood_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1200,weight(1)|leg_armor(23)|difficulty(0),imodbits_elf_cloth],
+["mirkwood_boots","Woodelf_Boots",[("mirkwood_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,700,weight(1)|leg_armor(19)|difficulty(0),imodbits_elf_cloth],
 
 #####TLD HARAD ITEMS##########
 ###########ARMOR##########
@@ -1063,7 +1063,7 @@ items =[
 ############BOOTS##########
 ["desert_boots","Desert_Boots",[("desert_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,200,weight(1)|leg_armor(10)|difficulty(0),imodbits_cloth],
 ["harad_leather_greaves","Harad_Greaves",[("harad_leather_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,400,weight(2)|leg_armor(14)|difficulty(0),imodbits_cloth],
-["harad_scale_greaves","Harad_Boots",[("harad_scale_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,500,weight(3)|leg_armor(22)|difficulty(0),imodbits_armor|imodbit_lordly],
+["harad_scale_greaves","Harad_Boots",[("harad_scale_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,900,weight(3)|leg_armor(22)|difficulty(0),imodbits_armor|imodbit_lordly],
 ["harad_lamellar_greaves","Harad_Boots",[("harad_lamellar_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1000,weight(3)|leg_armor(24)|difficulty(0),imodbits_elf_armor],
 #####TLD KHAND ITEMS##########
 ###HELMS########### #free Dec 2019
@@ -1294,7 +1294,7 @@ items =[
 ["dwarf_helm_kettle","Dwarf_Kettle_Helm",[("DwarfHelmConicalChain",imodbit_plain),("DwarfHelmConicalChain",0),("DwarfHelmConicalMask",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["dwarf_helm_fris","Dwarf_Frisian_Helm",[("DwarfHelmFrisianChain",imodbit_plain),("DwarfHelmFrisianChain",0),("DwarfHelmFrisianMask_A",imodbit_reinforced),("DwarfHelmFrisianMask_B",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(37)|difficulty(0),imodbits_elf_armor],
 ["north_leather_skullcap","North_Light_Skullcap",[("north_leather_skullcap",imodbit_plain),("north_leather_skullcap",0),("north_leather_skullcap_bad",imodbits_armor_bad),("north_leather_skullcap_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,400,weight(1)|head_armor(20)|difficulty(0),imodbits_armor|imodbit_cracked],
-["dwarf_hood","Dwarf_Hood",[("DwarfHelmHood",0)],itp_type_head_armor|itp_shop,0,100,weight(1)|head_armor(12)|difficulty(0),imodbits_elf_cloth],
+["dwarf_hood","Dwarf_Hood",[("DwarfHelmHood",0)],itp_type_head_armor|itp_shop,0,70,weight(1)|head_armor(12)|difficulty(0),imodbits_elf_cloth],
 ["dwarf_nasal","Dwarf_Nasal_Tophelm",[("DwarfHelmIronheadNasal",imodbit_plain),("DwarfHelmIronheadNasal",0),("DwarfHelmIronheadNasal_reinf",imodbit_reinforced),("DwarfHelmIronheadFace",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(37)|difficulty(0),imodbits_elf_armor],
 ["north_nasal_helm","North_Nasal_Helm",[("north_nasal",imodbit_plain),("north_nasal",0),("north_nasal_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(32)|difficulty(0),imodbits_elf_armor],
 #next one only for reward item. NPCs use imod -> witchkinghelm
@@ -1423,7 +1423,7 @@ items =[
 ["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(50)|horse_maneuver(50)|horse_charge(25)|horse_scale(85)|difficulty(10),imodbits_none,[]],
 
 #next three freed up (disabled most traces of defilement system)
-["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(30)|horse_speed(60)|horse_maneuver(60)|horse_charge(25)|horse_scale(100)|difficulty(10),imodbits_none,[]],
+["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(35)|horse_speed(60)|horse_maneuver(60)|horse_charge(35)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 ["thrush_reward","Thrush",[("prop_reward_thrush",0)],itp_unique|itp_type_goods,0,1000,weight(1)|abundance(0)|0,imodbits_none],
 ["gauntlets_reward","Iron_Fists",[("narf_finger_gauntlets_L",0),],itp_type_hand_armor|itp_unique,0,2000,weight(2)|body_armor(6)|difficulty(15),imodbits_none,[]],
 

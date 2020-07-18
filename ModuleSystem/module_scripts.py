@@ -7150,8 +7150,20 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_deliver_iron"),
           (eq, "$tld_option_crossdressing", 0), #only if Item Restriction is ON, so loot produces scraps
-          (store_random_in_range, ":quest_target_amount", 3, 8),
-          (store_random_in_range, ":quest_target_item", scraps_begin, scraps_end),
+		  (store_div, ":quest_target_amount", ":player_level", 2),
+		  (val_min, ":quest_target_amount", 10), #don't scale too much.
+          (store_random_in_range, ":random", 0, 4),
+		  (val_add, ":quest_target_amount", ":random"),
+		  (val_max, ":quest_target_amount", 2), #don't scale too little
+		  (try_begin),
+			(le, ":player_level", 4),
+			(assign, ":quest_target_item", scraps_begin), #only bad scraps
+		  (else_try),
+			(le, ":player_level", 8),
+			(store_random_in_range, ":quest_target_item", scraps_begin, scraps_begin+2), #bad and medium scraps
+		  (else_try),
+			(store_random_in_range, ":quest_target_item", scraps_begin, scraps_end),
+		  (try_end),
           #empty merchant store of that food - done here and not in dialogs to prevent exploit
           (party_get_slot, ":center_merchant", ":giver_center_no", slot_town_merchant), #horse+goods guy
           (try_begin),
