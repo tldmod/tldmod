@@ -7124,6 +7124,7 @@ scripts = [
           (party_template_set_slot,":quest_target_party_template",slot_party_template_num_killed,":num_looters_destroyed"),
           (quest_set_slot,"qst_deal_with_looters",slot_quest_current_state,0),
           #(quest_set_slot,"$random_merchant_quest_no",slot_quest_target_party_template,"pt_looters"),
+		  (assign, ":quest_target_center", ":giver_center_no"),
           (assign, ":quest_gold_reward", 500),
           (assign, ":quest_xp_reward", 500),
           (assign, ":quest_rank_reward", 6),

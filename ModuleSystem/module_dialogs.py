@@ -852,7 +852,7 @@ dialogs = [
 
 ## Ziggy Convo Here after Ritual Success
 
-[anyone|plyr,"member_talk", [(eq, "$g_talk_troop", "trp_npc20"), (troop_slot_eq, "trp_npc20", slot_troop_wealth, 2)], 
+[anyone|plyr,"member_talk", [(eq, "$g_talk_troop", "trp_npc20"),(troops_can_join, 1), (troop_slot_eq, "trp_npc20", slot_troop_wealth, 2)], 
   "Zigûrphel, I require another Wolf of you. Can you do this?", "ziggy_ask_more",
   []],
 
@@ -1394,7 +1394,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   [   (party_get_num_prisoner_stacks, ":num_prisoners", "p_main_party"),
       (ge, ":num_prisoners", 1),
       (store_repeat_object, ":prisoners"),
-      (val_add, ":prisoners", soldiers_begin),
+      #(val_add, ":prisoners", soldiers_begin),
       (is_between, ":prisoners", soldiers_begin, soldiers_end),
       (neg|is_between, ":prisoners", kingdom_heroes_begin, kingdom_heroes_end),
       (party_count_prisoners_of_type, ":prisoner_type", "p_main_party", ":prisoners"),
@@ -1445,14 +1445,32 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone, "ziggy_ritual", [(troop_slot_eq, "trp_npc20", slot_troop_wealth, 0), (eq, "$temp2", 1),],
   "Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.", "ziggy_ritual_succeed", 
-  [(party_remove_prisoners, "p_main_party", "$temp", 1),(troop_set_slot, "trp_npc20", slot_troop_wealth, 2),
+  [(str_store_troop_name, s24, "$temp"),
+   (party_remove_prisoners, "p_main_party", "$temp", 1),
+   (troop_set_slot, "trp_npc20", slot_troop_wealth, 2),
    (party_force_add_members, "p_main_party", "trp_werewolf", 1),
+   (store_character_level, ":ziggy_level", "trp_npc20"),
+   (store_character_level, ":prisoner_level", "$temp"),
+   (store_mul, ":xp_reward", ":ziggy_level",":ziggy_level"),
+   (val_mul, ":xp_reward", ":prisoner_level"),
+   (val_div, ":xp_reward", 10), #tweakable
+   (add_xp_to_troop, ":xp_reward", "trp_npc20"),
+   (assign, reg78, ":xp_reward"),
+   (display_message, "@Zigûrphel gained {reg78} experience."),   
    ]],
 
 [anyone, "ziggy_ritual", [(troop_slot_ge, "trp_npc20", slot_troop_wealth, 2), (eq, "$temp2", 1),],
   "Always such a joy to bring a foe properly to heel.", "ziggy_ritual_succeed", 
   [(party_remove_prisoners, "p_main_party", "$temp", 1),
-   (party_force_add_members, "p_main_party", "trp_werewolf", 1),
+   (party_add_members, "p_main_party", "trp_werewolf", 1),
+   (store_character_level, ":ziggy_level", "trp_npc20"),
+   (store_character_level, ":prisoner_level", "$temp"),
+   (store_mul, ":xp_reward", ":ziggy_level",":ziggy_level"),
+   (val_mul, ":xp_reward", ":prisoner_level"),
+   (val_div, ":xp_reward", 10), #tweakable
+   (add_xp_to_troop, ":xp_reward", "trp_npc20"),
+   (assign, reg78, ":xp_reward"),
+   (display_message, "@Zigûrphel gained {reg78} experience."), 
    ]],
 
 [anyone, "ziggy_ritual", [(eq, "$temp2", 0),],
@@ -10919,11 +10937,14 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone,"mayor_looters_quest_destroyed", [],
 "Aye, my scouts saw the whole thing. That should keep those tribal orcs at bay!"+earned_reg14_times_reg15_rp_of_s14, "mayor_looters_quest_destroyed_2",[
       (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
+	  (quest_get_slot,":total_looters","qst_deal_with_looters",slot_quest_target_amount),
       (store_num_parties_destroyed_by_player, ":num_looters_destroyed", ":looter_template"),
       (party_template_get_slot,":previous_looters_destroyed",":looter_template",slot_party_template_num_killed),
       (val_sub,":num_looters_destroyed",":previous_looters_destroyed"),
       (quest_get_slot,":looters_paid_for","qst_deal_with_looters",slot_quest_current_state),
-      (store_sub,":looter_bounty",":num_looters_destroyed",":looters_paid_for"),
+      (store_sub,":looter_bounty",":num_looters_destroyed",":looters_paid_for"), 
+	  (val_sub,":total_looters",":num_looters_destroyed"), #get remaining looter parties, limit the reward (so we can avoid exploiting the quest helper trigger)
+	  (val_min,":looter_bounty",":total_looters"),
 	  (call_script, "script_increase_rank", "$g_talk_troop_faction", ":looter_bounty"),
 	  (val_mul, ":looter_bounty", 2),
 	  (call_script, "script_change_player_relation_with_center", "$current_town", ":looter_bounty"),
@@ -10931,7 +10952,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (val_mul,":looter_bounty",20),
       #(call_script, "script_troop_add_gold","trp_player",":looter_bounty"),
       (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":looter_bounty"),
-	  (call_script, "script_change_player_relation_with_center", "$current_town", 2),
+	  #(call_script, "script_change_player_relation_with_center", "$current_town", 2),
       (assign,":looters_paid_for",":num_looters_destroyed"),
       (quest_set_slot,"qst_deal_with_looters",slot_quest_current_state,":looters_paid_for")]],
     

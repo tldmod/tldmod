@@ -1,4 +1,4 @@
-1852
+1853
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_an_URUK_HAI^_bred_in an_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_49_wb__dev_^_Bu _rev_49_wb_|_dev_^_Built_2020-07-16_18:43___
+qstr__rev_51_wb__dev_^_Bu _rev_51_wb_|_dev_^_Built_2020-07-18_12:14___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1408,6 +1408,7 @@ qstr_Good_day_to_you. Good_day_to_you.
 qstr_Ah_it_s_you_again._G Ah,_it's_you_again._Goodbye.
 qstr_My_apologies_if_I_wa My_apologies_if_I_was_rude,_earlier._What_was_your_story_again?
 qstr_I_was_reconsidering_ I_was_reconsidering_our_last_conversation._What_was_your_story_again?
+qstr_Zigrphel_gained_{reg Zigûrphel_gained_{reg78}_experience.
 qstr_Greetings_{s23}_{s24 Greetings,_{s23},_{s24}.
 qstr_Greetings_{s23}. Greetings,_{s23}.
 qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_our_{s25}_friends,_so_I_guess_I_should_consider_you_an_ally.

@@ -3817,8 +3817,12 @@ simple_triggers = [
       (check_quest_active, "qst_deal_with_looters"),
       (neg|check_quest_concluded, "qst_deal_with_looters"),
       (quest_get_slot, ":party_template", "qst_deal_with_looters", slot_quest_target_party_template),
+	  (quest_get_slot, ":target_center", "qst_deal_with_looters", slot_quest_target_center),
+	  (gt, ":target_center", 0),
+	  (store_distance_to_party_from_party, ":distance", "p_main_party", ":target_center"),
+	  (le, ":distance", 20), #only spawn looters if the player is still in the area
       (set_spawn_radius, 7),
-      (spawn_around_party, "p_main_party", ":party_template"),
+      (spawn_around_party, ":target_center", ":party_template"),
       (party_set_flags, reg0, pf_quest_party, 1),
       (party_set_faction, reg0, "fac_neutral"), #Kham: so they don't get into fights
       #(display_message, "@DEBUG: Looter party spawned"),
