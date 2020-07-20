@@ -64,7 +64,7 @@ str_trainer_help_1|Este é um campo de treinamento onde você pode aprender o b�
 str_trainer_help_2|Para falar com o treinador, aproxime-se dele, olhe para ele e pressione a tecla 'F' quando vir a palavra 'Falar' sob o nome dele. Quando você desejar sair desta ou de qualquer outra área ou recuar de uma batalha, pode pressionar a tecla TAB.
 str_custom_battle_1|Angbor o Destemido e sua companhia de Gondor interceptaram um grupo de reforços de Harad. Urrando seu grito de guerra, ele guia seu cavalo avante, e lidera seus leais homens para uma feroz batalha.
 str_custom_battle_2|Celeborn de Lorien estava a liderar uma patrulha de cavaleiros e arqueiros quando um posto avançado alerta sobre uma força de homens malignos de cara cinzenta aproximando. São os temidos Numenorianos Negros! Eles não são vistos perto de Lothlorien por eras, mas agora eles devem ter sido tragos devolta para o o mundo.
-str_custom_battle_3|O Senhor Grimbold de Rohan está liderando a última defesa dos muros contra um exército de Isengard. Agora, como os sitiantes se preparam para um ataque final sobre os muros, ele irá manter os muros com Coragem e Aço Brilhante.
+str_custom_battle_3|O Senhor Grimbold de Rohan está liderando a última defesa dos muros contra um exército de Isengard. Agora, como os sitiantes se preparam para um ataque final sobre os muros, ele irá manter os muros com coragem e aço brilhante.
 str_custom_battle_4|Quando os batedores informam o Senhor Beranhelm da aproximação de um exército de Rhun, ele decide preparar rapidamente as defesas do seu acampamento e tentar proteger contra números superiores.
 str_custom_battle_5|Ugluk trouxe seus poderosos orcs para o oeste com a promessa de saque. Se ele conseguir tomar esse forte anão hoje, seus mestres em Barad-Dur ficarão altamente satisfeitos.
 str_custom_battle_6|Ugluk e seu esquadrão orc de saqueadores foram tão perspicazes quanto possível escapando das patrulhas élficas, mas sorte não dura pra sempre, e aparenta que esses pálidos nojentos irão receber o que merecem agora.
@@ -462,9 +462,9 @@ str_surname_6|{s50} de Linhir
 str_surname_7|{s50} de Ethring
 str_surname_8|{s50} de Forte Ald
 str_surname_9|{s50} de Isengard
-str_surname_10|{s50} de Dobraoeste
+str_surname_10|{s50} do Folde Oeste
 str_surname_11|{s50} de Erebor
-str_surname_12|{s50} de Dobraleste
+str_surname_12|{s50} do Folde Leste
 str_surname_13|{s50} de Morannon
 str_surname_14|{s50} de Cirith Ungol
 str_surname_15|{s50} de Osgiliath
@@ -553,11 +553,11 @@ str_npc14_intro|Você tem o andar de um homem cujas pernas tenham visto muito po
 str_npc15_intro|Louvado seja o olho, Ah guerreiro!
 str_npc16_intro|Não é sempre um estranho para meus olhos passeios entre tendas das terras orientais. O que te traz aqui? Fale agora e seja rápida.
 str_npc17_intro|Ei. Gostas daqueles bosques ali?
-str_npc1_intro_response_1|Saudações, Mestre Rastreador. Como vão os Rangers do Sul?
+str_npc1_intro_response_1|Saudações, Mestre Rastreador. Como vão os Guardiões do Sul?
 str_npc2_intro_response_1|Meu negócio é o negócio de Gondor, e quem é você?
 str_npc3_intro_response_1|E um bom dia para você também, há algo errado?
 str_npc4_intro_response_1|Prazer, minha senhora. Com quem tenho a honra de falar?
-str_npc5_intro_response_1|Saudações lorde elfo! É uma grande honra conhece-lo
+str_npc5_intro_response_1|Saudações Senhor Elfo! É uma grande honra conhecê-lo.
 str_npc6_intro_response_1|É assim que os Elfos Silvestres cumprimentam seus convidados?
 str_npc7_intro_response_1|{playername} ao seu serviço. Como vai o povo de Durin?
 str_npc8_intro_response_1|Olá. Me pergunto se alguém aqui se voluntariaria para se juntar a nós em nossas viagens.
@@ -587,7 +587,7 @@ str_npc14_intro_response_2|E não se meta nos meus assuntos, Verme!
 str_npc15_intro_response_2|Hmmf. Mantenha suas garrinhas pra você, Snaga.
 str_npc16_intro_response_2|Cuide dos seus assuntos!
 str_npc17_intro_response_2|Sim, as florestas são muito amáveis, mas preciso ir agora.
-str_npc1_backstory_a|Você vem em um momento difícil, amigo. Ithilien está inundada por batedores e invasores inimigos, e alguns viram grandes hordas de orcs em movimento. Nós tentamos evitar que as criaturas sujas cruzem o grande rio e eu levei um grupo de Guardiões habilidosos que para muitos foi um sucesso. Meu capitão Faramir é ousado e não se desespera da Sombra que paira sobre nós.
+str_npc1_backstory_a|Você vem em um momento difícil, amigo. Ithilien está inundada por batedores e invasores inimigos, e alguns viram grandes hordas de orcs em movimento. Nós tentamos evitar que as criaturas sujas cruzassem o grande rio e eu levei um grupo de Guardiões habilidosos que para muitos foi um sucesso. Meu capitão Faramir é ousado e não se desespera da Sombra que paira sobre nós.
 str_npc2_backstory_a|Ah, que gentileza em perguntar sobre mim. Fui designado recentemente como guarda dos salões do Regente, um dever que faço com orgulho, se é que posso dizer, se não for muito agitado.
 str_npc3_backstory_a|Bem, meu capacete velho aqui está ficando menor a cada minuto e o chão parece vacilante como se eu montasse uma folhagem travessa. Ah, se eu não tivesse bebido toda aquela cerveja ontem à noite - eu normalmente tenho uma boa cabeça para beber, então deve ter sido uma poção desagradável.
 str_npc4_backstory_a|Meu nome é Gálmynë, e fiz questão de conhecer o seu, {playername}. Deixe-me explicar por que
@@ -599,16 +599,16 @@ str_npc9_backstory_a|Bom para você! Eles me chamam de Gulm. Esvaziei meu sargen
 str_npc10_backstory_a|Eu sou o Durgash!
 str_npc11_backstory_a|Nar! Não é um rastreador, é quem. Eles me expulsaram! Eu digo que eles perderam a cabeça, é o que é. Maldito seja! Primeiro eles dizem que eu tiro selvagemente, então eu corro muito devagar, e então eu tenho um snuffler inútil. Garn! Se eles não encontrarem uma turba para mim, logo estarei no Black Pits, se o que eu ouço for verdade. Vou me certificar de que alguns desses Chefes percam suas peles antes de me colocar lá!
 str_npc12_backstory_a|Eu estou no comando de um bando de rapazes aqui em cima. Eu sou o Gorbag ​​e é melhor você aprender rápido nos usar. Uruks são os verdadeiros chefes por aqui. Os chefões fazem escorregões, até mesmo os maiores podem cometer erros, e sempre os pobres Uruks para fazer as coisas certas, e pequenos agradecimentos. Eles nem sequer nos dizem tudo o que sabem, sabem? Não pela metade. Grr!
-str_npc13_backstory_a|EU? Eu sou um grão de terra das areias do sul, soprado para o norte pelos ventos frios e escuros da noite. Eu sou Lykyada, um Senhor da Serpente de Haradwaith. Senhor da Serpente de Ouro, a perdição da Tribo da Serpente Negra, agora aliada para servir a vontade do Lorde das Trevas.
+str_npc13_backstory_a|EU? Eu sou um grão de terra das areias do sul, soprado para o norte pelos ventos frios e escuros da noite. Eu sou Lykyada, um Senhor da Serpente de Haradwaith. Senhor da Serpente de Ouro, a perdição da Tribo da Serpente Negra, agora aliada para servir a vontade do Senhor das Trevas.
 str_npc14_backstory_a|Eu sou Fuldimir, filho do reino do sul de Umbar, ao sul de Harondor, e da baía de Belfalas, pois ambos são o lar do meu coração e do meu povo. Nós somos os senhores do mar e da vela, corsários para alguns, parentes da Baía de Belfalas para suas águas que domamos.
-str_npc15_backstory_a|Eu sou Bolzog, o Dotado, Setter of Bones, Closer of Cuts e Shaman of Healing. Se você for à guerra pelo Olho, você sem dúvida terá um ou outro de seus companheiros cortados um pouco por silvicultores de cara pálida ou os amantes de cavalos. Agora, -nar-nar-nar! - Orcs são fáceis de substituir, Oh Grande Líder, mas você pode substituir um Warg? Um gigante? Um Troll da Caverna? Shi-shi! Não! Você precisa de mim, o Grande Bolzog!
+str_npc15_backstory_a|Eu sou Bolzog, o Talentoso, Consertador de Ossos, Fechador de Cortes e Xamã da Cura. Se você for à guerra pelo Olho, você sem dúvida terá um ou outro de seus companheiros cortados um pouco por silvicultores de cara pálida ou os amantes de cavalos. Agora, -nar-nar-nar! - Orcs são fáceis de substituir, Oh Grande Líder, mas você pode substituir um Warg? Um gigante? Um Troll da Caverna? Shi-shi! Não! Você precisa de mim, o Grande Bolzog!
 str_npc16_backstory_a|Bom agora, é o estranho que deve se declarar primeiro. Todavia, eu sou VArfang do povo Balchoth... eu vejo que ainda não ouviu os contos e canções da minha terra que falam do nome de Balchoth, porque somente o nome checaria sua coragem e encheria seu coração de aflição.
 str_npc17_backstory_a|Eles me chamam Dímborn e eu trabalho na floresta. É legal lá. Eu gosto da floresta. Muitas árvores na floresta. Eu gosto de árvores. Trabalhei na floresta toda a minha vida, porque sou forte e porque gosto de árvores.
-str_npc1_backstory_b|Você deve saber que eu sou um Ithilien Ranger de Dúnedain descendente e valor. Eu sei muito de rastreamento e scouting e minha habilidade com arco e espada é conhecida pelo orc. Eu também posso treinar qualquer alma que esteja disposta a lutar contra a próxima Sombra
+str_npc1_backstory_b|Você deve saber que eu sou um Ithilien Guardião de Arnor descendente e valor. Eu sei muito sobre rastrear e explorar, e minha habilidade com arco e espada é conhecida pelos orc. Eu também posso treinar qualquer alma que esteja disposta a lutar contra a chegada da Sombra
 str_npc2_backstory_b|Eu fui treinado como um vigia de Minas Tirith, para manter ordem na Cidade Branca e servir meu senhor Steward.
-str_npc3_backstory_b|Eu sou um Cavaleiro do Oeste de Westfold - eles partiram sem mim em uma longa patrulha para o Ford Isen. Sei que a conduta deles será digna da bandeira verde, mas temo que muitos não voltem.
-str_npc4_backstory_b|Nasci em uma família nobre e tenho servido a Lady Éowyn como uma dama de honra desde que somos meninas. Nossos pais eram sábios o suficiente para nos permitir treinar ao lado de nossos irmãos em questões de combate, para tornar-se escudeiras de Rohan.
-str_npc5_backstory_b|Lord Elrond enviou-me como um emissário a Lord Celeborn, para dar ajuda e conselhos como é necessário na Guerra nesta parte de Rhovanion.
+str_npc3_backstory_b|Eu sou um Cavaleiro do Folde Oeste - eles partiram sem mim em uma longa patrulha para o Ford Isen. Sei que a conduta deles será digna da bandeira verde, mas temo que muitos não voltem.
+str_npc4_backstory_b|Nasci em uma família nobre e tenho servido a Senhora Éowyn como uma dama de honra desde que somos meninas. Nossos pais eram sábios o suficiente para nos permitir treinar ao lado de nossos irmãos em questões de combate, para tornar-se escudeiras de Rohan.
+str_npc5_backstory_b|Senhor Elrond enviou-me como um emissário ao Senhor Celeborn, para dar ajuda e conselhos como é necessário na Guerra nesta parte de Rhovanion.
 str_npc6_backstory_b|Eu gosto de percorrer os caminhos escondidos em nossa bela floresta. Às vezes eu me movo silenciosamente através das árvores e observo os hábitos dos muitos animais da floresta. O canto de um pássaro raro, o aninhamento de um javali são tão bonitos para mim quanto o choque de armas e as grandes muralhas são para os Edain.
 str_npc7_backstory_b|Ajudei a melhorar as defesas de Erebor e treinei um povo anão mais novo, sob a direção do meu venerado pai Dwalin, como é nosso costume.
 str_npc8_backstory_b|Tratei o minha marca do rei de constipação, um mal-estar comum que afeta os homens que vão à guerra. Uma leve infusão de absinto, e tanto as entranhas como a mente são colocadas à vontade.
@@ -659,17 +659,17 @@ str_npc1_backstory_response_1|Se você conseguir sair, eu preciso muito de um gu
 str_npc2_backstory_response_1|Você está certo, eu estou procurando por voluntários.
 str_npc3_backstory_response_1|Se você pode fazer sem ale, eu gostaria de um bom cavaleiro.
 str_npc4_backstory_response_1|Gostaria de receber a ajuda de uma escrava Rohan, se oferecida.
-str_npc5_backstory_response_1|Pode ser presunçoso de mim perguntar, mas minha empresa poderia usar sua habilidade nas próximas batalhas.
+str_npc5_backstory_response_1|Pode ser meio presunçoso de mim perguntar, mas minha companhia poderia utilizar de sua habilidade nas próximas batalhas.
 str_npc6_backstory_response_1|Nós viajamos pelo mundo, mas para defender tudo o que é justo, damos batalha ao inimigo.
 str_npc7_backstory_response_1|Na verdade, um guerreiro anão seria bem vindo na minha empresa.
 str_npc8_backstory_response_1|Podemos usar um curandeiro e um herbalist.
-str_npc9_backstory_response_1|Eu acho que podemos colocar um berserker para um bom uso.
+str_npc9_backstory_response_1|Eu acho que podemos colocar um berserker para uma boa utilidade.
 str_npc10_backstory_response_1|Você fará.
 str_npc11_backstory_response_1|Com o que fazer de mim?
 str_npc12_backstory_response_1|Que tal se esconder comigo.
 str_npc13_backstory_response_1|Que tal me seguir?
 str_npc14_backstory_response_1|Que tal se juntar a mim?
-str_npc15_backstory_response_1|Aha ... Um curandeiro, hein? E você é bom nisso, você diz? Eu poderia usar alguém como você.
+str_npc15_backstory_response_1|Aha... Um curandeiro, hein? E você é bom nisso, você disse? Eu poderia dispor de alguém como você.
 str_npc16_backstory_response_1|O que você está fazendo aqui?
 str_npc17_backstory_response_1|Bem, sempre se pode aprender mais sobre as árvores. Ficamos felizes em tê-lo junto.
 str_npc1_backstory_response_2|Lamento ouvir isso. Que sua fé mantenha seu valor.
@@ -704,7 +704,7 @@ str_npc12_signup|Siga sua turba, ai? Posso ter finalmente conseguido um pouco de
 str_npc13_signup|Posso seguir você se você me tiver. Minhas pernas fazem o bom título de um cavalo entre eles e minhas mãos sabem bem a sensação de lâminas da lua crescente. Meus dedos podem fazer flechas de outono como a situação das estrelas em nosso inimigo, seja a cavalo ou a pé, no entanto, como eu luto estará a seu comando.
 str_npc14_signup|Talvez, com certeza, não sou ladrão ou bandido. Não vou roubar, nem tomar o que outras vidas possam achar necessário.
 str_npc15_signup|Heh-heh. Você está certo! Siiiim! Você é sabio, Grande Capitão.
-str_npc16_signup|Aguardo ordens, com cada segundo passando escurecendo meu coração. Não posso mais aguardar os planos de lares e capitães tão distantes que não se percebem, a sua existência se acredita mais na lenda do que na carne. Senhores cujas ordens sussurradas são trazidas e gritadas por homens menores. Eu espero, e comigo, a vingança do meu povo também espera.
+str_npc16_signup|Aguardo ordens, com cada segundo passando escurecendo meu coração. Não posso mais aguardar os planos de senhores e capitães tão distantes que não se percebem, a sua existência se acredita mais na lenda do que na carne. Senhores cujas ordens sussurradas são trazidas e gritadas por homens menores. Eu espero, e comigo, a vingança do meu povo também espera.
 str_npc17_signup|Muito bom! Conheço muitas árvores. Em breve você conhecerá muitas árvores também. Como eu. Porque eu conheço muitas árvores.
 str_npc1_signup_2|Levaria um momento para conversar com o meu Capitão e reunir as minhas coisas.
 str_npc2_signup_2|Preciso falar com o meu sargento primeiro e depois vamos - há batalhas gloriosas a serem lutas e todos os costumes de criaturas estranhas para ver!
@@ -720,22 +720,22 @@ str_npc11_signup_2|Muitas coisas lá fora, para o meu nariz cheire, e minha faca
 str_npc12_signup_2|Vou mostrar suas lesmas onde há um chicote, há uma vontade e dar-lhes o máximo de chicote que suas peles vão levar. Se seus rapazes tomá-lo bem, deve colocá-los em um bom trote. O que você diz?
 str_npc13_signup_2|Conheça, no entanto, que minha lealdade está sempre com meus parentes. Eu lutei muito e perdi muito para eles. Não vou virar as costas para eles porque o destino deles será o meu.
 str_npc14_signup_2|É apenas afortunado que aqueles que não são mais deste mundo não precisam de os tesouros deste mundo e tenho a sorte de ser habilidoso de maneiras que eu possa ajudar a aliviar as necessidades mundiais dos donos desses tesouros.
-str_npc15_signup_2|Ah, este é um ótimo momento para Bolzog The Gifted, e para você, Great Lord! Devemos conquistar juntos, você, indestrutível com meu toque de cura, e eu, o grande sábio Orc que deve apoiá-lo
+str_npc15_signup_2|Oh, este é um ótimo momento para Bolzog, o Talentoso, e para você, Grande Senhor! Conquistaremos juntos, você, indestrutível com o meu toque de cura, e eu, o Grande Sábio Orc, que o apoiará!
 str_npc16_signup_2|Temo que não aguarde mais. Tenho a intenção de me juntar à próxima festa para sair do acampamento, com a aprovação do meu chefe ou não. Temo que a guerra acabe por muito tempo antes de eu me juntar a ela.
 str_npc17_signup_2|Vou pegar algumas das minhas ferramentas e podemos sair. Há este carvalho no caminho certo, devo mostrar-lhe!
-str_npc1_signup_response_1|Eu poderia usar um guarda-redes experiente, você pode participar.
-str_npc2_signup_response_1|Muito bem. Podemos usar um pouco de alegria nesses tempos obscuros.
+str_npc1_signup_response_1|Eu poderia dispor de um guardião experiente, você pode participar.
+str_npc2_signup_response_1|Muito bem. Podemos dispor de um pouco de alegria nesses tempos sombrios.
 str_npc3_signup_response_1|Muito bem. Sela - vamos sair em breve.
 str_npc4_signup_response_1|Impressionante. Estamos prontos para sair, sempre que você estiver, minha Senhora.
-str_npc5_signup_response_1|Teremos a honra de ter a companhia de um senhor elfo.
+str_npc5_signup_response_1|Teremos a honra de ter a companhia de um Senhor Elfo.
 str_npc6_signup_response_1|Muito bem. Espero que você não fique longe do primeiro orc que vemos.
 str_npc7_signup_response_1|Muito bem, Mestre Dwarf, você pode se juntar a nós.
 str_npc8_signup_response_1|Você estará seguro conosco, eu prometo. Nós vamos sair em breve.
 str_npc9_signup_response_1|Muito bom. Faça o que lhe disser, e eu vou te alimentar bem.
 str_npc10_signup_response_1|Muito bem, vamos lá.
 str_npc11_signup_response_1|Muito bem, vamos lá.
-str_npc12_signup_response_1|Eu acho que poderíamos usá-lo.
-str_npc13_signup_response_1|Eu acho que poderíamos usá-lo.
+str_npc12_signup_response_1|Eu acho que poderíamos colocá-lo para uma boa utilidade.
+str_npc13_signup_response_1|Eu acho que poderíamos colocá-lo para uma boa utilidade.
 str_npc14_signup_response_1|Muito bem, vamos lá.
 str_npc15_signup_response_1|Hmmm. Admiro sua ... confiança. Faça o seu equipamento juntos.
 str_npc16_signup_response_1|Que tal me seguir?
@@ -771,7 +771,7 @@ str_npc11_payment|Eu só preciso de alguém para fazer no chefe. Poderíamos esp
 str_npc12_payment|Hai! Yoi! Preciso lembrar aos meninos que mantenham seus gumes manchados fechados ou os High Ups receberão o meu número e 'avança para mim, eles vão. [custos {reg14} Influência com {s14}]
 str_npc13_payment|Infelizmente, os Chieftains aqui não permitirão minha licença. Você é capaz de convencê-los de outra forma? [custos {reg14} Influência com {s14}]
 str_npc14_payment|O capitão do Haven exigirá muita persuasão para minha licença. Convence-o e devemos navegar através desta tempestade. [custos {reg14} Influência com {s14}]
-str_npc15_payment|Ah sim. Nobre Guerreiro-Senhor! Um pequeno impedimento está lá! Uma grande injustiça aconteceu comigo, que o mestre desta caverna não gostou da minha oferta de cura e roubou toda a minha engrenagem! A bochecha! Para roubar do Great Bolzog! Mestre, não consigo recuperar meu equipamento inestimável de suas garras imundas! [custos {reg14} Influência com {s14}]
+str_npc15_payment|Ah sim. Nobre Guerreiro Senhor! Um pequeno impedimento está lá! Uma grande injustiça aconteceu comigo, que o mestre desta caverna não gostou da minha oferta de cura e roubou toda a minha engrenagem! A bochecha! Para roubar do Grande Bolzog! Mestre, não consigo recuperar meu equipamento inestimável de suas garras imundas! [custa {reg14} Influência com {s14}]
 str_npc16_payment|Eu não vou segui-lo, eu irei pelo meu próprio caminho; mas seu caminho pode acompanhar o meu por um tempo. No entanto, antes de viajar essas terras, devo primeiro prestar homenagem àqueles que morreram tentando antes de nós. Mostre-lhes o seu tributo e podemos deixar nossa licença. Nunca devemos esquecer nossos ancestrais. Eles não se esqueceram de nós. [custos {reg14} Influência com {s14}]
 str_npc17_payment|Eu gosto de árvores, mas meu velho tio precisa de mim aqui. [custos {reg14} Influência com {s14}]
 str_npc1_payment_response|Não se preocupe, eu providenciarei sua licença com ele. [custos {reg14} / {reg15} Influência]
@@ -791,7 +791,7 @@ str_npc14_payment_response|Você não precisa se preocupar com o antigo mestre d
 str_npc15_payment_response|Sem preço, não é? Vou pegar seu equipamento. [custos {reg14} / {reg15} Influência]
 str_npc16_payment_response|Eu homenudo os antepassados, os seus e os meus. [custos {reg 14} / {reg15} Influência]
 str_npc17_payment_response|Seu tio ficará bem. Você está comigo agora. [custos {reg14} / {reg15} Influência]
-str_npc1_morality_speech|Capitão, não consigo entender como você pode {s21} e abandonar nossos homens. O capitão Faramir jamais perderia de vista a compaixão por seus Rangers e os causou sofrer sem necessidade.
+str_npc1_morality_speech|Capitão, não consigo entender como você pode {s21} e abandonar nossos homens. O capitão Faramir jamais perderia de vista a compaixão por seus Guardiões e os causou sofrer sem necessidade.
 str_npc2_morality_speech|Espero que você não se importe com o meu dizer, mas é um pouco difícil para mim ver-nos {s21}. Talvez eu devesse tentar ser mais um soldado endurecido, mas se você pudesse tentar mais ... cuidar dos nossos soldados, eu dormiria melhor
 str_npc3_morality_speech|Comandante, nós Eorlingas nunca {s21}. Nossos cavalos não se cansam facilmente e, uma vez que nos reagrupamos, não há uma situação em que uma carga bem-programada não pode decidir a nosso favor. Tenha atenção na próxima vez que batalharemos contra as chances.
 str_npc4_morality_speech|Não preste atenção ao que os soldados dizem, às vezes para {s21} é o curso de ação mais sábio. Eu, por um lado, aprecio as vidas poupadas e os membros intactos, se não for mais além de lutar outro dia, quando o destino nos olha com favor.
@@ -799,7 +799,7 @@ str_npc5_morality_speech|Você deve reconsiderar suas ações, comandante. Para 
 str_npc7_morality_speech|Não fiquei satisfeito por ter decidido {s21}. Cair em batalha é uma honra para qualquer anão de pensamento direito, mas lutar em uma empresa liderada por um covarde é uma desgraça. O que os meus primos dizem se eles souberem disso?
 str_npc8_morality_speech|Comandante, devo me opor. Para {s21} é áspero para os homens e desnecessário. Eu faço o que posso para aliviar o sofrimento, mas não faça outro erro caro.
 str_npc9_morality_speech|A luta Uruk-hai não faz {s21}. Se o Mestre tiver poucas tripas, ele pode encontrar-se sem eles uma noite. Gulm falou.
-str_npc15_morality_speech|Você pode pensar que Bolzog the Great pode curar tudo, {playername}, mas mesmo eu tenho meus limites! Se você continuar com {s21}, mesmo meu talento terá dificuldade! Você deve me dar algum apoio! Eu não posso ressuscitar os mortos, se morrem de fome ou são pirateados em pedaços!
+str_npc15_morality_speech|Você pode pensar que Bolzog o Grande pode curar tudo, {playername}, mas mesmo eu tenho meus limites! Se você continuar com {s21}, mesmo meu talento terá dificuldade! Você deve me dar algum apoio! Eu não posso ressuscitar os mortos, se morrem de fome ou são pirateados em pedaços!
 str_npc1_2ary_morality_speech|Capitão, eu fui criado como um Dunadan, tanto em valor quanto em honra. Eu preferiria se não o fizermos {s21}.
 str_npc4_2ary_morality_speech|Seu perdão, comandante. As mulheres da minha estação aceitarão a morte, mas não a desonra. Para {s21} traz vergonha para minha casa e antepassados.
 str_npc15_2ary_morality_speech|Oi-oi-oi! Você é esperto, Senhor! Você pega o ouro, e acena com a cabeça, e diz "sim mestre", mas todo o tempo que você planejou isso! Oi oi! Somente, devemos ter cuidado, que The Big One não vê você enganá-lo ...
@@ -809,7 +809,7 @@ str_npc3_personalityclash_speech|Comandante, como é que acabamos com {s11} em n
 str_npc4_personalityclash_speech|Eu mencionei odeio {s11}?
 str_npc5_personalityclash_speech|Eu mencionei odeio {s11}?
 str_npc6_personalityclash_speech|{playername}, eu apenas vi {s11} andar descaradamente sobre um ninho de pássaros jovens. Sua torpeza destruiu a vida jovem de criaturas inocentes.
-str_npc7_personalityclash_speech|Lord {s11} faz bem em uma batalha, mas eu me pergunto se ele cega o inimigo pelo brilho de seus cabelos? Ou eles se adormecem de sua fama e comportamento inconcebível?
+str_npc7_personalityclash_speech|Senhor {s11} faz bem em uma batalha, mas eu me pergunto se ele cega o inimigo pelo brilho de seus cabelos? Ou eles se adormecem de sua fama e comportamento inconcebível?
 str_npc8_personalityclash_speech|Comandante, devo apresentar uma queixa contra {s11}. Ele continua a incomodar-me sobre fazer dele um certo brew chamado "a fada verde".
 str_npc9_personalityclash_speech|Eu mencionei odeio {s11}?
 str_npc10_personalityclash_speech|Eu mencionei odeio {s11}?
@@ -990,12 +990,12 @@ str_npc14_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
 str_npc15_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
 str_npc16_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
 str_npc17_home_description_2|Eu poderia lhe dar um belo cachimbo. Gostaria de um cachimbo?
-str_npc1_home_recap|Nasci e cresci em Ithilien, em uma longa fila de guerreiros que remontam ao sul de Dúnedain.
+str_npc1_home_recap|Nasci e cresci em Ithilien, em uma longa fila de guerreiros que remontam ao sul de Arnor.
 str_npc2_home_recap|Nasci em Minas Tirith, em uma família humilde, mas orgulhosa.
 str_npc3_home_recap|Eu sou um dos Eorlingas, ou Rohirrim, como os estrangeiros nos chamam.
 str_npc4_home_recap|Não acho divertido que você esqueça tão facilmente.
 str_npc5_home_recap|Eu vou satisfazer sua curiosidade, mas não vamos demorar.
-str_npc6_home_recap|Sou nascido e criado em Na Floresta das Trevas, um Elfo Silvestre. Nossas habilidades com a madeira são conhecidas por todos.
+str_npc6_home_recap|Sou nascido e criado na Floresta das Trevas, um Elfo Silvestre. Nossas habilidades com o artesanato são conhecidas por todos.
 str_npc7_home_recap|Sou o filho de Dwalin do povo de Durin.
 str_npc8_home_recap|Sou um curandeira e herbalista de Valle.
 str_npc9_home_recap|Gulm vai falar se quer saber. Mas falar não mata inimigos.
@@ -1128,23 +1128,23 @@ str_surrender_offer_quarrelsome|Chega! Você vence hoje, seu cachorro! Ach, que 
 str_surrender_offer_pitiless|Eu cedi! Você venceu. Maldito seja este dia!
 str_surrender_offer_cunning|Pare! Eu me rendo a você!
 str_surrender_offer_sadistic|Eu desisto! Desisto! Chame de volta seus cães!
-str_surrender_offer_goodnatured|Eu cedi! Parabéns pela sua vitória, {senhor / senhora}!
+str_surrender_offer_goodnatured|Eu cedi! Parabéns pela sua vitória, {senhor/senhora}!
 str_surrender_offer_upstanding|Eu me rendo! Conceda-me as honras da guerra e faça você mesmo crédito!
-str_prisoner_released_default|Você tem minha gratidão, {senhor / senhora}. Não esquecerei sua gentileza.
-str_prisoner_released_martial|Você é realmente um {homem / mulher} de honra, {senhor / senhora}. Não esquecerei isso!
+str_prisoner_released_default|Você tem minha gratidão, {senhor/senhora}. Não esquecerei sua gentileza.
+str_prisoner_released_martial|Você é realmente um {homem/mulher} de honra, {senhor/senhora}. Não esquecerei isso!
 str_prisoner_released_quarrelsome|Estou livre? Bem ... Adeus, então.
 str_prisoner_released_pitiless|Obrigado. Quando você finalmente for derrotado, pedirei que sua morte seja rápida e misericordiosa. A menos que você queira se juntar a nós ... Adeus, por enquanto.
 str_prisoner_released_cunning|Sou? Você é um bom {homem / mulher}. Tentarei encontrar uma maneira de recompensá-lo.
 str_prisoner_released_sadistic|Estou? Tão refinada é a sua crueldade, que você prefere me ver livre e humilhada do que acorrentada. Aproveite o seu triunfo!
-str_prisoner_released_goodnatured|Você é realmente um {homem / mulher} de honra, {senhor / senhora}. Não esquecerei isso!
-str_prisoner_released_upstanding|Você é realmente um {homem / mulher} de honra, {senhor / senhora}. Não esquecerei isso!
+str_prisoner_released_goodnatured|Você é realmente um {homem/mulher} de honra, {senhor/senhora}. Não esquecerei isso!
+str_prisoner_released_upstanding|Você é realmente um {homem/mulher} de honra, {senhor/senhora}. Não esquecerei isso!
 str_enemy_meet_default|Quem é você, que entra em armas contra mim?
-str_enemy_meet_martial|Qual é o seu nome, {senhor / madame}? Se viermos à tona, eu saberia com quem luto.
+str_enemy_meet_martial|Qual é o seu nome, {senhor/senhora}? Se viermos à tona, eu gostaria de saber com quem luto.
 str_enemy_meet_quarrelsome|Quem diabos é você?
 str_enemy_meet_pitiless|Quem é você? Fale, para que eu saiba quem eu mato.
 str_enemy_meet_cunning|Diga-me seu nome. É sempre bom conhecer seu inimigo.
 str_enemy_meet_sadistic|Quem é você? Fale rápido, antes que eu corte sua língua.
-str_enemy_meet_goodnatured|Qual é o seu nome, {senhor / madame}? Se viermos à tona, eu saberia com quem luto.
+str_enemy_meet_goodnatured|Qual é o seu nome, {senhor/madame}? Se viermos à tona, eu gostaria de saber com quem luto.
 str_enemy_meet_upstanding|Quem é você, quem entraria em armas para contestar nossa justa causa?
 str_battle_won_default|Você provou ser um aliado mais valioso hoje.
 str_battle_won_martial|Não há maior fortuna do que a chance de mostrar o seu valor no campo de armas!
@@ -1184,16 +1184,16 @@ str_unprovoked_attack_quarrelsome|Você está cometendo um grande erro, {garoto 
 str_unprovoked_attack_pitiless|Sério? Se você realmente quer morrer hoje, ficaria mais do que feliz em agradecê-lo, mas estou curioso para saber o que você espera conseguir.
 str_unprovoked_attack_cunning|Sério? Acho que você está agindo de maneira imprudente. O que você espera ganhar com isso?
 str_unprovoked_attack_sadistic|O que é isso? Você gosta de ter os olhos apagados?
-str_unprovoked_attack_goodnatured|Por que você faz isso? Não temos brigas, {senhor / madame}.
+str_unprovoked_attack_goodnatured|Por que você faz isso? Não temos brigas, {senhor/madame}.
 str_unprovoked_attack_upstanding|Considero isso um ataque não provocado e protestarei contra seu rei. Por que você faz isso?
 str_unnecessary_attack_default|Não hesitarei em cortá-lo se pressionado, mas vou lhe oferecer a chance de fugir disso.
-str_unnecessary_attack_martial|Estou ansioso para aceitar seu desafio, {senhor / senhora}, apesar de lhe dar um minuto para reconsiderar.
+str_unnecessary_attack_martial|Estou ansioso para aceitar seu desafio, {senhor/senhora}, apesar de lhe dar um minuto para reconsiderar.
 str_unnecessary_attack_quarrelsome|Bah! Não estou no clima para esse absurdo hoje. Saia do meu caminho.
 str_unnecessary_attack_pitiless|Estou em um clima misericordioso hoje. Vou fingir não ter ouvido você.
 str_unnecessary_attack_cunning|Não sei o que você ganha fazendo de mim um inimigo. Talvez você devesse so ir embora.
 str_unnecessary_attack_sadistic|Não tenho tempo para desperdiçar com um verme como você. Sai do meu caminho.
-str_unnecessary_attack_goodnatured|Não vejo o que você tem a ganhar escolhendo uma luta, {senhor / senhora}. Você ainda pode ir embora.
-str_unnecessary_attack_upstanding|Se uma luta é o que você deseja, {senhor / madame}, você terá uma, mas eu ainda lhe oferecerei a chance de recuar.
+str_unnecessary_attack_goodnatured|Não vejo o que você tem a ganhar escolhendo uma luta, {senhor/senhora}. Você ainda pode ir embora.
+str_unnecessary_attack_upstanding|Se uma luta é o que você deseja, {senhor/madame}, você terá uma, mas eu ainda lhe oferecerei a chance de recuar.
 str_lord_challenged_default|Como desejar. Prepare para morrer!
 str_lord_challenged_martial|Que seja. Defenda-se!
 str_lord_challenged_quarrelsome|Seu maricas imprudente! Vou te esmagar!
@@ -1210,10 +1210,10 @@ str_lord_mission_failed_cunning|Bem, Estou decepcionado, mas ninguém pode garan
 str_lord_mission_failed_sadistic|De fato? Aqueles que falham comigo nem sempre vivem para se arrepender.
 str_lord_mission_failed_goodnatured|Bom. Foi uma tarefa complexa, de qualquer modo. Obrigado por tentar.
 str_lord_mission_failed_upstanding|Muito bem. Tenho certeza que você tentou o seu melhor.
-str_lord_follow_refusal_default|Seguir você? Você esqueceu sua estação, {senhor / madame}.
+str_lord_follow_refusal_default|Seguir você? Você esqueceu sua posição, {senhor/madame}.
 str_lord_follow_refusal_martial|Talvez se você um dia provar ser um bravo e honrado guerreiro, então eu o seguiria. Mas não hoje.
 str_lord_follow_refusal_quarrelsome|Seguir alguém como você? Nem pensar.
-str_lord_follow_refusal_pitiless|Senhores como eu não seguem pessoas como você, {senhor / madame}.
+str_lord_follow_refusal_pitiless|Senhores como eu não seguem pessoas como você, {senhor/madame}.
 str_lord_follow_refusal_cunning|Primeiro me mostre que você é o tipo de {homem / mulher} que não me levará ao desastre, e então talvez eu o siga.
 str_lord_follow_refusal_sadistic|Acho que não! Preferivelmente você deveria me seguir, como um cão no açoite segue seu mestre
 str_lord_follow_refusal_goodnatured|Um, estou um tanto pressionado com recados agora. Talvez em uma outra data.
@@ -1282,7 +1282,7 @@ str_rebellion_refuse_default|[liege]
 str_rebellion_refuse_martial|Sinto muito. {s45} tem uma boa reivindicação, mas não é suficiente para eu dar as costas a {s46}. Continuarei fiel ao meu senhor.
 str_rebellion_refuse_quarrelsome|Nah. Seu filhote {s45} não tem o que é necessário para governar esse reino. Estou aderindo a {s46}.
 str_talk_later_default|[liege]
-str_talk_later_martial|Agora não é hora de conversar sobre política! Estou aqui hoje com meus colegas, armados para a batalha. É melhor você se preparar para lutar.
+str_talk_later_martial|Agora não é hora de conversar sobre política! Estou aqui hoje com senhores companheiros, armados para a batalha. É melhor você se preparar para lutar.
 str_talk_later_quarrelsome|Você espera que eu discuta trair meu senhor com você, enquanto estamos cercados pelo exército dele? Por que você me considera um idiota?
 str_talk_later_pitiless|Ainda é sua língua! Tudo o que tenho a dizer sobre esse assunto, não vou dizer aqui e agora, enquanto estivermos no meio do nosso exército.
 str_talk_later_cunning|Este não é o momento nem o local para uma discussão desse tipo. Talvez possamos discuti-lo mais tarde e em outro lugar, mas por enquanto ainda somos inimigos.
@@ -1374,7 +1374,7 @@ str_rohan_rumor_11|Muito dos cavalos que você vê em Gondor vem de nós. Eles p
 str_rohan_rumor_12|Dizemos em Rohan que um cavalo é como um homem. Se um cavalo é bom é como um homem bom, e se um cavalo ruim, é como um homem ruim. Se um cavalo está faminto é como um homem faminto, e se um cavalo está triste, é como um homem triste. E dizemos que se um cavalo está feliz é como quando um homem está feliz. Dizemos que se um cavalo anda é como quando um homem anda, dizemos se um cavalo é velho e como quando um homem é velho, e dizemos se um cavalo é jovem é como quando um homem é jovem. E se um cavalo é pequeno, é como quando um homem é pequeno.
 str_rohan_rumor_13|Os orcs de Saruman são cruéis não usam muita proteção. Eles não são páreos para um bom machado.
 str_rohan_rumor_14|Nossos lanças e machados de arremesso podem parecer massivos, mas quantas chances você terá de arremessar um projétil antes de calvagar sobre o inimigo? Faça valer arremessando algo com peso.
-str_rohan_rumor_15|Acertar um orc com uma flecha disparada de cima de um cavaloparece difícil porque é, mas o preço de investir um grupo de piques longas é mais alto.
+str_rohan_rumor_15|Acertar um orc com uma flecha disparada de cima de um cavalo parece difícil porque é mesmo, mas o preço de investir uma fileira de piques longos é maior.
 str_rohan_rumor_16|Gondor pratica arquearia. Nós praticamos arquearia montada. Os Selvagens de Dunland não praticam nehuma.
 str_rohan_rumor_17|Muitos dos orcs de Saruman são arqueiros mortais. Muitos não são. Um sábio comandante de cavalaria não deve esperar para descobrir qual é qual.
 str_rohan_rumor_18|Somos todos amigos aqui. Ou devemos ser; pois a alegria de Mordor será nossa única recompensa se brigarmos entre nós.
@@ -1476,7 +1476,7 @@ str_dunland_rumor_5|Eles chamam de Rohan agora, mas são nossas terras ancestrai
 str_dunland_rumor_6|Não deixe os Forgoil te pegarem, eles vão te torturar e te queimar vivo!
 str_dunland_rumor_7|Nós somos a sede de sangue do lobo e a força do javali!
 str_dunland_rumor_8|Forgoil pensam que somos selvagens e estupidos. Veremos o que eles acham quando os cavaleiros deles encontrarem nossos piqueiros.
-str_dunland_rumor_9|Corvos de Isengard irão bicar os olhos dos cabeças de palha, os lobos de Dunland irão morder as gargantas deles.
+str_dunland_rumor_9|Corvos de Isengard irão bicar os olhos dos cabeças de palha, os lobos da Terra Parda irão roer as gargantas deles.
 str_dunland_rumor_10|Eu capturei e matei um lobo com minhas mãos nuas. Eu vou quebrar o pescoço de um homem cavalo como um galho! Grrr!
 str_dunland_rumor_11|Nosso chefe achou uma espada de bronze em um monte dique. Ele a dobrou e arremessou no pântano. Espíritos das colinas estarão no nosso lado. Esse é a moda antiga.
 str_dunland_rumor_12|Meus ancestrais lutaram com Freca e depois com Wulf contra os sanguinários Forgoil. Nós lembramos da coragem deles.
@@ -1495,7 +1495,7 @@ str_beorn_rumor_12|Beorn foi um grande homem. Não, homem não, um gigante!
 str_beorn_rumor_13|Os melhores e mais ousados guerreiros entre os homens do bosque não temem as sombras da floresta. Eles podem lutar na escuridão assim como qualquer orc ou outra imundíce que se esconde no bosque.
 str_beorn_rumor_14|Não vague sozinho nas montanhas! Ursos e lobos ficam longe de grandes grupos de homens. Mas a fome, ou como alguns dizem - espíritos sombrios, podem atrair as criaturas perto o suficiente para te atacar.
 str_lorien_rumor_begin|O Lórien! O Inverno está chegando, Dias sem vida; As folhas estão caindo na correnteza, o Rio as afasta.
-str_lorien_rumor_2|Não fale um mal da Dama Galadriel! Nela e nessa terra, não há um mal, a menos que um homem traga consigo. Então o aviso foi dado!
+str_lorien_rumor_2|Não fale um mal da Senhora Galadriel! Nela e nessa terra, não há nenhum mal, a menos que um homem traga consigo. Então o aviso foi dado!
 str_lorien_rumor_3|O mundo é de fato cheio de perigo, e nele há muitos locais sombrios; mas ainda assim há muito do que é belo, e apesar de em todas as terras o amor está distorcido com pesar, ele cresce possivelmente para maior.
 str_lorien_rumor_4|Bem e mal não mudaram desde antigamente; nem são eles uma coisa entre Elfos e Anões, e outra entre Homens. É parte do homem discernir eles, tanto quanto da Floresta Dourada em sua morada.
 str_lorien_rumor_5|Frequentemente o ódio fera a si mesmo!
@@ -1511,7 +1511,7 @@ str_imladris_rumor_5|Desespero é só para aqueles que veem o fim além de toda 
 str_imladris_rumor_6|Mesmo depois do mais gélido inverno flores ainda florecem. E depois da noite mais longa, vem um novo amanhecer.
 str_imladris_rumor_7|Muitos juntaram-se a última vez que fui a guerra. A luz do saque de nossas espadas foi como o fogo em um de daninhas. Poucos deixaram Imladris agora.
 str_imladris_rumor_8|Áva rucë! Os Eldar levantaram suas armas para lutar contra o inimigo ao lado do valente Edain novamente. Talvez pela última vez, quem sabe? Cantamos de guerra, de fogo e do fim da Noite.
-str_imladris_rumor_9|Eu vi os homens do Oriente marcharem sob a bandeira do Senhor Negro e foi como se eu estivesse vendo seus ancestrais novamente - ondas de cavaleiros quebrando sobre a reluzente parede de escudos da Última Aliança. Se ao menos a memória de Edain fosse longa como a nossa.
+str_imladris_rumor_9|Eu vi os homens do Oriente marcharem sob a bandeira do Senhor do Escuro e foi como se eu estivesse vendo seus ancestrais novamente - ondas de cavaleiros quebrando sobre a reluzente parede de escudos da Última Aliança. Se ao menos a memória de Edain fosse longa como a nossa.
 str_woodelf_rumor_begin|Uma aia-elfa havia de idade, /Uma estrela brilhante por dia: /Seu manto branco foi cercado com ouro, /Seus sapatos de cinza-prata.
 str_woodelf_rumor_2|O tempo não demora, mas mudança e crescimento não é em todas as coisas e lugares sempre igual. Para os Elfos o mundo move, e ele move tanto bem veloz quanto bem devagar. Veloz, por causa que eles mesmos mudão pouco, e todo o resto corre com pressa: é uma aflição para eles. Devagar, po causa eles não contam os anos que se passam, não para eles mesmos.
 str_woodelf_rumor_3|Escuridão e maldade rastejam sob essas um vez linda florestas. A menos que sejam paradas, elas irão sufocar toda esperança, toda luz.
@@ -1635,7 +1635,7 @@ str_dwarf_rank_6|Barba Cinzenta
 str_dwarf_rank_7|Capitão Anão
 str_dwarf_rank_8|Chefe Anão
 str_dwarf_rank_9|Herói dos Salões
-str_rohan_rank_0|Ceorl, Plabeu de Rohan
+str_rohan_rank_0|Ceorl, Plebeu de Rohan
 str_rohan_rank_1|Thain, Servo de Rohan
 str_rohan_rank_2|Léod, Homem Livre de Rohan
 str_rohan_rank_3|Rohir, Cavaleiro de Rohan
@@ -1722,7 +1722,7 @@ str_rhun_rank_3|Touro Guerreiro de Rhun
 str_rhun_rank_4|Escudeiro de Rhun
 str_rhun_rank_5|Espadachim de Rhun
 str_rhun_rank_6|Cavaleiro de Rhun
-str_rhun_rank_7|Senhor da Guerra de Rhun
+str_rhun_rank_7|General de Rhun
 str_rhun_rank_8|Chefe dos Clãs das Estepes
 str_rhun_rank_9|Mão Direita de Kahmûl
 str_khand_rank_0|Homem das Planícies de Khand
@@ -1732,7 +1732,7 @@ str_khand_rank_3|Falcão Guerreiro de Khand
 str_khand_rank_4|Escudeiro de Khand
 str_khand_rank_5|Espadachim de Khand
 str_khand_rank_6|Cavaleiro de Khand
-str_khand_rank_7|Senhor dos Variags
+str_khand_rank_7|General dos Variags
 str_khand_rank_8|Chefe dos Clãs Variag
 str_khand_rank_9|Conquistador Lendário
 str_umbar_rank_0|Marujo
@@ -1750,7 +1750,7 @@ str_moria_rank_1|Snaga
 str_moria_rank_2|Rato de Tunel
 str_moria_rank_3|Catador das Cavernas
 str_moria_rank_4|Saqueador das Minas
-str_moria_rank_5|Espoliador dos Salões
+str_moria_rank_5|Despojador dos Salões
 str_moria_rank_6|Matador de Anões
 str_moria_rank_7|General Goblin
 str_moria_rank_8|Chefe Goblin
@@ -1772,7 +1772,7 @@ str_gundabad_rank_3|Catador das Cavernas
 str_gundabad_rank_4|Saqueador das Colinas
 str_gundabad_rank_5|Espoliador das Montanhas
 str_gundabad_rank_6|Matador de Anões
-str_gundabad_rank_7|Senhor dos Wargs
+str_gundabad_rank_7|General dos Wargs
 str_gundabad_rank_8|Grande Goblin
 str_gundabad_rank_9|Pilhador do Norte
 str_dunland_rank_0|Filhote
@@ -1788,7 +1788,7 @@ str_dunland_rank_9|Vingador de Freca
 str_beorn_rank_0|Filho da Floresta
 str_beorn_rank_1|Rastreador da Floresta
 str_beorn_rank_2|Caçador da Floresta
-str_beorn_rank_3|Patrulheiro da Floresta
+str_beorn_rank_3|Guardião da Floresta
 str_beorn_rank_4|Escudeiro da Floresta
 str_beorn_rank_5|Portador do Machado da Floresta
 str_beorn_rank_6|Urso da Floresta
@@ -1813,19 +1813,19 @@ str_fullname_region_druadan_forest|Floresta de Drúadan, uma Floresta de Gondor 
 str_fullname_region_firien_wood|bosque Firien, a Floresta Sussurante, um bosque de carvalhos de Gondor
 str_fullname_region_anorien|Anórien, a terra do sol, um vale entre as montanhas brancas e o rio Anduin
 str_fullname_region_rohan0|o Folde, o coração de Rohan
-str_fullname_region_rohan1|o Eastemnet, parte de Rohan, o Riddermark
-str_fullname_region_rohan2|o Westemnet, uma parte de Rohan, o Riddermark
-str_fullname_region_rohan3|o Eastfold, uma parte de Rohan, o Riddermark
-str_fullname_region_rohan4|o Westfold, uma parte de Rohan, o Riddermark
+str_fullname_region_rohan1|o Emnet Leste, uma parte de Rohan, o Riddermark
+str_fullname_region_rohan2|o Emnet Oeste, uma parte de Rohan, o Riddermark
+str_fullname_region_rohan3|o Folde Leste, uma parte de Rohan, o Riddermark
+str_fullname_region_rohan4|o Folde Oeste, uma parte de Rohan, o Riddermark
 str_fullname_region_rohan5|Abismo de Helm, um vale das Montanhas Brancas, em Rohan
-str_fullname_region_the_wold|o Wold, a área nordeste da marca ridícula de Rohan
+str_fullname_region_the_wold|o Wold, a região à nordeste da Riddermark de Rohan
 str_fullname_region_gap_of_rohan|O Desfiladeiro de Rohan, a mais oeste fronteira de Rohan, uma área disputada entre os Rohirrim e os Terra Pardenses.
 str_fullname_region_entwash|as Fozes do Entágua, onde o rio de Rohan Entágua encontra o Anduin
 str_fullname_region_wetwang|Nindalf, os pântanos de Wetwang
 str_fullname_region_dead_marshes|o Pântano dos Mortos, o antigo campo de batalha da grande Batalha de Dagor Dagorlad, agora um local amaldiçoado
 str_fullname_region_isengard|as planíces entorno de Isengard
 str_fullname_region_fangorn|a floresta de Fangorn, onde dizem que as árvores podem falar
-str_fullname_region_brown_lands|as Terras Castanhas, cobrindo a extensão entre Emyn Muil e a Floresta das Trevas
+str_fullname_region_brown_lands|as Terras Pardas, cobrindo a extensão entre Emyn Muil e a Floresta das Trevas
 str_fullname_region_dagorlad|o Dagorlad, a grande, desarborizada,  extensão da Planície de Batalha, antes dos portões de Mordor
 str_fullname_region_n_undeep|o North Undeep, o maior dos dois Anduin meandros
 str_fullname_region_s_undeep|o South Undeep , o menor dos dois grandes Anduin curvas
@@ -1854,11 +1854,11 @@ str_shortname_region_s_ithilien|Ithilien Sul
 str_shortname_region_druadan_forest|Floresta de Drúadan
 str_shortname_region_firien_wood|Bosque de Firien
 str_shortname_region_anorien|Anórien
-str_shortname_region_rohan0|a Dobra
-str_shortname_region_rohan1|Emnet leste
-str_shortname_region_rohan2|Emnet oeste
-str_shortname_region_rohan3|Eastfold
-str_shortname_region_rohan4|Westfold
+str_shortname_region_rohan0|o Folde
+str_shortname_region_rohan1|Emnet Leste
+str_shortname_region_rohan2|Emnet Oeste
+str_shortname_region_rohan3|Folde Leste
+str_shortname_region_rohan4|Folde Oeste
 str_shortname_region_rohan5|Abismo de Helm
 str_shortname_region_the_wold|a Planície Inculta
 str_shortname_region_gap_of_rohan|o Desfiladeiro de Rohan
@@ -1883,7 +1883,7 @@ str_trait_desc_elf_friend|Você se tornou altamente estimado pelos Elfos e agora
 str_trait_title_gondor_friend|Benção do Regente
 str_trait_desc_gondor_friend|Você ficou muito estimado pelo mordomo Denethor e seu status aumentou entre os homens de Gondor como resultado. O custo para recrutar gondorianos foi reduzido e agora você pode tentar dar ordens aos exércitos gondorianos.
 str_trait_title_rohan_friend|Homem do Rei
-str_trait_desc_rohan_friend|Você se tornou muito estimado pelo rei Theoden de Rohan e, como resultado, seu status aumentou entre os homens de Rohan. O custo para recrutar homens Rohirrim foi reduzido e agora você pode tentar dar ordens aos exércitos da Marca Ridder. . 
+str_trait_desc_rohan_friend|Você se tornou muito estimado pelo rei Theoden de Rohan e, como resultado, seu status aumentou entre os homens de Rohan. O custo para recrutar homens Rohirrim foi reduzido e agora você pode tentar dar ordens aos exércitos da Riddermark.
 str_trait_title_brigand_friend|Campeão Bárbaro
 str_trait_desc_brigand_friend|Você se tornou muito estimado pelas tribos bárbaras que servem Sauron como resultado de suas exibições impressionantes na arena. Agora você pode recrutar bárbaros a um custo reduzido.
 str_trait_title_blessed|Abençoado
@@ -1891,7 +1891,7 @@ str_trait_desc_blessed|Você sente que foi abençoado por poderes do além-mar e
 str_trait_title_reverent|Respeitoso
 str_trait_desc_reverent|Você adquiriu uma reputação de reverência e sabedoria. Homens e elfos são mais propensos a ouvir seus conselhos.
 str_trait_title_merciful|Misericordioso
-str_trait_desc_merciful|Você adquiriu uma reputação de tratamento misericordioso com os homens maus que servem ao Inimigo. Muitos dos homens endurecidos que o servem estão em conflito com seu comportamento e sofrem uma pena moral. Entre os sábios, porém, sua misericórdia é vista como evidência de alto caráter e você recebe um bônus de influência "
+str_trait_desc_merciful|Você adquiriu uma reputação de tratamento misericordioso com os homens malígnos que servem ao Inimigo. Muitos dos homens endurecidos que o servem estão em conflito com seu comportamento e sofrem uma pena moral. Entre os sábios, porém, sua misericórdia é vista como evidência de alto caráter e você recebe um bônus de influência "
 str_trait_title_bravery|Coragem
 str_trait_desc_bravery|Você adquiriu uma reputação de bravura diante de um grande perigo. Sua coragem é mencionada em tavernas tranquilas e nos salões dos sábios. Suas ações inspiram seus homens e eles recebem um bônus semanal de moral.
 str_trait_title_oathkeeper|Jurador
@@ -1920,7 +1920,7 @@ str_trait_title_foe_hammer|Martelo Inimigo
 str_trait_desc_foe_hammer|Tendo matado muitos dos grandes capitães do inimigo, você descobre que ganhou uma reputação de guerreiro temível. As tropas sob seu comando agora recebem um bônus semanal de moral. Suas experiências também aprimoraram sua habilidade na batalha.
 str_trait_title_battle_scarred|Cicatrizes da Batalha
 str_trait_desc_battle_scarred|Você sofreu ferimentos horríveis durante suas muitas campanhas, mas ainda vive para contar a história. Sua carne com cicatrizes e nós agora conspira com muita experiência para aumentar sua resistência a lesões. Enquanto outros podem achar sua aparência um tanto chocante, seus seguidores consideram isso uma afirmação de sua experiência de batalha. Eles recebem posteriormente um bônus semanal de moral "
-str_trait_title_fell_beast|Caiu Besta
+str_trait_title_fell_beast|Fera morreu
 str_trait_desc_fell_beast|Sua pele está cheia de cicatrizes atadas de incontáveis batalhas e sua má vontade é igualmente dura e inflexível. Mesmo pelos padrões de orc, uruk e tipo troll, você é considerado um animal caído e perigoso. Aqueles que o servem choram seu nome de alegria quando você vai para o campo. Você é um avatar da própria guerra e há pouco que você teme. 
 str_trait_title_butcher|Açougueiro.
 str_trait_desc_butcher|A experiência aprimorou sua habilidade de extrair mais carne da carne de seus inimigos. Você ganha um quilo extra de carne toda vez que abate um de seus prisioneiros por carne. Você também recebe mais carne humana após cada batalha.
@@ -2034,8 +2034,8 @@ str_gondor8|Gondor8
 str_gondor_end|Gondor1
 str_gondor_intro|^ É um pensamento amargo que um herói deste grande reino morra à vista de sua terra, sem ajuda e desamparado. ^^ As notícias da morte de Boromir passaram como um vento veloz por todo Gondor, mesmo para os planícies de Pinnath Gelin e as colinas de Lamedon, até as margens de Pelargir e as costas de Dol Amroth.O coração de todo o seu povo está cheio de tristeza e pena; e mais ainda, com medo e pressentimento, pois Gondor é pressionado e dolorido, cercado por inimigos implacáveis ou amigos incertos. ^^ A Sombra nasce no Oriente, como antigamente; os fraturados Corsários de Umbar ficam mais ousados; os homens selvagens do Oriente e do Sul pressionam suas reivindicações sobre terras gondorianas. ^^ Você não pode mais esperar e esperar. Confie que colocou em seus capitães; espada e lança eles colocarão em sua mão. Gondor diminui, mas Gondor ainda permanece; e até o fim de sua força ainda é muito forte. você mesmo para desempenhar o papel que você pode nesta guerra vindoura os servos dos Inomináveis. Muito se fala nos conselhos dos grandes e sábios, dos quais você não conhece, mas há uma coisa que você sente que pode ter certeza. ^^ Se os corações valentes de Gondor falharem e Minas Tirith se perder, então a última luz do Ocidente será extinta. Tudo cairá sob a sombra. 
 str_dwarf_intro|^O Reino sob à Montanha tem prosperado, disso não há discussão. O velho Rei Dáin acabou de passar pelo seu ducentésimo e quinquagésimo ano, e por qualquer medida ele é fabulosamente abastado. Sob seu governo, Erebor prospera, e vive grandeza. Os canais, fontes e lagoas da vizinha Valle testemunha de como os seus construtores ultrapassaram a habilidade de até mesmo seus ancestrais, porém os segredos do trabalho de metal deles tem lamentavelmente sido perdidos.^^Ainda mais que uma escuridão de Mordor tem entrado nesses salões, quando o enviado sujo de Sauron, com seu bafo como o sibilo de serpentes, veio trazendo palavras malignas. Pesado tem sido os corações de seus chefes desde então, pois o poder que reentrou Mordor não mudou. A Sombra cresce e se aproxima - o Inimigo já está se movendo, e a guerra logo se iniciará.^^Você jurou erguer suas armas, e resistir com seus amigos contra seus inimigos. Você resistirá, com ou sem esperança.^^Mas se a bravura dos Anões de Erebor provar insuficiente, então a glória do povo de Durin sumirá e será esquecida. Tudo cairá perante a Sombra.
-str_rohan_intro|^ Nestes dias de dúvida, uma coisa que você sabe ser verdadeira: a guerra aberta está diante do orgulhoso povo de Rohan. Ninguém pode viver agora como viveu, e poucos devem manter o que chamam de seu. orelha do Rei falar conselhos Craven, mas de ter determinado a ir com ele, fazer um juramento sinistro de serviço, e ficar com esses capitães e thanes como irão proteger o rebanho e herdfolk. ^^ Saruman de Isengard declarou senhorio sobre cruéis-handed as terras de Rohan, e amarga é a luta com os orcs, os cavaleiros do lobo e os homens maus de Dunland.O Senhor da Terra Negra, a leste, envia grupos de assalto para roubar seus cavalos, escolhendo sempre os negros. , pois parece a você que os inimigos cercam seu povo, tanto no leste quanto no oeste. ^^ Mas você ainda lutará, pois se algo é dito dos Rohirrim, é do seu valor infalível nas armas, embora o inimigo deva menosprezá-lo, ou fogo cercar você. os cavalos de Rohan vai a passos largos como o vento na parte da manhã. E se a morte vier para você, um monte será levantado, mas, por enquanto, a guerra o chama. Que o cavalo seja travado, que a buzina soe! ^^ No entanto, se mesmo a coragem dos Filhos e Filhas de Eorl falhar, a última esperança de Rohan desaparecerá e desaparecerá. A buzina não tocará mais. Tudo cairá sob a sombra. 
-str_mordor_intro|^ O poder das trevas sobe novamente no Oriente. O número de legiões do Lorde das Trevas aumenta - homens pascais vêm para servir e prestar homenagem, renegados de olhos vazios do antigo Numenor desejando uma chance de recuperar o que seus ancestrais perderam, grandes anfitriões de orcs e uruques escravizando-se com o pensamento de guerra e matança.As canetas estão cheias de ferozes e terríveis avisos.E bem acima, nos céus negros, voam o Nazgûl alado ... a maçã do Grande Olho, com poder além do alcance de seus sonhos enlameados. ^^ Você resolveu subir nas fileiras, de qualquer maneira, e ganhar o favor de Lugbúrz. Pela inteligência, resistência e habilidade implacável na batalha, você esmagará todos os que estiverem no seu caminho. a favor do Lorde das Trevas de Mordor, aquele que deve governar tudo após esta guerra vindoura ... ou você morrerá tentando. ^^ A luz do Ocidente será apagada. Chegou a hora de Mordor! 
+str_rohan_intro|^ Nestes dias de dúvida, uma coisa que você sabe ser verdadeira: a guerra aberta está diante do orgulhoso povo de Rohan. Ninguém pode viver agora como viveu, e poucos devem manter o que chamam de seu. orelha do Rei falar conselhos Craven, mas de ter determinado a ir com ele, fazer um juramento sinistro de serviço, e ficar com esses capitães e thanes como irão proteger o rebanho e herdfolk. ^^ Saruman de Isengard declarou senhorio sobre cruéis-handed as terras de Rohan, e amarga é a luta com os orcs, os cavaleiros do lobo e os homens malígnos da Terra Parda. O Senhor da Terra Negra, a leste, envia grupos de assalto para roubar seus cavalos, escolhendo sempre os negros. , pois parece a você que os inimigos cercam seu povo, tanto no leste quanto no oeste. ^^ Mas você ainda lutará, pois se algo é dito dos Rohirrim, é do seu valor infalível nas armas, embora o inimigo deva menosprezá-lo, ou fogo cercar você. os cavalos de Rohan vai a passos largos como o vento na parte da manhã. E se a morte vier para você, um monte será levantado, mas, por enquanto, a guerra o chama. Que o cavalo seja travado, que a buzina soe! ^^ No entanto, se mesmo a coragem dos Filhos e Filhas de Eorl falhar, a última esperança de Rohan desaparecerá e desaparecerá. A buzina não tocará mais. Tudo cairá sob a sombra. 
+str_mordor_intro|^O poder das trevas sobe novamente no Oriente. O número de legiões do Senhor do Escuro aumenta - homens pascais vêm para servir e prestar homenagem, renegados de olhos vazios do antigo Numenor desejando uma chance de recuperar o que seus ancestrais perderam, grandes anfitriões de orcs e urks escravizando-se com o pensamento de guerra e matança. As canetas estão cheias de ferozes e terríveis avisos. E bem acima, nos céus negros, voam o Nazgûl alado ... a maçã do Grande Olho, com poder além do alcance de seus sonhos enlameados. ^^ Você resolveu subir nas classificações, de qualquer maneira, e ganhar o favor de Lugbúrz. Pela inteligência, resistência e habilidade implacável na batalha, você esmagará todos os que estiverem no seu caminho. a favor do Senhor do Escuro de Mordor, aquele que deve governar tudo após esta guerra vindoura ... ou você morrerá tentando. ^^ A luz do Ocidente será apagada. Chegou a hora de Mordor! 
 ; str_isengard_intro|^A new power is rising, and you are part of that power. You march and fight under the banner of the White Hand, and your allegiance is sworn to crafty old Saruman the Great, wise and cunning, who gives you the tasty flesh of man and horse to eat.^^Under his banner march the fighting Uruk-hai. They are slayers of great warriors, winners of battles. Their armour is thick and their shields broad. You will make a name for yourself among your fellows, and hew down many Whiteskins. You will not stop, by sun or moon, by fair weather or storm, until your enemies lie dead and broken.^^The skill of Saruman is great. With it, you will throw down the power of the horse people, and their weak allies; yes, even elf-flesh will be yours to feast upon. Their villages and forests will burn, and their cities too. And then… who is to say if the maggots and apes of Lugbúrz will not defer to the mighty ones of Orthanc, eh? The strong command. The weak will serve.^^The Age of Man is ending. The time of Isengard has come!
 ; str_lorien_intro|^It is the custom of your people, the Galadhrim of Laurelindórenan, to dwell in the treetops. The great trees of mighty girth bear leaves of gold and blossoms of yellow, and by the waters of the Nimrodel one may find restful sleep and forgetfulness of grief; but in these darkening days none may long forget the Shadow that hovers near, pressing in from the east, from the dark land of Mordor and nearer still.^^For many a long year, your kin of Lothlórien have had few dealings with other folk. Indeed in nothing is the power of the Dark Lord more clearly shown than in the estrangement that divides those who still oppose him. Yet you are one of those who can perceive that to keep living thus, an island amid many perils, will bring only despair. Some there are among you who sing that the Shadow will draw back, and peace shall come again; and though the world can never be as it was of old, yet will you take up sword and bow, and play your part in the War to come, to defend not only the Dreamflower that you love, but perhaps lands beyond, that will otherwise fall to evil.^^For if the old friendships are not renewed, and thought is taken only to fight the long defeat, then shall the last light of Lórien go out forevermore. All will fall beneath the Shadow.
 ; str_imladris_intro|^Alas, for these latter days of grieving memory! In Imladris, the homely house of Elrond Halfelven, one may recall somewhat of the glory and splendour of Eregion in the Elder Days. But the world will never again be as it was of old.^^The fields of Eriador, though lovely to behold, are tilled no more by the hands of Men. The Dúnedain, much diminished in number after the breaking of Arnor, keep their lonely vigils in the desolate wilderness of the North. And the days of Gil-Galad are forever gone, for the Firstborn decrease, and go into the west, while the blood of ancient Númenor dwindles and the race of Westernesse decays.^^Though Rivendell remains a place of sanctuary, the days darken in all the lands around.^^A last rallying call has gone forth, and a great host from Imladris - perhaps the last such in all the Ages of the world - shall march. You are part of this host, and though you will do your duty as instructed by the wise and the great, your heart is not without misgivings. Neither in Imladris, nor in the Grey Havens, nor even in Lórien the Golden Wood, is there strength to withstand the full might of the Enemy, should it come assailing when all else is overthrown.^^Yet a slim hope remains: if the old friendships can be renewed, and all who stand against evil join strength against the common foe, some time may yet be won, so that the final end of the menace of Mordor may yet be sought.^^But if the old alliances should fail, and old friends come to ruin, then nothing shall be left but the days of lengthening darkness, before true Night comes. All will fall beneath the Shadow.
@@ -2046,7 +2046,7 @@ str_dale_intro|^Por três gerações de homens, o Reino de Valle tem prosperado.
 ; str_khand_intro|^The strong rule, and the weak serve. This truth is known to your people, the people of Khand, from birth. Boys and girls alike must survive the fighting pits for many moons, before they may take their place among grown men and women. Such ways have made your people strong. Little wonder, then, that the Lord of the Black Land speaks so fairly to your Shibh! He knows a single sharp halberd in the hands of a Variag of Khand is worth twenty spears in the hands of worthless orcs.^^Many promises have been made to your leaders. A great host has been assembled, the greatest yet in living memory. From the farthest reaches of your lands, the fiercest fighters among your people have answered the summons. You will plunder the lands of the weak, decadent Gondorians. You will take many of them as slaves, and make them work their rich green lands for you, as is the right of the conqueror.^^The Age of the West is ending. The time of the East has come!
 ; str_umbar_intro|^The puffed-up nobles in Gondor, so proud of their vast and fertile estates, are sitting on stolen land - it was Castamir, of old, who was rightful king of the realm, before his throne was usurped by faithless curs. His descendants have led your nation well, winning many great victories on the seas and the coasts.^^Time and again, however, the bitter winds of defeat have blown in your face - some years ago, the faithless Gondorians launched a cowardly night attack upon the main haven, sending the better part of Umbar’s strength down to the sea floor. Your ship was lost, your captain with it, and you were among the few survivors of your erstwhile crew.^^But fifty great ships remain, and countless smaller vessels besides. The Dark Lord of Mordor has issued the call. Now is the time for a reckoning. You will join hands with your brothers-in-arms of the Southern lands, the grim-eyed men of Harad, and you will exact your vengeance upon the treacherous men of Gondor, until all Belfalas and Anfalas is in flames, and your coffers overflow with the wealth that is rightfully yours.^^The Age of Gondor is ending. The time of Umbar has come!
 ; str_moria_intro|^You have come from the Mines, to avenge your folk, killed by manlings and diggers and elf scum! Your tribe was strong, and rich - the Moria-silver you gathered, in great heaps, and with it won great favour from the Dark Lord in the East. The short ones came, thinking to make their homes here - but you slaughtered them and had great sport in the doing. Then a small band of thieves and brigands came through, and awoke the deep Fire. Ruin, ruin for all! Many places cannot now be reached. Much wealth, much Moria-silver, and all too deep to dig up!^^But now the Dark Lord calls. War comes. The Great Eye will reward faithful servants, yes. He will remember who it was who sent him so much of this shiny Moria-silver, and you will obey him - you will kill, and feast upon the Whiteskins, and all will be well for you and your tribe. And those proud elves, in their golden forest, they won’t be so proud when you and your folk burn their trees down around them!^^The light in the woods shall be snuffed out. The time of Moria has come!
-str_guldur_intro|^O poder sombrio se ergue novamente no Leste. O Senhor de Barad-dûr enviou seus servos para Dol Guldur, onde sua vontade mais uma vez irá brandir. As forjas se sobrecarregam com armas e armaduras, os canís abrigam milhares de ferozes wargs, os quartéis estão cheios as bordas com orcs prontos para lutar e morrer.^^E no alto, nos céus escuros sobre a Floresta das Trevas, voam Nazgûl alados... o Grande Olho, com poder muito além dos seus sonhos sonhos enlameados. Não menos que três os Senhor do Escuro enviou para esse lugar, do qual seu poder alcançará, subjulgando todos que resistem, até que os inimigos de Mordor estejam dizimados para sempre.^^Você está decidido a subir nas fileiras, por quaisquer meios, e ganhar o favor de Dol Guldur e Lugbúrz. Por sagacidade, resistência, e habilidade implacável em batalha você irá esmagar aqueles que enram em seu caminho. Você ganhará o favor do Senhor do Escuro, ele que governará após a Guerra que virá... ou você morrerá tentando.^^A sombra de Dol Guldur irá se espalhar. A luz do Oeste será apagada. O era de Mordor chegou!
+str_guldur_intro|^O poder sombrio se ergue novamente no Leste. O Senhor de Barad-dûr enviou seus servos para Dol Guldur, onde sua vontade mais uma vez irá brandir. As forjas se sobrecarregam com armas e armaduras, os canís abrigam milhares de ferozes wargs, os quartéis estão cheios as bordas com orcs prontos para lutar e morrer.^^E no alto, nos céus escuros sobre a Floresta das Trevas, voam Nazgûl alados... o Grande Olho, com poder muito além dos seus sonhos sonhos enlameados. Não menos que três o Senhor do Escuro enviou para esse lugar, do qual seu poder alcançará, subjulgando todos que resistem, até que os inimigos de Mordor estejam dizimados para sempre.^^Você está decidido a subir nas classificações, por quaisquer meios, e ganhar o favor de Dol Guldur e Lugbúrz. Por sagacidade, resistência, e habilidade implacável em batalha você irá esmagar aqueles que enram em seu caminho. Você ganhará o favor do Senhor do Escuro, ele que governará após a Guerra que virá... ou você morrerá tentando.^^A sombra de Dol Guldur irá se espalhar. A luz do Oeste será apagada. O era de Mordor chegou!
 ; str_dunland_intro|^Your people have known nothing but foul injustice at the hands of the black-hearted Forgoil, the strawhead paleskins of Rohan. From the time of mighty Freca, felled by a cowardly blow from the man-eater beast Helm, he whom the Rohirrim called Hammerhand, you have suffered grievously under their heavy yoke. High-handed are their treacheries, too many to number.^^ But now the wind is changing. Wise Saruman, the cunning old master of Isengard, has made promises of friendship to your people. With his help, surely the claim of noble King Wulf, who in happier days rightfully sat the throne of Meduseld in Edoras, will be upheld.^^No longer will your people scrabble in the rocky soil for a hard living. No longer will babes in arms die in the embrace of their mothers, because the milk flows too weakly. No longer will your people cower in fear of the murdering usurpers of Rohan. Your pikes are long, and your axes cruel and sharp. With the help of Saruman the Wise, you cannot fail. You will take back what is rightfully yours.^^You will fight for Saruman. You will die for Saruman!
 ; str_beorn_intro|^These woods, these old paths, and the Ford are the only home you have ever known, but old Beorn was one who remembered an older home, far away in the mountains. His son, Chief Grimbeorn the Old, now stands foremost among your people, and like his father, he is apt to sit on the great Carrock at night, setting his sight to the west, deep in his own thoughts.^^For your part, your thoughts are simple. The woods grow dangerous. Foul orcs grow bolder, and walk about even in daylight. The wolves they ride will not listen even to one of your people, so twisted have they become by goblin ways. The air feels and smells different, bad. The further south you go, closer to Dol Guldur, where not so long ago the Sorcerer dwelled and did things unworthy of naming, the worse it gets.^^The Elves huddle in their caves to the north. Most will not come out to protect the woodland, its animals and trees and other things that move and live.^^Your people will fight, as you always have, to keep the Ford and the forest safe. With a stout stick in your hands, you will smash any orcs that dare intrude. And if it should come to greater blows, why, many among your people are more than they seem…^^But if even the grim battle-strength of the Beornings should fail, then the world will know no more the joy of sweet honey, bright flowers, shady forest paths and all things good. All will fall beneath the Shadow.
 ; str_intro_strings_end|Intro END
@@ -2083,10 +2083,10 @@ str_dale_faction_intro|^Valle é uma cidade reconstruída por Homens do Norte qu
 ; str_khand_faction_intro|^The Variags of Khand are fierce Easterling raiders who wear terrifying battlemasks into battle.^^They rely on fast light infantry (skirmishers and blademasters) and heavy axemen, while their cavalry line contains both light agile skirmishers and heavy kataphracts. The light infantry fling devastating volleys of throwing spears while screening the advance of the main host. The most savage among them charge into battle wearing little armour, attacking with great strength and ferocity.
 ; str_umbar_faction_intro|^The Corsairs of Umbar are southern enemies of Gondor, descendants of the Black Númenoreans who conduct numerous raids on Gondor’s coastlines.^^Corsairs employ both lightly-armoured skirmishers and heavier swordmasters as well as skilled longbowmen. Being a mainly seafaring force, they favour armour that sacrifices toughness for mobility.
 ; str_moria_faction_intro|^Orcs of Moria occupy the halls of Khazad Dúm, once a mighty Dwarven kingdom.^^Like regular orcs, their forces consist of a mix of infantry, archers, skirmishers and warg-riders, but generally they have better equipment than other orcs, because they use metal scraps found in Moria. Some lucky few among them also have access to bits of looted dwarven armour and weapons. Orc Chieftains of Moria have proved themselves stronger and fiercer than their kin, and they are fearsome in battle.
-str_guldur_faction_intro|^Dol Guldur é um antiga fortaleza de Sauron na Floresta das Trevas - na verdade, é a razão que a "Grande Floresta Verde" é agora conhecida pelo seu nome sombrio.^^Aqui, um contigente leal a Mordor treina e prepara uma grande horda, enviando frequentes grupos de saque contra os Elfos e contra grupos de Homens que atravessam a floresta. As tropas de Dol Guldur são em maioria orcs, com uma linha muito similar a de Mordor (infantaria, escaramuçadores, arqueiros, montadores de wargs), mas com menos variedade.
+str_guldur_faction_intro|^Dol Guldur é uma antiga fortaleza de Sauron na Floresta das Trevas - na verdade, é a razão para que a "Grande Floresta Verde" seja agora conhecida pelo seu nome sombrio.^^Aqui, um contingente leal a Mordor treina e prepara uma grande horda, enviando frequentes grupos de saque contra os Elfos e contra grupos de Homens que atravessam a floresta. As tropas de Dol Guldur são em maioria orcs, com uma linha muito similar a de Mordor (infantaria, escaramuçadores, arqueiros, montadores de wargs), mas com menos variedade.
 ; str_gundabad_faction_intro|^Gundabad was a place sacred to the Dwarves, but in these days it has become a massive Orc stronghold in the northern mountains.^^The Gundabad orcs, though more savage than their fellows from other places, fight much like any other orcs, with a similar army lineup (infantry, archers, skirmishers, warg riders). Their equipment is primitive and their fighting style barbaric. Their warg riders are unrivalled in toughness and ferocity. Some among the orcs of Gundabad can even whip themselves into a battle-frenzy.
 ; str_dunland_faction_intro|^The Dunlendings are the “wild men of Dunland”, enemies of the Rohirrim who drove them from their homeland.^^Dunland is barren and poor. The Dunlendings wear very little real armour – mostly furs and cured leather, with some metal signifying status. For weaponry, they wield long pikes and antler axes, with rare swords serving as emblems of prestige. Their horses are thin and weak, certainly no match for the steeds of Rohan, though occasionally the Dunlendings will ride them into battle as skirmishers. In battle, the pikemen advance en masse, presenting a crude but formidable wall of sharp polearms. Some Dunlendings have also cultivated affinity with creatures of the wild, and may unleash packs of savage wolves against their foes.
-str_beorn_faction_intro|^Beornings, os descendentes de Beorn, são um povo dos altos Vales de Anduin, entre a Floresta das Trevas e as Montanhs Nebulosas. Eles habitam sobretudo em florestas, ainda que mantenham o Velho Vau limpo para o comércio, exigindo pedágio em caravana de comerciantes por seus serviços.^^Como homens da floresta, eles se armam com varas robustas e machados afiados, mas se trajam com pouco se tratando de armadura. A infantaria Pesada Beorning lutam com escudos também. Mateiros Beorning são homens de arco habilidosos e fornecem uma linha de arqueiros valiosa.
+str_beorn_faction_intro|^Beornings, os descendentes de Beorn, são um povo dos altos Vales de Anduin, entre a Floresta das Trevas e as Montanhas Nebulosas. Eles habitam sobretudo em florestas, ainda que mantenham o Velho Vau limpo para o comércio, exigindo pedágio em caravana de comerciantes por seus serviços.^^Como homens da floresta, eles se armam com varas robustas e machados afiados, mas se trajam com pouco se tratando de armadura. A infantaria Pesada Beorning lutam com escudos também. Mateiros Beorning são homens de arco habilidosos e fornecem uma linha de arqueiros valiosa.
 ; str_intro_faction_intro_strings_end|faction intro END
 ; str_gondor_extra_info|Good^^Hard^^Gondor (South-East)^^Prince Imrahil^^Mordor, Umbar, Khand, Harad
 ; str_dwarf_extra_info|Good^^Easy^^North Rhovanion (North)^^King Dain II Ironfoot^^Rhun, Gundabad
@@ -2098,12 +2098,12 @@ str_beorn_faction_intro|^Beornings, os descendentes de Beorn, são um povo dos a
 ; str_woodelf_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
 ; str_dale_extra_info|Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad
 ; str_harad_extra_info|Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
-str_rhun_extra_info|Sauron^^Hard^^Rhovanion Norte (Norte)^^Jarl Helcaroth^^Valle, Anões, Floresta das Trevas, Beornings
+str_rhun_extra_info|Sauron^^Difícil^^Rhovanion Norte (Norte)^^Jarl Helcaroth^^Valle, Anões, Floresta das Trevas, Beornings
 ; str_khand_extra_info|Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor
 ; str_umbar_extra_info|Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor
 ; str_moria_extra_info|Saruman^^Very Hard^^South Rhovanion (Center)^^Master Bolg the Lesser^^Imladris, Lothlorien
 ; str_guldur_extra_info|Sauron^^Very Hard^^South Rhovanion (Center)^^Master Fuinur^^Imladris, Lothlorien
-str_gundabad_extra_info|Saruman^^Very Hard^^Rhovanion Norte (Norte)^^Mestre Burza Krual^^Valle, Anões, Floresta das Trevas, Beornings
+str_gundabad_extra_info|Saruman^^Muito Difícil^^Rhovanion Norte (Norte)^^Mestre Burza Krual^^Valle, Anões, Floresta das Trevas, Beornings
 ; str_dunland_extra_info|Saruman^^Hard^^Rohan (South-West)^^Chief Daeglaf the Black^^Rohan
 ; str_beorn_extra_info|Good^^Hard^^North Rhovanion (North)^^Chief Grimbeorn the Old^^Rhun, Gundabad
 ; str_intro_strings_extra_end|Intro EXTRA END
@@ -2111,7 +2111,7 @@ str_gundabad_extra_info|Saruman^^Very Hard^^Rhovanion Norte (Norte)^^Mestre Burz
 ; str_show_keybinds|Special Key Bindings: ^^ Formation Keys:^ Ranks - J ^ Shieldwall - K ^ Wedge - L ^ Square - ; ^ Clear Formations - U ^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
 ; str_tactical_controls|Use the keyboard NUMBERS to select a division. Press 0 to select your entire force.^^Use F1-F4 to order selected divisions. Keep the F1 key down to place selected divisions. One may target an enemy division through this mechanism.^^Pressing the ENTER key often initiates an overhead Strategy Camera.^^Pressing the BACKSPACE key often initiates a Battle Command Display with 'radar.'
 ; str_division_placement|When ONE division is selected, the center of its front rank is placed at the spot indicated.^^When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward.
-str_formations|As Formações Complexas no Menu de Batalha are: ^^-FILEIRAS com as melhores tropas à frente^- PAREDE DE ESCUDOS, fileiras com escudos na frente e armas com mais alcance atrás^- CUNHA com as melhores tropas na frente^- QUADRADA sem nenhuma ordem em particular^- SEM FORMAÇÃO^^Mesmo no último caso, o jogador pode criar formações de até 4 linhas ao usar a ordem Aproximem-se vezes o bastante.
+str_formations|As Formações Complexas no Menu de Batalha are:^^- FILEIRAS com as melhores tropas à frente^- PAREDE DE ESCUDOS, fileiras com escudos na frente e armas com mais alcance atrás^- CUNHA com as melhores tropas na frente^- QUADRADA sem nenhuma ordem em particular^- SEM FORMAÇÃO^^Mesmo no último caso, o jogador pode criar formações de até 4 linhas ao usar a ordem Aproximem-se vezes o bastante.
 ; str_npc18_intro|Great One, hold a moment! I would speak with you!
 ; str_npc19_intro|Hold a moment, Commander. I would have words with you. No, no, you need not kneel, even though you speak to one of royal blood.
 ; str_npc20_intro|Wait. You. I've seen you. I know your face. A dream I had, of you - but why would it be you? Now that I see you with mine own eyes, you are little more than a lowly snaga!
@@ -2126,7 +2126,7 @@ str_npc27_intro|Você!
 ; str_npc19_intro_response_1|Royal blood you say? Ha! What makes you think you have even a drop of it?
 ; str_npc20_intro_response_1|Look here, what do you mean by this, witch? Who are you?
 str_npc21_intro_response_1|Prazer, minha senhora. Com quem tenho a honra de falar?
-str_npc22_intro_response_1|Saudações lorde elfo! É uma grande honra conhece-lo
+str_npc22_intro_response_1|Saudações Senhor Elfo! É uma grande honra conhecê-lo
 str_npc23_intro_response_1|É assim que os Elfos Silvestres cumprimentam seus convidados?
 str_npc24_intro_response_1|{playername} ao seu serviço. Como vai o povo de Durin?
 str_npc25_intro_response_1|Olá. Me pergunto se alguém aqui se voluntariaria para se juntar a nós em nossas viagens.
@@ -2147,7 +2147,7 @@ str_npc27_intro_response_2|[Ignorar e sair]
 ; str_npc20_backstory_a|In my dream, there was a tree. A tree, all of white. And you, you were there, standing beside it. You placed your hand upon its trunk, and lo, it withered down to its very roots. And the shadow in the sky lengthened, and the air grew heavy. I heard a laughter then, from far away in the east. 
 str_npc21_backstory_a|Meu nome é Gálmynë, e fiz questão de conhecer o seu, {playername}. Deixe-me explicar por que
 str_npc22_backstory_a|Você pode ter ouvido histórias de minhas ações em batalhas passadas e esquecidas por homens mortais. Na plenitude do tempo, esta guerra é mais uma época de perigo para os Eldar, mas será a Última Guerra.
-str_npc23_backstory_a|Desculpem minha audácia, estranho, mas não temos muitos visitantes aqui e aqueles que vêm não parecem muito confiáveis. Apenas uma semana atrás, este anão apareceu e ... Não importa. Meu nome é Luevanna, dos elfos da Floresta das Trevas.
+str_npc23_backstory_a|Desculpem minha audácia, estranho, mas não temos muitos visitantes aqui e aqueles que vêm não parecem muito confiáveis. Apenas uma semana atrás, este anão apareceu e ... Não importa. Meu nome é Luevanna, dos Elfos Silvestres da Floresta das Trevas.
 str_npc24_backstory_a|Educado de você perguntar, {playername}. Estamos lutando contra incursões de Orientais e orcs de Gundabad, mas até agora nada que nós e nossos aliados de Valle não consigamos lidar.
 str_npc25_backstory_a|Tenho certeza que você pode encontrar alguns bons voluntários se você falar com o intendente no quartel. Quanto a mim, eu sou apenas um curandeiro e herbalista de habilidades modestas.
 str_npc26_backstory_a|Bom para você! Eles me chamam de Gulm. Esvaziei meu sargento e suas snagas agora me caçam. ^ O leitão sem valor estava chegando! Uma vez, fomos emboscados por uma patrulha de cabeças de palha ... e ele perdeu. 'Fall back' ele grita, depois foge. Apenas Gulm e alguns outros ficaram firmes e quebraram os cavalos. Então nós espancamos o cabelo amarelo em pasta (heh heh heh). Mas se não fosse por nós fortes, tudo seria comida de vermes!
@@ -2155,8 +2155,8 @@ str_npc27_backstory_a|Eu sou o Durgash!
 ; str_npc18_backstory_b|I prevailed! I defeated them! But... one of them was so weak that he perished from the blows I dealt him. If he had been a simple bondsman, that would have been the end of it. But no. He was one of Great Lord Lurmsakun's many sons, by a lesser wife.
 ; str_npc19_backstory_b|Well, you will not find any of Rohan or Dunland who will accept my claim, but it is a true one nonetheless. My grand-dam was a herdswoman, living in the hills, and one day it chanced that old King Fengel, the greedy grasping grandfather of Theoden the Pretender, happened to see her on the banks of the Isen. He took a fancy to her, and my dam was his child.
 ; str_npc20_backstory_b|Do you not know before whom you stand? Ignorant fool. Know that I am Zigûrphel, of ancient Akallabêth - but like as not you know nothing of that name! Know, also, that I seek to redress the wrongs of long ago, the wrongs wrought upon me and my people by the spite of the Valar, they who sank our Great Armament and our home. Ah, Ar-Pharazôn, great and glorious! Shall your vision be unremembered evermore? No, not so long as Zigûrphel lives and has hands to do her work!
-str_npc21_backstory_b|Nasci em uma família nobre e tenho servido a Lady Éowyn como uma dama de honra desde que somos meninas. Nossos pais eram sábios o suficiente para nos permitir treinar ao lado de nossos irmãos em questões de combate, para tornar-se escudeiras de Rohan.
-str_npc22_backstory_b|Lord Elrond enviou-me como um emissário a Lord Celeborn, para dar ajuda e conselhos como é necessário na Guerra nesta parte de Rhovanion.
+str_npc21_backstory_b|Nasci em uma família nobre e tenho servido a Senhora Éowyn como uma dama de honra desde que somos meninas. Nossos pais eram sábios o suficiente para nos permitir treinar ao lado de nossos irmãos em questões de combate, para tornar-se escudeiras de Rohan.
+str_npc22_backstory_b|Senhor Elrond enviou-me como um emissário ao Senhor Celeborn, para dar ajuda e conselhos como é necessário na Guerra nesta parte de Rhovanion.
 str_npc23_backstory_b|Eu gosto de percorrer os caminhos escondidos em nossa bela floresta. Às vezes eu me movo silenciosamente através das árvores e observo os hábitos dos muitos animais da floresta. O canto de um pássaro raro, o aninhamento de um javali são tão bonitos para mim quanto o choque de armas e as grandes muralhas são para os Edain.
 str_npc24_backstory_b|Ajudei a melhorar as defesas de Erebor e treinei um povo anão mais novo, sob a direção do meu venerado pai Dwalin, como é nosso costume.
 str_npc25_backstory_b|Tratei o minha marca do rei de constipação, um mal-estar comum que afeta os homens que vão à guerra. Uma leve infusão de absinto, e tanto as entranhas como a mente são colocadas à vontade.
@@ -2170,7 +2170,7 @@ str_npc22_backstory_c|No entanto, se os inimigos de Lothlórien estiverem corren
 str_npc23_backstory_c|Você não entenderia isso, acho, vendo você preparado para a guerra. Mas você deve ter viajado por toda parte - você viu as outras grandes florestas? Você pode me levar lá?
 str_npc24_backstory_c|Há uma pausa na luta que se adapta a um guerreiro anão da minha ascendência e temperamento. Eu acho que você consegue ver mais ações em suas viagens e sua causa é amigável com os anões? Eu sei que um anão lutador melhorará suas chances de sobrevivência.
 str_npc25_backstory_c|Eu ouvi dizer que há muita luta em outros lugares e nossas terras são gratas por agora. Dos arranhões da sua armadura você deve estar em perigo muitas vezes. Talvez minhas habilidades humildes possam ser melhor usadas com sua empresa, para o bem maior de todos.
-str_npc26_backstory_c|Eu sou uma luta Uruk-hai, e um berserker! O que há para saber matar homens, eu sei disso. Eu estava no serviço da Mão Branca, mas agora a Mão provavelmente me jogaria nos poços de fogo.^^Eu viria com você e caçaria homens no sul, enquanto os snagas de Isengard grunhavam os dentes.
+str_npc26_backstory_c|Eu sou um lutador Uruk-hai, e um berserker! O que há para saber sobre matar homens, eu sei. Eu estava no serviço da Mão Branca, mas agora a Mão provavelmente me jogaria nos poços de fogo.^^Eu viria com você e caçaria homens no sul, enquanto os snagas de Isengard grunhavam os dentes.
 str_npc27_backstory_c|Talvez você possa ser meu próximo mestre.
 ; str_npc18_backstory_later|I have been fortunate, I suppose, that Great Lord Lurmsakun has been occupied elsewhere. His intendants have left me here to rot. But my destiny is not to die as a prisoner! Have you come to grant me my rightful death on the battlefield?
 ; str_npc19_backstory_later|Ho there! You have returned, as I knew you would. My hands are kept idle by my jealous chiefs. Let us speak, Commander! I would follow you, and fight in your ranks to win for myself renown.
@@ -2186,11 +2186,11 @@ str_npc27_backstory_later|Você reconsiderou? Eu lhe servirei bem.
 ; str_npc19_backstory_response_1|Very well. As long as you can fight in the battle line, you can be of use, Dunlending.
 ; str_npc20_backstory_response_1|Strange way of asking to join me, witch. But very well, you may come along.
 str_npc21_backstory_response_1|Gostaria de receber a ajuda de uma escrava Rohan, se oferecida.
-str_npc22_backstory_response_1|Pode ser presunçoso de mim perguntar, mas minha empresa poderia usar sua habilidade nas próximas batalhas.
+str_npc22_backstory_response_1|Pode ser presunçoso de mim perguntar, mas minha companhia poderia dispor de sua habilidade nas próximas batalhas.
 str_npc23_backstory_response_1|Nós viajamos pelo mundo, mas para defender tudo o que é justo, damos batalha ao inimigo.
 str_npc24_backstory_response_1|Na verdade, um guerreiro anão seria bem vindo na minha empresa.
 str_npc25_backstory_response_1|Podemos usar um curandeiro e um herbalist.
-str_npc26_backstory_response_1|Eu acho que podemos colocar um berserker para um bom uso.
+str_npc26_backstory_response_1|Eu acho que podemos colocar um berserker para uma boa utilidade.
 str_npc27_backstory_response_1|Você fará.
 ; str_npc18_backstory_response_2|Pah! A murderous pit dog is not fit to be a companion of mine.
 str_npc19_backstory_response_2|Você fala sobre grandes feitos. Vai fazer algum você mesmo, antes de me abordar de novo!
@@ -2225,14 +2225,14 @@ str_npc27_signup_2|Você não vai se arrepender de me levar.
 ; str_npc18_signup_response_1|I like your spirit. Very well, I will send word to Lurmsakun on your behalf.
 ; str_npc19_signup_response_1|Well, then, 'Prince', take up your weapons. You fight for me, now.
 ; str_npc20_signup_response_1|I hope, for your sake, that your words are not idle boasting. Do not disappoint me, Zigûrphel.
-str_npc21_signup_response_1|Impressionante. Estamos prontos para sair, sempre que você estiver, minha Senhora.
+str_npc21_signup_response_1|Impressionante. Estamos prontos para sair, assim que você estiver, minha senhora.
 str_npc22_signup_response_1|Teremos a honra de ter a companhia de um senhor elfo.
 str_npc23_signup_response_1|Muito bem. Espero que você não fique longe do primeiro orc que vemos.
 str_npc24_signup_response_1|Muito bem, Mestre Dwarf, você pode se juntar a nós.
 str_npc25_signup_response_1|Você estará seguro conosco, eu prometo. Nós vamos sair em breve.
 str_npc26_signup_response_1|Muito bom. Faça o que lhe disser, e eu vou te alimentar bem.
 str_npc27_signup_response_1|Muito bem, vamos lá.
-; str_npc18_signup_response_2|Your are fierce... perhaps too fierce. A little more time in the stocks for now might teach you obedience.
+str_npc18_signup_response_2|Você é feroz ... talvez feroz demais. Por enquanto, um pouco mais de tempo na jaula pode te ensinar a obediência.
 ; str_npc19_signup_response_2|You shall have to sit on these bales of hay for a little longer, 'Prince'.
 ; str_npc20_signup_response_2|Your brag and abuse grate upon my ears. Tame your tongue before we speak again!
 str_npc21_signup_response_2|Peço desculpas, minha senhora, talvez outra vez.
@@ -2288,7 +2288,7 @@ str_npc21_2ary_morality_speech|Seu perdão, comandante. As mulheres da minha est
 str_npc21_personalityclash_speech|Eu mencionei odeio {s11}?
 str_npc22_personalityclash_speech|Eu mencionei odeio {s11}?
 str_npc23_personalityclash_speech|{playername}, eu apenas vi {s11} andar descaradamente sobre um ninho de pássaros jovens. Sua torpeza destruiu a vida jovem de criaturas inocentes.
-str_npc24_personalityclash_speech|Lord {s11} faz bem em uma batalha, mas eu me pergunto se ele cega o inimigo pelo brilho de seus cabelos? Ou eles se adormecem de sua fama e comportamento inconcebível?
+str_npc24_personalityclash_speech|Senhor {s11} fez bem em uma batalha, mas eu me pergunto se ele cega o inimigo pelo brilho de seus cabelos? Ou eles desmaiam temendo sua fama e comportamento inconcebível?
 str_npc25_personalityclash_speech|Comandante, devo apresentar uma queixa contra {s11}. Ele continua a incomodar-me sobre fazer dele um certo brew chamado "a fada verde".
 str_npc26_personalityclash_speech|Eu mencionei odeio {s11}?
 str_npc27_personalityclash_speech|Eu mencionei odeio {s11}?
@@ -2397,7 +2397,7 @@ str_npc27_home_description_2|Minas Morgul, onde Nazgul bebe o dia todo, har-har!
 ; str_npc20_home_recap|What more is there to tell, Commander? I practised my arts in the dungeons of Dol Guldur. My dreaming eye sees deep and far, and I saw you and your works in this War. It would seem I must give you what aid I can, so that the powers of the West may fail and the Power in the East may rise once more and rule until the world's ending.
 str_npc21_home_recap|Não acho divertido que você esqueça tão facilmente.
 str_npc22_home_recap|Eu vou satisfazer sua curiosidade, mas não vamos demorar.
-str_npc23_home_recap|Sou nascido e criado em Na Floresta das Trevas, um Elfo Silvestre. Nossas habilidades com a madeira são conhecidas por todos.
+str_npc23_home_recap|Sou nascido e criado na Floresta das Trevas, um Elfo Silvestre. Nossas habilidades com o artesanato são conhecidas por todos.
 str_npc24_home_recap|Sou o filho de Dwalin do povo de Durin.
 str_npc25_home_recap|Sou um curandeira e herbalista do Vale.
 str_npc26_home_recap|Gulm vai falar se quer saber. Mas falar não mata inimigos.
@@ -2496,6 +2496,6 @@ str_harad_guildmaster_player_found_ok|Entendo. Eu espero que esse Lykyada seja u
 str_harad_main_guildmaster_companion|Eu ouvi uma história envolta das piras: quando a Serpente Negra convocou suas bandeiras, que são um dos nossos melhores arqueiros montados, muitos ostentaram de como todos os tesouros do Ocidente seriam deles; mas um chamado Lykyada ficou calado. E então perguntaram a ele o que esperava do Oeste, ele se inclinou, e pegou um punhado de areia, "O que eu preciso que minha terra natal não tenha me dado? Contemplem, eu os presenteio com a areia em que pisei." E dito isso, ele deixou o vento do leste soprar a areia, em direção ao oeste. Então todos que isso ouviram arrependidos de suas palavras imprudentes, juraram seguí-lo. Se ele te achar digno, Comandante, ele pode te seguir. Procure por ele na presença de nossos chefes.
 str_rohan_hornburg_guildmaster_companion|Todos em Hornburg tem sues deveres dados, Comandante - todos salvo um, eu deveria dizer. Talvez esse único calvalgue contigo, por que de outra forma ele seria sortudo se outro Éored consentir em telo! Um bêbado no nosso Ulfas - bom ânimo ele trás aos camaradas dele, e ele é um Cavaleiro habilidoso, mas um relutante ele é preso a um caneco sem secá-lo antes! Procure por ele lá no salão, se isso não te incomoda.
 str_imladris_guildmaster_companion_player_ask|Ancião, eu procuro o auxílio de renomados guerreiros, Homens e Elfos, do fabuloso Norte.
-str_imladris_guildmaster_companion_none|Olhe bem, Comandante. Ante a você está o talvez maior rol do Norte, nessa Era e em qualquer Era para frente. Tanto Homens como Elfos, nós que aqui viemos não esperamos retornar. Do último Lar Amigável nós viemos; dos vales e florestas de Eriador os últimos dos Núnatani, que se chamam Dúnedain, vieram. Cada um de nós tem seu dever - nínguem deve seguir seus impulsos, guarde seus exercícios e seus comandos e recrutem de nossa guarnição.
+str_imladris_guildmaster_companion_none|Olhe bem, Comandante. Ante a você está o talvez maior rol do Norte, nessa Era e em qualquer Era para frente. Tanto Homens como Elfos, nós que aqui viemos não esperamos retornar. Do último Lar Amigável nós viemos; dos vales e florestas de Eriador os últimos dos Núnatani, que você chama de Arnor, vieram. Cada um de nós tem seu dever - ninguém deve seguir seus impulsos, guarde seus exercícios e seus comandos e recrute da nossa guarnição.
 str_imladris_guildmaster_companion_player_none_ok|Eu entendo, Ancião. Obrigado pelo seu tempo.
 str_imladris_guildmaster_player_found_ok|Eu entendo, Ancião. Obrigado pelo seu tempo.

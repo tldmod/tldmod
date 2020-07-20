@@ -3,7 +3,7 @@ imod_cracked|%s di Fattura Debole
 imod_rusty|%s di Fattura Grezza
 imod_bent|%s di Fattura Scadente
 imod_chipped|%s - (Scheggiato)
-imod_battered|%s - (Malandato)
+imod_battered|%s in Cattivo Stato
 imod_poor|%s di Fattura Debole
 imod_crude|%s di Fattura Semplice
 imod_old|Antico
@@ -16,10 +16,10 @@ imod_tempered|%s di Fattura Temprata
 imod_deadly|%s - (Letale)
 imod_exquisite|%s - (Squisito)
 imod_masterwork|%s di Fattura Pregevole
-imod_heavy|%s di Fattura Pesante
+imod_heavy|%s Pesante
 imod_strong|%s - (Forte)
 imod_powerful|%s - (Potente)
-imod_tattered|%s - (Malandato)
+imod_tattered|%s in Cattivo Stato
 imod_ragged|%s di Fattura Rozza
 imod_rough|%s di Fattura Rozza
 imod_sturdy|%s di Fattura Solida
@@ -28,9 +28,9 @@ imod_hardened|%s di Fattura Indurita
 imod_reinforced|%s di Fattura Rinforzata
 imod_cloak|%s con mantello
 imod_lordly|%s di Fattura Pregevole
-imod_lame|%s - (Azzoppato)
-imod_swaybacked|%s - (Sfiancato)
-imod_stubborn|%s - (Testardo)
+imod_lame|%s Azzoppato
+imod_swaybacked|%s Sfiancato
+imod_stubborn|%s Testardo
 imod_timid|%s - (Timido)
 imod_meek|%s Coperti di Sangue
 imod_spirited|%s - (Vigoroso)

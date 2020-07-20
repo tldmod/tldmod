@@ -1,7 +1,7 @@
 menu_start_game_1|^^^^^^^^^^자네는 무엇을 위해 싸우는가?
 mno_start_good|새로운 시대의 시작
 mno_start_evil|인간의 황혼
-; mno_faction_intros|Learn about the different factions of Middle-Earth
+mno_faction_intros|중간계의 세력들에 대해 알아봅시다.
 mno_go_bback|돌아가기
 menu_start_phase_2|^^^^^미들 어스. 동쪽의 암운은 짙어지고,^ 암흑의 족속들은 오랜 은둔을 끝내고 나오고 있다.^ 자유민들은 그들이 이제껏 보지 못 한 전쟁을 준비하고 있다.^인간, 요정, 난쟁이 그리고 오크들은 그들의 역할을 행할것이다.^^다만, 어떠한 역할인가는 앞으로 지켜봐야 할 것이리라...
 mno_go_forth|당신이 선택한 길을 따라 앞으로 가십시오...
@@ -44,7 +44,7 @@ mno_leave_custom_battle_2|취소
 menu_custom_battle_end|^^^^^전투가 끝났습니다.{s1}당신의 편은 {reg5}의 적을 죽였고 {reg6}병사를 전투로 잃었습니다.^당신은 {reg7}의 전투중에 적을 직접 죽였습니다.
 mno_replay|전투 다시 하기
 mno_continue_dot|계속
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|^^^^^^영광스러운 항전이었으나 끝내 패배했습니다.^^ 당신과 당신의 동료들은 {reg5}  명의 적을 쓰러트렸고, 당신은 전투 중에 {reg7} 명의 적을 직접 쓰러트렸습니다.
 mno_replay_cbd|전투 다시 하기
 mno_continue_dot_cbd|계속
 mno_dot_go_back|. 돌아간다
@@ -53,20 +53,20 @@ mno_start_ma|인간
 mno_start_el|요정
 mno_start_dw|난쟁이
 menu_start_evil|^^^^^^^^^^누구를 위해 싸우시겠습니까?
-mno_start_eye|모르도르, 반지의 제왕 사우론
+mno_start_eye|반지의 제왕, 모르도르의 사우론.
 mno_start_hand|아이센가드, 백색의 사루만
 menu_start_eye|^^^^^^^^^당신의 주인은 경계하는 눈, 사우론 입니다.^종족을 선택하세요.
-mno_start_or|사우론 휘하의 오크
+mno_start_or|오르크. 눈꺼풀 없는 눈을 섬기는.
 mno_start_ur|오크의 새로운 종, 우루크
-mno_start_em|사우론의 지배를 받는 인간
+mno_start_em|인간, 사우론에게 예속된.
 menu_start_hand|^^^^^^^^^^당신의 주인은 백색의 사루만 입니다.^종족을 선택하세요.
 mno_start_whor|사루만 휘하의 오크
-; mno_start_isur|one of the URUK-HAI, bred in Isengard
-mno_start_duma|던랜드의 인간
+mno_start_isur|우루크-하이 중 하나. 아이센가드에서 길러진.
+mno_start_duma|던랜드인, 서쪽 평야의.
 menu_start_good_man|^^^^^^^^^^당신의 민족을 선택하세요:
-mno_start_go|백색의 탑 왕국, 곤도르
+mno_start_go|백색 탑의 왕국, 곤도르.
 mno_start_ro|기마 민족, 로한
-mno_start_du|고대 왕국의 인간, 두네다인
+mno_start_du|고대 왕조의 인간들, 두네다인.
 mno_start_be|곰 인간, 베오른족
 mno_start_da|너른골 북부 왕국
 menu_start_good_elf|^^^^^^^^^^어느 숲에서 사시겠습니까, 선인이시여?
@@ -92,10 +92,10 @@ mno_start_rh|동쪽에서 온 야만인, 룬
 mno_start_kh|남동쪽에서 온 약탈 민족, 칸드
 menu_start_eye_uruk|^^^^^^^^^어디에 숨어있습니까?
 mno_start_arm_uruk|모르도르의 군대 집결지
-mno_start_cav_uruk|돌 굴드르 동굴 속
+mno_start_cav_uruk|돌 굴두르 동굴 속
 menu_start_eye_orc|^^^^^^^^^어디에 숨어있습니까?
 mno_start_arm|모르도르의 군대 집결지
-mno_start_cav|돌 굴드르 동굴 속
+mno_start_cav|돌 굴두르 동굴 속
 menu_start_hand_orc|^^^^^^^^^어디에 숨어있습니까?
 mno_start_armis|아이센가드의 군대 집결지
 mno_start_minmo|모리아의 광산 내부
@@ -106,9 +106,9 @@ mno_start_2_hib|귀족
 menu_start_haradrim|^^^^^^^당신은 하라드인,^사막의 민족입니다.^ 당신의 계통을 선택하세요
 mno_start_1_des|사막 민족
 mno_start_2_far|남끝 하라드 부족민
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+menu_start_numenorean|^^^^^^^당신은 검은 누메노르인,^모르고스와 어둠에 충실한 추종자입니다.^당신이 눈을 섬기는 곳을 선택하세요.
+mno_start_1_bn|사우론의 입 휘하. 모란논.
+mno_start_2_bn|강령술사의 숲. 돌 굴두르.
 menu_choose_gender|^^^^^^^^^^성별은?
 mno_start_male|남자
 mno_start_female|여자
@@ -116,7 +116,7 @@ mno_proc|일반적으로 진행
 menu_start_as_one|^^^^^^^^^^당신의 병종은 무엇입니까?
 mno_start_default|{s23}되기 (기본)
 mno_start_up1|{s21}되기 (쉬움)
-; mno_start_up2|Become a {s22} (Easy)
+mno_start_up2|{s22}되기 (쉬움)
 mno_continue|계속...
 menu_character_report|^^^^^부대 사기 : {reg8}^부대크기 제한:{reg7}^{s5}
 menu_camp|^^^^당신은 {s1}에 있습니다.{s2}^^무엇을 하시겠습니까?
@@ -126,10 +126,10 @@ mno_camp_action|물품 사용
 mno_camp_wait_here|캠프를 차려 시간을 보낸다
 mno_camp_options|제 3세계 옵션 변경
 mno_Dev_Menu|개발자 메뉴
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+menu_dev_menu|여기서는 다양한 치트와 툴과 같은 추가 옵션을 사용할 수 있습니다.^^ 그러나, 아직 실험중인 이벤트나 트리거,캠페인은 게임을 망가트릴 수 있습니다.^^ 위험이 있다는 점을 알아두세요! ^^ 또한, 버그를 신고하려면 Dev 메뉴를 이용해주세요.
 mno_Cheat_enable|치트키/모드변경 옵션 사용
 menu_game_options|^^^^^^^변경을 위해 옵션 클릭
-; mno_game_options_war_level_start|War Starts at Level: {s1}
+mno_game_options_war_level_start|전쟁이 다음 레벨에 시작됩니다: {s1}
 mno_game_options_restrict_items|제한된 플레이어 장비:{s7}
 mno_game_options_formations|진형과 인공지능: {s7}
 mno_game_options_siege_ai|향상된 공성 AI: {s7}
@@ -149,7 +149,7 @@ mno_game_options_start_back|돌아가기
 menu_camp_tweaks|^^^^^^^^당신이 조정하고 싶은 옵션을 선택하세요.
 mno_tweak_options_compat|호환성 수정....
 mno_tweak_options_strat|전략 수정...
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
+mno_tweak_options_battlefield_ai|전장 AI 수정...
 mno_tweak_options_back|옵션 메뉴로 돌아가기
 menu_camp_compat_tweaks|^^^^^^^옵션변경을 위해 클릭하세요(shift키를 누르면 감소합니다);^(이건 호환성 때문이지 치트가 아닙니다)
 mno_game_options_compat_party|부대의 최대수: {s1}
@@ -196,13 +196,13 @@ mno_leave|떠나기
 menu_simple_encounter|^^^^^{s2}^당신은 {reg11}명의 적군에 맞서 싸울 {reg22}명의 병사를 가지고 있습니다.\n^^전투는 {s3}{s4}에서 일어나고 있습니다.^^당신의 명령은?
 mno_encounter_attack|{reg21?적을 향해 돌격한다:적과 싸울 준비를 한다}
 mno_encounter_order_attack|당신이 뒤로 물러나 있는 동안 병사들에게 {reg21?공격하라고:싸우라고} 명령한다
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
+mno_control_allies_menu|당신의 아군에게 명령하기 위해 영향력을 사용한다.
 mno_encounter_hide|적으로부터 숨는다...
 mno_special_whip|{s4}을(를) 채찍질하며 그들을 향해 돌격한다
 mno_encounter_leave|떠나기
 mno_encounter_retreat|몇몇 병사들을 당신이 후퇴할 때 남겨놓기
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_simple|그들에게 적에게 돌격하라 명령한다.
+mno_player_control_allies_back|돌아가기..
 mno_hide_close|계속...
 menu_encounter_retreat_confirm|^^^^^부대원이 가진 가장 높은 전략가 스킬({reg2})로, {reg3?당신은:{s3}은(는)} 당신과 부대원들을 살아서 탈출시킬 계획을 궁리해냈지만, 적을 멈추기 위해 {reg4}명의 군사를 뒤에 남겨야만 합니다.
 mno_leave_behind|계속 간다. 그들의 희생이 남은 이들을 살릴 것이다
@@ -230,9 +230,9 @@ mno_pre_join_leave|참전하지 않는다
 menu_join_battle|당신은 {s1}에 맞서 {s2}의 군단에 가세했습니다.^우리측 {reg22}명의 군대로 {reg11}명의 적군에 맞서싸워야 합니다.^^전투는 {s3}{s4}에서 일어나고 있습니다.
 mno_join_attack|적에게 돌격하기
 mno_join_order_attack|당신이 뒤에 있는동안 동맹군과 함께 공격하라고 명령한다.
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|당신의 아군에게 명령하기 위해 영향력 포인트를 사용한다.
 mno_join_leave|떠나기
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|그들에게 적에게 돌격하라 명령한다.
 menu_join_order_attack|{s4}^^당신의 피해: {s8}^^동맹의' 피해: {s9}^^적의 피해: {s10}
 mno_enter|들어가기
 menu_battlefields|^^^^^^^^^전장을 선택하세요...
@@ -254,7 +254,7 @@ mno_moria_exit_scene|나갈 길을 찾는다!
 menu_castle_outside|당신은 {s2}의 야외에 있습니다.{s11} {s3} {s4}
 mno_moria_enter|비밀 입구를 통해 모리아의 본관으로 돌아가기
 mno_moria_enter_door|모리아에 입장
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|책을 읽는다.
 mno_castle_start_siege|{reg6?town:castle} 포위하기
 mno_castle_leave|떠나기
 menu_castle_besiege|당신은 {s1}을 포위하고 있습니다. {s2} {s3}
@@ -269,7 +269,7 @@ menu_construct_ladders|부대원이 가진 가장 높은 건축가 스킬 ({reg2
 mno_build_ladders_cont|실행
 menu_castle_attack_walls_simulate|{s4}^^아군 사상자: {s8}^^적군 사상자: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^아군 사상자: {s8}^^동맹 사상자: {s9}^^적군 사상자: {s10}
-; menu_castle_taken_by_friends|Nothing to see here.
+menu_castle_taken_by_friends|여기서 볼 건 없다.
 menu_castle_taken|여기는 볼 일이 없습니다.\nmenu_castle_taken|{s3}는 당신의 군대에게 함락 되었고, 지금 당신은 {reg2?도시의:성의} 모든 통제권을 가졌습니다.{reg1? 당신이 이 곳을 취하는 것을 막을 자는 아무도 없는 것으로 보입니다...:}
 menu_castle_taken_2|{s3}은 당신의 군사에게 함락되었고, 당신은 성의 모든 통제권을 가졌습니다. {s9}에게 당신의 승리에 대한 서신을 보낼 시간입니다. {s5}
 mno_castle_taken_no_claim|보상 요구하지 않기
@@ -301,9 +301,9 @@ mno_dwarven_warehouse_door|드워프 창고에 들어가기
 mno_talk_to_castle_commander|{s61}의 병영을 방문
 mno_speak_with_elder|{s6}와(과) 대화
 mno_isengard_underground|지하 선술집에 들어가기
-; mno_isengard_underground_door|Go to the underground caverns
+mno_isengard_underground_door|지하 동굴로 들어가기.
 mno_tirith_toplevel|꼭대기층으로 올라가기
-; mno_erebor_gates|Visit the Great Gates.
+mno_erebor_gates|정문으로 가기.
 mno_town_leave|떠나기
 mno_town_leave_door|떠나기
 menu_player_initiated_siege_result|당신은 {s2}의 깃발 아래 중심지를 공격했습니다.
@@ -346,11 +346,11 @@ menu_player_added_to_war_council|^^^^^전령이 말하길{s2}가 당신을 그�
 mno_player_added_to_war_council_close|닫기
 menu_player_added_to_siege_reports|^^^^^전령이 와 말하길, 당신은 {s24}로서 {s2}가 적진을 공략하거나 되려 {s2}가 공략당할 때 보고를 받게 될 것이라고 했습니다.
 mno_player_added_to_siege_reports_close|닫기
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^전령이. 당신에게 다가와서 당신은 이제 최대 {reg55}명의 군사를 가진 {s24}로서 {s2}에게 당신을 따르도록 명령할 수 있다고 전했습니다.
 mno_player_added_to_allow_follow_close|닫기
 menu_center_besieged_event|^^^^^전령이 당신에게 황급히 달려와 {s3}의 {s2}가 {s1}을 포위하고 있다고 보고했습니다.
 mno_center_besieged_event_close|닫기
-; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+menu_guardian_party_spawned|^^^^^전령이 {s6}이 수도를 방어하기 위한 최후의 시도로 거대한 군세를 {s7}에 집결시키고 있다 보고했습니다.
 mno_intro_next|계속...
 mno_start_defend_caravan|캐러밴을 지키자!
 mno_start_raid_caravan|캐러밴을 습격하자!
@@ -370,15 +370,15 @@ mno_lord_field_ai|향상된 영주 AI: {s7}
 mno_horse_archer_field_ai|향상된 궁기병 AI: {s7}
 mno_vs_orcs_field_ai|궁수가 오크를 상대로 정확히 조준함 (오크의 머리 위를 조준하지 않음): {s7}
 mno_battlefield_animals|바르그 / 말이 아닌 동물 동료가 전투에 참여함: {s7}
-; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+mno_slow_when_wounded|부상을 당하면 느려집니다:  {s7}
+mno_battle_encounter_effects|어떤 세력은 전장 상황에 영향을 받습니다.(Ex 폭풍,안개):  {s7}
 menu_hungry_orc|없음
 menu_leaving_elf|없음
 mno_defend_refugees|침략자들을 주시한다...
 mno_attack_refugees|난민 무리를 공격한다...
 mno_leave_refugees|잠시 놔둔다...
 mno_evil_war_tut_continue|계속...
-; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+menu_guardian_party_quest|{s8}은 아이센가드는 벼랑 끝에 서있으며, 최후의 항전을 시도하고 있다고 말했습니다. 그는 당신이 아이센가드와의 최후의 전투에 참여하길 원한다고 서신을 전해왔습니다. 작전에 참여하려면 적어도 {reg13}명의 병사가 있어야 하고, 만약 병사가 없다면 서둘러 징집하라고 지침을 내렸습니다.
 mno_guardian_party_reject|그와 합류할 수 없다고 전한다.
 mno_guardian_party_send_word|곧 합류할 것이라 전하기
 menu_alternate_training_fight|자네는 {reg5}명의 상대와 맞서야 하네. 준비 되었는가?
@@ -414,7 +414,7 @@ mno_next_rescue_scene_door|계속 전진하라!
 mno_pick_troops1|미션을 수행할 동료를 선택하세요,[reg0}이 선택되었습니다.
 menu_pick_troops|잠입 임무에 누구를 데려갈까요? 현재 당신은 {reg0} 명을 선택했습니다. 최대 10명까지 동행할 수 있습니다.
 mno_go_forward|선택 종료 및 진행
-; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
+menu_burial_mound|당신은 {s2}의 {s1}에 접근하고 있다.   {s28}의 군세에 의해 패배한.  전사한 이들의 부러진 무기가 쌓여 있다.
 mno_pay_respects|무릎을 꿇고 경의를 표하기
 mno_swear_oath|배반의 맹세를 하라!
 mno_despoil|이 장소를 훼손
@@ -424,7 +424,7 @@ menu_burial_mound_oath|당신은 큰 소리로 {s4}의 죽음에 대한 복수�
 menu_funeral_pyre_oath|당신은 큰 소리로 {s4}의 죽음에 대한 복수의 맹세를 했습니다. 당신은 끊임없이 {s3}의 힘을 추구하고 그들을 파괴합니다. 당신의 말은 저 멀리 바람에 실려가고 바다 너머 그들이 들었을지 누가 알겠습니까?
 mno_leave_pyre_oath|장작더미를 떠나기
 menu_burial_mound_despoil|당신은 직접 {s1}의 기념비를 철거하고 그 돌덩이를 저주, 저속한 노래와 이루 말할 수 없는 행위들을 통해 더럽혔습니다. 당신의 부대원들은 죽은 자에 대한 두려움으로 뒤로 물러섰지만 당신의 사악함에 대한 경외감을 새로 갖게 된 것으로 보입니다.
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+menu_funeral_pyre|당신은 까맣게 탄 {s2}의 {s3}의 잔해에 접근하고 있다.   {s28}의 군세에게 패배한.   이곳의 시체들은 엄숙하게 화장되었다.   아무 가치도 남아있지 않다.
 mno_leave_pyre|장작더미를 떠나기
 menu_town_ruins|당신이 다가갔을때, 당신은 {s1}이 {s2}임을 확인했습니다.
 mno_ruin_menu_0|이 장소 탐험하기

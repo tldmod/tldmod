@@ -15,7 +15,7 @@ skl_surgery_desc|1 포인트가 오를 때 마다 4%%의 확률로 죽지 않고
 skl_wound_treatment|부상 치료
 skl_wound_treatment_desc|1 포인트당 부대 치료속도가 20%% 증가합니다.(부대 기술)
 skl_inventory_management|소지품 관리
-skl_inventory_management_desc|1 포인트가 오를 때 마다 소지품 제한 갯수가 6 증가합니다. (리더 기술)
+skl_inventory_management_desc|1 포인트가 오를 때 마다 소지품 제한 갯수가 +6 증가합니다. (리더 기술)
 skl_spotting|탐지
 skl_spotting_desc|1 포인트가 오를 때 마다 부대의 시야범위가 10%% 증가 합니다(부대 기술)
 skl_pathfinding|길 찾기

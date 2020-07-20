@@ -1,7 +1,7 @@
 ui_at_learning_limit|( 이 종족의 능력 한계치입니다. )
 ui_not_enough_skill_points_to_learn|( 이것을 배우기엔 스킬 포인트가 부족합니다. )
 ui_not_enough_attributetype_to_learn_this_skill|( %s 가 이 스킬을 배우기에 부족합니다. )
-; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
+ui_explanation_agility|민첩: 각 포인트마다 무기 숙련도를 5 포인트 늘릴수 있으며 무기 속도가 0.5% 상승합니다. 다음과 같은 스킬은 민첩 수치의 1/3 이상 투자할 수 없습니다. 무기 마스터, 방패, 운동, 승마, 승마궁술, 약탈.
 ui_retreated_battle|%s 가 궤멸당했습니다.
 ui_riding_skill_not_adequate_to_mount|승마술 스킬이 너무 낮습니다.
 ui_camp|행동
@@ -55,80 +55,80 @@ ui_crouch|웅크리기
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|당신은 캐릭터를 가져오기를 원합니까?
-ui_explanation_strength|힘 : 포인트 마다 +1의 hit 포인트를 더합니다. 다음 기술은 힘의 1/3을 초과할수 없습니다: 방어,  타격력,  투척력, 당김력
-; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
-; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
-; ui_delivered_number_damage|Delivered %d damage.
+ui_explanation_strength|힘 : 포인트 마다 +1의 체력을 얻습니다. 다음 기술은 힘의 1/3을 초과할수 없습니다: 방어,  타격력,  투척력, 당김력
+ui_explanation_intelligence|민첩: 각 포인트마다 무기 숙련도를 5 포인트 늘릴수 있으며 무기 속도가 0.5% 상승합니다. 다음과 같은 스킬은 민첩 스킬의 1/3 이상 올릴수가 없습니다. 무기 마스터, 방패, 운동, 승마, 승마궁술, 약탈.\n지능: 각 포인트마다 스킬 포인트를 1 얻습니다. 특정 상황에서 얻는 경험치가 증가합니다. 다음과 같은 스킬은 민첩 수치의 1/3 이상 투자할 수 없습니다. 훈련 교관. 추적. 길 찾기. 탐지. 소지품 관리 부상 치료. 외과 수술. 그리고 응급 처치.
+ui_explanation_charisma|카리스마: 각 포인트마다 당신의 부대 크기가 +1 증가합니다. 다음과 같은 스킬은 카리스마 수치의 1/3 이상 투자할 수 없습니다. 포로 수송. 서바이벌. 리더십. 거래 흥정.
+ui_delivered_number_damage|%d 만큼의 피해를 주었습니다.
 ui_mission_losses_killed|죽였다 :
-; ui_party_losses|%s  : %d wounded --- %d killed of %d.
+ui_party_losses|%s  : %d 부상 --- %d의 손에 %d가 죽었습니다.
 ui_following|따라가기
 ui_accompanying|동행하기
-; ui_dumping_value_items|%d items will be permanently lost, are you sure?
-; ui_dumping_value_item|One item will be permanently lost, are you sure?
-; ui_notification_requirements_not_met|You don't have the required skills or attributes for this weapon.
+ui_dumping_value_items|%d 이 영원히 사라질 것입니다. 계속하시겠습니까?
+ui_dumping_value_item|하나의 소지품이 영원히 사라질 것입니다. 계속하시겠습니까?
+ui_notification_requirements_not_met|이 무기를 사용하기에는 스킬이나 능력치가 너무 낮습니다.
 ui_disband|해산하다
 ui_you_hit_a_friendly_troop|당신은 우호적인 부대를 공격했다!
-; ui_you_are_not_carrying_any_arrows|You are not carrying any arrows.
+ui_you_are_not_carrying_any_arrows|화살이 다 떨어졌습니다.
 ui_delivered_number_damage_to_horse|말에게 %d 만큼의 피해를 입혔습니다.
-; ui_received_number_damage|Received %d damage.
-; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
-; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
-; ui_value_killed_by_value|%s killed by %s.
-; ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
-; ui_you_got_number_experience|You got %d experience.
-; ui_you_have_advanced_to_level_number|You have advanced to level %d.
+ui_received_number_damage|%d 만큼의 피해를 입었습니다.
+ui_you_have_improved_your_proficiency_in_value_to_number|%s 숙련도가 %d 만큼 올랐습니다.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|당신의 %s 숙련도가 +%d 되어 %d만큼 올랐습니다.
+ui_value_killed_by_value|%s가 %s에 의해 죽었습니다.
+ui_value_knocked_unconscious_by_value|%s가 %s에 의해 의식을 잃었습니다.
+ui_you_got_number_experience|경험치를 %d 만큼 얻었습니다.
+ui_you_have_advanced_to_level_number|당신의 레벨이 %d로 올랐습니다.
 ui_you_got_value|%s 받음.
-; ui_quest_succeeded_value|Quest succeeded: %s.
-; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
-; ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
-; ui_shared_number_experience_within_party|Shared %d experience within party.
-; ui_your_relations_with_value_has_improved_from_number_to_number|Your relations with %s has improved from %d to %d.
-; ui_your_relations_with_value_has_deteriorated_from_number_to_number|Your relations with %s has deteriorated from %d to %d.
+ui_quest_succeeded_value|다음 퀘스트를 완료했습니다: %s
+ui_number_of_companions_exceeds_leadership_limit|동료의 수가 당신의 리더십 한계를 초과했습니다.
+ui_number_of_prisoners_exceeds_prisoner_management_limit|포로의 수가 당신의 포로 수송 한계를 초과했습니다.
+ui_shared_number_experience_within_party|%d 만큼의 경험치를 파티와 나누었습니다.
+ui_your_relations_with_value_has_improved_from_number_to_number|당신과 %s의 관계가 %d에서 %d로 상승했습니다.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|당신과 %s의 관계가 %d에서 %d로 하락하였습니다.
 ui_you_lost_value|너는 패배했다 %s.
-; ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
+ui_change_graphics_settings_explanation|당신이 변경한 몇 가지 사항은 새로운 구역에 진입할 때 적용될 것입니다.
 ui_game_log_window|게임 로그 창
 ui_blunt_short|b
-; ui_tracks|Tracks
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_fire_orders|Fire orders
-; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
+ui_tracks|흔적
+ui_order_button_hold_fire|사격 중지!
+ui_order_button_fire_at_will|자유 사격!
+ui_order_button_fire_orders|사격 명령
+ui_need_to_learn_prisoner_management|포로를 더 수용하려면 포로 수송 스킬을 더 배워야합니다.
 ui_game_log_window|게임 로그 창
-; ui_unbalanced|Unbalanced
-; ui_can_crush_through_blocks|Can crush through blocks
+ui_unbalanced|불균형함
+ui_can_crush_through_blocks|방어를 뚫고 공격
 
-; ui_order_1|Select Order 1
-; ui_order_2|Select Order 2
-; ui_order_3|Select Order 3
-; ui_order_4|Select Order 4
-; ui_order_5|Select Order 5
-; ui_order_6|Select Order 6
-; ui_order_button_hold_this_position|Hold this position
-; ui_order_button_follow_me|Follow me
+ui_order_1|1번 명령 선택
+ui_order_2|2번 명령 선택
+ui_order_3|3번 명령 선택
+ui_order_4|4번 명령 선택
+ui_order_5|5번 명령 선택
+ui_order_6|6번 명령 선택
+ui_order_button_hold_this_position|지금 위치를 유지하라!
+ui_order_button_follow_me|나를 따르라!
 ui_order_button_charge|돌격
-; ui_order_button_stand_ground|Stand ground
-; ui_order_button_retreat|Retreat
-; ui_order_button_advance|Advance ten paces
-; ui_order_button_fall_back|Fall back ten paces
-; ui_order_button_spread_out|Spread out
-; ui_order_button_stand_closer|Stand closer
+ui_order_button_stand_ground|멈춰서라
+ui_order_button_retreat|퇴각!
+ui_order_button_advance|10 보 전진!
+ui_order_button_fall_back|10 보 후퇴!
+ui_order_button_spread_out|흩어져!
+ui_order_button_stand_closer|뭉쳐!
 ui_order_button_mount_horses|승마
 ui_order_button_dismount|말에서 내려라
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_use_blunt_weapons|Use only blunt weapons
-; ui_order_button_use_any_weapon|Use weapons at will
-; ui_order_button_movement_orders|Movement orders
-; ui_order_button_formation_orders|Formation orders
-; ui_order_button_fire_orders|Fire orders
-; ui_follow_me_e_|%s, follow me!
-; ui_charge_e_|%s, charge!!!
-; ui_stand_ground_e_|%s, stand ground!
-; ui_retreat_e_|%s, retreat!
+ui_order_button_hold_fire|사격 중지!
+ui_order_button_fire_at_will|자유 사격!
+ui_order_button_use_blunt_weapons|둔기를 사용해!
+ui_order_button_use_any_weapon|사용하고 싶은 무기를 사용해!
+ui_order_button_movement_orders|이동 명령
+ui_order_button_formation_orders|진형 명령
+ui_order_button_fire_orders|사격 명령
+ui_follow_me_e_|%s, 나를 따르라!
+ui_charge_e_|%s, 돌격!!
+ui_stand_ground_e_|%s, 멈춰서라!
+ui_retreat_e_|%s, 퇴각!
 ui_mount_horses_e_|%s, 승마!
-; ui_dismount_e_|%s, dismount!
-; ui_advance_e_|%s, advance ten paces!
-; ui_fall_back_e_|%s, fall back ten paces!
+ui_dismount_e_|%s, 말에서 내려라!
+ui_advance_e_|%s, 10 보 전진!
+ui_fall_back_e_|%s, 10 보 후퇴!
 ui_stand_closer_e_|%s, 뭉쳐!
 ui_spread_out_e_|%s, 흩어져!
 ui_use_blunt_weapons_e_|%s, 둔기를 사용해!
@@ -148,5 +148,5 @@ ui_str_hear_me|%s, 내 말을 들어봐!
 ui_return|돌아가기
 ui_factions|세력들
 ui_troop_upgrades|군대 업그레이드
-; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
-; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)
+ui_hdr_mode|HDR mode (OFF나 LOW 추천)
+ui_autoexpore|Auto-exposure (HDR이 켜져있을 경우 ON 추천)

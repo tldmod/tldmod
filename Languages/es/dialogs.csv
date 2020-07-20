@@ -310,7 +310,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Me temo que tengo otros planes par
 dlga_lord_buy_prisoner_accept:lord_pretalk|¡Excelente! Haré que mis hombres lo lleven a nuestra prisión lo antes posible. Seguro que ayuda a la causa.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Es una pena, nos habría resultado muy útil, {playername}.
 dlga_tld_intro_1:lord_pretalk|Tutorial de Guerra:^^- Las facciones solo iniciarán asedios cuando sean lo bastante fuertes.^- La mayoría de asentamientos pueden ser asediados si su facción está lo suficientemente debilitada. Normalmente, las capitales serán las últimas en ser asediadas.^- Si una facción pierde su capital o su fuerza llega a 'en las últimas', será derrotada.^- Las facciones ganan fuerza por obtener victorias en el campo de batalla o por mantener determinados asentamientos.^- Las facciones pierden fuerza por ser derrotadas en el campo de batalla y por perder asentamientos.^- Algunas misiones o eventos pueden afectar a la fuerza de las facciones.^- Puedes comparar los niveles actuales de fuerza de las facciones en el menú de 'Informes'.^- Ver la sección de 'Conceptos' para más guías sobre TLD.
-dlga_lord_start:lord_pretalk|Ah, {bienvenido/bienvenida}, {s24}.^Ya deberías saber que {s12}. Tu deber es ayudar a nuestros esfuerzos, {playername}. Cuando hayas demostrado ser {digno/digna} de mi confianza [nivel {reg1}], te daré acceso a ese cofre de ahí, para que puedas almacenar tus pertenecias.
+dlga_lord_start:lord_pretalk|Ah, {bienvenido/bienvenida}, {s24}.^Ya deberías saber que {s12}. Tu deber es ayudarnos en nuestra lucha, {playername}. Cuando hayas demostrado ser {digno/digna} de mi confianza [nivel {reg1}], te daré acceso a ese cofre de ahí, para que puedas almacenar tus pertenencias.
 dlga_lord_start:lord_talk|¿Qué es lo que quieres?
 dlga_lord_pretalk:lord_talk|¿Algo más? 
 dlga_lord_talk:lord_lend_companion_end|Me gustaría que {s14} volviera bajo mi mando, {s65}, si ya no necesitáis  {reg3?sus:sus} servicios.
@@ -490,7 +490,7 @@ dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Hemos acabado con el 
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Perdóname, mi Señora, pero otros asuntos urgentes me han impedido acabar con el hechicero, y ha conseguido huir.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|El hechicero del Bosque Negro todavía vive. Interrumpimos sus rituales, pero ha conseguido huir.
 dlga_lord_mission_sorcerer_completed:lord_pretalk|Sí, {playername}, he sentido su muerte. El velo de hechicería se ha levantado de los bosques, y con él ha vuelto buena parte de mi poder... Me has prestado un gran servicio, a mí y a nuestra gente, y por lo tanto tienes derecho a un regalo. Toma esto...
-dlga_lord_mission_sorcerer_failed:lord_pretalk|Sí, {playername}. Noto cómo las oscuras artes del enemigo nos acechan. Sus esfuerzos parecen redoblarse, y no hay duda de que tendremos que tomar futuras precauciones para protegernos de su aura de maldad. Seguramente nunca más volvamos a encontrar su pista mientras Dol Guldur siga en pie. Agradezco tus esfuerzos, pero debes dejarme, mis fuerzas flaquean.
+dlga_lord_mission_sorcerer_failed:lord_pretalk|Sí, {playername}. Noto cómo las oscuras artes del enemigo nos acechan. Con redoblado ahínco, y no hay duda de que tendremos que tomar futuras precauciones para protegernos de su aura de maldad. Seguramente permanezca en paradero desconocido mientras Dol Guldur siga en pie. Agradezco tus esfuerzos, pero debes dejarme, mis fuerzas flaquean.
 dlga_lord_active_mission_1:lord_lend_companion_end|Oh, ¿quieres a tu camarada de vuelta? Ya veo...
 dlga_lord_active_mission_1:lord_pretalk|{playername}, debo apelar a tu paciencia, todavía necesito a tu camarada. Vuelve cuando las cosas se hayan calmado.
 dlga_lord_active_mission_1:lord_active_mission_2|¿Sí, has hecho algún progreso?
@@ -515,7 +515,7 @@ dlga_lord_hunt_down_fugitive_fail:lord_pretalk|Me apena saber que ese {s44} ha l
 dlga_lord_active_mission_2:lord_active_mission_3|Todavía estoy en ello.
 dlga_lord_active_mission_2:lord_mission_failed|Me temo que no podré llevar a cabo esta misión.
 dlga_lord_active_mission_3:lord_pretalk|Bien. Recuerda que cuento contigo.
-dlga_lord_request_mission_ask:lord_pretalk|Todavía no has terminado la última misión que te concedí, {playername}. Deberías concentrar tus esfuerzos en ella, y no pedirme más tareas hasta que la hayas terminado.
+dlga_lord_request_mission_ask:lord_pretalk|Todavía no has terminado la última misión que te encomendé, {playername}. Deberías concentrar tus esfuerzos en ella, y no pedirme más tareas hasta haberla terminado.
 dlga_lord_request_mission_ask:lord_pretalk.1|No tengo ninguna tarea para ti ahora mismo.
 dlga_lord_request_mission_ask:lord_tell_mission|¿Una tarea?
 dlga_lord_tell_mission:lord_mission_capture_troll_1|Eres {un sirviente valeroso/una servidora valerosa}, {playername}, y te dejaremos conocer parte de nuestros planes. Necesitamos monstruos de carne y hueso, sangre nueva. ¡Los necesitamos para amoldarlos, torturarlos, retorcerlos, dominarlos y criarlos, para que engrosen nuestras tropas de guerreros colosales!

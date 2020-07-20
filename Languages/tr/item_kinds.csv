@@ -155,8 +155,8 @@ itm_riv_shield_a|Ayrıkvadi Kalkanı
 itm_riv_shield_b|Ayrıkvadi Kalkanı
 itm_riv_bas_sword|Ayrıkvadi Piç Kılıcı
 itm_riv_1h_sword|Ayrıkvadi Kılıcı
-; itm_riv_riding_sword|Rivendell Longsword
-; itm_riv_archer_sword|Rivendell Short Sword
+itm_riv_riding_sword|Ayrıkvadi Uzun Kılıcı
+itm_riv_archer_sword|Ayrıkvadi Kısa Kılıcı
 itm_riv_spear|Ayrıkvadi Mızragı
 itm_riv_light|Ayrıkvadi Tunigi
 itm_riv_leather|Ayrıkvadi Deri Zırhı
@@ -804,5 +804,5 @@ itm_wolf|Kurt
 itm_werewolf|Kurtadam
 itm_thrush_reward|Mantar
 itm_gauntlets_reward|Demir Yumruk
-itm_stones_siege|Kuşat Stonesma Taşları
+itm_stones_siege|Kuşatma Taşları
 itm_beorn_axe_no_attack|Beorning Baltası

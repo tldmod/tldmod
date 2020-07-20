@@ -3,12 +3,12 @@ pt_enemy|Inimigo
 pt_hero_party|Grupo do Herói 
 pt_cattle_herd|Rebanho de Gado
 pt_ruins|Ruínas
-pt_legendary_place|Local Lendário
+pt_legendary_place|Lugar Lendário
 pt_mound|Túmulo de Herói
 pt_pyre|Pira de Herói
 pt_wild_troll|Troll Selvagem
-pt_raging_trolls|Trolls Raivosos
-pt_looters|Orcs tribais
+pt_raging_trolls|Trolls Enfurecidos
+pt_looters|Orcs Tribais
 pt_forest_bandits|Orcs Retardatários
 pt_mountain_bandits|Goblins Selvagens
 pt_steppe_bandits|Exilados da Terra Parda
@@ -27,60 +27,60 @@ pt_sacrificed_messenger|Mensageiro Sacrificado
 pt_gandalf|Cavaleiro Solitário
 pt_nazgul|Cavaleiro Solitário
 pt_gondor_scouts|Batedores de Gondor
-pt_blackroot_auxila|Reforços de Raiznegra
+pt_blackroot_auxila|Reforços da Raiz-negra
 pt_lamedon_auxila|Reforços de Lamedon
 pt_lossarnach_auxila|Reforços de Lossarnach
 pt_pinnath_gelin_auxila|Reforços de Pinnath Gelin
-pt_ranger_scouts|Batedores dos Guardiões
+pt_ranger_scouts|Batedores Guardiões
 pt_rohan_scouts|Batedores Rohirrim
 pt_lorien_scouts|Batedores de Lothlorien
-pt_woodelf_scouts|Elfos Batedores da Floresta Escura
-pt_imladris_scouts|Batedores Dunedain
-pt_dale_scouts|Batedores do Vale
+pt_woodelf_scouts|Elfos Batedores da Floresta das Trevas
+pt_imladris_scouts|Batedores de Arnor
+pt_dale_scouts|Batedores do Valle
 pt_esgaroth_scouts|Batedores de Esgaroth
 pt_dwarf_scouts|Vigias Anões
 pt_beorn_scouts|Batedores Beornings
-pt_woodmen_scouts|Escoltas Woodman
+pt_woodmen_scouts|Batedores Lenhadores
 pt_mordor_scouts|Batedores de Mordor
-pt_morgul_scouts|Batedores Morgul
+pt_morgul_scouts|Batedores de Morgul
 pt_isengard_scouts|Batedores de Isengard
-pt_isengard_scouts_warg|Cavaleiros de Wargs de Isengard
+pt_isengard_scouts_warg|Montadores de Warg de Isengard
 pt_harad_scouts|Batedores Haradrim
 pt_dunland_scouts|Batedores da Terra Parda
 pt_umbar_scouts|Batedores Corsários
 pt_khand_scouts|Batedores dos Orientais
 pt_moria_scouts|Batedores de Moria
 pt_guldur_scouts|Batedores de Dol Guldur
-pt_gundabad_scouts|Batedores de  Gundabad
+pt_gundabad_scouts|Batedores de Gundabad
 pt_rhun_scouts|Batedores de Rhun
 pt_gondor_raiders|Coletores de Gondor
 pt_rohan_raiders|Coletores Rohirrim
 pt_imladris_raiders|Coletores de Valfenda
 pt_lorien_raiders|Coletores de Lothlorien
-pt_woodelf_raiders|Coletores da Floresta Escura
-pt_dale_raiders|Coletores do Vale
+pt_woodelf_raiders|Coletores da Floresta das Trevas
+pt_dale_raiders|Coletores do Valle
 pt_dwarf_raiders|Coletores Anões
-pt_ranger_raiders|Cavaleiros dos Guardiões
-pt_morgul_raiders|Coletores Morgul
-pt_mordor_raiders|Cavaleiros de Mordor
-pt_isengard_raiders|Cavaleiros de Isengard
+pt_ranger_raiders|Cavaleiros Guardiões
+pt_morgul_raiders|Montadores Morgul
+pt_mordor_raiders|Montadores de Mordor
+pt_isengard_raiders|Montadores de Isengard
 pt_dunland_raiders|Cavaleiros das Terras Pardas
 pt_harad_raiders|Cavaleiros Haradrim
 pt_khand_raiders|Cavaleiros de Khand
 pt_umbar_raiders|Cavaleiros de Umbar
-pt_moria_raiders|Cavaleiros de Moria
-pt_guldur_raiders|Cavaleiros de Dol Guldur
-pt_gundabad_raiders|Cavaleiros de Gundabad
+pt_moria_raiders|Montadores de Moria
+pt_guldur_raiders|Montadores de Dol Guldur
+pt_gundabad_raiders|Montadores de Gundabad
 pt_rhun_raiders|Cavaleiros de Rhun
 pt_gondor_patrol|Patrulha de Gondor
 pt_rohan_patrol|Patrulha Rohirrim
-pt_imladris_patrol|Patrulha Dunedain
+pt_imladris_patrol|Patrulha de Arnor
 pt_lorien_patrol|Patrulha de Lothlorien
-pt_woodelf_patrol|Patrulha da Floresta Escura
+pt_woodelf_patrol|Patrulha da Floresta das Trevas
 pt_dale_patrol|Patrulha do Vale
 pt_esgaroth_patrol|Patrulha de Esgaroth
 pt_dwarf_patrol|Patrulha Anã
-pt_ranger_patrol|Patrulha dos Guardiões
+pt_ranger_patrol|Patrulha de Guardiões
 pt_amroth_patrol|Patrulha de Dol Amroth
 pt_pelargir_patrol|Patrulha de Pelargir
 pt_lossarnach_patrol|Patrulha de  Lossarnach
@@ -99,21 +99,21 @@ pt_gondor_company|Patrulha de Minas Tirith
 pt_rohan_company|Comitiva de Rohan
 pt_imladris_company|Comitiva de Valfenda
 pt_lorien_company|Comitiva de Lothlorien
-pt_woodelf_company|Comitiva da Floresta Escura
+pt_woodelf_company|Comitiva da Floresta das Trevas
 pt_dale_company|Comitiva do Vale
-pt_dwarf_company|Comitiva Anã
+pt_dwarf_company|Comitiva dos Anãos
 pt_gondor_elite_company|Comitiva de Elite de Gondor
 pt_rohan_elite_company|Comitiva de Elite de Rohan
 pt_imladris_elite_company|Comitiva de Elite de Valfenda
 pt_lorien_elite_company|Comitiva de Elite de Lothlorien
-pt_woodelf_elite_company|Comitiva de Elite da Floresta Escura
+pt_woodelf_elite_company|Comitiva de Elite da Floresta das Trevas
 pt_dale_elite_company|Comitiva de Elite do Vale
 pt_dwarf_elite_company|Comitiva de Elite Anã
 pt_gondor_caravan|Caravana de Gondor
 pt_rohan_caravan|Caravana de Rohan
 pt_imladris_caravan|Caravana de Valfenda
 pt_lorien_caravan|Caravana de Lothlorien
-pt_woodelf_caravan|Caravana da Floresta Escura
+pt_woodelf_caravan|Caravana da Floresta das Trevas
 pt_dale_caravan|Caravana do Vale
 pt_dwarf_caravan|Caravana Anã
 pt_mordor_caravan|Carroça de Suprimentos de Mordor
@@ -123,7 +123,7 @@ pt_gondor_p_train|Carroça de Prisioneiros de Gondor
 pt_rohan_p_train|Carroça de Prisioneiros de Rohan
 pt_imladris_p_train|Carroça de Prisioneiros de Valfenda
 pt_lorien_p_train|Carroça de Prisioneiros de Lothlorien
-pt_woodelf_p_train|Carroça de Prisioneiros da Floresta Escura
+pt_woodelf_p_train|Caravana de Prisioneiros da Floresta das Trevas
 pt_dale_p_train|Carroça de Prisioneiros do Vale
 pt_dwarf_p_train|Carroça de Prisioneiros Anã
 pt_mordor_p_train|Carroça de Prisioneiros de Mordor

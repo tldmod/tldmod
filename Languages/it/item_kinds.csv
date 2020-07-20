@@ -20,19 +20,19 @@ itm_metal_scraps_bad|Metallo di bassa qualità
 itm_metal_scraps_medium|Metallo di buona qualità
 itm_metal_scraps_good|Metallo di ottima qualità
 itm_oliphant|Olifante
-itm_sumpter_horse|Cavallo da soma
-itm_saddle_horse|Cavallo da soma
+itm_sumpter_horse|Palafreno
+itm_saddle_horse|Palafreno
 itm_steppe_horse|Cavallo delle steppe
 itm_courser|Corsiero
 itm_hunter|Cacciatore
 itm_pony|Pony
-itm_arnor_warhorse|Cavallo da Guerra Arnoriano
-itm_dunedain_warhorse|Cavallo da Guerra Dúnedain
+itm_arnor_warhorse|Destriero Arnoriano
+itm_dunedain_warhorse|Destriero Dúnedain
 itm_rohirrim_courser|Corsiero Rohirrim
 itm_rohirrim_hunter|Cacciatore Rohirrim
 itm_rohirrim_courser2|Corsiero Rohirrim Corazzato
-itm_rohan_warhorse|Cavallo da Guerra Rohirrim
-itm_thengel_warhorse|Cavallo da Guerra di Eorl
+itm_rohan_warhorse|Destriero Rohirrim
+itm_thengel_warhorse|Destriero di Eorl
 itm_rhun_horse_a|Cavallo di Rhûn
 itm_rhun_horse_b|Cavallo di Rhûn
 itm_rhun_horse_d|Cavallo di Rhûn
@@ -41,22 +41,22 @@ itm_rhun_horse_f|Cavallo pesante di Rhûn
 itm_rhun_horse_g|Cavallo pesante di Rhûn
 itm_rhun_horse_h|Cavallo pesante di Rhûn
 itm_dale_horse|Cavallo del Rhovanion
-itm_dale_warhorse|Cavallo da Guerra Rhovanion
-itm_riv_warhorse|Cavallo da Guerra di Gran Burrone
+itm_dale_warhorse|Destriero del Rhovanion
+itm_riv_warhorse|Destriero di Gran Burrone
 itm_riv_warhorse2|Destriero di Imladris
-itm_mordor_warhorse|Cavallo da Guerra di Mordor
-itm_mordor_warhorse2|Cavallo Malvagio da Guerra di Mordor
+itm_mordor_warhorse|Destriero di Mordor
+itm_mordor_warhorse2|Destriero Malvagio di Mordor
 itm_gondor_courser|Corsiero di Gondor
 itm_gondor_hunter|Cacciatore di Gondor
-itm_dol_amroth_warhorse|Cavallo da Guerra di Dol Amroth
-itm_dol_amroth_warhorse2|Cavallo pesante da Guerra di Dol Amroth
-itm_gondor_warhorse|Cavallo da Guerra di Gondor
+itm_dol_amroth_warhorse|Destriero di Dol Amroth
+itm_dol_amroth_warhorse2|Destriero Pesante di Dol Amroth
+itm_gondor_warhorse|Destriero di Gondor
 itm_gondor_lam_horse|Cavallo corazzato del Lamedon
-itm_lorien_warhorse|Cavallo da Guerra di Lothlórien
+itm_lorien_warhorse|Destriero di Lothlórien
 itm_harad_horse|Cavallo dell'Harad
-itm_harad_warhorse|Cavallo da Guerra dell'Harad
+itm_harad_warhorse|Destriero dell'Harad
 itm_variag_pony|Pony Variago
-itm_variag_kataphrakt|Cavallo da Guerra Easterling
+itm_variag_kataphrakt|Destriero Easterling
 itm_warg_1b|Warg
 itm_warg_1c|Warg
 itm_warg_1d|Warg
@@ -81,7 +81,7 @@ itm_elven_arrows|Frecce elfiche
 itm_orc_hook_arrow|Frecce orchesche uncinate 
 itm_isengard_arrow|Frecce di Isengard
 itm_leather_gloves|Guanti di Cuoio
-itm_mail_mittens|Guanti in maglia
+itm_mail_mittens|Guanti di Maglia
 itm_leather_boots|Stivali di Cuoio
 itm_leather_boots_dark|Stivali da Cavallerizzo
 itm_splinted_greaves|Gambali Steccati

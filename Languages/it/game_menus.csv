@@ -55,11 +55,11 @@ mno_start_dw|NANO
 menu_start_evil|^^^^^^^^^^Chi servi ?
 mno_start_eye|Sauron di Mordor, il Signore degli Anelli
 mno_start_hand|Saruman di Isengard, la Mano Bianca
-menu_start_eye|^^^^^^^^^Il tuo signore è il Grande Occhio^Scegli la tua razza
+menu_start_eye|^^^^^^^^^Il tuo Padrone è il Grande Occhio^Scegli la tua razza
 mno_start_or|Un Orco, servendo il Grande Occhio
 mno_start_ur|Un Uruk-Hai, la nuova razza di Orchi
 mno_start_em|Un Uomo, corrotto da Sauron
-menu_start_hand|^^^^^^^^^Il tuo signore è la Mano Bianca^Scegli la tua razza
+menu_start_hand|^^^^^^^^^Il tuo Padrone è la Mano Bianca^Scegli la tua razza
 mno_start_whor|Un Orco, servendo la Mano Bianca
 mno_start_isur|uno degli Uruk-Hai, cresciuto ad Isengard
 mno_start_duma|Un Uomo di Dunland, delle Pianure Occidentali
@@ -285,8 +285,8 @@ menu_close|Niente.
 menu_town|Sei arrivato a: {s60}.{s12}{s13}
 mno_town_menu_0|Vai da qualche parte.
 mno_town_menu_0_door|Porta che conduce verso un luogo.
-mno_town_approach|Vai verso: {s1}...
-mno_town_castle|Raggiungi: {s1}.
+mno_town_approach|Vai verso {s1}...
+mno_town_castle|Raggiungi {s1}.
 mno_town_castle_door|Portone del castello.
 mno_town_center|Passeggia per la piazza principale...
 mno_town_center_door|Porta per il centro dell'insediamento.
@@ -299,7 +299,7 @@ mno_dungeon_enter_door|Apri la porta.
 mno_dwarven_warehouse|Visita il Magazzino dei Nani
 mno_dwarven_warehouse_door|Entra nel Magazzino dei Nani
 mno_talk_to_castle_commander|Visita le caserme di {s61}.
-mno_speak_with_elder|Parla con il {s6}.
+mno_speak_with_elder|Parla con {s6}.
 mno_isengard_underground|Dirigiti verso le caverne sotterranee 
 mno_isengard_underground_door|Dirigiti verso le caverne sotterranee
 mno_tirith_toplevel|Raggiungi il livello più alto

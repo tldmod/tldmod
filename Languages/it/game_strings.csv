@@ -149,7 +149,7 @@ str_he|Lui
 str_she|Lei
 str_s3s_s2|{s2} di {s3} 
 str_s5_is_s51|{s5} è {s51}.
-str_s5_is_the_ruler_of_s51|{s5} è  il signore di {s51}.
+str_s5_is_the_ruler_of_s51|{s5} è il Signore di {s51}.
 str_s5_is_a_nobleman_of_s6|{s5} è  un nobile di {s6}.
 str_relation_mnus_100|Vendicativo
 str_relation_mnus_90|Vendicativo
@@ -895,7 +895,7 @@ str_npc4_personalitymatch_speech_b|Salvare vite è l'atto più nobile che ci sia
 str_npc5_personalitymatch_speech_b|Mi piace {s11}.
 str_npc6_personalitymatch_speech_b|Pensavo a quanto fosse vecchio.  Forse una dozzina di secoli più di me ? Non importa, tu non capiresti.
 str_npc7_personalitymatch_speech_b|{s11} e i combattenti di Dale, sebbene non possano essere considerati allo stesso livello dei guerrieri nani, stanno dimostrando di essere un valido aiuto in questa guerra. Se posso permettermi, credo che siano, fra gli umani, una buona scelta sia come amici che come alleati.
-str_npc8_personalitymatch_speech_b|Come amici e protettori, la gente di Dale ha una profonda considerazione per il popolo dei Nani che vive nella Montagna Solitaria, nonostante la differenza di razza, gli usi e i costumi.
+str_npc8_personalitymatch_speech_b|Come amici e protettori, la gente di Dale ha una profonda considerazione per il popolo dei Nani che vive nella Montagna Solitaria, nonostante la differenza di razza, usi e costumi.
 str_npc9_personalitymatch_speech_b|Mi piace {s11}.
 str_npc10_personalitymatch_speech_b|Mi piace {s11}.
 str_npc11_personalitymatch_speech_b|Mi piace {s11}.
@@ -941,7 +941,7 @@ str_npc16_rehire_speech|Posso servirti ancora una volta ?
 str_npc17_rehire_speech|Hey. Tempo di rimettersi in marcia ? Gli alberi non si muovono tanto. Mi piace marciare, ma mi piacciono anche gli alberi.
 str_npc1_home_intro|Capitano, ci stiamo avvicinando ad Osgiliath, cerchiamo quindi di distinguere correttamente gli amici dai nemici.
 str_npc2_home_intro|Sii vigile comandante, quella dovrebbe essere Minas Morgul. Non senti qualcosa che ci sta osservando ?
-str_npc3_home_intro|Una parola, comandante. Iniziamo ad avvicinarci nell'Entobosco... i cavalli sono sempre più irrequieti, mio signore. Alcuni la chiamano la foresta di Fangorn.
+str_npc3_home_intro|Una parola, Comandante. Iniziamo ad avvicinarci nell'Entobosco ora e i cavalli sono sempre più irrequieti, mio Signore. Alcuni la chiamano la foresta di Fangorn.
 str_npc4_home_intro|Fermiamoci qui per un minuto, comandante. Davanti a noi, tra l'Anduin e Limlight, si trova il Campo di Celebrant, dove Eorl il Giovane accorse in aiuto dei nostri alleati di Gondor.
 str_npc5_home_intro|Daro - Alt - ! Ecco la fortezza di Angrenost e, al centro d'essa, svetta la torre di Orthanc. Molte cose sono cambiate dall'ultima volta che ho visto questo luogo, e nessuna d'esse in bene.
 str_npc6_home_intro|Perdonami, {playername}. I sentieri da questa parte diventano più contorti, alcuni di questi portano a vicoli ciechi. Ci stiamo avvicinando a Dol Guldur.
@@ -1102,7 +1102,7 @@ str_comment_you_let_go_a_lord_allied_coldblooded|Ho saputo che hai catturato {s5
 str_comment_you_let_go_a_lord_allied_unfriendly_spiteful|Ho saputo che hai catturato {s54}, ma che poi lo hai liberato. Che sfoggio di virtù cavalleresche ! Senza dubbio le vedove e gli orfani che ha generato fremono per mostrare la loro gratitudine di persona..
 str_comment_you_let_go_a_lord_allied|Ho saputo che hai catturato {s54}, ma che poi lo hai liberato. Beh, non voglio dirti cosa devi fare con i tuoi prigionieri..
 str_comment_you_let_me_go_spiteful|L'ultima volta che ci siamo incontrati, ero alla tua mercé e mi permettessi di andarmene libero. Spero che ti sia divertito a giocare con me, come un gatto col topo, perché presto io ti avrò nella mia mano, per ucciderti o umiliarti a seconda delle mie preferenze.
-str_comment_you_let_me_go_enemy_chivalrous|L'ultima volta che ci siamo incontrati, ero alla tua mercé e mi hai permesso di andarmene libero. Fu un gesto cavalleresco da parte tua, e non lo dimenticherò. Ma ricordo anche il giuramento che ho fatto al mio signore, e i nostri regni sono ancora in guerra.
+str_comment_you_let_me_go_enemy_chivalrous|L'ultima volta che ci siamo incontrati, ero alla tua mercé e mi hai permesso di andarmene libero. Fu un gesto cavalleresco da parte tua, e non lo dimenticherò. Ma ricordo anche il giuramento che ho fatto al mio Signore, e i nostri regni sono ancora in guerra.
 str_comment_you_let_me_go_enemy_coldblooded|Quando ci siamo incontrati l'ultima volta, ero alla tua mercé, e tu mi hai lasciato andare libero. Ma noi siamo ancora avversari, e non posso prometterti lo stesso trattamento.
 str_comment_you_let_me_go_enemy|L'ultima volta che ci siamo incontrati, ero alla tua mercé e mi hai permesso di andarmene libero. È stato gentile da parte tua. Ma noi siamo ancora in guerra.
 str_comment_you_let_me_go_default|Quando ci siamo incontrati la scorsa volta, ero nella tua mano, ma mi hai permesso di andarmene libero. È stato gentile da parte tua, e sono lieto che i nostri regni non siano più in guerra.
@@ -1128,23 +1128,23 @@ str_surrender_offer_quarrelsome|Basta ! Hai vinto questa volta, cane ! Ah.. Che 
 str_surrender_offer_pitiless|Mi arrendo ! Hai vinto. Che questo giorno sia maledetto !
 str_surrender_offer_cunning|Fermo ! Mi arrendo a te !
 str_surrender_offer_sadistic|Mi arrendo ! Mi arrendo ! Richiama i tuoi mastini !
-str_surrender_offer_goodnatured|Mi arrendo ! Congratulazioni per la tua vittoria, {sire, mia signora}
+str_surrender_offer_goodnatured|Mi arrendo ! Congratulazioni per la tua vittoria, {Signore/Signora}
 str_surrender_offer_upstanding|Mi arrendo ! Garantiscimi l'onore delle armi e ottieni il credito che ti spetta !
-str_prisoner_released_default|Hai la mia gratitudine, {sire/mia signora}. Non dimenticherò la tua gentilezza.
-str_prisoner_released_martial|Sei veramente una {persona/persona} d'onore, {sire/mia signora}. Non lo dimenticherò !
+str_prisoner_released_default|Hai la mia gratitudine, {Signore/Signora}. Non dimenticherò la tua gentilezza.
+str_prisoner_released_martial|Sei veramente una {persona/persona} d'onore, {Signore/Signora}. Non lo dimenticherò !
 str_prisoner_released_quarrelsome|Sono libero ? Bene... Addio, allora.
 str_prisoner_released_pitiless|Grazie. Quando sarai infine sconfitto, chiederò personalmente che la tua morte sia dolce e misericordiosa. A meno che tu non ti unisca a noi.. Addio, per ora.
 str_prisoner_released_cunning|Sono libero ? Sei una brava {persona/persona}. Troverò il modo di compensarti.
 str_prisoner_released_sadistic|Sono libero ? Sei così crudele che preferisci vedermi libero e umiliato, piuttosto che in catene. Gioisci per il tuo trionfo !
-str_prisoner_released_goodnatured|Sei veramente una {persona/persona} d'onore, {sire/mia signora}. Non lo dimenticherò !
-str_prisoner_released_upstanding|Sei veramente una {persona/persona} d'onore, {sire/mia signora}. Non lo dimenticherò !
+str_prisoner_released_goodnatured|Sei veramente una {persona/persona} d'onore, {Signore/Signora}. Non lo dimenticherò !
+str_prisoner_released_upstanding|Sei veramente una {persona/persona} d'onore, {Signore/Signora}. Non lo dimenticherò !
 str_enemy_meet_default|Chi sei tu, che giungi in armi contro di me ?
-str_enemy_meet_martial|Qual'è il tuo nome, {sire/mia signora} ? Se giungeremo allo scontro, vorrei sapere contro chi combatto.
+str_enemy_meet_martial|Qual'è il tuo nome, {Signore/Signora}? Se giungeremo allo scontro, vorrei sapere contro chi combatto.
 str_enemy_meet_quarrelsome|Chi diavolo sei ?
 str_enemy_meet_pitiless|Chi sei tu ? Parla, così che conosca chi ucciderò.
 str_enemy_meet_cunning|Dimmi il tuo nome. È sempre meglio conoscere il tuo nemico.
 str_enemy_meet_sadistic|Chi sei ? Parla velocemente, prima che ti tagli la lingua.
-str_enemy_meet_goodnatured|Qual'è il tuo nome, {sire/mia signora} ? Se giungeremo allo scontro, vorrei sapere contro chi combatto.
+str_enemy_meet_goodnatured|Qual'è il tuo nome, {Signore/Signora}? Se giungeremo allo scontro, vorrei sapere contro chi combatto.
 str_enemy_meet_upstanding|Chi sei tu, che arrivi in armi per contestare la tua causa ?
 str_battle_won_default|Hai dato prova di essere un valoroso alleato, oggi.
 str_battle_won_martial|Non c'è più grande fortuna che avere la possibilità di mostrare il proprio valore sul campo di battaglia !
@@ -1184,16 +1184,16 @@ str_unprovoked_attack_quarrelsome|Stai facendo un grosso errore, {ragazzo/ragazz
 str_unprovoked_attack_pitiless|Davvero ? Se sei così desideroso di morire oggi, sarò molto felice di accontentarti, tuttavia sono curioso, cosa speri di ottenere ?
 str_unprovoked_attack_cunning|Davvero ? Penso tu stia agendo in maniera molto poco saggia. Cosa speri di ottenere con questo ?
 str_unprovoked_attack_sadistic|Cos'è questo ? Ti piace l'idea di farti cavare gli occhi ?
-str_unprovoked_attack_goodnatured|Perchè fai questo ? Non abbiamo contese tra di noi, {mio signore/mia signora}
+str_unprovoked_attack_goodnatured|Perché fai questo? Non abbiamo contese tra di noi, {mio Signore/mia Signora}
 str_unprovoked_attack_upstanding|Considero questo un attacco senza motivo, e protesterò presso il tuo re. Perchè lo fai ?
 str_unnecessary_attack_default|Non esiterò ad abbatterti se sarò costretto, ma ti offro la possibilità di andartene.
-str_unnecessary_attack_martial|Sono più che desideroso di accettare la tua sfida, {mio signore/mia signora}, tuttavia ti darò un minuto per ripensarci.
+str_unnecessary_attack_martial|Sono più che desideroso di accettare la tua sfida, {mio Signore/mia Signora}, tuttavia ti darò un minuto per ripensarci.
 str_unnecessary_attack_quarrelsome|Bah ! Non sono dell'umore per queste facezie oggi. Fuori dalla mia vista !
 str_unnecessary_attack_pitiless|Oggi mi sento particolarmente misericordioso. Fingerò di non averti sentito.
 str_unnecessary_attack_cunning|Non capisco cosa guadagneresti dal fare di me un tuo nemico. Magari dovresti solo andartene.
 str_unnecessary_attack_sadistic|Non ho tempo da perdere con un verme come te. Fuori dalla mia vista.
-str_unnecessary_attack_goodnatured|Non capisco che ci guadagni nel cercare lo scontro, {mio signore/mia signora}. Puoi ancora andarvene.
-str_unnecessary_attack_upstanding|Se è un combattimento che cerchi, {mio signore/mia signora}, allora lo avrai, ma ti offro ancora la possibilità di arrenderti.
+str_unnecessary_attack_goodnatured|Non capisco che ci guadagni nel cercare lo scontro, {mio Signore/mia Signora}. Puoi ancora andartene.
+str_unnecessary_attack_upstanding|Se è un combattimento che cerchi, {mio Signore/mia Signora}, allora lo avrai, ma ti offro ancora la possibilità di arrenderti.
 str_lord_challenged_default|Come desideri. Preparati a morire !
 str_lord_challenged_martial|Così sia. In guardia !
 str_lord_challenged_quarrelsome|Moccioso insolente ! Ti distruggerò !
@@ -1210,10 +1210,10 @@ str_lord_mission_failed_cunning|Beh, sono deluso, ma nessuno può garantire che 
 str_lord_mission_failed_sadistic|Davvero ? Coloro che mi deludono, non sempre sopravvivono per pentirsene.
 str_lord_mission_failed_goodnatured|Oh beh, era comunque difficile. Grazie comunque di averci provato.
 str_lord_mission_failed_upstanding|Va bene, sono sicuro che hai fatto del tuo meglio.
-str_lord_follow_refusal_default|Seguirti ? Dimentichi qual'è il tuo posto, {mio signore/mia signora}.
+str_lord_follow_refusal_default|Seguirti ? Dimentichi qual'è il tuo posto, {mio Signore/mia Signora}.
 str_lord_follow_refusal_martial|Magari se un giorno ti dimostrerai un combattente onorevole e di valore, ti seguirò. Ma non oggi.
 str_lord_follow_refusal_quarrelsome|Seguire qualcuno come te ? Non credo proprio.
-str_lord_follow_refusal_pitiless|I signori come me non seguono la gente come te, {mio signore/mia signora}.
+str_lord_follow_refusal_pitiless|I signori come me non seguono la gente come te, {mio Signore/mia Signora}.
 str_lord_follow_refusal_cunning|Prima dimostrami che non sei il tipo di {uomo/donna} che mi porterà al disastro, allora forse ti seguirò.
 str_lord_follow_refusal_sadistic|Non credo proprio ! Piuttosto, tu dovresti seguire me, così come {un cane/una cagna} frustato segue il suo padrone !
 str_lord_follow_refusal_goodnatured|Uhm, sono un po' impegnato con delle commissioni al momento. Magari più avanti.
@@ -1279,15 +1279,15 @@ str_rebellion_agree_sadistic|Ho deciso. Riavrai {reg3?la tua donna:il tuo uomo},
 str_rebellion_agree_goodnatured|Va bene. Penso che {reg3?la tua donna:il tuo uomo} sarà un buon governante. Mi unisco a te.
 str_rebellion_agree_upstanding|Così sia. Il mio primo dovere è verso questo regno, e per salvarlo dai senza legge lascerò {s45} e rinuncerò alla mia obbedienza verso {s46}. Che i cieli mi perdonino se avrò agito male.
 str_rebellion_refuse_default|[feudatario]
-str_rebellion_refuse_martial|Mi spiace. {s45} fa delle rivendicazioni condivisibili, ma non è sufficiente a farmi voltare le spalle a {s46}. Resterò leale al mio signore.
+str_rebellion_refuse_martial|Mi spiace. {s45} fa delle rivendicazioni condivisibili, ma non è sufficiente a farmi voltare le spalle a {s46}. Resterò leale al mio Signore.
 str_rebellion_refuse_quarrelsome|Nah. Quel cucciolo di {s45} non ha quello che serve per governare questo regno. Resto stretto a {s46}.
 str_talk_later_default|[feudatario]
 str_talk_later_martial|Non è questo il tempo di conversare di politica ! Sono qui oggi con i miei compagni lords, armato per la battaglia. Faresti meglio a prepararti per il combattimento.
-str_talk_later_quarrelsome|Davvero ti aspetti che ora mi metta a discutere di tradire il mio signore, mentre siamo circondati dal suo esercito ? Per chi mi hai preso, per un idiota ?
+str_talk_later_quarrelsome|Davvero ti aspetti che ora mi metta a discutere di tradire il mio Signore, mentre siamo circondati dal suo esercito ? Per chi mi hai preso, per un idiota ?
 str_talk_later_pitiless|Frena la tua lingua ! Qualunque cosa avessi da dire su questa faccenda, non la dirò ora e qui, mentre siamo nel mezzo dei nostri eserciti.
 str_talk_later_cunning|Non è proprio il momento adatto per questo genere di discussioni. Forse ne potremo conversare in un tempo futuro e in un luogo diverso, ma per adesso restiamo avversari.
 str_talk_later_sadistic|Cuciti la bocca ! Riesci ad immaginare quello che potrebbe succedere se gli altri vassalli mi vedessero parlare con te di tradimento ?
-str_talk_later_goodnatured|E così vorresti parlare della tua ribellione con me ? Prova a farlo quando non siamo circondati dagli eserciti del mio signore, e forse ascolterò quello che avrai da dire.
+str_talk_later_goodnatured|E così vorresti parlare della tua ribellione con me ? Prova a farlo quando non siamo circondati dagli eserciti del mio Signore, e forse ascolterò quello che avrai da dire.
 str_talk_later_upstanding|Quali che siano i miei pensieri sulla legittimità della successione, non starò a discuterne qui e ore. Se ci incontreremo ancora potremo parlarne in privato, e ascolterò quello che avrai da dire in merito. Ma per adesso, considerami un tuo nemico.
 str_gossip_about_character_default|Dicono che {s6} non possiede tratti caratteriali interessanti.
 str_gossip_about_character_martial|Dicono che {s6} non ama altro che la guerra.
@@ -1367,7 +1367,7 @@ str_rohan_rumor_4|Se puoi guarire gli uomini, ti prego di avere cura dei miei ca
 str_rohan_rumor_5|Portami otto cavalli da soma, ha detto.. Dopo i sette che aveva chiesto ieri. Ti fa sorgere delle domande.
 str_rohan_rumor_6|Gondor preferisce cavalli più robusti. I nostri cavalieri amano la velocità. Gli Elfi prendono solo i migliori, mentre i nostri nemici li rubano !
 str_rohan_rumor_7|Ho visto le razze del mare e i cavalli dei Variaghi. I cavalli di Rohan sono chiaramente superiori, ma richiedono cavalieri più esperti.
-str_rohan_rumor_8|I Wargs sono più lenti dei cavalli, ma possono svoltare più rapidamente. Sono anche piuttosto fragili, paragonati ad un cavallo da guerra ben bardato.
+str_rohan_rumor_8|I Wargs sono più lenti dei cavalli, ma possono svoltare più rapidamente. Sono anche piuttosto fragili, paragonati ad un destriero ben bardato.
 str_rohan_rumor_9|Armate marciano su Rohan con picche e lance contro i nostri bravi cavalieri. Saruman, il traditore, taglierà l'intera foresta di Fangorn per equipaggiare i suoi eserciti, prima che questa guerra finisca.
 str_rohan_rumor_10|Per essere i migliori cavalieri del regno bisogna prima allevare i migliori cavalli.
 str_rohan_rumor_11|Molti dei cavalli che vedi a Gondor provengono da noi. Preferiscono un cavallo leggermente più forte e lento che possa trasportare le loro pesanti armature.
@@ -1391,7 +1391,7 @@ str_gondor_rumor_9|Ci deve essere anche la guerra, mentre difendiamo le nostre v
 str_gondor_rumor_10|Gil-galad era un Re degli Elfi. I suonatori d'arpa di lui cantano amaramente: l'ultimo il cui regno era giusto e libero, fra le montagne e il mare.
 str_gondor_rumor_11|Dol Guldur? Mai sentito nominare.
 str_gondor_rumor_12|Moria ? Ci sono le miniere dei nani laggiù, non è così ?
-str_gondor_rumor_13|Non riferire a nessuno che ho detto questo, ma penso che il Principe Imrahil potrebbe un giorno diventare Re. Sire Denethor è un nobile uomo, ma Gondor ha perso molto del suo smalto durante la sua reggenza, e non solo da quando il suo figlio maggiore è scomparso.
+str_gondor_rumor_13|Non riferire a nessuno che ho detto questo, ma penso che il Principe Imrahil potrebbe un giorno diventare Re. Il Sovrintendente Denethor è un nobile uomo, ma Gondor ha perso molto del suo smalto durante la sua reggenza, e non solo da quando il suo figlio maggiore è scomparso.
 str_gondor_rumor_14|La gente dice che i Nove sono usciti da Minas Morgul ancora una volta. Vorrei che avessimo più comandanti coraggiosi come Boromir per comandare i nostri uomini in battaglia contro questi antichi nemici.
 str_gondor_rumor_15|Gli Uomini del Sud ci stanno spingendo fuori da Harondor. Hanno compiuto pesanti razzie per un periodo di tempo. Vorrei poter passeggiare di nuovo in sicurezza per i campi di Lebennin. Ma ci è stato detto "No.", perché i nostri soldati devono proteggere il cuore del regno.
 str_gondor_rumor_16|L'amico di mio cugino è un arciere al servizio di Hirluin il Giusto. Hanno di gran lunga le più belle uniformi, lascia che te lo dica.
@@ -1543,7 +1543,7 @@ str_harad_rumor_9|Conto di fare un buon bottino nell'Ovest. Ci è stato promesso
 str_harad_rumor_10|Sta lontano dai Mumakil. Sono bestie malsane che ti schiaccerebbero in un istante.
 str_harad_rumor_11|Nell'Harad abbiamo deserti e giungle, montagne e mare. I nostri popoli sono diversi come sono varie le nostre terre e numerosi quanto i granelli di sabbia.
 str_harad_rumor_12|Molti cavalieri di Harondor preferiscono le sciabole alle spade con lama diritta. Sono piuttosto valide per abbattere dei contadini che scappano, ma hai bisogno di una picca o di una buona spada per penetrare una spessa armatura.
-str_harad_rumor_13|Il mio fratello di sangue si è arruolato con i Karka - è un esploratore adesso. I predatori del Fang conducono una vita pericolosa, ma è una buona esperienza per i giovani dalla testa calda.
+str_harad_rumor_13|Il mio fratello di sangue si è arruolato con i Karka - è un esploratore adesso. I banditi del Fang conducono una vita pericolosa, ma è una buona esperienza per i giovani dalla testa calda.
 str_harad_rumor_14|Non metterti mai contro la Fratellanza del Leone ! La loro reputazione è ben meritata.
 str_harad_rumor_15|Vorrei possedere più armi fatte di ferro nero. Molti devono avere ancora a che fare con il bronzo, altri con le mazze di legno e i giavellotti di vetro nero, correndo nudi in battaglia..
 str_gunda_rumor_begin|A prendere le terre calde degli uomini, veniamo !
@@ -1583,7 +1583,7 @@ str_khand_rumor_2|Le nostre spade una volta sguainate, devono ricevere del sangu
 str_khand_rumor_3|Il suolo trema sotto la nostra cavalleria pesante, ma i nostri nemici tremano solo a sentir parlare di noi !
 str_khand_rumor_4|Questa volta lasceremo i carri dietro di noi, il nostro attacco coglierà i nemici alla sprovvista.
 str_khand_rumor_5|Noi siamo i Variaghi di Khand, i guerrieri più fieri di ogni luogo !
-str_khand_rumor_6|Anche i guerrieri di Rhûn sono feroci, ma loro combattono a cavallo, noi preferiamo colpire i nostri nemici da terra.
+str_khand_rumor_6|Anche i Guerrieri di Rhûn sono feroci, ma loro combattono a cavallo, noi preferiamo colpire i nostri nemici da terra.
 str_khand_rumor_7|Abbiamo combattuto i Gondoriani in passato, questa volta li finiremo del tutto !
 str_khand_rumor_8|L'Ovest è debole e decadente. Non hanno lo spirito dei guerrieri. Cadranno sotto le nostre spade e le nostre asce.
 str_khand_rumor_9|Non combattiamo per l'oro o gli schiavi, combattiamo per l'onore e la gloria !
@@ -1613,7 +1613,7 @@ str_legendary_rumor_mirkwood|Altre creature, diverse dagli Orchi, avanzano attor
 str_legendary_rumor_fangorn|Fangorn è una foresta che sarebbe meglio evitare. Vi capitano cose insolite.
 str_last_rumor|Non ho sentito nulla d'interessante ultimamente.
 str_ent_rumor_begin|Non essere frettoloso ora...
-str_ent_rumor_2|Impara ora la storia degli Esseri Viventi, Ricorda che son quattro le libere genti.\nElfi vengono quelli più antichi chiamati, Nani gli scavatori delle buie dimore,\nEnt i vecchi come i monti e dalla terra nati, Uomo infine il mortale, dei cavalli il signore.
+str_ent_rumor_2|Impara ora la storia degli Esseri Viventi ! Ricorda che son quattro le libere genti. Elfi vengono quelli più antichi chiamati, Nani gli scavatori delle buie dimore, Ent i vecchi come i monti e dalla terra nati e infine gli Uomini mortali, maestri dei cavalli.
 str_ent_rumor_3|L'antico Entish è una lingua interessante, ma ci vuole davvero un tempo molto lungo per dire qualsiasi cosa, perché non diciamo niente a meno che non ne valga realmente la pena e non valga realmente la pena ascoltarlo.
 str_gondor_rank_0|Cittadino di Gondor
 str_gondor_rank_1|Soldato di Gondor
@@ -1832,7 +1832,7 @@ str_fullname_region_s_undeep|l'Altopiano del Sud, la più piccola delle due curv
 str_fullname_region_emyn_muil|Emynn Muil, le montagne rocciose oltre l'affluente dell'Entwash
 str_fullname_region_misty_mountains|le colline delle Montagne Nebbiose
 str_fullname_region_lorien|Lothlórien, la foresta degli elfi di Sindar, dove cresce il Mallorns d'oro 
-str_fullname_region_anduin_banks|la valle di Anduin, tra le Montagne Nebbiose e Bosco Atro
+str_fullname_region_anduin_banks|la Valle dell'Anduin, tra le Montagne Nebbiose e Bosco Atro
 str_fullname_region_n_mirkwood|le fitte foreste della parte più a Nord di Bosco Atro, la casa degli Elfi delle Foreste
 str_fullname_region_s_mirkwood|le fitte foreste della parte più a Sud di Bosco Atro, che si dice siano infestate da strane creature
 str_fullname_region_above_mirkwook|Rhovanion Settentrionale, l'area tra Bosco Atro e le Montagne Grigie a Nord
@@ -1870,7 +1870,7 @@ str_shortname_region_fangorn|Fangorn
 str_shortname_region_brown_lands|Le Terre Marroni
 str_shortname_region_misty_mountains|le colline delle Montagne Nebbiose
 str_shortname_region_lorien_|Lorien
-str_shortname_region_anduin_banks_|La Valle di Anduin
+str_shortname_region_anduin_banks_|la Valle dell'Anduin
 str_shortname_region_n_mirkwood_|Bosco Atro Nord
 str_shortname_region_s_mirkwood_|Bosco Atro Sud
 str_shortname_region_above_mirkwook|Rhovanion Settentrionale
@@ -1881,7 +1881,7 @@ str_shortname_region_s_erebor|Il regno di Dale
 str_trait_title_elf_friend|Amico degli Elfi
 str_trait_desc_elf_friend|Si diventato altamente stimato dagli Elfi e ora ti vedono come un fidato alleato. Il costo di reclutamento degli Elfi si è ridotto e ora puoi anche provare a dare ordini alle armate elfiche.
 str_trait_title_gondor_friend|Benedizione dello Steward
-str_trait_desc_gondor_friend|Sei diventato altamente stimato dal Sire Denethor e come risultato il tuo status è cresciuto tra gli uomini di Gondor. Il costo di reclutamento degli uomini di Gondor è stato ridotto e puoi provare a dare ordini alle sue armate.
+str_trait_desc_gondor_friend|Sei diventato altamente stimato dal Sovrintendente Denethor e come risultato il tuo status è cresciuto tra gli uomini di Gondor. Il costo di reclutamento degli uomini di Gondor è stato ridotto e puoi provare a dare ordini alle sue armate.
 str_trait_title_rohan_friend|Uomo del Re
 str_trait_desc_rohan_friend|Sei diventato altamente stimato dal Re Theoden di Rohan e il tuo status è cresciuto tra gli uomini di Rohan come risultato. Il costo per reclutare gli uomini di Rohirrim è ora calato e puoi anche provare a dare ordini alle armate del Riddermark.
 str_trait_title_brigand_friend|Campione Barbaro
@@ -2034,7 +2034,7 @@ str_gondor8|Gondor8
 str_gondor_end|Gondor1
 str_gondor_intro|^È  amaro pensare che un eroe di questo grande regno possa morire alla vista della sua terra, disperato e senza aiuto. La notizia della morte di Boromir ha attraversato come un rapido vento tutte le terre di Gondor, fino alle pianure di Pinnath Gelin e le colline di Lamedon, fino alle rive del Pelargir e le coste di Dol Amroth. I cuori di tutta la gente sono pieni di dolore e pena; inoltre, con timore e presagio, perché Gondor è duramente colpito e dolorante, circondato da nemici implacabili e amici incerti.^^L'Ombra sorge ad Est, come nel remoto passato; i bellicosi corsari di Umbar si fanno più audaci; gli uomini selvaggi dell'Est e del Sud insistono nelle loro pretese sulla terra di Gondor.^^Non puoi più stare a guardare e ad aspettare. Hai riposto fiducia nei tuoi capitani; ti daranno la spada e la lancia da brandire. Gondor è in decadenza, tuttavia resiste; e anche se sembra alla fine è ancora molto forte. Hai deciso di fare la tua parte nella guerra che si approssima contro i servitori del Senza Nome. Si fanno molte discussioni nei consigli dei grandi e dei saggi, il cui contenuto ti è ignoto, ma di una cosa senti di avere certezza.^^Se i cuori valorosi di Gondor dovessero fallire e Minas Tirith cadesse, allora l'ultima luce dell'Occidente sarà estinta. Tutto cadrà sotto l'Ombra.
 str_dwarf_intro|^Il Regno sotto la Montagna ha agito bene, su questo non ci sono discussioni. Il vecchio Re Dáin ha appena compiuto il suo duecentocinquantesimo anno, e oltre ogni aspettativa è favolosamente sano. Sotto la sua guida, Erebor prospera e conosce la grandezza. I corsi d'acqua, le fontane e le piscine del vicino Dale, testimoniano come i suoi costruttori abbiano superato in maestria anche i loro antenati, sebbene i loro segreti sulla lavorazione dei metalli siano andati sfortunatamente persi.^^Un'oscurità da Mordor entrò in queste sale, quando il sudicio inviato di Sauron, con il suo alito come il sibilo dei serpenti, arrivò portando parole malvagie. Pesanti sono stati i cuori dei tuoi capi da allora, poiché il potere che è rientrato a Mordor non è cambiato. L'Ombra cresce e si avvicina - il Nemico si sta già muovendo e la guerra presto avrà inizio.^^Hai giurato di prendere le armi e di stare con i tuoi compagni contro i tuoi nemici. Tu resisterai, con la speranza nel cuore o senza.^^Ma se il coraggio dei Nani di Erebor dovesse mostrarsi insufficiente, allora la gloria della gente di Durin svanirà nel tempo e sarà dimenticata. Tutto cadrà sotto l'Ombra.
-str_rohan_intro|^In questi giorni incerti, una cosa sai essere vera: la guerra aperta è di fronte al fiero popolo di Rohan. Nessuno potrà vivere come ha vissuto fino ad ora, e ben pochi potranno mantenere ciò che hanno. Alcuni vicini all'orecchio del Re parlano di consigli viziosi, ma hai determinato di recarti da lui, fare un serio giuramento per il tuo servizio e sostenere quei capitani dalle mani pesanti e i nobili, per proteggere le greggi e i pascoli.^^Saruman di Isengard si è dichiarato signore sulle terre di Rohan, aspro è divenuto lo scontro con gli Orchi, i Cavalca-Lupo e i malvagi Uomini del Dunland. Il Signore della Terra Nera ad est invia i suoi gruppi di predatori per rubare i nostri cavalli, scegliendo sempre i neri. Il tuo cuore è pieno di timore, poiché sembra che i nemici assalgano il tuo popolo sia da oriente che da occidente.^^Ma tu continuerai a dare battaglia, perché quanto è vero ciò che dicono i Rohirrim, il tuo valore nelle armi è senza fallo, anche se il nemico ti sovrasta o il fuoco ti circonda. I destrieri di Rohan correranno come il vento del mattino. E se la morte dovesse raggiungerti, allora avrai il tuo tumulo, ma per adesso la guerra chiama. Che vengano messe le briglie ai cavalli, che il corno suoni !^^Tuttavia, se anche il coraggio dei Figli e delle Figlie di Eorl dovesse venir meno, allora l'ultima speranza di Rohan morirà svanendo. Il corno non suonerà più. Ogni cosa cadrà sotto l'Ombra.
+str_rohan_intro|^In questi giorni incerti, una cosa sai essere vera: la guerra aperta è di fronte al fiero popolo di Rohan. Nessuno potrà vivere come ha vissuto fino ad ora, e ben pochi potranno mantenere ciò che hanno. Alcuni vicini all'orecchio del Re parlano di consigli viziosi, ma hai determinato di recarti da lui, fare un serio giuramento per il tuo servizio e sostenere quei capitani dalle mani pesanti e i nobili, per proteggere le greggi e i pascoli.^^Saruman di Isengard si è dichiarato Signore sulle terre di Rohan, aspro è divenuto lo scontro con gli Orchi, i Cavalca-Lupo e i malvagi Uomini del Dunland. Il Signore della Terra Nera ad est invia i suoi gruppi di banditi per rubare i nostri cavalli, scegliendo sempre i neri. Il tuo cuore è pieno di timore, poiché sembra che i nemici assalgano il tuo popolo sia da oriente che da occidente.^^Ma tu continuerai a dare battaglia, perché quanto è vero ciò che dicono i Rohirrim, il tuo valore nelle armi è senza fallo, anche se il nemico ti sovrasta o il fuoco ti circonda. I destrieri di Rohan correranno come il vento del mattino. E se la morte dovesse raggiungerti, allora avrai il tuo tumulo, ma per adesso la guerra chiama. Che vengano messe le briglie ai cavalli, che il corno suoni !^^Tuttavia, se anche il coraggio dei Figli e delle Figlie di Eorl dovesse venir meno, allora l'ultima speranza di Rohan morirà svanendo. Il corno non suonerà più. Ogni cosa cadrà sotto l'Ombra.
 str_mordor_intro|^Il potere oscuro risorge ancora una volta ad Est. Il numero delle legioni del Signore Oscuro aumenta - Gli uomini dell'est vengono a servire e a pagare tributi, i rinnegati dagli occhi vuoti dell'antico Numenor bramano la possibilità di riconquistare ciò che hanno perduto i loro antenati, grandi eserciti di orchi e di uruk sbavano al pensiero della guerra e delle uccisioni. I recinti sono pieni di feroci e temibili warg. E più in alto, nei cieli oscuri, volano i Nazgûl... La punta di diamante del Grande Occhio, con poteri molto al di là dei tuoi fangosi sogni.^^Vuoi salire di rango, con ogni mezzo, e ottenere il favore di Lugbúrz. Con arguzia, durezza e abilità in battaglia potrai sbaragliare chi si metterà sulla tua strada. Ti guadagnerai il favore del Signore Oscuro di Mordor, colui che dominerà dopo la guerra che sta arrivando... o morirai tentando.^^La luce dell'Ovest sarà spenta. Il Tempo di Mordor è giunto!
 str_isengard_intro|^Un nuovo potere sta sorgendo, e tu sei parte di quel potere. Marci e combatti sotto lo stendardo della Mano Bianca, la tua fedeltà è verso l'astuto vecchio, Saruman il Grande, saggio e scaltro, che ti dà la carne gustosa dell'uomo e del cavallo da mangiare.^^Sotto il suo stendardo marciano gli Uruk-hai combattenti. Sono massacratori di grandi guerrieri, vincitori di battaglie. La loro armatura è spessa e i loro scudi grandi. Ti farai un nome fra la tua gente, e abbatterai molti pellebianca. Tu non ti fermerai, sotto il sole o la luna, col bel tempo o nella tempesta, fino a quando i tuoi nemici non giaceranno morti e sconfitti.^^La maestria di Saruman è grande. Con essa, abbatterai il potere del popolo dei cavalli e dei loro deboli alleati; si, anche la carne dell'Elfo sarà tua, per banchettare. I loro villaggi e le loro foreste bruceranno, anche le loro città. E poi... Chi può dire se le larve e le scimmie di Lugbúrz, la fortezza di Mordor, non s'inchineranno ai potenti di Orthanc, eh? Il forte comanda. Il debole serve.^^L'Era dell'Uomo sta finendo. Il tempo di Isengard è giunto !
 str_lorien_intro|^È usanza del tuo popolo, i Galadhrim del Laurelindórenan, di dimorare sulle cime degli alberi. I grandi alberi della poderosa circonferenza portano foglie d'oro e fiori gialli, e fra le acque del Nimrodel si può trovare un sonno ristoratore e l'oblio dal dolore; ma in questi giorni oscuri nessuno può dimenticare a lungo l'Ombra che aleggia non lontano, si spinge dall'est, dalla terra oscura di Mordor e si avvicina ancora.^^Per molti anni, i tuoi parenti di Lothlórien hanno avuto pochi rapporti con altre persone. In effetti, nulla nel potere del Signore Oscuro è più evidente che nella separazione fra coloro che ancora si oppongono a lui. Eppure tu sei fra coloro in grado di percepire che continuare a vivere così, in un'isola in mezzo a molti pericoli, porterà solo disperazione. Alcuni tra il tuo popolo cantano predicendo che l'Ombra si ritirerà, e che la pace verrà di nuovo; e sebbene il mondo non possa mai essere com'era prima, continuerai a prendere la spada e l'arco, a fare la tua parte nella Guerra che verrà, a difendere non solo il Fiore dei Sogni che ami, probabilmente andrai oltre le tue terre, che altrimenti cadrebbero sotto il dominio del male. Perché se le vecchie amicizie non si rinnovano e governa il timore di combattere solo in vista di una lunga sconfitta, allora l'ultima luce di Lórien si spegnerà per sempre. Tutto cadrà sotto l'Ombra.
@@ -2050,7 +2050,7 @@ str_guldur_intro|^Il potere oscuro risorge ad Est. Il Signore di Barad-dûr ha i
 str_dunland_intro|^Il tuo popolo non ha conosciuto altro che ingiustizie senza senso per mano di Forgoil dal cuore nero, il capelli di paglia di Rohan. Dai tempi del possente Freca, caduto per un colpo vigliacco da parte della bestia mangia-uomini Helm, colui che i Rohirrim chiamano Mandimartello, hai sofferto dolorosamente sotto il loro pesante giogo. Tanti sono stati i loro tradimenti, troppi per contarli.^^Ma adesso il vento sta cambiando. Saruman il saggio, L'astuto anziano maestro di Isengard, ha fatto promesse d'amicizia al nostro popolo. Con il suo aiuto, di certo le rivendicazioni del nobile Re Wulf, che in giorni più felici sedeva con pieno diritto sul trono di Meduseld a  Edoras, sarà riconfermata.^^Il tuo popolo non dovrà più arrampicarsi su un terreno roccioso vivendo con durezza. I piccoli non periranno più tra le braccia delle loro madri, a causa della scarsità di latte. La tua gente non tremerà più per il timore degli usurpatori di Rohan. Le tue picche sono lunghe, le tue asce crudeli e affilate. Con l'aiuto di Saruman il Saggio, non potrai fallire. Riprenderai ciò che ci spetta di diritto.^^Combatterai per Saruman. Morirai per Saruman !
 str_beorn_intro|^Queste foreste, questi vecchi sentieri e il guado, rappresentano l'unica casa che tu abbia mai conosciuto, ma il vecchio Beorn era fra quelli che ricordavano una casa ancora più antica, lontano, sulle montagne. Suo Figlio, Capo Grimbeorn il Vecchio, ora sorveglia il tuo popolo, e come suo padre, è solito sedere sulla Pietra della Carroccia la sera, puntando lo sguardo ad Ovest, perso nei propri pensieri.^^Per quanto riguarda te, i tuoi pensieri sono semplici. Le foreste crescono pericolosamente. Gli orchi malvagi si fanno baldanzosi e si aggirano anche in pieno giorno. I lupi che cavalcano non ascolteranno nessuno della tua gente, tanto sono stati corrotti dai goblin. L'aria ha un sentore, un odore diverso, cattivo. Più vai a sud, verso Dol Guldur, dove non molto tempo fa lo stregone dimorava e faceva cose indegne da nominare, peggio diventa.^^Gli Elfi si stringono nelle loro caverne a nord. Molti fra loro non usciranno per proteggere la fauna e la flora della foresta.^^Il tuo popolo combatterà, come hai sempre fatto anche tu, per tenere al sicuro il guado e la foresta. Con un bastone robusto fra le mani, fracasserai tutti gli orchi che si faranno avanti. E se lo scontro dovesse diventare più duro, beh... molti fra il tuo popolo sono più di ciò che sembrano...^^Ma se la ferocia in battaglia dei Beorniani non dovesse bastare, allora il mondo non conoscerà più la gioia del dolce miele, dei fiori sgargianti, dei sentieri ombreggiati nel bosco e di tutte le altre buone cose. Tutto cadrebbe sotto all'Ombra.
 str_intro_strings_end|FINE introduzione
-str_gondor_intro_2|^Mentre viaggi per offrire servizio al tuo signore, t'imbatti in una carovana assalita dagli orchi.
+str_gondor_intro_2|^Mentre viaggi per offrire servizio al tuo Signore, t'imbatti in una carovana assalita dagli orchi.
 str_dwarf_intro_2|^Mentre viaggi verso i cancelli di Erebor, t'imbatti in una carovana assalita da orchi.
 str_rohan_intro_2|^Sulla strada per Edoras, incontri per caso una carovana assalita da orchi.
 str_mordor_intro_2|^Sulla strada per il Morannon per fare rapporto a Lugbúrz, incontri alcuni orchi che stanno assalendo una carovana.
@@ -2084,7 +2084,7 @@ str_khand_faction_intro|^I Variaghi di Khand sono crudeli razziatori Esterling c
 str_umbar_faction_intro|^I Corsari di Umbar sono i nemici meridionali di Gondor, discendenti dei Numenoreani Neri che condussero numerose razzie sulle coste di Gondor.^^I Corsari impiegano sia schermagliatori con protezioni leggere che spadaccini pesanti, come anche abili arcieri di lungo corso. Essendo una forza per lo più marittima, preferiscono armature che sacrificano la robustezza in favore della mobilità.
 str_moria_faction_intro|^Gli Orchi di Moria occupano le sale di Khazad Dúm, un tempo potente regno dei Nani.^^Come gli orchi tradizionali, le loro forze consistono di un misto di fanteria, arcieri, schermagliatori e cavalca-warg, ma sono dotati in genere di un equipaggiamento migliore rispetto agli altri orchi, perché usano scarti di metalli trovati a Moria. Alcuni fortunati fra loro hanno anche accesso a parti di armature e armi naniche saccheggiate. I Capi Orcheschi di Moria hanno dato prova di essere più forti e feroci dei loro consanguinei, e sono temibili in battaglia.
 str_guldur_faction_intro|^Dol Guldur è un'antica fortezza di Sauron nel territorio di Bosco Atro - Invero è la ragione per cui "Boscoverde il Grande" è oggi conosciuto con il suo nome più oscuro.^^Qui, un contingente di leali a Mordor addestra ed equipaggia un grande esercito, inviando spesso compagnie di assaltatori contro gli Elfi come anche contro gli Uomini che attraversano le foreste. Le milizie di Dol Guldur sono principalmente composte da Orchi, con uno schieramento molto simile a quello di Mordor (fanteria, schermagliatori, arcieri, cavalca-warg), ma con una minore varietà.
-str_gundabad_faction_intro|^Gundabad era un luogo sacro per i Nani, ma in questi giorni è divenuto una massiccia roccaforte degli orchi nelle montagne del nord.^^Gli orchi di Gundabad, benché più selvaggi dei loro simili di altre zone, combattono in modo molto simile a qualsiasi orco, con uno schieramento non diverso (fanteria, arcieri, schermagliatori e cavalca-warg). Il loro equipaggiamento è primitivo e il loro stile di combattimento è barbarico. I loro cavalca-warg non hanno rivali in tenacia e ferocia. Alcuni fra gli orchi di Gundabad arrivano a frustare se stessi nella frenesia della battaglia.
+str_gundabad_faction_intro|^Gundabad era un luogo sacro per i Nani, ma in questi giorni è divenuto una massiccia roccaforte degli orchi nelle montagne del nord.^^Gli Orchi di Gundabad, benché più selvaggi dei loro simili di altre zone, combattono in modo molto simile a qualsiasi orco, con uno schieramento non diverso (fanteria, arcieri, schermagliatori e cavalca-warg). Il loro equipaggiamento è primitivo e il loro stile di combattimento è barbarico. I loro cavalca-warg non hanno rivali in tenacia e ferocia. Alcuni fra gli Orchi di Gundabad arrivano a frustare se stessi nella frenesia della battaglia.
 str_dunland_faction_intro|^I Dunlandiani sono gli "Uomini selvaggi del Dunland", nemici dei Rohirrim che li cacciarono dalle loro terre natìe.^^Il Dunland è sterile e povero. I Dunlandiani indossano ben poca armatura in realtà - per lo più pellicce e pelle indurita, con qualche fregio in metallo che ne attesta lo status. Per quanto riguarda le armi, brandiscono lunghe picche e asce nodose, raramente spade che in genere hanno funzione di emblema di prestigio. I loro cavalli sono magri e deboli, certamente non all'altezza dei destrieri di Rohan, anche se occasionalmente i Dunlandiani li cavalcano in battaglia con gli schermagliatori. In combattimento, i picchieri avanzano in massa, proponendo un grezzo ma formidabile muro di lance affilate. Alcuni Dunlandiani hanno coltivato alcune affinità con le creature selvagge, e sono in grado di scatenare branchi di lupi contro i loro avversari.
 str_beorn_faction_intro|^Beorniani, i discendenti di Beorn, sono un popolo delle valli superiori dell'Anduin, fra Bosco Atro e le montagne nebbiose. Solitamente si stabiliscono nelle foreste, anche se mantengono il passaggio aperto al Vecchio Guado per il commercio, esigendo un tributo dalle carovane di mercanti per il loro servizio.^^In qualità di boscaioli, brandiscono robusti bastoni e asce affilate, ma non si curano d'indossare pesanti armature. La Fanteria Pesante Beorniana combatte anche con scudi. I Guardaboschi Beorniani sono abili arcieri e rappresentano una valida linea di tiratori.
 str_intro_faction_intro_strings_end|Intro fazione FINE
@@ -2339,7 +2339,7 @@ str_npc21_personalitymatch_speech_b|Salvare vite è l'atto più nobile che ci si
 str_npc22_personalitymatch_speech_b|Mi piace {s11}.
 str_npc23_personalitymatch_speech_b|Pensavo a quanto fosse vecchio.  Forse una dozzina di secoli più di me ? Non importa, tu non capiresti.
 str_npc24_personalitymatch_speech_b|{s11} e i combattenti di Dale, sebbene non possano essere considerati allo stesso livello dei guerrieri nani, stanno dimostrando di essere un valido aiuto in questa guerra. Se posso permettermi, credo che siano, fra gli umani, una buona scelta sia come amici che come alleati.
-str_npc25_personalitymatch_speech_b|Quali amici e protettori, la gente di Dale ha una profonda considerazione per il popolo dei Nani che vive nella Montagna Solitaria, nonostante la differenza di razza, di usi e costumi.
+str_npc25_personalitymatch_speech_b|Quali amici e protettori, la gente di Dale ha una profonda considerazione per il popolo dei Nani che vive nella Montagna Solitaria, nonostante la differenza di razza, usi e costumi.
 str_npc26_personalitymatch_speech_b|Mi piace {s11}.
 str_npc27_personalitymatch_speech_b|Mi piace {s11}.
 str_npc18_retirement_speech|Penso di volermi fermare e tirar su una famiglia e, non lo so, fare ricami o merda simile. Addio.

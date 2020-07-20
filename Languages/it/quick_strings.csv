@@ -161,7 +161,7 @@ qstr_Unknown_to_{s5}|Sconosciuto a {s5}
 qstr_You_have_been_{reg1?|Sei stato {reg1?promosso:declassato} a {s24} ({reg0}) !
 qstr_You_{reg1?earned:los|Hai {reg1?guadagnato:perso} {reg11} Punti Rango {reg12?e {reg12} Punti Influenza :}con la fazione di {s11}.
 qstr_You_{reg1?earned:lost|Hai {reg1?guadagnato:perso} {reg11} Punti Rango {reg12?e {reg12} Punti Influenza :}di {s11}.
-qstr_You_spent_{reg10}_of|Hai speso {reg10} della tua influenza {s1}, con {reg11} rimanenti.
+qstr_You_spent_{reg10}_of|Hai speso {reg10} dei tuoi Punti Influenza su {s1}, te ne restano {reg11}.
 qstr_Troop_upkeep:|Gestione truppe:
 qstr_{s11}_and_{s10}|{s11} e {s10}
 qstr_their|loro
@@ -414,7 +414,7 @@ qstr_no_holdings|nessun possedimento
 qstr_{s57}_and_{s58}|{s57} e {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Lei:Lui}
-qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} è il governante di {s56}.^:{s54} serve {s55} di {s56}.^}}{reg9?{reg3?Lei:Lui} è {reg3?la signora:il signore} di {s58}.:}{s59}{reg10?^{reg3?Lei:Lui} è caduto in battaglia !:}
+qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} è il governante di {s56}.^:{s54} serve {s55} di {s56}.^}}{reg9?{reg3?Lei:Lui} è {reg3?la Signora:il Signore} di {s58}.:}{s59}{reg10?^{reg3?Lei:Lui} è caduto in battaglia !:}
 qstr_The_last_time_you_sa|L'ultima volta che ho visto {reg1?lei:lui}, {s1}
 qstr_The_last_time_you_he|L'ultima volta che hai sentito parlare di {reg1?lei:lui}, {s1}
 qstr_The_{s50}|Il {s50}
@@ -533,7 +533,7 @@ qstr_In_spite_of_their_va|Nonostante una strenua difesa, {s3} è stata travolta 
 qstr_You_bring_dismal_new|Porti tristi notizie, stregone.
 qstr_But_I_also_bring_a_m|Ma porto anche un messaggio di speranza. Il popolo di {s5} resiste ancora saldamente. I loro guerrieri non conoscono la paura e i loro signori sono risoluti.
 qstr_Help_them_fight_the_|Aiutali a combattere il nemico meglio che puoi. Non cedere mai, ma fai la tua guardia ! Ci sono cose più antiche e più malvagie degli orchi al mondo.
-qstr_Beware_{playername}_|Attento, {playername}, la Forza dell'oscurità sta crollando. {s3} è caduta, come il suo signore {s4} .
+qstr_Beware_{playername}_|Attento, {playername}, la Forza dell'oscurità sta crollando. {s3} è caduta, come il suo Signore {s4} .
 qstr_What_do_you_want_of_|Che vuoi da me, vecchio ?
 qstr_Just_know_that_a_Daw|Sappi solo che l'Alba è in arrivo. È inevitabile. E dovresti essere ancora in vita per poterla vedere, pensa cosa dovrai dire a tua discolpa allora.
 qstr_Well_met_{playername|Ben incontrato, {playername}, {s24}. La mia fiducia nei tuoi confronti non era mal riposta. La potenza delle forze dell'Ombra è in frantumi e i tuoi sforzi hanno avuto un ruolo non indifferente in tutto questo !
@@ -624,7 +624,7 @@ qstr_Raiders|Razziatori
 qstr_have_won_the_sea_bat|ha vinto la battaglia sul mare, demoralizzando le tue truppe. Il nemico può ottenere un vantaggio da questa sconfitta e attaccare con più frequenza.
 qstr_loses_Faction_Strength|Perde Forza Fazione a causa della distruttiva incursione.
 qstr_loses_Faction_Strength_|Perde Forza Fazione a causa del tuo successo in mare.
-qstr_You_spent_{reg67}_of|Hai speso {reg67} della tua influenza con {s1}, ne hai {reg66} rimanenti.
+qstr_You_spent_{reg67}_of|Hai speso {reg67} dei tuoi Punti Influenza su {s1}, te ne restano {reg66}.
 qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?era:dovrebbe essere vicino a {s5}.
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} e {s0}
@@ -960,7 +960,7 @@ qstr_You_ve_been_driven_a|Sei stato allontanato dalle mura. Adesso gli attaccant
 qstr_You_ve_breached_the_|Hai oltrepassato le mura della città, ma i difensori tenacemente continuano a resistere per le strade ! Dovete sconfiggere loro prima di poter attaccare il torrione nel cuore della città.
 qstr_The_town_centre_is_y|Il centro dell'insediamento è tuo, ma i difensori rimanenti si sono ritirati al castello. Dovrà cadere prima che tu completi la tua vittoria
 qstr_The_remaining_defend|I difensori rimanenti si sono ritirati nel castello come ultima difesa. Devi entrare e distruggere ogni resistenza rimanente.
-qstr_However_since_you_ar|Comunque, dal momento che non hai prestato giuramento {vassallo/seguace} di {s9}, non c'è alcuna possibilità che ti riconoscerà come {signore/signora} di quest{reg8?a città:o castello}.
+qstr_However_since_you_ar|Comunque, dal momento che non hai prestato giuramento {vassallo/seguace} di {s9}, non c'è alcuna possibilità che ti riconoscerà come {Signore/Signora} di quest{reg8?a città:o castello}.
 qstr_The_enemy_has_been_f|Il nemico è stato forzato alla ritirata. L'assalto è finito, ma l'assedio continua.
 qstr_The_assasins_beat_yo|Gli assassini ti hanno ucciso a ti hanno lasciato morente
 qstr_You_have_fallen._The|Sei caduto. I banditi cercano sul tuo cadavere in cerca di qualcosa di valore, poi svaniscono nella notte.\nTi hanno lasciato a malapena vivo.
@@ -969,7 +969,7 @@ qstr_Luckily_some_passing|Fortunatamente alcuni passanti locali ti trovano mentr
 qstr_{s13}^^You_have_succ|Con successo sei entrato di nascosto in {s13}^^
 qstr_the_place|il luogo
 qstr_the_castle|il castello
-qstr_Stay_indoors_for_som|Alloggia qui per un po'. Punti Risorsa per notte : ({reg1} )
+qstr_Stay_indoors_for_som|Alloggia qui per un po'. Punti Risorsa per notte: ({reg1})
 qstr_Camp_outside_for_som|Accampati all'aperto per qualche di tempo (nessun costo)
 qstr_{s4}_s_scouts_have_s|Gli esploratori di {s4} hanno visto e riferito del tuo fallimento. Hai portato il biasimo su {s4} e la responsabilità di questo fallimento è soltanto tua.
 qstr_{s1}_s_Ship|Nave di {s1}
@@ -987,7 +987,7 @@ qstr_three_scouts_two_for|tre esploratori, due foraggiatori e una pattuglia da {
 qstr_three_scouts_two_rai|tre esploratori, due assaltattori e una compagnia d'armi da {s3}
 qstr_You_see_the_village_|Vedi il villaggio sotto attacco. Chiedi alla gran parte delle tue truppe di cercare altri aggressori, mentre prendi un piccolo contingente e ti prepari a difendere la popolazione.
 qstr_You_see_the_village_y|Vedi l'insediamento che hai ordine di attaccare. Tu ed un piccolo gruppo di attaccanti vi preparate ad assaltare l'insediamento, in modo da non essere individuati
-qstr_The_raiders_are_defe|I predatori sono sconfitti ! I pochi che restano vivi e coscienti si affrettano a tornare nell'oscurità da cui sono usciti, terrorizzati dagli abitanti del villaggio e dal loro nuovo campione.
+qstr_The_raiders_are_defe|I banditi sono sconfitti ! I pochi che restano vivi e coscienti si affrettano a tornare nell'oscurità da cui sono usciti, terrorizzati dagli abitanti del villaggio e dal loro nuovo campione.
 qstr_Try_as_you_might_you|Fai tutto ciò che è in tuo potere, ma non riesci a sconfiggere i predoni. Essi radono il villaggio al suolo e rendono schiavi gli abitanti che restano.
 qstr_The_village_has_been|Il villaggio è stato razziato, gli abitanti sono stati uccisi o resi schiavi. L'Oscuro Signore ne sarà compiaciuto.
 qstr_You_failed_to_raid_t|Hai fallito nel razziare il villaggio e vieni mandato in fuga con i tuoi compagni. Senti le grida dei vincitori mentre percepisci lo sguardo di disapprovazione dell'Occhio.
@@ -1098,11 +1098,11 @@ qstr_Raider_Parties_Kille|Gruppi di Razziatori Uccisi: {reg12}
 qstr_One_of_the_target_ce|Una delle destinazioni delle carovane dei rifugiati è stata distrutta. I profughi sono dispersi e non li si trova da nessuna parte.
 qstr_As_an_Orc_or_a_Dwarf|In qualità di Orco o di Nano, puoi trarre vantaggio dall'Inquadratura Personalizzata che abbiamo implementato per migliorare l'esperienza di gioco in TLD con l'uso di razze di bassa statura. Consulta la sezione Concetti del Gioco per maggiori informazioni circa il suo utilizzo.
 qstr_Custom_Camera|Inquadratura personalizzata
-qstr_{reg65?my_Lady:my_Lo|{reg65?Mia Signora:mio Signore}
+qstr_{reg65?my_Lady:my_Lo|{reg65?Mia Signora:Mio Signore}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Mia Signora:Mio Signore}
 qstr_{reg65?mistress:mast|{reg65?Padrona:Maestro}
 qstr_{reg65?Mistress:Mast|{reg65?Padrona:Maestro}
-qstr_{reg65?madame:sir}|{reg65?signora:signore}
+qstr_{reg65?madame:sir}|{reg65?Signora:Signore}
 qstr_{reg65?Madame:Sir}|{reg65?Signora:Signore}
 qstr_How_do_magnets_work?|Come funzionano i magneti ?
 qstr_Um..._by_enchanting_|Um... dal ferro incantato ?
@@ -1216,16 +1216,16 @@ qstr_The_slaughter_and_loo|Il massacro e il saccheggio della carovana dei fuggia
 qstr_Killing_the_refugees|Uccidere i fuggiaschi provenienti da {s1} e rendere schiavi i sopravvissuti ha demoralizzato il loro popolo ({s1} ha perso  {reg19} di forza per la sua fazione).
 qstr_{reg20}_refugee_trai|{reg20} carovane di rifugiati sono fuggite e hanno rafforzato il morale del nemico. ({s1} ha guadagnato {reg22} forza fazione).
 qstr_You_did_however_defea|L'hai fatto, comunque, sconfiggere {reg18} carovane di rifugiati, indebolendo il nemico determina che ({s1} ha perso {reg19} forza della fazione).
-qstr_My_lord_{s12}_is_saf|Mio signore, {s12} è al sicuro. I Corsari sono stati sconfitti.
-qstr_My_lord_Esgaroth_is_|Mio signore, Esgaroth è al sicuro. Gli uomini di Rhûn sono stati sconfitti.
+qstr_My_lord_{s12}_is_saf|Mio Signore, {s12} è al sicuro. I Corsari sono stati sconfitti.
+qstr_My_lord_Esgaroth_is_|Mio Signore, Esgaroth è al sicuro. Gli uomini di Rhûn sono stati sconfitti.
 qstr_The_surroundings_of_|I sobborghi di {s12} bruciano. Il saccheggio è stato davvero glorioso !
 qstr_The_surroundings_of_E|I sobborghi di Esgaroth bruciano. Il saccheggio è stato davvero glorioso !
 qstr_This_is_welcome_news|Queste sono davvero buone notizie, {playername}. Non eravamo pronti per fronteggiare un'azione audace dei Corsari. Ma grazie a te, le vele nere sono state respinte, almeno per un po', e ora possiamo sperare, infine, di aver inferto loro un duro colpo in questo giorno. Hai tutta la nostra gratitudine.
 qstr__Good_work_{playerna|Bel lavoro, {playername} ! Loro hanno mostrato d'avere più arguzia di quanta gliene attribuissimo, glielo concedo. Ma questi Easterlings non combattono bene sulle imbarcazioni nemmeno la metà di quanto facciano a cavallo, a quanto pare ! Forse noi, a nostra volta, dovremmo considerare l'idea di varare una nostra flotta... In ogni caso, ti ringraziamo {playername}, da parte di Esgaroth e di tutto il popolo di Dale.
 qstr_Even_from_here_we_co|Anche da qui, possiamo vedere le fiamme e percepire l'odore della disperazione dei nostri nemici portato dal vento ! Hai agito splendidamente, {playername}. Che il terrore adesso colpisca il cuore di ogni uomo, donna e infante di Gondor, perché ora sanno che nemmeno le loro più possenti roccaforti sono irraggiungibili per noi !
 qstr_Even_from_here_we_cou|Anche da qui, possiamo vedere le fiamme e percepire la disperazione dei nostri nemici portata dal vento ! Hai agito splendidamente, {playername}. Lasciamo che il terrore colpisca il cuore di ogni uomo, donna e bambino di Dale, perché sappiano che nemmeno le loro possenti roccaforti sono al di fuori della nostra portata !
-qstr_My_lord_they_fell_up|Mio signore, sono piombati su di noi con una grande forza. Non siamo stati in  grado di respingere i Corsari.
-qstr_My_lord_they_fell_upo|Mio signore, sono piombati su di noi con ingenti forze. Non abbiamo potuto respingere i guerrieri di Rhûn.
+qstr_My_lord_they_fell_up|Mio Signore, sono piombati su di noi con una grande forza. Non siamo stati in  grado di respingere i Corsari.
+qstr_My_lord_they_fell_upo|Mio Signore, sono piombati su di noi con ingenti forze. Non abbiamo potuto respingere i Guerrieri di Rhûn.
 qstr_The_raid_on_{s12}_fa|L'assalto su {s12} è fallito, grazie all'incompetenza dei nostri alleati !
 qstr_This_raid_was_ill_fa|Questo assalto è stato marchiato dalla sfortuna sin dall'inizio. Non avremmo mai dovuto usare quelle zattere traballanti !
 qstr_This_is_evil_news_yo|Sono davvero cattive notizie quelle che porti. Le vele nere si fanno sempre più audaci, e ora tutta Belfalas giace sempre più sotto la loro ombra. Non t'incolperò più di tanto, {playername}, per il tuo fallimento, ma non possiamo negare di aver subito un duro colpo, davvero pesante. Va ora. Le speranze si affievoliscono per Gondor, e ora dovremo proteggere ciò che rimane.
@@ -1255,12 +1255,12 @@ qstr_Your_wish_is_my_comm|Ogni tuo desiderio è un ordine per me.
 qstr_Sauron_in_Mordor_the|Sauron a Mordor, i Corsari di Umbar, I Variaghi di Khand, e gli uomini delle tribù di Harad
 qstr_Saruman_in_Isengard_|Saruman a Isengard e gli Uomini Selvaggi del Dunland
 qstr_Orcs_of_Moria_and_Do|Orchi di Moria e Dol Guldur
-qstr_Orcs_of_Gundabad_and|Orchi di Gundabad e i Guerrieri di Rhûn
+qstr_Orcs_of_Gundabad_and|gli Orchi di Gundabad e i Guerrieri di Rhûn
 qstr_Men_of_Gondor|Uomini di Gondor
 qstr_Riders_of_Rohan|Cavallerizzi di Rohan
 qstr_Elves_of_Imladris_an|Elfi di Imladris e Lothlorien
 qstr_Men_of_Dale_Dwarves_|Uomini di Dale, Nani di Ereobor, consanguinei di Beorn ed Elfi di Bosco Atro
-qstr_Ah_{playername}_it_i|Ah, Ah, {playername}, è un bene che tu sia qui. La guerra è alle porte e abbiamo bisogno sia di soldati che di capitani che assolvano il loro giuramento.^^Siamo in guerra con {s11}, ma dobbiamo radunare le nostre forze e indebolire il nemico prima di poter sperare di muovere contro i loro capisaldi e le loro fortezze. Ogni sconfitta dei nostri nemici ci porterà più vicini alla vittoria e rafforzerà la nostra risoluzione, quindi ho fiducia in te perché tu combatta il nostro nemico in ogni occasione, sia che si tratti di un semplice gruppo di esploratori che di un intero esercito. Tuttavia non lanciarti in battaglia senza nessuno, dovrai combattere al fianco dei nostri coraggiosi capitani e dei nostri alleati.
+qstr_Ah_{playername}_it_i|Ah, Ah, {playername}, è un bene che tu sia qui. La guerra è alle porte e abbiamo bisogno sia di soldati che di capitani che assolvano il loro giuramento.^^Siamo in guerra con {s11}, ma dobbiamo radunare le nostre forze e indebolire il nemico prima di poter sperare di muovere contro i loro capisaldi e le loro fortezze. Ogni sconfitta dei nostri nemici ci porterà più vicini alla vittoria e rafforzerà la nostra risoluzione, quindi ho fiducia in te perché tu combatta il nostro nemico in ogni occasione, sia che si tratti di un semplice gruppo di esploratori che di un intero esercito. Tuttavia, non lanciarti in battaglia senza nessuno, dovrai combattere al fianco dei nostri coraggiosi capitani e dei nostri alleati.
 qstr_About_time_you_showe|Finalmente ti fai vedere, {playername}. Siamo in guerra adesso e non tolllererò alcuna insubordinazione. Stiamo combattendo contro {s11}, ma dobbiamo radunare le nostre forze e colpire il nemico sul campo prima di muoverci verso le loro fortezze. Ogni sconfitta dei nostri avversari rafforzerà il nostro sforzo bellico e li porterà vicino alla loro completa disfatta. Perciò confido in te perché tu combatta il nemico in ogni occasione, che si tratti di un semplice gruppo di esploratori o di un'intera armata. Inoltre, dovrai supportare i nostri capitani e i nostri alleati se li vedrai impegnati in combattimento. Non deluderli o lo verrò a sapere.
 qstr_we_are_fighting_agai|stiamo combattendo contro {s13}
 qstr_we_are_not_fighting_|non stiamo combattendo nessuno al momento
@@ -1272,7 +1272,7 @@ qstr_Give_me_that!_Hrmph!_|Dammelo ! Hrmph ! Sei un buon servitore del tuo padro
 qstr_My_king|Mio re
 qstr_Lord|Lord
 qstr_my_king|mio re
-qstr_lord|signore
+qstr_lord|Signore
 qstr_our|nostro/nostra/nostri
 qstr_your|tuo
 qstr_Moria_and_Gundabad|Moria e Gundabad
@@ -1337,7 +1337,7 @@ qstr_Still_think_you_can_|Pensi ancora di potertene occupare?
 qstr_Knowing_what_I_have_|Sapendo ciò che ti ho detto, ti ritieni ancora in grado?
 qstr_Knowing_what_I_have_t|Sapendo ciò che ti ho detto, vuoi ancora procedere?
 qstr_Give_me_the_banner_o|Dammi lo stendardo del Padrone !
-qstr_Yes_my_lord._Let_me_|Si, mio signore. Lascia che porti il nostro stendardo in battaglia.
+qstr_Yes_my_lord._Let_me_|Si, mio Signore. Lascia che porti il nostro stendardo in battaglia.
 qstr_The_people_of_{s3}_t|La gente di {s3} ti ringrazia per il tuo dono, {playername}. In cambio della tua donazione di {s1}, invieremo alla gente di {s4} un dono di {s2}. Ti ringrazio ancora una volta, {playername}.
 qstr_I_want_to_deliver_a_|Vorrei fare un dono ai nostri alleati.
 qstr_delivering_a_gift|consegnare un dono
@@ -1351,7 +1351,7 @@ qstr_You_have_requested_to|Hai richiesto di portare un dono di {s1} a {s3} da {s
 qstr_{reg3}_hours.|{reg3} ore.
 qstr_hour.|ora.
 qstr_Taking_{reg0}_inf._A|Prendendo  {reg0} inf. Alt?={reg1}
-qstr_You_spent_{reg0}_of_|Hai speso {reg0} dei tuoi Punti Influenza {s1}, con {reg1} rimanenti.
+qstr_You_spent_{reg0}_of_|Hai speso {reg0} dei tuoi Punti Influenza su {s1}, te ne restano {reg1}.
 qstr_The_War_is_over_{pla|La guerra è finita, {playername}, non l'hai saputo?
 qstr_We_are_at_war_with_{|Siamo in guerra con {s12}. Tuttavia, perlopiù stiamo combattendo contro {s13}.
 qstr_We_are_at_war_with_{s|Siamo in guerra con {s12}. Tuttavia, ci sono solo schermaglie al momento.
@@ -1407,7 +1407,7 @@ qstr_{s9}_asked_you_to_ta|{s9} ti ha chiesto di consegnare un messaggio a {s13}.
 qstr_{s9}_asked_you_to_tak|{s9} ti ha chiesto di consegnare un messaggio a {s13} di {s15}. Probabile luogo di ubicazione di {s13}: {s4}, quando ti è stato assegnato questo compito.
 qstr_{s11}_asked_you_to_e|{s11} ti ha chiesto di scortare il suo messaggiero fino a {s14}
 qstr_Lend_your_experience|Presta il tuo chirurgo esperto {s3} a {s1}.
-qstr_No_commander_should_|Nessun comandante dovrebbe ammetterlo, {playername} , ma stavo ispezionando i miei soldati l'altro giorno e ci sono alcuni di loro che non sanno da quale lato impugnare una spada. Hanno bisogno di qualcuno che gli mostri il vero significato del valore. Sei un guerriero stimato,  {playername} . Addestrerai alcune truppe per me? Te ne sarei molto riconoscente.
+qstr_No_commander_should_|Nessun comandante dovrebbe ammetterlo, {playername}, ma stavo ispezionando i miei soldati l'altro giorno e ci sono alcuni di loro che non sanno da quale lato impugnare una spada. Hanno bisogno di qualcuno che gli mostri il vero significato del valore. Sei un guerriero stimato, {playername}. Addestrerai alcune truppe per me? Te ne sarei molto riconoscente.
 qstr_No_commander_should_h|Nessun comandante dovrebbe mai ammetterlo, {playername}, però stavo ispezionando i miei soldati l'altro giorno e ne ho giustiziati alcuni per incompetenza. Hanno bisogno di qualcuno con una schiena di ferro per frustargli del coraggio dentro di loro, o ucciderli provandoci. Tu sei un guerriero di fama, {playername}. Addestreresti alcuni soldati per me? Posso ricompensarti.
 qstr_{s9}_asked_you_to_rai|{s9} ti ha chiesto di addestrare {reg1} {s14} e portarli da lui.
 qstr_{s9}_asked_you_to_hu|{s9} ti ha chiesto di dare la caccia ad un fuggitivo chiamato {s4}. Al momento si ritiene possa trovarsi a {s3}.
@@ -1476,7 +1476,7 @@ qstr_Our_bees_make_honey_a|Le nostre api fanno il miele e la cera, i nostri alle
 qstr_If_fate_wills_it_I_s|Se il fato vorrà, tornerò nelle vostre terre ancora, e ne conoscerò tutti i segreti.
 qstr_If_I_ever_have_need_|Se mai avrò bisogno dell'aiuto che Lorien può offrire, verrò. Di qualsiasi utilità potrà essere.
 qstr__nod_and_say_nothing|(non dire niente)
-qstr_Oh_there_are_many_an|Oh, ve ne sono molti e ogni amico di Lorien merita questi doni! ^^Che ci si trovi spalla a spalla ancora una volta sul campo di battaglia, o che tu sia agli ordini della nostra Signora o del suo seguito, il nostro popolo ricompenserà i tuoi servigi con tutto ciò di cui avrai bisogno - nuove armi, solide armature di maglia, frecce piumate e viveri per le tue truppe. ^^Chi lo sa, col tempo potresti divenire {un grande signore/una grande signora} di Lorien, una persona che può offrire consiglio ad altri, o chiedere favori.
+qstr_Oh_there_are_many_an|Oh, ve ne sono molti e ogni amico di Lorien merita questi doni! ^^Che ci si trovi spalla a spalla ancora una volta sul campo di battaglia, o che tu sia agli ordini della nostra Signora o del suo seguito, il nostro popolo ricompenserà i tuoi servigi con tutto ciò di cui avrai bisogno - nuove armi, solide armature di maglia, frecce piumate e viveri per le tue truppe. ^^Chi lo sa, col tempo potresti divenire {un grande Signore/una grande Signora} di Lorien, una persona che può offrire consiglio ad altri, o chiedere favori.
 qstr_The_joys_of_the_Gold|Le gioie della Valle d'Oro sono morte e i veri amici di Lorien sono bevenuti a goderne.  ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, oppure ci troveremo agli ordini della nostra Lady e dei suoi signori; il nostro popolo ti ricompenserà per il tuo sostegno con ogni cosa tu richieda - armi lucenti, vesti di maglia pesante, frecce letali e cibo nutriente per le tue truppe.^^Chissà, con il tempo potresti diventare Gran {Lord/Lady} di Lorien, una persona che potrebbe dare consiglio, o chiedere favori.
 qstr_Our_Golden_Valley_gi|La nostra Valle Dorata abbonda di doni e un amico di Lorien vi può attingere. ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, o accorrere alla chiamata della nostra Lady e dei suoi signori; il nostro popolo compenserà il tuo appoggio con tutto ciò che puoi desiderare, mentre sei lontano da casa.
 qstr_I_shall_keep_that_in|Dovrò tenerlo a mente. ^^ Hantanyel, áva márië !

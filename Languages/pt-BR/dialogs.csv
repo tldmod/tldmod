@@ -1,65 +1,65 @@
 dlga_start:mutiny_pretalk_1|Ei, {playername}. Escute aqui... Os rapazes estão resmungando! Querem mais diversão, e menos marcha.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para a linha, verme! Estamos em guerra e eu sou seu comandante!
-dlga_mutiny_pretalk_2:close_window|Como quiser, comandante. Como quiser...
+dlga_mutiny_pretalk_2:close_window|Como você quiser, comandante. Como você quiser...
 dlga_start:mutiny_talk_1|Ei, comandante. Escute aqui... Os rapazes não estão felizes, nem um pouco felizes. ^Não tem carne humana o suficiente, não tem diversão. ^Os rapazes dizem que você não é bom o suficiente, comandante!
 dlga_mutiny_talk_1:mutiny_talk_2|O quê? Insubordinação durante a guerra? Isso é punível com a morte, verme!
 dlga_mutiny_talk_2:close_window|Vamos te dizer uma coisa... Os rapazes aqui acham que serei melhor comandante para eles quando EU MATAR VOCÊ!
 dlga_start:troll_introduce_1|Algum problema?
-dlga_start:troll_talk_1|Tá putin?
-dlga_troll_introduce_1:troll_goodbye|Taporra! Um troll falante?!
+dlga_start:troll_talk_1|Você está louco?
+dlga_troll_introduce_1:troll_goodbye|Whoa! Um troll falante?!
 dlga_troll_introduce_1:close_window|Eu tenho um cavalo.
-dlga_troll_talk_1:troll_talk_2|Me Trolla, troll
+dlga_troll_talk_1:troll_talk_2|Me trolla, troll.
 dlga_troll_talk_1:close_window|Eu tenho um cavalo.
 dlga_troll_talk_2:troll_talk_3|Desafio aceito!^^{s4}
 dlga_troll_beaten:troll_talk_1|Eu me curvo diante de sua sabedoria, Mestre Provocador de Trolls!
-dlga_troll_goodbye:close_window|Yeye! trolladinha do malandro.
+dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Olá novamente, {playername}!
 dlga_start:hobbit_pippin_talk_met|Olá novamente, {playername}!
-dlga_start:hobbit_general_talk_1|Olá, {senhor/madame}! Meu nome é Meriadoc Brandybuck, mas pode me chamar de Merry!
-dlga_start:hobbit_general_talk_1.1|Olá, {senhor/madame}! Meu nome é Peregrin Took, mas pode me chamar de Pippin!
+dlga_start:hobbit_general_talk_1|Olá, {senhor/senhora! Meu nome é Meriadoc Brandybuck, mas pode me chamar de Merry!
+dlga_start:hobbit_general_talk_1.1|Olá, {senhor/senhora}! Meu nome é Peregrin Took, mas pode me chamar de Pippin!
 dlga_hobbit_general_talk_1:close_window|Não tenho tempo agora.
-dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Vou te falar... acho que nunca vi ninguém da sua raça.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Vou te falar...Acho que conheci outro que nem você, em Edoras.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Vou te falar... acho que conheci outro que nem você, em Minas Tirith
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Eu sei {senhor/madame}. Eu vim de longe! Sou um Hobbit, do Condado.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, só pode ter sido o meu querido primo! Peregrin Took, ou Pippin, como eles o chamam. Nós somos Hobbits, {senhor/madame}, e nós viemos do Condado, nós dois! Bom e velho Pippin, eu fico imaginando como ele está, lá em Minas Tirith.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Oh, só pode ter sido o meu querido primo! Meriadoc Brandybuck, ou Merry, como eles o chamam. Nós somos Hobbits, {senhor/madame}, e nós viemos do Condado, nós dois! Bom e velho Merry, eu fico imaginando como ele está em Edoras.
-dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Posso pedir-te um favor, {meu senhor/minha lady}.
+dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Vou te dizer... Acho que nunca vi ninguém da sua raça.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Vou te dizer... Acho que conheci outro igual a você, em Edoras.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Vou te dizer... Acho que conheci outro igual a você, em Minas Tirith
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Eu sei. Eu vim de longe! Sou um Hobbit, {senhor/senhora}, do Condado.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, só pode ter sido o meu querido primo! Peregrin Took, ou Pippin, como eles o chamam. Nós somos Hobbits, {senhor/madame}, e viemos do Condado, nós dois! Bom e velho Pippin, eu fico imaginando como ele está, lá em Minas Tirith.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Oh, só pode ter sido o meu querido primo! Meriadoc Brandybuck, ou Merry, como eles o chamam. Nós somos Hobbits, {senhor/madame}, e viemos do Condado, nós dois! Bom e velho Merry, eu fico imaginando como ele está em Edoras.
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Posso pedir-te um favor, {meu senhor/minha senhora}.
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Claro, {s1}. O que é?
 dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Você poderia encaminhar uma mensagem para o meu primo, {s1}? Ele está em {s2}, em {s3}, a serviço de {s4}.
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Estarei passando por {s1} e ficarei feliz em passar esta mensagem para o seu primo.
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Lamento, {s1}, mas não tenho tempo.
 dlga_hobbit_general_talk_ask_accept:close_window|Obrigado! {s1}
-dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Eu entendo. Mandarei para a próxima caravana em direção a {s1} então.
+dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Eu entendo. Mandarei para a próxima caravana indo em direção à {s1} então.
 dlga_hobbit_general_talk_3:close_window|Bom, adeus!
 dlga_start:hobbit_merry_talk_met.1|Bem-vindo de volta, {nome do jogador}!
 dlga_start:hobbit_pippin_talk_met.1|Bem-vindo de volta, {nome do jogador}!
-dlga_hobbit_merry_talk_met:hobbit_deliver_message|Olá, Merry. Tenho uma mensagem do teu primo, Pippin, que se localiza nas Minas Tirith.
-dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Olá, Pippin. Tenho uma mensagem do teu primo, Merry, que se localiza em Edoras.
-dlga_hobbit_deliver_message:close_window|Obrigado, {playername}. Foi bom você ter trazido isso para mim.
+dlga_hobbit_merry_talk_met:hobbit_deliver_message|Olá, Merry. Tenho uma mensagem de seu primo, Pippin, que se encontra nas Minas Tirith.
+dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Olá, Pippin. Tenho uma mensagem de seu primo, Merry, que se encontra em Edoras.
+dlga_hobbit_deliver_message:close_window|Obrigado, {playername}. Foi ótimo você ter trazido isso para mim.
 dlga_hobbit_merry_talk_met:close_window|Olá, Merry.
 dlga_hobbit_pippin_talk_met:close_window|Olá, Pippin.
 dlga_start:treebeard_introduce_1|(Você se encontra observando uma criatura extraordinária. Ele é muito alto e com membros rígidos, pele de casca e cabelo de folhas. O musgo cobre partes de seu corpo. Mas no momento o que você mais repara são os olhos. Os olhos profundos estão te inspecionando, cautelosos e solenes, mas muito afiados e penetrantes. Você acha que são marrons, raiados de verde, como se houvesse um enorme poço atrás deles, repleto de eras de memórias e longos, vagarosos pensamentos constantes. Mas na superfície seus olhos fulguram com o presente... como o sol cintilando nas folhas da copa de uma vasta árvore, ou as ondulações de um lago muito profundo.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Você está prestes a dizer algo, mas uma estranha sensação sufocante cai sobre você, como se o ar fosse muito rarefeito ou escasso para respirar... com uma inspiração quase desesperada de ar você consegue segurar seus sentimentos e a criatura/árvore libera a intensidade do seu olhar um pouco mais. A criatura continua a olhar para você e você notar que as outras criaturas árvores estão olhando para você também, como se esperassem que você fale algo...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Perdõe minha intrusão... não sou mais do que um cansado viajante procurando refúgio dos eventos recentes... meu nome é {playername}. Posso perguntar quem você é?
 dlga_treebeard_introduce_3:treebeard_introduce_4|(Uma árvore gigante lentamente abre sua boca que está escondida atrás de pequenos ramos, folhas e musgo. Com uma voz muito profunda, lenta e radiante voz, ele demonstra muito lentamente uma forma mais dominante:) ^ ' Hrooom... Hmmm... * Eu * não vou dizer o meu nome... ainda não de qualquer forma. Por um lado, levaria muito tempo. Meu nome está crescendo o tempo todo e eu vivi um tempo muito longo; Então, meu nome é como uma história. Nomes reais contar a história das coisas que pertencem na minha língua, no meu velho Entês, como vocês dizem. É um lindo idioma, mas demora muito tempo para dizer algo, porque não dizemos nada, a não ser que valha a pena levar muito tempo para dizer e ouvir.'
-dlga_treebeard_introduce_4:treebeard_introduce_5|Oh, você é um Ent! As lendas falam de você e me sinto honrado em estar na sua presença. Não pretendo impor nada e posso sair, se assim desejar.
-dlga_treebeard_introduce_5:treebeard_questtalk|(O gigante de membros rígidos e seus companheiros Ents ficam parados por muitos minutos em silêncio, enquanto uma brisa passa por seus cabelos e barba frondosos. Eles se olham por mais um momento prolongado até que um Ent incomum e apressado, que se parece com uma rowan. No entanto, ele permanece em silêncio até que o Ent gigante de membros rígidos continue: )
-dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Como eu havia dito antes...:Hroom... Nós apreciamos seu respeito. É {reg1?estranho por parte de sua raça: é bom falar com elfos de novo}.} Os tempos não são bons, desde que as nossas Entesposas desapareceram - e agora há muitas criaturas malignas soltas pelo Mão Branca que estão tentando destruir nossas casas. Procuramos alguém que é rápido mas não apressado. Alguém que possa nos ajudar enquanto discutimos os nossos próximos passos. ^ Muitas bandas de orcs invadiram a floresta e queimaram nossas árvores com flechas de fogo - se você conseguisse derrotar os orcs e se certificar de que eles não mais ameaçariam a floresta, nós seriamos gratos e o consideraríamos um verdadeiro amigo. Faça isso e vamos falar novamente.
+dlga_treebeard_introduce_4:treebeard_introduce_5|Oh, você é um Ente! As lendas falam de você e me sinto honrado em estar na sua presença. Não pretendo impor nada e posso sair, se assim desejar.
+dlga_treebeard_introduce_5:treebeard_questtalk|(O gigante de membros rígidos e seus companheiros Entes ficam parados por muitos minutos em silêncio, enquanto uma brisa passa por seus cabelos e barba frondosos. Eles se olham por mais um momento prolongado até que um Ente incomum e apressado, que se parece com uma sorveira, aparenta querer falar. No entanto, ele permanece em silêncio até que o Ente gigante de membros rígidos continua:)
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Como eu havia dito antes...:Hroom... Nós apreciamos seu respeito. É {reg1?estranho por parte de sua raça: é bom falar com elfos de novo}.} Os tempos não são bons, desde que as nossas Entesposas desapareceram - e agora há muitas criaturas malignas soltas pelo próprio Mão Branca que estão tentando destruir nossas casas. Procuramos alguém que é rápido mas não apressado. Alguém que possa nos ajudar enquanto discutimos os nossos próximos passos. ^ Muitas bandas de orcs invadiram a floresta e queimaram nossas árvores com flechas de fogo - se você conseguisse derrotar os orcs e se certificar de que eles não mais ameaçariam a floresta, nós seriamos gratos e o consideraríamos um verdadeiro amigo. Faça isso e vamos falar novamente.
 dlga_treebeard_quest_brief:close_window|Orcs são de fato criaturas vis. Me certificarei de que eles não machuquem a floresta novamente.
 dlga_treebeard_quest_brief:treebeard_pretalk|Desculpe. Não tenho tempo para isso agora.
-dlga_treebeard_questtalk:close_window|(O líder Ent lentamente abre a boca escondida e os outros Ents olham para você e também lentamente começam a proferir um som longo e profundo que faz o chão tremer um pouco - você percebe que eles estão rindo de uma forma Entês. Uma árvore Rowan relativamente jovem olhando para tocos de Ents enfia seus grandes pés no chão e o tremor quase te faz cair.) ↑ Calminha aí, Quickbeam, não queremos machucar o nosso jovem guerreiro e amigo. Hrrrm... Eu sou Treebeard, o mais velho dos Ents e estamos todos gratos pelos seus serviços... Hrrrm... Deixe-me te dar um presente, é água Ent para celebrar, seu sucesso.'
-dlga_treebeard_questtalk:close_window.1|(O gigante de membros rígidos e seus companheiros Ents permanecem em silêncio enquanto uma brisa passa por seus cabelos e barba frondosos.)
+dlga_treebeard_questtalk:close_window|(O líder Ente lentamente abre a boca escondida e os outros Entes olham para você e também lentamente começam a proferir um som longo e profundo que faz o chão tremer um pouco - você percebe que eles estão rindo de uma forma Entês. Uma árvore Sorveira relativamente jovem olhando para tocos de Entes enfia seus grandes pés no chão e o tremor quase te faz cair.) ↑ Calminha aí, Viga-ligeiro, não queremos machucar o nosso jovem guerreiro e amigo. Hrrrm... Eu sou Barbárvore, o mais velho dos Entes, estamos todos gratos pelos seus serviços... Hrrrm... Deixe-me te dar um presente, é a Água Ente, para celebrar seu sucesso.'
+dlga_treebeard_questtalk:close_window.1|(O gigante de membros rígidos e seus companheiros Entes permanecem em silêncio enquanto uma brisa passa por seus cabelos e barba frondosos.)
 dlga_treebeard_pretalk:treebeard_talk_response|Hroooom... O que gostaria de saber, jovem amigo?
 dlga_treebeard_talk_response:treebeard_about_himself|Conte-me mais sobre você.
-dlga_treebeard_talk_response:treebeard_about_entwives|Conte-me mais sobre esposas de sementes.
-dlga_treebeard_talk_response:treebeard_about_ents|Conte-me mais sobre os Ents
+dlga_treebeard_talk_response:treebeard_about_entwives|Conte-me mais sobre as Entesposas.
+dlga_treebeard_talk_response:treebeard_about_ents|Conte-me mais sobre os Entes.
 dlga_treebeard_talk_response:close_window|Deixe para lá, adeus.
-dlga_treebeard_about_himself:treebeard_pretalk|(O líder Ent parece ter um pensamento distante. Depois de um tempo ele disse lentamente:) ^'Não seja precipitado... falamos mais sobre isso quando a floresta estiver segura de orcs.'
-dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... Sou o mais velho da minha espécie, hmmm... Sou conhecido como Treebeard por alguns mortais e os elfos me chamam de Fangorn. Hummm... Eu, Skinbark e Leaflock somos os únicos Ents que andaram as florestas antes da escuridão. Já não sou muito flexível quanto costumava ser... o jovem Quickbeam pode dobrar e desdobrar com facilidade, como uma muda ao vento... Hummm... se as Entesposas estivessem aqui...
-dlga_treebeard_about_entwives:treebeard_pretalk|(O líder Ent de repente recebe uma expressão de tristeza, e sua voz é extraordinariamente profunda.^' Hummm... Esta é uma triste história... quando a floresta estiver livre de Orcs poderemos discutir sobre isso.'
-dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahummm... as lindas esposas de sementes(Entesposas)... elas gostam de plantar e deixar crescer... nós devíamos tê-las escutado mais... Hrooom... e por conta disso elas saíram e foram até as Terras Marrons para plantar jardins, e lá elas ensinaram mortais a deixarem as terras férteis... nós ás visitávamos... até que... Sauron atacou... as Entesposas estão perdidas... Hummm... Fimbethil... sua tonalidade de grãos maduros... nós as procuramos... mas não as encontramos... ainda...
-dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... Nós somos pastores das árvores e podemos protegê-las de perigos. Somos mais velhos do que qualquer uma das raças mortais, mas não tão antigos como os elfos, que curaram-nos de nossa mudez. As coisas mudaram ao longo dos tempos. No início éramos mais rápidos, apressados e flexíveis. Ao longo das eras, muitos de nós se perderam. Alguns de nós ainda são verdadeiros Ents, e continuam vivendo do antigo jeito, mas muitos estão crescendo com sono, arvorescendo, como você pode dizer. A maioria das árvores são apenas árvores, claro; Mas muitas estão meio acordadas. Algumas estão bem acordadas, e algumas, bem, ah, digamos que ficando ciEntes. E isso está acontecendo o tempo todo. Quando isso acontece a uma árvore, você descobre que algumas têm maus corações. Ainda assim, fazemos o que podemos. Podemos afastar alguns estranhos e os valentes; treinamos e ensinamos, caminhamos e protegemos.
+dlga_treebeard_about_himself:treebeard_pretalk|(O líder Ente parece ter um pensamento distante. Depois de um tempo ele disse lentamente:) ^'Não seja precipitado... falamos mais sobre isso quando a floresta estiver segura dos orcs.'
+dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... Sou o mais velho da minha espécie, hmmm... Sou conhecido como Barbárvore por alguns mortais e os elfos me chamam de Fangorn. Hummm... Eu, Pele-casca e Cacho-folha somos os únicos Entes que andaram pelas florestas antes da escuridão. Já não sou muito flexível quanto costumava ser... o jovem Viga-ligeiro pode dobrar e desdobrar com facilidade, como uma muda ao vento... Hummm... se as Entesposas estivessem aqui...
+dlga_treebeard_about_entwives:treebeard_pretalk|(O líder Ente de repente recebe uma expressão de tristeza, e sua voz é extraordinariamente profunda.)^' Hummm... Esta é uma triste história... quando a floresta estiver livre dos Orcs poderemos discutir sobre isso.'
+dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahummm... as lindas Entesposas... elas gostam de plantar e deixar crescer... nós devíamos tê-las escutado mais... Hrooom... e por conta disso elas saíram e foram até as Terras Pardas para plantar jardins, e lá elas ensinaram mortais a deixarem as terras férteis... nós as visitávamos... até que... Sauron atacou... as Entesposas estão perdidas... Hummm... Fimbrethil... seu tom de grãos maduros... nós as procuramos... mas não as encontramos... ainda...
+dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... Nós somos pastores das árvores e podemos protegê-las de perigos. Somos mais velhos do que qualquer uma das raças mortais, mas não tão antigos como os elfos, que curaram-nos de nossa mudez. As coisas mudaram ao longo das eras. No início éramos mais rápidos, apressados e flexíveis. Ao longo do tempo, muitos de nós se perderam. Alguns de nós ainda são verdadeiros Entes, e continuam vivendo da maneira antiga, mas muitos estão crescendo sonolentos, arborizando, por assim dizer. A maioria das árvores são apenas árvores, claro, mas muitas estão meio acordadas. Algumas estão bem acordadas, e algumas, bem, ah, digamos que estão ficando ciEntes. E isso está acontecendo o tempo todo. Quando isso acontece a uma árvore, você descobre que algumas têm maus corações. Ainda assim, fazemos o que podemos. Nós afastamos estranhos e os audaciosos; treinamos e ensinamos, caminhamos e protegemos.
 dlga_start:close_window.1|Hmmmm?
 dlga_start:close_window.2|Mmhhrmmm?
 dlga_start:close_window.3|Mmmrhrrhmm?
@@ -86,7 +86,7 @@ dlga_member_scout_1:close_window.1|Espere um minuto, ainda não.
 dlga_do_member_trade:member_talk|Algo mais?
 dlga_member_chat_00:member_talk|Sim, {s5}?
 dlga_member_talk:member_trade|Deixe-me ver seu equipamento.
-dlga_member_trade:do_member_trade|Me desculpe, meu equipamento é meu próprio.
+dlga_member_trade:do_member_trade|Me desculpe, meu equipamento é pessoal.
 dlga_member_trade:do_member_trade.1|Muito bem, está tudo aqui...
 dlga_member_talk:view_member_char_requested|O que você pode me dizer sobre suas habilidades?
 dlga_view_member_char_requested:do_member_view_char|Ok, deixe-me lhe contar...
@@ -141,7 +141,7 @@ dlga_ziggy_yes:ziggy_choose_prisoners|Excelente. Qual destes espécimes poderia 
 dlga_ziggy_choose_prisoners:ziggy_no|Não tenho nada que queira oferecer.
 dlga_ziggy_chosen_prisoner:ziggy_ritual|Obrigado comandante! Um momento ... ah sim, este deve fazer bem ... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 dlga_ziggy_chosen_prisoner:ziggy_ritual.1|O que temos aqui? Orgulhoso, desafiador? Temeroso, como você deveria ser? Agora eu vou te dar uma razão para o medo, de fato! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-dlga_ziggy_ritual:ziggy_ritual_succeed|Ah sim ... sim! Eis comandante! Contemple o que eu, Zigûrphel, consegui! Conhece você dos lobos de Angband? De Draugluin, ou do poderoso Carcharoth que matou Huan o Cão de Valinor? Assim como o Lorde das Trevas podia torcer e prender um espírito cativo em um vaso adequado aos seus propósitos, eu também amarrei um espírito menor e o uni como um grande animal de sombra! Este não é tão grande quanto a primeira ninhada de Draugluin, é claro, nada como, mas servirá.
+dlga_ziggy_ritual:ziggy_ritual_succeed|Ah sim ... sim! Eis comandante! Contemple o que eu, Zigûrphel, consegui! Conhece você dos lobos de Angband? De Draugluin, ou do poderoso Carcharoth que matou Huan o Cão de Valinor? Assim como o Senhor do Escuro podia torcer e prender um espírito cativo em um vaso adequado aos seus propósitos, eu também amarrei um espírito menor e o uni como um grande animal de sombra! Este não é tão grande quanto a primeira ninhada de Draugluin, é claro, nada como, mas servirá.
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|Sempre tamanha alegria trazer um inimigo corretamente para o calcanhar.
 dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! Este foi muito fraco! Inútil! Dá-me um mais forte, Comandante, aquele que não falhará!
 dlga_ziggy_ritual_succeed:close_window|E claro, permita-me um pouco de descanso; então você pode passar outro cativo para o meu cuidado. Eu farei o resto.
@@ -270,7 +270,7 @@ dlga_lord_start:lord_defend_refugees_failed|{playername}, Recebi notícias que o
 dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Perdoe-me, {s65}, eu não pude defendê-los.
 dlga_lord_defend_refugees_failed_1a:lord_pretalk|São os inocentes que sofrem mais na guerra. Deve haver mais comboios de refugiados no futuro, {playername}. Espero que esteja mais preparado na próxima vez.
 dlga_lord_start:lord_defend_refugees_half_completed|Recebi notícias que somente {reg17} refugiados alcançaram seu destino. Lastimável, mas este é o custo da guerra. Deve haver mais comboios de refugiados no futuro, {playername}. Espero que esteja mais preparado na próxima vez.
-dlga_lord_defend_refugees_half_completed:lord_pretalk|Estarei mais preparado na próxima vez, senhor.
+dlga_lord_defend_refugees_half_completed:lord_pretalk|Estarei mais preparado na próxima vez, meu senhor.
 dlga_lord_start:lord_generic_mission_completed.8|Recebi notícias que os refugiados foram todos mortos, e haverão mais comboios de prisoneiros brevemente... Você fez bem, {playername}. Isto é só o começo, governaremos estas terras logo.
 dlga_lord_start:lord_hunt_refugees_failed|{playername}, nossos espiões nos informam que você fracassou em interceptar {reg1} do comboio de refugiados. Eles são fracos e lentos, e ainda fracassou. Que utilidade é você?
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|Eles eram rápidos, mestre. Não consegui rastreá-los.
@@ -300,7 +300,7 @@ dlga_lord_report_to_army_asked:lord_report_to_army_continue|Eu não tenho o núm
 dlga_lord_report_to_army_completed:close_window|Excelente. Vou te dizer quando tiver uma nova tarefa para você. {s3}
 dlga_lord_report_to_army_continue:close_window|Então você melhor se apressar . Nós vamos estar se movendo para fora logo contra o inimigo e eu preciso de todas as mãos capazes que pudermos reunir .
 dlga_lord_start:lord_mission_told_scout_waypoints|{Playername}  , Preciso de um voluntário para explorar a área. Estamos gastando muita na informação, e eu simplesmente deve ter uma imagem melhor da situação antes de podermos prosseguir. Eu quero que você vá para { s13 }, { s14 } e {s15}  e relatório de volta tudo o que você encontrar .
-dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepted|Você encontrou seu voluntário , senhor.
+dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepted|Você encontrou seu voluntário, senhor.
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_rejected|Temo que deve declinar.
 dlga_lord_mission_told_scout_waypoints_accepted:close_window|Bom! Simplesmente passar perto {s13}, {s14} e {s15} e verificar o que está lá. Tome nota de que encontra e retorna para mim logo que possível.
 dlga_lord_mission_told_scout_waypoints_rejected:lord_pretalk|Hm . Estou desapontado , {playername} . Muito desapontado. Nós falaremos mais tarde , eu preciso ir e encontrar alguém para espiar para nós.
@@ -366,25 +366,25 @@ dlga_ring_hunters_2:ring_hunters_accept|Meu Senhor, Eu farei o que for necessár
 dlga_ring_hunters_2:ring_hunters_reject|Ainda não estou preparado para tal tarefa.
 dlga_ring_hunters_accept:close_window|Com bravura no seu coração e aço afiado em suas mãos, irás, {playername}. Aguardamos notícias de seu sucesso.
 dlga_ring_hunters_reject:lord_pretalk|Entendo. Me avise quando estiver, mas se apresse pois não queremos que eles tenham êxito.
-dlga_ring_hunters_what:ring_hunters_2|Os planos do inimigo permanece oculto para nós, mas podemos ver que esses bandidos estão determinados a encontrar o que estão procurando. Não posso revelar tudo que sabemos, pois muito se pendura na balança e discrição é primordial. Seja o que estão procurando deve ser uma arma poderosa, uma para ser usada para causar mais destruição em nome do Senhor das Trevas.
-dlga_ring_hunters_what:ring_hunters_2.1|O Senhor da Escuridão enviou emissários para diferentes clãs de anões anteriormente, perguntando sobre os anéis de poder dado ao nosso povo. Esses criminosos podem estar procurando por eles, o outros como eles... Verdade ou não, não podemos deixar que caiam nas mãos do Senhor das Trevas.
+dlga_ring_hunters_what:ring_hunters_2|Os planos do inimigo permanece oculto para nós, mas podemos ver que esses bandidos estão determinados a encontrar o que estão procurando. Não posso revelar tudo que sabemos, pois muito se pendura na balança e discrição é primordial. Seja o que estão procurando deve ser uma arma poderosa, uma para ser usada para causar mais destruição em nome do Senhor do Escuro.
+dlga_ring_hunters_what:ring_hunters_2.1|O Senhor do Escuro enviou emissários para diferentes clãs de anões anteriormente, perguntando sobre os anéis de poder dado ao nosso povo. Esses criminosos podem estar procurando por eles, o outros como eles... Verdade ou não, não podemos deixar que caiam nas mãos do Senhor do Escuro.
 dlga_lord_talk:ring_hunter_party_defeated|Meu senhor, trago más notícias... Embora hei derrotado os Caçadores de Anéis aterrorizando as vilas, seus líderes não estavam presentes. Provavelmente encontraram o que estavam procurando
 dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|Isto não é más notícias, {playername}. Nós ouvimos a respeito da sua grande vitória! As vidas dos aldeões importam mais para a nossa causa do que qualquer arma. Enquanto conversamos, os Beornings estão juntando suas forças, envigorados pela sua vitória. Além do mais, não acreditamos que esses caçadores de anéis encontraram o que estavam procurando. Se era a arma que temíamos, então teríamos sentido algo... Um pertúbio.
 dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|Fico feliz então. Seja esta arma o que for... eles podem ainda estar procurando por ela. Eu continuarei vigilante e continuarei alerta para mais destes Caçadores de Anéis.
 dlga_ring_hunter_quest_end:close_window|Nós todos vamos. Obrigado mais uma vez pelo seu serviço,  {playername}.
 dlga_lord_talk:ring_hunter_lair_defeated_elf|Senhor, interceptei os Caçadores de Anéis aterrorizando os vilarejos, fui capaz de derrotar o líder em em seu covil. Eles possuíam isto.
 dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|Ah, um anel, mas não O anel. Nem mesmo um dos grandes anéis, muito menos um mero berloque. Sinto poder dentro deste anel.
-dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Então estávamos certos por tirar isto das mãos do Senhor das Trevas, antes que ele pudesse usá-lo para espalhar sua sombra sobre a terra e dominar os corações de muitos.
+dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Então estávamos certos ao tirar isto das mãos do Senhor do Escuro, antes que ele pudesse usá-lo para espalhar sua sombra sobre a terra e dominar os corações de muitos.
 dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|Você deve ficar com este anel e usá-lo para lutar contra o inimigo e seu exército. Confio que fará bom uso dele.
 dlga_ring_hunter_lair_quest_end:close_window|Isto é uma honra, meu senhor, obrigado! Meu coração permanecerá verdadeira e meu braço forte.
 dlga_start:ring_hunters_party_attack|Olhem, rapazes. Mais pasto para abater.
 dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|O teu alvoroço chegou ao fim.
 dlga_ring_hunters_party_attack_2:close_window|Verifique seus bolsos e dedos. Salve um para tortura. O resto é jantar!
-dlga_start:ring_hunter_lair_defeat|Esse anel pertence ao Senhor das Trevas! Não podes ficar com ele!
+dlga_start:ring_hunter_lair_defeat|Esse anel pertence ao Senhor do Escuro! Não podes ficar com ele!
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Isto pertence a mim agora.
 dlga_ring_hunter_lair_defeat2:close_window|Você acha que você conseguiu uma grande vitória? Uma pálida e imunda vitória, talvez. Bah! Nosso exército marchou por muito tempo antes de você chegar. Está tarde demais para salvar aqueles que foram caçados!
-dlga_start:beorn_message|Meu {lorde/dama}, recebemos um aviso de {s1} que um grande bando de bandidos estava vindo em nossa direção! Infelizmente, não havia tempo para reunir guerreiros suficientes. Tendo ouvido o som da batalha, nos preparamos para o pior!
-dlga_beorn_message:beorn_message2|Aquilo não é um bando ordinário de criminosos. Eram os piores dos piores do Senhor da Escuridão, pelo menos aqui no Norte. Seus líderes, porém, não estavam presentes. Seu covil permanece nos beirais da Floresta de Mirkwood e devo ir depressa.
+dlga_start:beorn_message|Meu {senhor/senhora}, recebemos um aviso de {s1} que um grande bando de bandidos estava vindo em nossa direção! Infelizmente, não havia tempo para reunir guerreiros suficientes. Tendo ouvido o som da batalha, nos preparamos para o pior!
+dlga_beorn_message:beorn_message2|Aquilo não é um bando ordinário de criminosos. Eram os piores dos piores do Senhor do Escuro, pelo menos aqui no Norte. Seus líderes, porém, não estavam presentes. Seu covil permanece nos arredores da Floresta das Trevas e devo ir depressa.
 dlga_beorn_message2:beorn_message_end|Sim, fomos avisados sobre o acampamento e enviamos batedores. Nós vimos eles queimarem tudo e rapidamente cavalgar até Mordor. Se tivesse escolhido ir até lá primeiro, você provavelmente não poderia ter nos ajudado. Estamos muito gratos pela sua vitória!
 dlga_beorn_message_end:beorn_message_close|Devo informar {s1} sobre a batalha. Regresse à tua vila e envie batedores. Podem haver vagantes.
 dlga_beorn_message_close:close_window|Sim, comandante. Permaneceremos vigilantes e solicitaremos mais homens de aldeias distantes. Sua vitória inspirou a todos nós hoje.
@@ -395,7 +395,7 @@ dlga_lord_give_troops_check_1:lord_pretalk|\nEntão você mudou sua mente ... ^ 
 dlga_lord_give_troops_check_1:lord_pretalk.1|Eu não tenho uso para aquelas tropas aqui ...^Leve-os de volta.
 dlga_lord_talk:lord_get_reward_item_ask|Quero solicitar um item especial .
 dlga_lord_get_reward_item_ask:lord_talk|Parece que você não tem lugar em seu inventário para qualquer outra coisa . Faça algum espaço, em seguida, retornar .
-dlga_lord_get_reward_item_ask:lord_get_reward_item|Sério? Lembre-se que você precisa para realizar uma determinada posição e comandar uma influência considerável para merecer itens especiais. ^ O que eu posso te dar ?
+dlga_lord_get_reward_item_ask:lord_get_reward_item|Realmente? Lembre-se que você precisa possuir uma determinada classificação e comandar uma influência considerável para merecer itens especiais.^O que eu posso te dar ?
 dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [custos {reg14} / {reg15} influência]
 dlga_lord_get_reward_item:lord_pretalk|Deixa pra lá então.
 dlga_lord_get_reward_item_answer:lord_pretalk|Muito bem. Que você possa usá-lo para vencer nossos inimigos.
@@ -486,9 +486,9 @@ dlga_lord_mission_raid_village_a:lord_raid_village_reject|Eu não consigo atacar
 dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Eu não tenho tempo para roubar aldeias insignificantes!
 dlga_lord_raid_village_accept:close_window|Então que vão fazer para ficar aqui?
 dlga_lord_raid_village_reject:close_window|As desculpas de covardes. Vá embora, o seu fedor de medo é insultante.
-dlga_lord_active_mission_1:lord_mission_sorcerer_completed|O feiticeiro da Floresta das Trevas foi morto , minha senhora.
-dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Perdoe-me, minha senhora , mas assuntos urgentes impediram-me de matar o feiticeiro , e, entretanto, ele fugiu .
-dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|O feiticeiro da Floresta das Trevas ainda vive . Nós interrompeu seus rituais , mas ele fugiu .
+dlga_lord_active_mission_1:lord_mission_sorcerer_completed|O feiticeiro da Floresta das Trevas foi morto, minha senhora.
+dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Perdoe-me, minha senhora, mas assuntos urgentes impediram-me de matar o feiticeiro, e nesse meio-tempo, ele fugiu.
+dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|O feiticeiro da Floresta das Trevas ainda vive. Nós interrompemos seus rituais, más ele fugiu.
 dlga_lord_mission_sorcerer_completed:lord_pretalk|Sim {playername}, senti sua morte. Foi levantado o véu da feitiçaria da madeira e muito do meu poder está de volta. Prestaram um grande serviço ao nosso povo e como tal tem direito a um presente. Leve isto...
 dlga_lord_mission_sorcerer_failed:lord_pretalk|Sim {playername}, eu sinto as artes das trevas do inimigo ainda pressionando em cima de nós. Seus esforços parecem maiores agora. É uma pena que você não pode detê-lo. Sem dúvida, ele vai tomar precauções adicionais no futuro a ala contra os nossos esforços. Ele provavelmente nunca será encontrado enquanto Dol Guldur ainda está de pé. Obrigado por seus esforços, mas deixe-me agora. Estou ficando cansado.
 dlga_lord_active_mission_1:lord_lend_companion_end|Oh, você quer que seu companheiro de volta? Entendo...
@@ -549,17 +549,17 @@ dlga_lord_tell_mission:lord_mission_find_lost_spears|Aqui é uma missão para um
 dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|O que você manda-me fazer sobre isso , meu senhor?
 dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|Estas armas aumentaria a eficácia de nossos exércitos , mas acima de tudo eles vão levantar o ânimo dos nossos homens. Você terá que encontrar essas lanças. Você terá que ir pedir aos anões permissão para procurar as lanças nas profundezas da Montanha Solitária . Cuidado, você pode encontrar alguns orcs ou trolls nos túneis. Você está disponível para esta tarefa ?
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|Temo não há orcs nem trolls ! Vou encontrar essas lanças para você, meu senhor .
-dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|Eu tenho medo Eu não posso ajudá-lo , meu senhor.
+dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|Eu tenho medo, eu não posso ajudá-lo , meu senhor.
 dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|Eu vejo que a discrição é a melhor parte de seu valor. Talvez você deve furar a deveres de aferição ..
 dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|Boa sorte então!
 dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|Há um importante serviço que você pode oferecer ao nosso povo, {playername}.
 dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|Meu poder de defender e preservar Lothlorien foi reduzida pelos dispositivos do inimigo. Um mestre feiticeiro de Dol Guldur é invocar poderosos encantos que inibem nossas defesas. Embora ele é um mortal, ele se tornou um dos maiores inimigos alunos no uso de rituais arcanos e representa uma grande ameaça para o nosso povo. Você deve caçá-lo e destruí-lo!
-dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Onde posso encontrar o feiticeiro , minha senhora ?
-dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Procure-o na floresta das trevas, não muito longe de Dol Guldur propriamente dito. Ele é um bem guardado e um adversário cauteloso, então você precisará usar stealth para evitar o alarme de que está sendo gerado. Se ele escapar, ele vai se mudar para outros lugares escuros que não sabe nada e continuar sua maldade Incontestada. Haverá apenas uma oportunidade para derrotá-lo. Muito depende de seu sucesso. Acompanhe nossas bênçãos.
-dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Às suas ordens , senhora. Vou tentar o meu melhor para eliminar este mal .
-dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Perdoe-me, minha senhora . Tenho algumas questões prementes para assistir antes que eu possa ajudar o seu povo com este endevour .
+dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Onde posso encontrar o feiticeiro, minha senhora ?
+dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Procure-o na Floresta das Trevas, não muito longe de Dol Guldur. Ele é bem guardado e um adversário cauteloso, então você precisará ser furtivo para evitar que o alarme seja soado. Se ele escapar, ele vai se mudar para outros lugares escuros que não conhecemos e continuará sua maldade incontestável. Haverá apenas uma oportunidade para derrotá-lo. Dependemos muito de seu sucesso. Vá com nossas bênçãos.
+dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Às suas ordens, minha senhora. Vou tentar o meu melhor para eliminar este mal.
+dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Perdoe-me, minha senhora. Tenho algumas questões urgêntes para atenderr antes que eu possa ajudar o seu povo com esta tentativa.
 dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Eu entendo, {nomedojogador}. Mas não conte por muito tempo, pois o esforço de resistir à sua magia está me cansando.
-dlga_lord_tell_mission:lord_mission_deliver_message|Eu preciso enviar uma carta para {s13}  quem deve estar atualmente em {s4}. Se você vai estar caminhando para lá, você iria entregar a ele ? A carta deve ser em suas mãos em 30 dias.
+dlga_lord_tell_mission:lord_mission_deliver_message|Eu preciso enviar uma carta para {s13} que deve estar atualmente em {s4}. Se estiver á caminho de lá, você poderia entregar a ele? A carta precisa estar em suas mãos em no máximo 30 dias.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certamente , eu pretendo passar por {s4}  e seria nenhum problema.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|Eu duvido que vou estar vendo {s13} em breve, {s65}. É melhor enviá-lo com outra pessoa.
 dlga_lord_mission_deliver_message_accepted:close_window|Eu agradeço, {playername}  . Aqui está a carta. Dê meus cumprimentos a {s13} quando você vê-lo.
@@ -633,7 +633,7 @@ dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Venha agora. Pensei
 dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He- heh . Você acertou. Ainda assim, eu não posso deixá-lo na prisão .
 dlga_prison_guard_visit_prison_4:close_window|Tudo bem então. Vou sair agora.
 dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|Eu encontrei uma bolsa com 100 denars a poucos passos de distância. Eu acho que pertence a você .
-dlga_prison_guard_visit_prison_5:close_window|Ah! Eu estava procurando isso o dia todo. Como é bom você trazê-lo de volta {sir/madam}. Bem, agora que eu sei o que um honesta {homem/senhora} você está, não pode haver nenhum mal em deixá-lo lá dentro. Vá.
+dlga_prison_guard_visit_prison_5:close_window|Ah! Eu estava procurando isso o dia todo. Como é bom você trazê-lo de volta {senhor/senhora}. Bem, agora que eu sei que você é um {homem/mulher} honesto, não há mal em deixá-lo entrar. Entre.
 dlga_prison_guard_talk:close_window|Deixe para lá.
 dlga_start:castle_guard_players|Suas ordens , Comandante ?
 dlga_castle_guard_players:close_window|Abra a porta. Eu vou entrar.
@@ -642,11 +642,11 @@ dlga_start:castle_guard_sneaked_intro_1|Sai da minha vista, mendigo! Você fede!
 dlga_start:close_window.9|Cai fora antes que eu perca minha paciência você vil mendigo!
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|Eu quero entrar no salão e falar com o senhor.
 dlga_castle_guard_sneaked_intro_1:close_window|[Sair]
-dlga_castle_guard_sneaked_intro_2:close_window|Você está fora de sua mente , {man/woman}? Mendigos não são permitidos para o corredor. Agora, se perder ou eu vou bater em você sangrenta.
+dlga_castle_guard_sneaked_intro_2:close_window|Você está fora de sua mente, {homem/mulher}? Mendigos não são permitidos para o salão Agora, saia ou eu vou bater em você até sangrar.
 dlga_start:castle_guard_intro_1|O que você quer?
 dlga_castle_guard_intro_1:castle_guard_intro_2|Eu quero entrar no salão e falar com o senhor.
 dlga_castle_guard_intro_1:close_window|Deixe para lá.
-dlga_castle_guard_intro_2:castle_guard_intro_2|Você pode ir depois de deixar suas armas comigo. Ninguém está autorizado a transportar armas no Hall do Senhor.
+dlga_castle_guard_intro_2:castle_guard_intro_2|Você pode ir depois de deixar suas armas comigo. Ninguém está autorizado a transportar armas no salão do senhor.
 dlga_castle_guard_intro_2:close_window|Aqui, pegue meus braços. Vou entrar
 dlga_castle_guard_intro_2:castle_guard_intro_2b|Não, eu dou meus braços para ninguém .
 dlga_castle_guard_intro_2b:close_window|Então não pode entrar.
@@ -664,7 +664,7 @@ dlga_request_meeting_4:request_meeting_5|Espere aí. Vou enviar-lhe o seu pedido
 dlga_request_meeting_5:request_meeting_6|Estou esperando...
 dlga_request_meeting_6:close_window|Tudo certo. {s2} vai falar com você agora.
 dlga_request_meeting_6:close_window.1|{s2} diz que não vai vê-lo . Begone agora.
-dlga_castle_gate_open:close_window|Meu Senhor {s2} ficará feliz em vê-lo {sir/madam}. \nEntre. Estou abrindo as portas para você.
+dlga_castle_gate_open:close_window|Meu Senhor {s2} ficará feliz em vê-lo {senhor/senhora}. \nEntre. Estou abrindo as portas para você.
 dlga_castle_gate_open:close_window.1|Meu senhor {s2} não está no castelo. Mas acho que ele aprovaria você se abrigar aqui. Pode entre. Eu vou abrir as portas para você.
 dlga_castle_gate_open:close_window.2|Entre. Estou abrindo as portas para você.
 dlga_castle_gate_open:close_window.3|Pode entre. Mas certifique-se de que seus homens se comportam racionalmente dentro das paredes.  Meu senhor {s2} não quer problemas aqui.
@@ -680,15 +680,15 @@ dlga_caravan_help5:close_window|Eu vou lembrar-me disso. Obrigado Torbal, fica b
 dlga_start:caravan_attack1|E quem é você? Não precisamos de sua interferência, nar!
 dlga_caravan_attack3:close_window|Fraco? Veremos quem é o fracote! (Difícil)
 dlga_caravan_attack3:close_window.1|Vá em frente, covarde. Verei o teu corpo no campo.
-dlga_start:caravan_res_tut1|*relincho* Não dói esperar seu momento, guerreiro! Alguns dos rapazes provavelmente não pensam muito de ti, mas não eu, oh não. Eu vi você lutar. Não vou apostar contra ti! {s10}^^Mas todos nós ficamos com o nosso tipo, ficamos sim. Sirva o Olho, sirva o Senhor das Trevas, sim, mas faça uma tarefa para o Leste, e o Sul não nota, e vice-versa. Ajude o Olho, e a Mão Branca não se importa. Ajuda o Mago Branco, e a Torre das Trevas pergunta por quê você não está a ajudando!
-dlga_start:caravan_res_tut2|*relincho* Suponho que eu seja o líder agora. Você é um lutador feroz, sim! Pegue a sua parte do espólio. Alguns dos rapazes estavam apostando em você ser comida de warg, mas não eu, oh não. Eu vi você lutar. Não apostaria contra ti!^^Nossos amigos e aliados ouvirão sobre você, não duvide! Eles devem lhe oferecer uma nova montaria, ou uma nova lâmina. Ninguém tem tempo para o fraco, mas se você é forte, ha, ajudamos aqueles que nos ajudam, vê? {s10}^^Mas todos nós ficamos com os nossos tipos, ficamos sim. Sirva o Olho, sirva o Senhor das Trevas, sim, mas faça uma tarefa para o Leste, e o Sul não nota, e vice-versa. Ajude o Olho, e a Mão Branca não se importa. Ajude o Feiticeiro, e a Torre das Trevas pergunta por quê você não está a ajudando!
+dlga_start:caravan_res_tut1|*relincho* Não dói esperar seu momento, guerreiro! Alguns dos rapazes provavelmente não pensam muito de ti, mas não eu, oh não. Eu vi você lutar. Não vou apostar contra ti! {s10}^^Mas todos nós ficamos com o nosso tipo, ficamos sim. Sirva o Olho, sirva o Senhor do Escuro, sim, mas faça uma tarefa para o Leste, e o Sul não nota, e vice-versa. Ajude o Olho, e a Mão Branca não se importa. Ajuda o Mago Branco, e a Torre das Trevas pergunta por quê você não está a ajudando!
+dlga_start:caravan_res_tut2|*relincho* Suponho que eu seja o líder agora. Você é um lutador feroz, sim! Pegue a sua parte do espólio. Alguns dos rapazes estavam apostando em você ser comida de warg, mas não eu, oh não. Eu vi você lutar. Não apostaria contra ti!^^Nossos amigos e aliados ouvirão sobre você, não duvide! Eles devem lhe oferecer uma nova montaria, ou uma nova lâmina. Ninguém tem tempo para o fraco, mas se você é forte, ha, ajudamos aqueles que nos ajudam, vê? {s10}^^Mas todos nós ficamos com os nossos tipos, ficamos sim. Sirva o Olho, sirva o Senhor do Escuro, sim, mas faça uma tarefa para o Leste, e o Sul não nota, e vice-versa. Ajude o Olho, e a Mão Branca não se importa. Ajude o Feiticeiro, e a Torre das Trevas pergunta por quê você não está a ajudando!
 dlga_caravan_res_tut1:caravan_noduel|(TUTORIAL DE PONTOS DE RECURSO)^^ Pontos de Recurso que você pode usar para comprar do povo de Mordos não são aqueles que você ganhou da sua própria facção, mas aqueles que você conseguirá em Mordor. ^^Veja RELATÓRIOS para mais informações
 dlga_caravan_res_tut2:caravan_duel1|(TUTORIAL DE PONTOS DE RECURSO)^^ Pontos de Recurso que você pode usar para comprar do povo de Mordos não são aqueles que você ganhou da sua própria facção, mas aqueles que você conseguirá em Mordor. ^^Veja RELATÓRIOS para mais informações
 dlga_caravan_noduel:caravan_duel2|Eu poderia matá-lo facilmente quanto eu cuspo! Mas eu tenho nada para provar para ele.
 dlga_caravan_duel1:caravan_duel2|O que eu faço não é da sua conta, Orc. Mas vou ajudar nossos aliados e matar nossos inimigos.
 dlga_caravan_duel2:caravan_fac_tut|Justo, justo! Olhe para esses vermes covardes ao redor de nós! Ha! Eles temem você, oh sim, assim como deveriam, como deveriam! Eu não o temo. Heh. Mas então, eu lhe devo um favor, não é! Lhe farei bem. Vou contar aos chefes sobre você hoje. A palavra vai espalhar. E quando os chefes ouvirem o suficiente sobre ti... Ora, eles poderiam oferecer algo especial para você. Presentes, poder, respeito! Retornarei agora para uma grande ajuda!
-dlga_caravan_fac_tut:caravan_duel3|(TUTORIAL DE RANQUES DA FACÇÃO) ^^Pontos de Ranque permitem que você suba nos ranques da sua facção (e/ou outras facções). ^^Isso determinará o tamanha máximo do seu grupo, o salário semanal vindo da facção, e destravará outras recompensas específicas da facção.
-dlga_woodelf_help_6:woodelf_help_7|(TUTORIAL DE RANQUES DA FACÇÃO) ^^Pontos de Ranque permitem que você suba nos ranques da sua facção (e/ou outras facções). ^^Isso determinará o tamanha máximo do seu grupo, o salário semanal vindo da facção, e destravará outras recompensas específicas da facção.
+dlga_caravan_fac_tut:caravan_duel3|(TUTORIAL DE CLASSIFICAÇÃO DA FACÇÃO) ^^Pontos de Classificação permitem que você suba nas classificações da sua facção (e/ou outras facções). ^^Isso determinará o tamanho máximo do seu grupo, o subsídio semanal vindo da facção, e destravará outras recompensas específicas da facção.
+dlga_woodelf_help_6:woodelf_help_7|(TUTORIAL DE CLASSIFICAÇÃO DA FACÇÃO) ^^Pontos de Classificação permitem que você suba nas classificações da sua facção (e/ou outras facções). ^^Isso determinará o tamanho máximo do seu grupo, o subsídio semanal vindo da facção, e destravará outras recompensas específicas da facção.
 dlga_woodelf_help_7:close_window.1|(Levante sua mão e saia sem dizer uma palavra)
 dlga_start:beorn_help1|*Ele olha para você com uma carranca.* ^^Coisas brilhantes como você é que atraem goblins das montanhas para a nossa floresta. Mas você matou vários deles, pelo que nós agradecemos.
 dlga_beorn_help1:beorn_help2|Bem vindo! Apesar de nós raramente deixarmos nossa floresta, eu não negaria auxílio a qualquer um que se oponha aos serviçais do Inimigo.
@@ -700,7 +700,7 @@ dlga_beorn_help4:beorn_help4a|*Risada com som agradável* Você considera elfos 
 dlga_beorn_help4a:beorn_help5|*Risada com som agradável* Você considera elfos irmãos dos ursos também?... Hidromel dourado é doce e aquece o coração, porém talvez lâminas élficas e flechas afiadas sejam mais necessárias nesses dias sombrios..
 dlga_beorn_help4:beorn_help5|(Coloque uma mão em seu coração, acene com a cabeça e sorria)
 dlga_beorn_help5:beorn_help6|Nós podemos ser rudes e peludos, severos e sombrios. Mas nós ajudamos nossos amigos, aqueles que nos ajudam. ^^Se nossos chefes considerarem você e suas ações dignas, nós seguiremos você para a batalha.
-dlga_beorn_help6:beorn_help7|(TUTORIAL DE RANQUES DA FACÇÃO) ^^Pontos de Ranque permitem que você suba nos ranques da sua facção (e/ou outras facções). ^^Isso determinará o tamanha máximo do seu grupo, o salário semanal vindo da facção, e destravará outras recompensas específicas da facção.
+dlga_beorn_help6:beorn_help7|(TUTORIAL DE CLASSIFICAÇÃO DA FACÇÃO) ^^Pontos de Classificação permitem que você suba nas classificações da sua facção (e/ou outras facções). ^^Isso determinará o tamanho máximo do seu grupo, o subsídio semanal vindo da facção, e destravará outras recompensas específicas da facção.
 dlga_beorn_help7:close_window|Le fael, amigo! Até mais. 
 dlga_beorn_help7:close_window.1|(Levantar a tua mão e sair sem dizer uma palavra)
 dlga_start:kill_scout_1|Grandes olhos e ouvidos que você tem! Se não tivesse nos avisado, esses alpinistas de árvores vestidos de verde poderiam ter pulado sobre nós, eu garanto - ou talvez escapariam, e trariam mais deles do que poderíamos aguentar. Agora eles são comida para corvos, e a nossa missão está segura. Ai! Nossos chefes ficarão felizes.
@@ -708,8 +708,8 @@ dlga_kill_scout_1:kill_scout_2|Cuidado aonde nos leva, Orc. Não viajamos tão l
 dlga_kill_scout_2:kill_scout_3|E guerra é o que teremos, de fato! Não tema, guerreiro, Mordor é um aliado para você. Tome este pivete - pegue alguns suprimentos. Bom para usar em todos os campos avançados de Mordor! Tome uma rodada de fermento Orc por mim!
 dlga_kill_scout_3:kill_scout_4|(TUTORIAL DE PONTOS DE RECURSO)^^ Pontos de Recurso que você pode usar para comprar do povo de Mordos não são aqueles que você ganhou da sua própria facção, mas aqueles que você conseguirá em Mordor. ^^Veja RELATÓRIOS para mais informações
 dlga_kill_scout_4:kill_scout_5|Quer que nós bebemos tralha de Orc? Preferimos beber o nosso próprio mijo!
-dlga_kill_scout_5:kill_scout_6|Ha! Eu sabia que vocês forasteiros faziam tais coisas! Ganhei a minha aposta com Gothmog, obrigado!!^^ Vou contar a ele e os outros chefes sobre ti, com certeza. Lugbúrz vai conhecer o quão útil foste hoje, não se preocupe! O Grande Olho está sobre você agora!^^Mas nós ficamos com os nossos tipos, ficamos sim. Sirva o Olho, sirva o Senhor das Trevas, sim, mas faça uma tarefa para o Leste, e o Sul não nota, e vice-versa. Ajude o Olho, e a Mão Branca não se importa. Ajude o Feiticeiro, e a Torre das Trevas pergunta por quê você não está a ajudando!
-dlga_kill_scout_6:kill_scout_7|(TUTORIAL DE RANQUES DA FACÇÃO) ^^Pontos de Ranque permitem que você suba nos ranques da sua facção (e/ou outras facções). ^^Isso determinará o tamanha máximo do seu grupo, o salário semanal vindo da facção, e destravará outras recompensas específicas da facção.
+dlga_kill_scout_5:kill_scout_6|Ha! Eu sabia que vocês forasteiros faziam tais coisas! Ganhei a minha aposta com Gothmog, obrigado!!^^ Vou contar a ele e os outros chefes sobre ti, com certeza. Lugbúrz vai conhecer o quão útil foste hoje, não se preocupe! O Grande Olho está sobre você agora!^^Mas nós ficamos com os nossos tipos, ficamos sim. Sirva o Olho, sirva o Senhor do Escuro, sim, mas faça uma tarefa para o Leste, e o Sul não nota, e vice-versa. Ajude o Olho, e a Mão Branca não se importa. Ajude o Feiticeiro, e a Torre das Trevas pergunta por quê você não está a ajudando!
+dlga_kill_scout_6:kill_scout_7|(TUTORIAL DE CLASSIFICAÇÃO DA FACÇÃO) ^^Pontos de Classificação permitem que você suba nas classificações da sua facção (e/ou outras facções). ^^Isso determinará o tamanho máximo do seu grupo, o subsídio semanal vindo da facção, e destravará outras recompensas específicas da facção.
 dlga_kill_scout_7:kill_scout_8|O que eu faço não é da sua conta, criatura nojenta. Vamos indo!
 dlga_kill_scout_8:close_window|Como deseja, como deseja. Por aqui!
 dlga_woodelf_help_1:woodelf_help_2.1|Nunca vi um Orc tão grande antes. Coisas desagradáveis. Não cause cause transtorno. Eu serei um soldado nessa guerra que virá, essa guerra que todos nós já sentimos vindo.
@@ -727,7 +727,7 @@ dlga_hungry_orc_1:hungry_orc_2|O que você espera que eu faça a respeito, verme
 dlga_hungry_orc_2:hungry_orc_choice|Aqueles fracotes não têm utilidade para combate mesmo. Vamos COMÊ-LOS!
 dlga_hungry_orc_choice:hungry_orc_eat|Está bem, agarrem-os! [Mate alguns fracotes para alimentar teus orcs.]
 dlga_hungry_orc_choice:hungry_orc_no_check|De jeito nenhum. Nenhum dos meus homens serão devorados! Voltem em formação ou eu vou ter que comer a tua própria língua! [Checagem de Liderança]
-dlga_start:sad_elf_1|Olhe, meu {lord/lady}, gaivotas! Elas são uma maravilha para mim e uma dor no meu coração.
+dlga_start:sad_elf_1|Olhe, meu {senhor/senhora}, gaivotas! Elas são uma maravilha para mim e uma dor para meu coração.
 dlga_sad_elf_1:sad_elf_2|Ouço suas vozes. Que notícias trazem?
 dlga_sad_elf_2:sad_elf_choice|Ah, contos do mar. E do além. Meu {senhor/senhora}, cresci cansado desta guerra que lutamos, cansado do solo que andamos. Temos que Ennor (Terra-Média) está perdida para mim. Deixe-me partir!
 dlga_sad_elf_choice:sad_elf_leave|Sinto a sua dor. Você fez a tua parte nesta guerra. Você pode partir.
@@ -838,7 +838,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.4|Armas de arremesso.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Nenhum, mudei de ideia.
 dlga_trainer_begin_training:close_window|Muito bem, aqui vamos nós. Quando você terminar seu treinamento, volte e me procure.
 dlga_start:close_window.22|Embora com você , mendigo vil.
-dlga_start:mayor_begin|Bom dia, meu Lorde.
+dlga_start:mayor_begin|Bom dia, meu Senhor.
 dlga_start:mayor_talk|Olá estranho, você parece ser novo aqui [s9]. Eu sou o mestre de guilda da cidade.
 dlga_start:mayor_begin.1|Bom dia, [nome do jogardor].
 dlga_mayor_begin:lord_deal_with_night_bandits_completed|Muito bom trabalho, {playername}, você teve pouco trabalho com esses cães sem lei! ^^ [ganhou pontos de recurso {reg14} de {s14}]
@@ -882,7 +882,7 @@ dlga_mayor_talk:mayor_talk_ask_location|Eu quero saber a localização de algué
 dlga_mayor_talk:close_window|[Sair]
 dlga_mayor_info_begin:mayor_info_talk|Eu sou a autoridade local aqui em {s9}. Você pode dizer que eu sou encarregado de tarefas diárias. Há sempre algo para fazer, então se você quer ajudar me avise.
 dlga_mayor_info_talk:mayor_info_lord|Quem manda nesta cidade?
-dlga_mayor_info_lord:mayor_info_talk|Our lord is {s10}.
+dlga_mayor_info_lord:mayor_info_talk|Nosso senhor é {s10}.
 dlga_mayor_info_talk:mayor_pretalk|É tudo o que preciso saber. Obrigado.
 dlga_merchant_quest_about_job:merchant_quest_about_job_2|O que tem isso ?
 dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|E se eu não pode terminá-lo ?
@@ -1045,7 +1045,7 @@ dlga_disband_regular_member_confirm_yn:close_window|Sim, vá lá e aguardar nova
 dlga_disband_regular_member_confirm_yn:close_window.1|Ainda não, ainda preciso de você aqui.
 dlga_disband_regular_member_confirm_yn:disband_regular_member_insist|Mas ainda é preciso aqui, também!
 dlga_disband_regular_member_insist:close_window|Eu sei, mas meu dever me leva a diferentes batalhas. ^ em breve vou deixar.
-dlga_start:routed_allies_talk|{reg1?My lord:Master}, você sobrevieu! Podemos nos juntar a você novamente?
+dlga_start:routed_allies_talk|{reg1?Meu senhor:Mestre}, você sobreviveu! Podemos nos juntar a você novamente?
 dlga_routed_allies_talk:close_window|Sim, juntos lutaremos para {s1} mais uma vez.
 dlga_routed_allies_talk:close_window.1|Ainda não, soldado.
 dlga_start:routed_allies_talk_troll|^ ^ROSNAR!^ ^
@@ -1073,7 +1073,7 @@ dlga_start:close_window.34|Algo grande está para vir! Preparem-se!
 dlga_start:close_window.35|Eles são muitos... mas nós somos dwarves!
 dlga_start:close_window.36|Aqueles orcs abriram uma caverna cheia de tesouros. Aqui estão algumas que eu encontrei, vá em frente e leve-as.
 dlga_start:close_window.37|Não .... eu os ouço ... eles estão lá fora! Eles estão em todo lugar!
-dlga_start:close_window.38|Aqui está... meu Lorde Balin's... você mereces estes...
+dlga_start:close_window.38|Aqui está... nosso senhor Balin... você é digno disto...
 dlga_start:party_encounter_hostile_attacker|Você não tem chance contra nós. Renda-se agora ou mataremos vocês todos...
 dlga_party_encounter_hostile_attacker:close_window|Não ataque! Nos rendemos.
 dlga_party_encounter_hostile_attacker:close_window.1|Vamos lutar até o fim !!!!!

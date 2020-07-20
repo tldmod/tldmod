@@ -1089,7 +1089,7 @@ qstr_{s27}:_Party_morale_|{s27}: La moral del grupo aumenta.
 qstr_{s27}:_Party_morale_d|{s27}: La moral del grupo baja.
 qstr_You_have_failed_to_f|¡No has cumplido con tu juramento de vengar a Balin y su compañía!
 qstr_You_have_failed_to_fu|¡No has cumplido con tu juramento de venganza por la heroica muerte de {s1}!
-qstr_Your_troops_value_yo|Tus tropas valoran tus esfuerzos por cumplir el juramento, pero son conscientes de la rapidez de los acontecimientos. Y por ende, 
+qstr_Your_troops_value_yo|Tus tropas aprecian la dedicación y el esfuerzo por cumplir el juramento, pero son conscientes de la rapidez de los acontecimientos. Y por ende, 
 qstr_{s22}You_have_fulfil|{s22}Has cumplido con tu juramento de vengar a Balin y su compañía!
 qstr_{s22}You_have_fulfill|{s22}Has cumplido con tu juramento de venganza por la heroica muerte de {s1}!
 qstr_Reinforcements|Refuerzos
@@ -1477,7 +1477,7 @@ qstr_If_fate_wills_it_I_s|Si el destino así lo quiere caminaré por tus tierras
 qstr_If_I_ever_have_need_|Si alguna vez necesito la clase ayuda que Lórien puede ofrecer, la pediré. Aunque quién sabe si servirá de algo.
 qstr__nod_and_say_nothing|(asiente en silencio)
 qstr_Oh_there_are_many_an|¡Oh, hay muchas, y cualquier amigo de Lórien que quiera disfruitarlas será bienvenido!^^Si volvemos a luchar codo con codo en el campo de batalla, o si cumples la voluntad de la Dama y sus comandantes, nuestro pueblo recompensará tu amabilidad cubriendo cualquier necesidad que tengas: armas refulgentes, recios plaquines de malla, flechas emplumadas de blanco y provisiones para tus tropas. ^^Quién sabe, puede que con el tiempo, tú {mismo/misma} te conviertas en {un gran señor/una gran señora} de Lórien, con potestad para ofrecer tus consejos a otros, o para pedirles favores.
-qstr_The_joys_of_the_Gold|Los placeres del Valle de Oro son muchos, y cualquier amigo de Lórien que quiera disfruitarlos será bienvenido. ^^Si volvemos a luchar codo con codo en el campo de batalla, o si cumples la voluntad de la Dama y sus comandantes, nuestro pueblo recompensará tus esfuerzos cubriendo cualquier necesidad que tengas: armas refulgentes, recios plaquines de malla, flechas emplumadas de blanco y provisiones para tus tropas. ^^Quién sabe, puede que con el tiempo, tú {mismo/misma} te conviertas en {un gran señor/una gran señora} de Lórien, con potestad para ofrecer tus consejos a otros, o para pedirles favores.
+qstr_The_joys_of_the_Gold|Los placeres del Valle de Oro son muchos, y cualquier amigo de Lórien que quiera disfrutarlos será bienvenido. ^^Si volvemos a luchar codo con codo en el campo de batalla, o si cumples la voluntad de la Dama y sus comandantes, nuestro pueblo recompensará tus esfuerzos cubriendo cualquier necesidad que tengas: armas refulgentes, recios plaquines de malla, flechas emplumadas de blanco y provisiones para tus tropas. ^^Quién sabe, puede que con el tiempo, tú {mismo/misma} te conviertas en {un gran señor/una gran señora} de Lórien, con potestad para ofrecer tus consejos a otros, o para pedirles favores.
 qstr_Our_Golden_Valley_gi|Nuestro Valle de Oro nos proporciona sobrados recursos, y cualquier amigo de Lórien tiene acceso a ellos. ^^Si volvemos a luchar codo con codo en el campo de batalla, o si cumples la voluntad de la Dama y sus comandantes, nuestro pueblo recompensará tus esfuerzos cubriendo cualquier necesidad que tengas mientras estés lejos de tu hogar.
 qstr_I_shall_keep_that_in|Lo tendré en cuenta.^^ ¡Hantanyel, áva márië!
 qstr_That_may_be_so_some_|Es posible, algunos caminos nos llevan por recodos tortuosos.^^ ¡Boe i 'waen!
@@ -1519,7 +1519,7 @@ qstr_Well..._better_here_|Bueno... mejor aquí que en combate, ¿no?
 qstr_We_ve_been_sent_by_L|Nos envía {s3}. Hemos venido a unir nuestras fuerzas con las vuestras.
 qstr_Lord_{s3}_has_sent_u|{s3} nos ha enviado, par aunirnos ala flota que va a atacar {s4}.
 qstr_Excellent_{playernam|Excelente, {playername}! He oído que les llevaste más tropas de las que te pedí. Gran trabajo.^^ Ten, toma esta recompensa adicional por suerar mis expectativas. ^^ Tenemos que ganar esta guerra lo más pronto posible.
-qstr_Excellent_{playername|Excelente, {playername}. SIn duda, esto ayudará a sus esfuerzos. Tenemos que ganar esta guerra lo más pronto posible.
+qstr_Excellent_{playername|Excelente, {playername}. Sin duda, esto será un acicate. Tenemos que ganar esta guerra y redoblar esfuerzos.
 qstr_Reinforcing_{s1}_has|Reforzar {s1} ha fortalecido a {s2}. (La facción de {s2} ha ganado {reg50} de fuerza).
 qstr_The_watchmen_in_the_|Los guardias de la ciudad han informado de que el número de emboscadas se ha reducido notablemente. Has hecho un buen trabajo. Gracias, {playername}.
 qstr_Our_guards_have_seen|Nuestros guardias han visto a esas sabandijas salir corriendo con el rabo entre las piernas. Has hecho un buen trabajo demostrando a esas alimañas que nosotros controlamos la zona.
