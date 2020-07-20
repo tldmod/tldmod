@@ -2164,14 +2164,15 @@ scripts = [
 		(gt,":volunteers",0), # Rafa: a very crude handling of the volunteer's party not being created
 
 		# compute ideal number of volunteers #InVain: Adjusted to account for bigger starting garrison sizes, putting more weight on player progress
+		#current formula is =((garrison/10 + rank*10 + influence*5) * (relation*2+100))/1000 +3
 		(store_party_size_wo_prisoners, ":to_add", ":town"),
-    	(val_div, ":to_add", 60), #   base: [num-garrison] / 100 #InVain: was 20
+    	(val_div, ":to_add", 10), 
 	    (call_script, "script_get_faction_rank", ":fac"),
 	    (assign, ":rank", reg0),
-		(val_mul, ":rank", 2), #InVain
-	    (val_add, ":to_add", ":rank"), #  + rank
+		(val_mul, ":rank", 10), 
+	    (val_add, ":to_add", ":rank"),
 	    (store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
-	    #(val_div, ":lead_bonus", 2), #disabled, InVain
+	    (val_mul, ":lead_bonus", 5),
 	    (val_add, ":to_add", ":lead_bonus"), 
 	    # orc bonus
 	    (assign, ":is_orc_faction", 0),
@@ -2188,7 +2189,10 @@ scripts = [
 	    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
 		(val_mul, ":center_relation", 2), #Invain
 	    (val_add, ":center_relation", 100),
-	    (val_mul, ":to_add", ":center_relation"), (val_div, ":to_add", 100),
+	    (val_mul, ":to_add", ":center_relation"), 
+		(val_div, ":to_add", 1000),
+		(val_add, ":to_add", 3), #add some extra, so the below code still works (volunteers don't fill up if less than 4)
+		(val_max, ":to_add", 6), #additional saveguard
 	    
 	    (assign, ":ideal_size", ":to_add"),
 		(store_party_size, ":vol_total", ":volunteers"),
@@ -2196,8 +2200,9 @@ scripts = [
 		#InVain: before adding new volunteers, we train the old ones, using the same formula as above (without garrison size)
 		(store_add, ":vol_xp", ":rank", ":lead_bonus"),
 		(val_mul, ":vol_xp", ":center_relation"),
-		(val_mul, ":vol_xp", ":vol_total"), #multiply with number of current volunteers
-		(val_div, ":vol_xp", 10),
+		(party_get_num_companion_stacks, ":vol_stacks", ":volunteers"),
+		(val_mul, ":vol_xp", ":vol_stacks"), #multiply with number of stacks, because xp are distributed among stacks, not troops
+		(val_div, ":vol_xp", 40),
 		(party_upgrade_with_xp, ":volunteers", ":vol_xp"),
 		
 		
