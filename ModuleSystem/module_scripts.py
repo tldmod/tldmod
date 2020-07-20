@@ -1434,6 +1434,11 @@ scripts = [
 	(faction_set_slot, faction_strings[x][0], slot_faction_ambient_sound_always, faction_strings[x][4])    for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_strings[x][0], slot_faction_occasional_sound1_day,faction_strings[x][5])    for x in range(len(faction_init)) ]+[
 
+  #Armoured Troll Variants
+  (troop_set_slot, "trp_moria_vet_troll", slot_troop_troll_armoured_variant, "trp_moria_armored_troll"),
+  (troop_set_slot, "trp_isen_vet_troll", slot_troop_troll_armoured_variant, "trp_isen_armored_troll"),
+  (troop_set_slot, "trp_mordor_vet_troll", slot_troop_troll_armoured_variant, "trp_mordor_olog_hai"),
+
 	# fixed faction info      
 	(try_for_range, ":faction", kingdoms_begin, kingdoms_end),
 		(faction_get_slot, reg30, ":faction", slot_faction_strength),
@@ -2085,11 +2090,6 @@ scripts = [
    	(troop_set_slot, "trp_nazgul", slot_troop_has_combat_ai, 1),
    	(troop_set_slot, "trp_badass_theo", slot_troop_has_combat_ai, 1),
    	(troop_set_slot, "trp_killer_witcher", slot_troop_has_combat_ai, 1),
-
-  #Armoured Troll Variants
-  (troop_set_slot, "trp_moria_vet_troll", slot_troop_troll_armoured_variant, "trp_moria_armored_troll"),
-  (troop_set_slot, "trp_isen_vet_troll", slot_troop_troll_armoured_variant, "trp_isen_armored_troll"),
-  (troop_set_slot, "trp_mordor_vet_troll", slot_troop_troll_armoured_variant, "trp_mordor_olog_hai"),
 
 	] or []) + [
 
