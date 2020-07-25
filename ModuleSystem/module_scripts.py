@@ -701,8 +701,11 @@ scripts = [
 # Output: reg0: join cost
 ("game_get_join_cost",
   [ (store_script_param_1, ":troop_id"),
+	(store_character_level, ":troop_level", ":troop_id"),
 	(call_script, "script_game_get_troop_wage", ":troop_id",0),
-	(store_mul, ":join_cost", reg0, 3), # to join, twice than day upkeep x 3
+	(store_mul, ":join_cost", reg0, ":troop_level"), # join cost: Wage*troop level: Higher level troops are expensive to recruit
+	(val_mul, ":join_cost", 3),
+	(val_div, ":join_cost", 4),
     
     # trait discounts: 75% of the original price
     (store_troop_faction, ":troop_faction", ":troop_id"),
@@ -2202,8 +2205,8 @@ scripts = [
 		(val_mul, ":vol_xp", ":center_relation"),
 		(party_get_num_companion_stacks, ":vol_stacks", ":volunteers"),
 		(val_mul, ":vol_xp", ":vol_stacks"), #multiply with number of stacks, because xp are distributed among stacks, not troops
-		(val_div, ":vol_xp", 40),
-		(party_upgrade_with_xp, ":volunteers", ":vol_xp"),
+		(val_div, ":vol_xp", 80),
+		(party_upgrade_with_xp, ":volunteers", ":vol_xp", 0),
 		
 		
 		# compute how many soldiers to add to volunteers		
@@ -2267,6 +2270,28 @@ scripts = [
 		    (gt, ":puny_orc", 0),
 		    (party_add_members, ":volunteers", ":puny_orc", 2),
 		(try_end),
+
+		#Remove highest level troop every day (counters volunteer training going overboard)
+		(party_get_num_companion_stacks, ":num_stacks", ":volunteers"),
+		(assign, ":highest_level", 0),
+			(try_for_range, ":i_stack", 0, ":num_stacks"),
+				(party_stack_get_troop_id, ":stack_troop", ":volunteers", ":i_stack"),
+				(store_character_level, ":troop_level", ":stack_troop"),
+				(gt, ":troop_level", ":highest_level"),
+				(party_stack_get_size, ":stack_size", ":volunteers", ":i_stack"),
+				(assign, ":highest_level", ":troop_level"),
+				(assign, ":highest_level_troop", ":stack_troop"),
+				(assign, ":highest_level_stack_size", ":stack_size"),
+			(try_end),
+		(ge, ":highest_level", 6), #affects t2 troops (orcs: t3)
+		(val_mul, ":highest_level", ":highest_level_stack_size"),
+		(store_random_in_range, ":random", 0, 100),
+		(le, ":random", ":highest_level"),
+		(party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
+		#(str_store_party_name, s1, ":town"),
+		#(str_store_troop_name, s2, ":highest_level_troop"),
+		#(display_message, "@{s1}: removed volunteer {s2}"),
+	
 	(try_end),
 ]),
 

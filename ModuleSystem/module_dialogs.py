@@ -11201,6 +11201,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ], 
 "{s55}", "mayor_talk",[]],
 
+[anyone|plyr,"mayor_talk", [(eq, "$cheat_mode", 1)], "Increase Relation", "mayor_friendly_pretalk",[(call_script, "script_change_player_relation_with_center", "$current_town", 5),]],
+
 [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone, "mayor_info_begin", [(str_store_party_name, s9, "$current_town")],
