@@ -50,7 +50,7 @@ party_templates = [
 ("forest_bandits",   "Orc Stragglers",      icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
 ("mountain_bandits", "Wild Goblins",        icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_mountain_goblin,2,40)]),
 ("steppe_bandits",   "Dunland Outcasts",    icon_dunlander    |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i2_dun_warrior,3,10), (trp_i1_dun_wildman,5,35)]),
-("sea_raiders",      "Corsair Renegades",   icon_umbar_corsair|carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i2_corsair_warrior,3,30),(trp_a3_corsair_marksman,3,20)]),
+("sea_raiders",      "Corsair Renegades",   icon_umbar_corsair|carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i4_corsair_raider,1,5),(trp_i2_corsair_warrior,3,20),(trp_a2_corsair_marine,3,15)]),
 
 ("deserters","Deserters",icon_axeman|carries_goods(3),0,fac_deserters,bandit_personality,[]),
 
@@ -73,35 +73,35 @@ party_templates = [
 
 #TLD Scouts
 #MV: in general, average strength should be 30-60 (except Beornings who have scouts only)
-("gondor_scouts"      ,"Gondorian Scouts",icon_footman_gondor|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_c2_gon_squire,1,1),(trp_a3_gon_bowman,3,5),(trp_i2_gon_watchman,3,5)]), #34-74
-("blackroot_auxila" ,"Blackroot Auxilia",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_a3_blackroot_archer,1,1),(trp_a2_blackroot_bowman,0,3),(trp_a1_blackroot_hunter,4,7)]), #32-71
-("lamedon_auxila"  ,"Lamedon Auxilia"   ,icon_footman_lamedon|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_i4_lam_warrior,1,1),(trp_i3_lam_veteran,1,5),(trp_i2_lam_footman,4,8)]), #31-71
-("lossarnach_auxila","Lossarnach Auxilia",icon_lossarnach_axeman_icon|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_i4_loss_heavy_axeman,1,1),(trp_i3_loss_vet_axeman,0,3),(trp_i2_loss_axeman,2,4),(trp_i1_loss_woodsman,4,8)]), #25-71
-("pinnath_gelin_auxila","Pinnath Gelin Auxilia",icon_footman_pinnath|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_a2_pinnath_bowman,1,3),(trp_c2_pinnath_rider,1,2),(trp_i1_pinnath_plainsman,3,6)]), #30-69
-("ranger_scouts"       ,"Ranger Scouts" ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_a5_ithilien_vet_ranger,1,2),(trp_a4_ithilien_ranger,1,4)]), #43-102 more punch for rangers, elites operating in enemy territory
+("gondor_scouts"      ,"Gondorian Scouts",icon_footman_gondor|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_c2_gon_squire,1,2),(trp_a3_gon_bowman,2,5),(trp_i3_gon_footman,1,3),(trp_i2_gon_watchman,2,5)]), #11-25 weak scouts (Gondor spawns a lot of them)
+("blackroot_auxila" ,"Blackroot Auxilia",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_a3_blackroot_archer,1,1),(trp_i2_blackroot_footman,2,4),(trp_a2_blackroot_bowman,2,4),(trp_a1_blackroot_hunter,3,6)]), #32-71
+("lamedon_auxila"  ,"Lamedon Auxilia"   ,icon_footman_lamedon|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_i4_lam_warrior,1,1),(trp_i3_lam_veteran,3,6),(trp_i2_lam_footman,4,8)]), #31-71
+("lossarnach_auxila","Lossarnach Auxilia",icon_lossarnach_axeman_icon|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_i4_loss_heavy_axeman,1,1),(trp_i3_loss_vet_axeman,1,3),(trp_i2_loss_axeman,2,4),(trp_i1_loss_woodsman,4,8)]), #25-71
+("pinnath_gelin_auxila","Pinnath Gelin Auxilia",icon_footman_pinnath|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_c2_pinnath_rider,2,4),(trp_a2_pinnath_bowman,2,4),(trp_i1_pinnath_plainsman,3,6)]), #30-69
+("ranger_scouts"       ,"Ranger Scouts" ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_a5_ithilien_vet_ranger,1,2),(trp_a4_ithilien_ranger,2,4)]), #43-102 more punch for rangers, elites operating in enemy territory
 
-("rohan_scouts"    ,"Rohirrim Scouts"      ,icon_knight_rohan |carries_goods(1)|pf_show_faction,0,fac_rohan   ,scout_personality,[(trp_ac5_elite_skirmisher_of_rohan,1,1),(trp_ac4_veteran_skirmisher_of_rohan,1,4),(trp_ac3_skirmisher_of_rohan,3,5)]), #43-82 rohan good at scouting
+("rohan_scouts"    ,"Rohirrim Scouts"      ,icon_knight_rohan |carries_goods(1)|pf_show_faction,0,fac_rohan   ,scout_personality,[(trp_c3_rider_of_rohan,2,3),(trp_ac3_skirmisher_of_rohan,3,5),(trp_c2_squire_of_rohan,1,3)]), #36-64 rohan good at scouting
 ("lorien_scouts"   ,"Lothlorien Scouts"    ,icon_lorien_elf_a |carries_goods(1)|pf_show_faction,0,fac_lorien  ,scout_personality,[(trp_i4_lorien_gal_inf,1,2),(trp_a2_lorien_warden,3,4),(trp_a1_lorien_scout,3,4)]), #31-62
 ("woodelf_scouts"  ,"Mirkwood Elven Scouts",icon_mirkwood_elf |carries_goods(1)|pf_show_faction,0,fac_woodelf ,scout_personality,[(trp_a5_greenwood_master_archer,1,1),(trp_a2_greenwood_veteran_scout,1,5),(trp_a1_greenwood_scout,2,5)]), #37-65
 ("imladris_scouts","Dunedain Scouts",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_imladris,scout_personality,[(trp_a5_arnor_master_ranger,1,1),(trp_a2_arnor_vet_scout,1,3),(trp_a1_arnor_scout,2,5)]), #37-65
 ("dale_scouts"     ,"Dale Scouts"          ,icon_generic_knight  |carries_goods(2)|pf_show_faction,0,fac_dale    ,scout_personality,[(trp_i4_dale_sergeant,1,1),(trp_i2_dale_man_at_arms,2,6),(trp_i1_dale_militia,4,8)]), #25-49 weak
 ("esgaroth_scouts" ,"Esgaroth Scouts"    ,icon_ithilien_ranger|carries_goods(2)|pf_show_faction,0,fac_dale    ,scout_personality,[(trp_a5_barding_bowman,1,1),(trp_a4_dale_archer,1,3),(trp_a2_dale_scout,4,6)]), #41-67 stronger than dale
 ("dwarf_scouts"    ,"Dwarven Lookouts"     ,icon_dwarf        |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,scout_personality,[(trp_a4_dwarf_bowman,1,1),(trp_i3_dwarf_hardened_warrior,1,3),(trp_a2_dwarf_lookout,4,6)]), #41-63
-("beorn_scouts"    ,"Beorning Scouts"      ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_i5_beorning_carrock_berserker,1,1),(trp_i4_beorning_sentinel,3,5),(trp_i2_beorning_warrior,3,8)]), #55-93 stronger, no raiders/patrols
-("woodmen_scouts"  ,"Woodmen Scouts"       ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_a5_woodmen_night_stalker,1,1),(trp_a3_woodmen_scout,2,3),(trp_i3_woodmen_skilled_forester,3,6)]), #46-70
+("beorn_scouts"    ,"Beorning Scouts"      ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_i4_beorning_carrock_fighter,1,1),(trp_i3_beorning_carrock_lookout,3,5),(trp_i2_beorning_warrior,2,4)]), #48-73 stronger, no raiders/patrols
+("woodmen_scouts"  ,"Woodmen Scouts"       ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_a5_woodmen_night_stalker,1,1),(trp_a3_woodmen_scout,2,4),(trp_i3_woodmen_skilled_forester,2,4)]), #46-65
 
 ("mordor_scouts"    ,"Mordor Scouts"       ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_mordor  ,scout_personality,[(trp_a4_mordor_fell_orc_archer,1,1),(trp_i3_mordor_large_orc,1,3),(trp_a2_mordor_orc_archer,2,5),(trp_i2_mordor_orc,2,6)]), #29-66
 ("morgul_scouts"    ,"Morgul Scouts"       ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_mordor  ,scout_personality,[(trp_a4_mordor_fell_orc_archer,1,1),(trp_i4_mordor_fell_morgul_orc,1,2),(trp_a2_mordor_orc_archer,2,5),(trp_i2_mordor_morgul_orc,3,5)]), #29-66
 ("isengard_scouts"  ,"Isengard Scouts"     ,icon_orc_isengard    |carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_a4_isen_fighting_uruk_tracker,1,1),(trp_a3_isen_large_uruk_tracker,2,6),(trp_a2_isen_uruk_tracker,3,7)]), #33-73
 ("isengard_scouts_warg","Isengard Warg Riders",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_ac4_isen_white_hand_rider,1,1),(trp_ac3_isen_warg_rider,3,6),(trp_ac2_isen_wolf_rider,3,6)]), #32-56 fast but weaker
-("harad_scouts"     ,"Haradrim Scouts"     ,icon_harad_horseman  |carries_goods(1)|pf_show_faction,0,fac_harad   ,scout_personality,[(trp_ac4_harondor_horse_archer,1,1),(trp_ac3_harondor_skirmisher,1,4),(trp_c2_harondor_scout,4,8)]), #31-65
-("dunland_scouts"   ,"Dunlending Scouts"   ,icon_dunlander       |carries_goods(1)|pf_show_faction,0,fac_dunland ,scout_personality,[(trp_ac4_dun_crebain_rider,5,10)]), #20-40 fast weaklings
-("umbar_scouts"     ,"Corsair Scouts"      ,icon_umbar_corsair   |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_i4_corsair_raider,1,2),(trp_a3_corsair_marksman,2,4),(trp_a2_corsair_marine,3,8)]), #33-61
-("khand_scouts"     ,"Easterling Scouts"   ,icon_cataphract      |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_ac4_khand_vet_skirmisher,1,3),(trp_c3_khand_horseman,2,4),(trp_c2_khand_pony_rider,3,6)]), #33-57 fast and capable
-("moria_scouts"     ,"Moria Scouts"        ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_moria   ,scout_personality,[(trp_c5_moria_clan_rider,1,1),(trp_c4_moria_warg_rider,2,5),(trp_c3_moria_wolf_rider,3,6)]), #27-51 fast
-("guldur_scouts"    ,"Dol Guldur Scouts"   ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_guldur  ,scout_personality,[(trp_a2_guldur_orc_tracker,3,4),(trp_i1_guldur_orc_snaga,8,12)]), #32-61
-("gundabad_scouts","Gundabad Scouts",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_gundabad,scout_personality,[(trp_c5_gunda_clan_rider,1,2),(trp_c4_gunda_warg_rider,3,6),(trp_c4_gunda_warg_rider,6,10)]), #41-76, was 30-54 fast
-("rhun_scouts"      ,"Rhun Scouts"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_ac3_rhun_horse_archer,1,3),(trp_c3_rhun_swift_horseman,3,6),(trp_ac2_rhun_horse_scout,5,8)]), #44-86 fast and very capable
+("harad_scouts"     ,"Haradrim Scouts"     ,icon_harad_horseman  |carries_goods(1)|pf_show_faction,0,fac_harad   ,scout_personality,[(trp_ac4_harondor_horse_archer,1,1),(trp_ac3_harondor_skirmisher,1,3),(trp_a3_harad_hunter,0,4),(trp_c2_harondor_scout,4,8)]), #32-66
+("dunland_scouts"   ,"Dunlending Scouts"   ,icon_dunlander       |carries_goods(1)|pf_show_faction,0,fac_dunland ,scout_personality,[(trp_ac4_dun_crebain_rider,4,8)]), #20-40 fast weaklings
+("umbar_scouts"     ,"Corsair Scouts"      ,icon_umbar_corsair   |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_i4_corsair_raider,1,2),(trp_a3_corsair_marksman,1,3),(trp_i2_corsair_warrior,2,4),(trp_a2_corsair_marine,3,8)]), #26-63
+("khand_scouts"     ,"Easterling Scouts"   ,icon_cataphract      |carries_goods(1)|pf_show_faction,0,fac_khand   ,scout_personality,[(trp_ac4_khand_vet_skirmisher,1,3),(trp_ac3_khand_skirmisher,2,4),(trp_c3_khand_horseman,2,4),(trp_c2_khand_pony_rider,3,6)]), #33-74 fast and capable
+("moria_scouts"     ,"Moria Scouts"        ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_moria   ,scout_personality,[(trp_c5_moria_clan_rider,1,1),(trp_c4_moria_warg_rider,2,5),(trp_c3_moria_wolf_rider,3,6),(trp_a3_moria_large_goblin_archer,0,4),(trp_a2_moria_goblin_archer,0,5)]), #35-85 can be strong, but archers slow them down (and they fight against elves)
+("guldur_scouts"    ,"Dol Guldur Scouts"   ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_guldur  ,scout_personality,[(trp_a4_guldur_fell_orc_tracker,2,5),(trp_a3_guldur_large_orc_tracker,5,8),(trp_a2_guldur_orc_tracker,5,7)]), #39-73 numerous and strong for orcs
+("gundabad_scouts","Gundabad Scouts"	,icon_wargrider_run		 |carries_goods(1)|pf_show_faction,0,fac_gundabad,scout_personality,[(trp_c5_gunda_clan_rider,1,1),(trp_ca4_gunda_skirmisher,2,4),(trp_c3_gunda_goblin_rider,4,8)]), #31-54 fast
+("rhun_scouts"      ,"Rhun Scouts"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,scout_personality,[(trp_c3_rhun_outrider,2,3),(trp_ac3_rhun_horse_archer,1,3),(trp_c3_rhun_swift_horseman,3,6),(trp_ac2_rhun_horse_scout,5,8)]), #41-76 fast and very capable
  
 ####TLD Raiders
 #MV: in general, average strength should be 80-160, good sides weaker, evil stronger (foraging vs. raiding)

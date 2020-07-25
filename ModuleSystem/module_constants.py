@@ -1399,14 +1399,14 @@ ws_party_spawns_list = [
 (p_town_pelargir        ,pt_gondor_scouts,		pt_gondor_raiders,	pt_pelargir_patrol,	pt_gondor_caravan),
 (p_town_linhir          ,pt_lamedon_auxila,		pt_gondor_raiders,	pt_lamedon_patrol,	pt_gondor_caravan),
 (p_town_calembel        ,pt_lamedon_auxila,		pt_gondor_raiders,	pt_lamedon_patrol,	pt_gondor_caravan),
-(p_town_dol_amroth      ,pt_gondor_scouts,		pt_gondor_raiders,	pt_amroth_patrol,	pt_gondor_caravan),
-(p_town_edhellond       ,pt_gondor_scouts,		-1,					pt_gondor_patrol,	pt_gondor_caravan),
+(p_town_dol_amroth      ,-1,					pt_gondor_raiders,	pt_amroth_patrol,	pt_gondor_caravan),
+(p_town_edhellond       ,-1,					-1,					pt_gondor_patrol,	pt_gondor_caravan),
 (p_town_lossarnach      ,pt_lossarnach_auxila,	pt_gondor_raiders,	pt_lossarnach_patrol,pt_gondor_caravan),
 (p_town_tarnost         ,pt_gondor_scouts,		pt_gondor_raiders,	pt_gondor_patrol,	pt_gondor_caravan),
 (p_town_erech           ,pt_blackroot_auxila,	pt_gondor_raiders,	pt_brv_patrol,		pt_gondor_caravan),
 (p_town_west_osgiliath  ,pt_ranger_scouts,		pt_gondor_raiders,	-1,    				-1),
 (p_town_henneth_annun   ,pt_ranger_scouts,		pt_ranger_raiders,	pt_ranger_patrol,	-1), #kham - added
-(p_town_cair_andros     ,pt_gondor_scouts,		-1			   , 	-1,					pt_gondor_caravan), #InVain changed scouts to rangers
+(p_town_cair_andros     ,pt_gondor_scouts,		-1			   , 	-1,					pt_gondor_caravan),
 #Rohan    
 (p_town_edoras          ,pt_rohan_scouts,		pt_rohan_raiders,	pt_rohan_patrol,     pt_rohan_caravan),
 (p_town_aldburg         ,pt_rohan_scouts,		pt_rohan_raiders,	pt_rohan_patrol,     pt_rohan_caravan),
@@ -1423,13 +1423,13 @@ ws_party_spawns_list = [
 (p_town_cirith_ungol    ,pt_mordor_scouts,		pt_mordor_raiders, -1,                    -1), #kham- added
 #Isengard
 (p_town_isengard        ,pt_isengard_scouts,      pt_isengard_raiders,   pt_isengard_war_party,	pt_isengard_caravan),
-(p_town_urukhai_outpost ,pt_isengard_scouts,      pt_isengard_raiders,   pt_isengard_war_party,	pt_isengard_caravan),
-(p_town_urukhai_h_camp  ,pt_isengard_scouts_warg, pt_isengard_raiders,   -1,					pt_isengard_caravan),
+(p_town_urukhai_outpost ,pt_isengard_scouts_warg, pt_isengard_raiders,   pt_isengard_war_party,	pt_isengard_caravan),
+(p_town_urukhai_h_camp  ,pt_isengard_scouts, 	  pt_isengard_raiders,   -1,					pt_isengard_caravan),
 (p_town_urukhai_r_camp  ,pt_isengard_scouts_warg, pt_isengard_raiders,   -1,					pt_isengard_caravan),
 #Others good
 (p_town_caras_galadhon  ,pt_lorien_scouts,        pt_lorien_raiders,     pt_lorien_patrol,    pt_lorien_caravan),
-(p_town_cerin_dolen     ,pt_lorien_scouts,        -1,                      pt_lorien_patrol,    pt_lorien_caravan),
-(p_town_cerin_amroth    ,pt_lorien_scouts,        -1,                      pt_lorien_patrol,    -1),
+(p_town_cerin_dolen     ,-1,        			  -1,                    pt_lorien_patrol,    pt_lorien_caravan),
+(p_town_cerin_amroth    ,pt_lorien_scouts,        -1,                    pt_lorien_patrol,    -1),
 (p_town_imladris_camp   ,pt_imladris_scouts,      pt_imladris_raiders,   pt_imladris_patrol,  pt_imladris_caravan),
 
 (p_town_thranduils_halls,pt_woodelf_scouts,       pt_woodelf_raiders,    pt_woodelf_patrol,   pt_woodelf_caravan),
@@ -1441,7 +1441,7 @@ ws_party_spawns_list = [
 (p_town_beorn_house     ,pt_beorn_scouts,         -1,                      -1,                    pt_beorn_caravan),
 
 (p_town_dale            ,pt_dale_scouts,          pt_dale_raiders,    pt_dale_patrol,      pt_dale_caravan),
-(p_town_esgaroth        ,pt_dale_scouts,          pt_dale_raiders,    pt_esgaroth_patrol,  pt_dale_caravan),
+(p_town_esgaroth        ,pt_esgaroth_scouts,      pt_dale_raiders,    pt_esgaroth_patrol,  pt_dale_caravan),
 (p_town_erebor          ,pt_dwarf_scouts,         -1,				    pt_dwarf_patrol,     pt_dwarf_caravan),
 (p_town_ironhill_camp   ,pt_dwarf_scouts,         -1,				    pt_dwarf_patrol,     pt_dwarf_caravan),
 #Others evil

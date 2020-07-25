@@ -371,32 +371,43 @@ triggers = [
           
           (try_begin),
             (gt, ":center_scouts", 0),
-            #no warg scouts before the war starts
-            (assign, ":early_wargs", 0),
+            (assign, ":no_early_scout", 0),
             (try_begin),
-              (eq, "$tld_war_began", 0),
-              (this_or_next|eq, ":center_scouts", "pt_moria_scouts"),
-              (this_or_next|eq, ":center_scouts", "pt_gundabad_scouts"),
-              (eq, ":center_scouts", "pt_isengard_scouts_warg"),
-              (assign, ":early_wargs", 1),
+              (eq, "$tld_war_began", 0), #preserve pre-war scout balance, before Rhun and Gundabad outposts spawn
+              (this_or_next|eq, ":center", "p_town_erebor"),
+              #(this_or_next|eq, ":center", "p_town_esgaroth"),
+              (eq, ":center", "p_town_beorning_village"),
+              (assign, ":no_early_scout", 1),
             (try_end),
-            (eq, ":early_wargs", 0),
+            (eq, ":no_early_scout", 0),
             # (store_random_in_range, ":rand", 0, int(15000/ws_scout_freq_multiplier)), # 0-4285
             # (le, ":rand", ":strength"), # 81% for fac.str. 3500
             (store_add, ":chance", ws_scout_chance, ":chance_modifier"),
             (store_random_in_range, ":rand", 0, 100),
             (lt, ":rand", ":chance"), # 60% for fac.str. 3500
             (store_mul, ":limit", ":strength", ws_scout_limit_multiplier*1000),
-            (val_div, ":limit", 3500*1000), #14 for fac.str. 3500; 28 for 7000
+            (val_div, ":limit", 3500*1000), #17 for fac.str. 3500; 34 for 7000
             # also limit by number of centers = 4+4*centers (8,12,16,20,..), to prevent minor factions map overcrowding
             (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_town),
-            (store_mul, ":center_limit", reg0, 4), (val_add, ":center_limit", 4),
-            (val_min, ":limit", ":center_limit"),
+			(assign, ":num_centers", reg0), #we need this later
+            (store_mul, ":center_limit", ":num_centers", 4), (val_add, ":center_limit", 4),
+            (val_min, ":limit", ":center_limit"),			
             (call_script, "script_count_parties_of_faction_and_party_type", ":faction_no", spt_scout),
-            (lt, reg0, ":limit"),
+			(assign, ":num_scouts", reg0),
+            (lt, ":num_scouts", ":limit"),
+			(val_mul, ":num_scouts", 2),
+			(store_sub, ":spawn_chance", 100, ":num_scouts"),
+				(try_begin),
+					(gt, ":num_centers", 1), #buff factions that have only one center, by nerfing all other factions: affects Umbar, Khand, Harad, Dunland, Rhun (pre-war), Guldur (pre-war)
+					(val_div, ":spawn_chance",2),
+				(try_end),
+			(store_random_in_range, ":random", 0, 100), #reduce spawn chance if faction already has many scouts, to prevent/slow _major_ factions map overcrowding
+			(le, ":random", ":spawn_chance"),
             (set_spawn_radius, 1),
             (spawn_around_party, ":center", ":center_scouts"),
-            (assign, ":scout_party", reg0),
+				# (str_store_faction_name, s1, ":faction_no"),
+				# (display_message, "@{s1} scouts spawned"),
+			(assign, ":scout_party", reg0),
             #(display_message, "@DEBUG: Party spawn scouts: {reg0}", 0xFF00fd33),
             (party_set_slot, ":scout_party", slot_party_type, spt_scout),
             (party_set_slot, ":scout_party", slot_party_home_center, ":center"),
