@@ -37,10 +37,13 @@ function load(fi)
       -- swy: fix the tab characters from Transifex (check mno_battle_encounter_effects and caravan_help3), which are encoded/escaped as \t (we don't want them) ¯\_(ツ)_/¯
       if l:find([[\t]]) ~= nil then x[#x]=(x[#x]):gsub([[\t]],[[]]) end
       -- swy: replace the Turkish Ğ/ğ by the normal one, better than nothing, given that it's currently missing
-      --      from the TLD font, we can always remove this line if we add them in the future
+      --      from the TLD font, we can always remove this line if we add them in the future (Omar Faruk#7906)
       if l:find([[Ğ]]) ~= nil then x[#x]=(x[#x]):gsub([[Ğ]],[[G]]) end
       if l:find([[ğ]]) ~= nil then x[#x]=(x[#x]):gsub([[ğ]],[[g]]) end
-
+      -- swy: same for French: https://discord.com/channels/492783428635328532/539744235319066644/736858391711973396 (Daneel53#3201)
+      if l:find([[Œ]]) ~= nil then x[#x]=(x[#x]):gsub([[Œ]],[[OE]]) end
+      if l:find([[œ]]) ~= nil then x[#x]=(x[#x]):gsub([[œ]],[[oe]]) end
+        
   end
   f:close(); f = io.open(fi,'w')
   
