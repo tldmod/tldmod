@@ -88,8 +88,8 @@ fauna_kinds = [
   [['PW_grass_bush_e_xx', '0'], ['PW_grass_bush_e_xx', '0']]),
   
  ('fern',
-  fkf_plain_forest|fkf_snow_forest|fkf_align_with_ground|fkf_grass|density(1000),
-  [['PW_fern_big', '0'],['PW_fern_a_xx', '0'], ['PW_fern_b_xx', '0']]),
+  fkf_plain_forest|fkf_snow_forest|fkf_align_with_ground|fkf_grass|density(900),
+  [['PW_fern_a_xx', '0'], ['PW_fern_b_xx', '0']]),
    
  ('grass_bush_g', #bundles of seedy grass
   fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_align_with_ground|fkf_grass|density(400),
