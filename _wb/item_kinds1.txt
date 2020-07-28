@@ -917,10 +917,10 @@ itemsfile version 2
  itm_lorien_sword_c Lorien_War_Sword Lorien_War_Sword 2  lorien_sword_hand_and_half 0  scab_lorien_sword_hand_and_half 3458764513820540928  4259843 9223635954298781951 900 156672 2.5 100 0 0 0 0 33792 110 0 103 0 279 33
 0
 
- itm_lorien_archer Lorien_Archer_Armor Lorien_Archer_Armor 4  lorien_archer 0  lorien_warden_cloak 268435456  lorien_archer_heavy 167772160  lorien_archer_heavy_cloak 536870912  16842765 0 300 973078662 5 100 0 11 5 0 0 0 0 0 0 0 0
+ itm_lorien_archer Lorien_Archer_Armor Lorien_Archer_Armor 4  lorien_archer 0  lorien_warden_cloak 268435456  lorien_archer_heavy 167772160  lorien_archer_heavy_cloak 536870912  16842765 0 150 973078662 5 100 0 11 5 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_armor_a Lorien_Quilted_Armor Lorien_Quilted_Armor 5  lorien_light_1 134  lorien_light_2 0  lorien_light_2_cloak 268435456  lorien_light_3 167772160  lorien_light_3_cloak 536870912  16842765 0 800 973078662 8 100 0 18 8 0 0 0 0 0 0 0 0
+ itm_lorien_armor_a Lorien_Quilted_Armor Lorien_Quilted_Armor 5  lorien_light_1 134  lorien_light_2 0  lorien_light_2_cloak 268435456  lorien_light_3 167772160  lorien_light_3_cloak 536870912  16842765 0 700 973078662 8 100 0 18 8 0 0 0 0 0 0 0 0
 0
 
  itm_lorien_armor_b Lorien_Mail_Armor Lorien_Mail_Armor 5  lorien_med_1 134  lorien_med_2 0  lorien_med_2_cloak 268435456  lorien_med_3 167772160  lorien_med_3_cloak 536870912  16842765 0 1000 973078662 12 100 0 25 10 0 0 0 0 0 0 0 0
@@ -1671,7 +1671,7 @@ itemsfile version 2
  itm_mirkwood_leather Woodelf_Leather_Armor Woodelf_Leather_Armor 3  mirkwood_leather_b 0  mirkwood_leather_a 134  mirkwood_leather_c 167772160  16842765 0 150 704643206 2 100 0 16 2 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_pad Greenwood_Quilted_Coat Greenwood_Quilted_Coat 3  mirkwood_quiltedsurcoat_01 0  mirkwood_quiltedsurcoat_01 134  mirkwood_quiltedsurcoat_01_b 167772160  16842765 0 1000 704643206 6 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_mirkwood_pad Greenwood_Quilted_Coat Greenwood_Quilted_Coat 3  mirkwood_quiltedsurcoat_01 0  mirkwood_quiltedsurcoat_01 134  mirkwood_quiltedsurcoat_01_b 167772160  16842765 0 800 704643206 6 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_mail Greenwood_Mail Greenwood_Mail 3  mirkwood_maillewithsurcoat_01_b 0  mirkwood_maillewithsurcoat_01 134  mirkwood_royal 167772160  16842765 0 2500 704643206 17 100 0 29 14 0 0 0 0 0 0 0 0

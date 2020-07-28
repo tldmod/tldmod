@@ -1,4 +1,4 @@
-1621
+1619
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -552,8 +552,6 @@ qstr___Not_enough_archers __Not_enough_archers_to_form_{s1},_holding_instead.
 qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
-qstr_DEBUG:_Routed_Troops DEBUG:_Routed_Troops:_{reg10},_Routed_Allies:_{reg11},_Routed_Enemies:_{reg12}
-qstr_DEBUG:_Spawn_Allies: DEBUG:_Spawn_Allies:_{reg10},_Spawn_Enemies:_{reg11}
 qstr_{s1}_has_fled_the_ba {s1}_has_fled_the_battle!
 qstr_Your_troops_are_at_{ Your_troops_are_at_{reg1}%_cohesion_(+{reg3}%_bonus),_the_enemy_at_{reg2}%!
 qstr_Morale_of_your_troop Morale_of_your_troops_wavers!
@@ -1461,7 +1459,7 @@ qstr_My_spies_tell_me_of_ My_spies_tell_me_of_a_large_group_of_warriors_gatherin
 qstr_{s9}_asked_you_to_sco {s9}_asked_you_to_scout_around_{s13}.
 qstr_We_have_reports_of_s We_have_reports_of_some_enemy_activity_near_{s13}._Our_scouts_have_so_far_failed_to_get_close_enough_and_scout_the_area_for_enemy_comings_and_goings._I_want_you_to_assemble_a_scouting_party,_get_close_enough_to_{s13},_and_dispatch_the_scouts.
 qstr_My_spies_tell_me_the My_spies_tell_me_the_enemy_is_up_to_something_in_{s13}._Our_cowardly_scouts_have_so_far_failed_to_get_close_enough_and_tell_us_anything_of_import._I_want_you_to_recruit_your_own_scouting_party,_get_close_enough_to_{s13},_and_leave_them_there._Make_sure_they_don't_turn_around_and_flee!
-qstr_{s9}_asked_you_to_di {s9}_asked_you_to_dispatch_a_scout_party_near_{s13}.^Obtain_7_soldiers_of_{s15},_of_which_at_least_1_is_{s14},_get_close_to_{s13}_and_talk_to_the_{s14}_to_dispatch_the_party.
+qstr_{s9}_asked_you_to_di {s9}_asked_you_to_dispatch_a_scout_party_near_{s13}.^Obtain_{reg1}_soldiers_of_{s15},_of_which_at_least_1_is_{s14},_get_close_to_{s13}_and_talk_to_the_{s14}_to_dispatch_the_party.
 qstr_We_need_to_take_the_ We_need_to_take_the_battle_to_the_enemy,_{playername}._At_this_moment,_we_can_do_this_by_striking_at_his_patrols_and_communications._I_want_you_to_eliminate_{reg1}_{s13}_parties,_that_would_help_us_regain_initiative.
 qstr_We_need_to_grind_dow We_need_to_grind_down_our_worthless_enemies,_{playername}._Their_patrols_and_supply_trains_are_growing_too_bold_for_my_liking._I_want_you_to_eliminate_{reg1}_{s13}_parties,_so_they'll_learn_to_fear_what's_coming.
 qstr_{s9}_asked_you_to_el {s9}_asked_you_to_eliminate_{reg1}_{s13}_parties.

@@ -1,4 +1,4 @@
-1853
+1851
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_an_URUK_HAI^_bred_in an_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_59_wb__dev_^_Bu _rev_59_wb_|_dev_^_Built_2020-07-25_18:20___
+qstr__rev_63_wb__dev_^_Bu _rev_63_wb_|_dev_^_Built_2020-07-28_20:08___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -657,8 +657,6 @@ qstr_support support
 qstr_bodyguard bodyguard
 qstr_undetermined_type_of undetermined_type_of
 qstr_{!}battlegroup_get_a {!}battlegroup_get_action_radius:_negative_radius_for_team_{reg0}_division_{reg1}_formation_{reg2}
-qstr_DEBUG:_Routed_Troops DEBUG:_Routed_Troops:_{reg10},_Routed_Allies:_{reg11},_Routed_Enemies:_{reg12}
-qstr_DEBUG:_Spawn_Allies: DEBUG:_Spawn_Allies:_{reg10},_Spawn_Enemies:_{reg11}
 qstr_{s1}_has_fled_the_ba {s1}_has_fled_the_battle!
 qstr_Your_troops_are_at_{ Your_troops_are_at_{reg1}%_cohesion_(+{reg3}%_bonus),_the_enemy_at_{reg2}%!
 qstr_Morale_of_your_troop Morale_of_your_troops_wavers!
@@ -1672,7 +1670,7 @@ qstr_My_spies_tell_me_of_ My_spies_tell_me_of_a_large_group_of_warriors_gatherin
 qstr_{s9}_asked_you_to_sco {s9}_asked_you_to_scout_around_{s13}.
 qstr_We_have_reports_of_s We_have_reports_of_some_enemy_activity_near_{s13}._Our_scouts_have_so_far_failed_to_get_close_enough_and_scout_the_area_for_enemy_comings_and_goings._I_want_you_to_assemble_a_scouting_party,_get_close_enough_to_{s13},_and_dispatch_the_scouts.
 qstr_My_spies_tell_me_the My_spies_tell_me_the_enemy_is_up_to_something_in_{s13}._Our_cowardly_scouts_have_so_far_failed_to_get_close_enough_and_tell_us_anything_of_import._I_want_you_to_recruit_your_own_scouting_party,_get_close_enough_to_{s13},_and_leave_them_there._Make_sure_they_don't_turn_around_and_flee!
-qstr_{s9}_asked_you_to_di {s9}_asked_you_to_dispatch_a_scout_party_near_{s13}.^Obtain_7_soldiers_of_{s15},_of_which_at_least_1_is_{s14},_get_close_to_{s13}_and_talk_to_the_{s14}_to_dispatch_the_party.
+qstr_{s9}_asked_you_to_di {s9}_asked_you_to_dispatch_a_scout_party_near_{s13}.^Obtain_{reg1}_soldiers_of_{s15},_of_which_at_least_1_is_{s14},_get_close_to_{s13}_and_talk_to_the_{s14}_to_dispatch_the_party.
 qstr_We_need_to_take_the_ We_need_to_take_the_battle_to_the_enemy,_{playername}._At_this_moment,_we_can_do_this_by_striking_at_his_patrols_and_communications._I_want_you_to_eliminate_{reg1}_{s13}_parties,_that_would_help_us_regain_initiative.
 qstr_We_need_to_grind_dow We_need_to_grind_down_our_worthless_enemies,_{playername}._Their_patrols_and_supply_trains_are_growing_too_bold_for_my_liking._I_want_you_to_eliminate_{reg1}_{s13}_parties,_so_they'll_learn_to_fear_what's_coming.
 qstr_{s9}_asked_you_to_el {s9}_asked_you_to_eliminate_{reg1}_{s13}_parties.

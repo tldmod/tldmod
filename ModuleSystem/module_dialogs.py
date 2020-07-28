@@ -735,6 +735,7 @@ dialogs = [
     (quest_slot_eq, "qst_dispatch_scouts", slot_quest_object_troop, "$g_talk_troop"),
     # count if enough troops
     (quest_get_slot, ":quest_object_faction", "qst_dispatch_scouts", slot_quest_object_faction),
+	(quest_get_slot, ":quest_target_amount", "qst_dispatch_scouts", slot_quest_target_amount),
   (party_get_num_companion_stacks,":stacks","p_main_party"),
     (assign,":total_troops", 0),
   (try_for_range,":stack",0,":stacks"), # count troops of suitable quest faction, not including heroes
@@ -745,7 +746,7 @@ dialogs = [
         (party_stack_get_size,":n","p_main_party",":stack"),
       (val_add,":total_troops",":n"),
     (try_end),
-  (ge, ":total_troops", 7),   
+  (ge, ":total_troops", ":quest_target_amount"),   
 #    (faction_get_slot, ":tier_1_troop", ":quest_object_faction", slot_faction_tier_1_troop), #4 of these
 #    (party_count_companions_of_type, ":num_tier_1", "p_main_party", ":tier_1_troop"),
 #    (ge, ":num_tier_1", 4),
@@ -758,10 +759,11 @@ dialogs = [
     (lt, ":dist", 7)],
 "We are ready to go on our scouting mission. Should we go now?", "member_scout_1",[]],
 
-[anyone|plyr, "member_scout_1", [],  "Yes, you've got your orders. Goodbye.", "close_window", [
+ [anyone|plyr, "member_scout_1", [],  "Yes, you've got your orders. Goodbye.", "close_window", [
   (call_script,"script_stand_back"),
     #remove troops from our party
     (quest_get_slot, ":quest_object_faction", "qst_dispatch_scouts", slot_quest_object_faction),
+	(quest_get_slot, ":quest_target_amount", "qst_dispatch_scouts", slot_quest_target_amount),
 #    (faction_get_slot, ":tier_1_troop", ":quest_object_faction", slot_faction_tier_1_troop), #4 of these
 #    (party_remove_members, "p_main_party", ":tier_1_troop", 4),
 #    (faction_get_slot, ":tier_2_troop", ":quest_object_faction", slot_faction_tier_2_troop), #2 of these
@@ -787,8 +789,10 @@ dialogs = [
     (party_set_slot, ":scout_party", slot_party_ai_state, spai_undefined),
     (party_set_ai_behavior, ":scout_party", ai_bhvr_patrol_location),
     (party_set_ai_patrol_radius, ":scout_party", 30),
-  (assign,":scouts2fill", 6),  # pick 6 troops for scout party, starting from lowest level
-  (try_for_range,":unused",0,6),
+  (assign,":scouts2fill", ":quest_target_amount"),  # pick troops for scout party, starting from lowest level
+  (val_sub, ":scouts2fill", 1), #1 scout troop is already assigned
+  (assign, ":num_tries", ":scouts2fill"),
+  (try_for_range,":unused",0, ":num_tries"),
       (gt,":scouts2fill", 0),
       (assign,":minlevel", 100),
       (assign,":mintroop", "trp_no_troop"),
@@ -810,7 +814,7 @@ dialogs = [
         (party_count_companions_of_type, ":n", "p_main_party", ":mintroop"),
         (try_begin),
           (ge, ":n", ":scouts2fill"), # enough troops here, end iterations
-            (assign,":unused",5),
+            (assign,":unused",":num_tries"),
         (assign,":n",":scouts2fill"),
         (try_end),
         (party_remove_members, "p_main_party", ":mintroop", ":n"),
@@ -8096,8 +8100,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        (str_store_faction_name, s15, "$g_talk_troop_faction"),
        (faction_get_slot, ":tier_3_troop", "$g_talk_troop_faction", slot_faction_tier_3_troop), #1 of these, and used for member chat
        (str_store_troop_name, s14, ":tier_3_troop"),
+	   (quest_get_slot, reg1, "qst_dispatch_scouts", slot_quest_target_amount),
        (setup_quest_text, "qst_dispatch_scouts"),
-       (str_store_string, s2, "@{s9} asked you to dispatch a scout party near {s13}.^Obtain 7 soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.")]],
+       (str_store_string, s2, "@{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.")]],
     
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_eliminate_patrols")],
 "{s5}", "lord_mission_told", [

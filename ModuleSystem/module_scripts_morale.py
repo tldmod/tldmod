@@ -424,10 +424,10 @@ morale_scripts = [
 			(party_get_num_companions, reg10, "p_routed_troops"),
 			(party_get_num_companions, reg11, "p_routed_allies"),
 			(party_get_num_companions, reg12, "p_routed_enemies"),
-			(display_message, "@DEBUG: Routed Troops: {reg10}, Routed Allies: {reg11}, Routed Enemies: {reg12}"),
+			#(display_message, "@DEBUG: Routed Troops: {reg10}, Routed Allies: {reg11}, Routed Enemies: {reg12}"),
 			(assign, reg10, "$g_spawn_allies_routed"),
 			(assign, reg11, "$g_spawn_enemies_routed"),
-			(display_message, "@DEBUG: Spawn Allies: {reg10}, Spawn Enemies: {reg11}"),
+			#(display_message, "@DEBUG: Spawn Allies: {reg10}, Spawn Enemies: {reg11}"),
 		(try_end),
 
 		# Clear the parties if the total count is greater/equal to than the maximum.

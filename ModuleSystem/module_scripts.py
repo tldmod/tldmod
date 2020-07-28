@@ -4981,7 +4981,7 @@ scripts = [
 	    (try_begin),
 	    	(eq, ":stack_troop_new", "trp_player"),
 	    	(gt, ":int_xp_bonus", 50), #don't inform about peanuts
-	    	(display_message, "@You gained {reg84} experience from your intelligence.", color_good_news),
+	    	(display_message, "@You gained {reg84} experience from your intelligence."),
 	    (try_end),
 
       (try_end),
@@ -8136,6 +8136,11 @@ scripts = [
             
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":quest_target_center", reg0),
+			(try_begin), #if Henneth Annun, one more try
+				(eq, ":quest_target_center", "p_town_henneth_annun"),
+				(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+				(assign, ":quest_target_center", reg0),
+			(try_end),				
             (neq, ":quest_target_center", "p_town_henneth_annun"), # HA not allowed
             (assign, ":dist", reg1),
             
@@ -8147,6 +8152,9 @@ scripts = [
             (gt, ":tier_2_troop", 0),
             (gt, ":tier_3_troop", 0),
             (assign, ":quest_object_troop", ":tier_3_troop"),
+			(store_div, ":quest_target_amount", ":player_level", 2),
+			(val_min, ":quest_target_amount", 3),
+			(val_max, ":quest_target_amount", 15),
             
             (assign, ":quest_importance", 4),
             (store_mul, ":quest_gold_reward", ":dist", 7),
