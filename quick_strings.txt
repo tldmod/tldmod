@@ -1,4 +1,4 @@
-1619
+1620
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -198,6 +198,7 @@ qstr_{s0}^{reg3?{reg3}:}_ {s0}^{reg3?{reg3}:}_{s1}_({s2})
 qstr_{s0}^TOTAL:_{reg3}__ {s0}^TOTAL:_{reg3}_({s2})
 qstr_None None
 qstr_^None ^None
+qstr_min:_{reg76};_max_{r min:_{reg76};_max_{reg77};_level_up:_{reg78}_rounds
 qstr_near_the_Great_East_ near_the_Great_East_Road,_the_abandoned_old_road
 qstr_near_what_is_left_of near_what_is_left_of_the_Old_Forest_Road,_the_ancient_dwarven_path_that_used_to_cross_the_thick_forest
 qstr_close_to_the_Hand_sh close_to_the_Hand-shaped_sign_of_Saruman,_pointing_toward_the_tower_of_Orthanc

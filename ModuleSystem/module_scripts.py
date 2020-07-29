@@ -7560,14 +7560,17 @@ scripts = [
             (ge, "$g_talk_troop_faction_relation", 0),
             (store_character_level, ":cur_level", "trp_player"),
             (gt, ":cur_level", 5),
+			(val_min, ":cur_level", 29), #stop scaling at lvl 29 --> never ask for more than 15 troops, never ask for t6
             
             #Kham - Dynamic Amount / Levels Begin - Makes it easier for low level players to do this quest, and not give up precious troops.
             (store_div, ":target_amount_base", ":cur_level", 3),
-            (party_get_skill_level, ":trainer_modifier", "p_main_party", "skl_trainer"),
-            (val_div, ":trainer_modifier", 2),
-            (val_max, ":trainer_modifier", 1),
-            (val_add, ":target_amount_base", ":trainer_modifier"),
-            (store_add, ":target_amount_max", ":target_amount_base", 4),
+            #(party_get_skill_level, ":trainer_modifier", "p_main_party", "skl_trainer"),
+            #(val_div, ":trainer_modifier", 2),
+            #(val_max, ":trainer_modifier", 1),
+            #(val_add, ":target_amount_base", ":trainer_modifier"), #inVain: Removed training modifier. We don't want punish the player for being good at training
+            (store_div, ":target_amount_max", ":cur_level", 5),
+			(val_add, ":target_amount_max", 1), #keep in mind that store_random_in_range reduces max amount by 1
+			(val_add, ":target_amount_max", ":target_amount_base"),
 
             (store_random_in_range, ":quest_target_amount", ":target_amount_base", ":target_amount_max"),
 
@@ -7576,9 +7579,8 @@ scripts = [
             	(this_or_next|eq, ":giver_faction_no", "fac_lorien"),
             	(this_or_next|eq, ":giver_faction_no", "fac_imladris"),
             	(			  eq, ":giver_faction_no", "fac_woodelf"),
-            	(val_min, ":quest_target_amount", 8),
-            (else_try),
-            	(val_min, ":quest_target_amount", 15),
+            	(val_mul, ":quest_target_amount", 3),
+				(val_div, ":quest_target_amount", 4),
             (try_end),
 
             (store_add, ":quest_importance", ":quest_target_amount", 1),
@@ -7588,25 +7590,29 @@ scripts = [
             (le, ":quest_target_amount", ":free_capacity"),
             (faction_get_slot, ":quest_object_troop", ":giver_faction_no", slot_faction_tier_1_troop),
 
-            (store_add, ":level_up_min", ":cur_level", 10),
-            (store_add, ":level_up_max", ":cur_level", 26),
-            (val_min, ":level_up_max", 51),
+            (store_add, ":level_up_min", ":cur_level", 7), #InVain: was 10
+            (store_add, ":level_up_max", ":cur_level", 21), #InVain: was 26
+            #(val_min, ":level_up_max", 51),
 
             (store_random_in_range, ":level_up", ":level_up_min", ":level_up_max"),
+			(assign, reg76, ":level_up_min"),
+			(assign, reg77, ":level_up_max"),
+			(assign, reg78, ":level_up"),
+			(display_message, "@min: {reg76}; max {reg77}; level up: {reg78} rounds"),
             #Kham - Dynamic Amount / Levels END
 
-            (val_add, ":level_up", ":cur_level"),
+            #(val_add, ":level_up", ":cur_level"), #InVain: Removed this. Now the scaling won't go overboard
             (val_div, ":level_up", 10),
 
-            (store_mul, ":quest_gold_reward", ":quest_target_amount", 10),
+            #(store_mul, ":quest_gold_reward", ":quest_target_amount", 10),
 
             (assign, ":quest_target_troop", ":quest_object_troop"),
             (try_for_range, ":unused", 0, ":level_up"),
               (troop_get_upgrade_troop, ":level_up_troop", ":quest_target_troop", 0),
               (gt, ":level_up_troop", 0),
               (assign, ":quest_target_troop", ":level_up_troop"),
-              (val_mul, ":quest_gold_reward", 7),
-              (val_div, ":quest_gold_reward", 4),
+              #(val_mul, ":quest_gold_reward", 7),
+              #(val_div, ":quest_gold_reward", 4),
             (try_end),
       
 ##            (try_begin),
@@ -7618,11 +7624,16 @@ scripts = [
 ##              (assign, ":quest_gold_reward", 150),
 ##            (try_end),
 ##            (gt, ":cur_target_troop", 0),
-            (assign, ":quest_xp_reward", ":quest_gold_reward"),
-            (val_mul, ":quest_xp_reward", 3),
-            (val_div, ":quest_xp_reward", 10),
-            (assign, ":quest_rank_reward", ":quest_xp_reward"),
-            (val_div, ":quest_rank_reward", 7),
+            
+			#InVain: calculate reward based on troop wage (scales exponentially with troop level)
+			
+			(call_script, "script_game_get_troop_wage", ":quest_target_troop",0),
+			(store_mul, ":quest_gold_reward", reg0, ":quest_target_amount"),
+			(val_mul, ":quest_gold_reward", 5),
+			(assign, ":quest_xp_reward", ":quest_gold_reward"),
+            (assign, ":quest_rank_reward", ":quest_gold_reward"),
+			(val_div, ":quest_rank_reward", 30),
+			
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 120),
             (assign, ":quest_dont_give_again_period", 15),
