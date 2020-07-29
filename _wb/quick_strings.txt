@@ -1,4 +1,4 @@
-1852
+1853
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_an_URUK_HAI^_bred_in an_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_64_wb__dev_^_Bu _rev_64_wb_|_dev_^_Built_2020-07-29_13:12___
+qstr__rev_65_wb__dev_^_Bu _rev_65_wb_|_dev_^_Built_2020-07-29_18:57___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1084,7 +1084,7 @@ qstr_Gandalf_would_like_t Gandalf_would_like_to_have_a_little_chat!
 qstr_Kham_Cheat_Mode_ON! Kham_Cheat_Mode_ON!
 qstr_1_troll_added! 1_troll_added!
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
-qstr_{reg63}_followers {reg63}_followers
+qstr_theater:_{reg0} theater:_{reg0}
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
@@ -1336,6 +1336,7 @@ qstr_Reinforcements Reinforcements
 qstr_Refugees_Escaped:_{r Refugees_Escaped:_{reg10}_---_Refugees_Killed:_{reg11}
 qstr_Raider_Parties_Kille Raider_Parties_Killed:_{reg12}
 qstr_One_of_the_target_ce One_of_the_target_centers_by_the_refugee_trains_have_been_destroyed._The_refugees_have_scattered,_and_are_nowhere_to_be_found.
+qstr_quest_concluded quest_concluded
 qstr_As_an_Orc_or_a_Dwarf As_an_Orc_or_a_Dwarf,_you_can_take_advantage_of_the_Custom_Camera_we_have_implemented_in_order_to_improve_your_experience_with_TLD's_shorter_races._See_Game_Concepts_for_more_information_about_how_to_use_this.
 qstr_Custom_Camera Custom_Camera
 qstr_{reg65?my_Lady:my_Lo {reg65?my_Lady:my_Lord}

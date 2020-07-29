@@ -1,4 +1,4 @@
-1620
+1621
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1127,6 +1127,7 @@ qstr_Reinforcements Reinforcements
 qstr_Refugees_Escaped:_{r Refugees_Escaped:_{reg10}_---_Refugees_Killed:_{reg11}
 qstr_Raider_Parties_Kille Raider_Parties_Killed:_{reg12}
 qstr_One_of_the_target_ce One_of_the_target_centers_by_the_refugee_trains_have_been_destroyed._The_refugees_have_scattered,_and_are_nowhere_to_be_found.
+qstr_quest_concluded quest_concluded
 qstr_{reg65?my_Lady:my_Lo {reg65?my_Lady:my_Lord}
 qstr_{reg65?My_Lady:My_Lo {reg65?My_Lady:My_Lord}
 qstr_{reg65?mistress:mast {reg65?mistress:master}

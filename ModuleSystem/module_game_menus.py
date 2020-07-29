@@ -3455,9 +3455,7 @@ game_menus = [
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     #("test_presentation",[],"Test Presentation", [(start_presentation, "prsnt_faction_intro_text")]),
     ] + (is_a_wb_menu==1 and [
-    ("what_theater",[], "Which Theater Am I in / Followers?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
-  	(assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news),
-  	(call_script, "script_cf_find_target_patrolling_enemy_lord_in_theater", "fac_gondor"),]),
+    ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party"), (display_message, "@theater: {reg0}")]),
     ("what_region",[], "Add 1000000 XP to Party", 
     	[(party_add_xp, "p_main_party", 1000000), (display_message, "@XP added", color_good_news),
     	]),
