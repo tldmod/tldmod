@@ -1,9 +1,9 @@
-dlga_start:mutiny_pretalk_1|저기, {playername}. 할 말이 있습니다만.. ^여기 제군들이 불평이 많습니다! 행군만 하지 말고 재미 좀 보자고요.
+dlga_start:mutiny_pretalk_1|저기, {playername}. 할 말이 있습니다만.. ^여기 녀석들이 불평이 많습니다! 행군만 하지 말고 재미 좀 보자고요.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|뒤로 빠져라, 애송아! 여긴 전장이고 난 너의 사령관이다.
 dlga_mutiny_pretalk_2:close_window|당신의 뜻에 따르겠습니다, 사령관님. 당신의 뜻에...
 dlga_start:mutiny_talk_1|사령관님, 드릴 말씀이 있는데요... 솔직히 얘기해 병사들의 불만이 보통 심한 게 아닙니다. ^딱히 피와 살이 튀기는 것도 아니고, 재미볼것도 없고. ^사령관님의 능력도 별로라고 다들 난리입니다, 사령관님!
-dlga_mutiny_talk_1:mutiny_talk_2|뭐? 전쟁도중에 폭동이라고? ^이건 사형감이라고 이 자식아!
-dlga_mutiny_talk_2:close_window|우리가 말해주지...여기있는 제군들은 내가 더 나은 지휘관이 될거라 생각하더군.. 널 죽일때 말이야!
+dlga_mutiny_talk_1:mutiny_talk_2|뭐? 전쟁도중에 폭동이라고? ^이건 사형감이다, 이 자식아!
+dlga_mutiny_talk_2:close_window|우리가 말해주지...여기있는 녀석들은 내가 더 나은 지휘관이 될거라 생각하더군.. 널 죽일때 말이야!
 dlga_start:troll_introduce_1|문제라도?
 dlga_start:troll_talk_1|너 미쳤냐?
 dlga_troll_introduce_1:troll_goodbye|워! 말하는 트롤?!
@@ -21,7 +21,7 @@ dlga_hobbit_general_talk_1:close_window|지금은 시간이 없소.
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|그러고보니 당신네 종족을 보기는 처음이군.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|그러고보니 에도라스에서 당신네들 같은 종족을 본적이 있는거 같애.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|그러고 보니 댁같은 치를 어디선가 만난적이 있는것같은데, 분명 미나스 티리스에서였지.
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|알고말고요. 전 샤이어의 아파르에서 온 호빗이랍니다, {나으리/마님}. 
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|알고말고요. 전 아주 먼 곳에서 온 호빗이랍니다, 샤이어란 곳이죠 {나으리/마님}. 
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|아하, 그 호빗은 분명 저의 친애하는 사촌 페레그린 툭, 혹은 피핀이겠군요. 그게 우리가 그를 부르는 이름이랍니다. 우리는 호빗이니까요, {나으리/마님}, 그리고 우리 둘 모두 샤이어에서 왔고요! 착한 늙은이 피핀, 그가 미나스 티리스에서 잘 해내고있다면 좋으련만.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|아하, 그건 분명 저의 친애하는 사촌인 메리어독 브랜디벅이거나 메리겠군요- 그게 우리가 그를 부르는 방법입죠 {나으리/마님}, 우린 둘다 샤이어에서 온 호빗이니까요! 착하디 착한 메리, 에도라스에서 잘 하고있으련지 모르겠네요.
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|혹시 부탁좀 드려도 될까요, {나리/마님}?
@@ -45,8 +45,8 @@ dlga_treebeard_introduce_2:treebeard_introduce_3|제 무례를 용서해 주십�
 dlga_treebeard_introduce_3:treebeard_introduce_4|(뻣뻣하게 생긴 나무거인은 작은 나뭇가지와 이파리, 그리고 이끼에 가려진 입을 천천히 열었다. 그는 굉장히 깊고, 조용하고 울려퍼지는 목소리로 아주 천천히 그리고 위엄있게 설명했다:)^ '흐룸... 흠... *난* 자네에게 내 이름을 알려주지 않을 걸세... 아직은 말이지. 일단 시간이 너무 오래 걸릴테니 말이야. 내 이름은 계속해서 자라고 있는데다 내가 너무 오래 살아서 말이야; 그래서 내 이름은 완전 이야기가 따로 없지. 진정한 이름은 그들이 소속된 세상의 이야기를 내 언어, 오래된 엔트어로 들려주지. 이 엔트어란게 정말 사랑스런 언어란 말이야, 하지만 이걸로 뭘 말하든 간에 너무 오래 걸려서 말이지, 왜냐하면 우리는 오랜 시간을 걸쳐 말하거나 들을 가치가 없다면 아예 말을 안하고 말거든.
 dlga_treebeard_introduce_4:treebeard_introduce_5|아, 당신이 바로 그 엔트로군요! 전설로만 들었었는데 이렇게 당신을 만날 기회를 얻으니 참으로 영광입니다. 다만, 폐를 끼치기는 싫으니 당신이 원한다면 떠나겠습니다.
 dlga_treebeard_introduce_5:treebeard_questtalk|뻣뻣한 나무거인(엔트)와 동료 엔트는 침묵 속에서 수분 동안 우두커니 산들바람이 그들의 수풀로 우거진 머리칼과 수염을 더듬고 지나가도록 서있었다. 그들은 한 마가목처럼 보이는 한 이상할만치 성미급한 엔트가 말을 하고싶어 안절부절 못할때까지 서로를 한참동안 쳐다보았다. 그러나 그 엔트도 예의 커다란 엔트가 말을 이을때까지 침묵을 유지했다.
-dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?말했듯, 우린 자네가 보여준 예의바른 태도에 감사를 표하고 싶네... {reg1?당신의 종에서 당신같은 존재는 드물지, 엘프와 다시 이야기 할 수 있어서 즐겁군.}.}  엔트부인들이 사라진 후 세계는 암울했다네... 그리고 우리의 고향을 파괴하려는 암흑의 군주가 만들어낸 사악한 생명체들이 판을 치고있지... 저희는 빠르지만, 성급하지 않은 그런 이를 찾고있어... 우리가 다음 계획을 준비하는 동안 우리를 도와줄 수 있는 그런...^많은 오크 군대가 숲을 급습하고 불화살로 우리 나무를 태웠다네... 만약 자네가 오크들을 물리치고 오크들이 다시는 우리의 숲을 위협하지 않게 만들 수 있다면, 우린 자네를 진정한 친구로서 맞아줄 수 있을거라네... 이 일을 먼저 처리 한 뒤에 다시 얘기해보세나...
-dlga_treebeard_quest_brief:close_window|오크는 실로 사악하기 그지 없죠. 그들이 다시는 숲에 해를 끼칠수 없도록 하겠습니다.
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?말했듯, 우린 자네가 보여준 예의바른 태도에 감사를 표하고 싶네... {reg1?당신의 종에서 당신같은 존재는 드물지, 엘프와 다시 이야기 할 수 있어서 즐겁군.}.}  엔트부인들이 사라진 후 세계는 암울했다네... 그리고 우리의 고향을 파괴하려는 암흑의 군주가 만들어낸 사악한 생명체들이 판을 치고있지... 저희는 빠르지만, 성급하지 않은 그런 이를 찾고있어... 우리가 다음 계획을 준비하는 동안 우리를 도와줄 수 있는 그런...^많은 오르크 군대가 숲을 급습하고 불화살로 우리 나무를 태웠다네... 만약 자네가 오르크들을 물리치고 오르크들이 다시는 우리의 숲을 위협하지 않게 만들 수 있다면, 우린 자네를 진정한 친구로서 맞아줄 수 있을거라네... 이 일을 먼저 처리 한 뒤에 다시 얘기해보세나...
+dlga_treebeard_quest_brief:close_window|오르크는 실로 사악하기 그지 없죠. 그들이 다시는 숲에 해를 끼칠수 없도록 하겠습니다.
 dlga_treebeard_quest_brief:treebeard_pretalk|미안하지만 그럴 틈이 없군요.
 dlga_treebeard_questtalk:close_window|(엔트 장로는 굳게 닫힌 그의 입을 천천히 열었고, 다른 엔트들도 당신을 보며 땅을 울리는 깊고 긴 소리를 웅얼거렸다. 곧 당신은 이것이 엔트식 웃음이라는걸 알아차렸다.  비교적 어린, 마가목처럼 보이는 앤트가 그의 발가락이 7개 달린 거대한 발로 땅을 구르자 당신은 금방이라도 넘어질 지경이었다..)   진정하게, 날쌘돌이, 우리는 우리의 젊은 전사가 다치는걸 원하지않는다네. 흐으으음.... 나는 나무수염, 엔트중 가장 오래된 자이며, 우리 모두가 네 노고에 감사하고있다네...흐으음.... 그 성공을 축하하기 위해 이 엔트의 물을 줄테니- 받아주게나.
 dlga_treebeard_questtalk:close_window.1|(뻣뻣한 거인과 그의 엔트 동지들은 산들바람이 그들의 나뭇잎 머리카락과 수염을 흔드는 동안 침묵하며 서있다.)
@@ -55,9 +55,9 @@ dlga_treebeard_talk_response:treebeard_about_himself|당신에 대해 더 알려
 dlga_treebeard_talk_response:treebeard_about_entwives|엔트 부인에 대해서 말해주세요
 dlga_treebeard_talk_response:treebeard_about_ents|엔트에 대해 더 알려주세요.
 dlga_treebeard_talk_response:close_window|아무것도 아닙니다. 잘 있어요.
-dlga_treebeard_about_himself:treebeard_pretalk|(엔트 장로는 굳건하고 억세보였다. 잠시뒤 그는 느릿하게 말을 이어갔다.) 성급해하지 말게.. 우리는 이 문제에 대해 오크들을 나무로부터 떼어놓고나서도 얘기할수있을테니.
+dlga_treebeard_about_himself:treebeard_pretalk|(엔트 장로는 굳건하고 억세보였다. 잠시뒤 그는 느릿하게 말을 이어갔다.) 성급해하지 말게.. 우리는 이 문제에 대해 오르크들을 나무로부터 떼어놓고나서도 얘기할수있을테니.
 dlga_treebeard_about_himself:treebeard_pretalk.1|흠... 난 내 종 중에서 가장 나이가 많다네... 몇몇의 필멸자들은 나를 나무수염이라 하고 엘프들은 날 팡고른이라 부르지... 흠...나와 나무껍질거죽, 그리고 잎새머리는 암흑시대 이전부터 숲을 걸어온 유일한 엔트이지... 젊은 날쎈돌이야 바람결을 맞는 조그마한 나무처럼 구부러지고, 흔들릴 수 있지만... 지금의 나는 내가 어렸을적 만큼 유연하지 않다네... 흠... 만약 엔트부인들이 여기 있었더라면....
-dlga_treebeard_about_entwives:treebeard_pretalk|(엔트 지도자의 목소리가 매우 깊어지고 갑자기 슬픈 표정을 짓는다. )^'흠... 안타까운 얘기지만... 나무들이 오크에게서 자유로워 졌을 때 이야기해 보지...
+dlga_treebeard_about_entwives:treebeard_pretalk|(엔트 지도자의 목소리가 매우 깊어지고 갑자기 슬픈 표정을 짓는다. )^'흠... 안타까운 얘기지만... 나무들이 오르크에게서 자유로워 졌을 때 이야기해 보지...
 dlga_treebeard_about_entwives:treebeard_pretalk.1|허험...흠... 아름다운 엔트부인들... 그들은 심고 키우기를 좋아했지... 우리는 그녀들의 목소리에 귀를 기울여야만 했어... 음... 지금은 갈색땅이라 불리우는 그곳에 정원을 가꾸기 위해 떠난 그녀들은 필멸자들에게 땅을 비옥하게 만드는 법을 가르쳐 주기도 했지... 우린 여러번 그들을 방문하기도 했다네, 사우론.....이 공격하기 전까진... 이제 엔트부인들은 모두 시들고 말았다네... 흐으음... 핌브레실... 어엿하게 자라난 그녀의 씨앗들... 여태껏 정성스레 찾아왔지만... 찾을 수 없었다네... 아직까지도...
 dlga_treebeard_about_ents:treebeard_pretalk|흐으음... 우리들은 위협으로부터 나무들을 보호하는 목자라네.... 우리는 다른 어떤 필멸의 종족보다도 오래됐지만 우리를 무지로부터 구해준 엘프들 보다는 오래되지 않았다네.... 시대들이 지나가며 많은것들이 변해갔지.... 처음엔 우린 좀 더 유연하고 잽쌌다네..... 허나 세월이 우리로부터 그것을 앗아갔어..... 어떤 엔트는 우리처럼 살아 움직이는.... 다시말해 활기찬 엔트지만 많은 엔트들이 깊은 잠에 빠져 '나무'처럼 되어가고 있다네...... 대다수의 나무들은 물론 그저 나무일 뿐이지만 그중 몇몇 엔트들은 반쯤은 깨어있고.... 또 몇은 완전히 깨어있고.... 그중 몇은 다시 움직이기 시작한다네... 항상 있는 일이야... 숲에 무슨 일이 벌어질 때... 그중 몇은 악의를 품은 이도 있겠지.... 그렇다면, 우리는 우리가 할 수 있는 일을 할 뿐이라네... 수상하거나 무례한 이들을 쫓아내는 것...
 dlga_start:close_window.1|으으으음?
@@ -113,7 +113,7 @@ dlga_start:close_window.6|준비 되는대로 떠납시다.
 dlga_start:close_window.7|오늘은 더 이상 제 시간을 낭비하지 말아주시기 바랍니다. 어쩌면 다시 만날 날이 있겠지요.
 dlga_companion_recruit_signup_response:close_window|애석하게도 더 이상 일행을 받을 수 없네.
 dlga_companion_recruit_rank:close_window|{playername}, 자네는 내 백성들로부터 충분한 존경을 받지 못하는군. 자네는 {s29}이고 나와 함께하려면 {s24}는 되어야 한다네. [{reg3}의 랭크 포인트 부족]. 좀 더 성장한 뒤 얘기해 보도록 하지.
-dlga_companion_recruit_rank:companion_recruit_payment.1|당신을 민나게 되서 정말 영광이오 {s29}, 그대에게 합류하기위해 수소문하고있던 중이었소.
+dlga_companion_recruit_rank:companion_recruit_payment.1|당신을 만나게 되서 정말 영광이오 {s29}, 그대에게 합류하기위해 수소문하고있던 중이었소.
 dlga_companion_recruit_payment_response:close_window|그렇다면 제가 할 수 있는 건 별로 없겠군요.
 dlga_start:companion_recruit_meet_again|또 만나는 군요.
 dlga_companion_recruit_meet_again:companion_recruit_backstory_delayed|그래서... 당신은 우리의 마지막 해후 이후로 무엇을 하며 지낸건가?
@@ -509,7 +509,7 @@ dlga_lord_active_mission_2:lord_raise_troops_thank.1|그렇습니다. {reg2} 만
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|나는 {s4}에 숨어있는 {s3}를 찾았고, 마땅한 처벌을 내렸습니다.
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|유감스럽지만 그가 도망친 것 같습니다.
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|놈이 없어졌으니 훨씬 나아지겠군! 고맙네, {playername}. 눈엣가시를 제거해줘서 말이야. 맡은 일을 훌륭히 처리할 수 있다는 것을 증명해 내 신뢰를 얻었군. 부하들에게 말해놓았으니 자네를 위한 추가 보급품을 받을 수 있을 걸세.
-dlga_lord_hunt_down_fugitive_success_2:lord_hunt_down_fugitive_reward_accept|고맙습니다.
+dlga_lord_hunt_down_fugitive_success_2:lord_hunt_down_fugitive_reward_accept|고맙습니다, {s65}.
 dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|담당자에게 그대의 공로를 알려야겠군, {playername}. {s44}를 처리해준 것에 대해 다시 한 번 감사를 표하는 바이오.
 dlga_lord_hunt_down_fugitive_fail:lord_pretalk|{s44}가 우리 손아귀를 빠져나갔다니 정말 유감이군. 나는 그대가 이 일을 해낼 수 있을 줄 알았소, {playername}. 내가 틀렸던 모양이군.
 dlga_lord_active_mission_2:lord_active_mission_3|여전히 노력하는 중입니다.
@@ -545,10 +545,10 @@ dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_accepte
 dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|주인이시여, 이 종을 불쌍히 여기소서! 그 저주받은 땅에 가라 명하지 마소서!
 dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|그럼 너도 다른 벌레와 다를 것이 없군. 미신에 눈이 멀었고, 쓸모 없는데다, 겁쟁이이기까지. 너를 과대평가했구나, 이제 꺼져라!
 dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|좋다. 가서 소문의 진상을 밝혀라. 그리고 돌아와서 보고하도록. {reg1} 일 새벽이 지나기 전에 돌아와서 보고해라.
-dlga_lord_tell_mission:lord_mission_find_lost_spears|{playername} 처럼 용맹한 지휘관에게 맡길 만한 임무가 있습니다. 룬 무리와 교전하며 저희는 고전하고 있고, 전투에서 하나둘씩 패배하고 있습니다. 언젠가 전설에 따르면 (오래 전 돌아가신) Bladorthin 왕이 드워프들에게 주문제작해 만든 창들이 있었다고 합니다. 이 창들은 세번이나 벼려졌고 도금까지 되어있지만, 배달되거나 값을 받았다는 전설은 없습니다..
+dlga_lord_tell_mission:lord_mission_find_lost_spears|{playername} 처럼 용맹한 지휘관에게 맡길 만한 임무가 있습니다. 룬 무리와 교전하며 저희는 고전하고 있고, 전투에서 하나둘씩 패배하고 있습니다. 언젠가 전설에 따르면 (오래 전 돌아가신) Bladorthin 왕이 난쟁이들에게 주문제작해 만든 창들이 있었다고 합니다. 이 창들은 세번이나 벼려졌고 도금까지 되어있지만, 배달되거나 값을 받았다는 전설은 없습니다..
 dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|그렇다면 제가 어떻게 하면 좋겠습니까? 군주이시여?
-dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|그 무기들이 있다면 우리 군대의 사기를 효과적으로 고양시킬 수 있을 것입니다. 그 창들을 찾아주십시오. 주문을 받은 외로운 산의 드워프들에게 가서 물어보십시오. 조심하셔야합니다. 오크와 트롤들과 마주칠 수 있으니까요. 이 임무를 맡아주시겠습니까?
-dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|오크나 트롤이 무슨 대수라고! 제가 창을 찾아드리겠습니다. 군주이시여.
+dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|그 무기들이 있다면 우리 군대의 사기를 효과적으로 고양시킬 수 있을 것입니다. 그 창들을 찾아주십시오. 주문을 받은 외로운 산의 난쟁이들에게 가서 물어보십시오. 조심하셔야합니다. 오르크와 트롤들과 마주칠 수 있으니까요. 이 임무를 맡아주시겠습니까?
+dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|오르크나 트롤이 무슨 대수라고! 제가 창을 찾아드리겠습니다. 군주이시여.
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|유감스럽지만 그러지 못할 것 같군요. 군주이시여.
 dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|신중함이야말로 당신의 용맹함이 지닌 가장 큰 장점이군요. 정찰을 계속하는게 좋겠습니다.
 dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|그럼 행운을 비네!
@@ -667,7 +667,7 @@ dlga_request_meeting_6:close_window.1|{s2}는 만날 생각이 없으시답니�
 dlga_castle_gate_open:close_window|{s2}께서 당신을 보면 기뻐하실겁니다 {나으리/아가씨}. 어서 들어오시죠. 문을 열어드리겠습니다.
 dlga_castle_gate_open:close_window.1|{s2}께서는 지금 성에 안 계십니다. 하지만 그 분이 계셨다면 여기서 묵는 것을 허락하셨을 것 같으니, 어서 들어오시죠. 문을 열어드리겠습니다.
 dlga_castle_gate_open:close_window.2|어서 들어오시죠. 문을 열어드리겠습니다.
-dlga_castle_gate_open:close_window.3|들어오싲죠, 하지만 성벽 안에서 소란을 일으키지 않도록 주의해주십쇼. {s2}께선 문제가 일어나는 것을 원하지 않습니다.
+dlga_castle_gate_open:close_window.3|들어오시죠, 하지만 성벽 안에서 소란을 일으키지 않도록 주의해주십쇼. {s2}께선 문제가 일어나는 것을 원하지 않습니다.
 dlga_castle_gate_open:close_window.4|{s2}께서는 당신이 여기 계시는 것이 못마땅하시답니다. 이제 가시죠.
 dlga_start:caravan_help1|도와주셔서 감사합니다! 이제 안전합니다. 제 이름은 Torbal이고, 물건을 운송하던 중에 습격을 받았습니다.^^ 저렇게 큰 오르크를 보신 적 있습니까? 지금까지 피해왔던 평범한 종류와는 다른 놈들인 것 같던데요. 놈들 방패에 칠한 건 고대 모르도르 표식입니다. 강 이쪽 편에서는 오래 동안 보지 못했던 것이죠. ^^뭔가 끔찍한 일이 일어나려나 봅니다.. 전쟁이 다가오고 있어요! ^^ 가장 가까운 마을로 가서 그곳 지휘권자에게 당신이 본 것에 대해 경고해주는 것이 좋겠습니다. 중요한 일이니 서둘러주십시오.
 dlga_caravan_help1:caravan_help2|아니요, 그렇게 큰 오르크는 본 적 없습니다. 못된 것... ^^ 나는 우리 모두가 느끼고 있는 전쟁에 참여하기 위해 왔다네.
@@ -694,10 +694,10 @@ dlga_start:beorn_help1|*눈살을 찌푸리며 당신을 훑어본다* ^^너처�
 dlga_beorn_help1:beorn_help2|잘 만났군! 우리가 우리 숲을 떠나는 일이 좀처럼 없긴 하지만, 적의 하수인들에 적대하는 놈들의 도움을 마다할 이유는 없지.
 dlga_beorn_help1:beorn_help2a|(말 대신 고개를 끄덕인다)
 dlga_beorn_help2:beorn_help3|애초에 그 자를 섬기는 놈들 가까이 가지 않는 것이 현명하지만, 오늘은 그렇지 못한 것 같군. ^^우리 동족들이 네가 얼마나 많은 고블린 대가리를 떨궜는지에 대해 알 게 될 거야! 우리 본거지에 오는 날에는 벌꿀 술과 빵으로 환영해주겠네!
-dlga_beorn_help2a:beorn_help3|*연신 고마워하며* 말 없는 엘프시겠다, 앙? 당신은 우리네랑 닮은 것 같군. 따분한 엘프 노래나 지루한 시를 읊어대지 않으니 말이야. ^^좋은 이야기들, 언덕이 젊었을 적의 이야기나 끝이 없는 숲에 대한 이야기들이 우리가 좋아하는 것들이지! ^^내가 사람들에게 너에 대해 말할 것도 포함될거야. 모두가 오늘 네가 얼마나 많은 오르크 놈들을 족쳤는지 알게 되겠지. 우리의 나무로 지은 홀에 오면 따뜻한 화로와 벌꿀 술로 환영해주겠네!
+dlga_beorn_help2a:beorn_help3|*연신 고마워하며* 말 없는 요정족시겠다, 앙? 당신은 우리네랑 닮은 것 같군. 따분한 요정족 노래나 지루한 시를 읊어대지 않으니 말이야. ^^좋은 이야기들, 언덕이 젊었을 적의 이야기나 끝이 없는 숲에 대한 이야기들이 우리가 좋아하는 것들이지! ^^내가 사람들에게 너에 대해 말할 것도 포함될거야. 모두가 오늘 네가 얼마나 많은 오르크 놈들을 족쳤는지 알게 되겠지. 우리의 나무로 지은 홀에 오면 따뜻한 화로와 벌꿀 술로 환영해주겠네!
 dlga_beorn_help3:beorn_help4|(자원 포인트 튜토리얼)^^. 베오른족에게 구입할 때 사용하는 자원 포인트는 당신 팩션에 상관 없이 베오른족 지역에서만 얻을 수 있습니다. REPORTS에서 더 많은 정보를 확인하세요.
 dlga_beorn_help4:beorn_help4a|*그르렁거리듯이 기쁘게 웃으며* 엘프들도 우리 곰 형제들과 같다 생각하나?
-dlga_beorn_help4a:beorn_help5|*그르렁거리듯이 기쁘게 웃으며* 엘프들도 우리 곰 형제들과 같다 생각하나? 황금빛 벌꿀 술은 심장을 따뜻하고 달콤하게 해주지만, 오늘 같이 어두운 날에는 엘프 칼이나 예리한 화살이 더 필요한 법이지..
+dlga_beorn_help4a:beorn_help5|*그르렁거리듯이 기쁘게 웃으며* 요정족들도 우리 곰 형제들과 같다 생각하나? 황금빛 벌꿀 술은 심장을 따뜻하고 달콤하게 해주지만, 오늘 같이 어두운 날에는 요정족 칼이나 예리한 화살이 더 필요한 법이지..
 dlga_beorn_help4:beorn_help5|(가슴에 손을 얹은 채 웃으며 고개를 끄덕인다)
 dlga_beorn_help5:beorn_help6|우리는 거칠고, 털 많고, 음침하거나 어두워보일지도 몰라. 하지만 우리는 우리를 돕는 친구를 돕는다.^^만약 우리 족장이 네 행동이 가치있다고 판단한다면, 우리는 전투에서 널 따를 것이다.
 dlga_beorn_help6:beorn_help7|(팩션 랭크 튜토리얼) ^^랭크 포인트는 당신의(또는 다른) 팩션에서 당신의 계급을 올려줄 것입니다.  ^^이것은 당신의 최대 부대 규모에 영향을 주며, 매주 팩션 자원 포인트를 얻을 수 있게 해주고, 팩션 고유의 특별한 보상을 얻을 수 있게 해줍니다.
@@ -705,9 +705,9 @@ dlga_beorn_help7:close_window|Le fael, 친구! 잘 가게.
 dlga_beorn_help7:close_window.1|(말 없이 손을 흔들며 떠난다)
 dlga_start:kill_scout_1|훌륭한 눈과 귀를 가졌군! 미리 경고해주지 않았다면 저 초록옷 나무지기 놈들이 우리 위를 뛰어다니면서 우리를 덮쳤을 거야, 내 보증하지. 도망칠 수 있었겠지만, 놈들 동료들을 우리 눈 앞에서 멋지게 해치웠군! 이제 저놈들은 까마귀나 구더기 밥으로 넘겨주고, 우리 임무는 안전해졌지, 암! 대장께서 기뻐하시겠어.
 dlga_kill_scout_1:kill_scout_2|우릴 어디로 데려가는지 똑바로 봐, 오르크. 우리는 전쟁이 시작되기도 전에 기습당해 죽으려고 그 먼 길을 떠난게 아니란 말이다!
-dlga_kill_scout_2:kill_scout_3|전쟁이 도래할 것이다! 두려워 말게, 전사여, 모르도르가 너의 아군이 되어줄테니까. 이 물자 좀 받아. 모르도르 전초기지에서 쓰기 좋은 것들이지! 오크 맥주 한 잔 하겠나!
+dlga_kill_scout_2:kill_scout_3|전쟁이 도래할 것이다! 두려워 말게, 전사여, 모르도르가 너의 아군이 되어줄테니까. 이 물자 좀 받아. 모르도르 전초기지에서 쓰기 좋은 것들이지! 오르크 맥주 한 잔 하겠나!
 dlga_kill_scout_3:kill_scout_4|(자원 포인트 튜토리얼)^^. 모르도르 지역에서 구입할 때 사용하는 자원 포인트는 당신 팩션에 상관 없이 모르도르 지역에서만 얻을 수 있습니다. REPORTS에서 더 많은 정보를 확인하세요.
-dlga_kill_scout_4:kill_scout_5|오크 구정물을 우리더러 마시라고? 내 오줌을 마시고 말지.
+dlga_kill_scout_4:kill_scout_5|오르크 구정물을 우리더러 마시라고? 내 오줌을 마시고 말지.
 dlga_kill_scout_5:kill_scout_6|하! 이방인들이 그렇게 말할 줄 알았지! 고스모그와의 내기를 따냈군, 고마워!!^^ 그와 다른 보스들에게 너에 대해 말하겠다. Lugbúrz는 네가 오늘 얼마나 쓸모 있었는지, 두려움이 없었는지 알게 될거야! 위대한 눈께서 너와 함께하신다!^^하지만 우리는 저마다의 목적으로 행동할 뿐이지. 눈꺼풀 없는 눈을 섬겨라, 어둠의 군주를 섬겨라, 그래, 하지만 동쪽에서 일하는걸 남쪽에서 알아주는 것도 아니고, 눈을 섬겨도 사루만이 알아주는 것도 아니지. 오히려 검은 탑에서 왜 네가 시간낭비하는 지 알지도 못할테니!
 dlga_kill_scout_6:kill_scout_7|(팩션 랭크 튜토리얼) ^^랭크 포인트는 당신의(또는 다른) 팩션에서 당신의 계급을 올려줄 것입니다.  ^^이것은 당신의 최대 부대 규모에 영향을 주며, 매주 팩션 자원 포인트를 얻을 수 있게 해주고, 팩션 고유의 특별한 보상을 얻을 수 있게 해줍니다.
 dlga_kill_scout_7:kill_scout_8|내가 하는 일은 네가 알 바 아니다, 역겨운 것아. 이제 움직여!
@@ -862,8 +862,8 @@ dlga_mayor_deliver_food_completed:close_window|내가 할 수 있는 것을 합�
 dlga_mayor_begin:mayor_looters_quest_response|아, {playername}. 보고할만한 진척이 있나?
 dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|부족 오르크를 죽이고 왔습니다.
 dlga_mayor_looters_quest_response:close_window|아직입니다, 안녕히.
-dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|아, 정찰병들이 다 말해주더군. 부족 오크 놈들이 얼씬도 못하겠지!^^[{s14}의 자원 포인트 {reg14}x{reg15} 획득]
-dlga_mayor_looters_quest_destroyed_2:close_window|그리고 그게 좋은 소식의 다가 아니지! 이제 부족 오크들은 위협적인 존재가 아니게 될거야. 단 한 건의 공격도 보고되지 않았으니. 만약 놈들이 더 남아있다면, 도망쳐서 숨는 것이 놈들 신상에 좋을거야. 이곳의 안전에 훨씬 도움이 되겠지! 다 자네가 한 일들의 결과네, {playername}. 고맙네. 잘 가게.
+dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|아, 정찰병들이 다 말해주더군. 부족 오르크 놈들이 얼씬도 못하겠지!^^[{s14}의 자원 포인트 {reg14}x{reg15} 획득]
+dlga_mayor_looters_quest_destroyed_2:close_window|그리고 그게 좋은 소식의 다가 아니지! 이제 부족 오르크들은 위협적인 존재가 아니게 될거야. 단 한 건의 공격도 보고되지 않았으니. 만약 놈들이 더 남아있다면, 도망쳐서 숨는 것이 놈들 신상에 좋을거야. 이곳의 안전에 훨씬 도움이 되겠지! 다 자네가 한 일들의 결과네, {playername}. 고맙네. 잘 가게.
 dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|더 필요한 건?
 dlga_mayor_begin:close_window|다시 보아 반갑군, {playername}. 우리 사람들이 얼마나 안전하게 움직였는지 들었다네. 우리 사령관에게 자네가 얼마나 믿을 수 있는 사람인지 말해야겠군.^^[{s14}의 자원 포인트 {reg14}만큼 획득]
 dlga_mayor_begin:move_cattle_herd_failed|{s9}로 가는 도중에 사람들을 모두 잃었다고 들었습니다. 덕분에 우리 사령관에게 이 실패에 대해 해명하는데 애를 먹었습니다. 할 말은 있습니까?
@@ -896,10 +896,10 @@ dlga_merchant_quest_stall:mayor_pretalk|흠, 다른 사람을 찾아봐야겠군
 dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|내가 할 수 있는 일을 합니다. 나는 오직 그들이 주요 장소에 있을 때에만 그들이 오고 가는 것에 대해 듣습니다. 만약 그들이 주요 장소에 없다면, 상단이 위치한 지역에 대해 듣습니다.
 dlga_mayor_talk_ask_location_2:mayor_pretalk|신경쓰지 말게나.
 dlga_merchant_quest_requested:merchant_quest_brief|흠, 충분히 가능해보이는군. 이 일은 자네가 할 수 있을 것 같은데.
-dlga_merchant_quest_brief:merchant_quest_looters_choice|얼마전 {s5} 근처에서 전투가 일어났습니다. 그 혼란이 불러일으킨 혼돈을 틈타 몇몇 부족 오크들이 그 지역 근처를 약탈했습니다. 그 오르크들에게 교훈을 줄 누군가가 필요한데. 이 일을 맡을 수 있을 것 같나요?
+dlga_merchant_quest_brief:merchant_quest_looters_choice|얼마전 {s5} 근처에서 전투가 일어났습니다. 그 혼란이 불러일으킨 혼돈을 틈타 몇몇 부족 오르크들이 그 지역 근처를 약탈했습니다. 그 오르크들에게 교훈을 줄 누군가가 필요한데. 이 일을 맡을 수 있을 것 같나요?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|물론, 내가 하겠네.
 dlga_merchant_quest_looters_choice:merchant_quest_stall|유감이지만 다른 사람을 찾는 것이 좋겠군.
-dlga_merchant_quest_looters_brief:close_window|멋지군요! 시골 근처에서 또다른 농장을 약탈하고 있는 부족 오크들을 찾을 수 있을 겁니다. 부족 오크들을 죽이고, 그들의 존재를 말살하십시오. 저희 보급 담당관에게 말해놓겠습니다. 그러면 부족 오크 무리를 궤멸시킬때마다 보상을 받게 될 것입니다. 모든 오크들을 처리할때까지 말입니다.
+dlga_merchant_quest_looters_brief:close_window|멋지군요! 시골 근처에서 또다른 농장을 약탈하고 있는 부족 오르크들을 찾을 수 있을 겁니다. 부족 오르크들을 죽이고, 그들의 존재를 말살하십시오. 저희 보급 담당관에게 말해놓겠습니다. 그러면 부족 오르크 무리를 궤멸시킬때마다 보상을 받게 될 것입니다. 모든 오르크들을 처리할때까지 말입니다.
 dlga_merchant_quest_requested:merchant_quest_brief.1|도움을 주신다니 고맙군요. 사실 {s4}로 물건을 운반해줄 사람을 찾고 있었습니다. 아마 당신이 할 수 있을지도...
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|{s4}의 {s10}까지 운반해야할 {s6} 화물이 있습니다. {s6} {reg5} 개를 {s4}까지 {reg6}일 안에 운반해주셨으면 합니다. 할 수 있겠죠?^^[{s14}의 자원 포인트 {reg14} 획득]
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|알겠네. 내가 운반을 맡지.
@@ -913,7 +913,7 @@ dlga_merchant_quest_requested:merchant_quest_brief.4|도움을 주신다니 고�
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|우리의 보급품은 점점 줄어들고 있고, 보급망은 적에게 약탈당하고 있습니다. 저희는 {reg6}일 안에 {reg5} 개의 식량을 가져다줄 사람을 찾고 있습니다. 아니면 굶주림이 시작될겁니다. 근처의 우호적인 도시들이면 충분할 것 같은데, 어떻게 하시겠습니까?
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|알겠네. 식량을 찾아서 조달하겠네.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|미안하군. 그 일을 할 다른 사람을 찾아보아야할 것 같네.
-dlga_merchant_quest_requested:merchant_quest_brief.5|임무라고 했나? 사실 나는 우리에게 광석과 금속을 공급해줄 사람을 찾고 있다네. 광산과 도로는 더이상 안전하지 않고, 원자재 보충도 점점 어려워지고 있어. 오크나 다른 천박한 짐승들도 철로 무장한 채 돌아다니는 판국이니 적들은 그들 나름의 광석을 제련하는 효율적인 방법을 갖고 있는 모양이야. 광석의 품질은 착용자들의 품질과 일치한다네. 낮은 등급의 값싼 철이지. 평소에는 거들떠도 보지 않는 종류지만, 이런 시기이니 우리 제련소들도 필요하다면 열악한 물질을 사용할 줄 알아야겠지. 아무리 하찮은 것이라도 쓸모가 있는 법이니.
+dlga_merchant_quest_requested:merchant_quest_brief.5|임무라고 했나? 사실 나는 우리에게 광석과 금속을 공급해줄 사람을 찾고 있다네. 광산과 도로는 더이상 안전하지 않고, 원자재 보충도 점점 어려워지고 있어. 오르크나 다른 천박한 짐승들도 철로 무장한 채 돌아다니는 판국이니 적들은 그들 나름의 광석을 제련하는 효율적인 방법을 갖고 있는 모양이야. 광석의 품질은 착용자들의 품질과 일치한다네. 낮은 등급의 값싼 철이지. 평소에는 거들떠도 보지 않는 종류지만, 이런 시기이니 우리 제련소들도 필요하다면 열악한 물질을 사용할 줄 알아야겠지. 아무리 하찮은 것이라도 쓸모가 있는 법이니.
 dlga_merchant_quest_requested:merchant_quest_brief.6|임무라고 했나? 주인님께서 매일 병력들을 뽑아내라 요구하시고, 내가 보내는 놈들은 그 분 성에 차지 않겠지.. 하지만 장비들은 피부에 붙인다고 알아서 자라나는게 아니야, 알고 있지?^우리 보급을 담당하는 구더기 놈들은 모자란데다 약해빠져서 쉽게 죽어버리곤 하고 우리 재료는 바닥이 나지. 하지만 저 놈들, 이를테면 요정 놈들... 항상 빛나는 귀금속으로 온 몸을 두른 채 싸돌아다녀, 마치 천한 놈들조차 자기네 하나하나가 왕이라도 된 것 처럼 말이야!...^놈들 시체를 뒤져서 내게 금속을 가져와라, {playername}. 그 철 1파운드면 우리 제련소에서 전사 한 명을 통채로 감쌀 수 있는 양이지.
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|우리는 {reg6}일 안에 {s6} {reg5} 개가 필요합니다. 우리 무기 제련소에 원자재가 다 떨어지기 전까지 말이죠. 어떻게 하시겠습니까?
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|알겠습니다. 철 조각을 좀 모아 당신에게 가져다주겠습니다.
@@ -1018,7 +1018,7 @@ dlga_start:close_window.27|매너만 지켜주신다면 문제될 일은 없을 
 dlga_start:hall_guard_easter_egg|아, 자정이 좀 넘었군요. 아실지 모르겠는데, 최근 평범하지 않은 일이 일어났습니다. - 들어보시겠습니까?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|좋네. 계속하게.
 dlga_hall_guard_easter_egg:close_window|가십거리는 내 알 바 아니네.
-dlga_hall_guard_easter_egg_scene:close_window|흠... 최근 수상한 모험가들이 근방에 나타났습니다: 인간 남성, 드워프, 요정, 그리고...
+dlga_hall_guard_easter_egg_scene:close_window|흠... 최근 수상한 모험가들이 근방에 나타났습니다: 인간 남성, 난쟁이, 요정, 그리고...
 dlga_start:hall_guard_talk|시키실 일이라도? 사령관님?
 dlga_start:close_window.28|경계 중에는 잡담 금지입니다, 사령관님.
 dlga_hall_guard_talk:hall_guard_duty|계속 근무를 서고 누군가 오면 알려주게.
@@ -1036,7 +1036,7 @@ dlga_member_chat_00:regular_member_talk|시키실 일이라도? 사령관님?
 dlga_regular_member_talk:view_regular_char_requested|당신에 대해 말해주세요
 dlga_view_regular_char_requested:do_regular_member_view_char|네, 사령관님. 나에 대해 알아야 할 것을 모두 알려드리죠.
 dlga_do_regular_member_view_char:regular_member_talk|다른것은?
-dlga_member_chat_00:disband_regular_member_confirm_yn|지휘관님, {s14}을(를) 섬기는 것은 영광입니다.^^이제 너도 알다시피, 나는 홈스케이프에 배정되었다.^나는 곧 떠날 것이다.^^[you will earn {reg14} Resource Points of {s14}]
+dlga_member_chat_00:disband_regular_member_confirm_yn|지휘관님, {s14}을 섬기는 것은 영광입니다.^^이제 너도 알다시피, 나는 고향 땅에 배정되었다.^나는 곧 떠날 것이다.^^[you will earn {reg14} Resource Points of {s14}]
 dlga_regular_member_talk:disband_regular_member_confirm|당신의 서비스는 지금 나와 함께 있는 것보다 {s12}에 있는 집으로 돌아가는 것이 더 긴급하다.
 dlga_regular_member_talk:disband_regular_member_confirm.1|당신은 다쳤어... 당신은 여기보다 더 유용할 수 있는 {s12}에 있는 집으로 돌아가야 한다.
 dlga_regular_member_talk:close_window|아무 것도 없어요. 계속 가.
@@ -1046,7 +1046,7 @@ dlga_disband_regular_member_confirm_yn:close_window.1|아직이야, 난 아직�
 dlga_disband_regular_member_confirm_yn:disband_regular_member_insist|하지만 너도 여기서 여전히 필요해!
 dlga_disband_regular_member_insist:close_window|알아, 하지만 내 의무는 다른 전투를 불러.^나는 곧 떠날 것이다.
 dlga_start:routed_allies_talk|{reg1?My lord:Master}, 당신 살아남았어요! 또 같이 갈래요?
-dlga_routed_allies_talk:close_window|예, 함께 다시 {s1}을(를) 위해 싸울 겁니다.
+dlga_routed_allies_talk:close_window|예, 함께 다시 {s1}을 위해 싸울 겁니다.
 dlga_routed_allies_talk:close_window.1|아직 아니에요, 군인.
 dlga_start:routed_allies_talk_troll|^^크르릉!^^
 dlga_routed_allies_talk_troll:close_window|[다시 합류하기를 권한다]

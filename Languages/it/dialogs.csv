@@ -315,7 +315,7 @@ dlga_lord_start:lord_talk|Che c'è ?
 dlga_lord_pretalk:lord_talk|Qualcos'altro ?
 dlga_lord_talk:lord_lend_companion_end|Mi piacerebbe che {s14} tornasse al mio servizio, {s65}, se non necessiti più dei suoi servigi.
 dlga_lord_lend_companion_end:lord_pretalk|Hai già troppi uomini nella tua compagnia, {playername}. Non puoi guidarne di più al momento.
-dlga_lord_lend_companion_end:lord_pretalk.1|Certamente, {playername}. {reg3?Lei:Lui} è un brillante {reg3?ragazza:ragazzo}, sei un comandante fortunato ad avere dei compagni così degni.
+dlga_lord_lend_companion_end:lord_pretalk.1|Certamente, {playername}. {reg3?E' una:E' un} brillante {reg3?ragazza:ragazzo}, hai fortuna ad avere dei compagni così degni.
 dlga_lord_talk:lord_message_delivered|Porto un messaggio da {s9}.
 dlga_lord_talk:lord_message_delivered_enemy|Porto un messaggio da {s9}.
 dlga_lord_talk:lord_active_mission_1|Riguardo al compito che mi avevi dato...
@@ -401,7 +401,7 @@ dlga_lord_get_reward_item:lord_pretalk|Non importa allora.
 dlga_lord_get_reward_item_answer:lord_pretalk|Molto bene. Possa tu usarlo per debellare i nostri nemici.
 dlga_lord_talk:marshall_ask|Gradirei tenere un consiglio con te sulla guerra.
 dlga_marshall_ask:lord_pretalk|Difficilmente accetterei consigli da parte tua visto che sei solamente {s25}, {playername}. Sarei più incline a darti ascolto se tu fossi {s24}, ma non lo sei.
-dlga_marshall_ask:lord_pretalk.1|Sei un comandante esperto, {playername}, ma la tua influenza è in declino. Non sarebbe prudente prestare ascolto ai tuoi suggerimenti.^[{reg15} influenza necessaria, only {reg14}attuale]
+dlga_marshall_ask:lord_pretalk.1|Sei un comandante esperto, {playername}, ma la tua influenza è in declino. Non sarebbe prudente prestare ascolto ai tuoi suggerimenti.^[{reg15} influenza necessaria, attuale: {reg14}]
 dlga_marshall_ask:lord_pretalk.2|Possiamo permetterci di affrontare a malapena il nemico faccia a faccia, {playername}. Abbiamo ancora bisogno di radunare le nostre forze e consolidarci, purtroppo siamo semplicemente {s23}.
 dlga_marshall_ask:lord_pretalk.3|Siamo nel mezzo di una campagna militare, {playername}, il tuo parere dovrà attendere.
 dlga_marshall_ask:marshall_suggest|Sto ascoltando, {playername}. Che cosa suggeriresti ?
@@ -901,7 +901,7 @@ dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Sì, lo farò.
 dlga_merchant_quest_looters_choice:merchant_quest_stall|Temo che dovrai trovare qualcun altro per questo.
 dlga_merchant_quest_looters_brief:close_window|Eccellente ! Troverai gli orchi tribali a girovagare per la campagna, probabilmente alla ricerca di altre fattorie da depredare. Uccidili, e liberaci della loro presenza. Lo farò sapere al nostro furiere, e farò in modo che tu venga ricompensato per ogni banda di orchi tribali che distruggi, finché tutti gli orchi non saranno stati sistemati.
 dlga_merchant_quest_requested:merchant_quest_brief.1|Grazie per aver offerto il tuo aiuto. In effetti stavo cercando qualcuno per consegnare dei {s4}. Forse puoi farlo tu...
-dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|Ho un carico di {s6} che deve essere consegnato al {s10} a {s4}. È necessario che {reg5} unità di {s6}  raggiungano {s4} in {reg6} giorni. Sei in grado di riuscirci?^^[guadagnerai {reg14} Punti Risorsa di {s14}]
+dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|Ho un carico di {s6} che deve essere consegnato al {s10} a {s4}. È necessario che {reg5} unità di {s6} raggiungano {s4} in {reg6} giorni. Sei in grado di riuscirci?^^[guadagnerai {reg14} Punti Risorsa di {s14}]
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|Va bene. Farò io la consegna.
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_stall|Temo di non poter trasportare il carico ora.
 dlga_merchant_quest_requested:merchant_quest_brief.2|Grazie per l'offerta d'aiuto. ^^ Questa guerra si è protratta per così tanto tempo che alcuni dei nostri insediamenti sembrano abbandonati. ^^ Forse potresti andare a dar man forte per ristabilire un insediamento nel bisogno ...
@@ -929,7 +929,7 @@ dlga_start:merchant_caravan_intro_1|Salute. Voi dovreste essere la nostra scorta
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Si. Il mio nome è {playername}. Ti condurrò a {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Bene, è bello sapere che non viaggeremo soli. Cosa vuoi che facciamo ora ?
 dlga_start:escort_merchant_caravan_talk|Eh. Ce l'abbiamo fatta fino a qui...Cosa vuoi che facciamo ?
-dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Seguimi. Ti condurrò lungo una via sicura.
+dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Seguitemi. Vi condurrò lungo una via sicura.
 dlga_merchant_caravan_follow_lead:close_window|D'accordo. Saremo proprio dietro di te.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Fermiamoci qui un momento. Andrò avanti e controllerò la strada.
 dlga_merchant_caravan_stay_here:close_window|D'accordo. Ti aspetteremo qui.

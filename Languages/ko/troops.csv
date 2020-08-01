@@ -39,7 +39,7 @@ trp_cattle_pl|소
 trp_farmer|농부
 trp_farmer_pl|농부들
 trp_townsman|마을 주민
-trp_townsman_pl|마을 주민
+trp_townsman_pl|마을 주민들
 trp_watchman|마을 여자
 trp_watchman_pl|마을 여자들
 trp_i1_woodmen_man|나무꾼 정착자
@@ -166,7 +166,7 @@ trp_a3_dwarf_scout|난쟁이 정찰병
 trp_a3_dwarf_scout_pl|난쟁이 정찰병
 trp_a4_dwarf_bowman|난쟁이 활잡이
 trp_a4_dwarf_bowman_pl|난쟁이 활잡이
-trp_i6_dwarf_longaxeman|긴 도끼 드워프
+trp_i6_dwarf_longaxeman|긴 도끼 난쟁이
 trp_i6_dwarf_longaxeman_pl|긴 도끼 드워프
 trp_i3_iron_hills_warrior|철산 전사
 trp_i3_iron_hills_warrior_pl|철산 전사
@@ -217,15 +217,15 @@ trp_a5_gon_vet_archer_pl|곤도르 고참 궁수
 trp_a6_gon_tower_archer|탑 수비대 궁수
 trp_a6_gon_tower_archer_pl|탑 수비대 궁수
 trp_steward_guard|섭정의 근위대
-trp_steward_guard_pl|섭정의 근위대
-trp_a4_ithilien_ranger|이실리엔 레인저
-trp_a4_ithilien_ranger_pl|이실리엔 레인저
-trp_a5_ithilien_vet_ranger|이실리엔 고참 레인저
-trp_a5_ithilien_vet_ranger_pl|이실리엔 고참 레인저
-trp_a6_ithilien_master_ranger|이실리엔 정예 레인저
-trp_a6_ithilien_master_ranger_pl|이실리엔 정예 레인저
-trp_a6_ithilien_leader|이실리엔 레인저 대장
-trp_a6_ithilien_leader_pl|이실리엔 레인저 대장
+trp_steward_guard_pl|섭정의 근위대들
+trp_a4_ithilien_ranger|이실리엔 순찰자
+trp_a4_ithilien_ranger_pl|이실리엔 순찰자
+trp_a5_ithilien_vet_ranger|이실리엔 고참 순찰자
+trp_a5_ithilien_vet_ranger_pl|이실리엔 고참 순찰자
+trp_a6_ithilien_master_ranger|이실리엔 정예 순찰자
+trp_a6_ithilien_master_ranger_pl|이실리엔 정예 순찰자
+trp_a6_ithilien_leader|이실리엔 순찰자 대장
+trp_a6_ithilien_leader_pl|이실리엔 순찰자 대장
 trp_i1_loss_woodsman|롯사르나흐 나무꾼
 trp_i1_loss_woodsman_pl|롯사르나흐 나무꾼
 trp_i2_loss_axeman|롯사르나흐 도끼병
@@ -319,7 +319,7 @@ trp_a6_lorien_grey_warden_pl|회색의 감시자
 trp_a5_lorien_gal_royal_archer|갈라드림 왕실 저격수
 trp_a5_lorien_gal_royal_archer_pl|갈라드림 왕실 저격수
 trp_noldorin_mounted_archer|놀도르인 기마 궁수
-trp_noldorin_mounted_archer_pl|놀도르인 기마 궁수
+trp_noldorin_mounted_archer_pl|놀도르인 기마 궁수들
 trp_a2_lorien_archer|로스로리엔 궁수
 trp_a2_lorien_archer_pl|로스로리엔 궁수
 trp_a3_lorien_vet_archer|로스로리엔 고참 궁수
@@ -327,7 +327,7 @@ trp_a3_lorien_vet_archer_pl|로스로리엔 고참 궁수
 trp_a4_lorien_gal_archer|갈라드림 궁수
 trp_a4_lorien_gal_archer_pl|갈라드림 궁수
 trp_galadhrim_royal_marksman|갈라드림 왕실 저격수
-trp_galadhrim_royal_marksman_pl|갈라드림 왕실 저격수
+trp_galadhrim_royal_marksman_pl|갈라드림 왕실 저격수들
 trp_i3_lorien_inf|로스로리엔 보병
 trp_i3_lorien_inf_pl|로스로리엔 보병
 trp_i4_lorien_gal_inf|갈라드림 보병
@@ -406,12 +406,12 @@ trp_c4_arnor_horseman|두네다인 기마대
 trp_c4_arnor_horseman_pl|두네다인 기마대
 trp_c5_arnor_knight|아르노르 기사
 trp_c5_arnor_knight_pl|아르노르 기사
-trp_a3_arnor_ranger|두네다인 레인저
-trp_a3_arnor_ranger_pl|두네다인 레인저
-trp_a4_arnor_vet_ranger|두네다인 고참 레인저
-trp_a4_arnor_vet_ranger_pl|두네다인 고참 레인저
-trp_a5_arnor_master_ranger|아르노르 정예 레인저
-trp_a5_arnor_master_ranger_pl|아르노르 정예 레인저
+trp_a3_arnor_ranger|두네다인 순찰자
+trp_a3_arnor_ranger_pl|두네다인 순찰자
+trp_a4_arnor_vet_ranger|두네다인 고참 순찰자
+trp_a4_arnor_vet_ranger_pl|두네다인 고참 순찰자
+trp_a5_arnor_master_ranger|아르노르 정예 순찰자
+trp_a5_arnor_master_ranger_pl|아르노르 정예 순찰자
 trp_i1_rohan_youth|로한 신병
 trp_i1_rohan_youth_pl|로한 신병
 trp_i2_guardsman_of_rohan|로한 경비병
@@ -488,8 +488,8 @@ trp_c3_harondor_rider|하론도르 기마대
 trp_c3_harondor_rider_pl|하론도르 기마대
 trp_c4_harondor_light_cavalry|하론도르 경장갑 약탈자
 trp_c4_harondor_light_cavalry_pl|하론도르 경장갑 약탈자
-trp_c5_harondor_serpent_knight|황금 코끼리 기사
-trp_c5_harondor_serpent_knight_pl|황금 코끼리 기사
+trp_c5_harondor_serpent_knight|황금 뱀 기사
+trp_c5_harondor_serpent_knight_pl|황금 뱀 기사
 trp_ac3_harondor_skirmisher|하론도르 척후병
 trp_ac3_harondor_skirmisher_pl|하론도르 척후병
 trp_ac4_harondor_horse_archer|하론도르 궁기병
@@ -731,8 +731,8 @@ trp_i2_gunda_orc|군다바드 오르크
 trp_i2_gunda_orc_pl|군다바드 오르크
 trp_i3_gunda_orc_fighter|군다바드 오르크 투사
 trp_i3_gunda_orc_fighter_pl|군다바드 오르크 투사
-trp_i4_gunda_orc_warrior|군다바드 오크 전사
-trp_i4_gunda_orc_warrior_pl|군다바드 오크 전사
+trp_i4_gunda_orc_warrior|군다바드 오르크 전사
+trp_i4_gunda_orc_warrior_pl|군다바드 오르크 전사
 trp_i4_gunda_orc_berserker|군다바드 오르크 광전사
 trp_i4_gunda_orc_berserker_pl|군다바드 오르크 광전사
 trp_ca4_gunda_skirmisher|군다바드 척후병
@@ -933,30 +933,30 @@ trp_tavern_minstrel_1|음유시인
 trp_npc1|마블룽
 trp_npc2|시르딜
 trp_npc3|울파스
-trp_npc4|갈마인
+trp_npc4|갈뮈네
 trp_npc5|글로르핀델
-trp_npc6|루에바나
-trp_npc7|킬리 골드핑거
+trp_npc6|르에바나
+trp_npc7|"금손가락" 킬리
 trp_npc8|파니울
 trp_npc9|글룸
 trp_npc10|더가쉬
-trp_npc11|우프트학
-trp_npc12|고바그
+trp_npc11|우프탁
+trp_npc12|고르백
 trp_npc13|리캬다
 trp_npc14|훌드미르
 trp_npc15|볼조그
 trp_npc16|발팽
 trp_npc17|딤본
 trp_knight_6_2|골라스길
-trp_gondor_lord|스튜어드 데네소르
-trp_gondor_lord_pl|스튜어드
-trp_rohan_lord|시오든 국왕
-trp_rohan_lord_pl|국왕
+trp_gondor_lord|섭정 데네소르
+trp_gondor_lord_pl|섭정
+trp_rohan_lord|세오덴 왕
+trp_rohan_lord_pl|왕
 trp_isengard_lord|사루만
-trp_isengard_lord_pl|마스터
+trp_isengard_lord_pl|시브 크룩마후르
 trp_mordor_lord|사우론의 입
 trp_mordor_lord_pl|사트랍
-trp_harad_lord|울-울카리 족장
+trp_harad_lord|족장 울-울카리
 trp_harad_lord_pl|족장
 trp_rhun_lord|헬카로스 수령
 trp_rhun_lord_pl|수령
@@ -964,23 +964,23 @@ trp_khand_lord|크루크마허 시브
 trp_khand_lord_pl|시브
 trp_umbar_lord|툴미르 제독
 trp_umbar_lord_pl|제독
-trp_lorien_lord|여주인 갈라드리엘
+trp_lorien_lord|귀부인 갈라드리엘
 trp_lorien_lord_pl|귀부인
 trp_imladris_lord|군주 엘론드
 trp_imladris_lord_pl|군주
 trp_woodelf_lord|스란두일 왕
-trp_woodelf_lord_pl|국왕
-trp_moria_lord|하수인 볼그
-trp_moria_lord_pl|마스터
+trp_woodelf_lord_pl|왕
+trp_moria_lord|주인 "키작은" 볼그
+trp_moria_lord_pl|주인
 trp_guldur_lord|군주 푸이누르
-trp_guldur_lord_pl|마스터
+trp_guldur_lord_pl|군주
 trp_gundabad_lord|군주 부르자 크루알
-trp_gundabad_lord_pl|마스터
-trp_dale_lord|브랜드 왕
-trp_dale_lord_pl|국왕
+trp_gundabad_lord_pl|군주
+trp_dale_lord|브란드 왕
+trp_dale_lord_pl|왕
 trp_dwarf_lord|무쇠발 다인 왕 2세
-trp_dwarf_lord_pl|국왕
-trp_dunland_lord|흑색의 대글라프 족장
+trp_dwarf_lord_pl|왕
+trp_dunland_lord|흑색의 다에글라프 족장
 trp_dunland_lord_pl|족장
 trp_beorn_lord|연로한 그림베오른 족장
 trp_beorn_lord_pl|족장
@@ -989,44 +989,44 @@ trp_pippin_notmet|하플링
 trp_merry_notmet|하플링
 trp_pippin|피핀
 trp_merry|메리
-trp_knight_1_1|"용감한" 앙보르
+trp_knight_1_1|"용감한" 앙그보르
 trp_knight_1_2|"장신의" 후린
 trp_knight_1_3|임라힐 대공
 trp_knight_1_4|오르탈리온
 trp_knight_1_5|두이니르
-trp_knight_1_6|공정한 힐루인
+trp_knight_1_6|"공정한" 힐루인
 trp_knight_1_7|파라미르
-trp_knight_1_8|뚱뚱한 포를롱
+trp_knight_1_8|"뚱뚱한" 포를롱
 trp_knight_1_9|그림볼드
-trp_knight_1_10|에르켄브랜드
+trp_knight_1_10|에르켄브란드
 trp_knight_1_11|엘프헬름
 trp_knight_1_12|하마
 trp_knight_1_13|감링
 trp_knight_1_14|에오메르
-trp_knight_1_15|우글루크
+trp_knight_1_15|우글룩
 trp_knight_1_16|마후르
 trp_knight_1_17|일곱손가락 모그
 trp_knight_1_18|허쉬나크 롱샹크스
 trp_knight_1_19|나무씹는 그리대시
-trp_knight_1_20|식인자 그론크
-trp_knight_2_1|몰타크 대장
+trp_knight_1_20|식인자 그롱크
+trp_knight_2_1|대장 몰타크
 trp_knight_2_2|베루티엘
 trp_knight_2_3|스캉
 trp_knight_2_4|사생아 파라카드
 trp_knight_2_5|그리쉬나크
-trp_knight_2_51|고트모그
+trp_knight_2_51|고스모그
 trp_knight_2_51_pl|중위
 trp_knight_2_6|사자 카르나 족장
 trp_knight_2_7|나만 족장
 trp_knight_2_8|하리스 족장
 trp_knight_2_11|쿠술라크
-trp_knight_2_12|발코스의 재림,울아스
+trp_knight_2_12|발코스의 재림, 울와르스
 trp_knight_2_13|브로다
 trp_knight_2_16|토라스크
 trp_knight_2_17|럼사쿤
 trp_knight_3_1|몰비르 대장
-trp_knight_3_2|안가마이테 대장
-trp_knight_3_3|산가햔도 대장
+trp_knight_3_2|앙가마이테 대장
+trp_knight_3_3|상가햔도 대장
 trp_knight_3_6|할디르
 trp_knight_3_7|오로핀
 trp_knight_3_11|엘라단
@@ -1051,8 +1051,8 @@ trp_knight_5_7|돌투구 소린
 trp_knight_5_11|푸드레임 대장
 trp_knight_5_12|울프 대장
 trp_knight_6_1|데르보린
-trp_smith_mtirith|대장장이 베레토르
-trp_smith_mtirith_pl|관리인의 대장장이
+trp_smith_mtirith|대장장이 베레소르
+trp_smith_mtirith_pl|섭정의 대장장이
 trp_smith_pelargir|금속제련장인 할라탄
 trp_smith_pelargir_pl|대장간
 trp_smith_linhir|갑옷장인 보르
@@ -1075,8 +1075,8 @@ trp_smith_wosgiliath|가르딜
 trp_smith_wosgiliath_pl|임시 대장간
 trp_smith_calembel|아그로놈
 trp_smith_calembel_pl|대장간
-trp_smith_hannun|순찰대 대장장이,팔
-trp_smith_hannun_pl|무장 레인저
+trp_smith_hannun|순찰대 대장장이, 팔
+trp_smith_hannun_pl|무장 순찰자
 trp_smith_candros|칼림도르
 trp_smith_candros_pl|대장간
 trp_smith_edoras|강철장인 이오덴
@@ -1099,7 +1099,7 @@ trp_smith_mmorgul|"불꽃 뿜는 자" 오르구즈
 trp_smith_mmorgul_pl|대장간
 trp_town_24_smith|"철 방해자" 보즈
 trp_town_24_smith_pl|대장간
-trp_smith_orc_patrol|쇠손가락 글러그즈
+trp_smith_orc_patrol|쇠손가락 글루그즈
 trp_smith_orc_patrol_pl|야영지 대장간
 trp_smith_oscamp|무쇠애호가 쿠가쉬
 trp_smith_oscamp_pl|야영지 대장간
@@ -1112,14 +1112,14 @@ trp_smith_uhcamp_pl|야영지 대장간
 trp_smith_urcamp|글러크
 trp_smith_urcamp_pl|야영지 대장간
 trp_smith_cgaladhon|활잡이 디루핀
-trp_smith_cgaladhon_pl|엘프족 무기제작자
+trp_smith_cgaladhon_pl|요정족 무기제작자
 trp_smith_cdolen|화살제조장인 디미리안
-trp_smith_cdolen_pl|엘프족 무기제작자
+trp_smith_cdolen_pl|요정족 무기제작자
 trp_smith_camroth|게타시스탄
-trp_smith_camroth_pl|엘프족 무기제작자
+trp_smith_camroth_pl|요정족 무기제작자
 trp_smith_thranduils_halls|투리노르
 trp_smith_thranduils_halls_pl|대장간
-trp_smith_woodelf_camp|칼레치르
+trp_smith_woodelf_camp|칼레히르
 trp_smith_woodelf_camp_pl|대장간
 trp_smith_beorn|도끼장인 베오르날라프
 trp_smith_beorn_pl|대장간
@@ -1130,7 +1130,7 @@ trp_smith_dale_pl|대장간
 trp_smith_esgaroth|활잡이 켈레가른
 trp_smith_esgaroth_pl|대장간
 trp_smith_erebor|대장장이 스로르
-trp_smith_erebor_pl|찬사받는 드워프 장인들
+trp_smith_erebor_pl|찬사받는 난쟁이족 장인들
 trp_smith_dunland|"강철 파이크" 도러울드
 trp_smith_dunland_pl|대장간
 trp_smith_harad|강철제조장인 하르
@@ -1140,7 +1140,7 @@ trp_smith_khand_pl|대장간
 trp_smith_umbar|풀무 장인 푸이니르
 trp_smith_umbar_pl|대장간
 trp_smith_imladris|두이피리안
-trp_smith_imladris_pl|엘프족 무기제작자
+trp_smith_imladris_pl|요정족 무기제작자
 trp_smith_dolguldur|스타즈그 둘바시
 trp_smith_dolguldur_pl|대장간
 trp_smith_north_rhun|오긘제미르 클라디보
@@ -1148,7 +1148,7 @@ trp_smith_north_rhun_pl|임시 대장간
 trp_smith_gundabad|"눈 상인" 블러르그
 trp_smith_gundabad_pl|대장간
 trp_smith_ironhill|철산 대장장이
-trp_smith_ironhill_pl|드워프 야영지 대장장이
+trp_smith_ironhill_pl|난쟁이족 야영지 대장장이
 trp_town_50_weaponsmith|"칼 가는 이" 슈루크러그
 trp_town_50_weaponsmith_pl|대장간
 trp_smith_gondor_ac|갑옷장인 보르
@@ -1160,19 +1160,19 @@ trp_smith_mordor_ac_pl|대장간
 trp_smith_isengard_ac|무쇠를 후려치는 버즈
 trp_smith_isengard_ac_pl|지하 대장간
 trp_smith_lorien_ac|화살제조장인 디미리안
-trp_smith_lorien_ac_pl|엘프족 무기제작자
+trp_smith_lorien_ac_pl|요정족 무기제작자
 trp_smith_woodelf_ac|도엘라스
 trp_smith_woodelf_ac_pl|대장간
 trp_smith_dwarf_ac|철산 대장장이
-trp_smith_dwarf_ac_pl|드워프 야영지 대장장이
-trp_smith_gundabad_ac|"눈 상인" 블러르그"
+trp_smith_dwarf_ac_pl|난쟁이족 야영지 대장장이
+trp_smith_gundabad_ac|"눈 상인" 블러르그
 trp_smith_gundabad_ac_pl|대장간
 trp_smith_rhun_ac|브라니미르 브론닉
 trp_smith_rhun_ac_pl|임시 대장간
 trp_smith_guldur_ac|스타즈그 둘바시
 trp_smith_guldur_ac_pl|대장간
 trp_smith_imladris_ac|두이피리안
-trp_smith_imladris_ac_pl|엘프족 무기제작자
+trp_smith_imladris_ac_pl|요정족 무기제작자
 trp_smith_dunland_ac|"강철 파이크" 더러울드
 trp_smith_dunland_ac_pl|대장간
 trp_smith_harad_ac|강철제조장인 하르
@@ -1308,15 +1308,15 @@ trp_merchant_uhcamp_pl|와르그 갱과 보급품
 trp_merchant_urcamp|보급 담당자
 trp_merchant_urcamp_pl|와르그 갱과 보급품
 trp_merchant_cgaladhon|보급 담당자
-trp_merchant_cgaladhon_pl|엘프 보급품
+trp_merchant_cgaladhon_pl|요정족 보급품
 trp_merchant_cdolen|보급 담당자
-trp_merchant_cdolen_pl|엘프 보급품
+trp_merchant_cdolen_pl|요정족 보급품
 trp_merchant_camroth|보급 담당자
-trp_merchant_camroth_pl|엘프 보급품
+trp_merchant_camroth_pl|요정족 보급품
 trp_merchant_thranduils_halls|보급 담당자
-trp_merchant_thranduils_halls_pl|엘프 보급품
+trp_merchant_thranduils_halls_pl|요정족 보급품
 trp_merchant_woodelf_camp|보급 담당자
-trp_merchant_woodelf_camp_pl|엘프 보급품
+trp_merchant_woodelf_camp_pl|요정족 보급품
 trp_merchant_woodmen|보급 담당자
 trp_merchant_woodmen_pl|마구간과 창고
 trp_merchant_beorn|보급 담당자
@@ -1328,7 +1328,7 @@ trp_merchant_dale_pl|마구간과 창고
 trp_merchant_esgaroth|보급 담당자
 trp_merchant_esgaroth_pl|마구간과 창고
 trp_merchant_erebor|보급 담당자
-trp_merchant_erebor_pl|드워프 보급품
+trp_merchant_erebor_pl|난쟁이족 보급품
 trp_merchant_dunland|둔 창고 담당자
 trp_merchant_dunland_pl|야영지 창고
 trp_merchant_harad|하라드 창고 담당자
@@ -1348,7 +1348,7 @@ trp_merchant_south_rhun_pl|야영지 창고
 trp_merchant_gundabad|보급 담당자
 trp_merchant_gundabad_pl|야영지 창고
 trp_merchant_ironhill|보급 담당자
-trp_merchant_ironhill_pl|드워프 보급품
+trp_merchant_ironhill_pl|난쟁이족 보급품
 trp_town_50_horse_merchant|"노란 이빨" 고브립
 trp_town_50_horse_merchant_pl|와르그 갱과 보급품
 trp_merchant_calembel|보급 담당자
@@ -1363,11 +1363,11 @@ trp_elder_dolamroth|돌 암로스 길드장
 trp_elder_dolamroth_pl|도시
 trp_elder_edhellond|에델론드 길드장
 trp_elder_edhellond_pl|도시
-trp_elder_lossarnach|로사나크 길드장
+trp_elder_lossarnach|롯사르나흐 길드장
 trp_elder_lossarnach_pl|마을
 trp_elder_tarnost|타르노스트 길드장
 trp_elder_tarnost_pl|마을
-trp_elder_erech|에렉 길드장
+trp_elder_erech|에레흐 길드장
 trp_elder_erech_pl|마을
 trp_elder_pinnath|피나스 부족 장로
 trp_elder_pinnath_pl|마을
@@ -1400,14 +1400,14 @@ trp_elder_cungol_pl|야영지
 trp_elder_isengard|뱀혓바닥 그리마
 trp_elder_isengard_pl|도시
 trp_elder_cgaladhon|현자 로리엔
-trp_elder_cgaladhon_pl|엘프 숲속 요새
+trp_elder_cgaladhon_pl|요정족 숲속 요새
 trp_elder_cdolen|현자 로리엔
 trp_elder_cdolen_pl|임시주둔지
 trp_elder_camroth|현자 로리엔
 trp_elder_camroth_pl|임시주둔지
 trp_elder_thalls|어둠숲 장로
-trp_elder_thalls_pl|엘프족 동굴
-trp_elder_imladris|리블델 야영지 보급담당자
+trp_elder_thalls_pl|요정족 동굴
+trp_elder_imladris|리븐델 야영지 보급담당자
 trp_elder_imladris_pl|야영지
 trp_elder_wvillage|"나무꾼" 피에르
 trp_elder_wvillage_pl|마을
@@ -1457,7 +1457,7 @@ trp_elder_rhun_ac|룬 야영지 대장
 trp_elder_rhun_ac_pl|야영지
 trp_elder_khand_ac|칸드 야영지 대장
 trp_elder_khand_ac_pl|야영지
-trp_elder_dunland_ac|둔 야영지 대장
+trp_elder_dunland_ac|던랜드 야영지 대장
 trp_elder_dunland_ac_pl|야영지
 trp_elder_umbar_ac|움바르 보급담당자
 trp_elder_umbar_ac_pl|야영지
@@ -1469,7 +1469,7 @@ trp_elder_dale_ac|너른골 보급담당자
 trp_elder_dale_ac_pl|야영지
 trp_elder_guldur_ac|굴두르 야영지 대장
 trp_elder_guldur_ac_pl|야영지
-trp_elder_dwarf_ac|드워프 야영지 보급담당자
+trp_elder_dwarf_ac|난쟁이족 야영지 보급담당자
 trp_elder_dwarf_ac_pl|야영지
 trp_village_1_elder|채찍질 주인
 trp_village_1_elder_pl|동굴
@@ -1489,12 +1489,12 @@ trp_trainee_peasant|농민
 trp_trainee_peasant_pl|농민
 trp_fugitive_man|수상한 인간
 trp_fugitive_man_pl|수상한 인간
-trp_fugitive_elf|수상한 엘프
-trp_fugitive_elf_pl|수상한 엘프
-trp_fugitive_dwarf|수상한 드워프
-trp_fugitive_dwarf_pl|수상한 드워프
-trp_fugitive_orc|수상한 오크
-trp_fugitive_orc_pl|수상한 오크
+trp_fugitive_elf|수상한 요정
+trp_fugitive_elf_pl|수상한 요정들
+trp_fugitive_dwarf|수상한 난쟁이
+trp_fugitive_dwarf_pl|수상한 난쟁이족들
+trp_fugitive_orc|수상한 오르크
+trp_fugitive_orc_pl|수상한 오르크
 trp_spy|교활한 눈매의 해적
 trp_spy_pl|교활한 눈매의 해적
 trp_spy_evil|교활한 눈매의 남부인
@@ -1523,8 +1523,8 @@ trp_dorwinion_raider|도르위니온 약탈자
 trp_dorwinion_raider_pl|도르위니온 약탈자
 trp_city_guard|도시 경비병
 trp_city_guard_pl|도시 경비병
-trp_orc_sentry|오크 경비병
-trp_orc_sentry_pl|오크 경비병
+trp_orc_sentry|오르크 경비병
+trp_orc_sentry_pl|오르크 경비병
 trp_uruk_hai_sentry|우르크-하이 경비병
 trp_uruk_hai_sentry_pl|우르크-하이 경비병
 trp_black_numenorean_sorcerer|검은 누메노르 주술사
@@ -1536,7 +1536,7 @@ trp_wolf_rider_of_mirkwood_pl|어둠숲 늑대기수
 trp_warg_rider_of_mirkwood|어둠숲 와르그기수
 trp_warg_rider_of_mirkwood_pl|어둠숲 와르그기수
 trp_gate_aggravator|정문 수비대
-trp_orc_pretender|오크 쟁탈자
+trp_orc_pretender|오르크 쟁탈자
 trp_human_prisoner|인간 죄수
 trp_spider|어둠숲 거미
 trp_spider_pl|어둠숲 거미
@@ -1556,7 +1556,7 @@ trp_ring_hunter_three_pl|반지 추적자
 trp_ring_hunter_four|반지 추적자
 trp_ring_hunter_four_pl|반지 추적자
 trp_start_quest_uruk|모르도르 우루크 대장
-trp_start_quest_orc|모르도르 오크 중위
+trp_start_quest_orc|모르도르 오르크 중위
 trp_start_quest_orc_pl|모르도르 큰 오르크
 trp_start_quest_woodelf|갈라드림 왕실 저격수
 trp_start_quest_woodelf_pl|갈라드림 왕실 저격수

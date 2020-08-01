@@ -4,19 +4,19 @@ pt_hero_party|영웅 일행
 pt_cattle_herd|소떼
 pt_ruins|폐허
 pt_legendary_place|전설적인 장소
-pt_mound|영웅의 무리
-pt_pyre|영웅의 더미
+pt_mound|영웅의 무덤
+pt_pyre|영웅의 화장터
 pt_wild_troll|야생 트롤들
 pt_raging_trolls|성난 트롤들
-pt_looters|부족 오크
-pt_forest_bandits|오크 낙오자들
+pt_looters|부족 오르크
+pt_forest_bandits|오르크 낙오자들
 pt_mountain_bandits|야생 고블린들
 pt_steppe_bandits|던랜드 추방자들
 pt_sea_raiders|해적 배신자들
 pt_deserters|사막인
 pt_merchant_caravan|대상의 상단
 pt_troublesome_bandits|성가신 고블린들
-pt_fangorn_orcs|나무를 베고있는 오크들
+pt_fangorn_orcs|나무를 베고있는 오르크들
 pt_village_farmers|촌락 농부들
 pt_spy_partners|의심스러운 여행자들
 pt_spy_partners_evil|의심스러운 여행자들
@@ -27,44 +27,44 @@ pt_sacrificed_messenger|희생당한 전령
 pt_gandalf|말을 탄 낯선 이
 pt_nazgul|말을 탄 낯선 이
 pt_gondor_scouts|곤도르 정찰대
-pt_blackroot_auxila|검은뿌리 보조군
+pt_blackroot_auxila|검은뿌리 보조병
 pt_lamedon_auxila|라메돈 보조병
 pt_lossarnach_auxila|롯사르나흐 보조병
 pt_pinnath_gelin_auxila|피나스 겔린 보조병
-pt_ranger_scouts|레인저 순찰자
-pt_rohan_scouts|로한 정찰대
-pt_lorien_scouts|로스로리엔 정찰병
-pt_woodelf_scouts|어둠숲의 엘프 정찰대
-pt_imladris_scouts|두네다인 순찰자
-pt_dale_scouts|너른골 순찰자
-pt_esgaroth_scouts|에스가로스 순찰자
-pt_dwarf_scouts|난쟁이족 정찰대
-pt_beorn_scouts|베오른 정찰병
-pt_woodmen_scouts|나무꾼 순찰자
-pt_mordor_scouts|모르도르 정찰병
-pt_morgul_scouts|모르굴 정찰병
-pt_isengard_scouts|아이센가드 정찰병
-pt_isengard_scouts_warg|아이센가드 와르그기수
-pt_harad_scouts|하라드인 순찰자
-pt_dunland_scouts|던랜드인 순찰자
-pt_umbar_scouts|해적 순찰병
-pt_khand_scouts|동부인 정찰병
+pt_ranger_scouts|순찰자 정찰대
+pt_rohan_scouts|로히림 정찰대
+pt_lorien_scouts|로스로리엔 정찰대
+pt_woodelf_scouts|어둠숲 요정족 정찰대
+pt_imladris_scouts|두네다인 정찰대
+pt_dale_scouts|너른골 정찰대
+pt_esgaroth_scouts|에스가로스 정찰대
+pt_dwarf_scouts|난쟁이족 감시대
+pt_beorn_scouts|베오른 정찰대
+pt_woodmen_scouts|나무꾼 정찰대
+pt_mordor_scouts|모르도르 정찰대
+pt_morgul_scouts|모르굴 정찰대
+pt_isengard_scouts|아이센가드 정찰대
+pt_isengard_scouts_warg|아이센가드 와르그 기마대
+pt_harad_scouts|하라드인 정찰대
+pt_dunland_scouts|던랜딩 정찰대
+pt_umbar_scouts|해적 정찰대
+pt_khand_scouts|동부인 정찰대
 pt_moria_scouts|모리아 정찰대
-pt_guldur_scouts|돌 굴두르 정찰병
-pt_gundabad_scouts|군다바드 정찰병
+pt_guldur_scouts|돌 굴두르 정찰대
+pt_gundabad_scouts|군다바드 정찰대
 pt_rhun_scouts|룬 정찰대
 pt_gondor_raiders|곤도르 약탈자
-pt_rohan_raiders|로한인 약탈자
+pt_rohan_raiders|로히림 약탈자
 pt_imladris_raiders|리븐델 약탈자
 pt_lorien_raiders|로스로리엔 약탈자
 pt_woodelf_raiders|어둠숲 약탈자
 pt_dale_raiders|너른골 약탈자
 pt_dwarf_raiders|난쟁이족 약탈자
-pt_ranger_raiders|레인저 약탈자
+pt_ranger_raiders|순찰대 약탈자
 pt_morgul_raiders|모르굴 약탈자
 pt_mordor_raiders|모르도르 약탈자
 pt_isengard_raiders|아이센가드 약탈자
-pt_dunland_raiders|던랜드인 약탈자
+pt_dunland_raiders|던랜딩 약탈자
 pt_harad_raiders|하라드인 약탈자
 pt_khand_raiders|칸드 약탈자
 pt_umbar_raiders|움바르 약탈자
@@ -73,28 +73,28 @@ pt_guldur_raiders|돌 굴두르 약탈자
 pt_gundabad_raiders|군다바드 약탈자
 pt_rhun_raiders|룬 약탈자
 pt_gondor_patrol|곤도르 순찰자
-pt_rohan_patrol|로한인 순찰자
+pt_rohan_patrol|로히림 순찰자
 pt_imladris_patrol|두네다인 순찰자
 pt_lorien_patrol|로스로리엔 순찰자
 pt_woodelf_patrol|어둠숲 순찰자
 pt_dale_patrol|너른골 순찰자
 pt_esgaroth_patrol|에스가로스 순찰자
 pt_dwarf_patrol|난쟁이족 순찰자
-pt_ranger_patrol|레인저 순찰자
+pt_ranger_patrol|순찰자 순찰자
 pt_amroth_patrol|돌 암로스 순찰자
 pt_pelargir_patrol|펠라르기르 순찰자
 pt_lossarnach_patrol|롯사르나흐 순찰자
 pt_brv_patrol|검은뿌리 순찰자
 pt_pinnath_patrol|피나스 순찰자
 pt_lamedon_patrol|라메돈 순찰자
-pt_mordor_war_party|모르도르 전쟁집단
-pt_isengard_war_party|아이센가드 전쟁집단
-pt_harad_war_party|하라드 전쟁집단
-pt_dunland_war_party|던랜드인 전쟁집단
-pt_khand_war_party|바리아그 전쟁집단
-pt_moria_war_party|모리아 전쟁집단
-pt_dale_war_party|너른골 전쟁집단
-pt_rhun_war_party|룬 전쟁집단
+pt_mordor_war_party|모르도르 전쟁 부대
+pt_isengard_war_party|아이센가드 전쟁 부대
+pt_harad_war_party|하라드 전쟁 부대
+pt_dunland_war_party|던랜딩 전쟁집단
+pt_khand_war_party|바리아그 전쟁 부대
+pt_moria_war_party|모리아 전쟁 부대
+pt_dale_war_party|너른골 전쟁 부대
+pt_rhun_war_party|룬 전쟁 부대
 pt_gondor_company|미나스 티리스 순찰자
 pt_rohan_company|로한 중대
 pt_imladris_company|리븐델 중대
@@ -116,9 +116,9 @@ pt_lorien_caravan|로스로리엔 상단
 pt_woodelf_caravan|어둠숲 상단
 pt_dale_caravan|너른골 상단
 pt_dwarf_caravan|난쟁이족 상단
-pt_mordor_caravan|모르도르 보급대
-pt_isengard_caravan|아이센가드 보급대
-pt_gunda_caravan|군다바드 보급대
+pt_mordor_caravan|모르도르 보급 수레
+pt_isengard_caravan|아이센가드 보급 수레
+pt_gunda_caravan|군다바드 보급 수레
 pt_gondor_p_train|곤도르 죄수 후송대
 pt_rohan_p_train|로한 죄수 후송대
 pt_imladris_p_train|리븐델 죄수 후송대
@@ -128,7 +128,7 @@ pt_dale_p_train|너른골 죄수 후송대
 pt_dwarf_p_train|난쟁이족 죄수 후송대
 pt_mordor_p_train|모르도르 죄수 후송대
 pt_isengard_p_train|아이센가드 죄수 후송대
-pt_kingdom_hero_party|전쟁집단
+pt_kingdom_hero_party|전쟁 부대
 pt_caravan_survivors|상단 생존자
 pt_routed_allies|후퇴한 동맹군
 pt_routed_enemies|후퇴한 적군
@@ -142,5 +142,5 @@ pt_ring_hunters|반지 추적자
 pt_scout_camp_small|정찰 캠프
 pt_scout_camp_large|요새화된 정찰 캠프
 pt_beorn_caravan|숲사람 상단
-pt_orc_horde|오크 부족
+pt_orc_horde|오르크 부족
 pt_vet_archer|고참 궁수

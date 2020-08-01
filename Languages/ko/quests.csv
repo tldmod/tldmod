@@ -18,16 +18,16 @@ qst_lend_companion|동료 {s3}을 {s9}에게 빌려주기
 qst_lend_companion_text|{s9}는 당신의 동료 {s3}을 한 주동안 빌려주기를 요청했다.
 qst_capture_prisoners|{reg1} 포로를 데려오십시오
 qst_capture_prisoners_text|{s9}이 {reg1} 적 포로를 잡아오길 요청했다.
-qst_investigate_fangorn|팡고른을 조사하라
-qst_investigate_fangorn_text|{s9}는 당신이 팡고른에서 일어나는 일들을 조사하고, 보고하길 요청했다.
+qst_investigate_fangorn|팡고른 숲을 조사하라
+qst_investigate_fangorn_text|{s9}는 당신이 팡고른 숲에서 일어나는 일들을 조사하고, 보고하길 요청했다.
 qst_capture_troll|트롤 생포
 qst_capture_troll_text|{s9}는 그의 군대에 사용할 수 있도록 사나운 트롤을 가져오라고 지시한다.
 qst_kill_troll|성난 트롤을 처치해라.
 qst_kill_troll_text|{s9}이 {s13}를 위협하는 교외의 성난 트롤을 처리해 주길 요청했다.
-qst_mirkwood_sorcerer|어둠숲의 마술사 사살
+qst_mirkwood_sorcerer|어둠숲의 마술사 처치
 qst_mirkwood_sorcerer_text|돌 굴두르 마술사의 사악한 의식으로, 로스로리엔을 수호하는 갈라드리엘의 힘이 약화되었습니다. 그는 비록 필멸자지만 엘프들에게 커다란 위협이 됩니다. 돌 굴두르 근처의 어둠의 숲에서 그를 찾아내십시오. 그를 잡을 기회는 단 한 번 뿐이니, 경보를 울리지 않도록 은신을 사용하십시오.
-qst_find_lost_spears|왕 블라도르딘의 잃어버린 창들을 찾아라
-qst_find_lost_spears_text|{s9}이 난장이들이 블라도르신 왕에게 만들어 줬던, 잃어버린 창을 찾아주길 요청했습니다. 외로운 산 심처를 수색하려면 난장이들의 허가를 받아야 합니다.
+qst_find_lost_spears|왕 블라도르신의 잃어버린 창들을 찾아라
+qst_find_lost_spears_text|{s9}이 난쟁이들이 블라도르신 왕에게 만들어 줬던, 잃어버린 창을 찾아주길 요청했습니다. 외로운 산 심처를 수색하려면 난쟁이들의 허가를 받아야 합니다.
 qst_defend_village|마을을 방어하시오
 qst_raid_village|마을을 습격하시오
 qst_destroy_scout_camp|정찰 기지 파괴
@@ -59,18 +59,18 @@ qst_deliver_wine|{s6} {reg5}개를 {s4}로 배달하라
 qst_deliver_wine_text|{s3}의 {s9}는 7일 이내에 {s6} {reg5}개를 {s4}로 배달해 주길 요청했습니다.
 qst_troublesome_bandits|골칫거리 고블린 추적
 qst_troublesome_bandits_text|{s4}의 {s9}가 도시 부근의 골칫거리 고블린을 추적해 주길 요청했습니다.
-qst_deal_with_looters|부족 오크 처리
-qst_deal_with_looters_text|{s4}의 장로가 {s4} 근처의 부족 오크 몇 무리를 처리해 주길 바랍니다.
+qst_deal_with_looters|부족 오르크 처리
+qst_deal_with_looters_text|{s4}의 장로가 {s4} 근처의 부족 오르크 몇 무리를 처리해 주길 바랍니다.
 qst_deal_with_night_bandits|도둑 고블린을 처리하라
 qst_deal_with_night_bandits_text|{s14}의 장로가 {s14}의 밤고블린을 처리해 주길 바랍니다.
 qst_deliver_food|{s3}으로 식량 {reg5}개 조달
 qst_deliver_food_text|{s3}의 {s9}가 10일 이내로 {reg5}의 식량을 가져다 주길 바랍니다.
 qst_deliver_iron|{s3}으로 {s6} {reg5}개 조달
 qst_deliver_iron_text|{s3}의 {s9}가 {reg5}의 {s6}을 가져다 주길 바랍니다.
-qst_tld_introduction|팩션 지도자에게 돌아가십시오.
+qst_tld_introduction|세력 지도자에게 돌아가십시오.
 qst_tld_introduction_text|없음
-qst_treebeard_kill_orcs|벌목하는 오크무리 토벌
-qst_treebeard_kill_orcs_text|나무수염은 당신이 벌목하는 오크들을 찾아내어 죽이는걸 원합니다
+qst_treebeard_kill_orcs|벌목하는 오르크무리 토벌
+qst_treebeard_kill_orcs_text|나무수염은 당신이 벌목하는 오르크들을 찾아내어 죽이는걸 원합니다
 qst_oath_of_vengeance|복수의 맹세
 qst_oath_of_vengeance_text|당신은 {s1}의 죽음에 분노하여, {s2}군대에 대한 복수를 맹세했습니다. 당신은 앞으로 최대한 많은 {s2}군대를 격파해야 합니다. 당신의 동료들이 맹세의 증인이며 당신은 맹세파괴자라 불리고 싶지 않습니다. 피바다를 만들어 줄 시간입니다!
 qst_deliver_gift|{s2}에서 {s3}로 {s1}의 {s4}를 운반하라

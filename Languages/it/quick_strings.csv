@@ -369,7 +369,7 @@ qstr_Orcs_of_{s16}_get_re|Orchi di {s16}, state pronti ! Ci sono gole da tagliar
 qstr_These_friend_of_elve|Questi amici degli Elfi cadranno sotto le nostre lame !
 qstr_These_Elves_will_fal|Questi Elfi cadranno sotto le nostre lame !
 qstr_Raahh!_Draw_your_wea|Raaah ! Sguainate le armi, feccia di {s16} ! Stanotte festeggeremo con le interiora di {s15} !
-qstr_Rha!_{s14}More_{s15}|Rha ! {s14}Ancora corpi  di {s15} da sfigurare con le nostre terribili armi !
+qstr_Rha!_{s14}More_{s15}|Rha ! {s14}Ancora corpi di {s15} da sfigurare con le nostre terribili armi !
 qstr_Slaughter_these_puny|Massacrate questi penosi di {s18} adesso ! Poi metteremo a fuoco le loro case e uccideremo le lore famiglie. 
 qstr_Death_to_the_trespas|Morte agli intrusi sulle terre di {s16} !
 qstr_CHARGE!_Let_s_clear_|CARICA ! Ripuliamo {s17} dalla feccia {s18} {s19} !
@@ -1080,7 +1080,7 @@ qstr_There_is_a_sense_of_|Si percepisce un senso di pericolo nell'aria.
 qstr_You_have_a_feeling_y|Hai la sensazione di aver disturbato la foresta abbastanza a lungo.
 qstr_Get_out_now!|Esci fuori, ora !
 qstr_You_are_inside_Fango|Sei all'interno di Fangorn. {s11}
-qstr_Your_party_witnessed|La tua compagnia ha testimoniato su orchi che mangiano prigionieri.
+qstr_Your_party_witnessed|La tua compagnia ha visto orchi che mangiavano prigionieri.
 qstr_Your_party_s_morale_|Il morale della tua compagnia è passato ad odio.
 qstr_Your_party_s_morale_h|Il morale della tua compagnia è caduto nella paura.
 qstr_{s27}:_Influence_wit|{s27}: Influenza con {s1} aumenta da {reg2} a {reg1}
@@ -1533,7 +1533,7 @@ qstr_The_{s9}_of_{s4}_ask|Il {s9} di {s4} ti ha chiesto di dare rinforzi a {s3} 
 qstr_You_have_reinforced_{|Hai fornito rinforzi a {s3} con 0 soldati.
 qstr_Thank_you_for_offeri|Grazie per aver offerto il tuo aiuto, {playername}.^^Le carovane che escono ed entrano nella città sono state attaccate numerose volte da {s6}. Si stanno facendo più audaci ad ogni assalto, e si avvicinano sempre più alla città.
 qstr_Good_of_you_to_ask_{|È un bene che tu l'abbia chiesto, {playername}.^^Ci sono {s6} che si spostano nella zona, pensando di essere al comando. Nessuno sta facendo niente per cui si stanno facendo audaci e prendono ciò che ci appartiene.
-qstr_The_people_have_aske|La popolazione ha chiesto aiuto perché siano uccisi almeno {reg22} {s6}, nella speranza che questo li terrà lontani per un po'.^^Saresti in grado di farlo?
+qstr_The_people_have_aske|La popolazione ha chiesto aiuto perché siano uccisi almeno {reg22} {s6}, nella speranza che questo li tenga lontani per un po'.^^Saresti in grado di farlo?
 qstr_I_want_you_to_slay_a|Voglio che tu abbatta almeno {reg22} {s6}, per mostrare a quelle pappemolli quanto sono irrilevanti.^^Che ne dici?
 qstr_We_will_get_rid_of_t|Ci libereremo di questi parassiti.
 qstr_{s9}_wants_you_to_sl|{s9} desidera che tu uccida {reg22} {s6} nelle tue battaglie.

@@ -5,10 +5,10 @@ p_town_dol_amroth|돌 암로스
 p_town_edhellond|에델론드
 p_town_lossarnach|롯사르나흐
 p_town_tarnost|타르노스트
-p_town_erech|에레크
+p_town_erech|에레흐
 p_town_pinnath_gelin|피나스 겔린
 p_town_west_osgiliath|서 오스길라아스
-p_town_henneth_annun|헤네스 아눈
+p_town_henneth_annun|헨네스 안눈
 p_town_cair_andros|카이르 안드로스
 p_town_calembel|칼렘벨
 p_town_edoras|에도라스
@@ -16,13 +16,13 @@ p_town_aldburg|알드버그
 p_town_hornburg|혼버그
 p_town_east_emnet|동 엠넷
 p_town_westfold|웨스트폴드
-p_town_west_emnet|서 엠넷
+p_town_west_emnet|서부 엠넷
 p_town_eastfold|이스트폴드
 p_town_morannon|모란논
 p_town_minas_morgul|미나스 모르굴
-p_town_cirith_ungol|오크 정찰병 캠프
+p_town_cirith_ungol|오르크 정찰병 캠프
 p_town_east_osgiliath|동 오스길리아스
-p_town_orc_sentry_camp|오크 경비병 캠프
+p_town_orc_sentry_camp|오르크 경비병 캠프
 p_town_isengard|아이센가드
 p_town_urukhai_outpost|우르크 하이 전초기지
 p_town_urukhai_h_camp|우르크 하이 사냥 캠프
@@ -30,9 +30,9 @@ p_town_urukhai_r_camp|우르크 하이 강변 캠프
 p_town_caras_galadhon|카라스 갈라돈
 p_town_cerin_dolen|세린 돌렌
 p_town_cerin_amroth|세린 암로스
-p_town_thranduils_halls|스란두일의 회관
-p_town_woodelf_camp|우드엘프 캠프
-p_town_woodelf_west_camp|우드엘프 서쪽 캠프
+p_town_thranduils_halls|스란두일의 회랑
+p_town_woodelf_camp|숲요정 캠프
+p_town_woodelf_west_camp|숲요정 서쪽 캠프
 p_town_woodsmen_village|숲사람 마을
 p_town_beorning_village|베오른족마을
 p_town_beorn_house|베오른의 집
@@ -57,7 +57,7 @@ p_town_goblin_north_outpost|고블린 도시
 p_town_goblin_south_outpost|고블린 남쪽 전초기지
 p_town_gundabad_m_outpost|군다바드 어둠숲 전초기지
 p_town_erebor|에레보르
-p_town_ironhill_camp| 채석장
+p_town_ironhill_camp|철산 채석장
 p_advcamp_gondor|곤도르 전진 캠프
 p_advcamp_rohan|로한 전진 캠프
 p_advcamp_isengard|이센가드 전진 캠프
@@ -88,16 +88,16 @@ p_ford_brown_lands|안두인
 p_ford_rauros|안두인
 p_ford_pelargir|안두인
 p_ford_edhellond|안두인
-p_ford_cerin_dolen|은강
+p_ford_cerin_dolen|켈레브란트
 p_old_ford|오래된 여울
 p_ford_erech|링글로
-p_ford_isen1|이센
-p_ford_isen2|이센
+p_ford_isen1|아이센
+p_ford_isen2|아이센
 p_ford_rohan|엔트워시
 p_ford_rohan2|엔트워시
 p_ford_fangorn|엔트워시
 p_ford_fangorn2|림라이트
-p_ford_moria|은강
+p_ford_moria|켈레브란트
 p_legend_amonhen|아몬 헨
 p_legend_deadmarshes|죽음의 늪
 p_legend_mirkwood|어둠숲

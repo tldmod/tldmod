@@ -15,8 +15,8 @@ str_tutorial_map1|Şu anda harita modundasınız. Seyahat etmek, kasabalara girm
 str_accept|Kabul et
 str_charge|Hücum
 str_color|Renk
-str_flip_horizontal|Yatay tersyüz et
-str_flip_vertical|Dikey tersyüz et
+str_flip_horizontal|Yatay döndür
+str_flip_vertical|Dikey döndür
 str_hold_fire|Ateşi Kes
 str_blunt_hold_fire|Bayıltıcı silahlar / Ateşi Kes
 str_tutorial_ammo_refilled|Cephane yenilendi
@@ -2173,7 +2173,7 @@ str_npc25_backstory_c|Duyduguma göre, başka yerlerde çok fazla dövüş var v
 str_npc26_backstory_c|Ben savaşcı bir Uruk-Hai'yim! İnsan öldürmekle ilgili olan ne varsa biliyorum. Eskiden Beyaz elin hizmetindeydim fakat el beni ateş çukurlarına göndermek istiyordu.^^Seninle güneyde insan avlamaya gelirim.
 str_npc27_backstory_c|Belki benim yeni ustam sen olabilirsin.
 ; str_npc18_backstory_later|I have been fortunate, I suppose, that Great Lord Lurmsakun has been occupied elsewhere. His intendants have left me here to rot. But my destiny is not to die as a prisoner! Have you come to grant me my rightful death on the battlefield?
-; str_npc19_backstory_later|Ho there! You have returned, as I knew you would. My hands are kept idle by my jealous chiefs. Let us speak, Commander! I would follow you, and fight in your ranks to win for myself renown.
+str_npc19_backstory_later|Hey, sen! Tahmin ettigim gibi geri döndün. Kıskanç beylerim tarafından ellerim boşta kalmıştır. Hadi konuşalım, komutan! Seni takip ederim ve önderliginde savaşıp kendime saygınlık kazanırım.
 ; str_npc20_backstory_later|You trouble my dreams still! Will you give me no peace? My dreaming eye sees deep and far. Here in Dol Guldur I still have visions of your works. I say this: if you were wise, you would have asked for my aid again ere now.
 str_npc21_backstory_later|Atlılar yaralı bedenleriyle geri dönüyor, yardım edebildigime yardım ediyorum. Ama hala kafeste kilitli gibi hissediyorum.
 str_npc22_backstory_later|İyi düşündün mü? Eldar için zaman daralıyor.
@@ -2183,7 +2183,7 @@ str_npc25_backstory_later|Kralımızla geçen görüşmeye gittim, sürekli kusu
 str_npc26_backstory_later|Ne yaptıgımı düşünüyorsun? Gulm burada oturuyor ve  sinsi bir yılanın onu karanlıkta sokmasını bekliyor. Beni de yanına al - Sana iyi hizmet edecegim.
 str_npc27_backstory_later|Yeniden düşündün mü? Ben iyi hizmet ederim.
 str_npc18_backstory_response_1|Eger gerçekten göründügün kadar vahşi isen, belkide benim saflarımda savaşmalısın. Seni biraz besledikten sonra tabii.
-; str_npc19_backstory_response_1|Very well. As long as you can fight in the battle line, you can be of use, Dunlending.
+str_npc19_backstory_response_1|Peki. Savaş hattında dövüşebildigin sürece işimize yararsın, Dunlending.
 str_npc20_backstory_response_1|Bana katılmak istemen oldukça garip, cadı. Ama pekala, gelebilirsin.
 str_npc21_backstory_response_1|Eger teklif ederse, Rohan'lı bayan savaşçıya yardım ederim.
 str_npc22_backstory_response_1|Sormam biraz küstahça olabilir fakat birligim, gelecek savaşlarda senin yetenegini kullanabilir.
@@ -2193,7 +2193,7 @@ str_npc25_backstory_response_1|Saglıkçıyı ve şifacıyı kullanabiliriz.
 str_npc26_backstory_response_1|Sanırım bir Berserkeri iyi kullanabiliriz.
 str_npc27_backstory_response_1|Yapıcaksın.
 str_npc18_backstory_response_2|Pah! Katil bir çukuru köpegi, benim yoldaşım olmaya uygun degil.
-; str_npc19_backstory_response_2|You talk of great deeds. Go and do some of your own, before you approach me again!
+str_npc19_backstory_response_2|Büyük kahramanlıklardan bahsedersin. Benimle bir daha görüşmeden önce biraz kendin yap!
 str_npc20_backstory_response_2|Pah! Sanırım havlamanız ısırmanızdan çok daha kötü. Yapacak işlerim var!
 str_npc21_backstory_response_2|Üzgünüm , leydim. Ama yapabilecegim hiçbir şey yok.
 str_npc22_backstory_response_2|Lothlórien daha az tehlikede oldugu zaman dönecegim.
@@ -2412,7 +2412,7 @@ str_npc24_honorific|kaptan
 str_npc25_honorific|Kumandan
 str_npc26_honorific|Usta
 str_npc27_honorific|Usta
-; str_gondor_guildmaster_companion_player_ask|By leave of the Lord of Gondor, I seek valiant confederates. Are there such in this place?
+str_gondor_guildmaster_companion_player_ask|Gondor Lordunun izni altında, mangal yürekli müttefikler arıyorum. Burada öyle bir yigit bulunur mu?
 ; str_gondor_guildmaster_companion_none|Nay, Commander. What valour we have is needed to defend our own walls. You may go to the barracks and find soldiers of courage and experience - mayhap more the former than the latter, I fear. Ever have we been traders, crafters and farmers. The finest of our soldiers go to the capital to enlist - perhaps you should try the White City.
 str_gondor_guildmaster_companion_player_none_ok|Pekala, tavsiyen için teşekkür ederim.
 str_gondor_guildmaster_player_found_ok|Size teşekkür ederim, Umarım tüm iyi insanların hüsnüniyeti sizinle olur
@@ -2425,22 +2425,22 @@ str_rohan_guildmaster_player_found_ok|Bu tavsiye iyi gibi görünüyor. Saglık 
 ; str_rohan_edoras_guildmaster_companion|Indeed, there may be. Dark indeed must the days become before our women ride out to war alongside the menfolk - yet our fearless and high-hearted Lady Eowyn, whom all love, rides and fights as well as any Marshal. Some shieldmaidens have trained with her from childhood, and several may be found around the Golden Hall. Hardy indeed are our women! Seek one called Galmyne - she is skilled in many arts of war, and goes about like a mare chafing at an ill-fitting bridle, for she has not been given leave to ride out with the men.
 str_lorien_guildmaster_companion_player_ask|Yaşlı olan, ben yardım arıyorum. Lorien elferi yaşlı kahramanlar gibi savaşırlar; Burada bana katılabilecek biri var mı ?
 str_lorien_guildmaster_companion_none|Burada bile kötülük çoktan görüldü ve işitildi, Mallorn agaçları arasında; üzüntü bilinmektedir. Biz mutlu günlerde arp iplerini kopardık, onun yerine bu günlerde yayları germe konusunda yetenekli hale geldik. İçimizdeki kahramanlar hakkında konuşamam, ama sen şuradaki garnizon komutanımızla konuşabilirsin. Belki aramızdan bazıları senin birligine katılmaya razı olur.
-; str_lorien_guildmaster_companion_player_none_ok|I had hoped for fairer words in this fair land of yours. But it shall be as you say, Elder.
-; str_lorien_guildmaster_player_found_ok|I thank you for your counsel, Elder. Tiro ven Elbereth!
+str_lorien_guildmaster_companion_player_none_ok|Bu adil diyarlarda, sizden daha adil kelimeler beklerdim. Lakin siz nasıl derseniz öyle olsun, Efendim.
+str_lorien_guildmaster_player_found_ok|Tavsiyeniz için teşekkür ederim, Efendim. Tiro ven Elbereth!
 ; str_lorien_ca_guildmaster_companion|Nan Belain, here is a wonder indeed! At any other time I might have had naught but disappointment for you, but now in the company of the Lord and Lady of the Wood stands none other than the Lord Glorfindel, hero of more battles than even I can remember. I know little of such a great champion’s purpose here - he arrived with the host of Elrond, Lord of Imladris, and his own counsel he keeps, speaking only with Lord Celeborn and Lady Galadriel. Seek him out, Commander. Perhaps his cause may be joined to yours.
 ; str_beorn_guildmaster_companion_player_ask|Your advice, good fellow - are there any warriors of remarkable prowess here?
 ; str_beorn_guildmaster_companion_none|Well, I don’t know about that. Your question isn’t very clear. What kind of “remarkable prowess” do you want that you can’t find among our garrison, I ask you? We fight with stout staves and sharp hatchets, we shoot well enough with bows. I don’t know what more you could ask for.
 str_beorn_guildmaster_companion_player_none_ok|Pekala, o halde benim için en iyisi buradan ayrılmak olacak. Sana iyi günler, korucu.
 str_beorn_guildmaster_player_found_ok|Anlıyorum. Pekala, Dimborn denen şu adam için tetikte olacagım. Sana iyi günler, korucu.
 ; str_beorn_house_guildmaster_companion|Well, now, there’s a question. I’d say any of us could fight off a goblin or warg well enough, but our chief’s nephew is stouter than most. Spends most of his time just staring at trees, though. Or at nothing in particular. More thew than thought, if you take my meaning. Still, he’s gentle with his friends but fierce to his enemies, as one should be. Walks the woods as well as any Elf, I’d say. We call him Dimborn; not to be unkind, you understand, but we like calling things and people what they are. He ought to be around here somewhere.
-; str_woodelf_guildmaster_companion_player_ask|By leave of Thranduil Elvenking, I seek champions of the Greenwood to fight in my command, Elder.
+str_woodelf_guildmaster_companion_player_ask|Büyügüm, Thranduil Elvenking'in icazetiyle, emrim altında savaşacak Greenwood şampiyonları arıyorum. 
 ; str_woodelf_guildmaster_companion_none|Indeed? Then you may ask those of our garrison, and mayhap some will be willing to follow you. But I sense your desire runs deeper than that. Do you fancy yourself a great hero, like those from Nargothrond or Gondolin of old? Our finest warriors are needed to guard against the growing shadow in Mirkwood. Take with you what soldiers we can spare, and be content.
 str_woodelf_guildmaster_companion_player_none_ok|Pekala, kadim olan. nasıl istersen.
 str_woodelf_guildmaster_player_found_ok|Tavsiyeniz için teşekkür ederim. Navaer!
 ; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit - she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands - you may speak with her. Harthon gerithach lend vaer!
-; str_dale_guildmaster_companion_player_ask|Good master, I seek stout warriors of prowess to fight beside me in this war.
+str_dale_guildmaster_companion_player_ask|Ey efendi, bu savaşta yanımda savaşacak deneyimli, yigit savaşçılar arıyorum.
 ; str_dale_guildmaster_companion_none|Well, now. Here in our town, we have always plied our trades and managed our affairs quietly, and not until recently have we had a great need for fighting men. I suppose you might ask at our barracks, and find what recruits you can from our garrison. I know of none among our captains here who would abandon his post to follow you.
-; str_dale_guildmaster_companion_player_none_ok|I will do that, good master. Farewell to you.
+str_dale_guildmaster_companion_player_none_ok|Onu yapacagım, büyük usta. Elveda.
 ; str_dale_guildmaster_player_found_ok|Oft the unbidden gift proves the best value. I will speak to Faniul. Farewell!
 ; str_dale_main_guildmaster_companion|Well, the King and his Lords have the best claim on the service of good captains. I don’t know that any of great renown are left to follow you - but are mere fighting men all you need? What about binders of wounds, versed in herblore? I know of one such - Faniul, personal healer to the King. She was midwife to my sister - and do not look askance at her age: she is of stout heart and sturdier than she looks. I warrant she’ll bear up well under the strains of travel. Why, I think I see her taking her ease over there, in this courtyard.
 str_dwarf_guildmaster_companion_player_ask|büyük usta, burada cesur savaşçılar var gibi görünüyor. Yolculuklarımda bana eşlik edebilecek herhangi biri var mı?
@@ -2453,12 +2453,12 @@ str_rhun_guildmaster_companion_player_ask|Burada kudretli savaşçılar oldugunu
 str_rhun_guildmaster_companion_player_none_ok|Ben iyi savaşçılar istiyorum ve sen bana süt kuzularını gösteriyorsun.Peh!
 str_rhun_guildmaster_player_found_ok|Bunu duymak güzel. Sonunda - ruhu olan bir savaşçı!
 ; str_rhun_maincamp_guildmaster_companion|Our greatest swordbearers and riders fight in the retinues of our warlords. But there is one who has found favour with none of our chiefs so far. Not because he is weak; far from it! He does not curb his tongue when he speaks, and he has spoken loudly against our chieftains, saying they are slow to act and over-cautious. If he had his way, I wager the countryside would be covered in flames by now. His name is Varfang, and he spends his hours training near the prisoner cages, not far from this tent.
-; str_guldur_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
+str_guldur_guildmaster_companion_player_ask|Burada tek gördügüm güvenilmez,sinsi ve muhtemelen savaşmak yerine kaçacak bir kalabalık. Savaşa uygun adamlarınız nerede?
 ; str_guldur_guildmaster_companion_none|O ho! What do we have here? A great captain, are you? I reckon your bark’s worse than your bite, and no mistake. Orders are orders: you draw your troops from our garrison here, and that’s that. Keep talking like that where they’ve got ears to hear, though, and someone will stick a knife in your back one of these days, see if they don’t.
 str_guldur_guildmaster_companion_player_none_ok|sözlerine dikkat et, senin için neyin iyi oldugunu biliyorsan tabii.
-; str_guldur_guildmaster_player_found_ok|Scared witless by this woman, are you? I’ll go see if she’s all you make her out to be. This had better not be a waste of my time!
+str_guldur_guildmaster_player_found_ok|Gafilce bu kadından korktun, öyle mi? Gidip bakacagım, bu kadın dedigin kadar varmıymış. Bu koca bir vakit kaybı olmasa iyi olur!
 ; str_guldur_main_guildmaster_companion|We’ve got stout lads aplenty, curse you. Ha… I know what you’re really after. Oh yes, indeed, I know just where you should go, Commander. See that cave over there, with steps leading down? If our boys get hurt badly enough we send them down there, and I reckon almost a third of them make it back up, har! They can do very strange things, down there… and that one in particular, the woman… she gives me the shivers, and that’s saying something. They say she’s got something to do with Number One, or even Higher Up, if you take my meaning. Talk to her, if you dare.
-; str_moria_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
+str_moria_guildmaster_companion_player_ask|Burada tek gördügüm güvenilmez,sinsi ve muhtemelen savaşmak yerine kaçacak bir kalabalık. Savaşa uygun adamlarınız nerede?
 ; str_moria_guildmaster_companion_none|Proper warriors, {she/he} says! I reckon any of our snaga could give any of your lubbers a good drubbing. We’re a tough lot, we are, and no mistake. Go speak to our barracks master - but speak with respect, mind, or you’ll not get our stout fellows to follow you. Knife you as soon as your back is turned, if you don’t speak proper.
 str_moria_guildmaster_companion_player_none_ok|Ben seninle ne kadar konuşmak istersem konuşurum. Benim saygınlıgım her zaman senin türünün üstünde!
 ; str_moria_guildmaster_player_found_ok|Garn! A sawbones, you say? Among this lot? All right, I’ll have a talk with him, but you’d better hope you aren’t telling me a crock of rubbish.
@@ -2466,25 +2466,25 @@ str_moria_guildmaster_companion_player_none_ok|Ben seninle ne kadar konuşmak is
 str_isengard_guildmaster_companion_player_ask|Savaşçı Uruk-hai hakkında şeyler duydum. Şimdiye kadar, pek etkilenmedim. Uruk-hai'lerin en güçlüsü nerede?
 ; str_isengard_guildmaster_companion_none|Leading patrols and armies of their own, no doubt - why would they lower themselves to fight under your command? They’ve got their own Orders to follow, from Higher Up. If you want fighting lads, go talk to the garrison chief! We’ve got stout fellows aplenty.
 ; str_isengard_guildmaster_companion_player_none_ok|This rabble isn’t what you make it out to be. Stout fellows? Fighting lads? Snagas aplenty, more like. Slavering swine.
-; str_isengard_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!
+str_isengard_guildmaster_player_found_ok|Eger iyi savaşırsa, onu alırım. Savaşmazsa, bir balık gibi içini temizlerim onun. Ve eger şu degersiz yalakalardan çıkarsa, dönerim ve seninle vaktimi ziyan ettigin için ödeşiriz!
 ; str_isengard_main_guildmaster_companion|A great commander you are, it is plain to see, and wisely do you choose to take only the bravest and most skilled fighters under your banner. And yet, if you will take my counsel - a battle is won not merely with iron and sinew, Commander, but with guile and foreknowledge of the foeman’s doings, his comings and goings. We have a scoutmaster here, an Orc who has sworn allegiance to Saruman the Great. I have heard that he spent many years in the Misty Mountains, catching and taming wargs. A skilled tracker and hunter is Durgash. You will find him a most useful helper, Commander. He's usually lurking around the warg pits.
 str_isengard_hunting_camp_guildmaster_companion|Oho! demek en iyi askerler basitçe senden emir alıyorlar, öyle mi? Cesur birisin, buna şüphe yok. Senin için sadece birini tanıyorum. Adı Gulm ve oldukça serttir, evet. Hiç kimsenin kafataslarına basmaktan ve tokmakla kemikleri kırmaktan bu kadar zevk aldıgını görmedim. Ve ne kadar çok düşman öldürürse o kadar zalim görünüyor. Şu an nerede oldugunu tam olarak bilmiyorum - ama kesinlikle bu kampta, bir sebepten dolayı dikkat çekmemeye çalışıyor. Ama bu sizin için uygun mu, Büyük Kumandan, grubunuza vahşi bir Uruk-hai almak?
 str_dunland_guildmaster_companion_player_ask|Demek ki bunlar Ak El'e hizmet eden Dag Adamları! Acınası... Önem verdiginiz savaşçılarınız nerede?
 str_dunland_guildmaster_companion_none|Seni takip edenler senden daha kudretli, buna şüphe yok. Eger savaşçıları istiyorsan, Egitim ustasıyla konuş. Eger itlerimizden biri sizi savaşta takip edecekse onları kendiniz görün.
-; str_dunland_guildmaster_companion_player_none_ok|Curs and whelps! It is no wonder your people were driven into the hills by the men of Rohan.
-; str_dunland_guildmaster_player_found_ok|A treacherous wolf, I would hardly keep by my side. But a tame hunting dog, I might consider. Let me see which one this Heidrek proves to be.
+str_dunland_guildmaster_companion_player_none_ok|İtler ve encikler! Halkının Rohan'lılar tarafından tepelere sürüldügüne hiç de şaşırmamalı.
+str_dunland_guildmaster_player_found_ok|Hain bir kurt, hiç de kendi tarafımda bulundurmam. Ancak, evcil bir av köpeigi, işte bunu düşünürüm. Bakalım bu Heidrek hangisi çıkacak.
 ; str_dunland_main_guildmaster_companion|Despise us at your peril! Even a wretched cur will snap at your heels in a fight. We will have our vengeance on the Forgoil and their allies - and likely it will be Heidrek whom we’ll follow into Edoras. He’s a mongrel, that one - says he’s the grandson of a strawhead king, for all that he looks no different from any of us. He’s a terror in the training yard. If Chief Daeglaf doesn’t watch his back he just might find Heidrek’s spear in it one of these days. Maybe he’ll deign to follow you, if he thinks you’re worth his time. Look for him at the main campfire, where our chieftains stand.
 str_khand_guildmaster_companion_player_ask|Burada kudretli savaşçılar oldugunu duydum. Neredeler? Kimler bana katılmaya layık?
 ; str_khand_guildmaster_companion_none|Those who have earned their death masks wish to follow commanders of still greater renown, but you may look for new recruits among our pitfighters and levies. Do not presume more than your station, Commander! 
 str_khand_guildmaster_companion_player_none_ok|Sana gerçek savaşçıları soruyorum ama sen bana kuyu katillerini ve kırma köylüleri gösteriyorsun. Zamanımı boşa harcadın!
-; str_khand_guildmaster_player_found_ok|She sounds like a killer, right enough - but can her ferocity be leashed to useful purpose? We shall have to see.
+str_khand_guildmaster_player_found_ok|Kulaga bir katil gibi gibi geliyor, bu kadarı kafi - peki onun bu vahşeti faydalı bir amaç için kullandırılabilinir mi?
 ; str_khand_main_guildmaster_companion|So you want great warriors? We have them aplenty. But let me tell you of one whose savagery even we find astonishing. Her name is Turmbathu - yes, a woman! I would not have believed it myself had I not seen her in the fighting pit with my own eyes. Defeated three men at once, and killed one of them. Unfortunate, that - the one she killed was a son of Great Lord Lurmsakun, and so now you may find her among the prisoners, awaiting a painful death… unless you, Commander, can intercede. Such a pity, to waste such strength.
-; str_umbar_guildmaster_companion_player_ask|So, the people here fancy themselves heirs of greatness, do they? Can anyone here stand proof of such claims?
+str_umbar_guildmaster_companion_player_ask|Yani bu insanlar yüceligin varisleri olduklarını düşünüyorlar, öylemi? Bu tür iddealara kanıt olacak birisi varmı burda?
 ; str_umbar_guildmaster_companion_none|You come at the wrong time, Commander. Now we’re all basking in the glory of capturing this holding, and working out the equitable distribution of its wealth - to put it another way, the captains are all at one another’s throats, heated words are being said, and it will not be long ere blood of Umbar is spilled by Umbar hands. Some of the sailors are unhappy, and may consent to follow you instead of their former captains. That’s the best I can do for you at the moment, Commander.
 str_umbar_guildmaster_companion_player_none_ok|Hayal kırıklıgı. Ama bir deniz köpeginden beklenilecek bir şey. İstedigim kaliteyi başka bir yerde arayacagım anlaşılan.
-; str_umbar_guildmaster_player_found_ok|A corsair with a code of honour! Not unheard of, but not often found. I care only that he will go where I command, and kill as I instruct.
+str_umbar_guildmaster_player_found_ok|Şeref ilkelerine sahip bir korsan! Hiçte duyulmamış degil ama pek de denk gelinmez. Sadece emrettigim yere gitmesi ve emrettigim gibi öldürmesi umrumda. 
 ; str_umbar_main_guildmaster_companion|Why, if I guess aright you seek the finest fighters among us to join your ranks. After the recent burning of our Haven, I’m afraid our best sailors and raiders follow only our most experienced captains. But I have a friend, named Fuldimir, who has been passed over for promotion too many times, to my mind. It’s that strange way of thinking he has - he will not steal, he says, from any who still draw breath. Where’s the sense in that, I ask you? Still, he is handy with a cutlass, and as tough as any hardy seafarer. Here he is, in this tent - you may speak with him.
-; str_mordor_guildmaster_companion_player_ask|So, these are the finest in the Black Land, are they? Not much to look at. Tell me who’s actually useful in a scrap.
+str_mordor_guildmaster_companion_player_ask|Yani bunlar Kara toprakların en iyileri mi şimdi? Bakacak pek bir şey yok. Söyle bana kim gerçekten dövüşte faydalı?
 ; str_mordor_guildmaster_companion_none|O ho, a mighty champion is here, I see! And of course, the mighty champion wants only the very best fighters, and no mistake! Well, well! Maybe you’ll find that some of the lads here have plans of their own, to rise high in the sight of the Eye. Maybe you’ll find Lugbúrz thinks a little better of them than of you. Won’t surprise me, ha! Why don’t you just go along to the barracks and requisition your troops like everyone else.
 str_mordor_guildmaster_companion_player_none_ok|Hah, bu hakareti hatırlayacagım, bu sözlerimi yaz. Bana iyi dönüş yap, ve bunu unutmayayım, ama bana kaba davranmaya devam edersen, bunun hakkında ne yapacagımı o zaman görürsün.
 str_mordor_guildmaster_player_found_ok|Sonunda birazda olsa şans yüzüme vurdu! İyi iş çıkardın. Katkılarını gerekli yerlere rapor edecegim.

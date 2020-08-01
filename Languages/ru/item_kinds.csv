@@ -40,12 +40,12 @@ itm_rhun_horse_e|Рунийский тяжелый конь
 itm_rhun_horse_f|Рунийский тяжелый конь
 itm_rhun_horse_g|Рунийский тяжелый конь
 itm_rhun_horse_h|Рунийский тяжелый конь
-itm_dale_horse|Рованионская лошадь
-itm_dale_warhorse|Рованионский боевой конь
+itm_dale_horse|Рованионская Лошадь
+itm_dale_warhorse|Рованионский Боевой Конь
 itm_riv_warhorse|Ривендельский боевой конь
 itm_riv_warhorse2|Ривендельский конь
 itm_mordor_warhorse|Мордорский боевой конь
-itm_mordor_warhorse2|Мордорский устрашающий конь
+itm_mordor_warhorse2|Зловещий Конь Мордора
 itm_gondor_courser|Гондорская скаковая лошадь
 itm_gondor_hunter|Гондорский гунтер
 itm_dol_amroth_warhorse|Боевой Конь Дол Амрота
@@ -68,26 +68,26 @@ itm_wargarmored_3a|Варг в броне
 itm_warg_reward|Огромный варг
 itm_tree_trunk_club_a|Ствол дерева
 itm_giant_mace|Огромная булава
-itm_troll_shield_a|Щит тролля
+itm_troll_shield_a|Щит Тролля
 itm_arrows|Стрелы
-itm_gondor_arrows|Гондорские стрелы
-itm_orc_javelin|Орочий тяжёлый дротик
-itm_khergit_arrows|Роханские стрелы
-itm_harad_arrows|Харадские стрелы
-itm_corsair_arrows|Корсарские стрелы
-itm_ithilien_arrows|Итилиэнские стрелы
-itm_woodelf_arrows|Стрелы лесных эльфов
-itm_elven_arrows|Эльфийские стрелы
-itm_orc_hook_arrow|Крючковатые орочьи стрелы
-itm_isengard_arrow|Изенгардские стрелы
-itm_leather_gloves|Кожаные перчатки
-itm_mail_mittens|Кольчужные рукавицы
-itm_leather_boots|Кожаные сапоги
+itm_gondor_arrows|Стрелы Гондора
+itm_orc_javelin|Орочья Тяжелая Сулица
+itm_khergit_arrows|Стрелы Рохана
+itm_harad_arrows|Харадские Стрелы
+itm_corsair_arrows|Умбарские Стрелы
+itm_ithilien_arrows|Стрелы Итилиэна
+itm_woodelf_arrows|Стрелы Эльфов Зеленолесья
+itm_elven_arrows|Эльфийские Стрелы
+itm_orc_hook_arrow|Крючковатые Орочьи Стрелы
+itm_isengard_arrow|Стрелы Изенгарда
+itm_leather_gloves|Кожаные Перчатки
+itm_mail_mittens|Кольчужные Рукавицы
+itm_leather_boots|Кожаные Сапоги
 itm_leather_boots_dark|Сапоги Наездника
 itm_splinted_greaves|Шинные Поножи
 itm_white_tunic_a|Городская Одежда
-itm_rohan_shoes|Кожаные ботинки
-itm_furry_boots|Меховые сапоги
+itm_rohan_shoes|Кожаные Ботинки
+itm_furry_boots|Сапоги из Шкур
 itm_black_tunic|Чёрная одежда
 itm_hood_black|Чёрный Капюшон
 itm_hood_green|Зелёный Капюшон
@@ -681,9 +681,9 @@ itm_beorn_berserk|Беорнингская одежда берсерка
 itm_beorn_chief|Беорнингская одежда вождя
 itm_beorn_helmet|Медвежий черепник
 itm_beorn_shield|Северный щит
-itm_beorn_axe|Беорнингский топор
+itm_beorn_axe|Беорнингский Топор
 itm_beorn_staff|Посох лесовика
-itm_beorn_battle_axe|Беорнингский боевой топор
+itm_beorn_battle_axe|Беорнингская Секира
 itm_dwarf_shield_a|Гномий угловой щит
 itm_dwarf_shield_b|Гномий ростовой щит
 itm_dwarf_shield_c|Гномий боевой щит
@@ -691,7 +691,7 @@ itm_dwarf_shield_d|Гномий круглый щит
 itm_north_round_shield|Северный круглый щит
 itm_woodmen_heavy|Броня Лихолесья
 itm_dwarf_sword_a|Гномий меч
-itm_dwarf_sword_b|Беорнингский короткий меч
+itm_dwarf_sword_b|Беорнингский Скрамасакс
 itm_dwarf_sword_c|Гномий меч
 itm_dwarf_sword_d|Гномий меч
 itm_dwarf_battle_axe|Гномий боевой топор
@@ -758,7 +758,7 @@ itm_mearas_reward|Жеребец-меар
 itm_shield_of_tuor|Щит Туора
 itm_riv_armor_reward|Ривендельская украшенная броня
 itm_westernesse1h_reward|Нуменорский меч
-itm_westernesse2h_reward|Нуменорский меч
+itm_westernesse2h_reward|Меч Великого Змея
 itm_mirkwood_sword_reward|Зеленолесский священный меч
 itm_nazgul_sword|Меч Назгула
 itm_cooking_cauldron|Котёл
@@ -774,7 +774,7 @@ itm_explosive_reward|Изенгардская мина
 itm_corsair_trident2|Трезубец Морского Гнева
 itm_crebain_reward|Кребайн
 itm_miruvor_reward|Фляжка мирувора
-itm_wheeled_cage|Огромная клетка на колёсах
+itm_wheeled_cage|Клетка для Пленных
 itm_orc_throwing_axes_reward|Гундабадские метательные топоры 
 itm_corsair_throwing_dagger_reward|Отравленные метательные кинжалы
 itm_dwarf_shield_reward|Щит Келед-Зарама
@@ -782,7 +782,7 @@ itm_dwarf_great_axe_reward|Гномья острая секира
 itm_isen_uruk_heavy_reward|Броня воеводы урук-хай
 itm_lorien_bow_reward|Нолдорский лук
 itm_elven_cloak|Эльфийский Плащ
-itm_dale_sword_reward|Дэйльский королевский меч
+itm_dale_sword_reward|Меч Стража Границ
 itm_dale_armor_reward|Дэйльская Кольчуга Дружинника
 itm_leather_gloves_reward|Перчатки Лучника
 itm_beorn_shield_reward|Медвежий Щит
@@ -792,7 +792,7 @@ itm_khamul_helm|Шлем Хамула
 itm_black_arrows_reward|Черные Стрелы
 itm_leather_boots_reward|Охотничьи Сапоги
 itm_rohan_armor_th|Роханская королевская броня
-itm_wilderness_amulet|Амулет дикой местности
+itm_wilderness_amulet|Амулет Древних Троп
 itm_prisoner_coll_chain|Кандалы
 itm_witchking_helmet|Ужасный шлем
 itm_lorien_royal_armor|Лориэнская королевская броня
@@ -803,6 +803,6 @@ itm_bear|Медведь
 itm_wolf|Волк
 itm_werewolf|Оборотень
 itm_thrush_reward|Дрозд
-itm_gauntlets_reward|Железный кулак
+itm_gauntlets_reward|Железные Персты
 itm_stones_siege|Осадные Камни
 itm_beorn_axe_no_attack|Беорнингская Секира

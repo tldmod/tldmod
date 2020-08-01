@@ -68,7 +68,7 @@ mno_start_go|GONDOR, o Reino da Torre Branca
 mno_start_ro|ROHAN, o povo dos Cavalos
 mno_start_du|ARNOR, a antiga dinastia dos Homens
 mno_start_be|BEORNINGS, o povo Urso
-mno_start_da|O Reino do Norte de VALE
+mno_start_da|O Reino do Norte de VALLE
 menu_start_good_elf|^^^^^^^^^^Em qual Floresta você vive, Ancião?
 mno_start_ri|VALFENDA, do Senhor Elrond
 mno_start_lo|LOTHLORIEN, da Senhora Galadriel
@@ -83,7 +83,7 @@ mno_start_la|LAMEDON, o Feudo dos Clãs da Montanha
 mno_start_pg|PINNATH GELIN, o Feudo das Colinas Verdes
 mno_start_do|DOL AMROTH, o Feudo dos Cavaleiros Cisne
 mno_start_pe|PELARGIR, o Feudo da Costa
-mno_start_bl|VALE DE BLACKROOT, o Feudo dos Arqueiros
+mno_start_bl|VALE DA RAIZ NEGRA, o Feudo dos Arqueiros
 menu_start_eye_man|^^^^^^^^^^Selecione seu povo: 
 mno_start_hr|HARADRIM, o povo do deserto do Sul
 mno_start_bn|NUMENORIANOS Negros, os renegados do Oeste
@@ -163,7 +163,7 @@ mno_strat_tweaks_influence_gain_rate|Taxa de ganho de Influência: {s7}
 mno_strat_tweaks_rank_gain_rate|Taxa de ganho de Classificação: {s7}
 mno_strat_tweaks_back|Voltar para o menu de trapaças. 
 menu_camp_action|^^^^^^^^^ Qual objeto?
-mno_camp_drink_water|Beba a Água Ente!
+mno_camp_drink_water|Beber a Entágua!
 mno_camp_action_4|Voltar.
 menu_assasins_attack_player_won|Você derrotou com sucesso os assassinos de {s2}, mandados por {s3}.
 menu_assasins_attack_player_retreat|Você escapou com vida!
@@ -185,7 +185,7 @@ mno_cageit1|Prenda e arraste-o para algum lugar.
 mno_cageit2|Prenda-o junto do outro troll.
 mno_cheat_disabable|Desativar opções de cheat/modding.
 menu_drank_ent_water_human|^^^Você bebe a água. O gosto é limpo e refrescante. Tem uma fragrância agradável, como de uma erva-almiscareira.^Você se sente refrescado.^^No entanto, você tem um sentimento estranho, desnatural. Algo diz que você nunca, nunca mais deve beber essa água novamente.
-menu_drank_ent_water_orc|^^^Você bebe a água. Ora, é apenas água.^De repente, sua garganta aperta, em um espasmo de dor.^Envenenada!^Você engasga, vomita sangue negro, você quase morre.^^Isso dói, oh, como dói.
+menu_drank_ent_water_orc|^^^Você bebe a água. Ora, é apenas água.^De repente, sua garganta aperta, em um espasmo de dor.^Envenenada!^Você engasga, vomita sangue escuro, você quase morre.^^Isso dói, oh, como dói.
 mno_i_shall_surv|Eu... preciso... sobreviver!
 menu_end_game|^^^^^A decisão está feita, e você resolve desistir de sua vida de aventuras e se estabelece. Você vende todas as suas armas e armadura, reúne todos os seus pertences e caminha em direção ao pôr do sol...
 mno_end_game_bye|Adeus.
@@ -397,14 +397,14 @@ mno_cb_gondor2|Lothlorien
 mno_cb_gondor3|Valfenda
 mno_cb_gondor4|Floresta das Trevas
 mno_cb_gondor5|Anões
-mno_cb_gondor6|Vale
+mno_cb_gondor6|Valle
 mno_cb_gondor7|Beornings
 menu_custom_battle_choose_faction3|^^^^^^^^^^Escolha a facção malígna
 mno_cb_mordor|Mordor
 mno_cb_mordor1|Isengard
 mno_cb_mordor2|Terra Parda
 mno_cb_mordor3|Haradrim
-mno_cb_mordor4|Easterlings
+mno_cb_mordor4|Orientais
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
 mno_cb_mordor7|Rhun

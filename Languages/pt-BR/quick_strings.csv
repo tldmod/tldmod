@@ -29,8 +29,8 @@ qstr_Number_of_men_knocke|Homens Inconscientes: {reg1}
 qstr_Number_of_men_left:_|Homens Restantes: {reg1}
 qstr_Opponents_Beaten:_{r|Oponentes Vencidos: {reg1}
 qstr_Opponents_Remaining:|Oponentes Restantes: {reg1}
-qstr_Gauntlet_wave:_1|Onda: 1
-qstr_Gauntlet_wave:_{reg1|Onda: {reg1}
+qstr_Gauntlet_wave:_1|Onda Exposta: 1
+qstr_Gauntlet_wave:_{reg1|Onda Exposta: {reg1}
 qstr_Remain_in_retirement|Continuar Aposentado.
 qstr_Go_back_to_the_adven|Voltar a Aventurar-se.
 qstr_A_peaceful_village_n|Uma vila pacífica não distante do Folde Oeste
@@ -217,7 +217,7 @@ qstr_+2_to_Tactics|+2 para táticas
 ; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
 ; qstr_+1_to_Spotting|+1 to Spotting
 qstr_+2_to_Athletics|+2 de Atletismo
-qstr_Less_Dunnish_upkeep|Menor Despesa com Terrapardenses
+qstr_Less_Dunnish_upkeep|Menor Despesa com Terra-pardenses
 qstr_Less_Wargs_upkeep|Menor Despesa com Wargs
 qstr_Light_Armor|Armadura Leve
 qstr_+{reg1}_to_Party_Mor|+{reg1} em Moral do Destacamento
@@ -557,7 +557,7 @@ qstr_{s30}_reinforced_by_|{s30} reforçados por {reg65} fac str
 qstr_{s1}_has_been_besieg|{s1} foi sitiada por {s2} of {s3}!
 qstr_The_forces_of_{s2}_m|As forças do {s2} estão indo para {s15}!
 qstr_Rohan_capital_moved_|A capital de Rohan foi movida de Edoras para Hornburg!
-qstr_Dale_capital_moved_f|Capital de Dale alterou-se de Dale para Esgaroth!
+qstr_Dale_capital_moved_f|Capital de Valle alterou-se de Valle para Esgaroth!
 qstr_Gundabad_capital_mov|Capital de Gundabad alterou-se de Gundabad para A Torre Goblin!
 qstr_The_hosts_of_{s2}_re|As tropas de {s2} voltaram para suas casas!
 qstr____Ruins_of_{s1}___|Ruinas de {s1}
@@ -766,7 +766,7 @@ qstr_You_receive_word_that|Você recebe a notícia de que os Líderes dos Caçad
 ; qstr_Protect_the_City!|Protect the City!
 ; qstr_Forward!_Board_them!|Forward! Board them!
 ; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
-; qstr_Reached_Gauntlet_wav|Reached Gauntlet wave {reg1}!
+qstr_Reached_Gauntlet_wav|Alcançou a onda Exposta {reg1}!
 qstr_Ballista:_out_of_amm|Balista: sem munição!
 ; qstr_Ballista:_turn_CURSO|Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fire T, exit F
 qstr_Ballista:_out_of_ammo|Balista: sem munição
@@ -1063,7 +1063,7 @@ qstr_{s2}_was_defeated!|{s2} foi derrotado!
 ; qstr_The_forces_of_{s2}_h|The forces of {s2} have regrouped and march on to {s15}!
 ; qstr_Your_scouts_have_rep|Your scouts have reported that there is a {s2} near {s3}.
 qstr_{s1}_from_{s2}|{s1} de {s2}
-qstr_When_dealing_with_lo|Ao lidar com os habitantes locais em {s11}, lembre-se de que eles não o conhecem e eles não necessariamente reconhecem os méritos que você conquistou em {s10}.^^(os Pontos de Recursos que você pode eliminar entre as pessoas de {s11 } não são os que você ganhou em {s10}, mas os que você ganhará em {s11} -- veja também a tela de relatório)
+qstr_When_dealing_with_lo|Ao lidar com os habitantes locais em {s11}, lembre-se de que eles não o conhecem e eles não necessariamente reconhecem os méritos que você conquistou em {s10}.^^(os Pontos de Recursos que você pode eliminar entre as pessoas de {s11} não são os que você ganhou em {s10}, mas os que você ganhará em {s11} -- veja também a tela de relatório)
 qstr_Info|Informação
 qstr_You_came_into_a_poss|Você entrou em uma tigela estranha e grande de água fresca. Cheira um pouco como almíscar.
 ; qstr_Obtained:_Ent_water.|Obtained: Ent water.
@@ -1118,7 +1118,7 @@ qstr_I_don_t_think_there_|Acho que não há multiplayer no TLD, mas os elefantes
 ; qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
 ; qstr_Y_NO_ChINESE??|Y NO ChINESE??
 ; qstr_Just_to_troll_you_tr|Just to troll you, troll!
-; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
+qstr_Thanks_to_our_volunt|Graças aos nossos tradutores voluntários, estão disponíveis traduções para chinês tradicional e simplificado. Mas você precisa seguir o nosso guia no Steam Workshop para usá-los.
 ; qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
 ; qstr_What_is_plate_armour|What is plate armour? Never heard of it.
 ; qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
@@ -1154,7 +1154,7 @@ qstr_King_Theoden|Rei Theoden
 ; qstr_Tell_him_I_ll_be_the|Tell him I'll be the tall one when we see each other again!
 ; qstr_Ask_if_he_s_seen_Gan|Ask if he's seen Gandalf!
 ; qstr_You_gained_250_exper|You gained 250 experience.
-qstr_Treebeard_wants_you_|Treebeard quer que você encontrar e derrotar os orcs o corte de árvores em Fangorn .
+qstr_Treebeard_wants_you_|Barbárvore quer que você encontrar e derrotar os orcs o corte de árvores em Fangorn .
 ; qstr_Something_wrong_not_e|Something wrong, not enough troops for scout party
 qstr_my_home_town|minha cidade natal
 qstr_I_am_in_perfect_heal|Estou em perfeita saúde.
@@ -1414,7 +1414,7 @@ qstr_{s9}_asked_you_to_hu|{s9} pediu para você procurar um fugitivo chamado {s4
 ; qstr_{s9}_asked_you_to_defe|{s9} asked you to defend 3 groups of refugees on their way to {s3}.
 ; qstr_{s9}_asked_you_to_hun|{s9} asked you to hunt down 3 groups of refugees on their way to {s3}.
 qstr_{s9}_asked_you_to_ca|{s9} pediu para você pegar os três grupos de escravos fugitivos e trazê-los de volta para {s4}, vivos e respirando. Ele disse que todos os três grupos estão indo em direção a {s3}.
-qstr_{s11}_asked_you_to_f|{s11} pediu para você seguir o espião que vai embora {s12}. Tenha cuidado para não deixar o espião vê-lo no caminho, ou ele pode ficar desconfiado e voltar atrás. Uma vez que o espião se encontra com seu cúmplice, você deve capturá-los e trazê-los de volta para {s11}.
+qstr_{s11}_asked_you_to_f|{s11} pediu para você seguir o espião que sairá de {s12}. Cuidado para não deixar que o espião o veja no caminho, ou ele pode ficar desconfiado e voltar atrás. Quando o espião se encontrar com seu cúmplice, você deve capturar e trazê-los de volta para {s11}.
 qstr_{s11}_asked_you_to_c|{s11} pediu para você capturar um comandante inimigo e depois trazê-lo de volta para {s11} para fazer perguntas.
 qstr_{s9}_asked_you_to_le|\n{s9}  lhe pediu para emprestar seu companheiro {s3} com ele por uma semana.
 qstr_{s9}_has_requested_y|{s9} pediu que você trouxesse {reg1} prisioneiros inimigos.
@@ -1434,7 +1434,7 @@ qstr_{s9}_asked_you_to_fr|{s9} pediu-lhe para libertar {s13} da ameaça de um Tr
 qstr_the_Dwarves_so_that_|os Anões, de modo que, se você passar por Erebor ou pelas Colinas de Ferro, você pode tentar se armar com o armamento dos Anões fabulosos.
 qstr_Gondor_so_that_if_yo|Gondor, para que se você passar por suas terras, você pode tentar comprar algumas de suas armaduras conhecidas
 qstr_Rohan_so_that_if_you|Rohan, de modo que se você passar por suas terras, você pode tentar comprar alguns de seus cavalos fabulosos
-qstr_Dale_so_that_if_you_|Dale, para que, se você passar por suas terras, você possa tentar comprar alguns de seus conhecidos arcos.
+qstr_Dale_so_that_if_you_|Valle, para que, se você passar por suas terras, você possa tentar comprar alguns de seus conhecidos arcos.
 ; qstr_Without_my_help_you_|Without my help you would all lie dead and burnt!^^ I come to answer the call of Saruman, of Isengard. Cross me at your peril!
 ; qstr_Without_my_help_you_w|Without my help you would all lie dead and burnt!^^ I come to answer the call of the Lord of Mordor, who will soon be Lord of all the World.
 ; qstr__*snort*_There_is_on| *snort* There is only one Lord of all the world, scum. Soon or late, you will answer to Lugbúrz, weakling!
@@ -1540,7 +1540,7 @@ qstr_We_will_get_rid_of_t|Vamos nos livrar dessas pestes.
 ; qstr_The_{s9}_of_{s3}_ask|The {s9} of {s3} asked you to bring him {reg5} units of food in {reg6} days.
 ; qstr_The_{s9}_of_{s3}_aske|The {s9} of {s3} asked you to bring him {reg5} units of {s6} in {reg0} days.
 qstr_Escort_the_supply_tr|Escoltar o comboio de abastecimento para {s8}.
-qstr_The_{s9}_of_{s4}_aske|O s9 {} de {s4} pediu para caçar os goblins problemáticos nos arredores da cidade.
+qstr_The_{s9}_of_{s4}_aske|O {s9} de {s4} pediu-lhe para caçar os goblins problemáticos nos arredores da cidade.
 ; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of goblins making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
 qstr_refugees|refugiados
 qstr_slaves|escravos

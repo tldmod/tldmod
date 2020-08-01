@@ -3,7 +3,7 @@ mno_start_good|새로운 시대의 시작
 mno_start_evil|인간의 황혼
 mno_faction_intros|중간계의 세력들에 대해 알아봅시다.
 mno_go_bback|돌아가기
-menu_start_phase_2|^^^^^미들 어스. 동쪽의 암운은 짙어지고,^ 암흑의 족속들은 오랜 은둔을 끝내고 나오고 있다.^ 자유민들은 그들이 이제껏 보지 못 한 전쟁을 준비하고 있다.^인간, 요정, 난쟁이 그리고 오크들은 그들의 역할을 행할것이다.^^다만, 어떠한 역할인가는 앞으로 지켜봐야 할 것이리라...
+menu_start_phase_2|^^^^^중간계. 동쪽의 암운은 짙어지고,^ 암흑의 족속들은 오랜 은둔을 끝내고 나오고 있다.^ 자유민들은 그들이 이제껏 보지 못 한 전쟁을 준비하고 있다.^인간, 요정, 난쟁이 그리고 오르크들은 그들의 역할을 행할것이다.^^다만, 어떠한 역할인가는 앞으로 지켜봐야 할 것이리라...
 mno_go_forth|당신이 선택한 길을 따라 앞으로 가십시오...
 mno_change_tld_options|제 3세계 옵션 변경
 menu_start_game_3|^^^^^^^당신의 이야기를 선택하세요:
@@ -15,7 +15,7 @@ mno_custom_battle_scenario_5|교전, 북부인 vs 룬
 mno_custom_battle_scenario_6|공성 공격, 오크 vs 난쟁이
 mno_custom_battle_scenario_7|기습, 오크 vs 어둠숲
 mno_custom_battle_scenario_8|두린 일족의 최후의 저항
-mno_custom_battle_scenario_88|오크 정찰 부대 뒤쫓는 중
+mno_custom_battle_scenario_88|오르크 정찰 부대 뒤쫓는 중
 mno_custom_battle_scenario_11|연습 전투(밸런스 조정!)
 mno_custom_battle_scenario_10|배경 연습 전투
 mno_troll_battle_scenario|연습 트롤 전투
@@ -55,12 +55,12 @@ mno_start_dw|난쟁이
 menu_start_evil|^^^^^^^^^^누구를 위해 싸우시겠습니까?
 mno_start_eye|반지의 제왕, 모르도르의 사우론.
 mno_start_hand|아이센가드, 백색의 사루만
-menu_start_eye|^^^^^^^^^당신의 주인은 경계하는 눈, 사우론 입니다.^종족을 선택하세요.
+menu_start_eye|^^^^^^^^^당신의 주인은 눈꺼풀 없는 눈, 사우론 입니다.^종족을 선택하세요.
 mno_start_or|오르크. 눈꺼풀 없는 눈을 섬기는.
-mno_start_ur|오크의 새로운 종, 우루크
+mno_start_ur|오르크의 새로운 종, 우루크
 mno_start_em|인간, 사우론에게 예속된.
 menu_start_hand|^^^^^^^^^^당신의 주인은 백색의 사루만 입니다.^종족을 선택하세요.
-mno_start_whor|사루만 휘하의 오크
+mno_start_whor|사루만 휘하의 오르크
 mno_start_isur|우루크-하이 중 하나. 아이센가드에서 길러진.
 mno_start_duma|던랜드인, 서쪽 평야의.
 menu_start_good_man|^^^^^^^^^^당신의 민족을 선택하세요:
@@ -80,7 +80,7 @@ menu_start_gondor|^^^^^^^^^^곤도르의 어느 곳에서 오셨습니까?
 mno_start_mt|수도, 미나스 티리스
 mno_start_ls|도끼병의 영토, 롯사흐나흐
 mno_start_la|산악 부족민의 영토, 라메돈
-mno_start_pg|초록언덕의 영토, 핀나스 게린
+mno_start_pg|초록언덕의 영토, 피나스 겔린
 mno_start_do|백조 기사단의 영토, 돌 암로스
 mno_start_pe|해안 영토, 펠라르기르
 mno_start_bl|궁수들의 영토, 검은뿌리 계곡
@@ -163,7 +163,7 @@ mno_strat_tweaks_influence_gain_rate|영향력 획득 비율: {s7}
 mno_strat_tweaks_rank_gain_rate|지위 획득 비율: {s7}
 mno_strat_tweaks_back|조정 메뉴로 돌아가기
 menu_camp_action|^^^^^^^^^어떤 물건을 선택하시겠습니까?
-mno_camp_drink_water|엔트물을 마시세요!
+mno_camp_drink_water|엔트워터를 마신다!
 mno_camp_action_4|돌아가기
 menu_assasins_attack_player_won|당신은 {s3}에 의해 보내진 암살자들을 {s2}에서 성공적으로 물리쳤습니다.
 menu_assasins_attack_player_retreat|당신은 목숨을 건진 채 도망쳤습니다!
@@ -173,7 +173,7 @@ mno_be_quiet|무기를 내리고 조용히 하라! 이곳을 벗어난다!
 mno_be_bold|계속 가자! 나는 식물이나 오래된 미신같은 건 두렵지 않아!
 mno_fight_back|알아봐야겠어! 이 지역을 조사하라! 나무를 한 두 그루 정도 불태워 봐!
 menu_fangorn_search_fails|^^^^^^당신은 어둡고 빽빽한 숲을 조사했지만 아무것도 찾을 수 없었습니다.^하지만 당신은 더 많은 관찰과 위협을 느꼈습니다.
-menu_fangorn_battle_debrief_won|^^^완승했다!^^^이게 팡고른 전설이 뜻하는 것이었군...
+menu_fangorn_battle_debrief_won|^^^대승이다!^^^이게 팡고른 숲을 둘러싼 전설의 정체였군...
 menu_fangorn_killed_player_only|^^^^^^당신은 빽빽한, 어두운 숲을 배회했습니다.^갑자기 당신은 무언가에 얻어맞았습니다! 아마도 묵직한 가지가 당신의 머리에 떨어진 듯 한데요?^당신은 몇분간 의식을 잃었습니다. 당신은 심하게 다쳤지만 도망칠 수 있었습니다.
 mno_ow_get_out|아야! 이 저주받은 곳에서 나가자!
 menu_fangorn_killed_troop_and_player|^^^^^^당신은 빽빽한, 어두운 숲을 배회했습니다.^^갑자기 당신은 무언가에 얻어맞았습니다! 아마도 묵직한 가지가 당신의 머리에 떨어진 듯 합니다.^^몇 분 후, 회복되었을 때, 당신은 운 좋게도 부대원 중 일부를 발견했습니다.^^
@@ -249,7 +249,7 @@ menu_besiegers_camp_with_allies|{s1}은 포위된 상태입니다. {s2}의 깃�
 mno_talk_to_siege_commander|사령관과 면담 요청
 mno_join_siege_with_allies|다음 공격에 참가
 mno_join_siege_stay_back|당신 없이 다음 전투에 참전하라고 명령
-menu_moria_must_escape|^^이 책은 모리아에 정착한 난쟁이의 마지막 시도에 대한 기록으로 보입니다. 시도에 참여한 모두는 분명히 명백한 죽음으로 끝났습니다. 책을 정독하면서, 당신은 우연히 '사실은' 이라는 단어를 발견했습니다! 당신은 페이지를 연구하다 그것들이 지하 어딘가에 난쟁이들이 숨겨둔 것에 대한 서술임을 갑자기 깨달았습니다. 하! 오래전 잃어버린 난쟁이의 미스릴이 발견된다면 끝내주지 않을까요? ^당신은 열심히 책의 지시를 따라, 바람 부는 좁은 터널 아래로 내려갔습니다...^...^수색에 몇 시간을 헛되이 보낸 후 당신은 모리아에서 길을 잃었고 나갈 길을 찾아야 한다는 것을 깨달았습니다.
+menu_moria_must_escape|^^이 책은 모리아에 정착한 난쟁이의 마지막 시도에 대한 기록으로 보입니다. 시도에 참여한 모두는 분명히 명백한 죽음으로 끝났습니다. 책을 정독하면서, 당신은 우연히 '진정한 은' 이라는 단어를 발견했습니다! 당신은 페이지를 연구하다 그것들이 지하 어딘가에 난쟁이들이 숨겨둔 것에 대한 서술임을 갑자기 깨달았습니다. 하! 오래전 잃어버린 난쟁이의 미스릴이 발견된다면 끝내주지 않을까요? ^당신은 열심히 책의 지시를 따라, 바람 부는 좁은 터널 아래로 내려갔습니다...^...^수색에 몇 시간을 헛되이 보낸 후 당신은 모리아에서 길을 잃었고 나갈 길을 찾아야 한다는 것을 깨달았습니다.
 mno_moria_exit_scene|나갈 길을 찾는다!
 menu_castle_outside|당신은 {s2}의 야외에 있습니다.{s11} {s3} {s4}
 mno_moria_enter|비밀 입구를 통해 모리아의 본관으로 돌아가기
@@ -296,8 +296,8 @@ mno_trade_with_horse_merchant|말 상인과 거래
 mno_town_prison_door|감옥에 입장
 mno_dungeon_enter|산 속에서 잃어버린 창들을 찾기
 mno_dungeon_enter_door|문 열기
-mno_dwarven_warehouse|드워프 창고 방문하기
-mno_dwarven_warehouse_door|드워프 창고에 들어가기
+mno_dwarven_warehouse|난쟁이족 창고 방문하기
+mno_dwarven_warehouse_door|난쟁이족 창고에 들어가기
 mno_talk_to_castle_commander|{s61}의 병영을 방문
 mno_speak_with_elder|{s6}와(과) 대화
 mno_isengard_underground|지하 선술집에 들어가기
@@ -322,7 +322,7 @@ menu_sneak_into_town_caught_dispersed_guards|당신은 보초들을 따돌리고
 menu_sneak_into_town_caught_ran_away|당신은 문을 통해 신속히 안전한 둔덕으로 달아났습니다.
 menu_tld_player_defeated|^^^^^갑자기 당신의 뒤통수에서 산산조각나는 듯한 고통이 폭발했습니다! \\ 당신은 떨면서, 주변 모든 세상이 까매져 가면서, 떨었습니다...^이것이 당신의 최후일까요?
 menu_recover_after_death_fangorn|당신은 일어났습니다. 숲은 아직 당신 주위에 있습니다. 모든 뼈마디가 아픕니다. 당신은 기적적으로 살아있습니다.^^패배했지만, 적어도 당신은 어떤 일이 있었는지 볼 수 있었습니다. ^이제, 당신은 이 저주받은 숲에서 무슨 일이 일어나고 있는지 알고,^당신은 살아남았다고 말합니다. ^^누가 당신 말을 믿어줄까요?
-menu_recover_after_death_moria|^^^^^당신은 의식을 회복했습니다. 당신은 부드러운 흙 위에 누워 있고, 신선한 공기가 얼굴에 사뿐히 불어옵니다. 당신은 바깥에 있습니다!^오크들은 당신이 죽은 줄 알고 어떤 어두운 구덩이 속에 던져넣었을 것입니다.^당신에게 지하의 수면이 느껴져 왔습니다.
+menu_recover_after_death_moria|^^^^^당신은 의식을 회복했습니다. 당신은 부드러운 흙 위에 누워 있고, 신선한 공기가 얼굴에 사뿐히 불어옵니다. 당신은 바깥에 있습니다!^오르크들은 당신이 죽은 줄 알고 어떤 어두운 구덩이 속에 던져넣었을 것입니다.^당신에게 지하의 수면이 느껴져 왔습니다.
 mno_whatever|일어나자!
 menu_recover_after_death_default|^^^^^당신은 의식을 회복했습니다. 당신은 쓰러진 그 자리에 누워있습니다. 당신의 적들은 당신이 죽은 줄 알고 거기 남겨두었을 것입니다. 하지만 치명적인 상처는 하나도 없었고, 비록 끔찍한 기분이 들지만 당신은 여전히 걸을 수 있을 것 같습니다.우선 일어나 당신 부대의 다른 생존자를 찾아보십시오.
 menu_recover_after_death_town|^^^^당신은 의식을 회복했고 자기가 교외에 있다는 것을 알아챘습니다. 당신은 살았습니다! 주변에 아무도 없고 당신은 마을 바깥에서 곤경을 벗어날 기회를 잡았습니다. 치명적인 상처는 하나도 없고, 비록 끔찍한 기분이 들지만 당신은 여전히 걸을 수 있을 것 같습니다.
@@ -354,7 +354,7 @@ menu_guardian_party_spawned|^^^^^전령이 {s6}이 수도를 방어하기 위한
 mno_intro_next|계속...
 mno_start_defend_caravan|캐러밴을 지키자!
 mno_start_raid_caravan|캐러밴을 습격하자!
-mno_start_ambush_orcs|오크에게 기습을 가하자!
+mno_start_ambush_orcs|오르크에게 기습을 가하자!
 mno_start_kill_scouts|정찰병들이 당신의 도착을 알리지 못하게 막자!
 mno_go_your_way|놔 둔 채로 떠나기
 mno_defend_villagers|마을 주민들을 지키자!
@@ -368,7 +368,7 @@ mno_sb_attack_the_town|저들이 요격을 시도합니다! 함대를 방어하�
 menu_camp_field_ai|^^^^^옵션을 키고 끄려면 클릭하세요.^^^하나 이상의 옵션을 끄면 성능이 향상됩니다. (FPS)
 mno_lord_field_ai|향상된 영주 AI: {s7}
 mno_horse_archer_field_ai|향상된 궁기병 AI: {s7}
-mno_vs_orcs_field_ai|궁수가 오크를 상대로 정확히 조준함 (오크의 머리 위를 조준하지 않음): {s7}
+mno_vs_orcs_field_ai|궁수가 오르크를 상대로 정확히 조준함 (오르크의 머리 위를 조준하지 않음): {s7}
 mno_battlefield_animals|바르그 / 말이 아닌 동물 동료가 전투에 참여함: {s7}
 mno_slow_when_wounded|부상을 당하면 느려집니다:  {s7}
 mno_battle_encounter_effects|어떤 세력은 전장 상황에 영향을 받습니다.(Ex 폭풍,안개):  {s7}
@@ -409,14 +409,14 @@ mno_cb_mordor5|모리아
 mno_cb_mordor6|군다바드
 mno_cb_mordor7|룬
 mno_cb_mordor8|해적
-mno_rescue_mission|어둠이 보호해줄 때 마법사의 은신처를 수색하세요.
+mno_rescue_mission|어둠이 보호해줄 때 마술사의 은신처를 수색하세요.
 mno_next_rescue_scene_door|계속 전진하라!
 mno_pick_troops1|미션을 수행할 동료를 선택하세요,[reg0}이 선택되었습니다.
 menu_pick_troops|잠입 임무에 누구를 데려갈까요? 현재 당신은 {reg0} 명을 선택했습니다. 최대 10명까지 동행할 수 있습니다.
 mno_go_forward|선택 종료 및 진행
 menu_burial_mound|당신은 {s2}의 {s1}에 접근하고 있다.   {s28}의 군세에 의해 패배한.  전사한 이들의 부러진 무기가 쌓여 있다.
 mno_pay_respects|무릎을 꿇고 경의를 표하기
-mno_swear_oath|배반의 맹세를 하라!
+mno_swear_oath|복수의 맹세를 한다!
 mno_despoil|이 장소를 훼손
 mno_leave_mound|봉분 떠나기
 menu_burial_mound_respects|당신은 무릎을 꿇어 {s1}에 경의를 표하고, 내세로의 빠른 여행을 위해 조용히 기도했습니다. 이 곳에서 수행할 행동이 더이상 남아있지 않습니다.

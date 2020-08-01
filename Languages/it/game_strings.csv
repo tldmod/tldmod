@@ -611,7 +611,7 @@ str_npc4_backstory_b|Ho avuto i miei natali in una nobile famiglia e ho servito 
 str_npc5_backstory_b|Lord Elrond mi ha inviato come emissario a Lord Celeborn, per avvisare che è richiesto il suo intervento in guerra in questa parte del Rhovanion.
 str_npc6_backstory_b|Mi piace percorrere i sentieri nascosti nella nostra splendida foresta. Alle volte passeggio tranquillamente fra gli alberi e osservo la vita dei molti animali del bosco. Il canto di un raro volatile o i rumori di un cinghiale nella sua tana, sono per me belli come il clangore delle armi o le alte mura di Edain.
 str_npc7_backstory_b|Ho collaborato al rinforzamento delle difese di Erebor e addestrato qualche giovane nano di queste zone, sotto la direzione del mio venerato padre Dwalin, com'è nella nostra tradizione.
-str_npc8_backstory_b|Ho curato il  mio Re Brand per la sua costipazione, un malessere comune che affligge gli uomini che vanno in guerra. Una leggera bevanda a base di assenzio, e sia le viscere che la mente tornano a loro agio.
+str_npc8_backstory_b|Ho curato il mio Re Brand per la sua costipazione, un malessere comune che affligge gli uomini che vanno in guerra. Una leggera bevanda a base di assenzio, e sia le viscere che la mente tornano a loro agio.
 str_npc9_backstory_b|Così mi sono detto, 'Gulm, vuoi finire come una carogna morta nel campo?' E mi sono risposto, 'No!'. Nella battaglia successiva mi sono gettato a terra fingendo di essere ferito. Poi, quando nessuno guardava, sono piombato sul mio sergente ! L'ho quasi tagliato in due, gharr ! Poi ho tagliuzzato per bene il suo secondo.. È saltato fuori che quel rettile sanguinante in qualche modo è sopravvissuto, e ha iniziato a raccontare tutto. La prossima volta mi assicurerò che la sua testa sia staccata dal collo, gharr...
 str_npc10_backstory_b|Sono un cavalca-lupi di Isengard e so seguire le tracce.
 str_npc11_backstory_b|Ahr ! È stato solo perché il mio naso era tappato. E a che cosa sarebbe servito portare il naso sulle pietre comunque ? Nar ! È stata tutta colpa di quei luridi Uruk ! Quei maledetti ladri spioni ! Ho solo perso la scia a causa del loro passaggio. Hanno confuso gli odori laggiù, rubando tutto quello che trovavano, e lasciando impronte tutto intorno al posto prima che arrivassi.
@@ -713,7 +713,7 @@ str_npc4_signup_2|Ho fatto battute di caccia molte volte con arco e giavellotto.
 str_npc5_signup_2|Forse unendomi alla tua compagnia e colpendo duro dove non se l'aspetta, il nemico sarà sbilanciato. Verrò.
 str_npc6_signup_2|Forse posso insegnarti a muoverti più rapidamente e a produrre meno rumore. Andiamo.
 str_npc7_signup_2|Se sarai in grado di tenere in riga i tipi alti nella tua compagnia, specialmente gli Elfi, sarò lieto di unirmi a voi.
-str_npc8_signup_2|Ti devo avvertire, sono abbastanza scarsa in battaglia. Ma so anche prendermi cura della mia sicurezza.
+str_npc8_signup_2|Ti devo avvertire, sono abbastanza scarsa in battaglia. Tuttavia, sono sicura che sarai in grado di proteggere una donna della mia età.
 str_npc9_signup_2|Però devi decidere rapidamente, le guardie si stanno insospettendo.
 str_npc10_signup_2|Non ti pentirai di avermi scelto.
 str_npc11_signup_2|Ci sono molte cose là fuori da odorare con il mio naso e da far assaggiare al mio coltello. Loro non lo sanno ancora, ma siamo rapidi a imparare. Che ne dici ?
@@ -1045,7 +1045,7 @@ str_comment_we_fought_in_major_battle_unfriendly_spiteful|Suppongo tu voglia bri
 str_comment_we_fought_in_major_battle_unfriendly|Non scorderò di come abbiamo combattuto insieme nella grande battaglia nei pressi di {s51}, ma non posso nemmeno dimenticare le nostre divergenze.
 str_comment_we_fought_in_major_battle_cruel|Non dimenicherò la grande battaglia nei pressi di {s51}, quando abbiamo penetrato le linee nemiche e i nostri avversari sono fuggiti urlando di fronte a noi. È un.. Dolce ricordo.
 str_comment_we_fought_in_major_battle_quarrelsome|È stato un bel combattimento quello vicino a {s51}, quando abbiamo fatto scappare quei bastardi !
-str_comment_we_fought_in_major_battle_upstanding|Non dimenticherò di quando abbiamo combattuto fianco a fianco nella grande battaglia di {s51}. Ringraziamo ancora una volta i cieli, e preghiamo di non gonfiarci troppo d'orgoglio.
+str_comment_we_fought_in_major_battle_upstanding|Non dimenticherò di quando abbiamo combattuto fianco a fianco nella grande battaglia in quel luogo... Come si chiama ? Ah si.. {s51}. Ringraziamo ancora una volta i cieli, e preghiamo di non gonfiarci troppo d'orgoglio.
 str_comment_we_fought_in_major_battle_default|Non scorderò di come ci siamo battuti fianco a fianco nella grande battaglia nei pressi di {s51}. Sono onorato di aver combattuto al tuo fianco
 str_comment_you_defeated_a_lord_allied_liege|E così hai incrociato la spada con quel mascalzone chiamato {s54}, e sei emerso vittorioso. Sono davvero felice di questo.
 str_comment_you_defeated_a_lord_allied_unfriendly_spiteful|Ho saputo che hai combattuto e sconfitto {s54}. Ogni cane ha il suo osso, suppongo..
@@ -2219,7 +2219,7 @@ str_npc21_signup_2|Ho fatto battute di caccia molte volte con arco e giavellotto
 str_npc22_signup_2|Forse unendomi alla tua compagnia e colpendo duro dove non se l'aspetta, il nemico sarà sbilanciato. Verrò.
 str_npc23_signup_2|Forse posso insegnarti a muoverti più rapidamente e a produrre meno rumore. Andiamo.
 str_npc24_signup_2|Se sarai in grado di tenere in riga i tipi alti nella tua compagnia, specialmente gli Elfi, sarò lieto di unirmi a voi.
-str_npc25_signup_2|Ti devo avvertire, sono abbastanza scarsa in battaglia. Ma so anche prendermi cura della mia sicurezza.
+str_npc25_signup_2|Ti devo avvertire, sono abbastanza scarsa in battaglia. Tuttavia, sono sicura che sarai in grado di proteggere una donna della mia età.
 str_npc26_signup_2|Però devi decidere rapidamente, le guardie si stanno insospettendo.
 str_npc27_signup_2|Non ti pentirai di avermi scelto.
 str_npc18_signup_response_1|Mi piace il tuo spirito. Molto bene, metterò una buona parola con Lurmsakun a tuo favore.

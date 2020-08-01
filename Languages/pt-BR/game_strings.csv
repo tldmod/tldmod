@@ -248,211 +248,211 @@ str_persuasion_summary_bad|Você tenta persuadir {s50}, mas {reg51?ela:ele} te c
 str_persuasion_summary_average|{s50} acaba por ser habilidoso com as palavras, alem de possuir uma mente afiada, e você não consegue pensar em nada concreto que {reg51?ela:ele} não possa rebater com um ponto racional. No fim, nenhum de vocês consegue convencer o outro.
 str_persuasion_summary_good|Através de pensamento rápido e argumentos bem colocados, você consegue expressar bem sua opinião, forçando {s50} a concordar em varios pontos. Porém, {reg51?ela:ele} ainda está em dúvida quanto ao seu pedido.
 str_persuasion_summary_very_good|Você faz um discurso apaixonado que ecoa como poesia pelos ouvidos de todos que escutam. O mundo parece se calar para ouvir você melhor. As palavras inspiradoras tocaram {s50} profundamente, e {reg51?ela:ele} parece muito mais {reg51?disposta:disposto} a te ajudar.
-; str_name_1|Adanedhel
-; str_name_2|Ondoher
-; str_name_3|Aerandir
-; str_name_4|Agarwaen
-; str_name_5|Ailinel
-; str_name_6|Aldarion
-; str_name_7|Almarian
-; str_name_8|Amandil
-; str_name_9|Amlaith
-; str_name_10|Anardil
-; str_name_11|Anborn
-; str_name_12|Andróg
+str_name_1|Adanedhel
+str_name_2|Ondoher
+str_name_3|Aerandir
+str_name_4|Agarwaen
+str_name_5|Ailinel
+str_name_6|Aldarion
+str_name_7|Almarian
+str_name_8|Amandil
+str_name_9|Amlaith
+str_name_10|Anardil
+str_name_11|Anborn
+str_name_12|Andróg
 str_name_13|Angbor
-; str_name_14|Arador
-; str_name_15|Araglas
-; str_name_16|Arahael
-; str_name_17|Arantar
-; str_name_18|Arassuil
-; str_name_19|Alcarin
-; str_name_20|Belegund
-; str_name_21|Bereg
-; str_name_22|Bergil
-; str_name_23|Borthand
-; str_name_24|Ceorl
-; str_name_25|Ciryon
-; str_name_26|Damrod
-; str_name_27|Derufin
-; str_name_28|Dorlas
-; str_name_29|Duilin
+str_name_14|Arador
+str_name_15|Araglas
+str_name_16|Arahael
+str_name_17|Arantar
+str_name_18|Arassull
+str_name_19|Alcarin
+str_name_20|Belegund
+str_name_21|Bereg
+str_name_22|Bergil
+str_name_23|Borthand
+str_name_24|Ceorl
+str_name_25|Ciryon
+str_name_26|Damrod
+str_name_27|Derufin
+str_name_28|Dorlas
+str_name_29|Duilin
 str_name_30|Duinhir
-; str_name_31|Egalmoth
-; str_name_32|Emeldir
-; str_name_33|Eradan
-; str_name_34|Erellont
-; str_name_35|Erendis
-; str_name_36|Falathar
-; str_name_37|Fengel
-; str_name_38|Forweg
-; str_name_39|Frumgar
-; str_name_40|Fuinur
-; str_name_41|Galdor
-; str_name_42|Gethron
-; str_name_43|Gorlim
-; str_name_44|Grithnir
-; str_name_45|Gundor
-; str_name_46|Hador
-; str_name_47|Haldar
-; str_name_48|Hallacar
-; str_name_49|Hathol
-; str_name_50|Herion
-; str_name_51|Hild
-; str_name_52|Hunthor
-; str_name_53|Imlach
+str_name_31|Egalmoth
+str_name_32|Emeldir
+str_name_33|Eradan
+str_name_34|Erellont
+str_name_35|Erendis
+str_name_36|Falathar
+str_name_37|Fengel
+str_name_38|Forweg
+str_name_39|Frumgar
+str_name_40|Fuinur
+str_name_41|Galdor
+str_name_42|Gethron
+str_name_43|Gorlim
+str_name_44|Grithnir
+str_name_45|Gundor
+str_name_46|Hador
+str_name_47|Haldar
+str_name_48|Hallacar
+str_name_49|Hathol
+str_name_50|Herion
+str_name_51|Hild
+str_name_52|Hunthor
+str_name_53|Imlach
 str_name_54|Ioreth
-; str_name_55|Ivorwen
-; str_name_56|Labadal
-; str_name_57|Larnach
-; str_name_58|Magor
-; str_name_59|Mairen
-; str_name_60|Malach
-; str_name_61|Malantur
-; str_name_62|Malvegil
-; str_name_63|Mardil
-; str_name_64|Meneldur
-; str_name_65|Minalcar
-; str_name_66|Minohtar
-; str_name_67|Ondoher
-; str_name_68|Orleg
-; str_name_69|Orodreth
-; str_name_70|Ostoher
-; str_name_71|Pelendur
-; str_name_72|Ragnor
-; str_name_73|Sador
-; str_name_74|Súrion
-; str_name_75|Thorongil
-; str_name_76|Turambar
-; str_name_77|Ulfast
-; str_name_78|Ulwarth
-; str_name_79|Valacar
-; str_name_80|Wulf
-; str_name_elf_1|Merlkir
-; str_name_elf_2|Romanoir
-; str_name_elf_3|Aegnor
-; str_name_elf_4|Amdír
-; str_name_elf_5|Amras
-; str_name_elf_6|Annael
-; str_name_elf_7|Aredhel
-; str_name_elf_8|Arminas
-; str_name_elf_9|Caranthir
-; str_name_elf_10|Curufin
-; str_name_elf_11|Daeron
-; str_name_elf_12|Eluchíl
-; str_name_elf_13|Edrahil
-; str_name_elf_14|Eluréd
-; str_name_elf_15|Erestor
-; str_name_elf_16|Faelivrin
-; str_name_elf_17|Finrod
-; str_name_elf_18|Felagund
-; str_name_elf_19|Galathil
-; str_name_elf_20|Galdor
-; str_name_elf_21|Gelmir
-; str_name_elf_22|Gildor
-; str_name_elf_23|Guilin
-; str_name_elf_24|Ithilbor
-; str_name_elf_25|Lindir
-; str_name_elf_26|Lómion
-; str_name_elf_27|Maedhros
-; str_name_elf_28|Maeglin
-; str_name_elf_29|Malgalad
-; str_name_elf_30|Nellas
-; str_name_elf_31|Nerdanel
-; str_name_elf_32|Nerwen
-; str_name_elf_33|Nimloth
-; str_name_elf_34|Orodreth
-; str_name_elf_35|Oropher
+str_name_55|Ivorwen
+str_name_56|Labadal
+str_name_57|Larnach
+str_name_58|Magor
+str_name_59|Mairen
+str_name_60|Malach
+str_name_61|Malantur
+str_name_62|Malvegil
+str_name_63|Mardil
+str_name_64|Meneldur
+str_name_65|Minalcar
+str_name_66|Minohtar
+str_name_67|Ondoher
+str_name_68|Orleg
+str_name_69|Orodreth
+str_name_70|Ostoher
+str_name_71|Pelendur
+str_name_72|Ragnor
+str_name_73|Sador
+str_name_74|Súrion
+str_name_75|Thorongil
+str_name_76|Turambar
+str_name_77|Ulfast
+str_name_78|Ulwarth
+str_name_79|Valacar
+str_name_80|Wulf
+str_name_elf_1|Merlkir
+str_name_elf_2|Romanoir
+str_name_elf_3|Aegnor
+str_name_elf_4|Amdír
+str_name_elf_5|Amras
+str_name_elf_6|Annael
+str_name_elf_7|Aredhel
+str_name_elf_8|Arminas
+str_name_elf_9|Caranthir
+str_name_elf_10|Curufin
+str_name_elf_11|Daeron
+str_name_elf_12|Eluchíl
+str_name_elf_13|Edrahil
+str_name_elf_14|Eluréd
+str_name_elf_15|Erestor
+str_name_elf_16|Faelivrin
+str_name_elf_17|Finrod
+str_name_elf_18|Felagund
+str_name_elf_19|Galathil
+str_name_elf_20|Galdor
+str_name_elf_21|Gelmir
+str_name_elf_22|Gildor
+str_name_elf_23|Guillin
+str_name_elf_24|Ithilbor
+str_name_elf_25|Lindir
+str_name_elf_26|Lómion
+str_name_elf_27|Maedhros
+str_name_elf_28|Maeglin
+str_name_elf_29|Malgalad
+str_name_elf_30|Nellas
+str_name_elf_31|Nerdanel
+str_name_elf_32|Nerwen
+str_name_elf_33|Nimloth
+str_name_elf_34|Orodreth
+str_name_elf_35|Oropher
 str_name_elf_36|Orophin
-; str_name_elf_37|Saeros
-; str_name_dwarf_1|Assistnik
-; str_name_dwarf_2|Vader
-; str_name_dwarf_3|Azaghâl
-; str_name_dwarf_4|Bifur
-; str_name_dwarf_5|Bofur
-; str_name_dwarf_6|Bombur
-; str_name_dwarf_7|Borin
-; str_name_dwarf_8|Dori
-; str_name_dwarf_9|Dwalin
-; str_name_dwarf_10|Farin
-; str_name_dwarf_11|Frár
-; str_name_dwarf_12|Frerin
-; str_name_dwarf_13|Frór
-; str_name_dwarf_14|Gamil
-; str_name_dwarf_15|Gróin
-; str_name_dwarf_16|Grór
-; str_name_dwarf_17|Ibun
-; str_name_dwarf_18|Khîm
-; str_name_dwarf_19|Lóni
-; str_name_dwarf_20|Mîm
-; str_name_dwarf_21|Nár
-; str_name_dwarf_22|Narvi
-; str_name_dwarf_23|Nori
-; str_name_dwarf_24|Óin
-; str_name_dwarf_25|Ori
-; str_name_dwarf_26|Telchar
-; str_name_dwarf_27|Marco
-; str_name_dwarf_28|Octo
-; str_name_orc_1|Triglav
-; str_name_orc_2|Adgulg
-; str_name_orc_3|Aghed
-; str_name_orc_4|Aguk
-; str_name_orc_5|Alog
-; str_name_orc_6|Azhug
-; str_name_orc_7|Bagdud
-; str_name_orc_8|Bargulg
-; str_name_orc_9|Bog
-; str_name_orc_10|Borug
-; str_name_orc_11|Bulgan
-; str_name_orc_12|Bumhug
-; str_name_orc_13|Carguk
-; str_name_orc_14|Dalthu
-; str_name_orc_15|Derthag
-; str_name_orc_16|Dregu
-; str_name_orc_17|Dugarod
-; str_name_orc_18|Ertguth
-; str_name_orc_19|Fandagh
-; str_name_orc_20|Farghed
-; str_name_orc_21|Fozhug
-; str_name_orc_22|Furbog
-; str_name_orc_23|Gholug
-; str_name_orc_24|Gnalurg
-; str_name_orc_25|Grug
-; str_name_orc_26|Haguk
-; str_name_orc_27|Hoknuk
-; str_name_orc_28|Igmut
-; str_name_orc_29|Jolagh
-; str_name_orc_30|Jukha
-; str_name_orc_31|Karguk
-; str_name_orc_32|Klog
-; str_name_orc_33|Krothu
-; str_name_orc_34|Kulgha
-; str_name_orc_35|Margulg
-; str_name_orc_36|Mazhug
-; str_name_orc_37|Naghat
-; str_name_orc_38|Nugbu
-; str_name_orc_39|Nurbag
-; str_name_orc_40|Oggha
-; str_name_orc_41|Olodagh
-; str_name_orc_42|Omogulg
-; str_name_orc_43|Opoguk
-; str_name_orc_44|Orgoth
-; str_name_orc_45|Perthag
-; str_name_orc_46|Pofhug
-; str_name_orc_47|Prutha
-; str_name_orc_48|Raguk
-; str_name_orc_49|Romarod
-; str_name_orc_50|Rugbu
-; str_name_orc_51|Sargulg
-; str_name_orc_52|Slog
-; str_name_orc_53|Suhgan
-; str_name_orc_54|Surgha
-; str_name_orc_55|Torug
-; str_name_orc_56|Turbag
-; str_name_orc_57|Urghat
-; str_name_orc_58|Varguk
-; str_name_orc_59|Zlog
-; str_name_orc_60|Zunuguk
+str_name_elf_37|Saeros
+str_name_dwarf_1|Assistnik
+str_name_dwarf_2|Vader
+str_name_dwarf_3|Azaghâl
+str_name_dwarf_4|Bifur
+str_name_dwarf_5|Bofur
+str_name_dwarf_6|Bombur
+str_name_dwarf_7|Borin
+str_name_dwarf_8|Dori
+str_name_dwarf_9|Dwalin
+str_name_dwarf_10|Farin
+str_name_dwarf_11|Frár
+str_name_dwarf_12|Frerin
+str_name_dwarf_13|Frór
+str_name_dwarf_14|Gamil
+str_name_dwarf_15|Gróin
+str_name_dwarf_16|Grór
+str_name_dwarf_17|Ibun
+str_name_dwarf_18|Khîm
+str_name_dwarf_19|Lóni
+str_name_dwarf_20|Mîm
+str_name_dwarf_21|Nár
+str_name_dwarf_22|Narvi
+str_name_dwarf_23|Nori
+str_name_dwarf_24|Óin
+str_name_dwarf_25|Ori
+str_name_dwarf_26|Telchar
+str_name_dwarf_27|Marco
+str_name_dwarf_28|Octo
+str_name_orc_1|Triglav
+str_name_orc_2|Adgulg
+str_name_orc_3|Aghed
+str_name_orc_4|Aguk
+str_name_orc_5|Alog
+str_name_orc_6|Azhug
+str_name_orc_7|Bagdud
+str_name_orc_8|Bargulg
+str_name_orc_9|Bog
+str_name_orc_10|Borug
+str_name_orc_11|Bulgan
+str_name_orc_12|Bumhug
+str_name_orc_13|Carguk
+str_name_orc_14|Dalthu
+str_name_orc_15|Derthag
+str_name_orc_16|Dregu
+str_name_orc_17|Dugarod
+str_name_orc_18|Ertguth
+str_name_orc_19|Fandagh
+str_name_orc_20|Farghed
+str_name_orc_21|Fozhug
+str_name_orc_22|Furbog
+str_name_orc_23|Gholug
+str_name_orc_24|Gnalurg
+str_name_orc_25|Grug
+str_name_orc_26|Haguk
+str_name_orc_27|Hoknuk
+str_name_orc_28|Igmut
+str_name_orc_29|Jolagh
+str_name_orc_30|Jukha
+str_name_orc_31|Karguk
+str_name_orc_32|Klog
+str_name_orc_33|Krothu
+str_name_orc_34|Kulgha
+str_name_orc_35|Margulg
+str_name_orc_36|Mazhug
+str_name_orc_37|Naghat
+str_name_orc_38|Nugbu
+str_name_orc_39|Nurbag
+str_name_orc_40|Oggha
+str_name_orc_41|Olodagh
+str_name_orc_42|Omogulg
+str_name_orc_43|Opoguk
+str_name_orc_44|Orgoth
+str_name_orc_45|Perthag
+str_name_orc_46|Pofhug
+str_name_orc_47|Prutha
+str_name_orc_48|Raguk
+str_name_orc_49|Romarod
+str_name_orc_50|Rugbu
+str_name_orc_51|Sargulg
+str_name_orc_52|Slog
+str_name_orc_53|Suhgan
+str_name_orc_54|Surgha
+str_name_orc_55|Torug
+str_name_orc_56|Turbag
+str_name_orc_57|Urghat
+str_name_orc_58|Varguk
+str_name_orc_59|Zlog
+str_name_orc_60|Zunuguk
 str_surname_1|{s50} de Tarnost
 str_surname_2|{s50} de Lossarnach
 str_surname_3|{s50} de Erech
@@ -597,7 +597,7 @@ str_npc7_backstory_a|Educado de você perguntar, {playername}. Estamos lutando c
 str_npc8_backstory_a|Tenho certeza que você pode encontrar alguns bons voluntários se você falar com o intendente no quartel. Quanto a mim, eu sou apenas um curandeiro e herbalista de habilidades modestas.
 str_npc9_backstory_a|Bom para você! Eles me chamam de Gulm. Esvaziei meu sargento e suas snagas agora me caçam. ^ O leitão sem valor estava chegando! Uma vez, fomos emboscados por uma patrulha de cabeças de palha ... e ele perdeu. 'Fall back' ele grita, depois foge. Apenas Gulm e alguns outros ficaram firmes e quebraram os cavalos. Então nós espancamos o cabelo amarelo em pasta (heh heh heh). Mas se não fosse por nós fortes, tudo seria comida de vermes!
 str_npc10_backstory_a|Eu sou o Durgash!
-str_npc11_backstory_a|Nar! Não é um rastreador, é quem. Eles me expulsaram! Eu digo que eles perderam a cabeça, é o que é. Maldito seja! Primeiro eles dizem que eu tiro selvagemente, então eu corro muito devagar, e então eu tenho um snuffler inútil. Garn! Se eles não encontrarem uma turba para mim, logo estarei no Black Pits, se o que eu ouço for verdade. Vou me certificar de que alguns desses Chefes percam suas peles antes de me colocar lá!
+str_npc11_backstory_a|Nar! Não um rastreador, é quem. Eles me expulsaram! Eu digo que eles perderam a cabeça, é isso que é. Maldito seja! Primeiro eles dizem que eu atiro selvagem, depois corro muito devagar e depois tenho um fungar inútil. Garn! Se eles não encontrarem uma ralé para mim em breve, estarei nos Fossos Negros, se o que ouvi for verdade. Vou garantir que alguns desses chefes percam a pele antes que me colocar lá!
 str_npc12_backstory_a|Eu estou no comando de um bando de rapazes aqui em cima. Eu sou o Gorbag ​​e é melhor você aprender rápido nos usar. Uruks são os verdadeiros chefes por aqui. Os chefões fazem escorregões, até mesmo os maiores podem cometer erros, e sempre os pobres Uruks para fazer as coisas certas, e pequenos agradecimentos. Eles nem sequer nos dizem tudo o que sabem, sabem? Não pela metade. Grr!
 str_npc13_backstory_a|EU? Eu sou um grão de terra das areias do sul, soprado para o norte pelos ventos frios e escuros da noite. Eu sou Lykyada, um Senhor da Serpente de Haradwaith. Senhor da Serpente de Ouro, a perdição da Tribo da Serpente Negra, agora aliada para servir a vontade do Senhor das Trevas.
 str_npc14_backstory_a|Eu sou Fuldimir, filho do reino do sul de Umbar, ao sul de Harondor, e da baía de Belfalas, pois ambos são o lar do meu coração e do meu povo. Nós somos os senhores do mar e da vela, corsários para alguns, parentes da Baía de Belfalas para suas águas que domamos.
@@ -659,9 +659,9 @@ str_npc1_backstory_response_1|Se você conseguir sair, eu preciso muito de um gu
 str_npc2_backstory_response_1|Você está certo, eu estou procurando por voluntários.
 str_npc3_backstory_response_1|Se você pode fazer sem ale, eu gostaria de um bom cavaleiro.
 str_npc4_backstory_response_1|Gostaria de receber a ajuda de uma escrava Rohan, se oferecida.
-str_npc5_backstory_response_1|Pode ser meio presunçoso de mim perguntar, mas minha companhia poderia utilizar de sua habilidade nas próximas batalhas.
+str_npc5_backstory_response_1|Pode ser meio presunçoso de mim perguntar, mas minha companhia poderia dispor de sua habilidade nas próximas batalhas.
 str_npc6_backstory_response_1|Nós viajamos pelo mundo, mas para defender tudo o que é justo, damos batalha ao inimigo.
-str_npc7_backstory_response_1|Na verdade, um guerreiro anão seria bem vindo na minha empresa.
+str_npc7_backstory_response_1|Na verdade, um anão guerreiro seria bem vindo na minha companhia.
 str_npc8_backstory_response_1|Podemos usar um curandeiro e um herbalist.
 str_npc9_backstory_response_1|Eu acho que podemos colocar um berserker para uma boa utilidade.
 str_npc10_backstory_response_1|Você fará.
@@ -690,7 +690,7 @@ str_npc15_backstory_response_2|Bah! Eu preciso de lutadores, não skulkers.
 str_npc16_backstory_response_2|Eu já tive o bastante disso.
 str_npc17_backstory_response_2|Não me desculpe. Nós vamos à guerra, não a uma viagem botânica.
 str_npc1_signup|Estou certo de que o capitão Faramir entenderia que há outros que podem manter o Inimigo à varanda com ainda mais valor e coragem.
-str_npc2_signup|Oh, um dia feliz! Eu ficaria feliz em participar da sua empresa.
+str_npc2_signup|Oh, um dia feliz! Eu ficaria muito feliz em participar da sua companhia.
 str_npc3_signup|Confie em mim, comandante, toda a cerveja que eu preciso é a bebida doce da vitória. Se você pode me liderar contra o inimigo, eles logo sentirão o fim comercial de uma lança Rohirrim!
 str_npc4_signup|É oferecido com prazer, e você pode me receber para sua companhia, comandante.
 str_npc5_signup|Entendo. Eu admito ter ouvido falar de você e suas façanhas.
@@ -1065,7 +1065,7 @@ str_comment_we_were_defeated_unfriendly|A última vez que te vi, você foi ating
 str_comment_we_were_defeated_cruel|A última vez que te vi, você foi atingido pelos homens de {s54}. Não se preocupe - vamos encontrá-lo e fazê-lo sufocar com sua vitória.
 str_comment_we_were_defeated_default|A última vez que te vi, você foi atingido pelos homens de {s54}. É bom vê-lo vivo e bem.
 str_comment_you_were_defeated_allied_friendly_spiteful|Ouvi dizer que {s54} lhe deu um tempo difícil. Não se preocupe, amigo - eu vou encontrá-lo para você e fazer de você um presente da cabeça dele."; str_comment_you_were_defeated_allied_unfriendly_cruel  = "I had heard that {s54} slaughtered your men like sheep. But here you are, alive. Such a disappointment!
-; str_comment_you_were_defeated_allied_unfriendly_cruel|I had heard that {s54} slaughtered your men like sheep. But here you are, alive. Such a disappointment!
+str_comment_you_were_defeated_allied_unfriendly_cruel|Ouvi dizer que {s54} mataram seus homens como ovelhas. Mas aqui está você, vivo. Que decepção!
 str_comment_you_were_defeated_allied_spiteful|Ouvi dizer que {s54} esmagou você como uma formiga. Hah! As crianças não devem brincar de adultos, menininha!
 str_comment_you_were_defeated_allied_pitiless|Ouvi dizer que {s54} o derrotou e espalhei suas forças. Isso é muito decepcionante ...
 str_comment_you_were_defeated_allied_unfriendly_upstanding|Ouvi dizer que {s54} o derrotou. Talvez você deva considerar se considerou algum crime, que pode fazer com que o céu o repreenda dessa maneira.
@@ -1247,7 +1247,7 @@ str_rebellion_prior_argument_favorable|Eu já ouvi alguns argumentos para apoiar
 str_rebellion_prior_argument_unfavorable|Eu já ouvi alguns argumentos para apoiar seu candidato ao trono, mas não os acho convincentes.
 str_rebellion_prior_argument_very_unfavorable|Eu já ouvi alguns argumentos para apoiar seu candidato ao trono, mas eu discordo da maioria deles.
 str_rebellion_rival_default|[liege]
-; str_rebellion_rival_martial|{s49} your ally {s44} once questioned my honour and my bravery. It's not often I get the chance to face him in battle, and make him retract his statement.
+str_rebellion_rival_martial|{s49} seu aliado {s44} uma vez questionou minha honra e minha bravura. Não é sempre que tenho a chance de enfrentá-lo na batalha e fazê-lo retratar sua declaração.
 str_rebellion_rival_quarrelsome|{s49} você está trabalhando com {s44}. Ele é uma doninha astuta, e eu não confio nele nem um pouco.
 str_rebellion_rival_pitiless|{s49} você parece ter alistado o apoio de {s44} - que é mole, fraco e que não é adequado para governar um feudo, e que eu sempre detestei.
 str_rebellion_rival_cunning|{s49} {s44}, que já se juntou a você, é teimoso e briguento, e um pouco de responsabilidade.
@@ -1357,7 +1357,7 @@ str_subfaction_gondor_name2|Dol Amroth
 str_subfaction_gondor_name3|Lamedon
 str_subfaction_gondor_name4|Lossarnach
 str_subfaction_gondor_name5|Pinnath Gelin
-str_subfaction_gondor_name6|Vale Raíz Negra
+str_subfaction_gondor_name6|Vale da Raiz Negra
 str_subfaction_gondor_name7|Ithilien
 str_default_rumor|A guerra. Todos estão falando sobre a guerra.
 str_rohan_rumor_begin|Meu coração se parte em ver meus bebês irem para guerra! Mas sem eles os homens teriam que andar.
@@ -1711,7 +1711,7 @@ str_harad_rank_2|Guerreiro da Tribo
 str_harad_rank_3|Matador de Leões
 str_harad_rank_4|Encantador de Serpentes
 str_harad_rank_5|Cuidador de Mumakil
-str_harad_rank_6|Guarda Serpent Negra
+str_harad_rank_6|Guarda Serpente Negra
 str_harad_rank_7|Capitão de Harondor
 str_harad_rank_8|General do Grande Deserto
 str_harad_rank_9|Serpente Dourada
@@ -1898,7 +1898,7 @@ str_trait_title_oathkeeper|Jurador
 str_trait_desc_oathkeeper|Você fez juramentos sombrios e viveu para vê-los cumpridos. Posteriormente, você adquiriu uma reputação como homem de sua palavra. Você recebe um bônus de influência semanal.
 str_trait_title_oathbreaker|Jurador
 str_trait_desc_oathbreaker|Você prestou juramentos desagradáveis e não conseguiu cumpri-los até a conclusão. Posteriormente, adquiriu uma reputação de homem cuja paixão supera suas proezas. Você recebe uma penalidade semanal por influência.
-str_trait_title_orc_pit_champion|Orc Pit Champion
+str_trait_title_orc_pit_champion|Orc do Poço Campeão
 str_trait_desc_orc_pit_champion|Você se tornou conhecido como um guerreiro brutal que foi capaz de sobreviver aos mais cruéis dos concursos de luta orcs. Essa força é respeitada e temida pelos seus seguidores de coração negro e agora recebem um bônus semanal de moral.
 str_trait_title_despoiler|Despoiler
 str_trait_desc_despoiler|Você adquiriu uma reputação de deixar para trás a destruição arbitrária onde quer que viaje. Esse comportamento é valorizado pelos poderes das trevas que você serve e recebe um bônus de influência semanal.
@@ -2036,9 +2036,9 @@ str_gondor_intro|^ É um pensamento amargo que um herói deste grande reino morr
 str_dwarf_intro|^O Reino sob à Montanha tem prosperado, disso não há discussão. O velho Rei Dáin acabou de passar pelo seu ducentésimo e quinquagésimo ano, e por qualquer medida ele é fabulosamente abastado. Sob seu governo, Erebor prospera, e vive grandeza. Os canais, fontes e lagoas da vizinha Valle testemunha de como os seus construtores ultrapassaram a habilidade de até mesmo seus ancestrais, porém os segredos do trabalho de metal deles tem lamentavelmente sido perdidos.^^Ainda mais que uma escuridão de Mordor tem entrado nesses salões, quando o enviado sujo de Sauron, com seu bafo como o sibilo de serpentes, veio trazendo palavras malignas. Pesado tem sido os corações de seus chefes desde então, pois o poder que reentrou Mordor não mudou. A Sombra cresce e se aproxima - o Inimigo já está se movendo, e a guerra logo se iniciará.^^Você jurou erguer suas armas, e resistir com seus amigos contra seus inimigos. Você resistirá, com ou sem esperança.^^Mas se a bravura dos Anões de Erebor provar insuficiente, então a glória do povo de Durin sumirá e será esquecida. Tudo cairá perante a Sombra.
 str_rohan_intro|^ Nestes dias de dúvida, uma coisa que você sabe ser verdadeira: a guerra aberta está diante do orgulhoso povo de Rohan. Ninguém pode viver agora como viveu, e poucos devem manter o que chamam de seu. orelha do Rei falar conselhos Craven, mas de ter determinado a ir com ele, fazer um juramento sinistro de serviço, e ficar com esses capitães e thanes como irão proteger o rebanho e herdfolk. ^^ Saruman de Isengard declarou senhorio sobre cruéis-handed as terras de Rohan, e amarga é a luta com os orcs, os cavaleiros do lobo e os homens malígnos da Terra Parda. O Senhor da Terra Negra, a leste, envia grupos de assalto para roubar seus cavalos, escolhendo sempre os negros. , pois parece a você que os inimigos cercam seu povo, tanto no leste quanto no oeste. ^^ Mas você ainda lutará, pois se algo é dito dos Rohirrim, é do seu valor infalível nas armas, embora o inimigo deva menosprezá-lo, ou fogo cercar você. os cavalos de Rohan vai a passos largos como o vento na parte da manhã. E se a morte vier para você, um monte será levantado, mas, por enquanto, a guerra o chama. Que o cavalo seja travado, que a buzina soe! ^^ No entanto, se mesmo a coragem dos Filhos e Filhas de Eorl falhar, a última esperança de Rohan desaparecerá e desaparecerá. A buzina não tocará mais. Tudo cairá sob a sombra. 
 str_mordor_intro|^O poder das trevas sobe novamente no Oriente. O número de legiões do Senhor do Escuro aumenta - homens pascais vêm para servir e prestar homenagem, renegados de olhos vazios do antigo Numenor desejando uma chance de recuperar o que seus ancestrais perderam, grandes anfitriões de orcs e urks escravizando-se com o pensamento de guerra e matança. As canetas estão cheias de ferozes e terríveis avisos. E bem acima, nos céus negros, voam o Nazgûl alado ... a maçã do Grande Olho, com poder além do alcance de seus sonhos enlameados. ^^ Você resolveu subir nas classificações, de qualquer maneira, e ganhar o favor de Lugbúrz. Pela inteligência, resistência e habilidade implacável na batalha, você esmagará todos os que estiverem no seu caminho. a favor do Senhor do Escuro de Mordor, aquele que deve governar tudo após esta guerra vindoura ... ou você morrerá tentando. ^^ A luz do Ocidente será apagada. Chegou a hora de Mordor! 
-; str_isengard_intro|^A new power is rising, and you are part of that power. You march and fight under the banner of the White Hand, and your allegiance is sworn to crafty old Saruman the Great, wise and cunning, who gives you the tasty flesh of man and horse to eat.^^Under his banner march the fighting Uruk-hai. They are slayers of great warriors, winners of battles. Their armour is thick and their shields broad. You will make a name for yourself among your fellows, and hew down many Whiteskins. You will not stop, by sun or moon, by fair weather or storm, until your enemies lie dead and broken.^^The skill of Saruman is great. With it, you will throw down the power of the horse people, and their weak allies; yes, even elf-flesh will be yours to feast upon. Their villages and forests will burn, and their cities too. And then… who is to say if the maggots and apes of Lugbúrz will not defer to the mighty ones of Orthanc, eh? The strong command. The weak will serve.^^The Age of Man is ending. The time of Isengard has come!
-; str_lorien_intro|^It is the custom of your people, the Galadhrim of Laurelindórenan, to dwell in the treetops. The great trees of mighty girth bear leaves of gold and blossoms of yellow, and by the waters of the Nimrodel one may find restful sleep and forgetfulness of grief; but in these darkening days none may long forget the Shadow that hovers near, pressing in from the east, from the dark land of Mordor and nearer still.^^For many a long year, your kin of Lothlórien have had few dealings with other folk. Indeed in nothing is the power of the Dark Lord more clearly shown than in the estrangement that divides those who still oppose him. Yet you are one of those who can perceive that to keep living thus, an island amid many perils, will bring only despair. Some there are among you who sing that the Shadow will draw back, and peace shall come again; and though the world can never be as it was of old, yet will you take up sword and bow, and play your part in the War to come, to defend not only the Dreamflower that you love, but perhaps lands beyond, that will otherwise fall to evil.^^For if the old friendships are not renewed, and thought is taken only to fight the long defeat, then shall the last light of Lórien go out forevermore. All will fall beneath the Shadow.
-; str_imladris_intro|^Alas, for these latter days of grieving memory! In Imladris, the homely house of Elrond Halfelven, one may recall somewhat of the glory and splendour of Eregion in the Elder Days. But the world will never again be as it was of old.^^The fields of Eriador, though lovely to behold, are tilled no more by the hands of Men. The Dúnedain, much diminished in number after the breaking of Arnor, keep their lonely vigils in the desolate wilderness of the North. And the days of Gil-Galad are forever gone, for the Firstborn decrease, and go into the west, while the blood of ancient Númenor dwindles and the race of Westernesse decays.^^Though Rivendell remains a place of sanctuary, the days darken in all the lands around.^^A last rallying call has gone forth, and a great host from Imladris - perhaps the last such in all the Ages of the world - shall march. You are part of this host, and though you will do your duty as instructed by the wise and the great, your heart is not without misgivings. Neither in Imladris, nor in the Grey Havens, nor even in Lórien the Golden Wood, is there strength to withstand the full might of the Enemy, should it come assailing when all else is overthrown.^^Yet a slim hope remains: if the old friendships can be renewed, and all who stand against evil join strength against the common foe, some time may yet be won, so that the final end of the menace of Mordor may yet be sought.^^But if the old alliances should fail, and old friends come to ruin, then nothing shall be left but the days of lengthening darkness, before true Night comes. All will fall beneath the Shadow.
+str_isengard_intro|^Um novo poder está subindo e você faz parte desse poder. Você marcha e luta sob a bandeira da Mão Branca, e sua lealdade é jurada ao ardiloso Saruman, o Grande, sábio e astuto, que lhe dá a carne saborosa de homem e cavalo para comer. ^^Sob sua bandeira, marcham os lutadores Uruk-hai. Eles são matadores de grandes guerreiros, vencedores de batalhas. Suas armaduras são grossas e seus escudos largos. Você fará um nome para si mesmo entre seus companheiros e cortará muitos peles brancas. Você não vai parar, pelo sol ou pela lua, pelo bom tempo ou tempestade, até que seus inimigos estejam mortos e destruídos. ^^A habilidade de Saruman é desmedida. Com isso, você derrubará o poder do povo cavalo e de seus aliados fracos; sim, até a carne de elfo será sua para deleitar. Suas aldeias e florestas queimarão, e suas cidades também. E então... quem diria se os vermes e primatas de Lugbúrz não se importariam com os poderosos de Orthanc, hein? O forte comanda. Os fracos servirão. ^^A Era do Homem está terminando. Chegou a hora de Isengard!
+str_lorien_intro|^É costume de seu povo, os Galadhrim de Laurelindórenan, morar nas copas das árvores. As grandes árvores de largos perímetros trazem folhas de ouro e flores amarelas, e pelas águas do Nimrodel podemos encontrar sono repousante e esquecimento da dor; mas nesses dias escuros, ninguém consegue esquecer a Sombra que paira aos céus, pressionando do leste, da terra escura de Mordor que se aproxima ainda mais. ^^Por muitos anos, seus parentes de Lothlórien tiveram poucas relações com outras pessoas. De fato, em nada se mostra mais claramente o poder do Senhor do Escuro do que no afastamento que divide aqueles que ainda se opõem a ele. No entanto, você é um dos que podem perceber que continuar vivendo assim, numa ilha em meio a tanto caos, trará apenas desespero. Alguns dentre vocês cantam que a Sombra recuará e a paz voltará; e, embora o mundo nunca mais possa ser como antigamente, você assumirá a espada e o arco e fará sua parte na guerra que virá, para defender não apenas a Flor dos Sonhos que você ama, mas talvez terras além, que de outra forma cairão no mal. ^^Pois, se as velhas amizades não são renovadas e o pensamento é levado apenas para combater a longa derrota, a última luz de Lórien se apagará para sempre. Tudo cairá sob a Sombra.
+str_imladris_intro|^Tristeza, por estes últimos dias de luto! Em Imladris, a casa rústica de Elrond Halfelven, pode-se lembrar um pouco da glória e esplendor de Eregion nos Dias Antigos. Mas o mundo nunca mais será como antigamente. ^^Os campos de Eriador, embora adoráveis ​​de se ver, não são cultivados mais pelas mãos dos Homens. Os arnorianos, em número muito reduzido após o rompimento de Arnor, mantêm suas vigílias solitárias no deserto desolado do norte. E os dias de Gil-Galad se foram para sempre, pois os Primogênitos diminuem e vão para o oeste, enquanto o sangue dos antigos Númenor diminui e a raça Ponente decai. ^^Embora Rivendell continue sendo um local de santuário, os dias escurecem em todas as terras ao redor. ^^Uma última convocação ocorreu, um grande exército de Imladris - talvez o último em todas as idades do mundo - marchará. Você faz parte deste exército e, embora cumpra seu dever conforme instruído pelos sábios e pelos grandes, seu coração não deixa de ter dúvidas. Nem em Imladris, nem nos Portos Cinzentos, nem mesmo em Lórien, o Bosque Dourado, há força para suportar todo o poder do Inimigo, caso venha a atacar quando todo o resto for derrubado. ^^No entanto, uma pequena esperança permanece: se as velhas amizades podem ser renovadas, e todos os que se opõem ao mal juntarem forças contra o inimigo comum, ainda pode ser ganho algum tempo, para que o fim final da ameaça de Mordor ainda possa ser procurado. ^^Mas se as antigas alianças falharem, e os velhos amigos se arruinarem, então nada restará senão os dias de escuridão prolongada, antes que a verdadeira Noite chegue. Tudo cairá sob a Sombra.
 str_woodelf_intro|^Uma sombra paira sobre o Reino da Floresta, um veneno se espalha pelo ar vindo de Dol Guldur. O Senhor de Mordor retornou para sua torre sombria, e seus tenentes em Dol Guldur trnasformaram muito da Floresta Verde a Grande, Eryn Galen, em lugares de grande medo, onde mesmo seus povo, os Elfos Silvestres do norte, não ousam ir livremente.^^Thranduil filho de Oropher lidera seu povo, mas tem sido cauteloso em sua política - recente é o pesar de Dagorlad, talvez, para sua memória. Ainda mais, agora que os homens de Valle são ameaçados pela guerra que está por vir, seu rei se despertou. Sempre ele olha para o sul com uma grande sombra em seu coração, e por muito ele demorará antes de liderar seu povo para a ruína, mas o dia da decisão está sobre ele.^^Com lança e lâmina e arco, você defenderá as fronteiras do seu reino ao comando do seu rei - e se necessário, você está decidido a ajudar aquele que se coloca contra o inimigo comum ao lado dos Elfos da Floresta das Trevas.^^Pois medo toca em seu coração, assim como em muitos dos seus companheiros, pois se as velhas amizades não se renovarem, e antigos aliados encontrarem a ruína, então a Floresta das Trevas será escurecida para sempre. Tudo cairá perante a Sombra.
 str_dale_intro|^Por três gerações de homens, o Reino de Valle tem prosperado. O Rei Brand, neto de Bard o Arqueiro, governa justamente, e o comércio tem enriquecido o reino.^^Mas inimigos agora invadem, se reunindo através da fronteira leste - turbulentos, conflituosos nômades, dos quais a língua é díficil e a confiança é pior ainda. Brinquedos e sinos e belas bonecas devem ser postos de lado, para a lança e o arco e o resoluto escudo. Árvores devem cortadas não para muros de um novo assentamento, mas para aljavas e flechas para as preencher. Homens jovens não vão para os campos ou para colher orquídeas , mas para quartéis, para a guerra para um crepúsculo vermelho.^^Ainda Valle tem leais aliados: os Anões da Montanha Solitária, que a alvenaria decora todas as ruas de Valle. E, também, os Elfos da Floresta das Trevas que tiveram um tráfego com o seu povo, para o bem de todos. Os robustos Beornings do forte do Vau mantém as rotas de comércio seguras e abertas. Nesses dias sombrios, todos que rejeitam a soberania de Mordor devem lutar juntos, ou ser isoladamente fatiados como talos trigo nos campos.^^Você está decido a fazer sua parte, pois se os resolutos defensores de Valle falharem, então a linhagem de Bard acabara, e o último reino dos Homens no norte será dizimado. Tudo cairá perante a Sombra.
 ; str_harad_intro|^From the deep deserts, the thick jungles and the sun-soaked riverlands, we have come. Let the people of Gondor stand in awe of us, and make submission.^^They have said that the lands south of the river Poros are theirs by ancient right, and they therefore call it Harondor, “South Gondor”, and call us invaders. This their claim, we have not understood. Was it not in the time of the Plague that the Great Serpent made his will known in driving the Gondorians out by death and illness, and allowed our forefathers to settle there and grow in numbers? How could any men, without the blessings of the Powers and merely from their own strength, claim this land? Did our ancestors not live here, when theirs died or left?^^Furthermore, they have said that in times long past they first gave us crafts and the skill of growing food upon the land; therefore we should become as vassals unto them. This, too, we have not understood, for well our learned men remember the days of their king Tar-Ciryatan and those after him who took from our people much tribute, and plundered for themselves the richest treasures of our lands. And when they behave arrogantly, saying, “Be grateful, and pay tribute to the Steward of Gondor,” having no king for many long years by reason of immense foolishness, how do they dare to press their claims upon us?^^We like not the company of foul orcs, and the Dark Sorcerer demands great sacrifice. Many young men and women we have given up to him, in the Dark Land, and still he wants more. Yet, with his power and aid, all the lands from the rising of the sun to its setting shall come to us, and we shall own them.^^The Age of Gondor is ending. Let battle be joined!
@@ -2188,7 +2188,7 @@ str_npc27_backstory_later|Você reconsiderou? Eu lhe servirei bem.
 str_npc21_backstory_response_1|Gostaria de receber a ajuda de uma escrava Rohan, se oferecida.
 str_npc22_backstory_response_1|Pode ser presunçoso de mim perguntar, mas minha companhia poderia dispor de sua habilidade nas próximas batalhas.
 str_npc23_backstory_response_1|Nós viajamos pelo mundo, mas para defender tudo o que é justo, damos batalha ao inimigo.
-str_npc24_backstory_response_1|Na verdade, um guerreiro anão seria bem vindo na minha empresa.
+str_npc24_backstory_response_1|Na verdade, um anão guerreiro seria bem vindo na minha companhia.
 str_npc25_backstory_response_1|Podemos usar um curandeiro e um herbalist.
 str_npc26_backstory_response_1|Eu acho que podemos colocar um berserker para uma boa utilidade.
 str_npc27_backstory_response_1|Você fará.
@@ -2353,7 +2353,7 @@ str_npc25_retirement_speech|Estou ficando um pouco cansado da vida de guerreiro,
 str_npc26_retirement_speech|Estou ficando um pouco cansado da vida de guerreiro, vou me aposentar.
 str_npc27_retirement_speech|Estou ficando um pouco cansado da vida de guerreiro, vou me aposentar.
 ; str_npc18_rehire_speech|My blade yet thirsts for blood, Great One. Let me come with you again!
-; str_npc19_rehire_speech|It is good to see you again, Commander. Give me leave to rejoin your company.
+str_npc19_rehire_speech|É bom vê-lo novamente, comandante. Permita-me voltar para sua companhia.
 ; str_npc20_rehire_speech|Let us be off, Commander. This war will not be won with idleness!
 str_npc21_rehire_speech|Bem vindo novamente. Devemos continuar onde paramos?
 str_npc22_rehire_speech|É bom ver você, {player name}. Vamos viajar juntos novamente.
@@ -2399,7 +2399,7 @@ str_npc21_home_recap|Não acho divertido que você esqueça tão facilmente.
 str_npc22_home_recap|Eu vou satisfazer sua curiosidade, mas não vamos demorar.
 str_npc23_home_recap|Sou nascido e criado na Floresta das Trevas, um Elfo Silvestre. Nossas habilidades com o artesanato são conhecidas por todos.
 str_npc24_home_recap|Sou o filho de Dwalin do povo de Durin.
-str_npc25_home_recap|Sou um curandeira e herbalista do Vale.
+str_npc25_home_recap|Sou uma curandeira e herborista do Valle.
 str_npc26_home_recap|Gulm vai falar se quer saber. Mas falar não mata inimigos.
 str_npc27_home_recap|Vou resumir.
 str_npc18_honorific|Grande
