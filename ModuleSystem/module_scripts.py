@@ -771,11 +771,11 @@ scripts = [
 			(assign, ":wounded",1),
 		(try_end),
 
-		(assign, ":perc", 80), # base: 80 percent
-		(try_begin),(eq,":origin",0), (assign, ":perc", 70), (try_end), # from map: 70%
-		(try_begin),(eq,":origin",1), (assign, ":perc", 80), (try_end), # to city garrison: 80%
-		(try_begin),(eq,":origin",2), (assign, ":perc", 90), (try_end), # to war party: 90%
-		(try_begin),(eq,":wounded",1),(val_sub,":perc", 30), (try_end), # if wounded: -30%
+		(assign, ":perc", 40), # base: 80 percent #InVain: Halved all values, because script_game_get_join_cost changed to exponential growth (with troop level)
+		(try_begin),(eq,":origin",0), (assign, ":perc", 35), (try_end), # from map: 70%
+		(try_begin),(eq,":origin",1), (assign, ":perc", 40), (try_end), # to city garrison: 80%
+		(try_begin),(eq,":origin",2), (assign, ":perc", 45), (try_end), # to war party: 90%
+		(try_begin),(eq,":wounded",1),(val_sub,":perc", 15), (try_end), # if wounded: -30%
 		
 		(call_script, "script_game_get_join_cost", ":troop_id"),
 		(val_mul, reg0, ":perc"), 

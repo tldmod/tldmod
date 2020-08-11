@@ -12713,13 +12713,27 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
      (eq,"$tld_war_began",0),],
 "We haven't seen much enemy activity yet. Maybe later, thanks.", "party_reinforce_end", []],
 [anyone,"party_reinforce", [
-     #prevent some exploitation by placing caps on party size
-     (assign, ":party_limit", 80),
-     (try_begin),(eq, "$g_encountered_party_type", spt_scout          ),(assign, ":party_limit", 20),
-      (else_try),(eq, "$g_encountered_party_type", spt_raider         ),(assign, ":party_limit", 50),
-      (else_try),(eq, "$g_encountered_party_type", spt_patrol         ),(assign, ":party_limit", 80),
-      (else_try),(eq, "$g_encountered_party_type", spt_kingdom_caravan),(assign, ":party_limit", 100),
-      (else_try),(eq, "$g_encountered_party_type", spt_prisoner_train ),(assign, ":party_limit", 80),
+     #prevent some exploitation by placing caps on party size #InVain: Reduce limits slightly
+     (assign, ":party_limit", 100), #was 80, affects hosts
+     (try_begin),(eq, "$g_encountered_party_type", spt_scout          ),(assign, ":party_limit", 10), #was 20
+      (else_try),(eq, "$g_encountered_party_type", spt_raider         ),(assign, ":party_limit", 30), #was 50
+      (else_try),(eq, "$g_encountered_party_type", spt_patrol         ),(assign, ":party_limit", 50), #was 80
+      (else_try),(eq, "$g_encountered_party_type", spt_kingdom_caravan),(assign, ":party_limit", 50), #was 100
+      (else_try),(eq, "$g_encountered_party_type", spt_prisoner_train ),(assign, ":party_limit", 50), #was 80
+     (try_end),
+	 (store_faction_of_party, ":faction", "$g_encountered_party"), #scale by faction type
+	 (try_begin), #orc factions 200%
+		  (this_or_next|eq, ":faction", "fac_mordor"),
+          (this_or_next|eq, ":faction", "fac_isengard"),
+          (this_or_next|eq, ":faction", "fac_moria"),
+          (this_or_next|eq, ":faction", "fac_guldur"),
+          (eq, ":faction", "fac_gundabad"),	(val_mul, ":party_limit", 2),
+	  (else_try), #other evil factions 150%
+		  (faction_get_slot, ":faction_side", ":faction", slot_faction_side),
+		  (this_or_next|eq, ":faction_side", faction_side_eye),
+          (eq, ":faction_side", faction_side_hand),	(val_mul, ":party_limit", 3), (val_div, ":party_limit", 2),
+	  (else_try), #elf factions: 70%
+		  (is_between, ":faction", fac_lorien, fac_dale), (val_mul, ":party_limit", 7), (val_div, ":party_limit", 10),
      (try_end),
      (party_get_num_companions, ":party_size", "$g_encountered_party"),
      (ge, ":party_size", ":party_limit")],

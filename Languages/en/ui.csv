@@ -217,7 +217,7 @@ ui_leg_armor|Leg Armor: %d
 ui_encumbrance|Encumbrance: %2.1f
 ui_you_dont_have_value|You don't have %s.
 ui_merchant_cant_afford_value|%s: I can't afford %s. I have only %s.
-ui_merchant_pay_whatever|Allright, just pay whatever you can.
+ui_merchant_pay_whatever|All right, just pay whatever you can.
 ui_merchant_think_of_something_else|Hmm. Let us think of something else.
 ui_dumping_value_items|%d items will be permanently lost, are you sure?
 ui_dumping_value_item|One item will be permanently lost, are you sure?
