@@ -25399,7 +25399,7 @@ command_cursor_scripts = [
 
 	(assign, reg71, ":nf_enemy_party_type_sum"), #Debug for A
 
-	(val_mul, ":nf_enemy_party_type_sum", 10), #multiply by 10, we do this to bring this value to  asimilar level as B and C, then divide all by 200
+	(val_mul, ":nf_enemy_party_type_sum", 30), #multiply by 10, we do this to bring this value to  asimilar level as B and C, then divide all by 200 #InVain Aug 2020: tripled for testing
 	(assign, "$g_formula_a", ":nf_enemy_party_type_sum"),
 	(assign, reg67, ":nf_enemy_party_type_sum"), #Debug for A
 
@@ -25431,6 +25431,7 @@ command_cursor_scripts = [
 
 	(assign, reg68, ":enemy_party_destroyed_strength"), #Debug for B
 	#(val_div, ":enemy_party_destroyed_strength", 200),  #Removed as of Apr 22, 2018 #InVain We do this at the end of the calculation, to avoid rounding issues
+	(val_mul, ":enemy_party_destroyed_strength", 2), #InVain Aug 2020, for testing
 	(assign, reg69, ":enemy_party_destroyed_strength"), #Debug for B w/ divider
 
 	#Calculate C: Own Losses, sum of all killed troops' strength values
@@ -25439,14 +25440,23 @@ command_cursor_scripts = [
 
 	(assign, reg70, ":player_party_losses_strength"), #Debug for C
 	(val_sub, ":player_party_losses_strength", 100),
-	(val_max, ":player_party_losses_strength", 0),											   
+	(val_max, ":player_party_losses_strength", 0),
+		(try_begin),
+			(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side), #side asymmetry: Good side players get pay more for losses
+			(eq, ":player_side", faction_side_good), 
+			(val_mul, ":player_party_losses_strength", 2), 
+		(try_end),
 	#(val_div, ":player_party_losses_strength", 200),  #Removed as of Apr 22, 2018 #InVain We do this at the end of the calculation, to avoid rounding issues
 	(assign, reg64, ":player_party_losses_strength"), #Debug for C w/ subtraction and division
 
 
 	#Calculate D: Player share in the battle - Player party strength [player] in relation to allied parties' strength [allies] 
 
-	(store_mul, ":player_with_multiplier", "$g_starting_strength_main_party", 120), #InVain: we later divide it by 100, so we get 120/100=20% bonus to the player's party strength
+	(try_begin), #side asymmetry: Good side players profit more from fighting with allies, regardless of how much they actually contribute
+			(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side), 
+			(eq, ":player_side", faction_side_good), 
+			(store_mul, ":player_with_multiplier", "$g_starting_strength_main_party", 150), #InVain: we later divide it by 100, so we get 120/100=20% bonus to the player's party strength
+		(try_end),
 	#(store_add, ":player_with_allies", "$g_starting_strength_main_party", "$g_starting_strength_friends"), #InVain: $g_starting_strength_friends already contains the player party
 	#(val_div, ":player_with_allies", 100), #InVain: We do this part later, to avoid rounding issues
 	(store_div, ":player_share_of_battle", ":player_with_multiplier", "$g_starting_strength_friends"),
@@ -25524,6 +25534,7 @@ command_cursor_scripts = [
 	(try_end),
 
 	#Complete Formula [(A+B-C)*D] / 20000 + E
+	(val_add, ":rank_gain", 2), #InVain: balanced so that even raiders or (big) scout parties usually give at least 4 rank = 1 influence, let's see if this is too much.
 	(assign, reg62, ":rank_gain"),
 
 	#Debug:
