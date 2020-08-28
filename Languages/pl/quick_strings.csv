@@ -196,8 +196,8 @@ qstr_+1_to_Agility|+1 do Zręczności
 qstr_+1_to_Leadership|+1 do Dowodzenia
 qstr_+1_to_Wildcraft|+1 do Wildcraft
 qstr_+1_to_Power_Draw|+1 do Potężnego Rzutu
-; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
-; qstr_Who_might_be_interes|Who might be interested in this?
+qstr_The_record_of_Balin_|Zapis z zagubionej ekspedycji Balina.
+qstr_Who_might_be_interes|Kto mógłby być tym zainteresowany?
 qstr_Turns_nature_to_your|Zamienia naturę w twoją stronę (efekt skaluje się z Wildcraft)
 qstr_+1_to_Trainer|+1 do Szkolenia
 qstr_Recruits_Tribal_Orcs|Rekruci Plemiennych Orków
@@ -213,7 +213,7 @@ qstr_when_equipped|gdy wyekwipowany
 qstr_+1_to_Riding|+1 do Jazdy Konnej
 qstr_+1_to_Mounted_Archer|+1 do Łucznictwa Konnego
 qstr_+2_to_Tactics|+2 do taktyki
-; qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
+qstr_+{reg1}_to_Spotting|+{reg1} do Spostrzegania
 ; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
 qstr_+1_to_Spotting|+1 do Spostrzegania
 qstr_+2_to_Athletics|+2 do Atletyki
@@ -230,7 +230,7 @@ qstr_nothing|nic
 qstr_Good|Dobre
 qstr_Med|Średnie
 qstr_Bad|Słabe
-; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
+qstr_You_gained_{reg84}_e|Zdobyłeś {reg84} doświadczenia dzięki swojej inteligencji.
 qstr_{reg4}_killed_{reg5}|{reg4} nie żyje, {reg5} odnosi rany
 qstr_{reg4}_killed_{reg5}_|{reg4} zabity, {reg5} zraniony
 qstr_{reg4}_killed_{reg5}_r|{reg4} zabito, {reg5} zbiegło
@@ -626,8 +626,8 @@ qstr_loses_Faction_Strength|traci siłę rażenia dzięki niszczycielskiemu nalo
 qstr_loses_Faction_Strength_|traci siłę rażenia dzięki twojemu sukcesowi na morzu.
 qstr_You_spent_{reg67}_of|Wydałeś {reg67} swojego wpływu na {s1}, pozostając {reg66}.
 ; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
-; qstr_{s1}_{s0}|{s1}, {s0}
-; qstr_{s1}_and_{s0}|{s1} and {s0}
+qstr_{s1}_{s0}|{s1}, {s0}
+qstr_{s1}_and_{s0}|{s1} oraz {s0}
 qstr_No_Troops_Left.|Brak jednostek
 qstr_avoid_melee|unikaj walki wręcz
 qstr_stand_and_fight|stój i walcz
@@ -688,7 +688,7 @@ qstr_Your_mount_stumbles!|Twój wierzchowiec okulał!
 qstr_Bitten_by_your_own_w|Ugryzion{y/a} przez własnego warga!
 qstr_You_weigh_too_much_f|Masz zbyt dużą masę na kuca!
 qstr_Your_mount_rears_ref|Twój wierzchowiec siada, nie słucha twoich poleceń!
-; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
+qstr_Cannot_Change_Camera|Nie można zmienić trybu kamery będąc w pierwszej osobie.
 ; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
 qstr_Fixed_Custom_Camera|Poprawiona Kamera Użytkownika
 qstr_Press_Ctrl_+_Left_/_|Naciśnij Ctrl + Lewo / Ctrl + klawisze strzałek w prawo, aby zmienić ramiona
@@ -700,9 +700,9 @@ qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
 ; qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_While_visiting_towns|Odwiedzając miasta, osady i obozy, możesz porozmawiać z ludźmi, którzy chodzą po okolicy. Członkowie różnych frakcji mają różne rzeczy do powiedzenia - niektórzy pozwolą ci na własne myśli, inni podzielą się plotkami. Obydwaj mogą jedynie lepiej zrozumieć kulturę i frakcję danej osoby, albo mogą znaleźć wskazówki, jak znaleźć tajne miejsca lub porady i wskazówki dotyczące podróżowania przez Pustkowie i walki w Wojnie o Pierścień.
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
-; qstr_You_have_found_the_l|You have found the local smithy.
-; qstr_You_have_found_the_lo|You have found the local authority.
-; qstr_You_have_found_the_loc|You have found the local warehouse.
+qstr_You_have_found_the_l|Znalazłeś lokalnego kowala.
+qstr_You_have_found_the_lo|Znalazłeś lokalny autorytet.
+qstr_You_have_found_the_loc|Znalazłeś lokalny magazyn.
 qstr_You_look_through_Hen|Spoglądasz przez Henneth Annun, Okno Zachodzącego Słońca. Piękny widok odnawia twoją wiarę w Zachód i moce kryjące się za nim.
 qstr__cancelled_the_{reg1|(Anulowano {reg10} punktów doświadczenia za zabijanie więźniów)
 qstr_Forming_ranks.|Formować szeregi!
@@ -884,6 +884,8 @@ qstr_Tripled|Potrójne
 qstr_Quadrupled|Poczwórne
 qstr_You_drank_the_Ent_Wa|Napił{e/a}ś się Wody Entów...
 qstr_Fangorn_search:_fail|Przeszukiwanie Fangornu: zakończone niepowodzeniem.
+qstr_^^^A_great_victory!^|^^^Znakomite zwycięstwo!^^^Teraz rozumiem o co chodziło z tymi Fangoriańskimi mitami...
+; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|Trol zamknięty w klatce.
 qstr_A_second_troll_is_ca|Drugi trol zamknięty w klatce.
 qstr_Here_you_are.|Tu jesteś.
@@ -1109,7 +1111,7 @@ qstr_Um..._by_enchanting_|Um ... poprzez zaklęcie żelaza?
 qstr_Magnets_are_made_of_|Magnesy są wykonane z metalu, który wykopuje się ziemi.Mają właściwości magnetyczne gdyż metal wciąż zawiera cząsteczki grawitacji w sobie.
 qstr_i_wont_a_bonerlrord_|Chcę NAO Boner portu panie !! 11!
 qstr_Install_TLD_in_your_|Zainstaluj TLD w Twoim folderze Bannerlord Modules, dodaj linię 'compatible_with_wfas = 1' do pliku module.ini, aby grać zarówno w Warband-zie ORAZ Warrider-ze 0.202!
-; qstr_Bannerlord_runs_on_a|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Bannerlord_runs_on_a|Bannerlord działa na innym silniku. Nie będziemy w stanie przenieść TLD do Bannerlorda tak jak zrobiliśmy to w przypadku Warbanda.
 qstr_dis_mod_takes_2_long|Piehdole!!!21@ kiedy ten mod wyjdzie!!11!
 qstr_Well_there_s_a_lot_o|Cóż, jest dużo nowych grafik i innych rzeczy, wydaje mi się, że to zajmuje czas.
 qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.
@@ -1118,7 +1120,7 @@ qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephant
 qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
 ; qstr_Y_NO_ChINESE??|Y NO ChINESE??
 qstr_Just_to_troll_you_tr|Żeby cię strollować, Trollu!
-; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
+qstr_Thanks_to_our_volunt|Przy pomocy naszych ochotniczych tłumaczy, tłumaczenia na tradycyjny oraz uproszczony Chiński są dostępne. Musisz jednak użyć naszego poradnika na warsztacie Steam, aby z nich skorzystać.
 qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
 qstr_What_is_plate_armour|What is plate armour? Never heard of it.
 qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
@@ -1167,14 +1169,15 @@ qstr_Good_day_to_you.|Dzień dobry.
 qstr_Ah_it_s_you_again._G|Ach, to znowu ty. Do widzenia.
 qstr_My_apologies_if_I_wa|Przepraszam, że był{e/a}m niegrzeczn{y/a}. Możesz powtórzyć swą opowieść?
 qstr_I_was_reconsidering_|Rozważył{e/a}m ponownie ostatnią naszą rozmowę. Możesz powtórzyć swą opowieść?
+; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|Witaj, {s23}, {s24}.
 qstr_Greetings_{s23}.|Witaj, {s23}
 qstr_So_you_are_{s23}._I_|Więc jesteś {s23}. Słyszałem, że wspomagasz naszych przyjaciół, chyba powinienem zastanowić się i nad naszym przymierzem.
 qstr_I_need_volunteers_wi|Potrzebuję ochotników do niebezpiecznej misji.
 qstr_I_need_some_soldiers|Potrzebuję nowych żołnierzy, by zastąpili martwych.
 qstr_{playername}_s_Reser|Rezerwy {playername}
-; qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
-; qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
+qstr_Maybe_the_weaklings_|Może słabeusze z południa założyły pancerz na swoje zmiękczałe Trolle. Na pewno nie zrobiliśmy tego my - nasze Trolle są z Gundabadu!
+qstr_Do_I_look_like_a_smi|Czy wyglądam ci na kowala? Pff. Pójdź z jakimś porozmawiać.
 qstr_Excellent_job_{s23}!|Doskonała robota, {s23}! Życzę wszystkim naszym dowódcom równego poświęcenia.^
 qstr_Nicely_done_{s23}.|Ładnie, {s23}.
 qstr_Good_work_{s23}.|Dobra robota, {s23}.
@@ -1202,9 +1205,9 @@ qstr_It_is_my_duty_to_prot|Moim obowiązkiem jest obrona naszych sojuszników.
 qstr_I_am_{s4}_{s15}_of_{|Jestem {s4}, {s15} z {s6}
 qstr_I_am_{s4}_a_commande|Jestem {s4}, dowódca {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? i władca {s8}.:.
-; qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
+qstr__{s3}_gained_{reg78}| {s3} zdobył {reg78} doświadczenia.
 qstr_{playername}_our_sco|{playername}, nasi zwiadowcy przynieśli mi wieści o twym triumfie. Obyś żył wiele lat w błogosławieństwie! Wraz z armiami {s7} odpartymi przez twoje zwycięstwo wroga ofensywa załamała się. Mamy nadzieję że niezgoda  zapanowała wśród ich wojsk i dowódców, a także że utrzymują się teraz w lęku przed twoją osobą! Wywalczyłeś nam co najmniej chwilę odpoczynku od zmęczenia tą wojną.
-; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
+qstr_Well_{playername}_yo|Cóż, {playername}, wróciłeś, a na dodatek doniosłeś nam dobre wieści, a przynajmiej na to wygląda. Widzę teraz, że nie jesteś zwykłym niecierpliwym tchórzem. Ah, gdybym tylko mógł zobaczyć jak {s7} przed tobą upada! Nasi przeciwnicy na pewno są teraz zniechęceni, nie ma co do tego wątpliwości . Nie zdziwiłbym się, gdyby nie wiedzieli co teraz zrobić. Odetnij wężowi głowę i sprawa załatwiona, jak to mówią ludzie. Cóż, musze teraz poprowadzić swoich ludzi do prawdziwego zwycięstwa. Przekażę wieści o twoim wkładzie do twoich przełożonych, nie musisz się o to martwić.
 qstr_Alas_that_I_could_no|Niestety nie mogłem położyć kresu {s7} z {s8}, lecz jeśli kiedyś jeszcze się spotkamy, niech lepiej uważają. 
 qstr__I_should_rather_mak|To ja powinienem raczej złożyć raport o mojej wygranej nad {s7} z {s8} - chwałą jest moja, i tego nie zapomnicie!
 qstr_Very_well_done_{play|Bardzo dobrze, {playername}! Pojmał{e/a}ś szpiega jak i jego informatora, na co zresztą liczyłem, i teraz ta para jest bezpiecznie zamknięta, oczekując na przesłuchanie. Będą musieli sporo wyjaśnić! W każdym razie jestem bardzo zadowolony z twego sukcesu, {playername}, i wyrazem mego uznania daję ci ten oto dowód przyjaźni.
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|Moi szpiedzy donieśli mi o wielkiej grupie wojownikó
 qstr_{s9}_asked_you_to_sco|{s9} poprosił cię, byś ruszył{/a} na zwiad wokół {s13}.
 qstr_We_have_reports_of_s|Otrzymaliśmy raporty o wrogich ruchach opodal {s13}. Nasi zwiadowcy nie zdołali podejść wystarczająco blisko. Chcę byś zorganizował{/a} oddział zwiadowczy, zbliżył{/a} do {s13}, i rozlokował{/a} zwiadowców.
 qstr_My_spies_tell_me_the|Moi szpiedzy donieśli mi o wrogich ruchach opodal {s13}. Moi tchórzliwi zwiadowcy nie zdołali podejść wystarczająco blisko. Chcę byś zorganizował{/a} oddział zwiadowczy, zbliżył{/a} do {s13}, i rozlokował{/a} zwiadowców. Upewnij się, że nie zawrócą i nie uciekną!
-qstr_{s9}_asked_you_to_di|{s9} poprosił cię, byś rozlokował zwiadowców opodal {s13}.^7 żołnierzy z {s15}, z których przynajmniej 1 był {s14}, zbliż się do {s13} i porozmawiaj z {s14} by rozlokować oddział.
+; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|Musimy podjąć walkę z wrogiem, {playername}. W tym momencie możemy to zrobić uderzając w jego patrole i łączność. Chcę byś wyeliminował{/a} {reg1} {s13} oddziałów, co pozwoli przejąć nam inicjatywę.
 qstr_We_need_to_grind_dow|Musimy stępić ostrze wroga, {playername}. Ich patrole i tabory zbyt się rozpanoszyły jak na mój gust. Chcę byś wyeliminował{/a} {reg1} {s13} oddziałów, by nauczyli się strachu przed tym co nadchodzi.
 qstr_{s9}_asked_you_to_el|{s9} poprosił cię, byś wyeliminował{/a} {reg1} {s13} oddziałów.
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|{s11} z {s10} poprosił cię o eskortę {s12} do {s13}
 qstr__Guards_slaughter_hi|Straże, ubijcie go!
 qstr_Slaughter_him_for_fr|Ubijcie go dla świeżego ludzkiego mięsa!
 qstr_This_is_{s5}_Command|To {s5}, Dowódco.
-qstr_{s6}_This_place_and_t|{s6} To miejsce i okoliczne ziemie należą do {s7} z {s8}.
+qstr_{s6}_This_place_and_|{s6} To miejsce i okoliczne ziemie należą do {s7} z {s8}.
 qstr_Hey_scum!_I_can_fix_|Hej szumowino! Mogę naprawić twoją szczękę.
 qstr_Watch_where_you_re_g|Patrz gdzie leziesz, robalu!
 qstr_I_don_t_like_your_fa|Nie podoba mi się twoja twarz! Myślę, że wymaga drobnych poprawek.

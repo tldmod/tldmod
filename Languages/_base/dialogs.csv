@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Thank you, Master. You will be pleased by the way this troll will be put in good use.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Thank you, master. But I'm not worth of your great gift. It is too dangerous for me.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Thank you, master. But I'm not worth of your great gift. [no room in party!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Master, I will bring greater havoc if you also provide an armour for the beast [10/{reg20} influence].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Are you questioning the abilities of your Master, {playername}? This beast is trained to attack enemies on sight. This is enough. But, you and your warriors keep at due distance from the beast when it fights, and never stand between it and its victims.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Now bring havoc to my enemies with your new gift
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|As you wish, then. Someone else among of my servants will known how to use this mighty tool of war.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|You dare ask for an fully armoured battle troll, {playername}, to keep under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|How dare you ask Us for more than We have planned for you in our great Wisdom? {playername}, you proved a mighty Servant today, but don't let your insolence test Our patience any further.
 dlga_lord_capture_troll_completed_one_troll:close_window|Excellent, {playername}. You are a most faithful and useful servant. This troll will be most useful for our purposes. That it is taken to the dungeons!
 dlga_lord_start:close_window.1|Too long ago, I asked you to take me one troll alive. But I should have known. How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.
 dlga_lord_start:lord_generic_mission_completed.1|News of your accomplishment against the wild trolls reached me. {s12} has one fear less to worry about, thanks to you, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|I would like to have a council with you about the Wa
 dlga_marshall_ask:lord_pretalk|I would hardly take advice if you are merely {s25}, {playername}. I would have been more inclined to listen if you were {s24}, but you are not.
 dlga_marshall_ask:lord_pretalk.1|You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]
 dlga_marshall_ask:lord_pretalk.2|We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.
-dlga_marshall_ask:lord_pretalk.3|We are on a campaign, {playername}, your advice would have to wait.
 dlga_marshall_ask:marshall_suggest|I'm listening, {playername}. What do you suggest?
 dlga_marshall_suggest:marshall_answer|We should ride to besiege {s1} at once.
 dlga_marshall_suggest:lord_pretalk|Never mind, I trust your judgement.

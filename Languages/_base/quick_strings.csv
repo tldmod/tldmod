@@ -884,6 +884,8 @@ qstr_Tripled|Tripled
 qstr_Quadrupled|Quadrupled
 qstr_You_drank_the_Ent_Wa|You drank the Ent Water...
 qstr_Fangorn_search:_fail|Fangorn search: failed.
+qstr_^^^A_great_victory!^|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
+qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|Troll caged in wheeled cage.
 qstr_A_second_troll_is_ca|A second troll is caged in wheeled cage.
 qstr_Here_you_are.|Here you are.
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|Good day to you.
 qstr_Ah_it_s_you_again._G|Ah, it's you again. Goodbye.
 qstr_My_apologies_if_I_wa|My apologies if I was rude, earlier. What was your story again?
 qstr_I_was_reconsidering_|I was reconsidering our last conversation. What was your story again?
+qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|Greetings, {s23}, {s24}.
 qstr_Greetings_{s23}.|Greetings, {s23}.
 qstr_So_you_are_{s23}._I_|So, you are {s23}. I hear you fight for our {s25} friends, so I guess I should consider you an ally.
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|My spies tell me of a large group of warriors gatherin
 qstr_{s9}_asked_you_to_sco|{s9} asked you to scout around {s13}.
 qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts.
 qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee!
-qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain 7 soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
+qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|We need to take the battle to the enemy, {playername}. At this moment, we can do this by striking at his patrols and communications. I want you to eliminate {reg1} {s13} parties, that would help us regain initiative.
 qstr_We_need_to_grind_dow|We need to grind down our worthless enemies, {playername}. Their patrols and supply trains are growing too bold for my liking. I want you to eliminate {reg1} {s13} parties, so they'll learn to fear what's coming.
 qstr_{s9}_asked_you_to_el|{s9} asked you to eliminate {reg1} {s13} parties.
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|The {s11} of {s10} asked you to escort some {s12} to {
 qstr__Guards_slaughter_hi| Guards, slaughter him!
 qstr_Slaughter_him_for_fr|Slaughter him for fresh human meat!
 qstr_This_is_{s5}_Command|This is {s5}, Commander.
-qstr_{s6}_This_place_and_t|{s6} This place and the surrounding lands belong to {s7} of {s8}.
+qstr_{s6}_This_place_and_|{s6} This place and the surrounding lands belong to {s7} of {s8}.
 qstr_Hey_scum!_I_can_fix_|Hey scum! I can fix that jaw of yours.
 qstr_Watch_where_you_re_g|Watch where you're going, maggot!
 qstr_I_don_t_like_your_fa|I don't like your face! I think it needs some fixing.

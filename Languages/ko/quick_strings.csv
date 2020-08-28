@@ -884,6 +884,8 @@ qstr_Tripled|세배
 qstr_Quadrupled|네배
 qstr_You_drank_the_Ent_Wa|엔트워터를 들이켰다...
 qstr_Fangorn_search:_fail|팡고른 탐색: 실패.
+qstr_^^^A_great_victory!^|^^^대승이다!^^^이게 팡고른 숲을 둘러싼 전설의 정체였군...
+; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|바퀴달린 우리에 트롤을 가두었다.
 qstr_A_second_troll_is_ca|바퀴달린 우리에 두번째 트롤을 가두었다.
 qstr_Here_you_are.|여기 있네.
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|좋은 하루가 되길.
 qstr_Ah_it_s_you_again._G|아, 또 당신이군. 잘 가게.
 qstr_My_apologies_if_I_wa|전에 제가 무례하게 대했다면 사과드립니다, 당신의 이야기가 뭐였죠?
 qstr_I_was_reconsidering_|저희 마지막 대화를 다시 생각해보고 싶습니다. 당신의 이야기가 뭐였죠?
+; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|반갑네, {s23}. {s24}.
 qstr_Greetings_{s23}.|반갑네, {s23}.
 qstr_So_you_are_{s23}._I_|그래서, 당신이 {s23}이군. 나는 당신이 우리 {s25} 친구들을 위해 싸웠다는 소식을 들었네. 당신을 동맹으로 여겨야 할 것 같군.
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|내 첩자들이 수많은 전사들이 {s13}에 모�
 qstr_{s9}_asked_you_to_sco|{s9}는 당신에게 {s13} 주변을 정찰하라고 했다.
 qstr_We_have_reports_of_s|{s13} 근처에서 적의 군사활동이 보고되었다. 우리의 정찰병들은 그곳에 가까이 가지 못해 그들이 어디로 오고가는지 정찰하는데 실패했다. 정찰대를 소집해서 {s13}까지 충분히 접근해 정찰대를 보내주길 바란다.
 qstr_My_spies_tell_me_the|내 첩자들이 말하길 {s13}의 적들이 뭔가를 꾸미고 있다고 하더군.우리 겁쟁이 정찰대 놈들은 그곳에 가까이 가지 못해 제대로 된 정보를 가져오지 못했다. 나는 네가 너만의 정찰대를 소집해 {s13}에 가까이 다가가, 그들을 놔두고 왔으면 한다. 놈들이 돌아오거나 도망치지 않게 잘 감시해!
-qstr_{s9}_asked_you_to_di|{s9}는 당신에게 {s13} 근처에 정찰대를 보내달라 요청했다.^{s15}를 7명, 그 중에 최소 한 명은 {s14}로 정찰대를 꾸려 {s13}에 가까이 간 후 {s14}에게 말을 걸어 정찰대를 보내자.
+; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|우리는 적과 싸워야합니다. {playername}. 지금 이 순간, 우리는 그들의 정찰대와 통신망을 공격할 수 있습니다. {reg1}의 {s13} 부대를 제거하면, 우리가 주도권을 다시 되찾아 올 수 있을 것입니다.
 qstr_We_need_to_grind_dow|우리는 무가치한 적들을 갈아버려야한다, {playername}. 그들의 정찰대와 보급망은 내 생각에 너무 대담하게 움직이고 있는 것 같다.나는 네가 {reg1}의 {s13} 부대를 제거하기를 원한다. 그럼 그들은 두려움이 무엇인지 알게 될 것이다.
 qstr_{s9}_asked_you_to_el|{s9}는 당신에게 {reg1}의 {reg13} 부대를 제거하라 요청했다.
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|{s10}의 {s11}은 당신에게 {s13}으로 {s12}를 �
 qstr__Guards_slaughter_hi|경비! 저자를 죽여라!
 qstr_Slaughter_him_for_fr|저자를 베어 신선한 인육으로 만들어라!
 qstr_This_is_{s5}_Command|여기 {s5}입니다, 사령관님.
-qstr_{s6}_This_place_and_t|{s6} 이 장소와 주변 지역은 {s8}의 {s7}의 것이다.
+qstr_{s6}_This_place_and_|{s6} 이 장소와 주변 지역은 {s8}의 {s7}의 것이다.
 qstr_Hey_scum!_I_can_fix_|이봐 얼간이! 내가 너의 주둥이를 고칠 수 있을 것 같은데.
 qstr_Watch_where_you_re_g|앞 똑바로 보고 다녀, 구더기 자식!
 qstr_I_don_t_like_your_fa|너 얼굴이 마음에 안 들어! 아마도 고칠 필요가 있을 것 같은데.

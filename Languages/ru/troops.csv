@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Королевский страж галадри�
 trp_a5_lorien_gal_royal_warden_pl|Королевские стражи галадрим
 trp_a6_lorien_grey_warden|Серый страж
 trp_a6_lorien_grey_warden_pl|Серые стражи
-trp_a5_lorien_gal_royal_archer|Меткий стрелок галадрим
-trp_a5_lorien_gal_royal_archer_pl|Меткие стрелки галадрим
+trp_galadhrim_royal_marksman|Меткий стрелок галадрим
+trp_galadhrim_royal_marksman_pl|Меткие стрелки галадрим
 trp_noldorin_mounted_archer|Нолдорский конный лучник
 trp_noldorin_mounted_archer_pl|Нолдорские конные лучники
 trp_a2_lorien_archer|Лориэнский лучник
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Лориэнский опытный лучник
 trp_a3_lorien_vet_archer_pl|Лориэнские опытные лучники
 trp_a4_lorien_gal_archer|Галадримский лучник
 trp_a4_lorien_gal_archer_pl|Галадримские лучники
-trp_galadhrim_royal_marksman|Меткий стрелок галадрим
-trp_galadhrim_royal_marksman_pl|Меткие стрелки галадрим
+trp_a5_lorien_gal_royal_archer|Меткий стрелок галадрим
+trp_a5_lorien_gal_royal_archer_pl|Меткие стрелки галадрим
 trp_i3_lorien_inf|Лориэнские пешие воины
 trp_i3_lorien_inf_pl|Лориэнские пешие воины
 trp_i4_lorien_gal_inf|Галадримский пехотинец
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|древесный замок
 trp_barman_thalls|Хозяин таверны
 trp_barman_thalls_pl|тронный зал
 trp_barman_beorn|Хозяин таверны
-trp_barman_beorn_pl|Дом Беорна
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Хозяин таверны
 trp_barman_moria_pl|палаты Подгорного короля
 trp_barman_dale|Хозяин таверны

@@ -434,12 +434,16 @@ menu_death|Du wurdest getötet. Auch wenn der Krieg andauert, wirst du nicht lä
 menu_animal_ambush|Du und deine Gefährten finden sich vom Rest der Truppen getrennt, als plötzlich...
 menu_animal_ambush_success|Die {s2} {reg0?fallen:fällt} vor dir wie die Fliegen! Schon bald liegen all deine Angreifer am Boden, verwundet oder tot. {s3}
 menu_animal_ambush_fail|Die Tiere beißen und reißen an dir{reg0?,: und deine{reg2?n,:m,} Gefährten}, aber zum Glück konnten sie abgewehrt werden. Hoffentlich greifen sie nicht erneut an.
-menu_build_your_scene|Du kannst hier dein eigenes Schlachtfeld erstellen, indem du eine der Optionen unten und den Editiermodus verwendest (schalte ihn zunächst im M&B-Launcher ein). Du kannst fertige eigene Szenen (also die sco-Dateien im Ordner TLD/SceneObj) an das TLD-Entwicklerteam einreichen und vielleicht tauchen sie in späteren Versionen als Zufallsschlachtfelder auf!^^ Gib möglichst genau an, in welcher Gegend auf der Karte deine Szene auftauchen soll.^ Hinweise: Vermeide tiefes Wasser, steile Berge und andere unpassierbare Orte, es sei denn, du weißt, wie du die AI daran hinderst, diese zu betreten. Erstelle auch ein AI-Mesh.^ (Die Eintrittspunkte "Entry #0-1" sind für die Angreifer, #4 für die Verteidiger, mache nichts mit #5-8)
-mno_scene1|Schlachtfeld5 (Datei scn battlefield5.sco)
-mno_scene2|Schlachtfeld6 (Datei scn battlefield6.sco)
-mno_scene3|Schlachtfeld7 (Datei scn battlefield7.sco)
-mno_scene4|Schlachtfeld8 (Datei scn battlefield8.sco)
-mno_scene5|Schlachtfeld9 (Datei scn battlefield9.sco)
+menu_build_your_scene|Du kannst hier dein eigenes Schlachtfeld erstellen, indem du eine der Optionen unten und den Editiermodus verwendest: Schalte ihn zunächst im M&B-Launcher ein, betritt eine der Scenen unten und drücke Strg+E. Du kannst fertige eigene Szenen (also die sco-Dateien im Ordner TLD/SceneObj) an das TLD-Entwicklerteam einreichen und vielleicht tauchen sie in späteren Versionen als Zufallsschlachtfelder auf!^^ Gib möglichst genau an, in welcher Gegend auf der Karte deine Szene auftauchen soll.^ Hinweise: Vermeide tiefes Wasser, steile Berge und andere unpassierbare Orte, es sei denn, du weißt, wie du die AI daran hinderst, diese zu betreten. Erstelle auch ein AI-Mesh.^ (Die Eintrittspunkte "Entry #0-1" sind für die Angreifer, #4 für die Verteidiger, lass #5-8 unverändert.)
+mno_scene1|Ebene groß (Datei scn_custom_1.sco)
+mno_scene2|Ebene Mittel (Datei scn_custom_2.sco)
+mno_scene3|Ebene klein (Datei scn_custom_3.sco)
+mno_scene4|Steppe groß (Datei scn_custom_4.sco)
+mno_scene5|Steppe mittel (Datei scn_custom_5.sco)
+mno_scene6|Steppe klein (Datei scn_custom_6.sco)
+mno_scene7|Wald groß (Datei scn_custom_7.sco)
+mno_scene8|Wald mittel (Datei scn_custom_8.sco)
+mno_scene9|Wald klein ((Datei scn_custom_9.sco)
 mno_back_3dot|Zurück...
 mno_back|Zurück.
 mno_next|Weiter...

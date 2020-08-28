@@ -884,6 +884,8 @@ qstr_Tripled|multiplié par trois
 qstr_Quadrupled|multiplié par quatre
 qstr_You_drank_the_Ent_Wa|Vous buvez l'Eau des Ents...
 qstr_Fangorn_search:_fail|Recherche de Fangorn : échouée.
+qstr_^^^A_great_victory!^|^^^C'est une grande victoire !^^^Donc, c'est ce que voulaient dire tous ces mythes à propos de Fangorn...
+qstr_^^^Defeated...^^^Sca|^^^Battus..^^^Éparpillés dans la forêt de Fangorn... Seul{/e}...
 qstr_Troll_caged_in_wheel|Troll emprisonné dans une cage.
 qstr_A_second_troll_is_ca|Un second Troll est emprisonné dans une cage.
 qstr_Here_you_are.|Vous y voilà.
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|Bonne journée à vous.
 qstr_Ah_it_s_you_again._G|Ah, c'est encore vous. Au revoir.
 qstr_My_apologies_if_I_wa|Mes excuses pour mon impolitesse, tout à l'heure. Pouvez-vous me raconter à nouveau votre histoire ?
 qstr_I_was_reconsidering_|Je repensais à notre dernière conversation. Pouvez-vous me raconter à nouveau votre histoire ?
+qstr_Zigrphel_gained_{reg|Zigûrphel a gagné {reg78} points d'expérience.
 qstr_Greetings_{s23}_{s24|Salutations, {s23}, {s24}.
 qstr_Greetings_{s23}.|Salutations, {s23}.
 qstr_So_you_are_{s23}._I_|Ainsi, vous êtes {s23}. J'ai entendu dire que vous aviez combattu pour nos amis de {s25}, je pense donc qu'on peut vous considérer comme un allié.
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|Mes espions me signalent qu’un grand groupe de guerr
 qstr_{s9}_asked_you_to_sco|{s9} vous a demandé de partir en éclaireur autour de {s13}.
 qstr_We_have_reports_of_s|Nos rapports nous signalent une activité ennemie près de {s13}. Nos éclaireurs ne sont pas parvenus à se rapprocher suffisamment pour observer les allers et venues dans la région. Je veux que vous rassembliez un groupe d'éclaireurs, que vous vous rapprochiez de {s13}, et que vous envoyez les éclaireurs.
 qstr_My_spies_tell_me_the|Mes espions me signalent que l'ennemi prépare quelque chose à {s13}. Ces couards d'éclaireurs ont échoué à se rapprocher suffisamment pour apprendre quelque chose d'intéressant. Je veux que vous recrutiez votre propre groupe d'éclaireurs, que vous vous rapprochiez de {s13}, et que vous les envoyiez faire leur travail. Assurez-vous qu'ils ne se retournent pas pour fuir !
-qstr_{s9}_asked_you_to_di|{s9} vous a demandé d'envoyer un groupe d’éclaireurs près de {s13}.^Réunissez 7 soldats de {s15}, dont au moins l’un d’entre eux est {s14}, approchez-vous de {s13} et parlez au {s14} pour expédier le groupe.
+qstr_{s9}_asked_you_to_di|{s9} vous a demandé de déployer un groupe d'éclaireurs près de {s13}.^Récupérez {reg1} soldats de {s15} dont au moins un {s14}, approchez-vous de {s13} et parlez au {s14} pour déployer le groupe.
 qstr_We_need_to_take_the_|Nous avons besoin de porter le combat sur l'ennemi, {playername}. Pour l'instant, nous pouvons faire ceci en nous attaquant à ses patrouilles et ses communications. Je veux que vous éliminiez {reg1} groupes {s13}, ce qui nous aiderait à reprendre l'initiative.
 qstr_We_need_to_grind_dow|Nous devons broyer nos stupides adversaires, {playername}. Leurs patrouilles et leurs caravanes de ravitaillement deviennent trop fréquents à mon goût. Je veux que vous éliminiez {reg1} groupes de {s13}, qu'ils craignent alors ce qui va leur arriver.
 qstr_{s9}_asked_you_to_el|{s9} vous a demandé d’éliminer {reg1} groupes de {s13}.
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|Le {s11} de {s10} vous a demandé d'escorter quelques 
 qstr__Guards_slaughter_hi| Gardes, abattez-le !
 qstr_Slaughter_him_for_fr|Abattez-le, pour de la chair fraîche humaine !
 qstr_This_is_{s5}_Command|C'est {s5}, Commandant.
-qstr_{s6}_This_place_and_t|{s6} Cet endroit et les terres environnantes appartiennent à {s7} de {s8}.
+qstr_{s6}_This_place_and_|{s6} Cet endroit et les terres environnantes appartiennent à {s7} de {s8}.
 qstr_Hey_scum!_I_can_fix_|Hé racaille ! Je peux arranger ta mâchoire.
 qstr_Watch_where_you_re_g|Regarde où tu vas, l'asticot !
 qstr_I_don_t_like_your_fa|Je n'aime pas ta tête ! Je pense qu'elle a besoin d'être arrangée.

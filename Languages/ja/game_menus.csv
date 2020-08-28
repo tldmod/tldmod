@@ -434,12 +434,16 @@ menu_death|あなたは殺されました。 戦争の猛威はいまだ弱ま�
 menu_animal_ambush|あなたとコンパニオンは、他の兵とはぐれてしまいました。すると突然・・・
 menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}
 menu_animal_ambush_fail|獣どもはあなた{reg0?:とコンパニオン{reg2?たち:}}に噛み付き、 突進してきましたが、 あなたはなんとか彼らを追い払うことができました。 これであきらめてくれることを願いましょう。
-menu_build_your_scene|ゲームのEditモード (あらかじめM&BのランチャーのOptionsで EditモードをONにする必要があります)を 利用すれば、 下に用意されているスロットのうちのひとつを使って、 自分だけの戦闘シーンを作ることができます。 作成したシーン (TLD/SceneObjフォルダにある、 scoファイルのことです) をTLDの開発チームに送ってください。 シーンの出来が良ければ、 今後のリリースにおいて ランダム戦闘シーンのうちのひとつとして 登場するかも知れません！^^マップ上のどの地域を舞台にしたシーンなのかを 特定してください。^ヒント:あなたがシーン作成の経験が豊富で、 AIの仕組みや挙動を熟知しているのでない限り、 水中や急勾配の山といった 移動しづらい場所の使用は避けましょう。^(#0-1は攻撃側が、 #4は防衛側がメインです。 #5-8はいじらないでください。)
-mno_scene1|Battlefield5 (file scn battlefield5.sco)
-mno_scene2|Battlefield6 (file scn battlefield6.sco)
-mno_scene3|Battlefield7 (file scn battlefield7.sco)
-mno_scene4|Battlefield8 (file scn battlefield8.sco)
-mno_scene5|Battlefield9 (file scn battlefield9.sco)
+; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+; mno_scene1|Plain Big (file scn custom 1.sco)
+; mno_scene2|Plain Med (file scn custom 2.sco)
+; mno_scene3|Plain Small (file scn custom 3.sco)
+; mno_scene4|Steppe Big (file scn custom 4.sco)
+; mno_scene5|Steppe Med (file scn custom 5.sco)
+; mno_scene6|Steppe Small (file scn custom 6.sco)
+; mno_scene7|Forest Big (file scn custom 7.sco)
+; mno_scene8|Forest Med (file scn custom 8.sco)
+; mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|戻る・・・
 mno_back|戻る。
 mno_next|次へ・・・

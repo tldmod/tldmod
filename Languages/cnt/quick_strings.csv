@@ -884,6 +884,8 @@ qstr_Tripled|三 倍
 qstr_Quadrupled|四 倍
 qstr_You_drank_the_Ent_Wa|你 喝 了 樹 人 水 ...
 qstr_Fangorn_search:_fail|搜 索 法 貢 森 林 ： 失 敗 。
+qstr_^^^A_great_victory!^|^^^一 場 偉 大 的 勝 利 ！ ^^^這 就 是 法 貢 森 林 的 神 話 ...
+; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|食 人 妖 被 關 在 有 輪 的 籠 子 裡
 qstr_A_second_troll_is_ca|第 二 個 食 人 妖 被 關 在 有 輪 的 籠 子 裡
 qstr_Here_you_are.|這 個 給 你 。
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|祝 你 今 天 好 運 。
 qstr_Ah_it_s_you_again._G|啊 ， 又 是 你 。 再 見 。
 qstr_My_apologies_if_I_wa|對 不 起 ， 我 剛 剛 很 魯 莽 。 你 能 再 說 一 遍 你 的 故 事  麼 ？
 qstr_I_was_reconsidering_|我 重 新 考 慮 了 我 們 上 次 的 對 話 。 你 能 再 說 一 遍 你 的 故 事 麼 ？
+; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|向 你 問 好 ， {s23} ， {s24} 。
 qstr_Greetings_{s23}.|向 你 問 好 ， {s23} 。
 qstr_So_you_are_{s23}._I_|啊 ， 你 是 {s23} 。 我 聽 說 你 為 我 們 的 朋 友 {s25} 戰 鬥 ， 所 以 我 覺 得 我 該 把 你 當 成 盟 友 。
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|我的間諜告訴我說有大批敵軍正集結於 {s
 qstr_{s9}_asked_you_to_sco|{s9} 要 求 你 去 偵 察 {s13}。 
 qstr_We_have_reports_of_s|我們剛剛收到線報，{s13} 周圍有敵軍活動的跡象，但我方斥候目前所有的靠近行動都失敗了。\n所以我希望你能組建一支斥候，並儘可能的靠近 {s13}，然後將斥候部署在那裡。
 qstr_My_spies_tell_me_the|我的間諜告訴我說敵軍正在 {s13} 採取某些行動。\n我們那些膽小如鼠的斥候們已經失敗太多次了。\n至今都沒傳回任何有用的情報。\n我希望你能組建自己的斥候，並儘可能的靠近 {s13}，然後將他們留在那裡。\n確保他們不會轉身逃跑！
-qstr_{s9}_asked_you_to_di|{s9} 希望你能在 {s13} 周邊派遣一支斥候。\n^準備7名 {s15} 士兵，其中至少要有1名 {s14}，靠近 {s13} 並和{s14} 談話，以派出斥候 。
+; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|我們要把戰鬥帶向敵人，{playername}。\n為了達到這個目標，我們需要攻擊他們的巡邏隊和情報網絡。\n我希望你去消滅 {reg1}隊 {s13}，這將幫我們贏得主動。
 qstr_We_need_to_grind_dow|我們要把沒用的敵人碾碎，{playername}。\n他們的巡邏隊和補給隊比我預料中的還要大膽。\n我希望你去消滅{reg1}隊 {s13}，教會他們什麼叫做恐懼。
 qstr_{s9}_asked_you_to_el|{s9} 希望你去消滅 {reg1}隊{s13}。
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|{s10}的{s11}希望你能護送一些{s12}到{s13}。
 qstr__Guards_slaughter_hi|守衛，解決掉他！
 qstr_Slaughter_him_for_fr|宰了他吃肉！
 qstr_This_is_{s5}_Command|這裡是 {s5}，指揮官。
-qstr_{s6}_This_place_and_t|{s6} 這里和它的周邊都屬於{s8}的{s7}
+qstr_{s6}_This_place_and_|{s6} 這里和它的周邊都屬於{s8}的{s7}
 qstr_Hey_scum!_I_can_fix_|嘿渣滓！看來你的下巴要修理修理了！
 qstr_Watch_where_you_re_g|看看你正朝哪個方向跑，渣滓！
 qstr_I_don_t_like_your_fa|我不喜歡你的長相，我認為該給你做個整容手術了。

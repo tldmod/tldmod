@@ -332,8 +332,8 @@ itm_arnor_armor_f|Arnorian High Armor
 itm_arnor_armor_f_pl|Arnorian High Armor
 itm_arnor_greaves|Arnorian Greaves
 itm_arnor_greaves_pl|Arnorian Greaves
-itm_arnor_splinted|Arnorian Splinted Greaves
-itm_arnor_splinted_pl|Arnorian Splinted Greaves
+itm_free_arnor_splinted|Arnorian Splinted Greaves
+itm_free_arnor_splinted_pl|Arnorian Splinted Greaves
 itm_arnor_shield_a|Arnor Shield
 itm_arnor_shield_a_pl|Arnor Shield
 itm_arnor_shield_c|Arnor Cavalry Shield
@@ -1114,8 +1114,8 @@ itm_mirkwood_heavy_scale|Mirkwood Leafscale
 itm_mirkwood_heavy_scale_pl|Mirkwood Leafscale
 itm_free_mirkwood_armor_e|Light Mail and Surcoat
 itm_free_mirkwood_armor_e_pl|Light Mail and Surcoat
-itm_free_mirkwood_armor_f|Mirkwood Leafscale
-itm_free_mirkwood_armor_f_pl|Mirkwood Leafscale
+itm_mirkwood_sword|Woodelf Sword
+itm_mirkwood_sword_pl|Woodelf Sword
 itm_mirkwood_great_spear|Greenwood Great Spear
 itm_mirkwood_great_spear_pl|Greenwood Great Spear
 itm_mirkwood_war_spear|Greenwood War Spear
@@ -1428,8 +1428,8 @@ itm_dale_heavy_b|Dale Plated Coat
 itm_dale_heavy_b_pl|Dale Plated Coat
 itm_dale_heavy_c|Rhovanion Mail
 itm_dale_heavy_c_pl|Rhovanion Mail
-itm_free_dale_armor_j|Dale Cloak Long Maille
-itm_free_dale_armor_j_pl|Dale Cloak Long Maille
+itm_north_leather|Northmen Leather Vest
+itm_north_leather_pl|Northmen Leather Vest
 itm_free_dale_armor_k|Dale Noble Armor
 itm_free_dale_armor_k_pl|Dale Noble Armor
 itm_dale_armor_l|Dale Noble Gorget

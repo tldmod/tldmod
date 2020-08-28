@@ -434,12 +434,16 @@ menu_death|당신은 죽었습니다. 전쟁은 계속되고 있지만 당신은
 menu_animal_ambush|당신과 당신의 동료들은 나머지 일행과 떨어져 있다는 것을 알아차렸습니다, 그리고 갑자기...
 menu_animal_ambush_success|{s2}들은 당신 앞에 낫에 잘린 벼이삭마냥 {reg0?쓰러졌습니다:쓰러졌습니다} !  곧 당신을 공격한 이들은 전부 죽거나 기절해 쓰러져 있습니다. {s3}
 menu_animal_ambush_fail|짐승들이 당신{reg0?,: 그리고 당신 동료{reg2?들,:,}}을 물어뜯으며 공격하지만 운좋게도 그들을 물리치는데 성공했습니다. 바라건대 다시는 짐승들에게 공격받지 않기를.
-menu_build_your_scene|여기서 아래에 제공된 슬롯 중 하나와 게임 에디트 모드(그 전에 마운트 앤 블레이드 시작 스크린 옵션에서 에디트 모드를 키셔야합니다)를 사용해 당신만의 전장을 만들 수 있습니다. 당신이 만든 전장을 TLD의 dev team에게 보내주시고 (TLD/SceneObj 폴더의 sco 파일형태로), 그 전장이 멋지다면 다음 릴리즈에서 랜덤 전투장소 중에 하나로 나올 수 있습니다!^^ 지도의 어떤 장소에서 당신의 전장이 나타나게 할 지 확실하게 표시해 주십시오.^ 힌트: AI 부대가 어디로 움직이는 지 컨트롤 할 수 있는 경험 많은 분이 아니라면 깊은 물이나 높은 산 등 지나갈 수 없는 지형은 피해서 제작해 주세요. (입력은 공격자에게 #0-1, 방어자에게 #4, 그리고 #5-8는 건드리지 마십시오)
-mno_scene1|전장Battlefield5 (file scn battlefield5.sco)
-mno_scene2|전장Battlefield6 (file scn battlefield6.sco)
-mno_scene3|전장Battlefield7 (file scn battlefield7.sco)
-mno_scene4|전장Battlefield8 (file scn battlefield8.sco)
-mno_scene5|전장Battlefield9 (file scn battlefield9.sco)
+; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+; mno_scene1|Plain Big (file scn custom 1.sco)
+; mno_scene2|Plain Med (file scn custom 2.sco)
+; mno_scene3|Plain Small (file scn custom 3.sco)
+; mno_scene4|Steppe Big (file scn custom 4.sco)
+; mno_scene5|Steppe Med (file scn custom 5.sco)
+; mno_scene6|Steppe Small (file scn custom 6.sco)
+; mno_scene7|Forest Big (file scn custom 7.sco)
+; mno_scene8|Forest Med (file scn custom 8.sco)
+; mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|돌아가기...
 mno_back|돌아간다.
 mno_next|다음으로...

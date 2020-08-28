@@ -884,6 +884,8 @@ qstr_Tripled|verdreifacht
 qstr_Quadrupled|vervierfacht
 qstr_You_drank_the_Ent_Wa|Du hast Entwasser getrunken...
 qstr_Fangorn_search:_fail|Fangorn-Suche: gescheitert.
+qstr_^^^A_great_victory!^|^^^Ein großer Sieg!^^^Also das war es, wovon die Mythen über Fangorn handelten...
+qstr_^^^Defeated...^^^Sca|^^^Besiegt...^^^Verstreut im Fangorn-Wald... Allein...
 qstr_Troll_caged_in_wheel|Troll im Rollkäfig gefangen.
 qstr_A_second_troll_is_ca|Ein zweiter Troll ist im Rollkäfig gefangen.
 qstr_Here_you_are.|Bitte sehr.
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|Guten Tag Euch!
 qstr_Ah_it_s_you_again._G|Ah, Ihr seid es wieder. Lebt wohl.
 qstr_My_apologies_if_I_wa|Verzeiht, wenn ich unhöflich war. Was war noch einmal Eure Geschichte?
 qstr_I_was_reconsidering_|Ich habe über unsere letzte Unterhaltung nachgedacht. Was war nochmal deine Geschichte?
+qstr_Zigrphel_gained_{reg|Zigûrphel erhält {reg78} Erfahrung.
 qstr_Greetings_{s23}_{s24|Grüße, {s23}, {s24}.
 qstr_Greetings_{s23}.|Grüße, {s23}.
 qstr_So_you_are_{s23}._I_|Ihr seid also {s23}. Ich habe gehört, Ihr kämpft für unsere Freunde aus {s25}, also sollte ich Euch als Verbündeten betrachten.
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|Meine Spitzel berichten mir von einer großen Heerscha
 qstr_{s9}_asked_you_to_sco|{s9} bat dich, die Gegend um {s13} auszuspähen.
 qstr_We_have_reports_of_s|Wir haben Berichte von feindlichen Aktivitäten nahe {s13}. Unsere Späher konnten bislang nicht nahe genug herankommen und die Gegend nach feindlichen Truppenbewegungen auskundschaften. Ich möchte, dass Ihr einen Spähtrupp zusammenstellt und Euch {s13} weit genug nähert, um ihn auszusenden.
 qstr_My_spies_tell_me_the|Meine Spione berichten mir, dass der Feind in {s13} etwas plant. Unsere feigen Späher haben bisher darin versagt, nahe genug ranzukommen, um irgendetwas Nützliches in Erfahrung zu bringen. Ich will, dass Ihr einen eigenen Spähtrupp zusammenstellt, nahe genug an {s13} herankommst, und sie dort lasst. Stellt sicher, dass sie nicht umdrehen und fliehen!
-qstr_{s9}_asked_you_to_di|{s9} bat dich, einen Spähtrupp nahe {s13} auszusenden.^Treibe 7 Soldaten von {s15} auf, von denen mindestens einer {s14} ist, nähere dich {s13} und sprich zu dem {s14}, um den Trupp auszusenden.
+qstr_{s9}_asked_you_to_di|{s9} bat dich, einen Spähtrupp nahe {s13} auszusenden.^Treibe {reg1} Soldaten von {s15} auf, von denen mindestens einer {s14} ist, nähere dich {s13} und sprich zu dem {s14}, um den Trupp auszusenden.
 qstr_We_need_to_take_the_|Wir müssen die Schlacht zum Feind tragen, {playername}. Zur Zeit können wir nur seine Stoßtrupps und Boten treffen. Ich will, dass Ihr {reg1} {s13}-Trupps vernichtet, damit wir wieder die Oberhand gewinnen.
 qstr_We_need_to_grind_dow|Wir müssen unsere wertlosen Feinde niederringen, {playername}. Ihre Patrouillen und Versorgungszüge werden für meinen Geschmack zu selbstbewusst. Ich will, dass Ihr {reg1} {s13}-Trupps vernichtet, damit sie wieder fürchten lernen, was sie erwartet.
 qstr_{s9}_asked_you_to_el|{s9} beauftragte dich, {reg1} {s13}-Trupps zu vernichten.
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|Der {s11} von {s10} beauftrage dich, einige {s12} nach
 qstr__Guards_slaughter_hi|Wachen, schlachtet ihn ab!
 qstr_Slaughter_him_for_fr|Schlachte ihn für frisches Menschenfleisch!
 qstr_This_is_{s5}_Command|Das ist {s5}, Befehlshaber.
-qstr_{s6}_This_place_and_t|{s6} Dieser Ort und die umliegenden Lande gehören {s7} von {s8}.
+qstr_{s6}_This_place_and_|{s6} Dieser Ort und die umliegenden Lande gehören {s7} von {s8}.
 qstr_Hey_scum!_I_can_fix_|Hey, Abschaum. Ich kann deinen Kiefer richten.
 qstr_Watch_where_you_re_g|Pass auf, wo du hintrittst, Made!
 qstr_I_don_t_like_your_fa|Ich mag deine Fresse nicht! Ich glaube, sie muss mal gerichtet werden.

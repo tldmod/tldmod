@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Ďakujem, pane. Budete spokojný so spôsobom, akým bude tento trol použitý.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Ďakujem, pane. Ale nie som hodný takéhoto daru. Je pre mňa príliš nebezpečný.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Ďakujem, pane. Ale nie som hodný takéhoto daru. [není miesto v družine!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Pane, budem pôsobiť omnoho väčšiu spúšť pokiaľ by ste mi poskytli tiež brnenie pre beštiu [10/{reg20} vplyvu].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Pokúšaš schopnosti svojho pána, {playername}? Táto beštia je vytrenovaná, aby útočila na nepriateľov podľa zraku. To stačí. Ale ty a tvoji bojovníci sa od beštie radšej držte v bezpečnej vzdialenosti keď bojuje, a nikdy nestojte medzi ňou a jej cieľom.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Rozsievaj smrť medzi mojich nepriateľov tvojím novým darom.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Ako si želáš. Niekto iný z mojich služobníkov bude určite vedieť, ako využiť tento mocný nástroj vojny. 
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Ty sa opovažuješ žiadať o obrneného trola, {playername}, do svojich služieb ? To nie je žiadna drobnosť. Ale si schopný služobník a tvoje úmysly sú nám známe. Páčiš sa nám. Dostaneš ho.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Ako sa vôbec opovažuješ žiadať nás o viac než sme ti v našej veľkej múdrosti plánovali dať ? {playername}, dokázal si dnes, že si schopným služobníkom, ale nenechaj svoju drzosť pokúšať našu trpezlivosť.
 dlga_lord_capture_troll_completed_one_troll:close_window|Výborne, {playername}. Si verný a schopný služobník. Tento trol bude veľmi užitočný. Do kobky s ním !
 dlga_lord_start:close_window.1|Už dávno som ti rozkázal, aby si mi priviedol jedného živého trola. Ale mal som to vedieť. Ako som len mohol čakať od niekoho ako {playername} že by sa bol schopný postaviť takejto výzve. Môj služobník nebol dosť schopný či verný.
 dlga_lord_start:lord_generic_mission_completed.1|Správy o tvojom úspechu proti divokým trolom ku mne dorazili. {s12} má o jednu starosť menej, vďaka tebe, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|Rád by som sa s tebou poradil o Vojne.
 dlga_marshall_ask:lord_pretalk|Ťažko by som si od teba nechal poradiť keď si iba {s25}, {playername}. Bol by som ti viac načúval keby si bol {s24}, ale nie si.
 dlga_marshall_ask:lord_pretalk.1|Si uznávaným veliteľom, {playername}, ale tvoj vplyv je mizivý. Nebolo by veľmi rozvážne načúvať tvojím radám.^[{reg15} potrebného vplyvu, máš len {reg14}]
 dlga_marshall_ask:lord_pretalk.2|Nemôžeme sa len tak rozhodnúť čeliť našim nepriateľom, {playername}. Stále potrebujeme zlepšiť naše sily a stáť sa silnými, pretože zatiaľ sme len {s23}.
-dlga_marshall_ask:lord_pretalk.3|Sme na vojenskom ťažení, {playername}, tvoje rady budú musieť počkať.
 dlga_marshall_ask:marshall_suggest|Počúvam, {playername}. Čo navrhuješ ?
 dlga_marshall_suggest:marshall_answer|Mali by sme vyraziť a dobiť {s1}.
 dlga_marshall_suggest:lord_pretalk|No nič, verím tvojmu úsudku.

@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Urodzený strážca Galadhrim
 trp_a5_lorien_gal_royal_warden_pl|Urodzená stráž Galadhrim
 ; trp_a6_lorien_grey_warden|Grey Warden
 ; trp_a6_lorien_grey_warden_pl|Grey Wardens
-trp_a5_lorien_gal_royal_archer|Urodzený ostrostrelec Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Urodzení ostrostrelci Galadhrim
+trp_galadhrim_royal_marksman|Urodzený ostrostrelec Galadhrim
+trp_galadhrim_royal_marksman_pl|Urodzení ostrostrelci Galadhrim
 trp_noldorin_mounted_archer|Noldorský jazdecký lukostrelec
 trp_noldorin_mounted_archer_pl|Noldorskí jazdeckí lukostrelci
 trp_a2_lorien_archer|Lothlorienský lukostrelec
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Lothlorienský skúsený lukostrelec
 trp_a3_lorien_vet_archer_pl|Lothlorienskí skúsení lukostrelec
 ; trp_a4_lorien_gal_archer|Galadhrim Archer
 ; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
-trp_galadhrim_royal_marksman|Urodzený ostrostrelec Galadhrim
-trp_galadhrim_royal_marksman_pl|Urodzení ostrostrelci Galadhrim
+trp_a5_lorien_gal_royal_archer|Urodzený ostrostrelec Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Urodzení ostrostrelci Galadhrim
 trp_i3_lorien_inf|Lothlorienská pechota
 trp_i3_lorien_inf_pl|Lothlorienská pechota
 ; trp_i4_lorien_gal_inf|Galadhrim Infantry
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|Stromový hrad
 trp_barman_thalls|Krčmárka
 trp_barman_thalls_pl|Trónna sála
 trp_barman_beorn|Krčmárka
-trp_barman_beorn_pl|Grizlov dom
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Krčmárka
 trp_barman_moria_pl|Náčelníkova sieň
 trp_barman_dale|Krčmárka

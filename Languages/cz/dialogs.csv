@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Děkuji, Pane. Budeš potěšen způsobem, kterým bude tento troll využit.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Děkuji, Pane. Ale nejsem hoden tvého daru. Je pro mě moc nebezpečný.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Díky pane, ale nejsem hoden tvého daru. [není místo ve skupině!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Mistře, budu zanechávat větší spoušť, když mi poskytneš zbroj pro to monstrum [10/{reg20} vlivu].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Zpochybňuješ schopnosti tvého Pána, {playername}? Tato šelma je vycvičena aby útočila na nepřítele, když ho spatří. To stačí. Ale ty a tví válečníci udržujte patřičný odstup od nestvůry, když bude bojovat a nikde nestůj mezi ní a obětí.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Teď přines zkázu mým nepřátelům s tímto novým darem
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Jak si tedy přeješ. Jiný z mých služebníků bude vědět jak zacházet s tímto mocným nástrojem války.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Ty se opovažuješ žádat plně obrněného bojového trola, {playername}, pod tvé velení? To není žádná drobnost. Ale jsi dovedný služebník a známe tvé úmysly. Líbí se nám. Dostaneš ho.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Jak se opovažuješ Nás požádat o víc, než jsme ve vší velké moudrosti, pro tebe plánovali? {playername}, dnes jsi se ukázal jako mocný služebník, ale nenech svou drzost dále testovat Naši trpělivost.
 dlga_lord_capture_troll_completed_one_troll:close_window|Výborně {playername}. Jsi věrný a užitečný služebník. Ten trol bude velmi užitečný pro naše účely. Tak do sklepení s ním!
 dlga_lord_start:close_window.1|Už příliš dávno jsem tě žádal abys přivedl jednoho trola živého. Ale měl jsem to vědět. Jak bych mohl očekávat, že někdo, jako je {playername}, bude schopen čelit této výzvě. Můj služebník nebyl dostatečné dobrý ani věrný.
 dlga_lord_start:lord_generic_mission_completed.1|Zprávy o tvém úspěchu proti divokým trolům, dorazily až ke mně. {s12} má o starost méně, už se nemusí bát a to díky tobě, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|Rád bych se s tebou poradil o válce.
 dlga_marshall_ask:lord_pretalk|Nebudu brát radu od pouhého {s25}, {playername}. Kdyby byl  {s24} bylo by tomu jinak.
 dlga_marshall_ask:lord_pretalk.1|Jsi vynikající velitel {playername}, ale tvůj vliv je mizivý. Nebylo by rozumné poslouchat tvé rady.^[{reg15} vlivu potřeba, pouze {reg14} máš]
 dlga_marshall_ask:lord_pretalk.2|Nemůžeme si dovolit potkat se s nepřítelem, {playername}. Stále potřebujeme budovat své síly a budeme silní, bohužel jsme jen {s23}.
-dlga_marshall_ask:lord_pretalk.3|Jsme na výpravě, {playername}, tvá rada musí počkat. 
 dlga_marshall_ask:marshall_suggest|Poslouchám, {playername}. Co navrhuješ?
 dlga_marshall_suggest:marshall_answer|Měli bychom jet obléhat {s1} najednou.
 dlga_marshall_suggest:lord_pretalk|Nevadí, věřím tvému úsudku.

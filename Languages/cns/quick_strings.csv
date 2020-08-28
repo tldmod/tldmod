@@ -884,6 +884,8 @@ qstr_Tripled|三倍
 qstr_Quadrupled|四倍
 qstr_You_drank_the_Ent_Wa|你喝了树人水...
 qstr_Fangorn_search:_fail|搜索法贡森林：失败。
+qstr_^^^A_great_victory!^|^^^一场伟大的胜利！ ^^^这是法贡森林的又一个神话...
+; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|食人妖被关在笼车里。
 qstr_A_second_troll_is_ca|第二头食人妖被关在笼车里。
 qstr_Here_you_are.|给。
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|日安。
 qstr_Ah_it_s_you_again._G|啊，又是你。再见。
 qstr_My_apologies_if_I_wa|对不起，我刚刚很鲁莽。你能再说一遍你的故事么？
 qstr_I_was_reconsidering_|我重新考虑了我们上次的对话。你能再说一遍你的故事么？
+; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|向你问好，{s23}，{s24}。
 qstr_Greetings_{s23}.|向你问好，{s23}。
 qstr_So_you_are_{s23}._I_|啊，你是{s23}。我听说你为我们的朋友{s25}战斗，所以我觉得我该把你当成盟友。
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|我的间谍告诉我说有大批敌军正集结于{s1
 qstr_{s9}_asked_you_to_sco|{s9}希望你去侦察{s13}
 qstr_We_have_reports_of_s|我们刚刚收到线报，{s13}周围有敌军活动的迹象，但我方斥候目前所有的靠近行动都失败了。所以我希望你能组建一支斥候，并尽可能的靠近{s13}，然后将斥候部署在那里。
 qstr_My_spies_tell_me_the|我的间谍告诉我说敌军正在{s13}采取某些行动。我们那些胆小如鼠的斥候们已经失败太多次了。至今都没传回任何有用的情报。我希望你能组建自己的斥候，并尽可能的靠近{s13}，然后将他们留在那里。确保他们不会转身逃跑！
-qstr_{s9}_asked_you_to_di|{s9}希望你能在{s13}周边派遣一支斥候。^准备7名{s15}士兵，其中至少要有1名{s14}，靠近{s13}并和{s14}谈话，以派出斥候 。
+; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|我们要把战斗带向敌人，{playername}。为了达到这个目标，我们需要攻击他们的巡逻队和情报网络。我希望你去消灭{reg1}队{s13}，这将帮我们赢得主动。
 qstr_We_need_to_grind_dow|我们要把没用的敌人碾碎，{playername}。他们的巡逻队和补给队比我预料中的还要大胆。我希望你去消灭{reg1}队{s13}，教会他们什么叫做恐惧。
 qstr_{s9}_asked_you_to_el|{s9}希望你去消灭{reg1}队{s13}。
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|{s10}的{s11}希望你能护送一些{s12}到{s13}。
 qstr__Guards_slaughter_hi|守卫，解决掉他！
 qstr_Slaughter_him_for_fr|宰了他吃肉！
 qstr_This_is_{s5}_Command|这里是{s5}，指挥官。
-qstr_{s6}_This_place_and_t|{s6}这里和它的周边都属于{s8}的{s7}
+qstr_{s6}_This_place_and_|{s6}这里和它的周边都属于{s8}的{s7}
 qstr_Hey_scum!_I_can_fix_|嘿渣滓！看来你的下巴要修理修理了！
 qstr_Watch_where_you_re_g|看看你正朝哪个方向跑，渣滓！
 qstr_I_don_t_like_your_fa|我不喜欢你的长相，我认为该给你做个整容手术了。

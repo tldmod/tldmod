@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Спасибо, Хозяин. Вы останетесь довольны тем, как этот тролль будет служить вам.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Спасибо, Хозяин. Но я не досто{ин/йна} вашего великого дара. Это слишком опасно для меня.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Спасибо, Хозяин. Но я не досто{ин/йна} вашего великого дара [нет мест в отряде!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Хозяин, я устрою куда большее опустошение среди врагов, если вы предоставите броню для зверя [10/{reg20} очков влияния].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Ты подвергаешь сомнению способности своего Хозяина, {playername}? Этот зверь атакует врага, лишь увидев его. Этого достаточно. Но твои воины должны держаться подальше от зверя во время схватки и никогда не становиться между ним и его жертвами.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Теперь, используя мой дар, наведи опустошение на землях врагов.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Как пожелаешь. Кое-кому из моих подданных известно, как управиться с этой "машиной войны".
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Ты осмеливаешься просить бронированного тролля, {playername}, под своё командование? Это немалая просьба. Но ты способный слуга, и Мы понимаем твоё желание. Нам это нравится. Ты получишь награду.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Как смеешь ты просить для себя большего, чем Мы задумали в Наших великих планах? {playername}, ныне ты сослужил{/а} изрядную службу, но не испытывай Наше терпение в дальнейшем.
 dlga_lord_capture_troll_completed_one_troll:close_window|Превосходно, {playername}. Ты сам{ый/ая} верн{ый/ая} и полезн{ый/ая} из слуг. Этот тролль пригодится для Наших целей. Теперь он будет отправлен в подземелья!
 dlga_lord_start:close_window.1|Когда-то давно я попросил тебя добыть живого тролля. Но я должен был догадаться. Как мы могли ожидать, что кто-то вроде тебя, {playername}, сможет принять вызов?! Мой слуга оказался недостаточно обученным и верным.
 dlga_lord_start:lord_generic_mission_completed.1|Известия о твоих достижениях в укрощении диких троллей достигли меня. {s12} теперь имеет одной заботой меньше, благодаря тебе, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|Я бы хотел{/а} посовещаться с 
 dlga_marshall_ask:lord_pretalk|Я навряд ли прислушаюсь к твоему совету, если ты просто {s25}, {playername}. Я бы проявил больше внимания, будь ты {s24}, но ты не достиг{/ла} этого звания.
 dlga_marshall_ask:lord_pretalk.1|Ты умелый полководец, {playername}, но влияние твоё невелико. Было бы неразумно прислушиваться к твоему совету.^[нужно {reg15} очков влияния, лишь {reg14} в наличии]
 dlga_marshall_ask:lord_pretalk.2|Мы вряд ли можем себе позволить сойтись с врагом лицом к лицу, {playername}. Нам пока нужно собрать войска и восстановить силы. Увы, наша держава просто {s23}.
-dlga_marshall_ask:lord_pretalk.3|Мы уже в походе, {playername}, отложи свой совет на потом.
 dlga_marshall_ask:marshall_suggest|Я слушаю, {playername}. Что предложишь?
 dlga_marshall_suggest:marshall_answer|Мы должны немедленно осадить {s1}.
 dlga_marshall_suggest:lord_pretalk|Неважно, я доверюсь вашему решению.

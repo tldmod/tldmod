@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Guardiano Reale Galadhrim
 trp_a5_lorien_gal_royal_warden_pl|Guardiani Reali Galadhrim
 trp_a6_lorien_grey_warden|Custode Grigio
 trp_a6_lorien_grey_warden_pl|Custodi Grigi
-trp_a5_lorien_gal_royal_archer|Tiratore Scelto Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Tiratori Scelti Galadhrim
+trp_galadhrim_royal_marksman|Tiratore Scelto Galadhrim
+trp_galadhrim_royal_marksman_pl|Tiratori Scelti Galadhrim
 trp_noldorin_mounted_archer|Arciere a Cavallo di Noldorin
 trp_noldorin_mounted_archer_pl|Arcieri a Cavallo di Noldorin
 trp_a2_lorien_archer|Arciere di Lothlorien
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Arciere Veterano di Lothlorien
 trp_a3_lorien_vet_archer_pl|Arcieri Veterani di Lothlorien
 trp_a4_lorien_gal_archer|Arciere Galadhrim
 trp_a4_lorien_gal_archer_pl|Arcieri Galadhrim
-trp_galadhrim_royal_marksman|Tiratore Scelto Galadhrim
-trp_galadhrim_royal_marksman_pl|Tiratori Scelti Galadhrim
+trp_a5_lorien_gal_royal_archer|Tiratore Scelto Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Tiratori Scelti Galadhrim
 trp_i3_lorien_inf|Fante di Lothlorien
 trp_i3_lorien_inf_pl|Fanti di Lothlorien
 trp_i4_lorien_gal_inf|Fante Galadhrim
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|L'Albero Castello
 trp_barman_thalls|Il taverniere
 trp_barman_thalls_pl|La Stanza del Trono
 trp_barman_beorn|Il taverniere
-trp_barman_beorn_pl|la Casa di Beorn
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Il taverniere
 trp_barman_moria_pl|La Camera del Capo
 trp_barman_dale|Il taverniere

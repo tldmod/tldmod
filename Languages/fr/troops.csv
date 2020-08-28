@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Gardien royal des Galadhrim
 trp_a5_lorien_gal_royal_warden_pl|Gardiens royaux des Galadhrim
 trp_a6_lorien_grey_warden|Gardien Gris
 trp_a6_lorien_grey_warden_pl|Gardiens Gris
-trp_a5_lorien_gal_royal_archer|Archer royal d'élite des Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Archers royaux d'élite des Galadhrim
+trp_galadhrim_royal_marksman|Tireur d'élite royal des Galadhrim
+trp_galadhrim_royal_marksman_pl|Tireurs d'élite royaux des Galadhrim
 trp_noldorin_mounted_archer|Archer monté ñoldorin
 trp_noldorin_mounted_archer_pl|Archers montés ñoldorin
 trp_a2_lorien_archer|Archer de la Lothlórien
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Archer vétéran de la Lothlórien
 trp_a3_lorien_vet_archer_pl|Archers vétérans de la Lothlórien
 trp_a4_lorien_gal_archer|Archer Galadhrim
 trp_a4_lorien_gal_archer_pl|Archers Galadhrim
-trp_galadhrim_royal_marksman|Tireur d'élite royal des Galadhrim
-trp_galadhrim_royal_marksman_pl|Tireurs d'élite royaux des Galadhrim
+trp_a5_lorien_gal_royal_archer|Archer royal d'élite des Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Archers royaux d'élite des Galadhrim
 trp_i3_lorien_inf|Fantassin de la Lothlórien
 trp_i3_lorien_inf_pl|Infanterie de la Lothlórien
 trp_i4_lorien_gal_inf|Fantassin Galadhrim
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|le Château-arbre
 trp_barman_thalls|Tavernier
 trp_barman_thalls_pl|la Salle du Trône
 trp_barman_beorn|Tavernier
-trp_barman_beorn_pl|la Maison de Beorn
+trp_barman_beorn_pl|La salle de Beorn
 trp_barman_moria|Tavernier
 trp_barman_moria_pl|la Chambre du Chef
 trp_barman_dale|Tavernier

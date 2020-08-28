@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Galadhoni Királyi Őr
 trp_a5_lorien_gal_royal_warden_pl|Galadhoni Királyi Őrség
 trp_a6_lorien_grey_warden|Szürke Őr
 trp_a6_lorien_grey_warden_pl|Szürke Őrök
-trp_a5_lorien_gal_royal_archer|Galadhoni Királyi Mesterlövész
-trp_a5_lorien_gal_royal_archer_pl|Galadhoni Királyi Mesterlövészek
+trp_galadhrim_royal_marksman|Galadhoni királyi mesterlövész
+trp_galadhrim_royal_marksman_pl|Galadhoni királyi mesterlövészek
 trp_noldorin_mounted_archer|Ñoldor lovasíjász
 trp_noldorin_mounted_archer_pl|Ñoldor lovasíjászok
 trp_a2_lorien_archer|Lothlórieni íjász
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Lothlórieni veterán íjász
 trp_a3_lorien_vet_archer_pl|Lothlórieni veterán íjászok
 trp_a4_lorien_gal_archer|Galadhoni Íjász
 trp_a4_lorien_gal_archer_pl|Galadhoni Íjászok
-trp_galadhrim_royal_marksman|Galadhoni királyi mesterlövész
-trp_galadhrim_royal_marksman_pl|Galadhoni királyi mesterlövészek
+trp_a5_lorien_gal_royal_archer|Galadhoni Királyi Mesterlövész
+trp_a5_lorien_gal_royal_archer_pl|Galadhoni Királyi Mesterlövészek
 trp_i3_lorien_inf|Lothlórieni gyalogság
 trp_i3_lorien_inf_pl|Lothlórieni gyalogság
 trp_i4_lorien_gal_inf|Galadhoni Gyalogság
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|A Fakastély
 trp_barman_thalls|Fogadós
 trp_barman_thalls_pl|a Trónterem
 trp_barman_beorn|Fogadós
-trp_barman_beorn_pl|Beorn Háza
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Fogadós
 trp_barman_moria_pl|a Törzsfő Hálóterme
 trp_barman_dale|Fogadós

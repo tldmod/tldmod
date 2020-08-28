@@ -68,8 +68,8 @@ trp_i3_beorning_tolltacker|Contador Beorning
 trp_i3_beorning_tolltacker_pl|Contadores Beorning
 trp_i4_beorning_sentinel|Sentinela Beorning
 trp_i4_beorning_sentinel_pl|Sentinelas Beornings
-trp_i5_beorning_warden_of_the_ford|Guardião da Lagoa Beorning
-trp_i5_beorning_warden_of_the_ford_pl|Guardiões da Lagoa Beorning
+trp_i5_beorning_warden_of_the_ford|Guardião do Vau Beorning
+trp_i5_beorning_warden_of_the_ford_pl|Guardiões do Vau Beorning
 trp_i3_beorning_carrock_lookout|Vigia de Carrock Beorning
 trp_i3_beorning_carrock_lookout_pl|Vigias de Carrock Beorning
 trp_i4_beorning_carrock_fighter|Guerreiro de Carrock Beorning
@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Guardião Real de Galadhrim
 trp_a5_lorien_gal_royal_warden_pl|Guardiões Reais de Galadhrim
 trp_a6_lorien_grey_warden|Guardião cinza
 trp_a6_lorien_grey_warden_pl|Guardiões cinzas
-trp_a5_lorien_gal_royal_archer|Atirador Real de Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Atiradores Reais de Galadhrim
+trp_galadhrim_royal_marksman|Atirador Real de Galadhrim
+trp_galadhrim_royal_marksman_pl|Atiradores Reais de Galadhrim
 trp_noldorin_mounted_archer|Arqueiro Montado Noldorin
 trp_noldorin_mounted_archer_pl|Arqueiros Montados Noldorin
 trp_a2_lorien_archer|Arqueiro de Lothlorien
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Arqueiro Veterano de Lothlorien
 trp_a3_lorien_vet_archer_pl|Arqueiros Veteranos Lothlorien
 trp_a4_lorien_gal_archer|Arqueiro de Galadhrim
 trp_a4_lorien_gal_archer_pl|Arqueiros de Galadhrim
-trp_galadhrim_royal_marksman|Atirador Real de Galadhrim
-trp_galadhrim_royal_marksman_pl|Atiradores Reais de Galadhrim
+trp_a5_lorien_gal_royal_archer|Atirador Real de Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Atiradores Reais de Galadhrim
 trp_i3_lorien_inf|Infantaria de Lothlorien
 trp_i3_lorien_inf_pl|Infantaria de Lothlorien
 trp_i4_lorien_gal_inf|infantaria de Galadhrim
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|O Castelo Árvore
 trp_barman_thalls|Gerente da Taverna
 trp_barman_thalls_pl|A Sala do Trono
 trp_barman_beorn|Gerente da Taverna
-trp_barman_beorn_pl|Casa de Beorn
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Gerente da Taverna
 trp_barman_moria_pl|A Câmara do Chefe
 trp_barman_dale|Gerente da Taverna

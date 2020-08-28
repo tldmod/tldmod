@@ -884,6 +884,8 @@ qstr_Tripled|Trojnásobně
 qstr_Quadrupled|Čtyřnásobně
 qstr_You_drank_the_Ent_Wa|Vypil jsi Entí vodu...
 qstr_Fangorn_search:_fail|Prohledávání Fangornu: selhalo
+qstr_^^^A_great_victory!^|^^^Velké vítězství!^^^Tak o tomhle Fangornu vyprávěly legendy...
+; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|Trol v kleci na kolech
 qstr_A_second_troll_is_ca|Druhý trol je v kleci na kolech.
 qstr_Here_you_are.|Jsi tady.
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|Dobrý den.
 qstr_Ah_it_s_you_again._G|To jsi zase ty. Sbohem.
 qstr_My_apologies_if_I_wa|Omlouvám se pokud jsem byl dříve hrubý. Jaký byl tvůj příběh znovu?
 qstr_I_was_reconsidering_|Přemýšlel jsem o naší poslední konverzaci. Jaký byl tvůj příběh znovu?
+; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|Vítej, {s23}, {s24}.
 qstr_Greetings_{s23}.|Vítej, {s23}.
 qstr_So_you_are_{s23}._I_|Takže ty jsi {s23}. Slyšel jsem že bojuješ za přátele z {s25}, takže hádám že bych tě měl považoval za spojence.
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|Moji špehové hlásí velkou skinu bojovníků shroma
 qstr_{s9}_asked_you_to_sco|{s9} tě požádal, aby jsi prozkoumal okolí {s13}.
 qstr_We_have_reports_of_s|Máme zprávy o nepřátelské aktivitě blízko {s13}. Naši zvědové se nedokázali dostat dostatečně blízko a prozkoumat okolí. Chci abys vytvořil průzkumnou skupinu a vyslal ji v blízkosti {s13}.
 qstr_My_spies_tell_me_the|Mojí špehové hlásí, že se něco děje v {s13}. Naši zbabělí špehové, se nezvládli dostat dostatečně blízko a zjistit něco zajímavého. Chci abys zrekrutoval vlastní výzvědnou skupinu, dostal se blízko k {s13} a nechal je tam. Postarej se o to aby se neotočili a neutekli!
-qstr_{s9}_asked_you_to_di|{s9} tě požádal, abys vyslal výzvědnou skupinu v blízkosti {s13}.^Dostaň 7 vojáků z {s15}, ze kterých bude alespoň 1 {s14}, blízko k {s13} a promluv s {s14} abys vyslal skupinu.
+; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|Potřebujeme dotáhnout válku k nepříteli, {playername}. Momentálně to můžeme udělat tím, že budeme útočit na jejich patroly a komunikace. Chci aby jsi eliminoval {reg1} skupin {s13}, to by nám mělo pomoct převzít iniciativu.
 qstr_We_need_to_grind_dow|Musíme rozdrtit naše ničemné nepřátelé, {playername}. Jejich hlídky a zásobovací karavany jsou na můj vkus až příliš odvážné. Chci abys eliminoval {reg1} {s13} skupin, aby zjistili co je to mít strach.
 qstr_{s9}_asked_you_to_el|{s9} tě požádal o eliminaci {reg1} skupin {s13}.
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|{s11} z {s10} tě požádal, abys eskortoval {s12} do 
 qstr__Guards_slaughter_hi|Stráže, zabijte ho!
 qstr_Slaughter_him_for_fr|Zmasakrujte ho pro čerstvé lidské maso!
 qstr_This_is_{s5}_Command|Tohle je {s5}, Velitel.
-qstr_{s6}_This_place_and_t|{s6} Tohle místo a okolí patří {s7} z {s8}.
+qstr_{s6}_This_place_and_|{s6} Tohle místo a okolí patří {s7} z {s8}.
 qstr_Hey_scum!_I_can_fix_|Hej špíno! Můžu ti spravit tvůj ksicht.
 qstr_Watch_where_you_re_g|Koukej kam šlapeš, červe!
 qstr_I_don_t_like_your_fa|Nelíbí se mi tvůj ksicht! Myslím že ti ho trošku vylepším.

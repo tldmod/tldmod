@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Guardián Real Galadhrim
 trp_a5_lorien_gal_royal_warden_pl|Guardianes Reales Galadhrim
 trp_a6_lorien_grey_warden|Guardián Gris
 trp_a6_lorien_grey_warden_pl|Guardianes Grises
-trp_a5_lorien_gal_royal_archer|Tirador Real Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Tiradores Reales Galadhrim
+trp_galadhrim_royal_marksman|Tirador Real Galadhrim
+trp_galadhrim_royal_marksman_pl|Tiradores Reales Galadhrim
 trp_noldorin_mounted_archer|Arquero Montado Noldorin
 trp_noldorin_mounted_archer_pl|Arqueros Montados Noldorin
 trp_a2_lorien_archer|Arquero de Lórien
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Arquero Veterano de Lórien
 trp_a3_lorien_vet_archer_pl|Arqueros Veteranos de Lórien
 trp_a4_lorien_gal_archer|Arquero Galadhrim
 trp_a4_lorien_gal_archer_pl|Arqueros Galadhrim
-trp_galadhrim_royal_marksman|Tirador Real Galadhrim
-trp_galadhrim_royal_marksman_pl|Tiradores Reales Galadhrim
+trp_a5_lorien_gal_royal_archer|Tirador Real Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Tiradores Reales Galadhrim
 trp_i3_lorien_inf|Infante de Lórien
 trp_i3_lorien_inf_pl|Infante de Lórien
 trp_i4_lorien_gal_inf|Infantería Galadhrim
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|l Árbol guarnecido
 trp_barman_thalls|Tabernero
 trp_barman_thalls_pl|l Salón del Trono
 trp_barman_beorn|Tabernero
-trp_barman_beorn_pl| la Casa de Beorn
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Tabernero
 trp_barman_moria_pl| la Cámara del Jefe
 trp_barman_dale|Tabernero

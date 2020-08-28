@@ -434,12 +434,16 @@ menu_death|Powinieneś być martwy. Chociaż wojna wciąż trwa, ty nie jesteś 
 menu_animal_ambush|Ty i twoi kompani oddzieliliście się od reszty drużyny, kiedy nagle...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy przeciwnicy leżą na ziemi - ranni, lub martwi. {s3}
 menu_animal_ambush_fail|Zwierzęta zaatakowały ciebie {reg0?,: i twojego kompana {reg2?s,:,}} ale na szczęście udało ci się je odgonić. Miejmy nadzieję że nie zaatakują cie ponownie.
-menu_build_your_scene|Tutaj możesz zbudować własną scenę walki, używając jednego ze slotów zamieszczonych poniżej i trybu edycji (musisz najpierw zmienić tryb edycji na Włączony w menu opcji w panelu startowym M&B).
-mno_scene1|Pole Bitwy 5 (plik scn battlefield5.sco)
-mno_scene2|Pole Bitwy 6 (plik scn battlefield6.sco)
-mno_scene3|Pole Bitwy 7 (plik scn battlefield7.sco)
-mno_scene4|Pole Bitwy 8 (plik scn battlefield8.sco)
-mno_scene5|Pole Bitwy 9 (plik scn battlefield9.sco)
+; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+; mno_scene1|Plain Big (file scn custom 1.sco)
+; mno_scene2|Plain Med (file scn custom 2.sco)
+; mno_scene3|Plain Small (file scn custom 3.sco)
+; mno_scene4|Steppe Big (file scn custom 4.sco)
+; mno_scene5|Steppe Med (file scn custom 5.sco)
+; mno_scene6|Steppe Small (file scn custom 6.sco)
+; mno_scene7|Forest Big (file scn custom 7.sco)
+; mno_scene8|Forest Med (file scn custom 8.sco)
+; mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|Wróć...
 mno_back|Wróć.
 mno_next|Następnie...

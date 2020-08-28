@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Teşekkürler, efendim. Bu trolün iyi bir amaçta kullanılmasından hoşnut olacaksınız.  
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Teşekkür ederim, ustam. Ama bu harika ödülünüze layik degilim. Bu yaratık benim için çok tehlikeli.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Teşekkür ederim, ustam. Ama bu harika ödülünüze layik degilim. [grupta boş yer yok!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Efendim, eger yaratık için bir zırh saglayabilirseniz tahrip gücünü artırabilirim [10/{reg20} etki].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Efendinin yeteneklerini mi sorguluyorsun, {playername}? Bu yaratık görünen düşmanlara saldırmak için egitildi. Bu yeterli. Fakat sen ve savaşçıların yaratıkla aranızdaki mesafeyi koruyun ve hiçbir zaman o ve hedefi arasında durmayın. 
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Şimdi düşmanlarıma bu yeni hediyeyle yıkımı getir.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|O zaman, siz nasıl isterseniz. Hizmetkarlarım arasından başka biri bu devasa savaş aletini kullanmasını bilecektir.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Tamamen zırhlandırılmış bir savaş trolünü  istemeye mi cüret ediyorsun, {playername}? Bu istenecek küçük bir şey degil. Ama sen yetenekli bir hizmetkarsın ve senin ne kadar adanmış biri oldugunu da iyi biliyoruz. Bu özelligini çok seviyoruz ve bu yüzden trolü almana izin verildi.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Muhteşem bilgeligimizle senin için planladıklarmızdan daha fazlasını istemeye nasıl cüret edersin? {playername}, bugün iddialı bir hizmetkar oldugunu kanıtladın fakat küstahlıgının sabrımızı daha fazla sınamasına izin verme. 
 dlga_lord_capture_troll_completed_one_troll:close_window|Mükemmel, {playername}. Sen sahip oldugumuz en inançlı ve işe yarar hizmetkarsın. Bu trol de amaçlarımız için bayagı kullanışlı olacak. Zindanlara götürün onu!
 dlga_lord_start:close_window.1|Çok uzun zaman önce senden canlı bir troll yakalamanı istedim. Ama bilmeliydim. {Playername} gibi birinden bu görevi becermesini nasıl bekleyebilirim? Hizmetçim yeterince yetenekli ya da bana sadık degil.
 dlga_lord_start:lord_generic_mission_completed.1|Yabani trollere karşı başarılarının haberleri bana ulaştı. {s12}'nin endişelenecegi şeylerden biri daha eksildi, teşekkürler, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|Seninle savaş hakkında konsey düzenlemek istiyoru
 dlga_marshall_ask:lord_pretalk|Eger sadece {s25} isen senden tavsiye almam pek mümkün degil, {playername}.Eger {s24} olsaydın Seni dinlemeye daha yatkın olurdum, ama ne yazık ki degilsin.
 dlga_marshall_ask:lord_pretalk.1|Sen başarılı bir komutansın, {playername}, ama nüfuzun azalmakta. Senin tavsiyeni dinlemek ihtiyatlı olmaz.^[{reg15} nüfuz gerekli, sadece {reg14} var] 
 dlga_marshall_ask:lord_pretalk.2|Düşmanla kafa kafaya çarpışmamız neredeyse imkansız, {playername}. Hala birliklerimizi toplayıp güçlenmemiz gerekiyor; ne yazık ki bizim birligimiz sadece {s23}.
-dlga_marshall_ask:lord_pretalk.3|Şu anda bir görev üzerindeyiz, {playername}, fikirlerin bekliyebilir.
 dlga_marshall_ask:marshall_suggest|Dinliyorum, {playername}. Ne önereceksin?
 dlga_marshall_suggest:marshall_answer|Atlarımızı bir an önce {s1} kalesine sürmeliyiz.
 dlga_marshall_suggest:lord_pretalk|Her neyse, hükmüne güveniyorum.

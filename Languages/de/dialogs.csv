@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Habt Dank, Meister. Ihr werdet zufrieden damit sein, wie ich diesen Troll einsetzen werde.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Habt Dank, Meister. Aber ich bin Eurer großen Gabe nicht würdig. Sie ist zu gefährlich für mich.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Habt Dank, Meister. Aber ich bin Eurer großen Gabe nicht würdig. [Kein Platz in der Truppe]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Meister, ich könnte größere Verwüstung anrichten, wenn ich eine Rüstung für das Biest hätte [10/{reg20} Einfluss].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Stellst du die Fähigkeiten deines Gebieters infrage, {playername}? Die Bestie ist darauf abgerichtet, jeden Feind anzugreifen, den sie sieht. Das genügt. Aber du und deine Krieger sollten Abstand von ihr halten, wenn sie kämpft, und niemals zwischen ihr und ihren Opfern stehen.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Nun bring mit diesem Geschenk Vernichtung über deine Feinde.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Wie du willst. Jemand anders unter meinen Dienern wird besser wissen, wie er dieses mächtige Kriegswerkzeug zu verwenden hat.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Du wagst es, um einen voll gerüsteten Kampftroll zu bitten, {playername}? Das ist keine Kleinigkeit. Aber du bist ein begabter Diener und Wir kennen deine Beweggründe. Wir schätzen das. Es sei gewährt.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Wie kannst du es wagen, Uns um mehr zu bitten, als Wir in Unserer Weisheit für dich geplant haben? {playername}, du hast dich als mächtiger Diener erwiesen, aber stelle mit deiner Anmaßung Unsere Geduld nicht länger auf die Probe.
 dlga_lord_capture_troll_completed_one_troll:close_window|Sehr gut, {playername}. Du bist ein äußerst treuer und nützlicher Diener. Dieser Troll wird sich für Unsere Absichten als sehr nutzbringend erweisen. In die Verliese mit ihm!
 dlga_lord_start:close_window.1|Vor allzu langer Zeit bat ich dich, mir einen lebenden Troll zu bringen. Aber ich hätte es wissen müssen. Wie konnte ich nur vermuten, jemand wie du, {playername}, wäre dieser Herausvorderung gewachsen. Mein Diener war nicht fähig oder treu genug.
 dlga_lord_start:lord_generic_mission_completed.1|Mich erreichte Nachricht über Eure Erfolge gegen die wilden Trolle. Dank euch muss sich {s12} nun um eine Sorge weniger kümmern, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|Ich möchte mich mit Euch über den Krieg beraten.
 dlga_marshall_ask:lord_pretalk|Ich werde kaum Euren Rat annehmen, da Ihr nur {s25} seid, {playername}. Ich wäre eher geneigt, Euch zuzuhören, wenn Ihr {s24} wäret, aber das seid Ihr nicht.
 dlga_marshall_ask:lord_pretalk.1|Ihr seid ein erfahrener Anführer, {playername}, aber Euer Einfluss schwindet. Es wäre nicht klug, Euren Rat zu hören.^ [benötigt {reg15} Einfluss, du hast nur {reg14}]
 dlga_marshall_ask:lord_pretalk.2|Wir können es uns kaum leisten, den Feind Kopf voran zu bekämpfen, {playername}. Wir müssen unsere Truppen aufbauen und stärker werden, leider sind wir nur {s23}.
-dlga_marshall_ask:lord_pretalk.3|Wir befinden uns auf einem Feldzug, {playername}. Euer Ratschlag muss warten.
 dlga_marshall_ask:marshall_suggest|Ich höre, {playername}. Was schlagt Ihr vor?
 dlga_marshall_suggest:marshall_answer|Wir sollten {s1} belagern.
 dlga_marshall_suggest:lord_pretalk|Schon gut. Ich vertraue Eurem Urteil.

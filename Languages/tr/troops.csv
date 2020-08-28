@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Galadhrim Kraliyet Gardiyanı
 trp_a5_lorien_gal_royal_warden_pl|Galadhrim Kraliyet Gardiyanları
 trp_a6_lorien_grey_warden|Gri Muhafız
 trp_a6_lorien_grey_warden_pl|Gri Muhafızlar
-trp_a5_lorien_gal_royal_archer|Galadhrim Kraliyet Nişancısı
-trp_a5_lorien_gal_royal_archer_pl|Galadhrim Kraliyet Nişancıları
+trp_galadhrim_royal_marksman|Galadhrim Kraliyet Nişancısı
+trp_galadhrim_royal_marksman_pl|Galadhrim Kraliyet Nişancıları
 trp_noldorin_mounted_archer|Noldorin Atlı Okçusu
 trp_noldorin_mounted_archer_pl|Nolodrin Atlı Okçuları
 trp_a2_lorien_archer|Lothlorien Okçusu
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Lothlorien Kıdemli Okçusu
 trp_a3_lorien_vet_archer_pl|Lothlorien Kıdemli Okçuları
 trp_a4_lorien_gal_archer|Galadhrim Okçusu
 trp_a4_lorien_gal_archer_pl|Galadhrim Okçuları
-trp_galadhrim_royal_marksman|Galadhrim Kraliyet Nişancısı
-trp_galadhrim_royal_marksman_pl|Galadhrim Kraliyet Nişancıları
+trp_a5_lorien_gal_royal_archer|Galadhrim Kraliyet Nişancısı
+trp_a5_lorien_gal_royal_archer_pl|Galadhrim Kraliyet Nişancıları
 trp_i3_lorien_inf|Lothlorien Piyadesi
 trp_i3_lorien_inf_pl|Lothlorien Piyadesi
 trp_i4_lorien_gal_inf|Galadhrim Piyadesi
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|Agaç Kale
 trp_barman_thalls| Hancı
 trp_barman_thalls_pl|Taht Odası
 trp_barman_beorn| Hancı
-trp_barman_beorn_pl|Beorn Evi
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria| Hancı
 trp_barman_moria_pl|Şefin Odası
 trp_barman_dale| Hancı

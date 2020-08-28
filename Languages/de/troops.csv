@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Königlicher Wächter der Galadhrim
 trp_a5_lorien_gal_royal_warden_pl|Königliche Wächter der Galadhrim
 trp_a6_lorien_grey_warden|Grauer Hüter
 trp_a6_lorien_grey_warden_pl|Grauer Hüter
-trp_a5_lorien_gal_royal_archer|Königlicher Scharfschütze der Galadhrim
-trp_a5_lorien_gal_royal_archer_pl|Königliche Scharfschützen der Galadhrim
+trp_galadhrim_royal_marksman|Königlicher Scharfschütze der Galadhrim
+trp_galadhrim_royal_marksman_pl|Königliche Scharfschützen der Galadhrim
 trp_noldorin_mounted_archer|Berittener Bogenschütze der Noldor
 trp_noldorin_mounted_archer_pl|Berittene Bogenschützen der Noldor
 trp_a2_lorien_archer|Bogenschütze von Lothlorien
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Geübter Bogenschütze von Lothlorien
 trp_a3_lorien_vet_archer_pl|Geübte Bogenschützen von Lothlorien
 trp_a4_lorien_gal_archer|Bogenschütze der Galadhrim
 trp_a4_lorien_gal_archer_pl|Bügenschützen der Galadhrim
-trp_galadhrim_royal_marksman|Königlicher Scharfschütze der Galadhrim
-trp_galadhrim_royal_marksman_pl|Königliche Scharfschützen der Galadhrim
+trp_a5_lorien_gal_royal_archer|Königlicher Scharfschütze der Galadhrim
+trp_a5_lorien_gal_royal_archer_pl|Königliche Scharfschützen der Galadhrim
 trp_i3_lorien_inf|Schwerträger von Lothlorien
 trp_i3_lorien_inf_pl|Schwerträger von Lothlorien
 trp_i4_lorien_gal_inf|Fußsoldat der Galadhrim
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|zur Baumfeste
 trp_barman_thalls|Wirt
 trp_barman_thalls_pl|zum Thronsaal
 trp_barman_beorn|Wirt
-trp_barman_beorn_pl|zu Beorns Haus
+trp_barman_beorn_pl|Beorns Halle
 trp_barman_moria|Wirt
 trp_barman_moria_pl|zum Saal des Häuptlings
 trp_barman_dale|Wirt

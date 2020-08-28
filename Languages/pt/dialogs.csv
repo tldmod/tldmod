@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Obrigado, Mestre. Você ficará satisfeito pela forma como este Troll será colocada em bom uso.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Obrigado, senhor. Mas eu não sou valor de seu grande presente . É muito perigoso para mim .
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Obrigado, senhor. Mas eu não sou valor de seu grande presente. [há espaço na festa!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Mestre, eu trarei maior caos , se você também fornecer uma armadura para a besta [10/{reg20} influência].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Você está questionando as habilidades de seu Mestre {playername}? Esta besta é treinado para atacar os inimigos à vista. Isto é suficiente. Mas , você e seus guerreiros manter a devida distância do animal quando ele luta , e nunca se interpor entre ele e suas vítimas.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Agora traga estragos aos meus inimigos com o seu novo dom
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Como quiser, então. Alguém mais entre os meus servos, conhecido como usar essa poderosa ferramenta de guerra
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Você ousa pedir uma batalha Troll totalmente blindado,{playername}, para manter sob o seu comando ? Isso não é uma coisa pequena para pedir. Mas você é um funcionário qualificado, e nós sabemos que suas motivações . Nós gostamos disso. O prémio será concedido .
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Como se atreve a pedir -nos para mais do que temos planejado para você em nosso grande sabedoria ? {playername}, você provou ser um poderoso servo hoje, mas não deixe que sua insolência testar qualquer nova Nossa paciência .
 dlga_lord_capture_troll_completed_one_troll:close_window|Excelente, {playername}. Você é um servo mais fiel e útil. Este Troll será mais útil para os nossos propósitos . Isso é levado para as masmorras !
 ; dlga_lord_start:close_window.1|Too long ago, I asked you to take me one troll alive. But I should have known. How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.
 dlga_lord_start:lord_generic_mission_completed.1|Notícias de sua realização contra os trolls selvagens me atingiu. {s12}tem um medo menos para se preocupar , graças a você, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|Eu gostaria de ter um conselho com você sobre a Gue
 dlga_marshall_ask:lord_pretalk|Eu dificilmente seguir o conselho se você é meramente {s25}, {playername}.  Eu teria sido mais inclinados a ouvir , se você fosse {s24}, mas você não é.
 dlga_marshall_ask:lord_pretalk.1|Você é um comandante realizado, {playername}, mas sua influência está diminuindo. Não seria prudente para ouvir seus conselhos.^[{reg15} influência necessária , única {reg14}realizada]
 dlga_marshall_ask:lord_pretalk.2|Dificilmente podemos dar ao luxo de enfrentar o inimigo na força bruta  {playername}. precisamos construir nossas forças e tornar-se forte , infelizmente somos apenas {s23}.
-dlga_marshall_ask:lord_pretalk.3|Estamos em uma campanha, {playername},  o seu conselho teria de esperar .
 dlga_marshall_ask:marshall_suggest|Eu estou ouvindo, {playername}. O que você sugere?
 dlga_marshall_suggest:marshall_answer|Devemos andar para sitiar {s1} ao mesmo tempo.
 dlga_marshall_suggest:lord_pretalk|Nunca mente, eu confio em seu julgamento .

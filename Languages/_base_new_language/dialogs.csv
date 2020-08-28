@@ -1039,6 +1039,7 @@ dlga_mayor_talk_ask_companion:mayor_talk_companion_thanks|{s55}
 dlga_mayor_talk_ask_companion:mayor_talk_companion_no_thanks|{s55}
 dlga_mayor_talk_companion_thanks:mayor_talk|{s55}
 dlga_mayor_talk_companion_no_thanks:mayor_talk|{s55}
+dlga_mayor_talk:mayor_friendly_pretalk|Increase Relation
 dlga_mayor_talk:close_window|[Leave]
 dlga_mayor_info_begin:mayor_info_talk|I am the local authority here in {s9}. You can say I am in charge of everyday tasks. There is always something to do, so if you want to help let me know.
 dlga_mayor_info_talk:mayor_info_lord|Who rules this town?
@@ -1170,6 +1171,7 @@ dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a fugitive by 
 dlga_town_dweller_ask_fugitive:close_window|Strangers come and go to our town. If he is hiding here, you will surely find him if you look around.
 dlga_town_dweller_talk:town_dweller_ask_info|What can you tell me about this village?
 dlga_town_dweller_talk:town_dweller_ask_info.1|What can you tell me about this place?
+dlga_town_dweller_ask_info:town_dweller_talk|{s10}
 dlga_town_dweller_talk:town_dweller_talk|How is life here?
 dlga_town_dweller_talk:town_dweller_ask_rumor|What is the latest rumor around here?
 dlga_town_dweller_ask_rumor:town_dweller_talk|I don't know anything that would be of interest to you.

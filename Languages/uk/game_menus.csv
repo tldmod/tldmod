@@ -434,12 +434,16 @@ menu_death|Вас вбили. Війна триває, але вже без ва
 menu_animal_ambush|Заблукавши, ви трохи відстали від своїх, як раптом...
 menu_animal_ambush_success|{s2} {reg0?впали:впав} перед вами, як пшениця для коси! Незабаром всі ваші нападники лежать на підлозі, поранені або мертві. {S3}
 menu_animal_ambush_fail|Тварини мучать кусають вас {reg0?,: ви та ваш соратник {reg2?s,:,}} але вам вдається відірватися від ворога. Ви сподіваєтеся, що вас не стануть переслідувати.
-menu_build_your_scene|Ви можете створити ваше власне місце битви тут, використовуючи один з слотів, наданих нижче і ігровий режим редагування (вам необхідно включити Edit Mode в лаунчері M & B на екрані налаштувань). Ви можете потім представити вашу створену локацію (а саме, файли sco з папки TLD / SceneObj) команді TLD, і, якщо ваша локація вдалася, вона може з'явитися в наступних випусках як одна з випадкових полів битв!^^ Спробуйте визначити, на якій області карти повинна з'являтися ваша локація. ^ Пара підказок: уникайте глибокої води, крутих гір і інших непрохідних місць, якщо тільки ви не досвідчений творець локацій і знаєте, як перешкодити переміщенню солдат AI в непотрібні місця і направити їх в потрібні.^ (Вхід # 0 -1 для атакуючих, # 4 для захисників, не чіпати # 5-8
-mno_scene1|Поле битви5 (file scn battlefield5.sco)
-mno_scene2|Поле битви6 (file scn battlefield5.sco)
-mno_scene3|Поле битви7 (file scn battlefield5.sco)
-mno_scene4|Поле битви8 (file scn battlefield5.sco)
-mno_scene5|Поле битви9 (file scn battlefield5.sco)
+; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+; mno_scene1|Plain Big (file scn custom 1.sco)
+; mno_scene2|Plain Med (file scn custom 2.sco)
+; mno_scene3|Plain Small (file scn custom 3.sco)
+; mno_scene4|Steppe Big (file scn custom 4.sco)
+; mno_scene5|Steppe Med (file scn custom 5.sco)
+; mno_scene6|Steppe Small (file scn custom 6.sco)
+; mno_scene7|Forest Big (file scn custom 7.sco)
+; mno_scene8|Forest Med (file scn custom 8.sco)
+; mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|Назад...
 mno_back|Повернутись назад.
 mno_next|Далі...

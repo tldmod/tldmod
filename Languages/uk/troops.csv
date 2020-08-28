@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Королівський страж галадр�
 trp_a5_lorien_gal_royal_warden_pl|Королівські стражі галадрім
 ; trp_a6_lorien_grey_warden|Grey Warden
 ; trp_a6_lorien_grey_warden_pl|Grey Wardens
-trp_a5_lorien_gal_royal_archer|Влучний стрілець галадрім
-trp_a5_lorien_gal_royal_archer_pl|Влучні стрілки галадрім
+trp_galadhrim_royal_marksman|Влучний стрілець галадрім
+trp_galadhrim_royal_marksman_pl|Влучні стрілки галадрім
 trp_noldorin_mounted_archer|Нолдорський кінний лучник
 trp_noldorin_mounted_archer_pl|Нолдорські кінні лучники
 trp_a2_lorien_archer|Лоріенський лучник
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Лоріенський досвідчений стрі�
 trp_a3_lorien_vet_archer_pl|Лоріенські досвідчені стрільці
 ; trp_a4_lorien_gal_archer|Galadhrim Archer
 ; trp_a4_lorien_gal_archer_pl|Galadhrim Archers
-trp_galadhrim_royal_marksman|Влучний стрілець галадрім
-trp_galadhrim_royal_marksman_pl|Влучні стрілки галадрім
+trp_a5_lorien_gal_royal_archer|Влучний стрілець галадрім
+trp_a5_lorien_gal_royal_archer_pl|Влучні стрілки галадрім
 trp_i3_lorien_inf|Лоріенський піший воїн
 trp_i3_lorien_inf_pl|Лоріенський піший воїн
 ; trp_i4_lorien_gal_inf|Galadhrim Infantry
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|Дерев'яний замок
 trp_barman_thalls|Господар таверни
 trp_barman_thalls_pl|Тронна зала
 trp_barman_beorn|Господар таверни
-trp_barman_beorn_pl|Будинок Беорна
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Господар таверни
 trp_barman_moria_pl|палати Підгорного короля
 trp_barman_dale|Господар таверни

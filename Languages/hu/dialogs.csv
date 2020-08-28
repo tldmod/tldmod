@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Köszönöm, mester. Elégedett leszel azzal, hogy mit fog művelni ez a troll jó kezekben.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Köszönöm, mester. De nem vagyok méltó a nagyszerű ajándékodra. Túl veszélyes nekem.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Köszönöm, mester. De nem vagyok méltó a nagyszerű ajándékodra. [Nincs elég helyed a csapatodban!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Mester, nagyobb pusztítást tudnék okozni ha tudnál adni páncélzatot is a bestiának [10/{reg20} befolyás].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Megkérdőjelezed a Mestered képességeit, {playername}? A bestiát arra képezték ki, hogy megtámadja az ellenfelet, ahogy megpillantja azt. Ennek elégnek kell lennie. De, te és a katonáid jobb ha távolságot tartotok a bestiától, amíg az küzd, és soha ne álljatok közé és az áldozatai közé.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Most menj, és pusztítsd el az ellenfeleimet az új ajándékoddal!
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Legyen akkor úgy, ahogy akarod. Valamelyik más szolgám biztos tudni fogja hogyan használja ezt az hatalmas csataeszközt.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Te most egy teljesen felpáncélozott csatatrollt mersz követelni, {playername}, hogy a parancsnokságod alá helyezd? Nem egy kis dolgot kérsz. De te nem egy mindennapi szolga vagy, és ismerem a motivációidat. Ez tetszik nekünk. Megkapod, amit kérsz.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Hogy mersz Tőlünk többet kérni mint amit Mi odaterveztünk neked adni a Mi végtelen Bölcsességünkben? {playername}, ma egy hasznos Szolgának bizonyultál, de ne hagyd hogy a nagyképűséged akár egy pillanattal is tovább próbára tegye a Mi türelmünket.
 dlga_lord_capture_troll_completed_one_troll:close_window|Nagyszerű, {playername}. Te vagy a leghűségesebb és -hasznosabb szolgálóm. Ez a troll remekül fogja szolgálni a céljainkat. Vigyétek a várbörtönbe!
 dlga_lord_start:close_window.1|Megkértelek, már túl régen, hogy hozz nekem egy trollt, élve. De tudhattam volna. Hogy is várhattam el, hogy valaki, mint {playername} készen álljon a kihívásra. A szolgálóm nem volt elég ügyes vagy ügybuzgó.
 dlga_lord_start:lord_generic_mission_completed.1|A sikered híre a vad trollok ellen már a fülembe jutottak. {s12}-nak/nek egy dologgal kevesebbtől kel félnie, hála neked, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|Szeretnék önnel tanácskozni a háború menetérő
 dlga_marshall_ask:lord_pretalk|Aligha fogadnék el tanácsot egy hétköznapi {s25}-tól/től, {playername}. Előbb hallgatnék rád ha {s24} lennél, de nem vagy az.
 dlga_marshall_ask:lord_pretalk.1|Te egy sikeres parancsnok vagy, {playername}, de a befolyásod egyre csak csökken. Nem lenne túlzottan átgondolt dolog hallgatni a tanácsodra.^[{reg15} pontnyi befolyásra van szükséged, neked csak {reg14} van]
 dlga_marshall_ask:lord_pretalk.2|Aligha engedhetnénk meg magunknak hogy megütközzünk az ellenséggel, {playername}. Még mindig szükségünk van arra hogy növeljük a haderőnket és erősek legyünk, hiszen alig {s23} vagyunk.
-dlga_marshall_ask:lord_pretalk.3|Egy hadkampány közepén vagyunk, {játékosnév}, a tanácsodnak várnia kell.
 dlga_marshall_ask:marshall_suggest|Figyelek, {playername}. Mi a javaslatod?
 dlga_marshall_suggest:marshall_answer|Azonnal {s1} ostromára kéne lovagolnunk.
 dlga_marshall_suggest:lord_pretalk|Nem fontos, megbízok az ítéletedben.

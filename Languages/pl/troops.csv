@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Galadhrimski Królewski Strażnik
 trp_a5_lorien_gal_royal_warden_pl|Galadhrimskich Królewskich Strażników
 trp_a6_lorien_grey_warden|Szara Straż
 trp_a6_lorien_grey_warden_pl|Szarej Straży
-trp_a5_lorien_gal_royal_archer|Galadhrimski Królewski Mistrz Łuku
-trp_a5_lorien_gal_royal_archer_pl|Galadhrimskich Królewskich Mistrzów Łuku
+trp_galadhrim_royal_marksman|Galadhrimski Królewski Mistrz Łuku
+trp_galadhrim_royal_marksman_pl|Galadhrimskich Królewskich Mistrzów Łuku
 trp_noldorin_mounted_archer|Noldorski Strzelec Konny
 trp_noldorin_mounted_archer_pl|Noldorskich Strzelców Konnych
 trp_a2_lorien_archer|Strzelec Lothlorien
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Doborowy Strzelec Lothlorien
 trp_a3_lorien_vet_archer_pl|Doborowych Strzelców Lothlorien
 trp_a4_lorien_gal_archer|Galadhrimski Łucznik
 trp_a4_lorien_gal_archer_pl|Galadhrimskich Łuczników
-trp_galadhrim_royal_marksman|Galadhrimski Królewski Mistrz Łuku
-trp_galadhrim_royal_marksman_pl|Galadhrimskich Królewskich Mistrzów Łuku
+trp_a5_lorien_gal_royal_archer|Galadhrimski Królewski Mistrz Łuku
+trp_a5_lorien_gal_royal_archer_pl|Galadhrimskich Królewskich Mistrzów Łuku
 trp_i3_lorien_inf|Piechurów Lothlorien
 trp_i3_lorien_inf_pl|Piechurów Lothlorien
 trp_i4_lorien_gal_inf|Galadhrimski Piechur
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|the Tree castle
 trp_barman_thalls|Karczmarz
 trp_barman_thalls_pl|the Throne Room
 trp_barman_beorn|Karczmarz
-trp_barman_beorn_pl|Beorn House
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Karczmarz
 trp_barman_moria_pl|the Chief's Chamber
 trp_barman_dale|Karczmarz

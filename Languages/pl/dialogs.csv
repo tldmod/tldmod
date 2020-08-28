@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Dziękuję Mistrzu. Możesz być pewien, że ten trol zostanie dobrze wykorzystany.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Dziękuję Mistrzu. Jednak nie jestem godn{y/a} tak wielkiego daru. Jest to zbyt niebezpieczne dla mnie.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Dziękuję, panie. Ale nie jestem godzien twojego wspaniałego daru. [brak miejsca w oddziale!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Mistrzu, sprowadzę większy zamęt jeśli bestia otrzyma pancerz [10/{reg20} wpływów].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Wątpisz w zdolności swego Mistrza, {playername}? Bestia została wyszkolona do słuchania każdego rozkazu na polu bitwy. Sprowadzi zamęt w szeregach naszych wrogów. Jednakże, ty i twoi wojownicy nie zbliżajcie się nadto do besti gdy walczy, i nigdy nie stwajacie między jej ramionami a ich ofiarami.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|A teraz sprowadź spustoszenie na moich wrogów swym nowym darem
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Jak chcesz. Wśród mych sług jest nie jeden, który wie jak użyć tego potężnego narzędzia wojny.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Masz czelność prosić o w pełni opancerzonego bitewnego trola, {playername}? To nie jest mała prośba. Lecz jesteś doświadczonym sługą, i znamy twe zamiary. Podoba nam się to. Troll będzie na twoje rozkazy.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Jak śmiesz prosić nas o więcej aniżeli zapalnowaliśmy ci dać w naszej wielkiej Mądrości? {playername}, udowodnił{e/a}ś dziś swą przydatność, ale nie pozwól więcej zuchwalstwu testować naszej cierpliwości.
 dlga_lord_capture_troll_completed_one_troll:close_window|Doskonale, {playername}. Jesteś najwierniejszym i najużyteczniejszym z naszych sług. Trol bardzo nam się przyda.
 dlga_lord_start:close_window.1|Dawno temu prosiłem cie o sprowadzenie jednego żywego trola. Ale powinienem wiedzieć. Jak mogłem się spodziewać po kimś takim jak {playername} wykonania zadania. Mój sługa nie był wystarczająco doświadczony ani wierny.
 dlga_lord_start:lord_generic_mission_completed.1|Dotarła do mnie wiadomość o dzikim trolu. {s12} ma jeden powód do zmartwień mniej, dzięki tobie, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|Chciałbym pomówić z tobą o wojnie.
 dlga_marshall_ask:lord_pretalk|Trudno mi brać od ciebie rady, skoro jesteś zaledwie {s25}, {playername}. Być może posłuchałbym, gdybyś był {s24}, ale tak nie jest.
 dlga_marshall_ask:lord_pretalk.1|Jesteś doświadczonym dowódcą, {playername}, lecz twoja pozycja niska. Zasięgnięcie twej rady nie byłoby rozważne.^[{reg15} wpływów potrzebne, tylko {reg14} w posiadaniu]
 dlga_marshall_ask:lord_pretalk.2|Nie możemy pozwolić sobie na starcie z wrogiem obecnie, {playername}. Musimy rozbudować nasze wojsko i stać się silni, niestety teraz jesteśmy jedynie {s23}
-dlga_marshall_ask:lord_pretalk.3|Jesteśmy na wyprawie, {playername}, twoja rada musi zaczekać.
 dlga_marshall_ask:marshall_suggest|Słucham, {playername}. Co proponujesz?
 dlga_marshall_suggest:marshall_answer|Powinniśmy pojechać na oblężenie {s1}.
 dlga_marshall_suggest:lord_pretalk|Nieważne, ufam twoim wyborom.

@@ -336,8 +336,8 @@ trp_a5_lorien_gal_royal_warden|Galadhrim Royal Warden
 trp_a5_lorien_gal_royal_warden_pl|Galadhrim Royal Wardens
 trp_a6_lorien_grey_warden|Grey Warden
 trp_a6_lorien_grey_warden_pl|Grey Wardens
-trp_a5_lorien_gal_royal_archer|Galadhrim Royal Marksman
-trp_a5_lorien_gal_royal_archer_pl|Galadhrim Royal Marksmen
+trp_galadhrim_royal_marksman|Galadhrim Royal Marksman
+trp_galadhrim_royal_marksman_pl|Galadhrim Royal Marksmen
 trp_noldorin_mounted_archer|Noldorin Mounted Archer
 trp_noldorin_mounted_archer_pl|Noldorin Mounted Archers
 trp_a2_lorien_archer|Lothlorien Archer
@@ -346,8 +346,8 @@ trp_a3_lorien_vet_archer|Lothlorien Veteran Archer
 trp_a3_lorien_vet_archer_pl|Lothlorien Veteran Archers
 trp_a4_lorien_gal_archer|Galadhrim Archer
 trp_a4_lorien_gal_archer_pl|Galadhrim Archers
-trp_galadhrim_royal_marksman|Galadhrim Royal Marksman
-trp_galadhrim_royal_marksman_pl|Galadhrim Royal Marksmen
+trp_a5_lorien_gal_royal_archer|Galadhrim Royal Marksman
+trp_a5_lorien_gal_royal_archer_pl|Galadhrim Royal Marksmen
 trp_i3_lorien_inf|Lothlorien Infantry
 trp_i3_lorien_inf_pl|Lothlorien Infantry
 trp_i4_lorien_gal_inf|Galadhrim Infantry
@@ -1409,7 +1409,7 @@ trp_barman_camroth_pl|the Tree castle
 trp_barman_thalls|Tavern Keeper
 trp_barman_thalls_pl|the Throne Room
 trp_barman_beorn|Tavern Keeper
-trp_barman_beorn_pl|Beorn House
+trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Tavern Keeper
 trp_barman_moria_pl|the Chief's Chamber
 trp_barman_dale|Tavern Keeper

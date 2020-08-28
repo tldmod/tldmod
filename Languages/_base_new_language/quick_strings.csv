@@ -36,7 +36,7 @@ qstr_Gauntlet_wave:_{reg1|Gauntlet wave: {reg1}
 qstr_Remain_in_retirement|Remain in retirement.
 qstr_Go_back_to_the_adven|Go back to the adventuring.
 qstr_swy_ui_opacity|swy ui opacity
-    
+qstr_______|      
 qstr_A_peaceful_village_n|A peaceful village not far from Westfold...
 qstr_The_War_is_upon_Roha|The War is upon Rohan!
 qstr_Minas_Tirith___The_W|Minas Tirith - The White City
@@ -83,7 +83,7 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_an_URUK_HAI^_bred_in|an URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
-qstr__rev_9_wb__dev_^_Bui| rev 9 wb | dev ^ Built 2020-06-01 16:12   
+qstr__rev_71_wb__dev_^_Bu| rev 71 wb | dev ^ Built 2020-08-22 17:22   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
@@ -277,6 +277,7 @@ qstr_{s0}_{reg3?{reg3}:}_|{s0}, {reg3?{reg3}:} {s1} ({s2})
 qstr_{s0}^{reg3?{reg3}:}_|{s0}^{reg3?{reg3}:} {s1} ({s2})
 qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_^None|^None
+qstr_min:_{reg76};_max_{r|min: {reg76}; max {reg77}; level up: {reg78} rounds
 qstr_near_the_Great_East_|near the Great East Road, the abandoned old road
 qstr_near_what_is_left_of|near what is left of the Old Forest Road, the ancient dwarven path that used to cross the thick forest
 qstr_close_to_the_Hand_sh|close to the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc
@@ -653,8 +654,6 @@ qstr_mounted_archer|mounted archer
 qstr_support|support
 qstr_bodyguard|bodyguard
 qstr_undetermined_type_of|undetermined type of
-qstr_DEBUG:_Routed_Troops|DEBUG: Routed Troops: {reg10}, Routed Allies: {reg11}, Routed Enemies: {reg12}
-qstr_DEBUG:_Spawn_Allies:|DEBUG: Spawn Allies: {reg10}, Spawn Enemies: {reg11}
 qstr_{s1}_has_fled_the_ba|{s1} has fled the battle!
 qstr_Your_troops_are_at_{|Your troops are at {reg1}% cohesion (+{reg3}% bonus), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|Morale of your troops wavers!
@@ -842,7 +841,6 @@ qstr_You_rally_your_troop|You rally your troops!
 qstr_{s5}_rallies_{reg65?|{s5} rallies {reg65?her:his} troops!
 qstr_You_have_killed_{reg|You have killed {reg1} enemies in this battle!
 qstr_Your_bravery_inspire|Your bravery inspires your troops!
-qstr_player_{s5}_hit|player {s5} hit
 qstr_Your_mount_has_falle|Your mount has fallen to the ground beneath you!
 qstr_Receive_{reg22}_dama|Receive {reg22} damage.
 qstr_You_have_been_knocke|You have been knocked unconscious by {s22}.
@@ -874,9 +872,9 @@ qstr_Drive_them_back!|Drive them back!
 qstr_Protect_the_City!|Protect the City!
 qstr_Forward!_Board_them!|Forward! Board them!
 qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
+qstr_Attackers:_{reg1}/{r|Attackers: {reg1}/{reg3}/{reg5} Defenders: {reg0}/{reg2}/{reg4}
 qstr_DEBUG:_Attackers_go_|DEBUG: Attackers go back to regular attack mode
 qstr_DEBUG:_Attackers_do_|DEBUG: Attackers do not stall on ladders triggered
-qstr_Attackers:_{reg1}/{r|Attackers: {reg1}/{reg3}/{reg5} Defenders: {reg0}/{reg2}/{reg4}
 qstr_Reached_Gauntlet_wav|Reached Gauntlet wave {reg1}!
 qstr_Ballista:_out_of_amm|Ballista: out of ammo!
 qstr_Ballista:_turn_CURSO|Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fire T, exit F
@@ -1080,7 +1078,7 @@ qstr_Gandalf_would_like_t|Gandalf would like to have a little chat!
 qstr_Kham_Cheat_Mode_ON!|Kham Cheat Mode ON!
 qstr_1_troll_added!|1 troll added!
 qstr_Raft_Men_party_enabl|Raft Men party enabled. They are down River Running
-qstr_{reg63}_followers|{reg63} followers
+qstr_theater:_{reg0}|theater: {reg0}
 qstr_Orc_Horde_Spawned!|Orc Horde Spawned!
 qstr_Vet_Archer_Spawned!|Vet Archer Spawned!
 qstr_Killer_WItcher_Spawn|Killer WItcher Spawned, Badass King Theo added!
@@ -1332,6 +1330,7 @@ qstr_Reinforcements|Reinforcements
 qstr_Refugees_Escaped:_{r|Refugees Escaped: {reg10} --- Refugees Killed: {reg11}
 qstr_Raider_Parties_Kille|Raider Parties Killed: {reg12}
 qstr_One_of_the_target_ce|One of the target centers by the refugee trains have been destroyed. The refugees have scattered, and are nowhere to be found.
+qstr_quest_concluded|quest concluded
 qstr_As_an_Orc_or_a_Dwarf|As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.
 qstr_Custom_Camera|Custom Camera
 qstr_{reg65?my_Lady:my_Lo|{reg65?my Lady:my Lord}
@@ -1403,6 +1402,7 @@ qstr_Good_day_to_you.|Good day to you.
 qstr_Ah_it_s_you_again._G|Ah, it's you again. Goodbye.
 qstr_My_apologies_if_I_wa|My apologies if I was rude, earlier. What was your story again?
 qstr_I_was_reconsidering_|I was reconsidering our last conversation. What was your story again?
+qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|Greetings, {s23}, {s24}.
 qstr_Greetings_{s23}.|Greetings, {s23}.
 qstr_So_you_are_{s23}._I_|So, you are {s23}. I hear you fight for our {s25} friends, so I guess I should consider you an ally.
@@ -1666,7 +1666,7 @@ qstr_My_spies_tell_me_of_|My spies tell me of a large group of warriors gatherin
 qstr_{s9}_asked_you_to_sco|{s9} asked you to scout around {s13}.
 qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts.
 qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee!
-qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain 7 soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
+qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|We need to take the battle to the enemy, {playername}. At this moment, we can do this by striking at his patrols and communications. I want you to eliminate {reg1} {s13} parties, that would help us regain initiative.
 qstr_We_need_to_grind_dow|We need to grind down our worthless enemies, {playername}. Their patrols and supply trains are growing too bold for my liking. I want you to eliminate {reg1} {s13} parties, so they'll learn to fear what's coming.
 qstr_{s9}_asked_you_to_el|{s9} asked you to eliminate {reg1} {s13} parties.

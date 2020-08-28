@@ -884,6 +884,8 @@ qstr_Tripled|Triplicado
 qstr_Quadrupled|Quadruplicado
 qstr_You_drank_the_Ent_Wa|Você bebeu a água Ent...
 qstr_Fangorn_search:_fail|Busca Fangorn: falhou.
+qstr_^^^A_great_victory!^|^^^Uma grande vitória!^^^Então era isso o que todos os mitos sobre Fangorn queriam dizer...
+; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|Troll preso em gaiola de rodas
 qstr_A_second_troll_is_ca|Um segundo troll está preso em uma gaiola de rodas
 qstr_Here_you_are.|Aqui está você.
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|Bom dia para você.
 qstr_Ah_it_s_you_again._G|Ah, é você de novo. Adeus.
 qstr_My_apologies_if_I_wa|Minhas desculpas se eu fui rude, mais cedo. Qual foi sua história novamente?
 qstr_I_was_reconsidering_|Eu estava reconsiderando nossa última conversa. Qual foi sua história novamente?
+; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|Saudações, {s23}, {s24}.
 qstr_Greetings_{s23}.|Saudações, {s23}.
 qstr_So_you_are_{s23}._I_|Então você é {s23}. Eu ouço você lutar pelos nossos amigos {s25}, então eu acho que deveria considerá-lo um aliado
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|Meus espiões me falam de um grande grupo de guerreiro
 qstr_{s9}_asked_you_to_sco|{s9} pediu para um reconhecimento {s13}.
 qstr_We_have_reports_of_s|Temos relatos de alguma atividade inimiga perto de {s13}. Nossos batedores até agora não conseguiram chegar perto o suficiente e explorar a área em busca de idas e vindas inimigas. Eu quero que você monte uma festa de reconhecimento, chegue perto o suficiente para {s13}, e despache os batedores.
 qstr_My_spies_tell_me_the|Meus espiões me dizem que o inimigo está fazendo algo em {s13}. Nossos batedores covardes até agora não conseguiram chegar perto o suficiente e nos dizer qualquer coisa de importação. Quero que você recrute sua própria equipe de escoteiros, aproxime-se o suficiente de {s13} e deixe-os lá. Certifique-se de que eles não se vejam e fujam!
-qstr_{s9}_asked_you_to_di|{s9} pediu para você despachar uma equipe de escoteiros perto de {s13}.^Obtenha 7 soldados de {s15}, dos quais pelo menos 1 é {s14}, aproxime-se de {s13} e fale com {s14} para despachar festa.
+; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|Precisamos levar a batalha para o inimigo, {playername}. Neste momento, podemos fazer isso atacando suas patrulhas e comunicações. Eu quero que você elimine {reg1} {s13} festas, que nos ajudariam a recuperar a iniciativa.
 qstr_We_need_to_grind_dow|Precisamos esmagar nossos inimigos sem valor, {playername}. Suas patrulhas e trens de suprimentos estão ficando muito ousados ​​para o meu gosto. Eu quero que você elimine {reg1} {s13} festas, para que elas aprendam a temer o que está por vir.
 qstr_{s9}_asked_you_to_el|{s9} pediu-lhe para eliminar {reg1} {s13} partes.
@@ -1550,7 +1553,7 @@ qstr_slaves|escravos
 qstr__Guards_slaughter_hi|Guardas, abatam ele!
 qstr_Slaughter_him_for_fr|Abatam ele para carne humana fresca!
 ; qstr_This_is_{s5}_Command|This is {s5}, Commander.
-; qstr_{s6}_This_place_and_t|{s6} This place and the surrounding lands belong to {s7} of {s8}.
+; qstr_{s6}_This_place_and_|{s6} This place and the surrounding lands belong to {s7} of {s8}.
 ; qstr_Hey_scum!_I_can_fix_|Hey scum! I can fix that jaw of yours.
 ; qstr_Watch_where_you_re_g|Watch where you're going, maggot!
 ; qstr_I_don_t_like_your_fa|I don't like your face! I think it needs some fixing.

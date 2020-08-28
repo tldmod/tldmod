@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|감사합니다, 마스터. 당신이 기뻐할 만큼 유용하게 쓰겠습니다.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|감사합니다, 마스터. 하지만 그 선물은 받을 수 없을 것 같습니다. 제겐 너무 위험해요.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|감사합니다, 마스터. 하지만 그 선물은 받을 수 없습니다. [부대 상한 초과!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|마스터, 놈들의 갑옷도 제공해 준다면 더 확실히 박살내겠습니다. [10/{reg20} 영향력]
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|네 주인의 능력을 의심하는 건가 {playername}? 이놈들은 시야에 들어 오는 적들을 공격하도록 훈련됐다. 이거면 충분하지. 하지만 놈이 싸울 땐 거리를 두고, 절대 놈과 공격 대상 사이에 있으면 안 돼.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|이제 내가 준 선물로 내 적들을 박살내버려라!
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|그렇다면 어쩔 수 없군. 내 종들 중 다른 누군가가 이 전쟁도구를 써야겠지.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|감히 완전 무장한 전투 트롤을 요구하는군 {playername}? 그것도 네 명령에만 따르는. 너무 과한 요구야. 하지만 넌 숙련된 종이고 우린 너의 동기를 알지. 마음에 드는 군, 그렇게 해 주마.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|네가 감히 우리의 위대한 지혜로 너에게 예비한 것 이상을 요구하느냐? {playername}, 넌 오늘 강력한 '종'임을 증명했지, 허나 더 이상의 건방짐으로 우리의 인내심을 시험하려 들지 말라.
 dlga_lord_capture_troll_completed_one_troll:close_window|훌륭하군, {playername}. 넌 가장 유용하고 충실한 종이다. 이 트롤은 우리의 목적에 가장 유용한 자원이 될 것이야. 지하감옥에 가져다 놔라!
 dlga_lord_start:close_window.1|오래 전, 네게 트롤 하나를 생포해 오라 했지. 하지만 내가 어리석었군. 어떻게 {playername}같은 녀석이 그런 도전을 해내길 기대할 수 있는 건지. 내 종은 충실하지도 숙련되지도 못했구나.
 dlga_lord_start:lord_generic_mission_completed.1|자네가 야생 트롤을 상대로 이룬 업적에 대해 들었네. {s12}는 걱정거리를 하나 덜었군. 고맙네 {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|그대와 전쟁에 대하여 상의할 것이 있�
 dlga_marshall_ask:lord_pretalk|당신이 {s25}, {playername}에 불과하다면 그대의 충고는 별 의미가 없을 것 같군. 만약 그대가 {s24}였다면 조언을 받아들이겠지만, 그렇지 않은 것 같군.
 dlga_marshall_ask:lord_pretalk.1|{playerame}은 뛰어난 지휘관이지만 충분한 영향력을 갖고 있지 않은 것 같군. 그대의 충고를 듣는 것은 신중하지 못한 일이야. ^[{reg15}만큼의 영향력 필요, {reg14}만큼만 보유 중.]
 dlga_marshall_ask:lord_pretalk.2|적과 정면으로 맞설 수는 없네, {playername}. 우리는 병력을 더 모으고 강해져야하네. 아아, 우리는 {s23} 명의 병사 밖에 없지 않은가.
-dlga_marshall_ask:lord_pretalk.3|우리는 군사작전에 참여 중이네, {playername}. 그대의 조언은 조금 더 기다려야겠군.
 dlga_marshall_ask:marshall_suggest|듣고 있네, {playername}. 뭘 제안할 건가?
 dlga_marshall_suggest:marshall_answer|우리는 즉시 이동해 {s1}을 포위해야합니다.
 dlga_marshall_suggest:lord_pretalk|신경쓰지 말게. 나는 그대의 판단을 믿는다네.

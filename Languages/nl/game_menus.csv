@@ -434,12 +434,16 @@ menu_death|Je bent gedood, Hoewel de oorlog nog steeds woedt, zal je er niet lan
 menu_animal_ambush|U en uw gezelschap zijn gescheiden van de rest van uw partij, wanneer plotseling...
 menu_animal_ambush_success|De {s2} {reg0?fall:falls} Valt voor je als een tarwe aan ene zeis! Al snel liggen al uw aanvallers op de vloer, dood of gewond. {s3}
 menu_animal_ambush_fail|De dieren bijten en verscheuren je{reg0?,: and your companion{reg2?s,:,}} maar gelukkig slaag je erin om hen af te weren. Hopelijk vallen ze je niet meer aan.
-menu_build_your_scene|U kunt uw eigen battlescene hier te bouwen, met behulp van een van de sleuven hieronder en game Edit mode (je nodig hebt om edit mode Schakel eerst in M & B lauching scherm Opties). Vervolgens kunt u indienen scènes u geconstrueerd (namelijk SCO bestanden van TLD / SceneObj map) naar het dev team van TLD, en als uw scène is goed, het kan in latere releases als een van willekeurige slagvelden! ^^ Probeer aan te geven welke regio op de kaart u wilt dat uw scene te verschijnen ^ Paar tips:. vermijd diep water, steile bergen en andere onbegaanbare plaatsen, tenzij je ervaren scene-maker en weten hoe AI troepen bar van het lopen, waar je ze niet wilt, en maken AI maas in andere plaatsen. ^ (Inzendingen # 0-1 zijn voor aanvallers, # 4 voor verdedigers, niet aanraken # 5-8
-mno_scene1|Slachtveld5 (file scn battlefield5.sco)
-mno_scene2|Slachtveld6 (file scn battlefield6.sco)
-mno_scene3|Slachtveld7 (file scn battlefield6.sco)
-mno_scene4|Slachtveld8 (file scn battlefield6.sco)
-mno_scene5|Slachtveld9 (file scn battlefield6.sco)
+; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+; mno_scene1|Plain Big (file scn custom 1.sco)
+; mno_scene2|Plain Med (file scn custom 2.sco)
+; mno_scene3|Plain Small (file scn custom 3.sco)
+; mno_scene4|Steppe Big (file scn custom 4.sco)
+; mno_scene5|Steppe Med (file scn custom 5.sco)
+; mno_scene6|Steppe Small (file scn custom 6.sco)
+; mno_scene7|Forest Big (file scn custom 7.sco)
+; mno_scene8|Forest Med (file scn custom 8.sco)
+; mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|Terug...
 mno_back|Ga terug.
 mno_next|Volgende...

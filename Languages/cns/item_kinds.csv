@@ -32,7 +32,7 @@ itm_rohirrim_courser|洛汗骏马
 itm_rohirrim_hunter|洛汗猎马
 ; itm_rohirrim_courser2|Rohirrim Armoured Courser
 itm_rohan_warhorse|洛汗战马
-; itm_thengel_warhorse|Eorl Warhorse
+itm_thengel_warhorse|伊欧战马
 itm_rhun_horse_a|卢恩马
 itm_rhun_horse_b|卢恩马
 itm_rhun_horse_d|卢恩马
@@ -83,7 +83,7 @@ itm_isengard_arrow|艾辛格箭
 itm_leather_gloves|皮手套
 itm_mail_mittens|链甲手套
 itm_leather_boots|皮靴
-; itm_leather_boots_dark|Rider Boots
+itm_leather_boots_dark|骑兵靴
 ; itm_splinted_greaves|Splinted Greaves
 itm_white_tunic_a|平民服装
 itm_rohan_shoes|皮鞋
@@ -155,8 +155,8 @@ itm_riv_shield_a|瑞文戴尔盾
 itm_riv_shield_b|瑞文戴尔盾
 itm_riv_bas_sword|瑞文戴尔变种剑
 itm_riv_1h_sword|瑞文戴尔剑
-; itm_riv_riding_sword|Rivendell Longsword
-; itm_riv_archer_sword|Rivendell Short Sword
+itm_riv_riding_sword|瑞文戴尔长剑
+itm_riv_archer_sword|瑞文戴尔短剑
 itm_riv_spear|瑞文戴尔长枪
 ; itm_riv_light|Rivendell Tunic
 ; itm_riv_leather|Rivendell Leather Armor
@@ -499,10 +499,10 @@ itm_mirkwood_heavy_scale|幽暗密林叶鳞甲
 ; itm_mirkwood_war_spear|Greenwood War Spear
 ; itm_mirkwood_short_spear|Woodelf Spear
 ; itm_mirkwood_knife|Woodelf Knife
-; itm_mirkwood_axe|Woodelf Axe
-; itm_mirkwood_spear_shield_a|Woodelf Shield
+itm_mirkwood_axe|木精灵斧
+itm_mirkwood_spear_shield_a|木精灵盾
 ; itm_mirkwood_spear_shield_b|Greenwood War Shield
-; itm_mirkwood_spear_shield_c|Woodelf Round Shield
+itm_mirkwood_spear_shield_c|木精灵圆盾
 ; itm_mirkwood_helm_a|Woodelf Archer Helm
 ; itm_mirkwood_helm_b|Greenwood Helm
 ; itm_mirkwood_helm_c|Greenwood Heavy Helm
@@ -632,6 +632,7 @@ itm_dale_med_d|河谷镇板甲
 itm_dale_heavy_a|河谷镇罩锁甲板甲
 itm_dale_heavy_b|河谷镇加强外套
 itm_dale_heavy_c|罗马尼安链甲
+; itm_north_leather|Northmen Leather Vest
 itm_dale_armor_l|河谷镇贵族饰领
 itm_dale_helmet_a|河谷镇步兵轻型盔
 itm_dale_helmet_b|河谷镇射手轻型盔

@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|Galadhrimský královský dozorce
 trp_a5_lorien_gal_royal_warden_pl|Galadrimští královští dozorci
 trp_a6_lorien_grey_warden|Šedý strážce
 trp_a6_lorien_grey_warden_pl|Šedí strážci
-trp_a5_lorien_gal_royal_archer|Galadhrimský královský lučištník
-trp_a5_lorien_gal_royal_archer_pl|Galadhrimští královští lučištníci
+trp_galadhrim_royal_marksman|Galadhrimský královský ostrostřelec
+trp_galadhrim_royal_marksman_pl|Galadhrimští královští ostrostřelci
 trp_noldorin_mounted_archer|Noldorský lučištník na koni
 trp_noldorin_mounted_archer_pl|Noldorští ličištníci na koni
 trp_a2_lorien_archer|Lothlorienský lučištník
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|Lothlorienský zkušený lučištník
 trp_a3_lorien_vet_archer_pl|Lothlorienští zkušení lučištníci
 trp_a4_lorien_gal_archer|Galadhrimský lučištník
 trp_a4_lorien_gal_archer_pl|Galadhrimští lučištníci
-trp_galadhrim_royal_marksman|Galadhrimský královský ostrostřelec
-trp_galadhrim_royal_marksman_pl|Galadhrimští královští ostrostřelci
+trp_a5_lorien_gal_royal_archer|Galadhrimský královský lučištník
+trp_a5_lorien_gal_royal_archer_pl|Galadhrimští královští lučištníci
 trp_i3_lorien_inf|Lothlorienský pěšák
 trp_i3_lorien_inf_pl|Lothlorienští pěšáci
 trp_i4_lorien_gal_inf|Galadhrimský  pěšák
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|hradu ve sromech
 trp_barman_thalls|majitel krčmy
 trp_barman_thalls_pl|trůnního sálu
 trp_barman_beorn|majitel krčmy
-trp_barman_beorn_pl|Meddědova domu
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|majitel krčmy
 trp_barman_moria_pl|náčelníkovy komnaty
 trp_barman_dale|majitel krčmy

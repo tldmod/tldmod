@@ -884,6 +884,8 @@ qstr_Tripled|Üç Katına
 qstr_Quadrupled|Dört Katına
 qstr_You_drank_the_Ent_Wa|Ent suyunu içiyorsun...
 qstr_Fangorn_search:_fail|Fangorn araştırması: başarısız.
+qstr_^^^A_great_victory!^|^^^Büyük bir zafer!!^^^Demek ki Fangorn ile ilgili söylentiler bu anlama geliyormuş...
+; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|Trol tekerlekli kafese hapsedildi.
 qstr_A_second_troll_is_ca|İkinci trol tekerlekli kafese hapsedildi.
 qstr_Here_you_are.|İşte buradasın.
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|İyi günler sana.
 qstr_Ah_it_s_you_again._G|Ah, yine sen. Hoşçakal.
 qstr_My_apologies_if_I_wa|Eger daha önce kabalaştı isem özür dilerim. Hikayenizi tekrar dinleyebilir miyim?
 qstr_I_was_reconsidering_|Son konuşmamızı gözden geçiriyordum. Hikayenizi tekrar dinleyebilir miyim?
+; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|Selamlar, {s23}, {s24}.
 qstr_Greetings_{s23}.|Selamlar, {s23}.
 qstr_So_you_are_{s23}._I_|İşte buradasın {s23}. Senin {s25} arkadaşlarım için savaştıgını duydum, bu yüzden sanırım seni müttefik olarak görmeliyiz.
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|Casuslarım bana {s13} 'te toplanan büyük bir savaş
 qstr_{s9}_asked_you_to_sco|{s9} senden {s13} civarında gözcülük yapmanı istedi.
 qstr_We_have_reports_of_s|{s13} yakınlarındaki bazı düşman aktiviteleri hakkında raporlar var. İzcilerimiz şu ana kadar yeterince yakınlaşamadı ve düşman aktivitelerini gözlemleyemedi. İzci grubu hazırlamanı, {s13} 'e yeteri kadar yaklaşmanı ve izcileri göndermeni istiyorum.
 qstr_My_spies_tell_me_the|{s13} yakınlarındaki bazı düşman aktiviteleri hakkında raporlar var.Korkak izcilerimiz şu ana kadar yeterince yakınlaşamadı ve düşman aktivitelerini gözlemleyemedi. İzci grubu hazırlamanı, {s13} 'e yeteri kadar yaklaşmanı ve izcileri göndermeni istiyorum.Onların da kaçmayacaklarına emin ol!
-qstr_{s9}_asked_you_to_di|{s9}, {s13} yakınlarında bir keşif grubu göndermenizi rica etti.7  {s15} askeri olmalı ve bunlardan en az birisi {s14} olamalı. {s13}'e yaklaş ve {s14} ile grubu sevk etmek için konuş.
+; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|Düşmanlarımızı ezip geçmeliyiz {playername}. Şu anda, bunu onların devriyelerine ve iletişim araçlarına saldırarak yapabiliriz. Senden {reg1} {s13} grupunu yok etmeni istiyorum, Bu savaşta inisiyatifin yeniden kazanılmasına yardımcı olur.
 qstr_We_need_to_grind_dow|Degersiz düşmanlarımızı ezip geçmeliyiz {playername}. Devriyeleri ve erzak karavanları çok cesur davramaya başladılar. Senden {reg1} {s13} grubunu yok etmeni istiyorum, böylece başlarına geleceklerden korkmayı ögrenecekler.
 qstr_{s9}_asked_you_to_el|{s9} senden {reg1} {s13} grubunu yok etmeni istedi.
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|{s10}'nün yaşlısı {s11} senden {s13}'e biraz {s12}
 qstr__Guards_slaughter_hi|Muhafızlar, öldürün onu!
 qstr_Slaughter_him_for_fr|Taze İnsan eti için onu öldürün!
 qstr_This_is_{s5}_Command|Bu {s5}, Komutanım.
-qstr_{s6}_This_place_and_t|{s6} Burası ve çevredeki araziler {s8}'den {s7} 'e ait.
+qstr_{s6}_This_place_and_|{s6} Burası ve çevredeki araziler {s8}'den {s7} 'e ait.
 qstr_Hey_scum!_I_can_fix_|İstersen çenenin şeklini düzeltebilirim, seni pislik!
 qstr_Watch_where_you_re_g|Nereye gittigine dikkat et, ezik herif!
 qstr_I_don_t_like_your_fa|Senin yüzünü begenmedim. Bence biraz düzeltilmeye ihtiyacı var.

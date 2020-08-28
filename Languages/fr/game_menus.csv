@@ -434,12 +434,16 @@ menu_death|Vous avez été tué. Bien que la guerre se poursuit, vous n'en ferez
 menu_animal_ambush|Vous et vos compagnons ont été séparés du reste de votre groupe, lorsque soudain...
 menu_animal_ambush_success|Les {s2} {reg0?tombe:tombent} devant vous comme le blé devant la faux ! Bientôt, tous vos assaillants gisent sur le sol, blessés ou morts. {s3}
 menu_animal_ambush_fail|Les animaux vous mordent et déchirent vos vêtements {reg0?,: et ceux de vos compagnon{reg2?s,:,}} mais par chance vous arrivez à vous dégager. Ils ne devraient plus vous attaquer.
-menu_build_your_scene|Vous pouvez construire votre propre scène de bataille ici en utilisant l'un des slots fournis ci-dessous et le mode d'édition du jeu (vous devez auparavant activer le mode d'édition dans l'écran de lancement de M&B). Vous pouvez ensuite soumettre les scènes construites aux développeurs de TLD (c'est-à-dire les fichiers sco du dossier TLD/SceneObj), et si votre scène est correcte elle pourra apparaître dans les prochaines versions sous la forme de terrains de bataille aléatoires !^^ Essayez de préciser sur quelle région de la carte vous voulez que votre scène apparaisse.^ Quelques astuces : évitez l'eau profonde, les montagnes abruptes et autres endroits inaccessibles, à moins que vous ne soyez un monteur de scènes expérimenté et sachiez comment empêcher les troupes IA de marcher où vous ne voulez pas, et faire l'IA se diriger ailleurs.^ (Les entrées #0-1 sont pour les attaquants, #4 pour les défenseurs, ne touchez pas aux numéros 5 à 8)
-mno_scene1|Champ de bataille 5 (fichier scn battlefield5.sco)
-mno_scene2|Champ de bataille 6 (fichier scn battlefield6.sco)
-mno_scene3|Champ de bataille 7 (fichier scn battlefield7.sco)
-mno_scene4|Champ de bataille 8 (fichier scn battlefield8.sco)
-mno_scene5|Champ de bataille 9 (fichier scn battlefield9.sco)
+menu_build_your_scene|Vous pouvez construire votre propre scène de bataiolle en utilisant l'un des emplacements prévus ci-dessous et le mode d'édition du jeu (vous devez d'abord activer le mode d'édition dans les options de l'écran de lancement de M&B, puis appuyer sur Ctrl+E dans une scène pour accéder au mode d'édition). Vous pourrez ensuite soumettre les scènes que vous avez construites (à savoir, les fichiers sco du dossier TLD/SceneObj) à l'équipe de développement de TLD et, si votre scène est bonne, elle pourra apparaître dans une version ultérieure comme l'un des champs de bataille aléatoires !^^ Essayez de spécifier la région de la carte où vous voulez que votre scène apparaisse.^ Quelques conseils : évitez les eaux profondes, les montagnes escarpées et autres endroits infranchissables, à moins que vous ne soyez expérimenté dans la construction de scènes et que vous sachiez comment empêcher les troupes d'IA de marcher là où vous ne voulez pas qu'elles aillent, et faire des maillages d'IA dans d'autres endroits.^ (Les entrées #0-1 sont pour les attaquants, #4 pour les défenseurs, ne touchez pas aux entrées #5-8)
+mno_scene1|Grande plaine (fichier scène custom 1.sco)
+mno_scene2|Plaine moyenne (fichier scène custom 2.sco)
+mno_scene3|Petite plaine (fichier scène custom 3.sco)
+mno_scene4|Grande steppe (fichier scène custom 4.sco)
+mno_scene5|Steppe moyenne (fichier scène custom 5.sco)
+mno_scene6|Petite steppe (fichier scène custom 6.sco)
+mno_scene7|Grande forêt (fichier scène custom 7.sco)
+mno_scene8|Forêt moyenne (fichier scène custom 8.sco)
+mno_scene9|Petite forêt (fichier scène custom 9.sco)
 mno_back_3dot|Retour...
 mno_back|Retour.
 mno_next|Suivante...

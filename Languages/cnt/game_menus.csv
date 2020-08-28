@@ -434,12 +434,16 @@ menu_death|你 已 經 被 殺 害 。 雖 然 戰 爭 仍 舊 火 熱 ， 但 �
 menu_animal_ambush|你 和 你 的 同 伴 發 現 跟 其 他 人 走 散 了，突 然 間...
 menu_animal_ambush_success|{s2}在 你 前 面 {reg0?倒 下 :倒 下 }如 同 割 下 的 小 麥 ！ 很 快 大 部 分 的 攻 擊 者 都 倒 地 ， 死 亡 或 瀕 死 。 {s3}
 menu_animal_ambush_fail|動 物 撕 咬 你 {reg0?,: 和 你 的 同 伴 {reg2?,:,}}但 幸 運 的 是 你 設 法 避 開 他  們 。 希 望 它 們 不 會 再 攻 擊 你 。 
-menu_build_your_scene|你 可 以 在 這 里 編 輯 你 自 己 的 戰 鬥 場 景 。 首 先 請 打 開 編 輯 模 式 ， 接 著 選 擇 下 方 顯 示 的 一 個 槽 (存 放 位 置 )。 你 可 以 把 自 己 的 作 品 提 交 給 TLD 開 發 團 隊 ， 如 果 你 做 的 很 好 ， 你 的 場 景 會 在 下 一 版 本 中 的 隨 機 戰 鬥 中 出 現 。 提 交 時 請 寫 出 名 字 ， 並 提 交 sco 文 件 或 SceneObj 文 件 夾 。 如 果 可 能 ， 你 可 以 試 著 做 一 個 位 於 中 土 大 陸 上 的 場 景 (譯 者 註 ： 即 能 體 現 當 地 民 族 或 地 理 的 特 色 )。 提 示 ： 不 要 做 深 水 或 高 山 ， 以 及 任 何 無 法 經 過 的 東 西 — — 除 非 你 是 一 個 資 深 的 場 景 制 作 師 並 且 明 白 如 何 用 路 點 是 AI 自 己 繞 開 那 些 東 西 。 ^ (條 目  #0-1 是 給 攻 擊 方 ，  #4 給 防 禦 方 ， 不 要 碰 #5-8
-mno_scene1|場 景 5 (file scn battlefield5.sco)
-mno_scene2|場 景 6 (file scn battlefield6.sco)
-mno_scene3|場 景 7 (file scn battlefield7.sco)
-mno_scene4|場 景 8 (file scn battlefield8.sco)
-mno_scene5|場 景 9 (file scn battlefield9.sco)
+; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+; mno_scene1|Plain Big (file scn custom 1.sco)
+; mno_scene2|Plain Med (file scn custom 2.sco)
+; mno_scene3|Plain Small (file scn custom 3.sco)
+; mno_scene4|Steppe Big (file scn custom 4.sco)
+; mno_scene5|Steppe Med (file scn custom 5.sco)
+; mno_scene6|Steppe Small (file scn custom 6.sco)
+; mno_scene7|Forest Big (file scn custom 7.sco)
+; mno_scene8|Forest Med (file scn custom 8.sco)
+; mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|返 回 ...
 mno_back|返 回
 mno_next|下 一 個...

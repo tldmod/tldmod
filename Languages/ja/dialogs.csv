@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|ありがとうございます、ご主人様。このトロルは、ご主人様のお気に召すよう、有効に使わせて頂きましょう。
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|ありがとうございます、ご主人様。しかし、この贈り物は、私には過ぎた物です。私には危険過ぎて扱いかねます。
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|ありがとうございます、ご主人様。しかし、この贈り物は、私には過ぎた物です。[パーティに空きがありません！]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|ご主人様、この獣に鎧をさずけて頂ければ、さらなる破壊をもたらしてくれることでしょう[10/{reg20}の影響力ポイントを消費します]。
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|おぬしの主人の能力を疑うのか、 {playername}？ この生き物は、 敵を見つけ次第、 攻撃する。 それで充分なのだ。 しかし、 おぬしらはこの獣が戦っているときは 充分な距離をとることだ。 くれぐれもこやつと獲物との間には立たぬようにな。
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|さあ、その贈り物を使い、 我らが敵に破壊をもたらしてやるがよい。
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|まあ、好きにするがよかろう。 我が下僕どもの中には、 この偉大なる武器を使いこなす者が他にいる。
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|ほほう、武装したトロルを指揮したいと申すのか、 {playername}？ それはささやかな望みとは言えぬぞ。 しかしおぬしは意欲に満ちた有能な下僕だ。 いいだろう。 おぬしの望みをかなえよう。
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|我らの綿密なる計画に口を挟むつもりか？ 思い上がるのもいい加減にせよ、 {playername}。 おぬしの強さは証明されたが、 わしの忍耐力を試そうというその尊大さは慎むがよい。
 dlga_lord_capture_troll_completed_one_troll:close_window|素晴らしいぞ、{playername}。 有能かつ忠実なる下僕よ。 このトロルは我々の計画に大いに役に立つであろう。 牢獄においてな！
 dlga_lord_start:close_window.1|ずいぶんと昔の話だ、 わしはおぬしに、 トロルを一頭、 生け捕りにしてくるよう頼んだ。 わしは愚かであった。 {playername}のような者に期待したのが、 そもそもの間違いだったのだ。 わしの下僕は無能で、 忠実さに欠けるようだな。
 dlga_lord_start:lord_generic_mission_completed.1|おぬしが野生のトロルを退治したという報せは聞いた。 これで{s12}にも少し平穏が戻るだろう。 感謝するぞ、{playername}。
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|戦争について協議をしたい。
 dlga_marshall_ask:lord_pretalk|おぬしが{s24}であれば話を聞こうとも思うが、 {s25}のような弱冠者ではなあ、 {playername}。
 dlga_marshall_ask:lord_pretalk.1|おぬしは立派な指揮官ではあるが、 {playername}、 おぬしの影響力については疑問だ。 おぬしの提案については慎重にならざるを得ない。^[影響力ポイントが{reg15}必要ですが、{reg14}しかありません]
 dlga_marshall_ask:lord_pretalk.2|我々はとてもではないが、 敵に真正面から挑める状態ではないぞ、 {playername}。 {s23}である現状を踏まえれば、 まだまだ兵を増強して戦力を蓄えるべきであろう。
-dlga_marshall_ask:lord_pretalk.3|我々は今、任務遂行中なのだ、 {playername}。 この任務を終えるまで待ってもらいたい。
 dlga_marshall_ask:marshall_suggest|聞こう、{playername}。 提案とは何か？
 dlga_marshall_suggest:marshall_answer|いますぐ{s1}を包囲するべきだ。
 dlga_marshall_suggest:lord_pretalk|なんでもない、そちらの判断にまかせる。

@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|ガラズリム 近衛巡視兵
 trp_a5_lorien_gal_royal_warden_pl|ガラズリム 近衛巡視兵
 trp_a6_lorien_grey_warden|灰色の巡視兵
 trp_a6_lorien_grey_warden_pl|灰色の巡視兵
-trp_a5_lorien_gal_royal_archer|ガラズリム 近衛狙撃兵
-trp_a5_lorien_gal_royal_archer_pl|ガラズリム 近衛狙撃兵
+trp_galadhrim_royal_marksman|ガラズリム 近衛狙撃兵
+trp_galadhrim_royal_marksman_pl|ガラズリム 近衛狙撃兵
 trp_noldorin_mounted_archer|ノルドール 弓騎兵
 trp_noldorin_mounted_archer_pl|ノルドール 弓騎兵
 trp_a2_lorien_archer|ロスローリエン 弓兵
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|ロスローリエン ベテラン弓兵
 trp_a3_lorien_vet_archer_pl|ロスローリエン ベテラン弓兵
 trp_a4_lorien_gal_archer|ガラズリム 狙撃兵
 trp_a4_lorien_gal_archer_pl|ガラズリム 狙撃兵
-trp_galadhrim_royal_marksman|ガラズリム 近衛狙撃兵
-trp_galadhrim_royal_marksman_pl|ガラズリム 近衛狙撃兵
+trp_a5_lorien_gal_royal_archer|ガラズリム 近衛狙撃兵
+trp_a5_lorien_gal_royal_archer_pl|ガラズリム 近衛狙撃兵
 trp_i3_lorien_inf|ロスローリエン 突撃兵
 trp_i3_lorien_inf_pl|ロスローリエン 突撃兵
 trp_i4_lorien_gal_inf|ガラズリム 突撃兵
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|木の上の城
 trp_barman_thalls|酒場の主人
 trp_barman_thalls_pl|王の間
 trp_barman_beorn|酒場の主人
-trp_barman_beorn_pl|ビヨルンの家
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|酒場の主人
 trp_barman_moria_pl|長の穴
 trp_barman_dale|酒場の主人

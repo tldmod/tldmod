@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Gracias, mi Amo. Te encantará el buen uso que haré del troll.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Gracias, mi Amo. Pero no soy {merecedor/merecedora} de tan gran regalo. Es demasiado peligroso para mí.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Gracias, mi Amo. Pero no merezco tan gran regalo. [¡No hay suficiente espacio en el grupo!] 
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Mi amo, causaré mayor destrucción si equipas a la bestia con una armadura [10/{reg20} de influencia].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|¿Estás dudando de la habilidad de tu Amo, {playername}? Esta bestia está entrenada para atacar a cualquier enemigo que vea. Con eso tendrás suficiente. Aunque tú y los tuyos deberíais mantener las distancias cuando la bestia luche, y nunca interponeros entre ella y sus víctimas.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Ahora lleva la destrucción a mis enemigos con tu nuevo regalo. 
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Como quieras. Algún otro de mis sirvientes sabrá como utilizar esta poderosa arma de guerra. 
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|¿Te atreves a pedirme un troll equipado con armadura de combate, {playername}? No se trata precisamente de algo nimio. Pero me has servido bien, y conocemos tus motivos. Eso nos gusta. Te será concedido.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|¿Cómo te atreves a pedirnos más de lo que Nuestra gran sabiduría ha pleneado para ti? {playername}, has probado ser {un valioso sirviente/una valiosa servidora} hasta hoy, pero no pongas a prueba mi paciencia con tu insolencia.
 dlga_lord_capture_troll_completed_one_troll:close_window|Excelente, {playername}. Eres {un útil y leal sirviente/una útil y leal servidora}. Este troll seá muy útil para nuestros propósitos. ¡Que lo lleven a las mazmorras!
 dlga_lord_start:close_window.1|Hace mucho tiempo te pedí que me trajeras un troll vivo. Pero debería haberlo sabido... ¿Cómo podría esperar que alguien como {playername} estuviera a la altura de la tarea? Mi {sirviente/servidora} no ha sido lo suficientemente hábil, ni leal.
 dlga_lord_start:lord_generic_mission_completed.1|Las noticias sobre tus hazañas contra los trolls salvajes han llegado a mis oídos. {s12} tiene un problema menos del que preocuparse, gracias a ti, {playername}.
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|Me gustaría tomar parte en un concilio sobre la Gue
 dlga_marshall_ask:lord_pretalk|Difícilmente recibiré consejo de {un/una} {s25}, {playername}. Estaría más dispuesto a escucharte si fueras {s24}, pero no es el caso.
 dlga_marshall_ask:lord_pretalk.1|Respeto tu pericia como capitán, {playername}, pero estás perdiendo influencia. No creo que sea conveniente seguir tus consejos.^[necesitas {reg15} de influencia, sólo tienes {reg14}]
 dlga_marshall_ask:lord_pretalk.2|De mala manera podríamos permitirnos hacer frente al nemigo de forma directa, {playername}. Todavía necesitamos reclutar a más soldados y fortalecernos. Por desgracia, nuestras tropas sólo están {s23}.
-dlga_marshall_ask:lord_pretalk.3|Estamos en plena campaña, {playername}, tus consejos tendrán que esperar.
 dlga_marshall_ask:marshall_suggest|Te escucho, {playername}. ¿Qué me aconsejas?
 dlga_marshall_suggest:marshall_answer|Deberíamos asediar {s1} inmediatamente.
 dlga_marshall_suggest:lord_pretalk|No importa, confío en tu buen juicio.

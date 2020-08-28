@@ -316,8 +316,8 @@ trp_a5_lorien_gal_royal_warden|凱 蘭 崔 姆 皇 家 守 望 者
 trp_a5_lorien_gal_royal_warden_pl|凱 蘭 崔 姆 皇 家 守 望 隊
 trp_a6_lorien_grey_warden|灰 袍 守 望 者
 trp_a6_lorien_grey_warden_pl|灰 袍 守 望 者
-trp_a5_lorien_gal_royal_archer|凱 蘭 崔 姆 皇 家 神 射 手 
-trp_a5_lorien_gal_royal_archer_pl|凱 蘭 崔 姆 皇 家 神 射 手 
+trp_galadhrim_royal_marksman|凱 蘭 崔 姆 皇 家 神 射 手 
+trp_galadhrim_royal_marksman_pl|凱 蘭 崔 姆 皇 家 神 射 手 
 trp_noldorin_mounted_archer|諾 多 馬 騎 弓 兵 
 trp_noldorin_mounted_archer_pl|諾 多 馬 騎 弓 兵
 trp_a2_lorien_archer|羅 斯 洛 立 安 弓 兵
@@ -326,8 +326,8 @@ trp_a3_lorien_vet_archer|羅 斯 洛 立 安 熟 練 弓 兵
 trp_a3_lorien_vet_archer_pl|羅 斯 洛 立 安 熟 練 弓 兵
 trp_a4_lorien_gal_archer|凱 蘭 崔 姆 弓 兵
 trp_a4_lorien_gal_archer_pl|凱 蘭 崔 姆 弓 兵
-trp_galadhrim_royal_marksman|凱 蘭 崔 姆 皇 家 神 射 手 
-trp_galadhrim_royal_marksman_pl|凱 蘭 崔 姆 皇 家 神 射 手 
+trp_a5_lorien_gal_royal_archer|凱 蘭 崔 姆 皇 家 神 射 手 
+trp_a5_lorien_gal_royal_archer_pl|凱 蘭 崔 姆 皇 家 神 射 手 
 trp_i3_lorien_inf|羅 斯 洛 立 安 步 兵 
 trp_i3_lorien_inf_pl|羅 斯 洛 立 安 步 兵 
 trp_i4_lorien_gal_inf|凱 蘭 崔 姆 步 兵
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|樹 城
 trp_barman_thalls|酒 館 老 闆
 trp_barman_thalls_pl|王 座 大 廳
 trp_barman_beorn|酒 館 老 闆
-trp_barman_beorn_pl|比 翁 之 屋
+; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|酒 館 老 闆
 trp_barman_moria_pl|首 領 的 房 間
 trp_barman_dale|酒 館 老 闆

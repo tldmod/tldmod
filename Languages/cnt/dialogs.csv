@@ -234,12 +234,9 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|感 謝 你，主 人。 你 會 對 這 個 食 人 妖 的 使 用 方 式 感 到 滿 意 的。
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|感 謝 您，主 人。但 我 配 不 上 這 份 大 禮，它 對 我 來 說 太 危 險 了。
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|感 謝 您，主 人。但 我 配 不 上 這 份 大 禮。 [隊 伍 裡 沒 有 多 餘 空 間！ ]
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|主 人，如 果 您 能 給 這 個 野 獸 配 一 套 鎧 甲 的 話，我 保 證 會 給 敵 人 帶 來 更 大 的 傷 害！ [10/{reg20}影 響 力]。
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|{playername}，你 是 在 質 疑 主 人 的 能 力 嗎？這 隻 野 獸 只 要 在 戰 場 上 知 道 要 攻 擊 敵 人 就 夠 了。但 你 和 你 的 手 下 要 注 意 遠 離 它 的 戰 鬥，永 遠 不 要 擋 在 他 和 獵 物 之 間。
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|是 時 候 帶 著 你 新 的 禮 物 給 敵 人 一 些 破 壞 了
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|如 你 所 願，我 的 僕 人。看 來 我 要 找 另 外 一 個 能 使 用 這 戰 爭 機 器 的 僕 人 了。
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|你 敢 要 求 一 個 完 全 武 甲 的 戰 鬥 食 人 妖 供 你 指 揮，{playername}？ 這 要 求 不 是 小 事。 但 你 是 一 個 熟 練 的 僕 人，我 們 知 道 你 的 動 機。 我 們 喜 歡。 這 願 望 將 被 實 現。
-dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|{playername}，我 們 偉 大 智 慧 所 做 出 的 決 定，你 還 敢 索 取 更 多？你 今 天 的 確 證 明 了 你 是 一 位 強 大 的 僕 人，但 不 要 進 一 步 的 挑 戰 我 們 的 耐 心。
 dlga_lord_capture_troll_completed_one_troll:close_window|很 好，{playername}。 你 是 一 個 忠 實 和 有 用 的 僕 人。 這 個 食 人 妖 對 我 們 的 目 的 很 有 用。 它 將 被 帶 到 地 牢！
 dlga_lord_start:close_window.1|很 久 以 前，我 要 你 帶 一 個 活 著 的 食 人 妖 回 來。 但 我 早 該 知 道。 我 怎 麼 能 指 望 像 {playername} 這 樣 的 人 能 夠 應 對 挑 戰。 我 的 僕 人 不 夠 熟 練 和 忠 誠。
 dlga_lord_start:lord_generic_mission_completed.1|你 對 付 野 生 食 人 妖 的 消 息 傳 給 我 了。 {s12} 少 了 一 件 該 擔 心 的 事，謝 謝 你，{playername}。
@@ -403,7 +400,6 @@ dlga_lord_talk:marshall_ask|關 於 戰 事 我 想 給 你 一 點 建 議。
 dlga_marshall_ask:lord_pretalk|{playername}，你 只 是 一 名{s25}，所 以 我 不 會 接 受 你 的 任 何 建 議。如 果 你 是 一 名 {s24}，我 倒 是 會 認 真 聽 取 你 的 意 見。
 dlga_marshall_ask:lord_pretalk.1|你 是 一 個 值 得 讚 賞 的 指 揮 官，{playername}，但 是 你 的 影 響 力 正 在 越 來 越 小。說 實 話 聽 取 你 的 意 見 可 能 不 是 一 個 好 主 意。 ^[需 要 {reg15} 點 影 響 力，目 前 擁 有{reg14} 點]
 dlga_marshall_ask:lord_pretalk.2|我 們 現 在 很 難 正 面 對 抗 我 們 的 敵 人，{playername}。我 們 需 要 加 強 我 們 的 部 隊。我 們 僅 是 {s23}。
-dlga_marshall_ask:lord_pretalk.3|我 們 正 在 戰 役 中，{playername}，你 的 建 議 得 等 等 了。
 dlga_marshall_ask:marshall_suggest|我 在 聽，{playername}。你 有 什 麼 建 議？
 dlga_marshall_suggest:marshall_answer|現 在 是 圍 攻 {s1} 的 最 佳 時 機。
 dlga_marshall_suggest:lord_pretalk|算 了，我 相 信 你 的 判 斷。

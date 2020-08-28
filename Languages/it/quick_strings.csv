@@ -884,6 +884,8 @@ qstr_Tripled|Triplicato
 qstr_Quadrupled|Quadruplicato
 qstr_You_drank_the_Ent_Wa|Hai bevuto l'acqua Ent
 qstr_Fangorn_search:_fail|Ricerca Fangorn: fallita.
+qstr_^^^A_great_victory!^|^^Vittoria !^^^Così questo era il significato di tutte le leggende su Fangorn...
+; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
 qstr_Troll_caged_in_wheel|Troll imprigionato in una gabbia su ruote.
 qstr_A_second_troll_is_ca|Un secondo troll imprigionato in una gabbia su ruote.
 qstr_Here_you_are.|Eccoti.
@@ -1167,6 +1169,7 @@ qstr_Good_day_to_you.|Buona giornata a te.
 qstr_Ah_it_s_you_again._G|Ah, sei tu di nuovo. Arrivederci.
 qstr_My_apologies_if_I_wa|Mi scuso se prima sono stato rude. Dimmi, qual'era la tua storia?
 qstr_I_was_reconsidering_|Stavo ripensando alla nostra ultima conversazione. Qual'era la tua storia.. Puoi ricordarmela ?
+; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
 qstr_Greetings_{s23}_{s24|Salve, {s23}, {s24}.
 qstr_Greetings_{s23}.|Salve, {s23}.
 qstr_So_you_are_{s23}._I_|Così, tu sei {s23}. Ho saputo che hai combattuto per i nostri amici {s25}, quindi credo che ti dovrei considerare un alleato.
@@ -1426,7 +1429,7 @@ qstr_My_spies_tell_me_of_|Le mie spie mi hanno allertato di un grande gruppo di 
 qstr_{s9}_asked_you_to_sco|{s9} ti ha chiesto di perlustrare {s13}.
 qstr_We_have_reports_of_s|Abbiamo notizie di attività nemiche vicino a {s13}. Finora i nostri esploratori hanno fallito nell' avvicinarsi a sufficienza al nemico per vederne i movimenti. Voglio che tu componga una squadra di esploratori, che ti avvicini abbastanza a {s13}, e che mandi in azione gli esploratori.
 qstr_My_spies_tell_me_the|Le mie spie mi hanno detto che il nemico vuole fare qualcosa a {s13}. I nostri esploratori hanno vigliaccamente fallito nell' esplorare le zone nemiche. Voglio che tu recluti una tua squadra di esploratori, ti avvicini abbastanza a {s13}, e li lasci li. Pero', assicurati che non scappino !
-qstr_{s9}_asked_you_to_di|{s9} ti ha chiesto di inviare una pattuglia di esplorazione vicino a {s13}.^Ottieni 7 soldati di {s15}, di cui almeno 1 é {s14}, avvicinati a {s13} e parla a {s14} per inviare la pattuglia.
+; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|Dobbiamo portare la battaglia sul campo nemico, {playername}. In questo momento possiamo riuscirci colpendo le loro pattuglie e i loro messaggeri. Voglio che tu elimini {reg1} compagnie di {s13}, tutto questo ci permetterà di riprendere l'iniziativa.
 qstr_We_need_to_grind_dow|Dobbiamo colpire i nostri vili nemici, {playername}. Le loro pattuglie e carovane stanno crescendo troppo coraggiosamente per i miei gusti. Voglio che tu elimini {reg1} {s13}, così incominceranno a capire cosa gli aspetta.
 qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di eliminare {reg1} compagnie di {s13}.
@@ -1550,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|Il {s11} di {s10} ti ha chiesto di scortate un po' {s1
 qstr__Guards_slaughter_hi|Guardie, squartatelo !
 qstr_Slaughter_him_for_fr|Squartatelo per avere fresca carne umana !
 qstr_This_is_{s5}_Command|Questo è {s5}, Comandante.
-qstr_{s6}_This_place_and_t|{s6} Questo luogo e le terre circostanti appartengono a {s7} di {s8}.
+qstr_{s6}_This_place_and_|{s6} Questo luogo e le terre circostanti appartengono a {s7} di {s8}.
 qstr_Hey_scum!_I_can_fix_|Hey farabutto ! Posso aggiustarti quella mandibola.
 qstr_Watch_where_you_re_g|Guarda dove vai, verme !
 qstr_I_don_t_like_your_fa|Non mi piace la tua faccia ! Penso abbia bisogno di un'aggiustata.

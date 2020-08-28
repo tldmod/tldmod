@@ -434,12 +434,16 @@ menu_death|Megöltek. Bár a háború továbbfolyik, te nem leszel többé rész
 menu_animal_ambush|Te és a társaid elszakadva találjátok magatokat a csapatotok többi tagjától, amikor hirtelen...
 menu_animal_ambush_success|A {s2} {reg0?elhull:elhullanak} előtted mint búza a kasza előtt! Hamarosan az összes támadód a földön fetreng, sebesülten vagy holtan. {s3}
 menu_animal_ambush_fail|Az állatok megharapnak és megtépnek{reg0?,: és a társadat{reg2?s,:,}} de szerencsére sikerül őket elkergetned. Remélhetőleg nem fognak újra rád támadni.
-menu_build_your_scene|Itt tudod elkészíteni a saját csatajeleneteidet, az egyik alul biztosított férőhelyen és a játék Szerkesztő módjában  (először BE kell kapcsolnod a szerkesztő módot a M&B nyitólapján található Beállításokban).  Aztán beküldheted a jeleneteidet (név szerint, a .sco fájlt a TLD/SceneObj mappából)  a TLD fejlesztő csapatának, és ha a jelenetedet jó, akkor egy későbbi kiadásban megjelenhet mint az egyik véletlenszerűen kiválasztott csatatér!^^ Próbáld meg pontosítani hogy a térkép melyik területén szeretnéd a jelenetedet megjeleníttetni.^ Néhány tanács: kerüld a mély vizet, a meredek hegyeket és már átjárhatatlan területeket,  kivéve ha te egy tapasztalt jelenet-készítő vagy és tudod hogy oldd meg, hogy az MI ne menjen olyan helyre, amelyre te nem akarod őket, és hogy ne akadjanak be.u.^ (Bejegyzések; #0-1 a támadóknak, #4 a védekezőknek, ne nyúlj a #5-8-hoz/höz
-mno_scene1|Csatatér5 (file scn battlefield5.sco)
-mno_scene2|Csatatér6 (file scn battlefield6.sco)
-mno_scene3|Csatatér7 (file scn battlefield7.sco)
-mno_scene4|Csatatér8 (file scn battlefield8.sco)
-mno_scene5|Csatatér9 (file scn battlefield9.sco)
+; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+; mno_scene1|Plain Big (file scn custom 1.sco)
+; mno_scene2|Plain Med (file scn custom 2.sco)
+; mno_scene3|Plain Small (file scn custom 3.sco)
+; mno_scene4|Steppe Big (file scn custom 4.sco)
+; mno_scene5|Steppe Med (file scn custom 5.sco)
+; mno_scene6|Steppe Small (file scn custom 6.sco)
+; mno_scene7|Forest Big (file scn custom 7.sco)
+; mno_scene8|Forest Med (file scn custom 8.sco)
+; mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|Vissza...
 mno_back|Vissza.
 mno_next|Következő...
