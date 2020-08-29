@@ -9,7 +9,7 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into a Steam Workshop bu
     mv -T Languages languages
 
     # paste the original optimized warband glsl shaders in GLShadersOptimized
-    curl https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/vanilla_glsl_opt.zip -L -O
+    curl --fail -LOJ https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/vanilla_glsl_opt.zip
     unzip vanilla_glsl_opt.zip -d ./ && rm vanilla_glsl_opt.zip
 
     # move our custom tld shaders into their rightful place
@@ -107,7 +107,7 @@ _fold_start_ '[Deploying Steam Workshop build]'
     echo "  \"changenote\" \"r$SVNREV - r$PREREV\" "  >> workshop_entry.vdf
     echo '}                                        '  >> workshop_entry.vdf
 
-    curl -LOJs 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' && tar xvf steamcmd_linux.tar.gz
+    curl --fail -LOJs 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' && tar xvf steamcmd_linux.tar.gz
 
     # do the actual submission using this (totally stable) work of art
     ./steamcmd.sh +login "$steam_ac" "$steam_tk" +workshop_build_item workshop_entry.vdf +quit | tee workshop.log

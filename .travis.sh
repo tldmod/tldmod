@@ -44,8 +44,8 @@ _fold_start_ "[Composite custom launcher images for revision $SVNREV]"
     IMAGE_TEXT="`date "+v%Y.%m.%d [$SVNREV]" -u`"
 
     # grab the clean backplate and the pixel font i made in 2013 so it's identical
-    curl -LOJ https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/main_swy_pngquant.png
-    curl -LOJ https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/Retrovirus.ttf
+    curl --fail -LOJ https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/main_swy_pngquant.png
+    curl --fail -LOJ https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/Retrovirus.ttf
 
     # draw the text and shadow over the backplate, overwriting the original main.bmp
     # (the older BMP3 format doesn't support alpha channels, but is the only thing the launcher reads)
@@ -141,7 +141,7 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental 
     rm -f  TLD_WB/Data/mb.fxo
 
     # paste the original optimized warband glsl shaders in GLShadersOptimized
-    curl https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/vanilla_glsl_opt.zip -L -O
+    curl --fail -LOJ https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/vanilla_glsl_opt.zip
     unzip vanilla_glsl_opt.zip -d ./TLD_WB
 
     # move our custom tld shaders into their rightful place
@@ -187,7 +187,7 @@ _fold_start_ '[Final tree view]'
 _fold_final_
 
 _fold_start_ '[Uploading finished TLD packages]'
-    curl https://bitbucket.org/Swyter/bitbucket-curl-upload-to-repo-downloads/raw/default/upload-to-bitbucket.sh -O -J && chmod +x ./upload-to-bitbucket.sh
+    curl --fail -LOJ https://bitbucket.org/Swyter/bitbucket-curl-upload-to-repo-downloads/raw/default/upload-to-bitbucket.sh && chmod +x ./upload-to-bitbucket.sh
 
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"   | tee    bitbucket.log
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb" | tee -a bitbucket.log
