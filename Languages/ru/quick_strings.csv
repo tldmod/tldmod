@@ -885,7 +885,7 @@ qstr_Quadrupled|Учетверенный
 qstr_You_drank_the_Ent_Wa|Вы выпили энтийской воды...
 qstr_Fangorn_search:_fail|Разведка Фангорна: провал.
 qstr_^^^A_great_victory!^|^^^Великая победа!^^^Так вот что значили все россказни о Фангорне...
-; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
+qstr_^^^Defeated...^^^Sca|^^^Поражение...^^^Раздавлен в древнем лесу Фангорн...В полном одиночестве...
 qstr_Troll_caged_in_wheel|Тролль посажен в клетку на колёсах.
 qstr_A_second_troll_is_ca|Ещё один тролль посажен в клетку на колёсах.
 qstr_Here_you_are.|Вы здесь.
@@ -1169,7 +1169,7 @@ qstr_Good_day_to_you.|Желаю вам доброго дня.
 qstr_Ah_it_s_you_again._G|А, это снова ты. Прощай.
 qstr_My_apologies_if_I_wa|Простите, если в тот раз я повёл себя грубо. Не могли бы вы снова рассказать свою историю?
 qstr_I_was_reconsidering_|Я думал по поводу нашей последней встречи... Не могли бы вы снова рассказать свою историю?
-; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
+qstr_Zigrphel_gained_{reg|Зигурфель получает {reg78} опыта.
 qstr_Greetings_{s23}_{s24|Приветствую, {s23}, {s24}.
 qstr_Greetings_{s23}.|Приветствую, {s23}.
 qstr_So_you_are_{s23}._I_|Итак, вы {s23}. Я слышал, ты сражаешься за {s25}, наших друзей, потому, думаю, я могу считать тебя своим союзником.

@@ -885,7 +885,7 @@ qstr_Quadrupled|Cuadruplicar
 qstr_You_drank_the_Ent_Wa|Bebes el Agua de los Ents...
 qstr_Fangorn_search:_fail|Búsqueda en Fangorn: Fallida.
 qstr_^^^A_great_victory!^|^^^¡Una gran victoria!^^^Así que que es ésto a lo que se referían los viejos mitos sobre Fangorn...
-; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
+qstr_^^^Defeated...^^^Sca|^^^{Derrotado/Derrotada}...^^^Tu compañía deshecha y dispersa en el Bosque de Fangorn Forest... Estás {solo/sola}...
 qstr_Troll_caged_in_wheel|Troll enjaulado en jaula con ruedas.
 qstr_A_second_troll_is_ca|Un segundo troll está enjaulado en la jaula con ruedas.
 qstr_Here_you_are.|Aquí estás.
@@ -1169,7 +1169,7 @@ qstr_Good_day_to_you.|Que tengas un buen día.
 qstr_Ah_it_s_you_again._G|Ah, eres tú otra vez. Adiós.
 qstr_My_apologies_if_I_wa|Mis disculpas si he sido {grosero/grosera} antes. ¿Cuál era tu historia?
 qstr_I_was_reconsidering_|He reconsiderado nuestra última conversación. ¿Cuál era tu historia?
-; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
+qstr_Zigrphel_gained_{reg|Zigûrphel ha ganado {reg78} puntos de experiencia.
 qstr_Greetings_{s23}_{s24|Saludos, {s23}, {s24}.
 qstr_Greetings_{s23}.|Saludos, {s23}.
 qstr_So_you_are_{s23}._I_|Así que eres {s23}. He oído que luchas por nuestros amigos de {s25}, así que supongo que debería considerarte mi {aliado/aliada}.
@@ -1429,7 +1429,7 @@ qstr_My_spies_tell_me_of_|Mis espías me han dicho que un gran grupo de guerrero
 qstr_{s9}_asked_you_to_sco|{s9} te ha pedido explorar alrededor de {s13}.
 qstr_We_have_reports_of_s|Tenemos informes de actividad enemiga cerca de {s13}. Nuestros exploradores han sido incapaces hasta ahora de acercarse lo suficiente y explorar el área. Quiero que reúnas a un grupo de exploradores capaces, que te acerques lo más posible a {s13} y que los despliegues allí.
 qstr_My_spies_tell_me_the|Mis espías me dicen que el enemigo está maquinando algo en {s13}. Nuestros cobardes exploradores han fallado en su misión y no nos han dicho nada útil. Quiero que reclutes a tu propio grupo de exploradores, que te acerques a {s13}, y que los dejes allí para que informen. Asegúrate de que no dan media vuelta y salen corriendo.
-; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
+qstr_{s9}_asked_you_to_di|{s9} te ha pedido que despliegues una patrulla de exploradores cerca de {s13}.^Obtén {reg1} soldados de {s15}, de los cuales al menos 1 sea un {s14}, aproxímate a {s13} y habla con él {s14} para desplegar la patrulla.
 qstr_We_need_to_take_the_|Tenemos que llevar la batalla al enemigo, {playername}. Ahora mismo, podemos empezar atacando sus patrullas y líneas de comunicación. Quiero que elimines a {reg1} grupos de {s13}, eso nos ayudaría a recuperar la iniciativa.
 qstr_We_need_to_grind_dow|Tenemos que aplastar a nuestros cobardes enemigos, {playername}. sus patrullas y caravanas de suministros se están volviendo demasiado atrevidas  para mi gusto. Quiero que elimines {reg1} grupos de {s13}, para que aprendan a temer lo que se les viene encima.
 qstr_{s9}_asked_you_to_el|{s9} te ha pedido que acabes con {reg1} grupos de {s13}.
