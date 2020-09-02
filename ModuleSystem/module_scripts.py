@@ -5242,6 +5242,7 @@ scripts = [
               (store_troop_faction, ":lord_fac", ":lords"),
               (eq, ":lord_fac", ":attacking_faction"),
               (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
+			  (gt, ":lord_party", 0),
               (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
             (try_end),
         (try_end),

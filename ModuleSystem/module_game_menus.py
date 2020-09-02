@@ -11323,7 +11323,7 @@ game_menus = [
               (store_faction_of_party, ":town_faction", ":cur_town"),
               (faction_get_slot, ":town_side", ":town_faction", slot_faction_side),
               (eq, ":town_side", ":fac_side"),
-              (store_distance_to_party_from_party, ":dist", ":cur_town", "$g_talk_troop"),
+              (store_distance_to_party_from_party, ":dist", ":cur_town", "p_main_party"),
               (lt, ":dist", ":minimum_dist"),
               (assign, ":minimum_dist", ":dist"),
               (assign, ":closest_town", ":cur_town"),

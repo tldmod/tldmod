@@ -3800,6 +3800,9 @@ simple_triggers = [
       (neg|check_quest_concluded, "qst_eliminate_patrols"),
       (quest_get_slot, ":target", "qst_eliminate_patrols", slot_quest_target_party_template),
       (quest_get_slot, ":center", "qst_eliminate_patrols", slot_quest_target_center),
+	  (quest_get_slot, ":target_amount", "qst_eliminate_patrols", slot_quest_target_amount),
+	  (quest_get_slot, ":defeated", "qst_eliminate_patrols", slot_quest_current_state),
+	  (lt, ":defeated", ":target_amount"), #Additional check. The above neg|check_quest_concluded doesn't seem to work, parties kept spawning. 
       (gt, ":center", 0),
       (set_spawn_radius, 5),
       (spawn_around_party, ":center", ":target"),
@@ -3818,6 +3821,9 @@ simple_triggers = [
       (neg|check_quest_concluded, "qst_deal_with_looters"),
       (quest_get_slot, ":party_template", "qst_deal_with_looters", slot_quest_target_party_template),
 	  (quest_get_slot, ":target_center", "qst_deal_with_looters", slot_quest_target_center),
+	  (quest_get_slot, ":target_amount", "qst_deal_with_looters", slot_quest_target_amount),
+	  (quest_get_slot, ":defeated", "qst_deal_with_looters", slot_quest_current_state),
+	  (lt, ":defeated", ":target_amount"), #Additional check. The above neg|check_quest_concluded doesn't seem to work, parties kept spawning. 
 	  (gt, ":target_center", 0),
 	  (store_distance_to_party_from_party, ":distance", "p_main_party", ":target_center"),
 	  (le, ":distance", 20), #only spawn looters if the player is still in the area
@@ -3833,6 +3839,9 @@ simple_triggers = [
       (neg|check_quest_concluded, "qst_blank_quest_17"),
       (quest_get_slot, ":target_template", "qst_blank_quest_17", slot_quest_target_party_template),
       (quest_get_slot, ":target_troop", "qst_blank_quest_17", slot_quest_target_troop),
+	  (quest_get_slot, ":target_amount", "qst_blank_quest_17", slot_quest_target_amount),
+	  (quest_get_slot, ":defeated", "qst_blank_quest_17", slot_quest_current_state),
+	  (lt, ":defeated", ":target_amount"), #Additional check. The above neg|check_quest_concluded doesn't seem to work, parties kept spawning. 
       (set_spawn_radius, 7),
       (spawn_around_party, "p_main_party", ":target_template"),
       (assign, ":spawned", reg0),

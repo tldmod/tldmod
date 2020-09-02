@@ -2809,7 +2809,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (quest_get_slot, ":giver_troop", "qst_destroy_scout_camp", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
     (quest_get_slot, ":quest_target_center", "qst_destroy_scout_camp", slot_quest_target_center),
-    (str_store_faction_name,s12,":quest_target_center")],
+    (str_store_party_name,s12,":quest_target_center")],
 "Our scouts near {s12}'s camp saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.", "destroy_scout_camp_failed",[
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -2),
   
@@ -5123,6 +5123,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (eq, ":item_exists", 1),
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
      (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
+	 #(val_sub, ":price", 5),
      (ge, ":influence", ":price"), # player has enough influence to buy?
    
    
@@ -5185,6 +5186,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    (val_clamp, ":recent_events_morale", 0, 100), #GA overflow fixage 
      (party_set_morale, "p_main_party", ":recent_events_morale"), # update morale for cauldrons and such
      (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
+	 #(val_sub, ":price", 5),
    (call_script, "script_spend_influence_of", ":price", "$g_talk_troop_faction")
 ,]],
         

@@ -1722,6 +1722,7 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(try_begin), # Player has berserker trait?
       (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
       (troop_get_inventory_slot, ":armor", "trp_player", ek_body),
+	  (this_or_next|eq, ":armor", -1),
       (item_slot_eq, ":armor", slot_item_light_armor, 1),
       (display_message, "@You are filled with just rage as you set your eyes upon the enemy (Berserk active).", color_neutral_news),
     (try_end),

@@ -37,7 +37,7 @@ tld_morale_triggers = [
 			(call_script, "script_cf_agent_get_morale", ":agent"),
 			(agent_get_troop_id, ":troop", ":agent"),
 			(str_store_troop_name, s1, ":troop"),
-			(display_message, "@{s1}'s morale: {reg1}"),
+			#(display_message, "@{s1}'s morale: {reg1}"),
 		(try_end),
 	]),
 

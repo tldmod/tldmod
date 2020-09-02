@@ -1964,7 +1964,7 @@ fac_tableau_list = [
 [(tableau_tld_tunic, [mesh_tableau_mesh_woodman_tunic]),],#fac_beorn = 20
 ]
 
-## Reward items (rank number 0-9, item id, item modifier)
+## Reward items (rank number 0-9, item id, item modifier); rank rewards; faction rewards
 ## TODO: fill out the list, these are test values
 fac_reward_items_list = [
 #fac_gondor
