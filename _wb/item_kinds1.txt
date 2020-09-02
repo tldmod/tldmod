@@ -1689,13 +1689,13 @@ itemsfile version 2
  itm_mirkwood_sword Woodelf_Sword Woodelf_Sword 2  mirkwood_shortsword 0  scab_mirkwood_shortsword 3458764513820540928  12648450 9223388564182532111 250 286870 1.25 100 0 0 0 0 29696 103 0 76 0 283 29
 0
 
- itm_mirkwood_great_spear Greenwood_Great_Spear Greenwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 104 0 148 0 291 30
+ itm_mirkwood_great_spear Greenwood_Great_Spear Greenwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 30720 106 0 150 0 291 30
 0
 
- itm_mirkwood_war_spear Greenwood_War_Spear Greenwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 500 156672 2.5 100 0 0 0 0 25600 99 0 150 0 287 25
+ itm_mirkwood_war_spear Greenwood_War_Spear Greenwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 500 156672 2.5 100 0 0 0 0 25600 109 0 150 0 287 25
 0
 
- itm_mirkwood_short_spear Woodelf_Spear Woodelf_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 150 156672 2.5 100 0 0 0 0 20480 97 0 117 0 283 532
+ itm_mirkwood_short_spear Woodelf_Spear Woodelf_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 150 156672 2.5 100 0 0 0 0 15360 104 0 114 0 283 527
 0
 
  itm_mirkwood_knife Woodelf_Knife Woodelf_Knife 2  mirkwood_white_knife 0  scab_mirkwood_white_knife 3458764513820540928  12648450 9223388564987838479 100 286870 0.75 100 0 0 0 0 24576 120 0 51 0 273 24
@@ -1716,10 +1716,10 @@ itemsfile version 2
  itm_mirkwood_helm_a Woodelf_Archer_Helm Woodelf_Archer_Helm 3  mirkwood_helm_a 134  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 300 167772294 1 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_b Greenwood_Helm Greenwood_Helm 2  mirkwoodnormalspearman_a 0  mirkwoodnormalspearman_b 167772160  65548 0 1200 704643072 1 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_b Greenwood_Helm Greenwood_Helm 3  mirkwoodnormalspearman_a_light 134  mirkwoodnormalspearman_a 0  mirkwoodnormalspearman_b 167772160  65548 0 1200 167772294 1 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_c Greenwood_Heavy_Helm Greenwood_Heavy_Helm 2  mirkwoodroyalspearman_a 0  mirkwoodroyalspearman_b 167772160  65548 0 2000 704643072 2 100 34 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_c Greenwood_Heavy_Helm Greenwood_Heavy_Helm 3  mirkwoodroyalspearman_a_light 134  mirkwoodroyalspearman_a 0  mirkwoodroyalspearman_b 167772160  65548 0 2000 167772294 2 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_helm_d Greenwood_Royal_Helm Greenwood_Royal_Helm 2  mirkwoodroyalarcher_a 0  mirkwoodroyalarcher_a 167772160  65548 0 2100 704643072 1 100 36 0 0 0 0 0 0 0 0 0 0
