@@ -25400,7 +25400,7 @@ command_cursor_scripts = [
 
 	(assign, reg71, ":nf_enemy_party_type_sum"), #Debug for A
 
-	(val_mul, ":nf_enemy_party_type_sum", 30), #multiply by 10, we do this to bring this value to  asimilar level as B and C, then divide all by 200 #InVain Aug 2020: tripled for testing
+	(val_mul, ":nf_enemy_party_type_sum", 20), #multiply by 10, we do this to bring this value to  asimilar level as B and C, then divide all by 200 #InVain Aug 2020: tripled for testing
 	(assign, "$g_formula_a", ":nf_enemy_party_type_sum"),
 	(assign, reg67, ":nf_enemy_party_type_sum"), #Debug for A
 
@@ -25454,10 +25454,12 @@ command_cursor_scripts = [
 	#Calculate D: Player share in the battle - Player party strength [player] in relation to allied parties' strength [allies] 
 
 	(try_begin), #side asymmetry: Good side players profit more from fighting with allies, regardless of how much they actually contribute
-			(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side), 
-			(eq, ":player_side", faction_side_good), 
-			(store_mul, ":player_with_multiplier", "$g_starting_strength_main_party", 150), #InVain: we later divide it by 100, so we get 120/100=20% bonus to the player's party strength
-		(try_end),
+		(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side), 
+		(eq, ":player_side", faction_side_good), 
+		(store_mul, ":player_with_multiplier", "$g_starting_strength_main_party", 150), #InVain: we later divide it by 100, so we get 120/100=20% bonus to the player's party strength
+	(else_try),
+		(store_mul, ":player_with_multiplier", "$g_starting_strength_main_party", 100),
+	(try_end),
 	#(store_add, ":player_with_allies", "$g_starting_strength_main_party", "$g_starting_strength_friends"), #InVain: $g_starting_strength_friends already contains the player party
 	#(val_div, ":player_with_allies", 100), #InVain: We do this part later, to avoid rounding issues
 	(store_div, ":player_share_of_battle", ":player_with_multiplier", "$g_starting_strength_friends"),
@@ -25480,20 +25482,16 @@ command_cursor_scripts = [
 	
 	(try_begin),
 		(gt, "$g_ally_victory_value_point", 0),
-		(store_mul, ":ally_victory_points", "$g_ally_victory_value_point", 5), #a/20*100
+		(assign, reg77, "$g_ally_victory_value_point"),
+		(assign, ":ally_victory_points", "$g_ally_victory_value_point"),
 		
-		#minuend / first part
 		(store_mul, ":minuend", ":ally_victory_points", ":enemy_str"),
-		(val_div, ":minuend", ":ally_str"),
+		(val_div, ":minuend", ":ally_str"), 
 		
-		#subtrahend / second part
-		#(store_mul, ":subtrahend", ":ally_victory_points", ":ally_str"),
-		#(val_div, ":subtrahend", ":ally_str"),
-		
-		#let's do this
-		(store_sub, ":helping_allies_sum", ":minuend", ":ally_victory_points"),
-		(val_div, ":helping_allies_sum", 100),
+		(store_sub, ":helping_allies_sum", ":minuend", ":ally_victory_points"), 
 		(val_max, ":helping_allies_sum", 0),
+		(val_div, ":helping_allies_sum", 5), #nerf a bit
+		(val_add, ":helping_allies_sum", 2), #tweak a bit (allows to hit the 4 rank point = 1 inf threshold more often)
 	(else_try),
 		(assign, ":helping_allies_sum", 0),
 	(try_end),
