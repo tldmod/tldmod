@@ -1168,9 +1168,9 @@ average_price_factor = 1000
 minimum_price_factor = 100
 maximum_price_factor = 10000
 
-scrap_bad_value = 10
-scrap_medium_value = 50 
-scrap_good_value = 250
+scrap_bad_value = 50
+scrap_medium_value = 150 
+scrap_good_value = 500
 
 item_horse_begin = itm_sumpter_horse
 item_horse_end = itm_warg_1b
