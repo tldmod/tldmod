@@ -11447,7 +11447,7 @@ scripts = [
 		(try_begin), (eq, ":small_scene", 1),
 			(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1_small", "scn_forest_firien1"),
 		(else_try),
-			(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_tutorial_1"),
+			(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_forest_mirkwood6"),
 		(try_end),
 		(assign, "$bs_day_sound", "snd_evilforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
