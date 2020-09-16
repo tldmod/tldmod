@@ -2167,15 +2167,15 @@ scripts = [
 		(gt,":volunteers",0), # Rafa: a very crude handling of the volunteer's party not being created
 
 		# compute ideal number of volunteers #InVain: Adjusted to account for bigger starting garrison sizes, putting more weight on player progress
-		#current formula is =((garrison/10 + rank*10 + leadership*5) * (relation*2+100))/1000 +3
+		#current formula is =((garrison/10 + rank*5 + leadership*10) * (relation*2+100))/1000 +3
 		(store_party_size_wo_prisoners, ":to_add", ":town"),
     	(val_div, ":to_add", 10), 
 	    (call_script, "script_get_faction_rank", ":fac"),
 	    (assign, ":rank", reg0),
-		(val_mul, ":rank", 10), 
+		(val_mul, ":rank", 5), 
 	    (val_add, ":to_add", ":rank"),
 	    (store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
-	    (val_mul, ":lead_bonus", 5),
+	    (val_mul, ":lead_bonus", 10),
 	    (val_add, ":to_add", ":lead_bonus"), 
 	    # orc bonus
 	    (assign, ":is_orc_faction", 0),
