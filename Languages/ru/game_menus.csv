@@ -434,16 +434,16 @@ menu_death|Вас убили. Война продолжается, но уже �
 menu_animal_ambush|Заплутав, вы немного отстали от своих, как вдруг...
 menu_animal_ambush_success|{s2} {reg0?пали:пал} как колосья под серпом! {reg0?Враги:Враг} {reg0?убиты:убит} или {reg0?истекают:истекает} кровью. {s3}
 menu_animal_ambush_fail|Животные терзают и кусают вас{reg0?,: с соратник{reg2?ами,:ом,}} но вам удаётся оторваться от врага. Вы надеетесь, что вас не станут преследовать.
-; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Plain Big (file scn custom 1.sco)
-; mno_scene2|Plain Med (file scn custom 2.sco)
-; mno_scene3|Plain Small (file scn custom 3.sco)
-; mno_scene4|Steppe Big (file scn custom 4.sco)
-; mno_scene5|Steppe Med (file scn custom 5.sco)
-; mno_scene6|Steppe Small (file scn custom 6.sco)
-; mno_scene7|Forest Big (file scn custom 7.sco)
-; mno_scene8|Forest Med (file scn custom 8.sco)
-; mno_scene9|Forest Small (file scn custom 9.sco)
+menu_build_your_scene|Вы можете создать ваше собственное место битвы здесь, используя один из слотов, предоставленных ниже и игровой Режим Редактирования (вам необходимо включить Edit Mode в лаунчере M&B на экране настроек). Вы можете потом представить вашу созданную локацию (а именно, файлы sco из папки TLD/SceneObj) команде TLD, и, если ваша локация удалась, она может появиться в следующих выпусках как одна из случайных полей битв!^^ Попытайтесь определить, на какой области карты должна появляться ваша локация.^ Пара подсказок: избегайте глубокой воды, крутых гор и других непроходимых мест, если только вы не опытный создатель локаций и знаете, как воспрепятствовать перемещению солдат ИИ в ненужные места и направить их в нужные.^ (Вход #0-1 для атакующих, #4 для защитников, не трогать #5-8
+mno_scene1|Большая равнина (file scn custom 1.sco)
+mno_scene2|Средняя равнина (file scn custom 2.sco)
+mno_scene3|Маленькая равнина (file scn custom 3.sco)
+mno_scene4|Большая степь (file scn custom 4.sco)
+mno_scene5|Средняя степь (file scn custom 5.sco)
+mno_scene6|Маленькая степь (file scn custom 6.sco)
+mno_scene7|Большой лес (file scn custom 7.sco)
+mno_scene8|Средний лес (file scn custom 8.sco)
+mno_scene9|Маленький лес (file scn custom 9.sco)
 mno_back_3dot|Назад...
 mno_back|Назад.
 mno_next|Далее...

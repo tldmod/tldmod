@@ -1,21 +1,21 @@
-menu_start_game_1|Pour quoi vous battrez-vous ?
+menu_start_game_1|^^^^^^^^^^Pour quoi vous battez-vous ?
 mno_start_good|L'AUBE d'une nouvelle ère
 mno_start_evil|Le CRÉPUSCULE des hommes
-mno_faction_intros|Apprentissage sur les différentes factions de la Terre du Milieu
+mno_faction_intros|En apprendre plus à propos des différentes factions de la Terre du Milieu
 mno_go_bback|Retour
-menu_start_phase_2|La Terre du Milieu.^Une Ombre grandit à l'est et de sombres créatures remontent des profondeurs de la terre.^Les Peuples libres se préparent à la guerre, une guerre telle qu'il n'en a pas été vue depuis l'Âge précédent.^Les hommes, les elfes, les nains et les orques, tous joueront leur rôle.^^Quel rôle cependant, cela reste à voir...
-mno_go_forth|Suivez la voie que vous avez choisie...
+menu_start_phase_2|^^^^^                La Terre du Milieu.^Une Ombre grandit à l'est et d'obscures créatures surgissent de l'ombre où elles furent tapies jadis.^Les Peuples libres se préparent à la guerre, une guerre comme nul n'en a vu depuis l'Âge précédent.^Les hommes, les elfes, les nains et les orques, tous joueront leur rôle.^^Lequel, cependant ? Le temps nous le dira...
+mno_go_forth|Continuer sur la voie que vous avez choisie...
 mno_change_tld_options|Changer les options de TLD.
 menu_start_game_3|^^^^^^^^Choisissez votre scénario :
 mno_custom_battle_scenario_1|Embuscade, Gondor contre Harad
 mno_custom_battle_scenario_12|Choisissez les factions pour la bataille
-mno_custom_battle_scenario_3|Embuscade, elfes contre Númenóréens Noirs
+mno_custom_battle_scenario_3|Embuscade, Elfes contre Númenóréens noirs
 mno_custom_battle_scenario_4|Défense du Gouffre de Helm, Rohan contre Isengard
-mno_custom_battle_scenario_5|Embuscade : Nord contre Rhûn
-mno_custom_battle_scenario_6|Attaque de siège, orques contre nains
-mno_custom_battle_scenario_7|Embuscade, orques contre Grand'Peur
+mno_custom_battle_scenario_5|Embuscade : factions nordiques contre Rhûn
+mno_custom_battle_scenario_6|Attaque de siège, Orques contre Nains
+mno_custom_battle_scenario_7|Embuscade, Orques contre Bois-Obscur
 mno_custom_battle_scenario_8|Le baroud d'honneur du peuple de Durin
-mno_custom_battle_scenario_88|Pourchasser un groupe d'éclaireurs orques
+mno_custom_battle_scenario_88|Pourchasser un groupe d'éclaireurs Orques
 mno_custom_battle_scenario_11|Batailles de test (équilibrage)
 mno_custom_battle_scenario_10|Bataille de test de scène
 mno_troll_battle_scenario|Batailles de test de Trolls
@@ -32,9 +32,9 @@ mno_tutorial_5|Tutoriel #5 : Commander un groupe de soldats {s5}
 mno_go_back_dot|Retour.
 mno_action_view_troop_trees|Regarder l'arbre des troupes.
 mno_view_upkeep_costs|Voir les coûts d'entretien.
-mno_view_character_report|Voir le rapport sur le personnage.
+mno_view_character_report|Voir les détails du personnage.
 mno_view_party_size_report|Voir le rapport sur la taille du groupe.
-mno_view_morale_report|Rapport sur le moral des troupes.
+mno_view_morale_report|Voir le rapport sur le moral des troupes.
 mno_view_character_report_02|Voir le statu des compagnons.
 mno_view_faction_strengths_report|Voir le rapport de force des factions.
 mno_view_traits_report|Voir les traits de caractère.
@@ -44,7 +44,7 @@ mno_leave_custom_battle_2|Annuler.
 menu_custom_battle_end|^^^^^^La bataille est terminée. {s1} Votre camp a tué {reg5} ennemis et perdu {reg6} troupes dans les combats.^Vous avez personnellement tué {reg7} opposants durant la bataille.
 mno_replay|Jouer à nouveau cette bataille.
 mno_continue_dot|Continuer.
-menu_custom_battle_durin_end|^^^^^^C'était un baroud d'honneur admirable mais condamné d'avance.^^ Vous et vos compagnons avez défait {reg5} ennemis^Vous avez personnellement vaincu {reg7} adversaires au combat/ 
+menu_custom_battle_durin_end|^^^^^^C'était un baroud d'honneur admirable.^^ Vous et vos compagnons avez défait {reg5} ennemis^Vous avez personnellement vaincu {reg7} adversaires au combat/ 
 mno_replay_cbd|Jouer à nouveau cette bataille.
 mno_continue_dot_cbd|Continuer.
 mno_dot_go_back|. Retour
@@ -52,14 +52,14 @@ menu_start_good|^^^^^^^^^^Choisissez votre race :
 mno_start_ma|HOMME
 mno_start_el|ELFE
 mno_start_dw|NAIN
-menu_start_evil|Qui sera votre maître ?
-mno_start_eye|Sauron de Mordor, le Seigneur des Anneaux
-mno_start_hand|Saroumane d'Isengard, la Main Blanche
-menu_start_eye|^^^^^^^^^Votre Maître est l'Oeil sans Paupière^Choisissez votre race
-mno_start_or|Un orque, servant l'Oeil sans Paupière
+menu_start_evil|^^^^^^^^^^Qui sera votre maître ?
+mno_start_eye|SAURON du Mordor, le Seigneur des anneaux
+mno_start_hand|SAROUMANE d'Isengard, la Main blanche
+menu_start_eye|^^^^^^^^^Votre Maître est l'Oeil sans paupière^Choisissez votre race
+mno_start_or|Un Orque, servant l'Oeil sans paupière
 mno_start_ur|Un Uruk, la nouvelle race des orques
-mno_start_em|Un homme, corrompu par Sauron
-menu_start_hand|^^^^^^^^^Votre Maître est la Main Blanche^Choisissez votre race
+mno_start_em|Un Homme, corrompu par Sauron
+menu_start_hand|^^^^^^^^^Votre Maître est la Main blanche^Choisissez votre race
 mno_start_whor|Un orque, servant la Main Blanche
 mno_start_isur|Un des Uruk-Hai, élevé en Isengard
 mno_start_duma|Un homme du Pays de Dun, les Plaines de l'Ouest

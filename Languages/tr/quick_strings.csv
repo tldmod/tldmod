@@ -68,12 +68,12 @@ qstr_Dwarf|Cüce
 qstr_Whom_Do_You_Serve?|Kime hizmet ediyorsun?
 qstr_SAURON_of_Mordor_The|Mordor'un Sauron'u, Yüzüklerin Efendisi
 qstr_SARUMAN_of_Isengard_|Isengard'ın Saruman'ı, Beyaz El
-qstr_an_ORC^_serving_the_|Her Şeyi Gören Göz'e hizmet eden bir Ork
-qstr_an_URUK^_the_new_bre|Orkların yeni nesli olan bir URUK
-qstr_a_MAN^_subjugated_by|Sauron tarafından boyun egdirilmiş bir İNSAN
-qstr_an_ORC^_serving_the_W|Ak El'e Hizmet eden bir ORK
-qstr_an_URUK_HAI^_bred_in|Isengard'da yetiştirilmiş bir URUK-HAI
-qstr_a_MAN_of_Dunland^_th|Batı Topraklarından bir Dunland İNSANI
+qstr_an_ORC^_serving_the_|Bir ORK,^ Kapaksız Gözün Kölesi
+qstr_an_URUK^_the_new_bre|Bir URUK,^ yeni nesil ork
+qstr_a_MAN^_subjugated_by|Bir İNSAN,^ Sauron'a yenilmiş
+qstr_an_ORC^_serving_the_W|Bir ORK,^ Ak El'in Kölesi
+qstr_an_URUK_HAI^_bred_in|Bir URUK-HAI,^ Isengard'da türetilmiş
+qstr_a_MAN_of_Dunland^_th|Bir Dunland İNSANI,^ Batı düzlüklerinden
 qstr_Click_the_center_but|Grup degiştirmek için ortadaki dügmeyi tıklayın^ayrıntılarını görüntülemek için avatarları tıklayın
 qstr_Level:_{reg3}^Health|Seviye: {reg3}^Saglık: {reg4}
 qstr_Attributes|Nitelikler
@@ -195,7 +195,7 @@ qstr_+1_to_Strength|+1 Güce
 qstr_+1_to_Agility|+1 Çeviklik
 qstr_+1_to_Leadership|+1 Liderlige 
 qstr_+1_to_Wildcraft|Yaban Ustası'na +1
-qstr_+1_to_Power_Draw|+1 Güçlü Vuruşa
+qstr_+1_to_Power_Draw|+1 Güçlü Germe
 qstr_The_record_of_Balin_|Balin'in kayıp seferinin kayıtları
 qstr_Who_might_be_interes|Kim bununla ilgilenebilir?
 qstr_Turns_nature_to_your|Dogayı sizin tarafınıza çevirir (efektler Wildraft ile şekillenir)
