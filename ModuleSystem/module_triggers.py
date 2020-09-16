@@ -73,7 +73,7 @@ triggers = [
         (store_add,":last_item_plus_one", "itm_ent_body", 1),
         
         # Add Center Relations modifier to Item Quality in Smiths
-        (assign, ":base_chance", 75),
+        (assign, ":base_chance", 50),
         (store_troop_faction, ":smith_faction", ":cur_merchant"),
         (assign, ":smith_found", 0),
         (try_for_range, ":center_list", centers_begin, centers_end),
@@ -83,19 +83,17 @@ triggers = [
           (party_slot_eq, ":center_list", slot_town_weaponsmith, ":cur_merchant"),
           (assign, ":smith_found", 1),
           (party_get_slot, ":center_relation", ":center_list", slot_center_player_relation),
-          (store_mul, ":quality_modifier", ":center_relation", 2), #Tweakable.
-          (val_add, ":quality_modifier", ":base_chance"),
         (try_end),
 
-
-        #(try_begin), # bad guys have shitty quality shops - modified above
-        #  (neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
-        #  (set_merchandise_modifier_quality, 50),
-        #(else_try),
-        #  (set_merchandise_modifier_quality,100),
-        #(try_end),
-        
-        (set_merchandise_modifier_quality, ":quality_modifier"), #new formula
+		  (call_script, "script_get_faction_rank", ":faction"),
+		  (store_mul, ":rank_modifier", reg0, 10),
+		  (party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
+		  (store_mul, ":trading_modifier", ":player_party_trading", 10),
+		  
+		  (store_add, ":quality_modifier", ":center_relation", ":rank_modifier"),
+		  (val_add, ":quality_modifier", ":trading_modifier"),
+          (val_add, ":quality_modifier", ":base_chance"),
+          (set_merchandise_modifier_quality, ":quality_modifier"), #new formula
 
         #swy-- for every item in the list, check if matches the seller's
         #      faction + subfaction and add it to the probability list if so...
@@ -191,9 +189,25 @@ triggers = [
         #swy-- make room for the new items and give him some extra money if needed...
         (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space),
         (troop_sort_inventory, ":cur_merchant"),
-        (store_troop_gold, ":gold",":cur_merchant"),
+		
+		#InVain: Scale merchant gold
+        (store_troop_gold, ":cur_gold",":cur_merchant"),
+		(troop_get_slot, ":min_gold", ":cur_merchant", slot_troop_shop_gold),
+		(call_script, "script_get_faction_rank", ":faction"),
+	    (assign, ":rank", reg0),
+		(val_mul, ":rank", 50),
+		(val_add, ":min_gold", ":rank"),
+		
+		#(party_get_slot, ":center_relation", ":town", slot_center_player_relation),
+		(party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
+		(val_mul, ":player_party_trading", 100),
+		(val_add, ":min_gold", ":player_party_trading"),
+		
+		(val_mul, ":center_relation", 10),
+		(val_add, ":min_gold", ":center_relation"),
+
         
-        (lt, ":gold",900),
+        (lt, ":cur_gold",":min_gold"),
         (store_random_in_range,":new_gold",200,400),
         (call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
       (try_end),
@@ -259,7 +273,20 @@ triggers = [
             (try_end),
           (try_end),
         (try_end),
-        
+
+       # # Add Center Relations modifier to Item Quality in horse merchants
+		  (assign, ":base_chance", 50),
+          (party_get_slot, ":center_relation", ":cur_center", slot_center_player_relation),
+		  (call_script, "script_get_faction_rank", ":faction"),
+		  (store_mul, ":rank_modifier", reg0, 10),
+		  (party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
+		  (store_mul, ":trading_modifier", ":player_party_trading", 10),
+		  
+		  (store_add, ":quality_modifier", ":center_relation", ":rank_modifier"),
+		  (val_add, ":quality_modifier", ":trading_modifier"),
+          (val_add, ":quality_modifier", ":base_chance"),
+          (set_merchandise_modifier_quality, ":quality_modifier"), #new formula
+		
         #swy-- add poneys to the Iron Hills camp merchant, that's it.
         #      poneys are always cool if there are dwarves over them!
         
@@ -313,11 +340,29 @@ triggers = [
         (troop_add_merchandise,":cur_merchant",itp_type_goods,":num_goods"),
         (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space), #MV: moved after goods and changed from 65
         (troop_sort_inventory, ":cur_merchant"),
-        (store_troop_gold, ":cur_gold",":cur_merchant"),
         
         #swy-- if the horse/ goods merchant is short of bucks, yo. give somm' money to da biotch!
         #      don't expect enlightening comments all the way down. this is the jungle!
-        (lt,":cur_gold",600),
+		#InVain: Scale merchant gold
+        (store_troop_gold, ":cur_gold",":cur_merchant"),
+		(troop_get_slot, ":min_gold", ":cur_merchant", slot_troop_shop_gold),
+		(val_mul, ":min_gold", 2),
+		(val_div, ":min_gold", 3), #horse merchants have less base gold than smiths
+		
+		(call_script, "script_get_faction_rank", ":faction"),
+	    (assign, ":rank", reg0),
+		(val_mul, ":rank", 50),
+		(val_add, ":min_gold", ":rank"),
+		
+		(party_get_slot, ":center_relation", ":cur_center", slot_center_player_relation),
+		(val_mul, ":center_relation", 10),
+		(val_add, ":min_gold", ":center_relation"),
+		
+		(party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
+		(val_mul, ":player_party_trading", 100),
+		(val_add, ":min_gold", ":player_party_trading"),
+        
+        (lt, ":cur_gold",":min_gold"),
         (store_random_in_range,":new_gold",200,400),
         (call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
       (try_end),

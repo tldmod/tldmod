@@ -2167,7 +2167,7 @@ scripts = [
 		(gt,":volunteers",0), # Rafa: a very crude handling of the volunteer's party not being created
 
 		# compute ideal number of volunteers #InVain: Adjusted to account for bigger starting garrison sizes, putting more weight on player progress
-		#current formula is =((garrison/10 + rank*10 + influence*5) * (relation*2+100))/1000 +3
+		#current formula is =((garrison/10 + rank*10 + leadership*5) * (relation*2+100))/1000 +3
 		(store_party_size_wo_prisoners, ":to_add", ":town"),
     	(val_div, ":to_add", 10), 
 	    (call_script, "script_get_faction_rank", ":fac"),
@@ -4724,7 +4724,7 @@ scripts = [
 	  (assign, ":can_steal", 1),  # can steal objects of own faction or , of no faction
 	  (try_begin), (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), (assign, ":can_steal", 0),(try_end), # good guys don't steal
       # Loot the defeated party
-      (store_mul, ":loot_probability", player_loot_share, 3),
+      (store_mul, ":loot_probability", player_loot_share, 2),
       (val_mul, ":loot_probability", "$g_strength_contribution_of_player"),
       (party_get_skill_level, ":player_party_looting", "p_main_party", "skl_looting"),
       (val_add, ":player_party_looting", 10),
