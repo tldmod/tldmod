@@ -2862,8 +2862,9 @@ simple_triggers = [
         (val_add, ":camp_requested_hours", 5*24), # 3 days after faction changes theater or previous camp destroyed - Changed to 5 Days (kham)
         (ge, ":cur_hours", ":camp_requested_hours"),
         
-        (store_random_in_range, ":rand", 0, 100),
-        (lt, ":rand", 30), # 30% chance every 6 hours
+        (store_random_in_range, ":rand", 0, 20000),
+		(lt, ":rand", ":strength"), #faction strength /200 is spawn chance
+        #(lt, ":rand", 30), # 30% chance every 6 hours
         
         # set up the advance camp
         (party_set_slot, ":adv_camp", slot_center_theater, ":active_theater"),
