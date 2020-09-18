@@ -3805,14 +3805,21 @@ simple_triggers = [
 	  (quest_get_slot, ":defeated", "qst_eliminate_patrols", slot_quest_current_state),
 	  (lt, ":defeated", ":target_amount"), #Additional check. The above neg|check_quest_concluded doesn't seem to work, parties kept spawning. 
       (gt, ":center", 0),
-      (set_spawn_radius, 5),
-      (spawn_around_party, ":center", ":target"),
+	  (call_script, "script_find_theater", ":center"), #only spawn armies if the player is in the theater
+	  (assign, ":center_theater", reg0),
+	  (call_script, "script_find_theater", "p_main_party"),
+	  (eq, reg0, ":center_theater"), 
+      (set_spawn_radius, 10),
+      (spawn_around_party, "p_main_party", ":target"),
       (str_store_party_name, s2, reg0),
       (str_store_party_name, s3, ":center"),
-      (store_random_in_range, ":random", 0, 100), #40% chance for the message to come up, just to make it less spammy.
+	  (party_get_skill_level, ":spotting", "p_main_party", skl_spotting),
+	  (party_get_skill_level, ":tracking", "p_main_party", skl_tracking),
+	  (store_add, ":report_chance", ":tracking", ":spotting"),
+	  (store_random_in_range, ":random", 1, 21), #10 spotting and 10 tracking = 100% spotting chance
       (try_begin),
-        (le, ":random", 40),
-        (display_message, "@Your scouts have reported that there is a {s2} near {s3}."),
+        (le, ":random", ":report_chance"),
+        (display_message, "@Your scouts report signs of a {s2} nearby."),
       (try_end),
     (try_end),
       
@@ -3827,11 +3834,11 @@ simple_triggers = [
 	  (lt, ":defeated", ":target_amount"), #Additional check. The above neg|check_quest_concluded doesn't seem to work, parties kept spawning. 
 	  (gt, ":target_center", 0),
 	  (store_distance_to_party_from_party, ":distance", "p_main_party", ":target_center"),
-	  (le, ":distance", 20), #only spawn looters if the player is still in the area
+	  (le, ":distance", 25), #only spawn looters if the player is still in the area
       (set_spawn_radius, 7),
       (spawn_around_party, ":target_center", ":party_template"),
       (party_set_flags, reg0, pf_quest_party, 1),
-      (party_set_faction, reg0, "fac_neutral"), #Kham: so they don't get into fights
+      (party_set_faction, reg0, "fac_deserters"), #Kham: so they don't get into fights
       #(display_message, "@DEBUG: Looter party spawned"),
     (try_end),
 
@@ -3842,14 +3849,20 @@ simple_triggers = [
       (quest_get_slot, ":target_troop", "qst_blank_quest_17", slot_quest_target_troop),
 	  (quest_get_slot, ":target_amount", "qst_blank_quest_17", slot_quest_target_amount),
 	  (quest_get_slot, ":defeated", "qst_blank_quest_17", slot_quest_current_state),
+	  (quest_get_slot, ":target_center", "qst_blank_quest_17", slot_quest_target_center),
 	  (lt, ":defeated", ":target_amount"), #Additional check. The above neg|check_quest_concluded doesn't seem to work, parties kept spawning. 
-      (set_spawn_radius, 7),
-      (spawn_around_party, "p_main_party", ":target_template"),
-      (assign, ":spawned", reg0),
-      (party_set_flags, ":spawned", pf_quest_party, 1),
-      (party_set_faction, ":spawned", "fac_neutral"), #Kham: so they don't get into fights
-      (store_random_in_range, ":rand", 8, 15),
-      (party_force_add_members, ":spawned", ":target_troop", ":rand"),
+      (store_distance_to_party_from_party, ":distance", "p_main_party", ":target_center"),
+	  (le, ":distance", 25), #only spawn looters if the player is still in the area
+	  (set_spawn_radius, 7),
+	  (store_random_in_range, ":parties_to_spawn", 1, 3),
+	  (try_for_range, ":unused", 0,":parties_to_spawn"),
+		(spawn_around_party, ":target_center", ":target_template"),
+		(assign, ":spawned", reg0),
+		(party_set_flags, ":spawned", pf_quest_party, 1),
+		(party_set_faction, ":spawned", "fac_deserters"), #Kham: so they don't get into fights
+		(store_random_in_range, ":rand", 8, 15),
+		(party_force_add_members, ":spawned", ":target_troop", ":rand"),
+	  (try_end),
     (try_end),
       
 ]),

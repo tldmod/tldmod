@@ -11456,11 +11456,12 @@ There are {s6} moving about the area, thinking that they are in charge. No one i
       (quest_get_slot, ":target_template", "qst_blank_quest_17", slot_quest_target_party_template),
       (store_random_in_range, ":rand", 3, 7),
       (try_for_range, ":unused", 1, ":rand"),
-        (store_random_in_range, ":rand_dist", 25, 51),
+        (store_random_in_range, ":rand_dist", 5, 20),
         (set_spawn_radius, ":rand_dist"),
         (spawn_around_party, "$g_encountered_party", ":target_template"),
         (assign, ":spawned", reg0),
         (party_add_members, ":spawned", ":quest_target_troop", ":rand"),
+		(party_set_faction, ":spawned", "fac_deserters"), #Kham: so they don't get into fights
       (try_end),
 
 ]],

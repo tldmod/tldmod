@@ -1091,7 +1091,7 @@ qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
 qstr_You_have_{reg69}_all You_have_{reg69}_ally_party_following_you
 qstr_You_have_{reg69}_ally You_have_{reg69}_ally_parties_following_you
 qstr_The_forces_of_{s2}_h The_forces_of_{s2}_have_regrouped_and_march_on_to_{s15}!
-qstr_Your_scouts_have_rep Your_scouts_have_reported_that_there_is_a_{s2}_near_{s3}.
+qstr_Your_scouts_report_s Your_scouts_report_signs_of_a_{s2}_nearby.
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.^^(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info

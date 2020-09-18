@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_an_URUK_HAI^_bred_in an_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_84_wb__dev_^_Bu _rev_84_wb_|_dev_^_Built_2020-09-16_18:24___
+qstr__rev_85_wb__dev_^_Bu _rev_85_wb_|_dev_^_Built_2020-09-18_20:44___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1300,7 +1300,7 @@ qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
 qstr_You_have_{reg69}_all You_have_{reg69}_ally_party_following_you
 qstr_You_have_{reg69}_ally You_have_{reg69}_ally_parties_following_you
 qstr_The_forces_of_{s2}_h The_forces_of_{s2}_have_regrouped_and_march_on_to_{s15}!
-qstr_Your_scouts_have_rep Your_scouts_have_reported_that_there_is_a_{s2}_near_{s3}.
+qstr_Your_scouts_report_s Your_scouts_report_signs_of_a_{s2}_nearby.
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.^^(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info

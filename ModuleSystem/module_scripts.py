@@ -2288,6 +2288,10 @@ scripts = [
 		(store_random_in_range, ":random", 0, 100),
 		(le, ":random", ":highest_level"),
 		(party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
+			(try_begin),
+				(ge, ":highest_level_stack_size", 3),
+				(party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1), #crude fix to high-level troops stacking over time
+			(try_end),
 		#(str_store_party_name, s1, ":town"),
 		#(str_store_troop_name, s2, ":highest_level_troop"),
 		#(display_message, "@{s1}: removed volunteer {s2}"),
@@ -6762,6 +6766,7 @@ scripts = [
 				(assign, ":quest_expiration_days", reg62),					
 				(assign, ":quest_dont_give_again_period", reg63),
 				(assign, ":quest_target_party_template", reg64),
+				(assign, ":quest_target_center", ":giver_center_no"), #we need the giver center for the quest helper trigger #InVain
 
 				(assign, ":result", ":quest_no"),
 			(try_end),
@@ -7027,6 +7032,7 @@ scripts = [
           (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
           (assign, ":cur_target_dist", reg1),
           (neq, ":giver_center_no", reg0),
+		  (neq, reg0, "p_town_henneth_annun"),#Skip Henneth Annun
           (assign, ":quest_target_center", reg0),
           # (store_random_party_in_range, ":quest_target_center", centers_begin, centers_end),
           # (store_distance_to_party_from_party, ":dist", ":giver_center_no",":quest_target_center"),
@@ -7047,6 +7053,7 @@ scripts = [
           (is_between, ":giver_center_no", centers_begin, centers_end),
           #(store_random_party_in_range, ":quest_target_center", centers_begin, centers_end),
           (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+		  (neq, reg0, "p_town_henneth_annun"),#Skip Henneth Annun
           (assign, ":quest_target_center", reg0),
           (assign, ":cur_target_dist", reg1),
           (neq, ":giver_center_no", ":quest_target_center"),
@@ -25008,6 +25015,10 @@ command_cursor_scripts = [
 	(try_begin),
 		(this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
 		(eq, "$g_talk_troop_faction", "fac_umbar"),
+		(faction_get_slot,":strength","fac_gondor",slot_faction_strength), #hacky way to ensure that enemy faction is still alive.
+		(gt, ":strength", 500), 
+		(faction_get_slot,":strength","fac_umbar",slot_faction_strength),
+		(gt, ":strength", 500), 
 		(try_begin),
 			(ge, ":rand", 50),
 			(assign, ":cur_target_center", "p_town_dol_amroth"),
@@ -25015,9 +25026,14 @@ command_cursor_scripts = [
 	(else_try),
 		(this_or_next|eq, "$g_talk_troop_faction", "fac_dale"),
 		(eq, "$g_talk_troop_faction", "fac_rhun"),
+		(faction_get_slot,":strength","fac_dale",slot_faction_strength), #hacky way to ensure that enemy faction is still alive.
+		(gt, ":strength", 500), 
+		(faction_get_slot,":strength","fac_rhun",slot_faction_strength),
+		(gt, ":strength", 500), 
 		(assign, ":cur_target_center", "p_town_esgaroth"),
 	(try_end),
-		(try_begin),
+	
+	(try_begin),
 		(eq, "$g_talk_troop_faction", "fac_umbar"),
 		(assign, ":cur_object_center", "p_town_umbar_camp"), #If Umbar, Talk to Umbar Guild Master
 	(else_try),
@@ -25384,6 +25400,9 @@ command_cursor_scripts = [
 		(else_try),
 			(eq, ":party_type", spt_bandit),
 			(val_add, ":nf_enemy_party_type_sum", 10), #Bandits only get 10 points
+		(else_try),
+			(eq, ":party_type", spt_guardian),
+			(val_add, ":nf_enemy_party_type_sum", 300), #guard legion counts for two lords (actual victory point value is too big)
 		(else_try),
 			(val_add, ":nf_enemy_party_type_sum", ":party_victory_value_point"), #Add vp here for primary party encountered.
 		(try_end),
