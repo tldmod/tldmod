@@ -1,5 +1,23 @@
+# TLD usage terms (*what we ask from you*)
+1. Music is to be used as is, without editing in anyway, shape or form. This includes using parts or the whole to create music, or merge with other copyright works:
+   * Credit must be given to composer *Vladan Zivanovic* with a link to web site. www.DarkRuneCreations.com.au. This is to direct other modders to free music which will be available for use under same terms.
+   * A link to the mod's page should be sent to the composer, using website contact page would be easiest.
 
-TLD 3.5 changes:
+2. Don't use any of the assets for commercial purposes. (Feel free to use them to mod other games, though)
+3. Give us credit if you use our stuff. (if you want to credit specific creators, here's our own credit list: http://mbx.streetofeyes.com/index.php/topic,2465.0.html)
+4. *Optional*: Tell us about what you're doing with this OSP. Show it off! :)
+
+## Addendum
+![CC BY-NC-SA logo](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)
+
+Additionally; any TLD contributions by @In-Vain and @Swyter (and not others) can be alternatively reused under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
+
+The work can still be reused under the original usage terms, at the user's discretion.
+
+---
+
+# Changelog
+### TLD 3.5 changes:
 - Swyter:
  - Added to Steam Workshop
  - Ported TLD to Mac / Linux
@@ -92,7 +110,7 @@ TLD 3.5 changes:
 
 
 
-TLD 3.3.1 changes:
+### TLD 3.3.1 changes:
 - Swyter:
  - Reimplement the death camera in Warband using MadVader's code as reference.
  - Make the Nazgûl, alarm levels and thunder sounds audible in Warband.
@@ -156,7 +174,7 @@ TLD 3.3.1 changes:
  - Better skeleton rigging for bears.
 
 
-TLD 3.3 changes:
+### TLD 3.3 changes:
 - Swyter:
   - Port to Warband.
   - New, easier and less obtrusive install method for 1.011. (Rewritten Iron Launcher into a proxy DLL with IAT hooks)
@@ -194,7 +212,7 @@ TLD 3.3 changes:
   - WB: Changed the lame horse mechanic to trigger randomly only when the horse starts trotting. (Fairer)
 
 
-TLD 3.23 changes:
+### TLD 3.23 changes:
 - CppCoder:
   - Animal Ambushes become less likely the more attacks you've experienced.
   - Morale System Tweaks (should make it more enjoyable and playable)
@@ -204,7 +222,7 @@ TLD 3.23 changes:
   - Quest for dead lords are ended.
   - Minor tweaks.
 
-TLD 3.2 changes:
+### TLD 3.2 changes:
 - CppCoder:
   - Elven Hero Parties are 3/4 of normal size. 
   - Rhun Hero Parties are now 4/3 of normal size.
@@ -243,7 +261,7 @@ TLD 3.2 changes:
 - vota dc:
   - More item/troop balancing. (I think?)
 
-TLD 3.15 changes:
+### TLD 3.15 changes:
 - Octoburn: added unused dwarven helmets to Dale
 - Strategy tweaks (a submenu under Actions->TLD mod options)
   - Siege strength requirements: Normal/Defender only/None
@@ -263,16 +281,17 @@ TLD 3.15 changes:
   - Strong factions spawn less patrols
 
 
-TLD 3.14 changes:
+### TLD 3.14 changes:
 - Vota: MANY troops and items rebalanced
 - CppCoder: bugfixes
 - MV: Defense strength for siege requirements relaxes with player level (opens up the game)
 
 
-3.11-3.13 Unknown changes :)
+### TLD 3.11-3.13 changes:
+- Unknown changes :)
 
 
-TLD 3.1 changes
+### TLD 3.1 changes:
 
 Major updates:
 - Massive music update
@@ -304,7 +323,7 @@ Fixes:
 - Empty volunteer parties removed from destroyed towns
 - Plenty of other stuff
 
-3.01 Changelog (most important issues):
+### 3.01 Changelog (most important issues):
 - Elves nerfed somewhat, -40 weapon proficiencies across the board, fewer volunteers, a bit slower training
 - Gunda and Rhun buffed somewhat, to not suck on dwarves and Dale too fast
 - Marshalls made more persistent in campains. How it plays out actually is for you to test
@@ -312,5 +331,4 @@ Fixes:
 - Fixed MANY bugs, see forum 1st post in bugreport thread
 
 Regards,
-TLD team
-
+*TLD team*

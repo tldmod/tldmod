@@ -76,6 +76,7 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into a Steam Workshop bu
     rm -f  ./*orc*
     rm -rf ./_*.txt
    #rm -rf ./_*
+   #rm -f  ./*.md
 
     rm -rf .git
     
