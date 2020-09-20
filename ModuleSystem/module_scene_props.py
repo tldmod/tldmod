@@ -3003,6 +3003,14 @@ scene_props = [
 			(try_end),
 			(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
 
+("rock_cliff_k_bb",0,"beefbacon_cliff_01","bo_terrain_cliff_01",[]),
+("rock_cliff_l_bb",0,"beefbacon_cliff_02","bo_terrain_cliff_02",[]),
+("rock_cliff_m_bb",0,"beefbacon_cliff_03","bo_terrain_cliff_03",[]),
+("rock_cliff_n_bb",0,"beefbacon_cliff_04","bo_terrain_cliff_04",[]),
+("rock_cliff_o_bb",0,"beefbacon_cliff_05","bo_terrain_cliff_05",[]),
+("rock_cliff_p_bb",0,"beefbacon_cliff_06","bo_terrain_cliff_06",[]),
+
+
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
 

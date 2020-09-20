@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1935
+ 1941
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5873,6 +5873,24 @@ spr_animal_sheep 16384 0 CWE_sheep_mod_a 0 1
 
 spr_animal_horse 16384 0 CWE_horse_light_a 0 1
 -40  14 2071 1 1224979098644774912 1850 2 1 1224979098644774912 1970 1 1 2136 3 1224979098644774913 1 4 4 0 31 2 1224979098644774913 1 1973 2 23 1 5 0 31 2 1224979098644774913 2 1973 2 23 2 5 0 1973 2 23 3 3 0 1741 2 72057594037927936 406 
+
+
+spr_rock_cliff_k_bb 0 0 beefbacon_cliff_01 bo_terrain_cliff_01 0
+
+
+spr_rock_cliff_l_bb 0 0 beefbacon_cliff_02 bo_terrain_cliff_02 0
+
+
+spr_rock_cliff_m_bb 0 0 beefbacon_cliff_03 bo_terrain_cliff_03 0
+
+
+spr_rock_cliff_n_bb 0 0 beefbacon_cliff_04 bo_terrain_cliff_04 0
+
+
+spr_rock_cliff_o_bb 0 0 beefbacon_cliff_05 bo_terrain_cliff_05 0
+
+
+spr_rock_cliff_p_bb 0 0 beefbacon_cliff_06 bo_terrain_cliff_06 0
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0
