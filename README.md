@@ -14,143 +14,141 @@ Additionally; any TLD contributions by @In-Vain and @Swyter (and not others) can
 
 The work can still be reused under the original usage terms, at the user's discretion.
 
----
-
 # Changelog
 ### TLD 3.5 changes:
 - Swyter:
- - Added to Steam Workshop
- - Ported TLD to Mac / Linux
- - Fixed animated wavy banners
- - Fixed lone warg fork-bomb
- - Fix ghost-owned wargs respawning again and again
- - Mitigate player teleporting to Mordor on defeat
- - Limit crafting to 0, as the feature is unfinished
- - Comment out music checker thing
- - Update Iron Launcher
- - Workaround viewport popping of ancillary skybox elements in WB
- - Fix Custom Camera keys by masking them behind Ctrl modifier
- - Added a brand new signed distance font bitmap
- - Fix party troop number in overall map
- - Added high-res signed distance font
- - Spirit Shader
+  - Added to Steam Workshop
+  - Ported TLD to Mac / Linux
+  - Fixed animated wavy banners
+  - Fixed lone warg fork-bomb
+  - Fix ghost-owned wargs respawning again and again
+  - Mitigate player teleporting to Mordor on defeat
+  - Limit crafting to 0, as the feature is unfinished
+  - Comment out music checker thing
+  - Update Iron Launcher
+  - Workaround viewport popping of ancillary skybox elements in WB
+  - Fix Custom Camera keys by masking them behind Ctrl modifier
+  - Added a brand new signed distance font bitmap
+  - Fix party troop number in overall map
+  - Added high-res signed distance font
+  - Spirit Shader
 
 - Merlkir:
- - Added female frame to Woodsmen, Beorning, Khand, and Rhun Armours
- - Dialogues for Starting Quests
- - Dialogues for Ring Hunters
- - Added Lumberjack Orcs drawing overlay
- - Added Kneel at Mound drawing overlay
- - Added Ring Hunter Quest drawings
- - Added Dale Victory Drawings
- - Add more troll sounds
- - Design Black Shield, Black Shield's Men, Vengeful Spirit troops for Spears quest
- - Concept art for Shield Bear Shield & Club
- - Add Lorien Victory drawing overlay
+  - Added female frame to Woodsmen, Beorning, Khand, and Rhun Armours
+  - Dialogues for Starting Quests
+  - Dialogues for Ring Hunters
+  - Added Lumberjack Orcs drawing overlay
+  - Added Kneel at Mound drawing overlay
+  - Added Ring Hunter Quest drawings
+  - Added Dale Victory Drawings
+  - Add more troll sounds
+  - Design Black Shield, Black Shield's Men, Vengeful Spirit troops for Spears quest
+  - Concept art for Shield Bear Shield & Club
+  - Add Lorien Victory drawing overlay
 
 - Kham:
- - Implement Troop Tree Viewer under Reports
- - Implement Custom Camera to improve Orc/Dwarf gameplay
- - Added validator to CppCoder's Morale Code to fix a script error
- - Hooked up Dwarven Fortress for Spears quest
- - Added Viking Conquest Module.ini changes to WB module.ini
- - Added Ring Hunters Quest
- - Added More Town Walkers to certain towns
- - Make Elves slightly taller using scale
- - Fix to Siege Doors so that they are properly attacked by troops
- - Added Faction Starting Quests to tutorialize resource points & influence, and overall add immersion.
- - Added Defend / Raid Village Pre-War quests
- - Added Destroy Scout Camp War quest
- - Improve Thrust Speed of Spears (VC)
- - Added restrictions to Orc Mutiny
- - Bumped up the number of parties
- - Prepare Mission Templates and Menus for Spears quest completion
- - Added XP for discovering town NPCs
- - Added town mission message about rumours
- - Added battle mission message about formations
- - Added Shield Bear troop for Beornings
- - Added fix to siege mission templates to prevent archers from stalling on ladders (In Vain's suggestion)
- - Gondor Reinforcement Event scripts and triggers
- - Refactor Oath Of Vengeance to Troop Kills instead of Party Kills
- - Eliminate Patrol Quest gets cancelled when target faction is defeated
- - Fixes to Formations
- - Eliminate Patrols Refactor
- - Player Initiated Siege
+  - Implement Troop Tree Viewer under Reports
+  - Implement Custom Camera to improve Orc/Dwarf gameplay
+  - Added validator to CppCoder's Morale Code to fix a script error
+  - Hooked up Dwarven Fortress for Spears quest
+  - Added Viking Conquest Module.ini changes to WB module.ini
+  - Added Ring Hunters Quest
+  - Added More Town Walkers to certain towns
+  - Make Elves slightly taller using scale
+  - Fix to Siege Doors so that they are properly attacked by troops
+  - Added Faction Starting Quests to tutorialize resource points & influence, and overall add immersion.
+  - Added Defend / Raid Village Pre-War quests
+  - Added Destroy Scout Camp War quest
+  - Improve Thrust Speed of Spears (VC)
+  - Added restrictions to Orc Mutiny
+  - Bumped up the number of parties
+  - Prepare Mission Templates and Menus for Spears quest completion
+  - Added XP for discovering town NPCs
+  - Added town mission message about rumours
+  - Added battle mission message about formations
+  - Added Shield Bear troop for Beornings
+  - Added fix to siege mission templates to prevent archers from stalling on ladders (In Vain's suggestion)
+  - Gondor Reinforcement Event scripts and triggers
+  - Refactor Oath Of Vengeance to Troop Kills instead of Party Kills
+  - Eliminate Patrol Quest gets cancelled when target faction is defeated
+  - Fixes to Formations
+  - Eliminate Patrols Refactor
+  - Player Initiated Siege
 
 - In Vain:
- - Multiple Siege Scene fixes
- - New Dale / Esgaroth Scenes (WB only)
- - Scout Camp Scenes (Good, Evil, North, Mirkwood + Large / Small versions of each)
- - Multiple Scene fixes
- - Black Shield Fortress for the Spears quest
- - Added new Dale map icon
- - Added CWE Flora for Scening
- - Added temporary siege scenes for future use
+  - Multiple Siege Scene fixes
+  - New Dale / Esgaroth Scenes (WB only)
+  - Scout Camp Scenes (Good, Evil, North, Mirkwood + Large / Small versions of each)
+  - Multiple Scene fixes
+  - Black Shield Fortress for the Spears quest
+  - Added new Dale map icon
+  - Added CWE Flora for Scening
+  - Added temporary siege scenes for future use
 
 - Yarrum
- - Spears Quest - Black Shield Menu Descriptions
- - Lore consultation & descriptions
- - Rohan reward helm
- - Dialogue fixes
+  - Spears Quest - Black Shield Menu Descriptions
+  - Lore consultation & descriptions
+  - Rohan reward helm
+  - Dialogue fixes
 
 - Mandible
- - 3D models of Shield Bear Shield, Shield Bear Club
+  - 3D models of Shield Bear Shield, Shield Bear Club
 
 - Multiple Translations
- - Chinese Simplified
- - German
- - Italian
- - Russian
- - Spanish
- - French
- - Turkish
- - Japanese
- - Polish
- - and many more!
+  - Chinese Simplified
+  - German
+  - Italian
+  - Russian
+  - Spanish
+  - French
+  - Turkish
+  - Japanese
+  - Polish
+  - and many more!
 
 
 
 ### TLD 3.3.1 changes:
 - Swyter:
- - Reimplement the death camera in Warband using MadVader's code as reference.
- - Make the Nazgûl, alarm levels and thunder sounds audible in Warband.
- - Added LODs to the reward swords and a better scabbard version of another one.
- - Fix undefined path material under the character creation terrain mesh in Warband, looked like blonde hair.
- - Fix invisible mesh of the "Sword of The Great Serpent" reward item in Warband.
- - Added a subtle hint of scrolling clouds projecting shadows in the overall map, done with shaders, only for Warband.
- - Enhanced waterfall, lava and fountain shaders, including transparency.
- - Wavy shaders for both Meduseld and per-faction banners, made from scratch.
- - Revised siege scenes and AI meshes, mainly from Osgiliath, Helm's Deep and Minas Morgul.
- - Updated overall map with passable fords and some optimizations.
- - Reimplemented the lone wargs mechanics in Warband, making riderless wargs aggressive.
- - Added scrollbars back to Warband.
- - Fixed ramp meshes in Erech and Calembel, in Warband.
- - Fixed crash when encountering wargs and warg mounted troops, caused by LODs, in Warband.
- - Add code guards to prevent possible player teleporting in the overall map.
- - Training in barracks will spawn the player with (correct) weapons, in Warband.
- - Hide the HP overlay during cutscenes using shader and uniform black magic, in Warband.
- - Make the cutscene overlay persist after coming back from the Esc menu, in Warband.
- - Make spears couchable in Warband.
- - Special items like troll clubs can no longer be picked up in the battlefield.
- - Now uruks and other races are sized correctly in Warband.
- - Upgrading troops in Warband is free and doesn't cost local resources, keeping with the original mechanic in M&B 1.011.
- - Fixed the blue underwater fog in Edoras and other places, caused by the fountain in Warband.
- - Fixed the shading glitches in Meduseld's floor.
- - Workaround Warband bug when populating smiths inventories which caused incorrect items like tools and other faction's weapons to be added by mistake.
- - Gandalf no longer appears bald or as a cute redhead, in Warband.
- - Fixed wobbly map trees in Mirkwood, in Warband.
- - Add entry points for enemies in the Rhûn Main Camp siege scene.
- - Fixed unwanted transparency of body parts when LODs are triggered.
- - Add "Accompany" option to the right-click party menu for allies, in Warband.
- - Fix some remaining inaccessible lords, like Burza in Gundabad.
- - Make use of Warband's muddy water in some scenes like Dead Marshes or Minas Morgul.
- - Fix ragdoll animations of troll victims.
- - Complete French translation of the entire mod by ALG and his team from MundusBellicus.fr.
- - Additional corrections and additions to other languages in Transifex.
- - New LODs for trolls.
+  - Reimplement the death camera in Warband using MadVader's code as reference.
+  - Make the Nazgûl, alarm levels and thunder sounds audible in Warband.
+  - Added LODs to the reward swords and a better scabbard version of another one.
+  - Fix undefined path material under the character creation terrain mesh in Warband, looked like blonde hair.
+  - Fix invisible mesh of the "Sword of The Great Serpent" reward item in Warband.
+  - Added a subtle hint of scrolling clouds projecting shadows in the overall map, done with shaders, only for Warband.
+  - Enhanced waterfall, lava and fountain shaders, including transparency.
+  - Wavy shaders for both Meduseld and per-faction banners, made from scratch.
+  - Revised siege scenes and AI meshes, mainly from Osgiliath, Helm's Deep and Minas Morgul.
+  - Updated overall map with passable fords and some optimizations.
+  - Reimplemented the lone wargs mechanics in Warband, making riderless wargs aggressive.
+  - Added scrollbars back to Warband.
+  - Fixed ramp meshes in Erech and Calembel, in Warband.
+  - Fixed crash when encountering wargs and warg mounted troops, caused by LODs, in Warband.
+  - Add code guards to prevent possible player teleporting in the overall map.
+  - Training in barracks will spawn the player with (correct) weapons, in Warband.
+  - Hide the HP overlay during cutscenes using shader and uniform black magic, in Warband.
+  - Make the cutscene overlay persist after coming back from the Esc menu, in Warband.
+  - Make spears couchable in Warband.
+  - Special items like troll clubs can no longer be picked up in the battlefield.
+  - Now uruks and other races are sized correctly in Warband.
+  - Upgrading troops in Warband is free and doesn't cost local resources, keeping with the original mechanic in M&B 1.011.
+  - Fixed the blue underwater fog in Edoras and other places, caused by the fountain in Warband.
+  - Fixed the shading glitches in Meduseld's floor.
+  - Workaround Warband bug when populating smiths inventories which caused incorrect items like tools and other faction's weapons to be added by mistake.
+  - Gandalf no longer appears bald or as a cute redhead, in Warband.
+  - Fixed wobbly map trees in Mirkwood, in Warband.
+  - Add entry points for enemies in the Rhûn Main Camp siege scene.
+  - Fixed unwanted transparency of body parts when LODs are triggered.
+  - Add "Accompany" option to the right-click party menu for allies, in Warband.
+  - Fix some remaining inaccessible lords, like Burza in Gundabad.
+  - Make use of Warband's muddy water in some scenes like Dead Marshes or Minas Morgul.
+  - Fix ragdoll animations of troll victims.
+  - Complete French translation of the entire mod by ALG and his team from MundusBellicus.fr.
+  - Additional corrections and additions to other languages in Transifex.
+  - New LODs for trolls.
  
 - Merlkir:
- - Ten new illustrations by Merlkir, plus some that weren't added before, mainly for encounters and victory.
+  - Ten new illustrations by Merlkir, plus some that weren't added before, mainly for encounters and victory.
      - Rivendell victory
      - Mirkwood victory
      - Black numeroneans victory
@@ -163,15 +161,15 @@ The work can still be reused under the original usage terms, at the user's discr
      - Corsair renegades attack
      - Good vs Evil reused as Quick Battles background 
      - Troll attack also used in quest menus
- - Written a brand new series of gameplay-related info pages from scratch.
- - New good/evil sounds for rank promotion, by Merlkir.
- - Better hit sounds for Trolls, by Merlkir.
+  - Written a brand new series of gameplay-related info pages from scratch.
+  - New good/evil sounds for rank promotion, by Merlkir.
+  - Better hit sounds for Trolls, by Merlkir.
 
 - CppCoder:
- - Fix the "terrible" moral problem for the player's party.
+  - Fix the "terrible" moral problem for the player's party.
  
 - mtarini
- - Better skeleton rigging for bears.
+  - Better skeleton rigging for bears.
 
 
 ### TLD 3.3 changes:
@@ -190,7 +188,6 @@ The work can still be reused under the original usage terms, at the user's discr
   - Add purchasable ponies to the Iron Hills Quarry merchant.
   - Manually fix border seams (visible as striped patterns on the ground) of some tiling terrain normal maps.
   - Re-encode the Bink intro video using the older audio codec so it can be played with the stock binkplay.exe instead of bundling it.
-    
   - WB: Added flowmap shader to rivers and sea, adds directionality to water surfaces.
   - WB: Make sitting lords accessible for talk on their throne rooms. (Denethor, Thranduil, Theoden, Saruman, Gothmog, M. of Sauron)
   - WB: Fix l(e)adders not appearing in sieges, Taleworlds typo.
@@ -257,7 +254,7 @@ The work can still be reused under the original usage terms, at the user's discr
 - Merlkir:
   - Graphic tweak(s).
 - Mandible:
- - Beorning armors redone.
+  - Beorning armors redone.
 - vota dc:
   - More item/troop balancing. (I think?)
 
@@ -293,35 +290,35 @@ The work can still be reused under the original usage terms, at the user's discr
 
 ### TLD 3.1 changes:
 
-Major updates:
-- Massive music update
-- Strategy:
-  -- More aggresive AI in campaigns and sieges; riskier attacks against very weak factions
-  -- Highly-ranked players can suggest siege targets to marshalls
-  -- Last-stand guardian parties spawn when a faction is almost crushed (allowing to defeat it by defeating the guardian party)
+* Major updates:
+  - Massive music update
+  - Strategy:
+    - More aggresive AI in campaigns and sieges; riskier attacks against very weak factions
+    - Highly-ranked players can suggest siege targets to marshalls
+    - Last-stand guardian parties spawn when a faction is almost crushed (allowing to defeat it by defeating the guardian party)
 
-Minor updates:
-- New battle scenes and landmarks
-- Hit-boxes revamp
-- Evil companion dialogs (Bolzog by Amman, the rest by Taal - thanks guys!)
-- Companions cost influence
-- Rhun and Gundabad parties made tougher, less camps are immediately siegable
-- Factions stop regenerating strength when brought down under 500
-- Marshalls will engage in defensive patrols against enemy patrols, not just lords
-- New sounds: quest events, lord deaths, rank promotion
-- Captured dwarves in chains
-- Gondor Lords hire more of their native (fiefdom-specific) troops
-- Meshes optimizations (redundant vertices), especially LODs
+* Minor updates:
+  - New battle scenes and landmarks
+  - Hit-boxes revamp
+  - Evil companion dialogs (Bolzog by Amman, the rest by Taal - thanks guys!)
+  - Companions cost influence
+  - Rhun and Gundabad parties made tougher, less camps are immediately siegable
+  - Factions stop regenerating strength when brought down under 500
+  - Marshalls will engage in defensive patrols against enemy patrols, not just lords
+  - New sounds: quest events, lord deaths, rank promotion
+  - Captured dwarves in chains
+  - Gondor Lords hire more of their native (fiefdom-specific) troops
+  - Meshes optimizations (redundant vertices), especially LODs
 
-Fixes:
-- Party members exchange problems fixed?
-- Lost companions can be always rehired
-- Corrupt save problem delayed by spawning less parties less frequently
-- Several sticky map places fixed (including Aldburg) 
-- Parties getting stuck in rivers get unstuck every few days (doesn't solve all map problems)
-- Empty parties get removed every few days
-- Empty volunteer parties removed from destroyed towns
-- Plenty of other stuff
+* Fixes:
+  - Party members exchange problems fixed?
+  - Lost companions can be always rehired
+  - Corrupt save problem delayed by spawning less parties less frequently
+  - Several sticky map places fixed (including Aldburg) 
+  - Parties getting stuck in rivers get unstuck every few days (doesn't solve all map problems)
+  - Empty parties get removed every few days
+  - Empty volunteer parties removed from destroyed towns
+  - Plenty of other stuff
 
 ### 3.01 Changelog (most important issues):
 - Elves nerfed somewhat, -40 weapon proficiencies across the board, fewer volunteers, a bit slower training
