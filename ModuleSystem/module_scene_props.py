@@ -2304,7 +2304,7 @@ scene_props = [
 ("fog_reddish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
   (try_begin),(is_currently_night),(set_fog_distance,3000,0x911101),(else_try),(set_fog_distance,1500,0x911101),(try_end)])]),
 ("fog_greenish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
-  (try_begin),(is_currently_night),(set_fog_distance,3000,0x911101),(else_try),(set_fog_distance,1500,0x911101),(try_end)])]),
+  (try_begin),(is_currently_night),(set_fog_distance,250,0x090F09),(else_try),(set_fog_distance,400,0x172617),(try_end)])]),
   
 ("isen_furnace",0,"isen_furnace","bo_isen_furnace", []),
 ("isen_wall",0,"isen_wall","bo_isen_wall", []),

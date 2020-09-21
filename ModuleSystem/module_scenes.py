@@ -322,11 +322,11 @@ scenes = [
 ("forest_lorien5"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 
 #big mirkwood scenes (+placeholders) moved to end of file
-("forest_mirkwood1_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b6a2c90d0002308c00005a8f0000786900001ef5",[],[],"outer_terrain_forest"),
-("forest_mirkwood2_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b262c90d0002308c000010a90000786900001ef5",[],[],"outer_terrain_forest"),
-("forest_mirkwood3_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b6a2c90d0002308c000010a90000786900001ef5",[],[],"outer_terrain_forest"),
-("forest_mirkwood4_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000010a90000786900001ef5",[],[],"outer_terrain_forest"),
-("forest_mirkwood5_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b0e2c90d0002308c00005c5a0000786900001ef5",[],[],"outer_terrain_forest"), #old terrain code for all mirkwood scenes: 0x00000000bc62c90d0002308c000048850000786900001ef5
+("forest_mirkwood1_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b002c90d0002308c00005a8f0000786900001ef5",[],[],"outer_terrain_forest"), #0x00000000b6a2c90d0002308c00005a8f0000786900001ef5
+("forest_mirkwood2_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b002c90d0002308c000010a90000786900001ef5",[],[],"outer_terrain_forest"), #0x00000000b262c90d0002308c000010a90000786900001ef5
+("forest_mirkwood3_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b002c90d0002308c000010a90000786900001ef5",[],[],"outer_terrain_forest"),
+("forest_mirkwood4_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b142c90d0002308c000010a90000786900001ef5",[],[],"outer_terrain_forest"),
+("forest_mirkwood5_small"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b002c90d0002308c00005c5a0000786900001ef5",[],[],"outer_terrain_forest"), #old terrain code for all mirkwood scenes: 0x00000000bc62c90d0002308c000048850000786900001ef5
 
 ("forest_firien1"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 ("forest_firien2"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
