@@ -3010,6 +3010,54 @@ scene_props = [
 ("rock_cliff_o_bb",0,"beefbacon_cliff_05","bo_terrain_cliff_05",[]),
 ("rock_cliff_p_bb",0,"beefbacon_cliff_06","bo_terrain_cliff_06",[]),
 
+	
+#Ruthven - CWE props 
+] + (is_a_wb_sceneprop==1 and [
+  ("birds_crebain", sokf_moveable|sokf_dynamic_physics, "woron_flight", "0", [
+    (ti_on_scene_prop_init,[
+      (store_trigger_param_1, ":var0"),
+      (assign, ":var1", 25),
+      (scene_prop_set_slot, ":var0", 40, ":var1"),
+      (val_add, ":var1", 1),
+      (store_random_in_range, ":var2", 1, ":var1"),
+      (scene_prop_set_slot, ":var0", 37, ":var2"),
+      (store_random_in_range, ":var3", 0, 16),
+      (val_mul, ":var3", 80),
+      (scene_prop_set_slot, ":var0", 39, ":var3"),
+      (scene_prop_set_slot, ":var0", 42, 8),
+      (scene_prop_set_slot, ":var0", 43, 11),
+      (scene_prop_set_slot, ":var0", 44, -1),
+    ]),
+
+    # (ti_on_scene_prop_hit,[
+      # (store_trigger_param_1, ":var0"),
+      # (call_script, "script_sa_flying_birds_hit", ":var0"),
+    # ]),
+  ]),
+
+  ("birds_thrush", sokf_moveable|sokf_dynamic_physics, "golub_flight", "0", [
+    (ti_on_scene_prop_init,[
+      (store_trigger_param_1, ":var0"),
+      (assign, ":var1", 26),
+      (scene_prop_set_slot, ":var0", 40, ":var1"),
+      (val_add, ":var1", 1),
+      (store_random_in_range, ":var2", 1, ":var1"),
+      (scene_prop_set_slot, ":var0", 37, ":var2"),
+      (store_random_in_range, ":var3", 0, 16),
+      (val_mul, ":var3", 80),
+      (scene_prop_set_slot, ":var0", 39, ":var3"),
+      (scene_prop_set_slot, ":var0", 42, 9),
+      (scene_prop_set_slot, ":var0", 43, 12),
+      (scene_prop_set_slot, ":var0", 44, -1),
+    ]),
+    ]),
+
+    ] or [	
+  ("birds_crebain", sokf_invisible, "woron_flight", "0", []),
+  ("birds_thrush",  sokf_invisible, "woron_flight", "0", []),
+	]) + [
+  
+  ("birds_end", sokf_moveable|sokf_dynamic_physics, "woron_flight", "bo_woron_flight", [  ]),
 
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),

@@ -4227,6 +4227,248 @@ dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [
 	(try_end)])
 	
 common_battle_healing = (0, 0, ti_once, [(key_clicked, key_h)], [(call_script, "script_battle_health_management")])
+
+### CWE flying birds, implemented by Ruthven
+
+reward_birds_wb = ((is_a_wb_mt==1) and [ 
+    #Three triggers:
+    #T1 checks player inventory and spawns approptiate bird prop if needed 
+    #T2 handles the vertex animation 
+    #T3 handles the bird movement (position) 
+    
+    #These are adapted from CWE code; 
+    # they used a custom GUI or something, 
+    # so all the variables are numbered instead of named - readability is a bit of a pain
+    
+    (ti_after_mission_start, 0, 0, 
+    [
+    (this_or_next|player_has_item, "itm_crebain_reward"), #No birds if no items 
+    (player_has_item, "itm_thrush_reward"),
+    ],
+    [
+	(try_begin), #Spawn appropriate bird prop 
+		(store_random_in_range, ":rot_x", -10, 10),
+		#(store_random_in_range, ":rot_y", 0, 30),
+		(try_begin),
+            (get_player_agent_no, ":player"), #Use the player's spawn point as the starting point - could use map center etc  
+            (agent_get_position, pos6, ":player"),
+			(store_random_in_range, ":height", 700, 1500), #7-15m above ground 
+			(position_move_z, pos6, ":height"),
+			(position_rotate_x, pos6, ":rot_x"), 
+			#(position_rotate_y, pos6, ":rot_y"),
+			(set_spawn_position, pos6),
+            (try_begin),
+                (player_has_item, "itm_crebain_reward"), #Ruthven: if they have both items they only get this one - I'm assuming players never have both 
+                (assign, ":birdprop", "spr_birds_crebain"),  #InVain: turned birdprop into a local var, we don't need it as a global
+            (else_try),
+                (player_has_item, "itm_thrush_reward"),
+                (assign, ":birdprop", "spr_birds_thrush"),
+            (try_end),
+			(spawn_scene_prop, ":birdprop"),
+        #  (scene_prop_set_slot, reg0, 44, ":var0"),
+          (prop_instance_enable_physics, reg0, 0),
+			#(display_message, "@birb"),
+		(try_end),
+	(try_end),
+	]),
+
+    (0.1, 0, 0,  #change refresh rate to alter wing speed - copy trigger for separate bird speeds 
+    [
+	(store_mission_timer_b_msec, ":cur_time"),
+	(gt, ":cur_time", 500), #1/2 second grace period 
+      (set_fixed_point_multiplier, 100),
+      (assign, ":var0", 0),
+      (try_begin), 
+        #using global var for bird prop; if we validate player_has_item here it will stop animating if they discard it!
+        #(assign, ":var1", "$birdprop"),
+		(try_for_range, ":var1", "spr_birds_crebain", "spr_birds_end"), #InVain: So it also detects pre-palced bird props in scenes, not only those spawned from reward items
+            
+        (scene_prop_get_num_instances, ":var2", ":var1"),
+        (ge, ":var2", 1),
+        (try_for_range, ":var3", 0, ":var2"),
+          (scene_prop_get_instance, ":var4", ":var1", ":var3"),
+          (scene_prop_slot_eq, ":var4", 41, 0),
+          (scene_prop_get_slot, ":var5", ":var4", 37),
+          (prop_instance_deform_to_time, ":var4", ":var5"),
+          (val_add, ":var5", 1),
+          (try_begin),
+            (ge, ":var5", 26),
+            (assign, ":var5", 1),
+          (try_end),
+          (scene_prop_set_slot, ":var4", 37, ":var5"),
+        (try_end),
+      (else_try),
+        (assign, ":var0", 1),
+      (try_end),
+      (eq, ":var0", 1),
+       (try_begin),
+       # # (eq, "$cheat_mode_sa", 1),
+         #(display_message, "@{!}DEBUG -- vertex keys woron END (stage no animated crows)"),
+       (try_end),
+	   (try_end),
+    ],
+    []),
+
+
+    (0.1, 0, ti_once, 
+    [
+	(store_mission_timer_b_msec, ":cur_time"),
+	(gt, ":cur_time", 500), #1/2 second grace period 
+      (set_fixed_point_multiplier, 100),
+      (assign, ":var0", 1),
+      (try_begin),
+        # (eq, "$g_disable_flying_birds", 1),
+      # (else_try),
+        (try_for_range, ":var1", "spr_birds_crebain", "spr_birds_end"), 
+          (scene_prop_get_num_instances, ":var2", ":var1"),
+          (ge, ":var2", 1),
+          (assign, ":var0", 0),
+          (try_for_range, ":var3", 0, ":var2"),
+            (scene_prop_get_instance, ":var4", ":var1", ":var3"),
+            (try_begin),
+              (scene_prop_slot_eq, ":var4", 41, 0),
+              (try_begin),
+                (try_begin),
+                  (scene_prop_get_slot, ":var5", ":var4", 44),
+                  (ge, ":var5", 0),
+                  (prop_instance_get_position, pos1, ":var5"),
+                (else_try),
+                  (prop_instance_get_starting_position, pos1, ":var4"),
+                (try_end),
+                (try_begin),
+                  (prop_instance_get_position, pos2, ":var4"),
+                  (get_distance_between_positions, ":var6", pos2, pos1),
+                  (le, ":var6", 200),
+                  (try_begin),
+                    (neg|scene_prop_slot_eq, ":var4", 45, 1),
+                    (position_move_z, pos2, 700),
+                  (try_end),
+                  (position_move_x, 2, 4000),
+                  (prop_instance_set_position, ":var4", pos2),
+                  (prop_instance_enable_physics, ":var4", 1),
+                (try_end),
+                (assign, ":var7", 1),
+                (try_begin),
+                  (prop_instance_is_animating, ":var8", ":var4"),
+                  (eq, ":var8", 1),
+                  (assign, ":var7", 0),
+                  (prop_instance_get_position, pos3, ":var4"),
+                  (prop_instance_get_animation_target_position, 2, ":var4"),
+                  (get_distance_between_positions, ":var9", pos2, pos3),
+                  (le, ":var9", 50),
+                  (assign, ":var7", 1),
+                (try_end),
+                (eq, ":var7", 1),
+                (scene_prop_get_slot, ":var10", ":var4", 38),
+                (scene_prop_get_slot, ":var11", ":var4", 39),
+                (val_add, ":var10", 30),
+                (position_rotate_z, pos1, ":var10"),
+                (position_move_x, 1, 4000),
+                (try_begin),
+                  (neg|scene_prop_slot_eq, ":var4", 45, 1),
+                  (store_add, ":var12", 700, ":var11"),
+                (else_try),
+                  (assign, ":var12", ":var11"),
+                (try_end),
+                (position_move_z, pos1, ":var12"),
+                (try_begin),
+                  (position_get_distance_to_terrain, ":var13", pos1),
+                  (store_div, ":var14", 700, 2),
+                  (this_or_next|ge, 0, ":var13"),
+                  (ge, ":var14", ":var13"),
+                  (position_set_z_to_ground_level, pos1),
+                  (position_move_z, pos1, ":var12"),
+                (try_end),
+                (prop_instance_get_position, pos2, ":var4"),
+                (get_distance_between_positions, ":var15", pos2, pos1),
+                (val_div, ":var15", 9),
+                (prop_instance_animate_to_position, ":var4", pos1, ":var15"),
+                (try_begin),
+                  (ge, ":var10", 360),
+                  (assign, ":var10", 0),
+                  (store_random_in_range, ":var11", 0, 16),
+                  (val_mul, ":var11", 80),
+                  (scene_prop_set_slot, ":var4", 39, ":var11"),
+                (try_end),
+                (scene_prop_set_slot, ":var4", 38, ":var10"),
+              (try_end),
+            (else_try), #Dead birds - currently unused 
+              (scene_prop_slot_eq, ":var4", 41, 1),
+              (set_fixed_point_multiplier, 100),
+              (position_set_x, pos0, 2500),
+              (position_set_y, pos0, 80),
+              (position_set_z, pos0, 0),
+              (prop_instance_dynamics_set_properties, ":var4", 0),
+              (position_set_x, pos0, 0),
+              (position_set_y, pos0, 0),
+              (position_set_z, pos0, -800),
+              (prop_instance_dynamics_set_omega, ":var4", 0),
+              (try_begin),
+                (prop_instance_get_position, pos1, ":var4"),
+               # (particle_system_burst, "psys_hit_bird_blood", pos1, 1),
+               # (particle_system_burst, "psys_hit_bird_feathers", pos1, 1),
+                (position_get_distance_to_terrain, ":var15", pos1),
+                (le, ":var15", 100),
+                (position_get_rotation_around_z, ":var10", pos1),
+                #(position_align_to_ground, pos1, 1, 1),
+                (position_rotate_x, pos1, -90),
+                (position_rotate_z, pos1, ":var10"),
+                (prop_instance_enable_physics, ":var4", 0),
+                (prop_instance_set_position, ":var4", pos1),
+                (position_move_z, pos1, -1),
+                (prop_instance_animate_to_position, ":var4", pos1, 100000000),
+                (scene_prop_set_slot, ":var4", 41, 2),
+                (scene_prop_get_slot, ":var16", ":var4", 43),
+                (prop_instance_deform_to_time, ":var4", ":var16"),
+              (try_end),
+            (try_end),
+          (try_end),
+        (try_end),
+      (try_end),
+      (eq, ":var0", 1),
+      # (try_begin),
+       # # (eq, "$cheat_mode_sa", 1),
+        # (assign, "$g_mission_cam_set_bird_target", -2),
+        # (display_message, "@{!}DEBUG -- animation of flight END (stage no animated birds)", 0x00005500),
+      # (try_end),
+    ],
+    [])
+	] or [])
+
+# dynamic fog in dungeons, governed by player triggering scene props (mtarini and GA)
+dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [ 
+	(get_player_agent_no,":player"), 
+    (agent_get_position,pos25,":player"),
+ 	(assign,":min_dist",200), # cycle through fog triggers, find closest one
+	(assign,":min_pointer",-1),
+    (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),
+		(scene_prop_get_num_instances,":max_instance", ":pointer"),
+		(ge,":max_instance", 1),
+		(try_for_range,":instance_no",0,":max_instance"), # checking distance to player
+			(scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
+			(ge, ":i", 0),
+            (prop_instance_get_position,pos1,":i"),
+            (get_distance_between_positions,":dist",pos1,pos25),
+	        (le,":dist",":min_dist"),
+			(assign, ":min_dist", ":dist"), 
+			(assign, ":min_pointer", ":pointer"), 
+        (try_end),
+    (try_end),
+	(try_begin), # setting fog thickness
+		(neq,":min_pointer",-1),
+		(try_begin),(eq,":min_pointer","spr_light_fog_black0"),(assign,reg11,10000), # 10000
+		 (else_try),(eq,":min_pointer","spr_light_fog_black1"),(assign,reg11,120),# was 500
+		 (else_try),(eq,":min_pointer","spr_light_fog_black2"),(assign,reg11,80), # was 200
+		 (else_try),(eq,":min_pointer","spr_light_fog_black3"),(assign,reg11,40),  # was 120
+		 (else_try),(eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
+		 (else_try),(eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
+		(try_end),
+		(set_fog_distance,reg11,0x000001), 
+		#(display_message, "@DEBUG: Fog distance: {reg11}"), 	
+		(try_begin),(eq, reg11, 10000),(assign, "$player_is_inside_dungeon",0),
+		 (else_try),				   (assign, "$player_is_inside_dungeon",1),
+		(try_end),
+	(try_end)])
 	
 # ( "custom_battle_football",mtf_battle_mode,-1,
     # "The match starts in a minute!",

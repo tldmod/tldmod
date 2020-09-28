@@ -1058,7 +1058,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
   reset_fog,
   horse_whistle_init,
   horse_whistle,
-] + tld_morale_triggers + fade + khams_custom_player_camera + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack
+] + tld_morale_triggers + fade + khams_custom_player_camera + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack + reward_birds_wb
 
 
 tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
@@ -1086,7 +1086,7 @@ tld_common_peacetime_scripts = [
 	tld_player_cant_ride,
 	dungeon_darkness_effect,
   reset_fog,
-] + custom_tld_bow_to_kings + bright_nights + fade + khams_custom_player_camera #Custom Cam triggers
+] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + khams_custom_player_camera #Custom Cam triggers
 
 
 tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
@@ -1501,6 +1501,7 @@ mission_templates = [ # not used in game
      (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
     tld_common_wb_muddy_water+
+	#birds+			  
     tld_common_peacetime_scripts +[
        
 	(1, 0, ti_once, [],[ # set walkers, music and ambient sounds
@@ -2040,6 +2041,7 @@ mission_templates = [ # not used in game
      (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 8th entry, for WARGS
     ],
     tld_common_wb_muddy_water +
+	#birds +
     formations_triggers + AI_triggers +   common_deathcam_triggers + moto_formations_triggers +  tld_common_battle_scripts + command_cursor_sub_mod + [
 	common_battle_tab_press,
 	common_music_situation_update,

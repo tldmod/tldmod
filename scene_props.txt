@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1941
+ 1944
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4622,7 +4622,7 @@ spr_fog_reddish_glow 16384 0 collision_cube 0 1
 
 
 spr_fog_greenish_glow 16384 0 collision_cube 0 1
--40  6 4 0 2273 0 1798 2 250 593673 5 0 1798 2 250 2044703 3 0 
+-40  6 4 0 2273 0 1798 2 250 593673 5 0 1798 2 400 1517079 3 0 
 
 
 spr_isen_furnace 0 0 isen_furnace bo_isen_furnace 0
@@ -5891,6 +5891,15 @@ spr_rock_cliff_o_bb 0 0 beefbacon_cliff_05 bo_terrain_cliff_05 0
 
 
 spr_rock_cliff_p_bb 0 0 beefbacon_cliff_06 bo_terrain_cliff_06 0
+
+
+spr_birds_crebain 16384 0 woron_flight 0 0
+
+
+spr_birds_thrush 16384 0 woron_flight 0 0
+
+
+spr_birds_end 327680 0 woron_flight bo_woron_flight 0
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0
