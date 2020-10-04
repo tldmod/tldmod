@@ -33,7 +33,7 @@ mkdir -p "$TLD_dest_path/Textures"
 
 echo "Installing base files"
 cp -pu "$mnb_path/main.bmp"   "$TLD_dest_path/main.bmp"
-cp -pu "$mnb_path/module.ini" "$TLD_dest_path/module.ini"
+cp -pu  "$wb_path/module.ini" "$TLD_dest_path/module.ini"
 cp -pu "$mnb_path/map.txt"    "$TLD_dest_path/map.txt"
 
 # First, copy all the txt files
@@ -121,7 +121,7 @@ done
 echo "Installing Textures"
 cp -pru "$wb_path/Textures/" "$TLD_dest_path/"
 
-for f in $mnb_path/Textures/*.dds; do
+for f in $mnb_path/Textures/*.{dds,DDS}; do
     [ -e "$wb_path/Textures/""$(basename "$f")" ] && continue
 
     dest_file="$TLD_dest_path/Textures/$(basename "$f")"
