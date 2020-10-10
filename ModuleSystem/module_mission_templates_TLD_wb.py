@@ -1000,6 +1000,30 @@ tld_troll_aim_fix_on_release = (0, 0, 0, [(gt,"$trolls_in_battle",0)],
 
 #### Kham Improved Track & Damage Fallen Riders
 
+# Note that ti_on_agent_dismount also triggers when the horse is killed and
+# before the ti_on_agent_killed_or_wounded, so we need to track if the horse
+# is alive or not when invalidating the slots
+noxbru_rider_dismounts = (ti_on_agent_dismount, 0, 0, [],
+  [
+    (store_trigger_param_1, ":agent"),
+    (store_trigger_param_2, ":horse"),
+
+    (try_begin),
+      (agent_is_alive, ":horse"),
+      (agent_set_slot, ":agent", slot_agent_horse_agent, -1),
+      (agent_set_slot, ":horse", slot_agent_rider_agent, -1),
+    (end_try),
+  ])
+
+noxbru_rider_mounts = (ti_on_agent_mount, 0, 0, [],
+  [
+    (store_trigger_param_1, ":agent"),
+    (store_trigger_param_2, ":horse"),
+
+    (agent_set_slot, ":agent", slot_agent_horse_agent, ":horse"),
+    (agent_set_slot, ":horse", slot_agent_rider_agent, ":agent"),
+  ])
+
 kham_track_riders = (ti_after_mission_start, 0, ti_once, [],
   [
     (try_for_agents, ":agent_no"),
