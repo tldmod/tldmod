@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1944
+ 1945
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5897,6 +5897,9 @@ spr_birds_crebain 16384 0 woron_flight 0 0
 
 
 spr_birds_thrush 16384 0 woron_flight 0 0
+
+
+spr_birds_pigeon 16384 0 woron_flight 0 0
 
 
 spr_birds_end 327680 0 woron_flight bo_woron_flight 0
