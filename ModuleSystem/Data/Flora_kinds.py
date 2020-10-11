@@ -722,12 +722,11 @@ fauna_kinds = [
    ['PW_tree_17_c', 'bo_pw_tree_17_c'],
    ['PW_tree_17_d', 'bo_pw_tree_17_d']]),
 
- ('pw_birch_green_group', #same as zl_birch_green_group
+ ('pw_beech_green_group',
   fkf_tree|density(4),
-  [['PW_tree_17_a', 'bo_pw_tree_17_a'],
-   ['PW_tree_17_b', 'bo_pw_tree_17_b'],
-   ['PW_tree_17_c', 'bo_pw_tree_17_c'],
-   ['PW_tree_17_d', 'bo_pw_tree_17_d']]),
+  [['PW_tree_17_beech_a', 'bo_pw_tree_17_a'],
+   ['PW_tree_17_beech_b', 'bo_pw_tree_17_b'],
+   ['PW_tree_17_beech_c', 'bo_pw_tree_17_c']]),
 
  ('zl_birch_yellow_group', #same as pw_birch_yellow_group
   fkf_tree,
@@ -1177,7 +1176,14 @@ fauna_kinds = [
    ['tree_mirkwood_roots_b_1', 'bo_tree_mirkwood_roots_1'],
    ['tree_mirkwood_roots_b_2', 'bo_tree_mirkwood_roots_2'],
    ['tree_mirkwood_roots_b_3', 'bo_tree_mirkwood_roots_3'],
-   ['tree_mirkwood_roots_b_4', 'bo_tree_mirkwood_roots_4']]),   
+   ['tree_mirkwood_roots_b_4', 'bo_tree_mirkwood_roots_4']]),
+
+ ('zl_beech_group',
+  fkf_plain|fkf_tree|density(2),
+  [['PL_beech_group1', 'bo_pl_oak_group1'],
+   ['PL_beech_group2', 'bo_pl_oak_group2'],
+   ['PL_beech_group3', 'bo_pl_oak_group3']]),
+   
 ]
 
 def save_fauna_kinds():

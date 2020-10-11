@@ -2619,10 +2619,10 @@ itemsfile version 2
  itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_1h 0  scab_1h_westernesse 3458764513820540928  4198402 9223388564182532111 3000 156672 1.25 100 0 0 0 15 38912 117 0 77 0 301 294
 0
 
- itm_westernesse2h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  4198403 9223635954298781951 200 156672 3 100 0 0 0 18 51200 110 0 110 0 301 50
+ itm_westernesse2h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  4198403 9223635954298781951 200 156672 2.5 100 0 0 0 18 46080 110 0 106 0 301 301
 0
 
- itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  71307266 9223388564182532111 200 156672 3 100 0 0 0 12 43008 110 0 90 0 301 298
+ itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  71307266 9223388564182532111 200 156672 1.5 100 0 0 0 12 43008 110 0 90 0 301 298
 0
 
  itm_nazgul_sword Wicked_Sword Wicked_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  4368371715 9223635954298781951 200 156672 4.5 100 0 0 0 18 51200 103 0 112 0 301 306
@@ -2631,7 +2631,7 @@ itemsfile version 2
  itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b 0  71307266 9223388529822793743 3000 156672 1.25 100 0 0 0 15 56320 97 0 105 0 278 55
+ itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b_longer 0  71307266 9223635919939043583 3000 156672 3 100 0 0 0 18 53248 97 0 110 0 278 52
 0
 
  itm_garlic_reward Garlic Garlic 1  garlic.9 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0

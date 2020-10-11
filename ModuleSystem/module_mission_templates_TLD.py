@@ -4437,41 +4437,6 @@ reward_birds_wb = ((is_a_wb_mt==1) and [
     ],
     [])
 	] or [])
-
-# dynamic fog in dungeons, governed by player triggering scene props (mtarini and GA)
-dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [ 
-	(get_player_agent_no,":player"), 
-    (agent_get_position,pos25,":player"),
- 	(assign,":min_dist",200), # cycle through fog triggers, find closest one
-	(assign,":min_pointer",-1),
-    (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),
-		(scene_prop_get_num_instances,":max_instance", ":pointer"),
-		(ge,":max_instance", 1),
-		(try_for_range,":instance_no",0,":max_instance"), # checking distance to player
-			(scene_prop_get_instance, ":i", ":pointer", ":instance_no"),
-			(ge, ":i", 0),
-            (prop_instance_get_position,pos1,":i"),
-            (get_distance_between_positions,":dist",pos1,pos25),
-	        (le,":dist",":min_dist"),
-			(assign, ":min_dist", ":dist"), 
-			(assign, ":min_pointer", ":pointer"), 
-        (try_end),
-    (try_end),
-	(try_begin), # setting fog thickness
-		(neq,":min_pointer",-1),
-		(try_begin),(eq,":min_pointer","spr_light_fog_black0"),(assign,reg11,10000), # 10000
-		 (else_try),(eq,":min_pointer","spr_light_fog_black1"),(assign,reg11,120),# was 500
-		 (else_try),(eq,":min_pointer","spr_light_fog_black2"),(assign,reg11,80), # was 200
-		 (else_try),(eq,":min_pointer","spr_light_fog_black3"),(assign,reg11,40),  # was 120
-		 (else_try),(eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
-		 (else_try),(eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
-		(try_end),
-		(set_fog_distance,reg11,0x000001), 
-		#(display_message, "@DEBUG: Fog distance: {reg11}"), 	
-		(try_begin),(eq, reg11, 10000),(assign, "$player_is_inside_dungeon",0),
-		 (else_try),				   (assign, "$player_is_inside_dungeon",1),
-		(try_end),
-	(try_end)])
 	
 # ( "custom_battle_football",mtf_battle_mode,-1,
     # "The match starts in a minute!",

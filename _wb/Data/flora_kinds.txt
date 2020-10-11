@@ -1,4 +1,4 @@
-188
+189
 grass 6442469687300 6
  PW_grass_yellow_e  0
  PW_grass_a_xx  0
@@ -618,14 +618,12 @@ zl_birch_green_group 4194304 4
  0 0
  PW_tree_17_d  bo_pw_tree_17_d
  0 0
-pw_birch_green_group 17184063488 4
- PW_tree_17_a  bo_pw_tree_17_a
+pw_beech_green_group 17184063488 3
+ PW_tree_17_beech_a  bo_pw_tree_17_a
  0 0
- PW_tree_17_b  bo_pw_tree_17_b
+ PW_tree_17_beech_b  bo_pw_tree_17_b
  0 0
- PW_tree_17_c  bo_pw_tree_17_c
- 0 0
- PW_tree_17_d  bo_pw_tree_17_d
+ PW_tree_17_beech_c  bo_pw_tree_17_c
  0 0
 zl_birch_yellow_group 4194304 2
  PW_tree_18_a  bo_pw_tree_18_a
@@ -980,3 +978,10 @@ mirkwood_roots 0 8
  tree_mirkwood_roots_b_2  bo_tree_mirkwood_roots_2
  tree_mirkwood_roots_b_3  bo_tree_mirkwood_roots_3
  tree_mirkwood_roots_b_4  bo_tree_mirkwood_roots_4
+zl_beech_group 8594128900 3
+ PL_beech_group1  bo_pl_oak_group1
+ 0 0
+ PL_beech_group2  bo_pl_oak_group2
+ 0 0
+ PL_beech_group3  bo_pl_oak_group3
+ 0 0
