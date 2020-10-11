@@ -429,7 +429,10 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 tld_fallen_riders_get_damaged = (is_a_wb_mt==1 and 
 [
 	kham_track_riders,
-	kham_damage_fallen_riders
+	kham_damage_fallen_riders,
+	noxbru_rider_dismounts,
+	noxbru_rider_mounts
+
 
 ] or [
 

@@ -1000,6 +1000,30 @@ tld_troll_aim_fix_on_release = (0, 0, 0, [(gt,"$trolls_in_battle",0)],
 
 #### Kham Improved Track & Damage Fallen Riders
 
+# Note that ti_on_agent_dismount also triggers when the horse is killed and
+# before the ti_on_agent_killed_or_wounded, so we need to track if the horse
+# is alive or not when invalidating the slots
+noxbru_rider_dismounts = (ti_on_agent_dismount, 0, 0, [],
+  [
+    (store_trigger_param_1, ":agent"),
+    (store_trigger_param_2, ":horse"),
+
+    (try_begin),
+      (agent_is_alive, ":horse"),
+      (agent_set_slot, ":agent", slot_agent_horse_agent, -1),
+      (agent_set_slot, ":horse", slot_agent_rider_agent, -1),
+    (end_try),
+  ])
+
+noxbru_rider_mounts = (ti_on_agent_mount, 0, 0, [],
+  [
+    (store_trigger_param_1, ":agent"),
+    (store_trigger_param_2, ":horse"),
+
+    (agent_set_slot, ":agent", slot_agent_horse_agent, ":horse"),
+    (agent_set_slot, ":horse", slot_agent_rider_agent, ":agent"),
+  ])
+
 kham_track_riders = (ti_after_mission_start, 0, ti_once, [],
   [
     (try_for_agents, ":agent_no"),
@@ -1036,32 +1060,43 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     (neq, ":troop_no", "trp_werewolf"),
     
     
-    (agent_get_speed, pos4, ":agent_rider"),
-    (position_get_y, reg21, pos2),
-    (store_div, ":speed", reg21, 2000), # Seems to usually produce a number in the mid 100's.
+    # Old damage formula:
+    # max(w^2/100, w/2) * (v_y/2000) /110 * (1 - r*8/100)
+    # New damage formula:
+    # rand(1,5) + w * (clamp(v_y, 0, 500) / 10) / 125 * (1 - r*8/100)
+    #
+    # For r=5, w=50 and v_y>=500 we obtain that the *unreduced* damage is 25
+    (store_random_in_range, ":random_damage", 1, 6),
+
     (call_script, "script_ce_get_troop_encumbrance", ":troop_no", -1),
     (assign, ":weight", reg1),
-    # (try_begin),
-      # (gt, ":weight", 100),
-      # (val_div, ":weight", 10),
-    # (try_end),
-    (store_mul, ":weighted_damage", ":weight", ":weight"),
-    (val_div, ":weighted_damage", 100),
-    (store_div, ":minimum_weighted", ":weight", 2),
-    (val_max, ":weighted_damage", ":minimum_weighted"),
-    (store_mul, ":damage", ":weighted_damage", ":speed"),
-    (val_div, ":damage", 110),
-    #(assign, reg31, ":damage"), ### DIAGNOSTIC ### - Raw Damage
+
+    (agent_get_speed, pos4, ":agent_rider"),
+    (position_get_y, reg21, pos4),
+    (val_abs, reg21),
+    (val_min, reg21, 500),
+    (store_div, ":speed", reg21, 10),
+
+    (store_mul, ":raw_damage", ":weight", ":speed"),
+    (val_div, ":raw_damage", 125),
+
     (store_skill_level, ":skill_riding", "skl_riding", ":troop_no"),
-    #(assign, reg32, ":skill_riding"), ### DIAGNOSTIC ### - Riding Skill
-    (val_mul, ":skill_riding", 8),
-    (assign, reg34, ":skill_riding"), ### DIAGNOSTIC ### - Damage Reduction %
-    (store_mul, ":damage_reduction", ":damage", ":skill_riding"),
-    (val_div, ":damage_reduction", 100),
-    (val_sub, ":damage", ":damage_reduction"),
-    
-    (assign, reg33, ":damage"), ### DIAGNOSTIC ### - Raw Reduced Damage
-    
+    (store_mul, ":riding_reduction", ":skill_riding", 8),
+    (val_mul, ":riding_reduction", ":raw_damage"),
+    (val_div, ":riding_reduction", 100),
+
+    (store_add, ":damage", ":random_damage", ":raw_damage"),
+    (val_sub,   ":damage", ":riding_reduction"),
+
+    # (assign, reg30, ":random_damage"),    ### DIAGNOSTIC ### - Random Damage
+    # (assign, reg31, ":weight"),           ### DIAGNOSTIC ### - Weight
+    # (assign, reg32, ":speed"),            ### DIAGNOSTIC ### - Speed
+    # (assign, reg33, ":raw_damage"),       ### DIAGNOSTIC ### - Raw Damage
+    # (assign, reg34, ":skill_riding"),     ### DIAGNOSTIC ### - Riding Skill
+    # (assign, reg35, ":riding_reduction"), ### DIAGNOSTIC ### - Damage Reduction %
+    # (assign, reg36, ":damage"),           ### DIAGNOSTIC ### - Raw Reduced Damage
+    # (display_message, "@DEBUG: {reg36} Damage: {reg30} + {reg31}x{reg32}/125 * (1 - {reg34}*8/100) = {reg30} + {reg33} - {reg35}", color_bad_news),
+
     (set_show_messages, 0),
     (store_agent_hit_points, ":health", ":agent_rider", 1),
     (val_sub, ":health", ":damage"),
@@ -1099,57 +1134,47 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     #(agent_get_team, ":team_killer", ":agent_killer"),
     (agent_get_team, ":team_victim", ":agent_rider"),
     (assign, reg22, ":damage"),
+
+    ## PLAYER - Horse killed.
     (try_begin),
+      (this_or_next|eq, "$show_mount_ko_message",1),
+      (eq, "$show_mount_ko_message",2),
+      (eq, ":agent_rider", ":agent_player"),
+      (display_message, "@Your mount has fallen to the ground beneath you!", color_bad_news),
+      (display_message, "@Receive {reg22} damage."), # due to falling from your mount.", color_bad_news),
+      (try_begin),
+        (eq, ":agent_killed", 1),
+        (display_message, "@You have been knocked unconscious by {s22}.", color_bad_news),
+      (try_end),
+    (try_end),
+
+    (try_begin),
+      (eq, "$show_mount_ko_message",2),
       (troop_get_class, ":class", ":troop_no"),
       (this_or_next|troop_is_hero, ":troop_no"),
       (eq, ":class", 2), # Cavalry
+
       (try_begin),
-        ## PLAYER - Horse killed.
-        (this_or_next|eq, "$show_mount_ko_message",1),
-        (eq, "$show_mount_ko_message",2),
-        (eq, ":agent_rider", ":agent_player"),
-        (display_message, "@Your mount has fallen to the ground beneath you!", color_bad_news),
-        (display_message, "@Receive {reg22} damage."), # due to falling from your mount.", color_bad_news),
-        (try_begin),
-          (eq, ":agent_killed", 1),
-          (display_message, "@You have been knocked unconscious by {s22}.", color_bad_news),
-        (try_end),
-      (else_try),
-        (eq, "$show_mount_ko_message",2),
         ## ANYONE - Killed someone's horse (teammate)
         (eq, ":team_player", ":team_victim"),
-        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount when it fell.", 0xB48211),
-        #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", 0xB48211),
-        (try_begin),
-          (eq, ":agent_killed", 1),
-          (display_message, "@{s21} {reg24?killed:knocked unconscious} by {s22}.", 0xB48211),
-        (try_end),
+        (assign, reg25, 0xB48211),
       (else_try),
-        (eq, "$show_mount_ko_message",2),
         ## ANYONE - Killed someone's horse (ally)
         (agent_is_ally, ":agent_rider"),
-        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount when it fell.", 0xB06EDA),
-        #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", 0xB06EDA),
-        (try_begin),
-          (eq, ":agent_killed", 1),
-          (display_message, "@{s21} {reg24?killed:knocked unconscious} by {s22}.", 0xB06EDA),
-        (try_end),
+        (assign, reg25, 0xB06EDA),
       (else_try),
-        (eq, "$show_mount_ko_message",2),
         ## ANYONE - Killed someone's horse (enemy)
         (teams_are_enemies, ":team_player", ":team_victim"),
-        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount when it fell.", 0x42D8A6),
-        #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", 0x42D8A6),
-        (try_begin),
-          (eq, ":agent_killed", 1),
-          (display_message, "@{s21} {reg24?killed:knocked unconscious} by {s22}.", 0x42D8A6),
-        (try_end),
+        (assign, reg25, 0x42D8A6),
+      (try_end),
+
+      (display_message, "@{s21} has been knocked off of {reg23?her:his} mount when it fell.", reg25),
+      #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", reg25),
+      (try_begin),
+        (eq, ":agent_killed", 1),
+        (display_message, "@{s21} {reg24?killed:knocked unconscious} by {s22}.", reg25),
       (try_end),
     (try_end),
-    #(ge, DEBUG_COMBAT_EFFECTS, 2),
-    #(assign, reg35, ":weight"),
-    #(assign, reg36, ":speed"),
-    #(display_message, "@DEBUG: {reg31} [({reg35}wt^2/100 * {reg36}% speed)] raw -> {reg32} ride = -{reg34}% -> {reg33} given", color_bad_news),
   ])
 
 #AI kicking start
