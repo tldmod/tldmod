@@ -126,6 +126,7 @@ ai_scripts = [
          (party_slot_eq, ":faction_marshall_party", slot_party_type, spt_kingdom_hero_party), #Kham - Faction AI Only changes if Marshall has host.
          
          (party_get_slot, ":faction_marshall_army_strength", ":faction_marshall_party", slot_party_cached_strength),
+		 (val_max, ":faction_marshall_army_strength", 1), #InVain: fixes a divide by zero error
          (party_get_slot, ":follower_strength", ":faction_marshall_party", slot_party_follower_strength),
          (val_add, ":faction_marshall_army_strength", ":follower_strength"),
          (try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),

@@ -412,6 +412,7 @@ scripts = [
 		(assign, ":rank", reg0),
 		(gt, ":rank", 0),
 		(call_script, "script_get_rank_title_to_s24", ":fac"),
+		(neq, "$g_fast_mode", 1), 
 		(display_message, "@{s24}:"),
 		(store_mul, ":income", ":rank", ":rank"), 
 		(store_mul, ":rank10", ":rank", 10), 
@@ -942,7 +943,10 @@ scripts = [
 	(assign, ":tot_spending",  0), # for all factions
 	(str_clear, s10 ), # list of unpaid faction
 
+	(try_begin),
+	(neq, "$g_fast_mode", 1),
 	(display_message, "@Troop upkeep:"),
+	(try_end),
 
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
 		(try_begin),
@@ -1006,10 +1010,10 @@ scripts = [
 		(call_script, "script_add_faction_rps", ":fac", reg10),
 	(try_end),  # end of for each faction
 
-	(try_begin),(eq,  ":tot_spending", 0 ),(eq,  ":n_tot_unpaid_troops", 0 ), 
+	(try_begin),(eq,  ":tot_spending", 0 ),(eq,  ":n_tot_unpaid_troops", 0 ), (neq, "$g_fast_mode", 1),
 		(display_message, "@[no upkeep costs]"),
 	(try_end),
-	(try_begin),(gt, ":n_tot_unpaid_troops", 0),
+	(try_begin),(gt, ":n_tot_unpaid_troops", 0), (neq, "$g_fast_mode", 1),
 		(display_message, "@Short of Resource Points!!", color_bad_news),
 		(display_message, "@{s10} will soon reassign some of {s12} troops away from your party!", color_bad_news),
 	(try_end),
@@ -1885,6 +1889,7 @@ scripts = [
 	(assign, "$tld_option_death_npc", 1), #permanent death for npcs ON by default
 	(assign, "$tld_option_death_player", 0), #permanent death for player OFF by default
 	(assign, "$tld_option_cutscenes", 1),# ON by default
+	(assign, "$g_fast_mode", 0),# OFF by default
 	(assign, "$tld_option_morale", 1), # Battle morale ON by default
 	(assign, "$tld_option_animal_ambushes", 1), # Ambushes ON by default
 	(assign, "$wound_setting", 12), # rnd, 0-3 result in wounds
@@ -2577,7 +2582,10 @@ scripts = [
 						(else_try),
 							(assign, ":news_color", color_bad_news),
 						(try_end),
-						(display_message,"@{s1} of {s3} was defeated in battle.", ":news_color"),
+						(try_begin),
+							(neq, "$g_fast_mode", 1),
+							(display_message,"@{s1} of {s3} was defeated in battle.", ":news_color"),
+						(try_end),
 						#(display_message,"@{s1} of {s3} was defeated in battle but managed to escape.", ":news_color"),
 						######################## map heroes injuries and deaths
 						(eq, "$tld_option_death_npc", 1), # if death option is available
@@ -9947,6 +9955,7 @@ scripts = [
        (try_end),
        (this_or_next|lt, ":dist", 30),
        (eq, ":has_messenger", 1),
+	   (neq, "$g_fast_mode", 1),
        (str_store_party_name_link, s1, ":center_no"),
        (display_message, "@Enemies spotted near {s1}."),
      (try_end),

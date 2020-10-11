@@ -80,6 +80,11 @@ simple_triggers = [
         (else_try),
           (ge,"$g_camp_mode", 1),
           (assign, "$g_camp_mode", 0),
+			(try_begin),
+			(eq, "$g_fast_mode", 1),
+			(assign, "$g_fast_mode", 0),
+			(add_xp_to_troop,10000,"trp_player"), #emulate some xp gain in test mode (for siege strength relaxation)
+			(try_end),
           (assign, "$g_player_icon_state", pis_normal),
           (display_message, "@Breaking camp..."),
         (try_end),
@@ -1187,6 +1192,7 @@ simple_triggers = [
           (call_script, "script_consume_food", ":selected_food"),
         (else_try),
           (eq, ":no_food_displayed", 0),
+		  (neq, "$g_fast_mode", 1),
           (display_message, "@Party has nothing to eat!", 0xFF0000),
           (call_script, "script_change_player_party_morale", -3),
           (assign, ":no_food_displayed", 1),
@@ -1491,7 +1497,8 @@ simple_triggers = [
   
   # (47) Report to army quest #MV: make it more rare?, was 6
   (12,[(is_between, "$players_kingdom", kingdoms_begin, kingdoms_end),
-      (eq, "$g_player_is_captive", 0),
+      (neq, "$g_fast_mode", 1),
+	  (eq, "$g_player_is_captive", 0),
       (neg|faction_slot_eq, "$players_kingdom", slot_faction_ai_state, sfai_default),
       (neg|check_quest_active, "qst_report_to_army"),
       (neg|check_quest_active, "qst_follow_army"),
@@ -2641,8 +2648,10 @@ simple_triggers = [
           (call_script, "script_faction_strength_string_to_s23", ":faction"),
           (try_begin),
             (lt,":strength",":strength_new"),   # announce when strength threshold is crossed upwards
+			(neq, "$g_fast_mode", 1),
             (display_message,"@The forces of {s22} have rallied! {s22} is now {s23}.", ":news_color"),
           (else_try),
+			(neq, "$g_fast_mode", 1),
             (display_message,"@The might of {s22} has diminished! {s22} is now {s23}.", ":news_color"), # announce when strength threshold is crossed downwards
           (try_end),
         (try_end),

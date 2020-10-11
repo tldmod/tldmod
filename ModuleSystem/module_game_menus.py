@@ -1486,6 +1486,7 @@ game_menus = [
  ),
 ( "start_gondor",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where are you from, in Gondor?", "none",[(assign, "$last_menu", "mnu_start_gondor")],[
+ ("quick_start_gondor"     ,[(eq, cheat_switch, 1),],"[dev: quick start]",[(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_c1_gon_nobleman"), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_mt",[],"MINAS TIRITH, the Capital"                    ,[(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_regular),(jump_to_menu,"mnu_start_gondor_mt"),]),
  ("start_ls",[],"LOSSARNACH, the Fiefdom of the Axemen"        ,[(call_script,"script_start_as_one","trp_i1_loss_woodsman"),  (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_lossarnach),  	   (jump_to_menu,"mnu_choose_gender"),]),
  ("start_la",[],"LAMEDON, the Fiefdom of the Mountain Clansmen",[(call_script,"script_start_as_one","trp_i1_lam_clansman"),     (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_ethring),   	   (jump_to_menu,"mnu_choose_gender"),]),
@@ -1500,6 +1501,7 @@ game_menus = [
  ),
 ( "start_eye_man",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
+ ("quick_start_harad"     ,[(eq, cheat_switch, 1),],"[dev: quick start]",[(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_c2_harondor_scout"), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_hr",[],"HARADRIM, the desert people from the South",    [(jump_to_menu,"mnu_start_haradrim"),]),  
  ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_i2_mordor_num_renegade"),(jump_to_menu,"mnu_start_numenorean"),]),
  ("start_um",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_i1_corsair_youth"),            (jump_to_menu,"mnu_choose_gender"),]),
@@ -1513,6 +1515,7 @@ game_menus = [
 
 ( "start_eye_uruk",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_eye_uruk")],[
+ ("quick_start_uruk"     ,[(eq, cheat_switch, 1),],"[dev: quick start]",[(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_arm_uruk",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"),   (jump_to_menu,"mnu_start_as_one"),]),
  ("start_cav_uruk",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"), (call_script, "script_player_join_faction", "fac_guldur"), (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"_"  ,[]),
@@ -1522,6 +1525,7 @@ game_menus = [
  ),
 ( "start_eye_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_eye_orc")],[
+ ("quick_start_orc"     ,[(eq, cheat_switch, 1),],"[dev: quick start]",[(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_i1_mordor_orc_snaga"), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_arm",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_i1_mordor_orc_snaga"),   (jump_to_menu,"mnu_start_as_one"),]),
  ("start_cav",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_i1_guldur_orc_snaga"),   (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"_"  ,[]),
@@ -1531,6 +1535,7 @@ game_menus = [
  ),
 ( "start_hand_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_hand_orc")],[
+ ("quick_start_moria"     ,[(eq, cheat_switch, 1),],"[dev: quick start Moria]",[(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_i1_moria_snaga"), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_armis",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_i1_isen_orc_snaga"),(jump_to_menu,"mnu_start_as_one"),]),
  ("start_minmo",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_i1_moria_snaga"),       (jump_to_menu,"mnu_start_as_one"),]),
  ("start_cliff",[],"in the cliffs of Mount GUNDABAD",  [(call_script,"script_start_as_one","trp_i1_gunda_goblin"),      (jump_to_menu,"mnu_start_as_one"),]),
@@ -1622,10 +1627,11 @@ game_menus = [
 	],
 	    
     [
-     ("start_default",[], "Become a {s23} (Default)", [(troop_add_proficiency_points, "trp_player", 10),(jump_to_menu, "mnu_choose_skill")]),
+     ("quick_default"     ,[(eq, cheat_switch, 1),],"[dev: quick start]",[(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (jump_to_menu,"mnu_start_phase_2" ),]),
+	 ("start_default",[], "Become a {s23} (Default)", [(troop_add_proficiency_points, "trp_player", 10),(jump_to_menu, "mnu_choose_skill")]),
      ("start_up1", [(gt,reg0,0)], "Become a {s21} (Easy)", [(call_script, "script_start_as_one", reg0),(troop_add_proficiency_points, "trp_player", 15), (try_begin), (eq, reg55, 1), (call_script, "script_player_join_faction", "fac_guldur"), (try_end), (jump_to_menu, "mnu_choose_skill")]),
      ("start_up2", [(gt,reg1,0)], "Become a {s22} (Easy)", [(call_script, "script_start_as_one", reg1),(troop_add_proficiency_points, "trp_player", 15), (try_begin), (eq, reg55, 1), (call_script, "script_player_join_faction", "fac_guldur"), (try_end), (jump_to_menu, "mnu_choose_skill")]),
-     ("spacer",[],"_",[]),
+     ("spacer",[],"_",[]), 
      ("go_back"     ,[],"Go back",[(troop_clear_inventory, "trp_player"), (try_for_range, ":i", 0,6), (troop_raise_proficiency, "trp_player", ":i", -10),(try_end),
      	(try_begin), (eq, "$intro_presentation_stage", 33), (start_presentation, "prsnt_faction_selection_hand"),(else_try),
      	(eq, "$intro_presentation_stage", 3), (start_presentation, "prsnt_faction_selection_eye"), (else_try), 
@@ -2266,6 +2272,14 @@ game_menus = [
     (str_store_faction_name, s1, "$ambient_faction"),
     (display_message, "@{s1} rank points increased to {reg0}, influence to {reg1}!", 0x30FFC8),
    ]),
+   ("camp_mvtest_wait",[(eq, cheat_switch, 1),],"Fast forward for 30 days.",[
+         (troop_add_item, "trp_player", "itm_cram"),
+		 (assign, "$g_camp_mode", 1),
+		 (assign, "$g_fast_mode", 1),
+         (assign, "$g_player_icon_state", pis_camping),
+         (rest_for_hours_interactive, 24 * 30, 60), #30 day rest while not attackable with 40x speed #kham x 60
+         (change_screen_return),
+   ]), 
    # ("camp_mvtest_rankfunc",[],"Test rank functions.",[
     # (try_for_range, ":rank_index", 0, 13),
       # (call_script, "script_get_own_rank_title_to_s24", "$ambient_faction", ":rank_index"),
@@ -2419,12 +2433,6 @@ game_menus = [
      # (party_set_name, ":ruin_party", "@{s1} ruins"),
      # (display_message, "@Hornburg razed - check map!", 0x30FFC8),
    # ]),
-   ("camp_mvtest_wait",[(eq, cheat_switch, 1),],"Fast forward for 30 days.",[
-         (assign, "$g_camp_mode", 1),
-         (assign, "$g_player_icon_state", pis_camping),
-         (rest_for_hours_interactive, 24 * 30, 60), #30 day rest while not attackable with 40x speed #kham x 60
-         (change_screen_return),
-   ]), 
    # ("camp_mvtest_notes",[],"Update lord locations.",[
      # (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
        # (call_script, "script_update_troop_location_notes", ":troop_no", 0),

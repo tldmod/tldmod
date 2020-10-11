@@ -1181,6 +1181,7 @@ triggers = [
       # start the intro cutscene sequence
       (try_begin),
         (eq, "$tld_option_cutscenes",1),
+		(neq, "$g_fast_mode", 1),
         (jump_to_menu, "mnu_auto_intro_rohan"),
       (try_end),
       
