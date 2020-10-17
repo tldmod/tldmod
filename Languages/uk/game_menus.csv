@@ -254,7 +254,7 @@ mno_moria_exit_scene|Шукати шлях назовні!
 menu_castle_outside|Перед вами {s2}.{S11} {s3} {s4}
 mno_moria_enter|Повернутися до головної зали Морії через потаємний хід
 mno_moria_enter_door|Увійти в Морію.
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|Отримайте книгу
 mno_castle_start_siege|Ні {reg6?town:castle}.
 mno_castle_leave|Продовжити.
 menu_castle_besiege|Ви осадите {s1}. {S2} {s3}
@@ -301,7 +301,7 @@ mno_dwarven_warehouse_door|Увійти в склад гномів
 mno_talk_to_castle_commander|Увійти в казарми фракції {s61}.
 mno_speak_with_elder|Увійти в казарми Фракції {s6}.
 mno_isengard_underground|Увійти в підземелля.
-; mno_isengard_underground_door|Go to the underground caverns
+mno_isengard_underground_door|Перейти до підземних печер
 mno_tirith_toplevel|Зійти на верхній рівень.
 mno_erebor_gates|Відвідати Великі Врата.
 mno_town_leave|Продовжити...

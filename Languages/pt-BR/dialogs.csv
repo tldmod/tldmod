@@ -301,7 +301,7 @@ dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepte
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_rejected|Temo que devo recusar.
 dlga_lord_mission_told_scout_waypoints_accepted:close_window|Bom! Simplesmente passe perto de {s13}, {s14} e {s15} e verifique o que está lá. Tome nota do que encontrar e retorne à mim logo que possível.
 dlga_lord_mission_told_scout_waypoints_rejected:lord_pretalk|Hum. Estou decepcionado, {playername}. Muito decepcionado. Conversaremos mais tarde, preciso ir procurar alguém para nos informar.
-dlga_lord_start:lord_buy_prisoner|Ouvi dizer que você capturou nosso inimigo {s3} e ele está com você no momento. Bom trabalho! ^Deixe-o conosco, há muitas informações que precisamos extrair dele... ^^[você ganhará {reg14} Pontos de Recursos de {s14}]
+dlga_lord_start:lord_buy_prisoner|Ouvi dizer que você capturou nosso inimigo {s3} e ele está com você no momento. Bom trabalho!^ Deixe-o conosco, há muitas informações que precisamos extrair dele...^^[você ganhará {reg14} Pontos de Recursos de {s14}]
 dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Bem, ele é todo seu.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Temo que eu tenho outros planos para ele.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Excelente! Vou mandar meus homens para levá-lo à nossa prisão com a devida pressa. Isso certamente ajudará nossa causa.
@@ -786,7 +786,7 @@ dlga_runaway_serf_talk_again_return_2:close_window|Sim mestre. Como desejar.
 dlga_mayor_talk:mayor_deliver_wine|Foi-me dito para entregar-lhe {reg9} unidades de {s4}.
 dlga_mayor_deliver_wine:mayor_pretalk|Finalmente! Nossos estoques estavam quase esgotados. Eu havia combinado a entrega de {s4} com antecedência. E envie meus cumprimentos a {s9}. ^^[ganhou {reg14} Pontos de Recursos de {s14}]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|Eu estava em uma missão para entregar a você {reg9} unidades de {s4}, mas perdi parte da carga para o inimigo.
-dlga_mayor_deliver_wine_incomplete:mayor_pretalk|Eles vão pagar por isso! Bem, pelo menos temos alguns {s4}. Obrigado de qualquer maneira. ^^[ganhou {reg14} Pontos de Recurso de {s14}]
+dlga_mayor_deliver_wine_incomplete:mayor_pretalk|Eles vão pagar por isso! Bem, pelo menos temos alguns {s4}. Obrigado de qualquer maneira.^^[ganhou {reg14} Pontos de Recursos de {s14}]
 dlga_start:trainer_pretalk|Você sobreviveu até a onda Exposta {reg2}. {s4}
 dlga_start:trainer_pretalk.1|Muito bem, você eliminou todos os oponentes.
 dlga_start:trainer_talk|Bom dia. Pronto para um pouco de treino hoje?
@@ -837,7 +837,7 @@ dlga_start:close_window.22|Fora com você, mendigo vil.
 dlga_start:mayor_begin|Bom dia, meu senhor.
 dlga_start:mayor_talk|Olá estranho, você parece ser novo em {s9}. Eu sou o mestre da guilda da cidade.
 dlga_start:mayor_begin.1|Bom dia, {playername}.
-dlga_mayor_begin:lord_deal_with_night_bandits_completed|Muito bom trabalho, {playername}, você fez um curto trabalho com aqueles malditos sem lei! ^^ [ganhou {reg14} Pontos de Recurso de {s14}]
+dlga_mayor_begin:lord_deal_with_night_bandits_completed|Muito bom trabalho, {playername}, você fez um curto trabalho com aqueles malditos sem lei!^^[ganhou {reg14} Pontos de Recursos de {s14}]
 dlga_lord_deal_with_night_bandits_completed:close_window|Eles mereceram.
 dlga_mayor_talk:mayor_deliver_iron|Eu lhe trouxe metais de uma melhor qualidade, {reg9} unidades de {s4}, quando você pediu {s3}.
 dlga_mayor_talk:mayor_deliver_iron.1|Aqui está seu abastecimento de metal, {reg9} unidades de {s4}.
@@ -858,15 +858,15 @@ dlga_mayor_deliver_food_completed:close_window|Eu faço o que posso.
 dlga_mayor_begin:mayor_looters_quest_response|Ah, {playername}. Algum progresso para relatar?
 dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|Eu matei alguns orcs tribais.
 dlga_mayor_looters_quest_response:close_window|Ainda não, senhor. Adeus.
-dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Sim, meus batedores viram a coisa toda. Isso deve manter esses orcs tribais à distância! ^^[ganhou {reg14}x{reg15} Pontos de Recurso de {s14}]
+dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Sim, meus batedores viram a coisa toda. Isso deve manter esses orcs tribais à distância!^^[ganhou {reg14}x{reg15} Pontos de Recursos de {s14}]
 dlga_mayor_looters_quest_destroyed_2:close_window|E essa não é a única boa notícia! Graças a você, os orcs tribais deixaram de ser uma ameaça. Não temos um único ataque relatado há algum tempo. Se sobraram alguns deles, eles fugiram ou se esconderam. Isso é ótimo para a segurança do lugar! Eu acho que isso conclui sua tarefa, {playername}. Obrigado e adeus.
 dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|Você precisa de mais alguma coisa?
-dlga_mayor_begin:close_window|É um prazer vê-lo novamente {playername}. Ouvi dizer que você escoltou essas pessoas com sucesso. Vou dizer ao nosso comandante como você é confiável. ^^[ganhou {reg14} Pontos de Recurso de {s14}]
+dlga_mayor_begin:close_window|É um prazer vê-lo novamente {playername}. Ouvi dizer que você escoltou essas pessoas com sucesso. Vou dizer ao nosso comandante como você é confiável.^^[ganhou {reg14} Pontos de Recursos de {s14}]
 dlga_mayor_begin:move_cattle_herd_failed|Ouvi dizer que você perdeu essas pessoas no seu caminho para {s9}. Eu tive um momento árduo para explicar sua falha ao comandante aqui. Você tem algo a dizer?
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|Sinto muito. Mas fui atacado no caminho.
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|Sinto muito. Essas pessoas se perderam durante a noite.
 dlga_move_cattle_herd_failed_2:close_window|Bem, era sua responsabilidade escoltá-los em segurança, não importa o quê. Você deve saber que o comandante exigiu saber quem foi o responsável por essa falha. Então eu disse a ele que era você.
-dlga_mayor_begin:mayor_friendly_pretalk|Eu ouvi sobre suas ações. Você deu a esses goblins a punição que mereciam. Você realmente é tão bom quanto dizem. ^^[ganhou {reg14} Pontos de Recurso de {s14}]
+dlga_mayor_begin:mayor_friendly_pretalk|Eu ouvi sobre suas ações. Você deu a esses goblins a punição que mereciam. Você realmente é tão bom quanto dizem.^^[ganhou {reg14} Pontos de Recursos de {s14}]
 dlga_mayor_begin:mayor_talk|O que posso fazer para você?
 dlga_mayor_friendly_pretalk:mayor_talk|Agora... O que mais posso fazer por você?
 dlga_mayor_pretalk:mayor_talk|Sim?
@@ -915,12 +915,12 @@ dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|Precisamos de {reg5}
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|Tudo bem. Vou pegar os pedaços de metal e trazê-los para você.
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Estou muito ocupado para lidar com isso.
 dlga_merchant_quest_requested:merchant_quest_brief.7|Obrigado por oferecer ajuda. Na verdade, eu estava procurando alguém para escoltar um comboio de suprimentos. Talvez você possa fazer isso...
-dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Vou enviar um comboio de suprimentos para {s8}. No entanto com todas essas patrulhas inimigas lá fora, não quero enviá-los sem uma escolta extra. Um grupo de pelo menos {reg4} lhes ofereceria uma proteção adequada. Você pode levar o comboio de suprimentos para {s8} em até 7 dias? ^^ [você ganhará {reg14} Pontos de Recurso de {s14}]
+dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Vou enviar um comboio de suprimentos para {s8}. No entanto com todas essas patrulhas inimigas lá fora, não quero enviá-los sem uma escolta extra. Um grupo de pelo menos {reg4} lhes ofereceria uma proteção adequada. Você pode levar o comboio de suprimentos para {s8} em até 7 dias?^^[você ganhará {reg14} Pontos de Recursos de {s14}]
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Tudo bem. Eu escoltarei o comboio de suprimentos.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Receio não ter tantos soldados comigo.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Sinto muito. Eu não posso fazer isso agora.
 dlga_start:close_window.23|Podemos cobrir o resto do caminho nós mesmos. Obrigado.
-dlga_start:close_window.24|Bem, estamos quase em {s21}. Nós podemos cobrir o resto do caminho. Obrigado por nos acompanhar. Boa sorte. ^^[ganhou {reg14} Pontos de Recurso de {s14}]
+dlga_start:close_window.24|Bem, estamos quase em {s21}. Nós podemos cobrir o resto do caminho. Obrigado por nos acompanhar. Boa sorte.^^[ganhou {reg14} Pontos de Recursos de {s14}]
 dlga_start:merchant_caravan_intro_1|Saudações. Você deve ser a nossa escolta, certo?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Sim. Meu nome é {playername}. Eu o levarei para {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Bem, é bom saber que não vamos viajar sozinhos. O que você quer que façamos agora?
@@ -977,7 +977,7 @@ dlga_town_merchant_talk:trade_requested_weapons|Quero solicitar novos equipament
 dlga_town_merchant_talk:trade_requested_horse|Estou pensando em conseguir uma montaria.
 dlga_town_merchant_talk:player_upgrade_trolls_take|Eu quero fortalecer meus trolls!
 dlga_player_upgrade_trolls_take:close_window|Quem é você para perguntar isso de mim? Bah! Vá embora! (Você precisa ser {s24} ou maior)
-dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Você nos deu uma boa quantia em volta. Nós vamos ajudar a colocar um pouco de ferro no seu garoto aqui! ({reg21} pontos de recurso)
+dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Você nos deu uma boa quantia em volta. Nós vamos ajudar a colocar um pouco de ferro no seu garoto aqui! ({reg21} pontos de recursos)
 dlga_player_upgrade_trolls_take:close_window.1|Seus trolls são como bebês chorando. Faça com que eles sangrem bastante primeiro!
 dlga_player_upgrade_trolls_take:close_window.2|Nós não fazemos isso aqui...
 dlga_player_upgrade_trolls_take:close_window.3|Seus trolls nem falam direito! Eles não são do nosso tipo. Leve-os de volta para onde eles vieram!

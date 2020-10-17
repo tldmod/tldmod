@@ -1,5 +1,5 @@
-trp_unarmed_troop|Неозброєний воїн
-trp_unarmed_troop_pl|Неозброєні воїни
+trp_unarmed_troop|Беззбройний Воїн
+trp_unarmed_troop_pl|Беззброїні Воїни
 trp_tutorial_maceman|Воїн з булавою
 trp_tutorial_maceman_pl|Воїни з булавою
 trp_tutorial_archer|Лучник
@@ -8,8 +8,8 @@ trp_tutorial_swordsman|Мечник
 trp_tutorial_swordsman_pl|Мечники
 trp_novice_fighter|Боєць новачок
 trp_novice_fighter_pl|Бійці новачки
-trp_regular_fighter|Досвідчений боєць
-trp_regular_fighter_pl|Досвідчені бійці
+trp_regular_fighter|Регулярний боєць
+trp_regular_fighter_pl|Регулярні бійці
 trp_veteran_fighter|Боєць ветеран
 trp_veteran_fighter_pl|Бійці ветерани
 trp_champion_fighter|Прославлений боєць
@@ -42,8 +42,8 @@ trp_townsman|Міщанин
 trp_townsman_pl|Міщани
 trp_watchman|Горожанка
 trp_watchman_pl|Городяни
-; trp_i1_woodmen_man|Woodmen Settler
-; trp_i1_woodmen_man_pl|Woodmen Settlers
+trp_i1_woodmen_man|Переселенець з лісу
+trp_i1_woodmen_man_pl|Лісові Переселенці
 trp_i2_woodmen_forester|Доглядач лісу
 trp_i2_woodmen_forester_pl|Доглядачі лісу
 trp_i3_woodmen_skilled_forester|Вмілий доглядач лісу
@@ -130,8 +130,8 @@ trp_i3_rhun_tribal_infantry|Піший воїн рунійського плем�
 trp_i3_rhun_tribal_infantry_pl|Піші воїни рунійіських племен
 trp_i4_rhun_vet_infantry|Рунійський піший воїн-ветеран
 trp_i4_rhun_vet_infantry_pl|Рунійські піші воїни-ветерани
-; trp_i5_rhun_ox_warrior|Warrior of the Ox
-; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
+trp_i5_rhun_ox_warrior|Воїн Бика
+trp_i5_rhun_ox_warrior_pl|Воїни Бика
 ; trp_c2_rhun_horseman|Horseman of Rhun
 ; trp_c2_rhun_horseman_pl|Horsemen of Rhun
 ; trp_c3_rhun_outrider|Outrider of Rhun
@@ -400,8 +400,8 @@ trp_a2_arnor_vet_scout_pl|Слідопити Дунедайн
 ; trp_i3_arnor_swordsman_pl|Dunedain Swordsmen
 ; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
 ; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
-; trp_i5_arnor_champion|Champion of Arnor
-; trp_i5_arnor_champion_pl|Champions of Arnor
+trp_i5_arnor_champion|Чемпіон Арнора
+trp_i5_arnor_champion_pl|Чемпіони Арнора
 ; trp_c4_arnor_horseman|Dunedain Horseman
 ; trp_c4_arnor_horseman_pl|Dunedain Horsemen
 trp_c5_arnor_knight|Лицар Арнора
@@ -947,7 +947,7 @@ trp_npc14|Фулдімір
 trp_npc15|Болзог
 trp_npc16|Варфанг
 trp_npc17|Дімборн
-; trp_knight_6_2|Golasgil
+trp_knight_6_2|Голасгіл
 trp_gondor_lord|Намісник Денетор
 trp_gondor_lord_pl|Намісник
 trp_rohan_lord|Король Теоден
@@ -1038,7 +1038,7 @@ trp_knight_4_1|Сного, Господар батога
 trp_knight_4_2|Снотгор, Господар батога
 trp_knight_4_6|Воєвода Туск
 trp_knight_4_7|Воєвода Мугслаг
-; trp_knight_4_11|Ruel
+trp_knight_4_11|Руель
 trp_knight_4_12|Беранор Чорне Хутро
 trp_knight_4_16|Бролгухш, Господар батога
 trp_knight_4_17|Грумрунт, Господар батога
@@ -1236,7 +1236,7 @@ trp_barman_camroth_pl|Дерев'яний замок
 trp_barman_thalls|Господар таверни
 trp_barman_thalls_pl|Тронна зала
 trp_barman_beorn|Господар таверни
-; trp_barman_beorn_pl|Beorn's Hall
+trp_barman_beorn_pl|Зал Беорна
 trp_barman_moria|Господар таверни
 trp_barman_moria_pl|палати Підгорного короля
 trp_barman_dale|Господар таверни
@@ -1601,16 +1601,16 @@ trp_moria_troll_pl|Печерні Тролі
 ; trp_gunda_vet_troll_pl|Trained Mountain Trolls
 ; trp_gunda_placeholder|Trained Mountain Troll
 ; trp_gunda_placeholder_pl|Trained Mountain Trolls
-; trp_isen_troll|Isengard Troll
-; trp_isen_troll_pl|Isengard Trolls
-; trp_isen_vet_troll|Isengard Trained Troll
-; trp_isen_vet_troll_pl|Isengard Trained Trolls
-; trp_isen_armored_troll|Isengard Armored Troll
-; trp_isen_armored_troll_pl|Isengard Armored Trolls
-; trp_mordor_troll|Mordor Troll
-; trp_mordor_troll_pl|Mordor Trolls
-; trp_mordor_vet_troll|Mordor Trained Troll
-; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_isen_troll|Троль Ізенгарда
+trp_isen_troll_pl|Тролі Ізенгарда
+trp_isen_vet_troll|Обучений Троль Ізенгарда
+trp_isen_vet_troll_pl|Обучені Тролі Ізенгарда
+trp_isen_armored_troll|Бронирований Троль Ізенгарда
+trp_isen_armored_troll_pl|Бронировані Тролі Ізенгарда
+trp_mordor_troll|Мордорський Троль
+trp_mordor_troll_pl|Мордорські Тролі
+trp_mordor_vet_troll|Обучений Мордорський Троль
+trp_mordor_vet_troll_pl|Обучені Мордорськи Тролі
 trp_mordor_olog_hai|Мордорські Олог-Хайї
 trp_mordor_olog_hai_pl|Мордорські Олог-Хайї
 trp_troll_placeholder_1|Печерний Троль
@@ -1625,8 +1625,8 @@ trp_troll_placeholder_5|Печерний Троль
 trp_troll_placeholder_5_pl|Печерні Тролі
 trp_troll_placeholder_6|Печерний Троль
 trp_troll_placeholder_6_pl|Печерні Тролі
-; trp_wild_troll|Wild Cave Troll
-; trp_wild_troll_pl|Wild Cave Trolls
+trp_wild_troll|Дикий Пещерний Троль
+trp_wild_troll_pl|Дикі Пещерні Тролі
 trp_ent2|Ент
 trp_ent2_pl|Енти
 trp_mountain_goblin|Гірський Гоблін

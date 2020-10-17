@@ -254,7 +254,7 @@ mno_moria_exit_scene|Najdi cestu von!
 menu_castle_outside|Si vonku {s2}.{s11} {s3} {s4}
 mno_moria_enter|Vráť sa do hlavnej siene Morie skrz tajný vstup.
 mno_moria_enter_door|Vstúpiť do Morie.
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|Získať knihu
 mno_castle_start_siege|Obliehať {reg6?mesto:hrad}.
 mno_castle_leave|Odísť.
 menu_castle_besiege|Obliehaš {s1}. {s2} {s3}
@@ -301,7 +301,7 @@ mno_dwarven_warehouse_door|Vstúpiť do trpasličieho skladiska
 mno_talk_to_castle_commander|Ísť do {s61} kasární.
 mno_speak_with_elder|Prehovoriť s {s6}.
 mno_isengard_underground|Ísť do podzemných jaskýň.
-; mno_isengard_underground_door|Go to the underground caverns
+mno_isengard_underground_door|Ísť do podzemných jaskýň
 mno_tirith_toplevel|Vyšplhať na horné poschodie.
 mno_erebor_gates|Navštívte Veľké Brány.
 mno_town_leave|Odísť...
@@ -346,7 +346,7 @@ menu_player_added_to_war_council|^^^^^Posol, ktorý dorazil, ti oznámil, že ť
 mno_player_added_to_war_council_close|Zavrieť
 menu_player_added_to_siege_reports|Prišiel posol a povedal vám, že teraz, ako {s24}, budete dostávať správy vždy, keď {s2} obliehajú centrá alebo keď sú strediská {s2} obťažované.
 mno_player_added_to_siege_reports_close|Zavrieť
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^Dorazil posol a povedal ti, že teraz, ako {s24}, budeš môcť rozkázať {s2}, aby ťa nasledovali, maximálne {reg55} nasledovníkom.
 mno_player_added_to_allow_follow_close|Zavrieť
 menu_center_besieged_event|^^^^^Posol ti doniesol správu že {s1} je obliehané {s2}om z {s3}u.
 mno_center_besieged_event_close|Zavrieť

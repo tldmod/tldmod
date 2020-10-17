@@ -549,7 +549,7 @@ str_npc10_intro|Ty!
 str_npc11_intro|Ar! Nie jesteś stąd, co nie? Czuję to, a jeśli tylko powiesz inaczej przed szefami, to wydłubię ci oczy!
 str_npc12_intro|Oho! Co ty wyprawiasz, czaisz się tutaj ?
 str_npc13_intro|Zatrzymaj się! Co niesiesz do namiotu wodza?
-str_npc14_intro|You!
+str_npc14_intro|Wyglądasz mi na kogoś kto spędził za mało czasu na morzu.
 str_npc15_intro|Chwała oku, wojowniku!
 str_npc16_intro|Nie często widzę nieznajomego spacerującego pośród namiotów wschodnich ziem. Co Cię tu sprowadza? Mów szybko.
 str_npc17_intro|Cześć. Czy podobają ci się tutejsze lasy ?
@@ -597,11 +597,11 @@ str_npc7_backstory_a|Dziękuję, że pytasz, {playername} . Nękają nas najazdy
 str_npc8_backstory_a|Jestem pewien, że można znaleźć kilku chętnych, jeśli pomówisz z kwatermistrzem w koszarach. Jeśli chodzi o mnie, jestem tylko skromnym uzdrowicielem.
 str_npc9_backstory_a|Masz szczęście! Nazywają mnie Gulm. Wypatroszyłem mojego sierżanta i teraz jego sługi polują na mnie. Ten bezwartościowy knur wiedział że to nadejdzie! Raz, gdy wpadliśmy w zasadzkę słomogłowych. A on to przegrał. "Odwrót" krzyczał, a potem uciekł. Tylko Gulm i kilku innych stało niewzruszenie i przełamało ich szarżę. Po tym już tylko zrobiliśmy miazgę z blondynów (heh heh heh). Ale gdyby nie my silni, wszyscy bylibyśmy pokarmem dla robali.
 str_npc10_backstory_a|Jestem Durgash
-str_npc11_backstory_a|They call me Ufthak! My unit is dead and gone to worms. If you need a warrior, it is me.
-str_npc12_backstory_a|I am Gorbag!
-str_npc13_backstory_a|I am Lykyada!
-str_npc14_backstory_a|I am Fuldimir!
-str_npc15_backstory_a|I am Bolzog!
+; str_npc11_backstory_a|Nar! Not a tracker, that's who. They threw me out! I tell you they've lost their heads, that's what it is. Curse 'em! First they say I shoot wild, then I run too slow, and then I have a useless snuffler. Garn! If they don't find a rabble for me soon I'll be for the Black Pits, if what I hear is true. I'll make sure some of those Bosses lose their skins sooner than putting me in there!
+; str_npc12_backstory_a|I'm in command of a band of lads up here. I'm Gorbag and you'd best learn quick lubber us Uruks are the real bosses 'round here. The Big Bosses makes slips, 'ay, even the Biggest can make mistakes, and always the poor Uruks to put slips right, and small thanks. They don't even tell us all they know, do they? Not by half. Grr!
+; str_npc13_backstory_a|I? I am a grain of soil from southern sands, blown north by cold and dark night winds. I am Lykyada, a Serpent Lord of Haradwaith. Lord of the Gold Serpent, bane of the Black Serpent Tribe, now allied to serve the will of the Dark Lord.
+; str_npc14_backstory_a|I am Fuldimir, son of the southern realm of Umbar, south of Harondor, and the Bay of Belfalas, for both are home to my heart and my people. We are the lords of sea and sail, corsairs to some, kin of the Bay of Belfalas for her waters we tame.
+; str_npc15_backstory_a|I am Bolzog the Gifted, Setter of Bones, Closer of Cuts, and Shaman of Healing. If you go to war for The Eye, you will no doubt have one or other of your little fellows cut about a bit by pale-faced foresters or the horse-lovers. Now, -nar-nar-nar! - Orcs are easy to replace, Oh Great Leader, but can you replace a Warg? A Giant? A Cave Troll? Shi-shi! No! You need me, the Great Bolzog!
 str_npc16_backstory_a|Cóż, teraz to nieznajomy powinien się najpierw zadeklarować. Jestem jednak Varfangiem rodziny Balchoth. . . Mogę powiedzieć, że jeszcze nie słyszeliście pieśni lub opowieści z mojej ziemi, które mówią o Balchocie, ponieważ samo to imię sprawdziłoby waszą odwagę i napełniło wasze serce bólem.
 str_npc17_backstory_a|Nazywają mnie Dímborn i pracuję w lesie. Miło jest tam. Lubię lasy . Wiele drzew w lesie. Lubię drzewa. Pracowałem już w lesie przez całe moje życie , bo jestem silna i ponieważ lubię drzew.
 str_npc1_backstory_b|Powinieneś wiedzieć, że jestem Ithilien Ranger of dunedaińskich opadania i męstwa . Wiem, że dużo śledzenia i harcerstwa i moje umiejętności w łuk i miecz jest znany orka . Mogę również trenować każdą duszę , która jest skłonna do walki pochodzących cień.
@@ -614,29 +614,29 @@ str_npc7_backstory_b|Pomagałem przy umocnieniach Ereboru i szkoliłem młodych 
 str_npc8_backstory_b|Leczyłem króla Branda na zaparcia, częstą dolegliwość idących na wojnę.  Łyk naparu z piołunu i zarówno wnętrzności jak umysł są wolne od problemu
 str_npc9_backstory_b|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.
 str_npc10_backstory_b|Jestem Wilczym Jeźdzcem z Isengardu oraz jednym ze zwiadowców.
-str_npc11_backstory_b|You should know that I am an Orc Snaga in service to the Great Eye. I will kill for you!
-str_npc12_backstory_b|I am an Uruk Slayer of Mordor.
-str_npc13_backstory_b|I am a Gold Serpent Horse Archer.
-str_npc14_backstory_b|I am an Umbar Sailor.
-str_npc15_backstory_b|I am a Snaga of Moria and a healer.
+; str_npc11_backstory_b|Ar! It's only 'cause my nose was snotty. An' what good is it wearing my nose out on stones anyhow? Nar! It was those filthy Uruks! Those cursed peaching sneakthiefs! I only lost the scent through giving way to them. They messed up the scent back there, pinching anything they found, and stomping all round the place before I could get there.
+; str_npc12_backstory_b|And those Nazgul give me the creeps. And they skin the body off you as soon as look at you, and leave you all cold in the dark on the other side. But He likes 'em; they're His favourites nowadays, so it's no use grumbling. I tell you, it's no game serving in the city. I'd like to try somewhere where there's none of 'em.
+; str_npc13_backstory_b|I saw of late the word of the Dark Lord spread among my kin, and in their hearts and minds his will crept. Most were drawn to his darkness, and in place of their courage grew an insatiable lust for slaughter so that when their ears heard his call few puppets were so willing to answer.
+; str_npc14_backstory_b|There is much change in a man who rides the tumult of the winds and seas of the Belfalas waters, and those yet to battle her will are but children. For stout men are they who meet her tempest and ride her storm. I have laid eyes on her darkest tide and yet remain her master.
+; str_npc15_backstory_b|Many moons ago, when I was just a fresh little thing, my Grandsire led the tribe down into the mines, where the dwarves had recently died. A Fire Wraith had passed through, and it was comfortable and warm. We prospered, but every so often some cruel adventurer, or Dwarf hero, would come and kill and maim us in our peaceful tunnels. My hands learned to close the wound of sword or axe, and my mind learned to see the outline of bone and sinew below any hide. These days, I can work a potion or set a break with equal skill.
 str_npc16_backstory_b|Balchot był zaciętą rasą mężczyzn z mojej ojczyzny, zabitych przez te dziwaki wszystkim z wyjątkiem kilku mężczyzn. Ścigał się jak bestie ciężkie jak jedzenie dla swoich ostrzy. Krew przelana przez te ostrza jest tą samą krwią, która płynie we mnie, bo w moim domu trwa.
 str_npc17_backstory_b|Można zrobić wiele rzeczy z drzew. Na tym polega moja praca. Zajmuję się drzewami, a potem robię z nich przedmioty. Czasami też z krzewów, ale wolę jednak inne drewno.
 str_npc1_backstory_c|Jednak obawiam się, że jest nas zbyt mało w Ithilien, a nie utrzymamy się dłużej bez posiłków lub zdecydowanego działania  ze strony Namiestnika. Mogę jechać, tam gdzie bardziej przyda się moja pomoc, ale tylko jeśli kapitan Faramir na to pozwoli.
-str_npc2_backstory_c|However important my duty here is, I'm quite anxious to see real combat and... elves and talking trees and oliphants! You seem well-travelled, commander, and I don't mean that as a slight on your appearance, not by a fathom. I learn quickly and can cook... well, good enough for soldiers that is. Am I not mistaken that you are looking for volunteers?
+; str_npc2_backstory_c|However important my duty here is, I'm quite anxious to see real combat and... elves and talking trees and oliphaunts! You seem well-travelled, commander, and I don't mean that as a slight on your appearance, not by a fathom. I learn quickly and can cook... well, good enough for soldiers that is. Am I not mistaken that you are looking for volunteers?
 str_npc3_backstory_c|Oto i ja zhańbiony i zgorzkniały. Mój éored jest już pewnie daleko stąd i pewnie nie będę miał jak do nich dołączyć - na pewno nie z tyloma orkami i dzikusami plądrującymi te równiny. Być może potrzebujesz w swej drużynie jeźdźca Rohirrimskiego?
 str_npc4_backstory_c|Pewnie jesteś świadom, iż niewiasty, jakkolwiek pełne talentów, nie mają prawa podróżować z éoredami. Niemniej, wątpię by czekanie przy palenisku z nadzieją, że wojownicy powrócą jest mym przeznaczeniem. Nie będę siedziała bezczynnie aż wszystkie me szanse na dobre czyny przepadną wraz z końcem wojny! Z przyjemnością przyjmę cię jako mego kompana, wojowniku.
 str_npc5_backstory_c|Jeśli jednak wrogowie Lothlórien są na wolności, mógłbym rozważyć przyłączenie się do Ciebie, {playername}. Czuję, że nasze losy w tej wojnie są ze sobą powiązane.
 str_npc6_backstory_c|Nie zrozumiesz tego wędrowcze, skoroś tak gotów do wojny. Lecz z pewnością przemierzyłeś dużą część tego świata... widziałeś może inne wielkie lasy? Zabrałbyś mnie tam?
 str_npc7_backstory_c|Są zastoje w walkach, które nie pasują do krasnoludzkiego wojownika z moim pochodzeniem i temperamentem. Rozumiem, że doświadczasz więcej akcji podczas podróży, a twoja sprawa jest przyjazna krasnoludom? Wiem, że walczący krasnolud poprawi twoje szanse na przeżycie.
 str_npc8_backstory_c|Słyszałem, że jest wiele walk gdzie indziej, a nasze ziemie z wdzięcznością na razie oszczędzono. Od zadrapań na zbroi wnioskuję, że musiałeś być wielokrotnie w niebezpieczeństwie. Może moje skromne umiejętności mogłyby być wykorzystane lepiej w twojej kompanii, dla większego dobra wszystkich. 
-str_npc9_backstory_c|I don't have a Master. I would come with you and hunt men in the south while the snagas of Isengard gnash their teeth.
+; str_npc9_backstory_c|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.^^I would come with you and hunt men in the south, while the snagas of Isengard gnash their teeth.
 str_npc10_backstory_c|Może Ty zostaniesz moim nowym panem.
-str_npc11_backstory_c|Maybe you can be my next master.
-str_npc12_backstory_c|Maybe you can be my next master.
-str_npc13_backstory_c|Maybe you can be my next Chieftain.
-str_npc14_backstory_c|Maybe you can be my next Captain.
-str_npc15_backstory_c|Maybe you can be my next master.
-str_npc16_backstory_c|Maybe you can be my next Chieftain.
+; str_npc11_backstory_c|All right, all right! My nose isn't much use. I reckon my eyes are better than my nose. Ai! But my nose is only no good cause it don't know what nothing smells like. It don't even know what it's looking for, I tell you. Ar! I just need to go lopin' off and start sniffing places.
+; str_npc12_backstory_c|Eh, if I get a chance, I'll slip off and set up somewhere on my own with a few trusty lads, somewhere there's good loot nice and handy, and no big bosses. I'd like to try somewhere where there's none of 'em, like old times.
+; str_npc13_backstory_c|I followed my kin north, and heeded his dark call, to fulfill the duty I have to my people. But in them I see his darkness dwell and I seek to do my part in this war elsewhere, until the sands of my time no longer fall. Even now I feel them begin to trickle where before there was a cascade.
+; str_npc14_backstory_c|But there comes yet the darkest tide, a black tide of shadow, which will rise over these lands such as which no mortal eyes will have seen. This is the tide I seek to master, but I am without a crew hardy enough to ride this storm.
+; str_npc15_backstory_c|After many winters I came up out of the tunnels, and looked about in the Dark Forests for a good place to live and practice my arts. I was doing fine, until some big ugly bastards with white tattoos – eugh! White! Like an elf face! – big bastards, they were. They fired my little place in the Forest, and I had to hide in the caves again... In here... Say, have you anything to eat? Maybe a nice horse?
+; str_npc16_backstory_c|That was many lives of men ago, a different time, but the time for grief and tales are over. The time for my people's retribution has come and I will carve my people's vengeance on the face of these western lands. By my hand, their homes will waste and wither until their clan is no more!
 str_npc17_backstory_c|Jeżeli wybierasz się do lasu, to może mógłbym pójść z tobą? Tam jest wiele interesujących drzew, wiesz? Mógłbym ci wiele o nich opowiedzieć.
 str_npc1_backstory_later|Dowodziłem wieloma oddziałami zwiadowczymi na południu, aż do Emyn Arnen. Jest tam spora aktywność Wroga i wiele orków wpadło w naszą zasadzkę. Niestety, po wąwozach wciąż kręcą się orkowie, widzieliśmy przemarsz mnóstwa plugawych stworzeń. Boję się o Ithilien i losy Gondoru.
 str_npc2_backstory_later|Mieliśmy zaledwie kilku gości ostatnio, a jeszcze mniej ma zamiar przybyć. Zgaduję że to nie wróży nic dobrego.
@@ -648,11 +648,11 @@ str_npc7_backstory_later|Budowanie murów obronnych jest warte każdego krasnolu
 str_npc8_backstory_later|Ponownie skontaktowałem się z Królem, tym razem o wymioty. Mam nadzieję, że jego decyzja przyjęcia wroga nie ma związku z jego warunkami. Czy też cierpisz na zaparcia i wymioty?
 str_npc9_backstory_later|Jak myślisz, co robię? Gulm siedzi tutaj i czeka na jakiegoś podstępnego snaga, by trzymać go w ciemności. Zabierz mnie ze sobą - będę dobrze służył.
 str_npc10_backstory_later|Czy rozpatrzyłeś to? Będę dobrze służył
-str_npc11_backstory_later|Have you reconsidered? I will serve well.
-str_npc12_backstory_later|Have you reconsidered? I will serve well.
-str_npc13_backstory_later|Have you reconsidered? I will serve well.
-str_npc14_backstory_later|Have you reconsidered? I will serve well.
-str_npc15_backstory_later|Have you reconsidered? I will serve well.
+; str_npc11_backstory_later|Ar! It was you! I smelt you, I knew you were coming. Tell the Bosses that, will ya? They think since I was kicked out of the trackers that it's safe to flout me, well they're mistaken, I'll put an arrow in their guts first. And whose blames was that? Not mine!
+; str_npc12_backstory_later|I have my orders. Any trespasser found by my lads up here are to be stripped; teeth, nails, hair and all. But I've got my watchers. We know there are funny things going on: with the big bosses going off to war, and all that. Big things going on away west, they say. Sitting here doin' nothing is more than my belly's worth.
+; str_npc13_backstory_later|My role here goes well for the dark cause, and once more the Northerners fear the south. I see great victories ahead, and rivers of blood left in our wake. But with each victory I see my kin corrupted, their hearts twisted to his evil will. The sight of it leads me to despair.
+; str_npc14_backstory_later|You have returned stranger, it is perhaps an omen. I have been reading the waters, and I have seen them darken. The sea changes the eyes of a man, and teaches him to use his eyes to listen to her language.
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions.   Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
 str_npc16_backstory_later|O tych ziemiach opowiada długa historia mojego narodu. Nie wiem, co ich zdradliwe historie mówią o dniach, kiedy mój naród przed wejściem na tę ziemię, ale smutne i ciemne będą ich historie, gdy mój naród wejdzie teraz. Jak burza kopyt i mieczy i strzał, przyniesiemy im zgubę jak Balchot przed nami.
 str_npc17_backstory_later|Widziałem bardzo starą sosnę kiedyś. Sosny mogą być bardzo stare. Musisz mieć szacunek do starych drzew. Ale widziałem takich, który w ogóle nie szanują drzew. Szanujesz drzewa, prawda?
 str_npc1_backstory_response_1|Jeśli możesz wyjść, potrzebuję doświadczonego wojownika i tropiciela. 
@@ -665,12 +665,12 @@ str_npc7_backstory_response_1|W rzeczy samej, krasnoludzki wojownik byłby mile 
 str_npc8_backstory_response_1|Możemy użyć medyka i zielarza.
 str_npc9_backstory_response_1|Wydaję mi się, że przydałby się nam berserk.
 str_npc10_backstory_response_1|Zrobisz to
-str_npc11_backstory_response_1|You will do.
-str_npc12_backstory_response_1|You will do.
-str_npc13_backstory_response_1|You will do.
-str_npc14_backstory_response_1|You will do.
-str_npc15_backstory_response_1|You will do.
-str_npc16_backstory_response_1|You will do.
+; str_npc11_backstory_response_1|How 'bout loping off with me?
+; str_npc12_backstory_response_1|How 'bout slippin' off with me.
+; str_npc13_backstory_response_1|How about following me?
+; str_npc14_backstory_response_1|How about joining me?
+; str_npc15_backstory_response_1|Aha... A healer, heh? And you are good at it, you say? I could use someone like you.
+; str_npc16_backstory_response_1|What are you doing here?
 str_npc17_backstory_response_1|Cóż, okazuje się, że nie wiem jeszcze wszystkiego o drzewach. Byłby to dla nas zaszczyt mieć Cię przy sobie.
 str_npc1_backstory_response_2|Przykro mi to słyszeć. Niech twa wiara podtrzyma twe męstwo.
 str_npc2_backstory_response_2|Nie, przykro mi. Poszukuje doświadczonych wojowników.
@@ -682,12 +682,12 @@ str_npc7_backstory_response_2|Nie, przykro mi. Dobrze nam idzie nam samym.
 str_npc8_backstory_response_2|Nie, przykro nam. Odwiedzamy uzdrowicieli tylko kiedy ich potrzebujemy.
 str_npc9_backstory_response_2|Nah, nie ufam zdrajcą 
 str_npc10_backstory_response_2|Nie potrzebuję cie, niewolniku.
-str_npc11_backstory_response_2|I don't need you, slave.
-str_npc12_backstory_response_2|I don't need you, slave.
-str_npc13_backstory_response_2|I don't need you.
-str_npc14_backstory_response_2|I don't need you.
-str_npc15_backstory_response_2|I don't need you, slave.
-str_npc16_backstory_response_2|I don't need you.
+; str_npc11_backstory_response_2|I don't want to hear your skulking.
+; str_npc12_backstory_response_2|The Big Bosses know best. You better follow orders.
+; str_npc13_backstory_response_2|That is your fate to suffer.
+; str_npc14_backstory_response_2|I've had enough of this.
+; str_npc15_backstory_response_2|Bah! I need fighters, not skulkers.
+; str_npc16_backstory_response_2|I've had enough of this.
 str_npc17_backstory_response_2|Nie,przepraszam. Jesteśmy na wojnie,a nie na wycieczce botanicznej.
 str_npc1_signup|Jestem pewien, że kapitan Faramir zrozumie, że są inni, którzy potrafią utrzymać Wroga na dystans z jeszcze większą walecznością i odwagą.
 str_npc2_signup|Cóż za szczęśliwy dzień! Byłbym uradowany dołączając do twojej kompanii!
@@ -699,12 +699,12 @@ str_npc7_signup|Jestem zaznajomiony z toporem, zarówno w walce wręcz jak i w r
 str_npc8_signup|Doprawdy? W takim razie muszę tylko zebrać moje zioła i przepisy.
 str_npc9_signup|Walczący Uruk jest wart więcej niż wy, snagi. Walczący Uruk nigdy nie ucieka z placu boju.
 str_npc10_signup|Naprawdę ? Postąpił byś słusznie zatrudniając mnie.
-str_npc11_signup|Really? You would do well to enlist me.
-str_npc12_signup|Really? You would do well to enlist me.
-str_npc13_signup|Really? You would do well to enlist me.
-str_npc14_signup|Really? You would do well to enlist me.
-str_npc15_signup|Really? You would do well to enlist me.
-str_npc16_signup|Really? You would do well to enlist me.
+; str_npc11_signup|Follow your mob Ai? Ar! I hear about all these goings-ons out west, raids and all, and hundreds of our lads done in. I'll come and have a look with you all the same, and see what you're up to.
+; str_npc12_signup|Follow your rabble, 'ay? I may 'ave struck a bit of luck at last. I give a good rumble, I reckon, and my whip is vigilant. It's tasted its fair share of my lads' orc hide.
+; str_npc13_signup|I may follow you if you will have me. My legs make good heading of a horse between them and my hands know well the feel of blades of the crescent moon. My fingers can make fall arrows like the plight of stars upon our enemy, be it on horse or feet, though how I fight will be at your command.
+; str_npc14_signup|Perhaps, know though that I am no thief or brigand. I will not steal, nor take that which other lives may find needed.
+str_npc15_signup|Really? You would do well to enlist me
+; str_npc16_signup|I wait for orders, with every second passing darkening my heart. I can no longer stand to wait for the plans of far away lords and captains so unseen their existence is believed more in legend than in flesh. Lords whose whispered orders are brought forth and shouted by lesser men. I wait, and with me, my people's vengeance waits also.
 str_npc17_signup|Bardzo dobrze! Znam wiele drzew. Wkrótce ty także poznasz wiele drzew, jak ja. Ponieważ znam wiele drzew.
 str_npc1_signup_2|To zajmie chwilkę aby porozmawiać z kapitanem oraz zabrać moje rzeczy.
 str_npc2_signup_2|Najpierw muszę porozmawiać z moim sierżantem, a potem możemy już odejść - czekają na nas chwalebne walki do wygrania i wszelkie rodzaje dziwnych zwierząt do zobaczenia!
@@ -758,39 +758,39 @@ str_npc15_signup_response_2|Właściwie, to myślę, że będę szukał prawdziw
 str_npc16_signup_response_2|Mam tego dość.
 str_npc17_signup_response_2|Z drugiej strony myślę, że zmieniłem zdanie. Jesteś trochę szalony, nieprawdaż?
 str_npc1_payment|Dołączę do ciebie, ale mój kapitan Faramir będzie tęsknił za moją obecnością tutaj. [koszty {reg14} Wpływ z {s14}]
-str_npc2_payment|The guard Sergeant would let me go for {reg3} Resources.
-str_npc3_payment|Ahem, it seems that I have ran up quite a tab in the fine tavern here, so I'll also need {reg3} Resources before I can leave.
-str_npc4_payment|Before I leave, our healers are in desperate need of supplies and require {reg3} Resources.
-str_npc5_payment|We should be off soon. The value of my coming will be diminished if the Enemy senses my presence before we have struck. But Lothlórien will first need {reg3} Resources to compensate for my absence.
-str_npc6_payment|I'll join you for {reg3} Resources.
-str_npc7_payment|My honorable father Dwalin will need {reg3} Resources to make up for my absence.
-str_npc8_payment|Before I leave, I'll need {reg3} Resources to provide our King with a steady supply of mind-easing herbs.
-str_npc9_payment|Before we leave, I'll need {reg3} Resources to bribe the guards at the gate.
-str_npc10_payment|I'll join you for {reg3} Resources.
-str_npc11_payment|I'll join you for {reg3} Resources.
-str_npc12_payment|I'll join you for {reg3} Resources.
-str_npc13_payment|I'll join you for {reg3} Resources.
-str_npc14_payment|I'll join you for {reg3} Resources.
-str_npc15_payment|I'll join you for {reg3} Resources.
-str_npc16_payment|I'll join you for {reg3} Resources.
-str_npc17_payment|I like trees. But I need {reg3} Resources things before we go. Need to leave some for my old uncle when I'm away.
-str_npc1_payment_response|And they will be well spent. Here's {reg3} worth of resources.
-str_npc2_payment_response|Certainly. Here's {reg3} Resources.
-str_npc3_payment_response|This better be worth it. Here's {reg3} Resources.
-str_npc4_payment_response|Everything for a noble cause. Here's {reg3} Resources.
-str_npc5_payment_response|I'll gladly help with {reg3} Resources.
-str_npc6_payment_response|Certainly. Here's {reg3} Resources.
-str_npc7_payment_response|Certainly. Master Dwalin shall have {reg3} Resources.
-str_npc8_payment_response|The King's well-being is important. Here's {reg3} Resources.
-str_npc9_payment_response|That's a lot, and you better be worth it - here's {reg3} Resources.
-str_npc10_payment_response|Here's {reg3} Resources.
-str_npc11_payment_response|Here's {reg3} Resources.
-str_npc12_payment_response|Here's {reg3} Resources.
-str_npc13_payment_response|Here's {reg3} Resources.
-str_npc14_payment_response|Here's {reg3} Resources.
-str_npc15_payment_response|Here's {reg3} Resources.
-str_npc16_payment_response|Here's {reg3} Resources.
-str_npc17_payment_response|Right. Here's {reg3} Resources, woodman.
+; str_npc2_payment|The guard Sergeant would not let me go, I'm afraid. [costs {reg14} Influence with {s14}]
+; str_npc3_payment|Ahem, it seems that I have ran up quite a tab in the fine tavern here, so I'll need to settle my account before I can leave. [costs {reg14} Influence with {s14}]
+; str_npc4_payment|I would join you, but who will care for the wounded if the city is attacked? [costs {reg14} Influence with {s14}]
+; str_npc5_payment|We should be off soon. The value of my coming will be diminished if the Enemy senses my presence before we have struck. But Lothlórien also needs me here. [costs {reg14} Influence with {s14}]
+; str_npc6_payment|I would join you, but my duty is here. [costs {reg14} Influence with {s14}]
+; str_npc7_payment|I would join you, but I'm afraid my honorable father Dwalin will not understand why I left the town in a time of need. [costs {reg14} Influence with {s14}]
+; str_npc8_payment|I cannot abandon my duties here, my King still needs me. I'm too concerned for his health. [costs {reg14} Influence with {s14}]
+; str_npc9_payment|I want to leave with you, but the guards at the gate won't let me.^Trust me, I've tried. [costs {reg14} Influence with {s14}]
+; str_npc10_payment|I would join you, but my duty is here. [costs {reg14} Influence with {s14}]
+; str_npc11_payment|I just need someone to do in the Boss. We could wait till he closes his eyes to lop off, but I reckon someone really high up can force his eyes shut. Ai! [costs {reg14} Influence with {s14}]
+; str_npc12_payment|Hai! Yoi! I'll need to remind the boys to keep their mangy gobs shut or the High Ups will get my number and 'ave it out for me, they will. [costs {reg14} Influence with {s14}]
+; str_npc13_payment|Alas the Chieftains here will not to allow my leave. Are you able to convince them otherwise? [costs {reg14} Influence with {s14}]
+; str_npc14_payment|The captain of the Haven will require much persuasion for my leave. Convince him and we shall set sail through this storm. [costs {reg14} Influence with {s14}]
+; str_npc15_payment|Ah, yes. Noble Warrior-Lord! One small impediment is there! A great injustice befell me, that the master of this cave did not like my offer of healing, and has stolen all my gear! The cheek! To steal from the Great Bolzog! Master, I can't recover my priceless equipment from his filthy claws! [costs {reg14} Influence with {s14}]
+; str_npc16_payment|I will not follow you, I will go my own path; but your path may go along with mine for a while. Though, before I travel these lands I must first pay tribute to those who died trying before us. Show them your tribute and we may make our leave. We must never forget our ancestors. They have not forgotten us. [costs {reg14} Influence with {s14}]
+; str_npc17_payment|I like trees, but my old uncle needs me here. [costs {reg14} Influence with {s14}]
+; str_npc1_payment_response|Don't worry, I'll arrange your leave with him. [costs {reg14}/{reg15} Influence]
+; str_npc2_payment_response|Don't worry, I'll talk with your Sergeant. [costs {reg14}/{reg15} Influence]
+; str_npc3_payment_response|This better be worth it. I'll settle with the barkeep. [costs {reg14}/{reg15} Influence]
+; str_npc4_payment_response|It's a noble cause, but I'm sure a replacement can be found. [costs {reg14}/{reg15} Influence]
+; str_npc5_payment_response|Trust me, you will be more useful with me. [costs {reg14}/{reg15} Influence]
+; str_npc6_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
+; str_npc7_payment_response|Master Dwalin will understand that a battle-worthy dwarf should not be kept from our enemies for too long. [costs {reg14}/{reg15} Influence]
+; str_npc8_payment_response|The King's well-being is important, but you will save more lives with me. [costs {reg14}/{reg15} Influence]
+; str_npc9_payment_response|Oh, but the guard won't dare stop you, if you are with me. [costs {reg14}/{reg15} Influence]
+; str_npc10_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
+; str_npc11_payment_response|Never mind your Boss, you serve me now. [costs {reg14}/{reg15} Influence]
+; str_npc12_payment_response|Your boys will get new orders, I'll worry about the High Ups. [costs {reg14}/{reg15} Influence]
+; str_npc13_payment_response|They will see otherwise, for I'm your Chieftain now. [costs {reg14}/{reg15} Influence]
+; str_npc14_payment_response|You don't need to worry about the old Harbor-master. [costs {reg14}/{reg15} Influence]
+; str_npc15_payment_response|Priceless, is it? I'll get your gear. [costs {reg14}/{reg15} Influence]
+; str_npc16_payment_response|I honor the ancestors, yours and mine. [costs {reg14}/{reg15} Influence]
+; str_npc17_payment_response|Your uncle will be fine. You are with me now. [costs {reg14}/{reg15} Influence]
 str_npc1_morality_speech|Dowódco, nie pojmuję jak możesz {s21} i porzucać naszych ludzi! Kapitan Faramir nigdy nie utraciłby swego politowania dla swoich Rangersów i pozwolił im cierpieć bez potrzeby.
 str_npc2_morality_speech|Mam nadzieję, że nie masz nic przeciwko wysłuchaniu mej opinii, lecz trochę trudno mi godzić się na to, że {s21} . Być może powinienem starać się być twardszym wojownikiem, ale jeśli tylko mógłbyś... bardziej przejmować losem swoich, spokój zagościłby w mym sercu,
 str_npc3_morality_speech|Dowódco, me dumni Eorlingowie nigdy nie {s21} . Nadze konie nie męczą się tak łatwo, dlatego jeśli tylko się przegrupujemy, nie ma takiej sytuacji, w której szybki kontratak nie przyniósłby nam zwycięstwa. Zastanów się następnym razem zanim pomyślisz o takim głupstwie.
@@ -799,10 +799,10 @@ str_npc5_morality_speech|Przemyśl lepiej swe decyzje, dowódco. {s21} czyni nas
 str_npc7_morality_speech|Nie byłem zadowolony, że postanowiłeś {s21}. Polec w walce to zaszczyt dla każdego dobrze myślącego krasnoluda, ale walka u boku tchórza jest hańbą. Co powiedzą moi kuzyni, jeśli się o tym dowiedzą? 
 str_npc8_morality_speech|Dowódco, muszę się sprzeciwić. {s21} jest drażniące dla mężczyzn i zbędne. Robię co mogę, aby złagodzić ich cierpienie, ale proszę, nie popełnij więcej tak kosztownego błędu.
 str_npc9_morality_speech|Walczący Uruk-hai nie {s21}. Jeśli Pan ma mało odwagi, może znaleźć się bez nich pewnej nocy. Gulm przemówił.
-str_npc15_morality_speech|[No primary moral code]
+; str_npc15_morality_speech|You may think that Bolzog the Great can cure all, {playername}, but even I have my limits! If you continue to {s21} even my talent will struggle! You must give me some support! I cannot resurrect the dead, whether they starve or are hacked to pieces!
 str_npc1_2ary_morality_speech|Kapitan, zostałem wychowany jako Dúnadan, zarówno w hołdzie, jak i honorze. Wolałabym, żebyśmy tego nie robili {s21}.
 str_npc4_2ary_morality_speech|Proszę o wybaczenie, dowódco. Kobiety z mojej stacji zaakceptują śmierć, ale nie zhańbioną. {s21} przynosi wstyd mojego domowi i przodkom.
-str_npc15_2ary_morality_speech|[No secondary moral code]
+; str_npc15_2ary_morality_speech|Hi-hi-hi! You are cunning, Oh Lord! You take the gold, and nod, and say 'yes master' but all the time you planned this! Hi-Hi! Only, we must be careful, that The Big One does not see you deceiving him...
 str_npc1_personalityclash_speech|Wspominałam że Nienawidzę { s11 }?
 str_npc2_personalityclash_speech|Wspominałam że Nienawidzę { s11 }?
 str_npc3_personalityclash_speech|Dowódco, jak to się stało że skończyliśmy z {s11} w oddziale?\nJest on dosyć zwinny, wydaje mi się, ale zbyt często gada o zasadzkach - w przeciwieństwie do ostrożnej natury jego ludu
@@ -959,7 +959,7 @@ str_npc17_home_intro|Oooooo, rosną tutaj Mallorny! Nie powinni ich ścinać, on
 str_npc1_home_description|Kiedyś było to piękne miasto, stolica Gondoru, pełna ludzi i śmiechu. Teraz stoi opuszczone i zrujnowane, a stara Anduina płynie powoli przez miasto duchów.
 str_npc2_home_description|Wiele lat temu nazywało się Minas Ithil. Opowiada się o tym, jak światło księżyca wypełniało jego dziedzińce srebrnym światłem, a jego mury lśniły bielą. Strażnicy Gondoru patrolowali posterunki i obserwując Ephel Dúath.
 str_npc3_home_description|Jest gęsty od pni i gałęzi i wszelkiego rodzaju drzew i nie chciałbym się tam wybierać, ponieważ dziwaczne stworzenia wędrują po lesie, nie wszystkie z nich są nieszkodliwe.
-str_npc4_home_description|Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...
+; str_npc4_home_description|'Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...'
 str_npc5_home_description|Raz zbudowane przez Królestwo Południowe, obecnie domem dla tego, którego nazywaliśmy Białym Czarodziejem, bez wątpienia knującego, jak zwiększyć jego moc kosztem innych.
 str_npc6_home_description|Nigdy nie posunąłem się tak daleko, ale podsłuchałem, jak nasi harcerze z Greenwood mówią, że może tu być Nazgul. Czuję złą obecność, ale nie mogę jej nazwać. Jest on jednak potężny, więc bądźmy przygotowani.
 str_npc7_home_description|Sądząc po spustoszeniu i wielu ścieżkach orków, obawiam się losu odważnego Balina i jego wyprawy. Wydaje się, że Moria spadła do cienia i powinniśmy stąpać ostrożnie.
@@ -2245,23 +2245,23 @@ str_npc27_signup_response_2|Zmieniłem zdanie.
 str_npc18_payment|Zaprawdę, dowódca tak sławny jak ty wystarczy że powie słowo, i zostanę uwolniony. [koszt {reg14} Relacje z {s14}]
 str_npc19_payment|Wygląda na to że Daeglaf Czarny może szukać wymówki aby mnie tu zatrzymać, Dowódco. [koszt {reg14} Relacje z {s14}]
 str_npc20_payment|lepej nie rozczaruj mnie, i naszego Mistrza. Co Mistrz o tobie myśli? [costs {reg14} Wpływ na {s14}] 
-str_npc21_payment|Before I leave, our healers are in desperate need of supplies and require {reg3} Resources.
-str_npc22_payment|We should be off soon. The value of my coming will be diminished if the Enemy senses my presence before we have struck. But Lothlórien will first need {reg3} Resources to compensate for my absence.
-str_npc23_payment|I'll join you for {reg3} Resources.
-str_npc24_payment|My honorable father Dwalin will need {reg3} Resources to make up for my absence.
-str_npc25_payment|Before I leave, I'll need {reg3} Resources to provide our King with a steady supply of mind-easing herbs.
-str_npc26_payment|Before we leave, I'll need {reg3} Resources to bribe the guards at the gate.
-str_npc27_payment|I'll join you for {reg3} Resources.
+; str_npc21_payment|I would join you, but who will care for the wounded if the city is attacked? [costs {reg14} Influence with {s14}]
+; str_npc22_payment|We should be off soon. The value of my coming will be diminished if the Enemy senses my presence before we have struck. But Lothlórien also needs me here. [costs {reg14} Influence with {s14}]
+; str_npc23_payment|I would join you, but my duty is here. [costs {reg14} Influence with {s14}]
+; str_npc24_payment|I would join you, but I'm afraid my honorable father Dwalin will not understand why I left the town in a time of need. [costs {reg14} Influence with {s14}]
+; str_npc25_payment|I cannot abandon my duties here, my King still needs me. I'm too concerned for his health. [costs {reg14} Influence with {s14}]
+; str_npc26_payment|I want to leave with you, but the guards at the gate won't let me.^Trust me, I've tried. [costs {reg14} Influence with {s14}]
+; str_npc27_payment|I would join you, but my duty is here. [costs {reg14} Influence with {s14}]
 str_npc18_payment_response|Nie ma wątpliwości. Ludzie Lurmsakun nie śmią mi odmówić. [koszt {reg14}/{reg15} Relacje]
 str_npc19_payment_response|Naczelnik Daeglaf będzie musiał ulec mojemu życzeniu, gdy tylko to wyjaśnię. [costs {reg14}/{reg15} Influence]
 str_npc20_payment_response|Oczywiście. Ruszajmy więc! W końcu jakby na to nie patrzeć, nie będziesz podążał za pokornym snagiem. [costs {reg14}/{reg15} Influence]
-str_npc21_payment_response|Everything for a noble cause. Here's {reg3} Resources.
-str_npc22_payment_response|I'll gladly help with {reg3} Resources.
-str_npc23_payment_response|Here's {reg3} Resources.
-str_npc24_payment_response|Certainly. Master Dwalin shall have {reg3} Resources.
-str_npc25_payment_response|The King's well-being is important. Here's {reg3} Resources.
-str_npc26_payment_response|That's a lot, and you better be worth it - here's {reg3} Resources.
-str_npc27_payment_response|Here's {reg3} Resources.
+; str_npc21_payment_response|It's a noble cause, but I'm sure a replacement can be found. [costs {reg14}/{reg15} Influence]
+; str_npc22_payment_response|Trust me, you will be more useful with me. [costs {reg14}/{reg15} Influence]
+; str_npc23_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
+; str_npc24_payment_response|Master Dwalin will understand that a battle-worthy dwarf should not be kept from our enemies for too long. [costs {reg14}/{reg15} Influence]
+; str_npc25_payment_response|The King's well-being is important, but you will save more lives with me. [costs {reg14}/{reg15} Influence]
+; str_npc26_payment_response|Oh, but the guard won't dare stop you, if you are with me. [costs {reg14}/{reg15} Influence]
+; str_npc27_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
 str_npc18_morality_speech|Świetnie! Moje pragnienie krwi jest nieugaszone! Dlaczego my {s21} jak tchórze? Pozwól mi z nimi walczyć!
 str_npc19_morality_speech|Dowódco, wielce nie podoba mi się że my {s21}. Król taki jak ja powinien zawsze być hojny, ale jeśli władcy są puści, nie mam nic do oddania, a nasi żołnierze nas opuszczą.
 str_npc20_morality_speech|Rzekłbym, że spodziewałem się więcej po tobie, Dowódco, jednakże byłoby to kłamstwo. Uważaj, aby twoje samolubne sposoby nie zaszkodziły wzniosłym projektom lepszych od ciebie!
@@ -2375,7 +2375,7 @@ str_npc27_home_intro|Hej, spójrz!
 ; str_npc18_home_description|Our wise ones told us all about that war. If it hadn't been for the weakness of the Southerners, losing a battle they should have won, the Gondorians would never have won the Battle of the Camp. The chariots of the Wainriders were smashed, and many fierce heroes died in the swamps of the Dead Marshes.
 ; str_npc19_home_description|I would see our peoples united, as they have been in the past. No more will women of dun hair nurse sickly babies at their bosoms, while their fair-haired cousins feast on meat and swoon from wine in warm halls. No more will the black-haired hill man look with resentment upon the herds of horses owned by a crofter with hair of gold. As king, I will see justice done - but first, let the tyrants of Rohan pay their weregild.
 ; str_npc20_home_description|I remember him well - Thráin, son of Thrór. Foolhardy, vainglorious would-be scion of a broken line, claimant of a worthless throne! Great torment he endured at my hands. But no one withstands the will of Zigûrphel for long, Commander. No one. I took his Ring from him, in the dungeons of Dol Guldur, and sent it on to the Dark Tower for a great reward. High I rose then, in the Dark Lord's favour!
-str_npc21_home_description|Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...
+; str_npc21_home_description|'Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...'
 str_npc22_home_description|Raz zbudowane przez Królestwo Południowe, obecnie domem dla tego, którego nazywaliśmy Białym Czarodziejem, bez wątpienia knującego, jak zwiększyć jego moc kosztem innych.
 str_npc23_home_description|Nigdy nie posunąłem się tak daleko, ale podsłuchałem, jak nasi harcerze z Greenwood mówią, że może tu być Nazgul. Czuję złą obecność, ale nie mogę jej nazwać. Jest on jednak potężny, więc bądźmy przygotowani.
 str_npc24_home_description|Sądząc po spustoszeniu i wielu ścieżkach orków, obawiam się losu odważnego Balina i jego wyprawy. Wydaje się, że Moria spadła do cienia i powinniśmy stąpać ostrożnie.

@@ -1114,8 +1114,8 @@ qstr_Install_TLD_in_your_|Zainstaluj TLD w Twoim folderze Bannerlord Modules, do
 qstr_Bannerlord_runs_on_a|Bannerlord działa na innym silniku. Nie będziemy w stanie przenieść TLD do Bannerlorda tak jak zrobiliśmy to w przypadku Warbanda.
 qstr_dis_mod_takes_2_long|Piehdole!!!21@ kiedy ten mod wyjdzie!!11!
 qstr_Well_there_s_a_lot_o|Cóż, jest dużo nowych grafik i innych rzeczy, wydaje mi się, że to zajmuje czas.
-qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.
-qstr_i_wont_decapitated_e|i wont decapitated elephants in multi, nao!!11!
+; qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.
+; qstr_i_wont_decapitated_e|i wont decapitated elephants in multi, nao!!11!
 qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
 qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
 ; qstr_Y_NO_ChINESE??|Y NO ChINESE??
@@ -1273,7 +1273,7 @@ qstr_Give_me_that!_Hrmph!|Daj mi to! Hrmph! Dobrze, że mi to przyniosł{e/a}ś,
 qstr_What?_Let_me_see_tha|Co? Niech to obejrzę... Hmmm. Dobrze, że mi to przyniosł{e/a}ś, {playername}. A teraz odejdź.
 qstr_Give_me_that!_Hrmph!_|Daj mi to! Hrmph! Jesteś dobrym sługą dla swego pana, {playername}, ale niedługo wszyscy będziecie martwi. Nie teraz oczywiście, więc przestań uciekać.
 qstr_My_king|Mój król
-qstr_Lord|Lord
+; qstr_Lord|Lord
 qstr_my_king|mój król
 qstr_lord|Lord
 qstr_our|nasz

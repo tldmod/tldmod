@@ -165,15 +165,15 @@ dlga_start:player_hire_troop|{s33}^^Я відповідаю за підгото�
 dlga_player_hire_troop:player_hire_troop_give|Деякі з солдатів моєї групи більше знадобляться для оборони твердині {s21}.
 dlga_player_hire_troop:close_window|Я хочу провести огляд моїх солдатів, залишених тут.
 ; dlga_player_hire_troop:player_hire_trolls_take|I am a commander worthy of a fighting Troll - give me one!
-; dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
+dlga_player_hire_trolls_take:close_window|Хочете підняти власний Чорний легіон? Поверніться, коли зможете додати дорослого троля у свої ряди.
 ; dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
-; dlga_player_hire_trolls_take:player_hire_trolls_how_many|It will cost {reg21} influence.
-; dlga_player_hire_trolls_take:close_window.2|I’ve changed my mind.
+dlga_player_hire_trolls_take:player_hire_trolls_how_many|Це буде коштувати {reg21} впливу.
+dlga_player_hire_trolls_take:close_window.2|Я передумав
 ; dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|A fearsome beast. And now, it is mine!
 ; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
 ; dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
-; dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|I’ve changed my mind.
-; dlga_player_hire_troll_buy_not_enough:close_window|Wasting my time...
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Я передумав
+dlga_player_hire_troll_buy_not_enough:close_window|Даремно витрачаю час ...
 ; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
 dlga_player_hire_troop:close_window.1|Мені потрібно потренуватися.
 dlga_player_hire_troop:tld_sell_prisoners|Я маю кілька полонених...
@@ -472,7 +472,7 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, розвід�
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Ти можеш відправити посланців?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Ми можемо, але мобілізація займе час. Ми побоюємося, що не встигнемо.^^Твій загін, здається, може виступити швидко. Ти зможеш захистити це село?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Ми готові і виступимо негайно.
-; dlga_lord_mission_defend_question:lord_mission_defend_reject|I am afraid I may not have enough men with me currently...
+dlga_lord_mission_defend_question:lord_mission_defend_reject|Боюсь, що зараз у мене може бути недостатньо воїнів ...
 dlga_lord_mission_defend_question:lord_mission_defend_reject.1|Я боюся, що не зможу виконати це завдання.
 dlga_lord_mission_defend_accept:close_window|Дякую тобі, {playername}. А зараз поквапся!
 dlga_lord_mission_defend_reject:close_window|Зрозуміло. Тоді я пошлю стільки військ, скільки зможу. Будемо сподіватися, що ми не дуже запізнимося.
@@ -981,11 +981,11 @@ dlga_town_merchant_talk:trade_requested_horse|Я хочу отримати тв�
 ; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
 ; dlga_player_upgrade_trolls_take:close_window.2|We don't do that here...
 ; dlga_player_upgrade_trolls_take:close_window.3|Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!
-; dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Forget it
+dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Не варто!
 ; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
 ; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Forget it
-; dlga_player_upgrade_troll_not_enough:close_window|Wasting my time...
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Не варто!
+dlga_player_upgrade_troll_not_enough:close_window|Даремно витрачаю час ...
 ; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
 dlga_trade_requested_weapons:merchant_trade|А, так, Командире. Тут кращі припаси, ніж де б то не було.
 dlga_trade_requested_horse:merchant_trade|Жорстокі звірі для їзди і вбивств, і м'ясо щоб їх годувати! Тобі ніде не знайти кращих звірів.
@@ -1027,7 +1027,7 @@ dlga_enemy_defeated:close_window|Аргх! Ненавиджу це.
 dlga_party_relieved:close_window|Дуже дякую, що допомогли нам впоратися з цими виродками.
 dlga_start:battle_reason_stated|Я зроблю кубок з твого черепа!
 dlga_member_chat_00:close_window.1|^^ГАРЧАННЯ!^^
-; dlga_member_chat_00:close_window.2|^^Grrrrr.....^^
+dlga_member_chat_00:close_window.2|Грррр.....
 dlga_member_chat_00:regular_member_talk|Який буде наказ, Командире?
 dlga_regular_member_talk:view_regular_char_requested|Розкажи мені про себе.
 dlga_view_regular_char_requested:do_regular_member_view_char|Так, Командире. Давайте я розповім вам все, що слід про мене знати.
