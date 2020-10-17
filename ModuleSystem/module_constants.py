@@ -1524,13 +1524,13 @@ str_income_high = 20
 str_income_very_high = 30
 
 # Center garrison limits (slot_center_garrison_limit), for easy mass tweaking
-garrison_limit_low  = 170 # for Elves and Dwarves
+garrison_limit_low  = 250 # for Elves and Dwarves
 garrison_limit_med  = 300
 garrison_limit_high = 450 #capitals
-# Evil factions have 20% larger garrisons (quantity vs quality)
+# Evil factions have 20% larger garrisons (quantity vs quality) #InVain: garrison sizes are now adjusted via script (so they affect capturable settlements)
 garrison_limit_evil_low  = garrison_limit_low*120/100 #not used
-garrison_limit_evil_med  = garrison_limit_med*120/100
-garrison_limit_evil_high = garrison_limit_high*150/100 #InVain: 50% for orc garrisons
+garrison_limit_evil_med  = garrison_limit_med #*120/100
+garrison_limit_evil_high = garrison_limit_high #*150/100
 
 # Siegability flag values
 tld_siegable_always  = 1  # siege if attstr>fac_str_ok
@@ -1630,7 +1630,7 @@ center_list = [
 	[icon_mfc_mordor],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_normal),
 (p_town_east_osgiliath, [scn_east_osgiliath_center, scn_east_osgiliath_castle, -1, -1, -1, scn_east_osgiliath_siege, mesh_town_osgilliath],
 	[-1, trp_smith_eosgiliath, trp_merchant_eosgiliath, trp_no_troop, pt_mordor_recruits, trp_mordor_lord, trp_i2_mordor_uruk, trp_i2_mordor_orc, trp_i3_mordor_large_orc, trp_a3_guldur_large_orc_tracker], 
-	[icon_mfc_mordor],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med*2, 0, tld_siegable_always),
+	[icon_mfc_mordor],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_always),
 # Isengard centers
 (p_town_isengard, [scn_isengard_center, scn_isengard_castle, scn_mordor_prison,scn_mordor_tavern, scn_isengard_arena, scn_isengard_siege,mesh_town_isengard],
 	[trp_barman_isengard, trp_smith_isengard, trp_merchant_isengard, trp_elder_isengard, pt_isengard_recruits,  trp_isengard_lord,trp_i2_isen_orc,trp_i3_isen_large_orc,trp_a2_isen_uruk_tracker,trp_i2_isen_uruk], 

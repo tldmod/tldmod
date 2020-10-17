@@ -83,7 +83,9 @@ simple_triggers = [
 			(try_begin),
 			(eq, "$g_fast_mode", 1),
 			(assign, "$g_fast_mode", 0),
-			(add_xp_to_troop,10000,"trp_player"), #emulate some xp gain in test mode (for siege strength relaxation)
+			(store_character_level, ":player_level", "trp_player"),
+			(val_mul, ":player_level", 1000),
+			(add_xp_to_troop, ":player_level","trp_player"), #emulate some xp gain in test mode (for siege strength relaxation)
 			(try_end),
           (assign, "$g_player_icon_state", pis_normal),
           (display_message, "@Breaking camp..."),
@@ -264,6 +266,11 @@ simple_triggers = [
         
         #TLD: above replaced by this
         (party_get_slot, ":garrison_limit", ":center_no", slot_center_garrison_limit),
+			(try_begin),
+				(neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+				(val_mul, ":garrison_limit", 150),
+				(val_div, ":garrison_limit", 100),
+			(try_end),
         (party_get_num_companions, ":garrison_size", ":center_no"),
         
         (store_random_in_range, ":chance", 0, 100), #InVain Reduce reinforcements for centers
@@ -271,6 +278,8 @@ simple_triggers = [
           (gt, ":garrison_limit", ":garrison_size"),
           (lt, ":chance", 30),
           (call_script, "script_cf_reinforce_party", ":center_no"),
+		  (str_store_party_name, s1, ":center_no"),
+		  #(display_message, "@{s1} reinforced"),
         (try_end),
         # (val_sub, ":cur_wealth", reinforcement_cost),
         # (party_set_slot, ":center_no", slot_town_wealth, ":cur_wealth"),

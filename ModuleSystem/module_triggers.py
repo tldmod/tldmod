@@ -1169,6 +1169,8 @@ triggers = [
         # and reinforce
         (assign, ":garrison_strength", 80), #InVain was 13. This is very high so the siegable_always camps don't get razed immediately
         (party_get_slot, ":garrison_limit", ":center", slot_center_garrison_limit),
+		(val_mul, ":garrison_limit", 150),
+		(val_div, ":garrison_limit", 100),
         (try_for_range, ":unused", 0, ":garrison_strength"),
           (call_script, "script_cf_reinforce_party", ":center"),
           (try_begin), #TLD: don't go overboard

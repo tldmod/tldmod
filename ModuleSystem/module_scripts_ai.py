@@ -368,7 +368,7 @@ ai_scripts = [
            (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak), #-1000
            (this_or_next|lt, ":center_faction_strength", ":capital_siegable_str"), #too much?
            #(this_or_next|lt, ":center_faction_strength", fac_str_very_weak), #attack very weak factions regardless of odds (not too smart, but hopefully the player will help out)
-           (gt, ":center_score", 1200), #siege attacks more likely with worse odds (down to +20% advantage), was 1500 (+50%)
+           (gt, ":center_score", 400), #siege attacks more likely with worse odds (down to +20% advantage), was 1500 (+50%) #InVain: balanced to reflect TLD's huge garrisons.
            (val_min, ":center_score", 20000),#20 times stronger means an easy victory, distance is more important
            (try_begin),
              (party_slot_eq, ":enemy_walled_center", slot_center_original_faction, ":faction_no"),
@@ -380,7 +380,8 @@ ai_scripts = [
            (try_end),
            (try_begin), # if it's a capital, pretty much go for it
              (eq, ":siegable", tld_siegable_capital),
-             (val_mul, ":center_score", 3),
+			 (lt, ":center_faction_strength", ":capital_siegable_str"), #InVain: double check
+
              (lt, ":center_faction_strength", fac_str_dying),
              (val_mul, ":center_score", 100),
            (try_end),
@@ -403,7 +404,7 @@ ai_scripts = [
 
          #Center with equal strength at 30 kms away will have a center_score of 1300 (with -40 reln)
          (store_div, ":chance_attacking_center", ":best_besiege_center_score", 15),
-         (val_min, ":chance_attacking_center", 1000),
+         #(val_min, ":chance_attacking_center", 1000), #InVain: Disbaled: Maybe makes sieging more attractive
          (assign, ":target_attacking_center", ":best_besiege_center"),
          (try_begin),
            (eq, ":old_target_attacking_center", ":target_attacking_center"),
@@ -481,7 +482,7 @@ ai_scripts = [
          (ge, ":best_attack_army", 0),
          #Army having with equal strength and 30 kms away will have a best_attack_army_score of 28
          (store_mul, ":chance_attacking_enemy_army", ":best_attack_army_score", 2),
-         #(val_min, ":chance_attacking_enemy_army", 1500), #TLD - too big scores
+         (val_min, ":chance_attacking_enemy_army", 1500), #TLD - too big scores
          (assign, ":target_attacking_enemy_army", ":best_attack_army"),
          (try_begin),
            (eq, ":old_target_attacking_enemy_army", ":target_attacking_enemy_army"),
@@ -673,9 +674,9 @@ ai_scripts = [
          (assign, ":target_attacking_enemies_around_center", ":capital"),
        (try_end),
 #MV test code begin
-# (try_begin),
-  # (eq, cheat_switch, 1),
-#  (this_or_next|eq, ":faction_no", "fac_gondor"),
+#(try_begin),
+  #(eq, cheat_switch, 1),
+ # (this_or_next|eq, ":faction_no", "fac_gondor"),
   # (eq, ":faction_no", "fac_mordor"),
   # (assign, reg1, ":chance_defend"),
   # (assign, reg2, ":chance_gathering_army"),
@@ -683,8 +684,8 @@ ai_scripts = [
   # (assign, reg4, ":chance_attacking_enemy_army"),
   # (assign, reg5, ":chance_attacking_enemies_around_center"),
   # (str_store_faction_name, s1, ":faction_no"),
-  # (display_message, "@DEBUG: {s1} chances: D:{reg1} GA:{reg2} AC:{reg3} AEA:{reg4} AEAC:{reg5}.", 0x30FFC8),
-# (try_end),
+  # (display_message, "@DEBUG: {s1} chances: Defend:{reg1} Gather:{reg2} Attack center:{reg3} Attack party:{reg4} Attack around:{reg5}.", 0x30FFC8),
+#(try_end),
 #MV test code end
        
        (store_random_in_range, ":random_no", 0, ":sum_weights"),
@@ -3237,6 +3238,12 @@ ai_scripts = [
         (party_set_flags, ":party_no", pf_default_behavior, 1),
         (party_set_slot, ":party_no", slot_party_ai_substate, 1),
       (try_end),
+	  # (try_begin),
+		# (eq, cheat_switch, 1),
+		# (str_store_party_name, s1 , ":center_no"),
+		# (display_message, "@{s1} siege attack!"),
+	  # (try_end),
+	  
   ]),
 
 ]

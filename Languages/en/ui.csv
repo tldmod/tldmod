@@ -80,8 +80,8 @@ ui_next|Next
 ui_prev|Prev
 ui_learn|Learn
 ui_question_saving_policy|What will the game's saving policy be?
-ui_saving_policy_realistic|Realistic! No quitting without saving!
-ui_saving_policy_nonrealistic|Allow me to quit without saving.
+ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
+ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)
 ui_tutorial_character_generation|Now enter your name and distribute your attribute, skill and weapon points. You can click on various elements on the screen to learn how each one will affect your character.
 ui_str|STR
 ui_agi|AGI

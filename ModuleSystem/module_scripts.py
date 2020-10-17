@@ -1724,17 +1724,22 @@ scripts = [
 		(try_end),
 		(party_set_slot, ":center_no", slot_town_wealth, ":initial_wealth"),
 
-		(assign, ":garrison_strength", 13), 
+		(assign, ":garrison_strength", 13),
+		(store_faction_of_party, ":center_faction", ":center_no"),		
 		(try_begin),
 			(party_slot_eq, ":center_no", slot_party_type, spt_town),
 			(assign, ":garrison_strength", 80),  #InVain, was 20, increased this to initially counter lowered reinforcement rate for towns.
 		(try_end),
 		(try_begin), # TLD: capitals get more #InVain Isn't really needed anymore, since now all centers start at full strength. Keeping it just in case.
-			(store_faction_of_party, ":center_faction", ":center_no"),
 			(faction_slot_eq, ":center_faction", slot_faction_capital, ":center_no"),
 			(assign, ":garrison_strength", 160), #InVain: was 40
 		(try_end),
 		(party_get_slot, ":garrison_limit", ":center_no", slot_center_garrison_limit),
+			(try_begin),
+				(neg|faction_slot_eq, ":center_faction", slot_faction_side, faction_side_good),
+				(val_mul, ":garrison_limit", 150),
+				(val_div, ":garrison_limit", 100),
+			(try_end),
 		(try_for_range, ":unused", 0, ":garrison_strength"),
 			(call_script, "script_cf_reinforce_party", ":center_no"),
 			(try_begin), #TLD: don't go overboard
@@ -2467,11 +2472,12 @@ scripts = [
             	#For sieges increase attacker casualties and reduce defender casualties.
             	(this_or_next|party_slot_eq, ":root_defender_party", slot_party_type, spt_castle),
             	(party_slot_eq, ":root_defender_party", slot_party_type, spt_town),
-            	(val_mul, ":defender_strength", 123), #it was 1.5 in old version, now it is only 1.23
-            	(val_div, ":defender_strength", 100),
+            	#(val_mul, ":defender_strength", 123), #it was 1.5 in old version, now it is only 1.23
+            	#(val_div, ":defender_strength", 100),
       
-            	(val_mul, ":attacker_strength", 100), #it was 0.5 in old version, now it is only 1 / 1.23
-            	(val_div, ":attacker_strength", 123),
+            	#(val_mul, ":attacker_strength", 2), #it was 0.5 in old version, now it is only 1 / 1.23
+            	#(val_div, ":attacker_strength", 3),
+				(val_div, ":attacker_strength", 2),
           	(try_end),
 
 	        (call_script, "script_party_count_fit_for_battle", "p_collective_ally", 0),
@@ -2591,7 +2597,9 @@ scripts = [
 						(eq, "$tld_option_death_npc", 1), # if death option is available
 						(store_random_in_range,":rnd",0,100),
 						(try_begin),
-							(lt,":rnd",5), # die with 5% prob when lost a battle
+							(store_character_level, ":player_level", "trp_player"),
+							(val_div, ":player_level", 2),
+							(lt,":rnd", ":player_level"), # die with 5% prob when lost a battle
 							(is_between, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
                             (store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
                             (neg|faction_slot_eq, ":cur_troop_faction", slot_faction_marshall, ":cur_troop_id"), #make sure it's not a marshall
@@ -2747,12 +2755,12 @@ scripts = [
 						(call_script, "script_order_best_besieger_party_to_guard_center", ":root_defeated_party", ":winner_faction"),
 						# add a small garrison
 							(try_begin),
-								(eq, ":winner_faction", "fac_player_faction"),
+								(eq, ":winner_faction", "$players_kingdom"),
 								(try_for_range, ":unused", 0, 10), #InVain: higher, to counter lowered reinforcement rate. Was 5
 									(call_script, "script_cf_reinforce_party", ":root_defeated_party"),
 								(try_end),
 							(else_try),
-								(try_for_range, ":unused", 0, 40), #InVain: higher, to counter lowered reinforcement rate. Was 5
+								(try_for_range, ":unused", 0, 20), #InVain: higher, to counter lowered reinforcement rate. Was 5
 									(call_script, "script_cf_reinforce_party", ":root_defeated_party"),
 								(try_end),							
 							(try_end),
@@ -2822,7 +2830,7 @@ scripts = [
             (store_random_in_range, ":random_num", 0, 100),
             
             (try_begin),
-              (lt, ":random_num", 15), #15% is a bit higher than 10% (which is open area escape probability)
+              (lt, ":random_num", 5), #15% is a bit higher than 10% (which is open area escape probability)
               (assign, ":trigger_result", 1), #End battle!
               
               (assign, "$g_recalculate_ais", 1), #added new
