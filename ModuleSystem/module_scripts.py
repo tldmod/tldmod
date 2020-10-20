@@ -2597,9 +2597,10 @@ scripts = [
 						(eq, "$tld_option_death_npc", 1), # if death option is available
 						(store_random_in_range,":rnd",0,100),
 						(try_begin),
-							(store_character_level, ":player_level", "trp_player"),
+							(store_character_level, ":player_level", "trp_player"), #InVain: Scale lord death chance with player level
+							(val_sub, ":player_level", 10),
 							(val_div, ":player_level", 2),
-							(lt,":rnd", ":player_level"), # die with 5% prob when lost a battle
+							(lt,":rnd", ":player_level"),
 							(is_between, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
                             (store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
                             (neg|faction_slot_eq, ":cur_troop_faction", slot_faction_marshall, ":cur_troop_id"), #make sure it's not a marshall
@@ -8331,6 +8332,7 @@ scripts = [
       (try_for_range, ":cur_center", centers_begin, ":end_cond"),
         (party_is_active, ":cur_center"), #TLD
 		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
+		(neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (store_relation, ":cur_relation", ":faction_no", ":cur_faction"),
         (lt, ":cur_relation", 0),
