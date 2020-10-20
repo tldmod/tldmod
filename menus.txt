@@ -52,7 +52,7 @@ menu_start_hand_orc 18374686479671624192 ^^^^^^^^^^Where_do_you_lurk? none 1 213
  mno_quick_start_moria  1 31 2 1 1  [dev:_quick_start_Moria]  4 2133 2 144115188075855989 0 2133 2 144115188075855988 0 1 2 253 374 2060 1 1  .  mno_start_armis  0  in_the_Armies_amassed_at_ISENGARD  2 1 2 253 314 2060 1 30  .  mno_start_minmo  0  in_the_Mines_of_MORIA  2 1 2 253 374 2060 1 30  .  mno_start_cliff  0  in_the_cliffs_of_Mount_GUNDABAD  2 1 2 253 382 2060 1 30  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 900 1 26  . 
 menu_start_gondor_mt 18374686479671624192 ^^^^^^^^^^Select_your_Lineage none 1 2133 2 144115188075855974 25 4
  mno_start_1_com  0  Commoner  2 1 2 253 101 2060 1 28  .  mno_start_2_hib  0  High-born  2 1 2 253 110 2060 1 28  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 20  . 
-menu_start_haradrim 18374686479671624192 ^^^^^^^You_are_an_Haradrim,^a_Man_of_the_Desert.^Select_your_line none 1 2133 2 144115188075855974 26 4
+menu_start_haradrim 18374686479671624192 ^^^^^^^You_are_one_of_the_Haradrim,^a_Man_of_the_Desert.^Select_your_line none 1 2133 2 144115188075855974 26 4
  mno_start_1_des  0  Desert_Man  2 1 2 253 247 2060 1 28  .  mno_start_2_far  0  Far_Harad_Tribesman  2 1 2 253 263 2060 1 28  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 21  . 
 menu_start_numenorean 18374686479671624192 ^^^^^^^You_are_a_Black_Numenorean,^faithful_to_the_Darkness_and_Morgoth.^Select_where_you_serve_the_Eye none 1 2133 2 144115188075855974 27 4
  mno_start_1_bn  0  Next_to_the_Mouth_of_Sauron,_in_MORANNON  1 2060 1 28  .  mno_start_2_bn  0  In_the_Fortress_of_the_Necromancer,_DOL_GULDUR  2 1 2 254 17 2060 1 28  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 21  . 

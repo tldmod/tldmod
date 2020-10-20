@@ -2688,5 +2688,6 @@ str_imladris_guildmaster_companion_none = 2686
 str_imladris_guildmaster_companion_player_none_ok = 2687
 str_imladris_guildmaster_player_found_ok = 2688
 str_show_keybinds_form = 2689
+str_mordor_cungol_guildmaster_companion = 2690
 
 

@@ -1637,7 +1637,7 @@ triggers = [
         
         (try_begin),
           (neg|faction_slot_eq, ":target", slot_faction_state, sfs_active),
-          (str_store_string, s22, "@Your troops value your effort to fullfill your oath, but acknowledge that events unfolded too quick. As a result, "),
+          (str_store_string, s22, "@Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, "),
         (else_try),
           (faction_slot_eq, ":target", slot_faction_state, sfs_active),
           (str_store_string, s22, "@ "),

@@ -1552,7 +1552,7 @@ game_menus = [
  ("go_back",[],"Go back"  ,[(jump_to_menu, "mnu_start_gondor")]),    ]
  ),
 ( "start_haradrim",menu_text_color(0xFF000000)|mnf_disable_all_keys,
- "^^^^^^^You are an Haradrim,^a Man of the Desert.^Select your line", "none",[(assign, "$last_menu", "mnu_start_haradrim")],[
+ "^^^^^^^You are one of the Haradrim,^a Man of the Desert.^Select your line", "none",[(assign, "$last_menu", "mnu_start_haradrim")],[
  ("start_1_des",[],"Desert Man",                          [(call_script,"script_start_as_one","trp_i1_harad_levy"),   (jump_to_menu,"mnu_choose_gender"),]),
  ("start_2_far",[],"Far Harad Tribesman",                 [(call_script,"script_start_as_one","trp_i2_far_harad_tribesman"),    (jump_to_menu,"mnu_choose_gender"),]),
 # ("start_3",[],"Harondor Noble",                      [(call_script,"script_start_as_one","trp_c2_harondor_scout"),(jump_to_menu,"mnu_choose_gender"),]),

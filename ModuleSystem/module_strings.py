@@ -1402,7 +1402,7 @@ You can press TAB anytime to leave the tutorial."),
   ("npc4_home_description_2", "We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again."),
   ("npc5_home_description_2", "Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer."),
   ("npc6_home_description_2", "I sense the evil armies behind its walls prepare to march... To fair Lothlórien? To Dale? To my Greenwood homeland? I cannot tell, but please do everything you can to thwart them."),
-  ("npc7_home_description_2", "If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches."),
+  ("npc7_home_description_2", "If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches."),
   ("npc8_home_description_2", "I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment."),
   ("npc9_home_description_2", "There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is."),
   ("npc10_home_description_2", "Minas Morgul, where Nazgul drink all day, har-har!"),
@@ -3586,7 +3586,7 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("npc21_home_description_2", "We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again."),
 ("npc22_home_description_2", "Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer."),
 ("npc23_home_description_2", "I sense the evil armies behind its walls prepare to march... To fair Lothlórien? To Dale? To my Greenwood homeland? I cannot tell, but please do everything you can to thwart them."),
-("npc24_home_description_2", "If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches."),
+("npc24_home_description_2", "If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches."),
 ("npc25_home_description_2", "I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment."),
 ("npc26_home_description_2", "There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is."),
 ("npc27_home_description_2", "Minas Morgul, where Nazgul drink all day, har-har!"),
@@ -3750,4 +3750,7 @@ Even in the last case, the player can make formations up to four lines by orderi
 
 # Show Keybind for New Form
 ("show_keybinds_form", "Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace"),
+
+#Mordor Orc patrol camp (internally named cirith ungol) Companion added down here for savegame compat.
+("mordor_cungol_guildmaster_companion", "O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?"),
 ]

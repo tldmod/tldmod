@@ -22053,14 +22053,19 @@ scripts = [
       (str_store_faction_name, s2, "$players_kingdom"),
       (faction_get_slot, ":player_king", "$players_kingdom", slot_faction_leader),
       (str_store_troop_name, s3, ":player_king"),
+	  (troop_get_type, reg3, ":player_king"),
+       (try_begin),
+         (gt, reg3, 1), #MV: non-humans are male
+         (assign, reg3, 0),
+      (try_end),
       (faction_get_slot, ":nearest_king", ":nearest_faction", slot_faction_leader),
       (str_store_troop_name, s4, ":nearest_king"),
       
-      (str_store_string, s50, "@Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s3} to your utmost capabilities."),
+      (str_store_string, s50, "@Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities."),
       (str_store_string, s51, "@Who are you?"),
       (str_store_string, s52, "@A friend of {s3} and the people of {s2}. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, unless we make count our every action to oppose it!"),
       (str_store_string, s53, "@What should I do?"),
-      (str_store_string, s54, "@Find {s3}'s whereabouts immediately and speak with him. Good luck!"),
+      (str_store_string, s54, "@Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!"),
       (assign, "$g_tld_convo_lines", 5),
       (val_or, "$g_tld_conversations_done", tld_conv_bit_gandalf_advice),
     (else_try),
@@ -26284,8 +26289,10 @@ command_cursor_scripts = [
 	(try_end),
 
 	(troop_set_slot, "trp_elder_mmorgul", slot_troop_gm_companion_1, "str_mordor_morgul_guildmaster_companion"),
+	(troop_set_slot, "trp_elder_cungol", slot_troop_gm_companion_1, "str_mordor_cungol_guildmaster_companion"),
 
 	(party_set_slot, "p_town_minas_morgul", slot_party_has_companion, 1),
+	(party_set_slot, "p_town_cirith_ungol", slot_party_has_companion, 1),
 
 	# Harad
 	(try_for_range, ":harad_guildmasters", "trp_elder_harad", "trp_elder_rhun"),

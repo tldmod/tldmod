@@ -4054,7 +4054,7 @@ presentations = [
 
     #URUK
     #text
-     (create_text_overlay, "$g_option_evil_text", "@an URUK-HAI,^ bred in Isengard", tf_center_justify),
+     (create_text_overlay, "$g_option_evil_text", "@one of the URUK-HAI,^ bred in Isengard", tf_center_justify),
         (position_set_x, pos1, 480),
         (position_set_y, pos1, 230),
         (overlay_set_position, "$g_option_evil_text", pos1),
