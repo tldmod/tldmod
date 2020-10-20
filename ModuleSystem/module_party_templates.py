@@ -291,9 +291,9 @@ party_templates = [
 ("umbar_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_i2_mordor_num_renegade,1,2),(trp_i3_corsair_swordsman,1,2),(trp_i3_corsair_spearman,1,2),(trp_a3_corsair_marksman,2,4)]),
 ("umbar_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_i3_mordor_num_warrior,1,2),(trp_i4_corsair_veteran_swordsman,1,2),(trp_i4_corsair_veteran_spearman,1,2),(trp_a4_corsair_veteran_marksman,1,2),]),
 #Lothlorien - Elves get slightly less troops (6-12, 4-8, 4-8)
-("lorien_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_a3_lorien_vet_archer,1,2),(trp_a2_lorien_warden,1,2),(trp_a1_lorien_scout,2,4),(trp_a2_lorien_archer,2,4),]),
-("lorien_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a3_lorien_vet_warden,2,4),(trp_a3_lorien_vet_archer,1,2),(trp_i3_lorien_inf,1,2),]),
-("lorien_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_a4_lorien_gal_warden,2,4),(trp_a4_lorien_gal_archer,1,2),(trp_i4_lorien_gal_inf,1,2),]),
+("lorien_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i3_lorien_inf,2,4),(trp_a2_lorien_warden,2,4),(trp_a1_lorien_scout,2,4),(trp_a2_lorien_archer,1,2),]),
+("lorien_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a3_lorien_vet_warden,1,2),(trp_a3_lorien_vet_archer,1,2),(trp_i3_lorien_inf,2,4),]),
+("lorien_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_a4_lorien_gal_warden,1,2),(trp_a4_lorien_gal_archer,1,2),(trp_i4_lorien_gal_inf,3,6),]),
 #Imladris - two trees, Rivendell favored over Dunedain (6-12, 4-8, 4-8)
 ("imladris_reinf_a","_",0,0,fac_commoners,0,[(trp_i3_riv_swordbearer,1,3),(trp_a2_arnor_vet_scout,0,1),(trp_a1_riv_scout,1,2),(trp_a1_arnor_scout,2,4)]), #InVain: Fewer archers, more inf
 ("imladris_reinf_b","_",0,0,fac_commoners,0,[(trp_a3_riv_archer,2,4),(trp_a3_arnor_ranger,1,2),(trp_i4_riv_vet_swordbearer,1,2),(trp_i3_arnor_swordsman,0,1),]),
@@ -319,11 +319,11 @@ party_templates = [
 ("gundabad_reinf_b","_",0,0,fac_commoners,0,[(trp_ca4_gunda_skirmisher,1,3),(trp_i2_gunda_orc,3,5),(trp_i3_gunda_orc_fighter,2,3),]), #InVain t3 orcs, less t2 orcs
 ("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_c3_gunda_goblin_rider,1,2),(trp_i3_gunda_orc_fighter,2,3),]), 
 #Dale (7-14, 5-10, 4-8)
-("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,1,2),(trp_i2_dale_man_at_arms,1,2),(trp_a2_dale_scout,1,2),(trp_i1_dale_militia,5,10),]), #InVain: added 
-("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,0,1),(trp_a3_dale_bowman,3,5),(trp_i3_dale_spearman,1,2),(trp_i3_dale_swordsman,1,2),]),
-("dale_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_c4_rhovanion_rider,2,4),(trp_i4_dale_billman,1,2),(trp_i4_dale_sergeant,1,2),]),
+("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,2,4),(trp_i2_dale_man_at_arms,1,2),(trp_a2_dale_scout,1,2),(trp_i1_dale_militia,5,10),]),
+("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,0,2),(trp_a3_dale_bowman,3,5),(trp_i3_dale_spearman,1,2),(trp_i3_dale_swordsman,1,2),]),
+("dale_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_c4_rhovanion_rider,3,6),(trp_i4_dale_billman,1,2),(trp_i4_dale_sergeant,1,2),]), #InVain: More Cav
 #Erebor (7-14, 5-10, 4-8)
-("dwarf_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i2_dwarf_warrior,1,2),(trp_a2_dwarf_lookout,1,1),(trp_i2_iron_hills_miner,1,2),(trp_i1_dwarf_apprentice,4,8),]), #InVain: fewer archers
+("dwarf_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i2_dwarf_warrior,2,3),(trp_i2_iron_hills_miner,1,2),(trp_i1_dwarf_apprentice,4,8),]), #InVain: no archers
 ("dwarf_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_dwarf_scout,2,4),(trp_a4_dwarf_bowman,1,2),(trp_i3_dwarf_hardened_warrior,2,4),(trp_i2_iron_hills_miner,0,1),]), #InVain: More archers, less infantry
 ("dwarf_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_i4_dwarf_axeman,2,4),(trp_i4_dwarf_spearman,2,4),(trp_i4_iron_hills_infantry,1,2),]), #InVain: No archers, more Erebor infantry
 #Dunlenders (7-14, 5-10, 4-8)
