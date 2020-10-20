@@ -1982,7 +1982,7 @@ fac_reward_items_list = [
 #fac_imladris
 [(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_scroll_reward, 0), (5, itm_miruvor_reward, 0), (6, itm_riv_warhorse2, imod_champion), (7, itm_westernesse2h_reward, 0), (8, itm_shield_of_tuor, 0), (9, itm_riv_armor_reward, 0)],
 #fac_woodelf
-[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_mirkwood_bow, imod_balanced), (6, itm_mirkwood_axe, imod_masterwork), (7, itm_ring_b_reward, 0), (8, itm_woodelf_arrows, imod_masterwork), (9, itm_mirkwood_sword_reward, 0)],
+[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_mirkwood_bow, imod_balanced), (6, itm_mirkwood_great_spear, imod_masterwork), (7, itm_ring_b_reward, 0), (8, itm_woodelf_arrows, imod_masterwork), (9, itm_mirkwood_sword_reward, 0)],
 #fac_dale
 [(2,itm_cooking_cauldron,0),(3,itm_map ,0),			(4,itm_leather_gloves_reward, 0), (5, itm_thrush_reward, 0), (6, itm_dale_armor_reward, 0), (7, itm_dale_sword_reward, imod_masterwork), (8, itm_black_arrows_reward, imod_masterwork), (9, itm_dale_bow_reward, 0)],
 #fac_harad

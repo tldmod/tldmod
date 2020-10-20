@@ -5123,7 +5123,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (eq, ":item_exists", 1),
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
      (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
-	 #(val_sub, ":price", 5),
+	 (val_sub, ":price", ":rank"), #slightly lower the price with rank
+	 (val_max, ":price", ":rank_index"),
      (ge, ":influence", ":price"), # player has enough influence to buy?
    
    
@@ -5185,8 +5186,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (val_add, ":recent_events_morale", reg0),
    (val_clamp, ":recent_events_morale", 0, 100), #GA overflow fixage 
      (party_set_morale, "p_main_party", ":recent_events_morale"), # update morale for cauldrons and such
+	 (call_script, "script_get_faction_rank", "$g_talk_troop_faction"),(assign, ":rank", reg0),
      (store_mul, ":price", ":rank_index", 5), # reward item price = 5*rank
-	 #(val_sub, ":price", 5),
+	 (val_sub, ":price", ":rank"), #slightly lower the price with rank
+	 (val_max, ":price", ":rank_index"),
    (call_script, "script_spend_influence_of", ":price", "$g_talk_troop_faction")
 ,]],
         
