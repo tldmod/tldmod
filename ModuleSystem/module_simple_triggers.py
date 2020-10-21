@@ -1150,19 +1150,32 @@ simple_triggers = [
       (assign, ":num_men", 0),
       (assign, ":num_orcs", 0), # Use for anyone who eats human flesh
       (try_for_range, ":i_stack", 0, ":num_stacks"),
-        (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),
-        (val_add, ":num_men", ":stack_size"),
-        # GA: orcs eat twice as much, mean little bastards
-        (party_stack_get_troop_id, reg1, "p_main_party",":i_stack"),
-        (troop_get_type, reg1, reg1),
+        (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),        
+        (party_stack_get_troop_id, ":troop", "p_main_party",":i_stack"),
+        (troop_get_type, reg1, ":troop"),
+			(try_begin), #trolls eat 30 times as much. Big bastards.
+				(eq, reg1, tf_troll),
+				(val_mul, ":stack_size", 30),
+			(try_end),
+			(try_begin),
+			    (eq, reg1, tf_orc),
+				(val_mul, ":stack_size", 3), # GA: orcs eat twice as much, mean little bastards #InVain: Slightly reduce to 1,5, because I added extra consumtion for Warg riders
+				(val_div, ":stack_size", 2),
+					(try_begin),
+						(troop_is_guarantee_horse, ":troop"),
+						(val_mul, ":stack_size", 2), #stacks with orc food malus: 1,5+2=3
+					(try_end),
+			(try_end),
+		(val_add, ":num_men", ":stack_size"),	
+		
+		#Count orcs and trolls for rotten food consumption
         (try_begin),
           (eq|this_or_next, reg1, tf_orc),
+		  (eq|this_or_next, reg1, tf_troll),
           (eq|this_or_next, reg1, tf_uruk),
           (eq, reg1, tf_urukhai),
           (val_add, ":num_orcs", ":stack_size"),
         (try_end),
-        (eq, reg1, tf_orc),
-        (val_add, ":num_men", ":stack_size"),
         
       (try_end),
       (val_div, ":num_men", 3),
@@ -1171,7 +1184,9 @@ simple_triggers = [
         (val_add, ":num_men", 1),
       (try_end),
       
-      (assign, ":consumption_amount", ":num_men"),
+      (assign, ":consumption_amount", ":num_men"),	  
+	  #(assign, reg2, ":consumption_amount"),
+	  #(display_message, "@food_consumption: {reg2}"),
       (assign, ":no_food_displayed", 0),
       (try_for_range, ":unused", 0, ":consumption_amount"),
         (assign, ":available_food", 0),
@@ -2550,7 +2565,7 @@ simple_triggers = [
               (party_slot_ge, ":scripted_ai_lords", slot_party_scripted_ai, 1),
               (party_set_slot, ":scripted_ai_lords", slot_party_scripted_ai, 0),
               (str_store_troop_name, s30, ":scripted_ai_lords"),
-              (display_message, "@{s30} scripted AI cleared", color_neutral_news),
+              #(display_message, "@{s30} scripted AI cleared", color_neutral_news),
             (try_end),
           (try_end),
           
