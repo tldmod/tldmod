@@ -4594,7 +4594,7 @@ mission_templates = [ # not used in game
 
   ## This block is what checks for reinforcements. Attackers first, then defenders.
   
-  (1, 0, 5,[(lt,"$attacker_reinforcement_stage",30)],[ #Less than defenders. Attackers don't go all in. Also makes it easier to defend against sieges.
+  (1, 0, 5,[(lt,"$attacker_reinforcement_stage",20)],[ #Less than defenders. Attackers don't go all in. Also makes it easier to defend against sieges.
     (assign,":atkteam","$attacker_team"),
     (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
     (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
