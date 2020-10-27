@@ -6805,7 +6805,6 @@ scripts = [
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_object_faction",":cur_object_center"), ## Store Faction of Object Center - So that we can set up appropriate raiders
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             (ge, ":dist", 20),
             (assign, ":quest_object_faction", ":cur_object_faction"),
             (assign, ":quest_target_party_template", "pt_village"),
@@ -6907,7 +6906,6 @@ scripts = [
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             #(ge, ":dist", 20),
             (assign, ":quest_target_faction", ":cur_target_faction"),
             (assign, ":quest_target_party_template", "pt_village"),
@@ -7771,7 +7769,6 @@ scripts = [
             (assign, ":cur_target_center", reg0),
             (assign, ":dist", reg1),
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             (ge, ":dist", 20),
             (assign, ":quest_target_party_template", "pt_runaway_serfs"),
             (assign, ":quest_object_center", ":cur_object_center"),
@@ -8147,7 +8144,6 @@ scripts = [
           (try_begin),
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":quest_target_center", reg0),
-            (neq, ":quest_target_center", "p_town_henneth_annun"), # HA not allowed
 
             (assign, ":dist", reg1),
             (assign, ":quest_target_troop", 0), #abuse this as a boolean flag: if town scouted
@@ -8171,12 +8167,6 @@ scripts = [
             
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":quest_target_center", reg0),
-			(try_begin), #if Henneth Annun, one more try
-				(eq, ":quest_target_center", "p_town_henneth_annun"),
-				(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
-				(assign, ":quest_target_center", reg0),
-			(try_end),				
-            (neq, ":quest_target_center", "p_town_henneth_annun"), # HA not allowed
             (assign, ":dist", reg1),
             
             (assign, ":quest_object_faction", ":giver_faction_no"),
