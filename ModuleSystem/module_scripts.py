@@ -8304,6 +8304,7 @@ scripts = [
 ]),
 
 # script_cf_get_random_enemy_center_within_range
+#   Note that reg0 will NEVER be Henneth Annun
 # INPUT: arg1 = party_no, arg2 = range (in kms)
 #OUTPUT: reg0 = center_no, reg1 = distance
 ("cf_get_random_enemy_center_within_range",
@@ -8313,29 +8314,28 @@ scripts = [
       (assign, ":dist", 0),
       (store_faction_of_party, ":faction_no", ":party_no"),
       (try_for_range, ":cur_center", centers_begin, centers_end),
-      	(neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
+        (neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
         (party_is_active, ":cur_center"), #TLD
-		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
+        (party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (store_relation, ":cur_relation", ":faction_no", ":cur_faction"),
         (lt, ":cur_relation", 0),
-        #(store_distance_to_party_from_party, ":dist", ":party_no", ":cur_center"),
         (call_script, "script_get_tld_distance", ":party_no", ":cur_center"),
         (assign, ":dist", reg0),
         (le, ":dist", ":range"),
         (val_add, ":num_centers", 1),
       (try_end),
+
       (gt, ":num_centers", 0),
       (store_random_in_range, ":random_center", 0, ":num_centers"),
       (assign, ":end_cond", centers_end),
       (try_for_range, ":cur_center", centers_begin, ":end_cond"),
         (party_is_active, ":cur_center"), #TLD
-		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
-		(neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
+        (party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
+        (neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (store_relation, ":cur_relation", ":faction_no", ":cur_faction"),
         (lt, ":cur_relation", 0),
-        #(store_distance_to_party_from_party, ":dist", ":party_no", ":cur_center"),
         (call_script, "script_get_tld_distance", ":party_no", ":cur_center"),
         (assign, ":dist", reg0),
         (le, ":dist", ":range"),
