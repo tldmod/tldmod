@@ -2653,7 +2653,6 @@ scripts = [
 					(store_party_size, ":size", "p_temp_party"),
 					(gt, ":size", 0),
 					(try_begin),
-						(store_party_size, ":size", "p_temp_party"),
 						(store_party_size_wo_prisoners, ":comps", "p_temp_party"),
 						(val_sub, ":size", ":comps"),
 						(gt, ":size", 0),
