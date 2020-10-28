@@ -8569,10 +8569,10 @@ scripts = [
 # script_get_close_landmark (mtarini) MV: corrected typo so searching for script_get_close_landmark works
 # a landmark is more generic that just a center. Not only towns but every 3D object visibile on the map is a landmark
 # Input: arg1 = party_no
-# Output: reg0 = landmark no (closest, max dist 4),. Else -1
+# Output: reg0 = landmark no (closest, max dist 8),. Else -1
 ("get_close_landmark",
     [ (store_script_param_1, ":party_no"),
-      (assign, ":min_distance", 6), # max range of landmarks
+      (assign, ":min_distance", 8), # max range of landmarks
       (assign, reg0, -1),
 	  
       (try_for_range, ":center_no", landmark_begin, landmark_end),
