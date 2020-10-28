@@ -23054,18 +23054,23 @@ command_cursor_scripts = [
     (call_script, "script_gain_trait", slot_trait_butcher),
 ]),
 
-#script_cf_gain_trait_well_travelled
-("cf_gain_trait_well_travelled",[
-    (troop_slot_eq, "trp_traits", slot_trait_well_travelled, 0),
+#script_gain_trait_well_travelled
+("gain_trait_well_travelled",[
     (call_script, "script_gain_trait", slot_trait_well_travelled),
+
     (store_skill_level, ":skill_1", skl_pathfinding, "trp_player"),
-	(neg|ge, ":skill_1", 10),
-	(troop_raise_skill, "trp_player", skl_pathfinding, 1),
-	(display_log_message, "@Gained permanent +1 to Pathfinding.", color_good_news),
+    (try_begin),
+      (lt, ":skill_1", 10),
+      (troop_raise_skill, "trp_player", skl_pathfinding, 1),
+      (display_log_message, "@Gained permanent +1 to Pathfinding.", color_good_news),
+    (try_end),
+
     (store_skill_level, ":skill_2", skl_spotting, "trp_player"),
-	(neg|ge, ":skill_2", 10),
-	(troop_raise_skill, "trp_player", skl_spotting, 1),
-    (display_log_message, "@Gained permanent +1 to Spotting.", color_good_news),
+    (try_begin),
+	(lt, ":skill_2", 10),
+	  (troop_raise_skill, "trp_player", skl_spotting, 1),
+      (display_log_message, "@Gained permanent +1 to Spotting.", color_good_news),
+    (try_end),
 ]),
 
 
