@@ -1562,7 +1562,7 @@ triggers = [
         (try_end),
         #Don't forget to add Fangorn condition for side_good later, when we've added Fangorn description - Kham
         (ge, ":visited",3),
-        (call_script, "script_cf_gain_trait_well_travelled"),
+        (call_script, "script_gain_trait_well_travelled"),
       (try_end),
   ]),
   

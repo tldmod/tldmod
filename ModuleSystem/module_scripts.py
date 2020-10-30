@@ -2653,7 +2653,6 @@ scripts = [
 					(store_party_size, ":size", "p_temp_party"),
 					(gt, ":size", 0),
 					(try_begin),
-						(store_party_size, ":size", "p_temp_party"),
 						(store_party_size_wo_prisoners, ":comps", "p_temp_party"),
 						(val_sub, ":size", ":comps"),
 						(gt, ":size", 0),
@@ -6806,7 +6805,6 @@ scripts = [
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_object_faction",":cur_object_center"), ## Store Faction of Object Center - So that we can set up appropriate raiders
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             (ge, ":dist", 20),
             (assign, ":quest_object_faction", ":cur_object_faction"),
             (assign, ":quest_target_party_template", "pt_village"),
@@ -6908,7 +6906,6 @@ scripts = [
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             #(ge, ":dist", 20),
             (assign, ":quest_target_faction", ":cur_target_faction"),
             (assign, ":quest_target_party_template", "pt_village"),
@@ -7772,7 +7769,6 @@ scripts = [
             (assign, ":cur_target_center", reg0),
             (assign, ":dist", reg1),
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
             (ge, ":dist", 20),
             (assign, ":quest_target_party_template", "pt_runaway_serfs"),
             (assign, ":quest_object_center", ":cur_object_center"),
@@ -8148,7 +8144,6 @@ scripts = [
           (try_begin),
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":quest_target_center", reg0),
-            (neq, ":quest_target_center", "p_town_henneth_annun"), # HA not allowed
 
             (assign, ":dist", reg1),
             (assign, ":quest_target_troop", 0), #abuse this as a boolean flag: if town scouted
@@ -8172,12 +8167,6 @@ scripts = [
             
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":quest_target_center", reg0),
-			(try_begin), #if Henneth Annun, one more try
-				(eq, ":quest_target_center", "p_town_henneth_annun"),
-				(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
-				(assign, ":quest_target_center", reg0),
-			(try_end),				
-            (neq, ":quest_target_center", "p_town_henneth_annun"), # HA not allowed
             (assign, ":dist", reg1),
             
             (assign, ":quest_object_faction", ":giver_faction_no"),
@@ -8305,6 +8294,7 @@ scripts = [
 ]),
 
 # script_cf_get_random_enemy_center_within_range
+#   Note that reg0 will NEVER be Henneth Annun
 # INPUT: arg1 = party_no, arg2 = range (in kms)
 #OUTPUT: reg0 = center_no, reg1 = distance
 ("cf_get_random_enemy_center_within_range",
@@ -8314,29 +8304,28 @@ scripts = [
       (assign, ":dist", 0),
       (store_faction_of_party, ":faction_no", ":party_no"),
       (try_for_range, ":cur_center", centers_begin, centers_end),
-      	(neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
+        (neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
         (party_is_active, ":cur_center"), #TLD
-		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
+        (party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (store_relation, ":cur_relation", ":faction_no", ":cur_faction"),
         (lt, ":cur_relation", 0),
-        #(store_distance_to_party_from_party, ":dist", ":party_no", ":cur_center"),
         (call_script, "script_get_tld_distance", ":party_no", ":cur_center"),
         (assign, ":dist", reg0),
         (le, ":dist", ":range"),
         (val_add, ":num_centers", 1),
       (try_end),
+
       (gt, ":num_centers", 0),
       (store_random_in_range, ":random_center", 0, ":num_centers"),
       (assign, ":end_cond", centers_end),
       (try_for_range, ":cur_center", centers_begin, ":end_cond"),
         (party_is_active, ":cur_center"), #TLD
-		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
-		(neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
+        (party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
+        (neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
         (store_faction_of_party, ":cur_faction", ":cur_center"),
         (store_relation, ":cur_relation", ":faction_no", ":cur_faction"),
         (lt, ":cur_relation", 0),
-        #(store_distance_to_party_from_party, ":dist", ":party_no", ":cur_center"),
         (call_script, "script_get_tld_distance", ":party_no", ":cur_center"),
         (assign, ":dist", reg0),
         (le, ":dist", ":range"),
@@ -8580,10 +8569,10 @@ scripts = [
 # script_get_close_landmark (mtarini) MV: corrected typo so searching for script_get_close_landmark works
 # a landmark is more generic that just a center. Not only towns but every 3D object visibile on the map is a landmark
 # Input: arg1 = party_no
-# Output: reg0 = landmark no (closest, max dist 4),. Else -1
+# Output: reg0 = landmark no (closest, max dist 8),. Else -1
 ("get_close_landmark",
     [ (store_script_param_1, ":party_no"),
-      (assign, ":min_distance", 6), # max range of landmarks
+      (assign, ":min_distance", 8), # max range of landmarks
       (assign, reg0, -1),
 	  
       (try_for_range, ":center_no", landmark_begin, landmark_end),
@@ -23065,18 +23054,23 @@ command_cursor_scripts = [
     (call_script, "script_gain_trait", slot_trait_butcher),
 ]),
 
-#script_cf_gain_trait_well_travelled
-("cf_gain_trait_well_travelled",[
-    (troop_slot_eq, "trp_traits", slot_trait_well_travelled, 0),
+#script_gain_trait_well_travelled
+("gain_trait_well_travelled",[
     (call_script, "script_gain_trait", slot_trait_well_travelled),
+
     (store_skill_level, ":skill_1", skl_pathfinding, "trp_player"),
-	(neg|ge, ":skill_1", 10),
-	(troop_raise_skill, "trp_player", skl_pathfinding, 1),
-	(display_log_message, "@Gained permanent +1 to Pathfinding.", color_good_news),
+    (try_begin),
+      (lt, ":skill_1", 10),
+      (troop_raise_skill, "trp_player", skl_pathfinding, 1),
+      (display_log_message, "@Gained permanent +1 to Pathfinding.", color_good_news),
+    (try_end),
+
     (store_skill_level, ":skill_2", skl_spotting, "trp_player"),
-	(neg|ge, ":skill_2", 10),
-	(troop_raise_skill, "trp_player", skl_spotting, 1),
-    (display_log_message, "@Gained permanent +1 to Spotting.", color_good_news),
+    (try_begin),
+	(lt, ":skill_2", 10),
+	  (troop_raise_skill, "trp_player", skl_spotting, 1),
+      (display_log_message, "@Gained permanent +1 to Spotting.", color_good_news),
+    (try_end),
 ]),
 
 
