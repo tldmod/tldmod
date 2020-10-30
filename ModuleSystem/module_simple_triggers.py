@@ -276,7 +276,7 @@ simple_triggers = [
         (store_random_in_range, ":chance", 0, 100), #InVain Reduce reinforcements for centers
         (try_begin),
           (gt, ":garrison_limit", ":garrison_size"),
-          (lt, ":chance", 30),
+          (lt, ":chance", 20),
           (call_script, "script_cf_reinforce_party", ":center_no"),
 		  (str_store_party_name, s1, ":center_no"),
 		  #(display_message, "@{s1} reinforced"),
@@ -536,14 +536,14 @@ simple_triggers = [
           (val_add, ":strength", ":strength_income"),
           (val_add, ":debug_gain", ":strength_income"), #debug
         (try_end),
-        #one more evil handicap: Gondor and Rohan get +10.. cheaters!
+        #one more evil handicap: Gondor and Rohan get +20.. cheaters!
         (try_begin),
           (gt, "$tld_war_began", 0),
           (eq, "$tld_option_regen_rate", 0), #Normal
           (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-          (this_or_next|eq, ":faction_no", "fac_gondor"), #MV: Gondor excluded on player input #InVain: Aaand back in.
+          (this_or_next|eq, ":faction_no", "fac_gondor"),
           (eq, ":faction_no", "fac_rohan"),
-          (val_add, ":strength", 30), #InVain: Was 10, but I just lowered Gondor's strength income from centers by 30. This will put Mordor and Isengard players against a challenge!
+          (val_add, ":strength", 20), #tweakable
         (try_end),
         (val_min, ":strength", fac_str_max), #limit max strength
         (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
@@ -1156,8 +1156,7 @@ simple_triggers = [
 			(try_begin), #trolls eat 30 times as much. Big bastards.
 				(eq, reg1, tf_troll),
 				(val_mul, ":stack_size", 30),
-			(try_end),
-			(try_begin),
+			(else_try),
 			    (eq, reg1, tf_orc),
 				(val_mul, ":stack_size", 3), # GA: orcs eat twice as much, mean little bastards #InVain: Slightly reduce to 1,5, because I added extra consumtion for Warg riders
 				(val_div, ":stack_size", 2),

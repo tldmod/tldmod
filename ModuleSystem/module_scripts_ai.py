@@ -2426,8 +2426,9 @@ ai_scripts = [
          (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
          (try_begin), ## Kham - Lets give Gondor more Hosts - Let's hide it in a menu for testing
             #(eq, "$gondor_ai_testing", 1),
-            (eq, ":faction_no", "fac_gondor"),
-			(lt,":strength", 4000), #InVain: But only in the beginning or if they're in trouble
+            (this_or_next|eq, ":faction_no", "fac_gondor"),
+			(eq, ":faction_no", "fac_rohan"),
+			(lt,":strength", 4500), #InVain: But only in the beginning or if they're in trouble
             (val_div, ":strength", 700), 
             #(display_message, "@Gondor AI Tweaks - Give more hosts"),
          (else_try),
@@ -3238,11 +3239,11 @@ ai_scripts = [
         (party_set_flags, ":party_no", pf_default_behavior, 1),
         (party_set_slot, ":party_no", slot_party_ai_substate, 1),
       (try_end),
-	  # (try_begin),
-		# (eq, cheat_switch, 1),
-		# (str_store_party_name, s1 , ":center_no"),
-		# (display_message, "@{s1} siege attack!"),
-	  # (try_end),
+	  (try_begin),
+		(eq, cheat_switch, 1),
+		(str_store_party_name, s1 , ":center_no"),
+		(display_message, "@{s1} siege attack!"),
+	  (try_end),
 	  
   ]),
 
