@@ -2647,7 +2647,8 @@ simple_triggers = [
 
   
   # (56) TLD Messages about faction strength changes
-  (5,[(try_for_range,":faction",kingdoms_begin,kingdoms_end),
+  (5,[(gt, "$tld_war_began", 0),
+		(try_for_range,":faction",kingdoms_begin,kingdoms_end),
         (faction_get_slot,":strength",":faction",slot_faction_strength),
         (faction_get_slot,":strength_new",":faction",slot_faction_strength_tmp),
         (faction_set_slot,":faction",slot_faction_strength,":strength_new"),

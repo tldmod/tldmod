@@ -1,4 +1,4 @@
-1620
+1623
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -227,6 +227,9 @@ qstr_{s3}_is_no_longer_un {s3}_is_no_longer_under_siege.
 qstr_Enemies_spotted_near Enemies_spotted_near_{s1}.
 qstr_Your_relation_with_{ Your_relation_with_{s1}_has_improved.
 qstr_Your_relation_with_{s Your_relation_with_{s1}_has_deteriorated.
+qstr_{s1}_gained_{reg78}_ {s1}_gained_{reg78}_faction_strength!
+qstr_{s1}_lost_faction_st {s1}_lost_faction_strength!
+qstr_{s1}_gained_faction_ {s1}_gained_faction_strength!
 qstr_{s2}_{reg3?was:is_cu {s2}_{reg3?was:is_currently}_at_{s3}.
 qstr_{s2}_{reg3?was:is}_t {s2}_{reg3?was:is}_travelling_to_{s3}_and_{reg4?she:he}_{reg3?was:should_be}_close_to_{s4}{reg3?:_at_the_moment}.
 qstr_{s2}_{reg3?was:is}_i {s2}_{reg3?was:is}_in_wilderness_and_{reg4?she:he}_{reg3?was:should_be}_close_to_{s3}{reg3?:_at_the_moment}.

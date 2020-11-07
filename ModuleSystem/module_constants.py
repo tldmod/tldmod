@@ -944,6 +944,8 @@ slot_quest_expiration_days          = 23
 slot_quest_dont_give_again_period   = 24
 slot_quest_dont_give_again_remaining_days = 25
 slot_quest_rank_reward              = 26
+slot_quest_giver_fac_str_effect     = 27
+slot_quest_target_fac_str_effect   = 28
 
 
 ########################################################
@@ -1730,7 +1732,7 @@ center_list = [
 	[icon_mfc_gundabad],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_normal),
 (p_town_gundabad_nw_outpost, [scn_gundabad_nw_outpost_center, -1, -1,-1,-1,scn_gundabad_nw_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_no_troop, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_i1_gunda_goblin,trp_i2_gunda_orc,trp_i3_gunda_orc_fighter,trp_c4_gunda_warg_rider], 
-	[icon_mfc_gundabad],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 0, tld_siegable_always),
+	[icon_mfc_gundabad],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
 (p_town_goblin_north_outpost, [scn_goblin_north_outpost_center, -1, -1,-1,-1,scn_goblin_north_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_town_50_weaponsmith, trp_town_50_horse_merchant, trp_village_1_elder, pt_gundabad_recruits, trp_gundabad_lord,trp_i1_gunda_goblin,trp_i2_gunda_orc,trp_i3_gunda_orc_fighter,trp_c4_gunda_warg_rider], 
 	[icon_mfc_gundabad],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_normal),

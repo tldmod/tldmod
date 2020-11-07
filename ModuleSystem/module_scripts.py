@@ -6582,6 +6582,8 @@ scripts = [
         (assign, ":quest_xp_reward", 0),
         (assign, ":quest_gold_reward", 0),
         (assign, ":quest_rank_reward", 0), #TLD
+		(assign, ":quest_giver_fac_str_effect", 0), #TLD
+		(assign, ":quest_target_fac_str_effect", 0), #TLD
         (assign, ":quest_convince_value", 0),
         (assign, ":quest_expiration_days", 0),
         (assign, ":quest_dont_give_again_period", 0),
@@ -6623,6 +6625,10 @@ scripts = [
 			(assign, ":quest_xp_reward", 3000),
 			(assign, ":quest_gold_reward", 1500),
 			(assign, ":quest_rank_reward", 60),
+			(assign, ":quest_object_faction", "fac_lorien"),
+			(assign, ":quest_target_faction", "fac_guldur"),
+			(assign, ":quest_giver_fac_str_effect", 200),
+			(assign, ":quest_target_fac_str_effect", 200),
 			(assign, ":result", ":quest_no"),
 		  (try_end),
 		(else_try),
@@ -6972,6 +6978,7 @@ scripts = [
 			(this_or_next|eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest
 			(eq, ":giver_troop", "trp_guldur_lord"),
 			(ge, ":player_level", 7),
+			(assign, ":quest_object_faction", ":giver_faction_no"),
 			(assign, ":quest_expiration_days", 15),
 			(assign, ":quest_dont_give_again_period", 20),
 			(store_free_inventory_capacity,":tmp"),(gt,":tmp",0), # otherwise,  no room for cage
@@ -6987,6 +6994,7 @@ scripts = [
 		  (try_begin),
 			(gt, ":player_level", 6),
 			(faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
+			(assign, ":quest_object_faction", ":giver_faction_no"),
 			#(faction_slot_eq, ":giver_faction_no", slot_faction_leader, ":giver_troop"),
 			(call_script, "script_cf_select_random_town_with_faction", ":giver_faction_no"),#Can fail
 			(assign, ":cur_object_center", reg0),
@@ -7048,6 +7056,7 @@ scripts = [
           (neq, ":giver_center_no", reg0),
 		  (neq, reg0, "p_town_henneth_annun"),#Skip Henneth Annun
           (assign, ":quest_target_center", reg0),
+		  (store_faction_of_party,":quest_target_faction",":quest_target_center"),
           # (store_random_party_in_range, ":quest_target_center", centers_begin, centers_end),
           # (store_distance_to_party_from_party, ":dist", ":giver_center_no",":quest_target_center"),
           (assign, ":quest_gold_reward", ":cur_target_dist"),
@@ -7059,6 +7068,7 @@ scripts = [
           (val_add, ":quest_xp_reward", 100),
           (store_random_in_range, ":quest_target_amount", 6, 12),
           (store_div, ":quest_rank_reward", ":quest_target_amount", 2),
+		  (assign, ":quest_target_fac_str_effect", 70), 
           #(assign, ":quest_expiration_days", 7),
           (assign, "$escort_merchant_caravan_mode", 0),
           (assign, ":result", ":quest_no"),
@@ -7071,6 +7081,7 @@ scripts = [
           (assign, ":quest_target_center", reg0),
           (assign, ":cur_target_dist", reg1),
           (neq, ":giver_center_no", ":quest_target_center"),
+		  (store_faction_of_party,":quest_target_faction",":quest_target_center"),
           (party_get_slot, ":elder", ":quest_target_center", slot_town_elder),
           (neq, ":elder", "trp_no_troop"), #make sure there is an elder to deliver stuff to
           (gt, ":elder", 0),
@@ -7093,6 +7104,7 @@ scripts = [
           (val_mul, ":quest_gold_reward", 30),
           (store_mul, ":quest_xp_reward", ":quest_gold_reward", 4),
           (store_div, ":quest_rank_reward", ":quest_target_amount", 2),
+		  (assign, ":quest_target_fac_str_effect", 30), 
 		  (assign, ":quest_importance", 4),
           (assign, ":quest_expiration_days", 7),
           (assign, ":quest_dont_give_again_period", 20),
@@ -7100,11 +7112,13 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_troublesome_bandits"),
           (is_between, ":giver_center_no", centers_begin, centers_end),
+		  (store_faction_of_party,":quest_object_faction",":giver_center_no"),
           (store_character_level, ":quest_gold_reward", "trp_player"),
           (val_add, ":quest_gold_reward", 20),
           (val_mul, ":quest_gold_reward", 35),
           (val_div, ":quest_gold_reward",100),
           (val_mul, ":quest_gold_reward", 10),
+		  (assign, ":quest_giver_fac_str_effect", 20),
           (store_mul, ":quest_xp_reward", ":quest_gold_reward", 7),
           (assign, ":quest_rank_reward", 5),
 		  (assign, ":quest_importance", 4),
@@ -7136,6 +7150,7 @@ scripts = [
           (assign, ":cur_target_dist", reg1),
           (neq, ":giver_center_no", reg0),
           (assign, ":quest_target_center", reg0),
+		  (store_faction_of_party,":quest_target_faction",":quest_target_center"),
           #(store_distance_to_party_from_party, ":dist",":giver_center_no",":quest_target_center"),
           (assign, ":quest_gold_reward", ":cur_target_dist"),
           (val_add, ":quest_gold_reward", 25),
@@ -7144,6 +7159,7 @@ scripts = [
           (store_div, ":quest_xp_reward", ":quest_gold_reward", 3),
           (store_mul, ":quest_rank_reward", ":cur_target_dist", 8),
           (val_div, ":quest_rank_reward", tld_max_quest_distance),
+		  (assign, ":quest_target_fac_str_effect", 70),
           (assign, ":quest_importance", 8),
           (assign, ":quest_expiration_days", 20),
           (assign, ":quest_dont_give_again_period", 20),
@@ -7177,9 +7193,11 @@ scripts = [
           (quest_set_slot,"qst_deal_with_looters",slot_quest_current_state,0),
           #(quest_set_slot,"$random_merchant_quest_no",slot_quest_target_party_template,"pt_looters"),
 		  (assign, ":quest_target_center", ":giver_center_no"),
+		  (store_faction_of_party,":quest_object_faction",":quest_target_center"),
           (assign, ":quest_gold_reward", 500),
           (assign, ":quest_xp_reward", 500),
           (assign, ":quest_rank_reward", 6),
+		  (assign, ":quest_giver_fac_str_effect", 20),
           (assign, ":quest_importance", 2),
           (assign, ":quest_expiration_days", 20),
           (assign, ":quest_dont_give_again_period", 30),
@@ -7192,9 +7210,11 @@ scripts = [
           (party_set_slot, ":giver_center_no", slot_center_has_bandits, "trp_mountain_goblin"), #TLD: goblins
           #(party_slot_ge, ":giver_center_no", slot_center_has_bandits, 1),
           (assign, ":quest_target_center", ":giver_center_no"),
+		  (store_faction_of_party,":quest_object_faction",":quest_target_center"),
           (assign, ":quest_gold_reward", 150),
           (assign, ":quest_xp_reward", 200),
           (assign, ":quest_rank_reward", 2),
+		  (assign, ":quest_giver_fac_str_effect", 10),
           (assign, ":quest_importance", 2),
           (assign, ":quest_expiration_days", 4),
           (assign, ":quest_dont_give_again_period", 15),
@@ -7226,11 +7246,14 @@ scripts = [
             (troop_sort_inventory, ":center_merchant"),
           (try_end),
           (assign, ":quest_target_center", ":giver_center_no"),
+		  (store_faction_of_party,":quest_object_faction",":quest_target_center"),
           (store_item_value, ":item_value", ":quest_target_item"),
-          (val_mul, ":item_value", 2), #2x profit
+          (val_mul, ":item_value", 3),
+		  (val_div, ":item_value", 2), #1.5x profit
           (store_mul, ":quest_gold_reward", ":quest_target_amount", ":item_value"),
           (store_mul, ":quest_xp_reward", ":quest_target_amount", 20),
           (store_div, ":quest_rank_reward", ":quest_target_amount", 2), #1-3
+		  (assign, ":quest_giver_fac_str_effect", 40),
           (assign, ":quest_expiration_days", 20),
           (assign, ":quest_dont_give_again_period", 15),
           (assign, ":result", ":quest_no"),
@@ -7248,10 +7271,12 @@ scripts = [
              (troop_sort_inventory, ":center_merchant"),
            (try_end),
            (assign, ":quest_target_center", ":giver_center_no"),
+		   (store_faction_of_party,":quest_object_faction",":quest_target_center"),
            (assign, ":item_value", 80), # an average
            (store_mul, ":quest_gold_reward", ":quest_target_amount", ":item_value"),
            (store_mul, ":quest_xp_reward", ":quest_target_amount", 20),
            (store_div, ":quest_rank_reward", ":quest_target_amount", 3), #1-3
+		   (assign, ":quest_giver_fac_str_effect", 40),
            (assign, ":quest_expiration_days", 10),
            (assign, ":quest_dont_give_again_period", 15),
            (assign, ":result", ":quest_no"),
@@ -7269,7 +7294,8 @@ scripts = [
 				
 				(assign, ":quest_object_center", reg55),
 				(assign, ":quest_target_amount", reg56),	
-				(assign, ":quest_target_center", reg57),	
+				(assign, ":quest_target_center", reg57),
+				(store_faction_of_party,":quest_object_faction",":quest_target_center"),				
 				(assign, ":quest_importance", reg58),	
 				(assign, ":quest_xp_reward", reg59),					
 				(assign, ":quest_gold_reward", reg60),					
@@ -7367,6 +7393,7 @@ scripts = [
 			(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
 			
             (assign, ":quest_target_center", ":cur_target_center"),
+			(store_faction_of_party,":quest_target_faction",":quest_target_center"),
             (assign, ":quest_target_troop", ":cur_target_troop"),
             #(assign, ":quest_xp_reward", 30), #TLD: changed to 30-50
             (store_mul, ":quest_xp_reward", 20, ":cur_target_dist"),
@@ -7430,6 +7457,7 @@ scripts = [
 
             (assign, ":quest_object_troop", ":cur_object_troop"),
             (assign, ":quest_target_center", ":cur_target_center"),
+			(store_faction_of_party,":quest_target_faction",":quest_target_center"),
             (assign, ":quest_expiration_days", 20),
             (assign, ":quest_dont_give_again_period", 30),
             (assign, ":result", ":quest_no"),
@@ -7659,6 +7687,7 @@ scripts = [
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 120),
             (assign, ":quest_dont_give_again_period", 15),
+			(assign, ":quest_object_faction", ":giver_faction_no"),
 
           (try_end),
         # (else_try),
@@ -7707,6 +7736,8 @@ scripts = [
             (assign, ":quest_target_center", reg0),
             #(assign, ":quest_target_dist", reg1),
             (neq, ":quest_target_center", ":giver_center_no"),
+			(store_faction_of_party,":quest_target_faction",":quest_target_center"),
+			(store_faction_of_party,":quest_object_faction",":giver_center_no"),
             
             (assign, ":quest_importance", 4),
             (assign, ":quest_gold_reward", 300),
@@ -7772,7 +7803,9 @@ scripts = [
             (ge, ":dist", 20),
             (assign, ":quest_target_party_template", "pt_runaway_serfs"),
             (assign, ":quest_object_center", ":cur_object_center"),
+			(store_faction_of_party,":quest_object_faction",":quest_object_center"),
             (assign, ":quest_target_center", ":cur_target_center"),
+			(store_faction_of_party,":quest_target_faction",":quest_target_center"),
             (assign, ":quest_importance", 8),
             (assign, ":quest_xp_reward", 300),
             (assign, ":quest_gold_reward", 600),
@@ -8119,6 +8152,7 @@ scripts = [
             (val_mul, ":quest_xp_reward", 5),
             (val_div, ":quest_xp_reward", 7),
             (assign, ":quest_rank_reward", ":quest_target_amount"),
+			(assign, ":quest_object_faction", ":giver_faction_no"),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 90),
             (assign, ":quest_dont_give_again_period", 20),
@@ -8138,6 +8172,7 @@ scripts = [
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 60),
             (assign, ":quest_dont_give_again_period", 20),
+			(assign, ":quest_object_faction", ":giver_faction_no"),
           (try_end),
         (else_try),
           (eq, ":quest_no", "qst_scout_enemy_town"),
@@ -8188,6 +8223,7 @@ scripts = [
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 15),
             (assign, ":quest_dont_give_again_period", 20),
+			(assign, ":quest_object_faction", ":giver_faction_no"),
           (try_end),
         (else_try),
           (eq, ":quest_no", "qst_eliminate_patrols"),
@@ -8197,6 +8233,7 @@ scripts = [
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":quest_target_center", reg0),
             (store_faction_of_party, ":quest_target_faction", ":quest_target_center"), #Kham - keep track of faction to check if it is active/inactive
+			(assign, ":quest_object_faction", ":giver_faction_no"),
             #(assign, ":dist", reg1),
             #find a random enemy scout/raider/patrol/caravan spawned in the enemy center
             (party_get_slot, ":center_scouts", ":quest_target_center", slot_center_spawn_scouts),
@@ -8281,6 +8318,8 @@ scripts = [
         (quest_set_slot, ":result", slot_quest_xp_reward, ":quest_xp_reward"),
         (quest_set_slot, ":result", slot_quest_gold_reward, ":quest_gold_reward"),
         (quest_set_slot, ":result", slot_quest_rank_reward, ":quest_rank_reward"),
+		(quest_set_slot, ":result", slot_quest_giver_fac_str_effect, ":quest_giver_fac_str_effect"),
+		(quest_set_slot, ":result", slot_quest_target_fac_str_effect, ":quest_target_fac_str_effect"),
         (quest_set_slot, ":result", slot_quest_convince_value, ":quest_convince_value"),
         (quest_set_slot, ":result", slot_quest_expiration_days, ":quest_expiration_days"),
         (quest_set_slot, ":result", slot_quest_dont_give_again_period, ":quest_dont_give_again_period"),
@@ -10329,11 +10368,14 @@ scripts = [
       
       (quest_get_slot, ":quest_giver", ":quest_no", slot_quest_giver_troop),
       (store_troop_faction, ":quest_faction", ":quest_giver"),
+	  (quest_get_slot, ":quest_target_faction", ":quest_no", slot_quest_target_faction),
       (quest_get_slot, ":quest_giver_center", ":quest_no", slot_quest_giver_center),
       (quest_get_slot, ":quest_importance", ":quest_no", slot_quest_importance),
       (quest_get_slot, ":quest_xp_reward", ":quest_no", slot_quest_xp_reward),
       (quest_get_slot, ":quest_gold_reward", ":quest_no", slot_quest_gold_reward),
       (quest_get_slot, ":quest_rank_reward", ":quest_no", slot_quest_rank_reward),
+	  (quest_get_slot, ":quest_giver_fac_str_effect", ":quest_no", slot_quest_giver_fac_str_effect),
+	  (quest_get_slot, ":quest_target_fac_str_effect", ":quest_no", slot_quest_target_fac_str_effect),
       
       #Exceptions
       (try_begin),
@@ -10349,6 +10391,10 @@ scripts = [
         (val_div, ":quest_gold_reward", 100),
         (val_mul, ":quest_rank_reward", ":finish_percentage"),
         (val_div, ":quest_rank_reward", 100),
+		(val_mul, ":quest_giver_fac_str_effect", ":finish_percentage"),
+        (val_div, ":quest_giver_fac_str_effect", 100),
+		(val_mul, ":quest_target_fac_str_effect", ":finish_percentage"),
+        (val_div, ":quest_target_fac_str_effect", 100),
         #Changing the relation factor. Negative relation if less than 75% of the quest is finished.
         #Positive relation if more than 75% of the quest is finished.
         (assign, ":importance_multiplier", ":finish_percentage"),
@@ -10385,6 +10431,35 @@ scripts = [
       (call_script, "script_add_faction_rps", ":quest_faction", ":quest_gold_reward"),
       (call_script, "script_increase_rank", ":quest_faction", ":quest_rank_reward"),
       (call_script, "script_end_quest", ":quest_no"),
+	  
+	#execute faction strength consequences, negative outcomes defined in script_abort_quest
+	(try_begin),
+		(ge, ":quest_giver_fac_str_effect", 1),
+		(faction_get_slot,":giver_strength",":quest_faction",slot_faction_strength_tmp),
+		(assign, reg78, ":quest_giver_fac_str_effect"),
+		(val_add, ":giver_strength", ":quest_giver_fac_str_effect"),
+		(faction_set_slot,":quest_faction",slot_faction_strength_tmp,":giver_strength"),
+		(str_store_faction_name, s1, ":quest_faction"),
+		(display_message, "@{s1} gained {reg78} faction strength!", color_good_news),
+	(try_end),
+	  
+	(try_begin),
+		(is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
+		(lt, ":quest_target_fac_str_effect", 0), #negative strength effect if enemy faction is target
+		(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
+		(val_add, ":enemy_strength", ":quest_target_fac_str_effect"),
+	    (faction_set_slot,":quest_faction",slot_faction_strength_tmp,":enemy_strength"),
+		(str_store_faction_name, s1, ":quest_target_faction"),
+		(display_message, "@{s1} lost faction strength!", color_good_news),
+	(else_try), #if target faction is an ally (e.g. escort caravan quest)
+		(is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
+		(gt, ":quest_target_fac_str_effect", 0), #positive strength effect for allied targets (eg caravan quests)
+		(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
+		(val_add, ":enemy_strength", ":quest_target_fac_str_effect"),
+	    (faction_set_slot,":quest_faction",slot_faction_strength_tmp,":enemy_strength"),
+		(str_store_faction_name, s1, ":quest_target_faction"),
+		(display_message, "@{s1} gained faction strength!", color_good_news),
+	(try_end),
 ]),
 
 # script_get_information_about_troops_position
@@ -12273,6 +12348,14 @@ scripts = [
       (store_script_param_2, ":abort_type"), #0=aborted by event, 1=abort by talking 2=abort by expire
       (assign, ":quest_return_penalty", -1),
       (assign, ":quest_expire_penalty", -2),
+	  
+	  (quest_get_slot, ":quest_giver", ":quest_no", slot_quest_giver_troop),
+      (store_troop_faction, ":quest_faction", ":quest_giver"),
+	  (quest_get_slot, ":quest_target_faction", ":quest_no", slot_quest_target_faction),
+	  (quest_get_slot, ":quest_giver_fac_str_effect", ":quest_no", slot_quest_giver_fac_str_effect),
+	  (val_div, ":quest_giver_fac_str_effect", 2),
+	  (quest_get_slot, ":quest_target_fac_str_effect", ":quest_no", slot_quest_target_fac_str_effect),
+	  (val_div, ":quest_target_fac_str_effect", 2),
       
 #      (quest_get_slot, ":quest_object_troop", ":quest_no", slot_quest_object_troop),
       (try_begin),
@@ -12535,6 +12618,36 @@ scripts = [
       (try_end),
       (try_begin),
         (gt, ":abort_type", 0),
+		
+		#execute faction strength consequences, positive outcomes defined in script_finish_quest
+		(try_begin),
+			(ge, ":quest_giver_fac_str_effect", 1),
+			(faction_get_slot,":giver_strength",":quest_faction",slot_faction_strength_tmp),
+			(val_sub, ":giver_strength", ":quest_giver_fac_str_effect"),
+			(faction_set_slot,":quest_faction",slot_faction_strength_tmp,":giver_strength"),
+			(str_store_faction_name, s1, ":quest_faction"),
+			(display_message, "@{s1} lost faction strength!", color_bad_news),
+		(try_end),
+	  
+		(try_begin),
+			(is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
+			(lt, ":quest_target_fac_str_effect", 0), #negative strength effect if enemy faction is target...
+			(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
+			(val_sub, ":enemy_strength", ":quest_target_fac_str_effect"), #...becomes positive if quest fails
+			(faction_set_slot,":quest_faction",slot_faction_strength_tmp,":enemy_strength"),
+			(str_store_faction_name, s1, ":quest_target_faction"),
+			(display_message, "@{s1} gained faction strength!", color_bad_news),
+		(else_try), #if target faction is an ally (e.g. escort caravan quest)
+			(is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
+			(gt, ":quest_target_fac_str_effect", 0), #positive strength effect for allied targets (eg caravan quests)...
+			(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
+			(val_sub, ":enemy_strength", ":quest_target_fac_str_effect"), #... becomes negative is quest fails
+			(faction_set_slot,":quest_faction",slot_faction_strength_tmp,":enemy_strength"),
+			(str_store_faction_name, s1, ":quest_target_faction"),
+			(display_message, "@{s1} lost faction strength!", color_bad_news),
+		(try_end),
+		
+		#execute relation penalties
         (quest_get_slot, ":quest_giver", ":quest_no", slot_quest_giver_troop),
         (assign, ":relation_penalty", ":quest_return_penalty"),
         (try_begin),
