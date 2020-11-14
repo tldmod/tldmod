@@ -454,6 +454,8 @@ simple_triggers = [
         (party_get_slot, ":center_lord", ":center_no", slot_town_lord),
         (neq, ":center_lord", "trp_player"),
         (party_upgrade_with_xp, ":center_no", 3000),
+		(party_slot_eq, ":center_no", slot_center_siegability, tld_siegable_capital),
+		(party_upgrade_with_xp, ":center_no", 1500), #capitals get a bonus
       (try_end),
   ]),
   
