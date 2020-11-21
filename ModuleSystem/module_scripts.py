@@ -7096,7 +7096,8 @@ scripts = [
           # (else_try),
           (assign, ":quest_target_item", "itm_siege_supply"), #TLD
           # (try_end),
-          (store_random_in_range, ":quest_target_amount", -2, 4),
+          (store_random_in_range, ":quest_target_amount", 4, 8),
+		  (val_div, ":player_level", 2),
 		  (val_add, ":quest_target_amount", ":player_level"),
 		  (val_clamp, ":quest_target_amount", 4, 30),
           #(store_distance_to_party_from_party, ":dist", ":giver_center_no",":quest_target_center"),

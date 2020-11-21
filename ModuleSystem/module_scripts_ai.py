@@ -1643,6 +1643,7 @@ ai_scripts = [
 
           (assign, ":our_estimated_str", ":our_follower_strength"),
           (val_add, ":our_estimated_str", ":our_strength"),
+		  (val_max, ":our_estimated_str", 1), #InVain: Avoid potential division by zero errors
 
           (assign, ":old_target_besiege_enemy_center", -1),
           (try_begin),
