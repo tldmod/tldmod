@@ -1146,7 +1146,7 @@ game_menus = [
 		#(assign, "$g_player_troop", "$testbattle_team_a_troop"),
 		#(set_player_troop, "$g_player_troop"),
 	   (call_script, "script_get_hp_shield_value", "trp_mordor_olog_hai"),
-	   (assign, "$g_player_troop", "trp_knight_3_6"),
+	   (assign, "$g_player_troop", "$testbattle_team_a_troop"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),

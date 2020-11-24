@@ -233,7 +233,7 @@ scenes = [
 ("erebor_dungeon_01",sf_indoors,"dungeon_a","bo_dungeon_a",(-100,-100),(100,100),-100,"0",[],[]),
 
 ("thranduil_hall_room"     ,sf_indoors|sf_force_skybox,"thranduil_hall", "bo_thranduil_hall", (-100,-100),(100,100),-100,"0",[],["player_chest"]),
-("random_scene_parade"  ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_forest"),#GA, faction troops parade (custom battle)
+("random_scene_parade"  ,sf_generate,"none","none",(0,0),(220,220),-0.5,"0x00000002362011800004411a00003efe00004b34000059be",[],[],"outer_terrain_forest"),#GA, faction troops parade (custom battle)
 
 ("beorn_castle",sf_indoors,"lofotrinterior2","bo_lofotrinterior2",(-100,-100),(100,100),-100,"0",[],["player_chest"]),
 ("moria_castle",sf_indoors|sf_muddy_water,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]), #unused

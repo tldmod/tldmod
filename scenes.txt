@@ -620,7 +620,7 @@ scn_thranduil_hall_room thranduil_hall_room 3 thranduil_hall bo_thranduil_hall -
   0 
   1  833 
  0 
-scn_random_scene_parade random_scene_parade 768 none none 0 0 220 220 -0.5 0x000000023c602800000691a400003efe00004b34000059be 
+scn_random_scene_parade random_scene_parade 256 none none 0 0 220 220 -0.5 0x00000002362011800004411a00003efe00004b34000059be 
   0 
   0 
  outer_terrain_forest 

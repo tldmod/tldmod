@@ -7561,9 +7561,9 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
 ] + (is_a_wb_dialog and [
 #Kham - Alternate Training
 [anyone|plyr,"lord_mission_raise_troops_told", [(quest_get_slot, reg1, "$random_quest_no", slot_quest_target_amount), (val_div, reg1, 2), (val_max, reg1, 2),],
-"I suggest another method, {s65}. I'll take {reg1} fresh recruits to the arena teach them a thing or two...", "lord_mission_raise_troops_alternate_1",[]],
+"I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...", "lord_mission_raise_troops_alternate_1",[]],
 [anyone|plyr,"lord_mission_raise_troops_alternate_1", [(quest_get_slot, reg1, "$random_quest_no", slot_quest_target_amount), (val_div, reg1, 2), (val_max, reg1, 2),],
-"I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the arena teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.", "lord_mission_raise_troops_alternate",[]],
+"I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.", "lord_mission_raise_troops_alternate",[]],
 ] or []) + [ 
 
 [anyone|plyr,"lord_mission_raise_troops_told", [], "I am too busy these days to train anyone.", "lord_mission_raise_troops_rejected",[]],
@@ -7589,7 +7589,7 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
 
 [anyone,"lord_mission_raise_troops_alternate", [], 
 "This is an interesting proposal, {playername}.\
- I shall tell my sergeants to send the recruits to the arena.\
+ I shall tell my sergeants to send the recruits to the training field.\
  Follow them there, and whip them up to shape. I will be watching.\
  Thank you for your help.", "close_window",
    [(call_script,"script_stand_back"),
