@@ -3489,8 +3489,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
                          (ge, ":item_count", reg13),
                          (str_store_item_name, s4, ":quest_target_item")], 
 "Ah, {playername}. I am pleased that you delivered {reg13} units of {s4}, as I requested. I'm impressed.", "lord_deliver_cattle_to_army_thank",
-   [ (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
-     (quest_get_slot, ":quest_target_item", "qst_deliver_cattle_to_army", slot_quest_target_item),
+   [ (quest_get_slot, ":quest_target_item", "qst_deliver_cattle_to_army", slot_quest_target_item),
      (quest_get_slot, ":quest_target_amount", "qst_deliver_cattle_to_army", slot_quest_target_amount),
      (troop_remove_items, "trp_player", ":quest_target_item", ":quest_target_amount"),
      (store_item_value, ":item_value", ":quest_target_item"),
@@ -3500,8 +3499,11 @@ How could I expect someone like {playername} to be up to the challenge. My serva
      (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":reward"),
      (val_div, ":reward", 5),
      (add_xp_as_reward, ":reward"),
-     (call_script, "script_increase_rank", "$g_talk_troop_faction", 8),
+	 (store_mul, ":rank_reward", ":quest_target_amount", 2),
+     (call_script, "script_increase_rank", "$g_talk_troop_faction", ":rank_reward"),
      (call_script, "script_end_quest", "qst_deliver_cattle_to_army"),
+	 (store_div, ":relation", ":quest_target_amount", 2),
+	 (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", ":relation"),
      #Reactivating follow army quest
      (str_store_troop_name_link, s9, "$g_talk_troop"),
      (setup_quest_text, "qst_follow_army"),
@@ -3520,10 +3522,10 @@ How could I expect someone like {playername} to be up to the challenge. My serva
                          (str_store_party_name, s15, "$qst_scout_waypoints_wp_3")], 
 "You make a good scout, {playername}. My runner just brought me your reports of the mission to {s13}, {s14} and {s15}. Well done.", "lord_scout_waypoints_thank",
    [ #TODO: Change reward
-     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),
+     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 4),
 #     (call_script, "script_troop_add_gold", "trp_player", 100),
      (add_xp_as_reward, 100),
-     (call_script, "script_increase_rank", "$g_talk_troop_faction", 6),
+     (call_script, "script_increase_rank", "$g_talk_troop_faction", 10),
      (call_script, "script_end_quest", "qst_scout_waypoints"),
      #Reactivating follow army quest
      (str_store_troop_name_link, s9, "$g_talk_troop"),
@@ -3599,11 +3601,13 @@ How could I expect someone like {playername} to be up to the challenge. My serva
   ], 
   "Excellent. I will send the word when I have a task for you. {s3}", "close_window",[
      (call_script,"script_stand_back"),
-     (call_script, "script_increase_rank", "$g_talk_troop_faction", 1),
+	 (call_script, "script_party_calculate_strength", "p_main_party"),
+	 (store_div, ":rank_reward", reg0, 100),
+     (call_script, "script_increase_rank", "$g_talk_troop_faction", ":rank_reward"),
+	 (store_div, ":relation_reward", ":rank_reward", 2),
+     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", ":relation_reward"),
      (call_script, "script_end_quest", "qst_report_to_army"),
      (quest_set_slot, "qst_report_to_army", slot_quest_giver_troop, "$g_talk_troop"),
-     #TODO: Change this value
-     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
      #Activating follow army quest
      (str_store_troop_name_link, s9, "$g_talk_troop"),
      (setup_quest_text, "qst_follow_army"),

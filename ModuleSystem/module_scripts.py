@@ -10071,6 +10071,8 @@ scripts = [
        (val_mul, ":xp_reward", 50),
        (val_add, ":xp_reward", 50),
        (add_xp_as_reward, ":xp_reward"),
+	   (store_div, ":rank_reward", ":xp_reward", 10),
+	   (call_script, "script_increase_rank", ":faction_no", ":rank_reward"),
      (try_end),
 ]),
 
