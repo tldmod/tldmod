@@ -6753,7 +6753,7 @@ game_menus = [
              (check_quest_active, "qst_join_siege_with_army"),
              (quest_slot_eq, "qst_join_siege_with_army", slot_quest_target_center, "$g_encountered_party"),
              (add_xp_as_reward, 250),
-			 (call_script, "script_party_calculate_strength", "p_main_party"),
+			 (call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
 			 (store_div, ":rank_reward", reg0, 100),
 			 (call_script, "script_increase_rank", "$players_kingdom", ":rank_reward"),
 			 (faction_get_slot, ":faction_marshall", "$players_kingdom", slot_faction_marshall),
@@ -6809,7 +6809,7 @@ game_menus = [
            (check_quest_active, "qst_join_siege_with_army"),
            (quest_slot_eq, "qst_join_siege_with_army", slot_quest_target_center, "$g_encountered_party"),
            (add_xp_as_reward, 250),
-			(call_script, "script_party_calculate_strength", "p_main_party"),
+			(call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
 			(store_div, ":rank_reward", reg0, 100),
 			(call_script, "script_increase_rank", "$players_kingdom", ":rank_reward"),
 			(faction_get_slot, ":faction_marshall", "$players_kingdom", slot_faction_marshall),

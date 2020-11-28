@@ -3601,7 +3601,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
   ], 
   "Excellent. I will send the word when I have a task for you. {s3}", "close_window",[
      (call_script,"script_stand_back"),
-	 (call_script, "script_party_calculate_strength", "p_main_party"),
+	 (call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
 	 (store_div, ":rank_reward", reg0, 100),
      (call_script, "script_increase_rank", "$g_talk_troop_faction", ":rank_reward"),
 	 (store_div, ":relation_reward", ":rank_reward", 2),
@@ -3889,7 +3889,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #[anyone,"hero_pretalk", [], "Anything else?", "lord_talk",[]],
 
 ##### TODO: QUESTS COMMENT OUT BEGIN
-
+[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Increase Relation", "lord_pretalk",[(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),]],
 [anyone|plyr,"lord_talk",[#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                             (check_quest_active,"qst_lend_companion"),
@@ -5217,6 +5217,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    ], "I would hardly take advice if you are merely {s25}, {playername}. I would have been more inclined to listen if you were {s24}, but you are not.", "lord_pretalk",[]],
 [anyone, "marshall_ask", [ #insufficient influence
      (assign, ":siege_command_cost", tld_command_cost_siege),
+	 (store_mul, ":relation_modifier", "$g_talk_troop_relation", ":siege_command_cost"), #reduce influence cost with relation
+	 (val_div, ":relation_modifier", 160),
+	 (val_sub, ":siege_command_cost", ":relation_modifier"),
      (try_begin),
        (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
        (val_mul, ":siege_command_cost", 2),
@@ -5321,6 +5324,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone, "player_siege_discuss_1a", [
   (store_add, reg3, tld_player_siege_resp_cost,0),
   (assign, ":siege_command_cost", tld_command_cost_siege),
+  (store_mul, ":relation_modifier", "$g_talk_troop_relation", ":siege_command_cost"), #reduce influence cost with relation
+  (val_div, ":relation_modifier", 160),
+  (val_sub, ":siege_command_cost", ":relation_modifier"),
      (try_begin),
        (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
        (val_mul, ":siege_command_cost", 2),
@@ -5415,6 +5421,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   [
   (call_script, "script_add_faction_rps", "$g_talk_troop_faction", -tld_player_siege_resp_cost),
   (assign, ":siege_command_cost", tld_command_cost_siege),
+  (store_mul, ":relation_modifier", "$g_talk_troop_relation", ":siege_command_cost"), #reduce influence cost with relation
+  (val_div, ":relation_modifier", 160),
+  (val_sub, ":siege_command_cost", ":relation_modifier"),
      (try_begin),
        (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
        (val_mul, ":siege_command_cost", 2),
@@ -5462,6 +5471,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
      #deduct influence cost
      (assign, ":siege_command_cost", tld_command_cost_siege),
+	 (store_mul, ":relation_modifier", "$g_talk_troop_relation", ":siege_command_cost"), #reduce influence cost with relation
+	 (val_div, ":relation_modifier", 160),
+	 (val_sub, ":siege_command_cost", ":relation_modifier"),
      (try_begin),
        (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
        (val_mul, ":siege_command_cost", 2),
@@ -5635,6 +5647,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_marshall, "$g_talk_troop"), #can't give orders to marshalls
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
      (assign, ":min_command_cost", tld_command_cost_goto),
+	 (store_mul, ":relation_modifier", "$g_talk_troop_relation", ":min_command_cost"), #reduce influence cost with relation
+	 (val_div, ":relation_modifier", 130),
+	 (val_sub, ":min_command_cost", ":relation_modifier"),
      (try_begin),
        (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
        (val_mul, ":min_command_cost", 2),
@@ -5669,6 +5684,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr,"lord_give_order", [
     (assign, "$temp_action_cost", tld_command_cost_follow),
+	(store_mul, ":relation_modifier", "$g_talk_troop_relation", "$temp_action_cost"), #reduce influence cost with relation
+	 (val_div, ":relation_modifier", 130),
+	 (val_sub, "$temp_action_cost", ":relation_modifier"),
     (try_begin),
       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
       (val_mul, "$temp_action_cost", 2),
@@ -5689,6 +5707,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr,"lord_give_order", [
     (assign, "$temp_action_cost", tld_command_cost_goto),
+	(store_mul, ":relation_modifier", "$g_talk_troop_relation", "$temp_action_cost"), #reduce influence cost with relation
+	 (val_div, ":relation_modifier", 130),
+	 (val_sub, "$temp_action_cost", ":relation_modifier"),
     (try_begin),
       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
       (val_mul, "$temp_action_cost", 2),
@@ -5714,6 +5735,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr,"lord_give_order", [
     (assign, "$temp_action_cost", tld_command_cost_patrol),
+	(store_mul, ":relation_modifier", "$g_talk_troop_relation", "$temp_action_cost"), #reduce influence cost with relation
+	 (val_div, ":relation_modifier", 130),
+	 (val_sub, "$temp_action_cost", ":relation_modifier"),
     (try_begin),
       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
       (val_mul, "$temp_action_cost", 2),
@@ -5733,6 +5757,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr,"lord_give_order", [
     (assign, "$temp_action_cost", tld_command_cost_engage),
+	(store_mul, ":relation_modifier", "$g_talk_troop_relation", "$temp_action_cost"), #reduce influence cost with relation
+	 (val_div, ":relation_modifier", 130),
+	 (val_sub, "$temp_action_cost", ":relation_modifier"),
     (try_begin),
       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
       (val_mul, "$temp_action_cost", 2),
@@ -5820,6 +5847,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (store_add, ":obey_until_time", ":cur_time", 5*24), # commands last 5 days
   (troop_get_slot, ":party_no", "$g_talk_troop", slot_troop_leaded_party),
   (party_set_slot, ":party_no", slot_party_follow_player_until_time, ":obey_until_time"), #no lord ai changes until this time
+  (store_mul, ":relation_modifier", "$g_talk_troop_relation", "$tld_action_cost"), #reduce influence cost with relation
+  (val_div, ":relation_modifier", 130),
+  (val_sub, "$tld_action_cost", ":relation_modifier"),
   (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
   (try_begin),
     (eq, cheat_switch, 1),
@@ -5940,6 +5970,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (store_add, ":obey_until_time", ":cur_time", 5*24), # commands last 5 days
      (troop_get_slot, ":party_no", "$g_talk_troop", slot_troop_leaded_party),
      (party_set_slot, ":party_no", slot_party_follow_player_until_time, ":obey_until_time"), #no lord ai changes until this time
+	 (store_mul, ":relation_modifier", "$g_talk_troop_relation", "$tld_action_cost"), #reduce influence cost with relation
+	 (val_div, ":relation_modifier", 130),
+	 (val_sub, "$tld_action_cost", ":relation_modifier"),
      (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
   (try_begin),
     (eq, cheat_switch, 1),

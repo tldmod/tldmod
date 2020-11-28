@@ -1350,9 +1350,8 @@ fac_str_weak = 3000 # lesser or equal to this can only defend (state "weakened" 
 fac_str_ok = 3500 # lesser or equal can attack around enemy centers, higher can siege #Kham - Changed from 4000
 fac_str_max = 8000
 
-fac_str_guardian = 1700 # was: 1000 # less than this, spawn the guardian party
+fac_str_guardian = 1300 # was: 1000 # less than this, spawn the guardian party
 
-# Kham - Increased Beorn + Moria Fac Strength by 500
 # faction ,	initial strength,culture,			faction lord,  	faction marshall,  [5 tiers of troops],			T2							t3								t4									t5									archer								troll				[reinforcement templates, prisoner trains],                                       main banner,  map party banner, [slot_faction: deserter_troop, guard_troop,				messenger_troop, 					prison_guard_troop, 				castle_guard_troop]					faction capital         side              home theater, advance camp
 faction_init = [
 (fac_gondor  ,4400,mtf_culture_gondor       ,[trp_gondor_lord  ,trp_knight_1_3    ],[trp_i1_gon_levy,     		trp_i2_gon_watchman,		trp_i3_gon_footman,       		trp_i4_gon_swordsman,          		trp_c5_gon_vet_knight, 				trp_a4_gon_archer, 								 -1],	[pt_gondor_reinf_a,  pt_gondor_reinf_b,  pt_gondor_reinf_c,  pt_gondor_p_train],  spr_banner_a, icon_mfp_gondor,  [-1,                      trp_i2_gon_watchman,        	trp_a4_ithilien_ranger,       		trp_i4_gon_swordsman,				trp_i6_gon_tower_swordsman],		p_town_minas_tirith,    faction_side_good,theater_SE,p_advcamp_gondor),
