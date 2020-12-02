@@ -5240,6 +5240,34 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #   ], "We are on a campaign, {playername}, your advice would have to wait.", "lord_pretalk",[]],
 [anyone, "marshall_ask", [], "I'm listening, {playername}. What do you suggest?", "marshall_suggest",[]],
 
+#Suggest to attack besieged center ASAP - Kham
+[anyone|plyr,"marshall_suggest", [
+    (party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_besieging_center),
+    (party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+    (party_slot_eq, ":ai_object", slot_center_is_besieged_by, "$g_talk_troop_party"),
+    (str_store_party_name, s11, ":ai_object"),
+
+    (assign, "$temp_action_cost", tld_command_cost_engage), #25,
+	(store_mul, ":relation_modifier", "$g_talk_troop_relation", "$temp_action_cost"), #reduce influence cost with relation
+	(val_div, ":relation_modifier", 160),
+	(val_sub, "$temp_action_cost", ":relation_modifier"),
+    (try_begin),
+      (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+      (val_mul, "$temp_action_cost", 2),
+      (val_div, "$temp_action_cost", 3), # 16 for tld_command_cost_engage=25
+    (try_end),
+    (assign, reg1, "$temp_action_cost"),
+    (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+    (ge, reg2, "$temp_action_cost"),
+  ],
+ "Together, you and I can take {s11}. You should assault immediately... [Costs {reg1}/{reg2} influence]", "lord_give_order_assault",
+[ (assign, "$tld_action_cost", tld_command_cost_engage),
+  (try_begin),
+    (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+    (val_mul, "$tld_action_cost", 2),
+    (val_div, "$tld_action_cost", 3),
+  (try_end)]],  
+
 ##Kham - Player initiated sieges BEGIN
 [anyone|plyr, "marshall_suggest", [
   (try_begin),
@@ -5480,8 +5508,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
        (val_div, ":siege_command_cost", 3), # 33 for tld_command_cost_siege=50
      (try_end),
      (call_script, "script_spend_influence_of", ":siege_command_cost", "$g_talk_troop_faction"),
-     
+
      (str_store_party_name, s4, ":siege_target"),    
+	 (call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1),
    ]],
 
 # TLD: Accept a delivered gift (CppCoder)
@@ -5656,26 +5685,30 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
        (val_div, ":min_command_cost", 3), # min_command_cost is 3 now (for tld_command_cost_goto=5)
      (try_end),
      (ge, ":influence", ":min_command_cost"), #the lowest cost among the actions below
-     # check if traits are needed
-     (assign, ":trait_check_passed", 1),
-     (try_begin),
-       (eq, "$g_talk_troop_faction", "fac_gondor"),
-       (troop_slot_eq, "trp_traits", slot_trait_gondor_friend, 0),
-       (assign, ":trait_check_passed", 0),
-     (try_end),
-     (try_begin),
-       (eq, "$g_talk_troop_faction", "fac_rohan"),
-       (troop_slot_eq, "trp_traits", slot_trait_rohan_friend, 0),
-       (assign, ":trait_check_passed", 0),
-     (try_end),
-     (try_begin),
-       (this_or_next|eq, "$g_talk_troop_faction", "fac_lorien"),
-       (this_or_next|eq, "$g_talk_troop_faction", "fac_imladris"),
-       (eq, "$g_talk_troop_faction", "fac_woodelf"),
-       (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 0),
-       (assign, ":trait_check_passed", 0),
-     (try_end),
-     (eq, ":trait_check_passed", 1),
+	 (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (store_mul, ":condition", reg0, 10), # InVain: Removed trait check below, instead add relation+rank condition
+	 (val_add, ":condition", "$g_talk_troop_relation"), 	
+	 (ge, ":condition", 50),
+	 
+     # check if traits are needed 
+     # (assign, ":trait_check_passed", 1),
+     # (try_begin),
+       # (eq, "$g_talk_troop_faction", "fac_gondor"),
+       # (troop_slot_eq, "trp_traits", slot_trait_gondor_friend, 0),
+       # (assign, ":trait_check_passed", 0),
+     # (try_end),
+     # (try_begin),
+       # (eq, "$g_talk_troop_faction", "fac_rohan"),
+       # (troop_slot_eq, "trp_traits", slot_trait_rohan_friend, 0),
+       # (assign, ":trait_check_passed", 0),
+     # (try_end),
+     # (try_begin),
+       # (this_or_next|eq, "$g_talk_troop_faction", "fac_lorien"),
+       # (this_or_next|eq, "$g_talk_troop_faction", "fac_imladris"),
+       # (eq, "$g_talk_troop_faction", "fac_woodelf"),
+       # (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 0),
+       # (assign, ":trait_check_passed", 0),
+     # (try_end),
+     # (eq, ":trait_check_passed", 1),
    ],
 "I have a new task for you.", "lord_give_order_ask",[]],
 
@@ -5694,7 +5727,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (try_end),
     (assign, reg1, "$temp_action_cost"),
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, "$temp_action_cost")], 
+    (ge, reg2, "$temp_action_cost"),
+	(call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (store_mul, ":condition", reg0, 10), # InVain: add relation+rank condition
+	(val_add, ":condition", "$g_talk_troop_relation"), 	
+	(ge, ":condition", 50)], 
 "Follow me. [Costs {reg1}/{reg2} influence]", "lord_give_order_answer", [
      (assign, "$temp", spai_accompanying_army),
      (assign, "$temp_2", "p_main_party"),
@@ -5717,7 +5753,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (try_end),
     (assign, reg1, "$temp_action_cost"),
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, "$temp_action_cost")], 
+    (ge, reg2, "$temp_action_cost"),
+	(call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (store_mul, ":condition", reg0, 10), # InVain: add relation+rank condition
+	(val_add, ":condition", "$g_talk_troop_relation"), 	
+	(ge, ":condition", 70)], 
 "Go to... [Costs {reg1}/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_holding_center),
      (assign, "$tld_action_cost", tld_command_cost_goto),
@@ -5745,7 +5784,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (try_end),
     (assign, reg1, "$temp_action_cost"),
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, "$temp_action_cost")],  
+    (ge, reg2, "$temp_action_cost"),
+	(call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (store_mul, ":condition", reg0, 10), # InVain: add relation+rank condition
+	(val_add, ":condition", "$g_talk_troop_relation"), 	
+	(ge, ":condition", 60)],  
 "Patrol around... [Costs {reg1}/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_patrolling_around_center),
      (assign, "$tld_action_cost", tld_command_cost_patrol),
@@ -5767,7 +5809,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (try_end),
     (assign, reg1, "$temp_action_cost"),
     (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
-    (ge, reg2, "$temp_action_cost")], 
+    (ge, reg2, "$temp_action_cost"),
+	(call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (store_mul, ":condition", reg0, 10), # InVain: add relation+rank condition
+	(val_add, ":condition", "$g_talk_troop_relation"), 	
+	(ge, ":condition", 80)], 
 "Engage enemies around... [Costs {reg1}/{reg2} influence]", "lord_give_order_details_ask",[
      (assign, "$temp", spai_raiding_around_center), #not really, changed later to spai_patrolling_around_center
      (assign, "$tld_action_cost", tld_command_cost_engage),
@@ -5785,6 +5830,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (str_store_party_name, s11, ":ai_object"),
 
     (assign, "$temp_action_cost", tld_command_cost_engage), #25,
+	(store_mul, ":relation_modifier", "$g_talk_troop_relation", "$temp_action_cost"), #reduce influence cost with relation
+	(val_div, ":relation_modifier", 160),
+	(val_sub, "$temp_action_cost", ":relation_modifier"),
     (try_begin),
       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
       (val_mul, "$temp_action_cost", 2),
@@ -5848,7 +5896,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (troop_get_slot, ":party_no", "$g_talk_troop", slot_troop_leaded_party),
   (party_set_slot, ":party_no", slot_party_follow_player_until_time, ":obey_until_time"), #no lord ai changes until this time
   (store_mul, ":relation_modifier", "$g_talk_troop_relation", "$tld_action_cost"), #reduce influence cost with relation
-  (val_div, ":relation_modifier", 130),
+  (val_div, ":relation_modifier", 160),
   (val_sub, "$tld_action_cost", ":relation_modifier"),
   (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
   (try_begin),
