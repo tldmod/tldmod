@@ -4980,7 +4980,7 @@ scripts = [
 		(store_sub, ":int_xp_bonus_multi", ":int", 5),
 		(val_mul, ":int_xp_bonus_multi",":int_xp_bonus_multi"), #exponential base
 		(assign, reg81, ":int_xp_bonus_multi"),
-		(val_div, ":int_xp_bonus_multi", 14), #soften growth a bit
+		(val_div, ":int_xp_bonus_multi", 20), #soften growth a bit
 		(assign, reg83, ":int_xp_bonus_multi"),
 		(store_mul, ":int_xp_bonus", ":base_xp_share", ":int_xp_bonus_multi"),
 		(assign, reg84, ":int_xp_bonus"),
