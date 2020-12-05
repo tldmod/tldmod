@@ -102,7 +102,7 @@ dlga_member_separate_confirm:member_separate_yes|Sta bene. Le nostre strade si d
 dlga_member_separate_confirm:do_member_trade|No, in realtà preferisco averti al mio fianco.
 dlga_member_separate_yes:close_window|Bene. Sono fuori, allora. Vienimi a cercare se avessi bisogno di me.
 dlga_member_talk:member_question|Vorrei chiederti una cosa.
-dlga_member_talk:close_window|Niente, chiedo scusa.
+dlga_member_talk:close_window|Grazie, non ti trattengo oltre.
 dlga_member_question:member_question_2|Molto bene. Cosa vuoi chiedermi  ?
 dlga_member_question_2:member_morale|Come pensi stiano andando le cose nella compagnia ?
 dlga_member_question_2:member_health|Come stai in salute ?
@@ -118,7 +118,7 @@ dlga_companion_recruit_payment_response:close_window|Beh, c'è poco che possa fa
 dlga_start:companion_recruit_meet_again|Ci rivediamo.
 dlga_companion_recruit_meet_again:companion_recruit_backstory_delayed|Allora.. Cos'hai fatto dal nostro ultimo incontro ?
 dlga_start:companion_recruit_secondchance|Sì ?
-dlga_companion_recruit_secondchance:close_window|Niente, ti chiedo scusa.
+dlga_companion_recruit_secondchance:close_window|Grazie, non ti trattengo oltre.
 dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|Potresti essere utile nella mia compagnia..
 dlga_companion_recruit_backstory_delayed_response:close_window|Non ci pensare, un'altra volta forse.
 dlga_companion_recruit_signup_confirm:close_window|Bene ! Dammi qualche momento per prepararmi e sarò in grado di partire.
@@ -429,9 +429,9 @@ dlga_lord_give_order_assault:lord_pretalk|{s4} sta guidando l'assedio. Ti consig
 dlga_lord_give_order_assault:lord_pretalk.1|I nostri preparativi non sono ancora stati completati. Abbiamo bisogno di altro {s11}
 dlga_lord_give_order_assault:close_window|Molto bene -- Attaccare le mura !
 dlga_lord_give_order:lord_give_order_stop|Non avrò bisogno di te per qualche tempo, sei libero di fare ciò che vuoi.
-dlga_lord_give_order:lord_pretalk|Niente, ti chiedo scusa.
+dlga_lord_give_order:lord_pretalk|Grazie, non ti trattengo oltre.
 dlga_lord_give_order_details_ask:lord_give_order_details|Dove ?
-dlga_lord_give_order_details:lord_pretalk|Niente, ti chiedo scusa.
+dlga_lord_give_order_details:lord_pretalk|Grazie, non ti trattengo oltre.
 dlga_lord_give_order_stop:lord_pretalk|Va bene. Lo farò.
 dlga_lord_give_order_answer:lord_pretalk|Mi spiace, ma sono richiesto altrove al momento.
 dlga_lord_give_order_answer_2:close_window|Lo farò.
@@ -441,9 +441,9 @@ dlga_lord_talk_ask_something:lord_talk_ask_something_2|Sì ? Cosa c'è?
 dlga_lord_talk_ask_something_2:lord_talk_ask_location|Vorrei sapere dove si trova qualcuno.
 dlga_lord_talk_ask_something_2:lord_tell_objective|In cosa sei impegnato con i tuoi uomini ?
 dlga_lord_talk_ask_something_2:lord_talk_ask_about_war|Che notizie giungono dalla guerra ?
-dlga_lord_talk_ask_something_2:lord_pretalk|Niente, ti chiedo scusa.
+dlga_lord_talk_ask_something_2:lord_pretalk|Grazie, non ti trattengo oltre.
 dlga_lord_talk_ask_location:lord_talk_ask_location_2|Molto bene, potrei avere o potrei non avere una risposta per te. Su chi cerchi informazioni ?
-dlga_lord_talk_ask_location_2:lord_pretalk|Niente, ti chiedo scusa.
+dlga_lord_talk_ask_location_2:lord_pretalk|Grazie, non ti trattengo oltre.
 dlga_lord_talk_ask_about_war_2:lord_talk_ask_about_war_details|Dimmi di più a proposito della guerra con {s1}.
 dlga_lord_talk_ask_about_war_2:lord_pretalk|È tutto quello che volevo sapere. Grazie.
 dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Il nostro livello è {s22} mentre il loro è {s23}. Complessivamente, {s9}.

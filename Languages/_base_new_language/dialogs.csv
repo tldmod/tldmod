@@ -389,6 +389,7 @@ dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate siege
 dlga_lord_start:lord_pretalk|Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there, for you to store your personal belongings.
 dlga_lord_start:lord_talk|What is it?
 dlga_lord_pretalk:lord_talk|Anything else?
+dlga_lord_talk:lord_pretalk|Increase Relation
 dlga_lord_talk:lord_lend_companion_end|I should like {s14} returned to me, {s65}, if you no longer require {reg3?her:his} services.
 dlga_lord_lend_companion_end:lord_pretalk|You've too many men in your company already, {playername}. You could not lead any more at the moment.
 dlga_lord_lend_companion_end:lord_pretalk.1|Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky commander to have such worthy companions.
@@ -488,6 +489,7 @@ dlga_marshall_ask:lord_pretalk|I would hardly take advice if you are merely {s25
 dlga_marshall_ask:lord_pretalk.1|You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]
 dlga_marshall_ask:lord_pretalk.2|We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.
 dlga_marshall_ask:marshall_suggest|I'm listening, {playername}. What do you suggest?
+dlga_marshall_suggest:lord_give_order_assault|Together, you and I can take {s11}. You should assault immediately... [Costs {reg1}/{reg2} influence]
 dlga_marshall_suggest:player_siege_ask|{s4}
 dlga_marshall_suggest:marshall_answer|We should ride to besiege {s1} at once.
 dlga_marshall_suggest:lord_pretalk|Never mind, I trust your judgement.
@@ -686,11 +688,11 @@ dlga_lord_tell_mission:lord_tell_mission_raise_troops|{s4}
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|How many men do you need?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|If you can raise {reg1} {s14} and bring them to me, that will probably be enough.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Of course, {s65}. Give me {reg1} fresh recruits and I'll train them to be {s14}.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the arena teach them a thing or two...
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the arena teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|I am too busy these days to train anyone.
 dlga_lord_mission_raise_troops_accepted:close_window|You've taken a weight off my shoulders, {playername}. I shall tell my sergeants to send you the recruits and attach them to your command. Also, I'll advance you some money to help with expenses. Here, this purse should do it. Thank you for your help.
-dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the arena. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
+dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, of course. I had expected as much. Well, good luck to you then.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There has been news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Then I will hunt him down and execute the law.

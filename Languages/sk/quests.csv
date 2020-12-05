@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} ťa požiadal, aby si doručil správu {s13}. {s13
 qst_deliver_message_to_enemy_lord|Doruč správu {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} ťa požiadal, aby si doručil správu {s13} z {s15}. {s13} bol v {s4} keď ti zadal túto úlohu.
 qst_raise_troops|Vycvič {reg1} {s14}
-qst_raise_troops_text|{s9} ťa požiadal, aby si vycvičil {reg1} {s14} a priviedol ich k {him/her}.
+qst_raise_troops_text|{s9} ťa požiadal, aby si vycvičil {reg1} {s14}ov a priviedol ich k {nemu/jej}.
 qst_escort_messenger|Eskortuj posla do {s14}
 qst_escort_messenger_text|Nič
 qst_hunt_down_fugitive|Nájdi a zabi {s4}
@@ -20,10 +20,10 @@ qst_capture_prisoners|Prines {reg1} nepriateľských väzňov.
 qst_capture_prisoners_text|{s9} chce, aby si mu priniesol {reg1} nepriateľských väzňov.
 qst_investigate_fangorn|Preskúmaj Farngorn
 qst_investigate_fangorn_text|{s9} chce, aby si zistil čo sa deje vo Farngornskom lese, a oznámil to.
-qst_capture_troll|Zajmi trola
-qst_capture_troll_text|{s9} chce, aby si mu priviedol divokého trola pre použitie do jeho armády.
-qst_kill_troll|Zabi zúriaceho trola
-qst_kill_troll_text|{s9} chce, aby si zbavil {s13} nebezpečného trola, ktorý vyčíňa v tých krajoch.
+qst_capture_troll|Zajmi zlobra
+qst_capture_troll_text|{s9} chce, aby si mu priviedol divokého zlobra pre použitie do jeho armády.
+qst_kill_troll|Zabi zúriaceho zlobra
+qst_kill_troll_text|{s9} chce, aby si zbavil {s13} nebezpečného zlobra, ktorý vyčíňa v tých krajoch.
 qst_mirkwood_sorcerer|Zabi černokňažníka v Mirkwoode
 qst_mirkwood_sorcerer_text|Moc Galadriel chrániaca Lothlorien bola oslabená nečistými rituálmi černokňažníka z Dol Gulduru. Aj keď je to smrteľník, predstavuje pre Elfov veľkú hrozbu. Hľadaj ho v Mirkwoode neďaleko Dol Gulduru. Buď nenápadný a nedaj sa vidieť, budeš mať len jedinú príležitosť aby si ho zabil. 
 qst_find_lost_spears|Najdi stratené kopije kráľa Bladorthina
@@ -57,10 +57,10 @@ qst_escort_merchant_caravan|Sprevádzaj karavanu do {s8}
 qst_escort_merchant_caravan_text|Sprevádzaj karavanu do {s8} a prehovor s nimi keď budete neďaleko.
 qst_deliver_wine|Doruč {reg5} kusov {s6} do {s4}
 qst_deliver_wine_text|{s9} z {s3} ťa požiadal aby si doručil {reg5} kusov {s6} do {s4} do 7 dní.
-qst_troublesome_bandits|Postaraj sa o Neodbytných Goblinov.
-qst_troublesome_bandits_text|{s9} z {s4} ťa požiadal aby si našiel a zabil neodbytných goblinov v blízkosti mesta.
-qst_deal_with_looters|Postaraj sa o Klan Ohyzdov.
-qst_deal_with_looters_text|Starosta z {s4} ťa požiadal, aby si pobil niekoľko tlúp Klanových Ohyzdov v okolí {s4}.
+qst_troublesome_bandits|Postaraj sa o Doliezavých Goblinov.
+qst_troublesome_bandits_text|{s9} z {s4} ťa požiadal aby si našiel a zabil doliezavých goblinov v blízkosti mesta.
+qst_deal_with_looters|Postaraj sa o Kmeňových Ohyzdov.
+qst_deal_with_looters_text|Starosta z {s4} ťa požiadal, aby si pobil niekoľko tlúp Kmeňových Ohyzdov v okolí {s4}u.
 qst_deal_with_night_bandits|Znič tlupu Tuláckych Goblinov.
 qst_deal_with_night_bandits_text|Starosta z {s14} ťa požiadal aby si zničil skupinu Goblinov Dezertérov v {s14}.
 qst_deliver_food|Dovez {s3} {reg5} kusov jedla.

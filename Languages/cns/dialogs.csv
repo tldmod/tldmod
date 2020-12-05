@@ -975,7 +975,7 @@ dlga_start:town_merchant_talk|向你问好，指挥官，我今天能有幸为�
 dlga_start:town_merchant_talk.1|日安。有什么我可以效劳的吗？
 dlga_town_merchant_talk:trade_requested_weapons|我需要新的装备，跟我说说你的仓库中都有什么好东西。
 dlga_town_merchant_talk:trade_requested_horse|我正考虑弄一匹坐骑。
-; dlga_town_merchant_talk:player_upgrade_trolls_take|I want to strengthen my trolls!
+dlga_town_merchant_talk:player_upgrade_trolls_take|我想要加强我的食人妖们!
 ; dlga_player_upgrade_trolls_take:close_window|Who are you to ask this of me? Pah! Begone! (You need to be {s24} or higher)
 ; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
 ; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
@@ -986,7 +986,7 @@ dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|算了
 ; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|算了
 dlga_player_upgrade_troll_not_enough:close_window|浪费我的时间...
-; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
+dlga_player_upgrade_troll_buy_done:close_window|对... 对！ 过来你个傻子,你
 dlga_trade_requested_weapons:merchant_trade|啊，好的指挥官。你在任何地方都不会找到比我这儿更好的货物了。
 dlga_trade_requested_horse:merchant_trade|我这的坐骑不论是用来杀人还是旅行都是绝对的首选，过了这个村可就没这个店了！
 dlga_merchant_trade:town_merchant_talk|还有其他的事情么？

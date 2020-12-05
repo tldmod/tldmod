@@ -1051,7 +1051,7 @@ str_npc3_home_description_2|If we must cross Entwood, let us do so with haste an
 str_npc4_home_description_2|We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again.
 str_npc5_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
 str_npc6_home_description_2|I sense the evil armies behind its walls prepare to march... To fair Lothlórien? To Dale? To my Greenwood homeland? I cannot tell, but please do everything you can to thwart them.
-str_npc7_home_description_2|If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc8_home_description_2|I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment.
 str_npc9_home_description_2|There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is.
 str_npc10_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
@@ -2043,11 +2043,11 @@ str_shortname_region_mordor|the Land of Mordor
 str_shortname_region_dimrill|Dimrill Dale
 str_shortname_region_s_erebor|the realm of Dale
 str_trait_title_elf_friend|Elf Friend
-str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced and you may now attempt to give orders to elven armies.
+str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
 str_trait_title_gondor_friend|Steward's Blessing
-str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced and you may now attempt to give orders to Gondorian armies.
+str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
 str_trait_title_rohan_friend|King's Man
-str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced and you may now attempt to give orders to the armies of the Riddermark.
+str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
 str_trait_title_brigand_friend|Barbarian Champion
 str_trait_desc_brigand_friend|You have become highly esteemed by the barbarian tribes serving Sauron as a result of your impressive displays in the arena. You may now recruit barbarians at reduced cost.
 str_trait_title_blessed|Blessed
@@ -2564,7 +2564,7 @@ str_npc20_home_description_2|We shall crush the works of the Valar, of which the
 str_npc21_home_description_2|We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again.
 str_npc22_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
 str_npc23_home_description_2|I sense the evil armies behind its walls prepare to march... To fair Lothlórien? To Dale? To my Greenwood homeland? I cannot tell, but please do everything you can to thwart them.
-str_npc24_home_description_2|If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc25_home_description_2|I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment.
 str_npc26_home_description_2|There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is.
 str_npc27_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
@@ -2677,3 +2677,4 @@ str_imladris_guildmaster_companion_none|Look well, Commander. Before you is perh
 str_imladris_guildmaster_companion_player_none_ok|I understand, Elder. I thank you for your time.
 str_imladris_guildmaster_player_found_ok|I understand, Elder. I thank you for your time.
 str_show_keybinds_form|Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
+str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?

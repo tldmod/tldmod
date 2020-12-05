@@ -16,23 +16,23 @@ itm_tools|Инструменты
 itm_siege_supply|Провиант
 itm_quest_wine|Вино
 itm_quest_ale|Эль
-itm_metal_scraps_bad|куски низкокачественного металла
+itm_metal_scraps_bad|Металл низкого качества
 itm_metal_scraps_medium|куски металла
 itm_metal_scraps_good|куски высококачественного металла
 itm_oliphant|Олифант
 itm_sumpter_horse|Вьючная лошадь
 itm_saddle_horse|Верховая лошадь
 itm_steppe_horse|Степная лошадь
-itm_courser|Скаковая лошадь
+itm_courser|Рысак
 itm_hunter|Гунтер
 itm_pony|Пони
 itm_arnor_warhorse|Арнорский боевой конь
-itm_dunedain_warhorse|Дунаданский боевой конь
-itm_rohirrim_courser|Роханская скаковая лошадь
+itm_dunedain_warhorse|Дунэдайнский боевой конь
+itm_rohirrim_courser|Роханский рысак
 itm_rohirrim_hunter|Роханский гунтер
-itm_rohirrim_courser2|Роханский Бронированный Скакун
+itm_rohirrim_courser2|Роханский бронированный скакун
 itm_rohan_warhorse|Роханский боевой конь
-itm_thengel_warhorse|Боевой Конь Эорла
+itm_thengel_warhorse|Боевой конь Эорла
 itm_rhun_horse_a|Рунийская лошадь
 itm_rhun_horse_b|Рунийская лошадь
 itm_rhun_horse_d|Рунийская лошадь
@@ -41,17 +41,17 @@ itm_rhun_horse_f|Рунийский тяжелый конь
 itm_rhun_horse_g|Рунийский тяжелый конь
 itm_rhun_horse_h|Рунийский тяжелый конь
 itm_dale_horse|Рованионская Лошадь
-itm_dale_warhorse|Рованионский Боевой Конь
+itm_dale_warhorse|Рованионский боевой конь
 itm_riv_warhorse|Ривендельский боевой конь
 itm_riv_warhorse2|Ривендельский конь
 itm_mordor_warhorse|Мордорский боевой конь
-itm_mordor_warhorse2|Зловещий Конь Мордора
-itm_gondor_courser|Гондорская скаковая лошадь
+itm_mordor_warhorse2|Зловещий конь Мордора
+itm_gondor_courser|Гондорский рысак
 itm_gondor_hunter|Гондорский гунтер
-itm_dol_amroth_warhorse|Боевой Конь Дол Амрота
-itm_dol_amroth_warhorse2|Тяжёлый Боевой Конь Дол Амрота
+itm_dol_amroth_warhorse|Дол Амротский боевой конь
+itm_dol_amroth_warhorse2|Дол Амротский тяжелый боевой конь
 itm_gondor_warhorse|Гондорский боевой конь
-itm_gondor_lam_horse|Ламедонская лошадь в броне
+itm_gondor_lam_horse|Ламедонский бронированный скакун
 itm_lorien_warhorse|Лориэнский боевой конь
 itm_harad_horse|Харадская лошадь
 itm_harad_warhorse|Харадский боевой конь
@@ -60,33 +60,33 @@ itm_variag_kataphrakt|Истерлингский боевой конь
 itm_warg_1b|Варг
 itm_warg_1c|Варг
 itm_warg_1d|Варг
-itm_wargarmored_1b|Варг в броне
-itm_wargarmored_1c|Варг в броне
-itm_wargarmored_2b|Варг в броне
-itm_wargarmored_2c|Варг в броне
-itm_wargarmored_3a|Варг в броне
+itm_wargarmored_1b|Бронированный варг
+itm_wargarmored_1c|Бронированный варг
+itm_wargarmored_2b|Бронированный варг
+itm_wargarmored_2c|Бронированный варг
+itm_wargarmored_3a|Бронированный варг
 itm_warg_reward|Огромный варг
 itm_tree_trunk_club_a|Ствол дерева
 itm_giant_mace|Огромная булава
-itm_troll_shield_a|Щит Тролля
+itm_troll_shield_a|Щит тролля
 itm_arrows|Стрелы
-itm_gondor_arrows|Стрелы Гондора
-itm_orc_javelin|Орочья Тяжелая Сулица
-itm_khergit_arrows|Стрелы Рохана
-itm_harad_arrows|Харадские Стрелы
-itm_corsair_arrows|Умбарские Стрелы
-itm_ithilien_arrows|Стрелы Итилиэна
-itm_woodelf_arrows|Стрелы Эльфов Зеленолесья
-itm_elven_arrows|Эльфийские Стрелы
-itm_orc_hook_arrow|Крючковатые Орочьи Стрелы
-itm_isengard_arrow|Стрелы Изенгарда
-itm_leather_gloves|Кожаные Перчатки
-itm_mail_mittens|Кольчужные Рукавицы
-itm_leather_boots|Кожаные Сапоги
-itm_leather_boots_dark|Сапоги Наездника
-itm_splinted_greaves|Шинные Поножи
-itm_white_tunic_a|Городская Одежда
-itm_rohan_shoes|Кожаные Ботинки
+itm_gondor_arrows|Гондорские стрелы
+itm_orc_javelin|Орочьи тяжёлые дротики
+itm_khergit_arrows|Роханские стрелы
+itm_harad_arrows|Харадские стрелы
+itm_corsair_arrows|Умбарские стрелы
+itm_ithilien_arrows|Итилиэнские стрелы
+itm_woodelf_arrows|Зеленолесские стрелы
+itm_elven_arrows|Эльфийские стрелы
+itm_orc_hook_arrow|Крючковатые орочьи стрелы
+itm_isengard_arrow|Изенгардские стрелы
+itm_leather_gloves|Кожаные перчатки
+itm_mail_mittens|Кольчужные рукавицы
+itm_leather_boots|Кожаные сапоги
+itm_leather_boots_dark|Сапоги наездника
+itm_splinted_greaves|Шинные поножи
+itm_white_tunic_a|Городская одежда
+itm_rohan_shoes|Кожаные ботинки
 itm_furry_boots|Сапоги из Шкур
 itm_black_tunic|Чёрная одежда
 itm_hood_black|Чёрный Капюшон
@@ -128,7 +128,7 @@ itm_heavy_throwing_spear|Тяжёлое метательное копьё
 itm_javelin|Дротик
 itm_harad_javelin|Харадский дротик
 itm_gondor_javelin|Гондорский дротик
-itm_rohirrim_throwing_axe|Метательные Топоры Северян
+itm_rohirrim_throwing_axe|Метательные топоры северян
 itm_loss_throwing_axes|Лоссарнахские метательные топоры
 itm_arnor_helm_a|Арнорский шлем
 itm_arnor_helm_b|Арнорский шлем
@@ -136,7 +136,7 @@ itm_arnor_helm_c|Арнорский шлем
 itm_dunedain_helm_b|Арнорский украшенный шлем
 itm_arnor_armor_a|Арнорская броня
 itm_arnor_armor_b|Арнорская броня
-itm_arnor_armor_c|Плащ Рейнджеров Дунэдайн
+itm_arnor_armor_c|Плащ рейнджеров Дунэдайн
 itm_arnor_armor_d|Плащ Рейнджеров Дунэдайн
 itm_arnor_armor_e|Арнорская Уплотненная Куртка
 itm_arnor_armor_f|Арнорский Превосходный Доспех
@@ -163,7 +163,7 @@ itm_riv_leather|Ривендельская кожаная броня
 itm_riv_foot_mail|Ривендельская кольчуга
 itm_riv_foot_scale|Ривендельская чешуйчатая броня
 itm_riv_surcoat|Ривендельская накидка
-itm_riv_knight|Ривендельский рыцарский доспех
+itm_riv_knight|Ривендельский доспех
 itm_riv_armor_h_archer|Ривендельская броня
 itm_riv_armor_leader|Ривендельская броня военачальника
 itm_riv_boots|Ривендельскые сапоги
@@ -172,7 +172,7 @@ itm_gon_jerkin|Гондорская куртка
 itm_gon_regular|Гондорская тяжёлая кольчуга
 itm_gon_bowman|Гондорский гамбезон
 itm_gon_archer|Гондорский гамбезон с накидкой
-itm_gon_noble_cloak|Гондорская дорогая куртка
+itm_gon_noble_cloak|Гондорский дворянский камзол
 itm_gon_squire|Гондорская кольчуга с накидкой
 itm_gon_knight|Гондорская тяжёлая кольчуга с накидкой
 itm_gon_ranger_cloak|Гондорский плащ рейнджера
@@ -194,7 +194,7 @@ itm_gondor_leader_helm|Гондорский превосходный шлем
 itm_tower_guard_helm|Шлем Стража Башни
 itm_gondor_citadel_knight_helm|Шлем Рыцаря Цитадели
 itm_gondor_knight_helm|Гондорский кавалерийский шлем
-itm_gondor_dolamroth_helm|Дол-амротский шлем
+itm_gondor_dolamroth_helm|Дол Амротский шлем
 itm_swan_knight_helm|Лебединый рыцарский шлем
 itm_gondor_lamedon_helm|Ламедонский шлем
 itm_gondor_lamedon_leader_helm|Ламедонский превосходный шлем

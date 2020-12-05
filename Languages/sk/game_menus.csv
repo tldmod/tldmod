@@ -1,9 +1,9 @@
 menu_start_game_1|^^^^^^^^^^Za čo budeš bojovať?
 mno_start_good|ÚSVIT Nového Veku
 mno_start_evil|SÚMRAK Ľudskej Rasy
-mno_faction_intros|Zoznámte sa s rôznymi frakciami Strednej Zeme
+mno_faction_intros|Poučte sa o rôznych frakciách Stredozeme
 mno_go_bback|Späť
-menu_start_phase_2|^^^^^ Stredozem. Temnota na Východe narastá, ^ prichádzajú odtiaľ dlho schované temné bytosti. ^ Slobodné národy sa pripravujú na vojnu. Vojnu, ktorú nezažili už celý vek. ^ Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju rolu. ^^ Jakú rolu, to sa ešte ukáže...
+menu_start_phase_2|^^^^^ Stredozem. Temnota na Východe narastá, ^ prichádzajú odtiaľ dlho schované temné bytosti. ^ Slobodné národy sa pripravujú na vojnu. Vojnu, ktorú nezažili už celý vek. ^ Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju úlohu. ^^ Akú, to sa ešte ukáže...
 mno_go_forth|Vydaj sa na svoju zvolenú cestu...
 mno_change_tld_options|Zmeniť nastavenia TLD.
 menu_start_game_3|^^^^^^^^Zvoľ si scénar
@@ -18,7 +18,7 @@ mno_custom_battle_scenario_8|Posledný vzdor Durinovho ľudu
 mno_custom_battle_scenario_88|Lapanie Ohyzdej skupiny prieskumníkov
 mno_custom_battle_scenario_11|Testovacie bitky (pre vyvážené nastavenie štátu!)
 mno_custom_battle_scenario_10|Testovacia bitka scény
-mno_troll_battle_scenario|Bitka pre testovanie trolov
+mno_troll_battle_scenario|Bitka pre testovanie zlobrov
 mno_warg_battle_scenario|Bitka pre testovanie vrrkov
 mno_build_your_own_scene|** Vybuduj svoju vlastnú scénu pre TLD **
 mno_go_back|Späť
@@ -26,7 +26,7 @@ menu_tutorial|^^ Vitaj v Návode Boja pre Mount & Blade. Naučíš sa tu základ
 mno_tutorial_1|Cvičenie #1: Základný pohyb a výber zbrane. {s1}
 mno_tutorial_2|Cvičenie #2: Boj zo štítom. {s2}
 mno_tutorial_3|Cvičenie #3: Boj bez štítu. {s3}
-mno_tutorial_3b_door|Ďalší Level
+mno_tutorial_3b_door|Ďalšia úroveň
 mno_tutorial_4|Cvičenie #4: Jazdenie na koni alebo na vrrkovi. {s4}
 mno_tutorial_5|Cvičenie #5: Rozkazovanie skupine vojakov. {s5}
 mno_go_back_dot|Späť
@@ -83,7 +83,7 @@ mno_start_la|LAMEDOM, kniežactvo horských klanov
 mno_start_pg|PINNATH GELIN, kniežactvo Zelených Vrchov
 mno_start_do|DOL AMROTH, kniežactvo Labutích Rytierov
 mno_start_pe|PELARGIR, pobrežné kniežactvo
-mno_start_bl|BLACKROOT VALE, kniežactvo lučišníkov
+mno_start_bl|Čiernodol, kniežactvo lučišníkov
 menu_start_eye_man|^^^^^^^^^^Zvol si svoj národ:
 mno_start_hr|HARADRIM, púštny ľud z Juhu
 mno_start_bn|Čierny NÚMENOREJCI, vzbúrenci zo Západu
@@ -114,8 +114,8 @@ mno_start_male|Muž
 mno_start_female|Žena
 mno_proc|Pokračuj
 menu_start_as_one|^^^^^^^^^^Aký si typ vojaka?
-mno_start_default|Bude z teba {s23} (Default)
-mno_start_up1|Bude z teba {s21} (Easy)
+mno_start_default|Bude z teba {s23} (Pôvodný)
+mno_start_up1|Bude z teba {s21} (Ľahká)
 mno_start_up2|Stať sa {s22} (Ľahké)
 mno_continue|Pokračuj
 menu_character_report|^^^^^Morálka družiny: {reg8}^Maximálna veľkosť družiny: {reg7}^{s5}
@@ -179,10 +179,10 @@ mno_ow_get_out|Ouch! Musíme zmiznúť z tohto prekliatého miesta!
 menu_fangorn_killed_troop_and_player|^^^^^^Predieraš sa hustým, tmavým lesom.^^Odrazu ťa niečo trafilo! Možno ti na hlavu spadol ťažký konár.^^Keď sa po pár minutách preberieš, zistíš, že nie všetci tvojí vojaci mali také šťastie.
 menu_fangorn_killed_troop_only|^^^^^^^^Prechádzaš hustým, tmavým lesom. Tvoji vojaci sú vystrašený.^^Odrazu za sebou začuješ rev vojakov v zadnom voji. Pribehneš späť, ale nájdeš len pár vojakov ležiacich v kaluži krvi.^^ Po ďalších neostali ani stopy.
 mno_get_out|Opusťme toto prekliate miesto!
-menu_can_capture_troll|Porazený divoký trol stále dýchá!^^Jeho temné oči sa do teba zabodávajú bolesťou a hnevom.^Aj teraz, bezmocne ležiaci v kaluži krvi, vyzerá veľmi nebezpečne...
+menu_can_capture_troll|Ten porazený divoký zlobor ešte stále dychčí^^Jeho temné oči sa do teba zabodávajú bolesťou a hnevom.^Aj teraz, bezmocne ležiaci v kaluži krvi, vyzerá veľmi nebezpečne...
 mno_killit|Doraz to a uisti sa, že je to mrtvé. 
 mno_cageit1|Zavri to do klietky a ťahaj so sebou.
-mno_cageit2|Zavri to do klietky k druhému trolovi.
+mno_cageit2|Zavri to do klietky k druhému zlobrovi.
 mno_cheat_disabable|Vypnúť cheaty/modderské nastavenia.
 menu_drank_ent_water_human|^^^Piješ vodu. Je čistá a osviežujúca. Má príjemnú vôňu, podobnú ako pižmo.^ Cítiš sa svieži.^^Odrazu ťa ovládne divný, neprirodzený pocit. Niečo ti hovorí, že by si nemal už nikdy v živote piť Farngornskú vodu.
 menu_drank_ent_water_orc|^^^Piješ vodu. Prchavá, chutná ako obyčajná voda.^ Odrazu si v neznesiteľnej bolesti zovrieš hrdlo.^Je jedovatá!^Dusíš sa, vykašliavaš čiernu krv, takmer si sa udusil.^^Bolí to, oh, to bolí.
@@ -197,7 +197,7 @@ menu_simple_encounter|^^^^^{s2}^ Máš k dispozícií {reg22} jednotiek v boji p
 mno_encounter_attack|{reg21?Zaútočiť na nich:Pripraviť sa čeliť im}.
 mno_encounter_order_attack|Prikázať svojím vojakom aby {reg21?zaútočili:čelili im} bez teba.
 mno_control_allies_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
-mno_encounter_hide|Skry sa pred nepriateľom
+mno_encounter_hide|Schovať sa pred nepriateľom
 mno_special_whip|Vrhnúť sa vpred naproti nim lámajúc {s4}.
 mno_encounter_leave|Odísť.
 mno_encounter_retreat|Nechať za sebou niekoľko vojakov, aby kryli tvoj ústup.
@@ -221,7 +221,7 @@ menu_kingdom_army_quest_messenger|{s8} ti posiela správu, že si želá sa s te
 menu_kingdom_army_quest_join_siege_order|{s8} ti posiela rozkaz aby si sa pridal k obliehaniu {s9} v rámci prípravy úplného dobytia. Musíš mať k dispozícií {s9} vojakov za každú cenu.
 menu_kingdom_army_follow_failed|Neposlúchol si rozkazy a zlyhal v následovaní {s8}. Posiela ti správu v ktorej dúfa, že si pre to mal závažné dôvody, ale varuje ťa, že jeho trpezlivosť nie je neobmedzená.
 menu_battle_debrief|{s11}^Tvoje stráty:{s8}{s10}^^Nepriateľské stráty:{s9}
-mno_inspect_troll|Prehľadať skoleného trola
+mno_inspect_troll|Prehľadať skoleného zlobra
 menu_pre_join|^^^^^Narazil si na bitku medzi {s2} a {s1}. Rozhodneš sa...
 mno_pre_join_help_attackers|Zapojiť sa a pomôcť {s2}.
 mno_pre_join_help_defenders|Hnať sa na pomoc {s1}.
@@ -348,7 +348,7 @@ menu_player_added_to_siege_reports|Prišiel posol a povedal vám, že teraz, ako
 mno_player_added_to_siege_reports_close|Zavrieť
 menu_player_added_to_allow_follow|^^^^^Dorazil posol a povedal ti, že teraz, ako {s24}, budeš môcť rozkázať {s2}, aby ťa nasledovali, maximálne {reg55} nasledovníkom.
 mno_player_added_to_allow_follow_close|Zavrieť
-menu_center_besieged_event|^^^^^Posol ti doniesol správu že {s1} je obliehané {s2}om z {s3}u.
+menu_center_besieged_event|^^^^^Posol ti doniesol správu, že {s1} je obliehané {s2}om z {s3}u.
 mno_center_besieged_event_close|Zavrieť
 menu_guardian_party_spawned|^^^^^Prieskumníci hlásia, že {s6} zhromáždil veľkú armádu neďaleko {s7} v poslednej nádeji ubrániť hlavné mesto.
 mno_intro_next|Pokračuj
@@ -359,13 +359,13 @@ mno_start_kill_scouts|Zastaviť zvedov ohlasujúcich tvoj príchod.
 mno_go_your_way|Nechať to tak.
 mno_defend_villagers|Brániť dedinčanov!
 mno_raid_villagers|Vyrabovať dedinu!
-mno_go_away|Stiahni sa a preskup, pre teraz.
+mno_go_away|Nateraz sa stiahnuť a preskupiť.
 menu_scout_camp_quest|Vidíte prieskumný tábor v okolí. Pripravujete svojich mužov, aby ich napadli
-mno_attack_scout_camp|Zaútoč na prieskumnícky kemp
-menu_sea_battle_quest|Stretol si nepriateľskú flotilu. Lode sa priblížia a námorníci zhodia dosky...
-mno_sb_defend_the_town|Na palubu! Zničte ich flotily!
+mno_attack_scout_camp|Zaútočiť na prieskumnícky tábor!
+menu_sea_battle_quest|Narazil si na nepriateľskú flotilu. Lode sa priblížia a námorníci zhodia dosky...
+mno_sb_defend_the_town|Na palubu! Zničte ich flotilu!
 mno_sb_attack_the_town|Snažia sa nás preraziť! Chráňte flotilu!
-menu_camp_field_ai|^^^^^Klikni na voľbu aby si ju prepol.^^^Vypnutie volieb zlepší výkon (FPS)
+menu_camp_field_ai|^^^^^Klikni na voľbu, aby si ju prepol.^^^Vypnutie volieb zlepší výkon (FPS)
 mno_lord_field_ai|Vládcovia majú zlepšené bojiskové AI: {s7}
 mno_horse_archer_field_ai|Lukostrelci na koňoch majú zlepšené bojiskové AI: {s7}
 mno_vs_orcs_field_ai|Lukostrelci mieria lepšie proti ohyzdom (nemieria im nad hlavy): {s7}
@@ -375,17 +375,17 @@ mno_battle_encounter_effects|Výnimočný účinok frakcie na bojové pole (napr
 menu_hungry_orc|nič
 menu_leaving_elf|nič
 mno_defend_refugees|Pozor na nájazdníkov...
-mno_attack_refugees|Zaútoč na utečencov...
-mno_leave_refugees|Nechaj ich, pre teraz...
+mno_attack_refugees|Zaútočiť na utečencov...
+mno_leave_refugees|Na teraz ich nechať na pokoji...
 mno_evil_war_tut_continue|Pokračuj
 menu_guardian_party_quest|{s8} posiela správu, že je Isengard na podpätku a pripravil svoj posledný stánok. Chce, aby ste sa pripojili k poslednej bitke proti Isengardovým armádám. Musíte priviesť najmenej {reg13} vojakov do armády a dostať pokyny na zvýšenie počtu bojovníkov so všetkou námahou, ak nemáte dostatok.
-mno_guardian_party_reject|Pošli správu že sa k nemu nemôžeš pripojiť.
+mno_guardian_party_reject|Poslať správu, že sa k nemu nemôžeš pripojiť.
 mno_guardian_party_send_word|Poslať odkaz, že sa k nemu čo najskôr pripojíš.
 menu_alternate_training_fight|Budeš bojovať proti {reg5} protivníkom. Si pripravený? 
-mno_training_continue|Začni s tréningom...
+mno_training_continue|Započať s tréningom...
 menu_alternate_training_conclusion|{s5}
-mno_alternate_training_retry|Skús znovu...
-mno_alternate_training_finish|Odíď...
+mno_alternate_training_retry|Skúsiť znovu...
+mno_alternate_training_finish|Opustiť zápasisko...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Zvol si svoju stranu a výhody:
 mno_good_equal|Frakcia dobra
 mno_bad_equal|Frakcia zla
@@ -434,16 +434,16 @@ menu_death|Bol si zabitý. Vojna pokračuje, ale ty už naďalej nie si jej sú�
 menu_animal_ambush|Ty a tvoji spoločníci ste sa oddelili od zvyšku družiny, keď odrazu...
 menu_animal_ambush_success|{s2} pred tebou {reg0?padol:padajú} ako pšenica pred kosou! Onedlho ležia všetci tvojí protivníci na podlahe, zranený či mrtvý. {s3}
 menu_animal_ambush_fail|Zvieratá ťa kušu a drápu po tebe {reg0?,: a tvoj spoločník{reg2?s,:,}} ale našťastie sa ti podarilo zahnať ich. Dúfaš, že nezaútočia znovu.
-; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Plain Big (file scn custom 1.sco)
-; mno_scene2|Plain Med (file scn custom 2.sco)
-; mno_scene3|Plain Small (file scn custom 3.sco)
-; mno_scene4|Steppe Big (file scn custom 4.sco)
-; mno_scene5|Steppe Med (file scn custom 5.sco)
-; mno_scene6|Steppe Small (file scn custom 6.sco)
-; mno_scene7|Forest Big (file scn custom 7.sco)
-; mno_scene8|Forest Med (file scn custom 8.sco)
-; mno_scene9|Forest Small (file scn custom 9.sco)
+menu_build_your_scene|Tu si môžeš vybudovať svoje vlastné bojové pole, použitím jedného z voľných slotov, ktoré sú k dispozícií nižšie a v hracom Edit móde (budeš musieť najprv prepnúť Edit mód ON na úvodnej obrazovke M&B v možnosti Nastavenia). Potom môžeš zaslať scény, ktoré si vybudoval (podľa mena, sco súbory z TLD/SceneObj priečinku) týmu vývojárov z TLD, a keď je tvoja scéna dobrá, môže sa objaviť v ďalšom vydaní ako náhodná bojová scéna!^^ Skús špecifikovať v ktorom regióne na mape sveta chceš, aby sa tvoja scéna objavovala.^ Niekoľko rád: vyhni sa hlbokej vode, vysokým horám a iným neprejazdným miestam, pokiaľ nie si skúsený programátor scén a vieš, ako zakázať jednotkám umelej inteligencie, aby šli tam kde ich nechceš, a aby si vytvoril trasy pre umelú inteligenciu v iných miestach.^ (Vstupy #0-1 sú pre útočníkov, #4 pre obrancov, nerob nič s #5-8
+mno_scene1|Pole Veľké (súbor scn custom 1.sco)
+mno_scene2|Pole Stredné (súbor scn custom 2.sco)
+mno_scene3|Pole Malé (súbor scn custom 3.sco)
+mno_scene4|Step Veľká (súbor scn custom 4.sco)
+mno_scene5|Step Stredná (súbor scn custom 5.sco)
+mno_scene6|Mála pláň (súbor scn custom 6.sco)
+mno_scene7|Veľký les (súbor scn custom 7.sco)
+mno_scene8|Stredný les (súbor scn custom 8.sco)
+mno_scene9|Malý les (súbor scn custom 9.sco)
 mno_back_3dot|Späť...
 mno_back|Späť
 mno_next|Pokračovať...

@@ -44,7 +44,7 @@ str_tutorial_2_msg_9|Gratulujeme! Naučil ses jak se bránit se štítem a okusi
 ; str_tutorial_3_msg_6|Congratulations, you still stand despite the enemy's best efforts. The time has now come to attack as well as defend. Approach the door and press the F key when you see the word 'Go'.
 ; str_tutorial_3_2_msg_1|Your axe's attacks have been enabled again. Your first opponent is waiting in the next room. Defeat him by a combination of attack and defence.
 str_tutorial_3_2_msg_2|Poraz nepřítele pomocí sekery.
-; str_tutorial_3_2_msg_3|Excellent. Now the only thing standing in your way is one last opponent. He is in the next room. Move in and knock him down.
+str_tutorial_3_2_msg_3|Výborně. Jediný kdo ti teď stojí v cestě je tvůj poslední soupeř. Najdeš ho v další místnosti. Přesuň se a poraz ho.
 str_tutorial_3_2_msg_4|Poraz nepřítele pomocí sekery.
 ; str_tutorial_3_2_msg_5|Well done! In this tutorial you have learned how to fight ably without a shield. Train hard and train well, and no one shall be able to lay a stroke on you. In the next tutorial you may learn horseback riding and cavalry combat. You can press the Tab key at any time to return to the tutorial menu.
 ; str_tutorial_4_msg_1|Welcome to the fourth tutorial. In this sequence you'll learn about riding a horse/warg and how to perform various martial exercises on horseback. We'll start by getting you mounted up. Approach the horse, and press the 'F' key when you see the word 'Mount'.
@@ -596,7 +596,7 @@ str_npc5_backstory_a|Mohl jsi slyset pribehy o mych cinech v davnych a smrtelnym
 ; str_npc7_backstory_a|Polite of you to ask, {playername}. We are fighting off incursions from Easterlings and Gundabad orcs, but so far nothing we and our Dale allies can't handle.
 ; str_npc8_backstory_a|I'm sure you can find some fine volunteers if you speak to the quartermaster in the barracks. As for me, I'm merely a healer and herbalist of modest skills.
 ; str_npc9_backstory_a|Good for you! They call me Gulm. I have gutted my sergeant and his snaga s now hunt for me.^The worthless piglet had it coming! Once, we got ambushed by a strawheads patrol... and he lost it. 'Fall back' he screams, then flees. Only Gulm and a few others stood firm, and broke their horses charge. Then we bludgeoned the yellow-haired into paste (heh heh heh). But if it wasn't for us strong ones, all would be worm food!
-; str_npc10_backstory_a|I am Durgash!
+str_npc10_backstory_a|Jmenuji se Durgash!
 ; str_npc11_backstory_a|Nar! Not a tracker, that's who. They threw me out! I tell you they've lost their heads, that's what it is. Curse 'em! First they say I shoot wild, then I run too slow, and then I have a useless snuffler. Garn! If they don't find a rabble for me soon I'll be for the Black Pits, if what I hear is true. I'll make sure some of those Bosses lose their skins sooner than putting me in there!
 ; str_npc12_backstory_a|I'm in command of a band of lads up here. I'm Gorbag and you'd best learn quick lubber us Uruks are the real bosses 'round here. The Big Bosses makes slips, 'ay, even the Biggest can make mistakes, and always the poor Uruks to put slips right, and small thanks. They don't even tell us all they know, do they? Not by half. Grr!
 ; str_npc13_backstory_a|I? I am a grain of soil from southern sands, blown north by cold and dark night winds. I am Lykyada, a Serpent Lord of Haradwaith. Lord of the Gold Serpent, bane of the Black Serpent Tribe, now allied to serve the will of the Dark Lord.
@@ -656,7 +656,7 @@ str_npc2_backstory_b|Byl jsem vytrenovan jako strazce Minas Tirith, abych udrzov
 ; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
 ; str_npc17_backstory_later|I've seen a very old pine the other day. Pines can get very old. You have to respect old trees. But I've also seen some that don't respect trees at all. You respect trees, don't you?
 ; str_npc1_backstory_response_1|If you can get leave, I have much need of an experienced warrior and a tracker.
-; str_npc2_backstory_response_1|You are correct, I am looking for volunteers.
+str_npc2_backstory_response_1|Máš pravdu, sháním dobrovolníky.
 ; str_npc3_backstory_response_1|If you can do without ale, I would welcome a good horseman.
 ; str_npc4_backstory_response_1|I would welcome the help of a Rohan shieldmaiden, if offered.
 ; str_npc5_backstory_response_1|It may be presumptuous of me to ask, but my company could use your skill in the coming battles.
@@ -677,7 +677,7 @@ str_npc16_backstory_response_1|Co tady děláš?
 str_npc3_backstory_response_2|Ne, omlouvám se. Hledám někoho více spolehlivého.
 str_npc4_backstory_response_2|Je mi to líto má paní. S tím nemohu nic dělat.
 str_npc5_backstory_response_2|Vrátím se až Lothlórien bude v menším nebezpečí.
-; str_npc6_backstory_response_2|No, sorry. We cannot take hangers-on.
+str_npc6_backstory_response_2|Omlouvám se, ale nemohu přijmout další společníky.
 str_npc7_backstory_response_2|Ne omlouvám se. Vystačíme si sami.
 str_npc8_backstory_response_2|Ne omlouvám se. Navštěvujeme léčitele pouze když je potřebujeme.
 str_npc9_backstory_response_2|Pff. Nevěřím zbabělcům.
@@ -928,7 +928,7 @@ str_npc16_personalitymatch_speech_b|Mám rád {s11}.
 ; str_npc4_rehire_speech|Welcome again. Shall we continue where we left off?
 ; str_npc5_rehire_speech|It's good to see you, {playername}. Let us travel together again.
 ; str_npc6_rehire_speech|It's good to see you, {playername}. Let us walk the same path again.
-; str_npc7_rehire_speech|My axe is ready, {playername}. Shall I rejoin you?
+str_npc7_rehire_speech|Má sekera je ti k službám, {playername}. Můžu se k tobě přidat?
 ; str_npc8_rehire_speech|You are a welcome sight. Shall I join you once again?
 ; str_npc9_rehire_speech|Gulm is ready to kill for you again. Are we going?
 str_npc10_rehire_speech|Mohu ti zase posloužit?
@@ -1937,7 +1937,7 @@ str_gondor_gift0|Čerstvé ovoce a víno
 ; str_gondor_gift4|Auroch War Horns
 ; str_dwarf_gift0|Strong Beer and Rock Salt
 ; str_dwarf_gift1|Hardened Shovels and Axes
-; str_dwarf_gift2|Harps and Flutes
+str_dwarf_gift2|Harfy a flétny
 ; str_dwarf_gift3|Robes Embroidered With Golden Thread and Gems
 ; str_dwarf_gift4|Marvellous Jewelry
 ; str_rohan_gift0|Mead and Apple Wine
@@ -1950,7 +1950,7 @@ str_rohan_gift4|Rohansti kone
 ; str_mordor_gift2|Mordor Fly Larvae
 ; str_mordor_gift3|Orodruin Obsidian
 ; str_mordor_gift4|Farmer Slaves
-; str_isengard_gift0|Dried Human Meat
+str_isengard_gift0|Sušené lidské maso
 ; str_isengard_gift1|Black Iron Chains
 str_isengard_gift2|Mucici nastroje
 ; str_isengard_gift3|Alchemist Glasswork
@@ -1964,8 +1964,8 @@ str_lorien_gift4|Elfi plaste
 ; str_imladris_gift1|Crystal Glassware
 str_imladris_gift2|Miruvor
 ; str_imladris_gift3|Embroidered Banners and Silver-Inlaid Horns
-; str_imladris_gift4|Healing Herbs and Ointments
-; str_woodelf_gift0|Soft Animal Hides
+str_imladris_gift4|Léčivé bylinky a masti
+str_woodelf_gift0|Hladké zvířecí kůže
 ; str_woodelf_gift1|Arrow Heads and Fletching
 str_woodelf_gift2|Lovecka kopi
 ; str_woodelf_gift3|Trained Birds of Prey
@@ -1980,7 +1980,7 @@ str_dale_gift3|Luxusni kuze
 ; str_harad_gift2|Carved Ivory
 ; str_harad_gift3|Sacred Snake Wine
 ; str_harad_gift4|Golden Serpent Statues
-; str_rhun_gift0|Waterskins
+str_rhun_gift0|Čutory
 str_rhun_gift1|Tetovaci inkoust
 ; str_rhun_gift2|Headgear with Horns and Antlers
 ; str_rhun_gift3|Horsehair Whips
@@ -1990,7 +1990,7 @@ str_khand_gift0|Mnohobarevné koření
 str_khand_gift2|Lovecti jestrabi
 ; str_khand_gift3|Ingots of Water Steel
 ; str_khand_gift4|Sacred Warrior Masks
-; str_umbar_gift0|Oysters and Sea Salt
+str_umbar_gift0|Ústřice a mořská sůl
 ; str_umbar_gift1|Whalebone Combs and Fishing Hooks
 str_umbar_gift2|Postelovy otrok
 ; str_umbar_gift3|Sailing Maps of the Southern Seas
@@ -2009,7 +2009,7 @@ str_guldur_gift3|Obří pavoučí vejce.
 ; str_gundabad_gift1|Protective Warpaints
 ; str_gundabad_gift2|Boiled Dwarven Lard
 ; str_gundabad_gift3|Mummified Corpse Idols
-; str_gundabad_gift4|Black Wargs
+str_gundabad_gift4|Černí Vrci
 str_dunland_gift0|Zapáchající kozí sýr.
 ; str_dunland_gift1|Flint Sacrificial Knives
 ; str_dunland_gift2|Bronze Arm Rings
@@ -2017,11 +2017,11 @@ str_dunland_gift3|Kozy
 ; str_dunland_gift4|Wolf Skulls and Claws
 ; str_beorn_gift0|Honey Cakes and Mead
 ; str_beorn_gift1|Bee Wax and Hemp Cloth
-; str_beorn_gift2|Bee Hives
+str_beorn_gift2|Včelí úly
 ; str_beorn_gift3|Amber Necklaces
 ; str_beorn_gift4|Well Trained Ponies
 ; str_cmenu_follow|Accompany
-; str_reset_to_default|Reset to Default
+str_reset_to_default|Obnovit do základního nastavení
 str_done|Hotovo
 str_gondor1|Gondor1
 str_gondor2|Gondor2
@@ -2052,9 +2052,9 @@ str_gondor_end|Gondor1
 ; str_intro_strings_end|Intro END
 ; str_gondor_intro_2|^While travelling to swear service to your liege lord, you chance upon a caravan being attacked by orcs.
 ; str_dwarf_intro_2|^On your way to the gates of Erebor, you chance upon a caravan being attacked by orcs.
-; str_rohan_intro_2|^On your way to Edoras, you chance upon a caravan being attacked by orcs.
+str_rohan_intro_2|Na své cestě do Edorasu si narazil na karavanu pod útokem skřetů.
 ; str_mordor_intro_2|^On your way to the Morannon to report to Lugbúrz, you chance upon some orcs raiding a caravan.
-; str_isengard_intro_2|^On your way to Isengard, you chance upon some orcs raiding a caravan.
+str_isengard_intro_2|Na své cestě do Železného pasu si narazil na skupinu skřetů, kteří přepadávají karavanu.
 ; str_lorien_intro_2|^On your way to Caras Galadhon for an audience with the Lady Galadriel, you come upon some allies preparing to ambush a company of Orcs.
 ; str_imladris_intro_2|^On your way back to the main Rivendell camp after a scouting mission, you come upon some allies preparing to ambush a company of Orcs.
 ; str_woodelf_intro_2|^On your way back to the Elvenking’s Halls after a patrol in the woods, you come upon some allies preparing to ambush a company of Orcs.
@@ -2064,7 +2064,7 @@ str_gondor_end|Gondor1
 ; str_khand_intro_2|^Your fellow Variags have been summoned to the Morannon, the Black Gates that lead into Mordor. You do not relish having to camp so near to filthy honourless orc-kind, but for a time you will oblige. Still, the Lord of Mordor would be foolish indeed not to recognise the worth of your people, and treat you accordingly!^^As you walk through a wooded vale, a sudden small rustling makes you stop. You have heard many tales of the Gondorians who skulk around in these lands, sneaking like cowards - Rangers, they are called. They are deadly with the bow and arrow. Are some of them preparing to ambush your party? You had better sound the warning!
 ; str_umbar_intro_2|^On your way to where the Admiral has established the beachhead fortifications, you chance upon some orcs raiding a caravan.
 ; str_moria_intro_2|^While returning from a scouting mission in the dale, you chance upon some orcs raiding a caravan.
-; str_guldur_intro_2|^On your way to Dol Guldur, you chance upon some orcs raiding a caravan.
+str_guldur_intro_2|Na své cestě do Dol Gulduru si narazil na skupinu skřetů, kteří přepadávají karavanu.
 ; str_gundabad_intro_2|^On your way to Mt. Gundabad, you chance upon some orcs raiding a caravan.
 ; str_dunland_intro_2|^On your way to the main battle-camp of your people, you chance upon some orcs raiding a caravan.
 ; str_beorn_intro_2|^On your way to Beorn’s House, you come upon some allies preparing to ambush a company of Orcs.
@@ -2151,7 +2151,7 @@ str_npc22_backstory_a|Mohl jsi slyset pribehy o mych cinech v davnych a smrtelny
 ; str_npc24_backstory_a|Polite of you to ask, {playername}. We are fighting off incursions from Easterlings and Gundabad orcs, but so far nothing we and our Dale allies can't handle.
 ; str_npc25_backstory_a|I'm sure you can find some fine volunteers if you speak to the quartermaster in the barracks. As for me, I'm merely a healer and herbalist of modest skills.
 ; str_npc26_backstory_a|Good for you! They call me Gulm. I have gutted my sergeant and his snaga s now hunt for me.^The worthless piglet had it coming! Once, we got ambushed by a strawheads patrol... and he lost it. 'Fall back' he screams, then flees. Only Gulm and a few others stood firm, and broke their horses charge. Then we bludgeoned the yellow-haired into paste (heh heh heh). But if it wasn't for us strong ones, all would be worm food!
-; str_npc27_backstory_a|I am Durgash!
+str_npc27_backstory_a|Jmenuji se Durgash!
 ; str_npc18_backstory_b|I prevailed! I defeated them! But... one of them was so weak that he perished from the blows I dealt him. If he had been a simple bondsman, that would have been the end of it. But no. He was one of Great Lord Lurmsakun's many sons, by a lesser wife.
 ; str_npc19_backstory_b|Well, you will not find any of Rohan or Dunland who will accept my claim, but it is a true one nonetheless. My grand-dam was a herdswoman, living in the hills, and one day it chanced that old King Fengel, the greedy grasping grandfather of Theoden the Pretender, happened to see her on the banks of the Isen. He took a fancy to her, and my dam was his child.
 ; str_npc20_backstory_b|Do you not know before whom you stand? Ignorant fool. Know that I am Zigûrphel, of ancient Akallabêth - but like as not you know nothing of that name! Know, also, that I seek to redress the wrongs of long ago, the wrongs wrought upon me and my people by the spite of the Valar, they who sank our Great Armament and our home. Ah, Ar-Pharazôn, great and glorious! Shall your vision be unremembered evermore? No, not so long as Zigûrphel lives and has hands to do her work!
@@ -2197,7 +2197,7 @@ str_npc27_backstory_response_1|Ty to uděláš
 ; str_npc20_backstory_response_2|Pah! I'm guessing your bark is far worse than your bite. I have work to do!
 str_npc21_backstory_response_2|Je mi to líto má paní. S tím nemohu nic dělat.
 str_npc22_backstory_response_2|Vrátím se až Lothlórien bude v menším nebezpečí.
-; str_npc23_backstory_response_2|No, sorry. We cannot take hangers-on.
+str_npc23_backstory_response_2|Omlouvám se, ale nemohu přijmout další společníky.
 str_npc24_backstory_response_2|Ne omlouvám se. Vystačíme si sami.
 str_npc25_backstory_response_2|Ne omlouvám se. Navštěvujeme léčitele pouze když je potřebujeme.
 str_npc26_backstory_response_2|Pff. Nevěřím zbabělcům.
@@ -2358,7 +2358,7 @@ str_npc27_personalitymatch_speech_b|Mám rád {s11}.
 ; str_npc21_rehire_speech|Welcome again. Shall we continue where we left off?
 ; str_npc22_rehire_speech|It's good to see you, {playername}. Let us travel together again.
 ; str_npc23_rehire_speech|It's good to see you, {playername}. Let us walk the same path again.
-; str_npc24_rehire_speech|My axe is ready, {playername}. Shall I rejoin you?
+str_npc24_rehire_speech|Má sekera je ti k službám, {playername}. Můžu se k tobě přidat?
 ; str_npc25_rehire_speech|You are a welcome sight. Shall I join you once again?
 ; str_npc26_rehire_speech|Gulm is ready to kill for you again. Are we going?
 str_npc27_rehire_speech|Mohu ti zase posloužit?

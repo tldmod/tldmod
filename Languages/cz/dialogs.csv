@@ -922,10 +922,10 @@ dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Omluvám se. Zro
 dlga_start:close_window.23|Pokryjeme zbytek cesty samy. Díky.
 ; dlga_start:close_window.24|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
 dlga_start:merchant_caravan_intro_1|Zdravím. Ty musíš být náš doprovod, že?
-; dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Yes. My name is {playername}. I will lead you to {s1}.
+dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Ano. Jmenuji se {playername}. Doprovodím vás do {s1}.
 ; dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Well, It is good to know we won't travel alone. What do you want us to do now?
-; dlga_start:escort_merchant_caravan_talk|Eh. We've made it this far... What do you want us to do?
-; dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|You follow my lead. I'll take you through a safe route.
+dlga_start:escort_merchant_caravan_talk|Eh. Nikdy jsme se nedostali tak daleko... Co chceš abychom udělali?
+dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Následujte mě. Povedu vás bezpečnou cestou.
 dlga_merchant_caravan_follow_lead:close_window|Dobře. Budeme hned za tebou.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Počkej tu, půjdu napřed a prozkoumám cestu.
 dlga_merchant_caravan_stay_here:close_window|Dobře, počkáme tu na tebe.
@@ -1006,7 +1006,7 @@ dlga_town_dweller_talk:town_dweller_ask_rumor|Jaké jsou tady nejnovější zvě
 ; dlga_town_dweller_brawl_confirm:close_window.1|No, I thought you were someone else.
 dlga_town_dweller_talk:close_window|[Odejít.]
 dlga_start:player_castle_guard_talk|Ano, veliteli ?
-; dlga_player_castle_guard_talk:player_castle_guard_talk_2|How goes the watch, soldier?
+dlga_player_castle_guard_talk:player_castle_guard_talk_2|Jak jde hlídka, vojáku?
 ; dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|All is quiet Commander. Nothing to report.
 dlga_player_castle_guard_talk_3:close_window|Dobře. Mějte své oči otevřené.
 ; dlga_start:close_window.26|Good day, Commander. It's good having you here in {s10}.

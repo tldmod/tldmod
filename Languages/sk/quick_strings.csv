@@ -65,15 +65,15 @@ qstr_Select_your_Race?|Za akú rasu chceš hrať?
 qstr_Man|Človek
 qstr_Elf|Elf
 qstr_Dwarf|Trpaslík
-qstr_Whom_Do_You_Serve?|Kto slúži?
+qstr_Whom_Do_You_Serve?|Komu slúžiš
 qstr_SAURON_of_Mordor_The|SAURON z Mordoru, Pán prsteňov
-qstr_SARUMAN_of_Isengard_|SARUMAN z Isengard, biela ruka
+qstr_SARUMAN_of_Isengard_|SARUMAN z Isengardu, Biela ruka
 qstr_an_ORC^_serving_the_|Ohyzd, ktorý slúži Oku bez viečka
-qstr_an_URUK^_the_new_bre|URUK, - nové plemeno orkov
-qstr_a_MAN^_subjugated_by|Člověk, podriadený Sauronom
-qstr_an_ORC^_serving_the_W|ORC, ktorý slúži bielej ruke
-qstr_an_URUK_HAI^_bred_in|URUK-HAI, ktorý sa narodil v Isengarde
-qstr_a_MAN_of_Dunland^_th|muž z Dunlandu, Západné planiny
+qstr_an_URUK^_the_new_bre|URUK,^ nové plemeno ohyzdov
+qstr_a_MAN^_subjugated_by|ČLOVEK,^ podriadený Sauronovi
+qstr_an_ORC^_serving_the_W|OHYZD,^ slúžiaci Bielej ruke
+qstr_an_URUK_HAI^_bred_in|URUK-HAI,^ odchovaný v Isengarde
+qstr_a_MAN_of_Dunland^_th|ČLOVEK z Vrchoviny,^ Západné planiny
 qstr_Click_the_center_but|Klikaj na prostredné tlačítko pre vybratie frakcie^Klikni na obrázok frakcie, pokiaľ o nej chceš vedieť viac.
 qstr_Level:_{reg3}^Health|Úroveň: {reg3}^Život: {reg4}
 qstr_Attributes|Vlastnosti
@@ -85,20 +85,20 @@ qstr_1H_Weapons^2H_Weapon|1R Zbrane^2R Zbrane^Týčové zbrane^Lukostreľba^Kuš
 qstr_Equipment|Vybavenie
 qstr_The_Last_Days_Mod_Op|Možnosti The Last Days Módu
 qstr_War_Starts_at_Level:|Vojna začína na úrovni:
-qstr_Restrict_Player_Equi|Obmedzte možnosti prehrávača:
+qstr_Restrict_Player_Equi|Obmedziť vybavenie hráča:
 qstr_Battle_Formations_an|Bojové formácie a AI:
-qstr_Native|Native 
+qstr_Native|Pôvodný
 qstr_TLD_FormAI__Original|TLD FormAI (originál)
 qstr_TLD_New_FormAI|TLD Nová FormaAI
 qstr_Advanced_Siege_AI:__|Rozšírené obliehanie AI:
 qstr_On|na
 qstr_Town_NPCs_Always_Acc|Mestské NPC vždy dostupné z menu:
-qstr_Cutscenes:__|filmové scény:
+qstr_Cutscenes:__|Filmové scény:
 qstr_Injuries_for_compani|Zranenia pre spoločníkov:
 qstr_Permanent_death_for_|Trvalá smrť pre pánov a spoločníkov:
-qstr_Permanent_death_for_p|Trvalá smrť hráča (to jsi ty!): 
+qstr_Permanent_death_for_p|Trvalá smrť hráča (to si ty!): 
 qstr_Battle_morale_system|Systém bojovej morálky
-qstr_Animal_ambushes:__|Zvieracie zálohy:
+qstr_Animal_ambushes:__|Zvieracie prepady:
 qstr_Fallen_rider_damage_|Správa o poškodení jazdca:
 qstr_No_Messages|Žiadne správy
 qstr_Player_damage_only|Iba poškodenie hráča
@@ -159,7 +159,7 @@ qstr_Useful_Tool_of_{s5}|Cenný nástroj {s5}u
 qstr_Servant_of_{s5}|Služobník {s5}u
 qstr_Unknown_to_{s5}|Neznámy v {s5}e
 qstr_You_have_been_{reg1?|Bol si {reg1?povýšený:degradovaný} na {s24} ({reg0})!
-; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.
+qstr_You_{reg1?earned:los|{reg1?Získal si:Stratil si} {reg11} bodov hodnosti {reg12?a {reg12} vplyvu :}s tvojou rodovou frakciou {s11}.
 qstr_You_{reg1?earned:lost|{reg1?Ziskáváš:Strácaš} {reg11} bodov Hodnosti {reg12?a {reg12} Vplyvu :}v {s11}.
 qstr_You_spent_{reg10}_of|Použil si {reg10} tvojho Vplyvu v {s1}, zostáva ti {reg11}.
 qstr_Troop_upkeep:|Žold vojaka:
@@ -194,29 +194,29 @@ qstr_+1_to_Power_Strike|+1 k Mocnému úderu
 qstr_+1_to_Strength|+1 k Sile
 qstr_+1_to_Agility|+1 k Pohyblivosti
 qstr_+1_to_Leadership|+1 k Vodcovstvu
-qstr_+1_to_Wildcraft|+1 na Wildcraft
+qstr_+1_to_Wildcraft|+1 k Lesníctvu
 qstr_+1_to_Power_Draw|+1 k Silnému napnutiu
-; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
-; qstr_Who_might_be_interes|Who might be interested in this?
-qstr_Turns_nature_to_your|Otočí prírodu na svoju stranu (efektívne váhy so systémom Wildcraft)
+qstr_The_record_of_Balin_|Kronika Balinovej stratenej výpravy.
+qstr_Who_might_be_interes|Koho by to zaujímalo?
+qstr_Turns_nature_to_your|Schopnosť postarať sa o seba v prírode (účinok sa zvyšuje spolu s Lesníctvom)
 qstr_+1_to_Trainer|+1 k Trénerovi
-qstr_Recruits_Tribal_Orcs|Najať Klanových ohyzdov
+qstr_Recruits_Tribal_Orcs|Najať Kmeňových Ohyzdov
 qstr_rally|vyburcovať
 qstr_rallies|inšpiruje
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} v boji
 qstr_+1_to_Charisma|+1 k Charisme
 qstr_+1_to_Surgery|+1 k Chirurgii
-; qstr_+1_to_Intelligence|+1 to Intelligence
+qstr_+1_to_Intelligence|+1 k Inteligencii
 qstr_+1_to_Ironflesh|+1 k Valibukovi
 qstr_+1_to_Prisoner_Mgmt|+1 k Väzneniu
 qstr_when_equipped|pokiaľ je nasadené
-; qstr_+1_to_Riding|+1 to Riding
-; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_+1_to_Riding|+1 k Jazdectvu
+qstr_+1_to_Mounted_Archer|+1 k Streľbe v sedle
 qstr_+2_to_Tactics|+2 k Taktike
-; qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
-; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
-; qstr_+1_to_Spotting|+1 to Spotting
-; qstr_+2_to_Athletics|+2 to Athletics
+qstr_+{reg1}_to_Spotting|+{reg1} k Ostražitosti
+qstr__Scales_with_Wildcra|(zvyšuje sa spolu s Lesníctvom)
+qstr_+1_to_Spotting|+1 k Ostražitosti
+qstr_+2_to_Athletics|+2 k Atletike
 qstr_Less_Dunnish_upkeep|Menší žold Vrchovcov
 qstr_Less_Wargs_upkeep|Menší žold vrrkov
 qstr_Light_Armor|Ľahké brnenie
@@ -230,7 +230,7 @@ qstr_nothing|nič
 qstr_Good|Dobrý
 qstr_Med|Stredný
 qstr_Bad|Zlý
-; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
+qstr_You_gained_{reg84}_e|Získal si {reg84} skúseností vďaka svojej inteligencii
 qstr_{reg4}_killed_{reg5}|{reg4} mŕtvych, {reg5} ranených, {reg6} zbehlo 
 qstr_{reg4}_killed_{reg5}_|{reg4} mŕtvych, {reg5} ranených
 qstr_{reg4}_killed_{reg5}_r|{reg4} mŕtvych, {reg5} zbehlo
@@ -251,7 +251,7 @@ qstr_in_sight_of_the_Mora|v pohľade na Morannon, Čiernu bránu Mordoru
 qstr_in_sight_of_Dol_Guld|v očiach Dol Guldur, severnej pevnosti Sauron
 qstr_on_the_green_pasture|na zelených pasienkoch a mnohých kvetinových lúkach obklopujúcich Beornov dom
 qstr_on_the_shores_of_Lak|na brehoch jazera Mirrormere, v blízkosti východnej brány Moria
-qstr_on_the_shores_of_the|na brehoch dlhého jazera, pri pohľade na Esgaroth, Laketown
+qstr_on_the_shores_of_the|na brehoch Dlhého Jazera, pri pohľade na Esgaroth, Jazerné mesto
 qstr_near_the_coast_of_Go|v blízkosti pobrežia Gondoru. Môžete počuť vzdialený zvuk vln a výkriky čajok.
 qstr_in_the_outskirts_of_|na predmestiach Osgilliathu, bývalého hlavného mesta Gondoru
 qstr_in_sight_of_the_entr|na dohľad k vstupu do Ereboru, trpasličej pevnosti
@@ -427,7 +427,7 @@ qstr_Rich|Bohatý
 qstr_Very_Rich|Veľmi bohatý
 qstr_Strength|sila 
 qstr_Agility|obratnosť
-qstr_Intelligence|inteligence 
+qstr_Intelligence|Inteligencia
 qstr_Charisma|charizma
 qstr_You_ve_gained_{s6}_f|Získali ste {s6} z získania {s7}
 qstr_You_ve_lost_{s6}_fro|Ztratili ste {s6} zo straty {s7}
@@ -611,23 +611,23 @@ qstr_Many_of_your_troops_|Väčšina tvojich jednotiek uteká z boja.
 qstr_Some_of_your_troops_|Niekoľko tvojich jednotiek uteká z boja.
 qstr_A_few_of_your_troops|Malá časť tvojích jednotiek uteká z boja.
 qstr_Gained_permanent_+1_to_P|Získal trvalé hodnotenie +1 pre Hľadanie cesty. 
-qstr_Gained_permanent_+1_to_S|Získal +1 pre bodovanie.
-qstr_{s11}_recovered_from|{s11} sa zotavil zo závažnej rany.
+qstr_Gained_permanent_+1_to_S|Získal +1 pre bodovanie Ostražitosti.
+qstr_{s11}_recovered_from|{s11} sa zotavil zo závažného zranenia.
 qstr_Volunteers|Dobrovoľníci
-qstr_Reserves|rezervy
+qstr_Reserves|Zálohy
 qstr_have_taken_measure_o|vzali si súčasnú silu vašej frakcie a stali sa odvážnejšou.
 qstr_loses_Faction_Streng|stráca silu frakcie, pretože dodávky boli narušené.
 qstr_loses_Faction_Strengt|stráca silu frakcie kvôli zničeniu ich tábora.
 qstr_gains_Faction_Streng|získava silu frakcie ako správy o vašom víťazstve.
-qstr_Something_wrong_not_|Niečo zle, nie je dostatok vojakov na odstránenie
+qstr_Something_wrong_not_|Chyba, nedostatok jednotiek na zostavenie prieskumníckej skupiny.
 qstr_Raiders|nájazdníkov
 qstr_have_won_the_sea_bat|vyhrali morskú bitku, demoralizovali svoje jednotky. Nepriateľ môže využiť túto porážku a útok častejšie.
 qstr_loses_Faction_Strength|stráca silu frakcie v dôsledku ničivého náletu.
 qstr_loses_Faction_Strength_|stráca silu frakcie kvôli vášmu úspechu na mori.
 qstr_You_spent_{reg67}_of|Strávil si {reg 67} svojho vplyvu s {s1}, pričom zostal {reg 66}.
-; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
-; qstr_{s1}_{s0}|{s1}, {s0}
-; qstr_{s1}_and_{s0}|{s1} and {s0}
+qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?bol:je vôkol {s5}.
+qstr_{s1}_{s0}|{s1}, {s0}
+qstr_{s1}_and_{s0}|{s1} a {s0}
 qstr_No_Troops_Left.|Neostávajú žiadne jednotky.
 qstr_avoid_melee|vyhnúť sa bitky na blízko 
 qstr_stand_and_fight|postaviť sa a bojovať
@@ -688,21 +688,21 @@ qstr_Your_mount_stumbles!|Tvoje jazdecké zviera sa zasekáva! Zdá sa, že je c
 qstr_Bitten_by_your_own_w|Tvoj vrrk ťa pohryzol! 
 qstr_You_weigh_too_much_f|Na poníka si príliš ťažký!
 qstr_Your_mount_rears_ref|Tvoje jazdecké zviera sa vzpätilo, nechce ťa poslúchať!
-; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
-; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
+qstr_Cannot_Change_Camera|V prvej osobe nie je možné zmeniť mód kamery.
+qstr_Switch_Back_to_3rd_P|Pre otočenie kamery prejdi späť do pohľadu 3tej osoby.
 qstr_Fixed_Custom_Camera|Upravená Vlastná Kamera
 qstr_Press_Ctrl_+_Left_/_|Stlač Ctrl + Ľavú / Ctrl + Pravú šipku klávesy pre prepnutie pohľadu cez rameno.
-; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
+qstr_Press_Ctrl_+_Down_to|Klikni Ctrl + Dole pre Stred
 qstr_Use_+/__to_zoom_in/o|Stlač +/- pre približovanie/odďaľovanie
 qstr_Use_Up/Down_arrow_ke|Stlač Hornú/Dolnú šipku pre posúvanie kamery hore/dole
 qstr_Fixed_Camera___Right|Upravená kamery - Pravé rameno
 qstr_Fixed_Camera___Left_|Upravená kamera - Ľavé rameno
-; qstr_Fixed_Camera___Cente|Fixed Camera - Center
+qstr_Fixed_Camera___Cente|Kamera upevnená - Stred
 qstr_While_visiting_towns|Behom návštevy miest, usadlostí a táborov si môžeš pohovoriť s okoloidúcimi. Členovia rôznych frakcií ti povedia rôzne veci - niektorí ti vyrozprávajú svoje myšlienky, iní budú šíriť drby. Obe tieto veci ti dajú čiastočný prehľad, aby si dokázal lepšie pochopiť kultúru frakcie osoby, s ktorou rozprávaš, alebo ti môžu čo-to prezradiť o tajných miestach a zákutiach v danej frakcii, či dať tipy a triky pre cestovanie divočinou a bojovaní vo Vojne o Prsteň.
 qstr_Cannot_leave_now.|Teraz nemôžeš odísť.
-; qstr_You_have_found_the_l|You have found the local smithy.
-; qstr_You_have_found_the_lo|You have found the local authority.
-; qstr_You_have_found_the_loc|You have found the local warehouse.
+qstr_You_have_found_the_l|Našiel si miestneho kováča...
+qstr_You_have_found_the_lo|Našiel si miestnu autoritu...
+qstr_You_have_found_the_loc|Našiel si miestne skladisko...
 qstr_You_look_through_Hen|Hľadíš skrz Henneth Annun, Okno zapadajúceho slnka. Prekrásny výhľad v tebe obnoví vieru v Západ a Moc za Veľkým morom.
 qstr__cancelled_the_{reg1|(zrušených {reg10} exp. bodov získaných za zabitie väzňov)
 qstr_Forming_ranks.|Formujú línie
@@ -721,7 +721,7 @@ qstr_A_Nazgul_is_circling|Jeden Nazgúl krúži na oblohe nad bojiskom!
 qstr_Some_of_your_human_t|Niektoré ľudské jednotky nie sú zastrašené temnotou.(Nočné Jednotky nie sú postihnuté nočnými nevýhodami)
 qstr_You_are_filled_with_|Ovládne ťa nespútaný hnev už len pri pohľade na tvojho soka (Berserk aktívny)
 qstr_Your_mount_is_scared|Tvoje jazdecké zviera je splašené hrúzou z {reg73?enta:zlobra}!
-; qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
+qstr_Your_mount_is_scared_|Tvoje Jazdecké zviera je splašené {reg73? Entom:zlobrom}, Ale dokážeš ho ovládať!
 qstr_Nazgul_sweep!|Nazgúl škrieka!
 qstr_You_and_your_horse_p|Ty a tvoj kôň ste v zmätku, Nazgúlov škrek je neznesiteľný!
 qstr_Your_horse_panics_th|Tvôj kôň sa plaší, Nazgúlov škrek je neznesiteľný!
@@ -795,7 +795,7 @@ qstr_The_sorcerer_is_flee|Černokňažník uniká! Zabi ho!
 qstr_The_sorcerer_has_joi|Černokňažník sa pridal do boja! Zabi ho!
 qstr_The_sorcerer_is_dead|Černokňažník je mŕtvy!
 qstr_The_battle_is_won!|Zvíťazil si v boji!
-qstr_A_band_of_tribal_orc|Skupina kmeňových ohyzdov sa objavila!
+qstr_A_band_of_tribal_orc|Skupina Kmeňových Ohyzdov sa objavila!
 qstr_Gaaaar!!_We_wants_th|Gaaaar!! Chceme ľudské mäso!
 qstr_{s31}_scouts_have_ap|{s31} prieskumníci sa objavili!
 qstr_Those_are_ours!_We_h|Tí sú naši! Stopovali sme ich od doby, čo odišli! Nikto nám nebude stáť v ceste!
@@ -885,7 +885,7 @@ qstr_Quadrupled|Štvornásobné
 qstr_You_drank_the_Ent_Wa|Vypil si Entskú vodu...
 qstr_Fangorn_search:_fail|Skúmanie Farngornu: neúspešné.
 qstr_^^^A_great_victory!^|^^^Veľké víťazstvo!^^^Tak o tomto hovorili všetky tie legendy Farngornu... 
-; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
+qstr_^^^Defeated...^^^Sca|^^^ Porazený ... ^^^ Zatúlaný vo Fangornskom Lese ... Osamotený ...
 qstr_Troll_caged_in_wheel|Zlobor uväznený vo voze.
 qstr_A_second_troll_is_ca|Druhý zlobor uväznený vo voze.
 qstr_Here_you_are.|Tak tu si.
@@ -916,7 +916,7 @@ qstr_You_are_attacking_a_|Útočíš na skupinu {s1}.
 qstr_The_battle_against_t|Bitka proti skupine {s1} pokračuje.
 qstr_There_are_{reg39}_al|Na bojovom poli si sa ocitol v prítomnosti {reg39} spojeneckých veliteľov. Môžeš stáť v čele ich družín za {reg40} bodov vplyvu.
 qstr_Having_a_small_party|Vedenie malej družiny má svoje výhody...Ty a tvoje jednotky sa schovávate niekoľko hodín pred nepriateľmi, aby ste sa uistili, že vás nik nespozoruje.
-; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
+qstr_Your_ability_to_mast|Tvoja schopnosť nájsť v prírodnom prostredí vhodný úkryt. (Tvoja úroveň v Lesníctve ti umožňuje schovať sa s {reg1} jednotkami)
 qstr_{reg4}_will_be_lost.|{reg4} zahynie.
 qstr_{s13}_asked_you_to_r|{s13} ťa žiada, aby si sa k nemu dostavil najmenej s {reg13} jednotkami.
 qstr_{s13}_ordered_you_to|{s13} ti prikazuje, aby si sa pridal k útoku proti {s14}.
@@ -1020,7 +1020,7 @@ qstr_You_have_evaded_the_|Vyhol si sa prieskumníkom a dostal si sa blízko k ru
 qstr_You_have_found_the_s|Našiel si černokňažníka!
 qstr_You_cannot_leave_unt|Nemôžeš odísť, dokiaľ ťa stráže vidia!
 qstr_Kill_him_quickly_bef|Rýchlo, zabite ho pred tým, než unikne!
-qstr_Enraged_by_the_death|Smrť {s4}a v tebe vznietila neskrotný plameň, skladáš prísahu pomsty armádam {s3}u. V nasledujúcich dňoch musíš zničiť čo najviac jednotiek {s3}u. Si si vedomý toho, že tvoji muži nadšene prizerali učineniu sľubu a ty nechceš byť známy ako krivoprísažník. Zafarbi rieky, potoky a bystriny krvou svojich nepriateľov!
+qstr_Enraged_by_the_death|Smrť {s4}a v tebe vznietila neskrotný plameň, skladáš prísahu pomsty armádam {s3}u. V nasledujúcich dňoch musíš zničiť čo najviac jednotiek {s3}u. Si si vedomý toho, že tvoji muži nadšene prizerali učineniu sľubu a ty nechceš byť známy ako krivoprísažník. Zafarbi rieky, potoky i bystriny krvou svojich nepriateľov!
 qstr_flooded._Somebody_or|Potopené. Niekto či niečo muselo zničiť priehrady Železného pasu.
 qstr_destroyed._Only_smol|Zničené. Ostali len tlejúce ruiny.
 qstr_^^^You_lost_your_fig|^^^Prehral si súboj so vzbúrencom! ^Zdá sa, že tvoji ohyzdi majú nového veliteľa.
@@ -1073,7 +1073,7 @@ qstr_A_little_after_you_f|Po tom, čo si sa prebral po dúšku jedovatej vody od
 qstr_Ent_water_effect.|Efekt entskej vody.
 qstr_The_water_you_drank_|Dúšok vody, ktorú si prijal od Entov, pôsobí na tvoje telo zvláštne. Neveril si, že je to možné, ale teraz, keď si sa o tom presvedčil na vlastnej koži, o tom nie je pochyb: vyrástol si! Jed ťa však skoro zabiť. Už nikdy takto nebudeš riskovať.
 qstr_Ent_water_effect:_in|Efekt entskej vody: si vyšší
-qstr__+1_to_Strength__per|+1 k Síle (navždy)
+qstr__+1_to_Strength__per|+1 k Sile (navždy)
 qstr__+1_to_Charisma__per|+1 k Charisme (navždy)
 qstr_The_dark_shadow_fina|Tieň sa konečne premenil na búrku, temné vojská pochodujú v ústrety slobodným rasám Stredozeme. Mordor proti Gondoru na Juhu, Isengard proti Rohanu na Západe, Dol Guldur proti Elfom... Dokonca i na vzdialenom Severe sa vedie vojna.
 qstr_The_War_has_started!|Vojna započala!
@@ -1111,16 +1111,16 @@ qstr_Um..._by_enchanting_|Um... očarovaním železa?
 qstr_Magnets_are_made_of_|Magnety sú vyrábané z kovu, ktorý sa ťaží zo zeme, a tá obsahuje magnetické čiastočky. Preto je kov magnetický.
 qstr_i_wont_a_bonerlrord_|Kcem tendo mót kompatibiľní s Bannerlod!!11!
 qstr_Install_TLD_in_your_|Nainštaluj si TLD do priečinku Bannerlord Modules, pridaj riadok 'compatible_with_wfas = 1' do module.ini, a tak budeš môcť hrať TLD na Warbande i na Warrideri 0.202!
-; qstr_Bannerlord_runs_on_a|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Bannerlord_runs_on_a|Bannerlord beží na inom engine. Preto nie sme schopní dať TLD na Bannerlord tak ako sme ho dali na Warband.
 qstr_dis_mod_takes_2_long|Na dendo mót je treba šakaď 2 hodiny! To ie na prd!!11!
 qstr_Well_there_s_a_lot_o|Nuž, je v ňom veľa nových grafickým modelov a iných vecičiek. Asi to nejakú tu chvíľu potrvá.
 qstr_It_has_been_recently|Bol nedávno vydaný. Pokiaľ ti chýba odkaz, môžeš si ho stiahnuť na lemonparty.org.
 qstr_i_wont_decapitated_e|Kcem bezhlavích slonov v multi, hneť!!!11!
 qstr_I_don_t_think_there_|V TLD hra pre viac hráčov nie je, ale slony by boli fajn.
 qstr_There_is_a_hidden_el|V TLD móde existuje si môžeš zahrať súboj slonov na život a na smrť, ale najprv musíš vymazať všetky svoje uložené hry, odohrať 100 herných dní bez uloženia, potom ísť do obrazovky úprav postavy, a stisnúť Alt+F4. Stojí to za to!
-; qstr_Y_NO_ChINESE??|Y NO ChINESE??
-; qstr_Just_to_troll_you_tr|Just to troll you, troll!
-; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
+qstr_Y_NO_ChINESE??|Ty NIE si Číňan ??
+qstr_Just_to_troll_you_tr|Len aby som ťa potrolil, trol!
+qstr_Thanks_to_our_volunt|Ďakujeme našim dobrovoľným prekladateľom.
 qstr_Wai_no_plate_armour_|Počkať, v tomto móde nie je plátové brnenie???
 qstr_What_is_plate_armour|Čo to je plátové brnenie? Nikdy som i niečom takom nepočul.
 qstr_Wai_no_female_trolls|Počkať, žiadne zlobrie samice? Eh? Eh? Ty moja dievčica!
@@ -1130,7 +1130,7 @@ qstr_YES!_ALSO_SOMETIMES_|ÁNO! TIEŽ NIEKEDY JE!
 qstr_Wai_u_no_work_wiht_o|Poškaď, to nepracujede z ostatními mótmi aby ste vytvoriľy super LOTR mót?
 qstr_Every_mod_team_works|Každý módovací tým pracuje podľa ich štandardov. Nemôžeš spolupracovať s niekým, kto má rozdielne ciele. 
 qstr_Because_we_don_t_hav|Pretože nemáme zmysel pre humor a väčšina z nich je pre nás príliš smiešna.
-qstr_In_movies_trolls_are|Vo filmoch sú zlobri veľkí a macatí, prečo ste z nich urobili špáradlá? 
+qstr_In_movies_trolls_are|Vo filmoch sú zlobri veľkí a macatí, prečo ste zo mňa urobili špáradlo? 
 qstr_We_interpreted_Tolki|Urobili sme ich podľa Tolkiena.
 qstr_But_we_did_make_you_|Ale urobili sme ťa hlúpym podobne ako vo filmoch. Bod pre nás, dobrá práca.
 qstr_What_is_news?_Got_an|Máte nejaké novinky? A screenshoty?
@@ -1152,7 +1152,7 @@ qstr_Pippin_asked_you_to_|Pipin ťa požiadal, aby si doručil dopis jeho bratra
 qstr_Tell_him_I_ve_grown_|Odkáž mu, že som už vyrástol o celý palec!
 qstr_Tell_Pip_he_smokes_t|Odkáž Pipovi, že príliš fajčí!
 qstr_Tell_him_I_can_ride_|Odkáž mu, že už dokážem jazdiť na dospelom koni!
-qstr_Ask_him_if_he_has_an|Nezabudni sa ho spýtať, či mu neostal ešte nejaký fajkový tabák!
+qstr_Ask_him_if_he_has_an|Nezabudni sa ho spýtať, či mu neostal ešte nejaký fajkový tabak!
 qstr_Tell_him_I_ll_be_the|Odkáž mu, že keď sa nabudúce uvidíme, budem ja ten vysoký!
 qstr_Ask_if_he_s_seen_Gan|Spýtaj sa ho, či videl Gandalfa!
 qstr_You_gained_250_exper|Získal si 250 skúseností.
@@ -1169,15 +1169,15 @@ qstr_Good_day_to_you.|Dobrý deň prajem.
 qstr_Ah_it_s_you_again._G|Ah, to si zase ty. Dovidenia.
 qstr_My_apologies_if_I_wa|Ospravedlňujem sa, pokiaľ som bol pred tým hrubý. Rozpovieš my ešte raz tvoj príbeh?
 qstr_I_was_reconsidering_|Prehodnotil som náš posledný rozhovor. Rozpovieš my ešte raz tvoj príbeh?
-; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
+qstr_Zigrphel_gained_{reg|Zigûrphel získal {reg78} skúseností.
 qstr_Greetings_{s23}_{s24|Pozdravujem, {s23}, {s24}.
 qstr_Greetings_{s23}.|Pozdravujem, {s23}.
 qstr_So_you_are_{s23}._I_|No, takže ty si {s23}. Dopočul som sa, že bojuješ za našich {s25} priateľov. Predpokladám teda, že by som ťa mal považovať za spojenca.
 qstr_I_need_volunteers_wi|Potrebujem dobrovoľníkov, ktorý by ma následovali na nebezpečných výpravách.
 qstr_I_need_some_soldiers|Potrebujem nových mužov aby nahradili mŕtvych.
 qstr_{playername}_s_Reser|{playername}ove zálohy.
-; qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
-; qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
+qstr_Maybe_the_weaklings_|Možno tí slaboši z juhu dali brnenie na svojich jemných zlobrov. My nie - naši zlobri sú z Gundabádu!
+qstr_Do_I_look_like_a_smi|Vyzerám pre teba ako kováč? Ha. Choď sa s jedným porozprávať.
 qstr_Excellent_job_{s23}!|Výborná práca, {s23}! Kiežby boli všetci naši velitelia oddaní ako ty.^
 qstr_Nicely_done_{s23}.|Pekná práca, {s23}.
 qstr_Good_work_{s23}.|Dobrá práca, {s23}.
@@ -1205,9 +1205,9 @@ qstr_It_is_my_duty_to_prot|Je mojou povinnosťou chrániť našich spojencov.
 qstr_I_am_{s4}_{s15}_of_{|Som {s4}, {s15} z {s6}u
 qstr_I_am_{s4}_a_commande|Som {s4}, veliteľ {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? a panovník {s8}.:.
-; qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
+qstr__{s3}_gained_{reg78}| {s3} získal {reg78} skúseností.
 qstr_{playername}_our_sco|{playername}, naši priezkumníci nám zvestovali tvoje víťazstvo. Bodaj by ťa skrz tento deň oslavovali až do tvojich požehnaných rokov. Porážka vojsk z {s7} tvojou rukou spomalila postup nepriateľov. Dúfajme, že v ich šíkoch zavládla neistota a velitelia zakolísali. V ich srdciach si si vyslúžil dôvodný strach. A v neposlednom rade si povzbudil nášho ducha.
-; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
+qstr_Well_{playername}_yo|Nuž, {playername}, vrátil si sa, a s dobrými správami, zdá sa. Vidím, že ťa neukuli len z chvástov a zhonu - ach, kiežby som bol videl pád {s7} na vlastné oči! Naši nepriatelia sú určite zúfalí a skľúčení. Stratili rozum a pomiatli sa, tým som si takmer istý. Ako sa hovorí, utni hadovi hlavu a je po všetkom. Nuž, teraz musím doviesť svojich mužov k ozajstnému víťazstvu. Tvoja pomoc nebude opomenutá, {playername}, a pripočítaná k tvojím ďalším zásluhám. O to sa neboj.
 qstr_Alas_that_I_could_no|Škoda že som nedokázal priviesť {s7} z {s8} k ich koncu, ale pokiaľ sa s nimi ešte niekedy stretneme, neváhajme.
 qstr__I_should_rather_mak|Ohlásenie o mojom víťazstve nad {s7} z {s8} by som mal urobiť radšej ja sám - sláva patrí mne a vy na to nezabudnete!
 qstr_Very_well_done_{play|Výborná práca, {playername}! Chytil si špeha i jeho navádzača, presne ako som dúfal. Tento párik teraz trčí v cele čakajúc na výsluch. Budú nám musieť vysvetliť niekoľko vecičiek. Tak či onak, som nadmieru spokojný s tvojím úspechom, {playername}. Dám ti tento mešec ako znak môjho uznania.
@@ -1267,7 +1267,7 @@ qstr_Ah_{playername}_it_i|Ah, {playername}, som rád, že prichádzaš. Vojna je
 qstr_About_time_you_showe|Doteperil si sa práve včas, {playername}. Sme vo vojne a ja nebudem trpieť žiadne spurné výstrely. Bojujeme proti {s11}, ale musíme zhromáždiť naše sily a rozdrviť nepriateľov na bojovom poli než si budeme môcť zgustnúť na ich pevnostiach. Každé víťazstvo nad nimi je krokom k ich zhube a nášmu víťazstvu. Takže dúfam, že ak na teba narazia, či už to bude len cháska zvedov alebo i celá vojnová družina, budú o hlavu kratší. Taktiež pomôž našim veliteľom a spojenco, ak ich uvidíš zápoliť. Sklam ich a ja sa to dozviem.
 qstr_we_are_fighting_agai|Vedieme vojnu proti {s13}
 qstr_we_are_not_fighting_|momentálne s nikým nebojujeme
-; qstr__{s14}_gained_{reg78| {s14} gained {reg78} experience.
+qstr__{s14}_gained_{reg78|{s14} získal {reg78} skúseností.
 qstr_Oh?_Let_me_see_that.|Oh? Ukáž mi ho.. Výborne! Je dobre, že si mi ho doručil, {playername}. Tuto, moja pečať ako dôkaz že som dopis obdržal, pozdravuj {s9} keď sa znova stretnete.
 qstr_Give_me_that!_Hrmph!|Daj to sem! Hrmph! Je dobré, že si mi ho doručil, {playername}, si užitočným služobníkom. Povedz {s9}, aby ti udeľoval prácu častejšie.
 qstr_What?_Let_me_see_tha|Čo je? Ukáž mi ho... Hmmm. Veľmi dobre, že si mi ho priniesol, {playername}. A teraz zmizni.
@@ -1381,7 +1381,7 @@ qstr_{playername}_you_nee|{playername}, získaj si u mňa i svojej družiny vá�
 qstr_{s9}_wants_you_to_per|{s9} chce, aby si osobne zabil {reg22} {s6} jednotiek.
 qstr_{s9}_wants_you_and_y|{s9} chce, aby si so svojimi mužmi zabil {reg22} {s6} jednotiek.
 qstr_{playername}_we_have_|{playername}, doniesli sa k nám temné zvesti. Korzári z Umbaru nadobudli síly a ako hovoríme, ich flotila sa zhromaďžuje v bezprostrednej blízkosti {s6}. Už pľundrujú pobrežie a onedlho sa napadnú i samotné mesto.^^ Musíme zadržať flotilu než sa dostane k mestu. Poponáhľaj sa do {s6} a prehovor s miestnymi predákmi.
-qstr_{playername}_we_have_r|{playername}, doniesli sa k nám temné zvesti. Divosi z Rhûnu sú odvážni a prefíkaní viac, než sme pripúšťali - nevidení našimi zvedmi si postavili dostatok lodiek a vorov a preplávali cez Veľké Jazero, aby udreli na Esgaroth!^^ Musíme zastaviť ich flotilu než dosiahnú mesto. Veď svojich mužov tak rýchlo, ako sa len bude dať a vyžeň divochov späť za vodu!
+qstr_{playername}_we_have_r|{playername}, doniesli sa k nám temné zvesti. Divosi z Rhûnu sú odvážni a prefíkaní viac, než sme pripúšťali - nevidení našimi zvedmi si postavili dostatok lodiek a pltí a preplávali cez Dlhé Jazero, aby udreli na Esgaroth!^^ Musíme zastaviť ich flotilu než dosiahnú mesto. Veď svojich mužov tak rýchlo, ako sa len bude dať a vyžeň divochov späť za vodu!
 qstr_If_you_seek_pillage_|Pokiaľ vyhšadávaš drancovačku a plienenie, máš nespočet príležitosť, {playername}.^^ Flotila Korzárov vyráža z prístavu o {s7} a bude sa plaviť rovno do {s6}, sen každého nájazdníka! Bojuj po ich boku a oni sa s tebou rozdelia o korisť!
 qstr_The_soft_weaklings_o|Krehký ľud Esgarothský pre našich živelných jazdcov a nebojácných bojovník nie je žiadna výzva, {playername}. To sa vie. Riečny ľud verí, že ho od nás ochráni veľaká voda, ale to sa pekne prerátali!^^ Postavili sme lode a vori dosť dobré na to, aby našich bojovníkov previezli cez jazero. To určite nebudú čakať! ^^Choď do Hlavného tábora Rhûnov a porozprávaj sa s veliteľom, ak sa chceš k útoku pridať.
 qstr_{s9}_asked_you_to_he|{s9} ťa poveril, aby si obránil {s3} od nájazdu Korzárov. Ponáhľaj sa do mesta, prehovor s majstrom cechov a poskytni pomoc miestnej posádke.
@@ -1395,7 +1395,7 @@ qstr_I_m_sorry_but_we_can|Mrzí ma to, ale teraz im nemôžeme pomôcť.
 qstr_Bah!_Far_more_glory_|Phe! Sláva i bohatstvo sa dá získať aj inde než s pirátskou verbežou.
 qstr_This_raid_does_not_i|Tento nájazd mi je ukradnutý. Slávu a poklady budem hľadať inde.
 qstr_{s9}_asked_you_to_de|{s9} ťa poveril, aby si zničil tábor zvedov neďaleko {s1}.
-; qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
+qstr_Your_party_must_be_at|Tvoja družina musí mať aspoň 10 členov, aby si mohol začať túto úlohu.
 qstr_{s9}_asked_you_to_def|{s9} ťa poveril, aby si ubránil dedinu pod útokom neďaleko {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} ti rozkázal, aby si vydrancoval viesku neďaleko {s1}.
 qstr_These_soldiers_may_w|Títo muži môžu mojím plánom veľmi prospieť, {playername}. Verím, že si ich dobre vycvičil. Veľmi ti ďakujem a som ti zaviazaný.
@@ -1429,7 +1429,7 @@ qstr_My_spies_tell_me_of_|Moji zvedovia ma upozornili, že sa v {s13} zhromažď
 qstr_{s9}_asked_you_to_sco|{s9} ťa požiadal, aby si preskúmal okolie {s13}.
 qstr_We_have_reports_of_s|Dostali sme správy o nepriateľskej aktivite neďaleko {s13}. Naši prieskumníci zatiaľ neuspeli v dostatočnom preskúmaní oblasti a pohyboch nepriateľa. Chcem, aby si zostavil prieskumnícku skupinu, dostal sa do blízkosti {s13} a vysadil ju.
 qstr_My_spies_tell_me_the|Moje špehúňske krysy vravia, že nepriatelia niečo chystajú v {s13}. Ale tie zbabelé prieskumnícke červy sa nedostali dosť blízko a tak nič viac nevieme. Chcem, aby si vystrojil skupinu zvedov, dostal sa do blízkosti {s13} a vysadil ich tam. A dohliadni na to, aby nevzali nohy na ramena!
-; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
+qstr_{s9}_asked_you_to_di|{s9} ťa požiadal, aby si vyslal skupinu prieskumníkov neďaleko miesta {s13}.^Získaj {reg1} vojakov {s15}, z ktorých bude aspoň jeden {s14}, dostaň sa neďaleko {s13}u a porozprávaj sa s {s14}om, aby si skupinu vyslal.
 qstr_We_need_to_take_the_|Potrebujeme dostať nepriateľa na bojové pole, {playername}. Avšak momentálne sa zameriavame na ich hliadky a stráže na cestách. Chcem, aby si rozdrvil {reg1} {s13} skupín. Pomohlo by nám to opäť získať výhodu v počtoch.
 qstr_We_need_to_grind_dow|Potrebujeme už konečne rozdrviť našich ubohých nepriateľov, {playername}. Ich hliadky a zásobovacie vozy sú na môj vkus príliš smelé. Chcem, aby si zmasakroval {reg1} {s13} skupín, aby so strachom čakali na to, čo ich čaká.
 qstr_{s9}_asked_you_to_el|{s9} chce, aby si eliminoval {reg1} {s13} skupín.
@@ -1447,7 +1447,7 @@ qstr_Go_to_Isengard_and_g|Zájdi do Isengardu a zohnaj si voľačo - možno poda
 qstr_Go_up_north_to_Gunda|Vydaj sa na sever, do Gundabadu - tupé ohavy to sú, ale majú silné kožušiny.
 qstr_Get_some_snagas_of_y|Naverbuj k sebe dajaké snagy, jak mám tu ja kumpánov. Možno za chvíľu sám povedieš armádny voj!
 qstr_Our_friends_and_alli|Chýry o tebe sa donesú k našim druhom a spojencom, o tom niet pochyb! Možno im bude po vôli dať ti nové jazdecké zviera či čepel. Nik nemá čas na slabochov, ale pokiaľ si silák, ha, pomoc oplácame, vidíš? Vymeň kus z koristi trebárs za dobrého koňa s týmu Ľuďmi z Rhûnu - či už na jazdenie abo pre žrádlo, čo je viac tebe po chuti, har!
-qstr_Trade_some_of_those_|Vymeň kus z koristi trebárs za dobrého koňa s týmu Ľuďmi z Rhûnu - či už na jazdenie abo pre žrádlo, čo je viac tebe po chuti, har!
+qstr_Trade_some_of_those_|Vymeň kus z koristi trebárs za dobrého koňa s tými Ľuďmi z Rhûnu - či už na jazdenie abo pre žrádlo, čo je viac tebe po chuti, har!
 qstr_That_is_not_a_smart_|Hovoriť to pred Rhunským bojovníkom nie je veľmi múdre...Keď ťa nabudúce uvidím, zabijem ťa.
 qstr_They_will_all_know_m|Oni všetci budú poznať moje meno... Všetci sa ho budú báť
 qstr_Suilad_mellon!_It_is|Suilad, mellon! Zriedkakedy sa v našej ríši stretávame s ľudom zo Skrytej Doliny. Vzdávame našu vďaku hviezdam ktoré ťa k nám viedli na pomoc a tebe tiež - le hannon!
@@ -1462,10 +1462,10 @@ qstr__say_nothing_|(nič nepovedať)
 qstr_Alas_it_is_not_a_plea|Alas, nie je príjemným účelom či bezvýznamným putovaním to, čo mňa a ostatných verných lordovi Elrondovi privádza do týchto krajov. ^^Prastaré zlo skryté v temnotách sa vynára na svetlo. Múdri na horách odpovedali na volanie pánov z Roklinky do boja o Sever.
 qstr_You_wouldn_t_have_nee|Nepotrebovali by ste našu pomoc pokiaľ by ste zatvorili svoje hranice! ^^Rozprávky Lesnej Čarodejky odstrašujú hlupákov - nie však ohyzdie špiny, ktoré sme práve pobili.
 qstr_*growl*_I_know_your_|*zavrčanie* poznám tvoj jazyk, elf, dosť na to, aby som vedel či mi ďakuješ alebo ma zosmiešňuješ.^^ Hviezdy s tým nemajú čo robiť - spozoroval som tie špiny a stopoval po ich po ceste. Zabil by som ich či už by ste boli v nebezpečenstve, alebo nie.
-qstr_Keep_your_secrets_th|Ak chceš, nechaj si svoje tajomstvá, priateľ, ale Zlaté Lesy šepkajú o príchode tvojho rodu. ^^Informujeme našu pani Galadriel o Elrondovom príchode, i keď predpokladám, že o ňom už vie. A my o tebe budeme hovoriť tiež, celému našemu ľudu. ^^Le maethor veleg a gornui! Tvoja chrabrosť a činy nám budú známe a tvoje potreby naplnené kedykoľvek navštíviš našu Cestu Spievajúceho Zlata.
+qstr_Keep_your_secrets_th|Ak chceš, nechaj si svoje tajomstvá, priateľ, ale Zlaté Lesy šepkajú o príchode tvojho rodu. ^^Dávame na zvesť našej pani Galadriel príchod pána Elronda, i keď predpokladáme, že o ňom už vie. A my o tebe budeme hovoriť tiež, celému nášmu ľudu. ^^Le maethor veleg a gornui! Tvoja chrabrosť a činy nám budú známe a tvoje potreby naplnené kedykoľvek navštíviš našu Cestu Spievajúceho Zlata.
 qstr_We_walk_under_the_su|Pod slnkom a hviezdami sa prechádzame a v jaskyniach prebývať netúžime. I tak si nepochybne dobre myslenú radu ceníme. ^^Tvoja múdrosť a chrabré činy sa k nám donesú, tvoje potreby naplnené kedykoľvek zavítaš do našej zeme.
 qstr_*he_sighs_and_smiles|*vzdychne a jemne sa usmeje* ^^Nuž dobre. Rádi sa podelíme o všetko, i keď tam, odkiaľ pochádzaš, šetríte slovami.
-qstr_For_some_months_we_h|Už nejaké mesiace sledujeme ohyzdie potvory, ktoré špinia a poškvrňujú naše lesy. ^^Informujeme našu pani Galadriel o Elrondovom príchode, i keď predpokladám, že o ňom už vie. A my o tebe budeme hovoriť tiež, celému našemu ľudu. ^^Le maethor veleg a gornui! Tvoja chrabrosť a činy nám budú známe a tvoje potreby naplnené kedykoľvek navštíviš našu Cestu Spievajúceho Zlata.
+qstr_For_some_months_we_h|Už nejaké mesiace sledujeme ohyzdie potvory, ktoré špinia a poškvrňujú naše lesy. ^^Dávame na zvesť našej pani Galadriel príchod pána Elronda, i keď predpokladám, že o ňom už vie. A my o tebe budeme hovoriť tiež, celému nášmu ľudu. ^^Le maethor veleg a gornui! Tvoja chrabrosť a činy nám budú známe a tvoje potreby naplnené kedykoľvek navštíviš našu Cestu Spievajúceho Zlata.
 qstr_Calm_yourself_friend|Ukľudni sa, priateľ. Pedin i phith in aniron, a nin u-cheniathog. ^^ Budeme o tebe rozprávať všetkým z našeho ľudu. Tvoja chrabrosť a činy nám budu známe, tvoje potreby naplnené kedykoľvek sa prídeš oslniť svetlom našej Zlatej Cesty.
 qstr_Stars_sail_through_t|Hviezdy plavú nebeskými morami, ľudia kráčajú po zemi. Ozaj, kto môže povedať či sa ich cesty krížia? Budeme o tebe rozprávať celému našemu ľudu. Tvoje činy nám budú dobre známe a tvoje potreby budú naplnené pokiaľ sa rozhodneš nasledovať hviezdu do Zlatej Cesty.
 qstr__RESOURCE_POINT_TUTO|(NÁVOD O BODOCH SUROVÍN)^^ Body surovín ktoré môžeš použiť na obchod s ľudom z Lothlorienu nie sú rovnaké, aké si získal vo svojej frakcii, ale rovnaké, aké budeš získavať od Lothlorienu. ^^Pozri HLÁSENIE pre viac informácií.
@@ -1530,7 +1530,7 @@ qstr_It_was_nothing._I_wi|Nič to nebolo. Budem na stráži, ak by sa náhodou v
 qstr_Slaying_these_maggot|Vraždenie tej čvargy nestojí za reč. Budem na stráži, ak by im znova narástli rohy.
 qstr_town|mesto
 qstr_village|dedina
-qstr_The_{s9}_of_{s13}_ha|{s9} z {s13} ťa poveril, aby si pobil klanových ohyzdov v okolitej krajine.
+qstr_The_{s9}_of_{s13}_ha|{s9} z {s13} ťa poveril, aby si pobil Kmeňových Ohyzdov v okolitej krajine.
 qstr_{s9}_of_{s3}_asked_y|{s9} z {s3} ťa požiadal aby si priviezol {reg5} kusov {s6} {s10} v {s4} do {reg6} days.
 qstr_The_{s9}_of_{s4}_ask|{s9} z {s4} ťa požiadal, aby si posilnil {s3} aspoň s {re5} jednotkami do {reg6} dní. Porozprávaj sa so správcom kasární v {s3}u. Na akosti jednotiek, ktoré poskytneš, nezáleží.
 qstr_You_have_reinforced_{|Posilnil si {s3} s 0 jednotkami.
@@ -1543,7 +1543,7 @@ qstr_{s9}_wants_you_to_sl|{s9} ťa požiadal, aby si zabil {reg22} {s6} v boji.
 qstr_The_{s9}_of_{s3}_ask|{s9} z {s3} ťa požiadal, aby si mu dodal {reg5} kusov jedla do {reg6} dní.
 qstr_The_{s9}_of_{s3}_aske|{s9} z {s3} ťa požiadal, aby si mu priviezol {reg5} kusov {s6} do {reg0} dní.
 qstr_Escort_the_supply_tr|Eskortuj zásobovaciu karavanu do {s8}.
-qstr_The_{s9}_of_{s4}_aske|{s9} z {s4} ťa požiadal aby si našiel a zabil neodbytných goblinov v blízkosti mesta.
+qstr_The_{s9}_of_{s4}_aske|{s9} z {s4} ťa požiadal aby si našiel a zabil doliezavých goblinov v blízkosti mesta.
 qstr_The_{s9}_of_{s14}_ha|{s9} z {s14} ťa poveril, aby si pobil skupinu goblinov, ktorí robia problémy v {s14}. Vychádzajú len v noci a po uliciach útočia len na osamelých ľudí.
 qstr_refugees|utečenci
 qstr_slaves|otroci
@@ -1553,7 +1553,7 @@ qstr_The_{s11}_of_{s10}_a|{s11} z {s10} ťa poveril, aby si eskortoval nejakých
 qstr__Guards_slaughter_hi|Stráže, zabite ho!
 qstr_Slaughter_him_for_fr|Zabite ho na čerstvé ľudské mäso!
 qstr_This_is_{s5}_Command|Toto je {s5}, Veliteľ.
-qstr_{s6}_This_place_and_|{s6} Toto miesto a priľahlé zeme patria {s7} z {s8}.
+qstr_{s6}_This_place_and_|{s6} Toto miesto a priľahlé zeme patria {s7}ovi z {s8}u.
 qstr_Hey_scum!_I_can_fix_|Hej, červ! Môžem ti trochu poupraviť sánku.
 qstr_Watch_where_you_re_g|Dávaj pozor kam ideš, špina!
 qstr_I_don_t_like_your_fa|Nepáči sa mi tvoj ksicht! Myslím, že by sa mu hodila menšia úprava.

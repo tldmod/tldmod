@@ -1,4 +1,4 @@
-itm_horse_meat|Koňské Mäso
+itm_horse_meat|Konské Mäso
 itm_practice_sword|Tréningový Meč
 itm_arena_lance|Žrď
 itm_practice_staff|Drevená Palica
@@ -117,7 +117,7 @@ itm_harad_bow|Haradský zakrivený luk
 itm_lg_bow|Luk Orlej Stráže
 itm_riv_bow|Luk z Roklinky
 itm_rhun_bow|Balchothský luk
-itm_lorien_bow|Lothlorienský luk Galadhrim 
+itm_lorien_bow|Lothlorienský luk Galadhrim
 itm_isengard_large_bow|Isengardský veľký luk
 itm_dale_bow|Dálsky luk
 itm_uruk_bow|Ohyzdí luk z rohoviny
@@ -517,7 +517,7 @@ itm_harad_heavy|Haradské šľachtické brnenie
 itm_harad_skirmisher|Ľahký haradský odev
 itm_harad_archer|Haradské lukostrelecké brnenie
 itm_black_snake_armor|Marankské brnenie
-itm_harad_champion|Odev Vzdialeného Haradu
+itm_harad_champion|Odev Ďalekého Haradu
 itm_panther_guard|Panterský háv
 itm_harad_scale|Haradské šupinové brnenie
 itm_harad_tiger_scale|Brnenie Tigrej stráže
@@ -566,7 +566,7 @@ itm_khand_cav_helm_a|Khandská jazdecká prilba
 itm_khand_cav_helm_b|Khandská jazdecká prilba
 itm_khand_cav_helm_c|Khandská zdobená helma
 itm_khand_helm_mask|Khandská maska
-itm_khand_light|Khandská sukňa
+itm_khand_light|Khandský šorc
 itm_khand_light_lam|Khandské ľahké lamelové brnenie
 itm_khand_foot_lam|Khandské pešiacké brnenie
 itm_khand_med_lam|Khandské stredné lamelové brnenie
@@ -616,21 +616,21 @@ itm_rhun_helm_n|Rhunská náčelnícka helma
 itm_rhun_helm_o|Rhunská náčelnícka helma
 itm_rhun_greataxe|Rhunská veľká sekera
 itm_rhun_battleaxe|Rhunská vojnová sekera
-itm_rhun_falchion|Krutý Falchion
+itm_rhun_falchion|Divošský Falchion
 itm_rhun_glaive|Rhunský sudlico-meč
-itm_rhun_greatfalchion|Krutý veľký Falchion
-itm_rhun_greatsword|Krutý veľký meč
-itm_rhun_shortsword|Krutý krátky meč
-itm_rhun_sword|Krutý meč
+itm_rhun_greatfalchion|Divošský veľký Falchion
+itm_rhun_greatsword|Divošský veľký meč
+itm_rhun_shortsword|Divošský krátky meč
+itm_rhun_sword|Divošský meč
 itm_rhun_shield|Rhunský štít vo tvare slzy
 itm_dale_light_a|Dálsky domobranecký kabát
 itm_dale_light_b|Severanské ľahké lamelové brnenie
 itm_dale_med_a|Severanské ťažké lamelové brnenie
 itm_dale_med_b|Dálske kožené brnenie
-itm_dale_med_c|Dálske kožené brnenie na drôtenej košeli
+itm_dale_med_c|Dálske kožené brnenie na krúžkovej košeli
 itm_dale_med_d|Dálske lamelové brnenie
-itm_dale_heavy_a|Dálske lamelové brnenie na drôtenej košeli
-itm_dale_heavy_b|Dálsky plátený kabát
+itm_dale_heavy_a|Dálske lamelové brnenie na krúžkovej košeli
+itm_dale_heavy_b|Dálsky pokovaný kabát
 itm_dale_heavy_c|Rhovanionská krúžková košeľa
 itm_north_leather|Severanská kožená vesta
 itm_dale_armor_l|Dálsky šľachtický nákrčník
@@ -673,7 +673,7 @@ itm_corsair_sword|Korzársky krátky meč
 itm_corsair_throwing_dagger|Zahnuté vrhacie dýky
 itm_umbar_pike|Korzársky trojzubec
 itm_woodman_tunic|Lesnícka tunika
-itm_woodman_scout|Prieskumnícky plášť lesníkov
+itm_woodman_scout|Lesnícky prieskumnícky plášť
 itm_woodman_padded|Lesnícka prešívanica
 itm_beorn_tunic|Grizlovská tunika
 itm_beorn_padded|Grizlovské vystužené brnenie
@@ -705,7 +705,7 @@ itm_dwarf_hand_axe|Trpasličia krátka sekera
 itm_dwarf_throwing_axe|Trpasličia vrhačská sekera
 itm_dwarf_spear|Trpasličia kopija
 itm_dwarf_spear_b|Trpasličia dlhá kopija
-itm_dwarf_spear_c|Trpasličia helebarda
+itm_dwarf_spear_c|Trpasličia dlhá sekera
 itm_dwarf_helm_coif|Trpasličia čiapka
 itm_dwarf_nasal_b|Trpasličia helma s nánosníkom
 itm_north_skullcap|Severanská čapica

@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|an ORC,^ serving the Lidless Eye
 qstr_an_URUK^_the_new_bre|an URUK,^ the new breed of Orcs
 qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
-qstr_an_URUK_HAI^_bred_in|an URUK-HAI,^ bred in Isengard
+qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|Inappropriate mount
 qstr_{s24}:_Your_infantry|{s24}: Your infantry feels better!
 qstr_{s24}:_Your_archers_|{s24}: Your archers feel better!
 qstr_{s24}:_Your_cavalry_|{s24}: Your cavalry feels better!
-qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s3} to your utmost capabilities.
+qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
 qstr_Who_are_you?|Who are you?
 qstr_A_friend_of_{s3}_and|A friend of {s3} and the people of {s2}. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, unless we make count our every action to oppose it!
 qstr_What_should_I_do?|What should I do?
-qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with him. Good luck!
+qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|Good to see the Shadow has not yet managed to defeat you, {playername}.
 qstr_You_are_the_one_they|You are the one they call Gandalf or Mithrandir.
 qstr_That_is_what_some_ca|That is what some call me. In my times I have also been called other things, but unless the Darkness is stopped, soon there may not be anyone left to call me anything at all.
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} has stopped following you.
 qstr_You_have_{reg69}_all|You have {reg69} ally party following you
 qstr_You_have_{reg69}_ally|You have {reg69} ally parties following you
 qstr_The_forces_of_{s2}_h|The forces of {s2} have regrouped and march on to {s15}!
-qstr_Your_scouts_have_rep|Your scouts have reported that there is a {s2} near {s3}.
+qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
 qstr_{s1}_from_{s2}|{s1} from {s2}
 qstr_When_dealing_with_lo|When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.^^(the Resource Points which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)
 qstr_Info|Info
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27}: Party morale increased.
 qstr_{s27}:_Party_morale_d|{s27}: Party morale decreased.
 qstr_You_have_failed_to_f|You have failed to fulfill your oath to avenge Balin and his company!
 qstr_You_have_failed_to_fu|You have failed to fulfill your oath of vengeance for {s1}'s heroic death!
-qstr_Your_troops_value_yo|Your troops value your effort to fullfill your oath, but acknowledge that events unfolded too quick. As a result, 
+qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
 qstr_{s22}You_have_fulfil|{s22}You have fulfilled your oath to avenge Balin and his company!
 qstr_{s22}You_have_fulfill|{s22}You have fulfilled your oath of vengeance for {s1}'s heroic death!
 qstr_Reinforcements|Reinforcements

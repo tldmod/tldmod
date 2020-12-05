@@ -472,7 +472,7 @@ dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}，我 們 收 
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|你 能 派 出 援 軍 嗎？
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|我 們 可 以，但 動 員 需 要 時 間。我 們 擔 心 到 那 時 就 太 晚 了。 ^^你 和 你 的 手 下 看 起 來 能 快 馬 加 鞭 的 出 發。你 能 幫 忙 保 衛 這 個 村 莊 嗎？
 dlga_lord_mission_defend_question:lord_mission_defend_accept|我 和 我 的 手 下 已 經 準 備 好 了。我 們 會 盡 快 出 發 的。
-; dlga_lord_mission_defend_question:lord_mission_defend_reject|I am afraid I may not have enough men with me currently...
+dlga_lord_mission_defend_question:lord_mission_defend_reject|恐怕我現在手邊沒有足夠的人手...
 dlga_lord_mission_defend_question:lord_mission_defend_reject.1|我 恐 怕 接 不 了 這 個 任 務。
 dlga_lord_mission_defend_accept:close_window|謝 謝 你，{playername}。出 發 吧，快！
 dlga_lord_mission_defend_reject:close_window|明 白。那 我 會 盡 可 能 地 派 出 援 軍。希 望 我 們 來 得 及。
@@ -975,7 +975,7 @@ dlga_start:town_merchant_talk|日 安 ， 指 揮 官 。 今 天 您 需 要 �
 dlga_start:town_merchant_talk.1|日 安 ， 我 能 為 你 做 什 麼 呢 ?
 dlga_town_merchant_talk:trade_requested_weapons|我 想 要 購 買 新 的 裝 備 ， 讓 我 看 看 你 的 倉 庫 裡 有 什 麼 貨 。
 dlga_town_merchant_talk:trade_requested_horse|我 在 想 要 買 一 隻 坐 騎 。
-; dlga_town_merchant_talk:player_upgrade_trolls_take|I want to strengthen my trolls!
+dlga_town_merchant_talk:player_upgrade_trolls_take|我想要強化我的巨魔們!
 ; dlga_player_upgrade_trolls_take:close_window|Who are you to ask this of me? Pah! Begone! (You need to be {s24} or higher)
 ; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
 ; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
