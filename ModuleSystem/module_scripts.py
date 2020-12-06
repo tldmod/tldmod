@@ -15058,26 +15058,6 @@ scripts = [
     (try_end),
 ]),
 
-# script_consume_orc_brew-- mtarini
-# Input: arg1: how much
-# Output: none
-("consume_orc_brew",
-   [(store_script_param, ":howmuch", 1),
-    (troop_get_inventory_capacity, ":capacity", "trp_player"),
-    (try_for_range, ":cur_slot", 0, ":capacity"),
-      (troop_get_inventory_slot, ":cur_item", "trp_player", ":cur_slot"),
-      (eq, ":cur_item", "itm_orc_brew"),
-	  (assign, ":capacity", 0), # stop loops
-      (troop_inventory_slot_get_item_amount, ":cur_amount", "trp_player", ":cur_slot"),
-      (val_sub, ":cur_amount", ":howmuch"),
-	  (try_begin), 
-	     (le, ":cur_amount", 0),
-		 (display_message, "@Orc brew finished!"),
-	  (try_end), 
-      (troop_inventory_slot_set_item_amount, "trp_player", ":cur_slot", ":cur_amount"),
-    (try_end),
-]),
-
 # script_calculate_troop_score_for_center #InVain: Not used in TLD
 # Input: arg1 = troop_no, arg2 = center_no
 # Output: reg0 = score

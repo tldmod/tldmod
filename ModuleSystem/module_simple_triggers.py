@@ -1156,14 +1156,6 @@ simple_triggers = [
             (display_message, "@The effects of the Orc Brew have dissipated"),
         (try_end),
     (try_end),
-
-
-
-   (call_script,"script_party_count_wounded", "p_main_party"),(assign, ":n_drinks",reg0),
-     #(display_message, "@DEBUG: {reg0} drinks of orc brew"),
-     (gt, ":n_drinks",0),
-     #(store_random_in_range, reg10, 0, 10),(val_add, ":n_drinks",10),(val_div, ":n_drinks",10), # div 10, roudning at random
-     (call_script,"script_consume_orc_brew",":n_drinks"),
   ]),
   
   # (35) Consuming food at every 14 hours
