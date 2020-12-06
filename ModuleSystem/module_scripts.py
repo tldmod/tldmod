@@ -16629,6 +16629,37 @@ scripts = [
      (assign, reg0, ":count"),
 ]),
 
+# script_cf_troop_has_item
+# INPUT: arg1 = troop_no, arg2 = item_no
+("cf_troop_has_item",
+    [(store_script_param, ":troop_no", 1),
+     (store_script_param, ":item_no", 2),
+     (troop_get_inventory_capacity, ":inv_cap", ":troop_no"),
+
+     (try_for_range, ":i_slot", 0, ":inv_cap"),
+       (troop_get_inventory_slot, ":cur_item", ":troop_no", ":i_slot"),
+       (eq, ":cur_item", ":item_no"),
+       (assign, ":inv_cap", 0),
+     (try_end),
+     (eq, ":inv_cap", 0),
+]),
+
+# script_cf_troop_has_active_item
+# INPUT: arg1 = troop_no, arg2 = item_no
+("cf_troop_has_active_item",
+    [(store_script_param, ":troop_no", 1),
+     (store_script_param, ":item_no", 2),
+     (troop_get_inventory_capacity, ":inv_cap", ":troop_no"),
+
+     (try_for_range, ":i_slot", 0, ":inv_cap"),
+       (troop_get_inventory_slot, ":cur_item", ":troop_no", ":i_slot"),
+       (eq, ":cur_item", ":item_no"),
+       (item_slot_eq, ":cur_item", slot_item_is_active, 1),
+       (assign, ":inv_cap", 0),
+     (try_end),
+     (eq, ":inv_cap", 0),
+]),
+
 #script_apply_attribute_bonuses
 # Checks if items that change attributes are in the player inventory and adds or removes an attribute bonus
 ("apply_attribute_bonuses",[
