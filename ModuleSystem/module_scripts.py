@@ -15024,10 +15024,13 @@ scripts = [
       (troop_get_inventory_slot_modifier, ":item_modifier", "trp_player", ":cur_slot"),
       #Kham - Orcs / Uruks eat rotten food
       (call_script, "script_are_there_orcs", "p_main_party"),
+      (assign, ":continue", 1),
       (try_begin),
       	(le, reg0, 0),
-      	(neq, ":item_modifier", imod_rotten),
+      	(eq, ":item_modifier", imod_rotten),
+      	(assign, ":continue", 0),
       (try_end),
+      (eq, ":continue", 1),
       #Kham - End
       (item_slot_eq, ":cur_item", slot_item_is_checked, 0),
       (item_set_slot, ":cur_item", slot_item_is_checked, 1),
@@ -24417,7 +24420,8 @@ command_cursor_scripts = [
 	      (party_stack_get_troop_id, reg1, ":party_no",":i_stack"),
 		  (troop_get_type, ":is_orc", reg1),
 		  (try_begin),
-		  	(is_between, ":is_orc", tf_orc_begin, tf_orc_end),
+		  	(this_or_next|is_between, ":is_orc", tf_orc_begin, tf_orc_end),
+		  	(eq, ":is_orc", tf_troll), #Trolls too
 		  	(val_add, ":num_orcs", 1),
 		  (try_end),
 		(try_end),

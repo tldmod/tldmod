@@ -8485,11 +8485,11 @@ formAI_scripts = [
         (assign, ":ffaction", "$players_kingdom"),
       (try_end),
       
-      (try_begin),
-        (is_between, ":ffaction", "fac_player_faction", kingdoms_end),
-        (faction_slot_ge, ":ffaction", slot_faction_culture, 1),
-        (faction_get_slot, ":ffaction", ":ffaction", slot_faction_culture),
-      (try_end),
+      #(try_begin),
+      #  (is_between, ":ffaction", "fac_player_faction", kingdoms_end),
+      #  (faction_slot_ge, ":ffaction", slot_faction_culture, 1),
+      #  (faction_get_slot, ":ffaction", ":ffaction", slot_faction_culture),
+      #(try_end),
       
       #assign default formation
       (try_begin),
