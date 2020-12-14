@@ -10350,12 +10350,10 @@ scripts = [
       
       # TLD morale-boosting items (non-cumulative)
       (try_begin),
-	    (call_script, "script_get_troop_item_amount", "trp_player", "itm_lembas"),
-	    (gt, reg0, 0),
+        (player_has_item, "itm_lembas"),
         (val_add, ":new_morale", 30),
       (else_try),
-	    (call_script, "script_get_troop_item_amount", "trp_player", "itm_cooking_cauldron"),
-	    (gt, reg0, 0),
+        (player_has_item, "itm_cooking_cauldron"),
         (val_add, ":new_morale", 20),
       (try_end),
 
