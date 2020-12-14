@@ -3475,8 +3475,24 @@ simple_triggers = [
             (le, ":random", 45), #45% chance to trigger
             (call_script, "script_are_there_orcs", "p_main_party"), #Are there orcs/uruks?
             (gt, reg0, 0),
-            (gt, "$g_player_party_morale_modifier_no_food", 0), #No food
+            
+            #(gt, "$g_player_party_morale_modifier_no_food", 0), #No food
+
+            # TLD Kham: Change the above to check for food:
+            (assign, ":available_food", 0),
+            (try_begin),
+              (item_set_slot, "itm_horse_meat", slot_item_is_checked, 0),
+              (call_script, "script_cf_player_has_item_without_modifier", "itm_horse_meat", imod_rotten),
+              (val_add, ":available_food", 1),
+            (try_end),
+            (try_for_range, ":cur_food", food_begin, food_end),
+              (item_set_slot, ":cur_food", slot_item_is_checked, 0),
+              (call_script, "script_cf_player_has_item_without_modifier", ":cur_food", imod_rotten),
+              (val_add, ":available_food", 1),
+            (try_end),
+            (lt, ":available_food", 0), #No food at all.
             (jump_to_menu, "mnu_hungry_orc"),
+
           (else_try),
             (assign, ":chance", 30), #Base chance for it occurring
             (try_begin), #The conditions that reduce likelihood of triggering start here
