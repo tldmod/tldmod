@@ -2426,6 +2426,7 @@ AI_triggers_moto = [
   (ti_before_mission_start, 0, 0, [(eq, "$tld_option_formations", 2),], [
       (assign, "$ranged_clock", 0),
       (assign, "$clock_reset", 0),
+      (assign, "$temp_action_cost", 0), #TLD Kham: piggyback for F1 Fix
       (init_position, Team0_Cavalry_Destination),
       (init_position, Team1_Cavalry_Destination),
       (init_position, Team2_Cavalry_Destination),
@@ -2470,6 +2471,8 @@ AI_triggers_moto = [
   
   # Trigger file: AI_setup
   (0, 0, ti_once, [(eq, "$tld_option_formations", 2),
+      (get_player_agent_no, ":player"),
+      (agent_set_slot, ":player", slot_agent_tournament_point, 0),
       (call_script, "script_cf_division_data_available_moto"),
       (ge, "$battle_phase", BP_Setup_MOTO), #wait 'til player deploys
       ],[
@@ -2578,6 +2581,36 @@ AI_triggers_moto = [
         (call_script, "script_agent_fix_division_moto", ":agent"),
       (try_end),
   ]),
+
+
+# TLD Kham: Try to fix Flag Issue for New Formations
+
+  (0, .3, 0, [(eq, "$tld_option_formations", 2),(game_key_clicked, gk_order_1)], [
+    (game_key_is_down, gk_order_1), #player is holding down key?
+    (assign, "$temp_action_cost", 1),
+    #(display_message, "@DEBUG: F1 Held"),
+    (get_player_agent_no, ":player"), 
+    (try_begin),
+      (agent_slot_eq, ":player", slot_agent_tournament_point, 0),
+      (eq, "$field_ai_horse_archer", 1),
+      (agent_set_slot, ":player", slot_agent_tournament_point, 1),
+      (assign, "$field_ai_horse_archer", 0),
+    (try_end),
+  ]),
+
+(.5, 0, 0, [(eq, "$tld_option_formations", 2),(eq, "$temp_action_cost", 1),(neg|game_key_is_down, gk_order_1)], [   
+    (assign, "$temp_action_cost", 0),
+    (display_message, "@DEBUG: F1 Let Go"),
+    (get_player_agent_no, ":player"),
+    (try_begin),
+      (agent_slot_eq, ":player", slot_agent_tournament_point, 1),
+      (eq, "$field_ai_horse_archer", 0),
+      (agent_set_slot, ":player", slot_agent_tournament_point, 0),
+      (assign, "$field_ai_horse_archer", 1),
+    (try_end),
+
+  ]),
+
 ] #end AI triggers
 
 common_after_mission_start = (
