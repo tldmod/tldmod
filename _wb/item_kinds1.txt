@@ -1199,7 +1199,7 @@ itemsfile version 2
  itm_orc_two_handed_axe Orc_Double_Handed_Axe Orc_Double_Handed_Axe 1  orc_twohanded_axe 0  38996623363 9223372041174909152 500 286870 5 100 0 0 0 0 35840 87 0 92 0 256 35
 0
 
- itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 300 4398046781448 5 100 0 0 80 0 0 99 20 53 4 40 0
+ itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 200 4398046781448 5 100 0 0 80 1 0 99 20 53 4 40 0
 0
 
  itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 200 525450 1.25 100 0 0 74 0 0 86 53 0 0 20 0
@@ -2293,7 +2293,7 @@ itemsfile version 2
  itm_corsair_sword Corsair_Eket Corsair_Eket 2  corsair_sword 0  scab_corsair_sword 3458764513820540928  4259842 9223388564182532111 300 286870 1.5 100 0 0 0 0 24576 113 0 53 0 284 24
 0
 
- itm_corsair_throwing_dagger Crooked_Throwing_Daggers Crooked_Throwing_Daggers 1  corsair_throwing_dagger 0  4259850 131072 200 4398046781448 3.5 100 0 0 0 0 0 110 24 0 10 40 0
+ itm_corsair_throwing_dagger Crooked_Throwing_Daggers Crooked_Throwing_Daggers 1  corsair_throwing_dagger 0  4259850 131072 250 4398046781448 3.5 100 0 0 0 0 0 110 24 0 10 30 0
 0
 
  itm_umbar_pike Corsair_Trident Corsair_Trident 1  corsair_trident_b 0  407207940 9254615759470988544 400 271496 3 100 0 0 0 9 0 81 0 175 0 39 0
@@ -2607,7 +2607,7 @@ itemsfile version 2
  itm_rohan_saddle Saddle_of_Thengel Saddle_of_Thengel 1  RohanSaddle 0  4107 0 5000 0 4 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mearas_reward Mearh_Stallion Mearh_Stallion 1  mearh 0  4097 0 400 16106389504 0 100 0 60 0 5 180 40 45 105 0 40 0
+ itm_mearas_reward Mearh_Stallion Mearh_Stallion 1  mearh 0  4097 0 400 16106389504 0 100 0 45 0 5 180 50 50 105 0 40 0
 0
 
  itm_shield_of_tuor Shield_of_Tuor Shield_of_Tuor 1  Avelium_shield_of_tuor 0  266247 4831838208 4000 0 4 100 0 22 0 0 930 77 0 96 0 0 0
@@ -2670,7 +2670,7 @@ itemsfile version 2
  itm_wheeled_cage Giant_Wheeled_Cage Giant_Wheeled_Cage 1  wheeled_cage 0  4107 0 1000 0 58 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_throwing_axes_reward Gundabad_Flying_Axes Gundabad_Flying_Axes 1  orc_throwing_axe 0  71307274 196608 150 4398046781448 4 100 0 0 0 0 0 103 30 33 6 46 0
+ itm_orc_throwing_axes_reward Gundabad_Flying_Axes Gundabad_Flying_Axes 1  orc_throwing_axe 0  71307274 196608 150 4398046781448 4 100 0 0 0 1 0 103 30 33 6 55 0
 0
 
  itm_corsair_throwing_dagger_reward Poisoned_Throwing_Daggers Poisoned_Throwing_Daggers 1  corsair_throwing_dagger 0  4198410 131072 200 4398046781448 3.5 100 0 0 0 0 0 110 24 0 10 50 0
