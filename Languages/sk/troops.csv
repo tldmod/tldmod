@@ -87,7 +87,7 @@ trp_a3_dale_bowman_pl|Dalskí lovci
 trp_a4_dale_archer|Dalský lukostrelec
 trp_a4_dale_archer_pl|Dalskí lukostrelci
 trp_a5_barding_bowman|Bardov lučišník
-trp_a5_barding_bowman_pl|Bartovi lučišníci
+trp_a5_barding_bowman_pl|Bardovi lukostrelci
 trp_i3_dale_swordsman|Dálsky šermiar
 trp_i3_dale_swordsman_pl|Dálski šermiari
 trp_i4_dale_sergeant|Dálsky strážmajster
@@ -230,14 +230,14 @@ trp_i1_loss_woodsman|Lesník z Lossarnachu
 trp_i1_loss_woodsman_pl|Lesníci z Lossarnachu
 trp_i2_loss_axeman|Sekerník z Lossarnachu
 trp_i2_loss_axeman_pl|Sekerníci z Lossarnachu
-trp_i3_loss_vet_axeman|Skúsený lesník z Lossarnachu
-trp_i3_loss_vet_axeman_pl|Skúsení lesníci z Lossarnachu
+trp_i3_loss_vet_axeman|Skúsený sekerník z Lossarnachu
+trp_i3_loss_vet_axeman_pl|Skúsení sekerníci z Lossarnachu
 trp_i4_loss_heavy_axeman|Mocný sekerník z Lossarnachu
 trp_i4_loss_heavy_axeman_pl|Mocní sekerníci z Lossarnachu
 trp_i5_loss_axemaster|Majster sekerník z Lossarnachu
 trp_i5_loss_axemaster_pl|Majstri sekerníci z Lossarnachu
-trp_i6_loss_leader|Kapitán z Lossarnachu
-trp_i6_loss_leader_pl|Kapitáni z Lossarnachu
+trp_i6_loss_leader|Veliteľ z Lossarnachu
+trp_i6_loss_leader_pl|Velitelia z Lossarnachu
 trp_i1_pel_watchman|Strážnik z Pelargiru
 trp_i1_pel_watchman_pl|Stráž Pelargiru
 trp_a2_pel_marine|Pelargirský námorník
@@ -590,8 +590,8 @@ trp_i5_corsair_master_spearman|Majster kopijník z Umbaru
 trp_i5_corsair_master_spearman_pl|Majstri kopijníci z Umbaru
 trp_i5_corsair_master_pikeman|Píkmajster z Umbaru
 trp_i5_corsair_master_pikeman_pl|Píkmajstri z Umbaru
-trp_i1_isen_orc_snaga|Snaga ohyzd z Isengardu
-trp_i1_isen_orc_snaga_pl|Snaga ohyzdi z Isengardu
+trp_i1_isen_orc_snaga|Ohyzd Zmok z Isengardu
+trp_i1_isen_orc_snaga_pl|Ohyzdí Zmokovia z Isengardu
 trp_i2_isen_orc|Ohyzd z Isengardu
 trp_i2_isen_orc_pl|Ohyzdi z Isengardu
 trp_i3_isen_large_orc|Veľký ohyzd z Isengardu
@@ -604,28 +604,28 @@ trp_i4_isen_fell_orc_despoiler|Divoký ohyzdí nájazdník
 trp_i4_isen_fell_orc_despoiler_pl|Divokí ohyzdí nájazdníci
 trp_ac2_isen_wolf_rider|Vlčí jazdec z Isengardu
 trp_ac2_isen_wolf_rider_pl|Vlčí jazdci z Isengardu
-trp_ac3_isen_warg_rider|Vrrčí jazdec z Isengardu
-trp_ac3_isen_warg_rider_pl|Vrrčí jazdci z Isengardu
+trp_ac3_isen_warg_rider|Vročí jazdec z Isengardu
+trp_ac3_isen_warg_rider_pl|Vročí jazdci z Isengardu
 trp_ac4_isen_white_hand_rider|Jazdec Bielej Ruky
 trp_ac4_isen_white_hand_rider_pl|Jazdci Bielej Ruky
-trp_warg_ghost_1b|Vrrk
-trp_warg_ghost_1b_pl|Vrrci
-trp_warg_ghost_1c|Vrrk
-trp_warg_ghost_1c_pl|Vrrci
-trp_warg_ghost_1d|Vrrk
-trp_warg_ghost_1d_pl|Vrrci
-trp_warg_ghost_a1b|Vrrk
-trp_warg_ghost_a1b_pl|Vrrci
-trp_warg_ghost_a1c|Obrnený Vrrk
-trp_warg_ghost_a1c_pl|Obrnené Vrrky
-trp_warg_ghost_a2b|Obrnený Vrrk
-trp_warg_ghost_a2b_pl|Obrnené Vrrky
-trp_warg_ghost_a2c|Obrnený Vrrk
-trp_warg_ghost_a2c_pl|Obrnené Vrrky
-trp_warg_ghost_a3a|Obrnený Vrrk
-trp_warg_ghost_a3a_pl|Obrnené Vrrky
-trp_warg_ghost_h|Obrovský Vrrk
-trp_warg_ghost_h_pl|Obrovské Vrrky
+trp_warg_ghost_1b|Vrok
+trp_warg_ghost_1b_pl|Vroci
+trp_warg_ghost_1c|Vrok
+trp_warg_ghost_1c_pl|Vroci
+trp_warg_ghost_1d|Vrok
+trp_warg_ghost_1d_pl|Vroci
+trp_warg_ghost_a1b|Vrok
+trp_warg_ghost_a1b_pl|Vroci
+trp_warg_ghost_a1c|Obrnený Vrok
+trp_warg_ghost_a1c_pl|Obrnené Vroky
+trp_warg_ghost_a2b|Obrnený Vrok
+trp_warg_ghost_a2b_pl|Obrnené Vroky
+trp_warg_ghost_a2c|Obrnený Vrok
+trp_warg_ghost_a2c_pl|Obrnené Vroky
+trp_warg_ghost_a3a|Obrnený Vrok
+trp_warg_ghost_a3a_pl|Obrnené Vroky
+trp_warg_ghost_h|Obrovský Vrok
+trp_warg_ghost_h_pl|Obrovské Vroky
 trp_a2_isen_uruk_tracker|Uruk Hai stopár
 trp_a2_isen_uruk_tracker_pl|Uruk Hai stopári
 trp_a3_isen_large_uruk_tracker|Veľký Uruk Hai stopár
@@ -650,8 +650,8 @@ trp_i4_isen_fighting_uruk_pikeman|Bojový pikanier Uruk Hai
 trp_i4_isen_fighting_uruk_pikeman_pl|pikBojoví pikanieri Uruk Hai
 trp_i5_isen_uruk_standard_bearer|Uruk Hai vlajkonoš
 trp_i5_isen_uruk_standard_bearer_pl|Zástavníci Uruk Hai
-trp_i1_mordor_uruk_snaga|Uruk snaga z Mordoru
-trp_i1_mordor_uruk_snaga_pl|Uruk snagy z Mordoru
+trp_i1_mordor_uruk_snaga|Uruk Zmok z Mordoru
+trp_i1_mordor_uruk_snaga_pl|Uruk Zmokovia z Mordoru
 trp_i2_mordor_uruk|Uruk z Mordoru
 trp_i2_mordor_uruk_pl|Urukovia z Mordoru
 trp_i3_mordor_large_uruk|Veľký Uruk z Mordoru
@@ -674,22 +674,22 @@ trp_olog_hai|Olog Hai z Mordoru
 trp_olog_hai_pl|Olog Hai z Mordoru
 trp_ent|Ent
 trp_ent_pl|Enti
-trp_i1_guldur_orc_snaga|Snaga ohyzd z Dol Guldúru
-trp_i1_guldur_orc_snaga_pl|Snaga ohyzdu z Dol Guldúru
+trp_i1_guldur_orc_snaga|Ohyzd Zmok z Dol Guldúru
+trp_i1_guldur_orc_snaga_pl|Ohyzdí Zmokovia z Dol Guldúru
 trp_a2_guldur_orc_tracker|Ohyzdí stopár z Dol Guldúru
 trp_a2_guldur_orc_tracker_pl|Ohyzdí stopári z Dol Guldúru
-trp_i1_mordor_orc_snaga|Snaga ohyzd z Mordoru
-trp_i1_mordor_orc_snaga_pl|Snaga ohyzdi z Mordoru
+trp_i1_mordor_orc_snaga|Ohyzd Zmok z Mordoru
+trp_i1_mordor_orc_snaga_pl|Ohyzdí Zmokovia z Mordoru
 trp_i2_mordor_orc|Ohyzd z Mordoru
 trp_i2_mordor_orc_pl|Ohyzdi z Mordoru
 trp_i3_mordor_large_orc|Veľký ohyzd z Mordoru
 trp_i3_mordor_large_orc_pl|Veľkí ohyzdi z Mordoru
 trp_i4_mordor_fell_orc|Divoký ohyzd z Mordoru
 trp_i4_mordor_fell_orc_pl|Divokí ohyzdi z Mordoru
-trp_c3_mordor_warg_rider|Vrrčí jazdec z Gorgorothu
-trp_c3_mordor_warg_rider_pl|Vrrčí jazdci z Gorgorothu
-trp_c4_mordor_great_warg_rider|Jazdec na veľkom vrrkovy z Udunu
-trp_c4_mordor_great_warg_rider_pl|Jazdci na veľkých vrrkoch z Udunu
+trp_c3_mordor_warg_rider|Vročí jazdec z Gorgorothu
+trp_c3_mordor_warg_rider_pl|Vročí jazdci z Gorgorothu
+trp_c4_mordor_great_warg_rider|Jazdec na veľkom vrokovy z Udunu
+trp_c4_mordor_great_warg_rider_pl|Jazdci na veľkých vrokoch z Udunu
 trp_i2_mordor_morgul_orc|Ohyzd z Minas Morgul
 trp_i2_mordor_morgul_orc_pl|Ohyzdi z Minas Morgul
 trp_i4_mordor_fell_morgul_orc|Divoký ohyzd z Minas Morgul
@@ -706,27 +706,26 @@ trp_a4_mordor_fell_orc_archer|Divoký ohyzdí lukostrelec z Mordoru
 trp_a4_mordor_fell_orc_archer_pl|Divokí ohyzdí lukostrelci z Mordoru
 trp_c3_moria_wolf_rider|Vlčí jazdec z Morie
 trp_c3_moria_wolf_rider_pl|Vlčí jazdci z Morie
-trp_c4_moria_warg_rider|Vrrčí jazdec z Morie
-trp_c4_moria_warg_rider_pl|Vrrčí jazdci z Morie
+trp_c4_moria_warg_rider|Vročí jazdec z Morie
+trp_c4_moria_warg_rider_pl|Vročí jazdci z Morie
 trp_c5_moria_clan_rider|Bolgov kmeňový jazdec
 trp_c5_moria_clan_rider_pl|Bolgoví kmeňoví jazdci
-trp_i1_moria_snaga|Snaga z Morie
-trp_i1_moria_snaga_pl|Snagy z Morie
-trp_i2_moria_goblin|Goblin z Morie
-trp_i2_moria_goblin_pl|Goblini z Morie
-trp_i3_moria_large_goblin|Veľký goblin z Morie
-trp_i3_moria_large_goblin_pl|Veľkí goblini z Morie
-trp_i4_moria_fell_goblin|Divoký goblin z Morie
-trp_i4_moria_fell_goblin_pl|Divokí goblini z Morie
-trp_a2_moria_goblin_archer|Gobliní lukostrelec z Morie
-trp_a2_moria_goblin_archer_pl|Gobliní lukostrelci z Morie
-trp_a3_moria_large_goblin_archer|Veľký gobliní lukostrelec z Morie
-trp_a3_moria_large_goblin_archer_pl|Veľkí gobliní lukostrelci z Morie
-trp_a4_moria_fell_goblin_archer|Divoký gobliní lukostrelec z Morie
-trp_a4_moria_fell_goblin_archer_pl|Divokí gobliní lukostrelci z Morie
-
-trp_i1_gunda_goblin|Goblin z Gundabadu
-trp_i1_gunda_goblin_pl|Goblini z Gundabadu
+trp_i1_moria_snaga|Zmok z Morie
+trp_i1_moria_snaga_pl|Zmokovia z Morie
+trp_i2_moria_goblin|Škrat z Morie
+trp_i2_moria_goblin_pl|Škrati z Morie
+trp_i3_moria_large_goblin|Veľký škrat z Morie
+trp_i3_moria_large_goblin_pl|Veľkí škrati z Morie
+trp_i4_moria_fell_goblin|Divoký škrat z Morie
+trp_i4_moria_fell_goblin_pl|Divokí škrati z Morie
+trp_a2_moria_goblin_archer|Škratí lukostrelec z Morie
+trp_a2_moria_goblin_archer_pl|Škratí lukostrelci z Morie
+trp_a3_moria_large_goblin_archer|Veľký Škratí Lukostrelec z Morie
+trp_a3_moria_large_goblin_archer_pl|Veľkí škratí lukostrelci z Morie
+trp_a4_moria_fell_goblin_archer|Divoký Škratí Lukostrelec z Morie
+trp_a4_moria_fell_goblin_archer_pl|Divokí škratí Lukostrelci z Morie
+trp_i1_gunda_goblin|Škrat z Gundabadu
+trp_i1_gunda_goblin_pl|Škrati z Gundabadu
 trp_i2_gunda_orc|Ohyzd z Gundabadu
 trp_i2_gunda_orc_pl|Ohyzdi z Gundabadu
 trp_i3_gunda_orc_fighter|Bojový ohyzd z Gundabadu
@@ -737,16 +736,16 @@ trp_i4_gunda_orc_berserker|Ohyzdí berserk z Gundabadu
 trp_i4_gunda_orc_berserker_pl|Ohyzdí berserkovia z Gundabadu
 trp_ca4_gunda_skirmisher|Gundabadský vrrči strelec
 trp_ca4_gunda_skirmisher_pl|Gundabadskí vrrči strelci strelci
-trp_ca5_gunda_clan_skirmisher|Gobliní vrrči strelec Sevesného klanu goblinov
-trp_ca5_gunda_clan_skirmisher_pl|Gobliní vrrčí strelci Severského klanu goblinov
-trp_c3_gunda_goblin_rider|Gobliní jazdec z Gundabadu
-trp_c3_gunda_goblin_rider_pl|Gobliní jazdci z Gundabadu
-trp_c4_gunda_warg_rider|Vrrčí jazdec z Gundabadu
-trp_c4_gunda_warg_rider_pl|Vrrčí jazdci z Gundabadu
-trp_c5_gunda_clan_rider|Jazdec Severského klanu goblinov
-trp_c5_gunda_clan_rider_pl|Jazdci Severského klanu goblinov
-trp_mountain_goblin2|Horský goblin
-trp_mountain_goblin2_pl|Horský goblini
+trp_ca5_gunda_clan_skirmisher|Zmočí vročí strelec Sevesného kmeňa škratov
+trp_ca5_gunda_clan_skirmisher_pl|Škratí vročí strelci Severského klanu
+trp_c3_gunda_goblin_rider|Škratí jazdec z Gundabadu
+trp_c3_gunda_goblin_rider_pl|Škratí jazdci z Gundabadu
+trp_c4_gunda_warg_rider|Vročí jazdec z Gundabadu
+trp_c4_gunda_warg_rider_pl|Vročí jazdci z Gundabadu
+trp_c5_gunda_clan_rider|Jazdec Severského kmeňa škratov
+trp_c5_gunda_clan_rider_pl|Jazdci Severského kmeňa škratov
+trp_mountain_goblin2|Horský škrat
+trp_mountain_goblin2_pl|Horskí škrati
 trp_tribal_orc2|Kmeňový ohyzd
 trp_tribal_orc2_pl|Kmeňoví ohyzdi
 trp_tribal_orc_warrior2|Bojový Kmeňový Ohyzd
@@ -815,8 +814,8 @@ trp_a5_dun_night_wolf|Vrchovecký Nočný vlk
 trp_a5_dun_night_wolf_pl|Vrchoveckí Noční vlci
 trp_dunnish_lieutenant|Vrchovecký hajtman
 trp_dunnish_lieutenant_pl|Vrchoveckí hajtmani
-trp_goblin_chieftain|Náčelník goblinov
-trp_goblin_chieftain_pl|Náčelníci goblinov
+trp_goblin_chieftain|Náčelník škratov
+trp_goblin_chieftain_pl|Náčelníci škratov
 trp_captain_of_gondor|Kapitán z Gondoru
 trp_captain_of_gondor_pl|Kapitáni z Gondoru
 trp_nobleman|Šľachtic
@@ -964,7 +963,7 @@ trp_khand_lord|Shibh Krukmahur
 trp_khand_lord_pl|Shibh
 trp_umbar_lord|Admirál Tulmir
 trp_umbar_lord_pl|Admirál
-trp_lorien_lord|Pani Galadriel
+trp_lorien_lord|Lady Galadriel
 trp_lorien_lord_pl|Pani
 trp_imladris_lord|Lord Elrond
 trp_imladris_lord_pl|Lord
@@ -1300,13 +1299,13 @@ trp_merchant_orc_patrol_pl|táborový sklad
 trp_merchant_isengard|Obchodník so zásobami
 trp_merchant_isengard_pl|táborový sklad
 trp_town_27_horse_merchant|Obchodník so zásobami
-trp_town_27_horse_merchant_pl|vrrčia diera a zásoby
+trp_town_27_horse_merchant_pl|vročí brloh a zásoby
 trp_merchant_uoutpost|Obchodník so zásobami
-trp_merchant_uoutpost_pl|vrrčia diera a zásoby
+trp_merchant_uoutpost_pl|vročí brloh a zásoby
 trp_merchant_uhcamp|Obchodník so zásobami
-trp_merchant_uhcamp_pl|vrrčia diera a zásoby
+trp_merchant_uhcamp_pl|vročí brloh a zásoby
 trp_merchant_urcamp|Obchodník so zásobami
-trp_merchant_urcamp_pl|vrrčia diera a zásoby
+trp_merchant_urcamp_pl|vročí brloh a zásoby
 trp_merchant_cgaladhon|Obchodník so zásobami
 trp_merchant_cgaladhon_pl|elfské zásoby
 trp_merchant_cdolen|Obchodník so zásobami
@@ -1322,7 +1321,7 @@ trp_merchant_woodmen_pl|Stajne a skladište
 trp_merchant_beorn|Obchodník so zásobami
 trp_merchant_beorn_pl|Stajne a skladište
 trp_merchant_moria|Obchodník so zásobami
-trp_merchant_moria_pl|vrrčia diera a zásoby
+trp_merchant_moria_pl|vročí brloh a zásoby
 trp_merchant_dale|Obchodník so zásobami
 trp_merchant_dale_pl|Stajne a skladište
 trp_merchant_esgaroth|Obchodník so zásobami
@@ -1350,7 +1349,7 @@ trp_merchant_gundabad_pl|táborový sklad
 trp_merchant_ironhill|Obchodník so zásobami
 trp_merchant_ironhill_pl|Trpasličie zásoby
 trp_town_50_horse_merchant|Gobrip Žltozub
-trp_town_50_horse_merchant_pl|vrrčia diera a zásoby
+trp_town_50_horse_merchant_pl|vročí brloh a zásoby
 trp_merchant_calembel|Obchodník so zásobami
 trp_merchant_calembel_pl|Stajne a skladište
 trp_elder_mtirith|Kastelán Minas Tirith
@@ -1377,7 +1376,7 @@ trp_elder_henneth|Hraničiarsky kastelán
 trp_elder_henneth_pl|skrýša
 trp_elder_cairandros|Kastelán Cair Androsu
 trp_elder_cairandros_pl|ostrovná pevnosť
-trp_elder_edoras|Edoras
+trp_elder_edoras|Richtár Edorasu
 trp_elder_edoras_pl|mesto
 trp_elder_aldburg|Richtár Aldburgu
 trp_elder_aldburg_pl|menšie mesto
@@ -1405,13 +1404,13 @@ trp_elder_cdolen|Lothlorienský múdry
 trp_elder_cdolen_pl|vojenské ležanie
 trp_elder_camroth|Lothlorienský múdry
 trp_elder_camroth_pl|vojenské ležanie
-trp_elder_thalls|Temnohvozdský múdry
+trp_elder_thalls|Temnohvozdský Múdry
 trp_elder_thalls_pl|elfské jaskyne
 trp_elder_imladris|Veliteľ tábora z Roklinky
 trp_elder_imladris_pl|tábor
 trp_elder_wvillage|Vrchný lesník
 trp_elder_wvillage_pl|dedina
-trp_elder_beorn|Grizlovecký starší
+trp_elder_beorn|Grizlovecký Starší
 trp_elder_beorn_pl|osada
 trp_elder_harad|Táborový náčelník Haradu
 trp_elder_harad_pl|tábor
@@ -1513,7 +1512,7 @@ trp_gandalf_pl|tuzemský Gandalfovia
 trp_nazgul|Nazgul
 trp_nazgul_pl|Skrotený Nazgul
 trp_barman|Barman
-trp_elder|Starosta centra
+trp_elder|Starosta mesta
 trp_gear_merchant|Zbrojmajster
 trp_goods_merchant|Obchodník so zásobami
 trp_start_quest_caravaneer|Torbal Karavanista
@@ -1533,8 +1532,8 @@ trp_black_numenorean_acolyte|Čierno-númenorejský pomocník
 trp_black_numenorean_acolyte_pl|Čierno-númenorejský pomocník
 trp_wolf_rider_of_mirkwood|Vlčí jazdec z Temnohvozdu
 trp_wolf_rider_of_mirkwood_pl|Vlčí jazdci z Temnohvozdu
-trp_warg_rider_of_mirkwood|Vrrčí jazdec z Temnohvozdu
-trp_warg_rider_of_mirkwood_pl|Vrrčí jazdci z Temnohvozdu
+trp_warg_rider_of_mirkwood|Vročí jazdec z Temnohvozdu
+trp_warg_rider_of_mirkwood_pl|Vročí jazdci z Temnohvozdu
 trp_gate_aggravator|Obrana Brány
 trp_orc_pretender|Ohyzdí podvodník
 trp_human_prisoner|Ľudský zajatec
@@ -1629,8 +1628,8 @@ trp_wild_troll|Divoký Jaskynný Zlobor
 trp_wild_troll_pl|Divokí Jaskynní Zlobri
 trp_ent2|Ent
 trp_ent2_pl|Enti
-trp_mountain_goblin|Horský goblin
-trp_mountain_goblin_pl|Horský goblini
+trp_mountain_goblin|Horský škrat
+trp_mountain_goblin_pl|Horskí škrati
 trp_tribal_orc|Kmeňový Ohyzd
 trp_tribal_orc_pl|Kmeňoví Ohyzdi
 trp_tribal_orc_warrior|Bojový Kmeňový Ohyzd

@@ -148,5 +148,7 @@ ui_str_hear_me|¡%s, escuchadme!
 ui_return|Volver
 ui_factions|Facciones
 ui_troop_upgrades|Mejoras de tropas
-ui_hdr_mode|Modo HDR (preferiblemente NO o BAJO):
+; ui_hdr_mode|HDR Mode:
 ui_autoexpore|Autoexposición (poner a SÍ al activar HDR)
+; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
+; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)

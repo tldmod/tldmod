@@ -148,5 +148,7 @@ ui_str_hear_me|%s, figyelem!
 ui_return|Visszatérés
 ui_factions|Frakciók
 ui_troop_upgrades|Csapatok fejlesztése
-; ui_hdr_mode|HDR Mode (recommended OFF or LOW):
+; ui_hdr_mode|HDR Mode:
 ; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)
+; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
+; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)

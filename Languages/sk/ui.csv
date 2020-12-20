@@ -148,5 +148,7 @@ ui_str_hear_me|%s, počúvajte!
 ui_return|Návrat
 ui_factions|Frakcie
 ui_troop_upgrades|Vylepšenia vojakov
-ui_hdr_mode|HDR Mód (odporúča sa OFF alebo NÍZKY)
+ui_hdr_mode|HDR Mód:
 ui_autoexpore|Auto-vystavenie (odporúča sa ON pokiaľ je HDR zapnuté)
+ui_saving_policy_realistic|Neukončovať hru bez uloženia! (Neodporúča sa)
+ui_saving_policy_nonrealistic|Možnosť ukončiť hru bez uloženia. (Odporúčané, vytvor si pre istotu viacero ukladacích slotov)

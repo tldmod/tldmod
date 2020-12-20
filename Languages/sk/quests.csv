@@ -4,7 +4,7 @@ qst_deliver_message_to_enemy_lord|Doruč správu {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} ťa požiadal, aby si doručil správu {s13} z {s15}. {s13} bol v {s4} keď ti zadal túto úlohu.
 qst_raise_troops|Vycvič {reg1} {s14}
 qst_raise_troops_text|{s9} ťa požiadal, aby si vycvičil {reg1} {s14}ov a priviedol ich k {nemu/jej}.
-qst_escort_messenger|Eskortuj posla do {s14}
+qst_escort_messenger|Sprevádzaj posla do {s14}u
 qst_escort_messenger_text|Nič
 qst_hunt_down_fugitive|Nájdi a zabi {s4}
 qst_hunt_down_fugitive_text|{s9} chce, aby si našiel a zabil utečenca menom {s4}. Práve by mal byť v {s3}.
@@ -47,22 +47,22 @@ qst_report_to_army|Hlas sa u {s13}
 qst_report_to_army_text|Nič
 qst_deliver_cattle_to_army|Doruč {reg3} kusov jedla do {s13}
 qst_deliver_cattle_to_army_text|Nič
-qst_join_siege_with_army|Pripoj sa k obliehaniu {s14}
+qst_join_siege_with_army|Pripoj sa k obliehaniu {s14}u
 qst_join_siege_with_army_text|Nič
 qst_scout_waypoints|Obhliadni {s13}, {s14} a {s15}
 qst_scout_waypoints_text|Nič
 qst_move_cattle_herd|Priveď {s12} do {s13}
-qst_move_cattle_herd_text|Starosta z {s10} ťa požiadal aby si priviedol nejaký {s12} do {s13}.
+qst_move_cattle_herd_text|Starosta z {s10}u ťa požiadal aby si priviedol nejaký {s12} do {s13}.
 qst_escort_merchant_caravan|Sprevádzaj karavanu do {s8}
 qst_escort_merchant_caravan_text|Sprevádzaj karavanu do {s8} a prehovor s nimi keď budete neďaleko.
 qst_deliver_wine|Doruč {reg5} kusov {s6} do {s4}
 qst_deliver_wine_text|{s9} z {s3} ťa požiadal aby si doručil {reg5} kusov {s6} do {s4} do 7 dní.
-qst_troublesome_bandits|Postaraj sa o Doliezavých Goblinov.
-qst_troublesome_bandits_text|{s9} z {s4} ťa požiadal aby si našiel a zabil doliezavých goblinov v blízkosti mesta.
+qst_troublesome_bandits|Postaraj sa o Dobiedzavých Škratov.
+qst_troublesome_bandits_text|{s9} z {s4} ťa požiadal aby si našiel a zabil dobiedzavých škratov v blízkosti mesta.
 qst_deal_with_looters|Postaraj sa o Kmeňových Ohyzdov.
-qst_deal_with_looters_text|Starosta z {s4} ťa požiadal, aby si pobil niekoľko tlúp Kmeňových Ohyzdov v okolí {s4}u.
-qst_deal_with_night_bandits|Znič tlupu Tuláckych Goblinov.
-qst_deal_with_night_bandits_text|Starosta z {s14} ťa požiadal aby si zničil skupinu Goblinov Dezertérov v {s14}.
+qst_deal_with_looters_text|Starosta z {s4}u ťa požiadal, aby si pobil niekoľko tlúp Kmeňových Ohyzdov v okolí {s4}u.
+qst_deal_with_night_bandits|Znič tlupu Tuláckych Škratov
+qst_deal_with_night_bandits_text|Starosta z {s14}u ťa požiadal, aby si zničil skupinu nočných škratov v {s14}u.
 qst_deliver_food|Dovez {s3} {reg5} kusov jedla.
 qst_deliver_food_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov jedla do 10 dní.
 qst_deliver_iron|Prines {reg5} kusov {s6} do {s3}.
@@ -93,7 +93,7 @@ qst_blank_quest_06|Pokor {s35} v bitke.
 
 
 
-qst_blank_quest_16|Posilni Centrum
+qst_blank_quest_16|Posilni Mesto
 qst_blank_quest_17|Zabi {reg22} {s6} v bitkách
 
 

@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|おぬしが{s24}であれば話を聞こうと�
 dlga_marshall_ask:lord_pretalk.1|おぬしは立派な指揮官ではあるが、 {playername}、 おぬしの影響力については疑問だ。 おぬしの提案については慎重にならざるを得ない。^[影響力ポイントが{reg15}必要ですが、{reg14}しかありません]
 dlga_marshall_ask:lord_pretalk.2|我々はとてもではないが、 敵に真正面から挑める状態ではないぞ、 {playername}。 {s23}である現状を踏まえれば、 まだまだ兵を増強して戦力を蓄えるべきであろう。
 dlga_marshall_ask:marshall_suggest|聞こう、{playername}。 提案とは何か？
+dlga_marshall_suggest:lord_give_order_assault|あなたと私が力を合わせれば、 {s11}を手中にすることができる。 あなたには、すぐに攻撃を開始してもらいたい・・・ [{reg1}/{reg2}の影響力ポイントを消費します]
 dlga_marshall_suggest:marshall_answer|いますぐ{s1}を包囲するべきだ。
 dlga_marshall_suggest:lord_pretalk|なんでもない、そちらの判断にまかせる。
 dlga_player_siege_discuss:player_siege_discuss_1|伺いましょう、閣下。
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|私と長いつきあいの友であ�
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|どのくらい必要なのですか？
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|{s14}を{reg1}名、 育て上げて私に引き渡してくれれば、 充分であろう。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|よろしいでしょう、{s65}。私に{reg1}名の新兵をお預けください。立派な{s14}に育て上げてご覧に入れましょう。
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|{s65}、いい考えがあります。 新兵{reg1}名に、闘技場で私が直接稽古をつけましょう。
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|{s65}、私に考えがあります。 新兵{reg1}名に、闘技場で私が直接稽古をつけましょう。 {s14}には足りないでしょうが、そのための 第一歩にはなります。
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|近頃は他人を訓練してやる暇などありません。
 dlga_lord_mission_raise_troops_accepted:close_window|おぬしのお陰で肩の荷が下りたわ、 {playername}。 我が部隊の兵長に、 新兵をおぬしの指揮下へ送るよう、 伝えておこう。 それから、 経費の足しに、 おぬしにいくらか前金を渡しておこう。 さあ、 これで充分であろう。 感謝する。
-dlga_lord_mission_raise_troops_alternate:close_window|{playername}よ、それはおもしろい。 兵長に新兵どもを闘技場へ送りだすように言おう。 おぬしも行って、連中をしごき上げてくれ。 見物させてもらおう。 申し出に感謝する。
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|お、そうか。 期待していたのだがな。 まあ仕方あるまい。 ではまたな。
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|おぬし向きの仕事がある。{s4}と呼ばれる、 ならず者がおってな。 私の護衛の者をひとり殺害して以来、裁きを受けずに逃げ続けておるのだ。 最近、奴を{s3}で目撃したという情報があった。 奴を捕らえて速やかに裁きを下してくれれば、報酬を出そう。
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|ではその者を探し出し、然るべき裁きを受けさせましょう。

@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|당신이 {s25}, {playername}에 불과하다면 
 dlga_marshall_ask:lord_pretalk.1|{playerame}은 뛰어난 지휘관이지만 충분한 영향력을 갖고 있지 않은 것 같군. 그대의 충고를 듣는 것은 신중하지 못한 일이야. ^[{reg15}만큼의 영향력 필요, {reg14}만큼만 보유 중.]
 dlga_marshall_ask:lord_pretalk.2|적과 정면으로 맞설 수는 없네, {playername}. 우리는 병력을 더 모으고 강해져야하네. 아아, 우리는 {s23} 명의 병사 밖에 없지 않은가.
 dlga_marshall_ask:marshall_suggest|듣고 있네, {playername}. 뭘 제안할 건가?
+dlga_marshall_suggest:lord_give_order_assault|함께라면 손쉽게 {s11}을 빼앗을 수 있을 것이네. 지금 당장 ...로 가게.[{reg1}/{reg2} 만큼의 영향력 소모]
 dlga_marshall_suggest:marshall_answer|우리는 즉시 이동해 {s1}을 포위해야합니다.
 dlga_marshall_suggest:lord_pretalk|신경쓰지 말게. 나는 그대의 판단을 믿는다네.
 dlga_player_siege_discuss:player_siege_discuss_1|말씀하십시오, 전하.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|내가 아는 동료이자 오랜 전
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|얼마나 많이 필요하십니까?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|만약 자네가 {reg1} {s14}명 훈련시켜 데려온다면, 충분할 것 같군.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|물론입니다, {s65}. 제게 {reg1}들을 맡기십시오. {s14}로 성장하도록 훈련시키겠습니다. 
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|다른 방법을 제안하고 싶습니다, {s65}. 저는 {reg1}들을 투기장으로 데려가서 결투를 통해 가르치려 합니다.
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|다른 방법을 제안하고 싶습니다, {s65}. 저는 {reg1}들을 투기장으로 데려가서 결투를 통해 가르치려 합니다. {s14}로 성장할 수는 없겠지만 다른 방식으로는 성장할 수 있을 거라고 보장합니다. 
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|누구를 훈련시키기에는 저는 너무 바쁩니다.
 dlga_lord_mission_raise_troops_accepted:close_window|내 어깨의 짐을 덜어주는군, {playername}. 내 부하들에게 신병을 좀 붙여서 자네에게 보내도록 하지. 그리고 비용도 좀 지원해주겠네. 여기, 이 돈주머니 정도면 될걸세. 도와주어서 고맙네.
-dlga_lord_mission_raise_troops_alternate:close_window|흥미로운 제안이군, {playername}. 내 부하들에게 말해 신병들을 투기장에 배치하라 하겠네. 그들을 따라가서 각이 잡힐때까지 훈련시키도록. 내가 지켜보고 있을테니. 도와주어서 고맙네.
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|아, 물론이네. 너무 많은 것을 기대했나보군. 그럼, 행운을 비네.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|{s4}라 알려진 무법자의 문제에 대해 자네가 도와줄 수 있겠군. 그는 내 경호원 중 한 명을 살해했고, 그후 줄곧 자의로 도망쳐왔네. 최근 그 놈이 {s3}에서 목격되었다는 소식이 전해졌네. 놈을 쫓아서 신속하게 정의의 심판을 내려줄 수 있다면, 내 후히 보답하지.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|그럼 그 놈을 추격해 정의의 심판을 내리겠습니다.

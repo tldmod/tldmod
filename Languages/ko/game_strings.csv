@@ -979,7 +979,7 @@ str_npc3_home_description_2|우리가 엔트우드를 지나야한다면, 서두
 str_npc4_home_description_2|우리는 과거에 이룬 위대한 업적과 희생을 기억해야만합니다. 로한과 곤도르의 동맹은 다시 한번 우리 동족들을 재앙으로부터 구해줄 것입니다.
 str_npc5_home_description_2|아무리 위대한 사람일지라도, 설령 이스타리 중 한 사람일지라도 타락할 수 있다는 것을 보여준다네. 힘을 갈망하는 자는 힘으로 망하나니, 더이상 지체하지 맙시다.
 str_npc6_home_description_2|성벽 뒤에서 악의 군세가 진군 준비를 하고 있는 것이 느껴지는군... 로스로리엔으로? 아니면 너른골? 아니면 초록숲의 고향으로? 알 수는 없지만 그 계획을 무너트릴 수 있다면 할 수 있는 것을 해주기를 바라네.
-str_npc7_home_description_2|만약 전쟁의 운명이 우리에게 거대한 규모의 군대를 얻을 수 있게 해준다면, 우리는 광산의 입구로 향해 그곳의 막대한 부를 되찾을 위험을 감수해야해.
+; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc8_home_description_2|수많은 달콤한 꽃들의 향기를 맡을 수 있고, 채밀하는 벌들을 볼 수 있어. 너만 괜찮다면, 내가 직접 쓸 약초를 좀 모을 수 있을까? 잠깐이면 돼.
 str_npc9_home_description_2|우루크-하이 무리를 데리고 올 게 아니라면 여기서 터벅터벅 걸어다니는 건 소용 없어. 벽에서 감시하는 눈빛을 만들고 싶은 게 아니라면야.
 str_npc10_home_description_2|미나스 모르굴, 나즈굴이 하루종일 술퍼먹는 곳이지, 하하!
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|모르도르의 땅
 str_shortname_region_dimrill|딤릴데일
 str_shortname_region_s_erebor|너른골 왕국
 str_trait_title_elf_friend|요정의 친구
-str_trait_desc_elf_friend|당신은 요정들에게 매우 존경받게 되었고 그들은 이제 당신을 신뢰할 수 있는 동맹으로 간주한다. 요정들을 모집하는 비용이 줄어들었고 당신은 이제 요정 군대에 명령을 내릴수도 있게 되었다.
+; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
 str_trait_title_gondor_friend|섭정의 축복
-str_trait_desc_gondor_friend|당신은 섭정 데네소르에게 신뢰받게 되었고 당신의 명성은 곤도르의 병사들 사이에서도 이름을 날리기 시작했다. 곤도르인을 모집하는 비용이 줄어들었고 당신은 이제 곤도르 군대에 명령을 내릴 수도 있게 되었다.
+; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
 str_trait_title_rohan_friend|왕의 남자
-str_trait_desc_rohan_friend|당신은 세오덴 국왕에게 신뢰받게 되었고 당신의 명성은 로한 병사들 사이에서도 이름을 날리기 시작했다. 로히림을 모집하는 비용이 줄어들었고 당신은 이제 로한 군대에 명령을 내릴 수도 있게 되었다.
+; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
 str_trait_title_brigand_friend|바바리안 챔피언
 str_trait_desc_brigand_friend|당신은 결투장에서 보인 당신의 인상적인 활약들 덕분에 사우론을 섬기는 야만 부족들에게 신뢰받게 되었다. 야만인들을 모집하는 비용이 줄어들었다.
 str_trait_title_blessed|축복받은
@@ -2388,7 +2388,7 @@ str_npc20_home_description_2|우리는 이곳 중간계에서 난쟁이들이 �
 str_npc21_home_description_2|우리는 과거에 이룬 위대한 업적과 희생을 기억해야만합니다. 로한과 곤도르의 동맹은 다시 한번 우리 동족들을 재앙으로부터 구해줄 것입니다.
 str_npc22_home_description_2|아무리 위대한 사람일지라도, 설령 이스타리 중 한 사람일지라도 타락할 수 있다는 것을 보여준다네. 힘을 갈망하는 자는 힘으로 망하나니, 더이상 지체하지 맙시다.
 str_npc23_home_description_2|성벽 뒤에서 악의 군세가 진군 준비를 하고 있는 것이 느껴지는군... 로스로리엔으로? 아니면 너른골? 아니면 초록숲의 고향으로? 알 수는 없지만 그 계획을 무너트릴 수 있다면 할 수 있는 것을 해주기를 바라네.
-str_npc24_home_description_2|만약 전쟁의 운명이 우리에게 거대한 규모의 군대를 얻을 수 있게 해준다면, 우리는 광산의 입구로 향해 그곳의 막대한 부를 되찾을 위험을 감수해야해.
+; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc25_home_description_2|수많은 달콤한 꽃들의 향기를 맡을 수 있고, 채밀하는 벌들을 볼 수 있어. 너만 괜찮다면, 내가 직접 쓸 약초를 좀 모을 수 있을까? 잠깐이면 돼.
 str_npc26_home_description_2|우루크-하이 무리를 데리고 올 게 아니라면 여기서 터벅터벅 걸어다니는 건 소용 없어. 벽에 있는 감시자와 눈을 마주치고 서로 찡그릴 생각이 아니라면야.
 str_npc27_home_description_2|미나스 모르굴, 나즈굴이 하루종일 술퍼먹는 곳이지, 하하!

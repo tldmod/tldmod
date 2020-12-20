@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Я навряд ли прислушаюсь к т
 dlga_marshall_ask:lord_pretalk.1|Ты умелый полководец, {playername}, но влияние твоё невелико. Было бы неразумно прислушиваться к твоему совету.^[нужно {reg15} очков влияния, лишь {reg14} в наличии]
 dlga_marshall_ask:lord_pretalk.2|Мы вряд ли можем себе позволить сойтись с врагом лицом к лицу, {playername}. Нам пока нужно собрать войска и восстановить силы. Увы, наша держава просто {s23}.
 dlga_marshall_ask:marshall_suggest|Я слушаю, {playername}. Что предложишь?
+dlga_marshall_suggest:lord_give_order_assault|Вместе, Вы и я можем захватить {s11}.Вы должны выступать немедленно... [Потратить {reg1}/{reg2} влияния]
 dlga_marshall_suggest:marshall_answer|Мы должны немедленно осадить {s1}.
 dlga_marshall_suggest:lord_pretalk|Неважно, я доверюсь вашему решению.
 dlga_player_siege_discuss:player_siege_discuss_1|Я слушаю, мой господин.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|У меня есть друг, сед
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Какие воины вам нужны? И сколько?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|{s14}, числом {reg1}. Если бы ты смог{/ла} обучить их и привести ко мне, этого было бы достаточно.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Конечно, {s65}. Дайте мне {reg1} зелёных новобранцев, и скоро из них выйдут настоящие {s14}.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Я предлагаю другой вариант, {s65}. Я возьму {reg1} новобранцев и лично покажу им несколько приёмов...
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Я предлагаю другой вариант, {s65}. Я возьму {reg1} новобранцев и лично покажу им несколько приёмов. Они конечно не станут {s14} после этого, но для них это в любом случае будет шагом вперёд.
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Я сейчас слишком занят, чтобы кого-то тренировать.
 dlga_lord_mission_raise_troops_accepted:close_window|Тяжкий груз забот снял{/а} ты с моих плеч, {playername}. Я прикажу сотникам привести тебе новобранцев и передать их под твоё командование. Кроме того, я позабочусь о твоём снабжении, дабы возместить затраты. Вот, держи, думаю, этого хватит. Спасибо за помощь.
-dlga_lord_mission_raise_troops_alternate:close_window|Это отличное предложение, {playername}. Я прикажу отправить к тебе новобранцев. Займись ими и сделай из них настоящих воинов. А я посмотрю на это. Заранее благодарю тебя за помощь.
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Ах, да, конечно. Большего я и не ждал. Что ж, удачи в таком случае.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|У меня есть для тебя одно дельце, речь идёт о преступном злодее известном как {s4}.  Он убил одного из моих людей и с тех пор прячется от правосудия. Мои соглядатаи сообщают, что его видели в {s3}. Если ты выследишь и заставишь его ответить за содеянное, то я щедро вознагражу тебя за это.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Тогда я разыщу его и сам{/а} приведу приговор в исполнение.

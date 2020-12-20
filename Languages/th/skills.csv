@@ -1,7 +1,7 @@
 skl_trade|ทักษะในการต่อรอง
-skl_trade_desc|การอัพเลเวลสกิลนี้จะทำให้การซื้อของใช้ค่าทรัพยากรน้อยลง (สกิลที่ส่งผลทั้งกองทัพ)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|ความเป็นผู้นำ
-skl_leadership_desc|ทุกๆเลเวลจะเพิ่มขนาดกองทัพที่สามารถควบคุมได้ 5 เพิ่มค่ากำลังใจของกองทัพและลดค่าจ้าง 5%% (สกิลสำหรับผู้นำกองทัพ)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|การจัดการนักโทษ
 skl_prisoner_management_desc|ทุกๆเลเวลของสกิลนี้เพิ่มขีดจำกัดของนักโทษที่จับได้สูงสุด %d (สกิลสำหรับผู้นำกองทัพ)
 skl_persuasion|พรานป่า

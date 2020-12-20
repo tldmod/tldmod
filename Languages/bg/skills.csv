@@ -1,7 +1,7 @@
 skl_trade|Сметкаджия
-skl_trade_desc|Нивата на това умение правят възможно вземането на повече оборудване за по- малко ресурсни точки. (Групово умение)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Лидерство
-skl_leadership_desc|Всяка точка повишава максималния брой войска, която можете да командване, с 5. Повишава духа и намалява заплатите на войската с 5%%. (Лидерско умение) 
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Управление на затворниците
 skl_prisoner_management_desc|Всяко ниво от умението увеличава максималния брой затворници с %d. (Лидерско умение) 
 ; skl_persuasion|Wildcraft

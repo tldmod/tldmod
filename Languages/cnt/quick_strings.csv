@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|一 個 獸 人 ， 為 全 知 之 眼 服 務
 qstr_an_URUK^_the_new_bre|一 個 奇 獸 人 ， 一 種 全 新 的 獸 人 
 qstr_a_MAN^_subjugated_by|一 個 人 類 ， 被 索 倫 所 征 服
 qstr_an_ORC^_serving_the_W|一 個 獸 人 ， 為 蒼 白 之 手 服 務 
-qstr_an_URUK_HAI^_bred_in|一 個 強 獸 人 ， 在 艾 辛 格 被 孵 化 出 來 
+; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|登 蘭 德 人， ^來 自 西 邊 平 原
 qstr_Click_the_center_but|點 擊 中 央 按 鈕 以 切 換 派 系^點 擊 人 物 以 觀 看 細 節
 qstr_Level:_{reg3}^Health|等 級 : {reg3}^生 命 : {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|不 適 合 的 坐 騎
 qstr_{s24}:_Your_infantry|{s24} ： 你 的 步 兵 感 覺 好 些 了 ！
 qstr_{s24}:_Your_archers_|{s24} ： 你 的 弓 箭 手 感 覺 好 些 了 ！
 qstr_{s24}:_Your_cavalry_|{s24} ： 你 的 騎 兵 感 覺 好 些 了 ！
-qstr_Ah_what_a_coincidenc|哈 ！ 真 巧 能 在 這 裡 碰 到 {playername} ！ 你 可 能 不 認 識 我 ， 但 我 聽 你 可 是 聽 得 耳 朵 都 起 繭 子 了 。 我 正 從 {s3} 趕 往 {s4} ， 你 的 大 名 可 是 已 經 傳 到 那 裡 去 了 。 在 這 個 烽 煙  四 起 的 年 代 ， {s3} 可 是 指 著你 這 種 有 能 力 的 人 呢 。 如 果 你 打  算 四 處 做 做 任 務 ， 不 妨 重 新 考 慮 一 下 ， 全 心 全 意的 幫 助 {s3} 。
+; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
 qstr_Who_are_you?|你 是 誰 ?
 qstr_A_friend_of_{s3}_and|{s3} 的 朋 友 和 {s2} 的 人 。   現 在 快 點 ！ 魔 多 吸 引 了 所 有 邪 惡 的 東 西 ， 黑 暗 力 量 正 在 控 制 它 們 的 意 志 將 它 們 聚 集 在 那 裡 。 世 界 上 一 切 美 好 的 東 西 都 快 沒 時 間 了 ， 除 非 我 們 抵 抗 它 的 每 一 個 行 動 ！
 qstr_What_should_I_do?|我 該 做 什 麼 ?
-qstr_Find_{s3}_s_whereabo|盡 快 找 到 {s3} 的 下 落 ， 並 與 他 交 談 。 祝 你 好 運 ！
+; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|很 高 興 看 到 你 還 沒 被 索 倫 的 陰 影 打 敗 ， {playername} 。
 qstr_You_are_the_one_they|你 就 是 人 們 口 中 的 甘 道 夫 或 米 斯 蘭 達 (辛 達 林 語 ) 。
 qstr_That_is_what_some_ca|他 們 的 確 如 此 稱 呼 我 ， 而 我 也 曾 被 稱 呼 過 其 他 名 字 。 但 這 些 已 經 不 重 要 了 ， 除 非 黑 暗 消 失 ， 很 快 就 再 也 不 會 有 任 何 人 能 夠 稱 呼 我 的 任 何 名 字 了 。
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} 不 再 跟 隨 你 。
 qstr_You_have_{reg69}_all|你 有 {reg69} 盟 友 跟 著 你
 qstr_You_have_{reg69}_ally|你 有 {reg69} 一 群 盟 友 跟 著 你
 qstr_The_forces_of_{s2}_h|{s2 }的 力 量 重 新 集 結 並 前 進 到 {s15} ！
-qstr_Your_scouts_have_rep|你 的 斥 候 打 聽 到 消 息 ， 在 {s3} 附 近 有 一 個 {s2}
+; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
 qstr_{s1}_from_{s2}|{s1} 來 自 {s2}
 qstr_When_dealing_with_lo|請 記 住 ， 在 {s11} 與 當 地 人 交 易 的 時 候 ， 他 們 不 認 識 你 ， 也 不 一 定 承 認 你 在 {s10} 取 得 的 功 績。^^(能 在 {s11} 用 於 交 易 的 資 源 點 和 你 在 {s10} 取 得 的 的 資 源 點 不 同 ， 你 要 在 {s11} 取 得 當 地 派 系 的 資 源 點 以 便 與 當 地 人 交 易 ； 查 看 報 告 菜 單 獲 取 更 多 消 息 )
 qstr_Info|信 息
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27} ： 部 隊 士 氣 提 升 了 。
 qstr_{s27}:_Party_morale_d|{s27} ： 部 隊 士 氣 降 低 了 。
 qstr_You_have_failed_to_f|你 未 能 履 行 宣 誓 報 復 巴 林 和 他 的 軍 隊 ！
 qstr_You_have_failed_to_fu|你 未 能 履 行 為 {s1} 之 死 所 做 的 復 仇 誓 言 ！
-qstr_Your_troops_value_yo|你 的 軍 隊 重 視 你 為 完 成 誓 言 所 做 的 努 力 ， 但 承 認 事 態 發 展 太 快 。 因 此 ，
+; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
 qstr_{s22}You_have_fulfil|{s22} 你 已 經 履 行 了 為 巴 林 和 他 的 軍 隊 復 仇 的 誓 言 ！
 qstr_{s22}You_have_fulfill|{s22} 你 已 經 完 成 了 對 {s1} 英 勇 死 亡 的 複 仇 誓 言 ！
 qstr_Reinforcements|增 援

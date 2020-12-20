@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Ich werde kaum Euren Rat annehmen, da Ihr nur {s2
 dlga_marshall_ask:lord_pretalk.1|Ihr seid ein erfahrener Anführer, {playername}, aber Euer Einfluss schwindet. Es wäre nicht klug, Euren Rat zu hören.^ [benötigt {reg15} Einfluss, du hast nur {reg14}]
 dlga_marshall_ask:lord_pretalk.2|Wir können es uns kaum leisten, den Feind Kopf voran zu bekämpfen, {playername}. Wir müssen unsere Truppen aufbauen und stärker werden, leider sind wir nur {s23}.
 dlga_marshall_ask:marshall_suggest|Ich höre, {playername}. Was schlagt Ihr vor?
+dlga_marshall_suggest:lord_give_order_assault|Gemeinsam können wir {s11} einnehmen. Ihr solltet sofort angreifen... [Kostet {reg1}/{reg2} Einfluss]
 dlga_marshall_suggest:marshall_answer|Wir sollten {s1} belagern.
 dlga_marshall_suggest:lord_pretalk|Schon gut. Ich vertraue Eurem Urteil.
 dlga_player_siege_discuss:player_siege_discuss_1|Ich höre, mein Herr.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|Ich habe einen Freund hier, einen alt
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Wie viele Männer braucht Ihr?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Wenn Ihr {reg1} {s14} ausbilden und mir übergeben könntet, wäre das wahrscheinlich genug.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Sicher, {s65}. Überlasst mir {reg1} frische Rekruten und ich werde sie als {s14} ausbilden.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Ich schlage einen anderen Weg vor, {s65}. Ich werde {reg1} frischen Rekruten in der Arena das eine oder andere beibringen...
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Ich schlage einen anderen Weg vor, {s65}.... Ich werde {reg1} frischen Rekruten in der Arena das eine oder andere beibringen. Ich werde so keine {s14} aus ihnen machen, aber es ist ein Schritt in diese Richtung.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Ich schlage einen anderen Weg vor, {s65}. Ich werde {reg1} frischen Rekruten auf dem Ausbildungsplatz das eine oder andere beibringen...
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Ich schlage einen anderen Weg vor, {s65}.... Ich werde {reg1} frischen Rekruten auf dem Ausbildungsplatz das eine oder andere beibringen. Ich werde so keine {s14} aus ihnen machen, aber es ist ein Schritt in diese Richtung.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Ich bin zur Zeit zu beschäftigt, um jemanden auszubilden.
 dlga_lord_mission_raise_troops_accepted:close_window|Ihr nehmt eine Last von meinen Schultern, {playername}. Ich werde meine Befehlshaber anweisen, Euch die Rekruten zu überlassen. Ich übergebe Euch außerdem etwas Geld als Unkostenbeitrag. Hier, dieser Beutel sollte reichen. Danke für Eure Hilfe.
-dlga_lord_mission_raise_troops_alternate:close_window|Ein interessanter Vorschlag, {playername}. Ich werde meine Hauptleute anweisen, die Rekruten in die Arena zu schicken. Bringt sie in Form, ich werde zusehen. Danke für Eure Hilfe.
+dlga_lord_mission_raise_troops_alternate:close_window|Ein interessanter Vorschlag, {playername}. Ich werde meine Hauptleute anweisen, die Rekruten auf den Ausbildungsplatz zu schicken. Bringt sie in Form, ich werde zusehen. Danke für Eure Hilfe.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, sicher. Ich hatte das erwartet. Nun, viel Glück dann.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Ich habe da eine Sache, bei der Ihr mir helfen könntet: Ein gesetzloser Schurke namens {s4} bereitet mir Schwierigkeiten. Er hat einen meiner Männer ermordet und ist seitdem auf der Flucht vor seiner Bestrafung. Es gibt Neuigkeiten, dass er in {s3} Zuflucht gesucht hat. Ihr könntet ihm dort nachspüren und ihn einer schnellen Strafe zuführen und ich belohne Euch dafür.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Dann werde ich ihn aufspüren und das Gesetz ausführen.

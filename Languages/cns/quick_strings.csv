@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|半兽人，索伦之眼的奴仆
 qstr_an_URUK^_the_new_bre|强兽人，半兽人的新品种
 qstr_a_MAN^_subjugated_by|人类，臣服于索伦
 qstr_an_ORC^_serving_the_W|半兽人，白手奴仆
-qstr_an_URUK_HAI^_bred_in|强兽人，繁衍于艾辛格
+; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|登兰德人，来自西部平原
 qstr_Click_the_center_but|单击中心按钮切换派系 ^单击头像以查看详细信息
 qstr_Level:_{reg3}^Health|等级：{reg3} ^生命：{reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|不适合的坐骑
 qstr_{s24}:_Your_infantry|{s24}：你的步兵感觉好些了！
 qstr_{s24}:_Your_archers_|{s24}：你的射手感觉好些了！
 qstr_{s24}:_Your_cavalry_|{s24}：你的骑兵感觉好些了！
-qstr_Ah_what_a_coincidenc|哈！真巧能在这里碰到{playername}！你可能不认识我，但我听你可是听得耳朵都起茧子了。我正从{s3}赶往{s4}，你的大名可是已经传到那里去了。在这个烽烟四起的年代，{s3}可是指着你这种有能力的人呢。如果你打算四处做做任务，不妨重新考虑一下，全心全意的帮助{s3}。
+; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
 qstr_Who_are_you?|你是谁？
 qstr_A_friend_of_{s3}_and|{s3}之友、{s2}之民。快！魔多正集结邪恶，索伦的阴影正汇聚于此。对于光明之民来说，时间已经不多了。让我们集合所有，以逆转这一切！
 qstr_What_should_I_do?|我要怎么办?
-qstr_Find_{s3}_s_whereabo|尽快找到{s3}的下落，并与他交谈。祝你好运！
+; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|很高兴看到你还没被索伦的阴影打败，{playername}。
 qstr_You_are_the_one_they|你就是人们口中的甘道夫或米斯兰达（辛达林语）。
 qstr_That_is_what_some_ca|他们的确如此称呼我，而我也曾被称呼过其他名字。但这些已经不重要了，除非黑暗消失，很快就再也不会有任何人能够称呼我的任何名字了。
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5}不再跟随你。
 qstr_You_have_{reg69}_all|你有{reg69}友军部队跟随着你。
 qstr_You_have_{reg69}_ally|你有{reg69}友军部队跟随着你。
 qstr_The_forces_of_{s2}_h|{s2}的军队已经再次集结并向{s15}进军中！
-qstr_Your_scouts_have_rep|你的斥候打听到消息，在{s3}附近有一个{s2}
+; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
 qstr_{s1}_from_{s2}|自{s2}来的{s1}
 qstr_When_dealing_with_lo|请记住，在{s11}与当地人交易的时候，他们不认识你，也不一定承认你在{s10}取得的功绩。(能在{s11}用于交易的资源点和你在{s10}取得的的资源点不同，你要在{s11}取得当地派系的资源点以便与当地人交易；查看报告菜单获取更多消息)
 qstr_Info|信息
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27}：部队士气提升了。
 qstr_{s27}:_Party_morale_d|{s27}：部队士气降低了。
 qstr_You_have_failed_to_f|你未能履行为巴林之死所做的复仇誓言！
 qstr_You_have_failed_to_fu|你未能履行为{s1}之死所做的复仇誓言！
-qstr_Your_troops_value_yo|你的士兵认可你完成誓言的努力，但是承认事情发生的开快了。结果，
+; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
 qstr_{s22}You_have_fulfil|{s22}你完成了你为巴林和他的同伴复仇的誓言！
 qstr_{s22}You_have_fulfill|{s22}你完成了你为{s1}的英雄之死复仇的誓言！
 qstr_Reinforcements|增援

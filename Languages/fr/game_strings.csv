@@ -979,7 +979,7 @@ str_npc3_home_description_2|Si nous sommes obligés de traverser la Forêt des E
 str_npc4_home_description_2|Nous tâcherons de nous remémorer les hauts-faits du passé et les sacrifices auxquels nous avons consenti. L'alliance entre le Rohan et le Gondor sauvera une fois de plus nos peuples de la ruine.
 str_npc5_home_description_2|Que ce soit un rappel que mêmes les plus grands, même un des Istari, peuvent être corrompus et sombrer. Ceux qui convoitent le pouvoir peuvent être détruits par le pouvoir, alors ne ne demeurons pas plus longtemps ici.
 str_npc6_home_description_2|Je sens les armées du Mal derrière ces murs, s’apprêtant à marcher... En direction de la belle Lothlórien ? Vers Dale ? Vers ma patrie, Vert-Bois-le-Grand ? Je ne peux l'affirmer avec certitude mais, je vous en prie, faites tout ce qui est en votre pouvoir pour contrecarrer leurs plans.
-str_npc7_home_description_2|Si les hasards de la guerre nous offrent une grande armée, nous devrions tenter de pénétrer dans les Mines et récupérer ses richesses.
+str_npc7_home_description_2|Si le sort de la guerre nous offre une grande armée, nous devrions tenter de pénétrer dans les Mines et récupérer ses richesses.
 str_npc8_home_description_2|Je peux sentir le parfum de nombreuses et délicieuses fleurs et voir les abeilles butiner leur nectar. Si cela ne vous embête pas, je vais cueillir quelques herbes pour notre usage, cela ne durera qu'un instant.
 str_npc9_home_description_2|Cela ne sert à rien de traîner ici si nous ne sommes pas soutenus par une puissante horde d'Uruk-hai. A moins que vous désiriez faire face aux guetteurs sur les remparts, bien entendu.
 str_npc10_home_description_2|Minas Morgul, où les Nazgûl boivent du matin au soir, har-har !
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|la terre du Mordor
 str_shortname_region_dimrill|Vallée de Ruisselombre
 str_shortname_region_s_erebor|Le Royaume de Dale
 str_trait_title_elf_friend|Ami des elfes
-str_trait_desc_elf_friend|Vous êtes devenu{/e} hautement estimé{/e} des elfes et ils vous voient maintenant comme {un allié/une alliée} de confiance. Le coût pour recruter des elfes a été réduit et vous pouvez maintenant donner des ordres aux armées elfes.
+str_trait_desc_elf_friend|Vous êtes devenu{/e} hautement estimé{/e} des elfes et ils vous voient maintenant comme {un allié/une alliée} de confiance. Le coût pour recruter des elfes a été réduit.
 str_trait_title_gondor_friend|Bénédiction de l'Intendant
-str_trait_desc_gondor_friend|Vous êtes devenu{/e} hautement estimé{/e} par l'Intendant Denethor et votre statut s'est élevé parmi les hommes du Gondor. Le coût pour recruter des Gondoriens a été réduit et vous pouvez maintenant donner des ordres aux armées gondoriennes.
+str_trait_desc_gondor_friend|Vous êtes devenu{/e} hautement estimé{/e} par l'Intendant Denethor et votre statut s'est élevé parmi les hommes du Gondor. Le coût pour recruter des Gondoriens a été réduit.
 str_trait_title_rohan_friend|Homme du roi
-str_trait_desc_rohan_friend|Vous êtes devenu{/e} hautement estimé{:e} du roi Théoden du Rohan et votre statut s'est élevé parmi les hommes du Rohan. Le coût pour recruter des Rohirrim a été réduit et vous pouvez maintenant donner des ordres aux armées du Riddermark.
+str_trait_desc_rohan_friend|Vous êtes devenu{/e} hautement estimé{:e} du roi Théoden du Rohan et votre statut s'est élevé parmi les hommes du Rohan. Le coût pour recruter des Rohirrim a été réduit.
 str_trait_title_brigand_friend|Champion barbare
 str_trait_desc_brigand_friend|Vous êtes devenu{/e} hautement estimé{/e} par les tribus barbares servant Sauron du fait de votre impressionnante prestation dans l'arène. Vous pouvez maintenant recruter des barbares à moindre coût.
 str_trait_title_blessed|Béni
@@ -2388,7 +2388,7 @@ str_npc20_home_description_2|Nous écraserons les oeuvres des Valars, dont ces n
 str_npc21_home_description_2|Nous tâcherons de nous remémorer les hauts-faits du passé et les sacrifices auxquels nous avons consenti. L'alliance entre le Rohan et le Gondor sauvera une fois de plus nos peuples de la fatalité.
 str_npc22_home_description_2|Que ce soit un rappel que mêmes les plus grands, même un des Istari, peuvent être corrompus et sombrer. Ceux qui convoitent le pouvoir peuvent être détruits par le pouvoir, alors ne ne demeurons pas plus longtemps ici.
 str_npc23_home_description_2|Je sens les armées du Mal derrière ces murs, s’apprêtant à marcher... En direction de la belle Lothlórien ? Vers Dale ? Vers ma patrie, Vert-Bois-le-Grand ? Je ne peux l'affirmer avec certitude mais, je vous en prie, faites tout ce qui est en votre pouvoir pour contrecarrer leurs plans.
-str_npc24_home_description_2|Si les hasards de la guerre nous offrent une grande armée, nous devrions tenter de pénétrer dans les Mines et récupérer ses richesses.
+str_npc24_home_description_2|Si le sort de la guerre nous offre une grande armée, nous devrions tenter de pénétrer dans les Mines et récupérer ses richesses.
 str_npc25_home_description_2|Je peux sentir le parfum de nombreuses et délicieuses fleurs et voir les abeilles butiner leur nectar. Si cela ne vous embête pas, je vais cueillir quelques herbes pour notre usage, cela ne durera qu'un instant.
 str_npc26_home_description_2|Cela ne sert à rien de traîner ici si nous ne sommes pas soutenus par une puissante horde d'Uruk-hai. A moins que vous désiriez faire face aux guetteurs sur les remparts, bien entendu.
 str_npc27_home_description_2|Minas Morgul, où les Nazgûl boivent du matin au soir, har-har !

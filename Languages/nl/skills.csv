@@ -1,7 +1,7 @@
 skl_trade|Onderhandelaar
-skl_trade_desc|Hoe hoger het level voor deze vaardigheid, hoe meer spullen je kunt kopen voor minder punten (groep's vaardigheid)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Leiderschap
-skl_leadership_desc|Elk punt vergroot het maximum aantal troepen dat je kunt besturen. Verbetert het moraal van je groep en vermindert de loonkosten van je troepen met 5%% (Leider vaardigheid)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Gevangenen Beheer
 skl_prisoner_management_desc|Elk punt voor deze vaardigheid vergroot het maximum aantal gevangenen met %d (Leider vaardigheid)
 skl_persuasion|Planten Vaardigheid

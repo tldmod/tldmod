@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Fussiez-vous {s24} que j'aurais écouté avec att
 dlga_marshall_ask:lord_pretalk.1| Vous êtes un meneur d’homme accompli, {playername}, mais votre influence est faible. Il ne serait pas sage d’écouter vos conseils.^[{reg15} d'influence requise, vous n'en avez que {reg14}]
 dlga_marshall_ask:lord_pretalk.2|Nos forces ne supporteraient pas un assaut frontal comme vous le proposez {playername}. Si elles étaient plus conséquentes et que nous ne risquions pas de perdre une ville dans la foulée je serai d'accord avec vous. Nous ne sommes que {s23} et le risque est trop grand.
 dlga_marshall_ask:marshall_suggest|Je vous écoute {playername}. Que devrions nous faire ?
+dlga_marshall_suggest:lord_give_order_assault|Ensemble, vous et moi pouvons prendre {s11}. Vous devez attaquer immédiatement... [Coûts {reg1}/{reg2} influence]
 dlga_marshall_suggest:marshall_answer|Nous devons profiter de notre avantage et assiéger {s1} sur le champ !
 dlga_marshall_suggest:lord_pretalk| Peu importe, je me fie à vos conseils.
 dlga_player_siege_discuss:player_siege_discuss_1|Je vous écoute mon seigneur.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|J’ai un ami là-bas, un vieux guerr
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|De combien d'hommes avez-vous besoin ?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Si vous pouvez former {reg1} {s14} et me les amener, cela suffira probablement.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Bien sûr, {s65}. Confiez-moi {reg1} jeunes recrues et je les formerai pour devenir {s14}.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|J'ai une autre idée {s65}. Je vais emmener {reg1} nouvelles recrues dans l'arène pour leur apprendre quelques astuces...
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|J'ai une autre idée {s65}. Je vais emmener {reg1} nouvelles recrues dans l'arène pour leur apprendre quelques astuces. Il ne deviendront pas {s14} directement, mais c'est un pas de plus dans cette direction.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Je vous propose autre chose, {s65}. Je vais emmener {reg1} nouvelles recrues au terrain d'entraînement pour leur apprendre une ou deux choses.
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Je vous propose autre chose, {s65}. Je vais emmener {reg1} nouvelles recrues au terrain d'entraînement pour leur apprendre une ou deux choses. Il ne deviendront pas {s14} pour autant, mais c'est un premier pas dans cette direction.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Je suis trop occupé ces jours-ci pour entraîner quelqu'un.
 dlga_lord_mission_raise_troops_accepted:close_window|Vous me soulagez de l'un de mes soucis, {playername}. Je vais ordonner à mes sergents de vous confier les recrues. Voici une avance, histoire de couvrir vos frais. Tenez, j'espère que cette bourse suffira. Merci pour votre aide.
-dlga_lord_mission_raise_troops_alternate:close_window|C'est une proposition intéressante {playername}. Je vais dire à mes sergents d'envoyer les recrues dans l'arène. Suivez-les là-bas et entraînez mes hommes. Je vous remercie de votre aide.
+dlga_lord_mission_raise_troops_alternate:close_window|C'est une proposition intéressante {playername}. Je vais dire à mes sergents d'envoyer les recrues sur le terrain d'entraînement. Suivez-les là-bas et mettez-les en bonne forme, je regarderai comment vous faites. Merci pour votre aide.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, naturellement. Je n'en attendais pas moins de vous. Bien, bonne chance à vous dans ce cas. 
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|J'ai une affaire pour laquelle vous pourriez m'être utile, un problème avec le bandit sans foi ni loi connu sous le nom de {s4}. Il a assassiné un de mes gardes du corps et a échappé à son jugement jusqu'ici. Des nouvelles récentes disent qu'il a été aperçu à {s3}. Vous pourriez le traquer et lui infliger une justice rapide, et je vous récompenserai en retour.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Alors je le pourchasserai et je ferai appliquer la loi.

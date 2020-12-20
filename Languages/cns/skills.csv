@@ -1,7 +1,7 @@
 skl_trade|交易
-skl_trade_desc|这个技能可以让你使用更少的资源点获得更多的物品。(队伍技能)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|统御
-skl_leadership_desc|每点增加部队命令上限5人，提高部队士气，减少部队开销和工资5%%。(领袖技能)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|俘虏管理
 skl_prisoner_management_desc|每点增加俘虏上限%d。(领袖技能)
 skl_persuasion|自然力

@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Aligha fogadnék el tanácsot egy hétköznapi {s
 dlga_marshall_ask:lord_pretalk.1|Te egy sikeres parancsnok vagy, {playername}, de a befolyásod egyre csak csökken. Nem lenne túlzottan átgondolt dolog hallgatni a tanácsodra.^[{reg15} pontnyi befolyásra van szükséged, neked csak {reg14} van]
 dlga_marshall_ask:lord_pretalk.2|Aligha engedhetnénk meg magunknak hogy megütközzünk az ellenséggel, {playername}. Még mindig szükségünk van arra hogy növeljük a haderőnket és erősek legyünk, hiszen alig {s23} vagyunk.
 dlga_marshall_ask:marshall_suggest|Figyelek, {playername}. Mi a javaslatod?
+; dlga_marshall_suggest:lord_give_order_assault|Together, you and I can take {s11}. You should assault immediately... [Costs {reg1}/{reg2} influence]
 dlga_marshall_suggest:marshall_answer|Azonnal {s1} ostromára kéne lovagolnunk.
 dlga_marshall_suggest:lord_pretalk|Nem fontos, megbízok az ítéletedben.
 ; dlga_player_siege_discuss:player_siege_discuss_1|I am listening, my Lord.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told|Lenne egy sürgető ügy... A hírnök�
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Hány emberre van szüksége?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Ha ki tud képezni {reg1} {s14}t és elhozni nekem, valószínűleg elegek lesznek.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Természetesen, {s65}. Adj át {reg1} friss újoncot és kiképzem őket, hogy {s14} legyenek.
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the arena teach them a thing or two...
-; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the arena teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Túlzottan elfoglalt vagyok ezekben a napokban hogy akárkit is kiképezzek.
 dlga_lord_mission_raise_troops_accepted:close_window|Levetted a terhet a vállamról, {játékosnév}. Szólni fogok az őrmestereimnek, hogy küldjék át neked az újoncokat ahhoz, hogy a parancsnokságod alá helyezhesd őket. Emellett, küldök neked némi hadkészletet is, hogy segítsek fedezni a költségeket. Tessék, remélem hogy ez a láda megteszi. Köszönöm a segítséged.
-; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the arena. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Óh, hát persze. Erre számítottam. Nos, akkor sok szerencsét.
 ; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There has been news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Akkor lefogom őt vadászni és igazságot fogok szolgáltatni.

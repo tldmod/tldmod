@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Eger sadece {s25} isen senden tavsiye almam pek m
 dlga_marshall_ask:lord_pretalk.1|Sen başarılı bir komutansın, {playername}, ama nüfuzun azalmakta. Senin tavsiyeni dinlemek ihtiyatlı olmaz.^[{reg15} nüfuz gerekli, sadece {reg14} var] 
 dlga_marshall_ask:lord_pretalk.2|Düşmanla kafa kafaya çarpışmamız neredeyse imkansız, {playername}. Hala birliklerimizi toplayıp güçlenmemiz gerekiyor; ne yazık ki bizim birligimiz sadece {s23}.
 dlga_marshall_ask:marshall_suggest|Dinliyorum, {playername}. Ne önereceksin?
+dlga_marshall_suggest:lord_give_order_assault|Sen ve ben birlikte {s11} alabiliriz. Senin bir an önce saldırman gerek!.. [{reg1}/{reg2} nüfus puanı harcar]
 dlga_marshall_suggest:marshall_answer|Atlarımızı bir an önce {s1} kalesine sürmeliyiz.
 dlga_marshall_suggest:lord_pretalk|Her neyse, hükmüne güveniyorum.
 dlga_player_siege_discuss:player_siege_discuss_1|Dinliyorum, Efendim.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|Burada eski bir arkadaşım var, yaş
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Ne kadar adama ihtiyacın var?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Eger {reg1} tane {s14} yetiştirip bana getirebilirsen, sanırım bu yeterli olacaktır.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Tabii ki, {s65}. Bana {reg1} yeni gönüllü ver ben de onları {s14} olmaya egiteyim.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Farklı bir taktik öneriyorum, {s65}. Ben arenaya bir ik şey ögretmek için {reg1} egitimsiz savaşçılarını alacagım...
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Başka bir yöntem öneriyorum, {s65}... {reg1} acemi askeri arenaya götürüp bir-iki teknik ögretecegim. Sonrasında hemen {s14} olmayacaklar ama bu da fena bir başlangıç sayılmaz.
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Bu günlerde kimseyi egitemeyecek kadar meşgulüm.
 dlga_lord_mission_raise_troops_accepted:close_window|Omuzlarımdan büyük bir yükü kaldırdın, {playername}. Çavuşlarıma, acemileri gönderip senin komutana vermelerini söyleyecegim. Ayrıca masrafları karşılamak için sana biraz avans verecegim. Al, bu kese işini görecektir. Yardımın için teşekkür ederim.
-dlga_lord_mission_raise_troops_alternate:close_window|Bu ilginç bir öneri, {playername}. Çavuşlarıma acemileri arenaya göndermelerini söylemeliyim. Onları arenaya kadar takip et ve bir güzel şekle sok. İzliyor olacagım. Yardımın için teşekkürler.
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Ah, elbette. Tam da bekledigim gibi. Peki, o zaman sana iyi şanslar
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Yardım edebilecegin bir şey var, {s4} olarak bilinen bir kanunsuz ile ilgili bir sorun. Korumalarımdan birini öldürdü ve o zamandan beri yargılanmaktan kaçıyor. Aldıgımız haberlere göre kaçak {s3} bölgesinde görülmüş. Eger onu avlayıp hak ettigi adaleti saglarsan, karşılıgında seni ödüllendirecegim.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Öyleyse onu yakalayacagım ve onu infaz edecegim.

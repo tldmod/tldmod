@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Difícilmente recibiré consejo de {un/una} {s25}
 dlga_marshall_ask:lord_pretalk.1|Respeto tu pericia como capitán, {playername}, pero estás perdiendo influencia. No creo que sea conveniente seguir tus consejos.^[necesitas {reg15} de influencia, sólo tienes {reg14}]
 dlga_marshall_ask:lord_pretalk.2|De mala manera podríamos permitirnos hacer frente al nemigo de forma directa, {playername}. Todavía necesitamos reclutar a más soldados y fortalecernos. Por desgracia, nuestras tropas sólo están {s23}.
 dlga_marshall_ask:marshall_suggest|Te escucho, {playername}. ¿Qué me aconsejas?
+dlga_marshall_suggest:lord_give_order_assault|Juntos, tú y yo podemos tomar {s11}. Deberías asaltar inmediatamente... [Cuesta {reg1}/{reg2} puntos de influencia]
 dlga_marshall_suggest:marshall_answer|Deberíamos asediar {s1} inmediatamente.
 dlga_marshall_suggest:lord_pretalk|No importa, confío en tu buen juicio.
 dlga_player_siege_discuss:player_siege_discuss_1|Te escucho, mi señor.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|Tengo un amigo aquí, un viejo guerre
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|¿De cuantos soldados estamos hablando?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Si pudieras entrenar a {reg1} {s14} y traérmelos aquí, seguramente serían suficientes.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Por supuesto, {s65}. Envíame {reg1} nuevos reclutas y los entrenaré para ser {s14}.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Sugiero un método diferente, {s65}. Llevaré a {reg1} reclutas novatos a la arena y les enseñaré un par de cosas...
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Sugiero un método diferente, {s65}....Llevaré a {reg1} reclutas novatos a la arena y les enseñaré un par de cosas. No saldrán de allí convertidos en {s14} pero por algo se empieza.
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Ando demasiado ocupado últimamente para poder entrenar a nadie.
 dlga_lord_mission_raise_troops_accepted:close_window|Me has quitado un peso de encima, {playername}. Mis sargentos te enviarán a los reclutas para que se pongan a tus órdenes de inmediato. Además, te adelantaré algún dinero para cubrir los gastos. Aquí tienes, con esta bolsa debería de ser suficiente. Gracias por tu ayuda.
-dlga_lord_mission_raise_troops_alternate:close_window|Es una propuesta interesante, {playername}. ordenaré a mis sargentos que manden a los reclutas a la arena. Reúnete con ellos allí, y mételos en cintura. Os estaré observando. Gracias por tu ayuda.
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, por supuesto. Me lo esperaba. Bueno, pues que tengas buena suerte en tus asuntos.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Se me ocurre un asunto con el que podrías ayudarme, un problema relacionado con el criminal conocido como {s4}. Asesinó a uno de mis guardaespaldas y ha estado fugado desde entonces. Tenemos noticias de que este fugitivo ha sido visto por última vez en {s3}. Quizás puedas encontrarlo y hacer justicia, y si lo consigues, te recompensaré.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Entonces lo encontraré y lo ajusticiaré.

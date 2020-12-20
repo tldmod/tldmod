@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|un ORCO,^ servitore dell'Occhio
 qstr_an_URUK^_the_new_bre|un URUK,^la nuova razza di Orchi
 qstr_a_MAN^_subjugated_by|un UOMO,^ soggiogato da Sauron
 qstr_an_ORC^_serving_the_W|un ORCO,^ servo della Mano Bianca
-qstr_an_URUK_HAI^_bred_in|un URUK-HAI,^ allevato ad Isengard
+qstr_one_of_the_URUK_HAI^|uno degli Uruk-Hai,^ cresciuto ad Isengard
 qstr_a_MAN_of_Dunland^_th|un UOMO del Dunland,^ Le Pianure Occidentali
 qstr_Click_the_center_but|Clicca sul pulsante centrale per selezionare la fazione^Clicca l'avatar per visualizzare i loro dettagli
 qstr_Level:_{reg3}^Health|Livello: {reg3}^Punti Ferita: {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|Cavalcatura inappropriata.
 qstr_{s24}:_Your_infantry|{s24}: I tuoi fanti si sentono meglio !
 qstr_{s24}:_Your_archers_|{s24}: I tuoi arcieri si sentono meglio !
 qstr_{s24}:_Your_cavalry_|{s24}: I tuoi cavalieri si sentono meglio !
-qstr_Ah_what_a_coincidenc|Ah, che strana coincidenza, imbattermi proprio in te {playername} ! Tu potresti anche non conoscermi, ma io conosco te. Sono sulla strada per raggiungere {s4}, ma arrivo ora da {s3} ed è là che ho sentito parlare di te. {s3} conta sulle tue capacità in questi tempi pericolosi, e se avessi mai pensato d'intraprendere azioni lontane dal tuo dovere, dovresti riconsiderare i tuoi intenti e concentrarti sul sostenere {s3} con tutte le tue forze.
+qstr_Ah_what_a_coincidenc|Ah, che strana coincidenza, imbattermi proprio in te {playername} ! Tu potresti anche non conoscermi, ma io conosco te. Sono sulla strada per raggiungere {s4}, ma arrivo ora da {s3} ed è là che ho sentito parlare di te. {s3} conta sulle tue capacità in questi tempi pericolosi, e se avessi mai pensato d'intraprendere azioni lontane dal tuo dovere, dovresti riconsiderare i tuoi intenti e concentrarti sul sostenere {s2} con tutte le tue forze.
 qstr_Who_are_you?|Chi sei ?
 qstr_A_friend_of_{s3}_and|Un amico di {s3} e del popolo di {s2}. Ora fa presto ! Mordor ha oscuri disegni e il Potere Oscuro sta impiegando tutta la sua volontà per radunare tutto ciò che è malvagio. Il tempo sta per scadere per ciò che di buono rimane in questo mondo, se non facciamo valere ogni nostra azione per opporci !
 qstr_What_should_I_do?|Cosa dovrei fare ?
-qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parlagli. Buona Fortuna !
+qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parla con {reg3?lei:lui} . Buona Fortuna !
 qstr_Good_to_see_the_Shad|È un sollievo vedere che l'Ombra non è ancora riuscita a piegarti, {playername}.
 qstr_You_are_the_one_they|Tu sei quello che chiamano Gandalf o Mithrandir.
 qstr_That_is_what_some_ca|Quello è il nome con cui alcuni mi chiamano. Nel tempo mi hanno dato nomi diversi, ma a meno che l'Oscurità non sia fermata, presto potrebbe non rimanere nessuno a chiamarmi in alcun modo.
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} ha smesso di seguirti.
 qstr_You_have_{reg69}_all|Hai {reg69} compagnie alleate che ti seguono
 qstr_You_have_{reg69}_ally|Hai {reg69} compagnie alleate al tuo seguito
 qstr_The_forces_of_{s2}_h|Le forze di {s2} si sono radunate e marciano verso {s15} !
-qstr_Your_scouts_have_rep|I tuoi esploratori hanno riferito che c'è un gruppo di {s2} nei pressi di {s3}.
+qstr_Your_scouts_report_s|I tuoi esploratori hanno avvistato un gruppo di {s2} nelle vicinanze.
 qstr_{s1}_from_{s2}|{s1} da {s2}
 qstr_When_dealing_with_lo|Quando si parla della popolazione locale di {s11}, ricorda che non ti conoscono e non ti attribuiscono necessariamente i meriti guadagnati presso {s10}. ^^(I Punti Risorsa che puoi spendere tra le persone di {s11} non sono quelli guadagnati presso {s10}, ma solo quelli guadagnati con {s11})
 qstr_Info|Informazioni

@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|SKŘET,^ sloužící Velkému Oku bez víčka
 qstr_an_URUK^_the_new_bre|SKURUT,^ nové skřetí plémě
 qstr_a_MAN^_subjugated_by|ČLOVĚK,^ podřízený Sauronovi
 qstr_an_ORC^_serving_the_W|SKŘET,^ sloužící Bílé Ruce
-qstr_an_URUK_HAI^_bred_in|SKURUT-HAI,^ vypěstován v Železném pasu
+; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|ČLOVĚK z Vrchoviny,^ ze Západních plání
 qstr_Click_the_center_but|Klikni na prostřední tlačítko k přepnutí frakce^Klikni na avatara k zobrazení detailů o postavě
 qstr_Level:_{reg3}^Health|Úroveň: {reg3}^Životy: {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|Nevhodné zvíře
 qstr_{s24}:_Your_infantry|{s24}: Tvá pěchota se cítí lépe!
 qstr_{s24}:_Your_archers_|{s24}: Tví střelci se cítí lépe!
 qstr_{s24}:_Your_cavalry_|{s24}: Tvá jízda se cítí lépe!
-qstr_Ah_what_a_coincidenc|Ah, jaká náhoda, {playername}! Možná mně neznáš, ale ty mi nejsi neznámý. Jsem na cestě ke {s4}, ale zrovna přicházím od {s3} a narazím na tebe. {s3} na tebe spoléhá v těchto nebezpečných dobách a pokud jsi uvažoval o nějakém rozptýlení, měl bys na to zapomenout. {s3} bude potřebovat tvoji pomoc.
+; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
 qstr_Who_are_you?|Kdo jsi?
 qstr_A_friend_of_{s3}_and|Přítel od {s3} a lidí z {s2}. Teď pospěš! Mordor přitahuje všechny zlé věci a Temná moc ovládá jejich vůli, aby je všechny shromáždila. Jestliže neuděláme vše abychom je zastavili, všechno dobré na tomto světě bude ztraceno!
 qstr_What_should_I_do?|Co bych měl dělat?
-qstr_Find_{s3}_s_whereabo|Najdi neprodleně místo kde se nachází {s3} a promluv si s ním. Hodně štěstí!
+; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|Rád vidím že ze Temnotě ještě nepodařilo tě přemoct, {playername}.
 qstr_You_are_the_one_they|Ty jsi ten, kterého nazývají Gandalf nebo Mithrandir.
 qstr_That_is_what_some_ca|Takto mne někteří nazývají. V mých časech jsem byl nazýván různě, ale dokud nebude Temnota zastavena, tak brzy nezbude nikdo kdo by mně nazýval jakkoliv.
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} tě přestali následovat.
 qstr_You_have_{reg69}_all|{reg69} spojenecká skupina tě následuje
 qstr_You_have_{reg69}_ally|{reg69} spojeneckých skupin tě následuje
 qstr_The_forces_of_{s2}_h|Síly z {s2} se přeskupily a pochodují na {s15}!
-qstr_Your_scouts_have_rep|Tví zvědové hlásí že {s2} je blízko {s3}.
+; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
 qstr_{s1}_from_{s2}|{s1} z {s2}
 qstr_When_dealing_with_lo|Když jednáš s místními z frakce {s11}, pamatuj že tě neznají a nemusí nutně uznávat zásluhy, které máš u frakce {s10}.^^(Resource Pointy, s kterými můžeš nakládat mezi lidmi z frakce {s11} nejsou ty, které jsi získal v {s10}, ale jsou to ty, které získáš v {s11} -- přehled najdeš v sekci Hlášení)
 qstr_Info|Info
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27}: Morálka družiny zvýšena.
 qstr_{s27}:_Party_morale_d|{s27}: Morálka družiny snížena.
 qstr_You_have_failed_to_f|Nezvládl jsi naplnit přísahu pomsty za Balina a jeho družinu!
 qstr_You_have_failed_to_fu|Nezvládl jsi splnit přísahu pomsty za hrdinskou smrt {s1}!
-qstr_Your_troops_value_yo|Vaše jednotky oceňují vaši snahu splnit svou přísahu, ale uznávají, že události se odehrávaly příliš rychle. Jako výsledek,
+; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
 qstr_{s22}You_have_fulfil|{s22} jsi naplnil přísahu pomsty za Balina a jeho družinu!
 qstr_{s22}You_have_fulfill|{s22} jsi naplnil přísahu pomsty za hrdinskou smrt {s1}!
 qstr_Reinforcements|Posily

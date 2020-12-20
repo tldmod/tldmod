@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|Un ORQUE,^au service du Grand Oeil
 qstr_an_URUK^_the_new_bre|Un URUK,^nouvelle race des orques
 qstr_a_MAN^_subjugated_by|Un HOMME,^corrompu par Sauron
 qstr_an_ORC^_serving_the_W|Un ORQUE,^au service de la Main Blanche
-qstr_an_URUK_HAI^_bred_in|Un Uruk-Hai,^élevé en Isengard
+qstr_one_of_the_URUK_HAI^|Un des Uruk-Hai,^élevé en Isengard
 qstr_a_MAN_of_Dunland^_th|Un HOMME du Pays de Dun,^les plaines de l'Ouest
 qstr_Click_the_center_but|Cliquez sur le bouton du milieu pour changer de faction^Cliquez sur les avatars pour en voir les détails.
 qstr_Level:_{reg3}^Health|Niveau : {reg3}^Santé : {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|Monture inappropriée
 qstr_{s24}:_Your_infantry|{s24 } : Votre infanterie se sent mieux !
 qstr_{s24}:_Your_archers_|{s24} : Vos archers se sentent mieux !
 qstr_{s24}:_Your_cavalry_|{s24} : Votre cavalerie se sent mieux !
-qstr_Ah_what_a_coincidenc|Mais quelle coïncidence de tomber sur vous, {playername} ! Peut-être ignorez-vous qui je suis, mais vous ne m'êtes pas inconnu{/e}. Je suis en route pour voir {s4}, mais j'arrive juste de chez {s3} et votre nom à été mentionné. Le Seigneur {s3} compte sur vous dans ces temps difficiles et si vous aviez à l'idée de poursuivre des activités futiles, vous voudrez sans doute reconsidérer vos plans pour vous consacrer à aider {s3} avec toutes vos capacités.
+qstr_Ah_what_a_coincidenc|Mais quelle coïncidence de tomber sur vous, {playername} ! Peut-être ignorez-vous qui je suis, mais vous ne m'êtes pas inconnu{/e}. Je suis en route pour voir {s4}, mais j'arrive juste de chez {s3} et votre nom à été mentionné. {s3} compte sur vous dans ces temps difficiles et si vous aviez à l'idée de poursuivre des activités futiles, vous pourriez reconsidérer vos plans pour vous consacrer à aider {s2} avec toutes vos capacités.
 qstr_Who_are_you?|Qui êtes-vous ?
 qstr_A_friend_of_{s3}_and|Un ami de {s3} et du peuple de {s2}. Maintenant dépêchez ! Le Mordor rassemble toutes les mauvaises créatures, et le Pouvoir Noir utilise toute sa volonté pour rassembler ses forces. Le temps est compté pour tout ce qui est bon dans ce monde, alors faisons tout ce que nous pouvons pour nous y opposer !
 qstr_What_should_I_do?|Que dois-je faire ?
-qstr_Find_{s3}_s_whereabo|Trouvez immédiatement où se trouve {s3} et parlez avec lui. Bonne chance !
+qstr_Find_{s3}_s_whereabo|Trouvez au plus vite où se trouve {s3} et parlez avec {reg3?elle:lui}. Bonne chance !
 qstr_Good_to_see_the_Shad|Il est bon de voir que l'Ombre ne vous a pas encore vaincu {playername}.
 qstr_You_are_the_one_they|Vous êtes celui qu'on appelle Gandalf, ou Mithrandir.
 qstr_That_is_what_some_ca|C'est ainsi que l'on me nomme. Autrefois, on m'a aussi appelé autrement, mais à moins que l'Ombre ne soit stoppée, il pourrait ne plus y avoir personne pour me nommer tout court.
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} à arrêté de vous suivre.
 qstr_You_have_{reg69}_all|Vous avez {reg69} groupe allié qui vous suivent
 qstr_You_have_{reg69}_ally|Vous avez {reg69} groupes alliés qui vous suivent
 qstr_The_forces_of_{s2}_h|Les forces de {s2} se sont regroupés et marchent sur {s15} !
-qstr_Your_scouts_have_rep|Vos éclaireurs vous informent qu'il y a un {s2} près de {s3}
+qstr_Your_scouts_report_s|Vos éclaireurs vous signalent qu'il y a des traces de {s2} à proximité.
 qstr_{s1}_from_{s2}|{s1} de {s2}
 qstr_When_dealing_with_lo|Lorsque vous traiterez avec les locaux à {s11}, rappelez-vous qu'ils ne vous connaissent pas et ne connaissent pas nécessairement les mérites que vous avez gagnés en {s10}. ^^(Les Points de Ressource dont vous pouvez disposer au sein du peuple de {s11} ne sont pas ceux que vous avez obtenu en {s10}, mais ceux que vous avez gagné en {s11} -- voir aussi l'écran des rapports)
 qstr_Info|Info
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27} : Moral des troupes augmenté.
 qstr_{s27}:_Party_morale_d|{s27} : Moral des troupes en baisse.
 qstr_You_have_failed_to_f|Vous avez échoué à tenir votre serment de venger Balin et sa compagnie !
 qstr_You_have_failed_to_fu|Vous avez échoué à tenir votre serment de vengeance pour la mort héroïque de {s1} !
-qstr_Your_troops_value_yo|Les troupes saluent votre effort d'accomplir votre serment malgré que les événements se sont enchaînés trop vites, en conséquent, 
+qstr_Your_troops_value_yo|Vos troupes apprécient vos efforts pour respecter votre serment, mais reconnaissent que les événements se sont déroulés trop rapidement. Par conséquent,
 qstr_{s22}You_have_fulfil|{s22}Vous avez rempli votre serment de venger Balin et sa compagnie !
 qstr_{s22}You_have_fulfill|{s22}Vous avez rempli votre serment de vengeance pour la mort héroïque de {s1} 
 qstr_Reinforcements|Renforts

@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Trudno mi brać od ciebie rady, skoro jesteś zal
 dlga_marshall_ask:lord_pretalk.1|Jesteś doświadczonym dowódcą, {playername}, lecz twoja pozycja niska. Zasięgnięcie twej rady nie byłoby rozważne.^[{reg15} wpływów potrzebne, tylko {reg14} w posiadaniu]
 dlga_marshall_ask:lord_pretalk.2|Nie możemy pozwolić sobie na starcie z wrogiem obecnie, {playername}. Musimy rozbudować nasze wojsko i stać się silni, niestety teraz jesteśmy jedynie {s23}
 dlga_marshall_ask:marshall_suggest|Słucham, {playername}. Co proponujesz?
+dlga_marshall_suggest:lord_give_order_assault|Razem, ty i ja możemy zdobyć {s11}. Natychmiast powinieneś zaatakować... [Kosztuje {reg1}/{reg2} wpływów]
 dlga_marshall_suggest:marshall_answer|Powinniśmy pojechać na oblężenie {s1}.
 dlga_marshall_suggest:lord_pretalk|Nieważne, ufam twoim wyborom.
 dlga_player_siege_discuss:player_siege_discuss_1|Słucham, Panie mój.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|Mam tu przyjaciela, starego wojaka, k
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Ilu ludzi potrzebujesz?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Gdybyś m{ó/o}gł{/a} wyszkolić {reg1} {s14} i przyprowadzić ich do mnie, tylu zapewne by wystarczyło.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Oczywiście, {s65}. Powierz mi {reg1} rekrutów, a ja wyszkolę ich dla ciebie na {s14}.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Proponuję inną metodę, {s65}. Zabiorę na arenę świeżo upieczonych rekrutów {reg1}, aby nauczyli się czegoś . . .
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Proponuję inną metodę, {s65}. . . . . . Zabiorę na arenę {reg1} świeżych rekrutów, którzy nauczą ich czegoś lub dwóch. Później nie staną się {s14}, ale to jeden krok w tym kierunku.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Sugeruję coś innego, {s65}. Wezmę {reg1} rekrutów, potrenuję z nimi i czegoś nauczę...
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Sugeruję coś innego, {s65}... Wezmę {reg1} rekrutów, potrenuję z nimi i czegoś nauczę. Nie staną się od razu {s14}, ale trening czyni mistrza.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Jestem zbyt zajęt{y/a}, by zajmować się szkoleniem jednostek.
 dlga_lord_mission_raise_troops_accepted:close_window|Zdj{ą/ę}ł{e/a}ś spory ciężar z mych barków, {playername}. Powiem moim sierżantom, by przygotowali rekrutów i oddali ci ich pod komendę. Dam ci też trochę złota na pokrycie ewentualnych wydatków. Proszę, ta sakiewka powinna wystarczyć. Dziękuję za twą pomoc.
-dlga_lord_mission_raise_troops_alternate:close_window|Jest to interesująca propozycja, {playername}. Polecę sierżantom, aby wysyłali rekrutów na stadion. . Będę ich oglądał. Dziękujemy za pomoc.
+dlga_lord_mission_raise_troops_alternate:close_window|Interesująca propozycja, {playername}. Powiem dowódcom aby przysłali rekrutów na pole treningowe. Idź tam i wytrenuj ich, ja będę oglądał jak sobie radzą. Dziękuję za pomoc.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Och, oczywiście. Spodziewałem się. Cóż, powodzenia zatem.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Mam coś, z czym mógłbyś mi pomóc, trzeba uporać się ze złoczyńcą znanym jako {s4}. Zamordował jednego z moich gwardzistów i od tego czasu ucieka przed sprawiedliwością. Niedawno pojawiły się wieści, że był on widziany w {s3}. Złap go i wymierz mu sprawiedliwość, a otrzymasz nagrodę.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|A zatem zapoluję na tego łotra i wymierzę mu karę.

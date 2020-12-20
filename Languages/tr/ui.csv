@@ -148,5 +148,7 @@ ui_str_hear_me|%s,Duy beni!
 ui_return|Geri dön
 ui_factions|Taraflar
 ui_troop_upgrades|Birlik geliştirmeleri
-ui_hdr_mode|Gerçekçi Görüntü Modu (önerilen kapalı veya düşük):
+; ui_hdr_mode|HDR Mode:
 ui_autoexpore|Otomatik Pozlama (önerilen: Eger Gerçekçi Görüntü Modu açıksa açılmalıdır.)
+; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
+; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)

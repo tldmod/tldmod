@@ -1,7 +1,7 @@
 skl_trade|Pechincheiro
-skl_trade_desc|Níveis dessa habilidade tornam possível reinvidicar mais equipamento por menos Pontos de Recurso. (Habilidade do Grupo)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Liderança
-skl_leadership_desc|Cada ponto aumenta o número máximo de tropas que você pode comandar em 5, aumenta a moral do grupo e reduz os salários da tropa em 5%%. (Habilidade de Líder)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Gestão de Prisioneiros
 skl_prisoner_management_desc|Cada nível desta habilidade aumenta número máximo de presos por %d. (Habilidade Leader)
 ; skl_persuasion|Wildcraft

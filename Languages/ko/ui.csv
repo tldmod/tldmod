@@ -148,5 +148,7 @@ ui_str_hear_me|%s, 내 말을 들어봐!
 ui_return|돌아가기
 ui_factions|세력들
 ui_troop_upgrades|군대 업그레이드
-ui_hdr_mode|HDR mode (OFF나 LOW 추천)
+; ui_hdr_mode|HDR Mode:
 ui_autoexpore|Auto-exposure (HDR이 켜져있을 경우 ON 추천)
+; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
+; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)

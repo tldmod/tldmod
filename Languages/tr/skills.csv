@@ -1,7 +1,7 @@
 skl_trade|Pazarlık
-skl_trade_desc|Bu yetenegin her seviyesi daha az kaynak birimine karşılık daha fazla ekipman alma şansı tanır (Parti Yetenegi)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Liderlik
-skl_leadership_desc|Her bir puan yönetebilecegin maksimum birlik sayısını 5 arttırır. Ayrıca partinizin moralini arttırıp birliklerin ücretini 5%% azaltır (Liderlik Yetenegi)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Esir yönetimi
 skl_prisoner_management_desc|Bu yetenegin her leveli mahkum sayısını %d kadar arttırır (Liderlik yetenegi)
 skl_persuasion|Yaban Ustası

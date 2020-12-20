@@ -1,7 +1,7 @@
 skl_trade|Bargevinst
-skl_trade_desc|Niveauer af denne færdighed gør det muligt at hævde mere udstyr for mindre ressource points. (Hold færdighed)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Lederskab
-skl_leadership_desc|Hvert point forhøjer det maksimale nummer of tropper du kan kommandere med 5, forhøjer dit holds morale og reducer troppernes løn med 5%%. (Leder færdighed)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Fange Administration
 skl_prisoner_management_desc|Hvert niveau af denne færdighed forhøjer dit maksimale nummer af fanger med %d. (Leder færdighed)
 ; skl_persuasion|Wildcraft

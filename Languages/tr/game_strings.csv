@@ -979,7 +979,7 @@ str_npc3_home_description_2|Eger Ent Orman'ını geçmek zorundaysak, bunu acele
 str_npc4_home_description_2|Geçmişin büyük olaylarını ve yapılan fedakarlıkları hatırlamak iyi olur. Rohan ile Gondor arasındaki ittifak halklarımızı bir kez daha azaptan kurtaracak.
 str_npc5_home_description_2|Şunu hatırlatmama izin ver, En yüce olanlar hatta Istari'den biri bile bozulabilir ve düşebilir. Daha fazla güç için yanıp tutuşanlar yanıp tutuştukları güç tarafından bogulabilirler. O yüzden fazla oyalanmayalım.
 str_npc6_home_description_2|Duvarlarının arkasındaki kötülük ordularının yürüyüşünü hissediyorum onlar nereyi işgale hazırlanıyorlar ... Güzel Lothlórien'i mi? Dale'i mi? Benim vatanım Greenwood'u mu ? Bunu bilemem, fakat lütfen bunun olmasını engellemek için elinizden gelen her şeyi yapın.
-str_npc7_home_description_2|Savaşın kaderi bize büyük bir ordu sunarsa, Madenlerdeki tehlikeyi göze atmalı ve onların güçlü zenginliklerini geri almalıyız.
+; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc8_home_description_2|Bir sürü tatlı çiçegin kokusunu alabiliyorum ve arıları, onların nektarlarını hasat ederken görüyorum. Eger sakıncası yoksa, kişisel kullanım için biraz bitki toplayacagım, sadece biraz zaman alacak.
 str_npc9_home_description_2|Eger büyük bir Uruh-hai kalabalıgımız tarafından desteklenmiyorsa, burada dolaşmanın faydası yok. Eger duvardaki gözcülere tanınmak istemiyorsan, tabii.
 str_npc10_home_description_2|Minas Morgul, Nazullerin tüm gün içip zaman harcadıgı yerdir, Hah-hah!
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|Mordor Toprakları
 str_shortname_region_dimrill|Dimrill Dale
 str_shortname_region_s_erebor|Dale diyarı
 str_trait_title_elf_friend|Elf Dostu
-str_trait_desc_elf_friend|Elfler size çok deger verdiler ve şimdi sizi güvenilir bir müttefik olarak görüyorlar. Elfleri toplama maliyeti azaltıldı ve artık elf ordularına emir vermeye çalışabilirsin.
+; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
 str_trait_title_gondor_friend|Vekilharç'ın Kutsaması
-str_trait_desc_gondor_friend|Vekilharç Denethor tarafından kutsanmış durumdasınız ve sonuç olarak Gondor'lu erkekler arasındaki ününüz yükselişe geçti. Gondorlu'ları toplama maliyeti düşürüldü artık Gondor ordularına emir vermeye çalışabilirsin.
+; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
 str_trait_title_rohan_friend|Kralın Adamı
-str_trait_desc_rohan_friend|Rohan'ın Kralı Theoden tarafından çok deger verilmiş durumdasınız ve sonuç olarak Rohan'ın adamları arasında itibarınız yükseldi. Rohirrim adamlarını toplama masrafları azaltıldı ve artık Riddermark ordularına emir vermeye çalışabilirsin.
+; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
 str_trait_title_brigand_friend|Barbarların Şampiyonu
 str_trait_desc_brigand_friend|Arenadaki etkileyici hareketlerinizin bir sonucu olarak Sauron'a hizmet eden barbar kabileler arasında oldukça meşhur oldunuz. Artık barbarları düşük maliyetle işe alabilirsiniz.
 str_trait_title_blessed|Kutsanmış
@@ -2388,7 +2388,7 @@ str_npc20_home_description_2|Bu cücelerin önemli bir parçası oldugu Valar'ı
 str_npc21_home_description_2|Geçmişin büyük olaylarını ve yapılan fedakarlıkları hatırlamak iyi olur. Rohan ile Gondor arasındaki ittifak halklarımızı bir kez daha azaptan kurtaracak.
 str_npc22_home_description_2|Şunu hatırlatmama izin ver, En yüce olanlar hatta Istari'den biri bile bozulabilir ve düşebilir. Daha fazla güç için yanıp tutuşanlar yanıp tutuştukları güç tarafından bogulabilirler. O yüzden fazla oyalanmayalım.
 str_npc23_home_description_2|Duvarlarının arkasındaki kötülük ordularının yürüyüşünü hissediyorum onlar nereyi işgale hazırlanıyorlar ... Güzel Lothlórien'i mi? Dale'i mi? Benim vatanım Greenwood'u mu ? Bunu bilemem, fakat lütfen bunun olmasını engellemek için elinizden gelen her şeyi yapın.
-str_npc24_home_description_2|Savaşın kaderi bize büyük bir ordu sunarsa, Madenlerdeki tehlikeyi göze atmalı ve onların güçlü zenginliklerini geri almalıyız.
+; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc25_home_description_2|Bir sürü tatlı çiçegin kokusunu alabiliyorum ve arıları, onların nektarlarını hasat ederken görüyorum. Eger sakıncası yoksa, kişisel kullanım için biraz bitki toplayacagım, sadece biraz zaman alacak.
 str_npc26_home_description_2|Eger büyük bir Uruh-hai kalabalıgımız tarafından desteklenmiyorsa, burada dolaşmanın faydası yok. Eger duvardaki gözcülere tanınmak istemiyorsan, tabii.
 str_npc27_home_description_2|Minas Morgul, Nazullerin tüm gün içip zaman harcadıgı yerdir, Hah-hah!

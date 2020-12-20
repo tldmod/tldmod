@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|Ein ORK, ^Diener des ^Lidlosen Auges
 qstr_an_URUK^_the_new_bre|Ein URUK, ^das neue Gezücht ^der Orks.
 qstr_a_MAN^_subjugated_by|Ein MENSCH ^des Ostens, ^von Sauron unterjocht.
 qstr_an_ORC^_serving_the_W|Ein ORK, ^Diener der ^Weißen Hand
-qstr_an_URUK_HAI^_bred_in|Einer der URUK-HAI, ^gezüchtet in ^Isengard
+qstr_one_of_the_URUK_HAI^|Einer der URUK-HAI, ^gezüchtet in ^Isengard
 qstr_a_MAN_of_Dunland^_th|Ein MENSCH ^aus Dunland,^ den westlichen Ebenen.
 qstr_Click_the_center_but|Klicke auf die Fraktionsanzeige, um die Fraktion zu wechseln^Klicke auf die Truppen, um Details zu sehen
 qstr_Level:_{reg3}^Health|Stufe: {reg3}^Gesundheit: {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|Unpassendes Reittier
 qstr_{s24}:_Your_infantry|{s24}: Deine Fußtruppen fühlen sich besser!
 qstr_{s24}:_Your_archers_|{s24}: Deine Schützen fühlen sich besser!
 qstr_{s24}:_Your_cavalry_|{s24}: Deine Reiter fühlen sich besser!
-qstr_Ah_what_a_coincidenc|Ah, welch ein Zufall, Euch hier anzutreffen, {playername}! Ihr kennt mich vielleicht nicht, aber mir seid Ihr nicht unbekannt. Ich bin auf dem Weg zu {s4}, aber komme gerade von {s3} und Euer Name ist dort gefallen. {s3} zählt auf Euch in diesen gefährlichen Zeiten und falls Ihr gerade einer anderen Aufgabe nachzugehen gedachtet, solltet Ihr das vielleicht überdenken und all Eure Kraft aufwenden, um {s3} zu unterstützen.
+qstr_Ah_what_a_coincidenc|Ah, welch ein Zufall, Euch hier anzutreffen, {playername}! Ihr kennt mich vielleicht nicht, aber mir seid Ihr nicht unbekannt. Ich bin auf dem Weg zu {s4}, aber komme gerade von {s3} und Euer Name ist dort gefallen. {s3} zählt auf Euch in diesen gefährlichen Zeiten und falls Ihr gerade einer anderen Aufgabe nachzugehen gedachtet, solltet Ihr das vielleicht überdenken und all Eure Kraft aufwenden, um {s2} zu unterstützen.
 qstr_Who_are_you?|Wer bist du?
 qstr_A_friend_of_{s3}_and|Ein Freund von {s3} und dem Volk vom {s2}. Eilt nun! Mordor zieht alles Böse zu sich und die Dunkle Macht wendet all ihren Willen auf, um es um sich zu sammeln. Die Zeit läuft aus für alles Gute in dieser Welt, wenn wir nicht all unser Handeln dagegen richten!
 qstr_What_should_I_do?|Was soll ich tun?
-qstr_Find_{s3}_s_whereabo|Findet {s3} sobald wie möglich und sprecht mit ihm. Viel Glück!
+qstr_Find_{s3}_s_whereabo|Findet {s3} sobald wie möglich und sprecht mit {reg3?ihr:ihm}. Viel Glück!
 qstr_Good_to_see_the_Shad|Es freut mich, dass der Schatten Euch noch nicht besiegt hat, {playername}.
 qstr_You_are_the_one_they|Ihr seid der, den sie Gandalf oder Mithrandir nennen.
 qstr_That_is_what_some_ca|So nennen sie mich. In meiner Zeit hier bin ich schon vieles genannt worden, aber wenn die Dunkelheit nicht aufgehalten wird, wird es bald niemanden mehr geben, der mich irgendetwas nennen könnte.
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} hat dich verlassen.
 qstr_You_have_{reg69}_all|Dir folgt {reg69} verbündeter Trupp.
 qstr_You_have_{reg69}_ally|Dir folgen {reg69} verbündete Trupps.
 qstr_The_forces_of_{s2}_h|Die Armeen von {s2} haben sich gesammelt und marschieren nach {s15}!
-qstr_Your_scouts_have_rep|Deine Späher melden {s2} in der Nähe von {s3}.
+qstr_Your_scouts_report_s|Deine Späher melden Spuren von {s2} in der Nähe.
 qstr_{s1}_from_{s2}|{s1} aus {s2}
 qstr_When_dealing_with_lo|Bedenke beim Umgang mit den Leuten in {s11}, dass sie dich nicht kennen und nicht unbedingt deine Verdienste in {s10} anerkennen.^^(Die Ressourcenpunkte über die du in {s11} verfügen kannst sind nicht die, die du dir in {s10} verdient hast, sondern jene, die du in {s11} verdienen wirst. Siehe auch den Berichtbildschirm)
 qstr_Info|Info

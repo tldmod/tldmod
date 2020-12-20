@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|ORK,^ służący Ognistemu Oku
 qstr_an_URUK^_the_new_bre|URUK,^ nowa rasa Orków
 qstr_a_MAN^_subjugated_by|Ludzie, ^ podlegli Sauronowi
 qstr_an_ORC^_serving_the_W|ORC,^ słudzy Białej Ręki
-qstr_an_URUK_HAI^_bred_in|URUK-HAI,^ hodowany w Isengardzie
+; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|człowiek z Dunlandu,^ Zachodnie Równiny
 qstr_Click_the_center_but|Wciśnij środkowy przycisk żeby przełączać frakcje^Wciśnij awatar, żeby odkryć szczegóły
 qstr_Level:_{reg3}^Health|Poziom: {reg3}^Zdrowie: {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|Niewłaściwy wierzchowiec
 qstr_{s24}:_Your_infantry|{s24}: Twoja piechota czuje się lepiej!
 qstr_{s24}:_Your_archers_|{s24}: Twoi łucznicy czują się lepiej!
 qstr_{s24}:_Your_cavalry_|{s24}: Twoja kawaleria czuje się lepiej!
-qstr_Ah_what_a_coincidenc|Ach, co za zbieg okoliczności {playername}! Być może mnie nie znasz, ale ty nie jesteś mi nieznany. Właśnie zmierzam do {s4}, ale ostatnio byłem u {s3} gdzie zasłyszałem twe imię. {s3} liczy na ciebie w tych niebezpiecznych czasach, dlatego powinieneś skupić się na wspomaganiu {s3} najlepiej jak się da, a wszelkie inne akcje lepiej żebyś odłożył na później.
+; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
 qstr_Who_are_you?|Kim jesteś?
 qstr_A_friend_of_{s3}_and|Przyjacielem {s3} i ludzi {s2}. Teraz śpiesz się! Mordor przyciąga zło, a Siły Ciemności zrobią wszystko by je tu zebrać. Czas ucieka, musimy zrobić wszystko co w naszej mocy by powstrzymać ciemność!
 qstr_What_should_I_do?|Co powin{ienem/nam} zrobić?
-qstr_Find_{s3}_s_whereabo|Dowiedz się gdzie przebywa {s3} i porozmawiaj z nim. Powodzenia!
+; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|Dobrze widzieć, że Cień cię jeszcze nie pokonał, {playername}.
 qstr_You_are_the_one_they|Nazywają cię Gandalf albo Mithrandir.
 qstr_That_is_what_some_ca|Rzeczywiście tak niektórzy mnie zwą. W moich czasach byłem znany pod innymi imionami, ale jeśli Ciemność nie zostanie zatrzymana, niedługo niezostanie nikt kto będzie mnie znał pod jakimkolwiek mianem.
@@ -697,7 +697,7 @@ qstr_Use_+/__to_zoom_in/o|Użyj +/- aby przybliżyć/oddalić
 qstr_Use_Up/Down_arrow_ke|Użyj strzałek Góra/Dół aby przechylić w górę/dół
 qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
 qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
-; qstr_Fixed_Camera___Cente|Fixed Camera - Center
+qstr_Fixed_Camera___Cente|Kamera naprawiona - wycentrowano
 qstr_While_visiting_towns|Odwiedzając miasta, osady i obozy, możesz porozmawiać z ludźmi, którzy chodzą po okolicy. Członkowie różnych frakcji mają różne rzeczy do powiedzenia - niektórzy pozwolą ci na własne myśli, inni podzielą się plotkami. Obydwaj mogą jedynie lepiej zrozumieć kulturę i frakcję danej osoby, albo mogą znaleźć wskazówki, jak znaleźć tajne miejsca lub porady i wskazówki dotyczące podróżowania przez Pustkowie i walki w Wojnie o Pierścień.
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
 qstr_You_have_found_the_l|Znalazłeś lokalnego kowala.
@@ -721,7 +721,7 @@ qstr_A_Nazgul_is_circling|Nagul krąży nad polem bitwy!
 qstr_Some_of_your_human_t|Niektóre z twoich ludzkich żołnierzy nie są przestraszone przez ciemność. (Nocne oddziały nie podlegają karom nocnym)
 qstr_You_are_filled_with_|Jesteś wypełniony po prostu wściekłością, gdy patrzysz na wroga (aktywny Berserk).
 qstr_Your_mount_is_scared|Twój wierzchowiec jest przestraszony przez {reg73?ent: troll}!
-; qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
+qstr_Your_mount_is_scared_|Twój koń boi się {reg73?ent:troll}, ale trening może zniweczyć strach!
 qstr_Nazgul_sweep!|Nadlatuje Nazgul!
 qstr_You_and_your_horse_p|Ty i twój koń panikujecie, wrzask Nazgula jest nie do zniesienia!
 qstr_Your_horse_panics_th|Twój koń panikuje, wrzask Nazgula jest nie do zniesienia!
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} przestał Cię obserwować.
 qstr_You_have_{reg69}_all|Masz {reg69} sojuszniczą imprezę za tobą
 qstr_You_have_{reg69}_ally|Masz {reg69} sojusznicze strony za tobą
 qstr_The_forces_of_{s2}_h|Siły {s2} przegrupowały się i maszerowały do ​​{s15}!
-qstr_Your_scouts_have_rep|Twoi zwiadowcy donoszą, że w pobliżu {s3} jest {s2}.
+; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
 qstr_{s1}_from_{s2}|{s1} z {s2}
 qstr_When_dealing_with_lo|Gdy prowadzisz handel z {s11}, pamiętaj, że cię nie znają i nie wiedzą o twych zasługach dla {s10}.^^(Pkt. Prestiżu zdobyte wśród ludzi z {s11} nie mają tej samej wartości u {s10} -- patrz ekran Raportów)
 qstr_Info|Info
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27}: Morale oddziału wzrosło.
 qstr_{s27}:_Party_morale_d|{s27}: Morale oddziału spadło.
 qstr_You_have_failed_to_f|Nie udało Ci się spełnić twojej przysięgi pomścić Balina i jego firmę!
 qstr_You_have_failed_to_fu|Nie udało ci się wypełnić obietnicy i pomścić heroicznej śmierci {s1}!
-qstr_Your_troops_value_yo|Twoi żołnierze doceniają twój wysiłek, by wypełnić swoją przysięgę, ale przyznają, że wydarzenia rozwijały się zbyt szybko. W rezultacie,
+; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
 qstr_{s22}You_have_fulfil|{s22} Spełniłeś swoją przysięgę pomścić Balina i jego firmę!
 qstr_{s22}You_have_fulfill|{s22} Spełniłeś przysięgę zemsty za bohaterską śmierć {s1}!
 qstr_Reinforcements|Wzmocnienia

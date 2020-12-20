@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|오르크. 눈꺼풀 없는 눈을 섬기는.
 qstr_an_URUK^_the_new_bre|오르크의 새로운 종, 우루크.
 qstr_a_MAN^_subjugated_by|인간, 사우론에게 예속된.
 qstr_an_ORC^_serving_the_W|오르크. 흰 손바닥을 섬기는.
-qstr_an_URUK_HAI^_bred_in|우루크-하이 중 하나, 아이센가드에서 길러진.
+; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|던랜드인, 서쪽 평야의.
 qstr_Click_the_center_but|가운데 버튼을 클릭해 팩션을 바꿉니다^아바타를 클릭해 자세한 정보를 확인할 수 있습니다.
 qstr_Level:_{reg3}^Health|레벨: {reg3}^체력: {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|부적합한 탈 것
 qstr_{s24}:_Your_infantry|{s24}: 당신 보병들의 기분이 나아졌다!
 qstr_{s24}:_Your_archers_|{s24}: 당신 궁병들의 기분이 나아졌다!
 qstr_{s24}:_Your_cavalry_|{s24} 당신 기병들의 기분이 나아졌다!
-qstr_Ah_what_a_coincidenc|아, 이런 우연이 있나, {playername}! 자네는 나를 모를 수도 있겠지만 나는 자네를 안다네. {s4}로 가던 중인데 {s3}에서 자네의 이름이 들리더군. {s3}은 이런 위험한 때에 자네에게 의지하고 있으며, 만약 자네가 쓸데없는 행동을 할 생각이라면, 생각을 바꾸어 자네의 최대 역량을 {s3}을 돕는데 맞춰 사용해주었으면 한다네.
+; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
 qstr_Who_are_you?|당신은 누구지?
 qstr_A_friend_of_{s3}_and|{s3}의 친구이자 {s2}의 백성이여. 서둘러야 한다네!! 모르도르가 온갖 사악한 것들을 끌어들이고 있고, 암흑의 힘은 그들을 끌어모으기 위해 사력을 다하고 있네. 이 세계의 모든 좋은 것들을 위한 시간이 점점 줄어들고 있으며, 우리 모든 힘을 다해 막아야하네!
 qstr_What_should_I_do?|난 뭘 하면 될까?
-qstr_Find_{s3}_s_whereabo|당장 {s3}을 찾아가 그에게 말을 걸게. 행운을 비네!
+; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|어둠의 손에 쓰러지지 않은 모습을 보니 좋군, {playername}.
 qstr_You_are_the_one_they|당신이 간달프, 사람들이 미스란디르라 부르는 분이군요.
 qstr_That_is_what_some_ca|그렇게 불리곤 하지. 세월에 따라 나는 다양한 이름으로 불렸으나, 어둠을 막아내지 못한다면 나를 그런 이름으로 불러줄 그 어떤 자도 남지 않게 될 걸세.
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5}가 당신을 따라오는 것을 멈췄다.
 qstr_You_have_{reg69}_all|{reg69} 동맹 부대가 당신을 따라온다
 qstr_You_have_{reg69}_ally|{reg69} 동맹 부대가 당신을 따라온다
 qstr_The_forces_of_{s2}_h|{s2}의 군대가 재편성되어 {s15}를 향해 진군 중이다!
-qstr_Your_scouts_have_rep|당신의 정찰대가 {s3} 근처에 {s2}가 있다고 보고했다.
+; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
 qstr_{s1}_from_{s2}|{s2}의 {s1}
 qstr_When_dealing_with_lo|{s11} 현지인을 대할 때, 그들은 당신을 알지 못하며 당신이 {s10}에서 얻은 장점을 알지 못한다는 점을 기억하십시오.^^({s11}의 사람들에게는 {s10}에서 획득한 것이 아니라. {s11}에서 획득한 자원 포인트만 사용할 수 있습니다.\n 보고서 화면을 참조하십시오.)
 qstr_Info|정보
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27}: 부대 사기 증가.
 qstr_{s27}:_Party_morale_d|{s27}: 부대 사기 감소.
 qstr_You_have_failed_to_f|당신은 발린과 그 일행에 대한 복수의 서약을 완수하는데 실패했다!
 qstr_You_have_failed_to_fu|당신은 {s1}의 영웅적인 죽음을 복수하겠다는 맹세를 이행하는데 실패했다!
-qstr_Your_troops_value_yo|당신의 병력은 당신의 맹세를 지키기 위한 노력을 높이 평가하지만, 사건이 너무 빨리 전개되었다는 것을 인정하한다. 그 결과로, 
+; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
 qstr_{s22}You_have_fulfil|{s22}당신은 발린과 그 일행에 대한 복수의 서약을 실현시켰다!
 qstr_{s22}You_have_fulfill|{s22}당신은 {s1}의 영웅적인 죽음을 복수하겠다는 맹세를 실현시켰다!
 qstr_Reinforcements|Reinforcements

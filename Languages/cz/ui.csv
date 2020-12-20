@@ -148,5 +148,7 @@ ui_str_hear_me|%s, slyšte mě!
 ui_return|Vrátit
 ui_factions|Frakce
 ui_troop_upgrades|Vylepšení jednotek
-ui_hdr_mode|Vyšší dynamický rozsah (doporučené nastavení je Vypnuto nebo Nízké)
+; ui_hdr_mode|HDR Mode:
 ui_autoexpore|Automatická expozice (doporučené nastavení je Zapnuto pokud je Vyšší dynamický rozsah zapnutý)
+; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
+; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)

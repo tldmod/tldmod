@@ -148,5 +148,7 @@ ui_str_hear_me|%s, hört auf meinen Befehl!
 ui_return|Zurück
 ui_factions|Reiche
 ui_troop_upgrades|Truppenbaum
-ui_hdr_mode|HDR-Modus (empfohlen: AUS oder NIEDRIG)
+ui_hdr_mode|HDR-Modus:
 ui_autoexpore|Auto-Exposure (empfohlen: AN, wenn HDR genutzt wird)
+ui_saving_policy_realistic|Automatisches Speichern! (Nicht empfohlen.)
+ui_saving_policy_nonrealistic|Manuelles Speichern. (Empfohlen, erstelle mehrere Speicherstände.)

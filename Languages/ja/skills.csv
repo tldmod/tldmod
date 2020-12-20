@@ -1,7 +1,7 @@
 skl_trade|取引
-skl_trade_desc|このスキル次第で、 少ないリソースポイントで より多くの物資を 手に入れることが できるようになります。 (パーティスキル)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|統率力
-skl_leadership_desc|従軍できる兵士の最大数が 1レベル毎に5名増加します。 更にパーティの士気を上げ、 兵士への報酬が5%%減少します。 (リーダースキル)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|囚人管理
 skl_prisoner_management_desc|1レベル毎に、 確保できる囚人の最大数が %d名増加します。 (リーダースキル)
 skl_persuasion|ワイルドクラフト

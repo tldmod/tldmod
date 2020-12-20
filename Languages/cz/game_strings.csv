@@ -979,7 +979,7 @@ str_npc16_home_description|Znáš to město?
 ; str_npc4_home_description_2|We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again.
 ; str_npc5_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
 ; str_npc6_home_description_2|I sense the evil armies behind its walls prepare to march... To fair Lothlórien? To Dale? To my Greenwood homeland? I cannot tell, but please do everything you can to thwart them.
-; str_npc7_home_description_2|If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 ; str_npc8_home_description_2|I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment.
 ; str_npc9_home_description_2|There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is.
 ; str_npc10_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|Země Mordoru
 str_shortname_region_dimrill|Rmutný dol
 str_shortname_region_s_erebor|říše Dolu
 str_trait_title_elf_friend|Přítel Elfů
-str_trait_desc_elf_friend|Stal si se vysoce váženým mezi Elfy a považují tě za důvěryhodného spojence. Cena na rekrutování elfů byla snížena a nyní se můžeš pokusit dávat rozkazy elfím armádám.
+; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
 str_trait_title_gondor_friend|Správcovo požehnání
-str_trait_desc_gondor_friend|Stal si se vysoce váženým u správce Denethora a jako výsledek, se zvýšilo tvé postavení mezi lidem Gondoru Ceny na rekrutování gondořanů byly sníženy a nyní se můžeš pokusit dávat rozkazy Gondorským armádám.
+; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
 str_trait_title_rohan_friend|Králův člověk
-str_trait_desc_rohan_friend|Stal si se vysoce váženým u Krále Theodena Rohanského a jako výsledek, se zvýšilo tvé postavení mezi lidem Rohanu. Ceny na rekrutování Rohirů byly sníženy a nyní se můžeš pokusit dávat rozkazy armádám Jízdmarky.
+; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
 str_trait_title_brigand_friend|Barbarský šampion
 str_trait_desc_brigand_friend|Za tvé působivé výsledky v aréně, si se stal vysoce váženým u barbarských kmenů sloužících Sauronovi. Nyní můžeš rekrutovat barbary za sníženou cenu.
 str_trait_title_blessed|Požehnaný
@@ -2388,7 +2388,7 @@ str_npc27_home_description|Znáš to město?
 ; str_npc21_home_description_2|We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again.
 ; str_npc22_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
 ; str_npc23_home_description_2|I sense the evil armies behind its walls prepare to march... To fair Lothlórien? To Dale? To my Greenwood homeland? I cannot tell, but please do everything you can to thwart them.
-; str_npc24_home_description_2|If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 ; str_npc25_home_description_2|I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment.
 ; str_npc26_home_description_2|There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is.
 ; str_npc27_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!

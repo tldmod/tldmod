@@ -1,7 +1,7 @@
 skl_trade|Trgovac
-skl_trade_desc|Nivoi ove vještine omogućuju osigurati više opreme za manje Bodova Resursa. \n  (Vještina družine)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Vodstvo
-skl_leadership_desc|Svaki dodatni bod povećava broj vojnika kojima možeš zapovijedati za 5, povećava moral tvoje družine i smanjuje plaću vojnika za 5 % ( Vješina Vođe)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Upravljanje zatvorenicima
 skl_prisoner_management_desc|Svaki dodatni nivo ove vještine povećava broj zatvorenika za %d. (Vještina Vođe)
 skl_persuasion|Preživljavanje u divljini

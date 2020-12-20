@@ -1,7 +1,7 @@
 skl_trade|Kauppias
-skl_trade_desc|Tämän taidon tasot mahdollistavat suurempien varuste määrien ottamisen vähemmillä resurssipisteillä. (Ryhmä taito)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Johtajuus
-skl_leadership_desc|Jokainen piste korottaa maksimaalista komennettavien sotilaiden määrää viidellä, korottaa myös ryhmän moraalia ja vähentää sotilaiden palkkaa 5%%. (Johtaja taito)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Vankien käsittely
 skl_prisoner_management_desc|Jokainen taso tästä taidosta korottaa maksimaalista vankien määrää %d (Johtaja taito)
 skl_persuasion|Luonnonvaraisuustaito

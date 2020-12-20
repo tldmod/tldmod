@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|um Orc,^ servindo o Olho Sem Cílios
 qstr_an_URUK^_the_new_bre|um Uruk,^ a nova raça de Orcs
 qstr_a_MAN^_subjugated_by|um Homem,^ subjugado por Sauron
 qstr_an_ORC^_serving_the_W|um Orc,^ servindo ao Mão-Branca
-qstr_an_URUK_HAI^_bred_in|um Uruk-Hai,^ criado em Isengard
+; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|um Homem da Terra Parda,^ das Planícies Ocidentais
 qstr_Click_the_center_but|Clique no botão para alternar entre a facção centro ^ clique os avatares para ver os detalhes deles
 qstr_Level:_{reg3}^Health|Nível: {reg3}^Saúde: {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|Montaria inapropriada.
 qstr_{s24}:_Your_infantry|{s24}: Sua infantaria se sente melhor!
 qstr_{s24}:_Your_archers_|{s24}: Seus arqueiros se sentem melhor!
 qstr_{s24}:_Your_cavalry_|{s24}: Sua cavalaria se sente melhor!
-qstr_Ah_what_a_coincidenc|Ah, que coincidência, te encontrar aqui, {playername}! Você pode não me conhecer, mas não é estranho para mim. Eu estou indo para {s4}, mas eu acabei de vir de {s3} e seu nome apareceu. {s3} esta contando com você nesses tempos difíceis e se você pensou em usar algumas estrategias distraidoras, você deve pensar em reconsiderar e focar em ajudar {s3} com toda a sua capacidade. 
+; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
 qstr_Who_are_you?|Quem é você?
 qstr_A_friend_of_{s3}_and|Um amigo de {s3} e o povo de {s2}. Agora apresse-se! Mordor atrai todas as coisas vis, e o Poder Negro está fazendo de tudo para lá reuni-las. O tempo está acabando para tudo que é bom neste mundo, a não ser que nós façamos valer a pena todas as ações para opô-las.
 qstr_What_should_I_do?|O que devo fazer?
-qstr_Find_{s3}_s_whereabo|Encontre a localização de {s3} imediatamente e fale com ele. Boa sorte!
+; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|Bom ver que a Sombra ainda não conseguir te derrotar, {playername}.
 qstr_You_are_the_one_they|Você é aquele a quem chamam de Gandalf ou Mithrandir.
 qstr_That_is_what_some_ca|Isso é o que alguns me chamam. No meu tempo eu também tenho sido chamado de outras coisas, mas a menos que a Escuridão seja detida, em breve pode não haver mais ninguém para me chamar de alguma coisa.
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} parou de seguir você.
 qstr_You_have_{reg69}_all|Você tem {reg69} grupo aliado seguindo você
 qstr_You_have_{reg69}_ally|Você tem {reg69} grupos aliados seguindo você
 qstr_The_forces_of_{s2}_h|As forças de {s2} se reagruparam e marcham para {s15}!
-qstr_Your_scouts_have_rep|Seus batedores relataram que há um {s2} perto de {s3}.
+; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
 qstr_{s1}_from_{s2}|{s1} de {s2}
 qstr_When_dealing_with_lo|Ao lidar com os habitantes locais em {s11}, lembre-se de que eles não o conhecem e eles não necessariamente reconhecem os méritos que você conquistou em {s10}.^^(os Pontos de Recursos que você pode eliminar entre as pessoas de {s11} não são os que você ganhou em {s10}, mas os que você ganhará em {s11} -- veja também a tela de relatório)
 qstr_Info|Informação
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27}: A moral do grupo aumentou.
 qstr_{s27}:_Party_morale_d|{s27}: A moral do grupo diminuiu.
 qstr_You_have_failed_to_f|Você falhou em cumprir seu juramento de vingar Balin e sua companhia!
 qstr_You_have_failed_to_fu|Você falhou em cumprir seu juramento de vingança pela morte heróica de {s1}!
-qstr_Your_troops_value_yo|Suas tropas valorizam seu esforço para cumprir seu juramento, mas reconhecem que os eventos aconteceram rápido demais. Como resultado,
+; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
 qstr_{s22}You_have_fulfil|{s22}Você cumpriu seu juramento de vingar Balin e sua empresa!
 qstr_{s22}You_have_fulfill|{s22}Você cumpriu seu juramento de vingança pela morte heróica de {s1}!
 qstr_Reinforcements|Reforços

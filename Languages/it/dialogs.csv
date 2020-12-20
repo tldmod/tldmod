@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Difficilmente accetterei consigli da parte tua vi
 dlga_marshall_ask:lord_pretalk.1|Sei un comandante esperto, {playername}, ma la tua influenza è in declino. Non sarebbe prudente prestare ascolto ai tuoi suggerimenti.^[{reg15} influenza necessaria, attuale: {reg14}]
 dlga_marshall_ask:lord_pretalk.2|Possiamo permetterci di affrontare a malapena il nemico faccia a faccia, {playername}. Abbiamo ancora bisogno di radunare le nostre forze e consolidarci, purtroppo siamo semplicemente {s23}.
 dlga_marshall_ask:marshall_suggest|Sto ascoltando, {playername}. Che cosa suggeriresti ?
+dlga_marshall_suggest:lord_give_order_assault|Insieme, tu ed io possiamo prendere {s11}. Dovresti partire all'assalto immediatamente... [Costo {reg1}/{reg2} Punti Influenza]
 dlga_marshall_suggest:marshall_answer|Dovremmo correre subito ad assediare {s1}.
 dlga_marshall_suggest:lord_pretalk|Non importa, mi fido del tuo giudizio.
 dlga_player_siege_discuss:player_siege_discuss_1|Ti ascolto, mio Signore.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|Ho un amico qui, un vecchio guerriero
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Di quanti soldati hai bisogno ?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Se potessi addestrare {reg1} {s14} e portarli da me, ciò sarà sufficiente.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Certamente, {s65}. Dammi {reg1} reclute fresche e le addestrerò per diventare {s14}.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Suggerisco un altro metodo, {s65}. Prenderò {reg1} nuove reclute e le porterò all'arena per insegnargli un paio di cose...
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Suggerisco un altro metodo, {s65}.... Io porterò {reg1} reclute fresche all'arena per insegnargli un paio di cose. Non diventeranno {s14} dopo tutto, ma almeno sarà un passo avanti.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Suggerisco un altro metodo, {s65}. Prenderò {reg1} nuove reclute e le porterò al campo d'addestramento per insegnargli un paio di cose...
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Suggerisco un altro metodo, {s65}.... Io porterò {reg1} reclute fresche al campo d'addestramento per insegnargli un paio di cose. Non diventeranno {s14} dopo tutto, ma almeno sarà un passo avanti.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Sono troppo occupato in questi giorni per addestrare chiunque.
 dlga_lord_mission_raise_troops_accepted:close_window|Mi hai tolto un peso dalla schiena, {playername}. Dirò ai miei sergenti di mandarti le reclute e unirle sotto il tuo comando. Inoltre, ti anticiperò del denaro per aiutarti con le spese. Ecco, questa borsa dovrebbe essere sufficiente. Grazie per il tuo aiuto.
-dlga_lord_mission_raise_troops_alternate:close_window|Questa è una proposta interessante, {playername}. Potrei dire ai miei sergenti di mandare le reclute all'arena. Va con loro, e frustale per plasmarli. Io osserverò. Grazie per il tuo aiuto.
+dlga_lord_mission_raise_troops_alternate:close_window|Questa è una proposta interessante, {playername}. Potrei dire ai miei sergenti di mandare le reclute al campo d'addestramento. Va con loro, e frustali per plasmarli. Io osserverò. Grazie per il tuo aiuto.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, certamente. Me lo aspettavo. Beh, buona fortuna allora.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|C'è una cosa in cui potresti essermi d'aiuto, un problema riguardante un criminale senza legge conosciuto come {s4}. Ha assassinato una delle mie guardie personali e sfugge alla giustizia da allora. Recenti notizie c'informano che il fuggitivo sarebbe stato visto a {s3}. Potresti essere in grado di dargli la caccia e provvedere ad una rapida giustizia nei suoi confronti? In cambio ti ricompenserò.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Allora gli darò la caccia e farò rispettare la legge.

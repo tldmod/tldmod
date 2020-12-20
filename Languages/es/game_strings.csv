@@ -979,7 +979,7 @@ str_npc3_home_description_2|Si tenemos que cruzar el Bosque de Ent, hagámoslo c
 str_npc4_home_description_2|Haríamos bien en recordar las grandes hazañas del pasado y los sacrificios que se hicieron. La alianza entre Rohan y Gondor salvará de nuevo a nuestros pueblos de la perdición.
 str_npc5_home_description_2|Que esto sirva como recordatorio de que hasta los más grandes, incluso uno de los Istari, puede corromperse y caer en la Sombra. Aquéllos que anhelan poder pueden ser derrotados por él, así que evitemos cualquier demora.
 str_npc6_home_description_2|Siento la presencia de malvados ejércitos tras sus muros, listos para marchar a la guerra... ¿Contra la hermosa Lothlórien? ¿Contra los ciudadanos de Valle? ¿Contra mi tierra natal del Bosque Verde? No puedo saberlo, pero te ruego que hagas todo lo posible para frustrar sus planes.
-str_npc7_home_description_2|Si la suerte de la guerra nos depara alguna vez un numeroso ejército deberíamos arriesgarnos a entrar en las Minas y recuperar sus grandes riquezas.
+; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc8_home_description_2|Puedo oler la delicada fragancia de muchas flores y ver a las abejas recolectando su néctar. Si no te importa, recogeré algunas hierbas, sólo será un momento. 
 str_npc9_home_description_2|No deberíamos deambular por aquí sin que nos apoye una gran horda Uruk-hai. A no ser que quieras hacerles muecas a los centinelas de las murallas, claro.
 str_npc10_home_description_2| Minas Morgul; donde los Nazgûl beben durante todo el día, ¡jar, jar, jar! 
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|la Tierra de Mordor
 str_shortname_region_dimrill|el Valle del Arroyo Sombrío
 str_shortname_region_s_erebor|el Reino de Valle
 str_trait_title_elf_friend|{Amigo/Amiga} de los Elfos
-str_trait_desc_elf_friend|Has obtenido la estima de los elfos, que ahora te consideran {un aliado/una aliada} de confianza. El coste de reclutar elfos se ha reducido y ahora puedes intentar dar órdenes a los ejércitos élficos.
+; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
 str_trait_title_gondor_friend|Bendición del Senescal
-str_trait_desc_gondor_friend|El Senescal Denethor te tiene en gran estima y tu estatus entre los hombres de Gondor ha subido como resultado de ello. El coste de reclutar tropas de Gondor se ha reducido y ahora puedes intentar dar órdenes a los ejércitos de Gondor.
+; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
 str_trait_title_rohan_friend|{Hombre/Mujer} del Rey
-str_trait_desc_rohan_friend|El Rey Théoden de Rohan te tiene en gran estima y por ende tu estatus entre los hombres de Rohan ha aumentado. El coste al reclutar tropas de Rohan se ha reducido y ahora puedes intentar dar órdenes a los ejércitos de la Marca de los Jinetes.
+; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
 str_trait_title_brigand_friend|{Campeón/Campeona} Bárbaro
 str_trait_desc_brigand_friend|Gracias a tus proezas en el combate las tribus bárbaras que sirven a Sauron te tienen en gran estima. Ahora puedes reclutar tropas bárbaras a un coste reducido.
 str_trait_title_blessed|{Bendecido/Bendecida}
@@ -2388,7 +2388,7 @@ str_npc20_home_description_2|Destruiremos las obras de los Valar en la Tierra Me
 str_npc21_home_description_2|Haríamos bien en recordar las grandes hazañas del pasado y los sacrificios que se hicieron. La alianza entre Rohan y Gondor salvará de nuevo a nuestros pueblos de la perdición.
 str_npc22_home_description_2|Que esto sirva como recordatorio de que hasta los más grandes, incluso uno de los Istari, puede corromperse y caer en la Sombra. Aquéllos que anhelan poder pueden ser derrotados por él, así que evitemos cualquier demora.
 str_npc23_home_description_2|Siento la presencia de malvados ejércitos tras sus muros, listos para marchar a la guerra... ¿Contra la hermosa Lothlórien? ¿Contra los ciudadanos de Valle? ¿Contra mi tierra natal del Bosque Verde? No puedo saberlo, pero te ruego que hagas todo lo posible para frustrar sus planes.
-str_npc24_home_description_2|Si la suerte de la guerra nos depara alguna vez un numeroso ejército deberíamos arriesgarnos a entrar en las Minas y recuperar sus grandes riquezas.
+; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc25_home_description_2|Puedo oler la delicada fragancia de muchas flores y ver a las abejas recolectando su néctar. Si no te importa, recogeré algunas hierbas, sólo será un momento. 
 str_npc26_home_description_2|No deberíamos deambular por aquí sin que nos apoye una gran horda Uruk-hai. A no ser que quieras hacerles muecas a los centinelas de las murallas, claro.
 str_npc27_home_description_2| Minas Morgul; donde los Nazgûl beben durante todo el día, ¡jar, jar, jar! 

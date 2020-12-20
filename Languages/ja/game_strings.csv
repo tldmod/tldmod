@@ -979,7 +979,7 @@ str_npc3_home_description_2|どうしてもエントの森を通り抜けなけ�
 str_npc4_home_description_2|過去の偉大な行いや、尊い犠牲を思い起こすのは、大事な事です。 ローハンとゴンドールの同盟軍は、 再び我々の民を破滅から救うでしょう。
 str_npc5_home_description_2|これは、堕落し、身を滅ぼすというのは、 誰にでも起こりうる事なのだ、 という教訓にしなければならない。 それは最も偉大な者、 イスタリといえども、 例外ではない。 力を追い求める者は、 力によって滅びる。 さあ、 これ以上は時間の無駄だ。
 str_npc6_home_description_2|城壁の向こう側にうごめく、 闇の軍勢の気配を感じるわ・・・ 美しいロスローリエンを襲撃するつもりなの？ それとも谷間の国を？ 私の故郷、緑森？ わからないわ、 でも、 私たちは絶対にやつらの好きにさせてはならない。
-str_npc7_home_description_2|もし敵を圧倒するような大軍を率いる事ができたら、 ぜひ抗道に潜り込んで、 お宝の山をごっそり頂こう。
+; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc8_home_description_2|きれいな花々の香りが漂い、 蜜を収穫するみつばち達が見えます。 私はちょっと失礼して、 部隊で使う薬草をいくらか採ってこようと思います。 すぐに戻ります。
 str_npc9_home_description_2|ウルク＝ハイの大群を率いてるわけでもないのに、 こんなところを歩き回って、 何の意味があるんじゃ。 城壁にいる斥候に、 あいさつでもするのか。
 str_npc10_home_description_2|ナズグールどもはミナス・モルグルで一日中飲んだくれてるらしぜ。へへへ！
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|モルドールの地
 str_shortname_region_dimrill|おぼろ谷
 str_shortname_region_s_erebor|谷間の国の領域
 str_trait_title_elf_friend|エルフの友
-str_trait_desc_elf_friend|エルフたちからの大きな尊敬を集めるあなたは、 彼らから信頼のおける同盟軍として考えられています。 エルフの雇用費が安くなり、 エルフの部隊へ指示を出すよう試みる事ができます。
+; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
 str_trait_title_gondor_friend|執政の祝福
-str_trait_desc_gondor_friend|執政デネソールより一目置かれる人物として知られるあなたは、 ゴンドールの民にとても尊敬されています。 ゴンドールの兵を安く雇用でき、 ゴンドールの部隊へ指示を出すよう試みる事ができます。
+; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
 str_trait_title_rohan_friend|王の懐刀
-str_trait_desc_rohan_friend|セオデン王が非常な敬意を払う人物として、 ローハンであなたを知らない者はいません。 ロヒアリムの兵を安く雇用でき、 騎士国の部隊へ指示を出すよう試みる事ができます。
+; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
 str_trait_title_brigand_friend|蛮王
 str_trait_desc_brigand_friend|サウロンに従う蛮人たちは、 闘技場でのあなたの勇猛さを目の当たりにし、 あなたをとても尊敬するようになりました。 蛮人を安く雇用できます。
 str_trait_title_blessed|祝福されし者
@@ -2388,7 +2388,7 @@ str_npc20_home_description_2|われらはドワーフどもをはじめとする
 str_npc21_home_description_2|過去の偉大な行いや、尊い犠牲を思い起こすのは、大事な事です。 ローハンとゴンドールの同盟軍は、 再び我々の民を破滅から救うでしょう。
 str_npc22_home_description_2|これは、堕落し、身を滅ぼすというのは、 誰にでも起こりうる事なのだ、 という教訓にしなければならない。 それは最も偉大な者、 イスタリといえども、 例外ではない。 力を追い求める者は、 力によって滅びる。 さあ、 これ以上は時間の無駄だ。
 str_npc23_home_description_2|城壁の向こう側にうごめく、 闇の軍勢の気配を感じるわ・・・ 美しいロスローリエンを襲撃するつもりなの？ それとも谷間の国を？ 私の故郷、緑森？ わからないわ、 でも、 私たちは絶対にやつらの好きにさせてはならない。
-str_npc24_home_description_2|もし敵を圧倒するような大軍を率いる事ができたら、 ぜひ抗道に潜り込んで、 お宝の山をごっそり頂こう。
+; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc25_home_description_2|きれいな花々の香りが漂い、 蜜を収穫するみつばち達が見えます。 私はちょっと失礼して、 部隊で使う薬草をいくらか採ってこようと思います。 すぐに戻ります。
 str_npc26_home_description_2|ウルク＝ハイの大群を率いてるわけでもないのに、 こんなところを歩き回って、 何の意味があるんじゃ。 城壁にいる斥候に、 あいさつでもするのか。
 str_npc27_home_description_2|あれがミナス・モルグルだ。 あそこでナズグールの連中が、 一日中飲んだくれてるんだとさ。 ハハハ！ 

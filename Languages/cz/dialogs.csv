@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Nebudu brát radu od pouhého {s25}, {playername}
 dlga_marshall_ask:lord_pretalk.1|Jsi vynikající velitel {playername}, ale tvůj vliv je mizivý. Nebylo by rozumné poslouchat tvé rady.^[{reg15} vlivu potřeba, pouze {reg14} máš]
 dlga_marshall_ask:lord_pretalk.2|Nemůžeme si dovolit potkat se s nepřítelem, {playername}. Stále potřebujeme budovat své síly a budeme silní, bohužel jsme jen {s23}.
 dlga_marshall_ask:marshall_suggest|Poslouchám, {playername}. Co navrhuješ?
+dlga_marshall_suggest:lord_give_order_assault|Společně si můžeme vzít {s11}. Měli byste okamžitě zaútočit ... [stojí {reg1}/{reg2} vlivu]
 dlga_marshall_suggest:marshall_answer|Měli bychom jet obléhat {s1} najednou.
 dlga_marshall_suggest:lord_pretalk|Nevadí, věřím tvému úsudku.
 dlga_player_siege_discuss:player_siege_discuss_1|Poslouchám, můj pane.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|Můj dobrý přítel, starý spoluboj
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Kolik mužů potřebujete?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Pokud vycvičíte {reg1} {s14} a přivedete mi je, tak by to mělo stačit.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Samozřejmě, {s65}. Dej mi {reg1} čerstvých rekrutů a já je vycvičím aby byly {s14}.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Nabízím jinou metodu, {s65}. Vezmu {reg1} čerstvých rekrutů do arény a něčemu je přiučím
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Nabízím jinou metodu, {s65}. Vezmu {reg1} čerstvých rekrutů do arény a něčemu je přiučím. Sice z nich nebudou {s14}, ale aspoň se zlepší.
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Tyto dny jsem příliš zaneprázdněn abych někoho trénoval.
 dlga_lord_mission_raise_troops_accepted:close_window|Zbavil jsi mě velkého břemene. Řeknu svým velitelům, aby k tobě poslali rekruty, kteří budou pod tvým přímým velením. Rovněž ti zaplatím za potencionální budoucí výdaje. Tady toto by mělo stačit. Děkuji ti za tvou pomoc.
-dlga_lord_mission_raise_troops_alternate:close_window|{playername}, toto je zajímavá nabídka. Pověřím své velitele, aby poslali rekruty do arény. Setkej se tam s nimi a ukaž jim jak to má se zbraní v ruce vypadat. Budu vás pozorovat. Děkuji ti za pomoc.
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Ale samozřejmě. Tak jsem to také očekával. Inu, hodně štěstí.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Je zde něco s čím by jsi mi mohl pomoci. Odporný ničema známý jako {s4}, zabil jednoho z mých strážců a zatím se mu daří unikat před spravedlností. Nedávno se ke mě doneslo, že se ten padouch na místě {s3}. Pokud ho vypátráš a vykonáš na něm spravedlnost odměna tě nemine.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Pak ho tedy najdu a vykonám zákon.

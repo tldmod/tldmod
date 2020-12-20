@@ -148,5 +148,7 @@ ui_str_hear_me|%s, слушай меня!
 ui_return|Вернуться
 ui_factions|Фракции
 ui_troop_upgrades|Улучшения войск
-ui_hdr_mode|HDR режим ( рекомендовано ВКЛ или НИЗКИЙ)
+; ui_hdr_mode|HDR Mode:
 ui_autoexpore|Авто-экспозиция ( рекомендуется ВКЛ если HDR  включен) 
+; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
+; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)

@@ -1,7 +1,7 @@
 skl_trade|Trgovac
-skl_trade_desc|Leveli ovog skila daju sansu da trazite bolju opremu za manje para. (Grupni skil)
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Vodjstvo
-skl_leadership_desc|Svaki poen dodaje 5 mesta za vojnike, povecava moral i smanjuje platu koju vase trupe hoce za 5%% (Vodjin skil)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Menadzment Zarobljenika
 skl_prisoner_management_desc|Svai poen povecava maksimalnu kolicinu zarobljenika za %d (Vodjin skil)
 ; skl_persuasion|Wildcraft

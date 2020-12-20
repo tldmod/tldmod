@@ -1,7 +1,7 @@
 skl_trade|Торговля
-skl_trade_desc|Каждый новый уровень этого навыка позволяет запрашивать большее количество предметов за меньшее количество очков снабжения (умение группы).
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Лидерство
-skl_leadership_desc|С каждым новым уровнем этого навыка количество людей, которыми вы можете командовать, увеличивается на 5, поднимается боевой дух, а расходы на армию снижаются на 5%% (умение лидера).
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Содержание пленных
 skl_prisoner_management_desc|С каждым новым уровнем этого навыка максимальное число пленных увеличивается на %d (умение лидера).
 skl_persuasion|Знание леса

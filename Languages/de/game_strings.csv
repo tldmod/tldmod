@@ -979,7 +979,7 @@ str_npc3_home_description_2|Wenn wir den Entwald durchqueren müssen, lasst und 
 str_npc4_home_description_2|Wir tun gut daran, uns an die großen Taten in der Vergangenheit und an die Opfer, die gebracht wurden, zu erinnern. Die Allianz zwischen Rohan und Gondor wird unsere Völker noch einmal vor dem Untergang bewahren.
 str_npc5_home_description_2|Lasst es eine Mahnung dafür sein, dass auch die Größten, selbst einer der Istari, verdorben und zu Fall gebracht werden können. Diejenigen, die nach Macht gieren, können durch Macht besiegt werden, lasst uns also nicht länger verweilen.
 str_npc6_home_description_2|Ich spüre finstere Armeen hinter den Mauern, die sich vorbereiten zu marschieren... Gen Lothlórien? Thal? Mein Heimatland Düsterwald? Ich kann es nicht sagen, aber bitte tut alles in Eurer Macht Stehende, um es zu verhindern.
-str_npc7_home_description_2|Wenn uns die Schicksale des Krieges jemals eine große Armee bereitstellen, sollten wir das Betreten der Minen riskieren und ihre großen Reichtümer bergen.
+str_npc7_home_description_2|Sollten uns die Wendungen des Schicksals jemals mit einer großen Armee beglücken, dann sollten es wagen, in die Minen vorzudringen und ihre großen Reichtümer zu bergen.
 str_npc8_home_description_2|Ich kann den Duft vieler süßer Blumen riechen und sehe die Bienen ihren Nektar sammeln. Wenn es Euch nicht stört, werde ich einige Kräuter für unseren Eigengebrauch pflücken. Es dauert nur einen Moment.
 str_npc9_home_description_2|Es hat keinen Sinn sich hier herumzuschleppen, sofern wir nicht durch eine große Horde Uruk-hai unterstützt werden. Es sei denn, Ihr wollt den Wachen auf der Mauer Grimassen schneiden.
 str_npc10_home_description_2|Minas Morgul, wo die Nazgul den ganzen Tag saufen, harr-harr!
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|im Land Mordor
 str_shortname_region_dimrill|im Schattenbachtal
 str_shortname_region_s_erebor|im Reich von Thal
 str_trait_title_elf_friend|Elbenfreund
-str_trait_desc_elf_friend|Du wirst von den Elben hoch geschätzt und nun als treuer Verbündeter betrachtet. Die Rekrutierungskosten von Elben wurden gesenkt und du kannst nun versuchen, Elbenarmeen Befehle zu erteilen.
+str_trait_desc_elf_friend|Du wirst von den Elben hoch geschätzt und nun als treuer Verbündeter betrachtet. Die Rekrutierungskosten von Elben wurden gesenkt.
 str_trait_title_gondor_friend|Segen des Truchsess
-str_trait_desc_gondor_friend|Du wirst von Truchsess Denethor hoch geschätzt und deshalb ist dein Ansehen unter den Menschen von Gondor gestiegen. Die Rekrutierungskosten für Gondorer wurden gesenkt und du kannst nun versuchen, gondorischen Trupps Befehle zu erteilen.
+str_trait_desc_gondor_friend|Du wirst von Truchsess Denethor hoch geschätzt und deshalb ist dein Ansehen unter den Menschen von Gondor gestiegen. Die Rekrutierungskosten für Menschen von Gondor wurden gesenkt.
 str_trait_title_rohan_friend|Mann des Königs
-str_trait_desc_rohan_friend|Du wirst von König Theoden von Rohan hoch geschätzt und deshalb ist dein Ansehen unter den Menschen von Rohan gestiegen. Die Rekrutierungskosten für Rohirrim wurden gesenkt und du kannst nun versuchen, rohirrischen Trupps Befehle zu erteilen.
+str_trait_desc_rohan_friend|Du wirst von König Theoden von Rohan hoch geschätzt und deshalb ist dein Ansehen unter den Menschen von Rohan gestiegen. Die Rekrutierungskosten für Rohirrim wurden gesenkt.
 str_trait_title_brigand_friend|Kriegsheld der Barbaren
 str_trait_desc_brigand_friend|Wegen deiner beeindruckenden Vorführungen in der Arena wirst du von den Barbarenstämmen, die Sauron dienen, hoch geschätzt. Du kannst nun Barbaren zu günstigerem Preis rekrutieren.
 str_trait_title_blessed|Gesegnet
@@ -2388,7 +2388,7 @@ str_npc20_home_description_2|Wir werden die Werke der Valar hier in Mittelerde z
 str_npc21_home_description_2|Wir tun gut daran, uns an die großen Taten in der Vergangenheit und an die Opfer, die gebracht wurden, zu erinnern. Die Allianz zwischen Rohan und Gondor wird unsere Völker noch einmal vor dem Untergang bewahren.
 str_npc22_home_description_2|Lasst es eine Mahnung dafür sein, dass auch die Größten, selbst einer der Istari, verdorben und zu Fall gebracht werden können. Diejenigen, die nach Macht gieren, können durch Macht besiegt werden, lasst uns also nicht länger verweilen.
 str_npc23_home_description_2|Ich spüre finstere Armeen hinter den Mauern, die sich vorbereiten zu marschieren... Gen Lothlórien? Thal? Mein Heimatland Düsterwald? Ich kann es nicht sagen, aber bitte tut alles in Eurer Macht Stehende, um es zu verhindern.
-str_npc24_home_description_2|Wenn uns die Schicksale des Krieges jemals eine große Armee bereitstellen, sollten wir das Betreten der Minen riskieren und ihre großen Reichtümer bergen.
+str_npc24_home_description_2|Sollten uns die Wendungen des Schicksals jemals mit einer großen Armee beglücken, dann sollten es wagen, in die Minen vorzudringen und ihre großen Reichtümer zu bergen.
 str_npc25_home_description_2|Ich kann den Duft vieler süßer Blumen riechen und sehe die Bienen ihren Nektar sammeln. Wenn es Euch nicht stört, werde ich einige Kräuter für unseren Eigengebrauch pflücken. Es dauert nur einen Moment.
 str_npc26_home_description_2|Es hat keinen Sinn sich hier herumzuschleppen, sofern wir nicht durch eine große Horde Uruk-hai unterstützt werden. Es sei denn, Ihr wollt den Wachen auf der Mauer Grimassen schneiden.
 str_npc27_home_description_2|Minas Morgul, wo die Nazgul den ganzen Tag saufen, harr-harr!

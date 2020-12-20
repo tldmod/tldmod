@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|オーク、^瞼のない御目の忠実な下僕
 qstr_an_URUK^_the_new_bre|ウルク、^新種のオーク
 qstr_a_MAN^_subjugated_by|人間、^サウロンに服従
 qstr_an_ORC^_serving_the_W|オーク、^白の手のしもべ
-qstr_an_URUK_HAI^_bred_in|ウルク＝ハイ、^アイゼンガルドの産
+; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|褐色人、^西方の平野の住人
 qstr_Click_the_center_but|中央のボタンをクリックすると勢力を切り替えます^アバターをクリックすると詳細を表示します
 qstr_Level:_{reg3}^Health|レベル:{reg3}^ヒットポイント:{reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|不適当な乗り物
 qstr_{s24}:_Your_infantry|{s24}:あなたの歩兵たちは気分が良くなりました！
 qstr_{s24}:_Your_archers_|{s24}:あなたの弓兵たちは気分が良くなりました！
 qstr_{s24}:_Your_cavalry_|{s24}:あなたの騎兵たちは気分が良くなりました！
-qstr_Ah_what_a_coincidenc|おお、おぬしは{playername}ではないか。 このようなところで出会うとは、何という偶然だろう！ おぬしはわしのことを知らないであろうが、 わしはおぬしのことを聞いている。 わしはこれより{s4}に会いに行くところだが、 つい先ほど面会した{s3}が、 おぬしの話をしてくれた。 {s3}はこの困難な時において、 おぬしを頼りにしておった。 おぬしは目先の事は置いておいて、 今は{s3}を精一杯の力で助けなければならん。
+; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
 qstr_Who_are_you?|あなたは何者{なんだ/なの}？
 qstr_A_friend_of_{s3}_and|{s3}と{s2}の民の友だ。 さあ急ぐのだ！ モルドールはあらゆる邪なものをひきつけ、 闇の力をもってそれらをしもべにしてしまう。 この世界の清きものたちに残された時間は少ない。 闇に対抗するため、 できる限りの手を打たなければならん！
 qstr_What_should_I_do?|私は何をすればよいのでしょう？
-qstr_Find_{s3}_s_whereabo|すぐに{s3}の許へ行き、話を聞くのだ。幸運を祈る！
+; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|おぬしがいまだ闇の力に屈していないのは幸運といえよう、 {playername}。
 qstr_You_are_the_one_they|あなたはガンダルフ、もしくはミスランディアと呼ばれている方ですね。
 qstr_That_is_what_some_ca|そう呼ぶ者もおるな。 また違った名前で呼ぶ者もあるが、 この闇を食い止めねば、 まもなくわしを呼ぶ者すらいなくなってしまうであろう。
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5}はあなたへの同行をとりやめました�
 qstr_You_have_{reg69}_all|{reg69}の友軍部隊があなたに同行しています。
 qstr_You_have_{reg69}_ally|{reg69}の友軍部隊があなたに同行しています。
 qstr_The_forces_of_{s2}_h|{s2}の軍勢は再合流して態勢を立て直し、{s15}を目指して進軍しています！
-qstr_Your_scouts_have_rep|斥候より、{s3}付近に{s2}を確認したとの報告が届きました。
+; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
 qstr_{s1}_from_{s2}|{s2}の{s1}
 qstr_When_dealing_with_lo|{s11}の民と取引をする場合、 彼らはあなたの顔を知らず、 あなたの{s10}での功績についても、 必ずしも知っているわけではないという事に 注意してください。^^({s11}の民とのやりとりに使用される リソースポイントは {s11}でのみ稼げるもので、 {s10}で稼いだものとは別です。 レポート画面も参照してください。)
 qstr_Info|情報
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27}:パーティの士気が上がりました。
 qstr_{s27}:_Party_morale_d|{s27}:パーティの士気が下がりました。
 qstr_You_have_failed_to_f|バーリンとその一党の復讐をするという誓いを達成できませんでした！
 qstr_You_have_failed_to_fu|名誉の死を遂げた {s1}の復讐をするという 誓いを達成できませんでした！
-qstr_Your_troops_value_yo|あなたの部下たちは誓いを成就させるためのあなたの努力は認めるものの、 誓いは時期尚早であったと認識しています。 結果、
+; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
 qstr_{s22}You_have_fulfil|{s22}あなたはバーリンとその一党の復讐をするという誓いを成就させました！
 qstr_{s22}You_have_fulfill|{s22}あなたは{s1}の名誉の死の復讐をするという誓いを成就させました！
 qstr_Reinforcements|増援

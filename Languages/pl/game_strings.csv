@@ -597,10 +597,10 @@ str_npc7_backstory_a|Dziękuję, że pytasz, {playername} . Nękają nas najazdy
 str_npc8_backstory_a|Jestem pewien, że można znaleźć kilku chętnych, jeśli pomówisz z kwatermistrzem w koszarach. Jeśli chodzi o mnie, jestem tylko skromnym uzdrowicielem.
 str_npc9_backstory_a|Masz szczęście! Nazywają mnie Gulm. Wypatroszyłem mojego sierżanta i teraz jego sługi polują na mnie. Ten bezwartościowy knur wiedział że to nadejdzie! Raz, gdy wpadliśmy w zasadzkę słomogłowych. A on to przegrał. "Odwrót" krzyczał, a potem uciekł. Tylko Gulm i kilku innych stało niewzruszenie i przełamało ich szarżę. Po tym już tylko zrobiliśmy miazgę z blondynów (heh heh heh). Ale gdyby nie my silni, wszyscy bylibyśmy pokarmem dla robali.
 str_npc10_backstory_a|Jestem Durgash
-; str_npc11_backstory_a|Nar! Not a tracker, that's who. They threw me out! I tell you they've lost their heads, that's what it is. Curse 'em! First they say I shoot wild, then I run too slow, and then I have a useless snuffler. Garn! If they don't find a rabble for me soon I'll be for the Black Pits, if what I hear is true. I'll make sure some of those Bosses lose their skins sooner than putting me in there!
-; str_npc12_backstory_a|I'm in command of a band of lads up here. I'm Gorbag and you'd best learn quick lubber us Uruks are the real bosses 'round here. The Big Bosses makes slips, 'ay, even the Biggest can make mistakes, and always the poor Uruks to put slips right, and small thanks. They don't even tell us all they know, do they? Not by half. Grr!
+str_npc11_backstory_a|Nie, nie jestem żadnym tropicielem! Wyrzucili mnie, oni chyba naprawdę oszaleli, walić to wszystko! Na początku narzekają na to jak strzelam, a potem czepiają się, że niby wolno biegam.. Do dupy z tym wszystkim, jeśli wkrótce nie dołączę do jakieś bandy, a to co mówią jest prawdą, to poprę Black Pits. Prędzej ich generałowie zostaną bez skór niż pozwolę się tam wepchać!
+str_npc12_backstory_a|To nie ja dowodzę tymi chłopami. Jestem Gorbag, a ty niedołęgo lepiej szybko zapamiętaj że to my, Uruks tutaj rządzimy. Wszyscy popełniają błędy, nawet zdarza się to najważniejszym z nas i zawsze Ci najbiedniejsi muszą wszystko naprawiać. W nagrodę dostajemy jedynie małe podziękowanie, nie wiemy nawet wszystkiego, nie mówią nam ani połowy.
 ; str_npc13_backstory_a|I? I am a grain of soil from southern sands, blown north by cold and dark night winds. I am Lykyada, a Serpent Lord of Haradwaith. Lord of the Gold Serpent, bane of the Black Serpent Tribe, now allied to serve the will of the Dark Lord.
-; str_npc14_backstory_a|I am Fuldimir, son of the southern realm of Umbar, south of Harondor, and the Bay of Belfalas, for both are home to my heart and my people. We are the lords of sea and sail, corsairs to some, kin of the Bay of Belfalas for her waters we tame.
+str_npc14_backstory_a|Jestem Fuldimir, pochodzę z południowego królestwa Umbar,  z Harondor na południu oraz zatoki Belfalas, oba te miejsca będą na zawsze w moim sercu, tak samo ludzie mieszkający tam. To my tutaj rządzimy, jesteśmy lordami tego morza, niektórzy uważają nas za korsarzy. Poskramiamy wody tej zatoki.
 ; str_npc15_backstory_a|I am Bolzog the Gifted, Setter of Bones, Closer of Cuts, and Shaman of Healing. If you go to war for The Eye, you will no doubt have one or other of your little fellows cut about a bit by pale-faced foresters or the horse-lovers. Now, -nar-nar-nar! - Orcs are easy to replace, Oh Great Leader, but can you replace a Warg? A Giant? A Cave Troll? Shi-shi! No! You need me, the Great Bolzog!
 str_npc16_backstory_a|Cóż, teraz to nieznajomy powinien się najpierw zadeklarować. Jestem jednak Varfangiem rodziny Balchoth. . . Mogę powiedzieć, że jeszcze nie słyszeliście pieśni lub opowieści z mojej ziemi, które mówią o Balchocie, ponieważ samo to imię sprawdziłoby waszą odwagę i napełniło wasze serce bólem.
 str_npc17_backstory_a|Nazywają mnie Dímborn i pracuję w lesie. Miło jest tam. Lubię lasy . Wiele drzew w lesie. Lubię drzewa. Pracowałem już w lesie przez całe moje życie , bo jestem silna i ponieważ lubię drzew.
@@ -979,7 +979,7 @@ str_npc3_home_description_2|Jeśli musimy przekroczyć Entwood, zróbmy to z po�
 str_npc4_home_description_2|Dobrze byśmy pamiętali wielkie czyny przeszłości i ofiary, które zostały dokonane. Sojusz między Rohanem i Gondorem uratuje nasze narody od zagłady po raz kolejny.
 str_npc5_home_description_2|Niech to będzie przypomnienie, że nawet największa, nawet jedna z Istarich, może ulec zepsuciu i upadkowi. Ci, którzy pożądają władzy, mogą zostać pokonani przez moc, więc nie zwlekajmy dłużej.
 str_npc6_home_description_2|Wyczuwam zle armie za tymi scianmi przygotujcie sie do wymarszu...Do Lothlorien, Dale, do zielonej ojczyzny? Tego powiedziec nie moge, ale prosze zrobcie wszystko co w waszych silach by Ich zatrzymac.
-str_npc7_home_description_2|Jesli fates of war zapewni nam duza armie, pownnismy zaryzykowc wejsciem do kopalni i odzyskac utracone dary.
+; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc8_home_description_2|Czuję zapach wielu słodkich kwiatów i widzę pszczoły zbierające nektar. Jeśli nie masz nic przeciwko, zbiorę trochę ziół na własny użytek, zajmie to tylko chwilę.
 str_npc9_home_description_2|Nie ma sensu włóczyć się tutaj, jeśli nie poprowadzi nas wielka horda Uruk-hai. Chyba że chcesz robić miny przy punktach widokowych na ścianie.
 str_npc10_home_description_2|Minas Morgul, gdzie Nazgule piją cały dzień, har-har!
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|do Mordoru
 str_shortname_region_dimrill|Dimrill Dale
 str_shortname_region_s_erebor|królestwo Dale
 str_trait_title_elf_friend|Przyjaci{el/ółka} Elfów
-str_trait_desc_elf_friend|Zyskał{e/a}ś poważanie wśród Elfów i zaufanie sojusznika. Koszt rekrutacji elfów został zmniejszony i od teraz możesz wydawać rozkazy Elfickim Armiom.
+; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
 str_trait_title_gondor_friend|Pobłogosławion{y/a} przez Namiestnika
-str_trait_desc_gondor_friend|Zyskał{e/a}ś przychylność Namiestnika Denethora, w wyniku czego twój status w Gondorze znacznie wzrósł. Koszt rekrutacji Gondorczyków został zmniejszony i od teraz możesz wydawać rozkazy Gondorskim Armiom.
+str_trait_desc_gondor_friend|Zyskałeś poważanie u króla Stewarda Denethora, dzięki czemu jego ludzie mają wobec ciebie większy szacunek. Cena za rekrutacje Gondorians jest teraz mniejsza.
 str_trait_title_rohan_friend|Człowiek Króla
-str_trait_desc_rohan_friend|Zyskał{e/a}ś przychylność Króla Theodena, w wyniku czego twój status w Rohanie znacznie wzrósł. Koszt rekrutacji Rohirrimów został zmniejszony i od teraz możesz wydawać rozkazy Armiom Riddermarki.
+str_trait_desc_rohan_friend|Zyskałeś poważanie u króla Theodena z Rohan, dzięki czemu jego ludzie mają wobec ciebie większy szacunek. Cena za rekrutacje Rohirrim jest teraz mniejsza.
 str_trait_title_brigand_friend|Barbarzyński Czempion
 str_trait_desc_brigand_friend|Zyskał{e/a}ś poważanie pośród barbarzyńskich plemion służących Sauronowi. Możesz teraz rekrutować barbarzyńców mniejszym kosztem.
 str_trait_title_blessed|Pobłogosławion{y/a}
@@ -2332,7 +2332,7 @@ str_npc24_personalitymatch_speech|Krwawo i Zwycięsko, tak jak lubię.
 str_npc25_personalitymatch_speech|Kolejne zwycięstwo, dowódco, podziwiam twoją umiejętność oszczędzania życia naszych ludzi. Wojownik taki jak {s11} wydaje się bardzo użyteczny w twoich planach bitewnych.
 str_npc26_personalitymatch_speech|Czy wspominałem że lubię {s11}?
 str_npc27_personalitymatch_speech|Czy wspominałem że lubię {s11}?
-; str_npc18_personalitymatch_speech_b|Great One, it speaks well of you that a warrior like Lykyada fights under your banner. I had thought all Southerners weak and decadent, not so different from the men of the West, but if they have more like him among their ranks, then the days of the West are indeed coming to an end.
+str_npc18_personalitymatch_speech_b|Mistrzu, wojownicy jak Lykyada walczący w twojej armii tylko przyczyniają się do sławy twego imienia. Myślałem, że wszyscy ludzie z południa są słabi, prawie tacy sami jak ci z zachodu. Możliwe, że myliłem się. Jeśli jest pośród nich więcej takich jak on, koniec zachodu jest już bardzo blisko.
 ; str_npc19_personalitymatch_speech_b|Commander, Varfang and I were sharing a skin of wine around the campfires last night. Deep-counselled I deem him, for ever mindful is he of the deeds of his forebears, as one should be. I know not if, as he says, the spirits of our ancestors are with us. Indeed, I like not the thought. But a king must know the story of his blood, of mothers and fathers aforetimes. Varfang is one such who knows this.
 ; str_npc20_personalitymatch_speech_b|I have never met an 'urku' quite like Bolzog. Oh, I grant you he is unlovely to look upon, but in all my long years he is the first one I've ever encountered who can do more than simply sneak, skulk and slaughter. His gnarled hands are surprisingly deft. Yes, so surprisingly deft... It may be that he can learn more of the arts of bone and sinew than I had reckoned at first.
 str_npc21_personalitymatch_speech_b|Zachowywanie życia to najszlachetniejszy czyn i czuję pokrewieństwo z taką życzliwą duszą, nawet jeśli nasze światy są daleko od siebie.
@@ -2342,9 +2342,9 @@ str_npc24_personalitymatch_speech_b|{s11} i jej Dale-kinowie, nawet jeśli nie d
 str_npc25_personalitymatch_speech_b|Mieszkańcy Dale mają głęboki szacunek dla odpornego, samotnego górskiego krasnoludzkiego ludu, jako przyjaciół i opiekunów, pomimo naszej różnej rasy i obyczajów.
 str_npc26_personalitymatch_speech_b|Lubię {s11}.
 str_npc27_personalitymatch_speech_b|Lubię {s11}.
-; str_npc18_retirement_speech|I think I want to settle down and raise a family and, I dunno, do embroidery or shit. Bye.
+str_npc18_retirement_speech|Chyba chciałbym się gdzieś osiąść, założyć rodzinę, potem zająć się haftowaniem albo innym gównem. Żegnaj.
 ; str_npc19_retirement_speech|Listen, strange men standing around claiming royal bastardy is no basis for a system of government.
-; str_npc20_retirement_speech|Maybe anger isn't the way. All we need is love. Why can't we all get along?
+str_npc20_retirement_speech|Może nie powinniśmy podążać za złością, wszyscy potrzebujemy tylko miłości. Dlaczego nie możemy po prostu żyć w dobrych stosunkach?
 str_npc21_retirement_speech|Jestem już trochę zmęczony życiem wojownika , będę na emeryturze.
 str_npc22_retirement_speech|Jestem już trochę zmęczony życiem wojownika , będę na emeryturze.
 str_npc23_retirement_speech|Jestem już trochę zmęczony życiem wojownika , będę na emeryturze.
@@ -2353,7 +2353,7 @@ str_npc25_retirement_speech|Jestem już trochę zmęczony życiem wojownika , b�
 str_npc26_retirement_speech|Jestem już trochę zmęczony życiem wojownika , będę na emeryturze.
 str_npc27_retirement_speech|Jestem już trochę zmęczony życiem wojownika , będę na emeryturze.
 str_npc18_rehire_speech|Moje ostrze nadal pragnie krwi o Wspaniały. Pozwól mi z tobą wyruszyć ponownie!
-; str_npc19_rehire_speech|It is good to see you again, Commander. Give me leave to rejoin your company.
+str_npc19_rehire_speech|Dowódco, dobrze ciebie znowu widzieć. Proszę, pozwól mi znów dołączyć do twej armii. 
 str_npc20_rehire_speech|Chodźmy więc, Kapitanie. Wojna sama się nie wygra!
 str_npc21_rehire_speech|Witaj ponowie, Możemy kontynuować tam gdzie skończyliśmy ostatnim razem?
 str_npc22_rehire_speech|Dobrze Cię widzieć, {playername}, Pozwól nam podróżować razem.
@@ -2388,7 +2388,7 @@ str_npc27_home_description|Czy znasz to miasto?
 str_npc21_home_description_2|Dobrze byśmy pamiętali wielkie czyny przeszłości i ofiary, które zostały dokonane. Sojusz między Rohanem i Gondorem uratuje nasze narody od zagłady po raz kolejny.
 str_npc22_home_description_2|Niech to będzie przypomnienie, że nawet największa, nawet jedna z Istarich, może ulec zepsuciu i upadkowi. Ci, którzy pożądają władzy, mogą zostać pokonani przez moc, więc nie zwlekajmy dłużej.
 str_npc23_home_description_2|Wyczuwam zle armie za tymi scianmi przygotujcie sie do wymarszu...Do Lothlorien, Dale, do zielonej ojczyzny? Tego powiedziec nie moge, ale prosze zrobcie wszystko co w waszych silach by Ich zatrzymac.
-str_npc24_home_description_2|Jesli fates of war zapewni nam duza armie, pownnismy zaryzykowc wejsciem do kopalni i odzyskac utracone dary.
+; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc25_home_description_2|Czuję zapach wielu słodkich kwiatów i widzę pszczoły zbierające nektar. Jeśli nie masz nic przeciwko, zbiorę trochę ziół na własny użytek, zajmie to tylko chwilę.
 str_npc26_home_description_2|Nie ma sensu włóczyć się tutaj, jeśli nie poprowadzi nas wielka horda Uruk-hai. Chyba że chcesz robić miny przy punktach widokowych na ścianie.
 str_npc27_home_description_2|Minas Morgul, gdzie Nazgule piją cały dzień, har-har!
@@ -2425,7 +2425,7 @@ str_npc27_honorific|Mistrz
 ; str_rohan_edoras_guildmaster_companion|Indeed, there may be. Dark indeed must the days become before our women ride out to war alongside the menfolk - yet our fearless and high-hearted Lady Eowyn, whom all love, rides and fights as well as any Marshal. Some shieldmaidens have trained with her from childhood, and several may be found around the Golden Hall. Hardy indeed are our women! Seek one called Galmyne - she is skilled in many arts of war, and goes about like a mare chafing at an ill-fitting bridle, for she has not been given leave to ride out with the men.
 ; str_lorien_guildmaster_companion_player_ask|Elder, I seek aid. The least among the Elves of Lorien fight like heroes of old; will any here join my cause?
 ; str_lorien_guildmaster_companion_none|Evil has been seen and heard even here, among the mallorn-trees; sorrow has been known. In happier days we plucked the strings of harps; in these days we have indeed become skilled at the plucking of bowstrings. I cannot speak of heroes among us, but you should speak to the commander of our garrison here. Perhaps some few of our people may consent to join you for a time.
-; str_lorien_guildmaster_companion_player_none_ok|I had hoped for fairer words in this fair land of yours. But it shall be as you say, Elder.
+str_lorien_guildmaster_companion_player_none_ok|Oczekiwałem usłyszeć innych słów w twoich progach, ale będzie tak jak mówisz, mistrzu.
 ; str_lorien_guildmaster_player_found_ok|I thank you for your counsel, Elder. Tiro ven Elbereth!
 ; str_lorien_ca_guildmaster_companion|Nan Belain, here is a wonder indeed! At any other time I might have had naught but disappointment for you, but now in the company of the Lord and Lady of the Wood stands none other than the Lord Glorfindel, hero of more battles than even I can remember. I know little of such a great champion’s purpose here - he arrived with the host of Elrond, Lord of Imladris, and his own counsel he keeps, speaking only with Lord Celeborn and Lady Galadriel. Seek him out, Commander. Perhaps his cause may be joined to yours.
 ; str_beorn_guildmaster_companion_player_ask|Your advice, good fellow - are there any warriors of remarkable prowess here?

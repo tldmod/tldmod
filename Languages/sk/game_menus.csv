@@ -3,7 +3,7 @@ mno_start_good|ÚSVIT Nového Veku
 mno_start_evil|SÚMRAK Ľudskej Rasy
 mno_faction_intros|Poučte sa o rôznych frakciách Stredozeme
 mno_go_bback|Späť
-menu_start_phase_2|^^^^^ Stredozem. Temnota na Východe narastá, ^ prichádzajú odtiaľ dlho schované temné bytosti. ^ Slobodné národy sa pripravujú na vojnu. Vojnu, ktorú nezažili už celý vek. ^ Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju úlohu. ^^ Akú, to sa ešte ukáže...
+menu_start_phase_2|^^^^^              Stredozem. Temnota na Východe narastá, ^             prichádzajú odtiaľ dlho schované temné bytosti. ^             Slobodné národy sa pripravujú na vojnu. Vojnu, ktorú nezažili už celý vek. ^                   Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju úlohu. ^^             Akú, to sa ešte ukáže...
 mno_go_forth|Vydaj sa na svoju zvolenú cestu...
 mno_change_tld_options|Zmeniť nastavenia TLD.
 menu_start_game_3|^^^^^^^^Zvoľ si scénar
@@ -19,7 +19,7 @@ mno_custom_battle_scenario_88|Lapanie Ohyzdej skupiny prieskumníkov
 mno_custom_battle_scenario_11|Testovacie bitky (pre vyvážené nastavenie štátu!)
 mno_custom_battle_scenario_10|Testovacia bitka scény
 mno_troll_battle_scenario|Bitka pre testovanie zlobrov
-mno_warg_battle_scenario|Bitka pre testovanie vrrkov
+mno_warg_battle_scenario|Bitka pre testovanie vrokov
 mno_build_your_own_scene|** Vybuduj svoju vlastnú scénu pre TLD **
 mno_go_back|Späť
 menu_tutorial|^^ Vitaj v Návode Boja pre Mount & Blade. Naučíš sa tu základy boja a dostaneš tiež stručný prehľad o rozkazoch, ktoré môžeš dávať svojím jednotkám na bojovom poli.
@@ -27,7 +27,7 @@ mno_tutorial_1|Cvičenie #1: Základný pohyb a výber zbrane. {s1}
 mno_tutorial_2|Cvičenie #2: Boj zo štítom. {s2}
 mno_tutorial_3|Cvičenie #3: Boj bez štítu. {s3}
 mno_tutorial_3b_door|Ďalšia úroveň
-mno_tutorial_4|Cvičenie #4: Jazdenie na koni alebo na vrrkovi. {s4}
+mno_tutorial_4|Cvičenie #4: Jazdenie na koni alebo na vrokovi. {s4}
 mno_tutorial_5|Cvičenie #5: Rozkazovanie skupine vojakov. {s5}
 mno_go_back_dot|Späť
 mno_action_view_troop_trees|Prezrieť si strom jednotiek
@@ -57,7 +57,7 @@ mno_start_eye|Sauronovi z Mordoru, Pánovi Prsteňov
 mno_start_hand|Sarumanovi z Isengardu, Bielej Ruke
 menu_start_eye|^^^^^^^^^^Tvoj pán je Oko bez viečka^Zvoľ si Rasu
 mno_start_or|OHYZD, slúžiaci Oku bez viečka
-mno_start_ur|URUK, nový druh Ohyzdov
+mno_start_ur|URUK, nové plemeno Ohyzdov
 mno_start_em|ČLOVEK, zotročený Sauronom
 menu_start_hand|^^^^^^^^^Tvoj pán je Biela Ruka^Zvol si Rasu
 mno_start_whor|OHYZD, slúžiaci Bielej Ruke
@@ -71,7 +71,7 @@ mno_start_be|GRIZLOVCI, Medvedí ľud
 mno_start_da|Severské Kráľovstvo DOLU
 menu_start_good_elf|^^^^^^^^^^v ktorom Lese žiješ, Starší?
 mno_start_ri|ROKLINKA, panstvo Lorda Elronda
-mno_start_lo|LOTHLORIEN, ríša Lady Galadriel
+mno_start_lo|LOTHLORIEN, ríša Pani Galadriel
 mno_start_mi|TEMNOHVOZD, ríša Lesných elfov
 menu_start_good_dwarf|^^^^^^^^^^Zvol si svoj pôvod:
 mno_start_er|obyvateľ EREBORU
@@ -79,7 +79,7 @@ mno_start_ih|baník zo ŽELEZNÝCH HÔR
 menu_start_gondor|^^^^^^^^^^Z ktorej časti Gondoru pochádzaš?
 mno_start_mt|MINAS TIRITH, hlavné mesto
 mno_start_ls|LOSSARNACH, kniežactvo sekerníkov
-mno_start_la|LAMEDOM, kniežactvo horských klanov
+mno_start_la|LAMEDOM, kniežactvo horských kmeňov
 mno_start_pg|PINNATH GELIN, kniežactvo Zelených Vrchov
 mno_start_do|DOL AMROTH, kniežactvo Labutích Rytierov
 mno_start_pe|PELARGIR, pobrežné kniežactvo
@@ -98,7 +98,7 @@ mno_start_arm|v armádach shromáždených v MORDORE
 mno_start_cav|v jaskyniach DOL GULDURU
 menu_start_hand_orc|^^^^^^^^^^Kde sa potĺkaš?
 mno_start_armis|v armádach shromáždených v ISENGARDE
-mno_start_minmo|v temných doloch MÓRIE
+mno_start_minmo|v temných Baniach MÓRIE
 mno_start_cliff|po skalách štítu hory GUNDABAD
 menu_start_gondor_mt|^^^^^^^^^^Zvol si svoj pôvod
 mno_start_1_com|Obyčajný človek
@@ -278,7 +278,7 @@ mno_siege_defender_join_battle|Zúčastniť sa boja.
 mno_siege_defender_troops_join_battle|Prikázať tvojej družine aby sa zúčastnila boja bez teba.
 menu_siege_join_defense|{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Silný úder ťa zrazí k zemi, zatočí sa ti hlava a zatmie pre očami. Čas ubieha. Keď sa konečne prebudíš, si celý krvavý a otlčený, ale našťastie nie je žiadne z tvojich zranení smrteľné.
-menu_town_bandits_succeeded|^^^^^Presekávaš sa goblinmi ako kosa pšenicou! Onedlho si jediný, kto stojí, zatiaľ čo tvoji protivníci ležia na zemi v bezvedomí, mŕtvy či umierajúci. Miestne obyvateľstvo by sa určite rado dozvedelo, že si ich zbavil tejto hrozby. 
+menu_town_bandits_succeeded|^^^^^Presekávaš sa škratmi ako kosa pšeničným poľom! Onedlho si jediný, kto stojí, zatiaľ čo tvoji protivníci ležia na zemi v bezvedomí, mŕtvy či umierajúci. Miestne obyvateľstvo by sa určite rado dozvedelo, že si ich zbavil tejto hrozby. 
 menu_town_brawl_lost|^^^^^^Úder ťa uvrhol do bezvedomia. Ľudia, s ktorými si bojoval, u teba rýchlo hľadajú cennosti, než sa budú venovať ich každodenným záležitostiam.
 menu_town_brawl_won|^^^^^Porazil si všetkých protivníkov a stráže poslané aby potlačili rozruch. Rýchlo ich oberieš o cennosti a zmizneš, dokiaľ sa rozruch neukľudní.^Možnože ti nabudúce preukážu väčší rešpekt a radšej ťa nechajú na pokoji.
 menu_close|Nič.
@@ -289,7 +289,7 @@ mno_town_approach|Prísť bližšie k {s1}...
 mno_town_castle|Ísť do {s1}.
 mno_town_castle_door|Brána do hradu.
 mno_town_center|Ísť na hlavné námestie...
-mno_town_center_door|Dvere do centra mesta.
+mno_town_center_door|Brána na námesie..
 mno_aw_chamber_door|Otvoriť dvere.
 mno_trade_with_arms_merchant|Navštíviť {s40}.
 mno_trade_with_horse_merchant|Navštíviť {s41}.
@@ -322,7 +322,7 @@ menu_sneak_into_town_caught_dispersed_guards|Zbavíš sa stráží a zamaskuješ
 menu_sneak_into_town_caught_ran_away|Unikáš bránami a rýchlo sa vraciaš do bezpečia mimo mesto.
 menu_tld_player_defeated|^^^^^Odrazu ťa mučí nesmierna bolesť na temene hlavy! \\ Trasieš sa, zatiaľ čo svet okolo teba černie a stráca sa...^Je toto tvoj koniec?
 menu_recover_after_death_fangorn|Prebudíš sa. Okolo teba je stále les. Každá kosť bolí. Ale si nejakým zázrakom nažive.^^Bola to porážka, ale aspoň si bol schopný vidieť čo sa stalo. ^Teraz už vieš čo sa deje v tomto prekliatom lese,^a ty si prežil a môžeš to všetkým prezradiť. ^^Ale bude ti vôbec niekto veriť?
-menu_recover_after_death_moria|^^^^^Nadobúdaš vedomie. Ležíš na mäkkej zemi, svieži vzduch ti jemne fúka to tváre. Si vonku!^Ohyzdi ťa museli považovať za mrtvého, a tak ťa hodili do nejakej tmavej diery.^ Na povrch ťa zrejme vyniesol prúd podzemnej vody.
+menu_recover_after_death_moria|^^^^^Nadobúdaš vedomie. Ležíš na mäkkej zemi, svieži vzduch ti jemne veje do tváre vlasy. Si vonku!^Ohyzdi ťa museli považovať za mŕtveho, a tak ťa hodili do nejakej tmavej diery.^ Na povrch ťa zrejme vyniesol prúd podzemnej vody.
 mno_whatever|Vstávaj!
 menu_recover_after_death_default|^^^^^Nadobudneš vedomie. Ležíš na mieste, na ktoré si spadol. Nepriatelia ťa museli považovať za mŕtveho a nechať ťa tu. Zdá sa, že tvoje zranenia neboli smrteľné, a aj keď sa cítiš strašne, stále si schopný chodiť. Zdvihneš sa a skúsiš sa porozhliadnuť po ostatných preživších z tvojej družiny.
 menu_recover_after_death_town|^^^^Nadobudneš vedomie a ocitáš sa na mestskom predmestí. Si nažive! Nikdo nie je nablízku a tak využívaš šance dostať sa z mesta von. Zdá sa, že žiadne z tvojich zranení nebolo smrteľné, a aj keď sa cítiš hrozne, stále si schopný chodiť.
@@ -344,7 +344,7 @@ menu_gondor_beacons|Pozrieš sa hore na {s1}, jeden z výstražných majákov Go
 mno_gondor_beacons_close|Odísť...
 menu_player_added_to_war_council|^^^^^Posol, ktorý dorazil, ti oznámil, že ťa ako {s24} {s2} požiadal, aby si sa stal súčasťou jeho Vojenskej Rady. Od teraz môžeš navrhovať stratégie a taktiky, ktoré môžu ovplyvniť priebeh vojny.
 mno_player_added_to_war_council_close|Zavrieť
-menu_player_added_to_siege_reports|Prišiel posol a povedal vám, že teraz, ako {s24}, budete dostávať správy vždy, keď {s2} obliehajú centrá alebo keď sú strediská {s2} obťažované.
+menu_player_added_to_siege_reports|^^^^^Dorazil k tebe posol a oznámil ti, že ako {s24} budeš dostávať správy vždy, keď {s2} bude obliehať nejaké mesto alebo ak bude nejaké mesto {s2}u obliehané.
 mno_player_added_to_siege_reports_close|Zavrieť
 menu_player_added_to_allow_follow|^^^^^Dorazil posol a povedal ti, že teraz, ako {s24}, budeš môcť rozkázať {s2}, aby ťa nasledovali, maximálne {reg55} nasledovníkom.
 mno_player_added_to_allow_follow_close|Zavrieť
@@ -360,7 +360,7 @@ mno_go_your_way|Nechať to tak.
 mno_defend_villagers|Brániť dedinčanov!
 mno_raid_villagers|Vyrabovať dedinu!
 mno_go_away|Nateraz sa stiahnuť a preskupiť.
-menu_scout_camp_quest|Vidíte prieskumný tábor v okolí. Pripravujete svojich mužov, aby ich napadli
+menu_scout_camp_quest|Neďaleko zahliadneš prieskumnický tábor. Dáš povel mužom, aby sa pripravili k útoku.
 mno_attack_scout_camp|Zaútočiť na prieskumnícky tábor!
 menu_sea_battle_quest|Narazil si na nepriateľskú flotilu. Lode sa priblížia a námorníci zhodia dosky...
 mno_sb_defend_the_town|Na palubu! Zničte ich flotilu!
@@ -369,7 +369,7 @@ menu_camp_field_ai|^^^^^Klikni na voľbu, aby si ju prepol.^^^Vypnutie volieb zl
 mno_lord_field_ai|Vládcovia majú zlepšené bojiskové AI: {s7}
 mno_horse_archer_field_ai|Lukostrelci na koňoch majú zlepšené bojiskové AI: {s7}
 mno_vs_orcs_field_ai|Lukostrelci mieria lepšie proti ohyzdom (nemieria im nad hlavy): {s7}
-mno_battlefield_animals|Živočíšni spoločníci, ktorí nie sú zločinci / zvieratá z koní, sa rozmnožia v bitke: {s7}
+mno_battlefield_animals|Zvierací spoločníci, ktorí nie sú vroci / Konskí spoločníci sa objavujú v boji: {s7}
 mno_slow_when_wounded|Agenti sa stanú Pomalými ak sú Zranení: {s7}
 mno_battle_encounter_effects|Výnimočný účinok frakcie na bojové pole (napr. búrky, hmla): {s7}
 menu_hungry_orc|nič
@@ -378,7 +378,7 @@ mno_defend_refugees|Pozor na nájazdníkov...
 mno_attack_refugees|Zaútočiť na utečencov...
 mno_leave_refugees|Na teraz ich nechať na pokoji...
 mno_evil_war_tut_continue|Pokračuj
-menu_guardian_party_quest|{s8} posiela správu, že je Isengard na podpätku a pripravil svoj posledný stánok. Chce, aby ste sa pripojili k poslednej bitke proti Isengardovým armádám. Musíte priviesť najmenej {reg13} vojakov do armády a dostať pokyny na zvýšenie počtu bojovníkov so všetkou námahou, ak nemáte dostatok.
+menu_guardian_party_quest|{s8} ti posiela správu, že celý Isengard je na nohách a dokončil prípravy pre svoj posledný odpor. Želá si, aby s i sa k nemu pripojil v tejto poslednej bitke proti vojskám Isengardu. Musíš so sebou priviesť najmenej {ref13} vojakov a ak toľkých so sebou práve nemáš, nalieha na teba, aby si si ich čo najrýchlejšie zohnal a pripojil sa k nemu.
 mno_guardian_party_reject|Poslať správu, že sa k nemu nemôžeš pripojiť.
 mno_guardian_party_send_word|Poslať odkaz, že sa k nemu čo najskôr pripojíš.
 menu_alternate_training_fight|Budeš bojovať proti {reg5} protivníkom. Si pripravený? 

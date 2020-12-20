@@ -1,7 +1,7 @@
 skl_trade|議價
-skl_trade_desc|這個技能可以讓你使用更少的資源點獲得更多的物品。 (隊伍技能) 
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|統御
-skl_leadership_desc|每點增加部隊命令上限5人，提高部隊士氣，減少部隊工資5%%。 (領袖技能) 
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|俘虜管理
 skl_prisoner_management_desc|每點增加俘虜上限%d。 (領袖技能) 
 skl_persuasion|綠野仙蹤

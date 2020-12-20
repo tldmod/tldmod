@@ -148,5 +148,7 @@ ui_str_hear_me|%s, aux ordres !
 ui_return|Retour
 ui_factions|Factions
 ui_troop_upgrades|Promotion des troupes
-ui_hdr_mode|Mode HDR (recommandé Désactivé ou Bas):
+ui_hdr_mode|Mode HDR :
 ui_autoexpore|Auto-exposition (recommandé si HDR est activé)
+ui_saving_policy_realistic|Sauvegarde obligatoire en quittant (non recommandé) !
+ui_saving_policy_nonrealistic|Pouvoir quitter sans sauver (recommandé, conserve plusieurs sauvegardes).

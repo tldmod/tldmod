@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|{playername}，你 只 是 一 名{s25}，所 以
 dlga_marshall_ask:lord_pretalk.1|你 是 一 個 值 得 讚 賞 的 指 揮 官，{playername}，但 是 你 的 影 響 力 正 在 越 來 越 小。說 實 話 聽 取 你 的 意 見 可 能 不 是 一 個 好 主 意。 ^[需 要 {reg15} 點 影 響 力，目 前 擁 有{reg14} 點]
 dlga_marshall_ask:lord_pretalk.2|我 們 現 在 很 難 正 面 對 抗 我 們 的 敵 人，{playername}。我 們 需 要 加 強 我 們 的 部 隊。我 們 僅 是 {s23}。
 dlga_marshall_ask:marshall_suggest|我 在 聽，{playername}。你 有 什 麼 建 議？
+dlga_marshall_suggest:lord_give_order_assault|只 要 你 我 同 心 協 力 ， 我 們 將 可 以 拿 下 {s11}. 你 應 該 馬 上 攻 擊 ..... [Costs {reg1}/{reg2} influence]
 dlga_marshall_suggest:marshall_answer|現 在 是 圍 攻 {s1} 的 最 佳 時 機。
 dlga_marshall_suggest:lord_pretalk|算 了，我 相 信 你 的 判 斷。
 dlga_player_siege_discuss:player_siege_discuss_1|我 在 聽，大 人。
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|我 這 裡 有 一 個 朋 友，一
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|你 需 要 多 少 人？
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|如 果 你 能 訓 練 {reg1} 位 {s14} 並 帶 給 我 的 話，那 大 概 就 夠 了。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|沒 問 題，{s65}。給 我 {reg1} 名 新 兵 ，我 會 把 他 們 訓 練 成 {s14} 的。
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|{s65}，我 建 議 另 一 種 方 法。 我 會 把 {reg1} 新 兵 帶 到 競 技 場 並 教 他 們 一 兩 件 事...
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|{s65}，我 建 議 另 一 種 方 法。 我 會 把 {reg1} 新 兵 帶 到 競 技 場 並 教 他 們 一 兩 件 事。他 們 不 會 馬 上 成 為 {s14}，但 這 是 向 其 邁 出 的 一 步。
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|我 這 幾 天 很 忙，沒 時 間 訓 練 士 兵。
 dlga_lord_mission_raise_troops_accepted:close_window|你 真 是 幫 了 我 卸 下 了 一 個 重 擔，{playername}。我 已 經 跟 手 下 的 中 士 講 好 了，他 會 帶 一 些 新 兵 給 你 指 揮 的。我 會 分 擔 一 部 分 的 軍 費。嗯，這 些 應 該 足 夠 了。再 次 感 謝 你 的 協 助。
-dlga_lord_mission_raise_troops_alternate:close_window|真 是 一 個 有 趣 的 提 案，{playername}。 我 會 告 訴 我 的 中 士 將 新 兵 送 到 競 技 場。 在 那 裡 把 他 們 打 成 士 兵 該 有 的 樣 子。 我 會 看 著 的。 感 謝 你 的 協 助。
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|哦，也 是 阿。我 原 本 還 很 期 待 的。好 吧，祝 你 好 運。
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|我 有 件 事 你 可 以 幫 忙，關 於 一 個 被 稱 為 {s4} 無 法 無 天 的 惡 棍。 他 謀 殺 了 我 的 一 名 保 鏢，並 從 那 時 起 就 一 直 在 逃 亡。 最 近 有 消 息 稱 這 個 逃 犯 在 {s3} 被 人 目 擊。 你 或 許 能 夠 追 捕 他 並 迅 速 伸 張 正 義，我 會 回 報 你 的。
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|我 馬 上 就 去 追 捕 他 並 以 法 之 名 處 決 他 的。

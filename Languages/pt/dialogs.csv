@@ -401,6 +401,7 @@ dlga_marshall_ask:lord_pretalk|Eu dificilmente seguir o conselho se você é mer
 dlga_marshall_ask:lord_pretalk.1|Você é um comandante realizado, {playername}, mas sua influência está diminuindo. Não seria prudente para ouvir seus conselhos.^[{reg15} influência necessária , única {reg14}realizada]
 dlga_marshall_ask:lord_pretalk.2|Dificilmente podemos dar ao luxo de enfrentar o inimigo na força bruta  {playername}. precisamos construir nossas forças e tornar-se forte , infelizmente somos apenas {s23}.
 dlga_marshall_ask:marshall_suggest|Eu estou ouvindo, {playername}. O que você sugere?
+; dlga_marshall_suggest:lord_give_order_assault|Together, you and I can take {s11}. You should assault immediately... [Costs {reg1}/{reg2} influence]
 dlga_marshall_suggest:marshall_answer|Devemos andar para sitiar {s1} ao mesmo tempo.
 dlga_marshall_suggest:lord_pretalk|Nunca mente, eu confio em seu julgamento .
 ; dlga_player_siege_discuss:player_siege_discuss_1|I am listening, my Lord.
@@ -566,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|Eu tenho um amigo aqui , um velho gue
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Quantos homens você precisa?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Se você puder levantar {reg1} {s14} e trazê-los para mim, que provavelmente será suficiente.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Claro, {s65}. Dá-me {reg1} novos recrutas e eu vou treiná-los para ser {s14}.
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the arena teach them a thing or two...
-; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the arena teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Estou muito ocupado estes dias para treinar alguém.
 dlga_lord_mission_raise_troops_accepted:close_window|Você tirou um peso dos meus ombros, {playername}. Vou dizer aos meus sargentos para enviar-lhe os recrutas e anexá-las ao seu comando . Além disso, eu vou avançar -lhe algum dinheiro para ajudar nas despesas . Aqui , esta bolsa deve fazê-lo . Obrigado pela ajuda.
-; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the arena. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh , é claro. Eu esperava tanto. Bem, boa sorte para você, então 
 ; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There has been news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Então eu vou caçá-lo e executar a lei.
