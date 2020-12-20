@@ -10403,7 +10403,7 @@ scripts = [
       (quest_get_slot, ":quest_rank_reward", ":quest_no", slot_quest_rank_reward),
 	  (quest_get_slot, ":quest_giver_fac_str_effect", ":quest_no", slot_quest_giver_fac_str_effect),
 	  (quest_get_slot, ":quest_target_fac_str_effect", ":quest_no", slot_quest_target_fac_str_effect),
-      
+	  
       #Exceptions
       (try_begin),
         (eq, ":quest_no", "qst_deliver_message"),
@@ -10463,7 +10463,6 @@ scripts = [
 	(try_begin),
 		(ge, ":quest_giver_fac_str_effect", 1),
 		(faction_get_slot,":giver_strength",":quest_faction",slot_faction_strength_tmp),
-		#(assign, reg78, ":quest_giver_fac_str_effect"),
 		(val_add, ":giver_strength", ":quest_giver_fac_str_effect"),
 		(faction_set_slot,":quest_faction",slot_faction_strength_tmp,":giver_strength"),
 		(str_store_faction_name, s1, ":quest_faction"),
@@ -10475,7 +10474,7 @@ scripts = [
 		(lt, ":quest_target_fac_str_effect", 0), #negative strength effect if enemy faction is target
 		(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
 		(val_add, ":enemy_strength", ":quest_target_fac_str_effect"),
-	    (faction_set_slot,":quest_faction",slot_faction_strength_tmp,":enemy_strength"),
+	    (faction_set_slot,":quest_target_faction",slot_faction_strength_tmp,":enemy_strength"),
 		(str_store_faction_name, s1, ":quest_target_faction"),
 		(display_message, "@{s1} lost faction strength!", color_good_news),
 	(else_try), #if target faction is an ally (e.g. escort caravan quest)
@@ -10483,7 +10482,7 @@ scripts = [
 		(gt, ":quest_target_fac_str_effect", 0), #positive strength effect for allied targets (eg caravan quests)
 		(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
 		(val_add, ":enemy_strength", ":quest_target_fac_str_effect"),
-	    (faction_set_slot,":quest_faction",slot_faction_strength_tmp,":enemy_strength"),
+	    (faction_set_slot,":quest_target_faction",slot_faction_strength_tmp,":enemy_strength"),
 		(str_store_faction_name, s1, ":quest_target_faction"),
 		(display_message, "@{s1} gained faction strength!", color_good_news),
 	(try_end),
