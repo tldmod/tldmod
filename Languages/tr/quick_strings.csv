@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|Bir ORK,^ Kapaksız Gözün Kölesi
 qstr_an_URUK^_the_new_bre|Bir URUK,^ yeni nesil ork
 qstr_a_MAN^_subjugated_by|Bir İNSAN,^ Sauron'a yenilmiş
 qstr_an_ORC^_serving_the_W|Bir ORK,^ Ak El'in Kölesi
-; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
+qstr_one_of_the_URUK_HAI^|Bir URUK-HAI,^ Isengard'da türetilmiş
 qstr_a_MAN_of_Dunland^_th|Bir Dunland İNSANI,^ Batı düzlüklerinden
 qstr_Click_the_center_but|Grup degiştirmek için ortadaki dügmeyi tıklayın^ayrıntılarını görüntülemek için avatarları tıklayın
 qstr_Level:_{reg3}^Health|Seviye: {reg3}^Saglık: {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|Uygunsuz binek
 qstr_{s24}:_Your_infantry|{s24}: Piyaden daha iyi hissediyor!
 qstr_{s24}:_Your_archers_|{s24}: Okçuların daha iyi hissediyor!
 qstr_{s24}:_Your_cavalry_|{s24}: Süvarilerin daha iyi hissediyor!
-; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
+qstr_Ah_what_a_coincidenc|Ah, seninle karşılaşmak, ne tesadüf, {playername}! Beni tanımayabilirsin ama bana yabancı degilsin. {s4} taraflarına gidiyorum, lakin ben {s3} civarından yeni geldim ve orada adın geçti. {s3} bu tehlikeli zamanlarda size güveniyor ve eger dikkatinizi dagıtan bir hareket tarzı izlemeyi düşündüyseniz, üstün yeteneklerinizle {s2} tarafına yardıma odaklanmayı bir gözden geçiriniz.
 qstr_Who_are_you?|Sen kimsin?
 qstr_A_friend_of_{s3}_and|{s3} dostu ve {s2} halkı. Şimdi acele edin! Mordor tüm kötülüklerini ortaya çıkarıyor ve onları karanlıgın altında tek bir hedef için topluyor. Bu dünyada iyi olan her şey için zaman azalıyor! buna karşı durmak için yapabilecegimiz her şeyi yapmalıyız!
 qstr_What_should_I_do?|Ne yapmalıyım?
-; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
+qstr_Find_{s3}_s_whereabo|Hemen {s3} adlı kişinin nerede oldugunu bulun ve {reg3?onla:onla} konuşun. İyi şanslar!
 qstr_Good_to_see_the_Shad|Karanlıgın henüz sizi yenmeyi başaramadıgını görmek güzel, {playername}.
 qstr_You_are_the_one_they|Sen Gandalf ya da Mithrandir olmalısın.
 qstr_That_is_what_some_ca|Bazıları bana böyle seslenir.Başka zamanlarda başka şekilde çagrıldıgım da oldu.Fakat eger karanlık durmazsa bana her hangi bir şekilde seslenecek kimse kalmayacak.
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} Seni takip etmeyi bıraktı.
 qstr_You_have_{reg69}_all|Seni takip eden bir {reg69} müttefik partin var
 qstr_You_have_{reg69}_ally|Seni takip eden bir {reg69} müttefik partin var
 qstr_The_forces_of_{s2}_h|{S2} Kuvvetleri toparlandı ve {s15}  tarafına yürüyorlar!
-; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
+qstr_Your_scouts_report_s|Gözcüleriniz yakınlarda bir {s2} belirtisi bildirdi.
 qstr_{s1}_from_{s2}|{s2}'den {s1}
 qstr_When_dealing_with_lo|{s11}'in yerlileriyle konuşurken unutma ki onlar seni tanımıyorlar ve senin {s10}'da kazandıklarını bilmiyorlar.^^({s11} bölgesinden olan kişilere dagıtabilecegin beceri puanları {s10} bölgesinde kazandıklarınla aynı degil. {s11} bölgesinden kazandıklarını sadece bu bölgeden olan kişilere dagıtabilirsin, -- bilgi için ayrıca için rapor ekranına göz atabilirsin.)
 qstr_Info|Bilgi.
@@ -1091,7 +1091,7 @@ qstr_{s27}:_Party_morale_|{s27}: Grup morali arttı.
 qstr_{s27}:_Party_morale_d|{s27}: Grup morali düştü.
 qstr_You_have_failed_to_f|Balin ve onun grubunun intikamını almak için ettigin yemini yerine getimedin!
 qstr_You_have_failed_to_fu|{s1} 'in kahramanca ölümü için intikam yemininizi yerine getirmeyi başaramadınız!
-; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
+qstr_Your_troops_value_yo|Birlikleriniz yemininizi yerine getirme çabanıza deger veriyor, ancak olayların çok hızlı geliştiginin farkındalar. Sonuç olarak,
 qstr_{s22}You_have_fulfil|{s22} Balin ve onun grubunun intikamını almak için ettigin yemini yerine getirdin!
 qstr_{s22}You_have_fulfill|{s22} {s1}'in kahramanca ölümü için ettigin intikam yeminini yetine getirdin!
 qstr_Reinforcements|Destek Birlikler
