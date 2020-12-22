@@ -1,4 +1,4 @@
-1621
+1623
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -135,11 +135,12 @@ qstr_+1_to_Riding_Skill +1_to_Riding_Skill
 qstr_during_battles during_battles
 qstr_+1_to_Pathfinding +1_to_Pathfinding
 qstr_+1_to_Athletics +1_to_Athletics
+qstr_+1_to_Wound_Treatmen +1_to_Wound_Treatment
+qstr_Use_from_Camp_Menu Use_from_Camp_Menu
 qstr_Use_from Use_from
 qstr_Action_Menu Action_Menu
 qstr_+1_to_First_Aid +1_to_First_Aid
 qstr_+1_to_Weapon_Mastery +1_to_Weapon_Mastery
-qstr_+1_to_Wound_Treatmen +1_to_Wound_Treatment
 qstr_+1_to_Tactics +1_to_Tactics
 qstr_+1_to_Power_Strike +1_to_Power_Strike
 qstr_+1_to_Strength +1_to_Strength
@@ -364,7 +365,6 @@ qstr_{reg9} {reg9}
 qstr_{reg10} {reg10}
 qstr_{reg11} {reg11}
 qstr_{reg12} {reg12}
-qstr_Orc_brew_finished! Orc_brew_finished!
 qstr_Given_by:_{s62} Given_by:_{s62}
 qstr_Given_on:_{s60} Given_on:_{s60}
 qstr_You_have_{reg0}_days You_have_{reg0}_days_to_finish_this_quest.
@@ -902,6 +902,7 @@ qstr_Doubled Doubled
 qstr_Tripled Tripled
 qstr_Quadrupled Quadrupled
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
+qstr_You_used_the_Orc_Bre You_used_the_Orc_Brew.
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_^^^A_great_victory!^ ^^^A_great_victory!^^^So_this_is_what_all_the_myths_about_Fangorn_meant...
 qstr_^^^Defeated...^^^Sca ^^^Defeated...^^^Scattered_in_the_Fangorn_Forest..._Alone...
@@ -1056,6 +1057,7 @@ qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
 qstr_You_are_entering_{s1} You_are_entering_{s1}.
 qstr_The_war_expands_comm The_war_expands,_commanders_are_getting_bolder!_(siege_requirements_reduced)
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
+qstr_The_effects_of_the_O The_effects_of_the_Orc_Brew_have_dissipated.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_DEBUG:_Player_Contro DEBUG:_Player_Control_Allies_RESET
 qstr_You_pay_for_accommod You_pay_for_accommodation.

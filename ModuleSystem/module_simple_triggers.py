@@ -10,8 +10,6 @@ from header_terrain_types import *
 from module_constants import *
 from module_info import wb_compile_switch as is_a_wb_trigger
 
-from module_items import item_is_active_check_cooldown
-
 ####################################################################################################################
 # Simple triggers are the alternative to old style triggers. They do not preserve state, and thus simpler to maintain.
 #
@@ -1140,21 +1138,15 @@ simple_triggers = [
   ]),
   
   # (34) Check active items for their deactivation hour
-  (item_is_active_check_cooldown,
-   [(store_troop_faction, ":faction", "trp_player"),
-
-    (try_begin),
-        (neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
-
-        (try_begin),
-            (call_script, "script_cf_troop_has_active_item", "trp_player", "itm_orc_brew"),
-            (store_current_hours, ":now_hours"),
-            (item_slot_ge, "itm_orc_brew", ":now_hours", slot_item_deactivation_hour),
-            (item_set_slot, "itm_orc_brew", slot_item_is_active, 0),
-            (troop_remove_item, "trp_player", "itm_orc_brew"),
-
-            (display_message, "@The effects of the Orc Brew have dissipated"),
-        (try_end),
+  (5,
+  [(try_begin),
+		(call_script, "script_cf_troop_has_active_item", "trp_player", "itm_orc_brew"),
+		(store_current_hours, ":now_hours"),
+		(item_get_slot, ":expiration_hours", "itm_orc_brew", slot_item_deactivation_hour),
+		(le, ":expiration_hours", ":now_hours"),
+		(item_set_slot, "itm_orc_brew", slot_item_is_active, 0),
+		(troop_remove_item, "trp_player", "itm_orc_brew"),
+		(display_message, "@The effects of the Orc Brew have dissipated."),
     (try_end),
   ]),
   
