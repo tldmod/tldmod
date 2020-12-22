@@ -3713,6 +3713,15 @@ scripts = [
       (else_try),
 		(eq,":item_no","itm_orc_brew"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Athletics"),(set_trigger_result, color_item_text_bonus),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),
+            (try_begin),
+                (item_slot_eq, ":item_no", slot_item_is_active, 1),
+                (set_result_string, "@When active"),
+            (else_try),
+                (set_result_string, "@Active"),
+            (try_end),
+            (set_trigger_result, color_item_text_bonus),
+        (try_end),
       (else_try),
 		(eq,":item_no","itm_ent_water"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Use from"),(try_end),
@@ -4039,7 +4048,7 @@ scripts = [
             (else_try),
                 (eq, ":skill_no", "skl_athletics"), # Athletics
                 (try_begin),
-                    (player_has_item, "itm_orc_brew"),
+                    (call_script, "script_cf_troop_has_active_item", ":troop_no", "itm_orc_brew"),
                     (val_add, ":modifier_value", 1),
                 (try_end),
             (else_try),
@@ -15049,26 +15058,6 @@ scripts = [
     (try_end),
 ]),
 
-# script_consume_orc_brew-- mtarini
-# Input: arg1: how much
-# Output: none
-("consume_orc_brew",
-   [(store_script_param, ":howmuch", 1),
-    (troop_get_inventory_capacity, ":capacity", "trp_player"),
-    (try_for_range, ":cur_slot", 0, ":capacity"),
-      (troop_get_inventory_slot, ":cur_item", "trp_player", ":cur_slot"),
-      (eq, ":cur_item", "itm_orc_brew"),
-	  (assign, ":capacity", 0), # stop loops
-      (troop_inventory_slot_get_item_amount, ":cur_amount", "trp_player", ":cur_slot"),
-      (val_sub, ":cur_amount", ":howmuch"),
-	  (try_begin), 
-	     (le, ":cur_amount", 0),
-		 (display_message, "@Orc brew finished!"),
-	  (try_end), 
-      (troop_inventory_slot_set_item_amount, "trp_player", ":cur_slot", ":cur_amount"),
-    (try_end),
-]),
-
 # script_calculate_troop_score_for_center #InVain: Not used in TLD
 # Input: arg1 = troop_no, arg2 = center_no
 # Output: reg0 = score
@@ -16627,6 +16616,37 @@ scripts = [
        (val_add, ":count", 1),
      (try_end),
      (assign, reg0, ":count"),
+]),
+
+# script_cf_troop_has_item
+# INPUT: arg1 = troop_no, arg2 = item_no
+("cf_troop_has_item",
+    [(store_script_param, ":troop_no", 1),
+     (store_script_param, ":item_no", 2),
+     (troop_get_inventory_capacity, ":inv_cap", ":troop_no"),
+
+     (try_for_range, ":i_slot", 0, ":inv_cap"),
+       (troop_get_inventory_slot, ":cur_item", ":troop_no", ":i_slot"),
+       (eq, ":cur_item", ":item_no"),
+       (assign, ":inv_cap", 0),
+     (try_end),
+     (eq, ":inv_cap", 0),
+]),
+
+# script_cf_troop_has_active_item
+# INPUT: arg1 = troop_no, arg2 = item_no
+("cf_troop_has_active_item",
+    [(store_script_param, ":troop_no", 1),
+     (store_script_param, ":item_no", 2),
+     (troop_get_inventory_capacity, ":inv_cap", ":troop_no"),
+
+     (try_for_range, ":i_slot", 0, ":inv_cap"),
+       (troop_get_inventory_slot, ":cur_item", ":troop_no", ":i_slot"),
+       (eq, ":cur_item", ":item_no"),
+       (item_slot_eq, ":cur_item", slot_item_is_active, 1),
+       (assign, ":inv_cap", 0),
+     (try_end),
+     (eq, ":inv_cap", 0),
 ]),
 
 #script_apply_attribute_bonuses

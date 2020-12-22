@@ -12,6 +12,8 @@ from module_constants import *
 from module_info import wb_compile_switch as is_a_wb_cutscene
 from module_info import wb_compile_switch as is_a_wb_menu
 
+from module_items import item_is_active_check_cooldown
+
 ####################################################################################################################
 #  (menu-id, menu-flags, menu_text, mesh-name, [<operations>], [<options>]),
 #
@@ -3898,6 +3900,29 @@ game_menus = [
 		]
 	),
 
+    ("camp_drink_orc_brew",
+        [
+            (player_has_item, "itm_orc_brew"),
+            (item_slot_eq, "itm_orc_brew", slot_item_is_active, 0),
+        ],
+        "Drink the Orc Brew!",
+        [
+        # Orc brew will be active until:
+        # now + activity time rounded up to when the check happens
+        (store_current_hours, ":now_hours"),
+        (store_add, ":then_hours", ":now_hours", 7 * 24),
+        (val_add, ":then_hours", item_is_active_check_cooldown),
+        (val_div, ":then_hours", item_is_active_check_cooldown),
+        (val_mul, ":then_hours", item_is_active_check_cooldown),
+
+        (item_set_slot, "itm_orc_brew", slot_item_is_active, 1),
+        (item_set_slot, "itm_orc_brew", slot_item_deactivation_hour, ":then_hours"),
+
+        (display_log_message, "@You drank the Orc Brew..."),
+        (jump_to_menu, "mnu_drank_orc_brew"),
+        ]
+    ),
+
 
     # ("camp_recruit_prisoners",
        # [(troops_can_join, 1),
@@ -4555,6 +4580,17 @@ game_menus = [
 	"^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.",
 	"none",[(display_log_message,"@HP lost from poisoning."),(troop_set_health,"trp_player",5),]
 	,[("i_shall_surv",[],"I... shall... survive!",[(change_screen_return,0)])]
+ ),
+
+("drank_orc_brew", 0,
+	"^^^You drink the beberage. It tastes like Don Simon wine." + \
+    "^Suddenly, you feel faster, stronger, as if you could take over Gondor you alone." + \
+    "^^You take a step and feel as if you had been punched in the gut and throw up." + \
+    "^When you recover, you realize that you feel as you did before drinking, but for some reason, you are still faster." + \
+    "^For how long, no way of knowing",
+	"none",
+    [(display_message,"@You have gained +1 Athletics, temporarily", color_good_news),]
+	,[("option_1",[],"I feel faster!",[(change_screen_return,0)])]
  ),
 
 ( "end_game",0,

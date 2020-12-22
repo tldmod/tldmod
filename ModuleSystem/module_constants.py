@@ -127,6 +127,9 @@ slot_item_agility_bonus           = 10 # 0 or 1, used to check if agility bonus 
 slot_item_intelligence_bonus      = 11 # 0 or 1, used to check if intelligence bonus was already applied by this item
 slot_item_charisma_bonus          = 12 # 0 or 1, used to check if charisma bonus was already applied by this item
 
+slot_item_is_active               = 13 # 0 or 1
+slot_item_deactivation_hour       = 14 # Hour when the item will be deactivated (and possibly destroyed)
+
 # CC: For octo's defiled armor.
 slot_item_tableau_0		  = 0
 slot_item_tableau_1		  = 1

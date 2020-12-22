@@ -10,6 +10,8 @@ from header_terrain_types import *
 from module_constants import *
 from module_info import wb_compile_switch as is_a_wb_trigger
 
+from module_items import item_is_active_check_cooldown
+
 ####################################################################################################################
 # Simple triggers are the alternative to old style triggers. They do not preserve state, and thus simpler to maintain.
 #
@@ -1137,13 +1139,23 @@ simple_triggers = [
       (try_end),
   ]),
   
-  # (34) consuming orc brew if wounded -- mtarini
-  (5,[ #(eq, "$orc_brew_activated", 1),
-      (call_script,"script_party_count_wounded", "p_main_party"),(assign, ":n_drinks",reg0),
-      #(display_message, "@DEBUG: {reg0} drinks of orc brew"),
-      (gt, ":n_drinks",0),
-      #(store_random_in_range, reg10, 0, 10),(val_add, ":n_drinks",10),(val_div, ":n_drinks",10), # div 10, roudning at random
-      (call_script,"script_consume_orc_brew",":n_drinks"),
+  # (34) Check active items for their deactivation hour
+  (item_is_active_check_cooldown,
+   [(store_troop_faction, ":faction", "trp_player"),
+
+    (try_begin),
+        (neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+
+        (try_begin),
+            (call_script, "script_cf_troop_has_active_item", "trp_player", "itm_orc_brew"),
+            (store_current_hours, ":now_hours"),
+            (item_slot_ge, "itm_orc_brew", ":now_hours", slot_item_deactivation_hour),
+            (item_set_slot, "itm_orc_brew", slot_item_is_active, 0),
+            (troop_remove_item, "trp_player", "itm_orc_brew"),
+
+            (display_message, "@The effects of the Orc Brew have dissipated"),
+        (try_end),
+    (try_end),
   ]),
   
   # (35) Consuming food at every 14 hours

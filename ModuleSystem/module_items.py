@@ -255,6 +255,8 @@ imodbits_weapon   = imodbit_rusty | imodbit_chipped | imodbit_crude | imodbit_fi
 imodbits_weapon_bad  = imodbit_cracked | imodbit_rusty | imodbit_chipped | imodbit_crude | imodbit_heavy | imodbit_balanced | imodbit_tempered
 imodbits_weapon_good  = imodbit_fine | imodbit_balanced | imodbit_tempered | imodbit_masterwork
 imodbits_weapon_wood   = imodbit_bent | imodbit_crude | imodbit_fine | imodbit_heavy | imodbit_balanced
+
+item_is_active_check_cooldown = 5 # hours
 #
 items =[
 ###item_name, mesh_name, item_properties, item_capabilities, slot_no, cost, bonus_flags, weapon_flags, scale, view_dir, pos_offset
