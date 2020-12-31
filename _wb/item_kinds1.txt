@@ -2321,7 +2321,7 @@ itemsfile version 2
 1
 -50  22 2072 1 1224979098644774912 1506 2 1224979098644774913 1224979098644774912 31 2 1224979098644774913 1 2319 1 1 527 3 1224979098644774914 768 81 527 3 1224979098644774915 768 82 2121 3 1224979098644774916 1224979098644774915 1224979098644774914 32 2 1224979098644774916 0 4 0 32 2 1224979098644774912 -1 1507 1 1224979098644774912 527 3 1224979098644774917 768 92 2147483679 2 1224979098644774917 -1 2109 2 1224979098644774917 1224979098644774916 2105 2 1224979098644774917 1224979098644774914 5 0 2136 3 1224979098644774917 1224979098644774914 1224979098644774915 3 0 4 0 2320 2 1 1224979098644774917 1978 2 1 0 3 0 
 
- itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftain 0  16777229 0 1200 704643206 18 100 0 33 15 0 0 0 0 0 0 0 0
+ itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftain 0  16777229 0 1200 704643206 18 100 0 33 15 18 0 0 0 0 0 0 0
 0
 
  itm_beorn_helmet Bear_Skullcap Bear_Skullcap 2  beorn_helmet_light 134  beorn_helmet 0  65548 0 800 704643206 2 100 32 0 0 0 0 0 0 0 0 0 0
@@ -2655,10 +2655,10 @@ itemsfile version 2
  itm_dale_bow_reward Bow_of_Bard Bow_of_Bard 2  GA_BowE_Longbow_A 0  GA_BowE_Longbow_A_Carry 3458764513820540928  274731016 5905584128 3000 0 1.5 100 0 0 100 5 0 90 69 0 0 284 0
 0
 
- itm_explosive_reward Isengard_Mine Isengard_Mine 1  reward_isenmine 0  4107 0 1000 0 5 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_tome_of_knowledge Tome_of_Arcane_Knowledge Tome_of_Arcane_Knowledge 1  JIKBookOpen_dark 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_corsair_trident2 Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  274763780 9236601365055144192 2000 271496 4.5 100 0 0 0 12 0 94 0 166 0 291 0
+ itm_orc_idol_reward Idol_of_the_First_Orc Idol_of_the_First_Orc 1  orc_idol 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_crebain_reward Crebain Crebain 1  prop_reward_crebain 0  4107 0 1000 0 1 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2703,7 +2703,7 @@ itemsfile version 2
  itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 430 251658402 4.5 100 0 9 0 0 690 95 0 70 0 0 0
 0
 
- itm_beorn_axe_reward Bear_Club Bear_Club 1  beorning_club 0  279177461762 9223388532775583758 2000 156672 4.5 100 0 0 0 8 32768 93 0 67 0 0 544
+ itm_beorn_axe_reward Bear_Club Bear_Club 1  beorning_club 0  279177461762 9223388532775583758 2000 156672 4.5 100 0 0 0 12 32768 93 0 67 0 0 544
 0
 
  itm_moria_arrow_reward Moria_Poisoned_Arrows Moria_Poisoned_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  5 1610612736 700 4398046520456 3 100 0 0 0 0 0 0 0 95 40 11 0
@@ -2727,7 +2727,7 @@ itemsfile version 2
  itm_prisoner_coll_chain Prisoner_Chains Prisoner_Chains 1  prisoner_coll_chain 0  16777228 0 10 0 10 100 2 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_witchking_helmet Wicked_Helm Wicked_Helm 3  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  4108 0 3000 0 2.5 100 45 0 0 12 0 0 0 0 0 0 0
+ itm_witchking_helmet Sorcerer's_Mask Sorcerer's_Mask 3  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  4108 0 3000 0 2.5 100 35 0 0 9 0 0 0 0 0 0 0
 0
 
  itm_lorien_royal_armor Lorien_Royal_Armor Lorien_Royal_Armor 1  lorien_royal 0  16777229 0 5000 704643072 26 100 0 45 17 15 0 0 0 0 0 0 0

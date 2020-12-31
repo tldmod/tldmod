@@ -1242,7 +1242,7 @@ items =[
 ["beorn_padded","Beorning_Padded_Armor",	[("beorn_padded",0),("beorn_padded_light",imodbits_armor_bad),("beorn_padded_heavy",imodbits_armor_good)],	itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(10)|head_armor(0)|body_armor(12)|leg_armor(6)|difficulty(0),imodbits_armor|imodbit_lordly,],
 ["beorn_heavy","Beorning_Heavy_Armor",		[("beorn_heavy",0),("beorn_heavy_light",imodbits_armor_bad),("beorn_heavy_heavy",imodbits_armor_good)],	itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(13)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_armor|imodbit_lordly,],
 ["beorn_berserk","Beorning_Berserker_Kit",	[("beorn_berserker",0),("beorn_berserker_light",imodbits_armor_bad),("beorn_berserker_heavy",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(2)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_armor|imodbit_lordly,[custom_female("itm_beorn_berserk")]],
-["beorn_chief","Beorning_Chieftan's_Tunic",[("beorn_chieftain",0)],itp_type_body_armor|itp_covers_legs,0,1200,weight(18)|head_armor(0)|body_armor(33)|leg_armor(15)|difficulty(0),imodbits_armor|imodbit_lordly,],
+["beorn_chief","Beorning_Chieftan's_Tunic",[("beorn_chieftain",0)],itp_type_body_armor|itp_covers_legs,0,1200,weight(18)|head_armor(0)|body_armor(33)|leg_armor(15)|difficulty(18),imodbits_armor|imodbit_lordly,],
 ######HELMS##########
 ["beorn_helmet","Bear_Skullcap",[("beorn_helmet_light",imodbits_armor_bad),("beorn_helmet",0)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(32)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
 #####SHIELDS##########
@@ -1385,9 +1385,8 @@ items =[
 ["ring_a_reward","Tulcarisil",[("reward_ring_a",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["ring_b_reward","Finwarisil",[("reward_ring_b",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["dale_bow_reward","Bow_of_Bard",[("GA_BowE_Longbow_A",0),("GA_BowE_Longbow_A_Carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,3000,weight(1.5)|difficulty(5)|shoot_speed(69)|spd_rtng(90)|thrust_damage(28,pierce)|accuracy(100),0,[] ],
-["explosive_reward","Isengard_Mine",[("reward_isenmine",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
-#Next one moved to Umbar items Mar 2020
-["corsair_trident2","Trident_of_Sea_Fury",[("corsair_trident",0)],itp_type_polearm|itp_unique|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback,itc_pike_upstab|itcf_carry_axe_back,2000,weight(4.5)|difficulty(12)|spd_rtng(94)|weapon_length(166)|thrust_damage(35,pierce),imodbits_weapon_wood],
+["tome_of_knowledge","Tome_of_Arcane_Knowledge",[("JIKBookOpen_dark",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
+["orc_idol_reward","Idol_of_the_First_Orc",[("orc_idol",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["crebain_reward","Crebain",[("prop_reward_crebain",0)],itp_unique|itp_type_goods,0,1000,weight(1)|abundance(0)|0,imodbits_none],
 ["miruvor_reward","Miruvor_Flask",[("reward_miruvor",0)],itp_unique|itp_type_goods,0,1000,weight(5)|abundance(0)|0,imodbits_none],
 ["wheeled_cage","Giant_Wheeled_Cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
@@ -1403,7 +1402,7 @@ items =[
 ["dale_armor_reward","Dale_Noblemen_Mail",[("dale_reward",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(25)|head_armor(4)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_none,],
 ["leather_gloves_reward","Archer_Gloves",[("CWE_gloves_king_L",0),("ent_hand_L",imodbit_tattered),("olog_hand_L",imodbit_rusty),("isen_olog_hand_L",imodbit_old)],itp_type_hand_armor|itp_unique,0,2000,weight(0.2)|body_armor(3)|difficulty(0),imodbits_none,[]],
 ["beorn_shield_reward","Beorning_Shield",[("beorning_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,  430 , weight(4.5)|hit_points(690)|body_armor(9)|spd_rtng(95)|weapon_length(70),imodbits_shield,],
-["beorn_axe_reward","Bear_Club",[("beorning_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_knock_down,itc_scimitar|itcf_carry_mace_left_hip,2000,weight(4.5)|difficulty(8)|spd_rtng(93)|weapon_length(67)|swing_damage(32,blunt),imodbits_weapon_good],
+["beorn_axe_reward","Bear_Club",[("beorning_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_knock_down,itc_scimitar|itcf_carry_mace_left_hip,2000,weight(4.5)|difficulty(12)|spd_rtng(93)|weapon_length(67)|swing_damage(32,blunt),imodbits_weapon_good],
 ["moria_arrow_reward","Moria_Poisoned_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows,itcf_carry_quiver_back_right,700,weight(3)|thrust_damage(11,cut)|max_ammo(40)|weapon_length(95),imodbits_missile,[]],
 
 ["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small_new",0)],itp_type_head_armor|itp_unique,0,3000,weight(4)|head_armor(50)|difficulty(15),0],
@@ -1413,7 +1412,7 @@ items =[
 ["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armour",0),("denethor_robe",imodbit_well_made),("dm_nazgulrobe",imodbit_cheap),("pippin",imodbit_battered),("merry",imodbit_chipped),("whiterobe",imodbit_bent), ("old_nazgulrobe",imodbit_old),("galadriel",imodbit_rusty)],itp_type_body_armor|itp_covers_legs,0,4000,weight(35)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(15),imodbits_elf_armor,],
 ["wilderness_amulet","Wilderness_Amulet",[("dunland_amulet",0),("beorning_amulet",imodbit_old)],itp_unique|itp_type_goods,0,1000,weight(0)|difficulty(0),imodbits_elf_armor,],
 ["prisoner_coll_chain","Prisoner_Chains",[("prisoner_coll_chain",0)],itp_type_head_armor|itp_doesnt_cover_hair,0,10,weight(10)|head_armor(2)|difficulty(0),0],
-["witchking_helmet","Wicked_Helm",[("witchking_helmet",0),("glorfindelhair",imodbit_rotten),("DwarfHelmKingCrown",imodbit_old)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(45)|difficulty(12),0],
+["witchking_helmet","Sorcerer's_Mask",[("witchking_helmet",0),("glorfindelhair",imodbit_rotten),("DwarfHelmKingCrown",imodbit_old)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(35)|difficulty(9),0],
 # let   witchking_helmet  be the last item (mtarini)
 ["lorien_royal_armor","Lorien_Royal_Armor",[("lorien_royal",0)],itp_type_body_armor|itp_covers_legs,0,5000,weight(26)|head_armor(0)|body_armor(45)|leg_armor(17)|difficulty(15),imodbits_elf_armor,],
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],

@@ -1978,9 +1978,9 @@ fac_reward_items_list = [
 #fac_rohan
 [(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_rohirrim_courser2, imod_heavy), (5, itm_rohan_lance_banner_horse, imod_balanced), (6, itm_rohan_armor_th, 0), (7, itm_rohan_saddle, 0), (8, itm_eorl_cavalry_sword, 0), (9, itm_mearas_reward, 0)],
 #fac_mordor
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_club_d, imod_balanced), (5, itm_warg_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_m_cap_armor, imod_reinforced), (8, itm_mordor_warhorse2, imod_heavy), (9, itm_witchking_helmet, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_club_d, imod_balanced), (5, itm_warg_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_m_cap_armor, imod_reinforced), (8, itm_mordor_warhorse2, imod_heavy), (9, itm_nazgul_sword, 0)],
 #fac_isengard
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_gauntlets_reward, 0), (5, itm_warg_reward, imod_heavy), (6, itm_torque_reward, 0), (7, itm_silmarillion_reward, 0), (8, itm_isen_uruk_heavy_reward, imod_lordly), (9, itm_explosive_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_gauntlets_reward, 0), (5, itm_warg_reward, imod_heavy), (6, itm_torque_reward, 0), (7, itm_silmarillion_reward, 0), (8, itm_isen_uruk_heavy_reward, imod_lordly), (9, itm_tome_of_knowledge, 0)],
 #fac_lorien
 [(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_elven_cloak , 0), (6, itm_silmarillion_reward, 0), (7, itm_lorien_royal_armor, imod_lordly), (8, itm_lorien_bow_reward, imod_balanced), (9, itm_phial_reward, 0)],
 #fac_imladris
@@ -2000,9 +2000,9 @@ fac_reward_items_list = [
 #fac_moria
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_warg_reward, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_dwarf_great_pick, imod_old), (8, itm_moria_armor_e, imod_lordly), (9, itm_moria_arrow_reward, 0)],
 #fac_guldur
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_club_d, imod_balanced), (5, itm_herbarium_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_spider, 0), (8, itm_black_arrows_reward, 0), (9, itm_nazgul_sword, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_club_d, imod_balanced), (5, itm_herbarium_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_spider, 0), (8, itm_black_arrows_reward, 0), (9, itm_witchking_helmet, 0)],
 #fac_gundabad
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_warg_reward, imod_champion), (6, itm_angmar_whip_reward, 0), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_angmar_shield, imod_reinforced)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_warg_reward, imod_champion), (6, itm_angmar_whip_reward, 0), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_orc_idol_reward, 0)],
 #fac_dunland
 [(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_amulet, 0), (6, itm_dunnish_pike, imod_balanced), (7, itm_leather_boots_reward, 0), (8, itm_dunland_armor_k, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
 #fac_beorn

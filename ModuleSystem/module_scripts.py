@@ -837,12 +837,7 @@ scripts = [
         (val_mul, ":wage", 150),
         (val_div, ":wage", 100),
       (try_end),
-	  #(try_begin), #discount if you have beorning chief armor - Removed May 2018, replaced with Berserk Trait
-	  #(troop_has_item_equipped, "trp_player", "itm_beorn_chief"),
-	  #(eq, ":troop_faction", "fac_beorn"),
-      #  (val_mul, ":wage", 100),
-      #  (val_div, ":wage", 115),
-      #(try_end),
+	  
 	  (try_begin), #discount if you have chieftain sword
 	  (troop_has_item_equipped, "trp_player", "itm_dun_berserker"),
 	  (eq, ":troop_faction", "fac_dunland"),
@@ -3359,8 +3354,14 @@ scripts = [
 		  (party_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
           (val_add, ":total", ":stack_size"),
       (try_end),  
-	  (val_mul, ":total", orc_bonus_nominator  ),
-	  (val_div, ":total", orc_bonus_denominator),
+		(try_begin),
+			(player_has_item, "itm_orc_idol_reward"),
+			(val_mul, ":total", orc_bonus_nominator+2  ),
+			(val_div, ":total", orc_bonus_denominator+2),
+		(else_try),
+			(val_mul, ":total", orc_bonus_nominator  ),
+			(val_div, ":total", orc_bonus_denominator),
+		(try_end),
 	  (val_add, ":limit", ":total"),
       
       # MV: Add ranks bonus - note that it also counts ranks with dead and turned-hostile factions
@@ -3768,7 +3769,26 @@ scripts = [
 	  (else_try),
 		(eq,":item_no","itm_beorn_shield_reward"),
 		(eq, ":item_modifier", imod_reinforced),
-		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Turns nature to your side (effect scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),	
+		(try_begin),
+			(eq, ":extra_text_id", 0),
+			(store_skill_level, reg1, "skl_persuasion", "trp_player"),
+			(val_div, reg1, 2),
+			(set_result_string, "@+{reg1} to Shield"),
+			(set_trigger_result, color_item_text_bonus),
+		(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Turns nature to your side"),(set_trigger_result, color_item_text_bonus),(try_end),	
+		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@when equipped. (Effects scale with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
+	  (else_try),
+		(eq,":item_no","itm_beorn_axe_reward"),
+		(eq, ":item_modifier", imod_masterwork),
+		(try_begin),
+			(eq, ":extra_text_id", 0),
+			(store_skill_level, reg1, "skl_persuasion", "trp_player"),
+			(val_div, reg1, 2),
+			(set_result_string, "@+{reg1} to Power Strike"),
+			(set_trigger_result, color_item_text_bonus),
+		(try_end),	
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped. (Effects scale with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
       (else_try),
 		(eq,":item_no","itm_angmar_whip_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Trainer"),(set_trigger_result, color_item_text_bonus),(try_end),
@@ -3818,9 +3838,8 @@ scripts = [
         (set_trigger_result, color_item_text_bonus),
       (else_try),
 		(eq,":item_no","itm_witchking_helmet"),
-		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Ironflesh"),(try_end),
-		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to Prisoner Mgmt"),(try_end),
-		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@+1 to Charisma"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+2 to Surgery"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to First Aid"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 3),(set_result_string, "@when equipped"),(try_end),
         (set_trigger_result, color_item_text_bonus),
       (else_try),
@@ -3833,9 +3852,9 @@ scripts = [
 		(eq,":item_no","itm_wheeled_cage"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Prisoner Mgmt"),(set_trigger_result, color_item_text_bonus),(try_end),	
       (else_try),
-		(eq,":item_no","itm_explosive_reward"),
+		(eq,":item_no","itm_tome_of_knowledge"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+2 to Tactics"),(try_end),
-		#(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+2 to Crafting"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 Intelligence"),(try_end),
         (set_trigger_result, color_item_text_bonus),
       (else_try),
 		(eq,":item_no","itm_crebain_reward"),
@@ -3878,11 +3897,6 @@ scripts = [
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
 		(set_trigger_result, color_item_text_bonus),
       (else_try),
-	  #(eq,":item_no","itm_beorn_chief"), #Removed May 2018, replaced with Berserk Trait
-	#	(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Less Beorning upkeep"),(try_end),
-	#	(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
-#		(set_trigger_result, color_item_text_bonus),
-#      (else_try),
 	   (eq,":item_no","itm_dun_berserker"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Less Dunnish upkeep"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
@@ -3895,7 +3909,18 @@ scripts = [
 	  (else_try),
 	  	(eq, ":item_no", "itm_beorn_chief"),
 	  	(try_begin), (eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
+		(try_begin),
+			(eq, ":extra_text_id", 1),
+			(store_skill_level, reg1, "skl_persuasion", "trp_player"),
+			(set_result_string, "@+{reg1} Strength"),
+			(set_trigger_result, color_item_text_bonus),
+		(try_end),
+		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@(Scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
 	  	(set_trigger_result, color_item_text_special),
+	  (else_try),
+		(eq,":item_no","itm_orc_idol_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Lead more Orcs"),(try_end),
+        (set_trigger_result, color_item_text_bonus),
       (else_try),
 		#(store_and,reg20,":itp", itp_food), (neq, reg20,0),
 		#(eq,":itp", itp_food), 
@@ -3925,7 +3950,7 @@ scripts = [
       	(eq, ":type", itp_type_thrown),
       	(item_get_horse_speed, reg55, ":item_no"), #Don't worry. Im not crazy. This is equal to shoot speed. :D
       	(gt, reg55, 0), #just in case.
-		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Shoot Speed: {reg55}"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Range: {reg55}"),(try_end),
 		(set_trigger_result, color_item_text_normal),
 	] or []) + [
       (try_end),
@@ -4061,7 +4086,7 @@ scripts = [
             (else_try),
                 (eq, ":skill_no", "skl_tactics"), # Tactics
                 (try_begin),
-                    (player_has_item, "itm_explosive_reward"),
+                    (player_has_item, "itm_tome_of_knowledge"),
                     (val_add, ":modifier_value", 2),
                 (try_end),
                 (try_begin),
@@ -4182,6 +4207,15 @@ scripts = [
                     (val_sub, ":modifier_value", 1),
                 (try_end),
             (else_try),
+                (eq, ":skill_no", "skl_shield"), # Shield				
+				(try_begin),
+                    (troop_has_item_equipped, ":troop_no", "itm_beorn_shield_reward"),
+                    # Remember that Persuasion is Wildcraft!
+                    (store_skill_level, reg1, "skl_persuasion", "trp_player"),
+                    (val_div, reg1, 2),
+                    (val_add, ":modifier_value", reg1),
+                (try_end),	
+            (else_try),
                 (eq, ":skill_no", "skl_riding"), # Riding
                 (try_begin),
                     (troop_has_item_equipped, ":troop_no", "itm_khamul_helm"),
@@ -4222,6 +4256,10 @@ scripts = [
                 (try_end),
             (else_try),
                 (eq, ":skill_no", "skl_first_aid"), # First Aid
+				(try_begin),
+                    (troop_has_item_equipped, ":troop_no", "itm_witchking_helmet"),
+                    (val_add, ":modifier_value", 1),
+                (try_end),
                 (try_begin),
                     (store_and, ":check" ,":wound_mask", wound_head), #head injury
                     (neq, ":check", 0),
@@ -4229,6 +4267,10 @@ scripts = [
                 (try_end),
             (else_try),
                 (eq, ":skill_no", "skl_surgery"), # Surgery
+				(try_begin),
+                    (troop_has_item_equipped, ":troop_no", "itm_witchking_helmet"),
+                    (val_add, ":modifier_value", 2),
+                (try_end),
                 (try_begin),
                     (store_and, ":check" ,":wound_mask", wound_head), #head injury
                     (neq, ":check", 0),
@@ -4256,7 +4298,13 @@ scripts = [
                 (eq, ":skill_no", "skl_power_strike"), # Power Strike
                 (try_begin),
                     (troop_has_item_equipped, ":troop_no", "itm_gauntlets_reward"),
-                    (val_add, ":modifier_value", 1),
+                    (val_add, ":modifier_value", reg1),
+                (try_end),
+                (try_begin),
+                    (troop_has_item_equipped, ":troop_no", "itm_beorn_axe_reward"),
+					(store_skill_level, reg1, "skl_persuasion", "trp_player"),
+                    (val_div, reg1, 2),					
+                    (val_add, ":modifier_value", reg1),
                 (try_end),
                 (try_begin),
                     (store_and, ":check" ,":wound_mask", wound_arm), #arm injury
@@ -4269,18 +4317,6 @@ scripts = [
                         (store_and, ":check" ,":wound_mask", wound_head), #head injury
                     (neq, ":check", 0),
                         (val_sub, ":modifier_value", 1),
-                (try_end),
-            (else_try),
-                (eq, ":skill_no", "skl_ironflesh"), # Ironflesh
-                (try_begin),
-                    (troop_has_item_equipped, ":troop_no", "itm_witchking_helmet"),
-                    (val_add, ":modifier_value", 1),
-                (try_end),
-            (else_try),
-                (eq, ":skill_no", "skl_prisoner_management"), # Prisoner management
-                (try_begin),
-                    (troop_has_item_equipped, ":troop_no", "itm_witchking_helmet"),
-                    (val_add, ":modifier_value", 1),
                 (try_end),
             (else_try),
                 (eq, ":skill_no", "skl_engineer"), # Engineering
@@ -16655,12 +16691,19 @@ scripts = [
 ("apply_attribute_bonuses",[
     # Tulcarisil, STR+1
     (call_script, "script_apply_attribute_bonus_for_item", "itm_ring_a_reward", 0, ca_strength, 1),
+
+	# beorn chieftain armor, Wildcraft/2 = STR
+	(store_skill_level, reg1, "skl_persuasion", "trp_player"),	
+	(val_div, reg1, 2),
+	(call_script, "script_apply_attribute_bonus_for_item", "itm_beorn_chief", 1, ca_strength, reg1),
     
     # Finwarisil, AGI+1
     (call_script, "script_apply_attribute_bonus_for_item", "itm_ring_b_reward", 0, ca_agility, 1),
 
     # Light of Galadriel, INT+1
     (call_script, "script_apply_attribute_bonus_for_item", "itm_phial_reward", 0, ca_intelligence, 1),
+	
+	(call_script, "script_apply_attribute_bonus_for_item", "itm_tome_of_knowledge", 0, ca_intelligence, 1),
 
     # Horn of Gondor, CHA+1
     (call_script, "script_apply_attribute_bonus_for_item", "itm_horn_gondor_reward", 0, ca_charisma, 1),
@@ -16669,7 +16712,7 @@ scripts = [
     (call_script, "script_apply_attribute_bonus_for_item", "itm_khand_knife_reward", 0, ca_charisma, 1),
 
     # Witchking Helmet, CHA+1 when equipped
-    (call_script, "script_apply_attribute_bonus_for_item", "itm_witchking_helmet", 1, ca_charisma, 1),
+    #(call_script, "script_apply_attribute_bonus_for_item", "itm_witchking_helmet", 1, ca_charisma, 1),
 	
 	(call_script, "script_apply_attribute_bonus_for_item", "itm_isen_uruk_heavy_reward", 1, ca_charisma, 1),
 ]),

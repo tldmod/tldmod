@@ -1,4 +1,4 @@
-1856
+1862
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_138_wb__dev_^_B _rev_138_wb_|_dev_^_Built_2020-12-31_09:22___
+qstr__rev_139_wb__dev_^_B _rev_139_wb_|_dev_^_Built_2020-12-31_17:10___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -230,7 +230,10 @@ qstr_+1_to_Wildcraft +1_to_Wildcraft
 qstr_+1_to_Power_Draw +1_to_Power_Draw
 qstr_The_record_of_Balin_ The_record_of_Balin's_lost_expedition.
 qstr_Who_might_be_interes Who_might_be_interested_in_this?
-qstr_Turns_nature_to_your Turns_nature_to_your_side_(effect_scales_with_Wildcraft)
+qstr_+{reg1}_to_Shield +{reg1}_to_Shield
+qstr_Turns_nature_to_your Turns_nature_to_your_side
+qstr_when_equipped.__Effe when_equipped._(Effects_scale_with_Wildcraft)
+qstr_+{reg1}_to_Power_Str +{reg1}_to_Power_Strike
 qstr_+1_to_Trainer +1_to_Trainer
 qstr_Recruits_Tribal_Orcs Recruits_Tribal_Orcs
 qstr_rally rally
@@ -239,12 +242,13 @@ qstr_+{reg1}_{s3}_in_batt +{reg1}_{s3}_in_battle
 qstr_+1_to_Charisma +1_to_Charisma
 qstr_+1_to_Surgery +1_to_Surgery
 qstr_+1_to_Intelligence +1_to_Intelligence
-qstr_+1_to_Ironflesh +1_to_Ironflesh
-qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
+qstr_+2_to_Surgery +2_to_Surgery
 qstr_when_equipped when_equipped
 qstr_+1_to_Riding +1_to_Riding
 qstr_+1_to_Mounted_Archer +1_to_Mounted_Archery
+qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
 qstr_+2_to_Tactics +2_to_Tactics
+qstr_+1_Intelligence +1_Intelligence
 qstr_+{reg1}_to_Spotting +{reg1}_to_Spotting
 qstr__Scales_with_Wildcra (Scales_with_Wildcraft)
 qstr_+1_to_Spotting +1_to_Spotting
@@ -252,8 +256,10 @@ qstr_+2_to_Athletics +2_to_Athletics
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
 qstr_Less_Wargs_upkeep Less_Wargs_upkeep
 qstr_Light_Armor Light_Armor
+qstr_+{reg1}_Strength +{reg1}_Strength
+qstr_Lead_more_Orcs Lead_more_Orcs
 qstr_+{reg1}_to_Party_Mor +{reg1}_to_Party_Morale
-qstr_Shoot_Speed:_{reg55} Shoot_Speed:_{reg55}
+qstr_Range:_{reg55} Range:_{reg55}
 qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
 qstr_View_notes View_notes
