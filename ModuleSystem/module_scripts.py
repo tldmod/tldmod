@@ -12677,7 +12677,7 @@ scripts = [
 			(lt, ":quest_target_fac_str_effect", 0), #negative strength effect if enemy faction is target...
 			(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
 			(val_sub, ":enemy_strength", ":quest_target_fac_str_effect"), #...becomes positive if quest fails
-			(faction_set_slot,":quest_faction",slot_faction_strength_tmp,":enemy_strength"),
+			(faction_set_slot,":quest_target_faction",slot_faction_strength_tmp,":enemy_strength"),
 			(str_store_faction_name, s1, ":quest_target_faction"),
 			(display_message, "@{s1} gained faction strength!", color_bad_news),
 		(else_try), #if target faction is an ally (e.g. escort caravan quest)
@@ -12685,7 +12685,7 @@ scripts = [
 			(gt, ":quest_target_fac_str_effect", 0), #positive strength effect for allied targets (eg caravan quests)...
 			(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
 			(val_sub, ":enemy_strength", ":quest_target_fac_str_effect"), #... becomes negative is quest fails
-			(faction_set_slot,":quest_faction",slot_faction_strength_tmp,":enemy_strength"),
+			(faction_set_slot,":quest_target_faction",slot_faction_strength_tmp,":enemy_strength"),
 			(str_store_faction_name, s1, ":quest_target_faction"),
 			(display_message, "@{s1} lost faction strength!", color_bad_news),
 		(try_end),
