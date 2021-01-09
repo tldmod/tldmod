@@ -2899,6 +2899,9 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("trait_title_well_travelled", "Well-Travelled"),
 ("trait_desc_well_travelled", "On_stone_paved_roads_and_mossy_animal_paths,_over_the_tallest_mountains_and_in_the_deepest_vales,_you've_discovered_hidden_places_and_seen_long_forgotten_marvels._From_your_experiences,_you've_learnt_to_spot_enemies_before_they_see_you,_and_the_easiest_route_for_your_troops."),
 
+("trait_title_bear_shape", "Skinchanger"),
+("trait_desc_bear_shape", "_It_is_said_that_men_from_the_line_of_Beorn_have_the_ability_to_take_the_form_of_bears._It_was_unheard_of_for_anyone_else_share_this_ability,_yet_through_your_kinship_with_those_wild_beasts_discovered_that_you_share_Beorn's_gift."),
+
 # END Traits
 
 # BEGIN Wound Strings
