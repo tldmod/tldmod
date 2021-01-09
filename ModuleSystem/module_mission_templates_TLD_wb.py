@@ -3879,11 +3879,9 @@ beorning_shapeshift = [
         (this_or_next|is_between, ":troop", "trp_spider", "trp_dorwinion_sack"),
         (this_or_next|is_between, ":troop", "trp_warg_ghost_1b", "trp_a2_isen_uruk_tracker"),
         (eq, ":troop", "trp_werewolf"),
-        (display_message, "@CONDITION FULLFILLED"),
-
-        #(display_message, "@Agents invisible"),
+        #(display_message, "@Agents glitch fix invisible"),
         (agent_set_visibility, ":agent", 0),
-        #(display_message, "@Agents horse visible"),
+        #(display_message, "@Agents horse fix visible"),
         (agent_get_horse, ":horse", ":agent"),
         (agent_is_active, ":horse"),
         (agent_set_visibility, ":horse", 1),
