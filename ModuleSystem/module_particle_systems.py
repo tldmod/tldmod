@@ -1003,4 +1003,17 @@ particle_systems = [
      0,                       #rotation speed
      0.5                        #rotation damping
     ),
+    ("bear_fur", psf_billboard_3d|psf_global_emit_dir|psf_randomize_size|psf_randomize_rotation, "prtcl_bear_fur",
+     40, 1.5, 0.5, 0.5, 0.5, 0.5,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.2, 1.0), (1, 0.8),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 3.8), (1.0, 3.8),   #scale keys
+     (0.5, 0.5, 1.9),           #emit box size
+     (0, 0, 0),               #emit velocity
+     0.01,                     #emit dir randomness
+     1,                       #rotation speed
+     0.5                        #rotation damping
+    ),
 ]
