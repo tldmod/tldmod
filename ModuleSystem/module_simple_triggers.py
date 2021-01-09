@@ -2513,7 +2513,7 @@ simple_triggers = [
                 (try_begin),
                   (faction_get_slot, ":adv_camp", ":some_faction", slot_faction_advance_camp),
                   (party_is_active, ":adv_camp"),
-                  (call_script, "script_destroy_center", ":adv_camp"),
+				  (disable_party, ":adv_camp"),
                 (try_end),
               (try_end),
               
@@ -2921,6 +2921,16 @@ simple_triggers = [
         (try_end),
         (display_log_message, "@The forces of {s2} established an advanced camp in {s15}!", ":news_color"),
         (call_script, "script_update_center_notes", ":adv_camp"),
+		
+		#Relocate player's reserves
+		(try_begin),
+			(eq, ":faction", "$players_kingdom"),
+			(troop_get_slot, ":reserve_party_ac", "trp_player", slot_troop_player_reserve_adv_camp),
+			(gt, ":reserve_party_ac", 0),
+			(enable_party, ":reserve_party_ac"),
+			(party_relocate_near_party, ":reserve_party_ac", ":adv_camp", 0), 
+			(party_attach_to_party, ":reserve_party_ac", ":adv_camp"),
+		(try_end),
         
         # any enemy in the theater that has an advance camp elsewhere should return to defend their home theater
         (try_for_range, ":adv_camp_faction", kingdoms_begin, kingdoms_end),
@@ -2950,6 +2960,43 @@ simple_triggers = [
             (neg|faction_slot_eq, ":adv_camp_faction", slot_faction_active_theater, ":home_theater"), #If they are not yet home,
             (display_log_message, "@The hosts of {s2} march back to defend their homes!", ":news_color"),
           (try_end),
+		  (try_begin), #When retreating home, merge ac player reserves with capital reserves
+			(eq, ":adv_camp_faction", "$players_kingdom"),
+			(troop_get_slot, ":reserve_party_ac", "trp_player", slot_troop_player_reserve_adv_camp),
+			(gt, ":reserve_party_ac", 0),
+			(troop_get_slot, ":reserve_party_cap", "trp_player", slot_troop_player_reserve_party),
+
+				(try_begin), #if there's no player reserves at capital, create a new one
+					(eq, ":reserve_party_cap", 0), 
+					(faction_get_slot, ":capital", ":adv_camp_faction", slot_faction_capital),
+					(str_store_party_name, s1, ":capital"),
+					(spawn_around_party, ":capital", "pt_volunteers"),
+					(assign, ":reserve_party_cap", reg0),
+					(party_add_members, ":reserve_party_cap", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash #InVain: dunno if needed in this context too, keeping just in case.
+					(party_remove_members, ":reserve_party_cap", "trp_looter", 1),
+					(troop_set_slot, "trp_player", slot_troop_player_reserve_party, ":reserve_party_cap"),
+					(party_attach_to_party, ":reserve_party_cap", ":capital"),
+					(party_set_name, ":reserve_party_cap", "@{playername}'s Reserves"),
+					(party_set_flags, ":reserve_party_cap", pf_no_label),
+					(party_set_ai_behavior, ":reserve_party_cap", ai_bhvr_hold),
+				(try_end),
+
+			(enable_party, ":reserve_party_ac"), #just in case
+			(party_get_num_companion_stacks, ":num_stacks", ":reserve_party_ac"),
+			(try_for_range, ":i_stack", 0, ":num_stacks"),
+				(party_stack_get_size, ":stack_size", ":reserve_party_ac", ":i_stack"),
+				(party_stack_get_troop_id, ":troop", ":reserve_party_ac", ":i_stack"),
+				(party_add_members, ":reserve_party_cap", ":troop", ":stack_size"),
+			(try_end),
+			(party_get_num_prisoner_stacks, ":num_stacks", ":reserve_party_ac"),
+			(try_for_range, ":i_stack", 0, ":num_stacks"),
+				(party_prisoner_stack_get_size, ":stack_size", ":reserve_party_ac", ":i_stack"),
+				(party_prisoner_stack_get_troop_id, ":troop", ":reserve_party_ac", ":i_stack"),
+				(party_add_prisoners, ":reserve_party_cap", ":troop", ":stack_size"),
+			(try_end),			
+			(call_script, "script_safe_remove_party", ":reserve_party_ac"),
+			(troop_set_slot, "trp_player", slot_troop_player_reserve_adv_camp,  0),					
+		  (try_end),
           (faction_set_slot, ":adv_camp_faction", slot_faction_active_theater, ":home_theater"), #reset to home
         (try_end),
         

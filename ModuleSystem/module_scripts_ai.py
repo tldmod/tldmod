@@ -2839,6 +2839,15 @@ ai_scripts = [
               (call_script,"script_delete_volunteers_party",":adv_camp"),
               (disable_party, ":adv_camp"),
             (try_end),
+			    #Remove and hide player reserves
+			(try_begin),
+			  (eq, ":faction", "$players_kingdom"),
+			  (troop_get_slot, ":reserve_party_ac", "trp_player", slot_troop_player_reserve_adv_camp),
+			  (gt, ":reserve_party_ac", 0),
+			  (party_is_active, ":reserve_party_ac"),
+			  (party_detach, ":reserve_party_ac"),
+			  (disable_party, ":reserve_party_ac"),
+			(try_end),
           (try_end),
         (else_try),
           # ERROR (or victory!)

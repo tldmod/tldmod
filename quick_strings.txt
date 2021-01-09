@@ -1091,6 +1091,7 @@ qstr_Guard_Legion_of_{s6} Guard_Legion_of_{s6}
 qstr_Scouts_report_that_{ Scouts_report_that_{s6}_gathered_a_large_army_in_the_vicinity_of_{s7},_in_a_last_ditch_attempt_to_defend_the_capital.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
+qstr_{playername}_s_Reser {playername}'s_Reserves
 qstr_{reg70}___Last_Stand {reg70}_-_Last_Stand
 qstr_Gondor_has_called_fo Gondor_has_called_for_aide!
 qstr_Gondor_is_accompanyi Gondor_is_accompanying_the_marshall!
@@ -1209,7 +1210,6 @@ qstr_Greetings_{s23}. Greetings,_{s23}.
 qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_our_{s25}_friends,_so_I_guess_I_should_consider_you_an_ally.
 qstr_I_need_volunteers_wi I_need_volunteers_willing_to_follow_me_on_dangerous_missions.
 qstr_I_need_some_soldiers I_need_some_soldiers_to_replace_my_dead.
-qstr_{playername}_s_Reser {playername}'s_Reserves
 qstr_Maybe_the_weaklings_ Maybe_the_weaklings_of_the_south_put_armour_on_their_soft-skinned_Trolls._Not_us_-_our_Trolls_are_of_Gundabad!
 qstr_Do_I_look_like_a_smi Do_I_look_like_a_smith_to_you?_Pah._Go_talk_to_one.
 qstr_Excellent_job_{s23}! Excellent_job,_{s23}!_I_wish_all_our_commanders_were_as_dedicated_as_you.^
