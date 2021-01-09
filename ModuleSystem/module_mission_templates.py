@@ -973,6 +973,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
         (else_try),
           (assign, ":color", color_bad_news),
         (try_end),
+        (call_script, "script_update_bear_kinship"), # Arsakes: Update bear kinship for trait
         (display_message, "@A bear has been summoned to battle!", ":color"),
       (else_try),
         (spawn_agent, "trp_wolf"),
