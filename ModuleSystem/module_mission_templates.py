@@ -412,7 +412,7 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
     #This is where we get the mount
     (agent_get_horse, ":horse", ":agent"),
     (ge, ":horse", 0),
-
+ 
     #This is where we cache the enemies:
     (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":agent"),
     (gt, ":num_nearby_agents", 0),
@@ -468,7 +468,6 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
     (try_end),
 
     #This is where Animation is assigned
-
     (assign, ":anim", "anim_bear_slap_right"),
     (try_begin),
       (eq, ":agent_trp", "trp_spider"),
@@ -1037,8 +1036,8 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     batching_agent_spawn_human,
     batching_agent_spawn_mount,
 
-    
-] or [] ) + [
+] + beorning_shapeshift  #Chaning into bear
+or [] ) + [
 
 	#tld_fix_viewpoint,
 	#tld_wargs_attack_horses, # WIP (CppCoder)
