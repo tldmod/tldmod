@@ -3871,8 +3871,8 @@ beorning_shapeshift = [
 
     # Change the form to alternative if one was selected, just prior battle
     (ti_before_mission_start, 0, ti_once, [], [
-        (call_script, "script_cf_in_bear_form"), (eq, reg0, 1),
-        (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
+        (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"),
         (set_player_troop, ":bear_troop"),
     ]),
  
@@ -3900,7 +3900,7 @@ beorning_shapeshift = [
         (get_player_agent_no, ":agent"),
 
         # If player agent is Beorning, those two are  set
-        (call_script, "script_cf_in_bear_form"), (eq, reg0, 1),
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
 
         # Remove the inventory bag out of player's reach
         (try_for_prop_instances, ":prop_instance", "spr_inventory"),
@@ -3953,12 +3953,17 @@ beorning_shapeshift = [
     ]),
 
     # DISMOUNTING action
-    (ti_on_agent_dismount, 0, ti_once, [], [
+    (ti_on_agent_dismount, 0, 0, [], [
         (store_trigger_param_1, ":agent"),
         (store_trigger_param_2, ":horse"),
 
+        # Now check if agent that is dismounting is player agent (coz only he can be in bear form)
+        (get_player_agent_no, ":player_agent"),
+        (eq, ":player_agent", ":agent"),
+
         # Check if we are shapeshifted Beorning
-        (call_script, "script_cf_in_bear_form"), (eq, reg0, 1),
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
+
 
         (try_begin), 
             # Only if horse/bear mount is alive allow it
@@ -4020,13 +4025,11 @@ beorning_shapeshift = [
             (agent_set_hit_points, ":agent", ":bear_hp", 1),
             (agent_set_visibility, ":agent", 1),
             (agent_fade_out, ":horse"),
-            (display_log_message, "@AGENT_DISMOUNT -> trigger shapeshift to human"),
-        (else_try),
-            # Else kill the player
-            # HORSE DISSAPEARS IN THIS CASE
+            #(display_log_message, "@DEBUG dismount trigger shapeshift to human"),
+        (else_try), # Else kill the player
             (agent_set_hit_points, ":agent", 0),
             (agent_deliver_damage_to_agent, ":agent", ":agent", 1),
-            (display_log_message, "@AGENT_DISMOUNT -> kill player"),
+            #(display_log_message, "@DEBUG dismount -> kill player"),
         (try_end),
 
         # Shapeshift back to human form (only troop) 
@@ -4054,7 +4057,7 @@ beorning_shapeshift = [
         # Check if agent is shapeshifted beorning
         (get_player_agent_no, ":agent_no"),
         (agent_is_alive, ":agent_no"),
-        (call_script, "script_cf_in_bear_form"), (eq, reg0, 1),
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
         
         # Setup anims
         (agent_get_horse, ":horse", ":agent_no"),
@@ -4095,7 +4098,7 @@ beorning_shapeshift = [
         (agent_is_active, ":agent_no"),
  
         # Check if player is beorning shapshifter
-        (call_script, "script_cf_in_bear_form"), (eq, reg0, 1),
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
         
         # Setup anims
         (agent_get_horse, ":horse", ":agent_no"),
@@ -4131,7 +4134,7 @@ beorning_shapeshift = [
         (agent_is_active, ":agent_no"),
  
         # Check if player is beorning shapshifter
-        (call_script, "script_cf_in_bear_form"), (eq, reg0, 1),
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
         
         # Setup anims
         (agent_get_horse, ":horse", ":agent_no"),

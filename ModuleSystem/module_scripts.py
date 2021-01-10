@@ -29778,22 +29778,23 @@ if is_a_wb_script==1:
 	(try_end),
 ]),
 
-# script_in_bear_form
-# This script is called to check if player is in a bear form
-# Input: None
+# script_bear_form_selected
+# This script is called to check if player has selected bear form to fight battles
+# Input: arg1: 
 # Output: reg0: 1= in the bear form; 0= in human form.
-("cf_in_bear_form",
+("cf_bear_form_selected",
     [
       (assign, reg0, 0),
       (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
+      # Check if agent troop is that
       (try_begin),
-          (troop_get_inventory_slot, ":horse_item", ":bear_troop", ek_horse),
-          (eq, ":horse_item", "itm_bear"),
-          # Main check
           (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
           (troop_get_inventory_slot, ":body_item", ":bear_troop", ek_body),
           (eq, ":body_item", "itm_warg_ghost_armour"),
           (troop_is_hero, ":bear_troop"),
+          (troop_get_inventory_slot, ":horse_item", ":bear_troop", ek_horse),
+          (eq, ":horse_item", "itm_bear"),
+          (display_message, "@CHARACTER IN BEAR FORM -> TRUE"),
           (assign, reg0, 1),
       (try_end),
       (set_trigger_result, reg0),
@@ -29971,7 +29972,8 @@ if is_a_wb_script==1:
 
 #script_cf_gain_trait_bear_shape
 ("cf_gain_trait_bear_shape",[
-    (troop_slot_eq, "trp_traits", slot_trait_bear_shape, 0),
+    (neg|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1), 
+    # special case as not having the trait could be denoted in many ways
     (display_log_message, "@Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.", color_good_news),
     (call_script, "script_gain_trait", slot_trait_bear_shape),
  ]), 
@@ -29997,10 +29999,13 @@ if is_a_wb_script==1:
         (agent_get_party_id, ":party", ":agent"),
         (store_party_size, ":party_size", ":party"),
 
-        # 50% chance if party is small 100% if we are alone
-        (store_random_in_range,":rnd",0, 2),
-        (this_or_next|le, ":party_size", 10),
-        (ge, ":rnd", 1),
+        # 2/party_size chance for kiniship + 2)
+        (store_random_in_range,":rnd", 0, 100),
+        (assign, ":chance", 100),
+        (val_div, ":chance", ":party_size"),
+        (val_add, ":chance", 1),
+        (val_mul, ":chance", 2),
+        (le, ":rnd", ":chance"),
 
         # Increase approprietly (skipping one)
         (try_begin),
@@ -30009,6 +30014,9 @@ if is_a_wb_script==1:
         (else_try),
             (val_add, ":bear_kinship", 1),
         (try_end),
+        (troop_set_slot, "trp_traits", slot_trait_bear_shape, ":bear_kinship"),
+        #(assign, reg1, ":bear_kinship"),
+        #(display_message, "@DEBUG Bear kinship: increased {reg1}", color_good_news),
     (try_end),
  ]), 
 ]

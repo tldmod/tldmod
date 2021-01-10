@@ -1564,17 +1564,16 @@ triggers = [
         (ge, ":visited",3),
         (call_script, "script_gain_trait_well_travelled"),
       (try_end),
-      (try_begin), #Skinchanger
-        (troop_slot_eq, "trp_traits", slot_trait_bear_shape, 0),
-        (troop_get_slot, ":bear_kinship", slot_trait_bear_shape),
-        (val_sub, ":bear_kinship", 3),
-        (val_mul, ":bear_kinship", 50), # DEBUG should be val_div 2
-        # Chance = (private bear meetings - 3) / 2
+      (try_begin), #Skinchanger trait -> BEAR Arsakes
+        # Chance ~num_of_private_bear_meetings, but has to be more than 5
+        # special case as we store value related to chance of getting it in the slot itslef
+        (neg|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1), 
+        (troop_get_slot, ":chance", "trp_traits", slot_trait_bear_shape),
+        (val_sub, ":chance", 5),
+        (ge, ":chance", 0), 
+        (val_add, ":chance", 5), 
         (store_random_in_range, ":rnd", 0, 100),
-        (assign, reg1, ":bear_kinship"), # DEBUG
-        (display_message, "@Bear kinship test {reg1} roll: {reg2}", color_bad_news),
-        (assign, reg2, ":rnd"), # DEBUG
-        (lt, ":rnd", ":bear_kinship"),
+        (le, ":rnd", ":chance"),
         (call_script, "script_cf_gain_trait_bear_shape"),
       (try_end),
   ]),
