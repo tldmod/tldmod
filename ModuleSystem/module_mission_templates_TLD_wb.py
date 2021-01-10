@@ -3869,6 +3869,13 @@ voice_commands = [(ti_on_order_issued,0,3, [
 #
 beorning_shapeshift = [
 
+    # Change the form to alternative if one was selected, just prior battle
+    (ti_before_mission_start, 0, ti_once, [], [
+        (call_script, "script_cf_in_bear_form"), (eq, reg0, 1),
+        (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
+        (set_player_troop, ":bear_troop"),
+    ]),
+ 
     # FIXING GRAPHIC GLITCH
     #by setting certain agents invisible (those who use invisible equipment)
     (ti_on_agent_spawn, 2.5, 0, [], [
@@ -3887,9 +3894,11 @@ beorning_shapeshift = [
         (agent_set_visibility, ":horse", 1),
     ]),
      
-    # BEAR SETUP: After agent spawned 
+    # BEAR SETUP: After agent spawned
+    # transfer stats from player clone -> horse(bear) agent
     (ti_after_mission_start, 0, ti_once, [], [
         (get_player_agent_no, ":agent"),
+
         # If player agent is Beorning, those two are  set
         (call_script, "script_cf_in_bear_form"), (eq, reg0, 1),
 
@@ -3905,13 +3914,14 @@ beorning_shapeshift = [
         (agent_set_visibility, ":agent", 0),
         (agent_set_animation, ":agent", "anim_hide_inside_warg"),
 
+        # Get the copied player alternative troop HP (has to be computed)
         (agent_get_troop_id, ":agent_troop", ":agent"),
         (store_attribute_level, ":bear_hp", ":agent_troop", ca_strength),
         (store_skill_level, ":ironflesh", skl_ironflesh, ":agent_troop"),
-        (store_troop_health, ":curr_hp", "$g_player_troop", 1),
+        (store_troop_health, ":curr_hp", ":agent_troop", 1),
         (val_add, ":bear_hp", 35),
         (val_mul, ":ironflesh", 2),
-        (val_add, ":bear_hp", ":ironflesh"), # Health computed
+        (val_add, ":bear_hp", ":ironflesh"), 
         (val_mul, ":curr_hp", 2),
         (val_mul, ":bear_hp", 2),
  
@@ -3926,12 +3936,12 @@ beorning_shapeshift = [
 
     # EXIT TRIGGERS
     (ti_on_leave_area, 0, ti_once, [], [
-        (call_script, "script_cf_shapeshift_to_human"),
+        (call_script, "script_cf_select_human_form"),
     ]),
 
     # Cover the case in which what happens
     (ti_on_player_exit, 0, 0, [], [
-        (call_script, "script_cf_shapeshift_to_human"),
+        (call_script, "script_cf_select_human_form"),
     ]),
 
     # Exit if player pressed tab
@@ -3939,7 +3949,7 @@ beorning_shapeshift = [
         (this_or_next|eq, "$battle_won", 1),
         (this_or_next|eq, "$battle_won", 2),
         (main_hero_fallen),
-        (call_script, "script_cf_shapeshift_to_human"),
+        (call_script, "script_cf_select_human_form"),
     ]),
 
     # DISMOUNTING action
@@ -4020,14 +4030,14 @@ beorning_shapeshift = [
         (try_end),
 
         # Shapeshift back to human form (only troop) 
-        (call_script, "script_cf_shapeshift_to_human"),
+        (call_script, "script_cf_select_human_form"),
     ]),
 
     # Tab menu
     (ti_question_answered, 0, 0, [], [ 
         (store_trigger_param_1,":answer"),
         (eq,":answer",0),
-        (call_script, "script_cf_shapeshift_to_human"),
+        (call_script, "script_cf_select_human_form"),
     ]),
 
 
@@ -4077,7 +4087,7 @@ beorning_shapeshift = [
     ]),
 
     # SLAM ATTACK ANIM
-    (0, 0, 3.5, [(game_key_clicked, gk_defend)],[
+    (0, 0, 2.8, [(game_key_clicked, gk_defend)],[
 
         # Check if agent is shapeshifted beorning
         (get_player_agent_no, ":agent_no"),
@@ -4151,7 +4161,8 @@ beorning_shapeshift = [
     # ATTACK EFFECTS
     # This trigger consequences are dealayed which mean bear should be playing attack 
     # animation while consequences are executed
-    (0, 0.5, 1.0, [(this_or_next|game_key_clicked, gk_attack),
+    (0, 0.4, 1.0, [
+        (this_or_next|game_key_clicked, gk_attack),
         (this_or_next|game_key_clicked, gk_defend),
         (game_key_clicked, gk_kick)
         ],[

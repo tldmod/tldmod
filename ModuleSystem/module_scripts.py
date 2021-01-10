@@ -29785,44 +29785,85 @@ if is_a_wb_script==1:
 ("cf_in_bear_form",
     [
       (assign, reg0, 0),
+      (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
       (try_begin),
-          (ge, "$g_player_troop", 0),
-          (troop_get_inventory_slot, ":horse_item", "$g_player_troop", ek_horse),
+          (troop_get_inventory_slot, ":horse_item", ":bear_troop", ek_horse),
           (eq, ":horse_item", "itm_bear"),
-          (troop_get_inventory_slot, ":body_item", "$g_player_troop", ek_body),
+          # Main check
+          (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
+          (troop_get_inventory_slot, ":body_item", ":bear_troop", ek_body),
           (eq, ":body_item", "itm_warg_ghost_armour"),
-          (troop_is_hero, "$g_player_troop"),
+          (troop_is_hero, ":bear_troop"),
           (assign, reg0, 1),
       (try_end),
       (set_trigger_result, reg0),
 ]),
 
-# script_skinchange_human
+# script_cf_select_bear_form
+# inputs: None
+# outputs: None
+("cf_select_bear_form", [
+    (try_begin),
+        # Use the troop slot to remember that player troop morphed to suit the
+        (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"),
+        (troop_set_slot, "trp_player", slot_troop_player_clone,  ":bear_troop"),
+
+        # Clone player into multiplayer something
+        (call_script, "script_clone_troop", "trp_player", ":bear_troop"),
+     
+        (troop_clear_inventory, ":bear_troop"),
+        (troop_set_inventory_slot, ":bear_troop", ek_horse, "itm_bear"),
+        (troop_set_inventory_slot, ":bear_troop", ek_item_0, "itm_warg_ghost_lance"),
+        (troop_set_inventory_slot, ":bear_troop", ek_body, "itm_warg_ghost_armour"),
+        (troop_set_inventory_slot, ":bear_troop", ek_head, "itm_empty_head"),
+        (troop_set_inventory_slot, ":bear_troop", ek_gloves, "itm_empty_hands"),
+        (troop_set_inventory_slot, ":bear_troop", ek_foot, "itm_empty_legs"),
+        (troop_raise_skill, ":bear_troop", skl_riding, 10),
+
+        # Proper name and set the shit
+        (str_store_troop_name, s3, "trp_player"),
+        (troop_set_name, ":bear_troop", s3),
+
+        # Setup race and faction
+        (troop_get_type, ":race", "trp_player"),
+        (troop_set_type,":bear_troop", ":race"),
+        (store_troop_faction, ":fac", "trp_player"),
+        (troop_set_faction, ":bear_troop", ":fac"),
+
+        # Store xp of the bear troop and
+        (troop_get_xp, ":bear_xp", ":bear_troop"),
+        (val_mul, ":bear_xp", -1),
+        (add_xp_to_troop, ":bear_xp", ":bear_troop"),
+        # The last piece is in mission module triggers
+        (display_log_message, "@BEAR shapeshift into a bear!"),
+    (end_try),
+]),
+
+# script_select_human_form
 # This script should be called before the mission, or after it it doesn't affec the
 # Input: None
 # Output: none
-("cf_shapeshift_to_human",
+("cf_select_human_form",
     [ 
-      (ge, "$g_player_troop", 0),
-      (troop_get_inventory_slot, ":horse_item", "$g_player_troop", ek_horse),
-      (eq, ":horse_item", "itm_bear"),
-      (troop_get_inventory_slot, ":body_item", "$g_player_troop", ek_body),
-      (eq, ":body_item", "itm_warg_ghost_armour"),
-      (troop_is_hero, "$g_player_troop"),
+      (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
+      (try_begin),
+          (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
 
-      # Remember hp and xp
-      (store_troop_health, ":bear_hp", "$g_player_troop", 1),
-      (troop_get_xp, ":bear_xp", "$g_player_troop"),
-      
-      (assign, "$g_player_troop", "trp_player"),
-      (set_player_troop, "trp_player"),
-      (troop_set_health, "trp_player", ":bear_hp"),
+          # Remember hp and xp
+          (store_troop_health, ":bear_hp", ":bear_troop", 1),
+          (troop_get_xp, ":bear_xp", ":bear_troop"),
+          (set_player_troop, "trp_player"),
+          (troop_set_health, "trp_player", ":bear_hp"),
 
-      # Get back xp earned as bear
-      (assign, reg1, ":bear_xp"),
-      (display_message, "@You got {reg1} xp in bear form"),
-      (add_xp_to_troop, ":bear_xp", "trp_player"),
-      (display_log_message, "@BEAR shapeshifted back to HUMAN FORM!"),
+          # Get back xp earned as bear
+          (assign, reg1, ":bear_xp"),
+          (display_message, "@You got {reg1} xp in bear form"),
+          (add_xp_to_troop, ":bear_xp", "trp_player"),
+          (display_log_message, "@BEAR shapeshifted back to HUMAN FORM!"),
+
+          # Reset the slot
+          (troop_set_slot, "trp_player", slot_troop_player_clone, "$g_player_troop"),
+      (try_end),
 ]),
 
 # script_bear_attack_no_anim
@@ -29838,23 +29879,26 @@ if is_a_wb_script==1:
 
     # Set defender animation depending on attack type and increase damge
     (assign, ":max_distance", 300),
-    (agent_get_position, pos6, ":agent_no"),
+    (agent_get_horse, ":bear", ":agent_no"),
+    (agent_get_position, pos6, ":bear"),
     (try_begin),
         (eq, ":attack_anim", "anim_bear_slap_right"),
         (val_add, ":base_dmg", 3),
         (display_log_message, "@BEAR Attacked with paw slap!"),
         (assign, ":fly_anim", "anim_strike_fly_back"),
+        (position_move_y, pos6, 50, 0),
     (else_try),
         (eq, ":attack_anim", "anim_bear_uppercut"),
         (display_log_message, "@BEAR Attacked with uppercut!"),
         (assign, ":fly_anim", "anim_strike_fly_back_rise_from_left"), # Hit is from left
+        (position_move_y, pos6, 50, 0),
     (else_try),
         (eq, ":attack_anim", "anim_warg_leapattack"),
         (display_log_message, "@BEAR Attacked with leap!"),
         (val_sub, ":base_dmg", 5),
         (assign, ":fly_anim", "anim_strike_fly_back"), # Hit is from left
         # Adjust from where the attack occurs (move in local frame of ref)
-        (position_move_y, pos6, -150, 0),
+        (position_move_y, pos6, -100, 0),
         (assign, ":max_distance", 450),
     (else_try),
         (eq, ":attack_anim", "anim_bear_slam"),
@@ -29864,10 +29908,9 @@ if is_a_wb_script==1:
         #(assign, ":fly_anim", "anim_fall_body_back"), # TODO Works starnge and agents are stuck
     (try_end),
 
-
     # Loop over enemies to check if someone is in front
     (assign, ":damaged_agents", 0),
-    (assign, ":agents_to_damage", 100), 
+    (assign, ":agents_to_damage", 50), 
     (try_for_agents, ":enemy_agent", pos6, ":max_distance"),
         (agent_is_alive, ":enemy_agent"),
         (agent_is_human, ":enemy_agent"), # TODO allow attack on horses
@@ -29917,11 +29960,6 @@ if is_a_wb_script==1:
         (try_end),
         # Bear strikes 
         (le, ":damaged_agents", ":agents_to_damage"), # Allows us to limit the number of agents an animal can strike
-        #HERE comment out
-        #(set_show_messages, 0),
-        #(store_agent_hit_points,":hp",":enemy_agent",1),
-        #(val_sub, ":hp", reg66),
-        #(agent_set_hit_points, ":enemy_agent", ":hp", 1),
         (store_random_in_range, ":dmg", 0, ":base_dmg"),
         (val_add, ":dmg", ":base_dmg"), 
         (agent_deliver_damage_to_agent, ":agent_no", ":enemy_agent", ":dmg", "itm_beorn_axe_reward"),
@@ -29929,38 +29967,6 @@ if is_a_wb_script==1:
         (val_add, ":damaged_agents", 1),
         (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
     (try_end),
-]),
-
-# script_cf_shapeshift_to_bear
-# inputs: None
-# outputs: None
-("cf_shapeshift_to_bear", [
-    # Use the troop slot to remember that player troop morphed to suit the
-    (assign, "$g_player_troop", "trp_multiplayer_profile_troop_male"),
-
-    # Clone player into multiplayer something
-    (call_script, "script_clone_troop", "trp_player", "$g_player_troop"),
- 
-    (troop_clear_inventory, "$g_player_troop"),
-    (troop_set_inventory_slot, "$g_player_troop", ek_horse, "itm_bear"),
-    (troop_set_inventory_slot, "$g_player_troop", ek_item_0, "itm_warg_ghost_lance"),
-    (troop_set_inventory_slot, "$g_player_troop", ek_body, "itm_warg_ghost_armour"),
-    (troop_set_inventory_slot, "$g_player_troop", ek_head, "itm_empty_head"),
-    (troop_set_inventory_slot, "$g_player_troop", ek_gloves, "itm_empty_hands"),
-    (troop_set_inventory_slot, "$g_player_troop", ek_foot, "itm_empty_legs"),
-    (troop_raise_skill, "$g_player_troop", skl_riding, 10),
-
-    # Proper name and set the shit
-    (str_store_troop_name, s3, "trp_player"),
-    (troop_set_name, "$g_player_troop", s3),
-
-    # Store xp of the bear troop and
-    (troop_get_xp, ":bear_xp", "$g_player_troop"),
-    (val_mul, ":bear_xp", -1),
-    (add_xp_to_troop, ":bear_xp", "$g_player_troop"),
-
-    (set_player_troop, "$g_player_troop"),
-    (display_log_message, "@BEAR shapeshift into a bear!"),
 ]),
 
 #script_cf_gain_trait_bear_shape
