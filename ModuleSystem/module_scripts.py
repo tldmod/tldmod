@@ -29971,39 +29971,38 @@ if is_a_wb_script==1:
  ]), 
 
 #script_update_bear_kinship
-# Fired whenever bear is summoned in battle to count how many times playe has chance to 
-# form a kinship with them
+# Fired whenever bear is encountered to form a kinship with them.
 # slot_trait_bear_shape is 0 - no trait, 1 - trait, n>1, no trait stores bear kinship
 ("cf_update_bear_kinship",[
-    (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
-    (neq, ":bear_kinship", 1),
-    (lt, ":bear_kinship", 100), # 101 is reserved for 
-
-    # Player strong enough to form kinship with bears
-    (store_troop_faction, ":faction", "trp_player"),
-    (eq, ":faction", "fac_beorn"), # Only beorning get bear kinship points
-    (store_attribute_level, ":charisma", "trp_player", ca_charisma),
-    (ge, ":charisma", 13),
-    (store_attribute_level, ":strength", "trp_player", ca_strength),
-    (ge, ":strength", 18),
-    
-    # Bear kinship is the amount of appearences when player was with bears and with small party
-    (get_player_agent_no, ":agent"),
-    (agent_get_party_id, ":party", ":agent"),
-    (store_party_size, ":party_size", ":party"),
-    
-    # 50% chance if party is small 100% if we are alone
-    (store_random_in_range,":rnd",0, 2),
-    (this_or_next|le, ":party_size", 10),
-    (ge, ":rnd", 1),
-
-    # Increase approprietly (skipping one)
     (try_begin),
-        (eq, ":bear_kinship", 0),
-        (assign, ":bear_kinship", 2),
-    (else_try),
-        (val_add, ":bear_kinship", 1),
+        (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
+        (neq, ":bear_kinship", 1),
+        (lt, ":bear_kinship", 100),
+
+        # Player strong enough to form kinship with bears
+        (eq, "$players_kingdom", "fac_beorn"), # Only beorning get bear kinship points
+        (store_attribute_level, ":charisma", "trp_player", ca_charisma),
+        (ge, ":charisma", 13),
+        (store_attribute_level, ":strength", "trp_player", ca_strength),
+        (ge, ":strength", 18),
+
+        # Bear kinship is the amount of appearences when player was with bears and with small party
+        (get_player_agent_no, ":agent"),
+        (agent_get_party_id, ":party", ":agent"),
+        (store_party_size, ":party_size", ":party"),
+
+        # 50% chance if party is small 100% if we are alone
+        (store_random_in_range,":rnd",0, 2),
+        (this_or_next|le, ":party_size", 10),
+        (ge, ":rnd", 1),
+
+        # Increase approprietly (skipping one)
+        (try_begin),
+            (eq, ":bear_kinship", 0),
+            (assign, ":bear_kinship", 2),
+        (else_try),
+            (val_add, ":bear_kinship", 1),
+        (try_end),
     (try_end),
-    (display_log_message, "@DEBUG: bear kinship increases."),
  ]), 
 ]

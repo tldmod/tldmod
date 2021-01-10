@@ -1571,10 +1571,10 @@ triggers = [
         (val_mul, ":bear_kinship", 50), # DEBUG should be val_div 2
         # Chance = (private bear meetings - 3) / 2
         (store_random_in_range, ":rnd", 0, 100),
-        (lt, ":rnd", ":bear_kinship"),
         (assign, reg1, ":bear_kinship"), # DEBUG
-        (assign, reg2, ":rnd"), # DEBUG
         (display_message, "@Bear kinship test {reg1} roll: {reg2}", color_bad_news),
+        (assign, reg2, ":rnd"), # DEBUG
+        (lt, ":rnd", ":bear_kinship"),
         (call_script, "script_cf_gain_trait_bear_shape"),
       (try_end),
   ]),
