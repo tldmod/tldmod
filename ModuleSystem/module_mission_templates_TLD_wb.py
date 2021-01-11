@@ -4021,7 +4021,7 @@ beorning_shapeshift = [
     ]),
 
     # SLAM ATTACK ANIM
-    (0, 0, 2.8, [(game_key_clicked, gk_defend)],[
+    (0, 0, 2.5, [(game_key_clicked, gk_defend)],[
 
         # Check if agent is shapeshifted beorning
         (get_player_agent_no, ":agent_no"),
@@ -4057,7 +4057,7 @@ beorning_shapeshift = [
     ]),
 
     # LEAP ATTACK TRIGGER(ANIM)
-    (0, 0, 3.0, [(game_key_clicked, gk_kick)],[
+    (0, 0, 2.8, [(game_key_clicked, gk_kick)],[
 
         # Check if agent is shapeshifted beorning
         (get_player_agent_no, ":agent_no"),
@@ -4095,29 +4095,40 @@ beorning_shapeshift = [
     # ATTACK EFFECTS
     # This trigger consequences are dealayed which mean bear should be playing attack 
     # animation while consequences are executed
-    (0, 0.4, 1.0, [
-        (this_or_next|game_key_clicked, gk_attack),
-        (this_or_next|game_key_clicked, gk_defend),
-        (game_key_clicked, gk_kick)
-        ],[
-
-        # Check if agent is in the middle of an attack
+    (0, 0.4, 1.0, [(this_or_next|game_key_clicked, gk_attack),(game_key_clicked, gk_kick),],[
+         # Check if agent is in the middle of an attack
         (get_player_agent_no, ":agent_no"),
-        (agent_is_active, ":agent_no"),
         (agent_is_alive, ":agent_no"),
-    
+
         # We/our bear have to be alive
         (agent_get_horse, ":horse", ":agent_no"),
-        (agent_is_active, ":horse"),
-        (agent_is_alive, ":horse"),
-        
+        (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
+
         # Start if our horse(bear) is in the middle of attack
         (agent_get_animation, ":curr_anim_bear", ":horse", 0),
         (this_or_next|eq, ":curr_anim_bear", "anim_bear_slap_right"),
         (this_or_next|eq, ":curr_anim_bear", "anim_warg_leapattack"),
-        (this_or_next|eq, ":curr_anim_bear", "anim_bear_slam"),
         (eq, ":curr_anim_bear", "anim_bear_uppercut"),
 
+        # Setup damage & execute the attack
+        (agent_get_troop_id, ":agent_troop", ":agent_no"),
+        (store_attribute_level, ":base_dmg", ":agent_troop", ca_strength),
+        (call_script, "script_bear_attack_no_anim", ":agent_no", ":base_dmg", ":curr_anim_bear"),
+    ]),
+    # Apply effects of bear attack (slam, has more delay)
+    (0, 1.0, 1.0, [(game_key_clicked, gk_defend),],[
+         # Check if agent is in the middle of an attack
+        (get_player_agent_no, ":agent_no"),
+        (agent_is_alive, ":agent_no"),
+
+        # We/our bear have to be alive
+        (agent_get_horse, ":horse", ":agent_no"),
+        (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
+
+        # Start if our horse(bear) is in the middle of attack
+        (agent_get_animation, ":curr_anim_bear", ":horse", 0),
+        (eq, ":curr_anim_bear", "anim_bear_slam"),
+               
         # Setup damage & execute the attack
         (agent_get_troop_id, ":agent_troop", ":agent_no"),
         (store_attribute_level, ":base_dmg", ":agent_troop", ca_strength),
@@ -4127,7 +4138,7 @@ beorning_shapeshift = [
     # BLOOD PARTICLES FOR SCRIPTED ATTACKS
     (ti_on_agent_hit, 0.1, 0, [
         # Attack must deal damage and be dealt by animal
-        (store_trigger_param, ":dmg", 3), (gt, ":dmg", 3),
+        (store_trigger_param, ":dmg", 3), (gt, ":dmg", 5),
         # Animal has to do the dmg (all animals have scripted attacks with predetermined anims)
         (store_trigger_param, ":attacker", 2),
         (agent_get_horse, ":animal", ":attacker"), (ge, ":animal", 0),
@@ -4187,13 +4198,13 @@ beorning_shapeshift = [
 
         # Cap the dmg it will be used
         (try_begin), # bigger dmg bigger blooood
-            (gt, ":dmg", 30),
-            (val_min, ":dmg", 70), 
+            (gt, ":dmg", 25),
+            (val_add, ":dmg", 15),
+            (val_min, ":dmg", 100), 
             (particle_system_burst, "psys_game_blood_rand_2", pos0, ":dmg"),
         (else_try),
-            (val_max, ":dmg", 20),
+            (val_add, ":dmg", 20),
             (particle_system_burst, "psys_game_blood_rand", pos0, ":dmg"),
         (try_end),
-        
     ]),
 ]

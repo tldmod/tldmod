@@ -29884,33 +29884,37 @@ if is_a_wb_script==1:
     (agent_get_position, pos6, ":bear"),
     (set_fixed_point_multiplier, 100),
     (position_move_z, pos6, 50, 0), # Attack center is slightly over the ground
+
+    # Setup attacker position offsets and "fake" attack weapon for different anims
+    (assign, ":attack_item", "itm_beorn_axe"),
     (try_begin),
         (eq, ":attack_anim", "anim_bear_slap_right"),
-        (display_log_message, "@BEAR Attacked with paw slap!"),
+        #(display_log_message, "@BEAR Attacked with paw slap!"),
         (assign, ":fly_anim", "anim_strike_fly_back"),
     (else_try),
         (eq, ":attack_anim", "anim_bear_uppercut"),
-        (display_log_message, "@BEAR Attacked with uppercut!"),
+        #(display_log_message, "@BEAR Attacked with uppercut!"),
         (assign, ":fly_anim", "anim_strike_fly_back_rise_from_left"), # Hit is from left
     (else_try),
         (eq, ":attack_anim", "anim_warg_leapattack"),
-        (display_log_message, "@BEAR Attacked with leap!"),
+        #(display_log_message, "@BEAR Attacked with leap!"),
         (val_sub, ":base_dmg", 5),
         (assign, ":fly_anim", "anim_strike_fly_back"), # Hit is from left
         # Adjust from where the attack occurs (move in local frame of ref)
         (position_move_y, pos6, -75, 0),
         (assign, ":max_distance", 425),
+        (assign, ":attack_item", "itm_beorn_axe_reward"),
     (else_try),
         (eq, ":attack_anim", "anim_bear_slam"),
+        (assign, ":attack_item", "itm_beorn_axe_reward"),
         (val_add, ":base_dmg", 7),
-        (display_log_message, "@BEAR Attacked with a slam!"),
+        #(display_log_message, "@BEAR Attacked with a slam!"),
         (assign, ":fly_anim", "anim_strike_fly_back_near_rise"), # TODO Check this 
-        #(assign, ":fly_anim", "anim_fall_body_back"), # TODO Works starnge and agents are stuck
     (try_end),
 
     # Loop over enemies to check if someone is in front
     (assign, ":damaged_agents", 0),
-    (assign, ":agents_to_damage", 30),
+    (assign, ":agents_to_damage", 25),
 
     (try_for_agents, ":enemy_agent", pos6, ":max_distance"),
         (agent_is_alive, ":enemy_agent"),
@@ -29927,6 +29931,7 @@ if is_a_wb_script==1:
         (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
         (this_or_next|lt, ":enemy_troop_id", 0),
         (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+        (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"), 
 
         # First position check
         (agent_get_position, pos8, ":enemy_agent"),
@@ -29951,6 +29956,7 @@ if is_a_wb_script==1:
         # Anim depending on being mounted or not
         (assign, ":channel", 0),
         (agent_get_horse, ":enemy_mount", ":enemy_agent"),
+        (assign, ":sounds_played", 0),
 
         # Decide if to hit an agent or it's mount or agent is a mount
         (try_begin), # No horse, agent not a horse
@@ -29986,15 +29992,44 @@ if is_a_wb_script==1:
         (try_begin),
             (eq, ":hit_mount_instead", 0),
             (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
-            (agent_deliver_damage_to_agent, ":agent_no", ":enemy_agent", ":dmg", "itm_beorn_axe"),
+            (agent_deliver_damage_to_agent_advanced, ":final_dmg", 
+                    ":agent_no", ":enemy_agent", ":dmg", "itm_beorn_axe"),
             (display_message, "@BEAR: Shapeshifter strikes primary target: {reg8}!"),
         (else_try),
             (eq, ":hit_mount_instead", 1),
-            (agent_deliver_damage_to_agent, ":agent_no", ":enemy_mount", ":dmg", "itm_beorn_axe"),
+            (agent_deliver_damage_to_agent_advanced, ":final_dmg",
+                    ":agent_no", ":enemy_mount", ":dmg", "itm_beorn_axe"),
             (display_message, "@BEAR: Shapeshifter strikes mount of human agent: {reg8}!"),
         (try_end),
         (val_add, ":damaged_agents", 1),
+        
+        # ON-HIT SOUNDS
+        (try_begin),
+            (lt, ":sounds_played", 2),
+            # Calc absorbed dmg and play sound depending on it and final dmg
+            (val_sub, ":dmg", ":final_dmg"),
+
+            # Animation attack resulting in blunt dmg -> blunt sound
+            (try_begin),
+                (eq, ":attack_item", "itm_beorn_axe_reward"),
+                (agent_play_sound, ":enemy_agent", "snd_blunt_hit"),
+            (else_try),
+            # High armour high damage
+                (ge, ":dmg", 25), (ge, ":final_dmg", 15),
+                (agent_play_sound, ":enemy_agent", "snd_metal_hit_high_armor_high_damage"),
+            # High armour low damage
+            (else_try),
+                (ge, ":dmg", 25), (lt, ":final_dmg", 15),
+                (agent_play_sound, ":enemy_agent", "snd_metal_hit_high_armor_low_damage"),
+            (else_try),
+                (lt, ":dmg", 25),
+                (agent_play_sound, ":enemy_agent", "snd_metal_hit_low_armor_high_damage"),
+            (try_end),
+            (val_add, ":sounds_played", 1),
+        (try_end), # END OF SOUND CODE
+
     (try_end),
+ 
 ]),
 
 #script_cf_gain_trait_bear_shape
