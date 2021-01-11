@@ -29993,12 +29993,12 @@ if is_a_wb_script==1:
             (eq, ":hit_mount_instead", 0),
             (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
             (agent_deliver_damage_to_agent_advanced, ":final_dmg", 
-                    ":agent_no", ":enemy_agent", ":dmg", "itm_beorn_axe"),
+                    ":agent_no", ":enemy_agent", ":dmg", ":attack_item"),
             (display_message, "@BEAR: Shapeshifter strikes primary target: {reg8}!"),
         (else_try),
             (eq, ":hit_mount_instead", 1),
             (agent_deliver_damage_to_agent_advanced, ":final_dmg",
-                    ":agent_no", ":enemy_mount", ":dmg", "itm_beorn_axe"),
+                    ":agent_no", ":enemy_mount", ":dmg", ":attack_item"),
             (display_message, "@BEAR: Shapeshifter strikes mount of human agent: {reg8}!"),
         (try_end),
         (val_add, ":damaged_agents", 1),
@@ -30010,17 +30010,24 @@ if is_a_wb_script==1:
             (val_sub, ":dmg", ":final_dmg"),
 
             # Animation attack resulting in blunt dmg -> blunt sound
+            # High armour
             (try_begin),
-                (eq, ":attack_item", "itm_beorn_axe_reward"),
-                (agent_play_sound, ":enemy_agent", "snd_blunt_hit"),
+                (eq, ":attack_item", "itm_beorn_axe_reward"), # blunt weapon
+                (ge, ":dmg", 25),
+                (agent_play_sound, ":enemy_agent", "snd_wooden_hit_high_armor_high_damage"),
+            # Low armor
             (else_try),
-            # High armour high damage
+                (eq, ":attack_item", "itm_beorn_axe_reward"),
+                (agent_play_sound, ":enemy_agent", "snd_wooden_hit_low_armor_high_damage"),
+            # Slash attack: High armour high damage
+            (else_try),
                 (ge, ":dmg", 25), (ge, ":final_dmg", 15),
                 (agent_play_sound, ":enemy_agent", "snd_metal_hit_high_armor_high_damage"),
-            # High armour low damage
+            # Slash: High armour low damage
             (else_try),
                 (ge, ":dmg", 25), (lt, ":final_dmg", 15),
                 (agent_play_sound, ":enemy_agent", "snd_metal_hit_high_armor_low_damage"),
+            # Slash: low armor
             (else_try),
                 (lt, ":dmg", 25),
                 (agent_play_sound, ":enemy_agent", "snd_metal_hit_low_armor_high_damage"),
