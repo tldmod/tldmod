@@ -3952,88 +3952,19 @@ beorning_shapeshift = [
         (call_script, "script_cf_select_human_form"),
     ]),
 
-    # DISMOUNTING action
-    (ti_on_agent_dismount, 0, 0, [], [
-        (store_trigger_param_1, ":agent"),
-        (store_trigger_param_2, ":horse"),
-
+    # DISMOUNTING action (should only be played for player)
+    (ti_on_agent_dismount, 0, ti_once, [
         # Now check if agent that is dismounting is player agent (coz only he can be in bear form)
+        (store_trigger_param_1, ":agent"),
         (get_player_agent_no, ":player_agent"),
         (eq, ":player_agent", ":agent"),
-
         # Check if we are shapeshifted Beorning
-        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
-
-
-        (try_begin), 
-            # Only if horse/bear mount is alive allow it
-            (agent_is_alive, ":horse"),
-            (agent_is_active, ":horse"),
-            (store_agent_hit_points, ":bear_hp", ":horse", 1),
-
-            # Horse
-            (troop_get_inventory_slot, ":item", "trp_player", ek_horse),
-            (try_begin), (ge, ":item", 0), (agent_equip_item, ":agent", ":item"),
-            (else_try), (agent_unequip_item, ":agent", "itm_bear"), (try_end),
-
-            # Body
-            (troop_get_inventory_slot, ":item", "trp_player", ek_body),
-            (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
-            (else_try), (agent_unequip_item, ":agent", "itm_warg_ghost_armour"), (try_end),
-
-            # Head
-            (troop_get_inventory_slot, ":item", "trp_player", ek_head),
-            (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
-            (else_try), (agent_unequip_item, ":agent", "itm_empty_head"), (try_end),
-
-            # Hands
-            (troop_get_inventory_slot, ":item", "trp_player", ek_gloves),
-            (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
-            (else_try), (agent_unequip_item, ":agent", "itm_empty_hands"), (try_end),
-
-            # Legs
-            (troop_get_inventory_slot, ":item", "trp_player", ek_foot),
-            (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
-            (else_try), (agent_unequip_item, ":agent", "itm_empty_legs"), (try_end),
-
-            # Weapons, only first one has a risk of being ghost lance
-            (troop_get_inventory_slot, ":item", "trp_player", ek_item_0),
-            (agent_unequip_item, ":agent", "itm_warg_ghost_lance"),
-            (try_begin),(ge, ":item", 0), (agent_equip_item, ":agent", ":item", 1), (try_end),
-
-            (troop_get_inventory_slot, ":item", "trp_player", ek_item_1),
-            (try_begin),(ge, ":item", 0), (agent_equip_item, ":agent", ":item", 2), (try_end),
-
-            (troop_get_inventory_slot, ":item", "trp_player", ek_item_2),
-            (try_begin),(ge, ":item", 0), (agent_equip_item, ":agent", ":item", 3), (try_end),
-
-            (troop_get_inventory_slot, ":item", "trp_player", ek_item_3),
-            (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item", 4), (try_end),
-
-            # Have proper position
-            (agent_is_alive, ":agent"),
-            (agent_set_animation, ":agent", "anim_hide_inside_warg"),
-            (agent_set_animation, ":agent", "anim_bow_to_lord_stay_down"),
-
-            # Fadie out the bear
-            (agent_get_position, pos1, ":agent"),
-            (particle_system_burst, "psys_bear_fur", pos1, 100),
-
-            # Set proper hp
-            (val_div, ":bear_hp", 2),
-            (val_add, ":bear_hp", 1),
-            (agent_set_hit_points, ":agent", ":bear_hp", 1),
-            (agent_set_visibility, ":agent", 1),
-            (agent_fade_out, ":horse"),
-            #(display_log_message, "@DEBUG dismount trigger shapeshift to human"),
-        (else_try), # Else kill the player
-            (agent_set_hit_points, ":agent", 0),
-            (agent_deliver_damage_to_agent, ":agent", ":agent", 1),
-            #(display_log_message, "@DEBUG dismount -> kill player"),
-        (try_end),
-
-        # Shapeshift back to human form (only troop) 
-        (call_script, "script_cf_select_human_form"),
+        (call_script, "script_cf_bear_form_selected"), 
+        (eq, reg0, 1),
+    ], [
+        (store_trigger_param_1, ":agent"),
+        (store_trigger_param_2, ":horse"),
+        (call_script, "script_cf_bearform_on_dismount", ":agent", ":horse"),
     ]),
 
     # Tab menu
@@ -4191,5 +4122,76 @@ beorning_shapeshift = [
         (agent_get_troop_id, ":agent_troop", ":agent_no"),
         (store_attribute_level, ":base_dmg", ":agent_troop", ca_strength),
         (call_script, "script_bear_attack_no_anim", ":agent_no", ":base_dmg", ":curr_anim_bear"),
-    ])
+    ]),
+
+    # BLOOD PARTICLES FOR SCRIPTED ATTACKS
+    (ti_on_agent_hit, 0.1, 0, [
+        # Attack must deal damage and be dealt by animal
+        (store_trigger_param, ":dmg", 3), (gt, ":dmg", 3),
+        # Animal has to do the dmg (all animals have scripted attacks with predetermined anims)
+        (store_trigger_param, ":attacker", 2),
+        (agent_get_horse, ":animal", ":attacker"), (ge, ":animal", 0),
+        (agent_get_animation, ":attack_anim", ":animal", 0),
+        (this_or_next|eq, ":attack_anim", "anim_bear_slap_right"),
+        (this_or_next|eq, ":attack_anim", "anim_warg_leapattack"),
+        (this_or_next|eq, ":attack_anim", "anim_bear_slam"),
+        (eq, ":attack_anim", "anim_bear_uppercut"),
+    ],[
+        # Check item damage
+        (store_trigger_param, ":dmg", 3),
+        (ge, reg0, 0),
+
+        # Check damage type blunt -> no blood
+        (item_get_swing_damage_type, ":dmg_type", reg0), 
+        (neq, ":dmg_type", blunt),
+
+        # Check troop height
+        # Get race to get blood
+        (store_trigger_param, ":victim", 2),
+        (agent_get_troop_id, ":troop", ":victim"),
+
+        (try_begin),
+            (ge, ":troop", 0),
+            (troop_get_type, ":race", ":troop"),
+            (try_begin),
+                (eq, ":race", tf_troll),
+                (position_move_z, pos0, 210), 
+            (else_try),
+                (this_or_next|is_between, ":race", tf_orc_begin, tf_orc_end),
+                (eq, ":race", tf_dwarf),
+                (neq, ":race", tf_urukhai),
+                (neq, ":race", tf_uruk),
+                (position_move_z, pos0, 150), 
+            (else_try), # All the rest -> human size
+                (position_move_z, pos0, 170), 
+            (try_end),
+        (else_try), # Animal are target
+            # Horses
+            (agent_get_item_id, ":animal_type", ":victim"),
+            (try_begin),
+                (this_or_next|is_between, ":animal_type", item_horse_begin, item_horse_end),
+                (this_or_next|eq, ":animal_type", "itm_werewolf"),
+                (this_or_next|eq, ":animal_type", "itm_bear"),
+                (eq, ":animal_type", "itm_oliphant"),
+                (position_move_z, pos0, 170),
+            (else_try), # Wargs are shorter
+                (is_between, ":animal_type", item_warg_begin, item_warg_end),
+                (position_move_z, pos0, 140), 
+            (else_try),
+                (this_or_next|eq, ":animal_type", "itm_spider"),
+                (eq, ":animal_type", "itm_wolf"),
+                (position_move_z, pos0, 110), 
+            (else_try),
+                (position_move_z, pos0, 150), 
+            (try_end),
+        (try_end),
+
+        (try_begin), # bigger dmg bigger blooood
+            (gt, ":dmg", 25),
+            (particle_system_burst, "psys_game_blood_rand_2", pos0, 40),
+        (else_try),
+            (particle_system_burst, "psys_game_blood_rand", pos0, 40),
+        (try_end),
+        
+    ]),
 ]

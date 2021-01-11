@@ -29882,28 +29882,27 @@ if is_a_wb_script==1:
     (assign, ":max_distance", 300),
     (agent_get_horse, ":bear", ":agent_no"),
     (agent_get_position, pos6, ":bear"),
+    (set_fixed_point_multiplier, 100),
+    (position_move_z, pos6, 50, 0), # Attack center is slightly over the ground
     (try_begin),
         (eq, ":attack_anim", "anim_bear_slap_right"),
-        (val_add, ":base_dmg", 3),
         (display_log_message, "@BEAR Attacked with paw slap!"),
         (assign, ":fly_anim", "anim_strike_fly_back"),
-        (position_move_y, pos6, 50, 0),
     (else_try),
         (eq, ":attack_anim", "anim_bear_uppercut"),
         (display_log_message, "@BEAR Attacked with uppercut!"),
         (assign, ":fly_anim", "anim_strike_fly_back_rise_from_left"), # Hit is from left
-        (position_move_y, pos6, 50, 0),
     (else_try),
         (eq, ":attack_anim", "anim_warg_leapattack"),
         (display_log_message, "@BEAR Attacked with leap!"),
         (val_sub, ":base_dmg", 5),
         (assign, ":fly_anim", "anim_strike_fly_back"), # Hit is from left
         # Adjust from where the attack occurs (move in local frame of ref)
-        (position_move_y, pos6, -100, 0),
-        (assign, ":max_distance", 450),
+        (position_move_y, pos6, -75, 0),
+        (assign, ":max_distance", 425),
     (else_try),
         (eq, ":attack_anim", "anim_bear_slam"),
-        (val_add, ":base_dmg", 10),
+        (val_add, ":base_dmg", 7),
         (display_log_message, "@BEAR Attacked with a slam!"),
         (assign, ":fly_anim", "anim_strike_fly_back_near_rise"), # TODO Check this 
         #(assign, ":fly_anim", "anim_fall_body_back"), # TODO Works starnge and agents are stuck
@@ -29911,25 +29910,31 @@ if is_a_wb_script==1:
 
     # Loop over enemies to check if someone is in front
     (assign, ":damaged_agents", 0),
-    (assign, ":agents_to_damage", 50), 
+    (assign, ":agents_to_damage", 30),
+
     (try_for_agents, ":enemy_agent", pos6, ":max_distance"),
         (agent_is_alive, ":enemy_agent"),
-        (agent_is_human, ":enemy_agent"), # TODO allow attack on horses
         (agent_is_active, ":enemy_agent"),
-        (ge, ":enemy_agent", 0),
         (neq, ":enemy_agent", ":agent_no"),
+        (le, ":damaged_agents", ":agents_to_damage"), # Stop loop if enough agents were damaged
+        
+        # Allow attack direct attack horses only if they have no rider
+        (agent_get_rider, ":rider", ":enemy_agent"),
+        (this_or_next|agent_is_human, ":enemy_agent"),
+        (lt, ":rider", 0),
 
+        # Get enemy troop data and exclude invisible riders
         (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
+        (this_or_next|lt, ":enemy_troop_id", 0),
         (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
-        (store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
 
-        # First posiiton check
+        # First position check
         (agent_get_position, pos8, ":enemy_agent"),
         (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
         (lt, ":dist", ":max_distance"),
         (neg|position_is_behind_position, pos8, pos6), #2, 1
 
-        # Optional Check if the enemy was turned back to attacker
+        # Optional: Check if the enemy was turned back to attacker
         (try_begin),
             (position_is_behind_position, pos6, pos8), # attacker (1) behind victim (2)
             (assign, ":fly_anim", "anim_strike_fly_front"),
@@ -29945,28 +29950,50 @@ if is_a_wb_script==1:
 
         # Anim depending on being mounted or not
         (assign, ":channel", 0),
-        (agent_get_horse, ":target_horse", ":enemy_agent"),
-        (try_begin), # No horse
-            (lt, ":target_horse", 0),
+        (agent_get_horse, ":enemy_mount", ":enemy_agent"),
+
+        # Decide if to hit an agent or it's mount or agent is a mount
+        (try_begin), # No horse, agent not a horse
+            (lt, ":enemy_mount", 0),
+            (agent_is_human, ":enemy_agent"),
             (assign, ":hit_anim", ":fly_anim"),
+            (assign, ":hit_mount_instead", 0),
+        # Human rider: decide if hit a rider or its mount
         (else_try),
-            (gt, ":target_horse", 0),
-            (le, ":riding_skill", 5),
-            (assign, ":hit_anim", ":fly_anim"),
-            (agent_start_running_away, ":target_horse"),
-            (agent_stop_running_away, ":target_horse"),
-        (else_try),
-            (assign, ":hit_anim", "anim_strike_legs_front"),
-            (assign, ":channel", 1),
+            (ge, ":enemy_mount", 0),
+            (agent_is_human, ":enemy_agent"),
+            (store_random_in_range, ":hit_mount_instead", 0, 2),
+            (store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
+            (try_begin), # Dismount bad rider
+                (eq, ":hit_mount_instead", 0),
+                (le, ":riding_skill", 5),
+                (assign, ":hit_anim", ":fly_anim"),
+                (agent_start_running_away, ":enemy_mount"),
+                (agent_stop_running_away, ":enemy_mount"),
+            (else_try), # Only hit good rider
+                (eq, ":hit_mount_instead", 0),
+                (assign, ":hit_anim", "anim_strike_legs_front"),
+                (assign, ":channel", 1),
+            (try_end),
         (try_end),
-        # Bear strikes 
-        (le, ":damaged_agents", ":agents_to_damage"), # Allows us to limit the number of agents an animal can strike
+ 
+        # Calc dmg
         (store_random_in_range, ":dmg", 0, ":base_dmg"),
-        (val_add, ":dmg", ":base_dmg"), 
-        (agent_deliver_damage_to_agent, ":agent_no", ":enemy_agent", ":dmg", "itm_beorn_axe_reward"),
-        #(display_message, "@BEAR: Shapeshifter strikes!"),
+        (val_add, ":dmg", ":base_dmg"),
+
+        # Distribute damage to either mount or primary target
+        (assign, reg8, ":enemy_agent"),
+        (try_begin),
+            (eq, ":hit_mount_instead", 0),
+            (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
+            (agent_deliver_damage_to_agent, ":agent_no", ":enemy_agent", ":dmg", "itm_beorn_axe"),
+            (display_message, "@BEAR: Shapeshifter strikes primary target: {reg8}!"),
+        (else_try),
+            (eq, ":hit_mount_instead", 1),
+            (agent_deliver_damage_to_agent, ":agent_no", ":enemy_mount", ":dmg", "itm_beorn_axe"),
+            (display_message, "@BEAR: Shapeshifter strikes mount of human agent: {reg8}!"),
+        (try_end),
         (val_add, ":damaged_agents", 1),
-        (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
     (try_end),
 ]),
 
@@ -30018,5 +30045,88 @@ if is_a_wb_script==1:
         #(assign, reg1, ":bear_kinship"),
         #(display_message, "@DEBUG Bear kinship: increased {reg1}", color_good_news),
     (try_end),
- ]), 
+ ]),
+
+# script_cf_bearform_on_dismount
+# Script should be triggered when character dismounts while in bear from. Guy should either
+# die or reform to human
+# INPUTS:
+#   arg1 = agent
+#   arg2 = horse agent
+("cf_bearform_on_dismount",[
+    (display_log_message, "@DEBUG dismount fired"),
+    (store_script_param_1, ":agent"),
+    (store_script_param_2, ":horse"),
+    (mission_cam_set_screen_color, 0xEF2F0F0F),
+    (mission_cam_animate_to_screen_color, 0x00000000, 1500),
+    (try_begin), 
+        # Only if horse/bear mount is alive allow it
+        (agent_is_alive, ":horse"),
+        (agent_is_active, ":horse"),
+        (store_agent_hit_points, ":bear_hp", ":horse", 1),
+
+        # Horse
+        (troop_get_inventory_slot, ":item", "trp_player", ek_horse),
+        (try_begin), (ge, ":item", 0), (agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_bear"), (try_end),
+
+        # Body
+        (troop_get_inventory_slot, ":item", "trp_player", ek_body),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_warg_ghost_armour"), (try_end),
+
+        # Head
+        (troop_get_inventory_slot, ":item", "trp_player", ek_head),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_empty_head"), (try_end),
+
+        # Hands
+        (troop_get_inventory_slot, ":item", "trp_player", ek_gloves),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_empty_hands"), (try_end),
+
+        # Legs
+        (troop_get_inventory_slot, ":item", "trp_player", ek_foot),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_empty_legs"), (try_end),
+
+        # Weapons, only first one has a risk of being ghost lance
+        (troop_get_inventory_slot, ":item", "trp_player", ek_item_0),
+        (agent_unequip_item, ":agent", "itm_warg_ghost_lance"),
+        (try_begin),(ge, ":item", 0), (agent_equip_item, ":agent", ":item", 1), (try_end),
+
+        (troop_get_inventory_slot, ":item", "trp_player", ek_item_1),
+        (try_begin),(ge, ":item", 0), (agent_equip_item, ":agent", ":item", 2), (try_end),
+
+        (troop_get_inventory_slot, ":item", "trp_player", ek_item_2),
+        (try_begin),(ge, ":item", 0), (agent_equip_item, ":agent", ":item", 3), (try_end),
+
+        (troop_get_inventory_slot, ":item", "trp_player", ek_item_3),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item", 4), (try_end),
+
+        # Have proper position
+        (agent_is_alive, ":agent"),
+        (agent_set_animation, ":agent", "anim_hide_inside_warg"),
+        (agent_set_animation, ":agent", "anim_bow_to_lord_stay_down"),
+
+        # Fadie out the bear
+        (agent_get_position, pos1, ":agent"),
+        (particle_system_burst, "psys_bear_fur", pos1, 100),
+
+        # Set proper hp
+        (val_div, ":bear_hp", 2),
+        (val_add, ":bear_hp", 1),
+        (agent_set_hit_points, ":agent", ":bear_hp", 1),
+        (agent_set_visibility, ":agent", 1),
+        (agent_fade_out, ":horse"),
+        (display_log_message, "@DEBUG dismount trigger shapeshift to human"),
+    (else_try), # Else kill the player
+        (agent_set_hit_points, ":agent", 0),
+        (agent_deliver_damage_to_agent, ":agent", ":agent", 1),
+        (display_log_message, "@DEBUG dismount -> kill player"),
+    (try_end),
+
+    # Set troop to have human form again (only troop)
+    (call_script, "script_cf_select_human_form"),
+]),
 ]
