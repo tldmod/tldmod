@@ -4133,7 +4133,6 @@ beorning_shapeshift = [
         (agent_get_horse, ":animal", ":attacker"), (ge, ":animal", 0),
         (agent_get_animation, ":attack_anim", ":animal", 0),
         (this_or_next|eq, ":attack_anim", "anim_bear_slap_right"),
-        (this_or_next|eq, ":attack_anim", "anim_warg_leapattack"),
         (this_or_next|eq, ":attack_anim", "anim_bear_slam"),
         (eq, ":attack_anim", "anim_bear_uppercut"),
     ],[
@@ -4186,11 +4185,14 @@ beorning_shapeshift = [
             (try_end),
         (try_end),
 
+        # Cap the dmg it will be used
         (try_begin), # bigger dmg bigger blooood
-            (gt, ":dmg", 25),
-            (particle_system_burst, "psys_game_blood_rand_2", pos0, 40),
+            (gt, ":dmg", 30),
+            (val_min, ":dmg", 70), 
+            (particle_system_burst, "psys_game_blood_rand_2", pos0, ":dmg"),
         (else_try),
-            (particle_system_burst, "psys_game_blood_rand", pos0, 40),
+            (val_max, ":dmg", 20),
+            (particle_system_burst, "psys_game_blood_rand", pos0, ":dmg"),
         (try_end),
         
     ]),
