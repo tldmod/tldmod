@@ -29794,7 +29794,7 @@ if is_a_wb_script==1:
           (troop_is_hero, ":bear_troop"),
           (troop_get_inventory_slot, ":horse_item", ":bear_troop", ek_horse),
           (eq, ":horse_item", "itm_bear"),
-          (display_message, "@CHARACTER IN BEAR FORM -> TRUE"),
+          #(display_message, "@CHARACTER IN BEAR FORM -> TRUE"),
           (assign, reg0, 1),
       (try_end),
       (set_trigger_result, reg0),
@@ -29831,12 +29831,11 @@ if is_a_wb_script==1:
         (store_troop_faction, ":fac", "trp_player"),
         (troop_set_faction, ":bear_troop", ":fac"),
 
-        # Store xp of the bear troop and
-        (troop_get_xp, ":bear_xp", ":bear_troop"),
-        (val_mul, ":bear_xp", -1),
+        # Store xp of the bear troop
+        (troop_get_xp, ":bear_xp", ":bear_troop"), (val_mul, ":bear_xp", -1),
         (add_xp_to_troop, ":bear_xp", ":bear_troop"),
         # The last piece is in mission module triggers
-        (display_log_message, "@BEAR shapeshift into a bear!"),
+        (display_log_message, "@You hapeshift into a bear!", color_neutral_news),
     (end_try),
 ]),
 
@@ -29860,7 +29859,10 @@ if is_a_wb_script==1:
           (assign, reg1, ":bear_xp"),
           (display_message, "@You got {reg1} xp in bear form"),
           (add_xp_to_troop, ":bear_xp", "trp_player"),
-          (display_log_message, "@BEAR shapeshifted back to HUMAN FORM!"),
+
+          # Reset bear xp to 0
+          (val_mul, ":bear_xp", -1),
+          (add_xp_to_troop, ":bear_xp", ":bear_troop"),
 
           # Reset the slot
           (troop_set_slot, "trp_player", slot_troop_player_clone, "$g_player_troop"),
@@ -29875,7 +29877,7 @@ if is_a_wb_script==1:
 # OUTPUT: none
 ('bear_attack_no_anim', [
     (store_script_param, ":agent_no", 1),
-    (store_script_param, ":base_dmg",2),
+    (store_script_param, ":base_dmg", 2),
     (store_script_param, ":attack_anim", 3),
 
     # Set defender animation depending on attack type and increase damge
@@ -29898,11 +29900,11 @@ if is_a_wb_script==1:
     (else_try),
         (eq, ":attack_anim", "anim_warg_leapattack"),
         #(display_log_message, "@BEAR Attacked with leap!"),
-        (val_sub, ":base_dmg", 5),
+        (val_sub, ":base_dmg", 7),
         (assign, ":fly_anim", "anim_strike_fly_back"), # Hit is from left
         # Adjust from where the attack occurs (move in local frame of ref)
-        (position_move_y, pos6, -75, 0),
-        (assign, ":max_distance", 425),
+        (position_move_y, pos6, -100, 0),
+        (assign, ":max_distance", 450),
         (assign, ":attack_item", "itm_beorn_axe_reward"),
     (else_try),
         (eq, ":attack_anim", "anim_bear_slam"),
@@ -30034,12 +30036,11 @@ if is_a_wb_script==1:
             (try_end),
             (val_add, ":sounds_played", 1),
         (try_end), # END OF SOUND CODE
-
     (try_end),
- 
 ]),
 
-#script_cf_gain_trait_bear_shape
+# script_cf_gain_trait_bear_shape
+# Triggered after conditions to get the trait are satisfied
 ("cf_gain_trait_bear_shape",[
     (neg|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1), 
     # special case as not having the trait could be denoted in many ways
@@ -30047,7 +30048,7 @@ if is_a_wb_script==1:
     (call_script, "script_gain_trait", slot_trait_bear_shape),
  ]), 
 
-#script_update_bear_kinship
+# script_update_bear_kinship
 # Fired whenever bear is encountered to form a kinship with them.
 # slot_trait_bear_shape is 0 - no trait, 1 - trait, n>1, no trait stores bear kinship
 ("cf_update_bear_kinship",[
@@ -30099,8 +30100,8 @@ if is_a_wb_script==1:
     (display_log_message, "@DEBUG dismount fired"),
     (store_script_param_1, ":agent"),
     (store_script_param_2, ":horse"),
-    (mission_cam_set_screen_color, 0xEF2F0F0F),
-    (mission_cam_animate_to_screen_color, 0x00000000, 1500),
+    #(mission_cam_set_screen_color, 0xEF2F0F0F),
+    #(mission_cam_animate_to_screen_color, 0x00000000, 1500),
     (try_begin), 
         # Only if horse/bear mount is alive allow it
         (agent_is_alive, ":horse"),
@@ -30153,22 +30154,87 @@ if is_a_wb_script==1:
 
         # Fadie out the bear
         (agent_get_position, pos1, ":agent"),
-        (particle_system_burst, "psys_bear_fur", pos1, 100),
+        (particle_system_burst, "psys_bear_fur", pos1, 90),
 
-        # Set proper hp
-        (val_div, ":bear_hp", 2),
-        (val_add, ":bear_hp", 1),
+        # Set proper hp (divide bear hp by .
+        (val_div, ":bear_hp", 3), (val_max, ":bear_hp", 1),
         (agent_set_hit_points, ":agent", ":bear_hp", 1),
         (agent_set_visibility, ":agent", 1),
         (agent_fade_out, ":horse"),
-        (display_log_message, "@DEBUG dismount trigger shapeshift to human"),
+        (display_log_message, "@You change back to human form...", color_neutral_news),
     (else_try), # Else kill the player
         (agent_set_hit_points, ":agent", 0),
         (agent_deliver_damage_to_agent, ":agent", ":agent", 1),
-        (display_log_message, "@DEBUG dismount -> kill player"),
     (try_end),
 
     # Set troop to have human form again (only troop)
     (call_script, "script_cf_select_human_form"),
 ]),
+
+# script_show_on_hit_blood 
+# Spawn blood particle on hit
+# Inputs: 
+#   arg1 victim agent
+#   arg2 damage dealt
+#   arg3 dmg_type
+#
+("cf_on_hit_blood", [
+    (store_script_param, ":victim", 1),
+    (store_script_param, ":dmg", 2),
+    (store_script_param, ":dmg_type", 3),
+
+    # Check damage type blunt -> no blood
+    (neq, ":dmg_type", blunt),
+
+    # Check troop height to get proper blood
+    (agent_get_troop_id, ":troop", ":victim"),
+
+    (try_begin),
+        (ge, ":troop", 0),
+        (troop_get_type, ":race", ":troop"),
+        (try_begin),
+            (eq, ":race", tf_troll),
+            (position_move_z, pos0, 210), 
+        (else_try),
+            (this_or_next|is_between, ":race", tf_orc_begin, tf_orc_end),
+            (eq, ":race", tf_dwarf),
+            (neq, ":race", tf_urukhai),
+            (neq, ":race", tf_uruk),
+            (position_move_z, pos0, 155), 
+        (else_try), # All the rest -> human size
+            (position_move_z, pos0, 175), 
+        (try_end),
+    (else_try), # Animal are target
+        # Horses
+        (agent_get_item_id, ":animal_type", ":victim"),
+        (try_begin),
+            (this_or_next|is_between, ":animal_type", item_horse_begin, item_horse_end),
+            (this_or_next|eq, ":animal_type", "itm_werewolf"),
+            (this_or_next|eq, ":animal_type", "itm_bear"),
+            (eq, ":animal_type", "itm_oliphant"),
+            (position_move_z, pos0, 170),
+        (else_try), # Wargs are shorter
+            (is_between, ":animal_type", item_warg_begin, item_warg_end),
+            (position_move_z, pos0, 140), 
+        (else_try),
+            (this_or_next|eq, ":animal_type", "itm_spider"),
+            (eq, ":animal_type", "itm_wolf"),
+            (position_move_z, pos0, 110), 
+        (else_try),
+            (position_move_z, pos0, 150), 
+        (try_end),
+    (try_end),
+
+    # Cap the dmg it will be used
+    (try_begin), # bigger dmg bigger blooood
+        (gt, ":dmg", 25),
+        (val_add, ":dmg", 20),
+        (val_min, ":dmg", 100), 
+        (particle_system_burst, "psys_game_blood_rand_2", pos0, ":dmg"),
+    (else_try),
+        (val_add, ":dmg", 25),
+        (particle_system_burst, "psys_game_blood_rand", pos0, ":dmg"),
+    (try_end),
+]),
+
 ]
