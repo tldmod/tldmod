@@ -29224,6 +29224,8 @@ if is_a_wb_script==1:
 	(store_script_param_1, ":troop_to_clone"),
 	(store_script_param_2, ":troop_clone"),
 
+        # Clone level and xp
+
 	#Clone face
 	(str_store_troop_face_keys, s22, ":troop_to_clone"),
     (troop_set_face_keys, ":troop_clone", s22),
@@ -29809,6 +29811,30 @@ if is_a_wb_script==1:
         (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"),
         (troop_set_slot, "trp_player", slot_troop_player_clone,  ":bear_troop"),
 
+        # Proper name and set the shit
+        (str_store_troop_name, s3, "trp_player"),
+        (troop_set_name, ":bear_troop", s3),
+
+        # Setup race and faction
+        (troop_get_type, ":race", "trp_player"),
+        (troop_set_type,":bear_troop", ":race"),
+        (store_troop_faction, ":fac", "trp_player"),
+        (troop_set_faction, ":bear_troop", ":fac"),
+
+        # Copy player's xp to bear's
+        (troop_get_xp, ":diff_xp", "trp_player"),
+        (troop_get_xp, ":bear_xp", ":bear_troop"),
+ 
+        # Get the difference and add to other troop 
+        # NOTE This is hack somehow u can't grant TOO much xp at once
+        (val_sub, ":diff_xp", ":bear_xp"),
+        (store_div, ":n", ":diff_xp", 1000), (store_mod, ":r", ":diff_xp", 1000),
+        # Equlize
+        (try_for_range, ":i", 0, ":n"),
+            (add_xp_to_troop, 1000, ":bear_troop"),
+        (end_try),
+        (add_xp_to_troop, ":r", ":bear_troop"),
+
         # Clone player into multiplayer something
         (call_script, "script_clone_troop", "trp_player", ":bear_troop"),
      
@@ -29821,19 +29847,6 @@ if is_a_wb_script==1:
         (troop_set_inventory_slot, ":bear_troop", ek_foot, "itm_empty_legs"),
         (troop_raise_skill, ":bear_troop", skl_riding, 10),
 
-        # Proper name and set the shit
-        (str_store_troop_name, s3, "trp_player"),
-        (troop_set_name, ":bear_troop", s3),
-
-        # Setup race and faction
-        (troop_get_type, ":race", "trp_player"),
-        (troop_set_type,":bear_troop", ":race"),
-        (store_troop_faction, ":fac", "trp_player"),
-        (troop_set_faction, ":bear_troop", ":fac"),
-
-        # Store xp of the bear troop
-        (troop_get_xp, ":bear_xp", ":bear_troop"), (val_mul, ":bear_xp", -1),
-        (add_xp_to_troop, ":bear_xp", ":bear_troop"),
         # The last piece is in mission module triggers
         (display_log_message, "@You hapeshift into a bear!", color_neutral_news),
     (end_try),
@@ -29852,19 +29865,19 @@ if is_a_wb_script==1:
           # Remember hp and xp
           (store_troop_health, ":bear_hp", ":bear_troop", 1),
           (troop_get_xp, ":bear_xp", ":bear_troop"),
-          (set_player_troop, "trp_player"),
-          (troop_set_health, "trp_player", ":bear_hp"),
+          (troop_get_xp, ":player_xp", "trp_player"),
 
+          # Get the difference
+          (val_sub, ":bear_xp", ":player_xp"),
+ 
           # Get back xp earned as bear
           (assign, reg1, ":bear_xp"),
           (display_message, "@You got {reg1} xp in bear form"),
           (add_xp_to_troop, ":bear_xp", "trp_player"),
 
-          # Reset bear xp to 0
-          (val_mul, ":bear_xp", -1),
-          (add_xp_to_troop, ":bear_xp", ":bear_troop"),
-
           # Reset the slot
+          (set_player_troop, "trp_player"),
+          (troop_set_health, "trp_player", ":bear_hp"),
           (troop_set_slot, "trp_player", slot_troop_player_clone, "$g_player_troop"),
       (try_end),
 ]),
@@ -29996,12 +30009,12 @@ if is_a_wb_script==1:
             (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
             (agent_deliver_damage_to_agent_advanced, ":final_dmg", 
                     ":agent_no", ":enemy_agent", ":dmg", ":attack_item"),
-            (display_message, "@BEAR: Shapeshifter strikes primary target: {reg8}!"),
+            # (display_message, "@BEAR: Shapeshifter strikes primary target: {reg8}!"),
         (else_try),
             (eq, ":hit_mount_instead", 1),
             (agent_deliver_damage_to_agent_advanced, ":final_dmg",
                     ":agent_no", ":enemy_mount", ":dmg", ":attack_item"),
-            (display_message, "@BEAR: Shapeshifter strikes mount of human agent: {reg8}!"),
+            # (display_message, "@BEAR: Shapeshifter strikes mount of human agent: {reg8}!"),
         (try_end),
         (val_add, ":damaged_agents", 1),
         
@@ -30097,11 +30110,11 @@ if is_a_wb_script==1:
 #   arg1 = agent
 #   arg2 = horse agent
 ("cf_bearform_on_dismount",[
-    (display_log_message, "@DEBUG dismount fired"),
+    # (display_log_message, "@DEBUG dismount fired"),
     (store_script_param_1, ":agent"),
     (store_script_param_2, ":horse"),
-    #(mission_cam_set_screen_color, 0xEF2F0F0F),
-    #(mission_cam_animate_to_screen_color, 0x00000000, 1500),
+    # (mission_cam_set_screen_color, 0xEF2F0F0F),
+    # (mission_cam_animate_to_screen_color, 0x00000000, 1500),
     (try_begin), 
         # Only if horse/bear mount is alive allow it
         (agent_is_alive, ":horse"),
