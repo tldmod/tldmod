@@ -3896,7 +3896,7 @@ beorning_shapeshift = [
     ]),
      
     # BEAR SETUP: After agent spawned
-    # transfer stats from player clone -> horse(bear) agent
+    # transfer stats from player clone troop to horse(bear) agent
     (ti_after_mission_start, 0, ti_once, [], [
         (get_player_agent_no, ":agent"),
 
@@ -3925,57 +3925,78 @@ beorning_shapeshift = [
         (val_mul, ":bear_hp", 3), # max_bear_hp = 3 x max_player_hp
  
         # Get bear agent and increase its hp
-        (agent_get_horse, ":horse", ":agent"),
-        (ge, ":horse", 0),
+        (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
         (agent_set_max_hit_points, ":horse", ":bear_hp", 1),
         (agent_set_hit_points, ":horse", ":curr_hp", 1),
-        (assign, reg1, ":bear_hp"),
-        (display_message, "@Your bear form has max {reg1} HP!",0xff4040),
+        (assign, reg1, ":bear_hp"), (assign, reg2, ":curr_hp"),
+        (display_message, "@Your bear form has {reg2}/{reg1} HP!",0xff4040),
     ]),
 
-    # EXIT TRIGGERS
-    (ti_on_leave_area, 0, ti_once, [], [(call_script, "script_cf_select_human_form"),]),
-
-    # Cover the case in which what happens
-    (ti_on_player_exit, 0, 0, [], [(call_script, "script_cf_select_human_form"),]),
-
-    # Exit if player pressed tab
-    (ti_tab_pressed, 0, 0, [], [
-        (this_or_next|eq, "$battle_won", 1),
-        (this_or_next|eq, "$battle_won", 2),
-        (main_hero_fallen),
-        (call_script, "script_cf_select_human_form"),
+    # BEARFORM exit trigger: Leave area
+    # NOTE This maybe source of bugs whenever player agent is not available
+    (ti_on_leave_area, 0, 0, [], [
+        (assign, ":hp", 0),
+        (try_begin),
+            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
+            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
+            (store_agent_hit_points, ":hp", ":bear", 0), 
+        (end_try),
+        (call_script, "script_cf_select_human_form", ":hp"),
     ]),
 
-    # DISMOUNTING action (should only be played for player)
+    # BEARFORM exit trigger: Leave area
+    # NOTE This maybe source of bugs whenever player agent is not available
+    (ti_on_player_exit, 0, 0, [], [
+        (assign, ":hp", 0),
+        (try_begin),
+            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
+            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
+            (store_agent_hit_points, ":hp", ":bear", 0), 
+        (end_try),
+        (call_script, "script_cf_select_human_form", ":hp"),
+    ]),
+
+    # BEARFORM exit trigger: TAB pressed
+    (ti_tab_pressed, 0, 0, [
+        (this_or_next|eq, "$battle_won", 1), (this_or_next|eq, "$battle_won", 2),(main_hero_fallen),
+    ],[
+        (assign, ":hp", 0),
+        (try_begin),
+            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
+            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
+            (store_agent_hit_points, ":hp", ":bear", 0), 
+        (end_try),
+        (call_script, "script_cf_select_human_form", ":hp"),
+    ]),
+
+    # BEARFORM exit menu
+    (ti_question_answered, 0, 0, [(store_trigger_param_1,":answer"),(eq,":answer",0),], [
+        (assign, ":hp", 0),
+        (try_begin),
+            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
+            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
+            (store_agent_hit_points, ":hp", ":bear", 0), 
+        (end_try),
+        (call_script, "script_cf_select_human_form", ":hp"),
+    ]),
+
+    # BEARFORM dismounting action (should only be played for player)
     (ti_on_agent_dismount, 0, ti_once, [
         # Now check if agent that is dismounting is player agent (coz only he can be in bear form)
         (store_trigger_param_1, ":agent"),
-        (get_player_agent_no, ":player_agent"),
-        (eq, ":player_agent", ":agent"),
-        # Check if we are shapeshifted Beorning
-        (call_script, "script_cf_bear_form_selected"), 
-        (eq, reg0, 1),
+        (get_player_agent_no, ":player_agent"), (eq, ":player_agent", ":agent"),
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
     ],[
         (store_trigger_param_1, ":agent"),
         (store_trigger_param_2, ":horse"),
         (call_script, "script_cf_bearform_on_dismount", ":agent", ":horse"),
     ]),
 
-    # Tab menu
-    (ti_question_answered, 0, 0, [(store_trigger_param_1,":answer"),(eq,":answer",0),], [ 
-        (call_script, "script_cf_select_human_form"),
-    ]),
-
-    # Prevent unequiping empty weapon
+    # Prevent unequiping empty weapon (triggers only in bearform)
     (ti_on_item_wielded, 0, 0, [
-        # unwielded item is invisible lance
-        (store_trigger_param_2,":item"),
-        (neq, ":item", "itm_warg_ghost_lance"),
-        (store_trigger_param_1,":agent"), # The "horse" has to be a bear
-        (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
-        (agent_get_item_id, ":horse_item", ":horse"),
-        (eq, ":horse_item", "itm_bear"),
+        (store_trigger_param_2,":item"), (neq, ":item", "itm_warg_ghost_lance"),
+        (store_trigger_param_1,":agent"), (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
+        (agent_get_item_id, ":horse_item", ":horse"), (eq, ":horse_item", "itm_bear"),
     ],[
         (store_trigger_param_1,":agent"),
         (store_trigger_param_2,":item"),
@@ -3990,15 +4011,22 @@ beorning_shapeshift = [
         #(display_log_message, "@DEBUG: Item equipped"),
     ]),
 
+    # Turn right
+    #(0, 0, 0.5, [
+    #    (game_key_clicked, gk_kick),
+    #],[
+    #    (get_player_agent_no, ":agent_no"),
+    #    (agent_is_alive, ":agent_no"),
+    #    (agent_get_horse, ":horse", ":agent_no"), 
+    #    (ge, ":horse", 0), (agent_is_alive, ":horse"),
+    #    (display_log_message, "@Should be anim here"),
+    #    (agent_set_animation, ":horse", "anim_unused_horse_anim_12"),
+    #]),
+
     # BEAR ATTACK TRIGGERING
-    # Divided in two parts
-    # Setting animation
-    # Applying attack effects (delayed)
-    # Attacks:
+    # Divided in two parts: etting animation and applying attack effects (delayed)
     #   Bear slap right/uppercut (LMB), cooldown 1.5s
-    #   Bear slam (RMB) cooldown, 1.8s
-    #   Warg leap attack (kick  
-    (0, 0, 1.6, [
+    (0, 0, 1.5, [
         (game_key_clicked, gk_attack),
         # Check currently run anims
         (get_player_agent_no, ":agent_no"),(agent_is_alive, ":agent_no"),
@@ -4076,7 +4104,7 @@ beorning_shapeshift = [
     ]),
 
     # LEAP ATTACK TRIGGER(ANIM)
-    (0, 0, 2.5, [
+    (0, 0, 2.0, [
         (game_key_clicked, gk_jump),
         
         # Check bear current anim
@@ -4159,25 +4187,22 @@ beorning_shapeshift = [
         (call_script, "script_bear_attack_no_anim", ":agent_no", ":base_dmg", ":curr_anim_bear"),
     ]),
 
-    # BLOOD PARTICLES FOR SCRIPTED ATTACKS
+    # BLOOD PARTICLES FOR SCRIPTED ATTACKS reg0 -> item_id
     (ti_on_agent_hit, 0.1, 0, [
-        # Attack must deal damage and be dealt by animal
-        (store_trigger_param, ":dmg", 3), (gt, ":dmg", 5),
-        # Animal has to do the dmg (all animals have scripted attacks with predetermined anims)
+        # Attack must deal damage and be dealt by an animal
+        (store_trigger_param, ":dmg", 3), (gt, ":dmg", 9),
+        # Only non-blunt dmg draws blood
+        (ge, reg0, 0), (item_get_swing_damage_type, ":dmg_type", reg0),(neq, ":dmg_type", blunt),
+        # Damager has to be an animal (all animals have scripted attacks with predetermined anims)
         (store_trigger_param, ":attacker", 2),
         (agent_get_horse, ":animal", ":attacker"), (ge, ":animal", 0),
         (agent_get_animation, ":attack_anim", ":animal", 0),
-        (this_or_next|eq, ":attack_anim", "anim_bear_slap_right"),
-        (this_or_next|eq, ":attack_anim", "anim_bear_slam"),
-        (eq, ":attack_anim", "anim_bear_uppercut"),
+        (is_between, ":attack_anim", "anim_bear_slap_right", "anim_unused_horse_anim_12"),
     ],[
         # Check item damage
         (store_trigger_param, ":victim", 2),
         (store_trigger_param, ":dmg", 3),
-        (ge, reg0, 0), # This is item_id
         (item_get_swing_damage_type, ":dmg_type", reg0),
-
-        # Check damage type blunt -> no blood
         (call_script, "script_cf_on_hit_blood", ":victim", ":dmg", ":dmg_type"),
     ]),
 ]

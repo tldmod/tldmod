@@ -29786,8 +29786,7 @@ if is_a_wb_script==1:
 # Output: reg0: 1= in the bear form; 0= in human form.
 ("cf_bear_form_selected",
     [
-      (assign, reg0, 0),
-      (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
+      (assign, reg0, 0), (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"),
       # Check if agent troop is that
       (try_begin),
           (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
@@ -29796,7 +29795,6 @@ if is_a_wb_script==1:
           (troop_is_hero, ":bear_troop"),
           (troop_get_inventory_slot, ":horse_item", ":bear_troop", ek_horse),
           (eq, ":horse_item", "itm_bear"),
-          #(display_message, "@CHARACTER IN BEAR FORM -> TRUE"),
           (assign, reg0, 1),
       (try_end),
       (set_trigger_result, reg0),
@@ -29829,7 +29827,6 @@ if is_a_wb_script==1:
         # NOTE This is hack somehow u can't grant TOO much xp at once
         (val_sub, ":diff_xp", ":bear_xp"),
         (store_div, ":n", ":diff_xp", 1000), (store_mod, ":r", ":diff_xp", 1000),
-        # Equlize
         (try_for_range, ":i", 0, ":n"),
             (add_xp_to_troop, 1000, ":bear_troop"),
         (end_try),
@@ -29837,7 +29834,6 @@ if is_a_wb_script==1:
 
         # Clone player into multiplayer something
         (call_script, "script_clone_troop", "trp_player", ":bear_troop"),
-     
         (troop_clear_inventory, ":bear_troop"),
         (troop_set_inventory_slot, ":bear_troop", ek_horse, "itm_bear"),
         (troop_set_inventory_slot, ":bear_troop", ek_item_0, "itm_warg_ghost_lance"),
@@ -29847,23 +29843,30 @@ if is_a_wb_script==1:
         (troop_set_inventory_slot, ":bear_troop", ek_foot, "itm_empty_legs"),
         (troop_raise_skill, ":bear_troop", skl_riding, 10),
 
+        # Transform hp between player troop and player copy 
+        # NOTE this doesn't touch the bear agent (horse)
+        # NOTE 2 Health is relative
+        (store_troop_health, ":bear_hp", "trp_player", 0), 
+        (troop_set_health, ":bear_troop", ":bear_hp"),
+ 
         # The last piece is in mission module triggers
         (display_log_message, "@You hapeshift into a bear!", color_neutral_news),
     (end_try),
 ]),
 
 # script_select_human_form
-# This script should be called before the mission, or after it it doesn't affec the
-# Input: None
-# Output: none
+# This script should be called before the mission, or after it.
+# The current player troop should have correctly computed health
+# Input: relative health of bear troop at the moment
+# Output: None
 ("cf_select_human_form",
-    [ 
+    [
       (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
+      (store_script_param_1, ":bear_hp"),
       (try_begin),
           (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
 
           # Remember hp and xp
-          (store_troop_health, ":bear_hp", ":bear_troop", 1),
           (troop_get_xp, ":bear_xp", ":bear_troop"),
           (troop_get_xp, ":player_xp", "trp_player"),
 
@@ -29876,8 +29879,9 @@ if is_a_wb_script==1:
           (add_xp_to_troop, ":bear_xp", "trp_player"),
 
           # Reset the slot
-          (set_player_troop, "trp_player"),
+          (troop_set_health, ":bear_troop", ":bear_hp"),
           (troop_set_health, "trp_player", ":bear_hp"),
+          (set_player_troop, "trp_player"),
           (troop_set_slot, "trp_player", slot_troop_player_clone, "$g_player_troop"),
       (try_end),
 ]),
@@ -29929,7 +29933,7 @@ if is_a_wb_script==1:
 
     # Loop over enemies to check if someone is in front
     (assign, ":damaged_agents", 0),
-    (assign, ":agents_to_damage", 25),
+    (assign, ":agents_to_damage", 20),
 
     (try_for_agents, ":enemy_agent", pos6, ":max_distance"),
         (agent_is_alive, ":enemy_agent"),
@@ -29967,7 +29971,6 @@ if is_a_wb_script==1:
         (lt, ":enemy_x_distance", 150),
 
         # TODO We don't handle side hits yet
-
         # Anim depending on being mounted or not
         (assign, ":channel", 0),
         (agent_get_horse, ":enemy_mount", ":enemy_agent"),
@@ -29979,6 +29982,7 @@ if is_a_wb_script==1:
             (agent_is_human, ":enemy_agent"),
             (assign, ":hit_anim", ":fly_anim"),
             (assign, ":hit_mount_instead", 0),
+        
         # Human rider: decide if hit a rider or its mount
         (else_try),
             (ge, ":enemy_mount", 0),
@@ -30113,13 +30117,11 @@ if is_a_wb_script==1:
     # (display_log_message, "@DEBUG dismount fired"),
     (store_script_param_1, ":agent"),
     (store_script_param_2, ":horse"),
-    # (mission_cam_set_screen_color, 0xEF2F0F0F),
-    # (mission_cam_animate_to_screen_color, 0x00000000, 1500),
+
+    (assign, ":final_hp"),
     (try_begin), 
         # Only if horse/bear mount is alive allow it
-        (agent_is_alive, ":horse"),
-        (agent_is_active, ":horse"),
-        (store_agent_hit_points, ":bear_hp", ":horse", 1),
+        (agent_is_alive, ":horse"), (agent_is_active, ":horse"),
 
         # Horse
         (troop_get_inventory_slot, ":item", "trp_player", ek_horse),
@@ -30167,21 +30169,23 @@ if is_a_wb_script==1:
 
         # Fadie out the bear
         (agent_get_position, pos1, ":agent"),
-        (particle_system_burst, "psys_bear_fur", pos1, 90),
+        (particle_system_burst, "psys_bear_fur", pos1, 100),
 
-        # Set proper hp (divide bear hp by .
-        (val_div, ":bear_hp", 3), (val_max, ":bear_hp", 1),
-        (agent_set_hit_points, ":agent", ":bear_hp", 1),
+        # Set proper hp
+        (store_agent_hit_points, ":bear_hp", ":horse", 0), 
+        (agent_set_hit_points, ":agent", ":bear_hp", 0),
         (agent_set_visibility, ":agent", 1),
+        (assign, ":final_hp", ":bear_hp"),
         (agent_fade_out, ":horse"),
         (display_log_message, "@You change back to human form...", color_neutral_news),
     (else_try), # Else kill the player
         (agent_set_hit_points, ":agent", 0),
         (agent_deliver_damage_to_agent, ":agent", ":agent", 1),
+        (assign, ":final_hp", 0),
     (try_end),
 
     # Set troop to have human form again (only troop)
-    (call_script, "script_cf_select_human_form"),
+    (call_script, "script_cf_select_human_form", ":final_hp"),
 ]),
 
 # script_show_on_hit_blood 
@@ -30193,14 +30197,13 @@ if is_a_wb_script==1:
 #
 ("cf_on_hit_blood", [
     (store_script_param, ":victim", 1),
-    (store_script_param, ":dmg", 2),
     (store_script_param, ":dmg_type", 3),
-
-    # Check damage type blunt -> no blood
-    (neq, ":dmg_type", blunt),
 
     # Check troop height to get proper blood
     (agent_get_troop_id, ":troop", ":victim"),
+
+    # Horizontal randomization
+    (store_random_in_range, ":dx", -20, 20), (position_move_x, pos0, ":dx", 0), 
 
     (try_begin),
         (ge, ":troop", 0),
@@ -30213,9 +30216,9 @@ if is_a_wb_script==1:
             (eq, ":race", tf_dwarf),
             (neq, ":race", tf_urukhai),
             (neq, ":race", tf_uruk),
-            (position_move_z, pos0, 155), 
+            (position_move_z, pos0, 165), 
         (else_try), # All the rest -> human size
-            (position_move_z, pos0, 175), 
+            (position_move_z, pos0, 180), 
         (try_end),
     (else_try), # Animal are target
         # Horses
@@ -30239,14 +30242,12 @@ if is_a_wb_script==1:
     (try_end),
 
     # Cap the dmg it will be used
+    (store_random_in_range, ":particle_type", 0, 2),
     (try_begin), # bigger dmg bigger blooood
-        (gt, ":dmg", 25),
-        (val_add, ":dmg", 20),
-        (val_min, ":dmg", 100), 
-        (particle_system_burst, "psys_game_blood_rand_2", pos0, ":dmg"),
+        (eq, ":particle_type", 1),
+        (particle_system_burst, "psys_game_blood_rand_2", pos0, 100),
     (else_try),
-        (val_add, ":dmg", 25),
-        (particle_system_burst, "psys_game_blood_rand", pos0, ":dmg"),
+        (particle_system_burst, "psys_game_blood_rand", pos0, 100),
     (try_end),
 ]),
 
