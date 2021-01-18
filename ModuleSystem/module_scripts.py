@@ -3771,8 +3771,8 @@ scripts = [
 		(eq, ":item_modifier", imod_reinforced),
 		(try_begin), (eq, ":extra_text_id", 0),(set_result_string, "@Bonus to Shield Skill"),(set_trigger_result, color_item_text_bonus),
 		(try_end),
-		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Turns nature to your side"),(set_trigger_result, color_item_text_bonus),(try_end),	
-		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@when equipped. (Effects scale with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Turns nature to your side"),(set_trigger_result, color_item_text_special),(try_end),	
+		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@when equipped. (Effects scale with Wildcraft)"),(set_trigger_result, color_item_text_special),(try_end),
 	  (else_try),
 		(eq,":item_no","itm_beorn_axe_reward"),
 		(eq, ":item_modifier", imod_masterwork),
@@ -3897,8 +3897,8 @@ scripts = [
 		(set_trigger_result, color_item_text_bonus),
 	  (else_try),
 	  	(eq, ":item_no", "itm_beorn_chief"),
-	  	(try_begin), (eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
-		(try_begin),(set_result_string, "@Bonus to Strength (Player only)"),(set_trigger_result, color_item_text_bonus),(try_end),
+	  	(try_begin),(eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
+                (try_begin),(eq, ":extra_text_id", 1), (set_result_string, "@Bonus to Strength (Player only)"),(set_trigger_result, color_item_text_bonus),(try_end),
 		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@(Scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
 	  	(set_trigger_result, color_item_text_special),
 	  (else_try),
@@ -30072,14 +30072,14 @@ if is_a_wb_script==1:
     (try_begin),
         (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
         (neq, ":bear_kinship", 1),
-        (lt, ":bear_kinship", 100),
+        (lt, ":bear_kinship", 25),
 
         # Player strong enough to form kinship with bears
         (eq, "$players_kingdom", "fac_beorn"), # Only beorning get bear kinship points
         (store_attribute_level, ":charisma", "trp_player", ca_charisma),
-        (ge, ":charisma", 13),
+        (ge, ":charisma", 12),
         (store_attribute_level, ":strength", "trp_player", ca_strength),
-        (ge, ":strength", 18),
+        (ge, ":strength", 17),
 
         # Bear kinship is the amount of appearences when player was with bears and with small party
         (get_player_agent_no, ":agent"),

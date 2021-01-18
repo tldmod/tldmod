@@ -3996,6 +3996,7 @@ beorning_shapeshift = [
     (ti_on_item_wielded, 0, 0, [
         (store_trigger_param_2,":item"), (neq, ":item", "itm_warg_ghost_lance"),
         (store_trigger_param_1,":agent"), (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
+        (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
         (agent_get_item_id, ":horse_item", ":horse"), (eq, ":horse_item", "itm_bear"),
     ],[
         (store_trigger_param_1,":agent"),
@@ -4010,18 +4011,6 @@ beorning_shapeshift = [
         (agent_set_wielded_item, ":agent", "itm_warg_ghost_lance"),
         #(display_log_message, "@DEBUG: Item equipped"),
     ]),
-
-    # Turn right
-    #(0, 0, 0.5, [
-    #    (game_key_clicked, gk_kick),
-    #],[
-    #    (get_player_agent_no, ":agent_no"),
-    #    (agent_is_alive, ":agent_no"),
-    #    (agent_get_horse, ":horse", ":agent_no"), 
-    #    (ge, ":horse", 0), (agent_is_alive, ":horse"),
-    #    (display_log_message, "@Should be anim here"),
-    #    (agent_set_animation, ":horse", "anim_unused_horse_anim_12"),
-    #]),
 
     # BEAR ATTACK TRIGGERING
     # Divided in two parts: etting animation and applying attack effects (delayed)

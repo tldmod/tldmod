@@ -4908,7 +4908,8 @@ game_menus = [
 		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_3"),
                   (eq, "$g_encountered_party", "$qst_reinforcement_party"),
                   # Arsakes: BEAR CHANGE CONDTIONS -> to change to 1
-                  #(troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
+                  (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
+                  (eq, "$cheat_mode", 1),
           ],
          "{reg21?Leap_into_battle_in_bear_form:Turn_skin_and_face_them}.",[
                         (call_script, "script_cf_select_bear_form"),
@@ -6462,9 +6463,10 @@ game_menus = [
 
     # BEAR SHAPESHIFT OPTION
     ("join_attack_bearform",[
-        #(troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1)
+        (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
+        #BEAR
         ],
-                            "AARWWRRR!! (transform into bear and rushes into battle)",[
+                            "Leap_into_battle_in_bear_form",[
                                 (call_script, "script_cf_select_bear_form"), # Select bear form
                                 (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
                                 (assign, "$g_battle_result", 0),
