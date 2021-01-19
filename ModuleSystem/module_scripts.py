@@ -29949,8 +29949,6 @@ if is_a_wb_script==1:
         # Get enemy troop data and exclude invisible riders
         (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
         (this_or_next|lt, ":enemy_troop_id", 0),
-        (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
-        (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"), 
 
         # First position check
         (agent_get_position, pos8, ":enemy_agent"),
@@ -29989,7 +29987,11 @@ if is_a_wb_script==1:
             (agent_is_human, ":enemy_agent"),
             (store_random_in_range, ":hit_mount_instead", 0, 2),
             (store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
-            (try_begin), # Dismount bad rider
+            (try_begin), # Always target munt if rider is invisible rider (so animal)
+                (this_or_next|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+                (is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
+                (assign, ":hit_mount_instead", 1),
+            (else_try), # Dismount bad rider
                 (eq, ":hit_mount_instead", 0),
                 (le, ":riding_skill", 5),
                 (assign, ":hit_anim", ":fly_anim"),
@@ -30121,7 +30123,7 @@ if is_a_wb_script==1:
     (assign, ":final_hp"),
     (try_begin), 
         # Only if horse/bear mount is alive allow it
-        (agent_is_alive, ":horse"), (agent_is_active, ":horse"),
+        (ge, ":horse", 0), (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
 
         # Horse
         (troop_get_inventory_slot, ":item", "trp_player", ek_horse),

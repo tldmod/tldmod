@@ -1010,6 +1010,7 @@ noxbru_rider_dismounts = (ti_on_agent_dismount, 0, 0, [],
     (store_trigger_param_2, ":horse"),
 
     (try_begin),
+      (ge, ":horse", 0), (agent_is_active, ":horse"), # Added by Arsakes
       (agent_is_alive, ":horse"),
       (agent_set_slot, ":agent", slot_agent_horse_agent, -1),
       (agent_set_slot, ":horse", slot_agent_rider_agent, -1),
@@ -3995,13 +3996,13 @@ beorning_shapeshift = [
     # Prevent unequiping empty weapon (triggers only in bearform)
     (ti_on_item_wielded, 0, 0, [
         (store_trigger_param_2,":item"), (neq, ":item", "itm_warg_ghost_lance"),
-        (store_trigger_param_1,":agent"), (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
+        (store_trigger_param_1,":agent"), (ge, ":agent", 0), (agent_is_active, ":agent"),
+        (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
         (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
         (agent_get_item_id, ":horse_item", ":horse"), (eq, ":horse_item", "itm_bear"),
     ],[
         (store_trigger_param_1,":agent"),
         (store_trigger_param_2,":item"),
-        #(display_log_message, "@DEBUG: Item wielded triggered"),
         (try_begin),
             (ge, ":item", 0),
             (agent_unequip_item, ":agent", ":item"),
@@ -4169,7 +4170,7 @@ beorning_shapeshift = [
         (agent_get_animation, ":curr_anim_bear", ":horse", 0),
         (eq, ":curr_anim_bear", "anim_bear_slam"),
      
-        (display_message, "@Bear attack effect fired (SLAM"),
+        #(display_message, "@Bear attack effect fired (SLAM"),
         # Setup damage & execute the attack
         (agent_get_troop_id, ":agent_troop", ":agent_no"),
         (store_attribute_level, ":base_dmg", ":agent_troop", ca_strength),
