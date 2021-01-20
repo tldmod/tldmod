@@ -1527,8 +1527,8 @@ animations = [
  ["bear_uppercut", acf_enforce_all|acf_align_with_ground, [1.0, "bear_uppercut", 44, 93, arf_blend_in_1]],
  ["spider_attack", acf_enforce_all|acf_align_with_ground, [1.0, "spider_attack", 1, 33, arf_blend_in_1]],
  ["wolf_snap", acf_enforce_all|acf_align_with_ground, [1.0, "wolf_snap", 1, 55, arf_blend_in_1]],
+ ["bear_slam", acf_enforce_all|acf_align_with_ground, [1.5, "bear_slam", 1, 45, arf_blend_in_1]],
 
- ["unused_horse_anim_11", 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_12", 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_13", 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_14", 0, [1.0, "anim_horse", 0, 1, 0]],

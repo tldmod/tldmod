@@ -1003,4 +1003,44 @@ particle_systems = [
      0,                       #rotation speed
      0.5                        #rotation damping
     ),
+    ("bear_fur", psf_billboard_3d|psf_global_emit_dir|psf_randomize_size|psf_randomize_rotation, "prtcl_bear_fur",
+     30, 0.8, 0.5, 0.5, 0.5, 0.5,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.2, 1.0), (1, 0.8),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 3.8), (1.0, 3.8),   #scale keys
+     (0.4, 0.4, 1.9),           #emit box size
+     (0, 0, 0),               #emit velocity
+     0.01,                     #emit dir randomness
+     1,                       #rotation speed
+     0.5                        #rotation damping
+    ),
+    # Animal attack blood particles (have to be randomized)
+    ("game_blood_rand", psf_billboard_3d |psf_randomize_size|psf_randomize_rotation,  "prt_mesh_blood_1",
+     250, 0.65, 3, 0.5, 0.0, 0.0,        #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.0, 0.7), (0.7, 0.7),          #alpha keys
+     (0.1, 0.7), (1, 0.7),      #red keys
+     (0.1, 0.7), (1, 0.7),       #green keys
+     (0.1, 0.7), (1, 0.7),      #blue keys
+     (0.0, 0.015),   (1, 0.018),  #scale keys
+     (0.1, 0.05, 0),               #emit box size
+     (0, 1.0, 0.3),                #emit velocity
+     0.9,                       #emit dir randomness
+     0,                         #rotation speed
+     0,                         #rotation damping
+    ),
+    ("game_blood_rand_2", psf_billboard_3d | psf_randomize_size|psf_randomize_rotation ,  "prt_mesh_blood_3",
+     1000, 0.6, 3, 0.3, 0.0, 0.0,        #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.0, 0.25), (0.7, 0.1),        #alpha keys
+     (0.1, 0.7), (1, 0.7),      #red keys
+     (0.1, 0.7), (1, 0.7),       #green keys
+     (0.1, 0.7), (1, 0.7),      #blue keys
+     (0.0, 0.15),   (1, 0.35),    #scale keys
+     (0.2, 0.15, 0.01),             #emit box size
+     (0.2, 0.3, 0),                 #emit velocity
+     0.5,                         #emit dir randomness
+     150,                       #rotation speed
+     0,                       #rotation damping
+     )
 ]

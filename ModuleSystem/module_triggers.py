@@ -1564,6 +1564,18 @@ triggers = [
         (ge, ":visited",3),
         (call_script, "script_gain_trait_well_travelled"),
       (try_end),
+      (try_begin), #Skinchanger trait -> BEAR Arsakes
+        # Chance ~num_of_private_bear_meetings, but has to be more than 5
+        # special case as we store value related to chance of getting it in the slot itslef
+        (neg|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1), 
+        (troop_get_slot, ":chance", "trp_traits", slot_trait_bear_shape),
+        (val_sub, ":chance", 5),
+        (ge, ":chance", 0), 
+        (val_add, ":chance", 5), 
+        (store_random_in_range, ":rnd", 0, 100),
+        (le, ":rnd", ":chance"),
+        (call_script, "script_cf_gain_trait_bear_shape"),
+      (try_end),
   ]),
   
   #check progress on oath quest

@@ -2316,18 +2316,17 @@ animations = [
  #  [1.2, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
  # ],
 
- ["warg_leapattack", acf_displace_position|acf_enforce_all|acf_rotate_body, amf_client_prediction|amf_priority_die|amf_play, 
-   [1.0, "anim_horse", 205, 222,  arf_use_walk_progress|arf_blend_in_1, 0, (0, 5.5, 0), 0], #|arf_end_pos_0_25],
+ ["warg_leapattack", acf_displace_position|acf_enforce_all|acf_rotate_body, amf_client_prediction|amf_priority_jump_end|amf_play, 
+   [1.0, "anim_horse", 205, 222,  arf_use_walk_progress|arf_blend_in_8, 0, (0, 5.5, 0), 0], #|arf_end_pos_0_25],
  ],
 
 # Animal attack anims... (cppcoder, merlkir) - Fixed by Kham
-
- ["bear_slap_right", acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play|amf_client_prediction, [1.3, "bear_slap_right", 1, 45, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]],
- ["bear_uppercut",   acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play|amf_client_prediction, [1.3, "bear_uppercut", 44, 93, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]],
+ ["bear_slap_right", acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play|amf_client_prediction, [1.4, "bear_slap_right", 1, 45, arf_blend_in_4,pack4f(0.15,0.16,0.65,0.66), (0, 0.8, 0), 0.9]],
+ ["bear_uppercut",   acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play|amf_client_prediction, [1.4, "bear_uppercut", 44, 93, arf_blend_in_4,pack4f(0.15,0.16,0.65,0.66), (0, 0.7, 0), 0.9]],
  ["spider_attack",   acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play|amf_client_prediction, [1.25, "spider_attack", 1, 33, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]],
  ["wolf_snap",       acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play|amf_client_prediction, [1.25, "wolf_snap", 1, 55, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]],
+ ["bear_slam", acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play|amf_client_prediction, [1.6, "bear_slam", 1, 45, arf_blend_in_8|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, -0.5, 0), 0.9]],
 
- ["unused_horse_anim_11", 0, 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_12", 0, 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_13", 0, 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_14", 0, 0, [1.0, "anim_horse", 0, 1, 0]],

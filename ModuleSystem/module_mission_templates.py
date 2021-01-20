@@ -112,6 +112,22 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   #-- camera_mode
   (0, 0, 0, [],
   [
+
+    # Arsakes BEAR CAMERAa adjustment (when default camera is used)
+    #(try_begin),
+    #  (eq, "$cam_mode", 0),
+    #  (agent_get_horse, ":horse_agent", "$cam_current_agent"),
+    #  (ge, ":horse_agent", 0),
+    #  (agent_get_item_id, ":horse_item", ":horse_agent"),
+    #  (eq, ":horse_item", "itm_bear"),
+    #  # Now setup camera
+    #  (set_fixed_point_multiplier, 100),
+    #  (agent_get_look_position, pos7, "$cam_current_agent"),
+    #  (position_move_z, pos7,  300, 0), # 180 default
+    #  (position_move_y, pos7, -350, 0), # -210 default
+    #  (mission_cam_animate_to_position, pos7, 100),
+    #
+    #(else_try),
     (try_begin),
       (eq, "$cam_mode", 1),
       (set_fixed_point_multiplier, 100),
@@ -412,7 +428,7 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
     #This is where we get the mount
     (agent_get_horse, ":horse", ":agent"),
     (ge, ":horse", 0),
-
+ 
     #This is where we cache the enemies:
     (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":agent"),
     (gt, ":num_nearby_agents", 0),
@@ -468,7 +484,6 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
     (try_end),
 
     #This is where Animation is assigned
-
     (assign, ":anim", "anim_bear_slap_right"),
     (try_begin),
       (eq, ":agent_trp", "trp_spider"),
@@ -974,6 +989,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
         (else_try),
           (assign, ":color", color_bad_news),
         (try_end),
+        (call_script, "script_cf_update_bear_kinship"), # Arsakes: Update bear kinship for trait
         (display_message, "@A bear has been summoned to battle!", ":color"),
       (else_try),
         (spawn_agent, "trp_wolf"),
@@ -1037,8 +1053,8 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     batching_agent_spawn_human,
     batching_agent_spawn_mount,
 
-    
-] or [] ) + [
+] + beorning_shapeshift  #Chaning into bear
+or [] ) + [
 
 	#tld_fix_viewpoint,
 	#tld_wargs_attack_horses, # WIP (CppCoder)

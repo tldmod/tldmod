@@ -915,8 +915,9 @@ slot_trait_battle_scarred    = 21
 slot_trait_fell_beast        = 22
 slot_trait_butcher			 = 23 #Kham
 slot_trait_well_travelled	 = 24 #kham
+slot_trait_bear_shape        = 25 # Arsakes
 slot_trait_first             = slot_trait_elf_friend
-slot_trait_last              = slot_trait_well_travelled
+slot_trait_last              = slot_trait_bear_shape
 
 
 ########################################################

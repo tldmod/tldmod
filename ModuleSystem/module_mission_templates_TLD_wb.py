@@ -1,5 +1,6 @@
 from header_common import *
 from header_operations import *
+from header_sounds import *
 from header_mission_templates import *
 from module_constants import *
 
@@ -1009,6 +1010,7 @@ noxbru_rider_dismounts = (ti_on_agent_dismount, 0, 0, [],
     (store_trigger_param_2, ":horse"),
 
     (try_begin),
+      (ge, ":horse", 0), (agent_is_active, ":horse"), # Added by Arsakes
       (agent_is_alive, ":horse"),
       (agent_set_slot, ":agent", slot_agent_horse_agent, -1),
       (agent_set_slot, ":horse", slot_agent_rider_agent, -1),
@@ -3857,4 +3859,340 @@ voice_commands = [(ti_on_order_issued,0,3, [
   (try_end),
   (agent_play_sound, ":player", ":sound_to_play"),
 ])
+]
+
+
+
+#
+# This code (set of triggers to be included in dynamic battle mission) allows character
+# to shift into a bear form for a battle.
+# Shapeshifters are identified by invisible armour and riding a bear
+#
+beorning_shapeshift = [
+
+    # Change the form to alternative if one was selected, just prior battle
+    (ti_before_mission_start, 0, ti_once, [], [
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
+        (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"),
+        (set_player_troop, ":bear_troop"),
+    ]),
+ 
+    # FIXING GRAPHIC GLITCH
+    #by setting certain agents invisible (those who use invisible equipment)
+    (ti_on_agent_spawn, 2.5, 0, [], [
+        (store_trigger_param_1, ":agent"),
+        (agent_is_human, ":agent"),
+        (store_trigger_param_1, ":agent"),
+        (agent_get_troop_id, ":troop", ":agent"),
+        (this_or_next|is_between, ":troop", warg_ghost_begin, warg_ghost_end),
+        (this_or_next|is_between, ":troop", "trp_spider", "trp_dorwinion_sack"),
+        (this_or_next|is_between, ":troop", "trp_warg_ghost_1b", "trp_a2_isen_uruk_tracker"),
+        (eq, ":troop", "trp_werewolf"),
+        #(display_message, "@Agents glitch fix invisible"),
+        (agent_set_visibility, ":agent", 0),
+        #(display_message, "@Agents horse fix visible"),
+        (agent_get_horse, ":horse", ":agent"),
+        (agent_is_active, ":horse"),
+        (agent_set_visibility, ":horse", 1),
+    ]),
+     
+    # BEAR SETUP: After agent spawned
+    # transfer stats from player clone troop to horse(bear) agent
+    (ti_after_mission_start, 0, ti_once, [], [
+        (get_player_agent_no, ":agent"),
+
+        # If player agent is Beorning, those two are  set
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
+
+        # Remove the inventory bag out of player's reach
+        (try_for_prop_instances, ":prop_instance", "spr_inventory"),
+            (prop_instance_get_position, pos1, ":prop_instance"),
+            (position_move_z, pos1, -999),
+            (prop_instance_set_position, ":prop_instance", pos1),
+            (scene_prop_fade_out, ":prop_instance", 0),
+        (try_end),
+
+        # Set the visiblity of hidden rider and set proper health for the bear
+        (agent_set_visibility, ":agent", 0),
+        (agent_set_animation, ":agent", "anim_hide_inside_warg"),
+
+        # Get the copied player alternative troop HP (has to be computed)
+        (agent_get_troop_id, ":agent_troop", ":agent"),
+        (store_attribute_level, ":bear_hp", ":agent_troop", ca_strength),
+        (store_skill_level, ":ironflesh", skl_ironflesh, ":agent_troop"),
+        (store_troop_health, ":curr_hp", ":agent_troop", 1),
+        (val_add, ":bear_hp", 35), (val_mul, ":ironflesh", 2), (val_add, ":bear_hp", ":ironflesh"), 
+        (val_mul, ":curr_hp", 3), # curr_bear_health = 3 x player_hp
+        (val_mul, ":bear_hp", 3), # max_bear_hp = 3 x max_player_hp
+ 
+        # Get bear agent and increase its hp
+        (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
+        (agent_set_max_hit_points, ":horse", ":bear_hp", 1),
+        (agent_set_hit_points, ":horse", ":curr_hp", 1),
+        (assign, reg1, ":bear_hp"), (assign, reg2, ":curr_hp"),
+        (display_message, "@Your bear form has {reg2}/{reg1} HP!",0xff4040),
+    ]),
+
+    # BEARFORM exit trigger: Leave area
+    # NOTE This maybe source of bugs whenever player agent is not available
+    (ti_on_leave_area, 0, 0, [], [
+        (assign, ":hp", 0),
+        (try_begin),
+            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
+            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
+            (store_agent_hit_points, ":hp", ":bear", 0), 
+        (end_try),
+        (call_script, "script_cf_select_human_form", ":hp"),
+    ]),
+
+    # BEARFORM exit trigger: Leave area
+    # NOTE This maybe source of bugs whenever player agent is not available
+    (ti_on_player_exit, 0, 0, [], [
+        (assign, ":hp", 0),
+        (try_begin),
+            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
+            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
+            (store_agent_hit_points, ":hp", ":bear", 0), 
+        (end_try),
+        (call_script, "script_cf_select_human_form", ":hp"),
+    ]),
+
+    # BEARFORM exit trigger: TAB pressed
+    (ti_tab_pressed, 0, 0, [
+        (this_or_next|eq, "$battle_won", 1), (this_or_next|eq, "$battle_won", 2),(main_hero_fallen),
+    ],[
+        (assign, ":hp", 0),
+        (try_begin),
+            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
+            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
+            (store_agent_hit_points, ":hp", ":bear", 0), 
+        (end_try),
+        (call_script, "script_cf_select_human_form", ":hp"),
+    ]),
+
+    # BEARFORM exit menu
+    (ti_question_answered, 0, 0, [(store_trigger_param_1,":answer"),(eq,":answer",0),], [
+        (assign, ":hp", 0),
+        (try_begin),
+            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
+            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
+            (store_agent_hit_points, ":hp", ":bear", 0), 
+        (end_try),
+        (call_script, "script_cf_select_human_form", ":hp"),
+    ]),
+
+    # BEARFORM dismounting action (should only be played for player)
+    (ti_on_agent_dismount, 0, ti_once, [
+        # Now check if agent that is dismounting is player agent (coz only he can be in bear form)
+        (store_trigger_param_1, ":agent"),
+        (get_player_agent_no, ":player_agent"), (eq, ":player_agent", ":agent"),
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
+    ],[
+        (store_trigger_param_1, ":agent"),
+        (store_trigger_param_2, ":horse"),
+        (call_script, "script_cf_bearform_on_dismount", ":agent", ":horse"),
+    ]),
+
+    # Prevent unequiping empty weapon (triggers only in bearform)
+    (ti_on_item_wielded, 0, 0, [
+        (store_trigger_param_2,":item"), (neq, ":item", "itm_warg_ghost_lance"),
+        (store_trigger_param_1,":agent"), (ge, ":agent", 0), (agent_is_active, ":agent"),
+        (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
+        (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
+        (agent_get_item_id, ":horse_item", ":horse"), (eq, ":horse_item", "itm_bear"),
+    ],[
+        (store_trigger_param_1,":agent"),
+        (store_trigger_param_2,":item"),
+        (try_begin),
+            (ge, ":item", 0),
+            (agent_unequip_item, ":agent", ":item"),
+            # (display_log_message, "@DEBUG: Unequip"),
+        (end_try),
+        (agent_equip_item, ":agent", "itm_warg_ghost_lance", 1),
+        (agent_set_wielded_item, ":agent", "itm_warg_ghost_lance"),
+        #(display_log_message, "@DEBUG: Item equipped"),
+    ]),
+
+    # BEAR ATTACK TRIGGERING
+    # Divided in two parts: etting animation and applying attack effects (delayed)
+    #   Bear slap right/uppercut (LMB), cooldown 1.5s
+    (0, 0, 1.5, [
+        (game_key_clicked, gk_attack),
+        # Check currently run anims
+        (get_player_agent_no, ":agent_no"),(agent_is_alive, ":agent_no"),
+        (agent_get_horse, ":horse", ":agent_no"), (ge, ":horse", 0), (agent_is_alive, ":horse"),
+        (agent_get_animation, ":curr_anim_bear", ":horse", 0),
+        (neg|is_between, ":curr_anim_bear", "anim_bear_slap_right", "anim_unused_horse_anim_12"),
+        # Anims are simpler
+        (this_or_next|is_between, ":curr_anim_bear", "anim_horse_stand", "anim_horse_rear"),
+        (this_or_next|is_between, ":curr_anim_bear", "anim_horse_turn_right", 
+            "anim_horse_fall_in_place"),
+        (eq, ":curr_anim_bear", "anim_horse_walk_backward"),
+        (neq, ":curr_anim_bear", "anim_horse_rear"),
+    ],[
+
+        # Check if agent is shapeshifted beorning
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
+ 
+        # Check if agent has right running speed
+        (get_player_agent_no, ":agent_no"),(agent_get_horse, ":horse", ":agent_no"), 
+
+        #(display_log_message, "@Bear SLAP anim triggered"),
+
+        # Assign attack animation, knockback and play the first (for bear)
+        (store_random_in_range, ":rnd_2", 0, 100),
+        (try_begin),
+            (le, ":rnd_2", 49),
+            (assign, ":anim", "anim_bear_slap_right"),
+        (else_try),
+            (assign, ":anim", "anim_bear_uppercut"),
+        (try_end),
+        (agent_set_animation, ":horse", ":anim"),
+
+        # Make sound
+        (store_random_in_range, ":rnd_2", 0, 100),
+        (try_begin),
+          (le, ":rnd_2", 66), #66% chance to make sound
+          (agent_play_sound, ":horse", "snd_bear_strike", sf_vol_14|sf_priority_12),
+        (try_end),
+    ]),
+
+    # SLAM ATTACK ANIM (anim duration 1.6s, cooldown total : 2s)
+    (0, 0, 2.0, [
+        (game_key_clicked, gk_defend),
+        # Check if agent is shapeshifted beorning
+        (get_player_agent_no, ":agent_no"),
+        (agent_is_alive, ":agent_no"), (agent_is_active, ":agent_no"),
+        (agent_get_horse, ":horse", ":agent_no"), (ge, ":horse", 0),
+        (agent_is_alive, ":horse"), (agent_is_active, ":horse"),
+
+        # Start only if bear stands still or moves slowly
+        (agent_get_animation, ":curr_anim_bear", ":horse", 0),
+        (neg|is_between, ":curr_anim_bear", "anim_bear_slap_right", "anim_unused_horse_anim_12"),
+        (this_or_next|is_between, ":curr_anim_bear", "anim_horse_stand", "anim_horse_pace_2"),
+        (this_or_next|is_between, ":curr_anim_bear", "anim_horse_turn_right", 
+            "anim_horse_fall_in_place"),
+        (eq, ":curr_anim_bear", "anim_horse_walk_backward"),
+        ],[
+
+        # Check if player is beorning shapeshifter
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
+
+        # Get horse
+        (get_player_agent_no, ":agent_no"),(agent_get_horse, ":horse", ":agent_no"),
+
+        # Execute animation
+        (agent_set_animation, ":horse", "anim_bear_slam"),
+
+        #(display_log_message, "@Bear SLAM anim triggered"),
+        # Make sound
+        (store_random_in_range, ":rnd_2", 0, 100),
+        (try_begin),
+          (le, ":rnd_2", 70), #66% chance to make sound
+          (agent_play_sound, ":horse", "snd_bear_strike", sf_vol_14|sf_priority_12),
+        (try_end),
+    ]),
+
+    # LEAP ATTACK TRIGGER(ANIM)
+    (0, 0, 2.0, [
+        (game_key_clicked, gk_jump),
+        
+        # Check bear current anim
+        (get_player_agent_no, ":agent_no"),(agent_is_alive, ":agent_no"),
+        (agent_is_active, ":agent_no"),
+        (agent_get_horse, ":horse", ":agent_no"),(ge, ":horse", 0), (agent_is_alive, ":horse"),
+        (agent_is_active, ":horse"),
+
+        # Stop if our horse(bear) is in the middle of attack already
+        # Start only if bear stands still or moves slowly
+        (agent_get_animation, ":curr_anim_bear", ":horse", 0),
+        (neg|is_between, ":curr_anim_bear", "anim_bear_slap_right", "anim_unused_horse_anim_12"),
+
+        # We have to be slow
+        (this_or_next|is_between, ":curr_anim_bear", "anim_horse_stand", "anim_horse_pace_2"),
+        (this_or_next|eq, ":curr_anim_bear", "anim_horse_walk_backward"),
+        (is_between, ":curr_anim_bear", "anim_horse_turn_right", "anim_horse_fall_in_place"),
+    ],[
+        # Check if player is beorning shapshifter
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
+    
+        #(display_log_message, "@Bear LEAP anim triggered"),
+        # Execute animation
+        (get_player_agent_no, ":agent_no"),(agent_get_horse, ":horse", ":agent_no"), 
+        (agent_set_animation, ":horse", "anim_warg_leapattack"),
+
+        # Make sound
+        (store_random_in_range, ":rnd_2", 0, 100),
+        (try_begin),
+          (le, ":rnd_2", 30), #30% chance to make sound
+          (agent_play_sound, ":horse", "snd_bear_strike", sf_vol_14|sf_priority_12),
+        (try_end),
+    ]),
+
+    # ATTACK EFFECTS
+    # This trigger consequences are dealayed which mean bear should be playing attack 
+    # animation while consequences are executed
+    # BEAR SLAP/UPPERCUT/JUMP
+    (0, 0.55, 1.0, [(this_or_next|game_key_clicked, gk_attack), (game_key_clicked, gk_jump),],[
+         # Check if agent is in the middle of an attack
+        (get_player_agent_no, ":agent_no"),
+        (agent_is_alive, ":agent_no"),
+
+        # We/our bear have to be alive
+        (agent_get_horse, ":horse", ":agent_no"),
+        (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
+
+        # Start if our horse(bear) is in the middle of attack
+        (agent_get_animation, ":curr_anim_bear", ":horse", 0),
+        (this_or_next|eq, ":curr_anim_bear", "anim_bear_slap_right"),
+        (this_or_next|eq, ":curr_anim_bear", "anim_warg_leapattack"),
+        (eq, ":curr_anim_bear", "anim_bear_uppercut"),
+
+        #(display_message, "@Bear attack effect fired (SLAP/UPPERCUT)"),
+ 
+        # Setup damage & execute the attack
+        (agent_get_troop_id, ":agent_troop", ":agent_no"),
+        (store_attribute_level, ":base_dmg", ":agent_troop", ca_strength),
+        (call_script, "script_bear_attack_no_anim", ":agent_no", ":base_dmg", ":curr_anim_bear"),
+    ]),
+
+    # BEAR SLAM: Effect
+    (0, 1.1, 1.0, [(game_key_clicked, gk_defend),],[
+         # Check if agent is in the middle of an attack
+        (get_player_agent_no, ":agent_no"),
+        (agent_is_alive, ":agent_no"),
+
+        # We/our bear have to be alive
+        (agent_get_horse, ":horse", ":agent_no"),
+        (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
+
+        # Start if our horse(bear) is in the middle of attack
+        (agent_get_animation, ":curr_anim_bear", ":horse", 0),
+        (eq, ":curr_anim_bear", "anim_bear_slam"),
+     
+        #(display_message, "@Bear attack effect fired (SLAM"),
+        # Setup damage & execute the attack
+        (agent_get_troop_id, ":agent_troop", ":agent_no"),
+        (store_attribute_level, ":base_dmg", ":agent_troop", ca_strength),
+        (call_script, "script_bear_attack_no_anim", ":agent_no", ":base_dmg", ":curr_anim_bear"),
+    ]),
+
+    # BLOOD PARTICLES FOR SCRIPTED ATTACKS reg0 -> item_id
+    (ti_on_agent_hit, 0.1, 0, [
+        # Attack must deal damage and be dealt by an animal
+        (store_trigger_param, ":dmg", 3), (gt, ":dmg", 9),
+        # Only non-blunt dmg draws blood
+        (ge, reg0, 0), (item_get_swing_damage_type, ":dmg_type", reg0),(neq, ":dmg_type", blunt),
+        # Damager has to be an animal (all animals have scripted attacks with predetermined anims)
+        (store_trigger_param, ":attacker", 2),
+        (agent_get_horse, ":animal", ":attacker"), (ge, ":animal", 0),
+        (agent_get_animation, ":attack_anim", ":animal", 0),
+        (is_between, ":attack_anim", "anim_bear_slap_right", "anim_unused_horse_anim_12"),
+    ],[
+        # Check item damage
+        (store_trigger_param, ":victim", 2),
+        (store_trigger_param, ":dmg", 3),
+        (item_get_swing_damage_type, ":dmg_type", reg0),
+        (call_script, "script_cf_on_hit_blood", ":victim", ":dmg", ":dmg_type"),
+    ]),
 ]

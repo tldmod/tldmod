@@ -3771,8 +3771,8 @@ scripts = [
 		(eq, ":item_modifier", imod_reinforced),
 		(try_begin), (eq, ":extra_text_id", 0),(set_result_string, "@Bonus to Shield Skill"),(set_trigger_result, color_item_text_bonus),
 		(try_end),
-		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Turns nature to your side"),(set_trigger_result, color_item_text_bonus),(try_end),	
-		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@when equipped. (Effects scale with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Turns nature to your side"),(set_trigger_result, color_item_text_special),(try_end),	
+		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@when equipped. (Effects scale with Wildcraft)"),(set_trigger_result, color_item_text_special),(try_end),
 	  (else_try),
 		(eq,":item_no","itm_beorn_axe_reward"),
 		(eq, ":item_modifier", imod_masterwork),
@@ -3897,8 +3897,8 @@ scripts = [
 		(set_trigger_result, color_item_text_bonus),
 	  (else_try),
 	  	(eq, ":item_no", "itm_beorn_chief"),
-	  	(try_begin), (eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
-		(try_begin),(set_result_string, "@Bonus to Strength (Player only)"),(set_trigger_result, color_item_text_bonus),(try_end),
+	  	(try_begin),(eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
+                (try_begin),(eq, ":extra_text_id", 1), (set_result_string, "@Bonus to Strength (Player only)"),(set_trigger_result, color_item_text_bonus),(try_end),
 		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@(Scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
 	  	(set_trigger_result, color_item_text_special),
 	  (else_try),
@@ -29224,6 +29224,8 @@ if is_a_wb_script==1:
 	(store_script_param_1, ":troop_to_clone"),
 	(store_script_param_2, ":troop_clone"),
 
+        # Clone level and xp
+
 	#Clone face
 	(str_store_troop_face_keys, s22, ":troop_to_clone"),
     (troop_set_face_keys, ":troop_clone", s22),
@@ -29776,6 +29778,479 @@ if is_a_wb_script==1:
 	    (try_end),
 		(agent_set_slot, ":agent", slot_agent_troll_swing_status, 0),
 	(try_end),
+]),
+
+# script_bear_form_selected
+# This script is called to check if player has selected bear form to fight battles
+# Input: arg1: 
+# Output: reg0: 1= in the bear form; 0= in human form.
+("cf_bear_form_selected",
+    [
+      (assign, reg0, 0), (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"),
+      # Check if agent troop is that
+      (try_begin),
+          (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
+          (troop_get_inventory_slot, ":body_item", ":bear_troop", ek_body),
+          (eq, ":body_item", "itm_warg_ghost_armour"),
+          (troop_is_hero, ":bear_troop"),
+          (troop_get_inventory_slot, ":horse_item", ":bear_troop", ek_horse),
+          (eq, ":horse_item", "itm_bear"),
+          (assign, reg0, 1),
+      (try_end),
+      (set_trigger_result, reg0),
+]),
+
+# script_cf_select_bear_form
+# inputs: None
+# outputs: None
+("cf_select_bear_form", [
+    (try_begin),
+        # Use the troop slot to remember that player troop morphed to suit the
+        (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"),
+        (troop_set_slot, "trp_player", slot_troop_player_clone,  ":bear_troop"),
+
+        # Proper name and set the shit
+        (str_store_troop_name, s3, "trp_player"),
+        (troop_set_name, ":bear_troop", s3),
+
+        # Setup race and faction
+        (troop_get_type, ":race", "trp_player"),
+        (troop_set_type,":bear_troop", ":race"),
+        (store_troop_faction, ":fac", "trp_player"),
+        (troop_set_faction, ":bear_troop", ":fac"),
+
+        # Copy player's xp to bear's
+        (troop_get_xp, ":diff_xp", "trp_player"),
+        (troop_get_xp, ":bear_xp", ":bear_troop"),
+ 
+        # Get the difference and add to other troop 
+        # NOTE This is hack somehow u can't grant TOO much xp at once
+        (val_sub, ":diff_xp", ":bear_xp"),
+        (store_div, ":n", ":diff_xp", 1000), (store_mod, ":r", ":diff_xp", 1000),
+        (try_for_range, ":i", 0, ":n"),
+            (add_xp_to_troop, 1000, ":bear_troop"),
+        (end_try),
+        (add_xp_to_troop, ":r", ":bear_troop"),
+
+        # Clone player into multiplayer something
+        (call_script, "script_clone_troop", "trp_player", ":bear_troop"),
+        (troop_clear_inventory, ":bear_troop"),
+        (troop_set_inventory_slot, ":bear_troop", ek_horse, "itm_bear"),
+        (troop_set_inventory_slot, ":bear_troop", ek_item_0, "itm_warg_ghost_lance"),
+        (troop_set_inventory_slot, ":bear_troop", ek_body, "itm_warg_ghost_armour"),
+        (troop_set_inventory_slot, ":bear_troop", ek_head, "itm_empty_head"),
+        (troop_set_inventory_slot, ":bear_troop", ek_gloves, "itm_empty_hands"),
+        (troop_set_inventory_slot, ":bear_troop", ek_foot, "itm_empty_legs"),
+        (troop_raise_skill, ":bear_troop", skl_riding, 10),
+
+        # Transform hp between player troop and player copy 
+        # NOTE this doesn't touch the bear agent (horse)
+        # NOTE 2 Health is relative
+        (store_troop_health, ":bear_hp", "trp_player", 0), 
+        (troop_set_health, ":bear_troop", ":bear_hp"),
+ 
+        # The last piece is in mission module triggers
+        (display_log_message, "@You hapeshift into a bear!", color_neutral_news),
+    (end_try),
+]),
+
+# script_select_human_form
+# This script should be called before the mission, or after it.
+# The current player troop should have correctly computed health
+# Input: relative health of bear troop at the moment
+# Output: None
+("cf_select_human_form",
+    [
+      (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
+      (store_script_param_1, ":bear_hp"),
+      (try_begin),
+          (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
+
+          # Remember hp and xp
+          (troop_get_xp, ":bear_xp", ":bear_troop"),
+          (troop_get_xp, ":player_xp", "trp_player"),
+
+          # Get the difference
+          (val_sub, ":bear_xp", ":player_xp"),
+ 
+          # Get back xp earned as bear
+          (assign, reg1, ":bear_xp"),
+          (display_message, "@You got {reg1} xp in bear form"),
+          (add_xp_to_troop, ":bear_xp", "trp_player"),
+
+          # Reset the slot
+          (troop_set_health, ":bear_troop", ":bear_hp"),
+          (troop_set_health, "trp_player", ":bear_hp"),
+          (set_player_troop, "trp_player"),
+          (troop_set_slot, "trp_player", slot_troop_player_clone, "$g_player_troop"),
+      (try_end),
+]),
+
+# script_bear_attack_no_anim
+# This script should be called in mission with a specific cooldown
+# Input: arg1 = agent_no (attacker)
+#        arg2 = base_dmg
+#        arg3 = attack_anim
+# OUTPUT: none
+('bear_attack_no_anim', [
+    (store_script_param, ":agent_no", 1),
+    (store_script_param, ":base_dmg", 2),
+    (store_script_param, ":attack_anim", 3),
+
+    # Set defender animation depending on attack type and increase damge
+    (assign, ":max_distance", 300),
+    (agent_get_horse, ":bear", ":agent_no"),
+    (agent_get_position, pos6, ":bear"),
+    (set_fixed_point_multiplier, 100),
+    (position_move_z, pos6, 50, 0), # Attack center is slightly over the ground
+
+    # Setup attacker position offsets and "fake" attack weapon for different anims
+    (assign, ":attack_item", "itm_beorn_axe"),
+    (try_begin),
+        (eq, ":attack_anim", "anim_bear_slap_right"),
+        #(display_log_message, "@BEAR Attacked with paw slap!"),
+        (assign, ":fly_anim", "anim_strike_fly_back"),
+    (else_try),
+        (eq, ":attack_anim", "anim_bear_uppercut"),
+        #(display_log_message, "@BEAR Attacked with uppercut!"),
+        (assign, ":fly_anim", "anim_strike_fly_back_rise_from_left"), # Hit is from left
+    (else_try),
+        (eq, ":attack_anim", "anim_warg_leapattack"),
+        #(display_log_message, "@BEAR Attacked with leap!"),
+        (val_sub, ":base_dmg", 7),
+        (assign, ":fly_anim", "anim_strike_fly_back"), # Hit is from left
+        # Adjust from where the attack occurs (move in local frame of ref)
+        (position_move_y, pos6, -100, 0),
+        (assign, ":max_distance", 450),
+        (assign, ":attack_item", "itm_beorn_axe_reward"),
+    (else_try),
+        (eq, ":attack_anim", "anim_bear_slam"),
+        (assign, ":attack_item", "itm_beorn_axe_reward"),
+        (val_add, ":base_dmg", 7),
+        #(display_log_message, "@BEAR Attacked with a slam!"),
+        (assign, ":fly_anim", "anim_strike_fly_back_near_rise"), # TODO Check this 
+    (try_end),
+
+    # Loop over enemies to check if someone is in front
+    (assign, ":damaged_agents", 0),
+    (assign, ":agents_to_damage", 20),
+
+    (try_for_agents, ":enemy_agent", pos6, ":max_distance"),
+        (agent_is_alive, ":enemy_agent"),
+        (agent_is_active, ":enemy_agent"),
+        (neq, ":enemy_agent", ":agent_no"),
+        (le, ":damaged_agents", ":agents_to_damage"), # Stop loop if enough agents were damaged
+        
+        # Allow attack direct attack horses only if they have no rider
+        (agent_get_rider, ":rider", ":enemy_agent"),
+        (this_or_next|agent_is_human, ":enemy_agent"),
+        (lt, ":rider", 0),
+
+        # Get enemy troop data and exclude invisible riders
+        (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
+        (this_or_next|lt, ":enemy_troop_id", 0),
+
+        # First position check
+        (agent_get_position, pos8, ":enemy_agent"),
+        (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
+        (lt, ":dist", ":max_distance"),
+        (neg|position_is_behind_position, pos8, pos6), #2, 1
+
+        # Optional: Check if the enemy was turned back to attacker
+        (try_begin),
+            (position_is_behind_position, pos6, pos8), # attacker (1) behind victim (2)
+            (assign, ":fly_anim", "anim_strike_fly_front"),
+        (end_try),
+
+        # Experimental: Limit the attack to "sides"
+        (position_transform_position_to_local, pos8, pos6, pos8),
+        (position_get_x, ":enemy_x_distance", pos8),
+        (ge, ":enemy_x_distance", -150),
+        (lt, ":enemy_x_distance", 150),
+
+        # TODO We don't handle side hits yet
+        # Anim depending on being mounted or not
+        (assign, ":channel", 0),
+        (agent_get_horse, ":enemy_mount", ":enemy_agent"),
+        (assign, ":sounds_played", 0),
+
+        # Decide if to hit an agent or it's mount or agent is a mount
+        (try_begin), # No horse, agent not a horse
+            (lt, ":enemy_mount", 0),
+            (agent_is_human, ":enemy_agent"),
+            (assign, ":hit_anim", ":fly_anim"),
+            (assign, ":hit_mount_instead", 0),
+        
+        # Human rider: decide if hit a rider or its mount
+        (else_try),
+            (ge, ":enemy_mount", 0),
+            (agent_is_human, ":enemy_agent"),
+            (store_random_in_range, ":hit_mount_instead", 0, 2),
+            (store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
+            (try_begin), # Always target munt if rider is invisible rider (so animal)
+                (this_or_next|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+                (is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
+                (assign, ":hit_mount_instead", 1),
+            (else_try), # Dismount bad rider
+                (eq, ":hit_mount_instead", 0),
+                (le, ":riding_skill", 5),
+                (assign, ":hit_anim", ":fly_anim"),
+                (agent_start_running_away, ":enemy_mount"),
+                (agent_stop_running_away, ":enemy_mount"),
+            (else_try), # Only hit good rider
+                (eq, ":hit_mount_instead", 0),
+                (assign, ":hit_anim", "anim_strike_legs_front"),
+                (assign, ":channel", 1),
+            (try_end),
+        (try_end),
+ 
+        # Calc dmg
+        (store_random_in_range, ":dmg", 0, ":base_dmg"),
+        (val_add, ":dmg", ":base_dmg"),
+
+        # Distribute damage to either mount or primary target
+        (assign, reg8, ":enemy_agent"),
+        (try_begin),
+            (eq, ":hit_mount_instead", 0),
+            (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
+            (agent_deliver_damage_to_agent_advanced, ":final_dmg", 
+                    ":agent_no", ":enemy_agent", ":dmg", ":attack_item"),
+            # (display_message, "@BEAR: Shapeshifter strikes primary target: {reg8}!"),
+        (else_try),
+            (eq, ":hit_mount_instead", 1),
+            (agent_deliver_damage_to_agent_advanced, ":final_dmg",
+                    ":agent_no", ":enemy_mount", ":dmg", ":attack_item"),
+            # (display_message, "@BEAR: Shapeshifter strikes mount of human agent: {reg8}!"),
+        (try_end),
+        (val_add, ":damaged_agents", 1),
+        
+        # ON-HIT SOUNDS
+        (try_begin),
+            (lt, ":sounds_played", 2),
+            # Calc absorbed dmg and play sound depending on it and final dmg
+            (val_sub, ":dmg", ":final_dmg"),
+
+            # Animation attack resulting in blunt dmg -> blunt sound
+            # High armour
+            (try_begin),
+                (eq, ":attack_item", "itm_beorn_axe_reward"), # blunt weapon
+                (ge, ":dmg", 25),
+                (agent_play_sound, ":enemy_agent", "snd_wooden_hit_high_armor_high_damage"),
+            # Low armor
+            (else_try),
+                (eq, ":attack_item", "itm_beorn_axe_reward"),
+                (agent_play_sound, ":enemy_agent", "snd_wooden_hit_low_armor_high_damage"),
+            # Slash attack: High armour high damage
+            (else_try),
+                (ge, ":dmg", 25), (ge, ":final_dmg", 15),
+                (agent_play_sound, ":enemy_agent", "snd_metal_hit_high_armor_high_damage"),
+            # Slash: High armour low damage
+            (else_try),
+                (ge, ":dmg", 25), (lt, ":final_dmg", 15),
+                (agent_play_sound, ":enemy_agent", "snd_metal_hit_high_armor_low_damage"),
+            # Slash: low armor
+            (else_try),
+                (lt, ":dmg", 25),
+                (agent_play_sound, ":enemy_agent", "snd_metal_hit_low_armor_high_damage"),
+            (try_end),
+            (val_add, ":sounds_played", 1),
+        (try_end), # END OF SOUND CODE
+    (try_end),
+]),
+
+# script_cf_gain_trait_bear_shape
+# Triggered after conditions to get the trait are satisfied
+("cf_gain_trait_bear_shape",[
+    (neg|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1), 
+    # special case as not having the trait could be denoted in many ways
+    (display_log_message, "@Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.", color_good_news),
+    (call_script, "script_gain_trait", slot_trait_bear_shape),
+ ]), 
+
+# script_update_bear_kinship
+# Fired whenever bear is encountered to form a kinship with them.
+# slot_trait_bear_shape is 0 - no trait, 1 - trait, n>1, no trait stores bear kinship
+("cf_update_bear_kinship",[
+    (try_begin),
+        (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
+        (neq, ":bear_kinship", 1),
+        (lt, ":bear_kinship", 25),
+
+        # Player strong enough to form kinship with bears
+        (eq, "$players_kingdom", "fac_beorn"), # Only beorning get bear kinship points
+        (store_attribute_level, ":charisma", "trp_player", ca_charisma),
+        (ge, ":charisma", 12),
+        (store_attribute_level, ":strength", "trp_player", ca_strength),
+        (ge, ":strength", 17),
+
+        # Bear kinship is the amount of appearences when player was with bears and with small party
+        (get_player_agent_no, ":agent"),
+        (agent_get_party_id, ":party", ":agent"),
+        (store_party_size, ":party_size", ":party"),
+
+        # 2/party_size chance for kiniship + 2)
+        (store_random_in_range,":rnd", 0, 100),
+        (assign, ":chance", 100),
+        (val_div, ":chance", ":party_size"),
+        (val_add, ":chance", 1),
+        (val_mul, ":chance", 2),
+        (le, ":rnd", ":chance"),
+
+        # Increase approprietly (skipping one)
+        (try_begin),
+            (eq, ":bear_kinship", 0),
+            (assign, ":bear_kinship", 2),
+        (else_try),
+            (val_add, ":bear_kinship", 1),
+        (try_end),
+        (troop_set_slot, "trp_traits", slot_trait_bear_shape, ":bear_kinship"),
+        #(assign, reg1, ":bear_kinship"),
+        #(display_message, "@DEBUG Bear kinship: increased {reg1}", color_good_news),
+    (try_end),
+ ]),
+
+# script_cf_bearform_on_dismount
+# Script should be triggered when character dismounts while in bear from. Guy should either
+# die or reform to human
+# INPUTS:
+#   arg1 = agent
+#   arg2 = horse agent
+("cf_bearform_on_dismount",[
+    # (display_log_message, "@DEBUG dismount fired"),
+    (store_script_param_1, ":agent"),
+    (store_script_param_2, ":horse"),
+
+    (assign, ":final_hp"),
+    (try_begin), 
+        # Only if horse/bear mount is alive allow it
+        (ge, ":horse", 0), (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
+
+        # Horse
+        (troop_get_inventory_slot, ":item", "trp_player", ek_horse),
+        (try_begin), (ge, ":item", 0), (agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_bear"), (try_end),
+
+        # Body
+        (troop_get_inventory_slot, ":item", "trp_player", ek_body),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_warg_ghost_armour"), (try_end),
+
+        # Head
+        (troop_get_inventory_slot, ":item", "trp_player", ek_head),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_empty_head"), (try_end),
+
+        # Hands
+        (troop_get_inventory_slot, ":item", "trp_player", ek_gloves),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_empty_hands"), (try_end),
+
+        # Legs
+        (troop_get_inventory_slot, ":item", "trp_player", ek_foot),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item"),
+        (else_try), (agent_unequip_item, ":agent", "itm_empty_legs"), (try_end),
+
+        # Weapons, only first one has a risk of being ghost lance
+        (troop_get_inventory_slot, ":item", "trp_player", ek_item_0),
+        (agent_unequip_item, ":agent", "itm_warg_ghost_lance"),
+        (try_begin),(ge, ":item", 0), (agent_equip_item, ":agent", ":item", 1), (try_end),
+
+        (troop_get_inventory_slot, ":item", "trp_player", ek_item_1),
+        (try_begin),(ge, ":item", 0), (agent_equip_item, ":agent", ":item", 2), (try_end),
+
+        (troop_get_inventory_slot, ":item", "trp_player", ek_item_2),
+        (try_begin),(ge, ":item", 0), (agent_equip_item, ":agent", ":item", 3), (try_end),
+
+        (troop_get_inventory_slot, ":item", "trp_player", ek_item_3),
+        (try_begin),(ge, ":item", 0),(agent_equip_item, ":agent", ":item", 4), (try_end),
+
+        # Have proper position
+        (agent_is_alive, ":agent"),
+        (agent_set_animation, ":agent", "anim_hide_inside_warg"),
+        (agent_set_animation, ":agent", "anim_bow_to_lord_stay_down"),
+
+        # Fadie out the bear
+        (agent_get_position, pos1, ":agent"),
+        (particle_system_burst, "psys_bear_fur", pos1, 100),
+
+        # Set proper hp
+        (store_agent_hit_points, ":bear_hp", ":horse", 0), 
+        (agent_set_hit_points, ":agent", ":bear_hp", 0),
+        (agent_set_visibility, ":agent", 1),
+        (assign, ":final_hp", ":bear_hp"),
+        (agent_fade_out, ":horse"),
+        (display_log_message, "@You change back to human form...", color_neutral_news),
+    (else_try), # Else kill the player
+        (agent_set_hit_points, ":agent", 0),
+        (agent_deliver_damage_to_agent, ":agent", ":agent", 1),
+        (assign, ":final_hp", 0),
+    (try_end),
+
+    # Set troop to have human form again (only troop)
+    (call_script, "script_cf_select_human_form", ":final_hp"),
+]),
+
+# script_show_on_hit_blood 
+# Spawn blood particle on hit
+# Inputs: 
+#   arg1 victim agent
+#   arg2 damage dealt
+#   arg3 dmg_type
+#
+("cf_on_hit_blood", [
+    (store_script_param, ":victim", 1),
+    (store_script_param, ":dmg_type", 3),
+
+    # Check troop height to get proper blood
+    (agent_get_troop_id, ":troop", ":victim"),
+
+    # Horizontal randomization
+    (store_random_in_range, ":dx", -20, 20), (position_move_x, pos0, ":dx", 0), 
+
+    (try_begin),
+        (ge, ":troop", 0),
+        (troop_get_type, ":race", ":troop"),
+        (try_begin),
+            (eq, ":race", tf_troll),
+            (position_move_z, pos0, 210), 
+        (else_try),
+            (this_or_next|is_between, ":race", tf_orc_begin, tf_orc_end),
+            (eq, ":race", tf_dwarf),
+            (neq, ":race", tf_urukhai),
+            (neq, ":race", tf_uruk),
+            (position_move_z, pos0, 165), 
+        (else_try), # All the rest -> human size
+            (position_move_z, pos0, 180), 
+        (try_end),
+    (else_try), # Animal are target
+        # Horses
+        (agent_get_item_id, ":animal_type", ":victim"),
+        (try_begin),
+            (this_or_next|is_between, ":animal_type", item_horse_begin, item_horse_end),
+            (this_or_next|eq, ":animal_type", "itm_werewolf"),
+            (this_or_next|eq, ":animal_type", "itm_bear"),
+            (eq, ":animal_type", "itm_oliphant"),
+            (position_move_z, pos0, 170),
+        (else_try), # Wargs are shorter
+            (is_between, ":animal_type", item_warg_begin, item_warg_end),
+            (position_move_z, pos0, 140), 
+        (else_try),
+            (this_or_next|eq, ":animal_type", "itm_spider"),
+            (eq, ":animal_type", "itm_wolf"),
+            (position_move_z, pos0, 110), 
+        (else_try),
+            (position_move_z, pos0, 150), 
+        (try_end),
+    (try_end),
+
+    # Cap the dmg it will be used
+    (store_random_in_range, ":particle_type", 0, 2),
+    (try_begin), # bigger dmg bigger blooood
+        (eq, ":particle_type", 1),
+        (particle_system_burst, "psys_game_blood_rand_2", pos0, 100),
+    (else_try),
+        (particle_system_burst, "psys_game_blood_rand", pos0, 100),
+    (try_end),
 ]),
 
 ]
