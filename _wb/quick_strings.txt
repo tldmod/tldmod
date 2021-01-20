@@ -1,4 +1,4 @@
-1862
+1867
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_141_wb__dev_^_B _rev_141_wb_|_dev_^_Built_2021-01-09_19:21___
+qstr__rev_143_wb__dev_^_B _rev_143_wb_|_dev_^_Built_2021-01-20_19:46___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -802,6 +802,10 @@ qstr_A_poisonous_fog_from A_poisonous_fog_from_Dol_Guldur_lingers_on_the_battlef
 qstr_A_poisonous_fog_from_ A_poisonous_fog_from_Dol_Guldur_lingers_on_the_battlefield._You_do_not_feel_any_different,_but_you_hear_your_enemies_suffer_and_you_can_smell_their_fear.
 qstr_swy_ui_evil swy_ui_evil
 qstr_swy_river_tinting_co swy_river_tinting_color
+qstr_You_hapeshift_into_a You_hapeshift_into_a_bear!
+qstr_You_got_{reg1}_xp_in You_got_{reg1}_xp_in_bear_form
+qstr_Your_ability_to_chan Your_ability_to_change_skin_has_manifested,_from_now_on_you_can_walk_wild_paths_both_as_man_and_a_bear.
+qstr_You_change_back_to_h You_change_back_to_human_form...
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
@@ -835,6 +839,7 @@ qstr_Division_{reg1}_{s2}_fo Division_{reg1}_{s2}_forms_{reg0}_lines_(memorized)
 qstr_DEBUG:_F1_Let_Go DEBUG:_F1_Let_Go
 qstr_Delivered_{reg60}_da Delivered_{reg60}_damage.
 qstr_DEBUG__Health_Regen_ DEBUG_(Health_Regen):_{s1}_regains_{reg0}%_health.__=_+{reg1}%_STR
+qstr_Your_bear_form_has_{ Your_bear_form_has_{reg2}/{reg1}_HP!
 qstr_Three_Nazgul_are_cir Three_Nazgul_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazgul_are_circl Two_Nazgul_are_circling_in_the_sky_above_the_battlefield!
 qstr_A_Nazgul_is_circling A_Nazgul_is_circling_in_the_sky_above_the_battlefield!

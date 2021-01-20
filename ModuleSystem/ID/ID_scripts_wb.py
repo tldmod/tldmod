@@ -738,5 +738,13 @@ script_flash_and_animate = 736
 script_get_position_and_teleport_behind_agent = 737
 script_wield_agent_weapons = 738
 script_cf_surrounded_pushback = 739
+script_cf_bear_form_selected = 740
+script_cf_select_bear_form = 741
+script_cf_select_human_form = 742
+script_bear_attack_no_anim = 743
+script_cf_gain_trait_bear_shape = 744
+script_cf_update_bear_kinship = 745
+script_cf_bearform_on_dismount = 746
+script_cf_on_hit_blood = 747
 
 

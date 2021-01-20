@@ -59,3 +59,6 @@ psys_beacon_fire = 57
 psys_piedra_dust = 58
 psys_water_fall = 59
 psys_water_fall_3 = 60
+psys_bear_fur = 61
+psys_game_blood_rand = 62
+psys_game_blood_rand_2 = 63
