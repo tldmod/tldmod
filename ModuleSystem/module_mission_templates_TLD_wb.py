@@ -3905,7 +3905,11 @@ beorning_shapeshift = [
         (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
 
         # Remove the inventory bag out of player's reach
-        (try_for_prop_instances, ":prop_instance", "spr_inventory"),
+        # TODO this causes compiler warning
+        (scene_prop_get_num_instances, ":max_inv", "spr_inventory"),
+        (try_begin),
+            (gt, ":max_inv", 0),
+            (scene_prop_get_instance, ":prop_instance", "spr_inventory", 0),
             (prop_instance_get_position, pos1, ":prop_instance"),
             (position_move_z, pos1, -999),
             (prop_instance_set_position, ":prop_instance", pos1),

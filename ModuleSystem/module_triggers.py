@@ -1564,6 +1564,7 @@ triggers = [
         (ge, ":visited",3),
         (call_script, "script_gain_trait_well_travelled"),
       (try_end),
+    ] + (is_a_wb_trigger==1 and [
       (try_begin), #Skinchanger trait -> BEAR Arsakes
         # Chance ~num_of_private_bear_meetings, but has to be more than 5
         # special case as we store value related to chance of getting it in the slot itslef
@@ -1576,7 +1577,8 @@ triggers = [
         (le, ":rnd", ":chance"),
         (call_script, "script_cf_gain_trait_bear_shape"),
       (try_end),
-  ]),
+  ] or [])
+  ),
   
   #check progress on oath quest
   (24, 0, 0, [(check_quest_active, "qst_oath_of_vengeance", 1)],[
