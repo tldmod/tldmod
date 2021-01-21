@@ -29917,15 +29917,16 @@ if is_a_wb_script==1:
     (try_begin),
         (eq, ":attack_anim", "anim_bear_slap_right"),
         #(display_log_message, "@BEAR Attacked with paw slap!"),
+        (val_add, ":base_dmg", 7),
         (assign, ":fly_anim", "anim_strike_fly_back"),
     (else_try),
         (eq, ":attack_anim", "anim_bear_uppercut"),
         #(display_log_message, "@BEAR Attacked with uppercut!"),
+        (val_add, ":base_dmg", 5),
         (assign, ":fly_anim", "anim_strike_fly_back_rise_from_left"), # Hit is from left
     (else_try),
         (eq, ":attack_anim", "anim_warg_leapattack"),
         #(display_log_message, "@BEAR Attacked with leap!"),
-        (val_sub, ":base_dmg", 7),
         (assign, ":fly_anim", "anim_strike_fly_back"), # Hit is from left
         # Adjust from where the attack occurs (move in local frame of ref)
         (position_move_y, pos6, -100, 0),
@@ -29934,7 +29935,7 @@ if is_a_wb_script==1:
     (else_try),
         (eq, ":attack_anim", "anim_bear_slam"),
         (assign, ":attack_item", "itm_beorn_axe_reward"),
-        (val_add, ":base_dmg", 7),
+        (val_add, ":base_dmg", 15),
         #(display_log_message, "@BEAR Attacked with a slam!"),
         (assign, ":fly_anim", "anim_strike_fly_back_near_rise"), # TODO Check this 
     (try_end),
