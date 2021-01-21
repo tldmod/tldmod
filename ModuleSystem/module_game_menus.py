@@ -4925,24 +4925,7 @@ game_menus = [
 			(try_end),
 
       ]),
-       # For unfriendly enemies (e.g bandits, trolls, quest parties)
-      ("encounter_attack_bearform",[
-          (this_or_next|eq, 		"$encountered_party_friendly", 0),
-		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"),
-		  (this_or_next|eq, 		"$g_encountered_party_template", "pt_ring_hunters"),
-		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_1"),
-		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_2"),
-		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_3"),
-                  (eq, "$g_encountered_party", "$qst_reinforcement_party"),
-                  # Arsakes: BEAR CHANGE CONDTIONS -> to change to 1
-                  (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
-                  (eq, "$cheat_mode", 1),
-          ],
-         "{reg21?Leap_into_battle_in_bear_form:Turn_skin_and_face_them}.",[
-                        (call_script, "script_cf_select_bear_form"),
-                        (call_script,"script_start_current_battle"),
 
-      ]),
       ("encounter_order_attack",[
           (eq, "$encountered_party_friendly", 0),
           (call_script, "script_party_count_members_with_full_health", "p_main_party"),(ge, reg0, 4),
@@ -5003,7 +4986,24 @@ game_menus = [
           (eq,"$cant_leave_encounter", 1),
 		  (eq, "$cheat_mode", 1),
           ],"DEBUG: avoid this battle.",[ (leave_encounter),(change_screen_return)]),
- ] for ct in range(cheat_switch)])+[
+ ] for ct in range(cheat_switch)]) + (is_a_wb_menu==1 and [("encounter_attack_bearform",[
+          # Arsakes: BEAR shapeshift option
+          (this_or_next|eq, 		"$encountered_party_friendly", 0),
+		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll",
+                      "pt_looters"),
+		  (this_or_next|eq,"$g_encountered_party_template", "pt_ring_hunters"),
+		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_1"),
+		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_2"),
+		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_3"),
+                  (eq, "$g_encountered_party", "$qst_reinforcement_party"),
+                  (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
+                  (eq, "$cheat_mode", 1),
+          ],
+         "{reg21?Leap_into_battle_in_bear_form:Turn_skin_and_face_them}.",[
+                        (call_script, "script_cf_select_bear_form"),
+                        (call_script,"script_start_current_battle"),
+
+      ]),] or []) + [
 
       ("encounter_leave",[
           (eq,"$cant_leave_encounter", 0),
@@ -6488,28 +6488,6 @@ game_menus = [
                                 (change_screen_mission),
                                 ]),
 
-    # BEAR SHAPESHIFT OPTION
-    ("join_attack_bearform",[
-        (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
-        #BEAR
-        ],
-                            "Leap_into_battle_in_bear_form",[
-                                (call_script, "script_cf_select_bear_form"), # Select bear form
-                                (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
-                                (assign, "$g_battle_result", 0),
-                                (call_script, "script_calculate_renown_value"),
-                                (call_script, "script_calculate_battle_advantage"),(set_battle_advantage, reg0),
-                                (call_script, "script_calculate_battleside_races"),
-                                (set_party_battle_mode),
-                                (set_jump_mission,"mt_lead_charge"),
-								
-                                (call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
-                                (assign, "$g_next_menu", "mnu_join_battle"),
-                                (jump_to_menu, "mnu_battle_debrief"),
-                                (change_screen_mission),
-                                ]),
-
-
       ("join_order_attack",[
 #          (gt, "$encountered_party_hostile", 0),
           (call_script, "script_party_count_members_with_full_health", "p_main_party"),(ge, reg(0), 3),
@@ -6540,8 +6518,27 @@ game_menus = [
       	],
       	 "Use Influence Points to Command Your Allies in the Field.", [
       		(jump_to_menu, "mnu_player_control_allies_join"),
-      ]),
-
+      ]),] + (is_a_wb_menu==1 and [("join_attack_bearform",[
+          # BEAR SHAPESHIFT OPTION
+          (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
+          (eq, "$cheat_mode", 1),
+        ],
+        "Leap_into_battle_in_bear_form",[
+            (call_script, "script_cf_select_bear_form"), # Select bear form
+            (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
+            (assign, "$g_battle_result", 0),
+            (call_script, "script_calculate_renown_value"),
+            (call_script, "script_calculate_battle_advantage"),(set_battle_advantage, reg0),
+            (call_script, "script_calculate_battleside_races"),
+            (set_party_battle_mode),
+            (set_jump_mission,"mt_lead_charge"),
+                                            
+            (call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
+            (assign, "$g_next_menu", "mnu_join_battle"),
+            (jump_to_menu, "mnu_battle_debrief"),
+            (change_screen_mission),
+        ]),
+    ] or []) + [
       ("join_leave",[],"Disengage.",[
         (try_begin),
            #(neg|troop_is_wounded, "trp_player"),
@@ -6560,9 +6557,8 @@ game_menus = [
 	        (display_message, "@CHEAT: healed!!!"),
 			(jump_to_menu, "mnu_pre_join"),
 		]),
-
     ]
- ),
+),
 
 # Player Control Allies Join
 
