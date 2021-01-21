@@ -666,7 +666,16 @@ common_battle_check_victory_condition = (1, 60, ti_once,[
 	(assign,"$battle_won",1),
 	(assign, "$g_battle_result", 1),
 	(call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
-    ],[
+    ],
+   (is_a_wb_mt==1 and [
+        (assign, ":hp", 0),
+        (try_begin),
+            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
+            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
+            (store_agent_hit_points, ":hp", ":bear", 0), 
+        (end_try),
+        (call_script, "script_cf_select_human_form", ":hp"),
+    ] or []) + [
 	(call_script, "script_count_mission_casualties_from_agents"),
 	(finish_mission, 1)])
 

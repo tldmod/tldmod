@@ -4019,8 +4019,8 @@ beorning_shapeshift = [
 
     # BEAR ATTACK TRIGGERING
     # Divided in two parts: etting animation and applying attack effects (delayed)
-    #   Bear slap right/uppercut (LMB), cooldown 1.5s
-    (0, 0, 1.5, [
+    #   Bear slap right/uppercut (LMB), cooldown 1.4s
+    (0, 0, 1.4, [
         (game_key_clicked, gk_attack),
         # Check currently run anims
         (get_player_agent_no, ":agent_no"),(agent_is_alive, ":agent_no"),
@@ -4098,7 +4098,7 @@ beorning_shapeshift = [
     ]),
 
     # LEAP ATTACK TRIGGER(ANIM)
-    (0, 0, 2.0, [
+    (0, 0, 1.5, [
         (game_key_clicked, gk_jump),
         
         # Check bear current anim
@@ -4112,9 +4112,10 @@ beorning_shapeshift = [
         (agent_get_animation, ":curr_anim_bear", ":horse", 0),
         (neg|is_between, ":curr_anim_bear", "anim_bear_slap_right", "anim_unused_horse_anim_12"),
 
-        # We have to be slow
-        (this_or_next|is_between, ":curr_anim_bear", "anim_horse_stand", "anim_horse_pace_2"),
-        (this_or_next|eq, ":curr_anim_bear", "anim_horse_walk_backward"),
+        # We have to be FAST OR SLOW..
+        #(this_or_next|is_between, ":curr_anim_bear", "anim_horse_stand", "anim_horse_pace_4"),
+        #(this_or_next|eq, ":curr_anim_bear", "anim_horse_walk_backward"),
+        (this_or_next|is_between, ":curr_anim_bear", "anim_horse_stand", "anim_horse_rear"),
         (is_between, ":curr_anim_bear", "anim_horse_turn_right", "anim_horse_fall_in_place"),
     ],[
         # Check if player is beorning shapshifter
@@ -4124,6 +4125,9 @@ beorning_shapeshift = [
         # Execute animation
         (get_player_agent_no, ":agent_no"),(agent_get_horse, ":horse", ":agent_no"), 
         (agent_set_animation, ":horse", "anim_warg_leapattack"),
+
+        # Invincible charge
+        (agent_set_invulnerable_shield, ":horse", 1),
 
         # Make sound
         (store_random_in_range, ":rnd_2", 0, 100),
@@ -4137,7 +4141,7 @@ beorning_shapeshift = [
     # This trigger consequences are dealayed which mean bear should be playing attack 
     # animation while consequences are executed
     # BEAR SLAP/UPPERCUT/JUMP
-    (0, 0.55, 1.0, [(this_or_next|game_key_clicked, gk_attack), (game_key_clicked, gk_jump),],[
+    (0, 0.55, 0.85, [(this_or_next|game_key_clicked, gk_attack), (game_key_clicked, gk_jump),],[
          # Check if agent is in the middle of an attack
         (get_player_agent_no, ":agent_no"),
         (agent_is_alive, ":agent_no"),
@@ -4157,7 +4161,22 @@ beorning_shapeshift = [
         # Setup damage & execute the attack
         (agent_get_troop_id, ":agent_troop", ":agent_no"),
         (store_attribute_level, ":base_dmg", ":agent_troop", ca_strength),
+        (store_skill_level, ":power_strike", skl_power_strike, ":agent_troop"),
+        (val_add, ":base_dmg", ":power_strike"),
         (call_script, "script_bear_attack_no_anim", ":agent_no", ":base_dmg", ":curr_anim_bear"),
+    ]),
+
+    # Turn off bear shield
+    (0, 1.3, 0.0, [(game_key_clicked, gk_jump),],[
+        (get_player_agent_no, ":agent_no"), (agent_is_alive, ":agent_no"),
+        # We/our bear have to be alive
+        (agent_get_horse, ":horse", ":agent_no"),
+        (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
+
+        (agent_get_animation, ":curr_anim_bear", ":horse", 0),
+        (eq, ":curr_anim_bear", "anim_warg_leapattack"),
+
+        (agent_set_invulnerable_shield, ":horse", 0),
     ]),
 
     # BEAR SLAM: Effect
@@ -4178,6 +4197,8 @@ beorning_shapeshift = [
         # Setup damage & execute the attack
         (agent_get_troop_id, ":agent_troop", ":agent_no"),
         (store_attribute_level, ":base_dmg", ":agent_troop", ca_strength),
+        (store_skill_level, ":power_strike", skl_power_strike, ":agent_troop"),
+        (val_add, ":base_dmg", ":power_strike"),
         (call_script, "script_bear_attack_no_anim", ":agent_no", ":base_dmg", ":curr_anim_bear"),
     ]),
 
