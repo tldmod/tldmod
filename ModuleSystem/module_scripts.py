@@ -3897,13 +3897,8 @@ scripts = [
 		(set_trigger_result, color_item_text_bonus),
 	  (else_try),
 	  	(eq, ":item_no", "itm_beorn_chief"),
-<<<<<<< HEAD
 	  	(try_begin),(eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
                 (try_begin),(eq, ":extra_text_id", 1), (set_result_string, "@Bonus to Strength (Player only)"),(set_trigger_result, color_item_text_bonus),(try_end),
-=======
-	  	(try_begin),(eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"),(set_trigger_result, color_item_text_special), (try_end),
-        (try_begin),(eq, ":extra_text_id", 1), (set_result_string, "@Bonus to Strength (Player only)"),(set_trigger_result, color_item_text_bonus),(try_end),
->>>>>>> master
 		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@(Scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
 	  (else_try),
 		(eq,":item_no","itm_orc_idol_reward"),
@@ -29790,12 +29785,9 @@ if is_a_wb_script==1:
 	(try_end),
 ]),
 
-<<<<<<< HEAD
 #Beornign shapeshifter related mechanics starts here
 ] + (is_a_wb_script==1 and [
 
-=======
->>>>>>> master
 # script_bear_form_selected
 # This script is called to check if player has selected bear form to fight battles
 # Input: arg1: 
@@ -29843,11 +29835,7 @@ if is_a_wb_script==1:
         # NOTE This is hack somehow u can't grant TOO much xp at once
         (val_sub, ":diff_xp", ":bear_xp"),
         (store_div, ":n", ":diff_xp", 1000), (store_mod, ":r", ":diff_xp", 1000),
-<<<<<<< HEAD
         (try_for_range, ":unused", 0, ":n"),
-=======
-        (try_for_range, ":i", 0, ":n"),
->>>>>>> master
             (add_xp_to_troop, 1000, ":bear_troop"),
         (end_try),
         (add_xp_to_troop, ":r", ":bear_troop"),
@@ -30273,8 +30261,4 @@ if is_a_wb_script==1:
     (try_end),
 ]),
 
-<<<<<<< HEAD
 ] or []) 
-=======
-]
->>>>>>> master
