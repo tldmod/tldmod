@@ -3895,7 +3895,7 @@ beorning_shapeshift = [
         (agent_is_active, ":horse"),
         (agent_set_visibility, ":horse", 1),
     ]),
-     
+
     # BEAR SETUP: After agent spawned
     # transfer stats from player clone troop to horse(bear) agent
     (ti_after_mission_start, 0, ti_once, [], [
@@ -3903,6 +3903,16 @@ beorning_shapeshift = [
 
         # If player agent is Beorning, those two are  set
         (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
+
+        (try_for_range, ":slot", ek_item_0, ek_horse),
+            (troop_get_inventory_slot, ":item", "trp_player", ":slot"),
+            (ge, ":item", 0), (agent_unequip_item, ":agent", ":item"),
+        (end_try),
+        (agent_equip_item, ":agent", "itm_warg_ghost_armour"),
+        (agent_equip_item, ":agent", "itm_warg_ghost_lance"),
+        (agent_equip_item, ":agent", "itm_empty_head"),
+        (agent_equip_item, ":agent", "itm_empty_hands"),
+        (agent_equip_item, ":agent", "itm_empty_legs"),
 
         # Remove the inventory bag out of player's reach
         # TODO this causes compiler warning
@@ -3918,7 +3928,6 @@ beorning_shapeshift = [
 
         # Set the visiblity of hidden rider and set proper health for the bear
         (agent_set_visibility, ":agent", 0),
-        (agent_set_animation, ":agent", "anim_hide_inside_warg"),
 
         # Get the copied player alternative troop HP (has to be computed)
         (agent_get_troop_id, ":agent_troop", ":agent"),
