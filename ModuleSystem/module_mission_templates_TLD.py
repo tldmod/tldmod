@@ -1742,28 +1742,31 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 
 # cheer instead of jump on space if battle is won  (mtarini)
 tld_cheer_on_space_when_battle_over_press = (0,1.5,0,[
-	(game_key_clicked, gk_jump),
-	(all_enemies_defeated, 2),
+    (game_key_clicked, gk_jump),
+    (all_enemies_defeated, 2),
     (get_player_agent_no, reg10),
-	(agent_is_alive, reg10),
-	(try_begin),(agent_get_horse, reg12, reg10),(ge, reg12, 0), 
-		(agent_set_animation, reg10, "anim_cheer_player_ride"),
-		(agent_set_animation, reg12, "anim_horse_cancel_ani"), # to remove horse jump
-	(else_try),
-		(agent_set_animation, reg10, "anim_cheer_player"),
-	(try_end),
-	(agent_get_troop_id, reg11, reg10),
-	(try_begin), 
-		(eq,"$player_cheering",0), # don't reshout if just shouted
-		(call_script, "script_troop_get_cheer_sound", reg11),
-        	(gt, reg1, -1), #MV fix
-		(agent_play_sound, reg10, reg1),    
-	(try_end),
-	(assign,"$player_cheering",1),
-  ],
-  [(assign,"$player_cheering",2), # after 1 sec, can end ani
+    (agent_is_alive, reg10),
+    (call_script, "script_cf_bear_form_selected"), (neq, reg0, 1), # Arsakes not in bear form
+    (try_begin),(agent_get_horse, reg12, reg10),(ge, reg12, 0), 
+            (agent_set_animation, reg10, "anim_cheer_player_ride"),
+            (agent_set_animation, reg12, "anim_horse_cancel_ani"), # to remove horse jump
+    (else_try),
+            (agent_set_animation, reg10, "anim_cheer_player"),
+    (try_end),
+    (agent_get_troop_id, reg11, reg10),
+    (try_begin), 
+            (eq,"$player_cheering",0), # don't reshout if just shouted
+            (call_script, "script_troop_get_cheer_sound", reg11),
+            (gt, reg1, -1), #MV fix
+            (agent_play_sound, reg10, reg1),    
+    (try_end),
+    (assign,"$player_cheering",1),
+    ],[
+        (assign,"$player_cheering",2), # after 1 sec, can end ani
 ])
 tld_cheer_on_space_when_battle_over_release = (0,0,0,[(eq,"$player_cheering",2),(neg|game_key_is_down, gk_jump)],[
+        (call_script, "script_cf_bear_form_selected"), (neq, reg0, 1), # Arsakes not in bear form
+
 	(get_player_agent_no, reg10),
 	(agent_get_horse, reg12, reg10),
 	(try_begin),(ge, reg12, 0),(agent_set_animation, reg10, "anim_cancel_ani_ride"),
