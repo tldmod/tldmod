@@ -114,21 +114,18 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   [
 
     # Arsakes BEAR CAMERAa adjustment (when default camera is used)
-    #(try_begin),
-    #  (eq, "$cam_mode", 0),
-    #  (agent_get_horse, ":horse_agent", "$cam_current_agent"),
-    #  (ge, ":horse_agent", 0),
-    #  (agent_get_item_id, ":horse_item", ":horse_agent"),
-    #  (eq, ":horse_item", "itm_bear"),
-    #  # Now setup camera
-    #  (set_fixed_point_multiplier, 100),
-    #  (agent_get_look_position, pos7, "$cam_current_agent"),
-    #  (position_move_z, pos7,  300, 0), # 180 default
-    #  (position_move_y, pos7, -350, 0), # -210 default
-    #  (mission_cam_animate_to_position, pos7, 100),
-    #
-    #(else_try),
     (try_begin),
+      (eq, "$cam_mode", 4), # Shapeshifting into bear adds 10 to camera mode
+      # Now setup camera
+      (set_fixed_point_multiplier, 100),
+      (agent_get_look_position, pos7, "$cam_current_agent"),
+      (position_move_z, pos7,  360), # 180 default
+      (position_move_y, pos7, -150), # -210 default
+      (position_rotate_x, pos7, -30),
+      (mission_cam_animate_to_position, pos7, 100),
+    #
+    (else_try),
+    #(try_begin),
       (eq, "$cam_mode", 1),
       (set_fixed_point_multiplier, 100),
       (agent_get_look_position, pos7, "$cam_current_agent"),
