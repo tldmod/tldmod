@@ -3946,50 +3946,29 @@ beorning_shapeshift = [
 
     # BEARFORM exit trigger: Leave area
     # NOTE This maybe source of bugs whenever player agent is not available
-    (ti_on_leave_area, 0, 0, [], [
-        (assign, ":hp", 0),
-        (try_begin),
-            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
-            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
-            (store_agent_hit_points, ":hp", ":bear", 0), 
-        (end_try),
-        (call_script, "script_cf_select_human_form", ":hp"),
+    (ti_on_leave_area, 0, 0, [(call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),], [
+        (call_script, "script_cf_select_human_form"),
     ]),
 
     # BEARFORM exit trigger: Leave area
     # NOTE This maybe source of bugs whenever player agent is not available
-    (ti_on_player_exit, 0, 0, [], [
-        (assign, ":hp", 0),
-        (try_begin),
-            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
-            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
-            (store_agent_hit_points, ":hp", ":bear", 0), 
-        (end_try),
-        (call_script, "script_cf_select_human_form", ":hp"),
+    (ti_on_player_exit, 0, 0, [(call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),],[
+        (call_script, "script_cf_select_human_form"),
     ]),
 
     # BEARFORM exit trigger: TAB pressed
     (ti_tab_pressed, 0, 0, [
         (this_or_next|eq, "$battle_won", 1), (this_or_next|eq, "$battle_won", 2),(main_hero_fallen),
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
     ],[
-        (assign, ":hp", 0),
-        (try_begin),
-            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
-            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
-            (store_agent_hit_points, ":hp", ":bear", 0), 
-        (end_try),
-        (call_script, "script_cf_select_human_form", ":hp"),
+        (call_script, "script_cf_select_human_form"),
     ]),
 
     # BEARFORM exit menu
-    (ti_question_answered, 0, 0, [(store_trigger_param_1,":answer"),(eq,":answer",0),], [
-        (assign, ":hp", 0),
-        (try_begin),
-            (get_player_agent_no, ":agent"), (ge, ":agent", 0),
-            (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0),
-            (store_agent_hit_points, ":hp", ":bear", 0), 
-        (end_try),
-        (call_script, "script_cf_select_human_form", ":hp"),
+    (ti_question_answered, 0, 0, [
+        (store_trigger_param_1,":answer"),(eq,":answer",0),
+        (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),],[
+        (call_script, "script_cf_select_human_form"),
     ]),
 
     # BEARFORM dismounting action (should only be played for player)

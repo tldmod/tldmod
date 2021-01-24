@@ -29854,33 +29854,51 @@ if is_a_wb_script==1:
 # script_select_human_form
 # This script should be called before the mission, or after it.
 # The current player troop should have correctly computed health
+# NOTE: This operation work on troops, the current in-battle represenation is not
+# important, rather what matter if current_player troop is bear or human
 # Input: relative health of bear troop at the moment
 # Output: None
-("cf_select_human_form",
-    [
-      (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
-      (store_script_param_1, ":bear_hp"),
-      (try_begin),
-          (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
+("cf_select_human_form", [
+    (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"), # constant
+    (assign, ":bear_hp", 0),
+    # If we are still in bear form get current bear HP otherwise, get bear troop hp
+    (get_player_agent_no, ":agent"), 
+    (try_begin),
+        (ge, ":agent", 0),
+        (agent_get_horse, ":bear" ,":agent"), (ge, ":bear", 0), (agent_is_alive, ":bear"),
+        (agent_is_active, ":bear"),
+        (store_agent_hit_points, ":bear_hp", ":bear", 0),
+        #(display_log_message, "@DEBUG BEAR HP CASE"),
+    (else_try),
+        (ge, ":agent", 0), (agent_is_active, ":agent"),
+        (store_agent_hit_points, ":bear_hp", ":agent", 0),
+        #(display_log_message, "@DEBUG HUMAN CASE"),
+    (else_try),
+        (store_troop_health, ":bear_hp", ":bear_troop", 0), 
+    (end_try),
+    #(assign, reg22, ":bear_hp"),
+    #(display_log_message, "@DEBUG Selecting human form & setting hp: {reg22} "),
 
-          # Remember hp and xp
-          (troop_get_xp, ":bear_xp", ":bear_troop"),
-          (troop_get_xp, ":player_xp", "trp_player"),
+    (try_begin),
+        (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
+        # Remember hp and xp
+        (troop_get_xp, ":bear_xp", ":bear_troop"),
+        (troop_get_xp, ":player_xp", "trp_player"),
 
-          # Get the difference
-          (val_sub, ":bear_xp", ":player_xp"),
- 
-          # Get back xp earned as bear
-          (assign, reg1, ":bear_xp"),
-          (display_message, "@You got {reg1} xp in bear form"),
-          (add_xp_to_troop, ":bear_xp", "trp_player"),
+        # Get the difference
+        (val_sub, ":bear_xp", ":player_xp"),
 
-          # Reset the slot
-          (troop_set_health, ":bear_troop", ":bear_hp"),
-          (troop_set_health, "trp_player", ":bear_hp"),
-          (set_player_troop, "trp_player"),
-          (troop_set_slot, "trp_player", slot_troop_player_clone, "$g_player_troop"),
-      (try_end),
+        # Get back xp earned as bear
+        (assign, reg1, ":bear_xp"),
+        (display_message, "@You got {reg1} xp in bear form"),
+        (add_xp_to_troop, ":bear_xp", "trp_player"),
+
+        # Reset the slot
+        (troop_set_health, ":bear_troop", ":bear_hp"),
+        (troop_set_health, "trp_player", ":bear_hp"),
+        (set_player_troop, "trp_player"),
+        (troop_set_slot, "trp_player", slot_troop_player_clone, "$g_player_troop"),
+    (try_end),
 ]),
 
 # script_bear_attack_no_anim
@@ -30118,7 +30136,6 @@ if is_a_wb_script==1:
     (store_script_param_1, ":agent"),
     (store_script_param_2, ":horse"),
 
-    (assign, ":final_hp"),
     (try_begin), 
         # Only if horse/bear mount is alive allow it
         (ge, ":horse", 0), (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
@@ -30172,20 +30189,16 @@ if is_a_wb_script==1:
         (particle_system_burst, "psys_bear_fur", pos1, 100),
 
         # Set proper hp
-        (store_agent_hit_points, ":bear_hp", ":horse", 0), 
+        (store_agent_hit_points, ":bear_hp", ":horse", 0), # Relative hp
         (agent_set_hit_points, ":agent", ":bear_hp", 0),
         (agent_set_visibility, ":agent", 1),
-        (assign, ":final_hp", ":bear_hp"),
         (agent_fade_out, ":horse"),
         (display_log_message, "@You change back to human form...", color_neutral_news),
     (else_try), # Else kill the player
         (agent_set_hit_points, ":agent", 0),
         (agent_deliver_damage_to_agent, ":agent", ":agent", 1),
-        (assign, ":final_hp", 0),
     (try_end),
 
-    # Set troop to have human form again (only troop)
-    (call_script, "script_cf_select_human_form", ":final_hp"),
 ]),
 
 # script_show_on_hit_blood 
