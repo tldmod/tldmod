@@ -3862,8 +3862,6 @@ voice_commands = [(ti_on_order_issued,0,3, [
 ]
 
 
-
-#
 # This code (set of triggers to be included in dynamic battle mission) allows character
 # to shift into a bear form for a battle.
 # Shapeshifters are identified by invisible armour and riding a bear
