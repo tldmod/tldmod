@@ -3942,6 +3942,11 @@ beorning_shapeshift = [
         (agent_set_hit_points, ":horse", ":curr_hp", 1),
         (assign, reg1, ":bear_hp"), (assign, reg2, ":curr_hp"),
         (display_message, "@Your bear form has {reg2}/{reg1} HP!",0xff4040),
+
+        (try_begin),
+            (eq, "$cam_mode", 0),
+            (assign, "$cam_mode", 4),
+        (end_try),
     ]),
 
     # BEARFORM exit trigger: Leave area

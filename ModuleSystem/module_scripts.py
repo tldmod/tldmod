@@ -29899,6 +29899,12 @@ if is_a_wb_script==1:
         (set_player_troop, "trp_player"),
         (troop_set_slot, "trp_player", slot_troop_player_clone, "$g_player_troop"),
     (try_end),
+
+    # Reset camera
+    (try_begin),
+        (eq, "$cam_mode", 4),
+        (assign, "$cam_mode", 0),
+    (end_try),
 ]),
 
 # script_bear_attack_no_anim
@@ -30108,18 +30114,25 @@ if is_a_wb_script==1:
         (store_random_in_range,":rnd", 0, 100),
         (assign, ":chance", 100),
         (val_div, ":chance", ":party_size"),
-        (val_add, ":chance", 1),
         (val_mul, ":chance", 2),
-        (le, ":rnd", ":chance"),
+        
+        #(assign, reg1, ":party_size"), (assign, reg2, ":chance"), (assign, reg3, ":rnd"), 
+        #(display_message, 
+        #    "@DEBUG Party size {reg1}, chance: {reg2}, rnd: {reg3}", color_good_news),
 
-        # Increase approprietly (skipping one)
+        # 7 % To decrease bear kinship, always
         (try_begin),
-            (eq, ":bear_kinship", 0),
-            (assign, ":bear_kinship", 2),
+            (gt, ":rnd", 93),
+            (gt, ":bear_kinship", 2),
+            (val_sub, ":bear_kinship", 1),
+        # chance % To increase
         (else_try),
+            (le, ":rnd", ":chance"),
             (val_add, ":bear_kinship", 1),
+            (val_max, ":bear_kinship", 2),
         (try_end),
         (troop_set_slot, "trp_traits", slot_trait_bear_shape, ":bear_kinship"),
+
         #(assign, reg1, ":bear_kinship"),
         #(display_message, "@DEBUG Bear kinship: increased {reg1}", color_good_news),
     (try_end),
@@ -30135,6 +30148,12 @@ if is_a_wb_script==1:
     # (display_log_message, "@DEBUG dismount fired"),
     (store_script_param_1, ":agent"),
     (store_script_param_2, ":horse"),
+
+    # Reset camera
+    (try_begin),
+        (eq, "$cam_mode", 4), # Was bear mode
+        (assign, "$cam_mode", 0),
+    (end_try),
 
     (try_begin), 
         # Only if horse/bear mount is alive allow it
