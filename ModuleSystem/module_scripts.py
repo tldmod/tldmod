@@ -29931,16 +29931,16 @@ if is_a_wb_script==1:
         (eq, ":attack_anim", "anim_bear_slap_right"),
         #(display_log_message, "@BEAR Attacked with paw slap!"),
         (val_add, ":base_dmg", 7),
-        (assign, ":fly_anim", "anim_strike_fly_back"),
+        (assign, ":fly_anim_base", "anim_strike_fly_back"),
     (else_try),
         (eq, ":attack_anim", "anim_bear_uppercut"),
         #(display_log_message, "@BEAR Attacked with uppercut!"),
         (val_add, ":base_dmg", 5),
-        (assign, ":fly_anim", "anim_strike_fly_back_rise_from_left"), # Hit is from left
+        (assign, ":fly_anim_base", "anim_strike_fly_back_rise_from_left"), # Hit is from left
     (else_try),
         (eq, ":attack_anim", "anim_warg_leapattack"),
         #(display_log_message, "@BEAR Attacked with leap!"),
-        (assign, ":fly_anim", "anim_strike_fly_back"), # Hit is from left
+        (assign, ":fly_anim_base", "anim_strike_fly_back"), # Hit is from left
         # Adjust from where the attack occurs (move in local frame of ref)
         (position_move_y, pos6, -100, 0),
         (assign, ":max_distance", 450),
@@ -29950,27 +29950,30 @@ if is_a_wb_script==1:
         (assign, ":attack_item", "itm_beorn_axe_reward"),
         (val_add, ":base_dmg", 15),
         #(display_log_message, "@BEAR Attacked with a slam!"),
-        (assign, ":fly_anim", "anim_strike_fly_back_near_rise"), # TODO Check this 
+        (assign, ":fly_anim_base", "anim_strike_fly_back_near_rise"), # TODO Check this 
     (try_end),
+
+    # fly_anim_base - > is a generic anim that should fire for human given the bear attack type
+    # fly_anim -> accounts position
+    # hit_anim -> is final anim played
 
     # Loop over enemies to check if someone is in front
     (assign, ":damaged_agents", 0),
     (assign, ":agents_to_damage", 20),
+    (assign, ":sounds_played", 0),
 
     (try_for_agents, ":enemy_agent", pos6, ":max_distance"),
         (agent_is_alive, ":enemy_agent"),
         (agent_is_active, ":enemy_agent"),
         (neq, ":enemy_agent", ":agent_no"),
+        (neq, ":enemy_agent", ":bear"),
         (le, ":damaged_agents", ":agents_to_damage"), # Stop loop if enough agents were damaged
         
-        # Allow attack direct attack horses only if they have no rider
-        (agent_get_rider, ":rider", ":enemy_agent"),
-        (this_or_next|agent_is_human, ":enemy_agent"),
-        (lt, ":rider", 0),
-
-        # Get enemy troop data and exclude invisible riders
+        # Get enemy troop data and exclude invisible riders (they are targetted by their mounts)
         (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
-        (this_or_next|lt, ":enemy_troop_id", 0),
+        (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+        (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
+        (neq, ":enemy_troop_id", "trp_werewolf"),
 
         # First position check
         (agent_get_position, pos8, ":enemy_agent"),
@@ -29982,6 +29985,8 @@ if is_a_wb_script==1:
         (try_begin),
             (position_is_behind_position, pos6, pos8), # attacker (1) behind victim (2)
             (assign, ":fly_anim", "anim_strike_fly_front"),
+        (else_try),
+            (assign, ":fly_anim", ":fly_anim_base"),
         (end_try),
 
         # Experimental: Limit the attack to "sides"
@@ -29991,64 +29996,53 @@ if is_a_wb_script==1:
         (lt, ":enemy_x_distance", 150),
 
         # TODO We don't handle side hits yet
-        # Anim depending on being mounted or not
+        # Set default channel for an attack
         (assign, ":channel", 0),
+        (assign, ":hit_anim", -1),
         (agent_get_horse, ":enemy_mount", ":enemy_agent"),
-        (assign, ":sounds_played", 0),
+        (store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
 
-        # Decide if to hit an agent or it's mount or agent is a mount
-        (try_begin), # No horse, agent not a horse
-            (lt, ":enemy_mount", 0),
-            (agent_is_human, ":enemy_agent"),
+        # Target is either a horse or a man
+        (try_begin), # Agent is a horse/an animal
+            (neg|agent_is_human, ":enemy_agent"),
+            (assign, ":hit_anim", -1),
+        (else_try), # Target is a human without a horse
+            (agent_is_human, ":enemy_agent"), (eq, ":enemy_mount", -1),
             (assign, ":hit_anim", ":fly_anim"),
-            (assign, ":hit_mount_instead", 0),
-        
-        # Human rider: decide if hit a rider or its mount
-        (else_try),
-            (ge, ":enemy_mount", 0),
-            (agent_is_human, ":enemy_agent"),
-            (store_random_in_range, ":hit_mount_instead", 0, 2),
-            (store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
-            (try_begin), # Always target munt if rider is invisible rider (so animal)
-                (this_or_next|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
-                (is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
-                (assign, ":hit_mount_instead", 1),
-            (else_try), # Dismount bad rider
-                (eq, ":hit_mount_instead", 0),
-                (le, ":riding_skill", 5),
-                (assign, ":hit_anim", ":fly_anim"),
-                (agent_start_running_away, ":enemy_mount"),
-                (agent_stop_running_away, ":enemy_mount"),
-            (else_try), # Only hit good rider
-                (eq, ":hit_mount_instead", 0),
-                (assign, ":hit_anim", "anim_strike_legs_front"),
-                (assign, ":channel", 1),
-            (try_end),
+            #(display_message, "@DEBUG: Bear strikes human without a horse!"),
+        (else_try), # Target is a human with a horse and a bad skill
+            (ge, ":enemy_mount", 0), (agent_is_active, ":enemy_mount"),
+            (le, ":riding_skill", 5),
+            (assign, ":hit_anim", ":fly_anim"),
+            (agent_start_running_away, ":enemy_mount"), # Dismount
+            (agent_stop_running_away, ":enemy_mount"),
+            #(display_message, "@DEBUG: Bear strikes a bad rider!"),
+        (else_try), # Target is an human with high skill and a horse 
+            (ge, ":enemy_mount", 0), (agent_is_active, ":enemy_mount"),
+            (assign, ":hit_anim", "anim_strike_legs_front"),
+            (assign, ":channel", 1),
+            #(display_message, "@DEBUG: Bear strikes a good rider!"),
         (try_end),
  
         # Calc dmg
         (store_random_in_range, ":dmg", 0, ":base_dmg"),
         (val_add, ":dmg", ":base_dmg"),
+        #(assign, reg8, ":enemy_agent"),
 
-        # Distribute damage to either mount or primary target
-        (assign, reg8, ":enemy_agent"),
+        # Play anim only for human target
         (try_begin),
-            (eq, ":hit_mount_instead", 0),
+            (agent_is_human, ":enemy_agent"),
             (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
-            (agent_deliver_damage_to_agent_advanced, ":final_dmg", 
-                    ":agent_no", ":enemy_agent", ":dmg", ":attack_item"),
-            # (display_message, "@BEAR: Shapeshifter strikes primary target: {reg8}!"),
-        (else_try),
-            (eq, ":hit_mount_instead", 1),
-            (agent_deliver_damage_to_agent_advanced, ":final_dmg",
-                    ":agent_no", ":enemy_mount", ":dmg", ":attack_item"),
-            # (display_message, "@BEAR: Shapeshifter strikes mount of human agent: {reg8}!"),
         (try_end),
+
+        # Distribute damage
+        (agent_deliver_damage_to_agent_advanced, ":final_dmg", 
+                ":agent_no", ":enemy_agent", ":dmg", ":attack_item"),
         (val_add, ":damaged_agents", 1),
         
         # ON-HIT SOUNDS
         (try_begin),
-            (lt, ":sounds_played", 2),
+            (lt, ":sounds_played", 3),
             # Calc absorbed dmg and play sound depending on it and final dmg
             (val_sub, ":dmg", ":final_dmg"),
 
