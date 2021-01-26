@@ -549,6 +549,11 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
           (else_try),
             (gt, ":target_horse", 0),
             (le, ":riding_skill", 4),
+            # Arsakes: never target dismount animals
+            (neg|is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
+            (neg|is_between, ":agent_trp", "trp_spider", "trp_dorwinion_sack"),
+            (neq, ":agent_trp", "trp_multiplayer_profile_troop_male"), (neq, ":agent_trp", "trp_werewolf"),
+
             (assign, ":hit_anim", "anim_strike_fly_back"),
             (agent_start_running_away, ":target_horse"),
             (agent_stop_running_away, ":target_horse"),

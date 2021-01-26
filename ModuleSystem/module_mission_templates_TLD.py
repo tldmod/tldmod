@@ -2001,6 +2001,11 @@ nazgul_sweeps = (4,1.2,5,[
 
 		(try_begin), 		# the horses could rear
 			(ge,":horse",0), # there's an horse being riden
+                        # Arsakes: exclude animals (which have hidden riders so their "mounts" don't escape)
+                        (neg|is_between, ":trp_victim", warg_ghost_begin, warg_ghost_end),
+                        (neg|is_between, ":trp_victim", "trp_spider", "trp_dorwinion_sack"),
+                        (neq, ":trp_victim", "trp_multiplayer_profile_troop_male"), (neq, ":trp_victim", "trp_werewolf"),
+
 			(try_begin), 
 				# if rider failed intelligece test: both horse and rider panic
 				(ge, ":die_roll_int" , ":int"), 
