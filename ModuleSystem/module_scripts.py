@@ -30096,7 +30096,7 @@ if is_a_wb_script==1:
     (try_begin),
         (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
         (neq, ":bear_kinship", 1),
-        (lt, ":bear_kinship", 25),
+        (lt, ":bear_kinship", 30),
 
         # Player strong enough to form kinship with bears
         (eq, "$players_kingdom", "fac_beorn"), # Only beorning get bear kinship points
@@ -30114,15 +30114,11 @@ if is_a_wb_script==1:
         (store_random_in_range,":rnd", 0, 100),
         (assign, ":chance", 100),
         (val_div, ":chance", ":party_size"),
-        (val_mul, ":chance", 2),
+        (val_mul, ":chance", 2), (val_min, ":chance", 50),
         
-        #(assign, reg1, ":party_size"), (assign, reg2, ":chance"), (assign, reg3, ":rnd"), 
-        #(display_message, 
-        #    "@DEBUG Party size {reg1}, chance: {reg2}, rnd: {reg3}", color_good_news),
-
         # 7 % To decrease bear kinship, always
         (try_begin),
-            (gt, ":rnd", 93),
+            (gt, ":rnd", 95),
             (gt, ":bear_kinship", 2),
             (val_sub, ":bear_kinship", 1),
         # chance % To increase
