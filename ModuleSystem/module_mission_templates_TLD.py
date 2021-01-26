@@ -2140,6 +2140,7 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 
 	(eq, "$tld_option_crossdressing", 0),
 	(get_player_agent_no, "$current_player_agent"),
+
 	] + ( is_a_wb_mt==1 and [
 	(agent_is_active, "$current_player_agent"),
 	] or []) + [
@@ -2148,7 +2149,9 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 	] + ( is_a_wb_mt==1 and [
 	(agent_is_active, ":mount"),
 	] or []) + [
+
 	(agent_get_item_id,":mount_item", ":mount"),
+        (neq, ":mount_item", "itm_bear"), # Arsakes: exclude bears
 	
 	(try_begin), # lame horses can stall
 		(eq, "$horse_mod", imod_lame),
@@ -3372,9 +3375,9 @@ or
 )
 
 custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
-	0,0,1, [(eq,"$trolls_in_battle",1)],[
-        (get_player_agent_no, ":player_agent"),
-		(try_for_agents,":troll"),									# horse rearing near troll
+	1,0,1, [(eq,"$trolls_in_battle",1)],[
+                (get_player_agent_no, ":player_agent"),
+		(try_for_agents,":troll"),          # horse rearing near troll
 			(agent_is_alive, ":troll"), #GA: horses hate dead trolls too - Removed (kham)
 			(agent_get_troop_id,":troop_race",":troll"),
 			(try_begin), # CC: Change string if it is an ent and not a troll			
@@ -3400,6 +3403,11 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
 					(get_distance_between_positions,":dist",pos1,pos2),
 					(lt,":dist",700),
 					(agent_get_troop_id, ":rider_troop", ":rider"), #Riding skill helps avoid (InVain)
+                                        # Arsakes: exclude all invisible riders (animals + wargs + bearshifter)
+                                        (neg|is_between, ":rider_troop", warg_ghost_begin, warg_ghost_end),
+                                        (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
+                                        (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"), (neq, ":rider_troop", "trp_werewolf"),
+
 					(store_skill_level, ":riding", "skl_riding", ":rider_troop"),
 					(store_add, ":riding_chance", ":riding", 6),
 						#(assign, reg5, ":riding_chance"),
@@ -3428,9 +3436,9 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
 
 or
 
-	(0,0,1, [(eq,"$trolls_in_battle",1)],[
-        (get_player_agent_no, ":player_agent"),
-		(try_for_agents,":troll"),									# horse rearing near troll
+	(1,0,1, [(eq,"$trolls_in_battle",1)],[
+                (get_player_agent_no, ":player_agent"),
+		(try_for_agents,":troll"),	    # horse rearing near troll
 			(agent_is_alive, ":troll"), #GA: horses hate dead trolls too - Removed (kham)
 			(agent_get_troop_id,":troop_race",":troll"),
 			(try_begin), # CC: Change string if it is an ent and not a troll			
@@ -3454,6 +3462,12 @@ or
 					(get_distance_between_positions,":dist",1,2),
 					(lt,":dist",700),
 					(agent_get_troop_id, ":rider_troop", ":rider"), #Riding skill helps avoid (InVain)
+
+                                        # Arsakes no animals or riderless wargs (no bear in MB)
+                                        (neg|is_between, ":rider_troop", warg_ghost_begin, warg_ghost_end),
+                                        (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
+                                        (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"), (neq, ":rider_troop", "trp_werewolf")
+
 					(store_skill_level, ":riding", "skl_riding", ":rider_troop"),
 					(store_add, ":riding_chance", ":riding", 6),
 					(store_random_in_range, ":random", 0, ":riding_chance"),
