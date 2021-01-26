@@ -959,7 +959,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
     (le, ":rnd", ":base_chance")], 
     [
       (store_trigger_param_1, ":agent"),
-
+      (agent_is_human, ":agent"), # Arsakes attempting to fix a bug
       (agent_get_troop_id, ":agent_trp",":agent"),
 
       (ge, ":agent_trp", 0),
