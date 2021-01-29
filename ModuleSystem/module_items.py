@@ -1244,7 +1244,7 @@ items =[
 ["beorn_berserk","Beorning_Berserker_Kit",	[("beorn_berserker",0),("beorn_berserker_light",imodbits_armor_bad),("beorn_berserker_heavy",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(2)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_armor|imodbit_lordly,[custom_female("itm_beorn_berserk")]],
 ["beorn_chief","Beorning_Chieftan's_Tunic",[("beorn_chieftain",0)],itp_type_body_armor|itp_covers_legs,0,1200,weight(18)|head_armor(0)|body_armor(33)|leg_armor(15)|difficulty(18),imodbits_armor|imodbit_lordly,],
 ######HELMS##########
-["beorn_helmet","Bear_Skullcap",[("beorn_helmet_light",imodbits_armor_bad),("beorn_helmet",0)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(32)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
+["beorn_helmet","Bear_Skullcap",[("beorn_helmet",0),("beorn_helmet_light",imodbits_armor_bad)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(32)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
 #####SHIELDS##########
 ["beorn_shield","Northmen_Shield",[("northmen_shield",0),("northmen_shield",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(3)|hit_points(480)|body_armor(5)|spd_rtng(82)|weapon_length(70),imodbits_shield,],
 ######WEAPONS###########
