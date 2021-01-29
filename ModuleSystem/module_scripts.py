@@ -29971,9 +29971,9 @@ if is_a_wb_script==1:
         
         # Get enemy troop data and exclude invisible riders (they are targetted by their mounts)
         (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
-        (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
-        (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
-        (neq, ":enemy_troop_id", "trp_werewolf"),
+        #(neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+        #(neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
+        #(neq, ":enemy_troop_id", "trp_werewolf"),
 
         # First position check
         (agent_get_position, pos8, ":enemy_agent"),
@@ -30002,8 +30002,30 @@ if is_a_wb_script==1:
         (agent_get_horse, ":enemy_mount", ":enemy_agent"),
         (store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
 
+        # Proper checks for case of invisible rider/animal targets
+        (assign, ":is_valid_animal", 0),
+        (try_begin),
+            (this_or_next|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+            (this_or_next|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
+            (eq, ":enemy_troop_id", "trp_werewolf"),
+            (try_begin),
+                (ge, ":enemy_mount", 0),
+                (agent_is_alive, ":enemy_mount"),
+                (assign, ":is_valid_animal", 1),
+            (else_try),
+                (assign, ":is_valid_animal", -1),
+            (end_try),
+        (end_try),
+           
+        # Invalid animals are invalid targets
+        (ge, ":is_valid_animal", 0),
+
         # Target is either a horse or a man
-        (try_begin), # Agent is a horse/an animal
+        (try_begin), # Agent is an invisible rider (re-target to horse)
+            (eq, ":is_valid_animal", 1),
+            (assign, ":enemy_agent", ":enemy_mount"), # re-target to horse
+            (assign, ":hit_anim", -1),
+        (else_try), # Agent is a horse/an animal
             (neg|agent_is_human, ":enemy_agent"),
             (assign, ":hit_anim", -1),
         (else_try), # Target is a human without a horse
@@ -30253,7 +30275,7 @@ if is_a_wb_script==1:
             (position_move_z, pos0, 170),
         (else_try), # Wargs are shorter
             (is_between, ":animal_type", item_warg_begin, item_warg_end),
-            (position_move_z, pos0, 140), 
+            (position_move_z, pos0, 155), 
         (else_try),
             (this_or_next|eq, ":animal_type", "itm_spider"),
             (eq, ":animal_type", "itm_wolf"),
