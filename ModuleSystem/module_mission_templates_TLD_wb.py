@@ -3898,7 +3898,7 @@ beorning_shapeshift = [
     # transfer stats from player clone troop to horse(bear) agent
     (ti_after_mission_start, 0, ti_once, [], [
         (get_player_agent_no, ":agent"),
-
+        (agent_is_active, ":agent"),
         # If player agent is Beorning, those two are  set
         (call_script, "script_cf_bear_form_selected"), (eq, reg0, 1),
 
@@ -3908,9 +3908,7 @@ beorning_shapeshift = [
         (end_try),
         (agent_equip_item, ":agent", "itm_warg_ghost_armour"),
         (agent_equip_item, ":agent", "itm_warg_ghost_lance", 1),
-        (agent_equip_item, ":agent", "itm_warg_ghost_lance", 2),
-        (agent_equip_item, ":agent", "itm_warg_ghost_lance", 3),
-        (agent_equip_item, ":agent", "itm_warg_ghost_lance", 4),
+        (agent_set_wielded_item, ":agent", "itm_warg_ghost_lance"),
         (agent_equip_item, ":agent", "itm_empty_head"),
         (agent_equip_item, ":agent", "itm_empty_hands"),
         (agent_equip_item, ":agent", "itm_empty_legs"),
@@ -3999,6 +3997,7 @@ beorning_shapeshift = [
         (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
         (agent_get_item_id, ":horse_item", ":horse"), (eq, ":horse_item", "itm_bear"),
     ],[
+        (display_log_message, "@DEBUG: Ti on item wielded"),
         (store_trigger_param_1,":agent"),
         (store_trigger_param_2,":item"),
         (try_begin),
@@ -4010,6 +4009,51 @@ beorning_shapeshift = [
         (agent_set_wielded_item, ":agent", "itm_warg_ghost_lance"),
         #(display_log_message, "@DEBUG: Item equipped"),
     ]),
+
+    # Periodic weapon re-wield (2sec)
+    (2, 0, 1, [
+        (get_player_agent_no, ":agent"), (ge, ":agent", 0), (agent_is_active, ":agent"),
+        (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
+        (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
+        (agent_get_item_id, ":horse_item", ":horse"), 
+        (eq, ":horse_item", "itm_bear"),
+        #
+        (agent_get_wielded_item, ":wielded", ":agent", 0),
+        (neq, ":wielded", "itm_warg_ghost_lance"),
+    ],[
+        (omit_key_once, gk_drop_weapon),
+        (get_player_agent_no, ":agent"),
+        (agent_get_item_slot, ":weapon", ":agent", ek_item_0),
+
+        (try_begin),
+            (agent_has_item_equipped, ":agent", "itm_warg_ghost_lance"),
+        (else_try), 
+            (eq, ":weapon", -1),
+            (agent_equip_item, ":agent", "itm_warg_ghost_lance", 1),
+        (agent_set_wielded_item, ":agent", "itm_warg_ghost_lance"),
+            (neq, ":weapon", -1),
+            (agent_unequip_item, ":agent", "itm_warg_ghost_lance", 1),
+            (agent_equip_item, ":agent", "itm_warg_ghost_lance", 1),
+        (end_try),
+        (agent_set_wielded_item, ":agent", "itm_warg_ghost_lance"),
+    ]),
+
+    # Dropping ghost lance gives you another one
+    (0, 0.5, 0, [
+        (game_key_clicked, gk_drop_weapon),
+        (get_player_agent_no, ":agent"), (ge, ":agent", 0), (agent_is_active, ":agent"),
+        (agent_get_horse, ":horse", ":agent"), (ge, ":horse", 0),
+        (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
+        (agent_get_item_id, ":horse_item", ":horse"), 
+        (eq, ":horse_item", "itm_bear"),
+    ],[
+        (get_player_agent_no, ":agent"),
+        (agent_get_wielded_item, ":wielded", ":agent", 0),
+        (neq, ":wielded", "itm_warg_ghost_lance"),
+        (agent_equip_item, ":agent", "itm_warg_ghost_lance", 1),
+        (agent_set_wielded_item, ":agent", "itm_warg_ghost_lance"),
+    ]),
+
 
     # BEAR ATTACK TRIGGERING
     # Divided in two parts: etting animation and applying attack effects (delayed)

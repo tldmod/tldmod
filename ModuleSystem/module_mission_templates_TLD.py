@@ -2364,6 +2364,9 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
       (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
       (neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
       (neq, ":victim_troop_id", "trp_werewolf"),
+      # Arsakes troop for bear shapeshifter
+      (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"),
+
       (troop_get_type, ":victim_type", ":victim_troop_id"),
       (agent_get_horse, ":victim_horse", ":aoe_hit"),
       
@@ -2569,10 +2572,10 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(troop_get_type, ":victim_type", ":victim_troop_id"),
 			(agent_get_horse, ":victim_horse", ":nearby_agent_no"),
 			(neq, ":victim_type", tf_troll), #no plowthrough for trolls
-	      	(neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
-	      	(neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
-	      	(neq, ":victim_troop_id", "trp_werewolf"),
-
+                        (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+                        (neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
+                        (neq, ":victim_troop_id", "trp_werewolf"),
+                        (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
 			
 			(agent_get_animation, ":cur_anim", ":nearby_agent_no"),
 			(this_or_next|neq, ":cur_anim", "anim_strike_fall_back_rise"),
@@ -2774,9 +2777,10 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(troop_get_type, ":victim_type", ":victim_troop_id"),
 			(agent_get_horse, ":victim_horse", ":nearby_agent_no"),
 			(neq, ":victim_type", tf_troll), #no plowthrough for trolls
-	      	(neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
-	    	(neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
-		    (neq, ":victim_troop_id", "trp_werewolf"),
+                        (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+                        (neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
+                        (neq, ":victim_troop_id", "trp_werewolf"),
+                        (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
 					
 			(agent_get_animation, ":cur_anim", ":nearby_agent_no"),
 			(this_or_next|neq, ":cur_anim", "anim_strike_fall_back_rise"),
@@ -3060,6 +3064,7 @@ custom_troll_hitting = ((is_a_wb_mt==1) and (
 					# then, set animation
 					(try_begin),
 						(neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+                                                (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
 						#(agent_is_alive,":victim"), # agent is STILL alive
 						(try_begin),
 							(eq, ":victim_type", tf_troll), # trolls don't send other trolls flying back: they just knowk them back
@@ -3411,7 +3416,8 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
                                         # Arsakes: exclude all invisible riders (animals + wargs + bearshifter)
                                         (neg|is_between, ":rider_troop", warg_ghost_begin, warg_ghost_end),
                                         (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
-                                        (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"), (neq, ":rider_troop", "trp_werewolf"),
+                                        (neq, ":rider_troop", "trp_werewolf"),
+                                        (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"),
 
 					(store_skill_level, ":riding", "skl_riding", ":rider_troop"),
 					(store_add, ":riding_chance", ":riding", 6),
@@ -3471,7 +3477,8 @@ or
                                         # Arsakes no animals or riderless wargs (no bear in MB)
                                         (neg|is_between, ":rider_troop", warg_ghost_begin, warg_ghost_end),
                                         (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
-                                        (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"), (neq, ":rider_troop", "trp_werewolf")
+                                        (neq, ":rider_troop", "trp_werewolf")
+                                        (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"), 
 
 					(store_skill_level, ":riding", "skl_riding", ":rider_troop"),
 					(store_add, ":riding_chance", ":riding", 6),
