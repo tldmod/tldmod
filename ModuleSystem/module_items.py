@@ -1113,44 +1113,43 @@ items =[
 ["khand_tulwar","Khand_Tulwar",[("Khand_Weapon_Tulwar",0)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_scimitar|itcf_carry_sword_left_hip,500,weight(1.25)|difficulty(0)|spd_rtng(91)|weapon_length(94)|swing_damage(29,cut)|thrust_damage(21,pierce),imodbits_weapon_bad],
 ["khand_2h_tulwar","Khand_Tulwar",[("Khand_Weapon_Tulwar_Long",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_shop,itc_nodachi|itcf_carry_sword_back,1123,weight(2.75)|difficulty(0)|spd_rtng(89)|weapon_length(116)|swing_damage(42,cut)|thrust_damage(28,pierce),imodbits_weapon_bad],
 ["khand_lance","Khand_Lance",[("khand_lance",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable,itc_spear,210,weight(2.5)|difficulty(0)|spd_rtng(88)|weapon_length(218)|thrust_damage(26,pierce),imodbits_weapon_bad],
-####KHAND SHIELDS
+####KHAND & RHUN SHIELDS
 ["easterling_round_horseman","Easterling_Round_Shield",[("eastershield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(40),imodbits_shield,],
 ["variag_gladiator_shield","Easterling_Pit_Shield",[("eastershield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(40),imodbits_shield,],
 ["easterling_hawk_shield","Easterling_Hawk_Shield",[("eastershield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(80),imodbits_shield,],
 ["rhun_bull1_shield","Rhun_Shield",[("eastershield_d",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(6)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
 ["rhun_bull2_shield","Rhun_Shield",[("eastershield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(6)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
 ["rhun_bull3_shield","Rhun_Shield",[("eastershield_f",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2.5)|hit_points(480)|body_armor(6)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
+["rhun_shield","Rhun_Kite_Shield",[("rhun_shield_small",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(5)|spd_rtng(82)|weapon_length(80),imodbits_shield,],
 
 ###TLD RHUN ITEMS##########
-#free Dec 2019, only used by Rhun troops at that time
-["free_furry_boots","Furry_Boots",[("furry_boots",0)],itp_type_foot_armor|itp_shop,0,200,weight(3)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
 ###ARMOR##########
 ["rhun_armor_a","Rhun_Light_Battlewear",[("RhunArmorLight1",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,20,weight(5)|head_armor(0)|body_armor(2)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["rhun_armor_b","Rhun_Light_Battlewear",[("RhunArmorLight2",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,30,weight(5)|head_armor(0)|body_armor(3)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["rhun_armor_d","Rhun_Light_Battlewear",[("RhunArmorLight4",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,31,weight(6)|head_armor(0)|body_armor(4)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
-["rhun_armor_g","Rhun_Heavy_Battlewear",[("RhunArmorHeavy2",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(19)|head_armor(0)|body_armor(18)|leg_armor(16)|difficulty(0),imodbits_armor|imodbit_lordly,],
-["rhun_armor_h","Rhun_Heavy_Battlewear",[("RhunArmorHeavy3",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(18)|head_armor(0)|body_armor(17)|leg_armor(16)|difficulty(0),imodbits_armor|imodbit_lordly,],
+["rhun_armor_g","Rhun_Heavy_Battlewear",[("RhunArmorHeavy2",0),("RhunArmorHeavy2b",imodbits_armor_good|imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(19)|head_armor(0)|body_armor(25)|leg_armor(16)|difficulty(0),imodbits_armor|imodbit_lordly,],
+["rhun_armor_h","Rhun_Heavy_Battlewear",[("RhunArmorHeavy3",0),("RhunArmorHeavy3b",imodbits_armor_good|imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(18)|head_armor(0)|body_armor(24)|leg_armor(16)|difficulty(0),imodbits_armor|imodbit_lordly,],
 ["rhun_armor_j","Rhun_Medium_Battlewear",[("RhunArmorMedium1",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(7)|head_armor(0)|body_armor(10)|leg_armor(12)|difficulty(0),imodbits_cloth,],
 ["rhun_armor_m","Rhun_Medium_Battlewear",[("RhunArmorMedium3",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,560,weight(8)|head_armor(0)|body_armor(11)|leg_armor(12)|difficulty(0),imodbits_cloth,],
 ["rhun_armor_n","Rhun_Medium_Battlewear",[("RhunArmorMedium4",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,750,weight(9)|head_armor(0)|body_armor(12)|leg_armor(14)|difficulty(0),imodbits_cloth,],
 ["rhun_armor_o","Rhun_Medium_Battlewear",[("RhunArmorMedium5",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(10)|head_armor(0)|body_armor(14)|leg_armor(14)|difficulty(0),imodbits_cloth,],
-["rhun_armor_p","Rhun_Noble_Armor",[("RhunArmorNoble1A",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(26)|head_armor(0)|body_armor(30)|leg_armor(17)|difficulty(0),imodbits_elf_armor,],
-["rhun_armor_k","Rhun_Noble_Armor",[("RhunArmorNoble1B",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(26)|head_armor(0)|body_armor(30)|leg_armor(17)|difficulty(0),imodbits_elf_armor,],
-#########Helms##########
-["rhun_helm_a","Rhun_Barbed_Helm",[("RhunHelmConical1",0)],itp_type_head_armor|itp_shop,0,500,weight(2)|head_armor(25)|difficulty(0),imodbits_armor | imodbit_cracked],
-["rhun_helm_b","Rhun_Barbed_Helm_Camail",[("RhunHelmConical2",0)],itp_type_head_armor|itp_shop,0,700,weight(3)|head_armor(30)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
-["rhun_helm_c","Rhun_Horde_Helm",[("RhunHelmHorde1",0)],itp_type_head_armor|itp_shop,0,600,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
-["rhun_helm_e","Rhun_Horde_Horned_Helm",[("RhunHelmHorde3",0)],itp_type_head_armor|itp_shop,0,600,weight(2.5)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
-["rhun_helm_g","Rhun_Horned_Pot",[("RhunHelmPot2",0)],itp_type_head_armor|itp_shop,0,800,weight(3)|head_armor(34)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
-["rhun_helm_h","Rhun_Horned_Pot",[("RhunHelmPot3",0)],itp_type_head_armor|itp_shop,0,750,weight(2.5)|head_armor(32)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
-["rhun_helm_i","Rhun_Round_Helm",[("RhunHelmRound1",0)],itp_type_head_armor|itp_shop,0,600,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
-["rhun_helm_j","Rhun_Round_Masked_Helm",[("RhunHelmRound2",0)],itp_type_head_armor|itp_shop,0,700,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
-["rhun_helm_k","Rhun_Leather_Helm",[("RhunHelmLeather1",0)],itp_type_head_armor|itp_shop,0,500,weight(1.5)|head_armor(25)|difficulty(0),imodbits_cloth],
-["rhun_helm_l","Rhun_Leather_Helm",[("RhunHelmLeather2",0)],itp_type_head_armor|itp_shop,0,500,weight(1.5)|head_armor(25)|difficulty(0),imodbits_cloth],
-["rhun_helm_m","Rhun_Leather_Helm",[("RhunHelmLeather3",0)],itp_type_head_armor|itp_shop,0,500,weight(1.5)|head_armor(25)|difficulty(0),imodbits_cloth],
-["rhun_helm_n","Rhun_Chieftain_Helm",[("RhunHelmDeathDealer1",0)],itp_type_head_armor|0,0,1500,weight(3.5)|head_armor(45)|difficulty(0),imodbits_elf_armor],
-["rhun_helm_o","Rhun_Chieftain_Helm",[("RhunHelmDeathDealer2",0)],itp_type_head_armor|0,0,1500,weight(4)|head_armor(45)|difficulty(0),imodbits_elf_armor],
+["rhun_armor_p","Rhun_Noble_Armor",[("RhunArmorNoble1A_medium",0),("RhunArmorNoble1A_light",imodbits_armor_bad), ("RhunArmorNoble1A",imodbits_armor_good|imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(26)|head_armor(0)|body_armor(32)|leg_armor(17)|difficulty(0),imodbits_elf_armor,],
+["rhun_armor_k","Rhun_Noble_Armor",[("RhunArmorNoble1B_medium",0),("RhunArmorNoble1B_light",imodbits_armor_bad), ("RhunArmorNoble1B",imodbits_armor_good|imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(26)|head_armor(0)|body_armor(34)|leg_armor(17)|difficulty(0),imodbits_elf_armor,],
+#########Helms########## #free Jan 2021
+["rhun_helm_barbed","Rhun_Barbed_Helm",[("RhunHelmConical0",imodbits_armor_bad),("RhunHelmConical1",0),("RhunHelmConical2",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,500,weight(2)|head_armor(25)|difficulty(0),imodbits_armor | imodbit_cracked],
+["free_rhun_helm_b","Rhun_Barbed_Helm_Camail",[("RhunHelmConical2",0)],itp_type_head_armor|itp_shop,0,700,weight(3)|head_armor(30)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
+["rhun_helm_horde","Rhun_Horde_Helm",[("RhunHelmHorde1_new",imodbits_armor_bad),("RhunHelmHorde2",0),("RhunHelmHorde3",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,600,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
+["free_rhun_helm_e","Rhun_Horde_Horned_Helm",[("RhunHelmHorde3",0)],itp_type_head_armor|itp_shop,0,600,weight(2.5)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
+["rhun_helm_pot","Rhun_Pot_Helm",[("RhunHelmPot1",imodbits_armor_bad),("RhunHelmPot2",0),("RhunHelmPot3",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(3)|head_armor(34)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
+["free_rhun_helm_h","Rhun_Horned_Pot",[("RhunHelmPot3",0)],itp_type_head_armor|itp_shop,0,750,weight(2.5)|head_armor(32)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
+["rhun_helm_round","Rhun_Round_Helm",[("RhunHelmRound0",imodbits_armor_bad),("RhunHelmRound1",0),("RhunHelmRound2",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,600,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
+["free_rhun_helm_j","Rhun_Round_Masked_Helm",[("RhunHelmRound2",0)],itp_type_head_armor|itp_shop,0,700,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
+["rhun_helm_leather","Rhun_Leather_Helm",[("RhunHelmLeather1",imodbits_armor_bad),("RhunHelmLeather2",0),("RhunHelmLeather3",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,500,weight(1.5)|head_armor(25)|difficulty(0),imodbits_cloth],
+["free_rhun_helm_l","Rhun_Leather_Helm",[("RhunHelmLeather2",0)],itp_type_head_armor|itp_shop,0,500,weight(1.5)|head_armor(25)|difficulty(0),imodbits_cloth],
+["free_rhun_helm_m","Rhun_Leather_Helm",[("RhunHelmLeather3",0)],itp_type_head_armor|itp_shop,0,500,weight(1.5)|head_armor(25)|difficulty(0),imodbits_cloth],
+["rhun_helm_chieftain","Rhun_Chieftain_Helm",[("RhunHelmDeathDealer1",0),("RhunHelmDeathDealer2",imodbits_elf_armor)],itp_type_head_armor|0,0,1500,weight(3.5)|head_armor(40)|difficulty(0),imodbits_elf_armor],
 ########WEAPONS##########
+["rhun_warpick","Rhun_War_Pick",[("rhun_pick",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_cant_use_on_horseback|itp_bonus_against_shield|itp_wooden_parry|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,300,weight(5)|difficulty(0)|spd_rtng(86)|weapon_length(108)|swing_damage(43,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["rhun_greataxe","Rhun_Great_Axe",[("rhun_greataxe",0)],itp_type_two_handed_wpn|itp_shop|itp_primary|itp_two_handed|itp_cant_use_on_horseback|itp_bonus_against_shield|itp_wooden_parry|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,300,weight(6)|difficulty(0)|spd_rtng(89)|weapon_length(115)|swing_damage(43,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["rhun_battleaxe","Rhun_Battle_Axe",[("rhun_battle_axe",0)],itp_type_two_handed_wpn|itp_shop|itp_primary|itp_two_handed|itp_cant_use_on_horseback|itp_bonus_against_shield|itp_wooden_parry|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,300,weight(5)|difficulty(0)|spd_rtng(86)|weapon_length(108)|swing_damage(43,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["rhun_falchion","Savage_Falchion",[("rhun_falchion",0)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_scimitar|itcf_carry_sword_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(77)|swing_damage(30,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
@@ -1159,8 +1158,7 @@ items =[
 ["rhun_greatsword","Savage_Great_Sword",[("rhun_greatsword",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_shop,itc_greatsword|itcf_carry_sword_back,524,weight(3)|difficulty(0)|spd_rtng(94)|weapon_length(101)|swing_damage(40,cut)|thrust_damage(31,pierce),imodbits_weapon_bad],
 ["rhun_shortsword","Savage_Shortsword",[("rhun_shortsword",0)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_scimitar|itcf_carry_sword_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(98)|weapon_length(70)|swing_damage(30,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["rhun_sword","Savage_Sword",[("rhun_sword",0)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_scimitar|itcf_carry_sword_left_hip,200,weight(2.9)|difficulty(0)|spd_rtng(92)|weapon_length(89)|swing_damage(32,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
-########shields##########
-["rhun_shield","Rhun_Kite_Shield",[("rhun_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(5)|spd_rtng(82)|weapon_length(80),imodbits_shield,],
+["rhun_mangler","Rhun_Mangler",[("mackie_mangler_short",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_shop,itc_nodachi|itcf_carry_axe_back,524,weight(3)|difficulty(0)|spd_rtng(92)|weapon_length(90)|swing_damage(42,cut)|thrust_damage(31,pierce),imodbits_weapon_bad],
 #TLD DALE ITEMS##########
 ########ARMORS##########
 ["dale_light_a","Dale_Militia_Jacket",[("dale_light_b1",imodbits_armor_bad),("dale_light_b2",imodbit_plain),("dale_light_b3",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,150,weight(7)|head_armor(0)|body_armor(13)|leg_armor(2)|difficulty(0),imodbits_armor,],
@@ -1172,10 +1170,10 @@ items =[
 ["dale_heavy_a","Dale_Lamellar_Over_Mail",[("dale_heavy_a1",imodbits_armor_bad),("dale_heavy_a2",imodbit_plain),("dale_heavy_a3",imodbits_armor_good),("dale_heavy_a3_pelt",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1400,weight(32)|head_armor(0)|body_armor(32)|leg_armor(8)|difficulty(12),imodbits_armor|imodbit_lordly,],
 ["dale_heavy_b","Dale_Plated_Coat",[("dale_heavy_b",imodbits_armor_bad),("dale_heavy_b2",imodbit_plain),("dale_heavy_b3",imodbit_thick),("dale_heavy_b_cloaked",imodbit_reinforced),("dale_heavy_b_pelt",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1600,weight(39)|head_armor(0)|body_armor(38)|leg_armor(11)|difficulty(14),imodbits_armor|imodbit_lordly,],
 ["dale_heavy_c","Rhovanion_Mail",[("northmen_heavy_a",imodbit_plain),("northmen_heavy_b",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1600,weight(32)|head_armor(0)|body_armor(33)|leg_armor(12)|difficulty(0),imodbits_armor|imodbit_lordly,],
-#Next 3 free, July 2018
 ["north_leather","Northmen_Leather_Vest",[("northmen_light_b1",imodbits_armor_bad),("northmen_light_b2",imodbit_plain),("northmen_light_b3",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,100,weight(7)|head_armor(0)|body_armor(13)|leg_armor(2)|difficulty(0),imodbits_armor,],
+#Next 2 free, July 2018
 ["free_dale_armor_k","Dale_Noble_Armor",[("northmen_heavy_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
-["dale_armor_l","Dale_Noble_Gorget",[("dale_reward",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["free_dale_armor_l","Dale_Noble_Gorget",[("dale_reward",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ###########HELMS##########
 ["dale_helmet_a","Dale Light Infantry Helm",[("dale_helmet_a",0),("dale_helmet_a",imodbit_plain),("dale_helmet_a_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,550,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["dale_helmet_b","Dale Light Archer Helm",[("dale_helmet_b",imodbit_plain),("dale_helmet_b",0),("dale_helmet_b_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,450,weight(2)|head_armor(25)|difficulty(0),imodbits_armor | imodbit_cracked],

@@ -2029,7 +2029,7 @@ itemsfile version 2
  itm_rhun_bull3_shield Rhun_Shield Rhun_Shield 1  eastershield_f 0  327687 5100273664 200 251658402 2.5 100 0 6 0 0 480 90 0 50 0 0 0
 0
 
- itm_free_furry_boots Furry_Boots Furry_Boots 1  furry_boots 0  65550 0 200 123731968 3 100 0 0 10 0 0 0 0 0 0 0 0
+ itm_rhun_shield Rhun_Kite_Shield Rhun_Kite_Shield 1  rhun_shield_small 0  327687 4831838208 200 251658402 2.5 100 0 5 0 0 480 82 0 80 0 0 0
 0
 
  itm_rhun_armor_a Rhun_Light_Battlewear Rhun_Light_Battlewear 1  RhunArmorLight1 0  16842765 0 20 123731968 5 100 0 2 6 0 0 0 0 0 0 0 0
@@ -2041,10 +2041,10 @@ itemsfile version 2
  itm_rhun_armor_d Rhun_Light_Battlewear Rhun_Light_Battlewear 1  RhunArmorLight4 0  16842765 0 31 123731968 6 100 0 4 6 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_armor_g Rhun_Heavy_Battlewear Rhun_Heavy_Battlewear 1  RhunArmorHeavy2 0  16842765 0 1200 704643206 19 100 0 18 16 0 0 0 0 0 0 0 0
+ itm_rhun_armor_g Rhun_Heavy_Battlewear Rhun_Heavy_Battlewear 2  RhunArmorHeavy2 0  RhunArmorHeavy2b 704643072  16842765 0 1200 704643206 19 100 0 25 16 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_armor_h Rhun_Heavy_Battlewear Rhun_Heavy_Battlewear 1  RhunArmorHeavy3 0  16842765 0 1000 704643206 18 100 0 17 16 0 0 0 0 0 0 0 0
+ itm_rhun_armor_h Rhun_Heavy_Battlewear Rhun_Heavy_Battlewear 2  RhunArmorHeavy3 0  RhunArmorHeavy3b 704643072  16842765 0 1000 704643206 18 100 0 24 16 0 0 0 0 0 0 0 0
 0
 
  itm_rhun_armor_j Rhun_Medium_Battlewear Rhun_Medium_Battlewear 1  RhunArmorMedium1 0  16842765 0 800 123731968 7 100 0 10 12 0 0 0 0 0 0 0 0
@@ -2059,49 +2059,49 @@ itemsfile version 2
  itm_rhun_armor_o Rhun_Medium_Battlewear Rhun_Medium_Battlewear 1  RhunArmorMedium5 0  16842765 0 1000 123731968 10 100 0 14 14 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_armor_p Rhun_Noble_Armor Rhun_Noble_Armor 1  RhunArmorNoble1A 0  16842765 0 3000 704643072 26 100 0 30 17 0 0 0 0 0 0 0 0
+ itm_rhun_armor_p Rhun_Noble_Armor Rhun_Noble_Armor 3  RhunArmorNoble1A_medium 0  RhunArmorNoble1A_light 134  RhunArmorNoble1A 704643072  16842765 0 3000 704643072 26 100 0 32 17 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_armor_k Rhun_Noble_Armor Rhun_Noble_Armor 1  RhunArmorNoble1B 0  16842765 0 3000 704643072 26 100 0 30 17 0 0 0 0 0 0 0 0
+ itm_rhun_armor_k Rhun_Noble_Armor Rhun_Noble_Armor 3  RhunArmorNoble1B_medium 0  RhunArmorNoble1B_light 134  RhunArmorNoble1B 704643072  16842765 0 3000 704643072 26 100 0 34 17 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_a Rhun_Barbed_Helm Rhun_Barbed_Helm 1  RhunHelmConical1 0  65548 0 500 167772294 2 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_rhun_helm_barbed Rhun_Barbed_Helm Rhun_Barbed_Helm 3  RhunHelmConical0 134  RhunHelmConical1 0  RhunHelmConical2 167772160  65548 0 500 167772294 2 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_b Rhun_Barbed_Helm_Camail Rhun_Barbed_Helm_Camail 1  RhunHelmConical2 0  65548 0 700 704643206 3 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_free_rhun_helm_b Rhun_Barbed_Helm_Camail Rhun_Barbed_Helm_Camail 1  RhunHelmConical2 0  65548 0 700 704643206 3 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_c Rhun_Horde_Helm Rhun_Horde_Helm 1  RhunHelmHorde1 0  65548 0 600 167772294 2 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_rhun_helm_horde Rhun_Horde_Helm Rhun_Horde_Helm 3  RhunHelmHorde1_new 134  RhunHelmHorde2 0  RhunHelmHorde3 167772160  65548 0 600 167772294 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_e Rhun_Horde_Horned_Helm Rhun_Horde_Horned_Helm 1  RhunHelmHorde3 0  65548 0 600 167772294 2.5 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_free_rhun_helm_e Rhun_Horde_Horned_Helm Rhun_Horde_Horned_Helm 1  RhunHelmHorde3 0  65548 0 600 167772294 2.5 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_g Rhun_Horned_Pot Rhun_Horned_Pot 1  RhunHelmPot2 0  65548 0 800 704643206 3 100 34 0 0 0 0 0 0 0 0 0 0
+ itm_rhun_helm_pot Rhun_Pot_Helm Rhun_Pot_Helm 3  RhunHelmPot1 134  RhunHelmPot2 0  RhunHelmPot3 167772160  65548 0 800 704643206 3 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_h Rhun_Horned_Pot Rhun_Horned_Pot 1  RhunHelmPot3 0  65548 0 750 704643206 2.5 100 32 0 0 0 0 0 0 0 0 0 0
+ itm_free_rhun_helm_h Rhun_Horned_Pot Rhun_Horned_Pot 1  RhunHelmPot3 0  65548 0 750 704643206 2.5 100 32 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_i Rhun_Round_Helm Rhun_Round_Helm 1  RhunHelmRound1 0  65548 0 600 167772294 2 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_rhun_helm_round Rhun_Round_Helm Rhun_Round_Helm 3  RhunHelmRound0 134  RhunHelmRound1 0  RhunHelmRound2 167772160  65548 0 600 167772294 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_j Rhun_Round_Masked_Helm Rhun_Round_Masked_Helm 1  RhunHelmRound2 0  65548 0 700 167772294 2 100 30 0 0 0 0 0 0 0 0 0 0
+ itm_free_rhun_helm_j Rhun_Round_Masked_Helm Rhun_Round_Masked_Helm 1  RhunHelmRound2 0  65548 0 700 167772294 2 100 30 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_k Rhun_Leather_Helm Rhun_Leather_Helm 1  RhunHelmLeather1 0  65548 0 500 123731968 1.5 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_rhun_helm_leather Rhun_Leather_Helm Rhun_Leather_Helm 3  RhunHelmLeather1 134  RhunHelmLeather2 0  RhunHelmLeather3 167772160  65548 0 500 123731968 1.5 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_l Rhun_Leather_Helm Rhun_Leather_Helm 1  RhunHelmLeather2 0  65548 0 500 123731968 1.5 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_free_rhun_helm_l Rhun_Leather_Helm Rhun_Leather_Helm 1  RhunHelmLeather2 0  65548 0 500 123731968 1.5 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_m Rhun_Leather_Helm Rhun_Leather_Helm 1  RhunHelmLeather3 0  65548 0 500 123731968 1.5 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_free_rhun_helm_m Rhun_Leather_Helm Rhun_Leather_Helm 1  RhunHelmLeather3 0  65548 0 500 123731968 1.5 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_n Rhun_Chieftain_Helm Rhun_Chieftain_Helm 1  RhunHelmDeathDealer1 0  12 0 1500 704643072 3.5 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_rhun_helm_chieftain Rhun_Chieftain_Helm Rhun_Chieftain_Helm 2  RhunHelmDeathDealer1 0  RhunHelmDeathDealer2 704643072  12 0 1500 704643072 3.5 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_o Rhun_Chieftain_Helm Rhun_Chieftain_Helm 1  RhunHelmDeathDealer2 0  12 0 1500 704643072 4 100 45 0 0 0 0 0 0 0 0 0 0
+ itm_rhun_warpick Rhun_War_Pick Rhun_War_Pick 1  rhun_pick 0  38996869124 9223635923965575392 300 286870 5 100 0 0 0 0 44032 86 0 108 0 256 43
 0
 
  itm_rhun_greataxe Rhun_Great_Axe Rhun_Great_Axe 1  rhun_greataxe 0  38996869123 9223635923965575392 300 286870 6 100 0 0 0 0 44032 89 0 115 0 256 43
@@ -2128,7 +2128,7 @@ itemsfile version 2
  itm_rhun_sword Savage_Sword Savage_Sword 1  rhun_sword 0  4259842 9223388529822793742 200 286870 2.75 100 0 0 0 0 32768 92 0 89 0 256 32
 0
 
- itm_rhun_shield Rhun_Kite_Shield Rhun_Kite_Shield 1  rhun_shield 0  327687 4831838208 200 251658402 2.5 100 0 5 0 0 480 82 0 80 0 0 0
+ itm_rhun_mangler Rhun_Mangler Rhun_Mangler 1  mackie_mangler_short 0  6356995 9223635923965575392 524 286870 3 100 0 0 0 0 43008 92 0 90 0 287 42
 0
 
  itm_dale_light_a Dale_Militia_Jacket Dale_Militia_Jacket 3  dale_light_b1 134  dale_light_b2 1  dale_light_b3 167772160  16842765 0 150 167772294 7 100 0 13 2 0 0 0 0 0 0 0 0
@@ -2164,7 +2164,7 @@ itemsfile version 2
  itm_free_dale_armor_k Dale_Noble_Armor Dale_Noble_Armor 1  northmen_heavy_b 0  16842765 0 2000 704643072 22 100 2 38 15 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_l Dale_Noble_Gorget Dale_Noble_Gorget 1  dale_reward 0  16842765 0 2000 704643072 22 100 2 38 15 0 0 0 0 0 0 0 0
+ itm_free_dale_armor_l Dale_Noble_Gorget Dale_Noble_Gorget 1  dale_reward 0  16842765 0 2000 704643072 22 100 2 38 15 0 0 0 0 0 0 0 0
 0
 
  itm_dale_helmet_a Dale_Light_Infantry_Helm Dale_Light_Infantry_Helm 3  dale_helmet_a 0  dale_helmet_a 1  dale_helmet_a_good 167772160  65548 0 550 167772294 2 100 28 0 0 0 0 0 0 0 0 0 0
