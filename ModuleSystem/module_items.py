@@ -1246,10 +1246,10 @@ items =[
 #####SHIELDS##########
 ["beorn_shield","Northmen_Shield",[("northmen_shield",0),("northmen_shield",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(3)|hit_points(480)|body_armor(5)|spd_rtng(82)|weapon_length(70),imodbits_shield,],
 ######WEAPONS###########
-["beorn_axe","Beorning_Axe",[("beorning_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,300,weight(5)|difficulty(0)|spd_rtng(94)|weapon_length(92)|swing_damage(41,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+["beorn_axe","Beorning_Axe",[("beorning_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_back,300,weight(5)|difficulty(0)|spd_rtng(94)|weapon_length(92)|swing_damage(41,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 # use itm_dale_sword, itm_dwarf_sword_a, itm_dwarf_sword_b for Beorning's imported swords
-["beorn_staff","Woodmen_Staff",[("woodman_staff",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_wooden_attack|itp_can_knock_down,itc_staff|itcf_carry_sword_back,100,weight(2)|difficulty(0)|spd_rtng(114)|weapon_length(104)|swing_damage(20,blunt)|thrust_damage(20,blunt),imodbits_weapon_wood],
-["beorn_battle_axe","Beorning_War_Axe",[("beorning_war_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through,itc_nodachi|itcf_carry_axe_back,300,weight(6)|difficulty(0)|spd_rtng(91)|weapon_length(85)|swing_damage(43,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+["beorn_staff","Woodmen_Staff",[("woodman_staff",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_wooden_attack|itp_can_knock_down,itc_staff|itcf_carry_back,100,weight(2)|difficulty(0)|spd_rtng(114)|weapon_length(104)|swing_damage(20,blunt)|thrust_damage(20,blunt),imodbits_weapon_wood],
+["beorn_battle_axe","Beorning_War_Axe",[("beorning_war_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through,itc_nodachi|itcf_carry_back,300,weight(6)|difficulty(0)|spd_rtng(91)|weapon_length(85)|swing_damage(43,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 
 ###TLD DWARF ITEMS##########
 ########SHIELDS##########
