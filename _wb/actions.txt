@@ -1241,15 +1241,15 @@
  warg_leapattack 25600 50331681  1
   1 anim_horse 205 222 536870921 0 0 5.5 0  0 
  bear_slap_right 17410 50331722  1
-  1.4 bear_slap_right 1 45 5 2829396006 0 0.8 0  0.9 
+  1.4 bear_slap_right 1 45 5 2829396006 0 0.6 0  0 
  bear_uppercut 17410 50331722  1
-  1.4 bear_uppercut 44 93 5 2829396006 0 0.7 0  0.9 
+  1.4 bear_uppercut 44 93 5 2829396006 0 0.5 0  0 
  spider_attack 17410 50331722  1
   1.25 spider_attack 1 33 536870917 2829396006 0 0 0  0.9 
  wolf_snap 17410 50331722  1
   1.25 wolf_snap 1 55 536870917 2829396006 0 0 0  0.9 
  bear_slam 17410 50331722  1
-  1.6 bear_slam 1 45 536870921 2829396006 0 -0.5 0  0.9 
+  1.6 bear_slam 1 45 536870921 2829396006 0 -0.5 0  0 
  unused_horse_anim_12 0 0  1
   1 anim_horse 0 1 0 0 0 0 0 0.0 
  unused_horse_anim_13 0 0  1

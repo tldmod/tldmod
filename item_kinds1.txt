@@ -2324,7 +2324,7 @@ itemsfile version 2
  itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftain 0  16777229 0 1200 704643206 18 100 0 33 15 18 0 0 0 0 0 0 0
 0
 
- itm_beorn_helmet Bear_Skullcap Bear_Skullcap 2  beorn_helmet_light 134  beorn_helmet 0  65548 0 800 704643206 2 100 32 0 0 0 0 0 0 0 0 0 0
+ itm_beorn_helmet Bear_Skullcap Bear_Skullcap 2  beorn_helmet 0  beorn_helmet_light 134  65548 0 800 704643206 2 100 32 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_shield Northmen_Shield Northmen_Shield 2  northmen_shield 0  northmen_shield 771751936  327687 4831838208 200 251658402 3 100 0 5 0 0 480 82 0 70 0 0 0
@@ -2742,7 +2742,7 @@ itemsfile version 2
  itm_spider Spider Spider 1  spider 0  18014398509486081 0 1200 0 0 100 0 30 0 3 60 75 50 0 0 25 0
 0
 
- itm_bear Bear Bear 1  bear 0  4097 0 1200 0 0 100 0 45 0 10 130 45 50 120 0 25 0
+ itm_bear Bear Bear 1  bear_2 0  4097 0 1200 0 0 100 0 48 0 10 130 48 50 120 0 25 0
 0
 
  itm_wolf Wolf Wolf 1  wolf 0  4097 0 1200 0 0 100 0 25 0 10 50 50 50 85 0 25 0

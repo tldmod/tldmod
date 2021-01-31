@@ -26535,8 +26535,26 @@ command_cursor_scripts = [
 		(troop_set_slot, ":troop_id", slot_troop_hp_shield, reg0),
 	]),
 
-]
+# script_cf_bear_form_selected
+# This script is called to check if player has selected bear form to fight battles
+#InVain: Compile this script in M&B 1.011 too, so it doesn't cause compilation errors.
+# Input: arg1: 
+# Output: reg0: 1= in the bear form; 0= in human form.
+("cf_bear_form_selected",
+    [
+      (assign, reg0, 0), (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"),
+      # Check if agent troop is that
+      (try_begin),
+          (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
+          (troop_is_hero, ":bear_troop"),
+          (troop_get_inventory_slot, ":horse_item", ":bear_troop", ek_horse),
+          (eq, ":horse_item", "itm_bear"),
+          (assign, reg0, 1),
+      (try_end),
+      (set_trigger_result, reg0),
+]),
 
+]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
 
@@ -29783,25 +29801,8 @@ if is_a_wb_script==1:
 ]),
 
 #Beornign shapeshifter related mechanics starts here
-] + (is_a_wb_script==1 and [
 
-# script_bear_form_selected
-# This script is called to check if player has selected bear form to fight battles
-# Input: arg1: 
-# Output: reg0: 1= in the bear form; 0= in human form.
-("cf_bear_form_selected",
-    [
-      (assign, reg0, 0), (assign, ":bear_troop", "trp_multiplayer_profile_troop_male"),
-      # Check if agent troop is that
-      (try_begin),
-          (troop_slot_eq, "trp_player", slot_troop_player_clone, ":bear_troop"),
-          (troop_is_hero, ":bear_troop"),
-          (troop_get_inventory_slot, ":horse_item", ":bear_troop", ek_horse),
-          (eq, ":horse_item", "itm_bear"),
-          (assign, reg0, 1),
-      (try_end),
-      (set_trigger_result, reg0),
-]),
+] + (is_a_wb_script==1 and [
 
 # script_cf_select_bear_form
 # inputs: None

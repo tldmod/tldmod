@@ -3477,7 +3477,7 @@ or
                                         # Arsakes no animals or riderless wargs (no bear in MB)
                                         (neg|is_between, ":rider_troop", warg_ghost_begin, warg_ghost_end),
                                         (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
-                                        (neq, ":rider_troop", "trp_werewolf")
+                                        (neq, ":rider_troop", "trp_werewolf"),
                                         (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"), 
 
 					(store_skill_level, ":riding", "skl_riding", ":rider_troop"),
