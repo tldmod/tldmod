@@ -4260,7 +4260,12 @@ dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [
 		 (else_try),(eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
 		 (else_try),(eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
 		(try_end),
-		(set_fog_distance,reg11,0x000001), 
+        (try_begin),
+            (eq, "$bright_nights", 1),
+            (set_fog_distance,reg11,0x0C0C0C), 
+        (else_try),
+            (set_fog_distance,reg11,0x000001), 
+        (try_end),
 		#(display_message, "@DEBUG: Fog distance: {reg11}"), 	
 		(try_begin),(eq, reg11, 10000),(assign, "$player_is_inside_dungeon",0),
 		 (else_try),				   (assign, "$player_is_inside_dungeon",1),

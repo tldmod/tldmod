@@ -3070,7 +3070,7 @@ spr_umbar_smallboatoar 0 0 umbar_prop_smallboatoar 0 0
 
 
 spr_moria 0 0 moria_hall bo_moria_hall 1
--40  2 1798 2 70 197635 1797 2 0 100 
+-40  2 1798 2 70 724747 1797 2 0 100 
 
 
 spr_moria_dimrill_gate 0 0 dimrill_gate bo_dimrill_gate 0
@@ -4614,7 +4614,7 @@ spr_fog_elven_settlement 16384 0 collision_cube 0 1
 
 
 spr_fog_darkish_glow 16384 0 collision_cube 0 1
--40  6 4 0 2273 0 1798 2 1000 65793 5 0 1798 2 1500 65793 3 0 
+-40  10 4 0 2273 0 31 2 144115188075856558 1 1798 2 1300 65793 5 0 2273 0 1798 2 1000 65793 5 0 1798 2 1500 65793 3 0 
 
 
 spr_fog_reddish_glow 16384 0 collision_cube 0 1
@@ -4622,7 +4622,7 @@ spr_fog_reddish_glow 16384 0 collision_cube 0 1
 
 
 spr_fog_greenish_glow 16384 0 collision_cube 0 1
--40  6 4 0 2273 0 1798 2 250 593673 5 0 1798 2 400 1517079 3 0 
+-40  10 4 0 2273 0 31 2 144115188075856558 1 1798 2 300 989455 5 0 2273 0 1798 2 250 593673 5 0 1798 2 400 1517079 3 0 
 
 
 spr_isen_furnace 0 0 isen_furnace bo_isen_furnace 0
@@ -4959,7 +4959,7 @@ spr_distant_place_Morannon 0 0 prop_Morannon 0 1
 
 
 spr_distant_place_Dolguldur 0 0 prop_dolguldur 0 1
--40  6 4 0 2273 0 1798 2 450 469277 5 0 1798 2 700 7846834 3 0 
+-40  10 4 0 2273 0 31 2 144115188075856558 1 1798 2 550 1071422 5 0 2273 0 1798 2 450 469277 5 0 1798 2 700 7846834 3 0 
 
 
 spr_honey_pot 0 0 honey_pot 0 0
