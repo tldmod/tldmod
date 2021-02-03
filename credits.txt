@@ -1,0 +1,100 @@
+Original credits by Merlkir:
+
+Core members:
+    Ancientwanker - father and leader of the mod, did coding, writing, even some graphics stuff until he disappeared without a trace two years ago.
+    Brutus - 3D modeler and texturer (Easterlings, trolls, wargs..), idea person, great guy. Hasn't been active since most of the 3D was done.
+    CppCoder - brave coder, morale system smith and bug hunter.
+    DaBlade - a sound expert, texturer, lore advisor, gameplay designer, general help. Did tons of stuff during the slow times. Taking a break.
+    GetAssista - GA, coding, fixing, bugremoving, map work, features design and implementation, lods, optimizing, optimizing, optimizing and optimizing. And tons other ♥♥♥♥.
+    Llew - 3D models, excellent architecture (responsible for most of Gondorand some of Rohan) and lore stuff, very nice guy. Not active atm.
+    MadVader - coder, author of much of the war system and party balancing, cutscenes, quests, training, traits, rewards code, NPCs and
+    Merlkir - concept artist, main 2D artists, texturer, very rarely a 3D modeler, custom animations, lore sage and overall a proper wanker. Did some voice acting too. The movie too.
+    Marco Tarini (mtarini) - coding wizard, voodoo master, mage, author of OpenBRF (made expressly for this mod!), all the shader magic is only possible thanks to him. Also the custom races. Attacking wargs, oliphants, orcs, uruks, trolls, windy flora and waving banners...all work properly because of him. A shining talent and an expert in the field. Also: lotsa coding, map art (including map writings), animations, and a bit of rigging and modelling (like most animated map icons)...
+    Octoburn- 3D guy, did tons and tons of models, architecture bits, remappings & optimisations, a very nice guy who's been with us since the beginning.
+    Triglav - a 3D guy, texturer (pretty much all orcs, gondorians, rohirrim, dunlanders, corsairs and much stuff in others are his work), glorious scene maker (designed pretty much all towns, nature, epic places, etc), overall ♥♥♥ kicker and whip cracker. Pushed and pulled us through the worst.
+    Swyter - ModDB style wizard, master of Warband porting.
+
+Substantial contributors:
+    Dain Ironfoot - 3D guy, iirc did some really nice interiors and buildings for us.
+    Faradon - 3D modeler and texturer, did much absolutely lovely stuff, really understands my concept art. No longer with us due to lack of time.
+    foxyman - coder, SVN innovator, author of the famous formation script and less famous but even more useful data structure code. No longer
+    Giles - 3D guy, wonderful models and textures - mostly Haradrim. No longer with us due to lack of time and motivation.
+    Ursca - 3d guy, some of the orc stuff was done by him originally. No longer with us.
+    Yoshiboy - coder and admin, occassionally popping in with advice and insights.
+
+    Abhuva - some scenes
+    Amman - NPC dialogue
+    Asterix - voice work
+    Balduran - some voices
+    Barf - 3D design
+    Buzvonlurt - voice acting
+    Conners - some textwriting
+    dunde - scripts.txt encoding idea
+    with us due to lack of time.
+    freakin wat - awesome voice acting
+    Gutekfiutek - we're using a modified version of his Polished landscapes flora.
+    HokieBT - coding code
+    Kolba - coder, started doing quests, no longer active due to lack of time.
+    LynX - 3D models for 808 version.
+    companions, he also writes dialogue and puts brakes on our overly ambitious plans while routinely eradicating bugs.
+    mandible - 3D tunnels, Beorning and Woodmen gear.
+    Pagan - composer, voice actor, kinda Australian. Kicks ass. A whole new sountrack in the making.
+    Petrovski - voice acting
+    Romainoir - a young 3D artist, improved a lot since he's been working on TLD, much of the beautiful elven and Rohan architecture is his work, impressive Erebor, terrain borders and cliffs, many other bits and bobs.
+    Rongar - factionalized shops script
+    Smile - Mearh retexture.
+    Taal - NPC dialogue
+    Treebeard - a coder from the PoP team who very generously let us use his battle AI and some other stuff.
+    Sibylla - additional hairstyles
+    Stefano - uruks and dwarves 3D
+    
+Additional credits by InVain:
+    Khamukhammu - Coder, organiser, motivator, great human being
+    InVain - Scener, Jack-of-all-trades
+    JTLannister - Lore nerd, writer of many words
+
+Contributions, help, advice:
+    Arsakes - Bear shapeshift feature
+    Avelium - Shield of Tuor
+    Burspa - Performance advice, faces
+    Cozur - Quest Templates
+    Darnokthemage - Scenes
+    DarthMongolTheUnwise - Nazgul robe
+    Rafael Casanova Morera - Save Corruption Fix and other vital code fixes
+    Ruthven: Water particle effects, flying birds
+    kalarhan - Help with scripting Gondor AI & generally being helpful
+    Lightwolf_Games - Werewolf model
+    Mandible - Beorning Overhaul, Mithril Shield
+    NPC99 - Rohan Overhaul
+    Noxbru - Code, bugfixing, help with fixing the Linux version
+    Snouz & Saxondragon - Formations AI Fixes
+    Snouz - TLD Warband Asset Pack (first port of TLD assets to Warband standarts)
+    Yarrum - Dialogues, Descriptions, & Suggestions
+    Zachary Foster - Mossy rock props
+
+Open Source Assets and Code
+    Adorno - Wooden Scene Props Pack
+    Brego's LotR OSP - Rohan Guard Armor
+    BeefBacon - BeefBacon's Terrain and Landscaping Pack
+    BrustwarzenLenny's Retexture Pack
+    Brytenwalda - props, items, textures
+    Caba' drin - Improved Field AI [Autoswap weapons, Mount Improvements]
+    Crusaders - Way to Expiation (CWE) - Flora, props, items, textures
+    dejawolf's Viking pack
+    Full Invasion Pack - Helms, boots, horses
+    Game of Thrones OSP
+    Grim Age (Warhammer mod) - bow models
+    Gutekfiutek - Polished buildings
+    hoboistice - Up-stab animations & Spear Improvements
+    Jaakko - Italian OSP (Trees)
+    Mandible - Nordish Royal Sword
+    Mackie - mackie weapons OSP (Rhun Mangler)
+    Narf of Picklestink - Rus Armour Pack; Men-at-arms Armour Pack; Transitional Armour Pack
+    Nightfall of Middle-Earth: Khazâd ai-mênu! - Props, textures, some items
+    Oliveran - Improved Field AI [Archer Aim, Lord AI]
+    Jun Yue - Improved Field AI [Horse Archer AI]
+    Rath0s Arms and Armour OSP
+    SacredStoneHead Nord Armor Set
+    Spak - OSP Spak_Items
+    Vyrn - Noldor bow, HP shield code
+    Waewulf's Light Pack
