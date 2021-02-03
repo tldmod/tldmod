@@ -199,7 +199,7 @@ scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x0000000720079
 scn_hornburg_center hornburg_center 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
- outer_mountains2east 
+ outer_terrain_helms_deep 
 scn_east_emnet_center east_emnet_center 256 none none 0 0 100 100 -100 0x0000000320045abc000308c4000029d9000033bd000009b9 
   0 
   0 
@@ -723,7 +723,7 @@ scn_aldburg_siege aldburg_siege 256 none none 0 0 100 100 -100 0x000000072007956
 scn_hornburg_siege hornburg_siege 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
- outer_mountains2east 
+ outer_terrain_helms_deep 
 scn_east_emnet_siege east_emnet_siege 256 none none 0 0 100 100 -100 0x0000000320045abc000308c4000029d9000033bd000009b9 
   0 
   0 
@@ -1287,11 +1287,11 @@ scn_edoras_outside_2 edoras_outside_2 256 none none 0 0 100 100 -100 0x000000002
 scn_hornburg_outside_1 hornburg_outside_1 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
   0 
   0 
- New_outer_mountains2south_helmsdeep 
+ outer_terrain_helmsdeep_far 
 scn_hornburg_outside_2 hornburg_outside_2 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
   0 
   0 
- New_outer_mountains2south_helmsdeep 
+ outer_terrain_helmsdeep_far 
 scn_dolamroth_outside_1 dolamroth_outside_1 256 none none 0 0 100 100 -100 0x000000023c6794b10005153c00005c3000004b3400005792 
   0 
   0 
@@ -1327,15 +1327,15 @@ scn_beorn_outside_2 beorn_outside_2 256 none none 0 0 100 100 -100 0x00000000b06
 scn_moria_outside_1 moria_outside_1 256 none none 0 0 100 100 -100 0x000000002000050000075dde00000863000041e20000070c 
   0 
   0 
- New_outer_mountains2west 
+ outer_terrain_dimrill 
 scn_moria_outside_2 moria_outside_2 256 none none 0 0 100 100 -100 0x000000002000050000075dde00000863000041e20000070c 
   0 
   0 
- New_outer_mountains2west 
+ outer_terrain_dimrill 
 scn_dimrill_dale dimrill_dale 1792 none none 0 0 100 100 -100 0x00000002d00d16e38005c57300000863000041e20000739d 
   0 
   0 
- New_outer_mountains2west 
+ outer_terrain_dimrill 
 scn_carrock_nearby_1 carrock_nearby_1 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
   0 
   0 
@@ -1359,7 +1359,7 @@ scn_s_erebor s_erebor 1792 none none 0 0 100 100 -100 0x00000003a7268ca70005715f
 scn_hornburg_near hornburg_near 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
- outer_terrain_rohan 
+ outer_terrain_helms_deep 
 scn_lebennin_1 lebennin_1 256 none none 0 0 100 100 -100 0x000000013c640c2d0007d1ef00007a7400005bd5000035b2 
   0 
   0 

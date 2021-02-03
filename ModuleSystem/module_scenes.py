@@ -87,7 +87,7 @@ scenes = [
   ("cair_andros_center"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
   ("edoras_center"          ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000003200005000009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
   ("aldburg_center"         ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072007956000025896000037e800000e860000674b",[],[],"outer_mountains2south"),
-  ("hornburg_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x0000000330000500000d234800006228000053bf00004eb9",[],[],"outer_mountains2east"),
+  ("hornburg_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x0000000330000500000d234800006228000053bf00004eb9",[],[],"outer_terrain_helms_deep"),
   #("hornburg_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x00001d63c005114300006228000053bf00004eb9",[],[],"outer_mountains2south"),
   ("east_emnet_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000320045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
   ("westfold_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000620049cbd00025896000048e90000164400002b3f",[],[],"outer_terrain_rohan"),
@@ -269,7 +269,7 @@ scenes = [
 ("west_osgiliath_siege",sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
 ("edoras_siege"        ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007200005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
 ("aldburg_siege"       ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000072007956000025896000037e800000e860000674b",[],[],"outer_mountains2south"),
-("hornburg_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,        "0x0000000330000500000d234800006228000053bf00004eb9",[],[],"outer_mountains2east"),
+("hornburg_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,        "0x0000000330000500000d234800006228000053bf00004eb9",[],[],"outer_terrain_helms_deep"),
 #("hornburg_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,        "0x00001d63c005114300006228000053bf00004eb9",[],[],"outer_mountains2south"),
 ("east_emnet_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000320045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
 ("westfold_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000620049cbd00025896000048e90000164400002b3f",[],[],"outer_terrain_rohan"),
@@ -478,8 +478,8 @@ scenes = [
 ("osgiliath_outskirts_4",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000300005000003d4f1000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
 ("edoras_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
 ("edoras_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
-("hornburg_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"New_outer_mountains2south_helmsdeep"),
-("hornburg_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"New_outer_mountains2south_helmsdeep"),
+("hornburg_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_helmsdeep_far"),
+("hornburg_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_helmsdeep_far"),
 ("dolamroth_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000023c6794b10005153c00005c3000004b3400005792",  [],[],"outer_terrain_seaside_1"), #Dublicates for now, might make the scenes non-randomized, later, so I'll need two for variety
 ("dolamroth_outside_2",sf_generate|sf_randomize|sf_auto_entry_points,"none", "none", (0,0),(100,100),-100,"0x000000023c6794b10005153c00005c3000004b3400005792",  [],[],"outer_terrain_seaside_1"), #randomized
 ("morannon_outside_1",sf_generate|sf_muddy_water,"none", "none", (0,0),(100,100),-100,"0x00000000b01489340005014000002601000021f700001290",  [],[],"New_outer_mountains2south_morannon"),
@@ -488,15 +488,15 @@ scenes = [
 ("dolguldur_outside_2",sf_generate|sf_muddy_water,"none", "none", (0,0),(100,100),-100,"0x00000001b01917000004e93c00007b15000077bd00004d24",  [],[],"New_outer_mountains2east_mordor"),
 ("beorn_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b062c90d0005a96a000075f30000786900001ef5",  [],[],"outer_terrain_plain"),
 ("beorn_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b062c90d0005a96a000075f30000786900001ef5",  [],[],"outer_terrain_plain"),
-("moria_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002000050000075dde00000863000041e20000070c",  [],[],"New_outer_mountains2west"),
-("moria_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002000050000075dde00000863000041e20000070c",  [],[],"New_outer_mountains2west"),
-("dimrill_dale" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 100, 100),-100.0,"0x00000002d00d16e38005c57300000863000041e20000739d",[],[],"New_outer_mountains2west"),
+("moria_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002000050000075dde00000863000041e20000070c",  [],[],"outer_terrain_dimrill"),
+("moria_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002000050000075dde00000863000041e20000070c",  [],[],"outer_terrain_dimrill"),
+("dimrill_dale" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 100, 100),-100.0,"0x00000002d00d16e38005c57300000863000041e20000739d",[],[],"outer_terrain_dimrill"),
 ("carrock_nearby_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
 ("carrock_nearby_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
 ("esgaroth_outside_1",sf_generate|sf_randomize,"none", "none", (0,0),(100,100),-100,"0x00000003a7268ca70005715f00003feb00005bd50000739d",  [],[],"New_outer_terrain_seaside_west"),
 ("esgaroth_outside_2",sf_generate|sf_randomize,"none", "none", (0,0),(100,100),-100,"0x00000003a7268ca70005715f00003feb00005bd50000739d",  [],[],"New_outer_terrain_seaside_west"),
 ("s_erebor" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 100, 100),-100.0,"0x00000003a7268ca70005715f00003feb00005bd50000739d",[],[],"outer_terrain_plain"),
-("hornburg_near" ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x0000000330000500000d234800006228000053bf00004eb9",[],[],"outer_terrain_rohan"), #right in front of hornburg
+("hornburg_near" ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x0000000330000500000d234800006228000053bf00004eb9",[],[],"outer_terrain_helms_deep"), #right in front of hornburg
 	#("hornburg_near" ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x000000002000056300075d6700004d84800053bf00004eb9",[],[],"outer_terrain_rohan"), #right in front of hornburg
 ("lebennin_1" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x000000013c640c2d0007d1ef00007a7400005bd5000035b2",[],[],"outer_mountains2south"),  #flower hills 1
 ("lebennin_2" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x000000013c640c2d0007d1ef0000339200005bd5000035b2",[],[],"outer_terrain_plain"), #flower hills 1 v2
