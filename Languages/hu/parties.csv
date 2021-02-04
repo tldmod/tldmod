@@ -12,7 +12,7 @@ p_town_henneth_annun|Henneth Annûn
 p_town_cair_andros|Cair Andros
 p_town_calembel|Calembel
 p_town_edoras|Edoras
-; p_town_aldburg|Aldburg
+p_town_aldburg|Öregvár
 p_town_hornburg|Kürtvár
 p_town_east_emnet|Keletelve
 p_town_westfold|Nyugathalom
@@ -42,7 +42,7 @@ p_town_dale|Suhatag
 p_town_esgaroth|Esgaroth
 p_town_dunland_camp|Dúnföldi tábor
 p_town_harad_camp|Haradrim tábor
-p_town_khand_camp|Khand tábor
+p_town_khand_camp|Khand tábora
 p_town_umbar_camp|Kalóz tábor
 p_town_imladris_camp|Völgyzugolyi tábor
 p_town_dol_guldur|Dol Guldur
@@ -99,7 +99,7 @@ p_ford_fangorn|Entséd
 p_ford_fangorn2|Limjód
 p_ford_moria|Ezüstér
 p_legend_amonhen|Amon Hen
-p_legend_deadmarshes|Holt-láp
+p_legend_deadmarshes|Holtláp
 p_legend_mirkwood|Bakacsinerdő
 p_legend_fangorn|Fangorni Enttanáncs
 p_ring_hunter_lair|Gyűrűvadászok fészke

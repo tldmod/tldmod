@@ -1,7 +1,7 @@
 skl_trade|Alkudozás
-; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
+skl_trade_desc|A kovácsokat és hadtáposokat együttműködőbbé teszi, és jobb felszereléseket fognak felkínálni. (Csapat képesség) 
 skl_leadership|Hadvezetés
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
+skl_leadership_desc|Minden pont növeli a sereged maximum számát 5-tel, növeli a sereged morálját és csökkenti a katonák zsoldját 5 %%-al. Több és erősebb önkéntes lesz hajlandó csatlakozni hozzád. (Vezető képesség)
 skl_prisoner_management|Fogolytartás
 skl_prisoner_management_desc|Ez a képesség növeli a maximum foglyok számát %d-al. (Vezető képesség)
 skl_persuasion|Vadonjárás

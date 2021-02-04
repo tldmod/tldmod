@@ -567,7 +567,7 @@ dlga_lord_tell_mission:lord_mission_told.1|Můj dobrý přítel, starý spoluboj
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Kolik mužů potřebujete?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Pokud vycvičíte {reg1} {s14} a přivedete mi je, tak by to mělo stačit.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Samozřejmě, {s65}. Dej mi {reg1} čerstvých rekrutů a já je vycvičím aby byly {s14}.
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Navrhuji jinou cestu, {s65}. Vezmu {reg1} čerstvé rekruty na tréninková pole a naučím je pár věcem.
 ; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Tyto dny jsem příliš zaneprázdněn abych někoho trénoval.
 dlga_lord_mission_raise_troops_accepted:close_window|Zbavil jsi mě velkého břemene. Řeknu svým velitelům, aby k tobě poslali rekruty, kteří budou pod tvým přímým velením. Rovněž ti zaplatím za potencionální budoucí výdaje. Tady toto by mělo stačit. Děkuji ti za tvou pomoc.
@@ -701,7 +701,7 @@ dlga_beorn_help6:beorn_help7|(TURTORIAL FRAKČNÍCH HODNOSTÍ) ^^Body hodností 
 dlga_beorn_help7:close_window|Le fael, přítel. Sbohem.
 dlga_beorn_help7:close_window.1|(zvedne ruku a odejde beze slova)
 ; dlga_start:kill_scout_1|Great eyes and ears you have there! If you hadn’t warned us, those green-clad tree-climbers would’ve had the jump on us, I warrant - or perhaps escaped, and brought down more of their fellows on our heads! Now they’re for the maggots and crows, and our mission is safe. Ai! The Bosses will be pleased.
-; dlga_kill_scout_1:kill_scout_2|Watch where you’re taking us, Orc. We have not travelled this far to perish in an ambush, before the war has even begun!
+dlga_kill_scout_1:kill_scout_2|Pozor na to, kam nás vedeš, Orku. Necestovali jsme tak daleko, abychom byli roztříštěni v nějakém přepadení, ještě než válka vůbec začala!
 ; dlga_kill_scout_2:kill_scout_3|And war we shall have, indeed! Have no fear, warrior, Mordor is an ally to you and yours. Take this chit - get some supplies. Good for use in all Mordor outposts! Get a round of Orc brew on me!
 dlga_kill_scout_3:kill_scout_4|(RESOURCE POINT TUTORIAL)^^ Resource pointy které potřebuješ na nákupy v Mordoru nejsou ty stejné které získáš u své frakce, ale ty které získaš v Mordoru. ^^See REPORTS for more information.
 dlga_kill_scout_4:kill_scout_5|Chceš abychom pily Orkské splašky? Radši bychom pily vlastní moč.
@@ -729,7 +729,7 @@ dlga_sad_elf_1:sad_elf_2|Slyším je. Jaké novinky nám sdělují?
 dlga_sad_elf_2:sad_elf_choice|Ach, příběhy z moře a z ještě větší dálky. {Lord/Lady} jsem už unavený z této války kterou vedeme, unavený ze samotné země po které kráčíme. Omavám se že Ennor (Středozem) je pro mě ztracen. Nech mě odejít!
 dlga_sad_elf_choice:sad_elf_leave|Cítím tvou bolest. Svou část na této válce jsi vykonal. Smíš odejít.
 dlga_sad_elf_choice:sad_elf_no|Elfové se nemohou ze vytratit ze Středozemě do stínů. V této válce nebojujeme jenom sami za sebe a každý z nás musí sehrát svou roli. Nemohu tě nechat odejít. [Zkouška vůdcovství]
-; dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
+dlga_sad_elf_leave:close_window|Děkuji ti, můj {pane/paní}!^^Do moře, do moře! Bílí rackové pláčou,^Vítr fouká, a bílá pěna poletuje.^Na západ, na západ, kulaté slunce padá.
 dlga_start:close_window.11|Dorazili jste v pravou chvíli. Pojďme společně našemu nepříteli dát lekci.
 dlga_start:close_window.12|Děláš velkou chybu, pokud chceš bojovat proti nám.
 dlga_start:ally_thanks_meet|Myslím že jsme zatím nebyli řádně představeni. Právě jsi mi zachránil život a já ani nevím jak se jmenuješ...
@@ -774,20 +774,20 @@ dlga_spy_partners_talk:spy_partners_talk_2|{s1} nařídil vaše zadržení. Tím
 dlga_spy_partners_talk_2:close_window|Tak si to zkus!
 dlga_spy_partners_talk:close_window|Nevšímejte si mě. Jen procházím.
 dlga_start:runaway_serf_intro_1|Dobrý den pane.
-; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by your {s4} whom you are running from. He will not punish you if you return now.
-; dlga_runaway_serf_intro_2:runaway_serf_intro_3|My good master. Our lives at {s1} was unbearable. We worked all day long and still went to bed hungry. We are going to {s6} to start a new life, where we will be treated like humans.
-; dlga_runaway_serf_intro_3:runaway_serf_go_back|You have gone against our laws by running from slavery. You will go back to {s1} now!
+dlga_runaway_serf_intro_1:runaway_serf_intro_2|Byl jsem poslán Vaším {s4} od kterého utíkáte. Nepotrestá Vás, pokud se k němu vrátíte teď.
+dlga_runaway_serf_intro_2:runaway_serf_intro_3|Můj dobrý pane. Naše životy v {s1} se nedaly vydržet. Pracovali jsme celé dny a stále jsme chodili spát o hladu. Máme namířeno do {s6} abychom zkusili naše štěstí tam, kde s námi bude zacházeno jako s lidmi.
+dlga_runaway_serf_intro_3:runaway_serf_go_back|Porušil jsi naše zákony tím, že jsi utekl z otroctví. Teď tě pošleme zpátky do {s1} !
 dlga_runaway_serf_go_back:close_window|Dobře pane. Jak si přejete. Vyrazím teď zpět do {s5}.
-; dlga_start:runaway_serf_talk_caught|Good day master. We were heading back to {s5}, but I am afraid we lost our way.
+dlga_start:runaway_serf_talk_caught|Dobrý den, pane. Měli jsme namířeno zpět do {s5}, ale obávám se, že jsme se ztratili.
 dlga_runaway_serf_talk_caught:runaway_serf_go_back|Nepokoušej moji trpělivost. Teď se vrátíš!
 dlga_start:runaway_serf_talk_again_return|Jsme na cestě zpět do {s5} pane.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Pohni si. Čím dříve se vrátíš tím lépe.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|dobrá, pokračujeme
 dlga_runaway_serf_talk_again_return_2:close_window|jistě můj pane, jak si přejete
 dlga_mayor_talk:mayor_deliver_wine|Bylo mi řečeno, abych ti dodal {reg9} jednotek {s4}.
-; dlga_mayor_deliver_wine:mayor_pretalk|At last! Our stocks were almost depleted. I had arranged for the delivery of the {s4} in advance. And give {s9} my regards.^^[earned {reg14} Resource Points of {s14}]
-; dlga_mayor_talk:mayor_deliver_wine_incomplete|I was on a mission to deliver you {reg9} units of {s4}, but I lost some of the cargo to the enemy.
-; dlga_mayor_deliver_wine_incomplete:mayor_pretalk|They will pay for this! Well, at least we have some {s4}. Thank you anyway.^^[earned {reg14} Resource Points of {s14}]
+dlga_mayor_deliver_wine:mayor_pretalk|No konečně! Naše sklady byly skoro prázdné. Domluvil jsem dovezení {s4} předem. A sděl {s9} mé pozdravy.^^[earned {reg14} Resource Points of {s14}]
+dlga_mayor_talk:mayor_deliver_wine_incomplete|Byl jsem na cestě ti dodat {reg9} jednotek {s4}, ale nepřátelé mi z toho něco sebrali.
+dlga_mayor_deliver_wine_incomplete:mayor_pretalk|Zaplatí za to! No, alespoň máme nějaké {s4}. I tak Ti děkuji.^^[earned {reg14} Resource Points of {s14}]
 ; dlga_start:trainer_pretalk|You have survived up to Gauntlet wave {reg2}. {s4}
 dlga_start:trainer_pretalk.1|Velmi dobře, zneškodnil jsi všechny protivníky.
 dlga_start:trainer_talk|Dobrý den. Připraven na dnešní trénink?

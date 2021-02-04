@@ -1053,63 +1053,63 @@ trp_knight_6_1|Dervorin
 trp_smith_mtirith|Kowal Berethor
 trp_smith_mtirith_pl|Kowal Namiestnika
 trp_smith_pelargir|Mistrz Kowalski Hallatan
-; trp_smith_pelargir_pl|smithy
+trp_smith_pelargir_pl|Kuźnia
 trp_smith_linhir|Płatnerz Bor
-; trp_smith_linhir_pl|smithy
+trp_smith_linhir_pl|Kuźnia
 trp_smith_dolamroth|Kowal Haldad
 ; trp_smith_dolamroth_pl|Amroth smiths
 trp_smith_edhellond|Ryis Żelaznagłowa
-; trp_smith_edhellond_pl|smithy
+trp_smith_edhellond_pl|Kuźnia
 trp_smith_lossarnach|Berin Topornik
-; trp_smith_lossarnach_pl|smithy
+trp_smith_lossarnach_pl|Kuźnia
 trp_smith_tarnost|Harandil Stalowymłot
-; trp_smith_tarnost_pl|smithy
+trp_smith_tarnost_pl|Kuźnia
 trp_smith_erech|Lorne Czarny
-; trp_smith_erech_pl|smithy
+trp_smith_erech_pl|Kuźnia
 trp_smith_pinnath|Tarandil Miecznik
-; trp_smith_pinnath_pl|smithy
+trp_smith_pinnath_pl|Kuźnia
 trp_smith_eosgiliath|Bzurg Rabuś
-; trp_smith_eosgiliath_pl|smithy
+trp_smith_eosgiliath_pl|Kuźnia
 trp_smith_wosgiliath|Gardil
-; trp_smith_wosgiliath_pl|makeshift smithy
+trp_smith_wosgiliath_pl|Prowizoryczna Kuźnia
 trp_smith_calembel|Agronom
-; trp_smith_calembel_pl|smithy
+trp_smith_calembel_pl|Kuźnia
 trp_smith_hannun|Fal Kowal Zwiadowców
 ; trp_smith_hannun_pl|ranger gear stash
 trp_smith_candros|Kalimdor
-; trp_smith_candros_pl|smithy
+trp_smith_candros_pl|Kuźnia
 trp_smith_edoras|Mistrz Stali Eaoden
-; trp_smith_edoras_pl|King's smithy
+trp_smith_edoras_pl|Królewska Kuźnia
 trp_smith_aldburg|Fulm Żelaznostopy
-; trp_smith_aldburg_pl|smithy
+trp_smith_aldburg_pl|Kuźnia
 trp_smith_hornburg|Aldhelm
-; trp_smith_hornburg_pl|smithy
+trp_smith_hornburg_pl|Kuźnia
 trp_smith_eastemnet|Eadfrid
-; trp_smith_eastemnet_pl|smithy
+trp_smith_eastemnet_pl|Kuźnia
 trp_smith_westfold|Deor Hełmiarz
-; trp_smith_westfold_pl|smithy
+trp_smith_westfold_pl|Kuźnia
 trp_smith_westemnet|Płatnerz
-; trp_smith_westemnet_pl|smithy
+trp_smith_westemnet_pl|Kuźnia
 trp_smith_eastfold|Eaderan Żelazoryt
-; trp_smith_eastfold_pl|smithy
+trp_smith_eastfold_pl|Kuźnia
 trp_smith_morannon|Hurbag Wytapiacz
-; trp_smith_morannon_pl|smithy
+trp_smith_morannon_pl|Kuźnia
 trp_smith_mmorgul|Ogniomistrz Orgurz
-; trp_smith_mmorgul_pl|smithy
+trp_smith_mmorgul_pl|Kuźnia
 trp_town_24_smith|Boz Żelazołup
-; trp_town_24_smith_pl|smithy
+trp_town_24_smith_pl|Kuźnia
 trp_smith_orc_patrol|Glugz Żelazny Palec
-; trp_smith_orc_patrol_pl|camp smithy
+trp_smith_orc_patrol_pl|Obozowa Kuźnia
 trp_smith_oscamp|Kugash Żelazomił
-; trp_smith_oscamp_pl|camp smithy
+trp_smith_oscamp_pl|Obozowa Kuźnia
 trp_smith_isengard|Burz Żelazogrzmot
-; trp_smith_isengard_pl|underground smithy
+trp_smith_isengard_pl|Podziemna Kuźnia
 trp_smith_uoutpost|Gurzuk Żelaznozęby
 ; trp_smith_uoutpost_pl|outpost smithy
 trp_smith_uhcamp|Rabzug Rdzawy
-; trp_smith_uhcamp_pl|camp smithy
+trp_smith_uhcamp_pl|Obozowa Kuźnia
 trp_smith_urcamp|Glurk
-; trp_smith_urcamp_pl|camp smithy
+trp_smith_urcamp_pl|Obozowa Kuźnia
 trp_smith_cgaladhon|Dirufin Łuczarz
 ; trp_smith_cgaladhon_pl|elven weaponmakers
 trp_smith_cdolen|Dimirian Grotnik
@@ -1117,121 +1117,121 @@ trp_smith_cdolen|Dimirian Grotnik
 trp_smith_camroth|Getasistan
 ; trp_smith_camroth_pl|elven weaponmakers
 trp_smith_thranduils_halls|Thurinor
-; trp_smith_thranduils_halls_pl|smithy
+trp_smith_thranduils_halls_pl|Kuźnia
 trp_smith_woodelf_camp|Calechir
-; trp_smith_woodelf_camp_pl|smithy
+trp_smith_woodelf_camp_pl|Kuźnia
 trp_smith_beorn|Beornalaf Topornik
-; trp_smith_beorn_pl|smithy
+trp_smith_beorn_pl|Kuźnia
 trp_smith_moria|Kowal Burgak
-; trp_smith_moria_pl|smithy
+trp_smith_moria_pl|Kuźnia
 trp_smith_dale|Ardel Ognistoręki
-; trp_smith_dale_pl|smithy
+trp_smith_dale_pl|Kuźnia
 trp_smith_esgaroth|Kelegarn Łuczarz
-; trp_smith_esgaroth_pl|smithy
+trp_smith_esgaroth_pl|Kuźnia
 trp_smith_erebor|Thror Młotnik
 ; trp_smith_erebor_pl|praised Dwarven smiths
 trp_smith_dunland|Dorrowuld Żelazna Pika
-; trp_smith_dunland_pl|smithy
+trp_smith_dunland_pl|Kuźnia
 trp_smith_harad|Har Stalogniot
-; trp_smith_harad_pl|smithy
+trp_smith_harad_pl|Kuźnia
 trp_smith_khand|Pushurt Przekupień
-; trp_smith_khand_pl|smithy
+trp_smith_khand_pl|Kuźnia
 trp_smith_umbar|Kowal Fuinir
-; trp_smith_umbar_pl|smithy
+trp_smith_umbar_pl|Kuźnia
 trp_smith_imladris|Duifirian
 ; trp_smith_imladris_pl|elven weaponmakers
 trp_smith_dolguldur|Shtazg Dulbash
-; trp_smith_dolguldur_pl|smithy
+trp_smith_dolguldur_pl|Kuźnia
 trp_smith_north_rhun|Ognjemir Kladivo
-; trp_smith_north_rhun_pl|makeshift smithy
+trp_smith_north_rhun_pl|Prowizoryczna Kuźnia
 trp_smith_gundabad|Blurg Handlarz Śniegiem
-; trp_smith_gundabad_pl|smithy
+trp_smith_gundabad_pl|Kuźnia
 trp_smith_ironhill|Kowal Żelaznych Wzgórz
 ; trp_smith_ironhill_pl|Dwarven camp smiths
 trp_town_50_weaponsmith|Shruklug Knife Grinder
-; trp_town_50_weaponsmith_pl|smithy
+trp_town_50_weaponsmith_pl|Kuźnia
 trp_smith_gondor_ac|Płatnerz Bor
-; trp_smith_gondor_ac_pl|camp smithy
+trp_smith_gondor_ac_pl|Obozowa Kuźnia
 trp_smith_rohan_ac|Deor Hełmiarz
-; trp_smith_rohan_ac_pl|camp smithy
+trp_smith_rohan_ac_pl|Obozowa Kuźnia
 trp_smith_mordor_ac|Kowal Hurbag
-; trp_smith_mordor_ac_pl|smithy
+trp_smith_mordor_ac_pl|Kuźnia
 trp_smith_isengard_ac|Burz Żelazorąb
-; trp_smith_isengard_ac_pl|underground smithy
+trp_smith_isengard_ac_pl|Podziemna Kuźnia
 trp_smith_lorien_ac|Dimirian Grotnik
 ; trp_smith_lorien_ac_pl|elven weaponmakers
 trp_smith_woodelf_ac|Calechir
-; trp_smith_woodelf_ac_pl|smithy
+trp_smith_woodelf_ac_pl|Kuźnia
 trp_smith_dwarf_ac|Kowal Żelaznych Wzgórz
 ; trp_smith_dwarf_ac_pl|Dwarven camp smiths
 trp_smith_gundabad_ac|Blurg Handlarz Śniegiem
-; trp_smith_gundabad_ac_pl|smithy
+trp_smith_gundabad_ac_pl|Kuźnia
 trp_smith_rhun_ac|Ognjemir Kladivo
-; trp_smith_rhun_ac_pl|makeshift smithy
+trp_smith_rhun_ac_pl|Prowizoryczna Kuźnia
 trp_smith_guldur_ac|Shtazg Dulbash
-; trp_smith_guldur_ac_pl|smithy
+trp_smith_guldur_ac_pl|Kuźnia
 trp_smith_imladris_ac|Duifirian
 ; trp_smith_imladris_ac_pl|elven weaponmakers
 trp_smith_dunland_ac|Dorrowuld Żelazna Pika
-; trp_smith_dunland_ac_pl|smithy
+trp_smith_dunland_ac_pl|Kuźnia
 trp_smith_harad_ac|Har Tęgogłowy
-; trp_smith_harad_ac_pl|smithy
+trp_smith_harad_ac_pl|Kuźnia
 trp_smith_khand_ac|Pushurt Straganiarz
-; trp_smith_khand_ac_pl|smithy
+trp_smith_khand_ac_pl|Kuźnia
 trp_smith_umbar_ac|Kowal Fuinir
-; trp_smith_umbar_ac_pl|smithy
+trp_smith_umbar_ac_pl|Kuźnia
 trp_barman_mtirith|Karczmarz
 ; trp_barman_mtirith_pl|the Citadel
 trp_barman_pelargir|Karczmarz
-; trp_barman_pelargir_pl|the Castle
+trp_barman_pelargir_pl|Zamek
 trp_barman_linhir|Karczmarz
-; trp_barman_linhir_pl|the Castle
+trp_barman_linhir_pl|Zamek
 trp_barman_dolamroth|Karczmarz
-; trp_barman_dolamroth_pl|the Castle
+trp_barman_dolamroth_pl|Zamek
 trp_barman_edhellond|Karczmarz
-; trp_barman_edhellond_pl|the Castle
+trp_barman_edhellond_pl|Zamek
 trp_barman_lossarnach|Karczmarz
-; trp_barman_lossarnach_pl|the Castle
+trp_barman_lossarnach_pl|Zamek
 trp_barman_tarnost|Karczmarz
-; trp_barman_tarnost_pl|the Castle
+trp_barman_tarnost_pl|Zamek
 trp_barman_erech|Karczmarz
-; trp_barman_erech_pl|the Castle
+trp_barman_erech_pl|Zamek
 trp_barman_pinnath|Karczmarz
-; trp_barman_pinnath_pl|the Castle
+trp_barman_pinnath_pl|Zamek
 trp_barman_hannun|Karczmarz
-; trp_barman_hannun_pl|the Secret Cave
+trp_barman_hannun_pl|Ukryta Jaskinia
 trp_barman_calembel|Karczmarz
-; trp_barman_calembel_pl|the Castle
+trp_barman_calembel_pl|Zamek
 trp_barman_edoras|Karczmarz
 ; trp_barman_edoras_pl|Meduseld, the Golden Hall
 trp_barman_aldburg|Karczmarz
-; trp_barman_aldburg_pl|the Castle
+trp_barman_aldburg_pl|Zamek
 trp_barman_hornburg|Karczmarz
-; trp_barman_hornburg_pl|the Lord Halls
+trp_barman_hornburg_pl|Sala Władców
 trp_barman_eastemnet|Karczmarz
-; trp_barman_eastemnet_pl|the Castle
+trp_barman_eastemnet_pl|Zamek
 trp_barman_westfold|Karczmarz
-; trp_barman_westfold_pl|the Castle
+trp_barman_westfold_pl|Zamek
 trp_barman_westemnet|Karczmarz
-; trp_barman_westemnet_pl|the Castle
+trp_barman_westemnet_pl|Zamek
 trp_barman_eastfold|Karczmarz
-; trp_barman_eastfold_pl|the Castle
+trp_barman_eastfold_pl|Zamek
 trp_barman_baraddur|Karczmarz
-; trp_barman_baraddur_pl|the Castle
+trp_barman_baraddur_pl|Zamek
 trp_barman_morannon|Karczmarz
 ; trp_barman_morannon_pl|the Leader's Cave
 trp_barman_mmorgul|Karczmarz
 ; trp_barman_mmorgul_pl|the Tower
 trp_barman_cungol|Karczmarz
-; trp_barman_cungol_pl|the Castle
+trp_barman_cungol_pl|Zamek
 trp_barman_isengard|Karczmarz
 ; trp_barman_isengard_pl|the tower of Orthanc
 trp_barman_cgaladhon|Karczmarz
-; trp_barman_cgaladhon_pl|the Tree castle
+trp_barman_cgaladhon_pl|Zamek drewniany
 trp_barman_cdolen|Karczmarz
-; trp_barman_cdolen_pl|the Tree castle
+trp_barman_cdolen_pl|Zamek drewniany
 trp_barman_camroth|Karczmarz
-; trp_barman_camroth_pl|the Tree castle
+trp_barman_camroth_pl|Zamek drewniany
 trp_barman_thalls|Karczmarz
 ; trp_barman_thalls_pl|the Throne Room
 trp_barman_beorn|Karczmarz
@@ -1239,13 +1239,13 @@ trp_barman_beorn|Karczmarz
 trp_barman_moria|Karczmarz
 ; trp_barman_moria_pl|the Chief's Chamber
 trp_barman_dale|Karczmarz
-; trp_barman_dale_pl|the Castle
+trp_barman_dale_pl|Zamek
 trp_barman_esgaroth|Karczmarz
 ; trp_barman_esgaroth_pl|the Hall
 trp_barman_erebor|Karczmarz
 trp_barman_erebor_pl|Wielka Hala Thróra
 trp_barman_dolguldur|Karczmarz
-; trp_barman_dolguldur_pl|the Castle
+trp_barman_dolguldur_pl|Zamek
 trp_merchant_mtirith|Kwatermistrz
 ; trp_merchant_mtirith_pl|stable and warehouse
 trp_merchant_pelargir|Kwatermistrz
@@ -1395,7 +1395,7 @@ trp_elder_morannon|Wódz Czarnej Bramy
 trp_elder_mmorgul|Wódz Morgulu
 ; trp_elder_mmorgul_pl|the sinister city
 trp_elder_cungol|Przywódca Obozu
-; trp_elder_cungol_pl|the camp
+trp_elder_cungol_pl|Obóz
 trp_elder_isengard|Grima Gadzi Język
 ; trp_elder_isengard_pl|the city
 trp_elder_cgaladhon|Starszy Lorien
@@ -1407,19 +1407,19 @@ trp_elder_camroth|Starszy Lorien
 trp_elder_thalls|Starszy Mrocznej Puszczy
 ; trp_elder_thalls_pl|the elven caves
 trp_elder_imladris|Zarządca Rivendell
-; trp_elder_imladris_pl|the camp
+trp_elder_imladris_pl|Obóz
 trp_elder_wvillage|Pierre Leśnik
 ; trp_elder_wvillage_pl|the village
 trp_elder_beorn|Starszy Beorn
 ; trp_elder_beorn_pl|the hamlet
 trp_elder_harad|Przywódca Haradrimskiego Obozu
-; trp_elder_harad_pl|the camp
+trp_elder_harad_pl|Obóz
 trp_elder_rhun|Przywódca Obozu Rhun
-; trp_elder_rhun_pl|the camp
+trp_elder_rhun_pl|Obóz
 trp_elder_khand|Przywódca Obozu Khandu 
-; trp_elder_khand_pl|the camp
+trp_elder_khand_pl|Obóz
 trp_elder_dunland|Przywódca Obozu Dunlandu
-; trp_elder_dunland_pl|the camp
+trp_elder_dunland_pl|Obóz
 trp_elder_umbar|Umbarski Kwatermistrz
 ; trp_elder_umbar_pl|the fortified camp
 trp_elder_moria|Przywódca z Morii
@@ -1435,48 +1435,48 @@ trp_elder_erebor|Zarządca Ereboru
 trp_elder_dolguldur|Zarządca Guldur
 ; trp_elder_dolguldur_pl|the black castle
 trp_elder_gondor_ac|Zarządca
-; trp_elder_gondor_ac_pl|the camp
+trp_elder_gondor_ac_pl|Obóz
 trp_elder_rohan_ac|Zarządca
-; trp_elder_rohan_ac_pl|the camp
+trp_elder_rohan_ac_pl|Obóz
 trp_elder_mordor_ac|Zarządca
-; trp_elder_mordor_ac_pl|the camp
+trp_elder_mordor_ac_pl|Obóz
 trp_elder_isengard_ac|Zarządca
-; trp_elder_isengard_ac_pl|the camp
+trp_elder_isengard_ac_pl|Obóz
 trp_elder_lorien_ac|Zarządca
-; trp_elder_lorien_ac_pl|the camp
+trp_elder_lorien_ac_pl|Obóz
 trp_elder_woodelf_ac|Zarządca
-; trp_elder_woodelf_ac_pl|the camp
+trp_elder_woodelf_ac_pl|Obóz
 trp_elder_imladris_ac|Zarządca
-; trp_elder_imladris_ac_pl|the camp
+trp_elder_imladris_ac_pl|Obóz
 trp_elder_beorn_ac|Zarządca
-; trp_elder_beorn_ac_pl|the camp
+trp_elder_beorn_ac_pl|Obóz
 trp_elder_harad_ac|Przywódca Obozu Haradu
-; trp_elder_harad_ac_pl|the camp
+trp_elder_harad_ac_pl|Obóz
 trp_elder_rhun_ac|Przywódca Obozu Rhunu
-; trp_elder_rhun_ac_pl|the camp
+trp_elder_rhun_ac_pl|Obóz
 trp_elder_khand_ac|Przywódca Obozu Khandu
-; trp_elder_khand_ac_pl|the camp
+trp_elder_khand_ac_pl|Obóz
 trp_elder_dunland_ac|Przywódca Obozu Dunlandu
-; trp_elder_dunland_ac_pl|the camp
+trp_elder_dunland_ac_pl|Obóz
 trp_elder_umbar_ac|Umbarski Kwatermistrz
-; trp_elder_umbar_ac_pl|the camp
+trp_elder_umbar_ac_pl|Obóz
 trp_elder_moria_ac|Przywódca Obozu Morii
-; trp_elder_moria_ac_pl|the camp
+trp_elder_moria_ac_pl|Obóz
 trp_elder_gunda_ac|Przywódca Obozu Gundabadu
-; trp_elder_gunda_ac_pl|the camp
+trp_elder_gunda_ac_pl|Obóz
 trp_elder_dale_ac|Kwatermistrz Dale
-; trp_elder_dale_ac_pl|the camp
+trp_elder_dale_ac_pl|Obóz
 trp_elder_guldur_ac|Przywódca Obozu Guldur
-; trp_elder_guldur_ac_pl|the camp
+trp_elder_guldur_ac_pl|Obóz
 trp_elder_dwarf_ac|Krasnoludzki Zarządca
-; trp_elder_dwarf_ac_pl|the camp
+trp_elder_dwarf_ac_pl|Obóz
 trp_village_1_elder|Władca z Lash
 ; trp_village_1_elder_pl|the caves
 trp_tutorial_chest_1|Skrzynia z Bronią Białą
 trp_tutorial_chest_2|Skrzynia z Bronią Dystansową
-; trp_bonus_chest_1|Bonus Chest
-; trp_bonus_chest_2|Bonus Chest
-; trp_bonus_chest_3|Bonus Chest
+trp_bonus_chest_1|Skrzynia Bonusowa
+trp_bonus_chest_2|Skrzynia Bonusowa
+trp_bonus_chest_3|Skrzynia Bonusowa
 trp_camp_chest_faction|Skrzynia
 trp_camp_chest_none|Skrzynia
 trp_player_chest|Twoja Skrzynia
@@ -1602,14 +1602,14 @@ trp_gunda_troll_pl|Górskich Trolli
 ; trp_gunda_placeholder_pl|Trained Mountain Trolls
 trp_isen_troll|Troll z Isengardu
 trp_isen_troll_pl|Trolli z Isengardu
-; trp_isen_vet_troll|Isengard Trained Troll
-; trp_isen_vet_troll_pl|Isengard Trained Trolls
-; trp_isen_armored_troll|Isengard Armored Troll
-; trp_isen_armored_troll_pl|Isengard Armored Trolls
+trp_isen_vet_troll|Szkolony Troll z Isengardu
+trp_isen_vet_troll_pl|Szkolone Trolle z Isengardu
+trp_isen_armored_troll|Opancerzony Troll z Isengardu
+trp_isen_armored_troll_pl|Opancerzone Trolle z Isengardu
 trp_mordor_troll|Mordorski Troll
 trp_mordor_troll_pl|Mordorskie Trolle
-; trp_mordor_vet_troll|Mordor Trained Troll
-; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_mordor_vet_troll|Mordorski Szkolony Troll
+trp_mordor_vet_troll_pl|Mordorske Szkolone Trolle
 trp_mordor_olog_hai|Mordorskich Olog-Hai
 trp_mordor_olog_hai_pl|Mordorskich Olog-Hai
 trp_troll_placeholder_1|Jaskiniowy Troll

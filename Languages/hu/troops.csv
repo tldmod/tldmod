@@ -100,8 +100,8 @@ trp_i4_dale_billman|Suhatagi kampóbárdos
 trp_i4_dale_billman_pl|Suhatagi kampóbárdosok
 trp_i5_dale_bill_master|Suhatagi kampóbárd mester
 trp_i5_dale_bill_master_pl|Suhatagi kampóbárd mesterek
-trp_c2_rhovanion_retainer|Északi csatlós
-trp_c2_rhovanion_retainer_pl|Északi csatlósok
+trp_c2_rhovanion_retainer|Északlakó csatlós
+trp_c2_rhovanion_retainer_pl|Északlakó csatlósok
 trp_c3_rhovanion_auxilia|Északlakó Idegenlégiós
 trp_c3_rhovanion_auxilia_pl|Északlakó Idegenlégiósok
 trp_c4_rhovanion_rider|Rhovanioni lovas
@@ -130,8 +130,8 @@ trp_i3_rhun_tribal_infantry|Rhûni törzsi gyalogos
 trp_i3_rhun_tribal_infantry_pl|Rhûni törzsi gyalogság
 trp_i4_rhun_vet_infantry|Rhûni veterán gyalogos
 trp_i4_rhun_vet_infantry_pl|Rhûni veterán gyalogság
-trp_i5_rhun_ox_warrior| Az Ox Harcosa
-trp_i5_rhun_ox_warrior_pl|Az Ox Harcosai
+trp_i5_rhun_ox_warrior| Az Ökör Harcosa
+trp_i5_rhun_ox_warrior_pl|Az Ökör Harcosai
 trp_c2_rhun_horseman|Rhûn Lovas
 trp_c2_rhun_horseman_pl|Rhûn Lovasság
 trp_c3_rhun_outrider|Rhûn Kilovaglója
@@ -490,8 +490,8 @@ trp_c4_harondor_light_cavalry|Harandori Könnyűlovasok
 trp_c4_harondor_light_cavalry_pl|Harondori Könnyűlovasság
 trp_c5_harondor_serpent_knight|Arany Kígyó lovag
 trp_c5_harondor_serpent_knight_pl|Arany Kígyó lovagok
-trp_ac3_harondor_skirmisher|Harondori csatározó
-trp_ac3_harondor_skirmisher_pl|Harondori csatározók
+trp_ac3_harondor_skirmisher|Harondori portyázó
+trp_ac3_harondor_skirmisher_pl|Harondori portyázók
 trp_ac4_harondor_horse_archer|Harondori lovasíjász
 trp_ac4_harondor_horse_archer_pl|Harondori lovasíjászok
 trp_ac5_harondor_black_snake|Fekete Sikló lovasíjász
@@ -550,12 +550,12 @@ trp_i4_khand_pit_champion|Khand Gödörbajnok
 trp_i4_khand_pit_champion_pl|Khand Gödörbajnokok
 trp_i5_khand_pit_master|Variag Gödör Mestere
 trp_i5_khand_pit_master_pl|Variag Gödör Mesterei
-trp_ac3_khand_skirmisher|Khand Előcsatározó
-trp_ac3_khand_skirmisher_pl|Khand Előcsatározók
-trp_ac4_khand_vet_skirmisher|Khand Veterán Előcsatározó
-trp_ac4_khand_vet_skirmisher_pl|Khand Veterán Előcsatározók
-trp_ac5_khand_heavy_skirmisher|Variag nehéz csatározó
-trp_ac5_khand_heavy_skirmisher_pl|Variag nehéz csatározók
+trp_ac3_khand_skirmisher|Khand portyázó
+trp_ac3_khand_skirmisher_pl|Khand portyázók
+trp_ac4_khand_vet_skirmisher|Khand Veterán portyázó
+trp_ac4_khand_vet_skirmisher_pl|Khand veterán portyázók
+trp_ac5_khand_heavy_skirmisher|Variag nehéz portyázó
+trp_ac5_khand_heavy_skirmisher_pl|Variag nehéz portyázó
 trp_i1_corsair_youth|Umbari tengerész
 trp_i1_corsair_youth_pl|Umbari tengerészek
 trp_i2_corsair_warrior|Umbari harcos
@@ -636,10 +636,10 @@ trp_i6_isen_uruk_berserker|Harcias uruk-hai berzerker
 trp_i6_isen_uruk_berserker_pl|Harcias uruk-hai berzerkerek
 trp_i1_isen_uruk_snaga|Uruk-hai újszülött
 trp_i1_isen_uruk_snaga_pl|Uruk-hai újszülöttek
-trp_i2_isen_uruk|Vasudvardi uruk-haiok
-trp_i2_isen_uruk_pl|Vasudvardi uruk-haiok
-trp_i3_isen_large_uruk|Vasudvardi hatalmas uruk-haiok
-trp_i3_isen_large_uruk_pl|Vasudvardi hatalmas uruk-haiok
+trp_i2_isen_uruk|Vasudvardi uruk-hai
+trp_i2_isen_uruk_pl|Vasudvardi uruk-hai
+trp_i3_isen_large_uruk|Vasudvardi hatalmas uruk-hai
+trp_i3_isen_large_uruk_pl|Vasudvardi hatalmas uruk-hai
 trp_i4_isen_fighting_uruk_warrior|Harcias uruk-hai harcos
 trp_i4_isen_fighting_uruk_warrior_pl|Harcias uruk-hai harcosok
 trp_i5_isen_fighting_uruk_champion|Harcias uruk-hai bajnok
@@ -734,10 +734,10 @@ trp_i4_gunda_orc_warrior|Gundabadi ork harcos
 trp_i4_gunda_orc_warrior_pl|Gundabadi ork harcosok
 trp_i4_gunda_orc_berserker|Gundabadi ork berzerker
 trp_i4_gunda_orc_berserker_pl|Gundabadi ork berzerkerek
-trp_ca4_gunda_skirmisher|Gundabadi csatározó
-trp_ca4_gunda_skirmisher_pl|Gundabadi csatározók
-trp_ca5_gunda_clan_skirmisher|Észak klánbeli kobold csatározó
-trp_ca5_gunda_clan_skirmisher_pl|Észak klánbeli kobold csatározók
+trp_ca4_gunda_skirmisher|Gundabadi portyázó
+trp_ca4_gunda_skirmisher_pl|Gundabadi portyázók
+trp_ca5_gunda_clan_skirmisher|Észak klánbeli kobold portyázó
+trp_ca5_gunda_clan_skirmisher_pl|Észak klánbeli kobold portyázók
 trp_c3_gunda_goblin_rider|Gundabadi kobold lovas
 trp_c3_gunda_goblin_rider_pl|Gundabadi kobold lovasság
 trp_c4_gunda_warg_rider|Gundabadi varglovas
@@ -1235,7 +1235,7 @@ trp_barman_camroth_pl|A Fakastély
 trp_barman_thalls|Fogadós
 trp_barman_thalls_pl|a Trónterem
 trp_barman_beorn|Fogadós
-; trp_barman_beorn_pl|Beorn's Hall
+trp_barman_beorn_pl|Beorn Csarnoka
 trp_barman_moria|Fogadós
 trp_barman_moria_pl|a Törzsfő Hálóterme
 trp_barman_dale|Fogadós
@@ -1332,7 +1332,7 @@ trp_merchant_dunland|Dúm rejtett készletek mestere
 trp_merchant_dunland_pl|tábori elrejtett készlet
 trp_merchant_harad|Haradi rejtett készletek mestere
 trp_merchant_harad_pl|tábori elrejtett készlet
-trp_merchant_khand|Khandi rejtett készlekek mestere
+trp_merchant_khand|Khandi rejtett készletek mestere
 trp_merchant_khand_pl|tábori elrejtett készlet
 trp_merchant_umbar|Ellátmányos mester
 trp_merchant_umbar_pl|tábori elrejtett készlet
@@ -1378,7 +1378,7 @@ trp_elder_cairandros|Cair Andros céhmestere
 trp_elder_cairandros_pl|a szigeti Erőd
 trp_elder_edoras|Edoras thainje
 trp_elder_edoras_pl|a város
-trp_elder_aldburg|Aldburg Polgármestere
+trp_elder_aldburg|Öregvár thainje
 trp_elder_aldburg_pl|a kisváros
 trp_elder_hornburg|Kürtvár thainje
 trp_elder_hornburg_pl|az erőd
@@ -1555,7 +1555,7 @@ trp_ring_hunter_three_pl|Gyűrűvadászok
 trp_ring_hunter_four|Gyűrűvadász
 trp_ring_hunter_four_pl|Gyűrűvadászok
 trp_start_quest_uruk|Mordor uruk kapitánya
-trp_start_quest_orc|Mordor orc hadnagya
+trp_start_quest_orc|Mordor ork hadnagya
 trp_start_quest_orc_pl|Mordori hatalmas orkok
 trp_start_quest_woodelf|Galadhrimi királyi mesterlövész
 trp_start_quest_woodelf_pl|Galadhrimi királyi mesterlövészek
@@ -1590,26 +1590,26 @@ trp_werewolf|Vérfarkas
 trp_werewolf_pl|Farkasember
 trp_moria_troll|Barlangi troll
 trp_moria_troll_pl|Barlangi trollok
-; trp_moria_vet_troll|Trained Cave Troll
-; trp_moria_vet_troll_pl|Trained Cave Trolls
-; trp_moria_armored_troll|Armored Cave Troll
-; trp_moria_armored_troll_pl|Armored Cave Trolls
-; trp_gunda_troll|Mountain Troll
-; trp_gunda_troll_pl|Mountain Trolls
-; trp_gunda_vet_troll|Trained Mountain Troll
-; trp_gunda_vet_troll_pl|Trained Mountain Trolls
-; trp_gunda_placeholder|Trained Mountain Troll
-; trp_gunda_placeholder_pl|Trained Mountain Trolls
-; trp_isen_troll|Isengard Troll
-; trp_isen_troll_pl|Isengard Trolls
-; trp_isen_vet_troll|Isengard Trained Troll
-; trp_isen_vet_troll_pl|Isengard Trained Trolls
-; trp_isen_armored_troll|Isengard Armored Troll
-; trp_isen_armored_troll_pl|Isengard Armored Trolls
-; trp_mordor_troll|Mordor Troll
-; trp_mordor_troll_pl|Mordor Trolls
-; trp_mordor_vet_troll|Mordor Trained Troll
-; trp_mordor_vet_troll_pl|Mordor Trained Trolls
+trp_moria_vet_troll|Képzett barlangi troll
+trp_moria_vet_troll_pl|Képzett barlangi trollok
+trp_moria_armored_troll|Páncélozott barlangi troll
+trp_moria_armored_troll_pl|Páncélozott barlangi trollok
+trp_gunda_troll|Hegyi troll
+trp_gunda_troll_pl|Hegyi trollok
+trp_gunda_vet_troll|Képzett hegyi troll
+trp_gunda_vet_troll_pl|Képzett hegyi trollok
+trp_gunda_placeholder|Képzett hegyi troll
+trp_gunda_placeholder_pl|Képzett hegyi trollok
+trp_isen_troll|Vasudvardi troll
+trp_isen_troll_pl|Vasudvardi trollok
+trp_isen_vet_troll|Vasudvardi képzett troll
+trp_isen_vet_troll_pl|Vasudvardi képzett trollok
+trp_isen_armored_troll|Vasudvardi páncélozott troll
+trp_isen_armored_troll_pl|Vasudvardi páncélozott trollok
+trp_mordor_troll|Mordori troll
+trp_mordor_troll_pl|Mordori trollok
+trp_mordor_vet_troll|Mordori képzett troll
+trp_mordor_vet_troll_pl|Mordori képzett trollok
 trp_mordor_olog_hai|Mordori Olog-Hai
 trp_mordor_olog_hai_pl|Mordori Olog-Hai
 trp_troll_placeholder_1|Barlangi troll
@@ -1624,8 +1624,8 @@ trp_troll_placeholder_5|Barlangi troll
 trp_troll_placeholder_5_pl|Barlangi trollok
 trp_troll_placeholder_6|Barlangi troll
 trp_troll_placeholder_6_pl|Barlangi trollok
-trp_wild_troll|Vad Barlangi Troll
-trp_wild_troll_pl|Vad Barlangi Trollok
+trp_wild_troll|Vad barlangi troll
+trp_wild_troll_pl|Vad barlangi trollok
 trp_ent2|Ent
 trp_ent2_pl|Entek
 trp_mountain_goblin|Hegyi kobold

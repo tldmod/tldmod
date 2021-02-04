@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|un ORCO,^ que sirve al Ojo Sin Párpado
 qstr_an_URUK^_the_new_bre|un URUK,^ la nueva raza de Orcos
 qstr_a_MAN^_subjugated_by|un HOMBRE,^ subyugado por Sauron
 qstr_an_ORC^_serving_the_W|un ORCO,^ que sirve a la Mano Blanca
-; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
+qstr_one_of_the_URUK_HAI^|un URUK-HAI,^ criado en Isengard
 qstr_a_MAN_of_Dunland^_th|un HOMBRE de las Tierras Brunas,^ las Llanuras Occidentales
 qstr_Click_the_center_but|Haz clic en el botón central para cambiar de facción^Haz clic en cada avatar para ver sus respectivos detalles
 qstr_Level:_{reg3}^Health|Nivel: {reg3}^Salud: {reg4}
@@ -520,11 +520,11 @@ qstr_Inappropriate_mount|Montura inapropiada
 qstr_{s24}:_Your_infantry|{s24}: ¡Tu infantería se siente mejor!
 qstr_{s24}:_Your_archers_|{s24}: ¡Tus arqueros se sienten mejor!
 qstr_{s24}:_Your_cavalry_|{s24}: ¡Tu caballería se siente mejor!
-; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
+qstr_Ah_what_a_coincidenc|¡Oh, qué casualidad encontrarme contigo, {playername}! Es posible que tú no me conozcas, pero yo a ti sí. Voy de camino a {s4}, pero vengo de las tierras de {s3} y tu nombre ha salido a colación. {s3} cuenta contigo en estos peligrosos tiempos y, si acaso tenías pensado seguir otro curso de acción, es posible que quieras reconsiderarlo y centrarte en ayudar a {s2} en la medida de tus posibilidades.
 qstr_Who_are_you?|¿Quién eres?
 qstr_A_friend_of_{s3}_and|Un amigo de {s3} y de las gentes de {s2}. ¡Ahora, apresúrate! Mordor atrae a todos los seres perversos, y el Poder Oscuro pone toda su voluntad en reunirlos allí. ¡El tiempo se agota para el bien de este mundo, a no ser que hagamos que cada una de nuestras acciones cuente en su defensa!
 qstr_What_should_I_do?|¿Qué debo hacer?
-; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
+qstr_Find_{s3}_s_whereabo|Encuentra a {s3} dondequiera que esté y ponte a sus órdenes. ¡Buena suerte!
 qstr_Good_to_see_the_Shad|Es bueno ver que la Sombra todavía no ha conseguido derrotarte, {playername}.
 qstr_You_are_the_one_they|Tu eres aquel al que llaman Gandalf o Mithrandir.
 qstr_That_is_what_some_ca|Así me llaman algunos. En otros tiempos también tuve otros nombres, pero a menos que la Oscuridad sea detenida, puede que no quede nadie para llamarme de ninguna manera.
@@ -1020,7 +1020,7 @@ qstr_You_have_evaded_the_|Has evitado las patrullas y te acercas sigilosamente a
 qstr_You_have_found_the_s|¡Has encontrado al hechicero!
 qstr_You_cannot_leave_unt|¡No puedes irte hasta que los guardias te pierdan de vista!
 qstr_Kill_him_quickly_bef|¡Mátalo rápidamente antes de que escape!
-qstr_Enraged_by_the_death|{Enfurecido/Enfurecida} por al muerte de {s4}, has hecho un juramento de venganza contra las fuerzas de {s3}. Ahora debes destruir tantas tropas de {s3} como te sea posible en los próximos días. Eres plenamente consciente de que tus seguidores han sido testigos de este juramento y no deseas que se te considere {un perjuro/una perjura}. ¡Que comience el baño de sangre y muerte! 
+qstr_Enraged_by_the_death|{Enfurecido/Enfurecida} por la muerte de {s4}, has pronunciado un juramento de venganza contra las fuerzas de {s3}. Ahora debes destruir tantas tropas de {s3} como te sea posible en los próximos días. Eres plenamente consciente de que tus seguidores han sido testigos de este juramento y no deseas que se te considere {un perjuro/una perjura}. ¡Que comience el baño de sangre y muerte! 
 qstr_flooded._Somebody_or|inundada. Alguien o algo debe haber destruido los diques del Isen.
 qstr_destroyed._Only_smol|destruida. Solo quedan ruinas y rescoldos humeantes.
 qstr_^^^You_lost_your_fig|^^^¡Has perdido la pelea contra el amotinado!^Parece que ahora tus orcos tienen un nuevo capitán.
@@ -1032,7 +1032,7 @@ qstr_You_are_entering_{s1|Estás entrando en {s1} ({s2}).
 qstr_You_are_entering_{s1}|Estás entrando en {s1}.
 qstr_The_war_expands_comm|¡La guerra se recrudece, y los capitanes cada vez son más audaces! (Reducidos los requisitos de asedio)
 qstr_Your_party_is_spotte|Tu grupo ha sido divisado por {s1}.
-qstr_Party_has_nothing_to|¡Tu grupo no tiene nada para comer!
+qstr_Party_has_nothing_to|¡Tu grupo no tiene nada que comer!
 qstr_You_pay_for_accommod|Pagas por el alojamiento.
 qstr_The_troll_outside_{s|Alguien ha matado al troll en las afueras de {s2}. Misión cancelada.
 qstr_{s1}_was_killed_on_t|{s1} ha muerto en el campo de batalla. Misión cancelada.
@@ -1063,7 +1063,7 @@ qstr_{s5}_has_stopped_fol|{s5} ha dejado de seguirte.
 qstr_You_have_{reg69}_all|Tienes {reg69} grupo aliado siguiéndote
 qstr_You_have_{reg69}_ally|Tienes {reg69} grupos aliados siguiéndote
 qstr_The_forces_of_{s2}_h|¡Las fuerzas de {s2} se han reagrupado y marchan hacia {s15}!
-; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
+qstr_Your_scouts_report_s|Tus exploradores te informan de que hay {s2} en las cercanías.
 qstr_{s1}_from_{s2}|{s1} de {s2}
 qstr_When_dealing_with_lo|Cuando trates con la gente de {s11}, recuerda que no te conocen y que no tienen por qué reconocer los méritos que has conseguido al servicio de {s10}.^^(los Puntos de Recursos de los que dispones con la gente de {s11} no son los mismos que con {s10}, sino los que ganes con {s11}; echa un vistazo al menú de informes)
 qstr_Info|Información
@@ -1091,14 +1091,14 @@ qstr_{s27}:_Party_morale_|{s27}: La moral del grupo aumenta.
 qstr_{s27}:_Party_morale_d|{s27}: La moral del grupo baja.
 qstr_You_have_failed_to_f|¡No has cumplido con tu juramento de vengar a Balin y su compañía!
 qstr_You_have_failed_to_fu|¡No has cumplido con tu juramento de venganza por la heroica muerte de {s1}!
-; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
+qstr_Your_troops_value_yo|Tus tropas aprecian tu dedicación y esfuerzo por cumplir el juramento, pero son conscientes de lo rápìdo que se han precipitado los acontecimientos. Y por ende, 
 qstr_{s22}You_have_fulfil|{s22}Has cumplido con tu juramento de vengar a Balin y su compañía!
 qstr_{s22}You_have_fulfill|{s22}Has cumplido con tu juramento de venganza por la heroica muerte de {s1}!
 qstr_Reinforcements|Refuerzos
 qstr_Refugees_Escaped:_{r|Refugiadoses huidos: {reg10} --- Refugiados muertos: {reg11}
 qstr_Raider_Parties_Kille|Grupos de Incursores eliminados: {reg12}
-qstr_One_of_the_target_ce|Uno de los lugares de destino de la carbvana de refugiados ha sido destruido. Los refugiados se han dispersado, y no hay forma de encontrarlos.
-qstr_As_an_Orc_or_a_Dwarf|Al ser un orco o enano puedes beneficiarte de la nueva cámara personalizada que hemos añadido a TLD para mejorar la experiencia de las razas más bajitas. Ver «Conceptos» para más información sobre cómo usarla.
+qstr_One_of_the_target_ce|Uno de los lugares de destino de la caravana de refugiados ha sido destruido. Los refugiados se han dispersado, y no hay forma de encontrarlos.
+qstr_As_an_Orc_or_a_Dwarf|Al ser un orco o enano puedes beneficiarte de la nueva cámara personalizada que hemos añadido a TLD para mejorar la experiencia de las razas de menor estatura. Ver «Conceptos» para más información sobre cómo usarla.
 qstr_Custom_Camera|Cámara personalizada
 qstr_{reg65?my_Lady:my_Lo|{reg65?mi Señora:mi Señor}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Mi Señora:Mi Señor}

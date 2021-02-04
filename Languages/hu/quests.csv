@@ -1,20 +1,20 @@
-qst_deliver_message|Adj át üzenetet {s13}-nak
-qst_deliver_message_text|{s9} megkért rá hogy vidd el az üzenet {s13}-nak/nek. {s13} {s4}-ban/ben volt amikor kaptad ezt a küldetést.
-qst_deliver_message_to_enemy_lord|Adj át üzenetet {s13}-nak
-qst_deliver_message_to_enemy_lord_text|{s9} megkért rá hogy vidd el az üzenetet {s15}i {s13}-nak/nek. {s13} {s4}-ban/ben volt amikor kaptad ezt a küldetést.
+qst_deliver_message|Adj át üzenetet {s13} kezeibe.
+qst_deliver_message_text|{s9} megkért rá hogy vidd el az üzenet {s13} kezeibe. {s13} {s4} városában volt amikor kaptad ezt a küldetést.
+qst_deliver_message_to_enemy_lord|Adj át üzenetet {s13} kezeibe
+qst_deliver_message_to_enemy_lord_text|{s9} megkért rá hogy vidd el az üzenetet {s15}i {s13} kezeibe. {s13} {s4} városában volt amikor kaptad ezt a küldetést.
 qst_raise_troops|Képezz ki {reg1} {s14}t
 qst_raise_troops_text|{s9} megkért hogy képezz ki {reg1} {s14}t és vidd el {neki}.
-qst_escort_messenger|Kísérd el a hírnököt {s14}-ba/be
+qst_escort_messenger|Kísérd el a hírnököt {s14} városába
 qst_escort_messenger_text|Semmi
 qst_hunt_down_fugitive|Vadászd le {s4}t
-qst_hunt_down_fugitive_text|{s9} megkért hogy vadászd le a {s4} nevű szökevényt. Úgy tudják jelenleg {s3}-ban/ben található.
+qst_hunt_down_fugitive_text|{s9} megkért hogy vadászd le a {s4} nevű szökevényt. Úgy tudják jelenleg {s3} városában található.
 qst_bring_back_runaway_serfs|Vidd vissza a szökött parasztokat
-qst_bring_back_runaway_serfs_text|{s9} megkért hogy rángass vissza három csoportnyi menekülő rabszolgát {s2}-ba/be. Azt mondta mind a három {s3} irányába szaladt.
+qst_bring_back_runaway_serfs_text|{s9} megkért hogy rángass vissza három csoportnyi menekülő rabszolgát {s2} városába. Azt mondta mind a három {s3} irányába szaladt.
 qst_follow_spy|Kövesd a kémet a találkozóra
-qst_follow_spy_text|{s11} megkért hogy kövesd a kémet aki majd elhagyja {s12}t. Óvatosnak kell lenned nehogy észrevegyen a kém utazás közben, vagy különben gyanút fog és visszafordul. Amikor a kém találkozik a bűntársával, rajtuk kell ütnöd és foglyul ejteni őket és vidd vissza {s11}-nak/nek.
+qst_follow_spy_text|{s11} megkért hogy kövesd a kémet aki majd elhagyja {s12} városát. Óvatosnak kell lenned nehogy észrevegyen a kém utazás közben, vagy különben gyanút fog és visszafordul. Amikor a kém találkozik a bűntársával, rajtuk kell ütnöd és foglyul ejteni őket és vidd vissza {s11} parancsnoknak.
 qst_capture_enemy_hero|Fogj el egy ellenséges vezért
 qst_capture_enemy_hero_text|{s11} megkért hogy ejts foglyul egy ellenséged parancsnokot.
-qst_lend_companion|Add kölcsönbe {s3} bajtársadat {s9}-nak/nek
+qst_lend_companion|Add kölcsönbe {s3} bajtársadat {s9} parancsnoknak
 qst_lend_companion_text|{s9} megkért hogy add neki kölcsön az egyik bajtársadat, {s3}t egy hét erejéig.
 qst_capture_prisoners|Fogj el {reg1} ellenséges foglyot
 qst_capture_prisoners_text|{s9} megkért hogy szerezz neki {reg1} ellenséges foglyot.
@@ -39,33 +39,33 @@ qst_dispatch_scouts|Küldj ki egy felderítő csapatot
 qst_dispatch_scouts_text|{s9} megkért hogy küldj ki egy felderítő csapatot {s13} közelében.
 qst_eliminate_patrols|Iktass ki {reg1} ellenséges csapatot
 qst_eliminate_patrols_text|{s9} megkért hogy iktass ki {reg1} {s13} ellenséges csapatot.
-qst_lend_surgeon|Add kölcsön {s3}, a seborvosodat {s1}-nek/nek
-qst_lend_surgeon_text|Add kölcsön {s3}, a tapasztalt seborvosodat {s1}-nak/nek.
+qst_lend_surgeon|Add kölcsön {s3} seborvosodat {s1} parancsnoknak
+qst_lend_surgeon_text|Add kölcsön {s3} tapasztalt seborvosodat {s1} parancsnoknak.
 qst_follow_army|Kövesd {s9} seregét
 qst_follow_army_text|Semmi
-qst_report_to_army|Jelents {s13}-nak/nek
+qst_report_to_army|Jelents {s13} parancsnoknak
 qst_report_to_army_text|Semmi
-qst_deliver_cattle_to_army|Szállíts le {reg3} adagnyi ételt {s13}-nak/nek
+qst_deliver_cattle_to_army|Szállíts le {reg3} adagnyi ételt {s13} szövetségesnek
 qst_deliver_cattle_to_army_text|Semmi
 qst_join_siege_with_army|Csatlakozz {s14} ostromához
 qst_join_siege_with_army_text|Semmi
 qst_scout_waypoints|Derítsd fel {s13}, {s14} és {s15} helyzetét
 qst_scout_waypoints_text|Semmi
-qst_move_cattle_herd|Vidd a {s12} {s13}-hoz/höz
-qst_move_cattle_herd_text|{s10} elöljárója megkért hogy szállíts át némi {s12} {s13}-hoz/höz.
-qst_escort_merchant_caravan|Kísérd el a szállítmányos konvojt {s8}-ba/be
-qst_escort_merchant_caravan_text|Kísérd el a szállítmányos konvojt {s8}-ba/be és szólítsd meg őket amikor már közelben jártok.
-qst_deliver_wine|Szállíts {reg5} adagot {s4}i {s6}-nak/nek
-qst_deliver_wine_text|A {s3}i {s9} megkért hogy szállíts {reg5} adagnyi {s6}-t {s4}-ba/be 7 napon belül.
+qst_move_cattle_herd|Vidd a {s12} tárgyat {s13} parancsnokhoz
+qst_move_cattle_herd_text|{s10} elöljárója megkért hogy szállíts át némi {s12} tárgyat {s13} szövetségeshez.
+qst_escort_merchant_caravan|Kísérd el a szállítmányos konvojt {s8} településbe
+qst_escort_merchant_caravan_text|Kísérd el a szállítmányos konvojt {s8} településbe és szólítsd meg őket amikor már közelben jártok.
+qst_deliver_wine|Szállíts {reg5} adagot {s4}i {s6} szövetségesnek
+qst_deliver_wine_text|A {s3}i {s9} megkért hogy szállíts {reg5} adagnyi {s6} tárgyat {s4} településre 7 napon belül.
 qst_troublesome_bandits|Vadászd le a problémás koboldokat
 qst_troublesome_bandits_text|A {s4}i {s9} megkért rá hogy vadászd le a problémás koboldokat, akik a város környékén garázdálkodnak.
 qst_deal_with_looters|Bánj el a törzsi orkokkal
 qst_deal_with_looters_text|{s4} elöljárója megkért hogy bánj el {s4} környékén garázdálkodó törzsi orkok csapataival.
 qst_deal_with_night_bandits|Bánj el a kobold zsiványokkal
-qst_deal_with_night_bandits_text|{s14} elöljárója megkért hogy bánj el {s14}-ban/ben éjjel garázdálkodó koboldokkal.
-qst_deliver_food|Szállíts {s3} {reg5}-val/vel egységnyi ételt
+qst_deal_with_night_bandits_text|{s14} elöljárója megkért hogy bánj el {s14} településén az éjjel garázdálkodó koboldokkal.
+qst_deliver_food|Szállíts {s3} településébe {reg5} egységnyi ételt
 qst_deliver_food_text|{s3}i {s9} megkért rá hogy hozz neki {reg5} adagnyi ételt 10 napon belül.
-qst_deliver_iron|Szállíts {s3} {reg5}-val/vel adagnyi {s6}t
+qst_deliver_iron|Szállíts {s3} településébe {reg5} adagnyi {s6} tárgyat
 qst_deliver_iron_text|{s3}i {s9} megkért hogy vigyél neki {reg5} adagnyi {s6}t.
 qst_tld_introduction|Menj a frakció vezetődhöz.
 qst_tld_introduction_text|Semmi
@@ -73,8 +73,8 @@ qst_treebeard_kill_orcs|Győzd le a favágó orkok csapatát
 qst_treebeard_kill_orcs_text|Szilszakáll azt akarja hogy találd meg és győzd  le az orkokat, akik fákat vágnak ki a Fangorn-erdőben.
 qst_oath_of_vengeance|Bosszúeskü
 qst_oath_of_vengeance_text|Feldühödve {s1} halálán, bosszút esküszöl {s2} hadai ellen. {s2} seregeiből annyit kell elpusztítanod, amennyi csak lehetséges az elkövetkező napokban. Tisztában vagy vele, hogy követőid tanúi voltak a bosszúesküdnek, és nem szándékozol úgy elhíresülni, mint egy eskütörő. Egy vértontó tivornyának kell ezennel elkezdődnie!
-qst_deliver_gift|Szállíts le egy {s1}i {s4}-ot/et {s2}-ból/ből {s3}-ba/be
-qst_deliver_gift_text|Meglettél rá kérve, hogy szállíts le egy {s1}i {s4}-at/et {s2}i {s3}-nak/nek.
+qst_deliver_gift|Szállíts le egy {s1}i {s4} tárgyat {s2} városából {s3} településére
+qst_deliver_gift_text|Meglettél rá kérve, hogy szállíts le egy {s1}i {s4} tárgyat {s2}i {s3} szövetségesnek.
 qst_ring_hunters|Gyűrűvadászok
 qst_ring_hunters2|Gyűrűvadászok - Teljesítve
 qst_deliver_message_hobbit|Aggódó hobbitok
@@ -83,7 +83,7 @@ qst_blank_quest_02|Vadász le a menekülteket
 qst_blank_quest_03|Tengeri csata
 qst_blank_quest_04|Ölj meg {s35} {s6} nevű ellenfelet {s7} frakciójából
 qst_blank_quest_05|Ölj meg {s35} {s36} egységet.
-; qst_blank_quest_06|Defeat {s35} in battle.
+qst_blank_quest_06|Győzd le {s35} seregét csatában.
 
 
 

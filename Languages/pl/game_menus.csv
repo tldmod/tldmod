@@ -103,7 +103,7 @@ mno_start_cliff|Na zboczach góry GUNDABAD
 menu_start_gondor_mt|^^^^^^^^^^Wybierz rodowód
 mno_start_1_com|Robotnik.
 mno_start_2_hib|Wysoko urodzony
-; menu_start_haradrim|^^^^^^^You are one of the Haradrim,^a Man of the Desert.^Select your line
+menu_start_haradrim|^^^^^^^Jesteś Haradrimem,^człowiekiem Pustyni.^Wybierz swoją linie
 mno_start_1_des|Pustyni, jesteś nomadem
 mno_start_2_far|Dalekiego Haradu, jesteś plemieńcem
 menu_start_numenorean|Jesteś Czarnym Númenorejczykiem,^ wiernym Ciemności i Morgothowi.^Wybierz gdzie będziesz służyć Oku.
@@ -435,14 +435,14 @@ menu_animal_ambush|Ty i twoi kompani oddzieliliście się od reszty drużyny, ki
 menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy przeciwnicy leżą na ziemi - ranni, lub martwi. {s3}
 menu_animal_ambush_fail|Zwierzęta zaatakowały ciebie {reg0?,: i twojego kompana {reg2?s,:,}} ale na szczęście udało ci się je odgonić. Miejmy nadzieję że nie zaatakują cie ponownie.
 menu_build_your_scene|Możesz zrobić swoją własną scenę bitwy, używając jednego ze slotów udzielonych poniżej oraz trybu edycji gry (musisz włączyć tryb edycji w oknie włączania gry. Najpierw przejdź do opcji, potem wciśnij Ctrl+E wewnątrz sceny żeby mieć dostęp do trybu edycji). Możesz oddawać sceny które stworzyłeś (mianowicie, pliki sco z folderu TLD/SceneObj) do teamu deweloperskiego moda TLD, a jeśli twoja scena jest dobra, może pojawić się w przyszłych update'ach jako jedna w battlegroundsach^^ Spróbuj sprecyzować na którym regionie mapy chciałbyś aby twoja scena się pojawiła.^ Kilka podpowiedzi: unikaj głębokiej wody, stromych gór i innych nieprzekraczalnych miejsc, chyba że jesteś doświadczonym twórcą scenek i wiesz jak powstrzymać jednostki kontrolowane przez AI od pójścia tam gdzie ich nie chcesz, i stworzyć poprawkę do AI w innych miejscach.^\n(Wejścia #0-1 są dla atakujących, #4 dla broniących, nie używaj #5-8
-; mno_scene1|Plain Big (file scn custom 1.sco)
-; mno_scene2|Plain Med (file scn custom 2.sco)
-; mno_scene3|Plain Small (file scn custom 3.sco)
+mno_scene1|Równina Duża
+mno_scene2|Równina Średnia
+mno_scene3|Równina Mała
 mno_scene4|Step Duży
 mno_scene5|Step Średni
 mno_scene6|Step Mały
-; mno_scene7|Forest Big (file scn custom 7.sco)
-; mno_scene8|Forest Med (file scn custom 8.sco)
+mno_scene7|Las Duży
+mno_scene8|Las Średni
 mno_scene9|Las Mały
 mno_back_3dot|Wróć...
 mno_back|Wróć.

@@ -72,7 +72,7 @@ qstr_an_ORC^_serving_the_|ORK,^ służący Ognistemu Oku
 qstr_an_URUK^_the_new_bre|URUK,^ nowa rasa Orków
 qstr_a_MAN^_subjugated_by|Ludzie, ^ podlegli Sauronowi
 qstr_an_ORC^_serving_the_W|ORC,^ słudzy Białej Ręki
-; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
+qstr_one_of_the_URUK_HAI^|Jeden z URUK-HAI, urodzony w Isengardzie
 qstr_a_MAN_of_Dunland^_th|człowiek z Dunlandu,^ Zachodnie Równiny
 qstr_Click_the_center_but|Wciśnij środkowy przycisk żeby przełączać frakcje^Wciśnij awatar, żeby odkryć szczegóły
 qstr_Level:_{reg3}^Health|Poziom: {reg3}^Zdrowie: {reg4}
@@ -520,7 +520,7 @@ qstr_Inappropriate_mount|Niewłaściwy wierzchowiec
 qstr_{s24}:_Your_infantry|{s24}: Twoja piechota czuje się lepiej!
 qstr_{s24}:_Your_archers_|{s24}: Twoi łucznicy czują się lepiej!
 qstr_{s24}:_Your_cavalry_|{s24}: Twoja kawaleria czuje się lepiej!
-; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
+qstr_Ah_what_a_coincidenc|Ah, cóż za przypadek, że wpadłem na ciebie {playername}! Możesz mnie nie znać, ale ty nie jesteś mi obcy. Podróżuję do {s4} , ale wracam z {s3} gdzie usłyszałem o tobie. {s3} liczy na ciebie w tych trudnych czasach, dlatego powinieneś wspomagać  {s3} tak jak tylko jest to możliwe, a inne zajęcia powinieneś wykonać później.
 qstr_Who_are_you?|Kim jesteś?
 qstr_A_friend_of_{s3}_and|Przyjacielem {s3} i ludzi {s2}. Teraz śpiesz się! Mordor przyciąga zło, a Siły Ciemności zrobią wszystko by je tu zebrać. Czas ucieka, musimy zrobić wszystko co w naszej mocy by powstrzymać ciemność!
 qstr_What_should_I_do?|Co powin{ienem/nam} zrobić?
@@ -1273,7 +1273,7 @@ qstr_Give_me_that!_Hrmph!|Daj mi to! Hrmph! Dobrze, że mi to przyniosł{e/a}ś,
 qstr_What?_Let_me_see_tha|Co? Niech to obejrzę... Hmmm. Dobrze, że mi to przyniosł{e/a}ś, {playername}. A teraz odejdź.
 qstr_Give_me_that!_Hrmph!_|Daj mi to! Hrmph! Jesteś dobrym sługą dla swego pana, {playername}, ale niedługo wszyscy będziecie martwi. Nie teraz oczywiście, więc przestań uciekać.
 qstr_My_king|Mój król
-; qstr_Lord|Lord
+qstr_Lord|Panie
 qstr_my_king|mój król
 qstr_lord|Lord
 qstr_our|nasz

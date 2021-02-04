@@ -4,7 +4,7 @@ dlga_mutiny_pretalk_2:close_window|A tus órdenes, capitán. A tus órdenes...
 dlga_start:mutiny_talk_1|Oye, capitán. Deja que te diga una cosa... ^¡Los muchachos no están nada contentos! Quieren más diversión, más carne humana.^No hablan bien de ti a tus espaldas, capitán.
 dlga_mutiny_talk_1:mutiny_talk_2|¿Qué? ¿Un motín en plena guerra? ^¡Esto se castiga con la muerte, gusano!
 dlga_mutiny_talk_2:close_window|Deja que te diga que... ^Los muchachos piensan que yo sería mejor capitán que tú... ¡CUANDO ACABE CONTIGO!
-dlga_start:troll_introduce_1|Ola k ase
+dlga_start:troll_introduce_1|Ola k ase.
 dlga_start:troll_talk_1|¿'Tás loco?
 dlga_troll_introduce_1:troll_goodbye|¡Vaya! ¡¿Un troll que habla?!
 dlga_troll_introduce_1:close_window|Ahí te quedas.
@@ -15,8 +15,8 @@ dlga_troll_beaten:troll_talk_1|Me inclino ante tu sabiduría, ¡Oh, gran Trolead
 dlga_troll_goodbye:close_window|¡TROLOLOLOLOLOLOLOLOLOLÓ!
 dlga_start:hobbit_merry_talk_met|¡Hola de nuevo, {playername}!
 dlga_start:hobbit_pippin_talk_met|¡Hola de nuevo, {playername}!
-dlga_start:hobbit_general_talk_1|¡Saludos, {señor/señora}! ¡Soy Meriadoc Brandigamo pero puedes llamame Merry!
-dlga_start:hobbit_general_talk_1.1|¡Saludos, {señor/señora}! ¡Soy Peregrin Tuk pero puedes llamarme Pippin!
+dlga_start:hobbit_general_talk_1|¡Saludos, {señor/señora}! ¡Soy Meriadoc Brandigamo, pero puedes llamame Merry!
+dlga_start:hobbit_general_talk_1.1|¡Saludos, {señor/señora}! ¡Soy Peregrin Tuk, pero puedes llamarme Pippin!
 dlga_hobbit_general_talk_1:close_window|No tengo tiempo para ésto.
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Ahora que lo pienso, creo que nunca había visto a nadie como tú.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Vaya, creo que me he encontrado con otro como tú en Edoras.
@@ -24,11 +24,11 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Vaya, creo que me he
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Lo sé. ¡Vengo de lejos! Soy un Hobbit, {señor/señora}, de la Comarca.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|¡Ah, ese otro debe de haber sido mi querido primo Peregrin Tuk, o Pippin, como suelen llamarlo! Somos Hobbits, {señor/señora}, y venimos de la Comarca. Ay, el bueno de Pippin... me pregunto qué tal le estarán yendo las cosas en Minas Tirith.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|¡Ah, ese otro debe de haber sido mi querido primo Meriadoc Brandigamo, o Merry, como suelen llamarlo! Somos Hobbits, {señor/señora}, y venimos de la Comarca. Ay, el bueno de Merry... me pregunto qué tal le estarán yendo las cosas en Edoras.
-dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|¿Puedo pedrite un favor, mi {señor/señora}?
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|¿Puedo pedirte un favor, mi {señor/señora}?
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Por supuesto, {s1}. ¿De qué se trata?
 dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|¿Podrías llevarle un mensaje a mi primo, {s1}? Está en {s2}, en {s3}, al servicio de {s4}.
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Pasaré por {s1} y será un placer entregar este mensaje a tu primo.
-dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Lo isento, {s1}, pero no tengo tiempo.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Lo siento, {s1}, pero no tengo tiempo.
 dlga_hobbit_general_talk_ask_accept:close_window|¡Gracias! {s1}
 dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Lo entiendo. Lo mandaré con la próxima caravana que se dirija a {s1}.
 dlga_hobbit_general_talk_3:close_window|Bueno, hasta luego.
@@ -319,16 +319,16 @@ dlga_lord_talk:lord_active_mission_1|Sobre la tarea que me habías asignado...
 dlga_lord_talk:lord_request_mission_ask|¿Tienes alguna tarea para mí?
 dlga_lord_talk:dwarf_lord_book|{s3}, hay un asunto sobre el que debo hablarte.
 dlga_dwarf_lord_book:dwarf_lord_book_give|Puedes hablar libremente, {playername}.
-dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|Me aventuré en las profundidades de las Minas de Moria y encontré noticias de la compañía de Balin.
+dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|Me aventuré en las profundidades de las Minas de Moria y hallé los diarios de la compañía de Balin.
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|Hablas de mis parientes como si no fueran nada más que un recuerdo. ¿Es así?
-dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|Me temo que sí. Habría seguido buscando pero los trasgos me atacaron en grandes números. Solo he traido esto...
+dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|Me temo que sí. Habría seguido buscando de no haber sido atacado por una manada de trasgos. Solo he traído esto...
 dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|«No podemos salir. No podemos salir... Ya vienen»
-dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|Es como me temía entonces. Aconsejé a Balin en contra de esta expedición, pero estaba decidido. Fui un necio por darle permiso para partir.
+dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|Es justo lo que me temía; aconsejé a Balin oponiéndome diametralmente a esta expedición, pero era una decisión tomada. Dejarle partir fue una necedad.
 dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|Has prestado un gran servicio a Erebor, {playername}, y tu hazaña no quedará sin recompensa.
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Gracias, {s3}.
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|¿Qué haréis ahora?
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|No dejaremos sin respuesta el asesinato de nuestros parientes. Llevaremos la ruina y la muerte a aquellos que nos han hecho tanto mal. De los picos del Monte Gundabad a los pozos más profundos de Khazad-dûm, las Montañas Nubladas se teñirán de negro con la sangre de los trasgos.
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, deseo ayudar a {s4} pueblo a vengar a Balin y a su compñía.
+dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, mi intención es ayudar a que las gentes de {s4} y así vengar la caída de Balin y su compañía.
 dlga_dwarf_lord_book_give_i:lord_pretalk|Os deseo buena suerte.
 dlga_dwarf_lord_avenge:close_window|Muy bien, {playername}. Ve con las bendiciones del pueblo de Durin y lleva la muerte a nuestros enemigos. Haz que conozcan el dolor y el miedo como nuestro pueblo los ha conocido.
 dlga_lord_talk:find_lost_spears_permission|Mi señor, deseo entrar en la Montañas Solitaria, en búsqueda de las lanzas perdidas del Rey Bladorthin.
@@ -356,7 +356,7 @@ dlga_lord_talk:ring_hunters_start|Estoy {preparado/preparada} para embarcarme en
 dlga_ring_hunters_start:ring_hunters_check|{playername}, has realizado grandes hazañas y has probado que estás a la altura de la tarea que te voy a encomendar. Confío en que resuelvas este asunto según tu criterio, pero debes saber que nuestro enemigo es peligroso y el derramamiento de sangre será inevitable. ¿Es tu compañía lo bastante fuerte para entrar en batalla?
 dlga_ring_hunters_check:ring_hunters_1|Así es, mi señor. Cuento con un grupo de soldados aguerridos. Podemos con todo.
 dlga_ring_hunters_check:ring_hunters_check_failed|Me temo que no, mi señor.
-dlga_ring_hunters_check_failed:lord_pretalk|Entonces todavía no estás {preparado/preparada} para esta atrea, {playername}. Ve y reúne más tropas.
+dlga_ring_hunters_check_failed:lord_pretalk|Entonces todavía no estás {preparado/preparada} para esta tarea, {playername}. Ve y reúne más tropas.
 dlga_ring_hunters_1:ring_hunters_2|Excelente. El Norte se ha visto recientemente asolado por una banda de forajidos, que asaltan aldeas y tienden emboscada a los viajeros, siempre buscando anillos de todo tipo. Debes dar caza a estos bandidos y poner fin a su búsqueda. Los supervivientes de su último acto de pillaje han hablado de dos grupos. El primero se dirige de vuelta a su campamento en las lindes del Bosque Negro con el botín. El otro, mayor en número, avanza hacia la Casa de Beorn, y temo lo que pueda pasar si se les deja llegar allí sin oposición.
 dlga_ring_hunters_2:ring_hunters_what|¿Qué es lo que podrían estar buscando, mi señor?
 dlga_ring_hunters_2:ring_hunters_accept|Haré lo necesario para detener a estos... «Caza-anillos».
@@ -384,7 +384,7 @@ dlga_start:beorn_message|¡Mi {señor/señora}, habíamos recibido un aviso de {
 dlga_beorn_message:beorn_message2|No era una banda de forajidos corrientes. Eran los peores de entre los sirvientes del Señor Oscuro, al menos aquí en el Norte. Sin embargo sus líderes no estaban aquí. Su guarida está cerca del Bosque Negro y debo darme prisa en llegar.
 dlga_beorn_message2:beorn_message_end|Sí, también nos advirtieron acerca del campamento y mandamos algunos exploradores en esa dirección. Vimos cómo lo quemaban todo y emprendían camino hacia Mordor a marchas forzadas. Si hubieras decidido ir allí primero, tal vez no habrías llegado a tiempo de ayudarnos. ¡Te estamos muy agradecidos por tu victoria!
 dlga_beorn_message_end:beorn_message_close|Debo volver a informar a {s1} de esta batalla. Volved a vuestra aldea y desplegad batidores. Puede que queden algunos rezagados.
-dlga_beorn_message_close:close_window|Sí, capitán. Nos mantendremos viigilantes y mandaremos venir a más hombres de los caseríos más remotos. Tu victoria hoy aquí nos ha inspirado  a todos.
+dlga_beorn_message_close:close_window|Sí, capitán. Nos mantendremos vigilantes y mandaremos venir a más hombres de los caseríos más remotos. Tu victoria de hoy nos ha inspirado a todos.
 dlga_lord_give_troops:lord_give_troops_check|¿Reforzar mi tropa? Nunca está de más disponer de unos soldados más.
 dlga_lord_give_troops:lord_pretalk|Por desgracia no dispones de ningún soldado de {s14} con los que reforzarnos.
 dlga_lord_give_troops_check:lord_give_troops_check_1|Déjame comprobar el listado de mis tropas...
@@ -555,7 +555,7 @@ dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|¿Donde p
 dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Búscalo en el Bosque Negro, no lejos de Dol Guldur. Se trata de un enemigo bien protegido y cauteloso, así que necesitarás de tu sigilo para evitar alertarlo de tu presencia. Si escapa, se asentará en otros rincones oscuros de los que no sabemos nada y continuará con sus prácticas malvadas sin oposición alguna. Sólo contamos con una oportunidad de vencerlo. Mucho es lo que depende de tu éxito. Ve con nuestras bendiciones.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Como ordenes, mi Señora. Haré todo lo posible para acabar con este mal.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Perdóname, mi Señora. Pero tengo otras cuestiones que atender antes de poder ayudar a tu gente en esta empresa.
-dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Es comprensible, {playername}. Pero no tardes demasiado, el esfuerzo de resisitr a su magia maligna está agotando mis fuerzas.
+dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Es comprensible, {playername}. Pero no tardes demasiado, el esfuerzo de resistir a su magia maligna está agotando mis fuerzas.
 dlga_lord_tell_mission:lord_mission_deliver_message|Necesito enviar un mensaje a {s13}, ahora mismo se encuentra en {s4}. Si vas a ir en esa dirección, ¿le entregarías ésta carta de mi parte? La carta necesita estar en sus manos antes de 30 días.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Por supuesto, tengo pensado pasar cerca de {s4} y no me supondría ningún problema.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|Dudo que pueda llegar a encontrarme con {s13} en un futuro próximo, {s65}. Sería mejor que encontraras a otro mensajero.
@@ -567,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|Tengo un amigo aquí, un viejo guerre
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|¿De cuantos soldados estamos hablando?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Si pudieras entrenar a {reg1} {s14} y traérmelos aquí, seguramente serían suficientes.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Por supuesto, {s65}. Envíame {reg1} nuevos reclutas y los entrenaré para ser {s14}.
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
-; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Sugiero un método diferente, {s65}. Llevaré a {reg1} reclutas novatos al campo de entrenamiento y les enseñaré un par de cosas...
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Sugiero un método diferente, {s65}....Llevaré a {reg1} reclutas novatos al campo de entrenamiento y les enseñaré un par de cosas. No saldrán de allí convertidos en {s14} pero por algo se empieza.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Ando demasiado ocupado últimamente para poder entrenar a nadie.
 dlga_lord_mission_raise_troops_accepted:close_window|Me has quitado un peso de encima, {playername}. Mis sargentos te enviarán a los reclutas para que se pongan a tus órdenes de inmediato. Además, te adelantaré algún dinero para cubrir los gastos. Aquí tienes, con esta bolsa debería de ser suficiente. Gracias por tu ayuda.
-; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
+dlga_lord_mission_raise_troops_alternate:close_window|Es una propuesta interesante, {playername}. Ordenaré a mis sargentos que manden a los reclutas al campo de entrenamiento. Reúnete con ellos allí, y mételos en cintura. Os estaré observando. Gracias por tu ayuda.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, por supuesto. Me lo esperaba. Bueno, pues que tengas buena suerte en tus asuntos.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Se me ocurre un asunto con el que podrías ayudarme, un problema relacionado con el criminal conocido como {s4}. Asesinó a uno de mis guardaespaldas y ha estado fugado desde entonces. Tenemos noticias de que este fugitivo ha sido visto por última vez en {s3}. Quizás puedas encontrarlo y hacer justicia, y si lo consigues, te recompensaré.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Entonces lo encontraré y lo ajusticiaré.
@@ -1060,9 +1060,9 @@ dlga_start:close_window.29|¡Me estás demorando! ¡Un mago nunca llega tarde!
 dlga_start:close_window.30|Nosss... llaamaaaaa...
 dlga_start:close_window.31|¡Eh, tú! ¿Has sobrevivido? ¡Bien! ¡Pero no puedes ir por ahí solo ocn un palo! ¡Toma esto!
 dlga_start:ori_choose_1|¡Luchas bien, primo! No sé cómo te las has apañado para sobrevivir hasta ahora. Recuerdo que te uniste a nosotros hace poco, antes de todo esto... antes de que Balin cayera... ¿De dónde eres?
-dlga_ori_choose_1:ori_choose_finish|Soy un rastreador. Me mandaron a los bosques, cerca de donde viven los hombres-oso. Hace poco oí hablar de la compañía de Balin y decidí unirme.
-dlga_ori_choose_1:ori_choose_finish.1|Soy un primo lejano, un guardaespaldas veterano de una mina distante.Oí noticias de Balin y decidí unirme.
-dlga_ori_choose_1:ori_choose_finish.2|Vengo de las Colinas de Hierro, soy veteranos de las guerras, y minero en tiempos de paz. Oí noticias de Balin y decidí unirme, con la esperanza de matar orcos.
+dlga_ori_choose_1:ori_choose_finish|Soy un rastreador. Me mandaron a los bosques, cerca de donde viven los hombres oso. Hace poco oí hablar de la compañía de Balin y decidí unirme.
+dlga_ori_choose_1:ori_choose_finish.1|Soy un primo lejano, un guardaespaldas veterano de una mina distante. Oí noticias de Balin y decidí unirme.
+dlga_ori_choose_1:ori_choose_finish.2|Vengo de las Colinas de Hierro; veterano de varias guerras, y minero en tiempos de paz. Oí noticias de Balin y decidí unirme a la causa, con la esperanza de matar unos cuantos orcos.
 dlga_ori_choose_finish:close_window|¡Bueno es saberlo! He encontrado estas armas, deberían ser apropiadas para ti. ¡Nos haremos fuertes aquí y nos llevaremos por delante a tantos como podamos!
 dlga_start:close_window.32|Parece que tus habilidades no están tan oxidadas como creía, ¿eh? Toma un trago de esto, te hará sentir mejor. ¡Vienen más orcos!
 dlga_start:close_window.33|Quítate esos harapos polvorientos y ponte esto. Debería protegerte mejor. ¡Esos orcos pegan fuerte!

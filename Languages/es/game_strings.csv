@@ -895,7 +895,7 @@ str_npc4_personalitymatch_speech_b|Salvar vidas es el más noble de los actos, y
 str_npc5_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc6_personalitymatch_speech_b|Me pregunto que edad tendrá él. ¿Quizás una docena de siglos más que yo? No importa, nunca lo comprenderías.
 str_npc7_personalitymatch_speech_b|{s11} y sus compatriotas de Valle, aunque no se pueden comparar a los guerreros enanos, han probado ser aliados fiables en esta guerra. Se han portado como buenos amigos y compañeros, si se me permite decirlo.
-str_npc8_personalitymatch_speech_b|La gente de Valle siente un gran aprecio por los robustos enanos de la Montaña Solitaria, como amigos y como protectores a pesar de la diferencia de raza y de costumbres.
+str_npc8_personalitymatch_speech_b|La gente de Valle siente un gran aprecio por los robustos enanos de la Montaña Solitaria, como amigos y como protectores, a pesar de la diferencia de raza y de costumbres.
 str_npc9_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc10_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc11_personalitymatch_speech_b|Me cae bien {s11}.
@@ -979,7 +979,7 @@ str_npc3_home_description_2|Si tenemos que cruzar el Bosque de Ent, hagámoslo c
 str_npc4_home_description_2|Haríamos bien en recordar las grandes hazañas del pasado y los sacrificios que se hicieron. La alianza entre Rohan y Gondor salvará de nuevo a nuestros pueblos de la perdición.
 str_npc5_home_description_2|Que esto sirva como recordatorio de que hasta los más grandes, incluso uno de los Istari, puede corromperse y caer en la Sombra. Aquéllos que anhelan poder pueden ser derrotados por él, así que evitemos cualquier demora.
 str_npc6_home_description_2|Siento la presencia de malvados ejércitos tras sus muros, listos para marchar a la guerra... ¿Contra la hermosa Lothlórien? ¿Contra los ciudadanos de Valle? ¿Contra mi tierra natal del Bosque Verde? No puedo saberlo, pero te ruego que hagas todo lo posible para frustrar sus planes.
-; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc7_home_description_2|Si los azares de la guerra nos deparan alguna vez un numeroso ejército deberíamos arriesgarnos a entrar en las Minas y recuperar sus grandes riquezas.
 str_npc8_home_description_2|Puedo oler la delicada fragancia de muchas flores y ver a las abejas recolectando su néctar. Si no te importa, recogeré algunas hierbas, sólo será un momento. 
 str_npc9_home_description_2|No deberíamos deambular por aquí sin que nos apoye una gran horda Uruk-hai. A no ser que quieras hacerles muecas a los centinelas de las murallas, claro.
 str_npc10_home_description_2| Minas Morgul; donde los Nazgûl beben durante todo el día, ¡jar, jar, jar! 
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|la Tierra de Mordor
 str_shortname_region_dimrill|el Valle del Arroyo Sombrío
 str_shortname_region_s_erebor|el Reino de Valle
 str_trait_title_elf_friend|{Amigo/Amiga} de los Elfos
-; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
+str_trait_desc_elf_friend|Has obtenido la estima de los elfos, que ahora te consideran {un aliado/una aliada} de confianza. El coste de reclutamiento de elfos se ha reducido.
 str_trait_title_gondor_friend|Bendición del Senescal
-; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
+str_trait_desc_gondor_friend|El Senescal Denethor te tiene en gran estima y, por ende, tu reputación entre los hombres de Gondor ha aumentado. El coste de reclutamiento de las tropas de Gondor se ha reducido.
 str_trait_title_rohan_friend|{Hombre/Mujer} del Rey
-; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
+str_trait_desc_rohan_friend|El Rey Théoden de Rohan te tiene en gran estima y, por ende, tu reputaciónentre los hombres de Rohan ha aumentado. El coste de reclutamiento de los Rohirrim se ha reducido.
 str_trait_title_brigand_friend|{Campeón/Campeona} Bárbaro
 str_trait_desc_brigand_friend|Gracias a tus proezas en el combate las tribus bárbaras que sirven a Sauron te tienen en gran estima. Ahora puedes reclutar tropas bárbaras a un coste reducido.
 str_trait_title_blessed|{Bendecido/Bendecida}
@@ -2339,7 +2339,7 @@ str_npc21_personalitymatch_speech_b|Salvar vidas es el más noble de los actos, 
 str_npc22_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc23_personalitymatch_speech_b|Me pregunto que edad tendrá él. ¿Quizás una docena de siglos más que yo? No importa, nunca lo comprenderías.
 str_npc24_personalitymatch_speech_b|{s11} y sus compatriotas de Valle, aunque no se pueden comparar a los guerreros enanos, han probado ser aliados fiables en esta guerra. Se han portado como buenos amigos y compañeros, si se me permite decirlo.
-str_npc25_personalitymatch_speech_b|La gente de Valle siente un gran aprecio por los robustos enanos de la Montaña Solitaria, como amigos y como protectores a pesar de la diferencia de raza y de costumbres.
+str_npc25_personalitymatch_speech_b|La gente de Valle siente un gran aprecio por los robustos enanos de la Montaña Solitaria, como amigos y como protectores, a pesar de la diferencia de raza y de costumbres.
 str_npc26_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc27_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc18_retirement_speech|Creo que me gustaría establecerme y formar una familia y, no sé, hacer bordados, o algo así. Adiós.
@@ -2388,7 +2388,7 @@ str_npc20_home_description_2|Destruiremos las obras de los Valar en la Tierra Me
 str_npc21_home_description_2|Haríamos bien en recordar las grandes hazañas del pasado y los sacrificios que se hicieron. La alianza entre Rohan y Gondor salvará de nuevo a nuestros pueblos de la perdición.
 str_npc22_home_description_2|Que esto sirva como recordatorio de que hasta los más grandes, incluso uno de los Istari, puede corromperse y caer en la Sombra. Aquéllos que anhelan poder pueden ser derrotados por él, así que evitemos cualquier demora.
 str_npc23_home_description_2|Siento la presencia de malvados ejércitos tras sus muros, listos para marchar a la guerra... ¿Contra la hermosa Lothlórien? ¿Contra los ciudadanos de Valle? ¿Contra mi tierra natal del Bosque Verde? No puedo saberlo, pero te ruego que hagas todo lo posible para frustrar sus planes.
-; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc24_home_description_2|Si los azares de la guerra nos deparan alguna vez un numeroso ejército deberíamos arriesgarnos a entrar en las Minas y recuperar sus grandes riquezas.
 str_npc25_home_description_2|Puedo oler la delicada fragancia de muchas flores y ver a las abejas recolectando su néctar. Si no te importa, recogeré algunas hierbas, sólo será un momento. 
 str_npc26_home_description_2|No deberíamos deambular por aquí sin que nos apoye una gran horda Uruk-hai. A no ser que quieras hacerles muecas a los centinelas de las murallas, claro.
 str_npc27_home_description_2| Minas Morgul; donde los Nazgûl beben durante todo el día, ¡jar, jar, jar! 

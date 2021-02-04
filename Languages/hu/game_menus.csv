@@ -7,11 +7,11 @@ menu_start_phase_2|^^^^^ Középfölde. Egy árnyék növekszik Keleten, ^ és s
 mno_go_forth|Haladj előre a választott utadon...
 mno_change_tld_options|Az Utolsó Napok beállításainak megváltoztatása.
 menu_start_game_3|^^^^^^^^Válaszd ki a körülményeket:
-mno_custom_battle_scenario_1|Csatározás, Gondor népei Harad ellen
+mno_custom_battle_scenario_1|Portyázás, Gondor népei Harad ellen
 mno_custom_battle_scenario_12|Válaszd ki a népeket a csatára
-mno_custom_battle_scenario_3|Csatározás, Tündék a Fekete Númenoriak ellen
+mno_custom_battle_scenario_3|Portyázás, Tündék a Fekete Númenoriak ellen
 mno_custom_battle_scenario_4|Helm-szurdok védelme, Rohan Vasudvard ellen
-mno_custom_battle_scenario_5|Csatározás, Észak népei Rhûn ellen
+mno_custom_battle_scenario_5|Portyázás, Észak népei Rhûn ellen
 mno_custom_battle_scenario_6|Ostrom, Orkok a Törpök ellen
 mno_custom_battle_scenario_7|Rajtaütés, Orkok a Bakacsinerdő ellen
 mno_custom_battle_scenario_8|Durin népének végső helytállása
@@ -66,7 +66,7 @@ mno_start_duma|egy dúnföldi EMBER, a Nyugati Mezőkről
 menu_start_good_man|^^^^^^^^^Válassz népet:
 mno_start_go|GONDOR, a Fehér Torony Királysága
 mno_start_ro|ROHAN, a lovasnép
-mno_start_du|DÚNADAN, az Emberek ősi vérvonala
+mno_start_du|DÚNADÁN, az Emberek ősi vérvonala
 mno_start_be|BEORNFIAK, a Medve népe
 mno_start_da|SUHATAG északi Királysága
 menu_start_good_elf|^^^^^^^^^^Melyik erdőben élsz, Elsőszülött?
@@ -103,12 +103,12 @@ mno_start_cliff|A GUNDABAD hegy szikláin
 menu_start_gondor_mt|^^^^^^^^^^Válassz származást:
 mno_start_1_com|Közember
 mno_start_2_hib|Nemes
-; menu_start_haradrim|^^^^^^^You are one of the Haradrim,^a Man of the Desert.^Select your line
+menu_start_haradrim|^^^^^^^Egy Haradrimok egyike vagy,^ a Sivatag embere.^ Válassz nemzetséget
 mno_start_1_des|Sivatagi ember
 mno_start_2_far|Messze-haradi törzstag
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+menu_start_numenorean|^^^^^^^Te egy fekete númenori vagy,^hűséges a Sötétséghez és Morgoth-hoz.^Válaszd ki hol is szolgálod a Szemet
+mno_start_1_bn|Szauron Szája mellett, MORANNON-ban
+mno_start_2_bn|A Nekromanta Erődjében, DOL GULDUR-ban
 menu_choose_gender|^^^^^^^^^Nemed?
 mno_start_male|Férfi
 mno_start_female|Nő
@@ -138,11 +138,11 @@ mno_game_options_cutscenes|Átvezetők: {s7}
 mno_game_options_injuries|Társak sérülése: {s7}
 mno_game_options_death|Végleges halál az uraknál és társaknál: {s7}
 mno_game_options_death2|Végleges halál a játékosra (azaz RÁD!): {s7}
-mno_game_options_morale|Harci morál rendszer: {s7}
+mno_game_options_morale|Csatamorál rendszer: {s7}
 mno_game_options_animal_ambushes|Állatok rajtaütése: {s7}
 mno_game_options_horse_ko|Lezuhant lovas sebződési üzenetek:  {s7}
 mno_game_options_bright_nights|Világosabb éjszakák:  {s7}.
-mno_game_options_camera_pref|Kedvelt kamera mód:  {s7}.
+mno_game_options_camera_pref|Kedvelt kameramód:  {s7}.
 mno_game_options_tweaks|Játékmenetbeli finomítások...
 mno_game_options_back|Vissza a tábor menübe.
 mno_game_options_start_back|Vissza.
@@ -196,7 +196,7 @@ mno_leave|Távozás.
 menu_simple_encounter|^^^^^{s2}^{reg22} csapatod áll készen a csatára {reg11} ellen.^^A csata {s3}{s4} területén zajlik le.^^Parancsaid?
 mno_encounter_attack|{reg21?Megrohamozni őket:Felkészülni a csatára.}
 mno_encounter_order_attack|Parancsold meg csapataidnak, {reg21?támadjanak:nézzenek szembe velük} nélküled.
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
+mno_control_allies_menu|Használd a Befolyásod, hogy parancsokat osztogass a szövetségeseidnek a csatatéren.
 mno_encounter_hide|Elbújsz az ellenfelek elől...
 mno_special_whip|Rohanj velük szembe, megroppantva a {s4}t.
 mno_encounter_leave|Visszavonulás.
@@ -230,7 +230,7 @@ mno_pre_join_leave|Nem avatkozol közbe.
 menu_join_battle|^^^{s2} segítségére sietsz {s1} ellen.^ {reg22} katona áll készen a csatára az ellenség {reg11} egysége ellen.^^A csata {s3}{s4} területén zajlik le.
 mno_join_attack|Az ellenség megrohamozása.
 mno_join_order_attack|Utasítsd csapataidat szövetségeseiddel az ellenség megtámadására, miközben te hátra maradsz.
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|Használd a Befolyás pontjaid hogy parancsokat osztogass a szövetségeseidnek a csatatéren.
 mno_join_leave|Visszavonulás.
 mno_player_control_allies_join_menu|Vezesd őket, és rohand le az ellenséget
 menu_join_order_attack|{s4}^^Veszteségeid: {s8}^^Szövetségesek vesztesége: {s9}^^Ellenség vesztesége: {s10}
@@ -243,7 +243,7 @@ mno_enter_f4|Mező 4
 mno_enter_f5|Mező 5
 menu_join_siege_outside|^^^^^^{s2} ostrom alá vette {s1}t.
 mno_approach_besiegers|Az ostromtábor megközelítése.
-mno_pass_through_siege|Átkelés az ostromvonalakon és belépés {s1}-ba/be.
+mno_pass_through_siege|Átkelés az ostromvonalakon és belépés {s1} városába.
 menu_cut_siege_without_fight|Az ostromlók nem tartóztatnak fel a kapuhoz vezető úton.
 menu_besiegers_camp_with_allies|{s1} ostrom alatt marad. {s2} zászlói az ostromlók tábora felett lengedezik, ahol téged és csapataidat szívesen látják.
 mno_talk_to_siege_commander|Kérj találkozót a parancsnokkal.
@@ -254,7 +254,7 @@ mno_moria_exit_scene|Találd meg a kifelé vezető utat!
 menu_castle_outside|Kint vagy {s2}.{s11} {s3} {s4}
 mno_moria_enter|Visszatérés Mória főcsarnokába a titkos bejáraton keresztül.
 mno_moria_enter_door|Belépés Móriába.
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|Szerezd meg a könyvet
 mno_castle_start_siege|{reg6?város:kastély} megostromlása.
 mno_castle_leave|Távozás.
 menu_castle_besiege|Ostrom alá veszed {s1}. {s2} {s3}
@@ -282,11 +282,11 @@ menu_town_bandits_succeeded|^^^^^A koboldok elhullanak előtted mint a búzakal�
 menu_town_brawl_lost|^^^^^^Kiütöttek téged. Akiket megtámadtál gyorsan átkutatnak értéktárgyaidért, mielőtt folytatnák mindennapi teendőiket.
 menu_town_brawl_won|^^^^^Minden ellenfelet és őrt megvertél, akiket a zavargás elfolyására küldtek. Gyorsan megmotozod őket értéktárgyakat keresve, majd eltűnsz amíg csillapodnak a kedélyek.^Talán legközelebb több tiszteletet mutatnak és kihátrálnak.
 menu_close|Semmi.
-menu_town|Megérkeztél {s60}-ba/be.{s12}{s13}
+menu_town|Megérkeztél {s60} városába.{s12}{s13}
 mno_town_menu_0|Menj valahova.
 mno_town_menu_0_door|Ajtó valahova.
 mno_town_approach|Megközelíted {s1}t...
-mno_town_castle|Menj {s1}-hoz/höz.
+mno_town_castle|Menj {s1} parancsnokhoz.
 mno_town_castle_door|A kastély bejárata.
 mno_town_center|Sétálj a főtérre...
 mno_town_center_door|A városközpontra nyíló ajtó.
@@ -299,9 +299,9 @@ mno_dungeon_enter_door|Nyisd ki az ajtót.
 mno_dwarven_warehouse|Látogasd meg a Törp Raktárat
 mno_dwarven_warehouse_door|Lépj be a Törp Raktárba
 mno_talk_to_castle_commander|Látogasd meg a/az {s61} barakkokat.
-mno_speak_with_elder|Beszélj {s6}-val/vel
+mno_speak_with_elder|Beszélj {s6} parancsnokhoz.
 mno_isengard_underground|Menj a földalatti barlangokba.
-; mno_isengard_underground_door|Go to the underground caverns
+mno_isengard_underground_door|Menj a földalatti barlangokba
 mno_tirith_toplevel|Mássz fel a legfelső szintre.
 mno_erebor_gates|Nézd meg a Nagy Kapukat.
 mno_town_leave|Távozás...
@@ -327,13 +327,13 @@ mno_whatever|Kelj fel!
 menu_recover_after_death_default|^^^^^Visszanyered az eszméleted. Ott fekszel, ahol elestél. Bizonyára halottnak néztek, és nem törődtek veled. Mindenesetre egyik sebed sem volt végzetes, és bár borzalmasan érzed magad, még képes vagy járni. Felkelsz, és további túlélők után kutatsz a csapatodból.
 menu_recover_after_death_town|^^^^Visszanyered az eszméletedet és a város határában találod magad. Életben vagy! Senki sincs körülötted, így élve a lehetőséggel kivonszolod magad a városból. Úgy látszik egyik sebesülésed sem volt végzetes, és bár borzalmasan érzed magad, még képes vagy járni.
 menu_recover_after_death_town_alone|Visszanyered az eszméletedet és a város határában találod magad. Életben vagy! Senki sincs körülötted, így élve a lehetőséggel kivonszolod magad a városból. A társaid megtalálnak téged. Úgy látszik egyik sebesülésed sem volt végzeted, és bár borzalmasan érzed magad, még képes vagy járni.
-menu_notification_center_under_siege|{s1} ostrom alá lett véve {s2} által {s3}-ból/ből!
+menu_notification_center_under_siege|{s1} ostrom alá lett véve {s3}i {s2} által!
 menu_notification_one_side_left|^^^^^A Gyűrű Háborúja véget ért!^^A {s1} legyőzte az összes ellenfelét és győzelmet aratott!
 menu_notification_total_defeat|^^^^^A Gyűrű Háborúja számodra véget ért!^^A {s1} legyőzetett ellenfelei által és vereséget szenvedtél!
-menu_notification_your_faction_collapsed|^^^^^A {s11} hazád vereséget szenvedett!^Ennek ellenére, szövetségeseseid még küzdenek a Háborúban. Te, együttműködve akárkivel {s11}-ból/ből, még segíthet hogy a te oldalad győzzön.
+menu_notification_your_faction_collapsed|^^^^^A {s11} hazád vereséget szenvedett!^Ennek ellenére, szövetségeseseid még küzdenek a Háborúban. Te, együttműködve akárkivel {s11} népéből, még segíthet hogy a te oldalad győzzön.
 menu_notification_faction_defeated|^^^^^{s1} Legyőzetett!^{s1} nincs többé, le lett győzve {s13} serege által!
-menu_ruins|^^^^Megérkezel {s1}-hoz/höz. Az egyszer robusztus táborhelyet földig rombolták, bár még láthatod az erődítés nyomait és a szétszórt, rozsdás fegyvereket.
-menu_legendary_place|^^^^A szóbeszédeket követve megtaláltad {s1}-t. Most már felfedezheted ezt a helyet és megnézheted magadnak, hogy a szóbeszédek igazak-e.
+menu_ruins|^^^^Megérkezel {s1} előőrséhez. Az egyszer robusztus táborhelyet földig rombolták, bár még láthatod az erődítés nyomait és a szétszórt, rozsdás fegyvereket.
+menu_legendary_place|^^^^A szóbeszédeket követve megtaláltad {s1} erdejét. Most már felfedezheted ezt a helyet és megnézheted magadnak, hogy a szóbeszédek igazak-e.
 mno_explore|Fedezd fel a helyszínt.
 menu_ring_hunter_lair|^^^^Követted a Gyűrű Vadászok nyomát a Bakacsinerdőn keresztül, és megérkeztél {s1}-hoz/höz. Látod ahogy készen állnak távozni egy ládával.
 mno_attack_lair|Támadd meg őket azonnal
@@ -346,7 +346,7 @@ menu_player_added_to_war_council|^^^^^Egy hírnök érkezett és azt mondta, hog
 mno_player_added_to_war_council_close|Bezár
 menu_player_added_to_siege_reports|^^^^^Egy hírnök érkezett és azt mondta, hogy mostantól, mint {s24}, mostantól jelentéseket kapsz ha valaha {s2} megostromol egy központot vagy amikor {s2} központjait megostromolják.
 mno_player_added_to_siege_reports_close|Bezár
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^Egy hírnök érkezett és azt mondta, hogy mostantól, mint {s24}, megparancsolhatod {s2}nak/nek hogy kövessen, összesen {reg55} követő áráért.
 mno_player_added_to_allow_follow_close|Bezár
 menu_center_besieged_event|^^^^^Egy hírnök érkezett azt jelentve hogy {s1} ostrom alá lett véve a {s3}ból/ből érkező {s2} által.
 mno_center_besieged_event_close|Bezár
@@ -371,9 +371,9 @@ mno_horse_archer_field_ai|A lovasíjászoknak jobb csatatéri MI lesz:  {s7}
 mno_vs_orcs_field_ai|Az íjászok jobban fognak célozni orkok ellen (nem fognak a fejük felé célozni):  {s7}
 mno_battlefield_animals|Nem-varg / Ló-állati társak fognak leteremtődni a csatatérre:  {s7}
 mno_slow_when_wounded|Az ügynökök lelassulnak ha megsérülnek:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
-; menu_hungry_orc|none
-; menu_leaving_elf|none
+mno_battle_encounter_effects|Különleges népalapú effektek jelennek meg a csatatéren (pl. viharok, ködök):  {s7}
+menu_hungry_orc|semmi
+menu_leaving_elf|semmi
 mno_defend_refugees|Tartsd nyitva a szemed a fosztogatók ellen...
 mno_attack_refugees|Támadd meg a menekült konvojt...
 mno_leave_refugees|Hagyd békén őket egyelőre...
@@ -414,36 +414,36 @@ mno_next_rescue_scene_door|Haladj tovább!
 mno_pick_troops1|Válassz társat a küldetésre, {reg0} kiválasztva
 menu_pick_troops|Kit vinnél magaddal a lopakodós küldetésre?    Jelenleg kiválasztottad {reg0} társaidat. Magaddal vihetsz nem több mint 10 egységet
 mno_go_forward|Társak kiválasztásának befejezése, és folytatás.
-menu_burial_mound|Megközelíted {s2}-ból/ből származó {s1} sírbuckáját.   Csatában győzte le {s28} seregei.  Halmokban állnak rajta a legyőzött ellenfelei fogazott fegyverei.
+menu_burial_mound|Megközelíted {s2}i {s1} sírbuckáját. Csatában győzte le {s28} seregei.  Halmokban állnak rajta a legyőzött ellenfelei fogazott fegyverei.
 mno_pay_respects|Térdelj le és tedd tiszteleted.
 mno_swear_oath|Esküdj bosszút!
 mno_despoil|Gyalázd meg a sírhelyet
 mno_leave_mound|Hagyd el a sírdombot.
-menu_burial_mound_respects|Letérdelsz és tiszteletedet teszed {s1}-nak/nek, némán formálva az ima szavait amivel gyors utazást kívánsz neki a túlvilágra. Nincs más dolog amit itt tehetnél.
+menu_burial_mound_respects|Letérdelsz és tiszteletedet teszed {s1} bajtársadnak, némán formálva az ima szavait amivel gyors utazást kívánsz neki a túlvilágra. Nincs más dolog amit itt tehetnél.
 menu_burial_mound_oath|Hangosan bosszút esküszöl {s4} halála miatt.  Fáradhatatlanul fogod keresni {s3} hadait és elpusztítani őket.  Szavaidat messzire viszi a szél, és ki a megmondhatója annak, hogy nem hallották őket még a tengerentúlon is?
 menu_funeral_pyre_oath|Hangosan bosszút esküszöl {s4} halála miatt.  Fáradhatatlanul fogod keresni {s3} hadait és elpusztítani őket.  Szavaidat messzire viszi a szél, és ki a megmondhatója annak, hogy nem hallották őket még a tengerentúlon is?
 mno_leave_pyre_oath|Hagyd ott a halotti máglyát.
 menu_burial_mound_despoil|Ledöntöd {s1} emlékművét a saját kezeiddel és bemocskolod magukat a köveket is az átkaiddal, sátáni kántálásaiddal és elmondhatatlan tetteiddel.  A követőid hátrébb húzódnak a holtaktól való félelmükben, de úgy látszik megújult tisztelettettel tekintenek rád látva a gonoszságodat.
-menu_funeral_pyre|Megközelíted az elégetett maradványait a {s2}-ból/ből származó {s3}-nak/nek.   Csatában győzték le {s28} hadai.  Itt, a holteste szertartásos keretek közt lett elásva a személyes testőrei által. Semmi értékes nem maradt itt.
+menu_funeral_pyre|Megközelíted az elégetett maradványait a {s2}i {s3} halotti máglyájának. Csatában győzték le {s28} hadai.  Itt, a holteste szertartásos keretek közt lett elásva a személyes testőrei által. Semmi értékes nem maradt itt.
 mno_leave_pyre|Hagyd ott a halotti máglyát.
 menu_town_ruins|Amikor megközelíted, látod hogy {s1} már {s2}
 mno_ruin_menu_0|Fedezd fel a helyszínt.
 mno_ruin_leave|Távozás...
-; menu_premutiny|none
+menu_premutiny|semmi
 menu_death|Megöltek. Bár a háború továbbfolyik, te nem leszel többé részese.
 menu_animal_ambush|Te és a társaid elszakadva találjátok magatokat a csapatotok többi tagjától, amikor hirtelen...
 menu_animal_ambush_success|A {s2} {reg0?elhull:elhullanak} előtted mint búza a kasza előtt! Hamarosan az összes támadód a földön fetreng, sebesülten vagy holtan. {s3}
 menu_animal_ambush_fail|Az állatok megharapnak és megtépnek{reg0?,: és a társadat{reg2?s,:,}} de szerencsére sikerül őket elkergetned. Remélhetőleg nem fognak újra rád támadni.
-; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Plain Big (file scn custom 1.sco)
-; mno_scene2|Plain Med (file scn custom 2.sco)
-; mno_scene3|Plain Small (file scn custom 3.sco)
-; mno_scene4|Steppe Big (file scn custom 4.sco)
-; mno_scene5|Steppe Med (file scn custom 5.sco)
-; mno_scene6|Steppe Small (file scn custom 6.sco)
-; mno_scene7|Forest Big (file scn custom 7.sco)
-; mno_scene8|Forest Med (file scn custom 8.sco)
-; mno_scene9|Forest Small (file scn custom 9.sco)
+menu_build_your_scene|Itt tudod elkészíteni a saját csatajeleneteidet, az egyik alul biztosított férőhelyen és a játék Szerkesztő módjában  (először BE kell kapcsolnod a szerkesztő módot a M&B nyitólapján található Beállításokban).  Aztán beküldheted a jeleneteidet (név szerint, a .sco fájlt a TLD/SceneObj mappából) a TLD fejlesztő csapatának, és ha a jelenetedet jó, akkor egy későbbi kiadásban megjelenhet mint az egyik véletlenszerűen kiválasztott csatatér!^^ Próbáld meg pontosítani hogy a térkép melyik területén szeretnéd a jelenetedet megjeleníttetni.^ Néhány tanács: kerüld a mély vizet, a meredek hegyeket és már átjárhatatlan területeket,  kivéve ha te egy tapasztalt jelenet-készítő vagy és tudod hogy oldd meg, hogy az MI ne menjen olyan helyre, amelyre te nem akarod őket, és hogy ne akadjanak be.u.^ (Bejegyzések; #0-1 a támadóknak, #4 a védekezőknek, ne nyúlj a #5-8-hoz/höz
+mno_scene1|Mező Nagy (file scn custom 1.sco)
+mno_scene2|Mező Közepes (file scn custom 2.sco)
+mno_scene3|Mező Kicsi (file scn custom 3.sco)
+mno_scene4|Sztyeppe Nagy (file scn custom 4.sco)
+mno_scene5|Sztyeppe Közepes (file scn custom 5.sco)
+mno_scene6|Sztyeppe Kicsi (file scn custom 6.sco)
+mno_scene7|Erdő Nagy (file scn custom 7.sco)
+mno_scene8|Erdő Közepes (file scn custom 8.sco)
+mno_scene9|Erdő Kicsi (file scn custom 9.sco)
 mno_back_3dot|Vissza...
 mno_back|Vissza.
 mno_next|Következő...
