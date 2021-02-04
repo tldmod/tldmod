@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|Easterling Hawk Shield
 itm_rhun_bull1_shield|Rhun Shield
 itm_rhun_bull2_shield|Rhun Shield
 itm_rhun_bull3_shield|Rhun Shield
+itm_rhun_shield|Rhun Kite Shield
 itm_rhun_armor_a|Rhun Light Battlewear
 itm_rhun_armor_b|Rhun Light Battlewear
 itm_rhun_armor_d|Rhun Light Battlewear
@@ -599,19 +600,13 @@ itm_rhun_armor_n|Rhun Medium Battlewear
 itm_rhun_armor_o|Rhun Medium Battlewear
 itm_rhun_armor_p|Rhun Noble Armor
 itm_rhun_armor_k|Rhun Noble Armor
-itm_rhun_helm_a|Rhun Barbed Helm
-itm_rhun_helm_b|Rhun Barbed Helm Camail
-itm_rhun_helm_c|Rhun Horde Helm
-itm_rhun_helm_e|Rhun Horde Horned Helm
-itm_rhun_helm_g|Rhun Horned Pot
-itm_rhun_helm_h|Rhun Horned Pot
-itm_rhun_helm_i|Rhun Round Helm
-itm_rhun_helm_j|Rhun Round Masked Helm
-itm_rhun_helm_k|Rhun Leather Helm
-itm_rhun_helm_l|Rhun Leather Helm
-itm_rhun_helm_m|Rhun Leather Helm
-itm_rhun_helm_n|Rhun Chieftain Helm
-itm_rhun_helm_o|Rhun Chieftain Helm
+itm_rhun_helm_barbed|Rhun Barbed Helm
+itm_rhun_helm_horde|Rhun Horde Helm
+itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_round|Rhun Round Helm
+itm_rhun_helm_leather|Rhun Leather Helm
+itm_rhun_helm_chieftain|Rhun Chieftain Helm
+itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|Rhun Great Axe
 itm_rhun_battleaxe|Rhun Battle Axe
 itm_rhun_falchion|Savage Falchion
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|Savage Great Falchion
 itm_rhun_greatsword|Savage Great Sword
 itm_rhun_shortsword|Savage Shortsword
 itm_rhun_sword|Savage Sword
-itm_rhun_shield|Rhun Kite Shield
+itm_rhun_mangler|Rhun Mangler
 itm_dale_light_a|Dale Militia Jacket
 itm_dale_light_b|Northmen Light Lamellar
 itm_dale_med_a|Northmen Heavy Lamellar
@@ -631,7 +626,6 @@ itm_dale_heavy_a|Dale Lamellar Over Mail
 itm_dale_heavy_b|Dale Plated Coat
 itm_dale_heavy_c|Rhovanion Mail
 itm_north_leather|Northmen Leather Vest
-itm_dale_armor_l|Dale Noble Gorget
 itm_dale_helmet_a|Dale Light Infantry Helm
 itm_dale_helmet_b|Dale Light Archer Helm
 itm_dale_helmet_c|Dale Infantry Helm
@@ -769,8 +763,8 @@ itm_book_of_moria|Book of Mazarbul
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Bow of Bard
-itm_explosive_reward|Isengard Mine
-itm_corsair_trident2|Trident of Sea Fury
+itm_tome_of_knowledge|Tome of Arcane Knowledge
+itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|Crebain
 itm_miruvor_reward|Miruvor Flask
 itm_wheeled_cage|Giant Wheeled Cage
@@ -793,7 +787,7 @@ itm_leather_boots_reward|Hunter Boots
 itm_rohan_armor_th|Rohan Royal Armor
 itm_wilderness_amulet|Wilderness Amulet
 itm_prisoner_coll_chain|Prisoner Chains
-itm_witchking_helmet|Wicked Helm
+itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|Lorien Royal Armor
 itm_feet_chains|Feet Chains
 itm_feet_chains_dwarf|Feet Chains

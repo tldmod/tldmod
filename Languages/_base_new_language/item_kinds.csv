@@ -1342,8 +1342,8 @@ itm_rhun_bull2_shield|Rhun Shield
 itm_rhun_bull2_shield_pl|Rhun Shield
 itm_rhun_bull3_shield|Rhun Shield
 itm_rhun_bull3_shield_pl|Rhun Shield
-itm_free_furry_boots|Furry Boots
-itm_free_furry_boots_pl|Furry Boots
+itm_rhun_shield|Rhun Kite Shield
+itm_rhun_shield_pl|Rhun Kite Shield
 itm_rhun_armor_a|Rhun Light Battlewear
 itm_rhun_armor_a_pl|Rhun Light Battlewear
 itm_rhun_armor_b|Rhun Light Battlewear
@@ -1366,32 +1366,32 @@ itm_rhun_armor_p|Rhun Noble Armor
 itm_rhun_armor_p_pl|Rhun Noble Armor
 itm_rhun_armor_k|Rhun Noble Armor
 itm_rhun_armor_k_pl|Rhun Noble Armor
-itm_rhun_helm_a|Rhun Barbed Helm
-itm_rhun_helm_a_pl|Rhun Barbed Helm
-itm_rhun_helm_b|Rhun Barbed Helm Camail
-itm_rhun_helm_b_pl|Rhun Barbed Helm Camail
-itm_rhun_helm_c|Rhun Horde Helm
-itm_rhun_helm_c_pl|Rhun Horde Helm
-itm_rhun_helm_e|Rhun Horde Horned Helm
-itm_rhun_helm_e_pl|Rhun Horde Horned Helm
-itm_rhun_helm_g|Rhun Horned Pot
-itm_rhun_helm_g_pl|Rhun Horned Pot
-itm_rhun_helm_h|Rhun Horned Pot
-itm_rhun_helm_h_pl|Rhun Horned Pot
-itm_rhun_helm_i|Rhun Round Helm
-itm_rhun_helm_i_pl|Rhun Round Helm
-itm_rhun_helm_j|Rhun Round Masked Helm
-itm_rhun_helm_j_pl|Rhun Round Masked Helm
-itm_rhun_helm_k|Rhun Leather Helm
-itm_rhun_helm_k_pl|Rhun Leather Helm
-itm_rhun_helm_l|Rhun Leather Helm
-itm_rhun_helm_l_pl|Rhun Leather Helm
-itm_rhun_helm_m|Rhun Leather Helm
-itm_rhun_helm_m_pl|Rhun Leather Helm
-itm_rhun_helm_n|Rhun Chieftain Helm
-itm_rhun_helm_n_pl|Rhun Chieftain Helm
-itm_rhun_helm_o|Rhun Chieftain Helm
-itm_rhun_helm_o_pl|Rhun Chieftain Helm
+itm_rhun_helm_barbed|Rhun Barbed Helm
+itm_rhun_helm_barbed_pl|Rhun Barbed Helm
+itm_free_rhun_helm_b|Rhun Barbed Helm Camail
+itm_free_rhun_helm_b_pl|Rhun Barbed Helm Camail
+itm_rhun_helm_horde|Rhun Horde Helm
+itm_rhun_helm_horde_pl|Rhun Horde Helm
+itm_free_rhun_helm_e|Rhun Horde Horned Helm
+itm_free_rhun_helm_e_pl|Rhun Horde Horned Helm
+itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot_pl|Rhun Pot Helm
+itm_free_rhun_helm_h|Rhun Horned Pot
+itm_free_rhun_helm_h_pl|Rhun Horned Pot
+itm_rhun_helm_round|Rhun Round Helm
+itm_rhun_helm_round_pl|Rhun Round Helm
+itm_free_rhun_helm_j|Rhun Round Masked Helm
+itm_free_rhun_helm_j_pl|Rhun Round Masked Helm
+itm_rhun_helm_leather|Rhun Leather Helm
+itm_rhun_helm_leather_pl|Rhun Leather Helm
+itm_free_rhun_helm_l|Rhun Leather Helm
+itm_free_rhun_helm_l_pl|Rhun Leather Helm
+itm_free_rhun_helm_m|Rhun Leather Helm
+itm_free_rhun_helm_m_pl|Rhun Leather Helm
+itm_rhun_helm_chieftain|Rhun Chieftain Helm
+itm_rhun_helm_chieftain_pl|Rhun Chieftain Helm
+itm_rhun_warpick|Rhun War Pick
+itm_rhun_warpick_pl|Rhun War Pick
 itm_rhun_greataxe|Rhun Great Axe
 itm_rhun_greataxe_pl|Rhun Great Axe
 itm_rhun_battleaxe|Rhun Battle Axe
@@ -1408,8 +1408,8 @@ itm_rhun_shortsword|Savage Shortsword
 itm_rhun_shortsword_pl|Savage Shortsword
 itm_rhun_sword|Savage Sword
 itm_rhun_sword_pl|Savage Sword
-itm_rhun_shield|Rhun Kite Shield
-itm_rhun_shield_pl|Rhun Kite Shield
+itm_rhun_mangler|Rhun Mangler
+itm_rhun_mangler_pl|Rhun Mangler
 itm_dale_light_a|Dale Militia Jacket
 itm_dale_light_a_pl|Dale Militia Jacket
 itm_dale_light_b|Northmen Light Lamellar
@@ -1432,8 +1432,8 @@ itm_north_leather|Northmen Leather Vest
 itm_north_leather_pl|Northmen Leather Vest
 itm_free_dale_armor_k|Dale Noble Armor
 itm_free_dale_armor_k_pl|Dale Noble Armor
-itm_dale_armor_l|Dale Noble Gorget
-itm_dale_armor_l_pl|Dale Noble Gorget
+itm_free_dale_armor_l|Dale Noble Gorget
+itm_free_dale_armor_l_pl|Dale Noble Gorget
 itm_dale_helmet_a|Dale Light Infantry Helm
 itm_dale_helmet_a_pl|Dale Light Infantry Helm
 itm_dale_helmet_b|Dale Light Archer Helm
@@ -1758,10 +1758,10 @@ itm_ring_b_reward|Finwarisil
 itm_ring_b_reward_pl|Finwarisil
 itm_dale_bow_reward|Bow of Bard
 itm_dale_bow_reward_pl|Bow of Bard
-itm_explosive_reward|Isengard Mine
-itm_explosive_reward_pl|Isengard Mine
-itm_corsair_trident2|Trident of Sea Fury
-itm_corsair_trident2_pl|Trident of Sea Fury
+itm_tome_of_knowledge|Tome of Arcane Knowledge
+itm_tome_of_knowledge_pl|Tome of Arcane Knowledge
+itm_orc_idol_reward|Idol of the First Orc
+itm_orc_idol_reward_pl|Idol of the First Orc
 itm_crebain_reward|Crebain
 itm_crebain_reward_pl|Crebain
 itm_miruvor_reward|Miruvor Flask
@@ -1806,8 +1806,8 @@ itm_wilderness_amulet|Wilderness Amulet
 itm_wilderness_amulet_pl|Wilderness Amulet
 itm_prisoner_coll_chain|Prisoner Chains
 itm_prisoner_coll_chain_pl|Prisoner Chains
-itm_witchking_helmet|Wicked Helm
-itm_witchking_helmet_pl|Wicked Helm
+itm_witchking_helmet|Sorcerer's Mask
+itm_witchking_helmet_pl|Sorcerer's Mask
 itm_lorien_royal_armor|Lorien Royal Armor
 itm_lorien_royal_armor_pl|Lorien Royal Armor
 itm_feet_chains|Feet Chains

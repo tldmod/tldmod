@@ -107,7 +107,8 @@ menu_start_good_man|^^^^^^^^^^Select your people:
 mno_start_go|GONDOR, the Kingdom of the White Tower
 mno_start_ro|ROHAN, the Horse people
 mno_start_du|DUNEDAIN, the ancient dynasty of Men
-mno_start_be|BEORNINGS, the Bear people
+mno_start_wo|BEORNINGS, the Bear people
+mno_start_be|WOODMEN, from the eaves of Mirkwood
 mno_start_da|the northern Kingdom of DALE
 menu_start_good_elf|^^^^^^^^^^which Forest do you live in, Elder?
 mno_start_ri|RIVENDELL, of Lord Elrond
@@ -378,6 +379,7 @@ mno_race_mirkwood|Mirkwood
 mno_race_evil_male|Evil Male
 menu_camp_action|^^^^^^^^^     Which object?
 mno_camp_drink_water|Drink the Ent Water!
+mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|Back.
 menu_assasins_attack_player_won|You have successfully defeated assassins from {s2}, sent by {s3}.
 menu_assasins_attack_player_retreat|You escaped with your life!
@@ -471,6 +473,7 @@ mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Rush forward toward them cracking the {s4}.
 mno_debug_leave|DEBUG: avoid this battle.
+mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 mno_encounter_leave|Disengage.
 mno_encounter_retreat|Pull back, leaving some soldiers behind to cover your retreat.
 mno_encounter_surrender|DEBUG: surrender.
@@ -512,6 +515,7 @@ menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops 
 mno_join_attack|Charge the enemy.
 mno_join_order_attack|Order your troops to attack with your allies while you stay back.
 mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|Disengage.
 mno_join_cheat_heal|CHEAT: heal yourself.
 menu_player_control_allies_join|^^^^^{s60}^^^
@@ -570,6 +574,7 @@ mno_castle_taken_no_claim|Ask no rewards.
 menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
 mno_siege_defender_join_battle|Join the battle.
 mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
+mno_siege_defender_do_not_join_battle|Don't get involved.
 menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
 menu_town_bandits_failed|^^^^^{s4} {s5}

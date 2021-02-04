@@ -68,6 +68,7 @@ mno_start_go|GONDOR, the Kingdom of the White Tower
 mno_start_ro|ROHAN, the Horse people
 mno_start_du|DUNEDAIN, the ancient dynasty of Men
 mno_start_be|BEORNINGS, the Bear people
+mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
 mno_start_da|the northern Kingdom of DALE
 menu_start_good_elf|^^^^^^^^^^which Forest do you live in, Elder?
 mno_start_ri|RIVENDELL, of Lord Elrond
@@ -199,6 +200,7 @@ mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without
 mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Rush forward toward them cracking the {s4}.
+mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
 mno_encounter_leave|Disengage.
 mno_encounter_retreat|Pull back, leaving some soldiers behind to cover your retreat.
 mno_player_control_allies_simple|Command them and charge the enemy

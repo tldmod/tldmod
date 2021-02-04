@@ -1926,6 +1926,8 @@ str_trait_title_butcher|Butcher
 str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat. You also get more human meat after every battle.
 str_trait_title_well_travelled|Well-Travelled
 str_trait_desc_well_travelled|On stone paved roads and mossy animal paths, over the tallest mountains and in the deepest vales, you've discovered hidden places and seen long forgotten marvels. From your experiences, you've learnt to spot enemies before they see you, and the easiest route for your troops.
+str_trait_title_bear_shape|Skinchanger
+str_trait_desc_bear_shape|It is said that men of Beorn's line have the ability to take bear form. Through your kinship with bears you have discovered that you too have that gift.
 str_wound_head|a heavy blow to the head
 str_wound_chest|some cracked ribs
 str_wound_arm|a badly maimed arm
@@ -2499,3 +2501,5 @@ str_imladris_guildmaster_companion_player_ask|Elder, I seek the aid of renowned 
 str_imladris_guildmaster_companion_none|Look well, Commander. Before you is perhaps the last great muster of the North, in this Age and any Age hereafter. Man and Elf alike, we who have come here do not hope to return. From the Last Homely House we have come; from the vales and forests of Eriador the last of the Núnatani, whom you call Dúnedain, have come. Each of us has his appointed tasks - none may follow you as you wish, save that you exercise your writ and recruit from our garrison. 
 str_imladris_guildmaster_companion_player_none_ok|I understand, Elder. I thank you for your time.
 str_imladris_guildmaster_player_found_ok|I understand, Elder. I thank you for your time.
+str_show_keybinds_form|Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
+str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?

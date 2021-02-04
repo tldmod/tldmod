@@ -1458,8 +1458,8 @@ game_menus = [
   ("start_go",[],"GONDOR, the Kingdom of the White Tower",[(jump_to_menu,"mnu_start_gondor"),]),
   ("start_ro",[],"ROHAN, the Horse people"               ,[(call_script,"script_start_as_one","trp_i1_rohan_youth"),           (jump_to_menu,"mnu_choose_gender"),]),
   ("start_du",[],"DUNEDAIN, the ancient dynasty of Men"  ,[(call_script,"script_start_as_one","trp_a1_arnor_scout"),        (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_wo",[],"BEORNINGS, the Bear people"            ,[(call_script,"script_start_as_one","trp_i1_beorning_man"),     (jump_to_menu,"mnu_choose_gender"),]),
-  ("start_be",[],"WOODMEN, from the eaves of Mirkwood"   ,[(call_script,"script_start_as_one","trp_i1_woodmen_man"),     (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_be",[],"BEORNINGS, the Bear people"            ,[(call_script,"script_start_as_one","trp_i1_beorning_man"),     (jump_to_menu,"mnu_choose_gender"),]),
+  ("start_wo",[],"WOODMEN, from the eaves of Mirkwood"   ,[(call_script,"script_start_as_one","trp_i1_woodmen_man"),     (jump_to_menu,"mnu_choose_gender"),]),
   ("start_da",[],"the northern Kingdom of DALE"          ,[(call_script,"script_start_as_one","trp_i1_dale_militia"),         (jump_to_menu,"mnu_choose_gender"),]),
   ("spacer"  ,[],"_",[]),  
   ("go_back" ,[],"Go back",[

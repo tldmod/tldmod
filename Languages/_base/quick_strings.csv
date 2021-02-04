@@ -1,3 +1,4 @@
+qstr_Received_{reg0}_dama|Received {reg0} damage.
 qstr_Gate_is_breached!|Gate is breached!
 qstr_Gate_opens..._You_ha|Gate opens... You have reached the most sacred place in Middle Earth!
 qstr_Secret_place_discove|Secret place discovered!
@@ -184,11 +185,12 @@ qstr_+1_to_Riding_Skill|+1 to Riding Skill
 qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|+1 to Pathfinding
 qstr_+1_to_Athletics|+1 to Athletics
+qstr_+1_to_Wound_Treatmen|+1 to Wound Treatment
+qstr_Use_from_Camp_Menu|Use from Camp Menu
 qstr_Use_from|Use from
 qstr_Action_Menu|Action Menu
 qstr_+1_to_First_Aid|+1 to First Aid
 qstr_+1_to_Weapon_Mastery|+1 to Weapon Mastery
-qstr_+1_to_Wound_Treatmen|+1 to Wound Treatment
 qstr_+1_to_Tactics|+1 to Tactics
 qstr_+1_to_Power_Strike|+1 to Power Strike
 qstr_+1_to_Strength|+1 to Strength
@@ -198,7 +200,10 @@ qstr_+1_to_Wildcraft|+1 to Wildcraft
 qstr_+1_to_Power_Draw|+1 to Power Draw
 qstr_The_record_of_Balin_|The record of Balin's lost expedition.
 qstr_Who_might_be_interes|Who might be interested in this?
-qstr_Turns_nature_to_your|Turns nature to your side (effect scales with Wildcraft)
+qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
+qstr_Turns_nature_to_your|Turns nature to your side
+qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
+qstr_Bonus_to_Power_Strik|Bonus to Power Strike
 qstr_+1_to_Trainer|+1 to Trainer
 qstr_Recruits_Tribal_Orcs|Recruits Tribal Orcs
 qstr_rally|rally
@@ -207,12 +212,13 @@ qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} in battle
 qstr_+1_to_Charisma|+1 to Charisma
 qstr_+1_to_Surgery|+1 to Surgery
 qstr_+1_to_Intelligence|+1 to Intelligence
-qstr_+1_to_Ironflesh|+1 to Ironflesh
-qstr_+1_to_Prisoner_Mgmt|+1 to Prisoner Mgmt
+qstr_+2_to_Surgery|+2 to Surgery
 qstr_when_equipped|when equipped
 qstr_+1_to_Riding|+1 to Riding
 qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_+1_to_Prisoner_Mgmt|+1 to Prisoner Mgmt
 qstr_+2_to_Tactics|+2 to Tactics
+qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
 qstr__Scales_with_Wildcra|(Scales with Wildcraft)
 qstr_+1_to_Spotting|+1 to Spotting
@@ -220,8 +226,10 @@ qstr_+2_to_Athletics|+2 to Athletics
 qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
 qstr_Less_Wargs_upkeep|Less Wargs upkeep
 qstr_Light_Armor|Light Armor
+qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
+qstr_Lead_more_Orcs|Lead more Orcs
 qstr_+{reg1}_to_Party_Mor|+{reg1} to Party Morale
-qstr_Shoot_Speed:_{reg55}|Shoot Speed: {reg55}
+qstr_Range:_{reg55}|Range: {reg55}
 qstr_Do_you_want_to_disem|Do you want to disembark?
 qstr_Move_here|Move here
 qstr_View_notes|View notes
@@ -268,6 +276,8 @@ qstr_{s3}_is_no_longer_un|{s3} is no longer under siege.
 qstr_Enemies_spotted_near|Enemies spotted near {s1}.
 qstr_Your_relation_with_{|Your relation with {s1} has improved.
 qstr_Your_relation_with_{s|Your relation with {s1} has deteriorated.
+qstr_{s1}_gained_faction_|{s1} gained faction strength!
+qstr_{s1}_lost_faction_st|{s1} lost faction strength!
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?was:is currently} at {s3}.
 qstr_{s2}_{reg3?was:is}_t|{s2} {reg3?was:is} travelling to {s3} and {reg4?she:he} {reg3?was:should be} close to {s4}{reg3?: at the moment}.
 qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?was:is} in wilderness and {reg4?she:he} {reg3?was:should be} close to {s3}{reg3?: at the moment}.
@@ -391,7 +401,6 @@ qstr_Blunt_Weapons|Blunt Weapons
 qstr_Infantry__{reg1}_|Infantry ({reg1})
 qstr_Archers__{reg2}_|Archers ({reg2})
 qstr_Cavalry__{reg3}_|Cavalry ({reg3})
-qstr_Orc_brew_finished!|Orc brew finished!
 qstr_Given_by:_{s62}|Given by: {s62}
 qstr_Given_on:_{s60}|Given on: {s60}
 qstr_You_have_{reg0}_days|You have {reg0} days to finish this quest.
@@ -684,6 +693,11 @@ qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the
 qstr_A_thunderstorm_from_t|A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.
 qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.
 qstr_A_poisonous_fog_from_|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
+qstr_swy_river_tinting_co|swy river tinting color
+qstr_You_hapeshift_into_a|You hapeshift into a bear!
+qstr_You_got_{reg1}_xp_in|You got {reg1} xp in bear form
+qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
+qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|Your mount stumbles! It seems to be lame.
 qstr_Bitten_by_your_own_w|Bitten by your own warg mount!
 qstr_You_weigh_too_much_f|You weigh too much for a pony!
@@ -714,7 +728,9 @@ qstr_Formations_turned_OF|Formations turned OFF in options menu
 qstr_Division_{reg1}_{s2}_g|Division {reg1} {s2} goes to its memorized position...
 qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms line (memorized).
 qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized).
+qstr_Delivered_{reg60}_da|Delivered {reg60} damage.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
+qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
 qstr_Three_Nazgul_are_cir|Three Nazgul are circling in the sky above the battlefield!
 qstr_Two_Nazgul_are_circl|Two Nazgul are circling in the sky above the battlefield!
 qstr_A_Nazgul_is_circling|A Nazgul is circling in the sky above the battlefield!
@@ -765,7 +781,7 @@ qstr_End_them_all!|End them all!
 qstr_Drive_them_back!|Drive them back!
 qstr_Protect_the_City!|Protect the City!
 qstr_Forward!_Board_them!|Forward! Board them!
-qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
+qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
 qstr_Reached_Gauntlet_wav|Reached Gauntlet wave {reg1}!
 qstr_Ballista:_out_of_amm|Ballista: out of ammo!
 qstr_Ballista:_turn_CURSO|Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fire T, exit F
@@ -883,6 +899,7 @@ qstr_Doubled|Doubled
 qstr_Tripled|Tripled
 qstr_Quadrupled|Quadrupled
 qstr_You_drank_the_Ent_Wa|You drank the Ent Water...
+qstr_You_used_the_Orc_Bre|You used the Orc Brew.
 qstr_Fangorn_search:_fail|Fangorn search: failed.
 qstr_^^^A_great_victory!^|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
 qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
@@ -1057,6 +1074,7 @@ qstr_Guard_Legion_of_{s6}|Guard Legion of {s6}
 qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 qstr_The_forces_of_{s2}_e|The forces of {s2} established an advanced camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|The hosts of {s2} march back to defend their homes!
+qstr_{playername}_s_Reser|{playername}'s Reserves
 qstr_Gondor_has_called_fo|Gondor has called for aide!
 qstr_Gondor_is_accompanyi|Gondor is accompanying the marshall!
 qstr_{s5}_has_stopped_fol|{s5} has stopped following you.
@@ -1175,7 +1193,6 @@ qstr_Greetings_{s23}.|Greetings, {s23}.
 qstr_So_you_are_{s23}._I_|So, you are {s23}. I hear you fight for our {s25} friends, so I guess I should consider you an ally.
 qstr_I_need_volunteers_wi|I need volunteers willing to follow me on dangerous missions.
 qstr_I_need_some_soldiers|I need some soldiers to replace my dead.
-qstr_{playername}_s_Reser|{playername}'s Reserves
 qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
 qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
 qstr_Excellent_job_{s23}!|Excellent job, {s23}! I wish all our commanders were as dedicated as you.^
@@ -1399,7 +1416,9 @@ qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this q
 qstr_{s9}_asked_you_to_def|{s9} asked you to defend a village under attack near {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} asked you to raid a village near {s1}.
 qstr_These_soldiers_may_w|These soldiers may well turn the tide in my plans, {playername}. I am confident you've trained them well. My thanks and my compliments to you.
+qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
 qstr_Good_work_in_shaping|Good work in shaping up those recruits, {playername}, you have been most useful. Hopefully they'll last longer than the last batch, but come see me again if they don't.
+qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
 qstr_Well_the_soldiers_ar|Well, the soldiers are at your command now, sir. I am sure you will take good care of them.
 qstr_Well_you_may_do_as_y|Well, you may do as you please. My companions and I can always toughen up more if needed.
 qstr_{s9}_asked_you_to_br|{s9} asked you to bring back a savage troll for use in his army.
