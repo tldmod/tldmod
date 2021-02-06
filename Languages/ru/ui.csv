@@ -1,154 +1,154 @@
-ui_at_learning_limit|(лимит изучения для этой расы)
-ui_not_enough_skill_points_to_learn|(не хватает очков навыков для обучения)
-ui_not_enough_attributetype_to_learn_this_skill|(Недостаточно %s для изучения навыка)
-ui_explanation_agility|Ловкость: каждое очко дает пять очков владения оружием и увеличивает скорость атаки на 0,5%. Следующие навыки не могут быть развиты выше 1/3 ловкости: Владение оружием, Владение щитом, Атлетика, Верховая езда, Верховая стрельба, Сбор трофеев.
-ui_retreated_battle|%s сбежал с поля боя.
-ui_riding_skill_not_adequate_to_mount|(Не хватает навыка)
-ui_camp|Лагерь
-ui_tutorial_inventory|Чтобы получать снаряжение в моде The Last Days, вам нужны очки снабжения. Они являются мерой материальной поддержки со стороны фракции и того, сколь много ресурсов данной фракции вам позволено использовать.
-ui_you_dont_have_value|У вас нет %s.
-ui_merchant_cant_afford_value|%s: Я не могу себе позволить %s. У меня есть только %s.
-ui_merchant_pay_whatever|Ладно, платите сколько есть.
-ui_horse|Лошадь
-ui_reclaim_your_sold_goods|Выкупите проданные товары перед покупкой этого!
-ui_return_your_bought_goods|Верните купленные товары перед продажей этого!
-ui_return_price|Можно вернуть за %d оч.снаб.
-ui_sell_price|Можно отдать за %d оч.снаб.
-ui_reclaim_price|Можно запросить обратно за %d оч.снаб.
-ui_buying_price|Можно запросить за %d оч.снаб.
-ui_notification_riding_skill_not_enough|Ваш навык верховой езды недостаточно высок, чтобы оседлать эту лошадь.
-ui_notification_payment_value|Израсходовано %s.
-ui_notification_payment_receive_value|Получено %s.
-ui_weekly_cost_value|Жалованье: %s
-ui_sell|Продать
-ui_hire|Нанять
-ui_notification_cant_hire|(Невозможно нанять: недостаточно оч.снаб.)
-ui_joining_cost_weekly_wage|Стоимость найма: %d оч.снаб., жалованье: %d оч.снаб.
-ui_weekly_wage|Жалованье: %d оч.снаб.
-ui_price|Цена: %d оч.снаб.
-ui_cant_reload_this_weapon_on_horseback|Это оружие невозможно перезарядить, будучи верхом.
-ui_delivered_number_damage_to_horse|Нанесено %d урона животному.
-ui_horse_charged_for_number_damage|Животное нанесло %d урона.
-ui_horse_received_number_damage|Животное получило %d урона.
-ui_horse_fell_dead|Животное пало замертво...
-ui_horse_crippled|Животное охромело...
-ui_you_got_value|Вы получили %s.
-ui_has_deserted_the_party| покинул отряд.
-ui_have_deserted_the_party| покинули отряд.
-ui_loading_textures|Загрузка Текстур (потерпите)...
-ui_order_hold_fire_toggle|Не стрелять/Стрельба без приказа
-ui_order_dismount_toggle|Сесть верхом/Спешиться
-ui_mount_horses_e_|%s, сесть верхом!
-ui_hold_fire_e_|%s, не стрелять!
-ui_fire_at_will_e_|%s, стрелять по готовности!
-ui_recent_messages|Журнал
-ui_value_denars|%d очков снабжения
-ui_cannot_be_used_on_horseback|Невозможно использовать верхом
-ui_upgrade_to_value|Повысить до %s
-ui_notification_cant_upgrade|(Это невозможно сделать, передавая войска)
-ui_lance_control|Управление копьём:
-ui_manual_easy|Вручную (Легко)
-ui_manual_hard|Вручную (Сложно)
-ui_campaign_ai|ИИ Кампании (не используется):
-ui_crouch|Присесть
+ui_at_learning_limit  = "(лимит изучения для этой расы)"
+ui_not_enough_skill_points_to_learn  = "(не хватает очков навыков для обучения)"
+ui_not_enough_attributetype_to_learn_this_skill  = "(Недостаточно %s для изучения навыка)"
+ui_explanation_agility  = "Ловкость: каждое очко дает пять очков владения оружием и увеличивает скорость атаки на 0,5%. Следующие навыки не могут быть развиты выше 1/3 ловкости: Владение оружием, Владение щитом, Атлетика, Верховая езда, Верховая стрельба, Сбор трофеев."
+ui_retreated_battle  = "%s сбежал с поля боя."
+ui_riding_skill_not_adequate_to_mount  = "(Не хватает навыка)"
+ui_camp  = "Лагерь"
+ui_tutorial_inventory  = "Чтобы получать снаряжение в моде The Last Days, вам нужны очки снабжения. Они являются мерой материальной поддержки со стороны фракции и того, сколь много ресурсов данной фракции вам позволено использовать."
+ui_you_dont_have_value  = "У вас нет %s."
+ui_merchant_cant_afford_value  = "%s: Я не могу себе позволить %s. У меня есть только %s."
+ui_merchant_pay_whatever  = "Ладно, платите сколько есть."
+ui_horse  = "Лошадь"
+ui_reclaim_your_sold_goods  = "Выкупите проданные товары перед покупкой этого!"
+ui_return_your_bought_goods  = "Верните купленные товары перед продажей этого!"
+ui_return_price  = "Можно вернуть за %d оч.снаб."
+ui_sell_price  = "Можно отдать за %d оч.снаб."
+ui_reclaim_price  = "Можно запросить обратно за %d оч.снаб."
+ui_buying_price  = "Можно запросить за %d оч.снаб."
+ui_notification_riding_skill_not_enough  = "Ваш навык верховой езды недостаточно высок, чтобы оседлать эту лошадь."
+ui_notification_payment_value  = "Израсходовано %s."
+ui_notification_payment_receive_value  = "Получено %s."
+ui_weekly_cost_value  = "Жалованье: %s"
+ui_sell  = "Продать"
+ui_hire  = "Нанять"
+ui_notification_cant_hire  = "(Невозможно нанять: недостаточно оч.снаб.)"
+ui_joining_cost_weekly_wage  = "Стоимость найма: %d оч.снаб., жалованье: %d оч.снаб."
+ui_weekly_wage  = "Жалованье: %d оч.снаб."
+ui_price  = "Цена: %d оч.снаб."
+ui_cant_reload_this_weapon_on_horseback  = "Это оружие невозможно перезарядить, будучи верхом."
+ui_delivered_number_damage_to_horse  = "Нанесено %d урона животному."
+ui_horse_charged_for_number_damage  = "Животное нанесло %d урона."
+ui_horse_received_number_damage  = "Животное получило %d урона."
+ui_horse_fell_dead  = "Животное пало замертво..."
+ui_horse_crippled  = "Животное охромело..."
+ui_you_got_value  = "Вы получили %s."
+ui_has_deserted_the_party  = " покинул отряд."
+ui_have_deserted_the_party  = " покинули отряд."
+ui_loading_textures  = "Загрузка Текстур (потерпите)..."
+ui_order_hold_fire_toggle  = "Не стрелять/Стрельба без приказа"
+ui_order_dismount_toggle  = "Сесть верхом/Спешиться"
+ui_mount_horses_e_  = "%s, сесть верхом!"
+ui_hold_fire_e_  = "%s, не стрелять!"
+ui_fire_at_will_e_  = "%s, стрелять по готовности!"
+ui_recent_messages  = "Журнал"
+ui_value_denars  = "%d очков снабжения"
+ui_cannot_be_used_on_horseback  = "Невозможно использовать верхом"
+ui_upgrade_to_value  = "Повысить до %s"
+ui_notification_cant_upgrade  = "(Это невозможно сделать, передавая войска)"
+ui_lance_control  = "Управление копьём:"
+ui_manual_easy  = "Вручную (Легко)"
+ui_manual_hard  = "Вручную (Сложно)"
+ui_campaign_ai  = "ИИ Кампании (не используется):"
+ui_crouch  = "Присесть"
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-ui_are_you_sure_you_want_to_import_the_character|Вы уверены, что хотите импортировать этого персонажа?
-ui_explanation_strength|Сила: Каждое очко добавляет +1 очко к здоровью. Следующие навыки не могут быть развиты выше 1/3 от Силы: Железная кожа, Сильный бросок, Сильный удар, Сильный выстрел.
-ui_explanation_intelligence|Интеллект: Каждое очко Интеллекта немедленно дает дополнительное очко навыков и немного увеличивает прирост опыта от некоторых действий. Следующие навыки не могут быть развиты выше 1/3 от интеллекта: Обучение, Слежение, Тактика,Поиск следов, Обнаружение, Управление инвентарем, Перевязка ран, Хирургия и Первая помощь.
-ui_explanation_charisma|Харизма: Каждое очко увеличивает размер отряда на +1. Следующие навыки не могут превышать 1/3 Харизмы: Управление пленными, Единение с природой, Лидерство, Торговля.
-ui_delivered_number_damage|Нанесено %d урона 
-ui_mission_losses_killed|убито :
-ui_party_losses|%s : %d ранено --- %d убито из %d
-ui_following|Следование 
-ui_accompanying|Сопровождающий
-ui_dumping_value_items|%d предметы будут навсегда потеряны
-ui_dumping_value_item|Предмет будет навсегда потерян, вы уверены?
-ui_notification_requirements_not_met|Вам не хватает навыков, чтобы использовать это оружие
-ui_disband|Распустить
-ui_you_hit_a_friendly_troop|Вы попали в дружественного воина!
-ui_you_are_not_carrying_any_arrows|У вас нет стрел.
-ui_delivered_number_damage_to_horse|Нанесено %d урона животному.
-ui_received_number_damage|Получено %d урона
-ui_you_have_improved_your_proficiency_in_value_to_number|Вы улучшили навык с %s до %d
-ui_your_proficiency_in_value_has_improved_by_number_to_number|Ваш навык %s улучшился с +%d до %d
-ui_value_killed_by_value|%s убит %s
-ui_value_knocked_unconscious_by_value|%s оглушён %s
-ui_you_got_number_experience|Вы получили %d опыта.
-ui_you_have_advanced_to_level_number|Вы перешли на %d уровень .
-ui_you_got_value|Вы получили %s.
-ui_quest_succeeded_value|Задание выполнено: %s
-ui_number_of_companions_exceeds_leadership_limit|Количество компаньонов превысило доступный лимит 
-ui_number_of_prisoners_exceeds_prisoner_management_limit|Количество заключенных превысило доступный лимит 
-ui_shared_number_experience_within_party|Разделено %d опыта с отрядом
-ui_your_relations_with_value_has_improved_from_number_to_number|Ваши отношения с %s улучшились с%d до %d
-ui_your_relations_with_value_has_deteriorated_from_number_to_number|Ваши отношения с %s ухудшились с %d до %d
-ui_you_lost_value|Вы потеряли %s
-ui_change_graphics_settings_explanation|Некоторые изменения вступят в силу при смене местности.
-ui_game_log_window|Игровой журнал
-ui_blunt_short|дробящее
-ui_tracks|Следы
-ui_order_button_hold_fire|Прекратить огонь
-ui_order_button_fire_at_will|Стрелять по готовности
-ui_order_button_fire_orders|Команды стрельбы
-ui_need_to_learn_prisoner_management|Вам нужно повысить навык управления пленниками, чтобы взять заключенных.
-ui_game_log_window|Игровой журнал
-ui_unbalanced|Несбалансированный 
-ui_can_crush_through_blocks|Пробивает блок
+ui_are_you_sure_you_want_to_import_the_character  = "Вы уверены, что хотите импортировать этого персонажа?"
+ui_explanation_strength  = "Сила: Каждое очко добавляет +1 очко к здоровью. Следующие навыки не могут быть развиты выше 1/3 от Силы: Железная кожа, Сильный бросок, Сильный удар, Сильный выстрел."
+ui_explanation_intelligence  = "Интеллект: Каждое очко Интеллекта немедленно дает дополнительное очко навыков и немного увеличивает прирост опыта от некоторых действий. Следующие навыки не могут быть развиты выше 1/3 от интеллекта: Обучение, Слежение, Тактика,Поиск следов, Обнаружение, Управление инвентарем, Перевязка ран, Хирургия и Первая помощь."
+ui_explanation_charisma  = "Харизма: Каждое очко увеличивает размер отряда на +1. Следующие навыки не могут превышать 1/3 Харизмы: Управление пленными, Единение с природой, Лидерство, Торговля."
+ui_delivered_number_damage  = "Нанесено %d урона "
+ui_mission_losses_killed  = "убито :"
+ui_party_losses  = "%s : %d ранено --- %d убито из %d"
+ui_following  = "Следование "
+ui_accompanying  = "Сопровождающий"
+ui_dumping_value_items  = "%d предметы будут навсегда потеряны"
+ui_dumping_value_item  = "Предмет будет навсегда потерян, вы уверены?"
+ui_notification_requirements_not_met  = "Вам не хватает навыков, чтобы использовать это оружие"
+ui_disband  = "Распустить"
+ui_you_hit_a_friendly_troop  = "Вы попали в дружественного воина!"
+ui_you_are_not_carrying_any_arrows  = "У вас нет стрел."
+ui_delivered_number_damage_to_horse  = "Нанесено %d урона животному."
+ui_received_number_damage  = "Получено %d урона"
+ui_you_have_improved_your_proficiency_in_value_to_number  = "Вы улучшили навык с %s до %d"
+ui_your_proficiency_in_value_has_improved_by_number_to_number  = "Ваш навык %s улучшился с +%d до %d"
+ui_value_killed_by_value  = "%s убит %s"
+ui_value_knocked_unconscious_by_value  = "%s оглушён %s"
+ui_you_got_number_experience  = "Вы получили %d опыта."
+ui_you_have_advanced_to_level_number  = "Вы перешли на %d уровень ."
+ui_you_got_value  = "Вы получили %s."
+ui_quest_succeeded_value  = "Задание выполнено: %s"
+ui_number_of_companions_exceeds_leadership_limit  = "Количество компаньонов превысило доступный лимит "
+ui_number_of_prisoners_exceeds_prisoner_management_limit  = "Количество заключенных превысило доступный лимит "
+ui_shared_number_experience_within_party  = "Разделено %d опыта с отрядом"
+ui_your_relations_with_value_has_improved_from_number_to_number  = "Ваши отношения с %s улучшились с%d до %d"
+ui_your_relations_with_value_has_deteriorated_from_number_to_number  = "Ваши отношения с %s ухудшились с %d до %d"
+ui_you_lost_value  = "Вы потеряли %s"
+ui_change_graphics_settings_explanation  = "Некоторые изменения вступят в силу при смене местности."
+ui_game_log_window  = "Игровой журнал"
+ui_blunt_short  = "дробящее"
+ui_tracks  = "Следы"
+ui_order_button_hold_fire  = "Прекратить огонь"
+ui_order_button_fire_at_will  = "Стрелять по готовности"
+ui_order_button_fire_orders  = "Команды стрельбы"
+ui_need_to_learn_prisoner_management  = "Вам нужно повысить навык управления пленниками, чтобы взять заключенных."
+ui_game_log_window  = "Игровой журнал"
+ui_unbalanced  = "Несбалансированный "
+ui_can_crush_through_blocks  = "Пробивает блок"
 
-ui_order_1|Выбрать приказ 1
-ui_order_2|Выбрать приказ 2
-ui_order_3|Выбрать приказ 3
-ui_order_4|Выбрать приказ 4
-ui_order_5|Выбрать приказ 5
-ui_order_6|Выбрать приказ 6
-ui_order_button_hold_this_position|Удерживать позиции!
-ui_order_button_follow_me|За мной!
-ui_order_button_charge|В атаку
-ui_order_button_stand_ground|Стоять на месте!
-ui_order_button_retreat|Отступить 
-ui_order_button_advance|Продвинуться на десять шагов
-ui_order_button_fall_back|Отступить на десять шагов
-ui_order_button_spread_out|Рассредоточится!
-ui_order_button_stand_closer|Сомкнуть ряды!
-ui_order_button_mount_horses|Сесть верхом
-ui_order_button_dismount|Спешиться
-ui_order_button_hold_fire|Прекратить огонь
-ui_order_button_fire_at_will|Стрелять по готовности
-ui_order_button_use_blunt_weapons|Использовать только дробящее оружие. 
-ui_order_button_use_any_weapon|Использовать оружие на свое усмотрение
-ui_order_button_movement_orders|Команды перемещения
-ui_order_button_formation_orders|Команды построения
-ui_order_button_fire_orders|Команды стрельбы
-ui_follow_me_e_|%s, за мной!
-ui_charge_e_|%s, в атаку!!!
-ui_stand_ground_e_|%s, держать строй!
-ui_retreat_e_|%s, отступаем!
-ui_mount_horses_e_|%s, сесть верхом!
-ui_dismount_e_|%s, спешится!
-ui_advance_e_|%s, вперед на десять шагов!
-ui_fall_back_e_|%s, отступить на десять шагов!
-ui_stand_closer_e_|%s, сдвинуться плотнее!
-ui_spread_out_e_|%s, рассредоточиться!
-ui_use_blunt_weapons_e_|%s, использовать только дробящее оружие!
-ui_use_any_weapon_e_|%s, используйте оружие на свое усмотрение !
-ui_hold_fire_e_|%s, не стрелять!
-ui_fire_at_will_e_|%s, стрелять по готовности!
-ui_hold_this_position_e_|%s, удерживать эту позицию!
-ui_infantry|Пехота
-ui_archers|Лучники
-ui_cavalry|Конница
-ui_companions|Спутники
-ui_everyone_hear_me|Слушайте все!
-ui_everyone|Все
-ui_everyone_around_me|Ближайшие войны
-ui_str_hear_me|%s, слушай меня!
+ui_order_1  = "Выбрать приказ 1"
+ui_order_2  = "Выбрать приказ 2"
+ui_order_3  = "Выбрать приказ 3"
+ui_order_4  = "Выбрать приказ 4"
+ui_order_5  = "Выбрать приказ 5"
+ui_order_6  = "Выбрать приказ 6"
+ui_order_button_hold_this_position  = "Удерживать позиции!"
+ui_order_button_follow_me  = "За мной!"
+ui_order_button_charge  = "В атаку"
+ui_order_button_stand_ground  = "Стоять на месте!"
+ui_order_button_retreat  = "Отступить "
+ui_order_button_advance  = "Продвинуться на десять шагов"
+ui_order_button_fall_back  = "Отступить на десять шагов"
+ui_order_button_spread_out  = "Рассредоточится!"
+ui_order_button_stand_closer  = "Сомкнуть ряды!"
+ui_order_button_mount_horses  = "Сесть верхом"
+ui_order_button_dismount  = "Спешиться"
+ui_order_button_hold_fire  = "Прекратить огонь"
+ui_order_button_fire_at_will  = "Стрелять по готовности"
+ui_order_button_use_blunt_weapons  = "Использовать только дробящее оружие. "
+ui_order_button_use_any_weapon  = "Использовать оружие на свое усмотрение"
+ui_order_button_movement_orders  = "Команды перемещения"
+ui_order_button_formation_orders  = "Команды построения"
+ui_order_button_fire_orders  = "Команды стрельбы"
+ui_follow_me_e_  = "%s, за мной!"
+ui_charge_e_  = "%s, в атаку!!!"
+ui_stand_ground_e_  = "%s, держать строй!"
+ui_retreat_e_  = "%s, отступаем!"
+ui_mount_horses_e_  = "%s, сесть верхом!"
+ui_dismount_e_  = "%s, спешится!"
+ui_advance_e_  = "%s, вперед на десять шагов!"
+ui_fall_back_e_  = "%s, отступить на десять шагов!"
+ui_stand_closer_e_  = "%s, сдвинуться плотнее!"
+ui_spread_out_e_  = "%s, рассредоточиться!"
+ui_use_blunt_weapons_e_  = "%s, использовать только дробящее оружие!"
+ui_use_any_weapon_e_  = "%s, используйте оружие на свое усмотрение !"
+ui_hold_fire_e_  = "%s, не стрелять!"
+ui_fire_at_will_e_  = "%s, стрелять по готовности!"
+ui_hold_this_position_e_  = "%s, удерживать эту позицию!"
+ui_infantry  = "Пехота"
+ui_archers  = "Лучники"
+ui_cavalry  = "Конница"
+ui_companions  = "Спутники"
+ui_everyone_hear_me  = "Слушайте все!"
+ui_everyone  = "Все"
+ui_everyone_around_me  = "Ближайшие войны"
+ui_str_hear_me  = "%s, слушай меня!"
 
-ui_return|Вернуться
-ui_factions|Фракции
-ui_troop_upgrades|Улучшения войск
-ui_hdr_mode|HDR режим:
-ui_autoexpore|Авто-экспозиция ( рекомендуется ВКЛ если HDR  включен) 
-ui_saving_policy_realistic|Автосохранение! ( Не рекомендуется )
-ui_saving_policy_nonrealistic|Сохраняться в любой момент! ( Рекомендуется делать несколько )
+ui_return  = "Вернуться"
+ui_factions  = "Фракции"
+ui_troop_upgrades  = "Улучшения войск"
+ui_hdr_mode  = "HDR режим:"
+ui_autoexpore  = "Авто-экспозиция ( рекомендуется ВКЛ если HDR  включен) "
+ui_saving_policy_realistic  = "Автосохранение! ( Не рекомендуется )"
+ui_saving_policy_nonrealistic  = "Сохраняться в любой момент! ( Рекомендуется делать несколько )"

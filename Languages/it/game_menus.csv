@@ -68,6 +68,7 @@ mno_start_go|Gondor, il Regno della Torre Bianca
 mno_start_ro|Rohan, i Signori dei Cavalli
 mno_start_du|Dúnedain, l'antica dinastia degli Uomini
 mno_start_be|Beorniani, gli Uomini-Orso
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
 mno_start_da|Il Regno di Dale
 menu_start_good_elf|^^^^^^^^^^In quale foresta vivi, Elfo ?
 mno_start_ri|Gran Burrone, di Lord Elrond
@@ -199,6 +200,7 @@ mno_encounter_order_attack|Ordina alle tue truppe di {reg21?attaccare:affrontarl
 mno_control_allies_menu|Usa la tua Influenza per Comandare i Tuoi Alleati nel campo.
 mno_encounter_hide|Nasconditi dal nemico...
 mno_special_whip|Corri in avanti verso di loro rompendo il {s4}.
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
 mno_encounter_leave|Ritirati.
 mno_encounter_retreat|Ritirati, lasciando alcuni soldati dietro di te per coprire la ritirata.
 mno_player_control_allies_simple|Comandali e carica il nemico

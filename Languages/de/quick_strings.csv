@@ -1,3 +1,4 @@
+qstr_Received_{reg0}_dama|{reg0} Schaden erlitten.
 qstr_Gate_is_breached!|Das Tor ist durchbrochen!
 qstr_Gate_opens..._You_ha|Das Tor öffnet sich... Du hast den heiligsten Ort Mittelerdes erreicht!
 qstr_Secret_place_discove|Geheimen Ort entdeckt!
@@ -184,11 +185,12 @@ qstr_+1_to_Riding_Skill|+1 Reiten
 qstr_during_battles|in Gefechten
 qstr_+1_to_Pathfinding|+1 Spurensuche
 qstr_+1_to_Athletics|+1 Athletik
+qstr_+1_to_Wound_Treatmen|+1 Wundheilung
+qstr_Use_from_Camp_Menu|Benutze es im Lager-Menü
 qstr_Use_from|Trinke davon
 qstr_Action_Menu|Aktionsmenü
 qstr_+1_to_First_Aid|+1 Erste Hilfe
 qstr_+1_to_Weapon_Mastery|+1 Waffenmeister
-qstr_+1_to_Wound_Treatmen|+1 Wundheilung
 qstr_+1_to_Tactics|+1 Taktik
 qstr_+1_to_Power_Strike|+1 Schlagkraft
 qstr_+1_to_Strength|+1 Stärke
@@ -198,7 +200,10 @@ qstr_+1_to_Wildcraft|+1 Wildkunde
 qstr_+1_to_Power_Draw|+1 Bogenzugkraft
 qstr_The_record_of_Balin_|Aufzeichnungen über Balins verlorene Expedition.
 qstr_Who_might_be_interes|Wen könnte das interessieren?
-qstr_Turns_nature_to_your|Bringt die Wildnis auf deine Seite (Wildkunde erhöht Chance)
+qstr_Bonus_to_Shield_Skil|Bonus für Schildfähigkeit
+qstr_Turns_nature_to_your|Bringt die Wildnis auf deine Seite
+qstr_when_equipped.__Effe|wenn ausgerüstet. (Verstärkt durch Wildkunde)
+qstr_Bonus_to_Power_Strik|Bonus für Schlagkraft
 qstr_+1_to_Trainer|+1 Ausbilder
 qstr_Recruits_Tribal_Orcs|Rekrutiert Stammeskrieger
 qstr_rally|Sammelbefehl
@@ -207,12 +212,13 @@ qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} im Gefecht
 qstr_+1_to_Charisma|+1 Charisma
 qstr_+1_to_Surgery|+1 Chirurgie
 qstr_+1_to_Intelligence|+1 Intelligenz
-qstr_+1_to_Ironflesh|+1 Eisenhaut
-qstr_+1_to_Prisoner_Mgmt|+1 Gefangenenaufsicht
+qstr_+2_to_Surgery|+2 Surgery
 qstr_when_equipped|wenn ausgerüstet
 qstr_+1_to_Riding|+1 Reiten
 qstr_+1_to_Mounted_Archer|+1 Berittenes Bogenschießen
+qstr_+1_to_Prisoner_Mgmt|+1 Gefangenenaufsicht
 qstr_+2_to_Tactics|+2 Taktik
+qstr_+1_Intelligence|+1 Intelligenz
 qstr_+{reg1}_to_Spotting|+{reg1} Aufklärung
 qstr__Scales_with_Wildcra|(Verstärkt durch Wildkunde)
 qstr_+1_to_Spotting|+1 Aufklärung
@@ -220,8 +226,10 @@ qstr_+2_to_Athletics|+2 Athletik
 qstr_Less_Dunnish_upkeep|Weniger Unterhalt für Dunländer
 qstr_Less_Wargs_upkeep|Weniger Unterhalt für Warge
 qstr_Light_Armor|Leichte Rüstung
+qstr_Bonus_to_Strength__P|Bonus auf Stärke (nur Spieler)
+qstr_Lead_more_Orcs|Führe mehr Orks an
 qstr_+{reg1}_to_Party_Mor|+{reg1} zur Truppenmoral
-qstr_Shoot_Speed:_{reg55}|Reichweite: {reg55}
+qstr_Range:_{reg55}|Reichweite: {reg55}
 qstr_Do_you_want_to_disem|An Land gehen?
 qstr_Move_here|Hierhin bewegen
 qstr_View_notes|Betrachte Notizen
@@ -268,6 +276,8 @@ qstr_{s3}_is_no_longer_un|{s3} wird nicht mehr länger belagert.
 qstr_Enemies_spotted_near|Feinde nahe {s1} gesichtet.
 qstr_Your_relation_with_{|Deine Beziehung mit {s1} hat sich verbessert.
 qstr_Your_relation_with_{s|Deine Beziehung mit {s1} hat sich verschlechtert.
+qstr_{s1}_gained_faction_|{s1} gewinnt an Fraktionsstärke
+qstr_{s1}_lost_faction_st|{s1} verliert Fraktionsstärke
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?war:ist derzeit} in {s3}
 qstr_{s2}_{reg3?was:is}_t|{s2} reist{reg3?:e} nach {s3} und {reg4?sie:er} {reg3?war:sollte derzeit} in der Nähe von {s4}{reg3?: sein}
 qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?befand:befindet} sich in der Wildnis und {reg4?sie:er} {reg3?war:sollte derzeit} in der Nähe von {s4}{reg3?: sein}
@@ -391,7 +401,6 @@ qstr_Blunt_Weapons|Stumpfe Waffen
 qstr_Infantry__{reg1}_|Fußtruppen ({reg1})
 qstr_Archers__{reg2}_|Schützen ({reg2})
 qstr_Cavalry__{reg3}_|Reiter ({reg3})
-qstr_Orc_brew_finished!|Orkgebräu ist fertig!
 qstr_Given_by:_{s62}|Erhalten von: {s62}
 qstr_Given_on:_{s60}|Gegeben am: {s60}
 qstr_You_have_{reg0}_days|Du hast {reg0} Tage, um die Aufgabe zu erfüllen.
@@ -684,6 +693,10 @@ qstr_A_thunderstorm_from_|Ein Sturm aus dem Nebelgebirge wütet über dem Schlac
 qstr_A_thunderstorm_from_t|Ein Sturm aus dem Nebelgebirge wütet über dem Schlachtfeld. Schützen schießen schlecht bei diesem Wetter.
 qstr_A_poisonous_fog_from|Ein giftiger Dampf aus Dol Guldur legt sich über das Schlachtfeld. Er schwächt dich und deine Truppen und Furcht macht sich breit.
 qstr_A_poisonous_fog_from_|Ein giftiger Dampf aus Dol Guldur legt sich über das Schlachtfeld. Du fühlst keine Beeinträchtigung, aber deine Feinde leiden und du kannst ihre Angst riechen.
+qstr_You_shapeshift_into_|Du nimmst Bärengestalt an!
+qstr_You_got_{reg1}_xp_in|Du hast als Bär {reg1} Erfahrung erhalten.
+qstr_Your_ability_to_chan|Du hast deine Fähigkeit als pelzwechsler entdeckt. Von nun an kannst du die Wildnis als Mensch oder als Bär durchstreifen.
+qstr_You_change_back_to_h|Du wechselst zurück in deine menschliche Form...
 qstr_Your_mount_stumbles!|Dein Reittier stolpert! Es scheint zu lahmen.
 qstr_Bitten_by_your_own_w|Dein eigener Warg hat dich gebissen!
 qstr_You_weigh_too_much_f|Du bist zu schwer für ein Pony!
@@ -714,7 +727,9 @@ qstr_Formations_turned_OF|Formationen sind im Optionsmenü deaktiviert
 qstr_Division_{reg1}_{s2}_g|Abteilung {reg1} {s2} nimmt gemerkte Position ein.
 qstr_Division_{reg1}_{s2}_f|Abteilung {reg1} {s2} bildet eine Linie (erinnert).
 qstr_Division_{reg1}_{s2}_fo|Abteilung {reg1} {s2} bildet {reg0} Linien (erinnert).
+qstr_Delivered_{reg60}_da|{reg60} Schaden zugefügt.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
+qstr_Your_bear_form_has_{|Deine Bärengestalt hat {reg2}/{reg1} Gesundheit!
 qstr_Three_Nazgul_are_cir|Drei Nazgul kreisen über dem Schlachtfeld!
 qstr_Two_Nazgul_are_circl|Zwei Nazgul kreisen über dem Schlachtfeld!
 qstr_A_Nazgul_is_circling|Ein Nazgul kreist über dem Schlachtfeld!
@@ -765,7 +780,7 @@ qstr_End_them_all!|Vernichtet sie!
 qstr_Drive_them_back!|Treibt sie zurück!
 qstr_Protect_the_City!|Verteidigt die Stadt!
 qstr_Forward!_Board_them!|Vorwärts! Entert sie!
-qstr_The_Last_Days_of_the_|TLD bietet eine erweiterte Belagerungs-KI, die sich deutlich von der nativen unterscheidet. Alle Truppen, auch die des Spielers, werden auf unterschiedliche Abteilungen verteilt (linke Flanke / Zentrum / rechte Flanke).^^Der Spieler kann nun seine Truppen befehlingen, während die KI die restlichen Truppen übernimmt. Dies erlaubt interessantere Belagerungen mit verschiedenen Angriffsmöglichkeiten.^^Zu Beginn und mit jeder Verstärkungswelle erhalten alle Einheiten einen Angriffsbefehl. Danach kannst du deinen Trupp aber wieder selbst befehligen.
+qstr_The_Last_Days_of_the_|TLD bietet eine erweiterte Belagerungs-KI, die sich deutlich von der nativen unterscheidet. Alle Angreifer und Verteidiger werden auf unterschiedliche Abteilungen verteilt (linke Flanke / Zentrum / rechte Flanke).^^Der Spieler kann nun seine Truppen befehlingen, während die KI die restlichen Truppen übernimmt.
 qstr_Reached_Gauntlet_wav|Gantelet: Welle {reg1} erreicht!
 qstr_Ballista:_out_of_amm|Balliste: keine Munition!
 qstr_Ballista:_turn_CURSO|Balliste: Bewegen ZIELKREUZ; Zielen L-UMSCHALT; Schießen LEER; Anzünden T; Verlassen F
@@ -883,6 +898,7 @@ qstr_Doubled|verdoppelt
 qstr_Tripled|verdreifacht
 qstr_Quadrupled|vervierfacht
 qstr_You_drank_the_Ent_Wa|Du hast Entwasser getrunken...
+qstr_You_used_the_Orc_Bre|Du hast das Orkgebräu verwendet.
 qstr_Fangorn_search:_fail|Fangorn-Suche: gescheitert.
 qstr_^^^A_great_victory!^|^^^Ein großer Sieg!^^^Also das war es, wovon die Mythen über Fangorn handelten...
 qstr_^^^Defeated...^^^Sca|^^^Besiegt...^^^Verstreut im Fangorn-Wald... Allein...
@@ -1057,6 +1073,7 @@ qstr_Guard_Legion_of_{s6}|Legion von {s6}
 qstr_Scouts_report_that_{|Späher berichten, dass {s6} eine große Armee in der Nähe von {s7} sammelt, um in einem letzten Versuch die Hauptstadt zu verteidigen.
 qstr_The_forces_of_{s2}_e|Die Truppen von {s2} haben ein Vorstoßlager in {s15} errichtet!
 qstr_The_hosts_of_{s2}_ma|Die Heere von {s2} marschieren zurück, um ihre Heimat zu verteidigen!
+qstr_{playername}_s_Reser|{playername}s Reserven
 qstr_Gondor_has_called_fo|Gondor ruft nach Hilfe!
 qstr_Gondor_is_accompanyi|Die Fürsten von Gondor begleiten den Heerführer.
 qstr_{s5}_has_stopped_fol|{s5} hat dich verlassen.
@@ -1175,7 +1192,6 @@ qstr_Greetings_{s23}.|Grüße, {s23}.
 qstr_So_you_are_{s23}._I_|Ihr seid also {s23}. Ich habe gehört, Ihr kämpft für unsere Freunde aus {s25}, also sollte ich Euch als Verbündeten betrachten.
 qstr_I_need_volunteers_wi|Ich suche Freiwillige, dich mich auf gefährliche Missionen begleiten.
 qstr_I_need_some_soldiers|Ich brauche einige Soldaten, die meine Toten ersetzen.
-qstr_{playername}_s_Reser|{playername}s Reserven
 qstr_Maybe_the_weaklings_|Die Schwächlinge aus dem Süden müssen ihre weichhäutigen Trolle vielleicht mit Rüstungen schützen, doch nicht wir - unsere Trolle sind aus Gundabad!
 qstr_Do_I_look_like_a_smi|Sehe ich aus wie ein Schmied? Pah! Geh und sprich mit einem, wenn du Rüstungen brauchst.
 qstr_Excellent_job_{s23}!|Hervorragende Arbeit, {23}! Ich wünschte all unsere Anführer wären so hingebungsvoll wie du.^
@@ -1399,7 +1415,9 @@ qstr_Your_party_must_be_at|Dein Trupp muss mindestens 10 Mann stark sein, um die
 qstr_{s9}_asked_you_to_def|{s9} bat dich, ein Dorf nahe {s1} vor Plünderern zu schützen.
 qstr_{s9}_asked_you_to_ra|{s9} befahl dir, ein Dorf nahe {s1} zu plündern.
 qstr_These_soldiers_may_w|Diese Soldaten könnten die entscheidenden Figuren in meinen Plänen werden, {playername}. Ich bin mir sicher, dass Ihr sie gut ausgebildet habt. Meinen Dank und meine Anerkennung an Euch.
+qstr_I_wish_you_had_train|Ich hätte mir gewünscht, dass Ihr sie alle ausbildet, {playername}. Aber in diesen düsteren Zeiten muss ich nehmen, was du mir bieten kannst.
 qstr_Good_work_in_shaping|Gute Arbeit mit diesen Rekruten, {playername}, du hast dich als äußerst nützlich erwiesen. Hoffentlich halten sie länger durch als der letzte Stoß, aber wir sprechen uns erneut, falls sie es nicht tun.
+qstr_Is_that_all_you_coul|Ist das alles was du zustande gebracht hast, {playername}? Das gleicht kaum unsere gestrigen Verluste aus! Gib schon her!
 qstr_Well_the_soldiers_ar|Nun, die Soldaten stehen unter Eurem Befehl, Herr. Ich bin mir sicher, dass Ihr gut auf sie achten werdet.
 qstr_Well_you_may_do_as_y|Nun, tut mit Ihnen, was Ihr wollt. Ich und meine Gefährten können jederzeit neue zähe Burschen anschaffen.
 qstr_{s9}_asked_you_to_br|{s9} bat dich, ihm einen wilden Troll für seine Armee zu bringen.

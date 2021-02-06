@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|Scudo dell'Aquila Easterling
 itm_rhun_bull1_shield|Scudo Di Rhûn
 itm_rhun_bull2_shield|Scudo Di Rhûn
 itm_rhun_bull3_shield|Scudo Di Rhûn
+itm_rhun_shield|Scudo a Mandorla di Rhûn
 itm_rhun_armor_a|Tenuta Leggera da Battaglia di Rhûn
 itm_rhun_armor_b|Tenuta Leggera da Battaglia di Rhûn
 itm_rhun_armor_d|Tenuta Leggera da Battaglia di Rhûn
@@ -599,19 +600,13 @@ itm_rhun_armor_n|Tenuta da Combattimento Media di Rhûn
 itm_rhun_armor_o|Tenuta da Combattimento Media di Rhûn
 itm_rhun_armor_p|Armatura da Nobile di Rhûn
 itm_rhun_armor_k|Armatura da Nobile di Rhûn
-itm_rhun_helm_a|Elmo Spinato di Rhûn
-itm_rhun_helm_b|Elmo Spinato con Camaglio di Rhûn
-itm_rhun_helm_c|Elmo dell'Orda di Rhûn
-itm_rhun_helm_e|Elmo Cornuto dell'Orda di Rhûn
-itm_rhun_helm_g|Elmo Cornuto di Rhûn
-itm_rhun_helm_h|Elmo Cornuto di Rhûn
-itm_rhun_helm_i|Elmo Rotondo di Rhûn
-itm_rhun_helm_j|Elmo Rotondo con Maschera di Rhûn
-itm_rhun_helm_k|Elmo in Cuoio di Rhûn
-itm_rhun_helm_l|Elmo in Cuoio di Rhûn
-itm_rhun_helm_m|Elmo in Cuoio di Rhûn
-itm_rhun_helm_n|Elmo del Capoclan di Rhûn
-itm_rhun_helm_o|Elmo del Capoclan di Rhûn
+itm_rhun_helm_barbed|Elmo Spinato di Rhûn
+itm_rhun_helm_horde|Elmo dell'Orda di Rhûn
+; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_round|Elmo Rotondo di Rhûn
+itm_rhun_helm_leather|Elmo in Cuoio di Rhûn
+itm_rhun_helm_chieftain|Elmo del Capoclan di Rhûn
+; itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|Ascia a Due Mani di Rhûn
 itm_rhun_battleaxe|Ascia da Battaglia di Rhûn
 itm_rhun_falchion|Falcione Barbaro
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|Grande Falcione Barbaro
 itm_rhun_greatsword|Grande Spada Barbara
 itm_rhun_shortsword|Spada Corta Barbara
 itm_rhun_sword|Spada Barbara
-itm_rhun_shield|Scudo a Mandorla di Rhûn
+; itm_rhun_mangler|Rhun Mangler
 itm_dale_light_a|Giaccone della Milizia di Dale
 itm_dale_light_b|Armatura Lamellare Leggera Nordica
 itm_dale_med_a|Armatura Lamellare Pesante Nordica
@@ -631,7 +626,6 @@ itm_dale_heavy_a|Armatura Lamellare di Dale
 itm_dale_heavy_b|Casacca con Piastre di Dale
 itm_dale_heavy_c|Maglia del Rhovanion
 itm_north_leather|Veste in Cuoio del Nord
-itm_dale_armor_l|Gorgiera da Nobile di Dale
 itm_dale_helmet_a|Elmo Leggero da Fanteria di Dale
 itm_dale_helmet_b|Elmo da Arciere Leggero di Dale
 itm_dale_helmet_c|Elmo da Fanteria di Dale
@@ -769,8 +763,8 @@ itm_book_of_moria|Libro di Mazarbul
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Arco di Bard
-itm_explosive_reward|Miniera di Isengard
-itm_corsair_trident2|Tridente della Furia Marina
+; itm_tome_of_knowledge|Tome of Arcane Knowledge
+; itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|Crebain
 itm_miruvor_reward|Fiaschetta di Miruvor
 itm_wheeled_cage|Gabbia Gigante Rotante
@@ -793,7 +787,7 @@ itm_leather_boots_reward|Stivali da Cacciatore
 itm_rohan_armor_th|Armatura Reale di Rohan
 itm_wilderness_amulet|Amuleto della Natura Selvaggia
 itm_prisoner_coll_chain|Catene del Prigioniero
-itm_witchking_helmet|Elmo Maledetto
+; itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|Armatura Reale di Lorien
 itm_feet_chains|Catene per le Caviglie
 itm_feet_chains_dwarf|Catene per le Caviglie

@@ -1,31 +1,31 @@
-fac_no_faction|Ingen fraksjon
-fac_commoners|Personer
-fac_outlaws|Villmenn og Banditter
-fac_gondor|Gondor
-fac_dwarf|Erebor
-fac_rohan|Rohan
-fac_mordor|Mordor
-fac_isengard|Jarnagard
-fac_lorien|Lothlórien 
-fac_imladris|Imladris
-; fac_woodelf|The Woodland Realm
-fac_dale|Dale
-fac_harad|Harad
-fac_rhun|Rhun
-fac_khand|Khand
-fac_umbar|Umbar
-fac_moria|Moria
-fac_guldur|Dol Guldur
-fac_gundabad|Gundabad
-; fac_dunland|Dunland
-; fac_beorn|The Vale of Anduin
-fac_player_supporters_faction|Spiller fraksjon
-fac_player_faction|Spiller fraksjon
-fac_brigands|Røvere
-fac_tribal_orcs|Stamme orker
-fac_innocents|Uskyldige
-fac_merchants|Kjøpmenn
-fac_manhunters|Menneskejakter
-fac_deserters|Desertører
-fac_mountain_bandits|Fjell Banditter
-fac_forest_bandits|Skogs Banditter
+fac_no_faction  = "Ingen fraksjon"
+fac_commoners  = "Personer"
+fac_outlaws  = "Villmenn og Banditter"
+fac_gondor  = "Gondor"
+fac_dwarf  = "Erebor"
+fac_rohan  = "Rohan"
+fac_mordor  = "Mordor"
+fac_isengard  = "Jarnagard"
+fac_lorien  = "Lothlórien "
+fac_imladris  = "Imladris"
+; fac_woodelf  = "The Woodland Realm"
+fac_dale  = "Dale"
+fac_harad  = "Harad"
+fac_rhun  = "Rhun"
+fac_khand  = "Khand"
+fac_umbar  = "Umbar"
+fac_moria  = "Moria"
+fac_guldur  = "Dol Guldur"
+fac_gundabad  = "Gundabad"
+; fac_dunland  = "Dunland"
+; fac_beorn  = "The Vale of Anduin"
+fac_player_supporters_faction  = "Spiller fraksjon"
+fac_player_faction  = "Spiller fraksjon"
+fac_brigands  = "Røvere"
+fac_tribal_orcs  = "Stamme orker"
+fac_innocents  = "Uskyldige"
+fac_merchants  = "Kjøpmenn"
+fac_manhunters  = "Menneskejakter"
+fac_deserters  = "Desertører"
+fac_mountain_bandits  = "Fjell Banditter"
+fac_forest_bandits  = "Skogs Banditter"

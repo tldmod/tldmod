@@ -124,12 +124,12 @@ trp_c4_rhun_veteran_swift_horseman|Rhůnský zkušený rychlý jezdec
 trp_c4_rhun_veteran_swift_horseman_pl|Rhůnští zkušení rychlí jezdci
 trp_c5_rhun_falcon_horseman|Jestřábí jezdec
 trp_c5_rhun_falcon_horseman_pl|Jestřábí jezdci
-trp_i2_rhun_tribal_warrior|Rhunský Kmenový Válečník
-trp_i2_rhun_tribal_warrior_pl|Rhunští Kmenovští Válečníci
-trp_i3_rhun_tribal_infantry|Rhunský Kmenový pěšák
-trp_i3_rhun_tribal_infantry_pl|Rhunští Kmenoví pěšáci
-trp_i4_rhun_vet_infantry|Rhunský Veteránský pěšák
-trp_i4_rhun_vet_infantry_pl|Rhunští Veteránští pěšáci
+; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
+; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i3_rhun_tribal_infantry|Rhunský Kmenový Válečník
+trp_i3_rhun_tribal_infantry_pl|Rhunští Kmenovští Válečníci
+; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
+; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
 trp_i5_rhun_ox_warrior|Bojovník řádu Tura
 trp_i5_rhun_ox_warrior_pl|Bojovníci řádu Tura
 trp_c2_rhun_horseman|Rhunský jezdec

@@ -1,1638 +1,1638 @@
-trp_unarmed_troop|Ongewapende Troep
-trp_unarmed_troop_pl|Ongewapende Troepen
-trp_tutorial_maceman|Strijdknots Krijger
-trp_tutorial_maceman_pl|Strijdknots Krijgers
-trp_tutorial_archer|Boogschutter
-trp_tutorial_archer_pl|Boogschutters
-trp_tutorial_swordsman|Zwaardvechter
-trp_tutorial_swordsman_pl|Zwaardvechters
-trp_novice_fighter|Beginner Vechter
-trp_novice_fighter_pl|Beginner Vechters
-trp_regular_fighter|Normale  vechter 
-trp_regular_fighter_pl|Normale vechters
-trp_veteran_fighter|Veteraan vechter
-trp_veteran_fighter_pl|Veteraan vechters
-trp_champion_fighter|Vechters Kampioen
-trp_champion_fighter_pl|Vechters Kampioenen 
-trp_arena_training_fighter_1|Beginner vechter
-trp_arena_training_fighter_1_pl|Beginner vechters\n
-trp_arena_training_fighter_2|Beginner vechter
-trp_arena_training_fighter_2_pl|Beginner vechters\n
-trp_arena_training_fighter_3|normale  vechter 
-trp_arena_training_fighter_3_pl|normaale vechters
-trp_arena_training_fighter_4|normale  vechter 
-trp_arena_training_fighter_4_pl|normaale vechters
-trp_arena_training_fighter_5|normale  vechter 
-trp_arena_training_fighter_5_pl|normaale vechters
-trp_arena_training_fighter_6|veteraan vechter
-trp_arena_training_fighter_6_pl|veteraan vechters
-trp_arena_training_fighter_7|veteraan vechter
-trp_arena_training_fighter_7_pl|veteraan vechters
-trp_arena_training_fighter_8|veteraan vechter
-trp_arena_training_fighter_8_pl|veteraan vechters
-trp_arena_training_fighter_9|Vechters Kampioen
-trp_arena_training_fighter_9_pl|Vechters Kampioenen 
-trp_arena_training_fighter_10|Vechters Kampioen
-trp_arena_training_fighter_10_pl|Vechters Kampioenen 
-trp_cattle|Vee
-trp_cattle_pl|Vee
-trp_farmer|Boer
-trp_farmer_pl|Boeren
-trp_townsman|stedeling
-trp_townsman_pl|Stedelingen
-trp_watchman|Stadsvrouw
-trp_watchman_pl|Stadsvrouwen
-trp_i1_woodmen_man|Bosman Bewoner
-trp_i1_woodmen_man_pl|Bosman Bewoners
-trp_i2_woodmen_forester|Bosmannen Boswachter
-trp_i2_woodmen_forester_pl|Bosmannen Boswachters
-trp_i3_woodmen_skilled_forester|Bosmannen Geschoolde Boswachter
-trp_i3_woodmen_skilled_forester_pl|Bosmannen Geschoolde Boswachters
-trp_i4_woodmen_axemen|Bosmannen Bijlman
-trp_i4_woodmen_axemen_pl|Bosmannen Bijlmannen
-trp_i5_woodmen_night_guard|Nachtbeschermer van het Demsterwold
-trp_i5_woodmen_night_guard_pl|Nachtbeschermers van het Demsterwold
-trp_a2_woodmen_tracker|Bosmannen Spoorzoeker
-trp_a2_woodmen_tracker_pl|Bosmannen Spoorzoekers
-trp_a3_woodmen_scout|Bosmannen Verkenner
-trp_a3_woodmen_scout_pl|Bosmannen Verkenners
-trp_a4_woodmen_archer|Bosmannen Boogschutter
-trp_a4_woodmen_archer_pl|Bosmannen Boogschutters
-trp_a5_woodmen_night_stalker|Nachtsluiper van het Demsterwold
-trp_a5_woodmen_night_stalker_pl|Nachtsluipers van het Demsterwold
-trp_i1_beorning_man|Beorning Man
-trp_i1_beorning_man_pl|Beorning Mannen
-trp_i2_beorning_warrior|Beorning Krijger
-trp_i2_beorning_warrior_pl|Beorning Krijgers
-trp_i3_beorning_tolltacker|Beorning Toll Nemer
-trp_i3_beorning_tolltacker_pl|Beorning Toll Nemers
-trp_i4_beorning_sentinel|Beorning Schildwacht
-trp_i4_beorning_sentinel_pl|Beorning Schildwachten
-trp_i5_beorning_warden_of_the_ford|Beorning Bewaker van het Wad
-trp_i5_beorning_warden_of_the_ford_pl|Beorning Bewakers van het Wad
-trp_i3_beorning_carrock_lookout|Beorning Carrock Wachtsman
-trp_i3_beorning_carrock_lookout_pl|Beorning Carrock Wachtsmannen
-trp_i4_beorning_carrock_fighter|Beorning Carrock Vechter
-trp_i4_beorning_carrock_fighter_pl|Beorning Carrock Vechters
-trp_i5_beorning_carrock_berserker|Beorning Carrock Berserker
-trp_i5_beorning_carrock_berserker_pl|Beorning Carrock Berserkers
-trp_i1_dale_militia|Dal Militieman
-trp_i1_dale_militia_pl|Dal Militie
-trp_i2_dale_man_at_arms|Dal Soldaat
-trp_i2_dale_man_at_arms_pl|Dal Soldaten
-trp_a2_dale_scout|Dal Verkenner
-trp_a2_dale_scout_pl|Dal verkenners
-trp_a3_dale_bowman|Dal Boogschutter
-trp_a3_dale_bowman_pl|Dal Boogschutters
-trp_a4_dale_archer|Dal Schutter
-trp_a4_dale_archer_pl|Dal Schutters
-trp_a5_barding_bowman|Barding Boogschutter
-trp_a5_barding_bowman_pl|Barding Boogschutters
-trp_i3_dale_swordsman|Dal Zwaardvechter
-trp_i3_dale_swordsman_pl|Dal Zwaardvechters
-trp_i4_dale_sergeant|Dal Brigadier
-trp_i4_dale_sergeant_pl|Dal Brigadieren
-trp_i5_dale_hearthman|Haardman van Dal
-trp_i5_dale_hearthman_pl|Haardmannen van Dal
-trp_i3_dale_spearman|Dal Speervechter
-trp_i3_dale_spearman_pl|Dal Speervechters
-trp_i4_dale_billman|Dal Bill Man
-trp_i4_dale_billman_pl|Dal Bill Man
-trp_i5_dale_bill_master|Dal Bill Meester
-trp_i5_dale_bill_master_pl|Dal Bill Meesters
-trp_c2_rhovanion_retainer|Noordman Bediende
-trp_c2_rhovanion_retainer_pl|Noordman Bediendes
-trp_c3_rhovanion_auxilia|Noordman Bondgenoot
-trp_c3_rhovanion_auxilia_pl|Noordman Bondgenoten
-trp_c4_rhovanion_rider|Wilderland Ruiter
-trp_c4_rhovanion_rider_pl|Wilderland Ruiters
-trp_ac5_rhovanion_marchwarden|Wilderland Mark Bewaker
-trp_ac5_rhovanion_marchwarden_pl|Wilderland Mark Bewakers
-trp_i1_rhun_tribesman|Rhun Stamgenoot
-trp_i1_rhun_tribesman_pl|Rhun Stamgenoten
-trp_ac2_rhun_horse_scout|Rhun Paarden Verkenner
-trp_ac2_rhun_horse_scout_pl|Rhun Paarden Verkenners
-trp_ac3_rhun_horse_archer|Rhun Schutter te Paard
-trp_ac3_rhun_horse_archer_pl|Rhun Schutters te Paard
-trp_ac4_rhun_veteran_horse_archer|Rhun Ervaren Schutter te Paard
-trp_ac4_rhun_veteran_horse_archer_pl|Rhun Ervaren Schutters te Paard
-trp_ac5_rhun_balchoth_horse_archer|Balchoth paart boogschutter
-trp_ac5_rhun_balchoth_horse_archer_pl|Balchoth paart boogschutters
-trp_c3_rhun_swift_horseman|Rhun vlugge Ruiter te paard
-trp_c3_rhun_swift_horseman_pl|Rhun vlugge Ruiters te Paard
-trp_c4_rhun_veteran_swift_horseman|Rhun Ervaren vlugge Ruiter te Paard
-trp_c4_rhun_veteran_swift_horseman_pl|Rhun Ervaren vlugge Ruiters te Paard
-trp_c5_rhun_falcon_horseman|Valk Ruiter te Paard
-trp_c5_rhun_falcon_horseman_pl|Valk Ruiters te Paard
-trp_i2_rhun_tribal_warrior|Rhun Stam Krijger
-trp_i2_rhun_tribal_warrior_pl|Rhun Stam Krijgers
-trp_i3_rhun_tribal_infantry|Rhun Stam Infanterist
-trp_i3_rhun_tribal_infantry_pl|Rhun Stam Infanterie
-trp_i4_rhun_vet_infantry|Rhun Ervaren Infanterist
-trp_i4_rhun_vet_infantry_pl|Rhun Ervaren Infanterie
-; trp_i5_rhun_ox_warrior|Warrior of the Ox
-; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
-; trp_c2_rhun_horseman|Horseman of Rhun
-; trp_c2_rhun_horseman_pl|Horsemen of Rhun
-; trp_c3_rhun_outrider|Outrider of Rhun
-; trp_c3_rhun_outrider_pl|Outriders of Rhun
-; trp_c4_rhun_noble_rider|Noble Rider of Rhun
-; trp_c4_rhun_noble_rider_pl|Noble Riders of Rhun
-; trp_c5_rhun_warrider|Warrider of Rhun
-; trp_c5_rhun_warrider_pl|Warriders of Rhun
-; trp_c6_rhun_warlord|Warlord of Rhun
-; trp_c6_rhun_warlord_pl|Warlords of Rhun
-trp_i1_dwarf_apprentice|Leerling Dwerg
-trp_i1_dwarf_apprentice_pl|Leerling Dwergen
-trp_i2_dwarf_warrior|Krijger Dwerg
-trp_i2_dwarf_warrior_pl|krijger dwergen
-trp_i3_dwarf_hardened_warrior|Geharde Krijger Dwerg
-trp_i3_dwarf_hardened_warrior_pl|Geharde Krijger Dwergen
-trp_i4_dwarf_spearman|speer dwerg
-trp_i4_dwarf_spearman_pl|Speer Dwergen
-trp_i5_dwarf_pikeman|Piek Dwerg
-trp_i5_dwarf_pikeman_pl|Piek Dwergen
-trp_i6_dwarf_longpikeman|Lange Piek Dwerg
-trp_i6_dwarf_longpikeman_pl|Lange Piek Dwergen
-trp_i4_dwarf_axeman|bijl dwerg
-trp_i4_dwarf_axeman_pl|Bijl Dwergen
-trp_i5_dwarf_expert_axeman|Specialist Bijl Dwerg
-trp_i5_dwarf_expert_axeman_pl|Specialist Bijl Dwergen
-trp_i6_dwarf_longbeard_axeman|langebaard bijl dwerg
-trp_i6_dwarf_longbeard_axeman_pl|Langebaard Bijl Dwergen
-trp_a2_dwarf_lookout|uitkijk dwerg
-trp_a2_dwarf_lookout_pl|uitkijk dwergen
-trp_a3_dwarf_scout|verkenner-dwerg
-trp_a3_dwarf_scout_pl|verkenner-dwerg'en
-trp_a4_dwarf_bowman|boog-dwerg
-trp_a4_dwarf_bowman_pl|Boog Dwerg
-trp_i6_dwarf_longaxeman|Strijdbijl Dwerg
-trp_i6_dwarf_longaxeman_pl|Strijdbijl Dwergen
-trp_i3_iron_hills_warrior|Ijzerheuvels Krijger
-trp_i3_iron_hills_warrior_pl|Ijzerheuvels Krijgers
-trp_i2_iron_hills_miner|Ijzerheuvels Mijnwerker
-trp_i2_iron_hills_miner_pl|ijzerheuvels mijnwerker
-trp_i4_iron_hills_infantry|ijzerheuvels Infaterie
-trp_i4_iron_hills_infantry_pl|ijzerheuvels Infanterie
-trp_i5_iron_hills_battle_dwarf|Ijzerheuvels Strijd Dwerg
-trp_i5_iron_hills_battle_dwarf_pl|Ijzerheuvels Stijd Dwergen
-trp_i6_iron_hills_grors_guard|Grors Beschermer
-trp_i6_iron_hills_grors_guard_pl|Grors Beschermers
-trp_i1_gon_levy|Gondor dienstplischtige
-trp_i1_gon_levy_pl|Gondor Dienstplichtigen
-trp_i2_gon_watchman|Gondor Wachter
-trp_i2_gon_watchman_pl|Gondor Wachters
-trp_i3_gon_footman|Livreiknecht van Gondor
-trp_i3_gon_footman_pl|Livreiknechten van Gondor
-trp_i4_gon_spearman|speervechter van Gondor
-trp_i4_gon_spearman_pl|speervechters van Gondor
-trp_i5_gon_vet_spearman|Ervaren speervechter van Gondor
-trp_i5_gon_vet_spearman_pl|Ervaren Speervechters van Gondor
-trp_i6_gon_tower_spearman|Beschermer van het fontein Plein
-trp_i6_gon_tower_spearman_pl|Beschermers van het fontein Plein
-trp_i4_gon_swordsman|Zwaardvechter van Gondor
-trp_i4_gon_swordsman_pl|Zwaardvechters van Gondor
-trp_i5_gon_vet_swordsman|Ervaren Zwaardvechter van Gondor
-trp_i5_gon_vet_swordsman_pl|Ervaren zwaardvechters van Gondor
-trp_i6_gon_tower_swordsman|Zwaardvechter van de Toren Beschermers
-trp_i6_gon_tower_swordsman_pl|Zwaardvechters van de Toren Beschermer
-; trp_c1_gon_nobleman|Gondor Noble
-; trp_c1_gon_nobleman_pl|Gondor Noble
-trp_c2_gon_squire|Schildknaap van Gondor
-trp_c2_gon_squire_pl|Schildknapen van Gondor
-trp_c3_gon_vet_squire|Ervaren Schildknaap van Gondor
-trp_c3_gon_vet_squire_pl|Ervaren Schildknapen van Gondor
-trp_c4_gon_knight|Ridder van Gondor
-trp_c4_gon_knight_pl|Ridders van Gondor
-trp_c5_gon_vet_knight|Ervaren Ridder van Gondor
-trp_c5_gon_vet_knight_pl|Ervaren RIdders van Gondor
-trp_c6_gon_tower_knight|Ridder van de Citadel
-trp_c6_gon_tower_knight_pl|Ridders van de Citadel
-trp_a3_gon_bowman|Boogschutter van Gondor
-trp_a3_gon_bowman_pl|Boogschutters van Gondor
-trp_a4_gon_archer|Schutter van Gondor
-trp_a4_gon_archer_pl|Schutters van Gondor
-trp_a5_gon_vet_archer|Ervaren Schutter van Gondor
-trp_a5_gon_vet_archer_pl|Ervaren Schutters van Gondor
-trp_a6_gon_tower_archer|Schutter van de Toren Beschermers
-trp_a6_gon_tower_archer_pl|Schutter van de Toren Beschermers
-trp_steward_guard|Hofmeesters Beschermer
-trp_steward_guard_pl|Hofmeesters Beschermers
-trp_a4_ithilien_ranger|Houtvester van Maanland
-trp_a4_ithilien_ranger_pl|Houtvesters van Maanland
-trp_a5_ithilien_vet_ranger|Ervaren Houtvester van Maanland
-trp_a5_ithilien_vet_ranger_pl|Ervaren Houtvesters van Maanland
-trp_a6_ithilien_master_ranger|Meester Houtvester van Maanland
-trp_a6_ithilien_master_ranger_pl|Meester Houtvester van Maanland
-trp_a6_ithilien_leader|Gezagvoerder van Maanlandse Houtvesters
-trp_a6_ithilien_leader_pl|Gezagvoerders van de Maanlandse Houtvesters
-trp_i1_loss_woodsman|Houthakker van Lossarnach
-trp_i1_loss_woodsman_pl|Houthakkers van Lossarnach
-trp_i2_loss_axeman|Bijlman van Lossarnach
-trp_i2_loss_axeman_pl|Bijlmannen van Lossarnach
-trp_i3_loss_vet_axeman|Lossarnach Ervaren Bijlman
-trp_i3_loss_vet_axeman_pl|Lossarnach Ervaren Bijlmannen
-trp_i4_loss_heavy_axeman|Geharnaste Lossarnach Bijlman
-trp_i4_loss_heavy_axeman_pl|Geharnaste Lossarnach Bijlman
-trp_i5_loss_axemaster|Bijlmeester van Lossarnach
-trp_i5_loss_axemaster_pl|Bijlmeesters van Lossarnach
-trp_i6_loss_leader|Gezagvoerder van Lossarnach
-trp_i6_loss_leader_pl|Gezagvoerders van Lossarnach
-trp_i1_pel_watchman|Pelalgir Wachter
-trp_i1_pel_watchman_pl|Pelargir Wachters
-trp_a2_pel_marine|Pelargir Marinier
-trp_a2_pel_marine_pl|Pelargir Mariniers
-trp_a3_pel_vet_marine|Pelargir Ervaren Marinier
-trp_a3_pel_vet_marine_pl|Pelargir Veteraan Marinier
-trp_i2_pel_infantry|Pelargir Infaterist
-trp_i2_pel_infantry_pl|Pelargir Infanterie
-trp_i3_pel_vet_infantry|Pelargir Ervaren Infanterist
-trp_i3_pel_vet_infantry_pl|Pelargir Ervaren Infanterie
-trp_i6_pel_leader|Gezagvoerder van Pelargir
-trp_i6_pel_leader_pl|Gezagvoerders van Pelargir
-trp_a6_pel_marine_leader|Captain of Pelargir Mariniers
-trp_a6_pel_marine_leader_pl|Gezagvoerder van Pelargir Marine
-trp_i1_lam_clansman|Stamgenoot van Lamedon
-trp_i1_lam_clansman_pl|Stamgenoten van Lamedon
-trp_i2_lam_footman|Livreiknecht van Lamedon
-trp_i2_lam_footman_pl|Livreiknechten van Lamedon
-trp_i3_lam_veteran|Veteraan van Lamedon
-trp_i3_lam_veteran_pl|Veteranen van Lamedon
-trp_i4_lam_warrior|Krijger of Lamedon
-trp_i4_lam_warrior_pl|Krijgers van Lamedon
-trp_i5_lam_champion|Kampioen van Lamedon
-trp_i5_lam_champion_pl|Kampioenen van Lamedon
-trp_c5_lam_knight|Ridder van Lamedon
-trp_c5_lam_knight_pl|Ridders van Lamedon
-trp_c6_lam_leader|Gezagvoerder van Lamedon
-trp_c6_lam_leader_pl|Gezagvoerders van Lamedon
-trp_i1_pinnath_plainsman|Vlaktebewoner van Pinnath Gelin
-trp_i1_pinnath_plainsman_pl|Vlaktebewoners van Pinnath Gelin
-trp_c2_pinnath_rider|Ruiter van Pinnath Gelin
-trp_c2_pinnath_rider_pl|Ruiters van Pinnath Gelin
-trp_c3_pinnath_knight|Ridder van Pinnath Gelin
-trp_c3_pinnath_knight_pl|Ridders van Pinnath Gelin
-trp_a2_pinnath_bowman|Boogschutter van Pinnath Gelin
-trp_a2_pinnath_bowman_pl|Boogschutters van Pinnath Gelin
-trp_a3_pinnath_archer|Shutter van Pinnath Gelin
-trp_a3_pinnath_archer_pl|Schutters van Pinnath Gelin
-trp_c6_pinnath_leader|Gezagvoerder van Pinnath Gelin
-trp_c6_pinnath_leader_pl|Gezagvoerders van Pennith Gelin
-trp_a1_blackroot_hunter|Jager van Blackroot Vale
-trp_a1_blackroot_hunter_pl|Jagers van Blackroot Vale
-trp_a2_blackroot_bowman|Boogman van Blackroot Vale
-trp_a2_blackroot_bowman_pl|Boogmannen van Blackroot Vale
-trp_a3_blackroot_archer|Boogschutter van de Blackroot Vale
-trp_a3_blackroot_archer_pl|Boogschutters van Blackroot Vale
-trp_i2_blackroot_footman|Voetman van Blackroot Vale
-trp_i2_blackroot_footman_pl|Voetvolk van Blackroot Vale
-trp_i3_blackroot_spearman|Speerman van Blackroot Vale
-trp_i3_blackroot_spearman_pl|Speermannen van Blackroot Vale
-trp_a5_blackroot_shadow_hunter|Morthond Schaduw Jager
-trp_a5_blackroot_shadow_hunter_pl|Morthond Schaduw Jagers
-trp_i1_amroth_recruit|Dol Amroth Rekruut
-trp_i1_amroth_recruit_pl|Dol Amorth Rekruten
-trp_c2_amroth_squire|Schildknaap van Dol Amroth
-trp_c2_amroth_squire_pl|Schildknapen van Dol Amroth
-trp_c3_amroth_vet_squire|Ervaren Schildknaap van Dol Amroth
-trp_c3_amroth_vet_squire_pl|Ervaren Schildknapen van Dol Amorth
-trp_c4_amroth_knight|Ridder van Dol Amorth
-trp_c4_amroth_knight_pl|Ridders van Dol Amorth
-trp_c5_amroth_vet_knight|Ervaren Ridder van Dol Amorth
-trp_c5_amroth_vet_knight_pl|Ervaren Ridders van Dol Amorth
-trp_c6_amroth_swan_knight|Zwaanridder van Dol Amorth
-trp_c6_amroth_swan_knight_pl|Zwaanridders van Dol Amorth
-trp_c6_amroth_leader|Gezagvoerder van Dol Amorth
-trp_c6_amroth_leader_pl|Gezagvoerders van Dol Amorth
-trp_a1_lorien_scout|Lothlorien verkenner
-trp_a1_lorien_scout_pl|Lothlórien verkenners
-trp_a2_lorien_warden|Lothlorien Bewaker
-trp_a2_lorien_warden_pl|Lothlorien Bewakers
-trp_a3_lorien_vet_warden|Lothlorien Ervaren Bewaker
-trp_a3_lorien_vet_warden_pl|Lothlorien Ervaren Bewakers
-trp_a4_lorien_gal_warden|Galadhrim Bewaker
-trp_a4_lorien_gal_warden_pl|Galadhrim Bewakers
-trp_a5_lorien_gal_royal_warden|Galadhrim Koninklijke Bewaker
-trp_a5_lorien_gal_royal_warden_pl|Galadhrim Koninklijke Bewakers
-trp_a6_lorien_grey_warden|Grijze Bewaker
-trp_a6_lorien_grey_warden_pl|Grijze Bewakers
-trp_galadhrim_royal_marksman|Galadhrim Koninklijke Scherpschutter
-trp_galadhrim_royal_marksman_pl|Galadhrim Koninklijke Scherpschutters
-trp_noldorin_mounted_archer|Noldorin Booschutter ter Paard
-trp_noldorin_mounted_archer_pl|Noldorin Boogschutters ter Paard
-trp_a2_lorien_archer|Lothlorien Boogschutter
-trp_a2_lorien_archer_pl|Lothlorien Boogschutters
-trp_a3_lorien_vet_archer|Lothlorien Ervaren Boogschutter
-trp_a3_lorien_vet_archer_pl|Lothlorien Ervaren Boogschutters
-trp_a4_lorien_gal_archer|Galadhrim Boogschutter
-trp_a4_lorien_gal_archer_pl|Galadhrim Boogschutters
-trp_a5_lorien_gal_royal_archer|Galadhrim Koninklijke Scherpschutter
-trp_a5_lorien_gal_royal_archer_pl|Galadhrim Koninklijke Scherpschutters
-trp_i3_lorien_inf|Lothlorien Infanterie
-trp_i3_lorien_inf_pl|Lothlorien Infanterie
-trp_i4_lorien_gal_inf|Galadhrim Infanterie
-trp_i4_lorien_gal_inf_pl|Galadhrim Infanteristen
-trp_i5_lorien_gal_royal_inf|Galadhrim Koninklijke Bewaker
-trp_i5_lorien_gal_royal_inf_pl|Galadhrim Koninklijke Bewakers
-trp_lothlorien_standard_bearer|Lothlorien Vaandeldrager
-trp_lothlorien_standard_bearer_pl|Lothlorien Vaandeldragers
-trp_a1_greenwood_scout|Groenewoud Verkenner
-trp_a1_greenwood_scout_pl|Groenewoud Verkenners
-trp_a2_greenwood_veteran_scout|Groenewoud Ervaren Verkenner
-trp_a2_greenwood_veteran_scout_pl|Groenewoud Ervaren Verkenners
-trp_a3_greenwood_archer|Groenewoud Schutter
-trp_a3_greenwood_archer_pl|Groenewoud Schutters
-trp_a4_greenwood_veteran_archer|Groenewoud Ervaren Schutter
-trp_a4_greenwood_veteran_archer_pl|Groenewoud Ervaren Schutters
-trp_a5_greenwood_master_archer|Greenwood Meester Boogschutter
-trp_a5_greenwood_master_archer_pl|Greenwood Meester Boogschutters
-trp_a6_greenwood_chosen_marksman|Thranduil's Gekozen Schutter
-trp_a6_greenwood_chosen_marksman_pl|Thranduil's Gekozen Schutters
-trp_a3_greenwood_sentinel|Groenewoud Schildwacht
-trp_a3_greenwood_sentinel_pl|Groenewoud Schildwachten
-trp_a4_greenwood_vet_sentinel|Groenewoud Ervaren Schildwacht
-trp_a4_greenwood_vet_sentinel_pl|Groenewoud Ervaren Schildwachten
-trp_a5_greenwood_vigilant|Greenwood Beschermer
-trp_a5_greenwood_vigilant_pl|Greenwood Beschermers
-trp_i2_greenwood_infantry|Groenewoud Infanterist
-trp_i2_greenwood_infantry_pl|Groenewoud Infanterist
-trp_i3_greenwood_vet_infantry|Groenewoud Ervaren Infanterie
-trp_i3_greenwood_vet_infantry_pl|Groenewoud Ervaren Infanterie
-trp_i4_greenwood_elite_infantry|Groenewoud Elite Infanterie
-trp_i4_greenwood_elite_infantry_pl|Groenewoud Elite Infanterie
-trp_i5_greenwood_chosen_shieldmaster|Thranduil's Gekozen Schild Meester
-trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil's Gekozen Schild Meesters
-trp_i5_greenwood_chosen_spearmaster|Thranduil's Gekozen Speer Meester
-trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Gekozen Speer Meesters
-trp_i5_greenwood_standard_bearer|Groenewoud Vaandeldrager
-trp_i5_greenwood_standard_bearer_pl|Groenewoud Vaandeldragers
-trp_a1_riv_scout|Rivendel Verkenner
-trp_a1_riv_scout_pl|Rivendel Verkenners
-trp_a2_riv_vet_scout|Rivendel Ervaren Verkenner
-trp_a2_riv_vet_scout_pl|Rivendel Ervaren Verkenners
-trp_a3_riv_archer|Rivendell Boogschutter
-trp_a3_riv_archer_pl|Rivendell Boogschutters
-trp_a4_riv_vet_archer|Rivendell Veteraan Boogschutter
-trp_a4_riv_vet_archer_pl|Rivendell Veteraan Boogschutters
-trp_a5_riv_master_archer|Rivendell Meester Boogschutter
-trp_a5_riv_master_archer_pl|Rivendell Meester Boogschutters
-trp_a6_riv_guardian|Beschermers van Imladris
-trp_a6_riv_guardian_pl|Beschermers van Imladris
-; trp_i3_riv_swordbearer|Rivendell Swordbearer
-; trp_i3_riv_swordbearer_pl|Rivendell Swordbearers
-; trp_i4_riv_vet_swordbearer|Rivendell Veteran Swordbearer
-; trp_i4_riv_vet_swordbearer_pl|Rivendell Veteran Swordbearers
-; trp_i5_riv_swordmaster|Rivendell Swordmaster
-; trp_i5_riv_swordmaster_pl|Rivendell Swordmasters
-trp_i6_riv_champion|Kampioen van Imladris
-trp_i6_riv_champion_pl|Kampioenen van Imladris
-trp_ac5_riv_rider|Rivendell Rijder
-trp_ac5_riv_rider_pl|Rivendell Rijders
-trp_ac6_riv_knight|Ridder van Imladris
-trp_ac6_riv_knight_pl|Ridders van Imladris
-trp_i6_rivendell_standard_bearer|Rivendel Vaandeldrager
-trp_i6_rivendell_standard_bearer_pl|Rivendel Vaandeldragers
-trp_a1_arnor_scout|Dunedain Verkenner
-trp_a1_arnor_scout_pl|Dunedain verkenners
-trp_a2_arnor_vet_scout|Dunedain Spoorzoeker
-trp_a2_arnor_vet_scout_pl|Dunedain Spoorzoekers
-trp_i3_arnor_swordsman|Dunedain Zwaardman
-trp_i3_arnor_swordsman_pl|Dunedain Zwaardmannen
-trp_i4_arnor_vet_swordsman|Dunedain Veteraan Zwaardman
-trp_i4_arnor_vet_swordsman_pl|Dunedain Veteraan Zwaardmannen
-trp_i5_arnor_champion|Kampoioen van Arnor
-trp_i5_arnor_champion_pl|Kampioenen van Arnor
-trp_c4_arnor_horseman|Dunedain Paardman
-trp_c4_arnor_horseman_pl|Dunedain Paardmannen
-trp_c5_arnor_knight|Ridder van Arnor
-trp_c5_arnor_knight_pl|Ridders van Arnor
-trp_a3_arnor_ranger|Dunedain Houtvester
-trp_a3_arnor_ranger_pl|Dunedain Houtvesters
-trp_a4_arnor_vet_ranger|Dunedain Ervaren Houtvester
-trp_a4_arnor_vet_ranger_pl|Dunedain Ervaren Houtvesters
-trp_a5_arnor_master_ranger|Meester Ranger van Arnor
-trp_a5_arnor_master_ranger_pl|Meester Rangers van Arnor
-trp_i1_rohan_youth|Rohan Jonge Man
-trp_i1_rohan_youth_pl|Rohan Jonge Mannen
-trp_i2_guardsman_of_rohan|Officier van Rohan
-trp_i2_guardsman_of_rohan_pl|Officieren van Rohan
-trp_i3_footman_of_rohan|Livreiknecht van Rohan
-trp_i3_footman_of_rohan_pl|Livreiknechten van Rohan
-trp_i4_veteran_footman_of_rohan|Ervaren Livreiknecht van Rohan
-trp_i4_veteran_footman_of_rohan_pl|Ervaren Livreiknechten van Rohan
-trp_i5_elite_footman_of_rohan|ELite Livreiknecht van Rohan
-trp_i5_elite_footman_of_rohan_pl|Elite Livreiknechten van Rohan
-trp_i6_footman_guard_of_rohan|Folcwine Beschermer van Rohan
-trp_i6_footman_guard_of_rohan_pl|Folcwine Beschermers van Rohan
-trp_i6_frealaf_raider|Frealaf Plunderaar
-trp_i6_frealaf_raider_pl|Frealaf Plunderaars
-trp_i5_raider_of_rohan|Plunderaar van Rohan
-trp_i5_raider_of_rohan_pl|Plunderaars van Rohan
-trp_i6_warden_of_methuseld|Bewaker van Meduseld
-trp_i6_warden_of_methuseld_pl|Bewakers van Meduseld
-trp_ac3_skirmisher_of_rohan|Schermutselaar van Rohan
-trp_ac3_skirmisher_of_rohan_pl|Schermutselaren van Rohan
-trp_ac4_veteran_skirmisher_of_rohan|Ervaren Schermutselaar van Rohan
-trp_ac4_veteran_skirmisher_of_rohan_pl|Ervaren Schermutselaren van Rohan
-trp_ac5_elite_skirmisher_of_rohan|Elite Schermutselaar van Rohan
-trp_ac5_elite_skirmisher_of_rohan_pl|Elite Schermutselaren van Rohan
-trp_ac6_skirmisher_guard_of_rohan|Thengel Bewaker van Rohan
-trp_ac6_skirmisher_guard_of_rohan_pl|Thengel Bewakers van Rohan
-trp_c4_lancer_of_rohan|Lansier van Rohan
-trp_c4_lancer_of_rohan_pl|Lansiers van Rohan
-trp_c5_elite_lancer_of_rohan|Elite Lancier van Rohan
-trp_c5_elite_lancer_of_rohan_pl|Elite Lanciers van Rohan
-trp_c6_lancer_guard_of_rohan|Brego Bewaker van Rohan
-trp_c6_lancer_guard_of_rohan_pl|Brego Bewakers van Rohan
-trp_c6_king_s_man_of_rohan|Beschermer van de Koning
-trp_c6_king_s_man_of_rohan_pl|Beschermers van de Koning
-trp_c2_squire_of_rohan|Schildknaap van Rohan
-trp_c2_squire_of_rohan_pl|Schildknapen van Rohan
-trp_c3_rider_of_rohan|Ruiter van Rohan
-trp_c3_rider_of_rohan_pl|Ruiters van Rohan
-trp_c4_veteran_rider_of_rohan|Ervaren Ruiter van Rohan
-trp_c4_veteran_rider_of_rohan_pl|Ervaren Ruiters van Rohan
-trp_c5_elite_rider_of_rohan|Elite Ruiters van Rohan
-trp_c5_elite_rider_of_rohan_pl|Elite Ruiters van Rohan
-trp_c6_rider_guard_of_rohan|Eoarl Bewaker van Rohan
-trp_c6_rider_guard_of_rohan_pl|Eorl Bewakers van Rohan
-trp_i6_2h_guard_of_rohan|Roer Bewaker van Rohan
-trp_i6_2h_guard_of_rohan_pl|Roer Bewakers van Rohan
-trp_dismounted_veteran_skirmisher_of_rohan|Ervaren Schermutselaar van Rohan
-trp_dismounted_veteran_skirmisher_of_rohan_pl|Ervaren Schermutselaren van Rohan
-trp_dismounted_elite_skirmisher_of_rohan|Elite Schermutselaar van Rohan
-trp_dismounted_elite_skirmisher_of_rohan_pl|Elite Schermutselaren van Rohan
-trp_dismounted_thengel_guard_of_rohan|Thengel Bewaker van Rohan
-trp_dismounted_thengel_guard_of_rohan_pl|Thengel Bewakers van Rohan
-trp_i1_harad_levy|Harad Dienstplichtige
-trp_i1_harad_levy_pl|Harad Dienstplichtigen
-trp_i3_harad_infantry|Harad Lichte Voetman
-trp_i3_harad_infantry_pl|Harad Lichte Voetmannen
-trp_i4_harad_spearman|Harad Speervechter
-trp_i4_harad_spearman_pl|Harad Speervechters
-trp_i5_harad_tiger_guard|Tijger Beschermer
-trp_i5_harad_tiger_guard_pl|Tijger Beschermers
-trp_i4_harad_swordsman|Harad Zwaardvechter
-trp_i4_harad_swordsman_pl|Harad Zwaardvechters
-trp_i5_harad_lion_guard|Leeuw Beschermer
-trp_i5_harad_lion_guard_pl|Leeuw Beschermers
-trp_a3_harad_hunter|Harad Jager
-trp_a3_harad_hunter_pl|Harad Jagers
-trp_a4_harad_archer|Harad Schutter
-trp_a4_harad_archer_pl|Harad Schutters
-trp_a5_harad_eagle_guard|Arend Beschermer
-trp_a5_harad_eagle_guard_pl|Arend Beschermers
-trp_c2_harondor_scout|Harondor Verkenner
-trp_c2_harondor_scout_pl|Harondor Verkenners
-trp_c3_harondor_rider|Harondor Ruiter
-trp_c3_harondor_rider_pl|Harondor Ruiters
-trp_c4_harondor_light_cavalry|Harandor Lichte Rijder
-trp_c4_harondor_light_cavalry_pl|Harandor Lichte Rijders
-trp_c5_harondor_serpent_knight|Gouden Slang Ridder
-trp_c5_harondor_serpent_knight_pl|Gouden Slang Ridders
-trp_ac3_harondor_skirmisher|Harondor Schermutselaar
-trp_ac3_harondor_skirmisher_pl|Harondor Shermutselaren
-trp_ac4_harondor_horse_archer|Harondor Ruiter met Boog
-trp_ac4_harondor_horse_archer_pl|Harondor Ruiters met Boog
-trp_ac5_harondor_black_snake|Zwarte Slang Ruiter met Boog
-trp_ac5_harondor_black_snake_pl|Zwarte Slang Ruiter met Boog
-trp_i2_far_harad_tribesman|Far Harad Stamlid
-trp_i2_far_harad_tribesman_pl|Far Harad Stamleden
-trp_i4_far_harad_champion|Far Harad Kampioen
-trp_i4_far_harad_champion_pl|Far Harad Kampioenen
-trp_i5_far_harad_panther_guard|Panter Beschermer
-trp_i5_far_harad_panther_guard_pl|Panter Beschermers
-trp_i1_dun_wildman|Donkerse Wilde Man
-trp_i1_dun_wildman_pl|Donkerse Wilde Mannen
-trp_i2_dun_warrior|Donkerse Krijger
-trp_i2_dun_warrior_pl|Donkerse Krijgers
-trp_i3_dun_pikeman|Donkerse Piekenier
-trp_i3_dun_pikeman_pl|Donkerse Piekeniers
-trp_i4_dun_vet_pikeman|Donkerse Ervaren Piekenier
-trp_i4_dun_vet_pikeman_pl|Donkerse Ervaren Piekeniers
-trp_ac4_dun_crebain_rider|Donkerse Crebain Ruiter
-trp_ac4_dun_crebain_rider_pl|Donkerse Crebain Ruiters
-trp_i3_dun_vet_warrior|Donkerse Ervaren Krijger
-trp_i3_dun_vet_warrior_pl|Donkerse Ervaren Krijgers
-trp_i4_dun_wolf_warrior|Donkerse Wolf Krijger
-trp_i4_dun_wolf_warrior_pl|Donkerse wolf Krijger
-trp_i5_dun_wolf_guard|Donkerse Wolf Beschermer
-trp_i5_dun_wolf_guard_pl|Donkerse Wolf Beschermers
-; trp_ac5_dun_raven_rider|Dunnish Night Raven
-; trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
-trp_i1_khand_bondsman|Khand Bondman
-trp_i1_khand_bondsman_pl|Khand Bondmannen
-trp_i2_khand_pit_dog|Khand Kuil Hond
-trp_i2_khand_pit_dog_pl|Khand Kuil Honden
-trp_i3_khand_warrior|Khand Krijger
-trp_i3_khand_warrior_pl|Khand Krijgers
-trp_i4_khand_vet_warrior|Khand Veteraan Krijger
-trp_i4_khand_vet_warrior_pl|Khand Veteraan Krijgers
-; trp_i5_khand_war_master|Variag War Master
-; trp_i5_khand_war_master_pl|Variag War Masters
-trp_c2_khand_pony_rider|Khand Pony Rijder
-trp_c2_khand_pony_rider_pl|Khand Pony Rijders
-trp_c3_khand_horseman|Khand Paard Rijder
-trp_c3_khand_horseman_pl|Khand Paard Rijders
-trp_c4_khand_heavy_horseman|Khand Zware Paard Rijder
-trp_c4_khand_heavy_horseman_pl|Khand Zware Paard Rijders
-trp_c5_khand_kataphrakt|Variag Pantser
-trp_c5_khand_kataphrakt_pl|Variag Pantsers
-trp_c5_khand_lance_kataphrakt|Variag Lansier
-trp_c5_khand_lance_kataphrakt_pl|Variag Lansiers
-trp_i4_khand_halberdier|Khand Lansman
-trp_i4_khand_halberdier_pl|Khand Lansmannen
-trp_i5_khand_halberd_master|Variag Hellebaard Meester
-trp_i5_khand_halberd_master_pl|Variag Helebaard Meesters
-trp_i3_khand_pitfighter|Khand Kuil Vechter
-trp_i3_khand_pitfighter_pl|Khand Kuil Vechters
-trp_i4_khand_pit_champion|Khand Kuil Kampioen
-trp_i4_khand_pit_champion_pl|Khand Kuil Kampioenen
-; trp_i5_khand_pit_master|Variag Master of the Pits
-; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
-; trp_ac3_khand_skirmisher|Khand Skirmisher
-; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
-; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
-; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
-; trp_ac5_khand_heavy_skirmisher|Variag Heavy Skirmisher
-; trp_ac5_khand_heavy_skirmisher_pl|Variag Heavy Skirmishers
-; trp_i1_corsair_youth|Umbar Sailor
-; trp_i1_corsair_youth_pl|Umbar Sailors
-; trp_i2_corsair_warrior|Umbar Warrior
-; trp_i2_corsair_warrior_pl|Umbar Warriors
-; trp_i3_corsair_spearman|Spearman of Umbar
-; trp_i3_corsair_spearman_pl|Spearmen of Umbar
-; trp_i4_corsair_raider|Corsair Raider
-; trp_i4_corsair_raider_pl|Corsair Raiders
-; trp_i5_corsair_night_raider|Corsair Night Raider
-; trp_i5_corsair_night_raider_pl|Corsair Night Raiders
-; trp_a2_corsair_marine|Umbar Marine
-; trp_a2_corsair_marine_pl|Umbar Marines
-; trp_a3_corsair_marksman|Marksman of Umbar
-; trp_a3_corsair_marksman_pl|Marksmen of Umbar
-; trp_a4_corsair_veteran_marksman|Veteran Marksman of Umbar
-; trp_a4_corsair_veteran_marksman_pl|Veteran Marksmen of Umbar
-; trp_a5_corsair_master_marksman|Corsair Master Marksman
-; trp_a5_corsair_master_marksman_pl|Corsair Master Marksmen
-; trp_i3_corsair_swordsman|Swordsman of Umbar
-; trp_i3_corsair_swordsman_pl|Swordsmen of Umbar
-; trp_i4_corsair_veteran_swordsman|Veteran Swordsman of Umbar
-; trp_i4_corsair_veteran_swordsman_pl|Veteran Swordsmen of Umbar
-; trp_i5_corsair_master_swordsman|Corsair Swordmaster
-; trp_i5_corsair_master_swordsman_pl|Corsair Swordmasters
-; trp_a4_corsair_assassin|Corsair Assassin
-; trp_a4_corsair_assassin_pl|Corsair Assassins
-; trp_a5_corsair_master_assassin|Corsair Assassin
-; trp_a5_corsair_master_assassin_pl|Corsair Assassins
-; trp_i4_corsair_veteran_spearman|Veteran Spearman of Umbar
-; trp_i4_corsair_veteran_spearman_pl|Veteran Spearmen of Umbar
-; trp_i5_corsair_master_spearman|Spearmaster of Umbar
-; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
-; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
-; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
-; trp_i1_isen_orc_snaga|Orc Snaga of Isengard
-; trp_i1_isen_orc_snaga_pl|Orc Snagas of Isengard
-; trp_i2_isen_orc|Orc of Isengard
-; trp_i2_isen_orc_pl|Orcs of Isengard
-; trp_i3_isen_large_orc|Large Orc of Isengard
-; trp_i3_isen_large_orc_pl|Large Orcs of Isengard
-; trp_i4_isen_fell_orc|Fell Orc of Isengard
-; trp_i4_isen_fell_orc_pl|Fell Orcs of Isengard
-; trp_i3_isen_large_orc_despoiler|Large Orc Despoiler
-; trp_i3_isen_large_orc_despoiler_pl|Large Orc Despoilers
-; trp_i4_isen_fell_orc_despoiler|Fell Orc Despoiler
-; trp_i4_isen_fell_orc_despoiler_pl|Fell Orc Despoilers
-; trp_ac2_isen_wolf_rider|Wolf Rider of Isengard
-; trp_ac2_isen_wolf_rider_pl|Wolf Riders of Isengard
-; trp_ac3_isen_warg_rider|Warg Rider of Isengard
-; trp_ac3_isen_warg_rider_pl|Warg Riders of Isengard
-; trp_ac4_isen_white_hand_rider|White Hand Rider
-; trp_ac4_isen_white_hand_rider_pl|White Hand Riders
-trp_warg_ghost_1b|Warg
-; trp_warg_ghost_1b_pl|Wargs
-trp_warg_ghost_1c|Warg
-; trp_warg_ghost_1c_pl|Wargs
-trp_warg_ghost_1d|Warg
-; trp_warg_ghost_1d_pl|Wargs
-trp_warg_ghost_a1b|Warg
-; trp_warg_ghost_a1b_pl|Wargs
-trp_warg_ghost_a1c|Gepantserde Warg
-; trp_warg_ghost_a1c_pl|Armored Wargs
-trp_warg_ghost_a2b|Gepantserde Warg
-; trp_warg_ghost_a2b_pl|Armored Wargs
-trp_warg_ghost_a2c|Gepantserde Warg
-; trp_warg_ghost_a2c_pl|Armored Wargs
-trp_warg_ghost_a3a|Gepantserde Warg
-; trp_warg_ghost_a3a_pl|Armored Wargs
-trp_warg_ghost_h|Grote Warg
-; trp_warg_ghost_h_pl|Huge Wargs
-; trp_a2_isen_uruk_tracker|Uruk Hai Tracker
-; trp_a2_isen_uruk_tracker_pl|Uruk Hai Trackers
-; trp_a3_isen_large_uruk_tracker|Large Uruk Hai Tracker
-; trp_a3_isen_large_uruk_tracker_pl|Large Uruk Hai Trackers
-; trp_a4_isen_fighting_uruk_tracker|Fighting Uruk Hai Tracker
-; trp_a4_isen_fighting_uruk_tracker_pl|Fighting Uruk Hai Trackers
-; trp_i6_isen_uruk_berserker|Fighting Uruk Hai Berserker
-; trp_i6_isen_uruk_berserker_pl|Fighting Uruk Hai Berserkers
-; trp_i1_isen_uruk_snaga|Uruk Hai Newborn
-; trp_i1_isen_uruk_snaga_pl|Uruk Hai Newborns
-; trp_i2_isen_uruk|Uruk Hai of Isengard
-; trp_i2_isen_uruk_pl|Uruk Hai of Isengard
-; trp_i3_isen_large_uruk|Large Uruk Hai of Isengard
-; trp_i3_isen_large_uruk_pl|Large Uruk Hai of Isengard
-; trp_i4_isen_fighting_uruk_warrior|Fighting Uruk Hai Warrior
-; trp_i4_isen_fighting_uruk_warrior_pl|Fighting Uruk Hai Warriors
-; trp_i5_isen_fighting_uruk_champion|Fighting Uruk Hai Champion
-; trp_i5_isen_fighting_uruk_champion_pl|Fighting Uruk Hai Champions
-; trp_i3_isen_uruk_pikeman|Uruk Hai Pikeman
-; trp_i3_isen_uruk_pikeman_pl|Uruk Hai Pikemen
-; trp_i4_isen_fighting_uruk_pikeman|Fighting Uruk Hai Pikeman
-; trp_i4_isen_fighting_uruk_pikeman_pl|Fighting Uruk Hai Pikemen
-; trp_i5_isen_uruk_standard_bearer|Uruk Hai Standard Bearer
-; trp_i5_isen_uruk_standard_bearer_pl|Uruk Hai Standard Bearers
-; trp_i1_mordor_uruk_snaga|Uruk Snaga of Mordor
-; trp_i1_mordor_uruk_snaga_pl|Uruk Snagas of Mordor
-; trp_i2_mordor_uruk|Uruk of Mordor
-; trp_i2_mordor_uruk_pl|Uruks of Mordor
-; trp_i3_mordor_large_uruk|Large Uruk of Mordor
-; trp_i3_mordor_large_uruk_pl|Large Uruks of Mordor
-; trp_i4_mordor_fell_uruk|Fell Uruk of Mordor
-; trp_i4_mordor_fell_uruk_pl|Fell Uruks of Mordor
-; trp_i3_mordor_uruk_slayer|Uruk Slayer of Mordor
-; trp_i3_mordor_uruk_slayer_pl|Uruk Slayers of Mordor
-; trp_i4_mordor_fell_uruk_slayer|Fell Uruk Slayer of Mordor
-; trp_i4_mordor_fell_uruk_slayer_pl|Fell Uruk Slayers of Mordor
-; trp_i5_mordor_black_uruk|Black Uruk of Barad Dur
-; trp_i5_mordor_black_uruk_pl|Black Uruks of Barad Dur
-; trp_i5_mordor_uruk_standard_bearer|Mordor Standard Bearer
-; trp_i5_mordor_uruk_standard_bearer_pl|Mordor Standard Bearers
-; trp_troll_of_moria|Cave Troll
-; trp_troll_of_moria_pl|Cave Trolls
-; trp_armoured_troll|Armored Troll
-; trp_armoured_troll_pl|Armored Trolls
-; trp_olog_hai|Olog Hai of Mordor
-; trp_olog_hai_pl|Olog Hai of Mordor
-; trp_ent|Ent
-; trp_ent_pl|Ents
-; trp_i1_guldur_orc_snaga|Orc Snaga of Dol Guldur
-; trp_i1_guldur_orc_snaga_pl|Orc Snagas of Dol Guldur
-; trp_a2_guldur_orc_tracker|Orc Tracker of Dol Guldur
-; trp_a2_guldur_orc_tracker_pl|Orc Trackers of Dol Guldur
-; trp_i1_mordor_orc_snaga|Orc Snaga of Mordor
-; trp_i1_mordor_orc_snaga_pl|Orc Snagas of Mordor
-; trp_i2_mordor_orc|Orc of Mordor
-; trp_i2_mordor_orc_pl|Orcs of Mordor
-; trp_i3_mordor_large_orc|Large Orc of Mordor
-; trp_i3_mordor_large_orc_pl|Large Orcs of Mordor
-; trp_i4_mordor_fell_orc|Fell Orc of Mordor
-; trp_i4_mordor_fell_orc_pl|Fell Orcs of Mordor
-; trp_c3_mordor_warg_rider|Warg Rider of Gorgoroth
-; trp_c3_mordor_warg_rider_pl|Warg Riders of Gorgoroth
-; trp_c4_mordor_great_warg_rider|Great Warg Rider of Udun
-; trp_c4_mordor_great_warg_rider_pl|Great Warg Riders of Udun
-; trp_i2_mordor_morgul_orc|Orc of Minas Morgul
-; trp_i2_mordor_morgul_orc_pl|Orcs of Minas Morgul
-; trp_i4_mordor_fell_morgul_orc|Fell Orc of Minas Morgul
-; trp_i4_mordor_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
-; trp_a3_guldur_large_orc_tracker|Large Orc Tracker of Dol Guldur
-; trp_a3_guldur_large_orc_tracker_pl|Large Orc Trackers of Dol Guldur
-; trp_a4_guldur_fell_orc_tracker|Fell Orc Tracker of Dol Guldur
-; trp_a4_guldur_fell_orc_tracker_pl|Fell Orc Trackers of Dol Guldur
-; trp_a2_mordor_orc_archer|Orc Archer of Mordor
-; trp_a2_mordor_orc_archer_pl|Orc Archers of Mordor
-; trp_a3_mordor_large_orc_archer|Large Orc Archer of Mordor
-; trp_a3_mordor_large_orc_archer_pl|Large Orc Archers of Mordor
-; trp_a4_mordor_fell_orc_archer|Fell Orc Archer of Mordor
-; trp_a4_mordor_fell_orc_archer_pl|Fell Orc Archers of Mordor
-; trp_c3_moria_wolf_rider|Wolf Rider of Moria
-; trp_c3_moria_wolf_rider_pl|Wolf Riders of Moria
-; trp_c4_moria_warg_rider|Warg Rider of Moria
-; trp_c4_moria_warg_rider_pl|Warg Riders of Moria
-; trp_c5_moria_clan_rider|Bolg Clan Rider
-; trp_c5_moria_clan_rider_pl|Bolg Clan Riders
-; trp_i1_moria_snaga|Snaga of Moria
-; trp_i1_moria_snaga_pl|Snagas of Moria
-; trp_i2_moria_goblin|Goblin of Moria
-; trp_i2_moria_goblin_pl|Goblins of Moria
-; trp_i3_moria_large_goblin|Large Goblin of Moria
-; trp_i3_moria_large_goblin_pl|Large Goblins of Moria
-; trp_i4_moria_fell_goblin|Fell Goblin of Moria
-; trp_i4_moria_fell_goblin_pl|Fell Goblins of Moria
-; trp_a2_moria_goblin_archer|Goblin Archer of Moria
-; trp_a2_moria_goblin_archer_pl|Goblin Archers of Moria
-; trp_a3_moria_large_goblin_archer|Large Goblin Archer of Moria
-; trp_a3_moria_large_goblin_archer_pl|Large Goblin Archers of Moria
-; trp_a4_moria_fell_goblin_archer|Fell Goblin Archer of Moria
-; trp_a4_moria_fell_goblin_archer_pl|Fell Goblin Archers of Moria
-; trp_i1_gunda_goblin|Gundabad Goblin
-; trp_i1_gunda_goblin_pl|Gundabad Goblins
-; trp_i2_gunda_orc|Gundabad Orc
-; trp_i2_gunda_orc_pl|Gundabad Orcs
-; trp_i3_gunda_orc_fighter|Gundabad Orc Fighter
-; trp_i3_gunda_orc_fighter_pl|Gundabad Orc Fighters
-; trp_i4_gunda_orc_warrior|Gundabad Orc Warrior
-; trp_i4_gunda_orc_warrior_pl|Gundabad Orc Warriors
-; trp_i4_gunda_orc_berserker|Gundabad Orc Berserker
-; trp_i4_gunda_orc_berserker_pl|Gundabad Orc Berserkers
-; trp_ca4_gunda_skirmisher|Gundabad Skirmisher
-; trp_ca4_gunda_skirmisher_pl|Gundabad Skirmishers
-; trp_ca5_gunda_clan_skirmisher|Goblin North Clan Skirmisher
-; trp_ca5_gunda_clan_skirmisher_pl|Goblin North Clan Skirmishers
-; trp_c3_gunda_goblin_rider|Gundabad Goblin Rider
-; trp_c3_gunda_goblin_rider_pl|Gundabad Goblin Riders
-; trp_c4_gunda_warg_rider|Gundabad Warg Rider
-; trp_c4_gunda_warg_rider_pl|Gundabad Warg Riders
-; trp_c5_gunda_clan_rider|Goblin North Clan Rider
-; trp_c5_gunda_clan_rider_pl|Goblin North Clan Riders
-; trp_mountain_goblin2|Mountain Goblin
-; trp_mountain_goblin2_pl|Mountain Goblins
-; trp_tribal_orc2|Tribal Orc
-trp_tribal_orc2_pl|Stammen Orks
-; trp_tribal_orc_warrior2|Tribal Orc Warrior
-; trp_tribal_orc_warrior2_pl|Tribal Orc Warriors
-; trp_i5_gunda_orc_champion|Gundabad Orc Champion
-; trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
-; trp_i2_mordor_num_renegade|Black Numenorean Renegade
-; trp_i2_mordor_num_renegade_pl|Black Numenorean Renegades
-; trp_i3_mordor_num_warrior|Black Numenorean Warrior
-; trp_i3_mordor_num_warrior_pl|Black Numenorean Warriors
-; trp_i4_mordor_num_vet_warrior|Black Numenorean Veteran Warrior
-; trp_i4_mordor_num_vet_warrior_pl|Black Numenorean Veteran Warriors
-; trp_i5_mordor_num_champion|Black Numenorean Champion
-; trp_i5_mordor_num_champion_pl|Black Numenorean Champions
-; trp_i5_mordor_num_assassin|Black Numenorean Assassin
-; trp_i5_mordor_num_assassin_pl|Black Numenorean Assassins
-; trp_c4_mordor_num_horseman|Black Numenorean Horseman
-; trp_c4_mordor_num_horseman_pl|Black Numenorean Horsemen
-; trp_c5_mordor_num_knight|Black Numenorean Horsemaster
-; trp_c5_mordor_num_knight_pl|Black Numenorean Horsemasters
-; trp_noldorin_commander|Noldorin Commander
-; trp_noldorin_commander_pl|Noldorin Commanders
-; trp_elf_captain_of_lothlorien|Elf Captain of Lothlorien
-; trp_elf_captain_of_lothlorien_pl|Elf Captains of Lothlorien
-; trp_lothlorien_lieutenant|Lothlorien Lieutenant
-; trp_lothlorien_lieutenant_pl|Lothlorien Lieutenants
-; trp_elf_captain_of_mirkwood|Elf Captain of Greenwood
-; trp_elf_captain_of_mirkwood_pl|Elf Captains of Greenwood
-; trp_mirkwood_lieutenant|Greenwood Lieutenant
-; trp_mirkwood_lieutenant_pl|Greenwood Lieutenants
-; trp_elf_captain_of_rivendell|Elf Captain of Rivendell
-; trp_elf_captain_of_rivendell_pl|Elf Captains of Rivendell
-; trp_rivendell_lieutenant|Rivendell Lieutenant
-; trp_rivendell_lieutenant_pl|Rivendell Lieutenants
-; trp_lieutenant_of_rohan|Lieutenant of Rohan
-; trp_lieutenant_of_rohan_pl|Lieutenants of Rohan
-; trp_captain_of_rohan|Captain of Rohan
-; trp_captain_of_rohan_pl|Captains of Rohan
-; trp_high_captain_of_rohan|High Captain of Rohan
-; trp_high_captain_of_rohan_pl|High Captains of Rohan
-; trp_lieutenant_of_isengard|Lieutenant of Isengard
-; trp_lieutenant_of_isengard_pl|Lieutenants of Isengard
-; trp_captain_of_isengard|Captain of Isengard
-; trp_captain_of_isengard_pl|Captains of Isengard
-; trp_high_captain_of_isengard|High Captain of Isengard
-; trp_high_captain_of_isengard_pl|High Captains of Isengard
-; trp_lieutenant_of_mordor|Lieutenant of Mordor
-; trp_lieutenant_of_mordor_pl|Lieutenants of Mordor
-; trp_captain_of_mordor|Captain of Mordor
-; trp_captain_of_mordor_pl|Captains of Mordor
-; trp_high_captain_of_mordor|High Captain of Mordor
-; trp_high_captain_of_mordor_pl|High Captains of Mordor
-; trp_easterling_chieftain|Variag Chieftain
-; trp_easterling_chieftain_pl|Variag Chieftains
-; trp_easterling_lieutenant|Variag War Priest
-; trp_easterling_lieutenant_pl|Variag War Priests
-; trp_harad_chieftain|Harad Chieftain
-; trp_harad_chieftain_pl|Harad Chieftains
-; trp_harad_lieutenant|Harad Lieutenant
-; trp_harad_lieutenant_pl|Harad Lieutenants
-; trp_black_numenorean_captain|Black Numenorean Captain
-; trp_black_numenorean_captain_pl|Black Numenorean Captains
-; trp_black_numenorean_lieutenant|Black Numenorean Lieutenant
-; trp_black_numenorean_lieutenant_pl|Black Numenorean Lieutenants
-; trp_a5_dun_night_wolf|Dunnish Night Wolf
-; trp_a5_dun_night_wolf_pl|Dunnish Night Wolfs
-; trp_dunnish_lieutenant|Dunnish Hetman
-; trp_dunnish_lieutenant_pl|Dunnish Hetmen
-; trp_goblin_chieftain|Goblin Chieftain
-; trp_goblin_chieftain_pl|Goblin Chieftains
-trp_captain_of_gondor|Kapitein van Gondor
-; trp_captain_of_gondor_pl|Captains of Gondor
-trp_nobleman|Edelman
-trp_nobleman_pl|Edelmannen
-; trp_gondor_agent|Gondor Agent
-; trp_gondor_agent_pl|Gondor Agents
-; trp_rohan_agent|Rohan Agent
-; trp_rohan_agent_pl|Rohan Agents
-; trp_mordor_agent|Mordor Agent
-; trp_mordor_agent_pl|Mordor Agents
-; trp_isengard_agent|Isengard Agent
-; trp_isengard_agent_pl|Isengard Agents
-; trp_looter|Looter
-; trp_looter_pl|Looters
-trp_bandit|Bandiet
-trp_bandit_pl|Bandieten
-trp_brigand|Rover
-trp_brigand_pl|Rovers
-trp_mountain_bandit|Berg Bandiet
-trp_mountain_bandit_pl|Berg Bandieten
-trp_forest_bandit|Bos Bandiet
-trp_forest_bandit_pl|Bos Bandieten
-; trp_sea_raider|Sea Raider
-; trp_sea_raider_pl|Sea Raiders
-; trp_steppe_bandit|Steppe Bandit
-; trp_steppe_bandit_pl|Steppe Bandits
-; trp_manhunter|Manhunter
-trp_manhunter_pl|\nManhunters
-; trp_kidnapped_girl|Kidnapped Girl
-; trp_kidnapped_girl_pl|Kidnapped Girls
-trp_refugee|Vluchteling
-trp_refugee_pl|Vluchtelingen
-; trp_peasant_woman|Peasant Woman
-; trp_peasant_woman_pl|Peasant Women
-; trp_caravan_master|Caravan Master
-; trp_caravan_master_pl|Caravan Masters
-; trp_caravan_guard|Caravan Guard
-; trp_caravan_guard_pl|Caravan Guards
-trp_messenger_man|Boodschapper
-trp_messenger_man_pl|Boodschappers
-trp_messenger_elf|Boodschapper
-trp_messenger_elf_pl|Boodschappers
-trp_messenger_dwarf|Boodschapper
-trp_messenger_dwarf_pl|Boodschappers
-trp_messenger_orc|Boodschapper
-trp_messenger_orc_pl|Boodschappers
-trp_messenger_evil_man|Boodschapper
-trp_messenger_evil_man_pl|Boodschappers
-trp_town_walker_1|stedeling
-trp_town_walker_1_pl|Burger
-trp_town_walker_2|Stadsvrouw
-trp_town_walker_2_pl|Stadsvrouwen
-; trp_village_walker_1|Villager
-; trp_village_walker_1_pl|Villagers
-; trp_village_walker_2|Villager
-; trp_village_walker_2_pl|Villagers
-trp_spy_walker_1|stedeling
-trp_spy_walker_1_pl|Burger
-trp_spy_walker_2|Stadsvrouw
-trp_spy_walker_2_pl|Stadsvrouwen
-trp_walker_man_gondor_black|stedeling
-trp_walker_man_gondor_white|stedeling
-trp_walker_man_gondor_blue|stedeling
-trp_walker_man_gondor_green|stedeling
-; trp_walker_man_rohan_t|Rohan Townsman
-; trp_walker_man_rohan_d|Rohan Townsman
-; trp_walker_woman_rohan_t|Rohan Maiden
-; trp_walker_woman_rohan_d|Rohan Maiden
-; trp_walker_woman_gondor_b|Gondor Woman
-; trp_walker_woman_gondor_bw|Gondor Woman
-; trp_walker_woman_gondor_w|Gondor Noble
-; trp_ramun_the_slave_trader|Ramun the slave trader
-; trp_guide|Quick Jimmy
-; trp_galeas|Galeas
-trp_farmer_from_bandit_village|Boer
-trp_farmer_from_bandit_village_pl|Boeren
-trp_trainer_1|Trainer
-trp_trainer_2|Trainer
-trp_trainer_3|Trainer
-trp_trainer_4|Trainer
-trp_trainer_gondor|Trainer
-trp_trainer_rohan|Trainer
-trp_trainer_dale|Trainer
-trp_trainer_elf|Trainer
-trp_trainer_beorn|Trainer
-trp_trainer_dwarf|Trainer
-trp_trainer_mordor|Trainer
-trp_trainer_isengard|Trainer
-trp_trainer_khand|Trainer
-trp_trainer_rhun|Trainer
-trp_trainer_harad|Trainer
-trp_trainer_umbar|Trainer
-; trp_ransom_broker_1|Ransom Broker
-; trp_ransom_broker_2|Ransom Broker
-; trp_ransom_broker_3|Ransom Broker
-; trp_ransom_broker_4|Ransom Broker
-; trp_ransom_broker_5|Ransom Broker
-; trp_ransom_broker_6|Ransom Broker
-; trp_ransom_broker_7|Ransom Broker
-; trp_ransom_broker_8|Ransom Broker
-; trp_ransom_broker_9|Ransom Broker
-; trp_ransom_broker_10|Ransom Broker
-trp_tavern_traveler_1|Reiziger
-trp_tavern_traveler_2|Reiziger
-trp_tavern_traveler_3|Reiziger
-trp_tavern_traveler_4|Reiziger
-trp_tavern_traveler_5|Reiziger
-trp_tavern_traveler_6|Reiziger
-trp_tavern_traveler_7|Reiziger
-trp_tavern_traveler_8|Reiziger
-trp_tavern_traveler_9|Reiziger
-trp_tavern_traveler_10|Reiziger
-; trp_tavern_minstrel_1|Minstrel
-; trp_npc1|Mablung
-; trp_npc2|Cirdil
-; trp_npc3|Ulfas
-; trp_npc4|Galmyne
-; trp_npc5|Glorfindel
-; trp_npc6|Luevanna
-; trp_npc7|Kili Goldfinger
-; trp_npc8|Faniul
-; trp_npc9|Gulm
-; trp_npc10|Durgash
-; trp_npc11|Ufthak
-; trp_npc12|Gorbag
-; trp_npc13|Lykyada
-; trp_npc14|Fuldimir
-; trp_npc15|Bolzog
-; trp_npc16|Varfang
-; trp_npc17|Dimborn
-; trp_knight_6_2|Golasgil
-; trp_gondor_lord|Steward Denethor
-; trp_gondor_lord_pl|Steward
-; trp_rohan_lord|King Theoden
-trp_rohan_lord_pl|Koning
-; trp_isengard_lord|Saruman
-trp_isengard_lord_pl|Meester
-; trp_mordor_lord|Mouth of Sauron
-; trp_mordor_lord_pl|Satrap
-; trp_harad_lord|Chief Ul-Ulcari
-; trp_harad_lord_pl|Chief
-; trp_rhun_lord|Jarl Helcaroth
-; trp_rhun_lord_pl|Jarl
-; trp_khand_lord|Shibh Krukmahur
-; trp_khand_lord_pl|Shibh
-; trp_umbar_lord|Admiral Tulmir
-trp_umbar_lord_pl|Admiraal
-; trp_lorien_lord|Lady Galadriel
-; trp_lorien_lord_pl|Lady
-; trp_imladris_lord|Lord Elrond
-; trp_imladris_lord_pl|Lord
-; trp_woodelf_lord|King Thranduil
-trp_woodelf_lord_pl|Koning
-; trp_moria_lord|Master Bolg the Lesser
-trp_moria_lord_pl|Meester
-; trp_guldur_lord|Master Fuinur
-trp_guldur_lord_pl|Meester
-; trp_gundabad_lord|Master Burza Krual
-trp_gundabad_lord_pl|Meester
-; trp_dale_lord|King Brand
-trp_dale_lord_pl|Koning
-; trp_dwarf_lord|King Dain II Ironfoot
-trp_dwarf_lord_pl|Koning
-; trp_dunland_lord|Chief Daeglaf the Black
-; trp_dunland_lord_pl|Chief
-; trp_beorn_lord|Chief Grimbeorn the Old
-; trp_beorn_lord_pl|Chief
-; trp_lorien_marshall|Celeborn
-; trp_pippin_notmet|halfling
-; trp_merry_notmet|halfling
-; trp_pippin|Pippin
-; trp_merry|Merry
-; trp_knight_1_1|Angbor the Fearless
-; trp_knight_1_2|Húrin of the Keys
-; trp_knight_1_3|Prince Imrahil
-; trp_knight_1_4|Orthalion
-; trp_knight_1_5|Duinhir
-; trp_knight_1_6|Hirluin the Fair
-; trp_knight_1_7|Faramir
-; trp_knight_1_8|Forlong the Fat
-; trp_knight_1_9|Grimbold
-; trp_knight_1_10|Erkenbrand
-; trp_knight_1_11|Elfhelm
-; trp_knight_1_12|Hama
-; trp_knight_1_13|Gamling
-; trp_knight_1_14|Éomer
-; trp_knight_1_15|Ugluk
-; trp_knight_1_16|Mauhur
-; trp_knight_1_17|Mog the Seven-fingered
-; trp_knight_1_18|Hushnak Longshanks
-; trp_knight_1_19|Gridash the Tree-biter
-; trp_knight_1_20|Gronk the Man-eater
-; trp_knight_2_1|Captain Mortakh
-; trp_knight_2_2|Berúthiel
-; trp_knight_2_3|Skang
-; trp_knight_2_4|Pharakhâd The Bastard
-; trp_knight_2_5|Grishnakh
-; trp_knight_2_51|Gothmog
-; trp_knight_2_51_pl|Lieutenant
-; trp_knight_2_6|Chieftain Karna the Lion
-; trp_knight_2_7|Chieftain Na’man
-; trp_knight_2_8|Chieftain Haarith
-; trp_knight_2_11|Kusulak
-; trp_knight_2_12|Ulwarth the Balchoth
-; trp_knight_2_13|Brodda
-; trp_knight_2_16|Torask
-; trp_knight_2_17|Lurmsakun
-; trp_knight_3_1|Captain Morbir
-; trp_knight_3_2|Captain Angamaitë
-; trp_knight_3_3|Captain Sangahyando
-; trp_knight_3_6|Haldir
-; trp_knight_3_7|Orophin
-; trp_knight_3_11|Elladan
-; trp_knight_3_12|Elrohir
-; trp_knight_3_13|Halbarad
-; trp_knight_3_16|Miriel
-; trp_knight_3_17|Gladvaethor
-; trp_knight_4_1|Whip Snog
-; trp_knight_4_2|Whip Snotgor
-; trp_knight_4_6|General Tuskim
-; trp_knight_4_7|General Mugslag
-; trp_knight_4_11|Ruel
-; trp_knight_4_12|Beranor Blackfur
-; trp_knight_4_16|Whip Brolgukhsh
-; trp_knight_4_17|Whip Grumrunt
-; trp_knight_4_18|Whip Grimsob
-; trp_knight_5_1|Lord Halward
-; trp_knight_5_2|Lord Bard
-; trp_knight_5_3|Lord Esgarain
-; trp_knight_5_6|Fulgni Longbeard
-; trp_knight_5_7|Thorin Stonehelm
-; trp_knight_5_11|Chief Fudreim
-; trp_knight_5_12|Chief Wulf
-; trp_knight_6_1|Dervorin
-; trp_smith_mtirith|Berethor the Smith
-; trp_smith_mtirith_pl|Steward's smiths
-; trp_smith_pelargir|Hallatan Metalmaster
-; trp_smith_pelargir_pl|smithy
-; trp_smith_linhir|Bor the Armorer
-; trp_smith_linhir_pl|smithy
-; trp_smith_dolamroth|Haldad the Smith
-; trp_smith_dolamroth_pl|Amroth smiths
-; trp_smith_edhellond|Ryis Ironbender
-; trp_smith_edhellond_pl|smithy
-; trp_smith_lossarnach|Berin Axemaker
-; trp_smith_lossarnach_pl|smithy
-; trp_smith_tarnost|Harandil Steelhammer
-; trp_smith_tarnost_pl|smithy
-; trp_smith_erech|Lorne the Black
-; trp_smith_erech_pl|smithy
-; trp_smith_pinnath|Tarandil Swordmaker
-; trp_smith_pinnath_pl|smithy
-; trp_smith_eosgiliath|Bzurg the Looter
-; trp_smith_eosgiliath_pl|smithy
-; trp_smith_wosgiliath|Gardil
-; trp_smith_wosgiliath_pl|makeshift smithy
-; trp_smith_calembel|Agronom
-; trp_smith_calembel_pl|smithy
-; trp_smith_hannun|Fal the Ranger Smith
-; trp_smith_hannun_pl|ranger gear stash
-; trp_smith_candros|Kalimdor
-; trp_smith_candros_pl|smithy
-; trp_smith_edoras|Eaoden Steelmaster
-; trp_smith_edoras_pl|King's smithy
-; trp_smith_aldburg|Fulm Ironhoof
-; trp_smith_aldburg_pl|smithy
-; trp_smith_hornburg|Aldhelm
-; trp_smith_hornburg_pl|smithy
-; trp_smith_eastemnet|Eadfrid
-; trp_smith_eastemnet_pl|smithy
-; trp_smith_westfold|Deor Helmmaker
-; trp_smith_westfold_pl|smithy
-; trp_smith_westemnet|Armourer
-; trp_smith_westemnet_pl|smithy
-; trp_smith_eastfold|Eaderan Ironcarver
-; trp_smith_eastfold_pl|smithy
-; trp_smith_morannon|Hurbag Gateforger
-; trp_smith_morannon_pl|smithy
-; trp_smith_mmorgul|Orgurz Firebelcher
-; trp_smith_mmorgul_pl|smithy
-; trp_town_24_smith|Boz Ironspoiler
-; trp_town_24_smith_pl|smithy
-; trp_smith_orc_patrol|Glugz Ironfinger
-; trp_smith_orc_patrol_pl|camp smithy
-; trp_smith_oscamp|Kugash Ironlover
-; trp_smith_oscamp_pl|camp smithy
-; trp_smith_isengard|Burz Ironbasher
-; trp_smith_isengard_pl|underground smithy
-; trp_smith_uoutpost|Gurzuk Irontooth
-; trp_smith_uoutpost_pl|outpost smithy
-; trp_smith_uhcamp|Rabzug Rusteater
-; trp_smith_uhcamp_pl|camp smithy
-; trp_smith_urcamp|Glurk
-; trp_smith_urcamp_pl|camp smithy
-; trp_smith_cgaladhon|Dirufin the Bowyer
-; trp_smith_cgaladhon_pl|elven weaponmakers
-; trp_smith_cdolen|Dimirian the Fletcher
-; trp_smith_cdolen_pl|elven weaponmakers
-; trp_smith_camroth|Getasistan
-; trp_smith_camroth_pl|elven weaponmakers
-; trp_smith_thranduils_halls|Thurinor
-; trp_smith_thranduils_halls_pl|smithy
-; trp_smith_woodelf_camp|Calechir
-; trp_smith_woodelf_camp_pl|smithy
-; trp_smith_beorn|Beornalaf Axemaker
-; trp_smith_beorn_pl|smithy
-; trp_smith_moria|Burgak Forger
-; trp_smith_moria_pl|smithy
-; trp_smith_dale|Ardel Firehand
-; trp_smith_dale_pl|smithy
-; trp_smith_esgaroth|Kelegarn The Bowyer
-; trp_smith_esgaroth_pl|smithy
-; trp_smith_erebor|Thror the Hammerer
-; trp_smith_erebor_pl|praised Dwarven smiths
-; trp_smith_dunland|Dorrowuld Ironpike
-; trp_smith_dunland_pl|smithy
-; trp_smith_harad|Har Steelbender
-; trp_smith_harad_pl|smithy
-; trp_smith_khand|Pushurt The Haggler
-; trp_smith_khand_pl|smithy
-; trp_smith_umbar|Fuinir the Forger
-; trp_smith_umbar_pl|smithy
-; trp_smith_imladris|Duifirian
-; trp_smith_imladris_pl|elven weaponmakers
-; trp_smith_dolguldur|Shtazg Dulbash
-; trp_smith_dolguldur_pl|smithy
-; trp_smith_north_rhun|Ognjemir Kladivo
-; trp_smith_north_rhun_pl|makeshift smithy
-; trp_smith_gundabad|Blurg Snowseller
-; trp_smith_gundabad_pl|smithy
-; trp_smith_ironhill|Ironhill Smith
-; trp_smith_ironhill_pl|Dwarven camp smiths
-; trp_town_50_weaponsmith|Shruklug Knife Grinder
-; trp_town_50_weaponsmith_pl|smithy
-; trp_smith_gondor_ac|Bor the Armorer
-; trp_smith_gondor_ac_pl|camp smithy
-; trp_smith_rohan_ac|Deor Helmmaker
-; trp_smith_rohan_ac_pl|camp smithy
-; trp_smith_mordor_ac|Hurbag Gateforger
-; trp_smith_mordor_ac_pl|smithy
-; trp_smith_isengard_ac|Burz Ironbasher
-; trp_smith_isengard_ac_pl|underground smithy
-; trp_smith_lorien_ac|Dimirian the Fletcher
-; trp_smith_lorien_ac_pl|elven weaponmakers
-; trp_smith_woodelf_ac|Dhoelath
-; trp_smith_woodelf_ac_pl|smithy
-; trp_smith_dwarf_ac|Ironhill Smith
-; trp_smith_dwarf_ac_pl|Dwarven camp smiths
-; trp_smith_gundabad_ac|Blurg Snowseller
-; trp_smith_gundabad_ac_pl|smithy
-; trp_smith_rhun_ac|Branimir Bronnik
-; trp_smith_rhun_ac_pl|makeshift smithy
-; trp_smith_guldur_ac|Shtazg Dulbash
-; trp_smith_guldur_ac_pl|smithy
-; trp_smith_imladris_ac|Duifirian
-; trp_smith_imladris_ac_pl|elven weaponmakers
-; trp_smith_dunland_ac|Dorrowuld Ironpike
-; trp_smith_dunland_ac_pl|smithy
-; trp_smith_harad_ac|Har Steelbender
-; trp_smith_harad_ac_pl|smithy
-; trp_smith_khand_ac|Pushurt The Haggler
-; trp_smith_khand_ac_pl|smithy
-; trp_smith_umbar_ac|Fuinir the Forger
-; trp_smith_umbar_ac_pl|smithy
-; trp_barman_mtirith|Tavern Keeper
-; trp_barman_mtirith_pl|the Citadel
-; trp_barman_pelargir|Tavern Keeper
-trp_barman_pelargir_pl|het Kasteel
-; trp_barman_linhir|Tavern Keeper
-trp_barman_linhir_pl|het Kasteel
-; trp_barman_dolamroth|Tavern Keeper
-trp_barman_dolamroth_pl|het Kasteel
-; trp_barman_edhellond|Tavern Keeper
-trp_barman_edhellond_pl|het Kasteel
-; trp_barman_lossarnach|Tavern Keeper
-trp_barman_lossarnach_pl|het Kasteel
-; trp_barman_tarnost|Tavern Keeper
-trp_barman_tarnost_pl|het Kasteel
-; trp_barman_erech|Tavern Keeper
-trp_barman_erech_pl|het Kasteel
-; trp_barman_pinnath|Tavern Keeper
-trp_barman_pinnath_pl|het Kasteel
-; trp_barman_hannun|Tavern Keeper
-trp_barman_hannun_pl|de Geheime Grot
-; trp_barman_calembel|Tavern Keeper
-trp_barman_calembel_pl|het Kasteel
-; trp_barman_edoras|Tavern Keeper
-; trp_barman_edoras_pl|Meduseld, the Golden Hall
-; trp_barman_aldburg|Tavern Keeper
-trp_barman_aldburg_pl|het Kasteel
-; trp_barman_hornburg|Tavern Keeper
-; trp_barman_hornburg_pl|the Lord Halls
-; trp_barman_eastemnet|Tavern Keeper
-trp_barman_eastemnet_pl|het Kasteel
-; trp_barman_westfold|Tavern Keeper
-trp_barman_westfold_pl|het Kasteel
-; trp_barman_westemnet|Tavern Keeper
-trp_barman_westemnet_pl|het Kasteel
-; trp_barman_eastfold|Tavern Keeper
-trp_barman_eastfold_pl|het Kasteel
-; trp_barman_baraddur|Tavern Keeper
-trp_barman_baraddur_pl|het Kasteel
-; trp_barman_morannon|Tavern Keeper
-; trp_barman_morannon_pl|the Leader's Cave
-; trp_barman_mmorgul|Tavern Keeper
-trp_barman_mmorgul_pl|de Toren
-; trp_barman_cungol|Tavern Keeper
-trp_barman_cungol_pl|het Kasteel
-; trp_barman_isengard|Tavern Keeper
-; trp_barman_isengard_pl|the tower of Orthanc
-; trp_barman_cgaladhon|Tavern Keeper
-; trp_barman_cgaladhon_pl|the Tree castle
-; trp_barman_cdolen|Tavern Keeper
-; trp_barman_cdolen_pl|the Tree castle
-; trp_barman_camroth|Tavern Keeper
-; trp_barman_camroth_pl|the Tree castle
-; trp_barman_thalls|Tavern Keeper
-; trp_barman_thalls_pl|the Throne Room
-; trp_barman_beorn|Tavern Keeper
-; trp_barman_beorn_pl|Beorn's Hall
-; trp_barman_moria|Tavern Keeper
-; trp_barman_moria_pl|the Chief's Chamber
-; trp_barman_dale|Tavern Keeper
-trp_barman_dale_pl|het Kasteel
-; trp_barman_esgaroth|Tavern Keeper
-; trp_barman_esgaroth_pl|the Hall
-; trp_barman_erebor|Tavern Keeper
-; trp_barman_erebor_pl|the Great Chamber of Thrór
-; trp_barman_dolguldur|Tavern Keeper
-trp_barman_dolguldur_pl|het Kasteel
-; trp_merchant_mtirith|Supply Master
-trp_merchant_mtirith_pl|stal en warenhuis
-; trp_merchant_pelargir|Supply Master
-trp_merchant_pelargir_pl|stal en warenhuis
-; trp_merchant_linhir|Supply Master
-trp_merchant_linhir_pl|stal en warenhuis
-; trp_merchant_dolamroth|Supply Master
-trp_merchant_dolamroth_pl|stal en warenhuis
-; trp_merchant_edhellond|Supply Master
-trp_merchant_edhellond_pl|stal en warenhuis
-; trp_merchant_lossarnach|Supply Master
-trp_merchant_lossarnach_pl|stal en warenhuis
-; trp_merchant_tarnost|Supply Master
-trp_merchant_tarnost_pl|stal en warenhuis
-; trp_merchant_erech|Supply Master
-trp_merchant_erech_pl|stal en warenhuis
-; trp_merchant_pinnath|Supply Master
-trp_merchant_pinnath_pl|stal en warenhuis
-; trp_merchant_eosgiliath|Supply Master
-trp_merchant_eosgiliath_pl|stal en warenhuis
-; trp_merchant_wosgiliath|Supply Master
-trp_merchant_wosgiliath_pl|stal en warenhuis
-; trp_town_12_horse_merchant|Supply Master
-trp_town_12_horse_merchant_pl|stal en warenhuis
-; trp_town_13_horse_merchant|Supply Master
-trp_town_13_horse_merchant_pl|stal en warenhuis
-; trp_merchant_edoras|Supply Maiden
-trp_merchant_edoras_pl|stal en warenhuis
-; trp_merchant_aldburg|Supply Master
-; trp_merchant_aldburg_pl|King's stable and warehouse
-; trp_merchant_hornburg|Supply Master
-trp_merchant_hornburg_pl|stal en warenhuis
-; trp_merchant_eastemnet|Supply Master
-trp_merchant_eastemnet_pl|stal en warenhuis
-; trp_merchant_westfold|Supply Maiden
-trp_merchant_westfold_pl|stal en warenhuis
-; trp_merchant_westemnet|Supply Maiden
-trp_merchant_westemnet_pl|stal en warenhuis
-; trp_merchant_eastfold|Supply Maiden
-trp_merchant_eastfold_pl|stal en warenhuis
-; trp_town_21_horse_merchant|Supply Master
-; trp_town_21_horse_merchant_pl|pit and warehouse
-; trp_merchant_morannon|Supply Master
-; trp_merchant_morannon_pl|pit and warehouse
-; trp_merchant_mmorgul|Supply Master
-; trp_merchant_mmorgul_pl|pit and warehouse
-; trp_town_24_horse_merchant|Supply Master
-; trp_town_24_horse_merchant_pl|pit and warehouse
-; trp_merchant_orc_patrol|Supply Master
-; trp_merchant_orc_patrol_pl|camp stash
-; trp_merchant_isengard|Supply Master
-; trp_merchant_isengard_pl|camp stash
-; trp_town_27_horse_merchant|Supply Master
-; trp_town_27_horse_merchant_pl|warg pit and supplies
-; trp_merchant_uoutpost|Supply Master
-; trp_merchant_uoutpost_pl|warg pit and supplies
-; trp_merchant_uhcamp|Supply Master
-; trp_merchant_uhcamp_pl|warg pit and supplies
-; trp_merchant_urcamp|Supply Master
-; trp_merchant_urcamp_pl|warg pit and supplies
-; trp_merchant_cgaladhon|Supply Master
-; trp_merchant_cgaladhon_pl|elven supplies
-; trp_merchant_cdolen|Supply Master
-; trp_merchant_cdolen_pl|elven supplies
-; trp_merchant_camroth|Supply Master
-; trp_merchant_camroth_pl|elven supplies
-; trp_merchant_thranduils_halls|Supply Master
-; trp_merchant_thranduils_halls_pl|elven supplies
-; trp_merchant_woodelf_camp|Supply Master
-; trp_merchant_woodelf_camp_pl|elven supplies
-; trp_merchant_woodmen|Supply Master
-trp_merchant_woodmen_pl|stal en warenhuis
-; trp_merchant_beorn|Supply Master
-trp_merchant_beorn_pl|stal en warenhuis
-; trp_merchant_moria|Supply Master
-; trp_merchant_moria_pl|warg pit and supplies
-; trp_merchant_dale|Supply Master
-trp_merchant_dale_pl|stal en warenhuis
-; trp_merchant_esgaroth|Supply Master
-trp_merchant_esgaroth_pl|stal en warenhuis
-; trp_merchant_erebor|Supply Master
-; trp_merchant_erebor_pl|Dwarven supplies
-; trp_merchant_dunland|Dun Stash Master
-; trp_merchant_dunland_pl|camp stash
-; trp_merchant_harad|Harad Stash Master
-; trp_merchant_harad_pl|camp stash
-; trp_merchant_khand|Khand Stash Master
-; trp_merchant_khand_pl|camp stash
-; trp_merchant_umbar|Supply Master
-; trp_merchant_umbar_pl|camp stash
-; trp_merchant_imladris|Supply Master
-; trp_merchant_imladris_pl|camp supplies
-; trp_merchant_dolguldur|Supply Master
-trp_merchant_dolguldur_pl|stal en warenhuis
-; trp_merchant_north_rhun|Supply Master
-; trp_merchant_north_rhun_pl|camp stash
-; trp_merchant_south_rhun|Supply Master
-; trp_merchant_south_rhun_pl|camp stash
-; trp_merchant_gundabad|Supply Master
-; trp_merchant_gundabad_pl|camp stash
-; trp_merchant_ironhill|Supply Master
-; trp_merchant_ironhill_pl|Dwarven supplies
-; trp_town_50_horse_merchant|Gobrip Yellowtooth
-; trp_town_50_horse_merchant_pl|warg pit and supplies
-; trp_merchant_calembel|Supply Master
-trp_merchant_calembel_pl|stal en warenhuis
-; trp_elder_mtirith|Tirith Guildmaster
-; trp_elder_mtirith_pl|the White City
-; trp_elder_pelargir|Sailor Guildmaster
-trp_elder_pelargir_pl|de stad
-; trp_elder_linhir|Linhir Guildmaster
-trp_elder_linhir_pl|de stad
-; trp_elder_dolamroth|Dol Amroth Guildmaster
-trp_elder_dolamroth_pl|de stad
-; trp_elder_edhellond|Edhellond Guildmaster
-trp_elder_edhellond_pl|de stad
-; trp_elder_lossarnach|Lossarnach Guildmaster
-trp_elder_lossarnach_pl|het dorp
-; trp_elder_tarnost|Tarnost Guildmaster
-trp_elder_tarnost_pl|het dorp
-; trp_elder_erech|Erech Guildmaster
-trp_elder_erech_pl|het dorp
-; trp_elder_pinnath|Pinnath Tribe Elder
-trp_elder_pinnath_pl|het dorp
-; trp_elder_ethring|Calembel Guildmaster
-trp_elder_ethring_pl|de stad
-; trp_elder_henneth|Ranger Guildmaster
-; trp_elder_henneth_pl|the hideout
-; trp_elder_cairandros|Cair Andros Guildmaster
-; trp_elder_cairandros_pl|the island fortress
-; trp_elder_edoras|Edoras Thain
-trp_elder_edoras_pl|de stad
-; trp_elder_aldburg|Aldburg Thain
-trp_elder_aldburg_pl|het dorp
-; trp_elder_hornburg|Hornburg Thain
-; trp_elder_hornburg_pl|the fortress
-; trp_elder_eastemnet|East Emnet Thain
-trp_elder_eastemnet_pl|het dorp
-; trp_elder_westfold|Westfold Thain
-trp_elder_westfold_pl|het dorp
-; trp_elder_westemnet|West Emnet Thain
-trp_elder_westemnet_pl|het dorp
-; trp_elder_eastfold|Eastfold Thain
-trp_elder_eastfold_pl|het dorp
-; trp_elder_morannon|Morannon Chief
-; trp_elder_morannon_pl|the caves overlooking the Great Gate
-; trp_elder_mmorgul|Morgul Chief
-; trp_elder_mmorgul_pl|the sinister city
-; trp_elder_cungol|Camp Chief
-trp_elder_cungol_pl|het kamp
-; trp_elder_isengard|Grima Wormtongue
-trp_elder_isengard_pl|de stad
-; trp_elder_cgaladhon|Lorien Loremaster
-; trp_elder_cgaladhon_pl|the elven forest fortress
-; trp_elder_cdolen|Lorien Loremaster
-; trp_elder_cdolen_pl|the encampment
-; trp_elder_camroth|Lorien Loremaster
-; trp_elder_camroth_pl|the encampment
-; trp_elder_thalls|Mirkwood Elder
-; trp_elder_thalls_pl|the elven caves
-; trp_elder_imladris|Rivendell Campmaster
-trp_elder_imladris_pl|het kamp
-; trp_elder_wvillage|Pierre Woodman
-; trp_elder_wvillage_pl|the village
-; trp_elder_beorn|Beorn Elder
-; trp_elder_beorn_pl|the hamlet
-; trp_elder_harad|Harad Camp chief
-trp_elder_harad_pl|het kamp
-; trp_elder_rhun|Rhun Camp Chief
-trp_elder_rhun_pl|het kamp
-; trp_elder_khand|Khand Camp Chief
-trp_elder_khand_pl|het kamp
-; trp_elder_dunland|Dun Camp Chief
-trp_elder_dunland_pl|het kamp
-; trp_elder_umbar|Umbar Quartermaster
-; trp_elder_umbar_pl|the fortified camp
-; trp_elder_moria|Moria Chief
-; trp_elder_moria_pl|the Mines
-; trp_elder_gunda|Master of the Caves
-; trp_elder_gunda_pl|the caves
-; trp_elder_dale|Dale Quartermaster
-trp_elder_dale_pl|de Stad
-; trp_elder_esgaroth|Esgaroth Quartermaster
-; trp_elder_esgaroth_pl|the lake town
-; trp_elder_erebor|Erebor Guildmaster
-; trp_elder_erebor_pl|the Halls
-; trp_elder_dolguldur|Guldur Chief
-; trp_elder_dolguldur_pl|the black castle
-; trp_elder_gondor_ac|Campmaster
-trp_elder_gondor_ac_pl|het kamp
-; trp_elder_rohan_ac|Campmaster
-trp_elder_rohan_ac_pl|het kamp
-; trp_elder_mordor_ac|Campmaster
-trp_elder_mordor_ac_pl|het kamp
-; trp_elder_isengard_ac|Campmaster
-trp_elder_isengard_ac_pl|het kamp
-; trp_elder_lorien_ac|Campmaster
-trp_elder_lorien_ac_pl|het kamp
-; trp_elder_woodelf_ac|Campmaster
-trp_elder_woodelf_ac_pl|het kamp
-; trp_elder_imladris_ac|Campmaster
-trp_elder_imladris_ac_pl|het kamp
-; trp_elder_beorn_ac|Campmaster
-trp_elder_beorn_ac_pl|het kamp
-; trp_elder_harad_ac|Harad Camp Chief
-trp_elder_harad_ac_pl|het kamp
-; trp_elder_rhun_ac|Rhun Camp Chief
-trp_elder_rhun_ac_pl|het kamp
-; trp_elder_khand_ac|Khand Camp Chief
-trp_elder_khand_ac_pl|het kamp
-; trp_elder_dunland_ac|Dun Camp Chief
-trp_elder_dunland_ac_pl|het kamp
-; trp_elder_umbar_ac|Umbar Quartermaster
-trp_elder_umbar_ac_pl|het kamp
-; trp_elder_moria_ac|Moria Camp Chief
-trp_elder_moria_ac_pl|het kamp
-; trp_elder_gunda_ac|Gundabad Camp Chief
-trp_elder_gunda_ac_pl|het kamp
-; trp_elder_dale_ac|Dale Quartermaster
-trp_elder_dale_ac_pl|het kamp
-; trp_elder_guldur_ac|Guldur Camp Chief
-trp_elder_guldur_ac_pl|het kamp
-; trp_elder_dwarf_ac|Dwarven Campmaster
-trp_elder_dwarf_ac_pl|het kamp
-; trp_village_1_elder|Lord of the Lash
-; trp_village_1_elder_pl|the caves
-; trp_tutorial_chest_1|Melee Weapons Chest
-; trp_tutorial_chest_2|Ranged Weapons Chest
-; trp_bonus_chest_1|Bonus Chest
-; trp_bonus_chest_2|Bonus Chest
-; trp_bonus_chest_3|Bonus Chest
-; trp_camp_chest_faction|Faction Chest
-; trp_camp_chest_none|Chest for nones
-; trp_player_chest|Your Chest
-; trp_local_merchant|Local Merchant
-; trp_local_merchant_pl|Local Merchants
-; trp_tax_rebel|Peasant Rebel
-; trp_tax_rebel_pl|Peasant Rebels
-; trp_trainee_peasant|Peasant
-; trp_trainee_peasant_pl|Peasants
-; trp_fugitive_man|Suspicious Man
-; trp_fugitive_man_pl|Suspicious Men
-; trp_fugitive_elf|Suspicious Elf
-; trp_fugitive_elf_pl|Suspicious Elves
-; trp_fugitive_dwarf|Suspicious Dwarf
-; trp_fugitive_dwarf_pl|Suspicious Dwarves
-; trp_fugitive_orc|Suspicious Orc
-; trp_fugitive_orc_pl|Suspicious Orcs
-; trp_spy|Shifty-eyed Corsair
-; trp_spy_pl|Shifty-eyed Corsairs
-; trp_spy_evil|Shifty-eyed Southerner
-; trp_spy_evil_pl|Shifty-eyed Southerners
-; trp_spy_partner|Spy Handler
-; trp_spy_partner_pl|Spy Handlers
-; trp_spy_partner_evil|Spy Handler
-; trp_spy_partner_evil_pl|Spy Handlers
-; trp_easter_egg_troll|The Troll
-; trp_treebeard|Treebeard
-; trp_ent_1|Bregalad
-; trp_ent_2|Finglas
-; trp_ent_3|Fladrif
-; trp_gandalf|Gandalf
-; trp_gandalf_pl|Home-grown Gandalves
-; trp_nazgul|Nazgul
-; trp_nazgul_pl|Domesticated Nazgul
-; trp_barman|Barman
-; trp_elder|Center Elder
-; trp_gear_merchant|Gear Merchant
-; trp_goods_merchant|Goods Merchant
-; trp_start_quest_caravaneer|Torbal the Caravaneer
-; trp_dorwinion_bandit|Dorwinion Bandit
-; trp_dorwinion_bandit_pl|Dorwinion Bandits
-; trp_dorwinion_raider|Dorwinion Raider
-; trp_dorwinion_raider_pl|Dorwinion Raiders
-; trp_city_guard|City Guard
-; trp_city_guard_pl|city guard
-; trp_orc_sentry|Orc Sentry
-; trp_orc_sentry_pl|orc sentry
-; trp_uruk_hai_sentry|Uruk-hai Sentry
-; trp_uruk_hai_sentry_pl|uruk hai sentry
-; trp_black_numenorean_sorcerer|Black Numenorean Sorcerer
-; trp_black_numenorean_sorcerer_pl|Black numenorean sorcerer
-; trp_black_numenorean_acolyte|Black Numenorean Acolyte
-; trp_black_numenorean_acolyte_pl|Black Numenorean Acolytes
-; trp_wolf_rider_of_mirkwood|Wolf Rider of Mirkwood
-; trp_wolf_rider_of_mirkwood_pl|Wolf Riders of Mirkwood
-; trp_warg_rider_of_mirkwood|Warg Rider of Mirkwood
-; trp_warg_rider_of_mirkwood_pl|Warg Riders of Mirkwood
-; trp_gate_aggravator|Gate Defence
-; trp_orc_pretender|Orc Pretender
-trp_human_prisoner|Menselijke Gevangene
-; trp_spider|Mirkwood Spider
-; trp_spider_pl|Mirkwood Spiders
-trp_bear|Beer
-trp_bear_pl|Beren
-trp_wolf|Wolf
-trp_wolf_pl|Wolven
-; trp_dorwinion_sack|Dorwinion Sack
-; trp_ring_hunter_captain|Ring Hunter Captain
-; trp_ring_hunter_lt|Ring Hunter Captain
-; trp_ring_hunter_one|Ring Hunter
-; trp_ring_hunter_one_pl|Ring Hunters
-; trp_ring_hunter_two|Ring Hunter
-; trp_ring_hunter_two_pl|Ring Hunters
-; trp_ring_hunter_three|Ring Hunter
-; trp_ring_hunter_three_pl|Ring Hunters
-; trp_ring_hunter_four|Ring Hunter
-; trp_ring_hunter_four_pl|Ring Hunters
-; trp_start_quest_uruk|Mordor Uruk Captain
-; trp_start_quest_orc|Mordor Orc Lieutenant
-; trp_start_quest_orc_pl|Large Orcs of Mordor
-trp_start_quest_woodelf|Galadhrim Koninklijke Scherpschutter
-trp_start_quest_woodelf_pl|Galadhrim Koninklijke Scherpschutters
-; trp_start_quest_mordor_scout|Mordor Guide
-; trp_start_quest_mordor_scout_pl|Mordor Guides
-trp_start_quest_beorning|Beorning Carrock Berserker
-trp_start_quest_beorning_pl|Beorning Carrock Berserkers
-; trp_i6_beorning_bear_warrior|Bear Warrior
-; trp_i6_beorning_bear_warrior_pl|Bear Warriors
-; trp_morannon_healer|Okstuk the Healer
-; trp_minas_tirith_healer|Ioreth
-; trp_edoras_healer|Freya the Healer
-; trp_isengard_healer|Nurgal the Patcher
-; trp_guldur_healer|Mornagar the Gramaryer
-; trp_gundabad_healer|Lurgakh Third Eye
-; trp_mirkwood_healer|Corwiel the Soft-Handed
-; trp_hungry_uruk|Hungry Uruk
-; trp_hungry_orc|Hungry Orc
-; trp_longing_lorien|Longing Elf
-; trp_longing_woodelf|Longing Elf
-; trp_longing_imladris|Longing Elf
-; trp_i5_moria_deep_dweller|Deep-Dweller of Moria
-; trp_i5_moria_deep_dweller_pl|Deep-Dwellers of Moria
-; trp_i5_moria_orc_chieftain|Orc Chieftain of Moria
-; trp_i5_moria_orc_chieftain_pl|Orc Chieftains of Moria
-; trp_c5_rhovanion_noble|Rhovanion Noble
-; trp_c5_rhovanion_noble_pl|Rhovanion Noblemen
-; trp_npc18|Turmbathu
-; trp_npc19|Heidrek
-; trp_npc20|Zigûrphel
-; trp_werewolf|Werewolf
-; trp_werewolf_pl|Werewolves
-; trp_moria_troll|Cave Troll
-; trp_moria_troll_pl|Cave Trolls
-; trp_moria_vet_troll|Trained Cave Troll
-; trp_moria_vet_troll_pl|Trained Cave Trolls
-; trp_moria_armored_troll|Armored Cave Troll
-; trp_moria_armored_troll_pl|Armored Cave Trolls
-; trp_gunda_troll|Mountain Troll
-; trp_gunda_troll_pl|Mountain Trolls
-; trp_gunda_vet_troll|Trained Mountain Troll
-; trp_gunda_vet_troll_pl|Trained Mountain Trolls
-; trp_gunda_placeholder|Trained Mountain Troll
-; trp_gunda_placeholder_pl|Trained Mountain Trolls
-; trp_isen_troll|Isengard Troll
-; trp_isen_troll_pl|Isengard Trolls
-; trp_isen_vet_troll|Isengard Trained Troll
-; trp_isen_vet_troll_pl|Isengard Trained Trolls
-; trp_isen_armored_troll|Isengard Armored Troll
-; trp_isen_armored_troll_pl|Isengard Armored Trolls
-; trp_mordor_troll|Mordor Troll
-; trp_mordor_troll_pl|Mordor Trolls
-; trp_mordor_vet_troll|Mordor Trained Troll
-; trp_mordor_vet_troll_pl|Mordor Trained Trolls
-; trp_mordor_olog_hai|Olog Hai of Mordor
-; trp_mordor_olog_hai_pl|Olog Hai of Mordor
-; trp_troll_placeholder_1|Cave Troll
-; trp_troll_placeholder_1_pl|Cave Trolls
-; trp_troll_placeholder_2|Cave Troll
-; trp_troll_placeholder_2_pl|Cave Trolls
-; trp_troll_placeholder_3|Cave Troll
-; trp_troll_placeholder_3_pl|Cave Trolls
-; trp_troll_placeholder_4|Cave Troll
-; trp_troll_placeholder_4_pl|Cave Trolls
-; trp_troll_placeholder_5|Cave Troll
-; trp_troll_placeholder_5_pl|Cave Trolls
-; trp_troll_placeholder_6|Cave Troll
-; trp_troll_placeholder_6_pl|Cave Trolls
-; trp_wild_troll|Wild Cave Troll
-; trp_wild_troll_pl|Wild Cave Trolls
-; trp_ent2|Ent
-; trp_ent2_pl|Ents
-; trp_mountain_goblin|Mountain Goblin
-; trp_mountain_goblin_pl|Mountain Goblins
-; trp_tribal_orc|Tribal Orc
-trp_tribal_orc_pl|Stammen Orks
-; trp_tribal_orc_warrior|Tribal Orc Warrior
-; trp_tribal_orc_warrior_pl|Tribal Orc Warriors
-; trp_tribal_orc_chief|Tribal Orc Chief
-; trp_tribal_orc_chief_pl|Tribal Orc Chiefs
+trp_unarmed_troop  = "Ongewapende Troep"
+trp_unarmed_troop_pl  = "Ongewapende Troepen"
+trp_tutorial_maceman  = "Strijdknots Krijger"
+trp_tutorial_maceman_pl  = "Strijdknots Krijgers"
+trp_tutorial_archer  = "Boogschutter"
+trp_tutorial_archer_pl  = "Boogschutters"
+trp_tutorial_swordsman  = "Zwaardvechter"
+trp_tutorial_swordsman_pl  = "Zwaardvechters"
+trp_novice_fighter  = "Beginner Vechter"
+trp_novice_fighter_pl  = "Beginner Vechters"
+trp_regular_fighter  = "Normale  vechter "
+trp_regular_fighter_pl  = "Normale vechters"
+trp_veteran_fighter  = "Veteraan vechter"
+trp_veteran_fighter_pl  = "Veteraan vechters"
+trp_champion_fighter  = "Vechters Kampioen"
+trp_champion_fighter_pl  = "Vechters Kampioenen "
+trp_arena_training_fighter_1  = "Beginner vechter"
+trp_arena_training_fighter_1_pl  = "Beginner vechters\n"
+trp_arena_training_fighter_2  = "Beginner vechter"
+trp_arena_training_fighter_2_pl  = "Beginner vechters\n"
+trp_arena_training_fighter_3  = "normale  vechter "
+trp_arena_training_fighter_3_pl  = "normaale vechters"
+trp_arena_training_fighter_4  = "normale  vechter "
+trp_arena_training_fighter_4_pl  = "normaale vechters"
+trp_arena_training_fighter_5  = "normale  vechter "
+trp_arena_training_fighter_5_pl  = "normaale vechters"
+trp_arena_training_fighter_6  = "veteraan vechter"
+trp_arena_training_fighter_6_pl  = "veteraan vechters"
+trp_arena_training_fighter_7  = "veteraan vechter"
+trp_arena_training_fighter_7_pl  = "veteraan vechters"
+trp_arena_training_fighter_8  = "veteraan vechter"
+trp_arena_training_fighter_8_pl  = "veteraan vechters"
+trp_arena_training_fighter_9  = "Vechters Kampioen"
+trp_arena_training_fighter_9_pl  = "Vechters Kampioenen "
+trp_arena_training_fighter_10  = "Vechters Kampioen"
+trp_arena_training_fighter_10_pl  = "Vechters Kampioenen "
+trp_cattle  = "Vee"
+trp_cattle_pl  = "Vee"
+trp_farmer  = "Boer"
+trp_farmer_pl  = "Boeren"
+trp_townsman  = "stedeling"
+trp_townsman_pl  = "Stedelingen"
+trp_watchman  = "Stadsvrouw"
+trp_watchman_pl  = "Stadsvrouwen"
+trp_i1_woodmen_man  = "Bosman Bewoner"
+trp_i1_woodmen_man_pl  = "Bosman Bewoners"
+trp_i2_woodmen_forester  = "Bosmannen Boswachter"
+trp_i2_woodmen_forester_pl  = "Bosmannen Boswachters"
+trp_i3_woodmen_skilled_forester  = "Bosmannen Geschoolde Boswachter"
+trp_i3_woodmen_skilled_forester_pl  = "Bosmannen Geschoolde Boswachters"
+trp_i4_woodmen_axemen  = "Bosmannen Bijlman"
+trp_i4_woodmen_axemen_pl  = "Bosmannen Bijlmannen"
+trp_i5_woodmen_night_guard  = "Nachtbeschermer van het Demsterwold"
+trp_i5_woodmen_night_guard_pl  = "Nachtbeschermers van het Demsterwold"
+trp_a2_woodmen_tracker  = "Bosmannen Spoorzoeker"
+trp_a2_woodmen_tracker_pl  = "Bosmannen Spoorzoekers"
+trp_a3_woodmen_scout  = "Bosmannen Verkenner"
+trp_a3_woodmen_scout_pl  = "Bosmannen Verkenners"
+trp_a4_woodmen_archer  = "Bosmannen Boogschutter"
+trp_a4_woodmen_archer_pl  = "Bosmannen Boogschutters"
+trp_a5_woodmen_night_stalker  = "Nachtsluiper van het Demsterwold"
+trp_a5_woodmen_night_stalker_pl  = "Nachtsluipers van het Demsterwold"
+trp_i1_beorning_man  = "Beorning Man"
+trp_i1_beorning_man_pl  = "Beorning Mannen"
+trp_i2_beorning_warrior  = "Beorning Krijger"
+trp_i2_beorning_warrior_pl  = "Beorning Krijgers"
+trp_i3_beorning_tolltacker  = "Beorning Toll Nemer"
+trp_i3_beorning_tolltacker_pl  = "Beorning Toll Nemers"
+trp_i4_beorning_sentinel  = "Beorning Schildwacht"
+trp_i4_beorning_sentinel_pl  = "Beorning Schildwachten"
+trp_i5_beorning_warden_of_the_ford  = "Beorning Bewaker van het Wad"
+trp_i5_beorning_warden_of_the_ford_pl  = "Beorning Bewakers van het Wad"
+trp_i3_beorning_carrock_lookout  = "Beorning Carrock Wachtsman"
+trp_i3_beorning_carrock_lookout_pl  = "Beorning Carrock Wachtsmannen"
+trp_i4_beorning_carrock_fighter  = "Beorning Carrock Vechter"
+trp_i4_beorning_carrock_fighter_pl  = "Beorning Carrock Vechters"
+trp_i5_beorning_carrock_berserker  = "Beorning Carrock Berserker"
+trp_i5_beorning_carrock_berserker_pl  = "Beorning Carrock Berserkers"
+trp_i1_dale_militia  = "Dal Militieman"
+trp_i1_dale_militia_pl  = "Dal Militie"
+trp_i2_dale_man_at_arms  = "Dal Soldaat"
+trp_i2_dale_man_at_arms_pl  = "Dal Soldaten"
+trp_a2_dale_scout  = "Dal Verkenner"
+trp_a2_dale_scout_pl  = "Dal verkenners"
+trp_a3_dale_bowman  = "Dal Boogschutter"
+trp_a3_dale_bowman_pl  = "Dal Boogschutters"
+trp_a4_dale_archer  = "Dal Schutter"
+trp_a4_dale_archer_pl  = "Dal Schutters"
+trp_a5_barding_bowman  = "Barding Boogschutter"
+trp_a5_barding_bowman_pl  = "Barding Boogschutters"
+trp_i3_dale_swordsman  = "Dal Zwaardvechter"
+trp_i3_dale_swordsman_pl  = "Dal Zwaardvechters"
+trp_i4_dale_sergeant  = "Dal Brigadier"
+trp_i4_dale_sergeant_pl  = "Dal Brigadieren"
+trp_i5_dale_hearthman  = "Haardman van Dal"
+trp_i5_dale_hearthman_pl  = "Haardmannen van Dal"
+trp_i3_dale_spearman  = "Dal Speervechter"
+trp_i3_dale_spearman_pl  = "Dal Speervechters"
+trp_i4_dale_billman  = "Dal Bill Man"
+trp_i4_dale_billman_pl  = "Dal Bill Man"
+trp_i5_dale_bill_master  = "Dal Bill Meester"
+trp_i5_dale_bill_master_pl  = "Dal Bill Meesters"
+trp_c2_rhovanion_retainer  = "Noordman Bediende"
+trp_c2_rhovanion_retainer_pl  = "Noordman Bediendes"
+trp_c3_rhovanion_auxilia  = "Noordman Bondgenoot"
+trp_c3_rhovanion_auxilia_pl  = "Noordman Bondgenoten"
+trp_c4_rhovanion_rider  = "Wilderland Ruiter"
+trp_c4_rhovanion_rider_pl  = "Wilderland Ruiters"
+trp_ac5_rhovanion_marchwarden  = "Wilderland Mark Bewaker"
+trp_ac5_rhovanion_marchwarden_pl  = "Wilderland Mark Bewakers"
+trp_i1_rhun_tribesman  = "Rhun Stamgenoot"
+trp_i1_rhun_tribesman_pl  = "Rhun Stamgenoten"
+trp_ac2_rhun_horse_scout  = "Rhun Paarden Verkenner"
+trp_ac2_rhun_horse_scout_pl  = "Rhun Paarden Verkenners"
+trp_ac3_rhun_horse_archer  = "Rhun Schutter te Paard"
+trp_ac3_rhun_horse_archer_pl  = "Rhun Schutters te Paard"
+trp_ac4_rhun_veteran_horse_archer  = "Rhun Ervaren Schutter te Paard"
+trp_ac4_rhun_veteran_horse_archer_pl  = "Rhun Ervaren Schutters te Paard"
+trp_ac5_rhun_balchoth_horse_archer  = "Balchoth paart boogschutter"
+trp_ac5_rhun_balchoth_horse_archer_pl  = "Balchoth paart boogschutters"
+trp_c3_rhun_swift_horseman  = "Rhun vlugge Ruiter te paard"
+trp_c3_rhun_swift_horseman_pl  = "Rhun vlugge Ruiters te Paard"
+trp_c4_rhun_veteran_swift_horseman  = "Rhun Ervaren vlugge Ruiter te Paard"
+trp_c4_rhun_veteran_swift_horseman_pl  = "Rhun Ervaren vlugge Ruiters te Paard"
+trp_c5_rhun_falcon_horseman  = "Valk Ruiter te Paard"
+trp_c5_rhun_falcon_horseman_pl  = "Valk Ruiters te Paard"
+; trp_i2_rhun_tribal_warrior  = "Rhun Tribal Footman"
+; trp_i2_rhun_tribal_warrior_pl  = "Rhun Tribal Footmen"
+trp_i3_rhun_tribal_infantry  = "Rhun Stam Krijger"
+trp_i3_rhun_tribal_infantry_pl  = "Rhun Stam Krijgers"
+; trp_i4_rhun_vet_infantry  = "Rhun Veteran Warrior"
+; trp_i4_rhun_vet_infantry_pl  = "Rhun Veteran Warriors"
+; trp_i5_rhun_ox_warrior  = "Warrior of the Ox"
+; trp_i5_rhun_ox_warrior_pl  = "Warriors of the Ox"
+; trp_c2_rhun_horseman  = "Horseman of Rhun"
+; trp_c2_rhun_horseman_pl  = "Horsemen of Rhun"
+; trp_c3_rhun_outrider  = "Outrider of Rhun"
+; trp_c3_rhun_outrider_pl  = "Outriders of Rhun"
+; trp_c4_rhun_noble_rider  = "Noble Rider of Rhun"
+; trp_c4_rhun_noble_rider_pl  = "Noble Riders of Rhun"
+; trp_c5_rhun_warrider  = "Warrider of Rhun"
+; trp_c5_rhun_warrider_pl  = "Warriders of Rhun"
+; trp_c6_rhun_warlord  = "Warlord of Rhun"
+; trp_c6_rhun_warlord_pl  = "Warlords of Rhun"
+trp_i1_dwarf_apprentice  = "Leerling Dwerg"
+trp_i1_dwarf_apprentice_pl  = "Leerling Dwergen"
+trp_i2_dwarf_warrior  = "Krijger Dwerg"
+trp_i2_dwarf_warrior_pl  = "krijger dwergen"
+trp_i3_dwarf_hardened_warrior  = "Geharde Krijger Dwerg"
+trp_i3_dwarf_hardened_warrior_pl  = "Geharde Krijger Dwergen"
+trp_i4_dwarf_spearman  = "speer dwerg"
+trp_i4_dwarf_spearman_pl  = "Speer Dwergen"
+trp_i5_dwarf_pikeman  = "Piek Dwerg"
+trp_i5_dwarf_pikeman_pl  = "Piek Dwergen"
+trp_i6_dwarf_longpikeman  = "Lange Piek Dwerg"
+trp_i6_dwarf_longpikeman_pl  = "Lange Piek Dwergen"
+trp_i4_dwarf_axeman  = "bijl dwerg"
+trp_i4_dwarf_axeman_pl  = "Bijl Dwergen"
+trp_i5_dwarf_expert_axeman  = "Specialist Bijl Dwerg"
+trp_i5_dwarf_expert_axeman_pl  = "Specialist Bijl Dwergen"
+trp_i6_dwarf_longbeard_axeman  = "langebaard bijl dwerg"
+trp_i6_dwarf_longbeard_axeman_pl  = "Langebaard Bijl Dwergen"
+trp_a2_dwarf_lookout  = "uitkijk dwerg"
+trp_a2_dwarf_lookout_pl  = "uitkijk dwergen"
+trp_a3_dwarf_scout  = "verkenner-dwerg"
+trp_a3_dwarf_scout_pl  = "verkenner-dwerg'en"
+trp_a4_dwarf_bowman  = "boog-dwerg"
+trp_a4_dwarf_bowman_pl  = "Boog Dwerg"
+trp_i6_dwarf_longaxeman  = "Strijdbijl Dwerg"
+trp_i6_dwarf_longaxeman_pl  = "Strijdbijl Dwergen"
+trp_i3_iron_hills_warrior  = "Ijzerheuvels Krijger"
+trp_i3_iron_hills_warrior_pl  = "Ijzerheuvels Krijgers"
+trp_i2_iron_hills_miner  = "Ijzerheuvels Mijnwerker"
+trp_i2_iron_hills_miner_pl  = "ijzerheuvels mijnwerker"
+trp_i4_iron_hills_infantry  = "ijzerheuvels Infaterie"
+trp_i4_iron_hills_infantry_pl  = "ijzerheuvels Infanterie"
+trp_i5_iron_hills_battle_dwarf  = "Ijzerheuvels Strijd Dwerg"
+trp_i5_iron_hills_battle_dwarf_pl  = "Ijzerheuvels Stijd Dwergen"
+trp_i6_iron_hills_grors_guard  = "Grors Beschermer"
+trp_i6_iron_hills_grors_guard_pl  = "Grors Beschermers"
+trp_i1_gon_levy  = "Gondor dienstplischtige"
+trp_i1_gon_levy_pl  = "Gondor Dienstplichtigen"
+trp_i2_gon_watchman  = "Gondor Wachter"
+trp_i2_gon_watchman_pl  = "Gondor Wachters"
+trp_i3_gon_footman  = "Livreiknecht van Gondor"
+trp_i3_gon_footman_pl  = "Livreiknechten van Gondor"
+trp_i4_gon_spearman  = "speervechter van Gondor"
+trp_i4_gon_spearman_pl  = "speervechters van Gondor"
+trp_i5_gon_vet_spearman  = "Ervaren speervechter van Gondor"
+trp_i5_gon_vet_spearman_pl  = "Ervaren Speervechters van Gondor"
+trp_i6_gon_tower_spearman  = "Beschermer van het fontein Plein"
+trp_i6_gon_tower_spearman_pl  = "Beschermers van het fontein Plein"
+trp_i4_gon_swordsman  = "Zwaardvechter van Gondor"
+trp_i4_gon_swordsman_pl  = "Zwaardvechters van Gondor"
+trp_i5_gon_vet_swordsman  = "Ervaren Zwaardvechter van Gondor"
+trp_i5_gon_vet_swordsman_pl  = "Ervaren zwaardvechters van Gondor"
+trp_i6_gon_tower_swordsman  = "Zwaardvechter van de Toren Beschermers"
+trp_i6_gon_tower_swordsman_pl  = "Zwaardvechters van de Toren Beschermer"
+; trp_c1_gon_nobleman  = "Gondor Noble"
+; trp_c1_gon_nobleman_pl  = "Gondor Noble"
+trp_c2_gon_squire  = "Schildknaap van Gondor"
+trp_c2_gon_squire_pl  = "Schildknapen van Gondor"
+trp_c3_gon_vet_squire  = "Ervaren Schildknaap van Gondor"
+trp_c3_gon_vet_squire_pl  = "Ervaren Schildknapen van Gondor"
+trp_c4_gon_knight  = "Ridder van Gondor"
+trp_c4_gon_knight_pl  = "Ridders van Gondor"
+trp_c5_gon_vet_knight  = "Ervaren Ridder van Gondor"
+trp_c5_gon_vet_knight_pl  = "Ervaren RIdders van Gondor"
+trp_c6_gon_tower_knight  = "Ridder van de Citadel"
+trp_c6_gon_tower_knight_pl  = "Ridders van de Citadel"
+trp_a3_gon_bowman  = "Boogschutter van Gondor"
+trp_a3_gon_bowman_pl  = "Boogschutters van Gondor"
+trp_a4_gon_archer  = "Schutter van Gondor"
+trp_a4_gon_archer_pl  = "Schutters van Gondor"
+trp_a5_gon_vet_archer  = "Ervaren Schutter van Gondor"
+trp_a5_gon_vet_archer_pl  = "Ervaren Schutters van Gondor"
+trp_a6_gon_tower_archer  = "Schutter van de Toren Beschermers"
+trp_a6_gon_tower_archer_pl  = "Schutter van de Toren Beschermers"
+trp_steward_guard  = "Hofmeesters Beschermer"
+trp_steward_guard_pl  = "Hofmeesters Beschermers"
+trp_a4_ithilien_ranger  = "Houtvester van Maanland"
+trp_a4_ithilien_ranger_pl  = "Houtvesters van Maanland"
+trp_a5_ithilien_vet_ranger  = "Ervaren Houtvester van Maanland"
+trp_a5_ithilien_vet_ranger_pl  = "Ervaren Houtvesters van Maanland"
+trp_a6_ithilien_master_ranger  = "Meester Houtvester van Maanland"
+trp_a6_ithilien_master_ranger_pl  = "Meester Houtvester van Maanland"
+trp_a6_ithilien_leader  = "Gezagvoerder van Maanlandse Houtvesters"
+trp_a6_ithilien_leader_pl  = "Gezagvoerders van de Maanlandse Houtvesters"
+trp_i1_loss_woodsman  = "Houthakker van Lossarnach"
+trp_i1_loss_woodsman_pl  = "Houthakkers van Lossarnach"
+trp_i2_loss_axeman  = "Bijlman van Lossarnach"
+trp_i2_loss_axeman_pl  = "Bijlmannen van Lossarnach"
+trp_i3_loss_vet_axeman  = "Lossarnach Ervaren Bijlman"
+trp_i3_loss_vet_axeman_pl  = "Lossarnach Ervaren Bijlmannen"
+trp_i4_loss_heavy_axeman  = "Geharnaste Lossarnach Bijlman"
+trp_i4_loss_heavy_axeman_pl  = "Geharnaste Lossarnach Bijlman"
+trp_i5_loss_axemaster  = "Bijlmeester van Lossarnach"
+trp_i5_loss_axemaster_pl  = "Bijlmeesters van Lossarnach"
+trp_i6_loss_leader  = "Gezagvoerder van Lossarnach"
+trp_i6_loss_leader_pl  = "Gezagvoerders van Lossarnach"
+trp_i1_pel_watchman  = "Pelalgir Wachter"
+trp_i1_pel_watchman_pl  = "Pelargir Wachters"
+trp_a2_pel_marine  = "Pelargir Marinier"
+trp_a2_pel_marine_pl  = "Pelargir Mariniers"
+trp_a3_pel_vet_marine  = "Pelargir Ervaren Marinier"
+trp_a3_pel_vet_marine_pl  = "Pelargir Veteraan Marinier"
+trp_i2_pel_infantry  = "Pelargir Infaterist"
+trp_i2_pel_infantry_pl  = "Pelargir Infanterie"
+trp_i3_pel_vet_infantry  = "Pelargir Ervaren Infanterist"
+trp_i3_pel_vet_infantry_pl  = "Pelargir Ervaren Infanterie"
+trp_i6_pel_leader  = "Gezagvoerder van Pelargir"
+trp_i6_pel_leader_pl  = "Gezagvoerders van Pelargir"
+trp_a6_pel_marine_leader  = "Captain of Pelargir Mariniers"
+trp_a6_pel_marine_leader_pl  = "Gezagvoerder van Pelargir Marine"
+trp_i1_lam_clansman  = "Stamgenoot van Lamedon"
+trp_i1_lam_clansman_pl  = "Stamgenoten van Lamedon"
+trp_i2_lam_footman  = "Livreiknecht van Lamedon"
+trp_i2_lam_footman_pl  = "Livreiknechten van Lamedon"
+trp_i3_lam_veteran  = "Veteraan van Lamedon"
+trp_i3_lam_veteran_pl  = "Veteranen van Lamedon"
+trp_i4_lam_warrior  = "Krijger of Lamedon"
+trp_i4_lam_warrior_pl  = "Krijgers van Lamedon"
+trp_i5_lam_champion  = "Kampioen van Lamedon"
+trp_i5_lam_champion_pl  = "Kampioenen van Lamedon"
+trp_c5_lam_knight  = "Ridder van Lamedon"
+trp_c5_lam_knight_pl  = "Ridders van Lamedon"
+trp_c6_lam_leader  = "Gezagvoerder van Lamedon"
+trp_c6_lam_leader_pl  = "Gezagvoerders van Lamedon"
+trp_i1_pinnath_plainsman  = "Vlaktebewoner van Pinnath Gelin"
+trp_i1_pinnath_plainsman_pl  = "Vlaktebewoners van Pinnath Gelin"
+trp_c2_pinnath_rider  = "Ruiter van Pinnath Gelin"
+trp_c2_pinnath_rider_pl  = "Ruiters van Pinnath Gelin"
+trp_c3_pinnath_knight  = "Ridder van Pinnath Gelin"
+trp_c3_pinnath_knight_pl  = "Ridders van Pinnath Gelin"
+trp_a2_pinnath_bowman  = "Boogschutter van Pinnath Gelin"
+trp_a2_pinnath_bowman_pl  = "Boogschutters van Pinnath Gelin"
+trp_a3_pinnath_archer  = "Shutter van Pinnath Gelin"
+trp_a3_pinnath_archer_pl  = "Schutters van Pinnath Gelin"
+trp_c6_pinnath_leader  = "Gezagvoerder van Pinnath Gelin"
+trp_c6_pinnath_leader_pl  = "Gezagvoerders van Pennith Gelin"
+trp_a1_blackroot_hunter  = "Jager van Blackroot Vale"
+trp_a1_blackroot_hunter_pl  = "Jagers van Blackroot Vale"
+trp_a2_blackroot_bowman  = "Boogman van Blackroot Vale"
+trp_a2_blackroot_bowman_pl  = "Boogmannen van Blackroot Vale"
+trp_a3_blackroot_archer  = "Boogschutter van de Blackroot Vale"
+trp_a3_blackroot_archer_pl  = "Boogschutters van Blackroot Vale"
+trp_i2_blackroot_footman  = "Voetman van Blackroot Vale"
+trp_i2_blackroot_footman_pl  = "Voetvolk van Blackroot Vale"
+trp_i3_blackroot_spearman  = "Speerman van Blackroot Vale"
+trp_i3_blackroot_spearman_pl  = "Speermannen van Blackroot Vale"
+trp_a5_blackroot_shadow_hunter  = "Morthond Schaduw Jager"
+trp_a5_blackroot_shadow_hunter_pl  = "Morthond Schaduw Jagers"
+trp_i1_amroth_recruit  = "Dol Amroth Rekruut"
+trp_i1_amroth_recruit_pl  = "Dol Amorth Rekruten"
+trp_c2_amroth_squire  = "Schildknaap van Dol Amroth"
+trp_c2_amroth_squire_pl  = "Schildknapen van Dol Amroth"
+trp_c3_amroth_vet_squire  = "Ervaren Schildknaap van Dol Amroth"
+trp_c3_amroth_vet_squire_pl  = "Ervaren Schildknapen van Dol Amorth"
+trp_c4_amroth_knight  = "Ridder van Dol Amorth"
+trp_c4_amroth_knight_pl  = "Ridders van Dol Amorth"
+trp_c5_amroth_vet_knight  = "Ervaren Ridder van Dol Amorth"
+trp_c5_amroth_vet_knight_pl  = "Ervaren Ridders van Dol Amorth"
+trp_c6_amroth_swan_knight  = "Zwaanridder van Dol Amorth"
+trp_c6_amroth_swan_knight_pl  = "Zwaanridders van Dol Amorth"
+trp_c6_amroth_leader  = "Gezagvoerder van Dol Amorth"
+trp_c6_amroth_leader_pl  = "Gezagvoerders van Dol Amorth"
+trp_a1_lorien_scout  = "Lothlorien verkenner"
+trp_a1_lorien_scout_pl  = "Lothlórien verkenners"
+trp_a2_lorien_warden  = "Lothlorien Bewaker"
+trp_a2_lorien_warden_pl  = "Lothlorien Bewakers"
+trp_a3_lorien_vet_warden  = "Lothlorien Ervaren Bewaker"
+trp_a3_lorien_vet_warden_pl  = "Lothlorien Ervaren Bewakers"
+trp_a4_lorien_gal_warden  = "Galadhrim Bewaker"
+trp_a4_lorien_gal_warden_pl  = "Galadhrim Bewakers"
+trp_a5_lorien_gal_royal_warden  = "Galadhrim Koninklijke Bewaker"
+trp_a5_lorien_gal_royal_warden_pl  = "Galadhrim Koninklijke Bewakers"
+trp_a6_lorien_grey_warden  = "Grijze Bewaker"
+trp_a6_lorien_grey_warden_pl  = "Grijze Bewakers"
+trp_galadhrim_royal_marksman  = "Galadhrim Koninklijke Scherpschutter"
+trp_galadhrim_royal_marksman_pl  = "Galadhrim Koninklijke Scherpschutters"
+trp_noldorin_mounted_archer  = "Noldorin Booschutter ter Paard"
+trp_noldorin_mounted_archer_pl  = "Noldorin Boogschutters ter Paard"
+trp_a2_lorien_archer  = "Lothlorien Boogschutter"
+trp_a2_lorien_archer_pl  = "Lothlorien Boogschutters"
+trp_a3_lorien_vet_archer  = "Lothlorien Ervaren Boogschutter"
+trp_a3_lorien_vet_archer_pl  = "Lothlorien Ervaren Boogschutters"
+trp_a4_lorien_gal_archer  = "Galadhrim Boogschutter"
+trp_a4_lorien_gal_archer_pl  = "Galadhrim Boogschutters"
+trp_a5_lorien_gal_royal_archer  = "Galadhrim Koninklijke Scherpschutter"
+trp_a5_lorien_gal_royal_archer_pl  = "Galadhrim Koninklijke Scherpschutters"
+trp_i3_lorien_inf  = "Lothlorien Infanterie"
+trp_i3_lorien_inf_pl  = "Lothlorien Infanterie"
+trp_i4_lorien_gal_inf  = "Galadhrim Infanterie"
+trp_i4_lorien_gal_inf_pl  = "Galadhrim Infanteristen"
+trp_i5_lorien_gal_royal_inf  = "Galadhrim Koninklijke Bewaker"
+trp_i5_lorien_gal_royal_inf_pl  = "Galadhrim Koninklijke Bewakers"
+trp_lothlorien_standard_bearer  = "Lothlorien Vaandeldrager"
+trp_lothlorien_standard_bearer_pl  = "Lothlorien Vaandeldragers"
+trp_a1_greenwood_scout  = "Groenewoud Verkenner"
+trp_a1_greenwood_scout_pl  = "Groenewoud Verkenners"
+trp_a2_greenwood_veteran_scout  = "Groenewoud Ervaren Verkenner"
+trp_a2_greenwood_veteran_scout_pl  = "Groenewoud Ervaren Verkenners"
+trp_a3_greenwood_archer  = "Groenewoud Schutter"
+trp_a3_greenwood_archer_pl  = "Groenewoud Schutters"
+trp_a4_greenwood_veteran_archer  = "Groenewoud Ervaren Schutter"
+trp_a4_greenwood_veteran_archer_pl  = "Groenewoud Ervaren Schutters"
+trp_a5_greenwood_master_archer  = "Greenwood Meester Boogschutter"
+trp_a5_greenwood_master_archer_pl  = "Greenwood Meester Boogschutters"
+trp_a6_greenwood_chosen_marksman  = "Thranduil's Gekozen Schutter"
+trp_a6_greenwood_chosen_marksman_pl  = "Thranduil's Gekozen Schutters"
+trp_a3_greenwood_sentinel  = "Groenewoud Schildwacht"
+trp_a3_greenwood_sentinel_pl  = "Groenewoud Schildwachten"
+trp_a4_greenwood_vet_sentinel  = "Groenewoud Ervaren Schildwacht"
+trp_a4_greenwood_vet_sentinel_pl  = "Groenewoud Ervaren Schildwachten"
+trp_a5_greenwood_vigilant  = "Greenwood Beschermer"
+trp_a5_greenwood_vigilant_pl  = "Greenwood Beschermers"
+trp_i2_greenwood_infantry  = "Groenewoud Infanterist"
+trp_i2_greenwood_infantry_pl  = "Groenewoud Infanterist"
+trp_i3_greenwood_vet_infantry  = "Groenewoud Ervaren Infanterie"
+trp_i3_greenwood_vet_infantry_pl  = "Groenewoud Ervaren Infanterie"
+trp_i4_greenwood_elite_infantry  = "Groenewoud Elite Infanterie"
+trp_i4_greenwood_elite_infantry_pl  = "Groenewoud Elite Infanterie"
+trp_i5_greenwood_chosen_shieldmaster  = "Thranduil's Gekozen Schild Meester"
+trp_i5_greenwood_chosen_shieldmaster_pl  = "Thranduil's Gekozen Schild Meesters"
+trp_i5_greenwood_chosen_spearmaster  = "Thranduil's Gekozen Speer Meester"
+trp_i5_greenwood_chosen_spearmaster_pl  = "Thranduil's Gekozen Speer Meesters"
+trp_i5_greenwood_standard_bearer  = "Groenewoud Vaandeldrager"
+trp_i5_greenwood_standard_bearer_pl  = "Groenewoud Vaandeldragers"
+trp_a1_riv_scout  = "Rivendel Verkenner"
+trp_a1_riv_scout_pl  = "Rivendel Verkenners"
+trp_a2_riv_vet_scout  = "Rivendel Ervaren Verkenner"
+trp_a2_riv_vet_scout_pl  = "Rivendel Ervaren Verkenners"
+trp_a3_riv_archer  = "Rivendell Boogschutter"
+trp_a3_riv_archer_pl  = "Rivendell Boogschutters"
+trp_a4_riv_vet_archer  = "Rivendell Veteraan Boogschutter"
+trp_a4_riv_vet_archer_pl  = "Rivendell Veteraan Boogschutters"
+trp_a5_riv_master_archer  = "Rivendell Meester Boogschutter"
+trp_a5_riv_master_archer_pl  = "Rivendell Meester Boogschutters"
+trp_a6_riv_guardian  = "Beschermers van Imladris"
+trp_a6_riv_guardian_pl  = "Beschermers van Imladris"
+; trp_i3_riv_swordbearer  = "Rivendell Swordbearer"
+; trp_i3_riv_swordbearer_pl  = "Rivendell Swordbearers"
+; trp_i4_riv_vet_swordbearer  = "Rivendell Veteran Swordbearer"
+; trp_i4_riv_vet_swordbearer_pl  = "Rivendell Veteran Swordbearers"
+; trp_i5_riv_swordmaster  = "Rivendell Swordmaster"
+; trp_i5_riv_swordmaster_pl  = "Rivendell Swordmasters"
+trp_i6_riv_champion  = "Kampioen van Imladris"
+trp_i6_riv_champion_pl  = "Kampioenen van Imladris"
+trp_ac5_riv_rider  = "Rivendell Rijder"
+trp_ac5_riv_rider_pl  = "Rivendell Rijders"
+trp_ac6_riv_knight  = "Ridder van Imladris"
+trp_ac6_riv_knight_pl  = "Ridders van Imladris"
+trp_i6_rivendell_standard_bearer  = "Rivendel Vaandeldrager"
+trp_i6_rivendell_standard_bearer_pl  = "Rivendel Vaandeldragers"
+trp_a1_arnor_scout  = "Dunedain Verkenner"
+trp_a1_arnor_scout_pl  = "Dunedain verkenners"
+trp_a2_arnor_vet_scout  = "Dunedain Spoorzoeker"
+trp_a2_arnor_vet_scout_pl  = "Dunedain Spoorzoekers"
+trp_i3_arnor_swordsman  = "Dunedain Zwaardman"
+trp_i3_arnor_swordsman_pl  = "Dunedain Zwaardmannen"
+trp_i4_arnor_vet_swordsman  = "Dunedain Veteraan Zwaardman"
+trp_i4_arnor_vet_swordsman_pl  = "Dunedain Veteraan Zwaardmannen"
+trp_i5_arnor_champion  = "Kampoioen van Arnor"
+trp_i5_arnor_champion_pl  = "Kampioenen van Arnor"
+trp_c4_arnor_horseman  = "Dunedain Paardman"
+trp_c4_arnor_horseman_pl  = "Dunedain Paardmannen"
+trp_c5_arnor_knight  = "Ridder van Arnor"
+trp_c5_arnor_knight_pl  = "Ridders van Arnor"
+trp_a3_arnor_ranger  = "Dunedain Houtvester"
+trp_a3_arnor_ranger_pl  = "Dunedain Houtvesters"
+trp_a4_arnor_vet_ranger  = "Dunedain Ervaren Houtvester"
+trp_a4_arnor_vet_ranger_pl  = "Dunedain Ervaren Houtvesters"
+trp_a5_arnor_master_ranger  = "Meester Ranger van Arnor"
+trp_a5_arnor_master_ranger_pl  = "Meester Rangers van Arnor"
+trp_i1_rohan_youth  = "Rohan Jonge Man"
+trp_i1_rohan_youth_pl  = "Rohan Jonge Mannen"
+trp_i2_guardsman_of_rohan  = "Officier van Rohan"
+trp_i2_guardsman_of_rohan_pl  = "Officieren van Rohan"
+trp_i3_footman_of_rohan  = "Livreiknecht van Rohan"
+trp_i3_footman_of_rohan_pl  = "Livreiknechten van Rohan"
+trp_i4_veteran_footman_of_rohan  = "Ervaren Livreiknecht van Rohan"
+trp_i4_veteran_footman_of_rohan_pl  = "Ervaren Livreiknechten van Rohan"
+trp_i5_elite_footman_of_rohan  = "ELite Livreiknecht van Rohan"
+trp_i5_elite_footman_of_rohan_pl  = "Elite Livreiknechten van Rohan"
+trp_i6_footman_guard_of_rohan  = "Folcwine Beschermer van Rohan"
+trp_i6_footman_guard_of_rohan_pl  = "Folcwine Beschermers van Rohan"
+trp_i6_frealaf_raider  = "Frealaf Plunderaar"
+trp_i6_frealaf_raider_pl  = "Frealaf Plunderaars"
+trp_i5_raider_of_rohan  = "Plunderaar van Rohan"
+trp_i5_raider_of_rohan_pl  = "Plunderaars van Rohan"
+trp_i6_warden_of_methuseld  = "Bewaker van Meduseld"
+trp_i6_warden_of_methuseld_pl  = "Bewakers van Meduseld"
+trp_ac3_skirmisher_of_rohan  = "Schermutselaar van Rohan"
+trp_ac3_skirmisher_of_rohan_pl  = "Schermutselaren van Rohan"
+trp_ac4_veteran_skirmisher_of_rohan  = "Ervaren Schermutselaar van Rohan"
+trp_ac4_veteran_skirmisher_of_rohan_pl  = "Ervaren Schermutselaren van Rohan"
+trp_ac5_elite_skirmisher_of_rohan  = "Elite Schermutselaar van Rohan"
+trp_ac5_elite_skirmisher_of_rohan_pl  = "Elite Schermutselaren van Rohan"
+trp_ac6_skirmisher_guard_of_rohan  = "Thengel Bewaker van Rohan"
+trp_ac6_skirmisher_guard_of_rohan_pl  = "Thengel Bewakers van Rohan"
+trp_c4_lancer_of_rohan  = "Lansier van Rohan"
+trp_c4_lancer_of_rohan_pl  = "Lansiers van Rohan"
+trp_c5_elite_lancer_of_rohan  = "Elite Lancier van Rohan"
+trp_c5_elite_lancer_of_rohan_pl  = "Elite Lanciers van Rohan"
+trp_c6_lancer_guard_of_rohan  = "Brego Bewaker van Rohan"
+trp_c6_lancer_guard_of_rohan_pl  = "Brego Bewakers van Rohan"
+trp_c6_king_s_man_of_rohan  = "Beschermer van de Koning"
+trp_c6_king_s_man_of_rohan_pl  = "Beschermers van de Koning"
+trp_c2_squire_of_rohan  = "Schildknaap van Rohan"
+trp_c2_squire_of_rohan_pl  = "Schildknapen van Rohan"
+trp_c3_rider_of_rohan  = "Ruiter van Rohan"
+trp_c3_rider_of_rohan_pl  = "Ruiters van Rohan"
+trp_c4_veteran_rider_of_rohan  = "Ervaren Ruiter van Rohan"
+trp_c4_veteran_rider_of_rohan_pl  = "Ervaren Ruiters van Rohan"
+trp_c5_elite_rider_of_rohan  = "Elite Ruiters van Rohan"
+trp_c5_elite_rider_of_rohan_pl  = "Elite Ruiters van Rohan"
+trp_c6_rider_guard_of_rohan  = "Eoarl Bewaker van Rohan"
+trp_c6_rider_guard_of_rohan_pl  = "Eorl Bewakers van Rohan"
+trp_i6_2h_guard_of_rohan  = "Roer Bewaker van Rohan"
+trp_i6_2h_guard_of_rohan_pl  = "Roer Bewakers van Rohan"
+trp_dismounted_veteran_skirmisher_of_rohan  = "Ervaren Schermutselaar van Rohan"
+trp_dismounted_veteran_skirmisher_of_rohan_pl  = "Ervaren Schermutselaren van Rohan"
+trp_dismounted_elite_skirmisher_of_rohan  = "Elite Schermutselaar van Rohan"
+trp_dismounted_elite_skirmisher_of_rohan_pl  = "Elite Schermutselaren van Rohan"
+trp_dismounted_thengel_guard_of_rohan  = "Thengel Bewaker van Rohan"
+trp_dismounted_thengel_guard_of_rohan_pl  = "Thengel Bewakers van Rohan"
+trp_i1_harad_levy  = "Harad Dienstplichtige"
+trp_i1_harad_levy_pl  = "Harad Dienstplichtigen"
+trp_i3_harad_infantry  = "Harad Lichte Voetman"
+trp_i3_harad_infantry_pl  = "Harad Lichte Voetmannen"
+trp_i4_harad_spearman  = "Harad Speervechter"
+trp_i4_harad_spearman_pl  = "Harad Speervechters"
+trp_i5_harad_tiger_guard  = "Tijger Beschermer"
+trp_i5_harad_tiger_guard_pl  = "Tijger Beschermers"
+trp_i4_harad_swordsman  = "Harad Zwaardvechter"
+trp_i4_harad_swordsman_pl  = "Harad Zwaardvechters"
+trp_i5_harad_lion_guard  = "Leeuw Beschermer"
+trp_i5_harad_lion_guard_pl  = "Leeuw Beschermers"
+trp_a3_harad_hunter  = "Harad Jager"
+trp_a3_harad_hunter_pl  = "Harad Jagers"
+trp_a4_harad_archer  = "Harad Schutter"
+trp_a4_harad_archer_pl  = "Harad Schutters"
+trp_a5_harad_eagle_guard  = "Arend Beschermer"
+trp_a5_harad_eagle_guard_pl  = "Arend Beschermers"
+trp_c2_harondor_scout  = "Harondor Verkenner"
+trp_c2_harondor_scout_pl  = "Harondor Verkenners"
+trp_c3_harondor_rider  = "Harondor Ruiter"
+trp_c3_harondor_rider_pl  = "Harondor Ruiters"
+trp_c4_harondor_light_cavalry  = "Harandor Lichte Rijder"
+trp_c4_harondor_light_cavalry_pl  = "Harandor Lichte Rijders"
+trp_c5_harondor_serpent_knight  = "Gouden Slang Ridder"
+trp_c5_harondor_serpent_knight_pl  = "Gouden Slang Ridders"
+trp_ac3_harondor_skirmisher  = "Harondor Schermutselaar"
+trp_ac3_harondor_skirmisher_pl  = "Harondor Shermutselaren"
+trp_ac4_harondor_horse_archer  = "Harondor Ruiter met Boog"
+trp_ac4_harondor_horse_archer_pl  = "Harondor Ruiters met Boog"
+trp_ac5_harondor_black_snake  = "Zwarte Slang Ruiter met Boog"
+trp_ac5_harondor_black_snake_pl  = "Zwarte Slang Ruiter met Boog"
+trp_i2_far_harad_tribesman  = "Far Harad Stamlid"
+trp_i2_far_harad_tribesman_pl  = "Far Harad Stamleden"
+trp_i4_far_harad_champion  = "Far Harad Kampioen"
+trp_i4_far_harad_champion_pl  = "Far Harad Kampioenen"
+trp_i5_far_harad_panther_guard  = "Panter Beschermer"
+trp_i5_far_harad_panther_guard_pl  = "Panter Beschermers"
+trp_i1_dun_wildman  = "Donkerse Wilde Man"
+trp_i1_dun_wildman_pl  = "Donkerse Wilde Mannen"
+trp_i2_dun_warrior  = "Donkerse Krijger"
+trp_i2_dun_warrior_pl  = "Donkerse Krijgers"
+trp_i3_dun_pikeman  = "Donkerse Piekenier"
+trp_i3_dun_pikeman_pl  = "Donkerse Piekeniers"
+trp_i4_dun_vet_pikeman  = "Donkerse Ervaren Piekenier"
+trp_i4_dun_vet_pikeman_pl  = "Donkerse Ervaren Piekeniers"
+trp_ac4_dun_crebain_rider  = "Donkerse Crebain Ruiter"
+trp_ac4_dun_crebain_rider_pl  = "Donkerse Crebain Ruiters"
+trp_i3_dun_vet_warrior  = "Donkerse Ervaren Krijger"
+trp_i3_dun_vet_warrior_pl  = "Donkerse Ervaren Krijgers"
+trp_i4_dun_wolf_warrior  = "Donkerse Wolf Krijger"
+trp_i4_dun_wolf_warrior_pl  = "Donkerse wolf Krijger"
+trp_i5_dun_wolf_guard  = "Donkerse Wolf Beschermer"
+trp_i5_dun_wolf_guard_pl  = "Donkerse Wolf Beschermers"
+; trp_ac5_dun_raven_rider  = "Dunnish Night Raven"
+; trp_ac5_dun_raven_rider_pl  = "Dunnish Night Ravens"
+trp_i1_khand_bondsman  = "Khand Bondman"
+trp_i1_khand_bondsman_pl  = "Khand Bondmannen"
+trp_i2_khand_pit_dog  = "Khand Kuil Hond"
+trp_i2_khand_pit_dog_pl  = "Khand Kuil Honden"
+trp_i3_khand_warrior  = "Khand Krijger"
+trp_i3_khand_warrior_pl  = "Khand Krijgers"
+trp_i4_khand_vet_warrior  = "Khand Veteraan Krijger"
+trp_i4_khand_vet_warrior_pl  = "Khand Veteraan Krijgers"
+; trp_i5_khand_war_master  = "Variag War Master"
+; trp_i5_khand_war_master_pl  = "Variag War Masters"
+trp_c2_khand_pony_rider  = "Khand Pony Rijder"
+trp_c2_khand_pony_rider_pl  = "Khand Pony Rijders"
+trp_c3_khand_horseman  = "Khand Paard Rijder"
+trp_c3_khand_horseman_pl  = "Khand Paard Rijders"
+trp_c4_khand_heavy_horseman  = "Khand Zware Paard Rijder"
+trp_c4_khand_heavy_horseman_pl  = "Khand Zware Paard Rijders"
+trp_c5_khand_kataphrakt  = "Variag Pantser"
+trp_c5_khand_kataphrakt_pl  = "Variag Pantsers"
+trp_c5_khand_lance_kataphrakt  = "Variag Lansier"
+trp_c5_khand_lance_kataphrakt_pl  = "Variag Lansiers"
+trp_i4_khand_halberdier  = "Khand Lansman"
+trp_i4_khand_halberdier_pl  = "Khand Lansmannen"
+trp_i5_khand_halberd_master  = "Variag Hellebaard Meester"
+trp_i5_khand_halberd_master_pl  = "Variag Helebaard Meesters"
+trp_i3_khand_pitfighter  = "Khand Kuil Vechter"
+trp_i3_khand_pitfighter_pl  = "Khand Kuil Vechters"
+trp_i4_khand_pit_champion  = "Khand Kuil Kampioen"
+trp_i4_khand_pit_champion_pl  = "Khand Kuil Kampioenen"
+; trp_i5_khand_pit_master  = "Variag Master of the Pits"
+; trp_i5_khand_pit_master_pl  = "Variag Masters of the Pits"
+; trp_ac3_khand_skirmisher  = "Khand Skirmisher"
+; trp_ac3_khand_skirmisher_pl  = "Khand Skirmishers"
+; trp_ac4_khand_vet_skirmisher  = "Khand Veteran Skirmisher"
+; trp_ac4_khand_vet_skirmisher_pl  = "Khand Veteran Skirmishers"
+; trp_ac5_khand_heavy_skirmisher  = "Variag Heavy Skirmisher"
+; trp_ac5_khand_heavy_skirmisher_pl  = "Variag Heavy Skirmishers"
+; trp_i1_corsair_youth  = "Umbar Sailor"
+; trp_i1_corsair_youth_pl  = "Umbar Sailors"
+; trp_i2_corsair_warrior  = "Umbar Warrior"
+; trp_i2_corsair_warrior_pl  = "Umbar Warriors"
+; trp_i3_corsair_spearman  = "Spearman of Umbar"
+; trp_i3_corsair_spearman_pl  = "Spearmen of Umbar"
+; trp_i4_corsair_raider  = "Corsair Raider"
+; trp_i4_corsair_raider_pl  = "Corsair Raiders"
+; trp_i5_corsair_night_raider  = "Corsair Night Raider"
+; trp_i5_corsair_night_raider_pl  = "Corsair Night Raiders"
+; trp_a2_corsair_marine  = "Umbar Marine"
+; trp_a2_corsair_marine_pl  = "Umbar Marines"
+; trp_a3_corsair_marksman  = "Marksman of Umbar"
+; trp_a3_corsair_marksman_pl  = "Marksmen of Umbar"
+; trp_a4_corsair_veteran_marksman  = "Veteran Marksman of Umbar"
+; trp_a4_corsair_veteran_marksman_pl  = "Veteran Marksmen of Umbar"
+; trp_a5_corsair_master_marksman  = "Corsair Master Marksman"
+; trp_a5_corsair_master_marksman_pl  = "Corsair Master Marksmen"
+; trp_i3_corsair_swordsman  = "Swordsman of Umbar"
+; trp_i3_corsair_swordsman_pl  = "Swordsmen of Umbar"
+; trp_i4_corsair_veteran_swordsman  = "Veteran Swordsman of Umbar"
+; trp_i4_corsair_veteran_swordsman_pl  = "Veteran Swordsmen of Umbar"
+; trp_i5_corsair_master_swordsman  = "Corsair Swordmaster"
+; trp_i5_corsair_master_swordsman_pl  = "Corsair Swordmasters"
+; trp_a4_corsair_assassin  = "Corsair Assassin"
+; trp_a4_corsair_assassin_pl  = "Corsair Assassins"
+; trp_a5_corsair_master_assassin  = "Corsair Assassin"
+; trp_a5_corsair_master_assassin_pl  = "Corsair Assassins"
+; trp_i4_corsair_veteran_spearman  = "Veteran Spearman of Umbar"
+; trp_i4_corsair_veteran_spearman_pl  = "Veteran Spearmen of Umbar"
+; trp_i5_corsair_master_spearman  = "Spearmaster of Umbar"
+; trp_i5_corsair_master_spearman_pl  = "Spearmasters of Umbar"
+; trp_i5_corsair_master_pikeman  = "Pikemaster of Umbar"
+; trp_i5_corsair_master_pikeman_pl  = "Pikemasters of Umbar"
+; trp_i1_isen_orc_snaga  = "Orc Snaga of Isengard"
+; trp_i1_isen_orc_snaga_pl  = "Orc Snagas of Isengard"
+; trp_i2_isen_orc  = "Orc of Isengard"
+; trp_i2_isen_orc_pl  = "Orcs of Isengard"
+; trp_i3_isen_large_orc  = "Large Orc of Isengard"
+; trp_i3_isen_large_orc_pl  = "Large Orcs of Isengard"
+; trp_i4_isen_fell_orc  = "Fell Orc of Isengard"
+; trp_i4_isen_fell_orc_pl  = "Fell Orcs of Isengard"
+; trp_i3_isen_large_orc_despoiler  = "Large Orc Despoiler"
+; trp_i3_isen_large_orc_despoiler_pl  = "Large Orc Despoilers"
+; trp_i4_isen_fell_orc_despoiler  = "Fell Orc Despoiler"
+; trp_i4_isen_fell_orc_despoiler_pl  = "Fell Orc Despoilers"
+; trp_ac2_isen_wolf_rider  = "Wolf Rider of Isengard"
+; trp_ac2_isen_wolf_rider_pl  = "Wolf Riders of Isengard"
+; trp_ac3_isen_warg_rider  = "Warg Rider of Isengard"
+; trp_ac3_isen_warg_rider_pl  = "Warg Riders of Isengard"
+; trp_ac4_isen_white_hand_rider  = "White Hand Rider"
+; trp_ac4_isen_white_hand_rider_pl  = "White Hand Riders"
+trp_warg_ghost_1b  = "Warg"
+; trp_warg_ghost_1b_pl  = "Wargs"
+trp_warg_ghost_1c  = "Warg"
+; trp_warg_ghost_1c_pl  = "Wargs"
+trp_warg_ghost_1d  = "Warg"
+; trp_warg_ghost_1d_pl  = "Wargs"
+trp_warg_ghost_a1b  = "Warg"
+; trp_warg_ghost_a1b_pl  = "Wargs"
+trp_warg_ghost_a1c  = "Gepantserde Warg"
+; trp_warg_ghost_a1c_pl  = "Armored Wargs"
+trp_warg_ghost_a2b  = "Gepantserde Warg"
+; trp_warg_ghost_a2b_pl  = "Armored Wargs"
+trp_warg_ghost_a2c  = "Gepantserde Warg"
+; trp_warg_ghost_a2c_pl  = "Armored Wargs"
+trp_warg_ghost_a3a  = "Gepantserde Warg"
+; trp_warg_ghost_a3a_pl  = "Armored Wargs"
+trp_warg_ghost_h  = "Grote Warg"
+; trp_warg_ghost_h_pl  = "Huge Wargs"
+; trp_a2_isen_uruk_tracker  = "Uruk Hai Tracker"
+; trp_a2_isen_uruk_tracker_pl  = "Uruk Hai Trackers"
+; trp_a3_isen_large_uruk_tracker  = "Large Uruk Hai Tracker"
+; trp_a3_isen_large_uruk_tracker_pl  = "Large Uruk Hai Trackers"
+; trp_a4_isen_fighting_uruk_tracker  = "Fighting Uruk Hai Tracker"
+; trp_a4_isen_fighting_uruk_tracker_pl  = "Fighting Uruk Hai Trackers"
+; trp_i6_isen_uruk_berserker  = "Fighting Uruk Hai Berserker"
+; trp_i6_isen_uruk_berserker_pl  = "Fighting Uruk Hai Berserkers"
+; trp_i1_isen_uruk_snaga  = "Uruk Hai Newborn"
+; trp_i1_isen_uruk_snaga_pl  = "Uruk Hai Newborns"
+; trp_i2_isen_uruk  = "Uruk Hai of Isengard"
+; trp_i2_isen_uruk_pl  = "Uruk Hai of Isengard"
+; trp_i3_isen_large_uruk  = "Large Uruk Hai of Isengard"
+; trp_i3_isen_large_uruk_pl  = "Large Uruk Hai of Isengard"
+; trp_i4_isen_fighting_uruk_warrior  = "Fighting Uruk Hai Warrior"
+; trp_i4_isen_fighting_uruk_warrior_pl  = "Fighting Uruk Hai Warriors"
+; trp_i5_isen_fighting_uruk_champion  = "Fighting Uruk Hai Champion"
+; trp_i5_isen_fighting_uruk_champion_pl  = "Fighting Uruk Hai Champions"
+; trp_i3_isen_uruk_pikeman  = "Uruk Hai Pikeman"
+; trp_i3_isen_uruk_pikeman_pl  = "Uruk Hai Pikemen"
+; trp_i4_isen_fighting_uruk_pikeman  = "Fighting Uruk Hai Pikeman"
+; trp_i4_isen_fighting_uruk_pikeman_pl  = "Fighting Uruk Hai Pikemen"
+; trp_i5_isen_uruk_standard_bearer  = "Uruk Hai Standard Bearer"
+; trp_i5_isen_uruk_standard_bearer_pl  = "Uruk Hai Standard Bearers"
+; trp_i1_mordor_uruk_snaga  = "Uruk Snaga of Mordor"
+; trp_i1_mordor_uruk_snaga_pl  = "Uruk Snagas of Mordor"
+; trp_i2_mordor_uruk  = "Uruk of Mordor"
+; trp_i2_mordor_uruk_pl  = "Uruks of Mordor"
+; trp_i3_mordor_large_uruk  = "Large Uruk of Mordor"
+; trp_i3_mordor_large_uruk_pl  = "Large Uruks of Mordor"
+; trp_i4_mordor_fell_uruk  = "Fell Uruk of Mordor"
+; trp_i4_mordor_fell_uruk_pl  = "Fell Uruks of Mordor"
+; trp_i3_mordor_uruk_slayer  = "Uruk Slayer of Mordor"
+; trp_i3_mordor_uruk_slayer_pl  = "Uruk Slayers of Mordor"
+; trp_i4_mordor_fell_uruk_slayer  = "Fell Uruk Slayer of Mordor"
+; trp_i4_mordor_fell_uruk_slayer_pl  = "Fell Uruk Slayers of Mordor"
+; trp_i5_mordor_black_uruk  = "Black Uruk of Barad Dur"
+; trp_i5_mordor_black_uruk_pl  = "Black Uruks of Barad Dur"
+; trp_i5_mordor_uruk_standard_bearer  = "Mordor Standard Bearer"
+; trp_i5_mordor_uruk_standard_bearer_pl  = "Mordor Standard Bearers"
+; trp_troll_of_moria  = "Cave Troll"
+; trp_troll_of_moria_pl  = "Cave Trolls"
+; trp_armoured_troll  = "Armored Troll"
+; trp_armoured_troll_pl  = "Armored Trolls"
+; trp_olog_hai  = "Olog Hai of Mordor"
+; trp_olog_hai_pl  = "Olog Hai of Mordor"
+; trp_ent  = "Ent"
+; trp_ent_pl  = "Ents"
+; trp_i1_guldur_orc_snaga  = "Orc Snaga of Dol Guldur"
+; trp_i1_guldur_orc_snaga_pl  = "Orc Snagas of Dol Guldur"
+; trp_a2_guldur_orc_tracker  = "Orc Tracker of Dol Guldur"
+; trp_a2_guldur_orc_tracker_pl  = "Orc Trackers of Dol Guldur"
+; trp_i1_mordor_orc_snaga  = "Orc Snaga of Mordor"
+; trp_i1_mordor_orc_snaga_pl  = "Orc Snagas of Mordor"
+; trp_i2_mordor_orc  = "Orc of Mordor"
+; trp_i2_mordor_orc_pl  = "Orcs of Mordor"
+; trp_i3_mordor_large_orc  = "Large Orc of Mordor"
+; trp_i3_mordor_large_orc_pl  = "Large Orcs of Mordor"
+; trp_i4_mordor_fell_orc  = "Fell Orc of Mordor"
+; trp_i4_mordor_fell_orc_pl  = "Fell Orcs of Mordor"
+; trp_c3_mordor_warg_rider  = "Warg Rider of Gorgoroth"
+; trp_c3_mordor_warg_rider_pl  = "Warg Riders of Gorgoroth"
+; trp_c4_mordor_great_warg_rider  = "Great Warg Rider of Udun"
+; trp_c4_mordor_great_warg_rider_pl  = "Great Warg Riders of Udun"
+; trp_i2_mordor_morgul_orc  = "Orc of Minas Morgul"
+; trp_i2_mordor_morgul_orc_pl  = "Orcs of Minas Morgul"
+; trp_i4_mordor_fell_morgul_orc  = "Fell Orc of Minas Morgul"
+; trp_i4_mordor_fell_morgul_orc_pl  = "Fell Orcs of Minas Morgul"
+; trp_a3_guldur_large_orc_tracker  = "Large Orc Tracker of Dol Guldur"
+; trp_a3_guldur_large_orc_tracker_pl  = "Large Orc Trackers of Dol Guldur"
+; trp_a4_guldur_fell_orc_tracker  = "Fell Orc Tracker of Dol Guldur"
+; trp_a4_guldur_fell_orc_tracker_pl  = "Fell Orc Trackers of Dol Guldur"
+; trp_a2_mordor_orc_archer  = "Orc Archer of Mordor"
+; trp_a2_mordor_orc_archer_pl  = "Orc Archers of Mordor"
+; trp_a3_mordor_large_orc_archer  = "Large Orc Archer of Mordor"
+; trp_a3_mordor_large_orc_archer_pl  = "Large Orc Archers of Mordor"
+; trp_a4_mordor_fell_orc_archer  = "Fell Orc Archer of Mordor"
+; trp_a4_mordor_fell_orc_archer_pl  = "Fell Orc Archers of Mordor"
+; trp_c3_moria_wolf_rider  = "Wolf Rider of Moria"
+; trp_c3_moria_wolf_rider_pl  = "Wolf Riders of Moria"
+; trp_c4_moria_warg_rider  = "Warg Rider of Moria"
+; trp_c4_moria_warg_rider_pl  = "Warg Riders of Moria"
+; trp_c5_moria_clan_rider  = "Bolg Clan Rider"
+; trp_c5_moria_clan_rider_pl  = "Bolg Clan Riders"
+; trp_i1_moria_snaga  = "Snaga of Moria"
+; trp_i1_moria_snaga_pl  = "Snagas of Moria"
+; trp_i2_moria_goblin  = "Goblin of Moria"
+; trp_i2_moria_goblin_pl  = "Goblins of Moria"
+; trp_i3_moria_large_goblin  = "Large Goblin of Moria"
+; trp_i3_moria_large_goblin_pl  = "Large Goblins of Moria"
+; trp_i4_moria_fell_goblin  = "Fell Goblin of Moria"
+; trp_i4_moria_fell_goblin_pl  = "Fell Goblins of Moria"
+; trp_a2_moria_goblin_archer  = "Goblin Archer of Moria"
+; trp_a2_moria_goblin_archer_pl  = "Goblin Archers of Moria"
+; trp_a3_moria_large_goblin_archer  = "Large Goblin Archer of Moria"
+; trp_a3_moria_large_goblin_archer_pl  = "Large Goblin Archers of Moria"
+; trp_a4_moria_fell_goblin_archer  = "Fell Goblin Archer of Moria"
+; trp_a4_moria_fell_goblin_archer_pl  = "Fell Goblin Archers of Moria"
+; trp_i1_gunda_goblin  = "Gundabad Goblin"
+; trp_i1_gunda_goblin_pl  = "Gundabad Goblins"
+; trp_i2_gunda_orc  = "Gundabad Orc"
+; trp_i2_gunda_orc_pl  = "Gundabad Orcs"
+; trp_i3_gunda_orc_fighter  = "Gundabad Orc Fighter"
+; trp_i3_gunda_orc_fighter_pl  = "Gundabad Orc Fighters"
+; trp_i4_gunda_orc_warrior  = "Gundabad Orc Warrior"
+; trp_i4_gunda_orc_warrior_pl  = "Gundabad Orc Warriors"
+; trp_i4_gunda_orc_berserker  = "Gundabad Orc Berserker"
+; trp_i4_gunda_orc_berserker_pl  = "Gundabad Orc Berserkers"
+; trp_ca4_gunda_skirmisher  = "Gundabad Skirmisher"
+; trp_ca4_gunda_skirmisher_pl  = "Gundabad Skirmishers"
+; trp_ca5_gunda_clan_skirmisher  = "Goblin North Clan Skirmisher"
+; trp_ca5_gunda_clan_skirmisher_pl  = "Goblin North Clan Skirmishers"
+; trp_c3_gunda_goblin_rider  = "Gundabad Goblin Rider"
+; trp_c3_gunda_goblin_rider_pl  = "Gundabad Goblin Riders"
+; trp_c4_gunda_warg_rider  = "Gundabad Warg Rider"
+; trp_c4_gunda_warg_rider_pl  = "Gundabad Warg Riders"
+; trp_c5_gunda_clan_rider  = "Goblin North Clan Rider"
+; trp_c5_gunda_clan_rider_pl  = "Goblin North Clan Riders"
+; trp_mountain_goblin2  = "Mountain Goblin"
+; trp_mountain_goblin2_pl  = "Mountain Goblins"
+; trp_tribal_orc2  = "Tribal Orc"
+trp_tribal_orc2_pl  = "Stammen Orks"
+; trp_tribal_orc_warrior2  = "Tribal Orc Warrior"
+; trp_tribal_orc_warrior2_pl  = "Tribal Orc Warriors"
+; trp_i5_gunda_orc_champion  = "Gundabad Orc Champion"
+; trp_i5_gunda_orc_champion_pl  = "Gundabad Orc Champions"
+; trp_i2_mordor_num_renegade  = "Black Numenorean Renegade"
+; trp_i2_mordor_num_renegade_pl  = "Black Numenorean Renegades"
+; trp_i3_mordor_num_warrior  = "Black Numenorean Warrior"
+; trp_i3_mordor_num_warrior_pl  = "Black Numenorean Warriors"
+; trp_i4_mordor_num_vet_warrior  = "Black Numenorean Veteran Warrior"
+; trp_i4_mordor_num_vet_warrior_pl  = "Black Numenorean Veteran Warriors"
+; trp_i5_mordor_num_champion  = "Black Numenorean Champion"
+; trp_i5_mordor_num_champion_pl  = "Black Numenorean Champions"
+; trp_i5_mordor_num_assassin  = "Black Numenorean Assassin"
+; trp_i5_mordor_num_assassin_pl  = "Black Numenorean Assassins"
+; trp_c4_mordor_num_horseman  = "Black Numenorean Horseman"
+; trp_c4_mordor_num_horseman_pl  = "Black Numenorean Horsemen"
+; trp_c5_mordor_num_knight  = "Black Numenorean Horsemaster"
+; trp_c5_mordor_num_knight_pl  = "Black Numenorean Horsemasters"
+; trp_noldorin_commander  = "Noldorin Commander"
+; trp_noldorin_commander_pl  = "Noldorin Commanders"
+; trp_elf_captain_of_lothlorien  = "Elf Captain of Lothlorien"
+; trp_elf_captain_of_lothlorien_pl  = "Elf Captains of Lothlorien"
+; trp_lothlorien_lieutenant  = "Lothlorien Lieutenant"
+; trp_lothlorien_lieutenant_pl  = "Lothlorien Lieutenants"
+; trp_elf_captain_of_mirkwood  = "Elf Captain of Greenwood"
+; trp_elf_captain_of_mirkwood_pl  = "Elf Captains of Greenwood"
+; trp_mirkwood_lieutenant  = "Greenwood Lieutenant"
+; trp_mirkwood_lieutenant_pl  = "Greenwood Lieutenants"
+; trp_elf_captain_of_rivendell  = "Elf Captain of Rivendell"
+; trp_elf_captain_of_rivendell_pl  = "Elf Captains of Rivendell"
+; trp_rivendell_lieutenant  = "Rivendell Lieutenant"
+; trp_rivendell_lieutenant_pl  = "Rivendell Lieutenants"
+; trp_lieutenant_of_rohan  = "Lieutenant of Rohan"
+; trp_lieutenant_of_rohan_pl  = "Lieutenants of Rohan"
+; trp_captain_of_rohan  = "Captain of Rohan"
+; trp_captain_of_rohan_pl  = "Captains of Rohan"
+; trp_high_captain_of_rohan  = "High Captain of Rohan"
+; trp_high_captain_of_rohan_pl  = "High Captains of Rohan"
+; trp_lieutenant_of_isengard  = "Lieutenant of Isengard"
+; trp_lieutenant_of_isengard_pl  = "Lieutenants of Isengard"
+; trp_captain_of_isengard  = "Captain of Isengard"
+; trp_captain_of_isengard_pl  = "Captains of Isengard"
+; trp_high_captain_of_isengard  = "High Captain of Isengard"
+; trp_high_captain_of_isengard_pl  = "High Captains of Isengard"
+; trp_lieutenant_of_mordor  = "Lieutenant of Mordor"
+; trp_lieutenant_of_mordor_pl  = "Lieutenants of Mordor"
+; trp_captain_of_mordor  = "Captain of Mordor"
+; trp_captain_of_mordor_pl  = "Captains of Mordor"
+; trp_high_captain_of_mordor  = "High Captain of Mordor"
+; trp_high_captain_of_mordor_pl  = "High Captains of Mordor"
+; trp_easterling_chieftain  = "Variag Chieftain"
+; trp_easterling_chieftain_pl  = "Variag Chieftains"
+; trp_easterling_lieutenant  = "Variag War Priest"
+; trp_easterling_lieutenant_pl  = "Variag War Priests"
+; trp_harad_chieftain  = "Harad Chieftain"
+; trp_harad_chieftain_pl  = "Harad Chieftains"
+; trp_harad_lieutenant  = "Harad Lieutenant"
+; trp_harad_lieutenant_pl  = "Harad Lieutenants"
+; trp_black_numenorean_captain  = "Black Numenorean Captain"
+; trp_black_numenorean_captain_pl  = "Black Numenorean Captains"
+; trp_black_numenorean_lieutenant  = "Black Numenorean Lieutenant"
+; trp_black_numenorean_lieutenant_pl  = "Black Numenorean Lieutenants"
+; trp_a5_dun_night_wolf  = "Dunnish Night Wolf"
+; trp_a5_dun_night_wolf_pl  = "Dunnish Night Wolfs"
+; trp_dunnish_lieutenant  = "Dunnish Hetman"
+; trp_dunnish_lieutenant_pl  = "Dunnish Hetmen"
+; trp_goblin_chieftain  = "Goblin Chieftain"
+; trp_goblin_chieftain_pl  = "Goblin Chieftains"
+trp_captain_of_gondor  = "Kapitein van Gondor"
+; trp_captain_of_gondor_pl  = "Captains of Gondor"
+trp_nobleman  = "Edelman"
+trp_nobleman_pl  = "Edelmannen"
+; trp_gondor_agent  = "Gondor Agent"
+; trp_gondor_agent_pl  = "Gondor Agents"
+; trp_rohan_agent  = "Rohan Agent"
+; trp_rohan_agent_pl  = "Rohan Agents"
+; trp_mordor_agent  = "Mordor Agent"
+; trp_mordor_agent_pl  = "Mordor Agents"
+; trp_isengard_agent  = "Isengard Agent"
+; trp_isengard_agent_pl  = "Isengard Agents"
+; trp_looter  = "Looter"
+; trp_looter_pl  = "Looters"
+trp_bandit  = "Bandiet"
+trp_bandit_pl  = "Bandieten"
+trp_brigand  = "Rover"
+trp_brigand_pl  = "Rovers"
+trp_mountain_bandit  = "Berg Bandiet"
+trp_mountain_bandit_pl  = "Berg Bandieten"
+trp_forest_bandit  = "Bos Bandiet"
+trp_forest_bandit_pl  = "Bos Bandieten"
+; trp_sea_raider  = "Sea Raider"
+; trp_sea_raider_pl  = "Sea Raiders"
+; trp_steppe_bandit  = "Steppe Bandit"
+; trp_steppe_bandit_pl  = "Steppe Bandits"
+; trp_manhunter  = "Manhunter"
+trp_manhunter_pl  = "\nManhunters"
+; trp_kidnapped_girl  = "Kidnapped Girl"
+; trp_kidnapped_girl_pl  = "Kidnapped Girls"
+trp_refugee  = "Vluchteling"
+trp_refugee_pl  = "Vluchtelingen"
+; trp_peasant_woman  = "Peasant Woman"
+; trp_peasant_woman_pl  = "Peasant Women"
+; trp_caravan_master  = "Caravan Master"
+; trp_caravan_master_pl  = "Caravan Masters"
+; trp_caravan_guard  = "Caravan Guard"
+; trp_caravan_guard_pl  = "Caravan Guards"
+trp_messenger_man  = "Boodschapper"
+trp_messenger_man_pl  = "Boodschappers"
+trp_messenger_elf  = "Boodschapper"
+trp_messenger_elf_pl  = "Boodschappers"
+trp_messenger_dwarf  = "Boodschapper"
+trp_messenger_dwarf_pl  = "Boodschappers"
+trp_messenger_orc  = "Boodschapper"
+trp_messenger_orc_pl  = "Boodschappers"
+trp_messenger_evil_man  = "Boodschapper"
+trp_messenger_evil_man_pl  = "Boodschappers"
+trp_town_walker_1  = "stedeling"
+trp_town_walker_1_pl  = "Burger"
+trp_town_walker_2  = "Stadsvrouw"
+trp_town_walker_2_pl  = "Stadsvrouwen"
+; trp_village_walker_1  = "Villager"
+; trp_village_walker_1_pl  = "Villagers"
+; trp_village_walker_2  = "Villager"
+; trp_village_walker_2_pl  = "Villagers"
+trp_spy_walker_1  = "stedeling"
+trp_spy_walker_1_pl  = "Burger"
+trp_spy_walker_2  = "Stadsvrouw"
+trp_spy_walker_2_pl  = "Stadsvrouwen"
+trp_walker_man_gondor_black  = "stedeling"
+trp_walker_man_gondor_white  = "stedeling"
+trp_walker_man_gondor_blue  = "stedeling"
+trp_walker_man_gondor_green  = "stedeling"
+; trp_walker_man_rohan_t  = "Rohan Townsman"
+; trp_walker_man_rohan_d  = "Rohan Townsman"
+; trp_walker_woman_rohan_t  = "Rohan Maiden"
+; trp_walker_woman_rohan_d  = "Rohan Maiden"
+; trp_walker_woman_gondor_b  = "Gondor Woman"
+; trp_walker_woman_gondor_bw  = "Gondor Woman"
+; trp_walker_woman_gondor_w  = "Gondor Noble"
+; trp_ramun_the_slave_trader  = "Ramun the slave trader"
+; trp_guide  = "Quick Jimmy"
+; trp_galeas  = "Galeas"
+trp_farmer_from_bandit_village  = "Boer"
+trp_farmer_from_bandit_village_pl  = "Boeren"
+trp_trainer_1  = "Trainer"
+trp_trainer_2  = "Trainer"
+trp_trainer_3  = "Trainer"
+trp_trainer_4  = "Trainer"
+trp_trainer_gondor  = "Trainer"
+trp_trainer_rohan  = "Trainer"
+trp_trainer_dale  = "Trainer"
+trp_trainer_elf  = "Trainer"
+trp_trainer_beorn  = "Trainer"
+trp_trainer_dwarf  = "Trainer"
+trp_trainer_mordor  = "Trainer"
+trp_trainer_isengard  = "Trainer"
+trp_trainer_khand  = "Trainer"
+trp_trainer_rhun  = "Trainer"
+trp_trainer_harad  = "Trainer"
+trp_trainer_umbar  = "Trainer"
+; trp_ransom_broker_1  = "Ransom Broker"
+; trp_ransom_broker_2  = "Ransom Broker"
+; trp_ransom_broker_3  = "Ransom Broker"
+; trp_ransom_broker_4  = "Ransom Broker"
+; trp_ransom_broker_5  = "Ransom Broker"
+; trp_ransom_broker_6  = "Ransom Broker"
+; trp_ransom_broker_7  = "Ransom Broker"
+; trp_ransom_broker_8  = "Ransom Broker"
+; trp_ransom_broker_9  = "Ransom Broker"
+; trp_ransom_broker_10  = "Ransom Broker"
+trp_tavern_traveler_1  = "Reiziger"
+trp_tavern_traveler_2  = "Reiziger"
+trp_tavern_traveler_3  = "Reiziger"
+trp_tavern_traveler_4  = "Reiziger"
+trp_tavern_traveler_5  = "Reiziger"
+trp_tavern_traveler_6  = "Reiziger"
+trp_tavern_traveler_7  = "Reiziger"
+trp_tavern_traveler_8  = "Reiziger"
+trp_tavern_traveler_9  = "Reiziger"
+trp_tavern_traveler_10  = "Reiziger"
+; trp_tavern_minstrel_1  = "Minstrel"
+; trp_npc1  = "Mablung"
+; trp_npc2  = "Cirdil"
+; trp_npc3  = "Ulfas"
+; trp_npc4  = "Galmyne"
+; trp_npc5  = "Glorfindel"
+; trp_npc6  = "Luevanna"
+; trp_npc7  = "Kili Goldfinger"
+; trp_npc8  = "Faniul"
+; trp_npc9  = "Gulm"
+; trp_npc10  = "Durgash"
+; trp_npc11  = "Ufthak"
+; trp_npc12  = "Gorbag"
+; trp_npc13  = "Lykyada"
+; trp_npc14  = "Fuldimir"
+; trp_npc15  = "Bolzog"
+; trp_npc16  = "Varfang"
+; trp_npc17  = "Dimborn"
+; trp_knight_6_2  = "Golasgil"
+; trp_gondor_lord  = "Steward Denethor"
+; trp_gondor_lord_pl  = "Steward"
+; trp_rohan_lord  = "King Theoden"
+trp_rohan_lord_pl  = "Koning"
+; trp_isengard_lord  = "Saruman"
+trp_isengard_lord_pl  = "Meester"
+; trp_mordor_lord  = "Mouth of Sauron"
+; trp_mordor_lord_pl  = "Satrap"
+; trp_harad_lord  = "Chief Ul-Ulcari"
+; trp_harad_lord_pl  = "Chief"
+; trp_rhun_lord  = "Jarl Helcaroth"
+; trp_rhun_lord_pl  = "Jarl"
+; trp_khand_lord  = "Shibh Krukmahur"
+; trp_khand_lord_pl  = "Shibh"
+; trp_umbar_lord  = "Admiral Tulmir"
+trp_umbar_lord_pl  = "Admiraal"
+; trp_lorien_lord  = "Lady Galadriel"
+; trp_lorien_lord_pl  = "Lady"
+; trp_imladris_lord  = "Lord Elrond"
+; trp_imladris_lord_pl  = "Lord"
+; trp_woodelf_lord  = "King Thranduil"
+trp_woodelf_lord_pl  = "Koning"
+; trp_moria_lord  = "Master Bolg the Lesser"
+trp_moria_lord_pl  = "Meester"
+; trp_guldur_lord  = "Master Fuinur"
+trp_guldur_lord_pl  = "Meester"
+; trp_gundabad_lord  = "Master Burza Krual"
+trp_gundabad_lord_pl  = "Meester"
+; trp_dale_lord  = "King Brand"
+trp_dale_lord_pl  = "Koning"
+; trp_dwarf_lord  = "King Dain II Ironfoot"
+trp_dwarf_lord_pl  = "Koning"
+; trp_dunland_lord  = "Chief Daeglaf the Black"
+; trp_dunland_lord_pl  = "Chief"
+; trp_beorn_lord  = "Chief Grimbeorn the Old"
+; trp_beorn_lord_pl  = "Chief"
+; trp_lorien_marshall  = "Celeborn"
+; trp_pippin_notmet  = "halfling"
+; trp_merry_notmet  = "halfling"
+; trp_pippin  = "Pippin"
+; trp_merry  = "Merry"
+; trp_knight_1_1  = "Angbor the Fearless"
+; trp_knight_1_2  = "Húrin of the Keys"
+; trp_knight_1_3  = "Prince Imrahil"
+; trp_knight_1_4  = "Orthalion"
+; trp_knight_1_5  = "Duinhir"
+; trp_knight_1_6  = "Hirluin the Fair"
+; trp_knight_1_7  = "Faramir"
+; trp_knight_1_8  = "Forlong the Fat"
+; trp_knight_1_9  = "Grimbold"
+; trp_knight_1_10  = "Erkenbrand"
+; trp_knight_1_11  = "Elfhelm"
+; trp_knight_1_12  = "Hama"
+; trp_knight_1_13  = "Gamling"
+; trp_knight_1_14  = "Éomer"
+; trp_knight_1_15  = "Ugluk"
+; trp_knight_1_16  = "Mauhur"
+; trp_knight_1_17  = "Mog the Seven-fingered"
+; trp_knight_1_18  = "Hushnak Longshanks"
+; trp_knight_1_19  = "Gridash the Tree-biter"
+; trp_knight_1_20  = "Gronk the Man-eater"
+; trp_knight_2_1  = "Captain Mortakh"
+; trp_knight_2_2  = "Berúthiel"
+; trp_knight_2_3  = "Skang"
+; trp_knight_2_4  = "Pharakhâd The Bastard"
+; trp_knight_2_5  = "Grishnakh"
+; trp_knight_2_51  = "Gothmog"
+; trp_knight_2_51_pl  = "Lieutenant"
+; trp_knight_2_6  = "Chieftain Karna the Lion"
+; trp_knight_2_7  = "Chieftain Na’man"
+; trp_knight_2_8  = "Chieftain Haarith"
+; trp_knight_2_11  = "Kusulak"
+; trp_knight_2_12  = "Ulwarth the Balchoth"
+; trp_knight_2_13  = "Brodda"
+; trp_knight_2_16  = "Torask"
+; trp_knight_2_17  = "Lurmsakun"
+; trp_knight_3_1  = "Captain Morbir"
+; trp_knight_3_2  = "Captain Angamaitë"
+; trp_knight_3_3  = "Captain Sangahyando"
+; trp_knight_3_6  = "Haldir"
+; trp_knight_3_7  = "Orophin"
+; trp_knight_3_11  = "Elladan"
+; trp_knight_3_12  = "Elrohir"
+; trp_knight_3_13  = "Halbarad"
+; trp_knight_3_16  = "Miriel"
+; trp_knight_3_17  = "Gladvaethor"
+; trp_knight_4_1  = "Whip Snog"
+; trp_knight_4_2  = "Whip Snotgor"
+; trp_knight_4_6  = "General Tuskim"
+; trp_knight_4_7  = "General Mugslag"
+; trp_knight_4_11  = "Ruel"
+; trp_knight_4_12  = "Beranor Blackfur"
+; trp_knight_4_16  = "Whip Brolgukhsh"
+; trp_knight_4_17  = "Whip Grumrunt"
+; trp_knight_4_18  = "Whip Grimsob"
+; trp_knight_5_1  = "Lord Halward"
+; trp_knight_5_2  = "Lord Bard"
+; trp_knight_5_3  = "Lord Esgarain"
+; trp_knight_5_6  = "Fulgni Longbeard"
+; trp_knight_5_7  = "Thorin Stonehelm"
+; trp_knight_5_11  = "Chief Fudreim"
+; trp_knight_5_12  = "Chief Wulf"
+; trp_knight_6_1  = "Dervorin"
+; trp_smith_mtirith  = "Berethor the Smith"
+; trp_smith_mtirith_pl  = "Steward's smiths"
+; trp_smith_pelargir  = "Hallatan Metalmaster"
+; trp_smith_pelargir_pl  = "smithy"
+; trp_smith_linhir  = "Bor the Armorer"
+; trp_smith_linhir_pl  = "smithy"
+; trp_smith_dolamroth  = "Haldad the Smith"
+; trp_smith_dolamroth_pl  = "Amroth smiths"
+; trp_smith_edhellond  = "Ryis Ironbender"
+; trp_smith_edhellond_pl  = "smithy"
+; trp_smith_lossarnach  = "Berin Axemaker"
+; trp_smith_lossarnach_pl  = "smithy"
+; trp_smith_tarnost  = "Harandil Steelhammer"
+; trp_smith_tarnost_pl  = "smithy"
+; trp_smith_erech  = "Lorne the Black"
+; trp_smith_erech_pl  = "smithy"
+; trp_smith_pinnath  = "Tarandil Swordmaker"
+; trp_smith_pinnath_pl  = "smithy"
+; trp_smith_eosgiliath  = "Bzurg the Looter"
+; trp_smith_eosgiliath_pl  = "smithy"
+; trp_smith_wosgiliath  = "Gardil"
+; trp_smith_wosgiliath_pl  = "makeshift smithy"
+; trp_smith_calembel  = "Agronom"
+; trp_smith_calembel_pl  = "smithy"
+; trp_smith_hannun  = "Fal the Ranger Smith"
+; trp_smith_hannun_pl  = "ranger gear stash"
+; trp_smith_candros  = "Kalimdor"
+; trp_smith_candros_pl  = "smithy"
+; trp_smith_edoras  = "Eaoden Steelmaster"
+; trp_smith_edoras_pl  = "King's smithy"
+; trp_smith_aldburg  = "Fulm Ironhoof"
+; trp_smith_aldburg_pl  = "smithy"
+; trp_smith_hornburg  = "Aldhelm"
+; trp_smith_hornburg_pl  = "smithy"
+; trp_smith_eastemnet  = "Eadfrid"
+; trp_smith_eastemnet_pl  = "smithy"
+; trp_smith_westfold  = "Deor Helmmaker"
+; trp_smith_westfold_pl  = "smithy"
+; trp_smith_westemnet  = "Armourer"
+; trp_smith_westemnet_pl  = "smithy"
+; trp_smith_eastfold  = "Eaderan Ironcarver"
+; trp_smith_eastfold_pl  = "smithy"
+; trp_smith_morannon  = "Hurbag Gateforger"
+; trp_smith_morannon_pl  = "smithy"
+; trp_smith_mmorgul  = "Orgurz Firebelcher"
+; trp_smith_mmorgul_pl  = "smithy"
+; trp_town_24_smith  = "Boz Ironspoiler"
+; trp_town_24_smith_pl  = "smithy"
+; trp_smith_orc_patrol  = "Glugz Ironfinger"
+; trp_smith_orc_patrol_pl  = "camp smithy"
+; trp_smith_oscamp  = "Kugash Ironlover"
+; trp_smith_oscamp_pl  = "camp smithy"
+; trp_smith_isengard  = "Burz Ironbasher"
+; trp_smith_isengard_pl  = "underground smithy"
+; trp_smith_uoutpost  = "Gurzuk Irontooth"
+; trp_smith_uoutpost_pl  = "outpost smithy"
+; trp_smith_uhcamp  = "Rabzug Rusteater"
+; trp_smith_uhcamp_pl  = "camp smithy"
+; trp_smith_urcamp  = "Glurk"
+; trp_smith_urcamp_pl  = "camp smithy"
+; trp_smith_cgaladhon  = "Dirufin the Bowyer"
+; trp_smith_cgaladhon_pl  = "elven weaponmakers"
+; trp_smith_cdolen  = "Dimirian the Fletcher"
+; trp_smith_cdolen_pl  = "elven weaponmakers"
+; trp_smith_camroth  = "Getasistan"
+; trp_smith_camroth_pl  = "elven weaponmakers"
+; trp_smith_thranduils_halls  = "Thurinor"
+; trp_smith_thranduils_halls_pl  = "smithy"
+; trp_smith_woodelf_camp  = "Calechir"
+; trp_smith_woodelf_camp_pl  = "smithy"
+; trp_smith_beorn  = "Beornalaf Axemaker"
+; trp_smith_beorn_pl  = "smithy"
+; trp_smith_moria  = "Burgak Forger"
+; trp_smith_moria_pl  = "smithy"
+; trp_smith_dale  = "Ardel Firehand"
+; trp_smith_dale_pl  = "smithy"
+; trp_smith_esgaroth  = "Kelegarn The Bowyer"
+; trp_smith_esgaroth_pl  = "smithy"
+; trp_smith_erebor  = "Thror the Hammerer"
+; trp_smith_erebor_pl  = "praised Dwarven smiths"
+; trp_smith_dunland  = "Dorrowuld Ironpike"
+; trp_smith_dunland_pl  = "smithy"
+; trp_smith_harad  = "Har Steelbender"
+; trp_smith_harad_pl  = "smithy"
+; trp_smith_khand  = "Pushurt The Haggler"
+; trp_smith_khand_pl  = "smithy"
+; trp_smith_umbar  = "Fuinir the Forger"
+; trp_smith_umbar_pl  = "smithy"
+; trp_smith_imladris  = "Duifirian"
+; trp_smith_imladris_pl  = "elven weaponmakers"
+; trp_smith_dolguldur  = "Shtazg Dulbash"
+; trp_smith_dolguldur_pl  = "smithy"
+; trp_smith_north_rhun  = "Ognjemir Kladivo"
+; trp_smith_north_rhun_pl  = "makeshift smithy"
+; trp_smith_gundabad  = "Blurg Snowseller"
+; trp_smith_gundabad_pl  = "smithy"
+; trp_smith_ironhill  = "Ironhill Smith"
+; trp_smith_ironhill_pl  = "Dwarven camp smiths"
+; trp_town_50_weaponsmith  = "Shruklug Knife Grinder"
+; trp_town_50_weaponsmith_pl  = "smithy"
+; trp_smith_gondor_ac  = "Bor the Armorer"
+; trp_smith_gondor_ac_pl  = "camp smithy"
+; trp_smith_rohan_ac  = "Deor Helmmaker"
+; trp_smith_rohan_ac_pl  = "camp smithy"
+; trp_smith_mordor_ac  = "Hurbag Gateforger"
+; trp_smith_mordor_ac_pl  = "smithy"
+; trp_smith_isengard_ac  = "Burz Ironbasher"
+; trp_smith_isengard_ac_pl  = "underground smithy"
+; trp_smith_lorien_ac  = "Dimirian the Fletcher"
+; trp_smith_lorien_ac_pl  = "elven weaponmakers"
+; trp_smith_woodelf_ac  = "Dhoelath"
+; trp_smith_woodelf_ac_pl  = "smithy"
+; trp_smith_dwarf_ac  = "Ironhill Smith"
+; trp_smith_dwarf_ac_pl  = "Dwarven camp smiths"
+; trp_smith_gundabad_ac  = "Blurg Snowseller"
+; trp_smith_gundabad_ac_pl  = "smithy"
+; trp_smith_rhun_ac  = "Branimir Bronnik"
+; trp_smith_rhun_ac_pl  = "makeshift smithy"
+; trp_smith_guldur_ac  = "Shtazg Dulbash"
+; trp_smith_guldur_ac_pl  = "smithy"
+; trp_smith_imladris_ac  = "Duifirian"
+; trp_smith_imladris_ac_pl  = "elven weaponmakers"
+; trp_smith_dunland_ac  = "Dorrowuld Ironpike"
+; trp_smith_dunland_ac_pl  = "smithy"
+; trp_smith_harad_ac  = "Har Steelbender"
+; trp_smith_harad_ac_pl  = "smithy"
+; trp_smith_khand_ac  = "Pushurt The Haggler"
+; trp_smith_khand_ac_pl  = "smithy"
+; trp_smith_umbar_ac  = "Fuinir the Forger"
+; trp_smith_umbar_ac_pl  = "smithy"
+; trp_barman_mtirith  = "Tavern Keeper"
+; trp_barman_mtirith_pl  = "the Citadel"
+; trp_barman_pelargir  = "Tavern Keeper"
+trp_barman_pelargir_pl  = "het Kasteel"
+; trp_barman_linhir  = "Tavern Keeper"
+trp_barman_linhir_pl  = "het Kasteel"
+; trp_barman_dolamroth  = "Tavern Keeper"
+trp_barman_dolamroth_pl  = "het Kasteel"
+; trp_barman_edhellond  = "Tavern Keeper"
+trp_barman_edhellond_pl  = "het Kasteel"
+; trp_barman_lossarnach  = "Tavern Keeper"
+trp_barman_lossarnach_pl  = "het Kasteel"
+; trp_barman_tarnost  = "Tavern Keeper"
+trp_barman_tarnost_pl  = "het Kasteel"
+; trp_barman_erech  = "Tavern Keeper"
+trp_barman_erech_pl  = "het Kasteel"
+; trp_barman_pinnath  = "Tavern Keeper"
+trp_barman_pinnath_pl  = "het Kasteel"
+; trp_barman_hannun  = "Tavern Keeper"
+trp_barman_hannun_pl  = "de Geheime Grot"
+; trp_barman_calembel  = "Tavern Keeper"
+trp_barman_calembel_pl  = "het Kasteel"
+; trp_barman_edoras  = "Tavern Keeper"
+; trp_barman_edoras_pl  = "Meduseld, the Golden Hall"
+; trp_barman_aldburg  = "Tavern Keeper"
+trp_barman_aldburg_pl  = "het Kasteel"
+; trp_barman_hornburg  = "Tavern Keeper"
+; trp_barman_hornburg_pl  = "the Lord Halls"
+; trp_barman_eastemnet  = "Tavern Keeper"
+trp_barman_eastemnet_pl  = "het Kasteel"
+; trp_barman_westfold  = "Tavern Keeper"
+trp_barman_westfold_pl  = "het Kasteel"
+; trp_barman_westemnet  = "Tavern Keeper"
+trp_barman_westemnet_pl  = "het Kasteel"
+; trp_barman_eastfold  = "Tavern Keeper"
+trp_barman_eastfold_pl  = "het Kasteel"
+; trp_barman_baraddur  = "Tavern Keeper"
+trp_barman_baraddur_pl  = "het Kasteel"
+; trp_barman_morannon  = "Tavern Keeper"
+; trp_barman_morannon_pl  = "the Leader's Cave"
+; trp_barman_mmorgul  = "Tavern Keeper"
+trp_barman_mmorgul_pl  = "de Toren"
+; trp_barman_cungol  = "Tavern Keeper"
+trp_barman_cungol_pl  = "het Kasteel"
+; trp_barman_isengard  = "Tavern Keeper"
+; trp_barman_isengard_pl  = "the tower of Orthanc"
+; trp_barman_cgaladhon  = "Tavern Keeper"
+; trp_barman_cgaladhon_pl  = "the Tree castle"
+; trp_barman_cdolen  = "Tavern Keeper"
+; trp_barman_cdolen_pl  = "the Tree castle"
+; trp_barman_camroth  = "Tavern Keeper"
+; trp_barman_camroth_pl  = "the Tree castle"
+; trp_barman_thalls  = "Tavern Keeper"
+; trp_barman_thalls_pl  = "the Throne Room"
+; trp_barman_beorn  = "Tavern Keeper"
+; trp_barman_beorn_pl  = "Beorn's Hall"
+; trp_barman_moria  = "Tavern Keeper"
+; trp_barman_moria_pl  = "the Chief's Chamber"
+; trp_barman_dale  = "Tavern Keeper"
+trp_barman_dale_pl  = "het Kasteel"
+; trp_barman_esgaroth  = "Tavern Keeper"
+; trp_barman_esgaroth_pl  = "the Hall"
+; trp_barman_erebor  = "Tavern Keeper"
+; trp_barman_erebor_pl  = "the Great Chamber of Thrór"
+; trp_barman_dolguldur  = "Tavern Keeper"
+trp_barman_dolguldur_pl  = "het Kasteel"
+; trp_merchant_mtirith  = "Supply Master"
+trp_merchant_mtirith_pl  = "stal en warenhuis"
+; trp_merchant_pelargir  = "Supply Master"
+trp_merchant_pelargir_pl  = "stal en warenhuis"
+; trp_merchant_linhir  = "Supply Master"
+trp_merchant_linhir_pl  = "stal en warenhuis"
+; trp_merchant_dolamroth  = "Supply Master"
+trp_merchant_dolamroth_pl  = "stal en warenhuis"
+; trp_merchant_edhellond  = "Supply Master"
+trp_merchant_edhellond_pl  = "stal en warenhuis"
+; trp_merchant_lossarnach  = "Supply Master"
+trp_merchant_lossarnach_pl  = "stal en warenhuis"
+; trp_merchant_tarnost  = "Supply Master"
+trp_merchant_tarnost_pl  = "stal en warenhuis"
+; trp_merchant_erech  = "Supply Master"
+trp_merchant_erech_pl  = "stal en warenhuis"
+; trp_merchant_pinnath  = "Supply Master"
+trp_merchant_pinnath_pl  = "stal en warenhuis"
+; trp_merchant_eosgiliath  = "Supply Master"
+trp_merchant_eosgiliath_pl  = "stal en warenhuis"
+; trp_merchant_wosgiliath  = "Supply Master"
+trp_merchant_wosgiliath_pl  = "stal en warenhuis"
+; trp_town_12_horse_merchant  = "Supply Master"
+trp_town_12_horse_merchant_pl  = "stal en warenhuis"
+; trp_town_13_horse_merchant  = "Supply Master"
+trp_town_13_horse_merchant_pl  = "stal en warenhuis"
+; trp_merchant_edoras  = "Supply Maiden"
+trp_merchant_edoras_pl  = "stal en warenhuis"
+; trp_merchant_aldburg  = "Supply Master"
+; trp_merchant_aldburg_pl  = "King's stable and warehouse"
+; trp_merchant_hornburg  = "Supply Master"
+trp_merchant_hornburg_pl  = "stal en warenhuis"
+; trp_merchant_eastemnet  = "Supply Master"
+trp_merchant_eastemnet_pl  = "stal en warenhuis"
+; trp_merchant_westfold  = "Supply Maiden"
+trp_merchant_westfold_pl  = "stal en warenhuis"
+; trp_merchant_westemnet  = "Supply Maiden"
+trp_merchant_westemnet_pl  = "stal en warenhuis"
+; trp_merchant_eastfold  = "Supply Maiden"
+trp_merchant_eastfold_pl  = "stal en warenhuis"
+; trp_town_21_horse_merchant  = "Supply Master"
+; trp_town_21_horse_merchant_pl  = "pit and warehouse"
+; trp_merchant_morannon  = "Supply Master"
+; trp_merchant_morannon_pl  = "pit and warehouse"
+; trp_merchant_mmorgul  = "Supply Master"
+; trp_merchant_mmorgul_pl  = "pit and warehouse"
+; trp_town_24_horse_merchant  = "Supply Master"
+; trp_town_24_horse_merchant_pl  = "pit and warehouse"
+; trp_merchant_orc_patrol  = "Supply Master"
+; trp_merchant_orc_patrol_pl  = "camp stash"
+; trp_merchant_isengard  = "Supply Master"
+; trp_merchant_isengard_pl  = "camp stash"
+; trp_town_27_horse_merchant  = "Supply Master"
+; trp_town_27_horse_merchant_pl  = "warg pit and supplies"
+; trp_merchant_uoutpost  = "Supply Master"
+; trp_merchant_uoutpost_pl  = "warg pit and supplies"
+; trp_merchant_uhcamp  = "Supply Master"
+; trp_merchant_uhcamp_pl  = "warg pit and supplies"
+; trp_merchant_urcamp  = "Supply Master"
+; trp_merchant_urcamp_pl  = "warg pit and supplies"
+; trp_merchant_cgaladhon  = "Supply Master"
+; trp_merchant_cgaladhon_pl  = "elven supplies"
+; trp_merchant_cdolen  = "Supply Master"
+; trp_merchant_cdolen_pl  = "elven supplies"
+; trp_merchant_camroth  = "Supply Master"
+; trp_merchant_camroth_pl  = "elven supplies"
+; trp_merchant_thranduils_halls  = "Supply Master"
+; trp_merchant_thranduils_halls_pl  = "elven supplies"
+; trp_merchant_woodelf_camp  = "Supply Master"
+; trp_merchant_woodelf_camp_pl  = "elven supplies"
+; trp_merchant_woodmen  = "Supply Master"
+trp_merchant_woodmen_pl  = "stal en warenhuis"
+; trp_merchant_beorn  = "Supply Master"
+trp_merchant_beorn_pl  = "stal en warenhuis"
+; trp_merchant_moria  = "Supply Master"
+; trp_merchant_moria_pl  = "warg pit and supplies"
+; trp_merchant_dale  = "Supply Master"
+trp_merchant_dale_pl  = "stal en warenhuis"
+; trp_merchant_esgaroth  = "Supply Master"
+trp_merchant_esgaroth_pl  = "stal en warenhuis"
+; trp_merchant_erebor  = "Supply Master"
+; trp_merchant_erebor_pl  = "Dwarven supplies"
+; trp_merchant_dunland  = "Dun Stash Master"
+; trp_merchant_dunland_pl  = "camp stash"
+; trp_merchant_harad  = "Harad Stash Master"
+; trp_merchant_harad_pl  = "camp stash"
+; trp_merchant_khand  = "Khand Stash Master"
+; trp_merchant_khand_pl  = "camp stash"
+; trp_merchant_umbar  = "Supply Master"
+; trp_merchant_umbar_pl  = "camp stash"
+; trp_merchant_imladris  = "Supply Master"
+; trp_merchant_imladris_pl  = "camp supplies"
+; trp_merchant_dolguldur  = "Supply Master"
+trp_merchant_dolguldur_pl  = "stal en warenhuis"
+; trp_merchant_north_rhun  = "Supply Master"
+; trp_merchant_north_rhun_pl  = "camp stash"
+; trp_merchant_south_rhun  = "Supply Master"
+; trp_merchant_south_rhun_pl  = "camp stash"
+; trp_merchant_gundabad  = "Supply Master"
+; trp_merchant_gundabad_pl  = "camp stash"
+; trp_merchant_ironhill  = "Supply Master"
+; trp_merchant_ironhill_pl  = "Dwarven supplies"
+; trp_town_50_horse_merchant  = "Gobrip Yellowtooth"
+; trp_town_50_horse_merchant_pl  = "warg pit and supplies"
+; trp_merchant_calembel  = "Supply Master"
+trp_merchant_calembel_pl  = "stal en warenhuis"
+; trp_elder_mtirith  = "Tirith Guildmaster"
+; trp_elder_mtirith_pl  = "the White City"
+; trp_elder_pelargir  = "Sailor Guildmaster"
+trp_elder_pelargir_pl  = "de stad"
+; trp_elder_linhir  = "Linhir Guildmaster"
+trp_elder_linhir_pl  = "de stad"
+; trp_elder_dolamroth  = "Dol Amroth Guildmaster"
+trp_elder_dolamroth_pl  = "de stad"
+; trp_elder_edhellond  = "Edhellond Guildmaster"
+trp_elder_edhellond_pl  = "de stad"
+; trp_elder_lossarnach  = "Lossarnach Guildmaster"
+trp_elder_lossarnach_pl  = "het dorp"
+; trp_elder_tarnost  = "Tarnost Guildmaster"
+trp_elder_tarnost_pl  = "het dorp"
+; trp_elder_erech  = "Erech Guildmaster"
+trp_elder_erech_pl  = "het dorp"
+; trp_elder_pinnath  = "Pinnath Tribe Elder"
+trp_elder_pinnath_pl  = "het dorp"
+; trp_elder_ethring  = "Calembel Guildmaster"
+trp_elder_ethring_pl  = "de stad"
+; trp_elder_henneth  = "Ranger Guildmaster"
+; trp_elder_henneth_pl  = "the hideout"
+; trp_elder_cairandros  = "Cair Andros Guildmaster"
+; trp_elder_cairandros_pl  = "the island fortress"
+; trp_elder_edoras  = "Edoras Thain"
+trp_elder_edoras_pl  = "de stad"
+; trp_elder_aldburg  = "Aldburg Thain"
+trp_elder_aldburg_pl  = "het dorp"
+; trp_elder_hornburg  = "Hornburg Thain"
+; trp_elder_hornburg_pl  = "the fortress"
+; trp_elder_eastemnet  = "East Emnet Thain"
+trp_elder_eastemnet_pl  = "het dorp"
+; trp_elder_westfold  = "Westfold Thain"
+trp_elder_westfold_pl  = "het dorp"
+; trp_elder_westemnet  = "West Emnet Thain"
+trp_elder_westemnet_pl  = "het dorp"
+; trp_elder_eastfold  = "Eastfold Thain"
+trp_elder_eastfold_pl  = "het dorp"
+; trp_elder_morannon  = "Morannon Chief"
+; trp_elder_morannon_pl  = "the caves overlooking the Great Gate"
+; trp_elder_mmorgul  = "Morgul Chief"
+; trp_elder_mmorgul_pl  = "the sinister city"
+; trp_elder_cungol  = "Camp Chief"
+trp_elder_cungol_pl  = "het kamp"
+; trp_elder_isengard  = "Grima Wormtongue"
+trp_elder_isengard_pl  = "de stad"
+; trp_elder_cgaladhon  = "Lorien Loremaster"
+; trp_elder_cgaladhon_pl  = "the elven forest fortress"
+; trp_elder_cdolen  = "Lorien Loremaster"
+; trp_elder_cdolen_pl  = "the encampment"
+; trp_elder_camroth  = "Lorien Loremaster"
+; trp_elder_camroth_pl  = "the encampment"
+; trp_elder_thalls  = "Mirkwood Elder"
+; trp_elder_thalls_pl  = "the elven caves"
+; trp_elder_imladris  = "Rivendell Campmaster"
+trp_elder_imladris_pl  = "het kamp"
+; trp_elder_wvillage  = "Pierre Woodman"
+; trp_elder_wvillage_pl  = "the village"
+; trp_elder_beorn  = "Beorn Elder"
+; trp_elder_beorn_pl  = "the hamlet"
+; trp_elder_harad  = "Harad Camp chief"
+trp_elder_harad_pl  = "het kamp"
+; trp_elder_rhun  = "Rhun Camp Chief"
+trp_elder_rhun_pl  = "het kamp"
+; trp_elder_khand  = "Khand Camp Chief"
+trp_elder_khand_pl  = "het kamp"
+; trp_elder_dunland  = "Dun Camp Chief"
+trp_elder_dunland_pl  = "het kamp"
+; trp_elder_umbar  = "Umbar Quartermaster"
+; trp_elder_umbar_pl  = "the fortified camp"
+; trp_elder_moria  = "Moria Chief"
+; trp_elder_moria_pl  = "the Mines"
+; trp_elder_gunda  = "Master of the Caves"
+; trp_elder_gunda_pl  = "the caves"
+; trp_elder_dale  = "Dale Quartermaster"
+trp_elder_dale_pl  = "de Stad"
+; trp_elder_esgaroth  = "Esgaroth Quartermaster"
+; trp_elder_esgaroth_pl  = "the lake town"
+; trp_elder_erebor  = "Erebor Guildmaster"
+; trp_elder_erebor_pl  = "the Halls"
+; trp_elder_dolguldur  = "Guldur Chief"
+; trp_elder_dolguldur_pl  = "the black castle"
+; trp_elder_gondor_ac  = "Campmaster"
+trp_elder_gondor_ac_pl  = "het kamp"
+; trp_elder_rohan_ac  = "Campmaster"
+trp_elder_rohan_ac_pl  = "het kamp"
+; trp_elder_mordor_ac  = "Campmaster"
+trp_elder_mordor_ac_pl  = "het kamp"
+; trp_elder_isengard_ac  = "Campmaster"
+trp_elder_isengard_ac_pl  = "het kamp"
+; trp_elder_lorien_ac  = "Campmaster"
+trp_elder_lorien_ac_pl  = "het kamp"
+; trp_elder_woodelf_ac  = "Campmaster"
+trp_elder_woodelf_ac_pl  = "het kamp"
+; trp_elder_imladris_ac  = "Campmaster"
+trp_elder_imladris_ac_pl  = "het kamp"
+; trp_elder_beorn_ac  = "Campmaster"
+trp_elder_beorn_ac_pl  = "het kamp"
+; trp_elder_harad_ac  = "Harad Camp Chief"
+trp_elder_harad_ac_pl  = "het kamp"
+; trp_elder_rhun_ac  = "Rhun Camp Chief"
+trp_elder_rhun_ac_pl  = "het kamp"
+; trp_elder_khand_ac  = "Khand Camp Chief"
+trp_elder_khand_ac_pl  = "het kamp"
+; trp_elder_dunland_ac  = "Dun Camp Chief"
+trp_elder_dunland_ac_pl  = "het kamp"
+; trp_elder_umbar_ac  = "Umbar Quartermaster"
+trp_elder_umbar_ac_pl  = "het kamp"
+; trp_elder_moria_ac  = "Moria Camp Chief"
+trp_elder_moria_ac_pl  = "het kamp"
+; trp_elder_gunda_ac  = "Gundabad Camp Chief"
+trp_elder_gunda_ac_pl  = "het kamp"
+; trp_elder_dale_ac  = "Dale Quartermaster"
+trp_elder_dale_ac_pl  = "het kamp"
+; trp_elder_guldur_ac  = "Guldur Camp Chief"
+trp_elder_guldur_ac_pl  = "het kamp"
+; trp_elder_dwarf_ac  = "Dwarven Campmaster"
+trp_elder_dwarf_ac_pl  = "het kamp"
+; trp_village_1_elder  = "Lord of the Lash"
+; trp_village_1_elder_pl  = "the caves"
+; trp_tutorial_chest_1  = "Melee Weapons Chest"
+; trp_tutorial_chest_2  = "Ranged Weapons Chest"
+; trp_bonus_chest_1  = "Bonus Chest"
+; trp_bonus_chest_2  = "Bonus Chest"
+; trp_bonus_chest_3  = "Bonus Chest"
+; trp_camp_chest_faction  = "Faction Chest"
+; trp_camp_chest_none  = "Chest for nones"
+; trp_player_chest  = "Your Chest"
+; trp_local_merchant  = "Local Merchant"
+; trp_local_merchant_pl  = "Local Merchants"
+; trp_tax_rebel  = "Peasant Rebel"
+; trp_tax_rebel_pl  = "Peasant Rebels"
+; trp_trainee_peasant  = "Peasant"
+; trp_trainee_peasant_pl  = "Peasants"
+; trp_fugitive_man  = "Suspicious Man"
+; trp_fugitive_man_pl  = "Suspicious Men"
+; trp_fugitive_elf  = "Suspicious Elf"
+; trp_fugitive_elf_pl  = "Suspicious Elves"
+; trp_fugitive_dwarf  = "Suspicious Dwarf"
+; trp_fugitive_dwarf_pl  = "Suspicious Dwarves"
+; trp_fugitive_orc  = "Suspicious Orc"
+; trp_fugitive_orc_pl  = "Suspicious Orcs"
+; trp_spy  = "Shifty-eyed Corsair"
+; trp_spy_pl  = "Shifty-eyed Corsairs"
+; trp_spy_evil  = "Shifty-eyed Southerner"
+; trp_spy_evil_pl  = "Shifty-eyed Southerners"
+; trp_spy_partner  = "Spy Handler"
+; trp_spy_partner_pl  = "Spy Handlers"
+; trp_spy_partner_evil  = "Spy Handler"
+; trp_spy_partner_evil_pl  = "Spy Handlers"
+; trp_easter_egg_troll  = "The Troll"
+; trp_treebeard  = "Treebeard"
+; trp_ent_1  = "Bregalad"
+; trp_ent_2  = "Finglas"
+; trp_ent_3  = "Fladrif"
+; trp_gandalf  = "Gandalf"
+; trp_gandalf_pl  = "Home-grown Gandalves"
+; trp_nazgul  = "Nazgul"
+; trp_nazgul_pl  = "Domesticated Nazgul"
+; trp_barman  = "Barman"
+; trp_elder  = "Center Elder"
+; trp_gear_merchant  = "Gear Merchant"
+; trp_goods_merchant  = "Goods Merchant"
+; trp_start_quest_caravaneer  = "Torbal the Caravaneer"
+; trp_dorwinion_bandit  = "Dorwinion Bandit"
+; trp_dorwinion_bandit_pl  = "Dorwinion Bandits"
+; trp_dorwinion_raider  = "Dorwinion Raider"
+; trp_dorwinion_raider_pl  = "Dorwinion Raiders"
+; trp_city_guard  = "City Guard"
+; trp_city_guard_pl  = "city guard"
+; trp_orc_sentry  = "Orc Sentry"
+; trp_orc_sentry_pl  = "orc sentry"
+; trp_uruk_hai_sentry  = "Uruk-hai Sentry"
+; trp_uruk_hai_sentry_pl  = "uruk hai sentry"
+; trp_black_numenorean_sorcerer  = "Black Numenorean Sorcerer"
+; trp_black_numenorean_sorcerer_pl  = "Black numenorean sorcerer"
+; trp_black_numenorean_acolyte  = "Black Numenorean Acolyte"
+; trp_black_numenorean_acolyte_pl  = "Black Numenorean Acolytes"
+; trp_wolf_rider_of_mirkwood  = "Wolf Rider of Mirkwood"
+; trp_wolf_rider_of_mirkwood_pl  = "Wolf Riders of Mirkwood"
+; trp_warg_rider_of_mirkwood  = "Warg Rider of Mirkwood"
+; trp_warg_rider_of_mirkwood_pl  = "Warg Riders of Mirkwood"
+; trp_gate_aggravator  = "Gate Defence"
+; trp_orc_pretender  = "Orc Pretender"
+trp_human_prisoner  = "Menselijke Gevangene"
+; trp_spider  = "Mirkwood Spider"
+; trp_spider_pl  = "Mirkwood Spiders"
+trp_bear  = "Beer"
+trp_bear_pl  = "Beren"
+trp_wolf  = "Wolf"
+trp_wolf_pl  = "Wolven"
+; trp_dorwinion_sack  = "Dorwinion Sack"
+; trp_ring_hunter_captain  = "Ring Hunter Captain"
+; trp_ring_hunter_lt  = "Ring Hunter Captain"
+; trp_ring_hunter_one  = "Ring Hunter"
+; trp_ring_hunter_one_pl  = "Ring Hunters"
+; trp_ring_hunter_two  = "Ring Hunter"
+; trp_ring_hunter_two_pl  = "Ring Hunters"
+; trp_ring_hunter_three  = "Ring Hunter"
+; trp_ring_hunter_three_pl  = "Ring Hunters"
+; trp_ring_hunter_four  = "Ring Hunter"
+; trp_ring_hunter_four_pl  = "Ring Hunters"
+; trp_start_quest_uruk  = "Mordor Uruk Captain"
+; trp_start_quest_orc  = "Mordor Orc Lieutenant"
+; trp_start_quest_orc_pl  = "Large Orcs of Mordor"
+trp_start_quest_woodelf  = "Galadhrim Koninklijke Scherpschutter"
+trp_start_quest_woodelf_pl  = "Galadhrim Koninklijke Scherpschutters"
+; trp_start_quest_mordor_scout  = "Mordor Guide"
+; trp_start_quest_mordor_scout_pl  = "Mordor Guides"
+trp_start_quest_beorning  = "Beorning Carrock Berserker"
+trp_start_quest_beorning_pl  = "Beorning Carrock Berserkers"
+; trp_i6_beorning_bear_warrior  = "Bear Warrior"
+; trp_i6_beorning_bear_warrior_pl  = "Bear Warriors"
+; trp_morannon_healer  = "Okstuk the Healer"
+; trp_minas_tirith_healer  = "Ioreth"
+; trp_edoras_healer  = "Freya the Healer"
+; trp_isengard_healer  = "Nurgal the Patcher"
+; trp_guldur_healer  = "Mornagar the Gramaryer"
+; trp_gundabad_healer  = "Lurgakh Third Eye"
+; trp_mirkwood_healer  = "Corwiel the Soft-Handed"
+; trp_hungry_uruk  = "Hungry Uruk"
+; trp_hungry_orc  = "Hungry Orc"
+; trp_longing_lorien  = "Longing Elf"
+; trp_longing_woodelf  = "Longing Elf"
+; trp_longing_imladris  = "Longing Elf"
+; trp_i5_moria_deep_dweller  = "Deep-Dweller of Moria"
+; trp_i5_moria_deep_dweller_pl  = "Deep-Dwellers of Moria"
+; trp_i5_moria_orc_chieftain  = "Orc Chieftain of Moria"
+; trp_i5_moria_orc_chieftain_pl  = "Orc Chieftains of Moria"
+; trp_c5_rhovanion_noble  = "Rhovanion Noble"
+; trp_c5_rhovanion_noble_pl  = "Rhovanion Noblemen"
+; trp_npc18  = "Turmbathu"
+; trp_npc19  = "Heidrek"
+; trp_npc20  = "Zigûrphel"
+; trp_werewolf  = "Werewolf"
+; trp_werewolf_pl  = "Werewolves"
+; trp_moria_troll  = "Cave Troll"
+; trp_moria_troll_pl  = "Cave Trolls"
+; trp_moria_vet_troll  = "Trained Cave Troll"
+; trp_moria_vet_troll_pl  = "Trained Cave Trolls"
+; trp_moria_armored_troll  = "Armored Cave Troll"
+; trp_moria_armored_troll_pl  = "Armored Cave Trolls"
+; trp_gunda_troll  = "Mountain Troll"
+; trp_gunda_troll_pl  = "Mountain Trolls"
+; trp_gunda_vet_troll  = "Trained Mountain Troll"
+; trp_gunda_vet_troll_pl  = "Trained Mountain Trolls"
+; trp_gunda_placeholder  = "Trained Mountain Troll"
+; trp_gunda_placeholder_pl  = "Trained Mountain Trolls"
+; trp_isen_troll  = "Isengard Troll"
+; trp_isen_troll_pl  = "Isengard Trolls"
+; trp_isen_vet_troll  = "Isengard Trained Troll"
+; trp_isen_vet_troll_pl  = "Isengard Trained Trolls"
+; trp_isen_armored_troll  = "Isengard Armored Troll"
+; trp_isen_armored_troll_pl  = "Isengard Armored Trolls"
+; trp_mordor_troll  = "Mordor Troll"
+; trp_mordor_troll_pl  = "Mordor Trolls"
+; trp_mordor_vet_troll  = "Mordor Trained Troll"
+; trp_mordor_vet_troll_pl  = "Mordor Trained Trolls"
+; trp_mordor_olog_hai  = "Olog Hai of Mordor"
+; trp_mordor_olog_hai_pl  = "Olog Hai of Mordor"
+; trp_troll_placeholder_1  = "Cave Troll"
+; trp_troll_placeholder_1_pl  = "Cave Trolls"
+; trp_troll_placeholder_2  = "Cave Troll"
+; trp_troll_placeholder_2_pl  = "Cave Trolls"
+; trp_troll_placeholder_3  = "Cave Troll"
+; trp_troll_placeholder_3_pl  = "Cave Trolls"
+; trp_troll_placeholder_4  = "Cave Troll"
+; trp_troll_placeholder_4_pl  = "Cave Trolls"
+; trp_troll_placeholder_5  = "Cave Troll"
+; trp_troll_placeholder_5_pl  = "Cave Trolls"
+; trp_troll_placeholder_6  = "Cave Troll"
+; trp_troll_placeholder_6_pl  = "Cave Trolls"
+; trp_wild_troll  = "Wild Cave Troll"
+; trp_wild_troll_pl  = "Wild Cave Trolls"
+; trp_ent2  = "Ent"
+; trp_ent2_pl  = "Ents"
+; trp_mountain_goblin  = "Mountain Goblin"
+; trp_mountain_goblin_pl  = "Mountain Goblins"
+; trp_tribal_orc  = "Tribal Orc"
+trp_tribal_orc_pl  = "Stammen Orks"
+; trp_tribal_orc_warrior  = "Tribal Orc Warrior"
+; trp_tribal_orc_warrior_pl  = "Tribal Orc Warriors"
+; trp_tribal_orc_chief  = "Tribal Orc Chief"
+; trp_tribal_orc_chief_pl  = "Tribal Orc Chiefs"

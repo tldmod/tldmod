@@ -1,107 +1,107 @@
-p_town_minas_tirith|Minas Tirith
-p_town_pelargir|Pelargir
-p_town_linhir|Linhir
-p_town_dol_amroth|Dol Amroth
-p_town_edhellond|Edhellond
-p_town_lossarnach|Lossarnach
-p_town_tarnost|Tarnost
-p_town_erech|Erech
-p_town_pinnath_gelin|Pinnath Gelin
-p_town_west_osgiliath|Západný Osgiliath
-p_town_henneth_annun|Henneth Annun
-p_town_cair_andros|Cair Andros
-p_town_calembel|Calembel
-p_town_edoras|Edoras
-p_town_aldburg|Aldburg
-p_town_hornburg|Helmov žľab
-p_town_east_emnet|Východná polonina
-p_town_westfold|Západný úval
-p_town_west_emnet|Západná polonina
-p_town_eastfold|Východný úval
-p_town_morannon|Morannon
-p_town_minas_morgul|Minas Morgul
-p_town_cirith_ungol|Ohyzdí hliadkový tábor
-p_town_east_osgiliath|Východný Osgiliath
-p_town_orc_sentry_camp|Ohyzdia strážnica
-p_town_isengard|Isengard
-p_town_urukhai_outpost|Vojenský tábor Uruk Hai
-p_town_urukhai_h_camp|Lovecký tábor Uruk Hai
-p_town_urukhai_r_camp|Riečny tábor Uruk Hai
-p_town_caras_galadhon|Caras Galadhon
-p_town_cerin_dolen|Cerin Dolen
-p_town_cerin_amroth|Cerin Amroth
-p_town_thranduils_halls|Thranduilove siene
-p_town_woodelf_camp|Tábor lesných elfov
-p_town_woodelf_west_camp|Západný tábor lesných elfov
-p_town_woodsmen_village|Osada lesníkov
-p_town_beorning_village|Obydlia Grizlovcov
-p_town_beorn_house|Grizlovo panstvo
-p_town_moria|Brány Morie
-p_town_troll_cave|Zlobria jaskyňa
-p_town_dale|Dol
-p_town_esgaroth|Esgaroth
-p_town_dunland_camp|Tábor Vrchovcov
-p_town_harad_camp|Haradrimský tábor
-p_town_khand_camp|Khandský tábor
-p_town_umbar_camp|Tábor korzárov
-p_town_imladris_camp|Tábor Roklinky
-p_town_dol_guldur|Dol Guldur
-p_town_dol_guldur_north_outpost|Severná strážnica Dol Gulduru
-p_town_rhun_main_camp|Hlavný tábor Rhûnov
-p_town_rhun_south_camp|Južný tábor Rhûnskych východniarov
-p_town_rhun_north_camp|Severný tábor Rhûnskych východniarov
-p_town_gundabad|Gundabad
-p_town_gundabad_ne_outpost|SV strážnica Gundabadu
-p_town_gundabad_nw_outpost|SZ strážnica Gundabadu
-p_town_goblin_north_outpost|Mesto škratov
-p_town_goblin_south_outpost|Južná strážnica škratov
-p_town_gundabad_m_outpost|Temnohvozdská strážnica Gundabadu
-p_town_erebor|Erebor
-p_town_ironhill_camp|Posily zo Železných Hôr
-p_advcamp_gondor|Posily Gondoru
-p_advcamp_rohan|Posily Rohanu
-p_advcamp_isengard|Sarumanove posily
-p_advcamp_mordor|Mordorské posily Saurona
-p_advcamp_harad|Južanské posily Haradu
-p_advcamp_rhun|Posily východniarov z Rhûnu
-p_advcamp_khand|Tábor varjagov z Khandu
-p_advcamp_umbar|Tábor Umbarských pirátov
-p_advcamp_lorien|Posily Lothlorienu
-p_advcamp_imladris|Posily z Imladrisu
-p_advcamp_woodelf|Posily Elfov z Temnohvozdu
-p_advcamp_moria|Stanovište goblinov z Morie
-p_advcamp_guldur|Posily z Dol Gulduru
-p_advcamp_gundabad|Tábor Gundabadských vrrčich jazdov 
-p_advcamp_dale|Posily Dálov zo severu
-p_advcamp_dwarf|Posily trpaslíkov
-p_advcamp_dunland|Posily Vrchovcov
-p_advcamp_beorn|Posily Grizlovcov
-p_argonath|Argonath
-p_argonath2|Argonath
-p_hand_isen|Odtlačok bielej ruky z Isengardu
-p_mount_doom|Hora osudu
-p_town_barad_dur|Barad Dur
-p_ford_cair_andros1|Anduin
-p_ford_cair_andros2|Anduin
-p_ford_caras_galadhon|Anduin
-p_ford_brown_lands|Anduin
-p_ford_rauros|Anduin
-p_ford_pelargir|Anduin
-p_ford_edhellond|Anduin
-p_ford_cerin_dolen|Striebrenka
-p_old_ford|Starý brod
-p_ford_erech|Ringlo
-p_ford_isen1|Isen
-p_ford_isen2|Isen
-p_ford_rohan|Entva
-p_ford_rohan2|Entva
-p_ford_fangorn|Entva
-p_ford_fangorn2|Lipava
-p_ford_moria|Striebrenka
-p_legend_amonhen|Amon Hen
-p_legend_deadmarshes|Mŕtve močiare
-p_legend_mirkwood|Temnohvozd
-p_legend_fangorn|Farngornský Entí zraz
-p_ring_hunter_lair|Dúpä Hľadačov Prsteňa
-p_raft|Lodný ľud
-p_ancient_ruins|Pradávne ruiny
+p_town_minas_tirith  = "Minas Tirith"
+p_town_pelargir  = "Pelargir"
+p_town_linhir  = "Linhir"
+p_town_dol_amroth  = "Dol Amroth"
+p_town_edhellond  = "Edhellond"
+p_town_lossarnach  = "Lossarnach"
+p_town_tarnost  = "Tarnost"
+p_town_erech  = "Erech"
+p_town_pinnath_gelin  = "Pinnath Gelin"
+p_town_west_osgiliath  = "Západný Osgiliath"
+p_town_henneth_annun  = "Henneth Annun"
+p_town_cair_andros  = "Cair Andros"
+p_town_calembel  = "Calembel"
+p_town_edoras  = "Edoras"
+p_town_aldburg  = "Aldburg"
+p_town_hornburg  = "Helmov žľab"
+p_town_east_emnet  = "Východná polonina"
+p_town_westfold  = "Západný úval"
+p_town_west_emnet  = "Západná polonina"
+p_town_eastfold  = "Východný úval"
+p_town_morannon  = "Morannon"
+p_town_minas_morgul  = "Minas Morgul"
+p_town_cirith_ungol  = "Ohyzdí hliadkový tábor"
+p_town_east_osgiliath  = "Východný Osgiliath"
+p_town_orc_sentry_camp  = "Ohyzdia strážnica"
+p_town_isengard  = "Isengard"
+p_town_urukhai_outpost  = "Vojenský tábor Uruk Hai"
+p_town_urukhai_h_camp  = "Lovecký tábor Uruk Hai"
+p_town_urukhai_r_camp  = "Riečny tábor Uruk Hai"
+p_town_caras_galadhon  = "Caras Galadhon"
+p_town_cerin_dolen  = "Cerin Dolen"
+p_town_cerin_amroth  = "Cerin Amroth"
+p_town_thranduils_halls  = "Thranduilove siene"
+p_town_woodelf_camp  = "Tábor lesných elfov"
+p_town_woodelf_west_camp  = "Západný tábor lesných elfov"
+p_town_woodsmen_village  = "Osada lesníkov"
+p_town_beorning_village  = "Obydlia Grizlovcov"
+p_town_beorn_house  = "Grizlovo panstvo"
+p_town_moria  = "Brány Morie"
+p_town_troll_cave  = "Zlobria jaskyňa"
+p_town_dale  = "Dol"
+p_town_esgaroth  = "Esgaroth"
+p_town_dunland_camp  = "Tábor Vrchovcov"
+p_town_harad_camp  = "Haradrimský tábor"
+p_town_khand_camp  = "Khandský tábor"
+p_town_umbar_camp  = "Tábor korzárov"
+p_town_imladris_camp  = "Tábor Roklinky"
+p_town_dol_guldur  = "Dol Guldur"
+p_town_dol_guldur_north_outpost  = "Severná strážnica Dol Gulduru"
+p_town_rhun_main_camp  = "Hlavný tábor Rhûnov"
+p_town_rhun_south_camp  = "Južný tábor Rhûnskych východniarov"
+p_town_rhun_north_camp  = "Severný tábor Rhûnskych východniarov"
+p_town_gundabad  = "Gundabad"
+p_town_gundabad_ne_outpost  = "SV strážnica Gundabadu"
+p_town_gundabad_nw_outpost  = "SZ strážnica Gundabadu"
+p_town_goblin_north_outpost  = "Mesto škratov"
+p_town_goblin_south_outpost  = "Južná strážnica škratov"
+p_town_gundabad_m_outpost  = "Temnohvozdská strážnica Gundabadu"
+p_town_erebor  = "Erebor"
+p_town_ironhill_camp  = "Posily zo Železných Hôr"
+p_advcamp_gondor  = "Posily Gondoru"
+p_advcamp_rohan  = "Posily Rohanu"
+p_advcamp_isengard  = "Sarumanove posily"
+p_advcamp_mordor  = "Mordorské posily Saurona"
+p_advcamp_harad  = "Južanské posily Haradu"
+p_advcamp_rhun  = "Posily východniarov z Rhûnu"
+p_advcamp_khand  = "Tábor varjagov z Khandu"
+p_advcamp_umbar  = "Tábor Umbarských pirátov"
+p_advcamp_lorien  = "Posily Lothlorienu"
+p_advcamp_imladris  = "Posily z Imladrisu"
+p_advcamp_woodelf  = "Posily Elfov z Temnohvozdu"
+p_advcamp_moria  = "Stanovište goblinov z Morie"
+p_advcamp_guldur  = "Posily z Dol Gulduru"
+p_advcamp_gundabad  = "Tábor Gundabadských vrrčich jazdov "
+p_advcamp_dale  = "Posily Dálov zo severu"
+p_advcamp_dwarf  = "Posily trpaslíkov"
+p_advcamp_dunland  = "Posily Vrchovcov"
+p_advcamp_beorn  = "Posily Grizlovcov"
+p_argonath  = "Argonath"
+p_argonath2  = "Argonath"
+p_hand_isen  = "Odtlačok bielej ruky z Isengardu"
+p_mount_doom  = "Hora osudu"
+p_town_barad_dur  = "Barad Dur"
+p_ford_cair_andros1  = "Anduin"
+p_ford_cair_andros2  = "Anduin"
+p_ford_caras_galadhon  = "Anduin"
+p_ford_brown_lands  = "Anduin"
+p_ford_rauros  = "Anduin"
+p_ford_pelargir  = "Anduin"
+p_ford_edhellond  = "Anduin"
+p_ford_cerin_dolen  = "Striebrenka"
+p_old_ford  = "Starý brod"
+p_ford_erech  = "Ringlo"
+p_ford_isen1  = "Isen"
+p_ford_isen2  = "Isen"
+p_ford_rohan  = "Entva"
+p_ford_rohan2  = "Entva"
+p_ford_fangorn  = "Entva"
+p_ford_fangorn2  = "Lipava"
+p_ford_moria  = "Striebrenka"
+p_legend_amonhen  = "Amon Hen"
+p_legend_deadmarshes  = "Mŕtve močiare"
+p_legend_mirkwood  = "Temnohvozd"
+; p_fangorn_center  = "Fangorn Center"
+p_ring_hunter_lair  = "Dúpä Hľadačov Prsteňa"
+p_raft  = "Lodný ľud"
+p_ancient_ruins  = "Pradávne ruiny"

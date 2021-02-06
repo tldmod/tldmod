@@ -68,6 +68,7 @@ mno_start_go|GONDOR, Kraljevstvo Bijele Kule
 mno_start_ro|ROHAN, ponosni Gospodari Konjeva
 mno_start_du|DUNEDAIN, drevna dinastija ČOVIJEKA
 mno_start_be|BEORNINGS, ljudi iz Beornove loze.
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
 mno_start_da|sjeverno Kraljevstvo Dolja
 menu_start_good_elf|^^^^^^^^^^u kojoj šumi ti živis, starješino?
 mno_start_ri|RIVENDELL kojim vlada Elrond
@@ -199,6 +200,7 @@ mno_leave|Otiđi.
 ; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 ; mno_encounter_hide|Hide from the enemy...
 ; mno_special_whip|Rush forward toward them cracking the {s4}.
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
 ; mno_encounter_leave|Disengage.
 ; mno_encounter_retreat|Pull back, leaving some soldiers behind to cover your retreat.
 ; mno_player_control_allies_simple|Command them and charge the enemy

@@ -124,12 +124,12 @@ trp_c4_rhun_veteran_swift_horseman|룬 고참 쾌속기병
 trp_c4_rhun_veteran_swift_horseman_pl|룬 고참 쾌속기병
 trp_c5_rhun_falcon_horseman|팔콘 기병
 trp_c5_rhun_falcon_horseman_pl|팔콘 기병
-trp_i2_rhun_tribal_warrior|룬 부족 전사
-trp_i2_rhun_tribal_warrior_pl|룬 부족 전사
-trp_i3_rhun_tribal_infantry|룬 부족 보병
-trp_i3_rhun_tribal_infantry_pl|룬 부족 보병
-trp_i4_rhun_vet_infantry|룬 고참 보병
-trp_i4_rhun_vet_infantry_pl|룬 고참 보병
+; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
+; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i3_rhun_tribal_infantry|룬 부족 전사
+trp_i3_rhun_tribal_infantry_pl|룬 부족 전사
+; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
+; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
 trp_i5_rhun_ox_warrior|황소 전사
 trp_i5_rhun_ox_warrior_pl|황소 전사
 trp_c2_rhun_horseman|룬 기병

@@ -68,6 +68,7 @@ mno_start_go|GONDOR, el Reino de la Torre Blanca
 mno_start_ro|ROHAN, los Señores de los Caballos
 mno_start_du|DÚNEDAIN, la antigua dinastía de Hombres
 mno_start_be|BEÓRNIDAS, la gente oso
+mno_start_wo|HOMBRES DE LOS BOSQUES, lindando el Bosque Negro
 mno_start_da|VALLE, el reino norteño
 menu_start_good_elf|^^^^^^^^^^¿De que bosque provienes?
 mno_start_ri|RIVENDEL, del Señor Elrond
@@ -87,7 +88,7 @@ mno_start_bl|VALLE DE LA RAÍZ NEGRA, el feudo de los arqueros
 menu_start_eye_man|^^^^^^^^^^Elige a tu pueblo:
 mno_start_hr|HARADRIM, las gentes de los desiertos del Sur
 mno_start_bn|NUMENÓREANOS NEGROS, los renegados del Oeste
-mno_start_um|UMBAR, Los piratas de los mares del Sur
+mno_start_um|UMBAR, los piratas de los mares del Sur
 mno_start_rh|RHÛN, los bárbaros del Este
 mno_start_kh|KHAND, el pueblo salvaje del Sureste
 menu_start_eye_uruk|^^^^^^^^^^¿Desde donde acechas al enemigo?
@@ -199,6 +200,7 @@ mno_encounter_order_attack|Ordenar a tus tropas {reg21?atacar:enfrentarse a ello
 mno_control_allies_menu|Usar Influencia para dar órdenes a tus aliados en el campo de batalla
 mno_encounter_hide|Esconderse del enemigo...
 mno_special_whip|Acercarse rápidamente hacia ellos restallando el {s4}.
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
 mno_encounter_leave|Separarse.
 mno_encounter_retreat|Huir, dejando a algún soldado detrás para cubrir tu retirada.
 mno_player_control_allies_simple|Ponerlos bajo tus órdenes y enfrentarse al enemigo.

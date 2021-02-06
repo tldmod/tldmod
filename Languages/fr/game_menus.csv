@@ -68,6 +68,7 @@ mno_start_go|GONDOR, le royaume de la Tour Blanche
 mno_start_ro|ROHAN, les hommes aux chevaux
 mno_start_du|DUNEDAINS, de l'ancienne dynastie des hommes
 mno_start_be|BEORNIENS, les hommes Ours
+mno_start_wo|FORESTIERS, du couvert de Grand'Peur
 mno_start_da|Le royaume occidental de DALE
 menu_start_good_elf|^^^^^^^^^^Dans quelle forêt vivez-vous, Ancien ?
 mno_start_ri|FONDCOMBE, du Seigneur Elrond
@@ -199,6 +200,7 @@ mno_encounter_order_attack|Ordonner à vos troupes de {reg21?les attaquer:leur f
 mno_control_allies_menu|Usez de votre influence pour commander vos alliés sur le champ de bataille.
 mno_encounter_hide|Se cacher de l'ennemi...
 mno_special_whip|Se ruer sur eux pour percer le {s4}.
+mno_encounter_attack_bearform|{reg21?Sauter dans la bataille sous forme d'ours:Changer de peau et leur faire face}.
 mno_encounter_leave|Battre en retraite.
 mno_encounter_retreat|Reculer, en laissant quelques soldats pour couvrir vos arrières.
 mno_player_control_allies_simple|Commandez les et chargez l'ennemi.

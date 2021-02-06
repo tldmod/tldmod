@@ -1,12 +1,12 @@
-hint_1|A mão branca não deve confiar muito no olho nu, nem o contrário.
-hint_2|Contra quem você batalha, quem você ajuda e onde uma batalha acontece, determinam qual reino aliado perceberá e talvez apreciará seus esforços.
-hint_3|Batedores são uma fonte de informação para um Reino, assim como prisioneiros que são levados aos calabouços para serem torturados e interrogados. Liberar prisioneiros e enviar batedores podem cegar o inimigo.
-hint_4|Lembre-se de que você tem um diferente valor de Pontos de Recurso dentro de cada Reino, o que lhe dá o direito de se reabastecer com equipamentos e tropas dentro do Reino. 
-hint_5|O colapso militar de um reino é irreversível. Mordor nunca sofrerá tal destino, mas a guerra estará terminada se seu poderio militar for contido e todos seus aliados forem derrotados
-hint_6|É necessária uma mente fria (INT) para evitar entrar em pânico para um Nazgul. É necessário controlar o cavalo perfeitamente para evitar que ele entre em pânico.
-hint_7|Você pode descansar no mapa pressionando barra de espaço. Porém, membros feridos da party irão curar mais rapidamente quando descansar em cidades.
-hint_8|Para coletar e dar itens rapidamente, numa janela de inventário, segure a tecla control enquanto aperta o botão esquerdo do mouse.
-hint_9|Você pode sair de qualquer local instantaneamente apertando a tecla Tab, e pressionando Backspace durante uma batalha para mostrar a interface de comandos.
-hint_10|Animais entram em pânico quando próximos de trolls e olog-hais. Cuidado!
-hint_11|A mão-de-obra humana representa um recurso crucial para um reino: tomar e cuidar de tropas sob o seu comando irá consumir Pontos de Recurso da respectiva facção.
-hint_12|Você pode enviar ordens para seu exercito enquanto estiver em batalha. Você pode pressionar a tecla shift para dar zoom enquanto estiver mirando em inimigos distantes.
+hint_1  = "A mão branca não deve confiar muito no olho nu, nem o contrário."
+hint_2  = "Contra quem você batalha, quem você ajuda e onde uma batalha acontece, determinam qual reino aliado perceberá e talvez apreciará seus esforços."
+hint_3  = "Batedores são uma fonte de informação para um Reino, assim como prisioneiros que são levados aos calabouços para serem torturados e interrogados. Liberar prisioneiros e enviar batedores podem cegar o inimigo."
+hint_4  = "Lembre-se de que você tem um diferente valor de Pontos de Recurso dentro de cada Reino, o que lhe dá o direito de se reabastecer com equipamentos e tropas dentro do Reino. "
+hint_5  = "O colapso militar de um reino é irreversível. Mordor nunca sofrerá tal destino, mas a guerra estará terminada se seu poderio militar for contido e todos seus aliados forem derrotados"
+hint_6  = "É necessária uma mente fria (INT) para evitar entrar em pânico para um Nazgul. É necessário controlar o cavalo perfeitamente para evitar que ele entre em pânico."
+hint_7  = "Você pode descansar no mapa pressionando barra de espaço. Porém, membros feridos da party irão curar mais rapidamente quando descansar em cidades."
+hint_8  = "Para coletar e dar itens rapidamente, numa janela de inventário, segure a tecla control enquanto aperta o botão esquerdo do mouse."
+hint_9  = "Você pode sair de qualquer local instantaneamente apertando a tecla Tab, e pressionando Backspace durante uma batalha para mostrar a interface de comandos."
+hint_10  = "Animais entram em pânico quando próximos de trolls e olog-hais. Cuidado!"
+hint_11  = "A mão-de-obra humana representa um recurso crucial para um reino: tomar e cuidar de tropas sob o seu comando irá consumir Pontos de Recurso da respectiva facção."
+hint_12  = "Você pode enviar ordens para seu exercito enquanto estiver em batalha. Você pode pressionar a tecla shift para dar zoom enquanto estiver mirando em inimigos distantes."

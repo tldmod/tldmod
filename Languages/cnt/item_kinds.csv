@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|東 方 鷹 盾
 itm_rhun_bull1_shield|盧 恩 盾
 itm_rhun_bull2_shield|盧 恩 盾
 itm_rhun_bull3_shield|盧 恩 盾
+itm_rhun_shield|盧 恩 箏 盾
 itm_rhun_armor_a|盧 恩 輕 型 戰 裝
 itm_rhun_armor_b|盧 恩 輕 型 戰 裝
 itm_rhun_armor_d|盧 恩 輕 型 戰 裝
@@ -599,19 +600,13 @@ itm_rhun_armor_n|盧 恩 中 型 戰 裝
 itm_rhun_armor_o|盧 恩 中 型 戰 裝
 itm_rhun_armor_p|盧 恩 貴 族 鎧 甲
 itm_rhun_armor_k|盧 恩 貴 族 鎧 甲
-itm_rhun_helm_a|盧 恩 帶 刺 盔
-itm_rhun_helm_b|盧 恩 帶 刺 盔 與 披 肩
-itm_rhun_helm_c|盧 恩 群 眾 盔
-itm_rhun_helm_e|盧 恩 群 眾 帶 角 盔
-itm_rhun_helm_g|盧 恩 帶 角 壺
-itm_rhun_helm_h|盧 恩 帶 角 壺
-itm_rhun_helm_i|盧 恩 圓 盔
-itm_rhun_helm_j|盧 恩 面 具 盔
-itm_rhun_helm_k|盧 恩 皮 盔
-itm_rhun_helm_l|盧 恩 皮 盔
-itm_rhun_helm_m|盧 恩 皮 盔
-itm_rhun_helm_n|盧 恩 頭 目 盔
-itm_rhun_helm_o|盧 恩 頭 目 盔
+itm_rhun_helm_barbed|盧 恩 帶 刺 盔
+itm_rhun_helm_horde|盧 恩 群 眾 盔
+; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_round|盧 恩 圓 盔
+itm_rhun_helm_leather|盧 恩 皮 盔
+itm_rhun_helm_chieftain|盧 恩 頭 目 盔
+; itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|盧 恩 大 斧
 itm_rhun_battleaxe|盧 恩 戰 斧
 itm_rhun_falchion|野 蠻 彎 刀
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|野 蠻 大 彎 刀
 itm_rhun_greatsword|野 蠻 大 劍
 itm_rhun_shortsword|野 蠻 短 劍
 itm_rhun_sword|野 蠻 劍
-itm_rhun_shield|盧 恩 箏 盾
+; itm_rhun_mangler|Rhun Mangler
 itm_dale_light_a|河 谷 鎮 民 兵 夾 克 
 itm_dale_light_b|北 方 輕 型 片 甲
 itm_dale_med_a|北 方 重 型 片 甲
@@ -631,7 +626,6 @@ itm_dale_heavy_a|河 谷 鎮 片 覆 鎖 子 甲
 itm_dale_heavy_b|河 谷 鎮 裝 甲 外 套
 itm_dale_heavy_c|羅 馬 尼 安 鎖 子 甲
 ; itm_north_leather|Northmen Leather Vest
-itm_dale_armor_l|河 谷 鎮 貴 族 護 喉
 itm_dale_helmet_a|河 谷 鎮 輕 型 步 兵 盔
 itm_dale_helmet_b|河 谷 鎮 輕 型 弓 兵 盔
 itm_dale_helmet_c|河 谷 鎮 步 兵 盔
@@ -769,8 +763,8 @@ itm_book_of_moria|馬 薩 布 爾 之 書
 itm_ring_a_reward|突 卡 利 西 之 戒
 itm_ring_b_reward|芬 瓦 利 西 之 戒
 itm_dale_bow_reward|巴 德 之 弓
-itm_explosive_reward|艾 辛 格 炸 彈
-itm_corsair_trident2|海 怒 三 叉 戟
+; itm_tome_of_knowledge|Tome of Arcane Knowledge
+; itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|克 拉 班 烏 鴉
 itm_miruvor_reward|米 盧 沃 酒
 itm_wheeled_cage|巨 型 有 輪 籠 子
@@ -793,7 +787,7 @@ itm_leather_boots_reward|獵 人 靴 子
 itm_rohan_armor_th|洛 汗 皇 家 鎧 甲
 itm_wilderness_amulet|荒 野 護 身 符
 itm_prisoner_coll_chain|囚 鏈
-itm_witchking_helmet|邪 惡 盔
+; itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|羅 斯 洛 立 安 皇 家 鎧 甲
 itm_feet_chains|腳 鏈
 itm_feet_chains_dwarf|腳 鏈

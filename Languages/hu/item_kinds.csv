@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|Keletlakó sólyompajzs
 itm_rhun_bull1_shield|Rhûni pajzs
 itm_rhun_bull2_shield|Rhûni pajzs
 itm_rhun_bull3_shield|Rhûni pajzs
+itm_rhun_shield|Rhûni levélpajzs
 itm_rhun_armor_a|Rhûni könnyű csataviselet
 itm_rhun_armor_b|Rhûni könnyű csataviselet
 itm_rhun_armor_d|Rhûni könnyű csataviselet
@@ -599,19 +600,13 @@ itm_rhun_armor_n|Rhûni középnehéz csataviselet
 itm_rhun_armor_o|Rhûni középnehéz csataviselet
 itm_rhun_armor_p|Rhûni nemesi páncélzat
 itm_rhun_armor_k|Rhûni nemesi páncélzat
-itm_rhun_helm_a|Rhûni fogazott sisak
-itm_rhun_helm_b|Rhûni fogazott rostélyos sisak
-itm_rhun_helm_c|Rhûni hordasisak
-itm_rhun_helm_e|Rhûni tülkös hordasisak
-itm_rhun_helm_g|Rhûni tülkös üstsisak
-itm_rhun_helm_h|Rhûni tülkös üstsisak
-itm_rhun_helm_i|Rhûni tányérsisak
-itm_rhun_helm_j|Rhûni maszkos tányérsisak
-itm_rhun_helm_k|Rhûni bőrsisak
-itm_rhun_helm_l|Rhûni bőrsisak
-itm_rhun_helm_m|Rhûni bőrsisak
-itm_rhun_helm_n|Rhûni törzsfőnöki sisak
-itm_rhun_helm_o|Rhûni törzsfőnöki sisak
+itm_rhun_helm_barbed|Rhûni fogazott sisak
+itm_rhun_helm_horde|Rhûni hordasisak
+; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_round|Rhûni tányérsisak
+itm_rhun_helm_leather|Rhûni bőrsisak
+itm_rhun_helm_chieftain|Rhûni törzsfőnöki sisak
+; itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|Rhûni nagy balta
 itm_rhun_battleaxe|Rhûni csatabalta
 itm_rhun_falchion|Vadember falchion
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|Vadember nagy falchion
 itm_rhun_greatsword|Vadember nagy kard
 itm_rhun_shortsword|Vadember rövidkard
 itm_rhun_sword|Vadember kard
-itm_rhun_shield|Rhûni levélpajzs
+; itm_rhun_mangler|Rhun Mangler
 itm_dale_light_a|Suhatagi nemzetőr zubbony
 itm_dale_light_b|Északlakó könnyű lemezespáncél
 itm_dale_med_a|Északlakó nehéz lemezespáncél
@@ -631,7 +626,6 @@ itm_dale_heavy_a|Suhatagi láncingre vett lemezespáncél
 itm_dale_heavy_b|Suhatagi lemezelt kabát
 itm_dale_heavy_c|Rhovanioni láncing
 itm_north_leather|Északlakó bőrmellény
-itm_dale_armor_l|Suhatagi nemes torokvédő
 itm_dale_helmet_a|Suhatagi könnyű gyalogági sisak
 itm_dale_helmet_b|Suhatagi könnyű íjászsisak
 itm_dale_helmet_c|Suhatagi gyalogsági sisak
@@ -769,8 +763,8 @@ itm_book_of_moria|Mazarbul könyve
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Bard íja
-itm_explosive_reward|Vasudvardi bánya
-itm_corsair_trident2|A Tenger Haragjának háromágú szigonya
+; itm_tome_of_knowledge|Tome of Arcane Knowledge
+; itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|Crebain
 itm_miruvor_reward|Palacknyi miruvor
 itm_wheeled_cage|Óriási kerekes ketrec
@@ -793,7 +787,7 @@ itm_leather_boots_reward|Vadász csizmák
 itm_rohan_armor_th|Rohani nemesi páncélzat
 itm_wilderness_amulet|Vadonsági amulett
 itm_prisoner_coll_chain|Rabszolga láncai
-itm_witchking_helmet|Gonosz sisak
+; itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|Lórieni királyi páncélzat
 itm_feet_chains|Láb bilincsek
 itm_feet_chains_dwarf|Láb bilincsek

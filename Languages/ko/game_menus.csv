@@ -68,6 +68,7 @@ mno_start_go|백색 탑의 왕국, 곤도르.
 mno_start_ro|기마 민족, 로한
 mno_start_du|고대 왕조의 인간들, 두네다인.
 mno_start_be|곰 인간, 베오른족
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
 mno_start_da|너른골 북부 왕국
 menu_start_good_elf|^^^^^^^^^^어느 숲에서 사시겠습니까, 선인이시여?
 mno_start_ri|엘론드가 통치하는 리븐델
@@ -199,6 +200,7 @@ mno_encounter_order_attack|당신이 뒤로 물러나 있는 동안 병사들에
 mno_control_allies_menu|당신의 아군에게 명령하기 위해 영향력을 사용한다.
 mno_encounter_hide|적으로부터 숨는다...
 mno_special_whip|{s4}을(를) 채찍질하며 그들을 향해 돌격한다
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
 mno_encounter_leave|떠나기
 mno_encounter_retreat|몇몇 병사들을 당신이 후퇴할 때 남겨놓기
 mno_player_control_allies_simple|그들에게 적에게 돌격하라 명령한다.

@@ -1,3 +1,4 @@
+qstr_Received_{reg0}_dama|{reg0}のダメージを受けました。
 qstr_Gate_is_breached!|門が破られました！
 qstr_Gate_opens..._You_ha|門が開きます・・・ 中つ国で最も神聖な場所に辿り着きました！
 qstr_Secret_place_discove|秘密の場所を発見しました！
@@ -184,11 +185,12 @@ qstr_+1_to_Riding_Skill|乗馬スキルに+1
 qstr_during_battles|(戦闘中のみ)
 qstr_+1_to_Pathfinding|経路探索スキルに+1
 qstr_+1_to_Athletics|アスレチックスキルに+1
+qstr_+1_to_Wound_Treatmen|治療スキルに+1
+; qstr_Use_from_Camp_Menu|Use from Camp Menu
 qstr_Use_from|このアイテムは
 qstr_Action_Menu|アクションメニューから使用します
 qstr_+1_to_First_Aid|応急手当てスキルに+1
 qstr_+1_to_Weapon_Mastery|武器熟練スキルに+1
-qstr_+1_to_Wound_Treatmen|治療スキルに+1
 qstr_+1_to_Tactics|戦略スキルに+1
 qstr_+1_to_Power_Strike|強打スキルに+1
 qstr_+1_to_Strength|体力に+1
@@ -198,7 +200,10 @@ qstr_+1_to_Wildcraft|ワイルドクラフトに+1
 qstr_+1_to_Power_Draw|弓術スキルに+1
 qstr_The_record_of_Balin_|失踪したバーリン一団の記録。
 qstr_Who_might_be_interes|これに興味を持つとしたら、誰が考えられるだろう？
-qstr_Turns_nature_to_your|自然を味方につける (効果の大小はワイルドクラフトスキルに依存します)
+; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
+; qstr_Turns_nature_to_your|Turns nature to your side
+; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
+; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
 qstr_+1_to_Trainer|訓練スキルに+1
 qstr_Recruits_Tribal_Orcs|部族オークを徴用可能
 qstr_rally|檄の回数
@@ -207,12 +212,13 @@ qstr_+{reg1}_{s3}_in_batt|戦場で{s3}に+{reg1}
 qstr_+1_to_Charisma|魅力に+1
 qstr_+1_to_Surgery|手術スキルに+1
 qstr_+1_to_Intelligence|知性に+1
-qstr_+1_to_Ironflesh|鋼の肉体スキルに+1
-qstr_+1_to_Prisoner_Mgmt|囚人管理スキルに+1
+; qstr_+2_to_Surgery|+2 to Surgery
 qstr_when_equipped|(要装備)
 qstr_+1_to_Riding|乗馬スキルに+1
 qstr_+1_to_Mounted_Archer|馬上弓術に+1
+qstr_+1_to_Prisoner_Mgmt|囚人管理スキルに+1
 qstr_+2_to_Tactics|戦術スキルに+2
+; qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|スポッティングに+{reg1}
 qstr__Scales_with_Wildcra|（ワイルドクラフトの鱗)
 qstr_+1_to_Spotting|スポッティングに+1
@@ -220,8 +226,10 @@ qstr_+2_to_Athletics|アスレチックに+2
 qstr_Less_Dunnish_upkeep|褐色人の維持費が低下
 qstr_Less_Wargs_upkeep|ワーグ騎兵の維持費が低下
 qstr_Light_Armor|軽装鎧
+; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
+; qstr_Lead_more_Orcs|Lead more Orcs
 qstr_+{reg1}_to_Party_Mor|パーティの士気に+{reg1}
-qstr_Shoot_Speed:_{reg55}|発射速度:{reg55}
+; qstr_Range:_{reg55}|Range: {reg55}
 qstr_Do_you_want_to_disem|上陸しますか？
 qstr_Move_here|ここへ移動
 qstr_View_notes|詳細を見る
@@ -268,6 +276,8 @@ qstr_{s3}_is_no_longer_un|{s3}の包囲が解かれました。
 qstr_Enemies_spotted_near|{s1}付近で敵勢を発見しました。
 qstr_Your_relation_with_{|あなたと{s1}の関係が向上しました。
 qstr_Your_relation_with_{s|あなたと{s1}の関係が悪化しました。
+; qstr_{s1}_gained_faction_|{s1} gained faction strength!
+; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
 qstr_{s2}_{reg3?was:is_cu|{s2}は{reg3?:現在}、{s3}に{reg3?いた:いるはずだ}。
 qstr_{s2}_{reg3?was:is}_t|{s2}は{s3}を目指し、 {reg3?:現在}{s4}付近を移動中{reg3?だった:だ}。
 qstr_{s2}_{reg3?was:is}_i|{s2}は{reg3?:現在}、{s3}付近に{reg3?いた:いるはずだ}。
@@ -391,7 +401,6 @@ qstr_Blunt_Weapons|殴打武器
 qstr_Infantry__{reg1}_|歩兵 ({reg1})
 qstr_Archers__{reg2}_|弓兵 ({reg2})
 qstr_Cavalry__{reg3}_|騎兵 ({reg3})
-qstr_Orc_brew_finished!|オークビールが出来上がりました！
 qstr_Given_by:_{s62}|依頼主:{s62}
 qstr_Given_on:_{s60}|依頼日:{s60}
 qstr_You_have_{reg0}_days|達成期限は、あと{reg0}日です。
@@ -684,6 +693,10 @@ qstr_A_thunderstorm_from_|霧ふり山から降り注ぐ激しい雷雨が戦場
 qstr_A_thunderstorm_from_t|霧ふり山から降り注ぐ激しい雷雨が戦場を覆っています。 弓兵は思うように働く事ができません。
 qstr_A_poisonous_fog_from|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたとあなたの兵たちは体調が悪くなりました。兵たちは恐怖を感じています。
 qstr_A_poisonous_fog_from_|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたはこれといった影響は感じませんが、敵勢の苦しむ声が聞こえてきます。敵は恐怖しているようです。
+; qstr_You_shapeshift_into_|You shapeshift into a bear!
+; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
+; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
+; qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|あなたの馬がよろめいています！どうやら足をくじいているようです。
 qstr_Bitten_by_your_own_w|あなたのワーグが噛み付いてきました！
 qstr_You_weigh_too_much_f|ポニーに乗るには、あなたは重すぎます！
@@ -714,7 +727,9 @@ qstr_Formations_turned_OF|陣形はオプションメニューで無効にされ
 qstr_Division_{reg1}_{s2}_g|{s2}第{reg1}分隊は、保存された位置へ移動します・・・
 qstr_Division_{reg1}_{s2}_f|{s2}第{reg1}分隊は、横隊を組みます(保存済み)。
 qstr_Division_{reg1}_{s2}_fo|{s2}第{reg1}分隊は、横隊を{reg0}列組みます(保存済み)。
+qstr_Delivered_{reg60}_da|{reg60}のダメージを与えました。
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
+; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
 qstr_Three_Nazgul_are_cir|戦場の上空で3体のナズグールが旋回しています！
 qstr_Two_Nazgul_are_circl|戦場の上空で2体のナズグールが旋回しています！
 qstr_A_Nazgul_is_circling|戦場の上空でナズグールが旋回しています！
@@ -765,7 +780,7 @@ qstr_End_them_all!|皆殺しだ！
 qstr_Drive_them_back!|やつらを追い払え！
 qstr_Protect_the_City!|町を守れ！
 qstr_Forward!_Board_them!|進め！敵艦へ切り込め！
-qstr_The_Last_Days_of_the_|The Last Days of the Third Ageでは攻城戦に高度なAIを導入しており、Nativeとは大きく違います。 プレイヤーを含めたすべての兵は、複数のチームに分けられます(左翼/中央/右翼)。^^プレイヤーの所属するチームの指揮はプレイヤーがとり、その他のチームはAIによって指揮されます。^これによって、分隊単位の、より洗練された攻城戦が可能になります。^^先発隊と増援隊は展開直後の数秒間は突撃を命令された状態になります。その後、あなたのチームに指示を出せるうようになります。
+; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
 qstr_Reached_Gauntlet_wav|ガントレット第{reg1}波が来ました！
 qstr_Ballista:_out_of_amm|投石器:弾切れです！
 qstr_Ballista:_turn_CURSO|投石器:カーソルキーで旋回、 左SHIFTで照準、 スペースで発射、 Tで着火、 Fで離脱
@@ -883,6 +898,7 @@ qstr_Doubled|2倍
 qstr_Tripled|3倍
 qstr_Quadrupled|4倍
 qstr_You_drank_the_Ent_Wa|エント水を飲みました・・・
+; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
 qstr_Fangorn_search:_fail|ファンゴルンの森探索:失敗。
 qstr_^^^A_great_victory!^|^^^大いなる勝利だ！^^^なるほど、これがファンゴルンの伝説のからくりか・・・
 ; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
@@ -1057,6 +1073,7 @@ qstr_Guard_Legion_of_{s6}|{s6}防衛軍団
 qstr_Scouts_report_that_{|偵察隊より、 {s6}が{s7}周辺に、 本拠地防衛のための大規模な軍勢を 集結させているとの報告が入りました。
 qstr_The_forces_of_{s2}_e|{s2}が{s15}に遠征軍野営を築きました！
 qstr_The_hosts_of_{s2}_ma|{s2}の軍勢が、彼らの本拠地を守るために退却しています！
+qstr_{playername}_s_Reser|{playername}の予備兵
 qstr_Gondor_has_called_fo|ゴンドールが助けを求めています！
 qstr_Gondor_is_accompanyi|ゴンドールは総指揮官のもとに集結しています！
 qstr_{s5}_has_stopped_fol|{s5}はあなたへの同行をとりやめました。
@@ -1175,7 +1192,6 @@ qstr_Greetings_{s23}.|ごきげんよう、{s23}。
 qstr_So_you_are_{s23}._I_|ああ、あなたが{s23}殿か。 {s25}に味方をしたという話を聞く限り、 我らが友軍と考えるべきでしょうな。
 qstr_I_need_volunteers_wi|私と共に危険な任務におもむく事をいとわない者はいないか。
 qstr_I_need_some_soldiers|兵に欠員が出た。補充をしたい。
-qstr_{playername}_s_Reser|{playername}の予備兵
 qstr_Maybe_the_weaklings_|たぶん、南の弱者たちは、柔らかい肌のトロールに鎧をつけたのかもしれません。 私たちではない-私たちのトロールはGundabadのものです！
 qstr_Do_I_look_like_a_smi|私はあなたに鍛冶屋のように見えますか？ パー 話しに行って
 qstr_Excellent_job_{s23}!|見事です、{s23}殿！ 他の指揮官も、あなたくらい真面目にやってくれるといいのですが。^
@@ -1399,7 +1415,9 @@ qstr_Your_party_must_be_at|このクエストには少なくとも10名以上か
 qstr_{s9}_asked_you_to_def|{s1}付近の村を襲撃から守るよう、 {s9}より命令を受けた。
 qstr_{s9}_asked_you_to_ra|{s1}付近の村を襲撃するよう、 {s9}より命令を受けた。
 qstr_These_soldiers_may_w|この兵士たちは私の作戦の 成功のカギになってくれるはずだ、 {playername}。 兵を鍛え上げるおぬしの手腕は信頼している。 おぬしには感謝と敬意を表したい。
+; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
 qstr_Good_work_in_shaping|{playername}、よくぞ新兵どもを鍛え上げてくれたな。 おぬしは非常に役に立つ。今回の連中は長持ちするといいが、 まあ駄目だったらまたおぬしに頼むとしよう。
+; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
 qstr_Well_the_soldiers_ar|ご覧の通り、兵士たちは準備万端です、閣下。 彼らはお役に立つでしょう。
 qstr_Well_you_may_do_as_y|どうぞお好きなように。 また必要があれば、 再び私とコンパニオンたちが腕をふるいましょう。
 qstr_{s9}_asked_you_to_br|{s9}の命令により、 軍事利用のために 凶暴なトロルを捕獲することになった。

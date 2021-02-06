@@ -1,3 +1,4 @@
+; qstr_Received_{reg0}_dama|Received {reg0} damage.
 qstr_Gate_is_breached!|Brána je proražena!
 qstr_Gate_opens..._You_ha|Brána se otvírá... Dostal ses na nejposvátnější místo ve Středozemi!
 qstr_Secret_place_discove|Posvátné místo objeveno!
@@ -184,11 +185,12 @@ qstr_+1_to_Riding_Skill|+1 k Jezdectví
 qstr_during_battles|během bitev
 qstr_+1_to_Pathfinding|+1 k Hledání cest
 qstr_+1_to_Athletics|+1 ke Kondici
+qstr_+1_to_Wound_Treatmen|+1 k Léčbě zranění
+; qstr_Use_from_Camp_Menu|Use from Camp Menu
 qstr_Use_from|Použít předmět
 qstr_Action_Menu|Menu Akce
 qstr_+1_to_First_Aid|+1 k První Pomoci
 qstr_+1_to_Weapon_Mastery|+1 k Mistr Zbraní
-qstr_+1_to_Wound_Treatmen|+1 k Léčbě zranění
 qstr_+1_to_Tactics|+1 k Taktice 
 qstr_+1_to_Power_Strike|+1 k Síle úderu
 qstr_+1_to_Strength|+1 k Síle
@@ -198,7 +200,10 @@ qstr_+1_to_Wildcraft|+1 to Zálesáctví
 qstr_+1_to_Power_Draw|+1 k Síle Napnutí
 qstr_The_record_of_Balin_|Záznam Balinovy ztracené expedice.
 qstr_Who_might_be_interes|Kdo by se o to mohl zajímat?
-qstr_Turns_nature_to_your|Obrátí přírodu na tvou stranu (ovlivňuje schopnost Zálesáctví)
+; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
+; qstr_Turns_nature_to_your|Turns nature to your side
+; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
+; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
 qstr_+1_to_Trainer|+1 k Trénování
 qstr_Recruits_Tribal_Orcs|Rekrutovat kmenové Skřety
 qstr_rally|přeskupit
@@ -207,12 +212,13 @@ qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} v bitvě
 qstr_+1_to_Charisma|+1 k Charisma
 qstr_+1_to_Surgery|+1 k Chirurgii
 qstr_+1_to_Intelligence|+1 k Intelligenci
-qstr_+1_to_Ironflesh|+1 k Odolnosti
-qstr_+1_to_Prisoner_Mgmt|+1 k Vězeňskému managementu
+; qstr_+2_to_Surgery|+2 to Surgery
 qstr_when_equipped|když je vybaveno
 qstr_+1_to_Riding|+1 to Jezdectví
 qstr_+1_to_Mounted_Archer|+1 ke Střelbě z koně
+qstr_+1_to_Prisoner_Mgmt|+1 k Vězeňskému managementu
 qstr_+2_to_Tactics|+2 Taktice
+; qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} k Pozorování
 qstr__Scales_with_Wildcra|(Ovlivňuje Zálesáctví)
 qstr_+1_to_Spotting|+1 k Pozorování
@@ -220,8 +226,10 @@ qstr_+2_to_Athletics|+2 k Kondici
 qstr_Less_Dunnish_upkeep|Menší údržba za Dunlandské
 qstr_Less_Wargs_upkeep|Menší údržba za Vrky
 qstr_Light_Armor|Lehké brnění
+; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
+; qstr_Lead_more_Orcs|Lead more Orcs
 qstr_+{reg1}_to_Party_Mor|+{reg1} k Morálce Družiny
-qstr_Shoot_Speed:_{reg55}|Rychlost střely: {reg55}
+; qstr_Range:_{reg55}|Range: {reg55}
 qstr_Do_you_want_to_disem|Chceš vystoupit?
 qstr_Move_here|Pojď sem
 qstr_View_notes|Ukaž poznámky
@@ -268,6 +276,8 @@ qstr_{s3}_is_no_longer_un|{s3} již není v obležení.
 qstr_Enemies_spotted_near|Nepřátelé spatřeni blízko {s1}.
 qstr_Your_relation_with_{|Tvůj vztah s {s1} se zlepšil.
 qstr_Your_relation_with_{s|Tvůj vztah s {s1} se zhoršil.
+; qstr_{s1}_gained_faction_|{s1} gained faction strength!
+; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?byl:je nyní} v {s3}.
 qstr_{s2}_{reg3?was:is}_t|{s2} {reg3?byl:je} na cestě do {s3} a {reg4?ona:on} {reg3?byl:měl by být} nedaleko od {s4}{reg3?: v tento moment}.
 qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?byl:je} v divočině a {reg4?ona:on} {reg3?byl:by měl být} nedaleko od {s3}{reg3?: v tuto chvíli}.
@@ -391,7 +401,6 @@ qstr_Blunt_Weapons|Tupé zbraně
 qstr_Infantry__{reg1}_|Pěchota ({reg1})
 qstr_Archers__{reg2}_|Střelci ({reg2})
 qstr_Cavalry__{reg3}_|Jízda ({reg3})
-qstr_Orc_brew_finished!|Skřetí bašta hotova!
 qstr_Given_by:_{s62}|Zadal: {s62}
 qstr_Given_on:_{s60}|Dáno: {s60}
 qstr_You_have_{reg0}_days|Máš {reg0} dní na splnění tohoto úkolu.
@@ -684,6 +693,10 @@ qstr_A_thunderstorm_from_|Bouře z Mlžných hor zuří nad bojištěm. Tví voj
 qstr_A_thunderstorm_from_t|Bouře z Mlžných hor zuří nad bojištěm. Lučištníci mají potíže v tomto počasí.
 qstr_A_poisonous_fog_from|Otrávená mlha z Dol Gulduru přetrvává na bojišti. Ty a tví vojáci se cítíte oslabeni. Mezi muži zavládl strach.
 qstr_A_poisonous_fog_from_|Otrávená mlha z Dol Gulduru přetrvává na bojišti. Necítíš se jinak než obvykle, ale slyšíš jak tví nepřátelé trpí a cítíš jejich strach.
+; qstr_You_shapeshift_into_|You shapeshift into a bear!
+; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
+; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
+; qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|Tvůj kůň zakopl! Vypadá že je chromý.
 qstr_Bitten_by_your_own_w|Kousl tě vlastní vrk!
 qstr_You_weigh_too_much_f|Vážíš příliš mnoho pro poníka!
@@ -714,7 +727,9 @@ qstr_Formations_turned_OF|VYPNOUT formace v menu nastavení
 qstr_Division_{reg1}_{s2}_g|Divize {reg1} {s2} jde do zapamatované formace...
 qstr_Division_{reg1}_{s2}_f|Divize {reg1} {s2} formuje řadu (zapamatováno).
 qstr_Division_{reg1}_{s2}_fo|Divize {reg1} {s2} formuje {reg0} řad (zapamatováno).
+qstr_Delivered_{reg60}_da|Způsobeno {reg60} zranění.
 qstr_DEBUG__Health_Regen_|LADĚNÍ (Regenerace životů): {s1} získává {reg0}% životů. = +{reg1}% STR
+; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
 qstr_Three_Nazgul_are_cir|Tři Nazgůlové krouží na obloze nad bojištěm!
 qstr_Two_Nazgul_are_circl|Dva Nazgůlové krouží na obloze nad bojištěm!
 qstr_A_Nazgul_is_circling|Nazgůl krouží na obloze nad bojištěm!
@@ -765,7 +780,7 @@ qstr_End_them_all!|Zabte je všechny!
 qstr_Drive_them_back!|Odražte je!
 qstr_Protect_the_City!|Chraňte město!
 qstr_Forward!_Board_them!|Kupředu! Naloďte je!
-qstr_The_Last_Days_of_the_|TLD má velmi odlišný systém obléhání UI než Native. Všechny jednotky, včetně hráčových, jsou rozděleny mezi různé týmy (levé křídlo, střed, pravé křídlo).^^ Hráč má na starosti vedení svého týmu, zatím co UI vede ostatní týmy. To dovoluje chytřejší, na týmu založené, obléhací bitvy.^^Počátečním jednotkám a posilám je přikázán útok během prvních pár sekund bitvy a po tom můžeš svému týmů znova velet.
+; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
 qstr_Reached_Gauntlet_wav|Dosaženo nepřátelské vlny {reg1}!
 qstr_Ballista:_out_of_amm|Balista: došla munice!
 qstr_Ballista:_turn_CURSO|Balista: ovládání CURSOR, míření LSHIFT, střelba SPACE, zapálit T, opustit F
@@ -883,6 +898,7 @@ qstr_Doubled|Dvojnásobně
 qstr_Tripled|Trojnásobně
 qstr_Quadrupled|Čtyřnásobně
 qstr_You_drank_the_Ent_Wa|Vypil jsi Entí vodu...
+; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
 qstr_Fangorn_search:_fail|Prohledávání Fangornu: selhalo
 qstr_^^^A_great_victory!^|^^^Velké vítězství!^^^Tak o tomhle Fangornu vyprávěly legendy...
 ; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
@@ -1057,6 +1073,7 @@ qstr_Guard_Legion_of_{s6}|Legie ochránců z {s6}
 qstr_Scouts_report_that_{|Zvědové hlásí že {s6} shromáždil obrovskou armádu v okolí {s7}, jako poslední naději jak zabránit postupu na hlavní město.
 qstr_The_forces_of_{s2}_e|Síly z {s2} vystavěly předsunutý tábor v {s15}!
 qstr_The_hosts_of_{s2}_ma|Hordy z {s2} pochodují zpět aby bránili své domovy!
+qstr_{playername}_s_Reser|Rezervy od {playername}
 qstr_Gondor_has_called_fo|Gondor žádal o pomoc!
 qstr_Gondor_is_accompanyi|Gondor doprovází svého maršála!
 qstr_{s5}_has_stopped_fol|{s5} tě přestali následovat.
@@ -1175,7 +1192,6 @@ qstr_Greetings_{s23}.|Vítej, {s23}.
 qstr_So_you_are_{s23}._I_|Takže ty jsi {s23}. Slyšel jsem že bojuješ za přátele z {s25}, takže hádám že bych tě měl považoval za spojence.
 qstr_I_need_volunteers_wi|Potřebuji dobrovolníky ochotné mě následovat na nebezpečných misích.
 qstr_I_need_some_soldiers|Potřebuju nějaké vojáky, kteří nahradí ty mrtvé.
-qstr_{playername}_s_Reser|Rezervy od {playername}
 qstr_Maybe_the_weaklings_|Možná ti slaboši z jihu dávají na své měké Trolly brnění. My ne - naši Trolly jsou Dokonalí!
 qstr_Do_I_look_like_a_smi|Připadám ti jako kovář? Pff. Běž si s nějakým promluvit.
 qstr_Excellent_job_{s23}!|Skvělá práce, {s23}! Přál bych si aby všichni naši velitelé byli tak oddaní jako ty.^
@@ -1399,7 +1415,9 @@ qstr_Your_party_must_be_at|Tvá skupina musí mít alespoň 10 členů, aby jsi 
 qstr_{s9}_asked_you_to_def|{s9} tě požádal, abys bránil napadenou vesnici poblíž {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} tě požádal, abys vyplenil vesnici poblíž {s1}.
 qstr_These_soldiers_may_w|Tihle vojáci mohou pomoci v uskutečnění mých plánu, {playername}. Jsme přesvědčený že jsi je vytrénoval dobře. Máte můj vděk a obdiv.
+; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
 qstr_Good_work_in_shaping|Dobrá práce při cvičení rekrutů, {playername}, byl jsi velmi nápomocný. Doufám že vydrží déle než ta minulá banda, ale pokud se tak nestane, přijď zase za mnou.
+; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
 qstr_Well_the_soldiers_ar|Nuže, vojáci jsou nyní pod tvým velením, pane. Jsem si jistý že se o ně budeš dobře starat.
 qstr_Well_you_may_do_as_y|Tak, můžeš si dělat co se ti zlíbí. Moji společníci a já může kdykoliv zpřísnit, když budeš chtít.
 qstr_{s9}_asked_you_to_br|{s9} tě požádal aby jsi přivedl divokého trola do jeho armády.

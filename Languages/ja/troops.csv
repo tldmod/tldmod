@@ -124,12 +124,12 @@ trp_c4_rhun_veteran_swift_horseman|リューン ベテラン軽騎兵
 trp_c4_rhun_veteran_swift_horseman_pl|リューン ベテラン軽騎兵
 trp_c5_rhun_falcon_horseman|ファルコン 騎兵
 trp_c5_rhun_falcon_horseman_pl|ファルコン 騎兵
-trp_i2_rhun_tribal_warrior|リューン 部族の戦士
-trp_i2_rhun_tribal_warrior_pl|リューン 部族の戦士
-trp_i3_rhun_tribal_infantry|リューン 突撃兵
-trp_i3_rhun_tribal_infantry_pl|リューン 突撃兵
-trp_i4_rhun_vet_infantry|リューン ベテラン突撃兵
-trp_i4_rhun_vet_infantry_pl|リューン ベテラン突撃兵
+; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
+; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i3_rhun_tribal_infantry|リューン 部族の戦士
+trp_i3_rhun_tribal_infantry_pl|リューン 部族の戦士
+; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
+; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
 trp_i5_rhun_ox_warrior|オックス 突撃兵
 trp_i5_rhun_ox_warrior_pl|オックス 突撃兵
 trp_c2_rhun_horseman|リューン 騎兵

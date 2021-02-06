@@ -1,154 +1,154 @@
-ui_at_learning_limit|(ao limite de aprendizado para esta raça)
-ui_not_enough_skill_points_to_learn|(pontos de habilidade insuficientes para aprender)
-ui_not_enough_attributetype_to_learn_this_skill|(%s insuficientes para aprender essa habilidade)
-ui_explanation_agility|Agilidade: Cada ponto lhe dá 5 Pontos de Armas e aumenta a velocidade das armas em 0.5%. As seguintes habilidades não podem ser desenvolvidas além de 1/3 da Agilidade: Mestre de Armas, Escudo, Atletismo, Montaria, Arquearia Montada, Saqueamento.
-ui_retreated_battle|%s foi encaminhado.
-ui_riding_skill_not_adequate_to_mount|(habilidade em Cavalgar muito baixa)
-ui_camp|Ações
-ui_tutorial_inventory|Em The Last Days, você precisa de Pontos de Recursos para obter equipamentos. Pontos de Recursos são uma medida do quanto uma facção deseja manter-lhe abastecido, e quanto dos recursos da facção você têm direito de usar.
-ui_you_dont_have_value|Não possui: %s
-ui_merchant_cant_afford_value|%s: Você está nos dando mais do que precisamos! Talvez deva manter algo a mais para você (você está dando bens para %s, podemos usar somente %s).
-ui_merchant_pay_whatever|Não, eu não preciso de nada disso, fique com você.
-ui_horse|Montar
-ui_reclaim_your_sold_goods|Pegue de volta suas mercadorias, antes de pegar isso!
-ui_return_your_bought_goods|Devolva as mercadorias, antes de pegar isso!
-ui_return_price|se voltou: +%d Pts. Recursos
-ui_sell_price|Se for dado: +%d Pts. Recursos
-ui_reclaim_price|Reivindicar: -%d Pts. Recursos
-ui_buying_price|Requerer: -%d Pts. Recursos
-ui_notification_riding_skill_not_enough|Sua habilidade em cavalgar não é alta o suficiente para montar nisto.
-ui_notification_payment_value|Consumindo %s
-ui_notification_payment_receive_value|Ganhando %s
-ui_weekly_cost_value|Manutenção: %s
-ui_sell|Entregar
-ui_hire|Recrutar
-ui_notification_cant_hire|(Pts. Recursos insuficientes para recrutar)
-ui_joining_cost_weekly_wage|Recrutar: %d Pts. Recursos -- Manutenção: %d Pts. Recursos
-ui_weekly_wage|Manutenção: %d Pts. Recursos
-ui_price|Valor: %d Pts. Recursos
-ui_cant_reload_this_weapon_on_horseback|Não é possível recarregar esta arma enquanto estiver montado.
-ui_delivered_number_damage_to_horse|Causou %d dano à montaria.
-ui_horse_charged_for_number_damage|Montaria investiu causando %d de dano.
-ui_horse_received_number_damage|Montaria recebeu %d dano.
-ui_horse_fell_dead|Montaria caiu morta...
-ui_horse_crippled|Montaria aleijada...
-ui_you_got_value|%s recebido.
-ui_has_deserted_the_party|deixou o grupo.
-ui_have_deserted_the_party|deixou o grupo.
-ui_loading_textures|Carregando texturas (seja paciente)...
-ui_order_hold_fire_toggle|Não atire/Atire à vontade(Alternar)
-ui_order_dismount_toggle|Ordenar Desmontar/Montar (Alternar)
-ui_mount_horses_e_|%s, Montar!
-ui_hold_fire_e_|%s, Não atire!
-ui_fire_at_will_e_|%s, Atire à vontade!
-ui_recent_messages|Últimas Mensagens
-ui_value_denars|%d Pontos de Recurso
-ui_cannot_be_used_on_horseback|Não pode ser usado enquanto estiver montado
-ui_upgrade_to_value|Melhorar para %s
-ui_notification_cant_upgrade|(Não é possível melhorar enquanto estiver entregando tropas)
-ui_lance_control|Controle da Lança:
-ui_manual_easy|Manual (Fácil)
-ui_manual_hard|Manual (Difícil)
-ui_campaign_ai|Campanha AI (Inutilizado):
-ui_crouch|Agachar
+ui_at_learning_limit  = "(ao limite de aprendizado para esta raça)"
+ui_not_enough_skill_points_to_learn  = "(pontos de habilidade insuficientes para aprender)"
+ui_not_enough_attributetype_to_learn_this_skill  = "(%s insuficientes para aprender essa habilidade)"
+ui_explanation_agility  = "Agilidade: Cada ponto lhe dá 5 Pontos de Armas e aumenta a velocidade das armas em 0.5%. As seguintes habilidades não podem ser desenvolvidas além de 1/3 da Agilidade: Mestre de Armas, Escudo, Atletismo, Montaria, Arquearia Montada, Saqueamento."
+ui_retreated_battle  = "%s foi encaminhado."
+ui_riding_skill_not_adequate_to_mount  = "(habilidade em Cavalgar muito baixa)"
+ui_camp  = "Ações"
+ui_tutorial_inventory  = "Em The Last Days, você precisa de Pontos de Recursos para obter equipamentos. Pontos de Recursos são uma medida do quanto uma facção deseja manter-lhe abastecido, e quanto dos recursos da facção você têm direito de usar."
+ui_you_dont_have_value  = "Não possui: %s"
+ui_merchant_cant_afford_value  = "%s: Você está nos dando mais do que precisamos! Talvez deva manter algo a mais para você (você está dando bens para %s, podemos usar somente %s)."
+ui_merchant_pay_whatever  = "Não, eu não preciso de nada disso, fique com você."
+ui_horse  = "Montar"
+ui_reclaim_your_sold_goods  = "Pegue de volta suas mercadorias, antes de pegar isso!"
+ui_return_your_bought_goods  = "Devolva as mercadorias, antes de pegar isso!"
+ui_return_price  = "se voltou: +%d Pts. Recursos"
+ui_sell_price  = "Se for dado: +%d Pts. Recursos"
+ui_reclaim_price  = "Reivindicar: -%d Pts. Recursos"
+ui_buying_price  = "Requerer: -%d Pts. Recursos"
+ui_notification_riding_skill_not_enough  = "Sua habilidade em cavalgar não é alta o suficiente para montar nisto."
+ui_notification_payment_value  = "Consumindo %s"
+ui_notification_payment_receive_value  = "Ganhando %s"
+ui_weekly_cost_value  = "Manutenção: %s"
+ui_sell  = "Entregar"
+ui_hire  = "Recrutar"
+ui_notification_cant_hire  = "(Pts. Recursos insuficientes para recrutar)"
+ui_joining_cost_weekly_wage  = "Recrutar: %d Pts. Recursos -- Manutenção: %d Pts. Recursos"
+ui_weekly_wage  = "Manutenção: %d Pts. Recursos"
+ui_price  = "Valor: %d Pts. Recursos"
+ui_cant_reload_this_weapon_on_horseback  = "Não é possível recarregar esta arma enquanto estiver montado."
+ui_delivered_number_damage_to_horse  = "Causou %d dano à montaria."
+ui_horse_charged_for_number_damage  = "Montaria investiu causando %d de dano."
+ui_horse_received_number_damage  = "Montaria recebeu %d dano."
+ui_horse_fell_dead  = "Montaria caiu morta..."
+ui_horse_crippled  = "Montaria aleijada..."
+ui_you_got_value  = "%s recebido."
+ui_has_deserted_the_party  = "deixou o grupo."
+ui_have_deserted_the_party  = "deixou o grupo."
+ui_loading_textures  = "Carregando texturas (seja paciente)..."
+ui_order_hold_fire_toggle  = "Não atire/Atire à vontade(Alternar)"
+ui_order_dismount_toggle  = "Ordenar Desmontar/Montar (Alternar)"
+ui_mount_horses_e_  = "%s, Montar!"
+ui_hold_fire_e_  = "%s, Não atire!"
+ui_fire_at_will_e_  = "%s, Atire à vontade!"
+ui_recent_messages  = "Últimas Mensagens"
+ui_value_denars  = "%d Pontos de Recurso"
+ui_cannot_be_used_on_horseback  = "Não pode ser usado enquanto estiver montado"
+ui_upgrade_to_value  = "Melhorar para %s"
+ui_notification_cant_upgrade  = "(Não é possível melhorar enquanto estiver entregando tropas)"
+ui_lance_control  = "Controle da Lança:"
+ui_manual_easy  = "Manual (Fácil)"
+ui_manual_hard  = "Manual (Difícil)"
+ui_campaign_ai  = "Campanha AI (Inutilizado):"
+ui_crouch  = "Agachar"
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-ui_are_you_sure_you_want_to_import_the_character|Você tem certeza que deseja importar o personagem?
-ui_explanation_strength|Força: Cada ponto lhe concede +1 Pontos de Vida. As seguintes habilidades não podem ser desenvolvidas além de 1/3 de Força: Pele de Ferro, Poder de Ataque, Poder de Arremesso, Poder de Puxada.
-ui_explanation_intelligence|Inteligência: Cada ponto em Inteligência imediatamente lhe concede um ponto extra de habilidade, e levemente aumenta o ganho de XP em algumas ocasiões. As seguintes habilidades não podem ser desenvolvidas além de 1/3 de Inteligência: Treinador, Rastreamento, Táticas, Cria-trilhas, Observação, Gestão de Inventário, Tratar de Feridas, Cirurgia, e Primeiros Socorros.
-ui_explanation_charisma|Carisma: Cada ponto aumenta o limite do seu exército em +1.  As seguintes habilidades não podem ser desenvolvidas além de 1/3 do Carisma: Gestão de Prisioneiros,  Sobrevivência na Natureza, Liderança, Barganhador. 
-ui_delivered_number_damage|Causou %d de dano.
-ui_mission_losses_killed|Matou :
-ui_party_losses|%s : %d feridos. --- %d mortos de%d . 
-ui_following|Seguindo
-ui_accompanying|Acompanhando
-ui_dumping_value_items|%d itens serão permanentemente perdidos, você tem certeza ?
-ui_dumping_value_item|Um item será permanentemente perdido, você tem certeza ?
-ui_notification_requirements_not_met|Você não possui as habilidades ou atributos necessários para usar essa arma.
-ui_disband|Dispensar
-ui_you_hit_a_friendly_troop|Você acertou uma tropa aliada!
-ui_you_are_not_carrying_any_arrows|Você não está carregando nenhuma flecha.
-ui_delivered_number_damage_to_horse|Causou %d dano à montaria.
-ui_received_number_damage|Recebeu %d de dano.
-ui_you_have_improved_your_proficiency_in_value_to_number|Você melhorou sua proficiência de %s para %d .
-ui_your_proficiency_in_value_has_improved_by_number_to_number|Sua proficiência em %s melhorou em +%d para %d . 
-ui_value_killed_by_value|%s foi morto por %s .
-ui_value_knocked_unconscious_by_value|%s foi nocauteado por %s .
-ui_you_got_number_experience|Você ganhou %d de experiência.
-ui_you_have_advanced_to_level_number|Você avançou para o nível %d .
-ui_you_got_value|%s recebido.
-ui_quest_succeeded_value|Missão completada: %s .
-ui_number_of_companions_exceeds_leadership_limit|Número de companheiros excede o limite de liderança.
-ui_number_of_prisoners_exceeds_prisoner_management_limit|Número de prisioneiros excede o limite de gerenciamento de prisioneiros.
-ui_shared_number_experience_within_party|Dividiu %d de experiência com o grupo.
-ui_your_relations_with_value_has_improved_from_number_to_number|Sua relação com %s melhorou de %d para %d .
-ui_your_relations_with_value_has_deteriorated_from_number_to_number|Sua relação com %s piorou de %d para %d .
-ui_you_lost_value|Você perdeu %s .
-ui_change_graphics_settings_explanation|Algumas mudanças que você fez surtirão efeito quando você entrar numa nova região.
-ui_game_log_window|Janela de Registro do Jogo
-ui_blunt_short|b
-ui_tracks|Rastros
-ui_order_button_hold_fire|Cessar fogo
-ui_order_button_fire_at_will|Atirar á vontade
-ui_order_button_fire_orders|Ordens de Disparo
-ui_need_to_learn_prisoner_management|Você precisa aprender a habilidade de Gestão de Prisioneiros para poder capturar prisioneiros.
-ui_game_log_window|Janela de Registro do Jogo
-ui_unbalanced|Desbalanceado
-ui_can_crush_through_blocks|Pode atravessar bloqueios
+ui_are_you_sure_you_want_to_import_the_character  = "Você tem certeza que deseja importar o personagem?"
+ui_explanation_strength  = "Força: Cada ponto lhe concede +1 Pontos de Vida. As seguintes habilidades não podem ser desenvolvidas além de 1/3 de Força: Pele de Ferro, Poder de Ataque, Poder de Arremesso, Poder de Puxada."
+ui_explanation_intelligence  = "Inteligência: Cada ponto em Inteligência imediatamente lhe concede um ponto extra de habilidade, e levemente aumenta o ganho de XP em algumas ocasiões. As seguintes habilidades não podem ser desenvolvidas além de 1/3 de Inteligência: Treinador, Rastreamento, Táticas, Cria-trilhas, Observação, Gestão de Inventário, Tratar de Feridas, Cirurgia, e Primeiros Socorros."
+ui_explanation_charisma  = "Carisma: Cada ponto aumenta o limite do seu exército em +1.  As seguintes habilidades não podem ser desenvolvidas além de 1/3 do Carisma: Gestão de Prisioneiros,  Sobrevivência na Natureza, Liderança, Barganhador. "
+ui_delivered_number_damage  = "Causou %d de dano."
+ui_mission_losses_killed  = "Matou :"
+ui_party_losses  = "%s : %d feridos. --- %d mortos de%d . "
+ui_following  = "Seguindo"
+ui_accompanying  = "Acompanhando"
+ui_dumping_value_items  = "%d itens serão permanentemente perdidos, você tem certeza ?"
+ui_dumping_value_item  = "Um item será permanentemente perdido, você tem certeza ?"
+ui_notification_requirements_not_met  = "Você não possui as habilidades ou atributos necessários para usar essa arma."
+ui_disband  = "Dispensar"
+ui_you_hit_a_friendly_troop  = "Você acertou uma tropa aliada!"
+ui_you_are_not_carrying_any_arrows  = "Você não está carregando nenhuma flecha."
+ui_delivered_number_damage_to_horse  = "Causou %d dano à montaria."
+ui_received_number_damage  = "Recebeu %d de dano."
+ui_you_have_improved_your_proficiency_in_value_to_number  = "Você melhorou sua proficiência de %s para %d ."
+ui_your_proficiency_in_value_has_improved_by_number_to_number  = "Sua proficiência em %s melhorou em +%d para %d . "
+ui_value_killed_by_value  = "%s foi morto por %s ."
+ui_value_knocked_unconscious_by_value  = "%s foi nocauteado por %s ."
+ui_you_got_number_experience  = "Você ganhou %d de experiência."
+ui_you_have_advanced_to_level_number  = "Você avançou para o nível %d ."
+ui_you_got_value  = "%s recebido."
+ui_quest_succeeded_value  = "Missão completada: %s ."
+ui_number_of_companions_exceeds_leadership_limit  = "Número de companheiros excede o limite de liderança."
+ui_number_of_prisoners_exceeds_prisoner_management_limit  = "Número de prisioneiros excede o limite de gerenciamento de prisioneiros."
+ui_shared_number_experience_within_party  = "Dividiu %d de experiência com o grupo."
+ui_your_relations_with_value_has_improved_from_number_to_number  = "Sua relação com %s melhorou de %d para %d ."
+ui_your_relations_with_value_has_deteriorated_from_number_to_number  = "Sua relação com %s piorou de %d para %d ."
+ui_you_lost_value  = "Você perdeu %s ."
+ui_change_graphics_settings_explanation  = "Algumas mudanças que você fez surtirão efeito quando você entrar numa nova região."
+ui_game_log_window  = "Janela de Registro do Jogo"
+ui_blunt_short  = "b"
+ui_tracks  = "Rastros"
+ui_order_button_hold_fire  = "Cessar fogo"
+ui_order_button_fire_at_will  = "Atirar á vontade"
+ui_order_button_fire_orders  = "Ordens de Disparo"
+ui_need_to_learn_prisoner_management  = "Você precisa aprender a habilidade de Gestão de Prisioneiros para poder capturar prisioneiros."
+ui_game_log_window  = "Janela de Registro do Jogo"
+ui_unbalanced  = "Desbalanceado"
+ui_can_crush_through_blocks  = "Pode atravessar bloqueios"
 
-ui_order_1|Selecione Ordem 1
-ui_order_2|Selecione Ordem 2
-ui_order_3|Selecione Ordem 3
-ui_order_4|Selecione Ordem 4
-ui_order_5|Selecione Ordem 5
-ui_order_6|Selecione Ordem 6
-ui_order_button_hold_this_position|Mantenham esta posição
-ui_order_button_follow_me|Sigam-me
-ui_order_button_charge|Ao ataque
-ui_order_button_stand_ground|Mantenham as posições
-ui_order_button_retreat|Retirada
-ui_order_button_advance|Avançar dez passos
-ui_order_button_fall_back|Recuar dez passos
-ui_order_button_spread_out|Espalhem-se
-ui_order_button_stand_closer|Aproximem-se
-ui_order_button_mount_horses|Montar
-ui_order_button_dismount|Desmontar
-ui_order_button_hold_fire|Cessar fogo
-ui_order_button_fire_at_will|Atirar á vontade
-ui_order_button_use_blunt_weapons|Usem apenas armas de impacto
-ui_order_button_use_any_weapon|Usem armas à vontade
-ui_order_button_movement_orders|Ordens de Movimento
-ui_order_button_formation_orders|Ordens de Formação
-ui_order_button_fire_orders|Ordens de Disparo
-ui_follow_me_e_|%s, sigam-me!
-ui_charge_e_|%s, ao ataque!!!
-ui_stand_ground_e_|%s , mantenham as posições!
-ui_retreat_e_|%s , retirada!
-ui_mount_horses_e_|%s, Montar!
-ui_dismount_e_|%s , desmontar!
-ui_advance_e_|%s, avançar dez passos!
-ui_fall_back_e_|%s, recuar dez passos!
-ui_stand_closer_e_|%s, aproximem-se!
-ui_spread_out_e_|%s, espalhem-se!
-ui_use_blunt_weapons_e_|%s, usem apenas armas de impacto!
-ui_use_any_weapon_e_|%s, usem armas à vontade!
-ui_hold_fire_e_|%s, Não atire!
-ui_fire_at_will_e_|%s, Atire à vontade!
-ui_hold_this_position_e_|%s, mantenham esta posição!
-ui_infantry|Infantaria
-ui_archers|Arqueiros
-ui_cavalry|Cavalaria
-ui_companions|Companheiros
-ui_everyone_hear_me|Todos, escutem-me!
-ui_everyone|Todos
-ui_everyone_around_me|Soldados próximos
-ui_str_hear_me|%s, escutem-me !
+ui_order_1  = "Selecione Ordem 1"
+ui_order_2  = "Selecione Ordem 2"
+ui_order_3  = "Selecione Ordem 3"
+ui_order_4  = "Selecione Ordem 4"
+ui_order_5  = "Selecione Ordem 5"
+ui_order_6  = "Selecione Ordem 6"
+ui_order_button_hold_this_position  = "Mantenham esta posição"
+ui_order_button_follow_me  = "Sigam-me"
+ui_order_button_charge  = "Ao ataque"
+ui_order_button_stand_ground  = "Mantenham as posições"
+ui_order_button_retreat  = "Retirada"
+ui_order_button_advance  = "Avançar dez passos"
+ui_order_button_fall_back  = "Recuar dez passos"
+ui_order_button_spread_out  = "Espalhem-se"
+ui_order_button_stand_closer  = "Aproximem-se"
+ui_order_button_mount_horses  = "Montar"
+ui_order_button_dismount  = "Desmontar"
+ui_order_button_hold_fire  = "Cessar fogo"
+ui_order_button_fire_at_will  = "Atirar á vontade"
+ui_order_button_use_blunt_weapons  = "Usem apenas armas de impacto"
+ui_order_button_use_any_weapon  = "Usem armas à vontade"
+ui_order_button_movement_orders  = "Ordens de Movimento"
+ui_order_button_formation_orders  = "Ordens de Formação"
+ui_order_button_fire_orders  = "Ordens de Disparo"
+ui_follow_me_e_  = "%s, sigam-me!"
+ui_charge_e_  = "%s, ao ataque!!!"
+ui_stand_ground_e_  = "%s , mantenham as posições!"
+ui_retreat_e_  = "%s , retirada!"
+ui_mount_horses_e_  = "%s, Montar!"
+ui_dismount_e_  = "%s , desmontar!"
+ui_advance_e_  = "%s, avançar dez passos!"
+ui_fall_back_e_  = "%s, recuar dez passos!"
+ui_stand_closer_e_  = "%s, aproximem-se!"
+ui_spread_out_e_  = "%s, espalhem-se!"
+ui_use_blunt_weapons_e_  = "%s, usem apenas armas de impacto!"
+ui_use_any_weapon_e_  = "%s, usem armas à vontade!"
+ui_hold_fire_e_  = "%s, Não atire!"
+ui_fire_at_will_e_  = "%s, Atire à vontade!"
+ui_hold_this_position_e_  = "%s, mantenham esta posição!"
+ui_infantry  = "Infantaria"
+ui_archers  = "Arqueiros"
+ui_cavalry  = "Cavalaria"
+ui_companions  = "Companheiros"
+ui_everyone_hear_me  = "Todos, escutem-me!"
+ui_everyone  = "Todos"
+ui_everyone_around_me  = "Soldados próximos"
+ui_str_hear_me  = "%s, escutem-me !"
 
-ui_return|Retornar
-ui_factions|Facções
-ui_troop_upgrades|Melhorias de Tropa
-; ui_hdr_mode|HDR Mode:
-ui_autoexpore|Exposição automática (recomenda-se ligada caso HDR estiver ligado)
-; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
-; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)
+ui_return  = "Retornar"
+ui_factions  = "Facções"
+ui_troop_upgrades  = "Melhorias de Tropa"
+; ui_hdr_mode  = "HDR Mode:"
+ui_autoexpore  = "Exposição automática (recomenda-se ligada caso HDR estiver ligado)"
+; ui_saving_policy_realistic  = "No quitting without saving! (Not recommended.)"
+; ui_saving_policy_nonrealistic  = "Quit without saving. (Recommended, keep multiple saves.)"

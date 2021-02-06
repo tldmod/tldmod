@@ -1,48 +1,48 @@
-skl_trade|Targowanie
-skl_trade_desc|Sprawia że kowale i mistrzowie dostawy lepiej współpracują i oferują lepszy ekwipunek. (Umiejętność oddziału)
-skl_leadership|Przywództwo
-skl_leadership_desc|Każdy punkt zwiększa maksymalną ilość jednostek w oddziale o 5, zwiększa morale i obniża ich koszt najmu oraz żołd o 5%%%%. Sprawia że do oddziału chce dołączyć więcej rekrutów i są oni dodatkowo silniejsi. (Umiejętność dowódcy)
-skl_prisoner_management|Zarządzanie więźniami
-skl_prisoner_management_desc|Każdy poziom tej umiejętności zwiększa maksymalną ilość jeńców o %d. (Umiejętność dowódcy)
-skl_persuasion|Wildcraft
-skl_persuasion_desc|Zdolność do przetrwania w dziczy i naginania jej do Twojej woli. Ta umiejętność wpływa na zdolność ukrywania się oddziału przed wrogiem, a także na jego prędkość w zalesionym terenie. (Umiejętność oddziału)
-skl_engineer|-----
-skl_engineer_desc|-----
-skl_first_aid|Pierwsza pomoc
-skl_first_aid_desc|Bohaterowie, na każdy poziom tej umiejętności, odzyskują 5%% straconych podczas misji punktów zdrowia. (Umiejętność oddziału)
-skl_surgery|Chirurgia
-skl_surgery_desc|Każdy punkt w tej umiejętności daje 4%% szansy na to, że śmiertelnie ugodzony członek oddziału zostanie ranny, a nie zabity. (Umiejętność oddziału)
-skl_wound_treatment|Leczenie ran
-skl_wound_treatment_desc|Szybkość leczenia oddziału wzrasta o 20%% na każdy poziom tej umiejętności. (Umiejętność oddziału)
-skl_inventory_management|Zarządzanie ekwipunkiem
-skl_inventory_management_desc|Zwiększa pojemność ekwipunku o 6 pól na każdy poziom umiejętności. (Umiejętność dowódcy)
-skl_spotting|Spostrzegawczość
-skl_spotting_desc|Zasięg wzroku oddziału zwiększa się o 10%% na poziom umiejętności. (Umiejętność oddziału)
-skl_pathfinding|Szukanie ścieżek
-skl_pathfinding_desc|Szybkość oddziału podczas poruszania się po mapie zwiększa się o 3%% na poziom umiejętności. (Umiejętność oddziału)
-skl_tactics|Taktyka
-skl_tactics_desc|Na każde dwa poziomy tej umiejętności zwiększa się 1 początkowa przewaga bitewna. (Umiejętność oddziału)
-skl_tracking|Tropienie
-skl_tracking_desc|Ślady dają więcej  informacji. (Umiejętność oddziału)
-skl_trainer|Szkolenie
-skl_trainer_desc|Każdego dnia każdy bohater, który ma tę umiejętność, dodaje trochę doświadczenia wszystkim członkom oddziału mającym niższy poziom, niż on. Dodawane dośw.: {0,4,10,16,23,30,38,46,55,65,80}. (Umiejętność osobista)
-skl_looting|Plądrowanie
-skl_looting_desc|Każdy punkt tej umiejętności zwiększa łup z plądrowania o 10%%. (Umiejętność oddziału)
-skl_horse_archery|Łucznictwo konne
-skl_horse_archery_desc|Zmniejsza kary celności i zadawanych obrażeń w przypadku strzelania i rzucania z końskiego grzbietu. (Umiejętność osobista)
-skl_riding|Jeździectwo
-skl_riding_desc|Pozwala na dosiadanie lepszych wierzchowców i zwiększa szybkość jazdy oraz zdolność manewru. (Umiejętność osobista)
-skl_athletics|Atletyka
-skl_athletics_desc|Zwiększa szybkość biegu. (Umiejętność osobista)
-skl_shield|Tarcza
-skl_shield_desc|Obniża uszkodzenia, jakich doznaje tarcza (o 8%% na poziom umiejętności) i zwiększa szybkość oraz biegłość posługiwania się tarczą. (Umiejętność osobista)
-skl_weapon_master|Mistrzostwo w broniach
-skl_weapon_master_desc|Ułatwia szkolenie się i zwiększa limit biegłości w posługiwaniu się bronią. Limity to odpowiednio: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Umiejętność osobista)
-skl_power_draw|Potężny naciąg
-skl_power_draw_desc|Pozwala na używanie lepszych łuków. Każdy punkt (do czterech plus wymagania "potężnego naciągu" danego łuku) zwiększa obrażenia zadawane przez łuk o 14%%. (Umiejętność osobista)
-skl_power_throw|Potężny rzut
-skl_power_throw_desc|Każdy punkt w tej umiejętności zwiększa obrażenia zadawane przy rzucie o 10%%. (Umiejętność osobista)
-skl_power_strike|Potężny cios
-skl_power_strike_desc|Każdy punkt w tej umiejętności zwiększa obrażenia zadawane przy walce wręcz o 8%%. (Umiejętność osobista)
-skl_ironflesh|Żelazne ciało
-skl_ironflesh_desc|Każdy punkt w tej umiejętności zwiększa ilość punktów zdrowia o 2. (Umiejętność osobista)
+skl_trade  = "Targowanie"
+skl_trade_desc  = "Sprawia że kowale i mistrzowie dostawy lepiej współpracują i oferują lepszy ekwipunek. (Umiejętność oddziału)"
+skl_leadership  = "Przywództwo"
+skl_leadership_desc  = "Każdy punkt zwiększa maksymalną ilość jednostek w oddziale o 5, zwiększa morale i obniża ich koszt najmu oraz żołd o 5%%%%. Sprawia że do oddziału chce dołączyć więcej rekrutów i są oni dodatkowo silniejsi. (Umiejętność dowódcy)"
+skl_prisoner_management  = "Zarządzanie więźniami"
+skl_prisoner_management_desc  = "Każdy poziom tej umiejętności zwiększa maksymalną ilość jeńców o %d. (Umiejętność dowódcy)"
+skl_persuasion  = "Wildcraft"
+skl_persuasion_desc  = "Zdolność do przetrwania w dziczy i naginania jej do Twojej woli. Ta umiejętność wpływa na zdolność ukrywania się oddziału przed wrogiem, a także na jego prędkość w zalesionym terenie. (Umiejętność oddziału)"
+skl_engineer  = "-----"
+skl_engineer_desc  = "-----"
+skl_first_aid  = "Pierwsza pomoc"
+skl_first_aid_desc  = "Bohaterowie, na każdy poziom tej umiejętności, odzyskują 5%% straconych podczas misji punktów zdrowia. (Umiejętność oddziału)"
+skl_surgery  = "Chirurgia"
+skl_surgery_desc  = "Każdy punkt w tej umiejętności daje 4%% szansy na to, że śmiertelnie ugodzony członek oddziału zostanie ranny, a nie zabity. (Umiejętność oddziału)"
+skl_wound_treatment  = "Leczenie ran"
+skl_wound_treatment_desc  = "Szybkość leczenia oddziału wzrasta o 20%% na każdy poziom tej umiejętności. (Umiejętność oddziału)"
+skl_inventory_management  = "Zarządzanie ekwipunkiem"
+skl_inventory_management_desc  = "Zwiększa pojemność ekwipunku o 6 pól na każdy poziom umiejętności. (Umiejętność dowódcy)"
+skl_spotting  = "Spostrzegawczość"
+skl_spotting_desc  = "Zasięg wzroku oddziału zwiększa się o 10%% na poziom umiejętności. (Umiejętność oddziału)"
+skl_pathfinding  = "Szukanie ścieżek"
+skl_pathfinding_desc  = "Szybkość oddziału podczas poruszania się po mapie zwiększa się o 3%% na poziom umiejętności. (Umiejętność oddziału)"
+skl_tactics  = "Taktyka"
+skl_tactics_desc  = "Na każde dwa poziomy tej umiejętności zwiększa się 1 początkowa przewaga bitewna. (Umiejętność oddziału)"
+skl_tracking  = "Tropienie"
+skl_tracking_desc  = "Ślady dają więcej  informacji. (Umiejętność oddziału)"
+skl_trainer  = "Szkolenie"
+skl_trainer_desc  = "Każdego dnia każdy bohater, który ma tę umiejętność, dodaje trochę doświadczenia wszystkim członkom oddziału mającym niższy poziom, niż on. Dodawane dośw.: {0,4,10,16,23,30,38,46,55,65,80}. (Umiejętność osobista)"
+skl_looting  = "Plądrowanie"
+skl_looting_desc  = "Każdy punkt tej umiejętności zwiększa łup z plądrowania o 10%%. (Umiejętność oddziału)"
+skl_horse_archery  = "Łucznictwo konne"
+skl_horse_archery_desc  = "Zmniejsza kary celności i zadawanych obrażeń w przypadku strzelania i rzucania z końskiego grzbietu. (Umiejętność osobista)"
+skl_riding  = "Jeździectwo"
+skl_riding_desc  = "Pozwala na dosiadanie lepszych wierzchowców i zwiększa szybkość jazdy oraz zdolność manewru. (Umiejętność osobista)"
+skl_athletics  = "Atletyka"
+skl_athletics_desc  = "Zwiększa szybkość biegu. (Umiejętność osobista)"
+skl_shield  = "Tarcza"
+skl_shield_desc  = "Obniża uszkodzenia, jakich doznaje tarcza (o 8%% na poziom umiejętności) i zwiększa szybkość oraz biegłość posługiwania się tarczą. (Umiejętność osobista)"
+skl_weapon_master  = "Mistrzostwo w broniach"
+skl_weapon_master_desc  = "Ułatwia szkolenie się i zwiększa limit biegłości w posługiwaniu się bronią. Limity to odpowiednio: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Umiejętność osobista)"
+skl_power_draw  = "Potężny naciąg"
+skl_power_draw_desc  = "Pozwala na używanie lepszych łuków. Każdy punkt (do czterech plus wymagania "_QQ_"potężnego naciągu"_QQ_" danego łuku) zwiększa obrażenia zadawane przez łuk o 14%%. (Umiejętność osobista)"
+skl_power_throw  = "Potężny rzut"
+skl_power_throw_desc  = "Każdy punkt w tej umiejętności zwiększa obrażenia zadawane przy rzucie o 10%%. (Umiejętność osobista)"
+skl_power_strike  = "Potężny cios"
+skl_power_strike_desc  = "Każdy punkt w tej umiejętności zwiększa obrażenia zadawane przy walce wręcz o 8%%. (Umiejętność osobista)"
+skl_ironflesh  = "Żelazne ciało"
+skl_ironflesh_desc  = "Każdy punkt w tej umiejętności zwiększa ilość punktów zdrowia o 2. (Umiejętność osobista)"

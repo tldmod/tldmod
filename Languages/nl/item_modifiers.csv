@@ -1,43 +1,43 @@
-imod_plain|Normaal %s
-imod_cracked|Slechte %s
-imod_rusty|Ruwe %s
-imod_bent|Gebogen %s
-imod_chipped|Afgespinterde %s
-imod_battered|Gebroken %s
-imod_poor|Slechte %s
-imod_crude|Simpele %s
-imod_old|Oude %s
-imod_cheap|Goedkope %s
-imod_fine|Fijne %s
-imod_well_made|Goed gemaakte %s
-imod_sharp|Scherpe %s
-imod_balanced|Gebalanceerde %s
-imod_tempered|Geharde %s
-imod_deadly|Dodelijke %s
-imod_exquisite|Exquisite %s
-imod_masterwork|Meesterwerk %s
-imod_heavy|Zware %s
-imod_strong|Sterke %s
-imod_powerful|Krachtige %s
-imod_tattered|Gebruikte %s
-imod_ragged|Ruwe %s
-imod_rough|Ruwe %s
-imod_sturdy|Stevige %s
-imod_thick|Stevige %s
-imod_hardened|Geharde %s
-imod_reinforced|Verstevigde %s
-imod_cloak|%s met Mantel
-imod_lordly|Meesterwerk %s
-imod_lame|Armzalige %s
-imod_swaybacked|Overwerkte %s
-imod_stubborn|Eigenwijze %s
-imod_timid|Bange %s
-imod_meek|In bloed gedekte %s
-imod_spirited|Levendige %s
-imod_champion|Kampioen %s
-imod_fresh|Verse %s
-imod_day_old|Dag oude %s
-imod_two_day_old|Twee dagen oude %s
-imod_smelling|Ruikend %s
-imod_rotten|Verrotte %s
-imod_large_bag|Grote zak met %s
+imod_plain  = "Normaal %s"
+imod_cracked  = "Slechte %s"
+imod_rusty  = "Ruwe %s"
+imod_bent  = "Gebogen %s"
+imod_chipped  = "Afgespinterde %s"
+imod_battered  = "Gebroken %s"
+imod_poor  = "Slechte %s"
+imod_crude  = "Simpele %s"
+imod_old  = "Oude %s"
+imod_cheap  = "Goedkope %s"
+imod_fine  = "Fijne %s"
+imod_well_made  = "Goed gemaakte %s"
+imod_sharp  = "Scherpe %s"
+imod_balanced  = "Gebalanceerde %s"
+imod_tempered  = "Geharde %s"
+imod_deadly  = "Dodelijke %s"
+imod_exquisite  = "Exquisite %s"
+imod_masterwork  = "Meesterwerk %s"
+imod_heavy  = "Zware %s"
+imod_strong  = "Sterke %s"
+imod_powerful  = "Krachtige %s"
+imod_tattered  = "Gebruikte %s"
+imod_ragged  = "Ruwe %s"
+imod_rough  = "Ruwe %s"
+imod_sturdy  = "Stevige %s"
+imod_thick  = "Stevige %s"
+imod_hardened  = "Geharde %s"
+imod_reinforced  = "Verstevigde %s"
+imod_cloak  = "%s met Mantel"
+imod_lordly  = "Meesterwerk %s"
+imod_lame  = "Armzalige %s"
+imod_swaybacked  = "Overwerkte %s"
+imod_stubborn  = "Eigenwijze %s"
+imod_timid  = "Bange %s"
+imod_meek  = "In bloed gedekte %s"
+imod_spirited  = "Levendige %s"
+imod_champion  = "Kampioen %s"
+imod_fresh  = "Verse %s"
+imod_day_old  = "Dag oude %s"
+imod_two_day_old  = "Twee dagen oude %s"
+imod_smelling  = "Ruikend %s"
+imod_rotten  = "Verrotte %s"
+imod_large_bag  = "Grote zak met %s"

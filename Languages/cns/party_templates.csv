@@ -93,7 +93,7 @@ pt_harad_war_party|哈拉德战队
 pt_dunland_war_party|登兰德战队
 pt_khand_war_party|维瑞亚战队
 pt_moria_war_party|摩瑞亚战队
-; pt_guldur_war_party|Dol Guldur War Party
+pt_guldur_war_party|多尔哥多战队
 pt_rhun_war_party|卢恩战队
 pt_gondor_company|米那斯提力斯巡逻队
 pt_rohan_company|洛汗连队
@@ -143,4 +143,6 @@ pt_scout_camp_small|斥候营地
 pt_scout_camp_large|斥候加强营地
 pt_beorn_caravan|波宁商队
 pt_orc_horde|半兽人部落
-pt_vet_archer|资深射手
+pt_volunteers|预备队
+pt_refugees|难民
+pt_retreat_troops|断后士兵

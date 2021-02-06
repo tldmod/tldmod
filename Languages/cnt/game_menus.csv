@@ -68,6 +68,7 @@ mno_start_go|剛 鐸， 白 塔 之 國
 mno_start_ro|洛 汗， 騎 馬 之 民 
 mno_start_du|登 丹 人， 古 努 曼 諾 爾 王 朝 後 裔 
 mno_start_be|比 翁 人， 熊 人 後 代 
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
 mno_start_da|河 谷 人， 北 方 王 國 
 menu_start_good_elf|^^^^^^^^^^你 來 自 哪 個 森 林 ，長 者 ？ 
 mno_start_ri|瑞 文 戴 爾  ， 屬 精 靈 王 埃 爾 隆 德 
@@ -199,6 +200,7 @@ mno_encounter_order_attack|你 坐 鎮 指 揮 命 令 你 的 部 下 {reg21?�
 mno_control_allies_menu|使 用 影 響 力 來 指 揮 你 在 戰 場 上 的 盟 友 。
 mno_encounter_hide|躲 避 敵 人...
 mno_special_whip|往 前 衝 突 破 {s4}。 
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
 mno_encounter_leave|不 打 了。
 mno_encounter_retreat|撤 退 ， 留 下 一 些 士 兵 掩 護 主 力 撤 退 。 
 mno_player_control_allies_simple|指 揮 他 們 向 敵 人 進 攻

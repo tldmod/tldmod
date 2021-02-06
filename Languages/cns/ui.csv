@@ -148,7 +148,7 @@ ui_str_hear_me|%s ，听令！
 ui_return|返回
 ui_factions|派系
 ui_troop_upgrades|部队升级
-; ui_hdr_mode|HDR Mode:
+ui_hdr_mode|HDR模式：
 ui_autoexpore|自动曝光（如果HDR开启，建议开启）：
-; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
-; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)
+ui_saving_policy_realistic|直面人生！不存盘就不能退出！【不推荐】
+ui_saving_policy_nonrealistic|允许我不存盘就退出。【推荐，建议多备份存档】

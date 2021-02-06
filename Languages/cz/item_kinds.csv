@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|Východňanský jestřábí štít
 itm_rhun_bull1_shield|Rhůnský štít
 itm_rhun_bull2_shield|Rhůnský štít
 itm_rhun_bull3_shield|Rhůnský štít
+itm_rhun_shield|Rhůnský štít
 itm_rhun_armor_a|Lehké Rhůnské brnění
 itm_rhun_armor_b|Lehké Rhůnské brnění
 itm_rhun_armor_d|Lehké Rhůnské brnění
@@ -599,19 +600,13 @@ itm_rhun_armor_n|Střední Rhůnské brnění
 itm_rhun_armor_o|Střední Rhůnské brnění
 itm_rhun_armor_p|Rhůnská královská zbroj
 itm_rhun_armor_k|Rhůnská královská zbroj
-itm_rhun_helm_a|Rhůnská helma
-itm_rhun_helm_b|Rhůnská kroužková helma
-itm_rhun_helm_c|Rhůnská klanová helma
-itm_rhun_helm_e|Rhůnská rohatá klanová helma
-itm_rhun_helm_g|Rhůnská rohatá přilbice
-itm_rhun_helm_h|Rhůnská rohatá přilbice
-itm_rhun_helm_i|Rhůnská kulatá helma
-itm_rhun_helm_j|Rhůnská kulatá helma s maskou
-itm_rhun_helm_k|Rhůnská kožená helma
-itm_rhun_helm_l|Rhůnská kožená helma
-itm_rhun_helm_m|Rhůnská kožená helma
-itm_rhun_helm_n|Rhůnská náčelnická helma
-itm_rhun_helm_o|Rhůnská náčelnická helma
+itm_rhun_helm_barbed|Rhůnská helma
+itm_rhun_helm_horde|Rhůnská klanová helma
+; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_round|Rhůnská kulatá helma
+itm_rhun_helm_leather|Rhůnská kožená helma
+itm_rhun_helm_chieftain|Rhůnská náčelnická helma
+; itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|Rhůnská velká sekera
 itm_rhun_battleaxe|Rhůnská bitevní sekera
 itm_rhun_falchion|Rhůnský falchion
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|Rhůnský velký falchion
 itm_rhun_greatsword|Rhůnský velký meč
 itm_rhun_shortsword|Rhůnský krátký meč
 itm_rhun_sword|Rhůnský meč
-itm_rhun_shield|Rhůnský štít
+; itm_rhun_mangler|Rhun Mangler
 itm_dale_light_a|Dolská vesta domobrany
 itm_dale_light_b|Severská lehká lamelová zbroj
 itm_dale_med_a|Severská těžká lamelová zbroj
@@ -631,7 +626,6 @@ itm_dale_heavy_a|Dolská lamelová pokovaná zbroj
 itm_dale_heavy_b|Dolský potažený kabát
 itm_dale_heavy_c|Rhovanionské těžké brnění
 itm_north_leather|Severská kožená vesta
-itm_dale_armor_l|Dolská královský nákrčník
 itm_dale_helmet_a|Dolská lehka pechotni helma
 itm_dale_helmet_b|Dolská lehká zbroj lučištníka
 itm_dale_helmet_c|Dolská pěchotni helma
@@ -769,8 +763,8 @@ itm_book_of_moria|Kniha o Mazarbulovi
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Bardův luk
-itm_explosive_reward|Důl Železného pasu
-itm_corsair_trident2|Trojzubec mořského hněvu
+; itm_tome_of_knowledge|Tome of Arcane Knowledge
+; itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|Krebaina
 itm_miruvor_reward|Láhev Miruvoru
 itm_wheeled_cage|Obří klec na kolech
@@ -793,7 +787,7 @@ itm_leather_boots_reward|Lovecké boty
 itm_rohan_armor_th|Rohanská královská zbroj
 itm_wilderness_amulet|Amulet divočiny
 itm_prisoner_coll_chain|Řetězy otroků
-itm_witchking_helmet|Helma pána nazgûlů
+; itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|Lorienské královské brnění
 itm_feet_chains|Okovy
 itm_feet_chains_dwarf|Okovy

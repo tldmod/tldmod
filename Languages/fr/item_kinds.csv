@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|Bouclier faucon oriental
 itm_rhun_bull1_shield|Bouclier de Rhûn
 itm_rhun_bull2_shield|Bouclier de Rhûn
 itm_rhun_bull3_shield|Bouclier de Rhûn
+itm_rhun_shield|Bouclier triangulaire de Rhûn
 itm_rhun_armor_a|Tenue de combat légère de Rhûn
 itm_rhun_armor_b|Tenue de combat légère de Rhûn
 itm_rhun_armor_d|Tenue de combat légère de Rhûn
@@ -599,19 +600,13 @@ itm_rhun_armor_n|Tenue de combat moyenne de Rhûn
 itm_rhun_armor_o|Tenue de combat moyenne de Rhûn
 itm_rhun_armor_p|Armure noble de Rhûn
 itm_rhun_armor_k|Armure noble de Rhûn
-itm_rhun_helm_a|Casque acéré de Rhûn
-itm_rhun_helm_b|Casque acéré de Rhûn avec camail
-itm_rhun_helm_c|Casque tribal de Rhûn
-itm_rhun_helm_e|Casque tribal cornu de Rhûn
-itm_rhun_helm_g|Casque orné de Rhûn
-itm_rhun_helm_h|Casque orné de Rhûn
-itm_rhun_helm_i|Casque rond de Rhûn
-itm_rhun_helm_j|Casque rond de Rhûn avec masque
-itm_rhun_helm_k|Casque en cuir de Rhûn
-itm_rhun_helm_l|Casque en cuir de Rhûn
-itm_rhun_helm_m|Casque en cuir de Rhûn
-itm_rhun_helm_n|Casque de chef de Rhûn
-itm_rhun_helm_o|Casque de chef de Rhûn
+itm_rhun_helm_barbed|Casque acéré de Rhûn
+itm_rhun_helm_horde|Casque tribal de Rhûn
+itm_rhun_helm_pot|Heaume de Rhûn
+itm_rhun_helm_round|Casque rond de Rhûn
+itm_rhun_helm_leather|Casque en cuir de Rhûn
+itm_rhun_helm_chieftain|Casque de chef de Rhûn
+itm_rhun_warpick|Piquier de guerre de Rhûn
 itm_rhun_greataxe|Grande hache de Rhûn
 itm_rhun_battleaxe|Hache de bataille de Rhûn
 itm_rhun_falchion|Fauchon sauvage
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|Grand fauchon sauvage
 itm_rhun_greatsword|Grande épée sauvage
 itm_rhun_shortsword|Épée courte sauvage 
 itm_rhun_sword|Épée sauvage
-itm_rhun_shield|Bouclier triangulaire de Rhûn
+itm_rhun_mangler|Déchiqueteur de Rhûn
 itm_dale_light_a|Manteau de milicien de Dale
 itm_dale_light_b|Armure légère lamellaire d'Homme du Nord
 itm_dale_med_a|Armure lourde lamellaire d'Homme du Nord
@@ -631,7 +626,6 @@ itm_dale_heavy_a|Lamellaire sur mailles de Dale
 itm_dale_heavy_b|Manteau de plates de Dale
 itm_dale_heavy_c|Cotte de mailles du Rhovanion
 itm_north_leather|Veste en cuir d'homme du nord.
-itm_dale_armor_l|Gorgerette noble de Dale
 itm_dale_helmet_a|Casque léger d'infanterie de Dale
 itm_dale_helmet_b|Casque d'archer léger de Dale
 itm_dale_helmet_c|Casque d'infanterie de Dale
@@ -769,8 +763,8 @@ itm_book_of_moria|Livre de Mazarbul
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Arc de Bard
-itm_explosive_reward|Mine de l'Isengard
-itm_corsair_trident2|Trident de la Furie de la Mer
+itm_tome_of_knowledge|Grand livre La Connaissance des Arcanes
+itm_orc_idol_reward|Idole du Premier Orque
 itm_crebain_reward|Crebain
 itm_miruvor_reward|Flasque de Miruvor
 itm_wheeled_cage|Cage sur roues géante
@@ -793,7 +787,7 @@ itm_leather_boots_reward|Bottes de chasse
 itm_rohan_armor_th|Armure royale du Rohan
 itm_wilderness_amulet|Amulette des Régions Sauvages
 itm_prisoner_coll_chain|Chaînes de prisonnier
-itm_witchking_helmet|Heaume maléfique
+itm_witchking_helmet|Masque de sorcier
 itm_lorien_royal_armor|Armure royale de la Lórien
 itm_feet_chains|Chaînes pour pieds
 itm_feet_chains_dwarf|Chaînes pour pieds

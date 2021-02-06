@@ -1,154 +1,154 @@
-ui_at_learning_limit|(Bu Irk için ögrenme limitinde)
-ui_not_enough_skill_points_to_learn|(Ögrenmek için yeterli beceri puanınız yok)
-ui_not_enough_attributetype_to_learn_this_skill|(Bu beceriyi ögrenmek için yeterli %s yok)
-ui_explanation_agility|Çeviklik: Her puan beş silah puanı verir ve silah hızını% 0,5 artırır. Aşagıdaki beceriler Çevikligin 1 / 3'ünün ötesinde geliştirilemez: Silah Ustası, Kalkan, Atletizm, Binicilik, Atlı Okçuluk, Yagma.
-ui_retreated_battle|%s savaş alanından kaçtı.
-ui_riding_skill_not_adequate_to_mount|(Binicilik seviyesi düşük)
-ui_camp|Kamp
-ui_tutorial_inventory|The Last Days'de, Ekipman almak için Kaynak puanına ihtiyacınız vardır.
-ui_you_dont_have_value|%s  sahip degilsin
-ui_merchant_cant_afford_value|%s: Bize ihtiyacımız olandan daha fazlasını veriyorsun! Belki birazını kendine saklamalısın ( %s için eşya veriyorsun, yalnızca %s kullanabiliriz )
-ui_merchant_pay_whatever|Hayır, bunlara ihtiyacım yok, sende kalsın.
-ui_horse|Binek
-ui_reclaim_your_sold_goods|Bu malı satın almadan önce, satmış oldugunuz malları geri alın!
-ui_return_your_bought_goods|Bu malı satmadan önce satın almış oldugunuz malları iade edin!
-ui_return_price|Geri alınırsa +%d Res.P.
-ui_sell_price|Geri verilirse +%d Res.P.
-ui_reclaim_price|Geri almak için: -%d Res.P.
-ui_buying_price|Hak iddaa etmek için: -%d Res.P.
-ui_notification_riding_skill_not_enough|Binebilmek için yeterli binicilik becerin yok.
-ui_notification_payment_value|%s ödenecek
-ui_notification_payment_receive_value|%s alınacak
-ui_weekly_cost_value|Haftalık ücret: %s
-ui_sell|Ver
-ui_hire|Alındı
-ui_notification_cant_hire|(kayıt için yeterli R.P. alınmadı)
-ui_joining_cost_weekly_wage|Alım: %d Res.Pts. -- Bakım: %d Res.Pts.
-ui_weekly_wage|Haftalık ücret: %d Res.P.
-ui_price|Deger: %d Res.P.
-ui_cant_reload_this_weapon_on_horseback|Bu Silah Binek Üzerindeyken Yeniden Doldurulamaz.
-ui_delivered_number_damage_to_horse|Binege %d hasar verildi
-ui_horse_charged_for_number_damage|Atla Saldırarak Hasar Verildi %d damage.
-ui_horse_received_number_damage|Binek %d hasar aldı
-ui_horse_fell_dead|At öldü...
-ui_horse_crippled|At yaralandı...
-ui_you_got_value|%s kazandı
-ui_has_deserted_the_party|partiden çıktı.
-ui_have_deserted_the_party|Partiden ayrıldı
-ui_loading_textures|Dokular Yükleniyor (Sabırlı olunuz)...
-ui_order_hold_fire_toggle|Ateş etme/Ateş et (Geçiş)
-ui_order_dismount_toggle|Attan İn/Ata Bin (Geçiş)
-ui_mount_horses_e_|%s, Atlı
-ui_hold_fire_e_|%s, Ateş etme!
-ui_fire_at_will_e_|%s, Ateş serbest!
-ui_recent_messages|Son Msjlar
-ui_value_denars|%d Araştırma Puanları
-ui_cannot_be_used_on_horseback|Binek üzerinde kullanılamaz
-ui_upgrade_to_value|Upgrade to %s
-ui_notification_cant_upgrade|(Birlik veriyorken yükseltme yapılamaz)
-ui_lance_control|Kargı Kontrolü:
-ui_manual_easy|Manuel (Kolay)
-ui_manual_hard|Manuel (Zor)
-ui_campaign_ai|Kampanya AI (Kullanılmıyor):
-ui_crouch|çömelmek
+ui_at_learning_limit  = "(Bu Irk için öğrenme limitinde)"
+ui_not_enough_skill_points_to_learn  = "(Öğrenmek için yeterli beceri puanınız yok)"
+ui_not_enough_attributetype_to_learn_this_skill  = "(Bu beceriyi öğrenmek için yeterli %s yok)"
+ui_explanation_agility  = "Çeviklik: Her puan beş silah puanı verir ve silah hızını% 0,5 artırır. Aşağıdaki beceriler Çevikliğin 1 / 3'ünün ötesinde geliştirilemez: Silah Ustası, Kalkan, Atletizm, Binicilik, Atlı Okçuluk, Yağma."
+ui_retreated_battle  = "%s savaş alanından kaçtı."
+ui_riding_skill_not_adequate_to_mount  = "(Binicilik seviyesi düşük)"
+ui_camp  = "Kamp"
+ui_tutorial_inventory  = "The Last Days'de, Ekipman almak için Kaynak puanına ihtiyacınız vardır."
+ui_you_dont_have_value  = "%s  sahip değilsin"
+ui_merchant_cant_afford_value  = "%s: Bize ihtiyacımız olandan daha fazlasını veriyorsun! Belki birazını kendine saklamalısın ( %s için eşya veriyorsun, yalnızca %s kullanabiliriz )"
+ui_merchant_pay_whatever  = "Hayır, bunlara ihtiyacım yok, sende kalsın."
+ui_horse  = "Binek"
+ui_reclaim_your_sold_goods  = "Bu malı satın almadan önce, satmış olduğunuz malları geri alın!"
+ui_return_your_bought_goods  = "Bu malı satmadan önce satın almış olduğunuz malları iade edin!"
+ui_return_price  = "Geri alınırsa +%d Res.P."
+ui_sell_price  = "Geri verilirse +%d Res.P."
+ui_reclaim_price  = "Geri almak için: -%d Res.P."
+ui_buying_price  = "Hak iddaa etmek için: -%d Res.P."
+ui_notification_riding_skill_not_enough  = "Binebilmek için yeterli binicilik becerin yok."
+ui_notification_payment_value  = "%s ödenecek"
+ui_notification_payment_receive_value  = "%s alınacak"
+ui_weekly_cost_value  = "Haftalık ücret: %s"
+ui_sell  = "Ver"
+ui_hire  = "Alındı"
+ui_notification_cant_hire  = "(kayıt için yeterli R.P. alınmadı)"
+ui_joining_cost_weekly_wage  = "Alım: %d Res.Pts. -- Bakım: %d Res.Pts."
+ui_weekly_wage  = "Haftalık ücret: %d Res.P."
+ui_price  = "Değer: %d Res.P."
+ui_cant_reload_this_weapon_on_horseback  = "Bu Silah Binek Üzerindeyken Yeniden Doldurulamaz."
+ui_delivered_number_damage_to_horse  = "Bineğe %d hasar verildi"
+ui_horse_charged_for_number_damage  = "Atla Saldırarak Hasar Verildi %d damage."
+ui_horse_received_number_damage  = "Binek %d hasar aldı"
+ui_horse_fell_dead  = "At öldü..."
+ui_horse_crippled  = "At yaralandı..."
+ui_you_got_value  = "%s kazandı"
+ui_has_deserted_the_party  = "partiden çıktı."
+ui_have_deserted_the_party  = "Partiden ayrıldı"
+ui_loading_textures  = "Dokular Yükleniyor (Sabırlı olunuz)..."
+ui_order_hold_fire_toggle  = "Ateş etme/Ateş et (Geçiş)"
+ui_order_dismount_toggle  = "Attan İn/Ata Bin (Geçiş)"
+ui_mount_horses_e_  = "%s, Atlı"
+ui_hold_fire_e_  = "%s, Ateş etme!"
+ui_fire_at_will_e_  = "%s, Ateş serbest!"
+ui_recent_messages  = "Son Msjlar"
+ui_value_denars  = "%d Araştırma Puanları"
+ui_cannot_be_used_on_horseback  = "Binek üzerinde kullanılamaz"
+ui_upgrade_to_value  = "Upgrade to %s"
+ui_notification_cant_upgrade  = "(Birlik veriyorken yükseltme yapılamaz)"
+ui_lance_control  = "Kargı Kontrolü:"
+ui_manual_easy  = "Manuel (Kolay)"
+ui_manual_hard  = "Manuel (Zor)"
+ui_campaign_ai  = "Kampanya AI (Kullanılmıyor):"
+ui_crouch  = "çömelmek"
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-ui_are_you_sure_you_want_to_import_the_character|Karakteri içe aktarmak istediginizden emin misiniz?
-ui_explanation_strength|Güç: Her puan Cana +1 ekler. Bu yetenekler Gücün 1/3'ünü geçemez; Demirbeden, Güçlü Vurma, Güçlü Fırlatma, Güçlü Çekme.
-ui_explanation_intelligence|Zeka: Her zeka puanı anında bir ekstra beceri puanı verir ve bazı durumlarda XP kazancını biraz artırır. Aşagıdaki beceriler Zekanın 1 / 3'ünün ötesinde geliştirilemez: Talimci, İz Bulma, Taktik, Yön bulma, Tespit etme, Envanter Yönetimi, Yara Bakımı, Cerrahlık ve İlk Yardım.
-ui_explanation_charisma|Karizma: Her puan, parti büyüklügü sınırınızı +1 artırır. Aşagıdaki beceriler Karizma'nın 1 / 3'ünden sonra geliştirilemez: Esir Yönetimi, Yaban Ustalıgı, Liderlik, Ticaret.
-ui_delivered_number_damage|%d hasar verildi.
-ui_mission_losses_killed|Öldürüldü
-ui_party_losses|%s :%d yaralandı --- %d öldürüldü %d
-ui_following|Takip ediliyor
-ui_accompanying|Eşlik ediyor
-ui_dumping_value_items|%d eşyalar kalıcı olarak kaybolacak, emin misiniz?
-ui_dumping_value_item|Bir eşya kalıcı olarak kaybolacak, emin misiniz ?
-ui_notification_requirements_not_met|Bu silah için gerekli beceri yada yetenege sahip degilsin
-ui_disband|terhis et
-ui_you_hit_a_friendly_troop|Dost bir birime zarar verdin!
-ui_you_are_not_carrying_any_arrows|Yanında hiç ok kalmadı.
-ui_delivered_number_damage_to_horse|Binege %d hasar verildi
-ui_received_number_damage|%d Hasar alındı.
-ui_you_have_improved_your_proficiency_in_value_to_number|%s hünerini %d seviyesine yükselttin.
-ui_your_proficiency_in_value_has_improved_by_number_to_number|%s hünerin +%d artarak %d oldu.
-ui_value_killed_by_value|%s,%starafından öldürüldü. 
-ui_value_knocked_unconscious_by_value|%s, %s tarafından bayıltıldı.
-ui_you_got_number_experience|%d Tecrübe puanı kazandın.
-ui_you_have_advanced_to_level_number|Seviye %d yükseldin
-ui_you_got_value|%s kazandı
-ui_quest_succeeded_value|Görev tamamlandı: %s.
-ui_number_of_companions_exceeds_leadership_limit|Yoldaş sayısı, liderlik limitini aşıyor.
-ui_number_of_prisoners_exceeds_prisoner_management_limit|Tutsak sayısı, tutsak yönetimi limitini aşıyor.
-ui_shared_number_experience_within_party|%ddeneyim, takım arasında paylaşıldı.
-ui_your_relations_with_value_has_improved_from_number_to_number|%sile ilişkileriniz, %dden%dye yükseldi.
-ui_your_relations_with_value_has_deteriorated_from_number_to_number|%s ile ilişkileriniz, %dden%dye geriledi.
-ui_you_lost_value|%s Kaybettin.
-ui_change_graphics_settings_explanation|Yaptıgınız bazı degişiklikler, yeni bir alana girdiginizde geçerli olacak.
-ui_game_log_window|Oyun log penceresi
-ui_blunt_short|b
-ui_tracks|İzler
-ui_order_button_hold_fire|Ateş etmeyin
-ui_order_button_fire_at_will|Ateş serbest
-ui_order_button_fire_orders|menzilli emirleri
-ui_need_to_learn_prisoner_management|Esir alabilmek için Esir Yönetimi yetenegini ögrenmen gerek.
-ui_game_log_window|Oyun log penceresi
-ui_unbalanced|Dengesiz
-ui_can_crush_through_blocks|Blokların içinden geçebilir
+ui_are_you_sure_you_want_to_import_the_character  = "Karakteri içe aktarmak istediğinizden emin misiniz?"
+ui_explanation_strength  = "Güç: Her puan Cana +1 ekler. Bu yetenekler Gücün 1/3'ünü geçemez; Demirbeden, Güçlü Vurma, Güçlü Fırlatma, Güçlü Çekme."
+ui_explanation_intelligence  = "Zeka: Her zeka puanı anında bir ekstra beceri puanı verir ve bazı durumlarda XP kazancını biraz artırır. Aşağıdaki beceriler Zekanın 1 / 3'ünün ötesinde geliştirilemez: Talimci, İz Bulma, Taktik, Yön bulma, Tespit etme, Envanter Yönetimi, Yara Bakımı, Cerrahlık ve İlk Yardım."
+ui_explanation_charisma  = "Karizma: Her puan, parti büyüklüğü sınırınızı +1 artırır. Aşağıdaki beceriler Karizma'nın 1 / 3'ünden sonra geliştirilemez: Esir Yönetimi, Yaban Ustalığı, Liderlik, Ticaret."
+ui_delivered_number_damage  = "%d hasar verildi."
+ui_mission_losses_killed  = "Öldürüldü"
+ui_party_losses  = "%s :%d yaralandı --- %d öldürüldü %d"
+ui_following  = "Takip ediliyor"
+ui_accompanying  = "Eşlik ediyor"
+ui_dumping_value_items  = "%d eşyalar kalıcı olarak kaybolacak, emin misiniz?"
+ui_dumping_value_item  = "Bir eşya kalıcı olarak kaybolacak, emin misiniz ?"
+ui_notification_requirements_not_met  = "Bu silah için gerekli beceri yada yeteneğe sahip değilsin"
+ui_disband  = "terhis et"
+ui_you_hit_a_friendly_troop  = "Dost bir birime zarar verdin!"
+ui_you_are_not_carrying_any_arrows  = "Yanında hiç ok kalmadı."
+ui_delivered_number_damage_to_horse  = "Bineğe %d hasar verildi"
+ui_received_number_damage  = "%d Hasar alındı."
+ui_you_have_improved_your_proficiency_in_value_to_number  = "%s hünerini %d seviyesine yükselttin."
+ui_your_proficiency_in_value_has_improved_by_number_to_number  = "%s hünerin +%d artarak %d oldu."
+ui_value_killed_by_value  = "%s,%starafından öldürüldü. "
+ui_value_knocked_unconscious_by_value  = "%s, %s tarafından bayıltıldı."
+ui_you_got_number_experience  = "%d Tecrübe puanı kazandın."
+ui_you_have_advanced_to_level_number  = "Seviye %d yükseldin"
+ui_you_got_value  = "%s kazandı"
+ui_quest_succeeded_value  = "Görev tamamlandı: %s."
+ui_number_of_companions_exceeds_leadership_limit  = "Yoldaş sayısı, liderlik limitini aşıyor."
+ui_number_of_prisoners_exceeds_prisoner_management_limit  = "Tutsak sayısı, tutsak yönetimi limitini aşıyor."
+ui_shared_number_experience_within_party  = "%ddeneyim, takım arasında paylaşıldı."
+ui_your_relations_with_value_has_improved_from_number_to_number  = "%sile ilişkileriniz, %dden%dye yükseldi."
+ui_your_relations_with_value_has_deteriorated_from_number_to_number  = "%s ile ilişkileriniz, %dden%dye geriledi."
+ui_you_lost_value  = "%s Kaybettin."
+ui_change_graphics_settings_explanation  = "Yaptığınız bazı değişiklikler, yeni bir alana girdiğinizde geçerli olacak."
+ui_game_log_window  = "Oyun log penceresi"
+ui_blunt_short  = "b"
+ui_tracks  = "İzler"
+ui_order_button_hold_fire  = "Ateş etmeyin"
+ui_order_button_fire_at_will  = "Ateş serbest"
+ui_order_button_fire_orders  = "menzilli emirleri"
+ui_need_to_learn_prisoner_management  = "Esir alabilmek için Esir Yönetimi yeteneğini öğrenmen gerek."
+ui_game_log_window  = "Oyun log penceresi"
+ui_unbalanced  = "Dengesiz"
+ui_can_crush_through_blocks  = "Blokların içinden geçebilir"
 
-ui_order_1|Seçim Sırası 1
-ui_order_2|Seçim Sırası 2
-ui_order_3|Seçim Sırası 3
-ui_order_4|Seçim Sırası 4
-ui_order_5|Seçim Sırası 5
-ui_order_6|Seçim Sırası 6
-ui_order_button_hold_this_position|bu pozisyonu koruyun
-ui_order_button_follow_me|beni takip et
-ui_order_button_charge|Hücum
-ui_order_button_stand_ground|yerinizde kalın
-ui_order_button_retreat|Geri çekilin
-ui_order_button_advance|On adım ilerle
-ui_order_button_fall_back|On adım geri gel
-ui_order_button_spread_out|Dagılın
-ui_order_button_stand_closer|Yakın durun
-ui_order_button_mount_horses|Binek
-ui_order_button_dismount|Binekten in
-ui_order_button_hold_fire|Ateş etmeyin
-ui_order_button_fire_at_will|Ateş serbest
-ui_order_button_use_blunt_weapons|Sadece bayıltıcı silah kullan
-ui_order_button_use_any_weapon|Silah serbest
-ui_order_button_movement_orders|Hareket emirleri
-ui_order_button_formation_orders|Düzen emirleri
-ui_order_button_fire_orders|menzilli emirleri
-ui_follow_me_e_|%s, beni takip et!
-ui_charge_e_|%s, Hücum!
-ui_stand_ground_e_|%s, yerinizde kalın!
-ui_retreat_e_|%s, geri çekilin!
-ui_mount_horses_e_|%s, Atlı
-ui_dismount_e_|%s, Attan inin!
-ui_advance_e_|%s, on adım ileri!
-ui_fall_back_e_|%s, on adım geri!
-ui_stand_closer_e_|%s, yakın durun
-ui_spread_out_e_|%s, dagılın.
-ui_use_blunt_weapons_e_|%s, yalnızca künt silahları kullan.
-ui_use_any_weapon_e_|%s, silah serbest.
-ui_hold_fire_e_|%s, Ateş etme!
-ui_fire_at_will_e_|%s, Ateş serbest!
-ui_hold_this_position_e_|%s, bu pozisyonu koruyun
-ui_infantry|Piyade
-ui_archers|Okçular
-ui_cavalry|Süvari
-ui_companions|Yoldaşlar
-ui_everyone_hear_me|Herkes beni dinlesin.
-ui_everyone|Herkes
-ui_everyone_around_me|Yakındaki askerler
-ui_str_hear_me|%s,Duy beni!
+ui_order_1  = "Seçim Sırası 1"
+ui_order_2  = "Seçim Sırası 2"
+ui_order_3  = "Seçim Sırası 3"
+ui_order_4  = "Seçim Sırası 4"
+ui_order_5  = "Seçim Sırası 5"
+ui_order_6  = "Seçim Sırası 6"
+ui_order_button_hold_this_position  = "bu pozisyonu koruyun"
+ui_order_button_follow_me  = "beni takip et"
+ui_order_button_charge  = "Hücum"
+ui_order_button_stand_ground  = "yerinizde kalın"
+ui_order_button_retreat  = "Geri çekilin"
+ui_order_button_advance  = "On adım ilerle"
+ui_order_button_fall_back  = "On adım geri gel"
+ui_order_button_spread_out  = "Dağılın"
+ui_order_button_stand_closer  = "Yakın durun"
+ui_order_button_mount_horses  = "Binek"
+ui_order_button_dismount  = "Binekten in"
+ui_order_button_hold_fire  = "Ateş etmeyin"
+ui_order_button_fire_at_will  = "Ateş serbest"
+ui_order_button_use_blunt_weapons  = "Sadece bayıltıcı silah kullan"
+ui_order_button_use_any_weapon  = "Silah serbest"
+ui_order_button_movement_orders  = "Hareket emirleri"
+ui_order_button_formation_orders  = "Düzen emirleri"
+ui_order_button_fire_orders  = "menzilli emirleri"
+ui_follow_me_e_  = "%s, beni takip et!"
+ui_charge_e_  = "%s, Hücum!"
+ui_stand_ground_e_  = "%s, yerinizde kalın!"
+ui_retreat_e_  = "%s, geri çekilin!"
+ui_mount_horses_e_  = "%s, Atlı"
+ui_dismount_e_  = "%s, Attan inin!"
+ui_advance_e_  = "%s, on adım ileri!"
+ui_fall_back_e_  = "%s, on adım geri!"
+ui_stand_closer_e_  = "%s, yakın durun"
+ui_spread_out_e_  = "%s, dağılın."
+ui_use_blunt_weapons_e_  = "%s, yalnızca künt silahları kullan."
+ui_use_any_weapon_e_  = "%s, silah serbest."
+ui_hold_fire_e_  = "%s, Ateş etme!"
+ui_fire_at_will_e_  = "%s, Ateş serbest!"
+ui_hold_this_position_e_  = "%s, bu pozisyonu koruyun"
+ui_infantry  = "Piyade"
+ui_archers  = "Okçular"
+ui_cavalry  = "Süvari"
+ui_companions  = "Yoldaşlar"
+ui_everyone_hear_me  = "Herkes beni dinlesin."
+ui_everyone  = "Herkes"
+ui_everyone_around_me  = "Yakındaki askerler"
+ui_str_hear_me  = "%s,Duy beni!"
 
-ui_return|Geri dön
-ui_factions|Taraflar
-ui_troop_upgrades|Birlik geliştirmeleri
-ui_hdr_mode|HDR Modu:
-ui_autoexpore|Otomatik Pozlama (önerilen: Eger Gerçekçi Görüntü Modu açıksa açılmalıdır.)
-ui_saving_policy_realistic|Kaydetmeden çıkmak yok! (Tavsiye edilmez.)
-ui_saving_policy_nonrealistic|Kaydetmeden çık. (Önerilen, birden fazla kaydetmeyi saklar.)
+ui_return  = "Geri dön"
+ui_factions  = "Taraflar"
+ui_troop_upgrades  = "Birlik geliştirmeleri"
+ui_hdr_mode  = "HDR Modu:"
+ui_autoexpore  = "Otomatik Pozlama (önerilen: Eğer Gerçekçi Görüntü Modu açıksa açılmalıdır.)"
+ui_saving_policy_realistic  = "Kaydetmeden çıkmak yok! (Tavsiye edilmez.)"
+ui_saving_policy_nonrealistic  = "Kaydetmeden çık. (Önerilen, birden fazla kaydetmeyi saklar.)"

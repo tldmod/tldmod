@@ -1,449 +1,451 @@
-menu_start_game_1|^^^^^^^^^^Za čo budeš bojovať?
-mno_start_good|ÚSVIT Nového Veku
-mno_start_evil|SÚMRAK Ľudskej Rasy
-mno_faction_intros|Poučte sa o rôznych frakciách Stredozeme
-mno_go_bback|Späť
-menu_start_phase_2|^^^^^              Stredozem. Temnota na Východe narastá, ^             prichádzajú odtiaľ dlho schované temné bytosti. ^             Slobodné národy sa pripravujú na vojnu. Vojnu, ktorú nezažili už celý vek. ^                   Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju úlohu. ^^             Akú, to sa ešte ukáže...
-mno_go_forth|Vydaj sa na svoju zvolenú cestu...
-mno_change_tld_options|Zmeniť nastavenia TLD.
-menu_start_game_3|^^^^^^^^Zvoľ si scénar
-mno_custom_battle_scenario_1|Bitka, Gondorské frakcie proti Haradu
-mno_custom_battle_scenario_12|Vyber si frakcie pre bitku
-mno_custom_battle_scenario_3|Bitka, Elfovia proti Čiernym Númenorejcom
-mno_custom_battle_scenario_4|Obrana Helmovho žľabu, Rohan proti Isengardu
-mno_custom_battle_scenario_5|Bitka, Severské frakcie proti Rhûnu
-mno_custom_battle_scenario_6|Dobývanie, Ohyzdi proti Trpaslíkom
-mno_custom_battle_scenario_7|Prepadnutie, Ohyzdi proti Lesným elfom
-mno_custom_battle_scenario_8|Posledný vzdor Durinovho ľudu
-mno_custom_battle_scenario_88|Lapanie Ohyzdej skupiny prieskumníkov
-mno_custom_battle_scenario_11|Testovacie bitky (pre vyvážené nastavenie štátu!)
-mno_custom_battle_scenario_10|Testovacia bitka scény
-mno_troll_battle_scenario|Bitka pre testovanie zlobrov
-mno_warg_battle_scenario|Bitka pre testovanie vrokov
-mno_build_your_own_scene|** Vybuduj svoju vlastnú scénu pre TLD **
-mno_go_back|Späť
-menu_tutorial|^^ Vitaj v Návode Boja pre Mount & Blade. Naučíš sa tu základy boja a dostaneš tiež stručný prehľad o rozkazoch, ktoré môžeš dávať svojím jednotkám na bojovom poli.
-mno_tutorial_1|Cvičenie #1: Základný pohyb a výber zbrane. {s1}
-mno_tutorial_2|Cvičenie #2: Boj zo štítom. {s2}
-mno_tutorial_3|Cvičenie #3: Boj bez štítu. {s3}
-mno_tutorial_3b_door|Ďalšia úroveň
-mno_tutorial_4|Cvičenie #4: Jazdenie na koni alebo na vrokovi. {s4}
-mno_tutorial_5|Cvičenie #5: Rozkazovanie skupine vojakov. {s5}
-mno_go_back_dot|Späť
-mno_action_view_troop_trees|Prezrieť si strom jednotiek
-mno_view_upkeep_costs|Zobraziť žold družiny.
-mno_view_character_report|Zobraziť prehľad postavy.
-mno_view_party_size_report|Zobraziť prehľad veľkosti družiny.
-mno_view_morale_report|Zobraziť prehľad morálky družiny.
-mno_view_character_report_02|Kontrola stavu NPC.
-mno_view_faction_strengths_report|Zobraziť prehľad síly frakcií
-mno_view_traits_report|Zobraziť vlastnosti
-mno_resume_travelling|Pokračovať v ceste
-mno_custom_battle_go|Začať.
-mno_leave_custom_battle_2|Zrušiť.
-menu_custom_battle_end|^^^^^^Boj skončil. {s1} tvoja strana zabila {reg5} nepriateľov a stratila {reg6} jednotiek v boji.^Ty si v boji zabil {reg7} protivníkov.
-mno_replay|Hrať tento boj znovu.
-mno_continue_dot|Pokračovať.
-menu_custom_battle_durin_end|^^^^^^Napriek statočnému boju si zlyhal.^^Spolu so svojimi bratmi a sestrami v meči ste zabili {reg5} nepriateľov.^Ty osobne si pobil {reg7} nepriateľov.
-mno_replay_cbd|Hrať tento boj znovu.
-mno_continue_dot_cbd|Pokračovať.
-mno_dot_go_back|.   Späť
-menu_start_good|^^^^^^^^^^Zvol si svojú rasu:
-mno_start_ma|ČLOVEK
-mno_start_el|ELF
-mno_start_dw|TRPASLÍK
-menu_start_evil|^^^^^^^^^^Komu slúžiš?
-mno_start_eye|Sauronovi z Mordoru, Pánovi Prsteňov
-mno_start_hand|Sarumanovi z Isengardu, Bielej Ruke
-menu_start_eye|^^^^^^^^^^Tvoj pán je Oko bez viečka^Zvoľ si Rasu
-mno_start_or|OHYZD, slúžiaci Oku bez viečka
-mno_start_ur|URUK, nové plemeno Ohyzdov
-mno_start_em|ČLOVEK, zotročený Sauronom
-menu_start_hand|^^^^^^^^^Tvoj pán je Biela Ruka^Zvol si Rasu
-mno_start_whor|OHYZD, slúžiaci Bielej Ruke
-mno_start_isur|jeden z URUK-HAI, vyšľachtených v Isengarde
-mno_start_duma|ČLOVEK z Vrchoviny, zo Západných plání
-menu_start_good_man|^^^^^^^^^^Zvol si svoj ľud:
-mno_start_go|GONDOR, Kráľovstvo Bielej Veže
-mno_start_ro|ROHAN, páni koní
-mno_start_du|DÚNADANIA, prastará dynastia Ľudí
-mno_start_be|GRIZLOVCI, Medvedí ľud
-mno_start_da|Severské Kráľovstvo DOLU
-menu_start_good_elf|^^^^^^^^^^v ktorom Lese žiješ, Starší?
-mno_start_ri|ROKLINKA, panstvo Lorda Elronda
-mno_start_lo|LOTHLORIEN, ríša Pani Galadriel
-mno_start_mi|TEMNOHVOZD, ríša Lesných elfov
-menu_start_good_dwarf|^^^^^^^^^^Zvol si svoj pôvod:
-mno_start_er|obyvateľ EREBORU
-mno_start_ih|baník zo ŽELEZNÝCH HÔR
-menu_start_gondor|^^^^^^^^^^Z ktorej časti Gondoru pochádzaš?
-mno_start_mt|MINAS TIRITH, hlavné mesto
-mno_start_ls|LOSSARNACH, kniežactvo sekerníkov
-mno_start_la|LAMEDOM, kniežactvo horských kmeňov
-mno_start_pg|PINNATH GELIN, kniežactvo Zelených Vrchov
-mno_start_do|DOL AMROTH, kniežactvo Labutích Rytierov
-mno_start_pe|PELARGIR, pobrežné kniežactvo
-mno_start_bl|Čiernodol, kniežactvo lučišníkov
-menu_start_eye_man|^^^^^^^^^^Zvol si svoj národ:
-mno_start_hr|HARADRIM, púštny ľud z Juhu
-mno_start_bn|Čierny NÚMENOREJCI, vzbúrenci zo Západu
-mno_start_um|UMBAR, piráti Južnách Morí
-mno_start_rh|RHUN, barbary z Východu
-mno_start_kh|KHAND, divoký ľud z Juhovýchodu
-menu_start_eye_uruk|^^^^^^^^^^Kde sa potĺkaš?
-mno_start_arm_uruk|v armádach shromáždených v MORDORE
-mno_start_cav_uruk|v jaskyniach DOL GULDURU
-menu_start_eye_orc|^^^^^^^^^^Kde sa potĺkaš?
-mno_start_arm|v armádach shromáždených v MORDORE
-mno_start_cav|v jaskyniach DOL GULDURU
-menu_start_hand_orc|^^^^^^^^^^Kde sa potĺkaš?
-mno_start_armis|v armádach shromáždených v ISENGARDE
-mno_start_minmo|v temných Baniach MÓRIE
-mno_start_cliff|po skalách štítu hory GUNDABAD
-menu_start_gondor_mt|^^^^^^^^^^Zvol si svoj pôvod
-mno_start_1_com|Obyčajný človek
-mno_start_2_hib|Šľachtic
-menu_start_haradrim|^^^^^^^Si Haraďan,^ človek z púští Juhu.^Zvol si svoj pôvod
-mno_start_1_des|Púštny človek
-mno_start_2_far|Divoch z Ďalekého Haradu
-menu_start_numenorean|^^^^^^^Si Čierny Númenorejec,^verný Temnote a Morgothovy.^Zvoľ si miesto odkiaľ slúžiš Oku
-mno_start_1_bn|Pod vedením Sauronových úst, v MORRANONE
-mno_start_2_bn|V pevnosti Nekromanta, DOL GULDÚRE
-menu_choose_gender|^^^^^^^^^^Tvoje pohlavie?
-mno_start_male|Muž
-mno_start_female|Žena
-mno_proc|Pokračuj
-menu_start_as_one|^^^^^^^^^^Aký si typ vojaka?
-mno_start_default|Bude z teba {s23} (Pôvodný)
-mno_start_up1|Bude z teba {s21} (Ľahká)
-mno_start_up2|Stať sa {s22} (Ľahké)
-mno_continue|Pokračuj
-menu_character_report|^^^^^Morálka družiny: {reg8}^Maximálna veľkosť družiny: {reg7}^{s5}
-menu_camp|^^^^Si v {s1}.{s2}^^Čo chceš robiť?
-mno_camp_scene|Prejsť sa po okolí
-mno_camp_troop|Prezrieť si {reg10? jednotky:}{reg12? and:}{reg11? väzňov:}.
-mno_camp_action|Použiť predmet.
-mno_camp_wait_here|Utáboriť sa tu na nejaký čas.
-mno_camp_options|Zmeniť nastavenia TLD.
-mno_Dev_Menu|Menu Tvorcov
-menu_dev_menu|Toto sú Nástroje Vývojarov, v ktorých si môžeš nastaviť kódy/predvoľby, s ktorými budeš hrať.^^ To sa však odzrkadlí na vytváraní WIP událostí, spúšťačov hracieho mechanizmu, zmenami v kampani ktoré môžu spôsobiť narušenie hry.^^ Používajte len na vlastné riziko! ^^ Taktiež keď budete hlásiť bugy a chyby v hre, oznámte nám tiež, že ste behom hrania použili Menu Tvorcov.
-mno_Cheat_enable|Povoliť cheaty/modderske nastavenia.
-menu_game_options|^^^^^^^^Klikni na možnosť pre prepnutie:
-mno_game_options_war_level_start|Vojna sa začína na úrovni: {s1}
-mno_game_options_restrict_items|Obmedziť hráčovo vybavenie: {s7}
-mno_game_options_formations|Bojové formácie a umelá inteligencia: {s7}
-mno_game_options_siege_ai|Pokročilé obliehanie AI: {s7}
-mno_game_options_town_menu|NPC v mestách vždy dostupné v menu: {s7}
-mno_game_options_cutscenes|Minifilmy: {s7}
-mno_game_options_injuries|Zranenia spoločníkov: {s7}.
-mno_game_options_death|Velitelia všetkých frakcií a spoločníci môžu trvale zomrieť: {s7}
-mno_game_options_death2|Hráč (TY!) môže trvale zomrieť: {s7}
-mno_game_options_morale|Systém morálky v bitkách: {s7}
-mno_game_options_animal_ambushes|Prepadnutia divokými zvieratami: {s7}
-mno_game_options_horse_ko|Správy i zranení padlého jazdca: {s7}
-mno_game_options_bright_nights|Jasnejšie noci: {s7}.
-mno_game_options_camera_pref|Preferovaný kamerový režim: {s7}.
-mno_game_options_tweaks|Úpravy hratelnosti...
-mno_game_options_back|Späť do táborového menu.
-mno_game_options_start_back|Späť.
-menu_camp_tweaks|^^^^^^^^Vyber si možnosť ktorú by si chcel upraviť
-mno_tweak_options_compat|Úpravy kompatibility...
-mno_tweak_options_strat|Úpravy stratégie...
-mno_tweak_options_battlefield_ai|Zlepšenie boja umelej inteligencie...
-mno_tweak_options_back|Späť do menu nastavení.
-menu_camp_compat_tweaks|^^^^^^^^Klikni na možnosť pre zmenu (podrž shift pre zníženie):^(toto slúži pre zlepšenie kompatibility na počítači a nie sú to cheaty)
-mno_game_options_compat_party|Maximálny počet družín na mape: {s1}
-mno_game_options_compat_back|Späť do menu úprav.
-menu_camp_strat_tweaks|^^^^^^^^Klikni na možnosť pre prepnutie:^(pozor: toto sú cheaty!)
-mno_strat_tweaks_siege_reqs|Požadovaná sila pre obliehanie: {s7}
-mno_strat_tweaks_siege_relax_rate|Rychlosť znižovania požiadavkov pre obliehanie: {reg1}
-mno_strat_tweaks_regen_rate|Rychlosť obnovy síly frakcie: {s7}
-mno_strat_tweaks_siege_regen_limit|Sila frakcie sa začne obnovovať pomalšie na: {reg1}
-mno_strat_tweaks_influence_gain_rate|Hodnota získaného Vplyvu: {s7}
-mno_strat_tweaks_rank_gain_rate|Hodnota získanej Hodnosti: {s7}
-mno_strat_tweaks_back|Späť do menu úprav.
-menu_camp_action|^^^^^^^^^ Ktorý predmet?
-mno_camp_drink_water|Vypi Entskú Vodu!
-mno_camp_action_4|Späť.
-menu_assasins_attack_player_won|Vrahovia z {s2}, poslaný {s3}, boli úspešne porazený.
-menu_assasins_attack_player_retreat|Unikol si a si stále nažive!
-menu_fangorn_danger|^^^^^^Divné, a strašidelné zvuky sa ozývajú lesom okolo.^Hovoria to s tebou stromy? Vo vzduchu visí ťažký pocit hnevu a bolesti.^Tvoje rozkazy?
-mno_be_quiet_elf|Majte rešpekt k stromom a ich nenávisti. Potichu pokračujte.
-mno_be_quiet|Skloňte zbrane a buďte ticho! Musíme sa odtiaľ dostať preč!
-mno_be_bold|Pokračujte! Nebojím sa rastlín a starých mýtov!
-mno_fight_back|Poďme to zistiť! Preskúmajte oblasť! Spaľte dva či tri stromy!
-menu_fangorn_search_fails|^^^^^^Prehľadáte tmavý, hustý les, ale nenajdete nič.^Napriek tomu sa vám zdá, že vás niečo sleduje. Niečo strašidelné.
-menu_fangorn_battle_debrief_won|^^^Veľké víťazstvo!^^^Tak o tomto hovorili všetky tie legendy Farngornu... 
-menu_fangorn_killed_player_only|^^^^^^Prechádzaš sa hustým, temným lesom.^Odrazu ťa niečo trafilo! Možno ti na hlavu spadol ťažký konár.^Ostaneš v bezvedomí len pár minut. Zisťuješ, že si ťažko zranený, ale môžeš pokračovať.
-mno_ow_get_out|Ouch! Musíme zmiznúť z tohto prekliatého miesta!
-menu_fangorn_killed_troop_and_player|^^^^^^Predieraš sa hustým, tmavým lesom.^^Odrazu ťa niečo trafilo! Možno ti na hlavu spadol ťažký konár.^^Keď sa po pár minutách preberieš, zistíš, že nie všetci tvojí vojaci mali také šťastie.
-menu_fangorn_killed_troop_only|^^^^^^^^Prechádzaš hustým, tmavým lesom. Tvoji vojaci sú vystrašený.^^Odrazu za sebou začuješ rev vojakov v zadnom voji. Pribehneš späť, ale nájdeš len pár vojakov ležiacich v kaluži krvi.^^ Po ďalších neostali ani stopy.
-mno_get_out|Opusťme toto prekliate miesto!
-menu_can_capture_troll|Ten porazený divoký zlobor ešte stále dychčí^^Jeho temné oči sa do teba zabodávajú bolesťou a hnevom.^Aj teraz, bezmocne ležiaci v kaluži krvi, vyzerá veľmi nebezpečne...
-mno_killit|Doraz to a uisti sa, že je to mrtvé. 
-mno_cageit1|Zavri to do klietky a ťahaj so sebou.
-mno_cageit2|Zavri to do klietky k druhému zlobrovi.
-mno_cheat_disabable|Vypnúť cheaty/modderské nastavenia.
-menu_drank_ent_water_human|^^^Piješ vodu. Je čistá a osviežujúca. Má príjemnú vôňu, podobnú ako pižmo.^ Cítiš sa svieži.^^Odrazu ťa ovládne divný, neprirodzený pocit. Niečo ti hovorí, že by si nemal už nikdy v živote piť Farngornskú vodu.
-menu_drank_ent_water_orc|^^^Piješ vodu. Prchavá, chutná ako obyčajná voda.^ Odrazu si v neznesiteľnej bolesti zovrieš hrdlo.^Je jedovatá!^Dusíš sa, vykašliavaš čiernu krv, takmer si sa udusil.^^Bolí to, oh, to bolí.
-mno_i_shall_surv|Já... musím... prežiť!
-menu_end_game|^^^^^Už si sa rozhodol, je na čase ukončiť život cestovateľa a konečne sa usadiť. Predáš svoje zbrane a brnenie, zhromaždíš svoj majetok, a odcválaš do západu slnka...
-mno_end_game_bye|Šťastnú cestu!
-menu_cattle_herd|Narazíš na nejakých ľudí.
-mno_cattle_drive_away|Prikázať im aby ťa následovali.
-mno_cattle_stop|Prikázať im zastaviť sa.
-mno_leave|Odísť.
-menu_simple_encounter|^^^^^{s2}^ Máš k dispozícií {reg22} jednotiek v boji proti {reg11}.^^Bitka sa odohráva v {s3}{s4}.^^Tvoje rozkazy ?
-mno_encounter_attack|{reg21?Zaútočiť na nich:Pripraviť sa čeliť im}.
-mno_encounter_order_attack|Prikázať svojím vojakom aby {reg21?zaútočili:čelili im} bez teba.
-mno_control_allies_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
-mno_encounter_hide|Schovať sa pred nepriateľom
-mno_special_whip|Vrhnúť sa vpred naproti nim lámajúc {s4}.
-mno_encounter_leave|Odísť.
-mno_encounter_retreat|Nechať za sebou niekoľko vojakov, aby kryli tvoj ústup.
-mno_player_control_allies_simple|Prevziať nad nimi velenie a zaútočiť na nepriateľa
-mno_player_control_allies_back|Návrat...
-mno_hide_close|Pokračuj
-menu_encounter_retreat_confirm|^^^^^Ako najskúsenejší taktik v družine, ({reg2}), {reg3?navrhuješ:{s3} navrhuje} plán, podľa ktorého sa tebe a tvojím mužom podarí zachrániť si život, ale budeš musieť obetovať {reg4} vojakov aby zastavili nepriateľovo prenasledovanie.
-mno_leave_behind|Obetovanie týchto mužov zachráni zbytok.
-mno_dont_leave_behind|Nie. Nikoho obetovať nebudeme.
-menu_encounter_retreat|^^^^^Prikázal si {reg4} vojakom aby zdržali nepriateľov zatiaľ čo ty so zbytkom družiny ustúpiš.
-menu_order_attack_begin|^^^^^^Tvoje jednotky sa pripravujú na napadnutie nepriateľa.
-mno_order_attack_begin|Prikázať zahájiť útok.
-mno_call_back|Zavolať ich späť.
-menu_order_attack_2|^{s4}^Tvoje straty: {s8}^^ Nepriateľské straty: {s9}
-mno_order_attack_continue|Prikázať vojakom aby pokračovali v útoku.
-mno_order_retreat|Zavolať vojakov späť.
-menu_kingdom_army_quest_report_to_army|{s8} ti posiela správu, že si želá aby si sa zúčastnil jeho nového vojenského ťaženia. Potrebuješ so sebou priviesť aspoň {reg13} vojakov do armády, a ak ich nemáš dostatok, dostal si pokyny nejakých získať za každú cenu.
-mno_reject|Poslať odkaz, že si príliš zaneprázdnený.
-mno_send_word|Poslať odkaz, že sa k nemu čo najskôr pripojíš.
-menu_kingdom_army_quest_messenger|{s8} ti posiela správu, že si želá sa s tebou porozprávať o povinnostiach, ktoré potrebuje splniť. Žiada ťa, aby si ho čo najskôr navštívil.
-menu_kingdom_army_quest_join_siege_order|{s8} ti posiela rozkaz aby si sa pridal k obliehaniu {s9} v rámci prípravy úplného dobytia. Musíš mať k dispozícií {s9} vojakov za každú cenu.
-menu_kingdom_army_follow_failed|Neposlúchol si rozkazy a zlyhal v následovaní {s8}. Posiela ti správu v ktorej dúfa, že si pre to mal závažné dôvody, ale varuje ťa, že jeho trpezlivosť nie je neobmedzená.
-menu_battle_debrief|{s11}^Tvoje stráty:{s8}{s10}^^Nepriateľské stráty:{s9}
-mno_inspect_troll|Prehľadať skoleného zlobra
-menu_pre_join|^^^^^Narazil si na bitku medzi {s2} a {s1}. Rozhodneš sa...
-mno_pre_join_help_attackers|Zapojiť sa a pomôcť {s2}.
-mno_pre_join_help_defenders|Hnať sa na pomoc {s1}.
-mno_pre_join_help_refugees|Hnať sa na pomoc {s1}.
-mno_pre_join_leave|Nezapojiť sa.
-menu_join_battle|^^^Pomáhaš {s2} proti {s1}.^ Máš k dispozícií {reg22} vojakov proti {reg11} nepriateľom.^^Bitka sa odohráva v {s3}{s4}.
-mno_join_attack|Zaútočiť na nepriateľov.
-mno_join_order_attack|Prikázať svojím jednotkám zaútočiť spolu so spojencami, zatiaľ čo sa ty budeš držať vzadu.
-mno_control_allies_join_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
-mno_join_leave|Odísť.
-mno_player_control_allies_join_menu|Prevziať nad nimi velenie a zaútočiť na nepriateľa
-menu_join_order_attack|{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}
-mno_enter|Vstúpiť.
-menu_battlefields|^^^^^^^^^Vybrať si bojové pole...
-mno_enter_f1|Pole 1
-mno_enter_f2|Pole 2
-mno_enter_f3|Pole 3
-mno_enter_f4|Pole 4
-mno_enter_f5|Pole 5
-menu_join_siege_outside|^^^^^^{s1} je obliehané {s2}.
-mno_approach_besiegers|Vstúpiť do obliehacieho tábora.
-mno_pass_through_siege|Prejsť skrz línie obliehačov a vojsť do {s1}.
-menu_cut_siege_without_fight|Dobyvatelia ťa nechali prejsť bránami bez odporu.
-menu_besiegers_camp_with_allies|{s1} zostáva v obliehaní. Zástavy {s2} vlajú nad táborom dobyvateľov, ktorý vítajú teba a tvoju družinu. 
-mno_talk_to_siege_commander|Požiadať o stretnutie s veliteľom.
-mno_join_siege_with_allies|Pridať sa k ďalšiemu útoku.
-mno_join_siege_stay_back|Prikázať tvojím vojakom, aby sa pridali k ďalšiemu útoku bez teba.
-menu_moria_must_escape|^^Zdá sa, že kniha pojednáva o poslednom pokuse trpaslíkov znovuosídliť Moriu. O pokuse, ktorý zrejme skončil strašnou smrťou všetkých zúčastnených. Čítajúc knihu narazíš na slova 'skutočné striebro'! Behom študovania stránok ti postupne dochádza, že popisujú trpasličie skrýše niekde v nižších poschodiach. Hah! Nebolo by úžasné nájsť dlho stratený trpasličí mithril!? ^Dychtivo následuješ popísaný smer, skrz úzke kľukaté tunely a ďalej... ^...^Po niekoľkých hodinách bezvýsledného hľadania uznávaš, že si sa stratil hlboko v Morii, a potrebuješ nájsť cestu von.
-mno_moria_exit_scene|Najdi cestu von!
-menu_castle_outside|Si vonku {s2}.{s11} {s3} {s4}
-mno_moria_enter|Vráť sa do hlavnej siene Morie skrz tajný vstup.
-mno_moria_enter_door|Vstúpiť do Morie.
-mno_cheat_steal_book_door|Získať knihu
-mno_castle_start_siege|Obliehať {reg6?mesto:hrad}.
-mno_castle_leave|Odísť.
-menu_castle_besiege|Obliehaš {s1}. {s2} {s3}
-mno_siege_request_meeting|Zažiadaj o stretnutie s veliteľom hradu.
-mno_wait_24_hours|Počkať do zajtra.
-mno_castle_lead_attack|Veď svojich mužov do útoku.
-mno_attack_stay_back|Prikázať svojim mužom zaútočiť, zatiaľ čo ty sa útoku nezúčastníš.
-mno_build_ladders|Pripraviť rebríky k útoku na hradby.
-mno_lift_siege|Zrušiť obliehanie.
-menu_siege_attack_meets_sally|Obránci previedli protiútok. 
-menu_construct_ladders|Ako najlepší inžinier v skupine ({reg2}), {reg3?usudzuješ:{s3} usudzuje} že potrvá {reg4} hodiny na postavenie dosť rebríkov pre útok. 
-mno_build_ladders_cont|Urobiť to.
-menu_castle_attack_walls_simulate|{s4}^^Tvoje straty:{s8}^^Nepriateľské straty: {s9}
-menu_castle_attack_walls_with_allies_simulate|{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}
-menu_castle_taken_by_friends|Nie je tu nič k videniu.
-menu_castle_taken|{s3} podľahlo tvojím jednotkám. Teraz máš plnú kontrolu nad {reg2?mestom:hradom}. {reg1? Vyzerá to, že ťa nič nezastaví pred tým, aby si si ho zabral pre seba...:}  
-menu_castle_taken_2|Tvoje jednotky dobyli {s3}, teraz máš nad hradom plnú kontrolu. Je čas poslať správu {s9} o tvojom víťazstve. {s5}
-mno_castle_taken_no_claim|Nepožadovať odmenu.
-menu_siege_started_defender|{s1} zahajuje útok na hradby {s2}. Máš k dispozícií {reg22} jednotiek proti {reg11} nepriateľom. Rozhodneš sa...
-mno_siege_defender_join_battle|Zúčastniť sa boja.
-mno_siege_defender_troops_join_battle|Prikázať tvojej družine aby sa zúčastnila boja bez teba.
-menu_siege_join_defense|{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}
-menu_village_hunt_down_fugitive_defeated|^^^^^Silný úder ťa zrazí k zemi, zatočí sa ti hlava a zatmie pre očami. Čas ubieha. Keď sa konečne prebudíš, si celý krvavý a otlčený, ale našťastie nie je žiadne z tvojich zranení smrteľné.
-menu_town_bandits_succeeded|^^^^^Presekávaš sa škratmi ako kosa pšeničným poľom! Onedlho si jediný, kto stojí, zatiaľ čo tvoji protivníci ležia na zemi v bezvedomí, mŕtvy či umierajúci. Miestne obyvateľstvo by sa určite rado dozvedelo, že si ich zbavil tejto hrozby. 
-menu_town_brawl_lost|^^^^^^Úder ťa uvrhol do bezvedomia. Ľudia, s ktorými si bojoval, u teba rýchlo hľadajú cennosti, než sa budú venovať ich každodenným záležitostiam.
-menu_town_brawl_won|^^^^^Porazil si všetkých protivníkov a stráže poslané aby potlačili rozruch. Rýchlo ich oberieš o cennosti a zmizneš, dokiaľ sa rozruch neukľudní.^Možnože ti nabudúce preukážu väčší rešpekt a radšej ťa nechajú na pokoji.
-menu_close|Nič.
-menu_town|Dorazil si do {s60}.{s12}{s13}
-mno_town_menu_0|Ísť na nejaké miesto.
-mno_town_menu_0_door|Dvere do nejakej lokality.
-mno_town_approach|Prísť bližšie k {s1}...
-mno_town_castle|Ísť do {s1}.
-mno_town_castle_door|Brána do hradu.
-mno_town_center|Ísť na hlavné námestie...
-mno_town_center_door|Brána na námesie..
-mno_aw_chamber_door|Otvoriť dvere.
-mno_trade_with_arms_merchant|Navštíviť {s40}.
-mno_trade_with_horse_merchant|Navštíviť {s41}.
-mno_town_prison_door|Dvere do väzenia.
-mno_dungeon_enter|Hľadaj stratené kopije vnútri hôr.
-mno_dungeon_enter_door|Otvoriť dvere.
-mno_dwarven_warehouse|Navštíviť trpasličie skladisko
-mno_dwarven_warehouse_door|Vstúpiť do trpasličieho skladiska
-mno_talk_to_castle_commander|Ísť do {s61} kasární.
-mno_speak_with_elder|Prehovoriť s {s6}.
-mno_isengard_underground|Ísť do podzemných jaskýň.
-mno_isengard_underground_door|Ísť do podzemných jaskýň
-mno_tirith_toplevel|Vyšplhať na horné poschodie.
-mno_erebor_gates|Navštívte Veľké Brány.
-mno_town_leave|Odísť...
-mno_town_leave_door|Opustiť oblasť
-menu_player_initiated_siege_result|Zaútočil si na mesto pod zástavou {s2}.
-menu_disembark|Praješ si vystúpiť?
-mno_disembark_yes|Áno.
-mno_disembark_no|Nie.
-menu_ship_reembark|Praješ si nastúpiť?
-mno_reembark_yes|Áno.
-mno_reembark_no|Nie.
-menu_center_reports|Meno mesta: {s1}^príjmy z prenájmu: {reg1} denárov^príjmy z cla: {reg2} denárov^Zásoba jedla: na {reg3} dni
-menu_sneak_into_town_suceeded|Maskovaný odevom chudobného pútnika si oklamal stráže a vnikol si do mesta.
-menu_sneak_into_town_caught|Keď si sa pokúsil o vkĺznutie, jeden strážnik ťa spoznal a spustil poplach. Musíš tiecť skrz brány pred tým, než ťa mestské stráže dobehnú.
-mno_sneak_caught_fight|Skúsiť si prebojovať cestu von!
-mno_sneak_caught_surrender|Vzdať sa.
-menu_sneak_into_town_caught_dispersed_guards|Zbavíš sa stráží a zamaskuješ svoje stopy pred tým, než utečieš. Ľahko sa zbavíš svojich prenasledovateľov v bludisku uličiek.
-menu_sneak_into_town_caught_ran_away|Unikáš bránami a rýchlo sa vraciaš do bezpečia mimo mesto.
-menu_tld_player_defeated|^^^^^Odrazu ťa mučí nesmierna bolesť na temene hlavy! \\ Trasieš sa, zatiaľ čo svet okolo teba černie a stráca sa...^Je toto tvoj koniec?
-menu_recover_after_death_fangorn|Prebudíš sa. Okolo teba je stále les. Každá kosť bolí. Ale si nejakým zázrakom nažive.^^Bola to porážka, ale aspoň si bol schopný vidieť čo sa stalo. ^Teraz už vieš čo sa deje v tomto prekliatom lese,^a ty si prežil a môžeš to všetkým prezradiť. ^^Ale bude ti vôbec niekto veriť?
-menu_recover_after_death_moria|^^^^^Nadobúdaš vedomie. Ležíš na mäkkej zemi, svieži vzduch ti jemne veje do tváre vlasy. Si vonku!^Ohyzdi ťa museli považovať za mŕtveho, a tak ťa hodili do nejakej tmavej diery.^ Na povrch ťa zrejme vyniesol prúd podzemnej vody.
-mno_whatever|Vstávaj!
-menu_recover_after_death_default|^^^^^Nadobudneš vedomie. Ležíš na mieste, na ktoré si spadol. Nepriatelia ťa museli považovať za mŕtveho a nechať ťa tu. Zdá sa, že tvoje zranenia neboli smrteľné, a aj keď sa cítiš strašne, stále si schopný chodiť. Zdvihneš sa a skúsiš sa porozhliadnuť po ostatných preživších z tvojej družiny.
-menu_recover_after_death_town|^^^^Nadobudneš vedomie a ocitáš sa na mestskom predmestí. Si nažive! Nikdo nie je nablízku a tak využívaš šance dostať sa z mesta von. Zdá sa, že žiadne z tvojich zranení nebolo smrteľné, a aj keď sa cítiš hrozne, stále si schopný chodiť.
-menu_recover_after_death_town_alone|Nadobudneš vedomie a ocitáš sa na mestskom predmestí. Si nažive! Nikdo nie je nablízku a tak využívaš šance dostať sa z mesta von. Tvoji spoločníci ťa našli. Zdá sa, že žiadne z tvojich zranení nebolo smrteľné, a aj keď sa cítiš strašně, stále si schopný chodiť.
-menu_notification_center_under_siege|{s1} je obliehané {s2} z {s3}!
-menu_notification_one_side_left|^^^^^Vojna o Prsteň skončila!{s1} porazil všetkých svojich nepriateľov a zvíťazil!
-menu_notification_total_defeat|^^^^^Vojna o Prsteň sa pre teba končí!^^{s1} bol zničený nepriateľmi a ty zostávaš sám a porazený.
-menu_notification_your_faction_collapsed|^^^^^{s11}, tvoja domovina, bol porazený!^Tvoji spojenci aj naďalej bojujú vo Vojne. Spolu s ostatnými, kdo zostali z {s11}, môžeš stále pomôcť svojej strane zvíťaziť.
-menu_notification_faction_defeated|^^^^^{s1} Porazený!^{s1} zanikol, zničený armádami {s13}!
-menu_ruins|^^^^Prichádzaš k {s1}. Kedysi silná pevnosť bola vyplienená do základov. Stále rozpoznávaš stopy opevnení a po okolí sú rozhádzané hrdzavé zbrane.
-menu_legendary_place|^^^^Veril si povestiam a našiel si {s1}. Teraz môžeš toto miesto preskúmať a presvedčiť sa, či boli povesti pravdou.
-mno_explore|Preskúmať toto miesto.
-menu_ring_hunter_lair|^^^^Následoval si stopy Lovcov Prsteňa skrz Temnohvozd a dorazil si k {s1}. Vidíš ich, ako sa pripravujú na odchod s truhlicou.
-mno_attack_lair|Zaútočiť na nich teraz.
-mno_leave_bandit_lair|Zatiaľ ich nechať.
-menu_gondor_reinforcement_event|^^^^^Majáky Gondoru vzbĺkli, Minas TIrith volá o pomoc!^^Lordi z panstiev na juhu vypochodujú na sever, aby ubránili Biele Mesto pred blížiacou sa temnotou.
-mno_gondor_reinforcement_event_close|Zavrieť
-menu_gondor_beacons|Pozrieš sa hore na {s1}, jeden z výstražných majákov Gondoru, ktoré hlásali ohňom poplach v severnom i južnom Gondore. 
-mno_gondor_beacons_close|Odísť...
-menu_player_added_to_war_council|^^^^^Posol, ktorý dorazil, ti oznámil, že ťa ako {s24} {s2} požiadal, aby si sa stal súčasťou jeho Vojenskej Rady. Od teraz môžeš navrhovať stratégie a taktiky, ktoré môžu ovplyvniť priebeh vojny.
-mno_player_added_to_war_council_close|Zavrieť
-menu_player_added_to_siege_reports|^^^^^Dorazil k tebe posol a oznámil ti, že ako {s24} budeš dostávať správy vždy, keď {s2} bude obliehať nejaké mesto alebo ak bude nejaké mesto {s2}u obliehané.
-mno_player_added_to_siege_reports_close|Zavrieť
-menu_player_added_to_allow_follow|^^^^^Dorazil posol a povedal ti, že teraz, ako {s24}, budeš môcť rozkázať {s2}, aby ťa nasledovali, maximálne {reg55} nasledovníkom.
-mno_player_added_to_allow_follow_close|Zavrieť
-menu_center_besieged_event|^^^^^Posol ti doniesol správu, že {s1} je obliehané {s2}om z {s3}u.
-mno_center_besieged_event_close|Zavrieť
-menu_guardian_party_spawned|^^^^^Prieskumníci hlásia, že {s6} zhromáždil veľkú armádu neďaleko {s7} v poslednej nádeji ubrániť hlavné mesto.
-mno_intro_next|Pokračuj
-mno_start_defend_caravan|Brániť karavanu!
-mno_start_raid_caravan|Vyrabovať karavanu!
-mno_start_ambush_orcs|Prepadnúť ohyzdov!
-mno_start_kill_scouts|Zastaviť zvedov ohlasujúcich tvoj príchod.
-mno_go_your_way|Nechať to tak.
-mno_defend_villagers|Brániť dedinčanov!
-mno_raid_villagers|Vyrabovať dedinu!
-mno_go_away|Nateraz sa stiahnuť a preskupiť.
-menu_scout_camp_quest|Neďaleko zahliadneš prieskumnický tábor. Dáš povel mužom, aby sa pripravili k útoku.
-mno_attack_scout_camp|Zaútočiť na prieskumnícky tábor!
-menu_sea_battle_quest|Narazil si na nepriateľskú flotilu. Lode sa priblížia a námorníci zhodia dosky...
-mno_sb_defend_the_town|Na palubu! Zničte ich flotilu!
-mno_sb_attack_the_town|Snažia sa nás preraziť! Chráňte flotilu!
-menu_camp_field_ai|^^^^^Klikni na voľbu, aby si ju prepol.^^^Vypnutie volieb zlepší výkon (FPS)
-mno_lord_field_ai|Vládcovia majú zlepšené bojiskové AI: {s7}
-mno_horse_archer_field_ai|Lukostrelci na koňoch majú zlepšené bojiskové AI: {s7}
-mno_vs_orcs_field_ai|Lukostrelci mieria lepšie proti ohyzdom (nemieria im nad hlavy): {s7}
-mno_battlefield_animals|Zvierací spoločníci, ktorí nie sú vroci / Konskí spoločníci sa objavujú v boji: {s7}
-mno_slow_when_wounded|Agenti sa stanú Pomalými ak sú Zranení: {s7}
-mno_battle_encounter_effects|Výnimočný účinok frakcie na bojové pole (napr. búrky, hmla): {s7}
-menu_hungry_orc|nič
-menu_leaving_elf|nič
-mno_defend_refugees|Pozor na nájazdníkov...
-mno_attack_refugees|Zaútočiť na utečencov...
-mno_leave_refugees|Na teraz ich nechať na pokoji...
-mno_evil_war_tut_continue|Pokračuj
-menu_guardian_party_quest|{s8} ti posiela správu, že celý Isengard je na nohách a dokončil prípravy pre svoj posledný odpor. Želá si, aby s i sa k nemu pripojil v tejto poslednej bitke proti vojskám Isengardu. Musíš so sebou priviesť najmenej {ref13} vojakov a ak toľkých so sebou práve nemáš, nalieha na teba, aby si si ich čo najrýchlejšie zohnal a pripojil sa k nemu.
-mno_guardian_party_reject|Poslať správu, že sa k nemu nemôžeš pripojiť.
-mno_guardian_party_send_word|Poslať odkaz, že sa k nemu čo najskôr pripojíš.
-menu_alternate_training_fight|Budeš bojovať proti {reg5} protivníkom. Si pripravený? 
-mno_training_continue|Započať s tréningom...
-menu_alternate_training_conclusion|{s5}
-mno_alternate_training_retry|Skúsiť znovu...
-mno_alternate_training_finish|Opustiť zápasisko...
-menu_custom_battle_choose_faction1|^^^^^^^^^^Zvol si svoju stranu a výhody:
-mno_good_equal|Frakcia dobra
-mno_bad_equal|Frakcia zla
-mno_replay_prev|Opakovať predošlé nastavenia
-menu_custom_battle_choose_faction2|^^^^^^^^^^Vybrať frakciu dobra
-mno_cb_gondor|Gondor
-mno_cb_gondor1|Rohan
-mno_cb_gondor2|Lothlorien
-mno_cb_gondor3|Roklinka
-mno_cb_gondor4|Temnohvozd
-mno_cb_gondor5|Trpaslíci
-mno_cb_gondor6|Dálovia
-mno_cb_gondor7|Grizlovci
-menu_custom_battle_choose_faction3|^^^^^^^^^^Vybrať frakciu zla
-mno_cb_mordor|Mordor
-mno_cb_mordor1|Isengard
-mno_cb_mordor2|Vrchovina
-mno_cb_mordor3|Haraďan
-mno_cb_mordor4|Variagovia z Khandu
-mno_cb_mordor5|Mória
-mno_cb_mordor6|Gundabad
-mno_cb_mordor7|Rhun
-mno_cb_mordor8|Korzáry
-mno_rescue_mission|Prekĺznuť do skrýše černokňažníka pod závojom noci.
-mno_next_rescue_scene_door|Pokračovať vpred!
-mno_pick_troops1|Vybrať si spoločníkov pre misiu, {reg0} vybraných
-menu_pick_troops|Koho by si si vybral na tajnú misiu? Už si si vybral {reg0} spoločníkov. Môžeš si so sebou zobrať až 10 jednotiek.
-mno_go_forward|Ukončiť výber spoločníkov a pokračovať.
-menu_burial_mound|Dorazil sa na pohrebnú mohylu {s1}a z {s2}u.   Pokorený v boji nepriateľmi z {s28}u. Je navŕšená zo zbraní jeho padlích sokov.
-mno_pay_respects|Pokľaknúť a vzdať rešpekt.
-mno_swear_oath|Zložiť prísahu pomsty!
-mno_despoil|Znesvätiť toto miesto.
-mno_leave_mound|Opustiť mohylu.
-menu_burial_mound_respects|Pokľakneš a vzdávaš svoj rešpekt {s1}, potichu šepkajúc modlitbu pre skorú cestu do posmrtného života. Neostáva tu už nič iné čo robiť.
-menu_burial_mound_oath|Hlasno skladáš prísahu pomsty za smrť {s4}. Budeš vytrvalo hľadať armády {s3} a ničiť ich. Tvoje slová sú nesené vetrom do veľkej diaľky... kdo môže povedať, že neboli počuté za morom?
-menu_funeral_pyre_oath|Hlasno skladáš prísahu pomsty za smrť {s4}. Budeš vytrvalo hľadať armády {s3} a ničiť ich. Tvoje slová sú nesené vetrom do veľkej diaľky... kdo môže povedať, že neboli počuté za morom?
-mno_leave_pyre_oath|Opustiť pohrebnú vatru.
-menu_burial_mound_despoil|Demoluješ monument {s1} vlastnými rukami a znesväcuješ kliatbami samotné kamene, zosmiešňuješ žalm a vyvádzaš nevýslovné činy. Tvoji následovníci radšej ustúpia zo strachu pred mrtvým, a kvôli tvojej nesmiernej zlobe si opäť získavaš ich rešpekt. 
-menu_funeral_pyre|Dorazil si na spálenisko pohrebnej hranice {s3}a z {s2}u.   Skolený v boji nepriateľmi z {s28}u. Na tomto mieste boli obradne pochované jeho ostatky osobnou strážou. Neostalo tu už nič, čo by mohlo mať nejakú cenu.
-mno_leave_pyre|Opustiť pohrebnú vatru.
-menu_town_ruins|Keď dorazíš, vidíš že {s1} je {s2}
-mno_ruin_menu_0|Preskúmať miesto.
-mno_ruin_leave|Odísť...
-menu_premutiny|nič
-menu_death|Bol si zabitý. Vojna pokračuje, ale ty už naďalej nie si jej súčasťou.
-menu_animal_ambush|Ty a tvoji spoločníci ste sa oddelili od zvyšku družiny, keď odrazu...
-menu_animal_ambush_success|{s2} pred tebou {reg0?padol:padajú} ako pšenica pred kosou! Onedlho ležia všetci tvojí protivníci na podlahe, zranený či mrtvý. {s3}
-menu_animal_ambush_fail|Zvieratá ťa kušu a drápu po tebe {reg0?,: a tvoj spoločník{reg2?s,:,}} ale našťastie sa ti podarilo zahnať ich. Dúfaš, že nezaútočia znovu.
-menu_build_your_scene|Tu si môžeš vybudovať svoje vlastné bojové pole, použitím jedného z voľných slotov, ktoré sú k dispozícií nižšie a v hracom Edit móde (budeš musieť najprv prepnúť Edit mód ON na úvodnej obrazovke M&B v možnosti Nastavenia). Potom môžeš zaslať scény, ktoré si vybudoval (podľa mena, sco súbory z TLD/SceneObj priečinku) týmu vývojárov z TLD, a keď je tvoja scéna dobrá, môže sa objaviť v ďalšom vydaní ako náhodná bojová scéna!^^ Skús špecifikovať v ktorom regióne na mape sveta chceš, aby sa tvoja scéna objavovala.^ Niekoľko rád: vyhni sa hlbokej vode, vysokým horám a iným neprejazdným miestam, pokiaľ nie si skúsený programátor scén a vieš, ako zakázať jednotkám umelej inteligencie, aby šli tam kde ich nechceš, a aby si vytvoril trasy pre umelú inteligenciu v iných miestach.^ (Vstupy #0-1 sú pre útočníkov, #4 pre obrancov, nerob nič s #5-8
-mno_scene1|Pole Veľké (súbor scn custom 1.sco)
-mno_scene2|Pole Stredné (súbor scn custom 2.sco)
-mno_scene3|Pole Malé (súbor scn custom 3.sco)
-mno_scene4|Step Veľká (súbor scn custom 4.sco)
-mno_scene5|Step Stredná (súbor scn custom 5.sco)
-mno_scene6|Mála pláň (súbor scn custom 6.sco)
-mno_scene7|Veľký les (súbor scn custom 7.sco)
-mno_scene8|Stredný les (súbor scn custom 8.sco)
-mno_scene9|Malý les (súbor scn custom 9.sco)
-mno_back_3dot|Späť...
-mno_back|Späť
-mno_next|Pokračovať...
+menu_start_game_1  = "^^^^^^^^^^Za čo budeš bojovať?"
+mno_start_good  = "ÚSVIT Nového Veku"
+mno_start_evil  = "SÚMRAK Ľudskej Rasy"
+mno_faction_intros  = "Poučte sa o rôznych frakciách Stredozeme"
+mno_go_bback  = "Späť"
+menu_start_phase_2  = "^^^^^              Stredozem. Temnota na Východe narastá, ^             prichádzajú odtiaľ dlho schované temné bytosti. ^             Slobodné národy sa pripravujú na vojnu. Vojnu, ktorú nezažili už celý vek. ^                   Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju úlohu. ^^             Akú, to sa ešte ukáže..."
+mno_go_forth  = "Vydaj sa na svoju zvolenú cestu..."
+mno_change_tld_options  = "Zmeniť nastavenia TLD."
+menu_start_game_3  = "^^^^^^^^Zvoľ si scénar"
+mno_custom_battle_scenario_1  = "Bitka, Gondorské frakcie proti Haradu"
+mno_custom_battle_scenario_12  = "Vyber si frakcie pre bitku"
+mno_custom_battle_scenario_3  = "Bitka, Elfovia proti Čiernym Númenorejcom"
+mno_custom_battle_scenario_4  = "Obrana Helmovho žľabu, Rohan proti Isengardu"
+mno_custom_battle_scenario_5  = "Bitka, Severské frakcie proti Rhûnu"
+mno_custom_battle_scenario_6  = "Dobývanie, Ohyzdi proti Trpaslíkom"
+mno_custom_battle_scenario_7  = "Prepadnutie, Ohyzdi proti Lesným elfom"
+mno_custom_battle_scenario_8  = "Posledný vzdor Durinovho ľudu"
+mno_custom_battle_scenario_88  = "Lapanie Ohyzdej skupiny prieskumníkov"
+mno_custom_battle_scenario_11  = "Testovacie bitky (pre vyvážené nastavenie štátu!)"
+mno_custom_battle_scenario_10  = "Testovacia bitka scény"
+mno_troll_battle_scenario  = "Bitka pre testovanie zlobrov"
+mno_warg_battle_scenario  = "Bitka pre testovanie vrokov"
+mno_build_your_own_scene  = "** Vybuduj svoju vlastnú scénu pre TLD **"
+mno_go_back  = "Späť"
+menu_tutorial  = "^^ Vitaj v Návode Boja pre Mount & Blade. Naučíš sa tu základy boja a dostaneš tiež stručný prehľad o rozkazoch, ktoré môžeš dávať svojím jednotkám na bojovom poli."
+mno_tutorial_1  = "Cvičenie #1: Základný pohyb a výber zbrane. {s1}"
+mno_tutorial_2  = "Cvičenie #2: Boj zo štítom. {s2}"
+mno_tutorial_3  = "Cvičenie #3: Boj bez štítu. {s3}"
+mno_tutorial_3b_door  = "Ďalšia úroveň"
+mno_tutorial_4  = "Cvičenie #4: Jazdenie na koni alebo na vrokovi. {s4}"
+mno_tutorial_5  = "Cvičenie #5: Rozkazovanie skupine vojakov. {s5}"
+mno_go_back_dot  = "Späť"
+mno_action_view_troop_trees  = "Prezrieť si strom jednotiek"
+mno_view_upkeep_costs  = "Zobraziť žold družiny."
+mno_view_character_report  = "Zobraziť prehľad postavy."
+mno_view_party_size_report  = "Zobraziť prehľad veľkosti družiny."
+mno_view_morale_report  = "Zobraziť prehľad morálky družiny."
+mno_view_character_report_02  = "Kontrola stavu NPC."
+mno_view_faction_strengths_report  = "Zobraziť prehľad síly frakcií"
+mno_view_traits_report  = "Zobraziť vlastnosti"
+mno_resume_travelling  = "Pokračovať v ceste"
+mno_custom_battle_go  = "Začať."
+mno_leave_custom_battle_2  = "Zrušiť."
+menu_custom_battle_end  = "^^^^^^Boj skončil. {s1} tvoja strana zabila {reg5} nepriateľov a stratila {reg6} jednotiek v boji.^Ty si v boji zabil {reg7} protivníkov."
+mno_replay  = "Hrať tento boj znovu."
+mno_continue_dot  = "Pokračovať."
+menu_custom_battle_durin_end  = "^^^^^^Napriek statočnému boju si zlyhal.^^Spolu so svojimi bratmi a sestrami v meči ste zabili {reg5} nepriateľov.^Ty osobne si pobil {reg7} nepriateľov."
+mno_replay_cbd  = "Hrať tento boj znovu."
+mno_continue_dot_cbd  = "Pokračovať."
+mno_dot_go_back  = ".   Späť"
+menu_start_good  = "^^^^^^^^^^Zvol si svojú rasu:"
+mno_start_ma  = "ČLOVEK"
+mno_start_el  = "ELF"
+mno_start_dw  = "TRPASLÍK"
+menu_start_evil  = "^^^^^^^^^^Komu slúžiš?"
+mno_start_eye  = "Sauronovi z Mordoru, Pánovi Prsteňov"
+mno_start_hand  = "Sarumanovi z Isengardu, Bielej Ruke"
+menu_start_eye  = "^^^^^^^^^^Tvoj pán je Oko bez viečka^Zvoľ si Rasu"
+mno_start_or  = "OHYZD, slúžiaci Oku bez viečka"
+mno_start_ur  = "URUK, nové plemeno Ohyzdov"
+mno_start_em  = "ČLOVEK, zotročený Sauronom"
+menu_start_hand  = "^^^^^^^^^Tvoj pán je Biela Ruka^Zvol si Rasu"
+mno_start_whor  = "OHYZD, slúžiaci Bielej Ruke"
+mno_start_isur  = "jeden z URUK-HAI, vyšľachtených v Isengarde"
+mno_start_duma  = "ČLOVEK z Vrchoviny, zo Západných plání"
+menu_start_good_man  = "^^^^^^^^^^Zvol si svoj ľud:"
+mno_start_go  = "GONDOR, Kráľovstvo Bielej Veže"
+mno_start_ro  = "ROHAN, páni koní"
+mno_start_du  = "DÚNADANIA, prastará dynastia Ľudí"
+mno_start_be  = "GRIZLOVCI, Medvedí ľud"
+; mno_start_wo  = "WOODMEN, from the eaves of Mirkwood                                                "
+mno_start_da  = "Severské Kráľovstvo DOLU"
+menu_start_good_elf  = "^^^^^^^^^^v ktorom Lese žiješ, Starší?"
+mno_start_ri  = "ROKLINKA, panstvo Lorda Elronda"
+mno_start_lo  = "LOTHLORIEN, ríša Pani Galadriel"
+mno_start_mi  = "TEMNOHVOZD, ríša Lesných elfov"
+menu_start_good_dwarf  = "^^^^^^^^^^Zvol si svoj pôvod:"
+mno_start_er  = "obyvateľ EREBORU"
+mno_start_ih  = "baník zo ŽELEZNÝCH HÔR"
+menu_start_gondor  = "^^^^^^^^^^Z ktorej časti Gondoru pochádzaš?"
+mno_start_mt  = "MINAS TIRITH, hlavné mesto"
+mno_start_ls  = "LOSSARNACH, kniežactvo sekerníkov"
+mno_start_la  = "LAMEDOM, kniežactvo horských kmeňov"
+mno_start_pg  = "PINNATH GELIN, kniežactvo Zelených Vrchov"
+mno_start_do  = "DOL AMROTH, kniežactvo Labutích Rytierov"
+mno_start_pe  = "PELARGIR, pobrežné kniežactvo"
+mno_start_bl  = "Čiernodol, kniežactvo lučišníkov"
+menu_start_eye_man  = "^^^^^^^^^^Zvol si svoj národ:"
+mno_start_hr  = "HARADRIM, púštny ľud z Juhu"
+mno_start_bn  = "Čierny NÚMENOREJCI, vzbúrenci zo Západu"
+mno_start_um  = "UMBAR, piráti Južnách Morí"
+mno_start_rh  = "RHUN, barbary z Východu"
+mno_start_kh  = "KHAND, divoký ľud z Juhovýchodu"
+menu_start_eye_uruk  = "^^^^^^^^^^Kde sa potĺkaš?"
+mno_start_arm_uruk  = "v armádach shromáždených v MORDORE"
+mno_start_cav_uruk  = "v jaskyniach DOL GULDURU"
+menu_start_eye_orc  = "^^^^^^^^^^Kde sa potĺkaš?"
+mno_start_arm  = "v armádach shromáždených v MORDORE"
+mno_start_cav  = "v jaskyniach DOL GULDURU"
+menu_start_hand_orc  = "^^^^^^^^^^Kde sa potĺkaš?"
+mno_start_armis  = "v armádach shromáždených v ISENGARDE"
+mno_start_minmo  = "v temných Baniach MÓRIE"
+mno_start_cliff  = "po skalách štítu hory GUNDABAD"
+menu_start_gondor_mt  = "^^^^^^^^^^Zvol si svoj pôvod"
+mno_start_1_com  = "Obyčajný človek"
+mno_start_2_hib  = "Šľachtic"
+menu_start_haradrim  = "^^^^^^^Si Haraďan,^ človek z púští Juhu.^Zvol si svoj pôvod"
+mno_start_1_des  = "Púštny človek"
+mno_start_2_far  = "Divoch z Ďalekého Haradu"
+menu_start_numenorean  = "^^^^^^^Si Čierny Númenorejec,^verný Temnote a Morgothovy.^Zvoľ si miesto odkiaľ slúžiš Oku"
+mno_start_1_bn  = "Pod vedením Sauronových úst, v MORRANONE"
+mno_start_2_bn  = "V pevnosti Nekromanta, DOL GULDÚRE"
+menu_choose_gender  = "^^^^^^^^^^Tvoje pohlavie?"
+mno_start_male  = "Muž"
+mno_start_female  = "Žena"
+mno_proc  = "Pokračuj"
+menu_start_as_one  = "^^^^^^^^^^Aký si typ vojaka?"
+mno_start_default  = "Bude z teba {s23} (Pôvodný)"
+mno_start_up1  = "Bude z teba {s21} (Ľahká)"
+mno_start_up2  = "Stať sa {s22} (Ľahké)"
+mno_continue  = "Pokračuj"
+menu_character_report  = "^^^^^Morálka družiny: {reg8}^Maximálna veľkosť družiny: {reg7}^{s5}"
+menu_camp  = "^^^^Si v {s1}.{s2}^^Čo chceš robiť?"
+mno_camp_scene  = "Prejsť sa po okolí"
+mno_camp_troop  = "Prezrieť si {reg10? jednotky:}{reg12? and:}{reg11? väzňov:}."
+mno_camp_action  = "Použiť predmet."
+mno_camp_wait_here  = "Utáboriť sa tu na nejaký čas."
+mno_camp_options  = "Zmeniť nastavenia TLD."
+mno_Dev_Menu  = "Menu Tvorcov"
+menu_dev_menu  = "Toto sú Nástroje Vývojarov, v ktorých si môžeš nastaviť kódy/predvoľby, s ktorými budeš hrať.^^ To sa však odzrkadlí na vytváraní WIP událostí, spúšťačov hracieho mechanizmu, zmenami v kampani ktoré môžu spôsobiť narušenie hry.^^ Používajte len na vlastné riziko! ^^ Taktiež keď budete hlásiť bugy a chyby v hre, oznámte nám tiež, že ste behom hrania použili Menu Tvorcov."
+mno_Cheat_enable  = "Povoliť cheaty/modderske nastavenia."
+menu_game_options  = "^^^^^^^^Klikni na možnosť pre prepnutie:"
+mno_game_options_war_level_start  = "Vojna sa začína na úrovni: {s1}"
+mno_game_options_restrict_items  = "Obmedziť hráčovo vybavenie: {s7}"
+mno_game_options_formations  = "Bojové formácie a umelá inteligencia: {s7}"
+mno_game_options_siege_ai  = "Pokročilé obliehanie AI: {s7}"
+mno_game_options_town_menu  = "NPC v mestách vždy dostupné v menu: {s7}"
+mno_game_options_cutscenes  = "Minifilmy: {s7}"
+mno_game_options_injuries  = "Zranenia spoločníkov: {s7}."
+mno_game_options_death  = "Velitelia všetkých frakcií a spoločníci môžu trvale zomrieť: {s7}"
+mno_game_options_death2  = "Hráč (TY!) môže trvale zomrieť: {s7}"
+mno_game_options_morale  = "Systém morálky v bitkách: {s7}"
+mno_game_options_animal_ambushes  = "Prepadnutia divokými zvieratami: {s7}"
+mno_game_options_horse_ko  = "Správy i zranení padlého jazdca: {s7}"
+mno_game_options_bright_nights  = "Jasnejšie noci: {s7}."
+mno_game_options_camera_pref  = "Preferovaný kamerový režim: {s7}."
+mno_game_options_tweaks  = "Úpravy hratelnosti..."
+mno_game_options_back  = "Späť do táborového menu."
+mno_game_options_start_back  = "Späť."
+menu_camp_tweaks  = "^^^^^^^^Vyber si možnosť ktorú by si chcel upraviť"
+mno_tweak_options_compat  = "Úpravy kompatibility..."
+mno_tweak_options_strat  = "Úpravy stratégie..."
+mno_tweak_options_battlefield_ai  = "Zlepšenie boja umelej inteligencie..."
+mno_tweak_options_back  = "Späť do menu nastavení."
+menu_camp_compat_tweaks  = "^^^^^^^^Klikni na možnosť pre zmenu (podrž shift pre zníženie):^(toto slúži pre zlepšenie kompatibility na počítači a nie sú to cheaty)"
+mno_game_options_compat_party  = "Maximálny počet družín na mape: {s1}"
+mno_game_options_compat_back  = "Späť do menu úprav."
+menu_camp_strat_tweaks  = "^^^^^^^^Klikni na možnosť pre prepnutie:^(pozor: toto sú cheaty!)"
+mno_strat_tweaks_siege_reqs  = "Požadovaná sila pre obliehanie: {s7}"
+mno_strat_tweaks_siege_relax_rate  = "Rychlosť znižovania požiadavkov pre obliehanie: {reg1}"
+mno_strat_tweaks_regen_rate  = "Rychlosť obnovy síly frakcie: {s7}"
+mno_strat_tweaks_siege_regen_limit  = "Sila frakcie sa začne obnovovať pomalšie na: {reg1}"
+mno_strat_tweaks_influence_gain_rate  = "Hodnota získaného Vplyvu: {s7}"
+mno_strat_tweaks_rank_gain_rate  = "Hodnota získanej Hodnosti: {s7}"
+mno_strat_tweaks_back  = "Späť do menu úprav."
+menu_camp_action  = "^^^^^^^^^ Ktorý predmet?"
+mno_camp_drink_water  = "Vypi Entskú Vodu!"
+mno_camp_action_4  = "Späť."
+menu_assasins_attack_player_won  = "Vrahovia z {s2}, poslaný {s3}, boli úspešne porazený."
+menu_assasins_attack_player_retreat  = "Unikol si a si stále nažive!"
+menu_fangorn_danger  = "^^^^^^Divné, a strašidelné zvuky sa ozývajú lesom okolo.^Hovoria to s tebou stromy? Vo vzduchu visí ťažký pocit hnevu a bolesti.^Tvoje rozkazy?"
+mno_be_quiet_elf  = "Majte rešpekt k stromom a ich nenávisti. Potichu pokračujte."
+mno_be_quiet  = "Skloňte zbrane a buďte ticho! Musíme sa odtiaľ dostať preč!"
+mno_be_bold  = "Pokračujte! Nebojím sa rastlín a starých mýtov!"
+mno_fight_back  = "Poďme to zistiť! Preskúmajte oblasť! Spaľte dva či tri stromy!"
+menu_fangorn_search_fails  = "^^^^^^Prehľadáte tmavý, hustý les, ale nenajdete nič.^Napriek tomu sa vám zdá, že vás niečo sleduje. Niečo strašidelné."
+menu_fangorn_battle_debrief_won  = "^^^Veľké víťazstvo!^^^Tak o tomto hovorili všetky tie legendy Farngornu... "
+menu_fangorn_killed_player_only  = "^^^^^^Prechádzaš sa hustým, temným lesom.^Odrazu ťa niečo trafilo! Možno ti na hlavu spadol ťažký konár.^Ostaneš v bezvedomí len pár minut. Zisťuješ, že si ťažko zranený, ale môžeš pokračovať."
+mno_ow_get_out  = "Ouch! Musíme zmiznúť z tohto prekliatého miesta!"
+menu_fangorn_killed_troop_and_player  = "^^^^^^Predieraš sa hustým, tmavým lesom.^^Odrazu ťa niečo trafilo! Možno ti na hlavu spadol ťažký konár.^^Keď sa po pár minutách preberieš, zistíš, že nie všetci tvojí vojaci mali také šťastie."
+menu_fangorn_killed_troop_only  = "^^^^^^^^Prechádzaš hustým, tmavým lesom. Tvoji vojaci sú vystrašený.^^Odrazu za sebou začuješ rev vojakov v zadnom voji. Pribehneš späť, ale nájdeš len pár vojakov ležiacich v kaluži krvi.^^ Po ďalších neostali ani stopy."
+mno_get_out  = "Opusťme toto prekliate miesto!"
+menu_can_capture_troll  = "Ten porazený divoký zlobor ešte stále dychčí^^Jeho temné oči sa do teba zabodávajú bolesťou a hnevom.^Aj teraz, bezmocne ležiaci v kaluži krvi, vyzerá veľmi nebezpečne..."
+mno_killit  = "Doraz to a uisti sa, že je to mrtvé. "
+mno_cageit1  = "Zavri to do klietky a ťahaj so sebou."
+mno_cageit2  = "Zavri to do klietky k druhému zlobrovi."
+mno_cheat_disabable  = "Vypnúť cheaty/modderské nastavenia."
+menu_drank_ent_water_human  = "^^^Piješ vodu. Je čistá a osviežujúca. Má príjemnú vôňu, podobnú ako pižmo.^ Cítiš sa svieži.^^Odrazu ťa ovládne divný, neprirodzený pocit. Niečo ti hovorí, že by si nemal už nikdy v živote piť Farngornskú vodu."
+menu_drank_ent_water_orc  = "^^^Piješ vodu. Prchavá, chutná ako obyčajná voda.^ Odrazu si v neznesiteľnej bolesti zovrieš hrdlo.^Je jedovatá!^Dusíš sa, vykašliavaš čiernu krv, takmer si sa udusil.^^Bolí to, oh, to bolí."
+mno_i_shall_surv  = "Já... musím... prežiť!"
+menu_end_game  = "^^^^^Už si sa rozhodol, je na čase ukončiť život cestovateľa a konečne sa usadiť. Predáš svoje zbrane a brnenie, zhromaždíš svoj majetok, a odcválaš do západu slnka..."
+mno_end_game_bye  = "Šťastnú cestu!"
+menu_cattle_herd  = "Narazíš na nejakých ľudí."
+mno_cattle_drive_away  = "Prikázať im aby ťa následovali."
+mno_cattle_stop  = "Prikázať im zastaviť sa."
+mno_leave  = "Odísť."
+menu_simple_encounter  = "^^^^^{s2}^ Máš k dispozícií {reg22} jednotiek v boji proti {reg11}.^^Bitka sa odohráva v {s3}{s4}.^^Tvoje rozkazy ?"
+mno_encounter_attack  = "{reg21?Zaútočiť na nich:Pripraviť sa čeliť im}."
+mno_encounter_order_attack  = "Prikázať svojím vojakom aby {reg21?zaútočili:čelili im} bez teba."
+mno_control_allies_menu  = "Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli."
+mno_encounter_hide  = "Schovať sa pred nepriateľom"
+mno_special_whip  = "Vrhnúť sa vpred naproti nim lámajúc {s4}."
+; mno_encounter_attack_bearform  = "{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            "
+mno_encounter_leave  = "Odísť."
+mno_encounter_retreat  = "Nechať za sebou niekoľko vojakov, aby kryli tvoj ústup."
+mno_player_control_allies_simple  = "Prevziať nad nimi velenie a zaútočiť na nepriateľa"
+mno_player_control_allies_back  = "Návrat..."
+mno_hide_close  = "Pokračuj"
+menu_encounter_retreat_confirm  = "^^^^^Ako najskúsenejší taktik v družine, ({reg2}), {reg3?navrhuješ:{s3} navrhuje} plán, podľa ktorého sa tebe a tvojím mužom podarí zachrániť si život, ale budeš musieť obetovať {reg4} vojakov aby zastavili nepriateľovo prenasledovanie."
+mno_leave_behind  = "Obetovanie týchto mužov zachráni zbytok."
+mno_dont_leave_behind  = "Nie. Nikoho obetovať nebudeme."
+menu_encounter_retreat  = "^^^^^Prikázal si {reg4} vojakom aby zdržali nepriateľov zatiaľ čo ty so zbytkom družiny ustúpiš."
+menu_order_attack_begin  = "^^^^^^Tvoje jednotky sa pripravujú na napadnutie nepriateľa."
+mno_order_attack_begin  = "Prikázať zahájiť útok."
+mno_call_back  = "Zavolať ich späť."
+menu_order_attack_2  = "^{s4}^Tvoje straty: {s8}^^ Nepriateľské straty: {s9}"
+mno_order_attack_continue  = "Prikázať vojakom aby pokračovali v útoku."
+mno_order_retreat  = "Zavolať vojakov späť."
+menu_kingdom_army_quest_report_to_army  = "{s8} ti posiela správu, že si želá aby si sa zúčastnil jeho nového vojenského ťaženia. Potrebuješ so sebou priviesť aspoň {reg13} vojakov do armády, a ak ich nemáš dostatok, dostal si pokyny nejakých získať za každú cenu."
+mno_reject  = "Poslať odkaz, že si príliš zaneprázdnený."
+mno_send_word  = "Poslať odkaz, že sa k nemu čo najskôr pripojíš."
+menu_kingdom_army_quest_messenger  = "{s8} ti posiela správu, že si želá sa s tebou porozprávať o povinnostiach, ktoré potrebuje splniť. Žiada ťa, aby si ho čo najskôr navštívil."
+menu_kingdom_army_quest_join_siege_order  = "{s8} ti posiela rozkaz aby si sa pridal k obliehaniu {s9} v rámci prípravy úplného dobytia. Musíš mať k dispozícií {s9} vojakov za každú cenu."
+menu_kingdom_army_follow_failed  = "Neposlúchol si rozkazy a zlyhal v následovaní {s8}. Posiela ti správu v ktorej dúfa, že si pre to mal závažné dôvody, ale varuje ťa, že jeho trpezlivosť nie je neobmedzená."
+menu_battle_debrief  = "{s11}^Tvoje stráty:{s8}{s10}^^Nepriateľské stráty:{s9}"
+mno_inspect_troll  = "Prehľadať skoleného zlobra"
+menu_pre_join  = "^^^^^Narazil si na bitku medzi {s2} a {s1}. Rozhodneš sa..."
+mno_pre_join_help_attackers  = "Zapojiť sa a pomôcť {s2}."
+mno_pre_join_help_defenders  = "Hnať sa na pomoc {s1}."
+mno_pre_join_help_refugees  = "Hnať sa na pomoc {s1}."
+mno_pre_join_leave  = "Nezapojiť sa."
+menu_join_battle  = "^^^Pomáhaš {s2} proti {s1}.^ Máš k dispozícií {reg22} vojakov proti {reg11} nepriateľom.^^Bitka sa odohráva v {s3}{s4}."
+mno_join_attack  = "Zaútočiť na nepriateľov."
+mno_join_order_attack  = "Prikázať svojím jednotkám zaútočiť spolu so spojencami, zatiaľ čo sa ty budeš držať vzadu."
+mno_control_allies_join_menu  = "Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli."
+mno_join_leave  = "Odísť."
+mno_player_control_allies_join_menu  = "Prevziať nad nimi velenie a zaútočiť na nepriateľa"
+menu_join_order_attack  = "{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}"
+mno_enter  = "Vstúpiť."
+menu_battlefields  = "^^^^^^^^^Vybrať si bojové pole..."
+mno_enter_f1  = "Pole 1"
+mno_enter_f2  = "Pole 2"
+mno_enter_f3  = "Pole 3"
+mno_enter_f4  = "Pole 4"
+mno_enter_f5  = "Pole 5"
+menu_join_siege_outside  = "^^^^^^{s1} je obliehané {s2}."
+mno_approach_besiegers  = "Vstúpiť do obliehacieho tábora."
+mno_pass_through_siege  = "Prejsť skrz línie obliehačov a vojsť do {s1}."
+menu_cut_siege_without_fight  = "Dobyvatelia ťa nechali prejsť bránami bez odporu."
+menu_besiegers_camp_with_allies  = "{s1} zostáva v obliehaní. Zástavy {s2} vlajú nad táborom dobyvateľov, ktorý vítajú teba a tvoju družinu. "
+mno_talk_to_siege_commander  = "Požiadať o stretnutie s veliteľom."
+mno_join_siege_with_allies  = "Pridať sa k ďalšiemu útoku."
+mno_join_siege_stay_back  = "Prikázať tvojím vojakom, aby sa pridali k ďalšiemu útoku bez teba."
+menu_moria_must_escape  = "^^Zdá sa, že kniha pojednáva o poslednom pokuse trpaslíkov znovuosídliť Moriu. O pokuse, ktorý zrejme skončil strašnou smrťou všetkých zúčastnených. Čítajúc knihu narazíš na slova 'skutočné striebro'! Behom študovania stránok ti postupne dochádza, že popisujú trpasličie skrýše niekde v nižších poschodiach. Hah! Nebolo by úžasné nájsť dlho stratený trpasličí mithril!? ^Dychtivo následuješ popísaný smer, skrz úzke kľukaté tunely a ďalej... ^...^Po niekoľkých hodinách bezvýsledného hľadania uznávaš, že si sa stratil hlboko v Morii, a potrebuješ nájsť cestu von."
+mno_moria_exit_scene  = "Najdi cestu von!"
+menu_castle_outside  = "Si vonku {s2}.{s11} {s3} {s4}"
+mno_moria_enter  = "Vráť sa do hlavnej siene Morie skrz tajný vstup."
+mno_moria_enter_door  = "Vstúpiť do Morie."
+mno_cheat_steal_book_door  = "Získať knihu"
+mno_castle_start_siege  = "Obliehať {reg6?mesto:hrad}."
+mno_castle_leave  = "Odísť."
+menu_castle_besiege  = "Obliehaš {s1}. {s2} {s3}"
+mno_siege_request_meeting  = "Zažiadaj o stretnutie s veliteľom hradu."
+mno_wait_24_hours  = "Počkať do zajtra."
+mno_castle_lead_attack  = "Veď svojich mužov do útoku."
+mno_attack_stay_back  = "Prikázať svojim mužom zaútočiť, zatiaľ čo ty sa útoku nezúčastníš."
+mno_build_ladders  = "Pripraviť rebríky k útoku na hradby."
+mno_lift_siege  = "Zrušiť obliehanie."
+menu_siege_attack_meets_sally  = "Obránci previedli protiútok. "
+menu_construct_ladders  = "Ako najlepší inžinier v skupine ({reg2}), {reg3?usudzuješ:{s3} usudzuje} že potrvá {reg4} hodiny na postavenie dosť rebríkov pre útok. "
+mno_build_ladders_cont  = "Urobiť to."
+menu_castle_attack_walls_simulate  = "{s4}^^Tvoje straty:{s8}^^Nepriateľské straty: {s9}"
+menu_castle_attack_walls_with_allies_simulate  = "{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}"
+menu_castle_taken_by_friends  = "Nie je tu nič k videniu."
+menu_castle_taken  = "{s3} podľahlo tvojím jednotkám. Teraz máš plnú kontrolu nad {reg2?mestom:hradom}. {reg1? Vyzerá to, že ťa nič nezastaví pred tým, aby si si ho zabral pre seba...:}  "
+menu_castle_taken_2  = "Tvoje jednotky dobyli {s3}, teraz máš nad hradom plnú kontrolu. Je čas poslať správu {s9} o tvojom víťazstve. {s5}"
+mno_castle_taken_no_claim  = "Nepožadovať odmenu."
+menu_siege_started_defender  = "{s1} zahajuje útok na hradby {s2}. Máš k dispozícií {reg22} jednotiek proti {reg11} nepriateľom. Rozhodneš sa..."
+mno_siege_defender_join_battle  = "Zúčastniť sa boja."
+mno_siege_defender_troops_join_battle  = "Prikázať tvojej družine aby sa zúčastnila boja bez teba."
+menu_siege_join_defense  = "{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}"
+menu_village_hunt_down_fugitive_defeated  = "^^^^^Silný úder ťa zrazí k zemi, zatočí sa ti hlava a zatmie pre očami. Čas ubieha. Keď sa konečne prebudíš, si celý krvavý a otlčený, ale našťastie nie je žiadne z tvojich zranení smrteľné."
+menu_town_bandits_succeeded  = "^^^^^Presekávaš sa škratmi ako kosa pšeničným poľom! Onedlho si jediný, kto stojí, zatiaľ čo tvoji protivníci ležia na zemi v bezvedomí, mŕtvy či umierajúci. Miestne obyvateľstvo by sa určite rado dozvedelo, že si ich zbavil tejto hrozby. "
+menu_town_brawl_lost  = "^^^^^^Úder ťa uvrhol do bezvedomia. Ľudia, s ktorými si bojoval, u teba rýchlo hľadajú cennosti, než sa budú venovať ich každodenným záležitostiam."
+menu_town_brawl_won  = "^^^^^Porazil si všetkých protivníkov a stráže poslané aby potlačili rozruch. Rýchlo ich oberieš o cennosti a zmizneš, dokiaľ sa rozruch neukľudní.^Možnože ti nabudúce preukážu väčší rešpekt a radšej ťa nechajú na pokoji."
+menu_close  = "Nič."
+menu_town  = "Dorazil si do {s60}.{s12}{s13}"
+mno_town_menu_0  = "Ísť na nejaké miesto."
+mno_town_menu_0_door  = "Dvere do nejakej lokality."
+mno_town_approach  = "Prísť bližšie k {s1}..."
+mno_town_castle  = "Ísť do {s1}."
+mno_town_castle_door  = "Brána do hradu."
+mno_town_center  = "Ísť na hlavné námestie..."
+mno_town_center_door  = "Brána na námesie.."
+mno_aw_chamber_door  = "Otvoriť dvere."
+mno_trade_with_arms_merchant  = "Navštíviť {s40}."
+mno_trade_with_horse_merchant  = "Navštíviť {s41}."
+mno_town_prison_door  = "Dvere do väzenia."
+mno_dungeon_enter  = "Hľadaj stratené kopije vnútri hôr."
+mno_dungeon_enter_door  = "Otvoriť dvere."
+mno_dwarven_warehouse  = "Navštíviť trpasličie skladisko"
+mno_dwarven_warehouse_door  = "Vstúpiť do trpasličieho skladiska"
+mno_talk_to_castle_commander  = "Ísť do {s61} kasární."
+mno_speak_with_elder  = "Prehovoriť s {s6}."
+mno_isengard_underground  = "Ísť do podzemných jaskýň."
+mno_isengard_underground_door  = "Ísť do podzemných jaskýň"
+mno_tirith_toplevel  = "Vyšplhať na horné poschodie."
+mno_erebor_gates  = "Navštívte Veľké Brány."
+mno_town_leave  = "Odísť..."
+mno_town_leave_door  = "Opustiť oblasť"
+menu_player_initiated_siege_result  = "Zaútočil si na mesto pod zástavou {s2}."
+menu_disembark  = "Praješ si vystúpiť?"
+mno_disembark_yes  = "Áno."
+mno_disembark_no  = "Nie."
+menu_ship_reembark  = "Praješ si nastúpiť?"
+mno_reembark_yes  = "Áno."
+mno_reembark_no  = "Nie."
+menu_center_reports  = "Meno mesta: {s1}^príjmy z prenájmu: {reg1} denárov^príjmy z cla: {reg2} denárov^Zásoba jedla: na {reg3} dni"
+menu_sneak_into_town_suceeded  = "Maskovaný odevom chudobného pútnika si oklamal stráže a vnikol si do mesta."
+menu_sneak_into_town_caught  = "Keď si sa pokúsil o vkĺznutie, jeden strážnik ťa spoznal a spustil poplach. Musíš tiecť skrz brány pred tým, než ťa mestské stráže dobehnú."
+mno_sneak_caught_fight  = "Skúsiť si prebojovať cestu von!"
+mno_sneak_caught_surrender  = "Vzdať sa."
+menu_sneak_into_town_caught_dispersed_guards  = "Zbavíš sa stráží a zamaskuješ svoje stopy pred tým, než utečieš. Ľahko sa zbavíš svojich prenasledovateľov v bludisku uličiek."
+menu_sneak_into_town_caught_ran_away  = "Unikáš bránami a rýchlo sa vraciaš do bezpečia mimo mesto."
+menu_tld_player_defeated  = "^^^^^Odrazu ťa mučí nesmierna bolesť na temene hlavy! \\ Trasieš sa, zatiaľ čo svet okolo teba černie a stráca sa...^Je toto tvoj koniec?"
+menu_recover_after_death_fangorn  = "Prebudíš sa. Okolo teba je stále les. Každá kosť bolí. Ale si nejakým zázrakom nažive.^^Bola to porážka, ale aspoň si bol schopný vidieť čo sa stalo. ^Teraz už vieš čo sa deje v tomto prekliatom lese,^a ty si prežil a môžeš to všetkým prezradiť. ^^Ale bude ti vôbec niekto veriť?"
+menu_recover_after_death_moria  = "^^^^^Nadobúdaš vedomie. Ležíš na mäkkej zemi, svieži vzduch ti jemne veje do tváre vlasy. Si vonku!^Ohyzdi ťa museli považovať za mŕtveho, a tak ťa hodili do nejakej tmavej diery.^ Na povrch ťa zrejme vyniesol prúd podzemnej vody."
+mno_whatever  = "Vstávaj!"
+menu_recover_after_death_default  = "^^^^^Nadobudneš vedomie. Ležíš na mieste, na ktoré si spadol. Nepriatelia ťa museli považovať za mŕtveho a nechať ťa tu. Zdá sa, že tvoje zranenia neboli smrteľné, a aj keď sa cítiš strašne, stále si schopný chodiť. Zdvihneš sa a skúsiš sa porozhliadnuť po ostatných preživších z tvojej družiny."
+menu_recover_after_death_town  = "^^^^Nadobudneš vedomie a ocitáš sa na mestskom predmestí. Si nažive! Nikdo nie je nablízku a tak využívaš šance dostať sa z mesta von. Zdá sa, že žiadne z tvojich zranení nebolo smrteľné, a aj keď sa cítiš hrozne, stále si schopný chodiť."
+menu_recover_after_death_town_alone  = "Nadobudneš vedomie a ocitáš sa na mestskom predmestí. Si nažive! Nikdo nie je nablízku a tak využívaš šance dostať sa z mesta von. Tvoji spoločníci ťa našli. Zdá sa, že žiadne z tvojich zranení nebolo smrteľné, a aj keď sa cítiš strašně, stále si schopný chodiť."
+menu_notification_center_under_siege  = "{s1} je obliehané {s2} z {s3}!"
+menu_notification_one_side_left  = "^^^^^Vojna o Prsteň skončila!{s1} porazil všetkých svojich nepriateľov a zvíťazil!"
+menu_notification_total_defeat  = "^^^^^Vojna o Prsteň sa pre teba končí!^^{s1} bol zničený nepriateľmi a ty zostávaš sám a porazený."
+menu_notification_your_faction_collapsed  = "^^^^^{s11}, tvoja domovina, bol porazený!^Tvoji spojenci aj naďalej bojujú vo Vojne. Spolu s ostatnými, kdo zostali z {s11}, môžeš stále pomôcť svojej strane zvíťaziť."
+menu_notification_faction_defeated  = "^^^^^{s1} Porazený!^{s1} zanikol, zničený armádami {s13}!"
+menu_ruins  = "^^^^Prichádzaš k {s1}. Kedysi silná pevnosť bola vyplienená do základov. Stále rozpoznávaš stopy opevnení a po okolí sú rozhádzané hrdzavé zbrane."
+menu_legendary_place  = "^^^^Veril si povestiam a našiel si {s1}. Teraz môžeš toto miesto preskúmať a presvedčiť sa, či boli povesti pravdou."
+mno_explore  = "Preskúmať toto miesto."
+menu_ring_hunter_lair  = "^^^^Následoval si stopy Lovcov Prsteňa skrz Temnohvozd a dorazil si k {s1}. Vidíš ich, ako sa pripravujú na odchod s truhlicou."
+mno_attack_lair  = "Zaútočiť na nich teraz."
+mno_leave_bandit_lair  = "Zatiaľ ich nechať."
+menu_gondor_reinforcement_event  = "^^^^^Majáky Gondoru vzbĺkli, Minas TIrith volá o pomoc!^^Lordi z panstiev na juhu vypochodujú na sever, aby ubránili Biele Mesto pred blížiacou sa temnotou."
+mno_gondor_reinforcement_event_close  = "Zavrieť"
+menu_gondor_beacons  = "Pozrieš sa hore na {s1}, jeden z výstražných majákov Gondoru, ktoré hlásali ohňom poplach v severnom i južnom Gondore. "
+mno_gondor_beacons_close  = "Odísť..."
+menu_player_added_to_war_council  = "^^^^^Posol, ktorý dorazil, ti oznámil, že ťa ako {s24} {s2} požiadal, aby si sa stal súčasťou jeho Vojenskej Rady. Od teraz môžeš navrhovať stratégie a taktiky, ktoré môžu ovplyvniť priebeh vojny."
+mno_player_added_to_war_council_close  = "Zavrieť"
+menu_player_added_to_siege_reports  = "^^^^^Dorazil k tebe posol a oznámil ti, že ako {s24} budeš dostávať správy vždy, keď {s2} bude obliehať nejaké mesto alebo ak bude nejaké mesto {s2}u obliehané."
+mno_player_added_to_siege_reports_close  = "Zavrieť"
+menu_player_added_to_allow_follow  = "^^^^^Dorazil posol a povedal ti, že teraz, ako {s24}, budeš môcť rozkázať {s2}, aby ťa nasledovali, maximálne {reg55} nasledovníkom."
+mno_player_added_to_allow_follow_close  = "Zavrieť"
+menu_center_besieged_event  = "^^^^^Posol ti doniesol správu, že {s1} je obliehané {s2}om z {s3}u."
+mno_center_besieged_event_close  = "Zavrieť"
+menu_guardian_party_spawned  = "^^^^^Prieskumníci hlásia, že {s6} zhromáždil veľkú armádu neďaleko {s7} v poslednej nádeji ubrániť hlavné mesto."
+mno_intro_next  = "Pokračuj"
+mno_start_defend_caravan  = "Brániť karavanu!"
+mno_start_raid_caravan  = "Vyrabovať karavanu!"
+mno_start_ambush_orcs  = "Prepadnúť ohyzdov!"
+mno_start_kill_scouts  = "Zastaviť zvedov ohlasujúcich tvoj príchod."
+mno_go_your_way  = "Nechať to tak."
+mno_defend_villagers  = "Brániť dedinčanov!"
+mno_raid_villagers  = "Vyrabovať dedinu!"
+mno_go_away  = "Nateraz sa stiahnuť a preskupiť."
+menu_scout_camp_quest  = "Neďaleko zahliadneš prieskumnický tábor. Dáš povel mužom, aby sa pripravili k útoku."
+mno_attack_scout_camp  = "Zaútočiť na prieskumnícky tábor!"
+menu_sea_battle_quest  = "Narazil si na nepriateľskú flotilu. Lode sa priblížia a námorníci zhodia dosky..."
+mno_sb_defend_the_town  = "Na palubu! Zničte ich flotilu!"
+mno_sb_attack_the_town  = "Snažia sa nás preraziť! Chráňte flotilu!"
+menu_camp_field_ai  = "^^^^^Klikni na voľbu, aby si ju prepol.^^^Vypnutie volieb zlepší výkon (FPS)"
+mno_lord_field_ai  = "Vládcovia majú zlepšené bojiskové AI: {s7}"
+mno_horse_archer_field_ai  = "Lukostrelci na koňoch majú zlepšené bojiskové AI: {s7}"
+mno_vs_orcs_field_ai  = "Lukostrelci mieria lepšie proti ohyzdom (nemieria im nad hlavy): {s7}"
+mno_battlefield_animals  = "Zvierací spoločníci, ktorí nie sú vroci / Konskí spoločníci sa objavujú v boji: {s7}"
+mno_slow_when_wounded  = "Agenti sa stanú Pomalými ak sú Zranení: {s7}"
+mno_battle_encounter_effects  = "Výnimočný účinok frakcie na bojové pole (napr. búrky, hmla): {s7}"
+menu_hungry_orc  = "nič"
+menu_leaving_elf  = "nič"
+mno_defend_refugees  = "Pozor na nájazdníkov..."
+mno_attack_refugees  = "Zaútočiť na utečencov..."
+mno_leave_refugees  = "Na teraz ich nechať na pokoji..."
+mno_evil_war_tut_continue  = "Pokračuj"
+menu_guardian_party_quest  = "{s8} ti posiela správu, že celý Isengard je na nohách a dokončil prípravy pre svoj posledný odpor. Želá si, aby s i sa k nemu pripojil v tejto poslednej bitke proti vojskám Isengardu. Musíš so sebou priviesť najmenej {ref13} vojakov a ak toľkých so sebou práve nemáš, nalieha na teba, aby si si ich čo najrýchlejšie zohnal a pripojil sa k nemu."
+mno_guardian_party_reject  = "Poslať správu, že sa k nemu nemôžeš pripojiť."
+mno_guardian_party_send_word  = "Poslať odkaz, že sa k nemu čo najskôr pripojíš."
+menu_alternate_training_fight  = "Budeš bojovať proti {reg5} protivníkom. Si pripravený? "
+mno_training_continue  = "Započať s tréningom..."
+menu_alternate_training_conclusion  = "{s5}"
+mno_alternate_training_retry  = "Skúsiť znovu..."
+mno_alternate_training_finish  = "Opustiť zápasisko..."
+menu_custom_battle_choose_faction1  = "^^^^^^^^^^Zvol si svoju stranu a výhody:"
+mno_good_equal  = "Frakcia dobra"
+mno_bad_equal  = "Frakcia zla"
+mno_replay_prev  = "Opakovať predošlé nastavenia"
+menu_custom_battle_choose_faction2  = "^^^^^^^^^^Vybrať frakciu dobra"
+mno_cb_gondor  = "Gondor"
+mno_cb_gondor1  = "Rohan"
+mno_cb_gondor2  = "Lothlorien"
+mno_cb_gondor3  = "Roklinka"
+mno_cb_gondor4  = "Temnohvozd"
+mno_cb_gondor5  = "Trpaslíci"
+mno_cb_gondor6  = "Dálovia"
+mno_cb_gondor7  = "Grizlovci"
+menu_custom_battle_choose_faction3  = "^^^^^^^^^^Vybrať frakciu zla"
+mno_cb_mordor  = "Mordor"
+mno_cb_mordor1  = "Isengard"
+mno_cb_mordor2  = "Vrchovina"
+mno_cb_mordor3  = "Haraďan"
+mno_cb_mordor4  = "Variagovia z Khandu"
+mno_cb_mordor5  = "Mória"
+mno_cb_mordor6  = "Gundabad"
+mno_cb_mordor7  = "Rhun"
+mno_cb_mordor8  = "Korzáry"
+mno_rescue_mission  = "Prekĺznuť do skrýše černokňažníka pod závojom noci."
+mno_next_rescue_scene_door  = "Pokračovať vpred!"
+mno_pick_troops1  = "Vybrať si spoločníkov pre misiu, {reg0} vybraných"
+menu_pick_troops  = "Koho by si si vybral na tajnú misiu? Už si si vybral {reg0} spoločníkov. Môžeš si so sebou zobrať až 10 jednotiek."
+mno_go_forward  = "Ukončiť výber spoločníkov a pokračovať."
+menu_burial_mound  = "Dorazil sa na pohrebnú mohylu {s1}a z {s2}u.   Pokorený v boji nepriateľmi z {s28}u. Je navŕšená zo zbraní jeho padlích sokov."
+mno_pay_respects  = "Pokľaknúť a vzdať rešpekt."
+mno_swear_oath  = "Zložiť prísahu pomsty!"
+mno_despoil  = "Znesvätiť toto miesto."
+mno_leave_mound  = "Opustiť mohylu."
+menu_burial_mound_respects  = "Pokľakneš a vzdávaš svoj rešpekt {s1}, potichu šepkajúc modlitbu pre skorú cestu do posmrtného života. Neostáva tu už nič iné čo robiť."
+menu_burial_mound_oath  = "Hlasno skladáš prísahu pomsty za smrť {s4}. Budeš vytrvalo hľadať armády {s3} a ničiť ich. Tvoje slová sú nesené vetrom do veľkej diaľky... kdo môže povedať, že neboli počuté za morom?"
+menu_funeral_pyre_oath  = "Hlasno skladáš prísahu pomsty za smrť {s4}. Budeš vytrvalo hľadať armády {s3} a ničiť ich. Tvoje slová sú nesené vetrom do veľkej diaľky... kdo môže povedať, že neboli počuté za morom?"
+mno_leave_pyre_oath  = "Opustiť pohrebnú vatru."
+menu_burial_mound_despoil  = "Demoluješ monument {s1} vlastnými rukami a znesväcuješ kliatbami samotné kamene, zosmiešňuješ žalm a vyvádzaš nevýslovné činy. Tvoji následovníci radšej ustúpia zo strachu pred mrtvým, a kvôli tvojej nesmiernej zlobe si opäť získavaš ich rešpekt. "
+menu_funeral_pyre  = "Dorazil si na spálenisko pohrebnej hranice {s3}a z {s2}u.   Skolený v boji nepriateľmi z {s28}u. Na tomto mieste boli obradne pochované jeho ostatky osobnou strážou. Neostalo tu už nič, čo by mohlo mať nejakú cenu."
+mno_leave_pyre  = "Opustiť pohrebnú vatru."
+menu_town_ruins  = "Keď dorazíš, vidíš že {s1} je {s2}"
+mno_ruin_menu_0  = "Preskúmať miesto."
+mno_ruin_leave  = "Odísť..."
+menu_premutiny  = "nič"
+menu_death  = "Bol si zabitý. Vojna pokračuje, ale ty už naďalej nie si jej súčasťou."
+menu_animal_ambush  = "Ty a tvoji spoločníci ste sa oddelili od zvyšku družiny, keď odrazu..."
+menu_animal_ambush_success  = "{s2} pred tebou {reg0?padol:padajú} ako pšenica pred kosou! Onedlho ležia všetci tvojí protivníci na podlahe, zranený či mrtvý. {s3}"
+menu_animal_ambush_fail  = "Zvieratá ťa kušu a drápu po tebe {reg0?,: a tvoj spoločník{reg2?s,:,}} ale našťastie sa ti podarilo zahnať ich. Dúfaš, že nezaútočia znovu."
+menu_build_your_scene  = "Tu si môžeš vybudovať svoje vlastné bojové pole, použitím jedného z voľných slotov, ktoré sú k dispozícií nižšie a v hracom Edit móde (budeš musieť najprv prepnúť Edit mód ON na úvodnej obrazovke M&B v možnosti Nastavenia). Potom môžeš zaslať scény, ktoré si vybudoval (podľa mena, sco súbory z TLD/SceneObj priečinku) týmu vývojárov z TLD, a keď je tvoja scéna dobrá, môže sa objaviť v ďalšom vydaní ako náhodná bojová scéna!^^ Skús špecifikovať v ktorom regióne na mape sveta chceš, aby sa tvoja scéna objavovala.^ Niekoľko rád: vyhni sa hlbokej vode, vysokým horám a iným neprejazdným miestam, pokiaľ nie si skúsený programátor scén a vieš, ako zakázať jednotkám umelej inteligencie, aby šli tam kde ich nechceš, a aby si vytvoril trasy pre umelú inteligenciu v iných miestach.^ (Vstupy #0-1 sú pre útočníkov, #4 pre obrancov, nerob nič s #5-8"
+mno_scene1  = "Pole Veľké (súbor scn custom 1.sco)"
+mno_scene2  = "Pole Stredné (súbor scn custom 2.sco)"
+mno_scene3  = "Pole Malé (súbor scn custom 3.sco)"
+mno_scene4  = "Step Veľká (súbor scn custom 4.sco)"
+mno_scene5  = "Step Stredná (súbor scn custom 5.sco)"
+mno_scene6  = "Mála pláň (súbor scn custom 6.sco)"
+mno_scene7  = "Veľký les (súbor scn custom 7.sco)"
+mno_scene8  = "Stredný les (súbor scn custom 8.sco)"
+mno_scene9  = "Malý les (súbor scn custom 9.sco)"
+mno_back_3dot  = "Späť..."
+mno_back  = "Späť"
+mno_next  = "Pokračovať..."

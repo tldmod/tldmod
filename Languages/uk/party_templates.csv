@@ -1,146 +1,148 @@
-pt_rescued_prisoners|Врятовані бранці
-pt_enemy|Ворог
-pt_hero_party|Загін воїна
-pt_cattle_herd|Стадо худоби
-pt_ruins|Руїни
-pt_legendary_place|Легендарне місце
-pt_mound|Курган воїна
-pt_pyre|Похоронне багаття воїна
-pt_wild_troll|Дикий троль
-pt_raging_trolls|Люті тролі
-pt_looters|Дикі орки
-pt_forest_bandits|Бродячі орки
-pt_mountain_bandits|Дикі гобліни
-pt_steppe_bandits|Дунландці-вигнанці
-pt_sea_raiders|Бунтівні корсари
-pt_deserters|Дезертири
-pt_merchant_caravan|Торговий караван
-pt_troublesome_bandits|Небезпечні гобліни
-pt_fangorn_orcs|Орки-лісоруби
-pt_village_farmers|Селяни
-pt_spy_partners|Підозрілі мандрівники
-pt_spy_partners_evil|Підозрілі мандрівники
-pt_runaway_serfs|Втікші раби
-pt_spy|Самотній вершник
-pt_spy_evil|Самотній вершник
-pt_sacrificed_messenger|Убитий гонець
-pt_gandalf|Самотній вершник
-pt_nazgul|Самотній вершник
-pt_gondor_scouts|Гондорські розвідники
-pt_blackroot_auxila|Мортондський допоміжний загін
-pt_lamedon_auxila|Допоміжний загін Ламедону
-pt_lossarnach_auxila|Допоміжний загін Лоссарнаху
-pt_pinnath_gelin_auxila|Допоміжний загін Піннат-Геліну
-pt_ranger_scouts|Рейнджери-розвідники
-pt_rohan_scouts|Роганські розвідники
-pt_lorien_scouts|Лоріенські розвідники
-pt_woodelf_scouts|Ельфи-розвідники Темнолісся
-pt_imladris_scouts|Розвідники Дунедайн
-pt_dale_scouts|Розвідники Дейла
-pt_esgaroth_scouts|Розвідники Есгароту
-pt_dwarf_scouts|Гноми-дозорні
-pt_beorn_scouts|Беорнінгі-розвідники
-pt_woodmen_scouts|Лісові розвідники
-pt_mordor_scouts|Мордорські розвідники
-pt_morgul_scouts|Моргульські розвідники
-pt_isengard_scouts|Ізенгардські розвідники
-pt_isengard_scouts_warg|Ізенгардські вершники на варзі
-pt_harad_scouts|Харадські розвідники
-pt_dunland_scouts|Дунландські розвідники
-pt_umbar_scouts|Корсари-розвідники
-pt_khand_scouts|Істерлінги-розвідники
-pt_moria_scouts|Моріїські розвідники
-pt_guldur_scouts|Розвідники Дол-Гулдуру
-pt_gundabad_scouts|Гундабадські розвідники
-pt_rhun_scouts|Рунійські розвідники
-pt_gondor_raiders|Гондорські фуражири
-pt_rohan_raiders|Роганські фуражири
-pt_imladris_raiders|фуражири Рівенделлу
-pt_lorien_raiders|Лоріенські фуражири
-pt_woodelf_raiders|фуражири Темнолісся
-pt_dale_raiders|фуражири Дейлу
-pt_dwarf_raiders|Гноми-фуражири
-pt_ranger_raiders|Рейнджери-грабіжники
-pt_morgul_raiders|Моргульські-грабіжники
-pt_mordor_raiders|Мордорські-грабіжники
-pt_isengard_raiders|Ізенгардські-грабіжники
-pt_dunland_raiders|Дунландські-грабіжники
-pt_harad_raiders|Харадські-грабіжники
-pt_khand_raiders|Кхандські-грабіжники
-pt_umbar_raiders|Умбарські-грабіжники
-pt_moria_raiders|Моріїські-грабіжники
-pt_guldur_raiders|Грабіжники-Дол-Гулдуру
-pt_gundabad_raiders|Гундабадські-грабіжники
-pt_rhun_raiders|Рунійські-грабіжники
-pt_gondor_patrol|Гондорський сторожовий загін
-pt_rohan_patrol|Роганський сторожовий загін
-pt_imladris_patrol|Дозорний загін дунедайн
-pt_lorien_patrol|Лоріенський сторожовий загін
-pt_woodelf_patrol|Дозорний загін Темнолісся
-pt_dale_patrol|Дозорний загін Дейлу
-pt_esgaroth_patrol|Дозорний загін Есгароту
-pt_dwarf_patrol|Дозорний загін гномів
-pt_ranger_patrol|Дозорний загін рейнджерів
-pt_amroth_patrol|Дозорний загін Дол-Амроту
-pt_pelargir_patrol|Дозорний загін Пеларгіру
-pt_lossarnach_patrol|Дозорний загін Лоссарнаху
-pt_brv_patrol|Мортондський сторожовий загін
-pt_pinnath_patrol|Дозорний загін Піннат-Геліну
-pt_lamedon_patrol|Дозорний загін Ламедону
-pt_mordor_war_party|Мордорське військо
-pt_isengard_war_party|Ізенгардське військо
-pt_harad_war_party|Харадське військо
-pt_dunland_war_party|Дунландське військо
-pt_khand_war_party|Військо варягів
-pt_moria_war_party|МоріЇське військо
-; pt_guldur_war_party|Dol Guldur War Party
-pt_rhun_war_party|Рунійське військо
-pt_gondor_company|Дозорний загін Мінас-Тіріту
-pt_rohan_company|Роганський загін
-pt_imladris_company|Загін Рівенделлу
-pt_lorien_company|Лоріенський загін
-pt_woodelf_company|Загін ельфів Темнолісся
-pt_dale_company|Загін Дейлу
-pt_dwarf_company|Загін Гномів
-pt_gondor_elite_company|Гондорський добірний загін
-pt_rohan_elite_company|Роганський добірний загін
-pt_imladris_elite_company|Добірний загін Рівенделлу
-pt_lorien_elite_company|Лоріенський добірний загін
-pt_woodelf_elite_company|Добірний загін ельфів Темнолісся
-pt_dale_elite_company|Добірний загін Дейлу
-pt_dwarf_elite_company|Добірний загін гномів
-pt_gondor_caravan|Гондорський караван
-pt_rohan_caravan|Роганський караван
-pt_imladris_caravan|Караван Рівенделлу
-pt_lorien_caravan|Лоріенський караван
-pt_woodelf_caravan|Темнолісський караван
-pt_dale_caravan|Караван Дейла
-pt_dwarf_caravan|Ереборський караван
-pt_mordor_caravan|Мордорський обоз
-pt_isengard_caravan|Ізенгардський обоз
-pt_gunda_caravan|Гундабадський обоз
-pt_gondor_p_train|Гондорський конвой
-pt_rohan_p_train|Роганський конвой
-pt_imladris_p_train|Рівендельський конвой
-pt_lorien_p_train|Лоріенський конвой
-pt_woodelf_p_train|Темнолісський конвой
-pt_dale_p_train|Конвой Дейлу
-pt_dwarf_p_train|Ереборський конвой
-pt_mordor_p_train|Мордорський конвой
-pt_isengard_p_train|Ізенгардський конвой
-pt_kingdom_hero_party|Військо
-pt_caravan_survivors|Ті, що врятувалися караванники
-pt_routed_allies|Втікші союзники
-pt_routed_enemies|Втікші вороги
-pt_legion_minas_morgul|Легіон Мінас-Ітілю
-pt_legion_udun|Легіон Удуну
-pt_legion_gorgoroth|Легіон Горгорота
-pt_legion_barad_dur|Легіон Барад-Дуру
-pt_beorn_messenger|Беорнінгський посильний
-pt_village|Село
-pt_ring_hunters|Мисливці за Перснем
-pt_scout_camp_small|Табір розвідників
-pt_scout_camp_large|Укріплений табір розвідників
-pt_beorn_caravan|Караван лісовиків
-pt_orc_horde|Орда Орків
-pt_vet_archer|Лучник-ветеран
+pt_rescued_prisoners  = "Врятовані бранці"
+pt_enemy  = "Ворог"
+pt_hero_party  = "Загін воїна"
+pt_cattle_herd  = "Стадо худоби"
+pt_ruins  = "Руїни"
+pt_legendary_place  = "Легендарне місце"
+pt_mound  = "Курган воїна"
+pt_pyre  = "Похоронне багаття воїна"
+pt_wild_troll  = "Дикий троль"
+pt_raging_trolls  = "Люті тролі"
+pt_looters  = "Дикі орки"
+pt_forest_bandits  = "Бродячі орки"
+pt_mountain_bandits  = "Дикі гобліни"
+pt_steppe_bandits  = "Дунландці-вигнанці"
+pt_sea_raiders  = "Бунтівні корсари"
+pt_deserters  = "Дезертири"
+pt_merchant_caravan  = "Торговий караван"
+pt_troublesome_bandits  = "Небезпечні гобліни"
+pt_fangorn_orcs  = "Орки-лісоруби"
+pt_village_farmers  = "Селяни"
+pt_spy_partners  = "Підозрілі мандрівники"
+pt_spy_partners_evil  = "Підозрілі мандрівники"
+pt_runaway_serfs  = "Втікші раби"
+pt_spy  = "Самотній вершник"
+pt_spy_evil  = "Самотній вершник"
+pt_sacrificed_messenger  = "Убитий гонець"
+pt_gandalf  = "Самотній вершник"
+pt_nazgul  = "Самотній вершник"
+pt_gondor_scouts  = "Гондорські розвідники"
+pt_blackroot_auxila  = "Мортондський допоміжний загін"
+pt_lamedon_auxila  = "Допоміжний загін Ламедону"
+pt_lossarnach_auxila  = "Допоміжний загін Лоссарнаху"
+pt_pinnath_gelin_auxila  = "Допоміжний загін Піннат-Геліну"
+pt_ranger_scouts  = "Рейнджери-розвідники"
+pt_rohan_scouts  = "Роганські розвідники"
+pt_lorien_scouts  = "Лоріенські розвідники"
+pt_woodelf_scouts  = "Ельфи-розвідники Темнолісся"
+pt_imladris_scouts  = "Розвідники Дунедайн"
+pt_dale_scouts  = "Розвідники Дейла"
+pt_esgaroth_scouts  = "Розвідники Есгароту"
+pt_dwarf_scouts  = "Гноми-дозорні"
+pt_beorn_scouts  = "Беорнінгі-розвідники"
+pt_woodmen_scouts  = "Лісові розвідники"
+pt_mordor_scouts  = "Мордорські розвідники"
+pt_morgul_scouts  = "Моргульські розвідники"
+pt_isengard_scouts  = "Ізенгардські розвідники"
+pt_isengard_scouts_warg  = "Ізенгардські вершники на варзі"
+pt_harad_scouts  = "Харадські розвідники"
+pt_dunland_scouts  = "Дунландські розвідники"
+pt_umbar_scouts  = "Корсари-розвідники"
+pt_khand_scouts  = "Істерлінги-розвідники"
+pt_moria_scouts  = "Моріїські розвідники"
+pt_guldur_scouts  = "Розвідники Дол-Гулдуру"
+pt_gundabad_scouts  = "Гундабадські розвідники"
+pt_rhun_scouts  = "Рунійські розвідники"
+pt_gondor_raiders  = "Гондорські фуражири"
+pt_rohan_raiders  = "Роганські фуражири"
+pt_imladris_raiders  = "фуражири Рівенделлу"
+pt_lorien_raiders  = "Лоріенські фуражири"
+pt_woodelf_raiders  = "фуражири Темнолісся"
+pt_dale_raiders  = "фуражири Дейлу"
+pt_dwarf_raiders  = "Гноми-фуражири"
+pt_ranger_raiders  = "Рейнджери-грабіжники"
+pt_morgul_raiders  = "Моргульські-грабіжники"
+pt_mordor_raiders  = "Мордорські-грабіжники"
+pt_isengard_raiders  = "Ізенгардські-грабіжники"
+pt_dunland_raiders  = "Дунландські-грабіжники"
+pt_harad_raiders  = "Харадські-грабіжники"
+pt_khand_raiders  = "Кхандські-грабіжники"
+pt_umbar_raiders  = "Умбарські-грабіжники"
+pt_moria_raiders  = "Моріїські-грабіжники"
+pt_guldur_raiders  = "Грабіжники-Дол-Гулдуру"
+pt_gundabad_raiders  = "Гундабадські-грабіжники"
+pt_rhun_raiders  = "Рунійські-грабіжники"
+pt_gondor_patrol  = "Гондорський сторожовий загін"
+pt_rohan_patrol  = "Роганський сторожовий загін"
+pt_imladris_patrol  = "Дозорний загін дунедайн"
+pt_lorien_patrol  = "Лоріенський сторожовий загін"
+pt_woodelf_patrol  = "Дозорний загін Темнолісся"
+pt_dale_patrol  = "Дозорний загін Дейлу"
+pt_esgaroth_patrol  = "Дозорний загін Есгароту"
+pt_dwarf_patrol  = "Дозорний загін гномів"
+pt_ranger_patrol  = "Дозорний загін рейнджерів"
+pt_amroth_patrol  = "Дозорний загін Дол-Амроту"
+pt_pelargir_patrol  = "Дозорний загін Пеларгіру"
+pt_lossarnach_patrol  = "Дозорний загін Лоссарнаху"
+pt_brv_patrol  = "Мортондський сторожовий загін"
+pt_pinnath_patrol  = "Дозорний загін Піннат-Геліну"
+pt_lamedon_patrol  = "Дозорний загін Ламедону"
+pt_mordor_war_party  = "Мордорське військо"
+pt_isengard_war_party  = "Ізенгардське військо"
+pt_harad_war_party  = "Харадське військо"
+pt_dunland_war_party  = "Дунландське військо"
+pt_khand_war_party  = "Військо варягів"
+pt_moria_war_party  = "МоріЇське військо"
+; pt_guldur_war_party  = "Dol Guldur War Party"
+pt_rhun_war_party  = "Рунійське військо"
+pt_gondor_company  = "Дозорний загін Мінас-Тіріту"
+pt_rohan_company  = "Роганський загін"
+pt_imladris_company  = "Загін Рівенделлу"
+pt_lorien_company  = "Лоріенський загін"
+pt_woodelf_company  = "Загін ельфів Темнолісся"
+pt_dale_company  = "Загін Дейлу"
+pt_dwarf_company  = "Загін Гномів"
+pt_gondor_elite_company  = "Гондорський добірний загін"
+pt_rohan_elite_company  = "Роганський добірний загін"
+pt_imladris_elite_company  = "Добірний загін Рівенделлу"
+pt_lorien_elite_company  = "Лоріенський добірний загін"
+pt_woodelf_elite_company  = "Добірний загін ельфів Темнолісся"
+pt_dale_elite_company  = "Добірний загін Дейлу"
+pt_dwarf_elite_company  = "Добірний загін гномів"
+pt_gondor_caravan  = "Гондорський караван"
+pt_rohan_caravan  = "Роганський караван"
+pt_imladris_caravan  = "Караван Рівенделлу"
+pt_lorien_caravan  = "Лоріенський караван"
+pt_woodelf_caravan  = "Темнолісський караван"
+pt_dale_caravan  = "Караван Дейла"
+pt_dwarf_caravan  = "Ереборський караван"
+pt_mordor_caravan  = "Мордорський обоз"
+pt_isengard_caravan  = "Ізенгардський обоз"
+pt_gunda_caravan  = "Гундабадський обоз"
+pt_gondor_p_train  = "Гондорський конвой"
+pt_rohan_p_train  = "Роганський конвой"
+pt_imladris_p_train  = "Рівендельський конвой"
+pt_lorien_p_train  = "Лоріенський конвой"
+pt_woodelf_p_train  = "Темнолісський конвой"
+pt_dale_p_train  = "Конвой Дейлу"
+pt_dwarf_p_train  = "Ереборський конвой"
+pt_mordor_p_train  = "Мордорський конвой"
+pt_isengard_p_train  = "Ізенгардський конвой"
+pt_kingdom_hero_party  = "Військо"
+pt_caravan_survivors  = "Ті, що врятувалися караванники"
+pt_routed_allies  = "Втікші союзники"
+pt_routed_enemies  = "Втікші вороги"
+pt_legion_minas_morgul  = "Легіон Мінас-Ітілю"
+pt_legion_udun  = "Легіон Удуну"
+pt_legion_gorgoroth  = "Легіон Горгорота"
+pt_legion_barad_dur  = "Легіон Барад-Дуру"
+pt_beorn_messenger  = "Беорнінгський посильний"
+pt_village  = "Село"
+pt_ring_hunters  = "Мисливці за Перснем"
+pt_scout_camp_small  = "Табір розвідників"
+pt_scout_camp_large  = "Укріплений табір розвідників"
+pt_beorn_caravan  = "Караван лісовиків"
+pt_orc_horde  = "Орда Орків"
+; pt_volunteers  = "Reserves"
+pt_refugees  = "Біженці"
+; pt_retreat_troops  = "Cover Troops"

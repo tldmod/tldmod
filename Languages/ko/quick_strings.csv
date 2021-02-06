@@ -1,3 +1,4 @@
+; qstr_Received_{reg0}_dama|Received {reg0} damage.
 qstr_Gate_is_breached!|성문이 뚫렸다!
 qstr_Gate_opens..._You_ha|문이 열린다.... 당신은 가운데 땅에서 가장 신성한 장소에 오게 되었다.
 qstr_Secret_place_discove|비밀 장소 발견됨!
@@ -184,11 +185,12 @@ qstr_+1_to_Riding_Skill|승마술 +1
 qstr_during_battles|전투 중
 qstr_+1_to_Pathfinding|길찾기 +1
 qstr_+1_to_Athletics|운동능력 +1
+qstr_+1_to_Wound_Treatmen|부상 치료 +1
+; qstr_Use_from_Camp_Menu|Use from Camp Menu
 qstr_Use_from|에서 사용 
 qstr_Action_Menu|행동 메뉴
 qstr_+1_to_First_Aid|응급치료 +1
 qstr_+1_to_Weapon_Mastery|무기 마스터 +1
-qstr_+1_to_Wound_Treatmen|부상 치료 +1
 qstr_+1_to_Tactics|전술 +1
 qstr_+1_to_Power_Strike|타격하는 힘 +1
 qstr_+1_to_Strength|근력 +1
@@ -198,7 +200,10 @@ qstr_+1_to_Wildcraft|서바이벌 +1
 qstr_+1_to_Power_Draw|당기는 힘 +1
 qstr_The_record_of_Balin_|발린의 잃어버린 탐험 기록이다.
 qstr_Who_might_be_interes|누군가 흥미를 가질까?
-qstr_Turns_nature_to_your|자연을 그대의 힘으로 삼는다 (서바이벌 능력치 관여)
+; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
+; qstr_Turns_nature_to_your|Turns nature to your side
+; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
+; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
 qstr_+1_to_Trainer|훈련교관 +1
 qstr_Recruits_Tribal_Orcs|징집 부족 오르크
 qstr_rally|랠리
@@ -207,12 +212,13 @@ qstr_+{reg1}_{s3}_in_batt|전투중 +{reg1} {s3}
 qstr_+1_to_Charisma|카리스마 +1
 qstr_+1_to_Surgery|수술 +1
 qstr_+1_to_Intelligence|지능 +1
-qstr_+1_to_Ironflesh|단단한 피부 +1
-qstr_+1_to_Prisoner_Mgmt|포로 수용 +1
+; qstr_+2_to_Surgery|+2 to Surgery
 qstr_when_equipped|착용하고 있을 때
 qstr_+1_to_Riding|승마술 +1
 qstr_+1_to_Mounted_Archer|기마 궁술 +1
+qstr_+1_to_Prisoner_Mgmt|포로 수용 +1
 qstr_+2_to_Tactics|전술 +2
+; qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|탐지 +{reg1}
 qstr__Scales_with_Wildcra|(서바이벌에 따라 조정)
 qstr_+1_to_Spotting|탐지 +1
@@ -220,8 +226,10 @@ qstr_+2_to_Athletics|운동능력 +2
 qstr_Less_Dunnish_upkeep|던랜드인 최소한도 유지
 qstr_Less_Wargs_upkeep|와르그 최소한도 유지
 qstr_Light_Armor|경장갑
+; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
+; qstr_Lead_more_Orcs|Lead more Orcs
 qstr_+{reg1}_to_Party_Mor|부대 사기 +{reg1}
-qstr_Shoot_Speed:_{reg55}|사격 속도: {reg55}
+; qstr_Range:_{reg55}|Range: {reg55}
 qstr_Do_you_want_to_disem|내리길 원하십니까?
 qstr_Move_here|여기로 이동
 qstr_View_notes|노트 보기
@@ -268,6 +276,8 @@ qstr_{s3}_is_no_longer_un|{s3}은/는 더이상 공성중인 상태가 아닙니
 qstr_Enemies_spotted_near|{s1} 근처에서 적이 발견되었습니다.
 qstr_Your_relation_with_{|당신과 {s1} 의 관계가 상승하였습니다.
 qstr_Your_relation_with_{s|당신과 {s1} 의 관계가 하락하였습니다.
+; qstr_{s1}_gained_faction_|{s1} gained faction strength!
+; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
 qstr_{s2}_{reg3?was:is_cu|{s2}은/는 {s3} 에 {reg3?있었습니다:있습니다}
 qstr_{s2}_{reg3?was:is}_t|{s2}은/는 {s3}로 향하고 {reg3?있었고:있고} {reg3?: 그당시엔} {reg4?그녀:그}는 {s4} 가까이에 {reg3?있었을겁니다:있을겁니다}.
 qstr_{s2}_{reg3?was:is}_i|{s2}은/는 황야에 {reg3?있었고:있고} {reg4?그녀:그}는 {reg3?: 그당시엔} {s3} 가까이에 {reg3?있었습니다:있을겁니다}.
@@ -391,7 +401,6 @@ qstr_Blunt_Weapons|둔기
 qstr_Infantry__{reg1}_|보병 ({reg1})
 qstr_Archers__{reg2}_|궁병 ({reg2})
 qstr_Cavalry__{reg3}_|기병 ({reg3})
-qstr_Orc_brew_finished!|오르크 맥주 완성!
 qstr_Given_by:_{s62}|{s62}에 의해 주어짐
 qstr_Given_on:_{s60}|{s60}에게 주어짐
 qstr_You_have_{reg0}_days|임무를 완수하기까지 {reg0}일 남았습니다.
@@ -684,6 +693,10 @@ qstr_A_thunderstorm_from_|안개 산맥에서 온 뇌우가 전장을 무섭게 
 qstr_A_thunderstorm_from_t|안개 산맥에서 온 뇌우가 전장을 무섭게 휩쓴다. 이런 날씨라면 궁수들은 어려움을 겪는다.
 qstr_A_poisonous_fog_from|돌 굴두르에서 뿜어져나오는 독 안개가 전쟁터에 남아있다. 당신과 당신의 병력들이 약해지는 것을 느낀다. 병사들 사이에 공포가 도사리고 있다.
 qstr_A_poisonous_fog_from_|돌 굴두르에서 뿜어져나오는 독 안개가 전쟁터에 남아있다. 당신은 전혀 차이를 못 느끼지만, 적들이 고통받는 소리가 들리며 적들이 느끼는 공포를 맡을 수 있다.
+; qstr_You_shapeshift_into_|You shapeshift into a bear!
+; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
+; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
+; qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|당신의 탈것이 무너진다! 다리를 저는 것 같다.
 qstr_Bitten_by_your_own_w|당신의 와르그에게 물렸다!
 qstr_You_weigh_too_much_f|당신은 조랑말을 타기에 너무 무겁다!
@@ -714,7 +727,9 @@ qstr_Formations_turned_OF|Formations turned OFF in options menu
 qstr_Division_{reg1}_{s2}_g|{reg1} 명의 {s2} division이 기억해둔 지점으로 이동할 것입니다...
 qstr_Division_{reg1}_{s2}_f|division {reg1} {s2} 선형 대형 (기억됨).
 qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized).
+qstr_Delivered_{reg60}_da|{reg60} 만큼의 피해를 입혔습니다.
 qstr_DEBUG__Health_Regen_|디버그 (체력 재생): {s1} 회복 {reg0}% 체력.  = +{reg1}% STR
+; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
 qstr_Three_Nazgul_are_cir|세 마리의 나즈굴이 전장의 상공을 돌고 있다!
 qstr_Two_Nazgul_are_circl|두 마리의 나즈굴이 전장의 상공을 돌고 있다!
 qstr_A_Nazgul_is_circling|나즈굴이 전장의 하늘을 돌고 있다!
@@ -765,7 +780,7 @@ qstr_End_them_all!|모조리 끝장내버려!
 qstr_Drive_them_back!|놈들을 쫓아내라!
 qstr_Protect_the_City!|도시를 지켜라!
 qstr_Forward!_Board_them!|앞으로! 올라타!
-qstr_The_Last_Days_of_the_|The Last Days of the Third Age는 Native 모드와는 확연히 다른 향상된 공성 AI가 존재합니다. 플레이어를 포함한 모든 부대는, 각자 다른 방면에 분산되어있습니다. (좌측 방면/중앙 방면/우측 방면).^^플레이어는 자신 부대를 지휘하고, AI가 다른 팀 부대를 지휘할 것입니다. 이것은 더 똑똑하고, 분대 기반의 포위 전투가 가능하게 할 것입니다.^^출발군 및 증원군은 배치 후 처음 몇 초 동안은 돌격 명령을 받지만 그 후에, 당신의 부대를 지휘할 수 있습니다.
+; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
 qstr_Reached_Gauntlet_wav|{reg1} Wave 시련 도달!
 qstr_Ballista:_out_of_amm|노포: 탄약이 떨어졌다!
 qstr_Ballista:_turn_CURSO|노포: 커서로 이동, 좌Shift 키로 조준, Space로 발사, T로 장전, F로 나가기
@@ -883,6 +898,7 @@ qstr_Doubled|두배
 qstr_Tripled|세배
 qstr_Quadrupled|네배
 qstr_You_drank_the_Ent_Wa|엔트워터를 들이켰다...
+; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
 qstr_Fangorn_search:_fail|팡고른 탐색: 실패.
 qstr_^^^A_great_victory!^|^^^대승이다!^^^이게 팡고른 숲을 둘러싼 전설의 정체였군...
 ; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
@@ -1057,6 +1073,7 @@ qstr_Guard_Legion_of_{s6}|{s6}의 경비대
 qstr_Scouts_report_that_{|전령이 {s6}이 수도를 방어하기 위한 최후의 시도로 거대한 군세를 {s7}에 집결시키고 있다 보고했습니다.
 qstr_The_forces_of_{s2}_e|{s2}의 군대가 {s15}에 전진 기지를 건설했다!
 qstr_The_hosts_of_{s2}_ma|{s2}의 집결자가 그들의 고향을 지키기 위해 회군 중이다!
+qstr_{playername}_s_Reser|{playername}'s의 예비군
 qstr_Gondor_has_called_fo|곤도르가 도움을 요청한다!
 qstr_Gondor_is_accompanyi|곤도르가 총사령관과 함께합니다!
 qstr_{s5}_has_stopped_fol|{s5}가 당신을 따라오는 것을 멈췄다.
@@ -1175,7 +1192,6 @@ qstr_Greetings_{s23}.|반갑네, {s23}.
 qstr_So_you_are_{s23}._I_|그래서, 당신이 {s23}이군. 나는 당신이 우리 {s25} 친구들을 위해 싸웠다는 소식을 들었네. 당신을 동맹으로 여겨야 할 것 같군.
 qstr_I_need_volunteers_wi|나는 위험한 임무에 뛰어들 자원자들이 필요하네.
 qstr_I_need_some_soldiers|나는 나 대신 죽어줄 병사들이 필요하다.
-qstr_{playername}_s_Reser|{playername}'s의 예비군
 qstr_Maybe_the_weaklings_|아마 남쪽의 약골들은 자네 보들보들한 트롤 피부에 장갑을 떡칠했을지도 모르지. 하지만 우리 트롤은 아니야 - 군다바드 트롤이다!
 qstr_Do_I_look_like_a_smi|내가 전속 대장장이 같아보여? 다른 사람을 찾으시지.
 qstr_Excellent_job_{s23}!|잘했어, {s23}! 우리 지휘관들도 모두 너처럼 헌신적이었으면 좋겠다^
@@ -1399,7 +1415,9 @@ qstr_Your_party_must_be_at|당신의 부대는 적어도 10 보다 강해야 이
 qstr_{s9}_asked_you_to_def|{s9}은 당신에게 {s1} 근처에 있는 습격당하고 있는 마을을 보호해달라 요청했다.
 qstr_{s9}_asked_you_to_ra|{s9}는 당신에게 {s1} 근처의 마을을 약탈하라고 명령했다.
 qstr_These_soldiers_may_w|이 군인들은 내 계획의 흐름을 바꿔줄 걸세, {playername}. 나는 그대가 그들을 잘 훈련시켰다고 확신하네. 그대의 노고를 치하하며 감사하겠네.
+; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
 qstr_Good_work_in_shaping|신병들 군기를 잡느라 수고했다, {playername}. 너는 참 쓸만하군. 이번 놈들은 지난번 놈들보다 더 오래갔으면 좋겠는데. 아니면 다시 나와 만나야할거야.
+; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
 qstr_Well_the_soldiers_ar|음, 병사들이 당신의 명령을 따를 준비가 되었습니다, 경. 그들 상태가 매우 좋다고 확신합니다.
 qstr_Well_you_may_do_as_y|음, 네 마음대로 해도 된다. 나와 나의 동료들은 필요하다면 더 강해질 수 있다.
 qstr_{s9}_asked_you_to_br|{s9}는 그의 군대에 사용할 수 있도록 사나운 트롤을 가져오라고 지시한다.

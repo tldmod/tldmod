@@ -1,48 +1,48 @@
-skl_trade|Pazarlık
-skl_trade_desc|Demircileri ve tedarik ustalarını daha işbirlikçi yapar ve daha iyi ekipman sunar. (Grup yetenegi)
-skl_leadership|Liderlik
-skl_leadership_desc|Her puan, komuta edebileceginiz maksimum asker sayısını 5 artırır, parti moralinizi artırır ve birlik ücretlerini 5 azaltır%%. Sizi takip etmeye istekli daha fazla ve daha güçlü gönüllüler yapar. (Liderlik yetenegi)
-skl_prisoner_management|Esir yönetimi
-skl_prisoner_management_desc|Bu yetenegin her leveli mahkum sayısını %d kadar arttırır (Liderlik yetenegi)
-skl_persuasion|Yaban Ustası
-skl_persuasion_desc|Vahşi yaşamda hayatta kalmak. Bu yetenek, partinin ormanlık arazide iken düşmandan gizlenmesini ve partinin hızını etkiler. (Grup Becerisi)
-skl_engineer|-----
-skl_engineer_desc|-----
-skl_first_aid|İlk yardım
-skl_first_aid_desc|Kahramanlar puan başı görev sırasında kaybettikleri canı 5%% oranında geri kazanırlar. (Grup Yetenegi)
-skl_surgery|Cerrahlık
-skl_surgery_desc|Bu yetenege harcanan her puan grup üyelerinizin ölmek yerine yaralanma şanslarını 4%% arttırır. (Grup Yetenegi)
-skl_wound_treatment|Yara bakımı
-skl_wound_treatment_desc|Grup iyileşme hızı bu yetenegin her puanı ile 20%% oranında artar.  (Grup Yetenegi)
-skl_inventory_management|Envanter yönetimi
-skl_inventory_management_desc|Her seviye artışında envanter kapasitesi +6 yükselir.(Lider yetenegi) 
-skl_spotting|Tespit etme
-skl_spotting_desc|Grubunuzun görüş sınırı yeteneginizin her puanı ile %10 artar. (Grup Yetenegi)
-skl_pathfinding|Yol bulma
-skl_pathfinding_desc|Yeteneginizin her seviyesi grubun haritadaki hareket hızını %3 arttırır. (Grup Yetenegi)
-skl_tactics|Taktik
-skl_tactics_desc|Yetenek her 2 seviyede savaş avantajını +1 arttırır.  (Grup yetenegi)
-skl_tracking|İz sürme
-skl_tracking_desc|Yol izleri hakkında daha detaylı bilgi verir.  (Grup yetenegi)
-skl_trainer|Talimci
-skl_trainer_desc|Her gün, her kahraman tecrübe kazandırır. Her üye talim yetenegine göre tecrübe kazandırır. Talim yetenegi şu şekilde artar; {0,4,10,16,23,30,38,46,55,65,80} (Kişisel Yetenek)
-skl_looting|Yagmalama
-skl_looting_desc|Arttırma başı 10%% seviye artar.(Grup Yetenegi)
-skl_horse_archery|Atlı okçuluk
-skl_horse_archery_desc|At sürerken atılan okların verdigi zarar artar. (Kişisel Yetenek)
-skl_riding|Binicilik
-skl_riding_desc|Daha yüksek seviyeli atları (ya da diger yaratıkları) kullanmanı saglar ayrıca sürüş hızın ve manevra kabiliyetini arttırır. (Kişisel yetenek)
-skl_athletics|Atletizm
-skl_athletics_desc|Koşu hızını yükseltir.(kişisel yetenek)
-skl_shield|Kalkan
-skl_shield_desc|Kalkanlara karşı hasarı azaltır (puan başı 8%%) ve kalkan hızını ve kapsamını arttırır. (Kişisel Yetenek)
-skl_weapon_master|Silah ustası
-skl_weapon_master_desc|Bir silahın yeterliklerini ögrenmeyi kolaylaştırır ve yeterlilik limitini arttırır. Limit şöyle olur: 60,100,140,180,220,260,300,340,380,420.(Kişisel yetenek)
-skl_power_draw|Güçlü Çekme
-skl_power_draw_desc|Karakterin daha güçlü yaylar kullanmasına olanak verir. Bu yetenege harcanan her puan (+4 Güce kadar ve  yayın gereksinimlerine kadar) yayın gücünü 14%% arttırır (Kişisel Yetenek)
-skl_power_throw|Güçlü Fırlatma
-skl_power_throw_desc|Bu yetenege harcanan her puan atış hasarını 10%% arttırır (Kişisel yetenek)
-skl_power_strike|Güçlü Saldırı
-skl_power_strike_desc|Bu yetenege harcanan her puan yakın dövüş hasarını 8%% arttırır (Kişisel yetenek)
-skl_ironflesh|Demirbeden
-skl_ironflesh_desc|Bu yetenege harcanan her puan verilen hasarı +2 artırır.(kişisel yetenek) 
+skl_trade  = "Pazarlık"
+skl_trade_desc  = "Demircileri ve tedarik ustalarını daha işbirlikçi yapar ve daha iyi ekipman sunar. (Grup yeteneği)"
+skl_leadership  = "Liderlik"
+skl_leadership_desc  = "Her puan, komuta edebileceğiniz maksimum asker sayısını 5 artırır, parti moralinizi artırır ve birlik ücretlerini 5 azaltır%%. Sizi takip etmeye istekli daha fazla ve daha güçlü gönüllüler yapar. (Liderlik yeteneği)"
+skl_prisoner_management  = "Esir yönetimi"
+skl_prisoner_management_desc  = "Bu yeteneğin her leveli mahkum sayısını %d kadar arttırır (Liderlik yeteneği)"
+skl_persuasion  = "Yaban Ustası"
+skl_persuasion_desc  = "Vahşi yaşamda hayatta kalmak. Bu yetenek, partinin ormanlık arazide iken düşmandan gizlenmesini ve partinin hızını etkiler. (Grup Becerisi)"
+skl_engineer  = "-----"
+skl_engineer_desc  = "-----"
+skl_first_aid  = "İlk yardım"
+skl_first_aid_desc  = "Kahramanlar puan başı görev sırasında kaybettikleri canı 5%% oranında geri kazanırlar. (Grup Yeteneği)"
+skl_surgery  = "Cerrahlık"
+skl_surgery_desc  = "Bu yeteneğe harcanan her puan grup üyelerinizin ölmek yerine yaralanma şanslarını 4%% arttırır. (Grup Yeteneği)"
+skl_wound_treatment  = "Yara bakımı"
+skl_wound_treatment_desc  = "Grup iyileşme hızı bu yeteneğin her puanı ile 20%% oranında artar.  (Grup Yeteneği)"
+skl_inventory_management  = "Envanter yönetimi"
+skl_inventory_management_desc  = "Her seviye artışında envanter kapasitesi +6 yükselir.(Lider yeteneği) "
+skl_spotting  = "Tespit etme"
+skl_spotting_desc  = "Grubunuzun görüş sınırı yeteneğinizin her puanı ile %10 artar. (Grup Yeteneği)"
+skl_pathfinding  = "Yol bulma"
+skl_pathfinding_desc  = "Yeteneğinizin her seviyesi grubun haritadaki hareket hızını %3 arttırır. (Grup Yeteneği)"
+skl_tactics  = "Taktik"
+skl_tactics_desc  = "Yetenek her 2 seviyede savaş avantajını +1 arttırır.  (Grup yeteneği)"
+skl_tracking  = "İz sürme"
+skl_tracking_desc  = "Yol izleri hakkında daha detaylı bilgi verir.  (Grup yeteneği)"
+skl_trainer  = "Talimci"
+skl_trainer_desc  = "Her gün, her kahraman tecrübe kazandırır. Her üye talim yeteneğine göre tecrübe kazandırır. Talim yeteneği şu şekilde artar; {0,4,10,16,23,30,38,46,55,65,80} (Kişisel Yetenek)"
+skl_looting  = "Yağmalama"
+skl_looting_desc  = "Arttırma başı 10%% seviye artar.(Grup Yeteneği)"
+skl_horse_archery  = "Atlı okçuluk"
+skl_horse_archery_desc  = "At sürerken atılan okların verdiği zarar artar. (Kişisel Yetenek)"
+skl_riding  = "Binicilik"
+skl_riding_desc  = "Daha yüksek seviyeli atları (ya da diğer yaratıkları) kullanmanı sağlar ayrıca sürüş hızın ve manevra kabiliyetini arttırır. (Kişisel yetenek)"
+skl_athletics  = "Atletizm"
+skl_athletics_desc  = "Koşu hızını yükseltir.(kişisel yetenek)"
+skl_shield  = "Kalkan"
+skl_shield_desc  = "Kalkanlara karşı hasarı azaltır (puan başı 8%%) ve kalkan hızını ve kapsamını arttırır. (Kişisel Yetenek)"
+skl_weapon_master  = "Silah ustası"
+skl_weapon_master_desc  = "Bir silahın yeterliklerini öğrenmeyi kolaylaştırır ve yeterlilik limitini arttırır. Limit şöyle olur: 60,100,140,180,220,260,300,340,380,420.(Kişisel yetenek)"
+skl_power_draw  = "Güçlü Çekme"
+skl_power_draw_desc  = "Karakterin daha güçlü yaylar kullanmasına olanak verir. Bu yeteneğe harcanan her puan (+4 Güce kadar ve  yayın gereksinimlerine kadar) yayın gücünü 14%% arttırır (Kişisel Yetenek)"
+skl_power_throw  = "Güçlü Fırlatma"
+skl_power_throw_desc  = "Bu yeteneğe harcanan her puan atış hasarını 10%% arttırır (Kişisel yetenek)"
+skl_power_strike  = "Güçlü Saldırı"
+skl_power_strike_desc  = "Bu yeteneğe harcanan her puan yakın dövüş hasarını 8%% arttırır (Kişisel yetenek)"
+skl_ironflesh  = "Demirbeden"
+skl_ironflesh_desc  = "Bu yeteneğe harcanan her puan verilen hasarı +2 artırır.(kişisel yetenek) "

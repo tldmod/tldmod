@@ -1,43 +1,43 @@
-imod_plain|Düz %s
-imod_cracked|Zavallı %s 
-imod_rusty| İşlenmemiş %s
-imod_bent|Egrilmiş %s
-imod_chipped|Yontulmuş %s
-imod_battered|Ezilmiş %s
-imod_poor|Perişan %s 
-imod_crude|Basit %s
-imod_old|Antik %s
-imod_cheap|Ucuz %s 
-imod_fine|İyi %s 
-imod_well_made|İyi Yapılmış %s 
-imod_sharp|Keskin %s 
-imod_balanced|Dengeli %s 
-imod_tempered|Tavlanmış %s 
-imod_deadly|Ölümcül %s 
-imod_exquisite|Zarif %s 
-imod_masterwork|Usta işi %s 
-imod_heavy|Agır %s 
-imod_strong|Güçlü %s 
-imod_powerful|Kudretli %s 
-imod_tattered|Eski püskü %s 
-imod_ragged|Kaba%s 
-imod_rough|Kaba%s 
-imod_sturdy|Dayanıklı %s 
-imod_thick|Kalın %s
-imod_hardened|Sertleştirilmiş %s 
-imod_reinforced|Güçlendirilmiş %s 
-imod_cloak|pelerinli %s
-imod_lordly|Usta işi %s 
-imod_lame|Ezik %s 
-imod_swaybacked|Beli Bükük %s 
-imod_stubborn|İnatçı %s 
-imod_timid|Çekingen %s 
-imod_meek|Kanla kaplanmış %s
-imod_spirited|Canlı %s
-imod_champion|Şampiyon %s
-imod_fresh|Taze %s
-imod_day_old|Günlük %s
-imod_two_day_old|İki Günlük %s
-imod_smelling|Kokuşmuş %s
-imod_rotten|Çürümüş %s
-imod_large_bag|Büyük %s Çantası
+imod_plain  = "Düz %s"
+imod_cracked  = "Zavallı %s "
+imod_rusty  = " İşlenmemiş %s"
+imod_bent  = "Eğrilmiş %s"
+imod_chipped  = "Yontulmuş %s"
+imod_battered  = "Ezilmiş %s"
+imod_poor  = "Perişan %s "
+imod_crude  = "Basit %s"
+imod_old  = "Antik %s"
+imod_cheap  = "Ucuz %s "
+imod_fine  = "İyi %s "
+imod_well_made  = "İyi Yapılmış %s "
+imod_sharp  = "Keskin %s "
+imod_balanced  = "Dengeli %s "
+imod_tempered  = "Tavlanmış %s "
+imod_deadly  = "Ölümcül %s "
+imod_exquisite  = "Zarif %s "
+imod_masterwork  = "Usta işi %s "
+imod_heavy  = "Ağır %s "
+imod_strong  = "Güçlü %s "
+imod_powerful  = "Kudretli %s "
+imod_tattered  = "Eski püskü %s "
+imod_ragged  = "Kaba%s "
+imod_rough  = "Kaba%s "
+imod_sturdy  = "Dayanıklı %s "
+imod_thick  = "Kalın %s"
+imod_hardened  = "Sertleştirilmiş %s "
+imod_reinforced  = "Güçlendirilmiş %s "
+imod_cloak  = "pelerinli %s"
+imod_lordly  = "Usta işi %s "
+imod_lame  = "Ezik %s "
+imod_swaybacked  = "Beli Bükük %s "
+imod_stubborn  = "İnatçı %s "
+imod_timid  = "Çekingen %s "
+imod_meek  = "Kanla kaplanmış %s"
+imod_spirited  = "Canlı %s"
+imod_champion  = "Şampiyon %s"
+imod_fresh  = "Taze %s"
+imod_day_old  = "Günlük %s"
+imod_two_day_old  = "İki Günlük %s"
+imod_smelling  = "Kokuşmuş %s"
+imod_rotten  = "Çürümüş %s"
+imod_large_bag  = "Büyük %s Çantası"

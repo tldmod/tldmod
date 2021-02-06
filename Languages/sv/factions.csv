@@ -1,31 +1,31 @@
-fac_no_faction|Ingen Falang
-fac_commoners|Borgare och Bönder
-fac_outlaws|Vildar och Banditer
-fac_gondor|Gondor
-fac_dwarf|Erebor
-fac_rohan|Rohan
-fac_mordor|Mordor
-fac_isengard|Isengård
-fac_lorien|Lothlorien
-fac_imladris|Imladris
-fac_woodelf|Woodland riket
-fac_dale|Dale
-fac_harad|Harad
-fac_rhun|Rhun
-fac_khand|Khand
-fac_umbar|Umbar
-fac_moria|Maria
-fac_guldur|Dol Guldur
-fac_gundabad|Gundabad-berget
-fac_dunland|Dunland
-fac_beorn|Anduin dalen
-fac_player_supporters_faction|Spelar Falang
-fac_player_faction|Spelar Falang
-fac_brigands|Stråtrövare
-fac_tribal_orcs|Orc stam
-fac_innocents|Oskyldiga
-fac_merchants|Handelsfolk
-fac_manhunters|Människojägare
-fac_deserters|Desertörer
-fac_mountain_bandits|Bergsbanditer
-fac_forest_bandits|Skogsbanditer
+fac_no_faction  = "Ingen Falang"
+fac_commoners  = "Borgare och Bönder"
+fac_outlaws  = "Vildar och Banditer"
+fac_gondor  = "Gondor"
+fac_dwarf  = "Erebor"
+fac_rohan  = "Rohan"
+fac_mordor  = "Mordor"
+fac_isengard  = "Isengård"
+fac_lorien  = "Lothlorien"
+fac_imladris  = "Imladris"
+fac_woodelf  = "Woodland riket"
+fac_dale  = "Dale"
+fac_harad  = "Harad"
+fac_rhun  = "Rhun"
+fac_khand  = "Khand"
+fac_umbar  = "Umbar"
+fac_moria  = "Maria"
+fac_guldur  = "Dol Guldur"
+fac_gundabad  = "Gundabad-berget"
+fac_dunland  = "Dunland"
+fac_beorn  = "Anduin dalen"
+fac_player_supporters_faction  = "Spelar Falang"
+fac_player_faction  = "Spelar Falang"
+fac_brigands  = "Stråtrövare"
+fac_tribal_orcs  = "Orc stam"
+fac_innocents  = "Oskyldiga"
+fac_merchants  = "Handelsfolk"
+fac_manhunters  = "Människojägare"
+fac_deserters  = "Desertörer"
+fac_mountain_bandits  = "Bergsbanditer"
+fac_forest_bandits  = "Skogsbanditer"

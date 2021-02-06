@@ -1,48 +1,48 @@
-skl_trade|Barganhador
-; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
-skl_leadership|Liderança
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
-skl_prisoner_management|Gestão de Prisioneiros
-skl_prisoner_management_desc|Cada nível desta habilidade aumenta o número máximo de prisioneiros em %d. (Habilidade do Líder)
-skl_persuasion|Sobrevivência na Natureza
-skl_persuasion_desc|A capacidade de sobreviver na selva e dobrá-la à sua vontade. Essa habilidade afeta a habilidade do grupo em se esconder do inimigo, e a velocidade do grupo enquanto estiver em terreno arborizado. (Habilidade de Grupo)
-skl_engineer|-----
-skl_engineer_desc|-----
-skl_first_aid|Primeiros Socorros
-skl_first_aid_desc|Heróis recuperam 5%% de vida por cada ponto de vida perdido durante a batalha. (Habilidade de Grupo)
-skl_surgery|Cirurgia
-skl_surgery_desc|Cada ponto nesta habilidade lhe dá 4%% de chance de que um membro do grupo que sofreu ferimentos mortais, fique apenas ferido, ao invés de morrer. (Habilidade de Grupo)
-skl_wound_treatment|Tratar Feridas
-skl_wound_treatment_desc|Velocidade de Regeneração do grupo é aumentada em 20%% por cada nível. (Habilidade de Grupo)
-skl_inventory_management|Gestão de Inventário
-skl_inventory_management_desc|Aumenta a capacidade do inventário em +6 por cada nível. (Habilidade do Líder)
-skl_spotting|Observação
-skl_spotting_desc|Capacidade de avistamento do grupo é aumentada em 10%% por cada nível. (Habilidade do Grupo)
-skl_pathfinding|Cria-Trilhas
-skl_pathfinding_desc|A velocidade do grupo no mapa é aumentada em 3%% por cada nível. (Habilidade do Grupo)
-skl_tactics|Táticas
-skl_tactics_desc|A cada dois níveis desta habilidade, aumenta a vantagem inícial de batalha por 1. (Habilidade de Grupo)
-skl_tracking|Rastreamento
-skl_tracking_desc|Rastros se tornam mais informativos. (Habilidade de Grupo)
-skl_trainer|Treinador
-skl_trainer_desc|Todo dia, cada herói com esta habilidade acrescenta experiência a todos os outros membros do grupo que sejam de um nível menor do que ele/ela. Experiência ganha por nível: {0,4,10,16,23,30,38,46,55,65,80}. (Habilidade Pessoal)
-skl_looting|Saqueamento
-skl_looting_desc|Esta habilidade aumenta a quantidade de saque obtido em 10%% por cada nível. (Habilidade de Grupo)
-skl_horse_archery|Arquearia Montada
-skl_horse_archery_desc|Reduz as penalidades de dano e precisão para arcos e arremessáveis quando montado. (Habilidade Pessoal)
-skl_riding|Cavalgar
-skl_riding_desc|Permite você montar em cavalos (ou outras animais) com maiores níveis de dificuldade e aumenta sua velocidade e manejo. (Habilidade Pessoal)
-skl_athletics|Atletismo
-skl_athletics_desc|Aumenta a sua velocidade de corrida. (Habilidade Pessoal)
-skl_shield|Escudo
-skl_shield_desc|Reduz danos ao escudo (em 8%% por cada nível de habilidade) e aumenta a cobertura e a velocidade do escudo. (Habilidade Pessoal)
-skl_weapon_master|Mestre de Armas
-skl_weapon_master_desc|Facilita o aprendizado de armas e aumenta o limite de competência. Limites vão por: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Habilidade Pessoal)
-skl_power_draw|Poder de Puxada
-skl_power_draw_desc|Permite que o personagem use arcos mais poderosos. Cada ponto de Habilidade (mais 4 pontos fora o requerimento para uso do arco em poder de puxada) aumenta o dano do arco em 14%%. (Habilidade Pessoal)
-skl_power_throw|Poder de Arremesso
-skl_power_throw_desc|Cada ponto aumenta o dano de arremessáveis em 10%%. (Habilidade Pessoal)
-skl_power_strike|Poder de Golpe
-skl_power_strike_desc|Cada ponto nesta habilidade aumenta o dano de armas brancas em 8%%. (Habilidade Pessoal).
-skl_ironflesh|Pele de Ferro
-skl_ironflesh_desc|Cada ponto nesta habilidade aumenta seus pontos de vida em +2. (Habilidade Pessoal)
+skl_trade  = "Barganhador"
+; skl_trade_desc  = "Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)"
+skl_leadership  = "Liderança"
+; skl_leadership_desc  = "Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)"
+skl_prisoner_management  = "Gestão de Prisioneiros"
+skl_prisoner_management_desc  = "Cada nível desta habilidade aumenta o número máximo de prisioneiros em %d. (Habilidade do Líder)"
+skl_persuasion  = "Sobrevivência na Natureza"
+skl_persuasion_desc  = "A capacidade de sobreviver na selva e dobrá-la à sua vontade. Essa habilidade afeta a habilidade do grupo em se esconder do inimigo, e a velocidade do grupo enquanto estiver em terreno arborizado. (Habilidade de Grupo)"
+skl_engineer  = "-----"
+skl_engineer_desc  = "-----"
+skl_first_aid  = "Primeiros Socorros"
+skl_first_aid_desc  = "Heróis recuperam 5%% de vida por cada ponto de vida perdido durante a batalha. (Habilidade de Grupo)"
+skl_surgery  = "Cirurgia"
+skl_surgery_desc  = "Cada ponto nesta habilidade lhe dá 4%% de chance de que um membro do grupo que sofreu ferimentos mortais, fique apenas ferido, ao invés de morrer. (Habilidade de Grupo)"
+skl_wound_treatment  = "Tratar Feridas"
+skl_wound_treatment_desc  = "Velocidade de Regeneração do grupo é aumentada em 20%% por cada nível. (Habilidade de Grupo)"
+skl_inventory_management  = "Gestão de Inventário"
+skl_inventory_management_desc  = "Aumenta a capacidade do inventário em +6 por cada nível. (Habilidade do Líder)"
+skl_spotting  = "Observação"
+skl_spotting_desc  = "Capacidade de avistamento do grupo é aumentada em 10%% por cada nível. (Habilidade do Grupo)"
+skl_pathfinding  = "Cria-Trilhas"
+skl_pathfinding_desc  = "A velocidade do grupo no mapa é aumentada em 3%% por cada nível. (Habilidade do Grupo)"
+skl_tactics  = "Táticas"
+skl_tactics_desc  = "A cada dois níveis desta habilidade, aumenta a vantagem inícial de batalha por 1. (Habilidade de Grupo)"
+skl_tracking  = "Rastreamento"
+skl_tracking_desc  = "Rastros se tornam mais informativos. (Habilidade de Grupo)"
+skl_trainer  = "Treinador"
+skl_trainer_desc  = "Todo dia, cada herói com esta habilidade acrescenta experiência a todos os outros membros do grupo que sejam de um nível menor do que ele/ela. Experiência ganha por nível: {0,4,10,16,23,30,38,46,55,65,80}. (Habilidade Pessoal)"
+skl_looting  = "Saqueamento"
+skl_looting_desc  = "Esta habilidade aumenta a quantidade de saque obtido em 10%% por cada nível. (Habilidade de Grupo)"
+skl_horse_archery  = "Arquearia Montada"
+skl_horse_archery_desc  = "Reduz as penalidades de dano e precisão para arcos e arremessáveis quando montado. (Habilidade Pessoal)"
+skl_riding  = "Cavalgar"
+skl_riding_desc  = "Permite você montar em cavalos (ou outras animais) com maiores níveis de dificuldade e aumenta sua velocidade e manejo. (Habilidade Pessoal)"
+skl_athletics  = "Atletismo"
+skl_athletics_desc  = "Aumenta a sua velocidade de corrida. (Habilidade Pessoal)"
+skl_shield  = "Escudo"
+skl_shield_desc  = "Reduz danos ao escudo (em 8%% por cada nível de habilidade) e aumenta a cobertura e a velocidade do escudo. (Habilidade Pessoal)"
+skl_weapon_master  = "Mestre de Armas"
+skl_weapon_master_desc  = "Facilita o aprendizado de armas e aumenta o limite de competência. Limites vão por: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Habilidade Pessoal)"
+skl_power_draw  = "Poder de Puxada"
+skl_power_draw_desc  = "Permite que o personagem use arcos mais poderosos. Cada ponto de Habilidade (mais 4 pontos fora o requerimento para uso do arco em poder de puxada) aumenta o dano do arco em 14%%. (Habilidade Pessoal)"
+skl_power_throw  = "Poder de Arremesso"
+skl_power_throw_desc  = "Cada ponto aumenta o dano de arremessáveis em 10%%. (Habilidade Pessoal)"
+skl_power_strike  = "Poder de Golpe"
+skl_power_strike_desc  = "Cada ponto nesta habilidade aumenta o dano de armas brancas em 8%%. (Habilidade Pessoal)."
+skl_ironflesh  = "Pele de Ferro"
+skl_ironflesh_desc  = "Cada ponto nesta habilidade aumenta seus pontos de vida em +2. (Habilidade Pessoal)"

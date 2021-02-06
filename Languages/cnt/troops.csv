@@ -124,12 +124,12 @@ trp_c4_rhun_veteran_swift_horseman|盧 恩 熟 練 迅 騎 兵
 trp_c4_rhun_veteran_swift_horseman_pl|盧 恩 熟 練 迅 騎 兵
 trp_c5_rhun_falcon_horseman|獵 鷹 騎 兵
 trp_c5_rhun_falcon_horseman_pl|獵 鷹 騎 兵
-trp_i2_rhun_tribal_warrior|盧 恩 部 落 戰 士 
-trp_i2_rhun_tribal_warrior_pl|盧 恩 部 落 戰 士
-trp_i3_rhun_tribal_infantry|盧 恩 部 落 步 兵 
-trp_i3_rhun_tribal_infantry_pl|盧 恩 部 落 步 兵
-trp_i4_rhun_vet_infantry|盧 恩 部 落 熟 練 步 兵 
-trp_i4_rhun_vet_infantry_pl|盧 恩 部 落 熟 練 步 兵
+; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
+; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i3_rhun_tribal_infantry|盧 恩 部 落 戰 士 
+trp_i3_rhun_tribal_infantry_pl|盧 恩 部 落 戰 士
+; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
+; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
 trp_i5_rhun_ox_warrior|牛 戰 士
 trp_i5_rhun_ox_warrior_pl|牛 戰 士
 trp_c2_rhun_horseman|盧 恩 騎 手

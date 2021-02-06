@@ -1,154 +1,154 @@
-ui_at_learning_limit|(ถึงขีดจำกัดการเรียนของเผ่านี้)
-ui_not_enough_skill_points_to_learn|(มีแต้มสกิลไม่เพียงพอ)
-ui_not_enough_attributetype_to_learn_this_skill|(มี%sไม่เพียงพอที่จะเรียนสกิล)
-; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
-ui_retreated_battle|%sได้เปลี่ยนเส้นทางแล้ว
-ui_riding_skill_not_adequate_to_mount|(สกิลขี่ม้าต่ำเกินไป)
-ui_camp|การกระทำ
-ui_tutorial_inventory|ในม็อดเดอะลาสต์เดย์ ผู้เล่นจะต้องใช้ค่าทรัพยากรเพื่อแลกกับสิ่งของและอุปกรณ์ต่างๆ ค่าทรัพยากรเป็นค่าที่บอกว่าฝ่ายต่างๆสนับสนุนคุณมากเท่าไหร่ และ บอกว่าแต่ละฝ่ายอนุญาตให้คุณใช้ทรัพยากรของฝ่ายได้แค่ไหน
-ui_you_dont_have_value|ไม่มี %s
-ui_merchant_cant_afford_value|%s: คุณให้ของเรามากกว่าที่เราต้องการ! บางทีคุณน่าจะเก็บของบางอย่างไว้(คุณกำลังให้สินค้ามูลค่า %s, เราจ่ายได้แค่ %s)
-ui_merchant_pay_whatever|ไม่เป็นไรข้าไม่ต้องการของพวกนั้น เก็บไว้เถอะ
-ui_horse|ขี่
-ui_reclaim_your_sold_goods|เอาสินค้าของคุณคืนไปก่อนที่จะซื้อ!
-ui_return_your_bought_goods|คืนสินค้าที่คุณเอาไปก่อนที่จะให้มัน!
-ui_return_price|ถ้าเอาคืน: +%d ค่าทรัพยากร
-ui_sell_price|ถ้าให้: +%d ค่าทรัพยากร
-ui_reclaim_price|ถ้าเอาคืน: -%d ค่าทรัพยากร
-ui_buying_price|ราคา: -%d ค่าทรัพยากร
-ui_notification_riding_skill_not_enough|ทักษะขี่ม้าคุณทำเกินไปที่จะขี่มัน
-ui_notification_payment_value|กิน/ใช้ %s
-ui_notification_payment_receive_value|รายรับ %s
-ui_weekly_cost_value|ค่าบำรุงรักษา: %s
-ui_sell|ให้
-ui_hire|เกณฑ์
-ui_notification_cant_hire|(ไม่มีค่าทรัพยากรเพียงพอที่จะทำการเกณฑ์)
-ui_joining_cost_weekly_wage|เกณฑ์: %d ค่าทรัพยากร --ค่าบำรุงรักษา: %d ค่าทรัพยากร
-ui_weekly_wage|ค่าบำรุงรักษา: %d ค่าทรัพยากร
-ui_price|มูลค่า: %d ค่าทรัพยากร
-ui_cant_reload_this_weapon_on_horseback|ไม่สามารถเติมกระสุนได้ขณะขี่ม้า
-ui_delivered_number_damage_to_horse|ทำดาเมจ %d ให้กับม้า
-ui_horse_charged_for_number_damage|ม้าทำความเสียหายจากการพุ่งชน %d
-ui_horse_received_number_damage|ม้าได้รับความเสียหาย %d
-ui_horse_fell_dead|ม้าตาย...
-ui_horse_crippled|ม้าบาดเจ็บ
-ui_you_got_value|ได้รับ %s
-ui_has_deserted_the_party|ได้ออกจากกลุ่ม
-ui_have_deserted_the_party|ได้ออกจากกลุ่ม
-ui_loading_textures|กำลังโหลดเทคเจอร์ (รอซักครู่)..
-ui_order_hold_fire_toggle|หยุดยิง/ยิงอย่างอิสระ (สลับ)
-ui_order_dismount_toggle|สั่งให้ ลงจากหลังม้า/ขี่ม้า (สลับ)
-ui_mount_horses_e_|%s, ขึ้นม้า!
-ui_hold_fire_e_|%s, หยุดยิง!
-ui_fire_at_will_e_|%s, ยิงได้อย่างอิสระ!
-ui_recent_messages|ข้อความสุดท้าย
-ui_value_denars|%d ค่าทรัพยากร
-ui_cannot_be_used_on_horseback|ไม่สามารถใช้ได้เมื่อทำการขี่ม้า/สัตว์
-ui_upgrade_to_value|อัพเกรดเป็น %s
-ui_notification_cant_upgrade|(ไม่สามารถอัพเกรดได้เมื่อกำลังทำการให้ทหาร)
-ui_lance_control|การควบคุมหอก:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused):
-ui_crouch|หมอบ
+ui_at_learning_limit  = "(ถึงขีดจำกัดการเรียนของเผ่านี้)"
+ui_not_enough_skill_points_to_learn  = "(มีแต้มสกิลไม่เพียงพอ)"
+ui_not_enough_attributetype_to_learn_this_skill  = "(มี%sไม่เพียงพอที่จะเรียนสกิล)"
+; ui_explanation_agility  = "Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting."
+ui_retreated_battle  = "%sได้เปลี่ยนเส้นทางแล้ว"
+ui_riding_skill_not_adequate_to_mount  = "(สกิลขี่ม้าต่ำเกินไป)"
+ui_camp  = "การกระทำ"
+ui_tutorial_inventory  = "ในม็อดเดอะลาสต์เดย์ ผู้เล่นจะต้องใช้ค่าทรัพยากรเพื่อแลกกับสิ่งของและอุปกรณ์ต่างๆ ค่าทรัพยากรเป็นค่าที่บอกว่าฝ่ายต่างๆสนับสนุนคุณมากเท่าไหร่ และ บอกว่าแต่ละฝ่ายอนุญาตให้คุณใช้ทรัพยากรของฝ่ายได้แค่ไหน"
+ui_you_dont_have_value  = "ไม่มี %s"
+ui_merchant_cant_afford_value  = "%s: คุณให้ของเรามากกว่าที่เราต้องการ! บางทีคุณน่าจะเก็บของบางอย่างไว้(คุณกำลังให้สินค้ามูลค่า %s, เราจ่ายได้แค่ %s)"
+ui_merchant_pay_whatever  = "ไม่เป็นไรข้าไม่ต้องการของพวกนั้น เก็บไว้เถอะ"
+ui_horse  = "ขี่"
+ui_reclaim_your_sold_goods  = "เอาสินค้าของคุณคืนไปก่อนที่จะซื้อ!"
+ui_return_your_bought_goods  = "คืนสินค้าที่คุณเอาไปก่อนที่จะให้มัน!"
+ui_return_price  = "ถ้าเอาคืน: +%d ค่าทรัพยากร"
+ui_sell_price  = "ถ้าให้: +%d ค่าทรัพยากร"
+ui_reclaim_price  = "ถ้าเอาคืน: -%d ค่าทรัพยากร"
+ui_buying_price  = "ราคา: -%d ค่าทรัพยากร"
+ui_notification_riding_skill_not_enough  = "ทักษะขี่ม้าคุณทำเกินไปที่จะขี่มัน"
+ui_notification_payment_value  = "กิน/ใช้ %s"
+ui_notification_payment_receive_value  = "รายรับ %s"
+ui_weekly_cost_value  = "ค่าบำรุงรักษา: %s"
+ui_sell  = "ให้"
+ui_hire  = "เกณฑ์"
+ui_notification_cant_hire  = "(ไม่มีค่าทรัพยากรเพียงพอที่จะทำการเกณฑ์)"
+ui_joining_cost_weekly_wage  = "เกณฑ์: %d ค่าทรัพยากร --ค่าบำรุงรักษา: %d ค่าทรัพยากร"
+ui_weekly_wage  = "ค่าบำรุงรักษา: %d ค่าทรัพยากร"
+ui_price  = "มูลค่า: %d ค่าทรัพยากร"
+ui_cant_reload_this_weapon_on_horseback  = "ไม่สามารถเติมกระสุนได้ขณะขี่ม้า"
+ui_delivered_number_damage_to_horse  = "ทำดาเมจ %d ให้กับม้า"
+ui_horse_charged_for_number_damage  = "ม้าทำความเสียหายจากการพุ่งชน %d"
+ui_horse_received_number_damage  = "ม้าได้รับความเสียหาย %d"
+ui_horse_fell_dead  = "ม้าตาย..."
+ui_horse_crippled  = "ม้าบาดเจ็บ"
+ui_you_got_value  = "ได้รับ %s"
+ui_has_deserted_the_party  = "ได้ออกจากกลุ่ม"
+ui_have_deserted_the_party  = "ได้ออกจากกลุ่ม"
+ui_loading_textures  = "กำลังโหลดเทคเจอร์ (รอซักครู่).."
+ui_order_hold_fire_toggle  = "หยุดยิง/ยิงอย่างอิสระ (สลับ)"
+ui_order_dismount_toggle  = "สั่งให้ ลงจากหลังม้า/ขี่ม้า (สลับ)"
+ui_mount_horses_e_  = "%s, ขึ้นม้า!"
+ui_hold_fire_e_  = "%s, หยุดยิง!"
+ui_fire_at_will_e_  = "%s, ยิงได้อย่างอิสระ!"
+ui_recent_messages  = "ข้อความสุดท้าย"
+ui_value_denars  = "%d ค่าทรัพยากร"
+ui_cannot_be_used_on_horseback  = "ไม่สามารถใช้ได้เมื่อทำการขี่ม้า/สัตว์"
+ui_upgrade_to_value  = "อัพเกรดเป็น %s"
+ui_notification_cant_upgrade  = "(ไม่สามารถอัพเกรดได้เมื่อกำลังทำการให้ทหาร)"
+ui_lance_control  = "การควบคุมหอก:"
+; ui_manual_easy  = "Manual (Easy)"
+; ui_manual_hard  = "Manual (Hard)"
+; ui_campaign_ai  = "Campaign AI (Unused):"
+ui_crouch  = "หมอบ"
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-; ui_are_you_sure_you_want_to_import_the_character|Are you sure you want to import the character?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
-; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
-; ui_explanation_charisma|Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
-; ui_delivered_number_damage|Delivered %d damage.
-ui_mission_losses_killed|ฆ่า :
-; ui_party_losses|%s  : %d wounded --- %d killed of %d.
-ui_following|กำลังติดตาม
-ui_accompanying|ที่มาพร้อมกับ
-ui_dumping_value_items|%d จะหายไปตลอดกาล คุณแน่ใจหรือไม่?
-; ui_dumping_value_item|One item will be permanently lost, are you sure?
-; ui_notification_requirements_not_met|You don't have the required skills or attributes for this weapon.
-ui_disband|ยุบกลุ่ม
-ui_you_hit_a_friendly_troop|คุณโจมตีฝ่ายเดียวกัน
-ui_you_are_not_carrying_any_arrows|คุณไม่ได้พกพาลูกธนู
-ui_delivered_number_damage_to_horse|ทำดาเมจ %d ให้กับม้า
-ui_received_number_damage|คุณได้รับ %d ดาเมจ
-; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
-; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
-ui_value_killed_by_value|%s ถูกสังหารโดย %s
-ui_value_knocked_unconscious_by_value|%s ถูกทำให้หมดสติโดย %s
-ui_you_got_number_experience|คุณได้รับค่าประสบการณ์ %d หน่วย
-ui_you_have_advanced_to_level_number|คุณได้เลื่อนระดับไปสู่เลเวล %d
-ui_you_got_value|ได้รับ %s
-ui_quest_succeeded_value|ภารกิจสำเร็จ: %s
-; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
-; ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
-ui_shared_number_experience_within_party|คุณได้แบ่งปันค่าประสบการณ์ %d หน่วย กับกองทัพของคุณ
-ui_your_relations_with_value_has_improved_from_number_to_number|ค่าความสัมพันธ์กับ %s ได้พัฒนาจาก  %d ไปสู่  %d
-ui_your_relations_with_value_has_deteriorated_from_number_to_number|ค่าความสัมพันธ์กับ %s ได้ลดลงจากจาก %d ไปสู่ %d
-ui_you_lost_value|คุณสูญเสีย %s
-; ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
-; ui_game_log_window|Game Log Window
-; ui_blunt_short|b
-; ui_tracks|Tracks
-ui_order_button_hold_fire|เตรียมยิง
-ui_order_button_fire_at_will|ยิงเมื่อมีโอกาส
-ui_order_button_fire_orders|คำสั่งยิง
-; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
-; ui_game_log_window|Game Log Window
-; ui_unbalanced|Unbalanced
-; ui_can_crush_through_blocks|Can crush through blocks
+; ui_are_you_sure_you_want_to_import_the_character  = "Are you sure you want to import the character?"
+; ui_explanation_strength  = "Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw."
+; ui_explanation_intelligence  = "Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid."
+; ui_explanation_charisma  = "Charisma: Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade."
+; ui_delivered_number_damage  = "Delivered %d damage."
+ui_mission_losses_killed  = "ฆ่า :"
+; ui_party_losses  = "%s  : %d wounded --- %d killed of %d."
+ui_following  = "กำลังติดตาม"
+ui_accompanying  = "ที่มาพร้อมกับ"
+ui_dumping_value_items  = "%d จะหายไปตลอดกาล คุณแน่ใจหรือไม่?"
+; ui_dumping_value_item  = "One item will be permanently lost, are you sure?"
+; ui_notification_requirements_not_met  = "You don't have the required skills or attributes for this weapon."
+ui_disband  = "ยุบกลุ่ม"
+ui_you_hit_a_friendly_troop  = "คุณโจมตีฝ่ายเดียวกัน"
+ui_you_are_not_carrying_any_arrows  = "คุณไม่ได้พกพาลูกธนู"
+ui_delivered_number_damage_to_horse  = "ทำดาเมจ %d ให้กับม้า"
+ui_received_number_damage  = "คุณได้รับ %d ดาเมจ"
+; ui_you_have_improved_your_proficiency_in_value_to_number  = "You have improved your proficiency in %s to %d."
+; ui_your_proficiency_in_value_has_improved_by_number_to_number  = "Your proficiency in %s has improved by +%d to %d."
+ui_value_killed_by_value  = "%s ถูกสังหารโดย %s"
+ui_value_knocked_unconscious_by_value  = "%s ถูกทำให้หมดสติโดย %s"
+ui_you_got_number_experience  = "คุณได้รับค่าประสบการณ์ %d หน่วย"
+ui_you_have_advanced_to_level_number  = "คุณได้เลื่อนระดับไปสู่เลเวล %d"
+ui_you_got_value  = "ได้รับ %s"
+ui_quest_succeeded_value  = "ภารกิจสำเร็จ: %s"
+; ui_number_of_companions_exceeds_leadership_limit  = " Number of companions exceeds leadership limit."
+; ui_number_of_prisoners_exceeds_prisoner_management_limit  = " Number of prisoners exceeds prisoner management limit."
+ui_shared_number_experience_within_party  = "คุณได้แบ่งปันค่าประสบการณ์ %d หน่วย กับกองทัพของคุณ"
+ui_your_relations_with_value_has_improved_from_number_to_number  = "ค่าความสัมพันธ์กับ %s ได้พัฒนาจาก  %d ไปสู่  %d"
+ui_your_relations_with_value_has_deteriorated_from_number_to_number  = "ค่าความสัมพันธ์กับ %s ได้ลดลงจากจาก %d ไปสู่ %d"
+ui_you_lost_value  = "คุณสูญเสีย %s"
+; ui_change_graphics_settings_explanation  = "Some changes you have made will take effect when you enter a new area."
+; ui_game_log_window  = "Game Log Window"
+; ui_blunt_short  = "b"
+; ui_tracks  = "Tracks"
+ui_order_button_hold_fire  = "เตรียมยิง"
+ui_order_button_fire_at_will  = "ยิงเมื่อมีโอกาส"
+ui_order_button_fire_orders  = "คำสั่งยิง"
+; ui_need_to_learn_prisoner_management  = "You need to learn Prisoner Management skill in order to take prisoners."
+; ui_game_log_window  = "Game Log Window"
+; ui_unbalanced  = "Unbalanced"
+; ui_can_crush_through_blocks  = "Can crush through blocks"
 
-; ui_order_1|Select Order 1
-; ui_order_2|Select Order 2
-; ui_order_3|Select Order 3
-; ui_order_4|Select Order 4
-; ui_order_5|Select Order 5
-; ui_order_6|Select Order 6
-; ui_order_button_hold_this_position|Hold this position
-; ui_order_button_follow_me|Follow me
-; ui_order_button_charge|Charge
-; ui_order_button_stand_ground|Stand ground
-; ui_order_button_retreat|Retreat
-; ui_order_button_advance|Advance ten paces
-; ui_order_button_fall_back|Fall back ten paces
-; ui_order_button_spread_out|Spread out
-; ui_order_button_stand_closer|Stand closer
-ui_order_button_mount_horses|ขี่
-; ui_order_button_dismount|Dismount
-ui_order_button_hold_fire|เตรียมยิง
-ui_order_button_fire_at_will|ยิงเมื่อมีโอกาส
-; ui_order_button_use_blunt_weapons|Use only blunt weapons
-; ui_order_button_use_any_weapon|Use weapons at will
-; ui_order_button_movement_orders|Movement orders
-; ui_order_button_formation_orders|Formation orders
-ui_order_button_fire_orders|คำสั่งยิง
-; ui_follow_me_e_|%s, follow me!
-; ui_charge_e_|%s, charge!!!
-; ui_stand_ground_e_|%s, stand ground!
-; ui_retreat_e_|%s, retreat!
-ui_mount_horses_e_|%s, ขึ้นม้า!
-; ui_dismount_e_|%s, dismount!
-; ui_advance_e_|%s, advance ten paces!
-; ui_fall_back_e_|%s, fall back ten paces!
-; ui_stand_closer_e_|%s, stand closer!
-; ui_spread_out_e_|%s, spread out!
-; ui_use_blunt_weapons_e_|%s, use only blunt weapons!
-; ui_use_any_weapon_e_|%s, use weapons at will!
-ui_hold_fire_e_|%s, หยุดยิง!
-ui_fire_at_will_e_|%s, ยิงได้อย่างอิสระ!
-; ui_hold_this_position_e_|%s, hold this position!
-; ui_infantry|Infantry
-ui_archers|พลธนู
-; ui_cavalry|Cavalry
-; ui_companions|Companions
-; ui_everyone_hear_me|Everyone, hear me!
-; ui_everyone|Everyone
-; ui_everyone_around_me|Nearby Soldiers
-; ui_str_hear_me|%s, hear me!
+; ui_order_1  = "Select Order 1"
+; ui_order_2  = "Select Order 2"
+; ui_order_3  = "Select Order 3"
+; ui_order_4  = "Select Order 4"
+; ui_order_5  = "Select Order 5"
+; ui_order_6  = "Select Order 6"
+; ui_order_button_hold_this_position  = "Hold this position"
+; ui_order_button_follow_me  = "Follow me"
+; ui_order_button_charge  = "Charge"
+; ui_order_button_stand_ground  = "Stand ground"
+; ui_order_button_retreat  = "Retreat"
+; ui_order_button_advance  = "Advance ten paces"
+; ui_order_button_fall_back  = "Fall back ten paces"
+; ui_order_button_spread_out  = "Spread out"
+; ui_order_button_stand_closer  = "Stand closer"
+ui_order_button_mount_horses  = "ขี่"
+; ui_order_button_dismount  = "Dismount"
+ui_order_button_hold_fire  = "เตรียมยิง"
+ui_order_button_fire_at_will  = "ยิงเมื่อมีโอกาส"
+; ui_order_button_use_blunt_weapons  = "Use only blunt weapons"
+; ui_order_button_use_any_weapon  = "Use weapons at will"
+; ui_order_button_movement_orders  = "Movement orders"
+; ui_order_button_formation_orders  = "Formation orders"
+ui_order_button_fire_orders  = "คำสั่งยิง"
+; ui_follow_me_e_  = "%s, follow me!"
+; ui_charge_e_  = "%s, charge!!!"
+; ui_stand_ground_e_  = "%s, stand ground!"
+; ui_retreat_e_  = "%s, retreat!"
+ui_mount_horses_e_  = "%s, ขึ้นม้า!"
+; ui_dismount_e_  = "%s, dismount!"
+; ui_advance_e_  = "%s, advance ten paces!"
+; ui_fall_back_e_  = "%s, fall back ten paces!"
+; ui_stand_closer_e_  = "%s, stand closer!"
+; ui_spread_out_e_  = "%s, spread out!"
+; ui_use_blunt_weapons_e_  = "%s, use only blunt weapons!"
+; ui_use_any_weapon_e_  = "%s, use weapons at will!"
+ui_hold_fire_e_  = "%s, หยุดยิง!"
+ui_fire_at_will_e_  = "%s, ยิงได้อย่างอิสระ!"
+; ui_hold_this_position_e_  = "%s, hold this position!"
+; ui_infantry  = "Infantry"
+ui_archers  = "พลธนู"
+; ui_cavalry  = "Cavalry"
+; ui_companions  = "Companions"
+; ui_everyone_hear_me  = "Everyone, hear me!"
+; ui_everyone  = "Everyone"
+; ui_everyone_around_me  = "Nearby Soldiers"
+; ui_str_hear_me  = "%s, hear me!"
 
-; ui_return|Return
-; ui_factions|Factions
-; ui_troop_upgrades|Troop upgrades
-; ui_hdr_mode|HDR Mode:
-; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)
-; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
-; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)
+; ui_return  = "Return"
+; ui_factions  = "Factions"
+; ui_troop_upgrades  = "Troop upgrades"
+; ui_hdr_mode  = "HDR Mode:"
+; ui_autoexpore  = "Auto-exposure (recommended ON if HDR is turned on)"
+; ui_saving_policy_realistic  = "No quitting without saving! (Not recommended.)"
+; ui_saving_policy_nonrealistic  = "Quit without saving. (Recommended, keep multiple saves.)"

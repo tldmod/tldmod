@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|東夷の鷹の盾
 itm_rhun_bull1_shield|リューンの盾
 itm_rhun_bull2_shield|リューンの盾
 itm_rhun_bull3_shield|リューンの盾
+itm_rhun_shield|リューンのカイト盾
 itm_rhun_armor_a|リューンの軽装戦闘着
 itm_rhun_armor_b|リューンの軽装戦闘着
 itm_rhun_armor_d|リューンの軽装戦闘着
@@ -599,19 +600,13 @@ itm_rhun_armor_n|リューンの戦闘着
 itm_rhun_armor_o|リューンの戦闘着
 itm_rhun_armor_p|リューンの上級鎧
 itm_rhun_armor_k|リューンの上級鎧
-itm_rhun_helm_a|リューンのかぎ兜
-itm_rhun_helm_b|リューンのカマイユ付きかぎ兜
-itm_rhun_helm_c|リューンのホード兜
-itm_rhun_helm_e|リューンの角つきホード兜
-itm_rhun_helm_g|リューンの角つきポット兜
-itm_rhun_helm_h|リューンの角つきポット兜
-itm_rhun_helm_i|リューンの丸兜
-itm_rhun_helm_j|リューンの仮面付き丸兜
-itm_rhun_helm_k|リューンの革兜
-itm_rhun_helm_l|リューンの革兜
-itm_rhun_helm_m|リューンの革兜
-itm_rhun_helm_n|リューン族長の兜
-itm_rhun_helm_o|リューン族長の兜
+itm_rhun_helm_barbed|リューンのかぎ兜
+itm_rhun_helm_horde|リューンのホード兜
+; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_round|リューンの丸兜
+itm_rhun_helm_leather|リューンの革兜
+itm_rhun_helm_chieftain|リューン族長の兜
+; itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|リューンの大斧
 itm_rhun_battleaxe|リューンの戦斧
 itm_rhun_falchion|蛮人のファルシオン
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|蛮人の大ファルシオン
 itm_rhun_greatsword|蛮人の大剣
 itm_rhun_shortsword|蛮人の短剣
 itm_rhun_sword|蛮人の剣
-itm_rhun_shield|リューンのカイト盾
+; itm_rhun_mangler|Rhun Mangler
 itm_dale_light_a|谷間の国民兵の上着
 itm_dale_light_b|北国人の軽装薄金鎧
 itm_dale_med_a|北国人の重装薄金鎧
@@ -631,7 +626,6 @@ itm_dale_heavy_a|谷間の国の鎖かたびらと薄金鎧
 itm_dale_heavy_b|谷間の国の補強されたマント
 itm_dale_heavy_c|ロヴァニオンの鎖かたびら
 ; itm_north_leather|Northmen Leather Vest
-itm_dale_armor_l|谷間の国のゴージット付き上級鎧
 itm_dale_helmet_a|谷間の国歩兵の軽装兜
 itm_dale_helmet_b|谷間の国弓兵の軽装兜
 itm_dale_helmet_c|谷間の国歩兵の兜
@@ -769,8 +763,8 @@ itm_book_of_moria|マザルブルの書
 itm_ring_a_reward|テュルカリシル
 itm_ring_b_reward|フィンワリシル
 itm_dale_bow_reward|バルドの弓
-itm_explosive_reward|アイゼンガルドの地雷
-itm_corsair_trident2|海の怒りの三つ又
+; itm_tome_of_knowledge|Tome of Arcane Knowledge
+; itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|クレバン
 itm_miruvor_reward|ミルヴォールの水筒
 itm_wheeled_cage|車輪のついた巨大な檻
@@ -793,7 +787,7 @@ itm_leather_boots_reward|狩人のブーツ
 itm_rohan_armor_th|ローハンの上級鎧
 itm_wilderness_amulet|精霊のお守り
 itm_prisoner_coll_chain|捕虜の鎖
-itm_witchking_helmet|邪の兜
+; itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|ローリエンの上級鎧
 itm_feet_chains|足の鎖
 itm_feet_chains_dwarf|足の鎖

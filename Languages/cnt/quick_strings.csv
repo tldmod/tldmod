@@ -1,3 +1,4 @@
+; qstr_Received_{reg0}_dama|Received {reg0} damage.
 qstr_Gate_is_breached!|大 門 被 攻 破 了!
 qstr_Gate_opens..._You_ha|大 門 打 開 了... 你 來 到 中 土 世 界 最 神 聖 的 地 方！
 qstr_Secret_place_discove|發 現 秘 密 地 方！
@@ -184,11 +185,12 @@ qstr_+1_to_Riding_Skill|+1 騎 術
 qstr_during_battles|戰爭時
 qstr_+1_to_Pathfinding|+1 嚮 導
 qstr_+1_to_Athletics|+1 運 動
+qstr_+1_to_Wound_Treatmen|+1 療 傷
+; qstr_Use_from_Camp_Menu|Use from Camp Menu
 qstr_Use_from|用 來
 qstr_Action_Menu|動 作 清 單
 qstr_+1_to_First_Aid|+1 急 救
 qstr_+1_to_Weapon_Mastery|+1 武 器 掌 握
-qstr_+1_to_Wound_Treatmen|+1 療 傷
 qstr_+1_to_Tactics|+1 戰 術
 qstr_+1_to_Power_Strike|+1 強 擊
 qstr_+1_to_Strength|+1 力 量
@@ -198,7 +200,10 @@ qstr_+1_to_Wildcraft|+1 野 外 求 生
 qstr_+1_to_Power_Draw|+1 強 弓
 qstr_The_record_of_Balin_|巴 林 的 失 落 探 險 隊 的 紀 錄
 qstr_Who_might_be_interes|誰 會 對 這 個 有 興 趣？
-qstr_Turns_nature_to_your|將 自 然 轉 化 為 你 的 一 方 (效 果 與 Wildcraft 一 起 擴 展 )
+; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
+; qstr_Turns_nature_to_your|Turns nature to your side
+; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
+; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
 qstr_+1_to_Trainer|+1 教 練
 qstr_Recruits_Tribal_Orcs|招 募 部 落 獸 人
 qstr_rally|集 結
@@ -207,12 +212,13 @@ qstr_+{reg1}_{s3}_in_batt|戰 鬥 中 +{reg1} {s3}
 qstr_+1_to_Charisma|+1 魅 力
 qstr_+1_to_Surgery|+1 手 術
 qstr_+1_to_Intelligence|+1 智 力
-qstr_+1_to_Ironflesh|+1 鐵 骨
-qstr_+1_to_Prisoner_Mgmt|+1 俘 虜 管 理
+; qstr_+2_to_Surgery|+2 to Surgery
 qstr_when_equipped|已 裝 備 時
 qstr_+1_to_Riding|+1 騎 術
 qstr_+1_to_Mounted_Archer|+1 騎 射 
+qstr_+1_to_Prisoner_Mgmt|+1 俘 虜 管 理
 qstr_+2_to_Tactics|+2 工 程
+; qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} 偵 察
 qstr__Scales_with_Wildcra|野 外 求 生 比 例
 qstr_+1_to_Spotting|+1 偵 察
@@ -220,8 +226,10 @@ qstr_+2_to_Athletics|+2 跑 動
 qstr_Less_Dunnish_upkeep|減 少 登 丹 的 消 耗
 qstr_Less_Wargs_upkeep|減 少 座 狼 的 消 耗
 qstr_Light_Armor|輕 型 鎧 甲
+; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
+; qstr_Lead_more_Orcs|Lead more Orcs
 qstr_+{reg1}_to_Party_Mor|+{reg1} 隊 伍 士 氣
-qstr_Shoot_Speed:_{reg55}|射 擊 速 度 ： {reg55}
+; qstr_Range:_{reg55}|Range: {reg55}
 qstr_Do_you_want_to_disem|你 想 上 岸 嗎？
 qstr_Move_here|移 到 此 處
 qstr_View_notes|查 看 筆 記
@@ -268,6 +276,8 @@ qstr_{s3}_is_no_longer_un|{s3} 不 再 被 圍 困 。
 qstr_Enemies_spotted_near|在 {s1} 附 近 發 現 了 敵 人 。
 qstr_Your_relation_with_{|你 與 {s1} 的 關 係 提 升 了 。
 qstr_Your_relation_with_{s|你 與 {s1} 的 關 係 惡 化 了 。
+; qstr_{s1}_gained_faction_|{s1} gained faction strength!
+; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?曾:正} 在 {s3} 。
 qstr_{s2}_{reg3?was:is}_t|{s2} {reg3?已 經:正 在} 趕 去 {s3} ， 而 {reg4?她:他} {reg3?之 前:應 該} 在 {s4} {reg3?:附 近}。
 qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?:正} 在 野 外 某 地 ， 而 {reg4?她:他} {reg3?之 前:應 該} 在 {s3} {reg3?:附 近} 。
@@ -391,7 +401,6 @@ qstr_Blunt_Weapons|鈍 類 武 器
 qstr_Infantry__{reg1}_|步 兵 ({reg1})
 qstr_Archers__{reg2}_|弓 箭 手 ({reg2})
 qstr_Cavalry__{reg3}_|騎 兵 ({reg3})
-qstr_Orc_brew_finished!|獸 人 釀 造 完 了 ！
 qstr_Given_by:_{s62}|給 予 ： {s62}
 qstr_Given_on:_{s60}|開 始 於 ： {s60}
 qstr_You_have_{reg0}_days|你 有 {reg0} 天 來 完 成 這 個 任 務 。
@@ -684,6 +693,10 @@ qstr_A_thunderstorm_from_|來 自 迷 霧 山 脈 的 雷 暴 在 戰 場 上 �
 qstr_A_thunderstorm_from_t|來 自 迷 霧 山 脈 的 雷 暴 在 戰 場 上 肆 虐 。 弓 箭 手 在 這 種 天 氣 下 很 作 戰 。
 qstr_A_poisonous_fog_from|來 自 多 爾 哥 多 的 有 毒 霧 在 戰 場 上 徘 徊 。 你 和 你 的 軍 隊 感 到 虛 弱 。 人 們 都 很 害 怕 。
 qstr_A_poisonous_fog_from_|來 自 多 爾 哥 多 的 有 毒 霧 在 戰 場 上 徘 徊 。 你 沒 有 任 何 不 同 ， 但 你 聽 到 你 的 敵 人 受 苦 ， 你 可 以 聞 到 他 們 的 恐 懼 。
+; qstr_You_shapeshift_into_|You shapeshift into a bear!
+; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
+; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
+; qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|你 的 坐 騎 走 路 磕 磕 絆 絆 ！ 看 起 來 是 瘸 腿 了 。
 qstr_Bitten_by_your_own_w|你 被 自 己 的 座 狼 咬 了 !
 qstr_You_weigh_too_much_f|你 太 重 了 不 適 合 矮 種 馬  ！
@@ -714,7 +727,9 @@ qstr_Formations_turned_OF|選 項 菜 單 中 的 格 式 關 閉
 qstr_Division_{reg1}_{s2}_g|部 隊 {reg1} {s2} 進 入 其 記 憶 的 位 置 ......
 qstr_Division_{reg1}_{s2}_f|部 隊 {reg1} {s2} 形 成 一 條 線 (記 憶 )
 qstr_Division_{reg1}_{s2}_fo|部 隊 {reg1} {s2} 形 成 {reg0} 行 (記 憶 )
+qstr_Delivered_{reg60}_da|造 成 {reg60} 點 傷 害 。 
 qstr_DEBUG__Health_Regen_|DEBUG (健 康 再 生 ) ： {s1} 恢復 {reg0}% 健康 = +{reg1}% 力量
+; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
 qstr_Three_Nazgul_are_cir|三 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
 qstr_Two_Nazgul_are_circl|兩 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
 qstr_A_Nazgul_is_circling|一 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
@@ -765,7 +780,7 @@ qstr_End_them_all!|結 束 他 們 ！
 qstr_Drive_them_back!|把 它 們 推 回 去 ！
 qstr_Protect_the_City!|保 護 城 市 ！
 qstr_Forward!_Board_them!|向 前 ！ 登 上 它 們 ！
-qstr_The_Last_Days_of_the_|第 三 紀 的 末 日 有 一 個 高 級 圍 攻 AI ， 與 原 生 大 不 相 同 。 包 括 隊 友 在 內 的 所 有 部 隊 都 分 佈 在 不 同 的 隊 伍 中 (左 翼 / 中 鋒 / 右 翼 ) 。^^然 後 隊 友 負 責 指 揮 他 們 的 部 隊 ， 而 AI 負 責 指 揮 其 他 隊 伍 。 這 允 許 進 行 更 聰 明 的 ， 基 於 小隊 的 攻 城 戰 。^^部 署 後 的 最 初 幾 秒 內 ， 部 隊 和 增 援 部 隊 會 被 命 令 ， 在 那 之 後 ， 你 的 部 隊 可 以 再 次 被 指 揮 。
+; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
 qstr_Reached_Gauntlet_wav|第 {reg1} 波 ！
 qstr_Ballista:_out_of_amm|弩 砲 ： 彈 藥 用 盡 ！
 qstr_Ballista:_turn_CURSO|弩 砲 ： 轉 動 'CURSOR' ， 瞄 準 'LSHIFT' ， 射 擊 'SPACE' ， 設 置 射 擊 'T' ， 退 出 'F'
@@ -883,6 +898,7 @@ qstr_Doubled|雙 倍
 qstr_Tripled|三 倍
 qstr_Quadrupled|四 倍
 qstr_You_drank_the_Ent_Wa|你 喝 了 樹 人 水 ...
+; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
 qstr_Fangorn_search:_fail|搜 索 法 貢 森 林 ： 失 敗 。
 qstr_^^^A_great_victory!^|^^^一 場 偉 大 的 勝 利 ！ ^^^這 就 是 法 貢 森 林 的 神 話 ...
 ; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
@@ -1057,6 +1073,7 @@ qstr_Guard_Legion_of_{s6}|{s6} 的 守 衛 軍 團
 qstr_Scouts_report_that_{|根 據 報 告 顯 示 ： {s6} 在 {s7} 周 圍 聚 集 了 龐 大 的 軍 隊 ， 他 們 在 做 最 後 的 掙 扎 ， 企 圖 保 衛 他 們 的 首 都 。
 qstr_The_forces_of_{s2}_e|{s2} 的 軍 隊 在 {s15} 建 立 了 一 個 前 線 營 地 ！
 qstr_The_hosts_of_{s2}_ma|{s2} 的 軍 隊 前 來 保 衛 他 們 的 家 園 ！
+qstr_{playername}_s_Reser|{playername} 的 預 備 隊
 qstr_Gondor_has_called_fo|剛 鐸 已 經 要 求 助 援 軍 了 ！
 qstr_Gondor_is_accompanyi|剛 鐸 跟 隨 元 帥 ！
 qstr_{s5}_has_stopped_fol|{s5} 不 再 跟 隨 你 。
@@ -1175,7 +1192,6 @@ qstr_Greetings_{s23}.|向 你 問 好 ， {s23} 。
 qstr_So_you_are_{s23}._I_|啊 ， 你 是 {s23} 。 我 聽 說 你 為 我 們 的 朋 友 {s25} 戰 鬥 ， 所 以 我 覺 得 我 該 把 你 當 成 盟 友 。
 qstr_I_need_volunteers_wi|我 需 要 一 些 志 願 者 跟 我 去 完 成 危 險 的 任 務 。
 qstr_I_need_some_soldiers|我 需 要 一 些 士 兵 來 補 充 戰 損 。
-qstr_{playername}_s_Reser|{playername} 的 預 備 隊
 ; qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
 ; qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
 qstr_Excellent_job_{s23}!|幹 得 漂 亮 ， {s23} ！ 真 希 望 我 方 的 所 有 指 揮 官 都 像 你 這 樣 盡 責 。 ^
@@ -1399,7 +1415,9 @@ qstr_{s9}_asked_you_to_de|{s9} 要你摧毀 {s1} 附近的偵察營。
 qstr_{s9}_asked_you_to_def|{s9} 要你保衛 {s1} 附近遭受攻擊的村莊。
 qstr_{s9}_asked_you_to_ra|{s9} 要你襲擊 {s1} 附近的一個村莊。
 qstr_These_soldiers_may_w|這些士兵勢必會在我的計劃中力挽狂瀾，{playername}。\n我相信你訓練得很好。\n我對你非常感謝。
+; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
 qstr_Good_work_in_shaping|你讓這些新兵煥發了新生，{playername}。\n我一直都堅信你是最能幹的。\n但願這些士兵能比上一批堅持更久。\n不然的話請再來找我，我還會需要你的幫助的。
+; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
 qstr_Well_the_soldiers_ar|好了長官，這些士兵現在歸你指揮了。\n我希望你能帶他們平安歸來。
 qstr_Well_you_may_do_as_y|好的，您請自便。\n如您所需，我和我手下的將隨時為您效勞。
 qstr_{s9}_asked_you_to_br|{s9} 要 你 為 軍 隊帶 回 一 個 兇 暴 的 巨 魔 。

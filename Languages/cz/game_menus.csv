@@ -68,6 +68,7 @@ mno_start_go|GONDOR, království Bílé věže
 mno_start_ro|ROHAN, lidé koní
 mno_start_du|DUNADÁNI, prastará dynastie lidí
 mno_start_be|MEDDĚDOVCI, medvědí lidé
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
 mno_start_da|severní království DOLU
 menu_start_good_elf|^^^^^^^^^^ve kterém lese přebýváš, Starší?
 mno_start_ri|ROKLINKA, dům pána Elronda
@@ -199,6 +200,7 @@ mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?zaútočili:se 
 mno_control_allies_menu|Použij svůj vliv, abys velel svým spojencům v boji.
 mno_encounter_hide|Skryj se před nepřítelem...
 mno_special_whip|Spěcháte směrem k nim, praskající {s4}.
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
 mno_encounter_leave|uvolnit se.
 mno_encounter_retreat|Nechat za sebou nějaké vojáky, aby kryli tvůj ústup.
 mno_player_control_allies_simple|Zavel a zaútoč na nepřítele

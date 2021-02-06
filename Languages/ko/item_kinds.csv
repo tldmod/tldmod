@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|동부인 매 방패
 itm_rhun_bull1_shield|룬 방패
 itm_rhun_bull2_shield|룬 방패
 itm_rhun_bull3_shield|룬 방패
+itm_rhun_shield|룬 연모양 방패
 itm_rhun_armor_a|룬 가벼운 전투복
 itm_rhun_armor_b|룬 가벼운 전투복
 itm_rhun_armor_d|룬 가벼운 전투복
@@ -599,19 +600,13 @@ itm_rhun_armor_n|룬 전투복
 itm_rhun_armor_o|룬 전투복
 itm_rhun_armor_p|룬 고귀한 갑옷
 itm_rhun_armor_k|룬 고귀한 갑옷
-itm_rhun_helm_a|룬 가시돋친 투구
-itm_rhun_helm_b|룬 가시돋친 목덜미 투구
-itm_rhun_helm_c|룬 부족 투구
-itm_rhun_helm_e|룬 뿔달린 부족 투구
-itm_rhun_helm_g|룬 뿔달린 냄비
-itm_rhun_helm_h|룬 뿔달린 냄비
-itm_rhun_helm_i|룬 둥근 투구
-itm_rhun_helm_j|룬 둥근 가면 투구
-itm_rhun_helm_k|룬 가죽 투구
-itm_rhun_helm_l|룬 가죽 투구
-itm_rhun_helm_m|룬 가죽 투구
-itm_rhun_helm_n|룬 족장 투구
-itm_rhun_helm_o|룬 족장 투구
+itm_rhun_helm_barbed|룬 가시돋친 투구
+itm_rhun_helm_horde|룬 부족 투구
+; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_round|룬 둥근 투구
+itm_rhun_helm_leather|룬 가죽 투구
+itm_rhun_helm_chieftain|룬 족장 투구
+; itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|룬 거대한 도끼
 itm_rhun_battleaxe|룬 전투 도끼
 itm_rhun_falchion|야만인 펄션
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|야만인 거대한 펄션
 itm_rhun_greatsword|야만인 대검
 itm_rhun_shortsword|야만인 숏소드
 itm_rhun_sword|야만인 검
-itm_rhun_shield|룬 연모양 방패
+; itm_rhun_mangler|Rhun Mangler
 itm_dale_light_a|데일 민병대 조끼
 itm_dale_light_b|북부인 가벼운 찰갑
 itm_dale_med_a|북부인 두꺼운 찰갑
@@ -631,7 +626,6 @@ itm_dale_heavy_a|데일 찰갑 겹갑옷
 itm_dale_heavy_b|데일 장갑을 덧댄 외투
 itm_dale_heavy_c|로바니온 사슬갑옷
 ; itm_north_leather|Northmen Leather Vest
-itm_dale_armor_l|데일 고귀한 목 가리개
 itm_dale_helmet_a|데일 가벼운 보병 투구
 itm_dale_helmet_b|데일 가벼운 궁병 투구
 itm_dale_helmet_c|데일 보병 투구
@@ -769,8 +763,8 @@ itm_book_of_moria|마자르불의 책
 itm_ring_a_reward|툴카르실
 itm_ring_b_reward|핀와르실
 itm_dale_bow_reward|바르드의 활
-itm_explosive_reward|아이센가드 폭탄
-itm_corsair_trident2|바다분노의 삼지창
+; itm_tome_of_knowledge|Tome of Arcane Knowledge
+; itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|사루만의 까마귀
 itm_miruvor_reward|미루보르 플라스크
 itm_wheeled_cage|가시박힌 이동식 우리
@@ -793,7 +787,7 @@ itm_leather_boots_reward|사냥꾼 부츠
 itm_rohan_armor_th|로한 왕실 갑옷
 itm_wilderness_amulet|황야 부적
 itm_prisoner_coll_chain|포로용 쇠사슬
-itm_witchking_helmet|사악한 투구
+; itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|로리엔 왕실 갑옷
 itm_feet_chains|쇠고랑
 itm_feet_chains_dwarf|쇠고랑

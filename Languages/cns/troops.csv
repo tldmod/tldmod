@@ -42,8 +42,8 @@ trp_townsman|市民
 trp_townsman_pl|市民
 trp_watchman|女市民
 trp_watchman_pl|女市民
-; trp_i1_woodmen_man|Woodmen Settler
-; trp_i1_woodmen_man_pl|Woodmen Settlers
+trp_i1_woodmen_man|林地人拓荒民
+trp_i1_woodmen_man_pl|林地人拓荒民
 trp_i2_woodmen_forester|林地人森林行者
 trp_i2_woodmen_forester_pl|林地人森林行者
 trp_i3_woodmen_skilled_forester|林地人熟练森林行者
@@ -126,20 +126,20 @@ trp_c5_rhun_falcon_horseman|隼骑
 trp_c5_rhun_falcon_horseman_pl|隼骑
 trp_i2_rhun_tribal_warrior|卢恩部落战士
 trp_i2_rhun_tribal_warrior_pl|卢恩部落战士
-trp_i3_rhun_tribal_infantry|卢恩部落步兵
-trp_i3_rhun_tribal_infantry_pl|卢恩部落步兵
-trp_i4_rhun_vet_infantry|卢恩资深步兵
-trp_i4_rhun_vet_infantry_pl|卢恩资深步兵
-; trp_i5_rhun_ox_warrior|Warrior of the Ox
-; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
+trp_i3_rhun_tribal_infantry|卢恩部落战士
+trp_i3_rhun_tribal_infantry_pl|卢恩部落战士
+trp_i4_rhun_vet_infantry|卢恩资深战士
+trp_i4_rhun_vet_infantry_pl|卢恩资深战士
+trp_i5_rhun_ox_warrior|卢恩蛮牛战士
+trp_i5_rhun_ox_warrior_pl|卢恩蛮牛战士
 trp_c2_rhun_horseman|卢恩骑手
 trp_c2_rhun_horseman_pl|卢恩骑手
 trp_c3_rhun_outrider|卢恩护卫
 trp_c3_rhun_outrider_pl|卢恩护卫
 trp_c4_rhun_noble_rider|卢恩贵族骑兵
 trp_c4_rhun_noble_rider_pl|卢恩贵族骑兵
-; trp_c5_rhun_warrider|Warrider of Rhun
-; trp_c5_rhun_warrider_pl|Warriders of Rhun
+trp_c5_rhun_warrider|卢恩战争骑兵
+trp_c5_rhun_warrider_pl|卢恩战争骑兵
 trp_c6_rhun_warlord|卢恩军阀
 trp_c6_rhun_warlord_pl|卢恩军阀
 trp_i1_dwarf_apprentice|矮人学徒
@@ -279,7 +279,7 @@ trp_a3_pinnath_archer_pl|皮那斯杰林射手
 trp_c6_pinnath_leader|皮那斯杰林卫队长
 trp_c6_pinnath_leader_pl|皮那斯杰林卫队长
 trp_a1_blackroot_hunter|黑谷猎人
-; trp_a1_blackroot_hunter_pl|Hunters of Blackroot Vale
+trp_a1_blackroot_hunter_pl|黑谷猎人
 trp_a2_blackroot_bowman|黑谷弓箭手
 trp_a2_blackroot_bowman_pl|黑谷弓箭手
 trp_a3_blackroot_archer|黑谷射手
@@ -310,12 +310,12 @@ trp_a2_lorien_warden|罗斯洛立安守护者
 trp_a2_lorien_warden_pl|罗斯洛立安守护者
 trp_a3_lorien_vet_warden|罗斯洛立安资深守护者
 trp_a3_lorien_vet_warden_pl|罗斯洛立安资深守护者
-; trp_a4_lorien_gal_warden|Galadhrim Warden
-; trp_a4_lorien_gal_warden_pl|Galadhrim Wardens
+trp_a4_lorien_gal_warden|罗斯洛立安精锐守卫
+trp_a4_lorien_gal_warden_pl|罗斯洛立安精锐守卫
 trp_a5_lorien_gal_royal_warden|罗斯洛立安皇家守护者
 trp_a5_lorien_gal_royal_warden_pl|罗斯洛立安皇家守护者
-; trp_a6_lorien_grey_warden|Grey Warden
-; trp_a6_lorien_grey_warden_pl|Grey Wardens
+trp_a6_lorien_grey_warden|罗斯洛立安灰卫
+trp_a6_lorien_grey_warden_pl|罗斯洛立安灰卫
 trp_galadhrim_royal_marksman|罗斯洛立安皇家神射手
 trp_galadhrim_royal_marksman_pl|罗斯洛立安皇家神射手
 trp_noldorin_mounted_archer|诺多精灵骑射手
@@ -330,10 +330,10 @@ trp_a5_lorien_gal_royal_archer|罗斯洛立安皇家神射手
 trp_a5_lorien_gal_royal_archer_pl|罗斯洛立安皇家神射手
 trp_i3_lorien_inf|罗斯洛立安步兵
 trp_i3_lorien_inf_pl|罗斯洛立安步兵
-; trp_i4_lorien_gal_inf|Galadhrim Infantry
-; trp_i4_lorien_gal_inf_pl|Galadhrim Infantry
-; trp_i5_lorien_gal_royal_inf|Galadhrim Royal Guard
-; trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Guards
+trp_i4_lorien_gal_inf|罗斯洛立安精锐步兵
+trp_i4_lorien_gal_inf_pl|罗斯洛立安精锐步兵
+trp_i5_lorien_gal_royal_inf|罗斯洛立安王室步兵
+trp_i5_lorien_gal_royal_inf_pl|罗斯洛立安王室步兵
 trp_lothlorien_standard_bearer|罗斯洛立安旗手
 trp_lothlorien_standard_bearer_pl|罗斯洛立安旗手
 trp_a1_greenwood_scout|幽暗密林斥候
@@ -344,74 +344,74 @@ trp_a3_greenwood_archer|幽暗密林射手
 trp_a3_greenwood_archer_pl|幽暗密林射手
 trp_a4_greenwood_veteran_archer|幽暗密林资深射手
 trp_a4_greenwood_veteran_archer_pl|幽暗密林资深射手
-; trp_a5_greenwood_master_archer|Greenwood Master Archer
-; trp_a5_greenwood_master_archer_pl|Greenwood Master Archers
-; trp_a6_greenwood_chosen_marksman|Thranduil's Chosen Marksman
-; trp_a6_greenwood_chosen_marksman_pl|Thranduil's Chosen Marksmen
+trp_a5_greenwood_master_archer|幽暗密林精锐射手
+trp_a5_greenwood_master_archer_pl|幽暗密林精锐射手
+trp_a6_greenwood_chosen_marksman|瑟兰迪尔王选神射手
+trp_a6_greenwood_chosen_marksman_pl|瑟兰迪尔王选神射手
 trp_a3_greenwood_sentinel|幽暗密林守卫
 trp_a3_greenwood_sentinel_pl|幽暗密林守卫
 trp_a4_greenwood_vet_sentinel|幽暗密林资深守卫
 trp_a4_greenwood_vet_sentinel_pl|幽暗密林资深守卫
-; trp_a5_greenwood_vigilant|Greenwood Guardian
-; trp_a5_greenwood_vigilant_pl|Greenwood Guardians
+trp_a5_greenwood_vigilant|幽暗密林守护者
+trp_a5_greenwood_vigilant_pl|幽暗密林守护者
 trp_i2_greenwood_infantry|幽暗密林步兵
 trp_i2_greenwood_infantry_pl|幽暗密林步兵
 trp_i3_greenwood_vet_infantry|幽暗密林资深步兵
 trp_i3_greenwood_vet_infantry_pl|幽暗密林资深步兵
 trp_i4_greenwood_elite_infantry|幽暗密林精英步兵
 trp_i4_greenwood_elite_infantry_pl|幽暗密林精英步兵
-; trp_i5_greenwood_chosen_shieldmaster|Thranduil's Chosen Shield Master
-; trp_i5_greenwood_chosen_shieldmaster_pl|Thranduil's Chosen Shield Masters
-; trp_i5_greenwood_chosen_spearmaster|Thranduil's Chosen Spear Master
-; trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Chosen Spear Masters
+trp_i5_greenwood_chosen_shieldmaster|瑟兰迪尔王选战盾卫
+trp_i5_greenwood_chosen_shieldmaster_pl|瑟兰迪尔王选战盾卫
+trp_i5_greenwood_chosen_spearmaster|瑟兰迪尔王选长枪卫
+trp_i5_greenwood_chosen_spearmaster_pl|瑟兰迪尔王选长枪卫
 trp_i5_greenwood_standard_bearer|幽暗密林旗手
 trp_i5_greenwood_standard_bearer_pl|幽暗密林旗手
 trp_a1_riv_scout|瑞文戴尔斥候
 trp_a1_riv_scout_pl|瑞文戴尔斥候
 trp_a2_riv_vet_scout|瑞文戴尔资深斥候
 trp_a2_riv_vet_scout_pl|瑞文戴尔资深斥候
-; trp_a3_riv_archer|Rivendell Archer
-; trp_a3_riv_archer_pl|Rivendell Archers
-; trp_a4_riv_vet_archer|Rivendell Veteran Archer
-; trp_a4_riv_vet_archer_pl|Rivendell Veteran Archers
-; trp_a5_riv_master_archer|Rivendell Master Archer
-; trp_a5_riv_master_archer_pl|Rivendell Master Archers
-; trp_a6_riv_guardian|Guardian of Imladris
-; trp_a6_riv_guardian_pl|Guardians of Imladris
-; trp_i3_riv_swordbearer|Rivendell Swordbearer
-; trp_i3_riv_swordbearer_pl|Rivendell Swordbearers
-; trp_i4_riv_vet_swordbearer|Rivendell Veteran Swordbearer
-; trp_i4_riv_vet_swordbearer_pl|Rivendell Veteran Swordbearers
-; trp_i5_riv_swordmaster|Rivendell Swordmaster
-; trp_i5_riv_swordmaster_pl|Rivendell Swordmasters
-; trp_i6_riv_champion|Champion of Imladris
-; trp_i6_riv_champion_pl|Champions of Imladris
-; trp_ac5_riv_rider|Rivendell Rider
-; trp_ac5_riv_rider_pl|Rivendell Riders
-; trp_ac6_riv_knight|Knight of Imladris
-; trp_ac6_riv_knight_pl|Knights of Imladris
+trp_a3_riv_archer|瑞文戴尔射手
+trp_a3_riv_archer_pl|瑞文戴尔射手
+trp_a4_riv_vet_archer|瑞文戴尔资深射手
+trp_a4_riv_vet_archer_pl|瑞文戴尔资深射手
+trp_a5_riv_master_archer|瑞文戴尔神射手
+trp_a5_riv_master_archer_pl|瑞文戴尔神射手
+trp_a6_riv_guardian|瑞文戴尔守护者
+trp_a6_riv_guardian_pl|瑞文戴尔守护者
+trp_i3_riv_swordbearer|瑞文戴尔剑士
+trp_i3_riv_swordbearer_pl|瑞文戴尔剑士
+trp_i4_riv_vet_swordbearer|瑞文戴尔资深剑士
+trp_i4_riv_vet_swordbearer_pl|瑞文戴尔资深剑士
+trp_i5_riv_swordmaster|瑞文戴尔精锐剑士
+trp_i5_riv_swordmaster_pl|瑞文戴尔精锐剑士
+trp_i6_riv_champion|瑞文戴尔王室剑士
+trp_i6_riv_champion_pl|瑞文戴尔王室剑士
+trp_ac5_riv_rider|瑞文戴尔骑兵
+trp_ac5_riv_rider_pl|瑞文戴尔骑兵
+trp_ac6_riv_knight|瑞文戴尔骑士
+trp_ac6_riv_knight_pl|瑞文戴尔骑士
 trp_i6_rivendell_standard_bearer|瑞文戴尔旗手
 trp_i6_rivendell_standard_bearer_pl|瑞文戴尔旗手
 trp_a1_arnor_scout|登丹斥候
 trp_a1_arnor_scout_pl|登丹斥候
 trp_a2_arnor_vet_scout|登丹追踪者
 trp_a2_arnor_vet_scout_pl|登丹追踪者
-; trp_i3_arnor_swordsman|Dunedain Swordsman
-; trp_i3_arnor_swordsman_pl|Dunedain Swordsmen
-; trp_i4_arnor_vet_swordsman|Dunedain Veteran Swordsman
-; trp_i4_arnor_vet_swordsman_pl|Dunedain Veteran Swordsmen
-; trp_i5_arnor_champion|Champion of Arnor
-; trp_i5_arnor_champion_pl|Champions of Arnor
-; trp_c4_arnor_horseman|Dunedain Horseman
-; trp_c4_arnor_horseman_pl|Dunedain Horsemen
+trp_i3_arnor_swordsman|登丹剑士
+trp_i3_arnor_swordsman_pl|登丹剑士
+trp_i4_arnor_vet_swordsman|登丹资深剑士
+trp_i4_arnor_vet_swordsman_pl|登丹资深剑士
+trp_i5_arnor_champion|登丹精锐剑士
+trp_i5_arnor_champion_pl|登丹精锐剑士
+trp_c4_arnor_horseman|登丹骑兵
+trp_c4_arnor_horseman_pl|登丹骑兵
 trp_c5_arnor_knight|亚尔诺骑士
 trp_c5_arnor_knight_pl|亚尔诺骑士
 trp_a3_arnor_ranger|登丹游侠
 trp_a3_arnor_ranger_pl|登丹游侠
 trp_a4_arnor_vet_ranger|登丹资深游侠
 trp_a4_arnor_vet_ranger_pl|登丹资深游侠
-; trp_a5_arnor_master_ranger|Master Ranger of Arnor
-; trp_a5_arnor_master_ranger_pl|Master Rangers of Arnor
+trp_a5_arnor_master_ranger|登丹精锐游侠
+trp_a5_arnor_master_ranger_pl|登丹精锐游侠
 trp_i1_rohan_youth|洛汗青年
 trp_i1_rohan_youth_pl|洛汗青年
 trp_i2_guardsman_of_rohan|洛汗守卫
@@ -466,8 +466,8 @@ trp_dismounted_thengel_guard_of_rohan|洛汗先王塞哲尔护卫
 trp_dismounted_thengel_guard_of_rohan_pl|洛汗先王塞哲尔护卫
 trp_i1_harad_levy|哈拉德新兵
 trp_i1_harad_levy_pl|哈拉德新兵
-; trp_i3_harad_infantry|Harad Light Footman
-; trp_i3_harad_infantry_pl|Harad Light Footmen
+trp_i3_harad_infantry|哈拉德轻步兵
+trp_i3_harad_infantry_pl|哈拉德轻步兵
 trp_i4_harad_spearman|哈拉德长枪手
 trp_i4_harad_spearman_pl|哈拉德长枪手
 trp_i5_harad_tiger_guard|虎卫
@@ -486,8 +486,8 @@ trp_c2_harondor_scout|哈隆铎斥候
 trp_c2_harondor_scout_pl|哈隆铎斥候
 trp_c3_harondor_rider|哈隆铎骑手
 trp_c3_harondor_rider_pl|哈隆铎骑手
-; trp_c4_harondor_light_cavalry|Harondor Light Rider
-; trp_c4_harondor_light_cavalry_pl|Harondor Light Riders
+trp_c4_harondor_light_cavalry|哈隆铎骑兵
+trp_c4_harondor_light_cavalry_pl|哈隆铎骑兵
 trp_c5_harondor_serpent_knight|金蛇骑士
 trp_c5_harondor_serpent_knight_pl|金蛇骑士
 trp_ac3_harondor_skirmisher|哈隆铎散兵
@@ -526,28 +526,28 @@ trp_i2_khand_pit_dog|侃德斑犬
 trp_i2_khand_pit_dog_pl|侃德斑犬
 trp_i3_khand_warrior|侃德战士
 trp_i3_khand_warrior_pl|侃德战士
-; trp_i4_khand_vet_warrior|Khand Veteran Warrior
-; trp_i4_khand_vet_warrior_pl|Khand Veteran Warriors
-; trp_i5_khand_war_master|Variag War Master
-; trp_i5_khand_war_master_pl|Variag War Masters
+trp_i4_khand_vet_warrior|侃德资深战士
+trp_i4_khand_vet_warrior_pl|侃德资深战士
+trp_i5_khand_war_master|维瑞亚精锐战士
+trp_i5_khand_war_master_pl|维瑞亚精锐战士
 trp_c2_khand_pony_rider|维瑞亚矮种马骑手
 trp_c2_khand_pony_rider_pl|维瑞亚矮种马骑手
 trp_c3_khand_horseman|侃德骑手
 trp_c3_khand_horseman_pl|侃德骑手
 trp_c4_khand_heavy_horseman|侃德重骑手
 trp_c4_khand_heavy_horseman_pl|侃德重骑手
-; trp_c5_khand_kataphrakt|Variag Ironclad
-; trp_c5_khand_kataphrakt_pl|Variag Ironclads
-; trp_c5_khand_lance_kataphrakt|Variag Lancer
-; trp_c5_khand_lance_kataphrakt_pl|Variag Lancers
+trp_c5_khand_kataphrakt|维瑞亚具装骑兵
+trp_c5_khand_kataphrakt_pl|维瑞亚具装骑兵
+trp_c5_khand_lance_kataphrakt|维瑞亚具装枪骑兵
+trp_c5_khand_lance_kataphrakt_pl|维瑞亚具装枪骑兵
 trp_i4_khand_halberdier|侃德阔剑士
 trp_i4_khand_halberdier_pl|侃德阔剑士
-; trp_i5_khand_halberd_master|Variag Halberd Master
-; trp_i5_khand_halberd_master_pl|Variag Halberd Masters
+trp_i5_khand_halberd_master|维瑞亚精锐斧枪手
+trp_i5_khand_halberd_master_pl|维瑞亚精锐斧枪手
 trp_i3_khand_pitfighter|侃德洞穴斗士
 trp_i3_khand_pitfighter_pl|侃德洞穴斗士
-; trp_i4_khand_pit_champion|Khand Pit Champion
-; trp_i4_khand_pit_champion_pl|Khand Pit Champions
+trp_i4_khand_pit_champion|侃德狂角斗士
+trp_i4_khand_pit_champion_pl|侃德狂角斗士
 trp_i5_khand_pit_master|维瑞亚洞穴大师
 trp_i5_khand_pit_master_pl|维瑞亚洞穴大师
 trp_ac3_khand_skirmisher|侃德散兵
@@ -1037,7 +1037,7 @@ trp_knight_4_1|斯诺格
 trp_knight_4_2|斯娜格尔
 trp_knight_4_6|塔斯克穆将军
 trp_knight_4_7|莫格斯兰将军
-; trp_knight_4_11|Ruel
+trp_knight_4_11|鲁尔
 trp_knight_4_12|黑发贝兰宁
 trp_knight_4_16|博罗格斯
 trp_knight_4_17|格瑞莫斯
@@ -1235,7 +1235,7 @@ trp_barman_camroth_pl|树堡
 trp_barman_thalls|酒店老板
 trp_barman_thalls_pl|王座室
 trp_barman_beorn|酒店老板
-; trp_barman_beorn_pl|Beorn's Hall
+trp_barman_beorn_pl|比翁大厅
 trp_barman_moria|酒店老板
 trp_barman_moria_pl|酋长房间
 trp_barman_dale|酒店老板
@@ -1586,8 +1586,8 @@ trp_c5_rhovanion_noble_pl|罗马尼安贵族
 trp_npc18|图巴苏
 trp_npc19|海德克
 trp_npc20|齐古法
-trp_werewolf|狼人
-trp_werewolf_pl|狼人
+trp_werewolf|妖狼
+trp_werewolf_pl|妖狼
 trp_moria_troll|洞穴食人妖
 trp_moria_troll_pl|洞穴食人妖
 trp_moria_vet_troll|资深洞穴食人妖

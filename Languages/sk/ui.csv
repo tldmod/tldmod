@@ -1,154 +1,154 @@
-ui_at_learning_limit|(na hranici pre túto rasu)
-ui_not_enough_skill_points_to_learn|(nedostatok bodov schopnosti)
-ui_not_enough_attributetype_to_learn_this_skill|(nedostatok %s pre túto schopnosť)
-ui_explanation_agility|Obratnosť: Každý bod ti dá päť bodov zbraní a zvyšuje rýchlosť zbrane o 0,5%. Nasledujúce schopnosti nemôžu byť zvýšené nad 1/3 Obratnosti: Majster zbrane, Štít, Atletika, Jazdectvo, Streľba zo sedla, Koristenie
-ui_retreated_battle|%s zbehlo
-ui_riding_skill_not_adequate_to_mount|(Jazdecká schopnosť príliš nízka)
-ui_camp|Činnosti
-ui_tutorial_inventory|V Posledných dňoch budeš potrebovať pre získanie výbavy Body zásob. Body zásob sú mierkou toho, jak ochotné sú frakcie zásobovať ťa, a na koľko frakčných zásob máš nárok.
-ui_you_dont_have_value|Nemáš %s
-ui_merchant_cant_afford_value|%s: Dávaš nám toho viac než potrebujeme! Nechaj si radšej viac pre seba (odovzdávaš majetok %s, môžeme použiť len %s).
-ui_merchant_pay_whatever|Nie, nič z toho nepotrebujem, nechajte si to.
-ui_horse|Osedlať
-ui_reclaim_your_sold_goods|Než to urobíte, zoberte si späť odovzdaný tovar!
-ui_return_your_bought_goods|Než to urobíte, vráťte späť tovar ktorý ste vzali!
-ui_return_price|Pri vrátení +%d Bod.Z.
-ui_sell_price|Pri odovzdaní +%dBod.Z.
-ui_reclaim_price|Žiadať späť -%d Bod.Z.
-ui_buying_price|Požadovať -%d Bod.Z
-ui_notification_riding_skill_not_enough|Tvoja Jazdecká schopnosť je príliš nízka k jazdeniu na tomto.
-ui_notification_payment_value|Spotrebuje %s
-ui_notification_payment_receive_value|Získá %s
-ui_weekly_cost_value|Žold %s
-ui_sell|Predať
-ui_hire|Verbovať
-ui_notification_cant_hire|(nedostatok Bod.Z. na verbovanie)
-ui_joining_cost_weekly_wage|Verbovanie: %d Bod.Z. -- Žold %dBod.Z.
-ui_weekly_wage|Žold %d Bod.Z.
-ui_price|Cena %d Res.P.
-ui_cant_reload_this_weapon_on_horseback|Túto zbraň nemôžeš používať v sedle.
-ui_delivered_number_damage_to_horse|Spôsobené %d poškodenie zvieraťu.
-ui_horse_charged_for_number_damage|Zviera spôsobilo %d poškodenie.
-ui_horse_received_number_damage|Zviera utrpelo %d poškodenie.
-ui_horse_fell_dead|Jazdecké zviera zomrelo...
-ui_horse_crippled|Jazdecké zviera zmrzačené...
-ui_you_got_value|%s získané.
-ui_has_deserted_the_party|opustil/a družinu.
-ui_have_deserted_the_party|opustili družinu.
-ui_loading_textures|Nahrávam textury (buď trpezlivý)...
-ui_order_hold_fire_toggle|Nestrieľajte/Strieľajte podľa vlastného uváženia (prepnúť)
-ui_order_dismount_toggle|Prikázať Zosadnúť/Nasadnúť (prepnúť)
-ui_mount_horses_e_|%s, Nasadnúť!
-ui_hold_fire_e_|%s, Nestrieľajte!
-ui_fire_at_will_e_|%s, Strieľajte podľa vlastného uváženia!
-ui_recent_messages|Posledné  správy
-ui_value_denars|%d Bodov Z.
-ui_cannot_be_used_on_horseback|Nemožné použiť v sedle
-ui_upgrade_to_value|Vylepšiť na %s
-ui_notification_cant_upgrade|(Nemožné povyšovať jednotky predané do inej skupiny)
-ui_lance_control|Ovladateľnosť jazdeckej kopije
-ui_manual_easy|Manuálny (ľahký)
-ui_manual_hard|Manuálny (ťažkých)
-ui_campaign_ai|Umelá inteligencia behom kampane (Nepoužité):
-ui_crouch|Drepnúť si
+ui_at_learning_limit  = "(na hranici pre túto rasu)"
+ui_not_enough_skill_points_to_learn  = "(nedostatok bodov schopnosti)"
+ui_not_enough_attributetype_to_learn_this_skill  = "(nedostatok %s pre túto schopnosť)"
+ui_explanation_agility  = "Obratnosť: Každý bod ti dá päť bodov zbraní a zvyšuje rýchlosť zbrane o 0,5%. Nasledujúce schopnosti nemôžu byť zvýšené nad 1/3 Obratnosti: Majster zbrane, Štít, Atletika, Jazdectvo, Streľba zo sedla, Koristenie"
+ui_retreated_battle  = "%s zbehlo"
+ui_riding_skill_not_adequate_to_mount  = "(Jazdecká schopnosť príliš nízka)"
+ui_camp  = "Činnosti"
+ui_tutorial_inventory  = "V Posledných dňoch budeš potrebovať pre získanie výbavy Body zásob. Body zásob sú mierkou toho, jak ochotné sú frakcie zásobovať ťa, a na koľko frakčných zásob máš nárok."
+ui_you_dont_have_value  = "Nemáš %s"
+ui_merchant_cant_afford_value  = "%s: Dávaš nám toho viac než potrebujeme! Nechaj si radšej viac pre seba (odovzdávaš majetok %s, môžeme použiť len %s)."
+ui_merchant_pay_whatever  = "Nie, nič z toho nepotrebujem, nechajte si to."
+ui_horse  = "Osedlať"
+ui_reclaim_your_sold_goods  = "Než to urobíte, zoberte si späť odovzdaný tovar!"
+ui_return_your_bought_goods  = "Než to urobíte, vráťte späť tovar ktorý ste vzali!"
+ui_return_price  = "Pri vrátení +%d Bod.Z."
+ui_sell_price  = "Pri odovzdaní +%dBod.Z."
+ui_reclaim_price  = "Žiadať späť -%d Bod.Z."
+ui_buying_price  = "Požadovať -%d Bod.Z"
+ui_notification_riding_skill_not_enough  = "Tvoja Jazdecká schopnosť je príliš nízka k jazdeniu na tomto."
+ui_notification_payment_value  = "Spotrebuje %s"
+ui_notification_payment_receive_value  = "Získá %s"
+ui_weekly_cost_value  = "Žold %s"
+ui_sell  = "Predať"
+ui_hire  = "Verbovať"
+ui_notification_cant_hire  = "(nedostatok Bod.Z. na verbovanie)"
+ui_joining_cost_weekly_wage  = "Verbovanie: %d Bod.Z. -- Žold %dBod.Z."
+ui_weekly_wage  = "Žold %d Bod.Z."
+ui_price  = "Cena %d Res.P."
+ui_cant_reload_this_weapon_on_horseback  = "Túto zbraň nemôžeš používať v sedle."
+ui_delivered_number_damage_to_horse  = "Spôsobené %d poškodenie zvieraťu."
+ui_horse_charged_for_number_damage  = "Zviera spôsobilo %d poškodenie."
+ui_horse_received_number_damage  = "Zviera utrpelo %d poškodenie."
+ui_horse_fell_dead  = "Jazdecké zviera zomrelo..."
+ui_horse_crippled  = "Jazdecké zviera zmrzačené..."
+ui_you_got_value  = "%s získané."
+ui_has_deserted_the_party  = "opustil/a družinu."
+ui_have_deserted_the_party  = "opustili družinu."
+ui_loading_textures  = "Nahrávam textury (buď trpezlivý)..."
+ui_order_hold_fire_toggle  = "Nestrieľajte/Strieľajte podľa vlastného uváženia (prepnúť)"
+ui_order_dismount_toggle  = "Prikázať Zosadnúť/Nasadnúť (prepnúť)"
+ui_mount_horses_e_  = "%s, Nasadnúť!"
+ui_hold_fire_e_  = "%s, Nestrieľajte!"
+ui_fire_at_will_e_  = "%s, Strieľajte podľa vlastného uváženia!"
+ui_recent_messages  = "Posledné  správy"
+ui_value_denars  = "%d Bodov Z."
+ui_cannot_be_used_on_horseback  = "Nemožné použiť v sedle"
+ui_upgrade_to_value  = "Vylepšiť na %s"
+ui_notification_cant_upgrade  = "(Nemožné povyšovať jednotky predané do inej skupiny)"
+ui_lance_control  = "Ovladateľnosť jazdeckej kopije"
+ui_manual_easy  = "Manuálny (ľahký)"
+ui_manual_hard  = "Manuálny (ťažkých)"
+ui_campaign_ai  = "Umelá inteligencia behom kampane (Nepoužité):"
+ui_crouch  = "Drepnúť si"
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-ui_are_you_sure_you_want_to_import_the_character|Si si istý, že chceš previesť túto postavu?
-ui_explanation_strength|Sila: Každý bod ti pridáva +1 bodov života. Následujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnoty Sily: Valivuk, Mocný úder, Mocný vrh, Sila napnutia tetivy
-ui_explanation_intelligence|Inteligencia: Každý bod inteligencie ti ihneď dá ďalší bod skúseností a mierne navýši tvoj zisk XP pri rôznych činnostiach. Nasledujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnotu Inteligencie: Tréner, Stopovanie, Taktika, Cestovanie, Ostražitosť, Inventár, Liečenie zranení, Chirurgia a Prvá pomoc.
-ui_explanation_charisma|Charizma: Každý bod charizmy zvyšuje najvyšší možný počet členov tvojej družiny +1. Nasledujúce schopnosti nemôžu byť vylepšené nad 1/3 charizmy: Väzenie, Vodcovstvo, Obchod.
-ui_delivered_number_damage|Spôsobil si %d poškodenia.
-ui_mission_losses_killed|zabitých :
-ui_party_losses|%s : %d  ranených --- %d zabitých z %d.
-ui_following|Následuje
-ui_accompanying|Robí spoločnosť
-ui_dumping_value_items|%dpredmetov sa nenávratne stratí, si si svojou voľbou istý?
-ui_dumping_value_item|Jeden predmet sa nenávratne stratí, sisi svojou voľbou istý?
-ui_notification_requirements_not_met|Nemáš dostatočné schopnosti či vlastnosti pre túto zbraň.
-ui_disband|Prepustiť z armády
-ui_you_hit_a_friendly_troop|Zasiahol si priateľskú jednotku!
-ui_you_are_not_carrying_any_arrows|Nenesieš so sebou žiadne šípy.
-ui_delivered_number_damage_to_horse|Spôsobené %d poškodenie zvieraťu.
-ui_received_number_damage|Utrpel si %d poškodenia.
-ui_you_have_improved_your_proficiency_in_value_to_number|Zlepšila sa ti zručnosť %sna %d.
-ui_your_proficiency_in_value_has_improved_by_number_to_number|Zlepšila sa ti zručnosť %so %d na %d.
-ui_value_killed_by_value|%s bol zabitý %s.
-ui_value_knocked_unconscious_by_value|%supadol do bezvedomia, môže za to%s.
-ui_you_got_number_experience|Získal si %d skúseností.
-ui_you_have_advanced_to_level_number|Postúpil si na úroveň %d.
-ui_you_got_value|%s získané.
-ui_quest_succeeded_value|Úloha splnená: %s.
-ui_number_of_companions_exceeds_leadership_limit|Počet spoločníkov prekročil hranicu vodcovstva.
-ui_number_of_prisoners_exceeds_prisoner_management_limit|Počet zajatcov prekročil hranicu väzenia.
-ui_shared_number_experience_within_party|Družina sa podelila o %d skúsenosti. 
-ui_your_relations_with_value_has_improved_from_number_to_number|Tvoj vzťah s %ssa zlepšil z %d na %d.
-ui_your_relations_with_value_has_deteriorated_from_number_to_number|Tvoj vzťah s %s sa zhoršil z %dna %d.
-ui_you_lost_value|Stratil si %s.
-ui_change_graphics_settings_explanation|Niektoré zmeny, ktoré si previedol, sa prejavia až pri vstupe do novej oblasti.
-ui_game_log_window|Záznamové Okno Hry
-ui_blunt_short|b
-ui_tracks|Stopy
-ui_order_button_hold_fire|Zastaviť streľbu
-ui_order_button_fire_at_will|Voľná streľba
-ui_order_button_fire_orders|Rozkazy streľby
-ui_need_to_learn_prisoner_management|Potrebuješ sa naučiť schopnosť Väzenie aby si mohol získať zajatcov.
-ui_game_log_window|Záznamové Okno Hry
-ui_unbalanced|Nevyvážené
-ui_can_crush_through_blocks|Môže prerážať skrz ochranu
+ui_are_you_sure_you_want_to_import_the_character  = "Si si istý, že chceš previesť túto postavu?"
+ui_explanation_strength  = "Sila: Každý bod ti pridáva +1 bodov života. Následujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnoty Sily: Valivuk, Mocný úder, Mocný vrh, Sila napnutia tetivy"
+ui_explanation_intelligence  = "Inteligencia: Každý bod inteligencie ti ihneď dá ďalší bod skúseností a mierne navýši tvoj zisk XP pri rôznych činnostiach. Nasledujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnotu Inteligencie: Tréner, Stopovanie, Taktika, Cestovanie, Ostražitosť, Inventár, Liečenie zranení, Chirurgia a Prvá pomoc."
+ui_explanation_charisma  = "Charizma: Každý bod charizmy zvyšuje najvyšší možný počet členov tvojej družiny +1. Nasledujúce schopnosti nemôžu byť vylepšené nad 1/3 charizmy: Väzenie, Vodcovstvo, Obchod."
+ui_delivered_number_damage  = "Spôsobil si %d poškodenia."
+ui_mission_losses_killed  = "zabitých :"
+ui_party_losses  = "%s : %d  ranených --- %d zabitých z %d."
+ui_following  = "Následuje"
+ui_accompanying  = "Robí spoločnosť"
+ui_dumping_value_items  = "%dpredmetov sa nenávratne stratí, si si svojou voľbou istý?"
+ui_dumping_value_item  = "Jeden predmet sa nenávratne stratí, sisi svojou voľbou istý?"
+ui_notification_requirements_not_met  = "Nemáš dostatočné schopnosti či vlastnosti pre túto zbraň."
+ui_disband  = "Prepustiť z armády"
+ui_you_hit_a_friendly_troop  = "Zasiahol si priateľskú jednotku!"
+ui_you_are_not_carrying_any_arrows  = "Nenesieš so sebou žiadne šípy."
+ui_delivered_number_damage_to_horse  = "Spôsobené %d poškodenie zvieraťu."
+ui_received_number_damage  = "Utrpel si %d poškodenia."
+ui_you_have_improved_your_proficiency_in_value_to_number  = "Zlepšila sa ti zručnosť %sna %d."
+ui_your_proficiency_in_value_has_improved_by_number_to_number  = "Zlepšila sa ti zručnosť %so %d na %d."
+ui_value_killed_by_value  = "%s bol zabitý %s."
+ui_value_knocked_unconscious_by_value  = "%supadol do bezvedomia, môže za to%s."
+ui_you_got_number_experience  = "Získal si %d skúseností."
+ui_you_have_advanced_to_level_number  = "Postúpil si na úroveň %d."
+ui_you_got_value  = "%s získané."
+ui_quest_succeeded_value  = "Úloha splnená: %s."
+ui_number_of_companions_exceeds_leadership_limit  = "Počet spoločníkov prekročil hranicu vodcovstva."
+ui_number_of_prisoners_exceeds_prisoner_management_limit  = "Počet zajatcov prekročil hranicu väzenia."
+ui_shared_number_experience_within_party  = "Družina sa podelila o %d skúsenosti. "
+ui_your_relations_with_value_has_improved_from_number_to_number  = "Tvoj vzťah s %ssa zlepšil z %d na %d."
+ui_your_relations_with_value_has_deteriorated_from_number_to_number  = "Tvoj vzťah s %s sa zhoršil z %dna %d."
+ui_you_lost_value  = "Stratil si %s."
+ui_change_graphics_settings_explanation  = "Niektoré zmeny, ktoré si previedol, sa prejavia až pri vstupe do novej oblasti."
+ui_game_log_window  = "Záznamové Okno Hry"
+ui_blunt_short  = "b"
+ui_tracks  = "Stopy"
+ui_order_button_hold_fire  = "Zastaviť streľbu"
+ui_order_button_fire_at_will  = "Voľná streľba"
+ui_order_button_fire_orders  = "Rozkazy streľby"
+ui_need_to_learn_prisoner_management  = "Potrebuješ sa naučiť schopnosť Väzenie aby si mohol získať zajatcov."
+ui_game_log_window  = "Záznamové Okno Hry"
+ui_unbalanced  = "Nevyvážené"
+ui_can_crush_through_blocks  = "Môže prerážať skrz ochranu"
 
-ui_order_1|Vybrať povel 1
-ui_order_2|Vybrať povel 2
-ui_order_3|Vybrať povel 3
-ui_order_4|Vybrať povel 4
-ui_order_5|Vybrať povel 5
-ui_order_6|Vybrať povel 6
-ui_order_button_hold_this_position|Držte postavenie!
-ui_order_button_follow_me|Následujte ma!
-ui_order_button_charge|Útok!
-ui_order_button_stand_ground|Stáť!
-ui_order_button_retreat|Ústup!
-ui_order_button_advance|Postup o desať krokov vpred!
-ui_order_button_fall_back|Ústup od desať krokov!
-ui_order_button_spread_out|Rozptýliť!
-ui_order_button_stand_closer|Zomknúť!
-ui_order_button_mount_horses|Nasadnúť
-ui_order_button_dismount|Zosadnúť
-ui_order_button_hold_fire|Zastaviť streľbu
-ui_order_button_fire_at_will|Voľná streľba
-ui_order_button_use_blunt_weapons|Používajte len ťažké zbrane!
-ui_order_button_use_any_weapon|Používajte zbrane podľa vlastnej voľby!
-ui_order_button_movement_orders|Rozkazy pohybu
-ui_order_button_formation_orders|Rozkazy útvarov
-ui_order_button_fire_orders|Rozkazy streľby
-ui_follow_me_e_|%s, následujte ma!
-ui_charge_e_|%s, útok!!!
-ui_stand_ground_e_|%s, stáť!
-ui_retreat_e_|%s, ústup!
-ui_mount_horses_e_|%s, Nasadnúť!
-ui_dismount_e_|%s, zosadnúť!
-ui_advance_e_|%s, postupujte o desať krokov vpred!
-ui_fall_back_e_|%s, ustúpte o desať krokov!
-ui_stand_closer_e_|%s, zomknite sa!
-ui_spread_out_e_|%s, rozptýliť!
-ui_use_blunt_weapons_e_|%s, používajte len ťažké zbrane!
-ui_use_any_weapon_e_|%s, používajte zbrane podľa vlastného uváženia!
-ui_hold_fire_e_|%s, Nestrieľajte!
-ui_fire_at_will_e_|%s, Strieľajte podľa vlastného uváženia!
-ui_hold_this_position_e_|%s, držte postavenie!
-ui_infantry|Pechota
-ui_archers|Lukostrelci
-ui_cavalry|Kavaléria
-ui_companions|Spoločníci
-ui_everyone_hear_me|Všetci ma počúvajte!
-ui_everyone|Všetci
-ui_everyone_around_me|Neďalekí Vojaci
-ui_str_hear_me|%s, počúvajte!
+ui_order_1  = "Vybrať povel 1"
+ui_order_2  = "Vybrať povel 2"
+ui_order_3  = "Vybrať povel 3"
+ui_order_4  = "Vybrať povel 4"
+ui_order_5  = "Vybrať povel 5"
+ui_order_6  = "Vybrať povel 6"
+ui_order_button_hold_this_position  = "Držte postavenie!"
+ui_order_button_follow_me  = "Následujte ma!"
+ui_order_button_charge  = "Útok!"
+ui_order_button_stand_ground  = "Stáť!"
+ui_order_button_retreat  = "Ústup!"
+ui_order_button_advance  = "Postup o desať krokov vpred!"
+ui_order_button_fall_back  = "Ústup od desať krokov!"
+ui_order_button_spread_out  = "Rozptýliť!"
+ui_order_button_stand_closer  = "Zomknúť!"
+ui_order_button_mount_horses  = "Nasadnúť"
+ui_order_button_dismount  = "Zosadnúť"
+ui_order_button_hold_fire  = "Zastaviť streľbu"
+ui_order_button_fire_at_will  = "Voľná streľba"
+ui_order_button_use_blunt_weapons  = "Používajte len ťažké zbrane!"
+ui_order_button_use_any_weapon  = "Používajte zbrane podľa vlastnej voľby!"
+ui_order_button_movement_orders  = "Rozkazy pohybu"
+ui_order_button_formation_orders  = "Rozkazy útvarov"
+ui_order_button_fire_orders  = "Rozkazy streľby"
+ui_follow_me_e_  = "%s, následujte ma!"
+ui_charge_e_  = "%s, útok!!!"
+ui_stand_ground_e_  = "%s, stáť!"
+ui_retreat_e_  = "%s, ústup!"
+ui_mount_horses_e_  = "%s, Nasadnúť!"
+ui_dismount_e_  = "%s, zosadnúť!"
+ui_advance_e_  = "%s, postupujte o desať krokov vpred!"
+ui_fall_back_e_  = "%s, ustúpte o desať krokov!"
+ui_stand_closer_e_  = "%s, zomknite sa!"
+ui_spread_out_e_  = "%s, rozptýliť!"
+ui_use_blunt_weapons_e_  = "%s, používajte len ťažké zbrane!"
+ui_use_any_weapon_e_  = "%s, používajte zbrane podľa vlastného uváženia!"
+ui_hold_fire_e_  = "%s, Nestrieľajte!"
+ui_fire_at_will_e_  = "%s, Strieľajte podľa vlastného uváženia!"
+ui_hold_this_position_e_  = "%s, držte postavenie!"
+ui_infantry  = "Pechota"
+ui_archers  = "Lukostrelci"
+ui_cavalry  = "Kavaléria"
+ui_companions  = "Spoločníci"
+ui_everyone_hear_me  = "Všetci ma počúvajte!"
+ui_everyone  = "Všetci"
+ui_everyone_around_me  = "Neďalekí Vojaci"
+ui_str_hear_me  = "%s, počúvajte!"
 
-ui_return|Návrat
-ui_factions|Frakcie
-ui_troop_upgrades|Vylepšenia vojakov
-ui_hdr_mode|HDR Mód:
-ui_autoexpore|Auto-vystavenie (odporúča sa ON pokiaľ je HDR zapnuté)
-ui_saving_policy_realistic|Neukončovať hru bez uloženia! (Neodporúča sa)
-ui_saving_policy_nonrealistic|Možnosť ukončiť hru bez uloženia. (Odporúčané, vytvor si pre istotu viacero ukladacích slotov)
+ui_return  = "Návrat"
+ui_factions  = "Frakcie"
+ui_troop_upgrades  = "Vylepšenia vojakov"
+ui_hdr_mode  = "HDR Mód:"
+ui_autoexpore  = "Auto-vystavenie (odporúča sa ON pokiaľ je HDR zapnuté)"
+ui_saving_policy_realistic  = "Neukončovať hru bez uloženia! (Neodporúča sa)"
+ui_saving_policy_nonrealistic  = "Možnosť ukončiť hru bez uloženia. (Odporúčané, vytvor si pre istotu viacero ukladacích slotov)"

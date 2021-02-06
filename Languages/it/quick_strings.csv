@@ -1,3 +1,4 @@
+qstr_Received_{reg0}_dama|Ricevuti {reg0} danni.
 qstr_Gate_is_breached!|Il cancello è stato abbattuto !
 qstr_Gate_opens..._You_ha|Il portale è aperto.. Hai raggiunto il più sacro luogo nella Terra di Mezzo !
 qstr_Secret_place_discove|Luogo segreto scoperto !
@@ -184,11 +185,12 @@ qstr_+1_to_Riding_Skill|+1 Abilità nel Cavalcare
 qstr_during_battles|durante le battaglie
 qstr_+1_to_Pathfinding|+1 in Orientamento
 qstr_+1_to_Athletics|+1 in atleticità
+qstr_+1_to_Wound_Treatmen|+1 in Trattamento Ferite
+; qstr_Use_from_Camp_Menu|Use from Camp Menu
 qstr_Use_from|Usa da
 qstr_Action_Menu|Menu azioni
 qstr_+1_to_First_Aid|+1 in Primo soccorso
 qstr_+1_to_Weapon_Mastery|+1 in Maestria nelle armi
-qstr_+1_to_Wound_Treatmen|+1 in Trattamento Ferite
 qstr_+1_to_Tactics|+1 in Tattica
 qstr_+1_to_Power_Strike|+1 in Colpo potente
 qstr_+1_to_Strength|+1 in Forza
@@ -198,7 +200,10 @@ qstr_+1_to_Wildcraft|+1 a Mimetismo
 qstr_+1_to_Power_Draw|+1 in Potenza di Tiro
 qstr_The_record_of_Balin_|La cronaca della spedizione perduta di Balin.
 qstr_Who_might_be_interes|Chi può essere interessato a ciò?
-qstr_Turns_nature_to_your|Volgi la natura dalla tua parte (gli effetti si bilanciano con la Mimetismo)
+; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
+; qstr_Turns_nature_to_your|Turns nature to your side
+; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
+; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
 qstr_+1_to_Trainer|+1 in addestramento
 qstr_Recruits_Tribal_Orcs|Recluta Orchi Tribali
 qstr_rally|spronare
@@ -207,12 +212,13 @@ qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} in battaglia
 qstr_+1_to_Charisma|+1 in Carisma
 qstr_+1_to_Surgery|+1 in Chirurgia
 qstr_+1_to_Intelligence|+1 in Intelligenza
-qstr_+1_to_Ironflesh|+1 in Resistenza
-qstr_+1_to_Prisoner_Mgmt|+1 in Controllo prigionieri
+; qstr_+2_to_Surgery|+2 to Surgery
 qstr_when_equipped|Se equipaggiato
 qstr_+1_to_Riding|+1 a Cavalcare
 qstr_+1_to_Mounted_Archer|+1 in Arco in Sella
+qstr_+1_to_Prisoner_Mgmt|+1 in Controllo prigionieri
 qstr_+2_to_Tactics|+2 in Tattica
+; qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} in Avvistamento
 qstr__Scales_with_Wildcra|(Scaglie Mimetiche)
 qstr_+1_to_Spotting|+1 in Avvistamento
@@ -220,8 +226,10 @@ qstr_+2_to_Athletics|+2 in Atleticità
 qstr_Less_Dunnish_upkeep|Minore gestione Dunlandiana
 qstr_Less_Wargs_upkeep|Minore gestione Wargs
 qstr_Light_Armor|Armatura Leggera
+; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
+; qstr_Lead_more_Orcs|Lead more Orcs
 qstr_+{reg1}_to_Party_Mor|+{reg1} al morale della compagnia
-qstr_Shoot_Speed:_{reg55}|Velocità Tiro: {reg55}
+; qstr_Range:_{reg55}|Range: {reg55}
 qstr_Do_you_want_to_disem|Vuoi sbarcare ?
 qstr_Move_here|Vai qui
 qstr_View_notes|Controlla le note
@@ -268,6 +276,8 @@ qstr_{s3}_is_no_longer_un|{s3} non è più sotto assedio.
 qstr_Enemies_spotted_near|Avvistati nemici vicino a {s1}.
 qstr_Your_relation_with_{|I tuoi rapporti con {s1} sono migliorati.
 qstr_Your_relation_with_{s|I tuoi rapporti con {s1} si sono deteriorati.
+; qstr_{s1}_gained_faction_|{s1} gained faction strength!
+; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?era:è attualmente} a {s3}.
 qstr_{s2}_{reg3?was:is}_t|{s2} {reg3?stava:sta} viaggiando verso {s3} e... {reg3?era:dovrebbe essere} vicino a {s4}{reg3?: in questo momento}.
 qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?stava:sta} vagando nelle terre selvagge e... {reg3?era:dovrebbe essere} vicino a {s3}{reg3?: in questo momento}.
@@ -391,7 +401,6 @@ qstr_Blunt_Weapons|Armi spuntate
 qstr_Infantry__{reg1}_|Fanteria ({reg1})
 qstr_Archers__{reg2}_|Arcieri ({reg2})
 qstr_Cavalry__{reg3}_|Cavalleria ({reg3})
-qstr_Orc_brew_finished!|Birra degli orchi terminata !
 qstr_Given_by:_{s62}|Dato da: {s62}
 qstr_Given_on:_{s60}|Data incarico : {s60}
 qstr_You_have_{reg0}_days|Hai {reg0} giorni per completare questo incarico.
@@ -684,6 +693,10 @@ qstr_A_thunderstorm_from_|Un temporale dalle Montagne Nebbiose infuria sul campo
 qstr_A_thunderstorm_from_t|Una tempesta dalle Montagne Nebbiose imperversa sul campo di battaglia. Gli arcieri incontrano difficoltà in un clima simle.
 qstr_A_poisonous_fog_from|Una nebbia venefica da Dol Guldur indugia sul campo di battaglia. Tu e i tuoi soldati vi sentite indeboliti. C'è spavento fra gli uomini.
 qstr_A_poisonous_fog_from_|Una venefica nebbia da Dol Guldur indugia sul campo di battaglia. Tu non percepisci alcuna differenza, ma senti i tuoi nemici soffrire e percepisci l'odore della loro paura.
+; qstr_You_shapeshift_into_|You shapeshift into a bear!
+; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
+; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
+; qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|Il tuo animale incespica ! Sembra sia zoppo.
 qstr_Bitten_by_your_own_w|Sei stato morso dal tuo stesso Warg !
 qstr_You_weigh_too_much_f|Pesi troppo per un pony !
@@ -714,7 +727,9 @@ qstr_Formations_turned_OF|Formazioni DISATTIVATE nel menu opzioni
 qstr_Division_{reg1}_{s2}_g|Il Reparto {reg1} {s2} sta raggiungendo la posizione memorizzata...
 qstr_Division_{reg1}_{s2}_f|Reparto {reg1} {s2} forma una linea (memorizzato).
 qstr_Division_{reg1}_{s2}_fo|Reparto {reg1} {s2} forma {reg0} linee (memorizzato).
+qstr_Delivered_{reg60}_da|Inflitti {reg60} danni.
 qstr_DEBUG__Health_Regen_|DEBUG (Rigenerazione Salute: {s1} riprende {reg0}% salute. = +{reg1}% FOR
+; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
 qstr_Three_Nazgul_are_cir|Tre Nazgul stanno volando in circolo sul campo di battaglia !
 qstr_Two_Nazgul_are_circl|Due Nazgul volano in circolo sopra al campo di battaglia !
 qstr_A_Nazgul_is_circling|Un Nazgul vola circolarmente nei cieli sul campo di battaglia.
@@ -765,7 +780,7 @@ qstr_End_them_all!|Finiteli tutti !
 qstr_Drive_them_back!|Ricacciamoli indietro !
 qstr_Protect_the_City!|Proteggi la città !
 qstr_Forward!_Board_them!|Avanti ! All'arrembaggio !
-qstr_The_Last_Days_of_the_|The Last Days of the Third Age dispone di una IA Avanzata per gli Assedi, molto differente dalla versione Native. Tutte le truppe, inclusi i giocatori, sono  distribuite in diverse squadre (Fianco Sinistro / Centro / Fianco Destro).^^ Il giocatore è quindi in carica per comandare la propria squadra, mentre la IA si occupa di comandare le altre. Ciò permette che vi siano battaglie d'assedio più sensate e basate sulle squadre.^^ Inizialmente sia le truppe che i rinforzi hanno l'ordine di CARICARE per i primi secondi dopo il loro dispiegamento. Dopo ciò, la tua squadra può ricevere nuovi ordini.
+; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
 qstr_Reached_Gauntlet_wav|Raggiunta l'ondata sfida {reg1} !
 qstr_Ballista:_out_of_amm|Ballista: munizioni terminate !
 qstr_Ballista:_turn_CURSO|Ballista: muovi con CURSORE, mira con LSHIFT, fuoco con SPAZIO, imposta fuoco con T, esci con F
@@ -883,6 +898,7 @@ qstr_Doubled|Duplicato
 qstr_Tripled|Triplicato
 qstr_Quadrupled|Quadruplicato
 qstr_You_drank_the_Ent_Wa|Hai bevuto l'acqua Ent
+; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
 qstr_Fangorn_search:_fail|Ricerca Fangorn: fallita.
 qstr_^^^A_great_victory!^|^^Vittoria !^^^Così era questo il significato di tutte le leggende su Fangorn...
 qstr_^^^Defeated...^^^Sca|^^^Sconfitto...^^^Disperso nella Foresta Fangorn...Da solo...
@@ -1057,6 +1073,7 @@ qstr_Guard_Legion_of_{s6}|Legione guardiana di {s6}
 qstr_Scouts_report_that_{|Gli esploratori riportano che {s6} si è riunito in una grande armata in prossimità di {s7}, in ultimo disperato tentativo di difendere la capitale.
 qstr_The_forces_of_{s2}_e|L'armata di {s2} ha costruito un campo avanzato in {s15} !
 qstr_The_hosts_of_{s2}_ma|I proprietari terrieri di {s2} rientrano per difendere le loro case !
+qstr_{playername}_s_Reser|Riserve di {playername}
 qstr_Gondor_has_called_fo|Gondor ha chiesto aiuto !
 qstr_Gondor_is_accompanyi|Gondor sta accompagnando il Comandante in Capo 
 qstr_{s5}_has_stopped_fol|{s5} ha smesso di seguirti.
@@ -1175,7 +1192,6 @@ qstr_Greetings_{s23}.|Salve, {s23}.
 qstr_So_you_are_{s23}._I_|Così, tu sei {s23}. Ho saputo che hai combattuto per i nostri amici {s25}, quindi credo che ti dovrei considerare un alleato.
 qstr_I_need_volunteers_wi|Ho bisogno di volontari desiderosi di seguirmi in missioni pericolose.
 qstr_I_need_some_soldiers|Ho bisogno di alcuni soldati per rimpiazzare i caduti.
-qstr_{playername}_s_Reser|Riserve di {playername}
 qstr_Maybe_the_weaklings_|Forse i deboli del sud hanno messo armature sui loro Troll dalla pelle morbida. Non noi - i nostri Troll sono di Gundabad !
 qstr_Do_I_look_like_a_smi|Ti sembro un fabbro? Bah. Vai a parlare con qualcun altro.
 qstr_Excellent_job_{s23}!|Eccellente lavoro, {s23} ! Vorrei che tutti i comandanti si dedicassero come fai tu.^
@@ -1399,7 +1415,9 @@ qstr_Your_party_must_be_at|La tua compagnia deve avere una forza di almeno 10 el
 qstr_{s9}_asked_you_to_def|{s9} ti ha chiesto di difendere un villaggio sotto attacco nei pressi di {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} ti ha chiesto di assalire un villaggio nei pressi di {s1}.
 qstr_These_soldiers_may_w|Questi soldati potrebbero di sicuro dare la svolta ai miei piani, {playername}. Sono certo che li hai addestrati bene. I miei ringraziamenti e complimenti vanno a te.
+; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
 qstr_Good_work_in_shaping|Ottimo lavoro nell' addestramento di quelle reclute, {playername}, sei stato utilissimo. Fiduciosamente dureranno di piu' dell' ultima volta, ma torna a trovarmi se non lo fanno.
+; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
 qstr_Well_the_soldiers_ar|Bene, i soldati sono sotto il tuo comando. Sono certo che ne avrai cura.
 qstr_Well_you_may_do_as_y|Bene, fai come vuoi. Io ed i miei compagni possiamo sempre diventare piu' tosti se necessario.
 qstr_{s9}_asked_you_to_br|{s9} ti ha chiesto di riportare un troll selvaggio da usare nella sua armata.

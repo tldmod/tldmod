@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|Falkenschild der Ostlinge
 itm_rhun_bull1_shield|Schild aus Rhun
 itm_rhun_bull2_shield|Schild aus Rhun
 itm_rhun_bull3_shield|Schild aus Rhun
+itm_rhun_shield|Langschild aus Rhun
 itm_rhun_armor_a|Leichte Kampfausrüstung aus Rhun
 itm_rhun_armor_b| Leichte Kampfausrüstung aus Rhun
 itm_rhun_armor_d| Leichte Kampfausrüstung aus Rhun
@@ -599,19 +600,13 @@ itm_rhun_armor_n|Mittelschwere Kampfausrüstung aus Rhun
 itm_rhun_armor_o|Mittelschwere Kampfausrüstung aus Rhun
 itm_rhun_armor_p|Fürstliche Rüstung aus Rhun
 itm_rhun_armor_k|Fürstliche Rüstung aus Rhun
-itm_rhun_helm_a|Zackenhelm aus Rhun
-itm_rhun_helm_b|Zackenhelm mit Brünne aus Rhun
-itm_rhun_helm_c|Hordenhelm aus Rhun
-itm_rhun_helm_e|Gehörnter Hordenhelm aus Rhun
-itm_rhun_helm_g|Gehörnter Topfhelm aus Rhun
-itm_rhun_helm_h|Gehörnter Topfhelm aus Rhun
-itm_rhun_helm_i|Runder Helm aus Rhun
-itm_rhun_helm_j|Runder Maskenhelm aus Rhun
-itm_rhun_helm_k|Lederhelm aus Rhun
-itm_rhun_helm_l|Lederhelm aus Rhun
-itm_rhun_helm_m|Lederhelm aus Rhun
-itm_rhun_helm_n|Häuptlingshelm aus Rhun
-itm_rhun_helm_o|Häuptlingshelm aus Rhun
+itm_rhun_helm_barbed|Zackenhelm aus Rhun
+itm_rhun_helm_horde|Hordenhelm aus Rhun
+itm_rhun_helm_pot|Topfhelm aus Rhun
+itm_rhun_helm_round|Runder Helm aus Rhun
+itm_rhun_helm_leather|Lederhelm aus Rhun
+itm_rhun_helm_chieftain|Häuptlingshelm aus Rhun
+itm_rhun_warpick|Kriegshacke aus Rhun
 itm_rhun_greataxe|Große Axt aus Rhun
 itm_rhun_battleaxe|Schlachtaxt aus Rhun
 itm_rhun_falchion|Grausames Falchion
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|Grausames Langfalchion
 itm_rhun_greatsword|Grausames Langschwert
 itm_rhun_shortsword|Grausames Kurzschwert
 itm_rhun_sword|Grausames Schwert
-itm_rhun_shield|Langschild aus Rhun
+itm_rhun_mangler|Metzler aus Rhun
 itm_dale_light_a|Milizenwams aus Thal
 itm_dale_light_b|Leichte Nordmann-Lamellenrüstung
 itm_dale_med_a|Schwere Nordmann-Lamellenrüstung
@@ -631,7 +626,6 @@ itm_dale_heavy_a|Schwere Lamellenrüstung aus Thal
 itm_dale_heavy_b|Plattenrock aus Thal
 itm_dale_heavy_c|Rhovanion-Ringpanzer
 itm_north_leather|Lederwams der Nordmenschen
-itm_dale_armor_l|Fürstliche Rüstung aus Thal
 itm_dale_helmet_a|Leichter Soldatenhelmd aus Thal
 itm_dale_helmet_b|Leichter Schützenhelm aus Thal
 itm_dale_helmet_c|Soldatenhelm aus Thal
@@ -769,8 +763,8 @@ itm_book_of_moria|Buch von Mazarbul
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Bards Bogen
-itm_explosive_reward|Mine von Isengart
-itm_corsair_trident2|Dreizack der zornigen See
+itm_tome_of_knowledge|Buch mit arkanem Wissen
+itm_orc_idol_reward|Götze des Ersten Orks
 itm_crebain_reward|Crebain
 itm_miruvor_reward|Flasche Miruvor
 itm_wheeled_cage|Gewaltiger Rollkäfig
@@ -793,7 +787,7 @@ itm_leather_boots_reward|Jägerstiefel
 itm_rohan_armor_th|Königliche Rüstung von Rohan
 itm_wilderness_amulet|Amulett der Wildnis
 itm_prisoner_coll_chain|Gefangenenketten
-itm_witchking_helmet|Bösartiger Helm
+itm_witchking_helmet|Zauberermaske
 itm_lorien_royal_armor|Königliche Rüstung von Lorien
 itm_feet_chains|Fußketten
 itm_feet_chains_dwarf|Fußketten

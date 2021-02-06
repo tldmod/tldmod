@@ -1926,6 +1926,8 @@ str_trait_title_butcher|屠 夫
 str_trait_desc_butcher|經驗的磨練讓你可以從敵人身上完美割下每一塊肉。 每次屠殺一名囚犯時，你都會獲得額外的一磅肉。 每次戰鬥後你都會得到更多的人肉。
 str_trait_title_well_travelled|好好旅行
 str_trait_desc_well_travelled|在石頭鋪砌的道路和長滿青苔的動物小徑上，在最高的山脈和最深的山谷裡，你發現了隱藏的地方，看到了早已被遺忘的奇蹟。根據你的經驗，你已經學會在敵人看到你之前發現他們，並為你的部隊提供最簡單的路線。
+; str_trait_title_bear_shape|Skinchanger
+; str_trait_desc_bear_shape|It is said that men of Beorn's line have the ability to take bear form. Through your kinship with bears you have discovered that you too have that gift.
 str_wound_head|頭部遭到重擊
 str_wound_chest|一些肋骨斷裂
 str_wound_arm|一隻重傷的手臂
@@ -2499,3 +2501,5 @@ str_imladris_guildmaster_companion_player_ask|老人，我從傳說中的北方�
 ; str_imladris_guildmaster_companion_none|Look well, Commander. Before you is perhaps the last great muster of the North, in this Age and any Age hereafter. Man and Elf alike, we who have come here do not hope to return. From the Last Homely House we have come; from the vales and forests of Eriador the last of the Núnatani, whom you call Dúnedain, have come. Each of us has his appointed tasks - none may follow you as you wish, save that you exercise your writ and recruit from our garrison. 
 str_imladris_guildmaster_companion_player_none_ok|我明白了，老人。 我感謝你花時間。
 str_imladris_guildmaster_player_found_ok|我明白了，老人。 我感謝你花時間。
+; str_show_keybinds_form|Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
+; str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?

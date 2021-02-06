@@ -68,6 +68,7 @@ mno_start_go|GONDOR, das Königreich des Weißen Turms
 mno_start_ro|ROHAN, das Volk der Pferdeherren
 mno_start_du|DUNEDAIN, das uralte Menschengeschlecht
 mno_start_be|BEORNINGER, das Bärenvolk
+mno_start_wo|Waldmenschen, aus dem Düsterwald
 mno_start_da|Das nördliche Königreich von THAL
 menu_start_good_elf|^^^^^^^^^^In welchem Wald lebt Ihr, Ältester?
 mno_start_ri|BRUCHTAL, bei Herrn Elrond
@@ -199,6 +200,7 @@ mno_encounter_order_attack|Befehle deinen Truppen, sie ohne dich {reg21?anzugrei
 mno_control_allies_menu|Einfluss verwenden, im Feld die Befehlsgewalt über deine Verbündeten zu übernehmen.
 mno_encounter_hide|Verberge dich vor dem Feind....
 mno_special_whip|Stürme voran, mit der {s4} knallend.
+mno_encounter_attack_bearform|{reg21?Nimm Bärengestalt an und stürze dich in den Kampf:Stelle dich ihnen in Bärengestalt}.
 mno_encounter_leave|Zurückziehen.
 mno_encounter_retreat|Zieh dich zurück und lasse einige Soldaten zurück, um deinen Rückzug zu decken.
 mno_player_control_allies_simple|Befehlige sie und greif den Feind an

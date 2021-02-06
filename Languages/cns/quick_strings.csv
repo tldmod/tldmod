@@ -1,3 +1,4 @@
+qstr_Received_{reg0}_dama|受到{reg0}点伤害。
 qstr_Gate_is_breached!|大门已被攻破！
 qstr_Gate_opens..._You_ha|大门缓缓打开…你已经站在了中土最神圣的土地上！
 qstr_Secret_place_discove|发现密地
@@ -72,7 +73,7 @@ qstr_an_ORC^_serving_the_|半兽人，索伦之眼的奴仆
 qstr_an_URUK^_the_new_bre|强兽人，半兽人的新品种
 qstr_a_MAN^_subjugated_by|人类，臣服于索伦
 qstr_an_ORC^_serving_the_W|半兽人，白手奴仆
-; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
+qstr_one_of_the_URUK_HAI^|强兽人，^繁衍于艾辛格
 qstr_a_MAN_of_Dunland^_th|登兰德人，来自西部平原
 qstr_Click_the_center_but|单击中心按钮切换派系 ^单击头像以查看详细信息
 qstr_Level:_{reg3}^Health|等级：{reg3} ^生命：{reg4}
@@ -159,7 +160,7 @@ qstr_Useful_Tool_of_{s5}|{s5}的工具
 qstr_Servant_of_{s5}|{s5}的奴仆
 qstr_Unknown_to_{s5}|{s5}的路人
 qstr_You_have_been_{reg1?|你已经 {reg1?晋升:降职}为{s24} ({reg0})！
-; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.
+qstr_You_{reg1?earned:los|你在主派系{s11}{reg1?获得:失去}了{reg11}军功{reg12?和{reg12}影响力:}。
 qstr_You_{reg1?earned:lost|你在{s11}{reg1?获得:失去}了{reg11}军功{reg12?和{reg12}影响力:}。
 qstr_You_spent_{reg10}_of|你花费了{s1}的{reg10}影响力,你还剩{reg11}影响力。
 qstr_Troop_upkeep:|部队维护：
@@ -184,11 +185,12 @@ qstr_+1_to_Riding_Skill|骑术等级+1
 qstr_during_battles|在战斗中
 qstr_+1_to_Pathfinding|向导等级+1 
 qstr_+1_to_Athletics|跑动等级+1 
+qstr_+1_to_Wound_Treatmen|疗伤等级+1 
+qstr_Use_from_Camp_Menu|从营地菜单使用
 qstr_Use_from|使用
 qstr_Action_Menu|动作菜单
 qstr_+1_to_First_Aid|急救等级+1 
 qstr_+1_to_Weapon_Mastery|武器掌握等级+1 
-qstr_+1_to_Wound_Treatmen|疗伤等级+1 
 qstr_+1_to_Tactics|战术等级+1 
 qstr_+1_to_Power_Strike|强击等级+1 
 qstr_+1_to_Strength|力+1
@@ -196,9 +198,12 @@ qstr_+1_to_Agility|敏+1
 qstr_+1_to_Leadership|统+1
 qstr_+1_to_Wildcraft|自然力+1
 qstr_+1_to_Power_Draw|强弓等级+1
-; qstr_The_record_of_Balin_|The record of Balin's lost expedition.
-; qstr_Who_might_be_interes|Who might be interested in this?
-qstr_Turns_nature_to_your|你与自然融为一体（效果依荒野求生技能的级别而定）
+qstr_The_record_of_Balin_|失败的巴林远征队的记录。
+qstr_Who_might_be_interes|有谁可能对此感兴趣？
+qstr_Bonus_to_Shield_Skil|奖励盾防技能
+qstr_Turns_nature_to_your|【装备时】你与自然融为一体
+qstr_when_equipped.__Effe|（效果依荒野求生技能的级别而定）
+qstr_Bonus_to_Power_Strik|奖励强击技能
 qstr_+1_to_Trainer|教练等级+1
 qstr_Recruits_Tribal_Orcs|招募部落半兽人
 qstr_rally|集结
@@ -206,22 +211,25 @@ qstr_rallies|集结
 qstr_+{reg1}_{s3}_in_batt|在战斗中 +{reg1} {s3}
 qstr_+1_to_Charisma|魅+1
 qstr_+1_to_Surgery|手术等级+1
-; qstr_+1_to_Intelligence|+1 to Intelligence
-qstr_+1_to_Ironflesh|铁骨等级+1
-qstr_+1_to_Prisoner_Mgmt|俘虏管理等级+1 
+qstr_+1_to_Intelligence|智力属性+1
+qstr_+2_to_Surgery|手术等级+2
 qstr_when_equipped|装备时
-; qstr_+1_to_Riding|+1 to Riding
-; qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_+1_to_Riding|骑术技能等级+1
+qstr_+1_to_Mounted_Archer|骑射技能等级+1
+qstr_+1_to_Prisoner_Mgmt|俘虏管理等级+1 
 qstr_+2_to_Tactics|战术等级+2
-; qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
-; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
-; qstr_+1_to_Spotting|+1 to Spotting
-; qstr_+2_to_Athletics|+2 to Athletics
+qstr_+1_Intelligence|智力属性+1
+qstr_+{reg1}_to_Spotting|侦查技能等级+{reg1}
+qstr__Scales_with_Wildcra|（规模与荒野求生技能等级相关）
+qstr_+1_to_Spotting|侦查技能等级+1
+qstr_+2_to_Athletics|跑动等级+2
 qstr_Less_Dunnish_upkeep|缺乏丹尼斯维护
 qstr_Less_Wargs_upkeep|缺乏座狼维护
 qstr_Light_Armor|轻甲
+qstr_Bonus_to_Strength__P|奖励力量属性（仅玩家）
+qstr_Lead_more_Orcs|统御更多半兽人
 qstr_+{reg1}_to_Party_Mor|部队士气 +{reg1}
-qstr_Shoot_Speed:_{reg55}|射速: {reg55}
+qstr_Range:_{reg55}|射程：{reg55}
 qstr_Do_you_want_to_disem|你想上岸吗？
 qstr_Move_here|移动到这里
 qstr_View_notes|查看笔记
@@ -230,7 +238,7 @@ qstr_nothing|没什么
 qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
-; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
+qstr_You_gained_{reg84}_e|你因自己的智力属性获得{reg84}点经验。
 qstr_{reg4}_killed_{reg5}|{reg4}被杀，{reg5}受伤，{reg6}被击溃
 qstr_{reg4}_killed_{reg5}_|{reg4}被杀，{reg5}受伤
 qstr_{reg4}_killed_{reg5}_r|{reg4}被杀，{reg5}被击溃
@@ -268,6 +276,8 @@ qstr_{s3}_is_no_longer_un|{s3}不再陷入包围了。
 qstr_Enemies_spotted_near|{s1}附近发现敌踪。
 qstr_Your_relation_with_{|你与{s1}的关系提升了。
 qstr_Your_relation_with_{s|你与{s1}的关系恶化了。
+qstr_{s1}_gained_faction_|{s1}获得势力值！
+qstr_{s1}_lost_faction_st|{s1}失去势力值！
 qstr_{s2}_{reg3?was:is_cu|{s2}{reg3?曾:正}在{s3}。
 qstr_{s2}_{reg3?was:is}_t|{s2}{reg3?已经:正在}赶去{s3}，而{reg4?她:他}{reg3?之前:应该}在{s4}{reg3?:附近}。
 qstr_{s2}_{reg3?was:is}_i|{s2}{reg3?:正}在野外某地，而{reg4?她:他}{reg3?之前:应该}在{s3}{reg3?:附近}。
@@ -391,7 +401,6 @@ qstr_Blunt_Weapons|钝击武器
 qstr_Infantry__{reg1}_|步兵({reg1})
 qstr_Archers__{reg2}_|射手({reg2})
 qstr_Cavalry__{reg3}_|骑兵({reg3})
-qstr_Orc_brew_finished!|半兽人酒已完成
 qstr_Given_by:_{s62}|给予人：{s62}
 qstr_Given_on:_{s60}|开始于：{s60}
 qstr_You_have_{reg0}_days|你还有{reg0}天来完成这个任务。
@@ -520,11 +529,11 @@ qstr_Inappropriate_mount|不适合的坐骑
 qstr_{s24}:_Your_infantry|{s24}：你的步兵感觉好些了！
 qstr_{s24}:_Your_archers_|{s24}：你的射手感觉好些了！
 qstr_{s24}:_Your_cavalry_|{s24}：你的骑兵感觉好些了！
-; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
+qstr_Ah_what_a_coincidenc|哈！真巧能在这里碰到{playername}！你可能不认识我，但我听你可是听得耳朵都起茧子了。我正从{s3}赶往{s4}，你的大名可是已经传到那里去了。在这个烽烟四起的年代，{s3}可是指着你这种有能力的人呢。如果你打算四处做做任务，不妨重新考虑一下，全心全意的帮助{s2}。
 qstr_Who_are_you?|你是谁？
 qstr_A_friend_of_{s3}_and|{s3}之友、{s2}之民。快！魔多正集结邪恶，索伦的阴影正汇聚于此。对于光明之民来说，时间已经不多了。让我们集合所有，以逆转这一切！
 qstr_What_should_I_do?|我要怎么办?
-; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
+qstr_Find_{s3}_s_whereabo|尽快找到{s3}的下落，并与{reg3?她:他}交谈。祝你好运！
 qstr_Good_to_see_the_Shad|很高兴看到你还没被索伦的阴影打败，{playername}。
 qstr_You_are_the_one_they|你就是人们口中的甘道夫或米斯兰达（辛达林语）。
 qstr_That_is_what_some_ca|他们的确如此称呼我，而我也曾被称呼过其他名字。但这些已经不重要了，除非黑暗消失，很快就再也不会有任何人能够称呼我的任何名字了。
@@ -553,7 +562,7 @@ qstr_I_shall_serve_the_Ey|我将臣服于索伦之眼！
 qstr_Go_to_{s1}_and_speak|到{s1}去和{s9}交流。
 qstr_The_Remnant_Forces_o|{s22}的剩余势力聚集在一起以加强{s15}派系！
 qstr_The_strength_of_the_|{s15}派系及其盟友的力量有所增加
-; qstr_{s30}_reinforced_by_|{s30} reinforced by {reg65} fac str
+qstr_{s30}_reinforced_by_|{s30}获得了{reg65}势力值
 qstr_{s1}_has_been_besieg|{s1}正被{s3}的{s2}围困！
 qstr_The_forces_of_{s2}_m|{s2}的军队正向{s15}行军！
 qstr_Rohan_capital_moved_|洛汗首都已经从伊多拉斯移动到号角堡！
@@ -625,9 +634,9 @@ qstr_have_won_the_sea_bat|敌人赢得了海战的胜利，这打击了你的士
 qstr_loses_Faction_Strength|受到破坏性的突袭会失去势力值
 qstr_loses_Faction_Strength_|因为你在海上的成功，敌对派系力量下降了。
 qstr_You_spent_{reg67}_of|你花费了{reg67}你的影响力用于{s1}，还剩下{reg66}影响力。
-; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
-; qstr_{s1}_{s0}|{s1}, {s0}
-; qstr_{s1}_and_{s0}|{s1} and {s0}
+qstr_{s2}_{reg3?was:is_ar|{s2}{reg3?曾:正}在{s5}附近。
+qstr_{s1}_{s0}|{s1}，{s0}
+qstr_{s1}_and_{s0}|{s1}和{s0}
 qstr_No_Troops_Left.|士兵们一个不剩。
 qstr_avoid_melee|避免近战
 qstr_stand_and_fight|防守和作战
@@ -684,25 +693,29 @@ qstr_A_thunderstorm_from_|从迷雾山脉刮来的雷雨在战场上肆虐。你
 qstr_A_thunderstorm_from_t|从迷雾山脉刮来的雷雨在战场上肆虐。弓箭手很难在这样恶劣的天气下发挥全力。
 qstr_A_poisonous_fog_from|从多尔哥多飘来的毒雾在战场上肆虐。你和你的部队感到全身虚弱。人们都很害怕。
 qstr_A_poisonous_fog_from_|从多尔哥多飘来的毒雾在战场上肆虐。你没有感到任何不同，但你却听到了敌人遭受痛苦的声音并且你能闻到他们的恐惧。
+qstr_You_shapeshift_into_|你变形成了一头熊！
+qstr_You_got_{reg1}_xp_in|你在熊形态下获得了{reg1}点经验。
+qstr_Your_ability_to_chan|你换皮的能力已经显现。从现在起，你可以保持人形或是换皮为熊。
+qstr_You_change_back_to_h|你变回人形……
 qstr_Your_mount_stumbles!|你的坐骑走路磕磕绊绊！看起来是瘸腿了。
 qstr_Bitten_by_your_own_w|你被自己的座狼咬了!
 qstr_You_weigh_too_much_f|你的身板矮种马经受不起！
 qstr_Your_mount_rears_ref|你的坐骑受到惊吓！拒绝服从你的命令！
-; qstr_Cannot_Change_Camera|Cannot Change Camera Mode while in First Person.
-; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
+qstr_Cannot_Change_Camera|无法在第一人称下调整视角模式。
+qstr_Switch_Back_to_3rd_P|切换回第三人称以便调整视角模式。
 qstr_Fixed_Custom_Camera|固定自定义相机
 qstr_Press_Ctrl_+_Left_/_|按Ctrl+左方向键/Ctrl+右方向键切换肩膀显示位
-; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
+qstr_Press_Ctrl_+_Down_to|按下Ctrl + Down变换视角至正中
 qstr_Use_+/__to_zoom_in/o|按+/-键以拉近拉远
 qstr_Use_Up/Down_arrow_ke|使用上/下箭头键以前倾/后倾
 qstr_Fixed_Camera___Right|固定相机—右肩
 qstr_Fixed_Camera___Left_|固定相机—左肩
-; qstr_Fixed_Camera___Cente|Fixed Camera - Center
+qstr_Fixed_Camera___Cente|固定视角 - 正中
 qstr_While_visiting_towns|当访问城镇、据点和营地时，你可以与四处走动的人们谈话。不同派系的人有不同的事可说—一些能够让你理解他们的想法，其它的会分享他们的传闻。他们都能够让你更加了解他们的文化和派系，有时他们可能知道找到神秘地点的线索，或是在野外生存和在魔戒圣战中战斗的技巧和窍门。
 qstr_Cannot_leave_now.|现在不能离开。
-; qstr_You_have_found_the_l|You have found the local smithy.
-; qstr_You_have_found_the_lo|You have found the local authority.
-; qstr_You_have_found_the_loc|You have found the local warehouse.
+qstr_You_have_found_the_l|你找到了当地铁匠。
+qstr_You_have_found_the_lo|你找到了地方长官。
+qstr_You_have_found_the_loc|你找到了当地仓库。
 qstr_You_look_through_Hen|你端详汉那斯安南，也就是落日之窗。美丽的景色恢复了你对西方和世界的信心。
 qstr__cancelled_the_{reg1|(取消了杀囚获得的{reg10}经验值)
 qstr_Forming_ranks.|正在列阵。
@@ -714,14 +727,16 @@ qstr_Formations_turned_OF|阵型可在选项菜单中关闭。
 qstr_Division_{reg1}_{s2}_g|{reg1}分队{s2}前往已记录的位置……
 qstr_Division_{reg1}_{s2}_f|{reg1}分队{s2}排成线阵(已记录)。
 qstr_Division_{reg1}_{s2}_fo|{reg1}分队{s2}排成{reg0}排(已记录)。
+qstr_Delivered_{reg60}_da|造成了{reg60} 点伤害。
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
+qstr_Your_bear_form_has_{|你的熊形态有{reg2}/{reg1}HP！
 qstr_Three_Nazgul_are_cir|三个戒灵正在战场的上空盘旋！
 qstr_Two_Nazgul_are_circl|两个戒灵正在战场的上空盘旋！
 qstr_A_Nazgul_is_circling|一个戒灵正在战场的上空盘旋！
 qstr_Some_of_your_human_t|你的一些人类部队并不畏惧黑夜。（夜间部队不受夜间惩罚的影响）
 qstr_You_are_filled_with_|当你盯着敌人时，你充满愤怒（狂战士能力激活）。
 qstr_Your_mount_is_scared|你的坐骑被{reg73?ent:troll}吓坏了！
-; qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
+qstr_Your_mount_is_scared_|虽然你的坐骑被{reg73?树人:食人妖}吓到了，但你冷静地化险为夷！
 qstr_Nazgul_sweep!|戒灵来了！
 qstr_You_and_your_horse_p|戒灵的啼声是你和你的马无法承受的恐惧！
 qstr_Your_horse_panics_th|戒灵的啼声是你的马无法承受的恐惧！
@@ -765,7 +780,7 @@ qstr_End_them_all!|杀死他们！
 qstr_Drive_them_back!|把他们赶回去！
 qstr_Protect_the_City!|保卫城市！
 qstr_Forward!_Board_them!|前进！登上他们的甲板！
-; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
+qstr_The_Last_Days_of_the_|TLD开发了与Native大大不同的高级攻城AI。进攻方和防守方都被分为了三队：左翼，中锋和右翼。进攻方玩家只能只会自己的士兵。
 qstr_Reached_Gauntlet_wav|第{reg1}波！
 qstr_Ballista:_out_of_amm|弩炮：弹药用尽！
 qstr_Ballista:_turn_CURSO|弩炮：转向：移动光标，瞄准：左SHIFT，发射：SPACE，点火：T，退出：F
@@ -829,8 +844,8 @@ qstr_{s24}__{reg13}____{r|{s24}({reg13})-{reg20}直到下一次晋升^
 qstr_Influence:^_{reg11}_|影响力：^{reg11}(对于{s16})
 qstr_Resource_Points:^_{r|资源点：^{reg12}(在{s16})
 qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21}直到下一次晋升^
-; qstr_{s13}_{reg11}__with_|{s13} {reg11} (with {s16})^
-; qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
+qstr_{s13}_{reg11}__with_|{s13}{reg11}（{s16}）^
+qstr_{s15}_{reg12}__in_{s|{s15}{reg12}（{s16}）^
 qstr_Four_years_after_bri|四年前一群来自孤山的矮人试图重建曾经的矮人城市卡扎督姆，巴林在看镜影湖时被一支兽人箭所杀，他的人民立即与来自银流河的半兽人爆发了冲突。从东门到第一大厅，然后是在卡扎督姆大桥和第二大厅连续撤退之后，剩下的长须矮人被迫返回第二十一大厅。[2]在通过都灵之门撤退失败后以及目睹欧音之死后，在失去第二十一大厅后，马萨布尔室成为了营地的最后抵抗之地。除了大门，奥里和少数幸存者建立了最后的防御。
 qstr_You_chase_an_orc_sco|你追随一队半兽人斥候进入了森林…
 qstr_^No_food:___{reg7}|^食物短缺：-{reg7}
@@ -883,9 +898,10 @@ qstr_Doubled|双倍
 qstr_Tripled|三倍
 qstr_Quadrupled|四倍
 qstr_You_drank_the_Ent_Wa|你喝了树人水...
+qstr_You_used_the_Orc_Bre|你使用了半兽人酒。
 qstr_Fangorn_search:_fail|搜索法贡森林：失败。
 qstr_^^^A_great_victory!^|^^^一场伟大的胜利！ ^^^这是法贡森林的又一个神话...
-; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
+qstr_^^^Defeated...^^^Sca|^^^战败了……^^^在法贡森林里走散了……独自一人……
 qstr_Troll_caged_in_wheel|食人妖被关在笼车里。
 qstr_A_second_troll_is_ca|第二头食人妖被关在笼车里。
 qstr_Here_you_are.|给。
@@ -916,7 +932,7 @@ qstr_You_are_attacking_a_|你正攻击一群{s1}
 qstr_The_battle_against_t|对抗一群{s1}的战斗继续
 qstr_There_are_{reg39}_al|在{reg39}这场战斗中有盟友指挥官。你可以使用{reg40}影响点命令他们和他们的部队。
 qstr_Having_a_small_party|小队伍有小的好处…你和你的士兵可以在敌人面前隐藏几个小时而不被发现。
-; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
+qstr_Your_ability_to_mast|你的技能让你能够知悉环境，找到安全的避敌地点。（你的荒野求生技能让你能够带着{reg1}名士兵避开敌人）
 qstr_{reg4}_will_be_lost.|你将丢下{reg4}。
 qstr_{s13}_asked_you_to_r|{s13}希望你带着至少{reg13}名士兵向他报告。
 qstr_{s13}_ordered_you_to|{s13}命令你参加对{s14}的攻击。
@@ -988,7 +1004,7 @@ qstr_two_scout_parties_and|来自{s3}的2支斥候队和1支突袭队
 qstr_three_scouts_two_for|来自{s3}的3支斥候队，2支掠夺队和1支巡逻队
 qstr_three_scouts_two_rai|3名斥候，2名突袭者，还有来自{s3}的一支战队
 qstr_You_see_the_village_|你发现一处正在被强盗劫掠的村庄。你命令你的大部分部队时刻警戒四周，并亲自带了一小队人马去保卫村民。
-; qstr_You_see_the_village_y|You see the village you were tasked to raid. You and a small group of your raiders prepare to attack the village so as not to be seen.
+qstr_You_see_the_village_y|你看到了上头要你掠夺的村庄，你和你的掠夺小队已经准备好攻击了。
 qstr_The_raiders_are_defe|掠夺者被击败了！在村民们的新英雄的帮助下，凡是还保持清醒的土匪都带着巨大的恐惧摸黑向着来时的方向跑逃跑了。
 qstr_Try_as_you_might_you|尽管尽了最大的努力，你依旧没能打败劫掠者。他们将村子夷为平地之后就锁着剩下的村民离开了。
 qstr_The_village_has_been|村子已被劫掠，村民要么被杀要么为奴。黑暗魔君对此很满意。
@@ -996,7 +1012,7 @@ qstr_You_failed_to_raid_t|你没能成功劫掠村庄，你和你的人被赶走
 qstr_The_Scout_Camp_has_b|这个斥候营地已经被夷为平地了，这将会削弱敌人的优势。
 qstr_You_failed_to_destro|你没能够摧毁这个斥候营地。敌人已经对你的派系采取了行动，并且无疑起效了。
 qstr_You_have_defeated_the|你成功击败了突袭舰队！这是对敌人计划的沉重打击！
-; qstr_You_defeated_the_int|You defeated the intercepting fleet! Even though you do not have enough strength left to raid the city, this is a great victory!
+qstr_You_defeated_the_int|你成功击败了拦截舰队！尽管你方没有足够的剩余兵力去掠夺城市，但这仍是个伟大的胜利！
 qstr_You_drove_back_the_e|你击退了敌人的舰队，但是却损失了很多船只！
 qstr_You_were_defeated_by|你被截击舰队打败了，且没能够掠夺城市！
 qstr_Lorien|罗斯洛立安
@@ -1057,13 +1073,14 @@ qstr_Guard_Legion_of_{s6}|{s6}的守卫军团
 qstr_Scouts_report_that_{|根据报告显示：{s6}在{s7}周围聚集了庞大的军队，他们在做最后的挣扎，企图保卫他们的首都。
 qstr_The_forces_of_{s2}_e|{s2}的军队在{s15}建立了一个前线营地！
 qstr_The_hosts_of_{s2}_ma|{s2}的军队前来保卫他们的家园！
+qstr_{playername}_s_Reser|{playername}的预备队
 qstr_Gondor_has_called_fo|刚铎已呼叫援助！
 qstr_Gondor_is_accompanyi|刚铎正在听从元帅的号令！
 qstr_{s5}_has_stopped_fol|{s5}不再跟随你。
 qstr_You_have_{reg69}_all|你有{reg69}友军部队跟随着你。
 qstr_You_have_{reg69}_ally|你有{reg69}友军部队跟随着你。
 qstr_The_forces_of_{s2}_h|{s2}的军队已经再次集结并向{s15}进军中！
-; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
+qstr_Your_scouts_report_s|你的斥候回报在附近发现{s2}的踪迹。
 qstr_{s1}_from_{s2}|自{s2}来的{s1}
 qstr_When_dealing_with_lo|请记住，在{s11}与当地人交易的时候，他们不认识你，也不一定承认你在{s10}取得的功绩。(能在{s11}用于交易的资源点和你在{s10}取得的的资源点不同，你要在{s11}取得当地派系的资源点以便与当地人交易；查看报告菜单获取更多消息)
 qstr_Info|信息
@@ -1091,7 +1108,7 @@ qstr_{s27}:_Party_morale_|{s27}：部队士气提升了。
 qstr_{s27}:_Party_morale_d|{s27}：部队士气降低了。
 qstr_You_have_failed_to_f|你未能履行为巴林之死所做的复仇誓言！
 qstr_You_have_failed_to_fu|你未能履行为{s1}之死所做的复仇誓言！
-; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
+qstr_Your_troops_value_yo|你的士兵认可你为完成誓言所做的努力，但也承认事情的确发生得太快了。结果，
 qstr_{s22}You_have_fulfil|{s22}你完成了你为巴林和他的同伴复仇的誓言！
 qstr_{s22}You_have_fulfill|{s22}你完成了你为{s1}的英雄之死复仇的誓言！
 qstr_Reinforcements|增援
@@ -1111,16 +1128,16 @@ qstr_Um..._by_enchanting_|恩...用来吸铁？
 qstr_Magnets_are_made_of_|磁铁是开采自地下的金属做的，它天然就有磁力因为它含有引力的成分。
 qstr_i_wont_a_bonerlrord_|哇想要骑砍2领祖的最后之日啊啊！！
 qstr_Install_TLD_in_your_|安装最后之日到骑马与砍杀2：领主的模组文件夹，在module.ini文件中增加一行指令：“compatible_with_wfas = 1”，然后你就可以在战团和Warrider 0.202版里面玩最后之日了。
-; qstr_Bannerlord_runs_on_a|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
+qstr_Bannerlord_runs_on_a|骑砍2霸主换了引擎，我们没法像把TLD移植到战团那样把它移植到霸主上。
 qstr_dis_mod_takes_2_long|择个模组花了老长时间才发布！烂！！
 qstr_Well_there_s_a_lot_o|嗯，因为有很多新的材质纹理和其它东西要做，我猜这很费时…
 qstr_It_has_been_recently|这个模组的正式版近日发布了，如果你忘了网址，你可以上lemonparty.org去下载。
 qstr_i_wont_decapitated_e|我不会在多人游戏中杀死大象，绝不！！
 qstr_I_don_t_think_there_|我不认为最后之日有联机，不过大象倒是个好点子。
 qstr_There_is_a_hidden_el|有一个大象死亡模式隐藏在最后之日里。但是你要先删掉所有存档，然后开新档，不保存玩100天。接着在角色菜单处按Alt+F4。相信我朋友，这完全值得！
-; qstr_Y_NO_ChINESE??|Y NO ChINESE??
-; qstr_Just_to_troll_you_tr|Just to troll you, troll!
-; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
+qstr_Y_NO_ChINESE??|你莫得中文？
+qstr_Just_to_troll_you_tr|只是想欺负你，欺负你！
+qstr_Thanks_to_our_volunt|感谢我们的志愿翻译者，现在已经有简繁中文翻译了。但是你需要按照我们的Steam创意工坊里的指南才能正确使用汉化。
 qstr_Wai_no_plate_armour_|啥？这个模组里没有板甲？
 qstr_What_is_plate_armour|什么是板甲？没听说过。
 qstr_Wai_no_female_trolls|啥？没有母食人妖？恩？恩？你个小婊砸！
@@ -1169,15 +1186,14 @@ qstr_Good_day_to_you.|日安。
 qstr_Ah_it_s_you_again._G|啊，又是你。再见。
 qstr_My_apologies_if_I_wa|对不起，我刚刚很鲁莽。你能再说一遍你的故事么？
 qstr_I_was_reconsidering_|我重新考虑了我们上次的对话。你能再说一遍你的故事么？
-; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
+qstr_Zigrphel_gained_{reg|齐古法获得了{reg78}点经验值。
 qstr_Greetings_{s23}_{s24|向你问好，{s23}，{s24}。
 qstr_Greetings_{s23}.|向你问好，{s23}。
 qstr_So_you_are_{s23}._I_|啊，你是{s23}。我听说你为我们的朋友{s25}战斗，所以我觉得我该把你当成盟友。
 qstr_I_need_volunteers_wi|我需要一些自愿跟我去完成危险任务的志愿者。
 qstr_I_need_some_soldiers|我需要一些士兵来补充战损。
-qstr_{playername}_s_Reser|{playername}的预备队
-; qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
-; qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
+qstr_Maybe_the_weaklings_|可能南方那些懦夫会给他们的软皮食人妖配甲。但我们不会——我们的食人妖可是来自刚达巴！
+qstr_Do_I_look_like_a_smi|你觉得我像个铁匠吗？哈。换个人问问吧。
 qstr_Excellent_job_{s23}!|干得漂亮，{s23}！真希望我方的所有指挥官都像你这样尽责。^
 qstr_Nicely_done_{s23}.|干得很好，{s23}。
 qstr_Good_work_{s23}.|干的好，{s23}。
@@ -1205,48 +1221,48 @@ qstr_It_is_my_duty_to_prot|保护盟友是我的天职。
 qstr_I_am_{s4}_{s15}_of_{|我是{s4}，{s6}的{s15}
 qstr_I_am_{s4}_a_commande|我是{s4}，{s6}的指挥官
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5?和{s8}的统治者。:}
-; qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
-; qstr_{playername}_our_sco|{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least.
-; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
-; qstr_Alas_that_I_could_no|Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware.
-; qstr__I_should_rather_mak| I should rather make report of my victory over {s7} of {s8} myself - the chief glory is mine, and you will not forget it!
+qstr__{s3}_gained_{reg78}|{s3}获得{reg78}点经验值。
+qstr_{playername}_our_sco|{playername}，我们的斥候带回了你的捷报。愿你长寿！由于你的大捷{s7}敌军被击退了，想必他们没法继续推进了。让我们祈祷他们的将领和队长正争吵不断，而且还是带着对你的莫大恐惧！不管怎么说，你为我们赢得了短暂的疲劳休息时间。
+qstr_Well_{playername}_yo|很好，{playername}，你回来了，看上去给我们带来了好消息。现在我不觉得你只是个废话连篇的吹牛大王了——哈要是我能亲眼看到{s7}在你面前倒下就好了！毫无疑问，我们的敌人现在沮丧至极，像我预计的那样丢失了战意。如他们的俗话所言，斩首灭敌，一锤定音。好了，现在我得带着大军去赢得真正的胜利了。别担心，你的军功会被如实上报的，{playername}。
+qstr_Alas_that_I_could_no|唉真是的没能让我终结了{s8}的{s7}，让它们小心点，别冤家路窄让我遇上。
+qstr__I_should_rather_mak|我自己会上报我战胜了{s8}的{s7}一事——你别忘了，主要的功劳都是我的！
 qstr_Very_well_done_{play|做得很好！{playername}！正如我所期望的，你抓住了间谍和他的接头人。他们现在被铐在一起等待问询；他们有很多事情要好好的解释一下了。{playername}，我非常高兴你能完成这个任务。请收下这袋钱，这是你应得的奖赏。
 qstr_Beautiful_work_{play|做得很好！{playername}！你抓住了间谍和他的接头人。他们现在正关在牢里等待问询；很显然今晚的我检察官有的要忙了。{playername}，我非常高兴你能完成这个任务。请收下这袋钱，这是你应得的奖赏。
-; qstr_Foiling_the_enemy_s_|Foiling the enemy's attempts at attacking the refugee trains have weakened their resolve ({s1} has lost {reg19} faction strength due to your victory against {reg18} raiders).
-; qstr_The_slaughter_and_lo|The slaughter and looting of the refugee train has strengthened the enemy ({s1} has gained 50 faction strength).
-; qstr_You_did_however_defe|You did, however, defeat {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).
-; qstr_The_slaughter_and_loo|The slaughter and looting of the refugee train has strengthened the enemy ({s1} has gained {reg20} faction strength).
-; qstr_Killing_the_refugees|Killing the refugees from {s1} and enslaving the survivors have demoralized their people ({s1} has lost {reg19} faction strength).
-; qstr_{reg20}_refugee_trai|{reg20} refugee trains escaped and improved the enemy's morale ({s1} has gained {reg22} faction strength).
-; qstr_You_did_however_defea|You did, however, defeat {reg18} refugee trains, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).
-; qstr_My_lord_{s12}_is_saf|My lord, {s12} is safe. The Corsairs were defeated.
-; qstr_My_lord_Esgaroth_is_|My lord, Esgaroth is safe. The men of Rhûn were defeated.
-; qstr_The_surroundings_of_|The surroundings of {s12} burn. The pillaging was glorious indeed!
-; qstr_The_surroundings_of_E|The surroundings of Esgaroth burn. The pillaging was glorious indeed!
-; qstr_This_is_welcome_news|This is welcome news indeed, {playername}. We were ill-prepared for such bold action from the Corsairs. But thanks to you, the black sails have been driven away, at least for a time, and we may hope, at least, that we have struck them a blow this day. You have our thanks.
-; qstr__Good_work_{playerna| Good work, {playername}! They showed more cunning than we credited them with, I'll give them that. But these Easterlings don't fight half as well on their boats as they do on their horses, it would seem! Perhaps we, too, should consider launching a fleet of our own... In any case, we thank you, {playername}, on behalf of Esgaroth and all the people of Dale.
-; qstr_Even_from_here_we_co|Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Gondor, for they know now that not even their mightiest strongholds are beyond our reach!
-; qstr_Even_from_here_we_cou|Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Dale, for they know now that not even their mightiest strongholds are beyond our reach!
-; qstr_My_lord_they_fell_up|My lord, they fell upon us with great force. We could not repel the Corsairs.
-; qstr_My_lord_they_fell_upo|My lord, they fell upon us with great force. We could not repel the warriors of Rhûn.
-; qstr_The_raid_on_{s12}_fa|The raid on {s12} failed, thanks to the incompetence of our allies!
-; qstr_This_raid_was_ill_fa|This raid was ill-fated from the start. We should never have gotten on those rickety rafts!
-; qstr_This_is_evil_news_yo|This is evil news you bring. The black sails grow ever bolder, and all of Belfalas now lies ever more under their shadow. I will not blame you overmuch, {playername}, for your failure, but we have been struck a sore blow indeed, a sore blow. Go now. Hope dwindles for Gondor, and we must fight to keep what remains of it alive.
-; qstr_This_is_evil_news_you|This is evil news you bring. The Easterlings grow ever bolder, and Esgaroth burns. I will not blame you overmuch, {playername}, for your failure, but we have been struck a sore blow indeed, a sore blow. Go now. Hope dwindles for our kingdom, and we must fight to keep what remains of it alive.
-; qstr_Pah!_It_seems_you_we|Pah! It seems you weren't able to find your sea-legs, {playername}. Now they sit, these men of Gondor, high in their towers, vain as kings, laughing as the black sails burn! Perhaps a stint at the oars of a galley would be fitting punishment for your troops; a pity they are under your command, and not mine. The Eye will not be pleased. Leave me now. 
-; qstr_Have_you_nothing_bet|Have you nothing better than weak excuses to offer for your failure, {playername}? Perhaps you are not as strong as we had believed. Serve our cause better in future, {playername}. There will be no mercy for the weak!
-; qstr_{playername}_we_have|{playername}, we have Isengard on their knees. They have launched their last stand and is protecting Saruman in his tower. Ride with me and meet them!
-; qstr_Are_you_ready_to_mee|Are you ready to meet Isengard's last stand?
-; qstr_I_am_ready_to_ride_w|I am ready to ride with you against Isengard.
-; qstr_I_am_ready_to_ride_wi|I am ready to ride with you and meet them. Let us end this now.
-; qstr_I_am_not_ready_to_ri|I am not ready to ride with you yet. I need some more time.
-; qstr_You_do_not_have_enou|You do not have enough troops to help in this battle. Raise at least 30 men and join me soon!
-; qstr_Stay_close_we_will_t|Stay close, we will take position near the enemy. When we have all gathered, we will strike.
-; qstr_You_have_taken_too_l|You have taken too long... We shall ride now, with or without you. We will gather near the enemy, and in 3 days time, we will strike.
-; qstr_Make_haste_{playerna|Make haste, {playername}. We do not want them to recover.
+qstr_Foiling_the_enemy_s_|挫败敌人对难民队的进攻行动，打击了他们的士气（因你成功地击败了{reg18}掠夺者，{s1}失去了{reg19}势力值）。
+qstr_The_slaughter_and_lo|这次对难民队的屠杀掠夺增强了敌人的力量（{s1}获得了50势力值）。
+qstr_You_did_however_defe|不管怎样你做到了，消灭{reg18}掠夺者，打击了敌人的士气（{s1}失去了{reg19}势力值）。
+qstr_The_slaughter_and_loo|这次对难民队的屠杀掠夺增强了敌人的力量（{s1}获得了{reg20}势力值）。
+qstr_Killing_the_refugees|杀死来自{s1}的难民，把幸存者变为奴隶，让他们士气低下意志消沉（{s1}失去了{reg19}势力值）
+qstr_{reg20}_refugee_trai|{reg20}难民队成功逃脱，提升了敌人的士气（{s1}获得了{reg22}势力值）。
+qstr_You_did_however_defea|不管怎样你做到了，消灭{reg18}难民队，打击了敌人的士气（{s1}失去了{reg19}势力值）。
+qstr_My_lord_{s12}_is_saf|大人，{s12}安全了。海盗已经被击败了。
+qstr_My_lord_Esgaroth_is_|大人，长河镇安全了。卢恩人被击败了。
+qstr_The_surroundings_of_|{s12}在熊熊燃烧。劫掠即是无上荣光！
+qstr_The_surroundings_of_E|长湖镇在熊熊燃烧。劫掠即是无上荣光！
+qstr_This_is_welcome_news|这真是个好消息，{playername}。我们对海盗如此大胆的行动准备不足。但多亏了你，那些黑帆被逼退了，至少是暂时的。希望有一天，我们能以其人之道还治其人之身。我们由衷地感激你。
+qstr__Good_work_{playerna|干得漂亮，{playername}！他们表现得比我们认为的更狡猾，我会以其人之道还治其人之身的。看来那些东方人在船上作战还没在马背上一半厉害，看看他们！也许，我们应该考虑下组建一支我们自己的舰队…不管怎么说，我们都感谢你，代表长河镇和所有的河谷镇人向你致谢，{playername}。
+qstr_Even_from_here_we_co|即使从这里，我们也能看到火焰，还能从风中闻到我们的敌人绝望！你做得非常完美，{playername}。现在，让恐惧在刚铎的每一个男人、女人还有小孩的心中冲撞吧，因为他们知晓了即使是他们最坚固的据点我们也唾手可得！
+qstr_Even_from_here_we_cou|即使从这里，我们也能看到火焰，闻到我们敌人在风中绝望的味道！你做得非常好，{playername}。让恐惧在每个河谷镇的男人、女人和小孩的心中冲撞吧，因为他们现在知道了，即使是他们最强大的据点也不过是我们的囊中之物！
+qstr_My_lord_they_fell_up|大人，他们带着强大的军队进攻我们。我们无法击退海盗。
+qstr_My_lord_they_fell_upo|大人，他们带着强大的军队进攻我们。我们无法击退卢恩士兵。
+qstr_The_raid_on_{s12}_fa|在{s12}的袭击失败了，多亏了我们盟友的无能！
+qstr_This_raid_was_ill_fa|这次袭击从一开始就注定要失败。我们不该登上那些摇摇晃晃的木筏！
+qstr_This_is_evil_news_yo|这是你带来的坏消息。邪恶水手变得大胆了，现在贝尔法拉斯（刚铎南部的沿海地区）的每个生命都在他们的黑影之下了。我不会过分责备你的失败，{playername}，但是我们确实受了沉重的打击。现在出发吧。刚铎的希望越来越渺茫了，但我们仍要为它剩下的生命奋战。
+qstr_This_is_evil_news_you|这是你带来的坏消息。这些东方人变得大胆了，长湖镇被烧了。我不会过分责备你的失败，{playername}，但是我们确实受了沉重的打击。现在出发吧。我们的王国的希望越来越渺茫了，但我们仍要为它剩下的生命奋战。
+qstr_Pah!_It_seems_you_we|呸！看来你们不是在海上混的料子，{playername}。那群刚铎人，现在就安安稳稳地坐在那儿，在他们那高高的塔上，像那些虚伪的王族，看着燃烧的黑帆哄堂大笑！你的手下应该去舰队甲板下面划上几天桨，好好惩罚惩罚；可惜他们是你的人，不是我的。魔眼不会高兴的。现在给我滚吧。
+qstr_Have_you_nothing_bet|你难道为你的失败找不到比这站不住脚的辩解更好的借口了吗，{playername}？也许你并不像我们想象中那么强。好好为我们的未来计划工作吧，{playername}。弱者终将不被怜悯！
+qstr_{playername}_we_have|{playername}，我们狠狠地教训了艾辛格。他们已经召集他们最后的军团来保护在他那塔里的萨鲁曼了。与我并骑，去会会他们！
+qstr_Are_you_ready_to_mee|你准备好面对艾辛格的最后的军团吗？
+qstr_I_am_ready_to_ride_w|我准备好与你并骑对抗艾辛格。
+qstr_I_am_ready_to_ride_wi|我已经准备好同你并骑去会会他们了。现在，让我们结束这一切吧。
+qstr_I_am_not_ready_to_ri|我还没有准备好和你出发。我还需要一些时间。
+qstr_You_do_not_have_enou|为支援这场战斗，你至少需要带30名战士来加入我，快去吧！
+qstr_Stay_close_we_will_t|保持距离，我们要靠近敌人。当一切都准备就绪，我们就发起进攻。
+qstr_You_have_taken_too_l|你花太长时间了……我们现在就要上马出发，不管有没有你。我们将在靠近敌人的地方集结，3天后，我们就发起进攻。
+qstr_Make_haste_{playerna|抓紧时间，{playername}。我们不希望他们能有喘息之机。
 qstr_Your_mission_is_comp|你的任务完成了，{s9}希望你能够在接到进一步的指令以前继续跟着他的部队前进。
 qstr_{s13}_asked_you_to_g|{s13}希望你能收集{reg3}单位的{s4}并带给他。
-; qstr_Moreover_should_you_|Moreover, should you become {s24}, you will be welcomed to my War Council, where you can make decisions that will affect the course of our campaign. For the moment, as a {s25}, just follow us and stay close. We'll be moving soon.
+qstr_Moreover_should_you_|另外，如果你成为了{s24}，你将得到我的战事议会的欢迎，在那儿你可以提出影响我们战役进程的建议。但目前，你只是一名{s25}，只要跟随我们并保持联络就好了。我们很快就要行动了。
 qstr_For_the_moment_just_|现在你只需要紧跟着我，我们马上就动身。
 qstr_{s9}_asked_you_to_sc|{s9}希望你去侦察{s13}，{s14}和{s15}，然后向他回报。
 qstr_You_have_been_most_h|你真是帮了大忙，{playername}。谢谢你。
@@ -1255,56 +1271,56 @@ qstr_Superb_work_{playern|精湛的工作，{playername}。你的态度值得赞
 qstr_Your_efficiency_is_p|你的效率令人惊讶，{playername}。坚持下去，你将会走得很远。
 qstr_It_was_an_honour_to_|乐意效劳。
 qstr_Your_wish_is_my_comm|悉听吩咐。
-; qstr_Sauron_in_Mordor_the|Sauron in Mordor, the Corsairs of Umbar, the Variags of Khand, and Harad Tribesmen
-; qstr_Saruman_in_Isengard_|Saruman in Isengard and the Wildmen of Dunland
+qstr_Sauron_in_Mordor_the|魔多的索伦，昂巴的海盗，侃德的维瑞亚人，还有哈拉德的部落民
+qstr_Saruman_in_Isengard_|艾辛格的萨鲁曼和登兰德的野人
 qstr_Orcs_of_Moria_and_Do|摩瑞亚和多尔哥多的半兽人
-; qstr_Orcs_of_Gundabad_and|Orcs of Gundabad and the Warriors of Rhun
+qstr_Orcs_of_Gundabad_and|刚达巴的半兽人和卢恩的战士
 qstr_Men_of_Gondor|刚铎的人类
 qstr_Riders_of_Rohan|洛汗骑兵
 qstr_Elves_of_Imladris_an|瑞文戴尔和罗斯洛立安的精灵
-; qstr_Men_of_Dale_Dwarves_|Men of Dale, Dwarves of Erebor, Beorn's kinsmen, and the Elves of Mirkwood
-; qstr_Ah_{playername}_it_i|Ah, {playername}, it is good you have come. War is at our doorstep and we need soldiers and captains alike to fulfill their oaths.^^We are at war with {s11}, but we have to gather our strength and weaken the enemy before we can hope to move against their strong-points and fortresses. Each defeat of our enemies will bring us closer to victory and strengthen our resolve, so I trust you to fight our enemy at every opportunity, be it a mere scout party or a war host. Yet do not rush into battle alone, you must fight alongside our brave captains and our allies also.
-; qstr_About_time_you_showe|About time you showed up, {playername}. We're at war now and I will not tolerate any insubordination. We are fighting against {s11}, but we have to gather our strength and smite the enemy in the field before we can move against their fortresses. Each defeat of our enemies will strengthen our war efforts and bring them closer to their utter destruction. So I trust you to fight our enemy at every opportunity, be it a mere scout party or a war host. Also, you are to support our captains and our allies if you see them fight. Do not fail them or I will know.
+qstr_Men_of_Dale_Dwarves_|河谷镇的人类，孤山的矮人，波宁的族人，还有幽暗密林的精灵
+qstr_Ah_{playername}_it_i|啊，{playername}，很高兴见到你。战火已烧及我们家园，我们需要士兵和军官履行他们的誓言。^^我们正在与{s11}交战，但是在我们有望去进攻他们的据点和堡垒前，我们需要集结我们的力量并削弱敌军，每一次击败敌人都能让我们更加靠近胜利并且坚定我们的决心，所以我相信你将会抓住每个机会进攻我们的敌人，不管只是一队斥候还是一支战队。但是，不要独自作战，你一定要与我们勇敢的指挥官和我们的友军并肩作战。
+qstr_About_time_you_showe|是时候你该来了，{playername}。现在，我们已经进入了战争状态，并且我将不会容忍任何违抗军令的事。我们正在与{s11}交战，在我们有望进攻他们的堡垒之前，我们必须集结我们的力量并在战场上重创敌人。每次击败我们的敌人都将增强我们的信心，并且让他们更靠近彻底的毁灭。所以我相信你将抓住每一个与我们敌人作战的机会，不管仅仅是一队斥候还是一支战队。另外，如果你遇见我们的指挥官和友军正在作战，你要上前支援。不要辜负他们，不然我会知道的。
 qstr_we_are_fighting_agai|我们目前正与{s13}交战
 qstr_we_are_not_fighting_|我们目前没有与任何人交战
-; qstr__{s14}_gained_{reg78| {s14} gained {reg78} experience.
+qstr__{s14}_gained_{reg78|{s14}获得{reg78}点经验值。
 qstr_Oh?_Let_me_see_that.|哦？让我看看…很好很好！非常感谢你把这封信带给我，{playername}。拿着徽章作为我收到信的证物，下次见到{s9}的时候请代我向他问好。
 qstr_Give_me_that!_Hrmph!|给我的？哇啊！很好！{playername}。你能把这个带给我，说明你是个有用的仆人。告诉{s9}，让他多用用你。
 qstr_What?_Let_me_see_tha|什么？让我看看…恩，{playername}。感谢你把这封信带给我，现在你可以走了。
 qstr_Give_me_that!_Hrmph!_|给我的？哇啊！{playername}，你是个有用的仆人，但我不看好你能活很久。滚吧！
-; qstr_My_king|My king
+qstr_My_king|吾王
 qstr_Lord|大人
-; qstr_my_king|my king
-; qstr_lord|lord
-; qstr_our|our
-; qstr_your|your
+qstr_my_king|吾王
+qstr_lord|大人
+qstr_our|我们的
+qstr_your|你们的
 qstr_Moria_and_Gundabad|莫瑞亚和刚达巴山
 qstr_Moria|摩瑞亚
 qstr_Gundabad|刚达巴山
-; qstr_You_swear_an_oath_of|You swear an oath of vengeance against {s3}. You must now kill as many of the troops of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^.
+qstr_You_swear_an_oath_of|你宣誓要向{s3}复仇。在接下来的日子里，你要尽可能多的杀死摩瑞亚和刚达巴的士兵。你很清楚你的跟随者是你复仇誓言的见证者，而且你不想成为破誓者。血腥复仇现在开始了！^
 qstr_The_search_for_the_L|寻找丢失长枪的旅途带着你来到了多温尼安—布拉多辛王北方王国的所在地。未完待续
-; qstr__You_need_to_be_{s24|(You need to be {s24} or higher).
-; qstr_You_are_not_worthy_o|You are not worthy of my skills. Prove yourself first, and rise above {s25}. {s2}
-; qstr_I_am_sorry._I_cannot|I am sorry. I cannot attend to you as a {s25} as there are more pressing issues. {s2}
-; qstr_Yes_I_am_and_I_can_h|Yes, I am, and I can help you for a price.
-; qstr_You_heard_right_and_|You heard right, and yes, I can aid you.
+qstr__You_need_to_be_{s24|（你的军衔至少要是{s24}）。
+qstr_You_are_not_worthy_o|你不值得我的效力。先证明你自己吧，至少先晋升为{s25}。{s2}
+qstr_I_am_sorry._I_cannot|抱歉，你的军衔只是{s25}，我没空治疗你，还有很多要紧事等着我去处理。{s2}
+qstr_Yes_I_am_and_I_can_h|没错，我是。要我帮你的话，你得支付点报酬。
+qstr_You_heard_right_and_|你没听错，是的，我可以帮到你。
 qstr__Costs_1000_Resource|(失去1000 资源点和5 点影响力)
-; qstr_I_can_see_that._I_ll|I can see that. I'll have my men stand guard while I deal with you. It will take some time. {s2}
-; qstr_Yes_I_see_that._I_ca|Yes, I see that. I can do tend to you yes, but it will take me away from important tasks. {s2}
+qstr_I_can_see_that._I_ll|我知道了。我会让我的人在我们搞定这些事之前帮我们把把风。毕竟这要花点时间啊。{s2}
+qstr_Yes_I_see_that._I_ca|嗯，我明白了。我是可以治疗你，但这会占用我处理其他重要事情的时间精力。{s2}
 qstr__Costs_1500_Resource|(失去1500 资源点和10 点影响力)
-; qstr_I_ll_have_my_persona|I'll have my personal healers deal with you. They are the best. Tell me when you want them here. {s2}
-; qstr_I_ll_have_my_personal|I'll have my personal healers tend to your men. They are the best at what they do. Let me know when you need them. {s2}
-; qstr_I_ll_have_them_here_|I'll have them here shortly.
-; qstr_Let_us_begin._My_hea|Let us begin. My healers will take care of you and your men.
-; qstr_Alright!_This_is_goi|Alright! This is going to hurt... a lot.
-; qstr_Let_us_begin._It_may|Let us begin. It may take some time. Just relax and leave the rest to me.
-; qstr_Impressive..._You_di|Impressive... You didn't flinch much. Go back to your post.
-; qstr_Rest_the_wounds_have|Rest, the wounds have been taken care of.
-; qstr_Your_party_must_be_a|Your party must be at least 30 strong to begin this quest
+qstr_I_ll_have_my_persona|我会让我的私人医师来医治你。他们医术高明。当你需要他们时来这里告诉我一声。{s2}
+qstr_I_ll_have_my_personal|我会让我的私人医师来医治你的手下的。他们医术高明。当你需要他们时来跟我说一声。{s2}
+qstr_I_ll_have_them_here_|我会让他们尽快到这里。
+qstr_Let_us_begin._My_hea|让我们开始吧。我的医师会照顾好你和你的手下。
+qstr_Alright!_This_is_goi|好了！这会疼得……很厉害。
+qstr_Let_us_begin._It_may|让我们开始吧。这得花点时间。放松，剩下的交给我。
+qstr_Impressive..._You_di|令人印象深刻……你没有畏惧。回到你的岗位上去吧。
+qstr_Rest_the_wounds_have|好好休息吧，伤口已经处理好了。
+qstr_Your_party_must_be_a|你的队伍至少要有30名士兵才能开始这项任务。
 qstr_You_were_tasked_to_h|你被请求解决一支在北方造成严重破坏的土匪，你既可以选择直接进攻他们位于幽暗密林附近的藏身处，你也可以选择在比翁之家的周围拦截他们。
-; qstr_Mordor_gains_Faction|Mordor gains Faction Strength as they received an unknown weapon
+qstr_Mordor_gains_Faction|魔多因得到了一批未知武器，获得势力值。
 qstr_Beornings_gain_Facti|波宁人获得派系力量：你的胜利广为流传
-; qstr_Beornings_lose_Facti|Beornings lose Faction strength when they were attacked.
+qstr_Beornings_lose_Facti|波宁人因遭受攻击，损失势力值。
 qstr__{s14}_gains_faction|{s14}获得派系力量：至尊魔戒的消息广为流传
 qstr_You_must_return_and_|你必须马上回报你打败魔戒猎手头领并且获得了一个魔法戒指的消息。
 qstr_You_must_return_and_r|你必须马上回报你打败魔戒猎手头领的消息。同时告知各派系统治者们—魔戒猎手很有可能得到了他们想要的东西。
@@ -1316,31 +1332,31 @@ qstr_{s31}{reg28?Those:That}|{s31}{reg28?这群:这名}有用的{reg28?士兵们
 qstr_{s4}_^Oh_and_take_bac|{s4} ^噢，请将这些非本派系的士兵带回去吧，我们没法指挥他们。
 qstr_It_is_my_duty_to_hel|帮助人民是我的天职。
 qstr_It_is_my_duty_to_help|帮助盟友是我的天职
-; qstr_{s31}__Consumable._C|{s31} (Consumable. Can be rebought)
-; qstr_{s31}__Can_be_reboug|{s31} (Can be rebought)
-; qstr_I_wish_to_raze_an_en|I wish to raze an enemy settlement to the ground.
-; qstr_I_wish_to_lead_our_m|I wish to lead our men in an assault on an enemy settlement.
-; qstr_More_snaga_who_will_|More snaga who will throw themselves at the enemy’s walls? Listen close and I might let you try.
-; qstr_Indeed?_Few_men_are_|Indeed? Few men are so quick to volunteer to die on the battlements. There is much we must discuss before I can give you leave to go
-; qstr_Indeed?_That_is_no_s|Indeed? That is no small undertaking and there are matters which we must discuss before I can give you leave to go.
-; qstr_First_sieges_are_onl|First, sieges are only an option for the strongest! Here is all that needs doing:
-; qstr_Here_is_all_that_nee|Here is all that needs doing:
-; qstr_Firstly_we_must_thin|Firstly, we must think to the hindrances of this task:
-; qstr_You_need_sharp_weapo|You need sharp weapons, fresh meat for your troops and wargs, wood to fuel the fires, and draughts to make the weaklings keep up. You also have to keep your scum in line or they’ll all kill each other before you’ve even got to the walls. We’re too busy with our own fights to take care of your lot — be prepared to provide what is needed to keep the maggots moving.^[requires {reg3} resources, {reg15} influence]
-; qstr_Steel_must_be_kept_s|Steel must be kept sharp, men and horses fed, fires kept burning, water fetched, wounds tended — you and your men are no use to us if you can’t maintain your campaign. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]
-; qstr_Steel_must_be_kept_sh|Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended — a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]
-; qstr_Next_if_you_try_to_a|Next, if you try to attack an enemy capital, I’ll stick you if you ain’t dead already.. We only march there when the Master commands it. You go where the enemy is weak and can be beaten.
-; qstr_Secondly_you_do_not_|Secondly, you do not have permission to lead our people against an enemy capital. These places can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be defeated.
-; qstr_Third_{s2}_is_on_its|Third, {s2} is on its own campaign. We’ll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won’t last long.
-; qstr_Furthermore_you_must|Furthermore, you must know that {s2} is occupied with its own campaign. Our banners will follow you into battle if circumstance permits, but do not trust to hope — you may well be forced to stand alone.
-; qstr_Last_remember_that_a|Last, remember that as a {s25}, the Master has got no time for failure. You risk much for {s2} when you fight — bring us defeat and we’ll make sure you wish you’d never been born.
-; qstr_Finally_remember_tha|Finally, remember that as a {s25}, you live and die by your successes and failures. You risk much for {s2} when you march into battle — bring ruin upon it and the consequences will be severe.
-; qstr_Finally_remember_that|Finally, remember that as a {s25}, you may bask in the glory of a victory hard-won and call that victory your own but all who dwell in {s2} will pay the price of your failure. You carry the fate of {s2} into battle with you — bring ruin upon it and the consequences will be severe.
-; qstr_Still_think_you_can_|Still think you can handle it?
-; qstr_Knowing_what_I_have_|Knowing what I have told you, do you still think yourself capable?
-; qstr_Knowing_what_I_have_t|Knowing what I have told you, do you still wish to proceed?
-; qstr_Give_me_the_banner_o|Give me the banner of the Master!
-; qstr_Yes_my_lord._Let_me_|Yes, my lord. Let me carry our banner into battle.
+qstr_{s31}__Consumable._C|{s31}（消耗品，可以再次购买使用）
+qstr_{s31}__Can_be_reboug|{s31}（可以再次购买使用）
+qstr_I_wish_to_raze_an_en|我希望将敌人的据点夷为平地。
+qstr_I_wish_to_lead_our_m|我希望我能够带领自己的手下独自攻城。
+qstr_More_snaga_who_will_|会有更多的奴隶（强兽人对半兽人藐视的说法）进攻敌人的城墙？仔细听，我可能会让你试试。
+qstr_Indeed?_Few_men_are_|真的？很少有人这么痛快地愿意上城墙拼杀送死。在我允许你离开之前，我们可得好好地讨论下这事。
+qstr_Indeed?_That_is_no_s|真的？这可不是一件小事，在我允许你出发之前，这可有些事项我们得好好讨论讨论。
+qstr_First_sieges_are_onl|首先，攻城是只有公认最强大的人才能拥有的权利！接下来听好了，你需要做好以下全部准备：
+qstr_Here_is_all_that_nee|你需要做好以下全部准备：
+qstr_Firstly_we_must_thin|首先，我们必须考虑到这项任务将会遇到的阻碍：
+qstr_You_need_sharp_weapo|你需要备好锋利的武器，用于供给你的士兵和座狼的新鲜肉食，用于点火的木头，外加让那些软骨头鼓起劲来的一些冲剂酒酿。你还得让你的渣滓们在队伍里安分待着，不然在你派他们冲向城墙之前他们可能就互相残杀光了。我们都忙于自己的战事没法给你提供多少支援，你要准备好能鼓舞那些蛆虫战斗的东西。^[需要{reg3}资源点，{reg15}影响力]^
+qstr_Steel_must_be_kept_s|武器必须保养锋利，士兵还有马匹要保证酒足饭饱，篝火要保持燃烧，水要保证充足，伤员需要得到照顾——如果你不能继续打好你们的仗，你和你的手下对我们而言就都只是废物罢了。由于我们的战线已经拉得太开，没法给你提供你需要的援助，你得自己准备好组织队伍攻城略地所需要的一切。^[需要{reg3}资源点，{reg15}影响力]^
+qstr_Steel_must_be_kept_sh|武器必须保养锋利，士兵还有马匹要保证酒足饭饱，篝火要保持燃烧，水要保证充足，伤员需要得到照顾——准备好这些可谓是一场战斗，虽然没那么光彩但其重要性丝毫不逊于在城墙堡垒上面拼杀。由于我们的战线已经拉得太开，没法给你提供你需要的援助，你得自己准备好组织队伍攻城略地所需要的一切。^[需要{reg3}资源点，{reg15}影响力]^ 
+qstr_Next_if_you_try_to_a|然后，你要是胆敢自行进攻敌军首都——如果再次见面你还没死的话我会给你来上一棍子的。我们只朝主人下令的地方进军。你应该先去进攻那些能够轻易击溃的敌人。
+qstr_Secondly_you_do_not_|其次，你不能在没有得到允许的情况下带我们的士兵进攻敌人的首都。只有当我们的全部军力都集结一致后，才能去进攻那些地方。你只能进攻那些我们的敌人已经被充分削弱并且有可能被打败的地方。
+qstr_Third_{s2}_is_on_its|再次，{s2}有自己的战役要进行。目标看起来轻而易举的话，我们会支援你，当然你最好有实力自己打下目标，不然你可能活不长久了。
+qstr_Furthermore_you_must|而且，你得知道，{s2}正忙得团团转。条件允许的话，我们的掌旗官会与你并肩作战，但还是别抱太多希望——你可能不得不独自奋战。
+qstr_Last_remember_that_a|最后，你要记住，身为{s25}，主人没空听那些失败的消息。{s2}为你的作战承担着很多风险——你要是战败的话，我们会让你生不如死。
+qstr_Finally_remember_tha|最后，记住作为一名{s25}，你的成败决定了你的生死。{s2}为你的作战承担着很多风险——你要是战败的话，就准备承担后果吧。\n 
+qstr_Finally_remember_that|最后你要牢记，作为一名{s25}，你可以沐浴在来之不易的胜利的光辉中，将胜利据为己有，但当你战败时，所有生活在{s2}的人都会因你的失败付出代价。你可是背负着{s2}的命运在战斗——你要是战败的话，就准备承担后果吧。
+qstr_Still_think_you_can_|你还觉得你能应付好这件事吗？
+qstr_Knowing_what_I_have_|了解我告诉你的这些后，你仍然觉得你能胜任吗？
+qstr_Knowing_what_I_have_t|了解我告诉你的这些后，你仍然想能做这件事吗？
+qstr_Give_me_the_banner_o|给我主人的大旗吧！
+qstr_Yes_my_lord._Let_me_|是的，我的大人。让我高举我们的战旗冲入战场吧。
 qstr_The_people_of_{s3}_t|{s3}的人民感谢你的礼物，{playername}。作为{s1}的交换，我们想把{s2}送给{s4}的人民。再次感谢你，{playername}。
 qstr_I_want_to_deliver_a_|我想给我们的盟友送一份礼物。
 qstr_delivering_a_gift|送一份礼物
@@ -1351,8 +1367,8 @@ qstr_Gift|礼物
 qstr_You_have_requested_t|你请求把{s1}的礼物从{s2}送给{s3}。{s3}的人民一定会很欢迎你的到来。
 qstr_Bribe|贿赂
 qstr_You_have_requested_to|你请求把{s1}的贿赂从{s2}带给{s3}。希望你能够得到一定的奖赏作为回报吧。
-; qstr_{reg3}_hours.|{reg3} hours.
-; qstr_hour.|hour.
+qstr_{reg3}_hours.|{reg3}小时。
+qstr_hour.|小时。
 qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
 qstr_You_spent_{reg0}_of_|你花费了对{s1}的{reg0}影响力。你还剩{reg1}影响力。
 qstr_The_War_is_over_{pla|战争结束了！{playername}，你还没听说么？
@@ -1360,46 +1376,48 @@ qstr_We_are_at_war_with_{|我们正与{s12}交战。但交战的重心其实是�
 qstr_We_are_at_war_with_{s|我们正与{s12}交战。但其实目前只有一点小冲突。
 qstr_we_are_not_too_conce|我们目前没工夫理他们，因为我们正与离家更近的敌人交战。
 qstr__under_your_orders|，听从指挥。
-; qstr_{playername}_you_may|{playername}, you may have seen the hosts of {s7}. Of all the captains arrayed against us, at present {s7} of {s8} has won the greatest renown. Their mere presence on the field is enough to embolden our enemies and weaken the resolve of our allies. {playername}, if you wish to do a great deed in this war, strike down the host of {s7} in open battle, in sight of all! Thus may hope be rekindled, and dread fill the hearts of those who would come against us.
-; qstr_Do_you_mark_how_our_|Do you mark how our bravest fighters falter at the mere mention of {s7} of {s8}? A great warrior, oh yes, a capable captain. We cannot allow that to run amok like this! Everywhere their face is shown, our lines bend back, and our foes find new courage. This cannot be. I command that you, {playername}, challenge and defeat the soldiers of {s7} in open battle. To see {s7} struck down by you will freeze the blood and marrow of his followers, and show our own troops that our enemies can be thrown down!
-; qstr_This_is_a_chance_for|This is a chance for me to show my quality. I shall defeat {s7} in the sight of enemy and ally alike.
-; qstr_Accursed_be_those_wh|Accursed be those who follow {s7} this day, for I shall strike them down for all to see!.
-; qstr_{s9}_wants_you_to_de|{s9} wants you to defeat {s35} of {s36} in battle.
-; qstr_I_humbly_ask_that_yo|I humbly ask that you find another for this task. I do not think I could best {s7} in battle.
-; qstr_Mercy_I_crave!_To_fa|Mercy, I crave! To face {s7} in open battle is sheer folly! I cannot do this thing!
-; qstr_strong_warriors_from|strong warriors from {s7}
-; qstr_champions_from_{s7}_|champions from {s7}, the strongest in the field
-; qstr_{playername}_the_men|{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to challenge and defeat {reg22} {s6}.
-; qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!
-; qstr_I_will_do_what_you_a|I will do what you asked, and the men will witness.
-; qstr_high_level_troops_fr|high level troops from
-; qstr_elite_level_troops_f|elite level troops from
-; qstr_{s9}_wants_you_to_pe|{s9} wants you to personally defeat {reg22} {s6} {s7}.
-; qstr_I_want_you_to_person|I want you to personally slay
-; qstr_I_want_you_and_your_|I want you and your men to kill
-; qstr_{playername}_you_nee|{playername}, you need to earn my respect and that of your men. {s6} {reg22} {s7} troops!
-; qstr_{s9}_wants_you_to_per|{s9} wants you to personally kill {reg22} {s6} troops.
-; qstr_{s9}_wants_you_and_y|{s9} wants you and your men to kill {reg22} {s6} troops.
-; qstr_{playername}_we_have_|{playername}, we have received grim tidings. The Corsairs of Umbar grow ever bolder, and even as we speak, a fleet gathers not far from {s6}. Already they reave along the coastline, and soon they shall be upon the city itself.^^ We must intercept the fleet before it reaches the city. Hasten to {s6}, and speak to the local authorities.
-; qstr_{playername}_we_have_r|{playername}, we have received grim tidings. The savages of Rhûn have more cunning and boldness than we thought - unseen by our scouts, they have built a sufficiency of boats and rafts to carry them across the Long Lake, and they are striking directly at Esgaroth!^^ We must intercept the fleet before it reaches the city. Lead your troops there as swiftly as you can, and drive the barbarians back across the water!
-; qstr_If_you_seek_pillage_|If you seek pillage and plunder, here is a matchless opportunity, {playername}.^^ A Corsair fleet is launching from the port at {s7}, and will set a course straight for {s6}, which is ripe for the plucking! Join them in their assault, and share in the spoils!
-; qstr_The_soft_weaklings_o|The soft weaklings of Esgaroth are no match for our swift horsemen and ferocious warriors, {playername}. This is known. The Lake-men believe themselves safe, across the water from us, but we shall soon show them otherwise!^^ We have made boats, and rafts, good enough to carry our warriors straight across the lake. They won't be expecting us! ^^Go to the Main Camp, and speak to the camp commander if you wish to join the assault.
-; qstr_{s9}_asked_you_to_he|{s9} asked you to help defend {s3} against a Corsair raid. Hasten to the city, speak to the guild master, and lend your aid to the local garrison.
-; qstr_{s9}_asked_you_to_hel|{s9} asked you to help defend Esgaroth against a naval incursion, of all things, made by Rhûn. Hasten to the Lake-town, speak to the guild master, and lend your aid to the local garrison.
-; qstr_{s9}_offered_you_an_|{s9} offered you an opportunity to join a naval raid against {s3}. Make your way to {s4}, speak to the camp commander, and join the assault.
-; qstr_{s9}_offered_you_an_o|{s9} offered you an opportunity to join a naval raid against Esgaroth. Make your way to {s4}, speak to the camp commander, and join the assault.
-; qstr_We_will_go_as_swiftl|We will go as swiftly as we may, and pray we are not too late.
-; qstr_We_shall_plunder_the|We shall plunder their port and seize their riches for ourselves!
-; qstr_We_shall_plunder_the_|We shall plunder the Lake Town and seize their riches for ourselves!
+qstr_{playername}_you_may|{playername}，您可能已经看到了{s7}的主人。在所有与我们作战的队长中，目前最负盛名的是{s8}的{s7}。他们仅仅出现在战场上就足以使我们的敌人壮胆生威，动摇我们盟友的决心。{playername}，如果你想在这场战争中有一番作为，那就在公开的战斗中，当着所有人的面击倒{s7}军团吧！以此重燃我们的希望，并让恐惧充斥胆敢反抗我们的人心中。
+qstr_Do_you_mark_how_our_|你有没有看到我们最勇敢的战士只不过听到{s7}和{s8}就开始动摇？一个伟大的战士，哦，是的，一个能干的队长。我们不能让这样的现象四处散播！他们无处不在，我们的战线不断后撤，我们的敌人重振军威。这不可能。我命令你，{playername}，在公开战斗中挑战并击败{s7}的士兵。看到他{s7}被你打倒的这一幕将会冻僵他追随者们的血液和骨髓，给我们的军队看看我们的敌人是可以被打倒的！
+qstr_This_is_a_chance_for|这是一个展示我能力的机会。我将会在敌人和盟友两边注视之下击败他们{s7}。
+qstr_Accursed_be_those_wh|那些追随{s7}的人该受到诅咒，为此我将会击溃他们给所有人看!
+qstr_{s9}_wants_you_to_de|{s9}想要你在战斗中击败{s36}的{s35}。
+qstr_I_humbly_ask_that_yo|我谦卑地请求你为这项任务另寻他人。我不认为我能够胜任在战斗中打败{s7}这项任务。
+qstr_Mercy_I_crave!_To_fa|发发慈悲，我求求你了！和{s7}面对面战斗完全是件愚蠢的事情！我做不到啊！
+qstr_strong_warriors_from|来自{s7}的强大战士们
+qstr_champions_from_{s7}_|来自{s7}的冠军，战场上最强的幸存者。
+qstr_{playername}_the_men|{playername}，人们听说了敌军残暴士兵的传闻。那些耸人听闻的谣言让我军士气低落。我希望你能够向大家展示敌兵并不可怕。我希望你能够亲自杀死{reg22}名{s6}。
+qstr_{playername}_I_want_|{playername}，我想要你展示给我们的人看看敌军是多么的无足轻重。我想要你亲自宰掉{reg22} {s6}！让他们看看我们才是更强的！
+qstr_I_will_do_what_you_a|我会做你要求的，而且这些人会见证。
+qstr_high_level_troops_fr|高阶士兵来自
+qstr_elite_level_troops_f|精锐士兵来自
+qstr_{s9}_wants_you_to_pe|{s9}想要你亲自击败{reg22}{s6}{s7}。
+qstr_I_want_you_to_person|我要你亲自杀掉
+qstr_I_want_you_and_your_|我要你和你的士兵去杀
+qstr_{playername}_you_nee|{playername}，你需要赢得我和你手下的尊重。{s6}{reg22}{s7}士兵！
+qstr_{s9}_wants_you_to_per|{s9}想要你亲自杀死{reg22}{s6}士兵。
+qstr_{s9}_wants_you_and_y|{s9}想要你和你的手下杀死{reg22}{s6}士兵。
+qstr_{playername}_we_have_|{playername}，我们面临着十分紧急的事态。昂巴的海盗变得从所未有地大胆，甚至在我们说话的时候，一支舰队正在徘徊于{s6}。他们已经沿着海岸线顺流而下，并且很快就要兵临城下了。^^ 请赶紧前往{s6}，与当地有威望的人士交谈，协助当地驻军对抗即将到来的入侵。^（建议在25级之前做该任务，否则敌人人数异常）
+qstr_{playername}_we_have_r|{playername}，我们面临着十分紧急的事态。卢恩的野蛮人比我们想象中更加狡猾和大胆— 我们的侦察员并没有发觉，他们已经建造好了许多的船和木筏足以让他们穿过长湖，直攻长湖镇！^^ 我们必须要加强我们在这里的防御，要尽快。赶快带领你的人前往那里，逼退那群野蛮人！^（建议在25级之前做该任务，否则敌人人数异常）
+qstr_If_you_seek_pillage_|如果你想着烧杀掳掠的事情的话，这里可有个错过就没有了的机会，{playername}。^^ 一支正打算启航的海贼舰队正在{s7}，并且将会计划到达{s6}，现在正是时机成熟之际！加入他们的劫掠计划，然后痛快地享用分到的战利品吧！^（建议在25级之前做该任务，否则敌人人数异常）
+qstr_The_soft_weaklings_o|长湖镇软弱的懦夫可比不上我们迅捷的骑手和凶猛的战士，{playername}。这是众所周知的。那些长湖镇的人们相信他们自己很安全，因为我们之间隔着水流，但我们很快就要给他们一个惊喜！^^ 我已经造了许多船只，和木筏，足够结实到让我们的战士直穿过湖泊。他们不会预料到我们的！^^去主营，如果你想要加入这次袭击的话就跟营长说话。^（建议在25级之前做该任务，否则敌人人数异常）
+qstr_{s9}_asked_you_to_he|{s9}请求你去帮助{s3}防卫一支海盗突袭队。快赶往那座城市，与行政长官取得联系，然后借你的增援给驻军。
+qstr_{s9}_asked_you_to_hel|{s9}请求你去帮助长湖镇防卫一支水兵突袭队，所有的事情都是卢恩搞的。快赶往那座湖城，与行政长官取得联系，然后借你的增援给驻军。
+qstr_{s9}_offered_you_an_|{s9}给你一个机会加入一支水兵突袭队去{s3}。自行前往{s4}，与营地长官取得联系，然后加入这次袭击。
+qstr_{s9}_offered_you_an_o|{s9}给你一个机会加入一支水兵突袭队去长湖镇。自行前往{s4}，与营地长官取得联系，然后加入这次袭击。
+qstr_We_will_go_as_swiftl|我们将尽快赶到，但愿我们不会太迟。
+qstr_We_shall_plunder_the|我们应该掠夺他们的港口并且将他们的财富据为己有！
+qstr_We_shall_plunder_the_|我们应该掠夺这座湖城并且将他们的财富据为己有！
 qstr_I_m_sorry_but_we_can|抱歉，我们现在无法支援他们。
-; qstr_Bah!_Far_more_glory_|Bah! Far more glory to be won elsewhere than with paltry piracy.
-; qstr_This_raid_does_not_i|This raid does not interest me. I shall win glory elsewhere.
+qstr_Bah!_Far_more_glory_|呸！在其他地方赢得的荣誉可比在海上抢劫的多得多。
+qstr_This_raid_does_not_i|这次袭击并不让我感兴趣。我将去其他地方赢得我的荣誉。
 qstr_{s9}_asked_you_to_de|{s9}希望你摧毁{s1}附近的斥候营地。
-; qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
+qstr_Your_party_must_be_at|你的队伍至少要有10名士兵才能开始这项任务。
 qstr_{s9}_asked_you_to_def|{s9}希望你保护{s1}附近一座被攻击的村庄。
 qstr_{s9}_asked_you_to_ra|{s9}希望你能掠夺{s1}附近的一座村庄。
 qstr_These_soldiers_may_w|这些士兵势必会在我的计划中力挽狂澜，{playername}。我能看得出来，你把他们训练的很好。感谢并赞美你！
+qstr_I_wish_you_had_train|我希望你有好好训练他们，{playername}。不过在这邪恶压进的时代，你能给我什么我也只好用什么了。
 qstr_Good_work_in_shaping|你让这些新兵焕发了新生，{playername}。我一直都坚信你是最能干的。但愿这些士兵能比上一批坚持更久。不然的话请再来找我，我还会需要你的帮助的。
+qstr_Is_that_all_you_coul|{playername}，你就这点本事？就这连昨天的战损都补不上，转交给我后你就滚吧！
 qstr_Well_the_soldiers_ar|好了长官，这些士兵现在归你指挥了。我希望你能带他们平安归来。
 qstr_Well_you_may_do_as_y|好的，您请自便。如您所需，我和我手下的教官们将随时为您效劳。
 qstr_{s9}_asked_you_to_br|{s9}希望你带回一只残暴的食人妖以便军用
@@ -1414,8 +1432,8 @@ qstr_No_commander_should_|{playername}，这件事儿对于一名指挥官来说
 qstr_No_commander_should_h|{playername}，这件事儿对于一名指挥官来说真是难以启齿。我前些天才发现我的部分士兵特别的散漫。我希望有人能够重塑他们的风骨，或是及时终止他们无谓的努力。你是一位声名远扬的战士，{playername}。我能请求你能帮我训练一些士兵么？我会支付你高额回报的。
 qstr_{s9}_asked_you_to_rai|{s9}希望你在{s14}为{reg1}征税并带给他。
 qstr_{s9}_asked_you_to_hu|{s9}希望你去追捕名为{s4}的逃犯。根据报告他目前位于{s3}。
-; qstr_{s9}_asked_you_to_defe|{s9} asked you to defend 3 groups of refugees on their way to {s3}.
-; qstr_{s9}_asked_you_to_hun|{s9} asked you to hunt down 3 groups of refugees on their way to {s3}.
+qstr_{s9}_asked_you_to_defe|{s9}希望你能够保护3队去往{s3}的难民。
+qstr_{s9}_asked_you_to_hun|{s9}希望你能够猎杀3队去往{s3}的难民。
 qstr_{s9}_asked_you_to_ca|{s9}希望你把三队逃跑的奴隶带回{s4}。他说这三队人全都逃向{s3}。
 qstr_{s11}_asked_you_to_f|{s11}希望你跟踪将要离开{s12}的间谍。你必须小心不要在途中被间谍发现，否则他可能会产生怀疑并返回。一旦间谍和同伙会面，你需要伏击并抓获他们，然后一并带回{s11}。
 qstr_{s11}_asked_you_to_c|{s11}希望你俘获一名敌方指挥官并带回{s11}审讯。
@@ -1429,7 +1447,7 @@ qstr_My_spies_tell_me_of_|我的间谍告诉我说有大批敌军正集结于{s1
 qstr_{s9}_asked_you_to_sco|{s9}希望你去侦察{s13}
 qstr_We_have_reports_of_s|我们刚刚收到线报，{s13}周围有敌军活动的迹象，但我方斥候目前所有的靠近行动都失败了。所以我希望你能组建一支斥候，并尽可能的靠近{s13}，然后将斥候部署在那里。
 qstr_My_spies_tell_me_the|我的间谍告诉我说敌军正在{s13}采取某些行动。我们那些胆小如鼠的斥候们已经失败太多次了。至今都没传回任何有用的情报。我希望你能组建自己的斥候，并尽可能的靠近{s13}，然后将他们留在那里。确保他们不会转身逃跑！
-; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
+qstr_{s9}_asked_you_to_di|{s9}希望你能在{s13}周边派遣一支斥候。^准备{reg1}名{s15}士兵，其中至少要有1名{s14}，在{s13}附近与{s14}对话，以下达命令派出斥候。
 qstr_We_need_to_take_the_|我们要把战斗带向敌人，{playername}。为了达到这个目标，我们需要攻击他们的巡逻队和情报网络。我希望你去消灭{reg1}队{s13}，这将帮我们赢得主动。
 qstr_We_need_to_grind_dow|我们要把没用的敌人碾碎，{playername}。他们的巡逻队和补给队比我预料中的还要大胆。我希望你去消灭{reg1}队{s13}，教会他们什么叫做恐惧。
 qstr_{s9}_asked_you_to_el|{s9}希望你去消灭{reg1}队{s13}。
@@ -1438,16 +1456,16 @@ qstr_the_Dwarves_so_that_|矮人使用的货币，如果你途径铁丘陵或孤
 qstr_Gondor_so_that_if_yo|刚铎使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们远近闻名的护甲
 qstr_Rohan_so_that_if_you|洛汗使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们传说中的战马
 qstr_Dale_so_that_if_you_|河谷镇使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们远近闻名的战弓
-; qstr_Without_my_help_you_|Without my help you would all lie dead and burnt!^^ I come to answer the call of Saruman, of Isengard. Cross me at your peril!
-; qstr_Without_my_help_you_w|Without my help you would all lie dead and burnt!^^ I come to answer the call of the Lord of Mordor, who will soon be Lord of all the World.
-; qstr__*snort*_There_is_on| *snort* There is only one Lord of all the world, scum. Soon or late, you will answer to Lugbúrz, weakling!
-; qstr_*snort*_Another_one_|*snort* Another one for the meat-shield, to eat arrows! Be off, weakling. We have no use for you.
-; qstr_Go_to_Moria_and_get_|Go to Moria, and get a nice warg for yourself - or some snagas of your own, if you like!
-; qstr_Go_to_Isengard_and_g|Go to Isengard, and get something for yourself - maybe some of the fighting Uruk-Hai will follow you!
-; qstr_Go_up_north_to_Gunda|Go up north, to Gundabad - dumb and ugly, they are, but they have good furs.
-; qstr_Get_some_snagas_of_y|Get some snagas of your own, like these fellows here who follow me. Maybe you’ll have a war party of your own soon enough!
-; qstr_Our_friends_and_alli|Our friends and allies will hear of you, don’t doubt it! Might be they’d be willing to give you a new mount, or a new blade. No one has time for the weak, but if you’re strong, ha, we help those who help us, see? Trade some of those spoils for a good horse, maybe, with those Men of Rhûn - for riding or eating, your choice, har!
-; qstr_Trade_some_of_those_|Trade some of those spoils for a good horse, maybe, with those Men of Rhûn - for riding or eating, your choice, har!
+qstr_Without_my_help_you_|没有我的帮助你们全都会死在地上等着被烧成灰！^^ 我响应着艾辛格，萨鲁曼的召唤，向我致敬否则后果自负！
+qstr_Without_my_help_you_w|没有我的帮助你们全都会死在地上等着被烧成灰！^^ 我响应着魔多之主的召唤，他即将成为世界之主。
+qstr__*snort*_There_is_on|*哼* 世界上只有一个主，渣滓。迟早，你将会回应路格布尔兹，孬种！（注：路格布尔兹在黑语中等于邪黑塔）
+qstr_*snort*_Another_one_|*哼* 又一个肉盾，挡箭的！滚开，懦夫。我们要你没用。
+qstr_Go_to_Moria_and_get_|前往摩瑞亚，为你自己选一匹强大的座狼——或是一些应属于你的奴隶（强兽人对半兽人藐视的说法），只要你喜欢！
+qstr_Go_to_Isengard_and_g|前往艾辛格，拿一些你应得的 — 也许一些好战的强兽人会跟随你！
+qstr_Go_up_north_to_Gunda|一路向北，去刚达巴— 那边的半兽人又蠢又丑，不过他们有上等的皮毛。
+qstr_Get_some_snagas_of_y|拿一些你的奴隶（强兽人对半兽人藐视的说法），像那边那些跟随我的同伴。也许很快你就能够一支属于你的战队了！
+qstr_Our_friends_and_alli|^^我们的朋友和盟友会知道你的大名的，不要怀疑这件事！可能他们会乐意给你一匹新的马，或是一把新的刀。没人会为弱者浪费时间，但是如果你是个强者，哈，我们会帮助那些帮助我们的人，了解了吗？拿一些战利品换一批好马，如果可以的话，跟那些卢恩人— 不管是为了骑还是吃，那是你的选择了，哈！
+qstr_Trade_some_of_those_|拿其中一些战利品换一批好马，如果可以的话，跟那些卢恩人交易— 不管是为了骑还是吃，那是你的选择了，哈！
 qstr_That_is_not_a_smart_|在一名卢恩战士面前说这种话可不明智…下次我见到你，我一定会干掉你。
 qstr_They_will_all_know_m|他们都将知晓我的名号…他们也将知晓何为恐惧
 qstr_Suilad_mellon!_It_is|向你致敬，我的朋友！来自瑞文戴尔的朋友在我们的国度可不常见。感谢群星对你的指引让你前来帮助我们。谢谢！
@@ -1463,7 +1481,7 @@ qstr_Alas_it_is_not_a_plea|哎，我还有其他人来这里并非是为了游�
 qstr_You_wouldn_t_have_nee|如果你坚持关闭国境的话你是得不到我们的援助的！^^深林女巫的故事只能吓跑糊涂的蠢蛋—而非我们刚刚拜托的污秽的半兽人。
 qstr_*growl*_I_know_your_|吼！我知道你在说什么，精灵。至少足够清楚你是在嘲讽我还是在感谢我。^^群星与我的到来无关，我是循着线索和半兽人身上难闻的气味找到这里的。我现在开始怀疑，在你危机的时刻杀死他们是否是一个好注意了。
 qstr_Keep_your_secrets_th|吾友，黄金森林微风中的细语已告知了你的到来。^^职责所在，虽然凯兰崔尔女士应早已知晓，但我会通知她埃尔隆德大人军队的到来。至于你，我希望能把你介绍给黄金森林的人民们。^^Le maethor veleg a gornui（辛达林语：你是一位强大勇敢的战士）！你的勇气与善行应当被知晓。歌唱的黄金谷（罗斯洛立安别名）将永远是你最坚强的后盾。
-; qstr_We_walk_under_the_su|We walk under the sun and the stars, to dwell in caves is not our desire. Still, your undoubtedly well meant counsel is well received. ^^Your wisdom and brave deeds shall be known, your needs met whenever you wander into our domain.
+qstr_We_walk_under_the_su|我们行走于太阳与星光下，住在洞中非吾所愿，但你的善意已经传达。 ^^你的勇气与善行应当被知晓。 我们的王国将永远是你最坚强的后盾。
 qstr_*he_sighs_and_smiles|*他轻叹了一声并微微一笑* ^^好吧，由于有着共同的目标，我们愿意分享我们有的一切，即使你的言辞其实并没有打动我。
 qstr_For_some_months_we_h|在过去的数月里，半兽人伐木队的规模翻了五倍。^^职责所在，虽然凯兰崔尔女士应早已知晓，但我会通知她埃尔隆德大人军队的到来。至于你，我希望能把你介绍给黄金森林的人民们。^^Le maethor veleg a gornui（辛达林语：你是一位强大勇敢的战士）！你的勇气与善行应当被知晓。歌唱的黄金谷（罗斯洛立安别名）将永远是你最坚强的后盾。
 qstr_Calm_yourself_friend|冷静，我的朋友。Pedin i phith in aniron, a nin u-cheniathog（辛达林语：我想说什么均可，而你却听不懂我在说什么。）^^我希望能把你介绍给黄金森林的人民们。你的勇气与善行应当被知晓。黄金谷（罗斯洛立安别名）阳光照耀处，我们都与你同在。
@@ -1479,38 +1497,38 @@ qstr_Our_bees_make_honey_a|我们的蜜蜂制作蜂蜜和蜂蜡，我们的牛�
 qstr_If_fate_wills_it_I_s|循着命运的指引，我将再次踏上你的土地，探寻它的所有秘密。
 qstr_If_I_ever_have_need_|若我将来真有需要罗斯洛立安帮助的地方，定会不吝登门。
 qstr__nod_and_say_nothing|(点头但保持沉默)
-; qstr_Oh_there_are_many_an|Oh, there are many and any friend of Lorien is welcome to these gifts! ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your kindness with all you would require - bright weapons, hard corselets of mail, white-feathered arrows and provisions for your troops. ^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who could offer counsel to others, or ask favours of them.
+qstr_Oh_there_are_many_an|哦，这些礼物向罗斯洛立安的任何朋友开放！^^若我们再次肩并肩的奋战于战场，亦或是你完成凯兰崔尔女士和她手下领主的任务，罗斯洛立安之民都将因你的善意满足你的需求：闪亮的武器，坚硬的链甲，锋利的羽箭和士兵的食粮。^^谁也不知道，未来某日你是否会成为罗斯洛立安的一位伟大{领主/女领主}。
 qstr_The_joys_of_the_Gold|黄金谷（罗斯洛立安别名）的欢乐很多，它随时向着朋友们开放！^^若我们再次肩并肩的奋战于战场，亦或是你完成凯兰崔尔女士和她手下领主的任务，我们的人民都将因你的善意满足你的需求：闪光的武器，坚硬的链甲，锋利的羽箭和士兵的食粮。 ^^谁也不知道，未来某日你是否会成为罗斯洛立安的一位伟大{领主/女领主}。
 qstr_Our_Golden_Valley_gi|黄金谷（罗斯洛立安别名）有大量物资提供给朋友们。^^若我们再次肩并肩的奋战于战场，亦或是你完成凯兰崔尔女士和她手下领主的任务，我们的人民满足你的需求，以感谢你远离家乡前来帮助的善意。
 qstr_I_shall_keep_that_in|我会记住这点的。^^ Hantanyel, áva márië!（辛达林语：感谢你，再见！）
 qstr_That_may_be_so_some_|当是如此，路途总有弯曲。^^ Boe i 'waen!（我要走了！）
 qstr_I_seldom_wander_far_|我很少离家很远，但请快些，那里四处游荡的半兽人可能越来越多了。
-; qstr_Who_are_you?_A_mere_|Who are you? A mere {s25}? I do not have time for the likes of you! Leave me be! {s2}
+qstr_Who_are_you?_A_mere_|你是谁？只不过是个{s25}？我可没时间和你纠缠！让开！{s2}
 qstr_What_do_you_want?|你想要做什么？
 qstr_Greetings_{playernam|你好，{playername}。有什么我可以效劳的吗？
-; qstr_What?_You_come_to_me|What? You come to me and you do not know what I do? Take a look around you.^^ Do you see the blood? Do you hear the crying? Do you feel their pain? That is what I do! I break things to make them better again! If you come to me, broken and in pain, I can make you better!
-; qstr_I_am_a_healer._Come_|I am a healer. Come to me when you or your companions are seriously wounded, and I will mend your injuries to the best of my ability.
+qstr_What?_You_come_to_me|什么？你来找我却不知道我能做什么？看看你的周围。^^你看到那些血渍了吗？你听到那些哭鸣了吗？你感受到他们的疼痛了吗？这就是我干的活！我拆开伤口以便让它们再好起来！如果你浑身伤痛，就来找我，我可以让你感觉好一些！
+qstr_I_am_a_healer._Come_|我是医师。当你或是你的同伴受重伤时可以来找我，我会尽我所能治疗你们的伤口。
 qstr__Costs_500_Resource_|(失去500 资源点和5点影响力)
-; qstr_Ha!_I_can_see_that!_|Ha! I can see that! I can do that, yes.. Aside from your blood, this is not for free! {s2}
-; qstr_Yes_I_see_that._We_c|Yes, I see that. We can do tend to you yes, but I'll need to send for some ingredients. {s2}
+qstr_Ha!_I_can_see_that!_|哈！我看到了！我能做到，没问题……除了你的血，都不是免费的！{s2}
+qstr_Yes_I_see_that._We_c|是的，我看到了。我们可以照顾你，但是我需要一些配药。{s2}
 qstr__Costs_1000_Resource_|(失去1000 资源点和10 点影响力)
-; qstr_I_ll_have_my_worms_d|I'll have my worms deal with you. They are not the best, but sometimes, they get the job done. Tell me when you want them here. {s2}
-; qstr_I_ll_have_my_assista|I'll have my assistants tend to your men. They are still learning, so please bear with them. Let me know when you need them. {s2}
-; qstr_Alright!_Worms!_Get_|Alright! Worms! Get over hear and deal with this!
-; qstr_Let_us_begin._My_ass|Let us begin. My assistants will take care of you and your men.
-; qstr_All_done!_Ha!_You_di|All done! Ha! You didn't scream much, impressive! Now go, leave me be.
-; qstr_We_ve_done_what_We_c|We've done what We can. Now you and your men need some rest.
-; qstr_Boss_the_lads_are_hu|Boss, the lads are hungry! We're doing all the hard work and still we're starving!
-; qstr_Master_the_lads_are_|Master, the lads are hungry! We can't do all this fighting on empty stomachs!
-; qstr_Yes!_With_proper_fed|Yes! With proper fed bellies, we'll serve you twice as well!
-; qstr_As_you_command_maste|As you command, master, heh heh. Meat's back on the menu, boys!
-; qstr_Your_Orcs_&_Uruks_at|Your Orcs & Uruks ate {reg1} men!
-; qstr_Yes_master!_As_you_c|Yes master! As you command, master!
-; qstr_Harr_harr_harr!_You_|Harr harr harr! You don't frighten ME! Next time it's YOU that we eat!
+qstr_I_ll_have_my_worms_d|我会让我的渣滓们去帮你。他们不是最好的，但多少能做好这份事。当你需要他们时来这跟我打声招呼。{s2}
+qstr_I_ll_have_my_assista|我会让我的助手们照顾你的士兵。他们还在学习如何做这些，所以请稍微体谅他们。当你需要他们时来跟我说一声。{s2}
+qstr_Alright!_Worms!_Get_|好了！渣滓们！别听了，干事了！
+qstr_Let_us_begin._My_ass|让我们开始吧。我的助手们会好好照顾你和你们的人的。
+qstr_All_done!_Ha!_You_di|全做完了！哈！你们并没有叫得很多次嘛，令人印象深刻！现在滚吧，让我一个人呆着。
+qstr_We_ve_done_what_We_c|我们已经做了我们能做的了。现在你和你的人需要休息。
+qstr_Boss_the_lads_are_hu|头儿，小伙儿们都在挨饿！我们做的都是苦活脏活但我们还在挨饿！
+qstr_Master_the_lads_are_|主人，小伙子们都饿了！我们可不能空着肚子去送死啊！
+qstr_Yes!_With_proper_fed|好的！我们的肚子填得饱饱的，我们就会为你服务得更加好！
+qstr_As_you_command_maste|遵命，主人。嘿嘿嘿。咱们的菜单上又有肉啦，大伙们！
+qstr_Your_Orcs_&_Uruks_at|你的半兽人和强兽人吃掉了{reg1}个人！
+qstr_Yes_master!_As_you_c|是，主人！遵命，主人！
+qstr_Harr_harr_harr!_You_|哈哈哈！你可吓不倒我！下次我们吃的就是你了！
 qstr_One_{s6}_left_the_pa|一名{s6}离开了队伍。
-; qstr_I_understand._I_will|I understand. I will stay with you. For a while.
-; qstr_I_have_played_my_rol|I have played my role for many long years, for many lifetimes of mortal men. This war is for Mankind to fight. I will leave for the West and some may decide to follow me.
-; qstr_{reg1}_Veteran_Elves|{reg1} Veteran Elves decided to leave your party.
+qstr_I_understand._I_will|我明白了。我会跟你呆在一起。仅仅一会儿。
+qstr_I_have_played_my_rol|我已经尽责许多年，许多凡人的一生。这场战争是凡人的战争。我将就此和决定与我一起的同伴们西渡离去。
+qstr_{reg1}_Veteran_Elves|{reg1}名精灵老兵决定离开你的队伍。
 qstr_What_an_amazing_feat|多么惊人的战功啊！
 qstr_Well_done!|干的漂亮！
 qstr_Nice_legwork.|出色的外勤。
@@ -1519,27 +1537,27 @@ qstr_Good_moves_but_you_m|进展良好，但你需要做的仍有很多。
 qstr_More_than_half_of_th|超过一半的敌军，不坏。
 qstr_You_ll_need_to_try_h|你应该更努力地尝试。
 qstr_Well..._better_here_|好吧…在这儿总比在战场上好，不是么？
-; qstr_We_ve_been_sent_by_L|We've been sent by Lord {s3}. We have come to join our strength to yours.
-; qstr_Lord_{s3}_has_sent_u|Lord {s3} has sent us, to join the fleet attacking {s4}.
-; qstr_Excellent_{playernam|Excellent, {playername}! I heard that you gave them more than what I requested. That is great work.^^ Here, take this as an extra reward for exceeding our expectations. ^^ We need to win this war as soon as possible.
-; qstr_Excellent_{playername|Excellent, {playername}. That will surely help them out. We need to win this war as soon as possible.
-; qstr_Reinforcing_{s1}_has|Reinforcing {s1} has strengthened {s2}. ({s2} has gained {reg50} faction strength).
-; qstr_The_watchmen_in_the_|The watchmen in the city have reported a remarkable decrease in ambushes. You have done your job well. Thank you, {playername}.
-; qstr_Our_guards_have_seen|Our guards have seen the vermin run away with their tails tucked between their legs. You have done well in showing these pests that we control this area.
-; qstr_It_was_nothing._I_wi|It was nothing. I will keep watch should they resurface.
-; qstr_Slaying_these_maggot|Slaying these maggots was nothing. I'll keep watch should they become bold again.
+qstr_We_ve_been_sent_by_L|指挥官{s3}派遣我们赶来支援你。
+qstr_Lord_{s3}_has_sent_u|指挥官{s3}派遣我们加入进攻{s4}的舰队。
+qstr_Excellent_{playernam|太棒了，{playername}！我听到你给予了他们比我的要求更多的帮助。这实在是太伟大了。^^来，拿走这份超出我们期望的额外奖励。^^我们需要尽快地结束这场战争。
+qstr_Excellent_{playername|太好了，{playername}。这将肯定帮助他们脱出困境。我们必须尽快地赢得这场战争。
+qstr_Reinforcing_{s1}_has|援助了{s1}增强了{s2}。（{s2}获得了{reg50}势力值）。
+qstr_The_watchmen_in_the_|城市的守卫报告说最近的袭击大大地减少了。你干得不错。感谢你，{playername}。
+qstr_Our_guards_have_seen|我们的守卫看见那群歹徒们都夹着他们得尾巴逃跑了。你给他们好好地上了一课并让我们重新掌控了这片地区，干得好！
+qstr_It_was_nothing._I_wi|没事。我会继续看着以免再次来犯。
+qstr_Slaying_these_maggot|杀掉这些蛆虫是没用的。我会继续守着这以防他们再次来犯。
 qstr_town|城镇
 qstr_village|村庄
 qstr_The_{s9}_of_{s13}_ha|{s13}的{s9}希望你能解决掉位于周边乡村的部落半兽人。
 qstr_{s9}_of_{s3}_asked_y|{s3}的{s9}希望你能在{reg6}天内带{reg5}单位的{s6}给位于{s4}的{s10}。
-; qstr_The_{s9}_of_{s4}_ask|The {s9} of {s4} asked you to reinforce {s3} with at least {reg5} troops within {reg6} days. Speak to {s3}'s barracks master. The quality of the troop you provide does not matter.
-; qstr_You_have_reinforced_{|You have reinforced {s3} with 0 troops.
-; qstr_Thank_you_for_offeri|Thank you for offering to help, {playername}.^^The caravans going to and fro the city have been attacked multiple times by {s6}. They are getting bolder with every ambush, and are moving closer and closer to the city.
-; qstr_Good_of_you_to_ask_{|Good of you to ask, {playername}.^^There are {s6} moving about the area, thinking that they are in charge. No one is doing anything so they are getting bolder and are taking what is rightfully ours.
-; qstr_The_people_have_aske|The people have asked for help in slaying at least {reg22} {s6}, in hopes that this will keep them away for some time.^^Would you be able to do this?
-; qstr_I_want_you_to_slay_a|I want you to slay at least {reg22} {s6}, to show those weaklings that they are inconsequential.^^What do you say?
-; qstr_We_will_get_rid_of_t|We will get rid of these pests.
-; qstr_{s9}_wants_you_to_sl|{s9} wants you to slay {reg22} {s6} in battles.
+qstr_The_{s9}_of_{s4}_ask|{s4}的{s9}要求你在{reg6}天内增援{s3}至少{reg5}名士兵，无论新兵老兵都可以。找{s3}的军营长官谈谈。
+qstr_You_have_reinforced_{|你已经给{s3}增援了0名士兵。
+qstr_Thank_you_for_offeri|感谢你的援助，{playername}。^^来往城镇间的商队已遭到{s6}的多次袭击。他们的行动越来越大胆，越来越接近城镇。
+qstr_Good_of_you_to_ask_{|问得好，{playername}。^^这附近有{s6}在游荡，觉得他们才是这里的主人。一直没有人去制裁他们，害得他们的胆子越来越大，现在开始掠夺我们的财产了。
+qstr_The_people_have_aske|大伙希望有人能干掉至少{reg22}{s6}，让那些混蛋有段时间不敢再来。^^你能做到吗？
+qstr_I_want_you_to_slay_a|我想要你干掉至少{reg22}{s6}，让那些懦夫知道自己有多微不足道。^^你觉得怎么样？
+qstr_We_will_get_rid_of_t|我们会除掉这些害虫的。
+qstr_{s9}_wants_you_to_sl|{s9}希望你能够在战场上杀死{reg22}名{s6}。
 qstr_The_{s9}_of_{s3}_ask|{s3}的{s9}希望你在{reg6}天内带给他{reg5}单位的食物。
 qstr_The_{s9}_of_{s3}_aske|{s3}的{s9}希望你在{reg0}天内带给他{reg5}单位的{s6}。
 qstr_Escort_the_supply_tr|护送补给队前往{s8}
@@ -1571,16 +1589,16 @@ qstr_{s4}^We_are_patrolli|{s4}^我们正在{s11}周围巡逻。
 qstr_{s4}^We_are_carrying|{s4}^我们正在从{s11}运送补给到{s12}。
 qstr_{s4}^We_are_escortin|{s4}^我们正在押送囚犯前往{s12}。
 qstr_Greetings_do_you_nee|向你问好，需要支援么？
-; qstr_I_will_need_your_hel|I will need your help, please follow me. [Costs {reg1}/{reg2} influence]
-; qstr_You_and_your_men_mus|You and your men must follow me. [Costs {reg1}/{reg2} influence]
-; qstr_It_looks_like_you_ha|It looks like you have too many followers already.
-; qstr_Why_do_you_need_us?_|Why do you need us? You have all you need following you already!
-; qstr_We_will_follow_you_t|We will follow you, though we cannot wander too far.
-; qstr_If_there_is_killing_|If there is killing, we will follow. But we cannot go too far, or we will get in trouble.
-; qstr_We_cannot_leave_our_|We cannot leave our post to follow you for now. [Not enough influence points (Requires {reg1})]
-; qstr_Who_are_you_to_comma|Who are you to command us? [Not enough influence points (Requires {reg1})]
-; qstr_Then_let_us_go._Stay|Then let us go. Stay close. I will need you soon.
-; qstr_There_will_be_blood_|There will be blood, that is for sure. Stay close, or miss out.
+qstr_I_will_need_your_hel|我需要你们的帮助，请跟我来。[花费{reg1}/{reg2}影响力]
+qstr_You_and_your_men_mus|你和你的手下必须跟随我。[花费{reg1}/{reg2}影响力]
+qstr_It_looks_like_you_ha|看起来你似乎已经有足够多的随从部队了。
+qstr_Why_do_you_need_us?_|你为什么还需要我们？不是已经有很多队士兵跟随你了吗？
+qstr_We_will_follow_you_t|我们会跟着你，但是我们不能偏离岗位太远。
+qstr_If_there_is_killing_|如果要去杀戮屠宰，我们会很乐意跟着你。但我们不能走太远，不然我们就会有麻烦。
+qstr_We_cannot_leave_our_|我们不能离开岗位去跟随你。[影响力不足（需要{reg1}）]
+qstr_Who_are_you_to_comma|你是谁啊，胆敢来命令我们？[影响力不足（需要{reg1}）]
+qstr_Then_let_us_go._Stay|那我们走吧。跟紧点，我需要尽快得到你们的支援。
+qstr_There_will_be_blood_|这肯定要见点血了。跟紧点，不然你就走丢了。
 qstr_Goodbye_friends.|再见朋友
 qstr_See_you_later_if_you|如果你没有被杀的话，我们还会再见面的。
 qstr__^Oh_and_take_back_t|哦，带走这些不是我们的子民的人
@@ -1588,23 +1606,23 @@ qstr_{s31}{reg28?Those:That}_|{s31}{reg28?这群:这名}勇敢的{reg28?士兵:�
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?这群:这名}有用的{reg28?士兵们:士兵}定能带去更多的毁灭。{s32}^{s23}^^[获得{s14}的{reg14}资源点]
 qstr_Good_luck_in_your_tr|祝你一路顺风
 qstr_Try_not_getting_your|试着别让自己被杀了。
-; qstr_You_ready_your_weapo|You ready your weapons, feeling the rush of past experience through your body. (Weapon Profeciencies and Abilities improved)
-; qstr_The_previous_battle_|The previous battle warmed you up. You feel invigorated, and ready for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
-; qstr_You_are_tired_but_ad|You are tired, but adrenaline coursing through your veins steel you for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
-; qstr_These_are_great_weap|These are great weapons indeed. They feel strange to the touch... (Abilities and Weapon Profeciencies Improved)
-; qstr_You_can_barely_raise|You can barely raise your weapon now... but seeing your kinsmen around you strengthen your resolve. (Abilities and Weapon Profeciencies Improved).
-; qstr_With_Lord_Balin_s_tr|With Lord Balin's treasures bestowed upon you and the memory of his death fresh in your mind, your rage burns stronger. (Attributes, Abilities and Weapon Profeciencies Improved)
-; qstr_We_cannot_hold..._we|We cannot hold... we are finished...
-; qstr_You_do_not_know_how_|You do not know how long you can still last...
-; qstr_How_long_can_we_keep|How long can we keep this up? I cannot hold my axe anymore....
-; qstr_You_know_that_the_en|You know that the end is near...
-; qstr_You...._good....dwar|You.... good....dwarf....
-; qstr_You_can_no_longer_ra|You can no longer raise your weapon...
-; qstr_There_are_too_many..|There are too many... there are too many....
+qstr_You_ready_your_weapo|你握紧手中的武器，一瞬间回想起了过去作战的经验。（武器熟练度和技能提高）
+qstr_The_previous_battle_|刚才的战斗让你了热了热身。你感到精力充沛，准备好迎接更多的战斗了。（属性、技能和武器熟练度提高）
+qstr_You_are_tired_but_ad|你很累，但是你血管里流动的肾上腺素却使你热血不止。（属性、技能和武器熟练度提高）
+qstr_These_are_great_weap|这些武器确实精良，她们摸起来怪怪的……（技能和武器熟练度提高）
+qstr_You_can_barely_raise|你现在筋疲力尽，几乎举不起手中的武器……但看见身旁的亲族，你的内心更加坚定了。（属性和武器熟练度提高）
+qstr_With_Lord_Balin_s_tr|面对着巴林大人赐予你的宝藏，你想起了他逝世的事，你不禁怒火中烧。（属性、技能和武器熟练度提高了）
+qstr_We_cannot_hold..._we|我们守不住了……我们完了……
+qstr_You_do_not_know_how_|你不知道你还能坚持多久……
+qstr_How_long_can_we_keep|我们还能坚持多久？我快握不紧我的斧头了……
+qstr_You_know_that_the_en|你知道终点就在眼前……
+qstr_You...._good....dwar|你……好……矮人……
+qstr_You_can_no_longer_ra|你已经无法举起你的武器了……
+qstr_There_are_too_many..|太多了……太多了……
 qstr_..........|..........
-; qstr_It_is_off_to_work_we|It is off to work we go....
-; qstr_Your_mind_starts_to_|Your mind starts to wander... thinking of gold and treasures...
+qstr_It_is_off_to_work_we|我们的故事结束了……
+qstr_Your_mind_starts_to_|你的思绪开始飘荡……开始幻想着黄金和珠宝……
 qstr_...............|...............
-; qstr_Sleep_sounds_good...|Sleep sounds good...
+qstr_Sleep_sounds_good...|睡觉听起来不错……
 qstr_For_Balin!!|为了巴林！
 qstr_For_Balin...|为了巴林……

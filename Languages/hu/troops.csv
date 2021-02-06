@@ -124,12 +124,12 @@ trp_c4_rhun_veteran_swift_horseman|Rhûni veterán gyorslovas
 trp_c4_rhun_veteran_swift_horseman_pl|Rhûni veterán gyorslovasság
 trp_c5_rhun_falcon_horseman|Sólyom lovas
 trp_c5_rhun_falcon_horseman_pl|Sólyom lovasság
-trp_i2_rhun_tribal_warrior|Rhûni törzsi harcos
-trp_i2_rhun_tribal_warrior_pl|Rhûni törzsi harcosok
-trp_i3_rhun_tribal_infantry|Rhûni törzsi gyalogos
-trp_i3_rhun_tribal_infantry_pl|Rhûni törzsi gyalogság
-trp_i4_rhun_vet_infantry|Rhûni veterán gyalogos
-trp_i4_rhun_vet_infantry_pl|Rhûni veterán gyalogság
+; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
+; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i3_rhun_tribal_infantry|Rhûni törzsi harcos
+trp_i3_rhun_tribal_infantry_pl|Rhûni törzsi harcosok
+; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
+; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
 trp_i5_rhun_ox_warrior| Az Ökör Harcosa
 trp_i5_rhun_ox_warrior_pl|Az Ökör Harcosai
 trp_c2_rhun_horseman|Rhûn Lovas

@@ -68,6 +68,7 @@ mno_start_go|白い塔の王国、ゴンドール
 mno_start_ro|馬の民、ローハン
 mno_start_du|いにしえの王族の末裔、ドゥネダイン
 mno_start_be|熊人族、ビヨルン一党
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
 mno_start_da|北方の王国、谷間の国
 menu_start_good_elf|^^^^^^^^^^賢者殿、どちらの森にお住まいですか？
 mno_start_ri|エルロンド卿の率いる国、裂け谷
@@ -199,6 +200,7 @@ mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}�
 mno_control_allies_menu|影響力ポイントを消費して戦場にいる友軍の指揮をする。
 mno_encounter_hide|敵から隠れる・・・
 mno_special_whip|{s4}を打ちながら威圧する。
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
 mno_encounter_leave|撤退する。
 mno_encounter_retreat|数名の兵をしんがりに残し、撤退する。
 mno_player_control_allies_simple|彼らの指揮をとって敵勢へ突撃する

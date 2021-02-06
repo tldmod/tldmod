@@ -588,6 +588,7 @@ itm_easterling_hawk_shield|Escudo Halcón de Rhûn
 itm_rhun_bull1_shield|Escudo de Rhûn
 itm_rhun_bull2_shield|Escudo de Rhûn
 itm_rhun_bull3_shield|Escudo de Rhûn
+itm_rhun_shield|Escudo Cometa de Rhûn
 itm_rhun_armor_a|Atuendo de Batalla Ligero de Rhûn
 itm_rhun_armor_b|Atuendo de Batalla Ligero de Rhûn
 itm_rhun_armor_d|Atuendo de Batalla Ligero de Rhûn
@@ -599,19 +600,13 @@ itm_rhun_armor_n|Atuendo de Batalla Medio de Rhûn
 itm_rhun_armor_o|Atuendo de Batalla Medio de Rhûn
 itm_rhun_armor_p|Armadura de Noble de Rhûn
 itm_rhun_armor_k|Armadura de Noble de Rhûn
-itm_rhun_helm_a|Yelmo de Púas de Rhûn
-itm_rhun_helm_b|Yelmo de Púas con Almófar de Rhûn 
-itm_rhun_helm_c|Yelmo de la Horda de Rhûn
-itm_rhun_helm_e|Yelmo Astado de la Horda de Rhûn
-itm_rhun_helm_g|Yelmo Plano Astado de Rhûn
-itm_rhun_helm_h|Yelmo Plano Astado de Rhûn
-itm_rhun_helm_i|Yelmo Redondo de Rhûn
-itm_rhun_helm_j|Yelmo Redondo con Máscara de Rhûn
-itm_rhun_helm_k|Yelmo de Cuero de Rhûn
-itm_rhun_helm_l|Yelmo de Cuero de Rhûn
-itm_rhun_helm_m|Yelmo de Cuero de Rhûn
-itm_rhun_helm_n|Yelmo de Jefe de Rhûn
-itm_rhun_helm_o|Yelmo de Jefe de Rhûn
+itm_rhun_helm_barbed|Yelmo de Púas de Rhûn
+itm_rhun_helm_horde|Yelmo de la Horda de Rhûn
+itm_rhun_helm_pot|Yelmo Plano de Rhûn
+itm_rhun_helm_round|Yelmo Redondo de Rhûn
+itm_rhun_helm_leather|Yelmo de Cuero de Rhûn
+itm_rhun_helm_chieftain|Yelmo de Jefe de Rhûn
+itm_rhun_warpick|Piqueta de Guerra de Rhûn
 itm_rhun_greataxe|Gran Hacha de Rhûn
 itm_rhun_battleaxe|Hacha de Batalla de Rhûn
 itm_rhun_falchion|Alfanje Salvaje
@@ -620,7 +615,7 @@ itm_rhun_greatfalchion|Gran Alfanje Salvaje
 itm_rhun_greatsword|Espadón Salvaje
 itm_rhun_shortsword|Espada Corta Salvaje
 itm_rhun_sword|Espada Salvaje
-itm_rhun_shield|Escudo Cometa de Rhûn
+itm_rhun_mangler|Destripador de Rhûn
 itm_dale_light_a|Chaqueta de la Milicia de Valle
 itm_dale_light_b|Armadura Ligera de Láminas Norteña
 itm_dale_med_a|Armadura Pesada de Láminas Norteña
@@ -631,7 +626,6 @@ itm_dale_heavy_a|Armadura de Láminas sobre Malla de Valle
 itm_dale_heavy_b|Cota de Placas de Valle
 itm_dale_heavy_c|Cota de Malla de Rhovanion
 itm_north_leather|Justillo de Cuero Norteño
-itm_dale_armor_l|Gorguera de Noble de Valle
 itm_dale_helmet_a|Yelmo de Infantería Ligera de Valle
 itm_dale_helmet_b|Yelmo de Arquero Ligero de Valle
 itm_dale_helmet_c|Yelmo de Infantería de Valle
@@ -769,8 +763,8 @@ itm_book_of_moria|Libro de Mazarbul
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Arco de Bardo
-itm_explosive_reward|Mina de Isengard
-itm_corsair_trident2|Tridente de la Furia Marina
+itm_tome_of_knowledge|Tomo de Conocimiento Arcano
+itm_orc_idol_reward|Fetiche del Primer Orco
 itm_crebain_reward|Craban
 itm_miruvor_reward|Frasco de Miruvor
 itm_wheeled_cage|Jaula gigante con ruedas
@@ -793,7 +787,7 @@ itm_leather_boots_reward|Botas de cazador
 itm_rohan_armor_th|Armadura Real de Rohan
 itm_wilderness_amulet|Amuleto de las Tierras Salvajes
 itm_prisoner_coll_chain|Cadenas de Prisionero
-itm_witchking_helmet|Casco Maldito
+itm_witchking_helmet|Máscara del Hechicero
 itm_lorien_royal_armor|Armadura Real de Lórien
 itm_feet_chains|Grilletes
 itm_feet_chains_dwarf|Grilletes

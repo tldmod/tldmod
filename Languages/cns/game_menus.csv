@@ -68,6 +68,7 @@ mno_start_go|刚铎，圣白塔王国
 mno_start_ro|洛汗，骠骑之国
 mno_start_du|登丹人，古努曼诺尔王朝后裔
 mno_start_be|波宁人，熊人
+mno_start_wo|林地人，居住在幽暗密林边缘
 mno_start_da|河谷镇，北方城邦
 menu_start_good_elf|^^^^^^^^^^精灵，你居住在哪个森林里？
 mno_start_ri|瑞文戴尔，由气之戒维雅的守护者，埃尔隆德领主统治
@@ -103,7 +104,7 @@ mno_start_cliff|在刚巴达山的悬崖峭壁上
 menu_start_gondor_mt|^^^^^^^^^^选择你的出身
 mno_start_1_com|平民
 mno_start_2_hib|贵族
-; menu_start_haradrim|^^^^^^^You are one of the Haradrim,^a Man of the Desert.^Select your line
+menu_start_haradrim|^^^^^^^你是一名哈拉德人。^选择你的出身
 mno_start_1_des|沙漠之民
 mno_start_2_far|远哈拉德部落民
 menu_start_numenorean|^^^^^^^你是一个黑暗努曼诺尔人，^忠于阴影和魔苟斯。^选择你服务魔眼的位置
@@ -199,6 +200,7 @@ mno_encounter_order_attack|你坐镇指挥命令你的部下 {reg21?攻击:迎�
 mno_control_allies_menu|用影响力在战场上指挥你的盟友。
 mno_encounter_hide|躲避敌人…
 mno_special_whip|向着{s4}冲锋，并碾碎他们。
+mno_encounter_attack_bearform|{reg21?变成巨熊进入战场:换皮，准备撕碎敌人}。
 mno_encounter_leave|脱离
 mno_encounter_retreat|留下一些士兵拖住敌军，好让主力撤退。
 mno_player_control_allies_simple|指挥他们向敌人冲锋
@@ -254,7 +256,7 @@ mno_moria_exit_scene|找到一条出去的路！
 menu_castle_outside|你在{s2}的外面。{s11} {s3} {s4}
 mno_moria_enter|利用秘密入口重新进入摩瑞亚大厅
 mno_moria_enter_door|进入摩瑞亚
-; mno_cheat_steal_book_door|Get the book
+mno_cheat_steal_book_door|获得《马萨布尔之书》
 mno_castle_start_siege|围攻{reg6?城镇:城堡}。
 mno_castle_leave|离开
 menu_castle_besiege|你正在围攻{s1}。 {s2} {s3}
@@ -301,7 +303,7 @@ mno_dwarven_warehouse_door|进入矮人仓库
 mno_talk_to_castle_commander|访问{s61}兵营。
 mno_speak_with_elder|和{s6}谈谈。
 mno_isengard_underground|前往地下洞穴。
-; mno_isengard_underground_door|Go to the underground caverns
+mno_isengard_underground_door|前往地下洞穴
 mno_tirith_toplevel|爬上顶层。
 mno_erebor_gates|前往雄伟的大门。
 mno_town_leave|离开…
@@ -346,7 +348,7 @@ menu_player_added_to_war_council|^^^^^一个信使来了并且告诉你，{s24}�
 mno_player_added_to_war_council_close|关闭
 menu_player_added_to_siege_reports|^^^^^一个信使到达并告诉你，作为{s24}，无论{s2}围攻一个据点还是当{s2}的据点中心被围攻时，你都能够收到报告。
 mno_player_added_to_siege_reports_close|关闭
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^一位信使通知你，你身为{s24}，能够命令{s2}跟随你一起行动了。你最多能够有{reg55}队随从部队。
 mno_player_added_to_allow_follow_close|关闭
 menu_center_besieged_event|^^^^^一个信使到达并报告{s1}已经被{s3}的{s2}围攻。
 mno_center_besieged_event_close|关闭
@@ -434,16 +436,16 @@ menu_death|你被杀害了。 尽管战争仍旧如火如荼，但这已经不�
 menu_animal_ambush|你和你的同伴在休息的时候，突然分开了…
 menu_animal_ambush_success|你面前的{s2}{reg0?堕落者：堕落者}如小麦般被你收割。很快，所有的攻击者都躺倒在地，重伤或死亡。 {s3}
 menu_animal_ambush_fail|动物咬撕你{reg0?，:和你的同伴{reg2?们，:，}}但幸运的是，你设法避开他们。希望他们不会再攻击你。
-; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Plain Big (file scn custom 1.sco)
-; mno_scene2|Plain Med (file scn custom 2.sco)
-; mno_scene3|Plain Small (file scn custom 3.sco)
-; mno_scene4|Steppe Big (file scn custom 4.sco)
-; mno_scene5|Steppe Med (file scn custom 5.sco)
-; mno_scene6|Steppe Small (file scn custom 6.sco)
-; mno_scene7|Forest Big (file scn custom 7.sco)
-; mno_scene8|Forest Med (file scn custom 8.sco)
-; mno_scene9|Forest Small (file scn custom 9.sco)
+menu_build_your_scene|你可以在这里创造属于你自己的战场场景。首先在设置中打开编辑模式，再选择底下任意一个存位，然后进入场景按Ctrl+E打开编辑模式。你可以把自己的作品提交给TLD制作组，做得很好的话，你的场景会在下一版本的随机战斗中出现！（提交时请重命名，并把TLD/SceneObj文件夹下相应的sco文件发给制作组）^^记得说明你所制作的场景，具体是在中土的哪个地方。 ^友情提示：不要做深水或高山，或是其他难以通行的地形——除非你是资深场景制作师，明白如何利用AI网格让AI避开“陷坑”。^（#0~1是给攻击方，＃4是给防守方，别碰＃5-8
+mno_scene1|大型平原（file scn custom 1.sco）
+mno_scene2|中型平原（file scn custom 2.sco）
+mno_scene3|小型平原（file scn custom 3.sco）
+mno_scene4|大型草原（file scn custom 4.sco）
+mno_scene5|中型草原（file scn custom 5.sco）
+mno_scene6|小型草原（file scn custom 6.sco）
+mno_scene7|大型森林（file scn custom 7.sco）
+mno_scene8|中型森林（file scn custom 8.sco）
+mno_scene9|小型森林（file scn custom 9.sco）
 mno_back_3dot|返回…
 mno_back|返回
 mno_next|接下来…

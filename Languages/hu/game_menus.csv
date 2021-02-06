@@ -68,6 +68,7 @@ mno_start_go|GONDOR, a Fehér Torony Királysága
 mno_start_ro|ROHAN, a lovasnép
 mno_start_du|DÚNADÁN, az Emberek ősi vérvonala
 mno_start_be|BEORNFIAK, a Medve népe
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
 mno_start_da|SUHATAG északi Királysága
 menu_start_good_elf|^^^^^^^^^^Melyik erdőben élsz, Elsőszülött?
 mno_start_ri|VÖLGYZUGOLY, Elrond úré
@@ -199,6 +200,7 @@ mno_encounter_order_attack|Parancsold meg csapataidnak, {reg21?támadjanak:nézz
 mno_control_allies_menu|Használd a Befolyásod, hogy parancsokat osztogass a szövetségeseidnek a csatatéren.
 mno_encounter_hide|Elbújsz az ellenfelek elől...
 mno_special_whip|Rohanj velük szembe, megroppantva a {s4}t.
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
 mno_encounter_leave|Visszavonulás.
 mno_encounter_retreat|Visszavonulás, néhány katonát hátrahagyva, hogy fedezzék a visszavonulásodat.
 mno_player_control_allies_simple|Vezesd őket, és rohand le az ellenséget
