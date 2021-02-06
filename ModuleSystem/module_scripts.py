@@ -29848,7 +29848,7 @@ if is_a_wb_script==1:
         (troop_set_health, ":bear_troop", ":bear_hp"),
  
         # The last piece is in mission module triggers
-        (display_log_message, "@You hapeshift into a bear!", color_neutral_news),
+        (display_log_message, "@You shapeshift into a bear!", color_neutral_news),
     (end_try),
 ]),
 
@@ -29891,7 +29891,7 @@ if is_a_wb_script==1:
 
         # Get back xp earned as bear
         (assign, reg1, ":bear_xp"),
-        (display_message, "@You got {reg1} xp in bear form"),
+        (display_message, "@You got {reg1} experience in bear form."),
         (add_xp_to_troop, ":bear_xp", "trp_player"),
 
         # Reset the slot
