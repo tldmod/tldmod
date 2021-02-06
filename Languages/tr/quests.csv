@@ -1,89 +1,89 @@
-qst_deliver_message  = "{s13}' e mesajı ilet"
-qst_deliver_message_text  = "{s9} senden {s13}'e bir mesaj götürmeni istedi. {s13} görev sana verildiğinde {s4}'te idi."
-qst_deliver_message_to_enemy_lord  = "{s13}' e mesajı ilet"
-qst_deliver_message_to_enemy_lord_text  = "{s9} senden {s15}li {s13}'e bir mesaj götürmeni istedi. {s13} görev sana verildiğinde {s4}'te idi."
-qst_raise_troops  = "{reg1} tane {s14} yetiştir."
-qst_raise_troops_text  = "{s9} senden {reg1} tane {s14} yetiştirmeni ve {ona/ona} getirmeni istedi."
-qst_escort_messenger  = "Haberciyi {s14}'e kadar koru"
-qst_escort_messenger_text  = "Hiçbiri"
-qst_hunt_down_fugitive  = " {s4}'ün Peşine düşün"
-qst_hunt_down_fugitive_text  = "{s9} {s4} isimli kaçağı yakalamanı istedi. Şu anda {s3}'de olduğu düşünülüyor."
-qst_bring_back_runaway_serfs  = "Kaçak köleleri geri getir."
-qst_bring_back_runaway_serfs_text  = "{s9} senden üç grup kaçan köleyi {s2} ye geri getirmeni istedi ve sana onların {s3} yönüne doğru kaçmış olmaları gerektiğini söyledi."
-qst_follow_spy  = "Casusu buluşma yerine kadar takip et."
-qst_follow_spy_text  = "{s11} senden {s12} yi terkedecek olan casusu takip etmeni istedi. Yolculuğun sırasında casusa görünmeme konusunda dikkatli olmalısın yoksa şüphelenip geri dönebilir. Suç ortakları ile buluştuğunda onlara tuzak kur ve onları {s11}'e geri getir"
-qst_capture_enemy_hero  = "Düşman kumandanını esir al."
-qst_capture_enemy_hero_text  = "{s11} düşman komutanını yakalamanı istedi."
-qst_lend_companion  = "Yoldaşını ödünç ver {s3}'den {s9}'a"
-qst_lend_companion_text  = "{s9} senden {s3} yoldaşını bir haftalığına ödünç istedi."
-qst_capture_prisoners  = "{reg1} tane düşman tutsağı getirin"
-qst_capture_prisoners_text  = "{s9} senden {reg1} tane düşman tutsağı getirmeni istedi."
-qst_investigate_fangorn  = "Fangorn'u araştır."
-qst_investigate_fangorn_text  = "{s9} Fangorn Ormanında ne olup bittiğini araştırmanı ve ona rapor etmeni istedi."
-qst_capture_troll  = "Bir Troll esir al."
-qst_capture_troll_text  = "{s9} senden ordusunda kullanmak üzere bir vahşi trol istedi."
-qst_kill_troll  = "Kızgın Trolü öldür"
-qst_kill_troll_text  = "{s9} senden {s13} çevresinde kol gezen Trollün gaddarlıklarını durdurmanı istedi."
-qst_mirkwood_sorcerer  = "Kuyutorman'daki büyücüyü yok et."
-qst_mirkwood_sorcerer_text  = "Galadriel'in Lothlorien'i koruma gücü bir Dol Guldur büyücüsünün karanlık ritüelleri sonucunda sarsıldı. Bir ölümlü olmasına rağmen Elfler için büyük bir tehdit o. Kuyutorman'da onu ara, Dol Guldur'dan çok uzak sayılmaz. Onu malup etmek için tek bir fırsatın olacağı için onlar fark etmeden, gizliliğini kullan."
-qst_find_lost_spears  = "Kral Bladorthin'in kayıp mızrağını bul."
-qst_find_lost_spears_text  = "{s9} senden bir zamanlar Kral Bladorthin için yapılan mızrakları bulmanı istedi. Lonely Mountain derinliklerinde mızrakları aramak için cücelerden izin almalısın."
-qst_defend_village  = "Köyü Savun"
-qst_raid_village  = "Köyü Yağmala"
-qst_destroy_scout_camp  = "İzci Kampını Yok Et"
-qst_rescue_prisoners  = "{reg1} tane esir kurtar"
-qst_rescue_prisoners_text  = "{s9} senden {reg1} tane mahkumu kurtarmanı istedi."
-qst_scout_enemy_town  = "Düşman şehrini gözetle."
-qst_scout_enemy_town_text  = "{s9} senden {s13} civarında gözcülük yapmanı istedi."
-qst_dispatch_scouts  = "Keşif birliği gönder"
-qst_dispatch_scouts_text  = "{s9}, {13} yakınlarına bir keşif birliği göndermeni istedi"
-qst_eliminate_patrols  = "{reg1} tane düşman birliğini yok et"
-qst_eliminate_patrols_text  = "{s9} senden {reg1} tane {s13} öldürmeni istedi."
-qst_lend_surgeon  = "Cerrahını ödünç ver {s3} {s1}'e"
-qst_lend_surgeon_text  = "Deneyimli cerrahını ödünç ver {s3} {s1}'e"
-qst_follow_army  = "{s9}'in ordusunu takip et"
-qst_follow_army_text  = "Hiçbiri"
-qst_report_to_army  = "{s13}'e rapor ver"
-qst_report_to_army_text  = "Hiçbiri"
-qst_deliver_cattle_to_army  = "{reg3} tane yemeği {s13}'e teslim et."
-qst_deliver_cattle_to_army_text  = "Hiçbiri"
-qst_join_siege_with_army  = "{s14} kuşatmasına katıl"
-qst_join_siege_with_army_text  = "Hiçbiri"
-qst_scout_waypoints  = "{s13}, {s14} ve {s15}'i gözle"
-qst_scout_waypoints_text  = "Hiçbiri"
-qst_move_cattle_herd  = "{s12}'den {s13}'e hareket et"
-qst_move_cattle_herd_text  = "{s10}'nün yaşlası senden {s13}'e biraz {s12} götürmeni istedi."
-qst_escort_merchant_caravan  = "{s8}'e kadar Yardım Trenini koru"
-qst_escort_merchant_caravan_text  = "Tedarik trenini {s8}'e götürün ve yakınınızdayken onlarla konuşun."
-qst_deliver_wine  = "{reg5} tane {s6}'yı {s4}'e götür."
-qst_deliver_wine_text  = "{s3}'ün {s9}'u sana {reg5} sayısınca {s6}'yı 7 gün içinde {s4}'e teslim etmeni istedi."
-qst_troublesome_bandits  = "Belalı Goblinleri avla."
-qst_troublesome_bandits_text  = "{s4}'ün {s9}'u senden kasaba çevresinde sorun çıkartan goblinleri avlamanı istedi."
-qst_deal_with_looters  = "Kabile Orklarının işini bitir."
-qst_deal_with_looters_text  = " {s4} yaşlısı senden {s4} çevresindeki bir kaç kabile Orku grubuyla ilgilenmeni istedi."
-qst_deal_with_night_bandits  = "Haydut Goblinlerin işini bitir"
-qst_deal_with_night_bandits_text  = "{s14} yaşlısı senden {s14}'deki gece Goblinleriyle ilgilenmeni istedi."
-qst_deliver_food  = "{s3}'e {reg5} tane yiyecek götür."
-qst_deliver_food_text  = "{s3}'ün {s9}'ü ona 10 gün içinde {reg5} tane yiyecek götürmeni istedi."
-qst_deliver_iron  = "{s3}'e {reg5} tane {s6} götür."
-qst_deliver_iron_text  = "{s3}'ün {s9}'ü ona {reg5} tane {s6} götürmeni istedi."
-qst_tld_introduction  = "Lidere git"
-qst_tld_introduction_text  = "Hiçbiri"
-qst_treebeard_kill_orcs  = "Ağaçları katleden Ork grubunu bozguna uğrat."
-qst_treebeard_kill_orcs_text  = "Ağaçsakal, Fangorn'da ağaçları kesen Orkları bulmanı ve onları yok etmeni istiyor."
-qst_oath_of_vengeance  = "İntikam Yemini"
-qst_oath_of_vengeance_text  = "{s1}'in ölümüyle çılgına dönmüş bir halde, {s2}'nin ordularına karşı  intikam yemini ettin. Önümüzdeki günlerde yok edebildiğin kadar {s2}'nin ordularını yok etmelisin. Yoldaşlarının bu yeminine tanık olduklarının farkındasın, ve yemin-bozan olarak tanınmak istemezsin. Hiç olmadığı kadar kan akmalı!"
-qst_deliver_gift  = "{s1}'in {s4}'ünü {s2}'den {s3}'e teslim et"
-qst_deliver_gift_text  = "{s1}'in {s4}'ünü {s2}'den {s3}'e teslim etmen istendi."
-qst_ring_hunters  = "Yüzük Avcıları"
-qst_ring_hunters2  = "Yüzük Avcıları - Tamamlandı"
-qst_deliver_message_hobbit  = "Hobbitler hakkında"
-qst_blank_quest_01  = "Sığınmacıları koru"
-qst_blank_quest_02  = "Sığınmacıları avla"
-qst_blank_quest_03  = "Deniz savaşı"
-qst_blank_quest_04  = "{s35} {s6} {s7} öldür"
-qst_blank_quest_05  = "{s35} {s36} birimlerini öldür"
-qst_blank_quest_06  = "Savaşta {s35} birliğini yen."
+qst_deliver_message|{s13}' e mesajı ilet
+qst_deliver_message_text|{s9} senden {s13}'e bir mesaj götürmeni istedi. {s13} görev sana verildiginde {s4}'te idi.
+qst_deliver_message_to_enemy_lord|{s13}' e mesajı ilet
+qst_deliver_message_to_enemy_lord_text|{s9} senden {s15}li {s13}'e bir mesaj götürmeni istedi. {s13} görev sana verildiginde {s4}'te idi.
+qst_raise_troops|{reg1} tane {s14} yetiştir.
+qst_raise_troops_text|{s9} senden {reg1} tane {s14} yetiştirmeni ve {ona/ona} getirmeni istedi.
+qst_escort_messenger|Haberciyi {s14}'e kadar koru
+qst_escort_messenger_text|Hiçbiri
+qst_hunt_down_fugitive| {s4}'ün Peşine düşün
+qst_hunt_down_fugitive_text|{s9} {s4} isimli kaçagı yakalamanı istedi. Şu anda {s3}'de oldugu düşünülüyor.
+qst_bring_back_runaway_serfs|Kaçak köleleri geri getir.
+qst_bring_back_runaway_serfs_text|{s9} senden üç grup kaçan köleyi {s2} ye geri getirmeni istedi ve sana onların {s3} yönüne dogru kaçmış olmaları gerektigini söyledi.
+qst_follow_spy|Casusu buluşma yerine kadar takip et.
+qst_follow_spy_text|{s11} senden {s12} yi terkedecek olan casusu takip etmeni istedi. Yolculugun sırasında casusa görünmeme konusunda dikkatli olmalısın yoksa şüphelenip geri dönebilir. Suç ortakları ile buluştugunda onlara tuzak kur ve onları {s11}'e geri getir
+qst_capture_enemy_hero|Düşman kumandanını esir al.
+qst_capture_enemy_hero_text|{s11} düşman komutanını yakalamanı istedi.
+qst_lend_companion|Yoldaşını ödünç ver {s3}'den {s9}'a
+qst_lend_companion_text|{s9} senden {s3} yoldaşını bir haftalıgına ödünç istedi.
+qst_capture_prisoners|{reg1} tane düşman tutsagı getirin
+qst_capture_prisoners_text|{s9} senden {reg1} tane düşman tutsagı getirmeni istedi.
+qst_investigate_fangorn|Fangorn'u araştır.
+qst_investigate_fangorn_text|{s9} Fangorn Ormanında ne olup bittigini araştırmanı ve ona rapor etmeni istedi.
+qst_capture_troll|Bir Troll esir al.
+qst_capture_troll_text|{s9} senden ordusunda kullanmak üzere bir vahşi trol istedi.
+qst_kill_troll|Kızgın Trolü öldür
+qst_kill_troll_text|{s9} senden {s13} çevresinde kol gezen Trollün gaddarlıklarını durdurmanı istedi.
+qst_mirkwood_sorcerer|Kuyutorman'daki büyücüyü yok et.
+qst_mirkwood_sorcerer_text|Galadriel'in Lothlorien'i koruma gücü bir Dol Guldur büyücüsünün karanlık ritüelleri sonucunda sarsıldı. Bir ölümlü olmasına ragmen Elfler için büyük bir tehdit o. Kuyutorman'da onu ara, Dol Guldur'dan çok uzak sayılmaz. Onu malup etmek için tek bir fırsatın olacagı için onlar fark etmeden, gizliligini kullan.
+qst_find_lost_spears|Kral Bladorthin'in kayıp mızragını bul.
+qst_find_lost_spears_text|{s9} senden bir zamanlar Kral Bladorthin için yapılan mızrakları bulmanı istedi. Lonely Mountain derinliklerinde mızrakları aramak için cücelerden izin almalısın.
+qst_defend_village|Köyü Savun
+qst_raid_village|Köyü Yagmala
+qst_destroy_scout_camp|İzci Kampını Yok Et
+qst_rescue_prisoners|{reg1} tane esir kurtar
+qst_rescue_prisoners_text|{s9} senden {reg1} tane mahkumu kurtarmanı istedi.
+qst_scout_enemy_town|Düşman şehrini gözetle.
+qst_scout_enemy_town_text|{s9} senden {s13} civarında gözcülük yapmanı istedi.
+qst_dispatch_scouts|Keşif birligi gönder
+qst_dispatch_scouts_text|{s9}, {13} yakınlarına bir keşif birligi göndermeni istedi
+qst_eliminate_patrols|{reg1} tane düşman birligini yok et
+qst_eliminate_patrols_text|{s9} senden {reg1} tane {s13} öldürmeni istedi.
+qst_lend_surgeon|Cerrahını ödünç ver {s3} {s1}'e
+qst_lend_surgeon_text|Deneyimli cerrahını ödünç ver {s3} {s1}'e
+qst_follow_army|{s9}'in ordusunu takip et
+qst_follow_army_text|Hiçbiri
+qst_report_to_army|{s13}'e rapor ver
+qst_report_to_army_text|Hiçbiri
+qst_deliver_cattle_to_army|{reg3} tane yemegi {s13}'e teslim et.
+qst_deliver_cattle_to_army_text|Hiçbiri
+qst_join_siege_with_army|{s14} kuşatmasına katıl
+qst_join_siege_with_army_text|Hiçbiri
+qst_scout_waypoints|{s13}, {s14} ve {s15}'i gözle
+qst_scout_waypoints_text|Hiçbiri
+qst_move_cattle_herd|{s12}'den {s13}'e hareket et
+qst_move_cattle_herd_text|{s10}'nün yaşlası senden {s13}'e biraz {s12} götürmeni istedi.
+qst_escort_merchant_caravan|{s8}'e kadar Yardım Trenini koru
+qst_escort_merchant_caravan_text|Tedarik trenini {s8}'e götürün ve yakınınızdayken onlarla konuşun.
+qst_deliver_wine|{reg5} tane {s6}'yı {s4}'e götür.
+qst_deliver_wine_text|{s3}'ün {s9}'u sana {reg5} sayısınca {s6}'yı 7 gün içinde {s4}'e teslim etmeni istedi.
+qst_troublesome_bandits|Belalı Goblinleri avla.
+qst_troublesome_bandits_text|{s4}'ün {s9}'u senden kasaba çevresinde sorun çıkartan goblinleri avlamanı istedi.
+qst_deal_with_looters|Kabile Orklarının işini bitir.
+qst_deal_with_looters_text| {s4} yaşlısı senden {s4} çevresindeki bir kaç kabile Orku grubuyla ilgilenmeni istedi.
+qst_deal_with_night_bandits|Haydut Goblinlerin işini bitir
+qst_deal_with_night_bandits_text|{s14} yaşlısı senden {s14}'deki gece Goblinleriyle ilgilenmeni istedi.
+qst_deliver_food|{s3}'e {reg5} tane yiyecek götür.
+qst_deliver_food_text|{s3}'ün {s9}'ü ona 10 gün içinde {reg5} tane yiyecek götürmeni istedi.
+qst_deliver_iron|{s3}'e {reg5} tane {s6} götür.
+qst_deliver_iron_text|{s3}'ün {s9}'ü ona {reg5} tane {s6} götürmeni istedi.
+qst_tld_introduction|Lidere git
+qst_tld_introduction_text|Hiçbiri
+qst_treebeard_kill_orcs|Agaçları katleden Ork grubunu bozguna ugrat.
+qst_treebeard_kill_orcs_text|Agaçsakal, Fangorn'da agaçları kesen Orkları bulmanı ve onları yok etmeni istiyor.
+qst_oath_of_vengeance|İntikam Yemini
+qst_oath_of_vengeance_text|{s1}'in ölümüyle çılgına dönmüş bir halde, {s2}'nin ordularına karşı  intikam yemini ettin. Önümüzdeki günlerde yok edebildigin kadar {s2}'nin ordularını yok etmelisin. Yoldaşlarının bu yeminine tanık olduklarının farkındasın, ve yemin-bozan olarak tanınmak istemezsin. Hiç olmadıgı kadar kan akmalı!
+qst_deliver_gift|{s1}'in {s4}'ünü {s2}'den {s3}'e teslim et
+qst_deliver_gift_text|{s1}'in {s4}'ünü {s2}'den {s3}'e teslim etmen istendi.
+qst_ring_hunters|Yüzük Avcıları
+qst_ring_hunters2|Yüzük Avcıları - Tamamlandı
+qst_deliver_message_hobbit|Hobbitler hakkında
+qst_blank_quest_01|Sıgınmacıları koru
+qst_blank_quest_02|Sıgınmacıları avla
+qst_blank_quest_03|Deniz savaşı
+qst_blank_quest_04|{s35} {s6} {s7} öldür
+qst_blank_quest_05|{s35} {s36} birimlerini öldür
+qst_blank_quest_06|Savaşta {s35} birligini yen.
 
 
 
@@ -93,12 +93,12 @@ qst_blank_quest_06  = "Savaşta {s35} birliğini yen."
 
 
 
-qst_blank_quest_16  = "Takviye Merkezi"
-qst_blank_quest_17  = "Savaşta {reg22} {s6} katlet"
+qst_blank_quest_16|Takviye Merkezi
+qst_blank_quest_17|Savaşta {reg22} {s6} katlet
 
 
 
 
-qst_guardian_party_quest  = "Isengard'ın son savunması"
-qst_quests_end  = "Görevler bitti"
-qst_quests_end_text  = "."
+qst_guardian_party_quest|Isengard'ın son savunması
+qst_quests_end|Görevler bitti
+qst_quests_end_text|.

@@ -1,148 +1,148 @@
-pt_rescued_prisoners  = "Oslobodení zajatci"
-pt_enemy  = "Nepriateľ"
-pt_hero_party  = "Družina hrdiny"
-pt_cattle_herd  = "Stádo dobytka"
-pt_ruins  = "Ruiny"
-pt_legendary_place  = "Legendárne miesto"
-pt_mound  = "Mohyla hrdiny"
-pt_pyre  = "Pohrebná vatra hrdiny"
-pt_wild_troll  = "Divoký zlobor"
-pt_raging_trolls  = "Zúriví zlobri"
-pt_looters  = "Kmeňoví Ohyzdi"
-pt_forest_bandits  = "Podradní ohyzdi"
-pt_mountain_bandits  = "Divokí Škrati"
-pt_steppe_bandits  = "Vyhnanci z Vrchoviny"
-pt_sea_raiders  = "Korzárski odpadlíci"
-pt_deserters  = "Dezertéri"
-pt_merchant_caravan  = "Kupecký konvoj"
-pt_troublesome_bandits  = "Dobiedzaví Škrati"
-pt_fangorn_orcs  = "Ohyzdí drevorubači"
-pt_village_farmers  = "Vidiečania"
-pt_spy_partners  = "Podozriví cestovatelia"
-pt_spy_partners_evil  = "Podozriví cestovatelia"
-pt_runaway_serfs  = "Otroci na úteku"
-pt_spy  = "Osamelý jazdec"
-pt_spy_evil  = "Osamelý jazdec"
-pt_sacrificed_messenger  = "Obetovaný posol"
-pt_gandalf  = "Gandalf"
-pt_nazgul  = "Nazgul"
-pt_gondor_scouts  = "Gondorskí prieskumníci"
-pt_blackroot_auxila  = "Čiernodolská podpora"
-pt_lamedon_auxila  = "Lamedonská podpora"
-pt_lossarnach_auxila  = "Lossarnachská podpora"
-pt_pinnath_gelin_auxila  = "Podpora Pinnath Gelin"
-pt_ranger_scouts  = "Hraničiarskí prieskumníci"
-pt_rohan_scouts  = "Rohanskí prieskumníci"
-pt_lorien_scouts  = "Lorienskí prieskumníci"
-pt_woodelf_scouts  = "Temnohvozdskí prieskumníci"
-pt_imladris_scouts  = "Dunedainskí prieskumníci"
-pt_dale_scouts  = "Dálski prieskumníci"
-pt_esgaroth_scouts  = "Esgarothskí prieskumníci"
-pt_dwarf_scouts  = "Trpasličia hliadka"
-pt_beorn_scouts  = "Grizlovskí prieskumníci"
-pt_woodmen_scouts  = "Lesníci"
-pt_mordor_scouts  = "Mordorskí zvedovia"
-pt_morgul_scouts  = "Morgulskí zvedovia"
-pt_isengard_scouts  = "Isengardskí zvedovia"
-pt_isengard_scouts_warg  = "Isengardskí vročí zvedovia"
-pt_harad_scouts  = "Haradrimskí zvedovia"
-pt_dunland_scouts  = "Vrchoveckí zvedovia"
-pt_umbar_scouts  = "Korzárski zvedovia"
-pt_khand_scouts  = "Východniarskí zvedovia"
-pt_moria_scouts  = "Mórijskí zvedovia"
-pt_guldur_scouts  = "Dol Guldúrski zvedovia"
-pt_gundabad_scouts  = "Gundabádskí zvedovia"
-pt_rhun_scouts  = "Rhûnski zvedovia"
-pt_gondor_raiders  = "Gondorski zásobovači"
-pt_rohan_raiders  = "Rohirrskí zásobovači"
-pt_imladris_raiders  = "Zásobovači Roklinky"
-pt_lorien_raiders  = "Lorienskí zásobovači"
-pt_woodelf_raiders  = "Temnohvozdskí zásobovači"
-pt_dale_raiders  = "Dálski zásobovači"
-pt_dwarf_raiders  = "Trpasličí zásobovači"
-pt_ranger_raiders  = "Hraničiarski nájazdníci"
-pt_morgul_raiders  = "Morgulskí nájazdníci"
-pt_mordor_raiders  = "Mordorskí nájazdníci"
-pt_isengard_raiders  = "Isengardskí nájazdníci"
-pt_dunland_raiders  = "Vrchoveckí nájazdníci"
-pt_harad_raiders  = "Haradskí nájazdníci"
-pt_khand_raiders  = "Khandskí nájazdníci"
-pt_umbar_raiders  = "Umbarskí nájazdníci"
-pt_moria_raiders  = "Mórijskí nájazdníci"
-pt_guldur_raiders  = "Dol Guldúrski nájazdníci"
-pt_gundabad_raiders  = "Nájazdníci z Gundabadu"
-pt_rhun_raiders  = "Rhûnskí nájazdníci"
-pt_gondor_patrol  = "Gondorská hliadka"
-pt_rohan_patrol  = "Rohanská hliadka"
-pt_imladris_patrol  = "Dunedainská hliadka"
-pt_lorien_patrol  = "Lórienská hliadka"
-pt_woodelf_patrol  = "Temnohvozdská hliadka"
-pt_dale_patrol  = "Dálska hliadka"
-pt_esgaroth_patrol  = "Esgarothská hliadka"
-pt_dwarf_patrol  = "Trpasličí ozbrojenci"
-pt_ranger_patrol  = "Hraničiarska hliadka"
-pt_amroth_patrol  = "Dol Amrothská hliadka"
-pt_pelargir_patrol  = "Pelargirská hliadka"
-pt_lossarnach_patrol  = "Lossarnachská hliadka"
-pt_brv_patrol  = "Čiernodolská hliadka"
-pt_pinnath_patrol  = "Pinnath Gelinská hliadka"
-pt_lamedon_patrol  = "Lamedonská hliadka"
-pt_mordor_war_party  = "Mordorská armádny oddiel"
-pt_isengard_war_party  = "Isengardský armádny oddiel"
-pt_harad_war_party  = "Haradský voj južanov"
-pt_dunland_war_party  = "Armáda Vrchovcov"
-pt_khand_war_party  = "Khandská armádna družina varjagov"
-pt_moria_war_party  = "Mórijská horda goblinov"
-pt_guldur_war_party  = "Dol Guldúrska vojenská družina"
-pt_rhun_war_party  = "Rhûnska eskadróna východniarov"
-pt_gondor_company  = "Patrola z Minas Tirith"
-pt_rohan_company  = "Rohánska družina"
-pt_imladris_company  = "Družina z Imladrisu"
-pt_lorien_company  = "Lothlotienská družina"
-pt_woodelf_company  = "Družina lesných elfov"
-pt_dale_company  = "Dálska družina"
-pt_dwarf_company  = "Trpasličia armádna družina"
-pt_gondor_elite_company  = "Gondorská elitná družina"
-pt_rohan_elite_company  = "Rohanská elitná družina"
-pt_imladris_elite_company  = "Elitná družina z Roklinky"
-pt_lorien_elite_company  = "Lothlorienská elitná družina"
-pt_woodelf_elite_company  = "Elitná družina lesných elfov"
-pt_dale_elite_company  = "Dálska elitná družina"
-pt_dwarf_elite_company  = "Trpasličia elitná družina"
-pt_gondor_caravan  = "Gondorský konvoj"
-pt_rohan_caravan  = "Rohanský konvoj"
-pt_imladris_caravan  = "Konvoj z Roklinky"
-pt_lorien_caravan  = "Lorienský konvoj"
-pt_woodelf_caravan  = "Konvoj lesných elfov"
-pt_dale_caravan  = "Dálsky konvoj"
-pt_dwarf_caravan  = "Trpasličí konvoj"
-pt_mordor_caravan  = "Mordorskí zásobovací konvoj"
-pt_isengard_caravan  = "Sarumanov zásobovací konvoj"
-pt_gunda_caravan  = "Zásobovací konvoj Gundabadu"
-pt_gondor_p_train  = "Gondorská väzenská kolóna"
-pt_rohan_p_train  = "Rohanská väzenská kolóna"
-pt_imladris_p_train  = "Väzenská kolóna Roklinky"
-pt_lorien_p_train  = "Lorienská väzenská kolóna"
-pt_woodelf_p_train  = "Väzenská kolóna lesných elfov"
-pt_dale_p_train  = "Dálska väzenská kolóna"
-pt_dwarf_p_train  = "Trpasličia väzenská kolóna"
-pt_mordor_p_train  = "Mordorská väzenská kolóna"
-pt_isengard_p_train  = "Sarumanová väzenská kolóna"
-pt_kingdom_hero_party  = "Armádny oddiel"
-pt_caravan_survivors  = "Preživší z konvoja"
-pt_routed_allies  = "Rozprášení spojenci"
-pt_routed_enemies  = "Rozprášení nepriatelia"
-pt_legion_minas_morgul  = "Légia Minas Morgul"
-pt_legion_udun  = "Légia Udúnu"
-pt_legion_gorgoroth  = "Légia Gorgorothu"
-pt_legion_barad_dur  = "Légia Barad-Dúru"
-pt_beorn_messenger  = "Posol Grizlovcov"
-pt_village  = "Dedina"
-pt_ring_hunters  = "Hľadači Prsteňa"
-pt_scout_camp_small  = "Tábor prieskumníkov"
-pt_scout_camp_large  = "Opevnený tábor prieskumníkov"
-pt_beorn_caravan  = "Konvoj Grizlovcov"
-pt_orc_horde  = "Ohyzdia horda"
-pt_volunteers  = "Zálohy"
-pt_refugees  = "Utečenci"
-; pt_retreat_troops  = "Cover Troops"
+pt_rescued_prisoners|Oslobodení zajatci
+pt_enemy|Nepriateľ
+pt_hero_party|Družina hrdiny
+pt_cattle_herd|Stádo dobytka
+pt_ruins|Ruiny
+pt_legendary_place|Legendárne miesto
+pt_mound|Mohyla hrdiny
+pt_pyre|Pohrebná vatra hrdiny
+pt_wild_troll|Divoký zlobor
+pt_raging_trolls|Zúriví zlobri
+pt_looters|Kmeňoví Ohyzdi
+pt_forest_bandits|Podradní ohyzdi
+pt_mountain_bandits|Divokí Škrati
+pt_steppe_bandits|Vyhnanci z Vrchoviny
+pt_sea_raiders|Korzárski odpadlíci
+pt_deserters|Dezertéri
+pt_merchant_caravan|Kupecký konvoj
+pt_troublesome_bandits|Dobiedzaví Škrati
+pt_fangorn_orcs|Ohyzdí drevorubači
+pt_village_farmers|Vidiečania
+pt_spy_partners|Podozriví cestovatelia
+pt_spy_partners_evil|Podozriví cestovatelia
+pt_runaway_serfs|Otroci na úteku
+pt_spy|Osamelý jazdec
+pt_spy_evil|Osamelý jazdec
+pt_sacrificed_messenger|Obetovaný posol
+pt_gandalf|Gandalf
+pt_nazgul|Nazgul
+pt_gondor_scouts|Gondorskí prieskumníci
+pt_blackroot_auxila|Čiernodolská podpora
+pt_lamedon_auxila|Lamedonská podpora
+pt_lossarnach_auxila|Lossarnachská podpora
+pt_pinnath_gelin_auxila|Podpora Pinnath Gelin
+pt_ranger_scouts|Hraničiarskí prieskumníci
+pt_rohan_scouts|Rohanskí prieskumníci
+pt_lorien_scouts|Lorienskí prieskumníci
+pt_woodelf_scouts|Temnohvozdskí prieskumníci
+pt_imladris_scouts|Dunedainskí prieskumníci
+pt_dale_scouts|Dálski prieskumníci
+pt_esgaroth_scouts|Esgarothskí prieskumníci
+pt_dwarf_scouts|Trpasličia hliadka
+pt_beorn_scouts|Grizlovskí prieskumníci
+pt_woodmen_scouts|Lesníci
+pt_mordor_scouts|Mordorskí zvedovia
+pt_morgul_scouts|Morgulskí zvedovia
+pt_isengard_scouts|Isengardskí zvedovia
+pt_isengard_scouts_warg|Isengardskí vročí zvedovia
+pt_harad_scouts|Haradrimskí zvedovia
+pt_dunland_scouts|Vrchoveckí zvedovia
+pt_umbar_scouts|Korzárski zvedovia
+pt_khand_scouts|Východniarskí zvedovia
+pt_moria_scouts|Mórijskí zvedovia
+pt_guldur_scouts|Dol Guldúrski zvedovia
+pt_gundabad_scouts|Gundabádskí zvedovia
+pt_rhun_scouts|Rhûnski zvedovia
+pt_gondor_raiders|Gondorski zásobovači
+pt_rohan_raiders|Rohirrskí zásobovači
+pt_imladris_raiders|Zásobovači Roklinky
+pt_lorien_raiders|Lorienskí zásobovači
+pt_woodelf_raiders|Temnohvozdskí zásobovači
+pt_dale_raiders|Dálski zásobovači
+pt_dwarf_raiders|Trpasličí zásobovači
+pt_ranger_raiders|Hraničiarski nájazdníci
+pt_morgul_raiders|Morgulskí nájazdníci
+pt_mordor_raiders|Mordorskí nájazdníci
+pt_isengard_raiders|Isengardskí nájazdníci
+pt_dunland_raiders|Vrchoveckí nájazdníci
+pt_harad_raiders|Haradskí nájazdníci
+pt_khand_raiders|Khandskí nájazdníci
+pt_umbar_raiders|Umbarskí nájazdníci
+pt_moria_raiders|Mórijskí nájazdníci
+pt_guldur_raiders|Dol Guldúrski nájazdníci
+pt_gundabad_raiders|Nájazdníci z Gundabadu
+pt_rhun_raiders|Rhûnskí nájazdníci
+pt_gondor_patrol|Gondorská hliadka
+pt_rohan_patrol|Rohanská hliadka
+pt_imladris_patrol|Dunedainská hliadka
+pt_lorien_patrol|Lórienská hliadka
+pt_woodelf_patrol|Temnohvozdská hliadka
+pt_dale_patrol|Dálska hliadka
+pt_esgaroth_patrol|Esgarothská hliadka
+pt_dwarf_patrol|Trpasličí ozbrojenci
+pt_ranger_patrol|Hraničiarska hliadka
+pt_amroth_patrol|Dol Amrothská hliadka
+pt_pelargir_patrol|Pelargirská hliadka
+pt_lossarnach_patrol|Lossarnachská hliadka
+pt_brv_patrol|Čiernodolská hliadka
+pt_pinnath_patrol|Pinnath Gelinská hliadka
+pt_lamedon_patrol|Lamedonská hliadka
+pt_mordor_war_party|Mordorská armádny oddiel
+pt_isengard_war_party|Isengardský armádny oddiel
+pt_harad_war_party|Haradský voj južanov
+pt_dunland_war_party|Armáda Vrchovcov
+pt_khand_war_party|Khandská armádna družina varjagov
+pt_moria_war_party|Mórijská horda goblinov
+pt_guldur_war_party|Dol Guldúrska vojenská družina
+pt_rhun_war_party|Rhûnska eskadróna východniarov
+pt_gondor_company|Patrola z Minas Tirith
+pt_rohan_company|Rohánska družina
+pt_imladris_company|Družina z Imladrisu
+pt_lorien_company|Lothlotienská družina
+pt_woodelf_company|Družina lesných elfov
+pt_dale_company|Dálska družina
+pt_dwarf_company|Trpasličia armádna družina
+pt_gondor_elite_company|Gondorská elitná družina
+pt_rohan_elite_company|Rohanská elitná družina
+pt_imladris_elite_company|Elitná družina z Roklinky
+pt_lorien_elite_company|Lothlorienská elitná družina
+pt_woodelf_elite_company|Elitná družina lesných elfov
+pt_dale_elite_company|Dálska elitná družina
+pt_dwarf_elite_company|Trpasličia elitná družina
+pt_gondor_caravan|Gondorský konvoj
+pt_rohan_caravan|Rohanský konvoj
+pt_imladris_caravan|Konvoj z Roklinky
+pt_lorien_caravan|Lorienský konvoj
+pt_woodelf_caravan|Konvoj lesných elfov
+pt_dale_caravan|Dálsky konvoj
+pt_dwarf_caravan|Trpasličí konvoj
+pt_mordor_caravan|Mordorskí zásobovací konvoj
+pt_isengard_caravan|Sarumanov zásobovací konvoj
+pt_gunda_caravan|Zásobovací konvoj Gundabadu
+pt_gondor_p_train|Gondorská väzenská kolóna
+pt_rohan_p_train|Rohanská väzenská kolóna
+pt_imladris_p_train|Väzenská kolóna Roklinky
+pt_lorien_p_train|Lorienská väzenská kolóna
+pt_woodelf_p_train|Väzenská kolóna lesných elfov
+pt_dale_p_train|Dálska väzenská kolóna
+pt_dwarf_p_train|Trpasličia väzenská kolóna
+pt_mordor_p_train|Mordorská väzenská kolóna
+pt_isengard_p_train|Sarumanová väzenská kolóna
+pt_kingdom_hero_party|Armádny oddiel
+pt_caravan_survivors|Preživší z konvoja
+pt_routed_allies|Rozprášení spojenci
+pt_routed_enemies|Rozprášení nepriatelia
+pt_legion_minas_morgul|Légia Minas Morgul
+pt_legion_udun|Légia Udúnu
+pt_legion_gorgoroth|Légia Gorgorothu
+pt_legion_barad_dur|Légia Barad-Dúru
+pt_beorn_messenger|Posol Grizlovcov
+pt_village|Dedina
+pt_ring_hunters|Hľadači Prsteňa
+pt_scout_camp_small|Tábor prieskumníkov
+pt_scout_camp_large|Opevnený tábor prieskumníkov
+pt_beorn_caravan|Konvoj Grizlovcov
+pt_orc_horde|Ohyzdia horda
+pt_volunteers|Zálohy
+pt_refugees|Utečenci
+; pt_retreat_troops|Cover Troops

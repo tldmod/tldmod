@@ -1,107 +1,107 @@
-p_town_minas_tirith  = "Мінас-Тіріт"
-p_town_pelargir  = "Пеларгір"
-p_town_linhir  = "Лінхір"
-p_town_dol_amroth  = "Дол-Амрот"
-p_town_edhellond  = "Еделонд"
-p_town_lossarnach  = "Лоссарнах"
-p_town_tarnost  = "Тарност"
-p_town_erech  = "Ерех"
-p_town_pinnath_gelin  = "Піннат-Гелін"
-p_town_west_osgiliath  = "Західний Осгіліат"
-p_town_henneth_annun  = "Геннет-Аннун"
-p_town_cair_andros  = "Каір-Андрос"
-p_town_calembel  = "Калембел"
-p_town_edoras  = "Едорас"
-p_town_aldburg  = "Альдбург"
-p_town_hornburg  = "Горнбург"
-p_town_east_emnet  = "Іст-Емнет"
-p_town_westfold  = "Вестфолд"
-p_town_west_emnet  = "Вест-Емнет"
-p_town_eastfold  = "Істфолд"
-p_town_morannon  = "Мораннон"
-p_town_minas_morgul  = "Мінас-Моргул"
-p_town_cirith_ungol  = "Патрульний табір орків"
-p_town_east_osgiliath  = "Східний Осгіліат"
-p_town_orc_sentry_camp  = "Сторожовий табір орків"
-p_town_isengard  = "Ізенгард"
-p_town_urukhai_outpost  = "Застава урук-хай"
-p_town_urukhai_h_camp  = "Мисливський табір урук-хай"
-p_town_urukhai_r_camp  = "Річковий табір урук-хай"
-p_town_caras_galadhon  = "Карас-Галадон"
-p_town_cerin_dolen  = "Керін-Долен"
-p_town_cerin_amroth  = "Керін-Амрот"
-p_town_thranduils_halls  = "Зали Трандуїла"
-p_town_woodelf_camp  = "Табір Лісових ельфів"
-p_town_woodelf_west_camp  = "Західний табір Лісових ельфів"
-p_town_woodsmen_village  = "Селище лісовиків"
-p_town_beorning_village  = "Селище беорнінгів"
-p_town_beorn_house  = "Дім Беорна"
-p_town_moria  = "Брама Морії"
-p_town_troll_cave  = "Печера тролів"
-p_town_dale  = "Дейл"
-p_town_esgaroth  = "Есгарот"
-p_town_dunland_camp  = "Дунландський табір"
-p_town_harad_camp  = "Харадримський табір"
-p_town_khand_camp  = "Хандський табір"
-p_town_umbar_camp  = "Корсарський табір"
-p_town_imladris_camp  = "Рівендельський табір"
-p_town_dol_guldur  = "Дол-Гулдур"
-p_town_dol_guldur_north_outpost  = "Північна застава Дол-Гулдуру"
-p_town_rhun_main_camp  = "Головний табір Руну"
-p_town_rhun_south_camp  = "Південна застава Руну"
-p_town_rhun_north_camp  = "Північна застава Руну"
-p_town_gundabad  = "Гундабад"
-p_town_gundabad_ne_outpost  = "Північно-східний аванпост Гундабада"
-p_town_gundabad_nw_outpost  = "Північно-західний аванпост Гундабада"
-p_town_goblin_north_outpost  = "Гоблінабад"
-p_town_goblin_south_outpost  = "Південний аванпост гоблінів"
-p_town_gundabad_m_outpost  = "Гундабадський аванпост в Темноліссі"
-p_town_erebor  = "Еребор"
-p_town_ironhill_camp  = "Каменярня гномів в Залізних пагорбах"
-p_advcamp_gondor  = "Гондорський передовий табір"
-p_advcamp_rohan  = "Роганський передовий табір"
-p_advcamp_isengard  = "Ізенгардський передовий табір"
-p_advcamp_mordor  = "Мордорський передовий табір"
-p_advcamp_harad  = "Харадський передовий табір"
-p_advcamp_rhun  = "Рунійський передовий табір"
-p_advcamp_khand  = "Хандський передовий табір"
-p_advcamp_umbar  = "Умбарський передовий табір"
-p_advcamp_lorien  = "Лоріенський передовий табір"
-p_advcamp_imladris  = "Передовий табір Імладріса"
-p_advcamp_woodelf  = "Передовий табір ельфів Темнолісся"
-p_advcamp_moria  = "Морійський передовий табір"
-p_advcamp_guldur  = "Передовий табір Дол-Гулдура"
-p_advcamp_gundabad  = "Гундабадський передовий табір"
-p_advcamp_dale  = "Передовий табір Дейла"
-p_advcamp_dwarf  = "Ереборський передовий табір"
-p_advcamp_dunland  = "Дунландський передовий табір"
-p_advcamp_beorn  = "Беорнінгський передовий табір"
-p_argonath  = "Аргонат"
-p_argonath2  = "Аргонат"
-p_hand_isen  = "Кам'яна долоня Ізенгарду"
-p_mount_doom  = "Судна Гора"
-p_town_barad_dur  = "Барад-дур"
-p_ford_cair_andros1  = "Андуїн"
-p_ford_cair_andros2  = "Андуїн"
-p_ford_caras_galadhon  = "Андуїн"
-p_ford_brown_lands  = "Андуїн"
-p_ford_rauros  = "Андуїн"
-p_ford_pelargir  = "Андуїн"
-p_ford_edhellond  = "Андуїн"
-p_ford_cerin_dolen  = "Келебрант"
-p_old_ford  = "Старий брід"
-p_ford_erech  = "Рінгло"
-p_ford_isen1  = "Ізен"
-p_ford_isen2  = "Ізен"
-p_ford_rohan  = "Ентов купіль"
-p_ford_rohan2  = "Ентов купіль"
-p_ford_fangorn  = "Ентов купіль"
-p_ford_fangorn2  = "Світлимка"
-p_ford_moria  = "Келебрант"
-p_legend_amonhen  = "Амон-Хен"
-p_legend_deadmarshes  = "Мертвецькі болота"
-p_legend_mirkwood  = "Темнолісся"
-; p_fangorn_center  = "Fangorn Center"
-p_ring_hunter_lair  = "Лігво Мисливців за Перснем"
-p_raft  = "Плотогони"
-p_ancient_ruins  = "Стародавні руїни"
+p_town_minas_tirith|Мінас-Тіріт
+p_town_pelargir|Пеларгір
+p_town_linhir|Лінхір
+p_town_dol_amroth|Дол-Амрот
+p_town_edhellond|Еделонд
+p_town_lossarnach|Лоссарнах
+p_town_tarnost|Тарност
+p_town_erech|Ерех
+p_town_pinnath_gelin|Піннат-Гелін
+p_town_west_osgiliath|Західний Осгіліат
+p_town_henneth_annun|Геннет-Аннун
+p_town_cair_andros|Каір-Андрос
+p_town_calembel|Калембел
+p_town_edoras|Едорас
+p_town_aldburg|Альдбург
+p_town_hornburg|Горнбург
+p_town_east_emnet|Іст-Емнет
+p_town_westfold|Вестфолд
+p_town_west_emnet|Вест-Емнет
+p_town_eastfold|Істфолд
+p_town_morannon|Мораннон
+p_town_minas_morgul|Мінас-Моргул
+p_town_cirith_ungol|Патрульний табір орків
+p_town_east_osgiliath|Східний Осгіліат
+p_town_orc_sentry_camp|Сторожовий табір орків
+p_town_isengard|Ізенгард
+p_town_urukhai_outpost|Застава урук-хай
+p_town_urukhai_h_camp|Мисливський табір урук-хай
+p_town_urukhai_r_camp|Річковий табір урук-хай
+p_town_caras_galadhon|Карас-Галадон
+p_town_cerin_dolen|Керін-Долен
+p_town_cerin_amroth|Керін-Амрот
+p_town_thranduils_halls|Зали Трандуїла
+p_town_woodelf_camp|Табір Лісових ельфів
+p_town_woodelf_west_camp|Західний табір Лісових ельфів
+p_town_woodsmen_village|Селище лісовиків
+p_town_beorning_village|Селище беорнінгів
+p_town_beorn_house|Дім Беорна
+p_town_moria|Брама Морії
+p_town_troll_cave|Печера тролів
+p_town_dale|Дейл
+p_town_esgaroth|Есгарот
+p_town_dunland_camp|Дунландський табір
+p_town_harad_camp|Харадримський табір
+p_town_khand_camp|Хандський табір
+p_town_umbar_camp|Корсарський табір
+p_town_imladris_camp|Рівендельський табір
+p_town_dol_guldur|Дол-Гулдур
+p_town_dol_guldur_north_outpost|Північна застава Дол-Гулдуру
+p_town_rhun_main_camp|Головний табір Руну
+p_town_rhun_south_camp|Південна застава Руну
+p_town_rhun_north_camp|Північна застава Руну
+p_town_gundabad|Гундабад
+p_town_gundabad_ne_outpost|Північно-східний аванпост Гундабада
+p_town_gundabad_nw_outpost|Північно-західний аванпост Гундабада
+p_town_goblin_north_outpost|Гоблінабад
+p_town_goblin_south_outpost|Південний аванпост гоблінів
+p_town_gundabad_m_outpost|Гундабадський аванпост в Темноліссі
+p_town_erebor|Еребор
+p_town_ironhill_camp|Каменярня гномів в Залізних пагорбах
+p_advcamp_gondor|Гондорський передовий табір
+p_advcamp_rohan|Роганський передовий табір
+p_advcamp_isengard|Ізенгардський передовий табір
+p_advcamp_mordor|Мордорський передовий табір
+p_advcamp_harad|Харадський передовий табір
+p_advcamp_rhun|Рунійський передовий табір
+p_advcamp_khand|Хандський передовий табір
+p_advcamp_umbar|Умбарський передовий табір
+p_advcamp_lorien|Лоріенський передовий табір
+p_advcamp_imladris|Передовий табір Імладріса
+p_advcamp_woodelf|Передовий табір ельфів Темнолісся
+p_advcamp_moria|Морійський передовий табір
+p_advcamp_guldur|Передовий табір Дол-Гулдура
+p_advcamp_gundabad|Гундабадський передовий табір
+p_advcamp_dale|Передовий табір Дейла
+p_advcamp_dwarf|Ереборський передовий табір
+p_advcamp_dunland|Дунландський передовий табір
+p_advcamp_beorn|Беорнінгський передовий табір
+p_argonath|Аргонат
+p_argonath2|Аргонат
+p_hand_isen|Кам'яна долоня Ізенгарду
+p_mount_doom|Судна Гора
+p_town_barad_dur|Барад-дур
+p_ford_cair_andros1|Андуїн
+p_ford_cair_andros2|Андуїн
+p_ford_caras_galadhon|Андуїн
+p_ford_brown_lands|Андуїн
+p_ford_rauros|Андуїн
+p_ford_pelargir|Андуїн
+p_ford_edhellond|Андуїн
+p_ford_cerin_dolen|Келебрант
+p_old_ford|Старий брід
+p_ford_erech|Рінгло
+p_ford_isen1|Ізен
+p_ford_isen2|Ізен
+p_ford_rohan|Ентов купіль
+p_ford_rohan2|Ентов купіль
+p_ford_fangorn|Ентов купіль
+p_ford_fangorn2|Світлимка
+p_ford_moria|Келебрант
+p_legend_amonhen|Амон-Хен
+p_legend_deadmarshes|Мертвецькі болота
+p_legend_mirkwood|Темнолісся
+; p_fangorn_center|Fangorn Center
+p_ring_hunter_lair|Лігво Мисливців за Перснем
+p_raft|Плотогони
+p_ancient_ruins|Стародавні руїни

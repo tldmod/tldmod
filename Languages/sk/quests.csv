@@ -1,89 +1,89 @@
-qst_deliver_message  = "Doruč správu {s13}"
-qst_deliver_message_text  = "{s9} ťa požiadal, aby si doručil správu {s13}. {s13} bol v {s4} keď ti zadal túto úlohu."
-qst_deliver_message_to_enemy_lord  = "Doruč správu {s13}"
-qst_deliver_message_to_enemy_lord_text  = "{s9} ťa požiadal, aby si doručil správu {s13} z {s15}. {s13} bol v {s4} keď ti zadal túto úlohu."
-qst_raise_troops  = "Vycvič {reg1} {s14}"
-qst_raise_troops_text  = "{s9} ťa požiadal, aby si vycvičil {reg1} {s14}ov a priviedol ich k {nemu/jej}."
-qst_escort_messenger  = "Sprevádzaj posla do {s14}u"
-qst_escort_messenger_text  = "Nič"
-qst_hunt_down_fugitive  = "Nájdi a zabi {s4}"
-qst_hunt_down_fugitive_text  = "{s9} chce, aby si našiel a zabil utečenca menom {s4}. Práve by mal byť v {s3}."
-qst_bring_back_runaway_serfs  = "Priveď späť otrokov na úteku"
-qst_bring_back_runaway_serfs_text  = "{s9} chce, aby si priviedol tri skupiny otrokov na úteku späť do {s2}. Povedal, že všetky tri skupiny utekajú smerom k {s3}."
-qst_follow_spy  = "Prenasleduj špióna na stretnutie"
-qst_follow_spy_text  = "{s11} ťa požiadal, aby si následoval špeha ktorý opustí {s12}. Musíš byť opatrný aby ťa špeh počas jeho cesty nespozoroval, alebo nezačal byť podozrievaví a vrátil sa späť. Keď sa špión stretne s jeho spoločníkmi, musíš ich prepadnúť, uväzniť a priviesť ich späť k {s11}."
-qst_capture_enemy_hero  = "Zajmi nepriateľského veliteľa"
-qst_capture_enemy_hero_text  = "{s11} chce, aby si zajal nepriateľského veliteľa"
-qst_lend_companion  = "Požičaj svojho spoločníka {s3} {s9}"
-qst_lend_companion_text  = "{s9} ťa požiadal, aby si mu požičal svojho spoločníka {s3} na jeden týždeň."
-qst_capture_prisoners  = "Prines {reg1} nepriateľských väzňov."
-qst_capture_prisoners_text  = "{s9} chce, aby si mu priniesol {reg1} nepriateľských väzňov."
-qst_investigate_fangorn  = "Preskúmaj Farngorn"
-qst_investigate_fangorn_text  = "{s9} chce, aby si zistil čo sa deje vo Farngornskom lese, a oznámil to."
-qst_capture_troll  = "Zajmi zlobra"
-qst_capture_troll_text  = "{s9} chce, aby si mu priviedol divokého zlobra pre použitie do jeho armády."
-qst_kill_troll  = "Zabi zúriaceho zlobra"
-qst_kill_troll_text  = "{s9} chce, aby si zbavil {s13} nebezpečného zlobra, ktorý vyčíňa v tých krajoch."
-qst_mirkwood_sorcerer  = "Zabi černokňažníka v Mirkwoode"
-qst_mirkwood_sorcerer_text  = "Moc Galadriel chrániaca Lothlorien bola oslabená nečistými rituálmi černokňažníka z Dol Gulduru. Aj keď je to smrteľník, predstavuje pre Elfov veľkú hrozbu. Hľadaj ho v Mirkwoode neďaleko Dol Gulduru. Buď nenápadný a nedaj sa vidieť, budeš mať len jedinú príležitosť aby si ho zabil. "
-qst_find_lost_spears  = "Najdi stratené kopije kráľa Bladorthina"
-qst_find_lost_spears_text  = "{s9} ťa požiadal, aby si našiel stratené kopije, ktoré trpaslíci kedysi vyrobili pre kráľa Bladorthina. Musíš požiadať trpaslíkov o povolenie, aby si mohol hľadať kopije v hlbinách Osamelej Hory."
-qst_defend_village  = "Braň dedinu"
-qst_raid_village  = "Vyplieň dedinu"
-qst_destroy_scout_camp  = "Znič tábor prieskumníkov"
-qst_rescue_prisoners  = "Osloboď {reg1} väzňov"
-qst_rescue_prisoners_text  = "{s9} chce, aby si oslobodil {reg1} väzňov."
-qst_scout_enemy_town  = "Obhliadni nepriateľské mesto."
-qst_scout_enemy_town_text  = "{s9} ťa požiadal, aby si preskúmal okolie {s13}."
-qst_dispatch_scouts  = "Vyšli prieskumnú skupinu"
-qst_dispatch_scouts_text  = "{s9} ťa požiadal, aby si vyslal prieskumnú skupinu neďaleko {s13}."
-qst_eliminate_patrols  = "Poraz {reg1} nepriateľské družiny"
-qst_eliminate_patrols_text  = "{s9} chce, aby si porazil {reg1} {s13} nepriateľských družín."
-qst_lend_surgeon  = "Požičaj svojho chirurga {s3} do {s1}"
-qst_lend_surgeon_text  = "Požičaj svojho skúseného chirurga {s3} do {s1}."
-qst_follow_army  = "Následuj {s9}'s armádu"
-qst_follow_army_text  = "Nič"
-qst_report_to_army  = "Hlas sa u {s13}"
-qst_report_to_army_text  = "Nič"
-qst_deliver_cattle_to_army  = "Doruč {reg3} kusov jedla do {s13}"
-qst_deliver_cattle_to_army_text  = "Nič"
-qst_join_siege_with_army  = "Pripoj sa k obliehaniu {s14}u"
-qst_join_siege_with_army_text  = "Nič"
-qst_scout_waypoints  = "Obhliadni {s13}, {s14} a {s15}"
-qst_scout_waypoints_text  = "Nič"
-qst_move_cattle_herd  = "Priveď {s12} do {s13}"
-qst_move_cattle_herd_text  = "Starosta z {s10}u ťa požiadal aby si priviedol nejaký {s12} do {s13}."
-qst_escort_merchant_caravan  = "Sprevádzaj karavanu do {s8}"
-qst_escort_merchant_caravan_text  = "Sprevádzaj karavanu do {s8} a prehovor s nimi keď budete neďaleko."
-qst_deliver_wine  = "Doruč {reg5} kusov {s6} do {s4}"
-qst_deliver_wine_text  = "{s9} z {s3} ťa požiadal aby si doručil {reg5} kusov {s6} do {s4} do 7 dní."
-qst_troublesome_bandits  = "Postaraj sa o Dobiedzavých Škratov."
-qst_troublesome_bandits_text  = "{s9} z {s4} ťa požiadal aby si našiel a zabil dobiedzavých škratov v blízkosti mesta."
-qst_deal_with_looters  = "Postaraj sa o Kmeňových Ohyzdov."
-qst_deal_with_looters_text  = "Starosta z {s4}u ťa požiadal, aby si pobil niekoľko tlúp Kmeňových Ohyzdov v okolí {s4}u."
-qst_deal_with_night_bandits  = "Znič tlupu Tuláckych Škratov"
-qst_deal_with_night_bandits_text  = "Starosta z {s14}u ťa požiadal, aby si zničil skupinu nočných škratov v {s14}u."
-qst_deliver_food  = "Dovez {s3} {reg5} kusov jedla."
-qst_deliver_food_text  = "{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov jedla do 10 dní."
-qst_deliver_iron  = "Prines {reg5} kusov {s6} do {s3}."
-qst_deliver_iron_text  = "{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov {s6}."
-qst_tld_introduction  = "Choďte za vodcom vašej frakcie."
-qst_tld_introduction_text  = "Nič"
-qst_treebeard_kill_orcs  = "Poraz skupinu ohyzdov rúbajúcich stromy."
-qst_treebeard_kill_orcs_text  = "Stromobrad chce, aby si našiel a porazil ohyzdov, ktorý rúbajú stromy vo Farngorne."
-qst_oath_of_vengeance  = "Prísaha pomsty"
-qst_oath_of_vengeance_text  = "Nazúrený smrťou {s1} si zložil prísahu pomsty armádam {s2}. V následujúcich dňoch musíš zničiť toľko armád {s2} koľko len zvládneš. Si si vedomý toho, že tvoji následovníci boli svedkami tvojej prísahy, a ty nechceš byť známy ako krivoprísažník. Krviprelievanie už musí začať!"
-qst_deliver_gift  = "Doruč {s4} z {s1} z {s2} do {s3}"
-qst_deliver_gift_text  = "Bol si požiadaný aby si doručil {s4} z {s1} do {s3} z {s2}."
-qst_ring_hunters  = "Hľadači Prsteňa"
-qst_ring_hunters2  = "Lovci Prsteňa - Splnené"
-qst_deliver_message_hobbit  = "O Hobitoch"
-qst_blank_quest_01  = "Ochráňte Utečencov"
-qst_blank_quest_02  = "Dolapte Utečencov"
-qst_blank_quest_03  = "Morská Bitka"
-qst_blank_quest_04  = "Zabi {s35} {s6} {s7}"
-qst_blank_quest_05  = "Zabi {s35} {s36} vojakov."
-qst_blank_quest_06  = "Pokor {s35} v bitke."
+qst_deliver_message|Doruč správu {s13}
+qst_deliver_message_text|{s9} ťa požiadal, aby si doručil správu {s13}. {s13} bol v {s4} keď ti zadal túto úlohu.
+qst_deliver_message_to_enemy_lord|Doruč správu {s13}
+qst_deliver_message_to_enemy_lord_text|{s9} ťa požiadal, aby si doručil správu {s13} z {s15}. {s13} bol v {s4} keď ti zadal túto úlohu.
+qst_raise_troops|Vycvič {reg1} {s14}
+qst_raise_troops_text|{s9} ťa požiadal, aby si vycvičil {reg1} {s14}ov a priviedol ich k {nemu/jej}.
+qst_escort_messenger|Sprevádzaj posla do {s14}u
+qst_escort_messenger_text|Nič
+qst_hunt_down_fugitive|Nájdi a zabi {s4}
+qst_hunt_down_fugitive_text|{s9} chce, aby si našiel a zabil utečenca menom {s4}. Práve by mal byť v {s3}.
+qst_bring_back_runaway_serfs|Priveď späť otrokov na úteku
+qst_bring_back_runaway_serfs_text|{s9} chce, aby si priviedol tri skupiny otrokov na úteku späť do {s2}. Povedal, že všetky tri skupiny utekajú smerom k {s3}.
+qst_follow_spy|Prenasleduj špióna na stretnutie
+qst_follow_spy_text|{s11} ťa požiadal, aby si následoval špeha ktorý opustí {s12}. Musíš byť opatrný aby ťa špeh počas jeho cesty nespozoroval, alebo nezačal byť podozrievaví a vrátil sa späť. Keď sa špión stretne s jeho spoločníkmi, musíš ich prepadnúť, uväzniť a priviesť ich späť k {s11}.
+qst_capture_enemy_hero|Zajmi nepriateľského veliteľa
+qst_capture_enemy_hero_text|{s11} chce, aby si zajal nepriateľského veliteľa
+qst_lend_companion|Požičaj svojho spoločníka {s3} {s9}
+qst_lend_companion_text|{s9} ťa požiadal, aby si mu požičal svojho spoločníka {s3} na jeden týždeň.
+qst_capture_prisoners|Prines {reg1} nepriateľských väzňov.
+qst_capture_prisoners_text|{s9} chce, aby si mu priniesol {reg1} nepriateľských väzňov.
+qst_investigate_fangorn|Preskúmaj Farngorn
+qst_investigate_fangorn_text|{s9} chce, aby si zistil čo sa deje vo Farngornskom lese, a oznámil to.
+qst_capture_troll|Zajmi zlobra
+qst_capture_troll_text|{s9} chce, aby si mu priviedol divokého zlobra pre použitie do jeho armády.
+qst_kill_troll|Zabi zúriaceho zlobra
+qst_kill_troll_text|{s9} chce, aby si zbavil {s13} nebezpečného zlobra, ktorý vyčíňa v tých krajoch.
+qst_mirkwood_sorcerer|Zabi černokňažníka v Mirkwoode
+qst_mirkwood_sorcerer_text|Moc Galadriel chrániaca Lothlorien bola oslabená nečistými rituálmi černokňažníka z Dol Gulduru. Aj keď je to smrteľník, predstavuje pre Elfov veľkú hrozbu. Hľadaj ho v Mirkwoode neďaleko Dol Gulduru. Buď nenápadný a nedaj sa vidieť, budeš mať len jedinú príležitosť aby si ho zabil. 
+qst_find_lost_spears|Najdi stratené kopije kráľa Bladorthina
+qst_find_lost_spears_text|{s9} ťa požiadal, aby si našiel stratené kopije, ktoré trpaslíci kedysi vyrobili pre kráľa Bladorthina. Musíš požiadať trpaslíkov o povolenie, aby si mohol hľadať kopije v hlbinách Osamelej Hory.
+qst_defend_village|Braň dedinu
+qst_raid_village|Vyplieň dedinu
+qst_destroy_scout_camp|Znič tábor prieskumníkov
+qst_rescue_prisoners|Osloboď {reg1} väzňov
+qst_rescue_prisoners_text|{s9} chce, aby si oslobodil {reg1} väzňov.
+qst_scout_enemy_town|Obhliadni nepriateľské mesto.
+qst_scout_enemy_town_text|{s9} ťa požiadal, aby si preskúmal okolie {s13}.
+qst_dispatch_scouts|Vyšli prieskumnú skupinu
+qst_dispatch_scouts_text|{s9} ťa požiadal, aby si vyslal prieskumnú skupinu neďaleko {s13}.
+qst_eliminate_patrols|Poraz {reg1} nepriateľské družiny
+qst_eliminate_patrols_text|{s9} chce, aby si porazil {reg1} {s13} nepriateľských družín.
+qst_lend_surgeon|Požičaj svojho chirurga {s3} do {s1}
+qst_lend_surgeon_text|Požičaj svojho skúseného chirurga {s3} do {s1}.
+qst_follow_army|Následuj {s9}'s armádu
+qst_follow_army_text|Nič
+qst_report_to_army|Hlas sa u {s13}
+qst_report_to_army_text|Nič
+qst_deliver_cattle_to_army|Doruč {reg3} kusov jedla do {s13}
+qst_deliver_cattle_to_army_text|Nič
+qst_join_siege_with_army|Pripoj sa k obliehaniu {s14}u
+qst_join_siege_with_army_text|Nič
+qst_scout_waypoints|Obhliadni {s13}, {s14} a {s15}
+qst_scout_waypoints_text|Nič
+qst_move_cattle_herd|Priveď {s12} do {s13}
+qst_move_cattle_herd_text|Starosta z {s10}u ťa požiadal aby si priviedol nejaký {s12} do {s13}.
+qst_escort_merchant_caravan|Sprevádzaj karavanu do {s8}
+qst_escort_merchant_caravan_text|Sprevádzaj karavanu do {s8} a prehovor s nimi keď budete neďaleko.
+qst_deliver_wine|Doruč {reg5} kusov {s6} do {s4}
+qst_deliver_wine_text|{s9} z {s3} ťa požiadal aby si doručil {reg5} kusov {s6} do {s4} do 7 dní.
+qst_troublesome_bandits|Postaraj sa o Dobiedzavých Škratov.
+qst_troublesome_bandits_text|{s9} z {s4} ťa požiadal aby si našiel a zabil dobiedzavých škratov v blízkosti mesta.
+qst_deal_with_looters|Postaraj sa o Kmeňových Ohyzdov.
+qst_deal_with_looters_text|Starosta z {s4}u ťa požiadal, aby si pobil niekoľko tlúp Kmeňových Ohyzdov v okolí {s4}u.
+qst_deal_with_night_bandits|Znič tlupu Tuláckych Škratov
+qst_deal_with_night_bandits_text|Starosta z {s14}u ťa požiadal, aby si zničil skupinu nočných škratov v {s14}u.
+qst_deliver_food|Dovez {s3} {reg5} kusov jedla.
+qst_deliver_food_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov jedla do 10 dní.
+qst_deliver_iron|Prines {reg5} kusov {s6} do {s3}.
+qst_deliver_iron_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov {s6}.
+qst_tld_introduction|Choďte za vodcom vašej frakcie.
+qst_tld_introduction_text|Nič
+qst_treebeard_kill_orcs|Poraz skupinu ohyzdov rúbajúcich stromy.
+qst_treebeard_kill_orcs_text|Stromobrad chce, aby si našiel a porazil ohyzdov, ktorý rúbajú stromy vo Farngorne.
+qst_oath_of_vengeance|Prísaha pomsty
+qst_oath_of_vengeance_text|Nazúrený smrťou {s1} si zložil prísahu pomsty armádam {s2}. V následujúcich dňoch musíš zničiť toľko armád {s2} koľko len zvládneš. Si si vedomý toho, že tvoji následovníci boli svedkami tvojej prísahy, a ty nechceš byť známy ako krivoprísažník. Krviprelievanie už musí začať!
+qst_deliver_gift|Doruč {s4} z {s1} z {s2} do {s3}
+qst_deliver_gift_text|Bol si požiadaný aby si doručil {s4} z {s1} do {s3} z {s2}.
+qst_ring_hunters|Hľadači Prsteňa
+qst_ring_hunters2|Lovci Prsteňa - Splnené
+qst_deliver_message_hobbit|O Hobitoch
+qst_blank_quest_01|Ochráňte Utečencov
+qst_blank_quest_02|Dolapte Utečencov
+qst_blank_quest_03|Morská Bitka
+qst_blank_quest_04|Zabi {s35} {s6} {s7}
+qst_blank_quest_05|Zabi {s35} {s36} vojakov.
+qst_blank_quest_06|Pokor {s35} v bitke.
 
 
 
@@ -93,12 +93,12 @@ qst_blank_quest_06  = "Pokor {s35} v bitke."
 
 
 
-qst_blank_quest_16  = "Posilni Mesto"
-qst_blank_quest_17  = "Zabi {reg22} {s6} v bitkách"
+qst_blank_quest_16|Posilni Mesto
+qst_blank_quest_17|Zabi {reg22} {s6} v bitkách
 
 
 
 
-qst_guardian_party_quest  = "Posledný Odpor Isengardu"
-qst_quests_end  = "Koniec Úlohy"
-qst_quests_end_text  = "."
+qst_guardian_party_quest|Posledný Odpor Isengardu
+qst_quests_end|Koniec Úlohy
+qst_quests_end_text|.

@@ -1,48 +1,48 @@
-skl_trade  = "Trgovac"
-; skl_trade_desc  = "Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)"
-skl_leadership  = "Vodjstvo"
-; skl_leadership_desc  = "Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)"
-skl_prisoner_management  = "Menadzment Zarobljenika"
-skl_prisoner_management_desc  = "Svai poen povecava maksimalnu kolicinu zarobljenika za %d (Vodjin skil)"
-; skl_persuasion  = "Wildcraft"
-; skl_persuasion_desc  = "The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)"
-skl_engineer  = "-----"
-skl_engineer_desc  = "-----"
-skl_first_aid  = "Prva Pomoc"
-skl_first_aid_desc  = "Heroji dobijaju 5%% helta natrag koje su izgubili tokom borbe po skilu levela. (Grupni skil)"
-skl_surgery  = "Hirurgija"
-skl_surgery_desc  = "Svaki poen ovog skila dodaje 4%% sanse da ce vas vojnik koji je smrtonosno povredjen biti ranjen umesto ubijen. (Grupni skil)"
-skl_wound_treatment  = "Lecenje rana."
-skl_wound_treatment_desc  = "Grupno lecenje je povecano za 20%% po skilu. (Grupni skil)"
-skl_inventory_management  = "Upravljanje Zalihama"
-skl_inventory_management_desc  = "Povecava kapacitet zaliha za +6 po levelu (Vodjin skil)"
-skl_spotting  = "Osmatranje"
-skl_spotting_desc  = "Grupna vidljivost je povecana za 10%% po levelu. (Grpuni skil)"
-skl_pathfinding  = "Pronalazenje Puta"
-skl_pathfinding_desc  = "Brzina na mapi je povecana za 3%% po levelu. (Grupni skil)"
-skl_tactics  = "Taktika"
-skl_tactics_desc  = "Na svaka dva levela borbena prednost je povecana za 1. (Grupni skil)"
-skl_tracking  = "Pracenje"
-skl_tracking_desc  = "Putokazi imaju vise detalja. (Grupni skil)"
-skl_trainer  = "Trener"
-skl_trainer_desc  = "Svakoga dana, svaki heroj sa ovim skilom dodaje iskustva za svakog vojnika ciji level je manji nego njegov. Iskustva po levelu idu: {0,4,10,16,23,30,38,46,55,65,80}. (Licni skil)"
-skl_looting  = "Kradja ili zaplenjivanje"
-skl_looting_desc  = "Ovaj skil poveca kolicinu ratnog plena ili ukradenih stvari za 10%%. (Grupni skil)"
-skl_horse_archery  = "Streljastvo na Konju"
-skl_horse_archery_desc  = "Povecaca snagu i preciznost strelicarstva i bacajucih oruzja kad ste na konju. (Licna vestina)"
-skl_riding  = "Jahanje"
-skl_riding_desc  = "Dozvoljava jahanje konja (ili drugih cudovista) koji traze veci level i povecava brzinu jahanjai manevre. (Licni skil)"
-skl_athletics  = "Atletika"
-skl_athletics_desc  = "Poboljsava brzinu trcanja. (Licni skil)"
-skl_shield  = "Stit"
-skl_shield_desc  = "Smanjuje stetu na stitu (za 8%% po levecu) i povecava brzinu stita i zasticenost. (Licni skil)"
-skl_weapon_master  = "Majstor Oruzja"
-skl_weapon_master_desc  = "Omogucava lakse ucenje oruzja i povecava limit. Limit ide do: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420.(Licni skil)"
-skl_power_draw  = "Snaznije Potezanje"
-skl_power_draw_desc  = "Daje mogucnost koristite jace lukove. Svaki poen ovog skila (kao i zahtev boljeg potezanje) povecava snagu luka za 14%% (Licni skil)"
-skl_power_throw  = "Bolje Bacanje"
-skl_power_throw_desc  = "Svaki poen ovog skila povecava snagu bacanja za 10%% (Licni skil)"
-skl_power_strike  = "Snazniju Udar"
-skl_power_strike_desc  = "Svaki poen ovog skila povecava snagu udaranja na blizinu za 8%% (Licni skil)"
-skl_ironflesh  = "Izdrzljivost"
-skl_ironflesh_desc  = "Svaki poen ovog skila povecava helte za +2 (Licni skil)"
+skl_trade|Trgovac
+; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
+skl_leadership|Vodjstvo
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
+skl_prisoner_management|Menadzment Zarobljenika
+skl_prisoner_management_desc|Svai poen povecava maksimalnu kolicinu zarobljenika za %d (Vodjin skil)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+skl_engineer|-----
+skl_engineer_desc|-----
+skl_first_aid|Prva Pomoc
+skl_first_aid_desc|Heroji dobijaju 5%% helta natrag koje su izgubili tokom borbe po skilu levela. (Grupni skil)
+skl_surgery|Hirurgija
+skl_surgery_desc|Svaki poen ovog skila dodaje 4%% sanse da ce vas vojnik koji je smrtonosno povredjen biti ranjen umesto ubijen. (Grupni skil)
+skl_wound_treatment|Lecenje rana.
+skl_wound_treatment_desc|Grupno lecenje je povecano za 20%% po skilu. (Grupni skil)
+skl_inventory_management|Upravljanje Zalihama
+skl_inventory_management_desc|Povecava kapacitet zaliha za +6 po levelu (Vodjin skil)
+skl_spotting|Osmatranje
+skl_spotting_desc|Grupna vidljivost je povecana za 10%% po levelu. (Grpuni skil)
+skl_pathfinding|Pronalazenje Puta
+skl_pathfinding_desc|Brzina na mapi je povecana za 3%% po levelu. (Grupni skil)
+skl_tactics|Taktika
+skl_tactics_desc|Na svaka dva levela borbena prednost je povecana za 1. (Grupni skil)
+skl_tracking|Pracenje
+skl_tracking_desc|Putokazi imaju vise detalja. (Grupni skil)
+skl_trainer|Trener
+skl_trainer_desc|Svakoga dana, svaki heroj sa ovim skilom dodaje iskustva za svakog vojnika ciji level je manji nego njegov. Iskustva po levelu idu: {0,4,10,16,23,30,38,46,55,65,80}. (Licni skil)
+skl_looting|Kradja ili zaplenjivanje
+skl_looting_desc|Ovaj skil poveca kolicinu ratnog plena ili ukradenih stvari za 10%%. (Grupni skil)
+skl_horse_archery|Streljastvo na Konju
+skl_horse_archery_desc|Povecaca snagu i preciznost strelicarstva i bacajucih oruzja kad ste na konju. (Licna vestina)
+skl_riding|Jahanje
+skl_riding_desc|Dozvoljava jahanje konja (ili drugih cudovista) koji traze veci level i povecava brzinu jahanjai manevre. (Licni skil)
+skl_athletics|Atletika
+skl_athletics_desc|Poboljsava brzinu trcanja. (Licni skil)
+skl_shield|Stit
+skl_shield_desc|Smanjuje stetu na stitu (za 8%% po levecu) i povecava brzinu stita i zasticenost. (Licni skil)
+skl_weapon_master|Majstor Oruzja
+skl_weapon_master_desc|Omogucava lakse ucenje oruzja i povecava limit. Limit ide do: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420.(Licni skil)
+skl_power_draw|Snaznije Potezanje
+skl_power_draw_desc|Daje mogucnost koristite jace lukove. Svaki poen ovog skila (kao i zahtev boljeg potezanje) povecava snagu luka za 14%% (Licni skil)
+skl_power_throw|Bolje Bacanje
+skl_power_throw_desc|Svaki poen ovog skila povecava snagu bacanja za 10%% (Licni skil)
+skl_power_strike|Snazniju Udar
+skl_power_strike_desc|Svaki poen ovog skila povecava snagu udaranja na blizinu za 8%% (Licni skil)
+skl_ironflesh|Izdrzljivost
+skl_ironflesh_desc|Svaki poen ovog skila povecava helte za +2 (Licni skil)

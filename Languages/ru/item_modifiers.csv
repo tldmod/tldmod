@@ -1,43 +1,43 @@
-imod_plain  = "Прост. %s"
-imod_cracked  = "Плох. %s"
-imod_rusty  = "Груб. %s"
-imod_bent  = "Подпорченн. %s"
-imod_chipped  = "Зазубр. %s"
-imod_battered  = "Побит. %s"
-imod_poor  = "Плох. %s"
-imod_crude  = "Прост. %s"
-imod_old  = "Древн. %s"
-imod_cheap  = "Дешёв. %s"
-imod_fine  = "Отличн. %s"
-imod_well_made  = "Добротн. %s"
-imod_sharp  = "Остр. %s"
-imod_balanced  = "Отбалансир. %s"
-imod_tempered  = "Калён. %s"
-imod_deadly  = "Смертельн. %s"
-imod_exquisite  = "Изящн. %s"
-imod_masterwork  = "Великолепн. %s"
-imod_heavy  = "Тяжёл. %s"
-imod_strong  = "Крепк. %s"
-imod_powerful  = "Мощн. %s"
-imod_tattered  = "Изорванн. %s"
-imod_ragged  = "Неотделанн. %s"
-imod_rough  = "Неотделанн. %s"
-imod_sturdy  = "Прочн. %s"
-imod_thick  = "Крепк. %s"
-imod_hardened  = "Плотн. %s"
-imod_reinforced  = "Усиленн. %s"
-imod_cloak  = "%s с плащом"
-imod_lordly  = "Великолепн. %s"
-imod_lame  = "Хром. %s"
-imod_swaybacked  = "Чахл. %s"
-imod_stubborn  = "Норовист. %s"
-imod_timid  = "Пуглив. %s"
-imod_meek  = "Окровавленн. %s"
-imod_spirited  = "Резв. %s"
-imod_champion  = "Породист. %s"
-imod_fresh  = "Свеж. %s"
-imod_day_old  = "Вчерашн. %s"
-imod_two_day_old  = "Позавчерашн. %s"
-imod_smelling  = "Зловонн. %s"
-imod_rotten  = "Тухл. %s"
-imod_large_bag  = "Большой запас - %s"
+imod_plain|Прост. %s
+imod_cracked|Плох. %s
+imod_rusty|Груб. %s
+imod_bent|Подпорченн. %s
+imod_chipped|Зазубр. %s
+imod_battered|Побит. %s
+imod_poor|Плох. %s
+imod_crude|Прост. %s
+imod_old|Древн. %s
+imod_cheap|Дешёв. %s
+imod_fine|Отличн. %s
+imod_well_made|Добротн. %s
+imod_sharp|Остр. %s
+imod_balanced|Отбалансир. %s
+imod_tempered|Калён. %s
+imod_deadly|Смертельн. %s
+imod_exquisite|Изящн. %s
+imod_masterwork|Великолепн. %s
+imod_heavy|Тяжёл. %s
+imod_strong|Крепк. %s
+imod_powerful|Мощн. %s
+imod_tattered|Изорванн. %s
+imod_ragged|Неотделанн. %s
+imod_rough|Неотделанн. %s
+imod_sturdy|Прочн. %s
+imod_thick|Крепк. %s
+imod_hardened|Плотн. %s
+imod_reinforced|Усиленн. %s
+imod_cloak|%s с плащом
+imod_lordly|Великолепн. %s
+imod_lame|Хром. %s
+imod_swaybacked|Чахл. %s
+imod_stubborn|Норовист. %s
+imod_timid|Пуглив. %s
+imod_meek|Окровавленн. %s
+imod_spirited|Резв. %s
+imod_champion|Породист. %s
+imod_fresh|Свеж. %s
+imod_day_old|Вчерашн. %s
+imod_two_day_old|Позавчерашн. %s
+imod_smelling|Зловонн. %s
+imod_rotten|Тухл. %s
+imod_large_bag|Большой запас - %s

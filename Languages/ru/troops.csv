@@ -1,1638 +1,1638 @@
-trp_unarmed_troop  = "Безоружный воин"
-trp_unarmed_troop_pl  = "Безоружные воины"
-trp_tutorial_maceman  = "Воин с булавой"
-trp_tutorial_maceman_pl  = "Воины с булавой"
-trp_tutorial_archer  = "Лучник"
-trp_tutorial_archer_pl  = "Лучники"
-trp_tutorial_swordsman  = "Мечник"
-trp_tutorial_swordsman_pl  = "Мечники"
-trp_novice_fighter  = "Боец-новичок"
-trp_novice_fighter_pl  = "Бойцы-новички"
-trp_regular_fighter  = "Опытный боец"
-trp_regular_fighter_pl  = "Опытные бойцы"
-trp_veteran_fighter  = "Боец-ветеран"
-trp_veteran_fighter_pl  = "Бойцы-ветераны"
-trp_champion_fighter  = "Прославленный боец"
-trp_champion_fighter_pl  = "Прославленные бойцы"
-trp_arena_training_fighter_1  = "Боец-новичок"
-trp_arena_training_fighter_1_pl  = "Бойцы-новички"
-trp_arena_training_fighter_2  = "Боец-новичок"
-trp_arena_training_fighter_2_pl  = "Бойцы-новички"
-trp_arena_training_fighter_3  = "Опытный боец"
-trp_arena_training_fighter_3_pl  = "Опытные бойцы"
-trp_arena_training_fighter_4  = "Опытный боец"
-trp_arena_training_fighter_4_pl  = "Опытные бойцы"
-trp_arena_training_fighter_5  = "Опытный боец"
-trp_arena_training_fighter_5_pl  = "Опытные бойцы"
-trp_arena_training_fighter_6  = "Боец-ветеран"
-trp_arena_training_fighter_6_pl  = "Ветераны"
-trp_arena_training_fighter_7  = "Боец-ветеран"
-trp_arena_training_fighter_7_pl  = "Бойцы-ветераны"
-trp_arena_training_fighter_8  = "Боец-ветеран"
-trp_arena_training_fighter_8_pl  = "Бойцы-ветераны"
-trp_arena_training_fighter_9  = "Прославленный боец"
-trp_arena_training_fighter_9_pl  = "Прославленные бойцы"
-trp_arena_training_fighter_10  = "Прославленный боец"
-trp_arena_training_fighter_10_pl  = "Прославленные бойцы"
-trp_cattle  = "Скот"
-trp_cattle_pl  = "Скот"
-trp_farmer  = "Крестьянин"
-trp_farmer_pl  = "Крестьянине"
-trp_townsman  = "Горожанин"
-trp_townsman_pl  = "Горожане"
-trp_watchman  = "Горожанка"
-trp_watchman_pl  = "Горожанки"
-trp_i1_woodmen_man  = "Лесной Житель"
-trp_i1_woodmen_man_pl  = "Лесные Жители"
-trp_i2_woodmen_forester  = "Лесник"
-trp_i2_woodmen_forester_pl  = "Лесники"
-trp_i3_woodmen_skilled_forester  = "Опытный лесничий"
-trp_i3_woodmen_skilled_forester_pl  = "Опытные лесничие"
-trp_i4_woodmen_axemen  = "Лесной страж"
-trp_i4_woodmen_axemen_pl  = "Лесные Стражи"
-trp_i5_woodmen_night_guard  = "Ночной страж Лихолесья"
-trp_i5_woodmen_night_guard_pl  = "Ночные стражи Лихолесья"
-trp_a2_woodmen_tracker  = "Лесной следопыт"
-trp_a2_woodmen_tracker_pl  = "Лесные следопыты"
-trp_a3_woodmen_scout  = "Лесной разведчик"
-trp_a3_woodmen_scout_pl  = "Лесные разведчики"
-trp_a4_woodmen_archer  = "Лесной стрелец"
-trp_a4_woodmen_archer_pl  = "Лесные стрельцы"
-trp_a5_woodmen_night_stalker  = "Ночной охотник Лихолесья"
-trp_a5_woodmen_night_stalker_pl  = "Ночные охотники Лихолесья"
-trp_i1_beorning_man  = "Беорнинг"
-trp_i1_beorning_man_pl  = "Беорнинги"
-trp_i2_beorning_warrior  = "Беорнингский воин"
-trp_i2_beorning_warrior_pl  = "Беорнингские воины"
-trp_i3_beorning_tolltacker  = "Беорнингский привратник"
-trp_i3_beorning_tolltacker_pl  = "Беорнингские привратники"
-trp_i4_beorning_sentinel  = "Беорнингский воитель"
-trp_i4_beorning_sentinel_pl  = "Беорнингские воители"
-trp_i5_beorning_warden_of_the_ford  = "Беорнингский хранитель Брода"
-trp_i5_beorning_warden_of_the_ford_pl  = "Беорнингские хранители Брода"
-trp_i3_beorning_carrock_lookout  = "Беорнингский дозорный Каррока"
-trp_i3_beorning_carrock_lookout_pl  = "Беорнингские дозорные Каррока"
-trp_i4_beorning_carrock_fighter  = "Беорнингский Боец Каррока"
-trp_i4_beorning_carrock_fighter_pl  = "Беорнингские Бойцы Каррока"
-trp_i5_beorning_carrock_berserker  = "Беорнингский Берсерк Каррока"
-trp_i5_beorning_carrock_berserker_pl  = "Беорнингские Берсерки Каррока"
-trp_i1_dale_militia  = "Ополченец Дэйла"
-trp_i1_dale_militia_pl  = "Ополченцы Дэйла"
-trp_i2_dale_man_at_arms  = "Ратник Дэйла"
-trp_i2_dale_man_at_arms_pl  = "Ратники Дэйла"
-trp_a2_dale_scout  = "Разведчик Дэйла"
-trp_a2_dale_scout_pl  = "Разведчики Дэйла"
-trp_a3_dale_bowman  = "Лучник Дейла"
-trp_a3_dale_bowman_pl  = "Лучники Дейла"
-trp_a4_dale_archer  = "Стрелец Дейла"
-trp_a4_dale_archer_pl  = "Стрельцы Дэйла"
-trp_a5_barding_bowman  = "Лучник Барда"
-trp_a5_barding_bowman_pl  = "Лучники Барда"
-trp_i3_dale_swordsman  = "Мечник Дэйла"
-trp_i3_dale_swordsman_pl  = "Мечники Дэйла"
-trp_i4_dale_sergeant  = "Латник Дэйла"
-trp_i4_dale_sergeant_pl  = "Латники Дэйла"
-trp_i5_dale_hearthman  = "Дружинник Дэйла"
-trp_i5_dale_hearthman_pl  = "Дружинники Дэйла"
-trp_i3_dale_spearman  = "Копейщик Дэйла"
-trp_i3_dale_spearman_pl  = "Копейщики Дэйла"
-trp_i4_dale_billman  = "Дейльский воин с глефой"
-trp_i4_dale_billman_pl  = "Дейльские воины с глефами"
-trp_i5_dale_bill_master  = "Дейльский искусный воин с глефой"
-trp_i5_dale_bill_master_pl  = "Дейльские искусные воины с глефами"
-trp_c2_rhovanion_retainer  = "Дворянин Дэйла"
-trp_c2_rhovanion_retainer_pl  = "Дворяне Дэйла"
-trp_c3_rhovanion_auxilia  = "Всадник Дэйла"
-trp_c3_rhovanion_auxilia_pl  = "Всадники Дэйла"
-trp_c4_rhovanion_rider  = "Всадник Рованиона"
-trp_c4_rhovanion_rider_pl  = "Всадники Рованиона"
-trp_ac5_rhovanion_marchwarden  = "Смотритель Пустошей Рованиона"
-trp_ac5_rhovanion_marchwarden_pl  = "Смотрители Пустошей Рованиона"
-trp_i1_rhun_tribesman  = "Рунийский дикарь"
-trp_i1_rhun_tribesman_pl  = "Рунийские дикари"
-trp_ac2_rhun_horse_scout  = "Рунийский конный разведчик"
-trp_ac2_rhun_horse_scout_pl  = "Рунийские конные разведчики"
-trp_ac3_rhun_horse_archer  = "Рунийский конный лучник"
-trp_ac3_rhun_horse_archer_pl  = "Рунийские конные лучники"
-trp_ac4_rhun_veteran_horse_archer  = "Рунийский конный лучник-ветеран"
-trp_ac4_rhun_veteran_horse_archer_pl  = "Рунийские конные лучники-ветераны"
-trp_ac5_rhun_balchoth_horse_archer  = "Балхотский конный лучник"
-trp_ac5_rhun_balchoth_horse_archer_pl  = "Балхотские конные лучники"
-trp_c3_rhun_swift_horseman  = "Рунийский быстрый всадник"
-trp_c3_rhun_swift_horseman_pl  = "Рунийские быстрые всадники"
-trp_c4_rhun_veteran_swift_horseman  = "Рунийский быстрый всадник-ветеран"
-trp_c4_rhun_veteran_swift_horseman_pl  = "Рунийские быстрые всадники-ветераны"
-trp_c5_rhun_falcon_horseman  = "Соколиный всадник"
-trp_c5_rhun_falcon_horseman_pl  = "Соколиные всадники"
-trp_i2_rhun_tribal_warrior  = "Рунийский пехотинец"
-trp_i2_rhun_tribal_warrior_pl  = "Рунийский пехотинец"
-trp_i3_rhun_tribal_infantry  = "Воин рунийского племени"
-trp_i3_rhun_tribal_infantry_pl  = "Воины рунийских племён"
-trp_i4_rhun_vet_infantry  = "Рунийский воин-ветеран"
-trp_i4_rhun_vet_infantry_pl  = "Рунийский воин-ветеран"
-trp_i5_rhun_ox_warrior  = "Воловий рубака"
-trp_i5_rhun_ox_warrior_pl  = "Воловьи рубаки"
-trp_c2_rhun_horseman  = "Всадник Рун"
-trp_c2_rhun_horseman_pl  = "Всадник Рун"
-trp_c3_rhun_outrider  = "Наездник Руна"
-trp_c3_rhun_outrider_pl  = "Наездники Руна"
-trp_c4_rhun_noble_rider  = "Знатный Всадник Руна"
-trp_c4_rhun_noble_rider_pl  = "Знатные Всадники Руна"
-trp_c5_rhun_warrider  = "Рунийский Всадник Войны"
-trp_c5_rhun_warrider_pl  = "Рунийские Всадники Войны"
-trp_c6_rhun_warlord  = "Военачальник Руна"
-trp_c6_rhun_warlord_pl  = "Военачальники Руна"
-trp_i1_dwarf_apprentice  = "Гном-Новобранец"
-trp_i1_dwarf_apprentice_pl  = "Гномы-Новобранцы"
-trp_i2_dwarf_warrior  = "Гном-Воин"
-trp_i2_dwarf_warrior_pl  = "Гномы-Воины"
-trp_i3_dwarf_hardened_warrior  = "Гном-Ветеран"
-trp_i3_dwarf_hardened_warrior_pl  = "Гномы-Ветераны"
-trp_i4_dwarf_spearman  = "Гном-Копьеносец"
-trp_i4_dwarf_spearman_pl  = "Гномы-Копьеносцы"
-trp_i5_dwarf_pikeman  = "Гном-Пикинер"
-trp_i5_dwarf_pikeman_pl  = "Гномы-Пикинеры"
-trp_i6_dwarf_longpikeman  = "Длиннобородый Пикинер"
-trp_i6_dwarf_longpikeman_pl  = "Длиннобородые Пикинеры"
-trp_i4_dwarf_axeman  = "Гном-Рубака"
-trp_i4_dwarf_axeman_pl  = "Гномы-Рубаки"
-trp_i5_dwarf_expert_axeman  = "Гном-Воитель"
-trp_i5_dwarf_expert_axeman_pl  = "Гномы-Воители"
-trp_i6_dwarf_longbeard_axeman  = "Длиннобородый Королевский Страж"
-trp_i6_dwarf_longbeard_axeman_pl  = "Длиннобородые Королевские Стражи"
-trp_a2_dwarf_lookout  = "Гном-Дозорный"
-trp_a2_dwarf_lookout_pl  = "Гномы-Дозорные"
-trp_a3_dwarf_scout  = "Гном-Разведчик"
-trp_a3_dwarf_scout_pl  = "Гномы-Разведчики"
-trp_a4_dwarf_bowman  = "Гном-Стрелок"
-trp_a4_dwarf_bowman_pl  = "Гномы-Стрелки"
-trp_i6_dwarf_longaxeman  = "Длиннобородый Секироносец"
-trp_i6_dwarf_longaxeman_pl  = "Длиннобородые Секироносцы"
-trp_i3_iron_hills_warrior  = "Воин Железных Холмов"
-trp_i3_iron_hills_warrior_pl  = "Воины Железных Холмов"
-trp_i2_iron_hills_miner  = "Рудокоп Железных Холмов"
-trp_i2_iron_hills_miner_pl  = "Рудокопы Железных Холмов"
-trp_i4_iron_hills_infantry  = "Пехотинец Железных Холмов"
-trp_i4_iron_hills_infantry_pl  = "Пехотинцы Железных Холмов"
-trp_i5_iron_hills_battle_dwarf  = "Воитель Железных Холмов"
-trp_i5_iron_hills_battle_dwarf_pl  = "Воители Железных Холмов"
-trp_i6_iron_hills_grors_guard  = "Гвардеец Грора"
-trp_i6_iron_hills_grors_guard_pl  = "Гвардейцы Грора"
-trp_i1_gon_levy  = "Гондорский новобранец"
-trp_i1_gon_levy_pl  = "Гондорские новобранцы"
-trp_i2_gon_watchman  = "Гондорский стражник"
-trp_i2_gon_watchman_pl  = "Гондорские стражники"
-trp_i3_gon_footman  = "Пехотинец Гондора"
-trp_i3_gon_footman_pl  = "Пехотинцы Гондора"
-trp_i4_gon_spearman  = "Копейщик Гондора"
-trp_i4_gon_spearman_pl  = "Копейщики Гондора"
-trp_i5_gon_vet_spearman  = "Копейщик-ветеран Гондора"
-trp_i5_gon_vet_spearman_pl  = "Копейщики-ветераны Гондора"
-trp_i6_gon_tower_spearman  = "Страж Фонтана"
-trp_i6_gon_tower_spearman_pl  = "Стражи Фонтана"
-trp_i4_gon_swordsman  = "Мечник Гондора"
-trp_i4_gon_swordsman_pl  = "Мечники Гондора"
-trp_i5_gon_vet_swordsman  = "Мечник-ветеран Гондора"
-trp_i5_gon_vet_swordsman_pl  = "Мечники-ветераны Гондора"
-trp_i6_gon_tower_swordsman  = "Мечник Стражи Цитадели"
-trp_i6_gon_tower_swordsman_pl  = "Мечники Стражи Цитадели"
-trp_c1_gon_nobleman  = "Знатный гондорец"
-trp_c1_gon_nobleman_pl  = "Знатный гондорец"
-trp_c2_gon_squire  = "Оруженосец Гондора"
-trp_c2_gon_squire_pl  = "Оруженосцы Гондора"
-trp_c3_gon_vet_squire  = "Оруженосец-ветеран Гондора"
-trp_c3_gon_vet_squire_pl  = "Оруженосцы-ветераны Гондора"
-trp_c4_gon_knight  = "Рыцарь Гондора"
-trp_c4_gon_knight_pl  = "Рыцари Гондора"
-trp_c5_gon_vet_knight  = "Рыцарь-ветеран Гондора"
-trp_c5_gon_vet_knight_pl  = "Рыцари-ветераны Гондора"
-trp_c6_gon_tower_knight  = "Рыцарь Цитадели"
-trp_c6_gon_tower_knight_pl  = "Рыцари Цитадели"
-trp_a3_gon_bowman  = "Стрелок Гондора"
-trp_a3_gon_bowman_pl  = "Стрелки Гондора"
-trp_a4_gon_archer  = "Лучник Гондора"
-trp_a4_gon_archer_pl  = "Лучники Гондора"
-trp_a5_gon_vet_archer  = "Лучник-ветеран Гондора"
-trp_a5_gon_vet_archer_pl  = "Лучники-ветераны Гондора"
-trp_a6_gon_tower_archer  = "Лучник Стражи Цитадели"
-trp_a6_gon_tower_archer_pl  = "Лучники Стражи Цитадели"
-trp_steward_guard  = "Гвардеец Наместника"
-trp_steward_guard_pl  = "Гвардейцы Наместника"
-trp_a4_ithilien_ranger  = "Рейнджер Итилиэна"
-trp_a4_ithilien_ranger_pl  = "Рейнджеры Итилиэна"
-trp_a5_ithilien_vet_ranger  = "Рейнджер-ветеран Итилиэна"
-trp_a5_ithilien_vet_ranger_pl  = "Рейнджеры-ветераны Итилиэна"
-trp_a6_ithilien_master_ranger  = "Искусный рейнджер Итилиэна"
-trp_a6_ithilien_master_ranger_pl  = "Искусные рейнджеры Итилиэна"
-trp_a6_ithilien_leader  = "Командир отряда итилиэнских рейнджеров"
-trp_a6_ithilien_leader_pl  = "Командиры отрядов итилиэнских рейнджеров"
-trp_i1_loss_woodsman  = "Лоссарнахский лесоруб"
-trp_i1_loss_woodsman_pl  = "Лоссарнахские лесорубы"
-trp_i2_loss_axeman  = "Лоссарнахский воин с топором"
-trp_i2_loss_axeman_pl  = "Лоссарнахские воины с топорами"
-trp_i3_loss_vet_axeman  = "Лоссарнахский опытный воин с топором"
-trp_i3_loss_vet_axeman_pl  = "Лоссарнахские опытные воины с топорами"
-trp_i4_loss_heavy_axeman  = "Тяжёлый лоссарнахский воин с топором"
-trp_i4_loss_heavy_axeman_pl  = "Тяжёлые лоссарнахские воины с топорами"
-trp_i5_loss_axemaster  = "Лоссарнахский искусный воин с топором"
-trp_i5_loss_axemaster_pl  = "Лоссарнахские искусные воины с топорами"
-trp_i6_loss_leader  = "Командир лоссарнахского отряда"
-trp_i6_loss_leader_pl  = "Командиры лоссарнахских отряда"
-trp_i1_pel_watchman  = "Пеларгирский стражник"
-trp_i1_pel_watchman_pl  = "Пеларгирские стражники"
-trp_a2_pel_marine  = "Пеларгирский моряк"
-trp_a2_pel_marine_pl  = "Пеларгирские моряки"
-trp_a3_pel_vet_marine  = "Пеларгирский опытный моряк"
-trp_a3_pel_vet_marine_pl  = "Пеларгирские ветераны морпехоты"
-trp_i2_pel_infantry  = "Пеларгирский пехотинец"
-trp_i2_pel_infantry_pl  = "Пеларгирские пехотинцы"
-trp_i3_pel_vet_infantry  = "Пеларгирский опытный пехотинец"
-trp_i3_pel_vet_infantry_pl  = "Пеларгирские опытные пехотинцы"
-trp_i6_pel_leader  = "Командир пеларгирского отряда"
-trp_i6_pel_leader_pl  = "Командиры пеларгирских отрядов"
-trp_a6_pel_marine_leader  = "Командир отряда пеларгирских моряков"
-trp_a6_pel_marine_leader_pl  = "Командиры отрядов пеларгирских моряков"
-trp_i1_lam_clansman  = "Воин ламедонского клана"
-trp_i1_lam_clansman_pl  = "Воины ламедонских кланов"
-trp_i2_lam_footman  = "Пехотинец Ламедона"
-trp_i2_lam_footman_pl  = "Пехотинцы Ламедона"
-trp_i3_lam_veteran  = "Опытный воин Ламедона"
-trp_i3_lam_veteran_pl  = "Опытные воины Ламедона"
-trp_i4_lam_warrior  = "Воин Ламедона"
-trp_i4_lam_warrior_pl  = "Воины Ламедона"
-trp_i5_lam_champion  = "Прославленный воин Ламедона"
-trp_i5_lam_champion_pl  = "Прославленные воины Ламедона"
-trp_c5_lam_knight  = "Рыцарь Ламедона"
-trp_c5_lam_knight_pl  = "Рыцари Ламедона"
-trp_c6_lam_leader  = "Командир ламедонского отряда"
-trp_c6_lam_leader_pl  = "Командиры ламедонских отрядов"
-trp_i1_pinnath_plainsman  = "Житель равнин Пиннат-Гелина"
-trp_i1_pinnath_plainsman_pl  = "Жители равнин Пиннат-Гелина"
-trp_c2_pinnath_rider  = "Всадник Пиннат-Гелина"
-trp_c2_pinnath_rider_pl  = "Всадники Пиннат-Гелина"
-trp_c3_pinnath_knight  = "Рыцарь Пиннат-Гелина"
-trp_c3_pinnath_knight_pl  = "Рыцари Пиннат-Гелина"
-trp_a2_pinnath_bowman  = "Стрелок Пиннат-Гелина"
-trp_a2_pinnath_bowman_pl  = "Стрелки Пиннат-Гелина"
-trp_a3_pinnath_archer  = "Лучник Пиннат-Гелина"
-trp_a3_pinnath_archer_pl  = "Лучники Пиннат-Гелина"
-trp_c6_pinnath_leader  = "Командир пиннат-гелинского отряда"
-trp_c6_pinnath_leader_pl  = "Командиры пиннат-гелинских отрядов"
-trp_a1_blackroot_hunter  = "Охотник из долины Чернокорня"
-trp_a1_blackroot_hunter_pl  = "Охотники из долины Чернокорня"
-trp_a2_blackroot_bowman  = "Стрелок из долины Чернокорня"
-trp_a2_blackroot_bowman_pl  = "Стрелки из долины Чернокорня"
-trp_a3_blackroot_archer  = "Лучник из долины Чернокорня"
-trp_a3_blackroot_archer_pl  = "Лучники из долины Чернокорня"
-trp_i2_blackroot_footman  = "Пехотинец из долины Чернокорня"
-trp_i2_blackroot_footman_pl  = "Пехотинцы из долины Чернокорня"
-trp_i3_blackroot_spearman  = "Копейщик из долины Чернокорня"
-trp_i3_blackroot_spearman_pl  = "Копейщики из долины Чернокорня"
-trp_a5_blackroot_shadow_hunter  = "Мортондский тёмный охотник"
-trp_a5_blackroot_shadow_hunter_pl  = "Мортондские тёмные охотники"
-trp_i1_amroth_recruit  = "Дол-амротский новобранец"
-trp_i1_amroth_recruit_pl  = "Дол-амротские новобранцы"
-trp_c2_amroth_squire  = "Оруженосец Дол-Амрота"
-trp_c2_amroth_squire_pl  = "Оруженосцы Дол-Амрота"
-trp_c3_amroth_vet_squire  = "Опытный оруженосец Дол-Амрота"
-trp_c3_amroth_vet_squire_pl  = "Опытные оруженосцы Дол-Амрота"
-trp_c4_amroth_knight  = "Рыцарь Дол-Амрота"
-trp_c4_amroth_knight_pl  = "Рыцари Дол-Амрота"
-trp_c5_amroth_vet_knight  = "Опытный рыцарь Дол-Амрота"
-trp_c5_amroth_vet_knight_pl  = "Опытный рыцари Дол-Амрота"
-trp_c6_amroth_swan_knight  = "Лебединый рыцарь Дол-Амрота"
-trp_c6_amroth_swan_knight_pl  = "Лебединые рыцари Дол-Амрота"
-trp_c6_amroth_leader  = "Командир дол-амротского отряда"
-trp_c6_amroth_leader_pl  = "Командиры дол-амротских отрядов"
-trp_a1_lorien_scout  = "Лориэнский разведчик"
-trp_a1_lorien_scout_pl  = "Лориэнские разведчики"
-trp_a2_lorien_warden  = "Лориэнский страж"
-trp_a2_lorien_warden_pl  = "Лориэнские стражи"
-trp_a3_lorien_vet_warden  = "Лориэнский опытный страж"
-trp_a3_lorien_vet_warden_pl  = "Лориэнские опытные стражи"
-trp_a4_lorien_gal_warden  = "Галадримский страж"
-trp_a4_lorien_gal_warden_pl  = "Галадримские стражи"
-trp_a5_lorien_gal_royal_warden  = "Королевский страж галадрим"
-trp_a5_lorien_gal_royal_warden_pl  = "Королевские стражи галадрим"
-trp_a6_lorien_grey_warden  = "Серый страж"
-trp_a6_lorien_grey_warden_pl  = "Серые стражи"
-trp_galadhrim_royal_marksman  = "Меткий стрелок галадрим"
-trp_galadhrim_royal_marksman_pl  = "Меткие стрелки галадрим"
-trp_noldorin_mounted_archer  = "Нолдорский конный лучник"
-trp_noldorin_mounted_archer_pl  = "Нолдорские конные лучники"
-trp_a2_lorien_archer  = "Лориэнский лучник"
-trp_a2_lorien_archer_pl  = "Лориэнские лучники"
-trp_a3_lorien_vet_archer  = "Лориэнский опытный лучник"
-trp_a3_lorien_vet_archer_pl  = "Лориэнские опытные лучники"
-trp_a4_lorien_gal_archer  = "Галадримский лучник"
-trp_a4_lorien_gal_archer_pl  = "Галадримские лучники"
-trp_a5_lorien_gal_royal_archer  = "Меткий стрелок галадрим"
-trp_a5_lorien_gal_royal_archer_pl  = "Меткие стрелки галадрим"
-trp_i3_lorien_inf  = "Лориэнские пешие воины"
-trp_i3_lorien_inf_pl  = "Лориэнские пешие воины"
-trp_i4_lorien_gal_inf  = "Галадримский пехотинец"
-trp_i4_lorien_gal_inf_pl  = "Галадримская пехота"
-trp_i5_lorien_gal_royal_inf  = "Галадримский королевский гвардеец"
-trp_i5_lorien_gal_royal_inf_pl  = "Галадримские королевские гвардейцы"
-trp_lothlorien_standard_bearer  = "Лориэнский Знаменосец"
-trp_lothlorien_standard_bearer_pl  = "Лориэнские Знаменосцы"
-trp_a1_greenwood_scout  = "Разведчик Зеленолесья"
-trp_a1_greenwood_scout_pl  = "Разведчики Зеленолесья"
-trp_a2_greenwood_veteran_scout  = "Опытный Разведчик Зеленолесья"
-trp_a2_greenwood_veteran_scout_pl  = "Опытные Разведчики Зеленолесья"
-trp_a3_greenwood_archer  = "Лучник Зеленолесья"
-trp_a3_greenwood_archer_pl  = "Лучники Зеленолесья"
-trp_a4_greenwood_veteran_archer  = "Опытный Лучник Зеленолесья"
-trp_a4_greenwood_veteran_archer_pl  = "Опытные Лучники Зеленолесья"
-trp_a5_greenwood_master_archer  = "Искусный Лучник Зеленолесья"
-trp_a5_greenwood_master_archer_pl  = "Искусные Лучники Зеленолесья"
-trp_a6_greenwood_chosen_marksman  = "Отборный Стрелок Трандуила"
-trp_a6_greenwood_chosen_marksman_pl  = "Отборные Стрелки Трандуила"
-trp_a3_greenwood_sentinel  = "Дозорный Зеленолесья"
-trp_a3_greenwood_sentinel_pl  = "Дозорные Зеленолесья"
-trp_a4_greenwood_vet_sentinel  = "Страж Зеленолесья"
-trp_a4_greenwood_vet_sentinel_pl  = "Стражи Зеленолесья"
-trp_a5_greenwood_vigilant  = "Хранитель Зеленолесья"
-trp_a5_greenwood_vigilant_pl  = "Хранители Зеленолесья"
-trp_i2_greenwood_infantry  = "Пехотинец Зеленолесья"
-trp_i2_greenwood_infantry_pl  = "Пехотинцы Зеленолесья"
-trp_i3_greenwood_vet_infantry  = "Опытный Пехотинец Зеленолесья"
-trp_i3_greenwood_vet_infantry_pl  = "Опытные Пехотинцы Зеленолесья"
-trp_i4_greenwood_elite_infantry  = "Гвардеец Зеленолесья"
-trp_i4_greenwood_elite_infantry_pl  = "Гвардейцы Зеленолесья"
-trp_i5_greenwood_chosen_shieldmaster  = "Отборный Щитоносец Трандуила"
-trp_i5_greenwood_chosen_shieldmaster_pl  = "Отборные Щитоносцы Трандуила"
-trp_i5_greenwood_chosen_spearmaster  = "Отборный Копьеносец Трандуила"
-trp_i5_greenwood_chosen_spearmaster_pl  = "Отборные Копьеносцы Трандуила"
-trp_i5_greenwood_standard_bearer  = "Знаменосец Зеленолесья"
-trp_i5_greenwood_standard_bearer_pl  = "Знаменосцы Зеленолесья"
-trp_a1_riv_scout  = "Ривендельский разведчик"
-trp_a1_riv_scout_pl  = "Ривендельские разведчики"
-trp_a2_riv_vet_scout  = "Ривендельский опытный разведчик"
-trp_a2_riv_vet_scout_pl  = "Ривендельские опытные разведчики"
-trp_a3_riv_archer  = "Ривендельский лучник"
-trp_a3_riv_archer_pl  = "Ривендельские лучники"
-trp_a4_riv_vet_archer  = "Ривендельский опытный лучник"
-trp_a4_riv_vet_archer_pl  = "Ривендельские опытные лучники"
-trp_a5_riv_master_archer  = "Ривендельский искусный лучник"
-trp_a5_riv_master_archer_pl  = "Ривендельские искусные лучники"
-trp_a6_riv_guardian  = "Страж Имладриса"
-trp_a6_riv_guardian_pl  = "Стражи Имладриса"
-trp_i3_riv_swordbearer  = "Ривендельский мечник"
-trp_i3_riv_swordbearer_pl  = "Ривендельские мечники"
-trp_i4_riv_vet_swordbearer  = "Ривендельский опытный мечник"
-trp_i4_riv_vet_swordbearer_pl  = "Ривендельские опытные мечники"
-trp_i5_riv_swordmaster  = "Ривендельский мастер меча"
-trp_i5_riv_swordmaster_pl  = "Искусные ривендельские мечники"
-trp_i6_riv_champion  = "Искусный Мечник Имладриса"
-trp_i6_riv_champion_pl  = "Искусные Мечники Имладриса"
-trp_ac5_riv_rider  = "Ривендельский всадник"
-trp_ac5_riv_rider_pl  = "Ривендельские всадники"
-trp_ac6_riv_knight  = "Герой Имладриса"
-trp_ac6_riv_knight_pl  = "Герои Имладриса"
-trp_i6_rivendell_standard_bearer  = "Ривендельский знаменосец"
-trp_i6_rivendell_standard_bearer_pl  = "Ривендельские знаменосцы"
-trp_a1_arnor_scout  = "Разведчик дунедайн"
-trp_a1_arnor_scout_pl  = "Разведчики дунедайн"
-trp_a2_arnor_vet_scout  = "Следопыт дунедайн"
-trp_a2_arnor_vet_scout_pl  = "Следопыты дунедайн"
-trp_i3_arnor_swordsman  = "Ратник Дунэдайн"
-trp_i3_arnor_swordsman_pl  = "Ратники Дунэдайн"
-trp_i4_arnor_vet_swordsman  = "Мечник Дунэдайн"
-trp_i4_arnor_vet_swordsman_pl  = "Мечники Дунэдайн"
-trp_i5_arnor_champion  = "Чемпион Арнора"
-trp_i5_arnor_champion_pl  = "Чемпионы Арнора"
-trp_c4_arnor_horseman  = "Дунедианский Всадник"
-trp_c4_arnor_horseman_pl  = "Всадник Дунэдайн"
-trp_c5_arnor_knight  = "Рыцарь Арнора"
-trp_c5_arnor_knight_pl  = "Рыцари Арнора"
-trp_a3_arnor_ranger  = "Рейнджер дунедайн"
-trp_a3_arnor_ranger_pl  = "Рейнджеры дунедайн"
-trp_a4_arnor_vet_ranger  = "Опытный рейнджер дунедайн"
-trp_a4_arnor_vet_ranger_pl  = "Опытные рейнджеры дунедайн"
-trp_a5_arnor_master_ranger  = "Арнорский Рейнджер"
-trp_a5_arnor_master_ranger_pl  = "Арнорские Рейнджеры"
-trp_i1_rohan_youth  = "Роханский молодой воин"
-trp_i1_rohan_youth_pl  = "Роханские молодые воины"
-trp_i2_guardsman_of_rohan  = "Роханский стражник"
-trp_i2_guardsman_of_rohan_pl  = "Роханские стражники"
-trp_i3_footman_of_rohan  = "Пехотинец Рохана"
-trp_i3_footman_of_rohan_pl  = "Пехотинцы Рохана"
-trp_i4_veteran_footman_of_rohan  = "Опытный пехотинец Рохана"
-trp_i4_veteran_footman_of_rohan_pl  = "Опытные пехотинцы Рохана"
-trp_i5_elite_footman_of_rohan  = "Отборный пехотинец Рохана"
-trp_i5_elite_footman_of_rohan_pl  = "Отборные пехотинцы Рохана"
-trp_i6_footman_guard_of_rohan  = "Роханский воин гвардии Фольквине"
-trp_i6_footman_guard_of_rohan_pl  = "Роханские воины гвардии Фольквине"
-trp_i6_frealaf_raider  = "Налётчик Фреалафа"
-trp_i6_frealaf_raider_pl  = "Налётчики Фреалафа"
-trp_i5_raider_of_rohan  = "Налётчик Рохана"
-trp_i5_raider_of_rohan_pl  = "Налётчики Рохана"
-trp_i6_warden_of_methuseld  = "Страж Медусельда"
-trp_i6_warden_of_methuseld_pl  = "Стражи Медусельда"
-trp_ac3_skirmisher_of_rohan  = "Застрельщик Рохана"
-trp_ac3_skirmisher_of_rohan_pl  = "Застрельщики Рохана"
-trp_ac4_veteran_skirmisher_of_rohan  = "Опытный застрельщик Рохана"
-trp_ac4_veteran_skirmisher_of_rohan_pl  = "Опытные застрельщики Рохана"
-trp_ac5_elite_skirmisher_of_rohan  = "Отборный застрельщик Рохана"
-trp_ac5_elite_skirmisher_of_rohan_pl  = "Отборные застрельщики Рохана"
-trp_ac6_skirmisher_guard_of_rohan  = "Роханский воин гвардии Тенгела"
-trp_ac6_skirmisher_guard_of_rohan_pl  = "Роханские воины гвардии Тенгела"
-trp_c4_lancer_of_rohan  = "Конный копейщик Рохана"
-trp_c4_lancer_of_rohan_pl  = "Конные копейщики Рохана"
-trp_c5_elite_lancer_of_rohan  = "Отборный конный копейщик Рохана"
-trp_c5_elite_lancer_of_rohan_pl  = "Отборные конные копейщики Рохана"
-trp_c6_lancer_guard_of_rohan  = "Роханский воин гвардии Брего"
-trp_c6_lancer_guard_of_rohan_pl  = "Роханские воины гвардии Брего"
-trp_c6_king_s_man_of_rohan  = "Королевский страж"
-trp_c6_king_s_man_of_rohan_pl  = "Королевские стражи"
-trp_c2_squire_of_rohan  = "Оруженосец Рохана"
-trp_c2_squire_of_rohan_pl  = "Оруженосцы Рохана"
-trp_c3_rider_of_rohan  = "Всадник Рохана"
-trp_c3_rider_of_rohan_pl  = "Всадники Рохана"
-trp_c4_veteran_rider_of_rohan  = "Опытный всадник Рохана"
-trp_c4_veteran_rider_of_rohan_pl  = "Опытные всадники Рохана"
-trp_c5_elite_rider_of_rohan  = "Отборный всадник Рохана"
-trp_c5_elite_rider_of_rohan_pl  = "Отборные всадники Рохана"
-trp_c6_rider_guard_of_rohan  = "Роханский воин гвардии Эорла"
-trp_c6_rider_guard_of_rohan_pl  = "Роханские воины гвардии Эорла"
-trp_i6_2h_guard_of_rohan  = "Страж Хельмовой Пади"
-trp_i6_2h_guard_of_rohan_pl  = "Стражи Хельмовой Пади"
-trp_dismounted_veteran_skirmisher_of_rohan  = "Опытный застрельщик Рохана"
-trp_dismounted_veteran_skirmisher_of_rohan_pl  = "Опытные застрельщики Рохана"
-trp_dismounted_elite_skirmisher_of_rohan  = "Отборный застрельщик Рохана"
-trp_dismounted_elite_skirmisher_of_rohan_pl  = "Отборные застрельщики Рохана"
-trp_dismounted_thengel_guard_of_rohan  = "Роханский воин гвардии Тенгела"
-trp_dismounted_thengel_guard_of_rohan_pl  = "Роханские воины гвардии Тенгела"
-trp_i1_harad_levy  = "Харадский новобранец"
-trp_i1_harad_levy_pl  = "Харадские новобранцы"
-trp_i3_harad_infantry  = "Харадский Легкий Пехотинец"
-trp_i3_harad_infantry_pl  = "Харадские Легкие Пехотинцы"
-trp_i4_harad_spearman  = "Харадский копейщик"
-trp_i4_harad_spearman_pl  = "Харадские копейщики"
-trp_i5_harad_tiger_guard  = "Воин тигриной гвардии"
-trp_i5_harad_tiger_guard_pl  = "Воины тигриной гвардии"
-trp_i4_harad_swordsman  = "Харадский мечник"
-trp_i4_harad_swordsman_pl  = "Харадские мечники"
-trp_i5_harad_lion_guard  = "Воин львиной гвардии"
-trp_i5_harad_lion_guard_pl  = "Воины львиной гвардии"
-trp_a3_harad_hunter  = "Харадский охотник"
-trp_a3_harad_hunter_pl  = "Харадские охотники"
-trp_a4_harad_archer  = "Харадский лучник"
-trp_a4_harad_archer_pl  = "Харадские лучники"
-trp_a5_harad_eagle_guard  = "Воин орлиной гвардии"
-trp_a5_harad_eagle_guard_pl  = "Воины орлиной гвардии"
-trp_c2_harondor_scout  = "Харондорский разведчик"
-trp_c2_harondor_scout_pl  = "Харондорские разведчики"
-trp_c3_harondor_rider  = "Харондорский всадник"
-trp_c3_harondor_rider_pl  = "Харондорские всадники"
-trp_c4_harondor_light_cavalry  = "Харондорский Легкий Всадник"
-trp_c4_harondor_light_cavalry_pl  = "Харондорские Легкие Всадники"
-trp_c5_harondor_serpent_knight  = "Рыцарь Золотой Змеи"
-trp_c5_harondor_serpent_knight_pl  = "Рыцари Золотой Змеи"
-trp_ac3_harondor_skirmisher  = "Харондорский застрельщик"
-trp_ac3_harondor_skirmisher_pl  = "Харондорские застрельщики"
-trp_ac4_harondor_horse_archer  = "Харондорский конный лучник"
-trp_ac4_harondor_horse_archer_pl  = "Харондорские конные лучники"
-trp_ac5_harondor_black_snake  = "Конный лучник Чёрной змеи"
-trp_ac5_harondor_black_snake_pl  = "Конные лучники Чёрной змеи"
-trp_i2_far_harad_tribesman  = "Выходец из племён Дальнего Харада"
-trp_i2_far_harad_tribesman_pl  = "Дальнехарадские воины племени"
-trp_i4_far_harad_champion  = "Дальнехарадский прославленный воин"
-trp_i4_far_harad_champion_pl  = "Дальнехарадские прославленные воины"
-trp_i5_far_harad_panther_guard  = "Воин гвардии пантеры"
-trp_i5_far_harad_panther_guard_pl  = "Воины гвардии пантеры"
-trp_i1_dun_wildman  = "Дунландский дикарь"
-trp_i1_dun_wildman_pl  = "Дунландские дикари"
-trp_i2_dun_warrior  = "Дунландский воин"
-trp_i2_dun_warrior_pl  = "Дунландские воины"
-trp_i3_dun_pikeman  = "Дунландский пикинёр"
-trp_i3_dun_pikeman_pl  = "Дунландские пикинёры"
-trp_i4_dun_vet_pikeman  = "Дунландский опытный пикинёр"
-trp_i4_dun_vet_pikeman_pl  = "Дунландские опытные пикинёры"
-trp_ac4_dun_crebain_rider  = "Дунландский вороний всадник"
-trp_ac4_dun_crebain_rider_pl  = "Дунландские вороньи всадники"
-trp_i3_dun_vet_warrior  = "Дунландский воин-ветеран"
-trp_i3_dun_vet_warrior_pl  = "Дунландские воины-ветераны"
-trp_i4_dun_wolf_warrior  = "Дунландский волчий воин"
-trp_i4_dun_wolf_warrior_pl  = "Дунландские волчьи воины"
-trp_i5_dun_wolf_guard  = "Дунландский волчий страж"
-trp_i5_dun_wolf_guard_pl  = "Дунландские волчьи стражи"
-trp_ac5_dun_raven_rider  = "Дунландский Ночной Ворон"
-trp_ac5_dun_raven_rider_pl  = "Дунландские Ночные Вороны"
-trp_i1_khand_bondsman  = "Хандский Слуга"
-trp_i1_khand_bondsman_pl  = "Хандские Слуги"
-trp_i2_khand_pit_dog  = "Хандский Боец Ямы"
-trp_i2_khand_pit_dog_pl  = "Хандские Бойцы Ямы"
-trp_i3_khand_warrior  = "Хандский Воин"
-trp_i3_khand_warrior_pl  = "Хандские Войны"
-trp_i4_khand_vet_warrior  = "Хандский Опытный Воин"
-trp_i4_khand_vet_warrior_pl  = "Хандские Опытные Воины"
-trp_i5_khand_war_master  = "Варьягский Мастер Клинка"
-trp_i5_khand_war_master_pl  = "Варьягские Мастера Клинка"
-trp_c2_khand_pony_rider  = "Хандский Всадник на Пони"
-trp_c2_khand_pony_rider_pl  = "Хандские Всадники на Пони"
-trp_c3_khand_horseman  = "Хандский Всадник"
-trp_c3_khand_horseman_pl  = "Хандские Всадники"
-trp_c4_khand_heavy_horseman  = "Хандский Тяжелый Всадник"
-trp_c4_khand_heavy_horseman_pl  = "Хандские Тяжелые Всадники"
-trp_c5_khand_kataphrakt  = "Варьягский Катафракт"
-trp_c5_khand_kataphrakt_pl  = "Варьягские Катафракты"
-trp_c5_khand_lance_kataphrakt  = "Варьягский Улан"
-trp_c5_khand_lance_kataphrakt_pl  = "Варьягские Уланы"
-trp_i4_khand_halberdier  = "Хандский Копьеносец"
-trp_i4_khand_halberdier_pl  = "Хандские Копьеносцы"
-trp_i5_khand_halberd_master  = "Варьягский Рассекатель"
-trp_i5_khand_halberd_master_pl  = "Варьягские Рассекатели"
-trp_i3_khand_pitfighter  = "Боец Ямы Ханд"
-trp_i3_khand_pitfighter_pl  = "Боецы Ямы Ханд"
-trp_i4_khand_pit_champion  = "Хандский Победитель Ямы"
-trp_i4_khand_pit_champion_pl  = "Хандские Победители Ямы"
-trp_i5_khand_pit_master  = "Варьягский Жаждущий Крови"
-trp_i5_khand_pit_master_pl  = "Варьягские Жаждущие Крови"
-trp_ac3_khand_skirmisher  = "Хандский Метатель"
-trp_ac3_khand_skirmisher_pl  = "Хандские Метатели"
-trp_ac4_khand_vet_skirmisher  = "Хандский Застрельщик-Ветеран"
-trp_ac4_khand_vet_skirmisher_pl  = "Хандские Застрельщики-Ветераны"
-trp_ac5_khand_heavy_skirmisher  = "Тяжёлый варьягский застрельщик"
-trp_ac5_khand_heavy_skirmisher_pl  = "Тяжёлые варьягские застрельщики"
-trp_i1_corsair_youth  = "Умбарский моряк"
-trp_i1_corsair_youth_pl  = "Умбарские моряки"
-trp_i2_corsair_warrior  = "Умбарский воин"
-trp_i2_corsair_warrior_pl  = "Умбарские воины"
-trp_i3_corsair_spearman  = "Умбарский копейщик"
-trp_i3_corsair_spearman_pl  = "Умбарский копейщик"
-trp_i4_corsair_raider  = "Морской налётчик"
-trp_i4_corsair_raider_pl  = "Морские налётчики"
-trp_i5_corsair_night_raider  = "Корсарский ночной налётчик"
-trp_i5_corsair_night_raider_pl  = "Корсарские ночные налётчики"
-trp_a2_corsair_marine  = "Умбарский морской пехотинец"
-trp_a2_corsair_marine_pl  = "Умбарская морская пехота"
-trp_a3_corsair_marksman  = "Умбарский стрелок"
-trp_a3_corsair_marksman_pl  = "Умбарские стрелки"
-trp_a4_corsair_veteran_marksman  = "Умбарский лучник-ветеран"
-trp_a4_corsair_veteran_marksman_pl  = "Умбарские лучники-ветераны"
-trp_a5_corsair_master_marksman  = "Искусный корсар-лучник"
-trp_a5_corsair_master_marksman_pl  = "Искусные корсары-лучники"
-trp_i3_corsair_swordsman  = "Мечник Умбара"
-trp_i3_corsair_swordsman_pl  = "Мечники Умбара"
-trp_i4_corsair_veteran_swordsman  = "Опытный мечник Умбара"
-trp_i4_corsair_veteran_swordsman_pl  = "Опытные мечники Умбара"
-trp_i5_corsair_master_swordsman  = "Искусный корсар-мечник"
-trp_i5_corsair_master_swordsman_pl  = "Искусные корсары-мечники"
-trp_a4_corsair_assassin  = "Корсар-убийца"
-trp_a4_corsair_assassin_pl  = "Корсары-убийцы"
-trp_a5_corsair_master_assassin  = "Корсар-убийца"
-trp_a5_corsair_master_assassin_pl  = "Корсары-убийцы"
-trp_i4_corsair_veteran_spearman  = "Умбарский копейщик-ветеран"
-trp_i4_corsair_veteran_spearman_pl  = "Умбарский копейщик-ветеран"
-trp_i5_corsair_master_spearman  = "Умбарский мастер копья"
-trp_i5_corsair_master_spearman_pl  = "Умбарские мастера копья"
-trp_i5_corsair_master_pikeman  = "Умбарский мастер пики"
-trp_i5_corsair_master_pikeman_pl  = "Умбарские мастера пики"
-trp_i1_isen_orc_snaga  = "Орк-снага Изенгарда"
-trp_i1_isen_orc_snaga_pl  = "Орки-снаги Изенгарда"
-trp_i2_isen_orc  = "Орк Изенгарда"
-trp_i2_isen_orc_pl  = "Орки Изенгарда"
-trp_i3_isen_large_orc  = "Крупный орк Изенгарда"
-trp_i3_isen_large_orc_pl  = "Крупные орки Изенгарда"
-trp_i4_isen_fell_orc  = "Свирепый орк Изенгарда"
-trp_i4_isen_fell_orc_pl  = "Свирепые орки Изенгарда"
-trp_i3_isen_large_orc_despoiler  = "Крупный орк-мародёр"
-trp_i3_isen_large_orc_despoiler_pl  = "Крупные орки-мародёры"
-trp_i4_isen_fell_orc_despoiler  = "Свирепый орк-мародёр"
-trp_i4_isen_fell_orc_despoiler_pl  = "Свирепые орки-мародёры"
-trp_ac2_isen_wolf_rider  = "Волчий всадник Изенгарда"
-trp_ac2_isen_wolf_rider_pl  = "Волчьи всадники Изенгарда"
-trp_ac3_isen_warg_rider  = "Изенгардский всадник на варге"
-trp_ac3_isen_warg_rider_pl  = "Изенгардские всадники на варгах"
-trp_ac4_isen_white_hand_rider  = "Всадник Белой Длани"
-trp_ac4_isen_white_hand_rider_pl  = "Всадники Белой Длани"
-trp_warg_ghost_1b  = "Варг"
-trp_warg_ghost_1b_pl  = "Варги"
-trp_warg_ghost_1c  = "Варг"
-trp_warg_ghost_1c_pl  = "Варги"
-trp_warg_ghost_1d  = "Варг"
-trp_warg_ghost_1d_pl  = "Варги"
-trp_warg_ghost_a1b  = "Варг"
-trp_warg_ghost_a1b_pl  = "Варги"
-trp_warg_ghost_a1c  = "Варг в броне"
-trp_warg_ghost_a1c_pl  = "Варги в броне"
-trp_warg_ghost_a2b  = "Варг в броне"
-trp_warg_ghost_a2b_pl  = "Варги в броне"
-trp_warg_ghost_a2c  = "Варг в броне"
-trp_warg_ghost_a2c_pl  = "Варги в броне"
-trp_warg_ghost_a3a  = "Варг в броне"
-trp_warg_ghost_a3a_pl  = "Варги в броне"
-trp_warg_ghost_h  = "Крупный варг"
-trp_warg_ghost_h_pl  = "Крупные варги"
-trp_a2_isen_uruk_tracker  = "Следопыт урук-хай"
-trp_a2_isen_uruk_tracker_pl  = "Следопыты урук-хай"
-trp_a3_isen_large_uruk_tracker  = "Крупный следопыт урук-хай"
-trp_a3_isen_large_uruk_tracker_pl  = "Крупные следопыты урук-хай"
-trp_a4_isen_fighting_uruk_tracker  = "Бойцовый следопыт урук-хай"
-trp_a4_isen_fighting_uruk_tracker_pl  = "Бойцовые следопыты урук-хай"
-trp_i6_isen_uruk_berserker  = "Бойцовый берсерк урук-хай"
-trp_i6_isen_uruk_berserker_pl  = "Бойцовые берсерки урук-хай"
-trp_i1_isen_uruk_snaga  = "Новорожденный урук-хай"
-trp_i1_isen_uruk_snaga_pl  = "Новорожденные урук-хай"
-trp_i2_isen_uruk  = "Урук-хай Изенгарда"
-trp_i2_isen_uruk_pl  = "Урук-хай Изенгарда"
-trp_i3_isen_large_uruk  = "Крупные урук-хай Изенгарда"
-trp_i3_isen_large_uruk_pl  = "Крупные урук-хай Изенгарда"
-trp_i4_isen_fighting_uruk_warrior  = "Бойцовый воин урук-хай"
-trp_i4_isen_fighting_uruk_warrior_pl  = "Бойцовые воины урук-хай"
-trp_i5_isen_fighting_uruk_champion  = "Непобедимый бойцовый урук-хай"
-trp_i5_isen_fighting_uruk_champion_pl  = "Непобедимые бойцовые урук-хай"
-trp_i3_isen_uruk_pikeman  = "Пикинёр урук-хай"
-trp_i3_isen_uruk_pikeman_pl  = "Пикинёры урук-хай"
-trp_i4_isen_fighting_uruk_pikeman  = "Бойцовый пикинёр урук-хай"
-trp_i4_isen_fighting_uruk_pikeman_pl  = "Бойцовые пикинёры урук-хай"
-trp_i5_isen_uruk_standard_bearer  = "Знаменосец урук-хай"
-trp_i5_isen_uruk_standard_bearer_pl  = "Знаменосцы урук-хай"
-trp_i1_mordor_uruk_snaga  = "Мордорский урук снага"
-trp_i1_mordor_uruk_snaga_pl  = "Уруки-снаги Мордора"
-trp_i2_mordor_uruk  = "Мордорский урук"
-trp_i2_mordor_uruk_pl  = "Мордорские уруки"
-trp_i3_mordor_large_uruk  = "Мордорский крупный урук"
-trp_i3_mordor_large_uruk_pl  = "Мордорские крупные уруки"
-trp_i4_mordor_fell_uruk  = "Мордорский урук-рубака"
-trp_i4_mordor_fell_uruk_pl  = "Мордорские уруки-рубаки"
-trp_i3_mordor_uruk_slayer  = "Мордорский урук-убийца"
-trp_i3_mordor_uruk_slayer_pl  = "Мордорские уруки-убийцы"
-trp_i4_mordor_fell_uruk_slayer  = "Смертоносный урук Мордора"
-trp_i4_mordor_fell_uruk_slayer_pl  = "Смертоносные уруки Мордора"
-trp_i5_mordor_black_uruk  = "Чёрный урук Барад-Дура"
-trp_i5_mordor_black_uruk_pl  = "Чёрные уруки Барад-Дура"
-trp_i5_mordor_uruk_standard_bearer  = "Мордорский знаменосец"
-trp_i5_mordor_uruk_standard_bearer_pl  = "Мордорские знаменосцы"
-trp_troll_of_moria  = "Пещерный Тролль"
-trp_troll_of_moria_pl  = "Пещерные Тролли"
-trp_armoured_troll  = "Тролль в доспехах"
-trp_armoured_troll_pl  = "Тролли в доспехах"
-trp_olog_hai  = "Мордорский олог-хай"
-trp_olog_hai_pl  = "Мордорские олог-хай"
-trp_ent  = "Энт"
-trp_ent_pl  = "Энты"
-trp_i1_guldur_orc_snaga  = "Орк Снага из Дол Гулдура"
-trp_i1_guldur_orc_snaga_pl  = "Орки Снаги из Дол Гулдура"
-trp_a2_guldur_orc_tracker  = "Орк следопыт из Дол Гулдура"
-trp_a2_guldur_orc_tracker_pl  = "Орки следопыты из Дол Гулдура"
-trp_i1_mordor_orc_snaga  = "Мордорский орк снага"
-trp_i1_mordor_orc_snaga_pl  = "Орки-снаги Мордора"
-trp_i2_mordor_orc  = "Мордорский орк"
-trp_i2_mordor_orc_pl  = "Мордорские орки"
-trp_i3_mordor_large_orc  = "Крупный мордорский орк"
-trp_i3_mordor_large_orc_pl  = "Крупные мордорские орки"
-trp_i4_mordor_fell_orc  = "Мордорский орк-рубака"
-trp_i4_mordor_fell_orc_pl  = "Мордорские орки-рубаки"
-trp_c3_mordor_warg_rider  = "Волчий всадник Горгорота"
-trp_c3_mordor_warg_rider_pl  = "Волчьи всадники Горгорота"
-trp_c4_mordor_great_warg_rider  = "Удунский всадник на варге"
-trp_c4_mordor_great_warg_rider_pl  = "Удунские всадники на варгах"
-trp_i2_mordor_morgul_orc  = "Орк из Минас Моргула"
-trp_i2_mordor_morgul_orc_pl  = "Орки из Минас Моргула"
-trp_i4_mordor_fell_morgul_orc  = "Свирепый Орк из Минас Моргула"
-trp_i4_mordor_fell_morgul_orc_pl  = "Свирепые Орки из Минас Моргула"
-trp_a3_guldur_large_orc_tracker  = "Большой Орк Следопыт из Дол Гулдура"
-trp_a3_guldur_large_orc_tracker_pl  = "Большие Орки Следопыты из Дол Гулдура"
-trp_a4_guldur_fell_orc_tracker  = "Свирепый Орк Следопыт из Дол Гулдура "
-trp_a4_guldur_fell_orc_tracker_pl  = "Свирепые Орки Следопыты из Дол Гулдура"
-trp_a2_mordor_orc_archer  = "Мордорский орк-лучник"
-trp_a2_mordor_orc_archer_pl  = "Мордорские орки-лучники"
-trp_a3_mordor_large_orc_archer  = "Крупный орк-лучник Мордора"
-trp_a3_mordor_large_orc_archer_pl  = "Крупные орки-лучники Мордора"
-trp_a4_mordor_fell_orc_archer  = "Свирепый орк-лучник Мордора"
-trp_a4_mordor_fell_orc_archer_pl  = "Свирепые орки-лучники Мордора"
-trp_c3_moria_wolf_rider  = "Волчий всадник Мории"
-trp_c3_moria_wolf_rider_pl  = "Волчьи всадники Мории"
-trp_c4_moria_warg_rider  = "Морийский всадник на варге"
-trp_c4_moria_warg_rider_pl  = "Морийские всадники на варгах"
-trp_c5_moria_clan_rider  = "Всадник из клана Болга"
-trp_c5_moria_clan_rider_pl  = "Всадники из клана Болга"
-trp_i1_moria_snaga  = "Снага Мории"
-trp_i1_moria_snaga_pl  = "Снаги Мории"
-trp_i2_moria_goblin  = "Гоблин Мории"
-trp_i2_moria_goblin_pl  = "Гоблины Мории"
-trp_i3_moria_large_goblin  = "Крупный гоблин Мории"
-trp_i3_moria_large_goblin_pl  = "Крупные гоблины Мории"
-trp_i4_moria_fell_goblin  = "Свирепый гоблин Мории"
-trp_i4_moria_fell_goblin_pl  = "Свирепые гоблины Мории"
-trp_a2_moria_goblin_archer  = "Гоблин-лучник Мории"
-trp_a2_moria_goblin_archer_pl  = "Гоблины-лучники Мории"
-trp_a3_moria_large_goblin_archer  = "Крупный гоблин-лучник Мории"
-trp_a3_moria_large_goblin_archer_pl  = "Крупные гоблины-лучники Мории"
-trp_a4_moria_fell_goblin_archer  = "Свирепый гоблин-лучник Мории"
-trp_a4_moria_fell_goblin_archer_pl  = "Свирепые гоблины-лучники Мории"
-trp_i1_gunda_goblin  = "Гундабадский гоблин"
-trp_i1_gunda_goblin_pl  = "Гундабадские гоблины"
-trp_i2_gunda_orc  = "Гундабадский орк"
-trp_i2_gunda_orc_pl  = "Гундабадские орки"
-trp_i3_gunda_orc_fighter  = "Гундабадский орк-боец"
-trp_i3_gunda_orc_fighter_pl  = "Гундабадские орки-бойцы"
-trp_i4_gunda_orc_warrior  = "Гундабадский орк-воин"
-trp_i4_gunda_orc_warrior_pl  = "Гундабадские орки-воины"
-trp_i4_gunda_orc_berserker  = "Гундабадский орк-берсерк"
-trp_i4_gunda_orc_berserker_pl  = "Гундабадские орки-берсерки"
-trp_ca4_gunda_skirmisher  = "Гундабадский лучник"
-trp_ca4_gunda_skirmisher_pl  = "Гундабадские лучники"
-trp_ca5_gunda_clan_skirmisher  = "Гоблин-лучник Северного Клана"
-trp_ca5_gunda_clan_skirmisher_pl  = "Гоблины-лучники Северного Клана"
-trp_c3_gunda_goblin_rider  = "Гундабадский гоблин-всадник"
-trp_c3_gunda_goblin_rider_pl  = "Гундабадские гоблины-всадники"
-trp_c4_gunda_warg_rider  = "Гундабадский волчий всадник"
-trp_c4_gunda_warg_rider_pl  = "Гундабадские волчьи всадники"
-trp_c5_gunda_clan_rider  = "Гоблин-всадник из северного клана"
-trp_c5_gunda_clan_rider_pl  = "Гоблины-всадники из северных кланов"
-trp_mountain_goblin2  = "Горный гоблин"
-trp_mountain_goblin2_pl  = "Горные гоблины"
-trp_tribal_orc2  = "Дикий орк"
-trp_tribal_orc2_pl  = "Дикие орки"
-trp_tribal_orc_warrior2  = "Дикий орк-воин"
-trp_tribal_orc_warrior2_pl  = "Дикие орки-воины"
-trp_i5_gunda_orc_champion  = "Гундабадский Орк Чемпион"
-trp_i5_gunda_orc_champion_pl  = "Гундабадские Орки Чемпионы"
-trp_i2_mordor_num_renegade  = "Чёрный нуменорец"
-trp_i2_mordor_num_renegade_pl  = "Чёрные нуменорцы"
-trp_i3_mordor_num_warrior  = "Чёрный нуменорец-воин"
-trp_i3_mordor_num_warrior_pl  = "Чёрные нуменорцы-воины"
-trp_i4_mordor_num_vet_warrior  = "Чёрный нуменорец-ветеран"
-trp_i4_mordor_num_vet_warrior_pl  = "Чёрные нуменорцы-ветераны"
-trp_i5_mordor_num_champion  = "Непобедимый чёрный нуменорец"
-trp_i5_mordor_num_champion_pl  = "Непобедимые чёрные нуменорцы"
-trp_i5_mordor_num_assassin  = "Чёрный нуменорец-убийца"
-trp_i5_mordor_num_assassin_pl  = "Чёрные нуменорцы-убийцы"
-trp_c4_mordor_num_horseman  = "Чёрный нуменорец-всадник"
-trp_c4_mordor_num_horseman_pl  = "Чёрные нуменорцы-всадники"
-trp_c5_mordor_num_knight  = "Отборный чёрный нуменорец-всадник"
-trp_c5_mordor_num_knight_pl  = "Отборные чёрные нуменорцы-всадники"
-trp_noldorin_commander  = "Нолдорский командир"
-trp_noldorin_commander_pl  = "Нолдорские командиры"
-trp_elf_captain_of_lothlorien  = "Командир отряда Лотлориэна"
-trp_elf_captain_of_lothlorien_pl  = "Командиры отрядов Лотлориэна"
-trp_lothlorien_lieutenant  = "Лориэнский сотник"
-trp_lothlorien_lieutenant_pl  = "Лориэнские сотники"
-trp_elf_captain_of_mirkwood  = "Полководец Зеленолесья"
-trp_elf_captain_of_mirkwood_pl  = "Полководцы Зеленолесья"
-trp_mirkwood_lieutenant  = "Темнолесский Сотник"
-trp_mirkwood_lieutenant_pl  = "Темнолесские Сотники"
-trp_elf_captain_of_rivendell  = "Полководец Ривенделла"
-trp_elf_captain_of_rivendell_pl  = "Полководцы Ривенделла"
-trp_rivendell_lieutenant  = "Ривендельский сотник"
-trp_rivendell_lieutenant_pl  = "Ривендельские сотники"
-trp_lieutenant_of_rohan  = "Сотник Рохана"
-trp_lieutenant_of_rohan_pl  = "Сотники Рохана"
-trp_captain_of_rohan  = "Полководец Рохана"
-trp_captain_of_rohan_pl  = "Полководцы Рохана"
-trp_high_captain_of_rohan  = "Воевода Рохана"
-trp_high_captain_of_rohan_pl  = "Воеводы Рохана"
-trp_lieutenant_of_isengard  = "Сотник Изенгарда"
-trp_lieutenant_of_isengard_pl  = "Сотники Изенгарда"
-trp_captain_of_isengard  = "Полководец Изенгарда"
-trp_captain_of_isengard_pl  = "Полководцы Изенгарда"
-trp_high_captain_of_isengard  = "Воевода Изенгарда"
-trp_high_captain_of_isengard_pl  = "Воеводы Изенгарда"
-trp_lieutenant_of_mordor  = "Сотник Мордора"
-trp_lieutenant_of_mordor_pl  = "Сотники Мордора"
-trp_captain_of_mordor  = "Полководец Мордора"
-trp_captain_of_mordor_pl  = "Полководцы Мордора"
-trp_high_captain_of_mordor  = "Воевода Мордора"
-trp_high_captain_of_mordor_pl  = "Воеводы Мордора"
-trp_easterling_chieftain  = "Варьягский вождь"
-trp_easterling_chieftain_pl  = "Варьягские вожди"
-trp_easterling_lieutenant  = "Варьягский жрец войны"
-trp_easterling_lieutenant_pl  = "Варьягские жрецы войны"
-trp_harad_chieftain  = "Харадский вождь"
-trp_harad_chieftain_pl  = "Харадские вожди"
-trp_harad_lieutenant  = "Харадский сотник"
-trp_harad_lieutenant_pl  = "Харадские сотники"
-trp_black_numenorean_captain  = "Чёрный нуменорец-полководец"
-trp_black_numenorean_captain_pl  = "Чёрные нуменорцы-полководец"
-trp_black_numenorean_lieutenant  = "Чёрный нуменорец-сотник"
-trp_black_numenorean_lieutenant_pl  = "Чёрный нуменорецы-сотники"
-trp_a5_dun_night_wolf  = "Дунландский ночной волк"
-trp_a5_dun_night_wolf_pl  = "Дунландские ночные волки"
-trp_dunnish_lieutenant  = "Дунландский верховный вождь"
-trp_dunnish_lieutenant_pl  = "Дунландские верховные вожди"
-trp_goblin_chieftain  = "Гоблинский вождь"
-trp_goblin_chieftain_pl  = "Гоблинские вожди"
-trp_captain_of_gondor  = "Полководец Гондора"
-trp_captain_of_gondor_pl  = "Гондорские полководцы"
-trp_nobleman  = "Знатный человек"
-trp_nobleman_pl  = "Знатные люди"
-trp_gondor_agent  = "Гондорский шпион"
-trp_gondor_agent_pl  = "Гондорские шпионы"
-trp_rohan_agent  = "Роханский шпион"
-trp_rohan_agent_pl  = "Роханские шпионы"
-trp_mordor_agent  = "Мордорский шпион"
-trp_mordor_agent_pl  = "Мордорские шпионы"
-trp_isengard_agent  = "Изенгардский шпион"
-trp_isengard_agent_pl  = "Изенгардские шпионы"
-trp_looter  = "Грабитель"
-trp_looter_pl  = "Грабители"
-trp_bandit  = "Бандит"
-trp_bandit_pl  = "Бандиты"
-trp_brigand  = "Разбойник"
-trp_brigand_pl  = "Бандиты"
-trp_mountain_bandit  = "Горный разбойник"
-trp_mountain_bandit_pl  = "Горные разбойники"
-trp_forest_bandit  = "Лесной разбойник"
-trp_forest_bandit_pl  = "Лесные разбойники"
-trp_sea_raider  = "Морской налётчик"
-trp_sea_raider_pl  = "Морские налётчики"
-trp_steppe_bandit  = "Степной разбойник"
-trp_steppe_bandit_pl  = "Степные разбойники"
-trp_manhunter  = "Охотник за головами"
-trp_manhunter_pl  = "Охотники за головами"
-trp_kidnapped_girl  = "Похищенная девушка"
-trp_kidnapped_girl_pl  = "Похищенные девушки"
-trp_refugee  = "Беженец"
-trp_refugee_pl  = "Беженцы"
-trp_peasant_woman  = "Крестьянка"
-trp_peasant_woman_pl  = "Крестьянки"
-trp_caravan_master  = "Хозяин каравана"
-trp_caravan_master_pl  = "Хозяева караванов"
-trp_caravan_guard  = "Охрана каравана"
-trp_caravan_guard_pl  = "Охрана каравана"
-trp_messenger_man  = "Гонец"
-trp_messenger_man_pl  = "Гонцы"
-trp_messenger_elf  = "Гонец"
-trp_messenger_elf_pl  = "Гонцы"
-trp_messenger_dwarf  = "Гонец"
-trp_messenger_dwarf_pl  = "Гонцы"
-trp_messenger_orc  = "Гонец"
-trp_messenger_orc_pl  = "Гонцы"
-trp_messenger_evil_man  = "Гонец"
-trp_messenger_evil_man_pl  = "Гонцы"
-trp_town_walker_1  = "Горожанин"
-trp_town_walker_1_pl  = "Горожане"
-trp_town_walker_2  = "Горожанка"
-trp_town_walker_2_pl  = "Горожане"
-trp_village_walker_1  = "Крестьянин"
-trp_village_walker_1_pl  = "Крестьяне"
-trp_village_walker_2  = "Крестьянин"
-trp_village_walker_2_pl  = "Крестьяне"
-trp_spy_walker_1  = "Горожанин"
-trp_spy_walker_1_pl  = "Горожане"
-trp_spy_walker_2  = "Горожанка"
-trp_spy_walker_2_pl  = "Горожанки"
-trp_walker_man_gondor_black  = "Горожанин"
-trp_walker_man_gondor_white  = "Горожанин"
-trp_walker_man_gondor_blue  = "Горожанин"
-trp_walker_man_gondor_green  = "Горожанин"
-trp_walker_man_rohan_t  = "Роханский горожанин"
-trp_walker_man_rohan_d  = "Роханский горожанин"
-trp_walker_woman_rohan_t  = "Роханская девушка"
-trp_walker_woman_rohan_d  = "Роханская девушка"
-trp_walker_woman_gondor_b  = "Гондорская женщина"
-trp_walker_woman_gondor_bw  = "Гондорская женщина"
-trp_walker_woman_gondor_w  = "Знатный гондорец"
-trp_ramun_the_slave_trader  = "Рамун-работорговец"
-trp_guide  = "Быстрый Джимми"
-trp_galeas  = "Галеас"
-trp_farmer_from_bandit_village  = "Крестьянин"
-trp_farmer_from_bandit_village_pl  = "Крестьяне"
-trp_trainer_1  = "Наставник"
-trp_trainer_2  = "Наставник"
-trp_trainer_3  = "Наставник"
-trp_trainer_4  = "Наставник"
-trp_trainer_gondor  = "Наставник"
-trp_trainer_rohan  = "Наставник"
-trp_trainer_dale  = "Наставник"
-trp_trainer_elf  = "Наставник"
-trp_trainer_beorn  = "Наставник"
-trp_trainer_dwarf  = "Наставник"
-trp_trainer_mordor  = "Наставник"
-trp_trainer_isengard  = "Наставник"
-trp_trainer_khand  = "Наставник"
-trp_trainer_rhun  = "Наставник"
-trp_trainer_harad  = "Наставник"
-trp_trainer_umbar  = "Наставник"
-trp_ransom_broker_1  = "Перекупщик пленных"
-trp_ransom_broker_2  = "Перекупщик пленных"
-trp_ransom_broker_3  = "Перекупщик пленных"
-trp_ransom_broker_4  = "Перекупщик пленных"
-trp_ransom_broker_5  = "Перекупщик пленных"
-trp_ransom_broker_6  = "Перекупщик пленных"
-trp_ransom_broker_7  = "Перекупщик пленных"
-trp_ransom_broker_8  = "Перекупщик пленных"
-trp_ransom_broker_9  = "Перекупщик пленных"
-trp_ransom_broker_10  = "Перекупщик пленных"
-trp_tavern_traveler_1  = "Путник"
-trp_tavern_traveler_2  = "Путник"
-trp_tavern_traveler_3  = "Путник"
-trp_tavern_traveler_4  = "Путник"
-trp_tavern_traveler_5  = "Путник"
-trp_tavern_traveler_6  = "Путник"
-trp_tavern_traveler_7  = "Путник"
-trp_tavern_traveler_8  = "Путник"
-trp_tavern_traveler_9  = "Путник"
-trp_tavern_traveler_10  = "Путник"
-trp_tavern_minstrel_1  = "Менестрель"
-trp_npc1  = "Маблунг"
-trp_npc2  = "Кирдиль"
-trp_npc3  = "Улфас"
-trp_npc4  = "Гальмюне"
-trp_npc5  = "Глорфиндель"
-trp_npc6  = "Луэванна"
-trp_npc7  = "Кили Златопалый"
-trp_npc8  = "Фаниул"
-trp_npc9  = "Гулм"
-trp_npc10  = "Дургаш"
-trp_npc11  = "Уфтак"
-trp_npc12  = "Горбаг"
-trp_npc13  = "Ликьяд"
-trp_npc14  = "Фулдимир"
-trp_npc15  = "Болзог"
-trp_npc16  = "Варфанг"
-trp_npc17  = "Димборн"
-trp_knight_6_2  = "Голасгиль"
-trp_gondor_lord  = "Наместник Денетор"
-trp_gondor_lord_pl  = "Наместник"
-trp_rohan_lord  = "Король Теоден"
-trp_rohan_lord_pl  = "Король"
-trp_isengard_lord  = "Саруман"
-trp_isengard_lord_pl  = "Повелитель"
-trp_mordor_lord  = "Уста Саурона"
-trp_mordor_lord_pl  = "Сатрап"
-trp_harad_lord  = "Вождь Ул-Улкари"
-trp_harad_lord_pl  = "Вождь"
-trp_rhun_lord  = "Ярл Хелькарот"
-trp_rhun_lord_pl  = "Ярл"
-trp_khand_lord  = "Шибх Крукмахур"
-trp_khand_lord_pl  = "Шибх"
-trp_umbar_lord  = "Флотоводец Тулмир"
-trp_umbar_lord_pl  = "Флотоводцы"
-trp_lorien_lord  = "Владычица Галадриэль"
-trp_lorien_lord_pl  = "Владычица"
-trp_imladris_lord  = "Владыка Эльронд"
-trp_imladris_lord_pl  = "Владыка"
-trp_woodelf_lord  = "Король Трандуил"
-trp_woodelf_lord_pl  = "Король"
-trp_moria_lord  = "Господин Болг Младший"
-trp_moria_lord_pl  = "Господин"
-trp_guldur_lord  = "Господин Фуинур"
-trp_guldur_lord_pl  = "Господин"
-trp_gundabad_lord  = "Господин Бурза Круал"
-trp_gundabad_lord_pl  = "Господин"
-trp_dale_lord  = "Король Бранд"
-trp_dale_lord_pl  = "Король"
-trp_dwarf_lord  = "Король Даин II Железностоп"
-trp_dwarf_lord_pl  = "Король"
-trp_dunland_lord  = "Вождь Даэглаф Чёрный"
-trp_dunland_lord_pl  = "Вождь"
-trp_beorn_lord  = "Вождь Гримбеорн Старый"
-trp_beorn_lord_pl  = "Вождь"
-trp_lorien_marshall  = "Келеборн"
-trp_pippin_notmet  = "полурослик"
-trp_merry_notmet  = "полурослик"
-trp_pippin  = "Пиппин"
-trp_merry  = "Мерри"
-trp_knight_1_1  = "Ангбор Бесстрашный"
-trp_knight_1_2  = "Хранитель ключей Хурин"
-trp_knight_1_3  = "Князь Имрахиль"
-trp_knight_1_4  = "Орталион"
-trp_knight_1_5  = "Дуинхир"
-trp_knight_1_6  = "Хирлуин Прекрасный"
-trp_knight_1_7  = "Фарамир"
-trp_knight_1_8  = "Форлонг Толстый"
-trp_knight_1_9  = "Гримбольд"
-trp_knight_1_10  = "Эркенбранд"
-trp_knight_1_11  = "Эльфхельм"
-trp_knight_1_12  = "Хама"
-trp_knight_1_13  = "Гамлинг"
-trp_knight_1_14  = "Эомер"
-trp_knight_1_15  = "Углук"
-trp_knight_1_16  = "Маухур"
-trp_knight_1_17  = "Мог Семипалый"
-trp_knight_1_18  = "Хушнак Длинноногий"
-trp_knight_1_19  = "Гридаш Древогрыз"
-trp_knight_1_20  = "Гронк Людоед"
-trp_knight_2_1  = "Воевода Мортах"
-trp_knight_2_2  = "Берутиэль"
-trp_knight_2_3  = "Сканг"
-trp_knight_2_4  = "Фарахад Незаконнорожденный"
-trp_knight_2_5  = "Гришнах"
-trp_knight_2_51  = "Готмог"
-trp_knight_2_51_pl  = "Сотник"
-trp_knight_2_6  = "Вождь Карна Лев"
-trp_knight_2_7  = "Вождь На’ман"
-trp_knight_2_8  = "Вождь Хаарит"
-trp_knight_2_11  = "Кусулак"
-trp_knight_2_12  = "Улварт Балхот"
-trp_knight_2_13  = "Бродда"
-trp_knight_2_16  = "Тораск"
-trp_knight_2_17  = "Лурмсакун"
-trp_knight_3_1  = "Капитан Морбир"
-trp_knight_3_2  = "Капитан Ангамайте"
-trp_knight_3_3  = "Капитан Сангахьяндо"
-trp_knight_3_6  = "Халдир"
-trp_knight_3_7  = "Орофин"
-trp_knight_3_11  = "Элладан"
-trp_knight_3_12  = "Эльрохир"
-trp_knight_3_13  = "Халбарад"
-trp_knight_3_16  = "Мириэль"
-trp_knight_3_17  = "Гладваэтор"
-trp_knight_4_1  = "Сног, Хозяин кнута"
-trp_knight_4_2  = "Снотгор, Хозяин кнута"
-trp_knight_4_6  = "Воевода Туским"
-trp_knight_4_7  = "Воевода Мугслаг"
-trp_knight_4_11  = "Баранхельм"
-trp_knight_4_12  = "Беранор Чёрный Мех"
-trp_knight_4_16  = "Бролгухш, Хозяин кнута"
-trp_knight_4_17  = "Грумрунт, Хозяин кнута"
-trp_knight_4_18  = "Гримсоб, Хозяин кнута"
-trp_knight_5_1  = "Владыка Хальвард"
-trp_knight_5_2  = "Владыка Бард"
-trp_knight_5_3  = "Владыка Эсгарайн"
-trp_knight_5_6  = "Фульгни Длиннобородый"
-trp_knight_5_7  = "Торин Каменный Шлем"
-trp_knight_5_11  = "Вождь Фудрейм"
-trp_knight_5_12  = "Вождь Вульф"
-trp_knight_6_1  = "Дэрворин"
-trp_smith_mtirith  = "Беретор Кузнец"
-trp_smith_mtirith_pl  = "Кузницы Наместника"
-trp_smith_pelargir  = "Халлатан Повелитель Стали"
-trp_smith_pelargir_pl  = "кузницу"
-trp_smith_linhir  = "Бор Оружейник"
-trp_smith_linhir_pl  = "кузницу"
-trp_smith_dolamroth  = "Халдад Кузнец"
-trp_smith_dolamroth_pl  = "кузницы Амрота"
-trp_smith_edhellond  = "Риис Железнолом"
-trp_smith_edhellond_pl  = "кузницу"
-trp_smith_lossarnach  = "Берин Секиродел"
-trp_smith_lossarnach_pl  = "кузницу"
-trp_smith_tarnost  = "Харандиль Стальной Молот"
-trp_smith_tarnost_pl  = "кузницу"
-trp_smith_erech  = "Лорне Чёрный"
-trp_smith_erech_pl  = "кузницу"
-trp_smith_pinnath  = "Тарандиль Клинкодел"
-trp_smith_pinnath_pl  = "кузницу"
-trp_smith_eosgiliath  = "Бзург Мародёр"
-trp_smith_eosgiliath_pl  = "кузницу"
-trp_smith_wosgiliath  = "Гардиль"
-trp_smith_wosgiliath_pl  = "полевую кузницу"
-trp_smith_calembel  = "Агроном"
-trp_smith_calembel_pl  = "кузницу"
-trp_smith_hannun  = "Фал Кузнец Рейнджеров"
-trp_smith_hannun_pl  = "склад снаряжения рейнджеров"
-trp_smith_candros  = "Калимдор"
-trp_smith_candros_pl  = "кузницу"
-trp_smith_edoras  = "Эаоден Повелитель Стали"
-trp_smith_edoras_pl  = "Королевскую кузницу"
-trp_smith_aldburg  = "Фулм Железное Копыто"
-trp_smith_aldburg_pl  = "кузницу"
-trp_smith_hornburg  = "Альдхельм"
-trp_smith_hornburg_pl  = "кузницу"
-trp_smith_eastemnet  = "Эадфрид"
-trp_smith_eastemnet_pl  = "кузницу"
-trp_smith_westfold  = "Деор Шлемодел"
-trp_smith_westfold_pl  = "кузницу"
-trp_smith_westemnet  = "Оружейник"
-trp_smith_westemnet_pl  = "кузницу"
-trp_smith_eastfold  = "Эадеран Сталерезчик"
-trp_smith_eastfold_pl  = "кузницу"
-trp_smith_morannon  = "Хурбаг Кузнец"
-trp_smith_morannon_pl  = "кузницу"
-trp_smith_mmorgul  = "Оргурз Огневержец"
-trp_smith_mmorgul_pl  = "кузницу"
-trp_town_24_smith  = "Боз Железнолом"
-trp_town_24_smith_pl  = "кузницу"
-trp_smith_orc_patrol  = "Глугз Железнопалый"
-trp_smith_orc_patrol_pl  = "полевую кузницу"
-trp_smith_oscamp  = "Кугаш Железнолюб"
-trp_smith_oscamp_pl  = "полевую кузницу"
-trp_smith_isengard  = "Бурз Железнобой"
-trp_smith_isengard_pl  = "подземную кузницу"
-trp_smith_uoutpost  = "Гурзук Железнозубый"
-trp_smith_uoutpost_pl  = "полевую кузницу"
-trp_smith_uhcamp  = "Рабзуг Ржавоед"
-trp_smith_uhcamp_pl  = "полевую кузницу"
-trp_smith_urcamp  = "Глурк"
-trp_smith_urcamp_pl  = "полевую кузницу"
-trp_smith_cgaladhon  = "Дируфин Мастер луков"
-trp_smith_cgaladhon_pl  = "эльфийские оружейные мастерские"
-trp_smith_cdolen  = "Димириан Стрелодел"
-trp_smith_cdolen_pl  = "эльфийские оружейные мастерские"
-trp_smith_camroth  = "Гетасистан"
-trp_smith_camroth_pl  = "эльфийские оружейные мастерские"
-trp_smith_thranduils_halls  = "Туринор"
-trp_smith_thranduils_halls_pl  = "кузницу"
-trp_smith_woodelf_camp  = "Калехир"
-trp_smith_woodelf_camp_pl  = "кузницу"
-trp_smith_beorn  = "Беорналаф Секиродел"
-trp_smith_beorn_pl  = "кузницу"
-trp_smith_moria  = "Бургак Кузнец"
-trp_smith_moria_pl  = "кузницу"
-trp_smith_dale  = "Ардель Огненнорукий"
-trp_smith_dale_pl  = "кузницу"
-trp_smith_esgaroth  = "Келегарн Мастер Луков"
-trp_smith_esgaroth_pl  = "кузницу"
-trp_smith_erebor  = "Трор Молотобоец"
-trp_smith_erebor_pl  = "Прославленные Кузницы Гномов"
-trp_smith_dunland  = "Дорровульд Железная Пика"
-trp_smith_dunland_pl  = "кузницу"
-trp_smith_harad  = "Хар Сталелом"
-trp_smith_harad_pl  = "кузницу"
-trp_smith_khand  = "Пушурт Хитрец"
-trp_smith_khand_pl  = "кузницу"
-trp_smith_umbar  = "Фуинур Кузнец"
-trp_smith_umbar_pl  = "кузницу"
-trp_smith_imladris  = "Дуифириан"
-trp_smith_imladris_pl  = "эльфийские оружейные мастерские"
-trp_smith_dolguldur  = "Штазг Дулбаш"
-trp_smith_dolguldur_pl  = "кузницу"
-trp_smith_north_rhun  = "Огнемир Кладиво"
-trp_smith_north_rhun_pl  = "полевую кузницу"
-trp_smith_gundabad  = "Блург Снегопродавец"
-trp_smith_gundabad_pl  = "кузницу"
-trp_smith_ironhill  = "Грунгни Грумбаки"
-trp_smith_ironhill_pl  = "Полевую Кузницу Гномов"
-trp_town_50_weaponsmith  = "Шруклуг Точильщик Ножей"
-trp_town_50_weaponsmith_pl  = "кузницу"
-trp_smith_gondor_ac  = "Бор Оружейник"
-trp_smith_gondor_ac_pl  = "полевую кузницу"
-trp_smith_rohan_ac  = "Деор Шлемодел"
-trp_smith_rohan_ac_pl  = "полевую кузницу"
-trp_smith_mordor_ac  = "Хурбаг Кузнец"
-trp_smith_mordor_ac_pl  = "кузницу"
-trp_smith_isengard_ac  = "Бурз Железнобой"
-trp_smith_isengard_ac_pl  = "подземную кузницу"
-trp_smith_lorien_ac  = "Димириан Стрелодел"
-trp_smith_lorien_ac_pl  = "эльфийские оружейные мастерские"
-trp_smith_woodelf_ac  = "Доэлат"
-trp_smith_woodelf_ac_pl  = "кузницу"
-trp_smith_dwarf_ac  = "Грунгрон Грумбаки"
-trp_smith_dwarf_ac_pl  = "гномью полевую кузницу"
-trp_smith_gundabad_ac  = "Блург Снегопродавец"
-trp_smith_gundabad_ac_pl  = "кузницу"
-trp_smith_rhun_ac  = "Бранимир Бронник"
-trp_smith_rhun_ac_pl  = "полевую кузницу"
-trp_smith_guldur_ac  = "Штазг Дулбаш"
-trp_smith_guldur_ac_pl  = "кузницу"
-trp_smith_imladris_ac  = "Дуифириан"
-trp_smith_imladris_ac_pl  = "эльфийские оружейные мастерские"
-trp_smith_dunland_ac  = "Дорровульд Железная Пика"
-trp_smith_dunland_ac_pl  = "кузницу"
-trp_smith_harad_ac  = "Хар Сталелом"
-trp_smith_harad_ac_pl  = "кузницу"
-trp_smith_khand_ac  = "Пушурт Хитрец"
-trp_smith_khand_ac_pl  = "кузницу"
-trp_smith_umbar_ac  = "Фуинир Кузнец"
-trp_smith_umbar_ac_pl  = "кузницу"
-trp_barman_mtirith  = "Хозяин таверны"
-trp_barman_mtirith_pl  = "цитадель"
-trp_barman_pelargir  = "Хозяин таверны"
-trp_barman_pelargir_pl  = "замок"
-trp_barman_linhir  = "Хозяин таверны"
-trp_barman_linhir_pl  = "замок"
-trp_barman_dolamroth  = "Хозяин таверны"
-trp_barman_dolamroth_pl  = "замок"
-trp_barman_edhellond  = "Хозяин таверны"
-trp_barman_edhellond_pl  = "замок"
-trp_barman_lossarnach  = "Хозяин таверны"
-trp_barman_lossarnach_pl  = "замок"
-trp_barman_tarnost  = "Хозяин таверны"
-trp_barman_tarnost_pl  = "замок"
-trp_barman_erech  = "Хозяин таверны"
-trp_barman_erech_pl  = "замок"
-trp_barman_pinnath  = "Хозяин таверны"
-trp_barman_pinnath_pl  = "замок"
-trp_barman_hannun  = "Хозяин таверны"
-trp_barman_hannun_pl  = "Потайная пещера"
-trp_barman_calembel  = "Хозяин таверны"
-trp_barman_calembel_pl  = "замок"
-trp_barman_edoras  = "Хозяин таверны"
-trp_barman_edoras_pl  = "Медусельд, Золотой чертог"
-trp_barman_aldburg  = "Хозяин таверны"
-trp_barman_aldburg_pl  = "замок"
-trp_barman_hornburg  = "Хозяин таверны"
-trp_barman_hornburg_pl  = "Чертоги владыки"
-trp_barman_eastemnet  = "Хозяин таверны"
-trp_barman_eastemnet_pl  = "замок"
-trp_barman_westfold  = "Хозяин таверны"
-trp_barman_westfold_pl  = "замок"
-trp_barman_westemnet  = "Хозяин таверны"
-trp_barman_westemnet_pl  = "замок"
-trp_barman_eastfold  = "Хозяин таверны"
-trp_barman_eastfold_pl  = "замок"
-trp_barman_baraddur  = "Хозяин таверны"
-trp_barman_baraddur_pl  = "замок"
-trp_barman_morannon  = "Хозяин таверны"
-trp_barman_morannon_pl  = "пещеру повелителя"
-trp_barman_mmorgul  = "Хозяин таверны"
-trp_barman_mmorgul_pl  = "твердыню"
-trp_barman_cungol  = "Хозяин таверны"
-trp_barman_cungol_pl  = "замок"
-trp_barman_isengard  = "Хозяин таверны"
-trp_barman_isengard_pl  = "Ортанк"
-trp_barman_cgaladhon  = "Хозяин таверны"
-trp_barman_cgaladhon_pl  = "древесный замок"
-trp_barman_cdolen  = "Хозяин таверны"
-trp_barman_cdolen_pl  = "древесный замок"
-trp_barman_camroth  = "Хозяин таверны"
-trp_barman_camroth_pl  = "древесный замок"
-trp_barman_thalls  = "Хозяин таверны"
-trp_barman_thalls_pl  = "тронный зал"
-trp_barman_beorn  = "Хозяин таверны"
-trp_barman_beorn_pl  = "Беорнингский Хранитель Очага"
-trp_barman_moria  = "Хозяин таверны"
-trp_barman_moria_pl  = "палаты Подгорного короля"
-trp_barman_dale  = "Хозяин таверны"
-trp_barman_dale_pl  = "замок"
-trp_barman_esgaroth  = "Хозяин таверны"
-trp_barman_esgaroth_pl  = "чертоги правителя"
-trp_barman_erebor  = "Хозяин Таверны"
-trp_barman_erebor_pl  = "Великий зал Трора."
-trp_barman_dolguldur  = "Хозяин таверны"
-trp_barman_dolguldur_pl  = "замок"
-trp_merchant_mtirith  = "Ведающий запасами"
-trp_merchant_mtirith_pl  = "конюшню и склад"
-trp_merchant_pelargir  = "Ведающий запасами"
-trp_merchant_pelargir_pl  = "конюшню и склад"
-trp_merchant_linhir  = "Ведающий запасами"
-trp_merchant_linhir_pl  = "конюшню и склад"
-trp_merchant_dolamroth  = "Ведающий запасами"
-trp_merchant_dolamroth_pl  = "конюшню и склад"
-trp_merchant_edhellond  = "Ведающий запасами"
-trp_merchant_edhellond_pl  = "конюшню и склад"
-trp_merchant_lossarnach  = "Ведающий запасами"
-trp_merchant_lossarnach_pl  = "конюшню и склад"
-trp_merchant_tarnost  = "Ведающий запасами"
-trp_merchant_tarnost_pl  = "конюшню и склад"
-trp_merchant_erech  = "Ведающий запасами"
-trp_merchant_erech_pl  = "конюшню и склад"
-trp_merchant_pinnath  = "Ведающий запасами"
-trp_merchant_pinnath_pl  = "конюшню и склад"
-trp_merchant_eosgiliath  = "Ведающий запасами"
-trp_merchant_eosgiliath_pl  = "конюшню и склад"
-trp_merchant_wosgiliath  = "Ведающий запасами"
-trp_merchant_wosgiliath_pl  = "конюшню и склад"
-trp_town_12_horse_merchant  = "Ведающий запасами"
-trp_town_12_horse_merchant_pl  = "конюшню и склад"
-trp_town_13_horse_merchant  = "Ведающий запасами"
-trp_town_13_horse_merchant_pl  = "конюшню и склад"
-trp_merchant_edoras  = "Ведающая запасами"
-trp_merchant_edoras_pl  = "конюшню и склад"
-trp_merchant_aldburg  = "Ведающий запасами"
-trp_merchant_aldburg_pl  = "королевские конюшню и склад"
-trp_merchant_hornburg  = "Ведающий запасами"
-trp_merchant_hornburg_pl  = "конюшню и склад"
-trp_merchant_eastemnet  = "Ведающий запасами"
-trp_merchant_eastemnet_pl  = "конюшню и склад"
-trp_merchant_westfold  = "Ведающая запасами"
-trp_merchant_westfold_pl  = "конюшню и склад"
-trp_merchant_westemnet  = "Ведающая запасами"
-trp_merchant_westemnet_pl  = "конюшню и склад"
-trp_merchant_eastfold  = "Ведающая запасами"
-trp_merchant_eastfold_pl  = "конюшню и склад"
-trp_town_21_horse_merchant  = "Ведающий запасами"
-trp_town_21_horse_merchant_pl  = "волчью яму и склад"
-trp_merchant_morannon  = "Ведающий запасами"
-trp_merchant_morannon_pl  = "волчью яму и склад"
-trp_merchant_mmorgul  = "Ведающий запасами"
-trp_merchant_mmorgul_pl  = "волчью яму и склад"
-trp_town_24_horse_merchant  = "Ведающий запасами"
-trp_town_24_horse_merchant_pl  = "волчью яму и склад"
-trp_merchant_orc_patrol  = "Ведающий запасами"
-trp_merchant_orc_patrol_pl  = "полевой склад"
-trp_merchant_isengard  = "Ведающий запасами"
-trp_merchant_isengard_pl  = "полевой склад"
-trp_town_27_horse_merchant  = "Ведающий запасами"
-trp_town_27_horse_merchant_pl  = "волчью яму и склад"
-trp_merchant_uoutpost  = "Ведающий запасами"
-trp_merchant_uoutpost_pl  = "волчью яму и склад"
-trp_merchant_uhcamp  = "Ведающий запасами"
-trp_merchant_uhcamp_pl  = "волчью яму и склад"
-trp_merchant_urcamp  = "Ведающий запасами"
-trp_merchant_urcamp_pl  = "волчью яму и склад"
-trp_merchant_cgaladhon  = "Ведающий запасами"
-trp_merchant_cgaladhon_pl  = "эльфийские склады"
-trp_merchant_cdolen  = "Ведающий запасами"
-trp_merchant_cdolen_pl  = "эльфийские склады"
-trp_merchant_camroth  = "Ведающий запасами"
-trp_merchant_camroth_pl  = "эльфийские склады"
-trp_merchant_thranduils_halls  = "Ведающий запасами"
-trp_merchant_thranduils_halls_pl  = "эльфийские склады"
-trp_merchant_woodelf_camp  = "Ведающий запасами"
-trp_merchant_woodelf_camp_pl  = "эльфийские склады"
-trp_merchant_woodmen  = "Келольф Запасливый"
-trp_merchant_woodmen_pl  = "конюшню и склад"
-trp_merchant_beorn  = "Беренгар Медоед"
-trp_merchant_beorn_pl  = "конюшню и склад"
-trp_merchant_moria  = "Ведающий запасами"
-trp_merchant_moria_pl  = "волчью яму и склад"
-trp_merchant_dale  = "Жирослав Кладовщик"
-trp_merchant_dale_pl  = "конюшню и склад"
-trp_merchant_esgaroth  = "Премысл Рыболов"
-trp_merchant_esgaroth_pl  = "конюшню и склад"
-trp_merchant_erebor  = "Фрарин Широкозад"
-trp_merchant_erebor_pl  = "Гномьи Склады"
-trp_merchant_dunland  = "Дунлендинг-ведающий запасами"
-trp_merchant_dunland_pl  = "полевой склад"
-trp_merchant_harad  = "Харадец-ведающий запасами"
-trp_merchant_harad_pl  = "полевой склад"
-trp_merchant_khand  = "Варьяг-ведающий запасами"
-trp_merchant_khand_pl  = "полевой склад"
-trp_merchant_umbar  = "Ведающий запасами"
-trp_merchant_umbar_pl  = "полевой склад"
-trp_merchant_imladris  = "Ведающий запасами"
-trp_merchant_imladris_pl  = "полевой склад"
-trp_merchant_dolguldur  = "Ведающий запасами"
-trp_merchant_dolguldur_pl  = "конюшню и склад"
-trp_merchant_north_rhun  = "Ведающий запасами"
-trp_merchant_north_rhun_pl  = "полевой склад"
-trp_merchant_south_rhun  = "Ведающий запасами"
-trp_merchant_south_rhun_pl  = "полевой склад"
-trp_merchant_gundabad  = "Ведающий запасами"
-trp_merchant_gundabad_pl  = "полевой склад"
-trp_merchant_ironhill  = "Дави Тиндронгол"
-trp_merchant_ironhill_pl  = "Гномьи Склады"
-trp_town_50_horse_merchant  = "Гобрип Желтозуб"
-trp_town_50_horse_merchant_pl  = "волчью яму и склад"
-trp_merchant_calembel  = "Ведающий запасами"
-trp_merchant_calembel_pl  = "конюшню и склад"
-trp_elder_mtirith  = "Управитель Минас-Тирита"
-trp_elder_mtirith_pl  = "Белый Город"
-trp_elder_pelargir  = "Управитель Пеларгира"
-trp_elder_pelargir_pl  = "город"
-trp_elder_linhir  = "Управитель Линхира"
-trp_elder_linhir_pl  = "город"
-trp_elder_dolamroth  = "Управитель Дол-Амрота"
-trp_elder_dolamroth_pl  = "город"
-trp_elder_edhellond  = "Управитель Эделлонда"
-trp_elder_edhellond_pl  = "город"
-trp_elder_lossarnach  = "Управитель Лоссарнаха"
-trp_elder_lossarnach_pl  = "поселение"
-trp_elder_tarnost  = "Управитель Тарноста"
-trp_elder_tarnost_pl  = "поселение"
-trp_elder_erech  = "Управитель Эреха"
-trp_elder_erech_pl  = "поселение"
-trp_elder_pinnath  = "Старейшина Пиннат-Гелина"
-trp_elder_pinnath_pl  = "поселение"
-trp_elder_ethring  = "Управитель Калембеля"
-trp_elder_ethring_pl  = "город"
-trp_elder_henneth  = "Управитель Хеннет-Аннуна"
-trp_elder_henneth_pl  = "убежище рейнджеров"
-trp_elder_cairandros  = "Управитель Кайр-Андроса"
-trp_elder_cairandros_pl  = "островную крепость"
-trp_elder_edoras  = "Тэн Эдораса"
-trp_elder_edoras_pl  = "город"
-trp_elder_aldburg  = "Тэн Альдбурга"
-trp_elder_aldburg_pl  = "поселение"
-trp_elder_hornburg  = "Тэн Хорнбурга"
-trp_elder_hornburg_pl  = "крепость"
-trp_elder_eastemnet  = "Тэн Истемнета"
-trp_elder_eastemnet_pl  = "поселение"
-trp_elder_westfold  = "Тэн Вестфольда"
-trp_elder_westfold_pl  = "поселение"
-trp_elder_westemnet  = "Тэн Вестемнета"
-trp_elder_westemnet_pl  = "поселение"
-trp_elder_eastfold  = "Тэн Истфолда"
-trp_elder_eastfold_pl  = "поселение"
-trp_elder_morannon  = "Управитель Мораннона"
-trp_elder_morannon_pl  = "пещеры у Великих Врат"
-trp_elder_mmorgul  = "Моргульский управитель"
-trp_elder_mmorgul_pl  = "зловещий город"
-trp_elder_cungol  = "Лагерный управитель"
-trp_elder_cungol_pl  = "лагерь"
-trp_elder_isengard  = "Грима Змеиный Язык"
-trp_elder_isengard_pl  = "город"
-trp_elder_cgaladhon  = "Лориэнский хранитель обычаев"
-trp_elder_cgaladhon_pl  = "лесную крепость эльфов"
-trp_elder_cdolen  = "Лориэнский хранитель обычаев"
-trp_elder_cdolen_pl  = "лагерь"
-trp_elder_camroth  = "Лориэнский хранитель обычаев"
-trp_elder_camroth_pl  = "лагерь"
-trp_elder_thalls  = "Темнолесский старейшина"
-trp_elder_thalls_pl  = "пещеры эльфов"
-trp_elder_imladris  = "Управитель лагеря Ривенделла"
-trp_elder_imladris_pl  = "лагерь"
-trp_elder_wvillage  = "Пьер Лесовик"
-trp_elder_wvillage_pl  = "деревню"
-trp_elder_beorn  = "Старейшина Асбеорн"
-trp_elder_beorn_pl  = "деревню"
-trp_elder_harad  = "Харадский управитель лагеря"
-trp_elder_harad_pl  = "лагерь"
-trp_elder_rhun  = "Рунийский управитель лагеря"
-trp_elder_rhun_pl  = "лагерь"
-trp_elder_khand  = "Хандский управитель лагеря"
-trp_elder_khand_pl  = "лагерь"
-trp_elder_dunland  = "Дунландский управитель лагеря"
-trp_elder_dunland_pl  = "лагерь"
-trp_elder_umbar  = "Умбарский управитель лагеря"
-trp_elder_umbar_pl  = "укреплённый лагерь"
-trp_elder_moria  = "Морийский вождь"
-trp_elder_moria_pl  = "копи"
-trp_elder_gunda  = "Хозяин Пещер"
-trp_elder_gunda_pl  = "пещеры"
-trp_elder_dale  = "Дейльский управитель"
-trp_elder_dale_pl  = "город"
-trp_elder_esgaroth  = "Управитель Эсгарота"
-trp_elder_esgaroth_pl  = "Озёрный город"
-trp_elder_erebor  = "Анкор Камненог"
-trp_elder_erebor_pl  = "Подгорные Чертоги"
-trp_elder_dolguldur  = "Гулдурский управитель"
-trp_elder_dolguldur_pl  = "чёрную твердыню"
-trp_elder_gondor_ac  = "Управитель лагеря"
-trp_elder_gondor_ac_pl  = "лагерь"
-trp_elder_rohan_ac  = "Управитель лагеря"
-trp_elder_rohan_ac_pl  = "лагерь"
-trp_elder_mordor_ac  = "Управитель лагеря"
-trp_elder_mordor_ac_pl  = "лагерь"
-trp_elder_isengard_ac  = "Управитель лагеря "
-trp_elder_isengard_ac_pl  = "лагерь "
-trp_elder_lorien_ac  = "Управитель лагеря"
-trp_elder_lorien_ac_pl  = "лагерь"
-trp_elder_woodelf_ac  = "Управитель лагеря"
-trp_elder_woodelf_ac_pl  = "лагерь"
-trp_elder_imladris_ac  = "Управитель лагеря"
-trp_elder_imladris_ac_pl  = "лагерь"
-trp_elder_beorn_ac  = "Управитель лагеря"
-trp_elder_beorn_ac_pl  = "лагерь"
-trp_elder_harad_ac  = "Харадский управитель лагеря"
-trp_elder_harad_ac_pl  = "лагерь"
-trp_elder_rhun_ac  = "Рунийский управитель лагеря"
-trp_elder_rhun_ac_pl  = "лагерь"
-trp_elder_khand_ac  = "Хандский управитель лагеря"
-trp_elder_khand_ac_pl  = "лагерь"
-trp_elder_dunland_ac  = "Дунландский управитель лагеря"
-trp_elder_dunland_ac_pl  = "лагерь"
-trp_elder_umbar_ac  = "Умбарский управитель лагеря"
-trp_elder_umbar_ac_pl  = "лагерь"
-trp_elder_moria_ac  = "Морийский управитель лагеря"
-trp_elder_moria_ac_pl  = "лагерь"
-trp_elder_gunda_ac  = "Гундабадский управитель лагеря"
-trp_elder_gunda_ac_pl  = "лагерь"
-trp_elder_dale_ac  = "Дейльский управитель лагеря"
-trp_elder_dale_ac_pl  = "лагерь"
-trp_elder_guldur_ac  = "Гулдурский управитель лагеря"
-trp_elder_guldur_ac_pl  = "лагерь"
-trp_elder_dwarf_ac  = "Гномий управитель лагеря"
-trp_elder_dwarf_ac_pl  = "лагерь"
-trp_village_1_elder  = "Повелитель Кнута"
-trp_village_1_elder_pl  = "пещеры"
-trp_tutorial_chest_1  = "Сундук для холодного оружия"
-trp_tutorial_chest_2  = "Сундук для стрелкового оружия"
-trp_bonus_chest_1  = "Бонусный сундук"
-trp_bonus_chest_2  = "Бонусный сундук"
-trp_bonus_chest_3  = "Бонусный сундук"
-trp_camp_chest_faction  = "Общий сундук"
-trp_camp_chest_none  = "Ничейный сундук"
-trp_player_chest  = "Ваш сундук"
-trp_local_merchant  = "Местный торговец"
-trp_local_merchant_pl  = "Местные торговцы"
-trp_tax_rebel  = "Крестьянин-бунтарь"
-trp_tax_rebel_pl  = "Крестьяне-бунтари"
-trp_trainee_peasant  = "Крестьянин"
-trp_trainee_peasant_pl  = "Крестьяне"
-trp_fugitive_man  = "Подозрительный человек"
-trp_fugitive_man_pl  = "Подозрительные люди"
-trp_fugitive_elf  = "Подозрительный эльф"
-trp_fugitive_elf_pl  = "Подозрительные эльфы"
-trp_fugitive_dwarf  = "Подозрительный Гном"
-trp_fugitive_dwarf_pl  = "Подозрительные гномы"
-trp_fugitive_orc  = "Подозрительный орк"
-trp_fugitive_orc_pl  = "Подозрительные орки"
-trp_spy  = "Лукавый корсар"
-trp_spy_pl  = "Лукавые корсары"
-trp_spy_evil  = "Лукавый южанин"
-trp_spy_evil_pl  = "Лукавые южане"
-trp_spy_partner  = "Сообщник шпиона"
-trp_spy_partner_pl  = "Сообщники шпионов"
-trp_spy_partner_evil  = "Сообщник шпиона"
-trp_spy_partner_evil_pl  = "Сообщники шпионов"
-trp_easter_egg_troll  = "Тролль"
-trp_treebeard  = "Древобрад"
-trp_ent_1  = "Брегалад"
-trp_ent_2  = "Финглас"
-trp_ent_3  = "Фладрив"
-trp_gandalf  = "Гэндальф"
-trp_gandalf_pl  = "Доморощенные Гэндальфы"
-trp_nazgul  = "Назгул"
-trp_nazgul_pl  = "Одомашненный назгул"
-trp_barman  = "Бармен"
-trp_elder  = "Старейшина"
-trp_gear_merchant  = "Торговец снаряжением"
-trp_goods_merchant  = "Торговец провизией"
-trp_start_quest_caravaneer  = "Торбал Караванщик"
-trp_dorwinion_bandit  = "Дорвинионский разбойник"
-trp_dorwinion_bandit_pl  = "Дорвинионские разбойники"
-trp_dorwinion_raider  = "Дорвинионский налётчик"
-trp_dorwinion_raider_pl  = "Дорвинионские налётчики"
-trp_city_guard  = "Городской стражник"
-trp_city_guard_pl  = "Городские стражники"
-trp_orc_sentry  = "Орк-часовой"
-trp_orc_sentry_pl  = "Орки-часовые"
-trp_uruk_hai_sentry  = "Часовой урук-хай"
-trp_uruk_hai_sentry_pl  = "Часовые урук-хай"
-trp_black_numenorean_sorcerer  = "Чёрный нуменорец-колдун"
-trp_black_numenorean_sorcerer_pl  = "Чёрные нуменорцы-колдуны"
-trp_black_numenorean_acolyte  = "Чёрный нуменорец-служитель"
-trp_black_numenorean_acolyte_pl  = "Чёрные нуменорцы-служители"
-trp_wolf_rider_of_mirkwood  = "Волчий всадник Темнолесья"
-trp_wolf_rider_of_mirkwood_pl  = "Волчьи всадники Темнолесья"
-trp_warg_rider_of_mirkwood  = "Темнолесский всадник на варге"
-trp_warg_rider_of_mirkwood_pl  = "Темнолесские всадники на варгах"
-trp_gate_aggravator  = "Привратник"
-trp_orc_pretender  = "Претендент на лидерство"
-trp_human_prisoner  = "Пленный человек"
-trp_spider  = "Паук из Темнолесья"
-trp_spider_pl  = "Пауки из Темнолесья"
-trp_bear  = "Медведь"
-trp_bear_pl  = "Медведи"
-trp_wolf  = "Волк"
-trp_wolf_pl  = "Волки"
-trp_dorwinion_sack  = "дорвинионский мешок"
-trp_ring_hunter_captain  = "Командир Охотников за Кольцом"
-trp_ring_hunter_lt  = "Командир Охотников за Кольцом"
-trp_ring_hunter_one  = "Охотник за Кольцом"
-trp_ring_hunter_one_pl  = "Охотники за Кольцом"
-trp_ring_hunter_two  = "Охотник за Кольцом"
-trp_ring_hunter_two_pl  = "Охотники за Кольцом"
-trp_ring_hunter_three  = "Охотник за Кольцом"
-trp_ring_hunter_three_pl  = "Охотники за Кольцом"
-trp_ring_hunter_four  = "Охотник за Кольцом"
-trp_ring_hunter_four_pl  = "Охотники за Кольцом"
-trp_start_quest_uruk  = "Мордорский урук-капитан"
-trp_start_quest_orc  = "Мордорский орк-лейтенант"
-trp_start_quest_orc_pl  = "Крупные орки Мордора"
-trp_start_quest_woodelf  = "Меткий стрелок галадрим"
-trp_start_quest_woodelf_pl  = "Меткие стрелки галадрим"
-trp_start_quest_mordor_scout  = "Мордорский проводник"
-trp_start_quest_mordor_scout_pl  = "Мордорские проводники"
-trp_start_quest_beorning  = "Беорнингский Берсерк Каррока"
-trp_start_quest_beorning_pl  = "Беорнингские Берсерки Каррока"
-trp_i6_beorning_bear_warrior  = "Воин-Медведь"
-trp_i6_beorning_bear_warrior_pl  = "Воины-Медведи"
-trp_morannon_healer  = "Окстук Лекарь"
-trp_minas_tirith_healer  = "Лорет"
-trp_edoras_healer  = "Фрея Целительница"
-trp_isengard_healer  = "Нургал Штопальщик"
-trp_guldur_healer  = "Морнагар Грамарир"
-trp_gundabad_healer  = "Лургакх Третий Глаз"
-trp_mirkwood_healer  = "Корвиль Мягкорукий"
-trp_hungry_uruk  = "Голодный Урук"
-trp_hungry_orc  = "Голодный Орк"
-trp_longing_lorien  = "Устремлённый эльф"
-trp_longing_woodelf  = "Устремлённый эльф"
-trp_longing_imladris  = "Устремлённый эльф"
-trp_i5_moria_deep_dweller  = "Глубинный житель Мории"
-trp_i5_moria_deep_dweller_pl  = "Глубинные жители Мории"
-trp_i5_moria_orc_chieftain  = "Орк-командир Мории"
-trp_i5_moria_orc_chieftain_pl  = "Орки-командиры Мории"
-trp_c5_rhovanion_noble  = "Знатный всадник Рованиона"
-trp_c5_rhovanion_noble_pl  = "Знатная конница Рованиона"
-trp_npc18  = "Турмбату"
-trp_npc19  = "Хейдрек"
-trp_npc20  = "Зигурфель"
-trp_werewolf  = "Оборотень"
-trp_werewolf_pl  = "Оборотни"
-trp_moria_troll  = "Пещерный Тролль"
-trp_moria_troll_pl  = "Пещерные Тролли"
-trp_moria_vet_troll  = "Выдрессированный Пещерный Тролль"
-trp_moria_vet_troll_pl  = "Выдрессированные Пещерные Тролли"
-trp_moria_armored_troll  = "Бронированный Пещерный Тролль"
-trp_moria_armored_troll_pl  = "Бронированные Пещерные Тролли"
-trp_gunda_troll  = "Горный Тролль"
-trp_gunda_troll_pl  = "Горные Тролли"
-trp_gunda_vet_troll  = "Выдрессированный Горный Тролль"
-trp_gunda_vet_troll_pl  = "Выдрессированные Горные Тролли"
-trp_gunda_placeholder  = "Выдрессированный Горный Тролль"
-trp_gunda_placeholder_pl  = "Выдрессированные Горные Тролли"
-trp_isen_troll  = "Тролль Изенгарда"
-trp_isen_troll_pl  = "Тролли Изенгарда"
-trp_isen_vet_troll  = "Выдрессированный Тролль Изенгарда"
-trp_isen_vet_troll_pl  = "Выдрессированные Тролли Изенгарда"
-trp_isen_armored_troll  = "Боевой Тролль Изенгарда"
-trp_isen_armored_troll_pl  = "Боевые Тролли Изенгарда"
-trp_mordor_troll  = "Мордорский Тролль"
-trp_mordor_troll_pl  = "Мордорские Тролли"
-trp_mordor_vet_troll  = "Мордорский Выдрессированный Тролль"
-trp_mordor_vet_troll_pl  = "Мордорские Выдрессированные Тролли"
-trp_mordor_olog_hai  = "Олог-Хай Мордора"
-trp_mordor_olog_hai_pl  = "Олог-Хаи Мордора"
-trp_troll_placeholder_1  = "Пещерный Тролль"
-trp_troll_placeholder_1_pl  = "Пещерные Тролли"
-trp_troll_placeholder_2  = "Пещерный Тролль"
-trp_troll_placeholder_2_pl  = "Пещерные Тролли"
-trp_troll_placeholder_3  = "Пещерный Тролль"
-trp_troll_placeholder_3_pl  = "Пещерные Тролли"
-trp_troll_placeholder_4  = "Пещерный Тролль"
-trp_troll_placeholder_4_pl  = "Пещерные Тролли"
-trp_troll_placeholder_5  = "Пещерный Тролль"
-trp_troll_placeholder_5_pl  = "Пещерные Тролли"
-trp_troll_placeholder_6  = "Пещерный Тролль"
-trp_troll_placeholder_6_pl  = "Пещерные Тролли"
-trp_wild_troll  = "Дикий Пещерный Тролль"
-trp_wild_troll_pl  = "Дикие Пещерные Тролли"
-trp_ent2  = "Энт"
-trp_ent2_pl  = "Энты"
-trp_mountain_goblin  = "Горный Гоблин"
-trp_mountain_goblin_pl  = "Горные Гоблины"
-trp_tribal_orc  = "Дикий Орк"
-trp_tribal_orc_pl  = "Дикие Орки"
-trp_tribal_orc_warrior  = "Дикий Орк-Воин"
-trp_tribal_orc_warrior_pl  = "Дикие Орки-Воины"
-trp_tribal_orc_chief  = "Вождь Диких Орков"
-trp_tribal_orc_chief_pl  = "Вожди Диких Орков"
+trp_unarmed_troop|Безоружный воин
+trp_unarmed_troop_pl|Безоружные воины
+trp_tutorial_maceman|Воин с булавой
+trp_tutorial_maceman_pl|Воины с булавой
+trp_tutorial_archer|Лучник
+trp_tutorial_archer_pl|Лучники
+trp_tutorial_swordsman|Мечник
+trp_tutorial_swordsman_pl|Мечники
+trp_novice_fighter|Боец-новичок
+trp_novice_fighter_pl|Бойцы-новички
+trp_regular_fighter|Опытный боец
+trp_regular_fighter_pl|Опытные бойцы
+trp_veteran_fighter|Боец-ветеран
+trp_veteran_fighter_pl|Бойцы-ветераны
+trp_champion_fighter|Прославленный боец
+trp_champion_fighter_pl|Прославленные бойцы
+trp_arena_training_fighter_1|Боец-новичок
+trp_arena_training_fighter_1_pl|Бойцы-новички
+trp_arena_training_fighter_2|Боец-новичок
+trp_arena_training_fighter_2_pl|Бойцы-новички
+trp_arena_training_fighter_3|Опытный боец
+trp_arena_training_fighter_3_pl|Опытные бойцы
+trp_arena_training_fighter_4|Опытный боец
+trp_arena_training_fighter_4_pl|Опытные бойцы
+trp_arena_training_fighter_5|Опытный боец
+trp_arena_training_fighter_5_pl|Опытные бойцы
+trp_arena_training_fighter_6|Боец-ветеран
+trp_arena_training_fighter_6_pl|Ветераны
+trp_arena_training_fighter_7|Боец-ветеран
+trp_arena_training_fighter_7_pl|Бойцы-ветераны
+trp_arena_training_fighter_8|Боец-ветеран
+trp_arena_training_fighter_8_pl|Бойцы-ветераны
+trp_arena_training_fighter_9|Прославленный боец
+trp_arena_training_fighter_9_pl|Прославленные бойцы
+trp_arena_training_fighter_10|Прославленный боец
+trp_arena_training_fighter_10_pl|Прославленные бойцы
+trp_cattle|Скот
+trp_cattle_pl|Скот
+trp_farmer|Крестьянин
+trp_farmer_pl|Крестьянине
+trp_townsman|Горожанин
+trp_townsman_pl|Горожане
+trp_watchman|Горожанка
+trp_watchman_pl|Горожанки
+trp_i1_woodmen_man|Лесной Житель
+trp_i1_woodmen_man_pl|Лесные Жители
+trp_i2_woodmen_forester|Лесник
+trp_i2_woodmen_forester_pl|Лесники
+trp_i3_woodmen_skilled_forester|Опытный лесничий
+trp_i3_woodmen_skilled_forester_pl|Опытные лесничие
+trp_i4_woodmen_axemen|Лесной страж
+trp_i4_woodmen_axemen_pl|Лесные Стражи
+trp_i5_woodmen_night_guard|Ночной страж Лихолесья
+trp_i5_woodmen_night_guard_pl|Ночные стражи Лихолесья
+trp_a2_woodmen_tracker|Лесной следопыт
+trp_a2_woodmen_tracker_pl|Лесные следопыты
+trp_a3_woodmen_scout|Лесной разведчик
+trp_a3_woodmen_scout_pl|Лесные разведчики
+trp_a4_woodmen_archer|Лесной стрелец
+trp_a4_woodmen_archer_pl|Лесные стрельцы
+trp_a5_woodmen_night_stalker|Ночной охотник Лихолесья
+trp_a5_woodmen_night_stalker_pl|Ночные охотники Лихолесья
+trp_i1_beorning_man|Беорнинг
+trp_i1_beorning_man_pl|Беорнинги
+trp_i2_beorning_warrior|Беорнингский воин
+trp_i2_beorning_warrior_pl|Беорнингские воины
+trp_i3_beorning_tolltacker|Беорнингский привратник
+trp_i3_beorning_tolltacker_pl|Беорнингские привратники
+trp_i4_beorning_sentinel|Беорнингский воитель
+trp_i4_beorning_sentinel_pl|Беорнингские воители
+trp_i5_beorning_warden_of_the_ford|Беорнингский хранитель Брода
+trp_i5_beorning_warden_of_the_ford_pl|Беорнингские хранители Брода
+trp_i3_beorning_carrock_lookout|Беорнингский дозорный Каррока
+trp_i3_beorning_carrock_lookout_pl|Беорнингские дозорные Каррока
+trp_i4_beorning_carrock_fighter|Беорнингский Боец Каррока
+trp_i4_beorning_carrock_fighter_pl|Беорнингские Бойцы Каррока
+trp_i5_beorning_carrock_berserker|Беорнингский Берсерк Каррока
+trp_i5_beorning_carrock_berserker_pl|Беорнингские Берсерки Каррока
+trp_i1_dale_militia|Ополченец Дэйла
+trp_i1_dale_militia_pl|Ополченцы Дэйла
+trp_i2_dale_man_at_arms|Ратник Дэйла
+trp_i2_dale_man_at_arms_pl|Ратники Дэйла
+trp_a2_dale_scout|Разведчик Дэйла
+trp_a2_dale_scout_pl|Разведчики Дэйла
+trp_a3_dale_bowman|Лучник Дейла
+trp_a3_dale_bowman_pl|Лучники Дейла
+trp_a4_dale_archer|Стрелец Дейла
+trp_a4_dale_archer_pl|Стрельцы Дэйла
+trp_a5_barding_bowman|Лучник Барда
+trp_a5_barding_bowman_pl|Лучники Барда
+trp_i3_dale_swordsman|Мечник Дэйла
+trp_i3_dale_swordsman_pl|Мечники Дэйла
+trp_i4_dale_sergeant|Латник Дэйла
+trp_i4_dale_sergeant_pl|Латники Дэйла
+trp_i5_dale_hearthman|Дружинник Дэйла
+trp_i5_dale_hearthman_pl|Дружинники Дэйла
+trp_i3_dale_spearman|Копейщик Дэйла
+trp_i3_dale_spearman_pl|Копейщики Дэйла
+trp_i4_dale_billman|Дейльский воин с глефой
+trp_i4_dale_billman_pl|Дейльские воины с глефами
+trp_i5_dale_bill_master|Дейльский искусный воин с глефой
+trp_i5_dale_bill_master_pl|Дейльские искусные воины с глефами
+trp_c2_rhovanion_retainer|Дворянин Дэйла
+trp_c2_rhovanion_retainer_pl|Дворяне Дэйла
+trp_c3_rhovanion_auxilia|Всадник Дэйла
+trp_c3_rhovanion_auxilia_pl|Всадники Дэйла
+trp_c4_rhovanion_rider|Всадник Рованиона
+trp_c4_rhovanion_rider_pl|Всадники Рованиона
+trp_ac5_rhovanion_marchwarden|Смотритель Пустошей Рованиона
+trp_ac5_rhovanion_marchwarden_pl|Смотрители Пустошей Рованиона
+trp_i1_rhun_tribesman|Рунийский дикарь
+trp_i1_rhun_tribesman_pl|Рунийские дикари
+trp_ac2_rhun_horse_scout|Рунийский конный разведчик
+trp_ac2_rhun_horse_scout_pl|Рунийские конные разведчики
+trp_ac3_rhun_horse_archer|Рунийский конный лучник
+trp_ac3_rhun_horse_archer_pl|Рунийские конные лучники
+trp_ac4_rhun_veteran_horse_archer|Рунийский конный лучник-ветеран
+trp_ac4_rhun_veteran_horse_archer_pl|Рунийские конные лучники-ветераны
+trp_ac5_rhun_balchoth_horse_archer|Балхотский конный лучник
+trp_ac5_rhun_balchoth_horse_archer_pl|Балхотские конные лучники
+trp_c3_rhun_swift_horseman|Рунийский быстрый всадник
+trp_c3_rhun_swift_horseman_pl|Рунийские быстрые всадники
+trp_c4_rhun_veteran_swift_horseman|Рунийский быстрый всадник-ветеран
+trp_c4_rhun_veteran_swift_horseman_pl|Рунийские быстрые всадники-ветераны
+trp_c5_rhun_falcon_horseman|Соколиный всадник
+trp_c5_rhun_falcon_horseman_pl|Соколиные всадники
+trp_i2_rhun_tribal_warrior|Рунийский пехотинец
+trp_i2_rhun_tribal_warrior_pl|Рунийский пехотинец
+trp_i3_rhun_tribal_infantry|Воин рунийского племени
+trp_i3_rhun_tribal_infantry_pl|Воины рунийских племён
+trp_i4_rhun_vet_infantry|Рунийский воин-ветеран
+trp_i4_rhun_vet_infantry_pl|Рунийский воин-ветеран
+trp_i5_rhun_ox_warrior|Воловий рубака
+trp_i5_rhun_ox_warrior_pl|Воловьи рубаки
+trp_c2_rhun_horseman|Всадник Рун
+trp_c2_rhun_horseman_pl|Всадник Рун
+trp_c3_rhun_outrider|Наездник Руна
+trp_c3_rhun_outrider_pl|Наездники Руна
+trp_c4_rhun_noble_rider|Знатный Всадник Руна
+trp_c4_rhun_noble_rider_pl|Знатные Всадники Руна
+trp_c5_rhun_warrider|Рунийский Всадник Войны
+trp_c5_rhun_warrider_pl|Рунийские Всадники Войны
+trp_c6_rhun_warlord|Военачальник Руна
+trp_c6_rhun_warlord_pl|Военачальники Руна
+trp_i1_dwarf_apprentice|Гном-Новобранец
+trp_i1_dwarf_apprentice_pl|Гномы-Новобранцы
+trp_i2_dwarf_warrior|Гном-Воин
+trp_i2_dwarf_warrior_pl|Гномы-Воины
+trp_i3_dwarf_hardened_warrior|Гном-Ветеран
+trp_i3_dwarf_hardened_warrior_pl|Гномы-Ветераны
+trp_i4_dwarf_spearman|Гном-Копьеносец
+trp_i4_dwarf_spearman_pl|Гномы-Копьеносцы
+trp_i5_dwarf_pikeman|Гном-Пикинер
+trp_i5_dwarf_pikeman_pl|Гномы-Пикинеры
+trp_i6_dwarf_longpikeman|Длиннобородый Пикинер
+trp_i6_dwarf_longpikeman_pl|Длиннобородые Пикинеры
+trp_i4_dwarf_axeman|Гном-Рубака
+trp_i4_dwarf_axeman_pl|Гномы-Рубаки
+trp_i5_dwarf_expert_axeman|Гном-Воитель
+trp_i5_dwarf_expert_axeman_pl|Гномы-Воители
+trp_i6_dwarf_longbeard_axeman|Длиннобородый Королевский Страж
+trp_i6_dwarf_longbeard_axeman_pl|Длиннобородые Королевские Стражи
+trp_a2_dwarf_lookout|Гном-Дозорный
+trp_a2_dwarf_lookout_pl|Гномы-Дозорные
+trp_a3_dwarf_scout|Гном-Разведчик
+trp_a3_dwarf_scout_pl|Гномы-Разведчики
+trp_a4_dwarf_bowman|Гном-Стрелок
+trp_a4_dwarf_bowman_pl|Гномы-Стрелки
+trp_i6_dwarf_longaxeman|Длиннобородый Секироносец
+trp_i6_dwarf_longaxeman_pl|Длиннобородые Секироносцы
+trp_i3_iron_hills_warrior|Воин Железных Холмов
+trp_i3_iron_hills_warrior_pl|Воины Железных Холмов
+trp_i2_iron_hills_miner|Рудокоп Железных Холмов
+trp_i2_iron_hills_miner_pl|Рудокопы Железных Холмов
+trp_i4_iron_hills_infantry|Пехотинец Железных Холмов
+trp_i4_iron_hills_infantry_pl|Пехотинцы Железных Холмов
+trp_i5_iron_hills_battle_dwarf|Воитель Железных Холмов
+trp_i5_iron_hills_battle_dwarf_pl|Воители Железных Холмов
+trp_i6_iron_hills_grors_guard|Гвардеец Грора
+trp_i6_iron_hills_grors_guard_pl|Гвардейцы Грора
+trp_i1_gon_levy|Гондорский новобранец
+trp_i1_gon_levy_pl|Гондорские новобранцы
+trp_i2_gon_watchman|Гондорский стражник
+trp_i2_gon_watchman_pl|Гондорские стражники
+trp_i3_gon_footman|Пехотинец Гондора
+trp_i3_gon_footman_pl|Пехотинцы Гондора
+trp_i4_gon_spearman|Копейщик Гондора
+trp_i4_gon_spearman_pl|Копейщики Гондора
+trp_i5_gon_vet_spearman|Копейщик-ветеран Гондора
+trp_i5_gon_vet_spearman_pl|Копейщики-ветераны Гондора
+trp_i6_gon_tower_spearman|Страж Фонтана
+trp_i6_gon_tower_spearman_pl|Стражи Фонтана
+trp_i4_gon_swordsman|Мечник Гондора
+trp_i4_gon_swordsman_pl|Мечники Гондора
+trp_i5_gon_vet_swordsman|Мечник-ветеран Гондора
+trp_i5_gon_vet_swordsman_pl|Мечники-ветераны Гондора
+trp_i6_gon_tower_swordsman|Мечник Стражи Цитадели
+trp_i6_gon_tower_swordsman_pl|Мечники Стражи Цитадели
+trp_c1_gon_nobleman|Знатный гондорец
+trp_c1_gon_nobleman_pl|Знатный гондорец
+trp_c2_gon_squire|Оруженосец Гондора
+trp_c2_gon_squire_pl|Оруженосцы Гондора
+trp_c3_gon_vet_squire|Оруженосец-ветеран Гондора
+trp_c3_gon_vet_squire_pl|Оруженосцы-ветераны Гондора
+trp_c4_gon_knight|Рыцарь Гондора
+trp_c4_gon_knight_pl|Рыцари Гондора
+trp_c5_gon_vet_knight|Рыцарь-ветеран Гондора
+trp_c5_gon_vet_knight_pl|Рыцари-ветераны Гондора
+trp_c6_gon_tower_knight|Рыцарь Цитадели
+trp_c6_gon_tower_knight_pl|Рыцари Цитадели
+trp_a3_gon_bowman|Стрелок Гондора
+trp_a3_gon_bowman_pl|Стрелки Гондора
+trp_a4_gon_archer|Лучник Гондора
+trp_a4_gon_archer_pl|Лучники Гондора
+trp_a5_gon_vet_archer|Лучник-ветеран Гондора
+trp_a5_gon_vet_archer_pl|Лучники-ветераны Гондора
+trp_a6_gon_tower_archer|Лучник Стражи Цитадели
+trp_a6_gon_tower_archer_pl|Лучники Стражи Цитадели
+trp_steward_guard|Гвардеец Наместника
+trp_steward_guard_pl|Гвардейцы Наместника
+trp_a4_ithilien_ranger|Рейнджер Итилиэна
+trp_a4_ithilien_ranger_pl|Рейнджеры Итилиэна
+trp_a5_ithilien_vet_ranger|Рейнджер-ветеран Итилиэна
+trp_a5_ithilien_vet_ranger_pl|Рейнджеры-ветераны Итилиэна
+trp_a6_ithilien_master_ranger|Искусный рейнджер Итилиэна
+trp_a6_ithilien_master_ranger_pl|Искусные рейнджеры Итилиэна
+trp_a6_ithilien_leader|Командир отряда итилиэнских рейнджеров
+trp_a6_ithilien_leader_pl|Командиры отрядов итилиэнских рейнджеров
+trp_i1_loss_woodsman|Лоссарнахский лесоруб
+trp_i1_loss_woodsman_pl|Лоссарнахские лесорубы
+trp_i2_loss_axeman|Лоссарнахский воин с топором
+trp_i2_loss_axeman_pl|Лоссарнахские воины с топорами
+trp_i3_loss_vet_axeman|Лоссарнахский опытный воин с топором
+trp_i3_loss_vet_axeman_pl|Лоссарнахские опытные воины с топорами
+trp_i4_loss_heavy_axeman|Тяжёлый лоссарнахский воин с топором
+trp_i4_loss_heavy_axeman_pl|Тяжёлые лоссарнахские воины с топорами
+trp_i5_loss_axemaster|Лоссарнахский искусный воин с топором
+trp_i5_loss_axemaster_pl|Лоссарнахские искусные воины с топорами
+trp_i6_loss_leader|Командир лоссарнахского отряда
+trp_i6_loss_leader_pl|Командиры лоссарнахских отряда
+trp_i1_pel_watchman|Пеларгирский стражник
+trp_i1_pel_watchman_pl|Пеларгирские стражники
+trp_a2_pel_marine|Пеларгирский моряк
+trp_a2_pel_marine_pl|Пеларгирские моряки
+trp_a3_pel_vet_marine|Пеларгирский опытный моряк
+trp_a3_pel_vet_marine_pl|Пеларгирские ветераны морпехоты
+trp_i2_pel_infantry|Пеларгирский пехотинец
+trp_i2_pel_infantry_pl|Пеларгирские пехотинцы
+trp_i3_pel_vet_infantry|Пеларгирский опытный пехотинец
+trp_i3_pel_vet_infantry_pl|Пеларгирские опытные пехотинцы
+trp_i6_pel_leader|Командир пеларгирского отряда
+trp_i6_pel_leader_pl|Командиры пеларгирских отрядов
+trp_a6_pel_marine_leader|Командир отряда пеларгирских моряков
+trp_a6_pel_marine_leader_pl|Командиры отрядов пеларгирских моряков
+trp_i1_lam_clansman|Воин ламедонского клана
+trp_i1_lam_clansman_pl|Воины ламедонских кланов
+trp_i2_lam_footman|Пехотинец Ламедона
+trp_i2_lam_footman_pl|Пехотинцы Ламедона
+trp_i3_lam_veteran|Опытный воин Ламедона
+trp_i3_lam_veteran_pl|Опытные воины Ламедона
+trp_i4_lam_warrior|Воин Ламедона
+trp_i4_lam_warrior_pl|Воины Ламедона
+trp_i5_lam_champion|Прославленный воин Ламедона
+trp_i5_lam_champion_pl|Прославленные воины Ламедона
+trp_c5_lam_knight|Рыцарь Ламедона
+trp_c5_lam_knight_pl|Рыцари Ламедона
+trp_c6_lam_leader|Командир ламедонского отряда
+trp_c6_lam_leader_pl|Командиры ламедонских отрядов
+trp_i1_pinnath_plainsman|Житель равнин Пиннат-Гелина
+trp_i1_pinnath_plainsman_pl|Жители равнин Пиннат-Гелина
+trp_c2_pinnath_rider|Всадник Пиннат-Гелина
+trp_c2_pinnath_rider_pl|Всадники Пиннат-Гелина
+trp_c3_pinnath_knight|Рыцарь Пиннат-Гелина
+trp_c3_pinnath_knight_pl|Рыцари Пиннат-Гелина
+trp_a2_pinnath_bowman|Стрелок Пиннат-Гелина
+trp_a2_pinnath_bowman_pl|Стрелки Пиннат-Гелина
+trp_a3_pinnath_archer|Лучник Пиннат-Гелина
+trp_a3_pinnath_archer_pl|Лучники Пиннат-Гелина
+trp_c6_pinnath_leader|Командир пиннат-гелинского отряда
+trp_c6_pinnath_leader_pl|Командиры пиннат-гелинских отрядов
+trp_a1_blackroot_hunter|Охотник из долины Чернокорня
+trp_a1_blackroot_hunter_pl|Охотники из долины Чернокорня
+trp_a2_blackroot_bowman|Стрелок из долины Чернокорня
+trp_a2_blackroot_bowman_pl|Стрелки из долины Чернокорня
+trp_a3_blackroot_archer|Лучник из долины Чернокорня
+trp_a3_blackroot_archer_pl|Лучники из долины Чернокорня
+trp_i2_blackroot_footman|Пехотинец из долины Чернокорня
+trp_i2_blackroot_footman_pl|Пехотинцы из долины Чернокорня
+trp_i3_blackroot_spearman|Копейщик из долины Чернокорня
+trp_i3_blackroot_spearman_pl|Копейщики из долины Чернокорня
+trp_a5_blackroot_shadow_hunter|Мортондский тёмный охотник
+trp_a5_blackroot_shadow_hunter_pl|Мортондские тёмные охотники
+trp_i1_amroth_recruit|Дол-амротский новобранец
+trp_i1_amroth_recruit_pl|Дол-амротские новобранцы
+trp_c2_amroth_squire|Оруженосец Дол-Амрота
+trp_c2_amroth_squire_pl|Оруженосцы Дол-Амрота
+trp_c3_amroth_vet_squire|Опытный оруженосец Дол-Амрота
+trp_c3_amroth_vet_squire_pl|Опытные оруженосцы Дол-Амрота
+trp_c4_amroth_knight|Рыцарь Дол-Амрота
+trp_c4_amroth_knight_pl|Рыцари Дол-Амрота
+trp_c5_amroth_vet_knight|Опытный рыцарь Дол-Амрота
+trp_c5_amroth_vet_knight_pl|Опытный рыцари Дол-Амрота
+trp_c6_amroth_swan_knight|Лебединый рыцарь Дол-Амрота
+trp_c6_amroth_swan_knight_pl|Лебединые рыцари Дол-Амрота
+trp_c6_amroth_leader|Командир дол-амротского отряда
+trp_c6_amroth_leader_pl|Командиры дол-амротских отрядов
+trp_a1_lorien_scout|Лориэнский разведчик
+trp_a1_lorien_scout_pl|Лориэнские разведчики
+trp_a2_lorien_warden|Лориэнский страж
+trp_a2_lorien_warden_pl|Лориэнские стражи
+trp_a3_lorien_vet_warden|Лориэнский опытный страж
+trp_a3_lorien_vet_warden_pl|Лориэнские опытные стражи
+trp_a4_lorien_gal_warden|Галадримский страж
+trp_a4_lorien_gal_warden_pl|Галадримские стражи
+trp_a5_lorien_gal_royal_warden|Королевский страж галадрим
+trp_a5_lorien_gal_royal_warden_pl|Королевские стражи галадрим
+trp_a6_lorien_grey_warden|Серый страж
+trp_a6_lorien_grey_warden_pl|Серые стражи
+trp_galadhrim_royal_marksman|Меткий стрелок галадрим
+trp_galadhrim_royal_marksman_pl|Меткие стрелки галадрим
+trp_noldorin_mounted_archer|Нолдорский конный лучник
+trp_noldorin_mounted_archer_pl|Нолдорские конные лучники
+trp_a2_lorien_archer|Лориэнский лучник
+trp_a2_lorien_archer_pl|Лориэнские лучники
+trp_a3_lorien_vet_archer|Лориэнский опытный лучник
+trp_a3_lorien_vet_archer_pl|Лориэнские опытные лучники
+trp_a4_lorien_gal_archer|Галадримский лучник
+trp_a4_lorien_gal_archer_pl|Галадримские лучники
+trp_a5_lorien_gal_royal_archer|Меткий стрелок галадрим
+trp_a5_lorien_gal_royal_archer_pl|Меткие стрелки галадрим
+trp_i3_lorien_inf|Лориэнские пешие воины
+trp_i3_lorien_inf_pl|Лориэнские пешие воины
+trp_i4_lorien_gal_inf|Галадримский пехотинец
+trp_i4_lorien_gal_inf_pl|Галадримская пехота
+trp_i5_lorien_gal_royal_inf|Галадримский королевский гвардеец
+trp_i5_lorien_gal_royal_inf_pl|Галадримские королевские гвардейцы
+trp_lothlorien_standard_bearer|Лориэнский Знаменосец
+trp_lothlorien_standard_bearer_pl|Лориэнские Знаменосцы
+trp_a1_greenwood_scout|Разведчик Зеленолесья
+trp_a1_greenwood_scout_pl|Разведчики Зеленолесья
+trp_a2_greenwood_veteran_scout|Опытный Разведчик Зеленолесья
+trp_a2_greenwood_veteran_scout_pl|Опытные Разведчики Зеленолесья
+trp_a3_greenwood_archer|Лучник Зеленолесья
+trp_a3_greenwood_archer_pl|Лучники Зеленолесья
+trp_a4_greenwood_veteran_archer|Опытный Лучник Зеленолесья
+trp_a4_greenwood_veteran_archer_pl|Опытные Лучники Зеленолесья
+trp_a5_greenwood_master_archer|Искусный Лучник Зеленолесья
+trp_a5_greenwood_master_archer_pl|Искусные Лучники Зеленолесья
+trp_a6_greenwood_chosen_marksman|Отборный Стрелок Трандуила
+trp_a6_greenwood_chosen_marksman_pl|Отборные Стрелки Трандуила
+trp_a3_greenwood_sentinel|Дозорный Зеленолесья
+trp_a3_greenwood_sentinel_pl|Дозорные Зеленолесья
+trp_a4_greenwood_vet_sentinel|Страж Зеленолесья
+trp_a4_greenwood_vet_sentinel_pl|Стражи Зеленолесья
+trp_a5_greenwood_vigilant|Хранитель Зеленолесья
+trp_a5_greenwood_vigilant_pl|Хранители Зеленолесья
+trp_i2_greenwood_infantry|Пехотинец Зеленолесья
+trp_i2_greenwood_infantry_pl|Пехотинцы Зеленолесья
+trp_i3_greenwood_vet_infantry|Опытный Пехотинец Зеленолесья
+trp_i3_greenwood_vet_infantry_pl|Опытные Пехотинцы Зеленолесья
+trp_i4_greenwood_elite_infantry|Гвардеец Зеленолесья
+trp_i4_greenwood_elite_infantry_pl|Гвардейцы Зеленолесья
+trp_i5_greenwood_chosen_shieldmaster|Отборный Щитоносец Трандуила
+trp_i5_greenwood_chosen_shieldmaster_pl|Отборные Щитоносцы Трандуила
+trp_i5_greenwood_chosen_spearmaster|Отборный Копьеносец Трандуила
+trp_i5_greenwood_chosen_spearmaster_pl|Отборные Копьеносцы Трандуила
+trp_i5_greenwood_standard_bearer|Знаменосец Зеленолесья
+trp_i5_greenwood_standard_bearer_pl|Знаменосцы Зеленолесья
+trp_a1_riv_scout|Ривендельский разведчик
+trp_a1_riv_scout_pl|Ривендельские разведчики
+trp_a2_riv_vet_scout|Ривендельский опытный разведчик
+trp_a2_riv_vet_scout_pl|Ривендельские опытные разведчики
+trp_a3_riv_archer|Ривендельский лучник
+trp_a3_riv_archer_pl|Ривендельские лучники
+trp_a4_riv_vet_archer|Ривендельский опытный лучник
+trp_a4_riv_vet_archer_pl|Ривендельские опытные лучники
+trp_a5_riv_master_archer|Ривендельский искусный лучник
+trp_a5_riv_master_archer_pl|Ривендельские искусные лучники
+trp_a6_riv_guardian|Страж Имладриса
+trp_a6_riv_guardian_pl|Стражи Имладриса
+trp_i3_riv_swordbearer|Ривендельский мечник
+trp_i3_riv_swordbearer_pl|Ривендельские мечники
+trp_i4_riv_vet_swordbearer|Ривендельский опытный мечник
+trp_i4_riv_vet_swordbearer_pl|Ривендельские опытные мечники
+trp_i5_riv_swordmaster|Ривендельский мастер меча
+trp_i5_riv_swordmaster_pl|Искусные ривендельские мечники
+trp_i6_riv_champion|Искусный Мечник Имладриса
+trp_i6_riv_champion_pl|Искусные Мечники Имладриса
+trp_ac5_riv_rider|Ривендельский всадник
+trp_ac5_riv_rider_pl|Ривендельские всадники
+trp_ac6_riv_knight|Герой Имладриса
+trp_ac6_riv_knight_pl|Герои Имладриса
+trp_i6_rivendell_standard_bearer|Ривендельский знаменосец
+trp_i6_rivendell_standard_bearer_pl|Ривендельские знаменосцы
+trp_a1_arnor_scout|Разведчик дунедайн
+trp_a1_arnor_scout_pl|Разведчики дунедайн
+trp_a2_arnor_vet_scout|Следопыт дунедайн
+trp_a2_arnor_vet_scout_pl|Следопыты дунедайн
+trp_i3_arnor_swordsman|Ратник Дунэдайн
+trp_i3_arnor_swordsman_pl|Ратники Дунэдайн
+trp_i4_arnor_vet_swordsman|Мечник Дунэдайн
+trp_i4_arnor_vet_swordsman_pl|Мечники Дунэдайн
+trp_i5_arnor_champion|Чемпион Арнора
+trp_i5_arnor_champion_pl|Чемпионы Арнора
+trp_c4_arnor_horseman|Дунедианский Всадник
+trp_c4_arnor_horseman_pl|Всадник Дунэдайн
+trp_c5_arnor_knight|Рыцарь Арнора
+trp_c5_arnor_knight_pl|Рыцари Арнора
+trp_a3_arnor_ranger|Рейнджер дунедайн
+trp_a3_arnor_ranger_pl|Рейнджеры дунедайн
+trp_a4_arnor_vet_ranger|Опытный рейнджер дунедайн
+trp_a4_arnor_vet_ranger_pl|Опытные рейнджеры дунедайн
+trp_a5_arnor_master_ranger|Арнорский Рейнджер
+trp_a5_arnor_master_ranger_pl|Арнорские Рейнджеры
+trp_i1_rohan_youth|Роханский молодой воин
+trp_i1_rohan_youth_pl|Роханские молодые воины
+trp_i2_guardsman_of_rohan|Роханский стражник
+trp_i2_guardsman_of_rohan_pl|Роханские стражники
+trp_i3_footman_of_rohan|Пехотинец Рохана
+trp_i3_footman_of_rohan_pl|Пехотинцы Рохана
+trp_i4_veteran_footman_of_rohan|Опытный пехотинец Рохана
+trp_i4_veteran_footman_of_rohan_pl|Опытные пехотинцы Рохана
+trp_i5_elite_footman_of_rohan|Отборный пехотинец Рохана
+trp_i5_elite_footman_of_rohan_pl|Отборные пехотинцы Рохана
+trp_i6_footman_guard_of_rohan|Роханский воин гвардии Фольквине
+trp_i6_footman_guard_of_rohan_pl|Роханские воины гвардии Фольквине
+trp_i6_frealaf_raider|Налётчик Фреалафа
+trp_i6_frealaf_raider_pl|Налётчики Фреалафа
+trp_i5_raider_of_rohan|Налётчик Рохана
+trp_i5_raider_of_rohan_pl|Налётчики Рохана
+trp_i6_warden_of_methuseld|Страж Медусельда
+trp_i6_warden_of_methuseld_pl|Стражи Медусельда
+trp_ac3_skirmisher_of_rohan|Застрельщик Рохана
+trp_ac3_skirmisher_of_rohan_pl|Застрельщики Рохана
+trp_ac4_veteran_skirmisher_of_rohan|Опытный застрельщик Рохана
+trp_ac4_veteran_skirmisher_of_rohan_pl|Опытные застрельщики Рохана
+trp_ac5_elite_skirmisher_of_rohan|Отборный застрельщик Рохана
+trp_ac5_elite_skirmisher_of_rohan_pl|Отборные застрельщики Рохана
+trp_ac6_skirmisher_guard_of_rohan|Роханский воин гвардии Тенгела
+trp_ac6_skirmisher_guard_of_rohan_pl|Роханские воины гвардии Тенгела
+trp_c4_lancer_of_rohan|Конный копейщик Рохана
+trp_c4_lancer_of_rohan_pl|Конные копейщики Рохана
+trp_c5_elite_lancer_of_rohan|Отборный конный копейщик Рохана
+trp_c5_elite_lancer_of_rohan_pl|Отборные конные копейщики Рохана
+trp_c6_lancer_guard_of_rohan|Роханский воин гвардии Брего
+trp_c6_lancer_guard_of_rohan_pl|Роханские воины гвардии Брего
+trp_c6_king_s_man_of_rohan|Королевский страж
+trp_c6_king_s_man_of_rohan_pl|Королевские стражи
+trp_c2_squire_of_rohan|Оруженосец Рохана
+trp_c2_squire_of_rohan_pl|Оруженосцы Рохана
+trp_c3_rider_of_rohan|Всадник Рохана
+trp_c3_rider_of_rohan_pl|Всадники Рохана
+trp_c4_veteran_rider_of_rohan|Опытный всадник Рохана
+trp_c4_veteran_rider_of_rohan_pl|Опытные всадники Рохана
+trp_c5_elite_rider_of_rohan|Отборный всадник Рохана
+trp_c5_elite_rider_of_rohan_pl|Отборные всадники Рохана
+trp_c6_rider_guard_of_rohan|Роханский воин гвардии Эорла
+trp_c6_rider_guard_of_rohan_pl|Роханские воины гвардии Эорла
+trp_i6_2h_guard_of_rohan|Страж Хельмовой Пади
+trp_i6_2h_guard_of_rohan_pl|Стражи Хельмовой Пади
+trp_dismounted_veteran_skirmisher_of_rohan|Опытный застрельщик Рохана
+trp_dismounted_veteran_skirmisher_of_rohan_pl|Опытные застрельщики Рохана
+trp_dismounted_elite_skirmisher_of_rohan|Отборный застрельщик Рохана
+trp_dismounted_elite_skirmisher_of_rohan_pl|Отборные застрельщики Рохана
+trp_dismounted_thengel_guard_of_rohan|Роханский воин гвардии Тенгела
+trp_dismounted_thengel_guard_of_rohan_pl|Роханские воины гвардии Тенгела
+trp_i1_harad_levy|Харадский новобранец
+trp_i1_harad_levy_pl|Харадские новобранцы
+trp_i3_harad_infantry|Харадский Легкий Пехотинец
+trp_i3_harad_infantry_pl|Харадские Легкие Пехотинцы
+trp_i4_harad_spearman|Харадский копейщик
+trp_i4_harad_spearman_pl|Харадские копейщики
+trp_i5_harad_tiger_guard|Воин тигриной гвардии
+trp_i5_harad_tiger_guard_pl|Воины тигриной гвардии
+trp_i4_harad_swordsman|Харадский мечник
+trp_i4_harad_swordsman_pl|Харадские мечники
+trp_i5_harad_lion_guard|Воин львиной гвардии
+trp_i5_harad_lion_guard_pl|Воины львиной гвардии
+trp_a3_harad_hunter|Харадский охотник
+trp_a3_harad_hunter_pl|Харадские охотники
+trp_a4_harad_archer|Харадский лучник
+trp_a4_harad_archer_pl|Харадские лучники
+trp_a5_harad_eagle_guard|Воин орлиной гвардии
+trp_a5_harad_eagle_guard_pl|Воины орлиной гвардии
+trp_c2_harondor_scout|Харондорский разведчик
+trp_c2_harondor_scout_pl|Харондорские разведчики
+trp_c3_harondor_rider|Харондорский всадник
+trp_c3_harondor_rider_pl|Харондорские всадники
+trp_c4_harondor_light_cavalry|Харондорский Легкий Всадник
+trp_c4_harondor_light_cavalry_pl|Харондорские Легкие Всадники
+trp_c5_harondor_serpent_knight|Рыцарь Золотой Змеи
+trp_c5_harondor_serpent_knight_pl|Рыцари Золотой Змеи
+trp_ac3_harondor_skirmisher|Харондорский застрельщик
+trp_ac3_harondor_skirmisher_pl|Харондорские застрельщики
+trp_ac4_harondor_horse_archer|Харондорский конный лучник
+trp_ac4_harondor_horse_archer_pl|Харондорские конные лучники
+trp_ac5_harondor_black_snake|Конный лучник Чёрной змеи
+trp_ac5_harondor_black_snake_pl|Конные лучники Чёрной змеи
+trp_i2_far_harad_tribesman|Выходец из племён Дальнего Харада
+trp_i2_far_harad_tribesman_pl|Дальнехарадские воины племени
+trp_i4_far_harad_champion|Дальнехарадский прославленный воин
+trp_i4_far_harad_champion_pl|Дальнехарадские прославленные воины
+trp_i5_far_harad_panther_guard|Воин гвардии пантеры
+trp_i5_far_harad_panther_guard_pl|Воины гвардии пантеры
+trp_i1_dun_wildman|Дунландский дикарь
+trp_i1_dun_wildman_pl|Дунландские дикари
+trp_i2_dun_warrior|Дунландский воин
+trp_i2_dun_warrior_pl|Дунландские воины
+trp_i3_dun_pikeman|Дунландский пикинёр
+trp_i3_dun_pikeman_pl|Дунландские пикинёры
+trp_i4_dun_vet_pikeman|Дунландский опытный пикинёр
+trp_i4_dun_vet_pikeman_pl|Дунландские опытные пикинёры
+trp_ac4_dun_crebain_rider|Дунландский вороний всадник
+trp_ac4_dun_crebain_rider_pl|Дунландские вороньи всадники
+trp_i3_dun_vet_warrior|Дунландский воин-ветеран
+trp_i3_dun_vet_warrior_pl|Дунландские воины-ветераны
+trp_i4_dun_wolf_warrior|Дунландский волчий воин
+trp_i4_dun_wolf_warrior_pl|Дунландские волчьи воины
+trp_i5_dun_wolf_guard|Дунландский волчий страж
+trp_i5_dun_wolf_guard_pl|Дунландские волчьи стражи
+trp_ac5_dun_raven_rider|Дунландский Ночной Ворон
+trp_ac5_dun_raven_rider_pl|Дунландские Ночные Вороны
+trp_i1_khand_bondsman|Хандский Слуга
+trp_i1_khand_bondsman_pl|Хандские Слуги
+trp_i2_khand_pit_dog|Хандский Боец Ямы
+trp_i2_khand_pit_dog_pl|Хандские Бойцы Ямы
+trp_i3_khand_warrior|Хандский Воин
+trp_i3_khand_warrior_pl|Хандские Войны
+trp_i4_khand_vet_warrior|Хандский Опытный Воин
+trp_i4_khand_vet_warrior_pl|Хандские Опытные Воины
+trp_i5_khand_war_master|Варьягский Мастер Клинка
+trp_i5_khand_war_master_pl|Варьягские Мастера Клинка
+trp_c2_khand_pony_rider|Хандский Всадник на Пони
+trp_c2_khand_pony_rider_pl|Хандские Всадники на Пони
+trp_c3_khand_horseman|Хандский Всадник
+trp_c3_khand_horseman_pl|Хандские Всадники
+trp_c4_khand_heavy_horseman|Хандский Тяжелый Всадник
+trp_c4_khand_heavy_horseman_pl|Хандские Тяжелые Всадники
+trp_c5_khand_kataphrakt|Варьягский Катафракт
+trp_c5_khand_kataphrakt_pl|Варьягские Катафракты
+trp_c5_khand_lance_kataphrakt|Варьягский Улан
+trp_c5_khand_lance_kataphrakt_pl|Варьягские Уланы
+trp_i4_khand_halberdier|Хандский Копьеносец
+trp_i4_khand_halberdier_pl|Хандские Копьеносцы
+trp_i5_khand_halberd_master|Варьягский Рассекатель
+trp_i5_khand_halberd_master_pl|Варьягские Рассекатели
+trp_i3_khand_pitfighter|Боец Ямы Ханд
+trp_i3_khand_pitfighter_pl|Боецы Ямы Ханд
+trp_i4_khand_pit_champion|Хандский Победитель Ямы
+trp_i4_khand_pit_champion_pl|Хандские Победители Ямы
+trp_i5_khand_pit_master|Варьягский Жаждущий Крови
+trp_i5_khand_pit_master_pl|Варьягские Жаждущие Крови
+trp_ac3_khand_skirmisher|Хандский Метатель
+trp_ac3_khand_skirmisher_pl|Хандские Метатели
+trp_ac4_khand_vet_skirmisher|Хандский Застрельщик-Ветеран
+trp_ac4_khand_vet_skirmisher_pl|Хандские Застрельщики-Ветераны
+trp_ac5_khand_heavy_skirmisher|Тяжёлый варьягский застрельщик
+trp_ac5_khand_heavy_skirmisher_pl|Тяжёлые варьягские застрельщики
+trp_i1_corsair_youth|Умбарский моряк
+trp_i1_corsair_youth_pl|Умбарские моряки
+trp_i2_corsair_warrior|Умбарский воин
+trp_i2_corsair_warrior_pl|Умбарские воины
+trp_i3_corsair_spearman|Умбарский копейщик
+trp_i3_corsair_spearman_pl|Умбарский копейщик
+trp_i4_corsair_raider|Морской налётчик
+trp_i4_corsair_raider_pl|Морские налётчики
+trp_i5_corsair_night_raider|Корсарский ночной налётчик
+trp_i5_corsair_night_raider_pl|Корсарские ночные налётчики
+trp_a2_corsair_marine|Умбарский морской пехотинец
+trp_a2_corsair_marine_pl|Умбарская морская пехота
+trp_a3_corsair_marksman|Умбарский стрелок
+trp_a3_corsair_marksman_pl|Умбарские стрелки
+trp_a4_corsair_veteran_marksman|Умбарский лучник-ветеран
+trp_a4_corsair_veteran_marksman_pl|Умбарские лучники-ветераны
+trp_a5_corsair_master_marksman|Искусный корсар-лучник
+trp_a5_corsair_master_marksman_pl|Искусные корсары-лучники
+trp_i3_corsair_swordsman|Мечник Умбара
+trp_i3_corsair_swordsman_pl|Мечники Умбара
+trp_i4_corsair_veteran_swordsman|Опытный мечник Умбара
+trp_i4_corsair_veteran_swordsman_pl|Опытные мечники Умбара
+trp_i5_corsair_master_swordsman|Искусный корсар-мечник
+trp_i5_corsair_master_swordsman_pl|Искусные корсары-мечники
+trp_a4_corsair_assassin|Корсар-убийца
+trp_a4_corsair_assassin_pl|Корсары-убийцы
+trp_a5_corsair_master_assassin|Корсар-убийца
+trp_a5_corsair_master_assassin_pl|Корсары-убийцы
+trp_i4_corsair_veteran_spearman|Умбарский копейщик-ветеран
+trp_i4_corsair_veteran_spearman_pl|Умбарский копейщик-ветеран
+trp_i5_corsair_master_spearman|Умбарский мастер копья
+trp_i5_corsair_master_spearman_pl|Умбарские мастера копья
+trp_i5_corsair_master_pikeman|Умбарский мастер пики
+trp_i5_corsair_master_pikeman_pl|Умбарские мастера пики
+trp_i1_isen_orc_snaga|Орк-снага Изенгарда
+trp_i1_isen_orc_snaga_pl|Орки-снаги Изенгарда
+trp_i2_isen_orc|Орк Изенгарда
+trp_i2_isen_orc_pl|Орки Изенгарда
+trp_i3_isen_large_orc|Крупный орк Изенгарда
+trp_i3_isen_large_orc_pl|Крупные орки Изенгарда
+trp_i4_isen_fell_orc|Свирепый орк Изенгарда
+trp_i4_isen_fell_orc_pl|Свирепые орки Изенгарда
+trp_i3_isen_large_orc_despoiler|Крупный орк-мародёр
+trp_i3_isen_large_orc_despoiler_pl|Крупные орки-мародёры
+trp_i4_isen_fell_orc_despoiler|Свирепый орк-мародёр
+trp_i4_isen_fell_orc_despoiler_pl|Свирепые орки-мародёры
+trp_ac2_isen_wolf_rider|Волчий всадник Изенгарда
+trp_ac2_isen_wolf_rider_pl|Волчьи всадники Изенгарда
+trp_ac3_isen_warg_rider|Изенгардский всадник на варге
+trp_ac3_isen_warg_rider_pl|Изенгардские всадники на варгах
+trp_ac4_isen_white_hand_rider|Всадник Белой Длани
+trp_ac4_isen_white_hand_rider_pl|Всадники Белой Длани
+trp_warg_ghost_1b|Варг
+trp_warg_ghost_1b_pl|Варги
+trp_warg_ghost_1c|Варг
+trp_warg_ghost_1c_pl|Варги
+trp_warg_ghost_1d|Варг
+trp_warg_ghost_1d_pl|Варги
+trp_warg_ghost_a1b|Варг
+trp_warg_ghost_a1b_pl|Варги
+trp_warg_ghost_a1c|Варг в броне
+trp_warg_ghost_a1c_pl|Варги в броне
+trp_warg_ghost_a2b|Варг в броне
+trp_warg_ghost_a2b_pl|Варги в броне
+trp_warg_ghost_a2c|Варг в броне
+trp_warg_ghost_a2c_pl|Варги в броне
+trp_warg_ghost_a3a|Варг в броне
+trp_warg_ghost_a3a_pl|Варги в броне
+trp_warg_ghost_h|Крупный варг
+trp_warg_ghost_h_pl|Крупные варги
+trp_a2_isen_uruk_tracker|Следопыт урук-хай
+trp_a2_isen_uruk_tracker_pl|Следопыты урук-хай
+trp_a3_isen_large_uruk_tracker|Крупный следопыт урук-хай
+trp_a3_isen_large_uruk_tracker_pl|Крупные следопыты урук-хай
+trp_a4_isen_fighting_uruk_tracker|Бойцовый следопыт урук-хай
+trp_a4_isen_fighting_uruk_tracker_pl|Бойцовые следопыты урук-хай
+trp_i6_isen_uruk_berserker|Бойцовый берсерк урук-хай
+trp_i6_isen_uruk_berserker_pl|Бойцовые берсерки урук-хай
+trp_i1_isen_uruk_snaga|Новорожденный урук-хай
+trp_i1_isen_uruk_snaga_pl|Новорожденные урук-хай
+trp_i2_isen_uruk|Урук-хай Изенгарда
+trp_i2_isen_uruk_pl|Урук-хай Изенгарда
+trp_i3_isen_large_uruk|Крупные урук-хай Изенгарда
+trp_i3_isen_large_uruk_pl|Крупные урук-хай Изенгарда
+trp_i4_isen_fighting_uruk_warrior|Бойцовый воин урук-хай
+trp_i4_isen_fighting_uruk_warrior_pl|Бойцовые воины урук-хай
+trp_i5_isen_fighting_uruk_champion|Непобедимый бойцовый урук-хай
+trp_i5_isen_fighting_uruk_champion_pl|Непобедимые бойцовые урук-хай
+trp_i3_isen_uruk_pikeman|Пикинёр урук-хай
+trp_i3_isen_uruk_pikeman_pl|Пикинёры урук-хай
+trp_i4_isen_fighting_uruk_pikeman|Бойцовый пикинёр урук-хай
+trp_i4_isen_fighting_uruk_pikeman_pl|Бойцовые пикинёры урук-хай
+trp_i5_isen_uruk_standard_bearer|Знаменосец урук-хай
+trp_i5_isen_uruk_standard_bearer_pl|Знаменосцы урук-хай
+trp_i1_mordor_uruk_snaga|Мордорский урук снага
+trp_i1_mordor_uruk_snaga_pl|Уруки-снаги Мордора
+trp_i2_mordor_uruk|Мордорский урук
+trp_i2_mordor_uruk_pl|Мордорские уруки
+trp_i3_mordor_large_uruk|Мордорский крупный урук
+trp_i3_mordor_large_uruk_pl|Мордорские крупные уруки
+trp_i4_mordor_fell_uruk|Мордорский урук-рубака
+trp_i4_mordor_fell_uruk_pl|Мордорские уруки-рубаки
+trp_i3_mordor_uruk_slayer|Мордорский урук-убийца
+trp_i3_mordor_uruk_slayer_pl|Мордорские уруки-убийцы
+trp_i4_mordor_fell_uruk_slayer|Смертоносный урук Мордора
+trp_i4_mordor_fell_uruk_slayer_pl|Смертоносные уруки Мордора
+trp_i5_mordor_black_uruk|Чёрный урук Барад-Дура
+trp_i5_mordor_black_uruk_pl|Чёрные уруки Барад-Дура
+trp_i5_mordor_uruk_standard_bearer|Мордорский знаменосец
+trp_i5_mordor_uruk_standard_bearer_pl|Мордорские знаменосцы
+trp_troll_of_moria|Пещерный Тролль
+trp_troll_of_moria_pl|Пещерные Тролли
+trp_armoured_troll|Тролль в доспехах
+trp_armoured_troll_pl|Тролли в доспехах
+trp_olog_hai|Мордорский олог-хай
+trp_olog_hai_pl|Мордорские олог-хай
+trp_ent|Энт
+trp_ent_pl|Энты
+trp_i1_guldur_orc_snaga|Орк Снага из Дол Гулдура
+trp_i1_guldur_orc_snaga_pl|Орки Снаги из Дол Гулдура
+trp_a2_guldur_orc_tracker|Орк следопыт из Дол Гулдура
+trp_a2_guldur_orc_tracker_pl|Орки следопыты из Дол Гулдура
+trp_i1_mordor_orc_snaga|Мордорский орк снага
+trp_i1_mordor_orc_snaga_pl|Орки-снаги Мордора
+trp_i2_mordor_orc|Мордорский орк
+trp_i2_mordor_orc_pl|Мордорские орки
+trp_i3_mordor_large_orc|Крупный мордорский орк
+trp_i3_mordor_large_orc_pl|Крупные мордорские орки
+trp_i4_mordor_fell_orc|Мордорский орк-рубака
+trp_i4_mordor_fell_orc_pl|Мордорские орки-рубаки
+trp_c3_mordor_warg_rider|Волчий всадник Горгорота
+trp_c3_mordor_warg_rider_pl|Волчьи всадники Горгорота
+trp_c4_mordor_great_warg_rider|Удунский всадник на варге
+trp_c4_mordor_great_warg_rider_pl|Удунские всадники на варгах
+trp_i2_mordor_morgul_orc|Орк из Минас Моргула
+trp_i2_mordor_morgul_orc_pl|Орки из Минас Моргула
+trp_i4_mordor_fell_morgul_orc|Свирепый Орк из Минас Моргула
+trp_i4_mordor_fell_morgul_orc_pl|Свирепые Орки из Минас Моргула
+trp_a3_guldur_large_orc_tracker|Большой Орк Следопыт из Дол Гулдура
+trp_a3_guldur_large_orc_tracker_pl|Большие Орки Следопыты из Дол Гулдура
+trp_a4_guldur_fell_orc_tracker|Свирепый Орк Следопыт из Дол Гулдура 
+trp_a4_guldur_fell_orc_tracker_pl|Свирепые Орки Следопыты из Дол Гулдура
+trp_a2_mordor_orc_archer|Мордорский орк-лучник
+trp_a2_mordor_orc_archer_pl|Мордорские орки-лучники
+trp_a3_mordor_large_orc_archer|Крупный орк-лучник Мордора
+trp_a3_mordor_large_orc_archer_pl|Крупные орки-лучники Мордора
+trp_a4_mordor_fell_orc_archer|Свирепый орк-лучник Мордора
+trp_a4_mordor_fell_orc_archer_pl|Свирепые орки-лучники Мордора
+trp_c3_moria_wolf_rider|Волчий всадник Мории
+trp_c3_moria_wolf_rider_pl|Волчьи всадники Мории
+trp_c4_moria_warg_rider|Морийский всадник на варге
+trp_c4_moria_warg_rider_pl|Морийские всадники на варгах
+trp_c5_moria_clan_rider|Всадник из клана Болга
+trp_c5_moria_clan_rider_pl|Всадники из клана Болга
+trp_i1_moria_snaga|Снага Мории
+trp_i1_moria_snaga_pl|Снаги Мории
+trp_i2_moria_goblin|Гоблин Мории
+trp_i2_moria_goblin_pl|Гоблины Мории
+trp_i3_moria_large_goblin|Крупный гоблин Мории
+trp_i3_moria_large_goblin_pl|Крупные гоблины Мории
+trp_i4_moria_fell_goblin|Свирепый гоблин Мории
+trp_i4_moria_fell_goblin_pl|Свирепые гоблины Мории
+trp_a2_moria_goblin_archer|Гоблин-лучник Мории
+trp_a2_moria_goblin_archer_pl|Гоблины-лучники Мории
+trp_a3_moria_large_goblin_archer|Крупный гоблин-лучник Мории
+trp_a3_moria_large_goblin_archer_pl|Крупные гоблины-лучники Мории
+trp_a4_moria_fell_goblin_archer|Свирепый гоблин-лучник Мории
+trp_a4_moria_fell_goblin_archer_pl|Свирепые гоблины-лучники Мории
+trp_i1_gunda_goblin|Гундабадский гоблин
+trp_i1_gunda_goblin_pl|Гундабадские гоблины
+trp_i2_gunda_orc|Гундабадский орк
+trp_i2_gunda_orc_pl|Гундабадские орки
+trp_i3_gunda_orc_fighter|Гундабадский орк-боец
+trp_i3_gunda_orc_fighter_pl|Гундабадские орки-бойцы
+trp_i4_gunda_orc_warrior|Гундабадский орк-воин
+trp_i4_gunda_orc_warrior_pl|Гундабадские орки-воины
+trp_i4_gunda_orc_berserker|Гундабадский орк-берсерк
+trp_i4_gunda_orc_berserker_pl|Гундабадские орки-берсерки
+trp_ca4_gunda_skirmisher|Гундабадский лучник
+trp_ca4_gunda_skirmisher_pl|Гундабадские лучники
+trp_ca5_gunda_clan_skirmisher|Гоблин-лучник Северного Клана
+trp_ca5_gunda_clan_skirmisher_pl|Гоблины-лучники Северного Клана
+trp_c3_gunda_goblin_rider|Гундабадский гоблин-всадник
+trp_c3_gunda_goblin_rider_pl|Гундабадские гоблины-всадники
+trp_c4_gunda_warg_rider|Гундабадский волчий всадник
+trp_c4_gunda_warg_rider_pl|Гундабадские волчьи всадники
+trp_c5_gunda_clan_rider|Гоблин-всадник из северного клана
+trp_c5_gunda_clan_rider_pl|Гоблины-всадники из северных кланов
+trp_mountain_goblin2|Горный гоблин
+trp_mountain_goblin2_pl|Горные гоблины
+trp_tribal_orc2|Дикий орк
+trp_tribal_orc2_pl|Дикие орки
+trp_tribal_orc_warrior2|Дикий орк-воин
+trp_tribal_orc_warrior2_pl|Дикие орки-воины
+trp_i5_gunda_orc_champion|Гундабадский Орк Чемпион
+trp_i5_gunda_orc_champion_pl|Гундабадские Орки Чемпионы
+trp_i2_mordor_num_renegade|Чёрный нуменорец
+trp_i2_mordor_num_renegade_pl|Чёрные нуменорцы
+trp_i3_mordor_num_warrior|Чёрный нуменорец-воин
+trp_i3_mordor_num_warrior_pl|Чёрные нуменорцы-воины
+trp_i4_mordor_num_vet_warrior|Чёрный нуменорец-ветеран
+trp_i4_mordor_num_vet_warrior_pl|Чёрные нуменорцы-ветераны
+trp_i5_mordor_num_champion|Непобедимый чёрный нуменорец
+trp_i5_mordor_num_champion_pl|Непобедимые чёрные нуменорцы
+trp_i5_mordor_num_assassin|Чёрный нуменорец-убийца
+trp_i5_mordor_num_assassin_pl|Чёрные нуменорцы-убийцы
+trp_c4_mordor_num_horseman|Чёрный нуменорец-всадник
+trp_c4_mordor_num_horseman_pl|Чёрные нуменорцы-всадники
+trp_c5_mordor_num_knight|Отборный чёрный нуменорец-всадник
+trp_c5_mordor_num_knight_pl|Отборные чёрные нуменорцы-всадники
+trp_noldorin_commander|Нолдорский командир
+trp_noldorin_commander_pl|Нолдорские командиры
+trp_elf_captain_of_lothlorien|Командир отряда Лотлориэна
+trp_elf_captain_of_lothlorien_pl|Командиры отрядов Лотлориэна
+trp_lothlorien_lieutenant|Лориэнский сотник
+trp_lothlorien_lieutenant_pl|Лориэнские сотники
+trp_elf_captain_of_mirkwood|Полководец Зеленолесья
+trp_elf_captain_of_mirkwood_pl|Полководцы Зеленолесья
+trp_mirkwood_lieutenant|Темнолесский Сотник
+trp_mirkwood_lieutenant_pl|Темнолесские Сотники
+trp_elf_captain_of_rivendell|Полководец Ривенделла
+trp_elf_captain_of_rivendell_pl|Полководцы Ривенделла
+trp_rivendell_lieutenant|Ривендельский сотник
+trp_rivendell_lieutenant_pl|Ривендельские сотники
+trp_lieutenant_of_rohan|Сотник Рохана
+trp_lieutenant_of_rohan_pl|Сотники Рохана
+trp_captain_of_rohan|Полководец Рохана
+trp_captain_of_rohan_pl|Полководцы Рохана
+trp_high_captain_of_rohan|Воевода Рохана
+trp_high_captain_of_rohan_pl|Воеводы Рохана
+trp_lieutenant_of_isengard|Сотник Изенгарда
+trp_lieutenant_of_isengard_pl|Сотники Изенгарда
+trp_captain_of_isengard|Полководец Изенгарда
+trp_captain_of_isengard_pl|Полководцы Изенгарда
+trp_high_captain_of_isengard|Воевода Изенгарда
+trp_high_captain_of_isengard_pl|Воеводы Изенгарда
+trp_lieutenant_of_mordor|Сотник Мордора
+trp_lieutenant_of_mordor_pl|Сотники Мордора
+trp_captain_of_mordor|Полководец Мордора
+trp_captain_of_mordor_pl|Полководцы Мордора
+trp_high_captain_of_mordor|Воевода Мордора
+trp_high_captain_of_mordor_pl|Воеводы Мордора
+trp_easterling_chieftain|Варьягский вождь
+trp_easterling_chieftain_pl|Варьягские вожди
+trp_easterling_lieutenant|Варьягский жрец войны
+trp_easterling_lieutenant_pl|Варьягские жрецы войны
+trp_harad_chieftain|Харадский вождь
+trp_harad_chieftain_pl|Харадские вожди
+trp_harad_lieutenant|Харадский сотник
+trp_harad_lieutenant_pl|Харадские сотники
+trp_black_numenorean_captain|Чёрный нуменорец-полководец
+trp_black_numenorean_captain_pl|Чёрные нуменорцы-полководец
+trp_black_numenorean_lieutenant|Чёрный нуменорец-сотник
+trp_black_numenorean_lieutenant_pl|Чёрный нуменорецы-сотники
+trp_a5_dun_night_wolf|Дунландский ночной волк
+trp_a5_dun_night_wolf_pl|Дунландские ночные волки
+trp_dunnish_lieutenant|Дунландский верховный вождь
+trp_dunnish_lieutenant_pl|Дунландские верховные вожди
+trp_goblin_chieftain|Гоблинский вождь
+trp_goblin_chieftain_pl|Гоблинские вожди
+trp_captain_of_gondor|Полководец Гондора
+trp_captain_of_gondor_pl|Гондорские полководцы
+trp_nobleman|Знатный человек
+trp_nobleman_pl|Знатные люди
+trp_gondor_agent|Гондорский шпион
+trp_gondor_agent_pl|Гондорские шпионы
+trp_rohan_agent|Роханский шпион
+trp_rohan_agent_pl|Роханские шпионы
+trp_mordor_agent|Мордорский шпион
+trp_mordor_agent_pl|Мордорские шпионы
+trp_isengard_agent|Изенгардский шпион
+trp_isengard_agent_pl|Изенгардские шпионы
+trp_looter|Грабитель
+trp_looter_pl|Грабители
+trp_bandit|Бандит
+trp_bandit_pl|Бандиты
+trp_brigand|Разбойник
+trp_brigand_pl|Бандиты
+trp_mountain_bandit|Горный разбойник
+trp_mountain_bandit_pl|Горные разбойники
+trp_forest_bandit|Лесной разбойник
+trp_forest_bandit_pl|Лесные разбойники
+trp_sea_raider|Морской налётчик
+trp_sea_raider_pl|Морские налётчики
+trp_steppe_bandit|Степной разбойник
+trp_steppe_bandit_pl|Степные разбойники
+trp_manhunter|Охотник за головами
+trp_manhunter_pl|Охотники за головами
+trp_kidnapped_girl|Похищенная девушка
+trp_kidnapped_girl_pl|Похищенные девушки
+trp_refugee|Беженец
+trp_refugee_pl|Беженцы
+trp_peasant_woman|Крестьянка
+trp_peasant_woman_pl|Крестьянки
+trp_caravan_master|Хозяин каравана
+trp_caravan_master_pl|Хозяева караванов
+trp_caravan_guard|Охрана каравана
+trp_caravan_guard_pl|Охрана каравана
+trp_messenger_man|Гонец
+trp_messenger_man_pl|Гонцы
+trp_messenger_elf|Гонец
+trp_messenger_elf_pl|Гонцы
+trp_messenger_dwarf|Гонец
+trp_messenger_dwarf_pl|Гонцы
+trp_messenger_orc|Гонец
+trp_messenger_orc_pl|Гонцы
+trp_messenger_evil_man|Гонец
+trp_messenger_evil_man_pl|Гонцы
+trp_town_walker_1|Горожанин
+trp_town_walker_1_pl|Горожане
+trp_town_walker_2|Горожанка
+trp_town_walker_2_pl|Горожане
+trp_village_walker_1|Крестьянин
+trp_village_walker_1_pl|Крестьяне
+trp_village_walker_2|Крестьянин
+trp_village_walker_2_pl|Крестьяне
+trp_spy_walker_1|Горожанин
+trp_spy_walker_1_pl|Горожане
+trp_spy_walker_2|Горожанка
+trp_spy_walker_2_pl|Горожанки
+trp_walker_man_gondor_black|Горожанин
+trp_walker_man_gondor_white|Горожанин
+trp_walker_man_gondor_blue|Горожанин
+trp_walker_man_gondor_green|Горожанин
+trp_walker_man_rohan_t|Роханский горожанин
+trp_walker_man_rohan_d|Роханский горожанин
+trp_walker_woman_rohan_t|Роханская девушка
+trp_walker_woman_rohan_d|Роханская девушка
+trp_walker_woman_gondor_b|Гондорская женщина
+trp_walker_woman_gondor_bw|Гондорская женщина
+trp_walker_woman_gondor_w|Знатный гондорец
+trp_ramun_the_slave_trader|Рамун-работорговец
+trp_guide|Быстрый Джимми
+trp_galeas|Галеас
+trp_farmer_from_bandit_village|Крестьянин
+trp_farmer_from_bandit_village_pl|Крестьяне
+trp_trainer_1|Наставник
+trp_trainer_2|Наставник
+trp_trainer_3|Наставник
+trp_trainer_4|Наставник
+trp_trainer_gondor|Наставник
+trp_trainer_rohan|Наставник
+trp_trainer_dale|Наставник
+trp_trainer_elf|Наставник
+trp_trainer_beorn|Наставник
+trp_trainer_dwarf|Наставник
+trp_trainer_mordor|Наставник
+trp_trainer_isengard|Наставник
+trp_trainer_khand|Наставник
+trp_trainer_rhun|Наставник
+trp_trainer_harad|Наставник
+trp_trainer_umbar|Наставник
+trp_ransom_broker_1|Перекупщик пленных
+trp_ransom_broker_2|Перекупщик пленных
+trp_ransom_broker_3|Перекупщик пленных
+trp_ransom_broker_4|Перекупщик пленных
+trp_ransom_broker_5|Перекупщик пленных
+trp_ransom_broker_6|Перекупщик пленных
+trp_ransom_broker_7|Перекупщик пленных
+trp_ransom_broker_8|Перекупщик пленных
+trp_ransom_broker_9|Перекупщик пленных
+trp_ransom_broker_10|Перекупщик пленных
+trp_tavern_traveler_1|Путник
+trp_tavern_traveler_2|Путник
+trp_tavern_traveler_3|Путник
+trp_tavern_traveler_4|Путник
+trp_tavern_traveler_5|Путник
+trp_tavern_traveler_6|Путник
+trp_tavern_traveler_7|Путник
+trp_tavern_traveler_8|Путник
+trp_tavern_traveler_9|Путник
+trp_tavern_traveler_10|Путник
+trp_tavern_minstrel_1|Менестрель
+trp_npc1|Маблунг
+trp_npc2|Кирдиль
+trp_npc3|Улфас
+trp_npc4|Гальмюне
+trp_npc5|Глорфиндель
+trp_npc6|Луэванна
+trp_npc7|Кили Златопалый
+trp_npc8|Фаниул
+trp_npc9|Гулм
+trp_npc10|Дургаш
+trp_npc11|Уфтак
+trp_npc12|Горбаг
+trp_npc13|Ликьяд
+trp_npc14|Фулдимир
+trp_npc15|Болзог
+trp_npc16|Варфанг
+trp_npc17|Димборн
+trp_knight_6_2|Голасгиль
+trp_gondor_lord|Наместник Денетор
+trp_gondor_lord_pl|Наместник
+trp_rohan_lord|Король Теоден
+trp_rohan_lord_pl|Король
+trp_isengard_lord|Саруман
+trp_isengard_lord_pl|Повелитель
+trp_mordor_lord|Уста Саурона
+trp_mordor_lord_pl|Сатрап
+trp_harad_lord|Вождь Ул-Улкари
+trp_harad_lord_pl|Вождь
+trp_rhun_lord|Ярл Хелькарот
+trp_rhun_lord_pl|Ярл
+trp_khand_lord|Шибх Крукмахур
+trp_khand_lord_pl|Шибх
+trp_umbar_lord|Флотоводец Тулмир
+trp_umbar_lord_pl|Флотоводцы
+trp_lorien_lord|Владычица Галадриэль
+trp_lorien_lord_pl|Владычица
+trp_imladris_lord|Владыка Эльронд
+trp_imladris_lord_pl|Владыка
+trp_woodelf_lord|Король Трандуил
+trp_woodelf_lord_pl|Король
+trp_moria_lord|Господин Болг Младший
+trp_moria_lord_pl|Господин
+trp_guldur_lord|Господин Фуинур
+trp_guldur_lord_pl|Господин
+trp_gundabad_lord|Господин Бурза Круал
+trp_gundabad_lord_pl|Господин
+trp_dale_lord|Король Бранд
+trp_dale_lord_pl|Король
+trp_dwarf_lord|Король Даин II Железностоп
+trp_dwarf_lord_pl|Король
+trp_dunland_lord|Вождь Даэглаф Чёрный
+trp_dunland_lord_pl|Вождь
+trp_beorn_lord|Вождь Гримбеорн Старый
+trp_beorn_lord_pl|Вождь
+trp_lorien_marshall|Келеборн
+trp_pippin_notmet|полурослик
+trp_merry_notmet|полурослик
+trp_pippin|Пиппин
+trp_merry|Мерри
+trp_knight_1_1|Ангбор Бесстрашный
+trp_knight_1_2|Хранитель ключей Хурин
+trp_knight_1_3|Князь Имрахиль
+trp_knight_1_4|Орталион
+trp_knight_1_5|Дуинхир
+trp_knight_1_6|Хирлуин Прекрасный
+trp_knight_1_7|Фарамир
+trp_knight_1_8|Форлонг Толстый
+trp_knight_1_9|Гримбольд
+trp_knight_1_10|Эркенбранд
+trp_knight_1_11|Эльфхельм
+trp_knight_1_12|Хама
+trp_knight_1_13|Гамлинг
+trp_knight_1_14|Эомер
+trp_knight_1_15|Углук
+trp_knight_1_16|Маухур
+trp_knight_1_17|Мог Семипалый
+trp_knight_1_18|Хушнак Длинноногий
+trp_knight_1_19|Гридаш Древогрыз
+trp_knight_1_20|Гронк Людоед
+trp_knight_2_1|Воевода Мортах
+trp_knight_2_2|Берутиэль
+trp_knight_2_3|Сканг
+trp_knight_2_4|Фарахад Незаконнорожденный
+trp_knight_2_5|Гришнах
+trp_knight_2_51|Готмог
+trp_knight_2_51_pl|Сотник
+trp_knight_2_6|Вождь Карна Лев
+trp_knight_2_7|Вождь На’ман
+trp_knight_2_8|Вождь Хаарит
+trp_knight_2_11|Кусулак
+trp_knight_2_12|Улварт Балхот
+trp_knight_2_13|Бродда
+trp_knight_2_16|Тораск
+trp_knight_2_17|Лурмсакун
+trp_knight_3_1|Капитан Морбир
+trp_knight_3_2|Капитан Ангамайте
+trp_knight_3_3|Капитан Сангахьяндо
+trp_knight_3_6|Халдир
+trp_knight_3_7|Орофин
+trp_knight_3_11|Элладан
+trp_knight_3_12|Эльрохир
+trp_knight_3_13|Халбарад
+trp_knight_3_16|Мириэль
+trp_knight_3_17|Гладваэтор
+trp_knight_4_1|Сног, Хозяин кнута
+trp_knight_4_2|Снотгор, Хозяин кнута
+trp_knight_4_6|Воевода Туским
+trp_knight_4_7|Воевода Мугслаг
+trp_knight_4_11|Баранхельм
+trp_knight_4_12|Беранор Чёрный Мех
+trp_knight_4_16|Бролгухш, Хозяин кнута
+trp_knight_4_17|Грумрунт, Хозяин кнута
+trp_knight_4_18|Гримсоб, Хозяин кнута
+trp_knight_5_1|Владыка Хальвард
+trp_knight_5_2|Владыка Бард
+trp_knight_5_3|Владыка Эсгарайн
+trp_knight_5_6|Фульгни Длиннобородый
+trp_knight_5_7|Торин Каменный Шлем
+trp_knight_5_11|Вождь Фудрейм
+trp_knight_5_12|Вождь Вульф
+trp_knight_6_1|Дэрворин
+trp_smith_mtirith|Беретор Кузнец
+trp_smith_mtirith_pl|Кузницы Наместника
+trp_smith_pelargir|Халлатан Повелитель Стали
+trp_smith_pelargir_pl|кузницу
+trp_smith_linhir|Бор Оружейник
+trp_smith_linhir_pl|кузницу
+trp_smith_dolamroth|Халдад Кузнец
+trp_smith_dolamroth_pl|кузницы Амрота
+trp_smith_edhellond|Риис Железнолом
+trp_smith_edhellond_pl|кузницу
+trp_smith_lossarnach|Берин Секиродел
+trp_smith_lossarnach_pl|кузницу
+trp_smith_tarnost|Харандиль Стальной Молот
+trp_smith_tarnost_pl|кузницу
+trp_smith_erech|Лорне Чёрный
+trp_smith_erech_pl|кузницу
+trp_smith_pinnath|Тарандиль Клинкодел
+trp_smith_pinnath_pl|кузницу
+trp_smith_eosgiliath|Бзург Мародёр
+trp_smith_eosgiliath_pl|кузницу
+trp_smith_wosgiliath|Гардиль
+trp_smith_wosgiliath_pl|полевую кузницу
+trp_smith_calembel|Агроном
+trp_smith_calembel_pl|кузницу
+trp_smith_hannun|Фал Кузнец Рейнджеров
+trp_smith_hannun_pl|склад снаряжения рейнджеров
+trp_smith_candros|Калимдор
+trp_smith_candros_pl|кузницу
+trp_smith_edoras|Эаоден Повелитель Стали
+trp_smith_edoras_pl|Королевскую кузницу
+trp_smith_aldburg|Фулм Железное Копыто
+trp_smith_aldburg_pl|кузницу
+trp_smith_hornburg|Альдхельм
+trp_smith_hornburg_pl|кузницу
+trp_smith_eastemnet|Эадфрид
+trp_smith_eastemnet_pl|кузницу
+trp_smith_westfold|Деор Шлемодел
+trp_smith_westfold_pl|кузницу
+trp_smith_westemnet|Оружейник
+trp_smith_westemnet_pl|кузницу
+trp_smith_eastfold|Эадеран Сталерезчик
+trp_smith_eastfold_pl|кузницу
+trp_smith_morannon|Хурбаг Кузнец
+trp_smith_morannon_pl|кузницу
+trp_smith_mmorgul|Оргурз Огневержец
+trp_smith_mmorgul_pl|кузницу
+trp_town_24_smith|Боз Железнолом
+trp_town_24_smith_pl|кузницу
+trp_smith_orc_patrol|Глугз Железнопалый
+trp_smith_orc_patrol_pl|полевую кузницу
+trp_smith_oscamp|Кугаш Железнолюб
+trp_smith_oscamp_pl|полевую кузницу
+trp_smith_isengard|Бурз Железнобой
+trp_smith_isengard_pl|подземную кузницу
+trp_smith_uoutpost|Гурзук Железнозубый
+trp_smith_uoutpost_pl|полевую кузницу
+trp_smith_uhcamp|Рабзуг Ржавоед
+trp_smith_uhcamp_pl|полевую кузницу
+trp_smith_urcamp|Глурк
+trp_smith_urcamp_pl|полевую кузницу
+trp_smith_cgaladhon|Дируфин Мастер луков
+trp_smith_cgaladhon_pl|эльфийские оружейные мастерские
+trp_smith_cdolen|Димириан Стрелодел
+trp_smith_cdolen_pl|эльфийские оружейные мастерские
+trp_smith_camroth|Гетасистан
+trp_smith_camroth_pl|эльфийские оружейные мастерские
+trp_smith_thranduils_halls|Туринор
+trp_smith_thranduils_halls_pl|кузницу
+trp_smith_woodelf_camp|Калехир
+trp_smith_woodelf_camp_pl|кузницу
+trp_smith_beorn|Беорналаф Секиродел
+trp_smith_beorn_pl|кузницу
+trp_smith_moria|Бургак Кузнец
+trp_smith_moria_pl|кузницу
+trp_smith_dale|Ардель Огненнорукий
+trp_smith_dale_pl|кузницу
+trp_smith_esgaroth|Келегарн Мастер Луков
+trp_smith_esgaroth_pl|кузницу
+trp_smith_erebor|Трор Молотобоец
+trp_smith_erebor_pl|Прославленные Кузницы Гномов
+trp_smith_dunland|Дорровульд Железная Пика
+trp_smith_dunland_pl|кузницу
+trp_smith_harad|Хар Сталелом
+trp_smith_harad_pl|кузницу
+trp_smith_khand|Пушурт Хитрец
+trp_smith_khand_pl|кузницу
+trp_smith_umbar|Фуинур Кузнец
+trp_smith_umbar_pl|кузницу
+trp_smith_imladris|Дуифириан
+trp_smith_imladris_pl|эльфийские оружейные мастерские
+trp_smith_dolguldur|Штазг Дулбаш
+trp_smith_dolguldur_pl|кузницу
+trp_smith_north_rhun|Огнемир Кладиво
+trp_smith_north_rhun_pl|полевую кузницу
+trp_smith_gundabad|Блург Снегопродавец
+trp_smith_gundabad_pl|кузницу
+trp_smith_ironhill|Грунгни Грумбаки
+trp_smith_ironhill_pl|Полевую Кузницу Гномов
+trp_town_50_weaponsmith|Шруклуг Точильщик Ножей
+trp_town_50_weaponsmith_pl|кузницу
+trp_smith_gondor_ac|Бор Оружейник
+trp_smith_gondor_ac_pl|полевую кузницу
+trp_smith_rohan_ac|Деор Шлемодел
+trp_smith_rohan_ac_pl|полевую кузницу
+trp_smith_mordor_ac|Хурбаг Кузнец
+trp_smith_mordor_ac_pl|кузницу
+trp_smith_isengard_ac|Бурз Железнобой
+trp_smith_isengard_ac_pl|подземную кузницу
+trp_smith_lorien_ac|Димириан Стрелодел
+trp_smith_lorien_ac_pl|эльфийские оружейные мастерские
+trp_smith_woodelf_ac|Доэлат
+trp_smith_woodelf_ac_pl|кузницу
+trp_smith_dwarf_ac|Грунгрон Грумбаки
+trp_smith_dwarf_ac_pl|гномью полевую кузницу
+trp_smith_gundabad_ac|Блург Снегопродавец
+trp_smith_gundabad_ac_pl|кузницу
+trp_smith_rhun_ac|Бранимир Бронник
+trp_smith_rhun_ac_pl|полевую кузницу
+trp_smith_guldur_ac|Штазг Дулбаш
+trp_smith_guldur_ac_pl|кузницу
+trp_smith_imladris_ac|Дуифириан
+trp_smith_imladris_ac_pl|эльфийские оружейные мастерские
+trp_smith_dunland_ac|Дорровульд Железная Пика
+trp_smith_dunland_ac_pl|кузницу
+trp_smith_harad_ac|Хар Сталелом
+trp_smith_harad_ac_pl|кузницу
+trp_smith_khand_ac|Пушурт Хитрец
+trp_smith_khand_ac_pl|кузницу
+trp_smith_umbar_ac|Фуинир Кузнец
+trp_smith_umbar_ac_pl|кузницу
+trp_barman_mtirith|Хозяин таверны
+trp_barman_mtirith_pl|цитадель
+trp_barman_pelargir|Хозяин таверны
+trp_barman_pelargir_pl|замок
+trp_barman_linhir|Хозяин таверны
+trp_barman_linhir_pl|замок
+trp_barman_dolamroth|Хозяин таверны
+trp_barman_dolamroth_pl|замок
+trp_barman_edhellond|Хозяин таверны
+trp_barman_edhellond_pl|замок
+trp_barman_lossarnach|Хозяин таверны
+trp_barman_lossarnach_pl|замок
+trp_barman_tarnost|Хозяин таверны
+trp_barman_tarnost_pl|замок
+trp_barman_erech|Хозяин таверны
+trp_barman_erech_pl|замок
+trp_barman_pinnath|Хозяин таверны
+trp_barman_pinnath_pl|замок
+trp_barman_hannun|Хозяин таверны
+trp_barman_hannun_pl|Потайная пещера
+trp_barman_calembel|Хозяин таверны
+trp_barman_calembel_pl|замок
+trp_barman_edoras|Хозяин таверны
+trp_barman_edoras_pl|Медусельд, Золотой чертог
+trp_barman_aldburg|Хозяин таверны
+trp_barman_aldburg_pl|замок
+trp_barman_hornburg|Хозяин таверны
+trp_barman_hornburg_pl|Чертоги владыки
+trp_barman_eastemnet|Хозяин таверны
+trp_barman_eastemnet_pl|замок
+trp_barman_westfold|Хозяин таверны
+trp_barman_westfold_pl|замок
+trp_barman_westemnet|Хозяин таверны
+trp_barman_westemnet_pl|замок
+trp_barman_eastfold|Хозяин таверны
+trp_barman_eastfold_pl|замок
+trp_barman_baraddur|Хозяин таверны
+trp_barman_baraddur_pl|замок
+trp_barman_morannon|Хозяин таверны
+trp_barman_morannon_pl|пещеру повелителя
+trp_barman_mmorgul|Хозяин таверны
+trp_barman_mmorgul_pl|твердыню
+trp_barman_cungol|Хозяин таверны
+trp_barman_cungol_pl|замок
+trp_barman_isengard|Хозяин таверны
+trp_barman_isengard_pl|Ортанк
+trp_barman_cgaladhon|Хозяин таверны
+trp_barman_cgaladhon_pl|древесный замок
+trp_barman_cdolen|Хозяин таверны
+trp_barman_cdolen_pl|древесный замок
+trp_barman_camroth|Хозяин таверны
+trp_barman_camroth_pl|древесный замок
+trp_barman_thalls|Хозяин таверны
+trp_barman_thalls_pl|тронный зал
+trp_barman_beorn|Хозяин таверны
+trp_barman_beorn_pl|Беорнингский Хранитель Очага
+trp_barman_moria|Хозяин таверны
+trp_barman_moria_pl|палаты Подгорного короля
+trp_barman_dale|Хозяин таверны
+trp_barman_dale_pl|замок
+trp_barman_esgaroth|Хозяин таверны
+trp_barman_esgaroth_pl|чертоги правителя
+trp_barman_erebor|Хозяин Таверны
+trp_barman_erebor_pl|Великий зал Трора.
+trp_barman_dolguldur|Хозяин таверны
+trp_barman_dolguldur_pl|замок
+trp_merchant_mtirith|Ведающий запасами
+trp_merchant_mtirith_pl|конюшню и склад
+trp_merchant_pelargir|Ведающий запасами
+trp_merchant_pelargir_pl|конюшню и склад
+trp_merchant_linhir|Ведающий запасами
+trp_merchant_linhir_pl|конюшню и склад
+trp_merchant_dolamroth|Ведающий запасами
+trp_merchant_dolamroth_pl|конюшню и склад
+trp_merchant_edhellond|Ведающий запасами
+trp_merchant_edhellond_pl|конюшню и склад
+trp_merchant_lossarnach|Ведающий запасами
+trp_merchant_lossarnach_pl|конюшню и склад
+trp_merchant_tarnost|Ведающий запасами
+trp_merchant_tarnost_pl|конюшню и склад
+trp_merchant_erech|Ведающий запасами
+trp_merchant_erech_pl|конюшню и склад
+trp_merchant_pinnath|Ведающий запасами
+trp_merchant_pinnath_pl|конюшню и склад
+trp_merchant_eosgiliath|Ведающий запасами
+trp_merchant_eosgiliath_pl|конюшню и склад
+trp_merchant_wosgiliath|Ведающий запасами
+trp_merchant_wosgiliath_pl|конюшню и склад
+trp_town_12_horse_merchant|Ведающий запасами
+trp_town_12_horse_merchant_pl|конюшню и склад
+trp_town_13_horse_merchant|Ведающий запасами
+trp_town_13_horse_merchant_pl|конюшню и склад
+trp_merchant_edoras|Ведающая запасами
+trp_merchant_edoras_pl|конюшню и склад
+trp_merchant_aldburg|Ведающий запасами
+trp_merchant_aldburg_pl|королевские конюшню и склад
+trp_merchant_hornburg|Ведающий запасами
+trp_merchant_hornburg_pl|конюшню и склад
+trp_merchant_eastemnet|Ведающий запасами
+trp_merchant_eastemnet_pl|конюшню и склад
+trp_merchant_westfold|Ведающая запасами
+trp_merchant_westfold_pl|конюшню и склад
+trp_merchant_westemnet|Ведающая запасами
+trp_merchant_westemnet_pl|конюшню и склад
+trp_merchant_eastfold|Ведающая запасами
+trp_merchant_eastfold_pl|конюшню и склад
+trp_town_21_horse_merchant|Ведающий запасами
+trp_town_21_horse_merchant_pl|волчью яму и склад
+trp_merchant_morannon|Ведающий запасами
+trp_merchant_morannon_pl|волчью яму и склад
+trp_merchant_mmorgul|Ведающий запасами
+trp_merchant_mmorgul_pl|волчью яму и склад
+trp_town_24_horse_merchant|Ведающий запасами
+trp_town_24_horse_merchant_pl|волчью яму и склад
+trp_merchant_orc_patrol|Ведающий запасами
+trp_merchant_orc_patrol_pl|полевой склад
+trp_merchant_isengard|Ведающий запасами
+trp_merchant_isengard_pl|полевой склад
+trp_town_27_horse_merchant|Ведающий запасами
+trp_town_27_horse_merchant_pl|волчью яму и склад
+trp_merchant_uoutpost|Ведающий запасами
+trp_merchant_uoutpost_pl|волчью яму и склад
+trp_merchant_uhcamp|Ведающий запасами
+trp_merchant_uhcamp_pl|волчью яму и склад
+trp_merchant_urcamp|Ведающий запасами
+trp_merchant_urcamp_pl|волчью яму и склад
+trp_merchant_cgaladhon|Ведающий запасами
+trp_merchant_cgaladhon_pl|эльфийские склады
+trp_merchant_cdolen|Ведающий запасами
+trp_merchant_cdolen_pl|эльфийские склады
+trp_merchant_camroth|Ведающий запасами
+trp_merchant_camroth_pl|эльфийские склады
+trp_merchant_thranduils_halls|Ведающий запасами
+trp_merchant_thranduils_halls_pl|эльфийские склады
+trp_merchant_woodelf_camp|Ведающий запасами
+trp_merchant_woodelf_camp_pl|эльфийские склады
+trp_merchant_woodmen|Келольф Запасливый
+trp_merchant_woodmen_pl|конюшню и склад
+trp_merchant_beorn|Беренгар Медоед
+trp_merchant_beorn_pl|конюшню и склад
+trp_merchant_moria|Ведающий запасами
+trp_merchant_moria_pl|волчью яму и склад
+trp_merchant_dale|Жирослав Кладовщик
+trp_merchant_dale_pl|конюшню и склад
+trp_merchant_esgaroth|Премысл Рыболов
+trp_merchant_esgaroth_pl|конюшню и склад
+trp_merchant_erebor|Фрарин Широкозад
+trp_merchant_erebor_pl|Гномьи Склады
+trp_merchant_dunland|Дунлендинг-ведающий запасами
+trp_merchant_dunland_pl|полевой склад
+trp_merchant_harad|Харадец-ведающий запасами
+trp_merchant_harad_pl|полевой склад
+trp_merchant_khand|Варьяг-ведающий запасами
+trp_merchant_khand_pl|полевой склад
+trp_merchant_umbar|Ведающий запасами
+trp_merchant_umbar_pl|полевой склад
+trp_merchant_imladris|Ведающий запасами
+trp_merchant_imladris_pl|полевой склад
+trp_merchant_dolguldur|Ведающий запасами
+trp_merchant_dolguldur_pl|конюшню и склад
+trp_merchant_north_rhun|Ведающий запасами
+trp_merchant_north_rhun_pl|полевой склад
+trp_merchant_south_rhun|Ведающий запасами
+trp_merchant_south_rhun_pl|полевой склад
+trp_merchant_gundabad|Ведающий запасами
+trp_merchant_gundabad_pl|полевой склад
+trp_merchant_ironhill|Дави Тиндронгол
+trp_merchant_ironhill_pl|Гномьи Склады
+trp_town_50_horse_merchant|Гобрип Желтозуб
+trp_town_50_horse_merchant_pl|волчью яму и склад
+trp_merchant_calembel|Ведающий запасами
+trp_merchant_calembel_pl|конюшню и склад
+trp_elder_mtirith|Управитель Минас-Тирита
+trp_elder_mtirith_pl|Белый Город
+trp_elder_pelargir|Управитель Пеларгира
+trp_elder_pelargir_pl|город
+trp_elder_linhir|Управитель Линхира
+trp_elder_linhir_pl|город
+trp_elder_dolamroth|Управитель Дол-Амрота
+trp_elder_dolamroth_pl|город
+trp_elder_edhellond|Управитель Эделлонда
+trp_elder_edhellond_pl|город
+trp_elder_lossarnach|Управитель Лоссарнаха
+trp_elder_lossarnach_pl|поселение
+trp_elder_tarnost|Управитель Тарноста
+trp_elder_tarnost_pl|поселение
+trp_elder_erech|Управитель Эреха
+trp_elder_erech_pl|поселение
+trp_elder_pinnath|Старейшина Пиннат-Гелина
+trp_elder_pinnath_pl|поселение
+trp_elder_ethring|Управитель Калембеля
+trp_elder_ethring_pl|город
+trp_elder_henneth|Управитель Хеннет-Аннуна
+trp_elder_henneth_pl|убежище рейнджеров
+trp_elder_cairandros|Управитель Кайр-Андроса
+trp_elder_cairandros_pl|островную крепость
+trp_elder_edoras|Тэн Эдораса
+trp_elder_edoras_pl|город
+trp_elder_aldburg|Тэн Альдбурга
+trp_elder_aldburg_pl|поселение
+trp_elder_hornburg|Тэн Хорнбурга
+trp_elder_hornburg_pl|крепость
+trp_elder_eastemnet|Тэн Истемнета
+trp_elder_eastemnet_pl|поселение
+trp_elder_westfold|Тэн Вестфольда
+trp_elder_westfold_pl|поселение
+trp_elder_westemnet|Тэн Вестемнета
+trp_elder_westemnet_pl|поселение
+trp_elder_eastfold|Тэн Истфолда
+trp_elder_eastfold_pl|поселение
+trp_elder_morannon|Управитель Мораннона
+trp_elder_morannon_pl|пещеры у Великих Врат
+trp_elder_mmorgul|Моргульский управитель
+trp_elder_mmorgul_pl|зловещий город
+trp_elder_cungol|Лагерный управитель
+trp_elder_cungol_pl|лагерь
+trp_elder_isengard|Грима Змеиный Язык
+trp_elder_isengard_pl|город
+trp_elder_cgaladhon|Лориэнский хранитель обычаев
+trp_elder_cgaladhon_pl|лесную крепость эльфов
+trp_elder_cdolen|Лориэнский хранитель обычаев
+trp_elder_cdolen_pl|лагерь
+trp_elder_camroth|Лориэнский хранитель обычаев
+trp_elder_camroth_pl|лагерь
+trp_elder_thalls|Темнолесский старейшина
+trp_elder_thalls_pl|пещеры эльфов
+trp_elder_imladris|Управитель лагеря Ривенделла
+trp_elder_imladris_pl|лагерь
+trp_elder_wvillage|Пьер Лесовик
+trp_elder_wvillage_pl|деревню
+trp_elder_beorn|Старейшина Асбеорн
+trp_elder_beorn_pl|деревню
+trp_elder_harad|Харадский управитель лагеря
+trp_elder_harad_pl|лагерь
+trp_elder_rhun|Рунийский управитель лагеря
+trp_elder_rhun_pl|лагерь
+trp_elder_khand|Хандский управитель лагеря
+trp_elder_khand_pl|лагерь
+trp_elder_dunland|Дунландский управитель лагеря
+trp_elder_dunland_pl|лагерь
+trp_elder_umbar|Умбарский управитель лагеря
+trp_elder_umbar_pl|укреплённый лагерь
+trp_elder_moria|Морийский вождь
+trp_elder_moria_pl|копи
+trp_elder_gunda|Хозяин Пещер
+trp_elder_gunda_pl|пещеры
+trp_elder_dale|Дейльский управитель
+trp_elder_dale_pl|город
+trp_elder_esgaroth|Управитель Эсгарота
+trp_elder_esgaroth_pl|Озёрный город
+trp_elder_erebor|Анкор Камненог
+trp_elder_erebor_pl|Подгорные Чертоги
+trp_elder_dolguldur|Гулдурский управитель
+trp_elder_dolguldur_pl|чёрную твердыню
+trp_elder_gondor_ac|Управитель лагеря
+trp_elder_gondor_ac_pl|лагерь
+trp_elder_rohan_ac|Управитель лагеря
+trp_elder_rohan_ac_pl|лагерь
+trp_elder_mordor_ac|Управитель лагеря
+trp_elder_mordor_ac_pl|лагерь
+trp_elder_isengard_ac|Управитель лагеря 
+trp_elder_isengard_ac_pl|лагерь 
+trp_elder_lorien_ac|Управитель лагеря
+trp_elder_lorien_ac_pl|лагерь
+trp_elder_woodelf_ac|Управитель лагеря
+trp_elder_woodelf_ac_pl|лагерь
+trp_elder_imladris_ac|Управитель лагеря
+trp_elder_imladris_ac_pl|лагерь
+trp_elder_beorn_ac|Управитель лагеря
+trp_elder_beorn_ac_pl|лагерь
+trp_elder_harad_ac|Харадский управитель лагеря
+trp_elder_harad_ac_pl|лагерь
+trp_elder_rhun_ac|Рунийский управитель лагеря
+trp_elder_rhun_ac_pl|лагерь
+trp_elder_khand_ac|Хандский управитель лагеря
+trp_elder_khand_ac_pl|лагерь
+trp_elder_dunland_ac|Дунландский управитель лагеря
+trp_elder_dunland_ac_pl|лагерь
+trp_elder_umbar_ac|Умбарский управитель лагеря
+trp_elder_umbar_ac_pl|лагерь
+trp_elder_moria_ac|Морийский управитель лагеря
+trp_elder_moria_ac_pl|лагерь
+trp_elder_gunda_ac|Гундабадский управитель лагеря
+trp_elder_gunda_ac_pl|лагерь
+trp_elder_dale_ac|Дейльский управитель лагеря
+trp_elder_dale_ac_pl|лагерь
+trp_elder_guldur_ac|Гулдурский управитель лагеря
+trp_elder_guldur_ac_pl|лагерь
+trp_elder_dwarf_ac|Гномий управитель лагеря
+trp_elder_dwarf_ac_pl|лагерь
+trp_village_1_elder|Повелитель Кнута
+trp_village_1_elder_pl|пещеры
+trp_tutorial_chest_1|Сундук для холодного оружия
+trp_tutorial_chest_2|Сундук для стрелкового оружия
+trp_bonus_chest_1|Бонусный сундук
+trp_bonus_chest_2|Бонусный сундук
+trp_bonus_chest_3|Бонусный сундук
+trp_camp_chest_faction|Общий сундук
+trp_camp_chest_none|Ничейный сундук
+trp_player_chest|Ваш сундук
+trp_local_merchant|Местный торговец
+trp_local_merchant_pl|Местные торговцы
+trp_tax_rebel|Крестьянин-бунтарь
+trp_tax_rebel_pl|Крестьяне-бунтари
+trp_trainee_peasant|Крестьянин
+trp_trainee_peasant_pl|Крестьяне
+trp_fugitive_man|Подозрительный человек
+trp_fugitive_man_pl|Подозрительные люди
+trp_fugitive_elf|Подозрительный эльф
+trp_fugitive_elf_pl|Подозрительные эльфы
+trp_fugitive_dwarf|Подозрительный Гном
+trp_fugitive_dwarf_pl|Подозрительные гномы
+trp_fugitive_orc|Подозрительный орк
+trp_fugitive_orc_pl|Подозрительные орки
+trp_spy|Лукавый корсар
+trp_spy_pl|Лукавые корсары
+trp_spy_evil|Лукавый южанин
+trp_spy_evil_pl|Лукавые южане
+trp_spy_partner|Сообщник шпиона
+trp_spy_partner_pl|Сообщники шпионов
+trp_spy_partner_evil|Сообщник шпиона
+trp_spy_partner_evil_pl|Сообщники шпионов
+trp_easter_egg_troll|Тролль
+trp_treebeard|Древобрад
+trp_ent_1|Брегалад
+trp_ent_2|Финглас
+trp_ent_3|Фладрив
+trp_gandalf|Гэндальф
+trp_gandalf_pl|Доморощенные Гэндальфы
+trp_nazgul|Назгул
+trp_nazgul_pl|Одомашненный назгул
+trp_barman|Бармен
+trp_elder|Старейшина
+trp_gear_merchant|Торговец снаряжением
+trp_goods_merchant|Торговец провизией
+trp_start_quest_caravaneer|Торбал Караванщик
+trp_dorwinion_bandit|Дорвинионский разбойник
+trp_dorwinion_bandit_pl|Дорвинионские разбойники
+trp_dorwinion_raider|Дорвинионский налётчик
+trp_dorwinion_raider_pl|Дорвинионские налётчики
+trp_city_guard|Городской стражник
+trp_city_guard_pl|Городские стражники
+trp_orc_sentry|Орк-часовой
+trp_orc_sentry_pl|Орки-часовые
+trp_uruk_hai_sentry|Часовой урук-хай
+trp_uruk_hai_sentry_pl|Часовые урук-хай
+trp_black_numenorean_sorcerer|Чёрный нуменорец-колдун
+trp_black_numenorean_sorcerer_pl|Чёрные нуменорцы-колдуны
+trp_black_numenorean_acolyte|Чёрный нуменорец-служитель
+trp_black_numenorean_acolyte_pl|Чёрные нуменорцы-служители
+trp_wolf_rider_of_mirkwood|Волчий всадник Темнолесья
+trp_wolf_rider_of_mirkwood_pl|Волчьи всадники Темнолесья
+trp_warg_rider_of_mirkwood|Темнолесский всадник на варге
+trp_warg_rider_of_mirkwood_pl|Темнолесские всадники на варгах
+trp_gate_aggravator|Привратник
+trp_orc_pretender|Претендент на лидерство
+trp_human_prisoner|Пленный человек
+trp_spider|Паук из Темнолесья
+trp_spider_pl|Пауки из Темнолесья
+trp_bear|Медведь
+trp_bear_pl|Медведи
+trp_wolf|Волк
+trp_wolf_pl|Волки
+trp_dorwinion_sack|дорвинионский мешок
+trp_ring_hunter_captain|Командир Охотников за Кольцом
+trp_ring_hunter_lt|Командир Охотников за Кольцом
+trp_ring_hunter_one|Охотник за Кольцом
+trp_ring_hunter_one_pl|Охотники за Кольцом
+trp_ring_hunter_two|Охотник за Кольцом
+trp_ring_hunter_two_pl|Охотники за Кольцом
+trp_ring_hunter_three|Охотник за Кольцом
+trp_ring_hunter_three_pl|Охотники за Кольцом
+trp_ring_hunter_four|Охотник за Кольцом
+trp_ring_hunter_four_pl|Охотники за Кольцом
+trp_start_quest_uruk|Мордорский урук-капитан
+trp_start_quest_orc|Мордорский орк-лейтенант
+trp_start_quest_orc_pl|Крупные орки Мордора
+trp_start_quest_woodelf|Меткий стрелок галадрим
+trp_start_quest_woodelf_pl|Меткие стрелки галадрим
+trp_start_quest_mordor_scout|Мордорский проводник
+trp_start_quest_mordor_scout_pl|Мордорские проводники
+trp_start_quest_beorning|Беорнингский Берсерк Каррока
+trp_start_quest_beorning_pl|Беорнингские Берсерки Каррока
+trp_i6_beorning_bear_warrior|Воин-Медведь
+trp_i6_beorning_bear_warrior_pl|Воины-Медведи
+trp_morannon_healer|Окстук Лекарь
+trp_minas_tirith_healer|Лорет
+trp_edoras_healer|Фрея Целительница
+trp_isengard_healer|Нургал Штопальщик
+trp_guldur_healer|Морнагар Грамарир
+trp_gundabad_healer|Лургакх Третий Глаз
+trp_mirkwood_healer|Корвиль Мягкорукий
+trp_hungry_uruk|Голодный Урук
+trp_hungry_orc|Голодный Орк
+trp_longing_lorien|Устремлённый эльф
+trp_longing_woodelf|Устремлённый эльф
+trp_longing_imladris|Устремлённый эльф
+trp_i5_moria_deep_dweller|Глубинный житель Мории
+trp_i5_moria_deep_dweller_pl|Глубинные жители Мории
+trp_i5_moria_orc_chieftain|Орк-командир Мории
+trp_i5_moria_orc_chieftain_pl|Орки-командиры Мории
+trp_c5_rhovanion_noble|Знатный всадник Рованиона
+trp_c5_rhovanion_noble_pl|Знатная конница Рованиона
+trp_npc18|Турмбату
+trp_npc19|Хейдрек
+trp_npc20|Зигурфель
+trp_werewolf|Оборотень
+trp_werewolf_pl|Оборотни
+trp_moria_troll|Пещерный Тролль
+trp_moria_troll_pl|Пещерные Тролли
+trp_moria_vet_troll|Выдрессированный Пещерный Тролль
+trp_moria_vet_troll_pl|Выдрессированные Пещерные Тролли
+trp_moria_armored_troll|Бронированный Пещерный Тролль
+trp_moria_armored_troll_pl|Бронированные Пещерные Тролли
+trp_gunda_troll|Горный Тролль
+trp_gunda_troll_pl|Горные Тролли
+trp_gunda_vet_troll|Выдрессированный Горный Тролль
+trp_gunda_vet_troll_pl|Выдрессированные Горные Тролли
+trp_gunda_placeholder|Выдрессированный Горный Тролль
+trp_gunda_placeholder_pl|Выдрессированные Горные Тролли
+trp_isen_troll|Тролль Изенгарда
+trp_isen_troll_pl|Тролли Изенгарда
+trp_isen_vet_troll|Выдрессированный Тролль Изенгарда
+trp_isen_vet_troll_pl|Выдрессированные Тролли Изенгарда
+trp_isen_armored_troll|Боевой Тролль Изенгарда
+trp_isen_armored_troll_pl|Боевые Тролли Изенгарда
+trp_mordor_troll|Мордорский Тролль
+trp_mordor_troll_pl|Мордорские Тролли
+trp_mordor_vet_troll|Мордорский Выдрессированный Тролль
+trp_mordor_vet_troll_pl|Мордорские Выдрессированные Тролли
+trp_mordor_olog_hai|Олог-Хай Мордора
+trp_mordor_olog_hai_pl|Олог-Хаи Мордора
+trp_troll_placeholder_1|Пещерный Тролль
+trp_troll_placeholder_1_pl|Пещерные Тролли
+trp_troll_placeholder_2|Пещерный Тролль
+trp_troll_placeholder_2_pl|Пещерные Тролли
+trp_troll_placeholder_3|Пещерный Тролль
+trp_troll_placeholder_3_pl|Пещерные Тролли
+trp_troll_placeholder_4|Пещерный Тролль
+trp_troll_placeholder_4_pl|Пещерные Тролли
+trp_troll_placeholder_5|Пещерный Тролль
+trp_troll_placeholder_5_pl|Пещерные Тролли
+trp_troll_placeholder_6|Пещерный Тролль
+trp_troll_placeholder_6_pl|Пещерные Тролли
+trp_wild_troll|Дикий Пещерный Тролль
+trp_wild_troll_pl|Дикие Пещерные Тролли
+trp_ent2|Энт
+trp_ent2_pl|Энты
+trp_mountain_goblin|Горный Гоблин
+trp_mountain_goblin_pl|Горные Гоблины
+trp_tribal_orc|Дикий Орк
+trp_tribal_orc_pl|Дикие Орки
+trp_tribal_orc_warrior|Дикий Орк-Воин
+trp_tribal_orc_warrior_pl|Дикие Орки-Воины
+trp_tribal_orc_chief|Вождь Диких Орков
+trp_tribal_orc_chief_pl|Вожди Диких Орков

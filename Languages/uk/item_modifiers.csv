@@ -1,43 +1,43 @@
-imod_plain  = "Нормальний %s"
-imod_cracked  = "Поганий %s"
-imod_rusty  = "Грубий %s"
-imod_bent  = "Зіпсований %s"
-imod_chipped  = "Зазубрений %s"
-imod_battered  = "Побитий %s"
-imod_poor  = "Поганий %s"
-imod_crude  = "Простий %s"
-imod_old  = "Древній %s"
-imod_cheap  = "Дешевий %s"
-imod_fine  = "Хороший %s"
-imod_well_made  = "Непоганий %s"
-imod_sharp  = "Гострий %s"
-imod_balanced  = "Збалансований %s"
-imod_tempered  = "Загартований %s"
-imod_deadly  = "Смертельний %s"
-imod_exquisite  = "Вишуканий %s"
-imod_masterwork  = "Чудовий %s"
-imod_heavy  = "Важкий %s"
-imod_strong  = "Витривалий %s"
-imod_powerful  = "Потужний %s"
-imod_tattered  = "Обірваний %s"
-imod_ragged  = "Грубий %s"
-imod_rough  = "Грубий %s"
-imod_sturdy  = "Стійкий %s"
-imod_thick  = "Міцний %s"
-imod_hardened  = "Затверділий %s"
-imod_reinforced  = "Посилений %s"
-imod_cloak  = "%s з плащем"
-imod_lordly  = "Чудовий %s"
-imod_lame  = "Кривий %s"
-imod_swaybacked  = "Чахлий %s"
-imod_stubborn  = "Норовистий %s"
-imod_timid  = "Боязкий %s"
-imod_meek  = "Покритий кров'ю %s"
-imod_spirited  = "Жвавий %s"
-imod_champion  = "Першокласний %s\n"
-imod_fresh  = "Свіжий %s"
-imod_day_old  = "Вчорашній %s"
-imod_two_day_old  = "Позавчорашній %s"
-imod_smelling  = "Смердючий %s"
-imod_rotten  = "Тухлий %s"
-imod_large_bag  = "Великий запас - %s"
+imod_plain|Нормальний %s
+imod_cracked|Поганий %s
+imod_rusty|Грубий %s
+imod_bent|Зіпсований %s
+imod_chipped|Зазубрений %s
+imod_battered|Побитий %s
+imod_poor|Поганий %s
+imod_crude|Простий %s
+imod_old|Древній %s
+imod_cheap|Дешевий %s
+imod_fine|Хороший %s
+imod_well_made|Непоганий %s
+imod_sharp|Гострий %s
+imod_balanced|Збалансований %s
+imod_tempered|Загартований %s
+imod_deadly|Смертельний %s
+imod_exquisite|Вишуканий %s
+imod_masterwork|Чудовий %s
+imod_heavy|Важкий %s
+imod_strong|Витривалий %s
+imod_powerful|Потужний %s
+imod_tattered|Обірваний %s
+imod_ragged|Грубий %s
+imod_rough|Грубий %s
+imod_sturdy|Стійкий %s
+imod_thick|Міцний %s
+imod_hardened|Затверділий %s
+imod_reinforced|Посилений %s
+imod_cloak|%s з плащем
+imod_lordly|Чудовий %s
+imod_lame|Кривий %s
+imod_swaybacked|Чахлий %s
+imod_stubborn|Норовистий %s
+imod_timid|Боязкий %s
+imod_meek|Покритий кров'ю %s
+imod_spirited|Жвавий %s
+imod_champion|Першокласний %s\n
+imod_fresh|Свіжий %s
+imod_day_old|Вчорашній %s
+imod_two_day_old|Позавчорашній %s
+imod_smelling|Смердючий %s
+imod_rotten|Тухлий %s
+imod_large_bag|Великий запас - %s

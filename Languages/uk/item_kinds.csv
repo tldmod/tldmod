@@ -1,801 +1,801 @@
-itm_horse_meat  = "Конина"
-itm_practice_sword  = "Тренувальний меч"
-itm_arena_lance  = "Спис"
-itm_practice_staff  = "Дерев'яна палиця"
-itm_practice_bow  = "Тренувальний лук"
-itm_wooden_javelin  = "Дерев'яний дротик"
-itm_human_meat  = "Людська плоть"
-itm_maggoty_bread  = "Червивий хліб"
-itm_cram  = "Запас Крема"
-itm_lembas  = "Лембас"
-itm_smoked_fish  = "Копчена риба"
-itm_dried_meat  = "Засохле м'ясо"
-itm_cattle_meat  = "Яловичина"
-itm_grain  = "Пшениця"
-itm_tools  = "Інструменти"
-itm_siege_supply  = "Провіант"
-itm_quest_wine  = "Вино"
-itm_quest_ale  = "Ель"
-itm_metal_scraps_bad  = "Низькосортний металобрухт"
-itm_metal_scraps_medium  = "Металобрухт"
-itm_metal_scraps_good  = "Високоякісний металобрухт"
-itm_oliphant  = "Оліфант"
-itm_sumpter_horse  = "В'ючний кінь"
-itm_saddle_horse  = "Верховий кінь"
-itm_steppe_horse  = "Степовий кінь"
-itm_courser  = "Жеребець"
-itm_hunter  = "Гунтер"
-itm_pony  = "Поні"
-itm_arnor_warhorse  = "Арноріанський бойовий кінь"
-itm_dunedain_warhorse  = "Денендайский бойовий кінь"
-itm_rohirrim_courser  = "Роханський жеребець"
-itm_rohirrim_hunter  = "Роханський гунтер"
-itm_rohirrim_courser2  = "Роханський броньований Жеребець"
-itm_rohan_warhorse  = "Роханський бойовий кінь"
-itm_thengel_warhorse  = "Еолрський бойовий кінь"
-itm_rhun_horse_a  = "Рунійський кінь"
-itm_rhun_horse_b  = "Рунійський кінь"
-itm_rhun_horse_d  = "Рунійський кінь"
-itm_rhun_horse_e  = "Рунійський важкий кінь"
-itm_rhun_horse_f  = "Рунійський важкий кінь"
-itm_rhun_horse_g  = "Рунійський важкий кінь"
-itm_rhun_horse_h  = "Рунійський важкий кінь"
-itm_dale_horse  = "Рованіонський кінь"
-itm_dale_warhorse  = "Рованіонський бойовий кінь"
-itm_riv_warhorse  = "Рівендельский бойовий кінь"
-itm_riv_warhorse2  = "Рівендельский кінь"
-itm_mordor_warhorse  = "Мордорський бойовий кінь"
-itm_mordor_warhorse2  = "Мордорський зловісний кінь"
-itm_gondor_courser  = "Гондорський скаковий кінь"
-itm_gondor_hunter  = "Гондорский гунтер"
-itm_dol_amroth_warhorse  = "Дол-Амротський бойовий кінь"
-itm_dol_amroth_warhorse2  = "Дол-Амротський важкий кінь"
-itm_gondor_warhorse  = "Гондорский бойовий кінь"
-itm_gondor_lam_horse  = "Ламедонський броньований кінь"
-itm_lorien_warhorse  = "Лоріенский бойовий кінь"
-itm_harad_horse  = "Харадський кінь"
-itm_harad_warhorse  = "Харадський бойовий кінь"
-itm_variag_pony  = "Варьягський низькорослий кінь"
-itm_variag_kataphrakt  = "Істерлінгський бойовий кінь"
-itm_warg_1b  = "Варг"
-itm_warg_1c  = "Варг"
-itm_warg_1d  = "Варг"
-itm_wargarmored_1b  = "Броньований варг"
-itm_wargarmored_1c  = "Броньований варг"
-itm_wargarmored_2b  = "Броньований варг"
-itm_wargarmored_2c  = "Броньований варг"
-itm_wargarmored_3a  = "Броньований варг"
-itm_warg_reward  = "Величезний варг"
-itm_tree_trunk_club_a  = "Стовбур дерева"
-itm_giant_mace  = "Величезна булава"
-itm_troll_shield_a  = "Щит троля"
-itm_arrows  = "Стріли"
-itm_gondor_arrows  = "Гондорські стріли"
-itm_orc_javelin  = "Оркський важкий дротик"
-itm_khergit_arrows  = "Роханські стріли"
-itm_harad_arrows  = "Харадські стріли"
-itm_corsair_arrows  = "Корсарські стріли"
-itm_ithilien_arrows  = "Ітіліенські стріли"
-itm_woodelf_arrows  = "Стріли лісових ельфів"
-itm_elven_arrows  = "Ельфійські стріли"
-itm_orc_hook_arrow  = "Орські гачкуваті стріли"
-itm_isengard_arrow  = "Ізенгардські стріли"
-itm_leather_gloves  = "Шкіряні Рукавиці"
-itm_mail_mittens  = "Кольчужні рукавиці"
-itm_leather_boots  = "Шкіряні чоботи"
-itm_leather_boots_dark  = "Чоботи наїзника"
-itm_splinted_greaves  = "Шиновані наголінники"
-itm_white_tunic_a  = "Одяг городянина"
-itm_rohan_shoes  = "Шкіряні черевики"
-itm_furry_boots  = "Хутряні чоботи"
-itm_black_tunic  = "Чорний одяг"
-itm_hood_black  = "Чорний капюшон"
-itm_hood_green  = "Зелений капюшон"
-itm_hood_grey  = "Сірий капюшон"
-itm_hood_leather  = "Шкірний капюшон"
-itm_axe_a  = "Північна сокира"
-itm_axe_b  = "Північна бородоподібна сокира"
-itm_axe_c  = "Північна сокира"
-itm_axe_d  = "Північна сокира"
-itm_long_bearded_axe  = "Північний бердиш"
-itm_2_handed_axe  = "Північна довга сокира"
-itm_shortened_spear  = "Вкорочений спис"
-itm_spear  = "Спис"
-itm_light_lance  = "Легкий кавалерійський спис"
-itm_lance  = "Кавалерійський спис"
-itm_tab_shield_small_round_b  = "Круглий щит вершника"
-itm_short_bow  = "Короткий лук"
-itm_regular_bow  = "Лук"
-itm_nomad_bow  = "Лук кочівника"
-itm_gondor_bow  = "Ґондорський лук"
-itm_strong_bow  = "Тугий лук"
-itm_elven_bow  = "Ельфійський лук"
-itm_corsair_bow  = "Корсарський лук"
-itm_dwarf_horn_bow  = "Гномів роговий лук"
-itm_dwarf_short_bow  = "Гномів короткий лук"
-itm_harad_bow  = "Харадський кривий лук"
-itm_lg_bow  = "Лук Орлиної гвардії"
-itm_riv_bow  = "Рівендельский лук"
-itm_rhun_bow  = "Балхотський лук"
-itm_lorien_bow  = "Ґаладрімський лук"
-itm_isengard_large_bow  = "Ізенґардський великий лук"
-itm_dale_bow  = "Дейлський лук"
-itm_uruk_bow  = "Орочій роговий лук"
-itm_mirkwood_bow  = "Темнолісський лук"
-itm_dunland_javelin  = "Дунландські сулиці"
-itm_orc_throwing_arrow  = "Орочі сулиці"
-itm_heavy_throwing_spear  = "Важкий метальний спис"
-itm_javelin  = "Сулиця"
-itm_harad_javelin  = "Харадські сулиці"
-itm_gondor_javelin  = "Ґондорська сулиця"
-itm_rohirrim_throwing_axe  = "Північні метальні сокири"
-itm_loss_throwing_axes  = "Лоссарнахські метальні сокири"
-itm_arnor_helm_a  = "Арнорський шолом"
-itm_arnor_helm_b  = "Арнорський шолом"
-itm_arnor_helm_c  = "Арнорський шолом"
-itm_dunedain_helm_b  = "Арнорський прикрашений шолом"
-itm_arnor_armor_a  = "Арнорська броня"
-itm_arnor_armor_b  = "Арнорська броня"
-itm_arnor_armor_c  = "Броня рейнджера дунедайн"
-itm_arnor_armor_d  = "Броня рейнджера дунедайн"
-itm_arnor_armor_e  = "Арнорська товста куртка"
-itm_arnor_armor_f  = "Арнорська чудова броня"
-itm_arnor_greaves  = "Арнорські наголінники"
-itm_arnor_shield_a  = "Арнорський щит"
-itm_arnor_shield_c  = "Арнорський кавалерійський щит"
-itm_arnor_sword_a  = "Арнорський меч-бастард"
-itm_arnor_sword_c  = "Арнорський меч-бастард"
-itm_arnor_sword_f  = "Арнорський короткий меч"
-itm_riv_helm_a  = "Рівенділський коїф"
-itm_riv_helm_b  = "Рівенділський шолом лучника"
-itm_riv_helm_c  = "Рівенділський шолом піхотинця"
-itm_riv_tiara  = "Тіара ельфійського правителя"
-itm_riv_shield_a  = "Рівенділський щит"
-itm_riv_shield_b  = "Рівенділський щит"
-itm_riv_bas_sword  = "Рівенділський меч-бастард"
-itm_riv_1h_sword  = "Рівенділський меч"
-itm_riv_riding_sword  = "Рівенділський длинний меч"
-itm_riv_archer_sword  = "Рівенділський короткий меч"
-itm_riv_spear  = "Рівенділський спис"
-itm_riv_light  = "Рівенділська блузка"
-itm_riv_leather  = "Рівенділська шкіряна броня"
-itm_riv_foot_mail  = "Рівендельска кольчуга"
-itm_riv_foot_scale  = "Рівендельска луската броня"
-itm_riv_surcoat  = "Рівендельська сюрка"
-itm_riv_knight  = "Рівендельска лицарська броня"
-itm_riv_armor_h_archer  = "Рівенділська броня"
-itm_riv_armor_leader  = "Рівенділська броня воєначальника"
-itm_riv_boots  = "Рівенділські чоботи"
-itm_gon_footman  = "Ґондорська кольчуга"
-itm_gon_jerkin  = "Ґондорська куртка"
-itm_gon_regular  = "Ґондорська важка кольчуга"
-itm_gon_bowman  = "Ґондорський гамбесон"
-itm_gon_archer  = "Ґондорський гамбесон з накидкою"
-itm_gon_noble_cloak  = "Ґондорська коштовна куртка"
-itm_gon_squire  = "Ґондорська кольчуга з накидкою"
-itm_gon_knight  = "Ґондорська важка кольчуга з накидкою"
-itm_gon_ranger_cloak  = "Ґондорський плащ рейнджера"
-itm_gon_ranger_skirt  = "Ґондорський одяг рейнджера"
-itm_gon_steward_guard  = "Ґондорськая броня Охоронців намісника"
-itm_gon_tower_guard  = "Ґондорська броня Охоронців Вежі"
-itm_gon_tower_knight  = "Ґондорська броня Лицаря Вежі"
-itm_gon_leader_surcoat_cloak  = "Ґондорська накидка воєначальника"
-itm_gondor_ranger_hood  = "Зелений капюшон"
-itm_gondor_ranger_hood_mask  = "Ґондорський капюшон рейнджера"
-itm_gondor_light_greaves  = "Ґондорські шкіряні наголінники"
-itm_gondor_med_greaves  = "Ґондорські середні наголінники"
-itm_gondor_heavy_greaves  = "Ґондорські кольчужні наголінники"
-itm_gondor_infantry_helm  = "Ґондорський шолом піхотинця"
-itm_gondor_auxila_helm  = "Легкий шолом Гондора"
-itm_gondorian_archer_helm  = "Шолом лучника Гондора"
-itm_tower_archer_helm  = "Шолом лучника Вежі"
-itm_gondor_leader_helm  = "Ґондорський чудовий шолом"
-itm_tower_guard_helm  = "Шолом Охоронця Вежі"
-itm_gondor_citadel_knight_helm  = "Шолом Лицаря Цитаделі"
-itm_gondor_knight_helm  = "Кавалерійський шолом Гондора"
-itm_gondor_dolamroth_helm  = "Дол-Амротський шолом"
-itm_swan_knight_helm  = "Лебединий лицарський шолом"
-itm_gondor_lamedon_helm  = "Ламедонський шолом"
-itm_gondor_lamedon_leader_helm  = "Ламедонський чудовий шолом"
-itm_blackroot_archer  = "Мортондський гамбесон з плащем"
-itm_blackroot_bowman  = "Мортондська куртка з плащем"
-itm_blackroot_footman  = "Мортондська куртка"
-itm_blackroot_warrior  = "Мортондський гамбесон"
-itm_blackroot_leader  = "Мортондська кольчуга"
-itm_blackroot_hood  = "Чорний капюшон"
-itm_dol_hauberk  = "Дол-Амротський гауберк"
-itm_dol_heavy_mail  = "Дол-Амротська важка кольчуга"
-itm_dol_padded_coat  = "Дол-Амротський підбитий одяг"
-itm_dol_shirt  = "Дол-Амротський одяг"
-itm_dol_very_heavy_mail  = "Дол-Амротська важка кольчуга"
-itm_dol_greaves  = "Дол-Амротські наголінники"
-itm_dol_shoes  = "Дол-Амротські легкі чоботи"
-itm_lamedon_clansman  = "Ламедонська кланова броня"
-itm_lamedon_footman  = "Ламедонська броня піхотинця"
-itm_lamedon_knight  = "Ламедонська лицарська броня"
-itm_lamedon_leader_surcoat_cloak  = "Ламедонська броня воєначальника"
-itm_lamedon_warrior  = "Ламедонська броня воїна"
-itm_lamedon_veteran  = "Ламедонська броня ветерана"
-itm_lamedon_vet_warrior  = "Ламедонська чудова броня ветерана"
-itm_lamedon_hood  = "Капюшон"
-itm_pinnath_archer  = "Броня лучника Піннат-Геліну"
-itm_pinnath_footman  = "Броня піхотинця Піннат-Геліну"
-itm_pinnath_leader  = "Броня лицаря Піннат-Геліну"
-itm_pinnath_vet_footman  = "Броня піхотинця-ветерана Піннат-Геліну"
-itm_pinnath_warrior  = "Броня воїна Піннат-Геліну"
-itm_pel_footman  = "Пеларгірська броня піхотинця"
-itm_pel_jerkin  = "Пеларгірська куртка"
-itm_pel_leader  = "Пеларгірська броня воєначальника"
-itm_pel_marine  = "Пеларгірський моряк"
-itm_pelargir_marine_leader  = "Пеларгірська броня капітана"
-itm_pelargir_regular  = "Пеларгірська броня воїна"
-itm_pelargir_hood  = "Білий капюшон"
-itm_pelargir_helmet_light  = "Пеларгірський шолом"
-itm_pelargir_helmet_heavy  = "Пеларгірський важкий шолом"
-itm_pelargir_greaves  = "Пеларгірські наголінники"
-itm_lossarnach_shirt  = "Лоссарнахський одяг"
-itm_lossarnach_axeman  = "Лоссарнахська броня сокироносця"
-itm_lossarnach_leader  = "Лоссарнахська броня воєначальника"
-itm_lossarnach_vet_axeman  = "Лоссарнахська броня сокироносца-ветерана"
-itm_lossarnach_vet_warrior  = "Лоссарнахська броня воїна-ветерана"
-itm_lossarnach_warrior  = "Лоссарнахська броня воїна"
-itm_lossarnach_cloth_cap  = "Лоссарнахський тканинний шолом"
-itm_lossarnach_leather_cap  = "Лоссарнахський шкіряний шолом"
-itm_lossarnach_scale_cap  = "Лоссарнахський лускатий шолом"
-itm_lossarnach_greaves  = "Лоссарнахські поножі"
-itm_gondor_shield_a  = "Ґондорський прямокутний щит"
-itm_gondor_shield_b  = "Ґондорський  краплеподібний щит"
-itm_gondor_shield_c  = "Ґондорський баштовий щит"
-itm_gondor_shield_d  = "Ґондорський  краплеподібний щит"
-itm_gondor_shield_e  = "Ґондорський щит варти Цитаделі"
-itm_gon_tab_shield_a  = "Ґондорський круглий щит з гербом"
-itm_gon_tab_shield_b  = "Ґондорський прямокутний щит з гербом"
-itm_gon_tab_shield_c  = "Ґондорський краплеподібний щит з гербом"
-itm_gon_tab_shield_d  = "Ґондорський баштовий щит з гербом"
-itm_amroth_sword_a  = "Дол-Амротський меч"
-itm_amroth_sword_b  = "Дол-Амротський лицарський меч"
-itm_gondor_sword  = "Ґондорскій піхотний меч"
-itm_amroth_bastard  = "Дол-Амротський лебединий меч "
-itm_gondor_short_sword  = "Лінхірський екет"
-itm_pelargir_eket  = "Пеларгірський екет"
-itm_pelargir_sword  = "Пеларгірський меч"
-itm_gondor_ranger_sword  = "Ґондорський меч рейнджера"
-itm_gondor_bastard  = "Ґондорський Меч-бастард"
-itm_gondor_citadel_sword  = "Ґондорський меч Варти Цитаделі"
-itm_gondor_cav_sword  = "Ґондорський кавалерійський меч"
-itm_gondor_spear  = "Ґондорський спис"
-itm_gondor_tower_spear  = "Ґондорський спис Варти Цитаделі"
-itm_gondor_lance  = "Ґондорський кавалерійський спис"
-itm_loss_axe  = "Лоссарнахська сокира"
-itm_loss_war_axe  = "Лоссарнахська бойова сокира"
-itm_lorien_sword_a  = "Лоріенський довгий меч"
-itm_lorien_sword_b  = "Лоріенський короткий меч"
-itm_lorien_sword_c  = "Лоріенський бойовий меч"
-itm_lorien_archer  = "Лоріенська броня лучника"
-itm_lorien_armor_a  = "Лоріенська стьобана броня"
-itm_lorien_armor_b  = "Лоріенська кольчуга"
-itm_lorien_armor_c  = "Лоріенська луската броня"
-itm_lorien_boots  = "Лоріенські черевики"
-itm_lorien_shield_b  = "Лоріенський баштовий щит"
-itm_lorien_shield_c  = "Лоріенський краплеподібний щит"
-itm_lorien_round_shield  = "Лоріенський круглий щит"
-itm_lorien_helm_a  = "Лоріенський шолом лучника"
-itm_lorien_helm_b  = "Лоріенський шолом лучника"
-itm_lorien_helm_c  = "Лоріенський шолом піхотинця"
-itm_orc_coif  = "Оркський черепник"
-itm_orc_greaves  = "Оркські кольчужні чоботи"
-itm_orc_ragwrap  = "Оркські рвані обмотки"
-itm_orc_furboots  = "Оркські хутряні чоботи"
-itm_orc_tribal_a  = "Необроблена шкіра"
-itm_orc_tribal_b  = "Необроблена шкіра"
-itm_orc_tribal_c  = "Необроблена шкіра"
-itm_evil_gauntlets_a  = "Чорні рукавички"
-itm_evil_gauntlets_b  = "Чорні панцерні рукавички"
-itm_isen_orc_armor_a  = "Ізенґардська орча броня"
-itm_isen_orc_armor_b  = "Ізенґардська орча броня"
-itm_isen_orc_armor_c  = "Ізенґардська орча броня"
-itm_isen_orc_armor_d  = "Ізенґардська орча броня"
-itm_isen_orc_armor_e  = "Ізенґардська орча броня"
-itm_isen_orc_armor_f  = "Ізенґардська орча броня"
-itm_isen_orc_armor_g  = "Ізенґардська орча броня"
-itm_isen_uruk_light_a  = "Урук-хайська легка броня"
-itm_isen_uruk_light_b  = "Урук-хайська шкіряна броня"
-itm_isen_uruk_light_c  = "Урук-хайська шкіряна броня"
-itm_isen_uruk_light_d  = "Урук-хайська шкіряна броня з кольчугою"
-itm_isen_uruk_light_e  = "Урук-хайская кольчужна броня"
-itm_isen_uruk_heavy_a  = "Урук-хайська шкіряна броня з кольчугою"
-itm_isen_uruk_heavy_b  = "Урук-хайська важка броня"
-itm_isen_uruk_heavy_c  = "Урук-хайська важка броня"
-itm_isen_uruk_heavy_d  = "Урук-хайська шкіряна броня слідопита"
-itm_isen_uruk_heavy_e  = "Урук-хайська шкіряна броня слідопита"
-itm_uruk_tracker_boots  = "Урукські чоботи слідопита"
-itm_uruk_greaves  = "Урукські поножі"
-itm_uruk_chain_greaves  = "Урукські кольчужні поножі"
-itm_uruk_ragwrap  = "Урукські рвані обмотки"
-itm_isen_orc_helm_a  = "Ізенґардський орочий шолом"
-itm_isen_orc_helm_b  = "Ізенґардський орочий шолом"
-itm_isen_orc_helm_c  = "Ізенґардський орочий шолом"
-itm_isen_uruk_helm_a  = "Урук-хайський шолом"
-itm_isen_uruk_helm_b  = "Урук-хайський шолом"
-itm_isen_uruk_helm_c  = "Урук-хайський шолом"
-itm_isen_uruk_helm_d  = "Урук-хайський шолом полководця"
-itm_isen_uruk_helm_e  = "Урук-хайський шолом слідопита"
-itm_isen_uruk_helm_f  = "Урук-хайський шолом слідопита"
-itm_uruk_pike_b  = "Мордорська піка"
-itm_uruk_falchion_a  = "Урукський фальшіон"
-itm_uruk_falchion_b  = "Урукський фальшіон"
-itm_uruk_spear  = "Мордорський спис"
-itm_uruk_skull_spear  = "Урукський спис з черепом"
-itm_uruk_voulge  = "Урукський вульж"
-itm_uruk_heavy_axe  = "Урукська важка сокира"
-itm_isengard_sword  = "Ізенґардський меч"
-itm_isengard_axe  = "Ізенґардська сокира"
-itm_isengard_hammer  = "Ізенґардський молот"
-itm_isengard_halberd  = "Ізенґардська алебарда"
-itm_isengard_mallet  = "Ізенґардський молоток"
-itm_isengard_heavy_axe  = "Ізенґардська важка сокира"
-itm_isengard_heavy_sword  = "Ізенґардський важкий меч"
-itm_isengard_spear  = "Ізенґардський спис"
-itm_isengard_pike  = "Ізенґардська піка"
-itm_isen_orc_shield_a  = "Ізенґардський орочий щит"
-itm_isen_orc_shield_b  = "Ізенґардський орочий щит"
-itm_isen_uruk_shield_b  = "Ізенґардський урукський щит"
-itm_wood_club  = "Дерев'яна дубина"
-itm_twohand_wood_club  = "Велика дерев'яна дубина"
-itm_bone_cudgel  = "Кістяна дубина"
-itm_skull_club  = "Дубина з черепом"
-itm_orc_club_b  = "Дубина вовчого вершника"
-itm_orc_club_c  = "Шпичаста оркська дубина"
-itm_orc_club_d  = "Зловісна булава"
-itm_orc_sledgehammer  = "Оркська кувалда"
-itm_orc_simple_spear  = "Оркський спис"
-itm_orc_skull_spear  = "Оркський спис з черепом"
-itm_orc_bill  = "Оркська глефа"
-itm_orc_slasher  = "Оркський тесак"
-itm_orc_falchion  = "Оркський фальшіон"
-itm_orc_scimitar  = "Оркський ятаган"
-itm_orc_sabre  = "Оркська шабля"
-itm_orc_machete  = "Оркський мачете"
-itm_orc_axe  = "Оркська сокира"
-itm_orc_two_handed_axe  = "Оркська дворучна сокира"
-itm_orc_throwing_axes  = "Оркські метальні сокири"
-itm_orc_bow  = "Оркський лук"
-itm_orc_shield_a  = "Оркський щит"
-itm_orc_shield_b  = "Оркський щит"
-itm_orc_shield_c  = "Оркський баштовий щит"
-itm_mordor_orc_shield_a  = "Мордорський орочий щит"
-itm_mordor_orc_shield_b  = "Мордорський орочий щит"
-itm_mordor_orc_shield_c  = "Мордорський орочий щит"
-itm_mordor_orc_shield_d  = "Мордорський орочий щит"
-itm_mordor_orc_shield_e  = "Мордорський орочий щит"
-itm_mordor_uruk_shield_a  = "Мордорський урукський щит"
-itm_mordor_uruk_shield_b  = "Мордорський урукський щит"
-itm_mordor_uruk_shield_c  = "Мордорський урукський щит"
-itm_mordor_man_shield_a  = "Мордорський людський щит"
-itm_mordor_man_shield_b  = "Мордорський людський щит"
-itm_angmar_shield  = "Анґмарський щит"
-itm_orc_nosehelm  = "Оркський шолом з наносником"
-itm_orc_kettlehelm  = "Оркський шолом-капеліна"
-itm_orc_buckethelm  = "Оркська цукрова голова"
-itm_orc_morion  = "Оркський моріон"
-itm_orc_beakhelm  = "Орочий шолом з дзьобом"
-itm_orc_bughelm  = "Оркський шолом жука"
-itm_orc_visorhelm  = "Орочий шолом з прорізом"
-itm_m_orc_light_a  = "Мордорська ороча легка броня"
-itm_m_orc_light_b  = "Мордорська ороча легка броня"
-itm_m_orc_light_c  = "Мордорська ороча легка броня"
-itm_m_orc_light_d  = "Мордорська ороча легка броня"
-itm_m_orc_light_e  = "Мордорська ороча легка броня"
-itm_m_orc_heavy_a  = "Мордорська ороча важка броня"
-itm_m_orc_heavy_b  = "Мордорська ороча важка броня"
-itm_m_orc_heavy_c  = "Мордорська ороча важка броня"
-itm_m_orc_heavy_d  = "Мордорська ороча важка броня"
-itm_m_orc_heavy_e  = "Мордорська ороча важка броня"
-itm_m_uruk_light_a  = "Урукська броня"
-itm_m_uruk_light_b  = "Урукська шкіряна броня"
-itm_m_uruk_light_c  = "Урукська легка кольчуга"
-itm_m_uruk_med_a  = "Урукська посилена шкірянка"
-itm_m_uruk_med_b  = "Урукська важка кольчуга"
-itm_m_uruk_med_c  = "Урукська легка луската броня"
-itm_m_uruk_heavy_a  = "Урукська важка луската броня"
-itm_m_uruk_heavy_b  = "Урукська пластинчата броня"
-itm_m_uruk_heavy_c  = "Обладунок Лугбурзу"
-itm_m_cap_armor  = "Мордорська броня полководця"
-itm_black_num_armor  = "Броня чорного нумінорця"
-itm_m_armor_a  = "Мордорська броня"
-itm_m_armor_b  = "Мордорська броня"
-itm_evil_light_armor  = "Страхітливе вбрання"
-itm_uruk_helm_a  = "Урукський шолом"
-itm_uruk_helm_b  = "Урукський шолом"
-itm_uruk_helm_c  = "Урукський шолом з дзьобом"
-itm_uruk_helm_d  = "Урукський страхітливий шолом"
-itm_uruk_helm_e  = "Урукський шолом з маскою"
-itm_uruk_helm_f  = "Урукський шолом"
-itm_mordor_cap_helm  = "Мордорський шолом полководця"
-itm_mordor_helm  = "Мордорський шолом"
-itm_black_num_helm  = "Шолом чорного нумінорця"
-itm_mordor_sword  = "Мордорський Меч-бастард"
-itm_mordor_longsword  = "Мордорський меч"
-itm_moria_armor_a  = "Морійський нагрудник"
-itm_moria_armor_b  = "Морійський нагрудник з наплічниками"
-itm_moria_armor_c  = "Морійськая ороча кольчуга"
-itm_moria_armor_d  = "Морійська Клепана шкіряна броня"
-itm_moria_armor_e  = "Морійськая ороча важка кольчуга"
-itm_moria_orc_shield_a  = "Великий Щит Морії"
-itm_moria_orc_shield_b  = "Морійський орочий щит"
-itm_moria_orc_shield_c  = "Морійський орочий щит"
-itm_gundabad_armor_a  = "Гундабадське оркське лахміття"
-itm_gundabad_armor_b  = "Гундабадськи орочий хутряний одяг"
-itm_gundabad_armor_c  = "Гундабадська ороча броня"
-itm_gundabad_armor_d  = "Гундабадська ороча броня"
-itm_gundabad_armor_e  = "Гундабадська ороча важка броня"
-itm_gundabad_helm_a  = "Шкіряна шапка"
-itm_gundabad_helm_b  = "Шкіряний шолом"
-itm_gundabad_helm_c  = "Гундабадський шолом"
-itm_gundabad_helm_d  = "Гундабадський шолом"
-itm_gundabad_helm_e  = "Шолом вовчого наїзника"
-itm_dunland_wolfboots  = "Дунландські вовчі черевики"
-itm_dunland_armor_a  = "Дунландська хутряна броня"
-itm_dunland_armor_b  = "Дунландська хутряна броня"
-itm_dunland_armor_c  = "Дунландська хутряна броня"
-itm_dunland_armor_d  = "Дунландська хутряна броня"
-itm_dunland_armor_e  = "Дунландська хутряна броня"
-itm_dunland_armor_g  = "Дунландська хутряна броня"
-itm_dunland_armor_h  = "Дунландська довга хутряна броня"
-itm_dunland_armor_i  = "Дунландський гауберк"
-itm_dunland_armor_j  = "Дунландський гауберк"
-itm_dunland_armor_k  = "Броня дунландського вождя"
-itm_dun_helm_a  = "Дунландський вовчий шолом"
-itm_dun_helm_b  = "Дунландський рогатий шолом"
-itm_dun_helm_c  = "Дунландський високий шолом"
-itm_dun_helm_d  = "Дунландський високий шолом"
-itm_dun_helm_e  = "Дунландський Оленячий Шолом"
-itm_dun_shield_a  = "Дунландський щит"
-itm_dun_shield_b  = "Дунландський щит"
-itm_dun_berserker  = "Меч дунландського вождя"
-itm_dunnish_antler_axe  = "Дунландська сокира з оленячого рогу"
-itm_dunnish_war_axe  = "Дунландська бойова сокира"
-itm_dunnish_axe  = "Дунландська сокира"
-itm_dunland_spear  = "Дунландський спис"
-itm_dunnish_pike  = "Дунландська піка"
-itm_rohan_cav_sword  = "Роганський кавалерійський меч"
-itm_rohan_inf_sword  = "Роганський меч"
-itm_rohan_spear  = "Роганський спис"
-itm_rohan_lance  = "Роганський кавалерійський спис"
-itm_rohan_sword_c  = "Роганський меч"
-itm_rohirrim_short_axe  = "Роганська коротка сокира"
-itm_rohirrim_long_hafted_axe  = "Роганська велика сокира"
-itm_rohan_2h_sword  = "Роганський бойовий меч"
-itm_rohan_recruit  = "Роганська підбита куртка"
-itm_rohan_leather  = "Роганський шкіряний нагрудник"
-itm_rohan_mail  = "Роганський гауберк"
-itm_rohan_rider  = "Роганська броня вершника"
-itm_rohan_scale  = "Роганська луската броня"
-itm_rohan_surcoat  = "Роганське сюрко"
-itm_rohan_guard  = "Роганська броня стражника"
-itm_rohan_light_helmet_a  = "Роганський легкий шолом"
-itm_rohan_light_helmet_b  = "Роганський легкий шолом"
-itm_rohan_inf_helmet_a  = "Роганський шолом з прорізом"
-itm_rohan_inf_helmet_b  = "Роганський шолом з прорізом"
-itm_rohan_archer_helmet_a  = "Роганський шолом з наносником"
-itm_rohan_archer_helmet_b  = "Роганський шолом з наносником"
-itm_rohan_archer_helmet_c  = "Роганський шолом стражника"
-itm_rohan_shield_a  = "Роганський щит"
-itm_rohan_shield_b  = "Роганський щит"
-itm_rohan_shield_c  = "Роганський щит"
-itm_rohan_shield_d  = "Роганський щит"
-itm_rohan_shield_e  = "Роганський щит"
-itm_rohan_shield_f  = "Роганський щит"
-itm_rohan_shield_g  = "Роганський королівський щит"
-itm_rohan_light_greaves  = "Роганські легкі поножі"
-itm_rohirrim_war_greaves  = "Роганські бойові поножі"
-itm_mirkwood_leather  = "шкіряна броня лісових Ельфів"
-itm_mirkwood_pad  = "Стьобане пальто Темнолісся"
-itm_mirkwood_mail  = "Кольчуга Темнолісся"
-itm_mirkwood_scale  = "Легка луската броня Темнолісся"
-itm_mirkwood_heavy_scale  = "Лускатий обладунок Лихолісся"
-itm_mirkwood_great_spear  = "Великий спис Темнолісся"
-itm_mirkwood_war_spear  = "Бойовий спис Темнолісся"
-itm_mirkwood_short_spear  = "Спис лісових ельфів "
-itm_mirkwood_knife  = "Ніж лісових Ельфів"
-itm_mirkwood_axe  = "Сокира лісових Ельфів"
-itm_mirkwood_spear_shield_a  = "Щит лісових Ельфів"
-itm_mirkwood_spear_shield_b  = "Військовий щит Темнолісся"
-itm_mirkwood_spear_shield_c  = "Круглий шолом лісових Ельфів"
-itm_mirkwood_helm_a  = "Шолом лучника лісових Ельфів"
-itm_mirkwood_helm_b  = "Шолом Темнолісся"
-itm_mirkwood_helm_c  = "Важкий шолом Темнолісся"
-itm_mirkwood_helm_d  = "Королівський шолом темнолісся"
-itm_mirkwood_boots  = "Чоботи лісових Ельфів"
-itm_harad_tunic  = "Харадськия одяг"
-itm_harad_padded  = "Харондорська підбита броня"
-itm_harad_hauberk  = "Харондорський гауберк"
-itm_harad_lamellar  = "Броня-Харасьяла"
-itm_harad_heavy  = "Харадська благородна броня"
-itm_harad_skirmisher  = "Легке харадське вбрання"
-itm_harad_archer  = "Харадська броня лучника"
-itm_black_snake_armor  = "Броня-Маранка"
-itm_harad_champion  = "Далекохарадський одяг"
-itm_panther_guard  = "Шкура пантери"
-itm_harad_scale  = "Харадська луската броня"
-itm_harad_tiger_scale  = "Тигряча броня варти"
-itm_harad_lion_scale  = "Левова броня варти "
-itm_harad_dragon_helm  = "Шолом Кілока"
-itm_harad_cav_helm_a  = "Харондорський кавалерійський шолом"
-itm_harad_cav_helm_b  = "Харондорський кавалерійський шолом"
-itm_black_snake_helm  = "Шолом-Маранка"
-itm_harad_finhelm  = "Великий харадський шолом"
-itm_harad_heavy_inf_helm  = "Великий харадський шолом"
-itm_harad_wavy_helm  = "Великий харадський шолом"
-itm_harad_eaglehelm  = "Шолом Орлиної гвардії"
-itm_lion_helm  = "Шолом Левиної гвардії"
-itm_harad_pantherhelm  = "Шолом Гвардії пантери"
-itm_harad_khopesh  = "Харадський хопеш"
-itm_black_snake_sword  = "Харадський важкий фальшіон"
-itm_harad_heavy_sword  = "Харадський важкий меч"
-itm_horandor_a  = "Харадський ятаган"
-itm_skirmisher_sword  = "Харадський меч застрільника"
-itm_harad_sabre  = "Харадська шабля"
-itm_harad_mace  = "Далекохарадськая булава"
-itm_far_harad_2h_mace  = "Далекохарадська дворучна булава"
-itm_harad_dagger  = "Харадський кинджал"
-itm_harad_short_spear  = "Харадський короткий спис"
-itm_harad_long_spear  = "Харадський спис"
-itm_eagle_guard_spear  = "Спис-харасьяла"
-itm_harad_long_shield_a  = "Харадський леопардовий щит"
-itm_harad_long_shield_b  = "Харадський бронзовий щит"
-itm_harad_long_shield_c  = "Харадський сонячний щит"
-itm_harad_long_shield_d  = "Харадський зміїний щит"
-itm_harad_long_shield_e  = "Харадський зміїний щит"
-itm_harad_shield_a  = "Харондорський щит"
-itm_harad_shield_b  = "Харондорський баклер"
-itm_harad_shield_c  = "Харондорський баклер"
-itm_harad_yellow_shield  = "Харадський щит"
-itm_desert_boots  = "Пустельні чоботи"
-itm_harad_leather_greaves  = "Харадські поножі"
-itm_harad_scale_greaves  = "Харадські черевики"
-itm_harad_lamellar_greaves  = "Харадські черевики"
-itm_khand_inf_helm_a  = "Кхандський шолом"
-itm_khand_inf_helm_b  = "Кхандський шолом"
-itm_khand_inf_helm_c1  = "Кхандський шолом у вигляді чаші"
-itm_khand_inf_helm_c2  = "Кхандський шолом у вигляді чаші"
-itm_khand_inf_helm_d  = "Кхандський конусний шолом"
-itm_khand_cav_helm_a  = "Кхандський шолом всадника"
-itm_khand_cav_helm_b  = "Кхандський шолом всадника"
-itm_khand_cav_helm_c  = "Кхандський прикрашений шолом"
-itm_khand_helm_mask  = "Кхандськая маска"
-itm_khand_light  = "Кхандськая спідниця"
-itm_khand_light_lam  = "Кхандський легкий пластинчастий обладунок"
-itm_khand_foot_lam  = "Кхандська броня пехотинця"
-itm_khand_med_lam  = "Кхандський середній пластинчастий обладунок"
-itm_khand_heavy_lam  = "Кхандський важкий пластинчастий обладунок"
-itm_khand_axe_great  = "Кхандська велика сокира"
-itm_khand_axe_winged  = "Кхандська крилата сокира"
-itm_khand_halberd  = "Кхандська алебарда"
-itm_khand_trident  = "Кхандський тризуб"
-itm_khand_voulge  = "Кхандський вульж"
-itm_khand_mace1  = "Кхандська булава"
-itm_khand_mace2  = "Кхандська булава"
-itm_khand_throwing_axe  = "Кхандські метальні сокири"
-itm_khand_rammace  = "Кхандська бараняча булава"
-itm_khand_pitsword  = "Меч бійця"
-itm_khand_tulwar  = "Кхандський тальвар"
-itm_khand_2h_tulwar  = "Кхандський тальвар"
-itm_khand_lance  = "Кхандський кавалерійський спис"
-itm_easterling_round_horseman  = "Істерлінгський круглий щит"
-itm_variag_gladiator_shield  = "Істерлінгський ямний щит"
-itm_easterling_hawk_shield  = "Істерлінгський соколиний щит"
-itm_rhun_bull1_shield  = "Рунійський щит"
-itm_rhun_bull2_shield  = "Рунійський щит"
-itm_rhun_bull3_shield  = "Рунійський щит"
-itm_rhun_shield  = "Рунійський краплеподібний щит"
-itm_rhun_armor_a  = "Рунійське легке бойове вбрання"
-itm_rhun_armor_b  = "Рунійське легке бойове вбрання"
-itm_rhun_armor_d  = "Рунійське легке бойове вбрання"
-itm_rhun_armor_g  = "Рунійське важке бойове вбрання"
-itm_rhun_armor_h  = "Рунійське важке бойове вбрання"
-itm_rhun_armor_j  = "Рунійське середнє бойове вбрання"
-itm_rhun_armor_m  = "Рунійське середнє бойове вбрання"
-itm_rhun_armor_n  = "Рунійське середнє бойове вбрання"
-itm_rhun_armor_o  = "Рунійське середнє бойове вбрання"
-itm_rhun_armor_p  = "Рунійська броня знатного воїна"
-itm_rhun_armor_k  = "Рунійська броня знатного воїна"
-itm_rhun_helm_barbed  = "Рунійський шолом з шипами"
-itm_rhun_helm_horde  = "Рунійський шолом орди"
-; itm_rhun_helm_pot  = "Rhun Pot Helm"
-itm_rhun_helm_round  = "Рунійський круглий шолом"
-itm_rhun_helm_leather  = "Рунійський шкіряний шолом"
-itm_rhun_helm_chieftain  = "Рунійський шолом вождя"
-; itm_rhun_warpick  = "Rhun War Pick"
-itm_rhun_greataxe  = "Рунійська велика сокира"
-itm_rhun_battleaxe  = "Рунійська бойова сокира"
-itm_rhun_falchion  = "Дикунський фальшіон"
-itm_rhun_glaive  = "Рунійськая глефа"
-itm_rhun_greatfalchion  = "Дикунський великий фальшіон"
-itm_rhun_greatsword  = "Дикунський великий меч"
-itm_rhun_shortsword  = "Дикунський короткий меч"
-itm_rhun_sword  = "Дикунський меч"
-; itm_rhun_mangler  = "Rhun Mangler"
-itm_dale_light_a  = "Дейльская куртка ополченця"
-itm_dale_light_b  = "Північний легкий пластинчастий обладунок"
-itm_dale_med_a  = "Північний важкий пластинчастий обладунок"
-itm_dale_med_b  = "Дейльска шкіряна броня"
-itm_dale_med_c  = "Дейльская шкірянка поверх кольчуги"
-itm_dale_med_d  = "Дейльска пластинчаста броня"
-itm_dale_heavy_a  = "Дейльска кольчуга з пластинами"
-itm_dale_heavy_b  = "Дейльская пластинчата куртка"
-itm_dale_heavy_c  = "Рованіонська кольчуга"
-itm_north_leather  = "Півничний шкіряний жилет"
-itm_dale_helmet_a  = "Дейльский легкий піхотний шолом"
-itm_dale_helmet_b  = "Дейльский легкий шолом лучника"
-itm_dale_helmet_c  = "Дейльский піхотний шолом"
-itm_dale_helmet_d  = "Дейльский Шолом Лучника"
-itm_dale_helmet_e  = "Шолом барда-лучника"
-itm_dale_helmet_f  = "Шолом барда-лучника"
-itm_dale_sword  = "Дейльский короткий меч"
-itm_dale_sword_long  = "Дейльский довгий меч"
-itm_dale_sword_broad  = "Дейльский меч піхотинця"
-itm_dale_pike  = "Дейльский спис"
-itm_dale_billhook  = "Дейльская алебарда"
-itm_dale_shield_a  = "Дейльский баштовий щит"
-itm_dale_shield_b  = "Дейльский баштовий щит"
-itm_dale_shield_c  = "Дейльский круглий щит"
-itm_umb_armor_a  = "Шкіряний жилет Корсарів"
-itm_umb_armor_b  = "Корсарська шкіряна броня"
-itm_umb_armor_c  = "Підбита броня Корсарів"
-itm_umb_armor_d  = "Важко підбита броня Корсарів"
-itm_umb_armor_e  = "Корсарськи гауберк"
-itm_umb_armor_f  = "Броня Ватажка Корсарів"
-itm_umb_helm_a  = "Корсарський шолом-раковина"
-itm_umb_helm_b  = "Високий шолом Корсара"
-itm_umb_helm_c  = "Корсарський шолом ополченця"
-itm_umb_helm_d  = "Корсарський шолом нальотчика"
-itm_corsair_trident  = "Тризуб гнів моря"
-itm_corsair_boots  = "Корсарські чоботи"
-itm_umb_shield_a  = "Корсарський щит"
-itm_umb_shield_b  = "Корсарський баклер"
-itm_umb_shield_c  = "Корсарський баклер"
-itm_umb_shield_d  = "Корсарський баклер"
-itm_umbar_spear  = "Умбарський короткий спис"
-itm_umbar_cutlass  = "Умбарська абордажна шабля"
-itm_kraken  = "Абордажна шабля Кракена"
-itm_umbar_rapier  = "Умбарський абордажний меч"
-itm_corsair_harpoon  = "Корсарський гарпун"
-itm_corsair_sword  = "Корсарський екет"
-itm_corsair_throwing_dagger  = "Криві метальні ножі"
-itm_umbar_pike  = "Корсарський тризуб"
-itm_woodman_tunic  = "Сорочка лісовика"
-itm_woodman_scout  = "Шапка лісовика-розвідника"
-itm_woodman_padded  = "Підбита броня лісовика"
-itm_beorn_tunic  = "Беорнінгський одяг"
-itm_beorn_padded  = "Беорнінгська підбита броня"
-itm_beorn_heavy  = "Беорнінгська важка броня"
-itm_beorn_berserk  = "Беорнінгський одяг берсерка"
-itm_beorn_chief  = "Беорнінгський одяг вождя"
-itm_beorn_helmet  = "Ведмежий черепник"
-itm_beorn_shield  = "Північний щит"
-itm_beorn_axe  = "Беорнінгська сокира"
-itm_beorn_staff  = "Посох лісовика"
-itm_beorn_battle_axe  = "Беорнінгська бойова сокира"
-itm_dwarf_shield_a  = "Гномів кутовий щит"
-itm_dwarf_shield_b  = "Гномів баштовий щит"
-itm_dwarf_shield_c  = "Гномів бойової щит"
-itm_dwarf_shield_d  = "Гномів круглий щит"
-itm_north_round_shield  = "Північний круглий щит"
-itm_woodmen_heavy  = "Броня Лихолісся"
-itm_dwarf_sword_a  = "Гном'ячий меч"
-itm_dwarf_sword_b  = "Беорнінгський короткий меч"
-itm_dwarf_sword_c  = "Гном'ячий меч"
-itm_dwarf_sword_d  = "Гном'ячий меч"
-itm_dwarf_battle_axe  = "Гном'яча бойова сокира"
-itm_dwarf_great_axe  = "Гном'яча велика сокира"
-itm_dwarf_great_mattock  = "Гном'яча велика мотика"
-itm_dwarf_great_pick  = "Гном'яче велике кайло"
-itm_dwarf_war_pick  = "Гном'яче бойове кайло"
-itm_dwarf_mattock  = "Гном'яча мотика"
-itm_dwarf_hand_axe  = "Гномів топірець"
-itm_dwarf_throwing_axe  = "Гномові метальні сокири"
-itm_dwarf_spear  = "Гном'ячий спис"
-itm_dwarf_spear_b  = "Гном'яча піка"
-itm_dwarf_spear_c  = "Гном'яча довга сокира"
-itm_dwarf_helm_coif  = "Гномів койф"
-itm_dwarf_nasal_b  = "Гномів шолом з наносником"
-itm_north_skullcap  = "Північна черепник"
-itm_dwarf_helm_kettle  = "Гном'яча капеліна"
-itm_dwarf_helm_fris  = "Гном'ячий чубатий шолом"
-itm_north_leather_skullcap  = "Північний легкий черепник"
-itm_dwarf_hood  = "Гном'ячий капюшон"
-itm_dwarf_nasal  = "Гном'ячий Топхельм з носовою пластиною"
-itm_north_nasal_helm  = "Північний шолом з наносником"
-itm_dwarf_helm_p  = "Гномів королівський шолом"
-itm_dwarf_miner  = "Гномів легкий шолом"
-itm_north_chieftain  = "Північний шолом ватажка"
-itm_dwarf_helm_round  = "Гном'ячий закруглений шолом"
-itm_dwarf_helm_sallet  = "Гном'ячий салет"
-itm_dwarf_armor_d  = "Луската куртка Залізних Горбів"
-itm_dwarf_armor_a  = "Ереборська куртка поверх кольчуги"
-itm_leather_dwarf_armor  = "Гном'яча підбита куртка"
-itm_dwarf_armor_b  = "Ереборская сорочка поверх кольчуги"
-itm_leather_dwarf_armor_b  = "Гном'яча підбита шкірянка"
-itm_dwarf_armor_c  = "Ереборська луската кольчуга"
-itm_dwarf_vest  = "Гном'ячий одяг"
-itm_dwarf_vest_b  = "Кольчуга Залізних Горбів"
-itm_dwarf_pad_boots  = "Гном'ячі підбиті чоботи"
-itm_dwarf_chain_boots  = "Гномів кольчужні панчохи"
-itm_dwarf_scale_boots  = "Гном'ячі лускаті чоботи"
-itm_good_mace  = "Булава"
-itm_mordor_banner  = "Мордорський прапор"
-itm_isengard_banner  = "Ізенґардський прапор"
-itm_woodelf_banner  = "Прапор Лихолісся"
-itm_lorien_banner  = "Лоріенський прапор"
-itm_imladris_banner  = "Рівендільский прапор"
-itm_gondor_lance_banner  = "Ґондорський спис з прапорцем"
-itm_amroth_lance_banner  = "Дол-Амротський спис з прапорцем"
-itm_rohan_lance_banner_sun  = "Роганський спис з прапором сонця"
-itm_rohan_lance_banner_horse  = "Роганський спис з прапором коня"
-itm_ent_water  = "Дивна чаша води"
-itm_map  = "Карти Середзем'я"
-itm_athelas_reward  = "Рослина Ателес"
-itm_phial_reward  = "Світоч Ґаладріель"
-itm_scroll_reward  = "Про падіння Гондоліна"
-itm_hammer_reward  = "Ковальський молот"
-itm_khand_knife_reward  = "Кхандський жертовний кинджал"
-itm_angmar_whip_reward  = "Батіг Пана"
-itm_horn_gondor_reward  = "Ріг Ґондору"
-itm_harad_totem_reward  = "Харадський тотем"
-itm_elven_amulet_reward  = "Ельфійський амулет"
-itm_torque_reward  = "Намисто зла"
-itm_orc_brew  = "Оркське пійло"
-itm_rohan_saddle  = "Сідло Тенгеля"
-itm_mearas_reward  = "Жеребець Меарас"
-itm_shield_of_tuor  = "Щит Туора"
-itm_riv_armor_reward  = "Рівендільска прикрашена броня"
-itm_westernesse1h_reward  = "Нуменорський меч"
-itm_westernesse2h_reward  = "Нуменорський меч"
-itm_mirkwood_sword_reward  = "Зеленоліський священний меч"
-itm_nazgul_sword  = "Меч Назгула"
-itm_cooking_cauldron  = "Котел"
-itm_eorl_cavalry_sword  = "Меч Еорла"
-itm_garlic_reward  = "Часник"
-itm_silmarillion_reward  = "Сильмариліон"
-itm_herbarium_reward  = "Гербарій Середзем'я"
-itm_book_of_moria  = "Книга Мазбурла"
-itm_ring_a_reward  = "Тулькарісіль"
-itm_ring_b_reward  = "Фінварісіль"
-itm_dale_bow_reward  = "Лук Барда"
-; itm_tome_of_knowledge  = "Tome of Arcane Knowledge"
-; itm_orc_idol_reward  = "Idol of the First Orc"
-itm_crebain_reward  = "Кребен"
-itm_miruvor_reward  = "Фляжка Мірувору"
-itm_wheeled_cage  = "Гігантська колісна клітка"
-itm_orc_throwing_axes_reward  = "Ґундабадські метальні сокири"
-itm_corsair_throwing_dagger_reward  = "Отруєні метальні кинджали"
-itm_dwarf_shield_reward  = "Щит Келед-зараму"
-itm_dwarf_great_axe_reward  = "Гном'яча гостра сокира"
-itm_isen_uruk_heavy_reward  = "Броня воєводи урук-хай"
-itm_lorien_bow_reward  = "Нолдорський лук"
-itm_elven_cloak  = "Ельфійський плащ"
-itm_dale_sword_reward  = "Дейльский королівський меч"
-itm_dale_armor_reward  = "Дейльская благородна кольчуга"
-itm_leather_gloves_reward  = "Рукавички лучника"
-itm_beorn_shield_reward  = "Беорнінгський щит"
-itm_beorn_axe_reward  = "Ведмежа дубина"
-itm_moria_arrow_reward  = "Морійські отруйні стріли"
-itm_khamul_helm  = "Шолом Кгамулу"
-itm_black_arrows_reward  = "Чорні стріли"
-itm_leather_boots_reward  = "Мисливські чоботи"
-itm_rohan_armor_th  = "Роганська королівська броня"
-itm_wilderness_amulet  = "Амулет пустелі"
-itm_prisoner_coll_chain  = "Кайдани"
-; itm_witchking_helmet  = "Sorcerer's Mask"
-itm_lorien_royal_armor  = "Лоріенська королівська броня"
-itm_feet_chains  = "Кайдани на ноги"
-itm_feet_chains_dwarf  = "Кайдани на ноги"
-itm_spider  = "Павук"
-itm_bear  = "Ведмідь"
-itm_wolf  = "Вовк"
-itm_werewolf  = "Перевертень"
-itm_thrush_reward  = "Дрізд"
-itm_gauntlets_reward  = "Залізні кулаки"
-itm_stones_siege  = "Осадні камні"
-itm_beorn_axe_no_attack  = "Беорнінгська сокира"
+itm_horse_meat|Конина
+itm_practice_sword|Тренувальний меч
+itm_arena_lance|Спис
+itm_practice_staff|Дерев'яна палиця
+itm_practice_bow|Тренувальний лук
+itm_wooden_javelin|Дерев'яний дротик
+itm_human_meat|Людська плоть
+itm_maggoty_bread|Червивий хліб
+itm_cram|Запас Крема
+itm_lembas|Лембас
+itm_smoked_fish|Копчена риба
+itm_dried_meat|Засохле м'ясо
+itm_cattle_meat|Яловичина
+itm_grain|Пшениця
+itm_tools|Інструменти
+itm_siege_supply|Провіант
+itm_quest_wine|Вино
+itm_quest_ale|Ель
+itm_metal_scraps_bad|Низькосортний металобрухт
+itm_metal_scraps_medium|Металобрухт
+itm_metal_scraps_good|Високоякісний металобрухт
+itm_oliphant|Оліфант
+itm_sumpter_horse|В'ючний кінь
+itm_saddle_horse|Верховий кінь
+itm_steppe_horse|Степовий кінь
+itm_courser|Жеребець
+itm_hunter|Гунтер
+itm_pony|Поні
+itm_arnor_warhorse|Арноріанський бойовий кінь
+itm_dunedain_warhorse|Денендайский бойовий кінь
+itm_rohirrim_courser|Роханський жеребець
+itm_rohirrim_hunter|Роханський гунтер
+itm_rohirrim_courser2|Роханський броньований Жеребець
+itm_rohan_warhorse|Роханський бойовий кінь
+itm_thengel_warhorse|Еолрський бойовий кінь
+itm_rhun_horse_a|Рунійський кінь
+itm_rhun_horse_b|Рунійський кінь
+itm_rhun_horse_d|Рунійський кінь
+itm_rhun_horse_e|Рунійський важкий кінь
+itm_rhun_horse_f|Рунійський важкий кінь
+itm_rhun_horse_g|Рунійський важкий кінь
+itm_rhun_horse_h|Рунійський важкий кінь
+itm_dale_horse|Рованіонський кінь
+itm_dale_warhorse|Рованіонський бойовий кінь
+itm_riv_warhorse|Рівендельский бойовий кінь
+itm_riv_warhorse2|Рівендельский кінь
+itm_mordor_warhorse|Мордорський бойовий кінь
+itm_mordor_warhorse2|Мордорський зловісний кінь
+itm_gondor_courser|Гондорський скаковий кінь
+itm_gondor_hunter|Гондорский гунтер
+itm_dol_amroth_warhorse|Дол-Амротський бойовий кінь
+itm_dol_amroth_warhorse2|Дол-Амротський важкий кінь
+itm_gondor_warhorse|Гондорский бойовий кінь
+itm_gondor_lam_horse|Ламедонський броньований кінь
+itm_lorien_warhorse|Лоріенский бойовий кінь
+itm_harad_horse|Харадський кінь
+itm_harad_warhorse|Харадський бойовий кінь
+itm_variag_pony|Варьягський низькорослий кінь
+itm_variag_kataphrakt|Істерлінгський бойовий кінь
+itm_warg_1b|Варг
+itm_warg_1c|Варг
+itm_warg_1d|Варг
+itm_wargarmored_1b|Броньований варг
+itm_wargarmored_1c|Броньований варг
+itm_wargarmored_2b|Броньований варг
+itm_wargarmored_2c|Броньований варг
+itm_wargarmored_3a|Броньований варг
+itm_warg_reward|Величезний варг
+itm_tree_trunk_club_a|Стовбур дерева
+itm_giant_mace|Величезна булава
+itm_troll_shield_a|Щит троля
+itm_arrows|Стріли
+itm_gondor_arrows|Гондорські стріли
+itm_orc_javelin|Оркський важкий дротик
+itm_khergit_arrows|Роханські стріли
+itm_harad_arrows|Харадські стріли
+itm_corsair_arrows|Корсарські стріли
+itm_ithilien_arrows|Ітіліенські стріли
+itm_woodelf_arrows|Стріли лісових ельфів
+itm_elven_arrows|Ельфійські стріли
+itm_orc_hook_arrow|Орські гачкуваті стріли
+itm_isengard_arrow|Ізенгардські стріли
+itm_leather_gloves|Шкіряні Рукавиці
+itm_mail_mittens|Кольчужні рукавиці
+itm_leather_boots|Шкіряні чоботи
+itm_leather_boots_dark|Чоботи наїзника
+itm_splinted_greaves|Шиновані наголінники
+itm_white_tunic_a|Одяг городянина
+itm_rohan_shoes|Шкіряні черевики
+itm_furry_boots|Хутряні чоботи
+itm_black_tunic|Чорний одяг
+itm_hood_black|Чорний капюшон
+itm_hood_green|Зелений капюшон
+itm_hood_grey|Сірий капюшон
+itm_hood_leather|Шкірний капюшон
+itm_axe_a|Північна сокира
+itm_axe_b|Північна бородоподібна сокира
+itm_axe_c|Північна сокира
+itm_axe_d|Північна сокира
+itm_long_bearded_axe|Північний бердиш
+itm_2_handed_axe|Північна довга сокира
+itm_shortened_spear|Вкорочений спис
+itm_spear|Спис
+itm_light_lance|Легкий кавалерійський спис
+itm_lance|Кавалерійський спис
+itm_tab_shield_small_round_b|Круглий щит вершника
+itm_short_bow|Короткий лук
+itm_regular_bow|Лук
+itm_nomad_bow|Лук кочівника
+itm_gondor_bow|Ґондорський лук
+itm_strong_bow|Тугий лук
+itm_elven_bow|Ельфійський лук
+itm_corsair_bow|Корсарський лук
+itm_dwarf_horn_bow|Гномів роговий лук
+itm_dwarf_short_bow|Гномів короткий лук
+itm_harad_bow|Харадський кривий лук
+itm_lg_bow|Лук Орлиної гвардії
+itm_riv_bow|Рівендельский лук
+itm_rhun_bow|Балхотський лук
+itm_lorien_bow|Ґаладрімський лук
+itm_isengard_large_bow|Ізенґардський великий лук
+itm_dale_bow|Дейлський лук
+itm_uruk_bow|Орочій роговий лук
+itm_mirkwood_bow|Темнолісський лук
+itm_dunland_javelin|Дунландські сулиці
+itm_orc_throwing_arrow|Орочі сулиці
+itm_heavy_throwing_spear|Важкий метальний спис
+itm_javelin|Сулиця
+itm_harad_javelin|Харадські сулиці
+itm_gondor_javelin|Ґондорська сулиця
+itm_rohirrim_throwing_axe|Північні метальні сокири
+itm_loss_throwing_axes|Лоссарнахські метальні сокири
+itm_arnor_helm_a|Арнорський шолом
+itm_arnor_helm_b|Арнорський шолом
+itm_arnor_helm_c|Арнорський шолом
+itm_dunedain_helm_b|Арнорський прикрашений шолом
+itm_arnor_armor_a|Арнорська броня
+itm_arnor_armor_b|Арнорська броня
+itm_arnor_armor_c|Броня рейнджера дунедайн
+itm_arnor_armor_d|Броня рейнджера дунедайн
+itm_arnor_armor_e|Арнорська товста куртка
+itm_arnor_armor_f|Арнорська чудова броня
+itm_arnor_greaves|Арнорські наголінники
+itm_arnor_shield_a|Арнорський щит
+itm_arnor_shield_c|Арнорський кавалерійський щит
+itm_arnor_sword_a|Арнорський меч-бастард
+itm_arnor_sword_c|Арнорський меч-бастард
+itm_arnor_sword_f|Арнорський короткий меч
+itm_riv_helm_a|Рівенділський коїф
+itm_riv_helm_b|Рівенділський шолом лучника
+itm_riv_helm_c|Рівенділський шолом піхотинця
+itm_riv_tiara|Тіара ельфійського правителя
+itm_riv_shield_a|Рівенділський щит
+itm_riv_shield_b|Рівенділський щит
+itm_riv_bas_sword|Рівенділський меч-бастард
+itm_riv_1h_sword|Рівенділський меч
+itm_riv_riding_sword|Рівенділський длинний меч
+itm_riv_archer_sword|Рівенділський короткий меч
+itm_riv_spear|Рівенділський спис
+itm_riv_light|Рівенділська блузка
+itm_riv_leather|Рівенділська шкіряна броня
+itm_riv_foot_mail|Рівендельска кольчуга
+itm_riv_foot_scale|Рівендельска луската броня
+itm_riv_surcoat|Рівендельська сюрка
+itm_riv_knight|Рівендельска лицарська броня
+itm_riv_armor_h_archer|Рівенділська броня
+itm_riv_armor_leader|Рівенділська броня воєначальника
+itm_riv_boots|Рівенділські чоботи
+itm_gon_footman|Ґондорська кольчуга
+itm_gon_jerkin|Ґондорська куртка
+itm_gon_regular|Ґондорська важка кольчуга
+itm_gon_bowman|Ґондорський гамбесон
+itm_gon_archer|Ґондорський гамбесон з накидкою
+itm_gon_noble_cloak|Ґондорська коштовна куртка
+itm_gon_squire|Ґондорська кольчуга з накидкою
+itm_gon_knight|Ґондорська важка кольчуга з накидкою
+itm_gon_ranger_cloak|Ґондорський плащ рейнджера
+itm_gon_ranger_skirt|Ґондорський одяг рейнджера
+itm_gon_steward_guard|Ґондорськая броня Охоронців намісника
+itm_gon_tower_guard|Ґондорська броня Охоронців Вежі
+itm_gon_tower_knight|Ґондорська броня Лицаря Вежі
+itm_gon_leader_surcoat_cloak|Ґондорська накидка воєначальника
+itm_gondor_ranger_hood|Зелений капюшон
+itm_gondor_ranger_hood_mask|Ґондорський капюшон рейнджера
+itm_gondor_light_greaves|Ґондорські шкіряні наголінники
+itm_gondor_med_greaves|Ґондорські середні наголінники
+itm_gondor_heavy_greaves|Ґондорські кольчужні наголінники
+itm_gondor_infantry_helm|Ґондорський шолом піхотинця
+itm_gondor_auxila_helm|Легкий шолом Гондора
+itm_gondorian_archer_helm|Шолом лучника Гондора
+itm_tower_archer_helm|Шолом лучника Вежі
+itm_gondor_leader_helm|Ґондорський чудовий шолом
+itm_tower_guard_helm|Шолом Охоронця Вежі
+itm_gondor_citadel_knight_helm|Шолом Лицаря Цитаделі
+itm_gondor_knight_helm|Кавалерійський шолом Гондора
+itm_gondor_dolamroth_helm|Дол-Амротський шолом
+itm_swan_knight_helm|Лебединий лицарський шолом
+itm_gondor_lamedon_helm|Ламедонський шолом
+itm_gondor_lamedon_leader_helm|Ламедонський чудовий шолом
+itm_blackroot_archer|Мортондський гамбесон з плащем
+itm_blackroot_bowman|Мортондська куртка з плащем
+itm_blackroot_footman|Мортондська куртка
+itm_blackroot_warrior|Мортондський гамбесон
+itm_blackroot_leader|Мортондська кольчуга
+itm_blackroot_hood|Чорний капюшон
+itm_dol_hauberk|Дол-Амротський гауберк
+itm_dol_heavy_mail|Дол-Амротська важка кольчуга
+itm_dol_padded_coat|Дол-Амротський підбитий одяг
+itm_dol_shirt|Дол-Амротський одяг
+itm_dol_very_heavy_mail|Дол-Амротська важка кольчуга
+itm_dol_greaves|Дол-Амротські наголінники
+itm_dol_shoes|Дол-Амротські легкі чоботи
+itm_lamedon_clansman|Ламедонська кланова броня
+itm_lamedon_footman|Ламедонська броня піхотинця
+itm_lamedon_knight|Ламедонська лицарська броня
+itm_lamedon_leader_surcoat_cloak|Ламедонська броня воєначальника
+itm_lamedon_warrior|Ламедонська броня воїна
+itm_lamedon_veteran|Ламедонська броня ветерана
+itm_lamedon_vet_warrior|Ламедонська чудова броня ветерана
+itm_lamedon_hood|Капюшон
+itm_pinnath_archer|Броня лучника Піннат-Геліну
+itm_pinnath_footman|Броня піхотинця Піннат-Геліну
+itm_pinnath_leader|Броня лицаря Піннат-Геліну
+itm_pinnath_vet_footman|Броня піхотинця-ветерана Піннат-Геліну
+itm_pinnath_warrior|Броня воїна Піннат-Геліну
+itm_pel_footman|Пеларгірська броня піхотинця
+itm_pel_jerkin|Пеларгірська куртка
+itm_pel_leader|Пеларгірська броня воєначальника
+itm_pel_marine|Пеларгірський моряк
+itm_pelargir_marine_leader|Пеларгірська броня капітана
+itm_pelargir_regular|Пеларгірська броня воїна
+itm_pelargir_hood|Білий капюшон
+itm_pelargir_helmet_light|Пеларгірський шолом
+itm_pelargir_helmet_heavy|Пеларгірський важкий шолом
+itm_pelargir_greaves|Пеларгірські наголінники
+itm_lossarnach_shirt|Лоссарнахський одяг
+itm_lossarnach_axeman|Лоссарнахська броня сокироносця
+itm_lossarnach_leader|Лоссарнахська броня воєначальника
+itm_lossarnach_vet_axeman|Лоссарнахська броня сокироносца-ветерана
+itm_lossarnach_vet_warrior|Лоссарнахська броня воїна-ветерана
+itm_lossarnach_warrior|Лоссарнахська броня воїна
+itm_lossarnach_cloth_cap|Лоссарнахський тканинний шолом
+itm_lossarnach_leather_cap|Лоссарнахський шкіряний шолом
+itm_lossarnach_scale_cap|Лоссарнахський лускатий шолом
+itm_lossarnach_greaves|Лоссарнахські поножі
+itm_gondor_shield_a|Ґондорський прямокутний щит
+itm_gondor_shield_b|Ґондорський  краплеподібний щит
+itm_gondor_shield_c|Ґондорський баштовий щит
+itm_gondor_shield_d|Ґондорський  краплеподібний щит
+itm_gondor_shield_e|Ґондорський щит варти Цитаделі
+itm_gon_tab_shield_a|Ґондорський круглий щит з гербом
+itm_gon_tab_shield_b|Ґондорський прямокутний щит з гербом
+itm_gon_tab_shield_c|Ґондорський краплеподібний щит з гербом
+itm_gon_tab_shield_d|Ґондорський баштовий щит з гербом
+itm_amroth_sword_a|Дол-Амротський меч
+itm_amroth_sword_b|Дол-Амротський лицарський меч
+itm_gondor_sword|Ґондорскій піхотний меч
+itm_amroth_bastard|Дол-Амротський лебединий меч 
+itm_gondor_short_sword|Лінхірський екет
+itm_pelargir_eket|Пеларгірський екет
+itm_pelargir_sword|Пеларгірський меч
+itm_gondor_ranger_sword|Ґондорський меч рейнджера
+itm_gondor_bastard|Ґондорський Меч-бастард
+itm_gondor_citadel_sword|Ґондорський меч Варти Цитаделі
+itm_gondor_cav_sword|Ґондорський кавалерійський меч
+itm_gondor_spear|Ґондорський спис
+itm_gondor_tower_spear|Ґондорський спис Варти Цитаделі
+itm_gondor_lance|Ґондорський кавалерійський спис
+itm_loss_axe|Лоссарнахська сокира
+itm_loss_war_axe|Лоссарнахська бойова сокира
+itm_lorien_sword_a|Лоріенський довгий меч
+itm_lorien_sword_b|Лоріенський короткий меч
+itm_lorien_sword_c|Лоріенський бойовий меч
+itm_lorien_archer|Лоріенська броня лучника
+itm_lorien_armor_a|Лоріенська стьобана броня
+itm_lorien_armor_b|Лоріенська кольчуга
+itm_lorien_armor_c|Лоріенська луската броня
+itm_lorien_boots|Лоріенські черевики
+itm_lorien_shield_b|Лоріенський баштовий щит
+itm_lorien_shield_c|Лоріенський краплеподібний щит
+itm_lorien_round_shield|Лоріенський круглий щит
+itm_lorien_helm_a|Лоріенський шолом лучника
+itm_lorien_helm_b|Лоріенський шолом лучника
+itm_lorien_helm_c|Лоріенський шолом піхотинця
+itm_orc_coif|Оркський черепник
+itm_orc_greaves|Оркські кольчужні чоботи
+itm_orc_ragwrap|Оркські рвані обмотки
+itm_orc_furboots|Оркські хутряні чоботи
+itm_orc_tribal_a|Необроблена шкіра
+itm_orc_tribal_b|Необроблена шкіра
+itm_orc_tribal_c|Необроблена шкіра
+itm_evil_gauntlets_a|Чорні рукавички
+itm_evil_gauntlets_b|Чорні панцерні рукавички
+itm_isen_orc_armor_a|Ізенґардська орча броня
+itm_isen_orc_armor_b|Ізенґардська орча броня
+itm_isen_orc_armor_c|Ізенґардська орча броня
+itm_isen_orc_armor_d|Ізенґардська орча броня
+itm_isen_orc_armor_e|Ізенґардська орча броня
+itm_isen_orc_armor_f|Ізенґардська орча броня
+itm_isen_orc_armor_g|Ізенґардська орча броня
+itm_isen_uruk_light_a|Урук-хайська легка броня
+itm_isen_uruk_light_b|Урук-хайська шкіряна броня
+itm_isen_uruk_light_c|Урук-хайська шкіряна броня
+itm_isen_uruk_light_d|Урук-хайська шкіряна броня з кольчугою
+itm_isen_uruk_light_e|Урук-хайская кольчужна броня
+itm_isen_uruk_heavy_a|Урук-хайська шкіряна броня з кольчугою
+itm_isen_uruk_heavy_b|Урук-хайська важка броня
+itm_isen_uruk_heavy_c|Урук-хайська важка броня
+itm_isen_uruk_heavy_d|Урук-хайська шкіряна броня слідопита
+itm_isen_uruk_heavy_e|Урук-хайська шкіряна броня слідопита
+itm_uruk_tracker_boots|Урукські чоботи слідопита
+itm_uruk_greaves|Урукські поножі
+itm_uruk_chain_greaves|Урукські кольчужні поножі
+itm_uruk_ragwrap|Урукські рвані обмотки
+itm_isen_orc_helm_a|Ізенґардський орочий шолом
+itm_isen_orc_helm_b|Ізенґардський орочий шолом
+itm_isen_orc_helm_c|Ізенґардський орочий шолом
+itm_isen_uruk_helm_a|Урук-хайський шолом
+itm_isen_uruk_helm_b|Урук-хайський шолом
+itm_isen_uruk_helm_c|Урук-хайський шолом
+itm_isen_uruk_helm_d|Урук-хайський шолом полководця
+itm_isen_uruk_helm_e|Урук-хайський шолом слідопита
+itm_isen_uruk_helm_f|Урук-хайський шолом слідопита
+itm_uruk_pike_b|Мордорська піка
+itm_uruk_falchion_a|Урукський фальшіон
+itm_uruk_falchion_b|Урукський фальшіон
+itm_uruk_spear|Мордорський спис
+itm_uruk_skull_spear|Урукський спис з черепом
+itm_uruk_voulge|Урукський вульж
+itm_uruk_heavy_axe|Урукська важка сокира
+itm_isengard_sword|Ізенґардський меч
+itm_isengard_axe|Ізенґардська сокира
+itm_isengard_hammer|Ізенґардський молот
+itm_isengard_halberd|Ізенґардська алебарда
+itm_isengard_mallet|Ізенґардський молоток
+itm_isengard_heavy_axe|Ізенґардська важка сокира
+itm_isengard_heavy_sword|Ізенґардський важкий меч
+itm_isengard_spear|Ізенґардський спис
+itm_isengard_pike|Ізенґардська піка
+itm_isen_orc_shield_a|Ізенґардський орочий щит
+itm_isen_orc_shield_b|Ізенґардський орочий щит
+itm_isen_uruk_shield_b|Ізенґардський урукський щит
+itm_wood_club|Дерев'яна дубина
+itm_twohand_wood_club|Велика дерев'яна дубина
+itm_bone_cudgel|Кістяна дубина
+itm_skull_club|Дубина з черепом
+itm_orc_club_b|Дубина вовчого вершника
+itm_orc_club_c|Шпичаста оркська дубина
+itm_orc_club_d|Зловісна булава
+itm_orc_sledgehammer|Оркська кувалда
+itm_orc_simple_spear|Оркський спис
+itm_orc_skull_spear|Оркський спис з черепом
+itm_orc_bill|Оркська глефа
+itm_orc_slasher|Оркський тесак
+itm_orc_falchion|Оркський фальшіон
+itm_orc_scimitar|Оркський ятаган
+itm_orc_sabre|Оркська шабля
+itm_orc_machete|Оркський мачете
+itm_orc_axe|Оркська сокира
+itm_orc_two_handed_axe|Оркська дворучна сокира
+itm_orc_throwing_axes|Оркські метальні сокири
+itm_orc_bow|Оркський лук
+itm_orc_shield_a|Оркський щит
+itm_orc_shield_b|Оркський щит
+itm_orc_shield_c|Оркський баштовий щит
+itm_mordor_orc_shield_a|Мордорський орочий щит
+itm_mordor_orc_shield_b|Мордорський орочий щит
+itm_mordor_orc_shield_c|Мордорський орочий щит
+itm_mordor_orc_shield_d|Мордорський орочий щит
+itm_mordor_orc_shield_e|Мордорський орочий щит
+itm_mordor_uruk_shield_a|Мордорський урукський щит
+itm_mordor_uruk_shield_b|Мордорський урукський щит
+itm_mordor_uruk_shield_c|Мордорський урукський щит
+itm_mordor_man_shield_a|Мордорський людський щит
+itm_mordor_man_shield_b|Мордорський людський щит
+itm_angmar_shield|Анґмарський щит
+itm_orc_nosehelm|Оркський шолом з наносником
+itm_orc_kettlehelm|Оркський шолом-капеліна
+itm_orc_buckethelm|Оркська цукрова голова
+itm_orc_morion|Оркський моріон
+itm_orc_beakhelm|Орочий шолом з дзьобом
+itm_orc_bughelm|Оркський шолом жука
+itm_orc_visorhelm|Орочий шолом з прорізом
+itm_m_orc_light_a|Мордорська ороча легка броня
+itm_m_orc_light_b|Мордорська ороча легка броня
+itm_m_orc_light_c|Мордорська ороча легка броня
+itm_m_orc_light_d|Мордорська ороча легка броня
+itm_m_orc_light_e|Мордорська ороча легка броня
+itm_m_orc_heavy_a|Мордорська ороча важка броня
+itm_m_orc_heavy_b|Мордорська ороча важка броня
+itm_m_orc_heavy_c|Мордорська ороча важка броня
+itm_m_orc_heavy_d|Мордорська ороча важка броня
+itm_m_orc_heavy_e|Мордорська ороча важка броня
+itm_m_uruk_light_a|Урукська броня
+itm_m_uruk_light_b|Урукська шкіряна броня
+itm_m_uruk_light_c|Урукська легка кольчуга
+itm_m_uruk_med_a|Урукська посилена шкірянка
+itm_m_uruk_med_b|Урукська важка кольчуга
+itm_m_uruk_med_c|Урукська легка луската броня
+itm_m_uruk_heavy_a|Урукська важка луската броня
+itm_m_uruk_heavy_b|Урукська пластинчата броня
+itm_m_uruk_heavy_c|Обладунок Лугбурзу
+itm_m_cap_armor|Мордорська броня полководця
+itm_black_num_armor|Броня чорного нумінорця
+itm_m_armor_a|Мордорська броня
+itm_m_armor_b|Мордорська броня
+itm_evil_light_armor|Страхітливе вбрання
+itm_uruk_helm_a|Урукський шолом
+itm_uruk_helm_b|Урукський шолом
+itm_uruk_helm_c|Урукський шолом з дзьобом
+itm_uruk_helm_d|Урукський страхітливий шолом
+itm_uruk_helm_e|Урукський шолом з маскою
+itm_uruk_helm_f|Урукський шолом
+itm_mordor_cap_helm|Мордорський шолом полководця
+itm_mordor_helm|Мордорський шолом
+itm_black_num_helm|Шолом чорного нумінорця
+itm_mordor_sword|Мордорський Меч-бастард
+itm_mordor_longsword|Мордорський меч
+itm_moria_armor_a|Морійський нагрудник
+itm_moria_armor_b|Морійський нагрудник з наплічниками
+itm_moria_armor_c|Морійськая ороча кольчуга
+itm_moria_armor_d|Морійська Клепана шкіряна броня
+itm_moria_armor_e|Морійськая ороча важка кольчуга
+itm_moria_orc_shield_a|Великий Щит Морії
+itm_moria_orc_shield_b|Морійський орочий щит
+itm_moria_orc_shield_c|Морійський орочий щит
+itm_gundabad_armor_a|Гундабадське оркське лахміття
+itm_gundabad_armor_b|Гундабадськи орочий хутряний одяг
+itm_gundabad_armor_c|Гундабадська ороча броня
+itm_gundabad_armor_d|Гундабадська ороча броня
+itm_gundabad_armor_e|Гундабадська ороча важка броня
+itm_gundabad_helm_a|Шкіряна шапка
+itm_gundabad_helm_b|Шкіряний шолом
+itm_gundabad_helm_c|Гундабадський шолом
+itm_gundabad_helm_d|Гундабадський шолом
+itm_gundabad_helm_e|Шолом вовчого наїзника
+itm_dunland_wolfboots|Дунландські вовчі черевики
+itm_dunland_armor_a|Дунландська хутряна броня
+itm_dunland_armor_b|Дунландська хутряна броня
+itm_dunland_armor_c|Дунландська хутряна броня
+itm_dunland_armor_d|Дунландська хутряна броня
+itm_dunland_armor_e|Дунландська хутряна броня
+itm_dunland_armor_g|Дунландська хутряна броня
+itm_dunland_armor_h|Дунландська довга хутряна броня
+itm_dunland_armor_i|Дунландський гауберк
+itm_dunland_armor_j|Дунландський гауберк
+itm_dunland_armor_k|Броня дунландського вождя
+itm_dun_helm_a|Дунландський вовчий шолом
+itm_dun_helm_b|Дунландський рогатий шолом
+itm_dun_helm_c|Дунландський високий шолом
+itm_dun_helm_d|Дунландський високий шолом
+itm_dun_helm_e|Дунландський Оленячий Шолом
+itm_dun_shield_a|Дунландський щит
+itm_dun_shield_b|Дунландський щит
+itm_dun_berserker|Меч дунландського вождя
+itm_dunnish_antler_axe|Дунландська сокира з оленячого рогу
+itm_dunnish_war_axe|Дунландська бойова сокира
+itm_dunnish_axe|Дунландська сокира
+itm_dunland_spear|Дунландський спис
+itm_dunnish_pike|Дунландська піка
+itm_rohan_cav_sword|Роганський кавалерійський меч
+itm_rohan_inf_sword|Роганський меч
+itm_rohan_spear|Роганський спис
+itm_rohan_lance|Роганський кавалерійський спис
+itm_rohan_sword_c|Роганський меч
+itm_rohirrim_short_axe|Роганська коротка сокира
+itm_rohirrim_long_hafted_axe|Роганська велика сокира
+itm_rohan_2h_sword|Роганський бойовий меч
+itm_rohan_recruit|Роганська підбита куртка
+itm_rohan_leather|Роганський шкіряний нагрудник
+itm_rohan_mail|Роганський гауберк
+itm_rohan_rider|Роганська броня вершника
+itm_rohan_scale|Роганська луската броня
+itm_rohan_surcoat|Роганське сюрко
+itm_rohan_guard|Роганська броня стражника
+itm_rohan_light_helmet_a|Роганський легкий шолом
+itm_rohan_light_helmet_b|Роганський легкий шолом
+itm_rohan_inf_helmet_a|Роганський шолом з прорізом
+itm_rohan_inf_helmet_b|Роганський шолом з прорізом
+itm_rohan_archer_helmet_a|Роганський шолом з наносником
+itm_rohan_archer_helmet_b|Роганський шолом з наносником
+itm_rohan_archer_helmet_c|Роганський шолом стражника
+itm_rohan_shield_a|Роганський щит
+itm_rohan_shield_b|Роганський щит
+itm_rohan_shield_c|Роганський щит
+itm_rohan_shield_d|Роганський щит
+itm_rohan_shield_e|Роганський щит
+itm_rohan_shield_f|Роганський щит
+itm_rohan_shield_g|Роганський королівський щит
+itm_rohan_light_greaves|Роганські легкі поножі
+itm_rohirrim_war_greaves|Роганські бойові поножі
+itm_mirkwood_leather|шкіряна броня лісових Ельфів
+itm_mirkwood_pad|Стьобане пальто Темнолісся
+itm_mirkwood_mail|Кольчуга Темнолісся
+itm_mirkwood_scale|Легка луската броня Темнолісся
+itm_mirkwood_heavy_scale|Лускатий обладунок Лихолісся
+itm_mirkwood_great_spear|Великий спис Темнолісся
+itm_mirkwood_war_spear|Бойовий спис Темнолісся
+itm_mirkwood_short_spear|Спис лісових ельфів 
+itm_mirkwood_knife|Ніж лісових Ельфів
+itm_mirkwood_axe|Сокира лісових Ельфів
+itm_mirkwood_spear_shield_a|Щит лісових Ельфів
+itm_mirkwood_spear_shield_b|Військовий щит Темнолісся
+itm_mirkwood_spear_shield_c|Круглий шолом лісових Ельфів
+itm_mirkwood_helm_a|Шолом лучника лісових Ельфів
+itm_mirkwood_helm_b|Шолом Темнолісся
+itm_mirkwood_helm_c|Важкий шолом Темнолісся
+itm_mirkwood_helm_d|Королівський шолом темнолісся
+itm_mirkwood_boots|Чоботи лісових Ельфів
+itm_harad_tunic|Харадськия одяг
+itm_harad_padded|Харондорська підбита броня
+itm_harad_hauberk|Харондорський гауберк
+itm_harad_lamellar|Броня-Харасьяла
+itm_harad_heavy|Харадська благородна броня
+itm_harad_skirmisher|Легке харадське вбрання
+itm_harad_archer|Харадська броня лучника
+itm_black_snake_armor|Броня-Маранка
+itm_harad_champion|Далекохарадський одяг
+itm_panther_guard|Шкура пантери
+itm_harad_scale|Харадська луската броня
+itm_harad_tiger_scale|Тигряча броня варти
+itm_harad_lion_scale|Левова броня варти 
+itm_harad_dragon_helm|Шолом Кілока
+itm_harad_cav_helm_a|Харондорський кавалерійський шолом
+itm_harad_cav_helm_b|Харондорський кавалерійський шолом
+itm_black_snake_helm|Шолом-Маранка
+itm_harad_finhelm|Великий харадський шолом
+itm_harad_heavy_inf_helm|Великий харадський шолом
+itm_harad_wavy_helm|Великий харадський шолом
+itm_harad_eaglehelm|Шолом Орлиної гвардії
+itm_lion_helm|Шолом Левиної гвардії
+itm_harad_pantherhelm|Шолом Гвардії пантери
+itm_harad_khopesh|Харадський хопеш
+itm_black_snake_sword|Харадський важкий фальшіон
+itm_harad_heavy_sword|Харадський важкий меч
+itm_horandor_a|Харадський ятаган
+itm_skirmisher_sword|Харадський меч застрільника
+itm_harad_sabre|Харадська шабля
+itm_harad_mace|Далекохарадськая булава
+itm_far_harad_2h_mace|Далекохарадська дворучна булава
+itm_harad_dagger|Харадський кинджал
+itm_harad_short_spear|Харадський короткий спис
+itm_harad_long_spear|Харадський спис
+itm_eagle_guard_spear|Спис-харасьяла
+itm_harad_long_shield_a|Харадський леопардовий щит
+itm_harad_long_shield_b|Харадський бронзовий щит
+itm_harad_long_shield_c|Харадський сонячний щит
+itm_harad_long_shield_d|Харадський зміїний щит
+itm_harad_long_shield_e|Харадський зміїний щит
+itm_harad_shield_a|Харондорський щит
+itm_harad_shield_b|Харондорський баклер
+itm_harad_shield_c|Харондорський баклер
+itm_harad_yellow_shield|Харадський щит
+itm_desert_boots|Пустельні чоботи
+itm_harad_leather_greaves|Харадські поножі
+itm_harad_scale_greaves|Харадські черевики
+itm_harad_lamellar_greaves|Харадські черевики
+itm_khand_inf_helm_a|Кхандський шолом
+itm_khand_inf_helm_b|Кхандський шолом
+itm_khand_inf_helm_c1|Кхандський шолом у вигляді чаші
+itm_khand_inf_helm_c2|Кхандський шолом у вигляді чаші
+itm_khand_inf_helm_d|Кхандський конусний шолом
+itm_khand_cav_helm_a|Кхандський шолом всадника
+itm_khand_cav_helm_b|Кхандський шолом всадника
+itm_khand_cav_helm_c|Кхандський прикрашений шолом
+itm_khand_helm_mask|Кхандськая маска
+itm_khand_light|Кхандськая спідниця
+itm_khand_light_lam|Кхандський легкий пластинчастий обладунок
+itm_khand_foot_lam|Кхандська броня пехотинця
+itm_khand_med_lam|Кхандський середній пластинчастий обладунок
+itm_khand_heavy_lam|Кхандський важкий пластинчастий обладунок
+itm_khand_axe_great|Кхандська велика сокира
+itm_khand_axe_winged|Кхандська крилата сокира
+itm_khand_halberd|Кхандська алебарда
+itm_khand_trident|Кхандський тризуб
+itm_khand_voulge|Кхандський вульж
+itm_khand_mace1|Кхандська булава
+itm_khand_mace2|Кхандська булава
+itm_khand_throwing_axe|Кхандські метальні сокири
+itm_khand_rammace|Кхандська бараняча булава
+itm_khand_pitsword|Меч бійця
+itm_khand_tulwar|Кхандський тальвар
+itm_khand_2h_tulwar|Кхандський тальвар
+itm_khand_lance|Кхандський кавалерійський спис
+itm_easterling_round_horseman|Істерлінгський круглий щит
+itm_variag_gladiator_shield|Істерлінгський ямний щит
+itm_easterling_hawk_shield|Істерлінгський соколиний щит
+itm_rhun_bull1_shield|Рунійський щит
+itm_rhun_bull2_shield|Рунійський щит
+itm_rhun_bull3_shield|Рунійський щит
+itm_rhun_shield|Рунійський краплеподібний щит
+itm_rhun_armor_a|Рунійське легке бойове вбрання
+itm_rhun_armor_b|Рунійське легке бойове вбрання
+itm_rhun_armor_d|Рунійське легке бойове вбрання
+itm_rhun_armor_g|Рунійське важке бойове вбрання
+itm_rhun_armor_h|Рунійське важке бойове вбрання
+itm_rhun_armor_j|Рунійське середнє бойове вбрання
+itm_rhun_armor_m|Рунійське середнє бойове вбрання
+itm_rhun_armor_n|Рунійське середнє бойове вбрання
+itm_rhun_armor_o|Рунійське середнє бойове вбрання
+itm_rhun_armor_p|Рунійська броня знатного воїна
+itm_rhun_armor_k|Рунійська броня знатного воїна
+itm_rhun_helm_barbed|Рунійський шолом з шипами
+itm_rhun_helm_horde|Рунійський шолом орди
+; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_round|Рунійський круглий шолом
+itm_rhun_helm_leather|Рунійський шкіряний шолом
+itm_rhun_helm_chieftain|Рунійський шолом вождя
+; itm_rhun_warpick|Rhun War Pick
+itm_rhun_greataxe|Рунійська велика сокира
+itm_rhun_battleaxe|Рунійська бойова сокира
+itm_rhun_falchion|Дикунський фальшіон
+itm_rhun_glaive|Рунійськая глефа
+itm_rhun_greatfalchion|Дикунський великий фальшіон
+itm_rhun_greatsword|Дикунський великий меч
+itm_rhun_shortsword|Дикунський короткий меч
+itm_rhun_sword|Дикунський меч
+; itm_rhun_mangler|Rhun Mangler
+itm_dale_light_a|Дейльская куртка ополченця
+itm_dale_light_b|Північний легкий пластинчастий обладунок
+itm_dale_med_a|Північний важкий пластинчастий обладунок
+itm_dale_med_b|Дейльска шкіряна броня
+itm_dale_med_c|Дейльская шкірянка поверх кольчуги
+itm_dale_med_d|Дейльска пластинчаста броня
+itm_dale_heavy_a|Дейльска кольчуга з пластинами
+itm_dale_heavy_b|Дейльская пластинчата куртка
+itm_dale_heavy_c|Рованіонська кольчуга
+itm_north_leather|Півничний шкіряний жилет
+itm_dale_helmet_a|Дейльский легкий піхотний шолом
+itm_dale_helmet_b|Дейльский легкий шолом лучника
+itm_dale_helmet_c|Дейльский піхотний шолом
+itm_dale_helmet_d|Дейльский Шолом Лучника
+itm_dale_helmet_e|Шолом барда-лучника
+itm_dale_helmet_f|Шолом барда-лучника
+itm_dale_sword|Дейльский короткий меч
+itm_dale_sword_long|Дейльский довгий меч
+itm_dale_sword_broad|Дейльский меч піхотинця
+itm_dale_pike|Дейльский спис
+itm_dale_billhook|Дейльская алебарда
+itm_dale_shield_a|Дейльский баштовий щит
+itm_dale_shield_b|Дейльский баштовий щит
+itm_dale_shield_c|Дейльский круглий щит
+itm_umb_armor_a|Шкіряний жилет Корсарів
+itm_umb_armor_b|Корсарська шкіряна броня
+itm_umb_armor_c|Підбита броня Корсарів
+itm_umb_armor_d|Важко підбита броня Корсарів
+itm_umb_armor_e|Корсарськи гауберк
+itm_umb_armor_f|Броня Ватажка Корсарів
+itm_umb_helm_a|Корсарський шолом-раковина
+itm_umb_helm_b|Високий шолом Корсара
+itm_umb_helm_c|Корсарський шолом ополченця
+itm_umb_helm_d|Корсарський шолом нальотчика
+itm_corsair_trident|Тризуб гнів моря
+itm_corsair_boots|Корсарські чоботи
+itm_umb_shield_a|Корсарський щит
+itm_umb_shield_b|Корсарський баклер
+itm_umb_shield_c|Корсарський баклер
+itm_umb_shield_d|Корсарський баклер
+itm_umbar_spear|Умбарський короткий спис
+itm_umbar_cutlass|Умбарська абордажна шабля
+itm_kraken|Абордажна шабля Кракена
+itm_umbar_rapier|Умбарський абордажний меч
+itm_corsair_harpoon|Корсарський гарпун
+itm_corsair_sword|Корсарський екет
+itm_corsair_throwing_dagger|Криві метальні ножі
+itm_umbar_pike|Корсарський тризуб
+itm_woodman_tunic|Сорочка лісовика
+itm_woodman_scout|Шапка лісовика-розвідника
+itm_woodman_padded|Підбита броня лісовика
+itm_beorn_tunic|Беорнінгський одяг
+itm_beorn_padded|Беорнінгська підбита броня
+itm_beorn_heavy|Беорнінгська важка броня
+itm_beorn_berserk|Беорнінгський одяг берсерка
+itm_beorn_chief|Беорнінгський одяг вождя
+itm_beorn_helmet|Ведмежий черепник
+itm_beorn_shield|Північний щит
+itm_beorn_axe|Беорнінгська сокира
+itm_beorn_staff|Посох лісовика
+itm_beorn_battle_axe|Беорнінгська бойова сокира
+itm_dwarf_shield_a|Гномів кутовий щит
+itm_dwarf_shield_b|Гномів баштовий щит
+itm_dwarf_shield_c|Гномів бойової щит
+itm_dwarf_shield_d|Гномів круглий щит
+itm_north_round_shield|Північний круглий щит
+itm_woodmen_heavy|Броня Лихолісся
+itm_dwarf_sword_a|Гном'ячий меч
+itm_dwarf_sword_b|Беорнінгський короткий меч
+itm_dwarf_sword_c|Гном'ячий меч
+itm_dwarf_sword_d|Гном'ячий меч
+itm_dwarf_battle_axe|Гном'яча бойова сокира
+itm_dwarf_great_axe|Гном'яча велика сокира
+itm_dwarf_great_mattock|Гном'яча велика мотика
+itm_dwarf_great_pick|Гном'яче велике кайло
+itm_dwarf_war_pick|Гном'яче бойове кайло
+itm_dwarf_mattock|Гном'яча мотика
+itm_dwarf_hand_axe|Гномів топірець
+itm_dwarf_throwing_axe|Гномові метальні сокири
+itm_dwarf_spear|Гном'ячий спис
+itm_dwarf_spear_b|Гном'яча піка
+itm_dwarf_spear_c|Гном'яча довга сокира
+itm_dwarf_helm_coif|Гномів койф
+itm_dwarf_nasal_b|Гномів шолом з наносником
+itm_north_skullcap|Північна черепник
+itm_dwarf_helm_kettle|Гном'яча капеліна
+itm_dwarf_helm_fris|Гном'ячий чубатий шолом
+itm_north_leather_skullcap|Північний легкий черепник
+itm_dwarf_hood|Гном'ячий капюшон
+itm_dwarf_nasal|Гном'ячий Топхельм з носовою пластиною
+itm_north_nasal_helm|Північний шолом з наносником
+itm_dwarf_helm_p|Гномів королівський шолом
+itm_dwarf_miner|Гномів легкий шолом
+itm_north_chieftain|Північний шолом ватажка
+itm_dwarf_helm_round|Гном'ячий закруглений шолом
+itm_dwarf_helm_sallet|Гном'ячий салет
+itm_dwarf_armor_d|Луската куртка Залізних Горбів
+itm_dwarf_armor_a|Ереборська куртка поверх кольчуги
+itm_leather_dwarf_armor|Гном'яча підбита куртка
+itm_dwarf_armor_b|Ереборская сорочка поверх кольчуги
+itm_leather_dwarf_armor_b|Гном'яча підбита шкірянка
+itm_dwarf_armor_c|Ереборська луската кольчуга
+itm_dwarf_vest|Гном'ячий одяг
+itm_dwarf_vest_b|Кольчуга Залізних Горбів
+itm_dwarf_pad_boots|Гном'ячі підбиті чоботи
+itm_dwarf_chain_boots|Гномів кольчужні панчохи
+itm_dwarf_scale_boots|Гном'ячі лускаті чоботи
+itm_good_mace|Булава
+itm_mordor_banner|Мордорський прапор
+itm_isengard_banner|Ізенґардський прапор
+itm_woodelf_banner|Прапор Лихолісся
+itm_lorien_banner|Лоріенський прапор
+itm_imladris_banner|Рівендільский прапор
+itm_gondor_lance_banner|Ґондорський спис з прапорцем
+itm_amroth_lance_banner|Дол-Амротський спис з прапорцем
+itm_rohan_lance_banner_sun|Роганський спис з прапором сонця
+itm_rohan_lance_banner_horse|Роганський спис з прапором коня
+itm_ent_water|Дивна чаша води
+itm_map|Карти Середзем'я
+itm_athelas_reward|Рослина Ателес
+itm_phial_reward|Світоч Ґаладріель
+itm_scroll_reward|Про падіння Гондоліна
+itm_hammer_reward|Ковальський молот
+itm_khand_knife_reward|Кхандський жертовний кинджал
+itm_angmar_whip_reward|Батіг Пана
+itm_horn_gondor_reward|Ріг Ґондору
+itm_harad_totem_reward|Харадський тотем
+itm_elven_amulet_reward|Ельфійський амулет
+itm_torque_reward|Намисто зла
+itm_orc_brew|Оркське пійло
+itm_rohan_saddle|Сідло Тенгеля
+itm_mearas_reward|Жеребець Меарас
+itm_shield_of_tuor|Щит Туора
+itm_riv_armor_reward|Рівендільска прикрашена броня
+itm_westernesse1h_reward|Нуменорський меч
+itm_westernesse2h_reward|Нуменорський меч
+itm_mirkwood_sword_reward|Зеленоліський священний меч
+itm_nazgul_sword|Меч Назгула
+itm_cooking_cauldron|Котел
+itm_eorl_cavalry_sword|Меч Еорла
+itm_garlic_reward|Часник
+itm_silmarillion_reward|Сильмариліон
+itm_herbarium_reward|Гербарій Середзем'я
+itm_book_of_moria|Книга Мазбурла
+itm_ring_a_reward|Тулькарісіль
+itm_ring_b_reward|Фінварісіль
+itm_dale_bow_reward|Лук Барда
+; itm_tome_of_knowledge|Tome of Arcane Knowledge
+; itm_orc_idol_reward|Idol of the First Orc
+itm_crebain_reward|Кребен
+itm_miruvor_reward|Фляжка Мірувору
+itm_wheeled_cage|Гігантська колісна клітка
+itm_orc_throwing_axes_reward|Ґундабадські метальні сокири
+itm_corsair_throwing_dagger_reward|Отруєні метальні кинджали
+itm_dwarf_shield_reward|Щит Келед-зараму
+itm_dwarf_great_axe_reward|Гном'яча гостра сокира
+itm_isen_uruk_heavy_reward|Броня воєводи урук-хай
+itm_lorien_bow_reward|Нолдорський лук
+itm_elven_cloak|Ельфійський плащ
+itm_dale_sword_reward|Дейльский королівський меч
+itm_dale_armor_reward|Дейльская благородна кольчуга
+itm_leather_gloves_reward|Рукавички лучника
+itm_beorn_shield_reward|Беорнінгський щит
+itm_beorn_axe_reward|Ведмежа дубина
+itm_moria_arrow_reward|Морійські отруйні стріли
+itm_khamul_helm|Шолом Кгамулу
+itm_black_arrows_reward|Чорні стріли
+itm_leather_boots_reward|Мисливські чоботи
+itm_rohan_armor_th|Роганська королівська броня
+itm_wilderness_amulet|Амулет пустелі
+itm_prisoner_coll_chain|Кайдани
+; itm_witchking_helmet|Sorcerer's Mask
+itm_lorien_royal_armor|Лоріенська королівська броня
+itm_feet_chains|Кайдани на ноги
+itm_feet_chains_dwarf|Кайдани на ноги
+itm_spider|Павук
+itm_bear|Ведмідь
+itm_wolf|Вовк
+itm_werewolf|Перевертень
+itm_thrush_reward|Дрізд
+itm_gauntlets_reward|Залізні кулаки
+itm_stones_siege|Осадні камні
+itm_beorn_axe_no_attack|Беорнінгська сокира
