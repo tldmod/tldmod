@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1945
+ 1965
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5903,6 +5903,66 @@ spr_birds_pigeon 16384 0 woron_flight 0 0
 
 
 spr_birds_end 327680 0 woron_flight bo_woron_flight 0
+
+
+spr_tent_d_old 0 0 old_tent bo_tent 0
+
+
+spr_khand_tent_a_open 0 0 khandTentOpen_a bo_tent_1_open 0
+
+
+spr_khand_tent_b_open 0 0 khandTentOpen_b bo_tent_1_open 0
+
+
+spr_orc_tent_large 0 0 orcTentLarge bo_orcTentLarge 0
+
+
+spr_rhun_tent_1 0 0 rhun_tent_1 bo_Rhun_tent_1 0
+
+
+spr_rhun_tent_2 0 0 rhun_tent_2 bo_Rhun_tent_2 0
+
+
+spr_tent_1_a 0 0 tent_1_a bo_tent_1_a 0
+
+
+spr_tent_1_open 0 0 tent_1_open bo_tent_1_open 0
+
+
+spr_tent_2_a 0 0 tent_2_a bo_tent_1_a 0
+
+
+spr_tent_2_open 0 0 tent_2_open bo_tent_1_open 0
+
+
+spr_tent_3_open 0 0 tent_3_open bo_tent_3_open 0
+
+
+spr_tent_4 0 0 tent_4 bo_tent_4 0
+
+
+spr_tent_4_open 0 0 tent_4_open bo_tent_4_open 0
+
+
+spr_tent_a2 0 0 new_tent_a bo_new_tent_a 0
+
+
+spr_tent_b2 0 0 new_tent_b bo_new_tent_a 0
+
+
+spr_tent_c2 0 0 new_tent_c bo_new_tent_c 0
+
+
+spr_orc_shelter_1b 0 0 orc_shelter_1b bo_orc_shelter_1 0
+
+
+spr_orc_shelter_2b 0 0 orc_shelter_2b bo_orc_shelter_2 0
+
+
+spr_arabian_tent_harad 0 0 arabian_tent_harad bo_arabian_tent 0
+
+
+spr_arabian_tent_harad_b 0 0 arabian_tent_harad_b bo_arabian_tent_b 0
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0

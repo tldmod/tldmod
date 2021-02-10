@@ -3070,6 +3070,28 @@ scene_props = [
   
   ("birds_end", sokf_moveable|sokf_dynamic_physics, "woron_flight", "bo_woron_flight", [  ]),
 
+#more tents
+("tent_d_old", 0, "old_tent", "bo_tent", []),
+( "khand_tent_a_open"                            ,0,"khandTentOpen_a","bo_tent_1_open",[]),
+( "khand_tent_b_open"                            ,0,"khandTentOpen_b","bo_tent_1_open",[]),
+( "orc_tent_large"                               ,0,"orcTentLarge","bo_orcTentLarge",[]),
+( "rhun_tent_1"                                ,0,"rhun_tent_1","bo_Rhun_tent_1",[]),
+( "rhun_tent_2"                                ,0,"rhun_tent_2","bo_Rhun_tent_2",[]),
+( "tent_1_a"                                   ,0,"tent_1_a","bo_tent_1_a",[]),
+( "tent_1_open"                                ,0,"tent_1_open","bo_tent_1_open",[]),
+( "tent_2_a"                                   ,0,"tent_2_a","bo_tent_1_a",[]),
+( "tent_2_open"                                ,0,"tent_2_open","bo_tent_1_open",[]),
+( "tent_3_open"                                ,0,"tent_3_open","bo_tent_3_open",[]),
+( "tent_4"                                     ,0,"tent_4","bo_tent_4",[]),
+( "tent_4_open"                                ,0,"tent_4_open","bo_tent_4_open",[]),
+( "tent_a2"                                 ,0,"new_tent_a","bo_new_tent_a",[]),
+( "tent_b2"                                 ,0,"new_tent_b","bo_new_tent_a",[]),
+( "tent_c2"                                 ,0,"new_tent_c","bo_new_tent_c",[]),
+( "orc_shelter_1b"                             ,0,"orc_shelter_1b","bo_orc_shelter_1",[]),
+( "orc_shelter_2b"                             ,0,"orc_shelter_2b","bo_orc_shelter_2",[]),
+("arabian_tent_harad",0,"arabian_tent_harad","bo_arabian_tent", []), #wb only
+("arabian_tent_harad_b",0,"arabian_tent_harad_b","bo_arabian_tent_b", []), #wb only
+
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
 
