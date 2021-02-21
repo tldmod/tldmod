@@ -421,16 +421,16 @@ itemsfile version 2
  itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  274792456 6174019584 1100 525450 1.25 100 0 0 93 4 0 90 56 0 0 28 0
 0
 
- itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  272695304 5905584128 1100 656384 1.75 100 0 0 90 3 0 88 65 0 0 279 0
+ itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  274792456 5905584128 1100 656384 1.75 100 0 0 90 3 0 88 65 0 0 279 0
 0
 
- itm_rhun_bow Balchoth_Bow Balchoth_Bow 2  khazad_orc_bow_3 0  khazad_orc_bow_3_case 3458764513820540928  6357000 37312532480 600 525450 1.25 100 0 0 85 3 0 96 52 0 0 26 0
+ itm_rhun_bow Balchoth_Bow Balchoth_Bow 2  khazad_orc_bow_3 0  khazad_orc_bow_3_case 3458764513820540928  4259848 37312532480 600 525450 1.25 100 0 0 85 3 0 96 52 0 0 26 0
 0
 
- itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  274792456 5905584128 1300 656384 1.5 100 0 0 96 4 0 93 65 0 0 279 0
+ itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  272695304 5905584128 1300 656384 1.5 100 0 0 96 4 0 93 65 0 0 279 0
 0
 
- itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  272695304 5905584128 800 525450 1.5 100 0 0 84 3 0 81 58 0 0 275 0
+ itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  274792456 5905584128 800 525450 1.5 100 0 0 84 3 0 81 58 0 0 275 0
 0
 
  itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  274792456 5905584128 600 525450 1.5 100 0 0 96 4 0 93 64 0 0 27 0
@@ -2685,7 +2685,7 @@ itemsfile version 2
  itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_h 0  16781325 0 3002 0 40 100 0 38 17 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  6295560 2952794112 3000 0 1.5 100 0 0 93 5 0 96 54 0 0 277 0
+ itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  4198408 2952794112 3000 0 1.5 100 0 0 93 5 0 96 54 0 0 277 0
 0
 
  itm_elven_cloak Elven_Cloak Elven_Cloak 1  elven_cloak 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
