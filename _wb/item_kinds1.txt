@@ -388,40 +388,40 @@ itemsfile version 2
 1
 -50  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 326 8 1224979098644774912 1224979098644774913 
 
- itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 50 525450 1 100 0 0 86 0 0 99 46 0 0 23 0
+ itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  4259848 5905584128 50 525450 1 100 0 0 86 0 0 99 46 0 0 23 0
 0
 
- itm_regular_bow Bow Bow 2  regular_bow 0  regular_bow_carry 3458764513820540928  274792456 5905584128 100 525450 1 100 0 0 90 1 0 98 52 0 0 26 0
+ itm_regular_bow Bow Bow 2  regular_bow 0  regular_bow_carry 3458764513820540928  272695304 5905584128 100 525450 1 100 0 0 90 1 0 98 52 0 0 26 0
 0
 
- itm_nomad_bow Nomad_Bow Nomad_Bow 2  nomad_bow 0  nomad_bow_case 3458764513820540928  6357000 37312532480 200 525450 1.25 100 0 0 86 2 0 96 48 0 0 24 0
+ itm_nomad_bow Nomad_Bow Nomad_Bow 2  nomad_bow 0  nomad_bow_case 3458764513820540928  4259848 37312532480 200 525450 1.25 100 0 0 86 2 0 96 48 0 0 24 0
 0
 
  itm_gondor_bow Gondor_Bow Gondor_Bow 2  gondor_bow 0  gondor_bow_carry 3458764513820540928  274792456 5905584128 600 525450 1.75 100 0 0 88 3 0 82 57 0 0 30 0
 0
 
- itm_strong_bow Strong_Bow Strong_Bow 2  strong_bow 0  strong_bow_case 3458764513820540928  6357000 37312532480 400 525450 1.25 100 0 0 85 3 0 94 52 0 0 26 0
+ itm_strong_bow Strong_Bow Strong_Bow 2  strong_bow 0  strong_bow_case 3458764513820540928  4259848 37312532480 400 525450 1.25 100 0 0 85 3 0 94 52 0 0 26 0
 0
 
- itm_elven_bow Elven_Bow Elven_Bow 2  GA_BowE_Medium_B 0  GA_BowE_Medium_B_Carry 3458764513820540928  274792456 5905584128 1000 656384 1.5 100 0 0 93 3 0 93 65 0 0 276 0
+ itm_elven_bow Elven_Bow Elven_Bow 2  GA_BowE_Medium_B 0  GA_BowE_Medium_B_Carry 3458764513820540928  272695304 5905584128 1000 656384 1.5 100 0 0 93 3 0 93 65 0 0 276 0
 0
 
- itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  274792456 5905584128 900 525450 1.5 100 0 0 87 4 0 80 58 0 0 276 0
+ itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  272695304 5905584128 900 525450 1.5 100 0 0 87 4 0 80 58 0 0 276 0
 0
 
- itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  6357000 2952794112 500 656384 1.25 100 0 0 86 3 0 84 56 0 0 28 0
+ itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  4259848 2952794112 500 656384 1.25 100 0 0 86 3 0 84 56 0 0 28 0
 0
 
- itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 300 525450 1.25 100 0 0 84 1 0 86 53 0 0 25 0
+ itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  4259848 2952794112 300 525450 1.25 100 0 0 84 1 0 86 53 0 0 25 0
 0
 
- itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 6174019584 300 525450 1.25 100 0 0 84 1 0 95 56 0 0 23 0
+ itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  4259848 6174019584 300 525450 1.25 100 0 0 84 1 0 95 56 0 0 23 0
 0
 
  itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  274792456 6174019584 1100 525450 1.25 100 0 0 93 4 0 90 56 0 0 28 0
 0
 
- itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  274792456 5905584128 1100 656384 1.75 100 0 0 90 3 0 88 65 0 0 279 0
+ itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  272695304 5905584128 1100 656384 1.75 100 0 0 90 3 0 88 65 0 0 279 0
 0
 
  itm_rhun_bow Balchoth_Bow Balchoth_Bow 2  khazad_orc_bow_3 0  khazad_orc_bow_3_case 3458764513820540928  6357000 37312532480 600 525450 1.25 100 0 0 85 3 0 96 52 0 0 26 0
@@ -430,16 +430,16 @@ itemsfile version 2
  itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  274792456 5905584128 1300 656384 1.5 100 0 0 96 4 0 93 65 0 0 279 0
 0
 
- itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  274792456 5905584128 800 525450 1.5 100 0 0 84 3 0 81 58 0 0 275 0
+ itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  272695304 5905584128 800 525450 1.5 100 0 0 84 3 0 81 58 0 0 275 0
 0
 
  itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  274792456 5905584128 600 525450 1.5 100 0 0 96 4 0 93 64 0 0 27 0
 0
 
- itm_uruk_bow Orc_Horn_Bow Orc_Horn_Bow 2  khazad_orc_bow_2 0  khazad_orc_bow_2_case 3458764513820540928  6357000 37312532480 500 525450 1.25 100 0 0 84 2 0 94 57 0 0 23 0
+ itm_uruk_bow Orc_Horn_Bow Orc_Horn_Bow 2  khazad_orc_bow_2 0  khazad_orc_bow_2_case 3458764513820540928  4259848 37312532480 500 525450 1.25 100 0 0 84 2 0 94 57 0 0 23 0
 0
 
- itm_mirkwood_bow Mirkwood_Bow Mirkwood_Bow 2  mirkwood_bow 0  mirkwood_bow_carry 3458764513820540928  274792456 5905584128 1100 656384 1.5 100 0 0 93 4 0 95 65 0 0 277 0
+ itm_mirkwood_bow Mirkwood_Bow Mirkwood_Bow 2  mirkwood_bow 0  mirkwood_bow_carry 3458764513820540928  272695304 5905584128 1100 656384 1.5 100 0 0 93 4 0 95 65 0 0 277 0
 0
 
  itm_dunland_javelin Dunland_Javelins Dunland_Javelins 1  dunland_javelin 0  71368714 262144 200 4398046781448 4 100 0 0 93 0 0 93 47 65 6 40 0

@@ -1054,8 +1054,13 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     #Batching
     batching_agent_spawn_human,
     batching_agent_spawn_mount,
+    #custom_unequip_bow_shield,
+    #custom_unequip_bow_shield_2,
+    
+    #custom_unequip_bow_shield_3,
 
-] + beorning_shapeshift  #Chaning into bear
+] + beorning_shapeshift   #Chaning into bear
++ tld_unequip_bow_shield
 or [] ) + [
 
 	#tld_fix_viewpoint,

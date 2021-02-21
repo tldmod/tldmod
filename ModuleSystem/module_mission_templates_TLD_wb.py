@@ -4259,3 +4259,44 @@ beorning_shapeshift = [
         (call_script, "script_cf_on_hit_blood", ":victim", ":dmg", ":dmg_type"),
     ]),
 ]
+
+    
+tld_unequip_bow_shield = [
+
+(ti_on_item_wielded, 0, 0, [
+      (store_trigger_param_1, ":agent"),
+      (get_player_agent_no, ":player"),
+      (eq, ":player", ":agent")
+    ],
+    [(store_trigger_param_1, ":agent"),
+      (agent_get_wielded_item, ":weapon", ":agent", 0),
+      (gt, ":weapon", 0),
+      (item_get_type, ":type", ":weapon"),
+      (eq, ":type", itp_type_bow), 
+      (agent_get_wielded_item, ":shield", ":agent", 1),
+      (gt, ":shield", 0),
+      (item_get_weapon_length, ":size",":shield"),
+      (gt, ":size", 40),
+      (agent_set_wielded_item, ":agent", -1), #this will unequip all items
+      (display_message, "@Shield is too big to be used with a bow.")
+    ]),
+      
+(2, 0, 0, [],
+    [(try_for_agents, ":agent"),
+      (agent_get_troop_id, ":troop", ":agent"),
+      (troop_is_hero, ":troop"),
+      (agent_get_wielded_item, ":weapon", ":agent", 0),
+      (gt, ":weapon", 0),
+      (item_get_type, ":type", ":weapon"),
+      (eq, ":type", itp_type_bow), 
+      (agent_get_wielded_item, ":shield", ":agent", 1),
+      (gt, ":shield", 0),
+      (item_get_weapon_length, ":size",":shield"),
+      (gt, ":size", 40),
+      (agent_set_wielded_item, ":agent", -1), #this will unequip all items
+      (agent_set_wielded_item, ":agent", ":weapon"), #reequip bow
+      (eq, ":troop","trp_player"),
+      (display_message, "@Shield is too big to be used with a bow."),
+      (try_end)
+    ])
+]
