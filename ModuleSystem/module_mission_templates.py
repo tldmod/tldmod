@@ -1056,7 +1056,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     batching_agent_spawn_mount,
 
 ] + beorning_shapeshift   #Chaning into bear
-+ tld_unequip_bow_shield
++ tld_bow_shield
 or [] ) + [
 
 	#tld_fix_viewpoint,
@@ -1105,7 +1105,7 @@ tld_common_peacetime_scripts = [
 	tld_player_cant_ride,
 	dungeon_darkness_effect,
   reset_fog,
-] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + khams_custom_player_camera +((is_a_wb_mt==1) and tld_unequip_bow_shield or [] )#Custom Cam triggers
+] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + khams_custom_player_camera +((is_a_wb_mt==1) and tld_bow_shield or [] )#Custom Cam triggers
 
 
 tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [

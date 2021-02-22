@@ -4261,8 +4261,9 @@ beorning_shapeshift = [
 ]
 
     
-tld_unequip_bow_shield = [
+tld_bow_shield = [
 
+# player only - check on equip
 (ti_on_item_wielded, 0, 0, [
       (store_trigger_param_1, ":agent"),
       (get_player_agent_no, ":player"),
@@ -4276,11 +4277,50 @@ tld_unequip_bow_shield = [
       (agent_get_wielded_item, ":shield", ":agent", 1),
       (gt, ":shield", 0),
       (item_get_weapon_length, ":size",":shield"),
-      (gt, ":size", 40),
-      (agent_set_wielded_item, ":agent", -1), #this will unequip all items
-      (display_message, "@Shield is too big to be used with a bow.")
+      (try_begin), #shield too big? Unwield
+        (gt, ":size", 40),
+        (agent_set_wielded_item, ":agent", -1), #this will unequip all items
+        (display_message, "@Shield is too big to be used with a bow."),
+      (else_try), #shield fits? Assign accuracy debuff
+        (agent_slot_eq, ":agent", slot_agent_base_accuracy, 0), #slot not set yet? store original accuracy. We do this because environment effects can affect accuracy at mission start.
+        (agent_get_accuracy_modifier, ":accuracy_mod", ":agent"),
+        (agent_set_slot, ":agent", slot_agent_base_accuracy, ":accuracy_mod"),
+        (store_skill_level, ":shield_skill", skl_shield, "trp_player"),
+        (val_mul, ":shield_skill", 3),
+        (store_sub, ":penalty", ":size", ":shield_skill"),
+        (val_clamp, ":penalty", 5, 40),
+        (val_sub, ":accuracy_mod", ":penalty"),
+        (agent_set_accuracy_modifier, ":agent", ":accuracy_mod"),
+      (else_try), #slot already set? check original accuracy!
+        (agent_get_slot,":accuracy_mod",":agent", slot_agent_base_accuracy ),
+        (gt, ":accuracy_mod", 0),
+        (store_skill_level, ":shield_skill", skl_shield, "trp_player"),
+        (val_mul, ":shield_skill", 3),
+        (store_sub, ":penalty", ":size", ":shield_skill"),
+        (val_clamp, ":penalty", 5, 40),
+        (val_sub, ":accuracy_mod", ":penalty"),
+        (agent_set_accuracy_modifier, ":agent", ":accuracy_mod"),
+      (try_end)
     ]),
-      
+
+#Restore accuracy whenever shield or bow is unequipped (player and heroes)
+(ti_on_item_unwielded, 0, 0, [
+      (store_trigger_param_1, ":agent"),
+      (agent_get_troop_id, ":troop", ":agent"),
+      (troop_is_hero, ":troop"),
+    ],
+    [(store_trigger_param_1, ":agent"),
+    #(agent_get_troop_id, ":troop", ":agent"),
+    (store_trigger_param_2, ":item"),
+    (item_get_type, ":type", ":item"),
+    (this_or_next|eq, ":type", itp_type_bow),
+    (eq, ":type", itp_type_shield),
+    (agent_get_slot,":accuracy_mod",":agent", slot_agent_base_accuracy ),
+    (gt, ":accuracy_mod", 0),
+    (agent_set_accuracy_modifier, ":agent", ":accuracy_mod"),
+    ]),
+
+# Backup trigger, also tracks companions and heroes      
 (2, 0, 0, [],
     [(try_for_agents, ":agent"),
       (agent_get_troop_id, ":troop", ":agent"),
@@ -4292,11 +4332,34 @@ tld_unequip_bow_shield = [
       (agent_get_wielded_item, ":shield", ":agent", 1),
       (gt, ":shield", 0),
       (item_get_weapon_length, ":size",":shield"),
-      (gt, ":size", 40),
-      (agent_set_wielded_item, ":agent", -1), #this will unequip all items
-      (agent_set_wielded_item, ":agent", ":weapon"), #reequip bow
-      (eq, ":troop","trp_player"),
-      (display_message, "@Shield is too big to be used with a bow."),
-      (try_end)
+      (try_begin), #shield too big? Unwield
+        (gt, ":size", 40),
+        (agent_set_wielded_item, ":agent", -1), #this will unequip all items
+        (agent_set_wielded_item, ":agent", ":weapon"), #reequip bow
+        (try_begin),
+            (eq, ":troop","trp_player"),
+            (display_message, "@Shield is too big to be used with a bow."),
+        (try_end),
+      (else_try), #shield fits? Assign accuracy debuff
+        (agent_slot_eq, ":agent", slot_agent_base_accuracy, 0), #slot not set yet? store original accuracy. We do this because environment effects can affect accuracy at mission start.
+        (agent_get_accuracy_modifier, ":accuracy_mod", ":agent"),
+        (agent_set_slot, ":agent", slot_agent_base_accuracy, ":accuracy_mod"),
+        (store_skill_level, ":shield_skill", skl_shield, ":troop"),
+        (val_mul, ":shield_skill", 3),
+        (store_sub, ":penalty", ":size", ":shield_skill"),
+        (val_clamp, ":penalty", 5, 40),
+        (val_sub, ":accuracy_mod", ":penalty"),
+        (agent_set_accuracy_modifier, ":agent", ":accuracy_mod"),
+      (else_try), #slot already set? check original accuracy for calculating debuff!
+        (agent_slot_ge, ":agent", slot_agent_base_accuracy, 0),
+        (agent_get_slot,":accuracy_mod",":agent", slot_agent_base_accuracy ),
+        (store_skill_level, ":shield_skill", skl_shield, ":troop"),
+        (val_mul, ":shield_skill", 3),
+        (store_sub, ":penalty", ":size", ":shield_skill"),
+        (val_clamp, ":penalty", 5, 40),
+        (val_sub, ":accuracy_mod", ":penalty"),
+        (agent_set_accuracy_modifier, ":agent", ":accuracy_mod"),
+      (try_end),
+     (try_end)
     ])
 ]

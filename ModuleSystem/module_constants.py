@@ -162,7 +162,7 @@ slot_item_horse_charge	= slot_item_swing_damage
 ##  AGENT SLOTS            #############################
 ########################################################
 
-slot_agent_target_entry_point     = 0
+#slot_agent_target_entry_point     = 0 #InVain: disabled, duplicate with #11
 slot_agent_target_x_pos           = 1
 slot_agent_target_y_pos           = 2
 slot_agent_is_alive_before_retreat= 3
@@ -201,6 +201,9 @@ slot_agent_warg_pounce_time		= 14
 
 # Kham 
 slot_agent_is_running_away		= 25
+
+#InVain
+slot_agent_base_accuracy		= 26 #used for resetting accuracy after unquipping shields
 
 ########################################################
 ##  FACTION SLOTS          #############################
