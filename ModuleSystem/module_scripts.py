@@ -24411,6 +24411,20 @@ command_cursor_scripts = [
 			
 		(assign, "$savegame_version", 17),
 	(try_end),	
+    
+    (try_begin), #InVain - February 2021, remove advance camp guildmasters (avoid troop mixups), cancel any quests
+		(le, "$savegame_version", 17),	
+		(try_for_range, ":advance_camps", "p_advcamp_gondor", "p_centers_end"),
+            (party_set_slot, ":advance_camps", slot_town_elder, "trp_no_troop"),
+        (try_end),
+        (try_for_range, ":quest", mayor_quests_begin, mayor_quests_end_2),
+            (quest_get_slot, ":giver", ":quest", slot_quest_giver_troop),
+            (is_between, ":giver", "trp_elder_wosgiliath", "trp_village_1_elder"),
+            (cancel_quest, ":quest"),
+            (display_message, "@A quest was cancelled for update compatibility. No need to worry."),
+        (try_end),
+    (assign, "$savegame_version", 18),
+	(try_end),	
 ]),
 
 #Kham
@@ -26269,7 +26283,9 @@ command_cursor_scripts = [
 
 	# Strings Begin
 	# Gondor
-	(try_for_range, ":gondor_guildmasters", "trp_elder_mtirith", "trp_elder_edoras"),
+	(try_for_range, ":gondor_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":gondor_guildmasters"),
+    (eq, ":troop_faction", "fac_gondor"),
 		(troop_set_slot, ":gondor_guildmasters", slot_troop_gm_companion_ask, "str_gondor_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":gondor_guildmasters", slot_troop_gm_companion_none, "str_gondor_guildmaster_companion_none"),
 		(troop_set_slot, ":gondor_guildmasters", slot_troop_gm_companion_player_none, "str_gondor_guildmaster_companion_player_none_ok"),
@@ -26285,7 +26301,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_henneth_annun", slot_party_has_companion, 1),
 
 	# Rohan
-	(try_for_range, ":rohan_guildmasters", "trp_elder_edoras", "trp_elder_morannon"),
+	(try_for_range, ":rohan_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":rohan_guildmasters"),
+    (eq, ":troop_faction", "fac_rohan"),
 		(troop_set_slot, ":rohan_guildmasters", slot_troop_gm_companion_ask, "str_rohan_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":rohan_guildmasters", slot_troop_gm_companion_none, "str_rohan_guildmaster_companion_none"),
 		(troop_set_slot, ":rohan_guildmasters", slot_troop_gm_companion_player_none, "str_rohan_guildmaster_companion_player_none_ok"),
@@ -26301,7 +26319,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_hornburg", slot_party_has_companion, 1),
 
 	# Lorien
-	(try_for_range, ":lorien_guildmasters", "trp_elder_cgaladhon", "trp_elder_thalls"),
+	(try_for_range, ":lorien_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":lorien_guildmasters"),
+    (eq, ":troop_faction", "fac_lorien"),
 		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_ask, "str_lorien_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_none, "str_lorien_guildmaster_companion_none"),
 		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_player_none, "str_lorien_guildmaster_companion_player_none_ok"),
@@ -26315,7 +26335,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_caras_galadhon", slot_party_has_companion, 1),
 
 	# Beorn
-	(try_for_range, ":beorn_guildmasters", "trp_elder_wvillage", "trp_elder_harad"),
+	(try_for_range, ":beorn_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":beorn_guildmasters"),
+    (eq, ":troop_faction", "fac_beorn"),
 		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_ask, "str_beorn_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_none, "str_beorn_guildmaster_companion_none"),
 		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_player_none, "str_beorn_guildmaster_companion_player_none_ok"),
@@ -26329,7 +26351,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_woodsmen_village", slot_party_has_companion, 1),
 
 	# Woodelf
-	(try_for_range, ":woodelf_guildmasters", "trp_elder_thalls", "trp_elder_imladris"),
+	(try_for_range, ":woodelf_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":woodelf_guildmasters"),
+    (eq, ":troop_faction", "fac_woodelf"),
 		(troop_set_slot, ":woodelf_guildmasters", slot_troop_gm_companion_ask, "str_woodelf_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":woodelf_guildmasters", slot_troop_gm_companion_none, "str_woodelf_guildmaster_companion_none"),
 		(troop_set_slot, ":woodelf_guildmasters", slot_troop_gm_companion_player_none, "str_woodelf_guildmaster_companion_player_none_ok"),
@@ -26344,7 +26368,9 @@ command_cursor_scripts = [
 
 
 	# Dale
-	(try_for_range, ":dale_guildmasters", "trp_elder_dale", "trp_elder_erebor"),
+	(try_for_range, ":dale_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":dale_guildmasters"),
+    (eq, ":troop_faction", "fac_dale"),
 		(troop_set_slot, ":dale_guildmasters", slot_troop_gm_companion_ask, "str_dale_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":dale_guildmasters", slot_troop_gm_companion_none, "str_dale_guildmaster_companion_none"),
 		(troop_set_slot, ":dale_guildmasters", slot_troop_gm_companion_player_none, "str_dale_guildmaster_companion_player_none_ok"),
@@ -26358,7 +26384,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_dale", slot_party_has_companion, 1),
 
 	# Dwarf
-	(try_for_range, ":dwarf_guildmasters", "trp_elder_erebor", "trp_elder_dolguldur"),
+	(try_for_range, ":dwarf_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":dwarf_guildmasters"),
+    (eq, ":troop_faction", "fac_dwarf"),
 		(troop_set_slot, ":dwarf_guildmasters", slot_troop_gm_companion_ask, "str_dwarf_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":dwarf_guildmasters", slot_troop_gm_companion_none, "str_dwarf_guildmaster_companion_none"),
 		(troop_set_slot, ":dwarf_guildmasters", slot_troop_gm_companion_player_none, "str_dwarf_guildmaster_companion_player_none_ok"),
@@ -26372,7 +26400,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_erebor", slot_party_has_companion, 1),
 
 	# Rivendell
-	(try_for_range, ":rivendell_guildmasters", "trp_elder_imladris", "trp_elder_wvillage"),
+	(try_for_range, ":rivendell_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":rivendell_guildmasters"),
+    (eq, ":troop_faction", "fac_imladris"),
 		(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_ask, "str_imladris_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_none, "str_imladris_guildmaster_companion_none"),
 		(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_player_none, "str_imladris_guildmaster_companion_player_none_ok"),
@@ -26382,7 +26412,9 @@ command_cursor_scripts = [
 	(try_end),
 
 	# Rhun
-	(try_for_range, ":rhun_guildmasters", "trp_elder_rhun", "trp_elder_khand"),
+	(try_for_range, ":rhun_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":rhun_guildmasters"),
+    (eq, ":troop_faction", "fac_rhun"),
 		(troop_set_slot, ":rhun_guildmasters", slot_troop_gm_companion_ask, "str_rhun_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":rhun_guildmasters", slot_troop_gm_companion_none, "str_rhun_guildmaster_companion_none"),
 		(troop_set_slot, ":rhun_guildmasters", slot_troop_gm_companion_player_none, "str_rhun_guildmaster_companion_player_none_ok"),
@@ -26396,7 +26428,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_rhun_main_camp", slot_party_has_companion, 1),
 
 	# Guldur
-	(try_for_range, ":guldur_guildmasters", "trp_elder_dolguldur", "trp_elder_gondor_ac"),
+	(try_for_range, ":guldur_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":guldur_guildmasters"),
+    (eq, ":troop_faction", "fac_guldur"),
 		(troop_set_slot, ":guldur_guildmasters", slot_troop_gm_companion_ask, "str_guldur_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":guldur_guildmasters", slot_troop_gm_companion_none, "str_guldur_guildmaster_companion_none"),
 		(troop_set_slot, ":guldur_guildmasters", slot_troop_gm_companion_player_none, "str_guldur_guildmaster_companion_player_none_ok"),
@@ -26410,7 +26444,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_dol_guldur", slot_party_has_companion, 1),
 
 	# Moria
-	(try_for_range, ":moria_guildmasters", "trp_elder_moria", "trp_elder_gunda"),
+	(try_for_range, ":moria_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":moria_guildmasters"),
+    (eq, ":troop_faction", "fac_moria"),
 		(troop_set_slot, ":moria_guildmasters", slot_troop_gm_companion_ask, "str_moria_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":moria_guildmasters", slot_troop_gm_companion_none, "str_moria_guildmaster_companion_none"),
 		(troop_set_slot, ":moria_guildmasters", slot_troop_gm_companion_player_none, "str_moria_guildmaster_companion_player_none_ok"),
@@ -26424,7 +26460,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_moria", slot_party_has_companion, 1),
 
 	# isengard
-	(try_for_range, ":isengard_guildmasters", "trp_elder_isengard", "trp_elder_cgaladhon"),
+	(try_for_range, ":isengard_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":isengard_guildmasters"),
+    (eq, ":troop_faction", "fac_isengard"),
 		(troop_set_slot, ":isengard_guildmasters", slot_troop_gm_companion_ask, "str_isengard_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":isengard_guildmasters", slot_troop_gm_companion_none, "str_isengard_guildmaster_companion_none"),
 		(troop_set_slot, ":isengard_guildmasters", slot_troop_gm_companion_player_none, "str_isengard_guildmaster_companion_player_none_ok"),
@@ -26438,7 +26476,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_isengard", slot_party_has_companion, 1),
 
 	# dunland
-	(try_for_range, ":dunland_guildmasters", "trp_elder_dunland", "trp_elder_umbar"),
+	(try_for_range, ":dunland_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":dunland_guildmasters"),
+    (eq, ":troop_faction", "fac_dunland"),
 		(troop_set_slot, ":dunland_guildmasters", slot_troop_gm_companion_ask, "str_dunland_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":dunland_guildmasters", slot_troop_gm_companion_none, "str_dunland_guildmaster_companion_none"),
 		(troop_set_slot, ":dunland_guildmasters", slot_troop_gm_companion_player_none, "str_dunland_guildmaster_companion_player_none_ok"),
@@ -26452,7 +26492,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_dunland_camp", slot_party_has_companion, 1),
 
 	# khand
-	(try_for_range, ":khand_guildmasters", "trp_elder_khand", "trp_elder_dunland"),
+	(try_for_range, ":khand_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":khand_guildmasters"),
+    (eq, ":troop_faction", "fac_khand"),
 		(troop_set_slot, ":khand_guildmasters", slot_troop_gm_companion_ask, "str_khand_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":khand_guildmasters", slot_troop_gm_companion_none, "str_khand_guildmaster_companion_none"),
 		(troop_set_slot, ":khand_guildmasters", slot_troop_gm_companion_player_none, "str_khand_guildmaster_companion_player_none_ok"),
@@ -26466,7 +26508,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_khand_camp", slot_party_has_companion, 1),
 
 	# Umbar
-	(try_for_range, ":umbar_guildmasters", "trp_elder_umbar", "trp_elder_moria"),
+	(try_for_range, ":umbar_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":umbar_guildmasters"),
+    (eq, ":troop_faction", "fac_umbar"),
 		(troop_set_slot, ":umbar_guildmasters", slot_troop_gm_companion_ask, "str_umbar_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":umbar_guildmasters", slot_troop_gm_companion_none, "str_umbar_guildmaster_companion_none"),
 		(troop_set_slot, ":umbar_guildmasters", slot_troop_gm_companion_player_none, "str_umbar_guildmaster_companion_player_none_ok"),
@@ -26480,7 +26524,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_umbar_camp", slot_party_has_companion, 1),
 
 	# Mordor
-	(try_for_range, ":mordor_guildmasters", "trp_elder_morannon", "trp_elder_isengard"),
+	(try_for_range, ":mordor_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":mordor_guildmasters"),
+    (eq, ":troop_faction", "fac_mordor"),
 		(troop_set_slot, ":mordor_guildmasters", slot_troop_gm_companion_ask, "str_mordor_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":mordor_guildmasters", slot_troop_gm_companion_none, "str_mordor_guildmaster_companion_none"),
 		(troop_set_slot, ":mordor_guildmasters", slot_troop_gm_companion_player_none, "str_mordor_guildmaster_companion_player_none_ok"),
@@ -26496,7 +26542,9 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_cirith_ungol", slot_party_has_companion, 1),
 
 	# Harad
-	(try_for_range, ":harad_guildmasters", "trp_elder_harad", "trp_elder_rhun"),
+	(try_for_range, ":harad_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":harad_guildmasters"),
+    (eq, ":troop_faction", "fac_harad"),
 		(troop_set_slot, ":harad_guildmasters", slot_troop_gm_companion_ask, "str_harad_guildmaster_companion_player_ask"),
 		(troop_set_slot, ":harad_guildmasters", slot_troop_gm_companion_none, "str_harad_guildmaster_companion_none"),
 		(troop_set_slot, ":harad_guildmasters", slot_troop_gm_companion_player_none, "str_harad_guildmaster_companion_player_none_ok"),
