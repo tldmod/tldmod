@@ -2183,15 +2183,20 @@ scripts = [
 	    (val_mul, ":lead_bonus", 10),
 	    (val_add, ":to_add", ":lead_bonus"), 
 	    # orc bonus
-	    (assign, ":is_orc_faction", 0),
+	    #(assign, ":is_orc_faction", 0),
 	    (try_begin),
 		    (this_or_next|eq, ":fac", "fac_mordor"),
 		    (this_or_next|eq, ":fac", "fac_isengard"),
 		    (this_or_next|eq, ":fac", "fac_moria"),
 		    (this_or_next|eq, ":fac", "fac_guldur"),
 		    (eq, ":fac", "fac_gundabad"),
-		    (assign, ":is_orc_faction", 1),
+		    #(assign, ":is_orc_faction", 1),
 	    	(val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions #InVain: Not sure if still needed (due to huge orc starting garrisons), but let's keep it for now.
+        (else_try),
+            (this_or_next|eq, ":fac", "fac_imladris"),
+		    (this_or_next|eq, ":fac", "fac_lorien"),
+		    (eq, ":fac", "fac_woodelf"),
+            (val_mul, ":to_add", 80), (val_div, ":to_add", 100), #-20% for elf factions
 	  	(try_end),
 	    # town relations bonus +size*rel/100
 	    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
@@ -2202,7 +2207,7 @@ scripts = [
 		(val_add, ":to_add", 3), #add some extra, so the below code still works (volunteers don't fill up if less than 4)
 		(val_max, ":to_add", 6), #additional saveguard
 	    
-	    (assign, ":ideal_size", ":to_add"),
+	    #(assign, ":ideal_size", ":to_add"),
 		(store_party_size, ":vol_total", ":volunteers"),
 		
 		#InVain: before adding new volunteers, we train the old ones, using the same formula as above (without garrison size)
@@ -2234,24 +2239,21 @@ scripts = [
 	            (else_try),
 	              	(party_add_template, ":volunteers", ":recruit_template"),
 	            (try_end),
-
-	            #old code using garrison troops
-				# # select three potential volunteers
-				# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol0", reg0),  # can fail
-				# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol1", reg0),  # can fail
-				# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol2", reg0),  # can fail
-				# # select lower in grade
-				# (store_character_level, ":lvl0", ":vol0"),
-				# (store_character_level, ":lvl1", ":vol1"),
-				# (store_character_level, ":lvl2", ":vol2"),
-				# (try_begin), (lt, ":lvl1",":lvl0"), (assign,":vol0",":vol1"),(assign,":lvl0",":lvl1"),  (try_end),
-				# (try_begin), (store_random_in_range, ":tmp", 1,101), (le, ":tmp", 66),
-				   # (lt, ":lvl2",":lvl0"), (assign,":vol0",":vol2"),(try_end), 
-				# # move the guy from garrison to volunteers
-				# (party_remove_members_wounded_first, ":town", ":vol0", 1),
-				# (party_add_members, ":volunteers", ":vol0", 1),
 			(try_end),
-	        (store_party_size, ":vol_total", ":volunteers"), # recompute for the benefit of puny orcs below
+            (store_party_size, ":current_size", ":volunteers"), #for every volunteer, remove a t1 or t2 troop from the garrison
+            (store_sub, ":to_remove", ":current_size", ":vol_total"), #how many volunteers were added?
+            (faction_get_slot, ":t_1_troop", ":fac", slot_faction_tier_1_troop),
+            (party_count_members_of_type, ":t_1_count", ":town", ":t_1_troop"),
+            (party_remove_members, ":town", ":t_1_troop", ":to_remove"),
+            (try_begin),
+                (lt, ":t_1_count", ":to_remove"),
+                (party_remove_members, ":town", ":t_1_troop", ":to_remove"), 
+                (val_sub, ":to_remove", ":t_1_count"),
+                (faction_get_slot, ":t_2_troop", ":fac", slot_faction_tier_2_troop),
+                (party_remove_members, ":town", ":t_2_troop", ":to_remove"), 
+            (try_end),
+            
+	        #(store_party_size, ":vol_total", ":volunteers"), # recompute for the benefit of puny orcs below
 		(else_try),
 			(lt, ":to_add", 0), # remove volunteers! #MV: kept this code, effect: a trickle of player recruits joins the garrison
 			(val_mul, ":to_add", -1),
@@ -2267,14 +2269,14 @@ scripts = [
 			(try_end),
 	  	(try_end),
     
-	    # add a couple of orc volunteers each day
-	    (try_begin),
-		    (eq, ":is_orc_faction", 1),
-		    (gt, ":ideal_size", ":vol_total"), #only if needed
-		    (faction_get_slot, ":puny_orc", ":fac", slot_faction_tier_1_troop),
-		    (gt, ":puny_orc", 0),
-		    (party_add_members, ":volunteers", ":puny_orc", 2),
-		(try_end),
+	    # add a couple of orc volunteers each day #InVain: Let's not do this, it clutters the volunteers party
+	    # (try_begin),
+		    # (eq, ":is_orc_faction", 1),
+		    # (gt, ":ideal_size", ":vol_total"), #only if needed
+		    # (faction_get_slot, ":puny_orc", ":fac", slot_faction_tier_1_troop),
+		    # (gt, ":puny_orc", 0),
+		    # (party_add_members, ":volunteers", ":puny_orc", 2),
+		# (try_end),
 
 		#Remove highest level troop every day (counters volunteer training going overboard)
 		(party_get_num_companion_stacks, ":num_stacks", ":volunteers"),
@@ -2282,8 +2284,14 @@ scripts = [
 			(try_for_range, ":i_stack", 0, ":num_stacks"),
 				(party_stack_get_troop_id, ":stack_troop", ":volunteers", ":i_stack"),
 				(store_character_level, ":troop_level", ":stack_troop"),
+                (party_stack_get_size, ":stack_size", ":volunteers", ":i_stack"),
+                (try_begin), #limit number of higher level volunteers
+                    (gt, ":troop_level", 10), (gt, ":stack_size", 2),
+                    (party_remove_members_wounded_first, ":volunteers", ":stack_troop", 1),
+                    (faction_get_slot, ":t_2_troop", ":fac", slot_faction_tier_2_troop),
+                    (party_add_members, ":town", ":t_2_troop", 1), #we stay fair - add a basic troop to the garrison
+                (try_end),
 				(gt, ":troop_level", ":highest_level"),
-				(party_stack_get_size, ":stack_size", ":volunteers", ":i_stack"),
 				(assign, ":highest_level", ":troop_level"),
 				(assign, ":highest_level_troop", ":stack_troop"),
 				(assign, ":highest_level_stack_size", ":stack_size"),
@@ -2293,10 +2301,8 @@ scripts = [
 		(store_random_in_range, ":random", 0, 100),
 		(le, ":random", ":highest_level"),
 		(party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
-			(try_begin),
-				(ge, ":highest_level_stack_size", 3),
-				(party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1), #crude fix to high-level troops stacking over time
-			(try_end),
+        (faction_get_slot, ":t_2_troop", ":fac", slot_faction_tier_2_troop),
+        (party_add_members, ":town", ":t_2_troop", 1), #we stay fair - add a basic troop to the garrison
 		#(str_store_party_name, s1, ":town"),
 		#(str_store_troop_name, s2, ":highest_level_troop"),
 		#(display_message, "@{s1}: removed volunteer {s2}"),

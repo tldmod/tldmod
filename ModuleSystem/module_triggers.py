@@ -200,7 +200,7 @@ triggers = [
 		
 		#(party_get_slot, ":center_relation", ":town", slot_center_player_relation),
 		(party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
-		(val_mul, ":player_party_trading", 100),
+		(val_mul, ":player_party_trading", 150),
 		(val_add, ":min_gold", ":player_party_trading"),
 		
 		(val_mul, ":center_relation", 10),
@@ -209,6 +209,8 @@ triggers = [
         
         (lt, ":cur_gold",":min_gold"),
         (store_random_in_range,":new_gold",200,400),
+        (val_div, ":player_party_trading", 5),
+        (val_add, ":new_gold", ":player_party_trading"),
         (call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
       (try_end),
   ]),
@@ -359,11 +361,13 @@ triggers = [
 		(val_add, ":min_gold", ":center_relation"),
 		
 		(party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
-		(val_mul, ":player_party_trading", 100),
+		(val_mul, ":player_party_trading", 150),
 		(val_add, ":min_gold", ":player_party_trading"),
         
         (lt, ":cur_gold",":min_gold"),
         (store_random_in_range,":new_gold",200,400),
+        (val_div, ":player_party_trading", 5),
+        (val_add, ":new_gold", ":player_party_trading"),
         (call_script, "script_troop_add_gold",":cur_merchant",":new_gold"),
       (try_end),
   ]),
