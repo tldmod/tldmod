@@ -8524,16 +8524,31 @@ game_menus = [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq,"$entry_to_town_forbidden",0),
           (neg|party_slot_eq,"$current_town", slot_town_castle, -1),
+          (str_store_string, s1, "@the_castle"),
 
-		  (try_begin),   # barman troop stores center common name in plural register
-			(party_get_slot, ":barman_troop", "$current_town", slot_town_barman),
-		    (neq, ":barman_troop",  "trp_no_troop"),
-		    (neq, ":barman_troop",  -1),
-			(party_get_slot, ":barman_troop", "$current_town", slot_town_barman),
-		    (str_store_troop_name_plural, s1, ":barman_troop"),
-		  (else_try),
-		    (str_store_string, s1, "@the_castle"),
-		  (try_end),
+		  # (try_begin),   # barman troop stores center common name in plural register #InVain, disabled, use barmen for missing merchants and smiths
+			# (party_get_slot, ":barman_troop", "$current_town", slot_town_barman),
+		    # (neq, ":barman_troop",  "trp_no_troop"),
+		    # (neq, ":barman_troop",  -1),
+			# (party_get_slot, ":barman_troop", "$current_town", slot_town_barman),
+		    # (str_store_troop_name_plural, s1, ":barman_troop"),
+		  # (else_try),
+		    # (str_store_string, s1, "@the_castle"),
+		  # (try_end),
+          
+          #InVain: assign manually instead
+          (try_begin), (eq, "$current_town", "p_town_minas_tirith"), (str_store_string, s1, "@the_Citadel"),
+          (else_try), (eq, "$current_town", "p_town_henneth_annun"), (str_store_string, s1, "@the_Secret_Cave"),
+          (else_try), (eq, "$current_town", "p_town_edoras"), (str_store_string, s1, "@Meduseld,_the_Golden_Hall"),
+          (else_try), (eq, "$current_town", "p_town_hornburg"), (str_store_string, s1, "@the_Lord_Halls"),
+          (else_try), (eq, "$current_town", "p_town_morannon"), (str_store_string, s1, "@the_Leader's_Cave"),
+          (else_try), (eq, "$current_town", "p_town_morannon"), (str_store_string, s1, "@the_Tower"),
+          (else_try), (eq, "$current_town", "p_town_isengard"), (str_store_string, s1, "@the_tower_of_Orthanc"),
+          (else_try), (eq, "$current_town", "p_town_thranduils_halls"), (str_store_string, s1, "@the_Throne_Room"),
+          (else_try), (eq, "$current_town", "p_town_beorn_house"), (str_store_string, s1, "@Beorn's_Hall"),
+          (else_try), (eq, "$current_town", "p_town_esgaroth"), (str_store_string, s1, "@the_Hall"),
+          (else_try), (eq, "$current_town", "p_town_erebor"), (str_store_string, s1, "@the_Great Chamber of Thrór"),
+          (try_end),
 		  
 #          (party_slot_eq, "$current_town", slot_castle_visited, 1), #check if scene has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
           ],"Go to {s1}.",
@@ -8607,8 +8622,23 @@ game_menus = [
 	  (this_or_next|eq,"$tld_option_crossdressing", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
       (this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_eq, "$current_town", slot_merchant_visited, 1), #check if horse_merchant has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_merchant, "trp_no_troop"),
-	  (party_get_slot, ":troop", "$current_town", slot_town_merchant),
-	  (str_store_troop_name_plural, s41, ":troop"),],
+      (try_begin),
+      	(eq, "$current_town", "p_town_cair_andros"), ##Kham fix for weird slot switching
+		(store_faction_of_party, ":town_faction", "$current_town"),
+		(eq, ":town_faction", "fac_gondor"), #InVain Fix to Cair Andros smith always belonging to Gondor, even after CA has been captured
+	  	(party_set_slot, "p_town_cair_andros", slot_town_merchant, "trp_merchant_candros"),
+	  	(str_store_troop_name_plural, s40, "trp_merchant_candros"),
+	  (else_try),
+	    (this_or_next|eq, "$current_town", "p_town_west_osgiliath"),
+		(eq, "$current_town", "p_town_east_osgiliath"),
+		(store_faction_of_party, ":town_faction", "$current_town"),
+		(eq, ":town_faction", "fac_gondor"),
+	  	(party_set_slot, "$current_town", slot_town_merchant, "trp_merchant_wosgiliath"),
+	  	(str_store_troop_name_plural, s40, "trp_merchant_wosgiliath"),
+	  (else_try),
+        (party_get_slot, ":troop", "$current_town", slot_town_merchant),
+        (str_store_troop_name_plural, s41, ":troop"),
+      (try_end)],
        "Visit the {s41}.",
        [(party_get_slot, ":troop", "$current_town", slot_town_merchant),(change_screen_trade, ":troop")]),
 

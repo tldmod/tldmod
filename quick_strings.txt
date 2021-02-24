@@ -1,4 +1,4 @@
-1631
+1641
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1010,6 +1010,17 @@ qstr_{s29} {s29}
 qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
 qstr_the_place the_place
 qstr_the_castle the_castle
+qstr_the_Citadel the_Citadel
+qstr_the_Secret_Cave the_Secret_Cave
+qstr_Meduseld_the_Golden_ Meduseld,_the_Golden_Hall
+qstr_the_Lord_Halls the_Lord_Halls
+qstr_the_Leader_s_Cave the_Leader's_Cave
+qstr_the_Tower the_Tower
+qstr_the_tower_of_Orthanc the_tower_of_Orthanc
+qstr_the_Throne_Room the_Throne_Room
+qstr_Beorn_s_Hall Beorn's_Hall
+qstr_the_Hall the_Hall
+qstr_the_Great_Chamber_of the_Great_Chamber_of_Thrór
 qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_points_per_night)
 qstr_Camp_outside_for_som Camp_outside_for_some_time_(free)
 qstr_{s4}_s_scouts_have_s {s4}'s_scouts_have_seen_and_reported_your_failure._You_have_brought_shame_to_{s4}_and_the_responsibility_of_this_failure_is_yours_alone.
@@ -1178,7 +1189,6 @@ qstr_Well_if_you_are_here Well,_if_you_are_here_and_talking_to_me,_you_must've_R
 qstr_You_just_got_windyfl You_just_got_windyflorated!
 qstr_Merry Merry
 qstr_Pippin Pippin
-qstr_the_Citadel the_Citadel
 qstr_Minas_Tirith Minas_Tirith
 qstr_Steward_Denethor Steward_Denethor
 qstr_the_Golden_Hall the_Golden_Hall

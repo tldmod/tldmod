@@ -9242,7 +9242,7 @@ scripts = [
 	  (faction_get_slot,":faction_banner",":faction_no",slot_faction_party_map_banner),
       (party_set_banner_icon, ":center_no", ":faction_banner"),
       #TLD: change NPCs and walkers - since I'm lazy, I'll just give them clones of the faction capital NPCs and walkers
-      (faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
+      (faction_get_slot, ":capital", ":faction_no", slot_faction_advance_camp), #InVain: use advance camp instead = military walkers, no elders (captured centers are just military bases for the captors)
       (party_get_slot, ":value", ":capital", slot_town_elder),
       (party_set_slot, ":center_no", slot_town_elder, ":value"),
       #(party_get_slot, ":value", ":capital", slot_town_barman),    # Rafa: as barmans just store the castle name and don't appear on the scenes

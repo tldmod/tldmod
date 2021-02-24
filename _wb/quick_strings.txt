@@ -1,4 +1,4 @@
-1871
+1881
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_182_wb__dev_^_B _rev_182_wb_|_dev_^_Built_2021-02-23_19:54___
+qstr__rev_183_wb__dev_^_B _rev_183_wb_|_dev_^_Built_2021-02-24_19:45___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1223,6 +1223,17 @@ qstr_{s29} {s29}
 qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
 qstr_the_place the_place
 qstr_the_castle the_castle
+qstr_the_Citadel the_Citadel
+qstr_the_Secret_Cave the_Secret_Cave
+qstr_Meduseld_the_Golden_ Meduseld,_the_Golden_Hall
+qstr_the_Lord_Halls the_Lord_Halls
+qstr_the_Leader_s_Cave the_Leader's_Cave
+qstr_the_Tower the_Tower
+qstr_the_tower_of_Orthanc the_tower_of_Orthanc
+qstr_the_Throne_Room the_Throne_Room
+qstr_Beorn_s_Hall Beorn's_Hall
+qstr_the_Hall the_Hall
+qstr_the_Great_Chamber_of the_Great_Chamber_of_Thrór
 qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_points_per_night)
 qstr_Camp_outside_for_som Camp_outside_for_some_time_(free)
 qstr_{s4}_s_scouts_have_s {s4}'s_scouts_have_seen_and_reported_your_failure._You_have_brought_shame_to_{s4}_and_the_responsibility_of_this_failure_is_yours_alone.
@@ -1397,7 +1408,6 @@ qstr_Well_if_you_are_here Well,_if_you_are_here_and_talking_to_me,_you_must've_R
 qstr_You_just_got_windyfl You_just_got_windyflorated!
 qstr_Merry Merry
 qstr_Pippin Pippin
-qstr_the_Citadel the_Citadel
 qstr_Minas_Tirith Minas_Tirith
 qstr_Steward_Denethor Steward_Denethor
 qstr_the_Golden_Hall the_Golden_Hall
