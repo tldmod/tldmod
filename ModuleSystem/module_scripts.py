@@ -11687,7 +11687,8 @@ scripts = [
 	(else_try),		# marshes 
 		(this_or_next|eq,":region",region_entwash),
 		(eq,":region",region_wetwang), 
-		(assign, ":native_terrain_to_use", rt_snow),  # marsh
+        (assign, ":scene_to_use", "scn_random_scene_snow_forest"),
+		(assign, ":native_terrain_to_use", rt_snow_forest),  # marshland
 	(else_try),		# anything else
 		(assign, ":native_terrain_to_use", rt_steppe),  
 	(try_end),
@@ -11696,7 +11697,7 @@ scripts = [
 	(try_begin),(gt, ":native_terrain_to_use", -1), 
 		# use native terrain autogeneration
 		# make the terrain index SKIP the interval betweem desert (escluded) and mountain_forest (included) 
-		(try_begin),(gt	,":native_terrain_to_use",rt_desert),(val_sub,":native_terrain_to_use",rt_mountain_forest-rt_desert),(try_end),
+		(try_begin),(gt	,":native_terrain_to_use",rt_desert),(val_sub,":native_terrain_to_use",rt_mountain_forest-rt_desert),(try_end), # -4
 		(try_begin),(neq,"$relocated",1),
 			(assign,"$relocated",1),						# don't store current location if already relocated
 			(party_relocate_near_party,"p_pointer_player","p_main_party",0), #remember original player location 
@@ -11709,14 +11710,14 @@ scripts = [
 		
 		(try_begin),(eq,":scene_to_use",-1),
 			# no scene_to_use defined: use the dafault one for the selected native terrain terrain
-			(store_add, ":scene_to_use", ":native_terrain_to_use", "scn_random_scene_steppe" ),
-			(val_sub, ":scene_to_use", 2), # steppe is terrain 2
+			(store_add, ":scene_to_use", ":native_terrain_to_use", "scn_random_scene_steppe" ), #2
+			(val_sub, ":scene_to_use", 2), # -2 steppe is terrain 2
 			(try_begin), (eq, ":small_scene", 1), 
 				# shring scene
 				(le, ":native_terrain_to_use", rt_desert), #  forest don't have a small version
 				
-				(val_add, ":scene_to_use", "scn_random_scene_steppe_small"),
-				(val_sub, ":scene_to_use", "scn_random_scene_steppe"),  # go to small scene index
+				(val_add, ":scene_to_use", "scn_random_scene_steppe_small"), #+12
+				(val_sub, ":scene_to_use", "scn_random_scene_steppe"),  # -2 go to small scene index
 				(assign, "$small_scene_used", 1),
 			(try_end),
 		(try_end),

@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1965
+ 1973
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5963,6 +5963,30 @@ spr_arabian_tent_harad 0 0 arabian_tent_harad bo_arabian_tent 0
 
 
 spr_arabian_tent_harad_b 0 0 arabian_tent_harad_b bo_arabian_tent_b 0
+
+
+spr_stone_wall_mossy_1 0 0 zf_wall_1 bo_zf_wall_1 0
+
+
+spr_stone_wall_mossy_2 0 0 zf_wall_2 bo_zf_wall_2 0
+
+
+spr_stone_wall_mossy_3 0 0 zf_wall_3 bo_zf_wall_3 0
+
+
+spr_stone_block_mossy_1 0 0 zf_block_0 bo_zf_block_0 0
+
+
+spr_stone_block_mossy_2 0 0 zf_block_1 bo_zf_block_1 0
+
+
+spr_stone_block_mossy_3 0 0 zf_block_2 bo_zf_block_2 0
+
+
+spr_stone_block_mossy_4 0 0 zf_block_3 bo_zf_block_3 0
+
+
+spr_fence_new 0 0 fence_new bo_fence_new 0
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0

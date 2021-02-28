@@ -10,11 +10,11 @@ fkf_density_mask  = 0xFFFF #16K
 #terain condition flags
 fkf_plain             = 0x00000004 	#Gondor; Green ground, spawns mediterranean flora
 fkf_steppe            = 0x00000008	#Rohan, northern regions, wilderness; dry grass, spawns occasional bushes, rocks, small trees
-fkf_snow              = 0x00000010	#Marshland; currently no grass assigned, spawns dead brownish trees and bushes
+fkf_snow              = 0x00000010	#Use for deep forest random scenes (Fangorn, Mirkwood), allows grass, so ground flora does not interfere with trees
 fkf_desert            = 0x00000020	#Currently: Dagorlad, Emyn Muil, Brown Lands - all these could/should be replaced by custom scenes. Needs better ground texture
-fkf_plain_forest      = 0x00000400	#only used for small forests in Gondor and Rohan --> Could be used for Vale of Anduin, maybe more green Rohan areas (reduce trees)
+fkf_plain_forest      = 0x00000400	#only used for small forests in Gondor and Rohan --> Could be used for Vale of Anduin, maybe more green Rohan areas (reduce tree density)
 fkf_steppe_forest     = 0x00000800	#basically unused (only for some rare randomized Ithilien scenes) --> Use as an alternative for northern regions
-fkf_snow_forest       = 0x00001000	#unused --> Use for deep forest random scenes (Fangorn, Mirkwood)?
+fkf_snow_forest       = 0x00001000	#Marshland; use this for marshland, because it does not allow grass. Add grass as bushes. Marsh is not suited for auto-generation because of hill generation.
 fkf_desert_forest     = 0x00002000	#unused --> Could be used for mountain foothills / Emyn Muil, but that would need worldmap adjustment
 fkf_terrain_mask      = 0x0000ffff
 
@@ -59,8 +59,8 @@ fauna_kinds = [
    ['PW_grass_yellow_b_xx', '0'],
    ['PW_grass_e_xx', '0']]),
    
- ('ga_grass_snow',
-  fkf_snow|fkf_snow_forest|fkf_align_with_ground|fkf_grass|fkf_guarantee|density(1666),
+ ('ga_grass_snow', #snow forest = marshland grass, must not be flagged as grass
+  fkf_snow_forest|fkf_align_with_ground|fkf_guarantee|density(1666),
   [['PW_grass_a_xx', '0'],
    ['PW_grass_b_xx', '0'],
    ['PW_grass_b_xx', '0'],
@@ -68,7 +68,6 @@ fauna_kinds = [
    ['PW_grass_e_xx', '0']]),
    
  ('ga_grass_desert', #desert grass must not be flagged as grass and must not use the grass shader
- #fkf_desert|fkf_desert_forest|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|fkf_has_colony_props|density(2012),
   fkf_desert|fkf_desert_forest|fkf_align_with_ground|fkf_guarantee|density(2012),
   [['PW_grass_e_xx', '0'],
    ['PW_grass_yellow_b_xx', '0'],
@@ -76,7 +75,7 @@ fauna_kinds = [
    ['PW_grass_e_xx', '0']]),
    
  ('grass_bush', #stinging nettle
-  fkf_plain|fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_plain_forest|fkf_align_with_ground|fkf_grass|fkf_point_up|density(100),
+  fkf_plain|fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_plain_forest|fkf_snow|fkf_align_with_ground|fkf_grass|fkf_point_up|density(100),
   [['PW_grass_bush_a_xx', '0'], ['PW_grass_bush_b_xx', '0']]),
   
  ('grass_saz', #white flowers
@@ -88,27 +87,27 @@ fauna_kinds = [
   [['PW_grass_bush_e_xx', '0'], ['PW_grass_bush_e_xx', '0']]),
   
  ('fern',
-  fkf_plain_forest|fkf_snow_forest|fkf_align_with_ground|fkf_grass|density(900),
+  fkf_snow|fkf_align_with_ground|fkf_grass|density(900),
   [['PW_fern_a_xx', '0'], ['PW_fern_b_xx', '0']]),
    
  ('grass_bush_g', #bundles of seedy grass
-  fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_align_with_ground|fkf_grass|density(400),
+  fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_snow|fkf_align_with_ground|fkf_grass|density(400),
   [['PW_grass_bush_g01_xx', '0'],
    ['PW_grass_bush_g02_xx', '0'],
    ['PW_grass_bush_g03_xx', '0']]),
    
  ('grass_bush_h', #leafy ground plants, similar to bushes04_a
-  fkf_plain|fkf_plain_forest|fkf_align_with_ground|fkf_grass|density(400),
+  fkf_plain|fkf_plain_forest|fkf_snow|fkf_align_with_ground|fkf_grass|density(400),
   [['PW_grass_bush_h01_xx', '0'],
    ['PW_grass_bush_h02_xx', '0'],
    ['PW_grass_bush_h03_xx', '0']]),
    
  ('grass_bush_i', #bushes of dry, red-flowered grass
-  fkf_plain|fkf_plain_forest|fkf_align_with_ground|fkf_grass|density(400),
+  fkf_plain|fkf_plain_forest|fkf_snow|fkf_align_with_ground|fkf_grass|density(400),
   [['PW_grass_bush_i01_xx', '0'], ['PW_grass_bush_i02_xx', '0']]),
   
  ('grass_bush_j', #ilex like leafy bushes
-  fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_align_with_ground|fkf_grass|density(50),
+  fkf_plain|fkf_steppe|fkf_plain_forest|fkf_snow|fkf_steppe_forest|fkf_align_with_ground|fkf_grass|density(50),
   [['PW_grass_bush_j01_xx', '0'], ['PW_grass_bush_j02_xx', '0']]),
   
  ('grass_bush_k', #dry brown grass
@@ -131,7 +130,7 @@ fauna_kinds = [
   [['PW_grass_bush_l01', '0'], ['PW_grass_bush_l02', '0']]),
 
  ('thorn_a', #green leafed "thorny" bushes
-  fkf_plain|fkf_plain_forest|fkf_steppe|fkf_align_with_ground|density(50),
+  fkf_plain|fkf_plain_forest|fkf_steppe|fkf_snow_forest|fkf_align_with_ground|density(50),
   [['PW_thorn_a', '0'],
    ['PW_thorn_b', '0'],
    ['PW_thorn_c', '0'],
@@ -181,26 +180,26 @@ fauna_kinds = [
   [['PW_blue_flower_xx', '0']]),
 
  ('bushes02_a', #willowy bushes
-  fkf_plain|fkf_snow|fkf_steppe_forest|density(20),
+  fkf_plain_forest|fkf_snow_forest|fkf_steppe_forest|density(10),
   [['PW_bushes02_a', 'bo_pw_bushes02_a'],
    ['PW_bushes02_b', 'bo_pw_bushes02_a'],
    ['PW_bushes02_c', 'bo_pw_bushes02_a']]),
 
  ('bushes03_a', #pine-like small bush
-  fkf_steppe|fkf_snow|fkf_desert|fkf_plain_forest|fkf_desert_forest|density(54),
+  fkf_steppe|fkf_desert|fkf_plain_forest|fkf_desert_forest|density(54),
   [['PW_bushes03_a_xx', '0'],
    ['PW_bushes03_b_xx', '0'],
    ['PW_bushes03_c_xx', '0']]),
 
  ('bushes04_a', #leafy low grass bushes, very similar to grass_bush_h, same as ga_bushes04_a_snow
-  fkf_plain|fkf_steppe|fkf_snow|fkf_desert|fkf_plain_forest|fkf_steppe_forest|fkf_desert_forest|density(102),
+  fkf_plain|fkf_steppe|fkf_snow_forest|fkf_desert|fkf_plain_forest|fkf_steppe_forest|fkf_desert_forest|density(102),
   [['PW_bushes04_a_xx', '0'],
    ['PW_bushes04_b_xx', '0'],
    ['PW_bushes04_c_xx', '0']]),
 
 #DUPLICATE
  ('ga_bushes04_a_snow', 
-  fkf_snow|fkf_snow_forest|fkf_align_with_ground|density(390),
+ density(100),
   [['PW_bushes04_a_xx', '0'],
    ['PW_bushes04_b_xx', '0'],
    ['PW_bushes04_c_xx', '0']]),
@@ -210,32 +209,32 @@ fauna_kinds = [
   [['PW_bushes05_a_xx', '0']]),
 
  ('bushes06_a', #thistle bushes
-  fkf_plain|fkf_steppe|fkf_snow|fkf_desert|fkf_plain_forest|fkf_steppe_forest|fkf_desert_forest|density(102),
+  fkf_plain|fkf_steppe|fkf_snow_forest|fkf_desert|fkf_plain_forest|fkf_steppe_forest|fkf_desert_forest|density(102),
   [['PW_bushes06_a_xx', '0'],
    ['PW_bushes06_b_xx', '0'],
    ['PW_bushes06_c_xx', '0']]),
 
  ('bushes07_a', #small pines
-  fkf_snow|fkf_desert|fkf_plain_forest|fkf_desert_forest|density(102),
+  fkf_desert|fkf_plain_forest|fkf_desert_forest|density(102),
   [['PW_bushes07_a_xx', '0'],
    ['PW_bushes07_b_xx', '0'],
    ['PW_bushes07_c_xx', '0']]),
 
  ('bushes08_a', #ilex bushes like grass_bush_j, but not grass, same as zl_bush_08
-  fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|density(70),
+  fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_snow_forest|density(70),
   [['PW_bushes08_a_xx', '0'],
    ['PW_bushes08_b_xx', '0'],
    ['PW_bushes08_c_xx', '0']]),
 
-#DUPLICATE
+#DUPLICATE, snow forest version (less density)
  ('zl_bush_08',
-  0,
+  fkf_snow_forest|density(12),
   [['PW_bushes08_a_xx', '0'],
    ['PW_bushes08_b_xx', '0'],
    ['PW_bushes08_c_xx', '0']]),
 
  ('bushes09_a', #fir bushes, same as zl_fir_bush
-  fkf_snow|fkf_steppe_forest|fkf_desert|fkf_desert_forest|density(102),
+  fkf_steppe_forest|fkf_desert|fkf_desert_forest|density(102),
   [['PW_bushes09_a', '0'], ['PW_bushes09_b', '0'], ['PW_bushes09_c', '0']]),
 
 #DUPLICATE
@@ -244,7 +243,7 @@ fauna_kinds = [
   [['PW_bushes09_a', '0'], ['PW_bushes09_b', '0'], ['PW_bushes09_c', '0']]),
 
  ('bushes10_a', #birch bushes , same as zl_birch_green_bush
-  fkf_plain_forest|fkf_steppe_forest|density(70),
+  fkf_steppe_forest|density(70),
   [['PW_bushes10_a', 'bo_pw_bushes10_a'],
    ['PW_bushes10_b', 'bo_pw_bushes10_b'],
    ['PW_bushes10_c', 'bo_pw_bushes10_c']]),
@@ -255,12 +254,12 @@ fauna_kinds = [
   [['PW_bushes10_a', '0'], ['PW_bushes10_b', '0'], ['PW_bushes10_c', '0']]),
 
  ('bushes11_a', #low mountain pines, same as zl_shalebush
-  fkf_steppe|fkf_steppe_forest|fkf_snow|fkf_desert|fkf_plain_forest|fkf_desert_forest|density(70),
+  fkf_steppe|fkf_steppe_forest|fkf_desert_forest|density(70),
   [['PW_bushes11_a', '0'], ['PW_bushes11_b', '0'], ['PW_bushes11_c', '0']]),
   
 #DUPLICATE
  ('zl_shalebush', #same as bushes11_a
-  fkf_desert_forest|density(2),
+  fkf_desert|fkf_snow_forest|density(5),
   [['PW_bushes11_a', '0'], ['PW_bushes11_b', '0'], ['PW_bushes11_c', '0']]),
 
  ('bushes12_a', #dry brown grass, same as zl_bush_steppe_wheat
@@ -277,18 +276,20 @@ fauna_kinds = [
    ['PW_bushes12_c_xx', '0']]),
 
  ('pw_gray_bush',
-  fkf_snow|fkf_desert|fkf_snow_forest|fkf_realtime_ligting|fkf_tree|density(5),
+  fkf_snow_forest|fkf_desert|fkf_realtime_ligting|fkf_tree|density(10),
   [['PW_tree_3_a_gray', '0'], ['PW_tree_3_b_gray', '0']]),
 
 #duplicate
- ('pw_snow_bushes', density(4), [['PW_tree_19_a', '0']]), #similar to ga_tree_3_a_brown
+ ('pw_snow_bushes', 
+  fkf_snow_forest|density(8), 
+  [['PW_tree_19_a', '0']]), #similar to ga_tree_3_a_brown
  
  ('ga_tree_3_a_brown', #similar to pw_snow_bushes
-  fkf_desert|fkf_desert_forest|density(22),
+  fkf_desert|fkf_desert_forest|fkf_snow_forest|density(8),
   [['PW_tree_3_a_brown', '0'], ['PW_tree_3_b_brown', '0']]),
   
  ('pw_ground_thorn', #same as tree_1
-  0,
+  fkf_snow_forest|density(12),
   [['PW_tree_9_a_xx', '0'], ['PW_tree_9_a_xx', '0'], ['PW_tree_9_a_xx', '0']]),
 
 
@@ -299,10 +300,10 @@ fauna_kinds = [
   fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_desert_forest|fkf_align_with_ground|fkf_realtime_ligting|fkf_rock|density(22),
   [['PW_small_rock_group_a', '0'], ['PW_small_rock_group_b', '0'], ['PW_small_rock_group_c', '0']]),
 
- ('rock', #same as pw_fir
-  fkf_plain_forest|fkf_tree|density(30),
-  [['PW_pine_1_a', 'bo_pw_pine_1_a'],
-   ['PW_pine_1_b', 'bo_pw_pine_1_b']]),
+ ('rock_mossy_cluster_zf', 
+  density(30),
+  [['zf_rock_cluster_1', 'bo_zf_rock_cluster_1'],
+   ['zf_rock_cluster_2', 'bo_zf_rock_cluster_2']]),
    
  ('small_rock',
   fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4),
@@ -310,13 +311,13 @@ fauna_kinds = [
    ['PW_rock_b', 'bo_PW_rock_b']]),
    
  ('rock_mossy_big_zf',
-  fkf_tree,
+  fkf_rock|fkf_align_with_ground|density(12),
   [['zf_rock_big_1', 'bo_zf_rock_big_1'],
    ['zf_rock_big_2', 'bo_zf_rock_big_2'],
    ['zf_rock_big_3', 'bo_zf_rock_big_3'],]),
    
  ('rock_mossy_med_zf',
-  fkf_tree,
+  fkf_rock|fkf_align_with_ground|density(12),
   [['zf_rock_medium_1', 'bo_zf_rock_medium_1'],
    ['zf_rock_medium_2', 'bo_zf_rock_medium_2'],
    ['zf_rock_medium_3', 'bo_zf_rock_medium_3'],
@@ -325,7 +326,7 @@ fauna_kinds = [
    ['zf_rock_medium_6', 'bo_zf_rock_medium_6'],]),
    
  ('rock_mossy_small_group_zf',
-  fkf_tree,
+  fkf_rock|fkf_align_with_ground|density(12),
   [['zf_small_rock_group_1', '0'],
    ['zf_small_rock_group_2', '0'],
    ['zf_small_rock_group_3', '0'],
@@ -424,7 +425,7 @@ fauna_kinds = [
    ['tree_8_c', 'bo_tree_8_c']]),
 
  ('tree_9',
-  fkf_plain_forest|fkf_tree|density(50),
+  fkf_plain_forest|fkf_tree|density(15),
   [['tree_9_a', 'bo_tree_9_a'],
    ['tree_9_b', 'bo_tree_9_a'],
    ['tree_9_c', 'bo_tree_9_a']]),
@@ -442,19 +443,19 @@ fauna_kinds = [
    ['tree_11_c', 'bo_tree_11_a']]),
 
  ('tree_12',
-  fkf_tree|density(4),
+  fkf_tree|density(15),
   [['tree_12_a', 'bo_tree_12_a'],
    ['tree_12_b', 'bo_tree_12_b'],
    ['tree_12_c', 'bo_tree_12_c']]),
 
  ('tree_14',
-  fkf_tree,
+  fkf_tree|density(12),
   [['tree_14_a', 'bo_tree_14_a'],
    ['tree_14_b', 'bo_tree_14_b'],
    ['tree_14_c', 'bo_tree_14_c']]),
 
  ('tree_15',
-  fkf_tree|density(64),
+  fkf_tree|density(14),
   [['tree_15_a', 'bo_tree_15_a'],
    ['tree_15_b', 'bo_tree_15_b'],
    ['tree_15_c', 'bo_tree_15_c']]),
@@ -520,7 +521,7 @@ fauna_kinds = [
  
  ('pw_fir3', fkf_tree|density(4), [['PW_pine_3_a', 'bo_pw_pine_3_a']]),
 
- ('snowy_pine', fkf_tree, [['PW_tree_snowy_a', 'bo_pw_tree_snowy_a']]), #Not really snowy pines, but tall, dead looking tree
+ ('snowy_pine', fkf_tree|density(3), [['PW_tree_snowy_a', 'bo_pw_tree_snowy_a']]), #Not really snowy pines, but tall, dead looking tree
 
  ('snowy_pine_2', fkf_tree, [['PW_snowy_pine_2', 'bo_pw_snowy_pine_2']]), #actual snowy pine
 
@@ -597,7 +598,7 @@ fauna_kinds = [
    ['PW_tree_2_b', 'bo_pw_tree_2_b']]),
 
  ('zl_fir_shubby_single', #single standing trees, no fallen logs
-  fkf_snow|fkf_desert_forest|fkf_tree|density(5),
+  fkf_desert_forest|fkf_tree|density(5),
   [['PW_tree_2_a_single1', 'bo_pw_tree_2_a_single1'],
    ['PW_tree_2_a_single2', '0'],
    ['PW_tree_2_a_single3', 'bo_pw_tree_2_a_single3'],
@@ -630,7 +631,7 @@ fauna_kinds = [
    ['PW_tree_5_a_yellow', 'bo_pw_tree_5_a']]),
 
  ('zl_green2_group', #same as pw_leaf_green_group
-  fkf_tree,
+  fkf_tree|density(4),
   [['PW_tree_8_a', 'bo_pw_tree_8_a'],
    ['PW_tree_8_b', 'bo_pw_tree_8_b'],
    ['PW_tree_8_c', 'bo_pw_tree_8_c']]),
@@ -723,7 +724,7 @@ fauna_kinds = [
    ['PW_tree_17_d', 'bo_pw_tree_17_d']]),
 
  ('pw_beech_green_group',
-  fkf_tree|density(4),
+  fkf_plain_forest|fkf_tree|density(4),
   [['PW_tree_17_beech_a', 'bo_pw_tree_17_a'],
    ['PW_tree_17_beech_b', 'bo_pw_tree_17_b'],
    ['PW_tree_17_beech_c', 'bo_pw_tree_17_c']]),
@@ -777,7 +778,7 @@ fauna_kinds = [
    ['PW_rock_e', 'bo_pw_rock_e'],
    ['PW_rock_k', 'bo_pw_rock_k']]),
 
- ('zl_reed', fkf_snow|density(194), [['GA_reed1', '0']]),
+ ('zl_reed', density(194), [['GA_reed1', '0']]), #bad asset, not used for the moment
 
  ('zl_fir_tall_hs',
   fkf_steppe_forest|fkf_desert_forest|fkf_tree|density(5),
@@ -1139,7 +1140,7 @@ fauna_kinds = [
    ['tree_stump_c', 'bo_tree_stump_c'],]),    
 
  ('tree_old',
-  0,
+  fkf_tree,
   [['tree_huorn', 'bo_tree_huorn'],
    ['PL_oak_group_big_1', 'bo_pl_oak_group_big_1'],
    ['PL_oak_group_big_2', 'bo_pl_oak_group_big_2'],
@@ -1155,7 +1156,7 @@ fauna_kinds = [
    ['tree_mirkwood_c', 'bo_tree_mallorn_c'],]),
    
  ('mushroom',
-  fkf_plain_forest|density(4),
+  density(15),
   [['mushroom1', '0'],
    ['mushroom2', '0'],
    ['mushroom3', '0'],
@@ -1164,7 +1165,7 @@ fauna_kinds = [
    
 
  ('fern_big',
-  0,
+  density(30),
   [['PW_fern_big', '0']]),
 
  ('mirkwood_roots',
@@ -1184,6 +1185,34 @@ fauna_kinds = [
    ['PL_beech_group2', 'bo_pl_oak_group2'],
    ['PL_beech_group3', 'bo_pl_oak_group3']]),
    
+ ('tree_dead',
+  fkf_tree|density(2),
+  [['dead_tree_1', 'bo_dead_tree_1'],
+   ['dead_tree_2', 'bo_dead_tree_2'],
+   ['dead_tree_3', 'bo_dead_tree_3'],
+   ['dead_tree_4', 'bo_dead_tree_4']]),
+   
+ ('fern_cluster',
+  density(30),
+  [['PW_fern_cluster', '0']]),
+  
+ ('mushroom_cluster',
+  fkf_plain_forest|density(15),
+  [['mushroom_cluster1', '0'],
+   ['mushroom_cluster2', '0'],
+   ['mushroom_cluster3', '0'],
+   ['mushroom_cluster4', '0'],
+   ['mushroom_cluster5', '0'],]),
+
+ ('tree_group_forest', #regular-sized tree groups with cylindric low-poly coll meshes for quickly populating forest battlefields
+  density(60),
+  [['PL_oak_group_old1', 'bo_PL_oak_group_old1'],
+   ['PL_oak_group_old2', 'bo_PL_oak_group_old2'],
+   ['PL_oak_group_old3', 'bo_PL_oak_group_old3'],
+   ['PL_oak_group_old_b1', 'bo_PL_oak_group_old1'],
+   ['PL_oak_group_old_b2', 'bo_PL_oak_group_old2'],
+   ['PL_oak_group_old_b3', 'bo_PL_oak_group_old3']]),   
+
 ]
 
 def save_fauna_kinds():

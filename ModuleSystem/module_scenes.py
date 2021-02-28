@@ -37,7 +37,7 @@ scenes = [
 # gap!!!
 ("random_scene_steppe_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(120,120),-0.5,"0x00000002ac6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
 ("random_scene_plain_forest"    ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001bc60280000034cd30000034e00004b34000059be",[],[],"outer_terrain_forest"),
-("random_scene_snow_forest"     ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001cc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_forest"),
+("random_scene_snow_forest"     ,sf_generate|sf_randomize,"none","none",(0,0),(100,100),-0.5,"0x00000001c00005000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_flat"),
 ("random_scene_desert_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(150,150),-0.5,"0x00000001dc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_flat"),
 ("random_scene_north_forest"   ,sf_generate|sf_randomize,"none","none",(0,0),(150,150),-0.5,"0x00000001dc6028000003e8fa0000034e00004b34000059be",[],[],"outer_terrain_plain"),
 # ...small versions...

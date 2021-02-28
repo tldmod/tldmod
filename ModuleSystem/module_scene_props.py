@@ -3092,6 +3092,17 @@ scene_props = [
 ("arabian_tent_harad",0,"arabian_tent_harad","bo_arabian_tent", []), #wb only
 ("arabian_tent_harad_b",0,"arabian_tent_harad_b","bo_arabian_tent_b", []), #wb only
 
+( "stone_wall_mossy_1"                                  ,0,"zf_wall_1","bo_zf_wall_1",[]),
+( "stone_wall_mossy_2"                                  ,0,"zf_wall_2","bo_zf_wall_2",[]),
+( "stone_wall_mossy_3"                                  ,0,"zf_wall_3","bo_zf_wall_3",[]),
+( "stone_block_mossy_1"                           ,0,"zf_block_0","bo_zf_block_0",[]),
+( "stone_block_mossy_2"                          ,0,"zf_block_1","bo_zf_block_1",[]),
+( "stone_block_mossy_3"                           ,0,"zf_block_2","bo_zf_block_2",[]),
+( "stone_block_mossy_4"                           ,0,"zf_block_3","bo_zf_block_3",[]),
+( "fence_new"                           ,0,"fence_new","bo_fence_new",[]),
+
+
+
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
 
