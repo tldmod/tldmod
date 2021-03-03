@@ -1,4 +1,4 @@
-1641
+1643
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -166,6 +166,8 @@ qstr_+2_to_Surgery +2_to_Surgery
 qstr_when_equipped when_equipped
 qstr_+1_to_Riding +1_to_Riding
 qstr_+1_to_Mounted_Archer +1_to_Mounted_Archery
+qstr_Bonus_to_Riding Bonus_to_Riding
+qstr_when_equipped.__Effec when_equipped._(Effect_scales_with_Strength)
 qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
 qstr_+2_to_Tactics +2_to_Tactics
 qstr_+1_Intelligence +1_Intelligence

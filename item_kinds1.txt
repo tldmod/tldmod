@@ -123,10 +123,10 @@ itemsfile version 2
  itm_rhun_horse_f Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav2 0  65537 0 1500 16106389504 0 100 0 30 0 3 130 38 37 108 0 25 0
 0
 
- itm_rhun_horse_g Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav3 0  65537 0 1500 16106389504 0 100 0 35 0 4 160 36 36 115 0 28 0
+ itm_rhun_horse_g Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav3 0  65537 0 2000 16106389504 0 100 0 35 0 4 160 36 36 112 0 28 0
 0
 
- itm_rhun_horse_h Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav4 0  65537 0 1500 16106389504 0 100 0 35 0 4 160 36 36 115 0 28 0
+ itm_rhun_horse_h Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav4 0  1 0 2000 16106389504 0 100 0 37 0 4 160 38 40 115 0 32 0
 0
 
  itm_dale_horse Rhovanion_Horse Rhovanion_Horse 1  bry_rus_horse_ponyfied_2 0  65537 0 724 16106389504 0 100 0 16 0 2 90 35 41 92 0 12 0
@@ -2101,10 +2101,10 @@ itemsfile version 2
  itm_rhun_helm_chieftain Rhun_Chieftain_Helm Rhun_Chieftain_Helm 2  RhunHelmDeathDealer1 0  RhunHelmDeathDealer2 704643072  12 0 1500 704643072 3.5 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_warpick Rhun_War_Pick Rhun_War_Pick 1  rhun_pick 0  38996869124 9223635923965575392 300 286870 5 100 0 0 0 0 44032 86 0 108 0 256 43
+ itm_rhun_warpick Rhun_War_Pick Rhun_War_Pick 1  rhun_pick 0  38996869124 9223635923965575392 300 286870 5 100 0 0 0 0 29696 86 0 108 0 256 285
 0
 
- itm_rhun_greataxe Rhun_Great_Axe Rhun_Great_Axe 1  rhun_greataxe 0  38996869123 9223635923965575392 300 286870 6 100 0 0 0 0 44032 89 0 115 0 256 43
+ itm_rhun_greataxe Rhun_Great_Axe Rhun_Great_Axe 1  rhun_greataxe 0  38728433667 9223635923965575392 3000 286870 6 100 0 0 0 0 44032 90 0 115 0 256 43
 0
 
  itm_rhun_battleaxe Rhun_Battle_Axe Rhun_Battle_Axe 1  rhun_battle_axe 0  38996869123 9223635923965575392 300 286870 5 100 0 0 0 0 44032 86 0 108 0 256 43
@@ -2128,7 +2128,7 @@ itemsfile version 2
  itm_rhun_sword Savage_Sword Savage_Sword 1  rhun_sword 0  4259842 9223388529822793742 200 286870 2.75 100 0 0 0 0 32768 92 0 89 0 256 32
 0
 
- itm_rhun_mangler Rhun_Mangler Rhun_Mangler 1  mackie_mangler_short 0  6356995 9223635923965575392 524 286870 3 100 0 0 0 0 43008 92 0 90 0 287 42
+ itm_rhun_mangler Rhun_Mangler Rhun_Mangler 1  mackie_mangler_short 0  6356995 9223635923965575392 524 286870 3 100 0 0 0 0 28672 92 0 90 0 256 284
 0
 
  itm_dale_light_a Dale_Militia_Jacket Dale_Militia_Jacket 3  dale_light_b1 134  dale_light_b2 1  dale_light_b3 167772160  16842765 0 150 167772294 7 100 0 13 2 0 0 0 0 0 0 0 0
@@ -2387,13 +2387,13 @@ itemsfile version 2
  itm_dwarf_great_axe Dwarf_Great_Axe Dwarf_Great_Axe 3  dwarf_great_axe 0  dwarf_great_axe 0  dwarf_great_axe_2 156672  4637130755 9223635923965575392 700 156672 6 100 0 0 0 0 48128 86 0 102 0 256 47
 0
 
- itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 3  dwarf_great_mattock 0  dwarf_great_mattock 1  dwarf_war_mattock 156672  38996869123 9223635923965575392 500 156672 5 100 0 0 0 0 30720 92 0 94 0 256 286
+ itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 3  dwarf_great_mattock 0  dwarf_great_mattock 1  dwarf_war_mattock 156672  38996869123 9223635923965575392 500 156672 5 100 0 0 0 0 32768 89 0 94 0 256 288
 0
 
- itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 4  dwarf_great_pick 0  dwarf_great_pick 0  dwarf_war_pick 156672  dwarf_war_pick_old 256  38996869123 9223635923965575392 400 156672 5 100 0 0 0 0 30720 94 0 93 0 256 286
+ itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 4  dwarf_great_pick 0  dwarf_great_pick 0  dwarf_war_pick 156672  dwarf_war_pick_old 275  38996869123 9223635923965575392 400 156672 5 100 0 0 0 0 30720 94 0 90 0 256 286
 0
 
- itm_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163459 9223635923965575392 400 156672 2 100 0 0 0 0 28672 98 0 94 0 282 284
+ itm_free_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163459 9223635923965575392 400 156672 2 100 0 0 0 0 28672 98 0 94 0 282 284
 0
 
  itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 3  dwarf_mattock 1  dwarf_mattock 0  dwarf_adz 156672  272957443 9223652412881895662 200 156672 3 100 0 0 0 0 25600 103 0 52 0 256 281
