@@ -1551,16 +1551,16 @@ spr_arena_palisade_a 0 0 arena_palisade_a_new bo_arena_palisade_a_new 0
 spr_arena_palisade_a_E 0 0 arena_palisade_a 0 0
 
 
-spr_arena_barrier_a 0 0 arena_barrier_a bo_arena_barrier_a 0
+spr_arena_barrier_a 0 0 arena_barrier_a_new bo_arena_barrier_a_new 0
 
 
-spr_arena_barrier_a_E 0 0 arena_barrier_a 0 0
+spr_arena_barrier_a_E 0 0 arena_barrier_a_new 0 0
 
 
-spr_arena_barrier_b 0 0 arena_barrier_b bo_arena_barrier_bc 0
+spr_arena_barrier_b 0 0 arena_barrier_b_new bo_arena_barrier_bc_new 0
 
 
-spr_arena_barrier_b_E 0 0 arena_barrier_b 0 0
+spr_arena_barrier_b_E 0 0 arena_barrier_b_new 0 0
 
 
 spr_arena_tower_c 0 0 arena_tower_c bo_arena_tower_abc 0
@@ -3306,7 +3306,7 @@ spr_lktn_door_b 0 0 laketown_door_b bo_laketown_door 0
 spr_lktn_door_c 0 0 laketown_door_c bo_laketown_door 0
 
 
-spr_lktn_platform 0 0 esgaroth_stilts bo_esgaroth_stilts 0
+spr_lktn_platform 0 0 esgaroth_stilts bo_esgaroth_stilts_new 0
 
 
 spr_lktn_stairs 0 0 esgaroth_steps bo_esgaroth_steps 0

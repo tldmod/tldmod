@@ -938,10 +938,10 @@ scene_props = [
   ("arena_palisade_a_E",0,"arena_palisade_a","0", []),
 #("arena_wall_a",0,"arena_wall_a","bo_arena_wall_ab", []),
 #("arena_wall_b",0,"arena_wall_b","bo_arena_wall_ab", []),
-("arena_barrier_a",0,"arena_barrier_a","bo_arena_barrier_a", []),
-  ("arena_barrier_a_E",0,"arena_barrier_a","0", []),
-("arena_barrier_b",0,"arena_barrier_b","bo_arena_barrier_bc", []),
-  ("arena_barrier_b_E",0,"arena_barrier_b","0", []),
+("arena_barrier_a",0,"arena_barrier_a_new","bo_arena_barrier_a_new", []),
+  ("arena_barrier_a_E",0,"arena_barrier_a_new","0", []),
+("arena_barrier_b",0,"arena_barrier_b_new","bo_arena_barrier_bc_new", []),
+  ("arena_barrier_b_E",0,"arena_barrier_b_new","0", []),
 #("arena_barrier_c",0,"arena_barrier_c","bo_arena_barrier_bc", []),
 #("arena_tower_a",0,"arena_tower_a","bo_arena_tower_abc", []),
 #("arena_tower_b",0,"arena_tower_b","bo_arena_tower_abc", []),
@@ -1747,7 +1747,7 @@ scene_props = [
 ("lktn_door_a",0,"laketown_door_a","bo_laketown_door", []),
 ("lktn_door_b",0,"laketown_door_b","bo_laketown_door", []),
 ("lktn_door_c",0,"laketown_door_c","bo_laketown_door", []),
-("lktn_platform",0,"esgaroth_stilts","bo_esgaroth_stilts", []),
+("lktn_platform",0,"esgaroth_stilts","bo_esgaroth_stilts_new", []),
 ("lktn_stairs",0,"esgaroth_steps","bo_esgaroth_steps", []),
 
 ########## SMALL PLANTS FOR CHANGEABLE TREES #################################
