@@ -3478,7 +3478,7 @@ game_menus = [
     ("enable_kham_cheat",[],"Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
-    ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_gondor_custom"), (troop_add_item, "trp_player", "itm_uruk_spear")]),
+    ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_gondor_custom")]),
     ] or []) + [
     ("spawn_orc_horde_troll",[],"Spawn Orc Horde with Trolls",[
         (jump_to_menu, "mnu_orc_horde_troll")]),
