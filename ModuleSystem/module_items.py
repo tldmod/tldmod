@@ -871,7 +871,7 @@ items =[
 ["gundabad_armor_b","Gundabad_Orc_Fur",[("orc_gunda_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,251,weight(5)|head_armor(0)|body_armor(9)|leg_armor(6)|difficulty(0),imodbits_orc_cloth,],
 ["gundabad_armor_c","Gundabad_Orc_Armor",[("orc_gunda_c",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,901,weight(9)|head_armor(0)|body_armor(14)|leg_armor(7)|difficulty(0),imodbits_orc_armor,],
 ["gundabad_armor_d","Gundabad_Orc_Armor",[("orc_gunda_d",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1101,weight(13)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_orc_armor,],
-["gundabad_armor_e","Gundabad_Orc_Heavy_Armor",[("orc_gunda_e",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1401,weight(15)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
+["gundabad_armor_e","Gundabad_Orc_Heavy_Armor",[("orc_gunda_e",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1401,weight(15)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_orc_armor,],
 #HELMS##########
 ["gundabad_helm_a","Leather_Cap",[("orc_gunda_cap",0)],itp_type_head_armor|itp_shop,0,50,weight(1)|head_armor(12)|difficulty(0),imodbits_orc_cloth],
 ["gundabad_helm_b","Leather_Helm",[("orc_gunda_helm_a",0)],itp_type_head_armor|itp_shop,0,300,weight(2)|head_armor(18)|difficulty(0),imodbits_orc_cloth],
