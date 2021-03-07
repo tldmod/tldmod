@@ -1,12 +1,12 @@
 #Buffer_sizes
-buffer_size_regular_ffp_static = 0
-buffer_size_regular_ffp_dynamic     =  24000
-buffer_size_regular_static          = 200000
-buffer_size_regular_dynamic         =  35000
-buffer_size_skinning_static         = 150000
-buffer_size_skinning_dynamic        =      0
-buffer_size_normal_map_static       = 150000
-buffer_size_normal_map_dynamic      =  12000
+buffer_size_regular_ffp_static = 32768
+buffer_size_regular_ffp_dynamic     =  32768
+buffer_size_regular_static          = 131072
+buffer_size_regular_dynamic         =  65536
+buffer_size_skinning_static         = 131072
+buffer_size_skinning_dynamic        = 65536
+buffer_size_normal_map_static       = 131072
+buffer_size_normal_map_dynamic      =  65536
 buffer_size_dx7_regular_ffp_static  = 290000
 buffer_size_dx7_regular_ffp_dynamic =  30000
 
