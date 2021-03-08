@@ -1154,17 +1154,22 @@ scripts = [
 	(try_begin),(eq,":mount_item", "itm_warg_reward"),                      (assign, ":mount_type", 2),
 	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
 	 (else_try),(eq, ":mount_item", "itm_spider"),                          (assign, ":mount_type", 1), # Only orcs can ride spiders 
-	 (else_try),(eq, ":mount_item", "itm_pony"),                            (assign, ":mount_type", 3),
+	 (else_try),(eq, ":mount_item", "itm_pony"),                            (assign, ":mount_type", 4),
 	(try_end),
 
 	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk      3 = dwarf
 	(try_begin),(eq, ":race", tf_orc),                          (assign, ":rider_type" , 1), # non-orcs (uruks & hai included) cannot ride ordinary wargs
 	 (else_try),(is_between, ":race", tf_orc_begin, tf_orc_end),(assign, ":rider_type" , 2),
-	 (else_try),(eq, ":race", tf_dwarf),                        (assign, ":rider_type" , 3),
+	 (else_try),(eq, ":race", tf_dwarf),                        (assign, ":rider_type" , 4),
 	(try_end),
 	
 	#(assign, reg10,":rider_type"),(assign, reg12,":mount_item"),(assign, reg11,":mount_type"), (display_message, "@cazz {reg10} {reg11} (itm: {reg12})"),
-	
+    (try_begin), #orcs can ride great wargs with higher riding skill
+        (eq, ":race", tf_orc),(eq,":mount_item", "itm_warg_reward"), 
+        (store_skill_level, ":riding", skl_riding, ":trp"), (gt, ":riding", 5),
+        (assign, ":mount_type", ":rider_type"),
+    (try_end),
+    
 	(neq, ":mount_type", ":rider_type"), # non orc riding wargs, or orc riding non wargs
 ]),
 

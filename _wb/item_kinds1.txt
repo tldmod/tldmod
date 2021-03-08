@@ -1091,7 +1091,7 @@ itemsfile version 2
  itm_uruk_falchion_a Uruk_Falchion Uruk_Falchion 2  uruk_falchion_a 0  uruk_falchion_b 786432  138477571 9223652412613460206 200 786582 2.5 100 0 0 0 0 35840 103 0 74 0 256 35
 0
 
- itm_uruk_falchion_b Orc_Two_Handed_Scimitar Orc_Two_Handed_Scimitar 3  khazad_orc_bastard_scimitar_3 0  khazad_orc_bastard_scimitar_1 150  khazad_orc_bastard_scimitar_2 786432  138477571 9223652412613460206 200 786582 2.5 100 0 0 0 0 37888 96 0 90 0 256 37
+ itm_uruk_falchion_b Orc_Great_Scimitar Orc_Great_Scimitar 3  khazad_orc_bastard_scimitar_3 0  khazad_orc_bastard_scimitar_1 150  khazad_orc_bastard_scimitar_2 794624  138477571 9223652412613460206 200 786582 2.5 100 0 0 0 0 37888 96 0 90 0 256 37
 0
 
  itm_free_uruk_spear Mordor_Spear Mordor_Spear 1  uruk_spear 0  2251802099941380 9254615759470988544 300 271496 2.5 100 0 0 0 0 20480 96 0 168 0 283 532
@@ -1151,16 +1151,16 @@ itemsfile version 2
  itm_bone_cudgel Bone_Cudgel Bone_Cudgel 2  bone_cudgel 0  skull_club 786432  4407298 9223635922891833568 5 786582 2.5 100 0 0 0 0 15360 90 0 53 0 256 527
 0
 
- itm_skull_club Skull_Club Skull_Club 1  skull_club 0  4407298 9223372040101167118 5 786582 2.5 100 0 0 0 0 15360 90 0 55 0 256 527
+ itm_orc_pick Orc_Pick Orc_Pick 1  khazad_orc_pick_1 0  4276226 9223372040101167118 5 786582 2.5 100 0 0 0 0 25600 90 0 53 0 256 281
 0
 
  itm_orc_hammer Evil_Hammer Evil_Hammer 1  khazad_orc_th_hammer_1 0  34363998211 9223635922891833568 600 786582 4.5 100 0 0 0 0 30720 83 0 80 0 256 542
 0
 
- itm_orc_club_b Warg_Rider_Club Warg_Rider_Club 2  orc_club_b 0  khazad_orc_club_1 786432  138625027 9223652415566250222 350 786582 3 100 0 0 0 0 27648 85 0 77 0 256 539
+ itm_orc_club_b Warg_Rider_Club Warg_Rider_Club 2  orc_club_b 0  khazad_orc_club_1 786432  138493955 9223652415566250222 350 786582 3 100 0 0 0 0 27648 85 0 77 0 256 539
 0
 
- itm_orc_club_c Spiky_Orc_Club Spiky_Orc_Club 1  orc_club_c 0  4407298 9223372040101167119 150 786582 2.5 100 0 0 0 0 20480 85 0 70 0 281 276
+ itm_orc_club_c Spiky_Orc_Club Spiky_Orc_Club 1  orc_club_c 0  4276226 9223372040101167119 150 786582 2.5 100 0 0 0 0 20480 85 0 70 0 281 276
 0
 
  itm_orc_club_d Evil_Mace Evil_Mace 2  khazad_orc_th_club_2 0  khazad_orc_th_club_1 786432  274882101250 9223372040101167118 500 786582 3.5 100 0 0 0 0 27648 87 0 65 0 256 539
@@ -1175,7 +1175,7 @@ itemsfile version 2
  itm_orc_skull_spear Orc_Skull_Spear Orc_Skull_Spear 2  orc_skull_spear 0  uruk_skull_spear 786432  2285993988 9254615759470985472 200 786582 3 100 0 0 0 0 0 92 0 162 0 281 0
 0
 
- itm_orc_bill Orc_Bill Orc_Bill 2  orc_bill 0  uruk_voulge 786432  274825220 4222124650663424 400 786582 4.5 100 0 0 0 0 30720 83 0 122 0 268 30
+ itm_orc_bill Orc_Polearm Orc_Polearm 3  khazad_orc_th_axe_1 0  orc_bill 150  uruk_voulge 786432  274825220 4222124650663424 400 786582 4.5 100 0 0 0 0 30720 83 0 122 0 268 30
 0
 
  itm_orc_slasher Orc_Short_Sword Orc_Short_Sword 2  orc_machete 0  orc_slasher 786432  4259842 9223388529822793742 50 786582 1.5 100 0 0 0 0 23552 98 0 54 0 256 23
@@ -2257,7 +2257,7 @@ itemsfile version 2
  itm_free_umb_helm_f Corsair_Tall_Helm Corsair_Tall_Helm 1  umbar_tall_helmet_b 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_corsair_trident Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  274763780 9236601365055144192 2000 271496 4.5 100 0 0 0 12 0 94 0 166 0 291 0
+ itm_corsair_trident Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  6328324 9236601365055144192 2000 271496 4.5 100 0 0 0 12 0 107 0 166 0 298 0
 0
 
  itm_corsair_boots Corsair_Boots Corsair_Boots 1  corsair_boots 0  536940302 0 400 123731968 1 100 0 0 14 0 0 0 0 0 0 0 0
@@ -2697,7 +2697,7 @@ itemsfile version 2
  itm_dale_armor_reward Dale_Noblemen_Mail Dale_Noblemen_Mail 1  dale_reward 0  16781325 0 2000 0 25 100 4 38 15 0 0 0 0 0 0 0 0
 0
 
- itm_leather_gloves_reward Archer_Gloves Archer_Gloves 4  CWE_gloves_king_L 0  ent_hand_L 2097152  olog_hand_L 4  isen_olog_hand_L 256  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
+ itm_leather_gloves_reward Archer_Gloves Archer_Gloves 5  CWE_gloves_king_L 0  CWE_gloves_a_black_L 7  ent_hand_L 2097152  olog_hand_L 4  isen_olog_hand_L 256  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 430 251658402 4.5 100 0 9 0 0 690 95 0 70 0 0 0
@@ -2709,7 +2709,7 @@ itemsfile version 2
  itm_moria_arrow_reward Moria_Poisoned_Arrows Moria_Poisoned_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  5 1610612736 700 4398046520456 3 100 0 0 0 0 0 0 0 95 40 11 0
 0
 
- itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small_new 0  4108 0 3000 0 4 100 50 0 0 15 0 0 0 0 0 0 0
+ itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small_new 0  4108 0 3000 0 4 100 50 0 0 21 0 0 0 0 0 0 0
 0
 
  itm_black_arrows_reward Black_Arrows Black_Arrows 6  khazad_orc_arrow_2 0  khazad_orc_arrow_2.lod2 2305843009213693952  khazad_orc_arrow_2_quiver 3458764513820540928  rohan_arrow2_black 131072  rohan_arrow2_black_flying 2305843009213825024  rohan_quiver2_black 3458764513820672000  141750697989 1610612736 2000 4398046520456 3 100 0 0 0 0 0 0 0 95 25 3 0
@@ -2727,7 +2727,7 @@ itemsfile version 2
  itm_prisoner_coll_chain Prisoner_Chains Prisoner_Chains 1  prisoner_coll_chain 0  16777228 0 10 0 10 100 2 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_witchking_helmet Sorcerer's_Mask Sorcerer's_Mask 3  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  4108 0 3000 0 2.5 100 35 0 0 9 0 0 0 0 0 0 0
+ itm_witchking_helmet Sorcerer's_Mask Sorcerer's_Mask 3  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  4108 0 3000 0 2.5 100 35 0 0 18 0 0 0 0 0 0 0
 0
 
  itm_lorien_royal_armor Lorien_Royal_Armor Lorien_Royal_Armor 1  lorien_royal 0  16777229 0 5000 704643072 26 100 0 45 17 15 0 0 0 0 0 0 0

@@ -5135,14 +5135,14 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    
    
    # don't let player buy something which he cannot ride personally
-   (assign, ":cant_ride", 0),
-   (try_begin),
-    (item_get_type, ":it", ":item"),
-    (eq, ":it", itp_type_horse),
-    (call_script, "script_cf_troop_cant_ride_item","$g_player_troop",":item"), 
-    (assign, ":cant_ride", 1),
-   (try_end),
-   (neq,":cant_ride",1),
+   # (assign, ":cant_ride", 0),
+   # (try_begin),
+    # (item_get_type, ":it", ":item"),
+    # (eq, ":it", itp_type_horse),
+    # (call_script, "script_cf_troop_cant_ride_item","$g_player_troop",":item"), 
+    # (assign, ":cant_ride", 1),
+   # (try_end),
+   # (neq,":cant_ride",1),
    
    (try_begin),
      (eq, "$g_talk_troop_faction", "$players_kingdom"),
