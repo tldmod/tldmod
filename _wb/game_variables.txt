@@ -1,4 +1,4 @@
-# Initial Buffer_sizes
+# Initial Buffer_sizes 
 # Modders may adjust these large enough so that the game will not need to restore
 # buffers during the game. However keeping them excessively large will reduce performance in most systems.
 #Buffer_sizes (if smaller than 65535, this also represents the maximum vertex count for a corresponding mesh)
