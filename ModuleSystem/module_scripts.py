@@ -5023,47 +5023,65 @@ scripts = [
       (try_for_range, ":stack", 0, ":num_stacks_new"),
       	(party_stack_get_troop_id, ":stack_troop_new", "p_main_party", ":stack"),
       	(troop_is_hero, ":stack_troop_new"),
-      	(store_attribute_level, ":int", ":stack_troop_new", ca_intelligence),
-		(ge, ":int", 10),
-      	(assign, reg80, ":int"),
-      	# (store_mul, ":int_xp_bonus_multi", ":int", 10),
-      	# (assign, reg81, ":int_xp_bonus_multi"),
-      	# (val_div, ":int_xp_bonus_multi", 3),
-      	# (assign, reg82, ":int_xp_bonus_multi"),
-      	# (val_max, ":int_xp_bonus_multi", 1),
-		# (store_mul, ":int_xp_bonus", ":base_xp_share", ":int_xp_bonus_multi"),
-      	# (assign, reg83, ":int_xp_bonus"),
-      	# (val_div, ":int_xp_bonus", 100),
-      	# (assign, reg84, ":int_xp_bonus"),
-		
-		#InVain: New formula, exponential growth for much bigger effect
-		(store_sub, ":int_xp_bonus_multi", ":int", 5),
-		(val_mul, ":int_xp_bonus_multi",":int_xp_bonus_multi"), #exponential base
-		(assign, reg81, ":int_xp_bonus_multi"),
-		(val_div, ":int_xp_bonus_multi", 20), #soften growth a bit
-		(assign, reg83, ":int_xp_bonus_multi"),
-		(store_mul, ":int_xp_bonus", ":base_xp_share", ":int_xp_bonus_multi"),
-		(assign, reg84, ":int_xp_bonus"),
+        (try_begin),
+            (store_attribute_level, ":int", ":stack_troop_new", ca_intelligence),
+            (ge, ":int", 10),
+            (assign, reg80, ":int"),
+            # (store_mul, ":int_xp_bonus_multi", ":int", 10),
+            # (assign, reg81, ":int_xp_bonus_multi"),
+            # (val_div, ":int_xp_bonus_multi", 3),
+            # (assign, reg82, ":int_xp_bonus_multi"),
+            # (val_max, ":int_xp_bonus_multi", 1),
+            # (store_mul, ":int_xp_bonus", ":base_xp_share", ":int_xp_bonus_multi"),
+            # (assign, reg83, ":int_xp_bonus"),
+            # (val_div, ":int_xp_bonus", 100),
+            # (assign, reg84, ":int_xp_bonus"),
+            
+            #InVain: New formula, exponential growth for much bigger effect
+            (store_sub, ":int_xp_bonus_multi", ":int", 3),
+            (val_mul, ":int_xp_bonus_multi",":int_xp_bonus_multi"), #exponential base
+            (assign, reg81, ":int_xp_bonus_multi"),
+            (val_div, ":int_xp_bonus_multi", 40), #soften growth a bit
+            (assign, reg83, ":int_xp_bonus_multi"),
+            (store_mul, ":int_xp_bonus", ":base_xp_share", ":int_xp_bonus_multi"),
+            (assign, reg84, ":int_xp_bonus"),
 
-      	(val_max, ":int_xp_bonus", 1),
-      	(add_xp_to_troop, ":int_xp_bonus", ":stack_troop_new", ),
-      	
-      	#Debug
-      	# (try_begin),
-      		# (eq, "$cheat_mode", 1),
-	      	# (str_store_troop_name, s77, ":stack_troop_new"),
-	      	# (display_message, "@{reg79} shared XP", color_good_news),
-	      	# (display_message, "@{s77} has INT={reg80} - INT*INT={reg81}"),
-	      	# (display_message, "@{reg83} reduced INT XP multi"),
-	      	# (display_message, "@{s77} received {reg84} bonus XP", color_good_news),
-	    # (try_end),
+            (val_max, ":int_xp_bonus", 1),
+            (add_xp_to_troop, ":int_xp_bonus", ":stack_troop_new", ),
+            
+            #Debug
+            # (try_begin),
+                # (eq, "$cheat_mode", 1),
+                # (str_store_troop_name, s77, ":stack_troop_new"),
+                #(display_message, "@{reg79} shared XP", color_good_news),
+                # (display_message, "@{s77} has INT={reg80} - INT*INT={reg81}"),
+                # (display_message, "@{reg83} reduced INT XP multi"),
+                # (display_message, "@{s77} received {reg84} bonus XP", color_good_news),
+            # (try_end),
 
-	    (try_begin),
-	    	(eq, ":stack_troop_new", "trp_player"),
-	    	(gt, ":int_xp_bonus", 50), #don't inform about peanuts
-	    	(display_message, "@You gained {reg84} experience from your intelligence."),
-	    (try_end),
+            (try_begin),
+                (eq, ":stack_troop_new", "trp_player"),
+                (gt, ":int_xp_bonus", 50), #don't inform about peanuts
+                (display_message, "@You gained {reg84} experience from your intelligence."),
+            (try_end),
+        (try_end),
 
+        #agility wp bonus
+        (try_begin),
+            (store_attribute_level, ":agi", ":stack_troop_new", ca_agility),
+            (ge, ":agi", 12),
+            (store_sub, ":agi_wp_bonus_multi", ":agi", 3),
+            (val_mul, ":agi_wp_bonus_multi",":agi_wp_bonus_multi"), #exponential base
+            (store_mul, ":agi_wp_bonus", ":base_xp_share", ":agi_wp_bonus_multi"),
+            (val_div, ":agi_wp_bonus", 1000),
+            (troop_add_proficiency_points, ":stack_troop_new", ":agi_wp_bonus"),
+            (assign, reg84, ":agi_wp_bonus"),
+            
+            (try_begin),
+                (eq, ":stack_troop_new", "trp_player"),
+                (display_message, "@You gained {reg84} weapon points from your agility."),
+            (try_end),
+        (try_end),
       (try_end),
       
       # TLD - XP Bonus for INT Characters END

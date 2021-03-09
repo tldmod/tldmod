@@ -193,8 +193,8 @@ qstr_nothing nothing
 qstr_Good Good
 qstr_Med Med
 qstr_Bad Bad
-qstr_{reg79}_shared_XP {reg79}_shared_XP
 qstr_You_gained_{reg84}_e You_gained_{reg84}_experience_from_your_intelligence.
+qstr_You_gained_{reg84}_w You_gained_{reg84}_weapon_points_from_your_agility.
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
 qstr_{reg4}_killed_{reg5}_ {reg4}_killed,_{reg5}_wounded
 qstr_{reg4}_killed_{reg5}_r {reg4}_killed,_{reg5}_routed
