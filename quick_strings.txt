@@ -1,4 +1,4 @@
-1643
+1644
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -193,6 +193,7 @@ qstr_nothing nothing
 qstr_Good Good
 qstr_Med Med
 qstr_Bad Bad
+qstr_{reg79}_shared_XP {reg79}_shared_XP
 qstr_You_gained_{reg84}_e You_gained_{reg84}_experience_from_your_intelligence.
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
 qstr_{reg4}_killed_{reg5}_ {reg4}_killed,_{reg5}_wounded

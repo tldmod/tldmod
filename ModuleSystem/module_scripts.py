@@ -4933,6 +4933,7 @@ scripts = [
         (try_for_range, ":cur_goods", ":range_min", ":range_max"),
           (store_add, ":cur_price_slot", ":cur_goods", ":item_to_price_slot"),
           (party_get_slot, ":cur_price", "$g_enemy_party", ":cur_price_slot"),
+          (val_max, ":cur_price", 1), #Avoid division by zero
           (assign, ":cur_probability", 100),
           (val_mul, ":cur_probability", average_price_factor),
           (val_div, ":cur_probability", ":cur_price"),
