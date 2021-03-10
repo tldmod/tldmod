@@ -1522,7 +1522,7 @@ ws_alone_vp   = 20  # for hero-led parties (bodyguards only).
 ws_host_vp    = 80  # for hero-led parties (hosts). strength about 1000
 ws_p_train_vp = 30  # strength 150-250
 ws_center_vp  = 100 # loss of center
-ws_guard_vp   = 1850 # guardian party, spawned when str<500, so it can be used to defeat a faction
+ws_guard_vp   = 1850 # guardian party, spawned when str<1300, so it can be used to defeat a faction
 
 # Center strength daily incomes (slot_center_strength_income), for easy mass tweaking
 str_income_none = 0
