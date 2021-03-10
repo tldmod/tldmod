@@ -7034,10 +7034,10 @@ scripts = [
             (assign, ":quest_expiration_days", 7),
             (assign, ":quest_dont_give_again_period", 7),
           (try_end),
-        (else_try),          #mtarini: Saruman and Fuinur want a troll be captured
+        (else_try),          #mtarini: Saruman wants a troll be captured
           (eq, ":quest_no", "qst_capture_troll"),
 		  (try_begin),
-			(this_or_next|eq, ":giver_troop", "trp_isengard_lord"),  # Saruman and Fuinur could give this quest
+			(this_or_next|eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest
 			(eq, ":giver_troop", "trp_guldur_lord"),
 			(ge, ":player_level", 7),
 			(assign, ":quest_object_faction", ":giver_faction_no"),
