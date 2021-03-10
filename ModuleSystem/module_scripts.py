@@ -1150,14 +1150,14 @@ scripts = [
     (troop_get_type, ":race", ":trp"),
 	
 	
-	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  3 = pony
+	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  4 = pony
 	(try_begin),(eq,":mount_item", "itm_warg_reward"),                      (assign, ":mount_type", 2),
 	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
 	 (else_try),(eq, ":mount_item", "itm_spider"),                          (assign, ":mount_type", 1), # Only orcs can ride spiders 
 	 (else_try),(eq, ":mount_item", "itm_pony"),                            (assign, ":mount_type", 4),
 	(try_end),
 
-	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk      3 = dwarf
+	(assign, ":rider_type", 0), # 0 = human   1 = orc,   2 = uruk      4 = dwarf
 	(try_begin),(eq, ":race", tf_orc),                          (assign, ":rider_type" , 1), # non-orcs (uruks & hai included) cannot ride ordinary wargs
 	 (else_try),(is_between, ":race", tf_orc_begin, tf_orc_end),(assign, ":rider_type" , 2),
 	 (else_try),(eq, ":race", tf_dwarf),                        (assign, ":rider_type" , 4),
