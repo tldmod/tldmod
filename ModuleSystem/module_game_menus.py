@@ -5905,7 +5905,8 @@ game_menus = [
 		(try_begin),
 			(faction_slot_eq,"$players_kingdom", slot_faction_side, faction_side_good),
 			(eq|this_or_next, ":item_id", "itm_human_meat"),
-			(eq, ":item_id", "itm_maggoty_bread"),
+            (eq|this_or_next, ":item_id", "itm_maggoty_bread"),
+			(is_between, ":item_id", "itm_troll_weapon_long", "itm_warg_ghost_lance"), #just in case
         		(troop_remove_item, "trp_temp_troop", ":item_id"),
 		(try_end),
 	  (try_end),

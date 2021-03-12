@@ -1086,7 +1086,8 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   hp_shield_init,
   hp_shield_trigger,
 
-  ] or [] ) + [
+  ] + tld_bow_shield
+  or [] ) + [
 	#tld_fix_viewpoint,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,

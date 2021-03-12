@@ -1228,7 +1228,7 @@ items =[
 ["corsair_harpoon","Corsair_Harpoon",[("corsair_harpoon",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_javelin|itcf_show_holster_when_drawn,200,weight(4)|difficulty(0)|shoot_speed(27)|spd_rtng(85)|weapon_length(87)|thrust_damage(63,pierce)|accuracy(86)|max_ammo(2),imodbits_thrown,[] ],
 ["corsair_sword","Corsair_Eket",[("corsair_sword",0),("scab_corsair_sword",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,300,weight(1.5)|difficulty(0)|spd_rtng(113)|weapon_length(53)|swing_damage(24,cut)|thrust_damage(28,pierce),imodbits_weapon_bad],
 ["corsair_throwing_dagger","Crooked_Throwing_Daggers",[("corsair_throwing_dagger",0)],itp_type_thrown|itp_shop|itp_primary|0,itcf_throw_knife,250,weight(3.5)|difficulty(0)|shoot_speed(24)|spd_rtng(110)|weapon_length(0)|thrust_damage(30,cut)|max_ammo(10),imodbits_thrown],
-["umbar_pike","Corsair_Trident",[("corsair_trident_b",0)],itp_type_polearm|itp_shop|itp_primary|itp_cant_use_on_horseback|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_spear_upstab,400,weight(3)|difficulty(9)|spd_rtng(81)|weapon_length(175)|thrust_damage(39,cut),imodbits_weapon_wood],
+["umbar_pike","Corsair_Trident",[("corsair_trident_b",0)],itp_type_polearm|itp_shop|itp_primary|itp_cant_use_on_horseback|itp_spear|itp_penalty_with_shield|itp_no_blur|itp_wooden_parry,itc_lance_upstab,400,weight(3)|difficulty(9)|spd_rtng(81)|weapon_length(175)|thrust_damage(39,cut),imodbits_weapon_wood],
 #
 #TLD NORTHMENMEN ITEMS##########
 ######ARMOR##########

@@ -1,4 +1,4 @@
-1883
+1884
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_191_wb__dev_^_B _rev_191_wb_|_dev_^_Built_2021-03-08_16:35___
+qstr__rev_196_wb__dev_^_B _rev_196_wb_|_dev_^_Built_2021-03-12_20:37___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -275,6 +275,7 @@ qstr_Good Good
 qstr_Med Med
 qstr_Bad Bad
 qstr_You_gained_{reg84}_e You_gained_{reg84}_experience_from_your_intelligence.
+qstr_You_gained_{reg84}_w You_gained_{reg84}_weapon_points_from_your_agility.
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
 qstr_{reg4}_killed_{reg5}_ {reg4}_killed,_{reg5}_wounded
 qstr_{reg4}_killed_{reg5}_r {reg4}_killed,_{reg5}_routed
