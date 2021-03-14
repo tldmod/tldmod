@@ -16912,9 +16912,9 @@ scripts = [
         (troop_set_slot, "trp_npc1", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
         (troop_set_slot, "trp_npc1", slot_troop_personalitymatch_object, "trp_npc6"),  #Luevanna
         (troop_set_slot, "trp_npc1", slot_troop_home, "p_town_west_osgiliath"),
-        (troop_set_slot, "trp_npc1", slot_troop_payment_request, 2000 / companionPriceMult ),
+        (troop_set_slot, "trp_npc1", slot_troop_payment_request, 2500 / companionPriceMult ),
         (troop_set_slot, "trp_npc1", slot_troop_cur_center, "p_town_henneth_annun"),  #TLD
-        (troop_set_slot, "trp_npc1", slot_troop_rank_request, 3),  #TLD
+        (troop_set_slot, "trp_npc1", slot_troop_rank_request, 4),  #TLD
 
         # Cirdil
         (troop_set_slot, "trp_npc2", slot_troop_morality_type, tmt_egalitarian),
@@ -16925,9 +16925,9 @@ scripts = [
         (troop_set_slot, "trp_npc2", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
         (troop_set_slot, "trp_npc2", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung
         (troop_set_slot, "trp_npc2", slot_troop_home, "p_town_minas_morgul"),
-        (troop_set_slot, "trp_npc2", slot_troop_payment_request, 100 / companionPriceMult ), 
+        (troop_set_slot, "trp_npc2", slot_troop_payment_request, 300 / companionPriceMult ), 
         (troop_set_slot, "trp_npc2", slot_troop_cur_center, "p_town_minas_tirith"),  #TLD
-        (troop_set_slot, "trp_npc2", slot_troop_rank_request, 0),  #TLD
+        (troop_set_slot, "trp_npc2", slot_troop_rank_request, 1),  #TLD
 
         # Ulfas
         (troop_set_slot, "trp_npc3", slot_troop_morality_type, tmt_aristocratic),
@@ -16938,9 +16938,9 @@ scripts = [
         (troop_set_slot, "trp_npc3", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
         (troop_set_slot, "trp_npc3", slot_troop_personalitymatch_object, "trp_npc4"),  #Gálmynë
         (troop_set_slot, "trp_npc3", slot_troop_home, "p_ford_fangorn"),
-        (troop_set_slot, "trp_npc3", slot_troop_payment_request, 1200 / companionPriceMult), 
+        (troop_set_slot, "trp_npc3", slot_troop_payment_request, 700 / companionPriceMult), 
         (troop_set_slot, "trp_npc3", slot_troop_cur_center, "p_town_hornburg"),  #TLD
-        (troop_set_slot, "trp_npc3", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc3", slot_troop_rank_request, 2),  #TLD
 
         # Gálmynë
         (troop_set_slot, "trp_npc4", slot_troop_morality_type, tmt_aristocratic),
@@ -16977,9 +16977,9 @@ scripts = [
         (troop_set_slot, "trp_npc6", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
         (troop_set_slot, "trp_npc6", slot_troop_personalitymatch_object, "trp_npc5"),  #Glorfindel
         (troop_set_slot, "trp_npc6", slot_troop_home, "p_town_dol_guldur"),
-        (troop_set_slot, "trp_npc6", slot_troop_payment_request, 100 / companionPriceMult),
+        (troop_set_slot, "trp_npc6", slot_troop_payment_request, 1000 / companionPriceMult),
         (troop_set_slot, "trp_npc6", slot_troop_cur_center, "p_town_thranduils_halls"),  #TLD
-        (troop_set_slot, "trp_npc6", slot_troop_rank_request, 0),  #TLD
+        (troop_set_slot, "trp_npc6", slot_troop_rank_request, 3),  #TLD
 
         # Kíli
         (troop_set_slot, "trp_npc7", slot_troop_morality_type, tmt_aristocratic),
@@ -16992,7 +16992,7 @@ scripts = [
         (troop_set_slot, "trp_npc7", slot_troop_home, "p_town_moria"),
         (troop_set_slot, "trp_npc7", slot_troop_payment_request, 800 / companionPriceMult ),
         (troop_set_slot, "trp_npc7", slot_troop_cur_center, "p_town_erebor"),  #TLD
-        (troop_set_slot, "trp_npc7", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc7", slot_troop_rank_request, 2),  #TLD
 
         # Faniul
         (troop_set_slot, "trp_npc8", slot_troop_morality_type, tmt_egalitarian),
@@ -17003,9 +17003,9 @@ scripts = [
         (troop_set_slot, "trp_npc8", slot_troop_personalityclash2_object, "trp_npc10"),  #Durgash/none
         (troop_set_slot, "trp_npc8", slot_troop_personalitymatch_object, "trp_npc7"),  #Kíli
         (troop_set_slot, "trp_npc8", slot_troop_home, "p_town_beorn_house"),
-        (troop_set_slot, "trp_npc8", slot_troop_payment_request, 300 / companionPriceMult),
+        (troop_set_slot, "trp_npc8", slot_troop_payment_request, 1000 / companionPriceMult),
         (troop_set_slot, "trp_npc8", slot_troop_cur_center, "p_town_dale"),  #TLD
-        (troop_set_slot, "trp_npc8", slot_troop_rank_request, 0),  #TLD
+        (troop_set_slot, "trp_npc8", slot_troop_rank_request, 3),  #TLD
 
 #evil companions
         # Gulm
@@ -17019,7 +17019,7 @@ scripts = [
         (troop_set_slot, "trp_npc9", slot_troop_home, "p_town_hornburg"),
         (troop_set_slot, "trp_npc9", slot_troop_payment_request, 2000 / companionPriceMult),
         (troop_set_slot, "trp_npc9", slot_troop_cur_center, "p_town_urukhai_h_camp"),  #TLD
-        (troop_set_slot, "trp_npc9", slot_troop_rank_request, 3),  #TLD
+        (troop_set_slot, "trp_npc9", slot_troop_rank_request, 4),  #TLD
 
         # Durgash
         (troop_set_slot, "trp_npc10", slot_troop_morality_type, -1),
@@ -17032,7 +17032,7 @@ scripts = [
         (troop_set_slot, "trp_npc10", slot_troop_home, -1),
         (troop_set_slot, "trp_npc10", slot_troop_payment_request, 800 / companionPriceMult),
         (troop_set_slot, "trp_npc10", slot_troop_cur_center, "p_town_isengard"),  #TLD
-        (troop_set_slot, "trp_npc10", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc10", slot_troop_rank_request, 2),  #TLD
 
         # Ufthak
         (troop_set_slot, "trp_npc11", slot_troop_morality_type, -1),
@@ -17058,7 +17058,7 @@ scripts = [
         (troop_set_slot, "trp_npc12", slot_troop_home, -1),
         (troop_set_slot, "trp_npc12", slot_troop_payment_request, 1800 / companionPriceMult),
         (troop_set_slot, "trp_npc12", slot_troop_cur_center, "p_town_minas_morgul"),  #TLD
-        (troop_set_slot, "trp_npc12", slot_troop_rank_request, 3),  #TLD
+        (troop_set_slot, "trp_npc12", slot_troop_rank_request, 4),  #TLD
 
         # Lykyada
         (troop_set_slot, "trp_npc13", slot_troop_morality_type, -1),
@@ -17071,7 +17071,7 @@ scripts = [
         (troop_set_slot, "trp_npc13", slot_troop_home, -1),
         (troop_set_slot, "trp_npc13", slot_troop_payment_request, 4000 / companionPriceMult),
         (troop_set_slot, "trp_npc13", slot_troop_cur_center, "p_town_harad_camp"),  #TLD
-        (troop_set_slot, "trp_npc13", slot_troop_rank_request, 5),  #TLD
+        (troop_set_slot, "trp_npc13", slot_troop_rank_request, 6),  #TLD
 
         # Fuldimir
         (troop_set_slot, "trp_npc14", slot_troop_morality_type, -1),
@@ -17082,9 +17082,9 @@ scripts = [
         (troop_set_slot, "trp_npc14", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc14", slot_troop_personalitymatch_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc14", slot_troop_home, -1),
-        (troop_set_slot, "trp_npc14", slot_troop_payment_request, 300 / companionPriceMult),
+        (troop_set_slot, "trp_npc14", slot_troop_payment_request, 400 / companionPriceMult),
         (troop_set_slot, "trp_npc14", slot_troop_cur_center, "p_town_umbar_camp"),  #TLD
-        (troop_set_slot, "trp_npc14", slot_troop_rank_request, 0),  #TLD
+        (troop_set_slot, "trp_npc14", slot_troop_rank_request, 1),  #TLD
 
         # Bolzog
         (troop_set_slot, "trp_npc15", slot_troop_morality_type, tmt_egalitarian),
@@ -17095,9 +17095,9 @@ scripts = [
         (troop_set_slot, "trp_npc15", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc15", slot_troop_personalitymatch_object, "trp_npc1"), #Mablung/none
         (troop_set_slot, "trp_npc15", slot_troop_home, -1),
-        (troop_set_slot, "trp_npc15", slot_troop_payment_request, 500 / companionPriceMult),
+        (troop_set_slot, "trp_npc15", slot_troop_payment_request, 700 / companionPriceMult),
         (troop_set_slot, "trp_npc15", slot_troop_cur_center, "p_town_moria"),  #TLD
-        (troop_set_slot, "trp_npc15", slot_troop_rank_request, 1),  #TLD
+        (troop_set_slot, "trp_npc15", slot_troop_rank_request, 2),  #TLD
 
         # Varfang
         (troop_set_slot, "trp_npc16", slot_troop_morality_type, -1),
@@ -17108,7 +17108,7 @@ scripts = [
         (troop_set_slot, "trp_npc16", slot_troop_personalityclash2_object, "trp_npc2"), #Cirdil/none
         (troop_set_slot, "trp_npc16", slot_troop_personalitymatch_object, "trp_npc1"),  #Mablung/none
         (troop_set_slot, "trp_npc16", slot_troop_home, -1),
-        (troop_set_slot, "trp_npc16", slot_troop_payment_request, 1200 / companionPriceMult),
+        (troop_set_slot, "trp_npc16", slot_troop_payment_request, 800 / companionPriceMult),
         (troop_set_slot, "trp_npc16", slot_troop_cur_center, "p_town_rhun_main_camp"),  #TLD
         (troop_set_slot, "trp_npc16", slot_troop_rank_request, 2),  #TLD
 
@@ -17124,7 +17124,7 @@ scripts = [
         (troop_set_slot, "trp_npc17", slot_troop_home, "p_town_cerin_dolen"),
         (troop_set_slot, "trp_npc17", slot_troop_payment_request, 400 / companionPriceMult ),
         (troop_set_slot, "trp_npc17", slot_troop_cur_center, "p_town_woodsmen_village"),  #TLD
-        (troop_set_slot, "trp_npc17", slot_troop_rank_request, 0),  #TLD
+        (troop_set_slot, "trp_npc17", slot_troop_rank_request, 1),  #TLD
 
 # New Companions
 	    # Turmbathu
@@ -17138,7 +17138,7 @@ scripts = [
 	    (troop_set_slot, "trp_npc18", slot_troop_home, "p_legend_amonhen"),
 	    (troop_set_slot, "trp_npc18", slot_troop_payment_request, 1500 / companionPriceMult ),
 	    (troop_set_slot, "trp_npc18", slot_troop_cur_center, "p_town_khand_camp"),  #TLD
-	    (troop_set_slot, "trp_npc18", slot_troop_rank_request, 4),  #TLD
+	    (troop_set_slot, "trp_npc18", slot_troop_rank_request, 3),  #TLD
 
 	    # Heidrek
 	    (troop_set_slot, "trp_npc19", slot_troop_morality_type, tmt_egalitarian),
@@ -17151,7 +17151,7 @@ scripts = [
 	    (troop_set_slot, "trp_npc19", slot_troop_home, "p_town_edoras"),
 	    (troop_set_slot, "trp_npc19", slot_troop_payment_request, 800 / companionPriceMult ),
 	    (troop_set_slot, "trp_npc19", slot_troop_cur_center, "p_town_dunland_camp"),  #TLD
-	    (troop_set_slot, "trp_npc19", slot_troop_rank_request, 3),  #TLD
+	    (troop_set_slot, "trp_npc19", slot_troop_rank_request, 2),  #TLD
 
 	    # Zigûrphel
 	    (troop_set_slot, "trp_npc20", slot_troop_morality_type, tmt_honest),
@@ -17162,7 +17162,7 @@ scripts = [
 	    (troop_set_slot, "trp_npc20", slot_troop_personalityclash2_object, "trp_npc14"),  #Fuldimir
 	    (troop_set_slot, "trp_npc20", slot_troop_personalitymatch_object, "trp_npc15"),  #Bolzog
 	    (troop_set_slot, "trp_npc20", slot_troop_home, "p_town_erebor"),
-	    (troop_set_slot, "trp_npc20", slot_troop_payment_request, 2000 / companionPriceMult ),
+	    (troop_set_slot, "trp_npc20", slot_troop_payment_request, 2500 / companionPriceMult ),
 	    (troop_set_slot, "trp_npc20", slot_troop_cur_center, "p_town_dol_guldur"),  #TLD
 	    (troop_set_slot, "trp_npc20", slot_troop_rank_request, 5),  #TLD
 
