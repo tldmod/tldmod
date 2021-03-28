@@ -2942,7 +2942,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (check_quest_succeeded, "qst_blank_quest_04"),
     (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
     ],
-"Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.", "lord_generic_mission_completed",[
+"Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.", "lord_generic_mission_completed",[
     (call_script, "script_finish_quest", "qst_blank_quest_04", 100),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
     ]],
@@ -6374,7 +6374,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
     (str_store_string, s5, "@{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to challenge and defeat {reg22} {s6}."),
   (else_try),
-    (str_store_string, s5, "@{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!"),
+    (str_store_string, s5, "@{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superior force!"),
   (try_end),],
  "{s5}", "lord_mission_told_kill_quest_targeted",[]],
 

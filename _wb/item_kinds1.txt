@@ -384,7 +384,7 @@ itemsfile version 2
  itm_lance Lance Lance 1  spear_d_2-8m 0  2286256132 201326848 200 271496 2.5 100 0 0 0 0 0 88 0 180 0 282 0
 0
 
- itm_tab_shield_small_round_b Round_Cavalry_Shield Round_Cavalry_Shield 1  tableau_shield_small_round_1 0  327687 5100273664 200 251658402 2.5 100 0 5 0 0 370 103 0 40 0 0 0
+ itm_tab_shield_small_round_b Round_Cavalry_Shield Round_Cavalry_Shield 1  tableau_shield_small_round_1 0  327687 5100273664 200 251658402 2 100 0 13 0 0 200 98 0 33 0 0 0
 1
 -50  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 326 8 1224979098644774912 1224979098644774913 
 
@@ -505,10 +505,10 @@ itemsfile version 2
  itm_free_arnor_splinted Arnorian_Splinted_Greaves Arnorian_Splinted_Greaves 1  narf_splinted_greaves_nospurs 0  69390 0 1200 704643072 3.5 100 0 0 28 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_shield_a Arnor_Shield Arnor_Shield 1  arnor_shield_inf 0  327687 5100273664 400 771751936 2 100 0 14 0 0 380 100 0 50 0 0 0
+ itm_arnor_shield_a Arnor_Shield Arnor_Shield 1  arnor_shield_inf 0  327687 5100273664 400 771751936 2 100 0 17 0 3 340 87 0 45 0 0 0
 0
 
- itm_arnor_shield_c Arnor_Cavalry_Shield Arnor_Cavalry_Shield 1  arnor_cav_shield 0  327687 5100273664 400 771751936 2 100 0 14 0 0 380 100 0 50 0 0 0
+ itm_arnor_shield_c Arnor_Cavalry_Shield Arnor_Cavalry_Shield 1  arnor_cav_shield 0  327687 5100273664 400 771751936 2 100 0 20 0 1 280 89 0 30 0 0 0
 0
 
  itm_free_arnor_shield_b Arnor_Shield Arnor_Shield 1  arnor_shield_inf_b 0  327687 5100273664 400 771751936 2 100 0 14 0 0 380 100 0 50 0 0 0
@@ -541,10 +541,10 @@ itemsfile version 2
  itm_riv_tiara Elf_Lord_Tiara Elf_Lord_Tiara 1  tiara 0  16781324 0 3000 0 2.5 100 60 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_riv_shield_a Rivendell_Shield Rivendell_Shield 2  riv_inf_shield_b 0  riv_inf_shield 771751936  268763143 4831838208 700 771751936 2.5 100 0 20 0 0 1000 85 0 82 0 0 0
+ itm_riv_shield_a Rivendell_Shield Rivendell_Shield 2  riv_inf_shield_b 0  riv_inf_shield 771751936  268763143 4831838208 700 771751936 2.5 100 0 16 0 3 340 85 0 60 0 0 0
 0
 
- itm_riv_shield_b Rivendell_Shield Rivendell_Shield 2  riv_cav_shield_b 0  riv_cav_shield 771751936  327687 5100273664 600 771751936 2 100 0 13 0 0 800 92 0 60 0 0 0
+ itm_riv_shield_b Rivendell_Shield Rivendell_Shield 2  riv_cav_shield_b 0  riv_cav_shield 771751936  327687 5100273664 600 771751936 2 100 0 19 0 1 290 95 0 40 0 0 0
 0
 
  itm_riv_bas_sword Rivendell_Bastard_Sword Rivendell_Bastard_Sword 2  rivendell_handandahalf1 0  scab_rivendell_handandahalf1 3458764513820540928  4259843 9223635954298781951 294 156672 2.25 100 0 0 0 0 37888 110 0 105 0 282 37
@@ -829,34 +829,34 @@ itemsfile version 2
  itm_lossarnach_greaves Lossarnach_Greaves Lossarnach_Greaves 1  lossarnach_greaves 0  69390 0 800 704643072 3 100 0 0 23 0 0 0 0 0 0 0 0
 0
 
- itm_gondor_shield_a Gondor_Square_Shield Gondor_Square_Shield 1  gondor_square_shield 0  268763143 4831838208 600 251658402 3 100 0 12 0 0 480 82 0 84 0 0 0
+ itm_gondor_shield_a Gondor_Square_Shield Gondor_Square_Shield 1  gondor_square_shield 0  268763143 4831838208 600 251658402 4.5 100 0 20 0 5 340 82 0 60 0 0 0
 0
 
- itm_gondor_shield_b Gondor_Kite_Shield Gondor_Kite_Shield 1  gondor_point_shield 0  327687 4831838208 400 251658402 2.5 100 0 12 0 0 480 82 0 70 0 0 0
+ itm_gondor_shield_b Gondor_Kite_Shield Gondor_Kite_Shield 1  gondor_point_shield 0  327687 4831838208 400 251658402 2.5 100 0 16 0 4 320 82 0 60 0 0 0
 0
 
- itm_gondor_shield_c Gondor_Tower_Shield Gondor_Tower_Shield 1  gondor_tower_shield 0  268763143 4831838208 500 251658402 3 100 0 12 0 0 480 82 0 90 0 0 0
+ itm_gondor_shield_c Gondor_Tower_Shield Gondor_Tower_Shield 1  gondor_tower_shield 0  268763143 4831838208 500 251658402 3.5 100 0 14 0 3 320 82 0 70 0 0 0
 0
 
- itm_gondor_shield_d Gondor_Kite_Shield Gondor_Kite_Shield 1  gondorian_kite_shield 0  327687 4831838208 400 251658402 2.5 100 0 12 0 0 480 82 0 70 0 0 0
+ itm_gondor_shield_d Gondor_Kite_Shield Gondor_Kite_Shield 1  gondorian_kite_shield 0  327687 4831838208 400 251658402 2.5 100 0 17 0 1 290 90 0 40 0 0 0
 0
 
- itm_gondor_shield_e Gondor_Citadel_Shield Gondor_Citadel_Shield 1  denethor_shield 0  262151 4831838208 1000 771751936 2.5 100 0 16 0 0 480 92 0 90 0 0 0
+ itm_gondor_shield_e Gondor_Citadel_Shield Gondor_Citadel_Shield 1  denethor_shield 0  262151 4831838208 1000 771751936 2.5 100 0 25 0 3 300 90 0 60 0 0 0
 0
 
- itm_gon_tab_shield_a Heraldic_Gondor_Round_Shield Heraldic_Gondor_Round_Shield 1  tableau_shield_round 0  327687 5100273664 200 251658402 2 100 0 3 0 0 310 105 0 40 0 0 0
+ itm_gon_tab_shield_a Heraldic_Gondor_Round_Shield Heraldic_Gondor_Round_Shield 1  tableau_shield_round 0  327687 5100273664 200 251658402 2 100 0 13 0 0 280 92 0 40 0 0 0
 1
 -50  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 331 11 1224979098644774912 1224979098644774913 
 
- itm_gon_tab_shield_b Heraldic_Gondor_Square_Shield Heraldic_Gondor_Square_Shield 1  tableau_shield_square 0  268763143 6442450944 200 251658402 4.5 100 0 2 0 0 760 81 0 84 0 0 0
+ itm_gon_tab_shield_b Heraldic_Gondor_Square_Shield Heraldic_Gondor_Square_Shield 1  tableau_shield_square 0  268763143 6442450944 200 251658402 4.5 100 0 20 0 5 340 82 0 60 0 0 0
 1
 -50  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 334 12 1224979098644774912 1224979098644774913 
 
- itm_gon_tab_shield_c Heraldic_Gondor_Kite_Shield Heraldic_Gondor_Kite_Shield 1  tableau_shield_kite 0  327687 4831838208 400 251658402 2.5 100 0 16 0 0 370 100 0 40 0 0 0
+ itm_gon_tab_shield_c Heraldic_Gondor_Kite_Shield Heraldic_Gondor_Kite_Shield 1  tableau_shield_kite 0  327687 4831838208 400 251658402 2.5 100 0 17 0 1 290 90 0 40 0 0 0
 1
 -50  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 332 13 1224979098644774912 1224979098644774913 
 
- itm_gon_tab_shield_d Heraldic_Gondor_Tower_Shield Heraldic_Gondor_Tower_Shield 1  tableau_shield_tower 0  268763143 4831838208 300 251658402 3.5 100 0 9 0 0 510 87 0 90 0 0 0
+ itm_gon_tab_shield_d Heraldic_Gondor_Tower_Shield Heraldic_Gondor_Tower_Shield 1  tableau_shield_tower 0  268763143 4831838208 300 251658402 3.5 100 0 14 0 4 320 82 0 70 0 0 0
 1
 -50  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 333 14 1224979098644774912 1224979098644774913 
 
@@ -941,13 +941,13 @@ itemsfile version 2
  itm_lorien_boots Lothlorien_Boots Lothlorien_Boots 1  lorien_boots 0  69390 0 1100 251658240 1 100 0 0 22 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_shield_b Lorien_Tower_Shield Lorien_Tower_Shield 1  lorien_kite 0  268763143 4831838208 700 771751936 2 100 0 20 0 0 1000 82 0 90 0 0 0
+ itm_lorien_shield_b Lorien_Tower_Shield Lorien_Tower_Shield 1  lorien_kite 0  268763143 4831838208 700 771751936 2 100 0 15 0 4 330 82 0 70 0 0 0
 0
 
- itm_lorien_shield_c Lorien_Kite_Shield Lorien_Kite_Shield 1  lorien_kite_small 0  327687 5100273664 500 771751936 2 100 0 18 0 0 800 92 0 70 0 0 0
+ itm_lorien_shield_c Lorien_Kite_Shield Lorien_Kite_Shield 1  lorien_kite_small 0  327687 5100273664 500 771751936 2 100 0 18 0 2 290 90 0 60 0 0 0
 0
 
- itm_lorien_round_shield Lorien_Round_Shield Lorien_Round_Shield 1  lorien_round_shield 0  327687 5100273664 400 771751936 1 100 0 15 0 0 700 96 0 50 0 0 0
+ itm_lorien_round_shield Lorien_Round_Shield Lorien_Round_Shield 1  lorien_round_shield 0  327687 5100273664 400 771751936 1 100 0 15 0 1 300 92 0 40 0 0 0
 0
 
  itm_lorien_helm_a Lorien_Archer_Helm Lorien_Archer_Helm 1  lorienhelmetarcherlow 0  65548 0 1300 704643072 1 100 35 0 0 0 0 0 0 0 0 0 0
@@ -1133,13 +1133,13 @@ itemsfile version 2
  itm_isengard_pike Isengard_Pike Isengard_Pike 1  isengard_pike 0  2251800088772612 4222124851987200 500 786582 3.5 100 0 0 0 0 16384 92 0 226 0 282 528
 0
 
- itm_isen_orc_shield_a Isen_Orc_Shield Isen_Orc_Shield 1  isen_orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 6 0 0 310 96 0 40 0 0 0
+ itm_isen_orc_shield_a Isen_Orc_Shield Isen_Orc_Shield 1  isen_orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 15 0 1 240 88 0 30 0 0 0
 0
 
- itm_isen_orc_shield_b Isen_Orc_Shield Isen_Orc_Shield 1  isen_orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 6 0 0 310 96 0 40 0 0 0
+ itm_isen_orc_shield_b Isen_Orc_Shield Isen_Orc_Shield 1  isen_orc_shield_b 0  327687 5100273664 200 251658402 3 100 0 15 0 1 240 88 0 30 0 0 0
 0
 
- itm_isen_uruk_shield_b Isen_Uruk_Shield Isen_Uruk_Shield 1  isen_uruk_shield_b 0  327687 4831838208 200 251658402 4 100 0 4 0 0 600 76 0 81 0 0 0
+ itm_isen_uruk_shield_b Isen_Uruk_Shield Isen_Uruk_Shield 1  isen_uruk_shield_b 0  327687 4831838208 450 251658402 4 100 0 17 0 3 300 82 0 45 0 0 0
 0
 
  itm_wood_club Wooden_Club Wooden_Club 1  orc_club_a 0  4653058 9223388532775583758 5 786582 2.5 100 0 0 0 0 20480 90 0 62 0 512 532
@@ -1205,46 +1205,46 @@ itemsfile version 2
  itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 200 525450 1.25 100 0 0 74 0 0 86 53 0 0 20 0
 0
 
- itm_orc_shield_a Orc_Shield Orc_Shield 1  orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 2 0 0 100 96 0 40 0 0 0
+ itm_orc_shield_a Orc_Shield Orc_Shield 1  orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 5 0 0 180 96 0 40 0 0 0
 0
 
- itm_orc_shield_b Orc_Shield Orc_Shield 1  orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 2 0 0 100 96 0 40 0 0 0
+ itm_orc_shield_b Orc_Shield Orc_Shield 1  orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 5 0 0 180 96 0 40 0 0 0
 0
 
- itm_orc_shield_c Orc_Tower_Shield Orc_Tower_Shield 4  orc_shield_c 0  orc_shield_c_strong 134217728  orc_shield_c_strong 67108864  orc_shield_c_strong 33554432  327687 4831838208 100 251658402 5 100 0 3 0 0 250 76 0 81 0 0 0
+ itm_orc_shield_c Orc_Tower_Shield Orc_Tower_Shield 4  orc_shield_c 0  orc_shield_c_strong 134217728  orc_shield_c_strong 67108864  orc_shield_c_strong 33554432  327687 4831838208 250 251658402 5 100 0 6 0 2 230 82 0 65 0 0 0
 0
 
- itm_mordor_orc_shield_a Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 1 0 0 200 96 0 40 0 0 0
+ itm_mordor_orc_shield_a Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 8 0 0 200 96 0 35 0 0 0
 0
 
- itm_mordor_orc_shield_b Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 2 0 0 200 96 0 40 0 0 0
+ itm_mordor_orc_shield_b Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 9 0 0 200 96 0 35 0 0 0
 0
 
- itm_mordor_orc_shield_c Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_c 0  327687 5100273664 100 251658402 3 100 0 2 0 0 200 96 0 40 0 0 0
+ itm_mordor_orc_shield_c Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_c 0  327687 5100273664 100 251658402 3 100 0 9 0 0 200 96 0 35 0 0 0
 0
 
- itm_mordor_orc_shield_d Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_d 0  327687 5100273664 100 251658402 3 100 0 3 0 0 250 96 0 40 0 0 0
+ itm_mordor_orc_shield_d Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_d 0  327687 5100273664 200 251658402 3 100 0 15 0 1 250 92 0 35 0 0 0
 0
 
- itm_mordor_orc_shield_e Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_e 0  327687 5100273664 100 251658402 3 100 0 3 0 0 250 96 0 40 0 0 0
+ itm_mordor_orc_shield_e Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_e 0  327687 5100273664 200 251658402 3 100 0 15 0 1 250 92 0 40 0 0 0
 0
 
- itm_mordor_uruk_shield_a Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_a 0  268763143 5100273664 100 251658402 4 100 0 3 0 0 310 96 0 60 0 0 0
+ itm_mordor_uruk_shield_a Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_a 0  268763143 5100273664 300 251658402 4 100 0 11 0 3 290 82 0 60 0 0 0
 0
 
- itm_mordor_uruk_shield_b Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_b 0  268763143 5100273664 100 251658402 4 100 0 4 0 0 310 96 0 60 0 0 0
+ itm_mordor_uruk_shield_b Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_b 0  268763143 5100273664 350 251658402 4 100 0 13 0 3 290 82 0 60 0 0 0
 0
 
- itm_mordor_uruk_shield_c Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_c 0  268763143 5100273664 100 251658402 4 100 0 3 0 0 310 96 0 60 0 0 0
+ itm_mordor_uruk_shield_c Mordor_Uruk_Shield Mordor_Uruk_Shield 1  mordor_uruk_shield_c 0  268763143 5100273664 400 251658402 4 100 0 14 0 3 290 82 0 60 0 0 0
 0
 
- itm_mordor_man_shield_a Mordor_Man_Shield Mordor_Man_Shield 1  mordor_man_shield_a 0  327687 5100273664 100 251658402 3 100 0 9 0 0 380 90 0 40 0 0 0
+ itm_mordor_man_shield_a Mordor_Man_Shield Mordor_Man_Shield 1  mordor_man_shield_a 0  327687 5100273664 600 251658402 3 100 0 17 0 2 330 90 0 40 0 0 0
 0
 
- itm_mordor_man_shield_b Mordor_Man_Shield Mordor_Man_Shield 1  mordor_man_shield_b 0  327687 5100273664 100 251658402 3 100 0 5 0 0 310 96 0 40 0 0 0
+ itm_mordor_man_shield_b Mordor_Man_Shield Mordor_Man_Shield 1  mordor_man_shield_b 0  327687 5100273664 600 251658402 3 100 0 15 0 2 310 93 0 40 0 0 0
 0
 
- itm_angmar_shield Angmar_Shield Angmar_Shield 1  angmar_shield 0  266247 5100273664 3000 0 4 100 0 20 0 0 1600 96 0 40 0 0 1
+ itm_angmar_shield Angmar_Shield Angmar_Shield 1  angmar_shield 0  266247 5100273664 3000 0 4 100 0 20 0 3 1600 96 0 40 0 0 1
 0
 
  itm_orc_nosehelm Orc_Nosehelm Orc_Nosehelm 3  orc_helm_nose_b 0  orc_helm_nose_a 6291590  orc_helm_nose_c 234881024  65548 0 200 174063750 2 100 18 0 0 0 0 0 0 0 0 0 0
@@ -1406,13 +1406,13 @@ itemsfile version 2
  itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 4  orc_moria_e 0  uruk_mordor_light_mail_a_orc 16777216  uruk_mordor_heavy_mail_b_orc 134217728  uruk_mordor_platemail_a_orc 536870912  16842765 0 1401 704643072 30 100 0 23 11 0 0 0 0 0 0 0 0
 0
 
- itm_moria_orc_shield_a Moria_Great_Shield Moria_Great_Shield 1  moria_orc_shield_a 0  327687 5100273664 100 251658402 5 100 0 10 0 0 410 88 0 60 0 0 0
+ itm_moria_orc_shield_a Moria_Great_Shield Moria_Great_Shield 1  moria_orc_shield_a 0  327687 5100273664 500 251658402 5 100 0 18 0 4 330 86 0 60 0 0 0
 0
 
- itm_moria_orc_shield_b Moria_Orc_Shield Moria_Orc_Shield 1  moria_orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 8 0 0 340 96 0 40 0 0 0
+ itm_moria_orc_shield_b Moria_Orc_Shield Moria_Orc_Shield 1  moria_orc_shield_b 0  327687 5100273664 300 251658402 3 100 0 15 0 1 300 92 0 40 0 0 0
 0
 
- itm_moria_orc_shield_c Moria_Orc_Shield Moria_Orc_Shield 1  moria_orc_shield_c 0  327687 5100273664 100 251658402 3 100 0 8 0 0 340 96 0 40 0 0 0
+ itm_moria_orc_shield_c Moria_Orc_Shield Moria_Orc_Shield 1  moria_orc_shield_c 0  327687 5100273664 300 251658402 3 100 0 15 0 1 300 92 0 40 0 0 0
 0
 
  itm_gundabad_armor_a Gundabad_Orc_Rags Gundabad_Orc_Rags 1  orc_gunda_a 0  16842765 0 41 123731968 2 100 0 5 4 0 0 0 0 0 0 0 0
@@ -1493,10 +1493,10 @@ itemsfile version 2
  itm_dun_helm_e Dunnish_Antler_Helm Dunnish_Antler_Helm 1  dunland_helm_c 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dun_shield_a Dunnish_Shield Dunnish_Shield 1  dun_roundshield 0  327687 5100273664 120 251658402 2 100 0 3 0 0 500 82 0 60 0 0 0
+ itm_dun_shield_a Dunnish_Shield Dunnish_Shield 1  dun_roundshield 0  327687 5100273664 300 251658402 2 100 0 15 0 2 310 88 0 55 0 0 0
 0
 
- itm_dun_shield_b Dunnish_Shield Dunnish_Shield 1  dun_roundshield_b 0  327687 5100273664 100 251658402 2 100 0 1 0 0 480 82 0 60 0 0 0
+ itm_dun_shield_b Dunnish_Shield Dunnish_Shield 1  dun_roundshield_b 0  327687 5100273664 300 251658402 2 100 0 15 0 2 310 88 0 55 0 0 0
 0
 
  itm_dun_berserker Dunland_Chieftain_Sword Dunland_Chieftain_Sword 1  dunland_sword 0  4299161602 9223388529822793743 400 150 4.5 100 0 0 0 12 38912 105 0 98 0 288 38
@@ -1607,31 +1607,31 @@ itemsfile version 2
  itm_free_rohan_captain_helmet Rohan_Captain_Helm Rohan_Captain_Helm 1  rohan_captain_helmet 0  12 0 3000 704643072 3.5 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_shield_a Rohan_Shield Rohan_Shield 1  rohan_shield_green 0  327687 5100273664 200 251658402 2 100 0 4 0 0 310 96 0 40 0 0 0
+ itm_rohan_shield_a Rohan_Shield Rohan_Shield 1  rohan_shield_green 0  327687 5100273664 200 251658402 3 100 0 14 0 0 260 94 0 40 0 0 0
 1
 -50  3 2136 3 1224979098644774912 0 7 2105 2 1224979098644774912 297 1981 2 41 1224979098644774912 
 
- itm_rohan_shield_b Rohan_Shield Rohan_Shield 1  rohan_shield_red 0  327687 5100273664 200 251658402 2 100 0 4 0 0 310 96 0 40 0 0 0
+ itm_rohan_shield_b Rohan_Shield Rohan_Shield 1  rohan_shield_red 0  327687 5100273664 200 251658402 3 100 0 14 0 0 260 94 0 40 0 0 0
 1
 -50  3 2136 3 1224979098644774912 0 7 2105 2 1224979098644774912 297 1981 2 41 1224979098644774912 
 
- itm_rohan_shield_c Rohan_Shield Rohan_Shield 1  rohan_shield_plain 0  327687 5100273664 200 251658402 2 100 0 4 0 0 310 96 0 40 0 0 0
+ itm_rohan_shield_c Rohan_Shield Rohan_Shield 1  rohan_shield_plain 0  327687 5100273664 200 251658402 3 100 0 14 0 0 260 94 0 40 0 0 0
 1
 -50  3 2136 3 1224979098644774912 0 7 2105 2 1224979098644774912 297 1981 2 41 1224979098644774912 
 
- itm_rohan_shield_d Rohan_Shield Rohan_Shield 1  rohan_shield_green_boss 0  327687 5100273664 400 251658402 2.5 100 0 8 0 0 400 96 0 40 0 0 0
+ itm_rohan_shield_d Rohan_Shield Rohan_Shield 1  rohan_shield_green_boss 0  327687 5100273664 400 251658402 3.5 100 0 16 0 1 300 90 0 40 0 0 0
 1
 -50  3 2136 3 1224979098644774912 4 7 2105 2 1224979098644774912 297 1981 2 42 1224979098644774912 
 
- itm_rohan_shield_e Rohan_Shield Rohan_Shield 1  rohan_shield_red_boss 0  327687 5100273664 400 251658402 2.5 100 0 8 0 0 400 96 0 40 0 0 0
+ itm_rohan_shield_e Rohan_Shield Rohan_Shield 1  rohan_shield_red_boss 0  327687 5100273664 400 251658402 3.5 100 0 16 0 1 300 90 0 40 0 0 0
 1
 -50  3 2136 3 1224979098644774912 4 7 2105 2 1224979098644774912 297 1981 2 42 1224979098644774912 
 
- itm_rohan_shield_f Rohan_Shield Rohan_Shield 1  rohan_shield_plain_boss 0  327687 5100273664 400 251658402 2.5 100 0 8 0 0 400 96 0 40 0 0 0
+ itm_rohan_shield_f Rohan_Shield Rohan_Shield 1  rohan_shield_plain_boss 0  327687 5100273664 400 251658402 3.5 100 0 16 0 1 300 90 0 40 0 0 0
 1
 -50  3 2136 3 1224979098644774912 4 7 2105 2 1224979098644774912 297 1981 2 42 1224979098644774912 
 
- itm_rohan_shield_g Rohan_Royal_Shield Rohan_Royal_Shield 1  rohan_shield_royal 0  327687 5100273664 600 771751936 3 100 0 12 0 0 600 96 0 40 0 0 0
+ itm_rohan_shield_g Rohan_Royal_Shield Rohan_Royal_Shield 1  rohan_shield_royal 0  327687 5100273664 600 771751936 3.5 100 0 18 0 2 330 90 0 40 0 0 0
 1
 -50  3 2136 3 1224979098644774912 4 7 2105 2 1224979098644774912 297 1981 2 42 1224979098644774912 
 
@@ -1704,13 +1704,13 @@ itemsfile version 2
  itm_mirkwood_axe Woodelf_Axe Woodelf_Axe 2  mirkwood_axe 0  mirkwood_axe_carry 3458764513820540928  80019458 9223388530091229198 150 156672 1 100 0 0 0 0 30720 115 0 51 0 256 30
 0
 
- itm_mirkwood_spear_shield_a Woodelf_Shield Woodelf_Shield 1  mirkwood_med_shield 0  327687 4831838208 700 771751936 2 100 0 16 0 0 800 88 0 60 0 0 0
+ itm_mirkwood_spear_shield_a Woodelf_Shield Woodelf_Shield 1  mirkwood_med_shield 0  327687 4831838208 300 771751936 2 100 0 16 0 1 290 95 0 50 0 0 0
 0
 
- itm_mirkwood_spear_shield_b Greenwood_War_Shield Greenwood_War_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 1000 771751936 3 100 0 16 0 0 1000 82 0 90 0 0 0
+ itm_mirkwood_spear_shield_b Greenwood_War_Shield Greenwood_War_Shield 1  mirkwood_spear_shield 0  268763143 4831838208 600 771751936 3 100 0 15 0 3 320 86 0 65 0 0 0
 0
 
- itm_mirkwood_spear_shield_c Woodelf_Round_Shield Woodelf_Round_Shield 1  mirkwood_royal_round 0  327687 5100273664 600 771751936 2 100 0 20 0 0 1000 90 0 50 0 0 0
+ itm_mirkwood_spear_shield_c Woodelf_Round_Shield Woodelf_Round_Shield 1  mirkwood_royal_round 0  327687 5100273664 700 771751936 2 100 0 18 0 2 300 93 0 40 0 0 0
 0
 
  itm_mirkwood_helm_a Woodelf_Archer_Helm Woodelf_Archer_Helm 3  mirkwood_helm_a 134  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 300 167772294 1 100 25 0 0 0 0 0 0 0 0 0 0
@@ -1836,28 +1836,28 @@ itemsfile version 2
  itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222124851987200 1000 156672 3 100 0 0 0 0 36864 86 0 149 0 282 36
 0
 
- itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  268763143 6442450944 500 251658402 3 100 0 5 0 0 600 82 0 90 0 0 0
+ itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  268763143 6442450944 500 251658402 3 100 0 17 0 2 300 82 0 65 0 0 0
 0
 
- itm_harad_long_shield_b Harad_Bronze_Shield Harad_Bronze_Shield 1  harad_long_shield_b 0  268763143 6442450944 800 251658402 4 100 0 10 0 0 900 80 0 90 0 0 0
+ itm_harad_long_shield_b Harad_Bronze_Shield Harad_Bronze_Shield 1  harad_long_shield_b 0  268763143 6442450944 800 251658402 4 100 0 18 0 3 310 80 0 65 0 0 0
 0
 
- itm_harad_long_shield_c Harad_Sun_Shield Harad_Sun_Shield 1  harad_long_shield_c 0  327687 6442450944 200 251658402 2.5 100 0 5 0 0 600 82 0 90 0 0 0
+ itm_harad_long_shield_c Harad_Sun_Shield Harad_Sun_Shield 1  harad_long_shield_c 0  327687 6442450944 400 251658402 2.5 100 0 11 0 2 300 82 0 60 0 0 0
 0
 
- itm_harad_long_shield_d Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_d 0  268763143 6442450944 200 251658402 2.5 100 0 5 0 0 600 82 0 90 0 0 0
+ itm_harad_long_shield_d Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_d 0  268763143 6442450944 400 251658402 2.5 100 0 11 0 1 280 82 0 60 0 0 0
 0
 
- itm_harad_long_shield_e Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_e 0  268763143 6442450944 200 251658402 2.5 100 0 5 0 0 600 82 0 90 0 0 0
+ itm_harad_long_shield_e Harad_Snake_Shield Harad_Snake_Shield 1  harad_long_shield_e 0  268763143 6442450944 400 251658402 2.5 100 0 11 0 1 280 82 0 60 0 0 0
 0
 
- itm_harad_shield_a Harondor_Shield Harondor_Shield 1  harad_shield_a 0  327687 5100273664 200 251658402 2.5 100 0 1 0 0 480 82 0 50 0 0 0
+ itm_harad_shield_a Harondor_Shield Harondor_Shield 1  harad_shield_a 0  327687 5100273664 300 251658402 2 100 0 14 0 0 240 90 0 40 0 0 0
 0
 
- itm_harad_shield_b Harondor_Buckler Harondor_Buckler 1  harad_shield_b 0  327687 5100273664 200 251658402 2.5 100 0 1 0 0 480 82 0 40 0 0 0
+ itm_harad_shield_b Harondor_Buckler Harondor_Buckler 1  harad_shield_b 0  327687 5100273664 100 251658402 2 100 0 14 0 0 210 97 0 40 0 0 0
 0
 
- itm_harad_shield_c Harondor_Buckler Harondor_Buckler 1  harad_shield_c 0  327687 5100273664 200 251658402 2.5 100 0 1 0 0 480 82 0 40 0 0 0
+ itm_harad_shield_c Harondor_Buckler Harondor_Buckler 1  harad_shield_c 0  327687 5100273664 100 251658402 2 100 0 14 0 0 210 97 0 40 0 0 0
 0
 
  itm_free_harad_tribal_a Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  268763143 6442450944 200 251658402 2.5 100 0 0 0 0 480 82 0 80 0 0 0
@@ -1866,7 +1866,7 @@ itemsfile version 2
  itm_free_harad_tribal_b Far_Harad_Shield Far_Harad_Shield 1  far_harad_c_giles 0  268763143 6442450944 200 251658402 2.5 100 0 0 0 0 480 82 0 80 0 0 0
 0
 
- itm_harad_yellow_shield Harad_Shield Harad_Shield 1  harad_yellow_shield 0  327687 4831838208 500 251658402 2.5 100 0 8 0 0 600 82 0 50 0 0 0
+ itm_harad_yellow_shield Harad_Shield Harad_Shield 1  harad_yellow_shield 0  327687 4831838208 600 251658402 2.5 100 0 18 0 2 300 90 0 50 0 0 0
 0
 
  itm_desert_boots Desert_Boots Desert_Boots 1  desert_boots 0  69390 0 200 123731968 1 100 0 0 10 0 0 0 0 0 0 0 0
@@ -2011,25 +2011,25 @@ itemsfile version 2
  itm_khand_lance Khand_Lance Khand_Lance 1  khand_lance 0  2286256132 4222124851986688 210 150 2.5 100 0 0 0 0 0 88 0 218 0 282 0
 0
 
- itm_easterling_round_horseman Easterling_Round_Shield Easterling_Round_Shield 1  eastershield_c 0  327687 5100273664 200 251658402 2.5 100 0 1 0 0 480 82 0 40 0 0 0
+ itm_easterling_round_horseman Easterling_Round_Shield Easterling_Round_Shield 1  eastershield_c 0  327687 5100273664 200 251658402 1 100 0 13 0 0 260 96 0 35 0 0 0
 0
 
- itm_variag_gladiator_shield Easterling_Pit_Shield Easterling_Pit_Shield 1  eastershield_b 0  327687 5100273664 200 251658402 2.5 100 0 1 0 0 480 82 0 40 0 0 0
+ itm_variag_gladiator_shield Easterling_Pit_Shield Easterling_Pit_Shield 1  eastershield_b 0  327687 5100273664 200 251658402 1 100 0 11 0 0 230 98 0 35 0 0 0
 0
 
- itm_easterling_hawk_shield Easterling_Hawk_Shield Easterling_Hawk_Shield 1  eastershield_a 0  327687 4831838208 200 251658402 2.5 100 0 1 0 0 480 82 0 80 0 0 0
+ itm_easterling_hawk_shield Easterling_Hawk_Shield Easterling_Hawk_Shield 1  eastershield_a 0  327687 4831838208 500 251658402 3 100 0 13 0 2 310 82 0 60 0 0 0
 0
 
- itm_rhun_bull1_shield Rhun_Shield Rhun_Shield 1  eastershield_d 0  327687 5100273664 200 251658402 2.5 100 0 6 0 0 480 90 0 50 0 0 0
+ itm_rhun_bull1_shield Rhun_Shield Rhun_Shield 1  eastershield_d 0  327687 5100273664 200 251658402 2.5 100 0 14 0 0 230 90 0 40 0 0 0
 0
 
- itm_rhun_bull2_shield Rhun_Shield Rhun_Shield 1  eastershield_e 0  327687 5100273664 200 251658402 2.5 100 0 6 0 0 480 90 0 50 0 0 0
+ itm_rhun_bull2_shield Rhun_Shield Rhun_Shield 1  eastershield_e 0  327687 5100273664 200 251658402 2.5 100 0 14 0 0 230 90 0 40 0 0 0
 0
 
- itm_rhun_bull3_shield Rhun_Shield Rhun_Shield 1  eastershield_f 0  327687 5100273664 200 251658402 2.5 100 0 6 0 0 480 90 0 50 0 0 0
+ itm_rhun_bull3_shield Rhun_Shield Rhun_Shield 1  eastershield_f 0  327687 5100273664 500 251658402 2.5 100 0 15 0 0 320 86 0 40 0 0 0
 0
 
- itm_rhun_shield Rhun_Kite_Shield Rhun_Kite_Shield 1  rhun_shield_small 0  327687 4831838208 200 251658402 2.5 100 0 5 0 0 480 82 0 80 0 0 0
+ itm_rhun_shield Rhun_Kite_Shield Rhun_Kite_Shield 1  rhun_shield 0  327687 4831838208 400 251658402 2.5 100 0 15 0 2 290 82 0 50 0 0 0
 0
 
  itm_rhun_armor_a Rhun_Light_Battlewear Rhun_Light_Battlewear 1  RhunArmorLight1 0  16842765 0 20 123731968 5 100 0 2 6 0 0 0 0 0 0 0 0
@@ -2200,13 +2200,13 @@ itemsfile version 2
  itm_dale_billhook Dale_Billhook Dale_Billhook 1  dale_billhook 0  38929793028 4222124851987200 360 271496 4.5 100 0 0 0 0 36864 95 0 185 0 287 36
 0
 
- itm_dale_shield_a Dale_Tower_Shield Dale_Tower_Shield 1  dale_shield_b 0  268763143 4831838208 200 251658402 2 100 0 3 0 0 450 70 0 90 0 0 0
+ itm_dale_shield_a Dale_Tower_Shield Dale_Tower_Shield 1  dale_shield_b 0  268763143 4831838208 300 251658402 4 100 0 13 0 3 320 80 0 60 0 0 0
 0
 
- itm_dale_shield_b Dale_Tower_Shield Dale_Tower_Shield 2  dale_shield_i 0  dale_shield_j 771751936  268763143 4831838208 360 251658402 2 100 0 7 0 0 450 70 0 90 0 0 0
+ itm_dale_shield_b Dale_Tower_Shield Dale_Tower_Shield 2  dale_shield_i 0  dale_shield_j 771751936  268763143 4831838208 400 251658402 4 100 0 13 0 3 320 80 0 60 0 0 0
 0
 
- itm_dale_shield_c Dale_Round_Shield Dale_Round_Shield 2  dwarf_round_shield_e 0  dwarf_round_shield_m 771751936  327687 5100273664 300 251658402 2 100 0 8 0 0 360 82 0 50 0 0 0
+ itm_dale_shield_c Dale_Round_Shield Dale_Round_Shield 2  dwarf_round_shield_e 0  dwarf_round_shield_m 771751936  327687 5100273664 200 251658402 3 100 0 15 0 2 280 87 0 35 0 0 0
 0
 
  itm_free_dale_shield_d Dale_Shield Dale_Shield 1  dwarf_round_shield_m 0  327687 5100273664 200 251658402 2 100 0 8 0 0 360 82 0 50 0 0 0
@@ -2263,16 +2263,16 @@ itemsfile version 2
  itm_corsair_boots Corsair_Boots Corsair_Boots 1  corsair_boots 0  536940302 0 400 123731968 1 100 0 0 14 0 0 0 0 0 0 0 0
 0
 
- itm_umb_shield_a Corsair_Shield Corsair_Shield 4  corsair_buckler_long_a 0  corsair_buckler_long_a_carry 3458764513820540928  corsair_buckler_long_b 167772160  corsair_buckler_long_b_carry 3458764513988313088  327687 5100273664 200 251658402 2 100 0 1 0 0 420 89 0 35 0 0 0
+ itm_umb_shield_a Corsair_Shield Corsair_Shield 4  corsair_buckler_long_a 0  corsair_buckler_long_a_carry 3458764513820540928  corsair_buckler_long_b 167772160  corsair_buckler_long_b_carry 3458764513988313088  327687 5100273664 300 251658402 2 100 0 16 0 1 240 92 0 35 0 0 0
 0
 
- itm_umb_shield_b Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_a 0  corsair_buckler_round_a_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 8 0 0 360 100 0 20 0 0 0
+ itm_umb_shield_b Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_a 0  corsair_buckler_round_a_carry 3458764513820540928  327687 5368709120 200 251658402 1 100 0 18 0 0 240 100 0 20 0 0 0
 0
 
- itm_umb_shield_c Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_b 0  corsair_buckler_round_b_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 8 0 0 360 100 0 20 0 0 0
+ itm_umb_shield_c Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_b 0  corsair_buckler_round_b_carry 3458764513820540928  327687 5368709120 200 251658402 1 100 0 18 0 0 240 100 0 20 0 0 0
 0
 
- itm_umb_shield_d Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_c 0  corsair_buckler_round_c_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 8 0 0 360 100 0 20 0 0 0
+ itm_umb_shield_d Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_c 0  corsair_buckler_round_c_carry 3458764513820540928  327687 5368709120 200 251658402 1 100 0 18 0 0 240 100 0 20 0 0 0
 0
 
  itm_umbar_spear Umbar_Short_Spear Umbar_Short_Spear 1  corsair_spear 0  4554756 9254615759470988544 200 271496 2 100 0 0 0 0 0 102 0 132 0 282 0
@@ -2327,7 +2327,7 @@ itemsfile version 2
  itm_beorn_helmet Bear_Skullcap Bear_Skullcap 2  beorn_helmet 0  beorn_helmet_light 134  65548 0 800 704643206 2 100 32 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_beorn_shield Northmen_Shield Northmen_Shield 2  northmen_shield 0  northmen_shield 771751936  327687 4831838208 200 251658402 3 100 0 5 0 0 480 82 0 70 0 0 0
+ itm_beorn_shield Northmen_Shield Northmen_Shield 2  northmen_shield 0  northmen_shield 771751936  327687 4831838208 200 251658402 3 100 0 14 0 1 290 86 0 35 0 0 0
 0
 
  itm_beorn_axe Beorning_Axe Beorning_Axe 1  beorning_axe 0  38996869124 9223635925844623584 300 156672 5 100 0 0 0 0 41984 94 0 92 0 256 41
@@ -2339,19 +2339,19 @@ itemsfile version 2
  itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  4637130756 9223635925844623584 300 156672 6 100 0 0 0 0 44032 91 0 85 0 256 43
 0
 
- itm_dwarf_shield_a Dwarven_Angular_Shield Dwarven_Angular_Shield 2  dwarf_angular_shield_a 0  dwarf_angular_shield_b 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_dwarf_shield_a Dwarven_Angular_Shield Dwarven_Angular_Shield 2  dwarf_angular_shield_a 0  dwarf_angular_shield_b 771751936  327687 4831838208 300 771751936 3 100 0 16 0 2 320 86 0 35 0 0 0
 0
 
- itm_dwarf_shield_b Dwarven_Tower_Shield Dwarven_Tower_Shield 2  dwarf_tear_shield_a 0  dwarf_tear_shield_b 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_dwarf_shield_b Dwarven_Tower_Shield Dwarven_Tower_Shield 2  dwarf_tear_shield_a 0  dwarf_tear_shield_b 771751936  327687 4831838208 700 771751936 3.5 100 0 16 0 4 360 82 0 60 0 0 0
 0
 
- itm_dwarf_shield_c Dwarven_Fighting_Shield Dwarven_Fighting_Shield 2  dwarf_fighting_shield_a 0  dwarf_fighting_shield_b 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 86 0 60 0 0 0
+ itm_dwarf_shield_c Dwarven_Fighting_Shield Dwarven_Fighting_Shield 2  dwarf_fighting_shield_a 0  dwarf_fighting_shield_b 771751936  327687 4831838208 400 771751936 2 100 0 18 0 3 310 88 0 40 0 0 0
 0
 
- itm_dwarf_shield_d Dwarven_Round_Shield Dwarven_Round_Shield 2  dwarf_round_shield_n 0  dwarf_round_shield_e 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 50 0 0 0
+ itm_dwarf_shield_d Dwarven_Round_Shield Dwarven_Round_Shield 2  dwarf_round_shield_n 0  dwarf_round_shield_e 771751936  327687 4831838208 250 771751936 3 100 0 16 0 0 300 90 0 35 0 0 0
 0
 
- itm_north_round_shield Northmen_Round_Shield Northmen_Round_Shield 1  dwarf_round_shield_n 0  327687 4831838208 200 771751936 3 100 0 4 0 0 360 82 0 50 0 0 0
+ itm_north_round_shield Northmen_Round_Shield Northmen_Round_Shield 1  dwarf_round_shield_n 0  327687 4831838208 200 771751936 3 100 0 14 0 0 290 95 0 35 0 0 0
 0
 
  itm_free_dwarf_shield_g Dwarven_Shield Dwarven_Shield 1  dale_shield_b 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
@@ -2610,7 +2610,7 @@ itemsfile version 2
  itm_mearas_reward Mearh_Stallion Mearh_Stallion 1  mearh 0  4097 0 400 16106389504 0 100 0 45 0 5 180 50 50 105 0 40 0
 0
 
- itm_shield_of_tuor Shield_of_Tuor Shield_of_Tuor 1  Avelium_shield_of_tuor 0  266247 4831838208 4000 0 4 100 0 22 0 0 930 77 0 96 0 0 0
+ itm_shield_of_tuor Shield_of_Tuor Shield_of_Tuor 1  Avelium_shield_of_tuor 0  266247 4831838208 4000 0 4 100 0 22 0 5 450 84 0 70 0 0 0
 0
 
  itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 704643072 24 100 2 45 22 15 0 0 0 0 0 0 0
@@ -2676,7 +2676,7 @@ itemsfile version 2
  itm_corsair_throwing_dagger_reward Poisoned_Throwing_Daggers Poisoned_Throwing_Daggers 1  corsair_throwing_dagger 0  4198410 131072 200 4398046781448 3.5 100 0 0 0 0 0 110 24 0 10 50 0
 0
 
- itm_dwarf_shield_reward Shield_of_Kheled-zaram Shield_of_Kheled-zaram 1  mithril_shield 0  266247 4831838208 400 0 3 100 0 28 0 0 800 82 0 70 0 0 0
+ itm_dwarf_shield_reward Shield_of_Kheled-zaram Shield_of_Kheled-zaram 1  mithril_shield 0  266247 4831838208 4000 0 4 100 0 35 0 5 450 82 0 60 0 0 0
 0
 
  itm_dwarf_great_axe_reward Dwarf_Sharp_Axe Dwarf_Sharp_Axe 2  dwarf_great_axe_2 0  dwarf_great_axe_2_dain 2199023255552  279514976260 9223635923965575392 700 0 6 100 0 0 0 18 56320 90 0 110 0 256 311
@@ -2700,7 +2700,7 @@ itemsfile version 2
  itm_leather_gloves_reward Archer_Gloves Archer_Gloves 5  CWE_gloves_king_L 0  CWE_gloves_a_black_L 7  ent_hand_L 2097152  olog_hand_L 4  isen_olog_hand_L 256  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
- itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 430 251658402 4.5 100 0 9 0 0 690 95 0 70 0 0 0
+ itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 4000 251658402 4.5 100 0 18 0 3 340 95 0 55 0 0 0
 0
 
  itm_beorn_axe_reward Bear_Club Bear_Club 1  beorning_club 0  279177461762 9223388532775583758 2000 156672 4.5 100 0 0 0 12 32768 93 0 67 0 0 544
