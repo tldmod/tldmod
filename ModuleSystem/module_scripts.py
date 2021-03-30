@@ -2069,20 +2069,24 @@ scripts = [
 	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
 
 	(call_script, "script_get_hp_shield_value", "trp_moria_troll"),
-	#(troop_set_slot, "trp_moria_troll", slot_troop_hp_shield, MORIA_TROLL_HP_SHIELD),
 
 	(call_script, "script_get_hp_shield_value", "trp_mordor_olog_hai"),
-	#(troop_set_slot, "trp_mordor_olog_hai", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
 
 	(call_script, "script_get_hp_shield_value", "trp_isen_armored_troll"),
-	#(troop_set_slot, "trp_isen_armored_troll", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
 
 	(call_script, "script_get_hp_shield_value", "trp_ent"),
-	#(troop_set_slot, "trp_ent", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
 	
 	(try_for_range, ":trolls", trp_moria_troll, trp_ent2),
 		(call_script, "script_get_hp_shield_value", ":trolls"),
 	(try_end),
+    
+    (troop_set_slot, "trp_i5_beorning_carrock_berserker", slot_troop_hp_shield, 30),
+    (troop_set_slot, "trp_i6_isen_uruk_berserker", slot_troop_hp_shield, 30),
+    (troop_set_slot, "trp_i4_gunda_orc_berserker", slot_troop_hp_shield, 20),
+    (troop_set_slot, "trp_i5_khand_pit_master", slot_troop_hp_shield, 30),
+    (troop_set_slot, "trp_npc9", slot_troop_hp_shield, 30),
+    (troop_set_slot, "trp_npc5", slot_troop_hp_shield, 50),
+    
 	
 
 	#Init Health Regeneration on Kill
@@ -24453,6 +24457,17 @@ command_cursor_scripts = [
     (try_begin), #InVain - March 2021, update berserker armours
 		(le, "$savegame_version", 18),	    
         (call_script, "script_set_slot_light_armor"),
+        (assign, "$savegame_version", 19),
+	(try_end),	
+ 
+    (try_begin), #InVain - March 2021, new hp shields 
+        (le, "$savegame_version", 18),	
+        (troop_set_slot, "trp_i5_beorning_carrock_berserker", slot_troop_hp_shield, 30),
+        (troop_set_slot, "trp_i6_isen_uruk_berserker", slot_troop_hp_shield, 30),
+        (troop_set_slot, "trp_i4_gunda_orc_berserker", slot_troop_hp_shield, 20),
+        (troop_set_slot, "trp_i5_khand_pit_master", slot_troop_hp_shield, 30),
+        (troop_set_slot, "trp_npc9", slot_troop_hp_shield, 30),
+        (troop_set_slot, "trp_npc5", slot_troop_hp_shield, 50),
         (assign, "$savegame_version", 19),
 	(try_end),	
 ]),

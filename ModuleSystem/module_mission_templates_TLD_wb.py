@@ -1949,6 +1949,21 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
 
+    ###non-trolls stagger###
+    (try_begin),
+        (neq|is_between, ":troop_id", "trp_moria_troll", "trp_ent2"),
+        (try_begin),
+            (ge, ":damage", 30),
+            (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+          (else_try),
+            (lt, ":current_hp_shield", 100),
+            (ge, ":damage", 15),
+            (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+         (try_end),
+     (try_end),
+     ###non-trolls stagger end###
+
+    ### TROLLS ###
     (try_begin),
       (this_or_next|is_between, ":troop_id", "trp_troll_of_moria", "trp_ent"), #old troll range
 	  (is_between, ":troop_id", "trp_moria_troll", "trp_ent2"), #new troll range
@@ -1965,8 +1980,9 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
         (eq, ":type", itp_type_bow),
         (gt, ":dist", 30),
         (val_div, ":damage", 3),
-	  (else_try), #buff spears, note: also affects swing attacks (blunt spears attacks, halberds etc)
-		(item_has_property, ":weapon", itp_type_polearm),
+	  (else_try), #buff spears and throwing spears, note: also affects swing attacks (blunt spears attacks, halberds etc)
+		(this_or_next|item_has_property, ":weapon", itp_type_polearm),
+        (item_has_property, ":weapon", itp_type_thrown),
 		(item_get_thrust_damage_type, ":thrust_damage_type", ":weapon"),
 		(eq, ":thrust_damage_type", 1), #check for spears, also finds halberds, bills etc
 		(val_mul, ":damage", 3),
@@ -2007,42 +2023,8 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
         (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
 		(play_sound, "snd_troll_hit"),
       (try_end),
-
-    # (else_try),
-      # (eq, ":troop_id", "trp_moria_troll"),
-      # (gt, ":current_hp_shield", 0),
-
-      # #(assign, reg55, ":damage"),
-      # (agent_get_bone_position, pos1, ":agent", 7, 1),
-      # (get_distance_between_positions, ":dist", pos0, pos1),
-      # #(assign, reg57, ":dist"),
-
-      # (try_begin),
-        # (eq, ":type", itp_type_bow),
-        # (gt, ":dist", 30),
-        # (val_div, ":damage", 3),
-      # (try_end),
-
-      # #(assign, reg56, ":damage"),
-      # #(display_message, "@{s2} weapon - {reg55} Before - {reg56} after - {reg57} Dist from Head"),
-      
-      # (try_begin),
-        # (neg|item_has_property, ":weapon", itp_couchable),
-        # (ge, ":damage", 150),
-        # (val_div, ":damage", 3),
-      # (else_try),
-        # (item_has_property, ":weapon", itp_couchable),
-        # (ge, ":damage", 150),
-        # (store_div, ":couched_damage", MORIA_TROLL_HP_SHIELD, 3),
-        # (assign, ":damage", ":couched_damage"),
-        # (agent_set_animation, ":agent", "anim_strike3_abdomen_front"), 
-      # (else_try),
-        # (ge, ":damage", 100),
-        # (store_random_in_range, ":rand", 0, 100),
-        # (ge, ":rand", 50),
-        # (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
-      # (try_end),
     (try_end),
+    ### TROLLS END ###
 
     (try_begin),
       (gt, ":current_hp_shield", 0),
