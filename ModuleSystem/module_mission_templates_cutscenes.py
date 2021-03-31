@@ -1057,6 +1057,10 @@ mission_templates_cutscenes = [
         
         (start_presentation, "prsnt_conversation_titles"),
         
+        ] + ((is_a_wb_cutscene==1) and [
+        (set_camera_in_first_person, 0), 
+        ] or []) + [
+        
         #spawn Gandalf/Nazgul behind the little hill
         (try_for_agents,":cur_agent"),
           (agent_get_troop_id, ":cur_agent_trp", ":cur_agent"),
