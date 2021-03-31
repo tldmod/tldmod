@@ -33,7 +33,7 @@ p_town_cerin_amroth|Cerin Amroth
 p_town_thranduils_halls|Thranduilove dvorane
 p_town_woodelf_camp|Tabor lesnih vilinov
 p_town_woodelf_west_camp|Zahodni tabor lesnih vilinov
-; p_town_woodsmen_village|Woodsmen Village
+p_town_woodsmen_village|Gozdna vas
 p_town_beorning_village|Vas Beorningov
 p_town_beorn_house|Beornova hiša
 p_town_moria|Vrata Morie
@@ -58,27 +58,27 @@ p_town_goblin_south_outpost|Goblinsko južno oporišče
 p_town_gundabad_m_outpost|Gundabadski mrkolesni tabor
 p_town_erebor|Erebor
 p_town_ironhill_camp|Kamnolom železnih hribov
-; p_advcamp_gondor|Gondor Advance Camp
-; p_advcamp_rohan|Rohan Advance Camp
-; p_advcamp_isengard|Isengard Advance Camp
-; p_advcamp_mordor|Mordor Advance Camp
-; p_advcamp_harad|Harad Advance Camp
-; p_advcamp_rhun|Rhun Advance Camp
-; p_advcamp_khand|Khand Advance Camp
-; p_advcamp_umbar|Umbar Advance Camp
-; p_advcamp_lorien|Lorien Advance Camp
-; p_advcamp_imladris|Imladris Advance Camp
-; p_advcamp_woodelf|Mirkwood Advance Camp
-; p_advcamp_moria|Moria Advance Camp
-; p_advcamp_guldur|Dol Guldur Advance Camp
-; p_advcamp_gundabad|Gundabad Advance Camp
-; p_advcamp_dale|Dale Advance Camp
-; p_advcamp_dwarf|Erebor Advance Camp
-; p_advcamp_dunland|Dunland Advance Camp
-; p_advcamp_beorn|Beorning Advance Camp
-; p_argonath|Argonath
-; p_argonath2|Argonath
-; p_hand_isen|Handsign of Isengard
+p_advcamp_gondor|Gondorski tabor
+p_advcamp_rohan|Rohanski tabor
+p_advcamp_isengard|Ajzengarški tabor
+p_advcamp_mordor|Mordorski tabor
+p_advcamp_harad|Haradrimski tabor
+p_advcamp_rhun|Rhunski tabor
+p_advcamp_khand|Khandski tabor
+p_advcamp_umbar|Umbarski tabor
+p_advcamp_lorien|Lorienski tabor
+p_advcamp_imladris|Razendelski tabor
+p_advcamp_woodelf|Tabor lesnih vilinov
+p_advcamp_moria|Morijski tabor
+p_advcamp_guldur|Dol Guldurski tabor
+p_advcamp_gundabad|Gundabadski tabor
+p_advcamp_dale|Dolinjski tabor
+p_advcamp_dwarf|Ereborski tabor
+p_advcamp_dunland|Mrkinjski tabor
+p_advcamp_beorn|Beorninški tabor
+p_argonath|Argonath
+p_argonath2|Argonath
+p_hand_isen|Ajzengarška roka
 p_mount_doom|Gora Poguba
 p_town_barad_dur|Barad Dur
 p_ford_cair_andros1|Anduin
@@ -90,18 +90,18 @@ p_ford_pelargir|Anduin
 p_ford_edhellond|Anduin
 ; p_ford_cerin_dolen|Silverlode
 p_old_ford|Stari pregaz
-; p_ford_erech|Ringlo
+p_ford_erech|Ringlo
 p_ford_isen1|Ajzen
 p_ford_isen2|Ajzen
-; p_ford_rohan|Entwash
-; p_ford_rohan2|Entwash
-; p_ford_fangorn|Entwash
+p_ford_rohan|Entok
+p_ford_rohan2|Entok
+p_ford_fangorn|Entok
 ; p_ford_fangorn2|Limlight
 ; p_ford_moria|Silverlode
 p_legend_amonhen|Amon Hen
 p_legend_deadmarshes|Mrtve močvare
 p_legend_mirkwood|Mrkolesje
-; p_fangorn_center|Fangorn Center
+p_fangorn_center|Središče Fangorna
 p_ring_hunter_lair|Gnezdo lovcev na prstan
 p_raft|Brodarji
 p_ancient_ruins|Starodavne ruševine

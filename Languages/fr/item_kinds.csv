@@ -119,7 +119,7 @@ itm_riv_bow|Arc de Fondcombe
 itm_rhun_bow|Arc balchoth
 itm_lorien_bow|Arc galadhrim
 itm_isengard_large_bow|Arc long de l'Isengard
-itm_dale_bow|Arc de Dale
+itm_dale_bow|Arc du Val
 itm_uruk_bow|Arc en corne orque
 itm_mirkwood_bow|Arc de Grand'Peur
 itm_dunland_javelin|Javelots du Pays de Dun
@@ -616,30 +616,30 @@ itm_rhun_greatsword|Grande épée sauvage
 itm_rhun_shortsword|Épée courte sauvage 
 itm_rhun_sword|Épée sauvage
 itm_rhun_mangler|Déchiqueteur de Rhûn
-itm_dale_light_a|Manteau de milicien de Dale
+itm_dale_light_a|Manteau de milicien du Val
 itm_dale_light_b|Armure légère lamellaire d'Homme du Nord
 itm_dale_med_a|Armure lourde lamellaire d'Homme du Nord
-itm_dale_med_b|Armure de cuir de Dale
-itm_dale_med_c|Cuir sur mailles de Dale
-itm_dale_med_d|Armure lamellaire de Dale
-itm_dale_heavy_a|Lamellaire sur mailles de Dale
-itm_dale_heavy_b|Manteau de plates de Dale
+itm_dale_med_b|Armure de cuir du Val
+itm_dale_med_c|Cuir sur maille du val
+itm_dale_med_d|Armure lamellaire du Val
+itm_dale_heavy_a|Lamellaire sur maille du Val
+itm_dale_heavy_b|Manteau de plates du Val
 itm_dale_heavy_c|Cotte de mailles du Rhovanion
 itm_north_leather|Veste en cuir d'homme du nord.
-itm_dale_helmet_a|Casque léger d'infanterie de Dale
-itm_dale_helmet_b|Casque d'archer léger de Dale
-itm_dale_helmet_c|Casque d'infanterie de Dale
-itm_dale_helmet_d|Casque d'archer de Dale
+itm_dale_helmet_a|Casque léger d'infanterie du Val
+itm_dale_helmet_b|Casque d'archer léger du Val
+itm_dale_helmet_c|Casque d'infanterie du Val
+itm_dale_helmet_d|Casque d'archer du Val
 itm_dale_helmet_e|Casque de Bard
 itm_dale_helmet_f|Casque de Bard
-itm_dale_sword|Épée courte de Dale
-itm_dale_sword_long|Épée longue de Dale
-itm_dale_sword_broad|Épée d’infanterie de Dale
-itm_dale_pike|Lance de Dale
-itm_dale_billhook|Serpe de Dale
-itm_dale_shield_a|Pavois de Dale
-itm_dale_shield_b|Pavois de Dale
-itm_dale_shield_c|Rondache de Dale
+itm_dale_sword|Épée courte du Val
+itm_dale_sword_long|Épée longue du Val
+itm_dale_sword_broad|Épée d’infanterie du Val
+itm_dale_pike|Lance du Val
+itm_dale_billhook|Serpe du Val
+itm_dale_shield_a|Pavois du Val
+itm_dale_shield_b|Pavois du Val
+itm_dale_shield_c|Rondache du Val
 itm_umb_armor_a|Veste en cuir de corsaire
 itm_umb_armor_b|Armure de cuir corsaire
 itm_umb_armor_c|Armure d'écaille légère de corsaire
@@ -745,7 +745,7 @@ itm_horn_gondor_reward|Cor du Gondor
 itm_harad_totem_reward|Totem du Harad
 itm_elven_amulet_reward|Amulette elfique
 itm_torque_reward|Torque maléfique
-itm_orc_brew|Mixture orque
+itm_orc_brew|Bière orque
 itm_rohan_saddle|Selle de Thengel
 itm_mearas_reward|Meara
 itm_shield_of_tuor|Bouclier de Tuor
@@ -775,8 +775,8 @@ itm_dwarf_great_axe_reward|Hache aiguisée naine
 itm_isen_uruk_heavy_reward|Armure de général uruk-hai
 itm_lorien_bow_reward|Arc ñoldorin
 itm_elven_cloak|Cape elfique
-itm_dale_sword_reward|Épée royale de Dale
-itm_dale_armor_reward|Cotte de mailles de noble de Dale
+itm_dale_sword_reward|Épée royale du Val
+itm_dale_armor_reward|Cotte de mailles de noble du Val
 itm_leather_gloves_reward|Gants d'archer
 itm_beorn_shield_reward|bouclier ennuyeux
 itm_beorn_axe_reward|Massue ours

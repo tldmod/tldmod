@@ -1002,7 +1002,7 @@ dlga_town_dweller_talk:town_dweller_ask_info.1|Что вы можете расс
 dlga_town_dweller_talk:town_dweller_talk|Ну и как здесь живётся?
 dlga_town_dweller_talk:town_dweller_ask_rumor|Какие слухи ходят по округе в последнее время?
 dlga_town_dweller_ask_rumor:town_dweller_talk|Я не знаю ничего такого, что было бы вам интересно.
-dlga_town_dweller_brawl:town_dweller_brawl_confirm|Ты мне угрожаешь? Стражники вряд ли ждали, что тут появится такой тип, как ты.
+dlga_town_dweller_brawl:town_dweller_brawl_confirm|Ты на кого вякаешь пес? Стоит мне только свистнуть и тут будет толпа стражников.
 dlga_town_dweller_brawl_confirm:close_window|О, неужели? Давай посмотрим, что у тебя есть
 dlga_town_dweller_brawl_confirm:close_window.1|Нет, я вас спутал с кое-кем другим.
 dlga_town_dweller_talk:close_window|[Уйти]

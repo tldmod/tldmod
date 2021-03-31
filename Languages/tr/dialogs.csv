@@ -567,7 +567,7 @@ dlga_lord_tell_mission:lord_mission_told.1|Burada eski bir arkadaşım var, yaş
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Ne kadar adama ihtiyacın var?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Eger {reg1} tane {s14} yetiştirip bana getirebilirsen, sanırım bu yeterli olacaktır.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Tabii ki, {s65}. Bana {reg1} yeni gönüllü ver ben de onları {s14} olmaya egiteyim.
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Başka bir yöntem öneriyorum {s65}. {reg1} yeni acemileri egitim alanlarına götürecegim onlara bir iki şey ögretecegim ...
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Başka bir yöntem öneriyorum {s65}. {reg1} yeni acemilerine bir iki şey ögretmek için onları egitim alanına götürecegim...
 dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Başka bir yöntem öneriyorum {s65}. {reg1} yeni acemileri egitim alanlarına götürecegim onlara bir iki şey ögretecegim. Hemen {s14} olmayacaklar belki, ama en azından bir gelişme olacaktır.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Bu günlerde kimseyi egitemeyecek kadar meşgulüm.
 dlga_lord_mission_raise_troops_accepted:close_window|Omuzlarımdan büyük bir yükü kaldırdın, {playername}. Çavuşlarıma, acemileri gönderip senin komutana vermelerini söyleyecegim. Ayrıca masrafları karşılamak için sana biraz avans verecegim. Al, bu kese işini görecektir. Yardımın için teşekkür ederim.

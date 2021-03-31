@@ -186,7 +186,7 @@ qstr_during_battles|podczas bitew
 qstr_+1_to_Pathfinding|+1 do Szukania Ścieżek
 qstr_+1_to_Athletics|+1 do Atletyki
 qstr_+1_to_Wound_Treatmen|+1 do Leczenia Ran
-; qstr_Use_from_Camp_Menu|Use from Camp Menu
+qstr_Use_from_Camp_Menu|Użyj z Menu Obozu
 qstr_Use_from|Do użycia z
 qstr_Action_Menu|Menu Obozu
 qstr_+1_to_First_Aid|+1 do Pierwszej Pomocy
@@ -212,13 +212,13 @@ qstr_+{reg1}_{s3}_in_batt|+{reg1}{s3} w bitwie
 qstr_+1_to_Charisma|+1 do Charyzmy
 qstr_+1_to_Surgery|+1 do Chirurgii
 qstr_+1_to_Intelligence|+1 do Inteligencji
-; qstr_+2_to_Surgery|+2 to Surgery
+qstr_+2_to_Surgery|+2 do Operacji 
 qstr_when_equipped|gdy wyekwipowany
 qstr_+1_to_Riding|+1 do Jazdy Konnej
 qstr_+1_to_Mounted_Archer|+1 do Łucznictwa Konnego
 qstr_+1_to_Prisoner_Mgmt|+1 do Zarządzania Więźniami
 qstr_+2_to_Tactics|+2 do taktyki
-; qstr_+1_Intelligence|+1 Intelligence
+qstr_+1_Intelligence|+1 do Inteligencji 
 qstr_+{reg1}_to_Spotting|+{reg1} do Spostrzegania
 ; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
 qstr_+1_to_Spotting|+1 do Spostrzegania

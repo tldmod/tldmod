@@ -41,7 +41,7 @@ ui_order_dismount_toggle|命令下马/上马(切换)
 ui_mount_horses_e_|%s，上马！
 ui_hold_fire_e_|%s，停止射击！
 ui_fire_at_will_e_|%s，自由射击！
-ui_recent_messages|最后的信息
+ui_recent_messages|最近消息
 ui_value_denars|%d资源点。
 ui_cannot_be_used_on_horseback|乘骑状态无法使用
 ui_upgrade_to_value|升级为%s
@@ -85,7 +85,7 @@ ui_shared_number_experience_within_party|在队伍中分享 %d 点经验。
 ui_your_relations_with_value_has_improved_from_number_to_number|你与 %s 的关系从 %d 提高到 %d 。
 ui_your_relations_with_value_has_deteriorated_from_number_to_number|你与 %s 的关系从 %d 恶化为 %d 。
 ui_you_lost_value|你失去 %s。
-ui_change_graphics_settings_explanation|当你进入一个新的区域时，你所做的一些改变将会生效。
+ui_change_graphics_settings_explanation|一些变化需要进入新的场景后才能生效。
 ui_game_log_window|日志窗口
 ui_blunt_short|b
 ui_tracks|跟踪

@@ -53,11 +53,11 @@ qstr_Thighs|Cuisses
 qstr_Legs|Jambes
 qstr_Rotate|Pivoter
 qstr_Close|Fermer
-qstr_Faction_Side:^^Campa|Alignement de la faction :^^Difficulté de la campagne :^^Théâtre de guerre :^^Maréchal :^^Ennemis :^^
-qstr_Campaign_Difficulty_|La Difficulté de la campagne est basée sur la force de départ de la faction, les ennemis sur le théâtre des opérations^ainsi que de l'arbre des troupes et l'équipement de la faction. 
+qstr_Faction_Side:^^Campa|Alignement de la faction :^^Difficulté de la campagne :^^Théâtre :^^Maréchal :^^Ennemis :^^
+qstr_Campaign_Difficulty_|La difficulté de la campagne est basée sur la force de départ de la faction,^les ennemis sur le théâtre, l'arbre des troupes et l'équipement de la faction.
 qstr_Rallies:|Ralliements :
 qstr_View_Keybinds__Press|Voir touches (appuyer sur Insert)
-qstr_What_do_you_fight_fo|Pour quoi vous battez vous ?
+qstr_What_do_you_fight_fo|Quel est le but de votre combat ?
 qstr_Go_Back...|Retour...
 qstr_Learn_about_the_diff|En savoir plus sur les différentes factions de la Terre du Milieu
 qstr_The_DAWN_of_a_New_Er|L'AUBE d'une nouvelle ère
@@ -66,15 +66,15 @@ qstr_Select_your_Race?|Choisissez votre race
 qstr_Man|Homme
 qstr_Elf|Elfe
 qstr_Dwarf|Nain
-qstr_Whom_Do_You_Serve?|Qui Servez Vous ?
+qstr_Whom_Do_You_Serve?|Qui servez-vous ?
 qstr_SAURON_of_Mordor_The|SAURON du Mordor, le Seigneur des Anneaux
-qstr_SARUMAN_of_Isengard_|Saroumane d'Isengard, la Main Blanche
-qstr_an_ORC^_serving_the_|Un ORQUE,^au service du Grand Oeil 
-qstr_an_URUK^_the_new_bre|Un URUK,^nouvelle race des orques
+qstr_SARUMAN_of_Isengard_|SAROUMANE d'Isengard, la Main Blanche
+qstr_an_ORC^_serving_the_|Un ORQUE,^serviteur du Grand OEil 
+qstr_an_URUK^_the_new_bre|Un URUK,^nouvel orque
 qstr_a_MAN^_subjugated_by|Un HOMME,^corrompu par Sauron
-qstr_an_ORC^_serving_the_W|Un ORQUE,^au service de la Main Blanche
+qstr_an_ORC^_serving_the_W|Un ORQUE,^de la Main Blanche
 qstr_one_of_the_URUK_HAI^|Un des Uruk-Hai,^élevé en Isengard
-qstr_a_MAN_of_Dunland^_th|Un HOMME du Pays de Dun,^les plaines de l'Ouest
+qstr_a_MAN_of_Dunland^_th|Un HOMME,^de la Dunlande
 qstr_Click_the_center_but|Cliquez sur le bouton du milieu pour changer de faction^Cliquez sur les avatars pour en voir les détails.
 qstr_Level:_{reg3}^Health|Niveau : {reg3}^Santé : {reg4}
 qstr_Attributes|Attributs
@@ -566,7 +566,7 @@ qstr_{s30}_reinforced_by_|{s30} est renforcé par la Force de Faction de {reg65}
 qstr_{s1}_has_been_besieg|{s1} est assiégée par {s2}, {s3}.
 qstr_The_forces_of_{s2}_m|Les forces de {s2} marchent sur {s15} !
 qstr_Rohan_capital_moved_|La capitale du Rohan est déplacée d'Edoras à Fort-le-Cor !
-qstr_Dale_capital_moved_f|La capitale de Dale à été déplacé de Dale à Esgaroth !
+qstr_Dale_capital_moved_f|La capitale du Val à été déplacée du Val à Esgaroth !
 qstr_Gundabad_capital_mov|La capitale du Gundabad à été déplacé de Gundabad à Ville des Gobelins !
 qstr_The_hosts_of_{s2}_re|Les armées de {s2} se replient jusqu’à leurs terres ! 
 qstr____Ruins_of_{s1}___| Ruines de {s1}
@@ -897,8 +897,8 @@ qstr_Battles_only|Batailles uniquement
 qstr_Doubled|multiplié par deux
 qstr_Tripled|multiplié par trois
 qstr_Quadrupled|multiplié par quatre
-qstr_You_drank_the_Ent_Wa|Vous buvez l'Eau des Ents...
-qstr_You_used_the_Orc_Bre|Vous avez  utilisé de la mixture orque
+qstr_You_drank_the_Ent_Wa|Vous avez bu l'Eau des Ents...
+qstr_You_used_the_Orc_Bre|Vous avez utilisé la bière orque.
 qstr_Fangorn_search:_fail|Recherche de Fangorn : échouée.
 qstr_^^^A_great_victory!^|^^^C'est une grande victoire !^^^Donc, c'est ce que voulaient dire tous ces mythes à propos de Fangorn...
 qstr_^^^Defeated...^^^Sca|^^^Battus..^^^Éparpillés dans la forêt de Fangorn... Seul{/e}...
@@ -918,7 +918,7 @@ qstr_dwarf|Nain
 qstr_troll|Troll
 qstr_dunedain|dúnedain
 qstr_lothlorien|Lothlórien
-qstr_rivendell|Fondcombe
+qstr_rivendell|Fondeval
 qstr_mirkwood|Grand'Peur
 qstr_evil_man|homme mauvais
 qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
@@ -1240,9 +1240,9 @@ qstr_My_lord_Esgaroth_is_|Mon seigneur, la ville d'Esgaroth est en sécurité. L
 qstr_The_surroundings_of_|Les ruinent de {s12} brûlent. Le pillage était effectivement glorieux !
 qstr_The_surroundings_of_E|Les débris d'Esgaroth brûlent. Le pillage était néanmoins glorieux !
 qstr_This_is_welcome_news|Ce sont de bonnes nouvelles effectivement {playername}. Nous n'étions pas préparés à une action aussi téméraire de la part des corsaires. Mais je vous remercie, les voiles noires ont été coulées, et nous pouvons espérer que nous leur avons porté un coup sévère aujourd'hui. Vous avez toute notre gratitude.
-qstr__Good_work_{playerna|Bon travail {playername} ! Ils ont été plus rusés que nous ne le pensions, accordons leur ceci. Mais ces Orientaux ne se battent pas aussi bien sur leurs bateaux que sur leurs montures apparemment ! Peut être devrions nous penser à créer notre propre flotte... Quoi qu'il en soit,  nous vous remercions {playername}, au nom d'Esgaroth et du peuple de Dale.
+qstr__Good_work_{playerna|Bon travail {playername} ! Ils ont été plus rusés que nous ne le pensions, accordons leur ceci. Mais ces Orientaux ne se battent pas aussi bien sur leurs bateaux que sur leurs montures apparemment ! Peut être devrions nous penser à créer notre propre flotte... Quoi qu'il en soit,  nous vous remercions {playername}, au nom d'Esgaroth et du peuple du Val.
 qstr_Even_from_here_we_co|Même d'ici, nous avons pu voir les flammes et sentir le désespoir de nos ennemis dans le vent ! C'est une belle réussite {playername}. Laissons la terreur frapper le coeur de chaque homme, femme et enfant du Gondor, qu'ils sachent que même leurs plus puissantes forteresses ne sont pas à l'abri de nos armées !
-qstr_Even_from_here_we_cou|Même d'ici, nous avons pu voir les flammes et sentir le désespoir de nos ennemis dans le vent ! C'est une belle réussite {playername}. Laissons la terreur frapper le coeur de chaque homme, femme et enfant de Dale, qu'ils sachent que même leurs plus puissantes forteresses ne sont pas à l'abri de nos armées !
+qstr_Even_from_here_we_cou|Même d'ici, nous avons pu voir les flammes et sentir le désespoir de nos ennemis dans le vent ! C'est une belle réussite {playername}. Laissons la terreur frapper le coeur de chaque homme, femme et enfant du Val, qu'ils sachent que même leurs plus puissantes forteresses ne sont pas à l'abri de nos armées !
 qstr_My_lord_they_fell_up|Mon seigneur, il nous ont attaqués en grand nombre. Nous ne pouvons pas repousser les corsaires.
 qstr_My_lord_they_fell_upo|Mon seigneur, il nous ont attaqués en grand nombre. Nous ne pouvons pas repousser les guerriers de Rhûn.
 qstr_The_raid_on_{s12}_fa|Le raid sur {s12} à échoué, à cause de l’incompétence de nos alliés !
@@ -1278,7 +1278,7 @@ qstr_Orcs_of_Gundabad_and|les orques de Gundabad et les guerriers de Rhûn
 qstr_Men_of_Gondor|Hommes du Gondor
 qstr_Riders_of_Rohan|Cavaliers du Rohan
 qstr_Elves_of_Imladris_an|les elfes de Imladris et de la Lothlorien
-qstr_Men_of_Dale_Dwarves_|les hommes de Dale, les nains d'Erebor, les vassaux des Béorniens et les elfes de Grand'Peur
+qstr_Men_of_Dale_Dwarves_|Les hommes du Val, les nains d'Erebor, les vassaux des Béorniens et les elfes de Grand'Peur
 qstr_Ah_{playername}_it_i|Ah {playername}, je suis heureux que vous ayez pu venir. La guerre est à notre porte et nous avons besoin de soldats et de capitaines prêts à respecter leur serment.^^Nous sommes en guerre avec {s11}, mais nous devons rassembler nos forces et affaiblir l'ennemi avant de pouvoir porter la guerre chez eux et nous emparer de leurs places fortes. Chaque défaite de nos ennemis nous rapprochera de la victoire et renforcera notre détermination, donc je vous fais confiance pour affronter nos ennemis de toutes parts, qu'il s'agisse d'éclaireurs ou d'une armée complète. Pour l'instant ne vous jetez pas seul dans la bataille, vous devrez combattre aux cotés de nos braves capitaine et aussi de nos alliés.
 qstr_About_time_you_showe|Il était temps que vous arriviez {playername} ! Nous sommes en guerre maintenant et je ne tolérerai aucune insubordination. Nous combattons contre {s11}, mais nous devons rassembler nos forces et écraser l'ennemi sur le terrain avant de pouvoir assiéger leurs forteresses. Chaque défaite de nos ennemis renforcera nos efforts de guerre et nous rapprochera de leur destruction totale. Donc je vous fais confiance pour saisir la moindre opportunité de les combattre, qu'il s'agisse d’éclaireurs ou d'une armée complète. Vous devrez aussi soutenir nos capitaines et nos alliés si vous les voyez combattre. Ne les abandonnez pas, ou je le saurai.
 qstr_we_are_fighting_agai|Nous combattons contre {s13}
@@ -1455,7 +1455,7 @@ qstr_{s9}_asked_you_to_fr|{s9} vous a demandé de délivrer {s13} de la menace d
 qstr_the_Dwarves_so_that_|des nains, si vous passez par Erebor ou les Monts De Fer, vous pourrez vous équipez d'une arme sorti des légendaires forges naines.
 qstr_Gondor_so_that_if_yo|Gondor, si vous passer sur leurs terres vous pourrez achetez une de leurs célèbres armures
 qstr_Rohan_so_that_if_you|Rohan, si vous traversez leurs terres vous pourrez acquérir un de leurs superbes chevaux.
-qstr_Dale_so_that_if_you_|Dale, si vous traversez leurs terres, vous pourrez vous équiper d'un de leurs célèbres arcs.
+qstr_Dale_so_that_if_you_|Le Val, comme ça si vous traversez leurs terres, vous pourrez vous équiper d'un de leurs célèbres arcs.
 qstr_Without_my_help_you_|Sans mon aide vous seriez tous morts et enterrés !^^Je viens répondre à l'appel de Saroumane de l'Isengard. Contrariez moi et je vous élimine !
 qstr_Without_my_help_you_w|Sans mon aide vous seriez tous morts et enterrés !^^Je viens répondre à l'appel du Seigneur du Mordor, qui sera bientôt le Seigneur du Monde.
 qstr__*snort*_There_is_on|*grognement* Il n'y a qu'un seul Seigneur du Monde vermine. Tôt ou tard, vous devrez en répondre à Lugbúrz, mauviette !

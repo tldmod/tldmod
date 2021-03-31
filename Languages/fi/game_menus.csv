@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|Arvon ansaitsemistahti: {s7}
 mno_strat_tweaks_back|Takaisin asetusvalikkoon.
 menu_camp_action|^^^^^^^^^ Mikä kohde?
 mno_camp_drink_water|Juo Entin vettä!
+; mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|Takaisin...
 menu_assasins_attack_player_won|Olet onnistuneesti peitonnut salamurhaajat {s2}sta, lähetettynä {s3} puolesta.
 menu_assasins_attack_player_retreat|Pakenit elävänä!
@@ -200,7 +201,7 @@ mno_encounter_order_attack|Käske miestesi liittyä taisteluun {reg21?attack:fac
 mno_control_allies_menu|Käytä vaikutusvaltaa komentaaksesi liittolaisiasi taistelukentällä.
 mno_encounter_hide|Piiloudu viholliselta...
 mno_special_whip|Kiiruhda eteenpäin heitä kohti murtaen {s4}.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 mno_encounter_leave|Irroittaudu taistelusta.
 mno_encounter_retreat|Peräänny, jättäen joitakin sotilaita perääsi suojaten vetääntymisesi.
 mno_player_control_allies_simple|Komenna heitä ja hyökkää vihollisten kimppuun

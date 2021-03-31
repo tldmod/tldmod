@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|지위 획득 비율: {s7}
 mno_strat_tweaks_back|조정 메뉴로 돌아가기
 menu_camp_action|^^^^^^^^^어떤 물건을 선택하시겠습니까?
 mno_camp_drink_water|엔트워터를 마신다!
+; mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|돌아가기
 menu_assasins_attack_player_won|당신은 {s3}에 의해 보내진 암살자들을 {s2}에서 성공적으로 물리쳤습니다.
 menu_assasins_attack_player_retreat|당신은 목숨을 건진 채 도망쳤습니다!
@@ -200,7 +201,7 @@ mno_encounter_order_attack|당신이 뒤로 물러나 있는 동안 병사들에
 mno_control_allies_menu|당신의 아군에게 명령하기 위해 영향력을 사용한다.
 mno_encounter_hide|적으로부터 숨는다...
 mno_special_whip|{s4}을(를) 채찍질하며 그들을 향해 돌격한다
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 mno_encounter_leave|떠나기
 mno_encounter_retreat|몇몇 병사들을 당신이 후퇴할 때 남겨놓기
 mno_player_control_allies_simple|그들에게 적에게 돌격하라 명령한다.

@@ -1105,17 +1105,17 @@ trp_smith_oscamp_pl|Obozowa Kuźnia
 trp_smith_isengard|Burz Żelazogrzmot
 trp_smith_isengard_pl|Podziemna Kuźnia
 trp_smith_uoutpost|Gurzuk Żelaznozęby
-; trp_smith_uoutpost_pl|outpost smithy
+trp_smith_uoutpost_pl|Kowal Posterunku
 trp_smith_uhcamp|Rabzug Rdzawy
 trp_smith_uhcamp_pl|Obozowa Kuźnia
 trp_smith_urcamp|Glurk
 trp_smith_urcamp_pl|Obozowa Kuźnia
 trp_smith_cgaladhon|Dirufin Łuczarz
-; trp_smith_cgaladhon_pl|elven weaponmakers
+trp_smith_cgaladhon_pl|Elficki Wytwórca Broni
 trp_smith_cdolen|Dimirian Grotnik
-; trp_smith_cdolen_pl|elven weaponmakers
+trp_smith_cdolen_pl|Elficki Wytwórca Broni
 trp_smith_camroth|Getasistan
-; trp_smith_camroth_pl|elven weaponmakers
+trp_smith_camroth_pl|Elficki Wytwórca Broni
 trp_smith_thranduils_halls|Thurinor
 trp_smith_thranduils_halls_pl|Kuźnia
 trp_smith_woodelf_camp|Calechir
@@ -1139,7 +1139,7 @@ trp_smith_khand_pl|Kuźnia
 trp_smith_umbar|Kowal Fuinir
 trp_smith_umbar_pl|Kuźnia
 trp_smith_imladris|Duifirian
-; trp_smith_imladris_pl|elven weaponmakers
+trp_smith_imladris_pl|Elficki Wytwórca Broni
 trp_smith_dolguldur|Shtazg Dulbash
 trp_smith_dolguldur_pl|Kuźnia
 trp_smith_north_rhun|Ognjemir Kladivo
@@ -1159,7 +1159,7 @@ trp_smith_mordor_ac_pl|Kuźnia
 trp_smith_isengard_ac|Burz Żelazorąb
 trp_smith_isengard_ac_pl|Podziemna Kuźnia
 trp_smith_lorien_ac|Dimirian Grotnik
-; trp_smith_lorien_ac_pl|elven weaponmakers
+trp_smith_lorien_ac_pl|Elficki Wytwórca Broni
 trp_smith_woodelf_ac|Calechir
 trp_smith_woodelf_ac_pl|Kuźnia
 trp_smith_dwarf_ac|Kowal Żelaznych Wzgórz
@@ -1171,7 +1171,7 @@ trp_smith_rhun_ac_pl|Prowizoryczna Kuźnia
 trp_smith_guldur_ac|Shtazg Dulbash
 trp_smith_guldur_ac_pl|Kuźnia
 trp_smith_imladris_ac|Duifirian
-; trp_smith_imladris_ac_pl|elven weaponmakers
+trp_smith_imladris_ac_pl|Elficki Wytwórca Broni
 trp_smith_dunland_ac|Dorrowuld Żelazna Pika
 trp_smith_dunland_ac_pl|Kuźnia
 trp_smith_harad_ac|Har Tęgogłowy
@@ -1221,7 +1221,7 @@ trp_barman_baraddur_pl|Zamek
 trp_barman_morannon|Karczmarz
 ; trp_barman_morannon_pl|the Leader's Cave
 trp_barman_mmorgul|Karczmarz
-; trp_barman_mmorgul_pl|the Tower
+trp_barman_mmorgul_pl|Wieża
 trp_barman_cungol|Karczmarz
 trp_barman_cungol_pl|Zamek
 trp_barman_isengard|Karczmarz
@@ -1233,7 +1233,7 @@ trp_barman_cdolen_pl|Zamek drewniany
 trp_barman_camroth|Karczmarz
 trp_barman_camroth_pl|Zamek drewniany
 trp_barman_thalls|Karczmarz
-; trp_barman_thalls_pl|the Throne Room
+trp_barman_thalls_pl|Sala Tronowa 
 trp_barman_beorn|Karczmarz
 ; trp_barman_beorn_pl|Beorn's Hall
 trp_barman_moria|Karczmarz
@@ -1241,7 +1241,7 @@ trp_barman_moria|Karczmarz
 trp_barman_dale|Karczmarz
 trp_barman_dale_pl|Zamek
 trp_barman_esgaroth|Karczmarz
-; trp_barman_esgaroth_pl|the Hall
+trp_barman_esgaroth_pl|Hala
 trp_barman_erebor|Karczmarz
 trp_barman_erebor_pl|Wielka Hala Thróra
 trp_barman_dolguldur|Karczmarz

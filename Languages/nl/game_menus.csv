@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|Rank steiging radius: {s7}
 mno_strat_tweaks_back|Terug naar het tweaks menu.
 menu_camp_action|^^^^^^^^^ Welk object?
 mno_camp_drink_water|Drink het Ent Water!
+; mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|Terug.
 menu_assasins_attack_player_won|Je hebt de moordenaars succesvol afgeslagen van {s2}, gestuurd door {s3}. 
 menu_assasins_attack_player_retreat|Je bent levend ontsnapt!
@@ -200,7 +201,7 @@ mno_encounter_order_attack|Order je troepen om {reg21?attack:face them} zonder j
 mno_control_allies_menu|Gebruik Influentie om Je Bondgenoten te Commanderen in het Veld.
 mno_encounter_hide|Verstop je voor de vijand...
 mno_special_whip|Ren naar ze toe {s4}.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 mno_encounter_leave|Stop met aanvallen.
 mno_encounter_retreat|Trek terug, laat wat soldaten achter om je te verdedigen.
 mno_player_control_allies_simple|Commandeer ze en Val de vijand aan

@@ -202,7 +202,7 @@ qstr_The_record_of_Balin_|La crónica de la expedición perdida de Balin.
 qstr_Who_might_be_interes|¿A quién le pondría interesar?
 qstr_Bonus_to_Shield_Skil|Bonifica la habilidad de Escudo
 qstr_Turns_nature_to_your|Pone a la naturaleza de tu parte
-; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
+qstr_when_equipped.__Effe|cuando se equipa (mejora con Dominio de la tierras salvajes)
 qstr_Bonus_to_Power_Strik|Bonifica la Potencia de Golpe
 qstr_+1_to_Trainer|+1 a Instrucción
 qstr_Recruits_Tribal_Orcs|Recluta Orcos Tribales
@@ -226,7 +226,7 @@ qstr_+2_to_Athletics|+2 a Atletismo
 qstr_Less_Dunnish_upkeep|Reduce coste de mantenimiento de Dunlendinos
 qstr_Less_Wargs_upkeep|Reduce coste de mantenimiento de Huargos
 qstr_Light_Armor|Armadura ligera
-; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
+qstr_Bonus_to_Strength__P|Bonificación de fuerza (sólo para el jugador)
 qstr_Lead_more_Orcs|Liderar a más orcos
 qstr_+{reg1}_to_Party_Mor|+{reg1} a la Moral del Grupo
 qstr_Range:_{reg55}|Distancia: {reg55}
@@ -276,7 +276,7 @@ qstr_{s3}_is_no_longer_un|{s3} ya no está bajo asedio.
 qstr_Enemies_spotted_near|Enemigos avistados cerca de {s1}.
 qstr_Your_relation_with_{|Tu relación con {s1} ha mejorado.
 qstr_Your_relation_with_{s|Tu relación con {s1} ha empeorado.
-; qstr_{s1}_gained_faction_|{s1} gained faction strength!
+qstr_{s1}_gained_faction_|¡{s1} ha ganado fuerza!
 qstr_{s1}_lost_faction_st|¡{s1} ha perdido fuerza!
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?estaba:está ahora mismo} en {s3}.
 qstr_{s2}_{reg3?was:is}_t|{s2} {reg3?estaba:está} viajando hacia {s3} y {reg3?estaba:debería estar} cerca de {s4}{reg3?: en este momento}.
@@ -693,10 +693,10 @@ qstr_A_thunderstorm_from_|Una tormenta procedente de las Montañas Nubladas se d
 qstr_A_thunderstorm_from_t|Una tormenta procedente de las Montañas Nubladas se desata sobre el campo de batalla. Los arqueros encuentran difícil disparar con este mal tiempo.
 qstr_A_poisonous_fog_from|Una niebla venenosa procedente de Dol Guldur flota en el campo de batalla. Tus tropas y tú os sentís debilitados. Hay miedo entre los soldados.
 qstr_A_poisonous_fog_from_|Una niebla venenosa procedente de Dol Guldur flota en el campo de batalla.  Tú no notas ninguna diferencia, pero puedes oír el sufrimiento de tus enemigos y oler su miedo.
-; qstr_You_shapeshift_into_|You shapeshift into a bear!
-; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
-; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
-; qstr_You_change_back_to_h|You change back to human form...
+qstr_You_shapeshift_into_|¡Te has convertido en oso!
+qstr_You_got_{reg1}_xp_in|Ganas %d puntos de experiencia al convertirte en oso.
+qstr_Your_ability_to_chan|Has conseguido despertar tu habilidad innata como bailarín de piel, a partir de ahora podrás recorrer tu salvaje camino tanto como hombre como oso.
+qstr_You_change_back_to_h|Vuelves a tu forma humana...
 qstr_Your_mount_stumbles!|¡Tu montura trastabilla! Parece haber quedado coja...
 qstr_Bitten_by_your_own_w|¡Tu propio huargo te ha mordido!
 qstr_You_weigh_too_much_f|¡Pesas demasiado para montar un poney!
@@ -780,7 +780,7 @@ qstr_End_them_all!|¡Acabad con todos!
 qstr_Drive_them_back!|¡Rechazad su avance!
 qstr_Protect_the_City!|¡Proteged la Ciudad!
 qstr_Forward!_Board_them!|¡Adelante! ¡Al abordaje!
-; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
+qstr_The_Last_Days_of_the_|«The Last Days of the Third Age» tiene una inteligencia artificial de asedio avanzada muy distinta a la del juego base («Native»). Todos los asediantes y defensores se organizarán en sus respectivos flancos derechos, centrales e izquierdos. Por lo que los jugadores que encabecen el asedio solo tomarán el control de una cantidad limitada de sus propias tropas.
 qstr_Reached_Gauntlet_wav|¡Nueva oleada de refuerzos {reg1}!
 qstr_Ballista:_out_of_amm|Balista: ¡Sin munición!
 qstr_Ballista:_turn_CURSO|Balista: Girar con CURSOR, Apuntar con MAYÚS, Disparar con ESPACIO, Elegir proyectil con T, Salir con F
@@ -1415,9 +1415,9 @@ qstr_Your_party_must_be_at|Tu grupo debe ser de al menos 10 para empezar esta mi
 qstr_{s9}_asked_you_to_def|{s9} te ha pedido que defiendas una aldea que está siendo atacada cerca de {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} te ha pedido que arrases una aldea cerca de {s1}.
 qstr_These_soldiers_may_w|Puede que estos soldados cambien el curso de mis planes, {playername}. No me cabe duda deque los has entrenado bien. Tienes mi gratitud, y mis felicitaciones.
-; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
+qstr_I_wish_you_had_train|Esperaba que pudieras entrenarlos a todos, {playername}. Pero en los tiempos que corren todo ayuda, por poco que sea.
 qstr_Good_work_in_shaping|Buen trabajo dándoles forma a esos reclutas, {playername}, has sido de mucha utilidad. Esperemos que duren más que el último lote, pero si no es así, ven a verme de nuevo.
-; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
+qstr_Is_that_all_you_coul|¿Eso es todo, {playername}? Con semejante despropósito no tengo ni para cubrir las bajas de ayer, dámelos.
 qstr_Well_the_soldiers_ar|Bueno, los soldados están bajo tu mando ahora, señor. Estoy {seguro/segura} de que cuidarás bien de ellos.
 qstr_Well_you_may_do_as_y|Bueno, haz lo que quieras. Mis compañeros y yo siempre podemos curtir a unos cuantos más si hace falta.
 qstr_{s9}_asked_you_to_br|{s9} te ha pedido que le traigas un troll salvaje para usarlo en su ejército.

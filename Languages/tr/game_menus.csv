@@ -68,7 +68,7 @@ mno_start_go|GONDOR, Beyaz Kulenin Krallıgı
 mno_start_ro|ROHAN, At Halkı
 mno_start_du|DUNEDAIN, Çok Eski bir İnsan Hanedanlıgı
 mno_start_be|BEORNINGLER, Ayı Halkı
-mno_start_wo|ORMANCILAR, Kuyutorman saçaklarından                             
+mno_start_wo|ORMANCILAR, Kuytuorman'ın eteklerinden                         
 mno_start_da|DALE'in kuzey krallıgı
 menu_start_good_elf|^^^^^^^^^^Hangi Ormanda yasiyorsun Yasli Kisi ?
 mno_start_ri|AYRIKVADİ'den, Lord Elrond
@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|Rütbe kazanım oranı: {s7}
 mno_strat_tweaks_back|Ayarlar menüsüne dön.
 menu_camp_action|^^^^^^^^ Hangi Eşya?
 mno_camp_drink_water|Ent Suyundan İç !
+mno_camp_drink_orc_brew|Ork içkisini gönder!
 mno_camp_action_4|Geri.
 menu_assasins_attack_player_won|{s3} tarafından gönderilen {s2} suikastçilerini başarıyla alt ettin.
 menu_assasins_attack_player_retreat|Hayatını Kurtardın.
@@ -200,7 +201,7 @@ mno_encounter_order_attack|Askerlerine sensiz {reg21?saldırmalarını:çarpış
 mno_control_allies_menu|Alanda müttefikleri yönetmek için Nüfuz kullan.
 mno_encounter_hide|Düşmandan saklan...
 mno_special_whip|{s4} Parçalayarak ileri atıl.
-mno_encounter_attack_bearform|{reg21?Ayı olarak savaşa atıl:Şekil degiştir ve onlarla karşılaş}.                                                                                            
+mno_encounter_attack_bearform|{reg21?Savaşa ayı formunda dal:Derini degiştir ve onlarla yüzleş}.
 mno_encounter_leave|Geri çekil.
 mno_encounter_retreat|Kaçışını saglamaları için birkaç askerini arkada bırakarak geri çekil.
 mno_player_control_allies_simple|Onları yönet ve düşmana saldır

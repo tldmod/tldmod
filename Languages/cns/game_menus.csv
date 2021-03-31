@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|军衔提升速度：{s7}
 mno_strat_tweaks_back|返回调整菜单.
 menu_camp_action|^^^^^^^^^ 你要做何事?
 mno_camp_drink_water|喝树人水
+mno_camp_drink_orc_brew|跟大伙一起干了半兽人酒！
 mno_camp_action_4|返回.
 menu_assasins_attack_player_won|你杀掉了自{s2}来的刺客，他们听命于{s3}。
 menu_assasins_attack_player_retreat|你丢掉了你的性命!
@@ -200,7 +201,7 @@ mno_encounter_order_attack|你坐镇指挥命令你的部下 {reg21?攻击:迎�
 mno_control_allies_menu|用影响力在战场上指挥你的盟友。
 mno_encounter_hide|躲避敌人…
 mno_special_whip|向着{s4}冲锋，并碾碎他们。
-mno_encounter_attack_bearform|{reg21?变成巨熊进入战场:换皮，准备撕碎敌人}。
+mno_encounter_attack_bearform|{reg21?变形为熊进入战场:换皮，准备撕碎敌人}。
 mno_encounter_leave|脱离
 mno_encounter_retreat|留下一些士兵拖住敌军，好让主力撤退。
 mno_player_control_allies_simple|指挥他们向敌人冲锋

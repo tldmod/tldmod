@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|ランクポイント獲得レート:{s7}
 mno_strat_tweaks_back|調整メニューに戻る
 menu_camp_action|^^^^^^^^^ どのアイテムですか？
 mno_camp_drink_water|エント水を飲むぞ！
+; mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|戻る
 menu_assasins_attack_player_won|あなたは{s3}によって送り込まれた、 {s2}の暗殺者を撃退しました。
 menu_assasins_attack_player_retreat|あなたは命からがら逃げました！
@@ -200,7 +201,7 @@ mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}�
 mno_control_allies_menu|影響力ポイントを消費して戦場にいる友軍の指揮をする。
 mno_encounter_hide|敵から隠れる・・・
 mno_special_whip|{s4}を打ちながら威圧する。
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 mno_encounter_leave|撤退する。
 mno_encounter_retreat|数名の兵をしんがりに残し、撤退する。
 mno_player_control_allies_simple|彼らの指揮をとって敵勢へ突撃する

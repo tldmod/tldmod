@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|Szybkość zdobywania rangi : {s7} Normal-Normal
 mno_strat_tweaks_back|Wróć do menu ulepszeń.
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
 mno_camp_drink_water|Wypić Wodę Entów!
+; mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|Wróć.
 menu_assasins_attack_player_won|Udało ci się pokonać zabójców {s2}, których nasłał {s3}.
 menu_assasins_attack_player_retreat|Uciekasz zachowując życie!
@@ -200,7 +201,7 @@ mno_encounter_order_attack|Rozkaż swoim oddziałom {reg21?zaatakować:stawić i
 mno_control_allies_menu|Użyj Wpływu aby dowodzić swoimi sojusznikami na polu walki
 mno_encounter_hide|Ukryj się przed wrogiem. . .
 mno_special_whip|Rusz w ich kierunku łamiąc {s4}.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+mno_encounter_attack_bearform|{reg21?Rzuć się do walki w formie niedźwiedzia:Zmień skórę i zmierz się z nimi}
 mno_encounter_leave|Wycofaj się.
 mno_encounter_retreat|Wycofaj się, zostawiając kilku żołnierzy, by osłaniali twój odwrót.
 mno_player_control_allies_simple|Przejmij dowodzenie i szarżuj na wrogów 

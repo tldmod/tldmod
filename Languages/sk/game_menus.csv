@@ -24,7 +24,7 @@ mno_build_your_own_scene|** Vybuduj svoju vlastnú scénu pre TLD **
 mno_go_back|Späť
 menu_tutorial|^^ Vitaj v Návode Boja pre Mount & Blade. Naučíš sa tu základy boja a dostaneš tiež stručný prehľad o rozkazoch, ktoré môžeš dávať svojím jednotkám na bojovom poli.
 mno_tutorial_1|Cvičenie #1: Základný pohyb a výber zbrane. {s1}
-mno_tutorial_2|Cvičenie #2: Boj zo štítom. {s2}
+mno_tutorial_2|Cvičenie #2: Boj so štítom. {s2}
 mno_tutorial_3|Cvičenie #3: Boj bez štítu. {s3}
 mno_tutorial_3b_door|Ďalšia úroveň
 mno_tutorial_4|Cvičenie #4: Jazdenie na koni alebo na vrokovi. {s4}
@@ -68,7 +68,7 @@ mno_start_go|GONDOR, Kráľovstvo Bielej Veže
 mno_start_ro|ROHAN, páni koní
 mno_start_du|DÚNADANIA, prastará dynastia Ľudí
 mno_start_be|GRIZLOVCI, Medvedí ľud
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+mno_start_wo|DREVÁK, z odkvapov Temnolesa :D
 mno_start_da|Severské Kráľovstvo DOLU
 menu_start_good_elf|^^^^^^^^^^v ktorom Lese žiješ, Starší?
 mno_start_ri|ROKLINKA, panstvo Lorda Elronda
@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|Hodnota získanej Hodnosti: {s7}
 mno_strat_tweaks_back|Späť do menu úprav.
 menu_camp_action|^^^^^^^^^ Ktorý predmet?
 mno_camp_drink_water|Vypi Entskú Vodu!
+mno_camp_drink_orc_brew|Prejdi okolo Ohyzdieho Kotla!
 mno_camp_action_4|Späť.
 menu_assasins_attack_player_won|Vrahovia z {s2}, poslaný {s3}, boli úspešne porazený.
 menu_assasins_attack_player_retreat|Unikol si a si stále nažive!
@@ -200,7 +201,7 @@ mno_encounter_order_attack|Prikázať svojím vojakom aby {reg21?zaútočili:če
 mno_control_allies_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
 mno_encounter_hide|Schovať sa pred nepriateľom
 mno_special_whip|Vrhnúť sa vpred naproti nim lámajúc {s4}.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+mno_encounter_attack_bearform|{reg21?Skoč do boja ako medveď:Premeň sa a čeľ im}.
 mno_encounter_leave|Odísť.
 mno_encounter_retreat|Nechať za sebou niekoľko vojakov, aby kryli tvoj ústup.
 mno_player_control_allies_simple|Prevziať nad nimi velenie a zaútočiť na nepriateľa

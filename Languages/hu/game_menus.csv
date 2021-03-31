@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|Rang szerzésének üteme: {s7}
 mno_strat_tweaks_back|Vissza a finomítások menübe.
 menu_camp_action|^^^^^^^^^     Melyik tárgy?
 mno_camp_drink_water|Idd meg az Entvizet!
+; mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|Vissza.
 menu_assasins_attack_player_won|Sikeresen legyőzted a(z) {s2} bérgyilkosait, melyeket {s3} küldött.
 menu_assasins_attack_player_retreat|Megmenekültél!
@@ -200,7 +201,7 @@ mno_encounter_order_attack|Parancsold meg csapataidnak, {reg21?támadjanak:nézz
 mno_control_allies_menu|Használd a Befolyásod, hogy parancsokat osztogass a szövetségeseidnek a csatatéren.
 mno_encounter_hide|Elbújsz az ellenfelek elől...
 mno_special_whip|Rohanj velük szembe, megroppantva a {s4}t.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 mno_encounter_leave|Visszavonulás.
 mno_encounter_retreat|Visszavonulás, néhány katonát hátrahagyva, hogy fedezzék a visszavonulásodat.
 mno_player_control_allies_simple|Vezesd őket, és rohand le az ellenséget

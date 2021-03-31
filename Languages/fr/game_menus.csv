@@ -10,12 +10,12 @@ menu_start_game_3|^^^^^^^^Choisissez votre scénario :
 mno_custom_battle_scenario_1|Embuscade, Gondor contre Harad
 mno_custom_battle_scenario_12|Choisissez les factions pour la bataille
 mno_custom_battle_scenario_3|Embuscade, Elfes contre Númenóréens noirs
-mno_custom_battle_scenario_4|Défense du Gouffre de Helm, Rohan contre Isengard
+mno_custom_battle_scenario_4|Défense de la Gorge de Helm, Rohan contre Isengard
 mno_custom_battle_scenario_5|Embuscade : factions nordiques contre Rhûn
 mno_custom_battle_scenario_6|Attaque de siège, Orques contre Nains
 mno_custom_battle_scenario_7|Embuscade, Orques contre Bois-Obscur
 mno_custom_battle_scenario_8|Le baroud d'honneur du peuple de Durin
-mno_custom_battle_scenario_88|Pourchasser un groupe d'éclaireurs Orques
+mno_custom_battle_scenario_88|Pourchasser un groupe d'éclaireurs orques
 mno_custom_battle_scenario_11|Batailles de test (équilibrage)
 mno_custom_battle_scenario_10|Bataille de test de scène
 mno_troll_battle_scenario|Batailles de test de Trolls
@@ -24,27 +24,27 @@ mno_build_your_own_scene|** Construisez votre propre scène pour TLD **
 mno_go_back|Retour
 menu_tutorial|^^Bienvenue au Tutoriel de Combat de Mount & Blade. Ici vous apprendrez les bases du combat ainsi qu'un aperçu du commandement de troupes sur le champ de bataille. 
 mno_tutorial_1|Tutoriel #1 : Mouvements Basiques et sélection d'arme. {s1}
-mno_tutorial_2|Tutoriel #2 : Combattre avec bouclier {s2}
-mno_tutorial_3|Tutoriel #3 : Combattre sans bouclier {s3}
+mno_tutorial_2|Tutoriel #2 : Combattre avec bouclier. {s2}
+mno_tutorial_3|Tutoriel #3 : Combattre sans bouclier. {s3}
 mno_tutorial_3b_door|niveau suivant
-mno_tutorial_4|Tutoriel #4 : Chevaucher un cheval ou un warg {s4}
-mno_tutorial_5|Tutoriel #5 : Commander un groupe de soldats {s5}
+mno_tutorial_4|Tutoriel #4 : Chevaucher un cheval ou un warg. {s4}
+mno_tutorial_5|Tutoriel #5 : Commander un groupe de soldats. {s5}
 mno_go_back_dot|Retour.
-mno_action_view_troop_trees|Regarder l'arbre des troupes.
+mno_action_view_troop_trees|Voir l'arbre des troupes.
 mno_view_upkeep_costs|Voir les coûts d'entretien.
 mno_view_character_report|Voir les détails du personnage.
 mno_view_party_size_report|Voir le rapport sur la taille du groupe.
 mno_view_morale_report|Voir le rapport sur le moral des troupes.
-mno_view_character_report_02|Voir le statu des compagnons.
+mno_view_character_report_02|Voir le statut des compagnons.
 mno_view_faction_strengths_report|Voir le rapport de force des factions.
 mno_view_traits_report|Voir les traits de caractère.
 mno_resume_travelling|Reprendre le voyage.
 mno_custom_battle_go|Commencer.
 mno_leave_custom_battle_2|Annuler.
-menu_custom_battle_end|^^^^^^La bataille est terminée. {s1} Votre camp a tué {reg5} ennemis et perdu {reg6} troupes dans les combats.^Vous avez personnellement tué {reg7} opposants durant la bataille.
+menu_custom_battle_end|^^^^^^La bataille est terminée. {s1} Votre camp a tué {reg5} ennemis et perdu {reg6} soldats dans les combats.^Vous avez personnellement tué {reg7} opposants durant la bataille.
 mno_replay|Jouer à nouveau cette bataille.
 mno_continue_dot|Continuer.
-menu_custom_battle_durin_end|^^^^^^C'était un baroud d'honneur admirable.^^ Vous et vos compagnons avez défait {reg5} ennemis^Vous avez personnellement vaincu {reg7} adversaires au combat/ 
+menu_custom_battle_durin_end|^^^^^^C'était un baroud d'honneur admirable, mais finalement voué à l'échec.^^ Vous et vos compagnons avez défait {reg5} ennemis.^Vous avez personnellement vaincu {reg7} adversaires au combat.
 mno_replay_cbd|Jouer à nouveau cette bataille.
 mno_continue_dot_cbd|Continuer.
 mno_dot_go_back|. Retour
@@ -62,19 +62,19 @@ mno_start_em|Un Homme, corrompu par Sauron
 menu_start_hand|^^^^^^^^^Votre Maître est la Main blanche^Choisissez votre race
 mno_start_whor|Un orque, servant la Main Blanche
 mno_start_isur|Un des Uruk-Hai, élevé en Isengard
-mno_start_duma|Un homme du Pays de Dun, les Plaines de l'Ouest
-menu_start_good_man|^^^^^^^^^^Sélectionnez votre appartenance :
+mno_start_duma|Un homme de la Dunlande, les Plaines de l'Ouest
+menu_start_good_man|^^^^^^^^^^Sélectionnez votre peuple :
 mno_start_go|GONDOR, le royaume de la Tour Blanche
-mno_start_ro|ROHAN, les hommes aux chevaux
-mno_start_du|DUNEDAINS, de l'ancienne dynastie des hommes
+mno_start_ro|ROHAN, le Pays du Cheval
+mno_start_du|DUNEDAIN, de l'ancienne dynastie des hommes
 mno_start_be|BEORNIENS, les hommes Ours
 mno_start_wo|FORESTIERS, du couvert de Grand'Peur
-mno_start_da|Le royaume occidental de DALE
+mno_start_da|Le royaume occidental du VAL
 menu_start_good_elf|^^^^^^^^^^Dans quelle forêt vivez-vous, Ancien ?
-mno_start_ri|FONDCOMBE, du Seigneur Elrond
+mno_start_ri|FONDEVAL, du Seigneur Elrond
 mno_start_lo|La LOTHRORIEN, de Dame Galadriel
 mno_start_mi|GRAND'PEUR, pays des elfes sylvains
-menu_start_good_dwarf|^^^^^^^^^^Chosissez votre lignage :
+menu_start_good_dwarf|^^^^^^^^^^Choisissez votre lignage :
 mno_start_er|Un habitant d'EREBOR
 mno_start_ih|Un mineur des MONTS DU FER
 menu_start_gondor|^^^^^^^^^^D'où venez-vous, en Gondor ?
@@ -130,11 +130,11 @@ mno_Dev_Menu|Menu Développeur
 menu_dev_menu|Ce sont les Options Développeurs avec plusieurs outils de triche.^^Cependant, cela peut déclencher des événements, déclencheurs ou changement de campagne en cours de création qui peuvent faire crasher votre partie.^^Utilisez à vos risques et périls !^^Aussi, si vous reportez des bugs, merci de préciser que vous utilisez le Menu de Dev.
 mno_Cheat_enable|Activer la triche/les options de modding.
 menu_game_options|^^^^^^^^Cliquez sur une option pour basculer :
-mno_game_options_war_level_start|La Guerre commence au Niveau :{s1}
+mno_game_options_war_level_start|La Guerre commence au Niveau : {s1}
 mno_game_options_restrict_items|Équipement du joueur restreint : {s7}
 mno_game_options_formations|Formations de bataille et IA : {s7}
-mno_game_options_siege_ai|IA de Siège Avancée :  {s7}
-mno_game_options_town_menu|PnJs des villes toujours disponibles depuis les menus : {s7}
+mno_game_options_siege_ai|IA de Siège Avancée : {s7}
+mno_game_options_town_menu|PNJ des villes toujours disponibles depuis les menus : {s7}
 mno_game_options_cutscenes|Cinématiques : {s7}
 mno_game_options_injuries|Blessures pour les compagnons : {s7}.
 mno_game_options_death|Mort permanente pour les seigneurs et les compagnons : {s7}.
@@ -142,8 +142,8 @@ mno_game_options_death2|Mort permanente pour le joueur (c'est VOUS !) : {s7}.
 mno_game_options_morale|Système de moral de bataille : {s7}
 mno_game_options_animal_ambushes|Embuscades des animaux : {s7}
 mno_game_options_horse_ko|Messages de dommages des cavaliers tombés :  {s7}
-mno_game_options_bright_nights|Nuits plus Lumineuses :  {s7}.
-mno_game_options_camera_pref|Mode de Caméra Préféré :  {s7}.
+mno_game_options_bright_nights|Nuits plus lumineuses : {s7}.
+mno_game_options_camera_pref|Mode de caméra préféré : {s7}.
 mno_game_options_tweaks|Astuces de gameplay...
 mno_game_options_back|Retourner au menu Campement.
 mno_game_options_start_back|Retour.
@@ -164,28 +164,29 @@ mno_strat_tweaks_influence_gain_rate|Taux de gain d'influence : {s7}
 mno_strat_tweaks_rank_gain_rate|Taux de gain de points de rang : {s7}
 mno_strat_tweaks_back|Retour au menu des options.
 menu_camp_action|^^^^^^^^^ Quel objet ?
-mno_camp_drink_water|Boire de l'Eau des Ents !
+mno_camp_drink_water|Boire de l'eau des Ents !
+mno_camp_drink_orc_brew|Faire tourner la bière orque !
 mno_camp_action_4|Retour.
-menu_assasins_attack_player_won|Vous avez vaincu avec succès les assassins de {s2}, envoyé par {s3}.
-menu_assasins_attack_player_retreat|Vous vous êtes échappé en vie !
-menu_fangorn_danger|^^^^^^Étrange, vous entendez des bruits menaçants et tout craque autour de vous.^Les arbres parlent-ils ? Il y a une sensation de profond danger et de douleur dans l'air. ^Vos ordres ?
+menu_assasins_attack_player_won|Vous avez vaincu avec succès les assassins de {s2}, envoyés par {s3}.
+menu_assasins_attack_player_retreat|Vous vous êtes échappé{/e} en sauvant votre vie !
+menu_fangorn_danger|^^^^^^C'est étrange, vous entendez des bruits menaçants tout autour de vous.^Les arbres parlent-ils ? Il y a une sensation de profond danger et de douleur dans l'air. ^Vos ordres ?
 mno_be_quiet_elf|Respectez le courroux des arbres. Circulez calmement et en bon ordre.
 mno_be_quiet|Baissez vos armes et restez calmes ! Maintenant, hors d'ici !
 mno_be_bold|Continuez ! Je n'ai pas peur des plantes ou des vieilles légendes !
 mno_fight_back|Allons voir ! Explorez la zone ! Brûlez un arbre ou deux !
 menu_fangorn_search_fails|^^^^^^Vous explorez la profonde et obscure forêt, mais ne trouvez rien. ^Malgré tout, vous vous sentez de plus en plus observé et menacé.
 menu_fangorn_battle_debrief_won|^^^C'est une grande victoire !^^^Donc, c'est ce que voulaient dire tous ces mythes à propos de Fangorn...
-menu_fangorn_killed_player_only|^^^^^^Vous vous promenez dans l'épaisse forêt.^Tout d'un coup, vous êtes frappé par quelque chose ! Peut-être qu'une grosse branche vous est tombée sur la tête ?^Vous restez inconscient seulement quelques minutes. Vous êtes gravement blessé, mais vous pouvez continuer.
+menu_fangorn_killed_player_only|^^^^^^Vous vous promenez dans l'épaisse et obscure forêt.^Tout d'un coup vous êtes frappé{/e} par quelque chose ! Peut-être qu'une grosse branche vous est tombée sur la tête ?^Vous restez inconscient{/e} seulement quelques minutes. Vous êtes gravement blessé{/e} mais vous pouvez continuer.
 mno_ow_get_out|Aïe ! Sortons de cet endroit maudit !
-menu_fangorn_killed_troop_and_player|^^^^^^Vous vous promenez dans l'épaisse et sombre forêt.^^Tout d'un coup, vous êtes frappé par quelque chose ! Peut-être qu'une grosse branche vous est tombée sur la tête ?^^Lorsque vous revenez à vous, quelques minutes plus tard, vous vous apercevez qu'aucune de vos troupes n'a eu autant de chance.^^
-menu_fangorn_killed_troop_only|^^^^^^^^Vous vous promenez dans l'épaisse et sombre forêt. Vos troupes sont effrayées.^^Soudain, vous entendez des hurlements à l’arrière ! Vous vous dépêchez d'y aller, et trouver certaines de vos troupes sur le sol, au milieu d'une mare de sang.^^Quelques autres sont portés disparus...
+menu_fangorn_killed_troop_and_player|^^^^^^Vous vous promenez dans l'épaisse et sombre forêt.^^Tout d'un coup, vous êtes frappé{/e} par quelque chose ! Peut-être qu'une grosse branche vous est tombée sur la tête ?^^Lorsque vous revenez à vous, quelques minutes plus tard, vous vous apercevez que tous vos soldats n'ont pas eu autant de chance.^^
+menu_fangorn_killed_troop_only|^^^^^^^^Vous vous promenez dans l'épaisse et sombre forêt. Vos troupes sont effrayées.^^Soudain, vous entendez des hurlements à l’arrière ! Vous vous dépêchez d'y aller, juste pour trouver certains de vos soldats gisant sur le sol au milieu d'une mare de sang.^^Quelques autres sont portés disparus...
 mno_get_out|Sortons de cet endroit maudit !
 menu_can_capture_troll|Le Troll sauvage abattu respire encore !^^Ses yeux mauvais ne vous quittent pas, remplis de douleur et de rage.^Même à terre, baignant dans son propre sang, il semble terriblement dangereux...
 mno_killit|Occupez vous de lui ! Faites en sorte qu'il cesse définitivement de respirer.
-mno_cageit1|Enfermez-le dans une cage
-mno_cageit2|Enfermez-le avec l'autre Troll.
+mno_cageit1|Enfermez-le dans une cage et emmenez-le.
+mno_cageit2|Enfermez-le dans la cage avec l'autre troll.
 mno_cheat_disabable|Désactiver les options de triche/de modding.
-menu_drank_ent_water_human|^^^Vous buvez l'eau. Elle a un goût clair et rafraîchissant. Elle a un parfum agréable, semblable au musc.^Vous vous sentez revigoré.^^Cependant, vous avez aussi une sensation étrange et anormale. Quelque chose vous dit qu'il vaudrait mieux ne jamais, au grand jamais boire à nouveau de cette eau.
+menu_drank_ent_water_human|^^^Vous buvez l'eau. Elle a un goût clair et rafraîchissant. Elle a un parfum agréable, semblable au musc.^Vous vous sentez revigoré{/e}.^^Cependant, vous avez aussi une sensation étrange et anormale. Quelque chose vous dit qu'il vaudrait mieux ne jamais, au grand jamais, boire à nouveau de cette eau.
 menu_drank_ent_water_orc|^^^Vous vous désaltérez. Ce n'est que de l'eau.^Soudain, vous vous saisissez la gorge dans un rictus de douleur.^Empoisonnée !^Vous étouffez, vomissez du sang noir, vous êtes aux portes de la mort.^^Cela fait mal, oh, cela fait mal.
 mno_i_shall_surv|Je... dois... survivre !
 menu_end_game|^^^^^Vous avez pris votre décision, vous décidez d'abandonner votre vie d'aventurier et de vous installer. Vous vendez vos armes et armures, rassemblez vos effets personnels et chevauchez vers le soleil couchant...
@@ -194,7 +195,7 @@ menu_cattle_herd|Vous rencontrez plusieurs individus.
 mno_cattle_drive_away|Leur ordonner de vous suivre
 mno_cattle_stop|Les mener jusqu'à la prochaine halte.
 mno_leave|Partir.
-menu_simple_encounter|^^^^^{s2}^Vous disposez de {reg22} troupes fin prêtes pour affronter {reg11}.^^La bataille se déroule en {s3}{s4}.^^Quels sont vos ordres ?
+menu_simple_encounter|^^^^^{s2}^Vous disposez de {reg22} soldats fin prêts pour affronter {reg11}.^^La bataille se déroule en {s3}{s4}.^^Quels sont vos ordres ?
 mno_encounter_attack|{reg21?Les charger:Se préparer à leur faire face}.
 mno_encounter_order_attack|Ordonner à vos troupes de {reg21?les attaquer:leur faire face} sans vous.
 mno_control_allies_menu|Usez de votre influence pour commander vos alliés sur le champ de bataille.
@@ -203,7 +204,7 @@ mno_special_whip|Se ruer sur eux pour percer le {s4}.
 mno_encounter_attack_bearform|{reg21?Sauter dans la bataille sous forme d'ours:Changer de peau et leur faire face}.
 mno_encounter_leave|Battre en retraite.
 mno_encounter_retreat|Reculer, en laissant quelques soldats pour couvrir vos arrières.
-mno_player_control_allies_simple|Commandez les et chargez l'ennemi.
+mno_player_control_allies_simple|Commandez-les et chargez l'ennemi.
 mno_player_control_allies_back|Retour...
 mno_hide_close|Continuer...
 menu_encounter_retreat_confirm|^^^^^En tant que membre ayant les talents tactiques les plus développés, ({reg2}), {reg3?vous élaborez:{s3} imagine} un plan qui vous permettra de sauver votre vie et celle de vos hommes, mais vous devrez laisser {reg4} soldats derrière pour empêcher les ennemis de vous poursuivre.
@@ -284,7 +285,7 @@ menu_town_bandits_succeeded|^^^^^Les Gobelins tombent devant vous comme le blé 
 menu_town_brawl_lost|^^^^^^Vous avez été assommé{/e}. Les gens que vous avez attaqué vous fouillent rapidement, à la recherche de marchandises de valeur, avant de reprendre leur activité journalière.
 menu_town_brawl_won|^^^^^Vous avez battu tous les adversaires et les gardes envoyés pour réprimer les troubles. Vous les détroussez rapidement, avant de vous éclipser jusqu'à ce que les choses se tassent. ^La prochaine fois, ils vous montreront peut-être plus de respect et reculeront.
 menu_close|Rien.
-menu_town|Vous êtes arrivé à {s60}.{s12}{s13}
+menu_town|Vous êtes arrivé{/e} à {s60}.{s12}{s13}
 mno_town_menu_0|Aller dans un endroit particulier.
 mno_town_menu_0_door|Porte vers un endroit particulier.
 mno_town_approach|Approcher {s1}...
@@ -300,7 +301,7 @@ mno_dungeon_enter|Chercher les lances perdues dans les montagnes.
 mno_dungeon_enter_door|Ouvrir la porte.
 mno_dwarven_warehouse|Visiter l’entrepôt des nains.
 mno_dwarven_warehouse_door|Entrer dans l'entrepôt des nains.
-mno_talk_to_castle_commander|Se rendre aux baraquements {s61}.
+mno_talk_to_castle_commander|Se rendre à la caserne de {s61}.
 mno_speak_with_elder|Parler avec le {s6}.
 mno_isengard_underground|Aller vers les cavernes souterraines.
 mno_isengard_underground_door|Aller dans les grottes souterraines
@@ -308,83 +309,83 @@ mno_tirith_toplevel|Grimper au dernier niveau.
 mno_erebor_gates|Visiter les Grandes Portes.
 mno_town_leave|Partir...
 mno_town_leave_door|Quitter la zone.
-menu_player_initiated_siege_result|Vous attaquez ce lieu sous la bannière de {s2}
+menu_player_initiated_siege_result|Vous attaquez ce lieu sous la bannière de {s2}.
 menu_disembark|Souhaitez-vous débarquer ?
 mno_disembark_yes|Oui.
 mno_disembark_no|Non.
 menu_ship_reembark|Souhaitez-vous embarquer ?
 mno_reembark_yes|Oui.
 mno_reembark_no|Non.
-menu_center_reports|{s1}^Revenus : {reg1} deniers^Rentrée des taxes : {reg2} deniers^Réserves de nourriture suffisantes pour {reg3} jours.
+menu_center_reports|Ville : {s1}^Revenus : {reg1} deniers^Rentrée des taxes : {reg2} deniers^Réserves de nourriture suffisantes pour {reg3} jours.
 menu_sneak_into_town_suceeded|Avec les vêtements d'un pauvre pèlerin sur le dos, vous dupez les gardes et pénétrez dans la ville.
 menu_sneak_into_town_caught|Au moment où vous tentez de passer furtivement, un des gardes vous reconnaît et sonne l'alarme ! Vous devez vous enfuir et passer les portes avant que tous les gardes de la ville ne vous tombent dessus !
-mno_sneak_caught_fight|Essayez de forcer le passage !
+mno_sneak_caught_fight|Essayer de forcer le passage !
 mno_sneak_caught_surrender|Vous rendre.
 menu_sneak_into_town_caught_dispersed_guards|Vous semez les gardes et masquez vos traces avant de vous enfuir, égarant habilement vos poursuivants dans le dédale des rues.
 menu_sneak_into_town_caught_ran_away|Vous parcourez le chemin jusqu'aux portes et vous vous repliez rapidement dans la sécurité de l'extérieur de la ville.
-menu_tld_player_defeated|^^^^^Soudainement une douleur sourde éclate dans votre crâne faisant passer un éclair rouge de douleur devant vos yeux ! \\\\ Vous vous affaissez alors que votre vue s'assombrit... ^Est-ce la fin pour vous ?
-menu_recover_after_death_fangorn|Vous vous réveillez, il semble que vous n'ayez pas été déplacé{/e} durant votre évanouissement. Vous sentez que vous êtes bien vivant{/e} à la douleur que vous ressentez dans chacun des membres de votre corps. Ce fut une défaite, mais pas un échec puisque vous avez vu de quoi il retourne dans cette forêt, et pour le moment, vous êtes suffisamment en vie pour le raconter. Espérons que ça continue !
-menu_recover_after_death_moria|^^^^^Vous reprenez conscience. Vous êtes étendu{/e} sur un sol mou et de l'air frais souffle sur votre visage. vous êtes dehors !^Les orques ont dû vous prendre pour mort{/e} et vous jeter dans une sombre crevasse.^Vous avez sûrement été transporté{/e} à la surface par un courant sous-terrain.
+menu_tld_player_defeated|^^^^^Soudainement une douleur fulgurante éclate à l'arrière de votre crâne ! \\\\ Vous vous affaissez alors que votre vue s'assombrit... ^Est-ce la fin pour vous ?
+menu_recover_after_death_fangorn|Vous vous réveillez. La forêt est toujours autour de vous. Chaque os vous fait mal. Par miracle vous êtes vivant{/e}.^^C'était une défaite, mais au moins vous avez pu voir ce qui s'est passé.^Maintenant vous savez ce qui se passe dans cette forêt maudite^et vous avez survécu pour le dire. ^^Mais y aura-t-il quelqu'un pour vous croire un jour ?
+menu_recover_after_death_moria|^^^^^Vous reprenez conscience. Vous êtes étendu{/e} sur un sol mou et de l'air frais souffle sur votre visage. Vous êtes dehors !^Les orques ont dû vous croire mort{/e} et vous jeter dans une sombre crevasse.^Vous avez sûrement été transporté{/e} à la surface par un courant sous-terrain.
 mno_whatever|Levez-vous !
-menu_recover_after_death_default|^^^^^Vous reprenez conscience. Vous êtes étendu{/e} là où vous êtes tombé{/e}. Les ennemis ont dû vous croire mort{/e} et vous ont laissé{/e} là. Qu'importe, il semble qu'aucune de vos blessures n'ait été fatale et bien que vous vous sentiez vraiment mal, vous pouvez toujours marcher. Vous essayez de vous lever afin de retrouver les éventuels survivants de votre groupe.
-menu_recover_after_death_town|^^^^Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant{/e} ! Les environs sont déserts, et vous saisissez cette opportunité pour quitter la ville. Il semble qu'aucune de vos blessures n'ait été fatale. Et bien que vous vous sentiez vraiment mal, vous pouvez marcher.
-menu_recover_after_death_town_alone|^^^^Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant{/e} ! Les environs sont déserts, et vous saisissez cette opportunité pour quitter la ville. Vos compagnons vous trouvent alors. Il semble qu'aucune de vos blessures n'ait été fatale. Et bien que vous vous sentiez vraiment mal, vous pouvez marcher.
+menu_recover_after_death_default|^^^^^Vous reprenez conscience. Vous êtes étendu{/e} là où vous êtes tombé{/e}. Les ennemis ont dû vous croire mort{/e} et vous ont laissé{/e} là. Qu'importe, il semble qu'aucune de vos blessures n'ait été fatale et, bien que vous vous sentiez vraiment mal, vous pouvez toujours marcher. Vous essayez de vous lever afin de retrouver les éventuels survivants de votre groupe.
+menu_recover_after_death_town|^^^^Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant{/e} ! Les environs sont déserts et vous saisissez cette opportunité pour quitter la ville. Il semble qu'aucune de vos blessures n'ait été fatale et, bien que vous vous sentiez vraiment mal, vous pouvez marcher.
+menu_recover_after_death_town_alone|^^^^Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant{/e} ! Les environs sont déserts et vous saisissez cette opportunité pour quitter la ville. Vos compagnons vous trouvent alors. Il semble qu'aucune de vos blessures n'ait été fatale et, bien que vous vous sentiez vraiment mal, vous pouvez marcher.
 menu_notification_center_under_siege|{s1} a été assiégé par {s2} de {s3} !
 menu_notification_one_side_left|^^^^^La Guerre de l'Anneau est terminée !^Les {s1} ont défait tous leurs ennemis et sont victorieux !
 menu_notification_total_defeat|^^^^^La Guerre de l'Anneau est terminée pour vous !^^Les {s1} ont été vaincus par leurs ennemis et vous restez seul dans la défaite !
-menu_notification_your_faction_collapsed|^^^^^Votre patrie de {s11} a été défaite !^Toutefois, d'autres alliés continuent cette guerre. Avec tous ceux restant de {11}, vous pouvez encore aider votre camp à emporter la victoire.
-menu_notification_faction_defeated|^^^^^{s1} est vaincue !^{s1} n'est plus, défait par les forces {s13} !
-menu_ruins|^^^^Vous approchez de {s1}. Un ancien camp important a été rasé, mais vous pouvez toujours voir les traces de fortifications et d'armes rouillées.
+menu_notification_your_faction_collapsed|^^^^^Votre patrie, {s11}, a été défaite !^Toutefois, d'autres alliés continuent cette guerre. Avec tous ceux restant de {s11}, vous pouvez encore aider votre camp à emporter la victoire.
+menu_notification_faction_defeated|^^^^^{s1} est vaincue !^{s1} n'est plus, défait par les forces de {s13} !
+menu_ruins|^^^^Vous approchez de {s1}. Un ancien camp important a été rasé, mais vous pouvez encore voir des traces de fortifications et des armes rouillées disséminées.
 menu_legendary_place|^^^^Vous avez suivi les rumeurs et trouvé {s1}. Vous pouvez maintenant explorer ces lieux par vous-même et voir si les rumeurs sont vraies.
 mno_explore|Explorer ce lieu.
-menu_ring_hunter_lair|^^^^Vous avez suivi le sentier des Chasseurs d'Anneaux à travers la forêt de Mirkwood et êtes arrivés au {s1}. Vous les voyez se préparer à partir avec un coffre.
+menu_ring_hunter_lair|^^^^Vous avez suivi le sentier des Chasseurs d'Anneaux à travers la forêt de Grand'Peur et vous êtes arrivé{/e} au {s1}. Vous les voyez se préparer à partir avec un coffre.
 mno_attack_lair|Les attaquer maintenant
 mno_leave_bandit_lair|Partir pour l'instant.
 menu_gondor_reinforcement_event|^^^^^Les feux d'alarmes du Gondor sont allumés, Minas Tirith appelle à l'aide !^^Les seigneurs des cités du sud vont marcher sur le nord pour défendre la Cité Blanche contre les ténèbres à venir.
 mno_gondor_reinforcement_event_close|Fermer
-menu_gondor_beacons|Vous regardez {s1}, un des feux d'alarmes du Gondor, utilisé pour sonner l'alarme au sud et au nord du Gondor.
+menu_gondor_beacons|Vous regardez {s1}, un des feux d'alarme du Gondor utilisé pour sonner l'alarme au sud et au nord du Gondor.
 mno_gondor_beacons_close|Partir...
-menu_player_added_to_war_council|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, {s2} vous demande de faire parti du Conseil de Guerre. Vous pouvez maintenant suggérer des stratégies pour influencer le cours de la guerre. 
+menu_player_added_to_war_council|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, {s2} vous demande de faire partie du Conseil de Guerre. Vous pouvez maintenant suggérer des stratégies pour influencer le cours de la guerre. 
 mno_player_added_to_war_council_close|Fermer
 menu_player_added_to_siege_reports|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, vous recevrez des rapports si {s2} assiège un fief ou quand les fiefs de {s2} sont assiégés.
 mno_player_added_to_siege_reports_close|Fermer
-menu_player_added_to_allow_follow|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, vous êtes autorisé à commander {s2} de vous suivre, pour un total de {reg55} compagnons maximum.
+menu_player_added_to_allow_follow|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, vous êtes autorisé à commander à {s2} de vous suivre, pour un total de {reg55} compagnons maximum.
 mno_player_added_to_allow_follow_close|Fermer
 menu_center_besieged_event|^^^^^Un messager est arrivé et vous informe que {s1} est assiégé par {s2} de {s3}.
 mno_center_besieged_event_close|Fermer
 menu_guardian_party_spawned|^^^^Nos éclaireurs nous informent que {s6} regroupe une grande armée aux alentours de {s7}, dans une dernière tentative de défendre la capitale.
 mno_intro_next|Continuer...
-mno_start_defend_caravan|Défendez la Caravane !
-mno_start_raid_caravan|Pillez la Caravane !
+mno_start_defend_caravan|Défendre la caravane !
+mno_start_raid_caravan|Piller la caravane !
 mno_start_ambush_orcs|Tendre une embuscade aux orques !
-mno_start_kill_scouts|Arrêter les éclaireurs avant qu'ils signalent votre arrivée !
-mno_go_your_way|Les laisser se débrouiller.
-mno_defend_villagers|Défendre les Villageois ! 
-mno_raid_villagers|Piller le Village !
-mno_go_away|Partir pour l'instant et se regrouper.
+mno_start_kill_scouts|Arrêter les éclaireurs avant qu'ils ne signalent votre arrivée !
+mno_go_your_way|Les laisser tranquilles.
+mno_defend_villagers|Défendre les villageois ! 
+mno_raid_villagers|Piller le village !
+mno_go_away|Partir à l'instant et se regrouper.
 menu_scout_camp_quest|Vous voyez le camp de reconnaissance ennemi à proximité. Vous préparez vos hommes pour les attaquer
 mno_attack_scout_camp|Attaquer le camp de reconnaissance !
-menu_sea_battle_quest|Vous rencontrez une flotte ennemi. Les bateaux se rapprochent et les marins déploient des planches...
-mno_sb_defend_the_town|Abordez les ! Détruisez leur flotte !
-mno_sb_attack_the_town|Ils tentent de nous interceptez ! Défendez la flotte !
+menu_sea_battle_quest|Vous rencontrez une flotte ennemie. Les bateaux se rapprochent et les marins déploient des planches...
+mno_sb_defend_the_town|Abordez-les ! Détruisez leur flotte !
+mno_sb_attack_the_town|Ils tentent de nous intercepter ! Défendez la flotte !
 menu_camp_field_ai|^^^^^Cliquez sur une option pour activer/désactiver.^^^Désactiver une ou plusieurs options améliorera les performances (FPS)
 mno_lord_field_ai|IA de combat des seigneurs améliorée : {s7}
 mno_horse_archer_field_ai|IA de combat des archers montés améliorée : {s7}
-mno_vs_orcs_field_ai|Les archers ont une meilleure visée contre les orques (ils ne visent jamais sous la tête) :  {s7}
+mno_vs_orcs_field_ai|Les archers ont une meilleure visée contre les orques (ils ne visent jamais au-dessus de la tête) :  {s7}
 mno_battlefield_animals|Spawn des animaux (hors monture) des compagnons en combat : {s7}
 mno_slow_when_wounded|Les montures ralentissent quand elles sont blessées : {s7}
 mno_battle_encounter_effects|Effets spéciaux des factions sur le champ de bataille (e.g : orages, brouillards) : {s7}
 menu_hungry_orc|Aucun
 menu_leaving_elf|Aucun
-mno_defend_refugees|Restez attentifs aux pillards...
+mno_defend_refugees|Rester attentif aux pillards...
 mno_attack_refugees|Attaquer le convoi de réfugiés...
-mno_leave_refugees|Les laissez pour l'instant...
+mno_leave_refugees|Les laisser pour l'instant...
 mno_evil_war_tut_continue|Continuer...
 menu_guardian_party_quest|{s8} vous informe que l'Isengard est à genoux et à préparé son dernier combat. Il souhaite que vous le rejoigniez dans la bataille finale contre les armées d'Isengard.   You devez amenez au moins {reg13} troupes pour cette bataille, et vous avez pour instructions de recruter rapidement plus d'hommes si vous n'en avez pas assez.
-mno_guardian_party_reject|Envoyez un message pour lui dire que vous ne pourrez pas le rejoindre.
-mno_guardian_party_send_word|Passez le mot selon lequel vous le rejoindrez rapidement.
-menu_alternate_training_fight|Vous allez combattre {reg5} ennemis. Êtes vous prêts ?
-mno_training_continue|Commencez l’entraînement... 
+mno_guardian_party_reject|Envoyer un message pour lui dire que vous ne pouvez pas le rejoindre.
+mno_guardian_party_send_word|Lui faire savoir que vous le rejoindrez rapidement.
+menu_alternate_training_fight|Vous allez combattre {reg5} ennemis. Êtes vous prêt{/e} ?
+mno_training_continue|Commencer l’entraînement... 
 menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Réessayer...
 mno_alternate_training_finish|Quitter l'arène...
@@ -396,15 +397,15 @@ menu_custom_battle_choose_faction2|^^^^^^^^^^Choisissez une faction du Bien
 mno_cb_gondor|du Gondor
 mno_cb_gondor1|du Rohan
 mno_cb_gondor2|de la Lothlórien
-mno_cb_gondor3|de Fondcombe
-mno_cb_gondor4|de la Forêt Noire
+mno_cb_gondor3|de Fondeval
+mno_cb_gondor4|de Grand'Peur
 mno_cb_gondor5|des Nains
-mno_cb_gondor6|de Dale
-mno_cb_gondor7|des Beornides
+mno_cb_gondor6|du Val
+mno_cb_gondor7|des Béorniens
 menu_custom_battle_choose_faction3|^^^^^^^^^^Choisissez une faction du Mal
 mno_cb_mordor|du Mordor
 mno_cb_mordor1|de l'Isengard
-mno_cb_mordor2|du Pays de Dun
+mno_cb_mordor2|Dunlande
 mno_cb_mordor3|des Haradrim
 mno_cb_mordor4|des Orientaux
 mno_cb_mordor5|de la Moria
@@ -416,7 +417,7 @@ mno_next_rescue_scene_door|Continuer à avancer !
 mno_pick_troops1|Choisir des compagnons pour la mission, {reg0} sélectionnés
 menu_pick_troops|Qui voulez-vous emmener dans la mission de furtivité ? Pour l'instant, vous avez sélectionné {reg0} compagnons. Vous pouvez emmener jusqu'à 10 soldats avec vous.
 mno_go_forward|Fin de la sélection des compagnons et continuer.
-menu_burial_mound|Vous approchez du monument funéraire de {s1} de {s2}. Vaincu au combat par les forces de {s28}. Il a été enterré avec ses armes et celles de ses ennemis vaincus au combat.
+menu_burial_mound|Vous approchez du monument funéraire de {s1} de {s2}. Vaincu au combat par les forces de {s28}, il a été enterré avec les armes de ses ennemis tombés au combat.
 mno_pay_respects|S'agenouiller et présenter ses respects.
 mno_swear_oath|Prêter serment de vengeance ! 
 mno_despoil|Profaner le site.
@@ -425,18 +426,18 @@ menu_burial_mound_respects|Vous vous agenouillez et présentez vos respects à {
 menu_burial_mound_oath|Vous prêtez, haut et fort, le serment de venger la mort de {s4}. Vous jurez de traquer sans relâche les forces {s3} et de les détruire. Vos mots ont porté loin avec le vent, et qui sait s'ils n'ont pas été entendus au-delà de la mer ?
 menu_funeral_pyre_oath|Vous prêtez, haut et fort, le serment de venger la mort de {s4}. Vous jurez de traquer sans relâche les forces {s3} et de les détruire. Vos mots ont porté loin avec le vent, qui sait s'ils n'ont pas été entendus au-delà de la mer ?
 mno_leave_pyre_oath|Quitter le bûcher.
-menu_burial_mound_despoil|Vous démolissez le monument de {s1} de vos propres mains, et souillez les pierres avec des malédictions, des chants déchus et des actes innommables. Vos partisans restent en retrait par peur de la mort, mais semblent avoir une déférence renouvelée envers votre méchanceté.
-menu_funeral_pyre|Vous approchez des restes carbonisés du bûcher funéraire de {s3} de {s2}. Vaincu au combat par les forces de {s28}. Le corps a été brûlé avec cérémonie par ses gardes personnels. Il ne reste rien de valeur.
+menu_burial_mound_despoil|Vous démolissez le monument de {s1} de vos propres mains et souillez les pierres avec des malédictions, des chants déchus et des actes innommables. Vos partisans restent en retrait par peur de la mort, mais semblent avoir une déférence renouvelée envers votre méchanceté.
+menu_funeral_pyre|Vous approchez des restes carbonisés du bûcher funéraire de {s3} de {s2}, vaincu au combat par les forces de {s28}. Le corps a été brûlé avec cérémonie par ses gardes personnels. Il ne reste rien de valeur.
 mno_leave_pyre|Quitter le bûcher.
 menu_town_ruins|En approchant, vous voyez que {s1} est {s2}
 mno_ruin_menu_0|Explorer la zone.
 mno_ruin_leave|Partir...
 menu_premutiny|Aucun
-menu_death|Vous avez été tué. Bien que la guerre se poursuit, vous n'en ferez plus partie.
+menu_death|Vous avez été tué{/e}. Bien que la guerre se poursuive, vous n'en ferez plus partie.
 menu_animal_ambush|Vous et vos compagnons ont été séparés du reste de votre groupe, lorsque soudain...
 menu_animal_ambush_success|Les {s2} {reg0?tombe:tombent} devant vous comme le blé devant la faux ! Bientôt, tous vos assaillants gisent sur le sol, blessés ou morts. {s3}
-menu_animal_ambush_fail|Les animaux vous mordent et déchirent vos vêtements {reg0?,: et ceux de vos compagnon{reg2?s,:,}} mais par chance vous arrivez à vous dégager. Ils ne devraient plus vous attaquer.
-menu_build_your_scene|Vous pouvez construire votre propre scène de bataiolle en utilisant l'un des emplacements prévus ci-dessous et le mode d'édition du jeu (vous devez d'abord activer le mode d'édition dans les options de l'écran de lancement de M&B, puis appuyer sur Ctrl+E dans une scène pour accéder au mode d'édition). Vous pourrez ensuite soumettre les scènes que vous avez construites (à savoir, les fichiers sco du dossier TLD/SceneObj) à l'équipe de développement de TLD et, si votre scène est bonne, elle pourra apparaître dans une version ultérieure comme l'un des champs de bataille aléatoires !^^ Essayez de spécifier la région de la carte où vous voulez que votre scène apparaisse.^ Quelques conseils : évitez les eaux profondes, les montagnes escarpées et autres endroits infranchissables, à moins que vous ne soyez expérimenté dans la construction de scènes et que vous sachiez comment empêcher les troupes d'IA de marcher là où vous ne voulez pas qu'elles aillent, et faire des maillages d'IA dans d'autres endroits.^ (Les entrées #0-1 sont pour les attaquants, #4 pour les défenseurs, ne touchez pas aux entrées #5-8)
+menu_animal_ambush_fail|Les animaux mordent et déchirent vos vêtements {reg0?,: et ceux de {reg2?vos compagnons,:votre compagnon,}} mais par chance vous arrivez à vous dégager. Ils ne devraient plus vous attaquer.
+menu_build_your_scene|Vous pouvez construire votre propre scène de bataille en utilisant l'un des emplacements prévus ci-dessous et le mode d'édition du jeu (vous devez d'abord activer le mode d'édition dans les options de l'écran de lancement de M&B, puis appuyer sur Ctrl+E dans une scène pour accéder au mode d'édition). Vous pourrez ensuite soumettre les scènes que vous avez construites (à savoir, les fichiers sco du dossier TLD/SceneObj) à l'équipe de développement de TLD et, si votre scène est bonne, elle pourra apparaître dans une version ultérieure comme l'un des champs de bataille aléatoires !^^ Essayez de spécifier la région de la carte où vous voulez que votre scène apparaisse.^ Quelques conseils : évitez les eaux profondes, les montagnes escarpées et autres endroits infranchissables, à moins que vous n'ayez l'expérience de la construction de scènes et que vous sachiez comment empêcher les troupes d'IA de marcher là où vous ne voulez pas qu'elles aillent, et faire des maillages d'IA dans d'autres endroits.^ (Les entrées #0-1 sont pour les attaquants, #4 pour les défenseurs, ne touchez pas aux entrées #5-8)
 mno_scene1|Grande plaine (fichier scène custom 1.sco)
 mno_scene2|Plaine moyenne (fichier scène custom 2.sco)
 mno_scene3|Petite plaine (fichier scène custom 3.sco)

@@ -186,7 +186,7 @@ qstr_during_battles|durante le battaglie
 qstr_+1_to_Pathfinding|+1 in Orientamento
 qstr_+1_to_Athletics|+1 in atleticità
 qstr_+1_to_Wound_Treatmen|+1 in Trattamento Ferite
-; qstr_Use_from_Camp_Menu|Use from Camp Menu
+qstr_Use_from_Camp_Menu|Fanne uso dal menu di Campo
 qstr_Use_from|Usa da
 qstr_Action_Menu|Menu azioni
 qstr_+1_to_First_Aid|+1 in Primo soccorso
@@ -200,10 +200,10 @@ qstr_+1_to_Wildcraft|+1 a Mimetismo
 qstr_+1_to_Power_Draw|+1 in Potenza di Tiro
 qstr_The_record_of_Balin_|La cronaca della spedizione perduta di Balin.
 qstr_Who_might_be_interes|Chi può essere interessato a ciò?
-; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
-; qstr_Turns_nature_to_your|Turns nature to your side
-; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
-; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
+qstr_Bonus_to_Shield_Skil|Bonus per l'abilità Scudo
+qstr_Turns_nature_to_your|Porta la natura dalla tua parte
+qstr_when_equipped.__Effe|quando attivo. (Gli effetti si bilanciano con il mimetismo)
+qstr_Bonus_to_Power_Strik|Bonus alla Potenza d'Attacco
 qstr_+1_to_Trainer|+1 in addestramento
 qstr_Recruits_Tribal_Orcs|Recluta Orchi Tribali
 qstr_rally|spronare
@@ -212,13 +212,13 @@ qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} in battaglia
 qstr_+1_to_Charisma|+1 in Carisma
 qstr_+1_to_Surgery|+1 in Chirurgia
 qstr_+1_to_Intelligence|+1 in Intelligenza
-; qstr_+2_to_Surgery|+2 to Surgery
+qstr_+2_to_Surgery|+2 in Chirurgia
 qstr_when_equipped|Se equipaggiato
 qstr_+1_to_Riding|+1 a Cavalcare
 qstr_+1_to_Mounted_Archer|+1 in Arco in Sella
 qstr_+1_to_Prisoner_Mgmt|+1 in Controllo prigionieri
 qstr_+2_to_Tactics|+2 in Tattica
-; qstr_+1_Intelligence|+1 Intelligence
+qstr_+1_Intelligence|+1 in Intelligenza
 qstr_+{reg1}_to_Spotting|+{reg1} in Avvistamento
 qstr__Scales_with_Wildcra|(Scaglie Mimetiche)
 qstr_+1_to_Spotting|+1 in Avvistamento
@@ -226,10 +226,10 @@ qstr_+2_to_Athletics|+2 in Atleticità
 qstr_Less_Dunnish_upkeep|Minore gestione Dunlandiana
 qstr_Less_Wargs_upkeep|Minore gestione Wargs
 qstr_Light_Armor|Armatura Leggera
-; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
-; qstr_Lead_more_Orcs|Lead more Orcs
+qstr_Bonus_to_Strength__P|Bonus alla Forza (Solo per il personaggio)
+qstr_Lead_more_Orcs|Comanda più Orchi
 qstr_+{reg1}_to_Party_Mor|+{reg1} al morale della compagnia
-; qstr_Range:_{reg55}|Range: {reg55}
+qstr_Range:_{reg55}|Portata: {reg55}
 qstr_Do_you_want_to_disem|Vuoi sbarcare ?
 qstr_Move_here|Vai qui
 qstr_View_notes|Controlla le note
@@ -276,8 +276,8 @@ qstr_{s3}_is_no_longer_un|{s3} non è più sotto assedio.
 qstr_Enemies_spotted_near|Avvistati nemici vicino a {s1}.
 qstr_Your_relation_with_{|I tuoi rapporti con {s1} sono migliorati.
 qstr_Your_relation_with_{s|I tuoi rapporti con {s1} si sono deteriorati.
-; qstr_{s1}_gained_faction_|{s1} gained faction strength!
-; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
+qstr_{s1}_gained_faction_|{s1} guadagna forza per la fazione !
+qstr_{s1}_lost_faction_st|{s1} perde forza di fazione !
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?era:è attualmente} a {s3}.
 qstr_{s2}_{reg3?was:is}_t|{s2} {reg3?stava:sta} viaggiando verso {s3} e... {reg3?era:dovrebbe essere} vicino a {s4}{reg3?: in questo momento}.
 qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?stava:sta} vagando nelle terre selvagge e... {reg3?era:dovrebbe essere} vicino a {s3}{reg3?: in questo momento}.
@@ -693,10 +693,10 @@ qstr_A_thunderstorm_from_|Un temporale dalle Montagne Nebbiose infuria sul campo
 qstr_A_thunderstorm_from_t|Una tempesta dalle Montagne Nebbiose imperversa sul campo di battaglia. Gli arcieri incontrano difficoltà in un clima simle.
 qstr_A_poisonous_fog_from|Una nebbia venefica da Dol Guldur indugia sul campo di battaglia. Tu e i tuoi soldati vi sentite indeboliti. C'è spavento fra gli uomini.
 qstr_A_poisonous_fog_from_|Una venefica nebbia da Dol Guldur indugia sul campo di battaglia. Tu non percepisci alcuna differenza, ma senti i tuoi nemici soffrire e percepisci l'odore della loro paura.
-; qstr_You_shapeshift_into_|You shapeshift into a bear!
-; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
-; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
-; qstr_You_change_back_to_h|You change back to human form...
+qstr_You_shapeshift_into_|Ti trasformi in un orso !
+qstr_You_got_{reg1}_xp_in|Hai guadagnato {reg1} in forma d'orso.
+qstr_Your_ability_to_chan|La tua abilità di mutaforma si è manifestata, da ora in poi potrai percorrere sentieri selvaggi sia in forma d'uomo che di orso.
+qstr_You_change_back_to_h|Torni alla forma umana...
 qstr_Your_mount_stumbles!|Il tuo animale incespica ! Sembra sia zoppo.
 qstr_Bitten_by_your_own_w|Sei stato morso dal tuo stesso Warg !
 qstr_You_weigh_too_much_f|Pesi troppo per un pony !
@@ -729,7 +729,7 @@ qstr_Division_{reg1}_{s2}_f|Reparto {reg1} {s2} forma una linea (memorizzato).
 qstr_Division_{reg1}_{s2}_fo|Reparto {reg1} {s2} forma {reg0} linee (memorizzato).
 qstr_Delivered_{reg60}_da|Inflitti {reg60} danni.
 qstr_DEBUG__Health_Regen_|DEBUG (Rigenerazione Salute: {s1} riprende {reg0}% salute. = +{reg1}% FOR
-; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
+qstr_Your_bear_form_has_{|La tua forma d'orso ha {reg2}/{reg1} HP !
 qstr_Three_Nazgul_are_cir|Tre Nazgul stanno volando in circolo sul campo di battaglia !
 qstr_Two_Nazgul_are_circl|Due Nazgul volano in circolo sopra al campo di battaglia !
 qstr_A_Nazgul_is_circling|Un Nazgul vola circolarmente nei cieli sul campo di battaglia.
@@ -780,7 +780,7 @@ qstr_End_them_all!|Finiteli tutti !
 qstr_Drive_them_back!|Ricacciamoli indietro !
 qstr_Protect_the_City!|Proteggi la città !
 qstr_Forward!_Board_them!|Avanti ! All'arrembaggio !
-; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
+qstr_The_Last_Days_of_the_|The Last Days of the Third Age dispone di una IA avanzata per quanto riguarda gli assedi, molto differente dalla versione Native. Tutti gli attaccanti e i difensori vengono distribuiti sui fianchi destro e sinistro e al centro. I giocatori che attaccano sono al comando di alcune delle proprie truppe personali.
 qstr_Reached_Gauntlet_wav|Raggiunta l'ondata sfida {reg1} !
 qstr_Ballista:_out_of_amm|Ballista: munizioni terminate !
 qstr_Ballista:_turn_CURSO|Ballista: muovi con CURSORE, mira con LSHIFT, fuoco con SPAZIO, imposta fuoco con T, esci con F
@@ -898,7 +898,7 @@ qstr_Doubled|Duplicato
 qstr_Tripled|Triplicato
 qstr_Quadrupled|Quadruplicato
 qstr_You_drank_the_Ent_Wa|Hai bevuto l'acqua Ent
-; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
+qstr_You_used_the_Orc_Bre|Hai usato la Birra Orchesca.
 qstr_Fangorn_search:_fail|Ricerca Fangorn: fallita.
 qstr_^^^A_great_victory!^|^^Vittoria !^^^Così era questo il significato di tutte le leggende su Fangorn...
 qstr_^^^Defeated...^^^Sca|^^^Sconfitto...^^^Disperso nella Foresta Fangorn...Da solo...
@@ -1415,9 +1415,9 @@ qstr_Your_party_must_be_at|La tua compagnia deve avere una forza di almeno 10 el
 qstr_{s9}_asked_you_to_def|{s9} ti ha chiesto di difendere un villaggio sotto attacco nei pressi di {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} ti ha chiesto di assalire un villaggio nei pressi di {s1}.
 qstr_These_soldiers_may_w|Questi soldati potrebbero di sicuro dare la svolta ai miei piani, {playername}. Sono certo che li hai addestrati bene. I miei ringraziamenti e complimenti vanno a te.
-; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
+qstr_I_wish_you_had_train|Avrei preferito che tu li avessi addestrati tutti, {playername}. Ma in questi tempi malvagi, prenderò con gratitudine tutto quello che potrai offrire.
 qstr_Good_work_in_shaping|Ottimo lavoro nell' addestramento di quelle reclute, {playername}, sei stato utilissimo. Fiduciosamente dureranno di piu' dell' ultima volta, ma torna a trovarmi se non lo fanno.
-; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
+qstr_Is_that_all_you_coul|È questo tutto quello che puoi fare, {playername} ? Questo difficilmente potrà rimpiazzare le perdite di ieri. Dalli a me !
 qstr_Well_the_soldiers_ar|Bene, i soldati sono sotto il tuo comando. Sono certo che ne avrai cura.
 qstr_Well_you_may_do_as_y|Bene, fai come vuoi. Io ed i miei compagni possiamo sempre diventare piu' tosti se necessario.
 qstr_{s9}_asked_you_to_br|{s9} ti ha chiesto di riportare un troll selvaggio da usare nella sua armata.
@@ -1497,7 +1497,7 @@ qstr_Our_bees_make_honey_a|Le nostre api fanno il miele e la cera, i nostri alle
 qstr_If_fate_wills_it_I_s|Se il fato vorrà, tornerò nelle vostre terre ancora, e ne conoscerò tutti i segreti.
 qstr_If_I_ever_have_need_|Se mai avrò bisogno dell'aiuto che Lorien può offrire, verrò. Di qualsiasi utilità potrà essere.
 qstr__nod_and_say_nothing|(non dire niente)
-qstr_Oh_there_are_many_an|Oh, ve ne sono molti e ogni amico di Lorien merita questi doni! ^^Che ci si trovi spalla a spalla ancora una volta sul campo di battaglia, o che tu sia agli ordini della nostra Signora o del suo seguito, il nostro popolo ricompenserà i tuoi servigi con tutto ciò di cui avrai bisogno - nuove armi, solide armature di maglia, frecce piumate e viveri per le tue truppe. ^^Chi lo sa, col tempo potresti divenire {un grande Signore/una grande Signora} di Lorien, una persona che può offrire consiglio ad altri, o chiedere favori.
+qstr_Oh_there_are_many_an|Oh, ve ne sono molti e ogni amico di Lorien merita questi doni ! ^^Che ci si trovi spalla a spalla ancora una volta sul campo di battaglia, o che tu sia agli ordini della nostra Signora o del suo seguito, il nostro popolo ricompenserà i tuoi servigi con tutto ciò di cui avrai bisogno - nuove armi, solide armature di maglia, frecce piumate e viveri per le tue truppe. ^^Chi lo sa, col tempo potresti divenire {un grande Signore/una grande Signora} di Lorien, una persona che può offrire consiglio ad altri, o chiedere favori.
 qstr_The_joys_of_the_Gold|Le gioie della Valle d'Oro sono morte e i veri amici di Lorien sono bevenuti a goderne.  ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, oppure ci troveremo agli ordini della nostra Lady e dei suoi signori; il nostro popolo ti ricompenserà per il tuo sostegno con ogni cosa tu richieda - armi lucenti, vesti di maglia pesante, frecce letali e cibo nutriente per le tue truppe.^^Chissà, con il tempo potresti diventare Gran {Lord/Lady} di Lorien, una persona che potrebbe dare consiglio, o chiedere favori.
 qstr_Our_Golden_Valley_gi|La nostra Valle Dorata abbonda di doni e un amico di Lorien vi può attingere. ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, o accorrere alla chiamata della nostra Lady e dei suoi signori; il nostro popolo compenserà il tuo appoggio con tutto ciò che puoi desiderare, mentre sei lontano da casa.
 qstr_I_shall_keep_that_in|Dovrò tenerlo a mente. ^^ Hantanyel, áva márië !

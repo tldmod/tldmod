@@ -602,11 +602,11 @@ itm_rhun_armor_p|Armatura da Nobile di Rhûn
 itm_rhun_armor_k|Armatura da Nobile di Rhûn
 itm_rhun_helm_barbed|Elmo Spinato di Rhûn
 itm_rhun_helm_horde|Elmo dell'Orda di Rhûn
-; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot|Elmo a Pentola di Rhûn
 itm_rhun_helm_round|Elmo Rotondo di Rhûn
 itm_rhun_helm_leather|Elmo in Cuoio di Rhûn
 itm_rhun_helm_chieftain|Elmo del Capoclan di Rhûn
-; itm_rhun_warpick|Rhun War Pick
+itm_rhun_warpick|Picca da Guerra di Rhûn
 itm_rhun_greataxe|Ascia a Due Mani di Rhûn
 itm_rhun_battleaxe|Ascia da Battaglia di Rhûn
 itm_rhun_falchion|Falcione Barbaro
@@ -615,7 +615,7 @@ itm_rhun_greatfalchion|Grande Falcione Barbaro
 itm_rhun_greatsword|Grande Spada Barbara
 itm_rhun_shortsword|Spada Corta Barbara
 itm_rhun_sword|Spada Barbara
-; itm_rhun_mangler|Rhun Mangler
+itm_rhun_mangler|Tritacarne di Rhûn
 itm_dale_light_a|Giaccone della Milizia di Dale
 itm_dale_light_b|Armatura Lamellare Leggera Nordica
 itm_dale_med_a|Armatura Lamellare Pesante Nordica
@@ -763,8 +763,8 @@ itm_book_of_moria|Libro di Mazarbul
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Arco di Bard
-; itm_tome_of_knowledge|Tome of Arcane Knowledge
-; itm_orc_idol_reward|Idol of the First Orc
+itm_tome_of_knowledge|Tomo della Conoscenza Arcana
+itm_orc_idol_reward|Idolo del Primo Orco
 itm_crebain_reward|Crebain
 itm_miruvor_reward|Fiaschetta di Miruvor
 itm_wheeled_cage|Gabbia Gigante Rotante
@@ -787,7 +787,7 @@ itm_leather_boots_reward|Stivali da Cacciatore
 itm_rohan_armor_th|Armatura Reale di Rohan
 itm_wilderness_amulet|Amuleto della Natura Selvaggia
 itm_prisoner_coll_chain|Catene del Prigioniero
-; itm_witchking_helmet|Sorcerer's Mask
+itm_witchking_helmet|Maschera da Stregone
 itm_lorien_royal_armor|Armatura Reale di Lorien
 itm_feet_chains|Catene per le Caviglie
 itm_feet_chains_dwarf|Catene per le Caviglie

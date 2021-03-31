@@ -1,23 +1,23 @@
-; imod_plain|Plain %s
-; imod_cracked|Poor %s
-; imod_rusty|Crude %s
-; imod_bent|Bent %s
-; imod_chipped|Chipped %s
-; imod_battered|Battered %s
-; imod_poor|Poor %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
-; imod_cheap|Cheap %s
-; imod_fine|Fine %s
+imod_plain|Preprost %s
+imod_cracked|Slab %s
+imod_rusty|Grob %s
+imod_bent|Zvit %s
+imod_chipped|Obkrušen %s
+imod_battered|Obtolčen %s
+imod_poor|Slab %s
+imod_crude|Perprost %s
+imod_old|Starodaven %s
+imod_cheap|Cenen %s
+imod_fine|Dober %s
 ; imod_well_made|Well Made %s
-; imod_sharp|Sharp %s
-; imod_balanced|Balanced %s
+imod_sharp|Oster %s
+imod_balanced|Uravnotežen %s
 ; imod_tempered|Tempered %s
-; imod_deadly|Deadly %s
+imod_deadly|Smrtnonosen %s
 ; imod_exquisite|Exquisite %s
-; imod_masterwork|Masterwork %s
-; imod_heavy|Heavy %s
-; imod_strong|Strong %s
+imod_masterwork|Mojstrski %s
+imod_heavy|Težak %s
+imod_strong|Močan %s
 ; imod_powerful|Powerful %s
 ; imod_tattered|Tattered %s
 ; imod_ragged|Rough %s
@@ -26,13 +26,13 @@
 ; imod_thick|Robust %s
 ; imod_hardened|Hardened %s
 ; imod_reinforced|Reinforced %s
-; imod_superb|Superb %s
-; imod_lordly|Masterwork %s
+; imod_cloak|%s with cloak
+imod_lordly|Mojstrski %s
 ; imod_lame|Lame %s
 ; imod_swaybacked|Swaybacked %s
 ; imod_stubborn|Stubborn %s
 ; imod_timid|Timid %s
-; imod_meek|Meek %s
+; imod_meek|Blood-covered %s
 ; imod_spirited|Spirited %s
 ; imod_champion|Champion %s
 ; imod_fresh|Fresh %s

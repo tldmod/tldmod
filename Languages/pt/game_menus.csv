@@ -165,6 +165,7 @@ mno_game_options_compat_party|Número máximo de grupos: {s1}
 ; mno_strat_tweaks_back|Back to tweaks menu.
 ; menu_camp_action|^^^^^^^^^     Which object?
 mno_camp_drink_water|Beber a Água de Ent!
+; mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|Voltar.
 menu_assasins_attack_player_won|Conseguiu derrotar com sucesso os assassinos de {s2}, enviados por {s3}.
 menu_assasins_attack_player_retreat|Escapou com a sua vida!
@@ -200,7 +201,7 @@ mno_leave|Sair.
 ; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 ; mno_encounter_hide|Hide from the enemy...
 ; mno_special_whip|Rush forward toward them cracking the {s4}.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 ; mno_encounter_leave|Disengage.
 ; mno_encounter_retreat|Pull back, leaving some soldiers behind to cover your retreat.
 ; mno_player_control_allies_simple|Command them and charge the enemy

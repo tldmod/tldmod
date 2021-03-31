@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|Приріст очок рангу: {s7}
 mno_strat_tweaks_back|Повернутися в меню опцій.
 menu_camp_action|^^^^^^^^^ Який предмет?
 mno_camp_drink_water|Випити ентійскую воду!
+; mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|Назад.
 menu_assasins_attack_player_won|Ви успішно впоралися з вбивцями з держави {s2}, підісланими полководцем {s3}.
 menu_assasins_attack_player_retreat|Ви втекли і врятували своє життя!
@@ -200,7 +201,7 @@ mno_encounter_order_attack|Наказати воїнам {reg21? Атакува�
 mno_control_allies_menu|Використовуйте вплив, щоб командувати своїми союзниками в поле.
 mno_encounter_hide|Сховатися від ворога...
 mno_special_whip|Рвонутись назустріч ворогу, клацнувши Батогом Пана {s4}.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 mno_encounter_leave|Відступити.
 mno_encounter_retreat|Відступити, залишивши частину воїнів прикривати відхід.
 mno_player_control_allies_simple|Командуйте ними і атакуйте ворога

@@ -764,7 +764,7 @@ dlga_fugitive_1:fugitive_2|Sto cercando un fuggitivo di nome {s4}. Tu corrispond
 dlga_fugitive_1:close_window|Non fa niente. Scusa del disturbo.
 dlga_fugitive_2:fugitive_3|Non so so di cosa stai parlando. Devi avermi confuso con qualcun altro.
 dlga_fugitive_3:fugitive_4|Allora molla la spada. Se sei innocente, non hai nulla di cui aver paura. Ora andremo a parlare con il capitano delle guardie e vedremo chi è confuso.
-dlga_fugitive_4:close_window|Maledetto! Non andrai da nessuna parte!
+dlga_fugitive_4:close_window|Maledetto ! Non andrai da nessuna parte !
 dlga_start:follow_spy_talk|Buongiorno. Il tempo è molto bello, vero ? Se mi può scusare ora dovrei andare.
 dlga_follow_spy_talk:follow_spy_talk_2|Nel nome di {s1}, sei in arresto!
 dlga_follow_spy_talk_2:close_window|Non mi prenderai vivo!

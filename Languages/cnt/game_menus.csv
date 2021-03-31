@@ -165,6 +165,7 @@ mno_strat_tweaks_rank_gain_rate|等 級 增 加 率 ： {s7}
 mno_strat_tweaks_back|返 回 調 整 選 單 
 menu_camp_action|^^^^^^^^^ 哪 件 事 ？ 
 mno_camp_drink_water|喝 下 樹 人 之 水 ！ 
+; mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|後 退 
 menu_assasins_attack_player_won|你 成 功 擊 敗 從 {s2}來 的 刺 客 ， {s3}的 手 下。 
 menu_assasins_attack_player_retreat|你 逃 過 一 劫！ 
@@ -200,7 +201,7 @@ mno_encounter_order_attack|你 坐 鎮 指 揮 命 令 你 的 部 下 {reg21?�
 mno_control_allies_menu|使 用 影 響 力 來 指 揮 你 在 戰 場 上 的 盟 友 。
 mno_encounter_hide|躲 避 敵 人...
 mno_special_whip|往 前 衝 突 破 {s4}。 
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.                                                                                            
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 mno_encounter_leave|不 打 了。
 mno_encounter_retreat|撤 退 ， 留 下 一 些 士 兵 掩 護 主 力 撤 退 。 
 mno_player_control_allies_simple|指 揮 他 們 向 敵 人 進 攻
