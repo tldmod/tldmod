@@ -880,7 +880,7 @@ dialogs = [
     (party_stack_get_size, ":num_werewolves", "p_main_party", ":stack"),
   (try_end),
   (store_character_level, ":ziggy_level", "trp_npc20"),
-  (store_sub, ":ziggy_wolves", ":ziggy_level", 17),
+  (store_sub, ":ziggy_wolves", ":ziggy_level", 14),
   (ge, ":num_werewolves", ":ziggy_wolves"),
   ],
   "I can only control so much. I'll need to become more powerful...", "close_window",
