@@ -1951,7 +1951,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 
     ###non-trolls stagger###
     (try_begin),
-        (neq|is_between, ":troop_id", "trp_moria_troll", "trp_ent2"),
+        (neg|is_between, ":troop_id", "trp_moria_troll", "trp_ent2"),
         (try_begin),
             (ge, ":damage", 30),
             (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
