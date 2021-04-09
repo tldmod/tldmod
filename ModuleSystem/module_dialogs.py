@@ -897,7 +897,7 @@ dialogs = [
     (party_stack_get_size, ":num_werewolves", "p_main_party", ":stack"),
   (try_end),
   (store_character_level, ":ziggy_level", "trp_npc20"),
-  (store_sub, ":ziggy_wolves", ":ziggy_level", 17),
+  (store_sub, ":ziggy_wolves", ":ziggy_level", 14),
   (lt, ":num_werewolves", ":ziggy_wolves"),], 
   "Of course, Commander. Which one do you have to offer?", "ziggy_choose_prisoners",
   []],

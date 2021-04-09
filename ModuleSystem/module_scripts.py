@@ -24470,6 +24470,11 @@ command_cursor_scripts = [
         (troop_set_slot, "trp_npc5", slot_troop_hp_shield, 50),
         (assign, "$savegame_version", 19),
 	(try_end),	
+    
+     (try_begin), #InVain - April 2021, fix Gunda nw outpost scene
+        (le, "$savegame_version", 19),	
+        (party_set_slot, p_town_gundabad_nw_outpost, slot_town_center, scn_gundabad_nw_outpost_center),
+	(try_end),	
 ]),
 
 #Kham
