@@ -371,22 +371,32 @@ wheat 0 4
  wheat_b  0
  wheat_c  0
  wheat_d  0
-pw_fir 17184065536 2
+pw_fir 17184065536 4
  PW_pine_1_a  bo_pw_pine_1_a
  0 0
  PW_pine_1_b  bo_pw_pine_1_b
  0 0
+ PW_pine_2_a  bo_pw_pine_2_a
+ 0 0
+ PW_pine_3_a  bo_pw_pine_3_a
+ 0 0
 pw_fir2 17184063488 1
  PW_pine_2_a  bo_pw_pine_2_a
  0 0
-pw_fir3 17184063488 1
- PW_pine_3_a  bo_pw_pine_3_a
+snowy_pine_single 17184063488 1
+ PW_tree_snowy_b  bo_pw_tree_snowy_b
  0 0
 snowy_pine 12889096192 1
  PW_tree_snowy_a  bo_pw_tree_snowy_a
  0 0
-snowy_pine_2 4194304 1
+snowy_pine_2 4194304 4
  PW_snowy_pine_2  bo_pw_snowy_pine_2
+ 0 0
+ PW_rock_snowy_a  bo_pw_rock_snowy_a
+ 0 0
+ PW_rock_snowy_b  bo_pw_rock_snowy_b
+ 0 0
+ PW_rock_snowy_c  bo_pw_rock_snowy_c
  0 0
 pw_pine_group1 8594137088 1
  PW_pine_6_a  bo_pw_pine_6_a
@@ -404,14 +414,12 @@ zl_pink_tree 17184063492 3
  0 0
  PW_pine_6_a  bo_pw_pine_6_a
  0 0
-zl_fir 21479030784 4
- PL_fur1  bo_pl_fur1
+zl_fir 21479030784 3
+ PL_fir_new1  bo_pl_fir_new1
  0 0
- PL_fur2  bo_pl_fur2
+ PL_fir_new2  bo_pl_fir_new2
  0 0
- PL_fur3  bo_pl_fur3
- 0 0
- PW_pine_3_a  bo_pw_pine_3_a
+ PL_fir_new3  bo_pl_fir_new3
  0 0
 zl_fir_tall 21479038976 3
  PL_fur_tall1  bo_pl_fur_tall1

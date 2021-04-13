@@ -11,11 +11,11 @@ fkf_density_mask  = 0xFFFF #16K
 fkf_plain             = 0x00000004 	#Gondor; Green ground, spawns mediterranean flora
 fkf_steppe            = 0x00000008	#Rohan, northern regions, wilderness; dry grass, spawns occasional bushes, rocks, small trees
 fkf_snow              = 0x00000010	#Use for deep forest random scenes (Fangorn, Mirkwood), allows grass, so ground flora does not interfere with trees
-fkf_desert            = 0x00000020	#Currently: Dagorlad, Emyn Muil, Brown Lands - all these could/should be replaced by custom scenes. Needs better ground texture
+fkf_desert            = 0x00000020	#Could be used for mountaineous terrain generation (for example at -48;-88)
 fkf_plain_forest      = 0x00000400	#only used for small forests in Gondor and Rohan --> Could be used for Vale of Anduin, maybe more green Rohan areas (reduce tree density)
-fkf_steppe_forest     = 0x00000800	#basically unused (only for some rare randomized Ithilien scenes) --> Use as an alternative for northern regions
+fkf_steppe_forest     = 0x00000800	#basically unused (only for some rare randomized Ithilien scenes) --> Use as an alternative for northern regions / -30;-49 creates a nice hilly seed
 fkf_snow_forest       = 0x00001000	#Marshland; use this for marshland, because it does not allow grass. Add grass as bushes. Marsh is not suited for auto-generation because of hill generation.
-fkf_desert_forest     = 0x00002000	#unused --> Could be used for mountain foothills / Emyn Muil, but that would need worldmap adjustment
+fkf_desert_forest     = 0x00002000	#unused --> Could be used for Dagorlad, disable grass bushes
 fkf_terrain_mask      = 0x0000ffff
 
 fkf_realtime_ligting  = 0x00010000 #deprecated
@@ -341,12 +341,6 @@ fauna_kinds = [
    ['zf_flagstones_3', 'bo_zf_flagstones_3'],
    ['zf_flagstones_4', 'bo_zf_flagstones_4'],
    ['zf_flagstones_5', 'bo_zf_flagstones_5'],]),
-  
-# ('rock_snowy', #actual snowy pines
-#  fkf_tree,
-#  [['PW_rock_snowy_a', 'bo_pw_rock_snowy_a'],
-#   ['PW_rock_snowy_b', 'bo_pw_rock_snowy_b'],
-#   ['PW_rock_snowy_c', 'bo_pw_rock_snowy_c']]),
 
  ('rock_snowy2', fkf_tree, [['PW_tree_snowy_b', 'bo_pw_tree_snowy_b']]), #single tree version of snowy_pine
 
@@ -515,21 +509,21 @@ fauna_kinds = [
  ('pw_fir', #same as rock
   fkf_steppe_forest|fkf_tree|density(4),
   [['PW_pine_1_a', 'bo_pw_pine_1_a'],
-   ['PW_pine_1_b', 'bo_pw_pine_1_b']]),
+   ['PW_pine_1_b', 'bo_pw_pine_1_b'],
+   ['PW_pine_2_a', 'bo_pw_pine_2_a'],
+   ['PW_pine_3_a', 'bo_pw_pine_3_a']]),
 
  ('pw_fir2', fkf_tree|density(4), [['PW_pine_2_a', 'bo_pw_pine_2_a']]),
  
- ('pw_fir3', fkf_tree|density(4), [['PW_pine_3_a', 'bo_pw_pine_3_a']]),
+ ('snowy_pine_single', fkf_tree|density(4), [['PW_tree_snowy_b', 'bo_pw_tree_snowy_b']]),
 
  ('snowy_pine', fkf_tree|density(3), [['PW_tree_snowy_a', 'bo_pw_tree_snowy_a']]), #Not really snowy pines, but tall, dead looking tree
 
- ('snowy_pine_2', fkf_tree, [['PW_snowy_pine_2', 'bo_pw_snowy_pine_2']]), #actual snowy pine
-
-# ('rock_snowy', #actual snowy pines
-#  fkf_tree,
-#  [['PW_rock_snowy_a', 'bo_pw_rock_snowy_a'],
-#   ['PW_rock_snowy_b', 'bo_pw_rock_snowy_b'],
-#   ['PW_rock_snowy_c', 'bo_pw_rock_snowy_c']]),
+ ('snowy_pine_2', fkf_tree, #actual snowy pine
+ [['PW_snowy_pine_2', 'bo_pw_snowy_pine_2'],
+ ['PW_rock_snowy_a', 'bo_pw_rock_snowy_a'],
+ ['PW_rock_snowy_b', 'bo_pw_rock_snowy_b'],
+ ['PW_rock_snowy_c', 'bo_pw_rock_snowy_c']]), 
 
  # ('rock_snowy2', fkf_tree, [['PW_tree_snowy_b', 'bo_pw_tree_snowy_b']]), #single tree version of snowy_pine
 
@@ -551,12 +545,11 @@ fauna_kinds = [
    ['PW_pine_4_a', 'bo_pw_pine_4_a'],
    ['PW_pine_6_a', 'bo_pw_pine_6_a']]),
 
- ('zl_fir', #except for last tree, uses different firs from pw_fir1-3, slightly taller, more trees per group
+ ('zl_fir', #new: tall firs
   fkf_tree|density(5),
-  [['PL_fur1', 'bo_pl_fur1'],
-   ['PL_fur2', 'bo_pl_fur2'],
-   ['PL_fur3', 'bo_pl_fur3'],
-   ['PW_pine_3_a', 'bo_pw_pine_3_a']]),
+  [['PL_fir_new1', 'bo_pl_fir_new1'],
+   ['PL_fir_new2', 'bo_pl_fir_new2'],
+   ['PL_fir_new3', 'bo_pl_fir_new3']]),
 
  ('zl_fir_tall',
   fkf_desert_forest|fkf_tree|density(5),
