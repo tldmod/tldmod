@@ -1951,7 +1951,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 
     ###non-trolls stagger###
     (try_begin),
-        (neg|is_between, ":troop_id", "trp_moria_troll", "trp_ent2"),
+        (neg|is_between, ":troop_id", "trp_moria_troll", "trp_multiplayer_profile_troop_male"),
         (try_begin),
             (ge, ":damage", 30),
             (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
@@ -1965,8 +1965,8 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 
     ### TROLLS ###
     (try_begin),
-      (this_or_next|is_between, ":troop_id", "trp_troll_of_moria", "trp_ent"), #old troll range
-	  (is_between, ":troop_id", "trp_moria_troll", "trp_ent2"), #new troll range
+      (this_or_next|is_between, ":troop_id", "trp_troll_of_moria", "trp_ent_old"), #old troll range
+	  (is_between, ":troop_id", "trp_moria_troll", "trp_multiplayer_profile_troop_male"), #new troll range
       (gt, ":current_hp_shield", 0),
 
       #(assign, reg55, ":damage"),

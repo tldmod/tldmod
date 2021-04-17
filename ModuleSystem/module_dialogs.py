@@ -1892,7 +1892,8 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
    (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
    (gt, ":rank", 3),
    (store_character_level, ":troll_level", ":fac_troll"),
-   (val_div, ":troll_level", 2), #Inf. Cost
+   (val_sub, ":troll_level", 30),
+   (val_mul, ":troll_level", 2), #Inf. Cost
    (assign, reg21, ":troll_level"),
   ], 
   "It will cost {reg21} influence.", "player_hire_trolls_how_many", []],
@@ -12448,7 +12449,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 ######################################
 
 # CppCoder bugfix: Trolls go rawr...   
-[anyone,"member_chat_00", [(troop_get_type, ":troll", "$g_talk_troop"),(eq, ":troll", tf_troll), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "^^GROWL!^^", "close_window",[]],
+[anyone,"member_chat_00", [(troop_get_type, ":troll", "$g_talk_troop"),(eq, ":troll", tf_troll),(store_conversation_agent, ":troll_agent"), (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue")], "^^GROWL!^^", "close_window",[]],
 
 [anyone,"member_chat_00", [(eq, "$g_talk_troop", "trp_werewolf")], "^^Grrrrr.....^^", "close_window",[]],
 

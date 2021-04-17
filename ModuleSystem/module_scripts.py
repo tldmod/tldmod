@@ -2076,7 +2076,7 @@ scripts = [
 
 	(call_script, "script_get_hp_shield_value", "trp_ent"),
 	
-	(try_for_range, ":trolls", trp_moria_troll, trp_ent2),
+	(try_for_range, ":trolls", trp_moria_troll, trp_multiplayer_profile_troop_male),
 		(call_script, "script_get_hp_shield_value", ":trolls"),
 	(try_end),
     
@@ -24260,7 +24260,7 @@ command_cursor_scripts = [
 #Input: none
 #Output: Updated game state
 ("update_savegame",[
-    (try_for_range, ":trolls", trp_moria_troll, trp_ent2),
+    (try_for_range, ":trolls", trp_moria_troll, trp_ent+1),
 		(call_script, "script_get_hp_shield_value", ":trolls"),
 	(try_end),		   
     (try_begin),
@@ -24390,7 +24390,7 @@ command_cursor_scripts = [
 	
     (try_begin), #InVain - March 2020
     	(le, "$savegame_version", 12),	
-			(try_for_range, ":trolls", trp_moria_troll, trp_ent2),
+			(try_for_range, ":trolls", trp_moria_troll, trp_multiplayer_profile_troop_male),
 				(troop_set_type, ":trolls", tf_troll),
 				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
 				(troop_add_item, ":trolls", "itm_troll_head", imod_rotten),
@@ -24406,7 +24406,7 @@ command_cursor_scripts = [
 	
     (try_begin), #InVain - March 2020, fix troll stats for old savegames
     	(le, "$savegame_version", 13),	
-			(try_for_range, ":trolls", trp_moria_troll, trp_ent2),
+			(try_for_range, ":trolls", trp_moria_troll, trp_multiplayer_profile_troop_male),
 			
 				(store_skill_level, ":ironflesh", skl_ironflesh, ":trolls"),
 				(lt, ":ironflesh", 6), #so we don't affect new savegames which already have correct troll stats
