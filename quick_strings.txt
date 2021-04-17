@@ -1,4 +1,4 @@
-1644
+1646
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -147,6 +147,8 @@ qstr_+1_to_Strength +1_to_Strength
 qstr_+1_to_Agility +1_to_Agility
 qstr_+1_to_Leadership +1_to_Leadership
 qstr_+1_to_Wildcraft +1_to_Wildcraft
+qstr_+1_to_Tracking +1_to_Tracking
+qstr_when_equipped when_equipped
 qstr_+1_to_Power_Draw +1_to_Power_Draw
 qstr_The_record_of_Balin_ The_record_of_Balin's_lost_expedition.
 qstr_Who_might_be_interes Who_might_be_interested_in_this?
@@ -163,18 +165,18 @@ qstr_+1_to_Charisma +1_to_Charisma
 qstr_+1_to_Surgery +1_to_Surgery
 qstr_+1_to_Intelligence +1_to_Intelligence
 qstr_+2_to_Surgery +2_to_Surgery
-qstr_when_equipped when_equipped
 qstr_+1_to_Riding +1_to_Riding
 qstr_+1_to_Mounted_Archer +1_to_Mounted_Archery
 qstr_Bonus_to_Riding Bonus_to_Riding
 qstr_when_equipped.__Effec when_equipped._(Effect_scales_with_Strength)
+qstr_Orcs:_+1_Riding_Requ Orcs:_+1_Riding_Requirement
 qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
 qstr_+2_to_Tactics +2_to_Tactics
 qstr_+1_Intelligence +1_Intelligence
 qstr_+{reg1}_to_Spotting +{reg1}_to_Spotting
 qstr__Scales_with_Wildcra (Scales_with_Wildcraft)
+qstr_+1_to_Power_Throw +1_to_Power_Throw
 qstr_+1_to_Spotting +1_to_Spotting
-qstr_+2_to_Athletics +2_to_Athletics
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
 qstr_Less_Wargs_upkeep Less_Wargs_upkeep
 qstr_Light_Armor Light_Armor

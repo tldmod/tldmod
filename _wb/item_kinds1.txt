@@ -135,10 +135,10 @@ itemsfile version 2
  itm_dale_warhorse Rhovanion_Warhorse Rhovanion_Warhorse 1  bry_rus_horse_ponyfied 0  65537 0 1000 16106389504 0 100 0 24 0 3 110 32 39 97 0 18 0
 0
 
- itm_riv_warhorse Rivendell_Warhorse Rivendell_Warhorse 1  rivendell_warhorse01 0  65537 0 1500 119185604608 0 100 0 32 0 4 135 36 38 102 0 24 0
+ itm_riv_warhorse Rivendell_Warhorse Rivendell_Warhorse 1  rivendell_warhorse01 0  65537 0 1500 119185604608 0 100 0 32 0 4 135 38 39 102 0 24 0
 0
 
- itm_riv_warhorse2 Imladris_Steed Imladris_Steed 1  rivendell_warhorse02 0  1 0 2000 119185604608 0 100 0 36 0 4 135 36 38 104 0 26 0
+ itm_riv_warhorse2 Imladris_Steed Imladris_Steed 1  rivendell_warhorse02 0  1 0 2000 119185604608 0 100 0 38 0 4 150 40 43 104 0 26 0
 0
 
  itm_mordor_warhorse Mordor_Warhorse Mordor_Warhorse 1  mordor_warhorse01 0  65537 0 1500 16106389504 0 100 0 35 0 4 135 34 36 108 0 33 0
@@ -2393,7 +2393,7 @@ itemsfile version 2
  itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 4  dwarf_great_pick 0  dwarf_great_pick 0  dwarf_war_pick 156672  dwarf_war_pick_old 275  38996869123 9223635923965575392 400 156672 5 100 0 0 0 0 30720 94 0 90 0 256 286
 0
 
- itm_free_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163459 9223635923965575392 400 156672 2 100 0 0 0 0 28672 98 0 94 0 282 284
+ itm_dwarf_throwing_axe_reward Erebor_Flying_Axes Erebor_Flying_Axes 1  dwarf_throw_axe_2 0  88145930 196608 1000 4398046781448 5 100 0 0 94 4 0 99 34 37 6 311 0
 0
 
  itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 3  dwarf_mattock 1  dwarf_mattock 0  dwarf_adz 156672  272957443 9223652412881895662 200 156672 3 100 0 0 0 0 25600 103 0 52 0 256 281
@@ -2402,7 +2402,7 @@ itemsfile version 2
  itm_dwarf_hand_axe Dwarf_Short_Axe Dwarf_Short_Axe 1  dwarf_1h_axe 0  80019458 9223388530091229198 500 156672 2 100 0 0 0 0 36864 97 0 54 0 256 36
 0
 
- itm_dwarf_throwing_axe Dwarf_Throwing_Axe Dwarf_Throwing_Axe 3  dwarf_throw_axe 0  dwarf_throw_axe_quiver 3458764513820540928  dwarf_throw_axe_inventory 1152921504606846976  88145930 35702112256 300 4398046781448 5 100 0 0 90 2 0 99 26 53 4 65 0
+ itm_dwarf_throwing_axe Dwarf_Throwing_Axes Dwarf_Throwing_Axes 3  dwarf_throw_axe 0  dwarf_throw_axe_quiver 3458764513820540928  dwarf_throw_axe_inventory 1152921504606846976  88145930 35702112256 300 4398046781448 5 100 0 0 90 2 0 99 26 35 4 65 0
 0
 
  itm_dwarf_spear Dwarf_Spear Dwarf_Spear 1  dwarf_spear 0  138772484 9254615759470988544 400 156672 2.25 100 0 0 0 0 20480 98 0 140 0 282 532
@@ -2553,7 +2553,7 @@ itemsfile version 2
  itm_ent_hands Ent_Hands Ent_Hands 6  ent_hand_L 0  olog_hand_L 4398046511104  isen_olog_hand_L 2199023255552  troll_handL 2  gunda_troll_handL 4  mordor_troll_handL 8  4111 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
 0
 
- itm_free_galadriel Galadriel_suit Galadriel_suit 1  galadriel 0  553652237 0 1 0 33 100 60 80 60 0 0 0 0 0 0 0 0
+ itm_fur_gloves_reward Hunter_Gloves Hunter_Gloves 1  narf_demi_gauntlets_fur_L 0  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
  itm_empty_hands empty_hands empty_hands 1  dummy_mesh 0  137438957583 0 130 0 33 100 0 1 0 0 0 0 0 0 0 0 0
@@ -2604,7 +2604,7 @@ itemsfile version 2
  itm_orc_brew Orc_Brew Orc_Brew 1  orc_brew 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_saddle Saddle_of_Thengel Saddle_of_Thengel 1  RohanSaddle 0  4107 0 5000 0 4 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_saddle Saddle Saddle 4  RohanSaddle 0  RohanSaddle 536870912  rhunsaddle 262144  haradsaddle 131072  4107 0 5000 0 4 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_mearas_reward Mearh_Stallion Mearh_Stallion 1  mearh 0  4097 0 400 16106389504 0 100 0 45 0 5 180 50 50 105 0 40 0
@@ -2721,7 +2721,7 @@ itemsfile version 2
  itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armour 0  denethor_robe 2048  dm_nazgulrobe 512  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16777229 0 4000 704643072 35 100 0 43 15 15 0 0 0 0 0 0 0
 0
 
- itm_wilderness_amulet Wilderness_Amulet Wilderness_Amulet 2  dunland_amulet 0  beorning_amulet 256  4107 0 1000 704643072 0 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_wilderness_cowl Hunter_Cowl Hunter_Cowl 1  got_stark_hood 0  1073741836 0 1000 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_prisoner_coll_chain Prisoner_Chains Prisoner_Chains 1  prisoner_coll_chain 0  16777228 0 10 0 10 100 2 0 0 0 0 0 0 0 0 0 0
@@ -2754,7 +2754,7 @@ itemsfile version 2
  itm_thrush_reward Thrush Thrush 1  prop_reward_thrush 0  4107 0 1000 0 1 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_gauntlets_reward Iron_Fists Iron_Fists 1  narf_finger_gauntlets_L 0  4111 0 2000 0 2 100 0 6 0 15 0 0 0 0 0 0 0
+ itm_gauntlets_reward Iron_Fists Iron_Fists 2  narf_finger_gauntlets_L 0  CWE_gauntlets_arabs_a_dwarf_L 536870912  4111 0 2000 0 2 100 0 4 0 15 0 0 0 0 0 0 0
 0
 
  itm_save_compartibility_item10 INVALID_ITEM INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
