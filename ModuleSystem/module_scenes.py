@@ -596,12 +596,12 @@ scenes = [
 ("forest_mirkwood2"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b0190c8080058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"),
 ("forest_mirkwood3"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"),
 ("forest_mirkwood4"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood5"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood6"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood7"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood8"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood9"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
-("forest_mirkwood10"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"),
+("forest_mirkwood5"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001490b56cb00058d66000023ad0000751200006218",[],[],"outer_terrain_forest"),
+("forest_mirkwood6"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"), #copy
+("forest_mirkwood7"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b0190c8080058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"), #copy
+("forest_mirkwood8"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"), #copy
+("forest_mirkwood9"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"), #copy
+("forest_mirkwood10"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001490b56cb00058d66000023ad0000751200006218",[],[],"outer_terrain_forest"),    #copy
 
 # Non-campaign scenes (these can savely be kept at the end of the file and moved with each extension, whereas campaign scenes are stored within savegame files, for whatever reason)
 # Tutorial Scenes

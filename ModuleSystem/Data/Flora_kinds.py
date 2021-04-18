@@ -181,9 +181,9 @@ fauna_kinds = [
 
  ('bushes02_a', #willowy bushes
   fkf_plain_forest|fkf_snow_forest|fkf_steppe_forest|density(10),
-  [['PW_bushes02_a', 'bo_pw_bushes02_a'],
-   ['PW_bushes02_b', 'bo_pw_bushes02_a'],
-   ['PW_bushes02_c', 'bo_pw_bushes02_a']]),
+  [['PW_bushes02_a', 'bo_pw_bushes02_a_new'],
+   ['PW_bushes02_b', 'bo_pw_bushes02_a_new'],
+   ['PW_bushes02_c', 'bo_pw_bushes02_a_new']]),
 
  ('bushes03_a', #pine-like small bush
   fkf_steppe|fkf_desert|fkf_plain_forest|fkf_desert_forest|density(54),
