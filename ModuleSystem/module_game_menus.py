@@ -5464,7 +5464,7 @@ game_menus = [
 			(set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
 		(else_try),
 			# evil men VS anything
-			(eq, ":winning_side_race", tf_evil_man ),
+			(eq, ":winning_side_faction", "fac_mordor" ), #Mordor non-orc
 			(set_background_mesh, "mesh_draw_victory_evilman"),  # specific victory-loss image: evil men VS anything
 		(else_try),
 			(eq, ":winning_side_faction", "fac_gondor" ),

@@ -13349,9 +13349,9 @@ scripts = [
     [ 
 	(store_script_param_1, ":party"), #Party_id
 	# zero all voting
-	(assign, reg15, 0), # humanoids
-	(assign, reg16, 0), # orcoids
-	(assign, reg17, 0), # humans
+	(assign, reg15, 0), # orcoids
+	(assign, reg16, 0), # humanoids
+	(assign, reg17, 0), # humans, includes evil humans
 	(assign, reg18, 0), # dwarves
 	(assign, reg19, 0), # elves
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
@@ -13378,9 +13378,9 @@ scripts = [
 			(val_add, reg16, ":n"),
 			(try_begin),(eq, ":race", tf_dwarf),
 				(val_add, reg18, ":n"),
-			(else_try), 
-				(val_add, reg19, ":n"),
 			(else_try), (is_between, ":race", tf_elf_begin, tf_elf_end),
+				(val_add, reg19, ":n"),
+            (else_try), 
 				(val_add, reg17, ":n"),
 			(try_end),
 		(try_end),
