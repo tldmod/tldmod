@@ -62,8 +62,8 @@ fauna_kinds = [
  ('ga_grass_snow', #snow forest = marshland grass, must not be flagged as grass
   fkf_snow_forest|fkf_align_with_ground|fkf_guarantee|density(1666),
   [['PW_grass_a_xx', '0'],
-   ['PW_grass_b_xx', '0'],
-   ['PW_grass_b_xx', '0'],
+   ['PL_wi_bush2a', '0'],
+   ['PL_wi_bush2b', '0'],
    ['PW_grass_b_xx', '0'],
    ['PW_grass_e_xx', '0']]),
    
@@ -117,12 +117,12 @@ fauna_kinds = [
 
 ### BUSHES
   
- ('grass_bush_l', #zl_bush_white_flowers zl_white_flowers
-  fkf_plain|fkf_plain_forest|fkf_align_with_ground|density(50),
-  [['PW_grass_bush_l01', '0'], ['PW_grass_bush_l02', '0']]),
+ ('grass_bush_l', #former snow grass, high, reedy, vertex painted green
+  fkf_snow_forest|fkf_align_with_ground|density(100),
+  [['PL_wi_bush3a', '0'], ['PL_wi_bush3b', '0']]),
   
  ('zl_white_flowers', #zl_bush_white_flowers grass_bush_l
-  fkf_align_with_ground|density(2),
+  fkf_plain|fkf_plain_forest|fkf_align_with_ground|density(50),
   [['PW_grass_bush_l01', '0'], ['PW_grass_bush_l02', '0']]),
 
  ('zl_bush_white_flowers', #grass_bush_l
@@ -144,9 +144,9 @@ fauna_kinds = [
   fkf_steppe|fkf_desert|fkf_steppe_forest|fkf_desert_forest|density(70),
   [['PW_common_plant_xx', '0']]),
   
- ('small_plant',
-  fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_align_with_ground|density(50),
-  [['PW_big_bush_xx', '0']]),
+ ('small_plant', #former snow plant, vertex painted very green bush
+  fkf_plain_forest|fkf_snow_forest|fkf_align_with_ground|density(50),
+  [['PL_wi_bush1', '0']]),
   
 #DUPLICATE
  ('seedy_plant', 
@@ -162,18 +162,18 @@ fauna_kinds = [
   fkf_plain|fkf_plain_forest|fkf_steppe_forest|density(50),
   [['PW_buddy_plant_xx', '0'], ['PW_buddy_plant_b_xx', '0']]),
 
- ('yellow_flower', #low yellow flower
+ ('yellow_flower', #low yellow flower #zl_yellow_flowers
   fkf_plain|fkf_align_with_ground|density(50),
-  [['PW_yellow_flower', '0'], ['PW_yellow_flower_b', '0']]),
+  [['PW_yellow_flower', '0'], ['PW_yellow_flower_b', '0'],['PW_spiky_plant', '0']]),
 
- ('spiky_plant', #zl_yellow_flowers
+ ('spiky_plant', #unused
   fkf_plain|fkf_align_with_ground|density(50),
   [['PW_spiky_plant', '0']]),
 
 #DUPLICATE
- ('zl_yellow_flowers', #spiky_plant
+ ('zl_yellow_flowers', # yellow_flower
   fkf_align_with_ground|density(2),
-  [['PW_spiky_plant', '0']]),
+  [['PW_yellow_flower', '0'], ['PW_yellow_flower_b', '0'],['PW_spiky_plant', '0']]),
 
  ('blue_flower',
   fkf_plain|fkf_plain_forest|density(30),
@@ -280,13 +280,13 @@ fauna_kinds = [
   [['PW_tree_3_a_gray', '0'], ['PW_tree_3_b_gray', '0']]),
 
 #duplicate
- ('pw_snow_bushes', 
+ ('pw_snow_bushes', #ga_tree_3_a_brown
   fkf_snow_forest|density(8), 
-  [['PW_tree_19_a', '0']]), #similar to ga_tree_3_a_brown
+  [['PW_tree_3_a_brown', '0'], ['PW_tree_3_b_brown', '0'],['PW_tree_19_a', '0']]), 
  
  ('ga_tree_3_a_brown', #similar to pw_snow_bushes
   fkf_desert|fkf_desert_forest|fkf_snow_forest|density(8),
-  [['PW_tree_3_a_brown', '0'], ['PW_tree_3_b_brown', '0']]),
+  [['PW_tree_3_a_brown', '0'], ['PW_tree_3_b_brown', '0'],['PW_tree_19_a', '0']]),
   
  ('pw_ground_thorn', #same as tree_1
   fkf_snow_forest|density(12),
@@ -1205,6 +1205,12 @@ fauna_kinds = [
    ['PL_oak_group_old_b1', 'bo_PL_oak_group_old1'],
    ['PL_oak_group_old_b2', 'bo_PL_oak_group_old2'],
    ['PL_oak_group_old_b3', 'bo_PL_oak_group_old3']]),   
+
+ ('tree_dead_group',
+  fkf_tree|density(2),
+  [['PL_tree_8_2_a', 'bo_pl_oak_group1'],
+   ['PL_tree_8_2_b', 'bo_pl_oak_group2'],
+   ['PL_tree_8_2_c', 'bo_pl_oak_group3'],]),
 
 ]
 

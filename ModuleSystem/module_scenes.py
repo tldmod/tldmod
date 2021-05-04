@@ -599,7 +599,7 @@ scenes = [
 ("forest_mirkwood5"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001490b56cb00058d66000023ad0000751200006218",[],[],"outer_terrain_forest"), #fir mix
 ("forest_mirkwood6"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000145d6d18000058d66000037c600005f9900002ad0",[],[],"outer_terrain_forest"), #firs pure + rocks
 ("forest_mirkwood7"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000145d10f8000058d6600007add0000751200007a86",[],[],"outer_terrain_forest"), #beeches
-("forest_mirkwood8"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"), #copy
+("forest_mirkwood8"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x000000014019056300058d66000037c60000416c0000385d",[],[],"outer_terrain_forest"), #swamp
 ("forest_mirkwood9"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"), #copy
 ("forest_mirkwood10"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001490b56cb00058d66000023ad0000751200006218",[],[],"outer_terrain_forest"),    #copy
 

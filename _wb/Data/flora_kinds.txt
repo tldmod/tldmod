@@ -1,4 +1,4 @@
-193
+194
 grass 6442469687300 6
  PW_grass_yellow_e  0
  PW_grass_a_xx  0
@@ -13,8 +13,8 @@ grass_steppe 6442469689352 4
  PW_grass_e_xx  0
 ga_grass_snow 7155432558592 5
  PW_grass_a_xx  0
- PW_grass_b_xx  0
- PW_grass_b_xx  0
+ PL_wi_bush2a  0
+ PL_wi_bush2b  0
  PW_grass_b_xx  0
  PW_grass_e_xx  0
 ga_grass_desert 8641491247136 4
@@ -51,10 +51,10 @@ grass_bush_j 214749154332 2
 grass_bush_k 1717987704844 2
  PW_grass_bush_k01_xx  0
  PW_grass_bush_k02_xx  0
-grass_bush_l 214748627972 2
- PW_grass_bush_l01  0
- PW_grass_bush_l02  0
-zl_white_flowers 8590196736 2
+grass_bush_l 429496995840 2
+ PL_wi_bush3a  0
+ PL_wi_bush3b  0
+zl_white_flowers 214748627972 2
  PW_grass_bush_l01  0
  PW_grass_bush_l02  0
 zl_bush_white_flowers 0 2
@@ -69,8 +69,8 @@ basak 300647721000 1
  PW_basak_xx  0
 common_plant 300647721000 1
  PW_common_plant_xx  0
-small_plant 214748630028 1
- PW_big_bush_xx  0
+small_plant 214748632064 1
+ PL_wi_bush1  0
 seedy_plant 214748367884 1
  PW_big_bush_xx  0
 big_bush 128849021964 1
@@ -78,12 +78,15 @@ big_bush 128849021964 1
 buddy_plant 214748367876 2
  PW_buddy_plant_xx  0
  PW_buddy_plant_b_xx  0
-yellow_flower 214748626948 2
+yellow_flower 214748626948 3
  PW_yellow_flower  0
  PW_yellow_flower_b  0
+ PW_spiky_plant  0
 spiky_plant 214748626948 1
  PW_spiky_plant  0
-zl_yellow_flowers 8590196736 1
+zl_yellow_flowers 8590196736 3
+ PW_yellow_flower  0
+ PW_yellow_flower_b  0
  PW_spiky_plant  0
 blue_flower 128849019908 1
  PW_blue_flower_xx  0
@@ -158,11 +161,14 @@ pw_gray_bush 42953936928 2
  0 0
  PW_tree_3_b_gray  0
  0 0
-pw_snow_bushes 34359742464 1
- PW_tree_19_a  0
-ga_tree_3_a_brown 34359750688 2
+pw_snow_bushes 34359742464 3
  PW_tree_3_a_brown  0
  PW_tree_3_b_brown  0
+ PW_tree_19_a  0
+ga_tree_3_a_brown 34359750688 3
+ PW_tree_3_a_brown  0
+ PW_tree_3_b_brown  0
+ PW_tree_19_a  0
 pw_ground_thorn 51539611648 3
  PW_tree_9_a_xx  0
  PW_tree_9_a_xx  0
@@ -1007,3 +1013,10 @@ tree_group_forest 257698037760 6
  PL_oak_group_old_b1  bo_PL_oak_group_old1
  PL_oak_group_old_b2  bo_PL_oak_group_old2
  PL_oak_group_old_b3  bo_PL_oak_group_old3
+tree_dead_group 8594128896 3
+ PL_tree_8_2_a  bo_pl_oak_group1
+ 0 0
+ PL_tree_8_2_b  bo_pl_oak_group2
+ 0 0
+ PL_tree_8_2_c  bo_pl_oak_group3
+ 0 0

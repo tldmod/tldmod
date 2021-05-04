@@ -11179,6 +11179,7 @@ scripts = [
 
 # regions... of a pos: put results in reg1 (mtarini)
 # first parameter: terrain type
+# script_get_region_of_pos1
 ("get_region_of_pos1", [
 	(store_script_param_1, ":terrain_type"),
 	
@@ -11687,8 +11688,7 @@ scripts = [
 		(is_between,":region",region_n_mirkwood,region_s_mirkwood+1),
 		(assign, "$small_scene_used", 1),
 		(try_begin), (eq, ":small_scene", 1),
-            (assign, ":scene_to_use", scn_forest_mirkwood5),
-			#(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1_small", "scn_forest_firien1"),
+			(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1_small", "scn_forest_firien1"),
 		(else_try),
 			(store_random_in_range, ":scene_to_use", scn_forest_mirkwood1, scn_forest_mirkwood10+1),
 		(try_end),
