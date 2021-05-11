@@ -3085,7 +3085,7 @@ scene_props = [
 ( "tent_4"                                     ,0,"tent_4","bo_tent_4",[]),
 ( "tent_4_open"                                ,0,"tent_4_open","bo_tent_4_open",[]),
 ( "tent_a2"                                 ,0,"new_tent_a","bo_new_tent_a",[]),
-( "tent_b2"                                 ,0,"new_tent_b","bo_new_tent_a",[]),
+( "tent_b2"                                 ,0,"new_tent_b","bo_new_tent_b",[]),
 ( "tent_c2"                                 ,0,"new_tent_c","bo_new_tent_c",[]),
 ( "orc_shelter_1b"                             ,0,"orc_shelter_1b","bo_orc_shelter_1",[]),
 ( "orc_shelter_2b"                             ,0,"orc_shelter_2b","bo_orc_shelter_2",[]),

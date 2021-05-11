@@ -5950,7 +5950,7 @@ spr_tent_4_open 0 0 tent_4_open bo_tent_4_open 0
 spr_tent_a2 0 0 new_tent_a bo_new_tent_a 0
 
 
-spr_tent_b2 0 0 new_tent_b bo_new_tent_a 0
+spr_tent_b2 0 0 new_tent_b bo_new_tent_b 0
 
 
 spr_tent_c2 0 0 new_tent_c bo_new_tent_c 0
