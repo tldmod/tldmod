@@ -2584,7 +2584,7 @@ AI_triggers_moto = [
 
 (.5, 0, 0, [(eq, "$tld_option_formations", 2),(eq, "$temp_action_cost", 1),(neg|game_key_is_down, gk_order_1)], [   
     (assign, "$temp_action_cost", 0),
-    (display_message, "@DEBUG: F1 Let Go"),
+    #(display_message, "@DEBUG: F1 Let Go"),
     (get_player_agent_no, ":player"),
     (try_begin),
       (agent_slot_eq, ":player", slot_agent_tournament_point, 1),

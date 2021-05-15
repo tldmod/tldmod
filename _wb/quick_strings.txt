@@ -1,4 +1,4 @@
-1886
+1885
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_219_wb__dev_^_B _rev_219_wb_|_dev_^_Built_2021-05-15_20:15___
+qstr__rev_220_wb__dev_^_B _rev_220_wb_|_dev_^_Built_2021-05-15_20:17___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -843,7 +843,6 @@ qstr_Formations_turned_OF Formations_turned_OFF_in_options_menu
 qstr_Division_{reg1}_{s2}_g Division_{reg1}_{s2}_goes_to_its_memorized_position...
 qstr_Division_{reg1}_{s2}_f Division_{reg1}_{s2}_forms_line_(memorized).
 qstr_Division_{reg1}_{s2}_fo Division_{reg1}_{s2}_forms_{reg0}_lines_(memorized).
-qstr_DEBUG:_F1_Let_Go DEBUG:_F1_Let_Go
 qstr_Delivered_{reg60}_da Delivered_{reg60}_damage.
 qstr_DEBUG__Health_Regen_ DEBUG_(Health_Regen):_{s1}_regains_{reg0}%_health.__=_+{reg1}%_STR
 qstr_Your_bear_form_has_{ Your_bear_form_has_{reg2}/{reg1}_HP!
