@@ -148,7 +148,7 @@ ui_str_hear_me|%s, escutem-me !
 ui_return|Retornar
 ui_factions|Facções
 ui_troop_upgrades|Melhorias de Tropa
-; ui_hdr_mode|HDR Mode:
+ui_hdr_mode|Modo de Alta Resolução:
 ui_autoexpore|Exposição automática (recomenda-se ligada caso HDR estiver ligado)
-; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
-; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)
+ui_saving_policy_realistic|Sem sair e salvar! (Não recomendado.)
+ui_saving_policy_nonrealistic|Sair e salvar (Recomendado, pode ter vários saves.)

@@ -602,11 +602,11 @@ itm_rhun_armor_p|Armadura Nobre de Rhun
 itm_rhun_armor_k|Armadura Nobre de Rhun
 itm_rhun_helm_barbed|Elmo Farpado de Rhun
 itm_rhun_helm_horde|Elmo de Horda de Rhun
-; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot|Elmo de Pote Rhun
 itm_rhun_helm_round|Elmo Redondo de Rhun
 itm_rhun_helm_leather|Elmo de Couro de Rhun
 itm_rhun_helm_chieftain|Elmo de Chefe de Rhun
-; itm_rhun_warpick|Rhun War Pick
+itm_rhun_warpick|PIco de Guerra Rhun
 itm_rhun_greataxe|Machado Grande de Rhun
 itm_rhun_battleaxe|Machado de Batalha de Rhun
 itm_rhun_falchion|Cimitarra Selvagem
@@ -763,8 +763,8 @@ itm_book_of_moria|Livro de Mazarbul
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Arco de Bard
-; itm_tome_of_knowledge|Tome of Arcane Knowledge
-; itm_orc_idol_reward|Idol of the First Orc
+itm_tome_of_knowledge|Livro de Conhecimento Arcano
+itm_orc_idol_reward|Ídolo do Primeiro Orc
 itm_crebain_reward|Corvo
 itm_miruvor_reward|Frasco de Miruvor
 itm_wheeled_cage|Jaula Gigante sobre Rodas
@@ -787,7 +787,7 @@ itm_leather_boots_reward|Botas de Caçador
 itm_rohan_armor_th|Armadura Real de Rohan
 itm_wilderness_amulet|Amuleto Silvestre
 itm_prisoner_coll_chain|Correntes de Prisioneiro
-; itm_witchking_helmet|Sorcerer's Mask
+itm_witchking_helmet|Máscara do Feiticeiro
 itm_lorien_royal_armor|Armadura Real de Lorien
 itm_feet_chains|Correntes de Pés
 itm_feet_chains_dwarf|Correntes de Pés

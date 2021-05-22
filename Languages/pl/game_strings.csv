@@ -589,7 +589,7 @@ str_npc16_intro_response_2|Pilnuj swoich własnych spraw!
 str_npc17_intro_response_2|Tak, te lasy są cudowne, lecz muszę już iść.
 str_npc1_backstory_a|Przybywasz w nieodpowiedniej chwili, przyjacielu. Ithilien jest przepełnione wrogimi najeźdzcami i zwiadowcami, a niektórzy widzieli także wielkie bandy orków. Próbujemy nie pozwolić tym potworą przejść przez Wielką Rzekę, co wielokrotnie nam się udało . Kapitan Faramir jest odważny i dzięki niemu nie złamiemy się przed Cieniem. 
 str_npc2_backstory_a|Ah, jakże mi miło że chcesz o mnie wiedzieć więcej. Zostałem ostatnio mianowany strażnikiem komnat Namiestnika, jest to godna służba, nawet jeśli nie dzieje się zbyt wiele.
-str_npc3_backstory_a|Cóż, mój stary hełm tutaj jest coraz mniejszy z minuty na minutę , a ziemia wydaje chwiejne jakbym jechał złośliwy folię . Ach, gdybym tylko nie pił całe to piwo w nocy - I zwykle mam dobrą głowę do picia, więc musi to być rzęsiste ork napar .
+str_npc3_backstory_a|No cóż, mój stary hełm staje się coraz mniejszy z minutę na minutę a podłoga staje się chwiać jak bym ujeżdżał złośliwego pędraka. Ach, gdybym nie pił tyle tego Ale wczorajszej nocy - Zazwyczaj mam dobrą głowę do alkoholu, to musiał być jakieś paskudztwo warzone przez orków.
 str_npc4_backstory_a|Nazywam się Gálmynë , i ja zrobiłem to moja sprawa, wiedzieć twoje {playername} . Pozwól mi wyjaśnić , dlaczego.
 str_npc5_backstory_a|Być może słyszeliście opowieści o moich czynach w bitwach przeszłości i zapomniane przez śmiertelnych ludzi . W pełni czasów tej wojny jest jeszcze inny czas niebezpieczeństwa dla Eldarów , ale będzie to ostatnia wojna .
 str_npc6_backstory_a|\nPrzepraszam za moją zuchwałość , obcy , ale nie mamy wielu turystów tutaj i te, które pochodzą nie wyglądają bardzo wiarygodnie. Zaledwie tydzień temu , ten karzeł pojawił się i ... Nieważne . Nazywam się Luevanna , z leśnych elfów z Mrocznej Puszczy ..
@@ -667,10 +667,10 @@ str_npc9_backstory_response_1|Wydaję mi się, że przydałby się nam berserk.
 str_npc10_backstory_response_1|Zrobisz to
 ; str_npc11_backstory_response_1|How 'bout loping off with me?
 ; str_npc12_backstory_response_1|How 'bout slippin' off with me.
-; str_npc13_backstory_response_1|How about following me?
-; str_npc14_backstory_response_1|How about joining me?
+str_npc13_backstory_response_1|A może za mną podążysz?
+str_npc14_backstory_response_1|Dołącz do mnie
 ; str_npc15_backstory_response_1|Aha... A healer, heh? And you are good at it, you say? I could use someone like you.
-; str_npc16_backstory_response_1|What are you doing here?
+str_npc16_backstory_response_1|Co tu robisz?
 str_npc17_backstory_response_1|Cóż, okazuje się, że nie wiem jeszcze wszystkiego o drzewach. Byłby to dla nas zaszczyt mieć Cię przy sobie.
 str_npc1_backstory_response_2|Przykro mi to słyszeć. Niech twa wiara podtrzyma twe męstwo.
 str_npc2_backstory_response_2|Nie, przykro mi. Poszukuje doświadczonych wojowników.
@@ -684,10 +684,10 @@ str_npc9_backstory_response_2|Nah, nie ufam zdrajcą
 str_npc10_backstory_response_2|Nie potrzebuję cie, niewolniku.
 ; str_npc11_backstory_response_2|I don't want to hear your skulking.
 ; str_npc12_backstory_response_2|The Big Bosses know best. You better follow orders.
-; str_npc13_backstory_response_2|That is your fate to suffer.
-; str_npc14_backstory_response_2|I've had enough of this.
+str_npc13_backstory_response_2|Twoim przeznaczeniem jest cierpienie
+str_npc14_backstory_response_2|Mam tego dosyć.
 ; str_npc15_backstory_response_2|Bah! I need fighters, not skulkers.
-; str_npc16_backstory_response_2|I've had enough of this.
+str_npc16_backstory_response_2|Mam tego dosyć.
 str_npc17_backstory_response_2|Nie,przepraszam. Jesteśmy na wojnie,a nie na wycieczce botanicznej.
 str_npc1_signup|Jestem pewien, że kapitan Faramir zrozumie, że są inni, którzy potrafią utrzymać Wroga na dystans z jeszcze większą walecznością i odwagą.
 str_npc2_signup|Cóż za szczęśliwy dzień! Byłbym uradowany dołączając do twojej kompanii!
@@ -779,11 +779,11 @@ str_npc1_payment|Dołączę do ciebie, ale mój kapitan Faramir będzie tęskni�
 ; str_npc3_payment_response|This better be worth it. I'll settle with the barkeep. [costs {reg14}/{reg15} Influence]
 ; str_npc4_payment_response|It's a noble cause, but I'm sure a replacement can be found. [costs {reg14}/{reg15} Influence]
 ; str_npc5_payment_response|Trust me, you will be more useful with me. [costs {reg14}/{reg15} Influence]
-; str_npc6_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
-; str_npc7_payment_response|Master Dwalin will understand that a battle-worthy dwarf should not be kept from our enemies for too long. [costs {reg14}/{reg15} Influence]
-; str_npc8_payment_response|The King's well-being is important, but you will save more lives with me. [costs {reg14}/{reg15} Influence]
-; str_npc9_payment_response|Oh, but the guard won't dare stop you, if you are with me. [costs {reg14}/{reg15} Influence]
-; str_npc10_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
+str_npc6_payment_response|Od teraz, twój obowiązek jest ze mną. [costs {reg14}/{reg15} Influence]
+str_npc7_payment_response|Mistrz Dwalin zrozumie, że godny walki krasnolud nie powinien być zbyt długo trzymany z dala od naszych wrogów. [costs {reg14}/{reg15} Influence]
+str_npc8_payment_response|Dobre samopoczucie króla jest ważne, ale ze mną uratujesz więcej żyć. [costs {reg14}/{reg15} Influence]
+str_npc9_payment_response|Oh, ale strażnicy nie odważą się zatrzymywać ciebie, jeśli będziesz ze mną.  [costs {reg14}/{reg15} Influence]
+str_npc10_payment_response|Od teraz, twój obowiązek jest ze mną. [costs {reg14}/{reg15} Influence]
 ; str_npc11_payment_response|Never mind your Boss, you serve me now. [costs {reg14}/{reg15} Influence]
 ; str_npc12_payment_response|Your boys will get new orders, I'll worry about the High Ups. [costs {reg14}/{reg15} Influence]
 ; str_npc13_payment_response|They will see otherwise, for I'm your Chieftain now. [costs {reg14}/{reg15} Influence]
@@ -2259,11 +2259,11 @@ str_npc19_payment_response|Naczelnik Daeglaf będzie musiał ulec mojemu życzen
 str_npc20_payment_response|Oczywiście. Ruszajmy więc! W końcu jakby na to nie patrzeć, nie będziesz podążał za pokornym snagiem. [costs {reg14}/{reg15} Influence]
 ; str_npc21_payment_response|It's a noble cause, but I'm sure a replacement can be found. [costs {reg14}/{reg15} Influence]
 ; str_npc22_payment_response|Trust me, you will be more useful with me. [costs {reg14}/{reg15} Influence]
-; str_npc23_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
-; str_npc24_payment_response|Master Dwalin will understand that a battle-worthy dwarf should not be kept from our enemies for too long. [costs {reg14}/{reg15} Influence]
-; str_npc25_payment_response|The King's well-being is important, but you will save more lives with me. [costs {reg14}/{reg15} Influence]
-; str_npc26_payment_response|Oh, but the guard won't dare stop you, if you are with me. [costs {reg14}/{reg15} Influence]
-; str_npc27_payment_response|From now on, your duty is with me. [costs {reg14}/{reg15} Influence]
+str_npc23_payment_response|Od teraz, twój obowiązek jest ze mną. [costs {reg14}/{reg15} Influence]
+str_npc24_payment_response|Mistrz Dwalin zrozumie, że godny walki krasnolud nie powinien być zbyt długo trzymany z dala od naszych wrogów. [costs {reg14}/{reg15} Influence]
+str_npc25_payment_response|Dobre samopoczucie króla jest ważne, ale ze mną uratujesz więcej żyć. [costs {reg14}/{reg15} Influence]
+str_npc26_payment_response|Oh, ale strażnicy nie odważą się zatrzymywać ciebie, jeśli będziesz ze mną.  [costs {reg14}/{reg15} Influence]
+str_npc27_payment_response|Od teraz, twój obowiązek jest ze mną. [costs {reg14}/{reg15} Influence]
 str_npc18_morality_speech|Świetnie! Moje pragnienie krwi jest nieugaszone! Dlaczego my {s21} jak tchórze? Pozwól mi z nimi walczyć!
 str_npc19_morality_speech|Dowódco, wielce nie podoba mi się że my {s21}. Król taki jak ja powinien zawsze być hojny, ale jeśli władcy są puści, nie mam nic do oddania, a nasi żołnierze nas opuszczą.
 str_npc20_morality_speech|Rzekłbym, że spodziewałem się więcej po tobie, Dowódco, jednakże byłoby to kłamstwo. Uważaj, aby twoje samolubne sposoby nie zaszkodziły wzniosłym projektom lepszych od ciebie!
@@ -2467,11 +2467,11 @@ str_moria_guildmaster_companion_player_none_ok|Będę z wami rozmawiał tak jak 
 ; str_moria_main_guildmaster_companion|Ha! Losing more than you can keep, are you? Throwing our stout lads into the meat grinder, and then cursing when you find you haven’t got enough left to win your battles? A right splendid commander you are, oh yes. Very well - look over there! I’ll give you a helpful hint now, and you’ll remember it, yes? You see that fellow on the crates, the one with blood all over his hands, muttering to himself? Not much of a killer, but where’s the blood from, I hear you ask? Why, it’s the blood from some of our fighters he’s helped put back on their feet. He’s a sawbones, that one. You’ll see for yourself, the next time you lead your troops into another mess and find you need some stitching done.
 str_isengard_guildmaster_companion_player_ask|Słyszałem o walecznych Uruk-hai. Jak narazie mi nie zaimponowali. Gdzie są najlepsi z nich ?
 ; str_isengard_guildmaster_companion_none|Leading patrols and armies of their own, no doubt - why would they lower themselves to fight under your command? They’ve got their own Orders to follow, from Higher Up. If you want fighting lads, go talk to the garrison chief! We’ve got stout fellows aplenty.
-; str_isengard_guildmaster_companion_player_none_ok|This rabble isn’t what you make it out to be. Stout fellows? Fighting lads? Snagas aplenty, more like. Slavering swine.
+str_isengard_guildmaster_companion_player_none_ok|Ten motłoch nie jest tym, na co wygląda. Tęgi faceci? Walczący chłopi? Mnóstwo Snagasów, bardziej przypominają śliniące się świnie.
 str_isengard_guildmaster_player_found_ok|Jeżeli umie zabijać, to zabieram go ze sobą. Jeśli nie, wypatroszę go jak rybę. I jeżeli okaże się być kolejnym nic nie wartym robalem, wrócę tutaj i zapłacisz za marnowanie mojego czasu!
 ; str_isengard_main_guildmaster_companion|A great commander you are, it is plain to see, and wisely do you choose to take only the bravest and most skilled fighters under your banner. And yet, if you will take my counsel - a battle is won not merely with iron and sinew, Commander, but with guile and foreknowledge of the foeman’s doings, his comings and goings. We have a scoutmaster here, an Orc who has sworn allegiance to Saruman the Great. I have heard that he spent many years in the Misty Mountains, catching and taming wargs. A skilled tracker and hunter is Durgash. You will find him a most useful helper, Commander. He's usually lurking around the warg pits.
 ; str_isengard_hunting_camp_guildmaster_companion|O ho! So you think our finest lads should humble themselves and take orders from you, do you? You’re a bold one, and no mistake. I know just the fellow for you. Calls himself Gulm, and he’s a proper fierce one, he is. Never seen anyone take so much pleasure in bashing in skulls and breaking bones with that mallet of his. And the more foes he kills, the more savage he seems to get. I don’t rightly know where he is at the moment, though - but he’s in this camp for sure, trying not to attract attention for some reason. Does that sound suitable for you, O Great Commander, taking an Uruk-hai berserker into your camp?
-; str_dunland_guildmaster_companion_player_ask|So, these are the Men of the hills who serve the White Hand! A sorry-looking lot. Where are your fighters of note?
+str_dunland_guildmaster_companion_player_ask|Więc to są Mężczyźni wzgórz którzy służyli Białej Dłoni! Żałośnie wyglądająca ferajna. Gdzie są twoi godni uwagi wojownicy?
 ; str_dunland_guildmaster_companion_none|Following those greater than you, no doubt. If you want warriors, speak to the training masters. See for yourself if any of our young pups will follow you into battle.
 ; str_dunland_guildmaster_companion_player_none_ok|Curs and whelps! It is no wonder your people were driven into the hills by the men of Rohan.
 ; str_dunland_guildmaster_player_found_ok|A treacherous wolf, I would hardly keep by my side. But a tame hunting dog, I might consider. Let me see which one this Heidrek proves to be.

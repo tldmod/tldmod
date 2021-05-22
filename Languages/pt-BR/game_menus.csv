@@ -27,7 +27,7 @@ mno_tutorial_1|Tutorial #1: Movimentação básica e seleção de armas. {s1}
 mno_tutorial_2|Tutorial #2: Lutando com um escudo. {s2}
 mno_tutorial_3|Tutorial #3: Lutando sem um escudo. {s3}
 mno_tutorial_3b_door|próximo nível
-mno_tutorial_4|Tutorial #4: Montando um cavalo ou um warg. {s4}
+mno_tutorial_4|Tutorial #4: Cavalgando um cavalo ou um warg. {s4}
 mno_tutorial_5|Tutorial #5: Comandando um bando de soldados. {s5}
 mno_go_back_dot|Voltar.
 mno_action_view_troop_trees|Ver árvore de tropas.
@@ -104,7 +104,7 @@ mno_start_cliff|Nos penhascos do Monte GUNDABAD
 menu_start_gondor_mt|^^^^^^^^^^Selecione a sua linhagem:
 mno_start_1_com|Plebeu
 mno_start_2_hib|Nobre
-; menu_start_haradrim|^^^^^^^You are one of the Haradrim,^a Man of the Desert.^Select your line
+menu_start_haradrim|Você é um dos Haradrim, um Homem do Deserto
 mno_start_1_des|Homem do Deserto
 mno_start_2_far|Homem da tribo de Harad Distante
 menu_start_numenorean|^^^^^^^Você é um Númenoriano Negro,^leal à Escuridão e à Morgoth.^Selecione onde você servirá o Olho
@@ -165,7 +165,7 @@ mno_strat_tweaks_rank_gain_rate|Taxa de ganho de Classificação: {s7}
 mno_strat_tweaks_back|Voltar para o menu de trapaças. 
 menu_camp_action|^^^^^^^^^ Qual objeto?
 mno_camp_drink_water|Beber a Entágua!
-; mno_camp_drink_orc_brew|Pass around the Orc Brew!
+mno_camp_drink_orc_brew|Passa a pinga Orc!
 mno_camp_action_4|Voltar.
 menu_assasins_attack_player_won|Você derrotou com sucesso os assassinos de {s2}, mandados por {s3}.
 menu_assasins_attack_player_retreat|Você escapou com vida!
