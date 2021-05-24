@@ -2210,7 +2210,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("rohan_rumor_4", "If you can heal men, please treat my horses with just as much care should they be wounded."),
 ("rohan_rumor_5", "Bring me eight Sumpter Horses, he says... after the seven he asked for yesterday.  Makes you wonder."),
 ("rohan_rumor_6", "Gondor prefers sturdier horses. Our riders enjoy speed. The Elves get only the best. And our enemies steal them!"),
-("rohan_rumor_7", "I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superiour but require a more experienced rider to handle."),
+("rohan_rumor_7", "I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superior but require a more experienced rider to handle."),
 ("rohan_rumor_8", "Wargs are slower than horses but can turn faster. They are also quite fragile compared to a well-bred warhorse."),
 ("rohan_rumor_9", "Armies march on Rohan with pikes and spears set against our fine horsemen. The traitor Saruman will cut down the whole Fangorn forest equipping his armies before this war is over."),
 ("rohan_rumor_10", "Being the best horsemen in the realm starts with raising the best horses."),
