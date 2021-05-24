@@ -32,6 +32,7 @@ call :createlink H map.txt
 mkdir Data
 call :createlink H Data/font_data.xml
 call :createlink H Data/ground_specs.txt
+call :createlink H Data/item_modifiers.txt
 call :createlink H Data/tldintro.bik
 
 ::for /f %%f in ('dir /b ..\Data') do call :createlink H Data\%%f
