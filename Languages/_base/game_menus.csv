@@ -68,7 +68,7 @@ mno_start_go|GONDOR, the Kingdom of the White Tower
 mno_start_ro|ROHAN, the Horse people
 mno_start_du|DUNEDAIN, the ancient dynasty of Men
 mno_start_be|BEORNINGS, the Bear people
-mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|the northern Kingdom of DALE
 menu_start_good_elf|^^^^^^^^^^which Forest do you live in, Elder?
 mno_start_ri|RIVENDELL, of Lord Elrond
@@ -175,7 +175,6 @@ mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
 mno_be_bold|Go on! I'm not afraid of plants or old myths!
 mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
 menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
-menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
 menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
 mno_ow_get_out|Ouch! Let's get out of this cursed place!
 menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your troops were that lucky.^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops 
 mno_join_attack|Charge the enemy.
 mno_join_order_attack|Order your troops to attack with your allies while you stay back.
 mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|Disengage.
 mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Ask no rewards.
 menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
 mno_siege_defender_join_battle|Join the battle.
 mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
+mno_siege_defender_do_not_join_battle|Don't get involved.
 menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
 menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
@@ -341,6 +342,16 @@ mno_explore|Explore this place.
 menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
 mno_attack_lair|Attack them now
 mno_leave_bandit_lair|Leave for now.
+menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+mno_go_with_the_raftmen|Take the raft to Dorwinion
+menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+mno_ride_to_dorwinion_next|Next...
+menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|Leave for now.
 menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
 mno_gondor_reinforcement_event_close|Close
 menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.

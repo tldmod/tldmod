@@ -197,6 +197,8 @@ qstr_+1_to_Strength|+1 to Strength
 qstr_+1_to_Agility|+1 to Agility
 qstr_+1_to_Leadership|+1 to Leadership
 qstr_+1_to_Wildcraft|+1 to Wildcraft
+qstr_+1_to_Tracking|+1 to Tracking
+qstr_when_equipped|when equipped
 qstr_+1_to_Power_Draw|+1 to Power Draw
 qstr_The_record_of_Balin_|The record of Balin's lost expedition.
 qstr_Who_might_be_interes|Who might be interested in this?
@@ -213,16 +215,18 @@ qstr_+1_to_Charisma|+1 to Charisma
 qstr_+1_to_Surgery|+1 to Surgery
 qstr_+1_to_Intelligence|+1 to Intelligence
 qstr_+2_to_Surgery|+2 to Surgery
-qstr_when_equipped|when equipped
 qstr_+1_to_Riding|+1 to Riding
 qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_Bonus_to_Riding|Bonus to Riding
+qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
+qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
 qstr_+1_to_Prisoner_Mgmt|+1 to Prisoner Mgmt
 qstr_+2_to_Tactics|+2 to Tactics
 qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
 qstr__Scales_with_Wildcra|(Scales with Wildcraft)
+qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|+1 to Spotting
-qstr_+2_to_Athletics|+2 to Athletics
 qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
 qstr_Less_Wargs_upkeep|Less Wargs upkeep
 qstr_Light_Armor|Light Armor
@@ -570,6 +574,7 @@ qstr_Dale_capital_moved_f|Dale capital moved from Dale to Esgaroth!
 qstr_Gundabad_capital_mov|Gundabad capital moved from Gundabad to Goblin Town!
 qstr_The_hosts_of_{s2}_re|The hosts of {s2} retreat back to their homes!
 qstr____Ruins_of_{s1}___|   Ruins of {s1}   
+qstr_{s1}_siege_attack!|{s1} siege attack!
 qstr_ranks|ranks
 qstr_shield_wall|shield wall
 qstr_wedge|wedge
@@ -628,6 +633,15 @@ qstr_have_taken_measure_o|have taken measure of your faction's current strength 
 qstr_loses_Faction_Streng|loses Faction Strength as supply lines were disrupted.
 qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of their camp.
 qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
+qstr_Mountain_Goblin|Mountain Goblin
+qstr_Tribal_Orc|Tribal Orc
+qstr_Tribal_Orc_Warrior|Tribal Orc Warrior
+qstr_Tribal_Orc_Chief|Tribal Orc Chief
+qstr_Mountain_Goblins|Mountain Goblins
+qstr_Tribal_Orcs|Tribal Orcs
+qstr_Tribal_Orc_Warriors|Tribal Orc Warriors
+qstr_Tribal_Orc_Chiefs|Tribal Orc Chiefs
+qstr_A_quest_was_cancelle|A quest was cancelled for update compatibility. No need to worry.
 qstr_Something_wrong_not_|Something wrong, not enough troops to remove
 qstr_Raiders|Raiders
 qstr_have_won_the_sea_bat|have won the sea battle, demoralizing your troops. The enemy may take advantage of this defeat and attack more frequently.
@@ -694,7 +708,7 @@ qstr_A_thunderstorm_from_t|A thunderstorm from the Misty Mountains rages over th
 qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.
 qstr_A_poisonous_fog_from_|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
 qstr_You_shapeshift_into_|You shapeshift into a bear!
-qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
+qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
 qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
 qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|Your mount stumbles! It seems to be lame.
@@ -711,6 +725,7 @@ qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
 qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
 qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
 qstr_Fixed_Camera___Cente|Fixed Camera - Center
+qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.
 qstr_Cannot_leave_now.|Cannot leave now.
 qstr_You_have_found_the_l|You have found the local smithy.
@@ -746,7 +761,6 @@ qstr_Nazgul_diving_attack|Nazgul diving attack on {s11}!
 qstr_{s11}_is_{s10}_in_th|{s11} is {s10} in the Nazgul attack!
 qstr_Received_{reg66}_dam|Received {reg66} damage.
 qstr_You_yell_for_your_ho|You yell for your horse.
-qstr_{s1}_s_morale:_{reg1|{s1}'s morale: {reg1}
 qstr_You_do_not_need_to_r|You do not need to rally your troops yet.
 qstr_You_rally_your_troop|You rally your troops!
 qstr_{s5}_rallies_{reg65?|{s5} rallies {reg65?her:his} troops!
@@ -987,6 +1001,17 @@ qstr_Luckily_some_passing|Luckily some passing locals found you lying in the dit
 qstr_{s13}^^You_have_succ|{s13}^^You have successfully sneaked in.
 qstr_the_place|the place
 qstr_the_castle|the castle
+qstr_the_Citadel|the Citadel
+qstr_the_Secret_Cave|the Secret Cave
+qstr_Meduseld_the_Golden_|Meduseld, the Golden Hall
+qstr_the_Lord_Halls|the Lord Halls
+qstr_the_Leader_s_Cave|the Leader's Cave
+qstr_the_Tower|the Tower
+qstr_the_tower_of_Orthanc|the tower of Orthanc
+qstr_the_Throne_Room|the Throne Room
+qstr_Beorn_s_Hall|Beorn's Hall
+qstr_the_Hall|the Hall
+qstr_the_Great_Chamber_of|the Great Chamber of Thrór
 qstr_Stay_indoors_for_som|Stay indoors for some time ({reg1} Resource points per night)
 qstr_Camp_outside_for_som|Camp outside for some time (free)
 qstr_{s4}_s_scouts_have_s|{s4}'s scouts have seen and reported your failure. You have brought shame to {s4} and the responsibility of this failure is yours alone.
@@ -1015,9 +1040,6 @@ qstr_You_have_defeated_the|You have defeated the raiding fleet! This is a heavy 
 qstr_You_defeated_the_int|You defeated the intercepting fleet! Even though you do not have enough strength left to raid the city, this is a great victory!
 qstr_You_drove_back_the_e|You drove back the enemy fleet, but lost most of your ships!
 qstr_You_were_defeated_by|You were defeated by the intercepting fleet and failed to raid the city!
-qstr_Lorien|Lorien
-qstr_Imladris|Imladris
-qstr_Woodelf|Woodelf
 qstr_^^^^^^^You_come_upon|^^^^^^^You come upon the refugees leaving {s2} and on their way to {s3}. ^^They are mostly the old and the infirmed, accompanied by women and children.^^ There are guards, but not enough to protect everyone from a raid.
 qstr_^^^^^^^You_come_upon_|^^^^^^^You come upon the refugees you have been tracking since {s2}. They seem to be on their way to {s3}, and are mostly the old and the infirmed. ^^ There are few guards, but not enough to stop you and your men from killing all of them.
 qstr_^^At_last_the_Master|^^At last, the Master is making His move! The torches burn bright. The sharp weapons gleam. You and your stout lads will receive marching orders soon. Ai, there'll be fighting, lots of it, and glory enough to go around!^^You have the honour of being summoned to audience with the Master in His tower. Likely enough your first orders will be snaga's work - raid a village here, waylay a caravan there. But you'll prove yourself soon enough. Who's to say you won't play as large a role as any commander of {s2} in {s3}?^^The War has begun; the fall of Man and their allies begins!
@@ -1048,6 +1070,7 @@ qstr_You_are_entering_{s1|You are entering {s1} ({s2}).
 qstr_You_are_entering_{s1}|You are entering {s1}.
 qstr_The_war_expands_comm|The war expands, commanders are getting bolder! (siege requirements reduced)
 qstr_Your_party_is_spotte|Your party is spotted by {s1}.
+qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
 qstr_Party_has_nothing_to|Party has nothing to eat!
 qstr_You_pay_for_accommod|You pay for accommodation.
 qstr_The_troll_outside_{s|The troll outside {s2} was killed. Mission canceled.
@@ -1074,6 +1097,7 @@ qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the v
 qstr_The_forces_of_{s2}_e|The forces of {s2} established an advanced camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|The hosts of {s2} march back to defend their homes!
 qstr_{playername}_s_Reser|{playername}'s Reserves
+qstr_{reg70}___Last_Stand|{reg70} - Last Stand
 qstr_Gondor_has_called_fo|Gondor has called for aide!
 qstr_Gondor_is_accompanyi|Gondor is accompanying the marshall!
 qstr_{s5}_has_stopped_fol|{s5} has stopped following you.
@@ -1158,7 +1182,6 @@ qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've R
 qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
-qstr_the_Citadel|the Citadel
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Steward Denethor
 qstr_the_Golden_Hall|the Golden Hall
@@ -1386,7 +1409,7 @@ qstr_Mercy_I_crave!_To_fa|Mercy, I crave! To face {s7} in open battle is sheer f
 qstr_strong_warriors_from|strong warriors from {s7}
 qstr_champions_from_{s7}_|champions from {s7}, the strongest in the field
 qstr_{playername}_the_men|{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to challenge and defeat {reg22} {s6}.
-qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!
+qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superior force!
 qstr_I_will_do_what_you_a|I will do what you asked, and the men will witness.
 qstr_high_level_troops_fr|high level troops from
 qstr_elite_level_troops_f|elite level troops from

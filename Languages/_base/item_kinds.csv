@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Uruk-Hai Tracker Helm
 itm_isen_uruk_helm_f|Uruk-Hai Tracker Helm
 itm_uruk_pike_b|Mordor Pike
 itm_uruk_falchion_a|Uruk Falchion
-itm_uruk_falchion_b|Uruk Falchion
-itm_uruk_spear|Mordor Spear
-itm_uruk_skull_spear|Uruk Skull Spear
-itm_uruk_voulge|Uruk Voulge
-itm_uruk_heavy_axe|Uruk Heavy Axe
+itm_uruk_falchion_b|Orc Great Scimitar
 itm_isengard_sword|Isengard Sword
 itm_isengard_axe|Isengard Axe
 itm_isengard_hammer|Isengard Hammer
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Isen Uruk Shield
 itm_wood_club|Wooden Club
 itm_twohand_wood_club|Large Wooden Club
 itm_bone_cudgel|Bone Cudgel
-itm_skull_club|Skull Club
+itm_orc_pick|Orc Pick
+itm_orc_hammer|Evil Hammer
 itm_orc_club_b|Warg Rider Club
 itm_orc_club_c|Spiky Orc Club
 itm_orc_club_d|Evil Mace
 itm_orc_sledgehammer|Orc Sledgehammer
 itm_orc_simple_spear|Orc Spear
 itm_orc_skull_spear|Orc Skull Spear
-itm_orc_bill|Orc Bill
-itm_orc_slasher|Orc Slasher
+itm_orc_bill|Orc Polearm
+itm_orc_slasher|Orc Short Sword
 itm_orc_falchion|Orc Falchion
 itm_orc_scimitar|Orc Scimitar
 itm_orc_sabre|Orc Sabre
-itm_orc_machete|Orc Machete
+itm_orc_battle_axe|Orc Battle Axe
 itm_orc_axe|Orc Axe
-itm_orc_two_handed_axe|Orc Double Handed Axe
+itm_orc_two_handed_axe|Orc Great Axe
 itm_orc_throwing_axes|Orc Throwing Axes
 itm_orc_bow|Orc Bow
 itm_orc_shield_a|Orc Shield
@@ -494,6 +491,7 @@ itm_mirkwood_pad|Greenwood Quilted Coat
 itm_mirkwood_mail|Greenwood Mail
 itm_mirkwood_scale|Greenwood Light Scale
 itm_mirkwood_heavy_scale|Mirkwood Leafscale
+itm_mirkwood_sword|Woodelf Sword
 itm_mirkwood_great_spear|Greenwood Great Spear
 itm_mirkwood_war_spear|Greenwood War Spear
 itm_mirkwood_short_spear|Woodelf Spear
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|Dwarf Battle Axe
 itm_dwarf_great_axe|Dwarf Great Axe
 itm_dwarf_great_mattock|Dwarf Great Mattock
 itm_dwarf_great_pick|Dwarf Great Pick
-itm_dwarf_war_pick|Dwarf War Pick
+itm_dwarf_throwing_axe_reward|Erebor Flying Axes
 itm_dwarf_mattock|Dwarf Mattock
 itm_dwarf_hand_axe|Dwarf Short Axe
-itm_dwarf_throwing_axe|Dwarf Throwing Axe
+itm_dwarf_throwing_axe|Dwarf Throwing Axes
 itm_dwarf_spear|Dwarf Spear
 itm_dwarf_spear_b|Dwarf Pike
 itm_dwarf_spear_c|Dwarf Longaxe
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Master's Whip
 itm_horn_gondor_reward|Horn of Gondor
 itm_harad_totem_reward|Harad Totem
 itm_elven_amulet_reward|Elven Amulet
+
 itm_torque_reward|Evil Torque
 itm_orc_brew|Orc Brew
-itm_rohan_saddle|Saddle of Thengel
+itm_rohan_saddle|Saddle
 itm_mearas_reward|Mearh Stallion
 itm_shield_of_tuor|Shield of Tuor
 itm_riv_armor_reward|Rivendell Decorated Armor
@@ -785,7 +784,7 @@ itm_khamul_helm|Helm of Khamul
 itm_black_arrows_reward|Black Arrows
 itm_leather_boots_reward|Hunter Boots
 itm_rohan_armor_th|Rohan Royal Armor
-itm_wilderness_amulet|Wilderness Amulet
+itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|Prisoner Chains
 itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|Lorien Royal Armor

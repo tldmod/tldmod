@@ -722,16 +722,16 @@ itm_uruk_pike_b|Mordor Pike
 itm_uruk_pike_b_pl|Mordor Pike
 itm_uruk_falchion_a|Uruk Falchion
 itm_uruk_falchion_a_pl|Uruk Falchion
-itm_uruk_falchion_b|Uruk Falchion
-itm_uruk_falchion_b_pl|Uruk Falchion
-itm_uruk_spear|Mordor Spear
-itm_uruk_spear_pl|Mordor Spear
-itm_uruk_skull_spear|Uruk Skull Spear
-itm_uruk_skull_spear_pl|Uruk Skull Spear
-itm_uruk_voulge|Uruk Voulge
-itm_uruk_voulge_pl|Uruk Voulge
-itm_uruk_heavy_axe|Uruk Heavy Axe
-itm_uruk_heavy_axe_pl|Uruk Heavy Axe
+itm_uruk_falchion_b|Orc Great Scimitar
+itm_uruk_falchion_b_pl|Orc Great Scimitar
+itm_free_uruk_spear|Mordor Spear
+itm_free_uruk_spear_pl|Mordor Spear
+itm_free_uruk_skull_spear|Uruk Skull Spear
+itm_free_uruk_skull_spear_pl|Uruk Skull Spear
+itm_free_uruk_voulge|Uruk Voulge
+itm_free_uruk_voulge_pl|Uruk Voulge
+itm_free_uruk_heavy_axe|Uruk Heavy Axe
+itm_free_uruk_heavy_axe_pl|Uruk Heavy Axe
 itm_isengard_sword|Isengard Sword
 itm_isengard_sword_pl|Isengard Sword
 itm_isengard_axe|Isengard Axe
@@ -762,10 +762,10 @@ itm_twohand_wood_club|Large Wooden Club
 itm_twohand_wood_club_pl|Large Wooden Club
 itm_bone_cudgel|Bone Cudgel
 itm_bone_cudgel_pl|Bone Cudgel
-itm_skull_club|Skull Club
-itm_skull_club_pl|Skull Club
-itm_free_orc_club_a|Orc Club
-itm_free_orc_club_a_pl|Orc Club
+itm_orc_pick|Orc Pick
+itm_orc_pick_pl|Orc Pick
+itm_orc_hammer|Evil Hammer
+itm_orc_hammer_pl|Evil Hammer
 itm_orc_club_b|Warg Rider Club
 itm_orc_club_b_pl|Warg Rider Club
 itm_orc_club_c|Spiky Orc Club
@@ -778,22 +778,22 @@ itm_orc_simple_spear|Orc Spear
 itm_orc_simple_spear_pl|Orc Spear
 itm_orc_skull_spear|Orc Skull Spear
 itm_orc_skull_spear_pl|Orc Skull Spear
-itm_orc_bill|Orc Bill
-itm_orc_bill_pl|Orc Bill
-itm_orc_slasher|Orc Slasher
-itm_orc_slasher_pl|Orc Slasher
+itm_orc_bill|Orc Polearm
+itm_orc_bill_pl|Orc Polearm
+itm_orc_slasher|Orc Short Sword
+itm_orc_slasher_pl|Orc Short Sword
 itm_orc_falchion|Orc Falchion
 itm_orc_falchion_pl|Orc Falchion
 itm_orc_scimitar|Orc Scimitar
 itm_orc_scimitar_pl|Orc Scimitar
 itm_orc_sabre|Orc Sabre
 itm_orc_sabre_pl|Orc Sabre
-itm_orc_machete|Orc Machete
-itm_orc_machete_pl|Orc Machete
+itm_orc_battle_axe|Orc Battle Axe
+itm_orc_battle_axe_pl|Orc Battle Axe
 itm_orc_axe|Orc Axe
 itm_orc_axe_pl|Orc Axe
-itm_orc_two_handed_axe|Orc Double Handed Axe
-itm_orc_two_handed_axe_pl|Orc Double Handed Axe
+itm_orc_two_handed_axe|Orc Great Axe
+itm_orc_two_handed_axe_pl|Orc Great Axe
 itm_orc_throwing_axes|Orc Throwing Axes
 itm_orc_throwing_axes_pl|Orc Throwing Axes
 itm_orc_bow|Orc Bow
@@ -1584,14 +1584,14 @@ itm_dwarf_great_mattock|Dwarf Great Mattock
 itm_dwarf_great_mattock_pl|Dwarf Great Mattock
 itm_dwarf_great_pick|Dwarf Great Pick
 itm_dwarf_great_pick_pl|Dwarf Great Pick
-itm_dwarf_war_pick|Dwarf War Pick
-itm_dwarf_war_pick_pl|Dwarf War Pick
+itm_dwarf_throwing_axe_reward|Erebor Flying Axes
+itm_dwarf_throwing_axe_reward_pl|Erebor Flying Axes
 itm_dwarf_mattock|Dwarf Mattock
 itm_dwarf_mattock_pl|Dwarf Mattock
 itm_dwarf_hand_axe|Dwarf Short Axe
 itm_dwarf_hand_axe_pl|Dwarf Short Axe
-itm_dwarf_throwing_axe|Dwarf Throwing Axe
-itm_dwarf_throwing_axe_pl|Dwarf Throwing Axe
+itm_dwarf_throwing_axe|Dwarf Throwing Axes
+itm_dwarf_throwing_axe_pl|Dwarf Throwing Axes
 itm_dwarf_spear|Dwarf Spear
 itm_dwarf_spear_pl|Dwarf Spear
 itm_dwarf_spear_b|Dwarf Pike
@@ -1690,8 +1690,8 @@ itm_ent_feet_boots|Ent Feet
 itm_ent_feet_boots_pl|Ent Feet
 itm_ent_hands|Ent Hands
 itm_ent_hands_pl|Ent Hands
-itm_free_galadriel|Galadriel suit
-itm_free_galadriel_pl|Galadriel suit
+itm_fur_gloves_reward|Hunter Gloves
+itm_fur_gloves_reward_pl|Hunter Gloves
 itm_empty_hands|empty hands
 itm_empty_hands_pl|empty hands
 itm_empty_legs|empty legs
@@ -1724,8 +1724,8 @@ itm_torque_reward|Evil Torque
 itm_torque_reward_pl|Evil Torque
 itm_orc_brew|Orc Brew
 itm_orc_brew_pl|Orc Brew
-itm_rohan_saddle|Saddle of Thengel
-itm_rohan_saddle_pl|Saddle of Thengel
+itm_rohan_saddle|Saddle
+itm_rohan_saddle_pl|Saddle
 itm_mearas_reward|Mearh Stallion
 itm_mearas_reward_pl|Mearh Stallion
 itm_shield_of_tuor|Shield of Tuor
@@ -1802,8 +1802,8 @@ itm_leather_boots_reward|Hunter Boots
 itm_leather_boots_reward_pl|Hunter Boots
 itm_rohan_armor_th|Rohan Royal Armor
 itm_rohan_armor_th_pl|Rohan Royal Armor
-itm_wilderness_amulet|Wilderness Amulet
-itm_wilderness_amulet_pl|Wilderness Amulet
+itm_wilderness_cowl|Hunter Cowl
+itm_wilderness_cowl_pl|Hunter Cowl
 itm_prisoner_coll_chain|Prisoner Chains
 itm_prisoner_coll_chain_pl|Prisoner Chains
 itm_witchking_helmet|Sorcerer's Mask

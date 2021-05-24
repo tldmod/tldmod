@@ -672,8 +672,8 @@ trp_armoured_troll|Armored Troll
 trp_armoured_troll_pl|Armored Trolls
 trp_olog_hai|Olog Hai of Mordor
 trp_olog_hai_pl|Olog Hai of Mordor
-trp_ent|Ent
-trp_ent_pl|Ents
+trp_ent_old|Ent
+trp_ent_old_pl|Ents
 trp_i1_guldur_orc_snaga|Orc Snaga of Dol Guldur
 trp_i1_guldur_orc_snaga_pl|Orc Snagas of Dol Guldur
 trp_a2_guldur_orc_tracker|Orc Tracker of Dol Guldur
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|Gundabad Warg Rider
 trp_c4_gunda_warg_rider_pl|Gundabad Warg Riders
 trp_c5_gunda_clan_rider|Goblin North Clan Rider
 trp_c5_gunda_clan_rider_pl|Goblin North Clan Riders
+trp_i5_gunda_orc_champion|Gundabad Orc Champion
+trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
 trp_mountain_goblin2|Mountain Goblin
 trp_mountain_goblin2_pl|Mountain Goblins
 trp_tribal_orc2|Tribal Orc
 trp_tribal_orc2_pl|Tribal Orcs
-trp_tribal_orc_warrior2|Tribal Orc Warrior
-trp_tribal_orc_warrior2_pl|Tribal Orc Warriors
-trp_i5_gunda_orc_champion|Gundabad Orc Champion
-trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
+trp_i5_gunda_orc_champion2|Gundabad Orc Champion
+trp_i5_gunda_orc_champion2_pl|Gundabad Orc Champions
 trp_i2_mordor_num_renegade|Black Numenorean Renegade
 trp_i2_mordor_num_renegade_pl|Black Numenorean Renegades
 trp_i3_mordor_num_warrior|Black Numenorean Warrior
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|Pushurt The Haggler
 trp_smith_khand_ac_pl|smithy
 trp_smith_umbar_ac|Fuinir the Forger
 trp_smith_umbar_ac_pl|smithy
-trp_barman_mtirith|Tavern Keeper
-trp_barman_mtirith_pl|the Citadel
-trp_barman_pelargir|Tavern Keeper
-trp_barman_pelargir_pl|the Castle
-trp_barman_linhir|Tavern Keeper
-trp_barman_linhir_pl|the Castle
-trp_barman_dolamroth|Tavern Keeper
-trp_barman_dolamroth_pl|the Castle
-trp_barman_edhellond|Tavern Keeper
-trp_barman_edhellond_pl|the Castle
-trp_barman_lossarnach|Tavern Keeper
-trp_barman_lossarnach_pl|the Castle
-trp_barman_tarnost|Tavern Keeper
-trp_barman_tarnost_pl|the Castle
-trp_barman_erech|Tavern Keeper
-trp_barman_erech_pl|the Castle
-trp_barman_pinnath|Tavern Keeper
-trp_barman_pinnath_pl|the Castle
-trp_barman_hannun|Tavern Keeper
-trp_barman_hannun_pl|the Secret Cave
-trp_barman_calembel|Tavern Keeper
-trp_barman_calembel_pl|the Castle
-trp_barman_edoras|Tavern Keeper
-trp_barman_edoras_pl|Meduseld, the Golden Hall
-trp_barman_aldburg|Tavern Keeper
-trp_barman_aldburg_pl|the Castle
-trp_barman_hornburg|Tavern Keeper
-trp_barman_hornburg_pl|the Lord Halls
+trp_smith_moria_ac|Burgak Forger
+trp_smith_moria_ac_pl|smithy
+trp_smith_dale_ac|Ardel Firehand
+trp_smith_dale_ac_pl|smithy
+trp_smith_beorn_ac|Beornalaf Axemaker
+trp_smith_beorn_ac_pl|smithy
+trp_smith_woodelf_west_camp|Dhoelath
+trp_smith_woodelf_west_camp_pl|smithy
+trp_smith_woodmen|Beornalaf Axemaker
+trp_smith_woodmen_pl|smithy
+trp_smith_beorn_v|Beornalaf Axemaker
+trp_smith_beorn_v_pl|smithy
+trp_smith_troll_cave|Burgak Forger
+trp_smith_troll_cave_pl|smithy
+trp_smith_dg_outpost|Shtazg Dulbash
+trp_smith_dg_outpost_pl|smithy
+trp_smith_main_rhun|Branimir Bronnik
+trp_smith_main_rhun_pl|makeshift smithy
+trp_smith_south_rhun|Branimir Bronnik
+trp_smith_south_rhun_pl|makeshift smithy
+trp_smith_gundabad_ne|Blurg Snowseller
+trp_smith_gundabad_ne_pl|smithy
+trp_smith_gundabad_nw|Blurg Snowseller
+trp_smith_gundabad_nw_pl|smithy
+trp_smith_gundabad_s|Blurg Snowseller
+trp_smith_gundabad_s_pl|smithy
+trp_smith_gundabad_m|Blurg Snowseller
+trp_smith_gundabad_m_pl|smithy
 trp_barman_eastemnet|Tavern Keeper
 trp_barman_eastemnet_pl|the Castle
 trp_barman_westfold|Tavern Keeper
@@ -1222,30 +1222,30 @@ trp_barman_morannon|Tavern Keeper
 trp_barman_morannon_pl|the Leader's Cave
 trp_barman_mmorgul|Tavern Keeper
 trp_barman_mmorgul_pl|the Tower
-trp_barman_cungol|Tavern Keeper
-trp_barman_cungol_pl|the Castle
-trp_barman_isengard|Tavern Keeper
-trp_barman_isengard_pl|the tower of Orthanc
-trp_barman_cgaladhon|Tavern Keeper
-trp_barman_cgaladhon_pl|the Tree castle
-trp_barman_cdolen|Tavern Keeper
-trp_barman_cdolen_pl|the Tree castle
-trp_barman_camroth|Tavern Keeper
-trp_barman_camroth_pl|the Tree castle
-trp_barman_thalls|Tavern Keeper
-trp_barman_thalls_pl|the Throne Room
-trp_barman_beorn|Tavern Keeper
-trp_barman_beorn_pl|Beorn's Hall
-trp_barman_moria|Tavern Keeper
-trp_barman_moria_pl|the Chief's Chamber
-trp_barman_dale|Tavern Keeper
-trp_barman_dale_pl|the Castle
-trp_barman_esgaroth|Tavern Keeper
-trp_barman_esgaroth_pl|the Hall
-trp_barman_erebor|Tavern Keeper
-trp_barman_erebor_pl|the Great Chamber of Thrór
-trp_barman_dolguldur|Tavern Keeper
-trp_barman_dolguldur_pl|the Castle
+trp_merchant_main_rhun|Supply Master
+trp_merchant_main_rhun_pl|camp stash
+trp_merchant_dg_outpost|Supply Master
+trp_merchant_dg_outpost_pl|stable and warehouse
+trp_merchant_woodelf_west_camp|Supply Master
+trp_merchant_woodelf_west_camp_pl|elven supplies
+trp_merchant_gundabad_m|Supply Master
+trp_merchant_gundabad_m_pl|camp stash
+trp_merchant_gundabad_s|Supply Master
+trp_merchant_gundabad_s_pl|camp stash
+trp_merchant_gundabad_nw|Supply Master
+trp_merchant_gundabad_nw_pl|camp stash
+trp_merchant_gundabad_ne|Supply Master
+trp_merchant_gundabad_ne_pl|camp stash
+trp_merchant_troll_cave|Supply Master
+trp_merchant_troll_cave_pl|warg pit and supplies
+trp_merchant_beorn_v|Supply Master
+trp_merchant_beorn_v_pl|stable and warehouse
+trp_merchant_orc_sentry|Supply Master
+trp_merchant_orc_sentry_pl|camp stash
+trp_merchant_candros|Supply Master
+trp_merchant_candros_pl|stable and warehouse
+trp_merchant_hannun|Supply Master
+trp_merchant_hannun_pl|ranger supplies
 trp_merchant_mtirith|Supply Master
 trp_merchant_mtirith_pl|stable and warehouse
 trp_merchant_pelargir|Supply Master
@@ -1434,42 +1434,42 @@ trp_elder_erebor|Erebor Guildmaster
 trp_elder_erebor_pl|the Halls
 trp_elder_dolguldur|Guldur Chief
 trp_elder_dolguldur_pl|the black castle
-trp_elder_gondor_ac|Campmaster
-trp_elder_gondor_ac_pl|the camp
-trp_elder_rohan_ac|Campmaster
-trp_elder_rohan_ac_pl|the camp
-trp_elder_mordor_ac|Campmaster
-trp_elder_mordor_ac_pl|the camp
-trp_elder_isengard_ac|Campmaster
-trp_elder_isengard_ac_pl|the camp
-trp_elder_lorien_ac|Campmaster
-trp_elder_lorien_ac_pl|the camp
-trp_elder_woodelf_ac|Campmaster
-trp_elder_woodelf_ac_pl|the camp
-trp_elder_imladris_ac|Campmaster
-trp_elder_imladris_ac_pl|the camp
-trp_elder_beorn_ac|Campmaster
-trp_elder_beorn_ac_pl|the camp
-trp_elder_harad_ac|Harad Camp Chief
-trp_elder_harad_ac_pl|the camp
-trp_elder_rhun_ac|Rhun Camp Chief
-trp_elder_rhun_ac_pl|the camp
-trp_elder_khand_ac|Khand Camp Chief
-trp_elder_khand_ac_pl|the camp
-trp_elder_dunland_ac|Dun Camp Chief
-trp_elder_dunland_ac_pl|the camp
-trp_elder_umbar_ac|Umbar Quartermaster
-trp_elder_umbar_ac_pl|the camp
-trp_elder_moria_ac|Moria Camp Chief
-trp_elder_moria_ac_pl|the camp
-trp_elder_gunda_ac|Gundabad Camp Chief
-trp_elder_gunda_ac_pl|the camp
-trp_elder_dale_ac|Dale Quartermaster
-trp_elder_dale_ac_pl|the camp
-trp_elder_guldur_ac|Guldur Camp Chief
-trp_elder_guldur_ac_pl|the camp
-trp_elder_dwarf_ac|Dwarven Campmaster
-trp_elder_dwarf_ac_pl|the camp
+trp_elder_wosgiliath|Campmaster
+trp_elder_wosgiliath_pl|the camp
+trp_elder_oscamp|Campmaster
+trp_elder_oscamp_pl|the camp
+trp_elder_eosgiliath|Campmaster
+trp_elder_eosgiliath_pl|the camp
+trp_elder_uoutpost|Campmaster
+trp_elder_uoutpost_pl|the camp
+trp_elder_uhcamp|Campmaster
+trp_elder_uhcamp_pl|the camp
+trp_elder_urcamp|Campmaster
+trp_elder_urcamp_pl|the camp
+trp_elder_woodelf_camp|Elder
+trp_elder_woodelf_camp_pl|the camp
+trp_elder_woodelf_west_camp|Elder
+trp_elder_woodelf_west_camp_pl|the camp
+trp_elder_beorn_v|Beorning Elder
+trp_elder_beorn_v_pl|the village
+trp_elder_troll_cave|Cave Chief
+trp_elder_troll_cave_pl|the caves
+trp_elder_dg_outpost|Rhun Camp Chief
+trp_elder_dg_outpost_pl|the camp
+trp_elder_rhun_sc|Rhun Camp Chief
+trp_elder_rhun_sc_pl|the camp
+trp_elder_rhun_nc|Rhun Camp Chief
+trp_elder_rhun_nc_pl|the camp
+trp_elder_gunda_ne|Orc Elder
+trp_elder_gunda_ne_pl|the camp
+trp_elder_gunda_nw|Orc Elder
+trp_elder_gunda_nw_pl|the camp
+trp_elder_gunda_s|Orc Elder
+trp_elder_gunda_s_pl|the camp
+trp_elder_gunda_m|Orc Elder
+trp_elder_gunda_m_pl|the camp
+trp_elder_ironhill|Camp Chief
+trp_elder_ironhill_pl|the camp
 trp_village_1_elder|Lord of the Lash
 trp_village_1_elder_pl|the caves
 trp_tutorial_chest_1|Melee Weapons Chest
@@ -1563,6 +1563,15 @@ trp_start_quest_mordor_scout|Mordor Guide
 trp_start_quest_mordor_scout_pl|Mordor Guides
 trp_start_quest_beorning|Beorning Carrock Berserker
 trp_start_quest_beorning_pl|Beorning Carrock Berserkers
+trp_black_shield|Amath Dollen
+trp_black_shield_bandit|Amath Dollen's Bandit
+trp_black_shield_bandit_pl|Amath Dollen's Bandits
+trp_black_shield_scout|Amath Dollen's Scout
+trp_black_shield_scout_pl|Amath Dollen's Scouts
+trp_black_shield_guard|Amath Dollen's Guard
+trp_black_shield_guard_pl|Amath Dollen's Guards
+trp_dorwinion_spirit_leader|Spirit
+trp_dorwinion_spirit|Lesser Spirit
 trp_i6_beorning_bear_warrior|Bear Warrior
 trp_i6_beorning_bear_warrior_pl|Bear Warriors
 trp_morannon_healer|Okstuk the Healer
@@ -1626,8 +1635,8 @@ trp_troll_placeholder_6|Cave Troll
 trp_troll_placeholder_6_pl|Cave Trolls
 trp_wild_troll|Wild Cave Troll
 trp_wild_troll_pl|Wild Cave Trolls
-trp_ent2|Ent
-trp_ent2_pl|Ents
+trp_ent|Ent
+trp_ent_pl|Ents
 trp_mountain_goblin|Mountain Goblin
 trp_mountain_goblin_pl|Mountain Goblins
 trp_tribal_orc|Tribal Orc

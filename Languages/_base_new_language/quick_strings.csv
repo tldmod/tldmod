@@ -83,7 +83,7 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
-qstr__rev_169_wb__dev_^_B| rev 169 wb | dev ^ Built 2021-02-03 20:57   
+qstr__rev_3450_wb__dev_^_| rev 3450 wb | dev ^ Built 2021-05-24 04:57   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
@@ -226,6 +226,8 @@ qstr_+1_to_Strength|+1 to Strength
 qstr_+1_to_Agility|+1 to Agility
 qstr_+1_to_Leadership|+1 to Leadership
 qstr_+1_to_Wildcraft|+1 to Wildcraft
+qstr_+1_to_Tracking|+1 to Tracking
+qstr_when_equipped|when equipped
 qstr_+1_to_Power_Draw|+1 to Power Draw
 qstr_The_record_of_Balin_|The record of Balin's lost expedition.
 qstr_Who_might_be_interes|Who might be interested in this?
@@ -242,16 +244,18 @@ qstr_+1_to_Charisma|+1 to Charisma
 qstr_+1_to_Surgery|+1 to Surgery
 qstr_+1_to_Intelligence|+1 to Intelligence
 qstr_+2_to_Surgery|+2 to Surgery
-qstr_when_equipped|when equipped
 qstr_+1_to_Riding|+1 to Riding
 qstr_+1_to_Mounted_Archer|+1 to Mounted Archery
+qstr_Bonus_to_Riding|Bonus to Riding
+qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
+qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
 qstr_+1_to_Prisoner_Mgmt|+1 to Prisoner Mgmt
 qstr_+2_to_Tactics|+2 to Tactics
 qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
 qstr__Scales_with_Wildcra|(Scales with Wildcraft)
+qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|+1 to Spotting
-qstr_+2_to_Athletics|+2 to Athletics
 qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
 qstr_Less_Wargs_upkeep|Less Wargs upkeep
 qstr_Light_Armor|Light Armor
@@ -272,6 +276,7 @@ qstr_Good|Good
 qstr_Med|Med
 qstr_Bad|Bad
 qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
+qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
 qstr_{reg4}_killed_{reg5}|{reg4} killed, {reg5} wounded, {reg6} routed
 qstr_{reg4}_killed_{reg5}_|{reg4} killed, {reg5} wounded
 qstr_{reg4}_killed_{reg5}_r|{reg4} killed, {reg5} routed
@@ -705,6 +710,7 @@ qstr_Mountain_Goblins|Mountain Goblins
 qstr_Tribal_Orcs|Tribal Orcs
 qstr_Tribal_Orc_Warriors|Tribal Orc Warriors
 qstr_Tribal_Orc_Chiefs|Tribal Orc Chiefs
+qstr_A_quest_was_cancelle|A quest was cancelled for update compatibility. No need to worry.
 qstr_Something_wrong_not_|Something wrong, not enough troops to remove
 qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
 qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
@@ -796,8 +802,8 @@ qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlef
 qstr_A_poisonous_fog_from_|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
 qstr_swy_ui_evil|swy ui evil
 qstr_swy_river_tinting_co|swy river tinting color
-qstr_You_hapeshift_into_a|You hapeshift into a bear!
-qstr_You_got_{reg1}_xp_in|You got {reg1} xp in bear form
+qstr_You_shapeshift_into_|You shapeshift into a bear!
+qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
 qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
 qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|Your mount stumbles! It seems to be lame.
@@ -814,6 +820,7 @@ qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
 qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
 qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
 qstr_Fixed_Camera___Cente|Fixed Camera - Center
+qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.
 qstr_Cannot_leave_now.|Cannot leave now.
 qstr_You_have_found_the_l|You have found the local smithy.
@@ -830,7 +837,6 @@ qstr_Formations_turned_OF|Formations turned OFF in options menu
 qstr_Division_{reg1}_{s2}_g|Division {reg1} {s2} goes to its memorized position...
 qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms line (memorized).
 qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized).
-qstr_DEBUG:_F1_Let_Go|DEBUG: F1 Let Go
 qstr_Delivered_{reg60}_da|Delivered {reg60} damage.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
@@ -1215,6 +1221,17 @@ qstr_{s29}|{s29}
 qstr_{s13}^^You_have_succ|{s13}^^You have successfully sneaked in.
 qstr_the_place|the place
 qstr_the_castle|the castle
+qstr_the_Citadel|the Citadel
+qstr_the_Secret_Cave|the Secret Cave
+qstr_Meduseld_the_Golden_|Meduseld, the Golden Hall
+qstr_the_Lord_Halls|the Lord Halls
+qstr_the_Leader_s_Cave|the Leader's Cave
+qstr_the_Tower|the Tower
+qstr_the_tower_of_Orthanc|the tower of Orthanc
+qstr_the_Throne_Room|the Throne Room
+qstr_Beorn_s_Hall|Beorn's Hall
+qstr_the_Hall|the Hall
+qstr_the_Great_Chamber_of|the Great Chamber of Thrór
 qstr_Stay_indoors_for_som|Stay indoors for some time ({reg1} Resource points per night)
 qstr_Camp_outside_for_som|Camp outside for some time (free)
 qstr_{s4}_s_scouts_have_s|{s4}'s scouts have seen and reported your failure. You have brought shame to {s4} and the responsibility of this failure is yours alone.
@@ -1389,7 +1406,6 @@ qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've R
 qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
-qstr_the_Citadel|the Citadel
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Steward Denethor
 qstr_the_Golden_Hall|the Golden Hall
@@ -1618,7 +1634,7 @@ qstr_Mercy_I_crave!_To_fa|Mercy, I crave! To face {s7} in open battle is sheer f
 qstr_strong_warriors_from|strong warriors from {s7}
 qstr_champions_from_{s7}_|champions from {s7}, the strongest in the field
 qstr_{playername}_the_men|{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to challenge and defeat {reg22} {s6}.
-qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!
+qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superior force!
 qstr_I_will_do_what_you_a|I will do what you asked, and the men will witness.
 qstr_high_level_troops_fr|high level troops from
 qstr_elite_level_troops_f|elite level troops from
