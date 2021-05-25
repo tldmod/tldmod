@@ -436,7 +436,7 @@ scenes = [
 ## In Vain New Siege Scenes
 
 ("esgaroth_siege"        ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000730000500000c8f2100002ca5000022aa000031a8",[],[],"New_outer_terrain_seaside_1"),
-("woodelf_camp_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
+("woodelf_camp_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"),
 ("woodsmen_village_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000200005d000057d5e000074e600006c2600006d0d",[],[],"outer_terrain_plain"),
 ("woodelf_west_camp_siege"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
 ("rivendell_camp_siege"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000300349e300084e1600005afd00006c26000063e2",[],["player_chest"],"outer_terrain_plain"),
