@@ -299,17 +299,17 @@ party_templates = [
 ("imladris_reinf_b","_",0,0,fac_commoners,0,[(trp_a3_riv_archer,2,4),(trp_a3_arnor_ranger,1,2),(trp_i4_riv_vet_swordbearer,1,2),(trp_i3_arnor_swordsman,0,1),]),
 ("imladris_reinf_c","_",0,0,fac_commoners,0,[(trp_ac5_riv_rider,2,4),(trp_c4_arnor_horseman,1,1),(trp_i5_riv_swordmaster,1,2),(trp_a4_arnor_vet_ranger,0,1),]),
 #Woodelves (6-12, 4-8, 4-8)
-("woodelf_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_a2_greenwood_veteran_scout,1,3),(trp_i2_greenwood_infantry,1,2),(trp_a1_greenwood_scout,4,7),]),
-("woodelf_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_a3_greenwood_archer,2,4),(trp_a3_greenwood_sentinel,1,2),(trp_i3_greenwood_vet_infantry,1,2),]),
+("woodelf_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_a2_greenwood_veteran_scout,1,2),(trp_i2_greenwood_infantry,1,3),(trp_a1_greenwood_scout,4,7),]),
+("woodelf_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_a3_greenwood_archer,1,2),(trp_a3_greenwood_sentinel,1,2),(trp_i3_greenwood_vet_infantry,2,4),]),
 ("woodelf_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_a4_greenwood_veteran_archer,1,2),(trp_a4_greenwood_vet_sentinel,1,2),(trp_i4_greenwood_elite_infantry,2,4),]),
 #Moria (8-16, 7-13, 5-10)
 ("moria_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i1_moria_snaga,4,8),(trp_i2_moria_goblin,2,4),]), #InVain: traded some t1 for t2 = more infantry for hosts
 ("moria_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_moria_large_goblin_archer,4,7),(trp_i2_moria_goblin,1,2),(trp_i3_moria_large_goblin,2,4),(trp_i4_moria_fell_goblin,1,2)]), #InVain: t3 archers, t3 inf, some t4 inf
 ("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c3_moria_wolf_rider,2,4),(trp_i3_moria_large_goblin,1,2),]), #InVain: removed archers, because B has so many, less cav, fewer t3
 #Dol Guldur - same as Mordor without uruks and Numenoreans (8-16, 7-13, 5-10)
-("guldur_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,6,12),(trp_a2_guldur_orc_tracker,2,4)]), #added some t2 archers
-("guldur_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a3_guldur_large_orc_tracker,4,7),(trp_i2_mordor_orc,1,2),(trp_i3_mordor_large_orc,1,2),]), #InVain: t3 archers, t3 inf
-("guldur_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_a4_guldur_fell_orc_tracker,2,4),(trp_i4_mordor_fell_orc,1,2),]),
+("guldur_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,4,10),(trp_i2_mordor_orc,3,5)]),
+("guldur_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a3_guldur_large_orc_tracker,2,5),(trp_i2_mordor_orc,1,2),(trp_i3_mordor_large_orc,3,5),]), #InVain: t3 archers, t3 inf
+("guldur_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_a4_guldur_fell_orc_tracker,1,2),(trp_i4_mordor_fell_orc,2,4),]),
 #Beornings - two trees, Beornings favored over Woodmen (7-14, 5-10, 4-8)
 ("beorn_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i2_beorning_warrior,2,4),(trp_i1_beorning_man,2,4),(trp_i1_woodmen_man,3,6)]),
 ("beorn_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_woodmen_scout,2,4),(trp_i3_woodmen_skilled_forester,1,2),(trp_i3_beorning_tolltacker,1,2),(trp_i3_beorning_carrock_lookout,1,2)]),
