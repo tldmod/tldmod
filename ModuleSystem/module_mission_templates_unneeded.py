@@ -6,6 +6,8 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
+from module_info import wb_compile_switch as is_a_wb_mt
+
 #MV: commented out - not used and ctrl-h already works this way (standard MB cheat)
 # cheat_heal_self_on_ctrl_h = (0.5,0,2,[
     # (eq, "$cheat_mode",1),(key_is_down, key_h),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
@@ -312,15 +314,31 @@ common_siege_attacker_do_not_stall = (5, 0, 0, [],
     (try_end),
     ])
 
-common_siege_refill_ammo = (120, 0, 0, [],
-  [ (get_player_agent_no, ":player_agent"), #refill ammo of defenders every two minutes.
-    (try_for_agents,":cur_agent"),
-      (neq, ":cur_agent", ":player_agent"),
-      (agent_is_alive, ":cur_agent"),
-      (agent_is_human, ":cur_agent"),
-      (agent_get_team, ":agent_team", ":cur_agent"),
-      (this_or_next|eq, ":agent_team", "$defender_team"),(eq, ":agent_team", "$defender_team_2"),
-      (agent_refill_ammo, ":cur_agent"),
+common_siege_refill_ammo = (60, 0, 0, [],
+  [#refill ammo of defenders every minute
+    (get_player_agent_no, ":player_agent"),
+    (try_for_range, ":entry", 50, 60), #only at defender archer positions
+    (entry_point_get_position, pos90, ":entry"),
+ 
+        ] + ((is_a_wb_mt==1) and [
+        (try_for_agents, ":cur_agent", pos90, 500),
+            (agent_is_alive,":cur_agent"),
+            (neq, ":cur_agent", ":player_agent"),
+        ] or [
+        (try_for_agents, ":cur_agent"),
+            (agent_is_alive,":cur_agent"),
+            (neq, ":cur_agent", ":player_agent"),
+            (agent_get_position, pos0, ":cur_agent"),
+            (get_distance_between_positions, ":dist", pos0, pos90),
+            (lt,":dist", 500),
+        ]) + [
+
+          (agent_get_team, ":agent_team", ":cur_agent"),
+          (this_or_next|eq, ":agent_team", "$defender_team"),
+          (this_or_next|eq, ":agent_team", "$defender_team_2"),
+          (eq, ":agent_team", "$defender_team_3"),
+          (agent_refill_ammo, ":cur_agent"),
+        (try_end),
     (try_end),
     ])
 

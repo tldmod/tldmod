@@ -14411,9 +14411,9 @@ scripts = [
 	[(try_for_agents, ":agent_no"),
 		(agent_is_alive, ":agent_no"),
 		(agent_get_class, ":agent_class", ":agent_no"),
+        (agent_get_troop_id, ":agent_troop", ":agent_no"),
 	
 	  ] + (is_a_wb_script==1 and [
-	   (agent_get_troop_id, ":agent_troop", ":agent_no"),
        (try_begin), #Kham : horse archer siege fix?
           (troop_is_guarantee_ranged, ":agent_troop"),
           (troop_is_guarantee_horse, ":agent_troop"),
@@ -14429,10 +14429,12 @@ scripts = [
 			(agent_is_defender, ":agent_no"), # defending archers go to their respective points
 			(try_begin),
 				(agent_slot_eq, ":agent_no", slot_agent_target_entry_point, 0),
-				(agent_get_team, ":team", ":agent_no"),
-				(try_begin),(eq,":team",0),(store_random_in_range, ":random_entry_point", 50, 54), #TLD, was 40, 44
-				 (else_try),(eq,":team",2),(store_random_in_range, ":random_entry_point", 54, 56), #TLD, was 40, 44
-				 (else_try),               (store_random_in_range, ":random_entry_point", 56, 60), #TLD, was 40, 44
+				(agent_get_team, ":team", ":agent_no"), #0, 2, 4
+                (store_div, ":team_slot", ":team", 2),  #0, 1, 2
+                (neg|troop_slot_eq,"trp_no_troop",":team",-1), #choke point not taken
+				(try_begin),(eq,":team",0),(store_random_in_range, ":random_entry_point", 50, 56), (ge, ":random_entry_point", 53), (assign, ":random_entry_point", 42), #left
+				 (else_try),(eq,":team",2),(store_random_in_range, ":random_entry_point", 54, 57), (ge, ":random_entry_point", 55), (assign, ":random_entry_point", 41), #center
+				 (else_try),               (store_random_in_range, ":random_entry_point", 56, 62), (ge, ":random_entry_point", 59), (assign, ":random_entry_point", 43), #right
 				(try_end),         
 				(agent_set_slot, ":agent_no", slot_agent_target_entry_point, ":random_entry_point"),
 			(try_end),
@@ -14452,10 +14454,10 @@ scripts = [
 				         # (display_message, "@{s1} ({reg0}) reached pos {reg78}"),
 			(else_try),
 				(agent_get_simple_behavior, ":agent_sb", ":agent_no"),
-				(agent_get_combat_state, ":agent_cs", ":agent_no"),
+				#(agent_get_combat_state, ":agent_cs", ":agent_no"),
 				(this_or_next|eq, ":agent_sb", aisb_ranged),
 				(eq, ":agent_sb", aisb_go_to_pos),#scripted mode
-				(eq, ":agent_cs", 7), # 7 = no visible targets (state for ranged units)
+				#(eq, ":agent_cs", 7), # 7 = no visible targets (state for ranged units) #InVain: Disabled, this made the AI too unpredictable
 				(try_begin),
 					(agent_slot_eq, ":agent_no", slot_agent_is_in_scripted_mode, 0),
 					(agent_set_scripted_destination, ":agent_no", pos1, 0),

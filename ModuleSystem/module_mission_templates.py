@@ -4497,14 +4497,15 @@ mission_templates = [ # not used in game
       (val_add,":entry2",1),
     (try_end),
     (set_show_messages, 1),]),
-
   ## End of Starting Orders Block ##
 
-  ## Reinforcements block
+
+  ### REINFORCEMENTS ###
+
 
   ## This block is what checks for reinforcements. Attackers first, then defenders.
-  
-  (0, 0, 10,[(lt,"$attacker_reinforcement_stage",20),(store_mission_timer_a,":mission_time"),(ge, ":mission_time", 10)],[ #Less than defenders. Attackers don't go all in. Also makes it easier to defend against sieges.
+ 
+  (0, 0, 10,[(lt,"$attacker_reinforcement_stage",20),(store_mission_timer_a,":mission_time"),(ge, ":mission_time", 20)],[ #Less than defenders. Attackers don't go all in. Also makes it easier to defend against sieges.
 	(assign,":atkteam","$attacker_team"),
     (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
     (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
@@ -4518,19 +4519,42 @@ mission_templates = [ # not used in game
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
     (try_end)]),
 
-  (0, 0, 10, [(lt,"$defender_reinforcement_stage", 75),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
+  (0, 0, 10, [(lt,"$defender_reinforcement_stage", 75),(store_mission_timer_a,":mission_time"),(ge,":mission_time",30)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
     (assign,":defteam","$defender_team"),
-    (assign,":entry",8), #iterate through 5 6 7 - Changed to 9,10,11
-    (try_for_range,":unused",0,3), #cycle through defender teams, check if depleted and reinforce
-      (store_normalized_team_count,":num_defenders",":defteam"),
+    (assign,":entry",8), #Changed to 9,10,11 --> spawn entry
+    (assign,":entry_number", 43), # 44,45,46 --> actual entry point
+    (assign, ":reinforcements", 0),
+    (assign, ":spawn_point_blocked", 0),
+    (get_player_agent_no, ":player_agent"),
+    (try_for_range,":team",0,3), #cycle through defender teams, check if depleted and reinforce
+        (try_begin),
+          (neg|troop_slot_eq,"trp_no_troop",":team",-1), #team 0 slot number, choke point not taken yet
+          (neg|troop_slot_ge,"trp_no_troop",":team",10), #if choke point not taken, we check for choke point guards
+          #(lt,":num_defenders",14),
+          (assign, ":reinforcements", 1), # defender reinforcements trickling in.
+        (else_try), #if choke point is taken, we check overall defender number
+          (store_normalized_team_count,":num_defenders",":defteam"), #note: gets overall defender number, not actual team size
+          (lt,":num_defenders",30),
+          (assign, ":reinforcements", 9), #1.5x attackers, to push them back.
+        (try_end),
       (val_add,":defteam",2),
       (val_add,":entry",1),
-      (lt,":num_defenders",14),
-      (add_reinforcements_to_entry, ":entry", 9), #1.5x attackers, to push them back.
-      #(display_message, "@Defenders Reinforced", color_good_news),
+      (val_add,":entry_number",1),
+      
+      (try_begin), #don't spawn defenders if attacking player is nearby
+          (neg|agent_is_defender,":player_agent"),
+          (entry_point_get_position, pos10, ":entry_number"),
+          (agent_get_position, pos0, ":player_agent"),
+          (get_distance_between_positions, ":dist", pos0, pos10),
+		  (lt,":dist", 1000),
+          (assign, ":spawn_point_blocked", 1),
+      (try_end),
+      (gt, ":reinforcements", 0),
+      (eq, ":spawn_point_blocked", 0),
+      (add_reinforcements_to_entry, ":entry", ":reinforcements"),
       (val_add,"$defender_reinforcement_stage",1),
-	  #(assign, reg0,"$defender_reinforcement_stage"),
-	  #(display_message, "@Defenders Reinforced #{reg0}", color_good_news),												  																	   
+      (assign, reg0,":entry_number"),
+      (display_message, "@Defenders Reinforced entry #{reg0}", color_good_news),												  																	   
     (try_end),
 
 	] + (is_a_wb_mt==1 and [ #piggyback attacker reinforcement team assignment. This trigger always fires 1 second after the attacker reinforcement trigger, so it should catch the spawned troops.)
@@ -4553,13 +4577,14 @@ mission_templates = [ # not used in game
 		(try_end),
 	(try_end),
      ] or []) + [				  
-    
-    ## This block controls when Defender starts their desperate charge. I've added some improvements VC added to their sieges.
+  
+  
+    ### DESPERATE CHARGE ###
 
     (try_begin),
       (store_mission_timer_a,":mission_time"),
-      (gt, ":mission_time", 180), #3 minutes before checking for desparate charge
-      (ge, "$defender_reinforcement_stage", 7),
+      (gt, ":mission_time", 180),
+      (ge, "$attacker_reinforcement_stage", 18),
       (set_show_messages, 0),
       (team_give_order, "$defender_team"  , grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
       (team_give_order, "$defender_team_2", grc_infantry, mordr_charge),
@@ -4569,7 +4594,7 @@ mission_templates = [ # not used in game
       (team_give_order, "$defender_team_3", grc_cavalry, mordr_charge),
       (set_show_messages, 1),
       #(display_message,"@Defenders: infantry CHARGE!!"),
-      (ge, "$defender_reinforcement_stage", 18),  #InVain: slightly increased, was 14
+      (ge, "$attacker_reinforcement_stage", 19), 
       (set_show_messages, 0),
       (team_give_order, "$defender_team"  , grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
       (team_give_order, "$defender_team_2", grc_everyone, mordr_charge),
@@ -4643,8 +4668,10 @@ mission_templates = [ # not used in game
   common_battle_order_panel,
   common_battle_order_panel_tick,
   common_inventory_not_available,
+
    												 
-  ## This Block checks if chokepoints are taken. (trigger_check_chokepoints)
+  ### CHOKEPOINTS ###
+  
   ## We check the troop slot of trp_no_troop (defenders: 0,1,2) which corresponds to each choke point (entry 41,42,43)
   ## If we find less than 2 defenders near the chokepoint, we consider that chokepoint taken and the team that is assigned to that choke point is asked to charge.
 
@@ -4667,7 +4694,9 @@ mission_templates = [ # not used in game
 	(set_fixed_point_multiplier, 100),
 	(try_for_range, ":entry",41,44), 
 		
-		# (entry_point_get_position, pos90, ":entry"),
+		(entry_point_get_position, pos90, ":entry"),
+        
+        #debug
 		# (position_get_x, reg76, pos90),
 		# (position_get_y, reg77, pos90),
 		# (position_get_z, reg78, pos90),
@@ -4706,9 +4735,9 @@ mission_templates = [ # not used in game
 			(store_sub,":slot_defender",":entry",41), #0, 1, 2
 			
 			#debug
-			# (store_add, reg10, ":slot_defender", 41), #get chokepoint entry number, 41, 42, 43
-			# (troop_get_slot, reg11, "trp_no_troop",":slot_defender"), #get number of defenders
-			# (display_message, "@Entry {reg10}: {reg11} defenders"),
+			(store_add, reg10, ":slot_defender", 41), #get chokepoint entry number, 41, 42, 43
+			(troop_get_slot, reg11, "trp_no_troop",":slot_defender"), #get number of defenders
+			(display_message, "@Entry {reg10}: {reg11} defenders"),
 				 
 		  (neg|troop_slot_ge,"trp_no_troop",":slot_defender",2), #if 0-1 defenders standing -> defenders charge
 		  (neg|troop_slot_eq,"trp_no_troop",":slot_defender",-1), #we do this only once
@@ -4722,6 +4751,9 @@ mission_templates = [ # not used in game
 		(try_end),
 	(try_end),
    ]),
+
+
+    ### TEAM DISTRIBUTION ###
 
  (10, 0, 0,[(eq, "$cheat_mode", 1)], # report attackers and defenders distribution
    [(assign,reg0,0),(assign,reg1,0),(assign,reg2,0),(assign,reg3,0),(assign,reg4,0),(assign,reg5,0),(assign,reg6,0),
