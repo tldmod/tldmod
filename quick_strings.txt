@@ -1,4 +1,4 @@
-1651
+1648
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -703,9 +703,6 @@ qstr_Drive_them_back! Drive_them_back!
 qstr_Protect_the_City! Protect_the_City!
 qstr_Forward!_Board_them! Forward!_Board_them!
 qstr_The_Last_Days_of_the_ The_Last_Days_of_the_Third_Age_has_an_Advanced_Siege_AI,_vastly_different_from_Native._All_attackers_and_defenders_will_be_distributed_to_the_left_and_right_flanks_and_the_center._Attacking_players_command_some_of_their_own_troops.
-qstr_small_reinforcement small_reinforcement
-qstr_big_reinforcement big_reinforcement
-qstr_player_blocks_defend player_blocks_defender_reinforcements
 qstr_Defenders_Reinforced Defenders_Reinforced_entry_#{reg0}
 qstr_Entry_{reg10}:_{reg1 Entry_{reg10}:_{reg11}_defenders
 qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}/{reg7}_Defenders:_{reg0}/{reg2}/{reg4}/{reg6}

@@ -342,16 +342,6 @@ mno_explore|Explore this place.
 menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
 mno_attack_lair|Attack them now
 mno_leave_bandit_lair|Leave for now.
-menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
-mno_go_with_the_raftmen|Take the raft to Dorwinion
-menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
-mno_ride_to_dorwinion_next|Next...
-menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
-mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
-mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
-mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
-mno_bandit_fortress_spirits|Go talk with the spirits.
-mno_leave_amath_dollen_fortress|Leave for now.
 menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
 mno_gondor_reinforcement_event_close|Close
 menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.

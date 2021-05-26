@@ -14411,10 +14411,10 @@ scripts = [
 	[(try_for_agents, ":agent_no"),
 		(agent_is_alive, ":agent_no"),
 		(agent_get_class, ":agent_class", ":agent_no"),
-        (agent_get_troop_id, ":agent_troop", ":agent_no"),
 	
 	  ] + (is_a_wb_script==1 and [
-       (try_begin), #Kham : horse archer siege fix?
+       (try_begin), #Kham : horse archer siege fix? 
+          (agent_get_troop_id, ":agent_troop", ":agent_no"),
           (troop_is_guarantee_ranged, ":agent_troop"),
           (troop_is_guarantee_horse, ":agent_troop"),
           (troop_is_mounted, ":agent_troop"),
@@ -14431,7 +14431,7 @@ scripts = [
 				(agent_slot_eq, ":agent_no", slot_agent_target_entry_point, 0),
 				(agent_get_team, ":team", ":agent_no"), #0, 2, 4
                 (store_div, ":team_slot", ":team", 2),  #0, 1, 2
-                (neg|troop_slot_eq,"trp_no_troop",":team",-1), #choke point not taken
+                (neg|troop_slot_eq,"trp_no_troop",":team_slot",-1), #choke point not taken
 				(try_begin),(eq,":team",0),(store_random_in_range, ":random_entry_point", 50, 56), (ge, ":random_entry_point", 53), (assign, ":random_entry_point", 42), #left
 				 (else_try),(eq,":team",2),(store_random_in_range, ":random_entry_point", 54, 57), (ge, ":random_entry_point", 55), (assign, ":random_entry_point", 41), #center
 				 (else_try),               (store_random_in_range, ":random_entry_point", 56, 62), (ge, ":random_entry_point", 59), (assign, ":random_entry_point", 43), #right

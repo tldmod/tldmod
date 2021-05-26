@@ -574,7 +574,6 @@ qstr_Dale_capital_moved_f|Dale capital moved from Dale to Esgaroth!
 qstr_Gundabad_capital_mov|Gundabad capital moved from Gundabad to Goblin Town!
 qstr_The_hosts_of_{s2}_re|The hosts of {s2} retreat back to their homes!
 qstr____Ruins_of_{s1}___|   Ruins of {s1}   
-qstr_{s1}_siege_attack!|{s1} siege attack!
 qstr_ranks|ranks
 qstr_shield_wall|shield wall
 qstr_wedge|wedge
@@ -633,15 +632,6 @@ qstr_have_taken_measure_o|have taken measure of your faction's current strength 
 qstr_loses_Faction_Streng|loses Faction Strength as supply lines were disrupted.
 qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of their camp.
 qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
-qstr_Mountain_Goblin|Mountain Goblin
-qstr_Tribal_Orc|Tribal Orc
-qstr_Tribal_Orc_Warrior|Tribal Orc Warrior
-qstr_Tribal_Orc_Chief|Tribal Orc Chief
-qstr_Mountain_Goblins|Mountain Goblins
-qstr_Tribal_Orcs|Tribal Orcs
-qstr_Tribal_Orc_Warriors|Tribal Orc Warriors
-qstr_Tribal_Orc_Chiefs|Tribal Orc Chiefs
-qstr_A_quest_was_cancelle|A quest was cancelled for update compatibility. No need to worry.
 qstr_Something_wrong_not_|Something wrong, not enough troops to remove
 qstr_Raiders|Raiders
 qstr_have_won_the_sea_bat|have won the sea battle, demoralizing your troops. The enemy may take advantage of this defeat and attack more frequently.
@@ -1097,7 +1087,6 @@ qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the v
 qstr_The_forces_of_{s2}_e|The forces of {s2} established an advanced camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|The hosts of {s2} march back to defend their homes!
 qstr_{playername}_s_Reser|{playername}'s Reserves
-qstr_{reg70}___Last_Stand|{reg70} - Last Stand
 qstr_Gondor_has_called_fo|Gondor has called for aide!
 qstr_Gondor_is_accompanyi|Gondor is accompanying the marshall!
 qstr_{s5}_has_stopped_fol|{s5} has stopped following you.

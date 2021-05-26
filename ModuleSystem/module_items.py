@@ -981,7 +981,7 @@ items =[
 ["mirkwood_pad","Greenwood_Quilted_Coat",[("mirkwood_quiltedsurcoat_01",0),("mirkwood_quiltedsurcoat_01",imodbits_armor_bad),("mirkwood_quiltedsurcoat_01_b",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(6)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_armor|imodbit_lordly,],
 ["mirkwood_mail","Greenwood_Mail",[("mirkwood_maillewithsurcoat_01_b",0),("mirkwood_maillewithsurcoat_01",imodbits_armor_bad),("mirkwood_royal",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(17)|head_armor(0)|body_armor(29)|leg_armor(14)|difficulty(0),imodbits_armor|imodbit_lordly,],
 ["mirkwood_scale","Greenwood_Light_Scale",[("mirkwood_light_scale",0),("mirkwood_scalequilted_01",imodbits_armor_bad),("mirkwood_scalequilted_01b",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1100,weight(12)|head_armor(0)|body_armor(26)|leg_armor(12)|difficulty(0),imodbits_armor|imodbit_lordly,],
-["mirkwood_heavy_scale","Mirkwood_Leafscale",[("mirkwood_scaleovermaille_01",0),],itp_type_body_armor|itp_covers_legs|itp_shop,0,4000, weight(23)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(14)|difficulty(0),imodbits_armor|imodbit_lordly,],
+["mirkwood_heavy_scale","Greenwood_Leafscale",[("mirkwood_scaleovermaille_01",0),],itp_type_body_armor|itp_covers_legs|itp_shop,0,4000, weight(23)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(14)|difficulty(0),imodbits_armor|imodbit_lordly,],
 #next two free Jan 2020
 ["free_mirkwood_armor_e","Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(17)|head_armor(0)|body_armor(25)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
 #WEAPONS##########
