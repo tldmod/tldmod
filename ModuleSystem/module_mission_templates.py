@@ -4320,9 +4320,9 @@ mission_templates = [ # not used in game
     ## Kham - Distributed Teams using the mtef_team_X flag. 0, 2, 4 are defenders; 1, 3, 5 are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
     
     # Attacker initial spawn point (was 0) - Split this into 3 and distribute teams    
-     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
-     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
-     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
      
      # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   																								  
      (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]),
@@ -4436,7 +4436,7 @@ mission_templates = [ # not used in game
 
   ## End Horse Archer to Cavalry division
 
-   (5, 0, ti_once, [], #assign teams
+   (4, 0, ti_once, [], #assign initial teams
    [(try_for_agents, ":agent_no"),
 	(get_player_agent_no, ":player_agent"),
 	#(neq, ":agent_no", ":player_agent"),
@@ -4445,27 +4445,28 @@ mission_templates = [ # not used in game
 	(agent_get_troop_id, ":troop_id", ":agent_no"),
 	(str_store_troop_name,s1, ":troop_id"),
 	(agent_get_entry_no, ":entry", 	":agent_no"), # spawn records, not actual entry number
-	(try_begin),
-		(neg|agent_is_defender,":agent_no"),
-		(store_sub, ":team", ":entry", 12), #0, 1, 2
-		(val_mul, ":team", 2), # 0, 2, 4
-		(val_add, ":team", 1), # 1, 3, 5
-		(agent_set_team, ":agent_no", ":team"), #might not be needed anymore since attacker teams now charge, keep for archers
-		(neg|agent_is_defender,":player_agent"),
-		(eq, ":party_no", "p_main_party"),
-		(agent_set_team, ":agent_no", 7), 
-	(else_try),
-		(agent_is_defender,":agent_no"),
-		(is_between, ":entry", 6, 9),
-		(store_sub, ":team", ":entry", 6), #0, 1, 2
-		(val_mul, ":team", 2), # 0, 2, 4
-		(agent_set_team, ":agent_no", ":team"),
-	(else_try),
-		(agent_is_defender,":player_agent"),
-		(is_between, ":entry", 3, 6), #entry 40 (spawn around player)
-		(eq, ":party_no", "p_main_party"),
-		(agent_set_team, ":agent_no", 6),
-	(try_end),
+        (try_begin),
+            (neg|agent_is_defender,":agent_no"),
+            (store_sub, ":team", ":entry", 12), #0, 1, 2
+            (val_mul, ":team", 2), # 0, 2, 4
+            (val_add, ":team", 1), # 1, 3, 5
+            (agent_set_team, ":agent_no", ":team"), #might not be needed anymore since attacker teams now charge, keep for archers
+            (neg|agent_is_defender,":player_agent"),
+            (eq, ":party_no", "p_main_party"),
+            (agent_set_team, ":agent_no", 7), 
+        (else_try),
+            (agent_is_defender,":agent_no"),
+            (is_between, ":entry", 6, 9),
+            (store_sub, ":team", ":entry", 6), #0, 1, 2
+            (val_mul, ":team", 2), # 0, 2, 4
+            (agent_set_team, ":agent_no", ":team"),
+        (else_try),
+            (agent_is_defender,":player_agent"),
+            (is_between, ":entry", 3, 6), #entry 40 (spawn around player)
+            (eq, ":party_no", "p_main_party"),
+            (agent_set_team, ":agent_no", 6),
+        (try_end),
+    (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),
 	(try_end),
 	]),
 
@@ -4508,16 +4509,55 @@ mission_templates = [ # not used in game
   (0, 0, 10,[(lt,"$attacker_reinforcement_stage",20),(store_mission_timer_a,":mission_time"),(ge, ":mission_time", 20)],[ #Less than defenders. Attackers don't go all in. Also makes it easier to defend against sieges.
 	(assign,":atkteam","$attacker_team"),
     (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
-    (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
-      (store_normalized_team_count,":num_attackers",":atkteam"),
+    (store_normalized_team_count,":num_attackers",":atkteam"),
+    (lt,":num_attackers",13),
+    
+    (store_random_in_range, ":attack_flank", 0, 4), #store attack flank, there's also a chance that there's no attack flank
+    
+    (try_for_range,":flank",0,3), #cycle through attacker teams and reinforce
       (val_add,":atkteam",2),
       (val_add,":entry",1),
-      (lt,":num_attackers",13), #InVain: was 10, attacker reinforcements arrive ealier...
-      (add_reinforcements_to_entry, ":entry", 6), #was 8, ... but are smaller
+      (try_begin),
+        (eq, ":flank", ":attack_flank"),
+        (add_reinforcements_to_entry, ":entry", 10),
+       (else_try),
+        (add_reinforcements_to_entry, ":entry", 5),
+      (try_end),
       #(display_message, "@Attackers Reinforced", color_good_news),
       (val_add,"$attacker_reinforcement_stage", 1),
-      (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
-    (try_end)]),
+      (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode. 
+    (try_end),
+    
+    (try_begin),
+            (eq, ":attack_flank", 0),
+            (str_store_string, s1, "@on the left flank"),
+            (str_store_string, s2, "@on the right flank"),
+        (else_try),
+            (eq, ":attack_flank", 1),
+            (str_store_string, s1, "@through the center"),
+            (str_store_string, s2, "@through the center"),
+        (else_try),
+            (eq, ":attack_flank", 2),
+            (str_store_string, s1, "@on the right flank"),
+            (str_store_string, s2, "@on the left flank"),
+    (try_end),
+    (try_begin),
+            (is_between, ":attack_flank", 0, 3),
+            (get_player_agent_no, ":player_agent"),
+            (agent_is_defender, ":player_agent"),
+            (display_message, "@Attackers charge {s2}"),
+        (else_try),
+            (is_between, ":attack_flank", 0, 3),
+            (display_message, "@Attackers charge {s1}"),
+    (try_end),
+    
+    (try_begin), #stop any further reinforcements after player death
+        (main_hero_fallen),
+        (get_player_agent_no, ":player_agent"),
+        (neg|agent_is_defender, ":player_agent"),
+        (assign, "$attacker_reinforcement_stage",20),
+    (try_end),   
+    ]),
 
   (0, 0, 10, [(lt,"$defender_reinforcement_stage", 75),(store_mission_timer_a,":mission_time"),(ge,":mission_time",30)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
     (assign,":defteam","$defender_team"),
@@ -4553,9 +4593,15 @@ mission_templates = [ # not used in game
       (eq, ":spawn_point_blocked", 0),
       (add_reinforcements_to_entry, ":entry", ":reinforcements"),
       (val_add,"$defender_reinforcement_stage",1),
-      (assign, reg0,":entry_number"),
-      (display_message, "@Defenders Reinforced entry #{reg0}", color_good_news),												  																	   
+      #(assign, reg0,":entry_number"),
+      #(display_message, "@Defenders Reinforced entry #{reg0}", color_good_news),												  																	   
     (try_end),
+    
+    (try_begin), #stop any further reinforcements after player death
+        (main_hero_fallen),
+        (agent_is_defender, ":player_agent"),
+        (assign, "$defender_reinforcement_stage",75),
+    (try_end),   
 
 	] + (is_a_wb_mt==1 and [ #piggyback attacker reinforcement team assignment. This trigger always fires 1 second after the attacker reinforcement trigger, so it should catch the spawned troops.)
     (try_for_range, ":entry", 47, 50), #attacker spawn entries
@@ -4617,7 +4663,7 @@ mission_templates = [ # not used in game
    ## This block calls the script to move archers to archer positions. 
    ## In TLD, attacker archers are asked to hold ground in entry point 60, 61, and 62 if the right,left, center flanks have NOT been taken by the attackers
 
-  (2, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
+  (5, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
 
   ## This block is so that we revert attacker archers to regular attack mode when reinforcement comes.
 
@@ -4735,9 +4781,9 @@ mission_templates = [ # not used in game
 			(store_sub,":slot_defender",":entry",41), #0, 1, 2
 			
 			#debug
-			(store_add, reg10, ":slot_defender", 41), #get chokepoint entry number, 41, 42, 43
-			(troop_get_slot, reg11, "trp_no_troop",":slot_defender"), #get number of defenders
-			(display_message, "@Entry {reg10}: {reg11} defenders"),
+			# (store_add, reg10, ":slot_defender", 41), #get chokepoint entry number, 41, 42, 43
+			# (troop_get_slot, reg11, "trp_no_troop",":slot_defender"), #get number of defenders
+			# (display_message, "@Entry {reg10}: {reg11} defenders"),
 				 
 		  (neg|troop_slot_ge,"trp_no_troop",":slot_defender",2), #if 0-1 defenders standing -> defenders charge
 		  (neg|troop_slot_eq,"trp_no_troop",":slot_defender",-1), #we do this only once

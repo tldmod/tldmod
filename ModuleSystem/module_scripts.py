@@ -14409,8 +14409,8 @@ scripts = [
 # script_siege_move_archers_to_archer_positions
 ("siege_move_archers_to_archer_positions",
 	[(try_for_agents, ":agent_no"),
-		(agent_is_alive, ":agent_no"),
-		(agent_get_class, ":agent_class", ":agent_no"),
+	(agent_is_alive, ":agent_no"),
+	(agent_get_class, ":agent_class", ":agent_no"),
 	
 	  ] + (is_a_wb_script==1 and [
        (try_begin), #Kham : horse archer siege fix? 
@@ -14424,7 +14424,7 @@ scripts = [
       ] or []) + [
 
 		(eq, ":agent_class", grc_archers),
-		#       (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
+		(agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
 		(try_begin),
 			(agent_is_defender, ":agent_no"), # defending archers go to their respective points
 			(try_begin),
@@ -14441,6 +14441,7 @@ scripts = [
 			(try_begin),
 				(agent_get_position, pos0, ":agent_no"),
 				(agent_get_slot, ":target_entry", ":agent_no", slot_agent_target_entry_point),
+                (gt, ":target_entry", 0),
 				(entry_point_get_position, pos1, ":target_entry"),
 				(get_distance_between_positions, ":dist", pos0, pos1),
 				(lt, ":dist", 300),
@@ -14453,6 +14454,7 @@ scripts = [
 						 # (assign, reg78, ":target_entry"),
 				         # (display_message, "@{s1} ({reg0}) reached pos {reg78}"),
 			(else_try),
+                (gt, ":target_entry", 0),
 				(agent_get_simple_behavior, ":agent_sb", ":agent_no"),
 				#(agent_get_combat_state, ":agent_cs", ":agent_no"),
 				(this_or_next|eq, ":agent_sb", aisb_ranged),

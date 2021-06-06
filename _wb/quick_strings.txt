@@ -1,4 +1,4 @@
-1887
+1890
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_229_wb__dev_^_B _rev_229_wb_|_dev_^_Built_2021-05-26_17:58___
+qstr__rev_231_wb__dev_^_B _rev_231_wb_|_dev_^_Built_2021-06-06_16:12___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -899,8 +899,11 @@ qstr_Drive_them_back! Drive_them_back!
 qstr_Protect_the_City! Protect_the_City!
 qstr_Forward!_Board_them! Forward!_Board_them!
 qstr_The_Last_Days_of_the_ The_Last_Days_of_the_Third_Age_has_an_Advanced_Siege_AI,_vastly_different_from_Native._All_attackers_and_defenders_will_be_distributed_to_the_left_and_right_flanks_and_the_center._Attacking_players_command_some_of_their_own_troops.
-qstr_Defenders_Reinforced Defenders_Reinforced_entry_#{reg0}
-qstr_Entry_{reg10}:_{reg1 Entry_{reg10}:_{reg11}_defenders
+qstr_on_the_left_flank on_the_left_flank
+qstr_on_the_right_flank on_the_right_flank
+qstr_through_the_center through_the_center
+qstr_Attackers_charge_{s2 Attackers_charge_{s2}
+qstr_Attackers_charge_{s1 Attackers_charge_{s1}
 qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}/{reg7}_Defenders:_{reg0}/{reg2}/{reg4}/{reg6}
 qstr_player_team:_{reg7} player_team:_{reg7}
 qstr_DEBUG:_Attackers_go_ DEBUG:_Attackers_go_back_to_regular_attack_mode
