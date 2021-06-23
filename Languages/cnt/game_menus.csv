@@ -68,7 +68,7 @@ mno_start_go|剛 鐸， 白 塔 之 國
 mno_start_ro|洛 汗， 騎 馬 之 民 
 mno_start_du|登 丹 人， 古 努 曼 諾 爾 王 朝 後 裔 
 mno_start_be|比 翁 人， 熊 人 後 代 
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+mno_start_wo|山 林 人，居 住 在 幽 暗 密 林 邊 緣
 mno_start_da|河 谷 人， 北 方 王 國 
 menu_start_good_elf|^^^^^^^^^^你 來 自 哪 個 森 林 ，長 者 ？ 
 mno_start_ri|瑞 文 戴 爾  ， 屬 精 靈 王 埃 爾 隆 德 
@@ -104,7 +104,7 @@ mno_start_cliff|剛 達 巴 山 的 峭 壁 內
 menu_start_gondor_mt|^^^^^^^^^^選 擇 你 的 出 身 ： 
 mno_start_1_com|平 民 
 mno_start_2_hib|貴 族 
-; menu_start_haradrim|^^^^^^^You are one of the Haradrim,^a Man of the Desert.^Select your line
+menu_start_haradrim|^^^^^^^^你 是 哈 拉 德 人，^選 擇 你 的 出 身
 mno_start_1_des|沙 漠 人
 mno_start_2_far|遙 遠 哈 拉 德 威 治 部 落 成 員 
 menu_start_numenorean|^^^^^^^你 是 黑 努 美 諾 爾 人，^忠 於 黑 暗 和 魔 苟 斯 。^選 擇 你 服 務 邪 眼 的 地 方
@@ -165,7 +165,7 @@ mno_strat_tweaks_rank_gain_rate|等 級 增 加 率 ： {s7}
 mno_strat_tweaks_back|返 回 調 整 選 單 
 menu_camp_action|^^^^^^^^^ 哪 件 事 ？ 
 mno_camp_drink_water|喝 下 樹 人 之 水 ！ 
-; mno_camp_drink_orc_brew|Pass around the Orc Brew!
+mno_camp_drink_orc_brew|跟 大 伙 一 起 乾 了 半 獸 人 酒！
 mno_camp_action_4|後 退 
 menu_assasins_attack_player_won|你 成 功 擊 敗 從 {s2}來 的 刺 客 ， {s3}的 手 下。 
 menu_assasins_attack_player_retreat|你 逃 過 一 劫！ 
@@ -175,7 +175,6 @@ mno_be_quiet|收 起 武 器 且 保 持 安 靜 ！ 馬 上 離 開 這 裡 ！
 mno_be_bold|繼 續 前 行 ！ 我 不 害 怕 這 些 植 物 和 那 些 古 老 的 神 話 ！ 
 mno_fight_back|讓 我 們 來 一 探 究 竟 吧 ！ 搜 索 區 域 ！ 燒 毀 它 們 ！  
 menu_fangorn_search_fails|^^^^^^你 搜 索 到 天 黑 ， 但 是 並 沒 有 找 到 什 麽 。 ^現 在 ， 你 感 到 來 自 四 周 的 威 脅 越 來 越 多 。 
-menu_fangorn_battle_debrief_won|^^^一 場 偉 大 的 勝 利 ！ ^^^這 就 是 法 貢 森 林 的 神 話 ...
 menu_fangorn_killed_player_only|^^^^^^你 在 這 個 又 黑 又 密 的 森 林 迷 失 方 向 了 。 ^突 然 ， 一 個 東 西 砸 到 你 的 頭 ！ 大 概 是 樹 枝 吧 ？ ^你 昏 迷 一 段 時 間 後 醒 來 ， 你 傷 得 很 重 ， 但 能 繼 續 前 行 。 
 mno_ow_get_out|哎 ！ 讓 我 們 離 開 這 個 被 詛 咒 的 地 方 ！ 
 menu_fangorn_killed_troop_and_player|^^^^^^你 在 這 個 又 黑 又 密 的 森 林 迷 失 方 向 了 。 ^突 然 ， 一 個 東 西 砸 到 你 的 頭 ！ 大 概 是 樹 枝 吧 ？ ^^當 你 幾 分 鐘 後 恢 復 意 識 ， 你 發 現 ，並 非 所 有 人 都 那 麼 幸 運 。 ^^
@@ -201,7 +200,7 @@ mno_encounter_order_attack|你 坐 鎮 指 揮 命 令 你 的 部 下 {reg21?�
 mno_control_allies_menu|使 用 影 響 力 來 指 揮 你 在 戰 場 上 的 盟 友 。
 mno_encounter_hide|躲 避 敵 人...
 mno_special_whip|往 前 衝 突 破 {s4}。 
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
+mno_encounter_attack_bearform|{reg21?變 形 為 熊 進 入 戰 場：換 皮，準 備 撕 碎 敵 人 }。
 mno_encounter_leave|不 打 了。
 mno_encounter_retreat|撤 退 ， 留 下 一 些 士 兵 掩 護 主 力 撤 退 。 
 mno_player_control_allies_simple|指 揮 他 們 向 敵 人 進 攻
@@ -234,6 +233,7 @@ menu_join_battle|^^^你 決 定 幫 助 {s2}對 抗 {s1}，^ 你 將 有 {reg22}
 mno_join_attack|攻 入 敵 陣 。
 mno_join_order_attack|命 令 你 的 部 隊 加 入 盟 友 而 你 留 下 。 
 mno_control_allies_join_menu|使 用 影 響 力 命 令 你 在 戰 場 上 的 盟 友 。
+mno_join_attack_bearform|變 形 為 熊 進 入 戰 場
 mno_join_leave|離 開 
 mno_player_control_allies_join_menu|指 揮 他 們 向 敵 人 進 攻
 menu_join_order_attack|{s4}^^我 軍 傷 亡 ： {s8}^^盟 軍 傷 亡 ：{s9}^^敵 軍 傷 亡 ：{s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|不 要 求 獎 賞
 menu_siege_started_defender|{s1} 正 在 攻 擊 {s2}的 城 墻 。 己 方 有 {reg22}人 可 以 參 戰 對 抗 敵 人 的 {reg11}人 。 你 決 定 ...
 mno_siege_defender_join_battle|加 入 戰 鬥 
 mno_siege_defender_troops_join_battle|僅 命 令 你 的 部 隊 攻 擊 
+mno_siege_defender_do_not_join_battle|不 卷 入 紛 爭 。 
 menu_siege_join_defense|{s4}^^我 軍 傷 亡 ： {s8}^^盟 軍 傷 亡 ：{s9}^^敵 軍 傷 亡 ：{s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^敵 人 的 沉 重 打 擊 將 你 擊 倒 在 地 ， 你 的 意 識 旋 轉 和 熄 滅 。 隨 著 時 間 流 逝 。 當 你 再 次 睜 開 眼 睛 時 ， 你 發 現 自 己 滿 身 傷 痕 和 血 跡 ， 但 幸 運 的 是 似 乎 沒 有 傷 口 是 致 命 的 。 
 menu_town_bandits_succeeded|^^^^^哥 布 林 在 你 面 前 如 同 割 下 的 小 麥 般 倒 下 ！很 快 只 剩 你 獨 自 站 著 ，大 部 分 的 攻 擊 者 都 陷 入 昏 迷， 死 亡 不 然 就 是 瀕 死 。 當 然 ， 當 地 人 會 很 感 激 你 從 這 種 威 脅 中 拯 救 他 們 。 
@@ -437,16 +438,16 @@ menu_death|你 已 經 被 殺 害 。 雖 然 戰 爭 仍 舊 火 熱 ， 但 �
 menu_animal_ambush|你 和 你 的 同 伴 發 現 跟 其 他 人 走 散 了，突 然 間...
 menu_animal_ambush_success|{s2}在 你 前 面 {reg0?倒 下 :倒 下 }如 同 割 下 的 小 麥 ！ 很 快 大 部 分 的 攻 擊 者 都 倒 地 ， 死 亡 或 瀕 死 。 {s3}
 menu_animal_ambush_fail|動 物 撕 咬 你 {reg0?,: 和 你 的 同 伴 {reg2?,:,}}但 幸 運 的 是 你 設 法 避 開 他  們 。 希 望 它 們 不 會 再 攻 擊 你 。 
-; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Plain Big (file scn custom 1.sco)
-; mno_scene2|Plain Med (file scn custom 2.sco)
-; mno_scene3|Plain Small (file scn custom 3.sco)
-; mno_scene4|Steppe Big (file scn custom 4.sco)
-; mno_scene5|Steppe Med (file scn custom 5.sco)
-; mno_scene6|Steppe Small (file scn custom 6.sco)
-; mno_scene7|Forest Big (file scn custom 7.sco)
-; mno_scene8|Forest Med (file scn custom 8.sco)
-; mno_scene9|Forest Small (file scn custom 9.sco)
+menu_build_your_scene|你 可 以 建 造 你 自 己 的 戰 場 場 景。首 先 在 設 置 中 打 開 編 輯 模 式，在 選 擇 底 下 任 意 一 個 存 位（你 需 要 先 在 M&B 啟 動 屏 幕 選 項 中 將 編 輯 模 式 切 換 為 ON，然 後 進 入 場 景 中 按 Ctrl+E 打 開 編 輯 模 式）。 你 可 以 將 你 創 造 的 場 景 提 交 給 TLD 製 作 組，如 果 你 的 場 景 做 得 好 的 話，它 會 作 為 隨 機 戰 場 之 一 出 現 在 以 後 的 版 本 中！（提 交 時 請 重 新 命 名，並 把 TLD/SceneObj 文 件 夾 中 相 應 的 sco 文 件 提 交）^^ 記 得 說 明 你 所 製 作 的 場 景，具 體 是 在 中 土 的 哪 個 地 方。^ 友 情 提 示：不 要 做 深 水、高 山 或 其 他 難 以 通 行 的 地 形，除 非 你 是 資 深 的 場 景 製 作 者 並 且 知 道 如 何 利 用 AI 網 格 讓 AI 部 隊 避 開 深 坑。^（#0-1 用 於 攻 擊 方，#4 用 於 防 守 方，勿 碰 #5-8
+mno_scene1|大 型 平 原（file scn custom 1.sco）
+mno_scene2|中 型 平 原（file scn custom 2.sco）
+mno_scene3|小 型 平 原（file scn custom 3.sco）
+mno_scene4|大 型 草 原（file scn custom 4.sco）
+mno_scene5|中 型 草 原（file scn custom 5.sco）
+mno_scene6|小 型 草 原（file scn custom 6.sco）
+mno_scene7|大 型 森 林（file scn custom 7.sco）
+mno_scene8|中 型 森 林（file scn custom 8.sco）
+mno_scene9|小 型 森 林（file scn custom 9.sco）
 mno_back_3dot|返 回 ...
 mno_back|返 回
 mno_next|下 一 個...

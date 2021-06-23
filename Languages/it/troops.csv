@@ -672,8 +672,8 @@ trp_armoured_troll|Troll Corazzato
 trp_armoured_troll_pl|Trolls Corazzati
 trp_olog_hai|Olog-Hai di Mordor
 trp_olog_hai_pl|Olog-Hai di Mordor
-trp_ent|Ent
-trp_ent_pl|Ent
+trp_ent_old|Ent
+trp_ent_old_pl|Ent
 trp_i1_guldur_orc_snaga|Snaga Orchesco di Dol Guldur
 trp_i1_guldur_orc_snaga_pl|Snaga Orcheschi di Dol Guldur
 trp_a2_guldur_orc_tracker|Orco Segugio di Dol Guldur
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|Cavalca-Warg di Gundabad
 trp_c4_gunda_warg_rider_pl|Cavalca-Warg di Gundabad
 trp_c5_gunda_clan_rider|Cavalcatore Goblin del Clan Nordico
 trp_c5_gunda_clan_rider_pl|Cavalcatori Goblin del Clan Nordico
+trp_i5_gunda_orc_champion|Orco Campione di Gundabad
+trp_i5_gunda_orc_champion_pl|Orchi Campioni di Gundabad
 trp_mountain_goblin2|Goblin di Montagna
 trp_mountain_goblin2_pl|Goblin di Montagna
 trp_tribal_orc2|Orco Tribale
 trp_tribal_orc2_pl|Orchi Tribali
-trp_tribal_orc_warrior2|Orco Tribale Guerriero
-trp_tribal_orc_warrior2_pl|Orchi Tribali Guerrieri
-trp_i5_gunda_orc_champion|Orco Campione di Gundabad
-trp_i5_gunda_orc_champion_pl|Orchi Campioni di Gundabad
+trp_i5_gunda_orc_champion2|Orco Campione di Gundabad
+trp_i5_gunda_orc_champion2_pl|Orchi Campioni di Gundabad
 trp_i2_mordor_num_renegade|Rinnegato Numenoreano Nero
 trp_i2_mordor_num_renegade_pl|Rinnegati Numenoreani Neri
 trp_i3_mordor_num_warrior|Guerriero Numeroreano Nero
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|Pushurt, il Mercante
 trp_smith_khand_ac_pl|la fucina
 trp_smith_umbar_ac|Fuinir, il Forgiatore
 trp_smith_umbar_ac_pl|la fucina
-trp_barman_mtirith|Il taverniere
-trp_barman_mtirith_pl|La Cittadella
-trp_barman_pelargir|Il taverniere
-trp_barman_pelargir_pl|il castello
-trp_barman_linhir|Il taverniere
-trp_barman_linhir_pl|il castello
-trp_barman_dolamroth|Il taverniere
-trp_barman_dolamroth_pl|il castello
-trp_barman_edhellond|Il taverniere
-trp_barman_edhellond_pl|il castello
-trp_barman_lossarnach|Il taverniere
-trp_barman_lossarnach_pl|il castello
-trp_barman_tarnost|Il taverniere
-trp_barman_tarnost_pl|il castello
-trp_barman_erech|Il taverniere
-trp_barman_erech_pl|il castello
-trp_barman_pinnath|Il taverniere
-trp_barman_pinnath_pl|il castello
-trp_barman_hannun|Il taverniere
-trp_barman_hannun_pl|La Caverna Segreta
-trp_barman_calembel|Il taverniere
-trp_barman_calembel_pl|il castello
-trp_barman_edoras|Il taverniere
-trp_barman_edoras_pl|Meduseld, il Palazzo d'Oro
-trp_barman_aldburg|Il taverniere
-trp_barman_aldburg_pl|il castello
-trp_barman_hornburg|Il taverniere
-trp_barman_hornburg_pl|le Sale del Re
+trp_smith_moria_ac|Burgak, il Forgiatore
+trp_smith_moria_ac_pl|la fucina
+trp_smith_dale_ac|Ardel Manodifuoco
+trp_smith_dale_ac_pl|la fucina
+trp_smith_beorn_ac|Beornalaf, il Fabbricatore di Asce
+trp_smith_beorn_ac_pl|la fucina
+trp_smith_woodelf_west_camp|Dhoelath
+trp_smith_woodelf_west_camp_pl|la fucina
+trp_smith_woodmen|Beornalaf, il Fabbricatore di Asce
+trp_smith_woodmen_pl|la fucina
+trp_smith_beorn_v|Beornalaf, il Fabbricatore di Asce
+trp_smith_beorn_v_pl|la fucina
+trp_smith_troll_cave|Burgak, il Forgiatore
+trp_smith_troll_cave_pl|la fucina
+trp_smith_dg_outpost|Shtazg Dulbash
+trp_smith_dg_outpost_pl|la fucina
+trp_smith_main_rhun|Branimir Bronnik
+trp_smith_main_rhun_pl|la fucina improvvisata
+trp_smith_south_rhun|Branimir Bronnik
+trp_smith_south_rhun_pl|la fucina improvvisata
+trp_smith_gundabad_ne|Blurg, il Vendineve
+trp_smith_gundabad_ne_pl|la fucina
+trp_smith_gundabad_nw|Blurg, il Vendineve
+trp_smith_gundabad_nw_pl|la fucina
+trp_smith_gundabad_s|Blurg, il Vendineve
+trp_smith_gundabad_s_pl|la fucina
+trp_smith_gundabad_m|Blurg, il Vendineve
+trp_smith_gundabad_m_pl|la fucina
 trp_barman_eastemnet|Il taverniere
 trp_barman_eastemnet_pl|il castello
 trp_barman_westfold|Il taverniere
@@ -1222,30 +1222,30 @@ trp_barman_morannon|Il taverniere
 trp_barman_morannon_pl|La Caverna del Capo
 trp_barman_mmorgul|Il taverniere
 trp_barman_mmorgul_pl|La torre
-trp_barman_cungol|Il taverniere
-trp_barman_cungol_pl|il castello
-trp_barman_isengard|Il taverniere
-trp_barman_isengard_pl|La Torre di Orthanc
-trp_barman_cgaladhon|Il taverniere
-trp_barman_cgaladhon_pl|L'Albero Castello
-trp_barman_cdolen|Il taverniere
-trp_barman_cdolen_pl|L'Albero Castello
-trp_barman_camroth|Il taverniere
-trp_barman_camroth_pl|L'Albero Castello
-trp_barman_thalls|Il taverniere
-trp_barman_thalls_pl|La Stanza del Trono
-trp_barman_beorn|Il taverniere
-trp_barman_beorn_pl|La Casa di Beorn
-trp_barman_moria|Il taverniere
-trp_barman_moria_pl|La Camera del Capo
-trp_barman_dale|Il taverniere
-trp_barman_dale_pl|il castello
-trp_barman_esgaroth|Il taverniere
-trp_barman_esgaroth_pl|la Sala del Re
-trp_barman_erebor|Il taverniere
-trp_barman_erebor_pl|la Grande Sala di Thrór
-trp_barman_dolguldur|Il taverniere
-trp_barman_dolguldur_pl|il castello
+trp_merchant_main_rhun|Il Mastro dei Rifornimenti
+trp_merchant_main_rhun_pl|Le scorte del campo
+trp_merchant_dg_outpost|Il Mastro dei Rifornimenti
+trp_merchant_dg_outpost_pl|la stalla e il magazzino
+trp_merchant_woodelf_west_camp|Il Mastro dei Rifornimenti
+trp_merchant_woodelf_west_camp_pl|le provviste elfiche
+trp_merchant_gundabad_m|Il Mastro dei Rifornimenti
+trp_merchant_gundabad_m_pl|Le scorte del campo
+trp_merchant_gundabad_s|Il Mastro dei Rifornimenti
+trp_merchant_gundabad_s_pl|Le scorte del campo
+trp_merchant_gundabad_nw|Il Mastro dei Rifornimenti
+trp_merchant_gundabad_nw_pl|Le scorte del campo
+trp_merchant_gundabad_ne|Il Mastro dei Rifornimenti
+trp_merchant_gundabad_ne_pl|Le scorte del campo
+trp_merchant_troll_cave|Il Mastro dei Rifornimenti
+trp_merchant_troll_cave_pl|il recinto dei Warg e provviste
+trp_merchant_beorn_v|Il Mastro dei Rifornimenti
+trp_merchant_beorn_v_pl|la stalla e il magazzino
+trp_merchant_orc_sentry|Il Mastro dei Rifornimenti
+trp_merchant_orc_sentry_pl|Le scorte del campo
+trp_merchant_candros|Il Mastro dei Rifornimenti
+trp_merchant_candros_pl|la stalla e il magazzino
+trp_merchant_hannun|Il Mastro dei Rifornimenti
+trp_merchant_hannun_pl|forniture dei raminghi
 trp_merchant_mtirith|Il Mastro dei Rifornimenti
 trp_merchant_mtirith_pl|la stalla e il magazzino
 trp_merchant_pelargir|Il Mastro dei Rifornimenti
@@ -1434,42 +1434,42 @@ trp_elder_erebor|Borgomastro di Erebor
 trp_elder_erebor_pl|le Sale
 trp_elder_dolguldur|Capo di Guldur
 trp_elder_dolguldur_pl|il castello nero
-trp_elder_gondor_ac|Comandante del Campo
-trp_elder_gondor_ac_pl|Il campo
-trp_elder_rohan_ac|Comandante del Campo
-trp_elder_rohan_ac_pl|Il campo
-trp_elder_mordor_ac|Comandante del Campo
-trp_elder_mordor_ac_pl|Il campo
-trp_elder_isengard_ac|Comandante del Campo
-trp_elder_isengard_ac_pl|Il campo
-trp_elder_lorien_ac|Comandante del campo
-trp_elder_lorien_ac_pl|Il campo
-trp_elder_woodelf_ac|Comandante del campo
-trp_elder_woodelf_ac_pl|Il campo
-trp_elder_imladris_ac|Comandante del campo
-trp_elder_imladris_ac_pl|Il campo
-trp_elder_beorn_ac|Comandante del campo
-trp_elder_beorn_ac_pl|Il campo
-trp_elder_harad_ac|Capo del Campo di Harad
-trp_elder_harad_ac_pl|Il campo
-trp_elder_rhun_ac|Capo del Campo di Rhûn
-trp_elder_rhun_ac_pl|Il campo
-trp_elder_khand_ac|Capo del Campo di Khand
-trp_elder_khand_ac_pl|Il campo
-trp_elder_dunland_ac|Capo del Campo di Dun
-trp_elder_dunland_ac_pl|Il campo
-trp_elder_umbar_ac|Quartiermastro di Umbar
-trp_elder_umbar_ac_pl|Il campo
-trp_elder_moria_ac|Capo del Campo di Moria
-trp_elder_moria_ac_pl|Il campo
-trp_elder_gunda_ac|Capo del Campo di Gundabad
-trp_elder_gunda_ac_pl|Il campo
-trp_elder_dale_ac|Quartiermastro di Dale
-trp_elder_dale_ac_pl|Il campo
-trp_elder_guldur_ac|Capo del Campo di Guldur
-trp_elder_guldur_ac_pl|Il campo
-trp_elder_dwarf_ac|Comandante del Campo Nanico
-trp_elder_dwarf_ac_pl|Il campo
+trp_elder_wosgiliath|Comandante del campo
+trp_elder_wosgiliath_pl|Il campo
+trp_elder_oscamp|Comandante del campo
+trp_elder_oscamp_pl|Il campo
+trp_elder_eosgiliath|Comandante del campo
+trp_elder_eosgiliath_pl|Il campo
+trp_elder_uoutpost|Comandante del campo
+trp_elder_uoutpost_pl|Il campo
+trp_elder_uhcamp|Comandante del campo
+trp_elder_uhcamp_pl|Il campo
+trp_elder_urcamp|Comandante del campo
+trp_elder_urcamp_pl|Il campo
+trp_elder_woodelf_camp|Saggio
+trp_elder_woodelf_camp_pl|Il campo
+trp_elder_woodelf_west_camp|Saggio
+trp_elder_woodelf_west_camp_pl|Il campo
+trp_elder_beorn_v|Saggio Beorniano
+trp_elder_beorn_v_pl|il villaggio
+trp_elder_troll_cave|Capo della Caverna
+trp_elder_troll_cave_pl|Le caverne
+trp_elder_dg_outpost|Capo del Campo di Rhûn
+trp_elder_dg_outpost_pl|Il campo
+trp_elder_rhun_sc|Capo del Campo di Rhûn
+trp_elder_rhun_sc_pl|Il campo
+trp_elder_rhun_nc|Capo del Campo di Rhûn
+trp_elder_rhun_nc_pl|Il campo
+trp_elder_gunda_ne|Orco Anziano
+trp_elder_gunda_ne_pl|Il campo
+trp_elder_gunda_nw|Orco Anziano
+trp_elder_gunda_nw_pl|Il campo
+trp_elder_gunda_s|Orco Anziano
+trp_elder_gunda_s_pl|Il campo
+trp_elder_gunda_m|Orco Anziano
+trp_elder_gunda_m_pl|Il campo
+trp_elder_ironhill|Capo del Campo
+trp_elder_ironhill_pl|Il campo
 trp_village_1_elder|Signore della Frusta
 trp_village_1_elder_pl|Le caverne
 trp_tutorial_chest_1|Cassa delle armi da mischia
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|Troll di Caverna
 trp_troll_placeholder_6_pl|Trolls di Caverna
 trp_wild_troll|Troll di Caverna Selvaggio
 trp_wild_troll_pl|Trolls di Caverna Selvaggi
-trp_ent2|Ent
-trp_ent2_pl|Ent
+trp_ent|Ent
+trp_ent_pl|Ent
 trp_mountain_goblin|Goblin di Montagna
 trp_mountain_goblin_pl|Goblin di Montagna
 trp_tribal_orc|Orco Tribale

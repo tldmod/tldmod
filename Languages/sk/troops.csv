@@ -672,8 +672,8 @@ trp_armoured_troll|Obrnený zlobor
 trp_armoured_troll_pl|Obrnení zlobri
 trp_olog_hai|Olog Hai z Mordoru
 trp_olog_hai_pl|Olog Hai z Mordoru
-trp_ent|Ent
-trp_ent_pl|Enti
+trp_ent_old|Ent
+trp_ent_old_pl|Enti
 trp_i1_guldur_orc_snaga|Ohyzd Zmok z Dol Guldúru
 trp_i1_guldur_orc_snaga_pl|Ohyzdí Zmokovia z Dol Guldúru
 trp_a2_guldur_orc_tracker|Ohyzdí stopár z Dol Guldúru
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|Vročí jazdec z Gundabadu
 trp_c4_gunda_warg_rider_pl|Vročí jazdci z Gundabadu
 trp_c5_gunda_clan_rider|Jazdec Severského kmeňa škratov
 trp_c5_gunda_clan_rider_pl|Jazdci Severského kmeňa škratov
+trp_i5_gunda_orc_champion|Ohyzdí šampión z Gundabadu
+trp_i5_gunda_orc_champion_pl|Ohyzdí šampióni z Gundabadu
 trp_mountain_goblin2|Horský škrat
 trp_mountain_goblin2_pl|Horskí škrati
 trp_tribal_orc2|Kmeňový ohyzd
 trp_tribal_orc2_pl|Kmeňoví ohyzdi
-trp_tribal_orc_warrior2|Bojový Kmeňový Ohyzd
-trp_tribal_orc_warrior2_pl|Bojoví Kmeňoví Ohyzdi
-trp_i5_gunda_orc_champion|Ohyzdí šampión z Gundabadu
-trp_i5_gunda_orc_champion_pl|Ohyzdí šampióni z Gundabadu
+trp_i5_gunda_orc_champion2|Ohyzdí šampión z Gundabadu
+trp_i5_gunda_orc_champion2_pl|Ohyzdí šampióni z Gundabadu
 trp_i2_mordor_num_renegade|Čierno-Númenorejský odpadlík
 trp_i2_mordor_num_renegade_pl|Čierno-Númenorejskí odpadlíci
 trp_i3_mordor_num_warrior|Čierno-Númenorejský bojovník
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|Pushurt Bosorák
 trp_smith_khand_ac_pl|kováčska dielňa
 trp_smith_umbar_ac|Fuinir Kováč
 trp_smith_umbar_ac_pl|kováčska dielňa
-trp_barman_mtirith|Krčmárka
-trp_barman_mtirith_pl|Citadela
-trp_barman_pelargir|Krčmárka
-trp_barman_pelargir_pl|Hrad
-trp_barman_linhir|Krčmárka
-trp_barman_linhir_pl|Hrad
-trp_barman_dolamroth|Krčmárka
-trp_barman_dolamroth_pl|Hrad
-trp_barman_edhellond|Krčmárka
-trp_barman_edhellond_pl|Hrad
-trp_barman_lossarnach|Krčmárka
-trp_barman_lossarnach_pl|Hrad
-trp_barman_tarnost|Krčmárka
-trp_barman_tarnost_pl|Hrad
-trp_barman_erech|Krčmárka
-trp_barman_erech_pl|Hrad
-trp_barman_pinnath|Krčmárka
-trp_barman_pinnath_pl|Hrad
-trp_barman_hannun|Krčmárka
-trp_barman_hannun_pl|Tajná jaskyňa
-trp_barman_calembel|Krčmárka
-trp_barman_calembel_pl|Hrad
-trp_barman_edoras|Krčmárka
-trp_barman_edoras_pl|Meduseld, Zlatá Sieň
-trp_barman_aldburg|Krčmárka
-trp_barman_aldburg_pl|Hrad
-trp_barman_hornburg|Krčmárka
-trp_barman_hornburg_pl|Lordové komnaty
+trp_smith_moria_ac|Burgak Kováč
+trp_smith_moria_ac_pl|kováčska dielňa
+trp_smith_dale_ac|Ardel Ohňoruk
+trp_smith_dale_ac_pl|kováčska dielňa
+trp_smith_beorn_ac|Beornalaf Výrobca sekier
+trp_smith_beorn_ac_pl|kováčska dielňa
+trp_smith_woodelf_west_camp|Dhoelath
+trp_smith_woodelf_west_camp_pl|kováčska dielňa
+trp_smith_woodmen|Beornalaf Výrobca sekier
+trp_smith_woodmen_pl|kováčska dielňa
+trp_smith_beorn_v|Beornalaf Výrobca sekier
+trp_smith_beorn_v_pl|kováčska dielňa
+trp_smith_troll_cave|Burgak Kováč
+trp_smith_troll_cave_pl|kováčska dielňa
+trp_smith_dg_outpost|Shtazg Dulbash
+trp_smith_dg_outpost_pl|kováčska dielňa
+trp_smith_main_rhun|Branimir Bronnik
+trp_smith_main_rhun_pl|provizórna kováreň
+trp_smith_south_rhun|Branimir Bronnik
+trp_smith_south_rhun_pl|provizórna kováreň
+trp_smith_gundabad_ne|Blurg Zlatosneh
+trp_smith_gundabad_ne_pl|kováčska dielňa
+trp_smith_gundabad_nw|Blurg Zlatosneh
+trp_smith_gundabad_nw_pl|kováčska dielňa
+trp_smith_gundabad_s|Blurg Zlatosneh
+trp_smith_gundabad_s_pl|kováčska dielňa
+trp_smith_gundabad_m|Blurg Zlatosneh
+trp_smith_gundabad_m_pl|kováčska dielňa
 trp_barman_eastemnet|Krčmárka
 trp_barman_eastemnet_pl|Hrad
 trp_barman_westfold|Krčmárka
@@ -1222,30 +1222,30 @@ trp_barman_morannon|Krčmárka
 trp_barman_morannon_pl|Jaskyňa vodcu
 trp_barman_mmorgul|Krčmárka
 trp_barman_mmorgul_pl|Veža
-trp_barman_cungol|Krčmárka
-trp_barman_cungol_pl|Hrad
-trp_barman_isengard|Krčmárka
-trp_barman_isengard_pl|Veža Orthanc
-trp_barman_cgaladhon|Krčmárka
-trp_barman_cgaladhon_pl|Stromový hrad
-trp_barman_cdolen|Krčmárka
-trp_barman_cdolen_pl|Stromový hrad
-trp_barman_camroth|Krčmárka
-trp_barman_camroth_pl|Stromový hrad
-trp_barman_thalls|Krčmárka
-trp_barman_thalls_pl|Trónna sála
-trp_barman_beorn|Krčmárka
-trp_barman_beorn_pl|Grizlov dom
-trp_barman_moria|Krčmárka
-trp_barman_moria_pl|Náčelníkova sieň
-trp_barman_dale|Krčmárka
-trp_barman_dale_pl|Hrad
-trp_barman_esgaroth|Krčmárka
-trp_barman_esgaroth_pl|Sála
-trp_barman_erebor|Krčmárka
-trp_barman_erebor_pl|Veľká Thrórova Sieň
-trp_barman_dolguldur|Krčmárka
-trp_barman_dolguldur_pl|Hrad
+trp_merchant_main_rhun|Obchodník so zásobami
+trp_merchant_main_rhun_pl|táborový sklad
+trp_merchant_dg_outpost|Obchodník so zásobami
+trp_merchant_dg_outpost_pl|Stajne a skladište
+trp_merchant_woodelf_west_camp|Obchodník so zásobami
+trp_merchant_woodelf_west_camp_pl|elfské zásoby
+trp_merchant_gundabad_m|Obchodník so zásobami
+trp_merchant_gundabad_m_pl|táborový sklad
+trp_merchant_gundabad_s|Obchodník so zásobami
+trp_merchant_gundabad_s_pl|táborový sklad
+trp_merchant_gundabad_nw|Obchodník so zásobami
+trp_merchant_gundabad_nw_pl|táborový sklad
+trp_merchant_gundabad_ne|Obchodník so zásobami
+trp_merchant_gundabad_ne_pl|táborový sklad
+trp_merchant_troll_cave|Obchodník so zásobami
+trp_merchant_troll_cave_pl|vročí brloh a zásoby
+trp_merchant_beorn_v|Obchodník so zásobami
+trp_merchant_beorn_v_pl|Stajne a skladište
+trp_merchant_orc_sentry|Obchodník so zásobami
+trp_merchant_orc_sentry_pl|táborový sklad
+trp_merchant_candros|Obchodník so zásobami
+trp_merchant_candros_pl|Stajne a skladište
+trp_merchant_hannun|Obchodník so zásobami
+; trp_merchant_hannun_pl|ranger supplies
 trp_merchant_mtirith|Obchodník so zásobami
 trp_merchant_mtirith_pl|Stajne a skladište
 trp_merchant_pelargir|Obchodník so zásobami
@@ -1434,42 +1434,42 @@ trp_elder_erebor|Cechovný majster Ereboru
 trp_elder_erebor_pl|Siene
 trp_elder_dolguldur|Veliteľ Gulduru
 trp_elder_dolguldur_pl|čierny hrad
-trp_elder_gondor_ac|Veliteľ tábora
-trp_elder_gondor_ac_pl|tábor
-trp_elder_rohan_ac|Veliteľ tábora
-trp_elder_rohan_ac_pl|tábor
-trp_elder_mordor_ac|Veliteľ tábora
-trp_elder_mordor_ac_pl|tábor
-trp_elder_isengard_ac|Veliteľ tábora
-trp_elder_isengard_ac_pl|tábor
-trp_elder_lorien_ac|Veliteľ tábora
-trp_elder_lorien_ac_pl|tábor
-trp_elder_woodelf_ac|Veliteľ tábora
-trp_elder_woodelf_ac_pl|tábor
-trp_elder_imladris_ac|Veliteľ tábora
-trp_elder_imladris_ac_pl|tábor
-trp_elder_beorn_ac|Veliteľ tábora
-trp_elder_beorn_ac_pl|tábor
-trp_elder_harad_ac|Táborový náčelník Haradu
-trp_elder_harad_ac_pl|tábor
-trp_elder_rhun_ac|Táborový náčelník Rhunu
-trp_elder_rhun_ac_pl|tábor
-trp_elder_khand_ac|Táborový veliteľ Khandu
-trp_elder_khand_ac_pl|tábor
-trp_elder_dunland_ac|Náčelník tábora Vrchovcov
-trp_elder_dunland_ac_pl|tábor
-trp_elder_umbar_ac|Korzársky Hajtman
-trp_elder_umbar_ac_pl|tábor
-trp_elder_moria_ac|Veliteľ tábora Morie
-trp_elder_moria_ac_pl|tábor
-trp_elder_gunda_ac|Veliteľ tábora Gundabadu
-trp_elder_gunda_ac_pl|tábor
-trp_elder_dale_ac|Dálsky Hajtman
-trp_elder_dale_ac_pl|tábor
-trp_elder_guldur_ac|Veliteľ tábora Gulduru
-trp_elder_guldur_ac_pl|tábor
-trp_elder_dwarf_ac|Veliteľ tábora trpaslíkov
-trp_elder_dwarf_ac_pl|tábor
+trp_elder_wosgiliath|Veliteľ tábora
+trp_elder_wosgiliath_pl|tábor
+trp_elder_oscamp|Veliteľ tábora
+trp_elder_oscamp_pl|tábor
+trp_elder_eosgiliath|Veliteľ tábora
+trp_elder_eosgiliath_pl|tábor
+trp_elder_uoutpost|Veliteľ tábora
+trp_elder_uoutpost_pl|tábor
+trp_elder_uhcamp|Veliteľ tábora
+trp_elder_uhcamp_pl|tábor
+trp_elder_urcamp|Veliteľ tábora
+trp_elder_urcamp_pl|tábor
+; trp_elder_woodelf_camp|Elder
+trp_elder_woodelf_camp_pl|tábor
+; trp_elder_woodelf_west_camp|Elder
+trp_elder_woodelf_west_camp_pl|tábor
+; trp_elder_beorn_v|Beorning Elder
+trp_elder_beorn_v_pl|dedina
+; trp_elder_troll_cave|Cave Chief
+trp_elder_troll_cave_pl|jaskyne
+trp_elder_dg_outpost|Táborový náčelník Rhunu
+trp_elder_dg_outpost_pl|tábor
+trp_elder_rhun_sc|Táborový náčelník Rhunu
+trp_elder_rhun_sc_pl|tábor
+trp_elder_rhun_nc|Táborový náčelník Rhunu
+trp_elder_rhun_nc_pl|tábor
+; trp_elder_gunda_ne|Orc Elder
+trp_elder_gunda_ne_pl|tábor
+; trp_elder_gunda_nw|Orc Elder
+trp_elder_gunda_nw_pl|tábor
+; trp_elder_gunda_s|Orc Elder
+trp_elder_gunda_s_pl|tábor
+; trp_elder_gunda_m|Orc Elder
+trp_elder_gunda_m_pl|tábor
+trp_elder_ironhill|Veliteľ tábora
+trp_elder_ironhill_pl|tábor
 trp_village_1_elder|Pán Biča
 trp_village_1_elder_pl|jaskyne
 trp_tutorial_chest_1|Truhla so zbraňami na blízko
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|Jaskynný zlobor
 trp_troll_placeholder_6_pl|Jaskynní zlobri
 trp_wild_troll|Divoký Jaskynný Zlobor
 trp_wild_troll_pl|Divokí Jaskynní Zlobri
-trp_ent2|Ent
-trp_ent2_pl|Enti
+trp_ent|Ent
+trp_ent_pl|Enti
 trp_mountain_goblin|Horský škrat
 trp_mountain_goblin_pl|Horskí škrati
 trp_tribal_orc|Kmeňový Ohyzd

@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|Widzieliśmy niektórych z twoich ludzi ucie
 dlga_raid_village_failed:close_window|Postaram się lepiej następnym razem
 dlga_lord_start:lord_target_lord_failed|Słyszałem, że nie zrobił pan tego, o co pana poprosiłem. Rozczarowujące, {playername}.
 dlga_lord_target_lord_failed:close_window|Postaram się lepiej następnym razem
-dlga_lord_start:lord_generic_mission_completed.5|Moi ludzie byli świadkami twojej odwagi w walce, {playername}. Pokazaliście im, że jesteśmy potężni.
+; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.
 dlga_lord_start:kill_quest_failed|Słyszałem, że nie zrobił pan tego, o co pana poprosiłem. Rozczarowujące, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Moi ludzie byli świadkami twojej odwagi w walce, {playername}. Zasłużyłeś sobie na mój szacunek.
 dlga_kill_quest_failed:close_window|Postaram się lepiej następnym razem

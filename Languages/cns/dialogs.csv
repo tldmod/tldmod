@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|{playername}，我们看到一些你的人�
 dlga_raid_village_failed:close_window|我下次会做得更好的。
 dlga_lord_start:lord_target_lord_failed|我听说你没能完成我给你的任务。 {playername}，你真是令人失望。
 dlga_lord_target_lord_failed:close_window|我下次会做得更好的。
-dlga_lord_start:lord_generic_mission_completed.5|你的手下见证了你在战场上的勇猛，{playername}。你向他们展示了我们至高无上的力量。
+dlga_lord_start:lord_generic_mission_completed.5|士兵们见证了你在战斗中的英姿，{playername}。你让他们明白了我们更胜敌人一筹。
 dlga_lord_start:kill_quest_failed|我听说你没能完成我给你的任务。 {playername}，你真是令人失望。
 dlga_lord_start:lord_generic_mission_completed.6|你的手下见证了你在战场上的勇猛，{playername}。请让我向你表示敬意。
 dlga_kill_quest_failed:close_window|我会做得更好的。

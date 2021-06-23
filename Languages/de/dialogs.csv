@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|Wir sahen einige deiner Krieger aus dem Dorf
 dlga_raid_village_failed:close_window|Ich werde nicht noch einmal versagen.
 dlga_lord_start:lord_target_lord_failed|Ich hörte dass ihr versäumt habt, worum ich euch gebeten hatte. Enttäuschend, {playername}.
 dlga_lord_target_lord_failed:close_window|Ich werde nicht noch einmal versagen.
-dlga_lord_start:lord_generic_mission_completed.5|Deine Männer bezeugen deine Tapferkeit in der Schlacht, {playername}. DU hast ihnen gezeigt, dass wir siegen werden.
+dlga_lord_start:lord_generic_mission_completed.5|Deine Männer bezeugen deine Tapferkeit in der Schlacht, {playername}. Du hast ihnen gezeigt, dass wir siegen werden.
 dlga_lord_start:kill_quest_failed|Ich hörte dass du nicht geschafft hast, was ich dir aufgetragen habe. Enttäuschend, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Eure Männer bezeugen Eure Tapferkeit in der Schlacht, {playername}. Ihr habt Euch meine Achtung verdient.
 dlga_kill_quest_failed:close_window|Ich werde nicht noch einmal versagen.

@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Uruk-hai nyomkövetői sisak
 itm_isen_uruk_helm_f|Uruk-hai nyomkövetői sisak
 itm_uruk_pike_b|Mordori pika
 itm_uruk_falchion_a|Uruk falchion
-itm_uruk_falchion_b|Uruk falchion
-itm_uruk_spear|Mordori lándzsa
-itm_uruk_skull_spear|Uruk koponyás lándzsa
-itm_uruk_voulge|Uruk voulge
-itm_uruk_heavy_axe|Uruk nehéz balta
+; itm_uruk_falchion_b|Orc Great Scimitar
 itm_isengard_sword|Vasudvardi kard
 itm_isengard_axe|Vasudvardi balta
 itm_isengard_hammer|Vasudvardi csatakalapács
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Vas-folyami uruk pajzs
 itm_wood_club|Fabunkó
 itm_twohand_wood_club|Hatalmas fabunkó
 itm_bone_cudgel|Csonthusáng
-itm_skull_club|Koponyás bunkó
+; itm_orc_pick|Orc Pick
+; itm_orc_hammer|Evil Hammer
 itm_orc_club_b|Varglovas bunkó
 itm_orc_club_c|Tüskés ork bunkó
 itm_orc_club_d|Gonosz buzogány
 itm_orc_sledgehammer|Ork kőtörő-kalapács
 itm_orc_simple_spear|Ork lándzsa
 itm_orc_skull_spear|Ork koponyás lándzsa
-itm_orc_bill|Ork kampóbárd
-itm_orc_slasher|Ork szabdaló
+; itm_orc_bill|Orc Polearm
+; itm_orc_slasher|Orc Short Sword
 itm_orc_falchion|Ork falchion
 itm_orc_scimitar|Ork szablya
 itm_orc_sabre|Ork szablya
-itm_orc_machete|Ork bozótvágókés
+; itm_orc_battle_axe|Orc Battle Axe
 itm_orc_axe|Ork balta
-itm_orc_two_handed_axe|Ork kétkezes balta
+; itm_orc_two_handed_axe|Orc Great Axe
 itm_orc_throwing_axes|Ork dobófejsze
 itm_orc_bow|Ork íj
 itm_orc_shield_a|Ork pajzs
@@ -493,7 +490,8 @@ itm_mirkwood_leather|Erdőtünde bőrpáncélzat
 itm_mirkwood_pad|Zölderdei tűzdelt kabát
 itm_mirkwood_mail|Zölderdei láncing
 itm_mirkwood_scale|Zölderdei könnyű pikkelypáncél
-itm_mirkwood_heavy_scale|Bakacsinerdei levélpikkelypáncél
+; itm_mirkwood_heavy_scale|Greenwood Leafscale
+; itm_mirkwood_sword|Woodelf Sword
 itm_mirkwood_great_spear|Zölderdei nagy lándzsa
 itm_mirkwood_war_spear|Zölderdei csatalándzsa
 itm_mirkwood_short_spear|Erdőtünde lándzsa
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|Törp csatabalta
 itm_dwarf_great_axe|Törp nagy balta
 itm_dwarf_great_mattock|Törp nagy baltacsákány
 itm_dwarf_great_pick|Törp nagy csákány
-itm_dwarf_war_pick|Törpe csatabalta
+; itm_dwarf_throwing_axe_reward|Erebor Flying Axes
 itm_dwarf_mattock|Törp baltacsákány
 itm_dwarf_hand_axe|Törp rövid balta
-itm_dwarf_throwing_axe|Törp dobófejsze
+; itm_dwarf_throwing_axe|Dwarf Throwing Axes
 itm_dwarf_spear|Törp lándzsa
 itm_dwarf_spear_b|Törp pika
 itm_dwarf_spear_c|Törp hosszúbalta
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Mester ostora
 itm_horn_gondor_reward|Gondor kürtje
 itm_harad_totem_reward|Haradi totem
 itm_elven_amulet_reward|Tünde amulett
+
 itm_torque_reward|Gonosz medál
 itm_orc_brew|Ork főzet
-itm_rohan_saddle|Thengel nyerge
+; itm_rohan_saddle|Saddle
 itm_mearas_reward|Mearh paripa
 itm_shield_of_tuor|Tuor pajzsa
 itm_riv_armor_reward|Völgyzugolyi díszes páncélzat
@@ -785,7 +784,7 @@ itm_khamul_helm|Khamûl sisakja
 itm_black_arrows_reward|Fekete nyílvesszők
 itm_leather_boots_reward|Vadász csizmák
 itm_rohan_armor_th|Rohani nemesi páncélzat
-itm_wilderness_amulet|Vadonsági amulett
+; itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|Rabszolga láncai
 ; itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|Lórieni királyi páncélzat

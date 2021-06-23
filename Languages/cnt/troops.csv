@@ -124,12 +124,12 @@ trp_c4_rhun_veteran_swift_horseman|盧 恩 熟 練 迅 騎 兵
 trp_c4_rhun_veteran_swift_horseman_pl|盧 恩 熟 練 迅 騎 兵
 trp_c5_rhun_falcon_horseman|獵 鷹 騎 兵
 trp_c5_rhun_falcon_horseman_pl|獵 鷹 騎 兵
-; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
-; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i2_rhun_tribal_warrior|盧 恩 部 落 步 兵
+trp_i2_rhun_tribal_warrior_pl|盧 恩 部 落 步 兵
 trp_i3_rhun_tribal_infantry|盧 恩 部 落 戰 士 
 trp_i3_rhun_tribal_infantry_pl|盧 恩 部 落 戰 士
-; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
-; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
+trp_i4_rhun_vet_infantry|盧 恩 熟 練 戰 士
+trp_i4_rhun_vet_infantry_pl|盧 恩 熟 練 戰 士
 trp_i5_rhun_ox_warrior|牛 戰 士
 trp_i5_rhun_ox_warrior_pl|牛 戰 士
 trp_c2_rhun_horseman|盧 恩 騎 手
@@ -672,8 +672,8 @@ trp_armoured_troll|披 甲 食 人 妖
 trp_armoured_troll_pl|披 甲 食 人 妖
 trp_olog_hai|魔 多 歐 羅 海
 trp_olog_hai_pl|魔 多 歐 羅 海
-trp_ent|樹 人 
-trp_ent_pl|樹 人 
+trp_ent_old|樹 人 
+trp_ent_old_pl|樹 人 
 trp_i1_guldur_orc_snaga|多爾哥多半獸人奴隸
 trp_i1_guldur_orc_snaga_pl|多爾哥多半獸人奴隸
 trp_a2_guldur_orc_tracker|多 爾 哥 多 半 獸 人 追 蹤 者
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|剛 達 巴 座 狼 騎 手
 trp_c4_gunda_warg_rider_pl|剛 達 巴 座 狼 騎 手 
 trp_c5_gunda_clan_rider|哥 布 林 北 方 氏 族 騎 手 
 trp_c5_gunda_clan_rider_pl|哥 布 林 北 方 氏 族 騎 手
+trp_i5_gunda_orc_champion|剛 達 巴 半 獸 人 冠 軍
+trp_i5_gunda_orc_champion_pl|剛 達 巴 半 獸 人 冠 軍
 trp_mountain_goblin2|山 地 哥 布 林 
 trp_mountain_goblin2_pl|山 地 哥 布 林 
 trp_tribal_orc2|部 落 半 獸 人
 trp_tribal_orc2_pl|部 落 半 獸 人 
-trp_tribal_orc_warrior2|部 落 半 獸 人 戰 士
-trp_tribal_orc_warrior2_pl|部 落 半 獸 人 戰 士
-trp_i5_gunda_orc_champion|剛 達 巴 半 獸 人 冠 軍
-trp_i5_gunda_orc_champion_pl|剛 達 巴 半 獸 人 冠 軍
+trp_i5_gunda_orc_champion2|剛 達 巴 半 獸 人 冠 軍
+trp_i5_gunda_orc_champion2_pl|剛 達 巴 半 獸 人 冠 軍
 trp_i2_mordor_num_renegade|黑 努 美 諾 爾 叛 徒
 trp_i2_mordor_num_renegade_pl|黑 努 美 諾 爾 叛 徒
 trp_i3_mordor_num_warrior|黑 努 美 諾 爾 戰 士 
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|愛 殺 價 的 普 敘 特
 trp_smith_khand_ac_pl|鍛 冶 匠 
 trp_smith_umbar_ac|鑄 造 師 弗 尼
 trp_smith_umbar_ac_pl|鍛 冶 匠 
-trp_barman_mtirith|酒 館 老 闆
-trp_barman_mtirith_pl|堡 壘
-trp_barman_pelargir|酒 館 老 闆
-trp_barman_pelargir_pl|城 堡 
-trp_barman_linhir|酒 館 老 闆
-trp_barman_linhir_pl|城 堡 
-trp_barman_dolamroth|酒 館 老 闆
-trp_barman_dolamroth_pl|城 堡 
-trp_barman_edhellond|酒 館 老 闆
-trp_barman_edhellond_pl|城 堡 
-trp_barman_lossarnach|酒 館 老 闆
-trp_barman_lossarnach_pl|城 堡 
-trp_barman_tarnost|酒 館 老 闆
-trp_barman_tarnost_pl|城 堡 
-trp_barman_erech|酒 館 老 闆
-trp_barman_erech_pl|城 堡 
-trp_barman_pinnath|酒 館 老 闆
-trp_barman_pinnath_pl|城 堡 
-trp_barman_hannun|酒 館 老 闆
-trp_barman_hannun_pl|秘 密 洞 穴
-trp_barman_calembel|酒 館 老 闆
-trp_barman_calembel_pl|城 堡 
-trp_barman_edoras|酒 館 老 闆
-trp_barman_edoras_pl|金 殿 美 杜 塞 爾 德
-trp_barman_aldburg|酒 館 老 闆
-trp_barman_aldburg_pl|城 堡 
-trp_barman_hornburg|酒 館 老 闆
-trp_barman_hornburg_pl|領 主 大 殿
+trp_smith_moria_ac|鑄 造 者 布 加 克
+trp_smith_moria_ac_pl|鍛 冶 匠 
+trp_smith_dale_ac|火 掌 艾 德
+trp_smith_dale_ac_pl|鍛 冶 匠 
+trp_smith_beorn_ac|貝 隆 那 夫 製 斧 者
+trp_smith_beorn_ac_pl|鍛 冶 匠 
+trp_smith_woodelf_west_camp|迪 霍 拉 斯
+trp_smith_woodelf_west_camp_pl|鍛 冶 匠 
+trp_smith_woodmen|貝 隆 那 夫 製 斧 者
+trp_smith_woodmen_pl|鍛 冶 匠 
+trp_smith_beorn_v|貝 隆 那 夫 製 斧 者
+trp_smith_beorn_v_pl|鍛 冶 匠 
+trp_smith_troll_cave|鑄 造 者 布 加 克
+trp_smith_troll_cave_pl|鍛 冶 匠 
+trp_smith_dg_outpost|謝 札 杜 巴
+trp_smith_dg_outpost_pl|鍛 冶 匠 
+trp_smith_main_rhun|巴 尼 米 巴 尼 克
+trp_smith_main_rhun_pl|臨 時 鍛 冶 匠 
+trp_smith_south_rhun|巴 尼 米 巴 尼 克
+trp_smith_south_rhun_pl|臨 時 鍛 冶 匠 
+trp_smith_gundabad_ne|賣 雪 者 波 魯 格
+trp_smith_gundabad_ne_pl|鍛 冶 匠 
+trp_smith_gundabad_nw|賣 雪 者 波 魯 格
+trp_smith_gundabad_nw_pl|鍛 冶 匠 
+trp_smith_gundabad_s|賣 雪 者 波 魯 格
+trp_smith_gundabad_s_pl|鍛 冶 匠 
+trp_smith_gundabad_m|賣 雪 者 波 魯 格
+trp_smith_gundabad_m_pl|鍛 冶 匠 
 trp_barman_eastemnet|酒 館 老 闆
 trp_barman_eastemnet_pl|城 堡 
 trp_barman_westfold|酒 館 老 闆
@@ -1222,30 +1222,30 @@ trp_barman_morannon|酒 館 老 闆
 trp_barman_morannon_pl|領 隊 洞 窟
 trp_barman_mmorgul|酒 館 老 闆
 trp_barman_mmorgul_pl|塔
-trp_barman_cungol|酒 館 老 闆
-trp_barman_cungol_pl|城 堡 
-trp_barman_isengard|酒 館 老 闆
-trp_barman_isengard_pl|歐 散 克 塔
-trp_barman_cgaladhon|酒 館 老 闆
-trp_barman_cgaladhon_pl|樹 城
-trp_barman_cdolen|酒 館 老 闆
-trp_barman_cdolen_pl|樹 城
-trp_barman_camroth|酒 館 老 闆
-trp_barman_camroth_pl|樹 城
-trp_barman_thalls|酒 館 老 闆
-trp_barman_thalls_pl|王 座 大 廳
-trp_barman_beorn|酒 館 老 闆
-; trp_barman_beorn_pl|Beorn's Hall
-trp_barman_moria|酒 館 老 闆
-trp_barman_moria_pl|首 領 的 房 間
-trp_barman_dale|酒 館 老 闆
-trp_barman_dale_pl|城 堡 
-trp_barman_esgaroth|酒 館 老 闆
-trp_barman_esgaroth_pl|大 殿 
-trp_barman_erebor|酒 館 老 闆
-trp_barman_erebor_pl|索 爾 大 殿
-trp_barman_dolguldur|酒 館 老 闆
-trp_barman_dolguldur_pl|城 堡 
+trp_merchant_main_rhun|補 給 官
+trp_merchant_main_rhun_pl|營 地 儲 備
+trp_merchant_dg_outpost|補 給 官
+trp_merchant_dg_outpost_pl|馬 廄 與 倉 庫
+trp_merchant_woodelf_west_camp|補 給 官
+trp_merchant_woodelf_west_camp_pl|精 靈 補 給 站
+trp_merchant_gundabad_m|補 給 官
+trp_merchant_gundabad_m_pl|營 地 儲 備
+trp_merchant_gundabad_s|補 給 官
+trp_merchant_gundabad_s_pl|營 地 儲 備
+trp_merchant_gundabad_nw|補 給 官
+trp_merchant_gundabad_nw_pl|營 地 儲 備
+trp_merchant_gundabad_ne|補 給 官
+trp_merchant_gundabad_ne_pl|營 地 儲 備
+trp_merchant_troll_cave|補 給 官
+trp_merchant_troll_cave_pl|座 狼 坑 和 補 給 站
+trp_merchant_beorn_v|補 給 官
+trp_merchant_beorn_v_pl|馬 廄 與 倉 庫
+trp_merchant_orc_sentry|補 給 官
+trp_merchant_orc_sentry_pl|營 地 儲 備
+trp_merchant_candros|補 給 官
+trp_merchant_candros_pl|馬 廄 與 倉 庫
+trp_merchant_hannun|補 給 官
+trp_merchant_hannun_pl|遊 俠 補 給 站
 trp_merchant_mtirith|補 給 官
 trp_merchant_mtirith_pl|馬 廄 與 倉 庫
 trp_merchant_pelargir|補 給 官
@@ -1434,42 +1434,42 @@ trp_elder_erebor|孤 山 公 會 長
 trp_elder_erebor_pl|大 殿
 trp_elder_dolguldur|多 爾 哥 多 首 領 
 trp_elder_dolguldur_pl|黑 堡 
-trp_elder_gondor_ac|營 長 
-trp_elder_gondor_ac_pl|營 地 
-trp_elder_rohan_ac|營 長 
-trp_elder_rohan_ac_pl|營 地 
-trp_elder_mordor_ac|營 長 
-trp_elder_mordor_ac_pl|營 地 
-trp_elder_isengard_ac|營 長 
-trp_elder_isengard_ac_pl|營 地 
-trp_elder_lorien_ac|營 長 
-trp_elder_lorien_ac_pl|營 地 
-trp_elder_woodelf_ac|營 長 
-trp_elder_woodelf_ac_pl|營 地 
-trp_elder_imladris_ac|營 長 
-trp_elder_imladris_ac_pl|營 地 
-trp_elder_beorn_ac|營 長 
-trp_elder_beorn_ac_pl|營 地 
-trp_elder_harad_ac|哈 拉 德 營 長
-trp_elder_harad_ac_pl|營 地 
-trp_elder_rhun_ac|盧 恩 營 長
-trp_elder_rhun_ac_pl|營 地 
-trp_elder_khand_ac|侃 德 營 長
-trp_elder_khand_ac_pl|營 地 
-trp_elder_dunland_ac|登 蘭 德 營 長
-trp_elder_dunland_ac_pl|營 地 
-trp_elder_umbar_ac|昂 巴 軍 需 官 
-trp_elder_umbar_ac_pl|營 地 
-trp_elder_moria_ac|摩 瑞 亞 營 長
-trp_elder_moria_ac_pl|營 地 
-trp_elder_gunda_ac|剛 達 巴 營 長
-trp_elder_gunda_ac_pl|營 地 
-trp_elder_dale_ac|河 谷 鎮 軍 需 官
-trp_elder_dale_ac_pl|營 地 
-trp_elder_guldur_ac|多 爾 哥 多 營 長
-trp_elder_guldur_ac_pl|營 地 
-trp_elder_dwarf_ac|矮 人 營 長
-trp_elder_dwarf_ac_pl|營 地 
+trp_elder_wosgiliath|營 長 
+trp_elder_wosgiliath_pl|營 地 
+trp_elder_oscamp|營 長 
+trp_elder_oscamp_pl|營 地 
+trp_elder_eosgiliath|營 長 
+trp_elder_eosgiliath_pl|營 地 
+trp_elder_uoutpost|營 長 
+trp_elder_uoutpost_pl|營 地 
+trp_elder_uhcamp|營 長 
+trp_elder_uhcamp_pl|營 地 
+trp_elder_urcamp|營 長 
+trp_elder_urcamp_pl|營 地 
+trp_elder_woodelf_camp|長老
+trp_elder_woodelf_camp_pl|營 地 
+trp_elder_woodelf_west_camp|長老
+trp_elder_woodelf_west_camp_pl|營 地 
+trp_elder_beorn_v|比 翁 長 老
+trp_elder_beorn_v_pl|村 莊
+trp_elder_troll_cave|洞 穴 首 領
+trp_elder_troll_cave_pl|洞 穴
+trp_elder_dg_outpost|盧 恩 營 長
+trp_elder_dg_outpost_pl|營 地 
+trp_elder_rhun_sc|盧 恩 營 長
+trp_elder_rhun_sc_pl|營 地 
+trp_elder_rhun_nc|盧 恩 營 長
+trp_elder_rhun_nc_pl|營 地 
+trp_elder_gunda_ne|半 獸 人 長 老
+trp_elder_gunda_ne_pl|營 地 
+trp_elder_gunda_nw|半 獸 人 長 老
+trp_elder_gunda_nw_pl|營 地 
+trp_elder_gunda_s|半 獸 人 長 老
+trp_elder_gunda_s_pl|營 地 
+trp_elder_gunda_m|半 獸 人 長 老
+trp_elder_gunda_m_pl|營 地 
+trp_elder_ironhill|營 長
+trp_elder_ironhill_pl|營 地 
 trp_village_1_elder|鞭 之 主 人
 trp_village_1_elder_pl|洞 穴
 trp_tutorial_chest_1|近 戰 武 器 箱
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|洞 穴 食 人 妖
 trp_troll_placeholder_6_pl|洞 穴 食 人 妖
 trp_wild_troll|野 生 洞 穴 食 人 妖
 trp_wild_troll_pl|野 生 洞 穴 食 人 妖
-trp_ent2|樹 人 
-trp_ent2_pl|樹 人 
+trp_ent|樹 人 
+trp_ent_pl|樹 人 
 trp_mountain_goblin|山 地 哥 布 林 
 trp_mountain_goblin_pl|山 地 哥 布 林 
 trp_tribal_orc|部 落 半 獸 人

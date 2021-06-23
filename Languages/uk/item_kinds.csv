@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Урук-хайський шолом слідопита
 itm_isen_uruk_helm_f|Урук-хайський шолом слідопита
 itm_uruk_pike_b|Мордорська піка
 itm_uruk_falchion_a|Урукський фальшіон
-itm_uruk_falchion_b|Урукський фальшіон
-itm_uruk_spear|Мордорський спис
-itm_uruk_skull_spear|Урукський спис з черепом
-itm_uruk_voulge|Урукський вульж
-itm_uruk_heavy_axe|Урукська важка сокира
+itm_uruk_falchion_b|Великий Оркський Ятаган
 itm_isengard_sword|Ізенґардський меч
 itm_isengard_axe|Ізенґардська сокира
 itm_isengard_hammer|Ізенґардський молот
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Ізенґардський урукський щит
 itm_wood_club|Дерев'яна дубина
 itm_twohand_wood_club|Велика дерев'яна дубина
 itm_bone_cudgel|Кістяна дубина
-itm_skull_club|Дубина з черепом
+itm_orc_pick|Оркське Кайло
+itm_orc_hammer|Молот Зла
 itm_orc_club_b|Дубина вовчого вершника
 itm_orc_club_c|Шпичаста оркська дубина
 itm_orc_club_d|Зловісна булава
 itm_orc_sledgehammer|Оркська кувалда
 itm_orc_simple_spear|Оркський спис
 itm_orc_skull_spear|Оркський спис з черепом
-itm_orc_bill|Оркська глефа
-itm_orc_slasher|Оркський тесак
+itm_orc_bill|Оркський Держак
+itm_orc_slasher|Оркський Короткий меч
 itm_orc_falchion|Оркський фальшіон
 itm_orc_scimitar|Оркський ятаган
 itm_orc_sabre|Оркська шабля
-itm_orc_machete|Оркський мачете
+itm_orc_battle_axe|Оркська бойова сокира
 itm_orc_axe|Оркська сокира
-itm_orc_two_handed_axe|Оркська дворучна сокира
+itm_orc_two_handed_axe|Велика Оркська сокира
 itm_orc_throwing_axes|Оркські метальні сокири
 itm_orc_bow|Оркський лук
 itm_orc_shield_a|Оркський щит
@@ -493,7 +490,8 @@ itm_mirkwood_leather|шкіряна броня лісових Ельфів
 itm_mirkwood_pad|Стьобане пальто Темнолісся
 itm_mirkwood_mail|Кольчуга Темнолісся
 itm_mirkwood_scale|Легка луската броня Темнолісся
-itm_mirkwood_heavy_scale|Лускатий обладунок Лихолісся
+itm_mirkwood_heavy_scale|Лускатий Обладунок Зеленолісся
+itm_mirkwood_sword|Меч Лісових ельфів
 itm_mirkwood_great_spear|Великий спис Темнолісся
 itm_mirkwood_war_spear|Бойовий спис Темнолісся
 itm_mirkwood_short_spear|Спис лісових ельфів 
@@ -602,11 +600,11 @@ itm_rhun_armor_p|Рунійська броня знатного воїна
 itm_rhun_armor_k|Рунійська броня знатного воїна
 itm_rhun_helm_barbed|Рунійський шолом з шипами
 itm_rhun_helm_horde|Рунійський шолом орди
-; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot|Рунійський Шолом Казанок
 itm_rhun_helm_round|Рунійський круглий шолом
 itm_rhun_helm_leather|Рунійський шкіряний шолом
 itm_rhun_helm_chieftain|Рунійський шолом вождя
-; itm_rhun_warpick|Rhun War Pick
+itm_rhun_warpick|Рунійське Бойове Кайло
 itm_rhun_greataxe|Рунійська велика сокира
 itm_rhun_battleaxe|Рунійська бойова сокира
 itm_rhun_falchion|Дикунський фальшіон
@@ -615,7 +613,7 @@ itm_rhun_greatfalchion|Дикунський великий фальшіон
 itm_rhun_greatsword|Дикунський великий меч
 itm_rhun_shortsword|Дикунський короткий меч
 itm_rhun_sword|Дикунський меч
-; itm_rhun_mangler|Rhun Mangler
+itm_rhun_mangler|Рунійський Кинджал
 itm_dale_light_a|Дейльская куртка ополченця
 itm_dale_light_b|Північний легкий пластинчастий обладунок
 itm_dale_med_a|Північний важкий пластинчастий обладунок
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|Гном'яча бойова сокира
 itm_dwarf_great_axe|Гном'яча велика сокира
 itm_dwarf_great_mattock|Гном'яча велика мотика
 itm_dwarf_great_pick|Гном'яче велике кайло
-itm_dwarf_war_pick|Гном'яче бойове кайло
+itm_dwarf_throwing_axe_reward|Ереборські метальні сокири
 itm_dwarf_mattock|Гном'яча мотика
 itm_dwarf_hand_axe|Гномів топірець
-itm_dwarf_throwing_axe|Гномові метальні сокири
+itm_dwarf_throwing_axe|Метальні сокири гномів
 itm_dwarf_spear|Гном'ячий спис
 itm_dwarf_spear_b|Гном'яча піка
 itm_dwarf_spear_c|Гном'яча довга сокира
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Батіг Пана
 itm_horn_gondor_reward|Ріг Ґондору
 itm_harad_totem_reward|Харадський тотем
 itm_elven_amulet_reward|Ельфійський амулет
+
 itm_torque_reward|Намисто зла
 itm_orc_brew|Оркське пійло
-itm_rohan_saddle|Сідло Тенгеля
+itm_rohan_saddle|Сідло
 itm_mearas_reward|Жеребець Меарас
 itm_shield_of_tuor|Щит Туора
 itm_riv_armor_reward|Рівендільска прикрашена броня
@@ -763,8 +762,8 @@ itm_book_of_moria|Книга Мазбурла
 itm_ring_a_reward|Тулькарісіль
 itm_ring_b_reward|Фінварісіль
 itm_dale_bow_reward|Лук Барда
-; itm_tome_of_knowledge|Tome of Arcane Knowledge
-; itm_orc_idol_reward|Idol of the First Orc
+itm_tome_of_knowledge|Фоліант таємних знань
+itm_orc_idol_reward|Ідол першого орка
 itm_crebain_reward|Кребен
 itm_miruvor_reward|Фляжка Мірувору
 itm_wheeled_cage|Гігантська колісна клітка
@@ -785,9 +784,9 @@ itm_khamul_helm|Шолом Кгамулу
 itm_black_arrows_reward|Чорні стріли
 itm_leather_boots_reward|Мисливські чоботи
 itm_rohan_armor_th|Роганська королівська броня
-itm_wilderness_amulet|Амулет пустелі
+itm_wilderness_cowl|Капюшон мисливця
 itm_prisoner_coll_chain|Кайдани
-; itm_witchking_helmet|Sorcerer's Mask
+itm_witchking_helmet|Маска Чародія
 itm_lorien_royal_armor|Лоріенська королівська броня
 itm_feet_chains|Кайдани на ноги
 itm_feet_chains_dwarf|Кайдани на ноги

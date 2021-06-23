@@ -1366,7 +1366,7 @@ str_rohan_rumor_3|Não há cavalos melhores que os de Rohan. Mesmo os Elfos adqu
 str_rohan_rumor_4|Se você pode curar homens, por favor trate meus cavalos com mesmo cuidado se forem feridos.
 str_rohan_rumor_5|Traga me oito Cavalos, ele disse... depois dos sete que ele pediu ontem. Te faz pensar.
 str_rohan_rumor_6|Gondor prefere cavalos robustos. Nossos cavaleiros gostam de velocidade. Os Elfos pegam só os melhores. E nossos inimigos os roubam!
-str_rohan_rumor_7|Eu vi raças de égua do deserto e cavalo Variag. Cavalos de Rohan são claramente superiores mas necessitam de um cavaleiro mais experiente para lidar com eles.
+; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superior but require a more experienced rider to handle.
 str_rohan_rumor_8|Wargs são mais lentos que cavalos mas podem manobrar mais rápido. Eles são também um tanto frágeis comparados a um cavalo de guerra de boa raça.
 str_rohan_rumor_9|Exércitos marcham em Rohan com piques e lanças contra nossos bons cavaleiros. O traidor Saruman vai desimar toda a floresta de Fangorn equipando seus exércitos antes que a guerra acabe.
 str_rohan_rumor_10|Ser os melhores cavaleiros do reino começa com criar os melhores cavalos.
@@ -1926,7 +1926,7 @@ str_trait_title_butcher|Açougueiro.
 str_trait_desc_butcher|A experiência aprimorou sua habilidade de extrair mais carne da carne de seus inimigos. Você ganha um quilo extra de carne toda vez que abate um de seus prisioneiros por carne. Você também recebe mais carne humana após cada batalha.
 str_trait_title_well_travelled|Bem viajado
 str_trait_desc_well_travelled|Nas estradas pavimentadas de pedra e caminhos cobertos de musgo, nas montanhas mais altas e nos vales mais profundos, você descobriu lugares escondidos e viu maravilhas há muito esquecidas. Com suas experiências, aprendeu a identificar inimigos antes que eles o vissem, e a rota mais fácil para suas tropas "
-; str_trait_title_bear_shape|Skinchanger
+str_trait_title_bear_shape|Transformador.
 ; str_trait_desc_bear_shape|It is said that men of Beorn's line have the ability to take bear form. Through your kinship with bears you have discovered that you too have that gift.
 str_wound_head|um golpe forte na cabeça
 str_wound_chest|algumas costelas quebradas

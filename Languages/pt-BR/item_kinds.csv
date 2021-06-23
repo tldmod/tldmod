@@ -21,7 +21,7 @@ itm_metal_scraps_medium|Sucatas de metal utilizáveis
 itm_metal_scraps_good|Sucatas de metal de boa qualidade
 itm_oliphant|Olifante
 itm_sumpter_horse|Cavalo de Carga
-itm_saddle_horse|Cavalo de Cela
+itm_saddle_horse|Cavalo de Sela
 itm_steppe_horse|Cavalo da Estepe
 itm_courser|Corcel
 itm_hunter|Caçador
@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Elmo Uruk-Hai Rastreador
 itm_isen_uruk_helm_f|Elmo Uruk-Hai Rastreador
 itm_uruk_pike_b|Pique de Mordor
 itm_uruk_falchion_a|Cimitarra Uruk
-itm_uruk_falchion_b|Cimitarra Uruk 
-itm_uruk_spear|Lança de Mordor
-itm_uruk_skull_spear|Lança Uruk de Caveira
-itm_uruk_voulge|Glaive Uruk
-itm_uruk_heavy_axe|Machado Uruk Pesado
+itm_uruk_falchion_b|Grande Cimitarra Orc
 itm_isengard_sword|Espada de Isengard
 itm_isengard_axe|Machado de Isengard
 itm_isengard_hammer|Martelo de Isengard
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Escudo Uruk de Isengard
 itm_wood_club|Porrete de Madeira
 itm_twohand_wood_club|Porrete Grande de Madeira
 itm_bone_cudgel|Clava de Osso
-itm_skull_club|Porrete de Caveira
+itm_orc_pick|Picareta Orc
+itm_orc_hammer|Martelo Maligno
 itm_orc_club_b|Porrete do Cavaleiro de Warg
 itm_orc_club_c|Porrete Orc Espetado
 itm_orc_club_d|Maça Maligna
 itm_orc_sledgehammer|Marreta Orc
 itm_orc_simple_spear|Lança Orc
 itm_orc_skull_spear|Lança Orc de Caveira
-itm_orc_bill|Bill de Orc
-itm_orc_slasher|Cortadeira Orc
+itm_orc_bill|Arma de Haste Orc
+itm_orc_slasher|Espada Curta Orc
 itm_orc_falchion|Cimitarra Orc
 itm_orc_scimitar|Cimitarra Orc
 itm_orc_sabre|Sabre Orc
-itm_orc_machete|Facão Orc
+itm_orc_battle_axe|Machado de Batalha Orc
 itm_orc_axe|Machado Orc
-itm_orc_two_handed_axe|Machado Orc de Duas Mãos
+itm_orc_two_handed_axe|Machado Grande Orc
 itm_orc_throwing_axes|Machados de Arremesso Orc
 itm_orc_bow|Arco Orc
 itm_orc_shield_a|Escudo Orc
@@ -493,7 +490,8 @@ itm_mirkwood_leather|Armadura de Couro de Elfo Silvestre
 itm_mirkwood_pad|Sobretudo Acolchoado da Floresta Verde
 itm_mirkwood_mail|Cota de Malha da Floresta Verde
 itm_mirkwood_scale|Cota Leve da Floresta Verde
-itm_mirkwood_heavy_scale|Cota de Folha da Floresta das Trevas
+itm_mirkwood_heavy_scale|Cota de Folha da Floresta Verde
+itm_mirkwood_sword|Espada de Elfo Silvestre
 itm_mirkwood_great_spear|Lança Grande da Floresta Verde
 itm_mirkwood_war_spear|Lança de Guerra da Floresta Verde
 itm_mirkwood_short_spear|Lança de Elfo Silvestre
@@ -615,7 +613,7 @@ itm_rhun_greatfalchion|Cimitarra Grande Selvagem
 itm_rhun_greatsword|Espada Grande Selvagem
 itm_rhun_shortsword|Espada Curta Selvagem
 itm_rhun_sword|Espada Selvagem
-; itm_rhun_mangler|Rhun Mangler
+itm_rhun_mangler|Mutilador Rhun
 itm_dale_light_a|Jaqueta de Milícia de Valle
 itm_dale_light_b|Lamenar Leve dos Homens do Norte
 itm_dale_med_a|Lamelar Pesado dos Homens do Norte
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|Machado de Batalha Anão
 itm_dwarf_great_axe|Machado Grande Anão
 itm_dwarf_great_mattock|Picareta Grande de Anão
 itm_dwarf_great_pick|Picareta Grande de Anão
-itm_dwarf_war_pick|Picareta de Guerra de Anão
+itm_dwarf_throwing_axe_reward|Machados de Arremesso de Erebor
 itm_dwarf_mattock|Picareta de Anão
 itm_dwarf_hand_axe|Machado Curto de Anão
-itm_dwarf_throwing_axe|Machado de Arremesso de Anão
+itm_dwarf_throwing_axe|Machados de Arremesso de Anão
 itm_dwarf_spear|Lança de Anão
 itm_dwarf_spear_b|Pique de Anão
 itm_dwarf_spear_c|Machado Longo Anão
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Chicote de Mestre
 itm_horn_gondor_reward|Chifre de Gondor
 itm_harad_totem_reward|Totem de Harad
 itm_elven_amulet_reward|Amuleto Élfico 
+
 itm_torque_reward|Torque Maligno
 itm_orc_brew|Bebida Orc
-itm_rohan_saddle|Sela de Thengel
+itm_rohan_saddle|Sela
 itm_mearas_reward|Garanhão de Mearh
 itm_shield_of_tuor|Escudo de Tuor
 itm_riv_armor_reward|Armadura Decorada de Valfenda
@@ -785,7 +784,7 @@ itm_khamul_helm|Elmo de Khamul
 itm_black_arrows_reward|Flechas Negras
 itm_leather_boots_reward|Botas de Caçador
 itm_rohan_armor_th|Armadura Real de Rohan
-itm_wilderness_amulet|Amuleto Silvestre
+itm_wilderness_cowl|Capuz de Caçador
 itm_prisoner_coll_chain|Correntes de Prisioneiro
 itm_witchking_helmet|Máscara do Feiticeiro
 itm_lorien_royal_armor|Armadura Real de Lorien

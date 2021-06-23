@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Урук-хайский шлем следопыта
 itm_isen_uruk_helm_f|Урук-хайский шлем следопыта
 itm_uruk_pike_b|Мордорская пика
 itm_uruk_falchion_a|Урукский фальшион
-itm_uruk_falchion_b|Урукский фальшион
-itm_uruk_spear|Мордорское копьё
-itm_uruk_skull_spear|Урукское копьё с черепом
-itm_uruk_voulge|Урукский вуж
-itm_uruk_heavy_axe|Урукский тяжёлый топор
+itm_uruk_falchion_b|Большой орочий ятаган
 itm_isengard_sword|Изенгардский меч
 itm_isengard_axe|Изенгардский топор
 itm_isengard_hammer|Изенгардский молот
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Изенгардский урукский щит
 itm_wood_club|Деревянная дубина
 itm_twohand_wood_club|Большая деревянная дубина
 itm_bone_cudgel|Костяная дубина
-itm_skull_club|Дубина с черепом
+itm_orc_pick|Орочья кирка
+itm_orc_hammer|Молот Зла
 itm_orc_club_b|Дубина волчьего всадника
 itm_orc_club_c|Шипастая орочья дубина
 itm_orc_club_d|Зловещая булава
 itm_orc_sledgehammer|Орочья кувалда
 itm_orc_simple_spear|Орочье копьё
 itm_orc_skull_spear|Орочье копьё с черепом
-itm_orc_bill|Орочья глефа
-itm_orc_slasher|Орочий тесак
+itm_orc_bill|Орочье древко
+itm_orc_slasher|Орочий короткий меч
 itm_orc_falchion|Орочий фальшион
 itm_orc_scimitar|Орочий ятаган
 itm_orc_sabre|Орочья сабля
-itm_orc_machete|Орочье мачете
+itm_orc_battle_axe|Боевой топор орков
 itm_orc_axe|Орочий топор
-itm_orc_two_handed_axe|Орочий двуручный топор
+itm_orc_two_handed_axe|Большой орочий топор
 itm_orc_throwing_axes|Орочьи метательные топоры
 itm_orc_bow|Орочий лук
 itm_orc_shield_a|Орочий щит
@@ -494,6 +491,7 @@ itm_mirkwood_pad|Зеленолесская стёганая куртка
 itm_mirkwood_mail|Зеленолесская Кольчуга
 itm_mirkwood_scale|Зеленолесская Лёгкая Чешуйчатая Броня
 itm_mirkwood_heavy_scale|Чешуйчатый Доспех Зеленолесья
+itm_mirkwood_sword|Меч Лесных эльфов
 itm_mirkwood_great_spear|Зеленолесское большое копьё
 itm_mirkwood_war_spear|Зеленолесское боевое копьё
 itm_mirkwood_short_spear|Копьё Лесных эльфов
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|Гномий боевой топор
 itm_dwarf_great_axe|Гномий большой топор
 itm_dwarf_great_mattock|Гномья большая мотыга
 itm_dwarf_great_pick|Гномья большая кирка
-itm_dwarf_war_pick|Гномья боевая кирка
+itm_dwarf_throwing_axe_reward|Эреборские метательные топоры 
 itm_dwarf_mattock|Гномья мотыга
 itm_dwarf_hand_axe|Гномий топорик
-itm_dwarf_throwing_axe|Гномий метательный топор
+itm_dwarf_throwing_axe|Метательные топоры гномов
 itm_dwarf_spear|Гномье копьё
 itm_dwarf_spear_b|Гномья пика
 itm_dwarf_spear_c|Гномий длинный топор
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Кнут Господина
 itm_horn_gondor_reward|Рог Гондора
 itm_harad_totem_reward|Харадский тотем
 itm_elven_amulet_reward|Эльфийский амулет
+
 itm_torque_reward|Ожерелье зла
 itm_orc_brew|Орочье пойло
-itm_rohan_saddle|Седло Тенгеля
+itm_rohan_saddle|Седло
 itm_mearas_reward|Жеребец-меар
 itm_shield_of_tuor|Щит Туора
 itm_riv_armor_reward|Ривендельская украшенная броня
@@ -785,7 +784,7 @@ itm_khamul_helm|Шлем Хамула
 itm_black_arrows_reward|Черные Стрелы
 itm_leather_boots_reward|Охотничьи Сапоги
 itm_rohan_armor_th|Роханская королевская броня
-itm_wilderness_amulet|Амулет Древних Троп
+itm_wilderness_cowl|Капюшон охотника
 itm_prisoner_coll_chain|Кандалы
 itm_witchking_helmet|Маска чародея
 itm_lorien_royal_armor|Лориэнская королевская броня

@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|Viděli jsme několik tvých mužů utíkat 
 dlga_raid_village_failed:close_window|Příště to udělám lépe.
 dlga_lord_start:lord_target_lord_failed|Doslechl jsem se, že jsi nedokázal udělat to, o co jsem tě žádal. To je zklamání, {playername}.
 dlga_lord_target_lord_failed:close_window|Příště to udělám líp.
-dlga_lord_start:lord_generic_mission_completed.5|Tví muži byli svědky tvé odvahy v bitvě, {playername}. Ukázal jsi jim, že jsme nadřazená síla. 
+; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.
 dlga_lord_start:kill_quest_failed|Doslechl jsem se, že jsi nedokázal udělat to, o co jsem tě žádal. To je zklamání, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Tví muži byli svědky tvé odvahy v bitvě, {playername}. Získal jsi můj respekt.
 dlga_kill_quest_failed:close_window|Příště to udělám lépe.

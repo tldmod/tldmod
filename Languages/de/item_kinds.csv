@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Späherhelm der Uruk-hai
 itm_isen_uruk_helm_f|Späherhelm der Uruk-hai
 itm_uruk_pike_b|Mordor-Langspeer
 itm_uruk_falchion_a|Uruk-Falchion
-itm_uruk_falchion_b|Uruk-Falchion
-itm_uruk_spear|Mordor-Speer
-itm_uruk_skull_spear|Uruk-Schädelspeer
-itm_uruk_voulge|Uruk-Voulge
-itm_uruk_heavy_axe|Schwere Uruk-Axt
+itm_uruk_falchion_b|Großer Ork-Krummsäbel
 itm_isengard_sword|Schwert aus Isengart
 itm_isengard_axe|Axt aus Isengart
 itm_isengard_hammer|Hammer aus Isengart
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Uruk-Schild aus Isengart
 itm_wood_club|Holzkeule
 itm_twohand_wood_club|Große Holzkeule
 itm_bone_cudgel|Knochenkeule
-itm_skull_club|Schädelkeule
+itm_orc_pick|Ork-Picke
+itm_orc_hammer|Bösartiger Kriegshammer
 itm_orc_club_b|Wargreiterkolben
 itm_orc_club_c|Orkknüppel mit Dornen
 itm_orc_club_d|Bösartiger Streitkolben
 itm_orc_sledgehammer|Grober Orkhammer
 itm_orc_simple_spear|Orkspeer
 itm_orc_skull_spear|Orkischer Schädelspeer
-itm_orc_bill|Orkhippe
-itm_orc_slasher|Ork-Schlitzer
+itm_orc_bill|Ork-Hellebarde
+itm_orc_slasher|Ork-Kurzschwert
 itm_orc_falchion|Ork-Falchion
 itm_orc_scimitar|Ork-Krummschwert
 itm_orc_sabre|Ork-Säbel
-itm_orc_machete|Ork-Machete
+itm_orc_battle_axe|Ork-Kriegsaxt
 itm_orc_axe|Orkaxt
-itm_orc_two_handed_axe|Beidhändige Orkaxt
+itm_orc_two_handed_axe|Ork-Großaxt
 itm_orc_throwing_axes|Orkische Wurfäxte
 itm_orc_bow|Orkbogen
 itm_orc_shield_a|Orkschild
@@ -494,6 +491,7 @@ itm_mirkwood_pad|Polsterwams aus dem Grünwald
 itm_mirkwood_mail|Kettenhemd aus dem Grünwald
 itm_mirkwood_scale|Leichte Schuppenrüstung aus dem Grünwald
 itm_mirkwood_heavy_scale|Grünblatt-Rüstung
+itm_mirkwood_sword|Schwert der Waldelben
 itm_mirkwood_great_spear|Großer Speer aus dem Grünwald
 itm_mirkwood_war_spear|Kriegsspeer aus dem Grünwald
 itm_mirkwood_short_spear|Speer der Waldelben
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|Zwergische Streitaxt
 itm_dwarf_great_axe|Große Zwergenaxt
 itm_dwarf_great_mattock|Große Zwergenhacke
 itm_dwarf_great_pick|Große Zwergenspitzhacke
-itm_dwarf_war_pick|Zwergische Kriegshacke
+itm_dwarf_throwing_axe_reward|Wurfäxte vom Erebor
 itm_dwarf_mattock|Zwergenhacke
 itm_dwarf_hand_axe|Zwergische Kurzaxt
-itm_dwarf_throwing_axe|Zwergische Wurfaxt
+itm_dwarf_throwing_axe|Zwergische Wurfäxte
 itm_dwarf_spear|Zwergenspeer
 itm_dwarf_spear_b|Zwergenpike
 itm_dwarf_spear_c|Zwergische Langaxt
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Peitsche des Gebieters
 itm_horn_gondor_reward|Horn von Gondor
 itm_harad_totem_reward|Totem von Harad
 itm_elven_amulet_reward|Elbisches Amulett
+
 itm_torque_reward|Bösartiger Halsring
 itm_orc_brew|Orkgebräu
-itm_rohan_saddle|Sattel von Thengel
+itm_rohan_saddle|Sattel
 itm_mearas_reward|Hengst der Mearas
 itm_shield_of_tuor|Schild von Tuor
 itm_riv_armor_reward|Dekorierte Rüstung aus Bruchtal
@@ -785,7 +784,7 @@ itm_khamul_helm|Helm von Khamul
 itm_black_arrows_reward|Schwarze Pfeile
 itm_leather_boots_reward|Jägerstiefel
 itm_rohan_armor_th|Königliche Rüstung von Rohan
-itm_wilderness_amulet|Amulett der Wildnis
+itm_wilderness_cowl|Jägerkapuze
 itm_prisoner_coll_chain|Gefangenenketten
 itm_witchking_helmet|Zauberermaske
 itm_lorien_royal_armor|Königliche Rüstung von Lorien

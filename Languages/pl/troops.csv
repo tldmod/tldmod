@@ -672,8 +672,8 @@ trp_armoured_troll|Opancerzony Trol
 trp_armoured_troll_pl|Opancerzonych Troli
 trp_olog_hai|Mordorski Olog-Hai
 trp_olog_hai_pl|Mordorskich Olog-Hai
-trp_ent|Ent
-trp_ent_pl|Entów
+trp_ent_old|Ent
+trp_ent_old_pl|Entów
 trp_i1_guldur_orc_snaga|Ork Snaga z Dol Guldur
 trp_i1_guldur_orc_snaga_pl|Orków Snaga z Dol Guldur
 trp_a2_guldur_orc_tracker|Ork Tropiciel z Dol Guldur
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|Gundabadzki Jeździec Wargów
 trp_c4_gunda_warg_rider_pl|Gundabadzkich Jeźdźców Wargów
 trp_c5_gunda_clan_rider|Goblini Jeździec Północnego Klanu
 trp_c5_gunda_clan_rider_pl|Goblinich Jeźdźców Północnego Klanu
+trp_i5_gunda_orc_champion|Gundabadzki Czempion Orków
+trp_i5_gunda_orc_champion_pl|Gundabadzkich Orkowi Czempioni
 trp_mountain_goblin2|Górski Goblin
 trp_mountain_goblin2_pl|Górskich Goblinów
 trp_tribal_orc2|Plemienny Ork
 trp_tribal_orc2_pl|Plemiennych Orków
-trp_tribal_orc_warrior2|Plemienny Ork Wojownik
-trp_tribal_orc_warrior2_pl|Plemiennych Orków Wojowników
-trp_i5_gunda_orc_champion|Gundabadzki Czempion Orków
-trp_i5_gunda_orc_champion_pl|Gundabadzkich Orkowi Czempioni
+trp_i5_gunda_orc_champion2|Gundabadzki Czempion Orków
+trp_i5_gunda_orc_champion2_pl|Gundabadzkich Orkowi Czempioni
 trp_i2_mordor_num_renegade|Renegat - Czarny Numenorejczyk
 trp_i2_mordor_num_renegade_pl|Renegatów - Czarnych Numenorejczyków
 trp_i3_mordor_num_warrior|Wojownik - Czarny Numenorejczyk
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|Pushurt Straganiarz
 trp_smith_khand_ac_pl|Kuźnia
 trp_smith_umbar_ac|Kowal Fuinir
 trp_smith_umbar_ac_pl|Kuźnia
-trp_barman_mtirith|Karczmarz
-; trp_barman_mtirith_pl|the Citadel
-trp_barman_pelargir|Karczmarz
-trp_barman_pelargir_pl|Zamek
-trp_barman_linhir|Karczmarz
-trp_barman_linhir_pl|Zamek
-trp_barman_dolamroth|Karczmarz
-trp_barman_dolamroth_pl|Zamek
-trp_barman_edhellond|Karczmarz
-trp_barman_edhellond_pl|Zamek
-trp_barman_lossarnach|Karczmarz
-trp_barman_lossarnach_pl|Zamek
-trp_barman_tarnost|Karczmarz
-trp_barman_tarnost_pl|Zamek
-trp_barman_erech|Karczmarz
-trp_barman_erech_pl|Zamek
-trp_barman_pinnath|Karczmarz
-trp_barman_pinnath_pl|Zamek
-trp_barman_hannun|Karczmarz
-trp_barman_hannun_pl|Ukryta Jaskinia
-trp_barman_calembel|Karczmarz
-trp_barman_calembel_pl|Zamek
-trp_barman_edoras|Karczmarz
-; trp_barman_edoras_pl|Meduseld, the Golden Hall
-trp_barman_aldburg|Karczmarz
-trp_barman_aldburg_pl|Zamek
-trp_barman_hornburg|Karczmarz
-trp_barman_hornburg_pl|Sala Władców
+trp_smith_moria_ac|Kowal Burgak
+trp_smith_moria_ac_pl|Kuźnia
+trp_smith_dale_ac|Ardel Ognistoręki
+trp_smith_dale_ac_pl|Kuźnia
+trp_smith_beorn_ac|Beornalaf Topornik
+trp_smith_beorn_ac_pl|Kuźnia
+trp_smith_woodelf_west_camp|Calechir
+trp_smith_woodelf_west_camp_pl|Kuźnia
+trp_smith_woodmen|Beornalaf Topornik
+trp_smith_woodmen_pl|Kuźnia
+trp_smith_beorn_v|Beornalaf Topornik
+trp_smith_beorn_v_pl|Kuźnia
+trp_smith_troll_cave|Kowal Burgak
+trp_smith_troll_cave_pl|Kuźnia
+trp_smith_dg_outpost|Shtazg Dulbash
+trp_smith_dg_outpost_pl|Kuźnia
+trp_smith_main_rhun|Ognjemir Kladivo
+trp_smith_main_rhun_pl|Prowizoryczna Kuźnia
+trp_smith_south_rhun|Ognjemir Kladivo
+trp_smith_south_rhun_pl|Prowizoryczna Kuźnia
+trp_smith_gundabad_ne|Blurg Handlarz Śniegiem
+trp_smith_gundabad_ne_pl|Kuźnia
+trp_smith_gundabad_nw|Blurg Handlarz Śniegiem
+trp_smith_gundabad_nw_pl|Kuźnia
+trp_smith_gundabad_s|Blurg Handlarz Śniegiem
+trp_smith_gundabad_s_pl|Kuźnia
+trp_smith_gundabad_m|Blurg Handlarz Śniegiem
+trp_smith_gundabad_m_pl|Kuźnia
 trp_barman_eastemnet|Karczmarz
 trp_barman_eastemnet_pl|Zamek
 trp_barman_westfold|Karczmarz
@@ -1222,30 +1222,30 @@ trp_barman_morannon|Karczmarz
 ; trp_barman_morannon_pl|the Leader's Cave
 trp_barman_mmorgul|Karczmarz
 trp_barman_mmorgul_pl|Wieża
-trp_barman_cungol|Karczmarz
-trp_barman_cungol_pl|Zamek
-trp_barman_isengard|Karczmarz
-; trp_barman_isengard_pl|the tower of Orthanc
-trp_barman_cgaladhon|Karczmarz
-trp_barman_cgaladhon_pl|Zamek drewniany
-trp_barman_cdolen|Karczmarz
-trp_barman_cdolen_pl|Zamek drewniany
-trp_barman_camroth|Karczmarz
-trp_barman_camroth_pl|Zamek drewniany
-trp_barman_thalls|Karczmarz
-trp_barman_thalls_pl|Sala Tronowa 
-trp_barman_beorn|Karczmarz
-; trp_barman_beorn_pl|Beorn's Hall
-trp_barman_moria|Karczmarz
-; trp_barman_moria_pl|the Chief's Chamber
-trp_barman_dale|Karczmarz
-trp_barman_dale_pl|Zamek
-trp_barman_esgaroth|Karczmarz
-trp_barman_esgaroth_pl|Hala
-trp_barman_erebor|Karczmarz
-trp_barman_erebor_pl|Wielka Hala Thróra
-trp_barman_dolguldur|Karczmarz
-trp_barman_dolguldur_pl|Zamek
+trp_merchant_main_rhun|Zaopatrzeniowiec
+; trp_merchant_main_rhun_pl|camp stash
+trp_merchant_dg_outpost|Zaopatrzeniowiec
+; trp_merchant_dg_outpost_pl|stable and warehouse
+trp_merchant_woodelf_west_camp|Zaopatrzeniowiec
+; trp_merchant_woodelf_west_camp_pl|elven supplies
+trp_merchant_gundabad_m|Zaopatrzeniowiec
+; trp_merchant_gundabad_m_pl|camp stash
+trp_merchant_gundabad_s|Zaopatrzeniowiec
+; trp_merchant_gundabad_s_pl|camp stash
+trp_merchant_gundabad_nw|Zaopatrzeniowiec
+; trp_merchant_gundabad_nw_pl|camp stash
+trp_merchant_gundabad_ne|Zaopatrzeniowiec
+; trp_merchant_gundabad_ne_pl|camp stash
+trp_merchant_troll_cave|Zaopatrzeniowiec
+; trp_merchant_troll_cave_pl|warg pit and supplies
+trp_merchant_beorn_v|Zaopatrzeniowiec
+; trp_merchant_beorn_v_pl|stable and warehouse
+trp_merchant_orc_sentry|Zaopatrzeniowiec
+; trp_merchant_orc_sentry_pl|camp stash
+trp_merchant_candros|Zaopatrzeniowiec
+; trp_merchant_candros_pl|stable and warehouse
+trp_merchant_hannun|Zaopatrzeniowiec
+; trp_merchant_hannun_pl|ranger supplies
 trp_merchant_mtirith|Kwatermistrz
 ; trp_merchant_mtirith_pl|stable and warehouse
 trp_merchant_pelargir|Kwatermistrz
@@ -1434,42 +1434,42 @@ trp_elder_erebor|Zarządca Ereboru
 ; trp_elder_erebor_pl|the Halls
 trp_elder_dolguldur|Zarządca Guldur
 ; trp_elder_dolguldur_pl|the black castle
-trp_elder_gondor_ac|Zarządca
-trp_elder_gondor_ac_pl|Obóz
-trp_elder_rohan_ac|Zarządca
-trp_elder_rohan_ac_pl|Obóz
-trp_elder_mordor_ac|Zarządca
-trp_elder_mordor_ac_pl|Obóz
-trp_elder_isengard_ac|Zarządca
-trp_elder_isengard_ac_pl|Obóz
-trp_elder_lorien_ac|Zarządca
-trp_elder_lorien_ac_pl|Obóz
-trp_elder_woodelf_ac|Zarządca
-trp_elder_woodelf_ac_pl|Obóz
-trp_elder_imladris_ac|Zarządca
-trp_elder_imladris_ac_pl|Obóz
-trp_elder_beorn_ac|Zarządca
-trp_elder_beorn_ac_pl|Obóz
-trp_elder_harad_ac|Przywódca Obozu Haradu
-trp_elder_harad_ac_pl|Obóz
-trp_elder_rhun_ac|Przywódca Obozu Rhunu
-trp_elder_rhun_ac_pl|Obóz
-trp_elder_khand_ac|Przywódca Obozu Khandu
-trp_elder_khand_ac_pl|Obóz
-trp_elder_dunland_ac|Przywódca Obozu Dunlandu
-trp_elder_dunland_ac_pl|Obóz
-trp_elder_umbar_ac|Umbarski Kwatermistrz
-trp_elder_umbar_ac_pl|Obóz
-trp_elder_moria_ac|Przywódca Obozu Morii
-trp_elder_moria_ac_pl|Obóz
-trp_elder_gunda_ac|Przywódca Obozu Gundabadu
-trp_elder_gunda_ac_pl|Obóz
-trp_elder_dale_ac|Kwatermistrz Dale
-trp_elder_dale_ac_pl|Obóz
-trp_elder_guldur_ac|Przywódca Obozu Guldur
-trp_elder_guldur_ac_pl|Obóz
-trp_elder_dwarf_ac|Krasnoludzki Zarządca
-trp_elder_dwarf_ac_pl|Obóz
+trp_elder_wosgiliath|Zarządca
+trp_elder_wosgiliath_pl|Obóz
+trp_elder_oscamp|Zarządca
+trp_elder_oscamp_pl|Obóz
+trp_elder_eosgiliath|Zarządca
+trp_elder_eosgiliath_pl|Obóz
+trp_elder_uoutpost|Zarządca
+trp_elder_uoutpost_pl|Obóz
+trp_elder_uhcamp|Zarządca
+trp_elder_uhcamp_pl|Obóz
+trp_elder_urcamp|Zarządca
+trp_elder_urcamp_pl|Obóz
+; trp_elder_woodelf_camp|Elder
+trp_elder_woodelf_camp_pl|Obóz
+; trp_elder_woodelf_west_camp|Elder
+trp_elder_woodelf_west_camp_pl|Obóz
+; trp_elder_beorn_v|Beorning Elder
+; trp_elder_beorn_v_pl|the village
+; trp_elder_troll_cave|Cave Chief
+; trp_elder_troll_cave_pl|the caves
+trp_elder_dg_outpost|Przywódca Obozu Rhunu
+trp_elder_dg_outpost_pl|Obóz
+trp_elder_rhun_sc|Przywódca Obozu Rhunu
+trp_elder_rhun_sc_pl|Obóz
+trp_elder_rhun_nc|Przywódca Obozu Rhunu
+trp_elder_rhun_nc_pl|Obóz
+; trp_elder_gunda_ne|Orc Elder
+trp_elder_gunda_ne_pl|Obóz
+; trp_elder_gunda_nw|Orc Elder
+trp_elder_gunda_nw_pl|Obóz
+; trp_elder_gunda_s|Orc Elder
+trp_elder_gunda_s_pl|Obóz
+; trp_elder_gunda_m|Orc Elder
+trp_elder_gunda_m_pl|Obóz
+trp_elder_ironhill|Przywódca Obozu
+trp_elder_ironhill_pl|Obóz
 trp_village_1_elder|Władca z Lash
 ; trp_village_1_elder_pl|the caves
 trp_tutorial_chest_1|Skrzynia z Bronią Białą
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|Jaskiniowy Troll
 trp_troll_placeholder_6_pl|Jaskiniowy Troll
 trp_wild_troll|Dziki Jaskiniowy Troll
 trp_wild_troll_pl|Dzikich Jaskiniowych Trolli
-trp_ent2|Ent
-trp_ent2_pl|Entów
+trp_ent|Ent
+trp_ent_pl|Entów
 trp_mountain_goblin|Górski Goblin
 trp_mountain_goblin_pl|Górskich Goblinów
 trp_tribal_orc|Plemienny Ork

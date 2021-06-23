@@ -68,7 +68,7 @@ mno_start_go|GONDOR, el Reino de la Torre Blanca
 mno_start_ro|ROHAN, los Señores de los Caballos
 mno_start_du|DÚNEDAIN, la antigua dinastía de Hombres
 mno_start_be|BEÓRNIDAS, la gente oso
-mno_start_wo|HOMBRES DE LOS BOSQUES, lindando el Bosque Negro
+mno_start_wo|HOMBRES DEL BOSQUE, en las lindes del Bosque Negro
 mno_start_da|VALLE, el reino norteño
 menu_start_good_elf|^^^^^^^^^^¿De que bosque provienes?
 mno_start_ri|RIVENDEL, del Señor Elrond
@@ -175,7 +175,6 @@ mno_be_quiet|¡Bajad las armas y manteneos en silencio! ¡Ahora, vayámonos de a
 mno_be_bold|¡Seguir adelante! ¡No le temo ni a las plantas ni a los viejos mitos!
 mno_fight_back|¡Vamos a ver! ¡Peinad el área! ¡Quemad un árbol o dos!
 menu_fangorn_search_fails|^^^^^^Buscas en la espesura del oscuro bosque pero no encuentras nada.^Aún así te sientes {observado y amenazado/observada y amenazada}, cada vez más y más...
-menu_fangorn_battle_debrief_won|^^^¡Una gran victoria!^^^Así que que es ésto a lo que se referían los viejos mitos sobre Fangorn...
 menu_fangorn_killed_player_only|^^^^^^Vagas por el espeso y oscuro bosque.^¡De repente, algo te golpea! ¿Habrá ssido una rama pesada que ha caído sobre tu cabeza?^Permaneces inconsciente sólo durante algunos minutos... despiertas {maltrecho/maltrecha} pero puedes seguir adelante.
 mno_ow_get_out|¡Ay! Salgamos ahora mismo de este maldito lugar.
 menu_fangorn_killed_troop_and_player|^^^^^^Vagas por el espeso y oscuro bosque.^^Cuando de repente... ¡notas que algo te golpea! Puede que una rama pesada haya caído sobre tu cabeza.^^Cuando te recuperas del golpe unos minutos después, descubres que no todas tus tropas han tenido la misma suerte...
@@ -234,6 +233,7 @@ menu_join_battle|^^^Estás colaborando con {s2} en la lucha contra {s1}.^ Cuenta
 mno_join_attack|Enfrentarse al enemigo.
 mno_join_order_attack|Ordenar a tus tropas que ataquen al enemigo junto con tus aliados mientras te mantienes al margen.
 mno_control_allies_join_menu|Usar puntos de Influencia para dar órdenes a tus aliados en el campo de batalla
+mno_join_attack_bearform|Lanzarte a la batalla en forma de oso.
 mno_join_leave|Replegarse.
 mno_player_control_allies_join_menu|Ponerlos bajo tus órdenes y enfrentarse al enemigo.
 menu_join_order_attack|{s4}^^Tus bajas: {s8}^^Bajas aliadas: {s9}^^Bajas enemigas: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|No pedir recompensa.
 menu_siege_started_defender|{s1} está apunto de asaltar las murallas de {s2}. Cuentas con {reg22} tropas listas para la batalla, frente a las {reg11} del enemigo. Decides...
 mno_siege_defender_join_battle|Unirse a la batalla.
 mno_siege_defender_troops_join_battle|Ordenar a tus tropas unirse a la batalla sin tu ayuda.
+mno_siege_defender_do_not_join_battle|No involucrarse.
 menu_siege_join_defense|{s4}^^Tus bajas: {s8}^^Bajas aliadas: {s9}^^Bajas enemigas: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Un poderoso golpe del fugitivo te derriba, tu visión flaquea y todo se vuelve oscuro. El tiempo pasa, y cuando vuelves a abrir los ojos de nuevo te encuentras {apaleado y ensangrentado/apaleada y ensangrentada}, pero por suerte ninguna de las heridas parecen ser de importancia.
 menu_town_bandits_succeeded|Los trasgos caen ante ti como el trigo seco bajo la guadaña. Poco después todos tus atacantes yacen en el suelo, muertos o heridos. Seguramente la gente del lugar estará muy agradecida de que les hayas salvado de esta amenaza.
@@ -338,7 +339,7 @@ menu_notification_faction_defeated|^^^^^¡{s1} ha caído!^{s1} ya no existe, gra
 menu_ruins|^^^^Te acercas a las {s1}. El que una vez fuera un fuerte campamento fortificado se encuentra ahora arrasado hasta los cimientos, pasto de las llamas, aunque todavía puedes ver los restos de edificaciones y armas oxidadas a ambos lados de tu campo de visión.
 menu_legendary_place|^^^^Has seguido los rumores y encontrado {s1}. A partir de ahora puedes explorar este lugar y comprobar por tu cuenta y riesgo si los rumores de los que tanto has oído hablar son ciertos.
 mno_explore|Explorar el lugar.
-menu_ring_hunter_lair|^^^^Has seguido el rastro de los Cazanillos por el Bosque Negro y llegado a {s1}. Ves que se disponen a huir con un cofre.
+menu_ring_hunter_lair|^^^^Has seguido el rastro de los Caza-anillos por el Bosque Negro y llegado a {s1}. Ves que se disponen a huir con un cofre.
 mno_attack_lair|Empieza el ataque
 mno_leave_bandit_lair|Dejarlo por el momento.
 menu_gondor_reinforcement_event|^^^^^¡Las almenaras de Gondor arden, Minas Tirith pide ayuda!^^Los señores de los feudos sureños marcharán hacia el norte a defender la Ciudad Blanca de la oscuridad que se cierne sobre ella.
@@ -398,7 +399,7 @@ mno_cb_gondor|Gondor
 mno_cb_gondor1|Rohan
 mno_cb_gondor2|Lothlórien
 mno_cb_gondor3|Rivendel
-mno_cb_gondor4|Bosque negro
+mno_cb_gondor4|Bosque Negro
 mno_cb_gondor5|Enanos
 mno_cb_gondor6|Valle
 mno_cb_gondor7|Beórnidas

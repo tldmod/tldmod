@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|Nous avons vu certains de vos hommes fuir du
 dlga_raid_village_failed:close_window|Je ferais mieux la prochaine fois.
 dlga_lord_start:lord_target_lord_failed|J'ai appris que vous aviez échoué à accomplir ce que je vous ai demandé. C'est décevant {playername}.
 dlga_lord_target_lord_failed:close_window|Je ferais mieux la prochaine fois.
-dlga_lord_start:lord_generic_mission_completed.5|Vos hommes ont été témoins de votre bravoure au combat {playername}. Vous avez démontré notre supériorité.
+dlga_lord_start:lord_generic_mission_completed.5|Vos hommes ont fait la preuve de votre bravoure au combat, {playername}. Vous leur avez montré que nos forces sont supérieures.
 dlga_lord_start:kill_quest_failed|J'ai appris que vous aviez échoué à accomplir ce que je vous ai demandé. C'est décevant {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Vos hommes ont été témoins de votre bravoure au combat {playername}. Vous avez gagné mon respect.
 dlga_kill_quest_failed:close_window|Je ferais mieux la prochaine fois.

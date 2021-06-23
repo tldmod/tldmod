@@ -1,4 +1,4 @@
-; qstr_Received_{reg0}_dama|Received {reg0} damage.
+qstr_Received_{reg0}_dama|受 到 {reg0} 點 傷 害
 qstr_Gate_is_breached!|大 門 被 攻 破 了!
 qstr_Gate_opens..._You_ha|大 門 打 開 了... 你 來 到 中 土 世 界 最 神 聖 的 地 方！
 qstr_Secret_place_discove|發 現 秘 密 地 方！
@@ -73,7 +73,7 @@ qstr_an_ORC^_serving_the_|一 個 獸 人 ， 為 全 知 之 眼 服 務
 qstr_an_URUK^_the_new_bre|一 個 奇 獸 人 ， 一 種 全 新 的 獸 人 
 qstr_a_MAN^_subjugated_by|一 個 人 類 ， 被 索 倫 所 征 服
 qstr_an_ORC^_serving_the_W|一 個 獸 人 ， 為 蒼 白 之 手 服 務 
-; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
+qstr_one_of_the_URUK_HAI^|強 獸 人，^繁 衍 於 艾 辛 格
 qstr_a_MAN_of_Dunland^_th|登 蘭 德 人， ^來 自 西 邊 平 原
 qstr_Click_the_center_but|點 擊 中 央 按 鈕 以 切 換 派 系^點 擊 人 物 以 觀 看 細 節
 qstr_Level:_{reg3}^Health|等 級 : {reg3}^生 命 : {reg4}
@@ -160,7 +160,7 @@ qstr_Useful_Tool_of_{s5}|實 用 的 工 具 {s5}
 qstr_Servant_of_{s5}|{s5} 的 僕 人
 qstr_Unknown_to_{s5}|{s5} 的 未 知
 qstr_You_have_been_{reg1?|你 已 經 {reg1?晉 升:降 職} 為 {s24} ({reg0})！
-; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.
+qstr_You_{reg1?earned:los|你 在 主 派 系 {s11} {reg1?earned:lost} 了 {reg11} 軍 功 以 及 {reg12?and {reg12} 影 響 力 : }。
 qstr_You_{reg1?earned:lost|你 因 為 {s11} {reg1?earned:lost} 了 {reg11} 地 位 點 數 以 及  {reg12?and {reg12} 影 響 力 : }
 qstr_You_spent_{reg10}_of|你 在 {s1} 上 花 費 了 {reg10} 的 影 響 力，還 剩 下 {reg11}  點 。
 qstr_Troop_upkeep:|部 隊 維 護 ：
@@ -186,7 +186,7 @@ qstr_during_battles|戰爭時
 qstr_+1_to_Pathfinding|+1 嚮 導
 qstr_+1_to_Athletics|+1 運 動
 qstr_+1_to_Wound_Treatmen|+1 療 傷
-; qstr_Use_from_Camp_Menu|Use from Camp Menu
+qstr_Use_from_Camp_Menu|從 營 地 選 單 使 用
 qstr_Use_from|用 來
 qstr_Action_Menu|動 作 清 單
 qstr_+1_to_First_Aid|+1 急 救
@@ -197,13 +197,15 @@ qstr_+1_to_Strength|+1 力 量
 qstr_+1_to_Agility|+1 敏 捷
 qstr_+1_to_Leadership|+1 統 御
 qstr_+1_to_Wildcraft|+1 野 外 求 生
+qstr_+1_to_Tracking|+1 跟 踪
+qstr_when_equipped|已 裝 備 時
 qstr_+1_to_Power_Draw|+1 強 弓
 qstr_The_record_of_Balin_|巴 林 的 失 落 探 險 隊 的 紀 錄
 qstr_Who_might_be_interes|誰 會 對 這 個 有 興 趣？
-; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
+qstr_Bonus_to_Shield_Skil|加 成 盾 防
 ; qstr_Turns_nature_to_your|Turns nature to your side
 ; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
-; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
+qstr_Bonus_to_Power_Strik|加 成 強 擊
 qstr_+1_to_Trainer|+1 教 練
 qstr_Recruits_Tribal_Orcs|招 募 部 落 獸 人
 qstr_rally|集 結
@@ -212,21 +214,23 @@ qstr_+{reg1}_{s3}_in_batt|戰 鬥 中 +{reg1} {s3}
 qstr_+1_to_Charisma|+1 魅 力
 qstr_+1_to_Surgery|+1 手 術
 qstr_+1_to_Intelligence|+1 智 力
-; qstr_+2_to_Surgery|+2 to Surgery
-qstr_when_equipped|已 裝 備 時
+qstr_+2_to_Surgery|+2 手 術
 qstr_+1_to_Riding|+1 騎 術
 qstr_+1_to_Mounted_Archer|+1 騎 射 
+qstr_Bonus_to_Riding|加 成 騎 術
+; qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
+; qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
 qstr_+1_to_Prisoner_Mgmt|+1 俘 虜 管 理
 qstr_+2_to_Tactics|+2 工 程
-; qstr_+1_Intelligence|+1 Intelligence
+qstr_+1_Intelligence|+1 智 力
 qstr_+{reg1}_to_Spotting|+{reg1} 偵 察
 qstr__Scales_with_Wildcra|野 外 求 生 比 例
+qstr_+1_to_Power_Throw|+1 強 擲
 qstr_+1_to_Spotting|+1 偵 察
-qstr_+2_to_Athletics|+2 跑 動
 qstr_Less_Dunnish_upkeep|減 少 登 丹 的 消 耗
 qstr_Less_Wargs_upkeep|減 少 座 狼 的 消 耗
 qstr_Light_Armor|輕 型 鎧 甲
-; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
+qstr_Bonus_to_Strength__P|加 成 力 量（只有玩家）
 ; qstr_Lead_more_Orcs|Lead more Orcs
 qstr_+{reg1}_to_Party_Mor|+{reg1} 隊 伍 士 氣
 ; qstr_Range:_{reg55}|Range: {reg55}
@@ -635,8 +639,8 @@ qstr_loses_Faction_Strength|由 於 破 壞 性 突 襲 ， 失 去 了 派 系 
 qstr_loses_Faction_Strength_|由 於 你 在 海 上 的 成 功 ， 失 去 了 派 系 力 量 。
 qstr_You_spent_{reg67}_of|您 使 用 {s1} {reg67} 影 響 了 {reg67} ， 並 留 下 {reg66} 。
 ; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
-; qstr_{s1}_{s0}|{s1}, {s0}
-; qstr_{s1}_and_{s0}|{s1} and {s0}
+qstr_{s1}_{s0}|{s1}，{s0}
+qstr_{s1}_and_{s0}|{s1} 和 {s0}
 qstr_No_Troops_Left.|士 兵 們 一 個 不 剩 。
 qstr_avoid_melee|避 免 近 戰
 qstr_stand_and_fight|靠 攏 戰 鬥
@@ -694,7 +698,7 @@ qstr_A_thunderstorm_from_t|來 自 迷 霧 山 脈 的 雷 暴 在 戰 場 上 �
 qstr_A_poisonous_fog_from|來 自 多 爾 哥 多 的 有 毒 霧 在 戰 場 上 徘 徊 。 你 和 你 的 軍 隊 感 到 虛 弱 。 人 們 都 很 害 怕 。
 qstr_A_poisonous_fog_from_|來 自 多 爾 哥 多 的 有 毒 霧 在 戰 場 上 徘 徊 。 你 沒 有 任 何 不 同 ， 但 你 聽 到 你 的 敵 人 受 苦 ， 你 可 以 聞 到 他 們 的 恐 懼 。
 ; qstr_You_shapeshift_into_|You shapeshift into a bear!
-; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
+; qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
 ; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
 ; qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|你 的 坐 騎 走 路 磕 磕 絆 絆 ！ 看 起 來 是 瘸 腿 了 。
@@ -711,11 +715,12 @@ qstr_Use_Up/Down_arrow_ke|使 用 上 / 下 箭 頭 鍵 以 前 傾 / 後 傾
 qstr_Fixed_Camera___Right|固 定 相 機 — 右 肩
 qstr_Fixed_Camera___Left_|固 定 相 機 — 左 肩
 ; qstr_Fixed_Camera___Cente|Fixed Camera - Center
+; qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 qstr_While_visiting_towns|在 參 觀 城 鎮 ， 定 居 點 和 營 地 時 ， 您 可 以 與 周 圍 的 人 交 談 。 不 同 派 別 的 成 員 有 不 同 的 話 要 說 - 有 些 人 會 讓 你 自 己 思 考 ， 有 些 人 會 分 享 謠 言 。 兩 者 都 可 以 讓 你 更 好 地 了 解 這 個 人 的 文 化 和 派 系 ， 或 者 他 們 可 能 會 找 到 尋 找 秘 密 地 點 的 線 索 ， 或 者 是 在 荒 野 中 旅 行 並 在 環 戰 中 戰 鬥 的 秘 訣 和 技 巧 。
 qstr_Cannot_leave_now.|現 在 不 能 離 開
 ; qstr_You_have_found_the_l|You have found the local smithy.
 ; qstr_You_have_found_the_lo|You have found the local authority.
-; qstr_You_have_found_the_loc|You have found the local warehouse.
+qstr_You_have_found_the_loc|你 找 到 了 當 地 的 倉 庫。
 qstr_You_look_through_Hen|你 透 過 漢 那 斯 安 南 ， 日 落 之 窗 看 。  美 麗 的 景 象 恢 復 了 你 對 西 方 和 超 越 大 國 的 信 心 。
 qstr__cancelled_the_{reg1|(取 消 了 殺 囚 獲 得 了 {reg10} 經 驗 值 )
 qstr_Forming_ranks.|正 在 列 陣
@@ -729,7 +734,7 @@ qstr_Division_{reg1}_{s2}_f|部 隊 {reg1} {s2} 形 成 一 條 線 (記 憶 )
 qstr_Division_{reg1}_{s2}_fo|部 隊 {reg1} {s2} 形 成 {reg0} 行 (記 憶 )
 qstr_Delivered_{reg60}_da|造 成 {reg60} 點 傷 害 。 
 qstr_DEBUG__Health_Regen_|DEBUG (健 康 再 生 ) ： {s1} 恢復 {reg0}% 健康 = +{reg1}% 力量
-; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
+qstr_Your_bear_form_has_{|你 的 熊 型 態 有 {reg2}/{reg1} HP！
 qstr_Three_Nazgul_are_cir|三 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
 qstr_Two_Nazgul_are_circl|兩 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
 qstr_A_Nazgul_is_circling|一 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
@@ -746,7 +751,6 @@ qstr_Nazgul_diving_attack|戒 靈 正 在 攻 擊 {s11} ！
 qstr_{s11}_is_{s10}_in_th|{s11} 在 戒 靈 的 攻 擊 {s10} ！
 qstr_Received_{reg66}_dam|受 到 了 {reg66} 點 傷 害 。
 qstr_You_yell_for_your_ho|你 呼 喚 你 的 馬 。
-qstr_{s1}_s_morale:_{reg1|{s1} 的 士 氣 ： {reg1}
 qstr_You_do_not_need_to_r|你 還 不 需 要 集 結 你 的 部 隊 。
 qstr_You_rally_your_troop|你 集 結 了 部 隊 ！
 qstr_{s5}_rallies_{reg65?|{s5} 集 結 了 {reg65?她 的:他 的} 部 隊！
@@ -898,7 +902,7 @@ qstr_Doubled|雙 倍
 qstr_Tripled|三 倍
 qstr_Quadrupled|四 倍
 qstr_You_drank_the_Ent_Wa|你 喝 了 樹 人 水 ...
-; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
+qstr_You_used_the_Orc_Bre|你 使 用 了 半 獸 人 酒。
 qstr_Fangorn_search:_fail|搜 索 法 貢 森 林 ： 失 敗 。
 qstr_^^^A_great_victory!^|^^^一 場 偉 大 的 勝 利 ！ ^^^這 就 是 法 貢 森 林 的 神 話 ...
 ; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
@@ -987,6 +991,17 @@ qstr_Luckily_some_passing|很 幸 運 的 是 ， 一 些 路 過 的 鎮 民 �
 qstr_{s13}^^You_have_succ|{s13}^^你 成 功 的 潛 入 了 。
 qstr_the_place|當 地
 qstr_the_castle|城 堡
+qstr_the_Citadel|堡 壘
+qstr_the_Secret_Cave|秘 密 洞 穴
+qstr_Meduseld_the_Golden_|金 殿 美 杜 塞 爾 德
+qstr_the_Lord_Halls|領 主 大 殿
+qstr_the_Leader_s_Cave|領 隊 洞 窟
+qstr_the_Tower|塔
+qstr_the_tower_of_Orthanc|歐 散 克 塔
+qstr_the_Throne_Room|王 座 大 廳
+qstr_Beorn_s_Hall|比 翁 大 廳
+qstr_the_Hall|大 殿 
+qstr_the_Great_Chamber_of|索 爾 大 殿
 qstr_Stay_indoors_for_som|駐 紮 一 段 時 間 ( 每 晚 {reg1} 資 源 點)
 qstr_Camp_outside_for_som|露 營 一 段 時 間 ( 無 額 外 費 用)
 qstr_{s4}_s_scouts_have_s|{s4} 的 偵 察 員 已 經 看 到 了 你 的 失 敗 。 你 給 {s4} 帶 來 了 恥 辱 ， 這 次 失 敗 的 責 任 只有 你 自 己 。
@@ -1015,9 +1030,6 @@ qstr_You_have_defeated_the|你 擊 敗 了 襲 擊 艦 隊 ！ 這 對 敵 人 �
 qstr_You_defeated_the_int|你 擊 敗 了 攔 截 艦 隊 ！  即 使 你 沒 有 足 夠 的 力 量 來 襲 擊 這 座 城 市 ， 這 也 是 一 場 偉 大 的 勝 利 ！
 qstr_You_drove_back_the_e|你 驅 趕 了 敵 人 的 艦 隊 ， 但 失 去 了 你 的 大 部 分 船 隻 ！
 qstr_You_were_defeated_by|你 被 攔 截 艦 隊 打 敗 了 ， 未 能 突 襲 城 市 ！
-qstr_Lorien|羅 斯 洛 立 安
-qstr_Imladris|瑞 文 戴 爾 
-qstr_Woodelf|木精靈
 qstr_^^^^^^^You_come_upon|^^^^^^^你 遇 了 一 群 難 民 從 {s2} 逃 住 {s3}。^^他 們 中 大 多 是 老 弱 婦 孺。^^當 中 也 有 一 些 護 衛，但 明 顯 不 足 夠 去 抵 擋 一 次 襲 擊。
 qstr_^^^^^^^You_come_upon_|^^^^^^^你 遇 到 了 {s2} 一 直 追 踪 的 難 民 。 他 們 似 乎 正 在 前 往 {s3} ， 並 且 大 部 分 都 是 老 人 。^^只 有 一 點 點 守 衛 ， 但 還 不 足 以 阻 止 你 和 你 的 人 殺 死 所 有 人 。
 qstr_^^At_last_the_Master|^^最 後 ， 主 人 開 始 行 動 了 ！ 火 把 燒 得 很 亮 。 鋒 利 的 武 器 閃 閃 發 光 。 你 和 你 的 壯 漢 們 很 快 就 會 接 到 行 軍 命 令 。 啊 ， 會 有 戰 鬥 的 ， 很 多 戰 鬥 的 ， 還 有 足 夠 的 榮 耀 ！^^你 有 幸 被 傳 喚 到 塔 上 和 大 師 一 起 。 很 可 能 你 的 第 一 個 命 令 就 是 斯 納 加 的 工 作 ， 在 這 裡 突 襲 一 個 村 莊 ， 在 那 裡 威 利 一 輛 大 篷 車 。 但 你 很 快 就 會 證 明 自 己 。 誰 會 說 你 不 會 像 任 何 一 個   {s2} 和 {s3} 的 指 揮 官 那 樣 扮 演 重 要 的 角 色 ？^^戰 爭 已 經 開 始 了 ， 人 類 及 其 盟 國 的 墮 落 開 始 了 ！
@@ -1048,6 +1060,7 @@ qstr_You_are_entering_{s1|你 進 入 了 {s1} ({s2}) 。
 qstr_You_are_entering_{s1}|你 進 入 了 {s1} 。
 qstr_The_war_expands_comm|隨 著 戰 事 的 如 水 火 般 激 烈 ， 指 揮 官 們 變 得 更 加 激 進 了 。 ( 圍 城 需 求 減 少)
 qstr_Your_party_is_spotte|你 的 部 隊 被 {s1} 發 現 了 。
+; qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
 qstr_Party_has_nothing_to|部 隊 食 物 短 缺 了 ！
 qstr_You_pay_for_accommod|你 支 付 了 宿 金 。
 qstr_The_troll_outside_{s|巨 魔 在 {s2} 外 的 被 殺 了 。 任 務 取 消 。
@@ -1136,7 +1149,7 @@ qstr_i_wont_decapitated_e|我不會在多人遊戲中殺死大象，絕不！ �
 qstr_I_don_t_think_there_|我不認為最後之日有聯機，不過大象倒是個好點子。
 qstr_There_is_a_hidden_el|有一個大象死亡模式隱藏在最後之日里。但是你要先刪掉所有存檔，然後開新檔，不保存玩100天。接著在角色菜單處按Alt+F4。相信我朋友，這完全值得！
 ; qstr_Y_NO_ChINESE??|Y NO ChINESE??
-; qstr_Just_to_troll_you_tr|Just to troll you, troll!
+qstr_Just_to_troll_you_tr|只 是 想 欺 負 你，欺 負 你！
 ; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
 qstr_Wai_no_plate_armour_|啥 ？ 這 個 模 組 裡 沒 有 板 甲 ？
 qstr_What_is_plate_armour|什 麼 是 板 甲 ？ 沒 聽 說 過 。
@@ -1158,7 +1171,6 @@ qstr_Well_if_you_are_here|恩，如果你能在這裡跟我說這話的話，這
 qstr_You_just_got_windyfl|你剛剛被風化了！
 qstr_Merry|梅 里
 qstr_Pippin|皮 聘
-qstr_the_Citadel|堡 壘
 qstr_Minas_Tirith|米 那 斯 提 力 斯 
 qstr_Steward_Denethor|攝 政 王 迪 耐 瑟 
 qstr_the_Golden_Hall|金色大廳
@@ -1186,14 +1198,14 @@ qstr_Good_day_to_you.|祝 你 今 天 好 運 。
 qstr_Ah_it_s_you_again._G|啊 ， 又 是 你 。 再 見 。
 qstr_My_apologies_if_I_wa|對 不 起 ， 我 剛 剛 很 魯 莽 。 你 能 再 說 一 遍 你 的 故 事  麼 ？
 qstr_I_was_reconsidering_|我 重 新 考 慮 了 我 們 上 次 的 對 話 。 你 能 再 說 一 遍 你 的 故 事 麼 ？
-; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
+qstr_Zigrphel_gained_{reg|齊 格 爾 菲 爾 獲 得 {reg78} 經 驗。
 qstr_Greetings_{s23}_{s24|向 你 問 好 ， {s23} ， {s24} 。
 qstr_Greetings_{s23}.|向 你 問 好 ， {s23} 。
 qstr_So_you_are_{s23}._I_|啊 ， 你 是 {s23} 。 我 聽 說 你 為 我 們 的 朋 友 {s25} 戰 鬥 ， 所 以 我 覺 得 我 該 把 你 當 成 盟 友 。
 qstr_I_need_volunteers_wi|我 需 要 一 些 志 願 者 跟 我 去 完 成 危 險 的 任 務 。
 qstr_I_need_some_soldiers|我 需 要 一 些 士 兵 來 補 充 戰 損 。
 ; qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
-; qstr_Do_I_look_like_a_smi|Do I look like a smith to you? Pah. Go talk to one.
+qstr_Do_I_look_like_a_smi|你 覺 得 我 像 個 鐵 匠 嗎？呸。換 個 人 問 問 吧。
 qstr_Excellent_job_{s23}!|幹 得 漂 亮 ， {s23} ！ 真 希 望 我 方 的 所 有 指 揮 官 都 像 你 這 樣 盡 責 。 ^
 qstr_Nicely_done_{s23}.|幹 得 很 好 ， {s23} 。
 qstr_Good_work_{s23}.|幹 的 好 ， {s23} 。
@@ -1221,7 +1233,7 @@ qstr_It_is_my_duty_to_prot|保 護 盟 友 是 我 的 職 責 。
 qstr_I_am_{s4}_{s15}_of_{|我 是 {s4} ， {s6 } 的 {s15}
 qstr_I_am_{s4}_a_commande|我 是 {s4} ， {s6} 的 指 揮 官
 qstr_{s9}{reg5?_and_the_r|{s9} {reg5?和 {s8} 的 統 治 者 。 :}
-; qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
+qstr__{s3}_gained_{reg78}|{s3} 獲 得 {reg78} 經 驗。
 qstr_{playername}_our_sco|{playername} ， 我 們 的 探 子 帶 來 了 你 成 功 的 消 息 。 願 你 在 這 幸 福 的 歲 月 裡 度 過 這 一 天 ！ 你 大 勝 利 擊 退 了 {s7} ， 敵 人 的 大 舉 進 攻 的 計 畫 已 經 失 敗 了 。 我 們 希 望 他 們 會 為 了 自 己 的 失 敗 而 吵 架 。 我 們 也 希 望 他 們 現 在 對 你 會 感 到 恐 懼 ！ 至 少 你 讓 我 們 暫 時 休 息 了 一 下 。
 ; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
 qstr_Alas_that_I_could_no|唉 ， 我 無 法 終 結 {s8} 的 {s7} ， 但 如 果 我 們 再 次 見 面 ， 那 就 讓 他 們 小 心 吧 。
@@ -1283,7 +1295,7 @@ qstr_Ah_{playername}_it_i|啊，{playername}，你 能 來 真 好。戰 爭 就
 qstr_About_time_you_showe|關 於 你 出 現 的 時 間，{playername}。我 們 現 在 正 在 交  戰，我 不 能 容 忍 任 何 不 服 從 命 令 的 行 為。我 們 正 在 與 {s11} 交 戰，但 我 們 必 須 集  中 力 量，削 弱 敵 人，然 後 才 能 攻 打 他 們 的 據 點 和 要 塞。敵 人 的 每 一 次 失 敗 都 將 加 強 我 們 的 戰 爭 士 氣，使 他 們 更 接 近 於  徹 底 的 毀 滅。我 相 信 你 會 抓 住 每 一 個 機 會 來 對 抗 我 們 的 敵 人，以 偵 察 隊 或 是 主 帥 的 身 份。此 外，如 果 你 看 到 他  們 的 戰 鬥，你 將 支 援 我 們 的 領 主 和 我 們 的 盟 友。不 要 讓 他 們 失 望，否 則 我 會 知 道。
 qstr_we_are_fighting_agai|我們目前正與 {s13} 交戰
 qstr_we_are_not_fighting_|我們目前沒有與任何人交戰
-; qstr__{s14}_gained_{reg78| {s14} gained {reg78} experience.
+qstr__{s14}_gained_{reg78|{s14} 獲 得 {reg78} 經 驗。
 qstr_Oh?_Let_me_see_that.|哦？讓我看看…  很好很好！\n非常感謝你把這封信帶給我，{playername}。\n拿著徽章作為我收到信的證物，下次見到 {s9} 的時候請代我向他問好。
 qstr_Give_me_that!_Hrmph!|給我的？哇啊！很好！{playername}。\n你能把這個帶給我，說明你是個有用的僕人。\n告訴 {s9}，讓他多用用你。
 qstr_What?_Let_me_see_tha|什麼？讓我看看…   恩，{playername}。\n感謝你把這封信帶給我，現在你可以走了。
@@ -1386,7 +1398,7 @@ qstr_Mercy_I_crave!_To_fa|憐憫，我渴望！ 在公開戰鬥中面對{s7}絕�
 qstr_strong_warriors_from|來自 {s7} 的強大戰士
 qstr_champions_from_{s7}_|來自 {s7} 的冠軍，是該領域最強者
 qstr_{playername}_the_men|{playername}，這些人聽說過有關敵軍兇猛的故事。\n這些恐怖的故事使士兵們的士氣低落。\n我要你讓他們知道他們沒有什麼可害怕的。\n我希望你挑戰並擊敗{reg22} {s6}。
-qstr_{playername}_I_want_|{playername}，我想讓你向敵人展示敵人如同弱雞。\n我要你親自殺死 {reg22}  {s6}！\n這樣做表明我們強大的力量！
+; qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superior force!
 qstr_I_will_do_what_you_a|我會按你的要求做，人們將會見證。
 qstr_high_level_troops_fr|高級部隊來自
 qstr_elite_level_troops_f|精英級別的部隊來自
@@ -1411,7 +1423,7 @@ qstr_I_m_sorry_but_we_can|對不起，我們現在不能幫助他們。
 qstr_Bah!_Far_more_glory_|呸！在其他地方贏得的榮譽遠遠超過微不足道的海盜。
 qstr_This_raid_does_not_i|這次襲擊對我不感興趣。\n我會在其他地方贏得榮耀。
 qstr_{s9}_asked_you_to_de|{s9} 要你摧毀 {s1} 附近的偵察營。
-; qstr_Your_party_must_be_at|Your party must be at least 10 strong to begin this quest
+qstr_Your_party_must_be_at|你 的 隊 伍 至 少 要 有 10 人 才 能 開 始 這 個 任 務
 qstr_{s9}_asked_you_to_def|{s9} 要你保衛 {s1} 附近遭受攻擊的村莊。
 qstr_{s9}_asked_you_to_ra|{s9} 要你襲擊 {s1} 附近的一個村莊。
 qstr_These_soldiers_may_w|這些士兵勢必會在我的計劃中力挽狂瀾，{playername}。\n我相信你訓練得很好。\n我對你非常感謝。

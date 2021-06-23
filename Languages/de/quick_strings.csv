@@ -197,6 +197,8 @@ qstr_+1_to_Strength|+1 Stärke
 qstr_+1_to_Agility|+1 Agilität
 qstr_+1_to_Leadership|+1 Führerschaft
 qstr_+1_to_Wildcraft|+1 Wildkunde
+qstr_+1_to_Tracking|+1 Spurensuche
+qstr_when_equipped|wenn ausgerüstet
 qstr_+1_to_Power_Draw|+1 Bogenzugkraft
 qstr_The_record_of_Balin_|Aufzeichnungen über Balins verlorene Expedition.
 qstr_Who_might_be_interes|Wen könnte das interessieren?
@@ -213,16 +215,18 @@ qstr_+1_to_Charisma|+1 Charisma
 qstr_+1_to_Surgery|+1 Chirurgie
 qstr_+1_to_Intelligence|+1 Intelligenz
 qstr_+2_to_Surgery|+2 Surgery
-qstr_when_equipped|wenn ausgerüstet
 qstr_+1_to_Riding|+1 Reiten
 qstr_+1_to_Mounted_Archer|+1 Berittenes Bogenschießen
+qstr_Bonus_to_Riding|Bonus auf Reiten
+qstr_when_equipped.__Effec|wenn ausgerüstet. (Verstärkt durch Stärke)
+qstr_Orcs:_+1_Riding_Requ|Orks: +1 Reitanforderung
 qstr_+1_to_Prisoner_Mgmt|+1 Gefangenenaufsicht
 qstr_+2_to_Tactics|+2 Taktik
 qstr_+1_Intelligence|+1 Intelligenz
 qstr_+{reg1}_to_Spotting|+{reg1} Aufklärung
 qstr__Scales_with_Wildcra|(Verstärkt durch Wildkunde)
+qstr_+1_to_Power_Throw|+1 Wurfkraft
 qstr_+1_to_Spotting|+1 Aufklärung
-qstr_+2_to_Athletics|+2 Athletik
 qstr_Less_Dunnish_upkeep|Weniger Unterhalt für Dunländer
 qstr_Less_Wargs_upkeep|Weniger Unterhalt für Warge
 qstr_Light_Armor|Leichte Rüstung
@@ -694,7 +698,7 @@ qstr_A_thunderstorm_from_t|Ein Sturm aus dem Nebelgebirge wütet über dem Schla
 qstr_A_poisonous_fog_from|Ein giftiger Dampf aus Dol Guldur legt sich über das Schlachtfeld. Er schwächt dich und deine Truppen und Furcht macht sich breit.
 qstr_A_poisonous_fog_from_|Ein giftiger Dampf aus Dol Guldur legt sich über das Schlachtfeld. Du fühlst keine Beeinträchtigung, aber deine Feinde leiden und du kannst ihre Angst riechen.
 qstr_You_shapeshift_into_|Du nimmst Bärengestalt an!
-qstr_You_got_{reg1}_xp_in|Du hast als Bär {reg1} Erfahrung erhalten.
+qstr_You_got_{reg1}_exper|Du hast als Bär {reg1} Erfahrung erhalten.
 qstr_Your_ability_to_chan|Du hast deine Fähigkeit als pelzwechsler entdeckt. Von nun an kannst du die Wildnis als Mensch oder als Bär durchstreifen.
 qstr_You_change_back_to_h|Du wechselst zurück in deine menschliche Form...
 qstr_Your_mount_stumbles!|Dein Reittier stolpert! Es scheint zu lahmen.
@@ -711,6 +715,7 @@ qstr_Use_Up/Down_arrow_ke|Drücke Pfeiltasten Hoch/Runter, um den Winkel zu ver�
 qstr_Fixed_Camera___Right|Feste Kamera - Rechte Schulter
 qstr_Fixed_Camera___Left_|Feste Kamera - Linke Schulter
 qstr_Fixed_Camera___Cente|Feste Kamera - zentriert
+qstr_Shield_is_too_big_to|Schild zu groß, um mit einem Bogen benutzt zu werden.
 qstr_While_visiting_towns|In Städten, Festungen und Lagern kannst du dich mit den Leuten unterhalten. Angehörige verschiedener Fraktionen haben unterschiedliches zu sagen. Einige werden ihre Sorgen und Hoffnungen mit dir teilen, andere das neueste Gerücht. Beides kann dir zu einem besseren Verständnis der jeweiligen Kultur verhelfen, oder aber Hinweise auf geheime Orte oder Tipps und Tricks für das Reisen durch Mittelerde und das Kämpfen im Ringkrieg bieten. 
 qstr_Cannot_leave_now.|Du kannst jetzt nicht gehen.
 qstr_You_have_found_the_l|Örtliche Schmiede gefunden.
@@ -746,7 +751,6 @@ qstr_Nazgul_diving_attack|Nazgulangriff auf {s11}!
 qstr_{s11}_is_{s10}_in_th|{s11} wurde durch den Angriff {s10}!
 qstr_Received_{reg66}_dam|{reg66} Schaden erlitten.
 qstr_You_yell_for_your_ho|Du rufst nach deinem Pferd.
-qstr_{s1}_s_morale:_{reg1|{s1}s Moral: {reg1}
 qstr_You_do_not_need_to_r|Du musst deine Truppen noch nicht sammeln.
 qstr_You_rally_your_troop|Du gibst einen Sammelbefehl!
 qstr_{s5}_rallies_{reg65?|{s5} sammelt {reg65?her:his} Truppen um sich!
@@ -987,6 +991,17 @@ qstr_Luckily_some_passing|Glücklicherweise kommen einige Städter des Weges, se
 qstr_{s13}^^You_have_succ|{s13}^^Du bist erfolgreich hineingeschlichen.
 qstr_the_place|die Örtlichkeit
 qstr_the_castle|die Feste
+qstr_the_Citadel|zur Zitadelle
+qstr_the_Secret_Cave|zur Geheimen Höhle
+qstr_Meduseld_the_Golden_|zum Meduseld, der Goldenen Halle
+qstr_the_Lord_Halls|zu den Herrenhallen
+qstr_the_Leader_s_Cave|zur Höhle des Befehlshabers
+qstr_the_Tower|zum Turm
+qstr_the_tower_of_Orthanc|zum Turm von Orthanc
+qstr_the_Throne_Room|zum Thronsaal
+qstr_Beorn_s_Hall|Beorns Halle
+qstr_the_Hall|zur Halle
+qstr_the_Great_Chamber_of|die Große Halle von Thrór
 qstr_Stay_indoors_for_som|Einige Zeit im Inneren rasten ({reg1} Ressourcenpunkte pro Nacht)
 qstr_Camp_outside_for_som|Einige Zeit draußen rasten (kostenlos)
 qstr_{s4}_s_scouts_have_s|Nachricht deiner Niederlage erreicht {s4}. Du hast Schande über {s4} gebracht und musst die Verantwortung für dein Versagen übernehmen.
@@ -1015,9 +1030,6 @@ qstr_You_have_defeated_the|Du hast dir feindliche Flotte besiegt! Dies ist ein s
 qstr_You_defeated_the_int|Du hast die Abfangflotte besiegt! Auch wenn dir nicht genügend Kräfte bleiben, um die Stadt selbst anzugreifen, ist dies ein großer Sieg!
 qstr_You_drove_back_the_e|Du konntest die feindliche Flotte zwar in die Flucht schlagen, hast aber auch die meisten deiner Schiffe verloren.
 qstr_You_were_defeated_by|Ihr wurdet von der feindlichen Abfangflotte in die Flucht geschlagen!
-qstr_Lorien|in Lorien
-qstr_Imladris|Imladris
-qstr_Woodelf|Waldelb
 qstr_^^^^^^^You_come_upon|^^^^^^^Du triffst auf die Flüchtlinge aus {s2} auf ihrem Weg nach {s3}. ^^Es sind größtenteils Alte und Kranke, begleitet von Frauen und Kindern.^^ Es gibt einige Wachen, aber nicht genug, um alle für einem Angriff zu schützen.
 qstr_^^^^^^^You_come_upon_|^^^^^^^Du triffst endlich auf die Flüchtlinge, die du seit {s2} verfolgst. Ihr Ziel scheint zu sein {s3} und es sind viele Alte und Kranke darunter. ^^Es gibt einige Wachen, aber nicht genug, um dich und deine Männer daran zu hindern, sie alle abzuschlachten.
 qstr_^^At_last_the_Master|^^Endlich, der Meister macht den ersten Zug! Die Fackeln leuchten hell, die scharfen Schwerter glänzen. Du und deine Jungs werdet bald eure Marschbefehle erhalten. Ei, es wird genug Kampf für alle geben, und Ruhm ebenso!^^Dir wird die Ehre zugesprochen, dem Meister im gezackten Turm deine Aufwartung machen zu dürfen. Wahrscheinlich werden deine ersten Aufgaben Snaga-Arbeit sein. Hier ein Dorf niederbrennen, dort einem Versorgungstrupp auflauern. Aber du wirst dich schon noch beweisen können. Wer sagt denn, dass du nicht bald ebenso wichtig bist wie {s2} und sein Gefolge in {s3}?
@@ -1048,6 +1060,7 @@ qstr_You_are_entering_{s1|Du bist nun {s1} ({s2}).
 qstr_You_are_entering_{s1}|Du bist nun {s1}.
 qstr_The_war_expands_comm|Der Krieg weitet sich aus. Die Anführer werden kühner! (Belagerungsbedingungen gesenkt)
 qstr_Your_party_is_spotte|Dein Trupp wurde in {s1} bemerkt.
+qstr_The_effects_of_the_O|De Wirkung des Orkgebräus hat nachgelassen.
 qstr_Party_has_nothing_to|Die Truppe hat nichts zu essen!
 qstr_You_pay_for_accommod|Du bezahlst die Unterbringung.
 qstr_The_troll_outside_{s|Der Troll bei {s2} ist getötet worden. Auftrag abgebrochen.
@@ -1158,7 +1171,6 @@ qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've R
 qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
-qstr_the_Citadel|zur Zitadelle
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Truchsess Denethor
 qstr_the_Golden_Hall|der Goldenen Halle

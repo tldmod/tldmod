@@ -68,7 +68,7 @@ mno_start_go|GONDOR, a Fehér Torony Királysága
 mno_start_ro|ROHAN, a lovasnép
 mno_start_du|DÚNADÁN, az Emberek ősi vérvonala
 mno_start_be|BEORNFIAK, a Medve népe
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|SUHATAG északi Királysága
 menu_start_good_elf|^^^^^^^^^^Melyik erdőben élsz, Elsőszülött?
 mno_start_ri|VÖLGYZUGOLY, Elrond úré
@@ -175,7 +175,6 @@ mno_be_quiet|Tedd el a fegyvereket és maradj csöndben! Most pedig tűnés inne
 mno_be_bold|Gyerünk! Nem félek holmi növényektől vagy régi mende-mondáktól!
 mno_fight_back|Járjunk utána! Kutassátok át területet! Égessünk fel egy-két fát!
 menu_fangorn_search_fails|^^^^^^Átkutatod a sötét, sűrű erdőt, de semmit sem találsz.^Mégis úgy érzed, valaki figyel, és egyre jobban fenyegetve érzed magad.
-menu_fangorn_battle_debrief_won|^^^Fergeteges győzelem!^^^Szóval erre utaltak a legendák Fangornról...
 menu_fangorn_killed_player_only|^^^^^^A sűrű, sötét erdőben vándorolsz.^Hirtelen valami megüt. Talán egy nehéz ág esett a fejedre?^Csupán néhány percig maradsz eszméletlen.Súlyosan megsérültél, de folytathatod utadat.
 mno_ow_get_out|Ááuu! Tűnjünk el erről az átkozott helyről!
 menu_fangorn_killed_troop_and_player|^^^^^^A sűrű, sötét erdőben vándorolsz.^^Hirtelen valami megüt. Talán egy nehéz ág esett a fejedre?^^Miután magadhoz térsz néhány perccel később, észreveszed, hogy nem mindenki volt ilyen szerencsés a csapatodból.^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^{s2} segítségére sietsz {s1} ellen.^ {reg22} katona áll 
 mno_join_attack|Az ellenség megrohamozása.
 mno_join_order_attack|Utasítsd csapataidat szövetségeseiddel az ellenség megtámadására, miközben te hátra maradsz.
 mno_control_allies_join_menu|Használd a Befolyás pontjaid hogy parancsokat osztogass a szövetségeseidnek a csatatéren.
+; mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|Visszavonulás.
 mno_player_control_allies_join_menu|Vezesd őket, és rohand le az ellenséget
 menu_join_order_attack|{s4}^^Veszteségeid: {s8}^^Szövetségesek vesztesége: {s9}^^Ellenség vesztesége: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Ne kérj jutalmat.
 menu_siege_started_defender|{s1} támadást indított {s2} falai ellen. {reg22} csapatod áll készen megütközni az ellenség {reg11} csapatával szemben. Úgy döntesz, hogy...
 mno_siege_defender_join_battle|Csatlakozol a csatához.
 mno_siege_defender_troops_join_battle|Parancsold meg katonáidnak, hogy menjenek a csatába nélküled.
+mno_siege_defender_do_not_join_battle|Nem avatkozol közbe.
 menu_siege_join_defense|{s4}^^Veszteségeid: {s8}^^Szövetségesek veszteségei: {s9}^^Ellenség veszteségei: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^A szökevény kemény csapása a földre küld, látásod elhomályosul és elájulsz. Az idő csak telik. Amikor kinyitod a szemeidet, véresen és kék-zöld foltosan heversz a földön, de szerencsédre egyik seb sem tűnik halálosnak.
 menu_town_bandits_succeeded|^^^^^A koboldok elhullanak előtted mint a búzakalászok a kasza előtt! Hamarosan egyedül vagy csak talpon, míg támadóid többsége eszméletlen, halott vagy éppen haldoklik. A helyiek biztosan nagyon hálásak lesznek, ha megtudják, megmentetted őket ettől a veszedelemtől.

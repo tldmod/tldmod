@@ -124,12 +124,12 @@ trp_c4_rhun_veteran_swift_horseman|룬 고참 쾌속기병
 trp_c4_rhun_veteran_swift_horseman_pl|룬 고참 쾌속기병
 trp_c5_rhun_falcon_horseman|팔콘 기병
 trp_c5_rhun_falcon_horseman_pl|팔콘 기병
-; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
-; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
+trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
 trp_i3_rhun_tribal_infantry|룬 부족 전사
 trp_i3_rhun_tribal_infantry_pl|룬 부족 전사
-; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
-; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
+trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
+trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
 trp_i5_rhun_ox_warrior|황소 전사
 trp_i5_rhun_ox_warrior_pl|황소 전사
 trp_c2_rhun_horseman|룬 기병
@@ -672,8 +672,8 @@ trp_armoured_troll|무장 트롤
 trp_armoured_troll_pl|무장 트롤
 trp_olog_hai|모르도르 올로그 하이
 trp_olog_hai_pl|모르도르 올로그 하이
-trp_ent|엔트
-trp_ent_pl|엔트
+trp_ent_old|엔트
+trp_ent_old_pl|엔트
 trp_i1_guldur_orc_snaga|돌 굴두르 오르크 노예
 trp_i1_guldur_orc_snaga_pl|돌 굴두르 오르크 노예
 trp_a2_guldur_orc_tracker|돌 굴두르 오르크 길잡이
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|군다바드 와르그기수
 trp_c4_gunda_warg_rider_pl|군다바드 와르그기수
 trp_c5_gunda_clan_rider|북부 부족 고블린 기수
 trp_c5_gunda_clan_rider_pl|북부 부족 고블린 기수
+trp_i5_gunda_orc_champion|군다바드 오르크 챔피언
+trp_i5_gunda_orc_champion_pl|군다바드 오르크 챔피언
 trp_mountain_goblin2|산고블린
 trp_mountain_goblin2_pl|산고블린
 trp_tribal_orc2|부족 오르크
 trp_tribal_orc2_pl|부족 오르크
-trp_tribal_orc_warrior2|부족 오르크 전사
-trp_tribal_orc_warrior2_pl|부족 오르크 전사
-trp_i5_gunda_orc_champion|군다바드 오르크 챔피언
-trp_i5_gunda_orc_champion_pl|군다바드 오르크 챔피언
+trp_i5_gunda_orc_champion2|군다바드 오르크 챔피언
+trp_i5_gunda_orc_champion2_pl|군다바드 오르크 챔피언
 trp_i2_mordor_num_renegade|검은 누메노르 변절자
 trp_i2_mordor_num_renegade_pl|검은 누메노르 변절자
 trp_i3_mordor_num_warrior|검은 누메노르 전사
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|"흥정꾼" 푸셔트
 trp_smith_khand_ac_pl|대장간
 trp_smith_umbar_ac|풀무 장인 푸이니르
 trp_smith_umbar_ac_pl|대장간
-trp_barman_mtirith|여관 주인
-trp_barman_mtirith_pl|성채
-trp_barman_pelargir|여관 주인
-trp_barman_pelargir_pl|성
-trp_barman_linhir|여관 주인
-trp_barman_linhir_pl|성
-trp_barman_dolamroth|여관 주인
-trp_barman_dolamroth_pl|성
-trp_barman_edhellond|여관 주인
-trp_barman_edhellond_pl|성
-trp_barman_lossarnach|여관 주인
-trp_barman_lossarnach_pl|성
-trp_barman_tarnost|여관 주인
-trp_barman_tarnost_pl|성
-trp_barman_erech|여관 주인
-trp_barman_erech_pl|성
-trp_barman_pinnath|여관 주인
-trp_barman_pinnath_pl|성
-trp_barman_hannun|여관 주인
-trp_barman_hannun_pl|비밀 동굴
-trp_barman_calembel|여관 주인
-trp_barman_calembel_pl|성
-trp_barman_edoras|여관 주인
-trp_barman_edoras_pl|황금회랑 메두셀드
-trp_barman_aldburg|여관 주인
-trp_barman_aldburg_pl|성
-trp_barman_hornburg|여관 주인
-trp_barman_hornburg_pl|군주의 회랑
+trp_smith_moria_ac|풀무 장인 버르가크
+trp_smith_moria_ac_pl|대장간
+trp_smith_dale_ac|불의 손 아르델
+trp_smith_dale_ac_pl|대장간
+trp_smith_beorn_ac|도끼장인 베오르날라프
+trp_smith_beorn_ac_pl|대장간
+trp_smith_woodelf_west_camp|도엘라스
+trp_smith_woodelf_west_camp_pl|대장간
+trp_smith_woodmen|도끼장인 베오르날라프
+trp_smith_woodmen_pl|대장간
+trp_smith_beorn_v|도끼장인 베오르날라프
+trp_smith_beorn_v_pl|대장간
+trp_smith_troll_cave|풀무 장인 버르가크
+trp_smith_troll_cave_pl|대장간
+trp_smith_dg_outpost|스타즈그 둘바시
+trp_smith_dg_outpost_pl|대장간
+trp_smith_main_rhun|브라니미르 브론닉
+trp_smith_main_rhun_pl|임시 대장간
+trp_smith_south_rhun|브라니미르 브론닉
+trp_smith_south_rhun_pl|임시 대장간
+trp_smith_gundabad_ne|"눈 상인" 블러르그
+trp_smith_gundabad_ne_pl|대장간
+trp_smith_gundabad_nw|"눈 상인" 블러르그
+trp_smith_gundabad_nw_pl|대장간
+trp_smith_gundabad_s|"눈 상인" 블러르그
+trp_smith_gundabad_s_pl|대장간
+trp_smith_gundabad_m|"눈 상인" 블러르그
+trp_smith_gundabad_m_pl|대장간
 trp_barman_eastemnet|여관 주인
 trp_barman_eastemnet_pl|성
 trp_barman_westfold|여관 주인
@@ -1222,30 +1222,30 @@ trp_barman_morannon|여관 주인
 trp_barman_morannon_pl|지도자의 동굴
 trp_barman_mmorgul|여관 주인
 trp_barman_mmorgul_pl|탑
-trp_barman_cungol|여관 주인
-trp_barman_cungol_pl|성
-trp_barman_isengard|여관 주인
-trp_barman_isengard_pl|오르상크의 탑
-trp_barman_cgaladhon|여관 주인
-trp_barman_cgaladhon_pl|목책성
-trp_barman_cdolen|여관 주인
-trp_barman_cdolen_pl|목책성
-trp_barman_camroth|여관 주인
-trp_barman_camroth_pl|목책성
-trp_barman_thalls|여관 주인
-trp_barman_thalls_pl|왕좌의 방
-trp_barman_beorn|여관 주인
-; trp_barman_beorn_pl|Beorn's Hall
-trp_barman_moria|여관 주인
-trp_barman_moria_pl|족장의 회의실
-trp_barman_dale|여관 주인
-trp_barman_dale_pl|성
-trp_barman_esgaroth|여관 주인
-trp_barman_esgaroth_pl|회랑
-trp_barman_erebor|여관 주인
-trp_barman_erebor_pl|스로르의 위대한 회랑
-trp_barman_dolguldur|여관 주인
-trp_barman_dolguldur_pl|성
+trp_merchant_main_rhun|보급 담당자
+trp_merchant_main_rhun_pl|야영지 창고
+trp_merchant_dg_outpost|보급 담당자
+trp_merchant_dg_outpost_pl|마구간과 창고
+trp_merchant_woodelf_west_camp|보급 담당자
+trp_merchant_woodelf_west_camp_pl|요정족 보급품
+trp_merchant_gundabad_m|보급 담당자
+trp_merchant_gundabad_m_pl|야영지 창고
+trp_merchant_gundabad_s|보급 담당자
+trp_merchant_gundabad_s_pl|야영지 창고
+trp_merchant_gundabad_nw|보급 담당자
+trp_merchant_gundabad_nw_pl|야영지 창고
+trp_merchant_gundabad_ne|보급 담당자
+trp_merchant_gundabad_ne_pl|야영지 창고
+trp_merchant_troll_cave|보급 담당자
+trp_merchant_troll_cave_pl|와르그 갱과 보급품
+trp_merchant_beorn_v|보급 담당자
+trp_merchant_beorn_v_pl|마구간과 창고
+trp_merchant_orc_sentry|보급 담당자
+trp_merchant_orc_sentry_pl|야영지 창고
+trp_merchant_candros|보급 담당자
+trp_merchant_candros_pl|마구간과 창고
+trp_merchant_hannun|보급 담당자
+trp_merchant_hannun_pl|ranger supplies
 trp_merchant_mtirith|보급 담당자
 trp_merchant_mtirith_pl|마구간과 창고
 trp_merchant_pelargir|보급 담당자
@@ -1434,42 +1434,42 @@ trp_elder_erebor|에레보르 길드장
 trp_elder_erebor_pl|회랑
 trp_elder_dolguldur|굴두르 족장
 trp_elder_dolguldur_pl|검은 성
-trp_elder_gondor_ac|야영지 보급담당자
-trp_elder_gondor_ac_pl|야영지
-trp_elder_rohan_ac|야영지 보급담당자
-trp_elder_rohan_ac_pl|야영지
-trp_elder_mordor_ac|야영지 보급담당자
-trp_elder_mordor_ac_pl|야영지
-trp_elder_isengard_ac|야영지 보급담당자
-trp_elder_isengard_ac_pl|야영지
-trp_elder_lorien_ac|야영지 보급담당자
-trp_elder_lorien_ac_pl|야영지
-trp_elder_woodelf_ac|야영지 보급담당자
-trp_elder_woodelf_ac_pl|야영지
-trp_elder_imladris_ac|야영지 보급담당자
-trp_elder_imladris_ac_pl|야영지
-trp_elder_beorn_ac|야영지 보급담당자
-trp_elder_beorn_ac_pl|야영지
-trp_elder_harad_ac|하라드 야영지 대장
-trp_elder_harad_ac_pl|야영지
-trp_elder_rhun_ac|룬 야영지 대장
-trp_elder_rhun_ac_pl|야영지
-trp_elder_khand_ac|칸드 야영지 대장
-trp_elder_khand_ac_pl|야영지
-trp_elder_dunland_ac|던랜드 야영지 대장
-trp_elder_dunland_ac_pl|야영지
-trp_elder_umbar_ac|움바르 보급담당자
-trp_elder_umbar_ac_pl|야영지
-trp_elder_moria_ac|모리아 야영지 대장
-trp_elder_moria_ac_pl|야영지
-trp_elder_gunda_ac|군다바드 야영지 대장
-trp_elder_gunda_ac_pl|야영지
-trp_elder_dale_ac|너른골 보급담당자
-trp_elder_dale_ac_pl|야영지
-trp_elder_guldur_ac|굴두르 야영지 대장
-trp_elder_guldur_ac_pl|야영지
-trp_elder_dwarf_ac|난쟁이족 야영지 보급담당자
-trp_elder_dwarf_ac_pl|야영지
+trp_elder_wosgiliath|야영지 보급담당자
+trp_elder_wosgiliath_pl|야영지
+trp_elder_oscamp|야영지 보급담당자
+trp_elder_oscamp_pl|야영지
+trp_elder_eosgiliath|야영지 보급담당자
+trp_elder_eosgiliath_pl|야영지
+trp_elder_uoutpost|야영지 보급담당자
+trp_elder_uoutpost_pl|야영지
+trp_elder_uhcamp|야영지 보급담당자
+trp_elder_uhcamp_pl|야영지
+trp_elder_urcamp|야영지 보급담당자
+trp_elder_urcamp_pl|야영지
+trp_elder_woodelf_camp|Elder
+trp_elder_woodelf_camp_pl|야영지
+trp_elder_woodelf_west_camp|Elder
+trp_elder_woodelf_west_camp_pl|야영지
+trp_elder_beorn_v|Beorning Elder
+trp_elder_beorn_v_pl|마을
+trp_elder_troll_cave|Cave Chief
+trp_elder_troll_cave_pl|동굴
+trp_elder_dg_outpost|룬 야영지 대장
+trp_elder_dg_outpost_pl|야영지
+trp_elder_rhun_sc|룬 야영지 대장
+trp_elder_rhun_sc_pl|야영지
+trp_elder_rhun_nc|룬 야영지 대장
+trp_elder_rhun_nc_pl|야영지
+trp_elder_gunda_ne|Orc Elder
+trp_elder_gunda_ne_pl|야영지
+trp_elder_gunda_nw|Orc Elder
+trp_elder_gunda_nw_pl|야영지
+trp_elder_gunda_s|Orc Elder
+trp_elder_gunda_s_pl|야영지
+trp_elder_gunda_m|Orc Elder
+trp_elder_gunda_m_pl|야영지
+trp_elder_ironhill|야영지 대장
+trp_elder_ironhill_pl|야영지
 trp_village_1_elder|채찍질 주인
 trp_village_1_elder_pl|동굴
 trp_tutorial_chest_1|근접 무기 상자
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|동굴 트롤
 trp_troll_placeholder_6_pl|동굴 트롤
 trp_wild_troll|야생 동굴 트롤
 trp_wild_troll_pl|야생 동굴 트롤
-trp_ent2|엔트
-trp_ent2_pl|엔트
+trp_ent|엔트
+trp_ent_pl|엔트
 trp_mountain_goblin|산고블린
 trp_mountain_goblin_pl|산고블린
 trp_tribal_orc|부족 오르크

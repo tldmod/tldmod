@@ -68,7 +68,7 @@ mno_start_go|Gondor, il Regno della Torre Bianca
 mno_start_ro|Rohan, i Signori dei Cavalli
 mno_start_du|Dúnedain, l'antica dinastia degli Uomini
 mno_start_be|Beorniani, gli Uomini-Orso
-mno_start_wo|BOSCAIOLI, dai confini di Mirkwood
+mno_start_wo|BOSCAIOLI, dai margini di Bosco Atro
 mno_start_da|Il Regno di Dale
 menu_start_good_elf|^^^^^^^^^^In quale foresta vivi, Elfo ?
 mno_start_ri|Gran Burrone, di Lord Elrond
@@ -175,7 +175,6 @@ mno_be_quiet|Abbassa le armi e rimani calmo ! Ora via da qui !
 mno_be_bold|Continua ! Non ho paura delle piante e di vecchie leggende !
 mno_fight_back|Mettetevi a cercare ! Ispezionare l'area ! Abbattete e bruciate un albero o due !
 menu_fangorn_search_fails|^^^^^^Esplori l'oscura, fitta foresta ma non trovi niente.^Eppure, ti senti osservato e minacciato, sempre di più.
-menu_fangorn_battle_debrief_won|^^Vittoria !^^^Così questo era il significato di tutte le leggende su Fangorn...
 menu_fangorn_killed_player_only|^^^^^^Osservi nella fitta, oscura foresta.^All'improvviso qualcosa ti colpisce ! Forse un pesante ramo è caduto sulla tua testa ?^Rimani incosciente per qualche minuto. Hai delle ferite serie ma puoi continuare.
 mno_ow_get_out|Ahi ! Andiamocene da questo posto maledetto !
 menu_fangorn_killed_troop_and_player|^^^^^^Osservi nella fitta, oscura foresta.^^All'improvviso vieni colpito da qualcosa ! Forse un pesante ramo è caduto sulla tua testa.^^Svieni per qualche minuto, quando ti riprendi, noti con terrore che non tutte le tue truppe sono state così fortunate.^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^Assisti {s2} contro {s1}.^ Hai {reg22} truppe pronte per aff
 mno_join_attack|Carica il nemico.
 mno_join_order_attack|Ordina alle tue truppe di attaccare al fianco degli alleati mentre tu rimani nelle retrovie.
 mno_control_allies_join_menu|Usa i tuoi Punti Influenza per Comandare i Tuoi Alleati nel Campo.
+mno_join_attack_bearform|Lanciati in battaglia in forma d'orso
 mno_join_leave|Ritirati.
 mno_player_control_allies_join_menu|Comandali e carica il nemico
 menu_join_order_attack|{s4}^^I tuoi caduti: {s8}^^Caduti alleati: {s9}^^Caduti nemici: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Non pretendere una ricompensa.
 menu_siege_started_defender|{s1} sta lanciando l'assalto contro le mure di {s2}. Hai {reg22} soldati pronti alla battaglia conro i nemici di {reg11}. Decidi di...
 mno_siege_defender_join_battle|Unirti alla battaglia.
 mno_siege_defender_troops_join_battle|Ordinare ai tuoi uomini di partecipare alla battaglia senza di te.
+mno_siege_defender_do_not_join_battle|Non farti coinvolgere.
 menu_siege_join_defense|{s4}^^I tuoi caduti: {s8}^^Caduti alleati: {s9}^^Caduti nemici: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^ Un duro colpo da parte del fuggitivo ti manda a terra, mentre la testa ti gira vorticosamente la tua vista si spegne. Il tempo passa. Quando apri nuovamente gli occhi ti ritrovi malconcio e sanguinante, ma per fortuna nessuna delle ferite sembra essere letale.
 menu_town_bandits_succeeded|^^^^^ I goblin cadono davanti a te come il grano sotto la falce ! Presto scopri di essere l'unico rimasto in piedi, mentre la maggior parte dei tuoi nemici si trova privo di sensi, morto o moribondo. Certamente le genti del posto ti saranno molto grate per averle salvate da questa minaccia.

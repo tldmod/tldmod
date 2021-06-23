@@ -197,6 +197,8 @@ qstr_+1_to_Strength|体力に+1
 qstr_+1_to_Agility|敏捷性に+1
 qstr_+1_to_Leadership|統率力スキルに+1
 qstr_+1_to_Wildcraft|ワイルドクラフトに+1
+; qstr_+1_to_Tracking|+1 to Tracking
+qstr_when_equipped|(要装備)
 qstr_+1_to_Power_Draw|弓術スキルに+1
 qstr_The_record_of_Balin_|失踪したバーリン一団の記録。
 qstr_Who_might_be_interes|これに興味を持つとしたら、誰が考えられるだろう？
@@ -213,16 +215,18 @@ qstr_+1_to_Charisma|魅力に+1
 qstr_+1_to_Surgery|手術スキルに+1
 qstr_+1_to_Intelligence|知性に+1
 ; qstr_+2_to_Surgery|+2 to Surgery
-qstr_when_equipped|(要装備)
 qstr_+1_to_Riding|乗馬スキルに+1
 qstr_+1_to_Mounted_Archer|馬上弓術に+1
+; qstr_Bonus_to_Riding|Bonus to Riding
+; qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
+; qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
 qstr_+1_to_Prisoner_Mgmt|囚人管理スキルに+1
 qstr_+2_to_Tactics|戦術スキルに+2
 ; qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|スポッティングに+{reg1}
 qstr__Scales_with_Wildcra|（ワイルドクラフトの鱗)
+; qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|スポッティングに+1
-qstr_+2_to_Athletics|アスレチックに+2
 qstr_Less_Dunnish_upkeep|褐色人の維持費が低下
 qstr_Less_Wargs_upkeep|ワーグ騎兵の維持費が低下
 qstr_Light_Armor|軽装鎧
@@ -694,7 +698,7 @@ qstr_A_thunderstorm_from_t|霧ふり山から降り注ぐ激しい雷雨が戦�
 qstr_A_poisonous_fog_from|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたとあなたの兵たちは体調が悪くなりました。兵たちは恐怖を感じています。
 qstr_A_poisonous_fog_from_|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたはこれといった影響は感じませんが、敵勢の苦しむ声が聞こえてきます。敵は恐怖しているようです。
 ; qstr_You_shapeshift_into_|You shapeshift into a bear!
-; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
+; qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
 ; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
 ; qstr_You_change_back_to_h|You change back to human form...
 qstr_Your_mount_stumbles!|あなたの馬がよろめいています！どうやら足をくじいているようです。
@@ -711,6 +715,7 @@ qstr_Use_Up/Down_arrow_ke|上下の矢印キーで傾きの調整
 qstr_Fixed_Camera___Right|固定カメラ - 右肩
 qstr_Fixed_Camera___Left_|固定カメラ - 左肩
 qstr_Fixed_Camera___Cente|固定カメラ - 中央
+; qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 qstr_While_visiting_towns|町や拠点、野営のなかでは、歩き回っている人々と話をすることができます。 話の内容は各勢力によって違い、 自分たちの考えだったり、 うわさ話だったりします。 どちらもその人物の文化と所属勢力についての理解を深めるだけのものですが、 秘密の場所のヒントや、 旅をする上や指輪戦争を戦う上でのヒントやコツを話してくれる事もあります。
 qstr_Cannot_leave_now.|今は離脱できません。
 ; qstr_You_have_found_the_l|You have found the local smithy.
@@ -746,7 +751,6 @@ qstr_Nazgul_diving_attack|ナズグールが{s11}を攻撃しました!
 qstr_{s11}_is_{s10}_in_th|ナズグールの攻撃により、{s11}が{s10}！
 qstr_Received_{reg66}_dam|{reg66}のダメージを受けました。
 qstr_You_yell_for_your_ho|あなたは自分の馬を呼びました。
-qstr_{s1}_s_morale:_{reg1|{s1}の士気:{reg1}
 qstr_You_do_not_need_to_r|まだ檄を飛ばす必要はありません。
 qstr_You_rally_your_troop|あなたは自軍の兵士たちを奮い立たせました！
 qstr_{s5}_rallies_{reg65?|{s5}は部下の兵に檄を飛ばしました！
@@ -987,6 +991,17 @@ qstr_Luckily_some_passing|幸いにも通りがかった地元の民が排水溝
 qstr_{s13}^^You_have_succ|{s13}^^潜入に成功しました。
 qstr_the_place|この拠点
 qstr_the_castle|この城
+qstr_the_Citadel|城塞
+qstr_the_Secret_Cave|秘密の洞窟
+qstr_Meduseld_the_Golden_|黄金館
+qstr_the_Lord_Halls|領主の大広間
+qstr_the_Leader_s_Cave|指揮官の洞窟
+qstr_the_Tower|塔
+qstr_the_tower_of_Orthanc|オルサンクの塔
+qstr_the_Throne_Room|王の間
+; qstr_Beorn_s_Hall|Beorn's Hall
+qstr_the_Hall|大広間
+qstr_the_Great_Chamber_of|スロールの朝見の間
 qstr_Stay_indoors_for_som|屋内に宿営する(一晩につきリソースポイントを{reg1}消費します)
 qstr_Camp_outside_for_som|野外に野営を張る(無料)
 qstr_{s4}_s_scouts_have_s|{s4}の斥候が、あなたの任務失敗を報告しました。 この{s4}に恥をかかせた失敗の全責任は、 あなたひとりにあります。
@@ -1015,9 +1030,6 @@ qstr_You_have_defeated_the|あなたは襲撃艦隊を撃退しました！ こ�
 qstr_You_defeated_the_int|あなたは迎撃艦隊を撃退しました！ 町を襲撃する余力はもうありませんが、 これは大きな勝利です！
 qstr_You_drove_back_the_e|あなたは敵艦隊を撃退しましたが、自軍の船の大多数を失いました！
 qstr_You_were_defeated_by|あなたは迎撃艦隊に敗れ、町の襲撃に失敗しました！
-qstr_Lorien|ローリエン
-qstr_Imladris|イムラドリス
-qstr_Woodelf|森のエルフ
 qstr_^^^^^^^You_come_upon|^^^^^^^あなたは{s2}を出発して{s3}へ向かう途中の難民に出くわしました。^^彼らの多くは弱々しい老人で、女たちと子供たちが同行しています。^^護衛はついていますが、全員を襲撃から守るには不足です。
 qstr_^^^^^^^You_come_upon_|^^^^^^^{s2}から後を追ってきた難民に迫りました。 彼らは{s3}を目指しているようですが、 ほとんどは弱々しい老人です。^^護衛が数名ついていますが、 あなたたちの襲撃から全員を守ることは できないでしょう。
 qstr_^^At_last_the_Master|^^ついにご主人様が腰を上げた！たいまつが燃え盛る。 磨かれた武器がきらめく。間もなく、 あなたとあなたの屈強な同僚たちに進軍の命令が下されるだろう。 そうとも、数多くの戦いが待っている。手柄をたてる機会は山ほどあるぞ！^^あなたはご主人様との面会のため、彼の塔へ召喚される栄誉を得た。 初めの指令はおそらく、この村を襲え、あの隊商を襲撃せよ、 といったスナガ仕事になるだろう。 だがあなたはすぐに自らの価値を証明するだろう。ひょっとすると、 {s3}の{s2}の指揮官たちのような、 大きな存在にまで出世するかも知れない。^^戦争は始まったのだ。人間とその同盟者どもの終焉が始まったのだ！
@@ -1048,6 +1060,7 @@ qstr_You_are_entering_{s1|あなたは{s1}({s2})に入りました。
 qstr_You_are_entering_{s1}|あなたは{s1}に入りました。
 qstr_The_war_expands_comm|戦火が拡大し、指揮官たちはより大胆になりました！(包囲攻撃の必要条件が緩和されました)
 qstr_Your_party_is_spotte|あなたのパーティは{s1}に発見されました。
+; qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
 qstr_Party_has_nothing_to|食べるものがありません！
 qstr_You_pay_for_accommod|宿泊代を支払いました。
 qstr_The_troll_outside_{s|{s2}周辺のトロルは倒されました。任務はキャンセルされました。
@@ -1158,7 +1171,6 @@ qstr_Well_if_you_are_here|まあ、これを読んでるのならうまくいっ
 qstr_You_just_got_windyfl|スチーム版はインストールが楽だよ！
 qstr_Merry|メリー
 qstr_Pippin|ピピン
-qstr_the_Citadel|城塞
 qstr_Minas_Tirith|ミナス・ティリス
 qstr_Steward_Denethor|執政デネソール
 qstr_the_Golden_Hall|黄金館
@@ -1386,7 +1398,7 @@ qstr_Mercy_I_crave!_To_fa|お許しください、どうかお慈悲を！{s7}�
 qstr_strong_warriors_from|{s7}の強力な戦士たち
 qstr_champions_from_{s7}_|戦場における最強の戦士、{s7}軍の最精鋭たち
 qstr_{playername}_the_men|{playername}よ、 我が兵は恐るべき敵の兵の話に震え上がっておる。 おぬしの力でもって、 怖れるものなど何もないと兵士たちに示してもらいたい。 {s6}に戦いを挑み、 これを{reg22}名を打ち倒してくれ。
-qstr_{playername}_I_want_|{playername}よ、 敵勢など怖れるに足らぬという事を、 おぬしの手で我が兵に示してやってもらいたい。 おぬし自身の手で、 {s6}を {reg22}名殺すのだ！ 我が軍がより優れているという事の証明となるだろう！
+; qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superior force!
 qstr_I_will_do_what_you_a|お望みの通りにいたしましょう。兵によく示してやることにします。
 qstr_high_level_troops_fr|上級兵
 qstr_elite_level_troops_f|精鋭兵

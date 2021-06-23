@@ -83,8 +83,8 @@ itm_isengard_arrow|艾 辛 格 箭
 itm_leather_gloves|皮 手 套 
 itm_mail_mittens|鏈 甲 手 套 
 itm_leather_boots|皮 靴 
-; itm_leather_boots_dark|Rider Boots
-; itm_splinted_greaves|Splinted Greaves
+itm_leather_boots_dark|騎 手 靴
+itm_splinted_greaves|夾 板 脛 甲
 itm_white_tunic_a|平 民 服 裝
 itm_rohan_shoes|皮 鞋
 itm_furry_boots|毛 靴
@@ -154,8 +154,8 @@ itm_riv_shield_a|瑞 文 戴 爾 盾
 itm_riv_shield_b|瑞 文 戴 爾 盾
 itm_riv_bas_sword|瑞 文 戴 爾 半 手 劍
 itm_riv_1h_sword|瑞 文 戴 爾 劍
-; itm_riv_riding_sword|Rivendell Longsword
-; itm_riv_archer_sword|Rivendell Short Sword
+itm_riv_riding_sword|瑞 文 戴 爾 長 劍
+itm_riv_archer_sword|瑞 文 戴 爾 短 劍
 itm_riv_spear|瑞 文 戴 爾 長 槍
 itm_riv_light|瑞 文 戴 爾 外 衣 
 itm_riv_leather|瑞 文 戴 爾 皮 甲
@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|強 獸 人 追 蹤 者 盔
 itm_isen_uruk_helm_f|強 獸 人 追 蹤 者 盔
 itm_uruk_pike_b|魔 多 長 矛
 itm_uruk_falchion_a|半 獸 人 彎 刀
-itm_uruk_falchion_b|半 獸 人 彎 刀
-itm_uruk_spear|魔 多 長 槍
-itm_uruk_skull_spear|半 獸 人 頭 骨 長 槍
-itm_uruk_voulge|半 獸 人 鉤 鐮 槍
-itm_uruk_heavy_axe|半 獸 人 重 斧
+itm_uruk_falchion_b|半 獸 人 大 半 月 刀
 itm_isengard_sword|艾 辛 格 劍
 itm_isengard_axe|艾 辛 格 斧
 itm_isengard_hammer|艾 辛 格 錘
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|艾 辛 格 強 獸 人 盾
 itm_wood_club|木 棍
 itm_twohand_wood_club|大 木 棍
 itm_bone_cudgel| 骨 棒
-itm_skull_club|頭 骨 棍
+itm_orc_pick|半 獸 人 十 字 鎬
+itm_orc_hammer|邪 惡 錘
 itm_orc_club_b|座 狼 騎 手 棍
 itm_orc_club_c|半 獸 人 帶 刺 棍
 itm_orc_club_d|邪 惡 戰 錘
 itm_orc_sledgehammer|半 獸 人 大 槌
 itm_orc_simple_spear|半 獸 人 長 槍
 itm_orc_skull_spear|半 獸 人 頭 骨 長 槍
-itm_orc_bill|半 獸 人 長 柄 鍥
-itm_orc_slasher|半 獸 人 砍 刀
+itm_orc_bill|半 獸 人 長 柄 武 器
+itm_orc_slasher|半 獸 人 短 劍
 itm_orc_falchion|半 獸 人 彎 刀
 itm_orc_scimitar|半 獸 人 半 月 刀
 itm_orc_sabre|半 獸 人 軍 刀
-itm_orc_machete|半 獸 人 柴 刀
+itm_orc_battle_axe|半 獸 人 戰 斧
 itm_orc_axe|半 獸 人 斧
-itm_orc_two_handed_axe|半 獸 人 雙 手 斧
+itm_orc_two_handed_axe|半 獸 人 巨 斧
 itm_orc_throwing_axes|半 獸 人 擲 斧
 itm_orc_bow|半 獸 人 弓
 itm_orc_shield_a|半 獸 人 盾
@@ -493,7 +490,8 @@ itm_mirkwood_leather|木 精 靈 皮 甲
 itm_mirkwood_pad|巨 綠 森 縫 製 外 套
 itm_mirkwood_mail|巨 綠 森 鎖 子 甲
 itm_mirkwood_scale|巨 綠 森 輕 型 鱗 甲
-itm_mirkwood_heavy_scale|幽 暗 密 林 葉 鱗 甲
+itm_mirkwood_heavy_scale|巨 綠 森 葉 鱗
+itm_mirkwood_sword|木 精 靈 劍
 itm_mirkwood_great_spear|巨 綠 森 巨 槍
 itm_mirkwood_war_spear|巨 綠 森 戰 槍
 itm_mirkwood_short_spear|木 精 靈 長 槍
@@ -602,11 +600,11 @@ itm_rhun_armor_p|盧 恩 貴 族 鎧 甲
 itm_rhun_armor_k|盧 恩 貴 族 鎧 甲
 itm_rhun_helm_barbed|盧 恩 帶 刺 盔
 itm_rhun_helm_horde|盧 恩 群 眾 盔
-; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot|盧 恩 鍋 盔
 itm_rhun_helm_round|盧 恩 圓 盔
 itm_rhun_helm_leather|盧 恩 皮 盔
 itm_rhun_helm_chieftain|盧 恩 頭 目 盔
-; itm_rhun_warpick|Rhun War Pick
+itm_rhun_warpick|盧 恩 戰 鎬
 itm_rhun_greataxe|盧 恩 大 斧
 itm_rhun_battleaxe|盧 恩 戰 斧
 itm_rhun_falchion|野 蠻 彎 刀
@@ -615,7 +613,7 @@ itm_rhun_greatfalchion|野 蠻 大 彎 刀
 itm_rhun_greatsword|野 蠻 大 劍
 itm_rhun_shortsword|野 蠻 短 劍
 itm_rhun_sword|野 蠻 劍
-; itm_rhun_mangler|Rhun Mangler
+itm_rhun_mangler|盧 恩 狼 牙 棒
 itm_dale_light_a|河 谷 鎮 民 兵 夾 克 
 itm_dale_light_b|北 方 輕 型 片 甲
 itm_dale_med_a|北 方 重 型 片 甲
@@ -625,7 +623,7 @@ itm_dale_med_d|河 谷 鎮 片 甲
 itm_dale_heavy_a|河 谷 鎮 片 覆 鎖 子 甲
 itm_dale_heavy_b|河 谷 鎮 裝 甲 外 套
 itm_dale_heavy_c|羅 馬 尼 安 鎖 子 甲
-; itm_north_leather|Northmen Leather Vest
+itm_north_leather|北 方 皮 背 心
 itm_dale_helmet_a|河 谷 鎮 輕 型 步 兵 盔
 itm_dale_helmet_b|河 谷 鎮 輕 型 弓 兵 盔
 itm_dale_helmet_c|河 谷 鎮 步 兵 盔
@@ -690,8 +688,8 @@ itm_dwarf_sword_d|矮 人 劍
 itm_dwarf_battle_axe|矮 人 戰 斧
 itm_dwarf_great_axe|矮 人 大 斧
 itm_dwarf_great_mattock|矮 人 大 鶴 嘴 鋤
-itm_dwarf_great_pick|矮 人 大 十 字 鎬
-itm_dwarf_war_pick|矮 人 戰 十 字 鎬
+itm_dwarf_great_pick|矮 人 巨 型 礦 鎬
+itm_dwarf_throwing_axe_reward|孤 山 飛 斧
 itm_dwarf_mattock|矮 人 鶴 嘴 鋤
 itm_dwarf_hand_axe|矮 人 短 斧
 itm_dwarf_throwing_axe|矮 人 擲 斧
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|主 人 之 鞭
 itm_horn_gondor_reward|剛 鐸 號 角
 itm_harad_totem_reward|哈 拉 德 圖 騰
 itm_elven_amulet_reward|精 靈 護 身 符
+
 itm_torque_reward|邪 惡 項 鍊
 itm_orc_brew|半 獸 人 酒
-itm_rohan_saddle|塞 哲 爾 之 鞍
+itm_rohan_saddle|鞍
 itm_mearas_reward|米 亞 拉 神 駒
 itm_shield_of_tuor|圖 爾 之 盾
 itm_riv_armor_reward|瑞 文 戴 爾 裝 飾 鎧 甲
@@ -763,8 +762,8 @@ itm_book_of_moria|馬 薩 布 爾 之 書
 itm_ring_a_reward|突 卡 利 西 之 戒
 itm_ring_b_reward|芬 瓦 利 西 之 戒
 itm_dale_bow_reward|巴 德 之 弓
-; itm_tome_of_knowledge|Tome of Arcane Knowledge
-; itm_orc_idol_reward|Idol of the First Orc
+itm_tome_of_knowledge|奧 術 知 識 寶 典
+itm_orc_idol_reward|原 初 半 獸 人 像
 itm_crebain_reward|克 拉 班 烏 鴉
 itm_miruvor_reward|米 盧 沃 酒
 itm_wheeled_cage|巨 型 有 輪 籠 子
@@ -785,9 +784,9 @@ itm_khamul_helm|克 哈 穆 爾 之 盔
 itm_black_arrows_reward|黑 色 箭
 itm_leather_boots_reward|獵 人 靴 子
 itm_rohan_armor_th|洛 汗 皇 家 鎧 甲
-itm_wilderness_amulet|荒 野 護 身 符
+itm_wilderness_cowl|獵 人 兜 帽
 itm_prisoner_coll_chain|囚 鏈
-; itm_witchking_helmet|Sorcerer's Mask
+itm_witchking_helmet|巫 師 面 具
 itm_lorien_royal_armor|羅 斯 洛 立 安 皇 家 鎧 甲
 itm_feet_chains|腳 鏈
 itm_feet_chains_dwarf|腳 鏈
@@ -795,7 +794,7 @@ itm_spider|蜘 蛛
 itm_bear|熊 
 itm_wolf|狼 
 itm_werewolf|狼 人
-; itm_thrush_reward|Thrush
-; itm_gauntlets_reward|Iron Fists
-; itm_stones_siege|Siege Stones
+itm_thrush_reward|畫 眉 鳥
+itm_gauntlets_reward|鐵 拳
+itm_stones_siege|攻 城 石
 itm_beorn_axe_no_attack|比 翁 斧

@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|Láttuk az embereidet fejvesztve menekülni 
 dlga_raid_village_failed:close_window|Legközelebb jobban fog sikerülni.
 dlga_lord_start:lord_target_lord_failed|Hallottam hogy elbuktál abban amire megkértelek. Csalódáskeltő, {playername}.
 dlga_lord_target_lord_failed:close_window|Legközelebb jobban fog sikerülni.
-dlga_lord_start:lord_generic_mission_completed.5|Az embereid tanúi lehettek a bátorságodnak csata közben, {playername}. Megmutattad nekik hogy mi vagyunk a felsőbbrendű erő.
+; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.
 dlga_lord_start:kill_quest_failed|Hallottam hogy elbuktál abban amire megkértelek. Csalódáskeltő, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Az embereid tanúi lehettek a bátorságodnak csata közben, {playername}. Kiérdemelted a tiszteletem.
 dlga_kill_quest_failed:close_window|Legközelebb jobban fog sikerülni.

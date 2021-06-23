@@ -672,8 +672,8 @@ trp_armoured_troll|Zırhlı Troll
 trp_armoured_troll_pl|Zırhlı Trolller
 trp_olog_hai|Mordor Olog Hai
 trp_olog_hai_pl|Mordor Olog Hai 
-trp_ent|Agaç Adam
-trp_ent_pl|Agaç Adamlar
+trp_ent_old|Agaç Adam
+trp_ent_old_pl|Agaç Adamlar
 trp_i1_guldur_orc_snaga|Dol Guldur Ork Snaga
 trp_i1_guldur_orc_snaga_pl|Dol Guldur'lu Ork Snagalar
 trp_a2_guldur_orc_tracker|Dol Guldur Ork İzcisi
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|Gundabad Warg Binicisi
 trp_c4_gunda_warg_rider_pl|Gundabad Warg Binicileri
 trp_c5_gunda_clan_rider|Kuzeyli Goblin Klan Binicisi
 trp_c5_gunda_clan_rider_pl|Kuzeyli Goblin Klan Binicileri
+trp_i5_gunda_orc_champion|Gundabad Ork Şampiyonu
+trp_i5_gunda_orc_champion_pl|Gundabad Ork Şampiyonları
 trp_mountain_goblin2|Dag Goblini
 trp_mountain_goblin2_pl|Dag Goblinleri
 trp_tribal_orc2|Kabile Orku
 trp_tribal_orc2_pl|Kabile Orkları
-trp_tribal_orc_warrior2|Kabile Ork Savaşçısı
-trp_tribal_orc_warrior2_pl|Kabile Ork Savaşçıları
-trp_i5_gunda_orc_champion|Gundabad Ork Şampiyonu
-trp_i5_gunda_orc_champion_pl|Gundabad Ork Şampiyonları
+trp_i5_gunda_orc_champion2|Gundabad Ork Şampiyonu
+trp_i5_gunda_orc_champion2_pl|Gundabad Ork Şampiyonları
 trp_i2_mordor_num_renegade|Kara Numenor Haini
 trp_i2_mordor_num_renegade_pl|Kara Numenor Hainleri
 trp_i3_mordor_num_warrior|Kara Numenor Savaşçısı
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|Pazarlıkçı Pushurt
 trp_smith_khand_ac_pl|Demirci 
 trp_smith_umbar_ac|Demirci Fuinir 
 trp_smith_umbar_ac_pl|Demirci 
-trp_barman_mtirith| Hancı
-trp_barman_mtirith_pl|Hisar
-trp_barman_pelargir| Hancı
-trp_barman_pelargir_pl|Kale
-trp_barman_linhir| Hancı
-trp_barman_linhir_pl|Kale 
-trp_barman_dolamroth| Hancı
-trp_barman_dolamroth_pl|Kale 
-trp_barman_edhellond| Hancı
-trp_barman_edhellond_pl|Kale 
-trp_barman_lossarnach| Hancı
-trp_barman_lossarnach_pl|Kale 
-trp_barman_tarnost| Hancı
-trp_barman_tarnost_pl|Kale 
-trp_barman_erech| Hancı
-trp_barman_erech_pl|Kale 
-trp_barman_pinnath| Hancı
-trp_barman_pinnath_pl|Kale 
-trp_barman_hannun| Hancı
-trp_barman_hannun_pl|Gizli Magara
-trp_barman_calembel| Hancı
-trp_barman_calembel_pl|Kale 
-trp_barman_edoras| Hancı
-trp_barman_edoras_pl|Meduseld, Altın Salon
-trp_barman_aldburg| Hancı
-trp_barman_aldburg_pl|Kale 
-trp_barman_hornburg| HAncı
-trp_barman_hornburg_pl|Lord Salonları
+trp_smith_moria_ac|Demirci Burgak
+trp_smith_moria_ac_pl|Demirci 
+trp_smith_dale_ac|Ardel Ateşel
+trp_smith_dale_ac_pl|Demirci 
+trp_smith_beorn_ac|Balta Yapımcısı Beornalaf
+trp_smith_beorn_ac_pl|Demirci 
+trp_smith_woodelf_west_camp|Dhoelath
+trp_smith_woodelf_west_camp_pl|Demirci 
+trp_smith_woodmen|Balta Yapımcısı Beornalaf
+trp_smith_woodmen_pl|Demirci 
+trp_smith_beorn_v|Balta Yapımcısı Beornalaf
+trp_smith_beorn_v_pl|Demirci 
+trp_smith_troll_cave|Demirci Burgak
+trp_smith_troll_cave_pl|Demirci 
+trp_smith_dg_outpost|Shtazg Dulbash 
+trp_smith_dg_outpost_pl|Demirci 
+trp_smith_main_rhun|Branimir Bronnik
+trp_smith_main_rhun_pl|Geçici Demirci 
+trp_smith_south_rhun|Branimir Bronnik
+trp_smith_south_rhun_pl|Geçici Demirci 
+trp_smith_gundabad_ne|Blurg Karsatan 
+trp_smith_gundabad_ne_pl|Demirci 
+trp_smith_gundabad_nw|Blurg Karsatan 
+trp_smith_gundabad_nw_pl|Demirci 
+trp_smith_gundabad_s|Blurg Karsatan 
+trp_smith_gundabad_s_pl|Demirci 
+trp_smith_gundabad_m|Blurg Karsatan 
+trp_smith_gundabad_m_pl|Demirci 
 trp_barman_eastemnet| Hancı
 trp_barman_eastemnet_pl|Kale 
 trp_barman_westfold| Hancı
@@ -1222,30 +1222,30 @@ trp_barman_morannon| Hancı
 trp_barman_morannon_pl|Lider'in Magarası
 trp_barman_mmorgul| Hancı
 trp_barman_mmorgul_pl|Kule
-trp_barman_cungol| Hancı
-trp_barman_cungol_pl|Kale
-trp_barman_isengard| Hancı
-trp_barman_isengard_pl|Orthanc Kulesi
-trp_barman_cgaladhon| Hancı
-trp_barman_cgaladhon_pl|Agaç Kale
-trp_barman_cdolen| Hancı
-trp_barman_cdolen_pl|Agaç Kale 
-trp_barman_camroth| Hancı
-trp_barman_camroth_pl|Agaç Kale
-trp_barman_thalls| Hancı
-trp_barman_thalls_pl|Taht Odası
-trp_barman_beorn| Hancı
-trp_barman_beorn_pl|Beorn'un Konagı
-trp_barman_moria| Hancı
-trp_barman_moria_pl|Şefin Odası
-trp_barman_dale| Hancı
-trp_barman_dale_pl|Kale 
-trp_barman_esgaroth| Hancı
-trp_barman_esgaroth_pl|Salon
-trp_barman_erebor| Hancı
-trp_barman_erebor_pl|Thrór'un Yüce Salonu
-trp_barman_dolguldur| Hancı
-trp_barman_dolguldur_pl|Kale 
+trp_merchant_main_rhun|Erzak Efendisi 
+trp_merchant_main_rhun_pl|kamp kasası 
+trp_merchant_dg_outpost|Erzak Efendisi 
+trp_merchant_dg_outpost_pl|ahır ve ambar 
+trp_merchant_woodelf_west_camp|Erzak Efendisi 
+trp_merchant_woodelf_west_camp_pl| elf erzakları
+trp_merchant_gundabad_m|Erzak Efendisi 
+trp_merchant_gundabad_m_pl|kamp kasası 
+trp_merchant_gundabad_s|Erzak Efendisi 
+trp_merchant_gundabad_s_pl|kamp kasası 
+trp_merchant_gundabad_nw|Erzak Efendisi 
+trp_merchant_gundabad_nw_pl|kamp kasası 
+trp_merchant_gundabad_ne|Erzak Efendisi 
+trp_merchant_gundabad_ne_pl|kamp kasası 
+trp_merchant_troll_cave|Erzak Efendisi 
+trp_merchant_troll_cave_pl|warg çukuru ve erzaklar 
+trp_merchant_beorn_v|Erzak Efendisi 
+trp_merchant_beorn_v_pl|ahır ve ambar 
+trp_merchant_orc_sentry|Erzak Efendisi 
+trp_merchant_orc_sentry_pl|kamp kasası 
+trp_merchant_candros|Erzak Efendisi 
+trp_merchant_candros_pl|ahır ve ambar 
+trp_merchant_hannun|Erzak Efendisi 
+trp_merchant_hannun_pl|korucu malzemeleri
 trp_merchant_mtirith|Erzak Efendisi
 trp_merchant_mtirith_pl|ahır ve ambar
 trp_merchant_pelargir|Erzak Efendisi 
@@ -1434,42 +1434,42 @@ trp_elder_erebor|Erebor Lonca Başkanı
 trp_elder_erebor_pl|Salonlar
 trp_elder_dolguldur|Guldur Şefi
 trp_elder_dolguldur_pl|kara kale
-trp_elder_gondor_ac|Kamp Efendisi
-trp_elder_gondor_ac_pl|kamp
-trp_elder_rohan_ac|Kamp Efendisi
-trp_elder_rohan_ac_pl|kamp
-trp_elder_mordor_ac|Kamp Efendisi 
-trp_elder_mordor_ac_pl|kamp
-trp_elder_isengard_ac|Kamp Efendisi 
-trp_elder_isengard_ac_pl|kamp
-trp_elder_lorien_ac|Kamp Efendisi 
-trp_elder_lorien_ac_pl|kamp
-trp_elder_woodelf_ac|Kamp Efendisi 
-trp_elder_woodelf_ac_pl|kamp
-trp_elder_imladris_ac|Kamp Efendisi 
-trp_elder_imladris_ac_pl|kamp
-trp_elder_beorn_ac|Kamp Efendisi 
-trp_elder_beorn_ac_pl|kamp
-trp_elder_harad_ac|Harad Kamp Şefi
-trp_elder_harad_ac_pl|kamp
-trp_elder_rhun_ac|Rhun Kamp Şefi 
-trp_elder_rhun_ac_pl|kamp
-trp_elder_khand_ac|Khand Kamp Şefi 
-trp_elder_khand_ac_pl|kamp
-trp_elder_dunland_ac|Dun'lu Kamp Şefi
-trp_elder_dunland_ac_pl|kamp
-trp_elder_umbar_ac|Umbar'lı Levazım Subayı
-trp_elder_umbar_ac_pl|kamp
-trp_elder_moria_ac|Moria'lı Kamp Şefi
-trp_elder_moria_ac_pl|kamp
-trp_elder_gunda_ac|Gundanad'lı Kamp Şefi
-trp_elder_gunda_ac_pl|kamp
-trp_elder_dale_ac|Dale'lı Levazım Subayı
-trp_elder_dale_ac_pl|kamp
-trp_elder_guldur_ac|Guldur'lu Kamp Şefi
-trp_elder_guldur_ac_pl|kamp
-trp_elder_dwarf_ac|Cüce Kamp Efendsi
-trp_elder_dwarf_ac_pl|kamp
+trp_elder_wosgiliath|Kamp Efendisi 
+trp_elder_wosgiliath_pl|kamp
+trp_elder_oscamp|Kamp Efendisi 
+trp_elder_oscamp_pl|kamp
+trp_elder_eosgiliath|Kamp Efendisi 
+trp_elder_eosgiliath_pl|kamp
+trp_elder_uoutpost|Kamp Efendisi 
+trp_elder_uoutpost_pl|kamp
+trp_elder_uhcamp|Kamp Efendisi 
+trp_elder_uhcamp_pl|kamp
+trp_elder_urcamp|Kamp Efendisi 
+trp_elder_urcamp_pl|kamp
+trp_elder_woodelf_camp|Yaşlı Elf
+trp_elder_woodelf_camp_pl|kamp
+trp_elder_woodelf_west_camp|Yaşlı Elf
+trp_elder_woodelf_west_camp_pl|kamp
+trp_elder_beorn_v|Beorn Yaşlısı
+trp_elder_beorn_v_pl|köy
+trp_elder_troll_cave|Magara Şefi
+trp_elder_troll_cave_pl|magaralar
+trp_elder_dg_outpost|Rhun Kamp Şefi 
+trp_elder_dg_outpost_pl|kamp
+trp_elder_rhun_sc|Rhun Kamp Şefi 
+trp_elder_rhun_sc_pl|kamp
+trp_elder_rhun_nc|Rhun Kamp Şefi 
+trp_elder_rhun_nc_pl|kamp
+trp_elder_gunda_ne|Ork Yaşlısı
+trp_elder_gunda_ne_pl|kamp
+trp_elder_gunda_nw|Ork Yaşlısı
+trp_elder_gunda_nw_pl|kamp
+trp_elder_gunda_s|Ork Yaşlısı
+trp_elder_gunda_s_pl|kamp
+trp_elder_gunda_m|Ork Yaşlısı
+trp_elder_gunda_m_pl|kamp
+trp_elder_ironhill|Gundanad'lı Kamp Şefi
+trp_elder_ironhill_pl|kamp
 trp_village_1_elder|Kirpigin Lordu
 trp_village_1_elder_pl|magaralar
 trp_tutorial_chest_1|Yakın Silah Sandıgı
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|Magara Trolü
 trp_troll_placeholder_6_pl|Magara Trolleri
 trp_wild_troll|Vahşi Magara Trollü
 trp_wild_troll_pl|Vahşi magara Trolleri
-trp_ent2|Agaç Adam
-trp_ent2_pl|Agaç Adamlar
+trp_ent|Agaç Adam
+trp_ent_pl|Agaç Adamlar
 trp_mountain_goblin|Dag Goblini
 trp_mountain_goblin_pl|Dag Goblinleri
 trp_tribal_orc|Kabile Orku

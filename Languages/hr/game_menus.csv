@@ -68,7 +68,7 @@ mno_start_go|GONDOR, Kraljevstvo Bijele Kule
 mno_start_ro|ROHAN, ponosni Gospodari Konjeva
 mno_start_du|DUNEDAIN, drevna dinastija ČOVIJEKA
 mno_start_be|BEORNINGS, ljudi iz Beornove loze.
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|sjeverno Kraljevstvo Dolja
 menu_start_good_elf|^^^^^^^^^^u kojoj šumi ti živis, starješino?
 mno_start_ri|RIVENDELL kojim vlada Elrond
@@ -175,7 +175,6 @@ menu_assasins_attack_player_retreat|Pobjegao si sa svojim životom!
 ; mno_be_bold|Go on! I'm not afraid of plants or old myths!
 ; mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
 ; menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
-; menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
 ; menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
 ; mno_ow_get_out|Ouch! Let's get out of this cursed place!
 ; menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your troops were that lucky.^^
@@ -234,6 +233,7 @@ mno_hide_close|Nastavi...
 ; mno_join_attack|Charge the enemy.
 ; mno_join_order_attack|Order your troops to attack with your allies while you stay back.
 ; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+; mno_join_attack_bearform|Leap into battle in bear form
 ; mno_join_leave|Disengage.
 ; mno_player_control_allies_join_menu|Command them and charge the enemy
 ; menu_join_order_attack|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
@@ -279,6 +279,7 @@ mno_lift_siege|Napusti opsadu.
 ; menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
 ; mno_siege_defender_join_battle|Join the battle.
 ; mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
+; mno_siege_defender_do_not_join_battle|Don't get involved.
 ; menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 ; menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
 ; menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.

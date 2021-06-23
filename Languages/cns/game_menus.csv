@@ -175,7 +175,6 @@ mno_be_quiet|轻轻地收起武器并安静地离开
 mno_be_bold|继续前行！ 我绝不惧怕于这些木头和古老神话！
 mno_fight_back|都给我动身！搜索这片区域！一旦发现它们即刻焚毁！
 menu_fangorn_search_fails|^^^^^^你搜索了这片浓密漆黑的森林，但你什么都没有找到。 ^然而，你感到来自四周的视线和威胁越来越多。
-menu_fangorn_battle_debrief_won|^^^一场伟大的胜利！ ^^^这是法贡森林的又一个神话...
 menu_fangorn_killed_player_only|^^^^^^你在浓密漆黑的森林中徘徊。^突然！你被什么打中了！也许是树枝掉到了你头上？^你于几分钟后带着重伤醒了过来，但庆幸的是，你还可以继续前进。
 mno_ow_get_out|让我们快点离开这个被诅咒的地方！
 menu_fangorn_killed_troop_and_player|^^^^^^你在浓密漆黑的森林中徘徊。^突然！你被什么打中了！也许是树枝掉到了你头上？^你于几分钟后醒了过来，但不是所有人都那么走运了。^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^你决定帮助{s2}对抗{s1}。^ 你将有{reg22}名士兵�
 mno_join_attack|攻入敌阵
 mno_join_order_attack|坐镇指挥，让你的部队帮助盟友进攻。
 mno_control_allies_join_menu|用影响力点在战场上指挥你的盟友。
+mno_join_attack_bearform|测试：变形为熊进入战场。
 mno_join_leave|撤退
 mno_player_control_allies_join_menu|指挥他们向敌人冲锋
 menu_join_order_attack|{s4}^^我军伤亡：{s8}^^盟军伤亡：{s9}^^敌军伤亡：{s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|不要求封赏。
 menu_siege_started_defender|{s1}正在攻击{s2}的城墙。你有{reg22}名士兵可以参战对抗敌人的{reg11}名士兵。你决定…
 mno_siege_defender_join_battle|加入战斗
 mno_siege_defender_troops_join_battle|坐镇指挥，让你的部队攻击。
+mno_siege_defender_do_not_join_battle|不卷入纷争。
 menu_siege_join_defense|{s4}^^我军伤亡：{s8}^^盟军伤亡：{s9}^^敌军伤亡：{s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^整个世界在你眼前一黑，不知过了多久你恢复了意识，发现你自己躺在你倒下的地方。 你的敌人一定以为死死了，才把你留在原地。 不论怎样，似乎你身上的伤没有一处是致命的，虽然你感到很虚弱，但是你发现你自己还是勉强可以坚持站起来行走。
 menu_town_bandits_succeeded|^^^^^你如同割麦子一般宰杀着半兽人！ 当你再次孤身一人的时候，你的脚边散布着或昏厥，或垂死，或已经死亡的攻击者。当地人肯定会非常感激你的，毕竟你在这次的半兽人威胁中救了他们的命。

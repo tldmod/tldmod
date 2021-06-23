@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Hełm Tropiciela Uruk-hai
 itm_isen_uruk_helm_f|Hełm Tropiciela Uruk-hai
 itm_uruk_pike_b|Mordorska Pika
 itm_uruk_falchion_a|Ostrze Uruków
-itm_uruk_falchion_b|Tasak Uruków
-itm_uruk_spear|Mordorska Włócznia
-itm_uruk_skull_spear|Włócznia z Czaszką Uruków
-itm_uruk_voulge|Berdysz Uruków
-itm_uruk_heavy_axe|Ciężki Topów Uruków
+; itm_uruk_falchion_b|Orc Great Scimitar
 itm_isengard_sword|Isengardzki Miecz
 itm_isengard_axe|Isengardzki Topór
 itm_isengard_hammer|Isengardzki Młot
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Isengardzka Tarcza Uruków
 itm_wood_club|Drewniana Maczuga
 itm_twohand_wood_club|Dłua Drewniana Maczuga
 itm_bone_cudgel|Kościana Pałka
-itm_skull_club|Laga z Czaszką
+; itm_orc_pick|Orc Pick
+; itm_orc_hammer|Evil Hammer
 itm_orc_club_b|Buława Jeźdźcy Wargów
 itm_orc_club_c|Kolczasta Orkowa Pałka
 itm_orc_club_d|Złowroga Buława
 itm_orc_sledgehammer|Orkowy Kafar
 itm_orc_simple_spear|Orkowy Włócznia
 itm_orc_skull_spear|Orkowa Włócznia z Czaszką
-itm_orc_bill|Orkowy Sierp Bojowy
-itm_orc_slasher|Orkowy Siekacz
+; itm_orc_bill|Orc Polearm
+; itm_orc_slasher|Orc Short Sword
 itm_orc_falchion|Orkowy Tasak
 itm_orc_scimitar|Orkowe Zakrzywione Ostrze
 itm_orc_sabre|Orkowa Szabla
-itm_orc_machete|Orkowa Maczeta
+; itm_orc_battle_axe|Orc Battle Axe
 itm_orc_axe|Orkowy Topór
-itm_orc_two_handed_axe|Orkowy Dwuręczny Topór
+; itm_orc_two_handed_axe|Orc Great Axe
 itm_orc_throwing_axes|Orkowe Toporki do Rzucania
 itm_orc_bow|Orkowy Łuk
 itm_orc_shield_a|Orkowa Tarcza
@@ -493,7 +490,8 @@ itm_mirkwood_leather|Skórzany pancerz Leśnych Elfów
 itm_mirkwood_pad|Pikowany Płaszcz z Zielonego Lasu
 itm_mirkwood_mail|Kolczuga z Greenwood
 itm_mirkwood_scale|Lekka Zbroja z Zielonego Lasu
-itm_mirkwood_heavy_scale|Zbroja z Mrocznej Puszczy
+; itm_mirkwood_heavy_scale|Greenwood Leafscale
+; itm_mirkwood_sword|Woodelf Sword
 itm_mirkwood_great_spear|Wielka Włócznia Zielonego Lasu
 itm_mirkwood_war_spear|Włócznia Bojowa Zielonego Lasu
 itm_mirkwood_short_spear|Włócznia Leśnych Elfów
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|K|rasnoludzki Topór Bitewny
 itm_dwarf_great_axe|Krasnoludzki Wielki Topór
 itm_dwarf_great_mattock|Krasnoludzki Wielki Kilof
 itm_dwarf_great_pick|Krasnoludzki Wielki Nadziak
-itm_dwarf_war_pick|Krasnoludzki Bitewny Oskard
+; itm_dwarf_throwing_axe_reward|Erebor Flying Axes
 itm_dwarf_mattock|Krasnoludzki Kilof
 itm_dwarf_hand_axe|Krasnoludzki Krótki Topór
-itm_dwarf_throwing_axe|Krasnoludzki Topór do Rzucania
+; itm_dwarf_throwing_axe|Dwarf Throwing Axes
 itm_dwarf_spear|Krasnoludzka Włcznia
 itm_dwarf_spear_b|Krasnoludzka Pika
 itm_dwarf_spear_c|Krasnoludzki Długi Topór
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Batog Pana
 itm_horn_gondor_reward|Róg Gondoru
 itm_harad_totem_reward|Haradzki Totem
 itm_elven_amulet_reward|Elficki Amulet
+
 itm_torque_reward|Złowieszczy Torques
 itm_orc_brew|Orkowy Browar
-itm_rohan_saddle|Siodło Thengla
+; itm_rohan_saddle|Saddle
 itm_mearas_reward|Mearas
 itm_shield_of_tuor|Tarcza z Tuor
 itm_riv_armor_reward|Inkrustowana Zbroja z Rivendell
@@ -785,7 +784,7 @@ itm_khamul_helm|Hełm Khamula
 itm_black_arrows_reward|Czarne Strzały
 itm_leather_boots_reward|Buty Łowcy
 itm_rohan_armor_th|Królewska Zbroja Rohanu
-itm_wilderness_amulet|Amulet Dziczy
+; itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|Łańcuchy Więzienne
 itm_witchking_helmet|Maska Czarownika
 itm_lorien_royal_armor|Królewska Zbroja z Lorien

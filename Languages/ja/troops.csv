@@ -672,8 +672,8 @@ trp_armoured_troll|武装トロル
 trp_armoured_troll_pl|武装トロル
 trp_olog_hai|モルドール オログ＝ハイ
 trp_olog_hai_pl|モルドール オログ＝ハイ
-trp_ent|エント
-trp_ent_pl|エント
+trp_ent_old|エント
+trp_ent_old_pl|エント
 trp_i1_guldur_orc_snaga|ドル・グルドゥア スナガオーク
 trp_i1_guldur_orc_snaga_pl|ドル・グルドゥア スナガオーク
 trp_a2_guldur_orc_tracker|ドル・グルドゥア オーク追跡兵
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|グンダバド  ワーグ騎兵
 trp_c4_gunda_warg_rider_pl|グンダバド  ワーグ騎兵
 trp_c5_gunda_clan_rider|北方族 ゴブリン騎兵
 trp_c5_gunda_clan_rider_pl|北方族 ゴブリン騎兵
+trp_i5_gunda_orc_champion|グンダバド  オークチャンピオン
+trp_i5_gunda_orc_champion_pl|グンダバド  オークチャンピオン
 trp_mountain_goblin2|山ゴブリン
 trp_mountain_goblin2_pl|山ゴブリン
 trp_tribal_orc2|部族オーク
 trp_tribal_orc2_pl|部族オーク
-trp_tribal_orc_warrior2|部族オーク 戦士
-trp_tribal_orc_warrior2_pl|部族オーク 戦士
-trp_i5_gunda_orc_champion|グンダバド  オークチャンピオン
-trp_i5_gunda_orc_champion_pl|グンダバド  オークチャンピオン
+trp_i5_gunda_orc_champion2|グンダバド  オークチャンピオン
+trp_i5_gunda_orc_champion2_pl|グンダバド  オークチャンピオン
 trp_i2_mordor_num_renegade|黒きヌーメノール 背教者
 trp_i2_mordor_num_renegade_pl|黒きヌーメノール 背教者
 trp_i3_mordor_num_warrior|黒きヌーメノール 戦士
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|値切りのプシュルト
 trp_smith_khand_ac_pl|鍛冶屋
 trp_smith_umbar_ac|鍛冶職人フイニア
 trp_smith_umbar_ac_pl|鍛冶屋
-trp_barman_mtirith|酒場の主人
-trp_barman_mtirith_pl|城塞
-trp_barman_pelargir|酒場の主人
-trp_barman_pelargir_pl|城
-trp_barman_linhir|酒場の主人
-trp_barman_linhir_pl|城
-trp_barman_dolamroth|酒場の主人
-trp_barman_dolamroth_pl|城
-trp_barman_edhellond|酒場の主人
-trp_barman_edhellond_pl|城
-trp_barman_lossarnach|酒場の主人
-trp_barman_lossarnach_pl|城
-trp_barman_tarnost|酒場の主人
-trp_barman_tarnost_pl|城
-trp_barman_erech|酒場の主人
-trp_barman_erech_pl|城
-trp_barman_pinnath|酒場の主人
-trp_barman_pinnath_pl|城
-trp_barman_hannun|酒場の主人
-trp_barman_hannun_pl|秘密の洞窟
-trp_barman_calembel|酒場の主人
-trp_barman_calembel_pl|城
-trp_barman_edoras|酒場の主人
-trp_barman_edoras_pl|黄金館
-trp_barman_aldburg|酒場の主人
-trp_barman_aldburg_pl|城
-trp_barman_hornburg|酒場の主人
-trp_barman_hornburg_pl|領主の大広間
+trp_smith_moria_ac|鍛冶屋ブルガク
+trp_smith_moria_ac_pl|鍛冶屋
+trp_smith_dale_ac|火の手アルデル
+trp_smith_dale_ac_pl|鍛冶屋
+trp_smith_beorn_ac|斧職人ビヨルナラフ
+trp_smith_beorn_ac_pl|鍛冶屋
+trp_smith_woodelf_west_camp|ドエラス
+trp_smith_woodelf_west_camp_pl|鍛冶屋
+trp_smith_woodmen|斧職人ビヨルナラフ
+trp_smith_woodmen_pl|鍛冶屋
+trp_smith_beorn_v|斧職人ビヨルナラフ
+trp_smith_beorn_v_pl|鍛冶屋
+trp_smith_troll_cave|鍛冶屋ブルガク
+trp_smith_troll_cave_pl|鍛冶屋
+trp_smith_dg_outpost|シタズグ・ドゥルバシュ
+trp_smith_dg_outpost_pl|鍛冶屋
+trp_smith_main_rhun|ブラニミア・ブロンニク
+trp_smith_main_rhun_pl|間に合わせの鍛冶屋
+trp_smith_south_rhun|ブラニミア・ブロンニク
+trp_smith_south_rhun_pl|間に合わせの鍛冶屋
+trp_smith_gundabad_ne|雪売りのブルルグ
+trp_smith_gundabad_ne_pl|鍛冶屋
+trp_smith_gundabad_nw|雪売りのブルルグ
+trp_smith_gundabad_nw_pl|鍛冶屋
+trp_smith_gundabad_s|雪売りのブルルグ
+trp_smith_gundabad_s_pl|鍛冶屋
+trp_smith_gundabad_m|雪売りのブルルグ
+trp_smith_gundabad_m_pl|鍛冶屋
 trp_barman_eastemnet|酒場の主人
 trp_barman_eastemnet_pl|城
 trp_barman_westfold|酒場の主人
@@ -1222,30 +1222,30 @@ trp_barman_morannon|酒場の主人
 trp_barman_morannon_pl|指揮官の洞窟
 trp_barman_mmorgul|酒場の主人
 trp_barman_mmorgul_pl|塔
-trp_barman_cungol|酒場の主人
-trp_barman_cungol_pl|城
-trp_barman_isengard|酒場の主人
-trp_barman_isengard_pl|オルサンクの塔
-trp_barman_cgaladhon|酒場の主人
-trp_barman_cgaladhon_pl|木の上の城
-trp_barman_cdolen|酒場の主人
-trp_barman_cdolen_pl|木の上の城
-trp_barman_camroth|酒場の主人
-trp_barman_camroth_pl|木の上の城
-trp_barman_thalls|酒場の主人
-trp_barman_thalls_pl|王の間
-trp_barman_beorn|酒場の主人
-; trp_barman_beorn_pl|Beorn's Hall
-trp_barman_moria|酒場の主人
-trp_barman_moria_pl|長の穴
-trp_barman_dale|酒場の主人
-trp_barman_dale_pl|城
-trp_barman_esgaroth|酒場の主人
-trp_barman_esgaroth_pl|大広間
-trp_barman_erebor|酒場の主人
-trp_barman_erebor_pl|スロールの朝見の間
-trp_barman_dolguldur|酒場の主人
-trp_barman_dolguldur_pl|城
+trp_merchant_main_rhun|補給係
+trp_merchant_main_rhun_pl|物資の隠し場所
+trp_merchant_dg_outpost|補給係
+trp_merchant_dg_outpost_pl|馬屋と貯蔵庫
+trp_merchant_woodelf_west_camp|補給係
+trp_merchant_woodelf_west_camp_pl|エルフの貯蔵庫
+trp_merchant_gundabad_m|補給係
+trp_merchant_gundabad_m_pl|物資の隠し場所
+trp_merchant_gundabad_s|補給係
+trp_merchant_gundabad_s_pl|物資の隠し場所
+trp_merchant_gundabad_nw|補給係
+trp_merchant_gundabad_nw_pl|物資の隠し場所
+trp_merchant_gundabad_ne|補給係
+trp_merchant_gundabad_ne_pl|物資の隠し場所
+trp_merchant_troll_cave|補給係
+trp_merchant_troll_cave_pl|ワーグの檻と貯蔵庫
+trp_merchant_beorn_v|補給係
+trp_merchant_beorn_v_pl|馬屋と貯蔵庫
+trp_merchant_orc_sentry|補給係
+trp_merchant_orc_sentry_pl|物資の隠し場所
+trp_merchant_candros|補給係
+trp_merchant_candros_pl|馬屋と貯蔵庫
+trp_merchant_hannun|補給係
+; trp_merchant_hannun_pl|ranger supplies
 trp_merchant_mtirith|補給係
 trp_merchant_mtirith_pl|馬屋と貯蔵庫
 trp_merchant_pelargir|補給係
@@ -1434,42 +1434,42 @@ trp_elder_erebor|エレボールのギルドマスター
 trp_elder_erebor_pl|大広間
 trp_elder_dolguldur|グルドゥアの長老
 trp_elder_dolguldur_pl|黒い城
-trp_elder_gondor_ac|野営長
-trp_elder_gondor_ac_pl|野営
-trp_elder_rohan_ac|野営長
-trp_elder_rohan_ac_pl|野営
-trp_elder_mordor_ac|野営長
-trp_elder_mordor_ac_pl|野営
-trp_elder_isengard_ac|野営長
-trp_elder_isengard_ac_pl|野営
-trp_elder_lorien_ac|野営長
-trp_elder_lorien_ac_pl|野営
-trp_elder_woodelf_ac|野営長
-trp_elder_woodelf_ac_pl|野営
-trp_elder_imladris_ac|野営長
-trp_elder_imladris_ac_pl|野営
-trp_elder_beorn_ac|野営長
-trp_elder_beorn_ac_pl|野営
-trp_elder_harad_ac|ハラドの野営長
-trp_elder_harad_ac_pl|野営
-trp_elder_rhun_ac|リューンの野営長
-trp_elder_rhun_ac_pl|野営
-trp_elder_khand_ac|ハンドの野営長
-trp_elder_khand_ac_pl|野営
-trp_elder_dunland_ac|褐色人の野営長
-trp_elder_dunland_ac_pl|野営
-trp_elder_umbar_ac|ウンバールの宿舎係
-trp_elder_umbar_ac_pl|野営
-trp_elder_moria_ac|モリア の野営長
-trp_elder_moria_ac_pl|野営
-trp_elder_gunda_ac|グンダバドの野営長
-trp_elder_gunda_ac_pl|野営
-trp_elder_dale_ac|谷間の国の宿舎係
-trp_elder_dale_ac_pl|野営
-trp_elder_guldur_ac|グルドゥアの野営長
-trp_elder_guldur_ac_pl|野営
-trp_elder_dwarf_ac|ドワーフの野営長
-trp_elder_dwarf_ac_pl|野営
+trp_elder_wosgiliath|野営長
+trp_elder_wosgiliath_pl|野営
+trp_elder_oscamp|野営長
+trp_elder_oscamp_pl|野営
+trp_elder_eosgiliath|野営長
+trp_elder_eosgiliath_pl|野営
+trp_elder_uoutpost|野営長
+trp_elder_uoutpost_pl|野営
+trp_elder_uhcamp|野営長
+trp_elder_uhcamp_pl|野営
+trp_elder_urcamp|野営長
+trp_elder_urcamp_pl|野営
+; trp_elder_woodelf_camp|Elder
+trp_elder_woodelf_camp_pl|野営
+; trp_elder_woodelf_west_camp|Elder
+trp_elder_woodelf_west_camp_pl|野営
+; trp_elder_beorn_v|Beorning Elder
+trp_elder_beorn_v_pl|村
+; trp_elder_troll_cave|Cave Chief
+trp_elder_troll_cave_pl|坑道
+trp_elder_dg_outpost|リューンの野営長
+trp_elder_dg_outpost_pl|野営
+trp_elder_rhun_sc|リューンの野営長
+trp_elder_rhun_sc_pl|野営
+trp_elder_rhun_nc|リューンの野営長
+trp_elder_rhun_nc_pl|野営
+; trp_elder_gunda_ne|Orc Elder
+trp_elder_gunda_ne_pl|野営
+; trp_elder_gunda_nw|Orc Elder
+trp_elder_gunda_nw_pl|野営
+; trp_elder_gunda_s|Orc Elder
+trp_elder_gunda_s_pl|野営
+; trp_elder_gunda_m|Orc Elder
+trp_elder_gunda_m_pl|野営
+trp_elder_ironhill|野営の長老
+trp_elder_ironhill_pl|野営
 trp_village_1_elder|ムチ名人
 trp_village_1_elder_pl|坑道
 trp_tutorial_chest_1|近接武器の箱
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|岩穴トロル
 trp_troll_placeholder_6_pl|岩穴トロル
 trp_wild_troll|野生の岩穴トロル
 trp_wild_troll_pl|野生の岩穴トロル
-trp_ent2|エント
-trp_ent2_pl|エント
+trp_ent|エント
+trp_ent_pl|エント
 trp_mountain_goblin|山ゴブリン
 trp_mountain_goblin_pl|山ゴブリン
 trp_tribal_orc|部族オーク

@@ -68,7 +68,7 @@ mno_start_go|GONDOR, Beyaz Kulenin Krallıgı
 mno_start_ro|ROHAN, At Halkı
 mno_start_du|DUNEDAIN, Çok Eski bir İnsan Hanedanlıgı
 mno_start_be|BEORNINGLER, Ayı Halkı
-mno_start_wo|ORMANCILAR, Kuytuorman'ın eteklerinden                         
+mno_start_wo|Kuyutorman eteklerinden KORUCULAR
 mno_start_da|DALE'in kuzey krallıgı
 menu_start_good_elf|^^^^^^^^^^Hangi Ormanda yasiyorsun Yasli Kisi ?
 mno_start_ri|AYRIKVADİ'den, Lord Elrond
@@ -175,7 +175,6 @@ mno_be_quiet|Silahlari indir ve sessiz ol! Simdi hemen çik buradan!
 mno_be_bold|Devam et! Bitkilerden veya eski söylentilerden Korkmuyorum!
 mno_fight_back|Hadi ögrenelim! Bölgeyi arayın! Birkaç agaç yakın!
 menu_fangorn_search_fails|^^^^^^Karanlık ve sık ormanı araştırıyorsun, ama hiç birşey bulamıyorsun.^Ancak yinede izlendigine ve tehdit altında olduguna dair hislerin git gide artıyor..
-menu_fangorn_battle_debrief_won|^^^Büyük bir zafer!!^^^Demek ki Fangorn ile ilgili söylentiler bu anlama geliyormuş...
 menu_fangorn_killed_player_only|^^^^^^Karanlık ve sık ormanda dolaşıyorsun.^Bir anda bir darbe aldın! Kafana agır bir dal parçası mı düştü?^Birkaç dakikalıgına baygın yatıyorsun. Ciddi bir şekilde yaralandin ama devam edebilirsin.
 mno_ow_get_out|Ah! bu lanetli yerden çıkalım!
 menu_fangorn_killed_troop_and_player|^^^^^^Karanlık ve sık ormanda dolaşıyorsun.^^Bir anda bir darbe aldın! Kafana agır bir dal parçası mı düştü?^^ Birkaç dakika sonra kendine geldiginde askerlerinin o kadarda şanslı olmadıgını görüyorsun.^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^{s1} karşısında yardım edecegin grup {s2}.^ Düşmanın 
 mno_join_attack|Düşmana hücum et.
 mno_join_order_attack|Askerlerine, sen geride kalırken müttefiklerinizle saldırmalarını emret.
 mno_control_allies_join_menu|Alanda müttefikleri yönetmek için Nüfuz puanı kullan.
+mno_join_attack_bearform|Savaşa ayı formunda gir
 mno_join_leave|Geri çekil.
 mno_player_control_allies_join_menu|Onları yönet ve düşmana saldır
 menu_join_order_attack|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Ödül isteme.
 menu_siege_started_defender|{s1}, {s2} ' nin duvarlarına bir taarruz başlatıyor. Düşmanın {reg11} 'ine karşı hazır {reg22} askerin var. Kararın...
 mno_siege_defender_join_battle|Savaşa katıl
 mno_siege_defender_troops_join_battle|Askerlerine sensiz savaşa katılmalarını emret.
+mno_siege_defender_do_not_join_battle|Karışma.
 menu_siege_join_defense|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Bir kaçak tarafından gelen sert bir darbe seni yere yıgar ve gözlerin dönmeye başlar ve kararır. Zaman geçer. Uyandıgında kendini yıpranmış ve kanlar içinde bulursun fakat şans eseri aldıgın hiç bir yara ölümcül degildir.
 menu_town_bandits_succeeded|^^^^^Goblin'ler önünde bugdayların oraga karşı yıgılması gibi yere yıgıldılar. Az bir zaman sonra kendini tek başına , askerlerini ise bilinçsiz, ölü ve ölmek üzere buldun. Hiç şüphesiz yerliler, onları bu saldırıdan kurtardıgın için sana minnettar olacaklar.

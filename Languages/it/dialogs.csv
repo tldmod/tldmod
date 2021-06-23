@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|Abbiamo visto qualcuno dei tuoi uomini fuggi
 dlga_raid_village_failed:close_window|Farò meglio la prossima volta.
 dlga_lord_start:lord_target_lord_failed|Ho sentito che hai fallito in ciò che ti avevo chiesto di fare. Deludente, {playername}.
 dlga_lord_target_lord_failed:close_window|Farò meglio la prossima volta.
-dlga_lord_start:lord_generic_mission_completed.5|I tuoi soldati hanno visto il coraggio che hai mostrato in battaglia, {playername}. Hai mostrato loro che siamo una forza superiore.
+dlga_lord_start:lord_generic_mission_completed.5|I tuoi uomini hanno assistito al tuo coraggio in battaglia, {playername}. Hai mostrato loro che siamo una forza superiore.
 dlga_lord_start:kill_quest_failed|Ho sentito che hai fallito in ciò che ti avevo chiesto di fare. Deludente, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|I tuoi uomini sono stati testimoni del tuo valore in battaglia, {playername}. Ti sei guadagnato il mio rispetto.
 dlga_kill_quest_failed:close_window|Farò meglio la prossima volta.

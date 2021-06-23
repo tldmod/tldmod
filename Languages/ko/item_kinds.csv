@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|우르크 하이 추적자 투구
 itm_isen_uruk_helm_f|우르크 하이 추적자 투구
 itm_uruk_pike_b|모르도르 파이크
 itm_uruk_falchion_a|우르크 펄션
-itm_uruk_falchion_b|우르크 펄션
-itm_uruk_spear|모르도르 창
-itm_uruk_skull_spear|우르크 뼈 창
-itm_uruk_voulge|우르크 언월도
-itm_uruk_heavy_axe|우르크 무거운 도끼
+itm_uruk_falchion_b|Orc Great Scimitar
 itm_isengard_sword|아이센가드 검
 itm_isengard_axe|아이센가드 도끼
 itm_isengard_hammer|아이센가드 투구
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|아이센 우르크 방패
 itm_wood_club|나무 몽둥이
 itm_twohand_wood_club|거대한 나무 몽둥이
 itm_bone_cudgel|뼈 곤봉
-itm_skull_club|뼈 몽둥이
+itm_orc_pick|Orc Pick
+itm_orc_hammer|Evil Hammer
 itm_orc_club_b|와르그 기수 몽둥이
 itm_orc_club_c|날카로운 오르크 몽둥이
 itm_orc_club_d|악랄한 철퇴
 itm_orc_sledgehammer|오르크 슬렛지헤머
 itm_orc_simple_spear|오르크 창
 itm_orc_skull_spear|오르크 뼈 창
-itm_orc_bill|오르크 미늘창
-itm_orc_slasher|오르크 슬래셔
+itm_orc_bill|Orc Polearm
+itm_orc_slasher|Orc Short Sword
 itm_orc_falchion|오르크 펄션
 itm_orc_scimitar|오르크 언월도
 itm_orc_sabre|오르크 사브르
-itm_orc_machete|오르크 마체테
+itm_orc_battle_axe|Orc Battle Axe
 itm_orc_axe|오르크 도끼
-itm_orc_two_handed_axe|오르크 양손 도끼
+itm_orc_two_handed_axe|Orc Great Axe
 itm_orc_throwing_axes|오르크 투척 도끼
 itm_orc_bow|오르크 활
 itm_orc_shield_a|오르크 방패
@@ -493,7 +490,8 @@ itm_mirkwood_leather|숲요정 가죽갑옷
 itm_mirkwood_pad|초록숲 누비 외투
 itm_mirkwood_mail|초록숲 사슬갑옷
 itm_mirkwood_scale|초록숲 가벼운 미늘갑옷
-itm_mirkwood_heavy_scale|어둠숲 비늘잎 미늘갑옷
+itm_mirkwood_heavy_scale|Greenwood Leafscale
+itm_mirkwood_sword|Woodelf Sword
 itm_mirkwood_great_spear|초록숲 거대한 창
 itm_mirkwood_war_spear|초록숲 전쟁 창
 itm_mirkwood_short_spear|숲요정 창
@@ -602,11 +600,11 @@ itm_rhun_armor_p|룬 고귀한 갑옷
 itm_rhun_armor_k|룬 고귀한 갑옷
 itm_rhun_helm_barbed|룬 가시돋친 투구
 itm_rhun_helm_horde|룬 부족 투구
-; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot|Rhun Pot Helm
 itm_rhun_helm_round|룬 둥근 투구
 itm_rhun_helm_leather|룬 가죽 투구
 itm_rhun_helm_chieftain|룬 족장 투구
-; itm_rhun_warpick|Rhun War Pick
+itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|룬 거대한 도끼
 itm_rhun_battleaxe|룬 전투 도끼
 itm_rhun_falchion|야만인 펄션
@@ -615,7 +613,7 @@ itm_rhun_greatfalchion|야만인 거대한 펄션
 itm_rhun_greatsword|야만인 대검
 itm_rhun_shortsword|야만인 숏소드
 itm_rhun_sword|야만인 검
-; itm_rhun_mangler|Rhun Mangler
+itm_rhun_mangler|Rhun Mangler
 itm_dale_light_a|데일 민병대 조끼
 itm_dale_light_b|북부인 가벼운 찰갑
 itm_dale_med_a|북부인 두꺼운 찰갑
@@ -625,7 +623,7 @@ itm_dale_med_d|데일 찰갑
 itm_dale_heavy_a|데일 찰갑 겹갑옷
 itm_dale_heavy_b|데일 장갑을 덧댄 외투
 itm_dale_heavy_c|로바니온 사슬갑옷
-; itm_north_leather|Northmen Leather Vest
+itm_north_leather|Northmen Leather Vest
 itm_dale_helmet_a|데일 가벼운 보병 투구
 itm_dale_helmet_b|데일 가벼운 궁병 투구
 itm_dale_helmet_c|데일 보병 투구
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|난쟁이 전투 도끼
 itm_dwarf_great_axe|난쟁이 거대한 도끼
 itm_dwarf_great_mattock|난쟁이 거대한 곡괭이
 itm_dwarf_great_pick|난쟁이 거대한 괭이
-itm_dwarf_war_pick|난쟁이 전쟁 괭이
+itm_dwarf_throwing_axe_reward|Erebor Flying Axes
 itm_dwarf_mattock|난쟁이 곡괭이
 itm_dwarf_hand_axe|난쟁이 짧은 도끼
-itm_dwarf_throwing_axe|난쟁이 투척 도끼
+itm_dwarf_throwing_axe|Dwarf Throwing Axes
 itm_dwarf_spear|난쟁이 창
 itm_dwarf_spear_b|난쟁이 파이크
 itm_dwarf_spear_c|난쟁이 긴 도끼
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|주인의 채찍
 itm_horn_gondor_reward|곤도르의 뿔나팔
 itm_harad_totem_reward|하라드 토템
 itm_elven_amulet_reward|요정족 부적
+
 itm_torque_reward|악의 목걸이
 itm_orc_brew|오르크 맥주
-itm_rohan_saddle|셍겔의 안장
+itm_rohan_saddle|Saddle
 itm_mearas_reward|고대의 종마
 itm_shield_of_tuor|투오르의 방패
 itm_riv_armor_reward|리븐델 장식된 갑옷
@@ -763,8 +762,8 @@ itm_book_of_moria|마자르불의 책
 itm_ring_a_reward|툴카르실
 itm_ring_b_reward|핀와르실
 itm_dale_bow_reward|바르드의 활
-; itm_tome_of_knowledge|Tome of Arcane Knowledge
-; itm_orc_idol_reward|Idol of the First Orc
+itm_tome_of_knowledge|Tome of Arcane Knowledge
+itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|사루만의 까마귀
 itm_miruvor_reward|미루보르 플라스크
 itm_wheeled_cage|가시박힌 이동식 우리
@@ -785,9 +784,9 @@ itm_khamul_helm|카물의 투구
 itm_black_arrows_reward|검은 화살
 itm_leather_boots_reward|사냥꾼 부츠
 itm_rohan_armor_th|로한 왕실 갑옷
-itm_wilderness_amulet|황야 부적
+itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|포로용 쇠사슬
-; itm_witchking_helmet|Sorcerer's Mask
+itm_witchking_helmet|Sorcerer's Mask
 itm_lorien_royal_armor|로리엔 왕실 갑옷
 itm_feet_chains|쇠고랑
 itm_feet_chains_dwarf|쇠고랑

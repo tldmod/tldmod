@@ -68,7 +68,7 @@ mno_start_go|GONDOR, O Reino da Torre Branca
 mno_start_ro|ROHAN, o povo dos cavalos
 mno_start_du|DUNEDAIN, a antiga dinastia dos homens
 mno_start_be|BEORINGS, o povo dos Ursos
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|O Reino do Norte de DALE
 menu_start_good_elf|^^^^^^^^^^qual floresta você vive, ancião?
 mno_start_ri|RIVENDELL, do Senhor Elrond
@@ -175,7 +175,6 @@ menu_assasins_attack_player_retreat|Escapou com a sua vida!
 mno_be_bold|Avancem! Não tenho medo de plantas ou velhos mitos!
 ; mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
 ; menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
-; menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
 ; menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
 mno_ow_get_out|Auch! Vamos sair deste sítio amaldiçoado!
 ; menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your troops were that lucky.^^
@@ -234,6 +233,7 @@ mno_dont_leave_behind|Não. Ninguém ficará para trás.
 ; mno_join_attack|Charge the enemy.
 ; mno_join_order_attack|Order your troops to attack with your allies while you stay back.
 ; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+; mno_join_attack_bearform|Leap into battle in bear form
 ; mno_join_leave|Disengage.
 ; mno_player_control_allies_join_menu|Command them and charge the enemy
 ; menu_join_order_attack|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
@@ -279,6 +279,7 @@ mno_castle_leave|Sair.
 ; menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
 ; mno_siege_defender_join_battle|Join the battle.
 ; mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
+; mno_siege_defender_do_not_join_battle|Don't get involved.
 ; menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 ; menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
 menu_town_bandits_succeeded|^^^^^ Os goblins caem perante de você como foice em trigo! Logo você fica sozinho enquanto a maioria de seus atacantes estão inconscientes, mortos ou morrendo. Certamente os moradores ficariam muito gratos de que você os salvou desta ameaça.

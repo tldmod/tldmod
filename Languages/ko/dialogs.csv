@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|We saw some of your men running away from th
 dlga_raid_village_failed:close_window|I will do better next time.
 dlga_lord_start:lord_target_lord_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
 dlga_lord_target_lord_failed:close_window|I will do better next time.
-dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.
+dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.
 dlga_lord_start:kill_quest_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Your men have witnessed your bravery in battle, {playername}. You have earned my respect.
 dlga_kill_quest_failed:close_window|I will do better next time.

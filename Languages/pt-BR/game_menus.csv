@@ -68,7 +68,7 @@ mno_start_go|GONDOR, o Reino da Torre Branca
 mno_start_ro|ROHAN, o povo dos Cavalos
 mno_start_du|ARNOR, a antiga dinastia dos Homens
 mno_start_be|BEORNINGS, o povo Urso
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+mno_start_wo|LENHADOR, das beiradas da Floresta das Trevas
 mno_start_da|O Reino do Norte de VALLE
 menu_start_good_elf|^^^^^^^^^^Em qual Floresta você vive, Ancião?
 mno_start_ri|VALFENDA, do Senhor Elrond
@@ -175,7 +175,6 @@ mno_be_quiet|Abaixem as armas e permaneçam quietos! Agora, fora daqui!
 mno_be_bold|Continuar! Eu não tenho medo de plantas ou antigos mitos!
 mno_fight_back|Vamos descobrir! Procure na área! Queime uma árvore ou duas!
 menu_fangorn_search_fails|^^^^^^Você procura na escuridão da densa floresta, mas não encontra nada.^No entanto, você sente que está sendo observado e odiado cada vez mais.
-menu_fangorn_battle_debrief_won|^^^Uma grande vitória!^^^Então era isso o que todos os mitos sobre Fangorn queriam dizer...
 menu_fangorn_killed_player_only|^^^^^^Você vagueia na densa e escura floresta.^De repente, você é acertado por alguma coisa! Talvez um galho pesado tenha caído em cima de sua cabeça?^Você fica inconsciente por alguns minutos. Você está seriamente ferido, mas pode continuar.
 mno_ow_get_out|Oras! Vamos sair deste lugar amaldiçoado!
 menu_fangorn_killed_troop_and_player|^^^^^^Você vagueia na densa e escura floresta.^De repente, você é acertado por alguma coisa! Talvez um galho pesado tenha caído em cima de sua cabeça.^Quando você se recupera, percebe que nem todos da sua tropa tiveram a mesma sorte.^
@@ -201,7 +200,7 @@ mno_encounter_order_attack|Ordenar suas tropas para {reg21?atacar:encará-los} s
 mno_control_allies_menu|Use Influência para comandar seus aliados no campo de batalha.
 mno_encounter_hide|Esconder-se do inimigo...
 mno_special_whip|Lance-se em direção deles, rachando o {s4}.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
+mno_encounter_attack_bearform|{reg21?Salta à batalha na forma urso:Transforme-se e enfrente-os}.
 mno_encounter_leave|Separar.
 mno_encounter_retreat|Recuar, deixando alguns soldados para trás para cobrir sua retirada.
 mno_player_control_allies_simple|Comande-os e ataque o inimigo
@@ -234,6 +233,7 @@ menu_join_battle|^^^Você está ajudando {s2} contra {s1}.^ Você tem {reg22} tr
 mno_join_attack|Investir contra o inimigo.
 mno_join_order_attack|Ordenar às suas tropas para atacar junto de seus aliados enquanto você fica atrás.
 mno_control_allies_join_menu|Use Pontos de Influência para comandar seus aliados no campo de batalha.
+mno_join_attack_bearform|Salta à batalha na forma urso.
 mno_join_leave|Separar.
 mno_player_control_allies_join_menu|Comande-os e ataque o inimigo
 menu_join_order_attack|{s4}^^Suas vítimas: {s8}^^Vítimas dos aliados: {s9}^^Vítimas do inimigo: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Não pedir recompensas.
 menu_siege_started_defender|{s1} está lançando um ataque contra os muros de {s2}. Você tem {reg22} tropas prontas para a batalha contra as {reg11} do inimigo. Você decide...
 mno_siege_defender_join_battle|Participar da batalha.
 mno_siege_defender_troops_join_battle|Ordene à seus homens para participarem da próxima batalha sem você.
+mno_siege_defender_do_not_join_battle|Não se envolver.
 menu_siege_join_defense|{s4}^^Suas vítimas: {s8}^^Vítimas dos aliados: {s9}^^Vítimas do inimigo: {s10} 
 menu_village_hunt_down_fugitive_defeated|^^^^^Um golpe pesado do fugitivo o derruba, e sua visão fica turva e escurece. O tempo passa. Quando você abre seus olhos novamente, se vê sujo e ensanguentado, mas por sorte, nenhum dos seus ferimentos parece ser letal.
 menu_town_bandits_succeeded|^^^^^Os goblins caem ante você como o trigo à uma foice! Logo você fica em pé, sozinho, enquanto a maior parte dos seus atacantes estão inconscientes, mortos ou morrendo. Certamente os moradores locais ficarão muito agradecidos por você tê-los salvo desta ameaça.

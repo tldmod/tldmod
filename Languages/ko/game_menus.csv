@@ -68,7 +68,7 @@ mno_start_go|백색 탑의 왕국, 곤도르.
 mno_start_ro|기마 민족, 로한
 mno_start_du|고대 왕조의 인간들, 두네다인.
 mno_start_be|곰 인간, 베오른족
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|너른골 북부 왕국
 menu_start_good_elf|^^^^^^^^^^어느 숲에서 사시겠습니까, 선인이시여?
 mno_start_ri|엘론드가 통치하는 리븐델
@@ -104,7 +104,7 @@ mno_start_cliff|군다바드 산의 절벽
 menu_start_gondor_mt|^^^^^^^^^^당신의 혈통을 선택하세요.
 mno_start_1_com|평민
 mno_start_2_hib|귀족
-; menu_start_haradrim|^^^^^^^You are one of the Haradrim,^a Man of the Desert.^Select your line
+menu_start_haradrim|^^^^^^^You are one of the Haradrim,^a Man of the Desert.^Select your line
 mno_start_1_des|사막 민족
 mno_start_2_far|남끝 하라드 부족민
 menu_start_numenorean|^^^^^^^당신은 검은 누메노르인,^모르고스와 어둠에 충실한 추종자입니다.^당신이 눈을 섬기는 곳을 선택하세요.
@@ -165,7 +165,7 @@ mno_strat_tweaks_rank_gain_rate|지위 획득 비율: {s7}
 mno_strat_tweaks_back|조정 메뉴로 돌아가기
 menu_camp_action|^^^^^^^^^어떤 물건을 선택하시겠습니까?
 mno_camp_drink_water|엔트워터를 마신다!
-; mno_camp_drink_orc_brew|Pass around the Orc Brew!
+mno_camp_drink_orc_brew|Pass around the Orc Brew!
 mno_camp_action_4|돌아가기
 menu_assasins_attack_player_won|당신은 {s3}에 의해 보내진 암살자들을 {s2}에서 성공적으로 물리쳤습니다.
 menu_assasins_attack_player_retreat|당신은 목숨을 건진 채 도망쳤습니다!
@@ -175,7 +175,6 @@ mno_be_quiet|무기를 내리고 조용히 하라! 이곳을 벗어난다!
 mno_be_bold|계속 가자! 나는 식물이나 오래된 미신같은 건 두렵지 않아!
 mno_fight_back|알아봐야겠어! 이 지역을 조사하라! 나무를 한 두 그루 정도 불태워 봐!
 menu_fangorn_search_fails|^^^^^^당신은 어둡고 빽빽한 숲을 조사했지만 아무것도 찾을 수 없었습니다.^하지만 당신은 더 많은 관찰과 위협을 느꼈습니다.
-menu_fangorn_battle_debrief_won|^^^대승이다!^^^이게 팡고른 숲을 둘러싼 전설의 정체였군...
 menu_fangorn_killed_player_only|^^^^^^당신은 빽빽한, 어두운 숲을 배회했습니다.^갑자기 당신은 무언가에 얻어맞았습니다! 아마도 묵직한 가지가 당신의 머리에 떨어진 듯 한데요?^당신은 몇분간 의식을 잃었습니다. 당신은 심하게 다쳤지만 도망칠 수 있었습니다.
 mno_ow_get_out|아야! 이 저주받은 곳에서 나가자!
 menu_fangorn_killed_troop_and_player|^^^^^^당신은 빽빽한, 어두운 숲을 배회했습니다.^^갑자기 당신은 무언가에 얻어맞았습니다! 아마도 묵직한 가지가 당신의 머리에 떨어진 듯 합니다.^^몇 분 후, 회복되었을 때, 당신은 운 좋게도 부대원 중 일부를 발견했습니다.^^
@@ -201,7 +200,7 @@ mno_encounter_order_attack|당신이 뒤로 물러나 있는 동안 병사들에
 mno_control_allies_menu|당신의 아군에게 명령하기 위해 영향력을 사용한다.
 mno_encounter_hide|적으로부터 숨는다...
 mno_special_whip|{s4}을(를) 채찍질하며 그들을 향해 돌격한다
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
+mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 mno_encounter_leave|떠나기
 mno_encounter_retreat|몇몇 병사들을 당신이 후퇴할 때 남겨놓기
 mno_player_control_allies_simple|그들에게 적에게 돌격하라 명령한다.
@@ -234,6 +233,7 @@ menu_join_battle|당신은 {s1}에 맞서 {s2}의 군단에 가세했습니다.^
 mno_join_attack|적에게 돌격하기
 mno_join_order_attack|당신이 뒤에 있는동안 동맹군과 함께 공격하라고 명령한다.
 mno_control_allies_join_menu|당신의 아군에게 명령하기 위해 영향력 포인트를 사용한다.
+mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|떠나기
 mno_player_control_allies_join_menu|그들에게 적에게 돌격하라 명령한다.
 menu_join_order_attack|{s4}^^당신의 피해: {s8}^^동맹의' 피해: {s9}^^적의 피해: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|보상 요구하지 않기
 menu_siege_started_defender|{s1}은(는) {s2}에 대한 공성전을 감행하고 있습니다. ^{reg22}명의 아군을 이끌고 {reg11}명의 적을 상대해야 합니다. 당신은...
 mno_siege_defender_join_battle|전투에 참가하기
 mno_siege_defender_troops_join_battle|당신없이 전투에 참가하라고 명령
+mno_siege_defender_do_not_join_battle|참전하지 않는다
 menu_siege_join_defense|{s4}^^아군 사상자: {s8}^^동맹 사상자: {s9}^^적군 사상자: {s10}
 menu_village_hunt_down_fugitive_defeated|도망자들로부터의 무거운 타격이 당신을 땅에 눕혔고, 당신의 시야는 회전했고 어두워졌습니다. 시간이 지나 당신이 눈을 떴을 때 당신은 지치고 피로 물든 자신의 모습을 찾을 수 있었습니다. 그러나, 운좋게도 어떤 상처도 치명적으로 보이진 않았습니다.
 menu_town_bandits_succeeded|고블린은 당신앞에 낙엽처럼 쓰러졌습니다! 이내 당신은 공격자 대부분이 의식을 잃고 죽거나 죽어가는 가운데 홀로 서 있었습니다. 위협으로부터 그들을 구원함으로서 지역 주민들은 확실히 매우 감사히 여길 것입니다.
@@ -437,16 +438,16 @@ menu_death|당신은 죽었습니다. 전쟁은 계속되고 있지만 당신은
 menu_animal_ambush|당신과 당신의 동료들은 나머지 일행과 떨어져 있다는 것을 알아차렸습니다, 그리고 갑자기...
 menu_animal_ambush_success|{s2}들은 당신 앞에 낫에 잘린 벼이삭마냥 {reg0?쓰러졌습니다:쓰러졌습니다} !  곧 당신을 공격한 이들은 전부 죽거나 기절해 쓰러져 있습니다. {s3}
 menu_animal_ambush_fail|짐승들이 당신{reg0?,: 그리고 당신 동료{reg2?들,:,}}을 물어뜯으며 공격하지만 운좋게도 그들을 물리치는데 성공했습니다. 바라건대 다시는 짐승들에게 공격받지 않기를.
-; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Plain Big (file scn custom 1.sco)
-; mno_scene2|Plain Med (file scn custom 2.sco)
-; mno_scene3|Plain Small (file scn custom 3.sco)
-; mno_scene4|Steppe Big (file scn custom 4.sco)
-; mno_scene5|Steppe Med (file scn custom 5.sco)
-; mno_scene6|Steppe Small (file scn custom 6.sco)
-; mno_scene7|Forest Big (file scn custom 7.sco)
-; mno_scene8|Forest Med (file scn custom 8.sco)
-; mno_scene9|Forest Small (file scn custom 9.sco)
+menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+mno_scene1|Plain Big (file scn custom 1.sco)
+mno_scene2|Plain Med (file scn custom 2.sco)
+mno_scene3|Plain Small (file scn custom 3.sco)
+mno_scene4|Steppe Big (file scn custom 4.sco)
+mno_scene5|Steppe Med (file scn custom 5.sco)
+mno_scene6|Steppe Small (file scn custom 6.sco)
+mno_scene7|Forest Big (file scn custom 7.sco)
+mno_scene8|Forest Med (file scn custom 8.sco)
+mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|돌아가기...
 mno_back|돌아간다.
 mno_next|다음으로...

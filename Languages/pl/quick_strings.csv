@@ -197,6 +197,8 @@ qstr_+1_to_Strength|+1 do Siły
 qstr_+1_to_Agility|+1 do Zręczności
 qstr_+1_to_Leadership|+1 do Dowodzenia
 qstr_+1_to_Wildcraft|+1 do Wildcraft
+; qstr_+1_to_Tracking|+1 to Tracking
+qstr_when_equipped|gdy wyekwipowany
 qstr_+1_to_Power_Draw|+1 do Potężnego Rzutu
 qstr_The_record_of_Balin_|Zapis z zagubionej ekspedycji Balina.
 qstr_Who_might_be_interes|Kto mógłby być tym zainteresowany?
@@ -213,16 +215,18 @@ qstr_+1_to_Charisma|+1 do Charyzmy
 qstr_+1_to_Surgery|+1 do Chirurgii
 qstr_+1_to_Intelligence|+1 do Inteligencji
 qstr_+2_to_Surgery|+2 do Operacji 
-qstr_when_equipped|gdy wyekwipowany
 qstr_+1_to_Riding|+1 do Jazdy Konnej
 qstr_+1_to_Mounted_Archer|+1 do Łucznictwa Konnego
+; qstr_Bonus_to_Riding|Bonus to Riding
+; qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
+; qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
 qstr_+1_to_Prisoner_Mgmt|+1 do Zarządzania Więźniami
 qstr_+2_to_Tactics|+2 do taktyki
 qstr_+1_Intelligence|+1 do Inteligencji 
 qstr_+{reg1}_to_Spotting|+{reg1} do Spostrzegania
 ; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
+; qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|+1 do Spostrzegania
-qstr_+2_to_Athletics|+2 do Atletyki
 qstr_Less_Dunnish_upkeep|Mniejsze utrzymanie Dunlandczyków
 qstr_Less_Wargs_upkeep|Mniejsze utrzymanie Wargów
 qstr_Light_Armor|Lekki pancerz
@@ -694,7 +698,7 @@ qstr_A_thunderstorm_from_t|Burza z Gór Mglistych dotarła nad pole walki. Łucz
 qstr_A_poisonous_fog_from|Trująca mgła z Dol Guldur spowija pole bitwy. Ty i twoi ludzie czujecie się słabo. Wśród twojej kompanii szerzy się strach.
 qstr_A_poisonous_fog_from_|Trująca mgła z Dol Guldur spowija pole bitwy. Nie robi ona na tobie wrażenia, ale wyczuwasz cierpienie i strach swego przeciwnika.
 qstr_You_shapeshift_into_|Zmieniasz się w niedźwiedzia!
-; qstr_You_got_{reg1}_xp_in|You got {reg1} experience in bear form.
+; qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
 ; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
 qstr_You_change_back_to_h|Powracasz do ludzkiej postaci... 
 qstr_Your_mount_stumbles!|Twój wierzchowiec okulał!
@@ -711,6 +715,7 @@ qstr_Use_Up/Down_arrow_ke|Użyj strzałek Góra/Dół aby przechylić w górę/d
 qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
 qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
 qstr_Fixed_Camera___Cente|Kamera naprawiona - wycentrowano
+; qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 qstr_While_visiting_towns|Odwiedzając miasta, osady i obozy, możesz porozmawiać z ludźmi, którzy chodzą po okolicy. Członkowie różnych frakcji mają różne rzeczy do powiedzenia - niektórzy pozwolą ci na własne myśli, inni podzielą się plotkami. Obydwaj mogą jedynie lepiej zrozumieć kulturę i frakcję danej osoby, albo mogą znaleźć wskazówki, jak znaleźć tajne miejsca lub porady i wskazówki dotyczące podróżowania przez Pustkowie i walki w Wojnie o Pierścień.
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
 qstr_You_have_found_the_l|Znalazłeś lokalnego kowala.
@@ -746,7 +751,6 @@ qstr_Nazgul_diving_attack|Nazgul przypuszcza atak na {s11}!
 qstr_{s11}_is_{s10}_in_th|{s11} {s10} w wyniku ataku Nazgula!
 qstr_Received_{reg66}_dam|Otrzymano {reg66} obrażeń.
 qstr_You_yell_for_your_ho|Krzyczysz na swego konia.
-qstr_{s1}_s_morale:_{reg1|Morale {s1}: {reg1}
 qstr_You_do_not_need_to_r|Nie musisz jeszcze zmobilizować swoich żołnierzy.
 qstr_You_rally_your_troop|Prowadzisz swoje wojska!
 qstr_{s5}_rallies_{reg65?|{s5} zagrzewa do walki {reg65?her:his} żołnierzy!
@@ -987,6 +991,17 @@ qstr_Luckily_some_passing|Na szczęście jacyś miejscowi znajdują cię leżąc
 qstr_{s13}^^You_have_succ|{s13}^^Udało ci się przekraść niepostrzeżenie.
 qstr_the_place|miejsce
 qstr_the_castle|zamek
+qstr_the_Citadel|the Citadel
+qstr_the_Secret_Cave|Ukryta Jaskinia
+; qstr_Meduseld_the_Golden_|Meduseld, the Golden Hall
+qstr_the_Lord_Halls|Sala Władców
+; qstr_the_Leader_s_Cave|the Leader's Cave
+qstr_the_Tower|Wieża
+; qstr_the_tower_of_Orthanc|the tower of Orthanc
+qstr_the_Throne_Room|Sala Tronowa 
+; qstr_Beorn_s_Hall|Beorn's Hall
+qstr_the_Hall|Hala
+qstr_the_Great_Chamber_of|Wielka Hala Thróra
 qstr_Stay_indoors_for_som|Odpocznij tu przez jakiś czas ({reg1} Pkt Prestiżu za noc)
 qstr_Camp_outside_for_som|Rozbij obóz na zewnątrz (za darmo)
 qstr_{s4}_s_scouts_have_s|Zwiadowcy {s4} widzieli i zgłosili twoją porażkę. Przyniosłeś wstyd {s4}, a odpowiedzialność za tę porażkę spoczywa wyłącznie na Tobie.
@@ -1015,9 +1030,6 @@ qstr_You_have_defeated_the|Pokonałeś flotę nalotową! To jest ciężki cios w
 qstr_You_defeated_the_int|Pokonałeś przechwytującą flotę! Nawet jeśli nie masz dość siły, by napaść na miasto, jest to wielkie zwycięstwo!
 qstr_You_drove_back_the_e|Odrzuciłeś wrogą flotę, ale straciłeś większość swoich statków!
 qstr_You_were_defeated_by|Zostałeś pokonany przez przechwytującą flotę i nie udało ci się napaść na miasto!
-qstr_Lorien|do Lorien
-qstr_Imladris|Imladris
-qstr_Woodelf|Woodelf
 qstr_^^^^^^^You_come_upon|^^^^^^^ Natrafiasz na uchodźców opuszczających {s2} i w drodze do {s3}. ^ ^ W większości są to ludzie starzy i zarażeni, w towarzystwie kobiet i dzieci. ^ ^ Są strażnicy, ale nie na tyle, aby ochronić wszystkich przed napadem.
 qstr_^^^^^^^You_come_upon_|^^^^^^^ Natrafiasz na uchodźców, których śledziłeś od {s2}. Wygląda na to, że są w drodze do {s3} i są w większości starsi i zarażeni. ^ ^ Jest niewielu strażników, ale nie na tyle, aby powstrzymać ciebie i twoich ludzi przed zabiciem ich wszystkich.
 qstr_^^At_last_the_Master|^ ^ W końcu Mistrz wykonuje swój ruch! Pochodnie świecą jasno. Ostra broń błyszczy. Ty i twoi tęgi chłopcy wkrótce otrzymacie rozkazy marszu. Ai, będą walki, dużo i chwała wystarczy! ^^ Masz zaszczyt być wezwany na audiencję u Mistrza w jego wieży. Prawdopodobnie twoje pierwsze rozkazy będą dziełem Snagi - najedź tu na wioskę, tam prowadź karawanę. Ale wkrótce się okażesz. Kto powiedział, że nie zagrasz tak dużej roli jak każdy dowódca {s2} w {s3}? ^^ Rozpoczęła się Wojna; upadek człowieka i ich sojuszników się zaczyna!
@@ -1048,6 +1060,7 @@ qstr_You_are_entering_{s1|Wkraczasz {s1} ({s2}).
 qstr_You_are_entering_{s1}|Wkraczasz {s1}.
 qstr_The_war_expands_comm|Wojna się rozrasta, komendanci stają się odważniejsi! (wymagania szturmu zmniejszone)
 qstr_Your_party_is_spotte|Twój oddział został zauważony przez: {s1}.
+; qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
 qstr_Party_has_nothing_to|Oddział nie ma nic do jedzenia!
 qstr_You_pay_for_accommod|Płacisz za zakwaterowanie.
 qstr_The_troll_outside_{s|Trol na zewnątrz {s2} został zabity. Zadanie anulowane.
@@ -1158,7 +1171,6 @@ qstr_Well_if_you_are_here|Dobrze... jeśli tutaj jesteś i rozmawiasz ze mną to
 qstr_You_just_got_windyfl|Właśnie zdobyłeś windyflorated!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
-qstr_the_Citadel|the Citadel
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Namiestnik Denethor
 qstr_the_Golden_Hall|Złota Sala
@@ -1386,7 +1398,7 @@ qstr_Mercy_I_crave!_To_fa|Litości, błagam! Przeciwstawić się {s7} w otwartej
 qstr_strong_warriors_from|silni wojownicy z {s7}
 qstr_champions_from_{s7}_|mistrzowie z {s7}, najlepsi na polu bitwy
 qstr_{playername}_the_men|{playername}, moi ludzie słyszeli okrutne historie o oddziałach wrogach. Opowieści o nich demoralizują naszych żołnierzy. Chcę, żebyś pokazał im, że nie mają, czego się bać. Chcę, abyś osobiście pokonał {reg22} {s6}.
-qstr_{playername}_I_want_|{playername}, chcę, żebyś pokazał ludziom, że wrogie oddziały nie mają żadnych konsekwencji. Chcę, żebyś osobiście zabił {reg22} {s6}! Zrób to, aby pokazać, że jesteśmy siłą nadrzędną!
+; qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superior force!
 qstr_I_will_do_what_you_a|Zrobię to, o co prosiłeś, a ludzie będą świadkami.
 qstr_high_level_troops_fr|jednostki wysokiego poziomu z
 qstr_elite_level_troops_f|elitarne jednostki z

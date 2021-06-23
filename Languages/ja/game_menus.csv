@@ -68,7 +68,7 @@ mno_start_go|白い塔の王国、ゴンドール
 mno_start_ro|馬の民、ローハン
 mno_start_du|いにしえの王族の末裔、ドゥネダイン
 mno_start_be|熊人族、ビヨルン一党
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|北方の王国、谷間の国
 menu_start_good_elf|^^^^^^^^^^賢者殿、どちらの森にお住まいですか？
 mno_start_ri|エルロンド卿の率いる国、裂け谷
@@ -175,7 +175,6 @@ mno_be_quiet|武器をしまって静かにするんだ！この場から離れ�
 mno_be_bold|かかって来い！植物だの古い伝説だの、私は一切恐れないぞ！
 mno_fight_back|原因をつきとめるぞ！ここ一帯を調べろ！そこの木を一、二本燃やせ！
 menu_fangorn_search_fails|^^^^^^あなたは暗く、深い森のなかを探しまわったが、何も^見つけられなかった。しかし、監視の目にさらされているという思いと、^あたりに漂う脅威は、どんどん強くなっている。
-menu_fangorn_battle_debrief_won|^^^大いなる勝利だ！^^^なるほど、これがファンゴルンの伝説のからくりか・・・
 menu_fangorn_killed_player_only|^^^^^^あなたは深く、暗い森のなかを探し回った。^突然、あなたは何かに殴られた！大きな木の枝が頭を直撃したのだろうか？^あなたは数分の間、気を失った。ひどい痛みが残っているが、^探索の続行に支障はない。
 mno_ow_get_out|いたた！この呪われた場所から逃げろ！
 menu_fangorn_killed_troop_and_player|^^^^^^あなたは深く、暗い森のなかを探し回った。^^突然、あなたは何かに殴られた！大きな木の枝でも落ちてきて、^頭を直撃したのだろう。^^数分後に意識を取り戻したあなたは、部下たちはあなたほど^幸運には恵まれなかった事を知った。^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^{s1}と戦っている、 {s2}に加勢します。^敵勢{r
 mno_join_attack|攻撃を開始する。
 mno_join_order_attack|部下に友軍と共に戦うよう指示をし、自分は後方に待機する。
 mno_control_allies_join_menu|影響力ポイントを消費して戦場にいる友軍の指揮をする。
+; mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|撤退する。
 mno_player_control_allies_join_menu|彼らの指揮をとって敵勢へ突撃する
 menu_join_order_attack|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|褒美の要求をしない。
 menu_siege_started_defender|{s2}の城壁に対し、 {s1}が攻撃を仕掛けています。 あなたの部隊で戦闘可能な兵は{reg22}名、 対する敵勢は{reg11}名です。 あなたは・・・
 mno_siege_defender_join_battle|攻撃に参加する。
 mno_siege_defender_troops_join_battle|部下に攻撃に参加するよう指示し、自身は後方に待機する。
+mno_siege_defender_do_not_join_battle|巻き込まれないようにする。
 menu_siege_join_defense|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^逃亡者の強烈な一撃を食らったあなたの視界は、 ぐるっと回った後に闇に包まれました。 しばらくの時間が経ち、あなたは目を覚ましました。 血まみれの体は痛みはするものの、 幸運な事に致命傷は受けていませんでした。
 menu_town_bandits_succeeded|^^^^^鎌に刈られる小麦のように、 ゴブリンどもはなぎ倒されました！ 立っているのはあなただけで、 ゴブリンどもは残らず気を失ったか、 死んだか、 または虫の息です。 このような脅威を取り除いたあなたに対し、 地元の民はとても感謝することでしょう。

@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Elmo da Braccatore Uruk-Hai
 itm_isen_uruk_helm_f|Elmo da Braccatore Uruk-Hai
 itm_uruk_pike_b|Picca di Mordor
 itm_uruk_falchion_a|Falcione Uruk
-itm_uruk_falchion_b|Falcione Uruk
-itm_uruk_spear|Lancia di Mordor
-itm_uruk_skull_spear|Lancia del Teschio Uruk
-itm_uruk_voulge|Mannnaia Inastata Uruk
-itm_uruk_heavy_axe|Ascia Pesante Uruk
+itm_uruk_falchion_b|Grande Scimitarra Orchesca
 itm_isengard_sword|Spada di Isengard
 itm_isengard_axe|Ascia di Isengard
 itm_isengard_hammer|Martello di Isengard
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Scudo da Uruk di Isen
 itm_wood_club|Mazza di Legno
 itm_twohand_wood_club|Grossa Mazza di Legno
 itm_bone_cudgel|Randello d'Osso
-itm_skull_club|Mazza con Teschio
+itm_orc_pick|Picca Orchesca
+itm_orc_hammer|Martello Malvagio
 itm_orc_club_b|Mazza da Fantino di Warg
 itm_orc_club_c|Mazza Chiodata Orchesca
 itm_orc_club_d|Mazza Malvagia
 itm_orc_sledgehammer|Martello da Guerra Orchesco
 itm_orc_simple_spear|Lancia Orchesca
 itm_orc_skull_spear|Lancia del Teschio Orchesca
-itm_orc_bill|Becco Orchesco
-itm_orc_slasher|Flagello Orchesco
+itm_orc_bill|Asta Orchesca
+itm_orc_slasher|Spada Corta Orchesca
 itm_orc_falchion|Falcione Orchesco
 itm_orc_scimitar|Scimitarra Orchesca
 itm_orc_sabre|Sciabola Orchesca
-itm_orc_machete|Machete Orchesco
+itm_orc_battle_axe|Ascia da Battaglia Orchesca
 itm_orc_axe|Ascia Orchesca
-itm_orc_two_handed_axe|Ascia a Due Mani Orchesca
+itm_orc_two_handed_axe|Grande Ascia Orchesca
 itm_orc_throwing_axes|Asce da Lancio Orchesche
 itm_orc_bow|Arco Orchesco
 itm_orc_shield_a|Scudo Orchesco
@@ -493,7 +490,8 @@ itm_mirkwood_leather|Armatura di Cuoio degli Elfi Silvani
 itm_mirkwood_pad|Mantello Trapuntato di Boscoverde
 itm_mirkwood_mail|Cotta di Maglia di Boscoverde
 itm_mirkwood_scale|Armatura a Scaglie Leggera di Boscoverde
-itm_mirkwood_heavy_scale|Armatura a Scaglie di Bosco Atro
+itm_mirkwood_heavy_scale|Armatura a Scaglie di Boscoverde
+itm_mirkwood_sword|Spada degli Elfi Silvani
 itm_mirkwood_great_spear|Lancia Suprema di Boscoverde
 itm_mirkwood_war_spear|Lancia da Guerra di Boscoverde
 itm_mirkwood_short_spear|Lancia degli Elfi Silvani
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|Ascia da Battaglia Nanica
 itm_dwarf_great_axe|Scure a Due Mani Nanica
 itm_dwarf_great_mattock|Piccone a Due Mani Nanico
 itm_dwarf_great_pick|Piccozza a Due Mani Nanica
-itm_dwarf_war_pick|Piccozza da Guerra Nanica
+itm_dwarf_throwing_axe_reward|Asce Volanti di Erebor
 itm_dwarf_mattock|Piccone Nanico
 itm_dwarf_hand_axe|Accetta Nanica
-itm_dwarf_throwing_axe|Accette da Lancio Naniche
+itm_dwarf_throwing_axe|Asce da Lancio Naniche
 itm_dwarf_spear|Lancia Nanica
 itm_dwarf_spear_b|Picca Nanica
 itm_dwarf_spear_c|Ascia Lunga Nanica
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Frusta del Padrone
 itm_horn_gondor_reward|Corno di Gondor
 itm_harad_totem_reward|Totem Haradrim
 itm_elven_amulet_reward|Amuleto Elfico
+
 itm_torque_reward|Torque dei Malvagi 
 itm_orc_brew|Liquore degli Orchi
-itm_rohan_saddle|Sella di Thengel
+itm_rohan_saddle|Sella
 itm_mearas_reward|Stallone Mearh
 itm_shield_of_tuor|Scudo di Tuor
 itm_riv_armor_reward|Armatura Decorata di Gran Burrone
@@ -785,7 +784,7 @@ itm_khamul_helm|Elmo di Khamul
 itm_black_arrows_reward|Frecce Nere
 itm_leather_boots_reward|Stivali da Cacciatore
 itm_rohan_armor_th|Armatura Reale di Rohan
-itm_wilderness_amulet|Amuleto della Natura Selvaggia
+itm_wilderness_cowl|Cappuccio da Cacciatore
 itm_prisoner_coll_chain|Catene del Prigioniero
 itm_witchking_helmet|Maschera da Stregone
 itm_lorien_royal_armor|Armatura Reale di Lorien

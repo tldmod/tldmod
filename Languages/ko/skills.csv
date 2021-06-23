@@ -1,7 +1,7 @@
 skl_trade|거래 흥정
-; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
+skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|리더십
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
+skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|포로 수송
 skl_prisoner_management_desc|1포인트가 증가할 때 마다 포로의 수가 %d로 증가합니다.(리더 기술)
 skl_persuasion|서바이벌

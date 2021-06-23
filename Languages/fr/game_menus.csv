@@ -68,7 +68,7 @@ mno_start_go|GONDOR, le royaume de la Tour Blanche
 mno_start_ro|ROHAN, le Pays du Cheval
 mno_start_du|DUNEDAIN, de l'ancienne dynastie des hommes
 mno_start_be|BEORNIENS, les hommes Ours
-mno_start_wo|FORESTIERS, du couvert de Grand'Peur
+mno_start_wo|FORESTIERS, de l'orée de Grand'Peur
 mno_start_da|Le royaume occidental du VAL
 menu_start_good_elf|^^^^^^^^^^Dans quelle forêt vivez-vous, Ancien ?
 mno_start_ri|FONDEVAL, du Seigneur Elrond
@@ -175,7 +175,6 @@ mno_be_quiet|Baissez vos armes et restez calmes ! Maintenant, hors d'ici !
 mno_be_bold|Continuez ! Je n'ai pas peur des plantes ou des vieilles légendes !
 mno_fight_back|Allons voir ! Explorez la zone ! Brûlez un arbre ou deux !
 menu_fangorn_search_fails|^^^^^^Vous explorez la profonde et obscure forêt, mais ne trouvez rien. ^Malgré tout, vous vous sentez de plus en plus observé et menacé.
-menu_fangorn_battle_debrief_won|^^^C'est une grande victoire !^^^Donc, c'est ce que voulaient dire tous ces mythes à propos de Fangorn...
 menu_fangorn_killed_player_only|^^^^^^Vous vous promenez dans l'épaisse et obscure forêt.^Tout d'un coup vous êtes frappé{/e} par quelque chose ! Peut-être qu'une grosse branche vous est tombée sur la tête ?^Vous restez inconscient{/e} seulement quelques minutes. Vous êtes gravement blessé{/e} mais vous pouvez continuer.
 mno_ow_get_out|Aïe ! Sortons de cet endroit maudit !
 menu_fangorn_killed_troop_and_player|^^^^^^Vous vous promenez dans l'épaisse et sombre forêt.^^Tout d'un coup, vous êtes frappé{/e} par quelque chose ! Peut-être qu'une grosse branche vous est tombée sur la tête ?^^Lorsque vous revenez à vous, quelques minutes plus tard, vous vous apercevez que tous vos soldats n'ont pas eu autant de chance.^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^Vous aidez {s2} contre {s1}.^ Vous avez {reg22} soldats prê
 mno_join_attack|Charger l'ennemi.
 mno_join_order_attack|Donner l'ordre à vos soldats d'attaquer avec vos alliés tandis que vous restez en retrait.
 mno_control_allies_join_menu|Utilisez vos points d'influence pour commander vos alliés sur le champ de bataille.
+mno_join_attack_bearform|Sauter dans la bataille sous forme d'ours
 mno_join_leave|Battre en retraite.
 mno_player_control_allies_join_menu|Commandez les et chargez l'ennemi.
 menu_join_order_attack|{s4}^^Vos pertes : {s8}^^Pertes alliées : {s9}^^Pertes ennemies : {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Ne demander aucune récompense.
 menu_siege_started_defender|{s1} lance un assaut contre les murs de {s2}. Vous avez {reg22} troupes prêtes au combat contre les {reg11} de l'ennemi. Vous décidez de...
 mno_siege_defender_join_battle|Rejoindre la bataille.
 mno_siege_defender_troops_join_battle|Ordonner à vos hommes de se battre sans vous.
+mno_siege_defender_do_not_join_battle|Ne pas vous en mêler.
 menu_siege_join_defense|{s4}^^Vos pertes : {s8}^^Pertes alliées : {s9}^^Pertes ennemies : {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Le coup de massue du fuyard vous jette à terre, votre vision se brouille et un voile noir tombe sur vos yeux. Le temps passe. Lorsque vous rouvrez vos yeux, vous vous découvrez blessé{/e} et sanglant{/e}, mais par chance aucune de vos blessures ne semble mortelle.
 menu_town_bandits_succeeded|^^^^^Les Gobelins tombent devant vous comme le blé sous la faux ! Bientôt vous vous tenez seul{/e}, tous vos attaquants gisant inconscients, morts ou mourants. Les locaux vous seront vraisemblablement très reconnaissants de les avoir sauvés de cette menace.

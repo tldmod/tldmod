@@ -148,7 +148,7 @@ ui_str_hear_me|%s，聽我講！
 ui_return|返回
 ui_factions| 陣 營 
 ui_troop_upgrades|兵 種 升 級
-; ui_hdr_mode|HDR Mode:
+ui_hdr_mode|HDR模式：
 ui_autoexpore|自 動 曝 光 ( 如 HDR 已 開 啓，建 議 設 定 為 開 啓 )
-; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
-; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)
+ui_saving_policy_realistic|直面人生！不存檔就不能退出【不推薦】
+ui_saving_policy_nonrealistic|允許我不存檔就退出。【推薦，建議多備份存檔】

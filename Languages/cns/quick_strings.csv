@@ -197,6 +197,8 @@ qstr_+1_to_Strength|力+1
 qstr_+1_to_Agility|敏+1
 qstr_+1_to_Leadership|统+1
 qstr_+1_to_Wildcraft|自然力+1
+; qstr_+1_to_Tracking|+1 to Tracking
+qstr_when_equipped|装备时
 qstr_+1_to_Power_Draw|强弓等级+1
 qstr_The_record_of_Balin_|失败的巴林远征队的记录。
 qstr_Who_might_be_interes|有谁可能对此感兴趣？
@@ -213,16 +215,18 @@ qstr_+1_to_Charisma|魅+1
 qstr_+1_to_Surgery|手术等级+1
 qstr_+1_to_Intelligence|智力属性+1
 qstr_+2_to_Surgery|手术等级+2
-qstr_when_equipped|装备时
 qstr_+1_to_Riding|骑术技能等级+1
 qstr_+1_to_Mounted_Archer|骑射技能等级+1
+; qstr_Bonus_to_Riding|Bonus to Riding
+; qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
+; qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
 qstr_+1_to_Prisoner_Mgmt|俘虏管理等级+1 
 qstr_+2_to_Tactics|战术等级+2
 qstr_+1_Intelligence|智力属性+1
 qstr_+{reg1}_to_Spotting|侦查技能等级+{reg1}
 qstr__Scales_with_Wildcra|（规模与荒野求生技能等级相关）
+; qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|侦查技能等级+1
-qstr_+2_to_Athletics|跑动等级+2
 qstr_Less_Dunnish_upkeep|缺乏丹尼斯维护
 qstr_Less_Wargs_upkeep|缺乏座狼维护
 qstr_Light_Armor|轻甲
@@ -694,7 +698,7 @@ qstr_A_thunderstorm_from_t|从迷雾山脉刮来的雷雨在战场上肆虐。�
 qstr_A_poisonous_fog_from|从多尔哥多飘来的毒雾在战场上肆虐。你和你的部队感到全身虚弱。人们都很害怕。
 qstr_A_poisonous_fog_from_|从多尔哥多飘来的毒雾在战场上肆虐。你没有感到任何不同，但你却听到了敌人遭受痛苦的声音并且你能闻到他们的恐惧。
 qstr_You_shapeshift_into_|你变形成了一头熊！
-qstr_You_got_{reg1}_xp_in|你在熊形态下获得了{reg1}点经验。
+qstr_You_got_{reg1}_exper|你在熊形态下获得了{reg1}点经验。
 qstr_Your_ability_to_chan|你换皮的能力已经显现。从现在起，你可以保持人形或是换皮为熊。
 qstr_You_change_back_to_h|你变回人形……
 qstr_Your_mount_stumbles!|你的坐骑走路磕磕绊绊！看起来是瘸腿了。
@@ -711,6 +715,7 @@ qstr_Use_Up/Down_arrow_ke|使用上/下箭头键以前倾/后倾
 qstr_Fixed_Camera___Right|固定相机—右肩
 qstr_Fixed_Camera___Left_|固定相机—左肩
 qstr_Fixed_Camera___Cente|固定视角 - 正中
+; qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 qstr_While_visiting_towns|当访问城镇、据点和营地时，你可以与四处走动的人们谈话。不同派系的人有不同的事可说—一些能够让你理解他们的想法，其它的会分享他们的传闻。他们都能够让你更加了解他们的文化和派系，有时他们可能知道找到神秘地点的线索，或是在野外生存和在魔戒圣战中战斗的技巧和窍门。
 qstr_Cannot_leave_now.|现在不能离开。
 qstr_You_have_found_the_l|你找到了当地铁匠。
@@ -746,7 +751,6 @@ qstr_Nazgul_diving_attack|戒灵正在攻击{s11}！
 qstr_{s11}_is_{s10}_in_th|{s11}在戒灵的攻击中{s10}！
 qstr_Received_{reg66}_dam|受到{reg66}点伤害。
 qstr_You_yell_for_your_ho|你呼唤你的马。
-qstr_{s1}_s_morale:_{reg1|{s1}的士气：{reg1}
 qstr_You_do_not_need_to_r|你暂时不需要集结你的部队。
 qstr_You_rally_your_troop|你集结了部队！
 qstr_{s5}_rallies_{reg65?|{s5}集结了{reg65?她的:他的}的部队！
@@ -987,6 +991,17 @@ qstr_Luckily_some_passing|很幸运的是，一些路过的镇民认出了倒在
 qstr_{s13}^^You_have_succ|{s13}^^你成功的潜入了。
 qstr_the_place|当地
 qstr_the_castle|城堡
+qstr_the_Citadel|城堡
+qstr_the_Secret_Cave|秘密洞穴
+qstr_Meduseld_the_Golden_|金殿
+qstr_the_Lord_Halls|国王大厅
+qstr_the_Leader_s_Cave|首领洞穴
+qstr_the_Tower|塔楼
+qstr_the_tower_of_Orthanc|奥桑克塔
+qstr_the_Throne_Room|王座室
+qstr_Beorn_s_Hall|比翁大厅
+qstr_the_Hall|大厅
+qstr_the_Great_Chamber_of|瑟瑞尔大殿
 qstr_Stay_indoors_for_som|驻扎一段时间(每晚{reg1}资源点)
 qstr_Camp_outside_for_som|露营一段时间(无额外费用)
 qstr_{s4}_s_scouts_have_s|{s4}的斥候目睹并报告了你的失败。你使{s4}蒙羞，并且这次失败的责任完全在你。
@@ -1015,9 +1030,6 @@ qstr_You_have_defeated_the|你成功击败了突袭舰队！这是对敌人计�
 qstr_You_defeated_the_int|你成功击败了拦截舰队！尽管你方没有足够的剩余兵力去掠夺城市，但这仍是个伟大的胜利！
 qstr_You_drove_back_the_e|你击退了敌人的舰队，但是却损失了很多船只！
 qstr_You_were_defeated_by|你被截击舰队打败了，且没能够掠夺城市！
-qstr_Lorien|罗斯洛立安
-qstr_Imladris|瑞文戴尔
-qstr_Woodelf|木精灵
 qstr_^^^^^^^You_come_upon|^^^^^^^你遇到了逃离{s2}并正在前往{s3}的难民。^^他们几乎都是年老或刚康复的，有妇女和孩童作伴。^^他们有一些守卫，但不足以在袭击中保护好每一个人。
 qstr_^^^^^^^You_come_upon_|^^^^^^^你遇到了从{s2}开始就在跟踪的难民。他们看上去在去{s3}的路上，而且大多数都是年老或刚康复的。^^他们有一些守卫，但不足以阻止你和你的手下杀光他们。
 qstr_^^At_last_the_Master|^^终于，主人开始行动了！火炬燎亮。兵刃锐闪。你和你强壮的伙伴们很快就会接到行军的命令。唉，接下来将会有很多场战斗等着你，但是你的名字也会随之传遍四方。^^你应该因被召唤去觐见塔上的主人而感到光荣。一般来说给你的第一个命令将会像下仆和奴隶那样—去这里劫掠一个村庄，去那里拦截一队商队。但你很快就能展现自己真正的价值。谁能说你不能成为{s3}{s2}麾下一位伟大的指挥官呢？^^战争已经开始了；人类及其盟友的黄昏来临了！
@@ -1048,6 +1060,7 @@ qstr_You_are_entering_{s1|你进入了{s1}({s2})。
 qstr_You_are_entering_{s1}|你进入了{s1}。
 qstr_The_war_expands_comm|随着战事的如火如荼，指挥官们变得更加激进了。(围城需求减少)
 qstr_Your_party_is_spotte|你的部队被{s1}发现了。
+; qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
 qstr_Party_has_nothing_to|部队食物短缺了！
 qstr_You_pay_for_accommod|你支付了宿金。
 qstr_The_troll_outside_{s|{s2}外的食人妖被杀了。任务取消。
@@ -1158,7 +1171,6 @@ qstr_Well_if_you_are_here|恩，如果你能在这里跟我说这话的话，这
 qstr_You_just_got_windyfl|你刚刚被风化了！
 qstr_Merry|梅里
 qstr_Pippin|皮平
-qstr_the_Citadel|城堡
 qstr_Minas_Tirith|米那斯提力斯
 qstr_Steward_Denethor|摄政王迪耐瑟二世
 qstr_the_Golden_Hall|金殿

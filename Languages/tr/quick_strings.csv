@@ -197,6 +197,8 @@ qstr_+1_to_Strength|+1 Güce
 qstr_+1_to_Agility|+1 Çeviklik
 qstr_+1_to_Leadership|+1 Liderlige 
 qstr_+1_to_Wildcraft|Yaban Ustası'na +1
+qstr_+1_to_Tracking|+1 İz sürme
+qstr_when_equipped|Kullanıldıgında
 qstr_+1_to_Power_Draw|+1 Güçlü Germe
 qstr_The_record_of_Balin_|Balin'in kayıp seferinin kayıtları
 qstr_Who_might_be_interes|Kim bununla ilgilenebilir?
@@ -213,16 +215,18 @@ qstr_+1_to_Charisma|Karizmaya +1
 qstr_+1_to_Surgery|Cerrahlıga +1
 qstr_+1_to_Intelligence|Zeka yetenegine +1
 qstr_+2_to_Surgery|Cerrahlıga +2
-qstr_when_equipped|Kullanıldıgında
 qstr_+1_to_Riding|Binicilik becerisine +1
 qstr_+1_to_Mounted_Archer|Atlı okçuluk becerisine +1
+qstr_Bonus_to_Riding|Binicilige Bonus
+qstr_when_equipped.__Effec|kuşanıldıgında. (Güç ile ölçeklenir)
+qstr_Orcs:_+1_Riding_Requ|Orklar: +1 Binicilik Gereksimi
 qstr_+1_to_Prisoner_Mgmt|Esir yönetimine +1
 qstr_+2_to_Tactics|Taktik becerisine +2
 qstr_+1_Intelligence|Zekaya +1
 qstr_+{reg1}_to_Spotting|Gözlemcilik +{reg1} 
 qstr__Scales_with_Wildcra|(Yaban-Ustalıgı ile degişir)
+qstr_+1_to_Power_Throw|Güçlü Fırlatmaya +1
 qstr_+1_to_Spotting|Gözlemcilik +1
-qstr_+2_to_Athletics|Atletizm becerisine +2
 qstr_Less_Dunnish_upkeep|Dunnishlere daha az bakım
 qstr_Less_Wargs_upkeep|Warglara daha az bakım
 qstr_Light_Armor|Hafif Zırh
@@ -694,7 +698,7 @@ qstr_A_thunderstorm_from_t|Dumanlı Daglar'dan gelen bir fırtına, savaş meyda
 qstr_A_poisonous_fog_from|Dol Guldur'dan zehirli bir sis, savaş alanını kaplıyor. Sen ve adamların zayıflamış hissediyorsunuz. Adamlarınız arasında korku dolaşıyor.
 qstr_A_poisonous_fog_from_|Dol Guldur'dan zehirli bir sis, savaş alanını kaplıyor. Sen pek bir fark hissetmiyorsun, ama düşmanlarının acısını duyuyor ve korkunun kokusunu alabiliyorsun.
 qstr_You_shapeshift_into_|Bir ayıya dönüştün!
-qstr_You_got_{reg1}_xp_in|Ayı şeklindeyken {reg1} kadar tecrübe kazandın
+qstr_You_got_{reg1}_exper|Ayı şeklindeyken {reg1} kadar tecrübe kazandın
 qstr_Your_ability_to_chan|Şekil degiştirme yetenegin tezahür etti, bundan böyle yabani yollarda hem insan hem de ayı olarak gezebilirsin.
 qstr_You_change_back_to_h|İnsani şekline geri döndün...
 qstr_Your_mount_stumbles!|Bineginiz tökezliyor! Sakatlanmış gibi görünüyor.
@@ -711,6 +715,7 @@ qstr_Use_Up/Down_arrow_ke|Yukarı ve aşagı egim vermek için up/down tuşları
 qstr_Fixed_Camera___Right|Sabit Kamera - Sag Omuz
 qstr_Fixed_Camera___Left_|Sabit Kamera - Sol Omuz
 qstr_Fixed_Camera___Cente|Sabitlenmiş Kamera - Merkez
+qstr_Shield_is_too_big_to|Kalkan bir yayla birlikte kullanmak için fazla büyük.
 qstr_While_visiting_towns|Kasabaları ziyaret ederken, yerleşkelerde ve kamplarda etrafta yürüyen insanlarla konuşabilirsin. Farklı tarafların halkları, farklı şeyler söyleyebilirler. Bazıları düşüncelerini, bazıları ise söylentileri sizinle paylaşacaktır. Her ikisi de  bölgenin kültürünü ve tarafını daha iyi anlatmak, gizli bölgeleri bulma ipuçları, Yaban Hayatı boyunca seyahat etmek, Yüzük Savaşında bulunma ipuçları ve püf noktaları saglamak için kullanılabilir.
 qstr_Cannot_leave_now.|Şimdi ayrılamazsın
 qstr_You_have_found_the_l|Yerel demirciyi buldun.
@@ -746,7 +751,6 @@ qstr_Nazgul_diving_attack|Nazgul {s11} e dalış saldırısı yapıyor.
 qstr_{s11}_is_{s10}_in_th|{s11} 'a {s10} de Nazgul saldırıyor!
 qstr_Received_{reg66}_dam|{Reg66} hasar alındı.
 qstr_You_yell_for_your_ho|Atın için sesleniyorsun
-qstr_{s1}_s_morale:_{reg1|{s1}'in morali: {reg1}
 qstr_You_do_not_need_to_r|Birliklerini henüz toplamana gerek yok.
 qstr_You_rally_your_troop|Birlikleri topla!
 qstr_{s5}_rallies_{reg65?|{s5} {reg65?:} birliklerini topluyor!
@@ -987,6 +991,17 @@ qstr_Luckily_some_passing|Neyse ki, geçen yerliler sizi hendekte yatarken buldu
 qstr_{s13}^^You_have_succ|{s13}^^Başarıyla sızdın.
 qstr_the_place|yer
 qstr_the_castle|kale
+qstr_the_Citadel|Hisar
+qstr_the_Secret_Cave|Gizli Magara
+qstr_Meduseld_the_Golden_|Meduseld, Altın Salon
+qstr_the_Lord_Halls|Lord Salonları
+qstr_the_Leader_s_Cave|Lider'in Magarası
+qstr_the_Tower|Kule
+qstr_the_tower_of_Orthanc|Orthanc Kulesi
+qstr_the_Throne_Room|Taht Odası
+qstr_Beorn_s_Hall|Beorn'un Konagı
+qstr_the_Hall|Salon
+qstr_the_Great_Chamber_of|Thrór'un Yüce Salonu
 qstr_Stay_indoors_for_som|Burada bir süre bekle (her gece için {reg1} Kaynak Puanı)
 qstr_Camp_outside_for_som|Bir süre dışarıda kap kur (bedava)
 qstr_{s4}_s_scouts_have_s|{s4} izcileri başarısızlıgını gördü ve bildirdi. {s4} topraklarına utanç getirdin ve bu başarısızlıgın sorumlulugu yalnızca senin üzerinde olacak.
@@ -1015,9 +1030,6 @@ qstr_You_have_defeated_the|Yagmacı filosunu yendin! Bu, düşmanın planlarına
 qstr_You_defeated_the_int|Müdahale filosunu yendin! Şehre baskın yapmaya yececek gücümüz kalmasa da, bu büyük bir zafer!
 qstr_You_drove_back_the_e|Düşman filosunu geri sürdün, ama gemilerinin çogunu kaybettin!
 qstr_You_were_defeated_by|Müdahale filosu tarafından maglup edildin ve şehri yagmalamakta başarısız oldun!
-qstr_Lorien|Lorien
-qstr_Imladris|Imladris
-qstr_Woodelf|Orman elfi
 qstr_^^^^^^^You_come_upon|^^^^^^^{s3} civarına giden ve {s2} tarafında gelen mültecilere rastladın. ^^Çogunlukla yaşlı ve hüzünlüler, yanlarında kadınlar ve çocuklar var.^^ Muhafızlar var ama herkesi bir baskından korumak için yeterli degil.
 qstr_^^^^^^^You_come_upon_|^^^^^^^{s2} Civarlarından bu yana izini sürdügün mültecilere rastladın.{s3} tarafına dogru gidiyor gibi görünüyorlar, ve çogunlukla yaşlı ve çocuk var. ^^ Çok az sayıda gardiyan var, ancak sizin ve adamlarınızın hepsini öldürmesini engellemek için yeterli degil..
 qstr_^^At_last_the_Master|^^Sonunda, Efendi kendi hamlesini yapıyor! Meşaleler parlıyor. Keskin silahlar parıldıyor. Siz ve hantal adamlarınız yakında yürüyüş emri alacaksınız. Ahh, savaşılacak, bir sürü şey olacak ve etrafta rahatça gezebilecek kadar şan olacak! ^^ Sen Efendinin kulesine kabul edilme onuruna sahipsin. Muhtemelen ilk emirlerin snaga işi olacak - buraya bir köy baskın yap, orada bir Kervana pusu kur. Ama yakında kendini kanıtlayacaksın. {S3} 'daki {s2} komutanı kadar büyük bir rol oynayamayacagınızı kim söylüyor?^^ Savaş başladı; İnsan ve müttefiklerinin yıkılışı başlıyor!
@@ -1048,6 +1060,7 @@ qstr_You_are_entering_{s1|({s2}) {s1} civarına giriyorsun.
 qstr_You_are_entering_{s1}|{s1} civarına giriyorsun.
 qstr_The_war_expands_comm|Savaş genişliyor, komutanlar cesurlaşıyor! (Kuşatma gereksinimleri azaltıldı)
 qstr_Your_party_is_spotte|Grubun {s1} tarafından tespit edildin.
+qstr_The_effects_of_the_O|Orc İksirinin etkisi bitti.
 qstr_Party_has_nothing_to|Partinin yiyecek hiç bir şeyi yok!
 qstr_You_pay_for_accommod|Barınmak için para ödüyorsun.
 qstr_The_troll_outside_{s|Troll dışarıda {s2} öldürüldü. Görev iptal edildi.
@@ -1158,7 +1171,6 @@ qstr_Well_if_you_are_here|Eh, burada ve benimle konuşuyorsan, RTFM'yi başarıy
 qstr_You_just_got_windyfl|Sadece  fazla endişelisin!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
-qstr_the_Citadel|Hisar
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Vekilharç Denethor
 qstr_the_Golden_Hall|Altın Konak
@@ -1386,7 +1398,7 @@ qstr_Mercy_I_crave!_To_fa|Merhamet et Yalvarırım! {s7} ile açık savaşta kar
 qstr_strong_warriors_from|{s7} tarafından güçlü savaşçılar
 qstr_champions_from_{s7}_|alanında en güçlü {s7} şampiyonları
 qstr_{playername}_the_men|{playername}, adamlar sert düşman birlikleri hakkında hikayeler duydular. Bu terörlerin hikayeleri adamların moralini bozuyor. Askerlere korkacak hiçbir şeyleri olmadıgını göstermeni istiyorum. {Reg22} {s6} tarafına meydan okumanı ve onu yenmeni istiyorum.
-qstr_{playername}_I_want_|{playername}, Adamlara düşman birliklerinin hiçbir önemi olmadıklarını göstermeni istiyorum. {reg22} {s6} şahsen öldürmeni istiyorum! Üstün güç oldugumuzu göstermek için yap bunu!
+qstr_{playername}_I_want_|{playername}, Adamlara düşman birliklerinin önemsiz oldugunu göstermeni istiyorum. {reg22} {s6} diye bilineni bizzat öldürmeni istiyorum! Üstün güç oldugumuzu kanıtlamak için yap bunu!
 qstr_I_will_do_what_you_a|İstedigini yapacagım ve buna adamlarım tanık olacak.
 qstr_high_level_troops_fr|tarafından yüksek seviyeli birlikler
 qstr_elite_level_troops_f|tarafından elit seviyeli birlikler

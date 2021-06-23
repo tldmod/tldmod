@@ -248,51 +248,51 @@ str_persuasion_summary_bad|你試著說服{s50}，但是{reg51?她:他}從最開
 str_persuasion_summary_average|{s50}被證實是一個有著尖銳思想且很能辯論的人，你基本就沒有辦法使{reg51?她:他}反過來接受你的任何觀點。最終，在這場辯論中，你們兩人都沒能使對方偏向各自的立場。
 str_persuasion_summary_good|憑藉敏捷的思維和流暢的辯論，你設法把你的觀點論證得很好，迫使{s50}認同你的一些觀點。然而{reg51?她:他}仍然對你的要求表示懷疑。
 str_persuasion_summary_very_good|你發出了一種充滿激情的演講，這種演講與詩歌等所有傾聽的耳朵相呼應。世界似乎安靜下來，以便更好地聽到你。 鼓舞人心的話已經深深地感動了{s50}，{reg51?她:他}看起來更善於幫助你。
-; str_name_1|Adanedhel
-; str_name_2|Ondoher
-; str_name_3|Aerandir
-; str_name_4|Agarwaen
-; str_name_5|Ailinel
-; str_name_6|Aldarion
-; str_name_7|Almarian
-; str_name_8|Amandil
-; str_name_9|Amlaith
-; str_name_10|Anardil
-; str_name_11|Anborn
-; str_name_12|Andróg
-; str_name_13|Angbor
-; str_name_14|Arador
-; str_name_15|Araglas
-; str_name_16|Arahael
-; str_name_17|Arantar
-; str_name_18|Arassuil
-; str_name_19|Alcarin
-; str_name_20|Belegund
-; str_name_21|Bereg
-; str_name_22|Bergil
-; str_name_23|Borthand
-; str_name_24|Ceorl
-; str_name_25|Ciryon
-; str_name_26|Damrod
-; str_name_27|Derufin
-; str_name_28|Dorlas
-; str_name_29|Duilin
+str_name_1|阿丹德爾
+str_name_2|奧德赫爾
+str_name_3|阿蘭蒂爾
+str_name_4|奧格威恩
+str_name_5|艾尼爾
+str_name_6|艾戴恩
+str_name_7|阿爾曼
+str_name_8|阿曼迪爾
+str_name_9|阿姆萊斯
+str_name_10|阿納迪爾
+str_name_11|安博恩
+str_name_12|安德羅格
+str_name_13|安格博
+str_name_14|阿拉多
+str_name_15|阿拉格拉斯
+str_name_16|阿拉海爾
+str_name_17|阿蘭塔
+str_name_18|阿拉蘇伊爾
+str_name_19|阿爾卡林
+str_name_20|貝烈貢德
+str_name_21|貝拉格
+str_name_22|貝爾吉爾
+str_name_23|玻桑德
+str_name_24|克奧爾
+str_name_25|奇爾揚
+str_name_26|達姆羅德
+str_name_27|德茹芬
+str_name_28|多拉思
+str_name_29|杜伊林
 str_name_30|杜 因 希 爾
-; str_name_31|Egalmoth
-; str_name_32|Emeldir
-; str_name_33|Eradan
-; str_name_34|Erellont
-; str_name_35|Erendis
-; str_name_36|Falathar
-; str_name_37|Fengel
-; str_name_38|Forweg
-; str_name_39|Frumgar
-; str_name_40|Fuinur
-; str_name_41|Galdor
-; str_name_42|Gethron
-; str_name_43|Gorlim
-; str_name_44|Grithnir
-; str_name_45|Gundor
+str_name_31|埃加爾莫斯
+str_name_32|埃美迪爾
+str_name_33|伊拉頓
+str_name_34|埃瑞隆特
+str_name_35|埃仁迪絲
+str_name_36|法拉沙
+str_name_37|范哲爾
+str_name_38|佛威格
+str_name_39|佛魯格馬
+str_name_40|富努爾
+str_name_41|加爾多
+str_name_42|蓋斯隆
+str_name_43|戈利姆
+str_name_44|格里斯尼爾
+str_name_45|貢多
 ; str_name_46|Hador
 ; str_name_47|Haldar
 ; str_name_48|Hallacar
@@ -314,7 +314,7 @@ str_name_54|伊 奧 瑞 絲
 ; str_name_64|Meneldur
 ; str_name_65|Minalcar
 ; str_name_66|Minohtar
-; str_name_67|Ondoher
+str_name_67|奧德赫爾
 ; str_name_68|Orleg
 ; str_name_69|Orodreth
 ; str_name_70|Ostoher
@@ -324,12 +324,12 @@ str_name_54|伊 奧 瑞 絲
 ; str_name_74|Súrion
 ; str_name_75|Thorongil
 ; str_name_76|Turambar
-; str_name_77|Ulfast
-; str_name_78|Ulwarth
-; str_name_79|Valacar
-; str_name_80|Wulf
-; str_name_elf_1|Merlkir
-; str_name_elf_2|Romanoir
+str_name_77|烏法斯特
+str_name_78|烏瓦斯
+str_name_79|瓦拉卡
+str_name_80|沃夫
+str_name_elf_1|梅爾基爾
+str_name_elf_2|羅曼諾爾
 ; str_name_elf_3|Aegnor
 ; str_name_elf_4|Amdír
 ; str_name_elf_5|Amras
@@ -347,7 +347,7 @@ str_name_54|伊 奧 瑞 絲
 ; str_name_elf_17|Finrod
 ; str_name_elf_18|Felagund
 ; str_name_elf_19|Galathil
-; str_name_elf_20|Galdor
+str_name_elf_20|加爾多
 ; str_name_elf_21|Gelmir
 ; str_name_elf_22|Gildor
 ; str_name_elf_23|Guilin
@@ -1366,7 +1366,7 @@ str_rohan_rumor_3|中土世界沒有任何馬比洛汗馬好，哪怕是精靈�
 str_rohan_rumor_4|如果你擁有治病救人的技藝的話，請對待我的馬兒和對待我一樣。
 str_rohan_rumor_5|‘帶給我八匹馱馬！ ’他如此說道…  要知道昨天他曾要了七匹。這就很奇怪了。
 str_rohan_rumor_6|剛鐸人喜歡強壯結實的馬，而我們則喜歡享受極限的速度。精靈們只要最好的東西，而我們的敵人卻偷馬！
-str_rohan_rumor_7|我曾經見過維瑞亞馬和沙漠馬。洛汗馬很顯然強於前兩者，但更需要騎術的精湛。
+; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superior but require a more experienced rider to handle.
 str_rohan_rumor_8|我曾經見過維瑞亞馬和沙漠馬。洛汗馬很顯然強於前兩者，但更需要騎術的精湛。
 str_rohan_rumor_9|洛汗軍隊裝備了長槍和長柄槍以針對我們出色的騎兵。這場戰爭結束之前，叛徒薩魯曼將砍光法貢森林的樹木，用於裝備他的軍隊。
 str_rohan_rumor_10|驃騎之國最好的騎手始於騎最好的馬。

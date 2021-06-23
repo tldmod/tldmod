@@ -68,7 +68,7 @@ mno_start_go|GONDOR, het Koninkrijk van de Witte Toren
 mno_start_ro|Rohan, Het Paardenvolk
 mno_start_du|DUNEDAIN, De oude dynastie van de Mens.
 mno_start_be|BEORNINGS, Het Berenvolk
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|Het noordelijke Koninkrijk van DALE
 menu_start_good_elf|^^^^^^^^^^Welk bos leef je in, Ouderling?
 mno_start_ri|RIVENDELL, van Heer Elrond
@@ -175,7 +175,6 @@ mno_be_quiet|Leg de wapens neer en blijf rustig! En nu wegwezen!
 mno_be_bold|Ga door! Ik ben niet bang voor de oude planten of oude mythen!
 mno_fight_back|Laten we het uitzoeken! Zoek in de omgeving! Brand één of twee bomen plat!
 menu_fangorn_search_fails|^^^^^^Je zoekt in het donkere dikke bos maar vind niks.^ Toch voel je je waargenomen en bedreigd steeds meer krijg je het gevoel dat je bekeken word.
-menu_fangorn_battle_debrief_won|^^^Een grote overwinning! ^^^ Dus dit is wat alle mythes over Fangorn betekende...
 menu_fangorn_killed_player_only|^^^^^^Je dwaalt in het dicht begroeide, donkere bos.^Ineens wordt je geraakt! Misschien een zware tak die op je hoofd viel? Je raakt bewusteloos voor slechts enkele minuten. Je bent wel ernstig gewond maar je kan toch verder gaan.
 mno_ow_get_out|Auw! Laten we weggaan van deze vervloekte plek!
 menu_fangorn_killed_troop_and_player|^^^^^^Je dwaalt in het dicht begroeide, donkere bos.^Ineens wordt je geraakt! Misschien een zware tak die op je hoofd viel? Wanneer je weer herstelt, minuten later, zie je dat je troepen niet zo'n geluk hadden.
@@ -234,6 +233,7 @@ menu_join_battle|^^^Je helpt {s2} tegen {s1}.^ Je hebt {reg22} troepen klaar voo
 mno_join_attack|Val de vijand aan.
 mno_join_order_attack|Order je troepen om aan te vallen met je bondgenoten, terwijl je terug blijft.
 mno_control_allies_join_menu|Gebruik influentie Punten om je Bondgenoten te Commanderen in het Veld.
+; mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|Stop met aanvallen.
 mno_player_control_allies_join_menu|Commandeer ze en Val de vijand aan
 menu_join_order_attack|{s4}^^Uw slachtoffers: {s8}^^Geallieerden slachtoffers: {s9}^^Vijandelijke slachtoffers: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Vraag geen beloningen.
 menu_siege_started_defender|{s1} Lanceert een aanval tegen de muren van {s2}. U hebt {reg22} troepen fit voor de strijd tegen de vijand {reg11}. Je besluit om...
 mno_siege_defender_join_battle|Doe mee aan de slag.
 mno_siege_defender_troops_join_battle|Commandeer uw mannen mee te doen aan de strijd zonder uzelf.
+mno_siege_defender_do_not_join_battle|Doe niet mee.
 menu_siege_join_defense|{s4}^^Uw slachtoffers: {s8}^^Geallieerden slachtoffers: {s9}^^Vijandelijke slachtoffers: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Een zware klap van de voortvluchtige stuurt je naar de grond. en uw visie draait en dooft. Tijd gaat voorbij. Als je je ogen weer open doet voel je je neergeslagen en bloederig. Maar gelukkig zijn het geen dodelijke wonden.
 menu_town_bandits_succeeded|^^^^^De goblins vallen voor u als tarwe aan een zeis! Binnekort sta je alleen, terwijl de meeste van uw aanvallers bewusteloos, dood of stervend zijn. Nu moet de lokale bevolking je wel zeer dankbaar zijn want je hebt ze gered van deze dreiging.

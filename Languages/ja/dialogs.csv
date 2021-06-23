@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|{s12}付近の村から逃げていく数名
 dlga_raid_village_failed:close_window|もうこのような事がないように致します。
 dlga_lord_start:lord_target_lord_failed|任務に失敗したそうだな。 失望したぞ、 {playername}。
 dlga_lord_target_lord_failed:close_window|もうこのような事がないように致します。
-dlga_lord_start:lord_generic_mission_completed.5|{playername}よ。 おぬしの部下たちは、 おぬしの勇敢さをその目に焼き付けたようだ。 我々指揮官は衆にすぐれた存在であるという事を、 おぬしは示したのだ。
+; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.
 dlga_lord_start:kill_quest_failed|任務に失敗したそうだな。 失望したぞ、 {playername}。
 dlga_lord_start:lord_generic_mission_completed.6|{playername}よ。 おぬしの部下たちは、 おぬしの勇敢さをその目に焼き付けたようだ。 私も敬意を表する。
 dlga_kill_quest_failed:close_window|もうこのような事がないように致します。

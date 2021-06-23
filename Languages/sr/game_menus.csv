@@ -68,7 +68,7 @@ mno_start_go|GONDOR, Carstvo Bele Kule
 mno_start_ro|ROHAN, narod konja
 mno_start_du|DUNEDAIN, pre-dinastiju Ljudi
 mno_start_be|BEORNINGS, narod medveda
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|severno carstvo DALE
 menu_start_good_elf|^^^^^^^^^^iz koje si sume poreklom?
 mno_start_ri|RIVENDELL, od Lorda Elronda
@@ -175,7 +175,6 @@ mno_be_quiet|Odlozi oruzje i umiri se! Sad napolje iz ove sume!
 mno_be_bold|Ajde bre,pa nece mene plasiti neke babske price!
 mno_fight_back|Hajde da istrazimo!Pretrazi oblast! I spali koje drvo usput!
 menu_fangorn_search_fails|^^^^^^Pretrazio si mracnu,gustu sumu ali nisi nista nasao u njoj.^Ipak,ne osecas se prijatno u njoj,i sve vise i vise se osecas ugrozenim.
-menu_fangorn_battle_debrief_won|^^^Velika pobeda!^^^Znaci to se nalazi u Fangornu...
 menu_fangorn_killed_player_only|^^^^^^Pretrazio si sumu.^Odjednom,neko ili nesto te je udarilo! Mozda je to samo grana?^Bio si bez svesti samo par minuta. Povredjen si, ali mozes nastaviti.
 mno_ow_get_out|Bezimo iz ove proklete sume!
 menu_fangorn_killed_troop_and_player|^^^^^^Pretrazio si sumu.^Odjednom,neko ili nesto te je udarilo! Mozda je to samo grana?^Bio si bez svesti samo par minuta, ali za to vreme si primetio da je dosta tvojih trupa poginulo,^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^Pomažeš {s2} protiv {s1}.^ Imaš {reg22} vojnika spremnih 
 mno_join_attack|Juriš na neprijatelja.
 mno_join_order_attack|Naredi svojih trupama da napadnu zajedno sa tvojim saveznicima dok ti ostaješ pozadi.
 ; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+; mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|Odustani.
 ; mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^Tvoje žrtve: {s8}^^Saveznikove žrtve: {s9}^^Neprijateljske žrtve: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Ne trazi nista za uzvrat.
 menu_siege_started_defender|{s1} napada zidine {s2}. Imas {reg22} vojnika spremnih za bitku protiv neprijateljevih {ret11}. Odlucujes da...
 mno_siege_defender_join_battle|Udjes u bitku.
 mno_siege_defender_troops_join_battle|Naredis svojim trupama da se bore bez tebe.
+mno_siege_defender_do_not_join_battle|Ne mešaj se.
 menu_siege_join_defense|{s4}^^Tvoje žrtve: {s8}^^Saveznikove žrtve: {s9}^^Neprijateljske žrtve: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Jak udarac od doticne osobe poslao te je na zemlju,i pao si u nesvest. Prolazu vreme. Kada si dosao sebi,video si da si prekriven krvi, ali si veoma srecan. zato sto ni jedan udarac nije povredio vitalne organe.
 menu_town_bandits_succeeded|^^^^^Uspesno si savladao gobline! Ubrzo si stajao kao jedini preziveli dok su vecina napadaca lezana mrtva ili ranjena. Sigurno ce lokalci biti srecni sto si ih spasao od ovog problema.

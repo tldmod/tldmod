@@ -197,6 +197,8 @@ qstr_+1_to_Strength|+1 in Forza
 qstr_+1_to_Agility|+1 in Agilità
 qstr_+1_to_Leadership|+1 in Comando
 qstr_+1_to_Wildcraft|+1 a Mimetismo
+qstr_+1_to_Tracking|+1 in Seguire Tracce
+qstr_when_equipped|Se equipaggiato
 qstr_+1_to_Power_Draw|+1 in Potenza di Tiro
 qstr_The_record_of_Balin_|La cronaca della spedizione perduta di Balin.
 qstr_Who_might_be_interes|Chi può essere interessato a ciò?
@@ -213,16 +215,18 @@ qstr_+1_to_Charisma|+1 in Carisma
 qstr_+1_to_Surgery|+1 in Chirurgia
 qstr_+1_to_Intelligence|+1 in Intelligenza
 qstr_+2_to_Surgery|+2 in Chirurgia
-qstr_when_equipped|Se equipaggiato
 qstr_+1_to_Riding|+1 a Cavalcare
 qstr_+1_to_Mounted_Archer|+1 in Arco in Sella
+qstr_Bonus_to_Riding|Bonus in Cavalcare
+qstr_when_equipped.__Effec|quando nell'equipaggiamento. (L'effetto è regolato in base alla Forza)
+qstr_Orcs:_+1_Riding_Requ|Orchi: +1 in Cavalcare Richiesto
 qstr_+1_to_Prisoner_Mgmt|+1 in Controllo prigionieri
 qstr_+2_to_Tactics|+2 in Tattica
 qstr_+1_Intelligence|+1 in Intelligenza
 qstr_+{reg1}_to_Spotting|+{reg1} in Avvistamento
 qstr__Scales_with_Wildcra|(Scaglie Mimetiche)
+qstr_+1_to_Power_Throw|+1 in Potenza di Lancio
 qstr_+1_to_Spotting|+1 in Avvistamento
-qstr_+2_to_Athletics|+2 in Atleticità
 qstr_Less_Dunnish_upkeep|Minore gestione Dunlandiana
 qstr_Less_Wargs_upkeep|Minore gestione Wargs
 qstr_Light_Armor|Armatura Leggera
@@ -694,7 +698,7 @@ qstr_A_thunderstorm_from_t|Una tempesta dalle Montagne Nebbiose imperversa sul c
 qstr_A_poisonous_fog_from|Una nebbia venefica da Dol Guldur indugia sul campo di battaglia. Tu e i tuoi soldati vi sentite indeboliti. C'è spavento fra gli uomini.
 qstr_A_poisonous_fog_from_|Una venefica nebbia da Dol Guldur indugia sul campo di battaglia. Tu non percepisci alcuna differenza, ma senti i tuoi nemici soffrire e percepisci l'odore della loro paura.
 qstr_You_shapeshift_into_|Ti trasformi in un orso !
-qstr_You_got_{reg1}_xp_in|Hai guadagnato {reg1} in forma d'orso.
+qstr_You_got_{reg1}_exper|Hai guadagnato {reg1}  esperienza in forma d'orso.
 qstr_Your_ability_to_chan|La tua abilità di mutaforma si è manifestata, da ora in poi potrai percorrere sentieri selvaggi sia in forma d'uomo che di orso.
 qstr_You_change_back_to_h|Torni alla forma umana...
 qstr_Your_mount_stumbles!|Il tuo animale incespica ! Sembra sia zoppo.
@@ -711,6 +715,7 @@ qstr_Use_Up/Down_arrow_ke|Usa le frecce su/giù per inclinare su/giù
 qstr_Fixed_Camera___Right|Inquadratura Fissa - Spalla Destra
 qstr_Fixed_Camera___Left_|Inquadratura Fissa - Spalla Sinistra
 qstr_Fixed_Camera___Cente|Inquadratura Fissa - Centrata
+qstr_Shield_is_too_big_to|Lo scudo è troppo grande per essere usato con un arco.
 qstr_While_visiting_towns|Mentre visiti le città, gli insediamenti e gli accampamenti, puoi parlare con le persone che vi si aggirano. I membri delle diverse fazioni hanno cose differenti da dire - alcuni ti sveleranno i loro timori, altri condivideranno indiscrezioni e voci di corridoio. Tutti potranno comunque darti una migliore comprensione della cultura della loro fazione, oppure potrebbero essere detentori d'indizi per trovare luoghi segreti, o di consigli per viaggiare nella natura selvaggia e combattere nella Guerra dell'Anello.
 qstr_Cannot_leave_now.|Non puoi allontanarti in questo momento.
 qstr_You_have_found_the_l|Hai trovato la fucina locale.
@@ -746,7 +751,6 @@ qstr_Nazgul_diving_attack|Nazgul attacca in picchiata su {s11} !
 qstr_{s11}_is_{s10}_in_th|{s11}  {s10} nell'attacco dei Nazgul !
 qstr_Received_{reg66}_dam|Ricevuti {reg66} danni.
 qstr_You_yell_for_your_ho|Chiami il tuo animale.
-qstr_{s1}_s_morale:_{reg1|morale di {s1}: {reg1}
 qstr_You_do_not_need_to_r|Non hai bisogno d'incitare le truppe, per adesso.
 qstr_You_rally_your_troop|Sproni le tue truppe !
 qstr_{s5}_rallies_{reg65?|{s5} sprona {reg65?le sue:le sue} truppe !
@@ -987,6 +991,17 @@ qstr_Luckily_some_passing|Fortunatamente alcuni passanti locali ti trovano mentr
 qstr_{s13}^^You_have_succ|Con successo sei entrato di nascosto in {s13}^^
 qstr_the_place|il luogo
 qstr_the_castle|il castello
+qstr_the_Citadel|La Cittadella
+qstr_the_Secret_Cave|La Caverna Segreta
+qstr_Meduseld_the_Golden_|Meduseld, il Palazzo d'Oro
+qstr_the_Lord_Halls|le Sale del Re
+qstr_the_Leader_s_Cave|La Caverna del Capo
+qstr_the_Tower|La Torre
+qstr_the_tower_of_Orthanc|La Torre di Orthanc
+qstr_the_Throne_Room|La Stanza del Trono
+qstr_Beorn_s_Hall|La Casa di Beorn
+qstr_the_Hall|la Sala del Re
+qstr_the_Great_Chamber_of|la Grande Sala di Thrór
 qstr_Stay_indoors_for_som|Alloggia qui per un po'. Punti Risorsa per notte: ({reg1})
 qstr_Camp_outside_for_som|Accampati all'aperto per qualche di tempo (nessun costo)
 qstr_{s4}_s_scouts_have_s|Gli esploratori di {s4} hanno visto e riferito del tuo fallimento. Hai portato il biasimo su {s4} e la responsabilità di questo fallimento è soltanto tua.
@@ -1015,9 +1030,6 @@ qstr_You_have_defeated_the|Hai sconfitto la flotta assalitrice ! Si tratta di un
 qstr_You_defeated_the_int|Hai sconfitto la flotta nemica ! Benché tu non disponga di forze sufficienti ad assaltare la città, si tratta di una grande vittoria !
 qstr_You_drove_back_the_e|Hai respinto la flotta nemica, ma hai perso la maggior parte delle tue navi !
 qstr_You_were_defeated_by|Hai fallito nell'intercettare la flotta nemica e nell'assalire la città !
-qstr_Lorien|Lorien
-qstr_Imladris|Imladris
-qstr_Woodelf|Elfo Silvano
 qstr_^^^^^^^You_come_upon|^^^^^^^Arrivi presso i profughi che stanno lasciando {s2} diretti a {s3}.^^Sono soprattutto vecchi e infermi, accompagnati da donne e bambini.^^Ci sono delle guardie, ma non abbastanza per poter proteggere tutti da un'incursione.
 qstr_^^^^^^^You_come_upon_|^^^^^^^T'imbatti sui rifugiati sulle cui tracce eri sin da {s2}. Sembra che siano diretti verso {s3}, e si tratta per lo più di vecchi e infermi. ^^ Ci sono alcune guardie, ma non a sufficienza per impedire a te e a tuoi di ucciderli tutti.
 qstr_^^At_last_the_Master|^^Infine, il Padrone sta facendo la sua mossa ! Le torce bruciano luminose. Le armi affilate brillano. Tu e i tuoi coraggiosi compagni riceverete ben presto l'ordine di marciare. Ah, ci sarà da combattere, molto, e gloria per tutti !^^Ha ricevuto l'onore di essere convocato in udienza dal Padrone nella sua torre. Probabilmente i tuoi primi ordini riguarderanno lavori di snaga - razzia un villaggio qui, preda una carovana là.. Ma dari prova di te molto presto. Chi osa dire che non potrai avere un ruolo di comandante di {s2} a {s3} ?^^La Guerra è iniziata; la caduta dell'Uomo e dei loro alleati ha inizio !
@@ -1048,6 +1060,7 @@ qstr_You_are_entering_{s1|Accedi a: {s1} ({s2}).
 qstr_You_are_entering_{s1}|Accedi a: {s1}.
 qstr_The_war_expands_comm|La guerra si espande, i comandanti sono sempre più audaci ! (Ridotti i requisiti di assedio)
 qstr_Your_party_is_spotte|La tua compagnia è stata avvistata da {s1}.
+qstr_The_effects_of_the_O|Gli effetti della Birra Orchesca si sono dissipati.
 qstr_Party_has_nothing_to|Le scorte di cibo sono terminate !
 qstr_You_pay_for_accommod|Paghi per la sistemazione.
 qstr_The_troll_outside_{s|Il troll al di fuori {s2} è stato ucciso. La missione è cancellata.
@@ -1158,7 +1171,6 @@ qstr_Well_if_you_are_here|Bene, se sei arrivato fin qui e mi stai parlando, allo
 qstr_You_just_got_windyfl|Sei appena stato windyflorato !
 qstr_Merry|Merry
 qstr_Pippin|Pipino
-qstr_the_Citadel|La Cittadella
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Denethor, il Sovrintendente
 qstr_the_Golden_Hall|il Palazzo d'Oro
@@ -1386,7 +1398,7 @@ qstr_Mercy_I_crave!_To_fa|Pietà, ti imploro ! Affrontare {s7} in campo aperto �
 qstr_strong_warriors_from|forti guerrieri da {s7}
 qstr_champions_from_{s7}_|campioni da {s7}, i più forti in campo
 qstr_{playername}_the_men|{playername}, gli uomini hanno udito di storie riguardanti feroci truppe nemiche. Storie che terrorizzano i soldati. Voglio che tu mostri loro che non hanno nulla da temere. Voglio che tu sfidi e sconfigga {reg22} {s6}.
-qstr_{playername}_I_want_|{playername}, voglio che mostri agli uomini che i nemici non sono così forti. Voglio che tu personalmente uccida {reg22} {s6} ! Fa questo per dimostrare che siamo una forza superiore !
+qstr_{playername}_I_want_|{playername}, voglio che mostri agli uomini che le forze nemiche sono meno forti di cìò che sembrano. Voglio che tu personalmente uccida {reg22} {s6} ! Fallo per dimostrare che noi siamo più forti di loro !
 qstr_I_will_do_what_you_a|Farò quello che mi hai chiesto, e gli uomini ne saranno testimoni.
 qstr_high_level_troops_fr|truppe di alto livello da
 qstr_elite_level_troops_f|truppe d'élite da

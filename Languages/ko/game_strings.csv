@@ -979,7 +979,7 @@ str_npc3_home_description_2|우리가 엔트우드를 지나야한다면, 서두
 str_npc4_home_description_2|우리는 과거에 이룬 위대한 업적과 희생을 기억해야만합니다. 로한과 곤도르의 동맹은 다시 한번 우리 동족들을 재앙으로부터 구해줄 것입니다.
 str_npc5_home_description_2|아무리 위대한 사람일지라도, 설령 이스타리 중 한 사람일지라도 타락할 수 있다는 것을 보여준다네. 힘을 갈망하는 자는 힘으로 망하나니, 더이상 지체하지 맙시다.
 str_npc6_home_description_2|성벽 뒤에서 악의 군세가 진군 준비를 하고 있는 것이 느껴지는군... 로스로리엔으로? 아니면 너른골? 아니면 초록숲의 고향으로? 알 수는 없지만 그 계획을 무너트릴 수 있다면 할 수 있는 것을 해주기를 바라네.
-; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc8_home_description_2|수많은 달콤한 꽃들의 향기를 맡을 수 있고, 채밀하는 벌들을 볼 수 있어. 너만 괜찮다면, 내가 직접 쓸 약초를 좀 모을 수 있을까? 잠깐이면 돼.
 str_npc9_home_description_2|우루크-하이 무리를 데리고 올 게 아니라면 여기서 터벅터벅 걸어다니는 건 소용 없어. 벽에서 감시하는 눈빛을 만들고 싶은 게 아니라면야.
 str_npc10_home_description_2|미나스 모르굴, 나즈굴이 하루종일 술퍼먹는 곳이지, 하하!
@@ -1366,7 +1366,7 @@ str_rohan_rumor_3|로한의 말보다 뛰어난 말은 없다. 엘프들조차 �
 str_rohan_rumor_4|사람을 치료할 수 있다면 부디 내 말들도 그 만큼 정성껏 치료해 주시오.
 str_rohan_rumor_5|담당자가 Sumpter 말을 여덟 마리 가져다달라더군.. 분명 어제 일곱 마리를 갖다달라고 했던 것 같은데. 뭐하는지 궁금한걸.
 str_rohan_rumor_6|곤도르는 더 굳센 말을 선호하지. 우리 기수들은 속도를 즐기고. 엘프들은 최고의 말들은 원하지. 우리의 적들은 그 말들을 훔쳐간다!
-str_rohan_rumor_7|나는 사막 말과 전차몰이족 말의 교배종을 본 적이 있다. 로한 말들은 매우 뛰어나지만, 다루기 위해서는 좀 더 숙련된 기수가 필요하다.
+str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superior but require a more experienced rider to handle.
 str_rohan_rumor_8|와르그는 말보다 느리지만 더 빨리 말머리를 돌릴 수 있지. 또 녀석들은 잘 길러진 군마에 비해 더 연약해.
 str_rohan_rumor_9|우리의 훌륭한 기병들을 상대로 파이크와 창을 든 군대가 로한으로 진군 중이다. 배신자 사루만은 이 전쟁이 끝나기도 전에 군대를 동원해 팡고른 숲 전체를 베어낼 기세다.
 str_rohan_rumor_10|왕국 최고의 기수가 되려면 최고의 말부터 길러내야지.
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|모르도르의 땅
 str_shortname_region_dimrill|딤릴데일
 str_shortname_region_s_erebor|너른골 왕국
 str_trait_title_elf_friend|요정의 친구
-; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
+str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
 str_trait_title_gondor_friend|섭정의 축복
-; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
+str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
 str_trait_title_rohan_friend|왕의 남자
-; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
+str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
 str_trait_title_brigand_friend|바바리안 챔피언
 str_trait_desc_brigand_friend|당신은 결투장에서 보인 당신의 인상적인 활약들 덕분에 사우론을 섬기는 야만 부족들에게 신뢰받게 되었다. 야만인들을 모집하는 비용이 줄어들었다.
 str_trait_title_blessed|축복받은
@@ -1926,8 +1926,8 @@ str_trait_title_butcher|도살자
 str_trait_desc_butcher|경험이 당신이 적들의 살에서 더 많은 고기를 추출하는 기술을 발달시켰다. 죄수를 고기를 얻기 위해 죽일 때마다 더 많은 양을 얻는다. 또 당신은 모든 전투에서 더 많은 인간 고기를 얻을 수 있다.
 str_trait_title_well_travelled|잘 여행했다
 str_trait_desc_well_travelled|돌로 포장된 도로와 이끼 낀 가축 길, 가장 높은 산과 가장 깊은 계곡에서 당신은 숨겨진 장소를 발견했고 오랫동안 잊혀진 경이로운 것들을 발견했다. 당신은 경험을 토대로 적들이 당신을 보기 전에 먼저 그들을 발견하는 법을 배웠고, 당신의 군대는 가장 쉬운 길을 선택했다.
-; str_trait_title_bear_shape|Skinchanger
-; str_trait_desc_bear_shape|It is said that men of Beorn's line have the ability to take bear form. Through your kinship with bears you have discovered that you too have that gift.
+str_trait_title_bear_shape|Skinchanger
+str_trait_desc_bear_shape|It is said that men of Beorn's line have the ability to take bear form. Through your kinship with bears you have discovered that you too have that gift.
 str_wound_head|머리에 세게 맞은
 str_wound_chest|갈비뼈가 나간
 str_wound_arm|팔에 심한 장애가 있는
@@ -2390,7 +2390,7 @@ str_npc20_home_description_2|우리는 이곳 중간계에서 난쟁이들이 �
 str_npc21_home_description_2|우리는 과거에 이룬 위대한 업적과 희생을 기억해야만합니다. 로한과 곤도르의 동맹은 다시 한번 우리 동족들을 재앙으로부터 구해줄 것입니다.
 str_npc22_home_description_2|아무리 위대한 사람일지라도, 설령 이스타리 중 한 사람일지라도 타락할 수 있다는 것을 보여준다네. 힘을 갈망하는 자는 힘으로 망하나니, 더이상 지체하지 맙시다.
 str_npc23_home_description_2|성벽 뒤에서 악의 군세가 진군 준비를 하고 있는 것이 느껴지는군... 로스로리엔으로? 아니면 너른골? 아니면 초록숲의 고향으로? 알 수는 없지만 그 계획을 무너트릴 수 있다면 할 수 있는 것을 해주기를 바라네.
-; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
 str_npc25_home_description_2|수많은 달콤한 꽃들의 향기를 맡을 수 있고, 채밀하는 벌들을 볼 수 있어. 너만 괜찮다면, 내가 직접 쓸 약초를 좀 모을 수 있을까? 잠깐이면 돼.
 str_npc26_home_description_2|우루크-하이 무리를 데리고 올 게 아니라면 여기서 터벅터벅 걸어다니는 건 소용 없어. 벽에 있는 감시자와 눈을 마주치고 서로 찡그릴 생각이 아니라면야.
 str_npc27_home_description_2|미나스 모르굴, 나즈굴이 하루종일 술퍼먹는 곳이지, 하하!
@@ -2501,5 +2501,5 @@ str_imladris_guildmaster_companion_player_ask|장로님, 나는 북부에 그 �
 str_imladris_guildmaster_companion_none|잘 보시오, 사령관님. 당신 앞에 있는 건 이 시대의 전후를 통틀어 북부에서 가장 거대한 소집일 거요. 인간이든 요정이든, 우리처럼 여기 온 이들은 다시 돌아가고 싶어하지 않지. 마지막 고향의 집에서 온 이가 있소. 에리아도르의 숲과 골짜기에서, 당신들이 두네다인이라 부르는 누나타니의 마지막 사람이 왔소. 우리는 모두 우리에게 배정된 임무가 있소 - 누구도 당신이 원하는대로 따라갈 수는 없을 거요. 소집할 힘을 아끼고 그 대신 우리 수비대에서 신병들을 좀 찾으시오.
 str_imladris_guildmaster_companion_player_none_ok|이해했습니다, 장로님. 시간 내주셔서 감사합니다.
 str_imladris_guildmaster_player_found_ok|이해했습니다, 장로님. 시간 내주셔서 감사합니다.
-; str_show_keybinds_form|Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
-; str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?
+str_show_keybinds_form|Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
+str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?

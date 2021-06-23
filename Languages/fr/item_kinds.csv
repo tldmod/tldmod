@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Casque de pisteur uruk-hai
 itm_isen_uruk_helm_f|Casque de pisteur uruk-hai
 itm_uruk_pike_b|Pique du Mordor
 itm_uruk_falchion_a|Fauchon uruk
-itm_uruk_falchion_b|Fauchon uruk
-itm_uruk_spear|Lance du Mordor
-itm_uruk_skull_spear|Lance de crâne uruk
-itm_uruk_voulge|Vouge uruk
-itm_uruk_heavy_axe|Hache lourde uruk
+itm_uruk_falchion_b|Grand cimeterre orque
 itm_isengard_sword|Épée de l'Isengard
 itm_isengard_axe|Hache de l'Isengard
 itm_isengard_hammer|Marteau de l'Isengard
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Bouclier uruk de l'Isen
 itm_wood_club|Massue de bois
 itm_twohand_wood_club|Grande massue de bois
 itm_bone_cudgel|Gourdin en os
-itm_skull_club|Massue de crâne
+itm_orc_pick|Pique orque
+itm_orc_hammer|Marteau maléfique
 itm_orc_club_b|Massue de Cavalier Warg
 itm_orc_club_c|Massue à pointe orque
 itm_orc_club_d|Massue Maléfique
 itm_orc_sledgehammer|Marteau orque
 itm_orc_simple_spear|Lance orque
 itm_orc_skull_spear|Lance de crâne orque
-itm_orc_bill|Vouge orque
-itm_orc_slasher|Couteau orque
+itm_orc_bill|Guisarme orque
+itm_orc_slasher|Épée courte orque
 itm_orc_falchion|Fauchon orque
 itm_orc_scimitar|Cimeterre orque
 itm_orc_sabre|Sabre orque
-itm_orc_machete|Machette orque
+itm_orc_battle_axe|Hache de bataille orque
 itm_orc_axe|Hache orque
-itm_orc_two_handed_axe|Hache à deux mains orque
+itm_orc_two_handed_axe|Grande hache orque
 itm_orc_throwing_axes|Haches orque de lancer
 itm_orc_bow|Arc orque
 itm_orc_shield_a|Bouclier orque
@@ -493,7 +490,8 @@ itm_mirkwood_leather|Armure en cuir des elfes sylvains
 itm_mirkwood_pad|Manteau matelassé de Verbois
 itm_mirkwood_mail|Maille de Verbois
 itm_mirkwood_scale|Armure écaillée légère de Verbois
-itm_mirkwood_heavy_scale|Cuirasse de feuilles de Grand'Peur
+itm_mirkwood_heavy_scale|Cuirasse de feuilles de Vertbois
+itm_mirkwood_sword|Épée d'elfe sylvain
 itm_mirkwood_great_spear|Grande lance de Vertbois
 itm_mirkwood_war_spear|Lance de guerre de Vertbois
 itm_mirkwood_short_spear|Lance d'elfe sylvain
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|Hache de bataille naine
 itm_dwarf_great_axe|Grande hache naine
 itm_dwarf_great_mattock|Grande pioche naine
 itm_dwarf_great_pick|Grande pique naine
-itm_dwarf_war_pick|Pique de guerre naine
+itm_dwarf_throwing_axe_reward|Haches de lancer d'Erebor
 itm_dwarf_mattock|Pioche naine
 itm_dwarf_hand_axe|Hache courte naine
-itm_dwarf_throwing_axe|Hache de lancer naine
+itm_dwarf_throwing_axe|Haches de jet naines
 itm_dwarf_spear|Lance naine
 itm_dwarf_spear_b|Pique naine
 itm_dwarf_spear_c|Hache longue naine
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Fouet de maître
 itm_horn_gondor_reward|Cor du Gondor
 itm_harad_totem_reward|Totem du Harad
 itm_elven_amulet_reward|Amulette elfique
+
 itm_torque_reward|Torque maléfique
 itm_orc_brew|Bière orque
-itm_rohan_saddle|Selle de Thengel
+itm_rohan_saddle|Selle
 itm_mearas_reward|Meara
 itm_shield_of_tuor|Bouclier de Tuor
 itm_riv_armor_reward|Armure décorée de Fondcombe
@@ -785,7 +784,7 @@ itm_khamul_helm|Heaume de Khamûl
 itm_black_arrows_reward|Flèches noires
 itm_leather_boots_reward|Bottes de chasse
 itm_rohan_armor_th|Armure royale du Rohan
-itm_wilderness_amulet|Amulette des Régions Sauvages
+itm_wilderness_cowl|Capuche de chasseur
 itm_prisoner_coll_chain|Chaînes de prisonnier
 itm_witchking_helmet|Masque de sorcier
 itm_lorien_royal_armor|Armure royale de la Lórien

@@ -672,8 +672,8 @@ trp_armoured_troll|Páncélozott troll
 trp_armoured_troll_pl|Páncélozott trollok
 trp_olog_hai|Mordori olog-hai
 trp_olog_hai_pl|Mordori olog-haiok
-trp_ent|Ent
-trp_ent_pl|Entek
+trp_ent_old|Ent
+trp_ent_old_pl|Entek
 trp_i1_guldur_orc_snaga|Dol Gulduri Ork Snaga
 trp_i1_guldur_orc_snaga_pl|Dol Gulduri Ork Snagák
 trp_a2_guldur_orc_tracker|Dol Gulduri Ork Nyomkövető
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|Gundabadi varglovas
 trp_c4_gunda_warg_rider_pl|Gundabadi varglovasság
 trp_c5_gunda_clan_rider|Észak klánbeli kobold lovas
 trp_c5_gunda_clan_rider_pl|Észak klánbeli kobold lovasság
+trp_i5_gunda_orc_champion|Gundabadi Ork Bajnok
+trp_i5_gunda_orc_champion_pl|Gundabadi Ork Bajnokok
 trp_mountain_goblin2|Hegyi kobold
 trp_mountain_goblin2_pl|Hegyi koboldok
 trp_tribal_orc2|Törzsi ork
 trp_tribal_orc2_pl|Törzsi orkok
-trp_tribal_orc_warrior2|Törzsi ork harcos
-trp_tribal_orc_warrior2_pl|Törzsi ork harcosok
-trp_i5_gunda_orc_champion|Gundabadi Ork Bajnok
-trp_i5_gunda_orc_champion_pl|Gundabadi Ork Bajnokok
+trp_i5_gunda_orc_champion2|Gundabadi Ork Bajnok
+trp_i5_gunda_orc_champion2_pl|Gundabadi Ork Bajnokok
 trp_i2_mordor_num_renegade|Fekete númenori köpönyegforgató
 trp_i2_mordor_num_renegade_pl|Fekete númenori köpönyegforgatók
 trp_i3_mordor_num_warrior|Fekete númenori harcos
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|Alkudozó Pushurt
 trp_smith_khand_ac_pl|kovács
 trp_smith_umbar_ac|Vasműves Fuinir
 trp_smith_umbar_ac_pl|kovács
-trp_barman_mtirith|Fogadós
-trp_barman_mtirith_pl|a Fellegvár
-trp_barman_pelargir|Fogadós
-trp_barman_pelargir_pl|a Kastély
-trp_barman_linhir|Fogadós
-trp_barman_linhir_pl|a Kastély
-trp_barman_dolamroth|Fogadós
-trp_barman_dolamroth_pl|a Kastély
-trp_barman_edhellond|Fogadós
-trp_barman_edhellond_pl|a Kastély
-trp_barman_lossarnach|Fogadós
-trp_barman_lossarnach_pl|a Kastély
-trp_barman_tarnost|Fogadós
-trp_barman_tarnost_pl|a Kastély
-trp_barman_erech|Fogadós
-trp_barman_erech_pl|a Kastély
-trp_barman_pinnath|Fogadós
-trp_barman_pinnath_pl|a Kastély
-trp_barman_hannun|Fogadós
-trp_barman_hannun_pl|a Titkos Barlang
-trp_barman_calembel|Fogadós
-trp_barman_calembel_pl|a Kastély
-trp_barman_edoras|Fogadós
-trp_barman_edoras_pl|Meduseld, az Aranycsarnok
-trp_barman_aldburg|Fogadós
-trp_barman_aldburg_pl|a Kastély
-trp_barman_hornburg|Fogadós
-trp_barman_hornburg_pl|az Úr Csarnokai
+trp_smith_moria_ac|Vasműves Burgak
+trp_smith_moria_ac_pl|kovács
+trp_smith_dale_ac|Tűzkezű Ardel
+trp_smith_dale_ac_pl|kovács
+trp_smith_beorn_ac|Baltakészítő Beornalaf
+trp_smith_beorn_ac_pl|kovács
+trp_smith_woodelf_west_camp|Dhoelath
+trp_smith_woodelf_west_camp_pl|kovács
+trp_smith_woodmen|Baltakészítő Beornalaf
+trp_smith_woodmen_pl|kovács
+trp_smith_beorn_v|Baltakészítő Beornalaf
+trp_smith_beorn_v_pl|kovács
+trp_smith_troll_cave|Vasműves Burgak
+trp_smith_troll_cave_pl|kovács
+trp_smith_dg_outpost|Shtagz Dulbash
+trp_smith_dg_outpost_pl|kovács
+trp_smith_main_rhun|Branimir Bronnik
+trp_smith_main_rhun_pl|ideglenes kovács
+trp_smith_south_rhun|Branimir Bronnik
+trp_smith_south_rhun_pl|ideglenes kovács
+trp_smith_gundabad_ne|Hóárus Blurg
+trp_smith_gundabad_ne_pl|kovács
+trp_smith_gundabad_nw|Hóárus Blurg
+trp_smith_gundabad_nw_pl|kovács
+trp_smith_gundabad_s|Hóárus Blurg
+trp_smith_gundabad_s_pl|kovács
+trp_smith_gundabad_m|Hóárus Blurg
+trp_smith_gundabad_m_pl|kovács
 trp_barman_eastemnet|Fogadós
 trp_barman_eastemnet_pl|a Kastély
 trp_barman_westfold|Fogadós
@@ -1222,30 +1222,30 @@ trp_barman_morannon|Fogadós
 trp_barman_morannon_pl|a Parancsnok Barlangja
 trp_barman_mmorgul|Fogadós
 trp_barman_mmorgul_pl|a Torony
-trp_barman_cungol|Fogadós
-trp_barman_cungol_pl|a Kastély
-trp_barman_isengard|Fogadós
-trp_barman_isengard_pl|Orthanc tornya
-trp_barman_cgaladhon|Fogadós
-trp_barman_cgaladhon_pl|A Fakastély
-trp_barman_cdolen|Fogadós
-trp_barman_cdolen_pl|A Fakastély
-trp_barman_camroth|Fogadós
-trp_barman_camroth_pl|A Fakastély
-trp_barman_thalls|Fogadós
-trp_barman_thalls_pl|a Trónterem
-trp_barman_beorn|Fogadós
-trp_barman_beorn_pl|Beorn Csarnoka
-trp_barman_moria|Fogadós
-trp_barman_moria_pl|a Törzsfő Hálóterme
-trp_barman_dale|Fogadós
-trp_barman_dale_pl|a Kastély
-trp_barman_esgaroth|Fogadós
-trp_barman_esgaroth_pl|a Csarnok
-trp_barman_erebor|Fogadós
-trp_barman_erebor_pl|Thrór nagy terme
-trp_barman_dolguldur|Fogadós
-trp_barman_dolguldur_pl|a Kastély
+trp_merchant_main_rhun|Ellátmányos mester
+trp_merchant_main_rhun_pl|tábori elrejtett készlet
+trp_merchant_dg_outpost|Ellátmányos mester
+trp_merchant_dg_outpost_pl|istálló és raktár
+trp_merchant_woodelf_west_camp|Ellátmányos mester
+trp_merchant_woodelf_west_camp_pl|tünde készletek
+trp_merchant_gundabad_m|Ellátmányos mester
+trp_merchant_gundabad_m_pl|tábori elrejtett készlet
+trp_merchant_gundabad_s|Ellátmányos mester
+trp_merchant_gundabad_s_pl|tábori elrejtett készlet
+trp_merchant_gundabad_nw|Ellátmányos mester
+trp_merchant_gundabad_nw_pl|tábori elrejtett készlet
+trp_merchant_gundabad_ne|Ellátmányos mester
+trp_merchant_gundabad_ne_pl|tábori elrejtett készlet
+trp_merchant_troll_cave|Ellátmányos mester
+trp_merchant_troll_cave_pl|varg gödör és készletek
+trp_merchant_beorn_v|Ellátmányos mester
+trp_merchant_beorn_v_pl|istálló és raktár
+trp_merchant_orc_sentry|Ellátmányos mester
+trp_merchant_orc_sentry_pl|tábori elrejtett készlet
+trp_merchant_candros|Ellátmányos mester
+trp_merchant_candros_pl|istálló és raktár
+trp_merchant_hannun|Ellátmányos mester
+; trp_merchant_hannun_pl|ranger supplies
 trp_merchant_mtirith|Ellátmányos mester
 trp_merchant_mtirith_pl|istálló és raktár
 trp_merchant_pelargir|Ellátmányos mester
@@ -1434,42 +1434,42 @@ trp_elder_erebor|Erebor céhmestere
 trp_elder_erebor_pl|a Csarnok
 trp_elder_dolguldur|Guldur törzsfő
 trp_elder_dolguldur_pl|a fekete kastély
-trp_elder_gondor_ac|Tábormester
-trp_elder_gondor_ac_pl|a tábor
-trp_elder_rohan_ac|Tábormester
-trp_elder_rohan_ac_pl|a tábor
-trp_elder_mordor_ac|Tábormester
-trp_elder_mordor_ac_pl|a tábor
-trp_elder_isengard_ac|Tábormester
-trp_elder_isengard_ac_pl|a tábor
-trp_elder_lorien_ac|Tábormester
-trp_elder_lorien_ac_pl|a tábor
-trp_elder_woodelf_ac|Tábormester
-trp_elder_woodelf_ac_pl|a tábor
-trp_elder_imladris_ac|Tábormester
-trp_elder_imladris_ac_pl|a tábor
-trp_elder_beorn_ac|Tábormester
-trp_elder_beorn_ac_pl|a tábor
-trp_elder_harad_ac|Haradi táborfő
-trp_elder_harad_ac_pl|a tábor
-trp_elder_rhun_ac|Rhûni táborfő
-trp_elder_rhun_ac_pl|a tábor
-trp_elder_khand_ac|Khandi táborfő
-trp_elder_khand_ac_pl|a tábor
-trp_elder_dunland_ac|Dún táborfő
-trp_elder_dunland_ac_pl|a tábor
-trp_elder_umbar_ac|Umbari szállásmester
-trp_elder_umbar_ac_pl|a tábor
-trp_elder_moria_ac|Móriai táborfő
-trp_elder_moria_ac_pl|a tábor
-trp_elder_gunda_ac|Gundabadi táborfő
-trp_elder_gunda_ac_pl|a tábor
-trp_elder_dale_ac|Suhatagi szállásmester
-trp_elder_dale_ac_pl|a tábor
-trp_elder_guldur_ac|Gulduri táborfő
-trp_elder_guldur_ac_pl|a tábor
-trp_elder_dwarf_ac|Törp tábormester
-trp_elder_dwarf_ac_pl|a tábor
+trp_elder_wosgiliath|Tábormester
+trp_elder_wosgiliath_pl|a tábor
+trp_elder_oscamp|Tábormester
+trp_elder_oscamp_pl|a tábor
+trp_elder_eosgiliath|Tábormester
+trp_elder_eosgiliath_pl|a tábor
+trp_elder_uoutpost|Tábormester
+trp_elder_uoutpost_pl|a tábor
+trp_elder_uhcamp|Tábormester
+trp_elder_uhcamp_pl|a tábor
+trp_elder_urcamp|Tábormester
+trp_elder_urcamp_pl|a tábor
+; trp_elder_woodelf_camp|Elder
+trp_elder_woodelf_camp_pl|a tábor
+; trp_elder_woodelf_west_camp|Elder
+trp_elder_woodelf_west_camp_pl|a tábor
+; trp_elder_beorn_v|Beorning Elder
+trp_elder_beorn_v_pl|a falu
+; trp_elder_troll_cave|Cave Chief
+trp_elder_troll_cave_pl|a barlangok
+trp_elder_dg_outpost|Rhûni táborfő
+trp_elder_dg_outpost_pl|a tábor
+trp_elder_rhun_sc|Rhûni táborfő
+trp_elder_rhun_sc_pl|a tábor
+trp_elder_rhun_nc|Rhûni táborfő
+trp_elder_rhun_nc_pl|a tábor
+; trp_elder_gunda_ne|Orc Elder
+trp_elder_gunda_ne_pl|a tábor
+; trp_elder_gunda_nw|Orc Elder
+trp_elder_gunda_nw_pl|a tábor
+; trp_elder_gunda_s|Orc Elder
+trp_elder_gunda_s_pl|a tábor
+; trp_elder_gunda_m|Orc Elder
+trp_elder_gunda_m_pl|a tábor
+trp_elder_ironhill|Tábori törzsfő
+trp_elder_ironhill_pl|a tábor
 trp_village_1_elder|Korbács Ura
 trp_village_1_elder_pl|a barlangok
 trp_tutorial_chest_1|Közelharci fegyverláda
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|Barlangi troll
 trp_troll_placeholder_6_pl|Barlangi trollok
 trp_wild_troll|Vad barlangi troll
 trp_wild_troll_pl|Vad barlangi trollok
-trp_ent2|Ent
-trp_ent2_pl|Entek
+trp_ent|Ent
+trp_ent_pl|Entek
 trp_mountain_goblin|Hegyi kobold
 trp_mountain_goblin_pl|Hegyi koboldok
 trp_tribal_orc|Törzsi ork

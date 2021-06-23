@@ -672,8 +672,8 @@ trp_armoured_troll|Тролль в доспехах
 trp_armoured_troll_pl|Тролли в доспехах
 trp_olog_hai|Мордорский олог-хай
 trp_olog_hai_pl|Мордорские олог-хай
-trp_ent|Энт
-trp_ent_pl|Энты
+trp_ent_old|Энт
+trp_ent_old_pl|Энты
 trp_i1_guldur_orc_snaga|Орк Снага из Дол Гулдура
 trp_i1_guldur_orc_snaga_pl|Орки Снаги из Дол Гулдура
 trp_a2_guldur_orc_tracker|Орк следопыт из Дол Гулдура
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|Гундабадский волчий всадник
 trp_c4_gunda_warg_rider_pl|Гундабадские волчьи всадники
 trp_c5_gunda_clan_rider|Гоблин-всадник из северного клана
 trp_c5_gunda_clan_rider_pl|Гоблины-всадники из северных кланов
+trp_i5_gunda_orc_champion|Гундабадский Орк Чемпион
+trp_i5_gunda_orc_champion_pl|Гундабадские Орки Чемпионы
 trp_mountain_goblin2|Горный гоблин
 trp_mountain_goblin2_pl|Горные гоблины
 trp_tribal_orc2|Дикий орк
 trp_tribal_orc2_pl|Дикие орки
-trp_tribal_orc_warrior2|Дикий орк-воин
-trp_tribal_orc_warrior2_pl|Дикие орки-воины
-trp_i5_gunda_orc_champion|Гундабадский Орк Чемпион
-trp_i5_gunda_orc_champion_pl|Гундабадские Орки Чемпионы
+trp_i5_gunda_orc_champion2|Гундабадский Орк Чемпион
+trp_i5_gunda_orc_champion2_pl|Гундабадские Орки Чемпионы
 trp_i2_mordor_num_renegade|Чёрный нуменорец
 trp_i2_mordor_num_renegade_pl|Чёрные нуменорцы
 trp_i3_mordor_num_warrior|Чёрный нуменорец-воин
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|Пушурт Хитрец
 trp_smith_khand_ac_pl|кузницу
 trp_smith_umbar_ac|Фуинир Кузнец
 trp_smith_umbar_ac_pl|кузницу
-trp_barman_mtirith|Хозяин таверны
-trp_barman_mtirith_pl|цитадель
-trp_barman_pelargir|Хозяин таверны
-trp_barman_pelargir_pl|замок
-trp_barman_linhir|Хозяин таверны
-trp_barman_linhir_pl|замок
-trp_barman_dolamroth|Хозяин таверны
-trp_barman_dolamroth_pl|замок
-trp_barman_edhellond|Хозяин таверны
-trp_barman_edhellond_pl|замок
-trp_barman_lossarnach|Хозяин таверны
-trp_barman_lossarnach_pl|замок
-trp_barman_tarnost|Хозяин таверны
-trp_barman_tarnost_pl|замок
-trp_barman_erech|Хозяин таверны
-trp_barman_erech_pl|замок
-trp_barman_pinnath|Хозяин таверны
-trp_barman_pinnath_pl|замок
-trp_barman_hannun|Хозяин таверны
-trp_barman_hannun_pl|Потайная пещера
-trp_barman_calembel|Хозяин таверны
-trp_barman_calembel_pl|замок
-trp_barman_edoras|Хозяин таверны
-trp_barman_edoras_pl|Медусельд, Золотой чертог
-trp_barman_aldburg|Хозяин таверны
-trp_barman_aldburg_pl|замок
-trp_barman_hornburg|Хозяин таверны
-trp_barman_hornburg_pl|Чертоги владыки
+trp_smith_moria_ac|Бургак Кузнец
+trp_smith_moria_ac_pl|кузницу
+trp_smith_dale_ac|Ардель Огненнорукий
+trp_smith_dale_ac_pl|кузницу
+trp_smith_beorn_ac|Беорналаф Секиродел
+trp_smith_beorn_ac_pl|кузницу
+trp_smith_woodelf_west_camp|Доэлат
+trp_smith_woodelf_west_camp_pl|кузницу
+trp_smith_woodmen|Беорналаф Секиродел
+trp_smith_woodmen_pl|кузницу
+trp_smith_beorn_v|Беорналаф Секиродел
+trp_smith_beorn_v_pl|кузницу
+trp_smith_troll_cave|Бургак Кузнец
+trp_smith_troll_cave_pl|кузницу
+trp_smith_dg_outpost|Штазг Дулбаш
+trp_smith_dg_outpost_pl|кузницу
+trp_smith_main_rhun|Бранимир Бронник
+trp_smith_main_rhun_pl|полевую кузницу
+trp_smith_south_rhun|Бранимир Бронник
+trp_smith_south_rhun_pl|полевую кузницу
+trp_smith_gundabad_ne|Блург Снегопродавец
+trp_smith_gundabad_ne_pl|кузницу
+trp_smith_gundabad_nw|Блург Снегопродавец
+trp_smith_gundabad_nw_pl|кузницу
+trp_smith_gundabad_s|Блург Снегопродавец
+trp_smith_gundabad_s_pl|кузницу
+trp_smith_gundabad_m|Блург Снегопродавец
+trp_smith_gundabad_m_pl|кузницу
 trp_barman_eastemnet|Хозяин таверны
 trp_barman_eastemnet_pl|замок
 trp_barman_westfold|Хозяин таверны
@@ -1222,30 +1222,30 @@ trp_barman_morannon|Хозяин таверны
 trp_barman_morannon_pl|пещеру повелителя
 trp_barman_mmorgul|Хозяин таверны
 trp_barman_mmorgul_pl|твердыню
-trp_barman_cungol|Хозяин таверны
-trp_barman_cungol_pl|замок
-trp_barman_isengard|Хозяин таверны
-trp_barman_isengard_pl|Ортанк
-trp_barman_cgaladhon|Хозяин таверны
-trp_barman_cgaladhon_pl|древесный замок
-trp_barman_cdolen|Хозяин таверны
-trp_barman_cdolen_pl|древесный замок
-trp_barman_camroth|Хозяин таверны
-trp_barman_camroth_pl|древесный замок
-trp_barman_thalls|Хозяин таверны
-trp_barman_thalls_pl|тронный зал
-trp_barman_beorn|Хозяин таверны
-trp_barman_beorn_pl|Беорнингский Хранитель Очага
-trp_barman_moria|Хозяин таверны
-trp_barman_moria_pl|палаты Подгорного короля
-trp_barman_dale|Хозяин таверны
-trp_barman_dale_pl|замок
-trp_barman_esgaroth|Хозяин таверны
-trp_barman_esgaroth_pl|чертоги правителя
-trp_barman_erebor|Хозяин Таверны
-trp_barman_erebor_pl|Великий зал Трора.
-trp_barman_dolguldur|Хозяин таверны
-trp_barman_dolguldur_pl|замок
+trp_merchant_main_rhun|Жирослав Кладовщик
+trp_merchant_main_rhun_pl|полевой склад
+trp_merchant_dg_outpost|Жирослав Кладовщик
+trp_merchant_dg_outpost_pl|конюшню и склад
+trp_merchant_woodelf_west_camp|Жирослав Кладовщик
+trp_merchant_woodelf_west_camp_pl|эльфийские склады
+trp_merchant_gundabad_m|Жирослав Кладовщик
+trp_merchant_gundabad_m_pl|полевой склад
+trp_merchant_gundabad_s|Жирослав Кладовщик
+trp_merchant_gundabad_s_pl|полевой склад
+trp_merchant_gundabad_nw|Жирослав Кладовщик
+trp_merchant_gundabad_nw_pl|полевой склад
+trp_merchant_gundabad_ne|Жирослав Кладовщик
+trp_merchant_gundabad_ne_pl|полевой склад
+trp_merchant_troll_cave|Жирослав Кладовщик
+trp_merchant_troll_cave_pl|волчью яму и склад
+trp_merchant_beorn_v|Жирослав Кладовщик
+trp_merchant_beorn_v_pl|конюшню и склад
+trp_merchant_orc_sentry|Жирослав Кладовщик
+trp_merchant_orc_sentry_pl|полевой склад
+trp_merchant_candros|Жирослав Кладовщик
+trp_merchant_candros_pl|конюшню и склад
+trp_merchant_hannun|Жирослав Кладовщик
+trp_merchant_hannun_pl|Поддержка стрелков
 trp_merchant_mtirith|Ведающий запасами
 trp_merchant_mtirith_pl|конюшню и склад
 trp_merchant_pelargir|Ведающий запасами
@@ -1434,42 +1434,42 @@ trp_elder_erebor|Анкор Камненог
 trp_elder_erebor_pl|Подгорные Чертоги
 trp_elder_dolguldur|Гулдурский управитель
 trp_elder_dolguldur_pl|чёрную твердыню
-trp_elder_gondor_ac|Управитель лагеря
-trp_elder_gondor_ac_pl|лагерь
-trp_elder_rohan_ac|Управитель лагеря
-trp_elder_rohan_ac_pl|лагерь
-trp_elder_mordor_ac|Управитель лагеря
-trp_elder_mordor_ac_pl|лагерь
-trp_elder_isengard_ac|Управитель лагеря 
-trp_elder_isengard_ac_pl|лагерь 
-trp_elder_lorien_ac|Управитель лагеря
-trp_elder_lorien_ac_pl|лагерь
-trp_elder_woodelf_ac|Управитель лагеря
-trp_elder_woodelf_ac_pl|лагерь
-trp_elder_imladris_ac|Управитель лагеря
-trp_elder_imladris_ac_pl|лагерь
-trp_elder_beorn_ac|Управитель лагеря
-trp_elder_beorn_ac_pl|лагерь
-trp_elder_harad_ac|Харадский управитель лагеря
-trp_elder_harad_ac_pl|лагерь
-trp_elder_rhun_ac|Рунийский управитель лагеря
-trp_elder_rhun_ac_pl|лагерь
-trp_elder_khand_ac|Хандский управитель лагеря
-trp_elder_khand_ac_pl|лагерь
-trp_elder_dunland_ac|Дунландский управитель лагеря
-trp_elder_dunland_ac_pl|лагерь
-trp_elder_umbar_ac|Умбарский управитель лагеря
-trp_elder_umbar_ac_pl|лагерь
-trp_elder_moria_ac|Морийский управитель лагеря
-trp_elder_moria_ac_pl|лагерь
-trp_elder_gunda_ac|Гундабадский управитель лагеря
-trp_elder_gunda_ac_pl|лагерь
-trp_elder_dale_ac|Дейльский управитель лагеря
-trp_elder_dale_ac_pl|лагерь
-trp_elder_guldur_ac|Гулдурский управитель лагеря
-trp_elder_guldur_ac_pl|лагерь
-trp_elder_dwarf_ac|Гномий управитель лагеря
-trp_elder_dwarf_ac_pl|лагерь
+trp_elder_wosgiliath|Управитель лагеря
+trp_elder_wosgiliath_pl|лагерь
+trp_elder_oscamp|Управитель лагеря
+trp_elder_oscamp_pl|лагерь
+trp_elder_eosgiliath|Управитель лагеря
+trp_elder_eosgiliath_pl|лагерь
+trp_elder_uoutpost|Управитель лагеря
+trp_elder_uoutpost_pl|лагерь
+trp_elder_uhcamp|Управитель лагеря
+trp_elder_uhcamp_pl|лагерь
+trp_elder_urcamp|Управитель лагеря
+trp_elder_urcamp_pl|лагерь
+trp_elder_woodelf_camp|Старейшина
+trp_elder_woodelf_camp_pl|лагерь
+trp_elder_woodelf_west_camp|Старейшина
+trp_elder_woodelf_west_camp_pl|лагерь
+trp_elder_beorn_v|Старейшина Беорнингов
+trp_elder_beorn_v_pl|деревню
+trp_elder_troll_cave|Пещерный вождь
+trp_elder_troll_cave_pl|пещеры
+trp_elder_dg_outpost|Рунийский управитель лагеря
+trp_elder_dg_outpost_pl|лагерь
+trp_elder_rhun_sc|Рунийский управитель лагеря
+trp_elder_rhun_sc_pl|лагерь
+trp_elder_rhun_nc|Рунийский управитель лагеря
+trp_elder_rhun_nc_pl|лагерь
+trp_elder_gunda_ne|Старейшина орков
+trp_elder_gunda_ne_pl|лагерь
+trp_elder_gunda_nw|Старейшина орков
+trp_elder_gunda_nw_pl|лагерь
+trp_elder_gunda_s|Старейшина орков
+trp_elder_gunda_s_pl|лагерь
+trp_elder_gunda_m|Старейшина орков
+trp_elder_gunda_m_pl|лагерь
+trp_elder_ironhill|Лагерный управитель
+trp_elder_ironhill_pl|лагерь
 trp_village_1_elder|Повелитель Кнута
 trp_village_1_elder_pl|пещеры
 trp_tutorial_chest_1|Сундук для холодного оружия
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|Пещерный Тролль
 trp_troll_placeholder_6_pl|Пещерные Тролли
 trp_wild_troll|Дикий Пещерный Тролль
 trp_wild_troll_pl|Дикие Пещерные Тролли
-trp_ent2|Энт
-trp_ent2_pl|Энты
+trp_ent|Энт
+trp_ent_pl|Энты
 trp_mountain_goblin|Горный Гоблин
 trp_mountain_goblin_pl|Горные Гоблины
 trp_tribal_orc|Дикий Орк

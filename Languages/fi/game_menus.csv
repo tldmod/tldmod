@@ -68,7 +68,7 @@ mno_start_go|GONDOR, Valkoisen tornin valtakunta
 mno_start_ro|ROHAN, Hevosihmiset
 mno_start_du|DUNDEAIN, Muinaisten ihmisten dynastia
 mno_start_be|BEORNINGS, Karhu ihmiset
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood                                                
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|DALEN pohjoinen valtakunta
 menu_start_good_elf|^^^^^^^^^Missä metsässä asut, kylänvanhin?
 mno_start_ri|Lordi Elrondin RIVENDELL
@@ -175,7 +175,6 @@ mno_be_quiet|Laskekaa aseenne ja pysykää hiljaa! Nyt ulos täältä!
 mno_be_bold|Jatketaan! Minähän en mitään kasveja tai vanhoja myyttejä pelkää!
 mno_fight_back|Otetaan siitä selvää! Tutkikaa alue! Polttakaa puu tai pari!
 menu_fangorn_search_fails|Etsit pimeää, paksua metsää, mutta et löydä mitään.^Silti, tunnet itsesi havainnoiduksi ja uhatulta yhä enemmän ja enemmän.
-menu_fangorn_battle_debrief_won|^^^Suuri voitto!^^^Siis nämä kaikki ovat myyttejä, joita Fangorn tarkoitti...
 menu_fangorn_killed_player_only|^^^^^^Vaeltelet paksussa, mustassa metsässä.^Yhtäkkiä sinuun on osunut jokin! Ehkä painava oksa putosi päähäsi?^Ôlet tajuton ainoastaan muutaman minuutin. Olet pahasti vahingoittunut, mutta voit mennä eteenpäin.
 mno_ow_get_out|Aihh! Lähdetään tästä kirotusta paikasta!
 menu_fangorn_killed_troop_and_player|^^^^^^Vaeltelet paksussa, mustassa metsässä.^Yhtäkkiä sinuun on osunut jokin! Ehkä painava oksa putosi päähäsi?^^Kun palaudut iskusta minuutteja myöhemmin, löydät, ettei kaikki joukoistasi olleet yhtä onnekkaita
@@ -234,6 +233,7 @@ mno_pre_join_leave|Älä osallistu tähän.
 mno_join_attack|Hyökkää vihollisten kimppuun.
 mno_join_order_attack|Käske sotilaittesi hyökätä liittolaistesi kanssa, samalla kun pysyttelet itse takana.
 mno_control_allies_join_menu|Käytä vaikutusvaltapisteitä komentaaksesi liittolaisiasi taistelukentällä.
+; mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|Irroittaudu taistelusta.
 mno_player_control_allies_join_menu|Komenna heitä ja hyökkää vihollisten kimppuun
 menu_join_order_attack|{s4}^^Sinun tappiot: {s8}^^Liittolaisiesi tappiot: {s9}^^Vihollisen tappiot: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Älä pyydä palkintoa.
 ; menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
 mno_siege_defender_join_battle|Liity taisteluun.
 mno_siege_defender_troops_join_battle|Käske miestesi liittyä taisteluun ilman sinua.
+mno_siege_defender_do_not_join_battle|Älä osallistu tähän.
 menu_siege_join_defense|{s4}^^Sinun tappiot: {s8}^^Liittolaisiesi tappiot: {s9}^^Vihollisen tappiot: {s10}
 ; menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
 ; menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.

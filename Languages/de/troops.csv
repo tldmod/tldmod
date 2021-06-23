@@ -672,8 +672,8 @@ trp_armoured_troll|Gepanzerter Troll
 trp_armoured_troll_pl|Gepanzerte Trolle
 trp_olog_hai|Olog aus Mordor
 trp_olog_hai_pl|Olog-hai aus Mordor
-trp_ent|Ent
-trp_ent_pl|Ents
+trp_ent_old|Ent
+trp_ent_old_pl|Ents
 trp_i1_guldur_orc_snaga|Snaga von Dol Guldur
 trp_i1_guldur_orc_snaga_pl|Snagas von Dol Guldur
 trp_a2_guldur_orc_tracker|Spür-Ork von Dol Guldur
@@ -744,14 +744,14 @@ trp_c4_gunda_warg_rider|Wargreiter von Gundabad
 trp_c4_gunda_warg_rider_pl|Wargreiter von Gundabad
 trp_c5_gunda_clan_rider|Wargreiter des Nordens
 trp_c5_gunda_clan_rider_pl|Wargreiter des Nordens
+trp_i5_gunda_orc_champion|Kriegsheld aus Gundabad
+trp_i5_gunda_orc_champion_pl|Kriegshelden aus Gundabad
 trp_mountain_goblin2|Bergork
 trp_mountain_goblin2_pl|Bergorks
 trp_tribal_orc2|Stammesork
 trp_tribal_orc2_pl|Stammesorks
-trp_tribal_orc_warrior2|Ork-Stammeskrieger
-trp_tribal_orc_warrior2_pl|Ork-Stammeskrieger
-trp_i5_gunda_orc_champion|Kriegsheld aus Gundabad
-trp_i5_gunda_orc_champion_pl|Kriegshelden aus Gundabad
+trp_i5_gunda_orc_champion2|Kriegsheld aus Gundabad
+trp_i5_gunda_orc_champion2_pl|Kriegshelden aus Gundabad
 trp_i2_mordor_num_renegade|Schwarzer Numenorer
 trp_i2_mordor_num_renegade_pl|Schwarze Numenorer
 trp_i3_mordor_num_warrior|Krieger der Schwarzen Numenorer
@@ -1180,34 +1180,34 @@ trp_smith_khand_ac|Pushurt der Feilscher
 trp_smith_khand_ac_pl|die Schmiede
 trp_smith_umbar_ac|Fuinir der Schmelzer
 trp_smith_umbar_ac_pl|die Schmiede
-trp_barman_mtirith|Wirt
-trp_barman_mtirith_pl|zur Zitadelle
-trp_barman_pelargir|Wirt
-trp_barman_pelargir_pl|zur Feste
-trp_barman_linhir|Wirt
-trp_barman_linhir_pl|zur Feste
-trp_barman_dolamroth|Wirt
-trp_barman_dolamroth_pl|zur Feste
-trp_barman_edhellond|Wirt
-trp_barman_edhellond_pl|zur Feste
-trp_barman_lossarnach|Wirt
-trp_barman_lossarnach_pl|zur Feste
-trp_barman_tarnost|Wirt
-trp_barman_tarnost_pl|zur Feste
-trp_barman_erech|Wirt
-trp_barman_erech_pl|zur Feste
-trp_barman_pinnath|Wirt
-trp_barman_pinnath_pl|zur Feste
-trp_barman_hannun|Wirt
-trp_barman_hannun_pl|zur Geheimen Höhle
-trp_barman_calembel|Wirt
-trp_barman_calembel_pl|zur Feste
-trp_barman_edoras|Wirt
-trp_barman_edoras_pl|zum Meduseld, der Goldenen Halle
-trp_barman_aldburg|Wirt
-trp_barman_aldburg_pl|zur Feste
-trp_barman_hornburg|Wirt
-trp_barman_hornburg_pl|zu den Herrenhallen
+trp_smith_moria_ac|Burgak der Schmelzer
+trp_smith_moria_ac_pl|die Schmiede
+trp_smith_dale_ac|Ardel Feuerhand
+trp_smith_dale_ac_pl|die Schmiede
+trp_smith_beorn_ac|Beornalaf Axtbauer
+trp_smith_beorn_ac_pl|die Schmiede
+trp_smith_woodelf_west_camp|Dhoelath
+trp_smith_woodelf_west_camp_pl|die Schmiede
+trp_smith_woodmen|Beornalaf Axtbauer
+trp_smith_woodmen_pl|die Schmiede
+trp_smith_beorn_v|Beornalaf Axtbauer
+trp_smith_beorn_v_pl|die Schmiede
+trp_smith_troll_cave|Burgak der Schmelzer
+trp_smith_troll_cave_pl|die Schmiede
+trp_smith_dg_outpost|Shtazg Dulbash
+trp_smith_dg_outpost_pl|die Schmiede
+trp_smith_main_rhun|Branimir Bronnik
+trp_smith_main_rhun_pl|die Behelfsschmiede
+trp_smith_south_rhun|Branimir Bronnik
+trp_smith_south_rhun_pl|die Behelfsschmiede
+trp_smith_gundabad_ne|Blurg Schneehändler
+trp_smith_gundabad_ne_pl|die Schmiede
+trp_smith_gundabad_nw|Blurg Schneehändler
+trp_smith_gundabad_nw_pl|die Schmiede
+trp_smith_gundabad_s|Blurg Schneehändler
+trp_smith_gundabad_s_pl|die Schmiede
+trp_smith_gundabad_m|Blurg Schneehändler
+trp_smith_gundabad_m_pl|die Schmiede
 trp_barman_eastemnet|Wirt
 trp_barman_eastemnet_pl|zur Feste
 trp_barman_westfold|Wirt
@@ -1222,30 +1222,30 @@ trp_barman_morannon|Wirt
 trp_barman_morannon_pl|zur Höhle des Befehlshabers
 trp_barman_mmorgul|Wirt
 trp_barman_mmorgul_pl|zum Turm
-trp_barman_cungol|Wirt
-trp_barman_cungol_pl|zur Feste
-trp_barman_isengard|Wirt
-trp_barman_isengard_pl|zum Turm von Orthanc
-trp_barman_cgaladhon|Wirt
-trp_barman_cgaladhon_pl|zur Baumfeste
-trp_barman_cdolen|Wirt
-trp_barman_cdolen_pl|zur Baumfeste
-trp_barman_camroth|Wirt
-trp_barman_camroth_pl|zur Baumfeste
-trp_barman_thalls|Wirt
-trp_barman_thalls_pl|zum Thronsaal
-trp_barman_beorn|Wirt
-trp_barman_beorn_pl|Beorns Halle
-trp_barman_moria|Wirt
-trp_barman_moria_pl|zum Saal des Häuptlings
-trp_barman_dale|Wirt
-trp_barman_dale_pl|zur Feste
-trp_barman_esgaroth|Wirt
-trp_barman_esgaroth_pl|zur Halle
-trp_barman_erebor|Wirt
-trp_barman_erebor_pl|die Große Halle von Thrór
-trp_barman_dolguldur|Wirt
-trp_barman_dolguldur_pl|zur Feste
+trp_merchant_main_rhun|Lagerverwalter
+trp_merchant_main_rhun_pl|das Warenlager
+trp_merchant_dg_outpost|Lagerverwalter
+trp_merchant_dg_outpost_pl|Stall und Vorratslager
+trp_merchant_woodelf_west_camp|Lagerverwalter
+trp_merchant_woodelf_west_camp_pl|die Vorratslager der Elben
+trp_merchant_gundabad_m|Lagerverwalter
+trp_merchant_gundabad_m_pl|das Warenlager
+trp_merchant_gundabad_s|Lagerverwalter
+trp_merchant_gundabad_s_pl|das Warenlager
+trp_merchant_gundabad_nw|Lagerverwalter
+trp_merchant_gundabad_nw_pl|das Warenlager
+trp_merchant_gundabad_ne|Lagerverwalter
+trp_merchant_gundabad_ne_pl|das Warenlager
+trp_merchant_troll_cave|Lagerverwalter
+trp_merchant_troll_cave_pl|Warggrube und Vorratslager
+trp_merchant_beorn_v|Lagerverwalter
+trp_merchant_beorn_v_pl|Stall und Vorratslager
+trp_merchant_orc_sentry|Lagerverwalter
+trp_merchant_orc_sentry_pl|das Warenlager
+trp_merchant_candros|Lagerverwalter
+trp_merchant_candros_pl|Stall und Vorratslager
+trp_merchant_hannun|Lagerverwalter
+trp_merchant_hannun_pl|Vorräte der Waldläufer
 trp_merchant_mtirith|Lagerverwalter
 trp_merchant_mtirith_pl|Stall und Vorratslager
 trp_merchant_pelargir|Lagerverwalter
@@ -1434,42 +1434,42 @@ trp_elder_erebor|Gildenmeister des Erebor
 trp_elder_erebor_pl|den Hallen
 trp_elder_dolguldur|Verwalter von Dol Guldur
 trp_elder_dolguldur_pl|zur schwarzen Feste
-trp_elder_gondor_ac|Lagermeister
-trp_elder_gondor_ac_pl|dem Lager
-trp_elder_rohan_ac|Lagermeister
-trp_elder_rohan_ac_pl|dem Lager
-trp_elder_mordor_ac|Lageraufseher
-trp_elder_mordor_ac_pl|dem Lager
-trp_elder_isengard_ac|Lageraufseher
-trp_elder_isengard_ac_pl|dem Lager
-trp_elder_lorien_ac|Lagermeister
-trp_elder_lorien_ac_pl|dem Lager
-trp_elder_woodelf_ac|Lagermeister
-trp_elder_woodelf_ac_pl|dem Lager
-trp_elder_imladris_ac|Lagermeister
-trp_elder_imladris_ac_pl|dem Lager
-trp_elder_beorn_ac|Lagermeister
-trp_elder_beorn_ac_pl|dem Lager
-trp_elder_harad_ac|Lagerhäuptling von Harad
-trp_elder_harad_ac_pl|dem Lager
-trp_elder_rhun_ac|Lagerhäuptling von Rhun
-trp_elder_rhun_ac_pl|dem Lager
-trp_elder_khand_ac|Lagerhäuptling von Khand
-trp_elder_khand_ac_pl|dem Lager
-trp_elder_dunland_ac|Lagerhäuptling der Dunländer
-trp_elder_dunland_ac_pl|dem Lager
-trp_elder_umbar_ac|Quartiermeister von Umbar
-trp_elder_umbar_ac_pl|dem Lager
-trp_elder_moria_ac|Lageraufseher von Moria
-trp_elder_moria_ac_pl|dem Lager
-trp_elder_gunda_ac|Lageraufseher von Gundabad
-trp_elder_gunda_ac_pl|dem Lager
-trp_elder_dale_ac|Quartiermeister von Thal
-trp_elder_dale_ac_pl|dem Lager
-trp_elder_guldur_ac|Lageraufseher von Dol Guldur
-trp_elder_guldur_ac_pl|dem Lager
-trp_elder_dwarf_ac|Zwergischer Lagermeister
-trp_elder_dwarf_ac_pl|dem Lager
+trp_elder_wosgiliath|Lageraufseher
+trp_elder_wosgiliath_pl|dem Lager
+trp_elder_oscamp|Lageraufseher
+trp_elder_oscamp_pl|dem Lager
+trp_elder_eosgiliath|Lageraufseher
+trp_elder_eosgiliath_pl|dem Lager
+trp_elder_uoutpost|Lageraufseher
+trp_elder_uoutpost_pl|dem Lager
+trp_elder_uhcamp|Lageraufseher
+trp_elder_uhcamp_pl|dem Lager
+trp_elder_urcamp|Lageraufseher
+trp_elder_urcamp_pl|dem Lager
+trp_elder_woodelf_camp|Ältester
+trp_elder_woodelf_camp_pl|dem Lager
+trp_elder_woodelf_west_camp|Ältester
+trp_elder_woodelf_west_camp_pl|dem Lager
+trp_elder_beorn_v|Ältester der Beorninger
+trp_elder_beorn_v_pl|dem Dorf
+trp_elder_troll_cave|Höhlenaufseher
+trp_elder_troll_cave_pl|den Höhlen
+trp_elder_dg_outpost|Lagerhäuptling von Rhun
+trp_elder_dg_outpost_pl|dem Lager
+trp_elder_rhun_sc|Lagerhäuptling von Rhun
+trp_elder_rhun_sc_pl|dem Lager
+trp_elder_rhun_nc|Lagerhäuptling von Rhun
+trp_elder_rhun_nc_pl|dem Lager
+trp_elder_gunda_ne|Orkältester
+trp_elder_gunda_ne_pl|dem Lager
+trp_elder_gunda_nw|Orkältester
+trp_elder_gunda_nw_pl|dem Lager
+trp_elder_gunda_s|Orkältester
+trp_elder_gunda_s_pl|dem Lager
+trp_elder_gunda_m|Orkältester
+trp_elder_gunda_m_pl|dem Lager
+trp_elder_ironhill|Lageraufseher
+trp_elder_ironhill_pl|dem Lager
 trp_village_1_elder|Herr der Peitsche
 trp_village_1_elder_pl|den Höhlen
 trp_tutorial_chest_1|Nahkampf-Truhe
@@ -1626,8 +1626,8 @@ trp_troll_placeholder_6|Höhlentroll
 trp_troll_placeholder_6_pl|Höhlentrolle
 trp_wild_troll|Wilder Höhlentroll
 trp_wild_troll_pl|Wilde Höhlentrolle
-trp_ent2|Ent
-trp_ent2_pl|Ents
+trp_ent|Ent
+trp_ent_pl|Ents
 trp_mountain_goblin|Bergork
 trp_mountain_goblin_pl|Bergorks
 trp_tribal_orc|Stammesork

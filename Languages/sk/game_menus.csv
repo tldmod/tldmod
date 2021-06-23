@@ -68,7 +68,7 @@ mno_start_go|GONDOR, Kráľovstvo Bielej Veže
 mno_start_ro|ROHAN, páni koní
 mno_start_du|DÚNADANIA, prastará dynastia Ľudí
 mno_start_be|GRIZLOVCI, Medvedí ľud
-mno_start_wo|DREVÁK, z odkvapov Temnolesa :D
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|Severské Kráľovstvo DOLU
 menu_start_good_elf|^^^^^^^^^^v ktorom Lese žiješ, Starší?
 mno_start_ri|ROKLINKA, panstvo Lorda Elronda
@@ -175,7 +175,6 @@ mno_be_quiet|Skloňte zbrane a buďte ticho! Musíme sa odtiaľ dostať preč!
 mno_be_bold|Pokračujte! Nebojím sa rastlín a starých mýtov!
 mno_fight_back|Poďme to zistiť! Preskúmajte oblasť! Spaľte dva či tri stromy!
 menu_fangorn_search_fails|^^^^^^Prehľadáte tmavý, hustý les, ale nenajdete nič.^Napriek tomu sa vám zdá, že vás niečo sleduje. Niečo strašidelné.
-menu_fangorn_battle_debrief_won|^^^Veľké víťazstvo!^^^Tak o tomto hovorili všetky tie legendy Farngornu... 
 menu_fangorn_killed_player_only|^^^^^^Prechádzaš sa hustým, temným lesom.^Odrazu ťa niečo trafilo! Možno ti na hlavu spadol ťažký konár.^Ostaneš v bezvedomí len pár minut. Zisťuješ, že si ťažko zranený, ale môžeš pokračovať.
 mno_ow_get_out|Ouch! Musíme zmiznúť z tohto prekliatého miesta!
 menu_fangorn_killed_troop_and_player|^^^^^^Predieraš sa hustým, tmavým lesom.^^Odrazu ťa niečo trafilo! Možno ti na hlavu spadol ťažký konár.^^Keď sa po pár minutách preberieš, zistíš, že nie všetci tvojí vojaci mali také šťastie.
@@ -234,6 +233,7 @@ menu_join_battle|^^^Pomáhaš {s2} proti {s1}.^ Máš k dispozícií {reg22} voj
 mno_join_attack|Zaútočiť na nepriateľov.
 mno_join_order_attack|Prikázať svojím jednotkám zaútočiť spolu so spojencami, zatiaľ čo sa ty budeš držať vzadu.
 mno_control_allies_join_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
+; mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|Odísť.
 mno_player_control_allies_join_menu|Prevziať nad nimi velenie a zaútočiť na nepriateľa
 menu_join_order_attack|{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Nepožadovať odmenu.
 menu_siege_started_defender|{s1} zahajuje útok na hradby {s2}. Máš k dispozícií {reg22} jednotiek proti {reg11} nepriateľom. Rozhodneš sa...
 mno_siege_defender_join_battle|Zúčastniť sa boja.
 mno_siege_defender_troops_join_battle|Prikázať tvojej družine aby sa zúčastnila boja bez teba.
+mno_siege_defender_do_not_join_battle|Nezapojiť sa.
 menu_siege_join_defense|{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Silný úder ťa zrazí k zemi, zatočí sa ti hlava a zatmie pre očami. Čas ubieha. Keď sa konečne prebudíš, si celý krvavý a otlčený, ale našťastie nie je žiadne z tvojich zranení smrteľné.
 menu_town_bandits_succeeded|^^^^^Presekávaš sa škratmi ako kosa pšeničným poľom! Onedlho si jediný, kto stojí, zatiaľ čo tvoji protivníci ležia na zemi v bezvedomí, mŕtvy či umierajúci. Miestne obyvateľstvo by sa určite rado dozvedelo, že si ich zbavil tejto hrozby. 

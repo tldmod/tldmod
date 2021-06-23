@@ -323,11 +323,7 @@ itm_isen_uruk_helm_e|Uruk-Hai Yüzbaşı Migferi
 itm_isen_uruk_helm_f|Uruk-Hai İzci Migferi
 itm_uruk_pike_b|Mordor Kargısı
 itm_uruk_falchion_a|Uruk Orak Kılıcı
-itm_uruk_falchion_b|Uruk Orak Kılıcı
-itm_uruk_spear|Mordor Mızragı
-itm_uruk_skull_spear|Uruk Kafatası Mızragı
-itm_uruk_voulge|Uruk Uzun Saplı Geniş Bıçak
-itm_uruk_heavy_axe|Uruk Agır Balta
+itm_uruk_falchion_b|Büyük Ork Palası
 itm_isengard_sword|Isengard Kılıcı
 itm_isengard_axe|Isengard Baltası
 itm_isengard_hammer|Isengard Çekici
@@ -343,21 +339,22 @@ itm_isen_uruk_shield_b|Isen Uruk Kalkanı
 itm_wood_club|Tahta Sopa
 itm_twohand_wood_club|Büyük Tahta Sopa
 itm_bone_cudgel|Kemik Sopası
-itm_skull_club|Kafatası Sopası
+itm_orc_pick|Ork Kazması
+itm_orc_hammer|Şer Çekici
 itm_orc_club_b|Warg Binici Sopası
 itm_orc_club_c|Dikenli Ork Sopası
 itm_orc_club_d|Ugursuz Gürz
 itm_orc_sledgehammer|Ork Balyozu
 itm_orc_simple_spear|Ork Mızragı
 itm_orc_skull_spear|Ork Kafatası Mızragı
-itm_orc_bill|Ork Keseri
-itm_orc_slasher|Ork Dograyıcısı
+itm_orc_bill|Ork Mızragı
+itm_orc_slasher|Kısa Ork Kılıcı
 itm_orc_falchion|Ork Orak Kılıcı
 itm_orc_scimitar|Ork Egri Kılıcı
 itm_orc_sabre|Ork Süvari Kılıcı
-itm_orc_machete|Ork Palası
+itm_orc_battle_axe|Ork Savaş Baltası
 itm_orc_axe|Ork Baltası
-itm_orc_two_handed_axe|Ork İki Elli Baltası
+itm_orc_two_handed_axe|Büyük Ork Baltası
 itm_orc_throwing_axes|Ork Fırlatma Baltaları
 itm_orc_bow|Ork Yayı
 itm_orc_shield_a|Ork Kalkanı
@@ -493,7 +490,8 @@ itm_mirkwood_leather|Ormanelfi Deri Zırhı
 itm_mirkwood_pad|Yeşilorman Kapitone Mont
 itm_mirkwood_mail|Yeşilorman Örme Zırhı
 itm_mirkwood_scale|Yeşilorman Hafif Pullu Zırh
-itm_mirkwood_heavy_scale|Kuytuorman Leafscale
+itm_mirkwood_heavy_scale|Kuytuorman Yaprakpulu
+itm_mirkwood_sword|Orman Elfi Kılıcı
 itm_mirkwood_great_spear|Yeşilorman Büyük Mızragı
 itm_mirkwood_war_spear|Yeşilorman Savaş Mızragı
 itm_mirkwood_short_spear|Orman Elfi Mızragı
@@ -691,10 +689,10 @@ itm_dwarf_battle_axe|Cüce Savaş Baltası
 itm_dwarf_great_axe|Cüce Büyük Baltası
 itm_dwarf_great_mattock|Cüce Büyük Kazması
 itm_dwarf_great_pick|Cüce Büyük Kazması
-itm_dwarf_war_pick|Cüce Savaş Kazması
+itm_dwarf_throwing_axe_reward|Erebor Uçan Baltaları
 itm_dwarf_mattock|Cüce Kazması
 itm_dwarf_hand_axe|Cüce Kısa Baltası
-itm_dwarf_throwing_axe|Cüce Fırlatma Baltası
+itm_dwarf_throwing_axe|Cüce Fırlatma Baltaları
 itm_dwarf_spear|Cüce Mızragı
 itm_dwarf_spear_b|Cüce Kargısı
 itm_dwarf_spear_c|Cüce Uzunbaltası
@@ -744,9 +742,10 @@ itm_angmar_whip_reward|Efendi'nin Kırbacı
 itm_horn_gondor_reward|Gondor'un Boynuz Borusu
 itm_harad_totem_reward|Harad Totemi
 itm_elven_amulet_reward|Elven Tılsımı
+
 itm_torque_reward|Ugursuz Tork
 itm_orc_brew|Orc İşi Mayalı İçki
-itm_rohan_saddle|Thengel'in Eyeri
+itm_rohan_saddle|Eyer
 itm_mearas_reward|Mearh Aygırı
 itm_shield_of_tuor|Tuor Kalkanı
 itm_riv_armor_reward|Rivendell Dekor Zırhı
@@ -785,7 +784,7 @@ itm_khamul_helm|Khamul'un Migferi
 itm_black_arrows_reward|Siyah Oklar
 itm_leather_boots_reward|Avcı botları
 itm_rohan_armor_th|Rohan Kraliyet Zırhı
-itm_wilderness_amulet|Yaban Tılsımı
+itm_wilderness_cowl|Avcı Cüppesi
 itm_prisoner_coll_chain|Esir Zincirleri
 itm_witchking_helmet|Sihirbaz'ın Maskesi
 itm_lorien_royal_armor|Lorien Kraliyet Zırhı

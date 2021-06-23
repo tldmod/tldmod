@@ -164,17 +164,17 @@ dlga_companion_home_description:close_window.1|Я вважаю за краще, 
 dlga_start:player_hire_troop|{s33}^^Я відповідаю за підготовку місцевого гарнізону {s21}. Ви хотіли мене бачити?
 dlga_player_hire_troop:player_hire_troop_give|Деякі з солдатів моєї групи більше знадобляться для оборони твердині {s21}.
 dlga_player_hire_troop:close_window|Я хочу провести огляд моїх солдатів, залишених тут.
-; dlga_player_hire_troop:player_hire_trolls_take|I am a commander worthy of a fighting Troll - give me one!
+dlga_player_hire_troop:player_hire_trolls_take|Я полководець, гідний бойового Троля - дайте мені одного!
 dlga_player_hire_trolls_take:close_window|Хочете підняти власний Чорний легіон? Поверніться, коли зможете додати дорослого троля у свої ряди.
-; dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
+dlga_player_hire_trolls_take:close_window.1|Ти? Ти нікчемний черв'як. Геть з моїх очей. Щоб отримати Бойового троля. (Ваш ранг повинен бути {s24} або вище)
 dlga_player_hire_trolls_take:player_hire_trolls_how_many|Це буде коштувати {reg21} впливу.
 dlga_player_hire_trolls_take:close_window.2|Я передумав
-; dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|A fearsome beast. And now, it is mine!
-; dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
-; dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Страшний звір. І від тепер, він належить мені!
+dlga_player_hire_trolls_how_many:player_hire_troll_armoured|У битвах, з захисними пластинами з заліза, вони будуть краще захищені. Так і зроби!
+dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Я передумав
 dlga_player_hire_troll_buy_not_enough:close_window|Даремно витрачаю час ...
-; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
+dlga_player_hire_troll_buy_done:close_window|Тепер гарненько подбай про цього здорованя, і він подбає про тебе! Ха!
 dlga_player_hire_troop:close_window.1|Мені потрібно потренуватися.
 dlga_player_hire_troop:tld_sell_prisoners|Я маю кілька полонених...
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Давайте поглянемо на цих покидьків.
@@ -479,7 +479,7 @@ dlga_lord_mission_defend_accept:close_window|Дякую тобі, {playername}. 
 dlga_lord_mission_defend_reject:close_window|Зрозуміло. Тоді я пошлю стільки військ, скільки зможу. Будемо сподіватися, що ми не дуже запізнимося.
 dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, неподалік є село, яке немов проситься бути розграбованим. Розвідники кажуть що її захищають {s3}, але їх небагато і їх легко буде перемогти.^^Так виходить що ви - перший з командирів, яким я це кажу. Що ви будеш робити з цією інформацією?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Я розграбую це село і вб'ю в ній всіх чоловіків, а жінок і дітей зроблю рабами!
-; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I cannot raid with these weaklings with me right now...
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|Я не можу зараз робити набіги з цими слабаками...
 dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|У мене немає часу грабувати жалюгідні села!
 dlga_lord_raid_village_accept:close_window|Тоді чому ти все ще тут?
 dlga_lord_raid_village_reject:close_window|Виправдовуються труси. Забирайся, твій боягузливий говір виводить мене з себе.
@@ -567,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|У мене є друг, сивий �
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Які воїни вам потрібні? І скільки?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|{s14}, числом {reg1}. Якби ви змогли навчити їх і привести до мене, цього було б достатньо.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Звичайно, {s65}. Дайте мені {reg1} зелених новобранців, і скоро з них вийдуть справжні {s14}.
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
-; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Я пропоную інший варіант, {s65}. Я візьму {reg1} новобранців і особисто покажу їм кілька прийомів...
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Я пропоную інший варіант, {s65}. Я візьму {reg1} новобранців і особисто покажу їм кілька прийомів. Вони звичайно не стануть {s14} після цього, але для них це в будь-якому випадку буде кроком вперед.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Я зараз дуже зайнятий, щоб когось тренувати.
 dlga_lord_mission_raise_troops_accepted:close_window|Ви зняли з мене важкий тягар турбот, {playername}. Я накажу сотникам привести вам новобранців і передати їх під ваше командування. Крім того, я подбаю про ваше постачанні, щоб відшкодувати витрати. Ось, тримайте, думаю, цього вистачить. Дякую за допомогу.
-; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
+dlga_lord_mission_raise_troops_alternate:close_window|Це цікава пропозиція, {playername}. Я накажу своїм сержантам відправити новобранців на тренувальне поле. Йди за ними і продемонструй їм кілька уроків. Я буду спостерігати за тобою. Заздалегідь дякую тобі за допомогу.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Ах, так, звичайно. Більшого я і не чекав. Що ж, удачі в такому випадку.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|У мене є проблема з якою ти можеш мені допомогти, мова йде про злочинця лиходія відомого як {s4}. Він убив одного з моїх людей і з тих пір ховається від правосуддя. Нещодавно мені стало відомо, що його бачили у {s3}. Якщо ти вистежиш його та зробиш над ним швидкий суд, то я дам тобі нагороду за цю послугу.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Тоді я розшукаю його і сам-а приведу вирок у виконання.
@@ -669,7 +669,7 @@ dlga_castle_gate_open:close_window.4|Мій володар {s2} поки в то
 dlga_start:caravan_help1|Дякую за допомогу! Тепер ми в безпеці. Мене звуть Торбал і я просто займався перевезенням вантажів, коли на нас напали.^^Ви бачили таких величезних орків раніше? Вони не схожі на дрібних гірських, яких ми легко ганяли. А на щитах у них древній мордорський знак. Я не бачив такого по цей бік річки вже дуже давно.^^Щось жахливе відбувається... Війна близько!^^Я пораджу тобі йти в найближче місто і повідомити про те що тут сталося владі. Це важливо, тому поквапся.
 dlga_caravan_help1:caravan_help2|Так, таких здоровенних орків я ніколи не бачи в-ла. Погані справи...^^Я солдат в майбутній війні, яку всі ми передбачали.
 dlga_caravan_help2:caravan_help_tut|Ти? Звичайно! Я бачив, що ти здатний боєць.^^Сьогодні мені справді пощастило і я скористаюся своєю щасливою зіркою і поспішу в своє село, щоб попередити жителів про цих тварюк.^^Ось, тут трохи {s10}
-; dlga_caravan_help_tut:caravan_help3|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of {s11} are not the ones you earned in your own faction, but the ones you will earn in {s11}. ^^See REPORTS for more information.
+dlga_caravan_help_tut:caravan_help3|(ПРО ОЧКИ РАНГУ)^^ Очки постачання, які ви можете використовувати для покупки у людей {s11}, - це не ті, які ви заробили в своїй власній фракції, а ті, що ви заробили в {s11}. ^^Дивіться в звіті, щоб дізнатися подробиці.
 dlga_caravan_help3:caravan_help4|Доброго шляху тобі, Торбал. Гадаю, що ми ще зустрінемося.
 dlga_caravan_help4:caravan_help_fac_tut|Я дивлюся наперед. Мої стражники бачили ваш бій і безсумнівно розкажуть своєму панові все про вас.^^Якщо ви добре допоможете їх народу, то безумовно станете відомою,серед них, що дуже допоможе вам!^^Я, наприклад, добре відомий і щомісяця отримую дохід за свою роботу!
 dlga_caravan_help_fac_tut:caravan_help5|(ПРО ОЧКИ РАНГУ)^^Очки рангу дозволяють вам підніматися в ранзі в вашій державі (і в інших теж).^^Крім того, ранг визначає максимальний розмір вашого загону, щотижневий дохід очок постачання та розблоковує інші особливі нагороди.
@@ -976,18 +976,18 @@ dlga_start:town_merchant_talk|Вітаю, Командире. Як я можу �
 dlga_start:town_merchant_talk.1|Доброго дня. Чим можу допомогти?
 dlga_town_merchant_talk:trade_requested_weapons|Я хочу запросити нове спорядження. Покажіть мені, що у вас на складі.
 dlga_town_merchant_talk:trade_requested_horse|Я хочу отримати тварину для верхової їзди.
-; dlga_town_merchant_talk:player_upgrade_trolls_take|I want to strengthen my trolls!
-; dlga_player_upgrade_trolls_take:close_window|Who are you to ask this of me? Pah! Begone! (You need to be {s24} or higher)
-; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
-; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
-; dlga_player_upgrade_trolls_take:close_window.2|We don't do that here...
-; dlga_player_upgrade_trolls_take:close_window.3|Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!
+dlga_town_merchant_talk:player_upgrade_trolls_take|Я хочу зробити своїх тролів сильніше!
+dlga_player_upgrade_trolls_take:close_window|Хто ти такий, щоб просити мене про це? Тьху! Забирайся! (Ваш ранг повинен бути {s24} або вище)
+dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Ти зробив для нас багато хороших справ. Ми допоможемо зміцнити твого хлопчика! ({reg21} очок постачання)
+dlga_player_upgrade_trolls_take:close_window.1|Твої тролі схожі на м'яких крихіток. Зробіть їх спочатку кровними і сильними!
+dlga_player_upgrade_trolls_take:close_window.2|Тут так не роблять...
+dlga_player_upgrade_trolls_take:close_window.3|Твої тролі навіть не балакають! Вони не з нашого роду. Поверніть їх туди, звідки вони прийшли!
 dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Не варто!
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|Я обладую одного з них.
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Можливо, я ще цього не заробив. Я не буду турбувати вас цією дрібницею
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Не варто!
 dlga_player_upgrade_troll_not_enough:close_window|Даремно витрачаю час ...
-; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
+dlga_player_upgrade_troll_buy_done:close_window|Так... Так! Іди сюди, ти, великий нечупара, ти...
 dlga_trade_requested_weapons:merchant_trade|А, так, Командире. Тут кращі припаси, ніж де б то не було.
 dlga_trade_requested_horse:merchant_trade|Жорстокі звірі для їзди і вбивств, і м'ясо щоб їх годувати! Тобі ніде не знайти кращих звірів.
 dlga_merchant_trade:town_merchant_talk|Щось ще?

@@ -68,7 +68,7 @@ mno_start_go|Gondor, Królestwo Białej Wieży
 mno_start_ro|Rohan, jeźdźcy koni
 mno_start_du|Dunedainowie, starożytna dynastia ludzi
 mno_start_be|Beorningowie, Niedźwiedzi lud
-mno_start_wo|DRWALE, z koron Mirkwood
+; mno_start_wo|WOODMEN, from the eaves of Mirkwood
 mno_start_da|Północne królestwo Dalii
 menu_start_good_elf|^^^^^^^^^^który Las zamieszkujesz, Starcze?
 mno_start_ri|Rivendell, Władcy Elronda
@@ -175,7 +175,6 @@ mno_be_quiet|Połóż broń na ziemi i bądź cicho! A teraz wynoś sie stąd!
 mno_be_bold|Dalej! Nie lękam się roślin i starych mitów!
 mno_fight_back|Przekonajmy się! Przeszukajcie okolicę! Spalcie parę drzew!
 menu_fangorn_search_fails|^^^^^^Przeszukujesz  gęsty, mroczny las, ale nic nie znajdujesz.^Jednakże, czujesz się obserwowany, a poczucie niebezpieczeństwa narasta.
-menu_fangorn_battle_debrief_won|^^^Znakomite zwycięstwo!^^^Teraz rozumiem o co chodziło z tymi Fangoriańskimi mitami...
 menu_fangorn_killed_player_only|^^^^^^Podróżujesz przez mroczny, gęsty las.^Nagle zostajesz przez coś uderzony! Może gałąź spadła Ci na głowę?^Leżysz nieprzytomny przez parę minut. Jesteś ciężko ranny, lecz wciąż możesz iść dalej.
 mno_ow_get_out|Ahh! Wydostańmy się z tego przeklętego miejsca!
 menu_fangorn_killed_troop_and_player|^^^^^^Podróżujesz przez mroczny, gęsty las.^^Nagle zostajesz przez coś uderzony! Być może ciężka gałąź spadła Ci na głowę?^^Po długich minutach w końcu dźwigasz się na nogi, jednakże nie wszyscy twoi ludzie mieli tyle szczęścia.^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^{s2} wznoszą bojowy okrzyk widząc, jak ruszasz im na pomoc
 mno_join_attack|Zaatakuj wroga.
 mno_join_order_attack|Rozkaż swoim ludziom by pomogli sprzymierzeńcom w walce z wrogiem.
 mno_control_allies_join_menu|Użyj Punktów Wpływu aby dowodzić swoimi sojusznikami na polu walki
+; mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|Odejdź.
 mno_player_control_allies_join_menu|Przejmij dowodzenie i szarżuj na wrogów 
 menu_join_order_attack|{s4}^^Twoje straty: {s8}^^Straty sprzymierzeńców: {s9}^^Straty wroga: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Nie proś o nic.
 menu_siege_started_defender|{s1} szturmuje {s2}. Łącznie macie {reg22} żołnierzy przeciwko {reg11} żołnierzom wroga. Decydujesz się...
 mno_siege_defender_join_battle|Dołaczyć do bitwy.
 mno_siege_defender_troops_join_battle|Rozkazać swoim oddziałom przyłączyć się do bitwy, ty zaś zostaniesz z tyłu.
+mno_siege_defender_do_not_join_battle|Nie mieszać do tej walki.
 menu_siege_join_defense|{s4}^^Twoje straty: {s8}^^Straty sprzymierzeńców: {s9}^^Straty wroga: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Uciekinier powala cię na ziemię potężnym uderzeniem, nagle świat zaczyna wirować i wszystko ciemnieje. Czas mija. Gdy wreszcie otwierasz oczy zmaltretowan{y/a} i zakrwawion{y/a}, ale na szczęście żadna z odniesionych ran nie okazuje się śmiertelna.
 menu_town_bandits_succeeded|^^^^^^Gobliny padają przed tobą jak pszenica od kosy! Wkrótce staniesz sam, podczas gdy większość twoich napastników leży nieprzytomna, martwa lub umiera. Z pewnością miejscowi byliby bardzo wdzięczni za uratowanie ich przed tą groźbą.

@@ -68,7 +68,7 @@ mno_start_go|GONDOR, das Königreich des Weißen Turms
 mno_start_ro|ROHAN, das Volk der Pferdeherren
 mno_start_du|DUNEDAIN, das uralte Menschengeschlecht
 mno_start_be|BEORNINGER, das Bärenvolk
-mno_start_wo|Waldmenschen, aus dem Düsterwald
+mno_start_wo|WALDMENSCHEN, aus dem Düsterwald
 mno_start_da|Das nördliche Königreich von THAL
 menu_start_good_elf|^^^^^^^^^^In welchem Wald lebt Ihr, Ältester?
 mno_start_ri|BRUCHTAL, bei Herrn Elrond
@@ -175,7 +175,6 @@ mno_be_quiet|Leg deine Waffen nieder und verhalte dich ruhig! Nichts wie raus!
 mno_be_bold|Immer weiter! Ich fürchte weder Pflanzen noch alte Mythen!
 mno_fight_back|Lasst es uns herausfinden! Durchsucht die Umgebung! Brennt einen Baum nieder, oder zwei!
 menu_fangorn_search_fails|^^^^^^Du durchsuchst den dunklen, dichten Wald, entdeckst aber nichts.^Trotzdem fühlst du dich beobachtet und bedroht, mehr und mehr.
-menu_fangorn_battle_debrief_won|^^^Ein großer Sieg!^^^Also das war es, wovon die Mythen über Fangorn handelten...
 menu_fangorn_killed_player_only|^^^^^^Du wanderst durch den dichten, dunklen Wald.^Plötzlich wirst du von etwas getroffen! Vielleicht ist dir ein schwerer Ast auf den Kopf gefallen?^Du bist für einige Minuten bewusstlos. Du bist schwer verletzt, kannst aber weitergehen.
 mno_ow_get_out|Autsch! Lasst uns diesen verwunschenen Ort verlassen!
 menu_fangorn_killed_troop_and_player|^^^^^^Du wanderst durch den dichten, dunklen Wald.^^Plötzlich wirst du von etwas getroffen! Vielleicht ist ein schwerer Ast auf deinen Kopf gefallen.^^Als du dich, Minuten später, erholst, bemerkst du, dass nicht alle aus deiner Truppe so viel Glück hatten.^^
@@ -234,6 +233,7 @@ menu_join_battle|^^^Du unterstützst {s2} gegen {s1}.^ Du hast {reg22} kampfbere
 mno_join_attack|Greif den Feind an.
 mno_join_order_attack|Befiehl deinen Truppen, mit deinen Verbündeten anzugreifen, während du zurückbleibst.
 mno_control_allies_join_menu|Einflusspunkte verwenden, im Feld die Befehlsgewalt über deine Verbündeten zu übernehmen.
+mno_join_attack_bearform|Nimm Bärengestalt an und stürze dich in die Schlacht
 mno_join_leave|Zurückfallen.
 mno_player_control_allies_join_menu|Befehlige sie und greif den Feind an
 menu_join_order_attack|{s4}^^Deine Verluste: {s8}^^Verluste Verbündete: {s9}:^^Gegnerische Verluste: {s10}
@@ -279,6 +279,7 @@ mno_castle_taken_no_claim|Verlangt keine Belohnung.
 menu_siege_started_defender|{s1} greift die Mauern von {s2} an. Du hast {reg22} kampfbereite Truppen gegen {reg11} Feinde. Du entscheidest...
 mno_siege_defender_join_battle|Dich der Schlacht anzuschließen.
 mno_siege_defender_troops_join_battle|Deinen Männern zu befehlen, sich ohne dich der Schlacht anzuschließen.
+mno_siege_defender_do_not_join_battle|Nicht eingreifen.
 menu_siege_join_defense|{s4}^^Deine Verluste: {s8}^^Verluste Verbündete: {s9}^^Gegnerische Verluste: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Ein heftiger Schlag des Flüchtigen schickt dich zu Boden, dein Sichtfeld schwindet, und es wird dunkel. Die Zeit verstreicht. Als du deine Augen wieder öffnest, entdeckst du, dass du blutig und zerschlagen bist, doch glücklicherweise scheint keine der Wunden ernsthafter Natur zu sein.
 menu_town_bandits_succeeded|^^^^^Die Orks fallen vor dir wie die Fliegen! Schon bald stehst du allein, während die meisten Angreifer bewusstlos, tot oder sterbend darniederliegen. Die Anwohner wären sicher äußerst dankbar, dass du sie vor dieser Bedrohung gerettet hast.
