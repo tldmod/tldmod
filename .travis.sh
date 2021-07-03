@@ -1,6 +1,6 @@
 # swy: as seen here <https://github.com/travis-ci/travis-ci/issues/2285> but made prettier with custom wrappers
-_fold_start_() { echo -en "travis_fold:start:script.$(( ++fold_count ))\\r" && echo -ne '\033[1;33m' && echo $1 && echo -ne '\e[0m'; }
-_fold_final_() { echo -en "travis_fold:end:script.$fold_count\\r"; }
+_fold_start_() { echo -en "::group::" && echo -ne '\033[1;33m' && echo $1 && echo -ne '\e[0m'; }
+_fold_final_() { echo "::endgroup::"; }
 
 
 echo HI THERE!

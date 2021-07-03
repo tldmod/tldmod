@@ -97,7 +97,7 @@ _fold_start_ '[Deploying Steam Workshop build]'
 
     CONT_FLDR='The Last Days of the Third Age' # (TEST THINGIE)'
 
-    cd .. && mv tldmod "$CONT_FLDR"
+    cd .. && cp tldmod "$CONT_FLDR"
 
     echo '"workshopitem"                           '   > workshop_entry.vdf
     echo '{                                        '  >> workshop_entry.vdf

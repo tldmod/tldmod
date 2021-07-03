@@ -1,0 +1,70 @@
+name: Nightly builds
+on:
+  push:
+    branches:
+        - master
+        - actions
+    tags:
+      - 'workshop-*'
+jobs:
+  build-lnx:
+    name: Buildbot
+    runs-on: ubuntu-latest
+      
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+      
+    - name: Install dependencies
+      run: | 
+        sudo apt install p7zip       \
+                         tree        \
+                         git         \
+                         flip        \
+                         imagemagick \
+                         curl        \
+                         sed         \
+                         grep        \
+                         lib32gcc1   \
+                         jq
+
+    - name: Find if we're a normal nightly run or a Workshop build
+      id: find_tag
+      run: |
+        echo ${GITHUB_REF#refs/tags/}
+        echo ${GITHUB_REF}
+        
+        # swy: https://stackoverflow.com/a/18558871/674685
+        case ${GITHUB_REF} in refs/tags/workshop-*)
+          echo ::set-output name=TRAVIS_TAG_VAR::${GITHUB_REF#refs/tags/}
+          echo 'swy: this seems like a workshop release; setting TRAVIS_TAG_VAR variable.'
+        esac
+
+    - name: Pack things up - Here's the real meat
+      id: pack
+      run: |
+        bash ./.travis.sh
+      env:
+        ghuser:   ${{ secrets.GHUSER   }}
+        ghtoken:  ${{ secrets.GHTOKEN  }}
+        
+        bbuser:   ${{ secrets.BBUSER   }}
+        bbpass:   ${{ secrets.BBPASS   }}
+        bbpage:   ${{ secrets.BBPAGE   }}
+        
+        steam_ac: ${{ secrets.STEAM_AC }}
+        steam_tk: ${{ secrets.STEAM_TK }}
+
+        TRAVIS_TAG: ${{ steps.find_tag.outputs.TRAVIS_TAG_VAR }}
+        
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: buildbot-output
+        # swy: one level up, hardcoded because it doesn't like relative paths:
+        #      $GITHUB_WORKSPACE/../ == /home/runner/work/tldmod
+        path: /home/runner/work/tldmod/*.7z
+        if-no-files-found: ignore
+      # swy: https://github.community/t/expression-syntax-for-not-startswith/17040
+      if: startsWith(steps.find_tag.outputs.TRAVIS_TAG_VAR, 'workshop-') != true
