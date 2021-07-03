@@ -125,6 +125,9 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental 
     # fixed Linux case-sensitive language files detection
     mv Languages languages
 
+    # swy: also remove the .github folder
+    rm -rf  ./.*/
+
     cd ..
 
     # make a copy for the warband version

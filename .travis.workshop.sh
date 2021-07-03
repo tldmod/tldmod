@@ -79,6 +79,9 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into a Steam Workshop bu
    #rm -f  ./*.md
 
     rm -rf .git
+
+    # swy: also remove the .github folder
+    rm -rf  ./.*/
     
     # add a watermark to make it clear that this is not the official build
    #convert main.bmp -gravity center -pointsize 30 -fill red -stroke darkred -annotate -10 '(TEST THINGIE)' -type truecolor main.bmp
@@ -97,7 +100,7 @@ _fold_start_ '[Deploying Steam Workshop build]'
 
     CONT_FLDR='The Last Days of the Third Age' # (TEST THINGIE)'
 
-    cd .. && cp tldmod "$CONT_FLDR"
+    cd .. && cp -r tldmod "$CONT_FLDR"
 
     echo '"workshopitem"                           '   > workshop_entry.vdf
     echo '{                                        '  >> workshop_entry.vdf
