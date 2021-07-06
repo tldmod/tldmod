@@ -522,7 +522,7 @@ scenes = [
 ("old_tutorial_2",sf_indoors,"tutorial_2_scene", "bo_tutorial_2_scene", (-100,-100),(100,100),-100,"0",[],[]),
 ("old_tutorial_3",sf_indoors,"tutorial_3_scene", "bo_tutorial_3_scene", (-100,-100),(100,100),-100,"0",[],[]),
 ("old_tutorial_4",sf_generate,"none", "none", (0,0),(120,120),-100,"0x30000500400360d80000189f00002a8380006d91",[],[], "outer_terrain_plain"),
-("old_tutorial_5",sf_generate,"none", "none", (0,0),(120,120),-100,"0x3a06dca80005715c0000537400001377000011fe",[],[], "outer_terrain_plain"),
+("thranduils_halls_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001400ddb4200058d66000023ad0000751200000359",[],[],"outer_terrain_forest"),#Kolba  
 
 # some more missing siege scenes
 
@@ -532,9 +532,9 @@ scenes = [
 ("cerin_amroth_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
 ("ironhill_camp_siege"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007200016da000364d9000060f500007591000064e7",[],[],"outer_terrain_steppe"),
 ("isengard_siege"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
-("thranduils_halls_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba  
   
 #Inner siege placeholders
+("thranduils_halls_siege_inner",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001400ddb4200058d66000023ad0000751200000359",[],[],"outer_terrain_forest"),#Kolba  
 ("minas_tirith_siege_inner"  ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
 ("edoras_siege_inner"        ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007200005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
 ("hornburg_siege_inner"      ,sf_generate,"none","none",(0,0),(100,100),-100,        "0x00001d63c005114300006228000053bf00004eb9",[],[],"outer_mountains2south"),

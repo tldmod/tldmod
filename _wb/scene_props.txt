@@ -2111,10 +2111,10 @@ spr_gourd_spike 0 0 gourd_spike bo_gourd_spike 0
 spr_obstacle_fence_1 0 0 fence bo_fence 0
 
 
-spr_obstacle_fallen_tree_a 0 0 destroy_tree_a bo_destroy_tree_a 0
+spr_obstacle_fallen_tree_a 0 0 destroy_tree_a bo_destroy_tree_a_new 0
 
 
-spr_obstacle_fallen_tree_b 0 0 destroy_tree_b bo_destroy_tree_b 0
+spr_obstacle_fallen_tree_b 0 0 destroy_tree_b bo_destroy_tree_b_new 0
 
 
 spr_invisible_pillar 0 0 invisible_pillar bo_invisible_pillar 0

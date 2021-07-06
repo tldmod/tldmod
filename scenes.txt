@@ -1440,10 +1440,10 @@ scn_old_tutorial_4 old_tutorial_4 256 none none 0 0 120 120 -100 0x3000050040036
   0 
   0 
  outer_terrain_plain 
-scn_old_tutorial_5 old_tutorial_5 256 none none 0 0 120 120 -100 0x3a06dca80005715c0000537400001377000011fe 
+scn_thranduils_halls_siege thranduils_halls_siege 256 none none 0 0 100 100 -100 0x00000001400ddb4200058d66000023ad0000751200000359 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_forest 
 scn_caras_galadhon_siege caras_galadhon_siege 256 none none 0 0 90 90 -0.5 0x0000000030000500000985dc00000e2f000027d200005f66 
   0 
   0 
@@ -1464,7 +1464,7 @@ scn_isengard_siege isengard_siege 256 none none 0 0 100 100 -100 0x0000000730000
   0 
   0 
  outer_mountains2north 
-scn_thranduils_halls_siege thranduils_halls_siege 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_thranduils_halls_siege_inner thranduils_halls_siege_inner 256 none none 0 0 100 100 -100 0x00000001400ddb4200058d66000023ad0000751200000359 
   0 
   0 
  outer_terrain_forest 

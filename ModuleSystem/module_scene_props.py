@@ -1223,8 +1223,8 @@ scene_props = [
 ("gourd_spike",0,"gourd_spike","bo_gourd_spike",[]),
 
 ("obstacle_fence_1",0,"fence","bo_fence", []),
-("obstacle_fallen_tree_a",0,"destroy_tree_a","bo_destroy_tree_a", []),
-("obstacle_fallen_tree_b",0,"destroy_tree_b","bo_destroy_tree_b", []),  
+("obstacle_fallen_tree_a",0,"destroy_tree_a","bo_destroy_tree_a_new", []), #high-res collision
+("obstacle_fallen_tree_b",0,"destroy_tree_b","bo_destroy_tree_b_new", []), #high-res collision  
 
 #####TLD SCENE PROPS##########
 ("invisible_pillar",0,"invisible_pillar","bo_invisible_pillar", []), # useful to block player out of forbidden zones
