@@ -4475,8 +4475,9 @@ game_menus = [
 	("crossdressing", [(assign,reg6, "$tld_option_crossdressing"), ], "Crossdressing: {reg6?Enabled:Disabled}", 
 	  [(store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"), (jump_to_menu, "mnu_camp_cheat"),]),
 
-	("cheat_change_race",[],"Change your race (for development use).",[(jump_to_menu, "mnu_cheat_change_race"),]),	   
+	#("cheat_change_race",[],"Change your race (for development use).",[(jump_to_menu, "mnu_cheat_change_race"),]),	   
 	("impose_quest", [], "Impose a quest...",  [(jump_to_menu, "mnu_cheat_impose_quest")]),
+    ("impose_battle_field", [], "Impose a battlefield...",  [(jump_to_menu, "mnu_cheat_force_scene")]),
 	("relocate_party", [],   "Move to town...", [(jump_to_menu, "mnu_teleport_to_town")]),
 	("add_troops", [], "Add troops to player party.", [
 	   (assign, "$select_any_troop_nextmenu","mnu_camp_cheat" ), 
@@ -12284,6 +12285,23 @@ game_menus = [
    ("scene8",[],"Forest Med (file scn_custom_8.sco)",	[(1261,"scn_custom_8"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_8"),(2048)]),
    ("scene9",[],"Forest Small (file scn_custom_9.sco)",	[(1261,"scn_custom_9"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_9"),(2048)]),
    ("back_3dot" ,[],"Back...",[(change_screen_quit)])],
+ ),
+
+("cheat_force_scene",0,
+ "This cheat forces the selected scene to appear in any field battle. You can access and edit these scenes from the 'build your own scene' menu.",
+ "none",
+   [(set_background_mesh, "mesh_ui_default_menu_window")],[
+   ("force_scene1",[],"Plain Big (file scn_custom_1.sco)",	[(assign, "$force_scene", "scn_custom_1")]),
+   ("force_scene2",[],"Plain Med (file scn_custom_2.sco)",	[(assign, "$force_scene","scn_custom_2")]),
+   ("force_scene3",[],"Plain Small (file scn_custom_3.sco)",	[(assign, "$force_scene","scn_custom_3")]),
+   ("force_scene4",[],"Steppe Big (file scn_custom_4.sco)",	[(assign, "$force_scene","scn_custom_4")]),
+   ("force_scene5",[],"Steppe Med (file scn_custom_5.sco)",	[(assign, "$force_scene","scn_custom_5")]),
+   ("force_scene6",[],"Steppe Small (file scn_custom_6.sco)",	[(assign, "$force_scene","scn_custom_6")]),
+   ("force_scene7",[],"Forest Big (file scn_custom_7.sco)",	[(assign, "$force_scene","scn_custom_7")]),
+   ("force_scene8",[],"Forest Med (file scn_custom_8.sco)",	[(assign, "$force_scene","scn_custom_8")]),
+   ("force_scene9",[],"Forest Small (file scn_custom_9.sco)",	[(assign, "$force_scene","scn_custom_9")]),
+   ("force_scene_none",[],"None (disable)",	[(assign, "$force_scene",0)]),
+   ("back_3dot" ,[],"Back...",[(jump_to_menu, "mnu_camp_cheat")])],
  ),
 
 # ("start_game_0",menu_text_color(0xFF000000)|mnf_disable_all_keys,
