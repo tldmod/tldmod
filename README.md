@@ -8,7 +8,7 @@
 4. *Optional*: Tell us about what you're doing with this OSP. Show it off! :)
 
 ## Addendum
-![CC BY-NC-SA logo](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)
+![CC BY-NC-SA logo](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg)
 
 Additionally; any TLD contributions by @In-Vain and @Swyter (and not others) can be alternatively reused under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
 
