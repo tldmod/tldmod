@@ -2823,7 +2823,7 @@ troops = [
 ["elder_troll_cave","Cave_Chief","the_caves",tf_hero| tf_randomize_face| tf_orc,0,0,fac_moria,
    [itm_moria_armor_c,itm_orc_ragwrap,],
       def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
-["elder_dg_outpost","Rhun_Camp_Chief","the_camp",tf_hero| tf_randomize_face| tf_orc,0,0,fac_guldur,
+["elder_dg_outpost","Campmaster","the_camp",tf_hero| tf_randomize_face| tf_orc,0,0,fac_guldur,
    [itm_moria_armor_c,itm_orc_ragwrap,],
       def_attrib|level(2),wp(20),knows_common,rhun_man1,rhun_man2],
 ["elder_rhun_sc","Rhun_Camp_Chief","the_camp",tf_hero| tf_randomize_face,0,0,fac_rhun,
