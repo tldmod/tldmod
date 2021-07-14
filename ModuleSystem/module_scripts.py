@@ -8356,15 +8356,16 @@ scripts = [
 			(val_min, ":quest_target_amount", 3),
 			(val_max, ":quest_target_amount", 15),
             
+            #rank and fac str reward will receive a bonus per party strength, defined in quest dialog
             (assign, ":quest_importance", 4),
             (store_mul, ":quest_gold_reward", ":dist", 7),
             (assign, ":quest_xp_reward", ":dist"),
-            (store_div, ":quest_rank_reward", ":dist", 5),
+            (store_div, ":quest_rank_reward", ":dist", 10),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 10),
             (assign, ":quest_dont_give_again_period", 14),
 			(assign, ":quest_object_faction", ":giver_faction_no"),
-			(assign, ":quest_giver_fac_str_effect", 20),
+			(assign, ":quest_giver_fac_str_effect", 10),
           (try_end),
         (else_try),
           (eq, ":quest_no", "qst_eliminate_patrols"),

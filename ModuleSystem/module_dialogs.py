@@ -732,7 +732,13 @@ dialogs = [
 
 [anyone,"member_chat_00", [
     (check_quest_active, "qst_dispatch_scouts"),
-    (quest_slot_eq, "qst_dispatch_scouts", slot_quest_object_troop, "$g_talk_troop"),
+    (quest_get_slot, ":scout_leader", "qst_dispatch_scouts", slot_quest_object_troop), #also accept direct upgrade of the leader troop
+    (troop_get_upgrade_troop, ":scout_leader_upgrade_1", ":scout_leader", 0),
+    (troop_get_upgrade_troop, ":scout_leader_upgrade_2", ":scout_leader", 1),
+    
+    (this_or_next|eq, ":scout_leader", "$g_talk_troop"),
+    (this_or_next|eq, ":scout_leader_upgrade_1", "$g_talk_troop"),
+    (eq, ":scout_leader_upgrade_2", "$g_talk_troop"),
     # count if enough troops
     (quest_get_slot, ":quest_object_faction", "qst_dispatch_scouts", slot_quest_object_faction),
 	(quest_get_slot, ":quest_target_amount", "qst_dispatch_scouts", slot_quest_target_amount),
@@ -823,6 +829,17 @@ dialogs = [
     (else_try), (display_message,"@Something wrong, not enough troops for scout party"),
     (try_end),
     (try_end),
+    (call_script, "script_party_calculate_strength", ":scout_party", 0),
+    (assign, ":party_strength", reg0),
+    (store_div, ":rank_reward_bonus", ":party_strength", 5),
+	(assign, ":fac_str_bonus", ":rank_reward_bonus"),
+    (quest_get_slot, ":rank_reward", "qst_dispatch_scouts", slot_quest_rank_reward),
+    (quest_get_slot, ":fac_str_effect", "qst_dispatch_scouts", slot_quest_giver_fac_str_effect),
+    (val_add, ":rank_reward", ":rank_reward_bonus"),
+    (val_add, ":fac_str_effect", ":fac_str_bonus"),
+    (quest_set_slot, "qst_dispatch_scouts", slot_quest_rank_reward, ":rank_reward"),
+    (quest_set_slot, "qst_dispatch_scouts", slot_quest_giver_fac_str_effect, ":fac_str_effect"),
+    
     (call_script, "script_succeed_quest", "qst_dispatch_scouts")]],
 
 [anyone|plyr, "member_scout_1", [],  "Wait a minute, not just yet.", "close_window", [(call_script,"script_stand_back"),]],
@@ -8202,11 +8219,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
          (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
          (str_store_string, s5, "@We have reports of some enemy activity near {s13}.\
  Our scouts have so far failed to get close enough and scout the area for enemy comings and goings.\
- I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts."), #Good
+ I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts. I will also give you a few recruits, but you should not send them out on their own."), #Good
        (else_try),
          (str_store_string, s5, "@My spies tell me the enemy is up to something in {s13}.\
  Our cowardly scouts have so far failed to get close enough and tell us anything of import.\
- I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee!"), #Evil
+ I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee! I will give you these recruits, they won't be missed."), #Evil
        (try_end),
 #       (faction_get_slot, ":tier_1_troop", "$g_talk_troop_faction", slot_faction_tier_1_troop), #4 of these
 #       (str_store_troop_name_plural, s16, ":tier_1_troop"),
@@ -8318,6 +8335,18 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (else_try),
       (eq, "$random_quest_no", "qst_blank_quest_02"), #Hunt down Refugees
       (call_script, "script_cf_quest_hunt_refugees_party_creation"),
+    (else_try),
+       (eq, "$random_quest_no", "qst_dispatch_scouts"), 
+       (faction_get_slot, ":tier_1_troop", "$g_talk_troop_faction", slot_faction_tier_1_troop),
+       (str_store_troop_name_plural, s16, ":tier_1_troop"),
+	   (quest_get_slot, reg1, "qst_dispatch_scouts", slot_quest_target_amount),
+       (val_div, reg1, 2),
+       (try_for_range, ":unused", 0, reg1), #check party size
+        (neg|troops_can_join, reg1),
+        (val_sub, reg1, 1),
+       (try_end),
+       (party_add_members, "p_main_party", ":tier_1_troop", reg1),
+       (display_message, "@{reg1} {s16} joined your party."),
   (try_end),
   (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
   (try_begin),
