@@ -30,7 +30,7 @@ itemsfile version 2
  itm_cram Cram_Ration Cram_Ration 1  cram 0  34144267 0 44 0 10 100 50 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_lembas Lembas Lembas 1  lembas 0  33558539 0 200 0 1.25 10 80 0 0 0 0 0 0 0 100 0 0
+ itm_lembas Lembas Lembas 1  lembas 0  33554443 0 200 0 1.25 10 80 0 0 0 0 0 0 0 100 0 0
 0
 
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15 110 50 0 0 0 0 0 0 0 50 0 0
@@ -138,7 +138,7 @@ itemsfile version 2
  itm_riv_warhorse Rivendell_Warhorse Rivendell_Warhorse 1  rivendell_warhorse01 0  65537 0 1500 119185604608 0 100 0 32 0 4 135 38 39 102 0 24 0
 0
 
- itm_riv_warhorse2 Imladris_Steed Imladris_Steed 1  rivendell_warhorse02 0  1 0 2000 119185604608 0 100 0 38 0 4 150 40 43 104 0 26 0
+ itm_riv_warhorse2 Imladris_Steed Imladris_Steed 1  rivendell_warhorse02 0  4097 0 2000 119185604608 0 100 0 38 0 4 150 40 43 104 0 26 0
 0
 
  itm_mordor_warhorse Mordor_Warhorse Mordor_Warhorse 1  mordor_warhorse01 0  65537 0 1500 16106389504 0 100 0 35 0 4 135 34 36 108 0 33 0
@@ -622,7 +622,7 @@ itemsfile version 2
  itm_gon_steward_guard Gondor_Steward_Guard_Armor Gondor_Steward_Guard_Armor 1  gondor_steward_guard 0  16777229 0 4000 704643072 38 100 0 40 14 0 0 0 0 0 0 0 0
 0
 
- itm_gon_tower_guard Gondor_Tower_Guard_Armor Gondor_Tower_Guard_Armor 1  gondor_tower_guard 0  16777229 0 5000 704643072 35 100 0 45 14 0 0 0 0 0 0 0 0
+ itm_gon_tower_guard Gondor_Tower_Guard_Armor Gondor_Tower_Guard_Armor 1  gondor_tower_guard 0  16781325 0 5000 704643072 35 100 0 45 14 0 0 0 0 0 0 0 0
 0
 
  itm_gon_tower_knight Gondor_Tower_Knight_Armor Gondor_Tower_Knight_Armor 1  gondor_tower_knight 0  16777229 0 4000 704643072 36 100 0 40 15 0 0 0 0 0 0 0 0
@@ -667,7 +667,7 @@ itemsfile version 2
  itm_gondor_leader_helm Gondor_High_Helmet Gondor_High_Helmet 1  gondor_leader_helm 0  65548 0 3500 704643072 3.5 100 41 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_tower_guard_helm Tower_Guard_Helm Tower_Guard_Helm 1  gondor_tower_guard_helm 0  12 0 4000 704643072 4 100 46 0 0 0 0 0 0 0 0 0 0
+ itm_tower_guard_helm Tower_Guard_Helm Tower_Guard_Helm 1  gondor_tower_guard_helm 0  4108 0 4000 704643072 4 100 46 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_gondor_citadel_knight_helm Citadel_Knight_Helm Citadel_Knight_Helm 1  gondor_citadel_knight_helm 0  65548 0 3000 704643072 3.5 100 40 0 0 0 0 0 0 0 0 0 0
@@ -841,7 +841,7 @@ itemsfile version 2
  itm_gondor_shield_d Gondor_Kite_Shield Gondor_Kite_Shield 1  gondorian_kite_shield 0  327687 4831838208 400 251658402 2.5 100 0 17 0 1 290 90 0 40 0 0 0
 0
 
- itm_gondor_shield_e Gondor_Citadel_Shield Gondor_Citadel_Shield 1  denethor_shield 0  262151 4831838208 1000 771751936 2.5 100 0 25 0 3 300 90 0 60 0 0 0
+ itm_gondor_shield_e Gondor_Citadel_Shield Gondor_Citadel_Shield 1  denethor_shield 0  266247 4831838208 1000 771751936 2.5 100 0 25 0 3 300 90 0 60 0 0 0
 0
 
  itm_gon_tab_shield_a Heraldic_Gondor_Round_Shield Heraldic_Gondor_Round_Shield 1  tableau_shield_round 0  327687 5100273664 200 251658402 2 100 0 13 0 0 280 92 0 40 0 0 0
@@ -1343,7 +1343,7 @@ itemsfile version 2
  itm_free_m_uruk_heavy_k Uruk_Guard_Armor Uruk_Guard_Armor 1  uruk_mordor_segmented_a 0  16842765 0 2500 704643072 28 100 0 26 12 0 0 0 0 0 0 0 0
 0
 
- itm_m_cap_armor Mordor_Captain_Armor Mordor_Captain_Armor 1  mordor_captain_armor 0  16842765 0 4000 704643072 37 100 0 42 18 0 0 0 0 0 0 0 0
+ itm_m_cap_armor Mordor_Captain_Armor Mordor_Captain_Armor 1  mordor_captain_armor 0  16781325 0 4000 704643072 37 100 0 42 18 0 0 0 0 0 0 0 0
 0
 
  itm_black_num_armor Black_Numenorean_Armor Black_Numenorean_Armor 1  black_numenor_armor 0  16842765 0 4000 704643072 37 100 0 42 18 0 0 0 0 0 0 0 0
@@ -1996,7 +1996,7 @@ itemsfile version 2
  itm_khand_throwing_axe Khand_Throwing_Axe Khand_Throwing_Axe 3  Khand_Weapon_Throwing_Axe 0  Khand_Weapon_Throwing_Axe_quiver 3458764513820540928  Khand_Weapon_Throwing_Axe_inventory 1152921504606846976  88145930 35702112256 300 4398046781448 5 100 0 0 83 2 0 103 20 53 3 60 0
 0
 
- itm_khand_rammace Khand_Ram_Mace Khand_Ram_Mace 1  Khand_Weapon_Mace_Ram 0  279177461764 9223652418519040238 500 271496 6 100 0 0 0 0 33792 84 0 102 0 256 545
+ itm_khand_rammace Khand_Ram_Mace Khand_Ram_Mace 1  Khand_Weapon_Mace_Ram 0  279177465860 9223652418519040238 500 271496 6 100 0 0 0 0 33792 84 0 102 0 256 545
 0
 
  itm_khand_pitsword Pit_Fighter_Sword Pit_Fighter_Sword 1  Khand_Weapon_Sword_Pit 0  4259842 9223388529822793743 300 150 1.25 100 0 0 0 0 29696 107 0 66 0 281 29
@@ -2321,7 +2321,7 @@ itemsfile version 2
 1
 -50  0 
 
- itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftain 0  16777229 0 1200 704643206 18 100 0 33 15 18 0 0 0 0 0 0 0
+ itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftain 0  16781325 0 1200 704643206 18 100 0 33 15 18 0 0 0 0 0 0 0
 0
 
  itm_beorn_helmet Bear_Skullcap Bear_Skullcap 2  beorn_helmet 0  beorn_helmet_light 134  65548 0 800 704643206 2 100 32 0 0 0 0 0 0 0 0 0 0
@@ -2390,10 +2390,10 @@ itemsfile version 2
  itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 3  dwarf_great_mattock 0  dwarf_great_mattock 1  dwarf_war_mattock 156672  38996869123 9223635923965575392 500 156672 5 100 0 0 0 0 32768 89 0 94 0 256 288
 0
 
- itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 4  dwarf_great_pick 0  dwarf_great_pick 0  dwarf_war_pick 156672  dwarf_war_pick_old 524544  38996869123 9223635923965575392 400 156672 5 100 0 0 0 0 30720 94 0 90 0 256 286
+ itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 4  dwarf_great_pick 0  dwarf_great_pick 0  dwarf_war_pick 156672  dwarf_war_pick_old 524544  38996873219 9223635923965575392 400 156672 5 100 0 0 0 0 30720 94 0 90 0 256 286
 0
 
- itm_dwarf_throwing_axe_reward Erebor_Flying_Axes Erebor_Flying_Axes 1  dwarf_throw_axe_2 0  88145930 196608 1000 4398046781448 5 100 0 0 94 4 0 99 34 37 6 311 0
+ itm_dwarf_throwing_axe_reward Erebor_Flying_Axes Erebor_Flying_Axes 1  dwarf_throw_axe_2 0  88084490 196608 1000 4398046781448 5 100 0 0 94 4 0 99 34 37 6 311 0
 0
 
  itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 3  dwarf_mattock 1  dwarf_mattock 0  dwarf_adz 156672  272957443 9223652412881895662 200 156672 3 100 0 0 0 0 25600 103 0 52 0 256 281
@@ -2441,7 +2441,7 @@ itemsfile version 2
  itm_north_nasal_helm North_Nasal_Helm North_Nasal_Helm 3  north_nasal 1  north_nasal 0  north_nasal_good 167772160  65548 0 800 704643072 2 100 32 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_helm_p Dwarf_King_Helm Dwarf_King_Helm 1  DwarfHelmKingCrown 0  12 0 2000 704643072 2 100 50 0 0 0 0 0 0 0 0 0 0
+ itm_dwarf_helm_p Dwarf_King_Helm Dwarf_King_Helm 1  DwarfHelmKingCrown 0  4108 0 2000 704643072 2 100 50 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_miner Dwarf_Light_Helm Dwarf_Light_Helm 4  DwarfHelmMinerCap 1  DwarfHelmMinerCap 0  DwarfHelmMiner 134217728  DwarfHelmMiner 67108864  65548 0 500 251658240 2 100 14 0 0 0 0 0 0 0 0 0 0
@@ -2471,7 +2471,7 @@ itemsfile version 2
  itm_leather_dwarf_armor_b Dwarven_Padded_Jerkin Dwarven_Padded_Jerkin 2  dwarf_padtunic 0  dwarf_padmail 251658240  16842765 0 908 251658240 10 100 0 18 8 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_armor_c Erebor_Scale_Mail Erebor_Scale_Mail 2  dwarf_scalemail_light 0  dwarf_scalemail 704643072  16842765 0 2008 704643072 23 100 2 43 13 18 0 0 0 0 0 0 0
+ itm_dwarf_armor_c Erebor_Scale_Mail Erebor_Scale_Mail 2  dwarf_scalemail_light 0  dwarf_scalemail 704643072  16846861 0 2008 704643072 23 100 2 43 13 18 0 0 0 0 0 0 0
 0
 
  itm_dwarf_vest Dwarven_Tunic Dwarven_Tunic 2  dwarf_tunic_erebor 0  dwarf_tunic_ironhills 251658240  16842765 0 258 251658240 5 100 0 14 6 0 0 0 0 0 0 0 0
@@ -2568,10 +2568,10 @@ itemsfile version 2
  itm_ent_water Strange_Bowl_of_Water Strange_Bowl_of_Water 1  ent_water 0  4107 0 200 0 2 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_map Maps_of_Middle_Earth Maps_of_Middle_Earth 1  middle_earth_map 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_map Maps_of_Middle_Earth Maps_of_Middle_Earth 1  middle_earth_map 0  11 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_athelas_reward Athelas_Plant Athelas_Plant 1  athelas_plant 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_athelas_reward Athelas_Plant Athelas_Plant 1  athelas_plant 0  11 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_phial_reward Light_of_Galadriel Light_of_Galadriel 1  galadriel_light 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2601,7 +2601,7 @@ itemsfile version 2
  itm_torque_reward Evil_Torque Evil_Torque 1  reward_torque 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_brew Orc_Brew Orc_Brew 1  orc_brew 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_orc_brew Orc_Brew Orc_Brew 1  orc_brew 0  11 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_saddle Saddle Saddle 4  RohanSaddle 0  RohanSaddle 536870912  rhunsaddle 262144  haradsaddle 131072  4107 0 5000 0 4 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2613,7 +2613,7 @@ itemsfile version 2
  itm_shield_of_tuor Shield_of_Tuor Shield_of_Tuor 1  Avelium_shield_of_tuor 0  266247 4831838208 4000 0 4 100 0 22 0 5 450 84 0 70 0 0 0
 0
 
- itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 704643072 24 100 2 45 22 15 0 0 0 0 0 0 0
+ itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16781325 0 6000 704643072 24 100 2 45 22 15 0 0 0 0 0 0 0
 0
 
  itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_1h 0  scab_1h_westernesse 3458764513820540928  4198402 9223388564182532111 3000 156672 1.25 100 0 0 0 15 38912 117 0 77 0 301 294
@@ -2628,13 +2628,13 @@ itemsfile version 2
  itm_nazgul_sword Wicked_Sword Wicked_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  4368371715 9223635954298781951 200 156672 4.5 100 0 0 0 18 51200 103 0 112 0 301 306
 0
 
- itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  11 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b_longer 0  71307266 9223635919939043583 3000 156672 3 100 0 0 0 18 53248 97 0 110 0 278 52
 0
 
- itm_garlic_reward Garlic Garlic 1  garlic.9 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_garlic_reward Garlic Garlic 1  garlic.9 0  11 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_silmarillion_reward Silmarillion Silmarillion 1  JIKBookClosed 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2703,25 +2703,25 @@ itemsfile version 2
  itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 4000 251658402 4.5 100 0 18 0 3 340 95 0 55 0 0 0
 0
 
- itm_beorn_axe_reward Bear_Club Bear_Club 1  beorning_club 0  279177461762 9223388532775583758 2000 156672 4.5 100 0 0 0 12 32768 93 0 67 0 0 544
+ itm_beorn_axe_reward Bear_Club Bear_Club 1  beorning_club 0  279177465858 9223388532775583758 2000 156672 4.5 100 0 0 0 12 32768 93 0 67 0 0 544
 0
 
- itm_moria_arrow_reward Moria_Poisoned_Arrows Moria_Poisoned_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  5 1610612736 700 4398046520456 3 100 0 0 0 0 0 0 0 95 40 11 0
+ itm_moria_arrow_reward Moria_Poisoned_Arrows Moria_Poisoned_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  4101 1610612736 700 4398046520456 3 100 0 0 0 0 0 0 0 95 40 11 0
 0
 
  itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small_new 0  4108 0 3000 0 4 100 50 0 0 21 0 0 0 0 0 0 0
 0
 
- itm_black_arrows_reward Black_Arrows Black_Arrows 6  khazad_orc_arrow_2 0  khazad_orc_arrow_2.lod2 2305843009213693952  khazad_orc_arrow_2_quiver 3458764513820540928  rohan_arrow2_black 131072  rohan_arrow2_black_flying 2305843009213825024  rohan_quiver2_black 3458764513820672000  141750697989 1610612736 2000 4398046520456 3 100 0 0 0 0 0 0 0 95 25 3 0
+ itm_black_arrows_reward Black_Arrows Black_Arrows 6  khazad_orc_arrow_2 0  khazad_orc_arrow_2.lod2 2305843009213693952  khazad_orc_arrow_2_quiver 3458764513820540928  rohan_arrow2_black 131072  rohan_arrow2_black_flying 2305843009213825024  rohan_quiver2_black 3458764513820672000  141750702085 1610612736 2000 4398046520456 3 100 0 0 0 0 0 0 0 95 25 3 0
 0
 
  itm_leather_boots_reward Hunter_Boots Hunter_Boots 1  got_stark_hanter_boots 0  4110 0 200 123731968 1 100 0 0 22 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armour 0  denethor_robe 2048  dm_nazgulrobe 512  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16777229 0 4000 704643072 35 100 0 43 15 15 0 0 0 0 0 0 0
+ itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armour 0  denethor_robe 2048  dm_nazgulrobe 512  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16781325 0 4000 704643072 35 100 0 43 15 15 0 0 0 0 0 0 0
 0
 
- itm_wilderness_cowl Hunter_Cowl Hunter_Cowl 1  got_stark_hood 0  1073741836 0 1000 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
+ itm_wilderness_cowl Hunter_Cowl Hunter_Cowl 1  got_stark_hood 0  1073745932 0 1000 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_prisoner_coll_chain Prisoner_Chains Prisoner_Chains 1  prisoner_coll_chain 0  16777228 0 10 0 10 100 2 0 0 0 0 0 0 0 0 0 0
@@ -2730,7 +2730,7 @@ itemsfile version 2
  itm_witchking_helmet Sorcerer's_Mask Sorcerer's_Mask 3  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  4108 0 3000 0 2.5 100 35 0 0 18 0 0 0 0 0 0 0
 0
 
- itm_lorien_royal_armor Lorien_Royal_Armor Lorien_Royal_Armor 1  lorien_royal 0  16777229 0 5000 704643072 26 100 0 45 17 15 0 0 0 0 0 0 0
+ itm_lorien_royal_armor Lorien_Royal_Armor Lorien_Royal_Armor 1  lorien_royal 0  16781325 0 5000 704643072 26 100 0 45 17 15 0 0 0 0 0 0 0
 0
 
  itm_feet_chains Feet_Chains Feet_Chains 1  chains_full 0  3854 0 200 0 10 100 0 0 0 0 0 0 0 0 0 0 0

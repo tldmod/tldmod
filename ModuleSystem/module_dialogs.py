@@ -5127,11 +5127,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                   (eq, ":item", "itm_lembas"),
                   (str_store_item_name, s31, ":item"),
                   (str_store_string, s20, "@{s31} (Consumable. Can be rebought)"),
-                (else_try),
-                  (this_or_next|eq, ":item", "itm_warg_reward"),
-                  (eq, ":item", "itm_gondor_hunter"),
+                    ] + (is_a_wb_dialog and [
+                  (else_try),
+                  (neg|item_has_property, ":item", itp_unique),
                   (str_store_item_name, s31, ":item"),
                   (str_store_string, s20, "@{s31} (Can be rebought)"),
+                    ] or []) + [ 
                 (else_try),
                   (str_store_item_name, s20, ":item"),
                 (try_end),
@@ -5199,8 +5200,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (try_begin),
         (this_or_next|eq, ":item", "itm_lembas"),
         (this_or_next|eq, ":item", "itm_orc_brew"),
-        (this_or_next|eq, ":item", "itm_warg_reward"),
-        (eq, ":item", "itm_gondor_hunter"),
+         ] + (is_a_wb_dialog and [
+         (neg|item_has_property, ":item", itp_unique),
+         ] or []) + [ 
         (item_set_slot, ":item", slot_item_given_as_reward, 0), # can't give more then one, except for those listed above - Kham
       (else_try),
         (item_set_slot, ":item", slot_item_given_as_reward, 1),
