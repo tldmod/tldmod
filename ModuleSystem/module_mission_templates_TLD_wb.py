@@ -1905,12 +1905,22 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
 		(agent_set_slot, ":agent", slot_agent_troll_swing_move, ":spawn_time"), #this slot is overwritten once mission time > spawn time +30 secs and if the troll qualifies for pushback
 	(try_end),
 		
-		
-
+	(try_begin), #player and companions
+        (this_or_next|eq, ":troop_id", "trp_player"),
+        (this_or_next|is_between, ":troop_id", "trp_npc1", heroes_begin),
+        (is_between, ":troop_id", "trp_npc18", "trp_werewolf"),
+        (store_skill_level, ":ironflesh",  skl_ironflesh, ":troop_id",),
+        (val_mul, ":ironflesh", ":ironflesh"),
+        (store_agent_hit_points, ":health", ":agent"),
+        (val_mul, ":ironflesh", ":health"),
+        (val_div, ":ironflesh", 200),
+        (agent_set_slot, ":agent", slot_agent_hp_shield, ":ironflesh"),
+    (try_end),
+    
     #Debug
-    #(assign, reg2, ":shield"),
-    #(str_store_troop_name, s33, ":troop_id"),
-    #(display_message, "@{s33}: {reg2} set hp shield."),   
+    # (assign, reg2, ":ironflesh"),
+    # (str_store_troop_name, s33, ":troop_id"),
+    # (display_message, "@{s33}: {reg2} set hp shield."),	 
 
   ])
 
@@ -1937,6 +1947,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (store_trigger_param_3, ":damage"),
     
     (assign, ":weapon", reg0),
+    (assign, ":deal_damage", 0),
     (gt, ":weapon", 0),
 
     (str_store_item_name, s2, ":weapon"),
@@ -1954,10 +1965,12 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
         (neg|is_between, ":troop_id", "trp_moria_troll", "trp_multiplayer_profile_troop_male"),
         (try_begin),
             (ge, ":damage", 30),
+            (assign, ":deal_damage", 1),
             (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
           (else_try),
             (lt, ":current_hp_shield", 100),
             (ge, ":damage", 15),
+            (assign, ":deal_damage", 3),
             (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
          (try_end),
      (try_end),
@@ -2046,11 +2059,11 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       (assign, reg60, ":damage"),
       (display_message, "@Delivered {reg60} damage."),
 	  (set_show_messages, 0),
-      (set_trigger_result, 0),
+      (set_trigger_result, ":deal_damage"),
 
     (else_try),
 		#(eq, ":dealer", ":player"),
-      (set_trigger_result, 0),
+      (set_trigger_result, ":deal_damage"),
     (try_end),
 	
 	(set_show_messages, 1),

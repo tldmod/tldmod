@@ -2085,10 +2085,14 @@ scripts = [
     (troop_set_slot, "trp_i6_isen_uruk_berserker", slot_troop_hp_shield, 30),
     (troop_set_slot, "trp_i4_gunda_orc_berserker", slot_troop_hp_shield, 20),
     (troop_set_slot, "trp_i5_khand_pit_master", slot_troop_hp_shield, 30),
-    (troop_set_slot, "trp_npc9", slot_troop_hp_shield, 30),
-    (troop_set_slot, "trp_npc5", slot_troop_hp_shield, 50),
+    (troop_set_slot, "trp_player", slot_troop_hp_shield, 1),
     
-	
+	(try_for_range, ":NPC_hp_shield", "trp_npc1", heroes_begin),
+		(troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
+	(try_end),	
+    (try_for_range, ":NPC_hp_shield", "trp_npc18", "trp_werewolf"),
+		(troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
+	(try_end),	
 
 	#Init Health Regeneration on Kill
 
@@ -26697,6 +26701,15 @@ command_cursor_scripts = [
 		(store_skill_level, ":ironflesh",  skl_ironflesh, ":troop_id",),
 		(store_mul, reg0, ":ironflesh", 40), # tweakable. Slot is updated via savegame compat script.
 		(troop_set_slot, ":troop_id", slot_troop_hp_shield, reg0),
+        
+        (troop_set_slot, "trp_player", slot_troop_hp_shield, 1),
+        
+        (try_for_range, ":NPC_hp_shield", "trp_npc1", heroes_begin),
+            (troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
+        (try_end),	
+        (try_for_range, ":NPC_hp_shield", "trp_npc18", "trp_werewolf"),
+            (troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
+        (try_end),
 	]),
 
 # script_cf_bear_form_selected
