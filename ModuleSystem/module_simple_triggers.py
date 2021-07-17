@@ -2759,8 +2759,8 @@ simple_triggers = [
         #this is a fun quick fix to defeat dying factions and avoid grinding
         (try_begin),
           #MV: disabled in 3.15, not needed anymore except for factions with unsiegable capitals like Isengard and Woodelves
-          (this_or_next|eq, ":faction", "fac_isengard"),
-          (             eq, ":faction", "fac_woodelf"),
+          (eq, ":faction", "fac_isengard"),
+          #(             eq, ":faction", "fac_woodelf"),
           (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_guardian),
           (faction_slot_eq, ":faction", slot_faction_guardian_party, 0),
           
@@ -2783,9 +2783,9 @@ simple_triggers = [
           (try_begin),
             (eq, ":faction", "fac_isengard"),
             (party_set_icon, ":guard_party", icon_wargrider_walk_x4),
-          (else_try),
-            (eq, ":faction", "fac_woodelf"),
-            (party_set_icon, ":guard_party", icon_mirkwood_elf_x3),
+          # (else_try),
+            # (eq, ":faction", "fac_woodelf"),
+            # (party_set_icon, ":guard_party", icon_mirkwood_elf_x3),
           (try_end),
           (party_set_slot, ":guard_party", slot_party_type, spt_guardian),
           (party_set_slot, ":guard_party", slot_party_victory_value, ws_guard_vp), # huge victory points for party kill

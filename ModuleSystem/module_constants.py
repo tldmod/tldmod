@@ -1675,7 +1675,7 @@ center_list = [
 	[icon_mfc_woodelf],[500],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 2, tld_siegable_normal),
 (p_town_imladris_camp, [scn_rivendell_camp_center, -1, -1,-1,-1,scn_rivendell_camp_siege,mesh_town_rivendell_camp],
 	[-1, trp_smith_imladris, trp_merchant_imladris, trp_elder_imladris, pt_imladris_recruits, trp_imladris_lord, trp_a1_riv_scout,trp_i3_riv_swordbearer, trp_a3_riv_archer,trp_a1_arnor_scout], 
-	[icon_mfc_imladris],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_low, 2, tld_siegable_capital),
+	[icon_mfc_imladris],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_med, 2, tld_siegable_capital),
 
 (p_town_woodsmen_village, [scn_woodsmen_village2_center, -1, -1,-1,-1,scn_woodsmen_village2_siege, mesh_ui_default_menu_window],
 	[-1, trp_smith_woodmen, trp_merchant_woodmen, trp_elder_wvillage, pt_woodman_recruits, trp_beorn_lord, trp_i1_woodmen_man, trp_a2_woodmen_tracker, trp_i2_woodmen_forester, trp_i4_woodmen_axemen], 
