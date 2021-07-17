@@ -1,4 +1,4 @@
-1652
+1654
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -554,6 +554,8 @@ qstr_Gundabad_capital_mov Gundabad_capital_moved_from_Gundabad_to_Goblin_Town!
 qstr_The_hosts_of_{s2}_re The_hosts_of_{s2}_retreat_back_to_their_homes!
 qstr____Ruins_of_{s1}___ ___Ruins_of_{s1}___
 qstr_{s1}_siege_attack! {s1}_siege_attack!
+qstr_{s1}_has_joined_the_ {s1}_has_joined_the_Hand
+qstr_{s1}_has_joined_the_E {s1}_has_joined_the_Eye
 qstr_ranks ranks
 qstr_shield_wall shield_wall
 qstr_wedge wedge
@@ -1104,9 +1106,9 @@ qstr_{reg66}_{s5}_troops_ {reg66}_{s5}_troops_killed._(Counter_refreshes_every_h
 qstr_{reg67}_{s7}_{s8}_tr {reg67}_{s7}_{s8}_troops_killed._(Counter_refreshes_every_hour)
 qstr_{reg68}_{s10}_killed {reg68}_{s10}_killed._(Counter_refreshes_every_hour)
 qstr_{s1}_is_scouted. {s1}_is_scouted.
+qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
 qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
-qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
 qstr_In_a_desperate_attem In_a_desperate_attempt_to_defend_against_his_enemies,_Sauron_sends_out_his_legions_of_Mordor!

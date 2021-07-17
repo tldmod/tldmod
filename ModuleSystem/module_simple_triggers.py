@@ -2466,7 +2466,7 @@ simple_triggers = [
           (try_end),
           
           # check if all good factions are defeated, to start the eye-hand war
-          (try_begin),
+          (try_begin), #check wott
             (faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
             (assign, ":good_factions_left", 0),
             (try_for_range, ":good_kingdom", kingdoms_begin, kingdoms_end),
@@ -2474,11 +2474,15 @@ simple_triggers = [
               (faction_slot_eq, ":good_kingdom", slot_faction_state, sfs_active),
               (val_add, ":good_factions_left", 1),
             (try_end),
+
+          (str_store_faction_name,s2,":cur_kingdom"),
+          (display_log_message,"@{s2} was defeated!"),
+
             
             # Start the war between Mordor and Isengard
             # Is this automatic defeat for good players?
             
-            (try_begin),
+            (try_begin), #start wott
               (eq, ":good_factions_left", 0),
               # uncomment this if you script that Mordor and Isengard can't be defeated before their allies
               #(faction_slot_eq, "fac_mordor", slot_faction_state, sfs_active),
@@ -2491,8 +2495,11 @@ simple_triggers = [
                 (eq, ":already_done", 0),
                 (call_script, "script_send_on_conversation_mission", tld_cc_nazgul_evil_war),
               (try_end),
+
+              (call_script, "script_wott_reassign_faction_sides"),
               
               # make sides hostile
+              (set_show_messages, 0),
               (try_for_range, ":mordor_ally", kingdoms_begin, kingdoms_end),
                 (faction_slot_eq, ":mordor_ally", slot_faction_side, faction_side_eye),
                 (try_for_range, ":isengard_ally", kingdoms_begin, kingdoms_end),
@@ -2518,13 +2525,13 @@ simple_triggers = [
               (try_end),
               
               (assign, "$tld_war_began", 2),
+              (set_show_messages, 1),
+
               (dialog_box,"@The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth!","@The War of the Two Towers has started!"),
               (play_sound,"snd_evil_horn"),
-            (try_end),
-          (try_end),
+            (try_end), #start wott
+          (try_end), #check wott
           
-          (str_store_faction_name,s2,":cur_kingdom"),
-          (display_log_message,"@{s2} was defeated!"),
           
           #reinforce next theaters - Kham
           (try_begin),

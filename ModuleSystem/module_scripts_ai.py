@@ -2584,67 +2584,24 @@ ai_scripts = [
 ("wott_check_active_factions_in_theater", [
   (store_script_param, ":active_theater", 1),
   (store_script_param, ":faction", 2),
-
   (faction_get_slot, ":side", ":faction", slot_faction_side),
 
-  (assign, ":theater_cleared", 0),
+  (assign, ":theater_cleared", 1),
 
-  (try_begin),
-    (eq, ":active_theater", theater_SE),
-      (try_begin),
-        (eq, ":side", faction_side_hand),
-        (faction_slot_eq, "fac_mordor", slot_faction_state, sfs_defeated), #If Southern Evil are all defeated
-        (faction_slot_eq, "fac_harad",  slot_faction_state, sfs_defeated),
-        (faction_slot_eq, "fac_umbar",  slot_faction_state, sfs_defeated),
-        (faction_slot_eq, "fac_khand",  slot_faction_state, sfs_defeated),
-        (assign, ":theater_cleared", 1),
-      (else_try),
-        (eq, ":side", faction_side_eye),
-        (assign, ":theater_cleared", 1),
-      (else_try),
-        (assign, ":theater_cleared", 0),
-      (try_end),
-  (else_try),
-    (eq, ":active_theater", theater_SW),
-      (try_begin),
-        (eq, ":side", faction_side_eye),
-        (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_defeated), #If SW Evil are all defeated
-        (faction_slot_eq, "fac_dunland",  slot_faction_state, sfs_defeated),
-        (assign, ":theater_cleared", 1), #Theater is Cleared.
-      (else_try),
-        (eq, ":side", faction_side_hand),
-        (assign, ":theater_cleared", 1),
-      (else_try),
-        (assign, ":theater_cleared", 0),
-      (try_end),
-  (else_try),
-    (eq, ":active_theater", theater_C),
-    (try_begin),
-      (eq, ":side", faction_side_eye),
-      (faction_slot_eq, "fac_moria",    slot_faction_state, sfs_defeated), #If Center Evil is defeated
-      (assign, ":theater_cleared", 1), #Theater is Cleared.
-    (else_try),
-      (eq, ":side", faction_side_hand),
-      (faction_slot_eq, "fac_guldur", slot_faction_state, sfs_defeated),
-      (assign, ":theater_cleared", 1), #theater is cleared
-    (else_try),
-      (assign, ":theater_cleared", 0),
+    (try_for_range, ":other_faction_no", kingdoms_begin, kingdoms_end),
+        (eq, ":theater_cleared", 1),
+        (faction_get_slot, ":other_faction_state", ":other_faction_no", slot_faction_state),
+        (neq, ":other_faction_state", sfs_defeated),
+        #(faction_slot_eq, ":other_faction_no",  slot_faction_state, sfs_defeated),
+        (faction_slot_eq, ":other_faction_no", slot_faction_home_theater, ":active_theater"),
+        (faction_get_slot, ":other_faction_side", ":other_faction_no", slot_faction_side),
+        (neq, ":other_faction_side", ":side"),
+        (assign, ":theater_cleared", 0), #break loop
     (try_end),
-  (else_try),
-    (try_begin),
-      (eq, ":side", faction_side_hand),
-      (faction_slot_eq, "fac_rhun", slot_faction_state, sfs_defeated),
-      (assign, ":theater_cleared", 1), #Theater is Cleared.
-    (else_try),
-      (eq, ":side", faction_side_eye),
-      (faction_slot_eq, "fac_gundabad", slot_faction_state, sfs_defeated),
-      (assign, ":theater_cleared", 1), #Theater is Cleared.
-    (else_try),
-      (assign, ":theater_cleared", 0),
-    (try_end),
-  (try_end),
+
 
   (assign, reg0, ":theater_cleared"),
+  
 
 ]),
 
@@ -3530,5 +3487,80 @@ ai_scripts+=[
 		(try_end),
 	(try_end),     # out comes pos1
 ]),
+
+#script_wott_reassign_faction_sides
+("wott_reassign_faction_sides",
+    [
+    (assign, ":factions_joined", 0),
+    (try_begin),
+        (this_or_next|is_between, "$players_kingdom", "fac_mordor"),
+        (this_or_next|eq, "$players_kingdom", "fac_guldur"),
+        (this_or_next|eq, "$players_kingdom", "fac_isengard"),
+        (eq, "$players_kingdom", "fac_dunland"),
+        (assign, ":factions_joined_max", 3), #make sure that player side is always outnumbered
+    (else_try),
+        (assign, ":factions_joined_max", 2), #make sure that player side is always outnumbered
+    (try_end),
+    
+    (assign, ":extra_score", 0),
+    (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        (neg|faction_slot_eq, ":faction_no", slot_faction_state, sfs_defeated),
+        
+        (neq, ":faction_no", "fac_mordor"),
+        (neq, ":faction_no", "fac_isengard"),
+        (neq, ":faction_no", "$players_kingdom"),
+            
+        (call_script, "script_get_faction_rank", ":faction_no"), #calculate faction score
+        (store_mul, ":rank", reg0, 10),
+        (faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
+        (party_get_slot, ":capital_relation", ":capital", slot_center_player_relation),
+        (faction_get_slot, ":faction_leader", ":faction_no", slot_faction_leader),
+        (troop_get_slot, ":leader_relation", ":faction_leader", slot_troop_player_relation),
+        (store_add, ":faction_score", ":rank", ":capital_relation"),
+        (val_add, ":faction_score", ":leader_relation"),
+        (try_begin),
+            (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+            (faction_get_slot, ":faction_side", ":faction_no", slot_faction_side),
+            (eq, ":player_side", ":faction_side"),
+            (val_add, ":faction_score", 100),
+            (val_max, ":faction_score", 150),
+        (try_end),
+        (val_add, ":faction_score", ":extra_score"),
+        
+        # (assign, reg78, ":faction_score"),
+        # (str_store_faction_name, s1 , ":faction_no"),
+        # (display_message, "@{s1}: faction score {reg78}"),
+        
+        (store_random_in_range, ":join_chance", 0, 500),
+        (try_begin),
+            (neq, ":faction_no", "fac_dunland"), #these factions don't switch sides
+            (neq, ":faction_no", "fac_guldur"),
+            (le, ":join_chance", ":faction_score"),
+            (le, ":factions_joined", ":factions_joined_max"), #maximum 5 factions join player's side
+            (faction_set_slot, ":faction_no", slot_faction_side, ":player_side"),
+            (val_add, ":factions_joined", 1),
+        (else_try),
+            (eq, ":player_side", faction_side_eye),
+            (neq, ":faction_no", "fac_guldur"),
+            (faction_set_slot, ":faction_no", slot_faction_side, faction_side_hand),
+            (val_add, ":extra_score", 20),
+        (else_try),
+            (eq, ":player_side", faction_side_hand),
+            (neq, ":faction_no", "fac_dunland"),
+            (faction_set_slot, ":faction_no", slot_faction_side, faction_side_eye),
+            (val_add, ":extra_score", 30),
+        (try_end),
+        
+        (faction_get_slot, ":faction_side", ":faction_no", slot_faction_side),
+        (str_store_faction_name, s1 , ":faction_no"),
+        (try_begin),
+            (eq, ":faction_side", faction_side_hand),
+            (display_message, "@{s1} has joined the Hand"),
+        (else_try),
+            (display_message, "@{s1} has joined the Eye"),
+        (try_end),
+    (try_end),
+               
+ ]),
 
 ]
