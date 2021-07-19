@@ -35,7 +35,7 @@ skl_reserved_13 Reserved_Skill_13 257 10 This_is_a_reserved_skill.
 skl_power_draw Power_Draw 0 10 lets_character_use_more_powerful_bows._Each_point_to_this_skill_(up_to_four_plus_power-draw_requirement_of_the_bow)_increases_bow_damage_by_14%%._(Personal_skill)
 skl_power_throw Power_Throw 0 10 Each_point_to_this_skill_increases_throwing_damage_by_10%%._(Personal_skill)
 skl_power_strike Power_Strike 0 10 Each_point_to_this_skill_increases_melee_damage_by_8%%._(Personal_skill)
-skl_ironflesh Ironflesh 0 10 Each_point_to_this_skill_increases_hit_points_by_+2._(Personal_skill)
+skl_ironflesh Ironflesh 0 10 Each_point_to_this_skill_increases_hit_points_by_+2,_and_lets_you_shrug_off_some_damage_without_being_wounded._(Personal_skill)
 skl_reserved_14 Reserved_Skill_14 256 10 This_is_a_reserved_skill.
 skl_reserved_15 Reserved_Skill_15 256 10 This_is_a_reserved_skill.
 skl_reserved_16 Reserved_Skill_16 256 10 This_is_a_reserved_skill.
