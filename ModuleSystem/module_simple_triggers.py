@@ -276,7 +276,12 @@ simple_triggers = [
         (store_random_in_range, ":chance", 0, 100), #InVain Reduce reinforcements for centers
         (try_begin),
           (gt, ":garrison_limit", ":garrison_size"),
-          (lt, ":chance", 20),
+            (try_begin),
+                (is_between, ":center_no", advcamps_begin, advcamps_end), #advance camps reinforce slightly faster, because they have low garrison
+                (lt, ":chance", 30),
+            (else_try),
+                (lt, ":chance", 20),
+            (try_end),
           (call_script, "script_cf_reinforce_party", ":center_no"),
 		  (str_store_party_name, s1, ":center_no"),
 		  #(display_message, "@{s1} reinforced"),
@@ -2908,7 +2913,7 @@ simple_triggers = [
         (neg|faction_slot_eq, ":faction", slot_faction_home_theater, ":active_theater"), #not in home theater
         
         (faction_get_slot, ":strength", ":faction", slot_faction_strength),
-        (gt, ":strength", fac_str_very_weak), #Kham- don't create adv camps when at 1000
+        (gt, ":strength", 1500), #Kham- don't create adv camps when lower than 1500
         
         (faction_get_slot, ":adv_camp", ":faction", slot_faction_advance_camp),
         (neg|party_is_active, ":adv_camp"), #not already established
@@ -2920,6 +2925,8 @@ simple_triggers = [
         (store_random_in_range, ":rand", 0, 20000),
 		(lt, ":rand", ":strength"), #faction strength /200 is spawn chance
         #(lt, ":rand", 30), # 30% chance every 6 hours
+        (val_sub, ":strength", 500),
+        (faction_set_slot, ":faction", slot_faction_strength, ":strength"), #simulate effort of establishing an advance camp (hopefully slows down steamrolling)
         
         # set up the advance camp
         (party_set_slot, ":adv_camp", slot_center_theater, ":active_theater"),
@@ -3025,8 +3032,9 @@ simple_triggers = [
           (faction_set_slot, ":adv_camp_faction", slot_faction_active_theater, ":home_theater"), #reset to home
         (try_end),
         
-        # fill the garrison if needed
-        (assign, ":garrison_strength", 30), #InVain: was 20, increased to counter lowered reinforcements for centers
+        # clear and refill the garrison (advance camps always start weak)
+        (party_clear, ":adv_camp"),
+        (assign, ":garrison_strength", 20), 
         (party_get_slot, ":garrison_limit", ":adv_camp", slot_center_garrison_limit),
         (try_for_range, ":unused", 0, ":garrison_strength"),
           (try_begin),
