@@ -298,24 +298,24 @@ parties = [
 
   # advanced camps placements (if not enough, spawn around camplace1)
   # south-from-beorn places
-  ("camplace_N1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.8,-170),[]),
-  ("camplace_N2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24,-176),[]),
-  ("camplace_N3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-18,-165),[]),
-  ("camplace_N4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.7,-166),[]),
-  ("camplace_N5" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( -8,-171),[]),
+  ("camplace_N1" ,"camplace_N1",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10,-170),[]),
+  ("camplace_N2" ,"camplace_N2",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24,-176),[]),
+  ("camplace_N3" ,"camplace_N3",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36,-163),[]),
+  ("camplace_N4" ,"camplace_N4",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14,-185),[]), #south of old forest road
+  ("camplace_N5" ,"camplace_N5",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 7,-188),[]), #old ford
   # east-from-fangorn places
-  ("camplace_M1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(5.2,-76.1),[]),
-  ("camplace_M2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.1,-95),[]),
-  ("camplace_M3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-1.7,-72),[]),
-  ("camplace_M4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.1,-60),[]),
-  ("camplace_M5" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(13.6,-93),[]),
+  ("camplace_M1" ,"camplace_M1",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(5.2,-76.1),[]),
+  ("camplace_M2" ,"camplace_M2",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.1,-95),[]),
+  ("camplace_M3" ,"camplace_M3",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7,-92),[]),
+  ("camplace_M4" ,"camplace_M4",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.1,-60),[]),
+  ("camplace_M5" ,"camplace_M5",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.6,-76),[]),
   # anorien places
-  ("camplace_S1" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.6,6.5),[]),
-  ("camplace_S2" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.56,0.75),[]),
-  ("camplace_S3" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.41,0.88),[]),
-  ("camplace_S4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.7,9.2),[]),
-  ("camplace_S5" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.84,3.32),[]),
-  ("ancient_ruins","Ancient_Ruins",icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
+  ("camplace_S1" ,"camplace_S1",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.6,6.5),[]), #Anorien
+  ("camplace_S2" ,"camplace_S2",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.56,0.75),[]), #Anorien
+  ("camplace_S3" ,"camplace_S3",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.41,0.88),[]), #Anorien
+  ("camplace_S4" ,"camplace_S4",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-28.7,-36.2),[]), #near Emyn Muil
+  ("camplace_S5" ,"camplace_S5",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.84,-36.32),[]), #near Emyn Muil
+  ("ancient_ruins","Ancient_Ruins",icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_label_small, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
 # mirkwood forest adornments 
   ("shrubbery1" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40,-175),[],185),
   ("shrubbery2" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-51.5,-132.5),[],185),

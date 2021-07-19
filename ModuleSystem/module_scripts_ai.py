@@ -2794,6 +2794,15 @@ ai_scripts = [
               (try_end),
               # CC: Remove volunteers from the adv. camp.
               (call_script,"script_delete_volunteers_party",":adv_camp"),
+              (try_begin),  # free up campable place
+                (party_get_slot, ":camp_pointer", ":adv_camp", slot_camp_place_occupied),
+                (gt, ":camp_pointer", 0),
+                (party_get_slot, ":occupied", ":camp_pointer", slot_camp_place_occupied),
+                (val_sub, ":occupied", 1),
+                (val_max, ":occupied", 0),
+                (party_set_slot, ":camp_pointer", slot_camp_place_occupied, ":occupied"),
+                (party_set_slot, ":adv_camp", slot_camp_place_occupied, 0),
+              (try_end),
               (disable_party, ":adv_camp"),
             (try_end),
 			    #Remove and hide player reserves
@@ -3084,10 +3093,14 @@ ai_scripts = [
 		(faction_set_slot, ":center_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
 		(faction_get_slot, ":theater", ":center_faction", slot_faction_home_theater),
 		(party_set_slot, ":center", slot_center_theater, ":theater"), #reset advance camp theater, just in case
-		(try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
-			(store_distance_to_party_from_party,":dist", ":center", ":camp_pointer"),
-			(le, ":dist",1),
-			(party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
+        (try_begin),  # free up campable place
+            (party_get_slot, ":camp_pointer", ":center", slot_camp_place_occupied),
+            (gt, ":camp_pointer", 0),
+            (party_get_slot, ":occupied", ":camp_pointer", slot_camp_place_occupied),
+            (val_sub, ":occupied", 1),
+            (val_max, ":occupied", 0),
+            (party_set_slot, ":camp_pointer", slot_camp_place_occupied, ":occupied"),
+            (party_set_slot, ":center", slot_camp_place_occupied, 0),
 		(try_end),
 		(disable_party, ":center"),
     (faction_get_slot, ":home_of_destroyed_adv_camp", ":center_faction", slot_faction_home_theater),
@@ -3428,38 +3441,107 @@ ai_scripts+=[
    [(store_script_param, ":faction", 1),
     (faction_get_slot, ":active_theater", ":faction", slot_faction_active_theater),
     (faction_get_slot, ":home_theater", ":faction", slot_faction_home_theater),
+    (faction_get_slot, ":advance_camp", ":faction", slot_faction_advance_camp),
     (assign, ":camp", "p_camplace_M1"), # some default
 	(assign, ":campend", "p_camplace_S1"),
+    (assign, ":camp_to_use", 0),
     (try_begin),
+        (eq, ":active_theater", theater_N),(this_or_next|eq, ":faction", fac_moria), (eq, ":faction", fac_imladris),(assign, ":camp_to_use", "p_old_ford"), #old ford
+    (else_try),
+        (eq, ":active_theater", theater_N),(eq, ":faction", fac_khand), (assign, ":camp_to_use", "p_town_rhun_south_camp"),
+    (else_try),
+        (eq, ":active_theater", theater_N),(eq, ":faction", fac_guldur), (assign, ":camp_to_use", "p_town_woodsmen_village"),
+    (else_try),
         (eq, ":active_theater", theater_N), (assign, ":camp", "p_camplace_N1"),(assign, ":campend", "p_camplace_M1"),
     (else_try),
-        (eq, ":active_theater", theater_SE), (assign, ":camp", "p_camplace_S1"),(assign, ":campend", "p_ancient_ruins"),
+        (eq, ":active_theater", theater_SE),(eq, ":home_theater", theater_N), (assign, ":camp", "p_camplace_S4"),(assign, ":campend", "p_ancient_ruins"),
+    (else_try),
+        (eq, ":active_theater", theater_SE),(eq, ":faction", fac_dunland), (assign, ":camp_to_use", "p_town_pinnath_gelin"),
+    (else_try),
+        (eq, ":active_theater", theater_SE),(eq, ":faction", fac_imladris), (assign, ":camp_to_use", "p_town_erech"),
+    (else_try),
+        (eq, ":active_theater", theater_SE), (assign, ":camp", "p_camplace_S1"),(assign, ":campend", "p_camplace_S4"),
+    (else_try),
+        (eq, ":active_theater", theater_C),(this_or_next|eq, ":faction", fac_dwarf), (eq, ":faction", fac_dale),(assign, ":camp_to_use", "p_camplace_N4"), #south of forest road
+    (else_try),
+        (eq, ":active_theater", theater_C),(eq, ":faction", fac_mordor),(assign, ":camp_to_use", "p_ancient_ruins"),
+    (else_try),
+        (eq, ":active_theater", theater_C),(this_or_next|eq, ":faction", fac_khand),(eq, ":faction", fac_dunland),(assign, ":camp_to_use", "p_ford_brown_lands"),
 	(else_try),
         (eq, ":active_theater", theater_C),(eq, ":home_theater", theater_N),(assign, ":camp", "p_camplace_N1"),(assign, ":campend", "p_camplace_M1"),
 	(else_try),
         (eq, ":active_theater", theater_C),(neq, ":home_theater", theater_N),(assign, ":camp", "p_camplace_M1"),(assign, ":campend", "p_camplace_S1"),
     (else_try),
-        (eq, ":active_theater", theater_SW),(eq, ":home_theater", theater_SE),(assign, ":camp", "p_camplace_S1"),(assign, ":campend", "p_ancient_ruins"),
+        (eq, ":active_theater", theater_SW),(eq, ":faction", fac_lorien), (assign, ":camp_to_use", "p_legend_amonhen"),
+    (else_try),
+         (eq, ":active_theater", theater_SW),(this_or_next|eq, ":faction", fac_mordor), (eq, ":faction", fac_khand),(assign, ":camp", "p_camplace_S4"),(assign, ":campend", "p_ancient_ruins"),
+    (else_try),
+        (eq, ":active_theater", theater_SW),(eq, ":home_theater", theater_SE),(assign, ":camp", "p_camplace_S1"),(assign, ":campend", "p_camplace_S5"),
     (else_try),
          (eq, ":active_theater", theater_SW),(neq, ":home_theater", theater_SE),(assign, ":camp", "p_camplace_M1"),(assign, ":campend", "p_camplace_S1"),
     (try_end),
      
 	(assign, ":continue", 1),
+    (try_begin), #hardcoded camp positions for some factions
+        (gt, ":camp_to_use", 0),
+        (party_get_slot, ":occupied", ":camp_to_use", slot_camp_place_occupied),
+        (val_add, ":occupied", 1),
+		(party_set_slot,":camp_to_use", slot_camp_place_occupied, ":occupied"),
+        (party_set_slot,":advance_camp", slot_camp_place_occupied, ":camp_to_use"), #InVain: Use the same slot to store the camp position (so we can clear it up later)
+        (party_get_position, pos2, ":camp_to_use"),
+        (map_get_land_position_around_position, pos1, pos2, 6),
+        (assign, ":continue", 0),
+    (try_end),
+    
 	(try_for_range, ":cur_center", ":camp", ":campend"), # look for available predefined places
 		(eq, ":continue", 1), 
 		(party_slot_eq, ":cur_center", slot_camp_place_occupied, 0),
 		(party_set_slot,":cur_center", slot_camp_place_occupied, 1),
-		(party_get_position, pos1, ":cur_center"),
+        (party_set_slot,":advance_camp", slot_camp_place_occupied, ":cur_center"), #InVain: Use the camp's slot to store the camp position (so we can clear it later)
+
+        
+            #debug
+            # (str_store_party_name, s1, ":cur_center"),
+            # (str_store_faction_name, s2, ":faction"),
+            # (display_message, "@{s2} established an advance camp near {s1}"),
+            
+		(party_get_position, pos2, ":cur_center"),
+        (map_get_land_position_around_position, pos1, pos2, 6),
+		(assign, ":continue", 0),
+	(try_end),
+    
+    (try_for_range, ":cur_center", ":camp", ":campend"), #InVain: Second chance: Allow two camps per space if all slots are filled
+		(eq, ":continue", 1), 
+        (party_get_slot, ":occupied", ":cur_center", slot_camp_place_occupied),
+        (lt, ":occupied", 2),
+        (val_add, ":occupied", 1),
+		(party_set_slot,":cur_center", slot_camp_place_occupied, ":occupied", 2),
+        (party_set_slot,":advance_camp", slot_camp_place_occupied, ":cur_center"), #InVain: Use the camp's slot to store the camp position (so we can clear it later)
+		(party_get_position, pos2, ":cur_center"),
+        (map_get_land_position_around_position, pos1, pos2, 6),
+        
+            #debug
+            # (str_store_party_name, s1, ":cur_center"),
+            # (str_store_faction_name, s2, ":faction"),
+            # (display_message, "@{s2} established an advance camp near {s1}"),
+            
 		(assign, ":continue", 0),
 	(try_end),
 	
 	(party_get_position, pos2, ":camp"),
     (try_begin),
 		(eq, ":continue", 1), # all predefined places occupied, spawn around camp begin
+            
+            #debug
+            # (str_store_party_name, s1, ":camp"),
+            # (str_store_faction_name, s2, ":faction"),
+            # (display_message, "@{s2} tries to camp near {s1}"),
+        
 		(assign, ":radius", 5),
 		(try_for_range, ":tries", 0, 1000),
 		   (eq, ":continue", 1),
-		   (map_get_random_position_around_position, pos1, pos2, ":radius"), # random circle with 5+ clicks radius
+		   (map_get_land_position_around_position, pos1, pos2, ":radius"), # random circle with 5+ clicks radius
+           (party_set_slot,":advance_camp", slot_camp_place_occupied, 0),
 		   (assign, ":too_close", 0),
 		   (try_for_range, ":cur_center", centers_begin, centers_end),		   # check if too close to another center
 			 (eq, ":too_close", 0),
