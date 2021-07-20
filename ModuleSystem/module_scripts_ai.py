@@ -2324,7 +2324,28 @@ ai_scripts = [
 		(neq,  ":troop_faction_no", "fac_gondor"), # not gondors
 		(val_add, ":cur_banner", 1), # marshall get royal flags (mtarini)
       (try_end),
-	  (store_random_in_range,":tmp",9,17),
+      (try_begin), #subfaction bodyguards for Gondor fiefdoms
+        (eq, ":troop_faction_no", fac_gondor),
+        (neg|party_slot_eq, ":center_no", slot_party_subfaction, 0),  
+        (party_get_slot, ":guard", ":center_no", slot_town_castle_guard_troop),
+      (try_end),
+      (try_begin), #personalized bodyguards
+        (eq, ":troop_no", "trp_knight_1_7"), #Faramir
+        (store_random_in_range, ":bodyguard", 0, 2),
+        (try_begin),
+            (eq, ":bodyguard", 0),
+            (assign, ":guard", "trp_a6_ithilien_master_ranger"),
+        (else_try),
+            (assign, ":guard", "trp_c6_gon_tower_knight"),
+        (try_end),
+      (else_try),
+        (eq, ":troop_no", "trp_gondor_lord"), #Denethor
+        (assign, ":guard", "trp_steward_guard"),
+      (try_end),
+            
+      (store_skill_level, ":tmp", skl_leadership, ":troop_no"),
+      (val_mul, ":tmp", 2),
+      (val_add, ":tmp", 5), #up to 25
 	  (party_add_members,"$pout_party",":guard",":tmp"),
     (try_begin),
       (eq, ":troop_no", "trp_dwarf_lord"),

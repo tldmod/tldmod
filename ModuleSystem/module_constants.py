@@ -1387,10 +1387,10 @@ faction_init = [
 subfaction_data= [      
  (subfac_pelargir     ,p_town_pelargir     ,"Pelargir"  ,[trp_i1_pel_watchman,		trp_i2_pel_infantry,		trp_i3_pel_vet_infantry],		[pt_pelargir_reinf_a  ,pt_pelargir_reinf_b  ,pt_pelargir_reinf_c  ],[trp_i6_pel_leader, trp_a6_pel_marine_leader,]),
  (subfac_dol_amroth   ,p_town_dol_amroth   ,"Amroth"    ,[trp_c2_amroth_squire,		trp_c3_amroth_vet_squire,	trp_c6_amroth_swan_knight],		[pt_dol_amroth_reinf_a,pt_dol_amroth_reinf_b,pt_dol_amroth_reinf_c],[trp_c6_amroth_leader]),
- (subfac_ethring      ,p_town_calembel     ,"Lamedon"   ,[trp_i1_lam_clansman,		trp_i2_lam_footman,			trp_i3_lam_veteran],			[pt_lamedon_reinf_a   ,pt_lamedon_reinf_b   ,pt_lamedon_reinf_c   ],[trp_c6_lam_leader]),
+ (subfac_ethring      ,p_town_calembel     ,"Lamedon"   ,[trp_i1_lam_clansman,		trp_i2_lam_footman,			trp_c5_lam_knight],			    [pt_lamedon_reinf_a   ,pt_lamedon_reinf_b   ,pt_lamedon_reinf_c   ],[trp_c6_lam_leader]),
  (subfac_lossarnach   ,p_town_lossarnach   ,"Lossarnach",[trp_i1_loss_woodsman,		trp_i2_loss_axeman,			trp_i5_loss_axemaster],			[pt_lossarnach_reinf_a,pt_lossarnach_reinf_b,pt_lossarnach_reinf_c],[trp_i6_loss_leader]),
  (subfac_pinnath_gelin,p_town_pinnath_gelin,"Pinnath"   ,[trp_i1_pinnath_plainsman,	trp_c2_pinnath_rider,		trp_c3_pinnath_knight],			[pt_pinnath_reinf_a   ,pt_pinnath_reinf_b   ,pt_pinnath_reinf_c   ],[trp_c6_pinnath_leader]),
- (subfac_blackroot    ,p_town_erech        ,"Blackroot" ,[trp_a1_blackroot_hunter,	trp_i2_blackroot_footman,	trp_a3_blackroot_archer],		[pt_blackroot_reinf_a ,pt_blackroot_reinf_b ,pt_blackroot_reinf_c ],[trp_a5_blackroot_shadow_hunter]),
+ (subfac_blackroot    ,p_town_erech        ,"Blackroot" ,[trp_a1_blackroot_hunter,	trp_i2_blackroot_footman,	trp_a5_blackroot_shadow_hunter],[pt_blackroot_reinf_a ,pt_blackroot_reinf_b ,pt_blackroot_reinf_c ],[trp_a5_blackroot_shadow_hunter]),
  (subfac_rangers      ,p_town_henneth_annun,"Ithilien"  ,[trp_a4_ithilien_ranger,	trp_a5_ithilien_vet_ranger,	trp_a6_ithilien_master_ranger],	[pt_ithilien_reinf_a  ,pt_ithilien_reinf_b  ,pt_ithilien_reinf_c  ],[trp_a6_ithilien_leader]),
 ]
 
