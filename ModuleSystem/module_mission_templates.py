@@ -58,12 +58,13 @@ fade =  ((is_a_wb_mt==1) and [
 
 bright_nights= ((is_a_wb_mt==1) and [ 
   
-  (ti_before_mission_start, 0, 2,
+  (ti_after_mission_start, 0, 2,
     [ (eq, "$bright_nights", 1),
       (is_currently_night),
       (neg|party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), # Make it dark during Saruman Storm
       ],[
-      (set_startup_ambient_light,15,24,37), #27,46,67 
+      (set_fixed_point_multiplier, 1000),
+      (set_startup_ambient_light,44,92,134), #27,46,67 
       #(display_message, "@Bright Nights active")
     ])
   
