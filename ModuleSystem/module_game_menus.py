@@ -3937,7 +3937,7 @@ game_menus = [
         [
         # Orc brew will be active until:
         (store_current_hours, ":now_hours"),
-        (store_add, ":then_hours", ":now_hours", 7*24),
+        (store_add, ":then_hours", ":now_hours", 6),
         (item_set_slot, "itm_orc_brew", slot_item_is_active, 1),
         (item_set_slot, "itm_orc_brew", slot_item_deactivation_hour, ":then_hours"),
 
@@ -3945,8 +3945,50 @@ game_menus = [
         (jump_to_menu, "mnu_camp"),
         ]
     ),
+    
+    ("camp_drink_miruvor",
+        [
+            (player_has_item, "itm_miruvor_reward"),
+            (item_slot_eq, "itm_miruvor_reward", slot_item_is_active, 0),
+        ],
+        "Pass around the Miruvor!",
+        [
+        # Miruvor will be active until:
+        (store_current_hours, ":now_hours"),
+        (store_add, ":then_hours", ":now_hours", 12),
+        (item_set_slot, "itm_miruvor_reward", slot_item_is_active, 1),
+        (item_set_slot, "itm_miruvor_reward", slot_item_deactivation_hour, ":then_hours"),
+        (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+        (try_for_range, ":stack_no", 0, ":num_stacks"),
+            (party_stack_get_troop_id, ":troop_no", "p_main_party", ":stack_no"),
+            (troop_is_hero, ":troop_no"),
+            (store_troop_health, ":health", ":troop_no", 0),
+            (val_add, ":health", 20),
+            (val_min, ":health", 100),
+            (troop_set_health, ":troop_no", ":health"),
+        (try_end),
+        (display_log_message, "@You and your companions drink a sip of Miruvor. You feel refreshed and strengthened."),
+        (jump_to_menu, "mnu_camp"),
+        ]
+    ),
 
+    ("camp_use_athelas",
+        [
+            (player_has_item, "itm_athelas_reward"),
+            (item_slot_eq, "itm_athelas_reward", slot_item_is_active, 0),
+        ],
+        "Use Athelas for wound treatment.",
+        [
+        # Athelas will be active until:
+        (store_current_hours, ":now_hours"),
+        (store_add, ":then_hours", ":now_hours", 6),
+        (item_set_slot, "itm_athelas_reward", slot_item_is_active, 1),
+        (item_set_slot, "itm_athelas_reward", slot_item_deactivation_hour, ":then_hours"),
 
+        (display_log_message, "@You give a few leaves of Athelas to your healers."),
+        (jump_to_menu, "mnu_camp"),
+        ]
+    ),
     # ("camp_recruit_prisoners",
        # [(troops_can_join, 1),
         # (store_current_hours, ":cur_time"),

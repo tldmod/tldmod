@@ -1,4 +1,4 @@
-1654
+1666
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -134,13 +134,17 @@ qstr_+20_to_Party_Morale +20_to_Party_Morale
 qstr_+1_to_Riding_Skill +1_to_Riding_Skill
 qstr_during_battles during_battles
 qstr_+1_to_Pathfinding +1_to_Pathfinding
-qstr_+1_to_Athletics +1_to_Athletics
-qstr_+1_to_Wound_Treatmen +1_to_Wound_Treatment
+qstr_+2_to_Wound_Treatmen +2_to_Wound_Treatment_(Party)
+qstr_+2_to_Surgery__Party +2_to_Surgery_(Party)
+qstr_+2_to_Pathfinding__P +2_to_Pathfinding_(Party)
 qstr_Use_from_Camp_Menu Use_from_Camp_Menu
 qstr_Use_from Use_from
 qstr_Action_Menu Action_Menu
-qstr_+1_to_First_Aid +1_to_First_Aid
+qstr_Bonus_to_Wound_Treat Bonus_to_Wound_Treatment_(Party)
+qstr_Bonus_to_Surgery__Pa Bonus_to_Surgery_(Party)
+qstr_Bonus_to_First_Aid__ Bonus_to_First_Aid_(Party)
 qstr_+1_to_Weapon_Mastery +1_to_Weapon_Mastery
+qstr_+1_to_Wound_Treatmen +1_to_Wound_Treatment
 qstr_+1_to_Tactics +1_to_Tactics
 qstr_+1_to_Power_Strike +1_to_Power_Strike
 qstr_+1_to_Strength +1_to_Strength
@@ -148,6 +152,7 @@ qstr_+1_to_Agility +1_to_Agility
 qstr_+1_to_Leadership +1_to_Leadership
 qstr_+1_to_Wildcraft +1_to_Wildcraft
 qstr_+1_to_Tracking +1_to_Tracking
+qstr_+1_to_Athletics +1_to_Athletics
 qstr_when_equipped when_equipped
 qstr_+1_to_Power_Draw +1_to_Power_Draw
 qstr_The_record_of_Balin_ The_record_of_Balin's_lost_expedition.
@@ -162,6 +167,7 @@ qstr_rally rally
 qstr_rallies rallies
 qstr_+{reg1}_{s3}_in_batt +{reg1}_{s3}_in_battle
 qstr_+1_to_Charisma +1_to_Charisma
+qstr_+1_to_First_Aid +1_to_First_Aid
 qstr_+1_to_Surgery +1_to_Surgery
 qstr_+1_to_Intelligence +1_to_Intelligence
 qstr_+2_to_Surgery +2_to_Surgery
@@ -175,6 +181,8 @@ qstr_+2_to_Tactics +2_to_Tactics
 qstr_+1_Intelligence +1_Intelligence
 qstr_+{reg1}_to_Spotting +{reg1}_to_Spotting
 qstr__Scales_with_Wildcra (Scales_with_Wildcraft)
+qstr_Strengthens_all_Hero Strengthens_all_Heroes
+qstr_+2_to_First_Aid__Par +2_to_First_Aid_(Party)
 qstr_+1_to_Power_Throw +1_to_Power_Throw
 qstr_+1_to_Spotting +1_to_Spotting
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
@@ -924,6 +932,8 @@ qstr_Tripled Tripled
 qstr_Quadrupled Quadrupled
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_You_used_the_Orc_Bre You_used_the_Orc_Brew.
+qstr_You_and_your_compani You_and_your_companions_drink_a_sip_of_Miruvor._You_feel_refreshed_and_strengthened.
+qstr_You_give_a_few_leave You_give_a_few_leaves_of_Athelas_to_your_healers.
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_^^^A_great_victory!^ ^^^A_great_victory!^^^So_this_is_what_all_the_myths_about_Fangorn_meant...
 qstr_^^^Defeated...^^^Sca ^^^Defeated...^^^Scattered_in_the_Fangorn_Forest..._Alone...
@@ -1090,6 +1100,8 @@ qstr_You_are_entering_{s1} You_are_entering_{s1}.
 qstr_The_war_expands_comm The_war_expands,_commanders_are_getting_bolder!_(siege_requirements_reduced)
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_The_effects_of_the_O The_effects_of_the_Orc_Brew_have_dissipated.
+qstr_The_effects_of_the_M The_effects_of_the_Miruvor_have_dissipated.
+qstr_Athelas_used_up. Athelas_used_up.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_DEBUG:_Player_Contro DEBUG:_Player_Control_Allies_RESET
 qstr_You_pay_for_accommod You_pay_for_accommodation.
