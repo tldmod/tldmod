@@ -687,8 +687,11 @@ common_battle_order_panel = (0, 0, 0, [],
 	      (game_key_clicked, gk_view_orders),
 	      (neq, "$g_presentation_battle_active", 1),
 	      #--
-
-	      (start_presentation, "prsnt_battle"),
+          (try_begin),
+            (eq, "$show_hide_labels", 1),
+            (assign, "$show_hide_labels", -1), #InVain: Use -1 to track if troop labels were toggled on before
+	      (try_end),
+          (start_presentation, "prsnt_battle"),
 	    (try_end),
 	]
 	 + (is_a_wb_mt==1 and 

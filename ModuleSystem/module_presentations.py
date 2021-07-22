@@ -1832,6 +1832,16 @@ presentations = [
           #swy-- hackfix to show sidelog messages again in wb-- i'm not going to spend more time in this jumblefuck, i'm scared.
           (set_show_messages, 1),
           (presentation_set_duration, 0),
+    
+    ] + (is_a_wb_cutscene==1 and [
+          (try_begin),
+            (gt, "$g_display_agent_labels", 0),
+            (eq, "$show_hide_labels", -1),
+            (assign, "$show_hide_labels", 1), #toggle on troop labels, if they were on before)
+            (start_presentation, "prsnt_display_agent_labels"),
+          (try_end),
+    ] or []) + [
+
         (try_end),
         ]),
 ]),
@@ -5446,7 +5456,7 @@ if wb_compile_switch==1:
       (try_begin),
         (this_or_next|eq, "$g_display_agent_labels", 0),
         (this_or_next|eq, "$tld_camera_on", 1),
-        (eq, "$show_hide_labels", 0),
+        (le, "$show_hide_labels", 0),
         (presentation_set_duration, 0),
       (else_try),
         (gt, ":current_time", "$g_presentation_agent_labels_update_time"),
