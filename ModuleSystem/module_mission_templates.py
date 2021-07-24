@@ -4362,10 +4362,11 @@ mission_templates = [ # not used in game
     tld_siege_battle_scripts+[
   (ti_before_mission_start, 0, 0, [],[
     (team_set_relation, 0, 2, 1),(team_set_relation, 0, 4, 1),(team_set_relation, 4, 2, 1), # defender teams
-    (team_set_relation, 1, 3, 1),(team_set_relation, 1, 5, 1),(team_set_relation, 5, 3, 1), # attacker chokepoint teams (for initial commads)
-    (team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # TLD gate aggravator team #InVain: Also defender player
-    (team_set_relation, 7, 1, 1),(team_set_relation, 7, 3, 1),(team_set_relation, 7, 5, 1), # Attacker player team
-	(team_set_relation, 7, 0, -1),(team_set_relation, 7, 2, -1),(team_set_relation, 7, 4, -1), # Attacker player team (seems to need manual settings)
+    (team_set_relation, 1, 3, 1),(team_set_relation, 1, 5, 1),(team_set_relation, 5, 3, 1), # attacker chokepoint teams (for initial commands)
+    (team_set_relation, 7, 0, 1),(team_set_relation, 7, 2, 1),(team_set_relation, 7, 4, 1), # TLD gate aggravator team
+
+    (team_set_relation, 6, 1, 0),(team_set_relation, 6, 3, 0),(team_set_relation, 6, 5, 0), # player team starts neutral until player side is assigned
+	(team_set_relation, 6, 0, 0),(team_set_relation, 6, 2, 0),(team_set_relation, 6, 4, 0), # 
     (assign, "$gate_aggravator_agent",-1), # can be reassigned by destructible gate scene prop presence
     (assign, "$gate_breached",0), #for scenes without gates, just to make sure it's 0
     (call_script, "script_change_banners_and_chest"),
@@ -4454,7 +4455,9 @@ mission_templates = [ # not used in game
             (agent_set_team, ":agent_no", ":team"), #might not be needed anymore since attacker teams now charge, keep for archers
             (neg|agent_is_defender,":player_agent"),
             (eq, ":party_no", "p_main_party"),
-            (agent_set_team, ":agent_no", 7), 
+            (team_set_relation, 6, 1, 1),(team_set_relation, 6, 3, 1),(team_set_relation, 6, 5, 1), # player team
+            (team_set_relation, 6, 0, -1),(team_set_relation, 6, 2, -1),(team_set_relation, 6, 4, -1),(team_set_relation, 6, 7, -1), # player team (seems to need manual settings)
+            (agent_set_team, ":agent_no", 6), 
         (else_try),
             (agent_is_defender,":agent_no"),
             (is_between, ":entry", 6, 9),
@@ -4465,6 +4468,8 @@ mission_templates = [ # not used in game
             (agent_is_defender,":player_agent"),
             (is_between, ":entry", 3, 6), #entry 40 (spawn around player)
             (eq, ":party_no", "p_main_party"),
+            (team_set_relation, 6, 1, -1),(team_set_relation, 6, 3, -1),(team_set_relation, 6, 5, -1), # player team
+            (team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # player team (seems to need manual settings)
             (agent_set_team, ":agent_no", 6),
         (try_end),
     (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),
@@ -4612,6 +4617,7 @@ mission_templates = [ # not used in game
 			(agent_is_alive, ":agent"),
 			(neg|agent_is_defender,":agent"),
 			(get_player_agent_no, ":player_agent"),
+            (neg|agent_is_defender,":player_agent"), #just in case...
 			(neq, ":agent", ":player_agent"),
 			(agent_get_entry_no, ":entry", 	":agent"), #12, 13, 14 spawn records, not actual entry number
 			(store_sub, ":team", ":entry", 12), #0, 1, 2
@@ -4620,7 +4626,7 @@ mission_templates = [ # not used in game
 			(agent_set_team, ":agent", ":team"), 
 			(agent_get_party_id, ":party_no", ":agent"),
 			(eq, ":party_no", "p_main_party"),
-			(agent_set_team, ":agent", 7), 
+			(agent_set_team, ":agent", 6), 
 		(try_end),
 	(try_end),
      ] or []) + [				  
@@ -4814,8 +4820,8 @@ mission_templates = [ # not used in game
      (else_try),(eq,":team",3),(val_add, reg3,1),
      (else_try),(eq,":team",4),(val_add, reg4,1),
      (else_try),(eq,":team",5),(val_add, reg5,1),
-	 (else_try),(eq,":team",6),(val_add, reg6,1),
-	 (else_try),(eq,":team",7),(val_add, reg7,1),
+	 (else_try),(eq,":team",7),(val_add, reg6,1),
+	 (else_try),(eq,":team",6),(val_add, reg7,1),
     (try_end),
   (try_end),
 						 
