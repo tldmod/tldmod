@@ -1580,7 +1580,7 @@ scene_props = [
 ("umbar_smallboatoar",0,"umbar_prop_smallboatoar","0", []),
 # Moria
 ] + (is_a_wb_sceneprop==1 and [
-("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(try_begin), (eq, "$bright_nights", 1), (set_fog_distance,60,0x01D261D),(set_rain, 0,100), (else_try), (set_fog_distance,60,0x030403),(set_rain, 0,100), (try_end)])]), #WB is brighter by default, so we make the fog darker
+("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(try_begin), (eq, "$bright_nights", 1), (set_fog_distance,60,0x01D261D),(set_rain, 0,100),(set_startup_sun_light, 0, 0, 0), (else_try), (set_fog_distance,60,0x030403),(set_rain, 0,100),(set_startup_sun_light, 0, 0, 0),(set_startup_ambient_light, 40, 60, 40), (try_end)])]), #WB is brighter by default, so we make the fog darker
     ] or [
 ("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,70,0x0B0F0B),(set_rain, 0,100)])]) #new fog, slightly greenish and minimally brighter
 ]) + [
@@ -2480,7 +2480,7 @@ scene_props = [
 ("distant_place_Helmsdeep",0,"prop_Helms_Deep","0", []),
 ] + (is_a_wb_sceneprop==1 and [
 ("distant_place_Morannon",0,"prop_Morannon", "0", [(ti_on_scene_prop_init,[
-  (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,1200,0x191919),(else_try),(is_currently_night),(set_fog_distance,1000,0x191919),(else_try),(set_fog_distance,1500,0x191919),(try_end)])]), 
+  (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,1200,0x191919),(else_try),(is_currently_night),(set_fog_distance,1000,0x191919),(else_try),(set_fog_distance,1500,0x191919),(set_startup_sun_light, 80, 50, 50),(try_end)])]), 
     ] or [
 ("distant_place_Morannon",0,"prop_Morannon", "0", [(ti_on_scene_prop_init,[
   (try_begin),(is_currently_night),(set_fog_distance,1000,0x333333),(else_try),(set_fog_distance,1500,0x333333),(try_end)])]),
