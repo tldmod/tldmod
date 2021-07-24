@@ -1580,19 +1580,10 @@ kham_check_formations = (0, 0, 0, [
   (display_message, "@Cannot Order to Form Rows when Troops are In Formation. Undo it first by pressing U.", color_bad_news)])
 
 
-tld_improved_horse_archer_ai =  (0.5, 0, 0, [
+tld_improved_horse_archer_ai =  (1, 0, 0, [ #Run it every 1 second instead of every half. Should be enough.
 
           (eq,"$field_ai_horse_archer",1),
           
-          (try_for_agents, ":agent_no"),
-            (agent_is_alive, ":agent_no"),
-            (agent_is_human, ":agent_no"),
-            (agent_is_non_player, ":agent_no"),
-            
-            (agent_get_troop_id, ":troop_id", ":agent_no"),
-            (store_skill_level, ":horse_archery_level", "skl_horse_archery", ":troop_id"),
-            (ge, ":horse_archery_level", 4),
-          (try_end),
   ],
 
   [       
@@ -1604,7 +1595,7 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
             
             (agent_get_troop_id, ":troop_id", ":agent_no"),
             (store_skill_level, ":horse_archery_level", "skl_horse_archery", ":troop_id"),
-            (ge, ":horse_archery_level", 4),
+            (ge, ":horse_archery_level", 2), 
 
             (neg|agent_slot_eq, ":agent_no", 1003, 1),
             (agent_get_horse, ":horse_no", ":agent_no"),
@@ -1655,7 +1646,12 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                 (position_get_y,":speed_y",pos91),
                 (assign, ":distance_closest", 100000),#1000m
                 (assign, ":enemies_closest", -1),
-                (try_for_agents, ":enemies"),
+                 #(try_for_agents, ":enemies"), #InVain: Get rid of this embedded full loop by checking cached or following enemies instead
+                (agent_ai_get_num_cached_enemies, ":num_cached", ":agent_no"),
+                (gt, ":num_cached", 0),
+                (try_for_range, ":cached_index", 0, 3),
+                    (agent_ai_get_cached_enemy, ":enemies", ":agent_no", ":cached_index"),    
+                    (agent_is_active, ":enemies"), #double check
                     (agent_is_alive, ":enemies"),
                     (agent_is_human, ":enemies"),
                     (agent_get_position, pos96, ":enemies"),
@@ -1698,7 +1694,8 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                   (agent_set_wielded_item, ":agent_no", ":melee_weapon"),
                 (try_end),
                 (assign, ":speed_limit", 1000),
-                (try_begin),
+                (try_begin), #InVain: This finetunes the archer's attack target and attack mode (also speed limit).
+                            # This also is the reason for the synchronised shots. Without, HAs shoot too unreliably.
                     (agent_get_wielded_item, ":weapon_hold", ":agent_no", 0),
                     (gt, ":weapon_hold", 0),
                     (item_get_type, ":weapon_type", ":weapon_hold"),
@@ -1710,23 +1707,26 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                     (position_has_line_of_sight_to_position, pos103, pos104),
                     (agent_set_look_target_agent, ":agent_no", ":enemies_closest"),
                     (try_begin),
-                      (assign, ":shoot_distance", 4000),
+                      (assign, ":shoot_distance", 4000), #InVain: Can be used for further scaling, also maybe for adjusting javelin cavalry
                       (agent_get_attack_action, ":attack_action", ":agent_no"),
                       (eq, ":attack_action", 1),
                       (try_begin),
                         (gt, ":distance_closest", 700),
                         (le, ":distance_closest", ":shoot_distance"),
-                        (store_div, ":speed_limit", ":speed_y",2000),#
+                        (store_mul, ":speed_limit", ":horse_archery_level", 4),
+                        (val_sub, ":speed_limit", 10), #InVain: We can use this for scaling: Force low-tier archers to slow down while shooting.
                         (val_max, ":speed_limit", 0),
                       (try_end),
                       (eq, ":weapon_type", itp_type_bow),
                       (try_begin),
                         (le, ":distance_true", ":shoot_distance"),
                         (agent_set_defend_action, ":agent_no", -2, 1),
-                        (agent_set_attack_action, ":agent_no", 3, 0),
+                        (store_random_in_range, ":chance", 0, 16),
+                        (le, ":chance", ":horse_archery_level"),
+                        (agent_set_attack_action, ":agent_no", 3, 0), #ready and release
                       (else_try),
                         (gt, ":distance_true", ":shoot_distance"),
-                        (agent_set_attack_action, ":agent_no", -2, 1),
+                        (agent_set_attack_action, ":agent_no", -2, 1), #cancel
                         (agent_set_defend_action, ":agent_no", 3, 1),
                       (try_end),
                     (else_try),
@@ -1734,11 +1734,13 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                       (le, ":distance_true", ":shoot_distance"),#
                       (agent_get_combat_state, ":combat_state", ":agent_no"),
                       (neq, ":combat_state", 8),
-                      (agent_set_attack_action, ":agent_no", 3, 1),
+                      (agent_set_attack_action, ":agent_no", 3, 1), #ready and hold
                     (try_end),
                 (try_end),
                 (agent_set_speed_limit, ":agent_no", ":speed_limit"),
-                (try_begin),
+                (try_begin), #InVain: This is the code for evading close enemies. Black magic.
+                  (store_random_in_range, ":chance", 0, 10),
+                  (le, ":chance", ":horse_archery_level"),  #scaling: Better horse archers check distance more often. Bad HAs may get caught easier
                   (agent_slot_eq, ":enemies_closest", slot_agent_is_running_away, 0),
                   (lt, ":distance_closest", 10000),
                   (try_begin),
