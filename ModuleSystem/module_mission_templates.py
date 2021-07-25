@@ -4364,7 +4364,7 @@ mission_templates = [ # not used in game
     (team_set_relation, 0, 2, 1),(team_set_relation, 0, 4, 1),(team_set_relation, 4, 2, 1), # defender teams
     (team_set_relation, 1, 3, 1),(team_set_relation, 1, 5, 1),(team_set_relation, 5, 3, 1), # attacker chokepoint teams (for initial commands)
     (team_set_relation, 7, 0, 1),(team_set_relation, 7, 2, 1),(team_set_relation, 7, 4, 1), # TLD gate aggravator team
-
+    (team_set_relation, 7, 1, -1),(team_set_relation, 7, 3, -1),(team_set_relation, 7, 5, -1),
     (team_set_relation, 6, 1, 0),(team_set_relation, 6, 3, 0),(team_set_relation, 6, 5, 0), # player team starts neutral until player side is assigned
 	(team_set_relation, 6, 0, 0),(team_set_relation, 6, 2, 0),(team_set_relation, 6, 4, 0), # 
     (assign, "$gate_aggravator_agent",-1), # can be reassigned by destructible gate scene prop presence

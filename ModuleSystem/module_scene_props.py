@@ -2519,13 +2519,13 @@ scene_props = [
     (spawn_agent,"trp_gate_aggravator"),
     (assign, "$gate_aggravator_agent", reg0),
     (agent_set_speed_limit, "$gate_aggravator_agent", 1),
-    (agent_set_team, "$gate_aggravator_agent", 6),
+    (agent_set_team, "$gate_aggravator_agent", 7),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, "$gate_aggravator_agent",1),
     ] or []) + [
-    (team_give_order, 6, grc_everyone, mordr_hold),
-    (team_give_order, 6, grc_everyone, mordr_stand_ground),
-    (team_set_order_position, 6, grc_everyone, pos1),
+    (team_give_order, 7, grc_everyone, mordr_hold),
+    (team_give_order, 7, grc_everyone, mordr_stand_ground),
+    (team_set_order_position, 7, grc_everyone, pos1),
   ]),
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":instance_no"),
