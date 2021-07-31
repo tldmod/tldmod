@@ -4557,7 +4557,7 @@ mission_templates = [ # not used in game
     (try_for_range,":team",0,3), #cycle through defender teams, check if depleted and reinforce
         (try_begin),
           (neg|troop_slot_eq,"trp_no_troop",":team",-1), #team 0 slot number, choke point not taken yet
-          (neg|troop_slot_ge,"trp_no_troop",":team",10), #if choke point not taken, we check for choke point guards
+          (neg|troop_slot_ge,"trp_no_troop",":team",20), #if choke point not taken, we check for choke point guards
           #(lt,":num_defenders",14),
           (assign, ":reinforcements", 1), # defender reinforcements trickling in.
         (else_try), #if choke point is taken, we check overall defender number
