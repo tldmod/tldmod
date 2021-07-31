@@ -1846,8 +1846,7 @@ scripts = [
 	(assign, "$found_moria_entrance", 0),
 	(assign, "$current_player_region", -1),
 	(assign, "$spawn_horse", 1),
-	(assign, "$gate_breached", 0),# destructible gate variables
-	(assign, "$gate_aggravator_agent", 0),
+	(assign, "$gate_aggravator_agent", 0), # unused
 #    (assign, "$equip_needs_checking", 1),
 	(assign, "$g_tld_conversations_done", 0),
 	(assign, "$g_tld_gandalf_state", -1),
@@ -1936,11 +1935,16 @@ scripts = [
 	#Kham - Squelch compiler warnings
 	(assign, "$battle_renown_total", 0), 
 	(assign, "$hold_f1", 0),  
-	(assign, "$dormant_spawn_radius", 0), 
+	(assign, "$dormant_spawn_radius", 0),
+	(assign, "$gate_breached", 0),# unused    
+    (assign, "$mouse_coordinates", 0), #wb only
 
 	(val_mul, "$battle_renown_total", "$hold_f1"),
 	(val_mul, "$battle_renown_total", "$dormant_spawn_radius"),
 	(val_mul, "$hold_f1", "$battle_renown_total"),
+    (val_mul, "$gate_breached", "$gate_aggravator_agent"),
+    (val_mul, "$gate_aggravator_agent", "$gate_breached"),
+    (val_mul, "$gate_aggravator_agent", "$mouse_coordinates"),
 
 	#Kham - Squelch compiler warnings END
 	

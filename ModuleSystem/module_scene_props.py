@@ -1603,77 +1603,176 @@ scene_props = [
   ("rohan_wall_E"      ,0,"rohan_wall"      ,"0"      , []),
 
 #Helms Deep
-("HD",0,"HD","bo_HD", []),
+("HD",0,"helms_deep","bo_helms_deep", []),
 ("ballista",0,"ballista","0",[]),
 ("ballista_empty",0,"ballista_empty","0",[]),
 ("ballista_missile",0,"ballista_missile","0",[]),
 ("throwing_stone",0,"throwing_stone","0",[]),
 ("Village_fire_big_no_smoke",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_village_fire_big"),]),]),
 
-("gate_destructible",sokf_destructible,"gate_tld","bo_gate_tld",   [
+("gate_destructible",sokf_destructible,"gate_tld","bo_gate_tld",   [ 
    (ti_on_scene_prop_init, [
-    (assign, "$gate_breached",0),
-    (entry_point_get_position,pos1,39), # put aggravator agent for enemies to bash the gate prop
+   (store_trigger_param_1, ":instance_no"),
+   
+    ] + (is_a_wb_sceneprop==1 and [ 
+   (prop_instance_get_variation_id_2, ":health", ":instance_no"),
+    (try_begin),
+        (gt, ":health", 0), #if not assigned, get fallback health from scene prop entry (WB only)
+        (scene_prop_set_hit_points, ":instance_no", ":health"),
+    (try_end),
+    ] or []) + [
+    
+    #(assign, "$gate_breached",0),
+    (prop_instance_get_starting_position, pos1, ":instance_no"),
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
-    (assign, "$gate_aggravator_agent", reg0),
-    (agent_set_speed_limit, "$gate_aggravator_agent", 1),
-    (agent_set_team, "$gate_aggravator_agent", 7),
+    (assign, ":gate_aggravator", reg0),
+    (agent_set_speed_limit, ":gate_aggravator", 1),
+    (agent_set_team, ":gate_aggravator", 7),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
-    (agent_set_no_dynamics, "$gate_aggravator_agent",1),
+    (agent_set_no_dynamics, ":gate_aggravator",1),
     ] or []) + [
-    (team_give_order, 7, grc_everyone, mordr_hold),
     (team_give_order, 7, grc_everyone, mordr_stand_ground),
-    (team_set_order_position,7, grc_everyone, pos1),
   ]),
+   
    (ti_on_scene_prop_destroy, [
-    (store_trigger_param_1, ":instance_no"),
-    (prop_instance_get_starting_position, pos1, ":instance_no"),
-    (particle_system_burst,"psys_pistol_smoke",pos1,200),
-    (particle_system_burst,"psys_pistol_smoke",pos1,200),
+    (store_trigger_param_1, ":gate_no"),
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
     (particle_system_burst,"psys_pistol_smoke",pos1,200),
     (position_rotate_x, pos1, 85),
-    (prop_instance_animate_to_position, ":instance_no", pos1, 400), #animate in 4 second
+    (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
-    (assign, "$gate_breached",1),
-    (call_script, "script_remove_agent", "$gate_aggravator_agent"), #remove gate aggravator agent
+    (assign, ":gate_aggravator_found", 0),
+    
+    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
+        (eq, ":gate_aggravator_found", 0),
+        (gt, ":agent_no", 0),
+        (agent_is_alive, ":agent_no"),  
+        (agent_get_troop_id, ":troop_id", ":agent_no"),
+        (eq, ":troop_id", "trp_gate_aggravator"),
+        (agent_get_position, pos2, ":agent_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 200),
+        #(display_message, "@gate_aggravator found"),
+        (call_script, "script_remove_agent", ":agent_no"), 
+        (assign, ":gate_aggravator_found", 1),
+    (try_end),
     
     (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),  #move away all dependent barriers
     (try_begin),
       (gt, ":max_barriers",0),
       (try_for_range,":count",0,":max_barriers"),
-        (scene_prop_get_instance,":instance_no", "spr_ai_limiter_gate_breached", ":count"),
-        (prop_instance_get_starting_position, pos1, ":instance_no"),
+        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+        (prop_instance_get_starting_position, pos1, ":barrier_no"),
+        ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
+        (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+        (eq, ":var1", ":gate_no"),
+        ] or [
+        (prop_instance_get_starting_position, pos2, ":gate_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 1000),
+        ]) + [
         (position_move_z,pos1,-10000),
-        (prop_instance_set_position,":instance_no",pos1),
+        (prop_instance_set_position,":barrier_no",pos1),
       (try_end),
     (try_end),
    ]),
-   (ti_on_scene_prop_hit,
-    [(play_sound, "snd_dummy_hit"),
-  (particle_system_burst, "psys_dummy_smoke", pos1, 3),
-  (particle_system_burst, "psys_dummy_straw", pos1, 10),
-  (entry_point_get_position,pos1,39),
-  (agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
-    ]),
-], 1500), #500 hit points #InVain made higher
 
-("HD_gate_destructible",sokf_destructible,"HD_gate_door","bo_HD_gate_door",   [
-   (ti_on_scene_prop_destroy,
-    [(store_trigger_param_1, ":instance_no"),
-  (prop_instance_get_starting_position, pos1, ":instance_no"),
-    (position_rotate_z, pos1, 85),
-    (prop_instance_animate_to_position, ":instance_no", pos1, 400), #animate in 4 second
-    (play_sound, "snd_dummy_destroyed"),
-  (display_message,"@Gate is breached!"),
-    ]),
    (ti_on_scene_prop_hit,
     [(play_sound, "snd_dummy_hit"),
   (particle_system_burst, "psys_dummy_smoke", pos1, 3),
   (particle_system_burst, "psys_dummy_straw", pos1, 10),
+  #(entry_point_get_position,pos1,39),
+  #(agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
     ]),
-], 3000),#1000 hit points #InVain made higher
+], 3000),
+
+("HD_gate_destructible",sokf_destructible,"HD_gate_closed_repositioned","bo_HD_gate_closed_repositioned",   [ 
+   (ti_on_scene_prop_init, [
+   (store_trigger_param_1, ":gate_no"),
+   
+    ] + (is_a_wb_sceneprop==1 and [ 
+   (prop_instance_get_variation_id_2, ":health", ":gate_no"),
+    (try_begin),
+        (gt, ":health", 0), #if not assigned, get fallback health from scene prop entry (WB only)
+        (scene_prop_set_hit_points, ":gate_no", ":health"),
+    (try_end),
+    ] or []) + [
+    
+    #(assign, "$gate_breached",0),
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (set_spawn_position, pos1),
+    (spawn_agent,"trp_gate_aggravator"),
+    (assign, ":gate_aggravator", reg0),
+    (agent_set_speed_limit, ":gate_aggravator", 1),
+    (agent_set_team, ":gate_aggravator", 7),
+    ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
+    (agent_set_no_dynamics, ":gate_aggravator",1),
+    ] or []) + [
+    (team_give_order, 7, grc_everyone, mordr_stand_ground),
+  ]),
+   
+   (ti_on_scene_prop_destroy, [
+    (store_trigger_param_1, ":gate_no"),
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
+    (particle_system_burst,"psys_pistol_smoke",pos1,200),
+    (position_rotate_z, pos1, 85),
+    (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
+    (play_sound, "snd_dummy_destroyed"),
+    (display_message,"@Gate is breached!"),
+    (assign, ":gate_aggravator_found", 0),
+    
+    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
+        (eq, ":gate_aggravator_found", 0),
+        (gt, ":agent_no", 0),
+        (agent_is_alive, ":agent_no"),  
+        (agent_get_troop_id, ":troop_id", ":agent_no"),
+        (eq, ":troop_id", "trp_gate_aggravator"),
+        (agent_get_position, pos2, ":agent_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 100),
+        #(display_message, "@gate_aggravator found"),
+        (call_script, "script_remove_agent", ":agent_no"), 
+        (assign, ":gate_aggravator_found", 1),
+    (try_end),
+    
+    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),  #move away all dependent barriers
+    (try_begin),
+      (gt, ":max_barriers",0),
+      (try_for_range,":count",0,":max_barriers"),
+        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+        (prop_instance_get_starting_position, pos1, ":barrier_no"),
+        ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
+        (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+        (eq, ":var1", ":gate_no"),
+        ] or [
+        (prop_instance_get_starting_position, pos2, ":gate_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 1000),
+        ]) + [
+        (position_move_z,pos1,-10000),
+        (prop_instance_set_position,":barrier_no",pos1),
+      (try_end),
+    (try_end),
+   ]),
+   
+   (ti_on_scene_prop_hit,
+    [(play_sound, "snd_dummy_hit"),
+  (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+  (particle_system_burst, "psys_dummy_straw", pos1, 10),
+  #(entry_point_get_position,pos1,39),
+  #(agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
+    ]),
+], 3000),
 
 ("tree_destructible",sokf_destructible|spr_hit_points(600),"tree_e_2","bo_tree_e_2",   [
    (ti_on_scene_prop_destroy,
@@ -1799,22 +1898,22 @@ scene_props = [
 ##### CENTER GUARDS ##### #InVain: Changed helper meshes for all of these and randomized animation times
 ("troop_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    #(lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 7),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 ("troop_prison_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    #(lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_prison_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 7),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 ("troop_castle_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    #(lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 7),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 
 ##### TROLLS #####
 ("troop_moria_troll",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
@@ -2511,49 +2610,85 @@ scene_props = [
 ( "tree_mirkwood_roots_4",0,"tree_mirkwood_roots_4","0",[]),
 ( "dolmen",0,"dolmen","0",[]),
 
-("orc_gate_destructible",sokf_destructible,"orc_gate_destructible","bo_orc_gate_destructible",   [
+("orc_gate_destructible",sokf_destructible,"orc_gate_destructible","bo_orc_gate_destructible",   [ 
    (ti_on_scene_prop_init, [
-    (assign, "$gate_breached",0),
-    (entry_point_get_position,pos1,39), # put aggravator agent for enemies to bash the gate prop
+   (store_trigger_param_1, ":gate_no"),
+   
+    ] + (is_a_wb_sceneprop==1 and [ 
+   (prop_instance_get_variation_id_2, ":health", ":gate_no"),
+    (try_begin),
+        (gt, ":health", 0), #if not assigned, get fallback health from scene prop entry (WB only)
+        (scene_prop_set_hit_points, ":gate_no", ":health"),
+    (try_end),
+    ] or []) + [
+    
+    #(assign, "$gate_breached",0),
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
-    (assign, "$gate_aggravator_agent", reg0),
-    (agent_set_speed_limit, "$gate_aggravator_agent", 1),
-    (agent_set_team, "$gate_aggravator_agent", 7),
+    (assign, ":gate_aggravator", reg0),
+    (agent_set_speed_limit, ":gate_aggravator", 1),
+    (agent_set_team, ":gate_aggravator", 7),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
-    (agent_set_no_dynamics, "$gate_aggravator_agent",1),
+    (agent_set_no_dynamics, ":gate_aggravator",1),
     ] or []) + [
-    (team_give_order, 7, grc_everyone, mordr_hold),
     (team_give_order, 7, grc_everyone, mordr_stand_ground),
-    (team_set_order_position, 7, grc_everyone, pos1),
   ]),
+   
    (ti_on_scene_prop_destroy, [
-    (store_trigger_param_1, ":instance_no"),
-    (prop_instance_get_starting_position, pos1, ":instance_no"),
+    (store_trigger_param_1, ":gate_no"),
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
+    (particle_system_burst,"psys_pistol_smoke",pos1,200),
     (position_rotate_x, pos1, 85),
-    (prop_instance_animate_to_position, ":instance_no", pos1, 400), #animate in 4 second
+    (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
-    (assign, "$gate_breached",1),
-    (call_script, "script_remove_agent", "$gate_aggravator_agent"), #remove gate aggravator agent
+    (assign, ":gate_aggravator_found", 0),
+    
+    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
+        (eq, ":gate_aggravator_found", 0),
+        (gt, ":agent_no", 0),
+        (agent_is_alive, ":agent_no"),  
+        (agent_get_troop_id, ":troop_id", ":agent_no"),
+        (eq, ":troop_id", "trp_gate_aggravator"),
+        (agent_get_position, pos2, ":agent_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 200),
+        #(display_message, "@gate_aggravator found"),
+        (call_script, "script_remove_agent", ":agent_no"), 
+        (assign, ":gate_aggravator_found", 1),
+    (try_end),
     
     (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),  #move away all dependent barriers
     (try_begin),
       (gt, ":max_barriers",0),
       (try_for_range,":count",0,":max_barriers"),
-        (scene_prop_get_instance,":instance_no", "spr_ai_limiter_gate_breached", ":count"),
-        (prop_instance_get_starting_position, pos1, ":instance_no"),
+        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+        (prop_instance_get_starting_position, pos1, ":barrier_no"),
+        ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
+        (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+        (eq, ":var1", ":gate_no"),
+        ] or [
+        (prop_instance_get_starting_position, pos2, ":gate_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 1000),
+        ]) + [
         (position_move_z,pos1,-10000),
-        (prop_instance_set_position,":instance_no",pos1),
+        (prop_instance_set_position,":barrier_no",pos1),
       (try_end),
     (try_end),
    ]),
+   
    (ti_on_scene_prop_hit,
     [(play_sound, "snd_dummy_hit"),
   (particle_system_burst, "psys_dummy_smoke", pos1, 3),
   (particle_system_burst, "psys_dummy_straw", pos1, 10),
-  (entry_point_get_position,pos1,39),
-  (agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
+  #(entry_point_get_position,pos1,39),
+  #(agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
     ]),
 ], 1500), #500 hit points
 

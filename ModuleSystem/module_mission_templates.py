@@ -1277,15 +1277,7 @@ tld_common_siege_defender_reinforcement_check = (
      (set_show_messages, 1),
      (display_message,"@Defenders: everyone CHARGE!!"),
    (try_end),
-    # put gate aggravator in place
-   (try_begin),
-     (neq, "$gate_aggravator_agent",-1),
-     (eq, "$gate_breached",0),
-     (entry_point_get_position, pos13, 39),
-     (agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
-     (agent_set_position,"$gate_aggravator_agent",pos13),
-     (agent_set_hit_points,"$gate_aggravator_agent",100,0),
-   (try_end)])
+    ])
 
 tld_common_siege_defender_reinforcement_archer_reposition = (
   2, 0, 0,
@@ -3354,15 +3346,6 @@ mission_templates = [ # not used in game
     #Fog
     (set_fog_distance, 200, 0xCCCCCC),
 
-      # put gate aggravator in place
-    (try_begin),
-      (neq, "$gate_aggravator_agent",-1),
-      (eq, "$gate_breached",0),
-      (entry_point_get_position, pos13, 39),
-      (agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
-      (agent_set_position,"$gate_aggravator_agent",pos13),
-      (agent_set_hit_points,"$gate_aggravator_agent",100,0),
-    (try_end),
   ], 
   []),
 
@@ -4367,7 +4350,6 @@ mission_templates = [ # not used in game
     (team_set_relation, 7, 1, -1),(team_set_relation, 7, 3, -1),(team_set_relation, 7, 5, -1),
     (team_set_relation, 6, 1, 0),(team_set_relation, 6, 3, 0),(team_set_relation, 6, 5, 0), # player team starts neutral until player side is assigned
 	(team_set_relation, 6, 0, 0),(team_set_relation, 6, 2, 0),(team_set_relation, 6, 4, 0), # 
-    (assign, "$gate_aggravator_agent",-1), # can be reassigned by destructible gate scene prop presence
     (assign, "$gate_breached",0), #for scenes without gates, just to make sure it's 0
     (call_script, "script_change_banners_and_chest"),
     (call_script, "script_remove_siege_objects")]),
@@ -4655,17 +4637,7 @@ mission_templates = [ # not used in game
       (set_show_messages, 1),
       #(display_message,"@Defenders: everyone CHARGE!!"),
     (try_end),
-
-    ## This block puts the gate aggravator in place
-
-    (try_begin),
-      (neq, "$gate_aggravator_agent",-1),
-      (eq, "$gate_breached",0),
-      (entry_point_get_position, pos13, 39),
-      (agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
-      (agent_set_position,"$gate_aggravator_agent",pos13),
-      (agent_set_hit_points,"$gate_aggravator_agent",100,0),
-    (try_end)]),
+    ]),
 
    ## This block calls the script to move archers to archer positions. 
    ## In TLD, attacker archers are asked to hold ground in entry point 60, 61, and 62 if the right,left, center flanks have NOT been taken by the attackers
@@ -4979,17 +4951,7 @@ mission_templates = [ # not used in game
       (set_show_messages, 1),
       #(display_message,"@Defenders: everyone CHARGE!!"),
     (try_end),
-
-    ## This block puts the gate aggravator in place
-
-    (try_begin),
-      (neq, "$gate_aggravator_agent",-1),
-      (eq, "$gate_breached",0),
-      (entry_point_get_position, pos13, 39),
-      (agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
-      (agent_set_position,"$gate_aggravator_agent",pos13),
-      (agent_set_hit_points,"$gate_aggravator_agent",100,0),
-    (try_end)]),
+    ]),
 
    ## This block calls the script to move archers to archer positions. 
    ## In TLD, attacker archers are asked to hold ground in entry point 60, 61, and 62 if the right,left, center flanks have NOT been taken by the attackers
