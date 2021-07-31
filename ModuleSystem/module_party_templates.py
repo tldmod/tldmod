@@ -263,9 +263,9 @@ party_templates = [
 ("blackroot_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_i2_blackroot_footman,1,2),(trp_a2_blackroot_bowman,1,2),(trp_a1_blackroot_hunter,3,6),]), #no T3
 ("blackroot_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_a2_blackroot_bowman,2,4),(trp_i2_blackroot_footman,2,4),]),
 #rohan	
-("rohan_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_squire_of_rohan,1,2),(trp_i2_guardsman_of_rohan,2,4),(trp_i1_rohan_youth,4,8),]),
-("rohan_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_c3_rider_of_rohan,1,2),(trp_ac3_skirmisher_of_rohan,3,5),(trp_i3_footman_of_rohan,1,2),(trp_c2_squire_of_rohan,0,1),]),
-("rohan_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c4_veteran_rider_of_rohan,1,2),(trp_c4_lancer_of_rohan,1,2),(trp_ac4_veteran_skirmisher_of_rohan,1,2),(trp_i4_veteran_footman_of_rohan,1,2),]),
+("rohan_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_squire_of_rohan,2,4),(trp_i2_guardsman_of_rohan,1,2),(trp_i1_rohan_youth,3,6),]),
+("rohan_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_c3_rider_of_rohan,1,2),(trp_ac3_skirmisher_of_rohan,2,4),(trp_i3_footman_of_rohan,3,5),(trp_ac4_veteran_skirmisher_of_rohan,1,2),]),
+("rohan_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c4_veteran_rider_of_rohan,2,3),(trp_c4_lancer_of_rohan,1,2),(trp_i4_veteran_footman_of_rohan,1,2),]),
 #Isengard - two short trees (up to T4/T5), easier to upgrade, so lower tier reinforcements; also extra orcs (8-16, 7-13, 5-10)
 ("isengard_reinf_a","_",0,0,fac_commoners,0,[(trp_i1_isen_uruk_snaga,1,2),(trp_i1_isen_orc_snaga,2,5),(trp_a2_isen_uruk_tracker,1,2),(trp_i2_isen_uruk,1,2),(trp_i2_isen_orc,2,4),]), #two T1 #InVain: mixed a bit, see Mordor
 ("isengard_reinf_b","_",0,0,fac_commoners,0,[(trp_ac2_isen_wolf_rider,2,3),(trp_a2_isen_uruk_tracker,2,4),(trp_i2_isen_uruk,1,2),(trp_i2_isen_orc,2,4),(trp_a3_isen_large_uruk_tracker,1,3),(trp_i3_isen_large_orc,1,2),]), #more T2 troops #InVain: More archers, t3 archers+orcs
