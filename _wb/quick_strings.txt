@@ -1,4 +1,4 @@
-1907
+1908
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -916,6 +916,7 @@ qstr_on_the_right_flank on_the_right_flank
 qstr_through_the_center through_the_center
 qstr_Attackers_charge_{s2 Attackers_charge_{s2}
 qstr_Attackers_charge_{s1 Attackers_charge_{s1}
+qstr_{s1}_rallied_to_your {s1}_rallied_to_your_side.
 qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}/{reg7}_Defenders:_{reg0}/{reg2}/{reg4}/{reg6}
 qstr_player_team:_{reg7} player_team:_{reg7}
 qstr_DEBUG:_Attackers_go_ DEBUG:_Attackers_go_back_to_regular_attack_mode

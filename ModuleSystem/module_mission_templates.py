@@ -4666,6 +4666,41 @@ mission_templates = [ # not used in game
     (try_end),
     ]),
 
+#update player team
+    ] + (is_a_wb_mt==1 and [
+  (15, 0, 0,[],
+    [
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_position, pos1, ":player_agent"), 
+    (store_attribute_level, ":player_cha", "trp_player", ca_charisma),
+    (try_for_agents, ":agent_no", pos1, 1000),
+        (agent_is_alive, ":agent_no"),
+        (agent_is_human, ":agent_no"),
+        (agent_get_party_id, ":party_id", ":agent_no"),
+        (agent_is_in_line_of_sight, ":agent_no", pos1),
+        (try_begin),
+            (eq, ":party_id", "p_main_party"),
+            (agent_set_team, ":agent_no", 6),
+            (agent_clear_scripted_mode, ":agent_no"),
+            (agent_force_rethink, ":agent_no"),
+        (else_try),
+            (agent_is_ally, ":agent_no"),
+            (agent_get_troop_id, ":troop_id", ":agent_no"),
+            (neg|is_between, ":troop_id", trp_moria_troll, trp_ent+1),
+            (store_random_in_range, ":join_chance", 0, 500),
+            (le, ":join_chance", ":player_cha"),
+            (agent_set_team, ":agent_no", 6),
+            (agent_clear_scripted_mode, ":agent_no"),
+            (agent_force_rethink, ":agent_no"),
+            (agent_get_troop_id, ":troop_id", ":agent_no"),
+            (str_store_troop_name, s1, ":troop_id"),
+            (display_message, "@{s1} rallied to your side."),
+        (try_end),
+    (try_end),
+  ]),
+     ] or []) + [
+
+
    ## This block calls the script to move archers to archer positions. 
    ## In TLD, attacker archers are asked to hold ground in entry point 60, 61, and 62 if the right,left, center flanks have NOT been taken by the attackers
 
