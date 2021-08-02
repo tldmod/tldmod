@@ -3565,9 +3565,9 @@ scripts = [
 ("party_get_ideal_size",
     [ (store_script_param_1, ":party_no"),
       (assign, ":limit", 30),
+      (party_stack_get_troop_id, ":party_leader", ":party_no", 0),
       (try_begin),
         (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
-        (party_stack_get_troop_id, ":party_leader", ":party_no", 0),
         (gt, ":party_leader", 0), #Kham fix
         (is_between, ":party_leader", kingdom_heroes_begin, kingdom_heroes_end),
         (store_faction_of_party, ":faction_id", ":party_no"),
@@ -3641,7 +3641,7 @@ scripts = [
 
       ] + (is_a_wb_script==1 and [
     (try_begin),
-        (store_relation, ":player_relation", ":faction_id", "fac_player_supporters_faction"),
+        (store_relation, ":player_relation", ":faction_id", "$players_kingdom"),
         (lt, ":player_relation", 0),
         (options_get_campaign_ai, ":campaign_ai"),
         (val_add, ":campaign_ai", 2),
