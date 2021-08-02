@@ -4435,6 +4435,17 @@ mission_templates = [ # not used in game
             (val_mul, ":team", 2), # 0, 2, 4
             (val_add, ":team", 1), # 1, 3, 5
             (agent_set_team, ":agent_no", ":team"), #might not be needed anymore since attacker teams now charge, keep for archers
+  ] + (is_a_wb_mt==1 and [
+            (try_begin),
+                (neq, ":party_no", "p_main_party"),
+                (agent_get_class, ":class", ":agent_no"),
+                (eq, ":class", grc_archers),
+                (agent_get_wielded_item, ":weapon", ":agent_no", 0),
+                (item_get_type, ":type", ":weapon"),
+                (eq, ":type", itp_type_thrown),
+                (agent_set_division, ":agent_no", grc_infantry),
+            (try_end),  
+     ] or []) + [	            
             (neg|agent_is_defender,":player_agent"),
             (eq, ":party_no", "p_main_party"),
             (team_set_relation, 6, 1, 1),(team_set_relation, 6, 3, 1),(team_set_relation, 6, 5, 1), # player team
@@ -4507,10 +4518,15 @@ mission_templates = [ # not used in game
       (val_add,":entry",1),
       (try_begin),
         (eq, ":flank", ":attack_flank"),
-        (add_reinforcements_to_entry, ":entry", 10),
+        (store_random_in_range, ":reinforcements", 7, 13),
        (else_try),
-        (add_reinforcements_to_entry, ":entry", 5),
+        (store_random_in_range, ":reinforcements", 4, 7),
       (try_end),
+      (try_begin),
+        (gt, "$attacker_reinforcement_stage", 15),
+        (val_add, ":reinforcements", 5),
+      (try_end),
+      (add_reinforcements_to_entry, ":entry", ":reinforcements"),
       #(display_message, "@Attackers Reinforced", color_good_news),
       (val_add,"$attacker_reinforcement_stage", 1),
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode. 
@@ -4557,7 +4573,7 @@ mission_templates = [ # not used in game
     (try_for_range,":team",0,3), #cycle through defender teams, check if depleted and reinforce
         (try_begin),
           (neg|troop_slot_eq,"trp_no_troop",":team",-1), #team 0 slot number, choke point not taken yet
-          (neg|troop_slot_ge,"trp_no_troop",":team",20), #if choke point not taken, we check for choke point guards
+          (neg|troop_slot_ge,"trp_no_troop",":team",15), #if choke point not taken, we check for choke point guards
           #(lt,":num_defenders",14),
           (assign, ":reinforcements", 1), # defender reinforcements trickling in.
         (else_try), #if choke point is taken, we check overall defender number
@@ -4607,6 +4623,17 @@ mission_templates = [ # not used in game
 			(val_add, ":team", 1), # 1, 3, 5
 			(agent_set_team, ":agent", ":team"), 
 			(agent_get_party_id, ":party_no", ":agent"),
+           
+            (try_begin),
+                (neq, ":party_no", "p_main_party"),
+                (agent_get_class, ":class", ":agent"),
+                (eq, ":class", grc_archers),
+                (agent_get_wielded_item, ":weapon", ":agent", 0),
+                (item_get_type, ":type", ":weapon"),
+                (eq, ":type", itp_type_thrown),
+                (agent_set_division, ":agent", grc_infantry),
+            (try_end),
+            
 			(eq, ":party_no", "p_main_party"),
 			(agent_set_team, ":agent", 6), 
 		(try_end),
@@ -4751,9 +4778,7 @@ mission_templates = [ # not used in game
 			(troop_set_slot,"trp_no_troop",":slot_defender",":x"),
 		(try_end),
 
-	
-		(get_player_agent_no, ":player_agent"),
-		(agent_get_team, ":player_team", ":player_agent"), #just in case - exclude player team
+
 
 ## Step 2: Now, check slot counts
 		(try_begin),
@@ -4768,8 +4793,6 @@ mission_templates = [ # not used in game
 		  (neg|troop_slot_eq,"trp_no_troop",":slot_defender",-1), #we do this only once
 		  (troop_set_slot,"trp_no_troop",":slot_defender",-1),
 		  (store_mul,":defteam",":slot_defender",2),(store_add,":atkteam",":defteam",1), #this just calls the relevant team numbers from the slot number
-		  (this_or_next|neq, ":defteam", ":player_team"),
-		  (             neq, ":atkteam", ":player_team"),
 		  (team_give_order, ":defteam", grc_infantry, mordr_charge),
 		  (team_give_order, ":defteam", grc_cavalry, mordr_charge),
 		  (team_give_order, ":atkteam", grc_archers, mordr_charge),     

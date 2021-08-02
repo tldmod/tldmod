@@ -1723,7 +1723,7 @@ scene_props = [
     (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
     (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
     (particle_system_burst,"psys_pistol_smoke",pos1,200),
-    (position_rotate_z, pos1, 85),
+    (position_rotate_x, pos1, 85),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),

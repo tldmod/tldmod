@@ -14556,20 +14556,13 @@ scripts = [
 				(lt,":ammo",2),
 				(agent_clear_scripted_mode, ":agent_no"),
 				(agent_ai_set_always_attack_in_melee, ":agent_no", 1),
+                ] + (is_a_wb_script==1 and [
+                (agent_set_division, ":agent_no", grc_infantry),
+			    (agent_force_rethink, ":agent_no"),
+			    ] or []) + [
 			(try_end),
 		(try_end),
 	(try_end),
-	 
-	(set_show_messages, 0), # move attacker archers to firing positions unless target points are captured
-    (try_for_range, ":slot",0,3),
-		(neg|troop_slot_eq,"trp_no_troop",":slot",-1), #if flank not captured yet
-		(store_mul,":atkteam",":slot",2),(val_add,":atkteam",1),
-		(store_add,":random_entry_point",":slot",60),
-		(entry_point_get_position, pos10, ":random_entry_point"),
-		(team_give_order, ":atkteam", grc_archers, mordr_stand_ground),
-		(team_set_order_position,":atkteam", grc_archers, pos10),
-    (try_end),
-    (set_show_messages, 1),
 ]),
 
 # script_store_movement_order_name_to_s1
