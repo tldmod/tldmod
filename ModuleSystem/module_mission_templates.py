@@ -49,7 +49,8 @@ reset_fog = (ti_before_mission_start,  0, ti_once, [],
 fade =  ((is_a_wb_mt==1) and [
 
         (ti_after_mission_start, 0, 0, [],
-          [(mission_cam_set_screen_color,        0xFF000000), 
+          [(neq, "$cheat_mode", 1),
+          (mission_cam_set_screen_color,        0xFF000000), 
            (mission_cam_animate_to_screen_color, 0x00000000, 2500)])
         
         ] or [])
@@ -4375,6 +4376,8 @@ mission_templates = [ # not used in game
     (assign,"$attacker_reinforcement_stage",0),
     (assign,"$g_presentation_battle_active", 0),
     (assign,"$telling_counter",0),
+    (assign, "$reinforcements_arrived", 0),
+    (assign, "$attacker_archer_melee",0),
     (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
     (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
     (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
@@ -4490,6 +4493,8 @@ mission_templates = [ # not used in game
 	  (team_give_order, ":defteam", grc_archers, mordr_stand_ground),
       (team_set_order_position, ":atkteam", grc_everyone, pos10),
       (entry_point_get_position, pos10, ":entry2"), #TLD, was 10
+      (team_give_order, ":atkteam", grc_infantry, mordr_charge),
+      (team_give_order, ":atkteam", grc_cavalry, mordr_charge),
       (team_give_order, ":atkteam", grc_archers, mordr_hold),
       (team_set_order_position, ":atkteam", grc_archers, pos10),
       (val_add,":defteam",2),
@@ -4509,7 +4514,7 @@ mission_templates = [ # not used in game
 	(assign,":atkteam","$attacker_team"),
     (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
     (store_normalized_team_count,":num_attackers",":atkteam"),
-    (lt,":num_attackers",13),
+    (lt,":num_attackers",15),
     
     (store_random_in_range, ":attack_flank", 0, 4), #store attack flank, there's also a chance that there's no attack flank
     
@@ -4529,6 +4534,7 @@ mission_templates = [ # not used in game
       (add_reinforcements_to_entry, ":entry", ":reinforcements"),
       #(display_message, "@Attackers Reinforced", color_good_news),
       (val_add,"$attacker_reinforcement_stage", 1),
+      (assign, "$reinforcements_arrived", 1),
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode. 
     (try_end),
     
@@ -4563,7 +4569,9 @@ mission_templates = [ # not used in game
     (try_end),   
     ]),
 
-  (0, 0, 10, [(lt,"$defender_reinforcement_stage", 75),(store_mission_timer_a,":mission_time"),(ge,":mission_time",30)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
+  (0, 0, 10, [(lt,"$defender_reinforcement_stage", 100),(store_mission_timer_a,":mission_time"),(ge,":mission_time",30)],[ 
+    (assign, reg77, "$defender_reinforcement_stage"),
+    (display_message, "@defender reinforcement stage: {reg77}"),
     (assign,":defteam","$defender_team"),
     (assign,":entry",8), #Changed to 9,10,11 --> spawn entry
     (assign,":entry_number", 43), # 44,45,46 --> actual entry point
@@ -4597,6 +4605,7 @@ mission_templates = [ # not used in game
       (eq, ":spawn_point_blocked", 0),
       (add_reinforcements_to_entry, ":entry", ":reinforcements"),
       (val_add,"$defender_reinforcement_stage",1),
+      (assign, "$reinforcements_arrived", 1),
       #(assign, reg0,":entry_number"),
       #(display_message, "@Defenders Reinforced entry #{reg0}", color_good_news),												  																	   
     (try_end),
@@ -4604,7 +4613,7 @@ mission_templates = [ # not used in game
     (try_begin), #stop any further reinforcements after player death
         (main_hero_fallen),
         (agent_is_defender, ":player_agent"),
-        (assign, "$defender_reinforcement_stage",75),
+        (assign, "$defender_reinforcement_stage",200),
     (try_end),   
 
 	] + (is_a_wb_mt==1 and [ #piggyback attacker reinforcement team assignment. This trigger always fires 1 second after the attacker reinforcement trigger, so it should catch the spawned troops.)
@@ -4666,10 +4675,10 @@ mission_templates = [ # not used in game
     (try_end),
     ]),
 
-#update player team
+    #update player team
     ] + (is_a_wb_mt==1 and [
   (15, 0, 0,[],
-    [
+    [(store_mission_timer_a,":mission_time"),
     (get_player_agent_no, ":player_agent"),
     (agent_get_position, pos1, ":player_agent"), 
     (store_attribute_level, ":player_cha", "trp_player", ca_charisma),
@@ -4685,6 +4694,7 @@ mission_templates = [ # not used in game
             (agent_force_rethink, ":agent_no"),
         (else_try),
             (agent_is_ally, ":agent_no"),
+            (gt, ":mission_time", 45),
             (agent_get_troop_id, ":troop_id", ":agent_no"),
             (neg|is_between, ":troop_id", trp_moria_troll, trp_ent+1),
             (store_random_in_range, ":join_chance", 0, 500),
@@ -4698,7 +4708,53 @@ mission_templates = [ # not used in game
         (try_end),
     (try_end),
   ]),
+
      ] or []) + [
+
+    #After-reinforcement check: Any side almost depleted? Ask player to retreat or clean up remainders.
+   (3, 0, 0, [(eq, "$reinforcements_arrived",1),],
+     [(store_normalized_team_count,":num_defenders",0),
+     (store_normalized_team_count,":num_attackers",1),
+     (get_player_agent_no, ":player_agent"),
+     (try_begin),
+        (neg|agent_is_defender, ":player_agent"),
+        (ge,"$attacker_reinforcement_stage",19),
+        (display_message, "@attackers almost defeated!"),
+        (question_box,"@Last attacker wave. Do you want to retreat?"),
+    (else_try),  
+        (lt, ":num_attackers", 7),
+        (try_begin),
+            (neg|agent_is_defender, ":player_agent"), 
+            (agent_is_alive, ":player_agent"),
+            (display_message, "@attackers almost defeated!"),           
+            (question_box,"@Attackers almost defeated. Do you want to retreat?"),
+        (else_try),
+            (try_for_agents, ":agent_no"),
+                (agent_is_alive, ":agent_no"),
+                (neg|agent_is_defender, ":agent_no"),
+            ] + (is_a_wb_mt==1 and [
+                (agent_fade_out, ":agent_no"),
+            ] or [
+                (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
+            ]) + [
+            (try_end),
+            (display_message, "@The remaining attackers disperse!"),
+        (try_end),
+    (else_try),     
+        (lt, ":num_defenders", 7),
+        (display_message, "@The remaining defenders escape from the siege!"),
+        (try_for_agents, ":agent_no"),
+            (agent_is_alive, ":agent_no"),
+            (agent_is_defender, ":agent_no"),
+        ] + (is_a_wb_mt==1 and [
+            (agent_fade_out, ":agent_no"),
+        ] or [
+            (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
+        ]) + [
+        (try_end),
+    (try_end),
+    (assign, "$reinforcements_arrived",0),
+   ]),
 
 
    ## This block calls the script to move archers to archer positions. 
