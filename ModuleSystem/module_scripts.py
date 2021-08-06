@@ -2225,14 +2225,14 @@ scripts = [
 		(val_add, ":to_add", 3), #add some extra, so the below code still works (volunteers don't fill up if less than 4)
 		(val_max, ":to_add", 6), #additional saveguard
         
-        ] + (is_a_wb_script==1 and [
-        (try_begin), #campaign AI (difficulty setting)
-            (options_get_campaign_ai, ":campaign_ai"),
-            (val_add, ":campaign_ai", 3),
-            (val_mul, ":to_add", ":campaign_ai"),
-            (val_div, ":to_add", 4), 
-        (try_end),
-        ] or []) + [
+        # ] + (is_a_wb_script==1 and [
+        # (try_begin), #campaign AI (difficulty setting)
+            # (options_get_campaign_ai, ":campaign_ai"),
+            # (val_add, ":campaign_ai", 3),
+            # (val_mul, ":to_add", ":campaign_ai"),
+            # (val_div, ":to_add", 4), 
+        # (try_end),
+        # ] or []) + [
 	    
 	    #(assign, ":ideal_size", ":to_add"),
 		(store_party_size, ":vol_total", ":volunteers"),
@@ -3639,16 +3639,16 @@ scripts = [
       		(display_message, "@Gondor AI Tweaks - Gondro Party Size Boost"),
 	(try_end),
 
-      ] + (is_a_wb_script==1 and [
-    (try_begin),
-        (store_relation, ":player_relation", ":faction_id", "$players_kingdom"),
-        (lt, ":player_relation", 0),
-        (options_get_campaign_ai, ":campaign_ai"),
-        (val_add, ":campaign_ai", 2),
-        (val_mul, ":limit", 3), 
-      	(val_div, ":limit", ":campaign_ai"),
-    (try_end),
-        ] or []) + [
+      # ] + (is_a_wb_script==1 and [
+    # (try_begin),
+        # (store_relation, ":player_relation", ":faction_id", "$players_kingdom"),
+        # (lt, ":player_relation", 0),
+        # (options_get_campaign_ai, ":campaign_ai"),
+        # (val_add, ":campaign_ai", 2),
+        # (val_mul, ":limit", 3), 
+      	# (val_div, ":limit", ":campaign_ai"),
+    # (try_end),
+        # ] or []) + [
         
       (assign, reg0, ":limit"),
 ]),
