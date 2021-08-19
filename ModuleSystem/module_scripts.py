@@ -4966,6 +4966,7 @@ scripts = [
 				(item_get_slot, reg10,  ":item_id", slot_item_faction),
 				(store_and, reg11, reg10, ":faction_mask"),
 				(this_or_next|eq, reg10, 0), # can steal objects with no faction
+                (neq, reg11, 0), # can steal objects of player's faction
 				
                 ] + (is_a_wb_script and [
                 (neg|item_has_property, ":item_id", itp_unique), #additional safeguards - don't loot reward items

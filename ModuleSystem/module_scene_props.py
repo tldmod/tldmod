@@ -1670,7 +1670,8 @@ scene_props = [
         (prop_instance_get_starting_position, pos1, ":barrier_no"),
         ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
         (prop_instance_get_variation_id, ":var1", ":barrier_no"),
-        (eq, ":var1", ":gate_no"),
+        (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+        (eq, ":var1", ":var1_gate"),
         ] or [
         (prop_instance_get_starting_position, pos2, ":gate_no"),
         (set_fixed_point_multiplier, 100),
@@ -1752,7 +1753,8 @@ scene_props = [
         (prop_instance_get_starting_position, pos1, ":barrier_no"),
         ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
         (prop_instance_get_variation_id, ":var1", ":barrier_no"),
-        (eq, ":var1", ":gate_no"),
+        (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+        (eq, ":var1", ":var1_gate"),
         ] or [
         (prop_instance_get_starting_position, pos2, ":gate_no"),
         (set_fixed_point_multiplier, 100),
@@ -2670,7 +2672,8 @@ scene_props = [
         (prop_instance_get_starting_position, pos1, ":barrier_no"),
         ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
         (prop_instance_get_variation_id, ":var1", ":barrier_no"),
-        (eq, ":var1", ":gate_no"),
+        (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+        (eq, ":var1", ":var1_gate"),
         ] or [
         (prop_instance_get_starting_position, pos2, ":gate_no"),
         (set_fixed_point_multiplier, 100),
@@ -2690,7 +2693,7 @@ scene_props = [
   #(entry_point_get_position,pos1,39),
   #(agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
     ]),
-], 1500), #500 hit points
+], 1500), 
 
 ("rope_bridge",0,"rope_bridge_new","bo_rope_bridge_new", []),
 ("arena_awning",0,"arena_block_j_awning","bo_arena_block_j_awning", []),
