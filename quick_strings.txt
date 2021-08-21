@@ -1,4 +1,4 @@
-1672
+1681
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -167,6 +167,8 @@ qstr_rally rally
 qstr_rallies rallies
 qstr_+{reg1}_{s3}_in_batt +{reg1}_{s3}_in_battle
 qstr_+1_to_Charisma +1_to_Charisma
+qstr_Call_Reinforcements Call_Reinforcements
+qstr__Effect_scales_with_ (Effect_scales_with_Strength_and_Charisma)
 qstr_+1_to_First_Aid +1_to_First_Aid
 qstr_+1_to_Surgery +1_to_Surgery
 qstr_+1_to_Intelligence +1_to_Intelligence
@@ -940,6 +942,13 @@ qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_You_used_the_Orc_Bre You_used_the_Orc_Brew.
 qstr_You_and_your_compani You_and_your_companions_drink_a_sip_of_Miruvor._You_feel_refreshed_and_strengthened.
 qstr_You_give_a_few_leave You_give_a_few_leaves_of_Athelas_to_your_healers.
+qstr_lordless lordless
+qstr_orc_stragglers orc_stragglers
+qstr_wild_goblins wild_goblins
+qstr_recruits recruits
+qstr_regulars regulars
+qstr_elites elites
+qstr_You_camp_and_beat_th You_camp_and_beat_the_Drums_of_the_Deep._The_mighty_sound_attracts_a_group_of_{s1}_{s2}.
 qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_^^^A_great_victory!^ ^^^A_great_victory!^^^So_this_is_what_all_the_myths_about_Fangorn_meant...
 qstr_^^^Defeated...^^^Sca ^^^Defeated...^^^Scattered_in_the_Fangorn_Forest..._Alone...

@@ -2006,7 +2006,7 @@ fac_reward_items_list = [
 #fac_umbar
 [(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_corsair_throwing_dagger_reward, 0), (5, itm_leather_gloves_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_corsair_bow, imod_balanced), (8, itm_umb_armor_f, imod_lordly), (9, itm_corsair_trident, 0)],
 #fac_moria
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_wargarmored_3a, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_dwarf_great_pick, imod_strong), (8, itm_moria_armor_e, imod_lordly), (9, itm_moria_arrow_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_wargarmored_3a, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_dwarf_great_pick, imod_strong), (8, itm_moria_armor_e, imod_lordly), (9, itm_drums_of_the_deep, 0)],
 #fac_guldur
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_club_d, imod_balanced), (5, itm_leather_gloves_reward, imod_crude), (6, itm_herbarium_reward, 0), (7, itm_spider, 0), (8, itm_black_arrows_reward, 0), (9, itm_witchking_helmet, 0)],
 #fac_gundabad
@@ -2044,7 +2044,7 @@ fac_reward_items_list = [
 #fac_umbar
 [(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_corsair_throwing_dagger_reward, 0), (5, itm_leather_gloves_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_corsair_bow, imod_balanced), (8, itm_umb_armor_f, imod_lordly), (9, itm_corsair_trident, 0)],
 #fac_moria
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_wargarmored_3a, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_dwarf_great_pick, imod_strong), (8, itm_moria_armor_e, imod_lordly), (9, itm_moria_arrow_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_wargarmored_3a, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_dwarf_great_pick, imod_strong), (8, itm_moria_armor_e, imod_lordly), (9, itm_drums_of_the_deep, 0)],
 #fac_guldur
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_club_d, imod_balanced), (5, itm_leather_gloves_reward, imod_crude), (6, itm_herbarium_reward, 0), (7, itm_spider, 0), (8, itm_black_arrows_reward, 0), (9, itm_witchking_helmet, 0)],
 #fac_gundabad
