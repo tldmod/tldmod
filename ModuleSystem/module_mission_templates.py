@@ -4444,6 +4444,7 @@ mission_templates = [ # not used in game
                 (agent_get_class, ":class", ":agent_no"),
                 (eq, ":class", grc_archers),
                 (agent_get_wielded_item, ":weapon", ":agent_no", 0),
+                (gt, ":weapon", 0),
                 (item_get_type, ":type", ":weapon"),
                 (eq, ":type", itp_type_thrown),
                 (agent_set_division, ":agent_no", grc_infantry),
@@ -4571,7 +4572,7 @@ mission_templates = [ # not used in game
 
   (0, 0, 10, [(lt,"$defender_reinforcement_stage", 100),(store_mission_timer_a,":mission_time"),(ge,":mission_time",30)],[ 
     (assign, reg77, "$defender_reinforcement_stage"),
-    (display_message, "@defender reinforcement stage: {reg77}"),
+    #(display_message, "@defender reinforcement stage: {reg77}"),
     (assign,":defteam","$defender_team"),
     (assign,":entry",8), #Changed to 9,10,11 --> spawn entry
     (assign,":entry_number", 43), # 44,45,46 --> actual entry point
@@ -4605,7 +4606,7 @@ mission_templates = [ # not used in game
       (eq, ":spawn_point_blocked", 0),
       (add_reinforcements_to_entry, ":entry", ":reinforcements"),
       (val_add,"$defender_reinforcement_stage",1),
-      (assign, "$reinforcements_arrived", 1),
+      (assign, "$reinforcements_arrived", 2),
       #(assign, reg0,":entry_number"),
       #(display_message, "@Defenders Reinforced entry #{reg0}", color_good_news),												  																	   
     (try_end),
@@ -4712,21 +4713,23 @@ mission_templates = [ # not used in game
      ] or []) + [
 
     #After-reinforcement check: Any side almost depleted? Ask player to retreat or clean up remainders.
-   (3, 0, 0, [(eq, "$reinforcements_arrived",1),],
+   (3, 0, 0, [(ge, "$reinforcements_arrived",1),],
      [(store_normalized_team_count,":num_defenders",0),
      (store_normalized_team_count,":num_attackers",1),
      (get_player_agent_no, ":player_agent"),
      (try_begin),
+        (eq, "$reinforcements_arrived", 1), #if attacker reinforcement
         (neg|agent_is_defender, ":player_agent"),
         (ge,"$attacker_reinforcement_stage",19),
-        (display_message, "@attackers almost defeated!"),
+        #(display_message, "@attackers almost defeated!"),
         (question_box,"@Last attacker wave. Do you want to retreat?"),
     (else_try),  
         (lt, ":num_attackers", 7),
         (try_begin),
+            (eq, "$reinforcements_arrived", 1), #if attacker reinforcement
             (neg|agent_is_defender, ":player_agent"), 
             (agent_is_alive, ":player_agent"),
-            (display_message, "@attackers almost defeated!"),           
+            #(display_message, "@attackers almost defeated!"),           
             (question_box,"@Attackers almost defeated. Do you want to retreat?"),
         (else_try),
             (try_for_agents, ":agent_no"),

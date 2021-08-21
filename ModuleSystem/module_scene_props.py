@@ -1627,12 +1627,13 @@ scene_props = [
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
     (assign, ":gate_aggravator", reg0),
-    (agent_set_speed_limit, ":gate_aggravator", 1),
+    (agent_set_speed_limit, ":gate_aggravator", 0),
     (agent_set_team, ":gate_aggravator", 7),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
+    (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
     ] or []) + [
-    (team_give_order, 7, grc_everyone, mordr_stand_ground),
+    #(team_give_order, 7, grc_everyone, mordr_stand_ground),
   ]),
    
    (ti_on_scene_prop_destroy, [
@@ -1710,12 +1711,13 @@ scene_props = [
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
     (assign, ":gate_aggravator", reg0),
-    (agent_set_speed_limit, ":gate_aggravator", 1),
+    (agent_set_speed_limit, ":gate_aggravator", 0),
     (agent_set_team, ":gate_aggravator", 7),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
+    (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
     ] or []) + [
-    (team_give_order, 7, grc_everyone, mordr_stand_ground),
+    #(team_give_order, 7, grc_everyone, mordr_stand_ground),
   ]),
    
    (ti_on_scene_prop_destroy, [
@@ -2629,12 +2631,13 @@ scene_props = [
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
     (assign, ":gate_aggravator", reg0),
-    (agent_set_speed_limit, ":gate_aggravator", 1),
+    (agent_set_speed_limit, ":gate_aggravator", 0),
     (agent_set_team, ":gate_aggravator", 7),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
+    (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
     ] or []) + [
-    (team_give_order, 7, grc_everyone, mordr_stand_ground),
+    #(team_give_order, 7, grc_everyone, mordr_stand_ground),
   ]),
    
    (ti_on_scene_prop_destroy, [
