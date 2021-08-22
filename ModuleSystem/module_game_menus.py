@@ -8803,19 +8803,19 @@ game_menus = [
 #	]),
 
 
-	   ("town_prison", [(eq,1,0)],"Never: Enter the prison.",
+	   ("town_prison", [(eq,1,0)],"Never: Enter the prison.", #InVain: Disable access to the prison through passages, too. But need to keep this entry for passage number compatibility.
        [   (try_begin),
-             (eq,"$all_doors_locked",1),
-             (display_message,"str_door_locked",0xFFFFAAAA),
-           (else_try),
-             (this_or_next|party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
-             (eq, "$g_encountered_party_faction", "$players_kingdom"),
-             #(assign, "$town_entered", 1),
-             (call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle"),
-           (else_try),
+             # (eq,"$all_doors_locked",1),
+             # (display_message,"str_door_locked",0xFFFFAAAA),
+           # (else_try),
+             # (this_or_next|party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+             # (eq, "$g_encountered_party_faction", "$players_kingdom"),
+             # #(assign, "$town_entered", 1),
+             # (call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle"),
+           # (else_try),
              (display_message,"str_door_locked",0xFFFFAAAA),
            (try_end),
-        ],"Door to the prison."),
+        ],"_"),
 		
 		
 	 #Enter dungeon in Erebor begin (Kolba)
@@ -9021,7 +9021,7 @@ game_menus = [
 							(set_jump_mission,"mt_ai_training"),
 							(jump_to_scene,":scene"),
 							(change_screen_mission)]),
-      ("castle_cheat_dungeon",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "CHEAT: Prison.",[
+      ("castle_cheat_dungeon",[(eq, cheat_switch, 1),(eq, 0, 1)], "CHEAT: Prison.",[ # unneeded
 							(set_jump_mission,"mt_ai_training"),
 							(party_get_slot, ":castle_scene", "$current_town", slot_town_prison),
 							(jump_to_scene,":castle_scene"),
