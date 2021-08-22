@@ -3416,6 +3416,7 @@ simple_triggers = [
       
       (try_begin),
         (eq, "$cheat_mode",1),
+        (neq, "$g_fast_mode",1),
         (display_message, "@Gondor has called for aide!"),
       (try_end),
       (assign, "$gondor_reinforcement_event",1),
@@ -3447,6 +3448,7 @@ simple_triggers = [
       
       (try_begin),
         (eq, "$cheat_mode",1),
+        (neq, "$g_fast_mode",1),
         (display_message, "@Gondor is accompanying the marshall!"),
       (try_end),
       (assign, "$gondor_reinforcement_event",0),
@@ -3458,6 +3460,7 @@ simple_triggers = [
   
   (12,[
       (try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
+        (neq, "$g_fast_mode", 1),
         (faction_slot_eq, ":faction_wc", slot_faction_state, sfs_active), #Needs to be alive
         (call_script, "script_get_faction_rank", ":faction_wc"),
         (assign, ":rank", reg0), #rank points to rank number 0-9
