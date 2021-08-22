@@ -1106,7 +1106,7 @@ itemsfile version 2
  itm_free_uruk_heavy_axe Uruk_Heavy_Axe Uruk_Heavy_Axe 1  uruk_heavy_axe 0  38996869124 9223635923965575392 300 786582 7 100 0 0 0 0 46080 90 0 99 0 256 45
 0
 
- itm_isengard_sword Isengard_Sword Isengard_Sword 1  isengard_sword 0  4259842 9223652412613460206 105 786582 2.5 100 0 0 0 0 30720 93 0 75 0 256 30
+ itm_isengard_sword Isengard_Sword Isengard_Sword 1  isengard_sword 0  4259842 9223388529822793742 105 786582 2.5 100 0 0 0 0 30720 93 0 75 0 256 30
 0
 
  itm_isengard_axe Isengard_Axe Isengard_Axe 1  isengard_axe 0  80019458 9223388530091229198 300 786582 2 100 0 0 0 0 35840 85 0 73 0 256 35
@@ -1154,7 +1154,7 @@ itemsfile version 2
  itm_orc_pick Orc_Pick Orc_Pick 1  khazad_orc_pick_1 0  4276226 9223372040101167118 5 786582 2.5 100 0 0 0 0 25600 90 0 53 0 256 281
 0
 
- itm_orc_hammer Evil_Hammer Evil_Hammer 1  khazad_orc_th_hammer_1 0  34363998211 9223652415566250222 600 786582 4.5 100 0 0 0 0 30720 83 0 80 0 256 542
+ itm_orc_hammer Evil_Hammer Evil_Hammer 1  khazad_orc_th_hammer_1 0  34363998211 9223388532775583758 600 786582 4.5 100 0 0 0 0 30720 83 0 80 0 256 542
 0
 
  itm_orc_club_b Warg_Rider_Club Warg_Rider_Club 2  orc_club_b 0  khazad_orc_club_1 786432  138493955 9223652415566250222 350 786582 3 100 0 0 0 0 27648 85 0 77 0 256 539
@@ -1163,7 +1163,7 @@ itemsfile version 2
  itm_orc_club_c Spiky_Orc_Club Spiky_Orc_Club 1  orc_club_c 0  4276226 9223372040101167119 150 786582 2.5 100 0 0 0 0 20480 85 0 70 0 281 276
 0
 
- itm_orc_club_d Evil_Mace Evil_Mace 2  khazad_orc_th_club_2 0  khazad_orc_th_club_1 786432  274882101250 9223372040101167118 500 786582 3.5 100 0 0 0 0 27648 87 0 65 0 256 539
+ itm_orc_club_d Evil_Mace Evil_Mace 2  khazad_orc_th_club_2 0  khazad_orc_th_club_1 786432  274882101250 9223388532775583758 500 786582 3.5 100 0 0 0 0 27648 87 0 65 0 256 539
 0
 
  itm_orc_sledgehammer Orc_Sledgehammer Orc_Sledgehammer 1  orc_sledgehammer 0  313807552516 9223372043053957344 100 786582 7 100 0 0 0 0 27648 80 0 75 0 256 539
