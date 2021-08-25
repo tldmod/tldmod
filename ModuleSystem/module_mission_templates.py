@@ -4705,7 +4705,7 @@ mission_templates = [ # not used in game
             (agent_force_rethink, ":agent_no"),
             (agent_get_troop_id, ":troop_id", ":agent_no"),
             (str_store_troop_name, s1, ":troop_id"),
-            (display_message, "@{s1} rallied to your side."),
+            (display_message, "@{s1} rallied to your side due to your Charisma."),
         (try_end),
     (try_end),
   ]),
