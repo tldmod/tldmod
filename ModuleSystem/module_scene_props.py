@@ -1902,22 +1902,22 @@ scene_props = [
 ##### CENTER GUARDS ##### #InVain: Changed helper meshes for all of these and randomized animation times
 ("troop_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    #(lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 7),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 ("troop_prison_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    #(lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_prison_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 7),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 ("troop_castle_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    #(lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 7),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 
 ##### TROLLS #####
 ("troop_moria_troll",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
