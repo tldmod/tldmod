@@ -848,15 +848,21 @@ dialogs = [
 [anyone,"member_chat_00", [(store_conversation_troop,"$g_talk_troop"),
                           (troop_is_hero,"$g_talk_troop"),
                           (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
-                          (str_store_string, s5, ":honorific")],
+                          (str_store_string, s5, ":honorific"),
+                          (try_begin),
+                            (eq, "$g_talk_troop", trp_npc21),
+                            (store_conversation_agent, ":troll_agent"),
+                            (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue"),
+                          (try_end),],
 "Yes, {s5}?", "member_talk",[]],
 
 [anyone|plyr,"member_talk", [(call_script, "script_unequip_items", "$g_talk_troop")],"Let me see your equipment.", "member_trade",[]],
 [anyone,"member_trade",[      (store_character_level, ":talk_troop_level", "$g_talk_troop"),
-            (ge, ":talk_troop_level", 40),
-                              (store_character_level, ":player_level", "trp_player"),
-                              (val_add, ":player_level", 10),
+            (ge, ":talk_troop_level", 30),
+            (store_character_level, ":player_level", "trp_player"),
+            (val_add, ":player_level", 10),
             (ge, ":talk_troop_level", ":player_level"), # if player level + 10 > npc level (e.g. 46 for Glorfindel), skip this
+            (neq, "$g_talk_troop", "trp_npc21"), #also Berta
                         ],
 "I'm sorry, my equipment is my own.", "do_member_trade",[]], #Glorfindel and others being pricks
 [anyone,"member_trade", [], "Very well, it's all here...", "do_member_trade",[(change_screen_equip_other)]],
@@ -1020,12 +1026,20 @@ dialogs = [
                      (this_or_next|eq, "$talk_context", tc_court_talk), #TLD
                      (this_or_next|eq, "$talk_context", tc_town_talk), #TLD
                      (eq, "$talk_context", tc_tavern_talk),
-                     (main_party_has_troop, "$g_talk_troop")],
+                     (main_party_has_troop, "$g_talk_troop"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "Let's leave whenever you are ready.", "close_window", [(call_script,"script_stand_back"),]],
 
 [anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
-                     (troop_slot_eq, "$g_talk_troop", slot_troop_turned_down_twice, 1)],
+                     (troop_slot_eq, "$g_talk_troop", slot_troop_turned_down_twice, 1),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "Please do not waste any more of my time today. Perhaps we shall meet again.", "close_window", [(call_script,"script_stand_back"),]],
 
 [anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
@@ -1033,7 +1047,11 @@ dialogs = [
                      (eq, "$g_talk_troop_met", 0),
                      (troop_get_slot, ":intro", "$g_talk_troop", slot_troop_intro),
                      (str_store_string, 5, ":intro"),
-                     (str_store_party_name, 20, "$g_encountered_party")],
+                     (str_store_party_name, 20, "$g_encountered_party"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "{s5}", "companion_recruit_intro_response", [(troop_set_slot, "$g_talk_troop", slot_troop_first_encountered, "$g_encountered_party"),]],
 
 
@@ -1045,7 +1063,11 @@ dialogs = [
 [anyone|plyr, "companion_recruit_intro_response", [
                      (troop_get_slot, ":intro_response", "$g_talk_troop", slot_troop_intro_response_2),
                      (str_store_string, 7, ":intro_response")],
-"{s7}", "close_window", [(call_script,"script_stand_back"),]],
+"{s7}", "close_window", [(call_script,"script_stand_back"),                    
+                        (try_begin),
+                            (eq, "$g_talk_troop", trp_npc21),
+                            (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),
+                        (try_end),]],
 
 [anyone, "companion_recruit_backstory_a", [(troop_get_slot, ":backstory_a", "$g_talk_troop", slot_troop_backstory_a),
                      (str_store_string, 5, ":backstory_a"),
@@ -1070,7 +1092,11 @@ dialogs = [
 [anyone|plyr, "companion_recruit_backstory_response", [
                      (troop_get_slot, ":backstory_response", "$g_talk_troop", slot_troop_backstory_response_2),
                      (str_store_string, 7, ":backstory_response")],
-"{s7}", "close_window", [(call_script,"script_stand_back"),]],
+"{s7}", "close_window", [(call_script,"script_stand_back"),
+                        (try_begin),
+                            (eq, "$g_talk_troop", trp_npc21),
+                            (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),
+                        (try_end),]],
 
 [anyone, "companion_recruit_signup", [(troop_get_slot, ":signup", "$g_talk_troop", slot_troop_signup),
                      (str_store_string, 5, ":signup"),
@@ -1085,7 +1111,7 @@ dialogs = [
 "{s5}", "companion_recruit_signup_response", []],
 
 [anyone|plyr, "companion_recruit_signup_response", [(neg|hero_can_join, "p_main_party")],
-"Unfortunately, I can't take on any more hands in my party right now.", "close_window", [(call_script,"script_stand_back"),]],
+"Unfortunately, I can't take on any more hands in my party right now.", "close_window", [(call_script,"script_stand_back"),(try_begin),(eq, "$g_talk_troop", trp_npc21),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"), (try_end),]],
 
 [anyone|plyr, "companion_recruit_signup_response",[
                     (hero_can_join, "p_main_party"),
@@ -1097,7 +1123,11 @@ dialogs = [
                     (hero_can_join, "p_main_party"),
                      (troop_get_slot, ":signup_response", "$g_talk_troop", slot_troop_signup_response_2),
                      (str_store_string, 7, ":signup_response")],
-"{s7}", "close_window", [(call_script,"script_stand_back"),]],
+"{s7}", "close_window", [(call_script,"script_stand_back"),
+                        (try_begin),
+                            (eq, "$g_talk_troop", trp_npc21),
+                            (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),
+                        (try_end),]],
 
 # rank 0 needed - don't mention it at all
 [anyone|auto_proceed, "companion_recruit_rank", [
@@ -1117,7 +1147,11 @@ dialogs = [
       (gt, reg3, 0)], # not enough?
 "It seems that you are not esteemed enough by my people, {playername}. \
 You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed].^\
-Let's speak again when you are more accomplished.", "close_window", [(call_script,"script_stand_back"),]],
+Let's speak again when you are more accomplished.", "close_window", [(call_script,"script_stand_back"),
+                                                                        (try_begin),
+                                                                            (eq, "$g_talk_troop", trp_npc21),
+                                                                            (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),
+                                                                        (try_end),]],
 
 # rank ok
 [anyone, "companion_recruit_rank", [],"I'm glad to see you have become {s29}, and I'm looking forward to joining you.", "companion_recruit_payment", []],
@@ -1169,12 +1203,20 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone|plyr, "companion_recruit_payment_response", [
                      (troop_get_slot, ":signup_response", "$g_talk_troop", slot_troop_signup_response_2),
                      (str_store_string, s7, ":signup_response")],
-"Well, there's little I can do then.", "close_window", [(call_script,"script_stand_back"),]],
+"Well, there's little I can do then.", "close_window", [(call_script,"script_stand_back"),
+                                                        (try_begin),
+                                                            (eq, "$g_talk_troop", trp_npc21),
+                                                            (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),
+                                                        (try_end),]],
 
 [anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 1),
-                     (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, 0)],
+                     (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, 0),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "We meet again.", "companion_recruit_meet_again", [(troop_set_slot, "$g_talk_troop", slot_troop_turned_down_twice, 1)]],
 
 [anyone|plyr, "companion_recruit_meet_again", [], "So... What have you been doing since our last encounter?", "companion_recruit_backstory_delayed", []],
@@ -1185,13 +1227,21 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
    (else_try),
      (str_store_string, s4, "@Ah, it's you again. Goodbye."),
    (try_end)],
-"{s4}", "close_window", [(call_script,"script_stand_back"),]],
+"{s4}", "close_window", [(call_script,"script_stand_back"),
+                        (try_begin),
+                            (eq, "$g_talk_troop", trp_npc21),
+                            (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),
+                        (try_end),]],
 
 
 [anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),
-                     (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, 0)],
+                     (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, 0),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "Yes?", "companion_recruit_secondchance", [(troop_set_slot, "$g_talk_troop", slot_troop_turned_down_twice, 1)]],
 
 [anyone|plyr, "companion_recruit_secondchance", [
@@ -1202,7 +1252,11 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
      (str_store_string, s4, "@I was reconsidering our last conversation. What was your story again?"),
    (try_end)],
 "{s4}", "companion_recruit_backstory_b", []],
-[anyone|plyr, "companion_recruit_secondchance", [],  "Never mind.", "close_window", [(call_script,"script_stand_back"),]],
+[anyone|plyr, "companion_recruit_secondchance", [],  "Never mind.", "close_window", [(call_script,"script_stand_back"),
+                                                                                        (try_begin),
+                                                                                            (eq, "$g_talk_troop", trp_npc21),
+                                                                                            (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),
+                                                                                        (try_end),]],
 
 [anyone, "companion_recruit_backstory_delayed",
    [(troop_get_slot, ":backstory_delayed", "$g_talk_troop", slot_troop_backstory_delayed),
@@ -1210,13 +1264,16 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "{s5}", "companion_recruit_backstory_delayed_response", []],
 
 [anyone|plyr, "companion_recruit_backstory_delayed_response", [], "I might be able to use you in my company.", "companion_recruit_signup_b", []],
-[anyone|plyr, "companion_recruit_backstory_delayed_response", [], "Never mind, another time perhaps.", "close_window", [(call_script,"script_stand_back"),]],
+[anyone|plyr, "companion_recruit_backstory_delayed_response", [], "Never mind, another time perhaps.", "close_window", [(call_script,"script_stand_back"),(try_begin),(eq, "$g_talk_troop", trp_npc21),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),(try_end),]],
 
 [anyone, "companion_recruit_signup_confirm", [], "Good! Give me a few moments to prepare and I'll be ready to move.", "close_window",
    [(call_script,"script_stand_back"),
    (call_script, "script_recruit_troop_as_companion", "$g_talk_troop"),
    (party_set_slot, "$current_town", slot_party_has_companion, 0),
    (try_begin),
+    (eq, "$g_talk_troop", "trp_npc21"),
+    (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),
+   (else_try),
     (eq, "$g_talk_troop", "trp_npc18"),
     (neg|troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate), #First time
     (troop_remove_item, "trp_npc18","itm_feet_chains"),
@@ -1234,7 +1291,11 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 ### Rehire dialogues
 [anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
-                     (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate)],
+                     (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "My offer to rejoin you still stands, if you'll have me.", "companion_rehire", []],
 
 ### If the companion and the player were separated in battle
@@ -1245,7 +1306,11 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (val_add, ":battle_fate", ":fate_roll"),
                      (str_store_string, 6, ":battle_fate"),
                      (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
-                     (str_store_string, 5, ":honorific")],
+                     (str_store_string, 5, ":honorific"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, or slain, or got away. I've been waiting here since then, looking for news of your fate. Shall I get my gear together and rejoin your company?",
    "companion_rehire", [(troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate),]],
 
@@ -1255,7 +1320,11 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (troop_slot_eq, "$g_talk_troop", slot_troop_turned_down_twice, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_quit),
                      (troop_get_slot, ":speech", "$g_talk_troop", slot_troop_rehire_speech),
-                     (str_store_string, 5, ":speech")],
+                     (str_store_string, 5, ":speech"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "{s5}", "companion_rehire", [(troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate)]],
 
 ###If the player and the companion parted on good terms
@@ -1265,7 +1334,11 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
                      (str_store_string, 21, ":honorific"),
                      (troop_get_slot, ":speech", "$g_talk_troop", slot_troop_backstory_delayed),
-                     (str_store_string, 5, ":speech")],
+                     (str_store_string, 5, ":speech"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "It is good to see you, {s21}! To tell you the truth, I had hoped to run into you.", "companion_was_dismissed", [
   (troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate)]],
 
@@ -1276,7 +1349,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone|plyr, "companion_rehire", [(hero_can_join, "p_main_party")], "Welcome back, my friend!", "companion_recruit_signup_confirm", []],
 [anyone|plyr, "companion_rehire", [],  "Sorry, I can't take on anyone else right now.", "companion_rehire_refused", []],
-[anyone, "companion_rehire_refused", [], "Well... Look me up if you change your mind, eh?", "close_window", [(call_script,"script_stand_back"),]],
+[anyone, "companion_rehire_refused", [], "Well... Look me up if you change your mind, eh?", "close_window", [(call_script,"script_stand_back"), (try_begin),(eq, "$g_talk_troop", trp_npc21),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise"),(try_end),]],
 
 #[anyone, "event_triggered",
 #   [ (faction_slot_eq, "fac_player_supporters_faction", slot_faction_leader, "$g_talk_troop"),
@@ -1518,7 +1591,12 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                          (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_2ary_morality_speech),
                      (try_end),
                      (str_store_string, 21, "$npc_grievance_string"),
-                     (str_store_string, 5, ":speech")],
+                     (str_store_string, 5, ":speech"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (store_conversation_agent, ":troll_agent"),
+                        (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "{s5}", "companion_objection_response", [(assign, "$npc_with_grievance", 0)]],
 
 [anyone|plyr, "companion_objection_response", [(eq, "$npc_praise_not_complaint", 1)],
@@ -1553,7 +1631,12 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_personalityclash2_speech),
                      (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash2_object),
                      (str_store_troop_name, 11, ":object"),
-                     (str_store_string, 5, ":speech")],
+                     (str_store_string, 5, ":speech"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (store_conversation_agent, ":troll_agent"),
+                        (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "{s5}", "companion_personalityclash2_b", [
                     (assign, "$npc_with_personality_clash_2", 0),
                     (troop_get_slot, ":grievance", "$map_talk_troop", slot_troop_personalityclash_penalties),
@@ -1616,7 +1699,12 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_personalityclash_speech),
                      (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalityclash_object),
                      (str_store_troop_name, 11, ":object"),
-                     (str_store_string, 5, ":speech")],
+                     (str_store_string, 5, ":speech"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (store_conversation_agent, ":troll_agent"),
+                        (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "{s5}", "companion_personalityclash_b", [
                     (assign, "$npc_with_personality_clash", 0),
                     (troop_get_slot, ":grievance", "$map_talk_troop", slot_troop_personalityclash_penalties),
@@ -1681,7 +1769,12 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_personalitymatch_speech),
                      (troop_get_slot, ":object", "$map_talk_troop", slot_troop_personalitymatch_object),
                      (str_store_troop_name, 11, ":object"),
-                     (str_store_string, 5, ":speech")],
+                     (str_store_string, 5, ":speech"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (store_conversation_agent, ":troll_agent"),
+                        (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
    "{s5}", "companion_personalitymatch_b", [(assign, "$npc_with_personality_match", 0)]],
 
 [anyone, "companion_personalitymatch_b", [
@@ -1715,7 +1808,12 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (try_begin),
                        (eq, "$players_kingdom", ":npc_faction"),
                        (assign, reg6, 1),
-                     (try_end)],
+                     (try_end),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (store_conversation_agent, ":troll_agent"),
+                        (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "{s5}, {reg6?our:my} {s6} homeland is suffering grievously in the War, I ask you to consider helping {reg6?our:my} people as soon as we are rested and ready.", "companion_faction_demolished", []],
 
 [anyone|plyr, "companion_faction_demolished", [],  "Then we shall ride to aid {s6} immediately.", "close_window", [(call_script,"script_stand_back"),]],
@@ -1725,7 +1823,12 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (eq, "$npc_map_talk_context", slot_troop_home), 
                      (store_conversation_troop, "$map_talk_troop"),
                      (troop_get_slot, ":speech", "$map_talk_troop", slot_troop_home_intro),
-                     (str_store_string, s5, ":speech")],
+                     (str_store_string, s5, ":speech"),
+                     (try_begin),
+                        (eq, "$g_talk_troop", trp_npc21),
+                        (store_conversation_agent, ":troll_agent"),
+                        (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue"),
+                     (try_end),],
 "{s5}", "companion_home_description", [(troop_set_slot, "$map_talk_troop", slot_troop_home_speech_delivered, 1)]],
 
 [anyone|plyr, "companion_home_description", [],  "Tell me more.", "companion_home_description_2", []],

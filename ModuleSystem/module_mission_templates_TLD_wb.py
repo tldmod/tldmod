@@ -1965,6 +1965,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     ###non-trolls stagger###
     (try_begin),
         (neg|is_between, ":troop_id", "trp_moria_troll", "trp_multiplayer_profile_troop_male"),
+        (neq, ":troop_id", "trp_npc21"), 
         (try_begin),
             (ge, ":damage", 30),
             (assign, ":deal_damage", 1),

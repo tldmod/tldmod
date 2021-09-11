@@ -829,6 +829,7 @@ scripts = [
 	  (troop_get_type, ":race", ":troop_id"),
 	  (try_begin),
         (eq, ":race", tf_troll),
+        (neq, ":troop_id", "trp_npc21"), #not for Berta
 		(val_add, ":wage", 5),
 		(val_mul, ":wage", 10),# trolls cost x 27, #InVain: reduced to 10, which still amounts to ~800
 	  (try_end),
@@ -17283,8 +17284,21 @@ scripts = [
 	    (troop_set_slot, "trp_npc20", slot_troop_cur_center, "p_town_dol_guldur"),  #TLD
 	    (troop_set_slot, "trp_npc20", slot_troop_rank_request, 5),  #TLD
 
+	    # Troll Berta
+	    (troop_set_slot, "trp_npc21", slot_troop_morality_type, tmt_egalitarian),
+	    (troop_set_slot, "trp_npc21", slot_troop_morality_value, 2), 
+	    (troop_set_slot, "trp_npc21", slot_troop_2ary_morality_type, -1), 
+	    (troop_set_slot, "trp_npc21", slot_troop_2ary_morality_value, 0),
+	    (troop_set_slot, "trp_npc21", slot_troop_personalityclash_object, "trp_npc20"), #Zigûrphel
+	    (troop_set_slot, "trp_npc21", slot_troop_personalityclash2_object, "trp_no_troop"),  #none
+	    (troop_set_slot, "trp_npc21", slot_troop_personalitymatch_object, "trp_npc11"),  #Ufthak
+	    (troop_set_slot, "trp_npc21", slot_troop_home, "p_town_dol_guldur"),
+	    (troop_set_slot, "trp_npc21", slot_troop_payment_request, 2500 / companionPriceMult ),
+	    (troop_set_slot, "trp_npc21", slot_troop_cur_center, "p_town_gundabad"),  #TLD
+	    (troop_set_slot, "trp_npc21", slot_troop_rank_request, 5),  #TLD
+        
 	    #Others (placeholder)
-	    (try_for_range, ":placeholder_troops", "trp_npc21", "trp_werewolf"),
+	    (try_for_range, ":placeholder_troops", "trp_npc22", "trp_werewolf"),
 		   	(troop_set_slot, ":placeholder_troops", slot_troop_morality_type, -1),
 		    (troop_set_slot, ":placeholder_troops", slot_troop_morality_value, 0), 
 		    (troop_set_slot, ":placeholder_troops", slot_troop_2ary_morality_type, -1), 
@@ -17362,6 +17376,10 @@ scripts = [
 ###Primary morality check
             (try_begin),
                 (troop_slot_eq, ":npc", slot_troop_morality_type, ":action_type"),
+                    (try_begin),
+                        (eq, ":npc", "trp_npc21"), #Berta exception - doesn't care about casualties
+                        (neq, ":action_string", "str_excessive_casualties"),
+                    (try_end),
                 (troop_get_slot, ":value", ":npc", slot_troop_morality_value),
                 (try_begin),
                     (troop_slot_eq, ":npc", slot_troop_morality_state, tms_acknowledged),
