@@ -3756,4 +3756,12 @@ Even in the last case, the player can make formations up to four lines by orderi
 
 #Mordor Orc patrol camp (internally named cirith ungol) Companion added down here for savegame compat.
 ("mordor_cungol_guildmaster_companion", "O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?"),
+
+("gundabad_guildmaster_companion_player_ask", "All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?"),
+("gundabad_guildmaster_companion_none", " I care not where you come from - you’ll watch your tongue around here! Oh yes, be careful how you speak to us, or you just might find yourself falling into a dark hole of snakes in these tunnels of ours. Our fighting lads are off in rebel lands, fighting thieves and brigands and murderous elf-friends. And what’re you about, eh? Shirking your own share of the fighting, spying on our private business? Off with you, back into the fray, like a proper soldier!"),
+("gundabad_guildmaster_companion_player_none_ok", "You’ll watch your words with me, if you know what’s good for you."),
+("gundabad_guildmaster_player_found_ok", "You’ll watch your words with me, if you know what’s good for you."),
+
+("gundabad_guildmaster_companion", "There's a troll called Berta you could ask. You can find her in the inner caves. [placeholder]"),
+
 ]

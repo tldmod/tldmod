@@ -3209,7 +3209,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       str_9|agi_8|int_15|cha_10|level(15),wp_one_handed(90)|wp_two_handed(90)|wp_polearm(90)|wp_archery(70)|wp_throwing(70),knows_common|knows_ironflesh_1|knows_power_strike_3|knows_power_throw_1|knows_weapon_master_2|knows_athletics_2|knows_riding_3|knows_looting_2|knows_tactics_2|knows_spotting_4|knows_inventory_management_1|knows_wound_treatment_4|knows_surgery_6|knows_first_aid_5|knows_persuasion_2|knows_prisoner_management_2|knows_leadership_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
 
 ["npc21","Berta","_",tf_hero|tf_troll| tf_unmoveable_in_party_window,0,0,fac_gundabad,
-    [itm_gunda_troll_head_a, itm_gunda_troll_body_berta,itm_gunda_troll_hands,itm_gunda_troll_feet,itm_giant_bone_cudgel,itm_troll_shield_b,],
+    [itm_gunda_troll_head_a, itm_gunda_troll_body_berta,itm_gunda_troll_hands,itm_gunda_troll_feet,itm_giant_bone_cudgel,],
         str_30| agi_30| int_3| cha_3|level(36),wp(120)|wp_one_handed(120),knows_power_strike_9|knows_ironflesh_13|knows_athletics_8|knows_shield_8,troll_face1],
 
 ["npc22","Zigûrphel","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,

@@ -26760,6 +26760,22 @@ command_cursor_scripts = [
 
 	(party_set_slot, "p_town_harad_camp", slot_party_has_companion, 1),
 
+	# Gundabad
+	(try_for_range, ":gunda_guildmasters", mayors_begin, mayors_end),
+    (store_troop_faction, ":troop_faction", ":gunda_guildmasters"),
+    (eq, ":troop_faction", "fac_gundabad"),
+		(troop_set_slot, ":gunda_guildmasters", slot_troop_gm_companion_ask, "str_gundabad_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":gunda_guildmasters", slot_troop_gm_companion_none, "str_gundabad_guildmaster_companion_none"),
+		(troop_set_slot, ":gunda_guildmasters", slot_troop_gm_companion_player_none, "str_gundabad_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":gunda_guildmasters", slot_troop_gm_companion_player_found, "str_gundabad_guildmaster_player_found_ok"),
+		(troop_set_slot, ":gunda_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":gunda_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_gunda", slot_troop_gm_companion_1, "str_gundabad_guildmaster_companion"),
+
+	(party_set_slot, "p_town_gundabad", slot_party_has_companion, 1),
+
 ]),
 
 ("guildmaster_which_faction_companion", [

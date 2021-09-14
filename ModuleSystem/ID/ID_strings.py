@@ -2691,5 +2691,10 @@ str_imladris_guildmaster_companion_player_none_ok = 2689
 str_imladris_guildmaster_player_found_ok = 2690
 str_show_keybinds_form = 2691
 str_mordor_cungol_guildmaster_companion = 2692
+str_gundabad_guildmaster_companion_player_ask = 2693
+str_gundabad_guildmaster_companion_none = 2694
+str_gundabad_guildmaster_companion_player_none_ok = 2695
+str_gundabad_guildmaster_player_found_ok = 2696
+str_gundabad_guildmaster_companion = 2697
 
 
