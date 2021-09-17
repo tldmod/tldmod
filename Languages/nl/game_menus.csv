@@ -68,7 +68,7 @@ mno_start_go|GONDOR, het Koninkrijk van de Witte Toren
 mno_start_ro|Rohan, Het Paardenvolk
 mno_start_du|DUNEDAIN, De oude dynastie van de Mens.
 mno_start_be|BEORNINGS, Het Berenvolk
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood
+mno_start_wo|BOSMANNEN, van de rand van Mirkwood
 mno_start_da|Het noordelijke Koninkrijk van DALE
 menu_start_good_elf|^^^^^^^^^^Welk bos leef je in, Ouderling?
 mno_start_ri|RIVENDELL, van Heer Elrond
@@ -165,7 +165,7 @@ mno_strat_tweaks_rank_gain_rate|Rank steiging radius: {s7}
 mno_strat_tweaks_back|Terug naar het tweaks menu.
 menu_camp_action|^^^^^^^^^ Welk object?
 mno_camp_drink_water|Drink het Ent Water!
-; mno_camp_drink_orc_brew|Pass around the Orc Brew!
+mno_camp_drink_orc_brew|Geef de Ork Brouw door!
 mno_camp_action_4|Terug.
 menu_assasins_attack_player_won|Je hebt de moordenaars succesvol afgeslagen van {s2}, gestuurd door {s3}. 
 menu_assasins_attack_player_retreat|Je bent levend ontsnapt!
@@ -233,7 +233,7 @@ menu_join_battle|^^^Je helpt {s2} tegen {s1}.^ Je hebt {reg22} troepen klaar voo
 mno_join_attack|Val de vijand aan.
 mno_join_order_attack|Order je troepen om aan te vallen met je bondgenoten, terwijl je terug blijft.
 mno_control_allies_join_menu|Gebruik influentie Punten om je Bondgenoten te Commanderen in het Veld.
-; mno_join_attack_bearform|Leap into battle in bear form
+mno_join_attack_bearform|Spring in het gevencht in beer vorm.
 mno_join_leave|Stop met aanvallen.
 mno_player_control_allies_join_menu|Commandeer ze en Val de vijand aan
 menu_join_order_attack|{s4}^^Uw slachtoffers: {s8}^^Geallieerden slachtoffers: {s9}^^Vijandelijke slachtoffers: {s10}

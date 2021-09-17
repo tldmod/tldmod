@@ -39,10 +39,10 @@ skl_shield_desc|Réduit les dégâts infligés au bouclier du personnage (de 8%%
 skl_weapon_master|Maître d'armes
 skl_weapon_master_desc|Rend plus facile l'apprentissage et augmente la limite de maîtrise des armes. Les limites augmentent ainsi : 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Compétence personnelle)
 skl_power_draw|Puissance de tension
-skl_power_draw_desc|Permet au personnage d'utiliser des arcs plus puissants. Chaque point de cette compétence (jusqu'à 4 plus la puissance de tension requise de l'arc) augmente les dégâts de l'arc de 12%%. (Compétence personnelle)
+skl_power_draw_desc|Permet au personnage d'utiliser des arcs plus puissants. Chaque point de cette compétence (jusqu'à 4 plus la puissance de tension requise de l'arc) augmente les dégâts de l'arc de 14 %%. (Compétence personnelle)
 skl_power_throw|Puissance de jet
 skl_power_throw_desc|Chaque point investi dans cette compétence augmente les dégâts des armes de jet de 10 %%. (Compétence personnelle)
 skl_power_strike|Puissance de frappe
 skl_power_strike_desc|Chaque point investi dans cette compétence augmente les dégâts en mêlée de 8 %%. (Compétence personnelle)
 skl_ironflesh|Vigueur
-skl_ironflesh_desc|Chaque point investi dans cette compétence augmente la santé de 2. (Compétence personnelle)
+skl_ironflesh_desc|Chaque point investi dans cette compétence augmente les points de vie de 2. (Compétence personnelle)

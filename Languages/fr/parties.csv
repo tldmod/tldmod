@@ -13,7 +13,7 @@ p_town_cair_andros|Cair Andros
 p_town_calembel|Calembel
 p_town_edoras|Edoras
 p_town_aldburg|Aldburg
-p_town_hornburg|Fort-le-Cor
+p_town_hornburg|Ferté-au-Cor
 p_town_east_emnet|Estemnet
 p_town_westfold|Ouestfolde
 p_town_west_emnet|Ouestemnet
@@ -34,13 +34,13 @@ p_town_thranduils_halls|Halls de Thranduil
 p_town_woodelf_camp|Camp des elfes sylvains
 p_town_woodelf_west_camp|Camp occidental des elfes sylvains
 p_town_woodsmen_village|Village de Forestiers
-p_town_beorning_village|Village de Béornides
+p_town_beorning_village|Village de Béorniens
 p_town_beorn_house|Maison de Beorn
 p_town_moria|Portes de la Moria
 p_town_troll_cave|Caverne de trolls
 p_town_dale|Le Val
 p_town_esgaroth|Esgaroth
-p_town_dunland_camp|Campement des Dunlandais
+p_town_dunland_camp|Campement dunlandais
 p_town_harad_camp|Campement des Haradrim
 p_town_khand_camp|Campement de Khand
 p_town_umbar_camp|Camp corsaire
@@ -57,7 +57,7 @@ p_town_goblin_north_outpost|Gobelinville
 p_town_goblin_south_outpost|Avant-poste sud gobelin
 p_town_gundabad_m_outpost|Avant-poste de Gundabad dans Grand'Peur
 p_town_erebor|Erebor
-p_town_ironhill_camp|Carrière des Monts du Fer
+p_town_ironhill_camp|Carrière des Collines de Fer
 p_advcamp_gondor|Camp avancé du Gondor
 p_advcamp_rohan|Camp avancé du Rohan
 p_advcamp_isengard|Camp avancé de l'Isengard
@@ -74,8 +74,8 @@ p_advcamp_guldur|Camp avancé de Dol Guldur
 p_advcamp_gundabad|Camp avancé de Gundabad
 p_advcamp_dale|Camp avancé du Val
 p_advcamp_dwarf|Camp avancé d'Erebor
-p_advcamp_dunland|Camp avancé du Pays de Dun
-p_advcamp_beorn|Camp avancé des Béornides
+p_advcamp_dunland|Camp avancé dunlandais
+p_advcamp_beorn|Camp avancé des Béorniens
 p_argonath|Argonath
 p_argonath2|Argonath
 p_hand_isen|Signe de la Main d'Isengard
@@ -99,7 +99,7 @@ p_ford_fangorn|Entalluve
 p_ford_fangorn2|Limeclaire
 p_ford_moria|Celebrant
 p_fangorn_center|Centre de Fangorn
-p_ring_hunter_lair|Repaire des Chasseurs d'Anneau
+p_ring_hunter_lair|Repaire des chasseurs d'anneau
 p_raft|Hommes du radeau
 p_amon_din|Amon Din
 p_eilenach|Eilenach
@@ -108,4 +108,4 @@ p_erelas|Erelas
 p_min_rimmon|Min Rimmon
 p_calenhad|Calenhad
 p_amon_anwar|Amon Anwar
-p_ancient_ruins|Ruines Antiques
+p_ancient_ruins|Ruines antiques

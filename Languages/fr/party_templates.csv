@@ -11,7 +11,7 @@ pt_raging_trolls|Trolls enragés
 pt_looters|Orques tribaux
 pt_forest_bandits|Traînards orques
 pt_mountain_bandits|Gobelins sauvages
-pt_steppe_bandits|Parias du Pays de Dun
+pt_steppe_bandits|Parias dunlandais
 pt_sea_raiders|Corsaires renégats
 pt_deserters|Déserteurs
 pt_merchant_caravan|Caravane
@@ -27,13 +27,13 @@ pt_sacrificed_messenger|Messager sacrifié
 pt_gandalf|Cavalier solitaire
 pt_nazgul|Cavalier solitaire
 pt_gondor_scouts|Éclaireurs gondoriens
-pt_blackroot_auxila|Auxiliaires du Val de Blackroot
+pt_blackroot_auxila|Auxiliaires du Val de Sourcenoire
 pt_lamedon_auxila|Auxiliaires du Lamedon
 pt_lossarnach_auxila|Auxiliaires de Lossarnach
 pt_pinnath_gelin_auxila|Auxiliaires de Pinnath Gelin
 pt_ranger_scouts|Éclaireurs rangers
 pt_rohan_scouts|Éclaireurs rohirrims
-pt_lorien_scouts|Éclaireurs de la Lórien
+pt_lorien_scouts|Éclaireurs de la Lothlórien
 pt_woodelf_scouts|Éclaireurs elfes de Grand'Peur
 pt_imladris_scouts|Éclaireurs dúnedain
 pt_dale_scouts|Éclaireurs du Val
@@ -75,7 +75,7 @@ pt_rhun_raiders|Pillards de Rhûn
 pt_gondor_patrol|Patrouille du Gondor
 pt_rohan_patrol|Patrouille de Rohirrim
 pt_imladris_patrol|Patrouille de Dúnedain
-pt_lorien_patrol|Patrouille de la Lórien
+pt_lorien_patrol|Patrouille de la Lotlórien
 pt_woodelf_patrol|Patrouille de Grand'Peur
 pt_dale_patrol|Patrouille du Val
 pt_esgaroth_patrol|Patrouille d'Esgaroth
@@ -84,7 +84,7 @@ pt_ranger_patrol|Patrouille de rangers
 pt_amroth_patrol|Patrouille de Dol Amroth
 pt_pelargir_patrol|Patrouille de Pelargir
 pt_lossarnach_patrol|Patrouille du Lossarnach
-pt_brv_patrol|Patrouille de la Vallée de Morthond
+pt_brv_patrol|Patrouille du Val de Sourcenoire
 pt_pinnath_patrol|Patrouille de Pinnath Gelin
 pt_lamedon_patrol|Patrouille du Lamedon 
 pt_mordor_war_party|Armée du Mordor
@@ -106,7 +106,7 @@ pt_gondor_elite_company|Compagnie d'élite du Gondor
 pt_rohan_elite_company|Compagnie d'élite du Rohan
 pt_imladris_elite_company|Compagnie d'élite de Fondeval
 pt_lorien_elite_company|Compagnie d'élite de la Lothlórien
-pt_woodelf_elite_company|Compagnie d'élite des elfes Sylvains
+pt_woodelf_elite_company|Compagnie d'élite des elfes sylvains
 pt_dale_elite_company|Compagnie d'élite du Val
 pt_dwarf_elite_company|Compagnie d'élite naine
 pt_gondor_caravan|Caravane du Gondor
@@ -136,13 +136,13 @@ pt_legion_minas_morgul|Légion de Minas Morgul
 pt_legion_udun|Légion d'Udun
 pt_legion_gorgoroth|Légion de Gorgoroth
 pt_legion_barad_dur|Légion de Barad-Dûr
-pt_beorn_messenger|Messager Béornien
+pt_beorn_messenger|Messager béornien
 pt_village|Village
 pt_ring_hunters|Chasseurs d'anneau
 pt_scout_camp_small|Camp d'éclaireurs
 pt_scout_camp_large|Camp fortifié d'éclaireurs
-pt_beorn_caravan|Caravane des hommes des bois
+pt_beorn_caravan|Caravane d'hommes des bois
 pt_orc_horde|Horde d'orques
 pt_volunteers|Réserves
 pt_refugees|Réfugiés
-pt_retreat_troops|Couvrir les soldats
+pt_retreat_troops|Troupes de couverture

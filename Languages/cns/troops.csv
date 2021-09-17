@@ -1245,7 +1245,7 @@ trp_merchant_orc_sentry_pl|后勤营地
 trp_merchant_candros|物资官
 trp_merchant_candros_pl|马厩和仓库
 trp_merchant_hannun|物资官
-; trp_merchant_hannun_pl|ranger supplies
+trp_merchant_hannun_pl|ranger supplies
 trp_merchant_mtirith|物资官
 trp_merchant_mtirith_pl|马厩和仓库
 trp_merchant_pelargir|物资官
@@ -1446,13 +1446,13 @@ trp_elder_uhcamp|营长
 trp_elder_uhcamp_pl|营地
 trp_elder_urcamp|营长
 trp_elder_urcamp_pl|营地
-; trp_elder_woodelf_camp|Elder
+trp_elder_woodelf_camp|Elder
 trp_elder_woodelf_camp_pl|营地
-; trp_elder_woodelf_west_camp|Elder
+trp_elder_woodelf_west_camp|Elder
 trp_elder_woodelf_west_camp_pl|营地
-; trp_elder_beorn_v|Beorning Elder
+trp_elder_beorn_v|Beorning Elder
 trp_elder_beorn_v_pl|村落
-; trp_elder_troll_cave|Cave Chief
+trp_elder_troll_cave|Cave Chief
 trp_elder_troll_cave_pl|洞窟
 trp_elder_dg_outpost|卢恩营地酋长
 trp_elder_dg_outpost_pl|营地
@@ -1460,13 +1460,13 @@ trp_elder_rhun_sc|卢恩营地酋长
 trp_elder_rhun_sc_pl|营地
 trp_elder_rhun_nc|卢恩营地酋长
 trp_elder_rhun_nc_pl|营地
-; trp_elder_gunda_ne|Orc Elder
+trp_elder_gunda_ne|Orc Elder
 trp_elder_gunda_ne_pl|营地
-; trp_elder_gunda_nw|Orc Elder
+trp_elder_gunda_nw|Orc Elder
 trp_elder_gunda_nw_pl|营地
-; trp_elder_gunda_s|Orc Elder
+trp_elder_gunda_s|Orc Elder
 trp_elder_gunda_s_pl|营地
-; trp_elder_gunda_m|Orc Elder
+trp_elder_gunda_m|Orc Elder
 trp_elder_gunda_m_pl|营地
 trp_elder_ironhill|营地酋长
 trp_elder_ironhill_pl|营地

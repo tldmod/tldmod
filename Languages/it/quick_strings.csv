@@ -935,7 +935,7 @@ qstr_A_group_of_{s1}_is_{|Un gruppo di {s1} sta {s10} verso di te.
 qstr_You_are_attacking_a_|Stai attaccando un gruppo di {s1}.
 qstr_The_battle_against_t|La battaglia contro il gruppo di {s1} continua.
 qstr_There_are_{reg39}_al|Ci sono {reg39} comandanti alleati in questa battaglia. Puoi dare ordini a loro e alle loro truppe per {reg40} Punti Influenza.
-qstr_Having_a_small_party|Avere una piccola compagnia ha i suoi vantaggi... Tu e i tuoi uomini potete restare nascosti al nemico per qualche ora per non essere visti.
+qstr_Having_a_small_party|Una piccola compagnia ha i suoi vantaggi... Tu e i tuoi uomini potete restare nascosti al nemico per qualche ora in modo da non essere avvistati.
 qstr_Your_ability_to_mast|La tua capacità di sopravvivere in ambienti difficili ti permette di trovare un posto sicuro dove nasconderti. (La tua abilità in Mimetismo ti permette di nasconderti con {reg1} soldati)
 qstr_{reg4}_will_be_lost.|{reg4} tuoi soldati sono stati sacrificati.
 qstr_{s13}_asked_you_to_r|{s13} Ti ha chiesto di fare rapporto da lui con almeno {reg13} truppe.
@@ -1095,7 +1095,7 @@ qstr_You_have_{reg69}_ally|Hai {reg69} compagnie alleate al tuo seguito
 qstr_The_forces_of_{s2}_h|Le forze di {s2} si sono radunate e marciano verso {s15} !
 qstr_Your_scouts_report_s|I tuoi esploratori hanno avvistato un gruppo di {s2} nelle vicinanze.
 qstr_{s1}_from_{s2}|{s1} da {s2}
-qstr_When_dealing_with_lo|Quando si parla della popolazione locale di {s11}, ricorda che non ti conoscono e non ti attribuiscono necessariamente i meriti guadagnati presso {s10}. ^^(I Punti Risorsa che puoi spendere tra le persone di {s11} non sono quelli guadagnati presso {s10}, ma solo quelli guadagnati con {s11})
+qstr_When_dealing_with_lo|Quando si parla della popolazione locale relativa a {s11}, ricorda che non ti conoscono e non ti attribuiscono necessariamente i meriti guadagnati presso {s10}. ^^(I Punti Risorsa che puoi spendere tra le persone relative a {s11} non sono quelli guadagnati presso {s10}, ma solo quelli guadagnati con {s11})
 qstr_Info|Informazioni
 qstr_You_came_into_a_poss|Sei entrato in possesso di una strana, grande ciotola d'acqua fresca dove ci si specchia. C'è un piccolo odore di muschio.
 qstr_Obtained:_Ent_water.|Ottenuto: Acqua degli Ent.

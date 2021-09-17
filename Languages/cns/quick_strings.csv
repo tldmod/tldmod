@@ -197,7 +197,7 @@ qstr_+1_to_Strength|力+1
 qstr_+1_to_Agility|敏+1
 qstr_+1_to_Leadership|统+1
 qstr_+1_to_Wildcraft|自然力+1
-; qstr_+1_to_Tracking|+1 to Tracking
+qstr_+1_to_Tracking|+1 to Tracking
 qstr_when_equipped|装备时
 qstr_+1_to_Power_Draw|强弓等级+1
 qstr_The_record_of_Balin_|失败的巴林远征队的记录。
@@ -217,15 +217,15 @@ qstr_+1_to_Intelligence|智力属性+1
 qstr_+2_to_Surgery|手术等级+2
 qstr_+1_to_Riding|骑术技能等级+1
 qstr_+1_to_Mounted_Archer|骑射技能等级+1
-; qstr_Bonus_to_Riding|Bonus to Riding
-; qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
-; qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
+qstr_Bonus_to_Riding|Bonus to Riding
+qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
+qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
 qstr_+1_to_Prisoner_Mgmt|俘虏管理等级+1 
 qstr_+2_to_Tactics|战术等级+2
 qstr_+1_Intelligence|智力属性+1
 qstr_+{reg1}_to_Spotting|侦查技能等级+{reg1}
 qstr__Scales_with_Wildcra|（规模与荒野求生技能等级相关）
-; qstr_+1_to_Power_Throw|+1 to Power Throw
+qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|侦查技能等级+1
 qstr_Less_Dunnish_upkeep|缺乏丹尼斯维护
 qstr_Less_Wargs_upkeep|缺乏座狼维护
@@ -715,7 +715,7 @@ qstr_Use_Up/Down_arrow_ke|使用上/下箭头键以前倾/后倾
 qstr_Fixed_Camera___Right|固定相机—右肩
 qstr_Fixed_Camera___Left_|固定相机—左肩
 qstr_Fixed_Camera___Cente|固定视角 - 正中
-; qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
+qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 qstr_While_visiting_towns|当访问城镇、据点和营地时，你可以与四处走动的人们谈话。不同派系的人有不同的事可说—一些能够让你理解他们的想法，其它的会分享他们的传闻。他们都能够让你更加了解他们的文化和派系，有时他们可能知道找到神秘地点的线索，或是在野外生存和在魔戒圣战中战斗的技巧和窍门。
 qstr_Cannot_leave_now.|现在不能离开。
 qstr_You_have_found_the_l|你找到了当地铁匠。
@@ -1060,7 +1060,7 @@ qstr_You_are_entering_{s1|你进入了{s1}({s2})。
 qstr_You_are_entering_{s1}|你进入了{s1}。
 qstr_The_war_expands_comm|随着战事的如火如荼，指挥官们变得更加激进了。(围城需求减少)
 qstr_Your_party_is_spotte|你的部队被{s1}发现了。
-; qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
+qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
 qstr_Party_has_nothing_to|部队食物短缺了！
 qstr_You_pay_for_accommod|你支付了宿金。
 qstr_The_troll_outside_{s|{s2}外的食人妖被杀了。任务取消。

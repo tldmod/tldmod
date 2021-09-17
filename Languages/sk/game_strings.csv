@@ -1366,7 +1366,7 @@ str_rohan_rumor_3|Niet jadrnejších koní než rohanských. Dokonca aj elfovia 
 str_rohan_rumor_4|Pokiaľ dokážeš liečiť ľudí, prosím, postaraj sa rovnako aj o moje kone, ak prídu k zraneniu.
 str_rohan_rumor_5|Priveďte mi ôsmych somárov, vraví... po tom, čo si vyžiadal siedmych už včera. Vyvoláva to podozrenie.
 str_rohan_rumor_6|Gondor dáva prednosť odolnejším koňom. Naši jazdci majú radi galop. Elfovia dostávajú len tých najlepších. A nepriatelia nám ich kradnú!
-; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superior but require a more experienced rider to handle.
+str_rohan_rumor_7|Videl som už plemená púštnych kobýl i varjagských koní. Rohanské kone sú nepochybne lepšie, ale vyžadujú omnoho skúsenejšieho jazdca, aby na nich dokázal jazdiť.
 str_rohan_rumor_8|Vroci sú pomalší, než kone, ale obratnejší. Dajú sa tiež skoliť omnoho ľahšie, než dobre odchovaný kôň.
 str_rohan_rumor_9|Armády tiahnu na Rohan s pikami a kopijami namierenými proti našim skúseným jazdcom. Zradca Saruman vyklčuje do konca tejto vojny aj celý Fargorn, len aby ozbrojil svoje početné šíky.
 str_rohan_rumor_10|Najlepší jazdci v ríši tiež musia vedieť odchovať tie najlepšie kone.
@@ -1927,7 +1927,7 @@ str_trait_desc_butcher|Skúsenosti vycibrili tvoje schopnosti vykrojiť čo najv
 str_trait_title_well_travelled|Zcestovaný
 str_trait_desc_well_travelled|Na dláždených cestách či lesných prtiach, v najvyšších pohoriach aj v najtemnejších údoliach sa ti podarilo nájsť skrýše a dávno zabudnuté divy sveta. Naučil si sa, ako odhaliť nepriateľov dávno pred tým, než si ťa dokážu všimnúť, a tiež určiť najlepšiu cestu pochodu divočinou pre svojich vojakov.
 str_trait_title_bear_shape|Tváromenič
-; str_trait_desc_bear_shape|It is said that men of Beorn's line have the ability to take bear form. Through your kinship with bears you have discovered that you too have that gift.
+str_trait_desc_bear_shape|Hovorí sa že potomkovia Grizla dokážu nadobudnúť medvediu podobu. Pomocou tvojho príbuzenstva s medveďmi si zistil že tiež máš tento dar.
 str_wound_head|ťažký úder do hlavy
 str_wound_chest|niekoľko zlámanýc hrebier
 str_wound_arm|ťažko zmrzačená ruka
@@ -2501,5 +2501,5 @@ str_imladris_guildmaster_companion_player_ask|Starosta, vyhľadávam známych bo
 str_imladris_guildmaster_companion_none|Vyzerá to dobre, veliteľ. Pred tebou stojí asi posledné veľké zhromaždenie Severu tohto Veku a aj všetkých nadchádzajúcich. Človek či elf, my, kto sme sem prišli, už nepomýšľame na návrat. Prišli sme z posledného rodového sídla; z údolí a lesov Eriadoru prišli Núnatani, ktorým vy hovorite Dúnadani. Každý z nás však má nejaké úlohy, aké musí splniť, a tak sa radšej porozhliadni po odvedencov medzi našou posádkou.
 str_imladris_guildmaster_companion_player_none_ok|Rozumiem, starosta. Ďakujem za tvoj čas.
 str_imladris_guildmaster_player_found_ok|Rozumiem, starosta. Ďakujem za tvoj čas.
-; str_show_keybinds_form|Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
+str_show_keybinds_form|Zvláštne klávesové skratky: ^^ Klávesy formácií:^ Použi F1-F4 na rozkazy zvoleným divíziám. ^Drž stlačené F1 aby si umiestnil zvolené divízie.^Umiestni na nepriateľské divízie aby na ne zaútočili.^^ Prechádzať typmi zbraní - O ^^ Prechádzať typom kamery - CTRL+END ^^ Povzbudiť - V ^^ Zavolať koňa - M ^^ Prehľad rozkazov/Minimapa - Backspace
 ; str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?

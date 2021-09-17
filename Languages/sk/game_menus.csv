@@ -68,7 +68,7 @@ mno_start_go|GONDOR, Kráľovstvo Bielej Veže
 mno_start_ro|ROHAN, páni koní
 mno_start_du|DÚNADANIA, prastará dynastia Ľudí
 mno_start_be|GRIZLOVCI, Medvedí ľud
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood
+mno_start_wo|Lesní ľudia, z okrajov Temnohvozdu
 mno_start_da|Severské Kráľovstvo DOLU
 menu_start_good_elf|^^^^^^^^^^v ktorom Lese žiješ, Starší?
 mno_start_ri|ROKLINKA, panstvo Lorda Elronda
@@ -107,7 +107,7 @@ mno_start_2_hib|Šľachtic
 menu_start_haradrim|^^^^^^^Si Haraďan,^ človek z púští Juhu.^Zvol si svoj pôvod
 mno_start_1_des|Púštny človek
 mno_start_2_far|Divoch z Ďalekého Haradu
-menu_start_numenorean|^^^^^^^Si Čierny Númenorejec,^verný Temnote a Morgothovy.^Zvoľ si miesto odkiaľ slúžiš Oku
+menu_start_numenorean|^^^^^^^Si Čierny Númenorejec,^verný Temnote a Morgothovi.^Zvoľ si miesto odkiaľ slúžiš Oku
 mno_start_1_bn|Pod vedením Sauronových úst, v MORRANONE
 mno_start_2_bn|V pevnosti Nekromanta, DOL GULDÚRE
 menu_choose_gender|^^^^^^^^^^Tvoje pohlavie?
@@ -126,7 +126,7 @@ mno_camp_troop|Prezrieť si {reg10? jednotky:}{reg12? and:}{reg11? väzňov:}.
 mno_camp_action|Použiť predmet.
 mno_camp_wait_here|Utáboriť sa tu na nejaký čas.
 mno_camp_options|Zmeniť nastavenia TLD.
-mno_Dev_Menu|Menu Tvorcov
+mno_Dev_Menu|Menu vývojárov
 menu_dev_menu|Toto sú Nástroje Vývojarov, v ktorých si môžeš nastaviť kódy/predvoľby, s ktorými budeš hrať.^^ To sa však odzrkadlí na vytváraní WIP událostí, spúšťačov hracieho mechanizmu, zmenami v kampani ktoré môžu spôsobiť narušenie hry.^^ Používajte len na vlastné riziko! ^^ Taktiež keď budete hlásiť bugy a chyby v hre, oznámte nám tiež, že ste behom hrania použili Menu Tvorcov.
 mno_Cheat_enable|Povoliť cheaty/modderske nastavenia.
 menu_game_options|^^^^^^^^Klikni na možnosť pre prepnutie:
@@ -233,7 +233,7 @@ menu_join_battle|^^^Pomáhaš {s2} proti {s1}.^ Máš k dispozícií {reg22} voj
 mno_join_attack|Zaútočiť na nepriateľov.
 mno_join_order_attack|Prikázať svojím jednotkám zaútočiť spolu so spojencami, zatiaľ čo sa ty budeš držať vzadu.
 mno_control_allies_join_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
-; mno_join_attack_bearform|Leap into battle in bear form
+mno_join_attack_bearform|Vtrhni do bitky v medvedej podobe
 mno_join_leave|Odísť.
 mno_player_control_allies_join_menu|Prevziať nad nimi velenie a zaútočiť na nepriateľa
 menu_join_order_attack|{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}

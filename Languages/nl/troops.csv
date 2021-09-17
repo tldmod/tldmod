@@ -124,24 +124,24 @@ trp_c4_rhun_veteran_swift_horseman|Rhun Ervaren vlugge Ruiter te Paard
 trp_c4_rhun_veteran_swift_horseman_pl|Rhun Ervaren vlugge Ruiters te Paard
 trp_c5_rhun_falcon_horseman|Valk Ruiter te Paard
 trp_c5_rhun_falcon_horseman_pl|Valk Ruiters te Paard
-; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
-; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i2_rhun_tribal_warrior|Rhun Stam Soldaat
+trp_i2_rhun_tribal_warrior_pl|Rhun Stam Soldaten
 trp_i3_rhun_tribal_infantry|Rhun Stam Krijger
 trp_i3_rhun_tribal_infantry_pl|Rhun Stam Krijgers
-; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
-; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
-; trp_i5_rhun_ox_warrior|Warrior of the Ox
-; trp_i5_rhun_ox_warrior_pl|Warriors of the Ox
-; trp_c2_rhun_horseman|Horseman of Rhun
-; trp_c2_rhun_horseman_pl|Horsemen of Rhun
-; trp_c3_rhun_outrider|Outrider of Rhun
-; trp_c3_rhun_outrider_pl|Outriders of Rhun
-; trp_c4_rhun_noble_rider|Noble Rider of Rhun
-; trp_c4_rhun_noble_rider_pl|Noble Riders of Rhun
-; trp_c5_rhun_warrider|Warrider of Rhun
-; trp_c5_rhun_warrider_pl|Warriders of Rhun
-; trp_c6_rhun_warlord|Warlord of Rhun
-; trp_c6_rhun_warlord_pl|Warlords of Rhun
+trp_i4_rhun_vet_infantry|Rhun Ervaren Krijger
+trp_i4_rhun_vet_infantry_pl|Rhun Ervaren Krijgers
+trp_i5_rhun_ox_warrior|Krijger van de Os
+trp_i5_rhun_ox_warrior_pl|Krijgers van de Os
+trp_c2_rhun_horseman|Ruiter van Rhun
+trp_c2_rhun_horseman_pl|Ruiters van Rhun
+trp_c3_rhun_outrider|Voorrijder van Rhun
+trp_c3_rhun_outrider_pl|Voorrijders van Rhun
+trp_c4_rhun_noble_rider|Edele Ruiter van Rhun
+trp_c4_rhun_noble_rider_pl|Edele Ruiters van Rhun
+trp_c5_rhun_warrider|Oorlogsruiter van Rhun
+trp_c5_rhun_warrider_pl|Oorlogsruiters van Rhun
+trp_c6_rhun_warlord|Krijgsheer van Rhun
+trp_c6_rhun_warlord_pl|Krijgsheren van Rhun
 trp_i1_dwarf_apprentice|Leerling Dwerg
 trp_i1_dwarf_apprentice_pl|Leerling Dwergen
 trp_i2_dwarf_warrior|Krijger Dwerg
@@ -196,8 +196,8 @@ trp_i5_gon_vet_swordsman|Ervaren Zwaardvechter van Gondor
 trp_i5_gon_vet_swordsman_pl|Ervaren zwaardvechters van Gondor
 trp_i6_gon_tower_swordsman|Zwaardvechter van de Toren Beschermers
 trp_i6_gon_tower_swordsman_pl|Zwaardvechters van de Toren Beschermer
-; trp_c1_gon_nobleman|Gondor Noble
-; trp_c1_gon_nobleman_pl|Gondor Noble
+trp_c1_gon_nobleman|Gondor Edelman
+trp_c1_gon_nobleman_pl|Gondor Edelman
 trp_c2_gon_squire|Schildknaap van Gondor
 trp_c2_gon_squire_pl|Schildknapen van Gondor
 trp_c3_gon_vet_squire|Ervaren Schildknaap van Gondor
@@ -378,12 +378,12 @@ trp_a5_riv_master_archer|Rivendell Meester Boogschutter
 trp_a5_riv_master_archer_pl|Rivendell Meester Boogschutters
 trp_a6_riv_guardian|Beschermers van Imladris
 trp_a6_riv_guardian_pl|Beschermers van Imladris
-; trp_i3_riv_swordbearer|Rivendell Swordbearer
-; trp_i3_riv_swordbearer_pl|Rivendell Swordbearers
-; trp_i4_riv_vet_swordbearer|Rivendell Veteran Swordbearer
-; trp_i4_riv_vet_swordbearer_pl|Rivendell Veteran Swordbearers
-; trp_i5_riv_swordmaster|Rivendell Swordmaster
-; trp_i5_riv_swordmaster_pl|Rivendell Swordmasters
+trp_i3_riv_swordbearer|Rivendell Zwaarddrager
+trp_i3_riv_swordbearer_pl|Rivendell Zwaarddragers
+trp_i4_riv_vet_swordbearer|Rivendell Ervaren Zwaarddrager
+trp_i4_riv_vet_swordbearer_pl|Rivendell Ervaren Zwaarddragers
+trp_i5_riv_swordmaster|Rivendell Zwaardmeester
+trp_i5_riv_swordmaster_pl|Rivendell Zwaardmeesters
 trp_i6_riv_champion|Kampioen van Imladris
 trp_i6_riv_champion_pl|Kampioenen van Imladris
 trp_ac5_riv_rider|Rivendell Rijder
@@ -528,8 +528,8 @@ trp_i3_khand_warrior|Khand Krijger
 trp_i3_khand_warrior_pl|Khand Krijgers
 trp_i4_khand_vet_warrior|Khand Veteraan Krijger
 trp_i4_khand_vet_warrior_pl|Khand Veteraan Krijgers
-; trp_i5_khand_war_master|Variag War Master
-; trp_i5_khand_war_master_pl|Variag War Masters
+trp_i5_khand_war_master|Variag Oorlogsmeester
+trp_i5_khand_war_master_pl|Variag Oolorgsmeesters
 trp_c2_khand_pony_rider|Khand Pony Rijder
 trp_c2_khand_pony_rider_pl|Khand Pony Rijders
 trp_c3_khand_horseman|Khand Paard Rijder
@@ -548,88 +548,88 @@ trp_i3_khand_pitfighter|Khand Kuil Vechter
 trp_i3_khand_pitfighter_pl|Khand Kuil Vechters
 trp_i4_khand_pit_champion|Khand Kuil Kampioen
 trp_i4_khand_pit_champion_pl|Khand Kuil Kampioenen
-; trp_i5_khand_pit_master|Variag Master of the Pits
-; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
-; trp_ac3_khand_skirmisher|Khand Skirmisher
-; trp_ac3_khand_skirmisher_pl|Khand Skirmishers
-; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
-; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
-; trp_ac5_khand_heavy_skirmisher|Variag Heavy Skirmisher
-; trp_ac5_khand_heavy_skirmisher_pl|Variag Heavy Skirmishers
-; trp_i1_corsair_youth|Umbar Sailor
-; trp_i1_corsair_youth_pl|Umbar Sailors
-; trp_i2_corsair_warrior|Umbar Warrior
-; trp_i2_corsair_warrior_pl|Umbar Warriors
-; trp_i3_corsair_spearman|Spearman of Umbar
-; trp_i3_corsair_spearman_pl|Spearmen of Umbar
-; trp_i4_corsair_raider|Corsair Raider
-; trp_i4_corsair_raider_pl|Corsair Raiders
-; trp_i5_corsair_night_raider|Corsair Night Raider
-; trp_i5_corsair_night_raider_pl|Corsair Night Raiders
-; trp_a2_corsair_marine|Umbar Marine
-; trp_a2_corsair_marine_pl|Umbar Marines
-; trp_a3_corsair_marksman|Marksman of Umbar
-; trp_a3_corsair_marksman_pl|Marksmen of Umbar
-; trp_a4_corsair_veteran_marksman|Veteran Marksman of Umbar
-; trp_a4_corsair_veteran_marksman_pl|Veteran Marksmen of Umbar
-; trp_a5_corsair_master_marksman|Corsair Master Marksman
-; trp_a5_corsair_master_marksman_pl|Corsair Master Marksmen
-; trp_i3_corsair_swordsman|Swordsman of Umbar
-; trp_i3_corsair_swordsman_pl|Swordsmen of Umbar
-; trp_i4_corsair_veteran_swordsman|Veteran Swordsman of Umbar
-; trp_i4_corsair_veteran_swordsman_pl|Veteran Swordsmen of Umbar
-; trp_i5_corsair_master_swordsman|Corsair Swordmaster
-; trp_i5_corsair_master_swordsman_pl|Corsair Swordmasters
-; trp_a4_corsair_assassin|Corsair Assassin
-; trp_a4_corsair_assassin_pl|Corsair Assassins
-; trp_a5_corsair_master_assassin|Corsair Assassin
-; trp_a5_corsair_master_assassin_pl|Corsair Assassins
-; trp_i4_corsair_veteran_spearman|Veteran Spearman of Umbar
-; trp_i4_corsair_veteran_spearman_pl|Veteran Spearmen of Umbar
-; trp_i5_corsair_master_spearman|Spearmaster of Umbar
-; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
-; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
-; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
-; trp_i1_isen_orc_snaga|Orc Snaga of Isengard
-; trp_i1_isen_orc_snaga_pl|Orc Snagas of Isengard
-; trp_i2_isen_orc|Orc of Isengard
-; trp_i2_isen_orc_pl|Orcs of Isengard
-; trp_i3_isen_large_orc|Large Orc of Isengard
-; trp_i3_isen_large_orc_pl|Large Orcs of Isengard
-; trp_i4_isen_fell_orc|Fell Orc of Isengard
-; trp_i4_isen_fell_orc_pl|Fell Orcs of Isengard
-; trp_i3_isen_large_orc_despoiler|Large Orc Despoiler
-; trp_i3_isen_large_orc_despoiler_pl|Large Orc Despoilers
-; trp_i4_isen_fell_orc_despoiler|Fell Orc Despoiler
-; trp_i4_isen_fell_orc_despoiler_pl|Fell Orc Despoilers
-; trp_ac2_isen_wolf_rider|Wolf Rider of Isengard
-; trp_ac2_isen_wolf_rider_pl|Wolf Riders of Isengard
-; trp_ac3_isen_warg_rider|Warg Rider of Isengard
-; trp_ac3_isen_warg_rider_pl|Warg Riders of Isengard
-; trp_ac4_isen_white_hand_rider|White Hand Rider
-; trp_ac4_isen_white_hand_rider_pl|White Hand Riders
+trp_i5_khand_pit_master|Variag Meester van de Kuilen
+trp_i5_khand_pit_master_pl|Variag Meesters van de Kuilen
+trp_ac3_khand_skirmisher|Khand Tirailleur
+trp_ac3_khand_skirmisher_pl|Khand Tirailleurs
+trp_ac4_khand_vet_skirmisher|Khand Ervaren Tirailleur
+trp_ac4_khand_vet_skirmisher_pl|Khand Ervaren Tirailleurs
+trp_ac5_khand_heavy_skirmisher|Variag Zware Tirailleur
+trp_ac5_khand_heavy_skirmisher_pl|Variag Zware Tirailleurs
+trp_i1_corsair_youth|Umbar Zeelieder
+trp_i1_corsair_youth_pl|Umbar Zeelieden
+trp_i2_corsair_warrior|Umbar Krijger
+trp_i2_corsair_warrior_pl|Umbar Krijgers
+trp_i3_corsair_spearman|Speerman van Umbar
+trp_i3_corsair_spearman_pl|Speermannen van Umbar
+trp_i4_corsair_raider|Zeerover Plunderaar
+trp_i4_corsair_raider_pl|Zeerover Plunderaars
+trp_i5_corsair_night_raider|Zeerover Nachtelijke Plunderaars
+trp_i5_corsair_night_raider_pl|Zeerover Nachtelijke Plunderaars
+trp_a2_corsair_marine|Umbar Marinier
+trp_a2_corsair_marine_pl|Umbar Mariniers
+trp_a3_corsair_marksman|Scherpshutter van Umbar
+trp_a3_corsair_marksman_pl|Scherpshutters van Umbar
+trp_a4_corsair_veteran_marksman|Ervaren Scherpshutter van Umbar
+trp_a4_corsair_veteran_marksman_pl|Ervaren Scherpshutters van Umbar
+trp_a5_corsair_master_marksman|Zeerover Meester-scherpschutter
+trp_a5_corsair_master_marksman_pl|Zeerover Meester-scherpshutter
+trp_i3_corsair_swordsman|Zwaardvechter van Umbar
+trp_i3_corsair_swordsman_pl|Zwaardvechters van Umbar
+trp_i4_corsair_veteran_swordsman|Ervaren Zwaardvechter van Umbar
+trp_i4_corsair_veteran_swordsman_pl|Ervaren Zwaardvechters van Umbar
+trp_i5_corsair_master_swordsman|Zeerover Zwaardmeester
+trp_i5_corsair_master_swordsman_pl|Zeerover Zwaardsmeesters
+trp_a4_corsair_assassin|Zeerover Sluipmoordenaar
+trp_a4_corsair_assassin_pl|Zeerover Sluipmoordenaars
+trp_a5_corsair_master_assassin|Zeerover Sluipmoordenaar
+trp_a5_corsair_master_assassin_pl|Zeerover Sluipmoordenaars
+trp_i4_corsair_veteran_spearman|Ervaren Speerman van Umbar
+trp_i4_corsair_veteran_spearman_pl|Ervaren Speermannen van Umbar
+trp_i5_corsair_master_spearman|Speermeester van Umbar
+trp_i5_corsair_master_spearman_pl|Speermeesters van Umbar
+trp_i5_corsair_master_pikeman|Meesterpiekenier van Umabr
+trp_i5_corsair_master_pikeman_pl|Meesterpiekeniers van Umbar
+trp_i1_isen_orc_snaga|Ork Snaga van Isengard
+trp_i1_isen_orc_snaga_pl|Ork Snagas van Isengard
+trp_i2_isen_orc|Ork van Isengard
+trp_i2_isen_orc_pl|Orks van Isengard
+trp_i3_isen_large_orc|Grote Ork van Isengard
+trp_i3_isen_large_orc_pl|Grote Ork van Isengard
+trp_i4_isen_fell_orc|Wreede Ork van Isengard
+trp_i4_isen_fell_orc_pl|Wreede Orks van Isengard
+trp_i3_isen_large_orc_despoiler|Grote Ork Plunderaar
+trp_i3_isen_large_orc_despoiler_pl|Grote Ork Plunderaars
+trp_i4_isen_fell_orc_despoiler|Wreede Ork Plunderaar
+trp_i4_isen_fell_orc_despoiler_pl|Wreede Ork Plunderaars
+trp_ac2_isen_wolf_rider|Wolven Rijder van Isengard
+trp_ac2_isen_wolf_rider_pl|Wolven Rijders van Isengard
+trp_ac3_isen_warg_rider|Warg Rijder van Isengard
+trp_ac3_isen_warg_rider_pl|Warg Rijders van Isengard
+trp_ac4_isen_white_hand_rider|Witte Hand Ruiter
+trp_ac4_isen_white_hand_rider_pl|Witte Hand Ruiters
 trp_warg_ghost_1b|Warg
-; trp_warg_ghost_1b_pl|Wargs
+trp_warg_ghost_1b_pl|Warg
 trp_warg_ghost_1c|Warg
-; trp_warg_ghost_1c_pl|Wargs
+trp_warg_ghost_1c_pl|Wargs
 trp_warg_ghost_1d|Warg
-; trp_warg_ghost_1d_pl|Wargs
+trp_warg_ghost_1d_pl|Wargs
 trp_warg_ghost_a1b|Warg
-; trp_warg_ghost_a1b_pl|Wargs
+trp_warg_ghost_a1b_pl|Wargs
 trp_warg_ghost_a1c|Gepantserde Warg
-; trp_warg_ghost_a1c_pl|Armored Wargs
+trp_warg_ghost_a1c_pl|Gepantserde Wargs
 trp_warg_ghost_a2b|Gepantserde Warg
-; trp_warg_ghost_a2b_pl|Armored Wargs
+trp_warg_ghost_a2b_pl|Gepantserde Wargs
 trp_warg_ghost_a2c|Gepantserde Warg
-; trp_warg_ghost_a2c_pl|Armored Wargs
+trp_warg_ghost_a2c_pl|Gepantserde Wargs
 trp_warg_ghost_a3a|Gepantserde Warg
-; trp_warg_ghost_a3a_pl|Armored Wargs
+trp_warg_ghost_a3a_pl|Gepantserde Wargs
 trp_warg_ghost_h|Grote Warg
-; trp_warg_ghost_h_pl|Huge Wargs
-; trp_a2_isen_uruk_tracker|Uruk Hai Tracker
-; trp_a2_isen_uruk_tracker_pl|Uruk Hai Trackers
-; trp_a3_isen_large_uruk_tracker|Large Uruk Hai Tracker
-; trp_a3_isen_large_uruk_tracker_pl|Large Uruk Hai Trackers
+trp_warg_ghost_h_pl|Enorme Wargs
+trp_a2_isen_uruk_tracker|Uruk Hai Spoorzoeker
+trp_a2_isen_uruk_tracker_pl|Uruk Hai Spoorzoekers
+trp_a3_isen_large_uruk_tracker|Grote Uruk Hai Spoorzoeker
+trp_a3_isen_large_uruk_tracker_pl|Grote Uruk Hai Spoorzoekers
 ; trp_a4_isen_fighting_uruk_tracker|Fighting Uruk Hai Tracker
 ; trp_a4_isen_fighting_uruk_tracker_pl|Fighting Uruk Hai Trackers
 ; trp_i6_isen_uruk_berserker|Fighting Uruk Hai Berserker
@@ -886,7 +886,7 @@ trp_walker_man_gondor_green|stedeling
 ; trp_walker_woman_rohan_d|Rohan Maiden
 ; trp_walker_woman_gondor_b|Gondor Woman
 ; trp_walker_woman_gondor_bw|Gondor Woman
-; trp_walker_woman_gondor_w|Gondor Noble
+trp_walker_woman_gondor_w|Gondor Edelman
 ; trp_ramun_the_slave_trader|Ramun the slave trader
 ; trp_guide|Quick Jimmy
 ; trp_galeas|Galeas

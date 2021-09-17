@@ -967,7 +967,7 @@ dlga_enemy_talk_2:close_window|¡Me rendiré cuando hayas muerto!
 dlga_prisoner_chat_00:close_window|^^¡GRRRR!^^
 dlga_prisoner_chat_00:prisoner_chat_3|Ya me has cargado de cadenas, ¿qué más quieres de mí?
 dlga_prisoner_chat_3:prisoner_chat_4|¡No hagas ningún movimiento en falso, escoria!
-dlga_prisoner_chat_3:prisoner_slaughter|¡Vas a ser nuestra cena de hoy!{s20}
+dlga_prisoner_chat_3:prisoner_slaughter|¡Vas a ser nuestra cena de hoy! {s20}
 dlga_prisoner_chat_4:close_window|No estoy en posición de hacer nada contra ti... ¡Déjame en paz!
 dlga_prisoner_slaughter:prisoner_slaughter_02|¡Algún día pagarás por esto!
 dlga_prisoner_slaughter:close_window|¡Algún día pagarás.... ¡Aah... uaarglgh!...

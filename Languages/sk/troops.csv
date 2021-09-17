@@ -124,12 +124,12 @@ trp_c4_rhun_veteran_swift_horseman|Rhunský skúsený rýchly jazdec
 trp_c4_rhun_veteran_swift_horseman_pl|Rhunskí skúsení rychlí jazdci
 trp_c5_rhun_falcon_horseman|Sokolí jazdec na koni
 trp_c5_rhun_falcon_horseman_pl|Sokolí jazdci na koni
-; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
-; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i2_rhun_tribal_warrior|Rhunska domorodá pechota
+trp_i2_rhun_tribal_warrior_pl|Rhúnska domorodá pechota
 trp_i3_rhun_tribal_infantry|Rhunský domorodý bojovník
 trp_i3_rhun_tribal_infantry_pl|Rhunskí domorodí bojovníci
-; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
-; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
+trp_i4_rhun_vet_infantry|Skúsený bojovník Rhunu
+trp_i4_rhun_vet_infantry_pl|Skúsení bojovníci Rhunu
 trp_i5_rhun_ox_warrior|Bojovník kultu Vola
 trp_i5_rhun_ox_warrior_pl|Bojovníci kultu Vola
 trp_c2_rhun_horseman|Jazdec z Rhunu
@@ -1245,7 +1245,7 @@ trp_merchant_orc_sentry_pl|táborový sklad
 trp_merchant_candros|Obchodník so zásobami
 trp_merchant_candros_pl|Stajne a skladište
 trp_merchant_hannun|Obchodník so zásobami
-; trp_merchant_hannun_pl|ranger supplies
+trp_merchant_hannun_pl|hraničiarske zásoby
 trp_merchant_mtirith|Obchodník so zásobami
 trp_merchant_mtirith_pl|Stajne a skladište
 trp_merchant_pelargir|Obchodník so zásobami
@@ -1446,13 +1446,13 @@ trp_elder_uhcamp|Veliteľ tábora
 trp_elder_uhcamp_pl|tábor
 trp_elder_urcamp|Veliteľ tábora
 trp_elder_urcamp_pl|tábor
-; trp_elder_woodelf_camp|Elder
+trp_elder_woodelf_camp|Starší
 trp_elder_woodelf_camp_pl|tábor
-; trp_elder_woodelf_west_camp|Elder
+trp_elder_woodelf_west_camp|Starší
 trp_elder_woodelf_west_camp_pl|tábor
-; trp_elder_beorn_v|Beorning Elder
+trp_elder_beorn_v|Grizlovecký Starší
 trp_elder_beorn_v_pl|dedina
-; trp_elder_troll_cave|Cave Chief
+trp_elder_troll_cave|Veliteľ jaskyne
 trp_elder_troll_cave_pl|jaskyne
 trp_elder_dg_outpost|Táborový náčelník Rhunu
 trp_elder_dg_outpost_pl|tábor
@@ -1460,13 +1460,13 @@ trp_elder_rhun_sc|Táborový náčelník Rhunu
 trp_elder_rhun_sc_pl|tábor
 trp_elder_rhun_nc|Táborový náčelník Rhunu
 trp_elder_rhun_nc_pl|tábor
-; trp_elder_gunda_ne|Orc Elder
+trp_elder_gunda_ne|Ohyzdí Starší
 trp_elder_gunda_ne_pl|tábor
-; trp_elder_gunda_nw|Orc Elder
+trp_elder_gunda_nw|Ohyzdí Starší
 trp_elder_gunda_nw_pl|tábor
-; trp_elder_gunda_s|Orc Elder
+trp_elder_gunda_s|Ohyzdí Starší
 trp_elder_gunda_s_pl|tábor
-; trp_elder_gunda_m|Orc Elder
+trp_elder_gunda_m|Ohyzdí Starší
 trp_elder_gunda_m_pl|tábor
 trp_elder_ironhill|Veliteľ tábora
 trp_elder_ironhill_pl|tábor

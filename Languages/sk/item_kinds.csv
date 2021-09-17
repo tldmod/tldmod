@@ -1,11 +1,11 @@
 itm_horse_meat|Konské Mäso
 itm_practice_sword|Tréningový Meč
-itm_arena_lance|Žrď
+itm_arena_lance|Jazdecká kopija
 itm_practice_staff|Drevená Palica
 itm_practice_bow|Tréningový Luk
 itm_wooden_javelin|Drevený Oštep
 itm_human_meat|Ľudské Mäso
-itm_maggoty_bread|Červavý Chleba
+itm_maggoty_bread|Červivý Chlieb
 itm_cram|Porcia Dálskych Suchárov 
 itm_lembas|Lembas
 itm_smoked_fish|Údené Ryby
@@ -323,7 +323,7 @@ itm_isen_uruk_helm_e|Uruk-Haiská stopárska helma
 itm_isen_uruk_helm_f|Uruk-Haiská stopárska helma
 itm_uruk_pike_b|Mordorská píka
 itm_uruk_falchion_a|Urukský Falchion
-; itm_uruk_falchion_b|Orc Great Scimitar
+itm_uruk_falchion_b|Veľká ohyzdia šabľa
 itm_isengard_sword|Isengardský meč
 itm_isengard_axe|Isengardská sekera
 itm_isengard_hammer|Isengardské kladivo
@@ -340,21 +340,21 @@ itm_wood_club|Kyjak
 itm_twohand_wood_club|Veľký kyjak
 itm_bone_cudgel|Palica z kostí
 ; itm_orc_pick|Orc Pick
-; itm_orc_hammer|Evil Hammer
+itm_orc_hammer|Temné kladivo
 itm_orc_club_b|Kyjak vročieho jazdca
 itm_orc_club_c|Ohyzdí kyj obitý klincami
 itm_orc_club_d|Temný palcát
 itm_orc_sledgehammer|Ohyzdie tupé kladivo
 itm_orc_simple_spear|Ohyzdia kopija
 itm_orc_skull_spear|Ohyzdia lebková kopija
-; itm_orc_bill|Orc Polearm
-; itm_orc_slasher|Orc Short Sword
+itm_orc_bill|Ohyzdia kosa
+itm_orc_slasher|Krátky ohyzdí meč
 itm_orc_falchion|Ohyzdí Falchion
 itm_orc_scimitar|Ohyzdia zakrivená šabľa
 itm_orc_sabre|Ohyzdia šabľa
-; itm_orc_battle_axe|Orc Battle Axe
+itm_orc_battle_axe|Ohyzdia bojová sekera
 itm_orc_axe|Ohyzdia sekera
-; itm_orc_two_handed_axe|Orc Great Axe
+itm_orc_two_handed_axe|Ohyzdia veľká sekera
 itm_orc_throwing_axes|Ohyzdie hádzacie sekery
 itm_orc_bow|Ohyzdí luk
 itm_orc_shield_a|Ohyzdí štít
@@ -490,8 +490,8 @@ itm_mirkwood_leather|Brnenie lesných elfov
 itm_mirkwood_pad|Temnohvozdský prešívaný kabát
 itm_mirkwood_mail|Temnohvozdské krúžkové brnenie
 itm_mirkwood_scale|Temnohvozdské ľahké šupinové brnenie
-; itm_mirkwood_heavy_scale|Greenwood Leafscale
-; itm_mirkwood_sword|Woodelf Sword
+itm_mirkwood_heavy_scale|Zelenohvozdská listová košeľa
+itm_mirkwood_sword|Meč lesných elfov
 itm_mirkwood_great_spear|Temnohvozdská veľká kopija
 itm_mirkwood_war_spear|Temnohvozdská vojnová kopija
 itm_mirkwood_short_spear|Kopija lesných elfov
@@ -600,7 +600,7 @@ itm_rhun_armor_p|Rhunské šľachtické brnenie
 itm_rhun_armor_k|Rhunské šľachtické brnenie
 itm_rhun_helm_barbed|Rhunské ostnaté brnenie
 itm_rhun_helm_horde|Helma Rhúnskej hordy
-; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot|Rhunská hrncová prilba
 itm_rhun_helm_round|Rhunská guľatá prilba
 itm_rhun_helm_leather|Rhunská kožená helma
 itm_rhun_helm_chieftain|Rhunská náčelnícka helma
@@ -692,7 +692,7 @@ itm_dwarf_great_pick|Trpasličí veľký bojový krompáč
 ; itm_dwarf_throwing_axe_reward|Erebor Flying Axes
 itm_dwarf_mattock|Trpasličí bojový čakan
 itm_dwarf_hand_axe|Trpasličia krátka sekera
-; itm_dwarf_throwing_axe|Dwarf Throwing Axes
+itm_dwarf_throwing_axe|Trpasličie vrhacie sekery
 itm_dwarf_spear|Trpasličia kopija
 itm_dwarf_spear_b|Trpasličia dlhá kopija
 itm_dwarf_spear_c|Trpasličia dlhá sekera
@@ -745,7 +745,7 @@ itm_elven_amulet_reward|Elfský amulet
 
 itm_torque_reward|Čelenka zla so závojom
 itm_orc_brew|Ohyzdia žbrnda
-; itm_rohan_saddle|Saddle
+itm_rohan_saddle|Sedlo
 itm_mearas_reward|Nebojácný kráľovský žrebec
 itm_shield_of_tuor|Tuorov štít
 itm_riv_armor_reward|Zdobené brnenie Roklinky
@@ -762,7 +762,7 @@ itm_book_of_moria|Kniha Mazarbul
 itm_ring_a_reward|Tulcarisil
 itm_ring_b_reward|Finwarisil
 itm_dale_bow_reward|Luk Barda Lučišníka 
-; itm_tome_of_knowledge|Tome of Arcane Knowledge
+itm_tome_of_knowledge|Kniha tajomných znalostí
 ; itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|Vrana
 itm_miruvor_reward|Miruvorská čutora
@@ -784,9 +784,9 @@ itm_khamul_helm|Helma Khamula
 itm_black_arrows_reward|Čierne šípy
 itm_leather_boots_reward|Lovecké čižmy
 itm_rohan_armor_th|Rohanské šľachtické brnenie
-; itm_wilderness_cowl|Hunter Cowl
+itm_wilderness_cowl|Lovecká kapucňa
 itm_prisoner_coll_chain|Väzeňské reťaze
-; itm_witchking_helmet|Sorcerer's Mask
+itm_witchking_helmet|Čarodejníkova maska
 itm_lorien_royal_armor|Lorienské šľachtické brnenie
 itm_feet_chains|Reťaz na nohy
 itm_feet_chains_dwarf|Reťaz na nohy

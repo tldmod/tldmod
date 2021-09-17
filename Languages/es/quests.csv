@@ -1,6 +1,6 @@
-qst_deliver_message|Entega el mensaje a {s13}
+qst_deliver_message|Entrega el mensaje a {s13}
 qst_deliver_message_text|{s9} te ha pedido que entregues un mensaje a {s13}. {s13} se encontraba en {s4} cuando te fue asignada esta misión.
-qst_deliver_message_to_enemy_lord|Entega el mensaje a {s13}
+qst_deliver_message_to_enemy_lord|Entrega el mensaje a {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} te ha pedido que entregues un mensaje a {s13} de {s15}. {s13} estaba en {s4} cuando te fue asignada esta misión.
 qst_raise_troops|Reúne {reg1} {s14}
 qst_raise_troops_text|{s9} te ha pedido que le lleves {reg1} {s14}.
@@ -82,7 +82,7 @@ qst_blank_quest_01|Defiende a los Refugiados
 qst_blank_quest_02|Da caza a los Refugiados
 qst_blank_quest_03|Batalla Naval
 qst_blank_quest_04|Mata {s35} {s6} {s7}
-qst_blank_quest_05|Mata {s35} tropas del tipo {s36}.
+qst_blank_quest_05|Mata {s35} tropas de {s36}.
 qst_blank_quest_06|Derrota a las huestes de {s35}.
 
 

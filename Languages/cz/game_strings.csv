@@ -513,22 +513,22 @@ str_men_unpaid|neschopný platit mužům
 str_excessive_casualties|obětoval tolik našich vojáků
 str_surrender|vzdat se nepriteli
 str_flee_battle|utect z bitvy
-; str_pay_bandits|pay off common bandits
-; str_fail_quest|fail a quest which we undertook on word of honour
-; str_squander_money|squander money given to us in trust
-; str_murder_merchant|involve ourselves in cold-blooded murder
-; str_round_up_serfs|round up serfs on behalf of some noble
-; str_battle_fate_1|We were separated in the heat of battle
+str_pay_bandits|uplatit bandity
+str_fail_quest|nesplnit úkol, který jsme podnikli na čestné slovo
+str_squander_money|promrhat peníze, které nám byly svěřeny
+str_murder_merchant|zapojit se do chladnokrevné vraždy
+str_round_up_serfs|seskupit nevolníky jménem nějakého šlechtice
+str_battle_fate_1|Byli jsme odděleni v zápalu boje
 str_battle_fate_2|Byl jsem zranen a ponechan smrti.
-; str_battle_fate_3|I was knocked senseless by the enemy
+str_battle_fate_3|Byl jsem nepřítelem omráčen
 str_battle_fate_4|Byl jsem zajat a drzen kvůli vykupnemu
 str_battle_fate_5|Byl jsem zajat, ale pozdeji se mi podarilo uteci.
-; str_npc_morale_report|I'm {s6} your choice of companions, {s7} your style of leadership, and {s8} the general state of affairs
+str_npc_morale_report|Jsem {s6} váš výběr společníků, {s7} váš styl vedení a {s8} obecný stav věcí
 str_happy|šťastný kvůli
-; str_content|content with
-; str_concerned|concerned about
-; str_not_happy|not at all happy about
-; str_miserable|downright appalled at
+str_content|obsah s
+str_concerned|znepokojen
+str_not_happy|není vůbec šťastný
+str_miserable|přímo zděšen na
 str_morale_reg1|Moralka: {reg1}
 str_bar_enthusiastic|                   Nadšený
 str_bar_content|              Spokojený
@@ -570,15 +570,15 @@ str_npc14_intro_response_1|Kdo jste?
 str_npc15_intro_response_1|Chval Oko, snago. Jaký je tvůj příhěh?
 str_npc16_intro_response_1|Kdo jste?
 ; str_npc17_intro_response_1|Mirkwood is a magnificent forest. Who are you? Do you know much about the woods?
-; str_npc1_intro_response_2|Never mind, I fear caves do not make a pleasant place for conversation.
-; str_npc2_intro_response_2|Never mind, I don't have time to speak to guards.
-; str_npc3_intro_response_2|Never mind, I'll make 'racket' elsewhere.
+str_npc1_intro_response_2|Nevadí, obávám se, že jeskyně nejsou příjemným místem pro konverzaci.
+str_npc2_intro_response_2|Nevadí, nemám čas mluvit se strážci.
+str_npc3_intro_response_2|Nevadí, Udělám ''Bordel'' někde jinde.
 str_npc4_intro_response_2|Omluvte me, mam nalehave zalezitosti jinde. 
-; str_npc5_intro_response_2|Excuse me, I have less important people to talk to.
+str_npc5_intro_response_2|Promiňte, mám méně důležité lidi, se kterými bych si mohl promluvit.
 str_npc6_intro_response_2|Ten pocit je vzajemny. Sbohem.
 str_npc7_intro_response_2|Nevadi, potrebuju trochu cerstveho vzduchu. 
-; str_npc8_intro_response_2|Never mind, we are merely sight-seeing.
-; str_npc9_intro_response_2|I'll just be on my way then, or my sword arm will start to itch.
+str_npc8_intro_response_2|Nevadí, my jsme jen poddaní.
+str_npc9_intro_response_2|Už pojedu, nebo mě začne svědit paže s mečem.
 str_npc10_intro_response_2|[Ignorovat a odejit]
 str_npc11_intro_response_2|Hled si sveho, cerve!
 str_npc12_intro_response_2|Hled si sveho, cerve!
@@ -2138,11 +2138,11 @@ str_npc27_intro_response_1|Kdo jste?
 ; str_npc19_intro_response_2|Impudent wretch. Out of my way.
 ; str_npc20_intro_response_2|I have no time for your mad ravings, sorceress.
 str_npc21_intro_response_2|Omluvte me, mam nalehave zalezitosti jinde. 
-; str_npc22_intro_response_2|Excuse me, I have less important people to talk to.
+str_npc22_intro_response_2|Promiňte, mám méně důležité lidi, se kterými bych si mohl promluvit.
 str_npc23_intro_response_2|Ten pocit je vzajemny. Sbohem.
 str_npc24_intro_response_2|Nevadi, potrebuju trochu cerstveho vzduchu. 
-; str_npc25_intro_response_2|Never mind, we are merely sight-seeing.
-; str_npc26_intro_response_2|I'll just be on my way then, or my sword arm will start to itch.
+str_npc25_intro_response_2|Nevadí, my jsme jen poddaní
+str_npc26_intro_response_2|Už pojedu, nebo mě začne svědit paže s mečem.
 str_npc27_intro_response_2|[Ignorovat a odejit]
 ; str_npc18_backstory_a|I am no mere slave! I am a head-taking warrior, cheated of my rightful place among the ranks! You see that I am a woman, but I am stronger and swifter than many others, and I've outfought more men than I can count. The Pit Master - accursed be he! He set me a test, to fight three men at once. Three!
 ; str_npc19_backstory_a|A small drop, to be sure, but my dam has told me all about my lineage. I am Heidrek, direct descendant of King Fengel, closer to the throne of Rohan and Dunland than any of our chieftains! Dark is my hair, but I fancy I have more than a strand of yellow in there somewhere.

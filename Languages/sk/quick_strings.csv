@@ -186,7 +186,7 @@ qstr_during_battles|behom bojov
 qstr_+1_to_Pathfinding|+1 k Cestovaniu
 qstr_+1_to_Athletics|+1 k Atletike
 qstr_+1_to_Wound_Treatmen|+1 k Liečeniu zranení
-; qstr_Use_from_Camp_Menu|Use from Camp Menu
+qstr_Use_from_Camp_Menu|Použi z menu tábora
 qstr_Use_from|Použiť z
 qstr_Action_Menu|Menu činností
 qstr_+1_to_First_Aid|+1 k Prvej pomoci
@@ -197,15 +197,15 @@ qstr_+1_to_Strength|+1 k Sile
 qstr_+1_to_Agility|+1 k Obratnosti
 qstr_+1_to_Leadership|+1 k Vodcovstvu
 qstr_+1_to_Wildcraft|+1 k Lesníctvu
-; qstr_+1_to_Tracking|+1 to Tracking
+qstr_+1_to_Tracking|+1 k Stopovaniu
 qstr_when_equipped|pokiaľ je nasadené
 qstr_+1_to_Power_Draw|+1 k Silnému napnutiu
 qstr_The_record_of_Balin_|Kronika Balinovej stratenej výpravy.
 qstr_Who_might_be_interes|Koho by to zaujímalo?
-; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
-; qstr_Turns_nature_to_your|Turns nature to your side
-; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
-; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
+qstr_Bonus_to_Shield_Skil|Bonus do schopnosti Štít
+qstr_Turns_nature_to_your|Obracia prírodu na tvoju stranu
+qstr_when_equipped.__Effe|keď sa používa. (Efekt sa zvyšuje s Prežitím v divočine)
+qstr_Bonus_to_Power_Strik|Bonus k Mocnému úderu
 qstr_+1_to_Trainer|+1 k Trénerovi
 qstr_Recruits_Tribal_Orcs|Najať Kmeňových Ohyzdov
 qstr_rally|vyburcovať
@@ -214,26 +214,26 @@ qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} v boji
 qstr_+1_to_Charisma|+1 k Charizme
 qstr_+1_to_Surgery|+1 k Chirurgii
 qstr_+1_to_Intelligence|+1 k Inteligencii
-; qstr_+2_to_Surgery|+2 to Surgery
+qstr_+2_to_Surgery|+2 k Chirurgii
 qstr_+1_to_Riding|+1 k Jazdectvu
 qstr_+1_to_Mounted_Archer|+1 k Streľbe v sedle
-; qstr_Bonus_to_Riding|Bonus to Riding
-; qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
-; qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
+qstr_Bonus_to_Riding|Bonus k Jazdectvu
+qstr_when_equipped.__Effec|keď sa používa. (Efekt sa zvyšuje so Silou)
+qstr_Orcs:_+1_Riding_Requ|Ohyzdi: +1 k potrebe Jazdectva
 qstr_+1_to_Prisoner_Mgmt|+1 k Väzneniu
 qstr_+2_to_Tactics|+2 k Taktike
-; qstr_+1_Intelligence|+1 Intelligence
+qstr_+1_Intelligence|+1 k Inteligencii
 qstr_+{reg1}_to_Spotting|+{reg1} k Ostražitosti
 qstr__Scales_with_Wildcra|(zvyšuje sa spolu s Lesníctvom)
-; qstr_+1_to_Power_Throw|+1 to Power Throw
+qstr_+1_to_Power_Throw|+1 k Mocnému vrhu
 qstr_+1_to_Spotting|+1 k Ostražitosti
 qstr_Less_Dunnish_upkeep|Menší žold Vrchovcov
 qstr_Less_Wargs_upkeep|Menší žold vrokov
 qstr_Light_Armor|Ľahké brnenie
-; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
-; qstr_Lead_more_Orcs|Lead more Orcs
+qstr_Bonus_to_Strength__P|Bonus k Sile (Len hráč)
+qstr_Lead_more_Orcs|Veď viac Ohyzdov
 qstr_+{reg1}_to_Party_Mor|+{reg1} k Morálke družiny
-; qstr_Range:_{reg55}|Range: {reg55}
+qstr_Range:_{reg55}|Dostrel: {reg55}
 qstr_Do_you_want_to_disem|Chceš vystúpiť?
 qstr_Move_here|Poď sem
 qstr_View_notes|Prezrieť si poznámky
@@ -280,8 +280,8 @@ qstr_{s3}_is_no_longer_un|{s3} už nie je obliehané
 qstr_Enemies_spotted_near|Nepriatelia boli spozorovaní v blízkosti {s1}.
 qstr_Your_relation_with_{|Tvoje vzťahy s {s1} sa zlepšili.
 qstr_Your_relation_with_{s|Tvoj vzťah k {s1} sa zhoršil.
-; qstr_{s1}_gained_faction_|{s1} gained faction strength!
-; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
+qstr_{s1}_gained_faction_|{s1} získal k sile frakcie!
+qstr_{s1}_lost_faction_st|{s1} stratil zo sily frakcie!
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?bol:je práve} v {s3}.
 qstr_{s2}_{reg3?was:is}_t|{s2} {reg3?cestoval:cestuje} do {s3} a {reg4?ona:on} {reg3?bol:mal by sa nachádzať} {reg3?: práve} v blízkosti {s4}.
 qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?Bol:je} v divočine a {reg4?ona:on} {reg3?bol:by sa mal nachádzať} {reg3?: práve} v blízkosti {s3}.
@@ -697,10 +697,10 @@ qstr_A_thunderstorm_from_|Na bojové pole sa zniesla blýskavica a hromobitie z 
 qstr_A_thunderstorm_from_t|Na bojové pole sa zniesla blýskavica a hromobitie z Hmlistých hôr. Lukostrelci majú kvôli počasiu ťažkosti.
 qstr_A_poisonous_fog_from|Jedovaté výpary Dol Gulduru sa lenivo vznášajú nad bojovým poľom. Spolu so svojimi mužmi sa cítiš oslabený. Medzi mužmi vyvstáva strach.
 qstr_A_poisonous_fog_from_|Jedovaté výpary Dol Gulduru sa lenivo vznášajú nad bojovým poľom. Necítiš žiadnu, ale tvoji trpiaci nepriatelia páchnu strachom.
-; qstr_You_shapeshift_into_|You shapeshift into a bear!
-; qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
-; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
-; qstr_You_change_back_to_h|You change back to human form...
+qstr_You_shapeshift_into_|Získal si podobu medveďa!
+qstr_You_got_{reg1}_exper|Získal {reg1} skúsenosti v medvedej podobe.
+qstr_Your_ability_to_chan|Prejavila sa tvoja schopnosť vziať na seba medvediu podobu, odteraz môžeš kráčať po cestách ako človek alebo medveď.
+qstr_You_change_back_to_h|Premenil si sa späť do ľudskej podoby...
 qstr_Your_mount_stumbles!|Tvoje jazdecké zviera sa zasekáva! Zdá sa, že je chromé.
 qstr_Bitten_by_your_own_w|Tvoj vrok ťa pohryzol! 
 qstr_You_weigh_too_much_f|Na poníka si príliš ťažký!
@@ -715,7 +715,7 @@ qstr_Use_Up/Down_arrow_ke|Stlač Hornú/Dolnú šipku pre posúvanie kamery hore
 qstr_Fixed_Camera___Right|Upravená kamery - Pravé rameno
 qstr_Fixed_Camera___Left_|Upravená kamera - Ľavé rameno
 qstr_Fixed_Camera___Cente|Kamera upevnená - Stred
-; qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
+qstr_Shield_is_too_big_to|Štít je priveľký na používanie s lukom.
 qstr_While_visiting_towns|Behom návštevy miest, usadlostí a táborov si môžeš pohovoriť s okoloidúcimi. Členovia rôznych frakcií ti povedia rôzne veci - niektorí ti vyrozprávajú svoje myšlienky, iní budú šíriť drby. Obe tieto veci ti dajú čiastočný prehľad, aby si dokázal lepšie pochopiť kultúru frakcie osoby, s ktorou rozprávaš, alebo ti môžu čo-to prezradiť o tajných miestach a zákutiach v danej frakcii, či dať tipy a triky pre cestovanie divočinou a bojovaní vo Vojne o Prsteň.
 qstr_Cannot_leave_now.|Teraz nemôžeš odísť.
 qstr_You_have_found_the_l|Našiel si miestneho kováča...
@@ -734,7 +734,7 @@ qstr_Division_{reg1}_{s2}_f|Divízia {reg1} {s2} formuje líniu (zapamätané).
 qstr_Division_{reg1}_{s2}_fo|Divízia {reg1} {s2} formuje {reg0} línií (zapamätané).
 qstr_Delivered_{reg60}_da|Spôsobené {reg60} zranenia
 qstr_DEBUG__Health_Regen_|DEBUG (Regenerácia života): {s1}ovi sa obnovilo {reg0}% života. = +{reg1}% SIL
-; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
+qstr_Your_bear_form_has_{|Tvoja medvedia podoba ma {reg2}/{reg1} bodov života!
 qstr_Three_Nazgul_are_cir|Trojica Nazgúlov krúži na nebi nad bojovým poľom.
 qstr_Two_Nazgul_are_circl|Dvojica Nazgúlov krúži na nebi and bojovým poľom!
 qstr_A_Nazgul_is_circling|Jeden Nazgúl krúži na oblohe nad bojiskom!
@@ -902,7 +902,7 @@ qstr_Doubled|Dvojnásobné
 qstr_Tripled|Trojnásobné
 qstr_Quadrupled|Štvornásobné
 qstr_You_drank_the_Ent_Wa|Vypil si Entskú vodu...
-; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
+qstr_You_used_the_Orc_Bre|Použil si Ohyzdiu pálenku
 qstr_Fangorn_search:_fail|Skúmanie Farngornu: neúspešné.
 qstr_^^^A_great_victory!^|^^^Veľké víťazstvo!^^^Tak o tomto hovorili všetky tie legendy Farngornu... 
 qstr_^^^Defeated...^^^Sca|^^^ Porazený ... ^^^ Zatúlaný vo Fangornskom Lese ... Osamotený ...
@@ -1060,7 +1060,7 @@ qstr_You_are_entering_{s1|Vstupuješ do {s1}u ({s2}).
 qstr_You_are_entering_{s1}|Vstupuješ do {s1}u.
 qstr_The_war_expands_comm|Vojna sa rozrástla, velitelia sú trúfalejší! (Na obliehania je treba menej potrieb)
 qstr_Your_party_is_spotte|Tvoju družinu pozorujú z {s1}u.
-; qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
+qstr_The_effects_of_the_O|Efekty Ohyzdej pálenky sa vytratili.
 qstr_Party_has_nothing_to|Družina hladuje!
 qstr_You_pay_for_accommod|Platíš za ubytovanie.
 qstr_The_troll_outside_{s|Zlobor pred {s2}om bol zabitý. Misia je zrušená. 
@@ -1427,9 +1427,9 @@ qstr_Your_party_must_be_at|Tvoja družina musí mať aspoň 10 členov, aby si m
 qstr_{s9}_asked_you_to_def|{s9} ťa poveril, aby si ubránil dedinu pod útokom neďaleko {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} ti rozkázal, aby si vydrancoval viesku neďaleko {s1}.
 qstr_These_soldiers_may_w|Títo muži môžu mojím plánom veľmi prospieť, {playername}. Verím, že si ich dobre vycvičil. Veľmi ti ďakujem a som ti zaviazaný.
-; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
+qstr_I_wish_you_had_train|Prial by som si aby si ich vytrénoval všetkých, {playername}. Ale v týchto temných časoch som ochotný zobrať hocičo si mi schopný ponúknuť.
 qstr_Good_work_in_shaping|Dobrá práca čo sa výcviku tých holobriadkov týka, {playername}, veľmi si mi pomohol. Snáď vydržia viac, než tá posledná skupina. Pokiaľ nie, príď za mnou znova.
-; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
+qstr_Is_that_all_you_coul|To je všetko čo si dokázal, {playername}? Títo mi ledva nahradia včerajšie straty. Daj ich sem!
 qstr_Well_the_soldiers_ar|Nuž, tí vojaci sú teraz pod vaším velením, pane. Verím, že sa o nich dobre postaráte.
 qstr_Well_you_may_do_as_y|Konaj ako myslíš. Ja a moji spoločníci stále môžeme vycvičiť ďalších, ak bude treba.
 qstr_{s9}_asked_you_to_br|{s9} chce, aby si mu priviedol divokého zlobra pre posilnenie jeho armády.

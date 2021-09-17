@@ -1,0 +1,48 @@
+skl_trade|Người mặc cả
+skl_trade_desc|Làm cho thợ rèn và thợ cung cấp hợp tác hơn và cung cấp thiết bị tốt hơn. (Kỹ năng nhóm)
+skl_leadership|Khả năng lãnh đạo
+skl_leadership_desc|Mỗi điểm tăng số lượng quân tối đa mà bạn có thể chỉ huy lên 5, tăng tinh thần cho nhóm của bạn và giảm lương binh sĩ đi 5%%. Khiến ngày càng có nhiều tình nguyện viên mạnh mẽ hơn sẵn sàng đi theo bạn. (Kỹ năng lãnh đạo)
+skl_prisoner_management|Quản lý tù nhân
+skl_prisoner_management_desc|Mỗi cấp độ của kỹ năng này sẽ tăng số lượng tù nhân tối đa lên %d. (Kỹ năng lãnh đạo)
+skl_persuasion|Wildcraft
+skl_persuasion_desc|Khả năng tồn tại trong vùng hoang dã và uốn nắn nó theo ý muốn của bạn. Kỹ năng này ảnh hưởng đến khả năng ẩn nấp khỏi kẻ thù của cả nhóm và tốc độ của nhóm khi ở trong địa hình nhiều cây cối. (Kỹ năng nhóm)
+skl_engineer|-----
+skl_engineer_desc|-----
+skl_first_aid|Sơ cứu
+skl_first_aid_desc|Các anh hùng nhận lại 5%% mỗi cấp độ kỹ năng của điểm đánh bị mất trong nhiệm vụ. (Kỹ năng tiệc tùng)
+skl_surgery|Ca phẫu thuật
+skl_surgery_desc|Mỗi điểm của kỹ năng này cho 4%% cơ hội khiến một thành viên trong nhóm bị trọng thương sẽ bị thương hơn là bị giết. (Kỹ năng nhóm)
+skl_wound_treatment|Điều trị vết thương
+skl_wound_treatment_desc|Tốc độ hồi máu của nhóm được tăng thêm 20%% mỗi cấp của kỹ năng này. (Kỹ năng nhóm)
+skl_inventory_management|Quản lý hàng tồn kho
+skl_inventory_management_desc|Tăng khả năng tồn kho lên +6 mỗi cấp độ kỹ năng. (Kỹ năng lãnh đạo)
+skl_spotting|Đánh dấu
+skl_spotting_desc|Phạm vi nhìn thấy nhóm được tăng thêm 10%% mỗi cấp độ kỹ năng. (Kỹ năng nhóm)
+skl_pathfinding|Tìm đường
+skl_pathfinding_desc|Tốc độ bản đồ của nhóm được tăng thêm 3%% mỗi cấp độ kỹ năng. (Kỹ năng nhóm)
+skl_tactics|Chiến thuật
+skl_tactics_desc|Mỗi hai cấp độ của kỹ năng này sẽ tăng lợi thế đầu trận lên 1. (Kỹ năng nhóm)
+skl_tracking|Theo dõi
+skl_tracking_desc|Theo dõi trở nên nhiều thông tin hơn. (Kỹ năng nhóm)
+skl_trainer|Huấn luyện viên
+skl_trainer_desc|Mỗi ngày, mỗi anh hùng có kỹ năng này sẽ thêm một số kinh nghiệm cho mọi thành viên khác trong nhóm có cấp độ thấp hơn anh/cô ấy. Kinh nghiệm nhận được là: {0,4,10,16,23,30,38,46,55,65,80}. (Kỹ năng cá nhân)
+skl_looting|Cướp phá
+skl_looting_desc|Kỹ năng này tăng số lượng chiến lợi phẩm thu được lên 10%% cho mỗi cấp kỹ năng. (Kỹ năng nhóm)
+skl_horse_archery|Bắn cung
+skl_horse_archery_desc|Giảm sát thương và hình phạt chính xác cho bắn cung và ném khi được gắn. (Kỹ năng cá nhân)
+skl_riding|Cưỡi ngựa
+skl_riding_desc|Cho phép bạn cưỡi ngựa (hoặc các con thú khác) có độ khó cao hơn, đồng thời tăng tốc độ cưỡi và tài vận động của bạn. (Kỹ năng cá nhân)
+skl_athletics|Cường tráng
+skl_athletics_desc|Cải thiện tốc độ chạy của bạn. (Kỹ năng cá nhân)
+skl_shield|Khiên
+skl_shield_desc|Tăng sát thương cho lá chắn (8%% mỗi cấp kỹ năng) và cải thiện tốc độ và phạm vi che chắn của lá chắn. (Kỹ năng cá nhân)
+skl_weapon_master|Bậc thầy vũ khí
+skl_weapon_master_desc|Làm cho việc học thành thạo vũ khí dễ dàng hơn và tăng giới hạn trình độ. Các giới hạn là: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Kỹ năng cá nhân)
+skl_power_draw|Sức mạnh Draw
+skl_power_draw_desc|Cho phép nhân vật sử dụng cung mạnh hơn. Mỗi điểm cho kỹ năng này (tối đa bốn điểm cộng với yêu cầu rút điện của cung) tăng sát thương của cung lên 14%%. (Kỹ năng cá nhân)
+skl_power_throw|Sức mạnh ném 
+skl_power_throw_desc|Mỗi điểm của kỹ năng này tăng sát thương ném lên 10%%. (Kỹ năng cá nhân)
+skl_power_strike|Sức mạnh đánh đập
+skl_power_strike_desc|Mỗi điểm của kỹ năng này tăng 8%% điểm sát thương cận chiến (Kỹ năng cá nhân)
+skl_ironflesh|Dục vọng sắt đá
+skl_ironflesh_desc|Mỗi điểm của kỹ năng này sẽ tăng điểm đánh lên +2. (Kỹ năng cá nhân)

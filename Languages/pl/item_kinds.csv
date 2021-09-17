@@ -347,14 +347,14 @@ itm_orc_club_d|Złowroga Buława
 itm_orc_sledgehammer|Orkowy Kafar
 itm_orc_simple_spear|Orkowy Włócznia
 itm_orc_skull_spear|Orkowa Włócznia z Czaszką
-; itm_orc_bill|Orc Polearm
-; itm_orc_slasher|Orc Short Sword
+itm_orc_bill|Orkowska Włócznia
+itm_orc_slasher|Orkowski krótki miecz
 itm_orc_falchion|Orkowy Tasak
 itm_orc_scimitar|Orkowe Zakrzywione Ostrze
 itm_orc_sabre|Orkowa Szabla
-; itm_orc_battle_axe|Orc Battle Axe
+itm_orc_battle_axe|Orkowski Topór Bitewny
 itm_orc_axe|Orkowy Topór
-; itm_orc_two_handed_axe|Orc Great Axe
+itm_orc_two_handed_axe|Orkowski Wielki Topór
 itm_orc_throwing_axes|Orkowe Toporki do Rzucania
 itm_orc_bow|Orkowy Łuk
 itm_orc_shield_a|Orkowa Tarcza
@@ -490,8 +490,8 @@ itm_mirkwood_leather|Skórzany pancerz Leśnych Elfów
 itm_mirkwood_pad|Pikowany Płaszcz z Zielonego Lasu
 itm_mirkwood_mail|Kolczuga z Greenwood
 itm_mirkwood_scale|Lekka Zbroja z Zielonego Lasu
-; itm_mirkwood_heavy_scale|Greenwood Leafscale
-; itm_mirkwood_sword|Woodelf Sword
+itm_mirkwood_heavy_scale|Zbroja z Zielonej Puszczy
+itm_mirkwood_sword|Miecz Leśnych Elfów
 itm_mirkwood_great_spear|Wielka Włócznia Zielonego Lasu
 itm_mirkwood_war_spear|Włócznia Bojowa Zielonego Lasu
 itm_mirkwood_short_spear|Włócznia Leśnych Elfów
@@ -600,11 +600,11 @@ itm_rhun_armor_p|Szlachecka Zbroja z Rhunu
 itm_rhun_armor_k|Szlachecka Zbroja z Rhunu
 itm_rhun_helm_barbed|Hełm Stożkowy z Rhunu
 itm_rhun_helm_horde|Hełm Ordy Rhunu
-; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot|Wschodni Hełm Owalny
 itm_rhun_helm_round|Okrągły Hełm z Rhunu
 itm_rhun_helm_leather|Skórzany Hełm z Rhunu
 itm_rhun_helm_chieftain|Hełm Wodza Rhunu
-; itm_rhun_warpick|Rhun War Pick
+itm_rhun_warpick|Wschodni Nadziak Bitewny
 itm_rhun_greataxe|Wielki Topór z Rhunu
 itm_rhun_battleaxe|Bojowy Topór z Rhunu
 itm_rhun_falchion|Dziki Falchion
@@ -613,7 +613,7 @@ itm_rhun_greatfalchion|Dziki Wielki Falchion
 itm_rhun_greatsword|Dziki Duży Miecz
 itm_rhun_shortsword|Dziki Krótki Miecz
 itm_rhun_sword|Dziki Miecz
-; itm_rhun_mangler|Rhun Mangler
+itm_rhun_mangler|Wschodni Piernacz
 itm_dale_light_a|Kurtka Milicji z Dale
 itm_dale_light_b|Północna Lekka Lamela
 itm_dale_med_a|Północna Ciężka Lamela
@@ -689,10 +689,10 @@ itm_dwarf_battle_axe|K|rasnoludzki Topór Bitewny
 itm_dwarf_great_axe|Krasnoludzki Wielki Topór
 itm_dwarf_great_mattock|Krasnoludzki Wielki Kilof
 itm_dwarf_great_pick|Krasnoludzki Wielki Nadziak
-; itm_dwarf_throwing_axe_reward|Erebor Flying Axes
+itm_dwarf_throwing_axe_reward|Ereboryckie Latające Topory
 itm_dwarf_mattock|Krasnoludzki Kilof
 itm_dwarf_hand_axe|Krasnoludzki Krótki Topór
-; itm_dwarf_throwing_axe|Dwarf Throwing Axes
+itm_dwarf_throwing_axe|Krasnoludzkie Topory Rzucane
 itm_dwarf_spear|Krasnoludzka Włcznia
 itm_dwarf_spear_b|Krasnoludzka Pika
 itm_dwarf_spear_c|Krasnoludzki Długi Topór
@@ -745,7 +745,7 @@ itm_elven_amulet_reward|Elficki Amulet
 
 itm_torque_reward|Złowieszczy Torques
 itm_orc_brew|Orkowy Browar
-; itm_rohan_saddle|Saddle
+itm_rohan_saddle|Siodło
 itm_mearas_reward|Mearas
 itm_shield_of_tuor|Tarcza z Tuor
 itm_riv_armor_reward|Inkrustowana Zbroja z Rivendell
@@ -784,7 +784,7 @@ itm_khamul_helm|Hełm Khamula
 itm_black_arrows_reward|Czarne Strzały
 itm_leather_boots_reward|Buty Łowcy
 itm_rohan_armor_th|Królewska Zbroja Rohanu
-; itm_wilderness_cowl|Hunter Cowl
+itm_wilderness_cowl|Płaszcz Łowcy
 itm_prisoner_coll_chain|Łańcuchy Więzienne
 itm_witchking_helmet|Maska Czarownika
 itm_lorien_royal_armor|Królewska Zbroja z Lorien

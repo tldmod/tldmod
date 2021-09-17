@@ -197,13 +197,13 @@ qstr_+1_to_Strength|+1 do Siły
 qstr_+1_to_Agility|+1 do Zręczności
 qstr_+1_to_Leadership|+1 do Dowodzenia
 qstr_+1_to_Wildcraft|+1 do Wildcraft
-; qstr_+1_to_Tracking|+1 to Tracking
+qstr_+1_to_Tracking|+1 do śledztwa
 qstr_when_equipped|gdy wyekwipowany
 qstr_+1_to_Power_Draw|+1 do Potężnego Rzutu
 qstr_The_record_of_Balin_|Zapis z zagubionej ekspedycji Balina.
 qstr_Who_might_be_interes|Kto mógłby być tym zainteresowany?
-; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
-; qstr_Turns_nature_to_your|Turns nature to your side
+qstr_Bonus_to_Shield_Skil|bonus do używania tarczy
+qstr_Turns_nature_to_your|Skierowuje naturę na twoją stronę
 ; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
 ; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
 qstr_+1_to_Trainer|+1 do Szkolenia

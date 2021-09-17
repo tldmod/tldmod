@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|Všimli sme si niekoľkých ľudí uháňaj�
 dlga_raid_village_failed:close_window|Nabudúce už budem pripravený.
 dlga_lord_start:lord_target_lord_failed|Dopočul som sa, že si neuspel. Sklamal si ma, {playername}.
 dlga_lord_target_lord_failed:close_window|Nabudúce už budem lepšie pripravený.
-; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.
+dlga_lord_start:lord_generic_mission_completed.5|Tvoji muži boli svedkami tvojej statočnosti v boji, {playername}. Ukázal si im že sme nadradenou silou.
 dlga_lord_start:kill_quest_failed|Dopočul som sa, že si neuspel. Sklamal si ma, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Tvoji muži boli svedkami tvojej osobnej statočnosti v bitke, {playername}. Získal si si moju úctu.
 dlga_kill_quest_failed:close_window|Nabudúce už budem lepšie pripravený.

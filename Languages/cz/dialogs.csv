@@ -924,7 +924,7 @@ dlga_start:close_window.23|Pokryjeme zbytek cesty samy. Díky.
 ; dlga_start:close_window.24|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
 dlga_start:merchant_caravan_intro_1|Zdravím. Ty musíš být náš doprovod, že?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Ano. Jmenuji se {playername}. Doprovodím vás do {s1}.
-; dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Well, It is good to know we won't travel alone. What do you want us to do now?
+dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Inu, je dobré vědět, že nebudeme cestovat sami. Co chceš, abychom teď dělali?
 dlga_start:escort_merchant_caravan_talk|Eh. Nikdy jsme se nedostali tak daleko... Co chceš abychom udělali?
 dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Následujte mě. Povedu vás bezpečnou cestou.
 dlga_merchant_caravan_follow_lead:close_window|Dobře. Budeme hned za tebou.

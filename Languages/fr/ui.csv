@@ -3,73 +3,73 @@ ui_not_enough_skill_points_to_learn|(Manque de points)
 ui_not_enough_attributetype_to_learn_this_skill|(%s, manque de compétence)
 ui_explanation_agility|Agilité : chaque point donne cinq points d'arme et augmente la vitesse de 0,5 %. Les compétences suivantes ne peuvent pas être développées au-delà de 1/3 de l'Agilité : Maître d'arme, Bouclier, Athlétisme, Équitation, Archerie montée, Pillage. 
 ui_retreated_battle|L'itinéraire de %s a été défini.
-ui_riding_skill_not_adequate_to_mount|(compétence Équitation trop faible pour monter)
-ui_camp|Campement
-ui_tutorial_inventory|Fenêtre des transactions : maintenez la touche Ctrl enfoncée tout en cliquant sur un objet pour l'acheter ou le vendre rapidement.
-ui_you_dont_have_value|Vous n'avez pas %s.
-ui_merchant_cant_afford_value|%s : Je n'ai pas les moyens de m'acheter %s, j'ai seulement %s.
-ui_merchant_pay_whatever|Cela ira, payez-moi avec ce que vous avez.
+ui_riding_skill_not_adequate_to_mount|(compétence Équitation trop faible)
+ui_camp|Actions
+ui_tutorial_inventory|Dans The Last Days, vous avez besoin de points de ressources pour obtenir de l'équipement. Les points de ressources mesurent la volonté d'une faction de vous équiper et combien de resssources de la faction vous pouvez utiliser.
+ui_you_dont_have_value|Vous n'avez pas : %s
+ui_merchant_cant_afford_value|%s : Vous nous donnez plus que ce dont nous avons besoin ! Gardez donc certaines choses pour vous (vous donnez des biens pour %s, nous ne pouvons en utiliser que %s).
+ui_merchant_pay_whatever|Non, je n'ai pas besoin de ça, gardez tout.
 ui_horse|Monter
-ui_reclaim_your_sold_goods|Reprenez les articles que vous avez vendus avant d'acheter celui-là.
-ui_return_your_bought_goods|Rendez les articles que vous avez vendus avant de vendre celui-là.
-ui_return_price|Prix de retour : %d
-ui_sell_price|Prix de vente : %d
-ui_reclaim_price|Prix de reprise : %d
-ui_buying_price|Prix d'achat : %d
+ui_reclaim_your_sold_goods|Reprenez les articles que vous avez donnés avant de donner celui-là !
+ui_return_your_bought_goods|Rendez les articles que vous avez pris avant de donner cela !
+ui_return_price|Si retour : +%d p. ress.
+ui_sell_price|Si donné : +%d p. ress.
+ui_reclaim_price|pour reprendre : -%d p. ress.
+ui_buying_price|pour demander : -%d p. ress.
 ui_notification_riding_skill_not_enough|Votre compétence d'Équitation n'est pas suffisante pour cette monture.
-ui_notification_payment_value|Vous devez payer %s.
-ui_notification_payment_receive_value|Vous recevrez %s.
-ui_weekly_cost_value|Coût hebdomadaire : %s
-ui_sell|Vendre
+ui_notification_payment_value|Vous utilisez %s
+ui_notification_payment_receive_value|Vous recevez %s
+ui_weekly_cost_value|Entretien : %s
+ui_sell|Donner
 ui_hire|Recruter
 ui_notification_cant_hire|(Manque d'argent pour recruter)
-ui_joining_cost_weekly_wage|Coût de recrutement : %d, Solde hebdomadaire : %d
-ui_weekly_wage|Salaire hebdomadaire : %d Pts Ressource.
-ui_price|Prix : %d
+ui_joining_cost_weekly_wage|Recrutement : %d p.ress. - Entretien : %d p.ress.
+ui_weekly_wage|Entretien : %d p. Ress.
+ui_price|Valeur : %d p. ress.
 ui_cant_reload_this_weapon_on_horseback|Impossible de recharger cette arme sur le cheval.
-ui_delivered_number_damage_to_horse|%d de dommage infligés à la monture.
-ui_horse_charged_for_number_damage|Monture chargée pour %d de dommages.
-ui_horse_received_number_damage|%d de dommages reçus par la monture.
+ui_delivered_number_damage_to_horse|%d de dégâts infligés à la monture.
+ui_horse_charged_for_number_damage|Monture chargée pour %d de dégâts.
+ui_horse_received_number_damage|%d de dégâts reçus par la monture.
 ui_horse_fell_dead|La monture est morte.
 ui_horse_crippled|Monture paralysée...
 ui_you_got_value|Vous avez obtenu %s.
-ui_has_deserted_the_party| a déserté le groupe.
-ui_have_deserted_the_party| ont déserté le groupe.
-ui_loading_textures|Chargement des textures...
+ui_has_deserted_the_party| a quitté le groupe.
+ui_have_deserted_the_party| ont quitté le groupe.
+ui_loading_textures|Chargement des textures (patience...)
 ui_order_hold_fire_toggle|Ne tirez pas/Feu à volonté (Basculer)
 ui_order_dismount_toggle|Ordonnez de démonter/monter (Basculer)
 ui_mount_horses_e_|%s, montez !
 ui_hold_fire_e_|%s, cessez le feu !
 ui_fire_at_will_e_|%s, feu à volonté !
 ui_recent_messages|Messages
-ui_value_denars|%d deniers
-ui_cannot_be_used_on_horseback|Impossible à utiliser à dos de cheval
+ui_value_denars|%d points de ressources
+ui_cannot_be_used_on_horseback|Impossible à utiliser sur monture
 ui_upgrade_to_value|Améliorer en %s
-ui_notification_cant_upgrade|(Promotion impossible, pas assez d'argent)
+ui_notification_cant_upgrade|(Promotion impossible quand on donne des troupes)
 ui_lance_control|Contrôle de la lance :
 ui_manual_easy|Manuelle (Facile)
 ui_manual_hard|Manuelle (Difficile)
-ui_campaign_ai|IA de campagne :
-ui_crouch|Accroupi
+ui_campaign_ai|IA de campagne (pas utilisée) :
+ui_crouch|S'accroupir
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Êtes-vous certain de vouloir importer ce personnage ?
-ui_explanation_strength|Force : Chaque point ajoute +1 point de vie. Les compétences suivantes ne peuvent pas être augmenté au delà d'1/3 de la Force : Santé de fer, Puissance de frappe, Puissance de jet, Puissance de tension.
-ui_explanation_intelligence|Intelligence : Chaque point en intelligence octroie 1 point de compétence supplémentaire. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 de l’intelligence : Mentor, Traque, Tactiques, Marche forcée, Reconnaissance, Gestion de l’inventaire, Soin des blessures, Chirurgie, Premier soin.
-ui_explanation_charisma|Charisme : Chaque point augmente la taille de votre groupe de +1. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 du Charisme : Gestion des prisonniers, Sens du commandement, Sens du commerce.
-ui_delivered_number_damage|Points de dégâts infligés : %d
+ui_explanation_strength|Force : Chaque point ajoute 1 point de vie. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 de la Force : Vigueur, Puissance de frappe, Puissance de jet, Puissance de tension.
+ui_explanation_intelligence|Intelligence : Chaque point en intelligence octroie 1 point de compétence supplémentaire et augmente parfois un peu les gains d'XP. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 de l’intelligence : Mentor, Pistage, Tactique, Marche forcée, Repérage, Gestion de l’inventaire, Soins, Chirurgie, Premiers secours.
+ui_explanation_charisma|Charisme : Chaque point augmente la limite de taille de votre groupe de 1. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 du Charisme : Gestion des prisonniers, Commandement, Commerce.
+ui_delivered_number_damage|Dégâts infligés : %d
 ui_mission_losses_killed|tués :
 ui_party_losses|%s : %d blessés --- %d décès sur %d.
 ui_following|Suivent 
 ui_accompanying|Accompagnent 
-ui_dumping_value_items|%d objets seront définitivement perdus, êtes-vous sûr de vouloir continuer ?
+ui_dumping_value_items|%d objets seront définitivement perdus, confirmez-vous vouloir continuer ?
 ui_dumping_value_item|Un objet sera définitivement perdu, êtes-vous sûr de vouloir continuer ?
 ui_notification_requirements_not_met|Attributs ou compétences trop faibles pour pouvoir utiliser cette arme.
 ui_disband|Renvoyer
 ui_you_hit_a_friendly_troop|Vous avez touché un allié !
 ui_you_are_not_carrying_any_arrows|Vous ne transportez aucune flèche.
-ui_delivered_number_damage_to_horse|%d de dommage infligés à la monture.
+ui_delivered_number_damage_to_horse|%d de dégâts infligés à la monture.
 ui_received_number_damage|Points de dégâts subis : %d
 ui_you_have_improved_your_proficiency_in_value_to_number|Votre maîtrise en %s est passée à %d.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Votre maîtrise en %s a été améliorée de +%d pour un total de %d.
@@ -82,17 +82,17 @@ ui_quest_succeeded_value|Quête réussie : %s.
 ui_number_of_companions_exceeds_leadership_limit| Le nombre de vos compagnons excède votre limite de commandement.
 ui_number_of_prisoners_exceeds_prisoner_management_limit| Le nombre de prisonniers excède votre limite de gestion de prisonniers.
 ui_shared_number_experience_within_party|Le groupe se partage %d points d'expérience.
-ui_your_relations_with_value_has_improved_from_number_to_number|Vos relations avec %s se sont améliorées en passant de %d à %d.
-ui_your_relations_with_value_has_deteriorated_from_number_to_number|Vos relations avec %s se sont détériorées en passant de %d à %d.
+ui_your_relations_with_value_has_improved_from_number_to_number|Vos relations avec %s se sont améliorées et passent de %d à %d.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Vos relations avec %s se sont détériorées et passent de %d à %d.
 ui_you_lost_value|Vous avez perdu %s.
-ui_change_graphics_settings_explanation|Certaines des modifications que vous avez effectuées ne prendront effet que lorsque vous entrerez dans une nouvelle zone.
+ui_change_graphics_settings_explanation|Certaines des modifications que vous avez faites ne prendront effet que lorsque vous entrerez dans une nouvelle zone.
 ui_game_log_window|Fenêtre du journal du jeu
 ui_blunt_short|c
 ui_tracks|Traces
 ui_order_button_hold_fire|Cessez le feu
 ui_order_button_fire_at_will|Feu à volonté
 ui_order_button_fire_orders|Ordres de tir
-ui_need_to_learn_prisoner_management|Il faut au moins 1 en compétence Gestion des prisonniers afin d'en capturer.
+ui_need_to_learn_prisoner_management|Il faut au moins 1 en compétence Gestion des prisonniers pour faire des prisonniers.
 ui_game_log_window|Fenêtre du journal du jeu
 ui_unbalanced|Déséquilibré
 ui_can_crush_through_blocks|Peut broyer les boucliers
@@ -104,16 +104,16 @@ ui_order_4|Sélectionner l'ordre 4
 ui_order_5|Sélectionner l'ordre 5
 ui_order_6|Sélectionner l'ordre 6
 ui_order_button_hold_this_position|Tenir la position
-ui_order_button_follow_me|Me suivre
+ui_order_button_follow_me|Suivez-moi
 ui_order_button_charge|Chargez
-ui_order_button_stand_ground|Défendre les positions
+ui_order_button_stand_ground|Défendez la position
 ui_order_button_retreat|Retraite
 ui_order_button_advance|Avancez de dix pas
 ui_order_button_fall_back|Reculez de dix pas
 ui_order_button_spread_out|Déployez-vous
 ui_order_button_stand_closer|Resserrez les rangs
 ui_order_button_mount_horses|Monter
-ui_order_button_dismount|Descendre
+ui_order_button_dismount|Mettre pied à terre
 ui_order_button_hold_fire|Cessez le feu
 ui_order_button_fire_at_will|Feu à volonté
 ui_order_button_use_blunt_weapons|N'utilisez que les armes contondantes
@@ -126,7 +126,7 @@ ui_charge_e_|%s, chargez !!!
 ui_stand_ground_e_|%s, défendez vos positions !
 ui_retreat_e_|%s, battez en retraite !
 ui_mount_horses_e_|%s, montez !
-ui_dismount_e_|%s, descendez de cheval !
+ui_dismount_e_|%s, pied à terre !
 ui_advance_e_|%s, avancez de dix pas !
 ui_fall_back_e_|%s, reculez de dix pas !
 ui_stand_closer_e_|%s, resserrez les rangs !

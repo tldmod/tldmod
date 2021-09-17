@@ -323,7 +323,7 @@ itm_isen_uruk_helm_e|强兽人追踪者盔
 itm_isen_uruk_helm_f|强兽人追踪者盔
 itm_uruk_pike_b|魔多长矛
 itm_uruk_falchion_a|强兽人刀
-; itm_uruk_falchion_b|Orc Great Scimitar
+itm_uruk_falchion_b|半兽人大弯刀
 itm_isengard_sword|艾辛格剑
 itm_isengard_axe|艾辛格斧
 itm_isengard_hammer|艾辛格战锤
@@ -339,22 +339,22 @@ itm_isen_uruk_shield_b|艾辛格强兽人盾
 itm_wood_club|木棍
 itm_twohand_wood_club|大型木棍
 itm_bone_cudgel|骨棒
-; itm_orc_pick|Orc Pick
-; itm_orc_hammer|Evil Hammer
+itm_orc_pick|半兽人镐
+itm_orc_hammer|邪锤
 itm_orc_club_b|座狼骑手棍
 itm_orc_club_c|半兽人尖刺棍
 itm_orc_club_d|邪恶阵营钉头锤
 itm_orc_sledgehammer|半兽人长柄锤
 itm_orc_simple_spear|半兽人长枪
 itm_orc_skull_spear|半兽人骷髅枪
-; itm_orc_bill|Orc Polearm
-; itm_orc_slasher|Orc Short Sword
+itm_orc_bill|半兽人重斧
+itm_orc_slasher|半兽人短刀
 itm_orc_falchion|半兽人刀
 itm_orc_scimitar|半兽人弯刀
 itm_orc_sabre|半兽人马刀
-; itm_orc_battle_axe|Orc Battle Axe
+itm_orc_battle_axe|半兽人战斧
 itm_orc_axe|半兽人斧
-; itm_orc_two_handed_axe|Orc Great Axe
+itm_orc_two_handed_axe|半兽人双手斧
 itm_orc_throwing_axes|半兽人掷斧
 itm_orc_bow|半兽人弓
 itm_orc_shield_a|半兽人盾
@@ -490,8 +490,8 @@ itm_mirkwood_leather|幽暗密林皮甲
 itm_mirkwood_pad|幽暗密林棉甲
 itm_mirkwood_mail|幽暗密林链甲
 itm_mirkwood_scale|幽暗密林轻型鳞甲
-; itm_mirkwood_heavy_scale|Greenwood Leafscale
-; itm_mirkwood_sword|Woodelf Sword
+itm_mirkwood_heavy_scale|Greenwood Leafscale
+itm_mirkwood_sword|Woodelf Sword
 itm_mirkwood_great_spear|幽暗密林长矛
 itm_mirkwood_war_spear|幽暗密林战矛
 itm_mirkwood_short_spear|木精灵矛
@@ -689,10 +689,10 @@ itm_dwarf_battle_axe|矮人战斧
 itm_dwarf_great_axe|矮人巨斧
 itm_dwarf_great_mattock|矮人巨型鹤嘴锄
 itm_dwarf_great_pick|矮人巨型矿镐
-; itm_dwarf_throwing_axe_reward|Erebor Flying Axes
+itm_dwarf_throwing_axe_reward|Erebor Flying Axes
 itm_dwarf_mattock|矮人鹤嘴锄
 itm_dwarf_hand_axe|矮人短斧
-; itm_dwarf_throwing_axe|Dwarf Throwing Axes
+itm_dwarf_throwing_axe|Dwarf Throwing Axes
 itm_dwarf_spear|矮人长枪
 itm_dwarf_spear_b|矮人长枪
 itm_dwarf_spear_c|矮人巨斧
@@ -745,7 +745,7 @@ itm_elven_amulet_reward|精灵护身符
 
 itm_torque_reward|邪恶颈环
 itm_orc_brew|半兽人酒
-; itm_rohan_saddle|Saddle
+itm_rohan_saddle|Saddle
 itm_mearas_reward|骏马麦赫
 itm_shield_of_tuor|图尔之盾
 itm_riv_armor_reward|瑞文戴尔饰纹甲
@@ -784,7 +784,7 @@ itm_khamul_helm|戒灵克哈穆尔的头盔
 itm_black_arrows_reward|黑箭
 itm_leather_boots_reward|猎人靴
 itm_rohan_armor_th|洛汗皇家盔甲
-; itm_wilderness_cowl|Hunter Cowl
+itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|俘虏手链
 itm_witchking_helmet|法师面具盔
 itm_lorien_royal_armor|洛里昂皇家盔甲
