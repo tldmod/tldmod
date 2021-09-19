@@ -552,7 +552,7 @@ dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|Bonne chance, alors !
 dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|Il est un important service que vous pourriez accomplir pour notre peuple, {playername}.
 dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|Mon pouvoir pour défendre et préserver la Lothlórien a été diminué par les dispositifs de l'ennemi. Un maître-sorcier de Dol Guldur invoque de puissants charmes qui inhibent nos défenses. Bien qu'il soit mortel, il est devenu l'un des plus grands élèves de nos ennemis dans l'utilisation des rituels des arcanes et il représente une grande menace pour notre peuple. Vous devez le chasser et le détruire !
 dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Où puis-je trouver le sorcier, ma Dame ?
-dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Cherchez-le dans la forêt de Grand'Peur, à proximité de Dol Guldur elle-même. Il est un ennemi à la fois bien protégé et prudent, il vous faudra donc être discret pour empêcher que l'alarme soit donnée. S'il s'échappe, il se relogera dans quelque noir endroit que nous ne connaissons pas et il continuera ses malveillances. C'est notre seule opportunité de le vaincre. Beaucoup dépend de votre succès. Partez, avec nos bénédictions.
+dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Cherchez-le dans la forêt de Grand'Peur, à proximité de Dol Guldur elle-même. C'est un ennemi à la fois bien protégé et prudent, il vous faudra donc être discret pour empêcher que l'alarme soit donnée. S'il s'échappe, il se relogera dans quelque noir endroit que nous ne connaissons pas et il continuera ses malveillances. C'est notre seule opportunité de le vaincre. Beaucoup dépend de votre succès. Partez, avec nos bénédictions.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Il en sera fait selon votre volonté, ma Dame. Je ferai de mon mieux pour éliminer ce diable.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Pardonnez-moi, ma Dame. J'ai certaines affaires pressantes dont je dois m'occuper avant d'aider votre peuple à contrer cette menace.
 dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Je comprends, {playername}. Mais ne tardez pas trop, car résister à sa magie m'épuise.
@@ -674,10 +674,10 @@ dlga_caravan_help3:caravan_help4|Bonne journée à toi, Torbal. Nos chemins se c
 dlga_caravan_help4:caravan_help_fac_tut|Je m'y essayerai. Mes gardes vous ont vus vous battre et auront des choses à raconter à leur seigneur.^^Si vous aidez leur peuple suffisamment de fois, vous serez très certainement reconnu{/e} chez eux, ce qui peut mener à beaucoup de bonnes choses !^^ Moi par exemple, qui suis connu, je perçois chaque mois une somme pour les services rendus !
 dlga_caravan_help_fac_tut:caravan_help5|(TUTORIEL DES RANGS DE FACTION) ^^Les points de rang vous permettent de monter l'échelle hiérarchique de votre faction et d'autres factions. ^^Cela influe sur la capacité maximale de votre armée en nombre de soldats, vous octroie un revenu hebdomadaire des ressources de la faction et débloque l'accès à des récompenses spécifiques à chaque faction.
 dlga_caravan_help5:close_window|Je m'en souviendrai. Merci Torbal, prenez soin de vous.
-dlga_start:caravan_attack1|Et qui êtes vous ? Nous n'avions pas besoin de votre intervention !
+dlga_start:caravan_attack1|Qui êtes-vous donc ? Nous n'avions pas besoin de votre intervention !
 dlga_caravan_attack3:close_window|Faible ? Je vais vous montrer qui est faible ! (difficile)
 dlga_caravan_attack3:close_window.1|Alors viens, couard. Je verrai ton cadavre étendu par terre.
-dlga_start:caravan_res_tut1|*ricanement* Il n'y a pas de mal à se soumettre une fois, guerrier ! Certaines personnes de doivent pas penser grand chose de vous, mais pas moi, oh non. Je vous ai vu combattre, je ne parierais pas contre vous ! {s10}^^Mais nous restons tous avec nos semblables. Servir le Grand Oeil oui, mais accomplissez quelque chose dans l'est et le sud n'en prendra pas compte, etc. De même, si vous aidez l'Oeil, la Main Blanche ne s'en souciera pas. Aidez le Vieil Homme et la Tour Sombre pensera que vous gaspillez votre temps à ne pas travailler pour elle !
+dlga_start:caravan_res_tut1|*ricanement* Il n'y a pas de mal à tenter sa chance, guerrier ! Certaines personnes de doivent pas penser grand chose de vous, mais pas moi, oh non. Je vous ai vu combattre, je ne parierais pas contre vous ! {s10}^^Mais nous restons tous avec nos semblables. Servir le Grand Oeil oui, mais accomplissez quelque chose dans l'est et le sud n'en prendra pas compte, etc. De même, si vous aidez l'Oeil, la Main Blanche ne s'en souciera pas. Aidez le Vieil Homme et la Tour Sombre pensera que vous gaspillez votre temps à ne pas travailler pour elle !
 dlga_start:caravan_res_tut2|*ricanement* Je suppose que je suis le chef maintenant. Vous êtes un guerrier féroce, oui ! Prenez votre part du butin. Certains parieraient que vous êtes bon à jeter aux wargs, mais pas moi, oh non ! Je vous ai vu combattre, je ne parierais pas contre vous !^^Nos alliés entendront parler de vous, n'en doutez pas ! Peut être souhaiteront-ils vous donner une nouvelle monture ou une nouvelle lame. Personne n'a de temps à perdre avec les faibles, mais si vous êtes fort{/e}... ah, nous soutenons ceux qui nous aident, vous voyez ? {s10}^^Mais nous restons tous avec nos semblables. Servir le Grand Oeil oui, mais accomplissez quelque chose dans l'est et le sud n'en tiendra pas compte. De même, si vous aidez le Seigneur Noir, la Main Blanche ne s'en souciera pas. Aidez le Magicien Blanc et la Tour Sombre pensera que vous gaspillez votre temps à ne pas travailler pour elle !
 dlga_caravan_res_tut1:caravan_noduel|(TUTORIEL DES POINTS DE RESSOURCES)^^ Les points de ressources utilisables en Mordor ne sont pas ceux de votre propre faction d'origine, mais ceux que vous gagnerez en Mordor. ^^Référez-vous à la section "Rapports" pour plus d'information.
 dlga_caravan_res_tut2:caravan_duel1|(TUTORIEL DES POINTS DE RESSOURCES)^^ Les points de ressources utilisables en Mordor ne sont pas ceux de votre propre faction d'origine, mais ceux que vous gagnerez en Mordor. ^^Référez-vous à la section "Rapports" pour plus d'information.
@@ -788,7 +788,7 @@ dlga_mayor_talk:mayor_deliver_wine|Il m'a été demandé de vous fournir {reg9} 
 dlga_mayor_deliver_wine:mayor_pretalk|Enfin ! Nos stocks étaient presque épuisés. Je me suis arrangé pour la livraison des {s4} en avance. Et donnez à {s9} mes salutations.^^[Gagne {reg14} points de ressources de {s14}]
 dlga_mayor_talk:mayor_deliver_wine_incomplete|J'étais en mission pour vous livrer {reg9} unités de {s4}, mais j'ai perdu une partie de la cargaison face à l'ennemi.
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|Ils vont payer pour ça ! Bien, au moins nous avons quelques {s4}. Merci quand même.^^[Gagne {reg14} points de ressources du {s14}]
-dlga_start:trainer_pretalk|Vous avez survécu à la vague du Gantelet {reg2}. {s4}
+dlga_start:trainer_pretalk|Vous avez survécu à la vague {reg2} du Gantelet. {s4}
 dlga_start:trainer_pretalk.1|Très bien, vous avez éliminé tous les adversaires.
 dlga_start:trainer_talk|Bonjour. Prêt{/e} à vous entraîner un peu aujourd'hui ?
 dlga_trainer_pretalk:trainer_talk|Êtes-vous prêt{/e} pour un peu d'entraînement ?
@@ -811,11 +811,11 @@ dlga_trainer_explain_attack_3:trainer_explain_attack_4|C'est effectivement une b
 dlga_trainer_explain_attack_4:trainer_explain_attack_5|Si mon adversaire se défend dans la direction vers laquelle j'attaque, j'interromprai mon mouvement et j'attaquerai dans une autre direction.
 dlga_trainer_explain_attack_5:trainer_combat_pretalk|Oui, savoir choisir l'orientation de votre arme lorsque vous portez un coup est une compétence primordiale. Vous pourrez principalement porter quatre types de coups : vers la gauche, vers la droite, vertical et l'estoc. Vous devez utiliser chacun de ces coups à bon escient. [Pour contrôler la direction de votre coup avec les contrôles par défaut, déplacez votre souris dans la direction vers laquelle vous souhaitez porter le coup en appuyant sur le bouton gauche de la souris].
 dlga_trainer_explain_horseback:trainer_combat_pretalk|Très bonne question. Le cheval peut être l'une des armes les plus puissantes du guerrier au cours du combat. Il vous donne de la vitesse, de la hauteur, de la puissance, et il vous permettra de prendre l'initiative. Beaucoup d'armes meurtrières le deviennent encore plus lorsque vous combattez à cheval. Cependant, vous devez prêter une attention particulière aux ennemis montés couchant leurs lances à l'horizontale car ils peuvent abattre un adversaire en un seul coup. [Pour orienter votre arme de la même manière, prenez une lance ou une arme similaire et augmentez l'allure de votre cheval sans appuyer sur les boutons d'attaque et de défense. Une fois que vous aurez atteint une certaine vitesse, votre lance s'abaissera. Essayez ensuite de cibler vos ennemis en manoeuvrant votre cheval.]
-dlga_trainer_choose_mode:trainer_choose_mode_player|Nous avons plusieurs programmes d’entraînement pour accroître les compétences de nos soldats. Le combat solo vous met seul face à un à quatre opposants, en combat par équipe votre équipe de quatre personnes affronte quatre, huit ou douze adversaires, et, enfin, le Gantelet est le challenge ultime de tout guerrier où vous affrontez des vagues d'attaquants toujours plus nombreuses sans assistance. La mêlée est une simple bagarre de groupe.^Laquelle vous tente ?
-dlga_trainer_choose_mode_player:trainer_choose_opponents|Combat singulier.
-dlga_trainer_choose_mode_player:trainer_choose_opponents.1|Combat par équipe.
-dlga_trainer_choose_mode_player:trainer_choose_weapon|Gantelet.
-dlga_trainer_choose_mode_player:trainer_choose_weapon.1|Mêlée générale.
+dlga_trainer_choose_mode:trainer_choose_mode_player|Nous avons plusieurs programmes d’entraînement pour accroître les compétences de nos soldats. Le combat singulier vous met seul face à un à quatre opposants, en combat par équipe votre équipe de quatre personnes affronte quatre, huit ou douze adversaires, et, enfin, le Gantelet est le challenge ultime de tout guerrier où vous affrontez des vagues d'attaquants toujours plus nombreuses sans assistance. La mêlée est une simple bagarre générale^Quel combat vous tente ?
+dlga_trainer_choose_mode_player:trainer_choose_opponents|Le combat singulier.
+dlga_trainer_choose_mode_player:trainer_choose_opponents.1|Le combat par équipe.
+dlga_trainer_choose_mode_player:trainer_choose_weapon|Le gantelet.
+dlga_trainer_choose_mode_player:trainer_choose_weapon.1|La mêlée.
 dlga_trainer_choose_mode_player:trainer_pretalk|Aucun, j'ai changé d'avis.
 dlga_trainer_choose_opponents:trainer_choose_opponents_player|Maintenant, choisissez le nombre d'adversaires.
 dlga_trainer_choose_opponents_player:trainer_choose_weapon|Un.
@@ -824,23 +824,23 @@ dlga_trainer_choose_opponents_player:trainer_choose_weapon.2|Trois.
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.3|Quatre, je me sens chanceux aujourd'hui.
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.4|Quatre.
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.5|Huit.
-dlga_trainer_choose_opponents_player:trainer_choose_weapon.6|Douze, moi et mes compagnon pouvons battre n'importe qui.
-dlga_trainer_choose_opponents_player:trainer_pretalk| Aucun, j'ai changé d'avis.
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.6|Douze, moi et mes compagnons pouvons battre n'importe qui.
+dlga_trainer_choose_opponents_player:trainer_pretalk|Aucun, j'ai changé d'avis.
 dlga_trainer_choose_weapon:trainer_choose_weapon_player|Et enfin, choisissez votre type d'arme préféré.
 dlga_trainer_choose_weapon_player:trainer_begin_training|Armes à une main.
 dlga_trainer_choose_weapon_player:trainer_begin_training.1|Armes à deux mains.
 dlga_trainer_choose_weapon_player:trainer_begin_training.2|Armes d'hast.
 dlga_trainer_choose_weapon_player:trainer_begin_training.3|Arcs.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Armes de jet.
-dlga_trainer_choose_weapon_player:trainer_pretalk| Aucune, j'ai changé d'avis.
+dlga_trainer_choose_weapon_player:trainer_pretalk|Aucune, j'ai changé d'avis.
 dlga_trainer_begin_training:close_window|Très bien, c'est parti. Une fois que vous aurez fini de vous entraîner, revenez me parler.
-dlga_start:close_window.22|Retire-toi, vil mendiant.
+dlga_start:close_window.22|Écarte-toi, vil mendiant.
 dlga_start:mayor_begin|Bonne journée, monseigneur.
-dlga_start:mayor_talk|Bonjour étranger, vous semblez être un nouveau venu à {s9}. Je suis le maître de guilde de la ville.
+dlga_start:mayor_talk|Bonjour étrang{er/ère}, vous semblez être {nouveau/nouvelle}, ici à {s9}. Je suis le maître de guilde de la ville.
 dlga_start:mayor_begin.1|Bonjour, {playername}.
 dlga_mayor_begin:lord_deal_with_night_bandits_completed|Très beau travail, {playername}, vous n'avez fait qu'une bouchée de ces vermines !^^[gagne {reg14} points de ressources de {s14}]
 dlga_lord_deal_with_night_bandits_completed:close_window|Ils l'ont bien cherché.
-dlga_mayor_talk:mayor_deliver_iron|Je vous ai apporté du métal de qualité supérieure, {reg9} unités de {s4}, alors que vous m'en aviez demandé du {s3}.
+dlga_mayor_talk:mayor_deliver_iron|Je vous ai apporté du métal de qualité supérieure, {reg9} unités de {s4}, alors que vous m'aviez demandé du {s3}.
 dlga_mayor_talk:mayor_deliver_iron.1|Voici vos fournitures de métal, {reg9} unités de {s4}.
 dlga_mayor_talk:mayor_deliver_iron.2|J'ai apporté plus de métal, {reg8} unités de {s4}, alors que vous en aviez demandé {reg9}.
 dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Très bon travail {playername}. Nos forgerons feront bon usage de tout ceci.

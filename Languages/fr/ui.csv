@@ -64,7 +64,7 @@ ui_party_losses|%s : %d blessés --- %d décès sur %d.
 ui_following|Suivent 
 ui_accompanying|Accompagnent 
 ui_dumping_value_items|%d objets seront définitivement perdus, confirmez-vous vouloir continuer ?
-ui_dumping_value_item|Un objet sera définitivement perdu, êtes-vous sûr de vouloir continuer ?
+ui_dumping_value_item|Un objet sera définitivement perdu, confirmez-vous vouloir continuer ?
 ui_notification_requirements_not_met|Attributs ou compétences trop faibles pour pouvoir utiliser cette arme.
 ui_disband|Renvoyer
 ui_you_hit_a_friendly_troop|Vous avez touché un allié !
@@ -150,5 +150,5 @@ ui_factions|Factions
 ui_troop_upgrades|Promotion des troupes
 ui_hdr_mode|Mode HDR :
 ui_autoexpore|Auto-exposition (recommandé si HDR est activé)
-ui_saving_policy_realistic|Sauvegarde obligatoire en quittant (non recommandé) !
-ui_saving_policy_nonrealistic|Pouvoir quitter sans sauver (recommandé, conserve plusieurs sauvegardes).
+ui_saving_policy_realistic|Sauvegarde obligatoire en quittant (non recommandé)
+ui_saving_policy_nonrealistic|Pouvoir quitter sans sauver (recommandé, plusieurs sauvegardes)

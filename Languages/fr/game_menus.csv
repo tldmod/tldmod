@@ -3,7 +3,7 @@ mno_start_good|L'AUBE d'une nouvelle ère
 mno_start_evil|Le CRÉPUSCULE des hommes
 mno_faction_intros|En apprendre plus à propos des différentes factions de la Terre du Milieu
 mno_go_bback|Retour
-menu_start_phase_2|^^^^^                La Terre du Milieu.^Une Ombre grandit à l'est et d'obscures créatures surgissent de l'ombre où elles furent tapies jadis.^Les Peuples libres se préparent à la guerre, une guerre comme nul n'en a vu depuis l'Âge précédent.^Les hommes, les elfes, les nains et les orques, tous joueront leur rôle.^^Lequel, cependant ? Le temps nous le dira...
+menu_start_phase_2|^^^^^La Terre du Milieu.^Une Ombre grandit à l'est et d'obscures créatures surgissent de l'ombre où elles furent tapies jadis.^Les peuples libres se préparent à la guerre, une guerre comme nul n'en a vue depuis l'Âge précédent.^Les hommes, les elfes, les nains et les orques, tous joueront leur rôle.^^Lequel, cependant ? Le temps nous le dira...
 mno_go_forth|Continuer sur la voie que vous avez choisie...
 mno_change_tld_options|Changer les options de TLD.
 menu_start_game_3|^^^^^^^^Choisissez votre scénario :
@@ -11,19 +11,19 @@ mno_custom_battle_scenario_1|Embuscade, Gondor contre Harad
 mno_custom_battle_scenario_12|Choisissez les factions pour la bataille
 mno_custom_battle_scenario_3|Embuscade, Elfes contre Númenóréens noirs
 mno_custom_battle_scenario_4|Défense de la Gorge de Helm, Rohan contre Isengard
-mno_custom_battle_scenario_5|Embuscade : factions nordiques contre Rhûn
+mno_custom_battle_scenario_5|Embuscade : factions du Nord contre Rhûn
 mno_custom_battle_scenario_6|Attaque de siège, Orques contre Nains
-mno_custom_battle_scenario_7|Embuscade, Orques contre Bois-Obscur
-mno_custom_battle_scenario_8|Le baroud d'honneur du peuple de Durin
+mno_custom_battle_scenario_7|Embuscade, Orques contre Grand'Peur
+mno_custom_battle_scenario_8|Le dernier combat du peuple de Durin
 mno_custom_battle_scenario_88|Pourchasser un groupe d'éclaireurs orques
 mno_custom_battle_scenario_11|Batailles de test (équilibrage)
 mno_custom_battle_scenario_10|Bataille de test de scène
-mno_troll_battle_scenario|Batailles de test de Trolls
-mno_warg_battle_scenario|Batailles de test de Wargs
+mno_troll_battle_scenario|Test de batailles de trolls
+mno_warg_battle_scenario|Test de batailles de wargs
 mno_build_your_own_scene|** Construisez votre propre scène pour TLD **
 mno_go_back|Retour
 menu_tutorial|^^Bienvenue au Tutoriel de Combat de Mount & Blade. Ici vous apprendrez les bases du combat ainsi qu'un aperçu du commandement de troupes sur le champ de bataille. 
-mno_tutorial_1|Tutoriel #1 : Mouvements Basiques et sélection d'arme. {s1}
+mno_tutorial_1|Tutoriel #1 : Mouvements basiques et sélection d'arme. {s1}
 mno_tutorial_2|Tutoriel #2 : Combattre avec bouclier. {s2}
 mno_tutorial_3|Tutoriel #3 : Combattre sans bouclier. {s3}
 mno_tutorial_3b_door|niveau suivant
@@ -44,7 +44,7 @@ mno_leave_custom_battle_2|Annuler.
 menu_custom_battle_end|^^^^^^La bataille est terminée. {s1} Votre camp a tué {reg5} ennemis et perdu {reg6} soldats dans les combats.^Vous avez personnellement tué {reg7} opposants durant la bataille.
 mno_replay|Jouer à nouveau cette bataille.
 mno_continue_dot|Continuer.
-menu_custom_battle_durin_end|^^^^^^C'était un baroud d'honneur admirable, mais finalement voué à l'échec.^^ Vous et vos compagnons avez défait {reg5} ennemis.^Vous avez personnellement vaincu {reg7} adversaires au combat.
+menu_custom_battle_durin_end|^^^^^^C'était un dernier combat admirable, mais finalement voué à l'échec.^^ Vous et vos compagnons avez défait {reg5} ennemis.^Vous avez personnellement vaincu {reg7} adversaires au combat.
 mno_replay_cbd|Jouer à nouveau cette bataille.
 mno_continue_dot_cbd|Continuer.
 mno_dot_go_back|. Retour
@@ -76,7 +76,7 @@ mno_start_lo|La LOTHRORIEN, de Dame Galadriel
 mno_start_mi|GRAND'PEUR, pays des elfes sylvains
 menu_start_good_dwarf|^^^^^^^^^^Choisissez votre lignage :
 mno_start_er|Un habitant d'EREBOR
-mno_start_ih|Un mineur des MONTS DU FER
+mno_start_ih|Un mineur des COLLINES DE FER
 menu_start_gondor|^^^^^^^^^^D'où venez-vous, en Gondor ?
 mno_start_mt|MINAS TIRITH, la capitale
 mno_start_ls|LOSSARNACH, fief des Porteurs de haches
@@ -104,24 +104,24 @@ mno_start_cliff|Dans les collines du mont GUNDABAD
 menu_start_gondor_mt|^^^^^^^^^^Sélectionnez votre lignage :
 mno_start_1_com|Roturier
 mno_start_2_hib|Noble
-menu_start_haradrim|^^^^^^^Vous êtes un Haradrim,^un homme du désert.^Sélectionnez votre lignée
+menu_start_haradrim|^^^^^^^Vous êtes un Haradrim,^un homme du désert.^Sélectionnez votre lignée :
 mno_start_1_des|Homme du désert
 mno_start_2_far|Guerrier tribal du Harad Lointain
 menu_start_numenorean|^^^^^^^Vous êtes un Númenóréen Noir, loyal à l'obscurité et à Morgoth.^Choisissez où vous servez l’oeil...
-mno_start_1_bn|Aux cotés de la Bouche de Sauron, en MORANNON
+mno_start_1_bn|Aux cotés de la Bouche de Sauron, à la MORANNON
 mno_start_2_bn|Au coeur de la forteresse du Nécromancien, DOL GULDUR
-menu_choose_gender|^^^^^^^^^^Votre sexe ?
+menu_choose_gender|^^^^^^^^^^Quel genre choisissez-vous de représenter ?
 mno_start_male|Homme
 mno_start_female|Femme
 mno_proc|Procéder normalement
-menu_start_as_one|^^^^^^^^^^Quel type de soldat êtes-vous ?
-mno_start_default|Un {s23} (Normal)
-mno_start_up1|Un {s21} (Facile)
-mno_start_up2|Un {s22} (Facile)
+menu_start_as_one|^^^^^^^^^^Quel type de combattant êtes-vous ?
+mno_start_default|{s23} (Normal)
+mno_start_up1|{s21} (Facile)
+mno_start_up2|{s22} (Facile)
 mno_continue|Continuer...
 menu_character_report|^^^^^Moral du groupe : {reg8}^Limite du groupe : {reg7}^
 menu_camp|^^^^Vous êtes dans {s1}.{s2}^^Que voulez-vous faire ?
-mno_camp_scene|Se promener.
+mno_camp_scene|Vous promener.
 mno_camp_troop|Passer en revue {reg10? troupes:}{reg12?et:}{reg11? prisonniers:}.
 mno_camp_action|Utiliser un objet.
 mno_camp_wait_here|Camper ici pour quelque temps.
@@ -141,7 +141,7 @@ mno_game_options_death|Mort permanente pour les seigneurs et les compagnons : {s
 mno_game_options_death2|Mort permanente pour le joueur (c'est VOUS !) : {s7}.
 mno_game_options_morale|Système de moral de bataille : {s7}
 mno_game_options_animal_ambushes|Embuscades des animaux : {s7}
-mno_game_options_horse_ko|Messages de dommages des cavaliers tombés :  {s7}
+mno_game_options_horse_ko|Messages de dégâts des cavaliers tombés :  {s7}
 mno_game_options_bright_nights|Nuits plus lumineuses : {s7}.
 mno_game_options_camera_pref|Mode de caméra préféré : {s7}.
 mno_game_options_tweaks|Astuces de gameplay...
@@ -290,7 +290,7 @@ menu_town|Vous êtes arrivé{/e} à {s60}.{s12}{s13}
 mno_town_menu_0|Aller dans un endroit particulier.
 mno_town_menu_0_door|Porte vers un endroit particulier.
 mno_town_approach|Approcher {s1}...
-mno_town_castle|se rendre dans {s1}
+mno_town_castle|Se rendre dans {s1}
 mno_town_castle_door|Porte du château.
 mno_town_center|Marcher jusqu'à la place principale.
 mno_town_center_door|Porte donnant sur le centre de la ville.
@@ -399,7 +399,7 @@ mno_cb_gondor|du Gondor
 mno_cb_gondor1|du Rohan
 mno_cb_gondor2|de la Lothlórien
 mno_cb_gondor3|de Fondeval
-mno_cb_gondor4|de Grand'Peur
+mno_cb_gondor4|Grand'Peur
 mno_cb_gondor5|des Nains
 mno_cb_gondor6|du Val
 mno_cb_gondor7|des Béorniens

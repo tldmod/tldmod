@@ -1,6 +1,6 @@
-qstr_Received_{reg0}_dama|{reg0} de dommages reçus.
-qstr_Gate_is_breached!|La Porte a cédé !
-qstr_Gate_opens..._You_ha|La Porte est ouverte... Vous avez atteint le lieu le plus sacré de la Terre du Milieu !
+qstr_Received_{reg0}_dama|{reg0} dégâts reçus.
+qstr_Gate_is_breached!|La porte a cédé !
+qstr_Gate_opens..._You_ha|La porte est ouverte... Vous avez atteint le lieu le plus sacré de la Terre du Milieu !
 qstr_Secret_place_discove|Endroit secret découvert !
 qstr_Next_Page|Page suivante
 qstr_Action|Action
@@ -26,22 +26,22 @@ qstr_Ready|Prêts
 qstr_Wounded|Blessés
 qstr_Dead|Morts
 qstr_Routed|En déroute
-qstr_Number_of_men_knocke|Nombre d'hommes blessés : {reg1}
+qstr_Number_of_men_knocke|Nombre d'hommes assommés : {reg1}
 qstr_Number_of_men_left:_|Nombre d'hommes restants : {reg1}
 qstr_Opponents_Beaten:_{r|Adversaires vaincus : {reg1}
 qstr_Opponents_Remaining:|Adversaires restants : {reg1}
-qstr_Gauntlet_wave:_1|Vague du Gantelat : 1
+qstr_Gauntlet_wave:_1|Vague du Gantelet : 1
 qstr_Gauntlet_wave:_{reg1|Vague du Gantelet : {reg1}
 qstr_Remain_in_retirement|Rester en retrait.
 qstr_Go_back_to_the_adven|Retourner à l'aventure.
-qstr_A_peaceful_village_n|Un village paisible non loin de Ouestfolde
+qstr_A_peaceful_village_n|Un village paisible non loin d'Ouestfolde
 qstr_The_War_is_upon_Roha|La guerre est sur le Rohan !
 qstr_Minas_Tirith___The_W|Minas Tirith, la Cité Blanche 
 qstr_The_White_Tree_stand|L'Arbre Blanc est mort depuis que la lignée des rois a failli
 qstr_The_Shadow_grows_eve|L'Ombre grandit de plus en plus fort à l'est
 qstr_Minas_Morgul___City_|Minas Morgul, la cité des Nazgûl
 qstr_Sauron_s_armies_marc|Les armées de Sauron marchent à la guerre !
-qstr_Adventurers_at_audie|Les aventuriers en audience avec l'Intendant Denethor...
+qstr_Adventurers_at_audie|Les aventuriers en audience avec l'intendant Denethor...
 qstr___What_business_do_y| « Quelles affaires avez-vous ici, suppliants ? »
 qstr___Your_Stewardship_w| « Intendant, nous sommes venus de terres lointaines pour... sauter ! »
 qstr___Enough_of_this_mad| « Assez de cette folie ! Gardes ! ! »
@@ -67,8 +67,8 @@ qstr_Man|Homme
 qstr_Elf|Elfe
 qstr_Dwarf|Nain
 qstr_Whom_Do_You_Serve?|Qui servez-vous ?
-qstr_SAURON_of_Mordor_The|SAURON du Mordor, le Seigneur des Anneaux
-qstr_SARUMAN_of_Isengard_|SARUMAN d'Isengard, la Main Blanche
+qstr_SAURON_of_Mordor_The|SAURON du Mordor,^le Seigneur des Anneaux
+qstr_SARUMAN_of_Isengard_|SARUMAN d'Isengard,^la Main Blanche
 qstr_an_ORC^_serving_the_|Un ORQUE,^serviteur du Grand OEil 
 qstr_an_URUK^_the_new_bre|Un URUK,^nouvelle race d'orque
 qstr_a_MAN^_subjugated_by|Un HOMME,^corrompu par Sauron
@@ -80,40 +80,40 @@ qstr_Level:_{reg3}^Health|Niveau : {reg3}^Santé : {reg4}
 qstr_Attributes|Attributs
 qstr_STR^AGI^INT^CHA|FOR^AGI^INT^CHA
 qstr_Skills|Compétences
-qstr_Ironflesh^Power_Stri|Santé de fer^Puissance de frappe^Puissance de lancer^Puissance de tir^Bouclier^Athlétisme^Équitation^Archerie montée
+qstr_Ironflesh^Power_Stri|Vigueur^Puissance de frappe^Puissance de lancer^Puissance de tir^Bouclier^Athlétisme^Équitation^Archerie montée
 qstr_Proficiencies|Maniements
 qstr_1H_Weapons^2H_Weapon|Armes à 1M^Armes à 2M^Armes d'hast^Archerie^Arbalètes^Jet
 qstr_Equipment|Équipement
-qstr_The_Last_Days_Mod_Op|Options du Mod The Last Days
-qstr_War_Starts_at_Level:|La Guerre commence au Niveau :
+qstr_The_Last_Days_Mod_Op|Options du mod The Last Days
+qstr_War_Starts_at_Level:|La guerre commence au niveau :
 qstr_Restrict_Player_Equi|Limiter l'équipement du joueur :
 qstr_Battle_Formations_an|Formations de combat et IA :
-qstr_Native|Vanilla
-qstr_TLD_FormAI__Original|TLD IAFormation (Original)
-qstr_TLD_New_FormAI|TLD Nouvelles IAFormation
-qstr_Advanced_Siege_AI:__|IA de Siège Avancée :
+qstr_Native|Native
+qstr_TLD_FormAI__Original|Formations IA TLD (Originales)
+qstr_TLD_New_FormAI|Nouvelles formations IA TLD
+qstr_Advanced_Siege_AI:__|IA de siège avancée :
 qstr_On|Activé
 qstr_Town_NPCs_Always_Acc|PNJ des villes toujours accessibles depuis les menus :
 qstr_Cutscenes:__|Cinématiques :
 qstr_Injuries_for_compani|Blessures pour compagnons :
 qstr_Permanent_death_for_|Mort permanente pour seigneurs et compagnons :
-qstr_Permanent_death_for_p|Mort permanent pour le joueur (C'est VOUS !) :
-qstr_Battle_morale_system|Système de morale au combat :
-qstr_Animal_ambushes:__|Embuscades des animaux :
-qstr_Fallen_rider_damage_|Messages de dommage cavalier tombé :
-qstr_No_Messages|Pas de Messages
-qstr_Player_damage_only|Dommages du joueur uniquement
-qstr_All_Messages|Tout les messages
+qstr_Permanent_death_for_p|Mort permanente pour le joueur (c'est VOUS !) :
+qstr_Battle_morale_system|Système de moral au combat :
+qstr_Animal_ambushes:__|Embuscades d'animaux :
+qstr_Fallen_rider_damage_|Messages de dégâts pour cavalier tombé :
+qstr_No_Messages|Pas de messages
+qstr_Player_damage_only|Dégâts du joueur uniquement
+qstr_All_Messages|Tous les messages
 qstr_Troop_Identifier_in_|Id. des troupes au combat (Y en combat pour afficher/cacher) :
 qstr_Disable|Désactiver
-qstr_Enable_without_Facti|Activer Sans le nom des factions
-qstr_Enable_with_Faction_|Activer Avec le nom des factions
+qstr_Enable_without_Facti|Activer sans les noms de faction
+qstr_Enable_with_Faction_|Activer avec les noms de faction
 qstr_Simple:_Red___Enemy_|Simple : Rouge - Ennemi / Vert - Allié
 qstr_Preferred_Camera_Mod|Mode de caméra préféré :
 qstr_Default_Camera|Camera par défaut 
 qstr_Free_Mode_Custom_Cam|Caméra personnalisée en mode libre
-qstr_Fixed_Over_The_Shoul|Caméra Fixe au dessus de l'épaule
-qstr_Prevent_AI_from_taki|Empêcher l'IA de rester en défense
+qstr_Fixed_Over_The_Shoul|Caméra fixe au dessus de l'épaule
+qstr_Prevent_AI_from_taki|Empêcher l'IA de rester en défense :
 qstr_Brighter_Nights:__|Nuits plus lumineuses :
 qstr_Done|Fait
 qstr_Gameplay_Tweaks|Modifications de gameplay
@@ -749,7 +749,7 @@ qstr_You_cower_in_terror_|Vous tremblez de terreur, les hurlements du Nazgûl so
 qstr_knocked_unconscious|est assommé
 qstr_Nazgul_diving_attack|Attaque plongeante du Nazgûl sur {s11} !
 qstr_{s11}_is_{s10}_in_th|{s11} est {s10} par l'attaque du Nazgûl !
-qstr_Received_{reg66}_dam|{reg66} dommages reçus.
+qstr_Received_{reg66}_dam|{reg66} dégâts reçus.
 qstr_You_yell_for_your_ho|Vous criez pour votre cheval.
 qstr_You_do_not_need_to_r|Vous n'avez pas encore besoin de rallier vos troupes.
 qstr_You_rally_your_troop|Vous ralliez vos troupes !
@@ -793,7 +793,7 @@ qstr_The_ladders_on_Deepi|Les échelles sur la Muraille de la Gorge ! Attention 
 qstr_THREE.._TWO..._ONE..|TROIS.. DEUX... UN.... BATTEZ VOUS !
 qstr_You_have_come_upon_t|Vous êtes sur les ruines d'Amon Hen, la Colline de la Vue. Une ancienne tour de guet du Gondor au sommet duquel se trouve le Siège de la Vue.^^Vous sentez que cette endroit fut autrefois grandiose mais est depuis longtemps oublié.  
 qstr_You_have_come_upon_th|Vous vous trouvez dans les Marais Morts, site de la bataille de Dagorlad durant la guerre de la Dernière Alliance^^Les marais ont englouti ce qui était alors une plaine herbeuse, et aujourd'hui le seul vert qu'il reste est celui des mauvaises herbes sur la surface sombre des eaux moroses^^Les plantes mortes en train de pourrir apparaissent dans la brume comme des les ombres en lambeaux des étés depuis longtemps perdus, et les corps des hommes, elfes et orques flottent dans les sombres profondeurs^^L'air est sec et humide, et vous ne pouvez vous empêcher de frissonner en voyant les lumières de bougies trembler dans les yeux du corps d'un elfe sous la surface de l'eau. 
-qstr_You_have_entered_the|Vous pénétrez dans les bois du sud de la forêt de Grand'Peur, autrefois connue sous le nom de "VertBois-le-Grand"^^La forteresse de Dol Goldur est proche et diffuse une ombre noire sur la forêt. Les bois semblent malades et emplis de décadence. Les anciens chênes sont couverts de pourritures et de champignons, de grandes toiles d’araignée sont tissées entre les troncs^^L'air est noir et étouffant et vous ressentez l'impression de suffoquer lentement.
+qstr_You_have_entered_the|Vous pénétrez dans les bois du sud de la forêt de Grand'Peur, autrefois connue sous le nom de VertBois-le-Grand^^La forteresse de Dol Goldur est proche et diffuse une ombre noire sur la forêt. Les bois semblent malades et emplis de décadence. Les anciens chênes sont couverts de pourritures et de champignons, de grandes toiles d’araignée sont tissées entre les troncs^^L'air est noir et étouffant et vous ressentez l'impression de suffoquer lentement.
 qstr_You_have_found_the_D|Vous avez trouvé l'entrepôt nain où devaient se trouver les légendaires lances. Faites votre rapport sur ce que vous avez trouvé à {s3}.
 qstr_Leave_the_Warehouse?|Sortir de l’entrepôt  ?
 qstr_Leave_the_place_in_s|Quitter l'endroit en silence ?
@@ -1034,12 +1034,12 @@ qstr_^^^^^^^You_come_upon|^^^^^^^Vous arrivez sur les réfugiés au départ de {
 qstr_^^^^^^^You_come_upon_|^^^^^^^Vous arrivez sur les réfugiés que vous traquez depuis {s2}. Ils sont sur la route de {s3} et sont majoritairement des vieux et des infirmes. ^^ Il y a quelques gardes, mais pas assez pour empêcher vous et vos troupes de tous les tuer.
 qstr_^^At_last_the_Master|^^Enfin, le Maître à commencé Son mouvement ! Les torches brûlent, les épées brillent. Vous et vos gars allez bientôt recevoir des ordres de marche. Ah il y aura des combats, beaucoup de combats et assez de gloire pour tous !^^Vous avez l'honneur d'être convoqué{/e} pour une audience avec le Maître. Vos premiers ordres seront sûrement d'accomplir des tâches de snaga : piller un village par ici, attaquer une caravane par là. Mais vous prouverez votre valeur rapidement. Qui peut dire si vous ne jouerez pas un grand rôle comme commandant de {s2} à {s3} ?^^La Guerre à commencé, la chute des hommes et de leurs alliés débute !
 qstr_^^Your_head_suddenly|^^Une vision envahit votre esprit, celle d'un Oeil de flammes. Autour de vous, vos guerriers s'arrêtent dans leurs tâches. Vous comprenez à cet instant que vous allez tous entendre le même appel, voir la même vision. Puissant est le pouvoir du Grand Oeil, puissant est le pouvoir de Barad-dûr !^^ Le savoir tacite suinte dans vos os. Le temps est venu. Le Seigneur des Ténèbres ordonne, vous devez tous marcher sur vos ennemis en guerre ouverte. Les ordres de {s2} de {s3} vont viendront. Votre contribution au début ne sera pas grandiose, mais vous prouverez votre valeur rapidement.^^La guerre à commencé, la chute de l'Ouest arrive !
-qstr_{s13}_asked_you_to_j|{s13} vous demande de le rejoindre avec au moins {reg13} troupes pour le Dernier Combat d'Isengard.
+qstr_{s13}_asked_you_to_j|{s13} vous demande de le rejoindre avec au moins {reg13} troupes pour le dernier combat d'Isengard.
 qstr_You_defeated_{reg5}_|Vous avez vaincu {reg5} ennemis et impressionné votre commandant.
 qstr_You_defeated_{reg5}_e|Vous avez vaincu {reg5} ennemis.
 qstr_You_failed_to_defeat|Vous n'avez pas vaincu le moindre ennemi.
-qstr_The_sorcerer_slain_y|Le sorcier tué, vous et vos compagnons bandez rapidement vos plaies et vous glissez dans la nuit. Des voix fétides hurlent derrière vous et vous pouvez sentir des yeux brûlants qui vous scrutent dans l'ombre. Rapidement la colère cède place au désappointement et les bruits de vos poursuivants s'atténuent, remplacés par le lourd silence de Grand'Peur. Vous vous êtes échappé{/e}.  
-qstr_The_sorcerer_slipped|Le sorcier s'échappe de vos mains et se faufile dans les ténèbres de son domaine. Le coeur lourd de votre échec, vous et vos compagnons pansez rapidement vos plaies et vous vous repliez dans la nuit. Des voix moqueuses hurlent dans votre dos et vous pouvez sentir Des yeux brûlants qui scrutent les ombres. Les rires et insultes sont rapidement étouffés, remplacés par le lourd silence de Grand'Peur. Vous vous êtes échappé{/e}. 
+qstr_The_sorcerer_slain_y|Le sorcier tué, vous et vos compagnons bandez rapidement vos plaies et vous glissez dans la nuit. Des voix fétides hurlent derrière vous et vous pouvez sentir des yeux brûlants qui vous scrutent dans l'ombre. Rapidement la colère cède place au désappointement et les bruits de vos poursuivants s'atténuent, remplacés par le lourd silence de la forêt de Grand'Peur. Vous vous êtes échappé{/e}.  
+qstr_The_sorcerer_slipped|Le sorcier s'échappe de vos mains et se faufile dans les ténèbres de son domaine. Le coeur lourd de votre échec, vous et vos compagnons pansez rapidement vos plaies et vous vous repliez dans la nuit. Des voix moqueuses hurlent dans votre dos et vous pouvez sentir Des yeux brûlants qui scrutent les ombres. Les rires et insultes sont rapidement étouffés, remplacés par le lourd silence de la forêt de Grand'Peur. Vous vous êtes échappé{/e}. 
 qstr_You_approach_a_heavi|Vous approchez une région de la forêt lourdement gardée...
 qstr_You_wait_for_darknes|Vous attendez que l'obscurité tombe...
 qstr_You_are_quickly_disc|Vous êtes rapidement découverts par l'ennemi.
@@ -1220,7 +1220,7 @@ qstr_There_are_spare_troo|Il y a ici quelques troupes de réserve qui ne seraien
 qstr_Strenghten_defences_|Renforcer les défenses à {s21} ? C'est certainement une bonne chose. Notez que nous ne pouvons accepter que notre propre peuple.
 qstr_Strenghten_defences_i|Renforcer les défenses à {s21} ? Eh bien, tant qu'elles ne sont pas incapables, pourquoi pas. Assurez-vous juste d'utiliser vos propres troupes, nous n'avons pas l'usage des étrangers ici.
 qstr_Please_return_them_i|S'il vous plaît, ramenez-les en un seul morceau. Je connais personnellement la valeur de chacun d'entre eux, et nous avons besoin de chaque âme ici.
-qstr_Don_t_let_them_all_d|Ne les laissez pas tous mourir au même endroit. À part les lâches. Placez ceux-là à l'avant, vous connaissez le routine maintenant.
+qstr_Don_t_let_them_all_d|Ne les laissez pas tous mourir au même endroit. À part les lâches. Placez ceux-là à l'avant, vous savez comment on procède maintenant.
 qstr_Thank_you_commander.|Merci, commandant.^
 qstr_^{s22}_is_grateful_t|^{s22} vous est reconnaissant, {s23}, {s29}^
 qstr_{s31}{reg28?Those:Th|{s31}{reg28?Ces braves:Ce brave} {reg28?soldats nous aideront:soldat nous aidera} sûrement à défendre {s21}.{s32}^^[Vous avez gagné {reg14} points de ressources de {s14}]
@@ -1452,7 +1452,7 @@ qstr_{s11}_asked_you_to_c|{s11} vous a demandé de capturer un général ennemi 
 qstr_{s9}_asked_you_to_le|{s9} vous a demandé de lui accorder l'aide de votre compagnon {s3} pour une semaine.
 qstr_{s9}_has_requested_y|{s9} vous a demandé pour lui apporter {reg1} prisonniers ennemis.
 qstr_We_have_reports_that|On nous a rapporté que quelques-unes de nos patrouilles alliées ont été prises en embuscade et vaincues. Certains de ces hommes vivent peut-être encore, capturés par l'ennemi. Quoi qu'il en soit, le moral de mes troupes en pâtit, car les hommes capturés seront sûrement tués, emprisonnés ou pire encore. Je veux que vous sauviez {reg1} prisonniers, et ainsi releviez le moral de nos troupes.
-qstr_We_have_reports_that_|On nous a rapporté que quelques-unes de nos patrouilles ont été prises en embuscade et vaincues. Certains de ces couards vivent peut-être encore, capturés par l'ennemi. Puisqu'ils nous coûtent cher, c'est du gâchis de les laisser mourir dans quelque trou de prison. Je veux que vous libériez {reg1} prisonniers, et que vous vous assuriez qu'ils combattent à nouveau.
+qstr_We_have_reports_that_|On nous a rapporté que quelques-unes de nos patrouilles ont été prises en embuscade et vaincues. Certains de ces couards vivent peut-être encore, capturés par l'ennemi. Puisqu'ils nous coûtent cher, c'est du gâchis de les laisser mourir dans quelque trou de prison. Je veux que vous libériez {reg1} prisonniers et que vous les fassiez combattre à nouveau pour nous.
 qstr_{s9}_has_asked_you_to|{s9} vous a demandé de sauver {reg1} prisonniers.
 qstr_We_have_reports_that_a|On nous rapporte qu'un ost ennemi serait en train de se rassembler à {s13}. Il est clair que c'est une grave préoccupation, car je ne sais pas de combien de troupes dispose l'ennemi, ni si mes soldats seront près à les rencontrer sur le champ de bataille. Je veux que vous vous rapprochiez de {s13}, et que vous récoltiez autant de renseignements que possible.
 qstr_My_spies_tell_me_of_|Mes espions me signalent qu’un grand groupe de guerriers se regroupe à {s13}. Ils ne devraient pas être de taille contre nous et nos serviteurs, mais il ne ferait pas de mal de savoir combien ils sont. Je veux que vous vous rapprochiez de {s13}, et que vous récoltiez autant de renseignements que possible.
