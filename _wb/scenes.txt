@@ -1,5 +1,5 @@
 scenesfile version 1
- 429
+ 430
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1688,6 +1688,10 @@ scn_forest_mirkwood10 forest_mirkwood10 4352 none none 0 0 100 100 -100 0x000000
   0 
   0 
  outer_terrain_forest 
+scn_gondor_battlefield_morgul gondor_battlefield_morgul 256 none none 0 0 200 200 -0.5 0x0000000120000500000691a40000065c00004b34000070b7 
+  0 
+  0 
+ outer_terrain_isen_low_far 
 scn_tutorial_1 tutorial_1 1 tutorial_1_scene bo_tutorial_1_scene -100 -100 100 100 -100 0 
   0 
   0 

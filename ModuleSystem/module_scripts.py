@@ -11634,6 +11634,12 @@ scripts = [
 				(assign,":scene_to_use","scn_s_erebor"),
 			(try_end),
 	(else_try),
+		(this_or_next|eq,":landmark","p_town_calembel"),
+        (eq, ":region", region_lamedon),
+        (store_random_in_range, ":scene", 0, 4),
+        (eq, ":scene",0),
+        (assign,":scene_to_use","scn_gondor_battlefield_morgul"),
+    (else_try),
 		(this_or_next|eq,":landmark","p_town_west_osgiliath"), #InVain: Keep this BEFORE Ithilien / Emyn Arnen. Otherwise we get forest scenes in Osgiliath.
 		(eq,":landmark","p_town_east_osgiliath"),
 		(assign, "$small_scene_used", 1),

@@ -517,12 +517,11 @@ scenes = [
 ("sea_battle_south" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"New_outer_terrain_seaside_east_1"),
 ("sea_battle_north" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"New_outer_terrain_seaside_1"),
 
-# Tutorial Scenes
-("dale_village_battlefield_1" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x000000012000050000075dd200003efe00004b34000059be",[],[],"outer_terrain_plain"), # Dale rural area
+("dale_village_battlefield_1" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x000000012000050000075dd200003efe00004b34000059be",[],[],"outer_terrain_plain"), # Dale rural area, by Darnokthemage
 ("old_tutorial_2",sf_indoors,"tutorial_2_scene", "bo_tutorial_2_scene", (-100,-100),(100,100),-100,"0",[],[]),
 ("old_tutorial_3",sf_indoors,"tutorial_3_scene", "bo_tutorial_3_scene", (-100,-100),(100,100),-100,"0",[],[]),
 ("old_tutorial_4",sf_generate,"none", "none", (0,0),(120,120),-100,"0x30000500400360d80000189f00002a8380006d91",[],[], "outer_terrain_plain"),
-("thranduils_halls_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001400ddb4200058d66000023ad0000751200000359",[],[],"outer_terrain_forest"),#Kolba  
+("thranduils_halls_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001400ddb4200058d66000023ad0000751200000359",[],[],"outer_terrain_forest"), 
 
 # some more missing siege scenes
 
@@ -534,7 +533,7 @@ scenes = [
 ("isengard_siege"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
   
 #Inner siege placeholders
-("thranduils_halls_siege_inner",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001400ddb4200058d66000023ad0000751200000359",[],[],"outer_terrain_forest"),#Kolba  
+("thranduils_halls_siege_inner",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001400ddb4200058d66000023ad0000751200000359",[],[],"outer_terrain_forest"), 
 ("minas_tirith_siege_inner"  ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
 ("edoras_siege_inner"        ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007200005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
 ("hornburg_siege_inner"      ,sf_generate,"none","none",(0,0),(100,100),-100,        "0x00001d63c005114300006228000053bf00004eb9",[],[],"outer_mountains2south"),
@@ -602,6 +601,12 @@ scenes = [
 ("forest_mirkwood8"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x000000014019056300058d66000037c60000416c0000385d",[],[],"outer_terrain_forest"), #swamp
 ("forest_mirkwood9"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"), #copy
 ("forest_mirkwood10"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001490b56cb00058d66000023ad0000751200006218",[],[],"outer_terrain_forest"),    #copy
+
+  ] + (is_a_wb_scene==1 and [
+("gondor_battlefield_morgul" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000120000500000691a40000065c00004b34000070b7",[],[],"outer_terrain_isen_low_far"),	#Gondor mountains battlefield by Morgul (WB only)
+  ] or [
+("gondor_battlefield_morgul" ,sf_generate|sf_randomize,"none", "none",(0,0),(100,100),-100,"0x0000000120000500000691a40000065c00004b34000070b7",[],[],"outer_terrain_isen_low_far"),
+  ]) + [
 
 # Non-campaign scenes (these can savely be kept at the end of the file and moved with each extension, whereas campaign scenes are stored within savegame files, for whatever reason)
 # Tutorial Scenes
