@@ -85,13 +85,14 @@ triggers = [
           (party_get_slot, ":center_relation", ":center_list", slot_center_player_relation),
         (try_end),
 
-		  (call_script, "script_get_faction_rank", ":faction"),
-		  (store_mul, ":rank_modifier", reg0, 10),
-		  (party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
-		  (store_mul, ":trading_modifier", ":player_party_trading", 10),
-		  
-		  (store_add, ":quality_modifier", ":center_relation", ":rank_modifier"),
-		  (val_add, ":quality_modifier", ":trading_modifier"),
+          (call_script, "script_get_faction_rank", ":faction"),
+          (assign, ":rank", reg0),
+          (store_mul, ":rank_modifier", ":rank", 10),
+          (party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
+          (store_mul, ":trading_modifier", ":player_party_trading", 10),
+          
+          (store_add, ":quality_modifier", ":center_relation", ":rank_modifier"),
+          (val_add, ":quality_modifier", ":trading_modifier"),
           (val_add, ":quality_modifier", ":base_chance"),
           (set_merchandise_modifier_quality, ":quality_modifier"), #new formula
 
@@ -108,7 +109,24 @@ triggers = [
             #swy--> if the item doesn't belongs to our faction, bail out early...
             (eq,":item_faction_mask",0),
             (set_item_probability_in_merchandise, ":item", 0),
-            
+
+
+        ] + (is_a_wb_trigger==1 and [   
+          (else_try), #InVain: Rank requirement for items + reduction chance per trading and center relation
+            (item_get_abundance, ":rank_req", ":item"),
+            (is_between, ":rank_req", 1, 100),
+            (val_sub, ":rank_req", 90),
+            (store_add, ":rank_bonus", ":trading_modifier", ":center_relation"),
+            (val_div, ":rank_bonus", 2),
+            (val_sub, ":rank_bonus", 20), 
+            (store_random_in_range, ":random", 0, 100),
+            (try_begin),
+                (lt, ":random", ":rank_bonus"),
+                (val_sub, ":rank_req", 1),
+            (try_end),
+            (lt, ":rank", ":rank_req"),
+            (set_item_probability_in_merchandise, ":item", 0),          
+          ] or []) + [
           (else_try),
             #swy--> null out its probability if we are part of a subfaction but the item isn't...
             (gt, ":subfaction", 0),
@@ -134,12 +152,13 @@ triggers = [
             (set_item_probability_in_merchandise, ":item", 0),
             
           (else_try),
+            (set_item_probability_in_merchandise, ":item", 100),
             #swy--> half its probability if the item costs more than 1500...
-            (store_item_value,":value",":item"),
-            (try_begin),
-              (gt,":value",1500),
-              (set_item_probability_in_merchandise, ":item", 50),
-            (try_end),
+            #(store_item_value,":value",":item"),
+            # (try_begin),
+              # (gt,":value",1500),
+              # (set_item_probability_in_merchandise, ":item", 50),
+            # (try_end),
             
             ] + (is_a_wb_trigger==1 and [
               
@@ -255,14 +274,45 @@ triggers = [
         # (assign, ":is_elf_faction", 1),
         # (try_end),
         (party_get_slot, ":center_str_income", ":cur_center", slot_center_strength_income),
-        
+ 
+       # # Add Center Relations modifier to Item Quality in horse merchants
+        (assign, ":base_chance", 50),
+        (party_get_slot, ":center_relation", ":cur_center", slot_center_player_relation),
+        (call_script, "script_get_faction_rank", ":faction"),
+        (assign, ":rank", reg0),
+        (store_mul, ":rank_modifier", ":rank", 10),
+        (party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
+        (store_mul, ":trading_modifier", ":player_party_trading", 10),
+      
+        (store_add, ":quality_modifier", ":center_relation", ":rank_modifier"),
+        (val_add, ":quality_modifier", ":trading_modifier"),
+        (val_add, ":quality_modifier", ":base_chance"),
+        (set_merchandise_modifier_quality, ":quality_modifier"), #new formula
+ 
         (try_for_range,":item","itm_sumpter_horse", "itm_warg_reward"),
           (item_get_slot,":item_faction_mask",":item",slot_item_faction),
           (val_and,":item_faction_mask",":faction_mask"),
           
+          (set_item_probability_in_merchandise,":item",100),
           (try_begin),
             (eq,":item_faction_mask",0), # faction mismatch
             (set_item_probability_in_merchandise,":item",0),
+    ] + (is_a_wb_trigger==1 and [   
+          (else_try), #InVain: Rank requirement for items + reduction chance per trading and center relation
+            (item_get_abundance, ":rank_req", ":item"),
+            (is_between, ":rank_req", 1, 100),
+            (val_sub, ":rank_req", 90),
+            (store_add, ":rank_bonus", ":trading_modifier", ":center_relation"),
+            (val_div, ":rank_bonus", 2),
+            (val_sub, ":rank_bonus", 20), 
+            (store_random_in_range, ":random", 0, 100),
+            (try_begin),
+                (lt, ":random", ":rank_bonus"),
+                (val_sub, ":rank_req", 1),
+            (try_end),
+            (lt, ":rank", ":rank_req"),
+            (set_item_probability_in_merchandise, ":item", 0),          
+    ] or []) + [
           (else_try),
             (try_begin), # faction match but what about subfactions?
               (neq, ":subfaction", 0),
@@ -275,19 +325,6 @@ triggers = [
             (try_end),
           (try_end),
         (try_end),
-
-       # # Add Center Relations modifier to Item Quality in horse merchants
-		  (assign, ":base_chance", 50),
-          (party_get_slot, ":center_relation", ":cur_center", slot_center_player_relation),
-		  (call_script, "script_get_faction_rank", ":faction"),
-		  (store_mul, ":rank_modifier", reg0, 10),
-		  (party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
-		  (store_mul, ":trading_modifier", ":player_party_trading", 10),
-		  
-		  (store_add, ":quality_modifier", ":center_relation", ":rank_modifier"),
-		  (val_add, ":quality_modifier", ":trading_modifier"),
-          (val_add, ":quality_modifier", ":base_chance"),
-          (set_merchandise_modifier_quality, ":quality_modifier"), #new formula
 		
         #swy-- add poneys to the Iron Hills camp merchant, that's it.
         #      poneys are always cool if there are dwarves over them!
