@@ -248,14 +248,7 @@ triggers = [
         (store_troop_faction,":faction",":cur_merchant"),
         (faction_get_slot, ":faction_mask", ":faction", slot_faction_mask),
         
-        (troop_get_slot,":subfaction",":cur_center", slot_troop_subfaction),
-        (assign, ":subfaction_mask", 1),
-        
-        # --
-        
-        (try_for_range, ":unused", 0, ":subfaction"),
-          (val_mul, ":subfaction_mask", 2),
-        (try_end), #":subfaction_mask" = 2,4,8,16... if subfactions here
+        (troop_get_slot,":subfaction",":cur_merchant", slot_troop_subfaction),
         
         (assign, ":is_orc_faction", 0),
         (try_begin),
@@ -314,15 +307,30 @@ triggers = [
             (set_item_probability_in_merchandise, ":item", 0),          
     ] or []) + [
           (else_try),
-            (try_begin), # faction match but what about subfactions?
-              (neq, ":subfaction", 0),
-              
-              (val_div, ":subfaction_mask", 2), #shift back
-              (item_get_slot,":item_subfaction_mask",":item",slot_item_subfaction),
-              (store_and,":subfaction_mask",":subfaction_mask",":item_subfaction_mask"), # subfaction mismatch
-              (eq,":subfaction_mask",0),
-              (set_item_probability_in_merchandise,":item", 0),  #  prob reduced to 0 %
+            #swy--> null out its probability if we are part of a subfaction but the item isn't...
+            (gt, ":subfaction", 0),
+            (neg|is_between, ":item", "itm_sumpter_horse", "itm_steppe_horse"),
+            (neg|is_between, ":item", "itm_gondor_courser", "itm_dol_amroth_warhorse"),
+            
+            #swy-- if the subfaction mask bit index exists, let's make it, turning it into the proper bitmask with powers of two, emulating a leftshift [1 << mask index]:
+            #  e.g: mask index 1 = 2             =>  2
+            #       mask index 2 = 2 x 2         =>  4
+            #       mask index 3 = 2 x 2 x 2     =>  8
+            #       mask index 4 = 2 x 2 x 2 x 2 => 16
+            
+            # note: there's also a val_lshift operation in WB, but that makes it an opcode longer than a direct power of two. :-)
+            (assign, ":subfaction_mask", 1),
+            (try_for_range, ":unused", 0, ":subfaction"),
+              (val_mul, ":subfaction_mask", 2),  # ":subfaction_mask"=1 if regular faction w/o subs, 2,4,8,16... for subs
             (try_end),
+            
+            (item_get_slot,":item_subfaction_field", ":item", slot_item_subfaction),
+            
+            # check for subfaction mismatch, in case they match, jump to the next else like a normal item...
+            (store_and,":subfaction_result", ":subfaction_mask", ":item_subfaction_field"),
+            (       eq,":subfaction_result", 0),
+            # --
+            (set_item_probability_in_merchandise, ":item", 0),
           (try_end),
         (try_end),
 		

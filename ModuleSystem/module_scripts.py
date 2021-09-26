@@ -1693,6 +1693,8 @@ scripts = [
 	(party_set_slot, subfaction_data[x][1],slot_party_subfaction    , subfaction_data[x][0]),
 	(party_get_slot, ":weaponsmith",      subfaction_data[x][1]    , slot_town_weaponsmith),
 	(troop_set_slot, ":weaponsmith",      slot_troop_subfaction    , subfaction_data[x][0]),
+	(party_get_slot, ":horse_merchant",      subfaction_data[x][1]    , slot_town_merchant),
+	(troop_set_slot, ":horse_merchant",      slot_troop_subfaction    , subfaction_data[x][0]),
 	]   for x in range(len(subfaction_data)) ])+[
 	
 # rohan towns subfaction assignment  (currently, for sake or geographical region identification  only)
