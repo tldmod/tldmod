@@ -138,7 +138,7 @@ qstr_None|Aucun
 qstr_Army_rotates_to_face|L'armée pivote pour faire face au centre des ennemis :
 qstr_Prevent_AI_from_takin|Empêcher l'IA de rester en défense :
 qstr_AI_Controls_Troops_W|L'IA contrôle les unités quand le joueur est KO :
-qstr_You_gained_{reg0}_Re|Vous avez gagné {reg0} points de ressourcse de {s0}.
+qstr_You_gained_{reg0}_Re|Vous avez gagné {reg0} points de ressources de {s0}.
 qstr_You_lost_{reg0}_Reso|Vous avez perdu {reg0} points de ressources de {s0}.
 qstr_{s24}:|{s24} :
 qstr_Great_Hope_of_{s5}|Grand Espoir de {s5}
@@ -178,7 +178,7 @@ qstr_{s1}_of_{s3}_was_def|{s1} de {s3} a été vaincu dans une bataille.
 qstr_{s2}_have_razed_{s1}|{s2} a rasé {s1} !
 qstr_Left_for_dead_but_mi|Laissé pour mort mais survécu miraculeusement : {reg1?{reg1} time{reg2?s:} : JAMAIS}
 qstr_1_Res.Pt__{s2}_|1 pt. res. ({s2})
-qstr_{reg1}_Res.Pts__{s2}|{reg1} pts. res ({s2})
+qstr_{reg1}_Res.Pts__{s2}|{reg1} pts ress. ({s2})
 qstr_+30_to_Party_Morale|+30 au moral du groupe
 qstr_+20_to_Party_Morale|+20 au moral du groupe
 qstr_+1_to_Riding_Skill|+1 en Équitation
@@ -551,7 +551,7 @@ qstr_What_do_you_want_of_|Que voulez-vous de moi, vieil homme ?
 qstr_Just_know_that_a_Daw|Sachez juste que l'Aube arrive. Elle est inévitable. Et si vous êtes toujours en vie pour la voir, réfléchissez à ce que vous aurez alors à dire.
 qstr_Well_met_{playername|Heureuse rencontre, {playername}, {s24}. Ma confiance en vous n'était pas erronée. La puissance des forces de l'Ombre a été brisée et vos efforts n'ont pas été secondaires dans ce qui s'est passé. 
 qstr_Thank_you_Mithrandir|Merci, Mithrandir !
-qstr_The_wizard_Saruman_i|Le magicien Saruman est parti et Barad-Dûr a été réduite en poussière avec son Seigneur des Ténèbres ! Tous les peuples de la Terre du Milieu sont délivrés de la menace qui a bien failli consumer tout ce qui était bon et pur en ce monde. L'ennemi est vaincu et le roi est de retour !
+qstr_The_wizard_Saruman_i|Le magicien Saruman est parti et Barad-Dûr a été réduite en poussière avec son Seigneur Sombre ! Tous les peuples de la Terre du Milieu sont délivrés de la menace qui a bien failli consumer tout ce qui était bon et pur en ce monde. L'ennemi est vaincu et le roi est de retour !
 qstr_It_was_a_long_and_bl|Ce fût une longue et sanglante guerre, et beaucoup de nos amis proches ne sont plus de ce monde.
 qstr_There_is_much_to_reg|Il y a beaucoup à regretter et à pleurer, et encore plus à reconstruire et à réparer dans les jours à venir. Mais pour l'instant, soyons radieux avec ceux de nos amis qui sont toujours avec nous et célébrons tout ce que nous avons accompli dans Les Derniers Jours du Troisième Âge.
 qstr_Bagginsssss..._Ssssh|Besssssssac... Comté...
@@ -692,7 +692,7 @@ qstr_Distance___{reg70}__|Distance - {reg70} - {s11} Groupe - {s12} Soldat
 qstr_A_golden_mist_from_L|Une brume dorée venue de la Lórien recouvre le champ de bataille. Vos troupes se sentent encouragés par la présence de la Dame.
 qstr_A_golden_mist_from_Lr|Une brume dorée venue de la Lórien recouvre le champ de bataille. La sorcière est proche, donnant des frissons à vous et vos troupes.
 qstr_Dark_clouds_from_Mor|Des nuages noirs venus du Mordor recouvrent le champ de bataille. Vos archers ont du mal à voir l'ennemi et la présence du mal terrifie vos hommes.
-qstr_Dark_clouds_from_Mord|Des nuages noirs venus du Mordor recouvrent le champ de bataille. La présence du Seigneur des Ténèbres vous renforce vous et vos troupes.
+qstr_Dark_clouds_from_Mord|Des nuages noirs venus du Mordor recouvrent le champ de bataille. La présence du Seigneur Sombre vous renforce, vous et vos troupes.
 qstr_A_thunderstorm_from_|Un orage venant des Montagnes de Brume se déchaîne au dessus du champ de bataille. Vos troupes sont ralenties et les soldats les plus superstitieux sont effrayés.
 qstr_A_thunderstorm_from_t|Un orage venant des Montagnes de Brume se déchaîne au dessus du champ de bataille. Les archers sont gênés par le temps. 
 qstr_A_poisonous_fog_from|Une brume empoisonnée venue de Dol Goldur flotte sur le champ de bataille. Vous et vos troupes êtes affaiblis. La peur se répand parmi les hommes.
@@ -1022,7 +1022,7 @@ qstr_You_see_the_village_|Vous voyez le village être attaqué par les bandits. 
 qstr_You_see_the_village_y|Vous apercevez le village qu'on vous a ordonné de piller. Vous vous préparez à attaquer le village avec un petit groupe pour ne pas être vus.
 qstr_The_raiders_are_defe|Les pillards ont été défaits ! Les quelques rescapés fuient dans l’obscurité de laquelle ils sont venus tantôt, terrifiés par les villageois et leur nouveau champion.
 qstr_Try_as_you_might_you|Malgré vos efforts, vous n'avez pas été capable de repousser les assaillants. Ils ont rasé le village et capturé ses habitants pour en faire des esclaves.
-qstr_The_village_has_been|Le village a été rasé, les villageois tués ou réduits à l'esclavage. Le Seigneur des Ténèbres sera satisfait.
+qstr_The_village_has_been|Le village a été rasé, les villageois tués ou réduits à l'esclavage. Le Seigneur Sombre sera satisfait.
 qstr_You_failed_to_raid_t|Vous n'avez pas réussi à prendre le village, vous et vos hommes avez été repoussés. Vous entendez au loin les cris des vainqueurs alors que vous ressentez le regard désapprobateur de l’Oeil sur vos épaules.
 qstr_The_Scout_Camp_has_b|Le camp d'éclaireurs a été rasé. Cela ralentira l'avancée de l'ennemi.
 qstr_You_failed_to_destro|Vous avez échoué à détruire le camp d’éclaireurs. L'ennemi à pris la mesure de votre faction et à tenu bon.
@@ -1033,7 +1033,7 @@ qstr_You_were_defeated_by|Vous avez été vaincus par la flotte d'interception e
 qstr_^^^^^^^You_come_upon|^^^^^^^Vous arrivez sur les réfugiés au départ de {s2} et à destination de {s3}. ^^Ce sont majoritairement des vieux et des infirmes, accompagnés de femmes et d'enfants^^ Il y a des gardes, mais pas assez pour protéger tout le monde d'une attaque.
 qstr_^^^^^^^You_come_upon_|^^^^^^^Vous arrivez sur les réfugiés que vous traquez depuis {s2}. Ils sont sur la route de {s3} et sont majoritairement des vieux et des infirmes. ^^ Il y a quelques gardes, mais pas assez pour empêcher vous et vos troupes de tous les tuer.
 qstr_^^At_last_the_Master|^^Enfin, le Maître à commencé Son mouvement ! Les torches brûlent, les épées brillent. Vous et vos gars allez bientôt recevoir des ordres de marche. Ah il y aura des combats, beaucoup de combats et assez de gloire pour tous !^^Vous avez l'honneur d'être convoqué{/e} pour une audience avec le Maître. Vos premiers ordres seront sûrement d'accomplir des tâches de snaga : piller un village par ici, attaquer une caravane par là. Mais vous prouverez votre valeur rapidement. Qui peut dire si vous ne jouerez pas un grand rôle comme commandant de {s2} à {s3} ?^^La Guerre à commencé, la chute des hommes et de leurs alliés débute !
-qstr_^^Your_head_suddenly|^^Une vision envahit votre esprit, celle d'un Oeil de flammes. Autour de vous, vos guerriers s'arrêtent dans leurs tâches. Vous comprenez à cet instant que vous allez tous entendre le même appel, voir la même vision. Puissant est le pouvoir du Grand Oeil, puissant est le pouvoir de Barad-dûr !^^ Le savoir tacite suinte dans vos os. Le temps est venu. Le Seigneur des Ténèbres ordonne, vous devez tous marcher sur vos ennemis en guerre ouverte. Les ordres de {s2} de {s3} vont viendront. Votre contribution au début ne sera pas grandiose, mais vous prouverez votre valeur rapidement.^^La guerre à commencé, la chute de l'Ouest arrive !
+qstr_^^Your_head_suddenly|^^Une vision envahit votre esprit, celle d'un Oeil de flammes. Autour de vous, vos guerriers s'arrêtent dans leurs tâches. Vous comprenez à cet instant que vous allez tous entendre le même appel, voir la même vision. Puissant est le pouvoir du Grand Oeil, puissant est le pouvoir de Barad-dûr !^^ Le savoir, non-dit, suinte dans vos os. Le temps est venu. Le Seigneur Sombre ordonne, vous devez tous marcher sur vos ennemis dans une guerre ouverte. Les ordres de {s2} de {s3} vont venir. Votre contribution au début ne sera pas grandiose, mais vous prouverez votre valeur rapidement.^^La guerre à commencé, la chute de l'Ouest arrive !
 qstr_{s13}_asked_you_to_j|{s13} vous demande de le rejoindre avec au moins {reg13} troupes pour le dernier combat d'Isengard.
 qstr_You_defeated_{reg5}_|Vous avez vaincu {reg5} ennemis et impressionné votre commandant.
 qstr_You_defeated_{reg5}_e|Vous avez vaincu {reg5} ennemis.
@@ -1234,7 +1234,7 @@ qstr_I_am_{s4}_{s15}_of_{|Je suis {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Je suis {s4}, un commandant de {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? et le dirigeant de {s8}.:.
 qstr__{s3}_gained_{reg78}|{s3} a gagné {reg78} points d'expérience.
-qstr_{playername}_our_sco|{playername}, nos éclaireurs nous ont rapporté votre succès. Puissiez vous vivre après ce jour, des années de bénédictions ! Avec les armées de {s7} renvoyées par votre victoire, la grande avancée de l'ennemi a flanché. Nous pouvons maintenant espérer qu'il y ait des querelles dans leurs rangs et entre leur capitaines. Et nous espérons aussi qu'ils auront une peur bienvenue de vous ! Vous nous avez au moins offert un bref temps de répit.
+qstr_{playername}_our_sco|{playername}, nos éclaireurs nous ont rapporté votre succès. Puissiez vous vivre après ce jour, des années de bénédictions ! Avec les armées de {s7} repoussées par votre victoire, la grande avancée de l'ennemi a flanché. Nous pouvons maintenant espérer qu'il y ait des querelles dans leurs rangs et parmi leurs capitaines, et nous espérons également qu'ils auront une saine peur de vous ! Vous nous avez au moins offert un bref temps de répit.
 qstr_Well_{playername}_yo|Eh bien, {playername}, vous êtes de retour, et avec de bonnes nouvelles pour nous, semble-t-il. Je vois maintenant que vous n'êtes pas seulement fait{/e} de vantardise et d'air chaud. Ah, si seulement j'avais pu voir {s7} tomber devant vous de mes propres yeux ! Nos ennemis sont maintenant désespérés et découragés, sans aucun doute. Ils ont perdu la tête, je le garantis. Coupez la tête d'un serpent, comme ils disent, et l'affaire est conclue. Je dois maintenant mener mon hôte à la vraie victoire. Votre contribution sera rapportée à vos supérieurs, {playername}, n'ayez aucune crainte à ce sujet.
 qstr_Alas_that_I_could_no|Hélas, je n'ai pas pu mettre un terme définitif à {s7} de {s8}, mais gare à eux si nous les rencontrons à nouveau.
 qstr__I_should_rather_mak|Je devrais plutôt faire part de ma victoire sur {s7} de {s8} moi-même. La gloire me revient, ne l'oubliez pas !
@@ -1291,7 +1291,7 @@ qstr_Men_of_Gondor|Hommes du Gondor
 qstr_Riders_of_Rohan|Cavaliers du Rohan
 qstr_Elves_of_Imladris_an|les elfes d'Imladris et de la Lothlórien
 qstr_Men_of_Dale_Dwarves_|Les hommes du Val, les nains d'Erebor, les parents de Beorn et les elfes de Grand'Peur
-qstr_Ah_{playername}_it_i|Ah {playername}, je suis heureux que vous ayez pu venir. La guerre est à notre porte et nous avons besoin de soldats et de capitaines prêts à respecter leur serment.^^Nous sommes en guerre avec {s11}, mais nous devons rassembler nos forces et affaiblir l'ennemi avant de pouvoir porter la guerre chez eux et nous emparer de leurs places fortes. Chaque défaite de nos ennemis nous rapprochera de la victoire et renforcera notre détermination, donc je vous fais confiance pour affronter nos ennemis de toutes parts, qu'il s'agisse d'éclaireurs ou d'une armée complète. Pour l'instant ne vous jetez pas seul{/e} dans la bataille, vous devrez combattre aux cotés de nos braves capitaines et aussi de nos alliés.
+qstr_Ah_{playername}_it_i|Ah {playername}, je suis heureux que vous ayez pu venir. La guerre est à notre porte et nous avons besoin de soldats et de capitaines prêts à respecter leur serment.^^Nous sommes en guerre avec {s11}, mais nous devons rassembler nos forces et affaiblir l'ennemi avant de pouvoir porter la guerre chez eux et nous emparer de leurs places fortes. Chaque défaite de nos ennemis nous rapprochera de la victoire et renforcera notre détermination, donc je vous fais confiance pour affronter nos ennemis à chaque fois que ce sera possible, qu'il s'agisse d'éclaireurs ou d'une armée complète. Pour l'instant ne vous jetez pas seul{/e} dans la bataille, vous devrez combattre aux cotés de nos braves capitaines et aussi de nos alliés.
 qstr_About_time_you_showe|Il était temps que vous arriviez {playername} ! Nous sommes en guerre maintenant et je ne tolérerai aucune insubordination. Nous combattons contre {s11}, mais nous devons rassembler nos forces et écraser l'ennemi sur le terrain avant de pouvoir assiéger leurs forteresses. Chaque défaite de nos ennemis renforcera nos efforts de guerre et nous rapprochera de leur destruction totale. Donc je vous fais confiance pour saisir la moindre opportunité de les combattre, qu'il s'agisse d’éclaireurs ou d'une armée complète. Vous devrez aussi soutenir nos capitaines et nos alliés si vous les voyez combattre. Ne les abandonnez pas, ou je le saurai.
 qstr_we_are_fighting_agai|Nous combattons contre {s13}
 qstr_we_are_not_fighting_|Nous ne combattons personne en ce moment.
@@ -1454,7 +1454,7 @@ qstr_{s9}_has_requested_y|{s9} vous a demandé pour lui apporter {reg1} prisonni
 qstr_We_have_reports_that|On nous a rapporté que quelques-unes de nos patrouilles alliées ont été prises en embuscade et vaincues. Certains de ces hommes vivent peut-être encore, capturés par l'ennemi. Quoi qu'il en soit, le moral de mes troupes en pâtit, car les hommes capturés seront sûrement tués, emprisonnés ou pire encore. Je veux que vous sauviez {reg1} prisonniers, et ainsi releviez le moral de nos troupes.
 qstr_We_have_reports_that_|On nous a rapporté que quelques-unes de nos patrouilles ont été prises en embuscade et vaincues. Certains de ces couards vivent peut-être encore, capturés par l'ennemi. Puisqu'ils nous coûtent cher, c'est du gâchis de les laisser mourir dans quelque trou de prison. Je veux que vous libériez {reg1} prisonniers et que vous les fassiez combattre à nouveau pour nous.
 qstr_{s9}_has_asked_you_to|{s9} vous a demandé de sauver {reg1} prisonniers.
-qstr_We_have_reports_that_a|On nous rapporte qu'un ost ennemi serait en train de se rassembler à {s13}. Il est clair que c'est une grave préoccupation, car je ne sais pas de combien de troupes dispose l'ennemi, ni si mes soldats seront près à les rencontrer sur le champ de bataille. Je veux que vous vous rapprochiez de {s13}, et que vous récoltiez autant de renseignements que possible.
+qstr_We_have_reports_that_a|On nous rapporte qu'un ost ennemi serait en train de se rassembler à {s13}. Il est clair que c'est une grave préoccupation, car je ne sais pas de combien de troupes dispose l'ennemi ni si mes soldats seront prêts à les rencontrer sur le champ de bataille. Je veux que vous vous rapprochiez de {s13} et que vous récoltiez autant de renseignements que possible.
 qstr_My_spies_tell_me_of_|Mes espions me signalent qu’un grand groupe de guerriers se regroupe à {s13}. Ils ne devraient pas être de taille contre nous et nos serviteurs, mais il ne ferait pas de mal de savoir combien ils sont. Je veux que vous vous rapprochiez de {s13}, et que vous récoltiez autant de renseignements que possible.
 qstr_{s9}_asked_you_to_sco|{s9} vous a demandé de partir en éclaireur autour de {s13}.
 qstr_We_have_reports_of_s|Nos rapports nous signalent une activité ennemie près de {s13}. Nos éclaireurs ne sont pas parvenus à se rapprocher suffisamment pour observer les allers et venues dans la région. Je veux que vous rassembliez un groupe d'éclaireurs, que vous vous rapprochiez de {s13}, et que vous envoyez les éclaireurs.
@@ -1489,7 +1489,7 @@ qstr__*growl*_I_know_your|*grogne* Je connais ta langue, elfe, assez bien pour s
 qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Profonds sont les desseins de mon maître, et rares sont ceux qui les connaissent et les comprennent.
 qstr_Alae!_Our_green_wood|Alae ! Nos bois sont souvent patouillés, nos portes épaisses restent solides, les salles de Thranduil sont sûres. Il serait bon de suivre notre exemple.
 qstr__say_nothing_|(Ne rien dire)
-qstr_Alas_it_is_not_a_plea|Hélas, ce n'est pas un but agréable ou une simple errance qui m'amène, ainsi que d'autres, au service du seigneur Elrond sur ces terres.^^ Un mal ancien remuait dans la pénombre et maintenant envahit la lumière. Les sages à travers les Montagnes ont répondu à l'appel et les armées d'Imladris partent au combat pour le Nord.
+qstr_Alas_it_is_not_a_plea|Hélas, ce n'est pas un but agréable ou une simple errance qui m'amène, ainsi que d'autres, au service du seigneur Elrond sur ces terres.^^ Un mal ancien remuait dans la pénombre et maintenant il grouille dans la lumière. Les sages à travers les montagnes ont répondu à l'appel et les armées d'Imladris partent au combat pour le Nord.
 qstr_You_wouldn_t_have_nee|Vous n'auriez pas eu besoin de notre aide si vous aviez fermé vos frontières ! ^^Les histoires de la sorcière de la forêt n'effrayent que les idiots, pas les orques que nous venons de tuer.
 qstr_*growl*_I_know_your_|*grognement* Je connais ta langue, elfe, assez bien pour savoir si tu te moques de moi ou si tu me remercies.^^Les étoiles n'ont rien à voir avec ça. j'ai senti une puanteur et suivi la piste, je les aurais tués que vous ayez ou non été en danger.
 qstr_Keep_your_secrets_th|Gardez vos secrets alors, mon ami, mais le Bois Doré murmure l’arrivée des vôtres. ^^ Nous informerons dame Galadriel de la venue du seigneur Elrond, même si je soupçonne qu’elle le sait déjà. Et nous parlerons de vous aussi, à tout notre peuple. ^^Le maethor veleg a gornui ! Votre valeur et vos actes seront connus et vos besoins satisfaits chaque fois que vous visitez notre Vallée de l'Or Chantant.
