@@ -87,7 +87,7 @@ triggers = [
 
           (call_script, "script_get_faction_rank", ":faction"),
           (assign, ":rank", reg0),
-          (store_mul, ":rank_modifier", ":rank", 10),
+          (store_mul, ":rank_modifier", ":rank", 5),
           (party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
           (store_mul, ":trading_modifier", ":player_party_trading", 10),
           
@@ -151,6 +151,22 @@ triggers = [
             # --
             (set_item_probability_in_merchandise, ":item", 0),
             
+          (else_try), #Invain: Clean up Gondor regular (0no subfac) stores from subfac gear
+            (eq, ":faction", fac_gondor),
+            (eq, ":subfaction", 0),
+            (item_get_slot,":item_subfaction_field", ":item", slot_item_subfaction),
+            (assign, ":subfac_found", 0),
+            (try_for_range, ":subfaction_check", 1, 7), #not rangers
+                (eq, ":subfac_found", 0),
+                (assign, ":subfaction_mask", 1),
+                (try_for_range, ":unused", 0, ":subfaction_check"),
+                  (val_mul, ":subfaction_mask", 2),  # ":subfaction_mask"=1 if regular faction w/o subs, 2,4,8,16... for subs
+                (try_end),
+                (eq, ":subfaction_mask", ":item_subfaction_field"),
+                (assign, ":subfac_found", 1),                
+            (try_end),
+            (eq, ":subfac_found", 1),
+            (set_item_probability_in_merchandise, ":item", 0),
           (else_try),
             (set_item_probability_in_merchandise, ":item", 100),
             #swy--> half its probability if the item costs more than 1500...
@@ -273,7 +289,7 @@ triggers = [
         (party_get_slot, ":center_relation", ":cur_center", slot_center_player_relation),
         (call_script, "script_get_faction_rank", ":faction"),
         (assign, ":rank", reg0),
-        (store_mul, ":rank_modifier", ":rank", 10),
+        (store_mul, ":rank_modifier", ":rank", 5),
         (party_get_skill_level, ":player_party_trading", "p_main_party", "skl_trade"),
         (store_mul, ":trading_modifier", ":player_party_trading", 10),
       
@@ -330,6 +346,23 @@ triggers = [
             (store_and,":subfaction_result", ":subfaction_mask", ":item_subfaction_field"),
             (       eq,":subfaction_result", 0),
             # --
+            (set_item_probability_in_merchandise, ":item", 0),
+            
+          (else_try), #Invain: Clean up Gondor regular (0no subfac) stores from subfac gear
+            (eq, ":faction", fac_gondor),
+            (eq, ":subfaction", 0),
+            (item_get_slot,":item_subfaction_field", ":item", slot_item_subfaction),
+            (assign, ":subfac_found", 0),
+            (try_for_range, ":subfaction_check", 1, 7), #not rangers
+                (eq, ":subfac_found", 0),
+                (assign, ":subfaction_mask", 1),
+                (try_for_range, ":unused", 0, ":subfaction_check"),
+                  (val_mul, ":subfaction_mask", 2),  # ":subfaction_mask"=1 if regular faction w/o subs, 2,4,8,16... for subs
+                (try_end),
+                (eq, ":subfaction_mask", ":item_subfaction_field"),
+                (assign, ":subfac_found", 1),                
+            (try_end),
+            (eq, ":subfac_found", 1),
             (set_item_probability_in_merchandise, ":item", 0),
           (try_end),
         (try_end),
