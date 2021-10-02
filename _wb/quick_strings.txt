@@ -1,4 +1,4 @@
-1921
+1920
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_296_wb__dev_^_B _rev_296_wb_|_dev_^_Built_2021-09-30_16:11___
+qstr__rev_298_wb__dev_^_B _rev_298_wb_|_dev_^_Built_2021-10-02_13:07___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -111,8 +111,9 @@ qstr_Battle_Formations_an Battle_Formations_and_AI:__
 qstr_Native Native
 qstr_TLD_FormAI__Original TLD_FormAI_(Original)
 qstr_TLD_New_FormAI TLD_New_FormAI
-qstr_Advanced_Siege_AI:__ Advanced_Siege_AI:__
-qstr_On On
+qstr_Siege_AI:__ Siege_AI:__
+qstr_Basic__better_perfor Basic_(better_performance)
+qstr_Advanced Advanced
 qstr_Town_NPCs_Always_Acc Town_NPCs_Always_Accessible_from_Menus:__
 qstr_Cutscenes:__ Cutscenes:__
 qstr_Injuries_for_compani Injuries_for_companions:__
@@ -925,8 +926,6 @@ qstr_The_remaining_attack The_remaining_attackers_disperse!
 qstr_The_remaining_defend The_remaining_defenders_escape_from_the_siege!
 qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}/{reg7}_Defenders:_{reg0}/{reg2}/{reg4}/{reg6}
 qstr_player_team:_{reg7} player_team:_{reg7}
-qstr_DEBUG:_Attackers_go_ DEBUG:_Attackers_go_back_to_regular_attack_mode
-qstr_DEBUG:_Attackers_do_ DEBUG:_Attackers_do_not_stall_on_ladders_triggered
 qstr_Reached_Gauntlet_wav Reached_Gauntlet_wave_{reg1}!
 qstr_Ballista:_out_of_amm Ballista:_out_of_ammo!
 qstr_Ballista:_turn_CURSO Ballista:_turn_CURSOR,_aim_LSHIFT,_shoot_SPACE,_set_fire_T,_exit_F

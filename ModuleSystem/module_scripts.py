@@ -1941,6 +1941,8 @@ scripts = [
 	(assign, "$dormant_spawn_radius", 0),
 	(assign, "$gate_breached", 0),# unused    
     (assign, "$mouse_coordinates", 0), #wb only
+    (assign, "$attacker_archer_melee",0),
+    (assign, "$attacker_team_3", 5),
 
 	(val_mul, "$battle_renown_total", "$hold_f1"),
 	(val_mul, "$battle_renown_total", "$dormant_spawn_radius"),
@@ -1948,6 +1950,9 @@ scripts = [
     (val_mul, "$gate_breached", "$gate_aggravator_agent"),
     (val_mul, "$gate_aggravator_agent", "$gate_breached"),
     (val_mul, "$gate_aggravator_agent", "$mouse_coordinates"),
+    (val_mul, "$gate_aggravator_agent", "$attacker_archer_melee"),
+    (val_mul, "$attacker_archer_melee", "$attacker_team_3"),
+    
 
 	#Kham - Squelch compiler warnings END
 	
@@ -14570,8 +14575,18 @@ scripts = [
 		(else_try), # when archer is an attacker
 			(agent_get_ammo,":ammo",":agent_no"),
 			(try_begin),
-				(lt,":ammo",2),
+				(this_or_next|lt,":ammo",2),               
 				(agent_clear_scripted_mode, ":agent_no"),
+				(agent_ai_set_always_attack_in_melee, ":agent_no", 1),
+                ] + (is_a_wb_script==1 and [
+                (agent_set_division, ":agent_no", grc_infantry),
+			    (agent_force_rethink, ":agent_no"),
+			    ] or []) + [
+            (else_try),   
+                (ge,"$attacker_reinforcement_stage",10),            
+                (agent_get_combat_state,":combat_state", ":agent_no"),
+                (eq, ":combat_state", 0), #not aiming at anyone
+                (agent_clear_scripted_mode, ":agent_no"),
 				(agent_ai_set_always_attack_in_melee, ":agent_no", 1),
                 ] + (is_a_wb_script==1 and [
                 (agent_set_division, ":agent_no", grc_infantry),

@@ -208,42 +208,11 @@ custom_commander_camera = (0, 0, 0.5, [],
 
 ########## Vanilla siege and tournament triggers
 
-common_siege_question_answered = (ti_question_answered, 0, 0, [],
-   [ (store_trigger_param_1,":answer"),
-     (eq,":answer",0),
-     (assign, "$pin_player_fallen", 0),
-     (get_player_agent_no, ":player_agent"),
-     (agent_get_team, ":agent_team", ":player_agent"),
-     (try_begin),
-       (neq, "$attacker_team", ":agent_team"),
-       (neq, "$attacker_team_2", ":agent_team"),
-       (str_store_string, s5, "str_siege_continues"),
-       (call_script, "script_simulate_retreat", 8, 15),
-     (else_try),
-       (str_store_string, s5, "str_retreat"),
-       (call_script, "script_simulate_retreat", 5, 20),
-     (try_end),
-     (call_script, "script_count_mission_casualties_from_agents"),
-     (finish_mission,0),
-   ])
 
 common_custom_siege_init = (0, 0, ti_once, [],
   [ (assign, "$g_battle_result", 0),
     (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
   ])
-
-common_siege_init = (0, 0, ti_once, [],
-  [ (assign,"$battle_won",0),
-    (assign,"$defender_reinforcement_stage",0),
-    (assign,"$attacker_reinforcement_stage",0),
-    (assign,"$g_presentation_battle_active", 0),
-    (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
-  ])
-
-common_siege_ai_trigger_init = (0, 0, ti_once,
-  [ (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
-    (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
-	(assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5),], [])
 
 common_siege_ai_trigger_init_2 = (0, 0, ti_once,
   [ (set_show_messages, 0),
@@ -261,48 +230,6 @@ common_siege_ai_trigger_init_2 = (0, 0, ti_once,
     (set_show_messages, 1),
     ], [])
 
-common_siege_ai_trigger_init_after_2_secs = (0, 2, ti_once, [],
-  [ (try_for_agents, ":agent_no"),
-      (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),
-    (try_end),
-  ])
-
-common_siege_defender_reinforcement_check = (3, 0, 5, [],
-  [(lt, "$defender_reinforcement_stage", 7),
-     (store_mission_timer_a,":mission_time"),
-     (ge,":mission_time",10),
-       (store_normalized_team_count,":num_defenders",0),
-       (lt,":num_defenders",10),
-       (add_reinforcements_to_entry, 5, 7), #TLD, was 4, 7
-       (val_add,"$defender_reinforcement_stage",1),
-   (try_begin),
-     (ge, "$defender_reinforcement_stage", 2),
-       (set_show_messages, 0),
-       (team_give_order, "$defender_team", grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
-       (team_give_order, "$defender_team_2", grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
-       (set_show_messages, 1),
-       (ge, "$defender_reinforcement_stage", 4),
-         (set_show_messages, 0),
-         (team_give_order, "$defender_team", grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
-         (team_give_order, "$defender_team_2", grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
-         (set_show_messages, 1),
-   (try_end),
-   ])
-
-common_siege_defender_reinforcement_archer_reposition = (2, 0, 0,
-  [ (gt, "$defender_reinforcement_stage", 0)],
-  [ (call_script, "script_siege_move_archers_to_archer_positions")])
-
-common_siege_attacker_reinforcement_check = (1, 0, 5,
-  [ (lt,"$attacker_reinforcement_stage",5),
-      (store_mission_timer_a,":mission_time"),
-      (ge,":mission_time",10),
-        (store_normalized_team_count,":num_attackers",1),
-        (lt,":num_attackers",6)
-    ],
-  [ (add_reinforcements_to_entry, 8, 8), #TLD, was 1, 8
-    (val_add,"$attacker_reinforcement_stage", 1),
-    ])
 
 common_siege_attacker_do_not_stall = (5, 0, 0, [],
   [ (try_for_agents, ":agent_no"),   #Make sure attackers do not stall on the ladders...

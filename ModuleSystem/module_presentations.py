@@ -4801,13 +4801,13 @@ if wb_compile_switch==1:
         (val_sub, ":y_pos", Screen_Text_Height),
 
         #Siege Type
-        (create_text_overlay, reg1, "@Advanced Siege AI:  ", tf_right_align, tf_double_space),
+        (create_text_overlay, reg1, "@Siege AI:  ", tf_right_align, tf_double_space),
         (position_set_y, pos0, ":y_pos"),
         (overlay_set_position, reg1, pos0),
         
         (create_combo_button_overlay, "$tld_options_overlay_3"),
-        (overlay_add_item, "$tld_options_overlay_3", "@Native"),
-        (overlay_add_item, "$tld_options_overlay_3", "@On"),
+        (overlay_add_item, "$tld_options_overlay_3", "@Basic (better performance)"),
+        (overlay_add_item, "$tld_options_overlay_3", "@Advanced"),
 
         (copy_position, pos1, pos0),
         (store_add, reg2, ":y_pos", 0),

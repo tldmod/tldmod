@@ -3576,7 +3576,7 @@ game_menus = [
         (store_sub, "$tld_option_formations", 1, "$tld_option_formations"),(val_clamp, "$tld_option_formations", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
     ("game_options_siege_ai",[(try_begin),(neq, "$advanced_siege_ai", 0),(str_store_string, s7, "@ON"),
-								(else_try),(str_store_string, s7, "@Native"),(try_end),
+								(else_try),(str_store_string, s7, "@Basic (better performance)"),(try_end),
         ],"Advanced Siege AI:  {s7}",[
         (store_sub, "$advanced_siege_ai", 1, "$advanced_siege_ai"),(val_clamp, "$advanced_siege_ai", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
