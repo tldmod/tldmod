@@ -861,8 +861,8 @@ dialogs = [
             (ge, ":talk_troop_level", 30),
             (store_character_level, ":player_level", "trp_player"),
             (val_add, ":player_level", 10),
-            (ge, ":talk_troop_level", ":player_level"), # if player level + 10 > npc level (e.g. 46 for Glorfindel), skip this
-            (neq, "$g_talk_troop", "trp_npc21"), #also Berta
+            (this_or_next|ge, ":talk_troop_level", ":player_level"), # if player level + 10 > npc level (e.g. 46 for Glorfindel), skip this
+            (eq, "$g_talk_troop", "trp_npc21"), #also Berta
                         ],
 "I'm sorry, my equipment is my own.", "do_member_trade",[]], #Glorfindel and others being pricks
 [anyone,"member_trade", [], "Very well, it's all here...", "do_member_trade",[(change_screen_equip_other)]],

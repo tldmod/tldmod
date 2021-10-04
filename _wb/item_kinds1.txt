@@ -1397,13 +1397,13 @@ itemsfile version 2
  itm_moria_armor_b Moria_Breast_and_Shoulders Moria_Breast_and_Shoulders 1  orc_moria_b 0  16842765 0 261 174063750 15 100 0 10 6 0 0 0 0 0 0 0 0
 0
 
- itm_moria_armor_c Moria_Orc_Mail Moria_Orc_Mail 1  orc_moria_c 0  16842765 0 502 174063750 26 92 0 16 7 12 0 0 0 0 0 0 0
+ itm_moria_armor_c Moria_Orc_Mail Moria_Orc_Mail 1  orc_moria_c 0  16842765 0 501 174063750 26 92 0 16 7 12 0 0 0 0 0 0 0
 0
 
- itm_moria_armor_d Moria_Bolted_Leather Moria_Bolted_Leather 1  orc_moria_d 0  16842765 0 802 174063750 27 93 0 18 10 13 0 0 0 0 0 0 0
+ itm_moria_armor_d Moria_Bolted_Leather Moria_Bolted_Leather 1  orc_moria_d 0  16842765 0 801 174063750 27 93 0 18 10 13 0 0 0 0 0 0 0
 0
 
- itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 4  orc_moria_e 0  uruk_mordor_light_mail_a_orc 16777216  uruk_mordor_heavy_mail_b_orc 134217728  uruk_mordor_platemail_a_orc 536870912  16842765 0 1202 704643072 30 95 0 23 11 16 0 0 0 0 0 0 0
+ itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 4  orc_moria_e 0  uruk_mordor_light_mail_a_orc 16777216  uruk_mordor_heavy_mail_b_orc 134217728  uruk_mordor_platemail_a_orc 536870912  16842765 0 1201 704643072 30 95 0 23 11 16 0 0 0 0 0 0 0
 0
 
  itm_moria_orc_shield_a Moria_Great_Shield Moria_Great_Shield 1  moria_orc_shield_a 0  327687 5100273664 500 251658402 5 100 0 18 0 4 330 86 0 60 0 0 0
@@ -1421,13 +1421,13 @@ itemsfile version 2
  itm_gundabad_armor_b Gundabad_Orc_Fur Gundabad_Orc_Fur 1  orc_gunda_b 0  16842765 0 251 123731968 5 100 0 9 6 0 0 0 0 0 0 0 0
 0
 
- itm_gundabad_armor_c Gundabad_Orc_Armor Gundabad_Orc_Armor 1  orc_gunda_c 0  16842765 0 402 174063750 9 91 0 14 7 9 0 0 0 0 0 0 0
+ itm_gundabad_armor_c Gundabad_Orc_Armor Gundabad_Orc_Armor 1  orc_gunda_c 0  16842765 0 401 174063750 9 91 0 14 7 9 0 0 0 0 0 0 0
 0
 
- itm_gundabad_armor_d Gundabad_Orc_Armor Gundabad_Orc_Armor 1  orc_gunda_d 0  16842765 0 602 174063750 13 92 0 16 8 12 0 0 0 0 0 0 0
+ itm_gundabad_armor_d Gundabad_Orc_Armor Gundabad_Orc_Armor 1  orc_gunda_d 0  16842765 0 601 174063750 13 92 0 16 8 12 0 0 0 0 0 0 0
 0
 
- itm_gundabad_armor_e Gundabad_Orc_Heavy_Armor Gundabad_Orc_Heavy_Armor 1  orc_gunda_e 0  16842765 0 802 174063750 15 94 0 20 8 14 0 0 0 0 0 0 0
+ itm_gundabad_armor_e Gundabad_Orc_Heavy_Armor Gundabad_Orc_Heavy_Armor 1  orc_gunda_e 0  16842765 0 801 174063750 15 94 0 20 8 14 0 0 0 0 0 0 0
 0
 
  itm_gundabad_helm_a Leather_Cap Leather_Cap 1  orc_gunda_cap 0  65548 0 50 123731968 1 90 12 0 0 0 0 0 0 0 0 0 0
