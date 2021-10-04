@@ -68,7 +68,7 @@ mno_start_go|白い塔の王国、ゴンドール
 mno_start_ro|馬の民、ローハン
 mno_start_du|いにしえの王族の末裔、ドゥネダイン
 mno_start_be|熊人族、ビヨルン一党
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood
+mno_start_wo|森人、闇の森の軒の住人
 mno_start_da|北方の王国、谷間の国
 menu_start_good_elf|^^^^^^^^^^賢者殿、どちらの森にお住まいですか？
 mno_start_ri|エルロンド卿の率いる国、裂け谷
@@ -104,7 +104,7 @@ mno_start_cliff|グンダバド山の絶壁
 menu_start_gondor_mt|^^^^^^^^^^家柄を選んでください
 mno_start_1_com|平民
 mno_start_2_hib|高貴な生まれ
-; menu_start_haradrim|^^^^^^^You are one of the Haradrim,^a Man of the Desert.^Select your line
+menu_start_haradrim|^^^^^^^あなたは砂漠の住人として知られる、^ハラドリムの民です。^あなたの部族を選んでください
 mno_start_1_des|砂漠の住人
 mno_start_2_far|遠ハラドの部族
 menu_start_numenorean|^^^^^^^あなたは暗黒とモルゴスを崇拝する黒きヌーメノール人です。^御目のために活動する場所を選んでください
@@ -165,7 +165,7 @@ mno_strat_tweaks_rank_gain_rate|ランクポイント獲得レート:{s7}
 mno_strat_tweaks_back|調整メニューに戻る
 menu_camp_action|^^^^^^^^^ どのアイテムですか？
 mno_camp_drink_water|エント水を飲むぞ！
-; mno_camp_drink_orc_brew|Pass around the Orc Brew!
+mno_camp_drink_orc_brew|オークビールを皆に回せ！
 mno_camp_action_4|戻る
 menu_assasins_attack_player_won|あなたは{s3}によって送り込まれた、 {s2}の暗殺者を撃退しました。
 menu_assasins_attack_player_retreat|あなたは命からがら逃げました！
@@ -200,7 +200,7 @@ mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}�
 mno_control_allies_menu|影響力ポイントを消費して戦場にいる友軍の指揮をする。
 mno_encounter_hide|敵から隠れる・・・
 mno_special_whip|{s4}を打ちながら威圧する。
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
+mno_encounter_attack_bearform|{reg21?熊の姿で戦場に飛び込む:姿を変えて敵と対峙する}.
 mno_encounter_leave|撤退する。
 mno_encounter_retreat|数名の兵をしんがりに残し、撤退する。
 mno_player_control_allies_simple|彼らの指揮をとって敵勢へ突撃する
@@ -233,7 +233,7 @@ menu_join_battle|^^^{s1}と戦っている、 {s2}に加勢します。^敵勢{r
 mno_join_attack|攻撃を開始する。
 mno_join_order_attack|部下に友軍と共に戦うよう指示をし、自分は後方に待機する。
 mno_control_allies_join_menu|影響力ポイントを消費して戦場にいる友軍の指揮をする。
-; mno_join_attack_bearform|Leap into battle in bear form
+mno_join_attack_bearform|熊の姿で戦場に飛び込む
 mno_join_leave|撤退する。
 mno_player_control_allies_join_menu|彼らの指揮をとって敵勢へ突撃する
 menu_join_order_attack|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
@@ -438,16 +438,16 @@ menu_death|あなたは殺されました。 戦争の猛威はいまだ弱ま�
 menu_animal_ambush|あなたとコンパニオンは、他の兵とはぐれてしまいました。すると突然・・・
 menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}
 menu_animal_ambush_fail|獣どもはあなた{reg0?:とコンパニオン{reg2?たち:}}に噛み付き、 突進してきましたが、 あなたはなんとか彼らを追い払うことができました。 これであきらめてくれることを願いましょう。
-; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Plain Big (file scn custom 1.sco)
-; mno_scene2|Plain Med (file scn custom 2.sco)
-; mno_scene3|Plain Small (file scn custom 3.sco)
-; mno_scene4|Steppe Big (file scn custom 4.sco)
-; mno_scene5|Steppe Med (file scn custom 5.sco)
-; mno_scene6|Steppe Small (file scn custom 6.sco)
-; mno_scene7|Forest Big (file scn custom 7.sco)
-; mno_scene8|Forest Med (file scn custom 8.sco)
-; mno_scene9|Forest Small (file scn custom 9.sco)
+menu_build_your_scene|下に用意されたスロットのうちのひとつをエディットモードで編集して、 あなたの手で戦場シーンをつくる事ができます。 (M&Bのランチャーの設定でエディットモードをONにしたうえで、 任意のシーンを開いた状態でCtrl+Eを押すとエディットモードになります)。 あなたの作った戦場シーン (TLD/SceneObjフォルダにあるscoファイルです) をTLDの開発チームに送ってくれれば (出来が良ければの話ですが)、 戦場のうちのひとつとしてゲームに登場するかも知れません！^^どの地域で使われる事を想定したシーンなのかを明確にするようにしてください。^ちょっとしたヒントです:深い水場や、険しい山といった侵入不可な地形を登場させるのは、 AIが地形上をどのように移動するのかをしっかりと理解してからにしましょう。^(#0-1は攻撃側、#4は守備側のマップです。#5-8は編集しないでください)
+mno_scene1|Plain Big (file scn custom 1.sco)
+mno_scene2|Plain Med (file scn custom 2.sco)
+mno_scene3|Plain Small (file scn custom 3.sco)
+mno_scene4|Steppe Big (file scn custom 4.sco)
+mno_scene5|Steppe Med (file scn custom 5.sco)
+mno_scene6|Steppe Small (file scn custom 6.sco)
+mno_scene7|Forest Big (file scn custom 7.sco)
+mno_scene8|Forest Med (file scn custom 8.sco)
+mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|戻る・・・
 mno_back|戻る。
 mno_next|次へ・・・

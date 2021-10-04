@@ -154,8 +154,8 @@ itm_riv_shield_a|裂け谷の盾
 itm_riv_shield_b|裂け谷の盾
 itm_riv_bas_sword|裂け谷のバスタードソード
 itm_riv_1h_sword|裂け谷の剣
-; itm_riv_riding_sword|Rivendell Longsword
-; itm_riv_archer_sword|Rivendell Short Sword
+itm_riv_riding_sword|裂け谷の長剣
+itm_riv_archer_sword|裂け谷の短剣
 itm_riv_spear|裂け谷の槍
 itm_riv_light|裂け谷のチュニック
 itm_riv_leather|裂け谷の皮鎧
@@ -323,7 +323,7 @@ itm_isen_uruk_helm_e|ウルク＝ハイ追跡兵の兜
 itm_isen_uruk_helm_f|ウルク＝ハイ追跡兵の兜
 itm_uruk_pike_b|モルドールのパイク
 itm_uruk_falchion_a|ウルクのファルシオン
-; itm_uruk_falchion_b|Orc Great Scimitar
+itm_uruk_falchion_b|オークの大シミター
 itm_isengard_sword|アイゼンガルドの剣
 itm_isengard_axe|アイゼンガルドの斧
 itm_isengard_hammer|アイゼンガルドの槌
@@ -339,22 +339,22 @@ itm_isen_uruk_shield_b|アイゼンウルクの盾
 itm_wood_club|木の棍棒
 itm_twohand_wood_club|大きい木の棍棒
 itm_bone_cudgel|骨の棍棒
-; itm_orc_pick|Orc Pick
-; itm_orc_hammer|Evil Hammer
+itm_orc_pick|オークのつるはし
+itm_orc_hammer|邪の槌
 itm_orc_club_b|ワーグ乗りの棍棒
 itm_orc_club_c|とげつきのオークの棍棒
 itm_orc_club_d|闇のメイス
 itm_orc_sledgehammer|オークの大槌
 itm_orc_simple_spear|オークの槍
 itm_orc_skull_spear|オークのどくろ槍
-; itm_orc_bill|Orc Polearm
-; itm_orc_slasher|Orc Short Sword
+itm_orc_bill|オークの長柄
+itm_orc_slasher|オークの短剣
 itm_orc_falchion|オークのファルシオン
 itm_orc_scimitar|オークのシミター
 itm_orc_sabre|オークのサーベル
-; itm_orc_battle_axe|Orc Battle Axe
+itm_orc_battle_axe|オークの戦斧
 itm_orc_axe|オークの斧
-; itm_orc_two_handed_axe|Orc Great Axe
+itm_orc_two_handed_axe|オークの大斧
 itm_orc_throwing_axes|オークの投げ斧
 itm_orc_bow|オークの弓
 itm_orc_shield_a|オークの盾
@@ -490,13 +490,13 @@ itm_mirkwood_leather|森のエルフの皮鎧
 itm_mirkwood_pad|緑森のキルトのコート
 itm_mirkwood_mail|緑森の鎖かたびら
 itm_mirkwood_scale|緑森の軽装スケイル
-; itm_mirkwood_heavy_scale|Greenwood Leafscale
-; itm_mirkwood_sword|Woodelf Sword
+itm_mirkwood_heavy_scale|緑森のリーフスケイル
+itm_mirkwood_sword|森のエルフの剣
 itm_mirkwood_great_spear|緑森の大槍
 itm_mirkwood_war_spear|緑森の戦槍
 itm_mirkwood_short_spear|森のエルフの槍
 itm_mirkwood_knife|森のエルフのナイフ
-itm_mirkwood_axe|森のエルフの
+itm_mirkwood_axe|森のエルフの斧
 itm_mirkwood_spear_shield_a|森のエルフの盾
 itm_mirkwood_spear_shield_b|緑森の大盾
 itm_mirkwood_spear_shield_c|森のエルフの丸盾
@@ -600,11 +600,11 @@ itm_rhun_armor_p|リューンの上級鎧
 itm_rhun_armor_k|リューンの上級鎧
 itm_rhun_helm_barbed|リューンのかぎ兜
 itm_rhun_helm_horde|リューンのホード兜
-; itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot|リューンのポット兜
 itm_rhun_helm_round|リューンの丸兜
 itm_rhun_helm_leather|リューンの革兜
 itm_rhun_helm_chieftain|リューン族長の兜
-; itm_rhun_warpick|Rhun War Pick
+itm_rhun_warpick|リューンのつるはし
 itm_rhun_greataxe|リューンの大斧
 itm_rhun_battleaxe|リューンの戦斧
 itm_rhun_falchion|蛮人のファルシオン
@@ -613,7 +613,7 @@ itm_rhun_greatfalchion|蛮人の大ファルシオン
 itm_rhun_greatsword|蛮人の大剣
 itm_rhun_shortsword|蛮人の短剣
 itm_rhun_sword|蛮人の剣
-; itm_rhun_mangler|Rhun Mangler
+itm_rhun_mangler|リューンのマングラー
 itm_dale_light_a|谷間の国民兵の上着
 itm_dale_light_b|北国人の軽装薄金鎧
 itm_dale_med_a|北国人の重装薄金鎧
@@ -623,7 +623,7 @@ itm_dale_med_d|谷間の国の薄金鎧
 itm_dale_heavy_a|谷間の国の鎖かたびらと薄金鎧
 itm_dale_heavy_b|谷間の国の補強されたマント
 itm_dale_heavy_c|ロヴァニオンの鎖かたびら
-; itm_north_leather|Northmen Leather Vest
+itm_north_leather|北国人の皮のベスト
 itm_dale_helmet_a|谷間の国歩兵の軽装兜
 itm_dale_helmet_b|谷間の国弓兵の軽装兜
 itm_dale_helmet_c|谷間の国歩兵の兜
@@ -689,10 +689,10 @@ itm_dwarf_battle_axe|ドワーフの戦斧
 itm_dwarf_great_axe|ドワーフの大斧
 itm_dwarf_great_mattock|ドワーフの大マトック
 itm_dwarf_great_pick|ドワーフの大つるはし
-; itm_dwarf_throwing_axe_reward|Erebor Flying Axes
+itm_dwarf_throwing_axe_reward|エレボールの飛び斧
 itm_dwarf_mattock|ドワーフのマトック
 itm_dwarf_hand_axe|ドワーフの短斧
-; itm_dwarf_throwing_axe|Dwarf Throwing Axes
+itm_dwarf_throwing_axe|ドワーフの投げ斧
 itm_dwarf_spear|ドワーフの槍
 itm_dwarf_spear_b|ドワーフのパイク
 itm_dwarf_spear_c|ドワーフの長柄斧
@@ -731,7 +731,7 @@ itm_gondor_lance_banner|ゴンドールの戦旗つきランス
 itm_amroth_lance_banner|ドル・アムロスの戦旗つきランス
 itm_rohan_lance_banner_sun|ローハンの太陽の戦旗つきランス
 itm_rohan_lance_banner_horse|ローハンの馬の戦旗つきランス
-itm_ent_water|水の奇妙なボウル
+itm_ent_water|おわんに入った奇妙な水
 itm_map|中つ国の地図
 itm_athelas_reward|アセラスの鉢植
 itm_phial_reward|玻璃瓶
@@ -745,7 +745,7 @@ itm_elven_amulet_reward|エルフのお守り
 
 itm_torque_reward|闇の首飾り
 itm_orc_brew|オークビール
-; itm_rohan_saddle|Saddle
+itm_rohan_saddle|ローハンの鞍
 itm_mearas_reward|メアルスタリオン
 itm_shield_of_tuor|トゥオルの盾
 itm_riv_armor_reward|裂け谷の細工入り鎧
@@ -762,9 +762,9 @@ itm_book_of_moria|マザルブルの書
 itm_ring_a_reward|テュルカリシル
 itm_ring_b_reward|フィンワリシル
 itm_dale_bow_reward|バルドの弓
-; itm_tome_of_knowledge|Tome of Arcane Knowledge
-; itm_orc_idol_reward|Idol of the First Orc
-itm_crebain_reward|クレバン
+itm_tome_of_knowledge|秘術の書
+itm_orc_idol_reward|オークの始祖の偶像
+itm_crebain_reward|クリバイン
 itm_miruvor_reward|ミルヴォールの水筒
 itm_wheeled_cage|車輪のついた巨大な檻
 itm_orc_throwing_axes_reward|グンダバドの投げ斧
@@ -784,9 +784,9 @@ itm_khamul_helm|ハムールの兜
 itm_black_arrows_reward|黒い矢
 itm_leather_boots_reward|狩人のブーツ
 itm_rohan_armor_th|ローハンの上級鎧
-; itm_wilderness_cowl|Hunter Cowl
+itm_wilderness_cowl|狩人の頭巾
 itm_prisoner_coll_chain|捕虜の鎖
-; itm_witchking_helmet|Sorcerer's Mask
+itm_witchking_helmet|妖術師の仮面
 itm_lorien_royal_armor|ローリエンの上級鎧
 itm_feet_chains|足の鎖
 itm_feet_chains_dwarf|足の鎖
@@ -795,6 +795,6 @@ itm_bear|熊
 itm_wolf|狼
 itm_werewolf|巨狼
 itm_thrush_reward|ツグミ
-itm_gauntlets_reward|鉄の拳
+itm_gauntlets_reward|鉄拳
 itm_stones_siege|攻城石
 itm_beorn_axe_no_attack|ビヨルン一党の斧

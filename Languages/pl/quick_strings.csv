@@ -230,7 +230,7 @@ qstr_+1_to_Spotting|+1 do Spostrzegania
 qstr_Less_Dunnish_upkeep|Mniejsze utrzymanie Dunlandczyków
 qstr_Less_Wargs_upkeep|Mniejsze utrzymanie Wargów
 qstr_Light_Armor|Lekki pancerz
-; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
+qstr_Bonus_to_Strength__P|Bonus do Siły (Tylko dla gracza)
 ; qstr_Lead_more_Orcs|Lead more Orcs
 qstr_+{reg1}_to_Party_Mor|+{reg1} do morale drużyny
 ; qstr_Range:_{reg55}|Range: {reg55}
@@ -280,8 +280,8 @@ qstr_{s3}_is_no_longer_un|{s3} już nie jest pod oblężeniem.
 qstr_Enemies_spotted_near|Wrogowie zauważeni w pobliżu: {s1}
 qstr_Your_relation_with_{|Twoje relacje z: {s1} polepszyły się.
 qstr_Your_relation_with_{s|Twoje relacje z: {s1} pogorszyły się.
-; qstr_{s1}_gained_faction_|{s1} gained faction strength!
-; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
+qstr_{s1}_gained_faction_|{s1} zwiększył siłę swej frakcji!
+qstr_{s1}_lost_faction_st|{s1} stracił siłę swej frakcji!
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?dotarł:zbliża się} pod {s3}.
 qstr_{s2}_{reg3?was:is}_t|{s2} {reg3?podróżował:podróżuje} kierując się na {s3} i {reg3?dotarł:powinien dotrzeć} pod {s4}{reg3?: za parę chwil}.
 qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?był:jest} gdzieś w dziczy i {reg3?dotarł:powinien dotrzeć} pod {s3}{reg3?: za parę chwil}.
@@ -698,8 +698,8 @@ qstr_A_thunderstorm_from_t|Burza z Gór Mglistych dotarła nad pole walki. Łucz
 qstr_A_poisonous_fog_from|Trująca mgła z Dol Guldur spowija pole bitwy. Ty i twoi ludzie czujecie się słabo. Wśród twojej kompanii szerzy się strach.
 qstr_A_poisonous_fog_from_|Trująca mgła z Dol Guldur spowija pole bitwy. Nie robi ona na tobie wrażenia, ale wyczuwasz cierpienie i strach swego przeciwnika.
 qstr_You_shapeshift_into_|Zmieniasz się w niedźwiedzia!
-; qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
-; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
+qstr_You_got_{reg1}_exper|Zdobyłeś {reg1} doświadczenia w formie niedźwiedzia.
+qstr_Your_ability_to_chan|Twoja umiejętność zmieniania formy się ujawniła, od teraz możesz przemierzać swe ścieżki zarówno jako człowiek jak i niedźwiedź.
 qstr_You_change_back_to_h|Powracasz do ludzkiej postaci... 
 qstr_Your_mount_stumbles!|Twój wierzchowiec okulał!
 qstr_Bitten_by_your_own_w|Ugryzion{y/a} przez własnego warga!
@@ -715,7 +715,7 @@ qstr_Use_Up/Down_arrow_ke|Użyj strzałek Góra/Dół aby przechylić w górę/d
 qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
 qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
 qstr_Fixed_Camera___Cente|Kamera naprawiona - wycentrowano
-; qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
+qstr_Shield_is_too_big_to|Tarcza jest zbyt duża do używania wraz z łukiem.
 qstr_While_visiting_towns|Odwiedzając miasta, osady i obozy, możesz porozmawiać z ludźmi, którzy chodzą po okolicy. Członkowie różnych frakcji mają różne rzeczy do powiedzenia - niektórzy pozwolą ci na własne myśli, inni podzielą się plotkami. Obydwaj mogą jedynie lepiej zrozumieć kulturę i frakcję danej osoby, albo mogą znaleźć wskazówki, jak znaleźć tajne miejsca lub porady i wskazówki dotyczące podróżowania przez Pustkowie i walki w Wojnie o Pierścień.
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
 qstr_You_have_found_the_l|Znalazłeś lokalnego kowala.
@@ -734,7 +734,7 @@ qstr_Division_{reg1}_{s2}_f|Podział {reg1} {s2} tworzy linię (zapamiętaną).
 qstr_Division_{reg1}_{s2}_fo|Podział {reg1} {s2} tworzy linie {reg0} (zapamiętane).
 qstr_Delivered_{reg60}_da|Zadajesz {reg60} obrażeń.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} odzyskuje {reg0}% zdrowia. = + {reg1}% STR
-; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
+qstr_Your_bear_form_has_{|Twoja niedźwiedzia forma ma {reg2}/{reg1} HP!
 qstr_Three_Nazgul_are_cir|Trzy Nazgul krążą po niebie nad polem bitwy!
 qstr_Two_Nazgul_are_circl|Dwa Nazgul krążą po niebie nad polem bitwy!
 qstr_A_Nazgul_is_circling|Nagul krąży nad polem bitwy!
@@ -995,11 +995,11 @@ qstr_the_Citadel|the Citadel
 qstr_the_Secret_Cave|Ukryta Jaskinia
 ; qstr_Meduseld_the_Golden_|Meduseld, the Golden Hall
 qstr_the_Lord_Halls|Sala Władców
-; qstr_the_Leader_s_Cave|the Leader's Cave
+qstr_the_Leader_s_Cave|Jaskinia Lidera
 qstr_the_Tower|Wieża
-; qstr_the_tower_of_Orthanc|the tower of Orthanc
+qstr_the_tower_of_Orthanc|Wieża Orthancu
 qstr_the_Throne_Room|Sala Tronowa 
-; qstr_Beorn_s_Hall|Beorn's Hall
+qstr_Beorn_s_Hall|Sale Beorna
 qstr_the_Hall|Hala
 qstr_the_Great_Chamber_of|Wielka Hala Thróra
 qstr_Stay_indoors_for_som|Odpocznij tu przez jakiś czas ({reg1} Pkt Prestiżu za noc)
@@ -1427,9 +1427,9 @@ qstr_Your_party_must_be_at|Musisz mieć przynajmniej dziesięciu ludzi w oddzial
 qstr_{s9}_asked_you_to_def|{s9} poprosił Cię o obronę wioski zaatakowanej w pobliżu {s1}.
 qstr_{s9}_asked_you_to_ra|{s9} poprosił Cię o nalot na wioskę w pobliżu {s1}.
 qstr_These_soldiers_may_w|Ci żołnierze bardzo mi się przydadzą, {playername}. Jestem pewien, że bardzo dobrze ich wyszkolił{e/a}ś. Dziękuję.
-; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
+qstr_I_wish_you_had_train|Żałuję że nie wytrenowałeś ich wszystkich, {playername}. Ale w tych trudnych czasach, przyjmę cokolwiek jesteś w stanie zaoferować.
 qstr_Good_work_in_shaping|Dobra robota w szkoleniu tych rekrutów, {playername}, przydał{e/a}ś się do czegoś. Mam nadzieję, że przetrwają dłużej aniżeli ostatnia partia, ale jeśli nie przyjdź ponownie.
-; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
+qstr_Is_that_all_you_coul|Czy to wszystko co byłeś w stanie zrobić, {playername}? Ledwo uzupełnią wczorajsze straty. Przekaż ich mnie!
 qstr_Well_the_soldiers_ar|Zostawiam więc tych chłopców pod twoją komendą, Panie. Jestem pew{ien/na}, że dobrze się nimi zajmiesz.
 qstr_Well_you_may_do_as_y|Cóż, zrobisz co zechcesz. Moi towarzysze i ja jesteśmy gotowi przywieść kolejnych jeśli zajdzie taka potrzeba.
 qstr_{s9}_asked_you_to_br|{s9} poprosił cię, byś złapał{/a} dzikiego trola do jego armi.

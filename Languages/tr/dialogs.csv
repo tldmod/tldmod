@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|{s12} yakınındaki köyün yanından adamla
 dlga_raid_village_failed:close_window|Bir daha ki sefer daha iyi yapacagım.
 dlga_lord_start:lord_target_lord_failed|Senden yapmanı istedigim şeyi başaramadıgını duydum. Hayal kırıklıgına ugradım, {playername}.
 dlga_lord_target_lord_failed:close_window|Bir daha ki sefer daha iyi yapacagım.
-dlga_lord_start:lord_generic_mission_completed.5|Ordunuz savaştaki cesaretinize şahit oldu {playername}. Onlara sizin daha güçlü oldugunuzu kanıtladınız.
+dlga_lord_start:lord_generic_mission_completed.5|Adamlarınız savaştaki cesaretinize şahit oldu {playername}. Onlara sizin daha güçlü oldugunuzu kanıtladınız.
 dlga_lord_start:kill_quest_failed|Senden yapmanı istedigim şeyi başaramadıgını duydum. Hayal kırıklıgına ugradım, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Ordunuz savaştaki cesaretinize şahit oldu, {playername}. Saygımı kazandınız.
 dlga_kill_quest_failed:close_window|Bir daha ki sefer daha iyi yapacagım.

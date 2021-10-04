@@ -218,14 +218,14 @@ trp_a6_gon_tower_archer|Archer de la garde de la Tour
 trp_a6_gon_tower_archer_pl|Archers de la garde de la Tour
 trp_steward_guard|Garde de l'Intendant
 trp_steward_guard_pl|Gardes de l'Intendant
-trp_a4_ithilien_ranger|Rôdeur de l'Ithilien
-trp_a4_ithilien_ranger_pl|Rôdeurs de l'Ithilien
-trp_a5_ithilien_vet_ranger|Rôdeur vétéran de l'Ithilien
-trp_a5_ithilien_vet_ranger_pl|Rôdeurs vétérans de l'Ithilien
-trp_a6_ithilien_master_ranger|Maître-rôdeur de l'Ithilien
-trp_a6_ithilien_master_ranger_pl|Maîtres-rôdeurs de l'Ithilien
-trp_a6_ithilien_leader|Capitaine des rôdeurs de l'Ithilien
-trp_a6_ithilien_leader_pl|Capitaines des rôdeurs de l'Ithilien
+trp_a4_ithilien_ranger|Coureur de l'Ithilien
+trp_a4_ithilien_ranger_pl|Coureurs de l'Ithilien
+trp_a5_ithilien_vet_ranger|Coureur vétéran de l'Ithilien
+trp_a5_ithilien_vet_ranger_pl|Coureurs vétérans de l'Ithilien
+trp_a6_ithilien_master_ranger|Maître Coureur de l'Ithilien
+trp_a6_ithilien_master_ranger_pl|Maîtres Coureurs de l'Ithilien
+trp_a6_ithilien_leader|Capitaine des Coureurs de l'Ithilien
+trp_a6_ithilien_leader_pl|Capitaines des Coureurs de l'Ithilien
 trp_i1_loss_woodsman|Forestier du Lossarnach
 trp_i1_loss_woodsman_pl|Forestiers du Lossarnach
 trp_i2_loss_axeman|Porteur de hache du Lossarnach
@@ -366,52 +366,52 @@ trp_i5_greenwood_chosen_spearmaster|Maître lancier choisi par Thranduil
 trp_i5_greenwood_chosen_spearmaster_pl|Maîtres lanciers choisis par Thranduil
 trp_i5_greenwood_standard_bearer|Porte-étendard de Vertbois
 trp_i5_greenwood_standard_bearer_pl|Porte-étendards de Vertbois
-trp_a1_riv_scout|Éclaireur de Fondeval
-trp_a1_riv_scout_pl|Éclaireurs de Fondeval
-trp_a2_riv_vet_scout|Éclaireur vétéran de Fondeval
-trp_a2_riv_vet_scout_pl|Éclaireurs vétérans de Fondeval
-trp_a3_riv_archer|Archer de Fondeval
-trp_a3_riv_archer_pl|Archers de Fondeval
-trp_a4_riv_vet_archer|Archer vétéran de Fondeval
-trp_a4_riv_vet_archer_pl|Archers vétérans de Fondeval
-trp_a5_riv_master_archer|Maître archer de Fondeval
-trp_a5_riv_master_archer_pl|Maîtres archers de Fondeval
-trp_a6_riv_guardian|Gardien d'Imladris
-trp_a6_riv_guardian_pl|Gardiens d'Imladris
-trp_i3_riv_swordbearer|Épéiste de Fondeval
-trp_i3_riv_swordbearer_pl|Épéistes de Fondeval
-trp_i4_riv_vet_swordbearer|Épéiste vétéran de Fondeval
-trp_i4_riv_vet_swordbearer_pl|Épéistes vétérans de Fondeval
-trp_i5_riv_swordmaster|Maître-épéiste de Fondeval
-trp_i5_riv_swordmaster_pl|Maîtres-épéistes de Fondeval
-trp_i6_riv_champion|Champion d'Imladris
-trp_i6_riv_champion_pl|Champions d'Imladris
-trp_ac5_riv_rider|Cavalier de Fondeval
-trp_ac5_riv_rider_pl|Cavaliers de Fondeval
-trp_ac6_riv_knight|Chevalier d'Imladris
-trp_ac6_riv_knight_pl|Chevaliers d'Imladris
-trp_i6_rivendell_standard_bearer|Porte-étendard de Fondeval
-trp_i6_rivendell_standard_bearer_pl|Porte-étendards de Fondeval
-trp_a1_arnor_scout|Éclaireur dúnedain
+trp_a1_riv_scout|Éclaireur de Fendeval
+trp_a1_riv_scout_pl|Éclaireurs de Fendeval
+trp_a2_riv_vet_scout|Éclaireur vétéran de Fendeval
+trp_a2_riv_vet_scout_pl|Éclaireurs vétérans de Fendeval
+trp_a3_riv_archer|Archer de Fendeval
+trp_a3_riv_archer_pl|Archers de Fendeval
+trp_a4_riv_vet_archer|Archer vétéran de Fendeval
+trp_a4_riv_vet_archer_pl|Archers vétérans de Fendeval
+trp_a5_riv_master_archer|Maître archer de Fendeval
+trp_a5_riv_master_archer_pl|Maîtres archers de Fendeval
+trp_a6_riv_guardian|Gardien de Fendeval
+trp_a6_riv_guardian_pl|Gardiens de Fendeval
+trp_i3_riv_swordbearer|Épéiste de Fendeval
+trp_i3_riv_swordbearer_pl|Épéistes de Fendeval
+trp_i4_riv_vet_swordbearer|Épéiste vétéran de Fendeval
+trp_i4_riv_vet_swordbearer_pl|Épéistes vétérans de Fendeval
+trp_i5_riv_swordmaster|Maître-épéiste de Fendeval
+trp_i5_riv_swordmaster_pl|Maîtres-épéistes de Fendeval
+trp_i6_riv_champion|Champion de Fendeval
+trp_i6_riv_champion_pl|Champions de Fendeval
+trp_ac5_riv_rider|Cavalier de Fendeval
+trp_ac5_riv_rider_pl|Cavaliers de Fendeval
+trp_ac6_riv_knight|Chevalier de Fendeval
+trp_ac6_riv_knight_pl|Chevaliers de Fendeval
+trp_i6_rivendell_standard_bearer|Porte-étendard de Fendeval
+trp_i6_rivendell_standard_bearer_pl|Porte-étendards de Fendeval
+trp_a1_arnor_scout|Éclaireur dúnedan
 trp_a1_arnor_scout_pl|Éclaireurs dúnedain
-trp_a2_arnor_vet_scout|Pisteur dúnedain
+trp_a2_arnor_vet_scout|Pisteur dúnedan
 trp_a2_arnor_vet_scout_pl|Pisteurs dúnedain
-trp_i3_arnor_swordsman|Épéiste de Fondeval dúnedain
+trp_i3_arnor_swordsman|Épéiste dúnedan
 trp_i3_arnor_swordsman_pl|Épéistes dúnedain
-trp_i4_arnor_vet_swordsman|Épéiste vétéran dúnedain
+trp_i4_arnor_vet_swordsman|Épéiste vétéran dúnedan
 trp_i4_arnor_vet_swordsman_pl|Épéistes vétérans dúnedain
 trp_i5_arnor_champion|Champion d'Arnor
 trp_i5_arnor_champion_pl|Champions d'Arnor
-trp_c4_arnor_horseman|Cavalier dúnedain
+trp_c4_arnor_horseman|Cavalier dúnedan
 trp_c4_arnor_horseman_pl|Cavaliers dúnedain
 trp_c5_arnor_knight|Chevalier d'Arnor
 trp_c5_arnor_knight_pl|Chevaliers d'Arnor
-trp_a3_arnor_ranger|Rôdeur dúnedain
-trp_a3_arnor_ranger_pl|Rôdeurs dúnedain
-trp_a4_arnor_vet_ranger|Rôdeur vétéran dúnedain
-trp_a4_arnor_vet_ranger_pl|Rôdeurs vétérans dúnedain
-trp_a5_arnor_master_ranger|Maître rôdeur d'Arnor
-trp_a5_arnor_master_ranger_pl|Maîtres rôdeurs d'Arnor
+trp_a3_arnor_ranger|Coureur dúnedan
+trp_a3_arnor_ranger_pl|Coureurs dúnedain
+trp_a4_arnor_vet_ranger|Coureur vétéran dúnedan
+trp_a4_arnor_vet_ranger_pl|Coureurs vétérans dúnedain
+trp_a5_arnor_master_ranger|Maître Coureur d'Arnor
+trp_a5_arnor_master_ranger_pl|Maîtres Coureurs d'Arnor
 trp_i1_rohan_youth|Recrue du Rohan
 trp_i1_rohan_youth_pl|Recrues du Rohan
 trp_i2_guardsman_of_rohan|Gardien du Rohan
@@ -776,10 +776,10 @@ trp_elf_captain_of_mirkwood|Capitaine elfe de Vertbois
 trp_elf_captain_of_mirkwood_pl|Capitaines elfes de Vertbois
 trp_mirkwood_lieutenant|Lieutenant de Vertbois
 trp_mirkwood_lieutenant_pl|Lieutenants de Vertbois
-trp_elf_captain_of_rivendell|Capitaine elfe de Fondeval
-trp_elf_captain_of_rivendell_pl|Capitaines elfes de Fondeval
-trp_rivendell_lieutenant|Lieutenant de Fondeval
-trp_rivendell_lieutenant_pl|Lieutenants de Fondeval
+trp_elf_captain_of_rivendell|Capitaine elfe de Fendeval
+trp_elf_captain_of_rivendell_pl|Capitaines elfes de Fendeval
+trp_rivendell_lieutenant|Lieutenant de Fendeval
+trp_rivendell_lieutenant_pl|Lieutenants de Fendeval
 trp_lieutenant_of_rohan|Lieutenant du Rohan
 trp_lieutenant_of_rohan_pl|Lieutenants du Rohan
 trp_captain_of_rohan|Capitaine du Rohan
@@ -1074,8 +1074,8 @@ trp_smith_wosgiliath|Gardil
 trp_smith_wosgiliath_pl|la Forge improvisée
 trp_smith_calembel|Agronome
 trp_smith_calembel_pl|la Forge
-trp_smith_hannun|Fal le Forgeron des Rôdeurs
-trp_smith_hannun_pl|Corps de Garde Rôdeur 
+trp_smith_hannun|Fal le Forgeron des Coureurs
+trp_smith_hannun_pl|Corps de Garde Coureur 
 trp_smith_candros|Kalimdor
 trp_smith_candros_pl|la Forge
 trp_smith_edoras|Eaoden Maître de l'Acier
@@ -1245,7 +1245,7 @@ trp_merchant_orc_sentry_pl|la réserve du camp
 trp_merchant_candros|Maître de l'approvisionnement
 trp_merchant_candros_pl|l'écurie et l'entrepôt
 trp_merchant_hannun|Maître de l'approvisionnement
-trp_merchant_hannun_pl|provisions de ranger
+trp_merchant_hannun_pl|provisions de Coureur
 trp_merchant_mtirith|Maître de l'approvisionnement
 trp_merchant_mtirith_pl|l'écurie et l'entrepôt
 trp_merchant_pelargir|Maître de l'approvisionnement
@@ -1372,7 +1372,7 @@ trp_elder_pinnath|l'Ancien de la tribu de Pinnath
 trp_elder_pinnath_pl|la Ville
 trp_elder_ethring|Maître de guilde de Calembel
 trp_elder_ethring_pl|la Cité
-trp_elder_henneth|Maître de guilde des rôdeurs
+trp_elder_henneth|Maître de guilde des Coureurs
 trp_elder_henneth_pl|Le Repaire
 trp_elder_cairandros|Maître de guilde de Cair Andros
 trp_elder_cairandros_pl|La forteresse de l'île
@@ -1406,7 +1406,7 @@ trp_elder_camroth|Érudit de la Lórien
 trp_elder_camroth_pl|Le campement
 trp_elder_thalls|l'Ancien de Grand'Peur
 trp_elder_thalls_pl|Les cavernes elfiques
-trp_elder_imladris|Maître de camp d'Imladris
+trp_elder_imladris|Maître de camp de Fendeval
 trp_elder_imladris_pl|le camp
 trp_elder_wvillage|Pierre le forestier
 trp_elder_wvillage_pl|le village

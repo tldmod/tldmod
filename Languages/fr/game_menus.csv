@@ -66,12 +66,12 @@ mno_start_duma|Un homme de la Dunlande, les plaines de l'ouest
 menu_start_good_man|^^^^^^^^^^Sélectionnez votre peuple :
 mno_start_go|GONDOR, le royaume de la Tour Blanche
 mno_start_ro|ROHAN, le Pays du Cheval
-mno_start_du|DUNEDAIN, de l'ancienne dynastie des hommes
+mno_start_du|DUNEDAIN, l'ancienne dynastie des hommes
 mno_start_be|BEORNIENS, les hommes Ours
 mno_start_wo|FORESTIERS, de l'orée de Grand'Peur
 mno_start_da|Le royaume occidental du VAL
 menu_start_good_elf|^^^^^^^^^^Dans quelle forêt vivez-vous, Ancien ?
-mno_start_ri|FONDEVAL, du Seigneur Elrond
+mno_start_ri|FENDEVAL, du Seigneur Elrond
 mno_start_lo|La LOTHRORIEN, de Dame Galadriel
 mno_start_mi|GRAND'PEUR, pays des elfes sylvains
 menu_start_good_dwarf|^^^^^^^^^^Choisissez votre lignage :
@@ -398,7 +398,7 @@ menu_custom_battle_choose_faction2|^^^^^^^^^^Choisissez une faction du Bien
 mno_cb_gondor|du Gondor
 mno_cb_gondor1|du Rohan
 mno_cb_gondor2|de la Lothlórien
-mno_cb_gondor3|de Fondeval
+mno_cb_gondor3|de Fendeval
 mno_cb_gondor4|Grand'Peur
 mno_cb_gondor5|des Nains
 mno_cb_gondor6|du Val

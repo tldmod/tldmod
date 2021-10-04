@@ -368,7 +368,7 @@ qstr_{s14}Riders_of_Rohan|{s14}Cavaliers du Rohan ! Rappelez-vous pourquoi vous 
 qstr_{s14}More_{s19}heads|{s14}Plus de têtes de {s19} pour décorer les portes de la Morannon !
 qstr_The_Wise_Master_shal|Le Sage Maître sera satisfait lorsque nous lui amènerons le corps de {playername} !
 qstr_{s14}Now_we_will_put|{s14}Maintenant nous allons mettre un terme à la souffrance de ces choses immondes !
-qstr_{s14}Today_we_shall_|{s14}Aujourd'hui, nous allons combattre les ennemis d'Imladris, et cette cause est juste !
+qstr_{s14}Today_we_shall_|{s14}Aujourd'hui nous allons combattre les ennemis de Fendeval, et cette cause est juste !
 qstr_All_who_enter_Mirkwo|Quiconque entre dans la forêt de Grand'Peur avec de mauvaises intentions n'en ressortira jamais !
 qstr_Men_of_{s16}_the_ene|Hommes de {s16}, l'ennemi est ici ! Battez-vous pour votre terre !
 qstr_Men_of_{s16}_charge!|Hommes de {s16}, chargez ! Battez-vous pour votre terre !
@@ -922,7 +922,7 @@ qstr_dwarf|nain
 qstr_troll|troll
 qstr_dunedain|dúnedain
 qstr_lothlorien|lothlórien
-qstr_rivendell|Fondeval
+qstr_rivendell|Fendeval
 qstr_mirkwood|Grand'Peur
 qstr_evil_man|homme mauvais
 qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
@@ -1289,7 +1289,7 @@ qstr_Orcs_of_Moria_and_Do|les orques de la Moria et de Dol Goldur
 qstr_Orcs_of_Gundabad_and|les orques de Gundabad et les guerriers de Rhûn
 qstr_Men_of_Gondor|Hommes du Gondor
 qstr_Riders_of_Rohan|Cavaliers du Rohan
-qstr_Elves_of_Imladris_an|les elfes d'Imladris et de la Lothlórien
+qstr_Elves_of_Imladris_an|les elfes de Fendeval et de la Lothlórien
 qstr_Men_of_Dale_Dwarves_|Les hommes du Val, les nains d'Erebor, les parents de Beorn et les elfes de Grand'Peur
 qstr_Ah_{playername}_it_i|Ah {playername}, je suis heureux que vous ayez pu venir. La guerre est à notre porte et nous avons besoin de soldats et de capitaines prêts à respecter leur serment.^^Nous sommes en guerre avec {s11}, mais nous devons rassembler nos forces et affaiblir l'ennemi avant de pouvoir porter la guerre chez eux et nous emparer de leurs places fortes. Chaque défaite de nos ennemis nous rapprochera de la victoire et renforcera notre détermination, donc je vous fais confiance pour affronter nos ennemis à chaque fois que ce sera possible, qu'il s'agisse d'éclaireurs ou d'une armée complète. Pour l'instant ne vous jetez pas seul{/e} dans la bataille, vous devrez combattre aux cotés de nos braves capitaines et aussi de nos alliés.
 qstr_About_time_you_showe|Il était temps que vous arriviez {playername} ! Nous sommes en guerre maintenant et je ne tolérerai aucune insubordination. Nous combattons contre {s11}, mais nous devons rassembler nos forces et écraser l'ennemi sur le terrain avant de pouvoir assiéger leurs forteresses. Chaque défaite de nos ennemis renforcera nos efforts de guerre et nous rapprochera de leur destruction totale. Donc je vous fais confiance pour saisir la moindre opportunité de les combattre, qu'il s'agisse d’éclaireurs ou d'une armée complète. Vous devrez aussi soutenir nos capitaines et nos alliés si vous les voyez combattre. Ne les abandonnez pas, ou je le saurai.
@@ -1489,7 +1489,7 @@ qstr__*growl*_I_know_your|*grogne* Je connais ta langue, elfe, assez bien pour s
 qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Profonds sont les desseins de mon maître, et rares sont ceux qui les connaissent et les comprennent.
 qstr_Alae!_Our_green_wood|Alae ! Nos bois sont souvent patouillés, nos portes épaisses restent solides, les salles de Thranduil sont sûres. Il serait bon de suivre notre exemple.
 qstr__say_nothing_|(Ne rien dire)
-qstr_Alas_it_is_not_a_plea|Hélas, ce n'est pas un but agréable ou une simple errance qui m'amène, ainsi que d'autres, au service du seigneur Elrond sur ces terres.^^ Un mal ancien remuait dans la pénombre et maintenant il grouille dans la lumière. Les sages à travers les montagnes ont répondu à l'appel et les armées d'Imladris partent au combat pour le Nord.
+qstr_Alas_it_is_not_a_plea|Hélas, ce n'est pas un but agréable ou une simple errance qui m'amène, ainsi que d'autres, au service du seigneur Elrond sur ces terres.^^ Un mal ancien remuait dans la pénombre et maintenant il grouille dans la lumière. Les sages à travers les montagnes ont répondu à l'appel et les armées de Fendeval partent au combat pour le Nord.
 qstr_You_wouldn_t_have_nee|Vous n'auriez pas eu besoin de notre aide si vous aviez fermé vos frontières ! ^^Les histoires de la sorcière de la forêt n'effrayent que les idiots, pas les orques que nous venons de tuer.
 qstr_*growl*_I_know_your_|*grognement* Je connais ta langue, elfe, assez bien pour savoir si tu te moques de moi ou si tu me remercies.^^Les étoiles n'ont rien à voir avec ça. j'ai senti une puanteur et suivi la piste, je les aurais tués que vous ayez ou non été en danger.
 qstr_Keep_your_secrets_th|Gardez vos secrets alors, mon ami, mais le Bois Doré murmure l’arrivée des vôtres. ^^ Nous informerons dame Galadriel de la venue du seigneur Elrond, même si je soupçonne qu’elle le sait déjà. Et nous parlerons de vous aussi, à tout notre peuple. ^^Le maethor veleg a gornui ! Votre valeur et vos actes seront connus et vos besoins satisfaits chaque fois que vous visitez notre Vallée de l'Or Chantant.

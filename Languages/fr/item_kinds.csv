@@ -27,7 +27,7 @@ itm_courser|Coursier
 itm_hunter|Cheval de chasse
 itm_pony|Poney
 itm_arnor_warhorse|Cheval de guerre arnorien
-itm_dunedain_warhorse|Cheval de guerre dúnedain
+itm_dunedain_warhorse|Cheval de guerre dúnedan
 itm_rohirrim_courser|Coursier rohirrim
 itm_rohirrim_hunter|Chasseur rohirrim
 itm_rohirrim_courser2|Coursier armoré rohirrim
@@ -42,8 +42,8 @@ itm_rhun_horse_g|Cheval lourd de Rhûn
 itm_rhun_horse_h|Cheval lourd de Rhûn
 itm_dale_horse|Cheval de Rhovanion
 itm_dale_warhorse|Cheval de Guerre du Rhovanion
-itm_riv_warhorse|Cheval de guerre de Fondcombe
-itm_riv_warhorse2|Coursier d'Imladris
+itm_riv_warhorse|Cheval de guerre de Fendeval
+itm_riv_warhorse2|Coursier de Fendeval
 itm_mordor_warhorse|Cheval de guerre du Mordor
 itm_mordor_warhorse2|Cheval de guerre sinistre du Mordor
 itm_gondor_courser|Coursier du Gondor
@@ -115,7 +115,7 @@ itm_dwarf_horn_bow|Arc en corne nain
 itm_dwarf_short_bow|Arc court nain
 itm_harad_bow|Arc incurvé du Harad
 itm_lg_bow|Arc de la Garde de l'Aigle
-itm_riv_bow|Arc de Fondcombe
+itm_riv_bow|Arc de Fendeval
 itm_rhun_bow|Arc balchoth
 itm_lorien_bow|Arc galadhrim
 itm_isengard_large_bow|Arc long de l'Isengard
@@ -136,8 +136,8 @@ itm_arnor_helm_c|Heaume arnorien
 itm_dunedain_helm_b|Heaume décoré arnorien
 itm_arnor_armor_a|Armure arnorienne
 itm_arnor_armor_b|Armure arnorienne
-itm_arnor_armor_c|Cuir de rôdeur dúnedain
-itm_arnor_armor_d|Cuir de rôdeur dúnedain
+itm_arnor_armor_c|Cuir de Coureur dúnedan
+itm_arnor_armor_d|Cuir de Coureur dúnedan
 itm_arnor_armor_e|Justaucorps renforcé arnorien
 itm_arnor_armor_f|Grande armure arnorienne
 itm_arnor_greaves|Jambières arnoriennes
@@ -146,26 +146,26 @@ itm_arnor_shield_c|Bouclier de cavalerie arnorien
 itm_arnor_sword_a|Épée bâtarde arnorienne
 itm_arnor_sword_c|Épée bâtarde arnorienne
 itm_arnor_sword_f|Épée courte arnorienne
-itm_riv_helm_a|Coiffe de Fondcombe
-itm_riv_helm_b|Casque d'archer d'Imladris
-itm_riv_helm_c|Casque d'infanterie d'Imladris
+itm_riv_helm_a|Coiffe de Fendeval
+itm_riv_helm_b|Casque d'archer de Fendeval
+itm_riv_helm_c|Casque d'infanterie de Fendeval
 itm_riv_tiara|Tiare de seigneur elfe
-itm_riv_shield_a|Bouclier de Fondcombe
-itm_riv_shield_b|Bouclier de Fondcombe
-itm_riv_bas_sword|Épée bâtarde de Fondcombe
-itm_riv_1h_sword|Épée de Fondcombe
-itm_riv_riding_sword|Épée longue de Fondcombe
-itm_riv_archer_sword|Épée courte de Fondcombe
-itm_riv_spear|Lance de Fondcombe
-itm_riv_light|Tunique de Fondcombe
-itm_riv_leather|Armure de cuir de Fondcombe
-itm_riv_foot_mail|Maille de Fondcombe
-itm_riv_foot_scale|Armure écaillée de Fondcombe
-itm_riv_surcoat|Manteau de Fondcombe
-itm_riv_knight|Armure de chevalier de Fondcombe
-itm_riv_armor_h_archer|Armure de Fondcombe
-itm_riv_armor_leader|Armure de seigneur de Fondcombe
-itm_riv_boots|Bottes de Fondcombe
+itm_riv_shield_a|Bouclier de Fendeval
+itm_riv_shield_b|Bouclier de Fendeval
+itm_riv_bas_sword|Épée bâtarde de Fendeval
+itm_riv_1h_sword|Épée de Fendeval
+itm_riv_riding_sword|Épée longue de Fendeval
+itm_riv_archer_sword|Épée courte de Fendeval
+itm_riv_spear|Lance de Fendeval
+itm_riv_light|Tunique de Fendeval
+itm_riv_leather|Armure de cuir de Fendeval
+itm_riv_foot_mail|Maille de Fendeval
+itm_riv_foot_scale|Armure écaillée de Fendeval
+itm_riv_surcoat|Manteau de Fendeval
+itm_riv_knight|Armure de chevalier de Fendeval
+itm_riv_armor_h_archer|Armure de Fendeval
+itm_riv_armor_leader|Armure de seigneur de Fendeval
+itm_riv_boots|Bottes de Fendeval
 itm_gon_footman|Cotte de mailles gondorienne
 itm_gon_jerkin|Justaucorps gondorien
 itm_gon_regular|Cotte de mailles lourde gondorienne
@@ -174,14 +174,14 @@ itm_gon_archer|Gambison gondorien avec manteau
 itm_gon_noble_cloak|Justaucorps de noble gondorien
 itm_gon_squire|Cotte de mailles gondorienne avec manteau
 itm_gon_knight|Cotte de mailles lourde gondorienne avec manteau
-itm_gon_ranger_cloak|Manteau de rôdeur du Gondor
-itm_gon_ranger_skirt|Jupe de rôdeur du Gondor
+itm_gon_ranger_cloak|Manteau de Coureur du Gondor
+itm_gon_ranger_skirt|Chemise de Coureur du Gondor
 itm_gon_steward_guard|Armure de garde de l'Intendant
 itm_gon_tower_guard|Armure de garde de la tour
 itm_gon_tower_knight|Armure de chevalier de la tour
 itm_gon_leader_surcoat_cloak|Surcot de seigneur du Gondor
 itm_gondor_ranger_hood|Capuchon vert
-itm_gondor_ranger_hood_mask|Capuchon de rôdeur du Gondor
+itm_gondor_ranger_hood_mask|Capuchon de Coureur du Gondor
 itm_gondor_light_greaves|Jambières en cuir gondoriennes
 itm_gondor_med_greaves|Jambières moyennes gondoriennes
 itm_gondor_heavy_greaves|Jambières de mailles gondoriennes
@@ -259,7 +259,7 @@ itm_amroth_bastard|Lame de Cygne de Dol Amroth
 itm_gondor_short_sword|Glaive de Linhir
 itm_pelargir_eket|Glaive de Pelargir
 itm_pelargir_sword|Épée de Pelargir
-itm_gondor_ranger_sword|Épée de Rôdeur du Gondor
+itm_gondor_ranger_sword|Épée de Coureur du Gondor
 itm_gondor_bastard|Épée bâtarde du Gondor
 itm_gondor_citadel_sword|Épée de la Citadelle
 itm_gondor_cav_sword|Épée de cavalerie du Gondor
@@ -618,7 +618,7 @@ itm_dale_light_a|Manteau de milicien du Val
 itm_dale_light_b|Armure légère lamellaire d'homme du Nord
 itm_dale_med_a|Armure lourde lamellaire d'homme du Nord
 itm_dale_med_b|Armure de cuir du Val
-itm_dale_med_c|Cuir sur maille du val
+itm_dale_med_c|Cuir sur maille du Val
 itm_dale_med_d|Armure lamellaire du Val
 itm_dale_heavy_a|Lamellaire sur maille du Val
 itm_dale_heavy_b|Manteau de plates du Val
@@ -718,7 +718,7 @@ itm_leather_dwarf_armor_b|Justaucorps rembourré nain
 itm_dwarf_armor_c|Écailles sur mailles d'Erebor 
 itm_dwarf_vest|Tunique naine
 itm_dwarf_vest_b|Cotte de mailles des Collines de Fer
-itm_dwarf_pad_boots|Bottes rembourrées rembourrées
+itm_dwarf_pad_boots|Bottes rembourrées naines
 itm_dwarf_chain_boots|Chausses de mailles naines
 itm_dwarf_scale_boots|Bottes d'écailles naines
 itm_good_mace|Masse
@@ -726,7 +726,7 @@ itm_mordor_banner|Bannière du Mordor
 itm_isengard_banner|Bannière de l'Isengard
 itm_woodelf_banner|Bannière de Grand'Peur
 itm_lorien_banner|Bannière de la Lothlórien
-itm_imladris_banner|Bannière d'Imladris
+itm_imladris_banner|Bannière de Fendeval
 itm_gondor_lance_banner|Lance du Gondor avec bannière
 itm_amroth_lance_banner|Lance de Dol Amroth avec bannière
 itm_rohan_lance_banner_sun|Lance rohirrim avec bannière du Soleil
@@ -748,7 +748,7 @@ itm_orc_brew|Bière orque
 itm_rohan_saddle|Selle
 itm_mearas_reward|Meara
 itm_shield_of_tuor|Bouclier de Tuor
-itm_riv_armor_reward|Armure décorée de Fondcombe
+itm_riv_armor_reward|Armure décorée de Fendeval
 itm_westernesse1h_reward|Épée de Númenor
 itm_westernesse2h_reward|Épée de Númenor
 itm_mirkwood_sword_reward|Épée relique de Vertbois

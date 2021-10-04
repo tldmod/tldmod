@@ -124,12 +124,12 @@ trp_c4_rhun_veteran_swift_horseman|リューン ベテラン軽騎兵
 trp_c4_rhun_veteran_swift_horseman_pl|リューン ベテラン軽騎兵
 trp_c5_rhun_falcon_horseman|ファルコン 騎兵
 trp_c5_rhun_falcon_horseman_pl|ファルコン 騎兵
-; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
-; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i2_rhun_tribal_warrior|リューン 歩兵
+trp_i2_rhun_tribal_warrior_pl|リューン 歩兵
 trp_i3_rhun_tribal_infantry|リューン 部族の戦士
 trp_i3_rhun_tribal_infantry_pl|リューン 部族の戦士
-; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
-; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
+trp_i4_rhun_vet_infantry|リューン ベテラン歩兵
+trp_i4_rhun_vet_infantry_pl|リューン ベテラン歩兵
 trp_i5_rhun_ox_warrior|オックス 突撃兵
 trp_i5_rhun_ox_warrior_pl|オックス 突撃兵
 trp_c2_rhun_horseman|リューン 騎兵
@@ -518,8 +518,8 @@ trp_i4_dun_wolf_warrior|褐色人 狼戦士
 trp_i4_dun_wolf_warrior_pl|褐色人 狼戦士
 trp_i5_dun_wolf_guard|褐色人 狼近衛兵
 trp_i5_dun_wolf_guard_pl|褐色人 狼近衛兵
-trp_ac5_dun_raven_rider|ダニッシュ-ナイトレイヴン
-trp_ac5_dun_raven_rider_pl|ダニッシュ-ナイトレイヴン泊レイヴンズ
+trp_ac5_dun_raven_rider|褐色人 闇のカラス兵
+trp_ac5_dun_raven_rider_pl|褐色人 闇のカラス兵
 trp_i1_khand_bondsman|ハンド 奴隷兵
 trp_i1_khand_bondsman_pl|ハンド 奴隷兵
 trp_i2_khand_pit_dog|ハンド 闘犬
@@ -1245,7 +1245,7 @@ trp_merchant_orc_sentry_pl|物資の隠し場所
 trp_merchant_candros|補給係
 trp_merchant_candros_pl|馬屋と貯蔵庫
 trp_merchant_hannun|補給係
-; trp_merchant_hannun_pl|ranger supplies
+trp_merchant_hannun_pl|野伏の倉庫
 trp_merchant_mtirith|補給係
 trp_merchant_mtirith_pl|馬屋と貯蔵庫
 trp_merchant_pelargir|補給係
@@ -1446,13 +1446,13 @@ trp_elder_uhcamp|野営長
 trp_elder_uhcamp_pl|野営
 trp_elder_urcamp|野営長
 trp_elder_urcamp_pl|野営
-; trp_elder_woodelf_camp|Elder
+trp_elder_woodelf_camp|長老
 trp_elder_woodelf_camp_pl|野営
-; trp_elder_woodelf_west_camp|Elder
+trp_elder_woodelf_west_camp|長老
 trp_elder_woodelf_west_camp_pl|野営
-; trp_elder_beorn_v|Beorning Elder
+trp_elder_beorn_v|ビヨルン一党の長老
 trp_elder_beorn_v_pl|村
-; trp_elder_troll_cave|Cave Chief
+trp_elder_troll_cave|坑道の長
 trp_elder_troll_cave_pl|坑道
 trp_elder_dg_outpost|リューンの野営長
 trp_elder_dg_outpost_pl|野営
@@ -1460,13 +1460,13 @@ trp_elder_rhun_sc|リューンの野営長
 trp_elder_rhun_sc_pl|野営
 trp_elder_rhun_nc|リューンの野営長
 trp_elder_rhun_nc_pl|野営
-; trp_elder_gunda_ne|Orc Elder
+trp_elder_gunda_ne|オークの長老
 trp_elder_gunda_ne_pl|野営
-; trp_elder_gunda_nw|Orc Elder
+trp_elder_gunda_nw|オークの長老
 trp_elder_gunda_nw_pl|野営
-; trp_elder_gunda_s|Orc Elder
+trp_elder_gunda_s|オークの長老
 trp_elder_gunda_s_pl|野営
-; trp_elder_gunda_m|Orc Elder
+trp_elder_gunda_m|オークの長老
 trp_elder_gunda_m_pl|野営
 trp_elder_ironhill|野営の長老
 trp_elder_ironhill_pl|野営

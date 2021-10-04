@@ -31,7 +31,7 @@ pt_blackroot_auxila|Auxiliaires du Val de Sourcenoire
 pt_lamedon_auxila|Auxiliaires du Lamedon
 pt_lossarnach_auxila|Auxiliaires de Lossarnach
 pt_pinnath_gelin_auxila|Auxiliaires de Pinnath Gelin
-pt_ranger_scouts|Éclaireurs rangers
+pt_ranger_scouts|Éclaireurs Coureurs
 pt_rohan_scouts|Éclaireurs rohirrim
 pt_lorien_scouts|Éclaireurs de la Lothlórien
 pt_woodelf_scouts|Éclaireurs elfes de Grand'Peur
@@ -55,12 +55,12 @@ pt_gundabad_scouts|Éclaireurs de Gundabad
 pt_rhun_scouts|Éclaireurs de Rhûn
 pt_gondor_raiders|Fourrageurs du Gondor
 pt_rohan_raiders|Fourrageurs rohirrim
-pt_imladris_raiders|Fourrageurs d'Imladris
+pt_imladris_raiders|Fourrageurs de Fendeval
 pt_lorien_raiders|Fourrageurs de la Lothlórien 
 pt_woodelf_raiders|Fourrageurs de Grand'Peur
 pt_dale_raiders|Fourrageurs du Val
 pt_dwarf_raiders|Fourrageurs nains
-pt_ranger_raiders|Pillards rangers
+pt_ranger_raiders|Pillards Coureurs
 pt_morgul_raiders|Pillards de Morgul
 pt_mordor_raiders|Pillards du Mordor
 pt_isengard_raiders|Pillards de l'Isengard
@@ -80,7 +80,7 @@ pt_woodelf_patrol|Patrouille de Grand'Peur
 pt_dale_patrol|Patrouille du Val
 pt_esgaroth_patrol|Patrouille d'Esgaroth
 pt_dwarf_patrol|Patrouille de nains
-pt_ranger_patrol|Patrouille de rangers
+pt_ranger_patrol|Patrouille de Coureurs
 pt_amroth_patrol|Patrouille de Dol Amroth
 pt_pelargir_patrol|Patrouille de Pelargir
 pt_lossarnach_patrol|Patrouille du Lossarnach
@@ -97,21 +97,21 @@ pt_guldur_war_party|Groupe de guerre de Dol Guldur
 pt_rhun_war_party|Armée de Rhûn
 pt_gondor_company|Patrouille de Minas Tirith
 pt_rohan_company|Compagnie du Rohan
-pt_imladris_company|Compagnie de Fondeval
+pt_imladris_company|Compagnie de Fendeval
 pt_lorien_company|Compagnie de la Lothlórien
 pt_woodelf_company|Compagnie de Grand'Peur
 pt_dale_company|Compagnie du Val
 pt_dwarf_company|Compagnie de nains
 pt_gondor_elite_company|Compagnie d'élite du Gondor
 pt_rohan_elite_company|Compagnie d'élite du Rohan
-pt_imladris_elite_company|Compagnie d'élite de Fondeval
+pt_imladris_elite_company|Compagnie d'élite de Fendeval
 pt_lorien_elite_company|Compagnie d'élite de la Lothlórien
 pt_woodelf_elite_company|Compagnie d'élite de Grand'Peur
 pt_dale_elite_company|Compagnie d'élite du Val
 pt_dwarf_elite_company|Compagnie d'élite naine
 pt_gondor_caravan|Caravane du Gondor
 pt_rohan_caravan|Caravane du Rohan
-pt_imladris_caravan|Caravane de Fondeval
+pt_imladris_caravan|Caravane de Fendeval
 pt_lorien_caravan|Caravane de la Lothlórien
 pt_woodelf_caravan|Caravane de Grand'Peur
 pt_dale_caravan|Caravane du Val
@@ -121,7 +121,7 @@ pt_isengard_caravan|Convoi d'approvisionnement de l'Isengard
 pt_gunda_caravan|Convoi d'approvisionnement de Gundabad
 pt_gondor_p_train|Convoi de prisonniers du Gondor
 pt_rohan_p_train|Convoi de prisonniers du Rohan
-pt_imladris_p_train|Convoi de prisonniers de Fondeval
+pt_imladris_p_train|Convoi de prisonniers de Fendeval
 pt_lorien_p_train|Convoi de prisonniers de la Lothlórien
 pt_woodelf_p_train|Convoi de prisonniers de Grand'Peur
 pt_dale_p_train|Convoi de prisonniers du Val

@@ -164,17 +164,17 @@ dlga_companion_home_description:close_window.1|こんなささいな事を、い
 dlga_start:player_hire_troop|{s33}^^私がここ、{s21}の守備隊の責任者です。 私に何かご用ですか？
 dlga_player_hire_troop:player_hire_troop_give|私の部下のうち数名は、{s21}防衛のためにここに配属されたほうがいいだろう。
 dlga_player_hire_troop:close_window|守備兵の確認をしたい。
-dlga_player_hire_troop:player_hire_trolls_take|私は戦闘トロールにふさわしい司令官です-私に一つを与えてください！
-dlga_player_hire_trolls_take:close_window|あなた自身の黒軍団を育てようとしていますか？ あなたのランクに完全に成長したトロールを追加することができたら戻ってくる。
-dlga_player_hire_trolls_take:close_window.1|君は？ あなた卑しいうじ虫。 私の視界から出て行け ファイティング-トロール （{S24}以上である必要があります)
-dlga_player_hire_trolls_take:player_hire_trolls_how_many|それは{rg21}の影響を要します。
+dlga_player_hire_troop:player_hire_trolls_take|私は戦闘用トロルを持つにふさわしい指揮官だ。私に一匹、預けてくれ！
+dlga_player_hire_trolls_take:close_window|ご自分の部隊を立派な黒の軍勢に仕立てよう、というおつもりですな？ 完成品のトロルができあがったらまた来ていただきたい。
+dlga_player_hire_trolls_take:close_window.1|おまえが？虫けらの分際で。おのれの身の程を知るが良い。 よりによって戦闘用トロルとは恐れ入る。 ({s24}以上である必要があります)
+dlga_player_hire_trolls_take:player_hire_trolls_how_many|影響力ポイントを{reg15}消費します。
 dlga_player_hire_trolls_take:close_window.2|気が変わった
-dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|恐ろしい獣だ そして今、それは私のものです！
-dlga_player_hire_trolls_how_many:player_hire_troll_armoured|彼らはそれらを保護する鉄のシートとよりよく戦う。 それを作る！
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|恐るべき獣よ。そして今、これは私のもとなったのだ！
+dlga_player_hire_trolls_how_many:player_hire_troll_armoured|やつらは体を保護する鉄の板を与える事によって、より戦闘力が増すのだ。そのようにしてくれ！
 dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
-dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|気が変わった
-dlga_player_hire_troll_buy_not_enough:close_window|時間の無駄だ..
-dlga_player_hire_troll_buy_done:close_window|今、この大きな仲間の世話をし、彼はあなたの世話をするでしょう！ ハ！
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|気が変わった。
+dlga_player_hire_troll_buy_not_enough:close_window|時間の無駄だ・・・
+dlga_player_hire_troll_buy_done:close_window|よし！さあ、このでかぶつの面倒をしっかりと見てくださいよ。 そうすれば、こいつはあなたのためにしっかりと働きますよ！
 dlga_player_hire_troop:close_window.1|訓練をしたい。
 dlga_player_hire_troop:tld_sell_prisoners|捕虜を連行してきた。
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} さて、哀れな囚人どもの顔を拝むとしましょうか。
@@ -193,7 +193,7 @@ dlga_player_siege_castle_commander_1:player_siege_ask_surrender|降伏せよ！�
 dlga_player_siege_castle_commander_1:close_window|なんでもない。我らは立ち去ろう。
 dlga_player_siege_ask_surrender:player_siege_ask_surrender_treatment|是非もなし・・・ 我々の身の安全を保障すると誓っていただけるか？
 dlga_player_siege_ask_surrender:player_siege_ask_leave_unmolested|我々に危害を加えないと誓っていただけるのであれば、 ここを明け渡そう。
-dlga_player_siege_ask_surrender:close_window|降伏だと？フン！この鉄壁の布陣、 昼寝をしてても守れるわ。
+dlga_player_siege_ask_surrender:close_window|降伏だと？フン！この鉄壁の布陣、 昼寝をしていても守れるわい。
 dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_reject|約束など何もない。 今すぐ降伏するか、 死を選ぶかのどちらかだ！
 dlga_player_siege_ask_surrender_treatment_reject:close_window|畜生め。我らは最後の一兵まで戦うぞ！
 dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_accept|おぬしには人質となってもらうが、 兵士たちの安全は保障しよう。 私の名誉にかけて誓う。
@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|{s12}付近の村から逃げていく数名
 dlga_raid_village_failed:close_window|もうこのような事がないように致します。
 dlga_lord_start:lord_target_lord_failed|任務に失敗したそうだな。 失望したぞ、 {playername}。
 dlga_lord_target_lord_failed:close_window|もうこのような事がないように致します。
-; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.
+dlga_lord_start:lord_generic_mission_completed.5|{playername}よ。 おぬしの部下たちは、 おぬしの勇敢さをその目に焼き付けたようだ。 おぬしは我が軍が敵に対して優位にある、 という事を示したのだ。
 dlga_lord_start:kill_quest_failed|任務に失敗したそうだな。 失望したぞ、 {playername}。
 dlga_lord_start:lord_generic_mission_completed.6|{playername}よ。 おぬしの部下たちは、 おぬしの勇敢さをその目に焼き付けたようだ。 私も敬意を表する。
 dlga_kill_quest_failed:close_window|もうこのような事がないように致します。
@@ -567,11 +567,11 @@ dlga_lord_tell_mission:lord_mission_told.1|私と長いつきあいの友であ�
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|どのくらい必要なのですか？
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|{s14}を{reg1}名、 育て上げて私に引き渡してくれれば、 充分であろう。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|よろしいでしょう、{s65}。私に{reg1}名の新兵をお預けください。立派な{s14}に育て上げてご覧に入れましょう。
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the training fields teach them a thing or two...
-; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the training fields teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|{s65}殿、私に考えがあります。その{reg1}名の新兵たちに、私が訓練場で直接ひとつ、ふたつ稽古をつけてやるというのはどうでしょう。
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|{s65}殿、私に考えがあります。その{reg1}名の新兵たちに、私が訓練場で直接ひとつ、ふたつ稽古をつけてやるというのはどうでしょう。それで彼らが突然{s14}に変身するわけではありませんが、ひとつ成長するはずです。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|近頃は他人を訓練してやる暇などありません。
 dlga_lord_mission_raise_troops_accepted:close_window|おぬしのお陰で肩の荷が下りたわ、 {playername}。 我が部隊の兵長に、 新兵をおぬしの指揮下へ送るよう、 伝えておこう。 それから、 経費の足しに、 おぬしにいくらか前金を渡しておこう。 さあ、 これで充分であろう。 感謝する。
-; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
+dlga_lord_mission_raise_troops_alternate:close_window|{playername}よ、それはおもしろい考えだ。新兵どもを訓練場に向かわせるよう、兵長に伝えるとしよう。おぬしもそこへ行って、連中をしごき上げてくれ。私も見物するとしよう。おぬしには感謝するぞ。
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|お、そうか。 期待していたのだがな。 まあ仕方あるまい。 ではまたな。
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|おぬし向きの仕事がある。{s4}と呼ばれる、 ならず者がおってな。 私の護衛の者をひとり殺害して以来、裁きを受けずに逃げ続けておるのだ。 最近、奴を{s3}で目撃したという情報があった。 奴を捕らえて速やかに裁きを下してくれれば、報酬を出そう。
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|ではその者を探し出し、然るべき裁きを受けさせましょう。
@@ -976,18 +976,18 @@ dlga_start:town_merchant_talk|こんにちは、　指揮官殿。 今日はど�
 dlga_start:town_merchant_talk.1|ごきげんよう。 何かご用ですか？
 dlga_town_merchant_talk:trade_requested_weapons|新しい装備が欲しい。在庫を見せてくれ。
 dlga_town_merchant_talk:trade_requested_horse|馬を買おうかと考えているのだ。
-dlga_town_merchant_talk:player_upgrade_trolls_take|私は私のトロールを強化したい！
-dlga_player_upgrade_trolls_take:close_window|あなたは私にこれを聞いて誰ですか？ パー！ ベゴーン! （{S24}以上である必要があります)
-dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|あなたは私たちに多くの良いターンをやった。 あなたの息子に鉄をつけるのを手伝ってあげるわ！ ({reg21}リソースポイント)
-dlga_player_upgrade_trolls_take:close_window.1|あなたのトロールは、mewlingの女の子のようです。 彼らは良いと適切な最初の血を取得！
-dlga_player_upgrade_trolls_take:close_window.2|ここではやらない..
-dlga_player_upgrade_trolls_take:close_window.3|あなたのトロールも適切な話をしない！ 彼らは私たちの種類ではないです。 彼らはどこから来たにそれらを取り戻す！
-dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|それを忘れて
-dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|私はそれらのいずれかを装甲します。
-dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|おそらく私はまだこれを獲得していない。 私はこの些細なことであなたを悩ませません
-dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|それを忘れて
-dlga_player_upgrade_troll_not_enough:close_window|時間の無駄だ..
-dlga_player_upgrade_troll_buy_done:close_window|はい...はい! こっちに来てくれ..
+dlga_town_merchant_talk:player_upgrade_trolls_take|私のトロルを強化したいのだ！
+dlga_player_upgrade_trolls_take:close_window|どこの誰が何だって？フン！去れ！ ({s24}以上である必要があります)
+dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|あなたは我々のためによく働いてくれた。あなたの部下のために鉄をいくらか融通しましょう！ (リソースポイントを{reg21}消費します)
+dlga_player_upgrade_trolls_take:close_window.1|あなたのトロルどもはまるで、ぴいぴいと泣いている赤ん坊のようだ。 まずはやつらに充分に血しぶきを味あわせて、一丁前にしてやる良い。
+dlga_player_upgrade_trolls_take:close_window.2|ここはそういう場じゃないんですがね・・・
+dlga_player_upgrade_trolls_take:close_window.3|あなたのトロルは何をしゃべっているのかさっぱりだ！どこのトロルなんですかい？ ここでなく、こやつが育てられたところへ持って行ってください！
+dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|忘れてくれ
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|一匹武装してもらおう。
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|これはまだ私には少々早すぎたかも知れぬ。おまえに頼むのはまた今度にしよう。
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|忘れてくれ
+dlga_player_upgrade_troll_not_enough:close_window|時間の無駄だ・・・
+dlga_player_upgrade_troll_buy_done:close_window|おお・・・いいぞ！さあこっちへ来い、このでかぶつめ・・・
 dlga_trade_requested_weapons:merchant_trade|もちろんです、指揮官殿。 このような品揃えは、よそでは見られませんよ。
 dlga_trade_requested_horse:merchant_trade|騎乗と殺戮に最適な獰猛な馬、それに飼料も扱っていますよ！ よそでは見られない、最高の獣をご覧ください。
 dlga_merchant_trade:town_merchant_talk|他には何か？

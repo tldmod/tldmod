@@ -68,7 +68,7 @@ mno_start_go|Gondor, Królestwo Białej Wieży
 mno_start_ro|Rohan, jeźdźcy koni
 mno_start_du|Dunedainowie, starożytna dynastia ludzi
 mno_start_be|Beorningowie, Niedźwiedzi lud
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood
+mno_start_wo|DRWALE, spod okapu Mrocznej Puszczy
 mno_start_da|Północne królestwo Dalii
 menu_start_good_elf|^^^^^^^^^^który Las zamieszkujesz, Starcze?
 mno_start_ri|Rivendell, Władcy Elronda
@@ -233,7 +233,7 @@ menu_join_battle|^^^{s2} wznoszą bojowy okrzyk widząc, jak ruszasz im na pomoc
 mno_join_attack|Zaatakuj wroga.
 mno_join_order_attack|Rozkaż swoim ludziom by pomogli sprzymierzeńcom w walce z wrogiem.
 mno_control_allies_join_menu|Użyj Punktów Wpływu aby dowodzić swoimi sojusznikami na polu walki
-; mno_join_attack_bearform|Leap into battle in bear form
+mno_join_attack_bearform|Rusz do bitwy w formie niedźwiedzia
 mno_join_leave|Odejdź.
 mno_player_control_allies_join_menu|Przejmij dowodzenie i szarżuj na wrogów 
 menu_join_order_attack|{s4}^^Twoje straty: {s8}^^Straty sprzymierzeńców: {s9}^^Straty wroga: {s10}

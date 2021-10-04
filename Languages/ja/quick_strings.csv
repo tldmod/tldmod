@@ -73,7 +73,7 @@ qstr_an_ORC^_serving_the_|オーク、^瞼のない御目の忠実な下僕
 qstr_an_URUK^_the_new_bre|ウルク、^新種のオーク
 qstr_a_MAN^_subjugated_by|人間、^サウロンに服従
 qstr_an_ORC^_serving_the_W|オーク、^白の手のしもべ
-; qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
+qstr_one_of_the_URUK_HAI^|ウルク＝ハイ、^アイゼンガルドの産
 qstr_a_MAN_of_Dunland^_th|褐色人、^西方の平野の住人
 qstr_Click_the_center_but|中央のボタンをクリックすると勢力を切り替えます^アバターをクリックすると詳細を表示します
 qstr_Level:_{reg3}^Health|レベル:{reg3}^ヒットポイント:{reg4}
@@ -160,7 +160,7 @@ qstr_Useful_Tool_of_{s5}|{s5}の手足
 qstr_Servant_of_{s5}|{s5}の下僕
 qstr_Unknown_to_{s5}|{s5}のよそ者
 qstr_You_have_been_{reg1?|あなたは{s24}({reg0})に{reg1?昇格:降格}しました！
-; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.
+qstr_You_{reg1?earned:los|あなたの所属する{s11}のランクポイントを{reg11}{reg12?、影響力ポイントを{reg12}:}{reg1?獲得し:失い}ました。
 qstr_You_{reg1?earned:lost|{s11}のランクポイントを{reg11}{reg12?、影響力ポイントを{reg12}:}{reg1?獲得し:失い}ました。
 qstr_You_spent_{reg10}_of|{s1}への影響力ポイントを{reg10}消費しました。残りは{reg11}です。
 qstr_Troop_upkeep:|兵士維持費:
@@ -186,7 +186,7 @@ qstr_during_battles|(戦闘中のみ)
 qstr_+1_to_Pathfinding|経路探索スキルに+1
 qstr_+1_to_Athletics|アスレチックスキルに+1
 qstr_+1_to_Wound_Treatmen|治療スキルに+1
-; qstr_Use_from_Camp_Menu|Use from Camp Menu
+qstr_Use_from_Camp_Menu|キャンプメニューから使用します
 qstr_Use_from|このアイテムは
 qstr_Action_Menu|アクションメニューから使用します
 qstr_+1_to_First_Aid|応急手当てスキルに+1
@@ -197,15 +197,15 @@ qstr_+1_to_Strength|体力に+1
 qstr_+1_to_Agility|敏捷性に+1
 qstr_+1_to_Leadership|統率力スキルに+1
 qstr_+1_to_Wildcraft|ワイルドクラフトに+1
-; qstr_+1_to_Tracking|+1 to Tracking
+qstr_+1_to_Tracking|追跡術に+1
 qstr_when_equipped|(要装備)
 qstr_+1_to_Power_Draw|弓術スキルに+1
 qstr_The_record_of_Balin_|失踪したバーリン一団の記録。
 qstr_Who_might_be_interes|これに興味を持つとしたら、誰が考えられるだろう？
-; qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
-; qstr_Turns_nature_to_your|Turns nature to your side
-; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
-; qstr_Bonus_to_Power_Strik|Bonus to Power Strike
+qstr_Bonus_to_Shield_Skil|盾防御スキルにボーナス
+qstr_Turns_nature_to_your|自然が味方になる
+qstr_when_equipped.__Effe|(要装備) (効果はワイルドクラフトのスキルに依存)
+qstr_Bonus_to_Power_Strik|強打スキルにボーナス
 qstr_+1_to_Trainer|訓練スキルに+1
 qstr_Recruits_Tribal_Orcs|部族オークを徴用可能
 qstr_rally|檄の回数
@@ -214,26 +214,26 @@ qstr_+{reg1}_{s3}_in_batt|戦場で{s3}に+{reg1}
 qstr_+1_to_Charisma|魅力に+1
 qstr_+1_to_Surgery|手術スキルに+1
 qstr_+1_to_Intelligence|知性に+1
-; qstr_+2_to_Surgery|+2 to Surgery
+qstr_+2_to_Surgery|手術スキルに+2
 qstr_+1_to_Riding|乗馬スキルに+1
 qstr_+1_to_Mounted_Archer|馬上弓術に+1
-; qstr_Bonus_to_Riding|Bonus to Riding
-; qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
-; qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
+qstr_Bonus_to_Riding|乗馬スキルにボーナス
+qstr_when_equipped.__Effec|(要装備) (効果は体力に比例)
+qstr_Orcs:_+1_Riding_Requ|オーク種は要求乗馬スキルに+1
 qstr_+1_to_Prisoner_Mgmt|囚人管理スキルに+1
 qstr_+2_to_Tactics|戦術スキルに+2
-; qstr_+1_Intelligence|+1 Intelligence
-qstr_+{reg1}_to_Spotting|スポッティングに+{reg1}
-qstr__Scales_with_Wildcra|（ワイルドクラフトの鱗)
-; qstr_+1_to_Power_Throw|+1 to Power Throw
-qstr_+1_to_Spotting|スポッティングに+1
+qstr_+1_Intelligence|知性に+1
+qstr_+{reg1}_to_Spotting|観測術に+{reg1}
+qstr__Scales_with_Wildcra|(効果はワイルドクラフトのスキルに比例)
+qstr_+1_to_Power_Throw|豪投に+1
+qstr_+1_to_Spotting|観測術に+1
 qstr_Less_Dunnish_upkeep|褐色人の維持費が低下
 qstr_Less_Wargs_upkeep|ワーグ騎兵の維持費が低下
 qstr_Light_Armor|軽装鎧
-; qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
-; qstr_Lead_more_Orcs|Lead more Orcs
+qstr_Bonus_to_Strength__P|体力にボーナス (プレイヤーのみ)
+qstr_Lead_more_Orcs|指揮可能なオークの数が増大
 qstr_+{reg1}_to_Party_Mor|パーティの士気に+{reg1}
-; qstr_Range:_{reg55}|Range: {reg55}
+qstr_Range:_{reg55}|範囲: {reg55}
 qstr_Do_you_want_to_disem|上陸しますか？
 qstr_Move_here|ここへ移動
 qstr_View_notes|詳細を見る
@@ -242,7 +242,7 @@ qstr_nothing|なし
 qstr_Good|良
 qstr_Med|平凡
 qstr_Bad|悪
-; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
+qstr_You_gained_{reg84}_e|知力により、{reg84}の経験値を獲得しました。
 qstr_{reg4}_killed_{reg5}|{reg4}名死亡、{reg5}名負傷、{reg6}名離脱
 qstr_{reg4}_killed_{reg5}_|{reg4}名死亡、{reg5}名負傷
 qstr_{reg4}_killed_{reg5}_r|{reg4}名死亡、{reg5}名離脱
@@ -280,8 +280,8 @@ qstr_{s3}_is_no_longer_un|{s3}の包囲が解かれました。
 qstr_Enemies_spotted_near|{s1}付近で敵勢を発見しました。
 qstr_Your_relation_with_{|あなたと{s1}の関係が向上しました。
 qstr_Your_relation_with_{s|あなたと{s1}の関係が悪化しました。
-; qstr_{s1}_gained_faction_|{s1} gained faction strength!
-; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
+qstr_{s1}_gained_faction_|{s1}の勢力ポイントが上がりました！
+qstr_{s1}_lost_faction_st|{s1}の勢力ポイントが下がりました！
 qstr_{s2}_{reg3?was:is_cu|{s2}は{reg3?:現在}、{s3}に{reg3?いた:いるはずだ}。
 qstr_{s2}_{reg3?was:is}_t|{s2}は{s3}を目指し、 {reg3?:現在}{s4}付近を移動中{reg3?だった:だ}。
 qstr_{s2}_{reg3?was:is}_i|{s2}は{reg3?:現在}、{s3}付近に{reg3?いた:いるはずだ}。
@@ -533,11 +533,11 @@ qstr_Inappropriate_mount|不適当な乗り物
 qstr_{s24}:_Your_infantry|{s24}:あなたの歩兵たちは気分が良くなりました！
 qstr_{s24}:_Your_archers_|{s24}:あなたの弓兵たちは気分が良くなりました！
 qstr_{s24}:_Your_cavalry_|{s24}:あなたの騎兵たちは気分が良くなりました！
-; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
+qstr_Ah_what_a_coincidenc|おお、おぬしは{playername}ではないか。 このようなところでばったり出くわすとは、なんという偶然だろう！ おぬしはわしの事を知らないであろうが、わしはおぬしの事をよく知っておる。 わしはこれより{s4}に会いに行くところだが、 先ほど話をしてきた{s3}との間で、おぬしの名が登場した。 {s3}はこの困難な時世においておぬしを非常に頼りにしておる。 おぬしには今取り組んでいる仕事があるだろうが、ひとまずそれらは置いておいて、 ここは{s2}を出来る限りの力で助ける事を考えてみなければいかん。
 qstr_Who_are_you?|あなたは何者{なんだ/なの}？
 qstr_A_friend_of_{s3}_and|{s3}と{s2}の民の友だ。 さあ急ぐのだ！ モルドールはあらゆる邪なものをひきつけ、 闇の力をもってそれらをしもべにしてしまう。 この世界の清きものたちに残された時間は少ない。 闇に対抗するため、 できる限りの手を打たなければならん！
 qstr_What_should_I_do?|私は何をすればよいのでしょう？
-; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
+qstr_Find_{s3}_s_whereabo|{s3}の所在を探し、ただちに{reg3?彼女:彼}話をするのだ。幸運を祈る！
 qstr_Good_to_see_the_Shad|おぬしがいまだ闇の力に屈していないのは幸運といえよう、 {playername}。
 qstr_You_are_the_one_they|あなたはガンダルフ、もしくはミスランディアと呼ばれている方ですね。
 qstr_That_is_what_some_ca|そう呼ぶ者もおるな。 また違った名前で呼ぶ者もあるが、 この闇を食い止めねば、 まもなくわしを呼ぶ者すらいなくなってしまうであろう。
@@ -697,10 +697,10 @@ qstr_A_thunderstorm_from_|霧ふり山から降り注ぐ激しい雷雨が戦場
 qstr_A_thunderstorm_from_t|霧ふり山から降り注ぐ激しい雷雨が戦場を覆っています。 弓兵は思うように働く事ができません。
 qstr_A_poisonous_fog_from|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたとあなたの兵たちは体調が悪くなりました。兵たちは恐怖を感じています。
 qstr_A_poisonous_fog_from_|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたはこれといった影響は感じませんが、敵勢の苦しむ声が聞こえてきます。敵は恐怖しているようです。
-; qstr_You_shapeshift_into_|You shapeshift into a bear!
-; qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
-; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
-; qstr_You_change_back_to_h|You change back to human form...
+qstr_You_shapeshift_into_|あなたは熊に姿を変えました！
+qstr_You_got_{reg1}_exper|あなたは熊の姿で{reg1}の経験値を獲得しました。
+qstr_Your_ability_to_chan|あなたが姿を変える能力を持つ事は明らかになりました。 これよりあなたは自然において、 人間であると同時に熊としても認識されます。
+qstr_You_change_back_to_h|あなたは人間の姿に戻った・・・
 qstr_Your_mount_stumbles!|あなたの馬がよろめいています！どうやら足をくじいているようです。
 qstr_Bitten_by_your_own_w|あなたのワーグが噛み付いてきました！
 qstr_You_weigh_too_much_f|ポニーに乗るには、あなたは重すぎます！
@@ -715,12 +715,12 @@ qstr_Use_Up/Down_arrow_ke|上下の矢印キーで傾きの調整
 qstr_Fixed_Camera___Right|固定カメラ - 右肩
 qstr_Fixed_Camera___Left_|固定カメラ - 左肩
 qstr_Fixed_Camera___Cente|固定カメラ - 中央
-; qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
+qstr_Shield_is_too_big_to|盾は大きすぎて弓と同時には扱えません。
 qstr_While_visiting_towns|町や拠点、野営のなかでは、歩き回っている人々と話をすることができます。 話の内容は各勢力によって違い、 自分たちの考えだったり、 うわさ話だったりします。 どちらもその人物の文化と所属勢力についての理解を深めるだけのものですが、 秘密の場所のヒントや、 旅をする上や指輪戦争を戦う上でのヒントやコツを話してくれる事もあります。
 qstr_Cannot_leave_now.|今は離脱できません。
-; qstr_You_have_found_the_l|You have found the local smithy.
-; qstr_You_have_found_the_lo|You have found the local authority.
-; qstr_You_have_found_the_loc|You have found the local warehouse.
+qstr_You_have_found_the_l|地元の鍛冶屋を見つけました。
+qstr_You_have_found_the_lo|地元の役所を見つけました。
+qstr_You_have_found_the_loc|地元の貯蔵所を見つけました。
 qstr_You_look_through_Hen|あなたは夕陽の窓とも呼ばれるヘンネス・アンヌーンを見て回った。 その美しさに、あなたは西方とその底力に対する認識をあらためた。
 qstr__cancelled_the_{reg1|(捕虜を殺害して得た経験値{reg10}をキャンセルしました)
 qstr_Forming_ranks.|横陣を組みます。
@@ -734,14 +734,14 @@ qstr_Division_{reg1}_{s2}_f|{s2}第{reg1}分隊は、横隊を組みます(保�
 qstr_Division_{reg1}_{s2}_fo|{s2}第{reg1}分隊は、横隊を{reg0}列組みます(保存済み)。
 qstr_Delivered_{reg60}_da|{reg60}のダメージを与えました。
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
-; qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
+qstr_Your_bear_form_has_{|熊の姿でのHPは{reg2}/{reg1}です！
 qstr_Three_Nazgul_are_cir|戦場の上空で3体のナズグールが旋回しています！
 qstr_Two_Nazgul_are_circl|戦場の上空で2体のナズグールが旋回しています！
 qstr_A_Nazgul_is_circling|戦場の上空でナズグールが旋回しています！
 qstr_Some_of_your_human_t|あなたの兵のうち、いくらかは人間にもかかわらず闇の力にひるんでいません(ナイト系の兵は夜間のペナルティを受けません)。
 qstr_You_are_filled_with_|敵の姿を目にしたあなたは、怒りで満たされました(狂戦士が発動しました)。
 qstr_Your_mount_is_scared|あなたの馬は{reg73?エント:トロル}に怯えています！
-qstr_Your_mount_is_scared_|あなたの山は{reg73によっておびえているか。ent：トロール}が、あなたはそれを習得することができます！
+qstr_Your_mount_is_scared_|あなたの馬は{reg73?エント:トロル}に怯えていますが、なんとかなだめる事はできそうです！
 qstr_Nazgul_sweep!|ナズグールの攻撃！
 qstr_You_and_your_horse_p|ナズグールの耐え難い叫び声に、あなたと馬は動揺しています！
 qstr_Your_horse_panics_th|ナズグールの耐え難い叫び声に、あなたの馬が動揺しています！
@@ -784,7 +784,7 @@ qstr_End_them_all!|皆殺しだ！
 qstr_Drive_them_back!|やつらを追い払え！
 qstr_Protect_the_City!|町を守れ！
 qstr_Forward!_Board_them!|進め！敵艦へ切り込め！
-; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
+qstr_The_Last_Days_of_the_|The Last Days of the Third AgeはNativeとは大きく異なる、高度な攻城戦AIを採用しています。 すべてのユニットは左翼、右翼、中央に振り分けられます。 攻撃側のプレーヤーはいくらかの自分の兵に指示を出す事ができます。
 qstr_Reached_Gauntlet_wav|ガントレット第{reg1}波が来ました！
 qstr_Ballista:_out_of_amm|投石器:弾切れです！
 qstr_Ballista:_turn_CURSO|投石器:カーソルキーで旋回、 左SHIFTで照準、 スペースで発射、 Tで着火、 Fで離脱
@@ -902,10 +902,10 @@ qstr_Doubled|2倍
 qstr_Tripled|3倍
 qstr_Quadrupled|4倍
 qstr_You_drank_the_Ent_Wa|エント水を飲みました・・・
-; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
+qstr_You_used_the_Orc_Bre|オークビールを飲みました。
 qstr_Fangorn_search:_fail|ファンゴルンの森探索:失敗。
 qstr_^^^A_great_victory!^|^^^大いなる勝利だ！^^^なるほど、これがファンゴルンの伝説のからくりか・・・
-; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
+qstr_^^^Defeated...^^^Sca|^^^敗れた・・・^^^ファンゴルンの森に散ってしまった・・・ひとりだ・・・
 qstr_Troll_caged_in_wheel|トロルは車輪付きの檻に入れられました。
 qstr_A_second_troll_is_ca|二頭目のトロルは車輪付きの檻に入れられました。
 qstr_Here_you_are.|どうぞ。
@@ -999,7 +999,7 @@ qstr_the_Leader_s_Cave|指揮官の洞窟
 qstr_the_Tower|塔
 qstr_the_tower_of_Orthanc|オルサンクの塔
 qstr_the_Throne_Room|王の間
-; qstr_Beorn_s_Hall|Beorn's Hall
+qstr_Beorn_s_Hall|ビヨルンの広間
 qstr_the_Hall|大広間
 qstr_the_Great_Chamber_of|スロールの朝見の間
 qstr_Stay_indoors_for_som|屋内に宿営する(一晩につきリソースポイントを{reg1}消費します)
@@ -1060,7 +1060,7 @@ qstr_You_are_entering_{s1|あなたは{s1}({s2})に入りました。
 qstr_You_are_entering_{s1}|あなたは{s1}に入りました。
 qstr_The_war_expands_comm|戦火が拡大し、指揮官たちはより大胆になりました！(包囲攻撃の必要条件が緩和されました)
 qstr_Your_party_is_spotte|あなたのパーティは{s1}に発見されました。
-; qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
+qstr_The_effects_of_the_O|オークビールの効果が消えました。
 qstr_Party_has_nothing_to|食べるものがありません！
 qstr_You_pay_for_accommod|宿泊代を支払いました。
 qstr_The_troll_outside_{s|{s2}周辺のトロルは倒されました。任務はキャンセルされました。
@@ -1093,7 +1093,7 @@ qstr_{s5}_has_stopped_fol|{s5}はあなたへの同行をとりやめました�
 qstr_You_have_{reg69}_all|{reg69}の友軍部隊があなたに同行しています。
 qstr_You_have_{reg69}_ally|{reg69}の友軍部隊があなたに同行しています。
 qstr_The_forces_of_{s2}_h|{s2}の軍勢は再合流して態勢を立て直し、{s15}を目指して進軍しています！
-; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
+qstr_Your_scouts_report_s|あなたの斥候が{s2}の痕跡をこの付近に発見したようです。
 qstr_{s1}_from_{s2}|{s2}の{s1}
 qstr_When_dealing_with_lo|{s11}の民と取引をする場合、 彼らはあなたの顔を知らず、 あなたの{s10}での功績についても、 必ずしも知っているわけではないという事に 注意してください。^^({s11}の民とのやりとりに使用される リソースポイントは {s11}でのみ稼げるもので、 {s10}で稼いだものとは別です。 レポート画面も参照してください。)
 qstr_Info|情報
@@ -1121,7 +1121,7 @@ qstr_{s27}:_Party_morale_|{s27}:パーティの士気が上がりました。
 qstr_{s27}:_Party_morale_d|{s27}:パーティの士気が下がりました。
 qstr_You_have_failed_to_f|バーリンとその一党の復讐をするという誓いを達成できませんでした！
 qstr_You_have_failed_to_fu|名誉の死を遂げた {s1}の復讐をするという 誓いを達成できませんでした！
-; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
+qstr_Your_troops_value_yo|誓いを成就させたあなたの力に、あなたの部下たちは感服しています。 しかし、あまりにも簡単に成し遂げたとも感じているようです。その結果、 
 qstr_{s22}You_have_fulfil|{s22}あなたはバーリンとその一党の復讐をするという誓いを成就させました！
 qstr_{s22}You_have_fulfill|{s22}あなたは{s1}の名誉の死の復讐をするという誓いを成就させました！
 qstr_Reinforcements|増援
@@ -1198,14 +1198,14 @@ qstr_Good_day_to_you.|やあ、ごきげんよう。
 qstr_Ah_it_s_you_again._G|やあ、きみか。じゃあまた。
 qstr_My_apologies_if_I_wa|このあいだは失礼があったら謝りたい。もう一度{きみ/あなた}の身の上話を聞かせてくれないか{/しら}？
 qstr_I_was_reconsidering_|このあいだの{君/あなた}との話を思い出していた{んだ/のよ}。もう一度{きみ/あなた}の身の上話を聞かせてくれないか{/しら}？
-; qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
+qstr_Zigrphel_gained_{reg|ジグールフェルは経験値を{reg78}獲得しました。
 qstr_Greetings_{s23}_{s24|ごきげんよう、 {s24}、 {s23}殿。
 qstr_Greetings_{s23}.|ごきげんよう、{s23}。
 qstr_So_you_are_{s23}._I_|ああ、あなたが{s23}殿か。 {s25}に味方をしたという話を聞く限り、 我らが友軍と考えるべきでしょうな。
 qstr_I_need_volunteers_wi|私と共に危険な任務におもむく事をいとわない者はいないか。
 qstr_I_need_some_soldiers|兵に欠員が出た。補充をしたい。
-qstr_Maybe_the_weaklings_|たぶん、南の弱者たちは、柔らかい肌のトロールに鎧をつけたのかもしれません。 私たちではない-私たちのトロールはGundabadのものです！
-qstr_Do_I_look_like_a_smi|私はあなたに鍛冶屋のように見えますか？ パー 話しに行って
+qstr_Maybe_the_weaklings_|軟弱な南の連中はやつらのか弱いトロルに 鎧を着せてやるのだそうな。俺たちはそんな事を する必要はない。俺たちのトロルは グンダバド産だからな！
+qstr_Do_I_look_like_a_smi|俺が鍛冶屋だと思ったのかい？馬鹿らしい。他を当たってくれ。
 qstr_Excellent_job_{s23}!|見事です、{s23}殿！ 他の指揮官も、あなたくらい真面目にやってくれるといいのですが。^
 qstr_Nicely_done_{s23}.|{s23}殿、お見事です。
 qstr_Good_work_{s23}.|{s23}殿、ご苦労様です。
@@ -1233,7 +1233,7 @@ qstr_It_is_my_duty_to_prot|我らが友軍を守るのは、我が義務と心�
 qstr_I_am_{s4}_{s15}_of_{|私の名は{s4}。 {s6}の{s15}
 qstr_I_am_{s4}_a_commande|私は{s4}、 {s6}の指揮官
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5?で{s8}の領主である:だ}。
-; qstr__{s3}_gained_{reg78}| {s3} gained {reg78} experience.
+qstr__{s3}_gained_{reg78}| {s3}は経験値を{reg78}獲得しました。
 qstr_{playername}_our_sco|{playername}よ、おぬしの任務成功は斥候から聞いたぞ。 おぬしに永遠の幸あれ！おぬしの勝利によって {s7}の軍団は後退を余儀なくされ、 敵勢の侵攻は鈍くなった。 これで敵軍の中で指揮官同士のいさかいが起こるとよいのだが。 少なくとも、敵勢はおぬしを大きく怖れるようになったであろう！ ともあれ、おぬしのおかげで疲労の色が強い我が軍は、 ひと息つくことができる。
 qstr_Well_{playername}_yo|これは{playername}、 どうやら我々にとって良い報せを持って戻ってきてくれたようだな。 おぬしは口先だけの{男/女}ではなかったという事か。 ああ、{s7}がおぬしの前に倒れるさまを、 この目で見れたら！ これで間違いなく敵勢の士気は大きくくじかれたであろう。 なにしろ頭をもがれたのだからな。蛇を殺すのなら頭を落とせ、 というわけだ。さて、この機を逃さず、 私はこれより軍を率いて敵を叩かねばならぬ。 {playername}よ、 おぬしの貢献はおぬしの上官に間違いなく報告しておくぞ。 心安らかにせよ。
 qstr_Alas_that_I_could_no|ああ、この手で{s8}の{s7}の 息の根を止める事ができないとは。ふたたびまみえる事があれば、 やつらには思い知らせてくれよう。
@@ -1295,7 +1295,7 @@ qstr_Ah_{playername}_it_i|おお、{playername}よ、よく来てくれた。 �
 qstr_About_time_you_showe|そろそろ姿を現す頃だと思っておったぞ、{playername}。^戦いが始まった今、 我らに反抗する者には一切容赦せぬ。 我々は{s11}と交戦中だが、 やつらの要塞の攻撃を考えるまえに、 まず我が軍の力を蓄え、 野戦において敵に打撃を与えなければならない。 敵を打ち倒すごとに我々の勢いは増し、 やつらを完全なる破滅へと追いたてるのだ。 おぬしには相手が偵察隊であろうと軍団だろうと、 機会があるごとに敵に打撃を与えてもらいたい。 また、敵勢と交戦中の我々の指揮官や友軍を見つけたら、 ただちに助勢するのだ。 彼らを見捨てる事があれば、 私の知るところとなるだろう。
 qstr_we_are_fighting_agai|我々は{s13}と交戦中だ
 qstr_we_are_not_fighting_|我々は現在、 どの勢力とも戦っていない
-; qstr__{s14}_gained_{reg78| {s14} gained {reg78} experience.
+qstr__{s14}_gained_{reg78| {s14}は経験値を{reg78}獲得しました。
 qstr_Oh?_Let_me_see_that.|なに？見せてくれ・・・ほほう！ {playername}よ、よく届けてくれた。 私が手紙を受け取ったという証として、私の印を持ってゆくがよい。 {s9}にはよろしく伝えておいてくれ。
 qstr_Give_me_that!_Hrmph!|よこせ！フン！ {playername}よ、よく届けてくれた。 おぬしはなかなか役に立つのう。もっとおぬしを使うよう、 {s9}に伝えてくれ。
 qstr_What?_Let_me_see_tha|なに？見せてくれ・・・フム。{playername}よ、 よく届けてくれた。行ってよろしい。
@@ -1398,7 +1398,7 @@ qstr_Mercy_I_crave!_To_fa|お許しください、どうかお慈悲を！{s7}�
 qstr_strong_warriors_from|{s7}の強力な戦士たち
 qstr_champions_from_{s7}_|戦場における最強の戦士、{s7}軍の最精鋭たち
 qstr_{playername}_the_men|{playername}よ、 我が兵は恐るべき敵の兵の話に震え上がっておる。 おぬしの力でもって、 怖れるものなど何もないと兵士たちに示してもらいたい。 {s6}に戦いを挑み、 これを{reg22}名を打ち倒してくれ。
-; qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superior force!
+qstr_{playername}_I_want_|{playername}よ。おぬしの力で、敵勢など物の数ではないという事を、 我が軍の兵に示してもらいたい。 おぬし自身の手で、 {reg22}名の{s6}を打ち倒してくれ！ 我が軍が最強であるという事を知らしめるのだ！
 qstr_I_will_do_what_you_a|お望みの通りにいたしましょう。兵によく示してやることにします。
 qstr_high_level_troops_fr|上級兵
 qstr_elite_level_troops_f|精鋭兵
@@ -1427,9 +1427,9 @@ qstr_Your_party_must_be_at|このクエストには少なくとも10名以上か
 qstr_{s9}_asked_you_to_def|{s1}付近の村を襲撃から守るよう、 {s9}より命令を受けた。
 qstr_{s9}_asked_you_to_ra|{s1}付近の村を襲撃するよう、 {s9}より命令を受けた。
 qstr_These_soldiers_may_w|この兵士たちは私の作戦の 成功のカギになってくれるはずだ、 {playername}。 兵を鍛え上げるおぬしの手腕は信頼している。 おぬしには感謝と敬意を表したい。
-; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
+qstr_I_wish_you_had_train|{playername}よ、できる事ならおぬしに全員の面倒をみてもらいたいくらいだ。 だがこの困難な時世では贅沢な事は言えぬ。 ありがたく頂戴するとしよう。
 qstr_Good_work_in_shaping|{playername}、よくぞ新兵どもを鍛え上げてくれたな。 おぬしは非常に役に立つ。今回の連中は長持ちするといいが、 まあ駄目だったらまたおぬしに頼むとしよう。
-; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
+qstr_Is_that_all_you_coul|何事だ、{playername}よ。 これで終わりなのか？ これでは昨日の損失の穴埋めにもならぬ。その者たちをこちらへ寄こせ！
 qstr_Well_the_soldiers_ar|ご覧の通り、兵士たちは準備万端です、閣下。 彼らはお役に立つでしょう。
 qstr_Well_you_may_do_as_y|どうぞお好きなように。 また必要があれば、 再び私とコンパニオンたちが腕をふるいましょう。
 qstr_{s9}_asked_you_to_br|{s9}の命令により、 軍事利用のために 凶暴なトロルを捕獲することになった。
@@ -1459,7 +1459,7 @@ qstr_My_spies_tell_me_of_|間者からの報告によると、 {s13}に大規模
 qstr_{s9}_asked_you_to_sco|{s9}より、 {s13}一帯を偵察するよう依頼された。
 qstr_We_have_reports_of_s|{s13}付近で敵が活動中との報告を受けた。 我々の偵察隊は、 具体的に何が行われているのかを 確認できる位置まで接近できていないようだ。 おぬしには偵察隊を編成し、 {s13}に充分接近した位置から その偵察隊を放ってもらいたい。
 qstr_My_spies_tell_me_the|{s13}付近で敵が活動中との報告を間者から受けた。 腰抜けの偵察隊どもは、 それ以上の情報が得られる位置まで接近できていないようだ。 おぬしには独自に偵察隊を編成し、 {s13}に充分接近した位置に その偵察隊を放ってもらいたい。 偵察隊がすぐに逃げ出さないように、念を押すのだ！
-; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
+qstr_{s9}_asked_you_to_di|{s13}付近に偵察隊を放つよう、 {s9}に頼まれた。^少なくとも1名の{s14}を含む {reg1}名の{s15}の兵を用意し、 {s13}にじゅうぶんな距離まで接近してから {s14}に指示を出して偵察隊を放とう。
 qstr_We_need_to_take_the_|{playername}、 戦いはこちらから仕掛けなくてはならない。 現時点で考えられるのは、 敵の偵察隊と連絡網を叩くことだ。 おぬしには{s13}を{reg1}部隊、 潰してもらいたい。 これで我が軍が主導権を奪い返すことができる。
 qstr_We_need_to_grind_dow|{playername}、 我々は役立たずの敵勢を 粉々にすり潰してやらねばならん。 やつらの偵察隊や補給隊どもが 我々の目と鼻の先をうろうろしておるのは気にさわる。 おぬしには{s13}を{reg1}部隊潰し、 やつらに恐怖というものを教えてやってもらいたい。
 qstr_{s9}_asked_you_to_el|{s9}より、 {s13}を{reg1}部隊壊滅させるよう、 依頼された。

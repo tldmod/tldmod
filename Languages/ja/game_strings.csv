@@ -979,7 +979,7 @@ str_npc3_home_description_2|どうしてもエントの森を通り抜けなけ�
 str_npc4_home_description_2|過去の偉大な行いや、尊い犠牲を思い起こすのは、大事な事です。 ローハンとゴンドールの同盟軍は、 再び我々の民を破滅から救うでしょう。
 str_npc5_home_description_2|これは、堕落し、身を滅ぼすというのは、 誰にでも起こりうる事なのだ、 という教訓にしなければならない。 それは最も偉大な者、 イスタリといえども、 例外ではない。 力を追い求める者は、 力によって滅びる。 さあ、 これ以上は時間の無駄だ。
 str_npc6_home_description_2|城壁の向こう側にうごめく、 闇の軍勢の気配を感じるわ・・・ 美しいロスローリエンを襲撃するつもりなの？ それとも谷間の国を？ 私の故郷、緑森？ わからないわ、 でも、 私たちは絶対にやつらの好きにさせてはならない。
-; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc7_home_description_2|もし大軍を率いる幸運に恵まれたら、 ぜひあそこに押し入って山のようなお宝を頂戴したい。
 str_npc8_home_description_2|きれいな花々の香りが漂い、 蜜を収穫するみつばち達が見えます。 私はちょっと失礼して、 部隊で使う薬草をいくらか採ってこようと思います。 すぐに戻ります。
 str_npc9_home_description_2|ウルク＝ハイの大群を率いてるわけでもないのに、 こんなところを歩き回って、 何の意味があるんじゃ。 城壁にいる斥候に、 あいさつでもするのか。
 str_npc10_home_description_2|ナズグールどもはミナス・モルグルで一日中飲んだくれてるらしぜ。へへへ！
@@ -1366,7 +1366,7 @@ str_rohan_rumor_3|ローハン産に勝る馬なんて、この世にいない�
 str_rohan_rumor_4|傷の手当てができるのなら、馬が怪我をしたときも、どうか人間と^同様に扱ってやってくれないか。
 str_rohan_rumor_5|荷馬を8頭用意してくれ、と言われたんだ・・・彼には昨日、^7頭を引き渡したばっかりなんだよ。一体どうなってるんだろうね。
 str_rohan_rumor_6|ゴンドールは頑丈な馬を好む。我らの馬乗りたちは、速い馬が好きだ。^エルフは最高の馬しか買わない。で、敵はそれらの馬を盗むんだ！
-; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superior but require a more experienced rider to handle.
+str_rohan_rumor_7|私はヴァリアグ産や砂漠の馬も見たが、ローハン産の馬のほうがはっきりと優れているね。 ただローハンの馬を乗りこなすには乗り手に高い技術が要求されるんだ。
 str_rohan_rumor_8|ワーグは馬より遅いが、より小回りが利くんだ。それと、よく^飼育された軍馬に比べると、たいぶぜい弱だね。
 str_rohan_rumor_9|ローハンと対戦する軍は、ローハンの騎兵への対抗策としてパイクや^槍で武装しているんだ。裏切り者のサルマンは、この戦争が^終わるまえにはファンゴルンの森を伐採し尽くしてしまうよ。
 str_rohan_rumor_10|この世界で最高の馬乗りになるための第一歩は、まず最高の馬を^育て上げる事から始めるんだ。
@@ -1879,11 +1879,11 @@ str_shortname_region_mordor|モルドールの地
 str_shortname_region_dimrill|おぼろ谷
 str_shortname_region_s_erebor|谷間の国の領域
 str_trait_title_elf_friend|エルフの友
-; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
+str_trait_desc_elf_friend|エルフたちから高い尊敬を受けるようになったあなたは、彼らから信頼のおける友人と考えられています。 エルフの雇用コストが減少します。
 str_trait_title_gondor_friend|執政の祝福
-; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
+str_trait_desc_gondor_friend|執政デネソールから非常な尊敬を受けるあなたの事を、ゴンドールで知らない者はいません。 ゴンドールの兵の雇用コストが減少します。
 str_trait_title_rohan_friend|王の懐刀
-; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
+str_trait_desc_rohan_friend|ローハンのセオデン王から強く信頼されるあなたは、ローハンの民から非常に尊敬されています。 ロヒアリムの兵の雇用コストが減少します。
 str_trait_title_brigand_friend|蛮王
 str_trait_desc_brigand_friend|サウロンに従う蛮人たちは、 闘技場でのあなたの勇猛さを目の当たりにし、 あなたをとても尊敬するようになりました。 蛮人を安く雇用できます。
 str_trait_title_blessed|祝福されし者
@@ -1926,8 +1926,8 @@ str_trait_title_butcher|解体屋
 str_trait_desc_butcher|経験をかさねて磨いた技術によって、 あなたは敵の体からより多くの肉を取り出せるようになりました。 捕虜を一名解体するごとに、 肉をひと塊り多く確保できます。 また、戦闘後により多くの人肉が手に入ります。
 str_trait_title_well_travelled|旅の達人
 str_trait_desc_well_travelled|石を敷き詰めた道と苔むした獣道を歩き、 最も高い山々と険しく深い谷を越え、 あなたは秘境や忘れ去られた不思議の数々を発見してきました。 それらの経験を積んだあなたは、 敵がこちらを発見するよりも早く敵の姿を見つけ、 行軍に最も適した道を見つける事ができます。
-; str_trait_title_bear_shape|Skinchanger
-; str_trait_desc_bear_shape|It is said that men of Beorn's line have the ability to take bear form. Through your kinship with bears you have discovered that you too have that gift.
+str_trait_title_bear_shape|皮をとりかえるひと
+str_trait_desc_bear_shape|ビヨルンの血を受け継ぐ者は、その姿を熊に変える事ができると言われています。 熊の血を持つあなたは、その力を受け継いでいるようです。
 str_wound_head|頭部の怪我
 str_wound_chest|わき腹の怪我
 str_wound_arm|腕の怪我
@@ -2390,7 +2390,7 @@ str_npc20_home_description_2|われらはドワーフどもをはじめとする
 str_npc21_home_description_2|過去の偉大な行いや、尊い犠牲を思い起こすのは、大事な事です。 ローハンとゴンドールの同盟軍は、 再び我々の民を破滅から救うでしょう。
 str_npc22_home_description_2|これは、堕落し、身を滅ぼすというのは、 誰にでも起こりうる事なのだ、 という教訓にしなければならない。 それは最も偉大な者、 イスタリといえども、 例外ではない。 力を追い求める者は、 力によって滅びる。 さあ、 これ以上は時間の無駄だ。
 str_npc23_home_description_2|城壁の向こう側にうごめく、 闇の軍勢の気配を感じるわ・・・ 美しいロスローリエンを襲撃するつもりなの？ それとも谷間の国を？ 私の故郷、緑森？ わからないわ、 でも、 私たちは絶対にやつらの好きにさせてはならない。
-; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc24_home_description_2|もし大軍を率いる幸運に恵まれたら、 ぜひあそこに押し入って山のようなお宝を頂戴したい。
 str_npc25_home_description_2|きれいな花々の香りが漂い、 蜜を収穫するみつばち達が見えます。 私はちょっと失礼して、 部隊で使う薬草をいくらか採ってこようと思います。 すぐに戻ります。
 str_npc26_home_description_2|ウルク＝ハイの大群を率いてるわけでもないのに、 こんなところを歩き回って、 何の意味があるんじゃ。 城壁にいる斥候に、 あいさつでもするのか。
 str_npc27_home_description_2|あれがミナス・モルグルだ。 あそこでナズグールの連中が、 一日中飲んだくれてるんだとさ。 ハハハ！ 
@@ -2501,5 +2501,5 @@ str_imladris_guildmaster_companion_player_ask|賢者殿、人間でもエルフ�
 str_imladris_guildmaster_companion_none|よくご覧になってください、指揮官殿。ここにある北方の大軍団は、 この時代における最大のものです。 もうこの規模の召集が行なわれる事は二度とないでしょう。 ここに来た人間もエルフも、無事に帰ろうなどと考えていません。 我々は最後の素朴な住まいを後にしてやって来たのです。 エリアドールの谷と森から、あなたたちがドゥネダインと呼ぶ、 ヌーナタニがやって来たのです。そして我々のひとりひとりが、 それぞれの任務を与えられています。ですから、 あなたに付いていく者はいないでしょう。無駄な労力を費やさず、 兵舎で兵を募るとよいでしょう。
 str_imladris_guildmaster_companion_player_none_ok|賢者殿、承知した。時間をとって頂き感謝する。
 str_imladris_guildmaster_player_found_ok|賢者殿、承知した。時間をとって頂き感謝する。
-; str_show_keybinds_form|Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
-; str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?
+str_show_keybinds_form|特別なキーの割り当て: ^^陣形ショートカット:^選択した状態の分隊へF1-F4で命令^選択された分隊へF1キーを押したままの状態で移動先を指示。^移動先には敵の分隊を設定する事も可能。^^ 使用武器の切り替え - O ^^ カメラタイプの切り替え - CTRL+END ^^ 檄 - V ^^ 乗馬を呼ぶ - M ^^ 命令の確認/ミニマップ - Backspace
+str_mordor_cungol_guildmaster_companion|ほほう、戦士をお望みとな！あなたにぴったりの者がおりますよ。 あれは親分たちのお気に入りでしてね。 小柄だからってみくびっちゃいけませんよ、とんでもない！ あの調子なら、あの者自身が親分に出世する日もそう遠くない！ 手入れの行き届いた大きな斧をひとつ持たせて、 頼もしいウフサクを前線に立たせてご覧なさい！ 敵どもを一匹残らず恐怖の底に叩き落して回りますよ！ こら、おまえら、黙らんか！笑うのをやめろ！持ち場に戻れ、 このうじ虫どもめ！失礼しました、指揮官殿。あの連中はグズで仕様がなくて。 ウフサクは違いますぞ！指揮官殿、あの者を連れていくと良い。 後悔はしませんよ。命を預けるに足る、信頼できる者です。 ほら、あの見張り塔のてっぺんに立っているでしょう。 なにか風格を感じさせる姿でしょう、ね？
