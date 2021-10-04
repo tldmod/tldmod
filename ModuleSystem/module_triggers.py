@@ -45,7 +45,7 @@ triggers = [
       (try_for_range,":cur_merchant", weapon_merchants_begin, weapon_merchants_end),
         
         #swy-- for every single weapon merchant, blank out the inventory, reset any previous probability tweak to their defaults...
-        #      edit: looks like reset_item_probabilities doesn't accepts any arguments at all?!,
+        #      edit: looks like reset_item_probabilities doesn't accept any arguments at all?!,
         #            just resets them to their default value specified in module_items, maybe misdocumented!
         (reset_item_probabilities, 100),
         (troop_clear_inventory,":cur_merchant"),
@@ -60,10 +60,10 @@ triggers = [
             (troop_set_slot, "trp_skill2item_type", ":aval_slot", 0),
           (try_end),
           
-          ] or []) + [
+        ] or []) + [
         
         #swy-- get his faction and subfaction mask, if any, used to compare against items' faction slot...
-        (store_troop_faction,":faction",":cur_merchant" ),
+        (store_troop_faction,":faction",":cur_merchant"),
         
         (faction_get_slot, ":faction_mask", ":faction",      slot_faction_mask),
         (  troop_get_slot, ":subfaction",   ":cur_merchant", slot_troop_subfaction),
@@ -106,7 +106,7 @@ triggers = [
           (val_and,":item_faction_mask",":faction_mask"),
           
           (try_begin),
-            #swy--> if the item doesn't belongs to our faction, bail out early...
+            #swy--> if the item doesn't belong to our faction, bail out early...
             (eq,":item_faction_mask",0),
             (set_item_probability_in_merchandise, ":item", 0),
 
@@ -180,7 +180,7 @@ triggers = [
               
               (item_get_type, ":cur_item_type", ":item"),
               
-              #swy-- hacky fix to get rid of the tools sold by weapon merchants... don't count goods... we were counting stuff which is not going to appear because doesn't has the merchandise/shop flags?!
+              #swy-- hacky fix to get rid of the tools sold by weapon merchants... don't count goods... we were counting stuff which is not going to appear because doesn't have the merchandise/shop flags?!
               (neq,":cur_item_type", itp_type_goods),
               
               #swy-- select the correct array member by using (curr itp + slot base) and calculate the minimum items to add...
@@ -190,7 +190,7 @@ triggers = [
               (troop_get_slot,":aval_items", "trp_skill2item_type", ":aval_slot"),(val_add,":aval_items", 1),
               (troop_set_slot,               "trp_skill2item_type", ":aval_slot",          ":aval_items"),
               
-              ] or []) + [
+            ] or []) + [
             
           (try_end),
           
@@ -215,7 +215,7 @@ triggers = [
               #swy-- check again that we aren't adding zero items, may cause unexpected bugs, thanks to Marco.
               (gt,":items",0),
               
-              ] or []) + [
+            ] or []) + [
             
             (troop_add_merchandise,":cur_merchant",":itp_type",":items"),
           (try_end),
