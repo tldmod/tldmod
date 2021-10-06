@@ -1013,28 +1013,28 @@ itemsfile version 2
  itm_isen_orc_armor_g Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_g 0  16842765 0 801 174063750 30 95 0 20 9 15 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_a Uruk-hai_Light_Harness Uruk-hai_Light_Harness 1  urukhai_isen_a 0  16842765 0 52 123731968 4 100 0 8 3 0 0 0 0 0 0 0 0
+ itm_isen_uruk_light_a Uruk-hai_Light_Harness Uruk-hai_Light_Harness 3  urukhai_isen_light_harness_b 0  urukhai_isen_light_harness_a 134  urukhai_isen_light_harness_c 167772160  16842765 0 52 174063750 4 90 0 8 3 0 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_b Uruk-hai_Leather_Armor Uruk-hai_Leather_Armor 1  urukhai_isen_b 0  16842765 0 402 123731968 13 90 0 14 6 10 0 0 0 0 0 0 0
+ itm_isen_uruk_light_b Uruk-hai_Fighting_Harness Uruk-hai_Fighting_Harness 3  urukhai_isen_med_harness_b 0  urukhai_isen_med_harness_a 134  urukhai_isen_med_harness_c 167772160  16842765 0 402 174063750 6 91 0 14 6 10 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_c Uruk-hai_Leather_Armor Uruk-hai_Leather_Armor 1  urukhai_isen_c 0  16842765 0 502 123731968 14 90 0 14 9 12 0 0 0 0 0 0 0
+ itm_isen_uruk_light_c Uruk-hai_Berserker_Harness Uruk-hai_Berserker_Harness 3  urukhai_isen_med_harness_b 0  urukhai_isen_med_harness_a 134  urukhai_isen_med_harness_c 167772160  16842765 0 702 174063750 8 95 0 18 9 12 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_d Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_d 0  16842765 0 1302 174063750 27 93 0 23 13 14 0 0 0 0 0 0 0
+ itm_isen_uruk_med_a Uruk-hai_Light_Segmented_Armour Uruk-hai_Light_Segmented_Armour 3  urukhai_isen_med_pad_b 0  urukhai_isen_med_pad_a 134  urukhai_isen_med_pad_c 167772160  16842765 0 1002 174063750 25 92 0 20 12 12 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_e Uruk-hai_Mail_Harness Uruk-hai_Mail_Harness 1  urukhai_isen_e 0  16842765 0 1002 174063750 25 92 0 19 12 12 0 0 0 0 0 0 0
+ itm_isen_uruk_med_b Uruk-hai_Mail Uruk-hai_Mail 3  urukhai_isen_med_mail_b 0  urukhai_isen_med_mail_a 134  urukhai_isen_med_mail_c 167772160  16842765 0 1102 174063750 27 93 0 22 12 14 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_a Uruk-hai_Mail_and_Leather Uruk-hai_Mail_and_Leather 1  urukhai_isen_f 0  16842765 0 1402 174063750 30 94 0 25 12 13 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_a Uruk-hai_Medium_Segmented_Armour Uruk-hai_Medium_Segmented_Armour 3  urukhai_isen_heavy_pad_b 0  urukhai_isen_heavy_pad_a 134  urukhai_isen_heavy_pad_c 167772160  16842765 0 1462 174063750 30 94 0 28 12 16 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_b Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_g 0  16842765 0 1702 174063750 36 95 0 29 12 15 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_b Uruk-hai_Heavy_Mail Uruk-hai_Heavy_Mail 3  urukhai_isen_heavy_mail_b 0  urukhai_isen_heavy_mail_a 134  urukhai_isen_heavy_mail_c 167772160  16842765 0 2102 174063750 36 95 0 32 14 18 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_c Uruk-hai_Heavy_Armor Uruk-hai_Heavy_Armor 1  urukhai_isen_h 0  16842765 0 1902 174063750 37 96 0 29 14 16 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_c Uruk-hai_Full_Segmented_Armour Uruk-hai_Full_Segmented_Armour 3  urukhai_isen_plate_b 0  urukhai_isen_plate_a 134  urukhai_isen_plate_a 167772160  16842765 0 2702 174063750 38 96 0 36 16 21 0 0 0 0 0 0 0
 0
 
  itm_isen_uruk_heavy_d Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_a 0  16842765 0 802 123731968 7 92 0 18 10 10 0 0 0 0 0 0 0
