@@ -414,7 +414,11 @@ items =[
 
 # TLD civilian wear
 #all marked civilian items free Jan 2017, -> itm_white_tunic_a
-["white_tunic_a","Civilian_Outfit",[("gondor_tunic_b",0),("generic_tunic_a",imodbit_day_old),("tld_robe_generic_dress",imodbit_fresh),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),("rohan_dress",imodbit_rough),("dale_coat",imodbit_powerful),("generic_leather_jerkin",imodbit_exquisite),("smith_leather_apron",imodbit_deadly),("rohan_tunic",imodbit_sharp),("dale_tunic",imodbit_well_made),("generic_tunic_c",imodbit_cheap),("gondor_dress_a",imodbit_poor),("gondor_dress_b",imodbit_old),],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(1)|difficulty(0),imodbits_cloth,[]],
+["white_tunic_a","Civilian_Outfit",
+    [("gondor_tunic_b",0),("gondor_dress_a",imodbit_poor),("gondor_dress_b",imodbit_old),("generic_tunic_c",imodbit_cheap),("dale_tunic",imodbit_well_made),("rohan_tunic",imodbit_sharp),
+    ("smith_leather_apron",imodbit_deadly),("generic_leather_jerkin",imodbit_exquisite),("dale_coat",imodbit_powerful),("rohan_dress",imodbit_rough),("tld_robe_generic_dress",imodbit_fresh),
+    ("L_roh_shirt_M1",imodbit_two_day_old),("L_roh_long_shirt_cape_M4",imodbit_smelling),("generic_tunic_a",imodbit_day_old),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),],
+    itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(1)|difficulty(0),imodbits_cloth,[]],
 ["rohan_shoes","Leather_Shoes",[("fi_boot14",imodbits_armor_bad),("narf_rus_shoes",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,50,weight(0.6)|leg_armor(6)|difficulty(0),imodbits_cloth],
 ["furry_boots","Furry_Boots",[("furry_boots",0)],itp_type_foot_armor|itp_shop,0,100,weight(1)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
 ["free_blue_tunic","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],

@@ -415,6 +415,8 @@ itm_wimple_a = (itm_hood_black, imod_smelling)
 itm_wimple_with_veil = (itm_hood_black, imod_rotten)
 itm_fine_hat = (itm_hood_black, imod_large_bag)
 itm_riv_helm_glorfi = (itm_witchking_helmet, imod_rotten)
+itm_rohan_tunic_a = (itm_white_tunic_a, imod_two_day_old)
+itm_rohan_tunic_b = (itm_white_tunic_a, imod_smelling)
 
 #Trolls
 itm_troll_feet = (itm_ent_feet_boots, imod_cracked)
@@ -1243,7 +1245,7 @@ troops = [
    [itm_leather_boots,itm_leather_gloves,itm_short_bow,itm_good_mace,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       0,0,0,0],
 #ROHAN
-["i1_rohan_youth","Rohan_Youth","Rohan_Youths",tf_rohan| tfg_armor| tfg_boots,0,0,fac_rohan,[itm_rohan_recruit_bad, itm_rohan_recruit, itm_rohan_recruit_good, itm_rohan_leather_bad,itm_north_leather_bad,itm_north_leather_ok,itm_rohan_shoes,itm_rohirrim_short_axe,itm_spear,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,itm_saddle_horse,],attr_tier_1,wp_tier_1,knows_common|knows_power_strike_1|knows_athletics_1|knows_riding_2|knows_horse_archery_1|knows_looting_1|knows_tactics_1|knows_pathfinding_1|knows_spotting_1|knows_inventory_management_1|knows_prisoner_management_1|knows_leadership_1|knows_trade_1,rohan_face_younger_1,rohan_face_middle_2],
+["i1_rohan_youth","Rohan_Youth","Rohan_Youths",tf_rohan| tfg_armor| tfg_boots,0,0,fac_rohan,[itm_rohan_recruit_bad, itm_rohan_recruit, itm_rohan_recruit_good, itm_rohan_leather_bad,itm_north_leather_bad,itm_north_leather_ok,itm_rohan_tunic_a,itm_rohan_tunic_b,itm_rohan_shoes,itm_rohirrim_short_axe,itm_spear,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,itm_saddle_horse,],attr_tier_1,wp_tier_1,knows_common|knows_power_strike_1|knows_athletics_1|knows_riding_2|knows_horse_archery_1|knows_looting_1|knows_tactics_1|knows_pathfinding_1|knows_spotting_1|knows_inventory_management_1|knows_prisoner_management_1|knows_leadership_1|knows_trade_1,rohan_face_younger_1,rohan_face_middle_2],
 ["i2_guardsman_of_rohan","Guardsman_of_Rohan","Guardsmen_of_Rohan",tf_rohan| tfg_armor| tfg_boots,0,0,fac_rohan,[itm_rohan_light_helmet_a_bad,itm_rohan_light_helmet_b_bad,itm_rohan_recruit_good, itm_rohan_leather_bad, itm_rohan_leather, itm_rohan_leather_cloak,itm_dale_light_b_bad,itm_north_leather_ok,itm_rohan_shoes,itm_leather_boots_bad,itm_spear,itm_rohan_sword_c,itm_good_mace,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,],attr_tier_2,wp_tier_2,knows_common|knows_ironflesh_2|knows_power_strike_2|knows_shield_1|knows_athletics_1|knows_riding_1|knows_looting_1|knows_tactics_1|knows_pathfinding_1|knows_spotting_1|knows_inventory_management_1|knows_prisoner_management_1|knows_leadership_1|knows_trade_1,rohan_face_young_1,rohan_face_old_2],
 ["i3_footman_of_rohan","Footman_of_Rohan","Footmen_of_Rohan",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,[itm_rohan_light_helmet_b,itm_rohan_light_helmet_a,itm_rohan_leather_good, itm_rohan_leather_cloak,itm_rohan_mail_bad,itm_north_leather_good, itm_rohan_mail,itm_rohan_mail_cloak,itm_dale_light_b_cloak, itm_rohan_light_greaves,itm_leather_boots,itm_rohirrim_short_axe,itm_spear,itm_rohan_sword_c,itm_rohan_shield_a,itm_rohan_shield_b,itm_rohan_shield_c,],attr_tier_3,wp_tier_3,knows_common|knows_athletics_2|knows_shield_2|knows_power_strike_2|knows_ironflesh_1,rohan_face_middle_1,rohan_face_old_2],
 ["i4_veteran_footman_of_rohan","Veteran_Footman_of_Rohan","Veteran_Footmen_of_Rohan",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,[itm_rohan_inf_helmet_b_bad,itm_rohan_mail,itm_rohan_mail_cloak,itm_rohan_mail_cloak, itm_rohan_rider_bad,itm_dale_light_b_lordly,itm_dale_med_a_bad,itm_rohan_light_greaves,itm_rohirrim_short_axe,itm_rohan_spear,itm_rohan_sword_c,itm_rohan_shield_d,itm_rohan_shield_e,itm_rohan_shield_f,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_shield_2|knows_power_strike_3|knows_ironflesh_2,rohan_face_middle_1,rohan_face_old_2],
@@ -1714,10 +1716,10 @@ troops = [
    [itm_hood_black,itm_blue_tunic, itm_white_tunic_a, itm_leather_jerkin, itm_black_tunic, itm_leather_apron, itm_leather_boots,itm_rohan_shoes],
       attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
 ["walker_man_rohan_t","Rohan_Townsman","_",tf_rohan| tfg_boots| tfg_armor,0,0,fac_rohan,
-   [itm_green_tunic, itm_rohan_fine_outfit_dale_dress, itm_white_tunic_a, itm_rohan_recruit, itm_leather_jerkin, itm_black_tunic, itm_leather_apron, itm_leather_boots,itm_rohan_shoes],
+   [itm_green_tunic, itm_rohan_tunic_a,itm_rohan_tunic_b, itm_rohan_fine_outfit_dale_dress, itm_white_tunic_a, itm_rohan_recruit, itm_leather_jerkin, itm_black_tunic, itm_leather_apron, itm_leather_boots,itm_rohan_shoes],
       attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
 ["walker_man_rohan_d","Rohan_Townsman","_",tf_rohan| tfg_boots| tfg_armor,0,0,fac_rohan,
-   [itm_gondor_ranger_hood,itm_green_tunic, itm_rohan_fine_outfit_dale_dress, itm_white_tunic_a, itm_rohan_recruit, itm_leather_jerkin, itm_black_tunic, itm_leather_apron,  itm_rohan_shoes,],
+   [itm_gondor_ranger_hood,itm_green_tunic,itm_rohan_tunic_a,itm_rohan_tunic_b, itm_rohan_fine_outfit_dale_dress, itm_white_tunic_a, itm_rohan_recruit, itm_leather_jerkin, itm_black_tunic, itm_leather_apron,  itm_rohan_shoes,],
       attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
 ["walker_woman_rohan_t","Rohan_Maiden","_",tf_female| tfg_boots| tfg_armor,0,0,fac_rohan,
    [itm_gondor_ranger_hood,itm_robe_generic_dress,itm_green_dress, itm_black_dress,itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,itm_leather_boots],
