@@ -1046,10 +1046,10 @@ itemsfile version 2
  itm_uruk_tracker_boots Uruk_Tracker_Boots Uruk_Tracker_Boots 1  uruk_furboot_lr 0  65550 0 300 123731968 1 100 0 0 12 0 0 0 0 0 0 0 0
 0
 
- itm_uruk_greaves Uruk_Greaves Uruk_Greaves 1  uruk_greave_lr 0  65550 0 500 174063750 4 100 0 0 15 0 0 0 0 0 0 0 0
+ itm_uruk_greaves Uruk_Greaves Uruk_Greaves 1  uruk_light_greave_lr 0  65550 0 800 174063750 8 92 0 0 19 13 0 0 0 0 0 0 0
 0
 
- itm_uruk_chain_greaves Uruk_Chain_Greaves Uruk_Chain_Greaves 1  uruk_chain_greave_lr 0  65550 0 500 174063750 3 100 0 0 15 0 0 0 0 0 0 0 0
+ itm_uruk_chain_greaves Uruk_Chain_Greaves Uruk_Chain_Greaves 1  uruk_greave_lr 0  65550 0 1100 174063750 10 94 0 0 22 15 0 0 0 0 0 0 0
 0
 
  itm_uruk_ragwrap Uruk_Ragwrap Uruk_Ragwrap 1  uruk_ragwrap_lr 0  65550 0 10 174063750 1 100 0 0 3 0 0 0 0 0 0 0 0
@@ -1343,7 +1343,7 @@ itemsfile version 2
  itm_free_m_uruk_heavy_k Uruk_Guard_Armor Uruk_Guard_Armor 1  uruk_mordor_segmented_a 0  16842765 0 2500 704643072 28 100 0 26 12 0 0 0 0 0 0 0 0
 0
 
- itm_m_cap_armor Mordor_Captain_Armor Mordor_Captain_Armor 1  mordor_captain_armor 0  16842765 0 3600 704643072 37 100 0 42 18 20 0 0 0 0 0 0 0
+ itm_m_cap_armor Mordor_Captain_Armor Mordor_Captain_Armor 1  mordor_captain_armor 0  16781325 0 3600 704643072 37 100 0 42 18 20 0 0 0 0 0 0 0
 0
 
  itm_black_num_armor Black_Numenorean_Armor Black_Numenorean_Armor 1  black_numenor_armor 0  16842765 0 3600 704643072 37 97 0 42 18 20 0 0 0 0 0 0 0

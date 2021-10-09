@@ -450,7 +450,7 @@ skins = [
 ########################################################################################################################  
 #6
   ( "urukhai", 0,
-    "urukhai_body", "urukhai_calf_l", "uh_handL",
+    "urukhai_body", "urukhai_calf_l", "orc_hand_new_L",
     "urukhai_head", uruk_face_keys,
     ["uruk_ears01","uruk_ears02","uruk_hair01","uruk_hair02","uruk_hair03","uruk_hair04","uruk_hair05"], 
     ["uruk_teeth01","uruk_teeth02","uruk_teeth03","uruk_teeth04","uruk_teeth05","uruk_teeth06","uruk_teeth07","uruk_teeth08",], #beard meshes
@@ -476,7 +476,7 @@ skins = [
 ########################################################################################################################  
 #7
   ( "uruk", 0,
-    "uruk_body", "uruk_calf_l", "u_handL",
+    "uruk_body", "urukhai_calf_l", "orc_hand_new_L",
     "uruk_head", uruk_face_keys,
     ["uruk_ears01","uruk_ears02","uruk_hair01","uruk_hair02","uruk_hair03","uruk_hair04","uruk_hair05"], 
     ["uruk_teeth01","uruk_teeth02","uruk_teeth03","uruk_teeth04","uruk_teeth05","uruk_teeth06","uruk_teeth07","uruk_teeth08",], #beard meshes
