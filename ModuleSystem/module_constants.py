@@ -104,13 +104,20 @@ region_lorien = 32
 region_anduin_banks = 33
 region_n_mirkwood = 34
 region_s_mirkwood = 35
-region_above_mirkwook = 36
+region_c_mirkwood = 36 #replaces previously unused region
 region_grey_mountains = 37
 region_mordor = 38
 region_dimrill = 39 #InVain
 region_s_erebor = 40 #InVain
-
-
+region_rhun = 41
+region_erebor = 42
+region_celebrant = 43
+region_gladden_fields = 44
+region_w_emyn_muil = 45
+region_s_misty_mountains = 46
+region_n_anduin_vale = 47
+region_s_anduin_vale = 48
+region_cair_andros = 49
 
 slot_item_is_checked              = 0
 slot_item_food_bonus              = 1
@@ -1550,6 +1557,8 @@ tld_siegable_never   = 4  # never siege
 
 str_fullname_region_begin = str_fullname_region_pelennor
 str_shortname_region_begin = str_shortname_region_pelennor
+str_fullname_region_begin_new = str_fullname_region_rhun
+str_shortname_region_begin_new = str_shortname_region_rhun
 
 ###########################################################################################
 # center scenes list, to assign subscenes and npcs to centers

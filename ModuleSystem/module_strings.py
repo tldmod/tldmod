@@ -2749,7 +2749,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("fullname_region_dead_marshes", "the Dead Marshes, the ancient battlefield of the great Battle of Dagor Dagorlad, now a cursed place"), #region_dead_marshes = 22
 
-("fullname_region_isengard", "the plains around Isengard" ),#region_isengard = 23
+("fullname_region_isengard", "Nan Curunir, the vale of Isengard" ),#region_isengard = 23
 
 ("fullname_region_fangorn", "the Fangorn forest, where trees are said to talk." ),#region_fangorn
 
@@ -2757,15 +2757,15 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_dagorlad", "the Dagorlad, the great, treeless, expanse of The Battle Plain, before the gates of Mordor"), # = 26
 ("fullname_region_n_undeep", "the North Undeep, the larger of the two Anduin meanders"), # = 27
 ("fullname_region_s_undeep", "the South Undeep, the lesser of the two large Anduin bends"), # = 28
-("fullname_region_emyn_muil", "Emyn Muil, the rocky hills above the inflow of the Entwash"), # = 29 
+("fullname_region_emyn_muil", "eastern Emyn Muil, the rocky hills beyond Amon Lhaw"), # = 29 
 
-("fullname_region_misty_mountains", "the foothills of Misty Mountains" ),#region_misty_mountains = 30
+("fullname_region_misty_mountains", "the foothills of the northern Misty Mountains" ),#region_misty_mountains = 30
 ("fullname_region_lorien", "Lothlórien, the forest of the Sindar elves, where the golden Mallorns grow" ),#region_lorien = 31
-("fullname_region_anduin_banks", "the valley of Anduin, between Misty Mountains and Mirkwood" ),#region_anduin_banks = 32 (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
+("fullname_region_anduin_banks", "the middle Vale of Anduin, between Carrock and Lorien" ),#region_anduin_banks = 32
 ("fullname_region_n_mirkwood", "the dense forests of northern Mirkwood, home of the Woodelves" ),#region_n_mirkwood = 33
 ("fullname_region_s_mirkwood", "the dense forest of southern Mirkwood, said to be infested by strange creatures" ),#region_s_mirkwood = 34
-("fullname_region_above_mirkwook", "Northen Rhovanion, the area between Mirkwood and the Grey Mountains in the North" ),#region_above_mirkwook = 35  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
-("fullname_region_grey_mountains", "the foothills of Grey Mountains, where Dwarves dwell" ),#region_grey_mountains = 36
+("fullname_region_c_mirkwood", "the dense forest of middle Mirkwood, inhabited by Woodmen" ),#region_c_mirkwood = 35 
+("fullname_region_grey_mountains", "the foothills of the Grey Mountains" ),#region_grey_mountains = 36
 ("fullname_region_mordor", "Mordor, the dark Realm of Sauron" ),#region_mordor = 37
 ("fullname_region_dimrill", "Dimrill Dale, at the feet of the Mountains of Moria" ),#region_Dimrill = 38 InVain
 ("fullname_region_s_rebor", "the realm of Dale, at the feet of the Lonely Mountain" ),#region_s_rebor = 39 InVain
@@ -2803,23 +2803,23 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("shortname_region_dead_marshes", "the Dead Marshes"), #region_dead_marshes = 21
 
-("shortname_region_isengard", "the plains around Isengard" ),#region_isengard = 22
+("shortname_region_isengard", "Nan Curunir" ),#region_isengard = 22
 
 ("shortname_region_fangorn", "Fangorn" ),#region_fangorn
 
 ("shortname_region_brown_lands", "the Brown Lands" ),#region_brown_lands = 25
-("fullname_region_dagorlad", "Dagorlad"), # = 26
-("fullname_region_n_undeep", "the North Undeep"), # = 27
-("fullname_region_s_undeep", "the South Undeep"), # = 28
-("fullname_region_emyn_muil", "Emyn Muil"), # = 29 
+("shortname_region_dagorlad", "Dagorlad"), # = 26
+("shortname_region_n_undeep", "the North Undeep"), # = 27
+("shortname_region_s_undeep", "the South Undeep"), # = 28
+("shortname_region_emyn_muil", "Emyn Muil"), # = 29 
 
-("shortname_region_misty_mountains", "the foothills of Misty Mountains" ),#region_misty_mountains = 30
+("shortname_region_misty_mountains", "the foothills of the northern Misty Mountains" ),#region_misty_mountains = 30
 ("shortname_region_lorien ", "Lorien" ),#region_lorien = 31
-("shortname_region_anduin_banks ", "the valley of Anduin" ),#region_anduin_banks = 32
+("shortname_region_anduin_banks ", "the middle valley of Anduin" ),#region_anduin_banks = 32
 ("shortname_region_n_mirkwood ", "North Mirkwood" ),#region_n_mirkwood = 33
 ("shortname_region_s_mirkwood ", "South Mirkwood" ),#region_s_mirkwood = 34
-("shortname_region_above_mirkwook", "Northen Rhovanion" ),#region_above_mirkwook = 35
-("shortname_region_grey_mountains", "the foothills of Grey Mountains" ),#region_grey_mountains = 36
+("shortname_region_c_mirkwood", "Middle Mirkwood" ),#region_c_mirkwood = 35
+("shortname_region_grey_mountains", "the foothills of the Grey Mountains" ),#region_grey_mountains = 36
 ("shortname_region_mordor", "the Land of Mordor" ),#region_mordor = 37
 ("shortname_region_dimrill", "Dimrill Dale" ),#region_Dimrill = 38 InVain
 ("shortname_region_s_erebor", "the realm of Dale" ),#region_s_erebor = 39 InVain
@@ -3764,4 +3764,33 @@ Even in the last case, the player can make formations up to four lines by orderi
 
 ("gundabad_guildmaster_companion", "There's a troll called Berta you could ask. You can find her in the inner caves. [placeholder]"),
 
+("fullname_region_rhun", "East Rhovanion, on both sides of the river Celduin"),
+("fullname_region_erebor", "the foothills of Erebor, the Lonely Mountain"),
+("fullname_region_celebrant", "the Field of Celebrant, between the rivers Celebrant and Limlight"),
+("fullname_region_gladden_fields", "the Gladden Fields, marshes of the river Gladden"),
+("fullname_region_w_emyn_muil", "western Emyn Muil"),
+("fullname_region_s_misty_mountains", "the foothills of the southern Misty Mountains"),
+("fullname_region_n_anduin_vale", "the northern Vale of Anduin, north of the Carrock"),
+("fullname_region_s_anduin_vale", "the southern Vale of Anduin, between Lorien and the Undeeps"),
+("fullname_region_cair_andros", "Cair Andros, the great ship-like island of Anduin"),
+("fullname_region_stub_1", "unused"),
+("fullname_region_stub_2", "unused"),
+("fullname_region_stub_3", "unused"),
+("fullname_region_stub_4", "unused"),
+("fullname_region_stub_5", "unused"),
+
+("shortname_region_rhun", "East Rhovanion"),
+("shortname_region_erebor", "the foothills of Erebor"),
+("shortname_region_celebrant", "the Field of Celebrant"),
+("shortname_region_gladden_fields", "the Gladden Fields"),
+("shortname_region_w_emyn_muil", "western Emyn Muil"),
+("shortname_region_s_misty_mountains", "the foothills of the Southern Misty Mountains"),
+("shortname_region_n_anduin_vale", "the northern Vale of Anduin"),
+("shortname_region_s_anduin_vale", "the southern Vale of Anduin"),
+("shortname_region_cair_andros", "Cair Andros"),
+("shortname_region_stub_1", "unused"),
+("shortname_region_stub_2", "unused"),
+("shortname_region_stub_3", "unused"),
+("shortname_region_stub_4", "unused"),
+("shortname_region_stub_5", "unused"),
 ]

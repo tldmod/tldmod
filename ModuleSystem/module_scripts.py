@@ -10975,6 +10975,11 @@ scripts = [
 	(try_end),
 
 	(store_add, reg2, str_shortname_region_begin , ":region"),
+      (try_begin),
+        (ge, ":region", region_rhun),
+        (store_sub, reg2, ":region", region_rhun),
+        (val_add, reg2, str_shortname_region_begin_new),
+      (try_end),    
 	(str_store_string,s17,reg2),
 
 	(str_clear, s4),
@@ -11282,7 +11287,7 @@ scripts = [
 		(assign, reg1, region_dead_marshes),
 	(else_try),
 		# ithilien? (north or south)
-		(is_between, ":x", -7084, -5890 ),(is_between, ":y", -2243, 6500), 
+		(is_between, ":x", -7800, -5700 ),(is_between, ":y", -2243, 6500), 
 		(try_begin),(ge,":y",4700),
 		 	(assign, reg1, region_s_ithilien),
 		(else_try),(ge,":y",2460),
@@ -11297,19 +11302,34 @@ scripts = [
 		(assign, reg1, region_s_ithilien),
 	(else_try),
 		# entwash? (delta entwash or wetwand)
-		(position_set_x,pos20,-3710),(position_set_y,pos20,-1570),(position_set_z,pos20,0.0),
-		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",1900),
-		(try_begin),(ge,":x",-3779),
-			(assign, reg1, region_entwash),
-		(else_try),		
+		(position_set_x,pos20,-3800),(position_set_y,pos20,-2000),(position_set_z,pos20,0.0),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",1950),
+		(try_begin),
+            (position_set_x,pos20,-5500),(position_set_y,pos20,-2200),(position_set_z,pos20,0.0),
+            (get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",2200),
 			(assign, reg1, region_wetwang),
+		(else_try),	
+            (this_or_next|eq, ":terrain_type", rt_swamp),
+            (eq, ":terrain_type", rt_snow_forest),
+			(assign, reg1, region_entwash),
 		(try_end),
+        (gt, reg1, 0),
 	(else_try),
 		# lorien forest?
 		(is_between, ":x", -1200, 2910),(is_between, ":y", -14100, -12143), 
 		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
 		(assign, reg1, region_lorien),
 	(else_try),
+		# lorien 2
+        (party_get_position, pos20, "p_town_cerin_dolen"),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",800),
+		(assign, reg1, region_lorien), 
+    (else_try),
+		#pelennor fields?
+		(position_set_x,pos20,-500),(position_set_y,pos20,-13100),(position_set_z,pos20,0),
+		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",700),
+		(assign, reg1, region_lorien), 
+    (else_try),
 		#pelennor fields?
 		(position_set_x,pos20,-5306),(position_set_y,pos20,+2132),(position_set_z,pos20,0),
 		(get_distance_between_positions,":dist",pos1,pos20), (lt,":dist",700),
@@ -11377,13 +11397,21 @@ scripts = [
 		(assign, reg1, region_harrowdale),
 	(else_try),
 		# anorien? between entwash and white mountains
-		(position_set_x,pos20,-4264),(position_set_y,pos20,+1520),(position_set_z,pos20,0),
+		(position_set_x,pos20,-4390),(position_set_y,pos20,+1540),(position_set_z,pos20,0),
 		(get_distance_between_positions, ":dist", pos20, pos1),
-		(le, ":dist", 1956),
+		(le, ":dist", 1950),
 		(assign, reg1, region_anorien),
+        (try_begin),
+            (position_set_x,pos20,-5800),(position_set_y,pos20,+100),(position_set_z,pos20,0),
+            (get_distance_between_positions, ":dist", pos20, pos1),
+            (le, ":dist", 600),
+            (assign, reg1, region_cair_andros),
+        (try_end),
 	(else_try),
 		# around isengard?
-		(is_between, ":x", 4498, 5867),(is_between, ":y",   -6480,    -4680),
+		(position_set_x,pos20,5300),(position_set_y,pos20,-5600),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 1100),
 		(assign, reg1, region_isengard),
 	(else_try),
 		# gap of rohan?
@@ -11391,49 +11419,32 @@ scripts = [
 		(assign, reg1, region_gap_of_rohan),
 	(else_try),
 		# fangorn?
-		(position_set_x,pos20,5105),(position_set_y,pos20,-8512),(position_set_z,pos20,0),
+		(position_set_x,pos20,4650),(position_set_y,pos20,-8550),(position_set_z,pos20,0),
 		(get_distance_between_positions, ":dist", pos20, pos1),
 		(le, ":dist", 3050),
 		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
 		(assign, reg1, region_fangorn),
 	(else_try),
 		# the region_emyn_muil?
-		(position_set_x,pos20,-4593),(position_set_y,pos20,-4645),(position_set_z,pos20,0),
+		(position_set_x,pos20,-4300),(position_set_y,pos20,-5500),(position_set_z,pos20,0),
 		(get_distance_between_positions, ":dist", pos20, pos1),
-		(le, ":dist", 4593-3341),
+		(le, ":dist", 1500),
+        (lt, ":x", -3485),
 		(assign, reg1, region_emyn_muil),
 	(else_try),
-		# the dagorlad?
-		(is_between, ":x",-9371, -3474),(is_between, ":y",-6081 , -2932),
-		(assign, reg1, region_dagorlad),
+        # Western Emyn Muil
+        (position_set_x,pos20,-3350),(position_set_y,pos20,-5650),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 1250),
+        (assign, reg1, region_w_emyn_muil),  
 	(else_try),
-		# the s updeep?
-		(is_between, ":x",-4960, -3400),(is_between, ":y",-9335 , -5270),
-		(assign, reg1, region_s_undeep),
-	(else_try),
-		# the n updeep?
-		(is_between, ":x",-5000, -3400),(is_between, ":y",-10998 , -9022),
-		(assign, reg1, region_n_undeep),
-	(else_try),
-		# the wold?
-		(is_between, ":x", -4190,2307 ),(is_between, ":y",   -9615,  -6514),
-		(assign, reg1, region_the_wold),
-	(else_try),
-		# the brwon_lands?
-		(is_between, ":x", -8005,-3026 ),(is_between, ":y",   -10668,  -5261),
-		(assign, reg1, region_brown_lands),
-	(else_try),
-		# Dimrill Dale?
-		(is_between, ":x", 3380, 5900 ),(is_between, ":y", -15396, -13843), 
-		(assign, reg1, region_dimrill),
-	(else_try),
-		# South of Erebor? (Realm of Dale)
-		(is_between, ":x", -6800, -5558 ),(is_between, ":y", -22800, -21875), 
-		(assign, reg1, region_s_erebor),
+		# East Emnet 1
+		(is_between, ":x", -2700, 800),(is_between, ":y",   -6900,-3100),
+		(assign, reg1, region_east_emnet),        
 	(else_try),
 		# evertything else, in a BIG region, is in rohan... 
-		(is_between, ":x", -3557,5893 ),(is_between, ":y",   -4782,  1057),
-		# pick emnet
+		(is_between, ":x", -3557,5893 ),(is_between, ":y",   -6900,  1057),
+        # pick emnet 
 		(assign, reg1, region_east_emnet),
 		(assign, ":min_dist", 1000000),
 
@@ -11447,7 +11458,56 @@ scripts = [
 				(store_add, reg1, region_harrowdale, ":fief"),
 				(assign, ":min_dist", ":dist"),
 			(try_end),
-		(try_end),
+		(try_end),           
+	(else_try),
+		# the dagorlad?
+		(is_between, ":x",-9371, -3474),(is_between, ":y",-6081 , -2932),
+		(assign, reg1, region_dagorlad),           
+	(else_try),
+		# N Ithilien 2
+		(is_between, ":x",-7800, -4700),(is_between, ":y",-3000 , -200),
+		(assign, reg1, region_n_ithilien),
+	(else_try),
+		# the s updeep?
+        (position_set_x,pos20,-3650),(position_set_y,pos20,-8150),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 450),
+		(assign, reg1, region_s_undeep),
+	(else_try),
+		# the n updeep?
+        (position_set_x,pos20,-3050),(position_set_y,pos20,-9650),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 550),
+		(assign, reg1, region_n_undeep),
+	(else_try),
+		# the wold?
+		(is_between, ":x", -3500,3000 ),(is_between, ":y",   -9800,  -6514),
+		(assign, reg1, region_the_wold),
+	(else_try),
+		# the wold 2
+        (position_set_x,pos20,-3600),(position_set_y,pos20,-8950),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 400),
+		(assign, reg1, region_the_wold),         
+	(else_try),
+		# South of Erebor? (Realm of Dale)
+		(is_between, ":x", -6800, -5558 ),(is_between, ":y", -22800, -21875), 
+		(assign, reg1, region_s_erebor),
+	(else_try),
+        # Erebor foothills
+        (position_set_x,pos20,-6143),(position_set_y,pos20,-23085),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 1100),
+        (assign, reg1, region_erebor),        
+	(else_try),
+        # c Mirkwood
+		(is_between, ":x",  -8100, -1900),(is_between, ":y",   -19800,  -15600),
+		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
+		(assign, reg1, region_c_mirkwood),   
+	(else_try),
+		# c.mirkwood?, road is still mirkwood
+		(is_between, ":x",  -7500,-2000),(is_between, ":y",  -19929,  -18581),
+		(assign, reg1, region_c_mirkwood),        
 	(else_try),
 		# n.mirkwood?
 		(is_between, ":x",  -8041, -28),(is_between, ":y",   -29935,  -19881),
@@ -11455,39 +11515,93 @@ scripts = [
 		(assign, reg1, region_n_mirkwood),
 	(else_try),
 		# s.mirkwood?
-		(is_between, ":x",  -9828,-1943),(is_between, ":y",  -19881,  -11829),
+		(is_between, ":x",  -9828,-1943),(is_between, ":y",  -15600,  -11829),
 		(is_between, ":terrain_type", rt_forest_begin,rt_forest_end),
-		(assign, reg1, region_s_mirkwood),
-	(else_try),
-		# s.mirkwood?, road is still mirkwood
-		(is_between, ":x",  -7500,-2000),(is_between, ":y",  -18581,  -19929),
 		(assign, reg1, region_s_mirkwood),
 	(else_try),
 		# s.mirkwood?, dol gundur is still mirkwood
 		(is_between, ":x", -4595,  -3750),(is_between, ":y",  -13519,  -12885),
-		(assign, reg1, region_s_mirkwood),
+		(assign, reg1, region_s_mirkwood),       
 	(else_try),
-		# near misty mountains... (not working?)
-		(is_between, ":x", 4100, 6000),(is_between, ":y",  -10902, -18090),
-		(assign, reg1, region_misty_mountains),
+		# Rhun/Eastern Rhovanion
+		(lt,  ":x",  -6700),
+		(assign, reg1, region_rhun),
 	(else_try),
-		# near misty mountains., 2nd chance..
-		(is_between, ":x", 1846,6000),(is_between, ":y",  -23809,-17336),
-		(assign, reg1, region_misty_mountains),
+        # grey mts 1
+        (position_set_x,pos20,150),(position_set_y,pos20,-24750),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 1850),
+        (assign, reg1, region_grey_mountains),          
 	(else_try),
-		# near grey mountains, far in the north
-		(lt,  ":y",  -23220),
-		(assign, reg1, region_grey_mountains),
+        # N Anduin Vale 1
+        (position_set_x,pos20,2740),(position_set_y,pos20,-23850),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 1450),
+        (assign, reg1, region_n_anduin_vale),      
 	(else_try),
-		# else, "vague locations": 
-		(is_between, ":x", -3500,3500),(gt, ":y", -13400),
+        # N Anduin Vale 2
+        (position_set_x,pos20,1200),(position_set_y,pos20,-22500),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 1600),
+        (assign, reg1, region_n_anduin_vale),  
+	(else_try),
+        # N Anduin Vale 3
+        (is_between, ":x", -1900, 1800 ),(is_between, ":y", -21900, -19700),
+        (assign, reg1, region_n_anduin_vale), 
+	(else_try),
+		# grey mts 2
+		(is_between, ":x", -12230, -100 ),(is_between, ":y", -32120, -23000),
+		(assign, reg1, region_grey_mountains), 
+ 	(else_try),
+		# n Mirkwood 2 (fill the gaps)
+		(is_between, ":x", -6800, -300 ),(is_between, ":y", -23000, -19800),
+		(assign, reg1, region_n_mirkwood),        
+	(else_try),
+        # Souther Misty Mts, south of Moria
+        (position_set_x,pos20,4850),(position_set_y,pos20,-11950),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 2500),
+        (assign, reg1, region_s_misty_mountains),           
+	(else_try),
+		# Dimrill Dale?
+		(is_between, ":x", 3380, 5900 ),(is_between, ":y", -15396, -13843), 
+		(assign, reg1, region_dimrill),
+	(else_try),
+		# N Misty Mountains
+		(is_between, ":x", 1800,6000),(is_between, ":y",  -23809,-13400),
+		(assign, reg1, region_misty_mountains),             
+	(else_try),
+        # Gladden fields
+        (position_set_x,pos20,-140),(position_set_y,pos20,-15500),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+        (ge, ":x", -570),
+		(le, ":dist", 1250),
+        (assign, reg1, region_gladden_fields),           
+	(else_try),
+		(is_between, ":x", -5800,1800),(is_between, ":y",  -19800,-13200),
 		(assign, reg1, region_anduin_banks),
 	(else_try),
-		(is_between, ":x", -3900,1800),
-		(assign, reg1, region_anduin_banks),
-	(else_try),	#doesn't show up
-		(lt, ":x", 0),(lt,  ":y",  -23662),
-		(assign, reg1, region_above_mirkwook),
+        # S Anduin Vale
+        (position_set_x,pos20,-3200),(position_set_y,pos20,-12800),(position_set_z,pos20,0),
+		(get_distance_between_positions, ":dist", pos20, pos1),
+		(le, ":dist", 2100),
+        (assign, reg1, region_s_anduin_vale), 
+        (try_begin),
+            # where anduin vale and brown lands overlap, check terrain type
+            (is_between, ":x", -8005,-2900 ),(is_between, ":y",   -11900,  -5200),
+            (this_or_next|eq, ":terrain_type", rt_steppe),
+            (eq, ":terrain_type", rt_desert),
+            (assign, reg1, region_brown_lands),   
+        (try_end),
+	(else_try),
+		# the brown_lands?
+		(is_between, ":x", -8005,-2900 ),(is_between, ":y",   -11900,  -5200),
+		(assign, reg1, region_brown_lands),             
+	(else_try),
+		# Celebrant
+		(is_between, ":x", -2900,3100),
+        (is_between, ":y",  -13200,-9800),
+		(assign, reg1, region_celebrant),        
 	(try_end),
 ]),
 
@@ -23552,7 +23666,7 @@ command_cursor_scripts = [
 
 	## Mirkwood Region
 	    (else_try),
-	    	(is_between, ":region", region_n_mirkwood, region_above_mirkwook),
+	    	(is_between, ":region", region_n_mirkwood, region_c_mirkwood),
 	    		(store_random_in_range, ":town", 0,3),
 	        	(try_begin),
 	        		(eq, ":town", 0),
@@ -23572,7 +23686,7 @@ command_cursor_scripts = [
 
 	## North Region
 	    (else_try),
-	    	(is_between, ":region", region_above_mirkwook, region_grey_mountains),
+	    	(is_between, ":region", region_c_mirkwood, region_grey_mountains),
 	    	(store_random_in_range, ":town", 0,4),
 	    		(try_begin),
 	        		(eq, ":town", 0),
@@ -23680,7 +23794,7 @@ command_cursor_scripts = [
 
 	## Mirkwood Region
 	    (else_try),
-	    	(is_between, ":region", region_n_mirkwood, region_above_mirkwook),
+	    	(is_between, ":region", region_n_mirkwood, region_c_mirkwood),
 	    		(store_random_in_range, ":town", 0,3),
 	        	(try_begin),
 	        		(eq, ":town", 0),
@@ -23700,7 +23814,7 @@ command_cursor_scripts = [
 
 	## North
 	    (else_try),
-	    	(is_between, ":region", region_above_mirkwook, region_grey_mountains),
+	    	(is_between, ":region", region_c_mirkwood, region_grey_mountains),
 	    	(store_random_in_range, ":town", 0,4),
 	    		(try_begin),
 	        		(eq, ":town", 0),
@@ -26500,6 +26614,11 @@ command_cursor_scripts = [
       	(call_script, "script_get_region_of_party", ":party_no"),
       	(assign, ":region", reg1),
       	(store_add, reg2, str_shortname_region_begin , ":region"),
+        (try_begin),
+            (ge, ":region", region_rhun),
+            (store_sub, reg2, ":region", region_rhun),
+            (val_add, reg2, str_shortname_region_begin_new),
+        (try_end),
         (str_store_string,s5,reg2),
         (str_store_string, s1, "@{s2} {reg3?was:is around {s5}."),
         (assign, ":found", 1),

@@ -1986,8 +1986,8 @@ game_menus = [
    "none",
 	[ (assign, "$g_player_icon_state", pis_normal),
 	  (call_script,"script_maybe_relocate_player_from_z0"),
-	  #(party_get_current_terrain, reg78,"p_main_party"),
-	  #(display_message, "@current terrain: {reg78}"),
+	  # (party_get_current_terrain, reg78,"p_main_party"),
+	  # (display_message, "@current terrain: {reg78}"),
 
 	  #(assign, reg0, "$current_player_landmark",), (display_message, "@DEBUG: LANDMARK ID {reg0}"),
 	  
@@ -1998,6 +1998,11 @@ game_menus = [
 	  (try_end),
 	  
 	  (store_add, reg2, "$current_player_region", str_fullname_region_begin),
+      (try_begin),
+        (ge, "$current_player_region", region_rhun),
+        (store_sub, reg2, "$current_player_region", region_rhun),
+        (val_add, reg2, str_fullname_region_begin_new),
+      (try_end),
 	  (str_store_string,s1,reg2),
 	  (set_background_mesh, "mesh_ui_default_menu_window"),
     ],[
@@ -10642,7 +10647,7 @@ game_menus = [
 				(is_between, "$current_player_region", region_pelennor, region_harrowdale),
 				(assign, ":village_scene", "scn_village_gondor"),
 			(else_try),
-				(is_between, "$current_player_region", region_misty_mountains, region_above_mirkwook),
+				(is_between, "$current_player_region", region_misty_mountains, region_c_mirkwood),
 				(assign, ":village_scene", "scn_village_anduin"),
 			(else_try), #InVain - just use the northern village as default
 				(assign, ":village_scene", "scn_village_north"),
@@ -10710,10 +10715,10 @@ game_menus = [
 				(is_between, "$current_player_region", region_pelennor, region_harrowdale),
 				(assign, ":village_scene", "scn_village_gondor"),
 			(else_try),
-				(is_between, "$current_player_region", region_misty_mountains, region_above_mirkwook),
+				(is_between, "$current_player_region", region_misty_mountains, region_c_mirkwood),
 				(assign, ":village_scene", "scn_village_anduin"),
 			(else_try), #InVain - just use the northern village as default
-				#(this_or_next|eq, "$current_player_region", region_above_mirkwook),
+				#(this_or_next|eq, "$current_player_region", region_c_mirkwood),
 				#(			  eq, "$current_player_region", region_grey_mountains),
 				(assign, ":village_scene", "scn_village_north"),
 	 #Randomize Scene
@@ -10901,7 +10906,7 @@ game_menus = [
 		 	(else_try),
 			
 			## Get Region of Scout Camp
-				(is_between, "$current_player_region", region_n_mirkwood, region_above_mirkwook),
+				(is_between, "$current_player_region", region_n_mirkwood, region_c_mirkwood),
 
 
 			## Get Side of Player to check which scout camp to spawn 	
