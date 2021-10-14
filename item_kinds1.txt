@@ -204,7 +204,7 @@ itemsfile version 2
  itm_wargarmored_3a Armored_Warg Armored_Warg 1  wargArmored_3A 0  65537 0 2500 84825866240 0 100 0 35 0 5 130 60 33 95 0 45 0
 0
 
- itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  4097 0 3000 16106389504 0 100 0 45 0 5 180 62 35 0 0 62 0
+ itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  1 0 3000 16106389504 0 100 0 45 0 5 180 62 35 0 0 62 0
 0
 
  itm_animal_big Big_Animal Big_Animal 8  bry_cow_a 0  bry_cow_b 2  bry_cow_c 4  bry_cow_d 8  CWE_cow_mod_a 16  bry_wild_donkey 2199023255552  spak_yak1 1099511627776  spak_yak2 4398046511104  18014398509481984 0 10 16106389504 0 10 0 0 0 10 25 5 5 90 0 0 0
@@ -2682,7 +2682,7 @@ itemsfile version 2
  itm_dwarf_great_axe_reward Dwarf_Sharp_Axe Dwarf_Sharp_Axe 2  dwarf_great_axe_2 0  dwarf_great_axe_2_dain 2199023255552  279514976260 9223635923965575392 700 0 6 100 0 0 0 18 56320 90 0 110 0 256 311
 0
 
- itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_h 0  16781325 0 2802 0 38 96 2 38 15 18 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_heavy_mail_c 0  16781325 0 2802 0 38 96 2 38 15 18 0 0 0 0 0 0 0
 0
 
  itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  4198408 2952794112 3000 0 1.5 100 0 0 93 5 0 96 54 0 0 277 0
