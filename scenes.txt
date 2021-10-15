@@ -1,5 +1,5 @@
 scenesfile version 1
- 430
+ 441
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -880,23 +880,23 @@ scn_forest_lorien5 forest_lorien5 256 none none 0 0 90 90 -0.5 0x000000013c60280
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood1_small forest_mirkwood1_small 256 none none 0 0 100 100 -100 0x00000000b002c90d0002308c00005a8f0000786900001ef5 
+scn_forest_mirkwood_small1 forest_mirkwood_small1 256 none none 0 0 100 100 -100 0x00000000b002c90d0002308c00005a8f0000786900001ef5 
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood2_small forest_mirkwood2_small 256 none none 0 0 100 100 -100 0x00000000b002c90d0002308c000010a90000786900001ef5 
+scn_forest_mirkwood_small2 forest_mirkwood_small2 256 none none 0 0 100 100 -100 0x00000000b002c90d0002308c000010a90000786900001ef5 
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood3_small forest_mirkwood3_small 256 none none 0 0 100 100 -100 0x00000000b002c90d0002308c000010a90000786900001ef5 
+scn_forest_mirkwood_small3 forest_mirkwood_small3 256 none none 0 0 100 100 -100 0x00000000b002c90d0002308c000010a90000786900001ef5 
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood4_small forest_mirkwood4_small 256 none none 0 0 100 100 -100 0x00000000b142c90d0002308c000010a90000786900001ef5 
+scn_forest_mirkwood_small4 forest_mirkwood_small4 256 none none 0 0 100 100 -100 0x00000000b142c90d0002308c000010a90000786900001ef5 
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood5_small forest_mirkwood5_small 256 none none 0 0 100 100 -100 0x00000000b002c90d0002308c00005c5a0000786900001ef5 
+scn_forest_mirkwood_small5 forest_mirkwood_small5 256 none none 0 0 100 100 -100 0x00000000b002c90d0002308c00005c5a0000786900001ef5 
   0 
   0 
  outer_terrain_forest 
@@ -1311,11 +1311,11 @@ scn_morannon_outside_2 morannon_outside_2 4352 none none 0 0 100 100 -100 0x0000
 scn_dolguldur_outside_1 dolguldur_outside_1 4352 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
   0 
   0 
- New_outer_mountains2east_mordor 
+ outer_terrain_forest 
 scn_dolguldur_outside_2 dolguldur_outside_2 4352 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
   0 
   0 
- New_outer_mountains2east_mordor 
+ outer_terrain_forest 
 scn_beorn_outside_1 beorn_outside_1 256 none none 0 0 100 100 -100 0x00000000b062c90d0005a96a000075f30000786900001ef5 
   0 
   0 
@@ -1648,11 +1648,27 @@ scn_advcamp_rhun_siege advcamp_rhun_siege 256 none none 0 0 200 200 -0.5 0x00000
   0 
   0 
  outer_terrain_rohan 
+scn_forest_mirkwood0 forest_mirkwood0 4352 none none 0 0 100 100 -100 0x0000000145d10f8000058d6600007add0000751200007a86 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_mirkwood0b forest_mirkwood0b 4352 none none 0 0 100 100 -100 0x00000001b0110f8080058d6600007add80000ff000007a86 
+  0 
+  0 
+ outer_terrain_forest 
 scn_forest_mirkwood1 forest_mirkwood1 4352 none none 0 0 100 100 -100 0x00000001b01918d980058d66000023ad0000751200006b67 
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood2 forest_mirkwood2 4352 none none 0 0 100 100 -100 0x00000001b0190c8080058d66000023ad0000047f0000292a 
+scn_forest_mirkwood1b forest_mirkwood1b 4352 none none 0 0 100 100 -100 0x00000001401918d980058d66000023ad0000751200006b67 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_mirkwood2 forest_mirkwood2 4352 none none 0 0 100 100 -100 0x0000000140190c8000058d66000023ad0000047f0000292a 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_mirkwood2b forest_mirkwood2b 4352 none none 0 0 100 100 -100 0x00000001b0190c8080058d66000023ad0000047f0000292a 
   0 
   0 
  outer_terrain_forest 
@@ -1660,7 +1676,15 @@ scn_forest_mirkwood3 forest_mirkwood3 4352 none none 0 0 100 100 -100 0x00000001
   0 
   0 
  outer_terrain_forest 
+scn_forest_mirkwood3b forest_mirkwood3b 4352 none none 0 0 100 100 -100 0x000000014019135980058d66000023ad80004b1a00005298 
+  0 
+  0 
+ outer_terrain_forest 
 scn_forest_mirkwood4 forest_mirkwood4 4352 none none 0 0 100 100 -100 0x00000001b119134800058d66000023ad000035de0000292a 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_mirkwood4b forest_mirkwood4b 4352 none none 0 0 100 100 -100 0x000000014019134800058d66000023ad0000254b0000292a 
   0 
   0 
  outer_terrain_forest 
@@ -1672,19 +1696,39 @@ scn_forest_mirkwood6 forest_mirkwood6 4352 none none 0 0 100 100 -100 0x00000001
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood7 forest_mirkwood7 4352 none none 0 0 100 100 -100 0x0000000145d10f8000058d6600007add0000751200007a86 
+scn_forest_mirkwood6b forest_mirkwood6b 4352 none none 0 0 100 100 -100 0x00000001b016d18080058d6600007c11800030cf00002ad0 
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood8 forest_mirkwood8 4352 none none 0 0 100 100 -100 0x000000014019056300058d66000037c60000416c0000385d 
+scn_forest_mirkwood7 forest_mirkwood7 4352 none none 0 0 100 100 -100 0x000000014019056300058d66000037c60000416c0000385d 
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood9 forest_mirkwood9 4352 none none 0 0 100 100 -100 0x00000001b119134800058d66000023ad000035de0000292a 
+scn_forest_mirkwood8 forest_mirkwood8 4352 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood10 forest_mirkwood10 4352 none none 0 0 100 100 -100 0x00000001490b56cb00058d66000023ad0000751200006218 
+scn_forest_mirkwood9 forest_mirkwood9 4352 none none 0 0 100 100 -100 0x00000001401917000004e93c00002d3e000077bd00004d24 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_mirkwood_b5 forest_mirkwood_b5 4352 none none 0 0 100 100 -100 0x00000001490b56cb00058d66000023ad0000751200006218 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_mirkwood_b6 forest_mirkwood_b6 4352 none none 0 0 100 100 -100 0x00000001490b56cb00058d66000023ad0000751200006218 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_mirkwood_b7 forest_mirkwood_b7 4352 none none 0 0 100 100 -100 0x000000014019056300058d66000037c60000416c0000385d 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_mirkwood_b8 forest_mirkwood_b8 4352 none none 0 0 100 100 -100 0x00000001401917008004e93c000050338000345b00004d24 
+  0 
+  0 
+ outer_terrain_forest 
+scn_forest_mirkwood_b9 forest_mirkwood_b9 4352 none none 0 0 100 100 -100 0x00000001401917000004e93c00002d3e000077bd00004d24 
   0 
   0 
  outer_terrain_forest 

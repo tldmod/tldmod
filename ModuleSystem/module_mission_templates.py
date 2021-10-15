@@ -1125,7 +1125,7 @@ tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
       (this_or_next|eq,  ":cur_scene", "scn_fangorn"),
       (this_or_next|eq,  ":cur_scene", "scn_mirkwood"),
       
-      (this_or_next|is_between,  ":cur_scene", "scn_forest_mirkwood1", scn_forest_mirkwood10+1),
+      (this_or_next|is_between,  ":cur_scene", "scn_forest_mirkwood1", scn_forest_mirkwood9+1),
       
       (this_or_next|eq,  ":cur_scene", "scn_moria_castle"),
       (this_or_next|eq,  ":cur_scene", "scn_moria_secret_entry"),
