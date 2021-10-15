@@ -84,9 +84,9 @@ parties = [
 # Mordor towns
     ("town_morannon","Morannon",              icon_morannon   |pf_tld_down,  no_menu, pt_none, fac_mordor,0,ai_bhvr_hold,0,(-78.9,-34.2),[],170),
     ("town_minas_morgul","Minas_Morgul",      icon_minasmorgul|pf_tld_down,  no_menu, pt_none, fac_mordor,0,ai_bhvr_hold,0,(-72.3,23.8),[],170),
-    ("town_cirith_ungol","Orc_Patrol_Camp",   icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_mordor,0,ai_bhvr_hold,0,(-50.1,-45.3),[],170),
+    ("town_cirith_ungol","Emyn-Muil_Watchtower",   icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_mordor,0,ai_bhvr_hold,0,(-50.1,-45.3),[],170),
     ("town_east_osgiliath","East_Osgiliath",icon_east_osgilliath|pf_tld_down,no_menu, pt_none, fac_mordor,0,ai_bhvr_hold,0,(-62.2,20.6),[],0),
-    ("town_orc_sentry_camp","Orc_Sentry_Camp",icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_mordor,0,ai_bhvr_hold,0,(-56.4,30.4),[],170),
+    ("town_orc_sentry_camp","Emyn_Arnen_Sentry",icon_orctower   |pf_tld_down,  no_menu, pt_none, fac_mordor,0,ai_bhvr_hold,0,(-56.4,30.4),[],170),
 # Isengard towns
     ("town_isengard","Isengard",                   icon_isengard|pf_tld_down, no_menu, pt_none, fac_isengard,0,ai_bhvr_hold,0,(52.8,-57.7),[],170),
     ("town_urukhai_outpost","Uruk_Hai_Outpost",    icon_orctower|pf_tld_down, no_menu, pt_none, fac_isengard,0,ai_bhvr_hold,0,(23.7,-52.4),[],170),
@@ -98,7 +98,7 @@ parties = [
     ("town_cerin_amroth"  ,"Cerin_Amroth",  icon_tree  |pf_tld_down, no_menu, pt_none, fac_lorien,0,ai_bhvr_hold,0,(  5.7,-134.3),[],170),
 # Woodelves towns
     ("town_thranduils_halls","Thranduil's_Halls",icon_thranduil|pf_tld_down, no_menu, pt_none, fac_woodelf,0,ai_bhvr_hold,0,(-30.8,-223.0),[],170),
-    ("town_woodelf_camp"     ,"Woodelf_Camp",        icon_tree |pf_tld_down, no_menu, pt_none, fac_woodelf,0,ai_bhvr_hold,0,(-42.3,-155.1),[],170),
+    ("town_woodelf_camp"     ,"Woodelf_South_Camp",        icon_tree |pf_tld_down, no_menu, pt_none, fac_woodelf,0,ai_bhvr_hold,0,(-42.3,-155.1),[],170),
     ("town_woodelf_west_camp","Woodelf_West_Camp",   icon_tree |pf_tld_down, no_menu, pt_none, fac_woodelf,0,ai_bhvr_hold,0,( -6.2,-215.4),[],170),
 # Woodmen and Beorning towns   
     ("town_woodsmen_village","Woodsmen_Village", icon_village_a    |pf_tld_down, no_menu, pt_none, fac_beorn,0,ai_bhvr_hold,0,(-35.4,-175.1),[],170),
@@ -122,15 +122,15 @@ parties = [
     ("town_imladris_camp","Rivendell_Camp",icon_camp       |pf_tld_down, no_menu, pt_none, fac_imladris,0,ai_bhvr_hold,0,(21.5,-145.1),[],170),
 # Dol Guldur towns
     ("town_dol_guldur","Dol_Guldur",       icon_dolguldur  |pf_tld_down,   no_menu, pt_none, fac_guldur,0,ai_bhvr_hold,0,(-41.3,-131.1),[],170),
-    ("town_dol_guldur_north_outpost","Dol_Guldur North Outpost",  icon_orctower  |pf_tld_down,   no_menu, pt_none, fac_guldur,0,ai_bhvr_hold,0,(-46.6,-188.0),[],170),
+    ("town_dol_guldur_north_outpost","Dol_Guldur_Road_Outpost",  icon_orctower  |pf_tld_down,   no_menu, pt_none, fac_guldur,0,ai_bhvr_hold,0,(-46.6,-188.0),[],170),
 # Rhun towns
     ("town_rhun_main_camp","Main_Rhun_Camp",     icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-71.2,-223.1),[],170),
     ("town_rhun_south_camp","Rhun_Southern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-73.02,-189.9),[],170),
     ("town_rhun_north_camp","Rhun_Northern Outpost",  icon_nomadcamp  |pf_tld_down, no_menu, pt_none, fac_rhun,0,ai_bhvr_hold,0,(-68.63,-236.87),[],170),
 # Gundabad towns
     ("town_gundabad"            ,"Gundabad",                 icon_moria   |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(35.7,-241.5),[],165),
-    ("town_gundabad_ne_outpost" ,"Gundabad_NE_Outpost",      icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-25.1,-246.1),[],120),
-    ("town_gundabad_nw_outpost" ,"Gundabad_NW_Outpost",      icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-4.2,-243.6),[],270),
+    ("town_gundabad_ne_outpost" ,"Grey Mountains Hold",      icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-25.1,-246.1),[],120),
+    ("town_gundabad_nw_outpost" ,"Grey Mountains Ravine",      icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-4.2,-243.6),[],270),
     ("town_goblin_north_outpost","Goblin Town",  			 icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(26.33,-194.48),[],10),
     ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(22.1,-211.2),[],10),				#(18.9,-194.8),[],140),
     ("town_gundabad_m_outpost"  ,"Gundabad_Mirkwood_Outpost",icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-13.9,-224.0),[],170),
