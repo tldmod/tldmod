@@ -1969,8 +1969,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    #Rafa: Savegame version
-    (assign,"$savegame_version", 20),
+    (assign,"$savegame_version", 22),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -24802,6 +24801,14 @@ command_cursor_scripts = [
         (assign, "$savegame_version", 21),
 	(try_end),	
 
+    (try_begin), #InVain - 16 Oct 2021, add missing 
+        (le, "$savegame_version", 21),	
+        (troop_set_slot, "trp_elder_uhcamp", slot_troop_gm_companion_1, "str_isengard_hunting_camp_guildmaster_companion"),
+        (troop_set_slot, "trp_elder_uhcamp", slot_troop_gm_companion_player_found, "str_isengard_hunting_camp_guildmaster_player_found_ok"),
+        (party_set_slot, "p_town_urukhai_h_camp", slot_party_has_companion, 1),
+        (assign, "$savegame_version", 22),
+	(try_end),	
+
 ]),
 
 #Kham
@@ -26861,8 +26868,11 @@ command_cursor_scripts = [
 	(try_end),
 
 	(troop_set_slot, "trp_elder_isengard", slot_troop_gm_companion_1, "str_isengard_main_guildmaster_companion"),
+    (troop_set_slot, "trp_elder_uhcamp", slot_troop_gm_companion_1, "str_isengard_hunting_camp_guildmaster_companion"),
+    (troop_set_slot, "trp_elder_uhcamp", slot_troop_gm_companion_player_found, "str_isengard_hunting_camp_guildmaster_player_found_ok"),
 
 	(party_set_slot, "p_town_isengard", slot_party_has_companion, 1),
+    (party_set_slot, "p_town_urukhai_h_camp", slot_party_has_companion, 1),
 
 	# dunland
 	(try_for_range, ":dunland_guildmasters", mayors_begin, mayors_end),

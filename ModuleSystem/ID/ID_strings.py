@@ -2724,5 +2724,6 @@ str_shortname_region_stub_2 = 2722
 str_shortname_region_stub_3 = 2723
 str_shortname_region_stub_4 = 2724
 str_shortname_region_stub_5 = 2725
+str_isengard_hunting_camp_guildmaster_player_found_ok = 2726
 
 
