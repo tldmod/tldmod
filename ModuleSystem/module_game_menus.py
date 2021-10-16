@@ -2007,7 +2007,8 @@ game_menus = [
 	  (set_background_mesh, "mesh_ui_default_menu_window"),
     ],[
 		("camp_scene"      ,[],"Walk around."  ,[
-			(assign, "$number_of_combatants", 1), # use a scene as if a battle with one combatant...
+			(assign, "$number_of_combatants", 100), # use a big scene
+            (assign, "$enemy_count1", 100), # use a big scene
 			(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
 			#    (jump_to_scene, "scn_camp_scene"),
 			(change_screen_mission)]),
@@ -2020,7 +2021,8 @@ game_menus = [
 		    (this_or_next|gt,reg10,0),(gt,reg11,0),
 			(store_mul, reg12, reg10,reg11),
 		],"Review{reg10?_troops:}{reg12?_and:}{reg11?_prisoners:}."  ,[
-			(assign, "$number_of_combatants", 1), # use a scene as if a battle with one combatant...
+			(assign, "$number_of_combatants", 100), # use a big scene
+            (assign, "$enemy_count1", 100), # use a big scene
 			(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
 			#    (jump_to_scene, "scn_camp_scene"),
 			(set_jump_mission,"mt_review_troops"),
