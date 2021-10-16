@@ -17,7 +17,7 @@ ga_grass_snow 7155432558592 5
  PL_wi_bush2b  0
  PW_grass_b_xx  0
  PW_grass_e_xx  0
-ga_grass_desert 8641491247136 4
+ga_grass_desert 8641491238944 4
  PW_grass_e_xx  0
  PW_grass_yellow_b_xx  0
  PW_grass_yellow_b_xx  0
@@ -25,10 +25,10 @@ ga_grass_desert 8641491247136 4
 grass_bush 429497650236 2
  PW_grass_bush_a_xx  0
  PW_grass_bush_b_xx  0
-grass_saz 850404575236 2
+grass_saz 850404574212 2
  PW_grass_bush_c_xx  0
  PW_grass_bush_c_xx  0
-grass_purple 2147484174340 2
+grass_purple 2147484173316 2
  PW_grass_bush_e_xx  0
  PW_grass_bush_e_xx  0
 fern 3865471352848 2
@@ -65,9 +65,9 @@ thorn_a 214748632076 4
  PW_thorn_b  0
  PW_thorn_c  0
  PW_thorn_d  0
-basak 300647721000 1
+basak 300647712808 1
  PW_basak_xx  0
-common_plant 300647721000 1
+common_plant 300647712808 1
  PW_common_plant_xx  0
 small_plant 214748632064 1
  PL_wi_bush1  0
@@ -90,15 +90,15 @@ zl_yellow_flowers 8590196736 3
  PW_spiky_plant  0
 blue_flower 128849019908 1
  PW_blue_flower_xx  0
-bushes02_a 42949680128 3
+bushes02_a 42949677056 3
  PW_bushes02_a  bo_pw_bushes02_a_new
  PW_bushes02_b  bo_pw_bushes02_a_new
  PW_bushes02_c  bo_pw_bushes02_a_new
-bushes03_a 231928243240 3
+bushes03_a 231928235048 3
  PW_bushes03_a_xx  0
  PW_bushes03_b_xx  0
  PW_bushes03_c_xx  0
-bushes04_a 438086679596 3
+bushes04_a 438086671404 3
  PW_bushes04_a_xx  0
  PW_bushes04_b_xx  0
  PW_bushes04_c_xx  0
@@ -108,11 +108,11 @@ ga_bushes04_a_snow 429496729600 3
  PW_bushes04_c_xx  0
 bushes05_a 300647712808 1
  PW_bushes05_a_xx  0
-bushes06_a 438086679596 3
+bushes06_a 438086671404 3
  PW_bushes06_a_xx  0
  PW_bushes06_b_xx  0
  PW_bushes06_c_xx  0
-bushes07_a 438086673440 3
+bushes07_a 438086665248 3
  PW_bushes07_a_xx  0
  PW_bushes07_b_xx  0
  PW_bushes07_c_xx  0
@@ -124,11 +124,11 @@ zl_bush_08 51539611648 3
  PW_bushes08_a_xx  0
  PW_bushes08_b_xx  0
  PW_bushes08_c_xx  0
-bushes09_a 438086674464 3
+bushes09_a 438086666272 3
  PW_bushes09_a  0
  PW_bushes09_b  0
  PW_bushes09_c  0
-zl_fir_bush 42949681192 3
+zl_fir_bush 42949673000 3
  PW_bushes09_a  0
  PW_bushes09_b  0
  PW_bushes09_c  0
@@ -140,7 +140,7 @@ zl_birch_green_bush 0 3
  PW_bushes10_a  0
  PW_bushes10_b  0
  PW_bushes10_c  0
-bushes11_a 300647720968 3
+bushes11_a 300647712776 3
  PW_bushes11_a  0
  PW_bushes11_b  0
  PW_bushes11_c  0
@@ -156,23 +156,32 @@ zl_bush_steppe_wheat 0 3
  PW_bushes12_a_xx  0
  PW_bushes12_b_xx  0
  PW_bushes12_c_xx  0
-pw_gray_bush 42953936928 2
+pw_gray_bush 42953945120 2
  PW_tree_3_a_gray  0
  0 0
  PW_tree_3_b_gray  0
  0 0
-pw_snow_bushes 34359742464 3
+pw_snow_bushes 34363944960 3
  PW_tree_3_a_brown  0
+ 0 0
  PW_tree_3_b_brown  0
+ 0 0
  PW_tree_19_a  0
-ga_tree_3_a_brown 34359750688 3
+ 0 0
+ga_tree_3_a_brown 34363944992 3
  PW_tree_3_a_brown  0
+ 0 0
  PW_tree_3_b_brown  0
+ 0 0
  PW_tree_19_a  0
-pw_ground_thorn 51539611648 3
+ 0 0
+pw_ground_thorn 51543814144 3
  PW_tree_9_a_xx  0
+ 0 0
  PW_tree_9_a_xx  0
+ 0 0
  PW_tree_9_a_xx  0
+ 0 0
 pw_small_rock_group 94491715624 3
  PW_small_rock_group_a  0
  PW_small_rock_group_b  0
@@ -180,7 +189,7 @@ pw_small_rock_group 94491715624 3
 rock_mossy_cluster_zf 128849018880 2
  zf_rock_cluster_1  bo_zf_rock_cluster_1
  zf_rock_cluster_2  bo_zf_rock_cluster_2
-small_rock 17184066568 2
+small_rock 17184074760 2
  PW_rock_a  bo_PW_rock_a
  0 0
  PW_rock_b  bo_PW_rock_b
@@ -217,33 +226,37 @@ rock_mossy_flagstones_zf 4194304 5
 rock_snowy2 4194304 1
  PW_tree_snowy_b  bo_pw_tree_snowy_b
  0 0
-pw_man_skeleton 0 3
+pw_man_skeleton 4299431936 3
  PW_tree_7_a_color  0
+ 0 0
  PW_tree_7_b_color  0
+ 0 0
  PW_tree_7_c_color  0
+ 0 0
 aspen 94491443200 3
  aspen_a  bo_aspen_a
  aspen_b  bo_aspen_b
  aspen_c  bo_aspen_c
-pine_1 17184074752 2
+pine_1 17184063520 2
  pine_1_a  bo_pine_1_a
  0 0
  pine_1_b  bo_pine_1_b
  0 0
-pine_2 17184074752 1
+pine_2 17184063520 1
  pine_2_a  bo_pine_2_a
  0 0
-pine_3 17184074752 1
+pine_3 17184063520 1
  pine_3_a  bo_pine_3_a
  0 0
-pine_4 17184072704 1
+pine_4 17184063520 1
  pine_4_a  bo_pine_4_a
  0 0
-pine_6 17184072704 1
+pine_6 17184063520 1
  pine_6_a  bo_pine_6_a
  0 0
-tree_1 25769804800 1
+tree_1 25773999104 1
  PW_tree_9_a_xx  0
+ 0 0
 tree_2 0 2
  tree_2_a  bo_tree_2_a
  tree_2_b  bo_tree_2_b
@@ -404,13 +417,13 @@ snowy_pine_2 4194304 4
  0 0
  PW_rock_snowy_c  bo_pw_rock_snowy_c
  0 0
-pw_pine_group1 8594137088 1
+pw_pine_group1 8594128928 1
  PW_pine_6_a  bo_pw_pine_6_a
  0 0
-pw_pine_group2 8594137088 1
+pw_pine_group2 8594128928 1
  PW_pine_4_a  bo_pw_pine_4_a
  0 0
-pw_pine_group3 8594137088 1
+pw_pine_group3 8594128928 1
  PW_tall_tree_a  bo_pw_tall_tree_a
  0 0
 zl_pink_tree 17184063492 3
@@ -427,14 +440,14 @@ zl_fir 21479030784 3
  0 0
  PL_fir_new3  bo_pl_fir_new3
  0 0
-zl_fir_tall 21479038976 3
+zl_fir_tall 21479030816 3
  PL_fur_tall1  bo_pl_fur_tall1
  0 0
  PL_fur_tall2  bo_pl_fur_tall2
  0 0
  PL_fur_tall3  bo_pl_fur_tall3
  0 0
-zl_fir_shubby 4299169792 5
+zl_fir_shubby 4299161632 5
  PW_tree_2_a  bo_PW_tree_2_a
  0 0
  PW_tree_2_b  bo_pw_tree_2_b
@@ -445,7 +458,7 @@ zl_fir_shubby 4299169792 5
  0 0
  PW_tree_e_3  bo_pw_tree_e_3
  0 0
-zl_fir_shubby_group 8594137088 4
+zl_fir_shubby_group 8594128896 4
  PW_tree_6_a  bo_pw_tree_6_a
  0 0
  PW_tree_6_b  bo_pw_tree_6_b
@@ -454,7 +467,7 @@ zl_fir_shubby_group 8594137088 4
  0 0
  PW_tree_6_d  bo_pw_tree_6_d
  0 0
-pw_fir_shubby_small_group 17184071680 3
+pw_fir_shubby_small_group 4299161632 3
  PW_tree_e_1  bo_pw_tree_e_1
  0 0
  PW_tree_e_2  bo_pw_tree_e_2
@@ -470,12 +483,12 @@ pw_fir_shubby_group 4194304 4
  0 0
  PW_tree_6_d  bo_pw_tree_6_d
  0 0
-pw_fir_shibby 17184071680 2
+pw_fir_shibby 17184063520 2
  PW_tree_2_a  bo_PW_tree_2_a
  0 0
  PW_tree_2_b  bo_pw_tree_2_b
  0 0
-zl_fir_shubby_single 21479038976 4
+zl_fir_shubby_single 21479030816 4
  PW_tree_2_a_single1  bo_pw_tree_2_a_single1
  0 0
  PW_tree_2_a_single2  0
@@ -564,7 +577,7 @@ zl_tree_12 17184064512 3
  0 0
  PW_tree_12_c  bo_pw_tree_12_c
  0 0
-pw_pine_bushes_group 51539615776 3
+pw_pine_bushes_group 51539607584 3
  PW_tree_12_a  bo_pw_tree_12_a
  PW_tree_12_b  bo_pw_tree_12_b
  PW_tree_12_c  bo_pw_tree_12_c
@@ -601,7 +614,7 @@ zl_tree_16 17184064512 2
  0 0
  PW_tree_16_b  bo_pw_tree_16_b
  0 0
-pw_pine_small_group 163212959744 2
+pw_pine_small_group 163212951584 2
  PW_tree_16_a  bo_pw_tree_16_a
  0 0
  PW_tree_16_b  bo_pw_tree_16_b
@@ -670,13 +683,13 @@ zl_oak_group 8594128900 3
  0 0
  PL_oak_group3  bo_pl_oak_group3
  0 0
-zl_rockformation 12887072808 3
+zl_rockformation 12887066632 3
  PW_rock_c  bo_pw_rock_c
  PW_rock_e  bo_pw_rock_e
  PW_rock_k  bo_pw_rock_k
 zl_reed 833223655424 1
  GA_reed1  0
-zl_fir_tall_hs 21479041024 4
+zl_fir_tall_hs 21479032864 4
  PW_fir_tall_d  bo_PW_fir_tall_d
  0 0
  PW_fir_tall_f  bo_PW_fir_tall_f

@@ -11834,9 +11834,9 @@ scripts = [
 		(eq,":landmark","p_town_isengard"),
 		(assign, ":native_terrain_to_use", rt_steppe), 
 		(assign,":scene_to_use","scn_isengard_outside"), 
-	(else_try),
-		(eq,":landmark","p_hand_isen"),		
-		(assign,":scene_to_use","scn_handsign"), # randomize this scene 
+	# (else_try),
+		# (eq,":landmark","p_hand_isen"),		
+		# (assign,":scene_to_use","scn_handsign"), # randomize this scene 
 	(else_try),
 		(is_between,":landmark", fords_big_begin, fords_big_end), # Anduin fords
 		(store_mod, ":tmp", ":landmark", 3), #3  big fords scenes
@@ -11905,7 +11905,7 @@ scripts = [
 		(is_between,":region",region_n_ithilien,region_s_ithilien+1),
 		(store_random_in_range, reg1, 0,5),
 		(try_begin),(lt, reg1, 3),(store_random_in_range, ":scene_to_use", "scn_forest_ithilien1", "scn_forest_lorien1"),
-		 (else_try),              (assign, ":native_terrain_to_use", rt_steppe_forest),
+		 (else_try),              (assign, ":native_terrain_to_use", rt_plain),
 		(try_end),
 		(assign, "$small_scene_used", 1),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
@@ -11916,22 +11916,11 @@ scripts = [
 		(assign,":scene_to_use","scn_random_scene_plain_small"), # so that outer terrain of gondor is used
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"), 
 		(assign, "$small_scene_used", 1),
-#InVain: Moved Osgiliath up, landmarks must be before regions!
-#	(else_try),
-#		(this_or_next|eq,":landmark","p_town_west_osgiliath"), # Occasional Osgiliath - In Vain
-#		(eq,":landmark","p_town_east_osgiliath"),
-#		(assign,":scene_to_use","scn_osgiliath_outskirts"), 
 	(else_try),		# occasional forest terrain, in rohan: use forest battlefield regardless of region (but rohan outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(is_between,":region",region_harrowdale, region_westfold+1),
-		(assign, ":native_terrain_to_use", rt_forest),
+		(assign, ":native_terrain_to_use", rt_steppe_forest),
 		(assign,":scene_to_use","scn_random_scene_steppe_small"), # so that outer terrain of rohan is used
-		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
-		(assign, "$small_scene_used", 1),
-	(else_try),		# occasional forest terrain, anywhere else: use forest battlefield regardless of region (but flat outer terrain)
-		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
-		(assign, ":native_terrain_to_use", rt_forest),
-		(assign,":scene_to_use","scn_random_scene_desert_small"), # so that outer terrain flat is used
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 		(assign, "$small_scene_used", 1),
 	(else_try),		# gondor regions
@@ -11956,20 +11945,37 @@ scripts = [
 	        (else_try),
 				(assign, ":native_terrain_to_use", rt_plain),  # gondor default
 			(try_end),
+	(else_try),		# dagorlad
+		(this_or_next|is_between,":region",region_n_undeep , region_s_undeep +1),
+		(eq,":region",region_brown_lands),
+		(assign, ":native_terrain_to_use", rt_desert_forest),  # should look more grey / drier
+        (assign, ":scene_to_use", "scn_dagorlad_random"),
+        (try_begin),
+            (eq, ":small_scene", 1),
+            (assign, ":scene_to_use", "scn_dagorlad_random_small"),
+            (assign, "$small_scene_used", 1),
+        (try_end),
 	(else_try),		# dry-brown regions
 		(this_or_next|is_between,":region",region_n_undeep , region_s_undeep +1),
-		(this_or_next|eq,":region",region_dagorlad),
+        (this_or_next|eq,":region",region_emyn_muil),
+        (this_or_next|eq,":region",region_w_emyn_muil),
 		(eq,":region",region_brown_lands),
-		(assign, ":native_terrain_to_use", rt_desert),  # should look more grey / drier
+        (assign, ":native_terrain_to_use", rt_desert_forest),
 	(else_try),		# rohan regions
 		(this_or_next|eq,":region",region_the_wold),
-		(this_or_next|eq,":region",region_emyn_muil),
 		(is_between,":region",region_harrowdale, region_gap_of_rohan+1),
 		(assign, ":native_terrain_to_use", rt_steppe),  # rohan default
-	(else_try),		# mountains regions
+	(else_try),		# northern regions
+        (this_or_next|eq,":region",region_s_erebor),
+        (this_or_next|eq,":region",region_erebor),
+        (this_or_next|eq,":region",region_anduin_banks),
+        (this_or_next|eq,":region",region_n_anduin_vale),
+        (this_or_next|eq,":region",region_s_anduin_vale),
+        (this_or_next|eq,":region",region_celebrant),          
+        (this_or_next|eq,":region",region_s_misty_mountains),
 		(this_or_next|eq,":region",region_misty_mountains),
 		(eq,":region",region_grey_mountains),
-		(assign, ":native_terrain_to_use", rt_steppe),  # mountains
+		(assign, ":native_terrain_to_use", rt_steppe_forest),
 	(else_try),		# marshes 
 		(this_or_next|eq,":region",region_entwash),
 		(eq,":region",region_wetwang), 
@@ -11979,6 +11985,9 @@ scripts = [
 		(assign, ":native_terrain_to_use", rt_steppe),  
 	(try_end),
 	
+    (assign, reg78, ":native_terrain_to_use"),
+    (display_message, "@terrain type: {reg78}"),
+    
 	# not set the terrain
 	(try_begin),(gt, ":native_terrain_to_use", -1), 
 		# use native terrain autogeneration
@@ -11992,7 +12001,7 @@ scripts = [
 		(store_add, reg10, "p_pointer_z_0_begin", ":native_terrain_to_use"),
 		(party_relocate_near_party,"p_main_party",reg10,":radius"), # teleport to requested region
 		
-		#(display_message,"@debug: teleporitng to party ID N. {reg10}"),
+		(display_message,"@debug: teleporitng to party ID N. {reg10}"),
 		
 		(try_begin),(eq,":scene_to_use",-1),
 			# no scene_to_use defined: use the dafault one for the selected native terrain terrain
@@ -12000,9 +12009,9 @@ scripts = [
 			(val_sub, ":scene_to_use", 2), # -2 steppe is terrain 2
 			(try_begin), (eq, ":small_scene", 1), 
 				# shring scene
-				(le, ":native_terrain_to_use", rt_desert), #  forest don't have a small version
+				#(le, ":native_terrain_to_use", rt_desert), #  forest don't have a small version
 				
-				(val_add, ":scene_to_use", "scn_random_scene_steppe_small"), #+12
+				(val_add, ":scene_to_use", "scn_random_scene_steppe_small"), #+10
 				(val_sub, ":scene_to_use", "scn_random_scene_steppe"),  # -2 go to small scene index
 				(assign, "$small_scene_used", 1),
 			(try_end),
