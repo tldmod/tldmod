@@ -630,6 +630,16 @@ scenes = [
 ("dagorlad_random"          ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),(240,240),-0.5,"0x000000025c600500000691a400003efe00004b34000059be",[],[],"outer_terrain_desert"),
 ("dagorlad_random_small" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-0.5,"0x000000015c60050000034cd300003efe00004b34000059be",[],[],"outer_terrain_desert"),
 
+#swamps go from friendly (swamp_1) to evil (swamp_6)
+("swamp_1"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000024c600500000691a400006ba200004b34000059be",[],[],"outer_terrain_flat"),
+("swamp_2"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600563800691a400002787000068c2000054da",[],[],"outer_terrain_flat"),
+("swamp_3"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600563800691a400005d4a000061f900006c8e",[],[],"outer_terrain_flat"),
+("swamp_4"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600500000691a400001fb900004b34000059be",[],[],"outer_terrain_flat"),
+("swamp_5"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600563800691a400005d4a000061f900006c8e",[],[],"outer_terrain_flat"),
+("swamp_6"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600500000691a400001fb900004b34000059be",[],[],"outer_terrain_flat"),
+("swamp_small"        ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001cc60050000034cd300003efe00004b34000059be",[],[],"outer_terrain_flat"),
+
+
 # Non-campaign scenes (these can savely be kept at the end of the file and moved with each extension, whereas campaign scenes are stored within savegame files, for whatever reason)
 # Tutorial Scenes
 ("tutorial_1",sf_indoors,"tutorial_1_scene", "bo_tutorial_1_scene", (-100,-100),(100,100),-100,"0",

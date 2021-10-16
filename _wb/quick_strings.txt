@@ -1,4 +1,4 @@
-1921
+1919
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_314_wb__dev_^_B _rev_314_wb_|_dev_^_Built_2021-10-16_19:04___
+qstr__rev_315_wb__dev_^_B _rev_315_wb_|_dev_^_Built_2021-10-16_22:30___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -440,8 +440,6 @@ qstr_CHARGE!_Let_s_clear_ CHARGE!_Let's_clear_the_{s18}_{s19}scum_from_{s17}!
 qstr_{s14}Now_that_{s19}s {s14}Now_that_{s19}scum_will_taste_the_fury_of_the_bear_people!
 qstr_Attack! Attack!
 qstr_TLD_ERROR!_could_not TLD_ERROR!_could_not_spawn_the_party_on_the_same_side_of_the_white_mountains
-qstr_terrain_type:_{reg78 terrain_type:_{reg78}
-qstr_debug:_teleporitng_t debug:_teleporitng_to_party_ID_N._{reg10}
 qstr_Cheat:_Impose_a_batt Cheat:_Impose_a_battlefield
 qstr_debug:_using_scene_I debug:_using_scene_ID_N._{reg10}
 qstr_You_are_attacked_by_ You_are_attacked_by_a_group_of_goblins!

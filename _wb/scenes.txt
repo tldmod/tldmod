@@ -1,5 +1,5 @@
 scenesfile version 1
- 443
+ 450
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1744,6 +1744,34 @@ scn_dagorlad_random_small dagorlad_random_small 1792 none none 0 0 90 90 -0.5 0x
   0 
   0 
  outer_terrain_desert 
+scn_swamp_1 swamp_1 256 none none 0 0 200 200 -0.5 0x000000024c600500000691a400006ba200004b34000059be 
+  0 
+  0 
+ outer_terrain_flat 
+scn_swamp_2 swamp_2 256 none none 0 0 200 200 -0.5 0x00000002cc600563800691a400002787000068c2000054da 
+  0 
+  0 
+ outer_terrain_flat 
+scn_swamp_3 swamp_3 256 none none 0 0 200 200 -0.5 0x00000002cc600563800691a400005d4a000061f900006c8e 
+  0 
+  0 
+ outer_terrain_flat 
+scn_swamp_4 swamp_4 256 none none 0 0 200 200 -0.5 0x00000002cc600500000691a400001fb900004b34000059be 
+  0 
+  0 
+ outer_terrain_flat 
+scn_swamp_5 swamp_5 256 none none 0 0 200 200 -0.5 0x00000002cc600563800691a400005d4a000061f900006c8e 
+  0 
+  0 
+ outer_terrain_flat 
+scn_swamp_6 swamp_6 256 none none 0 0 200 200 -0.5 0x00000002cc600500000691a400001fb900004b34000059be 
+  0 
+  0 
+ outer_terrain_flat 
+scn_swamp_small swamp_small 256 none none 0 0 200 200 -0.5 0x00000001cc60050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_flat 
 scn_tutorial_1 tutorial_1 1 tutorial_1_scene bo_tutorial_1_scene -100 -100 100 100 -100 0 
   0 
   0 

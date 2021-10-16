@@ -11946,8 +11946,7 @@ scripts = [
 				(assign, ":native_terrain_to_use", rt_plain),  # gondor default
 			(try_end),
 	(else_try),		# dagorlad
-		(this_or_next|is_between,":region",region_n_undeep , region_s_undeep +1),
-		(eq,":region",region_brown_lands),
+		(eq,":region",region_dagorlad),
 		(assign, ":native_terrain_to_use", rt_desert_forest),  # should look more grey / drier
         (assign, ":scene_to_use", "scn_dagorlad_random"),
         (try_begin),
@@ -11976,17 +11975,26 @@ scripts = [
 		(this_or_next|eq,":region",region_misty_mountains),
 		(eq,":region",region_grey_mountains),
 		(assign, ":native_terrain_to_use", rt_steppe_forest),
-	(else_try),		# marshes 
-		(this_or_next|eq,":region",region_entwash),
-		(eq,":region",region_wetwang), 
-        (assign, ":scene_to_use", "scn_random_scene_snow_forest"),
-		(assign, ":native_terrain_to_use", rt_snow_forest),  # marshland
+	(else_try),		# marshes (small scene)
+        (this_or_next|eq,":region",region_dead_marshes),
+        (this_or_next|eq,":region",region_wetwang),
+        (this_or_next|eq,":region",region_gladden_fields),
+		(eq,":region",region_entwash), 
+        (eq, ":small_scene", 1),
+        (assign, ":scene_to_use", "scn_swamp_small"),
+        (assign, "$small_scene_used", 1),
+	(else_try),		# friendly marshes 
+        (this_or_next|eq,":region",region_gladden_fields),
+		(eq,":region",region_entwash), 
+        (store_random_in_range, ":scene_to_use", scn_swamp_1, scn_swamp_5),
+	(else_try),		# evil marshes 
+        (this_or_next|eq,":region",region_wetwang),
+		(eq,":region",region_dead_marshes), 
+        (store_random_in_range, ":scene_to_use", scn_swamp_4, scn_swamp_6+1),
 	(else_try),		# anything else
 		(assign, ":native_terrain_to_use", rt_steppe),  
 	(try_end),
 	
-    (assign, reg78, ":native_terrain_to_use"),
-    (display_message, "@terrain type: {reg78}"),
     
 	# not set the terrain
 	(try_begin),(gt, ":native_terrain_to_use", -1), 
@@ -12001,7 +12009,7 @@ scripts = [
 		(store_add, reg10, "p_pointer_z_0_begin", ":native_terrain_to_use"),
 		(party_relocate_near_party,"p_main_party",reg10,":radius"), # teleport to requested region
 		
-		(display_message,"@debug: teleporitng to party ID N. {reg10}"),
+		#(display_message,"@debug: teleporitng to party ID N. {reg10}"),
 		
 		(try_begin),(eq,":scene_to_use",-1),
 			# no scene_to_use defined: use the dafault one for the selected native terrain terrain
