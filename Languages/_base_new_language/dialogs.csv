@@ -741,22 +741,6 @@ dlga_lord_leave:close_window.3|Yes, yes. Farewell.
 dlga_lord_leave:close_window.4|We will meet again.
 dlga_start:lady_escort_lady_succeeded|Thank you for escorting me here, {playername}, and ensuring my safe passage. Your services will be duly noted. 
 dlga_lady_escort_lady_succeeded:close_window|It was an honor to serve.
-dlga_start:prison_guard_players|Good day, Commander. Will you be visiting the prison?
-dlga_prison_guard_players:close_window|Yes. Unlock the door.
-dlga_prison_guard_players:close_window.1|No, not now.
-dlga_start:prison_guard_talk|Yes? What do you want?
-dlga_prison_guard_talk:prison_guard_ask_prisoners|Who is imprisoned here?
-dlga_prison_guard_talk:prison_guard_visit_prison|I want to speak with a prisoner.
-dlga_prison_guard_ask_prisoners:prison_guard_talk|Currently, {s51} {reg1?are:is} imprisoned here.
-dlga_prison_guard_visit_prison:close_window|Of course, Commander. Go in.
-dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|You need to get permission from the lord to talk to prisoners.
-dlga_prison_guard_visit_prison_2:close_window|All right then. I'll try that.
-dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Come on now. I thought you were the boss here.
-dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. You got that right. Still, I can't let you into the prison.
-dlga_prison_guard_visit_prison_4:close_window|All right then. I'll leave now.
-dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|I found a purse with 100 denars a few paces away. I reckon it belongs to you.
-dlga_prison_guard_visit_prison_5:close_window|Ah! I was looking for this all day. How good of you to bring it back {sir/madam}. Well, now that I know what an honest {man/lady} you are, there can be no harm in letting you inside. Go in.
-dlga_prison_guard_talk:close_window|Never mind.
 dlga_start:castle_guard_players|Your orders, Commander?
 dlga_castle_guard_players:close_window|Open the door. I'll go in.
 dlga_castle_guard_players:close_window.1|Never mind.

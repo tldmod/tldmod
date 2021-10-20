@@ -344,8 +344,8 @@ itm_free_arnor_shield_d|Arnor Cavalry Shield
 itm_free_arnor_shield_d_pl|Arnor Cavalry Shield
 itm_arnor_sword_a|Arnor Bastard Sword
 itm_arnor_sword_a_pl|Arnor Bastard Sword
-itm_arnor_sword_c|Arnor Bastard Sword
-itm_arnor_sword_c_pl|Arnor Bastard Sword
+itm_arnor_sword_c|Arnor War Sword
+itm_arnor_sword_c_pl|Arnor War Sword
 itm_arnor_sword_f|Arnor Shortsword
 itm_arnor_sword_f_pl|Arnor Shortsword
 itm_riv_helm_a|Rivendell Coif
@@ -386,8 +386,8 @@ itm_riv_knight|Rivendell Knightly Armour
 itm_riv_knight_pl|Rivendell Knightly Armour
 itm_riv_armor_h_archer|Rivendell Armor
 itm_riv_armor_h_archer_pl|Rivendell Armor
-itm_riv_armor_leader|Rivendell Leader Armor
-itm_riv_armor_leader_pl|Rivendell Leader Armor
+itm_free_riv_armor_leader|Rivendell Leader Armor
+itm_free_riv_armor_leader_pl|Rivendell Leader Armor
 itm_riv_boots|Rivendell Boots
 itm_riv_boots_pl|Rivendell Boots
 itm_gon_footman|Gondor Mail Shirt
@@ -430,12 +430,12 @@ itm_gondor_heavy_greaves|Gondorian Mailed Greaves
 itm_gondor_heavy_greaves_pl|Gondorian Mailed Greaves
 itm_free_gondorian_light_helm|Gondorian Footman Helm
 itm_free_gondorian_light_helm_pl|Gondorian Footman Helm
-itm_gondor_infantry_helm|Gondor Infantry Helm
-itm_gondor_infantry_helm_pl|Gondor Infantry Helm
+itm_free_gondor_infantry_helm|Gondor Infantry Helm
+itm_free_gondor_infantry_helm_pl|Gondor Infantry Helm
+itm_free_gondor_auxila_helm|Gondor Light Helm
+itm_free_gondor_auxila_helm_pl|Gondor Light Helm
 itm_gondor_auxila_helm|Gondor Light Helm
 itm_gondor_auxila_helm_pl|Gondor Light Helm
-itm_free_gondorian_light_helm_b|Gondorian Bowman Helm
-itm_free_gondorian_light_helm_b_pl|Gondorian Bowman Helm
 itm_gondorian_archer_helm|Gondor Archer Helm
 itm_gondorian_archer_helm_pl|Gondor Archer Helm
 itm_tower_archer_helm|Tower Archer Helm
@@ -446,8 +446,8 @@ itm_tower_guard_helm|Tower Guard Helm
 itm_tower_guard_helm_pl|Tower Guard Helm
 itm_gondor_citadel_knight_helm|Citadel Knight Helm
 itm_gondor_citadel_knight_helm_pl|Citadel Knight Helm
-itm_free_gondor_squire_helm|Gondor Squire Helm
-itm_free_gondor_squire_helm_pl|Gondor Squire Helm
+itm_gondor_infantry_helm|Gondor Infantry Helm
+itm_gondor_infantry_helm_pl|Gondor Infantry Helm
 itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_knight_helm_pl|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Dol Amroth Helm
@@ -584,8 +584,8 @@ itm_pelargir_sword|Pelargir Sword
 itm_pelargir_sword_pl|Pelargir Sword
 itm_gondor_ranger_sword|Gondor Ranger Sword
 itm_gondor_ranger_sword_pl|Gondor Ranger Sword
-itm_gondor_bastard|Gondor Bastard Sword
-itm_gondor_bastard_pl|Gondor Bastard Sword
+itm_gondor_2h_sword|Gondor War Sword
+itm_gondor_2h_sword_pl|Gondor War Sword
 itm_gondor_citadel_sword|Gondor Citadel Sword
 itm_gondor_citadel_sword_pl|Gondor Citadel Sword
 itm_gondor_cav_sword|Gondor Cavalry Sword
@@ -596,10 +596,10 @@ itm_gondor_tower_spear|Gondorian Tower Spear
 itm_gondor_tower_spear_pl|Gondorian Tower Spear
 itm_gondor_lance|Gondor Lance
 itm_gondor_lance_pl|Gondor Lance
-itm_loss_axe|Lossarnach Fighting Axe
-itm_loss_axe_pl|Lossarnach Fighting Axe
-itm_loss_war_axe|Lossarnach War Axe
-itm_loss_war_axe_pl|Lossarnach War Axe
+itm_loss_axe|Gondor Fighting Axe
+itm_loss_axe_pl|Gondor Fighting Axe
+itm_loss_war_axe|Gondor War Axe
+itm_loss_war_axe_pl|Gondor War Axe
 itm_lorien_sword_a|Lorien Longsword
 itm_lorien_sword_a_pl|Lorien Longsword
 itm_lorien_sword_b|Lorien Shortsword
@@ -672,20 +672,20 @@ itm_isen_orc_armor_g|Isengard Orc Armor
 itm_isen_orc_armor_g_pl|Isengard Orc Armor
 itm_isen_uruk_light_a|Uruk-hai Light Harness
 itm_isen_uruk_light_a_pl|Uruk-hai Light Harness
-itm_isen_uruk_light_b|Uruk-hai Leather Armor
-itm_isen_uruk_light_b_pl|Uruk-hai Leather Armor
-itm_isen_uruk_light_c|Uruk-hai Leather Armor
-itm_isen_uruk_light_c_pl|Uruk-hai Leather Armor
-itm_isen_uruk_light_d|Uruk-hai Mail and Leather
-itm_isen_uruk_light_d_pl|Uruk-hai Mail and Leather
-itm_isen_uruk_light_e|Uruk-hai Mail Harness
-itm_isen_uruk_light_e_pl|Uruk-hai Mail Harness
-itm_isen_uruk_heavy_a|Uruk-hai Mail and Leather
-itm_isen_uruk_heavy_a_pl|Uruk-hai Mail and Leather
-itm_isen_uruk_heavy_b|Uruk-hai Heavy Armor
-itm_isen_uruk_heavy_b_pl|Uruk-hai Heavy Armor
-itm_isen_uruk_heavy_c|Uruk-hai Heavy Armor
-itm_isen_uruk_heavy_c_pl|Uruk-hai Heavy Armor
+itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+itm_isen_uruk_light_b_pl|Uruk-hai Fighting Harness
+itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+itm_isen_uruk_light_c_pl|Uruk-hai Berserker Harness
+itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+itm_isen_uruk_med_a_pl|Uruk-hai Light Segmented Armour
+itm_isen_uruk_med_b|Uruk-hai Mail
+itm_isen_uruk_med_b_pl|Uruk-hai Mail
+itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+itm_isen_uruk_heavy_a_pl|Uruk-hai Medium Segmented Armour
+itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+itm_isen_uruk_heavy_b_pl|Uruk-hai Heavy Mail
+itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
+itm_isen_uruk_heavy_c_pl|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|Uruk-hai Tracker Leather
 itm_isen_uruk_heavy_d_pl|Uruk-hai Tracker Leather
 itm_isen_uruk_heavy_e|Uruk-hai Tracker Leather
@@ -1172,18 +1172,18 @@ itm_harad_lion_scale|Lion Guard Armor
 itm_harad_lion_scale_pl|Lion Guard Armor
 itm_harad_dragon_helm|Kiloka Helm
 itm_harad_dragon_helm_pl|Kiloka Helm
-itm_harad_cav_helm_a|Harondor Cavalry Helm
-itm_harad_cav_helm_a_pl|Harondor Cavalry Helm
-itm_harad_cav_helm_b|Harondor Cavalry Helm
-itm_harad_cav_helm_b_pl|Harondor Cavalry Helm
+itm_harad_cav_helm_a|Harondor Light Helm
+itm_harad_cav_helm_a_pl|Harondor Light Helm
+itm_harad_cav_helm_b|Harondor Light Helm
+itm_harad_cav_helm_b_pl|Harondor Light Helm
 itm_black_snake_helm|Maranka Helm
 itm_black_snake_helm_pl|Maranka Helm
-itm_harad_finhelm|Great Harad Helmet
-itm_harad_finhelm_pl|Great Harad Helmet
-itm_harad_heavy_inf_helm|Great Harad Helmet
-itm_harad_heavy_inf_helm_pl|Great Harad Helmet
-itm_harad_wavy_helm|Great Harad Helmet
-itm_harad_wavy_helm_pl|Great Harad Helmet
+itm_harad_finhelm|Harad Heavy Footman Helmet
+itm_harad_finhelm_pl|Harad Heavy Footman Helmet
+itm_harad_heavy_inf_helm|Harad Footman Helmet
+itm_harad_heavy_inf_helm_pl|Harad Footman Helmet
+itm_harad_wavy_helm|Harad Conical Helmet
+itm_harad_wavy_helm_pl|Harad Conical Helmet
 itm_harad_eaglehelm|Eagle Guard Helm
 itm_harad_eaglehelm_pl|Eagle Guard Helm
 itm_lion_helm|Lion Guard Helm
@@ -1326,8 +1326,8 @@ itm_khand_pitsword|Pit Fighter Sword
 itm_khand_pitsword_pl|Pit Fighter Sword
 itm_khand_tulwar|Khand Tulwar
 itm_khand_tulwar_pl|Khand Tulwar
-itm_khand_2h_tulwar|Khand Tulwar
-itm_khand_2h_tulwar_pl|Khand Tulwar
+itm_khand_2h_tulwar|Khand Great Tulwar
+itm_khand_2h_tulwar_pl|Khand Great Tulwar
 itm_khand_lance|Khand Lance
 itm_khand_lance_pl|Khand Lance
 itm_easterling_round_horseman|Easterling Round Shield
@@ -1366,30 +1366,30 @@ itm_rhun_armor_p|Rhun Noble Armor
 itm_rhun_armor_p_pl|Rhun Noble Armor
 itm_rhun_armor_k|Rhun Noble Armor
 itm_rhun_armor_k_pl|Rhun Noble Armor
-itm_rhun_helm_barbed|Rhun Barbed Helm
-itm_rhun_helm_barbed_pl|Rhun Barbed Helm
+itm_free_rhun_helm_barbed|Rhun Barbed Helm
+itm_free_rhun_helm_barbed_pl|Rhun Barbed Helm
 itm_free_rhun_helm_b|Rhun Barbed Helm Camail
 itm_free_rhun_helm_b_pl|Rhun Barbed Helm Camail
-itm_rhun_helm_horde|Rhun Horde Helm
-itm_rhun_helm_horde_pl|Rhun Horde Helm
-itm_free_rhun_helm_e|Rhun Horde Horned Helm
-itm_free_rhun_helm_e_pl|Rhun Horde Horned Helm
-itm_rhun_helm_pot|Rhun Pot Helm
-itm_rhun_helm_pot_pl|Rhun Pot Helm
-itm_free_rhun_helm_h|Rhun Horned Pot
-itm_free_rhun_helm_h_pl|Rhun Horned Pot
-itm_rhun_helm_round|Rhun Round Helm
-itm_rhun_helm_round_pl|Rhun Round Helm
-itm_free_rhun_helm_j|Rhun Round Masked Helm
-itm_free_rhun_helm_j_pl|Rhun Round Masked Helm
-itm_rhun_helm_leather|Rhun Leather Helm
-itm_rhun_helm_leather_pl|Rhun Leather Helm
-itm_free_rhun_helm_l|Rhun Leather Helm
-itm_free_rhun_helm_l_pl|Rhun Leather Helm
-itm_free_rhun_helm_m|Rhun Leather Helm
-itm_free_rhun_helm_m_pl|Rhun Leather Helm
+itm_free_rhun_helm_horde|Rhun Horde Helm
+itm_free_rhun_helm_horde_pl|Rhun Horde Helm
 itm_rhun_helm_chieftain|Rhun Chieftain Helm
 itm_rhun_helm_chieftain_pl|Rhun Chieftain Helm
+itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_pot_pl|Rhun Pot Helm
+itm_rhun_helm_barbed|Rhun Barbed Helm
+itm_rhun_helm_barbed_pl|Rhun Barbed Helm
+itm_rhun_helm_round|Rhun Round Helm
+itm_rhun_helm_round_pl|Rhun Round Helm
+itm_rhun_helm_horde|Rhun Horde Helm
+itm_rhun_helm_horde_pl|Rhun Horde Helm
+itm_rhun_helm_leather|Rhun Leather Helm
+itm_rhun_helm_leather_pl|Rhun Leather Helm
+itm_free_rhun_helm_l|Rhun Chieftain Helm
+itm_free_rhun_helm_l_pl|Rhun Chieftain Helm
+itm_free_rhun_helm_m|Rhun Leather Helm
+itm_free_rhun_helm_m_pl|Rhun Leather Helm
+itm_free_rhun_helm_chieftain|Rhun Chieftain Helm
+itm_free_rhun_helm_chieftain_pl|Rhun Chieftain Helm
 itm_rhun_warpick|Rhun War Pick
 itm_rhun_warpick_pl|Rhun War Pick
 itm_rhun_greataxe|Rhun Great Axe
@@ -1702,8 +1702,8 @@ itm_ent_water|Strange Bowl of Water
 itm_ent_water_pl|Strange Bowl of Water
 itm_map|Maps of Middle Earth
 itm_map_pl|Maps of Middle Earth
-itm_athelas_reward|Athelas Plant
-itm_athelas_reward_pl|Athelas Plant
+itm_athelas_reward|Dried Athelas Leaves
+itm_athelas_reward_pl|Dried Athelas Leaves
 itm_phial_reward|Light of Galadriel
 itm_phial_reward_pl|Light of Galadriel
 itm_scroll_reward|On the Fall of Gondolin
@@ -1792,8 +1792,8 @@ itm_beorn_shield_reward|Beorning Shield
 itm_beorn_shield_reward_pl|Beorning Shield
 itm_beorn_axe_reward|Bear Club
 itm_beorn_axe_reward_pl|Bear Club
-itm_moria_arrow_reward|Moria Poisoned Arrows
-itm_moria_arrow_reward_pl|Moria Poisoned Arrows
+itm_drums_of_the_deep|Drums of the Deep
+itm_drums_of_the_deep_pl|Drums of the Deep
 itm_khamul_helm|Helm of Khamul
 itm_khamul_helm_pl|Helm of Khamul
 itm_black_arrows_reward|Black Arrows

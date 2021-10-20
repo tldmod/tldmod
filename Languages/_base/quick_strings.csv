@@ -91,8 +91,9 @@ qstr_Battle_Formations_an|Battle Formations and AI:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD FormAI (Original)
 qstr_TLD_New_FormAI|TLD New FormAI
-qstr_Advanced_Siege_AI:__|Advanced Siege AI:  
-qstr_On|On
+qstr_Siege_AI:__|Siege AI:  
+qstr_Basic__better_perfor|Basic (better performance)
+qstr_Advanced|Advanced
 qstr_Town_NPCs_Always_Acc|Town NPCs Always Accessible from Menus:  
 qstr_Cutscenes:__|Cutscenes:  
 qstr_Injuries_for_compani|Injuries for companions:  
@@ -106,9 +107,9 @@ qstr_Player_damage_only|Player damage only
 qstr_All_Messages|All Messages
 qstr_Troop_Identifier_in_|Troop Identifier in Battles (Press Y during battle to show/hide):
 qstr_Disable|Disable
-qstr_Enable_without_Facti|Enable without Faction Names
-qstr_Enable_with_Faction_|Enable with Faction Names
-qstr_Simple:_Red___Enemy_|Simple: Red - Enemy / Green - Allies
+qstr_Troop_Names|Troop Names
+qstr_Simple:_Faction_Colo|Simple: Faction Colors
+qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
 qstr_Preferred_Camera_Mod|Preferred Camera Mode:  
 qstr_Default_Camera|Default Camera
 qstr_Free_Mode_Custom_Cam|Free-Mode Custom Camera
@@ -184,13 +185,17 @@ qstr_+20_to_Party_Morale|+20 to Party Morale
 qstr_+1_to_Riding_Skill|+1 to Riding Skill
 qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|+1 to Pathfinding
-qstr_+1_to_Athletics|+1 to Athletics
-qstr_+1_to_Wound_Treatmen|+1 to Wound Treatment
+qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
+qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
+qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
 qstr_Use_from_Camp_Menu|Use from Camp Menu
 qstr_Use_from|Use from
 qstr_Action_Menu|Action Menu
-qstr_+1_to_First_Aid|+1 to First Aid
+qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
+qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
+qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
 qstr_+1_to_Weapon_Mastery|+1 to Weapon Mastery
+qstr_+1_to_Wound_Treatmen|+1 to Wound Treatment
 qstr_+1_to_Tactics|+1 to Tactics
 qstr_+1_to_Power_Strike|+1 to Power Strike
 qstr_+1_to_Strength|+1 to Strength
@@ -198,6 +203,7 @@ qstr_+1_to_Agility|+1 to Agility
 qstr_+1_to_Leadership|+1 to Leadership
 qstr_+1_to_Wildcraft|+1 to Wildcraft
 qstr_+1_to_Tracking|+1 to Tracking
+qstr_+1_to_Athletics|+1 to Athletics
 qstr_when_equipped|when equipped
 qstr_+1_to_Power_Draw|+1 to Power Draw
 qstr_The_record_of_Balin_|The record of Balin's lost expedition.
@@ -212,6 +218,9 @@ qstr_rally|rally
 qstr_rallies|rallies
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} in battle
 qstr_+1_to_Charisma|+1 to Charisma
+qstr_Call_Reinforcements|Call Reinforcements
+qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
+qstr_+1_to_First_Aid|+1 to First Aid
 qstr_+1_to_Surgery|+1 to Surgery
 qstr_+1_to_Intelligence|+1 to Intelligence
 qstr_+2_to_Surgery|+2 to Surgery
@@ -225,6 +234,8 @@ qstr_+2_to_Tactics|+2 to Tactics
 qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
 qstr__Scales_with_Wildcra|(Scales with Wildcraft)
+qstr_Strengthens_all_Hero|Strengthens all Heroes
+qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|+1 to Spotting
 qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
@@ -243,6 +254,7 @@ qstr_Good|Good
 qstr_Med|Med
 qstr_Bad|Bad
 qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
+qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
 qstr_{reg4}_killed_{reg5}|{reg4} killed, {reg5} wounded, {reg6} routed
 qstr_{reg4}_killed_{reg5}_|{reg4} killed, {reg5} wounded
 qstr_{reg4}_killed_{reg5}_r|{reg4} killed, {reg5} routed
@@ -785,6 +797,16 @@ qstr_Drive_them_back!|Drive them back!
 qstr_Protect_the_City!|Protect the City!
 qstr_Forward!_Board_them!|Forward! Board them!
 qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
+qstr_on_the_left_flank|on the left flank
+qstr_on_the_right_flank|on the right flank
+qstr_through_the_center|through the center
+qstr_Attackers_charge_{s2|Attackers charge {s2}
+qstr_Attackers_charge_{s1|Attackers charge {s1}
+qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
+qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
+qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
+qstr_The_remaining_attack|The remaining attackers disperse!
+qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_Reached_Gauntlet_wav|Reached Gauntlet wave {reg1}!
 qstr_Ballista:_out_of_amm|Ballista: out of ammo!
 qstr_Ballista:_turn_CURSO|Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fire T, exit F
@@ -1457,13 +1479,14 @@ qstr_{s9}_has_asked_you_to|{s9} has asked you to rescue {reg1} prisoners.
 qstr_We_have_reports_that_a|We have reports that an enemy host may be gathering in {s13}. Clearly, this is of grave concern to me, as I don't know how many troops the enemy has and whether my soldiers will be ready to meet them on the field of battle. I want you to get close enough to {s13}, and find out as much as you can.
 qstr_My_spies_tell_me_of_|My spies tell me of a large group of warriors gathering in {s13}. They should be no match for us and our servants, but it wouldn't hurt to know just how many of them are there. I want you to get close enough to {s13}, and find out as much as you can.
 qstr_{s9}_asked_you_to_sco|{s9} asked you to scout around {s13}.
-qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts.
-qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee!
+qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts. I will also give you a few recruits, but you should not send them out on their own.
+qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee! I will give you these recruits, they won't be missed.
 qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|We need to take the battle to the enemy, {playername}. At this moment, we can do this by striking at his patrols and communications. I want you to eliminate {reg1} {s13} parties, that would help us regain initiative.
 qstr_We_need_to_grind_dow|We need to grind down our worthless enemies, {playername}. Their patrols and supply trains are growing too bold for my liking. I want you to eliminate {reg1} {s13} parties, so they'll learn to fear what's coming.
 qstr_{s9}_asked_you_to_el|{s9} asked you to eliminate {reg1} {s13} parties.
 qstr_{s9}_asked_you_to_fr|{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts.
+qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
 qstr_the_Dwarves_so_that_|the Dwarves, so that if you pass by Erebor or the Iron Hills, you can try to arm yourself with the fabled Dwarven weaponry
 qstr_Gondor_so_that_if_yo|Gondor, so that if you pass by their lands, you can try to purchase some of their well-known armours
 qstr_Rohan_so_that_if_you|Rohan, so that if you pass by their lands, you can try to purchase some of their fabled horses
@@ -1549,8 +1572,8 @@ qstr_Good_moves_but_you_m|Good moves, but you may still need some work to do.
 qstr_More_than_half_of_th|More than half of the opponents, not bad.
 qstr_You_ll_need_to_try_h|You'll need to try harder than that.
 qstr_Well..._better_here_|Well... better here than in combat, eh?
-qstr_We_ve_been_sent_by_L|We've been sent by Lord {s3}. We have come to join our strength to yours.
-qstr_Lord_{s3}_has_sent_u|Lord {s3} has sent us, to join the fleet attacking {s4}.
+qstr_We_ve_been_sent_by_{|We've been sent by {s3}. We have come to join our strength to yours.
+qstr_{s3}_has_sent_us_to_|{s3} has sent us, to join the fleet attacking {s4}.
 qstr_Excellent_{playernam|Excellent, {playername}! I heard that you gave them more than what I requested. That is great work.^^ Here, take this as an extra reward for exceeding our expectations. ^^ We need to win this war as soon as possible.
 qstr_Excellent_{playername|Excellent, {playername}. That will surely help them out. We need to win this war as soon as possible.
 qstr_Reinforcing_{s1}_has|Reinforcing {s1} has strengthened {s2}. ({s2} has gained {reg50} faction strength).

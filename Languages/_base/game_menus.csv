@@ -166,6 +166,9 @@ mno_strat_tweaks_back|Back to tweaks menu.
 menu_camp_action|^^^^^^^^^     Which object?
 mno_camp_drink_water|Drink the Ent Water!
 mno_camp_drink_orc_brew|Pass around the Orc Brew!
+mno_camp_drink_miruvor|Pass around the Miruvor!
+mno_camp_use_athelas|Use Athelas for wound treatment.
+mno_camp_use_drums|Beat the Drums of the Deep.											  
 mno_camp_action_4|Back.
 menu_assasins_attack_player_won|You have successfully defeated assassins from {s2}, sent by {s3}.
 menu_assasins_attack_player_retreat|You escaped with your life!

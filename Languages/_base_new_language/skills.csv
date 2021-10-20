@@ -51,7 +51,7 @@ skl_riding_desc|enables you to ride horses (or other beasts) of higher difficult
 skl_athletics|Athletics
 skl_athletics_desc|improves your running speed. (Personal skill)
 skl_shield|Shield
-skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
+skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Weapon Master
 skl_weapon_master_desc|makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
 skl_reserved_9|Reserved Skill 9
@@ -71,7 +71,7 @@ skl_power_throw_desc|Each point to this skill increases throwing damage by 10%%.
 skl_power_strike|Power Strike
 skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
 skl_ironflesh|Ironflesh
-skl_ironflesh_desc|Each point to this skill increases hit points by +2. (Personal skill)
+skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)
 skl_reserved_14|Reserved Skill 14
 skl_reserved_14_desc|This is a reserved skill.
 skl_reserved_15|Reserved Skill 15
