@@ -247,7 +247,7 @@ dlga_lord_start:lord_generic_mission_completed.3|{s12}付近の偵察隊から�
 dlga_lord_start:defend_village_failed|{s12}付近の偵察隊から、 おぬしが村の防衛に失敗したと報告を受けた。 村人は殺され、 あるいは奴隷として連れ去られてしまった。 やつら襲撃隊は、 日に日に大胆さを増しておる・・・^^決戦の時は、 間違いなく近いという事であろう。
 dlga_defend_village_failed:close_window|もうこのような事がないように致します
 dlga_lord_start:lord_generic_mission_completed.4|{s12}付近の村から、 火の手が上がっているのを見た。 叫び声も聞いた。 {playername}よ、 これは始まりに過ぎない。^^戦争の時が来たのだ。
-dlga_lord_start:raid_village_failed|{s12}付近の村から逃げていく数名のおぬしの部下を見たぞ。 よくぞその顔をさらしにこの場へ戻ってこれたものだな、 {playername}？ ^^戦いの時は近いが、このような失態をさらすようなら、最初の犠牲者はおぬしになる。
+dlga_lord_start:raid_village_failed|{s12}付近の村から逃げていく数名のおぬしの部下を見たぞ。 よくぞその顔をさらしにこの場へ戻ってこれたものだな、 {playername}？ ^^戦いの時は近いが、このような失態をさらすようでは、 最初の犠牲者はおぬしになるやも知れぬのう。
 dlga_raid_village_failed:close_window|もうこのような事がないように致します。
 dlga_lord_start:lord_target_lord_failed|任務に失敗したそうだな。 失望したぞ、 {playername}。
 dlga_lord_target_lord_failed:close_window|もうこのような事がないように致します。
@@ -567,8 +567,8 @@ dlga_lord_tell_mission:lord_mission_told.1|私と長いつきあいの友であ�
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|どのくらい必要なのですか？
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|{s14}を{reg1}名、 育て上げて私に引き渡してくれれば、 充分であろう。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|よろしいでしょう、{s65}。私に{reg1}名の新兵をお預けください。立派な{s14}に育て上げてご覧に入れましょう。
-dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|{s65}殿、私に考えがあります。その{reg1}名の新兵たちに、私が訓練場で直接ひとつ、ふたつ稽古をつけてやるというのはどうでしょう。
-dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|{s65}殿、私に考えがあります。その{reg1}名の新兵たちに、私が訓練場で直接ひとつ、ふたつ稽古をつけてやるというのはどうでしょう。それで彼らが突然{s14}に変身するわけではありませんが、ひとつ成長するはずです。
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|{s65}、私に考えがあります。その{reg1}名の新兵たちに、私が訓練場で直接ひとつ、ふたつ稽古をつけてやるというのはどうでしょう。
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|{s65}、私に考えがあります。その{reg1}名の新兵たちに、私が訓練場で直接ひとつ、ふたつ稽古をつけてやるというのはどうでしょう。それで彼らが突然{s14}に変身するわけではありませんが、ひとつ成長するはずです。
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|近頃は他人を訓練してやる暇などありません。
 dlga_lord_mission_raise_troops_accepted:close_window|おぬしのお陰で肩の荷が下りたわ、 {playername}。 我が部隊の兵長に、 新兵をおぬしの指揮下へ送るよう、 伝えておこう。 それから、 経費の足しに、 おぬしにいくらか前金を渡しておこう。 さあ、 これで充分であろう。 感謝する。
 dlga_lord_mission_raise_troops_alternate:close_window|{playername}よ、それはおもしろい考えだ。新兵どもを訓練場に向かわせるよう、兵長に伝えるとしよう。おぬしもそこへ行って、連中をしごき上げてくれ。私も見物するとしよう。おぬしには感謝するぞ。

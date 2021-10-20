@@ -638,7 +638,7 @@ qstr_have_won_the_sea_bat|はこの海戦に勝利し、あなたの兵は殲滅
 qstr_loses_Faction_Strength|は破壊的な襲撃を受けたため、 勢力ポイントが下がりました。
 qstr_loses_Faction_Strength_|はあなたの海における活躍により、 勢力ポイントが下がりました。
 qstr_You_spent_{reg67}_of|あなたは{s1}での影響力ポイントを{reg67}消費しました。 残りは{reg66}です。
-qstr_{s2}_{reg3?was:is_ar|{s2}{reg3?た:周りにあります{s5}.
+qstr_{s2}_{reg3?was:is_ar|{s2}は{s5}周辺にい{reg3?た:る。
 qstr_{s1}_{s0}|{s1},{s0}
 qstr_{s1}_and_{s0}|{s1}および{s0}
 qstr_No_Troops_Left.|兵はもういません。
@@ -718,9 +718,9 @@ qstr_Fixed_Camera___Cente|固定カメラ - 中央
 qstr_Shield_is_too_big_to|盾は大きすぎて弓と同時には扱えません。
 qstr_While_visiting_towns|町や拠点、野営のなかでは、歩き回っている人々と話をすることができます。 話の内容は各勢力によって違い、 自分たちの考えだったり、 うわさ話だったりします。 どちらもその人物の文化と所属勢力についての理解を深めるだけのものですが、 秘密の場所のヒントや、 旅をする上や指輪戦争を戦う上でのヒントやコツを話してくれる事もあります。
 qstr_Cannot_leave_now.|今は離脱できません。
-qstr_You_have_found_the_l|地元の鍛冶屋を見つけました。
-qstr_You_have_found_the_lo|地元の役所を見つけました。
-qstr_You_have_found_the_loc|地元の貯蔵所を見つけました。
+qstr_You_have_found_the_l|拠点の鍛冶屋を見つけました。
+qstr_You_have_found_the_lo|拠点の管理責任者を見つけました。
+qstr_You_have_found_the_loc|拠点の貯蔵所を見つけました。
 qstr_You_look_through_Hen|あなたは夕陽の窓とも呼ばれるヘンネス・アンヌーンを見て回った。 その美しさに、あなたは西方とその底力に対する認識をあらためた。
 qstr__cancelled_the_{reg1|(捕虜を殺害して得た経験値{reg10}をキャンセルしました)
 qstr_Forming_ranks.|横陣を組みます。
@@ -1396,7 +1396,7 @@ qstr_{s9}_wants_you_to_de|{s9}の命により、戦場にて{s36}の {s35}を倒
 qstr_I_humbly_ask_that_yo|恐れ入りますが、これは他の者にお申し付けください。{s7}を戦闘にて打ち倒すなど、私には思いもよりません。
 qstr_Mercy_I_crave!_To_fa|お許しください、どうかお慈悲を！{s7}と戦場で対峙するなど、おそるべき愚挙と存じます！私にはできません！
 qstr_strong_warriors_from|{s7}の強力な戦士たち
-qstr_champions_from_{s7}_|戦場における最強の戦士、{s7}軍の最精鋭たち
+qstr_champions_from_{s7}_|戦場における最強の戦士、 {s7}軍の最精鋭たち
 qstr_{playername}_the_men|{playername}よ、 我が兵は恐るべき敵の兵の話に震え上がっておる。 おぬしの力でもって、 怖れるものなど何もないと兵士たちに示してもらいたい。 {s6}に戦いを挑み、 これを{reg22}名を打ち倒してくれ。
 qstr_{playername}_I_want_|{playername}よ。おぬしの力で、敵勢など物の数ではないという事を、 我が軍の兵に示してもらいたい。 おぬし自身の手で、 {reg22}名の{s6}を打ち倒してくれ！ 我が軍が最強であるという事を知らしめるのだ！
 qstr_I_will_do_what_you_a|お望みの通りにいたしましょう。兵によく示してやることにします。
