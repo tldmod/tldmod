@@ -1,4 +1,4 @@
-1679
+1677
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -360,8 +360,6 @@ qstr_CHARGE!_Let_s_clear_ CHARGE!_Let's_clear_the_{s18}_{s19}scum_from_{s17}!
 qstr_{s14}Now_that_{s19}s {s14}Now_that_{s19}scum_will_taste_the_fury_of_the_bear_people!
 qstr_Attack! Attack!
 qstr_TLD_ERROR!_could_not TLD_ERROR!_could_not_spawn_the_party_on_the_same_side_of_the_white_mountains
-qstr_terrain_type:_{reg78 terrain_type:_{reg78}
-qstr_debug:_teleporitng_t debug:_teleporitng_to_party_ID_N._{reg10}
 qstr_Cheat:_Impose_a_batt Cheat:_Impose_a_battlefield
 qstr_debug:_using_scene_I debug:_using_scene_ID_N._{reg10}
 qstr_You_are_attacked_by_ You_are_attacked_by_a_group_of_goblins!

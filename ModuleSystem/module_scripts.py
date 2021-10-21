@@ -1969,7 +1969,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 22),  #Rafa: Savegame version
+    (assign,"$savegame_version", 23),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -24824,6 +24824,15 @@ command_cursor_scripts = [
         (troop_set_slot, "trp_elder_uhcamp", slot_troop_gm_companion_player_found, "str_isengard_hunting_camp_guildmaster_player_found_ok"),
         (party_set_slot, "p_town_urukhai_h_camp", slot_party_has_companion, 1),
         (assign, "$savegame_version", 22),
+	(try_end),	
+
+    (try_begin), #InVain - 21 Oct 2021, fix strength for healers to meet armour requirements 
+        (le, "$savegame_version", 22),	
+        (try_for_range, ":healer", trp_morannon_healer, trp_hungry_uruk),
+            (troop_raise_attribute, ":healer", ca_strength, -30),
+            (troop_raise_attribute, ":healer", ca_strength, 30),
+        (try_end),
+        (assign, "$savegame_version", 23),
 	(try_end),	
 
 ]),
