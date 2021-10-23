@@ -35,7 +35,7 @@ skl_riding_desc|Permite você montar em cavalos (ou outras animais) com maiores 
 skl_athletics|Atletismo
 skl_athletics_desc|Aumenta a sua velocidade de corrida. (Habilidade Pessoal)
 skl_shield|Escudo
-skl_shield_desc|Reduz danos ao escudo (em 8%% por cada nível de habilidade) e aumenta a cobertura e a velocidade do escudo. (Habilidade Pessoal)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Mestre de Armas
 skl_weapon_master_desc|Facilita o aprendizado de armas e aumenta o limite de competência. Limites vão por: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Habilidade Pessoal)
 skl_power_draw|Poder de Puxada
@@ -45,4 +45,4 @@ skl_power_throw_desc|Cada ponto aumenta o dano de arremessáveis em 10%%. (Habil
 skl_power_strike|Poder de Golpe
 skl_power_strike_desc|Cada ponto nesta habilidade aumenta o dano de armas brancas em 8%%. (Habilidade Pessoal).
 skl_ironflesh|Pele de Ferro
-skl_ironflesh_desc|Cada ponto nesta habilidade aumenta seus pontos de vida em +2. (Habilidade Pessoal)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

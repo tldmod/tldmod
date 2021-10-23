@@ -144,7 +144,7 @@ itm_arnor_greaves|Arnorian Baldır Zırhı
 itm_arnor_shield_a|Arnorian Kalkanı
 itm_arnor_shield_c|Arnorian Süvari Kalkanı
 itm_arnor_sword_a|Arnorian Piç Kılıç
-itm_arnor_sword_c|Arnorian Piç Kılıç
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|Arnor Kısa Kılıç
 itm_riv_helm_a|Ayrıkvadi Takkesi
 itm_riv_helm_b|Ayrıkvadi Okçu Migferi
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Gondor Okçu Başlıgı
 itm_gondor_light_greaves|Gondor Deri Baldır Zırhı
 itm_gondor_med_greaves|Gondor Ortalama Baldır Zırhı
 itm_gondor_heavy_greaves|Gondor Örgü Baldır Zırhı
-itm_gondor_infantry_helm|Gondor Piyade Migferi
 itm_gondor_auxila_helm|Gondor Hafif Migferi
 itm_gondorian_archer_helm|Gondor Okçu Migferi
 itm_tower_archer_helm|Kule Okçusu Migferi
 itm_gondor_leader_helm|Gondor Üstün Migferi
 itm_tower_guard_helm|Kule Gardiyanı Migferi
 itm_gondor_citadel_knight_helm|Kale Şovalyesi Migferi
+itm_gondor_infantry_helm|Gondor Piyade Migferi
 itm_gondor_knight_helm|Gondor Süvari Migferi
 itm_gondor_dolamroth_helm|Dol Amroth Migferi
 itm_swan_knight_helm|Kugu Şovalye Migferi
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Lihnir Eket
 itm_pelargir_eket|Pelargir Eket
 itm_pelargir_sword|Pelargir Kılıç
 itm_gondor_ranger_sword|Gondor Okçu Kılıcı
-itm_gondor_bastard|Gondor Piç Kılıç
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|Gondor Kale Kılıcı
 itm_gondor_cav_sword|Gondor Süvari Kılıcı
 itm_gondor_spear|Gondorian Mızragı
 itm_gondor_tower_spear|Gondorian Kule Mızragı
 itm_gondor_lance|Gondor Mızragı
-itm_loss_axe|Lossarnach Dövüş Baltası
-itm_loss_war_axe|Lossarnach Savaş Baltası
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|Lorien Uzun Kılıç
 itm_lorien_sword_b|Lorien Kısa Kılıç
 itm_lorien_sword_c|Lorien Savaş Kılıcı
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Isengard Ork Zırhı
 itm_isen_orc_armor_f|Isengard Ork Zırhı
 itm_isen_orc_armor_g|Isengard Ork Zırhı 
 itm_isen_uruk_light_a|Uruk-Hai Hafif Üniforma
-itm_isen_uruk_light_b|Uruk-Hai Deri Zırh
-itm_isen_uruk_light_c|Uruk-Hadi Deri Zırh
-itm_isen_uruk_light_d|Uruk-Hai Örgü Zırh ve Deri
-itm_isen_uruk_light_e|Uruk-Hai Örgü Zırh Üniforma
-itm_isen_uruk_heavy_a|Uruk-Hai Örgü Zırh ve Deri 
-itm_isen_uruk_heavy_b|Uruk-Hai Agır Zırh
-itm_isen_uruk_heavy_c|Uruk-Hai Agır Zırh
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|Uruk-Hai İzci Deri Zırh
 itm_isen_uruk_heavy_e|Uruk-Hai İzci Deri Zırh
 itm_uruk_tracker_boots|Uruk İzci Çizmesi

@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(Nemožné povyšovať jednotky predané do inej sk
 ui_lance_control|Ovladateľnosť jazdeckej kopije
 ui_manual_easy|Manuálny (ľahký)
 ui_manual_hard|Manuálny (ťažkých)
-ui_campaign_ai|Umelá inteligencia behom kampane (Nepoužité):
+; ui_campaign_ai|Campaign Difficulty (Default: Average):
 ui_crouch|Drepnúť si
 
 # swy: added from this spreadsheet, as requested by our translators:

@@ -35,7 +35,7 @@ skl_riding_desc|Cho phép bạn cưỡi ngựa (hoặc các con thú khác) có 
 skl_athletics|Cường tráng
 skl_athletics_desc|Cải thiện tốc độ chạy của bạn. (Kỹ năng cá nhân)
 skl_shield|Khiên
-skl_shield_desc|Tăng sát thương cho lá chắn (8%% mỗi cấp kỹ năng) và cải thiện tốc độ và phạm vi che chắn của lá chắn. (Kỹ năng cá nhân)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Bậc thầy vũ khí
 skl_weapon_master_desc|Làm cho việc học thành thạo vũ khí dễ dàng hơn và tăng giới hạn trình độ. Các giới hạn là: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Kỹ năng cá nhân)
 skl_power_draw|Sức mạnh Draw
@@ -45,4 +45,4 @@ skl_power_throw_desc|Mỗi điểm của kỹ năng này tăng sát thương né
 skl_power_strike|Sức mạnh đánh đập
 skl_power_strike_desc|Mỗi điểm của kỹ năng này tăng 8%% điểm sát thương cận chiến (Kỹ năng cá nhân)
 skl_ironflesh|Dục vọng sắt đá
-skl_ironflesh_desc|Mỗi điểm của kỹ năng này sẽ tăng điểm đánh lên +2. (Kỹ năng cá nhân)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

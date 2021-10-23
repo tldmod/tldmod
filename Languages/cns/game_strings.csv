@@ -1823,20 +1823,20 @@ str_fullname_region_gap_of_rohan|洛汗隘口，洛汗的西边境，洛汗人�
 str_fullname_region_entwash|树沐河三角洲，流经洛汗的树沐河在这里与安都因河交汇
 str_fullname_region_wetwang|宁道夫沼泽，别名威顿。
 str_fullname_region_dead_marshes|死亡沼泽，达哥拉之战发生的地方，而现在则是诅咒之地
-str_fullname_region_isengard|艾辛格周边平原
+str_fullname_region_isengard|Nan Curunir（辛达语：巫师峡谷），艾辛格山谷
 str_fullname_region_fangorn|法贡森林，据说这里的树会说话
 str_fullname_region_brown_lands|褐地，艾明莫尔与幽暗密林之间
 str_fullname_region_dagorlad|战争平原，黑门前的一片无树大平原
 str_fullname_region_n_undeep|南河套，安都因河第一次转向之地
 str_fullname_region_s_undeep|南河套，安都因河第二次转向之地
-str_fullname_region_emyn_muil|艾明莫尔，树沐河汇入安都因河处的石山
-str_fullname_region_misty_mountains|迷雾山脉山麓
+str_fullname_region_emyn_muil|东艾明穆尔，阿蒙罗山顶上的石丘
+str_fullname_region_misty_mountains|北迷雾山脉山麓
 str_fullname_region_lorien|罗斯洛立安，辛达精灵的森林，金色梅隆树生长的地方。
-str_fullname_region_anduin_banks|安都因河谷，迷雾山脉与幽暗密林之间
+str_fullname_region_anduin_banks|安都因中游河谷，卡尔岩与罗斯洛立安之间
 str_fullname_region_n_mirkwood|幽暗密林北部，木精灵的家。
 str_fullname_region_s_mirkwood|幽暗密林南部，据说被奇怪生物侵扰
-str_fullname_region_above_mirkwook|北罗马尼安，幽暗密林和灰色山脉之间的区域
-str_fullname_region_grey_mountains|灰色山脉山麓，矮人的领地
+str_fullname_region_c_mirkwood|幽暗密林的林海中，林地人聚居处
+str_fullname_region_grey_mountains|灰色山脉山麓
 str_fullname_region_mordor|魔多，索伦的黑暗王国
 str_fullname_region_dimrill|黯溪谷，在摩瑞亚山脉的山脚下。
 str_fullname_region_s_rebor|河谷镇王国，在孤山山脚下。
@@ -1865,15 +1865,19 @@ str_shortname_region_gap_of_rohan|洛汗隘口
 str_shortname_region_entwash|树沐河三角洲
 str_shortname_region_wetwang|宁道夫沼泽
 str_shortname_region_dead_marshes|死亡沼泽
-str_shortname_region_isengard|艾辛格周边平原
+str_shortname_region_isengard|Nan Curunir（辛达语：巫师峡谷）
 str_shortname_region_fangorn|法贡森林
 str_shortname_region_brown_lands|褐地
-str_shortname_region_misty_mountains|迷雾山脉山麓
+str_shortname_region_dagorlad|达哥拉（战争平原）
+str_shortname_region_n_undeep|北河套
+str_shortname_region_s_undeep|南河套
+str_shortname_region_emyn_muil|艾明穆尔
+str_shortname_region_misty_mountains|北迷雾山脉山麓
 str_shortname_region_lorien_|罗斯洛立安
-str_shortname_region_anduin_banks_|安都因河谷
+str_shortname_region_anduin_banks_|安都因中游河谷
 str_shortname_region_n_mirkwood_|北幽暗密林
 str_shortname_region_s_mirkwood_|南幽暗密林
-str_shortname_region_above_mirkwook|北罗马尼安
+str_shortname_region_c_mirkwood|幽暗密林
 str_shortname_region_grey_mountains|灰色山脉山麓
 str_shortname_region_mordor|魔多之地
 str_shortname_region_dimrill|黯溪谷
@@ -2117,7 +2121,7 @@ str_formations|战场菜单上的复杂阵型分别为：^^—线阵：高级部
 str_npc18_intro|大人，请等一下！我想和你说点事！
 str_npc19_intro|等一下，指挥官。我有一些话要对你说。不，不，你不需要跪下，即使你和一个拥有皇室血统的人说话。
 str_npc20_intro|等等。你。我见过你。我知道你的脸。我曾做过一个梦，关于你的——但是为什么会是你呢？现在我看到你自己的眼睛，你只是一个卑微的奴隶！
-str_npc21_intro|欢迎来到金殿，战士！
+str_npc21_intro|滚开，小苍蝇，不然窝就碾碎你！吼吼吼吼吼吼吼吼吼！（*食人妖她漫不经心龇牙低吼着*）
 str_npc22_intro|嘿，{playername}。Mae govannen（辛达林语：很高兴见到你！）
 str_npc23_intro|离我远点，陌生人！我可不想和你说话！
 str_npc24_intro|奇力，德瓦林之子，乐意效劳！
@@ -2127,7 +2131,7 @@ str_npc27_intro|你！
 str_npc18_intro_response_1|一个身陷囹圄、要被处死的奴隶想要和我说话？你有什么想说的？
 str_npc19_intro_response_1|你说皇室血统？哈！是什么让你觉得你甚至有一滴皇室血液？
 str_npc20_intro_response_1|看这里，你这是什么意思，女巫？你是谁？
-str_npc21_intro_response_1|向你问好，我的女士。我是否有幸得知您的芳名？
+str_npc21_intro_response_1|啊哈，你真是吓尿我了呢。好可怕哦，被一根小小的铁链栓着的巨魔！来打烂我的头呀？
 str_npc22_intro_response_1|您好，精灵贵族！与您相见真是三生有幸。（注：葛罗芬戴尔是诺多精灵王族，在魔戒魔戒同盟卷二第一章中被甘道夫评价为：‘首生儿女中大有力量的人物之一’‘隶属王侯家族的精灵领主’；首生儿女是精灵族别称）
 str_npc23_intro_response_1|这是西尔凡精灵（木精灵别称）向客人打招呼的方式？
 str_npc24_intro_response_1|{playername}竭诚为您服务。都灵的子民们过得如何？
@@ -2137,7 +2141,7 @@ str_npc27_intro_response_1|你是谁？
 str_npc18_intro_response_2|我不会把话浪费在一个被处死的奴隶身上。
 str_npc19_intro_response_2|厚颜无耻的坏蛋。别挡我的路。
 str_npc20_intro_response_2|我没有时间听你的胡言乱语，女巫。
-str_npc21_intro_response_2|不好意思，我在其他地方有紧急事情要做。
+str_npc21_intro_response_2|这次我就留着你的小命，垃圾畜生。（离开）
 str_npc22_intro_response_2|不好意思，我还有一些不那么重要的客人要招待。
 str_npc23_intro_response_2|我也正有此感，再见。
 str_npc24_intro_response_2|没关系，我需要一些新鲜空气。
@@ -2147,7 +2151,7 @@ str_npc27_intro_response_2|[忽视并离开]
 str_npc18_backstory_a|我不只是一个奴隶！我是个猎头人战士，被人骗取了在队伍中的地位。你能看到我是一个女人，但我比许多人强壮而且敏捷，而且我曾战胜过很多人。角斗场主人—那个该死的人！他给我做了一个测试，一次与三个人战斗。三个！
 str_npc19_backstory_a|当然，一小滴，但是我的过去告诉了我所有的血统。我的名字是海德克，范哲尔国王的直系后裔，比这里任何的酋长都更接近洛汗和登兰德的宝座！我的头发是黑色的，但我想在某个地方有一束黄色。
 str_npc20_backstory_a|在我的梦里，有一棵树。一切都是白色的。还有你，你在那里，站在旁边。你把你的手放在它的躯干上，然后，它就枯萎了。天空的阴影蔓延着，空气变得越来越凝重。我听到一阵笑声，从遥远的东方传来。
-str_npc21_backstory_a|我叫格尔玛，今天是专程来见你的，{playername}。让我来告诉你原因。
+str_npc21_backstory_a|哈，只要再筋点我就能像扭嫩枝一样拧断你的头。来呀！看我踩爆你的狗肺，压碎你的烂骨，宰榨出你的脑汁来。
 str_npc22_backstory_a|你可能曾听说过我在战场上的功绩，那早已被凡人遗忘的功绩。这次战争将会是艾尔达面临的又一次危机，但这将是最后一次战争。（注：艾尔达是精灵的别称，星辰的子民）
 str_npc23_backstory_a|请原谅我的莽撞，陌生人，我们这里的访客很少并且他们看起来都并不可信。数周之前，这个矮人出现在这里然后…不好意思，我跑题了。我的名字是露亚瓦纳，幽暗密林中的西尔凡精灵（木精灵别称）。
 str_npc24_backstory_a|感谢你这么礼貌的询问，{playername}。我们这在和入侵的东方人以及刚达巴半兽人交战，但目前为止，没有什么事儿是我们和我们的河谷镇盟友不能解决的。
@@ -2157,7 +2161,7 @@ str_npc27_backstory_a|我是都戈什！
 str_npc18_backstory_b|我赢了！ 我打败了他们！ 但是...其中一个人太虚弱了，以至于他因我对他的攻击而丧命。 如果他只是一个简单的担保人，那就没什么。 但不是。 他是是卢姆沙空大帝的许多儿子之一，他的一个较小的妻子生的。
 str_npc19_backstory_b|好吧，你不会找到任何接受我的请求的洛汗或登兰德人。但这是一个真实的故事。我的祖母是一个牧民，住在山坡上，有一天，偶然发现了老国王范哲尔，冒牌希优顿的贪婪的爷爷，碰巧看到她在艾辛河岸边上。他对她很着迷，然后我曾经是他的孩子。
 str_npc20_backstory_b|你不知道你面前是谁吗？无知的傻瓜。知道我的名字是齐古法。古老的阿卡拉贝斯——但你不知道那个名字！知道，另外，我在寻求改变的方法很久了，我和我的人民被维拉怨恨，我们的舰队和家园都被他们击沉了。啊，亚尔法拉松，伟大而光荣！你的梦想会被遗忘吗？不，不会太久，只要齐古法活着，就会用她的手去做这件事！
-str_npc21_backstory_b|我生于一个贵族家庭，从我还是一个小女孩儿的时候，我就被选作伊欧玟女士的伴娘服侍他。我们的父辈很明智，允许我们像男孩儿一样接受战斗训练，让我们成为了洛汗的执盾之女。
+str_npc21_backstory_b|看来尼也是个硬茬子啊。（*她叹气道*）俺是柏妲，以前在迷雾山脉里带着一队“攻益”伙计搞事，说起来，他们可是这块地上最狠的的半兽人盗贼了。那些一去不复返的好日子诶。然后有天咱遇上了一堆刚达巴来的伙子，就跟那些半受人，一起喝啾……结果第贰天醒来俺就被五花大绑了，队里的伙计也全都溜了。现在那些半兽人让俺开石头拉行李，有时候还下注让俺打架。
 str_npc22_backstory_b|我是埃尔隆德大人向凯勒鹏大人派遣的大使，我的任务包括提供援助与建议，以支援位于罗马尼安的战争。
 str_npc23_backstory_b|我很喜欢游走在我们美丽森林的隐蔽小径中。有时我会放轻脚步，去观察林中动物的习性。对伊甸人来说，成捆的武器和高大的城墙很美；但就我个人而言，稀有鸟儿歌唱和野猪巢穴也并不逊色。
 str_npc24_backstory_b|在我尊敬的父亲德瓦林的指挥下，也正如我们的传统一般，我曾帮助加强孤山的防御并训练了一群矮人小伙子们。
@@ -2167,7 +2171,7 @@ str_npc27_backstory_b|我是艾辛格的一名狼骑兵，也是一名追踪者�
 str_npc18_backstory_c|所以，我在这里被诅骂和唾弃，因为我比嘲笑我的狗更强大所以被定罪！让我重获自由吧，大人。为我说上两句，让我自由—让我为你所用。我的剑即是你的剑。我将为你而战！
 str_npc19_backstory_c|当然地，代格拉夫酋长和其余的人都不给我获得荣耀的机会，因为如果我在战斗中做了伟大的事，他们才会给我的要求提供帮助。那时人们将会聚集在我的旗帜下！你也会听到人们欢呼你的名字，指挥官。如果你能让我在你的旗帜下服役，我可以为你做那些伟大的行动。
 str_npc20_backstory_c|阿卡拉贝斯，你现在在哪里？消失了，一切都消失了…那里曾经是明亮的，我们国家的荣耀胜过一切，现在那里只有阴影。我美丽的家现在知道了大海永恒的寂静。但我的心在怒火中燃烧，黑暗的野兽在里面奔跑。我知道你和你的善良的艺术从来没有想象过。听我说，现在！你愿意恳求我的帮助，或者，像虫子一样偷偷摸摸地走开？快速决定！
-str_npc21_backstory_c|你可能知道，身为一个女性，哪怕武艺再出色，也没法和éoredas（注：洛汗骑兵编制，由一百二十名着甲骑兵组成）一起冲锋。但我并不认为在炉火边等待战士们回归是我的命运。我不会闲坐，也不会让这场战争中获得伟绩的机会从我身边溜走。所以我希望成为你的臂助，战士大人。
+str_npc21_backstory_c|小家伙，那各，如果尼真是个大佬的话，爷许你可以跟地头蛇谈谈，帮俺把欠的付了？俺估摸着俺能加入你的孝队伍，去逛逛世界，吃点羊羊……（*她舔了舔那吓人的獠牙*）
 str_npc22_backstory_c|然而，如果罗斯洛立安的敌人撤退了的话，我倒是会考虑加入你的队伍一段时间，{playername}。我可以感觉到，我们的命运在这场战争中是相互交汇的。
 str_npc23_backstory_c|我猜你并没有理解我刚刚说的话—鉴于你正在为战事做准备。但你一定旅行了很远很广，那你之前见过其他大森林么？你可以带我去那里么？
 str_npc24_backstory_c|然而我们在参战的问题上有一点点迟钝，这和先祖留下的战士传统不一样。我听说你在旅行中的行动远多于我们，而且你的目的也与矮人友善。 要知道一个精于战斗的矮人会大大提高你的生存机会。
@@ -2177,7 +2181,7 @@ str_npc27_backstory_c|或许你是我下一位主人！
 str_npc18_backstory_later|我想，我很幸运，那位伟大的领主托姆萨昆去别的地方了，他的权力让他腐烂。但我的命运绝不是作为一个囚犯死去！你能让我像一个战士一样死在战场上吗？
 str_npc19_backstory_later|很好，你回来了，我知道你会的。酋长们嫉妒我的无所事事。让我们大声呼喊吧，指挥官！我会跟随你，在你的队伍中为自己赢得胜利。
 str_npc20_backstory_later|你还在搅扰我的梦! 你要使我不得安宁吗? 我做梦的眼睛看得又深又远。在多尔哥多，我仍然对你的作品有幻想。我是这么说的: 如果你聪明的话，你早就又来找我帮忙了。
-str_npc21_backstory_later|越来越多的骑兵带着伤回来了，我尽我所能的给予援助。但我还是有种被困笼中的压抑感。
+str_npc21_backstory_later|瞧瞧这有什么好货！自个儿的活干得不错啊。尼在外面游荡着享受美好时光，不用和踏马的破石头锁在一起？！这针布戳啊！那么为窝和老大谈谈怎么杨？救现在，总好过撒也不做吧。
 str_npc22_backstory_later|你重新考虑过了么？艾尔达的时间不多了。（注：艾尔达是精灵的别称，星辰的子民）
 str_npc23_backstory_later|我已经观察一个巨型蜘蛛巢好几天了。我对它们的第一印象非常糟糕，简直是丑陋的生物，但现在看来它们会让入侵者陷入绝境。你是来邀请我跟你一起旅行的么？
 str_npc24_backstory_later|建造防御用墙对任何矮人都物有所值。但我也需要用用我的斧子。让我跟着你吧。
@@ -2187,7 +2191,7 @@ str_npc27_backstory_later|你重新考虑过了么？我会是个好仆人的。
 str_npc18_backstory_response_1|如果你真的像你说的那样凶猛，那也许你可以为我而战。当然，在我们为你准备一顿饱餐之后。
 str_npc19_backstory_response_1|很好。只要你能在战场上战斗，你就有所用处，登兰德人。
 str_npc20_backstory_response_1|你想要以奇怪的方式加入我，女巫。但是很好，你可以来。
-str_npc21_backstory_response_1|我很欢迎洛汗执盾之女的加入，当然，是在你自愿的前提下。
+str_npc21_backstory_response_1|你这家伙确实够大只的，看着也懂得怎么打架。我觉得你是有点用处的。
 str_npc22_backstory_response_1|请原谅我冒昧的请求，但我的队伍在接下来的战斗中很需要你的才能。
 str_npc23_backstory_response_1|我们在整个中土世界旅行，守护一切美好的东西，并给我们的敌人带去死亡。
 str_npc24_backstory_response_1|的确，我们队伍很欢迎一位矮人战士的加入。
@@ -2197,7 +2201,7 @@ str_npc27_backstory_response_1|你会的。
 str_npc18_backstory_response_2|呸！一个凶残的坑狗没有资格成为我的同伴。
 str_npc19_backstory_response_2|哈！你说的是伟大的事情。在你再次接近我之前，去做一些你自己的事情吧！
 str_npc20_backstory_response_2|呸！我猜你的吠声比你的咬更糟。我还有事情要做！
-str_npc21_backstory_response_2|对不起，我的女士。我没法帮到你。
+str_npc21_backstory_response_2|不走运啊，食人妖。我还没那个本事给你这样惨的讨价还价。
 str_npc22_backstory_response_2|等罗斯洛立安脱离险情的时候我会回来的。
 str_npc23_backstory_response_2|对不起，我们对人形衣架不感兴趣。
 str_npc24_backstory_response_2|对不起，我们自己能行。
@@ -2207,7 +2211,7 @@ str_npc27_backstory_response_2|我不需要你，奴隶。
 str_npc18_signup|噢，再让我咬一口肉！一旦我的手和脚自由了，我就能填饱肚子，你很快就能看到我真正的勇气了！
 str_npc19_signup|是的，你现在可以这样称呼我，因为我不为我的登兰德血感到羞愧。我的人民在洛汗暴君的统治下备受煎熬，我能感到他们的痛苦。我将在这场战争尽我全力帮助你。但作为回报，指挥官，你必须在时机成熟时帮助我。
 str_npc20_signup|我暂时不计较你的傲慢，但要知道总有一天我们会再次相遇。也许在那时，我们都会站在黑魔王面前，我以前认识的那个，名字跟现在大不相同，到那时我们就可以知道他的耳朵偏向谁了。也许到那时我会教给你礼仪。
-str_npc21_signup|你的提议很让人高兴。希望你的队伍已经准备好迎接新伙伴了，指挥官。
+str_npc21_signup|那尼快去交舌！去找这的老大放我离开这个破洞。
 str_npc22_signup|我明白了，我不得不承认你的名声与功绩已被我所知。
 str_npc23_signup|我不喜欢战争中的暴力和武器，但至少我还知道该怎么保护好我自己。
 str_npc24_signup|我可以熟练的使用斧子，不管挥砍的还是投掷的都可以。如果你让我和商家交谈的话，我还可以尽量争取更高的折扣。我还有一双发现战利品的慧眼，如果你让我在战后打扫战场的话。
@@ -2217,7 +2221,7 @@ str_npc27_signup|真的么？我的加入会帮助你很多的。
 str_npc18_signup_2|我母亲曾经告诉我，我生来就是为了杀更多的敌人。为了你，我会杀死许多西方的弱者。只要给我把好刀就够了！
 str_npc19_signup_2|我会像我的族人一样战斗，就像夜晚的狼——我能投掷标枪，或者把超长枪刺向迎面冲锋来的骑兵的胸膛。我会用斧头或剑砍断四肢。对于你，我要坦率地说：我不在乎你臣服于魔眼还是白手。只要能在金色大厅里坐上我应有的宝座，一切都是我的。
 str_npc20_signup_2|但就目前而言，让我为您奉献多年的传奇和手工艺为您服务。 知道这一点：在齐格普尔的帮助下，您就像一条龙在乌顿（地狱）中的翅膀一样。 我将为您和您的目标做伟大的事情，尽管您不理解它们！
-str_npc21_signup_2|我已经用弓箭和标枪狩猎过了很多次了，而这次我将在你的指挥下狩猎半兽人。另外我还会疗伤。我可以肯定你会需要我的。
+str_npc21_signup_2|窝就跟在你后边，不用怕你就了。
 str_npc22_signup_2|如果你在野外保持高调并被敌人围攻的话，战斗肯定不会势均力敌。我会帮助你的。
 str_npc23_signup_2|也许我可以教你怎么快速移动并且保持安静，我们走吧！
 str_npc24_signup_2|如果你能好好管束队伍中的高个们，尤其是那些奸猾似鬼的精灵，我会很高兴加入你的。
@@ -2227,7 +2231,7 @@ str_npc27_signup_2|你不会后悔带我走的。
 str_npc18_signup_response_1|我喜欢你的精神。很好，我会在卢姆萨昆前替你说话的。
 str_npc19_signup_response_1|那么，“王子”，拿起你的武器。现在你得为我而战。
 str_npc20_signup_response_1|希望你的言语不是空话。不要让我失望，齐古法。
-str_npc21_signup_response_1|令人钦佩，我的女士！我们随时都可以出发。
+str_npc21_signup_response_1|很好，让咱来看看你是不是有点价值。
 str_npc22_signup_response_1|精灵贵族的加入是我们的荣幸。
 str_npc23_signup_response_1|很好，我只希望你不会一见半兽人就脚底抹油。
 str_npc24_signup_response_1|很好，矮人大师，欢迎你的加入。
@@ -2237,7 +2241,7 @@ str_npc27_signup_response_1|很好，出发吧。
 str_npc18_signup_response_2|你很凶猛…也许太凶猛了。可能在监牢里多呆点时间才能让你学会服从。
 str_npc19_signup_response_2|你只能坐在这捆干草上了，“王子”。
 str_npc20_signup_response_2|你的傲慢和恶言令我感到刺耳。在我们再交谈之前，先学会怎么说话！
-str_npc21_signup_response_2|向你致歉，我的女士，也许下次吧。
+str_npc21_signup_response_2|算了，我现在其实用不着你。
 str_npc22_signup_response_2|经过仔细考虑，我想我们自己就能帮助罗斯洛立安。
 str_npc23_signup_response_2|对不起，我根本无法想象你在战场上的样子。
 str_npc24_signup_response_2|对不起，我恰巧喜欢精灵。
@@ -2247,7 +2251,7 @@ str_npc27_signup_response_2|我改变主意了。
 str_npc18_payment|当然，一个像你这样威武的指挥官只用说一句话，就能让他们释放我。[需要{s14}的{reg14}点影响力]
 str_npc19_payment|看来黑色酋长代格拉夫可能会找个借口把我关在这里，指挥官。[需要{s14}的{reg14}点影响力]
 str_npc20_payment|你最好别让我失望，也别让我们共同服务的主人失望。你在他心目中的地位够高了吗？[需要{s14}的{reg14}点影响力]
-str_npc21_payment|我很想加入你的队伍，但要是我走之后城市被进攻，谁能照顾伤员？[需要{s14}的{reg14}点影响力]
+str_npc21_payment|嗦到“价值”，娃欠的那点债可能不止那么点，尼懂的。老大可能想要狠狠地桥榨尼一笔，要小心吖！[需要{s14}的{reg14}点影响力]
 str_npc22_payment|我们会很快一同踏上旅途的，但不是现在。罗斯洛立安依旧需要我在这里协助。如果我的加入被敌人早早得知的话，价值就会大大降低。[需要{s14}的{reg14}点影响力]
 str_npc23_payment|我很想加入你的队伍，但职责所在，现在我不能离开。[需要{s14}的{reg14}点影响力]
 str_npc24_payment|我很想加入你的队伍，但在最需要帮助的时刻离开这里，我高贵的父亲德瓦林是不会理解我的。[需要{s14}的{reg14}点影响力]
@@ -2257,7 +2261,7 @@ str_npc27_payment|我很想加入你的队伍，但职责所在，现在我不�
 str_npc18_payment_response|毫无疑问。卢姆萨昆的下属不敢拒绝我。[花费{reg14}/{reg15}点影响力]
 str_npc19_payment_response|一旦我说清楚了，代格拉夫酋长就不得不在我的要求面前让步了。[花费{reg14}/{reg15}点影响力]
 str_npc20_payment_response|我确实有。来吧！毕竟，你跟随的不是一个卑贱的奴兵。[花费{reg14}/{reg15}点影响力]
-str_npc21_payment_response|这的确是一个高尚的原因，但我相信会找到替代你的人的。[花费{reg14}/{reg15}点影响力]
+str_npc21_payment_response|不管他想耍啥花招，你都得跟我走了。[花费{reg14}/{reg15}点影响力]
 str_npc22_payment_response|请相信我，你的加入比留在这里更有价值。[花费{reg14}/{reg15}点影响力]
 str_npc23_payment_response|从今往后你的职责就是跟随我。[花费{reg14}/{reg15}点影响力]
 str_npc24_payment_response|德瓦林大人会理解的，毕竟一个可以逆转战局的矮人战士不应该和敌人隔离太久。[花费{reg14}/{reg15}点影响力]
@@ -2267,7 +2271,7 @@ str_npc27_payment_response|从今往后你的职责就是跟随我。[花费{reg
 str_npc18_morality_speech|大人！我对鲜血的渴望没有满足！为什么我们{s21}像懦夫一样？让我和他们战斗！
 str_npc19_morality_speech|指挥官，我非常喜欢我们{s21}。一个像我这样的国王，永远都应该慷慨大方，但如果储藏包裹里空无一物，我就什么都不能给予，我们的士兵就会抛弃我们。
 str_npc20_morality_speech|我想说我对你的期望很高，指挥官，但那将是一个谎言。你要谨慎，这种自私自利的行为，恐怕会坏了你的大事。
-str_npc21_morality_speech|不要在意士兵们的过激言论，有时{s21}是最明智的行为。我相信留得有用之身不是为了别的，而是当未来某一天命运眷顾我们的时候和敌人展开殊死较量。
+str_npc21_morality_speech|听着呃，头儿。受敬的掠多队不能就{s21}，害得伙计们的肚子咕咕咕咕叫！窝呢，那就更饿饿肚子了！我得去啃亿口小家伙——一根指头、一条腿就好……
 str_npc22_morality_speech|您必须慎重考虑您的行为，指挥官。{s21}使我和其他战士们颜面无存，而且这还会减少我们盟友的信心。
 str_npc23_morality_speech|[No primary moral code]
 str_npc24_morality_speech|我并不为您作出{s21}的决定感到高兴。战死是任何脑袋正常的矮人心中的荣耀，而被懦夫带领则是羞耻。要是我的表亲们知道这事儿，他们会怎么评价我？
@@ -2277,7 +2281,7 @@ str_npc27_morality_speech|[No primary moral code]
 str_npc18_2ary_morality_speech|我加入你不是{21}，大人，而是沐浴在敌人的血中！你现在可以利用你的诡计了，但请尽快给我一个好的战斗，我求求你！
 str_npc19_2ary_morality_speech|[No secondary moral code]
 str_npc20_2ary_morality_speech|啊，我们伟大的指挥官。你说你做了什么大事？我不知道你们还有多少次战斗是以这种方式结束的，你们不顾一切地推进到一个埋伏，然后又急急忙忙地逃跑。
-str_npc21_2ary_morality_speech|请你原谅，指挥官。像我这样的女战士宁可直面死亡也不远获得耻辱。{s21}是对我的马和祖先的羞辱。
+str_npc21_2ary_morality_speech|能吃的东西都去哪了吖！帮忙拔要豆子吗？！好头儿的话就懂得给俺根多汁的羊羊腿，要不然就是可口的矮人。啊窝好可怜呀，被困在尼这惹。
 str_npc22_2ary_morality_speech|[No secondary moral code]
 str_npc23_2ary_morality_speech|[No secondary moral code]
 str_npc24_2ary_morality_speech|[No secondary moral code]
@@ -2287,7 +2291,7 @@ str_npc27_2ary_morality_speech|[No secondary moral code]
 str_npc18_personalityclash_speech|大人如果你认为瓦尔凡是个战士，那我请求你让他离我越远越好。我已经警告过他，他的手不能去我不让他去的地方，否则我就把它砍下来喂马。
 str_npc19_personalityclash_speech|指挥官，我很奇怪你竟然还保留着像乌弗塔克这样的卑微的下仆。当然，半兽人是我们真正战士的渣滓和挡箭牌，但他在营地里走来走去，给人和半兽人一样的命令，好像他是个有权威的人。如果我杀了他，我希望你不要太想念他。或许我会把他丑陋的鼻子剪掉。
 str_npc20_personalityclash_speech|南方人莱克雅达应该学会礼貌，学会谦虚。傲慢是他的舌头，骄横自大！我不在乎他是南方人中的队长—不管怎样，他们是愚蠢的下等种族，迟迟不承认伟大的人，迟迟不向更好的人鞠躬！如果他知道我可以对他的一小部分…
-str_npc21_personalityclash_speech|我之前提到过我厌恶{s11}吗？
+str_npc21_personalityclash_speech|天哪，老大，那个女魔头是不是真的疯了？尼快去看看，那口大锅里的内只乌鸦，在她“命令”下我从俺老背上逮下来的那只，不知道反复煮了多少次。 而且呀，她从不正眼看我，好像我是坨地上的狗屎一样，拜托，她还没我肚脐高！真是气得我想打烂她的头。要我说头儿，有这种傢伙在身边，尼可得多留个心眼，她这种人我可是见识过的。
 str_npc22_personalityclash_speech|我之前提到过我厌恶{s11}吗？
 str_npc23_personalityclash_speech|{playername}，我刚刚看到{s11}公然从一个满是雏鸟的鸟巢旁边经过。他的笨拙摧毁了那群无辜生命。
 str_npc24_personalityclash_speech|{s11}大人在战斗中表现得很好，但我不知道他是否利用头发闪瞎他的敌人？还是说他们对他的名声和傲慢风度感到敬畏？
@@ -2307,7 +2311,7 @@ str_npc27_personalityclash_speech_b|我厌恶{s11}。
 str_npc18_personalityclash2_speech|古尔姆不仅是一只背信弃义的野兽，还是一只巨大的野兽——他为自己是一只背信弃义的野兽而自豪。他昨天晚上围着营火又给我们讲了一遍他的故事，并吹嘘他的恶行。你最好看看那个家伙，太棒了。如果他在为白手（萨鲁曼）服务时背叛了他的指挥官，有什么能阻止他对你做同样的事呢？
 str_npc19_personalityclash2_speech|我厌恶{s11}
 str_npc20_personalityclash2_speech|每当我一看到富尔迪米尔，我心中就升起一股无名的愤怒。不，不，这不是他做的事。但是他和他的族人，乌姆巴的海狗，最不值得流他们的血。他们敢称自己为古代阿纳都恩的继承人——当然，他们说的是‘努曼诺’，不知道还有什么更好的说法。哎呀，我想，在弗拉基米尔的血管里几乎找不到一滴真血! 也许，如果你能宽恕他，我可以自己去发现……
-str_npc21_personalityclash2_speech|我之前提到过我厌恶{s11}吗？
+str_npc21_personalityclash2_speech|头儿，我一直在想啊——怎么样杀女巫好呢？就是要不会被诅咒成臭虫的那种。那个老蝙蝠又给俺看什么邪眼，害得我一整天都在起鸡皮疙瘩，从里面起！我是狠喜欢打烂狗头砸碎盾牌的，但是她趁没人注义的时候，对着那些头都做了些什么？！我可不会浪费乐子，但她那样搞真的是太毛骨悚然了。
 str_npc22_personalityclash2_speech|我之前提到过我厌恶{s11}吗？
 str_npc23_personalityclash2_speech|我之前提到过我厌恶{s11}吗？
 str_npc24_personalityclash2_speech|一场不错的小冲突，是吧队长？要是没有精灵女士{s11}那些丧气的行为就更好了。
@@ -2327,7 +2331,7 @@ str_npc27_personalityclash2_speech_b|我厌恶{s11}。
 str_npc18_personalitymatch_speech|很好，你知道Lykyada在战斗中有多致命吗? 他的箭多快，他的刀多锋利! 如果你允许，伟大的人，我想花更多的时间在他的指导下训练。他有很多东西可以教给我，让我对你更有用。
 str_npc19_personalitymatch_speech|战斗的喜悦在我的血液中歌唱! 在瓦方那里，我也能看到。在战场上看到这个人是一个恐怖的人，他笑着击倒了逃跑的无用的敌人。这些来自东方的人激起了我的兴趣，指挥官。我们可以从他们那里学到很多马术，如果我回到自己的世界后，洛汗人不教登兰德人的话。
 str_npc20_personalitymatch_speech|瞧 Bolzog。Bolzog 多棒啊！看看他是怎样以他那弓形腿的步态疾走，随我的兴致来去，做我要求他做的每一件事。正如一个适当的小'urku'应该，我说。我很喜欢他，指挥官。Bolzog ! 把软膏拿来! 马上！
-str_npc21_personalitymatch_speech|一场伟大的战斗，指挥官，我在此祝贺你的胜利。同时我注意到{s11}如何认真细致的治疗了所有伤员，甚至连敌人都获得了应得的照顾。
+str_npc21_personalitymatch_speech|嘿，头儿！就昨晚，那个可怜的小讨厌鬼乌弗塔克，真是让俺乐了好一会，太搞了！我把他偷偷藏起来的肉给煮了，然后当者他的面，吃光了！天啊头儿，他差点就把眼睛哭瞎啦！尼要是在场就好了，看他哭出来的时候鼻水怎么流的，一道接着一道的！嗨呀，幸好尼拉他入队。
 str_npc22_personalitymatch_speech|我之前提到过我喜欢{s11}吗？
 str_npc23_personalitymatch_speech|{playername}，我讨厌战斗，所以我在战时没法帮忙。我注意到{s11}大人光芒万丈般的冲了出去，然后像雄鹰一样扑在了邪恶造物身上。
 str_npc24_personalitymatch_speech|血腥和胜利，正如我所喜欢的！然而我确实受了点小伤，但{s11}已经很好地帮我包扎了。
@@ -2337,7 +2341,7 @@ str_npc27_personalitymatch_speech|我之前提到过我喜欢{s11}吗？
 str_npc18_personalitymatch_speech_b|很好，像 Lykyada 这样的战士在你的旗帜下战斗。我原以为所有的南方人都是软弱颓废的，跟西部人并没有太大的不同，但如果他们的队伍中有更多像他这样的人，那么西部的日子就真的到头了。
 str_npc19_personalitymatch_speech_b|指挥官，瓦方和我昨晚围着篝火喝了点酒。我相信他是一个深谋远虑的人，因为他永远记得他祖先的所作所为，这是一个人应该记住的。我不知道，是否如他所说，我们祖先的灵魂与我们同在。的确，我不喜欢这种想法。但一个国王必须知道他的血统，他的祖先。瓦方就是这样一个知道这一点的人。
 str_npc20_personalitymatch_speech_b|我从来没见过像Bolzog这样的urku。哦，我承认他长得不好看，但在我这么多年的人生中，他是我遇到的第一个除了鬼鬼祟祟、鬼鬼祟祟和杀人之外还能干别的事的人。他那双粗糙的手出奇地灵巧。是的，非常灵巧……也许他能学到更多的骨与筋的技艺，比我最初估计的还要多。
-str_npc21_personalitymatch_speech_b|保护生命是非常崇高的行为，我能与那种灵魂产生共鸣，即使我们的世界相距甚远。
+str_npc21_personalitymatch_speech_b|小滑头乌弗塔克一直在想溜人，不过别担心头儿，俺会好好盯着他的。感觉过去的好日子又回来了呢，那时候我手下有一票小伙子。在回儿山里的路上，俺队里有伯特、比尔还有汤姆……呃好吧，日子其实一去不复返了。等下？那个臭小鬼跑哪去了？乌弗塔克！给俺过来，别臭畏畏缩缩的！
 str_npc22_personalitymatch_speech_b|我喜欢{s11}。
 str_npc23_personalitymatch_speech_b|我在想他有多大年龄，或许比我老上十几个世纪？算了，您不会明白的。
 str_npc24_personalitymatch_speech_b|{s11}和她的河谷镇族人哪怕达不到矮人战士的标准，但还时这场战争中我们最坚定的盟友。要我说，他们是人类中朋友和伴侣的最好选择。
@@ -2357,7 +2361,7 @@ str_npc27_retirement_speech|我似乎对战士的生活有些厌倦了，我准�
 str_npc18_rehire_speech|我的刀刃还渴望着血，大人。让我再跟你走吧！
 str_npc19_rehire_speech|很高兴再次见到你，指挥官。让我重新加入你的队伍。
 str_npc20_rehire_speech|让我们走吧，指挥官。懒散不会赢得这场战争！
-str_npc21_rehire_speech|再次欢迎。我们要从上次停止得地方继续开始么？
+str_npc21_rehire_speech|头儿最近怎样？要窝再次跟尼出门干活吗？
 str_npc22_rehire_speech|很高兴见到你，{playername}。让我们再一次一起旅行。
 str_npc23_rehire_speech|很高兴见到你，{playername}。我们要一同踏上旅途么？
 str_npc24_rehire_speech|我的斧子已经准备好了，{playername}。你要我重新加入么？
@@ -2367,7 +2371,7 @@ str_npc27_rehire_speech|我能再次为你服务吗？
 str_npc18_home_intro|啊，安度因。大人，你将会听说许多战车民的伟大胜利吗？他们与我们结成了联盟，我们的战士们粉碎了刚铎可怜的军队，在国王的带领下，他们胜利了。我们的祖先一定享受了一场光荣的屠杀！
 str_npc19_home_intro|啊，伊多拉斯。我应得的王位。看那边，指挥官，那个金色的大厅。就在几代前，在金殿的门上，最后一个圣盔锤手的儿子被杀了，之后，沃夫就是国王了。不是沃夫，现在是登兰德的酋长，当然，那一个是一个更强大的人的名字。
 str_npc20_home_intro|啊，孤独的山。都灵的最后一次堡垒是民间，难道不是，在后半叶吗？最后，亲眼看到它是令人愉快的。愉快，是的…但不像矮人的垂死时刻的记忆那样令人愉快，我用我的艺术做得更久。哈代是小矮人，确实！然而，罗尔？制造者在使他们能够忍受痛苦的情况下，没有任何好处。
-str_npc21_home_intro|指挥官，我们在这儿休息一下吧！我们的前方是凯勒布兰特平原，它位于安都因河与林莱河之间。洛汗的开国国王伊欧曾经在这里协助我们的刚铎盟友。（注：凯勒布兰特平原战役，洛汗人在这里帮助刚铎逆转了战局并击退了毕额丘斯人的进攻，促成了洛汗王国的建立和刚铎洛汗的永世盟约）
+str_npc21_home_intro|天哪头儿！多尔哥多，那个烂地方！坏的不得了的东西黑的不得了的巢穴，那附近的树上一只多汁的松鼠一只美味的小鸟都没有。不是女巫都能感受到那些黑东西的味儿和样子。
 str_npc22_home_intro|Daro（辛达林语：停！）前面就是艾辛格和奥桑克黑塔了。自从我上次见到它，很多事情发生了改变，然而没有一件是向好的方向变化的。
 str_npc23_home_intro|打扰一下，{playername}。这部分路变得更加扭曲，一些还是死路。我们一定很接近多尔哥多了。
 str_npc24_home_intro|呦，队长！这里一定是前往卡扎督姆东门的旧径，你也可能更熟悉他的另一个名字摩瑞亚。在这里你可以看到远方的镜影湖卡雷德—萨鲁姆；穿过云彩的三座山峰则让这部分迷雾山脉富有魅力。
@@ -2377,7 +2381,7 @@ str_npc27_home_intro|嘿！看！
 str_npc18_home_description|我们中的智者告诉了我们关于那场战争的一切。如果不是因为南方人的软弱，输掉了本该赢的一场战役，刚铎人就永远赢不了那场战役。战车民的军队被击溃了，许多凶猛的勇士都死在了沼泽里。
 str_npc19_home_description|我将看到我们两国人民像过去一样团结起来。再也不会有枯褐色头发的女人在用干瘪的乳房哺育体弱多病的婴儿，再也不会有金发碧眼的堂兄弟在温暖的大厅里大吃大喝。黑头发的山里人再也不会带着怨恨的目光望着一个金发农夫所拥有的一群马了。作为国王，我将真正的伸张正义—但首先，需要让洛汗的暴君们付出代价。
 str_npc20_home_description|我记得他，他的儿子索林，索尔的儿子。有勇无谋的、自命不凡的、断线的后代、毫无价值的王位的要求者！他在我手下遭受了极大的痛苦。但没有人能长久抵挡齐古法的意志，司令。没有一个人。在多尔哥多的地牢里，我从他手里接过戒指，把它送到邪黑塔里去，得到了巨大的回报。在黑暗魔君的恩惠下，我站在高处！
-str_npc21_home_description|骁骏勇骑今何在？吹角长鸣何处闻？高盔铁衣今何在？明亮金发何处飘振？诗琴妙手今何在？俱往矣，如山岗微雨，草原飘风；落日西坠，幽隐山后。（摘自邓嘉宛译，魔戒魔戒同盟卷三第六章）
+str_npc21_home_description|庵这辈子都没跟巫术打过交道，现在才开始真的好遗憾。
 str_npc22_home_description|曾经由南方王国建造，现在则是人称白袍巫师的家；正计划着，毫无疑问，通过牺牲他人来进一步增强他的力量。
 str_npc23_home_description|我从来没有到过这么远的地方，但我听幽暗密林的斥候说，这里可能有戒灵存在。我感觉到一个不可名状的邪恶存在，它很强大。让我们做好面对它的准备吧。
 str_npc24_home_description|从这里的荒凉和许多半兽人足迹来看，我很担心勇敢的巴林和他探险的最终命运。看来摩瑞亚已经落入了阴影中，我们应该小心些。（注：巴林是霍比特人中跟随索林·橡木盾前往孤山的十三位矮人之一，后来进入摩瑞亚希望回复它昔日的荣光）
@@ -2387,7 +2391,7 @@ str_npc27_home_description|您知道那座城镇么？
 str_npc18_home_description_2|我很高兴和你一起走，大人。我们的首领想要夺回这片本是自己的土地。他们可能从刚铎或者西方那里拿到他们喜欢的东西。对我来说，如果我能把更多敌人的鲜血洒在这片土地上，我就很满足了。
 str_npc19_home_description_2|当漫长的战争结束之后，你会为我说话吗，指挥官？无论哪种力量统治着-魔眼或者白手？你愿意支持我的主张，封我为埃多拉斯和罗翰的领主，并把那些地方作为我的家园和领地吗？
 str_npc20_home_description_2|我们将粉碎维拉在中土的作品，是的，毁灭造物主创造的东西是一件美妙的事情。我们将粉碎脚下的矮人，粉碎他们最后的王国，当精灵像鬼魂一样消失时我们将会在在迷雾中时欢笑。到那时，我将站在瓦林诺被遗忘的洞穴前，再次召唤我的国王！
-str_npc21_home_description_2|我们会牢记过去的伟大事迹和牺牲。洛汗和刚铎的联军将再一次拯救我们的人民免遭厄运。
+str_npc21_home_description_2|庵这辈子都没跟巫术打过交道，现在才开始真的好遗憾。
 str_npc22_home_description_2|我只希望我们铭记，即使是伟大者的一员，甚至是一位埃斯塔力，都有可能被腐蚀和堕落。追求力量者必被力量所毁，只希望我们不要拖得太久。（注：埃斯塔力在昆雅语中意译为博学者，特指巫师）
 str_npc23_home_description_2|我能感觉到墙后的邪恶大军正准备出发…去美丽的罗斯洛立安？去河谷镇？去我的家乡幽暗密林？我不知道，但请尽你的一切努力阻止他们。
 str_npc24_home_description_2|如果命运带给我们一大支军队的话，我想我们应该冒险进入矿井，取回那笔巨大财富。
@@ -2397,7 +2401,7 @@ str_npc27_home_description_2|米那斯魔窟，戒灵们整日饮酒的地方，
 str_npc18_home_recap|我是一个牢中的囚犯，因在训练坑里杀害卢姆萨昆领主的儿子而被判处死刑。他们中有三个人向我发起攻击，我向他们回击，但有一个人因伤而死。然后你在首领们前替我说话，让我重获自由。现在我为你而战，必要时我也会为你而死。
 str_npc19_home_recap|我拥有洛汗皇室的血统，我发誓-冯格尔国王是我的祖父，虽然他从来都没有把我祖母作为真正的妻子。登兰德的酋长们嫉妒我，让我远离战斗，这样我就不会做出什么大事，在我的旗帜下没有任何荣耀和追随者。然后你把我带到了你的旗帜下。现在我等待着我能坐在伊多拉斯的合法王位上。
 str_npc20_home_recap|还有什么可说的，指挥官？我在多尔哥多的地牢里练习我的技艺。我梦中的眼看到了深远的地方，看到了你和你在这争战中的作为。看来我必须尽我所能帮助你们，这样西方的力量就可能失败，东方的力量就可能再次崛起，然后统治世界，直到世界末日。
-str_npc21_home_recap|你如此轻易忘记并不令我感到有趣。
+str_npc21_home_recap|俺以前在迷雾山脉里带着一队“攻益”伙计快活地搞事，直到有天我喝得烂醉如泥，拿自己的下半辈子跟那些刚达巴来的骗子赌博。
 str_npc22_home_recap|我会满足你的好奇心的，但别在这儿逗留了。
 str_npc23_home_recap|我生长在幽暗密林中，是一位西尔凡精灵。我们族人的木工技术无可匹敌。
 str_npc24_home_recap|我是德瓦林之子，都灵的子民。
@@ -2407,7 +2411,7 @@ str_npc27_home_recap|我会尽快搞定的。
 str_npc18_honorific|大人
 str_npc19_honorific|指挥官
 str_npc20_honorific|指挥官
-str_npc21_honorific|指挥官
+str_npc21_honorific|酋长
 str_npc22_honorific|指挥官
 str_npc23_honorific|战士
 str_npc24_honorific|队长
@@ -2503,3 +2507,27 @@ str_imladris_guildmaster_companion_player_none_ok|我明白了，长老。谢谢
 str_imladris_guildmaster_player_found_ok|我明白了，长者。谢谢你抽时间出来。
 str_show_keybinds_form|快捷键：^^阵型：^F1~F4 - 命令所选分队。^长按F1可远距离调度所选分队。^^武器使用命令 - O^^视角模式调整 - CTRL+END^^全体集合 - V^^唤马 - M^^查看命令/小地图 - Backspace退格键
 str_mordor_cungol_guildmaster_companion|哦嚯，你想找位善战的士兵？！我给你物色了个合适的家伙。他可是老大们，魔眼老大的得意手下。你千万别被他的矮个子给骗了！想知道为什么吗？我跟你打包票，要不了多久他就会自己拉支队伍自己当老大，他可是一直在朝那个方向奋斗呢！你只要给老乌弗塔克配把锋利的大斧，然后把他安排在第一排，就能看到他大杀特杀啦！让敌人统统有来无回！‘喂，小子们给我安静！你们在笑啥？都回到岗位上去，一群渣渣！’呃啊，抱歉大人，这些家伙一点纪律都没有。不过乌弗塔克就不一样了！带上他吧指挥官，你不会后悔的。乌弗塔克值得你用性命托付呢。看那，就在塔顶，乌弗塔克在那放哨。看上去就很气宇非凡对吧？
+str_gundabad_guildmaster_companion_player_ask|我在这里见到的都只不过是乌合之众，鬼鬼祟祟不堪一击，搞不好跑得比打得快。你们这最好的战士到底在哪？
+str_gundabad_guildmaster_companion_none|我不关心你从哪来，但你的舌根子在这可要放干净些！嗬嗬，你要敢跟我们乱说话，就等着掉到咱不知道哪条地道装满了毒蛇的深洞里去吧。我们的战士正远征那些乱军老巢，跟那些偷鸡摸狗的砸碎和杀人如麻的狗屁精灵之友作战。您算哪根葱啊？从前线溜回来的懦夫，想着刺探我们的机密？现在滚吧，回战场上去，做个真真正正的战士！
+str_gundabad_guildmaster_companion_player_none_ok|如果不想找死，就注意你的言辞！
+str_gundabad_guildmaster_player_found_ok|我没听错吧？你们手下有只叫“柏妲”的食人妖懂人话？好吧，我得去亲眼看看。
+str_gundabad_guildmaster_companion|嘴巴放干净点，不然就等着挨刀吧你。嗬嗬，再说错一个字，我就这样打个响指——啪！你就给我滚到角斗坑去吧！像你这样爱吹牛的大嘴巴，我们可是准备了特殊礼物的——等你到了坑里一定会喜欢上大柏妲嘀！我可得拿一整月的伙食赌你连大柏妲一下都挨不过。她是我们遇到最狡猾的食人妖了，不过当然我们比她更狡猾，嘎嘎嘎，你可得好好学学我们刚达巴半兽人是怎么把她给逮住的！这会伙计们正乐着，怕柏妲无聊，把她锁在陈年矮人国王像底下，好让她有伴儿，哈哈哈！好了，想跟我们家的柏妲打上几拳吗？
+str_fullname_region_rhun|东罗马尼安，赛尔督因河沿岸
+str_fullname_region_erebor|孤山山麓，仰望孤山的地方
+str_fullname_region_celebrant|凯勒布兰特平原，凯勒布兰特河与林莱河之间
+str_fullname_region_gladden_fields|金鸢尾沼地，金鸢尾河形成的一片沼泽
+str_fullname_region_w_emyn_muil|西艾明穆尔
+str_fullname_region_s_misty_mountains|南迷雾山脉山麓
+str_fullname_region_n_anduin_vale|北安都因河谷，卡尔岩以北的地方
+str_fullname_region_s_anduin_vale|南安都因河谷，罗斯洛立安与双河套之间
+str_fullname_region_cair_andros|凯尔安卓斯，安都因河中形如巨船的岛屿
+str_shortname_region_rhun|东罗马尼安
+str_shortname_region_erebor|孤山山麓
+str_shortname_region_celebrant|凯勒布兰特平原
+str_shortname_region_gladden_fields|金鸢尾沼地
+str_shortname_region_w_emyn_muil|西艾明穆尔
+str_shortname_region_s_misty_mountains|南迷雾山脉山麓
+str_shortname_region_n_anduin_vale|北安都因河谷
+str_shortname_region_s_anduin_vale|南安都因河谷
+str_shortname_region_cair_andros|凯尔安卓斯
+str_isengard_hunting_camp_guildmaster_player_found_ok|如果他很擅长杀戮，我就收下他。如果不是，我就像鱼一样把他刨出内脏。如果他真的是另一个毫无价值的蛆虫，我就会回来让你给我浪费的时间付出代价！

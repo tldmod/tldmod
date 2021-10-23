@@ -1823,20 +1823,20 @@ str_fullname_region_gap_of_rohan|el Paso de Rohan, la frontera occidental de Roh
 str_fullname_region_entwash|las Bocas del Entaguas, donde el río Entaguas de Rohan desemboca en el río Anduin
 str_fullname_region_wetwang|Nindalf, los pantanos de Cancha Aguada
 str_fullname_region_dead_marshes|las Ciénagas de los Muertos, el antiguo campo donde se libró la gran Batalla de Dagorlad, ahora un lugar maldito
-str_fullname_region_isengard|las llanuras de Isengard
+str_fullname_region_isengard|Nan Curunir, el valle de Isengard
 str_fullname_region_fangorn|el bosque de Fangorn, donde se dice que los árboles hablan.
 str_fullname_region_brown_lands|las Tierras Pardas, se extienden entre Emyn Muil y el Bosque Negro
 str_fullname_region_dagorlad|Dagorlad, la gran extensión desnuda del Llano de la Batalla, ante las puertas de Mordor
 str_fullname_region_n_undeep|el Codo Norte, el mayor de los dos meandros del Anduin
 str_fullname_region_s_undeep|el Codo Sur, el menor de los dos meandros del Anduin
-str_fullname_region_emyn_muil|Emyn Muil, las colinas rocosas al norte de la desembocadura del Entaguas
-str_fullname_region_misty_mountains|las faldas de las Montañas Nubladas
+str_fullname_region_emyn_muil|el este de las Emyn Muil, las colinas rocosas más allá de Amon Lhaw
+str_fullname_region_misty_mountains|las faldas de las Montañas Nubladas del norte
 str_fullname_region_lorien|Lothlórien, el bosque de los elfos Sindar, donde crecen los dorados Mallorns
-str_fullname_region_anduin_banks|el valle del Anduin, entre las Montañas Nubladas y El Bosque Negro
+str_fullname_region_anduin_banks|el valle medio del Anduin, entre Carroca y Lorien
 str_fullname_region_n_mirkwood|las densas arboledas del norte del Bosque Negro, hogar de los Elfos Silvanos
 str_fullname_region_s_mirkwood|los densas arboledas del sur del Bosque Negro, según se dice, infestadas de extrañas criaturas
-str_fullname_region_above_mirkwook|la parte septentrional de Rhovanion, las tierras entre el Bosque Negro y las Montañas Grises en el Norte
-str_fullname_region_grey_mountains|las faldas de las Montañas Grises, donde habitan los Enanos
+str_fullname_region_c_mirkwood|la densa espesura central del Bosque Negro, habitada por los Hombres del Bosque
+str_fullname_region_grey_mountains|las faldas de las Montañas Grises
 str_fullname_region_mordor|Mordor, el Reino Oscuro de Sauron
 str_fullname_region_dimrill|el Valle del Arroyo Sombrío, al pie de las Montañas Nubladas
 str_fullname_region_s_rebor|el Reino de Valle, al pie de la Montaña Solitaria
@@ -1865,15 +1865,19 @@ str_shortname_region_gap_of_rohan|el Paso de Rohan
 str_shortname_region_entwash|las Bocas del Entaguas
 str_shortname_region_wetwang|Nindalf
 str_shortname_region_dead_marshes|las Ciénagas de los Muertos
-str_shortname_region_isengard|las llanuras de Isengard
+str_shortname_region_isengard|Nan Curunir
 str_shortname_region_fangorn|Fangorn
 str_shortname_region_brown_lands|las Tierras Pardas
-str_shortname_region_misty_mountains|las faldas de las Montañas Nubladas
+str_shortname_region_dagorlad|Dagorlad
+str_shortname_region_n_undeep|the el Vado Norte
+str_shortname_region_s_undeep|el Vado Sur
+str_shortname_region_emyn_muil|Emyn Muil
+str_shortname_region_misty_mountains|las faldas de las Montañas Nubladas del norte
 str_shortname_region_lorien_|Lothlórien
-str_shortname_region_anduin_banks_|el valle del Anduin
+str_shortname_region_anduin_banks_|el valle medio del Anduin
 str_shortname_region_n_mirkwood_|el Norte del Bosque Negro
 str_shortname_region_s_mirkwood_|el Sur del Bosque Negro
-str_shortname_region_above_mirkwook|Rhovanion del Norte
+str_shortname_region_c_mirkwood|el centro del bosque Negro
 str_shortname_region_grey_mountains|las faldas de las Montañas Grises
 str_shortname_region_mordor|la Tierra de Mordor
 str_shortname_region_dimrill|el Valle del Arroyo Sombrío
@@ -2117,7 +2121,7 @@ str_formations|Las formaciones complejas del Menú de Batalla son:^^- LÍNEAS co
 str_npc18_intro|¡Oh, {Grandioso/Grandiosa}, espera un momento! ¡Quisiera hablar contigo!
 str_npc19_intro|Espera un momento, capitán. Quiero tener unas palabras contigo. No, no, no es necesario que te arrodilles, aunque hablas con alguien de sange real.
 str_npc20_intro|Espera. Tú. Yo te he visto antes. Conozco tu cara. En un sueño que tuve aparecías tú... ¿pero por qué tú? ¡Ahora que te veo con mis propios ojos, eres poco más que un miserable snaga!
-str_npc21_intro|¡{Bienvenido/Bienvenida} a Meduseld, {guerrero/guerrera}!
+str_npc21_intro|¡Vete zumbando, pequeña mosca, antes de que TE APLASTE! ¡RRAAARGHH!  (*La troll descubre los dientes con un gruñido poco entusiasta*)
 str_npc22_intro|Salve, {playername} ¡Mae govannen!
 str_npc23_intro|Déjame en paz, {forastero/forastera}. No deseo hablar contigo.
 str_npc24_intro|¡Kíli, hijo de Dwalin, a tu servicio!
@@ -2127,7 +2131,7 @@ str_npc27_intro|¡Tú!
 str_npc18_intro_response_1|¿Una esclava encadenada, condenada a muerte, osa hablar conmigo? ¿Qué tienes que decirme?
 str_npc19_intro_response_1|¿Samgre real, dices? ¡Ja! ¿Qué te hace creer que por tus venas corre siquiera una gota de sangre real?
 str_npc20_intro_response_1|¿Qué quieres decir con eso, bruja? ¿Quién eres tú?
-str_npc21_intro_response_1|Saludos, mi señora. ¿Con quién tengo el honor de hablar?
+str_npc21_intro_response_1|Oh, sí, estoy temblando de miedo. ¡Qué espanto de troll, sujeta por esa pequeña cadenita! Vamos, ¿por qué no me aplastas?
 str_npc22_intro_response_1|¡Salve, señor de los elfos! Es un gran honor conocerte.
 str_npc23_intro_response_1|¿Así es como los Elfos Silvanos saludan a sus invitados?
 str_npc24_intro_response_1|{playername} a tu servicio. ¿Cómo le va al pueblo de Durin?
@@ -2137,7 +2141,7 @@ str_npc27_intro_response_1|¿Quién eres?
 str_npc18_intro_response_2|No desperdiciaré palabras con una esclava condenada a muerte.
 str_npc19_intro_response_2|Gusano insolente. Fuera de mi camino.
 str_npc20_intro_response_2|No tengo tiempo para tus delirios de locura, hechicera.
-str_npc21_intro_response_2|Disculpa, tengo asuntos urgentes que atender.
+str_npc21_intro_response_2|Solo por esta vez, te dejaré vivir, bestia inmunda. (irte)
 str_npc22_intro_response_2|Disculpa, tengo gente menos importante con la que hablar.
 str_npc23_intro_response_2|El sentimiento es mutuo. Adiós.
 str_npc24_intro_response_2|Disculpa, necesito algo de aire fresco.
@@ -2147,7 +2151,7 @@ str_npc27_intro_response_2|[Ignorar e irse]
 str_npc18_backstory_a|¡No soy una simple esclava! ¡Soy una guerrera cazadora de cabezas, apartada de mi legítimo puesto entre las tropas! Como puedes ver, soy una mujer, pero soy más fuerte y rápida que muchos, y he derrotado en combate a más hombres de los que puedo recordar. El Señor de los Reñideros, ¡maldito sea!, me preparó un desafío especial, enfrentándome contra tres hombres a la vez. ¡Tres!
 str_npc19_backstory_a|Puede que solo una gota, claro, pero mi madre me lo contó todo acerca de mi linaje. ¡Soy Heidrek, descendiente directo de del Rey Fengel, más cercano al trono de Rohan y a las Tierras Brunas que ninguno de nuestros jefes! Mis cabellos son oscuros, pero escondido entre ellos hay más de un mechón tirando a rubio.
 str_npc20_backstory_a|En mi sueño, había un árbol. Un árbol, todo blanco. Y tú, tú estabas allí, a su lado. Posabas tu mano sobre el tronco y he aquí que éste se marchitaba hasta lo más profundo de sus raíces. Y las sombras se alargaban en el cielo, y el aire se volvía más pesado. Y entonces oí una risotada, que venía del este. 
-str_npc21_backstory_a|Me llamo Gálmynë, y me he interesado personalmente en conocer tus asuntos, {playername}. Permíteme explicarte por qué.
+str_npc21_backstory_a|¡Ja!, da solo un pasito más y te partiré el cuello como si fuera una ramita.  ¡Venga! Te pisotearé el hígado, machacaré tus huesos hasta hacerlos polvo y exprimiré tu cabeza como una uva.
 str_npc22_backstory_a|Es posible que hayas escuchado historias sobre mis hazañas en batallas pasadas y olvidadas por los Hombres mortales. En la inmensidad del tiempo, esta guerra no es para los Eldar sino otro momento de peligro, pero esta será la última guerra.
 str_npc23_backstory_a|Disculpa mi brusquedad, {forastero/forastera}, pero no solemos tener muchos visitantes, y los pocos que vienen no parecen de confianza. Hace una semana, apareció un enano y... no importa. Me llamo Luevanna, de los Elfos Silvanos del Bosque Negro.
 str_npc24_backstory_a|Eres muy {considerado/considerada} al preguntarlo, {playername}. Estamos combatiendo las incursiones de Hombres del Este y orcos de Gundabad, por ahora nada que nosotros o nuestros aliados de Valle no podamos manejar.
@@ -2157,7 +2161,7 @@ str_npc27_backstory_a|¡Soy Durgash!
 str_npc18_backstory_b|¡Prevalecí! ¡Los derroté a los tres! Pero... uno de ellos era tan débil que murió a consecuencia de los golpes que le propiné. Si hubiera sido un simple siervo, las cosas habrían acabado ahí. Pero no. Era uno de los muchos hijos del Gran Señor Lurmsakun, y de una de sus concubinas.
 str_npc19_backstory_b|Bueno, no encontrarás a nadie en Rohan o en las Tierras Brunas, que acepte mis reclamaciones, pero son legítimas de todos modos. Mi abuela era una pastora que vivía en las colinas, y un día se encontró por casualidad con el viejo Rey Fengel, el codicioso abuelo de Théoden el Farsante, que la vio en las orillas del Isen. Se encaprichó de ella, y de su unión nació mi madre.
 str_npc20_backstory_b|¿No sabes a quién tienes ante ti? {Necio/Necia} ignorante. Debes saber que soy Zigûrphel, de la antigua Akallabêth...  ¡Pero lo más probable es que tampoco sepas nada de ese nombre! Debes saber también que busco reparar las ofensas cometidas hace tanto tiempo, las ofensas arrojadas contra mí y ocntra mi pueblo por el rencor de los Valar, que hundieron nuestra Gran Armada y nuestro hogar. ¡Ah, gran y glorioso Ar-Pharazôn! ¿Desaparecerá tu visión de la memoria de los Hombres para siempre? ¡No, no mientras Zigûrphel viva y tenga manos con las que hacer su labor!
-str_npc21_backstory_b|Nací en una familia noble y he servido a la dama Éowyn como dama de honor desde que éramos niñas. Nuestros padres fueron sabios al permitirnos entrenar junto a nuestros hermanos en las artes del combate, para poder así convertirnos en doncellas guerreras de Rohan.
+str_npc21_backstory_b|Eres {un tipo duro/una tipa dura}, ¿eh? (*suspira*) Me llamo Berta. Antes tenía una banda de saqueadores en las Montañas Nubladas, los ladrones trasgos  más crueles que hayas visto en tu vida. Qué buenos tiempos aquellos. Entonces nos topamos con una banda de esos salvajes de Gundabad.  Bebimos, jugamos... A la mañana siguiente, me desperté atada y ni rastro de mis chicos. Ahora me dedico a partir rocas y a cargar con su impedimenta. A veces me mandan a buscar dinero.
 str_npc22_backstory_b|El señor Elrond me envía como emisario al señor Celeborn, para otorgar ayuda y consejo, pues así lo requiere la guerra en esta parte de Rhovanion. 
 str_npc23_backstory_b|Me gusta caminar por los senderos ocultos de nuestro bello bosque. A veces me muevo silenciosamente a través de los árboles y observo las costumbres de los muchos animales de la espesura. La canción de un pájaro extraño o la madriguera de un jabalí salvaje son tan bellas para mí como lo son para los Edain el choque de las espadas y las grandes murallas.
 str_npc24_backstory_b|He ayudado a mejorar las defensas de Erebor y a entrenar a algunos de los enanos más jóvenes bajo la supervisión de mi venerado padre Dwalin, según es nuestra costumbre.
@@ -2167,7 +2171,7 @@ str_npc27_backstory_b|Soy un jinete de lobo de Isengard y rastreador.
 str_npc18_backstory_c|Así que aquí estoy, soportando que me escupan y me maldigan, ¡condenada a muerte por ser más fuerte que los perros que se burlan de mí! Libérame, Gran {Guerrero/Guerrera}. Libérame, habla en mi favor, y mis fuerzas serán tuyas. My espada será tuya. ¡Mi vida será tuya!
 str_npc19_backstory_c|Naturalmente, el Jefe Daeglaf y todos los demás no quieren darme ninguna oportunidad de obtener la gloria, porque si me permitieran realizar grandes hazañas en combate, eso daría alas a mis reclamaciones. ¡Entonces los hombres se congregarían bajo mi estandarte! Tu fama te precede, capitán. Si me pemites servir bajo tu bandera, puedo realizar esas grandes hazañas para ti.
 str_npc20_backstory_c|Oh, Akallabêth, ¿que ha sido de ti? Perdida, desvanecida... Donde una vez brilló la luz, la gloria de nuestra nación que superaba a todas las demás, ahora solo reina la Sombra. Mi hermosa patria ahora no conoce sino el eterno silencio de las prfundidades del mar. Pero mi corazón aún está lleno de fuego, y en él se retuercen bestias oscuras. Conozco poderosas artes que tú y los tuyos no podéis siquiera imaginar. ¡Escúchame bien! ¿Suplicarás mi ayuda, como deberías hacer, o huirás de aquí escabulléndote como un gusano? ¡Decide rápido!
-str_npc21_backstory_c|Puede que sepas que a las mujeres, por muy diestras que sean, no se les permite cabalgar con los éoredas. Sin embargo, no creo que esperar a los guerreros junto al fuego sea mi destino. No me quedaré sentada sin hacer nada hasta perder toda oportunidad de realizar grandes hazañas en esta guerra, y agradecería tu ayuda, {guerrero/guerrera}.
+str_npc21_backstory_c|¡Escucha, {canijo/canija}! Si de verdad eres un pez gordo, ¿tal vez puedas hablar con el jefe y pagarle lo que debo? Se me ocurre que podría unirme a tu pequeña banda. Ver el mundo, comerme unas ovejas... (*se relame sus impresionantes colmillos*)
 str_npc22_backstory_c|No obstante, si los enemigos de Lothlórien están en desbandada por el momento, puede que considere unirme a ti por un tiempo, {playername}. Siento que nuestros destinos están unidos en esta guerra.
 str_npc23_backstory_c|No lo entenderías, creo, viendo que estás {preparado/preparada} para la guerra; pero debes de haber viajado mucho. ¿Has visto los otros grandes bosques? ¿Puedes llevarme allí?
 str_npc24_backstory_c|Pasamos por un momento de relativa calma en la lucha, y eso no le sienta bien a un guerrero enano de mi linaje y temperamento. Supongo que eres partícipe de mucha más acción en tus viajes y que tu causa es común a la de los enanos. Estoy seguro de que contar con un guerrero enano mejoraría mucho tus posibilidades de supervivencia.
@@ -2177,7 +2181,7 @@ str_npc27_backstory_c|Quizá puedas ser mi próximo jefe.
 str_npc18_backstory_later|He tenido suerte, supongo, de que el Gran Señor Lurmsakun haya estado ocupado en otros asuntos. Sus secuaces me han dejado aquí para que me pudra. ¡Pero mi destino no es morir como una prisionera! ¿Has venido aquí a concederme la oportunidad de morir en el campo de batalla?
 str_npc19_backstory_later|¡Hola! Has vuelto, como sabía que harías. Mis celosos jefes me siguen manteniendo ocioso. ¡Hablemos, capitán! Quisiera seguirte, y luchar entre tus tropas para ganar renombre.
 str_npc20_backstory_later|¡Aún perturbas mis sueños! ¿Acaso no me concederás la paz? El ojo de mis sueños puede ver muchas cosas lejanas y ocultas. Aquí en Dol Guldur, aún recibo visiones de tus obras. Esto te diré: si fueras {sabio/sabia}, ya habrías pedido mi ayuda.
-str_npc21_backstory_later|Más jinetes vuelven con sus cuerpos rotos y yo intento ayudar donde puedo. Pero todavía me siento atrapada en una jaula.
+str_npc21_backstory_later|¡Mira quién ha venido! Te van bien las cosas, por lo que veo, ¿no? ¿Te lo has pasado bien, paseándote por ahí, sin estar {atado/atada} a una maldita roca?! ¡Pues cuánto me alegro! ¿Por qué no vas a hablar con el jefe para que me deje salir de aquí? Mejor ahora que nunca.
 str_npc22_backstory_later|¿Lo has reconsiderado? El tiempo de los Eldar se acaba.
 str_npc23_backstory_later|He estado observando un nido de arañas gigantes durante varios días. Parecen al principio criaturas asquerosas, pero mantienen a los intrusos a raya. ¿Has venido a pedirme que viaje contigo?
 str_npc24_backstory_later|Construir muros defensivos es un trabajo digno de cualquier enano. Pero necesito usar mi hacha también. Pronto. Déjame ir contigo.
@@ -2187,7 +2191,7 @@ str_npc27_backstory_later|¿Lo has reconsiderado? Te serviré bien.
 str_npc18_backstory_response_1|Si de verdad eres tan feroz como pareces, tal ez puedas luchar para mí. Después de que te demos algo de comer, claro.
 str_npc19_backstory_response_1|Muy bien. Mientras seas capaz de luchar en la línea de batalla, serás de alguna utilidad, Dunlendino.
 str_npc20_backstory_response_1|Extraña forma de pedirme que te lleve conmigo, bruja. Pero está bien, puedes unirte a nosotros.
-str_npc21_backstory_response_1|Agradecería la ayuda de una doncella guerrera de Rohan, si me la ofreces.
+str_npc21_backstory_response_1|Es cierto que eres bastante grande y pareces alguien capaz de apañárselas en una pelea. Puede que tenga algún uso para ti.
 str_npc22_backstory_response_1|Quizás pueda sonar presuntuoso pedírtelo, pero a mi compañía le vendría bien tu habilidad en las batallas futuras.
 str_npc23_backstory_response_1|Viajamos por la Tierra Media, pero para defender todo aquello que es hermoso, luchamos contra el enemigo.
 str_npc24_backstory_response_1|En efecto, un guerrero enano sería bienvenido en mi compañía.
@@ -2197,7 +2201,7 @@ str_npc27_backstory_response_1|Servirás.
 str_npc18_backstory_response_2|¡Bah! Una perra asesina no merece marchar en mi compañía.
 str_npc19_backstory_response_2|Hablas de grandes hazañas. ¡Ve y realiza alguna por ti mismo, antes de volver a hablar conmigo!
 str_npc20_backstory_response_2|¡Bah! Creo que ladras mucho y muerdes poco. ¡Tengo trabajo que hacer!
-str_npc21_backstory_response_2|Lo siento, mi señora, no hay nada que pueda hacer.
+str_npc21_backstory_response_2|Mala suerte, troll. No puedo permitirme regatear por alguien como tú.
 str_npc22_backstory_response_2|Volveré cuando Lothlórien sea más seguro.
 str_npc23_backstory_response_2|No, lo siento. No aceptamos parásitos.
 str_npc24_backstory_response_2|No, lo siento. Nos va bien por nuestra cuenta.
@@ -2207,7 +2211,7 @@ str_npc27_backstory_response_2|No te necesito, esclavo.
 str_npc18_signup|¡Oh, volver a hundir mis dientes en un pedazo de carne! ¡Pronto verás de lo que estoy hecha, en cuanto mis manos y pies estén libres, y mi estómago lleno!
 str_npc19_signup|Sí, puedes llamarme así por ahora, no creas que me avergüenzo de mi sangre dunlendina. Mi pueblo ha sufrido terriblemente bajo la tiranía de los reyes de Rohan, y me siento identificado con sus penurias. Te ayudaré en esta guerra, y en todas tus empresas. Pero a cambio, capitán, debes apoyarme en mi pretensión cuando llegue el momento.
 str_npc20_signup|Pasaré por alto tu altanería por un tiempo, pero que sepas que algún día tú y yo tendremos unas palabras. Tal vez cuando llegue ese momento estemos los dos ante el Señor oscuro, a quien yo conocí una vez por un nombre muy diferente, y entonces veremos a quién de los dos escucha. Puede que ese día te enseñe modales.
-str_npc21_signup|Te la ofrezco de buen grado; me puedes dar la bienvenida a tu compañía, capitán.
+str_npc21_signup|¡Así se habla! Ve a ver al jefe y haz que me sqquen de este agujero.
 str_npc22_signup|Ya veo. Admito que he oído hablar de ti y de tus hazañas.
 str_npc23_signup|Me disgustan la violencia y las armas de guerra, pero sé cómo defenderme si es necesario.
 str_npc24_signup|Tengo habilidad con las hachas, tanto las de blandir como las de lanzar. También puedo reducir tus facturas si me dejas hablar con los mercaderes. Y también tengo buen ojo para encontrar las mejores piezas de botín en el campo de batalla.
@@ -2217,7 +2221,7 @@ str_npc27_signup|¿De verdad? Harías bien en reclutarme.
 str_npc18_signup_2|Mi madre una vez me dijo que yo había nacido para hendir a mis enemigos. Por ti, mataré a muchos de esos débiles hombres del Oeste. ¡Solo pon en mis manos un arma afilada y yo me encargaré del resto!
 str_npc19_signup_2|Lucho a la manera de mi pueblo, como lobos en la noche; puedo arrojar una lanza o hundir una pica en el pecho de un jinete a la carga. Puedo hendir miembros con hacha o espada. Contigo, hablaré libremente: no me importa si otorgas tus servicios al Ojo o a la Mano Blanca. A mí me da igual, siempre que al final pueda sentarme en mi legítimo trono en el Castillo de Oro.
 str_npc20_signup_2|Pero por ahora, deja que mi sabiduría y mis artes, aprendidas a lo largo de muchos años, se pongan a tu servicio. Esto debes saber: con la ayuda de Zigûrphel, serás como un dragón que recibe sus alas en el foso de Utumno. ¡Haré grandes cosas por ti, aunque tú no las comprendas!
-str_npc21_signup_2|He cazado muchas veces con arco y jabalina. Ahora cazaré orcos bajo tu mando. Además conozco algunas habilidades curativas que estoy segura serán necesarias.
+str_npc21_signup_2|Estaré justo detrás de ti, no te preocupes.
 str_npc22_signup_2|Quizás pueda ayudar a debilitar al Enemigo uniéndome a tu compañía y golpeando duro allá donde no lo esperen. Iré contigo.
 str_npc23_signup_2|Quizás pueda enseñarte a moverte más deprisa y a hacer menos ruido. Vayamos pues.
 str_npc24_signup_2|Si puedes mantener a la gente grande de tu compañía a raya, sobre todo a esos traicioneros elfos, me uniré gustosamente a tu grupo.
@@ -2227,7 +2231,7 @@ str_npc27_signup_2|No te arrepentirás de llevarme contigo.
 str_npc18_signup_response_1|Me gusta tu entusiasmo. Muy bien, intercederé en tu favor ante Lurmsakun.
 str_npc19_signup_response_1|De acuerdo pues, «Príncipe», recoge tus armas. Ahora luchas para mí.
 str_npc20_signup_response_1|Espero, por la cuenta que te trae, que tus palabras sean más que fanfarronadas vacías. No me decepciones, Zigûrphel.
-str_npc21_signup_response_1|Impresionante. Estamos listos para partir al momento, mi señora.
+str_npc21_signup_response_1|Muy bien, veremos si vales la pena.
 str_npc22_signup_response_1|Nos honra la compañía de un Señor de los Elfos.
 str_npc23_signup_response_1|Muy bien. Espero que no huyas del primer orco que nos encontremos.
 str_npc24_signup_response_1|Que así sea, maese enano. Bienvenido a nuestro grupo.
@@ -2237,7 +2241,7 @@ str_npc27_signup_response_1|Muy bien. Vamos.
 str_npc18_signup_response_2|Veo que eres muy feroz... tal vez demasiado feroz. Puede que un poco más de tiempo en el cepo te enseñe obediencia.
 str_npc19_signup_response_2|Por ahora tendrás que seguir sentado sobre estas balas de heno, «Príncipe».
 str_npc20_signup_response_2|Tu jactancia y tus insultos ofenden mis oídos. ¡Controla tu lengua antes de volver a hablar conmigo!
-str_npc21_signup_response_2|Lo siento, mi señora, quizás en otra ocasión.
+str_npc21_signup_response_2|No te necesito en este momento.
 str_npc22_signup_response_2|Pensándolo mejor, quizás necesitemos ayudar a Lothlórien por nuestra cuenta.
 str_npc23_signup_response_2|Lo siento, pero simplemente no puedo imaginarte en un campo de batalla.
 str_npc24_signup_response_2|Lo siento, resulta que me caen bien los elfos.
@@ -2247,7 +2251,7 @@ str_npc27_signup_response_2|He cambiado de opinión.
 str_npc18_payment|Sin duda, {un/una} capitán de tu calibre solo tiene que decir una palabra, y me liberarán. [cuesta {reg14} de Influencia con {s14}]
 str_npc19_payment|Me temo que Daeglaf el Negro busque alguna excusa para retenerme aquí, capitán. [cuesta {reg14} de Influencia con {s14}]
 str_npc20_payment|Al contrario, eres tú quien haría bien en no decepcionarme, o al Amo al que los dos servimos. ¿Acaso te has ganado su estima? [cuesta {reg14} de Influencia con {s14}]
-str_npc21_payment|Me uniría a tu compañía, pero ¿quién se encargará de los heridos si la ciudad es atacada?  [cuesta {reg14} de Influencia con {s14}]
+str_npc21_payment|Hablando de 'valer', esa pequeña deuda mía puede que no sea tan pequeña, tú ya me entiendes. Y puede que el jefe intente engañarte, ¡así que ándate con ojo! [cuesta {reg14} de Influencia con {s14}]
 str_npc22_payment|Deberíamos partir pronto. La utilidad de mi presencia se verá mermada si el Enemigo la detecta antes de que hayamos atacado. Pero Lothlórien también me necesita aquí.  [cuesta {reg14} de Influencia con {s14}]
 str_npc23_payment|Me uniría a ti, pero mi deber está aquí, con los míos.  [cuesta {reg14} de Influencia con {s14}]
 str_npc24_payment|Me uniría a ti, pero me temo que mi venerable padre Dwalin no entenderá que deje la ciudad en tiempos de necesidad. [cuesta {reg14} de Influencia con {s14}]
@@ -2257,7 +2261,7 @@ str_npc27_payment|Me uniría a ti, pero mi deber está aquí, con los míos.  [c
 str_npc18_payment_response|De eso no hay duda. Los subordinados de Lurmsakun's no se atreverán a contrarairme. [cuesta {reg14}/{reg15} de Influencia]
 str_npc19_payment_response|El Jefe Daeglaf tendrá que ceder ante mis deseos, una vez que se los haya comunicado. [cuesta {reg14}/{reg15} de Influencia]
 str_npc20_payment_response|Por supuesto que sí. ¡Vamos! Después de todo, no es un miserable snaga a quien vas a seguir. [cuesta {reg14}/{reg15} de Influencia]
-str_npc21_payment_response|Es una noble causa, pero estoy {seguro/segura} de que podrán encontrar un sustituto. [cuesta {reg14}/{reg15} de Influencia]
+str_npc21_payment_response|Intente lo que intente, tú te vienes conmigo. [cuesta {reg14}/{reg15} de Influencia]
 str_npc22_payment_response|Confia en mí, serás de mayor utilidad conmigo. [cuesta {reg14}/{reg15} de Influencia]
 str_npc23_payment_response|De ahora en adelante, tu deber está conmigo. [cuesta {reg14}/{reg15} de Influencia]
 str_npc24_payment_response|El señor Dwalin entenderá que un buen guerrero enano no puede pasar demasiado tiempo alejado de nuestros enemigos. [cuesta {reg14}/{reg15} de Influencia]
@@ -2267,7 +2271,7 @@ str_npc27_payment_response|De ahora en adelante, tu deber está conmigo. [cuesta
 str_npc18_morality_speech|¡Gran {Guerrero/Gruerrera}! ¡Mi sed de sangre no está saciada! ¿A qué viene {s21}, como cobardes? ¡Déjame enfrentarme a ellos!
 str_npc19_morality_speech|Capitán, no me gusta nada {s21}. Un rey como yo debe ser generoso, pero si las despensas están vacías, no quedará nada para darles a nuestros soldados, y nos abandonarán.
 str_npc20_morality_speech|Diría que esperaba más de ti, capitán, pero estaría mintiendo. ¡Ten cuidado, no sea que tus egoístas acciones perjudiquen los designios de aquellos que están por encima de ti!
-str_npc21_morality_speech|No hagas caso de lo que digan los soldados, a veces {s21} es la decisión más sabia. Yo prefiero salvar la vida para poder luchar otro día, cuando la fortuna esté de nuestro lado.
+str_npc21_morality_speech|Escucha, {jefe/jefa}. Una compañía de saqueadoresdigna de tal nombre no se rebaja a {s21} y dejar a los muchachos con los estómagos rugiendo.  ¡Y mira el mío, lo grande que es! Puede que vaya a pegar un bocado a uno de los pequeños; un dedo, una pierna quizás.. 
 str_npc22_morality_speech|Debes reconsiderar tus acciones, capitán. Acciones como {s21} nos hacen tan poco honorables como el Enemigo y disminuyen la confianza que nuestros aliados tienen puesta en nosotros.
 str_npc23_morality_speech|[No primary moral code]
 str_npc24_morality_speech|No me gustó que decidieras {s21}. Caer en el campo de batalla es un honor a ojos de cualquier enano con sentido común, pero luchar en una compañía liderada por {un/una} cobarde es una desgracia. ¿Qué dirán mis primos de esto si se llegan a enterar?
@@ -2277,7 +2281,7 @@ str_npc27_morality_speech|[No primary moral code]
 str_npc18_2ary_morality_speech|¡No me uní a ti para {s21}, Gran {Guerrero/Guerrera}, sino para bañarme en la sangre de nuestros enemigos! Puedes usar tu astucia de momento, pero dame prionto una buena escabechina, ¡te lo ruego!
 str_npc19_2ary_morality_speech|[No secondary moral code]
 str_npc20_2ary_morality_speech|Ah, {nuestro/nuestra} gran capitán. ¿Dices haber realizado grandes hazañas? Ya veo, me pregunto cuántas de tus otras batallas habrán acabado como esta, contigo avanzando imprudentemente hasta caer en una trampa, y huyendo con la misma celeridad.
-str_npc21_2ary_morality_speech|Con tu permiso, capitán. Las mujeres de mi linaje aceptamos la muerte pero nunca el deshonor. Una acción como {s21} trae deshonra a mi casa y a mis ancestros. 
+str_npc21_2ary_morality_speech|¿Qué pasa con el rancho, eh? ¿Necesitas ayuda contando los garbanzos? {Un buen jefe/Una buena jefa} me traería una rica y jugosa pierna de cordero, o un sabroso enano. Pobre de mí, en lugar de eso, me tengo que conformar contigo.
 str_npc22_2ary_morality_speech|[No secondary moral code]
 str_npc23_2ary_morality_speech|[No secondary moral code]
 str_npc24_2ary_morality_speech|[No secondary moral code]
@@ -2287,7 +2291,7 @@ str_npc27_2ary_morality_speech|[No secondary moral code]
 str_npc18_personalityclash_speech|Gran {Guerrero/Guerrera}, si valoras a Varfang como guerrero, te ruego que lo mantengas tan alejado de mí como sea posible. Ya le he advertido que no ponga las manos donde no le dé permiso para ponerlas, o se las cortaré y se las daré de comer a su caballo 
 str_npc19_personalityclash_speech|Capitán, me pregunto por qué mantienes a tu servicio a una criatura tan despreciable como Ufthak. Por supuesto, la escoria orca es útil como escudos para recibir flechas en lugar de nuestros verdaderos guerreros, pero él va por el campamento dando órdenes a orcos y hombres por igual, como si tuviera autoridad sobre nosotros. Espero que no lo eches mucho de menos, si lo mato. O, tal vez, solo le rebane la punta de su fea nariz.
 str_npc20_personalityclash_speech|Ese sureño de Lykyada debería aprender modales, y recibir una lección de humildad. ¡Su lengua es insolente y sus maneras arrogantes! Me da igual que sea un capitán entre los suyos; son una raza inferior de necios, en cualquier caso, incapaces de reconocer la grandeza o de inclinarse ante sus superiores, como deberían hacer. Si supiera siquiera una pequeña parte de las cosas que podría hacerle...
-str_npc21_personalityclash_speech|¿Había mencionado que odio a {s11}?
+str_npc21_personalityclash_speech|¡Caranba, {jefe/jefa}! Esa tal Zigurfia es una bruja chiflada, ¿no? Se ve a la legua que ha cocido más cuervos de la cuenta en ese caldero suyo, en concreto el cuervo que tuve que cargar sobre mi pobre espalda por orden de Su Señoría. Y que me aspen si no me mira por encima del hombro, como si no fuera más que el estiércol que se quita de los zapatos, ¡y eso que su cabeza no me llega ni al ombligo! Me dan ganas de presentarle mi puño a su cabeza, eso es lo que pienso. Pero ya he visto antes a otras de su calaña, ya lo creo que sí. Con esa clase de gente, hay que tener ojos hasta en el cogote, no te equivoques.
 str_npc22_personalityclash_speech|¿Había mencionado que odio a {s11}?
 str_npc23_personalityclash_speech|{playername}, acabo de ver a {s11} pisar sin ninguna vergüenza un nido de tiernos pajaritos. Su torpeza ha destrozado las vidas de unas criaturas inocentes.
 str_npc24_personalityclash_speech|El señor {s11} se las apaña bien en la batalla, pero me pregunto si su truco está en cegar al enemigo con el brillo de su pelo. ¿O quizás caen admirados por su fama y sus modales arrogantes?
@@ -2307,7 +2311,7 @@ str_npc27_personalityclash_speech_b|Odio a {s11}.
 str_npc18_personalityclash2_speech|Gulm no es solo una bestia traicionera, Gran {Guerrero/Guerrera}; además está orgulloso de serlo. Anoche volvió a contarnos su historia mientras descansábamos junto a la hoguera, presumiendo de su horrendo acto. Harías bien en vigilar a esa criatura, Gran {Guerrero/Guerrera}. Si fue capaz de traicionar a sus capitanes mientras servía a la Mano blanca, ¿qué le impide hacerte lo mismo a ti?
 str_npc19_personalityclash2_speech|Odio a {s11}.
 str_npc20_personalityclash2_speech|Cada vez que mis ojos se posan sobre Fuldimir, una rabia sin nombre crece dentro de mí. No, no es nada que él haya hecho. Pero él y su pueblo, los lobos de mar de Umbar, son indignos de su propia sangre. Osan llamarse a sí mismos herederos de la antigua Anadûnê. Pero por supuesto, ellos, en su ignorancia, la llaman «Númenor». ¡No me extrañaría si apenas una gota de sangre verdadera corre por las venas de Fuldimir! Tal vez, si puedes prescindir de él, podría comprobarlo por mí misma...
-str_npc21_personalityclash2_speech|¿Había mencionado que odio a {s11}?
+str_npc21_personalityclash2_speech|He estado pensando una cosa, {jefe/jefa}: ¿cómo se mata a una bruja? Sin que me convierta en un montón de babosas, quiero decir. Ese viejo murciélago ha estado echándome su mal de ojo otra vez y llevo todo el día con la piel de gallina. ¡Por dentro!  Yo soy muy feliz aplastando cabezas y quebrando escudos en medio de una pelea, ¿pero lo que ella les hace a las cabezas que yo he aplastado cuando nadie mira? No me gusta jugar con la comida, así no. Ella me da escalofríos.
 str_npc22_personalityclash2_speech|¿Había mencionado que odio a {s11}?
 str_npc23_personalityclash2_speech|¿Había mencionado que odio a {s11}?
 str_npc24_personalityclash2_speech|Una buena pelea, ¿eh, capitán? Aunque ligeramente ensombrecida por la conducta de esa mujer elfa, {s11}.
@@ -2327,7 +2331,7 @@ str_npc27_personalityclash2_speech_b|Odio a {s11}.
 str_npc18_personalitymatch_speech|Gran {Guerrero/Guerrera}, ¿has visto a alguien tan mortífero como Lykyada en la batalla? ¡Qué veloces son sus flechas, qué afilada su hoja! Con tu permiso, Gran {Guerrero/Guerrera}, me gustaría pasar más tiempo entrenando bajo su tutela. Podría enseñarme muchas cosas, para que pueda servirte mejor.
 str_npc19_personalitymatch_speech|¡La euforia de la batalla arde en mis venas! Y en las de Varfang también, por lo que he podido ver. Ese hombre es el terror del campo de batalla, digno de contemplar, riendo mientras arrolla a los miserables enemigos que huyen. Esos hombres del Este me intrigan, capitán. Podríamos aprender mucho de ellos sobre el arte de la equitación, si los Rohirrim no quieren enseñárselo a los Dunlendinos, una vez que ocupe mi lugar.
 str_npc20_personalitymatch_speech|Mira a Bolzog. ¡Bolzog el Grande! Mira cómo corretea con sus andares patizambos, yendo y viniendo a mi voluntad, haciendo todo lo que le pido. Como debería hacer un buen «urku». La verdad es que me cae bien, capitán. ¡Bolzog! ¡Traeme el ungüento! ¡Ahora!
-str_npc21_personalitymatch_speech|Una batalla llena de grandes hazañas, capitán, mis felicitaciones por la victoria. He visto cómo {s11} se encargaba de cuidar de los heridos y los enfermos, en silencio y sin desfallecer, incluso mientras todavía estábamos dando su merecido a los último enemigos.
+str_npc21_personalitymatch_speech|¡Ja! ¡{Jefe/Jefa}! Anoche, estuve observando un rato a ese pobre bastardo de Ufthak. Es un canijo la mar de divertido, te lo puedes creer. Le hice cocinarme algo de carne que él tenía escondida, ¿no?, ¡y entonce me la comí toda delante de sus narices! ¡Que me aspen si no lloró hasta que se le secaron los ojos! Deberías haber visto cómo moquea cuando lloriquea, ¡lo mismito que un río! ¡Ja! ¡Me alegro de tenerlo aquí!
 str_npc22_personalitymatch_speech|¿Había dicho que me cae bien {s11}?
 str_npc23_personalitymatch_speech|{playername}, a pesar de que odio las guerras, no he podido dejar de admirar a mi Señor {s11} cabalgando en todo su esplendor y abalanzándose sobre las criaturas del Enemigo como un halcón.
 str_npc24_personalitymatch_speech|¡Una sangrienta victoria, como a mí me gusta! Recibí, sin embargo, una herida que {s11} tuvo la amabilidad de vendar de inmediato.
@@ -2337,7 +2341,7 @@ str_npc27_personalitymatch_speech|¿Había dicho que me cae bien {s11}?
 str_npc18_personalitymatch_speech_b|Gran {Guerrero/Guerrera}, dice mucho de ti que tengas un guerrero como Lykyada luchando bajo tu estandarte. Pensaba que todos los Sureños eran débiles y decadentes, no tan diferentes de los hombres del Oeste, pero si tienen a más como él entre sus filas, entonces no hay duda de que los días del Oeste se acercan a su fin.
 str_npc19_personalitymatch_speech_b|Capitán, anoche Varfang y yo estuvimos compartiendo un odre de vino junto al fuego. Le considero un hombre de buen consejo, pues siempre cuida de recordar las hazañas de sus antepasados, como debe ser. No sé si. como él dice, los espíritus de nuestros ancestros están con nosotros. A decir verdad, no me agrada pensarlo. Pero un rey debe conocer la historia de su sangre, de las madres y los padres de tiempos pasados. Varfang conoce el valor de esta sabiduría.
 str_npc20_personalitymatch_speech_b|Nunca he conocido a un 'urku' como Bolzog. Oh, por supuesto, no es agradable a la vista, pero en todos mis años es el único que he conocido que es capaz de algo más que acechar, merodear y asesinar. Sus manos nudosas son sorprendentemente hábiles. Sí, sorprendentemente hábiles... Tal vez pueda llegar a aprender más de las artes de los huesos y los tendones de lo que pensé al principio.
-str_npc21_personalitymatch_speech_b|Salvar vidas es el más noble de los actos, y siento amistad por esa alma caritativa, incluso siendo de mundos tan diferentes. 
+str_npc21_personalitymatch_speech_b|Ese tontorrón de Ufthak sigue intentando escabullirse de mí, pero yo siempre le pillo, y siempre lo haré. Es casi como en los viejos tiempos, {jefe/jefa}. Cuando tenía a una banda de buenos muchachos a mi servicio. O antes incluso, al otro lado de las montañas, cuando tenía a mis chicos conmigo: Berto y Guille y Tom... ¡Ah, qué se le va a hacer! Lo pasado, pasado está... ¿Dónde se ha metido ahora ese pequeño canalla andrajoso, eh? ¡Ufthak! ¡Ven aquí, acechador de poca monta!
 str_npc22_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc23_personalitymatch_speech_b|Me pregunto que edad tendrá él. ¿Quizás una docena de siglos más que yo? No importa, nunca lo comprenderías.
 str_npc24_personalitymatch_speech_b|{s11} y sus compatriotas de Valle, aunque no se pueden comparar a los guerreros enanos, han probado ser aliados fiables en esta guerra. Se han portado como buenos amigos y compañeros, si se me permite decirlo.
@@ -2357,7 +2361,7 @@ str_npc27_retirement_speech|Me estoy cansando de la vida del guerrero, me retira
 str_npc18_rehire_speech|Mi acero aun está sediento de sangre, Gran {Guerrero/Guerrera}. ¡Déjame ir contigo otra vez!
 str_npc19_rehire_speech|Me alegra volver a verte, capitán. Con tu permiso, me gustaría volver a incorporarme a tu compañía.
 str_npc20_rehire_speech|Partamos cuanto antes, capitán. ¡No ganaremos esta guerra si estamos ociosos!
-str_npc21_rehire_speech|Te vuelvo a dar la bienvenida. ¿Seguimos por donde lo habíamos dejado?
+str_npc21_rehire_speech|¿Cómo te ha ido todo este tiempo, {jefe/jefa}? ¿Debería recoger mis cosas y marcharme contigo otra vez?
 str_npc22_rehire_speech|Qué alegría verte, {playername}. Viajemos juntos de nuevo.
 str_npc23_rehire_speech|Me alegra verte de nuevo, {playername}. Juntemos de nuevo nuestros caminos.
 str_npc24_rehire_speech|My hacha está lista y afilada, {playername}. ¿Quieres que me una a ti de nuevo?
@@ -2367,7 +2371,7 @@ str_npc27_rehire_speech|¿Puedo servirte de nuevo?
 str_npc18_home_intro|Ah, el Anduin. Gran {Guerrero/Guerrera}, habrás oído hablar de las grandes victorias de los Aurigas hace muchas generaciones, ¿verdad? Formaron una alianza con nosotros, los Variags, y juntos, nuestros guerreros aplastaron a los penosos ejércitos de Gondor, matando al rey al que llamaban Ondoher. ¡Qué matanza tan gloriosa debieron de disfrutar nuestros antepasados!
 str_npc19_home_intro|Ah, Edoras. Mi legítimo hogar. Mira a lo alto, capitán, al Castillo de Oro. Hace apenas unas pocas generaciones, a las mismas puertas de Meduseld, el último hijo de Helm Manomartillo fue muerto, y durante un tiempo Wulf fue Rey. No el mismo Wulf que ahora es uno de los jefes de las Tierras Briunas, claro, ése no es sino un chucho miserable que lleva el nombre de alguien más grandioso.
 str_npc20_home_intro|Ah, la Montaña Solitaria. El último bastión del Pueblo de Durin, en estos días, ¿no es así? Es grato verla por fin con mis propios ojos. Grato, sí... pero no tanto como el recuerdo de la muerte de aquel Enano, una muerte lenta, gracias a mis artes. ¡En verdad los Enanos son resistentes! Pero flaco favor les hizo Aulë el Hacedor dándoles tanta capacidad para el sufrimiento.
-str_npc21_home_intro|Detengámonos aquí un momento, capitán. Justo delante de nosotros, entre el río Anduin y el Limclaro, se encuentra el Campo de Celebrant, donde Eorl el Joven cabalgó en ayuda de nuestros aliados de Gondor.
+str_npc21_home_intro|¡Oye, {jefe/jefa}! ¡Ese de ahí es un mal sitio! Dol Guldur, la guarida más oscura donde habitan las peores criaturas. Todos esos árboles alrededor y ni una ardilla jugosa, ni un sabrso pájaro en esas ramas. No hay que ser una bruja ni nada de eso para conocer el olor de los Oscuros, y este sitio apesta.
 str_npc22_home_intro|¡Daro! Eso de allí es Angrenost, con la negra torre de Orthanc a la vista. Mucho ha cambiado desde la última vez que la vi, y no para mejor precisamente. 
 str_npc23_home_intro|Disculpa, {playername}. Los caminos en estas tierras se vuelven más retorcidos y algunos de ellos llevan a callejones sin salida. Debemos de estar acercándonos a Dol Guldur.
 str_npc24_home_intro|¡Eh, capitán! Este debe de ser el antiguo camino hacia la Puerta Este de Khazad-dûm, o Moria si lo prefieres. Puedes ver en la distancia las aguas brillantes del lago de Kheled-zâram, y, entre las nubes, los tres majestuosos picos que coronan esta zona de las Montañas Nubladas. 
@@ -2377,7 +2381,7 @@ str_npc27_home_intro|¡Eh, mira!
 str_npc18_home_description|Nuestros sabios nos lo contaron todo acerca de aquella guerra. De no ser por la debilidad de los Sureños, que perdieron una batalla que deberían haber ganado, los Hombres de Gondor nunca habrían ganado la Batalla del Campamento. Los carros de los Aurigas fueron destruidos, y muchos valerosos héroes murieron en las tierras pantanosas de las Ciénagas de los Muertos.
 str_npc19_home_description|Me gustaría ver a nuestros pueblos unidos, como lo estuvieron en el pasado. Nunca más se verá a mujeres de cabellos bruno acunar en sus pechos a niños enfermos, mientras sus primos de pelo claro festejan en sus cálidos salones comiendo carne y embriagándose con vino. Nunca más mirará el montañés moreno con resquemor a las manadas de caballos guiadas por granjeros de cabellera dorada. Cuando sea rey, me encargaré de que se haga justicia. Pero primero, Rohan pagará la indemnización por la sangre derramada.
 str_npc20_home_description|Lo recuerdo bien: Thráin, hijo de Thrór. ¡Imprudente y presuntuoso vástago de una línea rota, pretendiente de un trono sin valor! Resistió grandes tormentos a mis manos. Pero nadie se resiste a la voluntad de Zigûrphel por mucho tiempo, capitán. Nadie. Le arrebaté su Anillo en las mazmorras de Dol Guldur y lo envié a la Torre Oscura, y fui bien recompensada. ¡En gran estima me tenía entonces el Señor Oscuro!
-str_npc21_home_description|«¿Dónde están ahora el caballo y el caballero? ¿Dónde está el cuerno que sonaba?^¿Dónde están el yelmo y la coraza, y los luminosos cabellos flotantes?...^Han pasado como una lluvia en la montaña, como un viento en el prado;^Los días han descendido en el Oeste en la sombra de detrás de las colinas...»
+str_npc21_home_description|En toda mi vida, he hecho todo lo posible por no acercarme a ninguna brujería, y sería una pena empezar ahora.
 str_npc22_home_description|Construido en el pasado por el Reino del Sur, ahora sirve de guarida para aquel que llamamos el Mago Blanco, conspirando, sin duda, para aumentar su poder a costa de otros.
 str_npc23_home_description|Nunca me había aventurado tan lejos, pero he oído a los exploradores del Bosque Verde decir que puede ser que encontremos Nazgûl por aquí. Noto una presencia maligna, pero no sabría ponerle nombre. No obstante es poderosa, así que estemos alerta.
 str_npc24_home_description|Viendo la desolación del lugar, y la cantidad de pisadas de orcos, temo por el destino del valiente Balin y su expedición. Parece que Moria ha caído en la Sombra, así que debemos ir con cuidado.
@@ -2387,7 +2391,7 @@ str_npc27_home_description|¿Conoces esa ciudad?
 str_npc18_home_description_2|Me agrada marchar contigo, Gran {Guerrero/Guerrera}. Los líderes de mi poueblo querrán poseer de nuevo esta tierra, que una vez fue suya. Que tomen cuanta quieran, de Gondor y de todo el Oeste. Por mi parte, seré feliz mientras pueda derramar sobre este suelo la sangre de más enemigos.
 str_npc19_home_description_2|Cuando la larga guerra haya terminado, hablarás en mi favor, ¿verdad, capitán? ¿Intercederás por mí ante cualquiera que sea el Poder que salga triunfante sobre el otro, el Ojo o la Mano? ¿Prestarás tu voz a mis pretensiones, para que me concedan Edoras y todo Rohan como feudo, para vivir y gobernar allí?
 str_npc20_home_description_2|Destruiremos las obras de los Valar en la Tierra Media, de las que los Enenos son parte principal. Sí, será maravilloso deshacer los que el Hacedor creó. Aplastaremos a los Enanos bajo nuestros pies, arrasaremos los últimos reinos de los Hombres inferiores, y nos reiremos mientras los Elfos se desvanecen en la bruma como fantasmas. ¡Entonces llegará el día en que me plante ante las Cuevas de los Olvidados, en Valinor, y convoque a mi Rey de nuevo!
-str_npc21_home_description_2|Haríamos bien en recordar las grandes hazañas del pasado y los sacrificios que se hicieron. La alianza entre Rohan y Gondor salvará de nuevo a nuestros pueblos de la perdición.
+str_npc21_home_description_2|En toda mi vida, he hecho todo lo posible por no acercarme a ninguna brujería, y sería una pena empezar ahora.
 str_npc22_home_description_2|Que esto sirva como recordatorio de que hasta los más grandes, incluso uno de los Istari, puede corromperse y caer en la Sombra. Aquéllos que anhelan poder pueden ser derrotados por él, así que evitemos cualquier demora.
 str_npc23_home_description_2|Siento la presencia de malvados ejércitos tras sus muros, listos para marchar a la guerra... ¿Contra la hermosa Lothlórien? ¿Contra los ciudadanos de Valle? ¿Contra mi tierra natal del Bosque Verde? No puedo saberlo, pero te ruego que hagas todo lo posible para frustrar sus planes.
 str_npc24_home_description_2|Si los azares de la guerra nos deparan alguna vez un numeroso ejército deberíamos arriesgarnos a entrar en las Minas y recuperar sus grandes riquezas.
@@ -2397,7 +2401,7 @@ str_npc27_home_description_2| Minas Morgul; donde los Nazgûl beben durante todo
 str_npc18_home_recap|Era una prisionera encadenada, condenada a muerte por matar a uno de los hijos de Lurmsakun en el foso de entrenamiento. Tres vinieron a la vez contra mí, y los derroté, pero uno murió de sus heridas. Entonces tú intercediste por mí y me liberaste. Ahora mato por ti, y moriría por ti si fuera necesario.
 str_npc19_home_recap|Sangre real de Rohan corre por mis venas, lo juro. El Rey Fengel fue mi abuelo, aunque nunca tomó a mi abuela como esposa. Los Jefes de las Tierras Brunas tienen celos de mí, y me mantienen lejos del combate para evitar que realice grandes hazañas, que me traerían gloria y atraerían hombres a mi causa. Entonces tú me acogiste bajo tu estandarte. Ahora, aguardo el día en que he de sentarme en mi legítimo trono en Edoras.
 str_npc20_home_recap|¿Qué más hay que contar, capitán? Solía practicar mis artes en las mazmorras de Dol Guldur. El ojo de mis sueños ve muchas cosas lejanas y ocultas, y te vio a ti y tus obras en esta Guerra. Parece ser que tengo que darte cuanta ayuda pueda, para hacer que caigan los Poderes del Oeste y el Poder del Este se alce de nueve y reine hasta el fin del mundo.
-str_npc21_home_recap|No me divierte que te olvides tan fácilmente.
+str_npc21_home_recap|Me lo pasé en grande dirigiendo una auténtica banda de saqueadores en las montañas, hasta que bebí demasiado y me aposté hasta mi vida jugando con esos tramposos de Gundabad.
 str_npc22_home_recap|Saciaré tu curiosidad, pero no nos demoremos aquí.
 str_npc23_home_recap|Nací y crecí en el Bosque Negro, entre los Elfos Silvanos. Nuestra pericia en los bosques es conocida por todos.
 str_npc24_home_recap|Soy hijo de Dwalin, del pueblo de Durin.
@@ -2407,7 +2411,7 @@ str_npc27_home_recap|Seré breve.
 str_npc18_honorific|Gran {Guerrero/Guerrera}
 str_npc19_honorific|Capitán
 str_npc20_honorific|Capitán
-str_npc21_honorific|Capitán
+str_npc21_honorific|{Jefe/Jefa}
 str_npc22_honorific|Capitán
 str_npc23_honorific|{guerrero/guerrera}
 str_npc24_honorific|capitán
@@ -2503,3 +2507,27 @@ str_imladris_guildmaster_companion_player_none_ok|Lo entiendo, Anciano. Gracias 
 str_imladris_guildmaster_player_found_ok|Lo entiendo, Anciano. Gracias por tu tiempo.
 str_show_keybinds_form|Configuración de teclas especiales: ^^ Teclas de formaciones:^ Presiona de F1 a F4 para ordenar a las distintas divisiones. ^Mantén presionado F1 para posicionar las divisiones seleccionadas.^Ubica el marcador en una división enemiga para marcarlos como objetivo. ^^ Cambiar modos de uso de armas - O ^^ Cambiar modos de cámara - CTRL+FIN ^^ Arengar - V ^^ Llamar montura - M ^^ Ver órdenes / minimapa - Retroceso
 str_mordor_cungol_guildmaster_companion|Vaya, vaya, ¿buscas un buen luchador? Tengo al candidato adecuado, y es uno de los favoritos de los jefazos. ¡Que no te engañe lo canijo que es! No, no. Te aseguro que no tardará en ser su propio jefe, si le dejas. Es muy fácil. Dale una larga y puntiaguda hacha al bueno de Ufthak, ponle al frente y disfruta de la carnicería. Los desmiembra como quien no quiere la cosa, coser y cantar. ¿Eh? ¿A qué vienen esas risas? A seguir, gusanos. Perdona el espectáculo, capitán. Les voy a dar disciplina, no como al bueno de Ufthak. Llévatelo, llévatelo; no te arrepentirás. Mira, allí arriba, en la torre. Majestuosa estampa, la suya.
+str_gundabad_guildmaster_companion_player_ask|Solo veo chusma traicionera que prefiere correr antes que luchar. ¿Dónde están los guerreros de verdad?
+str_gundabad_guildmaster_companion_none| Me importa un comino de dónde vengas; ¡vigila tu lengua mientras estés aquí! Oh, sí, ten cuidado con cómo nos hablas, o quizás te acabes cayendo en un agujero lleno de serpeintes en estos osuros túneles nuestros. Nuestros guerreros están luchando en tierras rebeldes, combatiendo contra ladrones y bandidos y asesinos amigos de los elfos. ¿Y tú qué haces, eh? ¿Escurriendo el bulto para no cumplir con tu deber, espiando nuestros asuntos privados? ¡Lárgate de aquí, vuelve al combate, como un buen soldado!
+str_gundabad_guildmaster_companion_player_none_ok|Cuida tus palabras cuando te dirijas a mí, si dabes lo que te conviene.
+str_gundabad_guildmaster_player_found_ok|¿Te he oído bien? ¿Esa tal “Berta” tuya es un troll que piensa? Vaya, eso tengo que verlo.
+str_gundabad_guildmaster_companion|¡Tú vigila tu lengua, o no faltará alguien por aquí para cortártela! Oh, sí, un mal paso y ¡chas!, con un chasquido de mis dedos, ¡{directo/directa} al foso de peleas! Tenemos una sorpresa especial allí, para los bocazas fanfarrones como tú. ¡Ja! Habría que ver si te ríes tanto cuando estés en ese foso con nuestra querida Berta! Me apuesto las provisiones de un mes a que no seguirías en pie después de recibir un solo golpe suyo. Es el troll más astuto que nunca nos hemos topado, ¡pero nosotros somos más astutos, teniendo en cuenta que somos nosotros los que la tenemos bien encadenada! No sabes cómo nos hemos reído, poniéndola ahí, debajo de esa estatua grande del viejo rey enano, en las cuevas. Para que no se sienta sola, ¡je, je, je! ¿Y bien? ¿Te atreves a aguantarle un par de golpes a Berta?
+str_fullname_region_rhun|Rhovanion del este, en las dos márgenes del río Celduin
+str_fullname_region_erebor|las faldas de Erebor, la Montaña Solitaria
+str_fullname_region_celebrant|el Campo de Celebrant, entre los ríos Celebrant y Limclaro
+str_fullname_region_gladden_fields|los Campos Gladios, humedales del río Gladio
+str_fullname_region_w_emyn_muil|las Emyn Muil occidentales
+str_fullname_region_s_misty_mountains|las faldas de las Montañas Nubladas del sur
+str_fullname_region_n_anduin_vale|el valle norte del Anduin, al norte de la Carroca
+str_fullname_region_s_anduin_vale|el valle sur del Anduin, entre Lórien y los Vados
+str_fullname_region_cair_andros|Cair Andros, la gran isla del Anduin con forma de barco
+str_shortname_region_rhun|Rhovanion del este
+str_shortname_region_erebor|las faldas de Erebor
+str_shortname_region_celebrant|el Campo de Celebrant
+str_shortname_region_gladden_fields|los Campos Gladios
+str_shortname_region_w_emyn_muil|las Emyn Muil occidentales
+str_shortname_region_s_misty_mountains|las faldas de las Montañas Nubladas del sur
+str_shortname_region_n_anduin_vale|el valle norte del Anduin
+str_shortname_region_s_anduin_vale|el valle sur del Anduin
+str_shortname_region_cair_andros|Cair Andros
+str_isengard_hunting_camp_guildmaster_player_found_ok|Si mata bien, me lo llevaré. Si no, lo destriparé como a un pez. ¡Y si resulta ser otro gusano inútil, volveré y te haré pagar por malgastar mi tiempo!

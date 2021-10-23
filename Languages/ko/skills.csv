@@ -35,7 +35,7 @@ skl_riding_desc|높은 등급의 말(또는 짐승)을 탈 수 있고, 속도와
 skl_athletics|운동능력
 skl_athletics_desc|달리기 속도를 올려줍니다(개인 기술)
 skl_shield|방패술
-skl_shield_desc|방패가 받는 데미지를 줄이고(1 포인트 당 8%%) 방패 속도와 방어력을 올려줍니다(개인 기술)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|무기의 달인
 skl_weapon_master_desc|무기 숙달을 쉽게 하고 한계치를 올립니다. 한계치 : 60,100,140,180,220,260,300,340,380,420(개인 기술)
 skl_power_draw|당기는 힘
@@ -45,4 +45,4 @@ skl_power_throw_desc|1 포인트가 오를 때 마다 10%%의 투척 데미지�
 skl_power_strike|때리는 힘
 skl_power_strike_desc|1 포인트가 오를 때 마다 8%% 근접 데미지가 증가합니다(개인 기술)
 skl_ironflesh|강철피부
-skl_ironflesh_desc|1 포인트가 오를 때 마다 체력이 +2 됩니다(개인 기술)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

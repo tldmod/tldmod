@@ -144,7 +144,7 @@ itm_arnor_greaves|Gambali Arnoriani
 itm_arnor_shield_a|Scudo di Arnor
 itm_arnor_shield_c|Scudo da cavalleria di Arnor
 itm_arnor_sword_a|Spada bastarda di Arnor
-itm_arnor_sword_c|Spada bastarda di Arnor
+itm_arnor_sword_c|Spada da Guerra di Arnor
 itm_arnor_sword_f|Spada corta di Arnor
 itm_riv_helm_a|Calotta di Cuoio di Gran Burrone
 itm_riv_helm_b|Elmo da arciere di Gran Burrone
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Cappuccio da ramingo di Gondor
 itm_gondor_light_greaves|Gambali in Cuoio Gondoriani
 itm_gondor_med_greaves|Gambali Medi Gondoriani
 itm_gondor_heavy_greaves|Gambali di Maglia Gondoriani
-itm_gondor_infantry_helm|Elmo da fante di Gondor
 itm_gondor_auxila_helm|Elmo Leggero Gondoriano
 itm_gondorian_archer_helm|Elmo da Arciere Gondoriano
 itm_tower_archer_helm|Elmo da arciere della torre
 itm_gondor_leader_helm|Alto elmo di Gondor
 itm_tower_guard_helm|Elmo da guardia della torre
 itm_gondor_citadel_knight_helm|Elmo da cavaliere della cittadella
+itm_gondor_infantry_helm|Elmo da fante di Gondor
 itm_gondor_knight_helm|Elmo da Cavaliere Gondoriano
 itm_gondor_dolamroth_helm|Elmo di Dol Amroth
 itm_swan_knight_helm|Elmo da Cavaliere Cigno
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Eket di Linhir
 itm_pelargir_eket|Eket di Pelargir
 itm_pelargir_sword|Spada di Pelargir
 itm_gondor_ranger_sword|Spada da Ramingo di Gondor
-itm_gondor_bastard|Spada Bastarda di Gondor
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|Spada della Cittadella di Gondor
 itm_gondor_cav_sword|Spada da Cavalleria di Gondor
 itm_gondor_spear|Lancia da Fanteria di Gondor
 itm_gondor_tower_spear|Lancia della torre di Gondor
 itm_gondor_lance|Lancia da Cavalleria di Gondor
-itm_loss_axe|Ascia da Battaglia di Lossarnach
-itm_loss_war_axe|Ascia da Guerra di Lossarnach
+itm_loss_axe|Ascia da Battaglia di Gondor
+itm_loss_war_axe|Ascia da Guerra di Gondor
 itm_lorien_sword_a|Spada Lunga di Lorien
 itm_lorien_sword_b|Spada corta di Lorien
 itm_lorien_sword_c|Spada da Guerra di Lorien
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Armatura Orchesca di Isengard
 itm_isen_orc_armor_f|Armatura Orchesca di Isengard
 itm_isen_orc_armor_g|Armatura Orchesca di Isengard
 itm_isen_uruk_light_a|Bardatura Leggera Uruk--Hai
-itm_isen_uruk_light_b|Armatura di Cuoio Uruk-Hai
-itm_isen_uruk_light_c|Armatura di Cuoio Uruk-Hai
-itm_isen_uruk_light_d|Armatura in Cuoio e Maglia di Ferro Uruk-Hai
-itm_isen_uruk_light_e|Bardatura in Maglia di Ferro Uruk-Hai
-itm_isen_uruk_heavy_a|Armatura in Cuoio e Maglia di Ferro Uruk-Hai
-itm_isen_uruk_heavy_b|Armatura Pesante Uruk-Hai
-itm_isen_uruk_heavy_c|Armatura Pesante Uruk-Hai
+itm_isen_uruk_light_b|Bardatura da Battaglia Uruk--Hai
+itm_isen_uruk_light_c|Bardatura da Berserker Uruk--Hai
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+itm_isen_uruk_heavy_a|Armatura Segmentata Media Uruk--Hai
+itm_isen_uruk_heavy_b|Maglia in Ferro Pesante Uruk--Hai
+itm_isen_uruk_heavy_c|Armatura Segmentata Completa Uruk--Hai
 itm_isen_uruk_heavy_d|Pelle da Braccatore Uruk-Hai
 itm_isen_uruk_heavy_e|Pelle da Braccatore Uruk-Hai
 itm_uruk_tracker_boots|Stivali da Braccatore Uruk

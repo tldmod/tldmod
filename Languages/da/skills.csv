@@ -35,7 +35,7 @@ skl_riding_desc|Tillader dig at ride heste (eller andre bæster) af højere svæ
 skl_athletics|Atletik
 skl_athletics_desc|Forbedre din løbe hastighed. (Personlig færdighed)
 skl_shield|Skjold
-skl_shield_desc|Reducer skade til skjold (med 8%% per færdigheds niveau) og forbedre skjold hastighed og dækning. (Personlig færdighed)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Våben mester
 skl_weapon_master_desc|Gør der nemmere at lære våben færdighed og forhøjer færdigheds grænse. Grænsen går således: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personlig færdighed)
 skl_power_draw|Magt Træk
@@ -45,4 +45,4 @@ skl_power_throw_desc|Hvert point til denne færdighed forhøjer kaste skaden med
 skl_power_strike|Magt slag
 skl_power_strike_desc|Hvert point til denne færdighed forhøjer nærkamp skade med 8%%. (Personlig færdighed)
 skl_ironflesh|Jernkød
-skl_ironflesh_desc|Hvert point til denne færdighed forhøjer liv-points med +2. (Personlig færdighed)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

@@ -35,7 +35,7 @@ skl_riding_desc|可以骑更好的马(或野兽)，提高骑行速度和操纵�
 skl_athletics|跑动
 skl_athletics_desc|提高跑动速度。(个人技能)
 skl_shield|盾防
-skl_shield_desc|减少盾的损坏程度(每点减少8%%)和提高盾的格挡速度，以及覆盖范围。(个人技能)
+skl_shield_desc|减少盾的损坏程度（每点减少8%%），提高盾的格挡速度以及覆盖范围，并且能够降低持弓配盾的惩罚。（个人技能）
 skl_weapon_master|武器掌握
 skl_weapon_master_desc|让武器熟练度提升的更快并且提高武器熟练度的上限。上限依次为：60,100,140,180,220,260,300,340,380,420。(个人技能)
 skl_power_draw|强弓
@@ -45,4 +45,4 @@ skl_power_throw_desc|每点增加10%%的投掷伤害。(个人技能)
 skl_power_strike|强击
 skl_power_strike_desc|每点增加8%%的格斗伤害。(个人技能)
 skl_ironflesh|铁骨
-skl_ironflesh_desc|每点增加2点生命值。(个人技能)
+skl_ironflesh_desc|每点增加2点生命值，并且能让你无伤抵御掉一些攻击。（个人技能）

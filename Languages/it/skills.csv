@@ -35,7 +35,7 @@ skl_riding_desc|Permette di montare cavalli (o altre bestie cavalcabili) che ric
 skl_athletics|Atleticità
 skl_athletics_desc|Migliora la velocità della corsa. (Abilità Personale)
 skl_shield|Scudo
-skl_shield_desc|Riduce i danni allo scudo (dell'8%% per punto Abilità) e migliora la copertura e la velocità nell'uso dello scudo. (Abilità Personale)
+skl_shield_desc|Riduce i danni allo scudo (dell'8%% per punto Abilità) e migliora la copertura e la velocità nell'uso dello scudo, inoltre riduce la penalità dello scudo quando usato con gli archi (Abilità Personale)
 skl_weapon_master|Maestria nelle armi
 skl_weapon_master_desc|Facilita l'apprendimento e incrementa i limiti dell'abilità raggiungibile nell'uso delle armi. I limiti sono in funzione del livello: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Abilità Personale)
 skl_power_draw|Potenza di tiro
@@ -45,4 +45,4 @@ skl_power_throw_desc|Ogni punto incrementa del 10%% i danni provocati con armi d
 skl_power_strike|Potenza d'Attacco
 skl_power_strike_desc|Ogni punto incrementa dell'8%% i danni provocati nei combattimenti corpo a corpo. (Abilità Personale)
 skl_ironflesh|Resistenza
-skl_ironflesh_desc|Ogni punto in questa abilità incrementa i punti ferita di +2. (Abilità Personale)
+skl_ironflesh_desc|Ogni punto attribuito a questa abilità incrementa i punti salute di +2, permettendoti di ricevere qualche colpo senza subire ferite. (Abilità personale)

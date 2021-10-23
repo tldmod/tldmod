@@ -144,7 +144,7 @@ itm_arnor_greaves|亞 爾 諾 脛 甲
 itm_arnor_shield_a|亞 爾 諾 盾
 itm_arnor_shield_c|亞 爾 諾 騎 兵 盾
 itm_arnor_sword_a|亞 爾 諾 半 手 劍
-itm_arnor_sword_c|亞 爾 諾 半 手 劍
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|亞 爾 諾 短 劍
 itm_riv_helm_a|瑞 文 戴 爾 頭 巾
 itm_riv_helm_b|瑞 文 戴 爾 弓 兵 盔
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|剛 鐸 遊 俠 兜 帽
 itm_gondor_light_greaves|剛 鐸 皮 脛 甲
 itm_gondor_med_greaves|剛 鐸 中 型 脛 甲
 itm_gondor_heavy_greaves|剛 鐸 鎖 子 脛 甲
-itm_gondor_infantry_helm|剛 鐸 步 兵 盔
 itm_gondor_auxila_helm|剛 鐸 輕 型 盔
 itm_gondorian_archer_helm|剛 鐸 弓 兵 盔
 itm_tower_archer_helm|塔 弓 兵 盔
 itm_gondor_leader_helm|剛 鐸 高 等 盔
 itm_tower_guard_helm|塔 衛 隊 盔
 itm_gondor_citadel_knight_helm|堡 壘 騎 士 盔
+itm_gondor_infantry_helm|剛 鐸 步 兵 盔
 itm_gondor_knight_helm|剛 鐸 騎 兵 盔
 itm_gondor_dolamroth_helm|多 爾 安 羅 斯 盔
 itm_swan_knight_helm|天 鵝 騎 士 盔
@@ -260,14 +260,14 @@ itm_gondor_short_sword|林 何 短 劍
 itm_pelargir_eket|佩 拉 吉 爾 短 劍
 itm_pelargir_sword|佩 拉 吉 爾 劍
 itm_gondor_ranger_sword|剛 鐸 遊 俠 劍
-itm_gondor_bastard|剛 鐸 半 手 劍
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|剛 鐸 堡 壘 劍
 itm_gondor_cav_sword|剛 鐸 騎 兵 劍
 itm_gondor_spear|剛 鐸 長 槍
 itm_gondor_tower_spear|剛 鐸 塔 長 槍
 itm_gondor_lance|剛 鐸 騎 槍
-itm_loss_axe|羅 蕯 那 奇 戰 鬥 斧
-itm_loss_war_axe|羅 蕯 那 奇 戰 斧
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|羅 斯 洛 立 安 長 劍
 itm_lorien_sword_b|羅 斯 洛 立 安 短 劍
 itm_lorien_sword_c|羅 斯 洛 立 安 戰 劍
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|艾 辛 格 半 獸 人 鎧 甲
 itm_isen_orc_armor_f|艾 辛 格 半 獸 人 鎧 甲
 itm_isen_orc_armor_g|艾 辛 格 半 獸 人 鎧 甲
 itm_isen_uruk_light_a|強 獸 人 輕 輓 俱
-itm_isen_uruk_light_b|強 獸 人 皮 甲
-itm_isen_uruk_light_c|強 獸 人 皮 甲
-itm_isen_uruk_light_d|強 獸 人 鎖 子 甲 與 皮 革
-itm_isen_uruk_light_e|強 獸 人 鎖 子 輓 俱
-itm_isen_uruk_heavy_a|強 獸 人 鎖 子 甲 與 皮 革
-itm_isen_uruk_heavy_b|強 獸 人 重 型 鎧 甲
-itm_isen_uruk_heavy_c|強 獸 人 重 型 鎧 甲
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|強 獸 人 追 蹤 者 皮 革
 itm_isen_uruk_heavy_e|強 獸 人 追 蹤 者 皮 革
 itm_uruk_tracker_boots|半 獸 人 追 蹤 者 靴 子

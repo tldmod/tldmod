@@ -91,8 +91,9 @@ qstr_Battle_Formations_an|戰 鬥 形 式 以 及 AI :
 qstr_Native|原 生
 qstr_TLD_FormAI__Original|TLD AI (原 版 )
 qstr_TLD_New_FormAI|TLD 新 AI
-qstr_Advanced_Siege_AI:__|進 階 攻 城 AI
-qstr_On| 開 啟
+; qstr_Siege_AI:__|Siege AI:  
+; qstr_Basic__better_perfor|Basic (better performance)
+; qstr_Advanced|Advanced
 qstr_Town_NPCs_Always_Acc|城 鎮 NPC 可 以 從 菜 單 訪 問：
 qstr_Cutscenes:__|場 景：
 qstr_Injuries_for_compani|同 伴 受 傷：
@@ -106,9 +107,9 @@ qstr_Player_damage_only|只 有 玩 家 傷 害
 qstr_All_Messages|所 有 訊 息
 qstr_Troop_Identifier_in_|戰 鬥 中 的 部 隊 標 識 符 (在 戰 鬥 中 按 'Y' 鍵 顯 示 / 隱 藏 )：
 qstr_Disable|禁 用
-qstr_Enable_without_Facti|不 顯 示 派 系
-qstr_Enable_with_Faction_|顯 示 派 系
-qstr_Simple:_Red___Enemy_|簡 單 : 紅 色 - 敵 人 / 綠 色 - 盟 友
+; qstr_Troop_Names|Troop Names
+; qstr_Simple:_Faction_Colo|Simple: Faction Colors
+; qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
 qstr_Preferred_Camera_Mod|鏡 頭 模 式 :
 qstr_Default_Camera|預 設 鏡 頭
 qstr_Free_Mode_Custom_Cam|自 由 鏡 頭
@@ -184,13 +185,17 @@ qstr_+20_to_Party_Morale|+20 隊 伍 士 氣
 qstr_+1_to_Riding_Skill|+1 騎 術
 qstr_during_battles|戰爭時
 qstr_+1_to_Pathfinding|+1 嚮 導
-qstr_+1_to_Athletics|+1 運 動
-qstr_+1_to_Wound_Treatmen|+1 療 傷
+; qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
+; qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
+; qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
 qstr_Use_from_Camp_Menu|從 營 地 選 單 使 用
 qstr_Use_from|用 來
 qstr_Action_Menu|動 作 清 單
-qstr_+1_to_First_Aid|+1 急 救
+; qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
+; qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
+; qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
 qstr_+1_to_Weapon_Mastery|+1 武 器 掌 握
+qstr_+1_to_Wound_Treatmen|+1 療 傷
 qstr_+1_to_Tactics|+1 戰 術
 qstr_+1_to_Power_Strike|+1 強 擊
 qstr_+1_to_Strength|+1 力 量
@@ -198,6 +203,7 @@ qstr_+1_to_Agility|+1 敏 捷
 qstr_+1_to_Leadership|+1 統 御
 qstr_+1_to_Wildcraft|+1 野 外 求 生
 qstr_+1_to_Tracking|+1 跟 踪
+qstr_+1_to_Athletics|+1 運 動
 qstr_when_equipped|已 裝 備 時
 qstr_+1_to_Power_Draw|+1 強 弓
 qstr_The_record_of_Balin_|巴 林 的 失 落 探 險 隊 的 紀 錄
@@ -212,6 +218,9 @@ qstr_rally|集 結
 qstr_rallies|集 結
 qstr_+{reg1}_{s3}_in_batt|戰 鬥 中 +{reg1} {s3}
 qstr_+1_to_Charisma|+1 魅 力
+; qstr_Call_Reinforcements|Call Reinforcements
+; qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
+qstr_+1_to_First_Aid|+1 急 救
 qstr_+1_to_Surgery|+1 手 術
 qstr_+1_to_Intelligence|+1 智 力
 qstr_+2_to_Surgery|+2 手 術
@@ -225,6 +234,8 @@ qstr_+2_to_Tactics|+2 工 程
 qstr_+1_Intelligence|+1 智 力
 qstr_+{reg1}_to_Spotting|+{reg1} 偵 察
 qstr__Scales_with_Wildcra|野 外 求 生 比 例
+; qstr_Strengthens_all_Hero|Strengthens all Heroes
+; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
 qstr_+1_to_Power_Throw|+1 強 擲
 qstr_+1_to_Spotting|+1 偵 察
 qstr_Less_Dunnish_upkeep|減 少 登 丹 的 消 耗
@@ -243,6 +254,7 @@ qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
 ; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
+; qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
 qstr_{reg4}_killed_{reg5}|{reg4} 人 被 殺 ， {reg5} 人 受 傷 ， {reg6} 人 逃 跑
 qstr_{reg4}_killed_{reg5}_|{reg4} 人 被 殺 ， {reg5} 人 受 傷
 qstr_{reg4}_killed_{reg5}_r|{reg4} 人 被 殺 ， {reg5} 人 逃 跑
@@ -785,6 +797,16 @@ qstr_Drive_them_back!|把 它 們 推 回 去 ！
 qstr_Protect_the_City!|保 護 城 市 ！
 qstr_Forward!_Board_them!|向 前 ！ 登 上 它 們 ！
 ; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
+; qstr_on_the_left_flank|on the left flank
+; qstr_on_the_right_flank|on the right flank
+; qstr_through_the_center|through the center
+; qstr_Attackers_charge_{s2|Attackers charge {s2}
+; qstr_Attackers_charge_{s1|Attackers charge {s1}
+; qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
+; qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
+; qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
+; qstr_The_remaining_attack|The remaining attackers disperse!
+; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_Reached_Gauntlet_wav|第 {reg1} 波 ！
 qstr_Ballista:_out_of_amm|弩 砲 ： 彈 藥 用 盡 ！
 qstr_Ballista:_turn_CURSO|弩 砲 ： 轉 動 'CURSOR' ， 瞄 準 'LSHIFT' ， 射 擊 'SPACE' ， 設 置 射 擊 'T' ， 退 出 'F'
@@ -981,7 +1003,7 @@ qstr_As_a_last_defensive_|你 撤 退 到 城 堡 的 大 廳 裡 進 行 最 �
 qstr_You_ve_been_driven_a|你 被 敵 人 從 城 牆 上 面 趕 下 去 了 ， 現 在 敵 人 大 量 湧 入 街 道 內 。 如 果 你 能 擊 敗 他 們 ， 你 也 許 能 扭 轉 局 勢 ， 反 敗 為 勝 。
 qstr_You_ve_breached_the_|你 已 經 突 破 了 城 牆 ， 但 是 那 些 頑 固 的 守 軍 繼 續 在 街 道 上 抵 抗 你 的 攻 擊 ！ 你 得 消 滅 他 們 才 能 攻 擊 城 鎮 中 心 的 城 堡 。
 qstr_The_town_centre_is_y|這 個 城 鎮 的 鎮 廣 場 是 你 的 了 ， 但 是 剩 下 的 守 軍 撤 退 到 城 堡 裡 了 。 你 要 完 全 消 滅 他 們 才 能 取 得 完 全 的 勝 利 。
-qstr_The_remaining_defend|剩 下 的 守 軍 撤 退 到 城 堡 這 個 最 後 的 防 線 。 你 必 須 衝 進 去 清 除 剩 餘 的 抵 抗 力 量 。
+; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_However_since_you_ar|然 而 ， 自 從 你 放 棄 了 向 {s9} 發 的 {效 忠 / 追 隨} 誓 言 。 他 是 絕 對 不 會 承 認 你 是 這 個 {reg8?城 鎮 : 城 堡} 的 {主 人 / 女 主 人} 。
 qstr_The_enemy_has_been_f|敵 人 被 迫 撤 退 了 。 進 攻 停 止 了 ， 但 是 圍 城 還 在 繼 續 。
 qstr_The_assasins_beat_yo|刺 客 擊 敗 了 你 ， 並 留 你 在 地 上 等 死 ……
@@ -1457,13 +1479,14 @@ qstr_{s9}_has_asked_you_to|{s9} 希望你去營救 {reg1} 名囚犯。
 qstr_We_have_reports_that_a|我們剛剛收到線報，說有大批敵軍正集結於 {s13}。\n對此我極其關注，畢竟我一不知道他們有多少人，二不知道我方戰士是否做好了戰鬥準備。\n我希望你能盡可能的靠近 {s13}，並找出一切有用的情報。
 qstr_My_spies_tell_me_of_|我的間諜告訴我說有大批敵軍正集結於 {s13}。\n他們鐵定無法與我與我的僕人抗衡，但能知道他們的人數也不失為一個好主意。\n我希望你能盡可能的靠近 {s13}，並找出一切有用的情報。
 qstr_{s9}_asked_you_to_sco|{s9} 要 求 你 去 偵 察 {s13}。 
-qstr_We_have_reports_of_s|我們剛剛收到線報，{s13} 周圍有敵軍活動的跡象，但我方斥候目前所有的靠近行動都失敗了。\n所以我希望你能組建一支斥候，並儘可能的靠近 {s13}，然後將斥候部署在那裡。
-qstr_My_spies_tell_me_the|我的間諜告訴我說敵軍正在 {s13} 採取某些行動。\n我們那些膽小如鼠的斥候們已經失敗太多次了。\n至今都沒傳回任何有用的情報。\n我希望你能組建自己的斥候，並儘可能的靠近 {s13}，然後將他們留在那裡。\n確保他們不會轉身逃跑！
+; qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts. I will also give you a few recruits, but you should not send them out on their own.
+; qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee! I will give you these recruits, they won't be missed.
 ; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|我們要把戰鬥帶向敵人，{playername}。\n為了達到這個目標，我們需要攻擊他們的巡邏隊和情報網絡。\n我希望你去消滅 {reg1}隊 {s13}，這將幫我們贏得主動。
 qstr_We_need_to_grind_dow|我們要把沒用的敵人碾碎，{playername}。\n他們的巡邏隊和補給隊比我預料中的還要大膽。\n我希望你去消滅{reg1}隊 {s13}，教會他們什麼叫做恐懼。
 qstr_{s9}_asked_you_to_el|{s9} 希望你去消滅 {reg1}隊{s13}。
 qstr_{s9}_asked_you_to_fr|{s9}要 你 從 近 郊 一 隻 狂 暴 食 人 妖 的 威 脅 下 解 救 {s13}。 
+; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
 qstr_the_Dwarves_so_that_|矮人使用的貨幣，如果你途徑鐵丘陵或孤山的話，你可以試著用傳說中的矮人武器武裝自己
 qstr_Gondor_so_that_if_yo|剛鐸使用的貨幣，如果你途徑他們的領土的話，你可以試著購買一些他們遠近聞名的護甲
 qstr_Rohan_so_that_if_you|洛汗使用的貨幣，如果你途徑他們的領土的話，你可以試著購買一些他們傳說中的戰馬
@@ -1549,8 +1572,8 @@ qstr_Good_moves_but_you_m|進展良好，但你需要做的仍有很多。
 qstr_More_than_half_of_th|超過一半的敵軍，不壞。
 qstr_You_ll_need_to_try_h|你應該更努力地嘗試。
 qstr_Well..._better_here_|好吧......  在這兒總比在戰場上好，不是麼？
-qstr_We_ve_been_sent_by_L|我們是由 {s3} 派來的。\n我們是來和你們並肩作戰的。
-qstr_Lord_{s3}_has_sent_u|{s3} 派我們來加入攻擊 {s4}。
+; qstr_We_ve_been_sent_by_{|We've been sent by {s3}. We have come to join our strength to yours.
+; qstr_{s3}_has_sent_us_to_|{s3} has sent us, to join the fleet attacking {s4}.
 qstr_Excellent_{playernam|很好，{playername}！\n我聽說你給了他們比我要求的更多的東西。那是件好事。\n在這裡，將此作為超出我們期望的額外獎勵。\n我們需要盡快贏得這場戰爭。
 qstr_Excellent_{playername|很好，{playername}。\n這肯定會幫助他們擺脫困境。\n我們需要盡快贏得這場戰爭。
 qstr_Reinforcing_{s1}_has|加強 {s1} 已加強 {s2}。({s2} 獲得了 {reg50} 派系的力量)

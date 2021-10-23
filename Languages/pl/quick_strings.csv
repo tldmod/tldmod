@@ -91,8 +91,9 @@ qstr_Battle_Formations_an|Formacje bitewne i sztuczna inteligencja:
 qstr_Native|Ojczysty
 qstr_TLD_FormAI__Original|TLD FormAI (oryginalny)
 qstr_TLD_New_FormAI|Nowe FormAI modułu TLD
-qstr_Advanced_Siege_AI:__|Zaawansowana AI oblężeń: 
-qstr_On|Na
+; qstr_Siege_AI:__|Siege AI:  
+; qstr_Basic__better_perfor|Basic (better performance)
+; qstr_Advanced|Advanced
 qstr_Town_NPCs_Always_Acc|Miejscowi NPC zawsze dostępni z menu: 
 qstr_Cutscenes:__|Przerywniki filmowe: 
 qstr_Injuries_for_compani|Urazy dla towarzyszy: 
@@ -106,9 +107,9 @@ qstr_Player_damage_only|Tylko obrażenia gracza
 qstr_All_Messages|Wszystkie wiadomości
 qstr_Troop_Identifier_in_|Identyfikator żołnierza w bitwach (naciśnij Y podczas bitwy, aby pokazać / ukryć):
 qstr_Disable|Wyłączyć
-qstr_Enable_without_Facti|Włącz bez nazw Frakcji
-qstr_Enable_with_Faction_|Włącz z nazwami frakcji
-qstr_Simple:_Red___Enemy_|Prosty: Czerwony - Wróg / Zieleń - Sojusznicy
+; qstr_Troop_Names|Troop Names
+; qstr_Simple:_Faction_Colo|Simple: Faction Colors
+; qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
 qstr_Preferred_Camera_Mod|Preferowany tryb kamery:
 qstr_Default_Camera|Kamera domyślna
 qstr_Free_Mode_Custom_Cam|Dowolna Kamera Użytkownika
@@ -184,13 +185,17 @@ qstr_+20_to_Party_Morale|+20 do Morale Oddziału
 qstr_+1_to_Riding_Skill|+1 do Umiejętności Jeździeckich
 qstr_during_battles|podczas bitew
 qstr_+1_to_Pathfinding|+1 do Szukania Ścieżek
-qstr_+1_to_Athletics|+1 do Atletyki
-qstr_+1_to_Wound_Treatmen|+1 do Leczenia Ran
+; qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
+; qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
+; qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
 qstr_Use_from_Camp_Menu|Użyj z Menu Obozu
 qstr_Use_from|Do użycia z
 qstr_Action_Menu|Menu Obozu
-qstr_+1_to_First_Aid|+1 do Pierwszej Pomocy
+; qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
+; qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
+; qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
 qstr_+1_to_Weapon_Mastery|+1 do Mistrzostwa w Broniach
+qstr_+1_to_Wound_Treatmen|+1 do Leczenia Ran
 qstr_+1_to_Tactics|+1 do Taktyki
 qstr_+1_to_Power_Strike|+1 do Potężnego Ciosu
 qstr_+1_to_Strength|+1 do Siły
@@ -198,6 +203,7 @@ qstr_+1_to_Agility|+1 do Zręczności
 qstr_+1_to_Leadership|+1 do Dowodzenia
 qstr_+1_to_Wildcraft|+1 do Wildcraft
 qstr_+1_to_Tracking|+1 do śledztwa
+qstr_+1_to_Athletics|+1 do Atletyki
 qstr_when_equipped|gdy wyekwipowany
 qstr_+1_to_Power_Draw|+1 do Potężnego Rzutu
 qstr_The_record_of_Balin_|Zapis z zagubionej ekspedycji Balina.
@@ -212,6 +218,9 @@ qstr_rally|rajd
 qstr_rallies|rajdy
 qstr_+{reg1}_{s3}_in_batt|+{reg1}{s3} w bitwie
 qstr_+1_to_Charisma|+1 do Charyzmy
+; qstr_Call_Reinforcements|Call Reinforcements
+; qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
+qstr_+1_to_First_Aid|+1 do Pierwszej Pomocy
 qstr_+1_to_Surgery|+1 do Chirurgii
 qstr_+1_to_Intelligence|+1 do Inteligencji
 qstr_+2_to_Surgery|+2 do Operacji 
@@ -225,6 +234,8 @@ qstr_+2_to_Tactics|+2 do taktyki
 qstr_+1_Intelligence|+1 do Inteligencji 
 qstr_+{reg1}_to_Spotting|+{reg1} do Spostrzegania
 ; qstr__Scales_with_Wildcra|(Scales with Wildcraft)
+; qstr_Strengthens_all_Hero|Strengthens all Heroes
+; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
 ; qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|+1 do Spostrzegania
 qstr_Less_Dunnish_upkeep|Mniejsze utrzymanie Dunlandczyków
@@ -243,6 +254,7 @@ qstr_Good|Dobre
 qstr_Med|Średnie
 qstr_Bad|Słabe
 qstr_You_gained_{reg84}_e|Zdobyłeś {reg84} doświadczenia dzięki swojej inteligencji.
+; qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
 qstr_{reg4}_killed_{reg5}|{reg4} nie żyje, {reg5} odnosi rany
 qstr_{reg4}_killed_{reg5}_|{reg4} zabity, {reg5} zraniony
 qstr_{reg4}_killed_{reg5}_r|{reg4} zabito, {reg5} zbiegło
@@ -785,6 +797,16 @@ qstr_Drive_them_back!|Odeprzyj ich!
 qstr_Protect_the_City!|Chroń miasto!
 qstr_Forward!_Board_them!|Naprzód! Prowadź ich!
 ; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
+; qstr_on_the_left_flank|on the left flank
+; qstr_on_the_right_flank|on the right flank
+; qstr_through_the_center|through the center
+; qstr_Attackers_charge_{s2|Attackers charge {s2}
+; qstr_Attackers_charge_{s1|Attackers charge {s1}
+; qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
+; qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
+; qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
+; qstr_The_remaining_attack|The remaining attackers disperse!
+; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_Reached_Gauntlet_wav|Osiągnięto {reg1} fal Próby!
 qstr_Ballista:_out_of_amm|Balista: skończyły się pociski!
 qstr_Ballista:_turn_CURSO|Balista: obróć KURSOR, cel LSHIFT, strzał SPACJA, podpal T, wyjście F
@@ -981,7 +1003,7 @@ qstr_As_a_last_defensive_|W ramach ostatniej próby obrony barykadujesz się w g
 qstr_You_ve_been_driven_a|Odparto cię z murów. Najeźdźcy wlewają się na ulice. JEŚLI uda ci się ich pokonać, możesz przechylić szalę zwycięstwa na swoją korzyść.
 qstr_You_ve_breached_the_|Przebił{e/a}ś się przez mury otaczające miasto, ale uparci obrońcy dalej stawiają opór na ulicach! Będziesz najpierw musiał{/a} rozprawić się z nimi, nim zaatakujesz twierdzę w samym sercu miasta.
 qstr_The_town_centre_is_y|Centrum miasta jest twoje, ale pozostali obrońcy schronili się w zamku. Musi go zdobyć, by zwycięstwo było pełne.
-qstr_The_remaining_defend|Pozostali obrońcy wycofali się do zamku, swej ostatniej linii obrony. Musisz ruszyć za nimi i złamać ostatnie przejawy oporu.
+; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_However_since_you_ar|Jako że nie składał{e/a}ś przysięgi lojalności, nie ma szans, by {s9} uznał cię jako {pana/panią} tego {reg8?zamku:miasta}.
 qstr_The_enemy_has_been_f|Wróg został zmuszony do odwrotu. Szturm się skończył, ale oblężenie nadal trwa.
 qstr_The_assasins_beat_yo|Skrytobójcy skatowali cię i zostawili, byś się wykrwawił{/a}...
@@ -1457,13 +1479,14 @@ qstr_{s9}_has_asked_you_to|{s9} poprosił Cię abyś uwolnił więźniów: {reg1
 qstr_We_have_reports_that_a|Doniesiono mi, że wrogi zastęp koncentruje się w {s13}. Jest to niepokojące, gdy nie wiem jak dużymi siłami wróg dysponuje, czy moi żołnierze będą w stanie im sprostać na polu bitwy. Chcę byś zbliżył{/a} się do {s13}, i dowiedział{/a} jak najwięcej.
 qstr_My_spies_tell_me_of_|Moi szpiedzy donieśli mi o wielkiej grupie wojowników skoncentrowanych wokół {s13}. Nie powinni sprawić kłopotu ale wolałbym widzieć jak wielu ich tam jest. Chcę byś zbliżył{/a} się do {s13}, i dowiedział{/a} jak najwięcej.
 qstr_{s9}_asked_you_to_sco|{s9} poprosił cię, byś ruszył{/a} na zwiad wokół {s13}.
-qstr_We_have_reports_of_s|Otrzymaliśmy raporty o wrogich ruchach opodal {s13}. Nasi zwiadowcy nie zdołali podejść wystarczająco blisko. Chcę byś zorganizował{/a} oddział zwiadowczy, zbliżył{/a} do {s13}, i rozlokował{/a} zwiadowców.
-qstr_My_spies_tell_me_the|Moi szpiedzy donieśli mi o wrogich ruchach opodal {s13}. Moi tchórzliwi zwiadowcy nie zdołali podejść wystarczająco blisko. Chcę byś zorganizował{/a} oddział zwiadowczy, zbliżył{/a} do {s13}, i rozlokował{/a} zwiadowców. Upewnij się, że nie zawrócą i nie uciekną!
+; qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts. I will also give you a few recruits, but you should not send them out on their own.
+; qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee! I will give you these recruits, they won't be missed.
 ; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|Musimy podjąć walkę z wrogiem, {playername}. W tym momencie możemy to zrobić uderzając w jego patrole i łączność. Chcę byś wyeliminował{/a} {reg1} {s13} oddziałów, co pozwoli przejąć nam inicjatywę.
 qstr_We_need_to_grind_dow|Musimy stępić ostrze wroga, {playername}. Ich patrole i tabory zbyt się rozpanoszyły jak na mój gust. Chcę byś wyeliminował{/a} {reg1} {s13} oddziałów, by nauczyli się strachu przed tym co nadchodzi.
 qstr_{s9}_asked_you_to_el|{s9} poprosił cię, byś wyeliminował{/a} {reg1} {s13} oddziałów.
 qstr_{s9}_asked_you_to_fr|{s9} poprosił cię o uwolnienie {s13} od rozszalałego Trola.
+; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
 qstr_the_Dwarves_so_that_|Krasnoludy, gdyż przejeżdżając przez Erebor lub Żelazne Wzgórza  , możesz spróbować wyposażyć się w bajeczny krasnoludzki oręż
 qstr_Gondor_so_that_if_yo|Gondor, gdyż przejeżdżając przez ich ziemie, możesz spróbować kupić ich sławne zbroje
 qstr_Rohan_so_that_if_you|Rohan, gdyż przejeżdżając przez ich ziemie, możesz spróbować kupić ich bajeczne konie
@@ -1549,8 +1572,8 @@ qstr_Good_moves_but_you_m|Dobry ruch, ale to jeszcze nie koniec.
 qstr_More_than_half_of_th|Więcej aniżeli połowa przeciwników, nie źle.
 qstr_You_ll_need_to_try_h|Musisz lepiej się postarać.
 qstr_Well..._better_here_|No... lepiej tu niż na polu bitwy, hę?
-qstr_We_ve_been_sent_by_L|Zostaliśmy wysłani przez Lorda {s3}. Przybyliśmy, aby połączyć naszą siłę z twoją.
-qstr_Lord_{s3}_has_sent_u|Lord {s3} wysłał nas, aby dołączyć do floty atakującej {s4}.
+; qstr_We_ve_been_sent_by_{|We've been sent by {s3}. We have come to join our strength to yours.
+; qstr_{s3}_has_sent_us_to_|{s3} has sent us, to join the fleet attacking {s4}.
 qstr_Excellent_{playernam|Świetnie, {playername}! Słyszałem, że dałeś im więcej, niż prosiłem. To wspaniała robota. ^ ^ Tutaj, weź to jako dodatkową nagrodę za przekroczenie naszych oczekiwań. ^^ Musimy wygrać tę wojnę tak szybko, jak to możliwe.
 qstr_Excellent_{playername|Doskonale, {playername}. To na pewno im pomoże. Musimy wygrać tę wojnę tak szybko, jak to możliwe.
 qstr_Reinforcing_{s1}_has|Umocnienie {s1} wzmocniło {s2}. ({s2} has gained {reg50} faction strength).

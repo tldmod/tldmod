@@ -20,9 +20,9 @@ p_town_west_emnet|Länsi-Emnet
 p_town_eastfold|Eastfold
 p_town_morannon|Morannon
 p_town_minas_morgul|Minas Morgul
-p_town_cirith_ungol|Örkkien partiointileiri
+; p_town_cirith_ungol|Emyn Muil Watchtower
 p_town_east_osgiliath|Itä-Osgiliath
-p_town_orc_sentry_camp|Örkkien vartiomiesleiri
+; p_town_orc_sentry_camp|Emyn Arnen Sentry
 p_town_isengard|Rautapiha
 p_town_urukhai_outpost|Uruk Hai etuvartioasema
 p_town_urukhai_h_camp|Uruk Hai metsästysleiri
@@ -31,7 +31,7 @@ p_town_caras_galadhon|Caras Galadhon
 p_town_cerin_dolen|Cerin Dolen
 p_town_cerin_amroth|Cerin Amroth
 p_town_thranduils_halls|Thranduilin kartano
-p_town_woodelf_camp|Metsähaltioiden leiri
+; p_town_woodelf_camp|Woodelf South Camp
 p_town_woodelf_west_camp|Metsähaltioiden läntinen leiri
 p_town_woodsmen_village|Metsämiesten kylä
 p_town_beorning_village|Beorningien kylä
@@ -46,13 +46,13 @@ p_town_khand_camp|Khandien leiri
 p_town_umbar_camp|Corsairien leiri
 p_town_imladris_camp|Rivendellien leiri
 p_town_dol_guldur|Dol Guldur
-p_town_dol_guldur_north_outpost|Dol Guldur pohjoinen etuvartio
+; p_town_dol_guldur_north_outpost|Dol Guldur Road Outpost
 p_town_rhun_main_camp|Rhunien pääleiri
 p_town_rhun_south_camp|Rhun Eteläinen etuvartio
 p_town_rhun_north_camp|Rhun Pohjoinen etuvartio
 p_town_gundabad|Gundabad
-p_town_gundabad_ne_outpost|Gundabadin Koillinen etuvartio
-p_town_gundabad_nw_outpost|Gundabadin Luoteinen etuvartio
+; p_town_gundabad_ne_outpost|Grey Mountains Hold
+; p_town_gundabad_nw_outpost|Grey Mountains Ravine
 p_town_goblin_north_outpost|Örkkikaupunki
 p_town_goblin_south_outpost|Örkkien Eteläinen etuvartio
 p_town_gundabad_m_outpost|Gundabadin Synkmetsän etuvartio

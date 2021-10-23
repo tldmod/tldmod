@@ -91,8 +91,9 @@ qstr_Battle_Formations_an|진형과 인공지능:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD 맞춤 AI (기본)
 qstr_TLD_New_FormAI|TLD 신형 맞춤 AI
-qstr_Advanced_Siege_AI:__|향상된 공성 AI
-qstr_On|켜기
+; qstr_Siege_AI:__|Siege AI:  
+; qstr_Basic__better_perfor|Basic (better performance)
+; qstr_Advanced|Advanced
 qstr_Town_NPCs_Always_Acc|마을 NPC는 메뉴에서도 접근이 가능합니다: 
 qstr_Cutscenes:__|컷신: 
 qstr_Injuries_for_compani|동료들의 부상: 
@@ -106,9 +107,9 @@ qstr_Player_damage_only|오직 플레이어 피해만
 qstr_All_Messages|모두 알림
 qstr_Troop_Identifier_in_|전장에서 부대 식별 (전투 중 Y 키로 끄고 켜기 가능): 
 qstr_Disable|끄기
-qstr_Enable_without_Facti|팩션 이름 없이 표시
-qstr_Enable_with_Faction_|팩션 이름 포함 표시
-qstr_Simple:_Red___Enemy_|간단하게: 적은 붉은색 / 아군은 초록색
+; qstr_Troop_Names|Troop Names
+; qstr_Simple:_Faction_Colo|Simple: Faction Colors
+; qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
 qstr_Preferred_Camera_Mod|우선 카메라 모드:  
 qstr_Default_Camera|기본 카메라 모드
 qstr_Free_Mode_Custom_Cam|자유 설정 카메라 모드
@@ -184,13 +185,17 @@ qstr_+20_to_Party_Morale|부대 사기 +20
 qstr_+1_to_Riding_Skill|승마술 +1
 qstr_during_battles|전투 중
 qstr_+1_to_Pathfinding|길찾기 +1
-qstr_+1_to_Athletics|운동능력 +1
-qstr_+1_to_Wound_Treatmen|부상 치료 +1
+; qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
+; qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
+; qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
 qstr_Use_from_Camp_Menu|Use from Camp Menu
 qstr_Use_from|에서 사용 
 qstr_Action_Menu|행동 메뉴
-qstr_+1_to_First_Aid|응급치료 +1
+; qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
+; qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
+; qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
 qstr_+1_to_Weapon_Mastery|무기 마스터 +1
+qstr_+1_to_Wound_Treatmen|부상 치료 +1
 qstr_+1_to_Tactics|전술 +1
 qstr_+1_to_Power_Strike|타격하는 힘 +1
 qstr_+1_to_Strength|근력 +1
@@ -198,6 +203,7 @@ qstr_+1_to_Agility|민첩 +1
 qstr_+1_to_Leadership|리더쉽 +1
 qstr_+1_to_Wildcraft|서바이벌 +1
 qstr_+1_to_Tracking|+1 to Tracking
+qstr_+1_to_Athletics|운동능력 +1
 qstr_when_equipped|착용하고 있을 때
 qstr_+1_to_Power_Draw|당기는 힘 +1
 qstr_The_record_of_Balin_|발린의 잃어버린 탐험 기록이다.
@@ -212,6 +218,9 @@ qstr_rally|랠리
 qstr_rallies|집단들
 qstr_+{reg1}_{s3}_in_batt|전투중 +{reg1} {s3}
 qstr_+1_to_Charisma|카리스마 +1
+; qstr_Call_Reinforcements|Call Reinforcements
+; qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
+qstr_+1_to_First_Aid|응급치료 +1
 qstr_+1_to_Surgery|수술 +1
 qstr_+1_to_Intelligence|지능 +1
 qstr_+2_to_Surgery|+2 to Surgery
@@ -225,6 +234,8 @@ qstr_+2_to_Tactics|전술 +2
 qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|탐지 +{reg1}
 qstr__Scales_with_Wildcra|(서바이벌에 따라 조정)
+; qstr_Strengthens_all_Hero|Strengthens all Heroes
+; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|탐지 +1
 qstr_Less_Dunnish_upkeep|던랜드인 최소한도 유지
@@ -243,6 +254,7 @@ qstr_Good|좋은
 qstr_Med|약품
 qstr_Bad|나쁜
 qstr_You_gained_{reg84}_e|지능에 따라 {reg84}의 경험치를 얻었습니다.
+; qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
 qstr_{reg4}_killed_{reg5}|{reg4} 사망, {reg5} 부상, {reg6} 도주
 qstr_{reg4}_killed_{reg5}_|{reg4} 사망, {reg5} 부상
 qstr_{reg4}_killed_{reg5}_r|{reg4} 사망, {reg5} 도주
@@ -785,6 +797,16 @@ qstr_Drive_them_back!|놈들을 쫓아내라!
 qstr_Protect_the_City!|도시를 지켜라!
 qstr_Forward!_Board_them!|앞으로! 올라타!
 qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
+; qstr_on_the_left_flank|on the left flank
+; qstr_on_the_right_flank|on the right flank
+; qstr_through_the_center|through the center
+; qstr_Attackers_charge_{s2|Attackers charge {s2}
+; qstr_Attackers_charge_{s1|Attackers charge {s1}
+; qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
+; qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
+; qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
+; qstr_The_remaining_attack|The remaining attackers disperse!
+; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_Reached_Gauntlet_wav|{reg1} Wave 시련 도달!
 qstr_Ballista:_out_of_amm|노포: 탄약이 떨어졌다!
 qstr_Ballista:_turn_CURSO|노포: 커서로 이동, 좌Shift 키로 조준, Space로 발사, T로 장전, F로 나가기
@@ -981,7 +1003,7 @@ qstr_As_a_last_defensive_|당신이 방어에 기울인 노력에도 불구하�
 qstr_You_ve_been_driven_a|당신은 성벽에서 밀려났다. 이제 공격자들은 거리로 쏟아져나오기 시작했다. 만약 당신이 그들을 물리칠수만 있다면, 공세를 멈추고 날을 넘길 수 있을지도 모른다.
 qstr_You_ve_breached_the_|당신은 도시 성벽을 돌파했지만, 완강한 방어자들이 거리에서 당신에게 저항을 계속하고 있다! 그들을 먼저 처리해야 도시 심장부에 위치한 성채를 공격할 수 있을 것이다.
 qstr_The_town_centre_is_y|도시 중심가는 당신의 것이지만, 남은 방어자들이 성채로 퇴각했다. 당신의 승리를 확고히 하기 위해 그들을 처치해야한다.
-qstr_The_remaining_defend|살아남은 방어자들은 항전을 위해 성으로 퇴각했다. 당신은 그곳으로 가 그들의 마지막 저항을 쳐부숴야한다.
+; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_However_since_you_ar|그러나, 당신은 {s9}의 {사람/추종자}가 되기로 맹세하지 않았기에,  그 자가 당신을 이 성의 {reg8?도시:성}의 {주인/여주인}으로 인정할 가능성은 거의 없다.
 qstr_The_enemy_has_been_f|적은 어쩔 수 없이 후퇴했다. 공격은 끝났지만 포위는 계속되고 있다.
 qstr_The_assasins_beat_yo|암살자들이 당신을 쓰러트렸고 죽게 내버려두었다.
@@ -1457,13 +1479,14 @@ qstr_{s9}_has_asked_you_to|{s9}는 당신에게 {reg1} 명의 아군 포로를 �
 qstr_We_have_reports_that_a|적들이 {s13}에 집결중이라는 보고가 들어왔다. 적들이 정확히 얼마나 많은 병력을 보유하고 있는지, 내 병사들이 그들을 전장에서 마주할 수 있는 준비가 되어있는지 알 수 없기 때문에, 이것은 내게 중대사이다. {s13}에 충분히 가까이 다가가 가능한 한 많이 알아봐주길 바라네.
 qstr_My_spies_tell_me_of_|내 첩자들이 수많은 전사들이 {s13}에 모이고 있다고 말하더군. 놈들은 우리 노예들의 상대가 되지 않을테지만, 그곳의 놈들이 몇명이나 되는지 알아본다고 해서 손해볼 건 없겠지. 나는 네가 {s13}에 가까이 다가가서 가능한 한 많이 조사해왔으면 한다.
 qstr_{s9}_asked_you_to_sco|{s9}는 당신에게 {s13} 주변을 정찰하라고 했다.
-qstr_We_have_reports_of_s|{s13} 근처에서 적의 군사활동이 보고되었다. 우리의 정찰병들은 그곳에 가까이 가지 못해 그들이 어디로 오고가는지 정찰하는데 실패했다. 정찰대를 소집해서 {s13}까지 충분히 접근해 정찰대를 보내주길 바란다.
-qstr_My_spies_tell_me_the|내 첩자들이 말하길 {s13}의 적들이 뭔가를 꾸미고 있다고 하더군.우리 겁쟁이 정찰대 놈들은 그곳에 가까이 가지 못해 제대로 된 정보를 가져오지 못했다. 나는 네가 너만의 정찰대를 소집해 {s13}에 가까이 다가가, 그들을 놔두고 왔으면 한다. 놈들이 돌아오거나 도망치지 않게 잘 감시해!
+; qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts. I will also give you a few recruits, but you should not send them out on their own.
+; qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee! I will give you these recruits, they won't be missed.
 qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 qstr_We_need_to_take_the_|우리는 적과 싸워야합니다. {playername}. 지금 이 순간, 우리는 그들의 정찰대와 통신망을 공격할 수 있습니다. {reg1}의 {s13} 부대를 제거하면, 우리가 주도권을 다시 되찾아 올 수 있을 것입니다.
 qstr_We_need_to_grind_dow|우리는 무가치한 적들을 갈아버려야한다, {playername}. 그들의 정찰대와 보급망은 내 생각에 너무 대담하게 움직이고 있는 것 같다.나는 네가 {reg1}의 {s13} 부대를 제거하기를 원한다. 그럼 그들은 두려움이 무엇인지 알게 될 것이다.
 qstr_{s9}_asked_you_to_el|{s9}는 당신에게 {reg1}의 {reg13} 부대를 제거하라 요청했다.
 qstr_{s9}_asked_you_to_fr|{s9}이 {s19}를 위협하는 교외의 성난 트롤을 처리해 주길 요청했다.
+; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
 qstr_the_Dwarves_so_that_|난쟁이들, 에레보르나 철산을 지나갈 일이 생긴다면 전설의 난쟁이 무기로 무장해 보라
 qstr_Gondor_so_that_if_yo|곤도르, 그들의 땅을 지나갈 일이 생기면, 그들의 고품질 방어구를 살 수도 있을 것이다.
 qstr_Rohan_so_that_if_you|로한, 그들의 땅을 지나갈 일이 생긴다면, 그들로부터 전설적인 명마들을 살 수 있을 것이다.
@@ -1549,8 +1572,8 @@ qstr_Good_moves_but_you_m|움직임이 좋군, 하지만 조금 더 연습 할 �
 qstr_More_than_half_of_th|상대 절반 이상이라, 나쁘지 않군.
 qstr_You_ll_need_to_try_h|방금 그것보단 노력해야할거요.
 qstr_Well..._better_here_|음... 실제 싸움에선 잘하겠지, 응?
-qstr_We_ve_been_sent_by_L|우리는 {s3} 경이 보냈다. 우리는 당신 부대에 힘이 되어주고자 한다.
-qstr_Lord_{s3}_has_sent_u|{s3} 께서 우리를 보내셨소, {s4}를 공격하는 함대에 참가하라고 말이지.
+; qstr_We_ve_been_sent_by_{|We've been sent by {s3}. We have come to join our strength to yours.
+; qstr_{s3}_has_sent_us_to_|{s3} has sent us, to join the fleet attacking {s4}.
 qstr_Excellent_{playernam|훌륭해, {playername}! 내가 요청한 것보다 더한 것들을 그들에게 주었다고 들었다. 아주 대단한 일이다.^^여기, 여기 우리 예상을 뛰어넘은 것에 대한 추가 보상이다. ^^ 우리는 이 전쟁에서 가능한 한 빨리 승리해야한다.
 qstr_Excellent_{playername|훌륭해, {playername}. 그것은 틀림 없이 그들에게 도움이 될 것이다. 우리는 가능한 한 빨리 이 전쟁에서 승리해야만해.
 qstr_Reinforcing_{s1}_has|{s1}을 지원함으로써 {s2}를 강화했다. ({s2}가 {reg50} 만큼의 세력 군사력을 얻는다)

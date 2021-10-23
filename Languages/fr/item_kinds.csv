@@ -144,7 +144,7 @@ itm_arnor_greaves|Jambières arnoriennes
 itm_arnor_shield_a|Bouclier arnorien
 itm_arnor_shield_c|Bouclier de cavalerie arnorien
 itm_arnor_sword_a|Épée bâtarde arnorienne
-itm_arnor_sword_c|Épée bâtarde arnorienne
+itm_arnor_sword_c|Épée de guerre d'Arnor
 itm_arnor_sword_f|Épée courte arnorienne
 itm_riv_helm_a|Coiffe de Fendeval
 itm_riv_helm_b|Casque d'archer de Fendeval
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Capuchon de Coureur du Gondor
 itm_gondor_light_greaves|Jambières en cuir gondoriennes
 itm_gondor_med_greaves|Jambières moyennes gondoriennes
 itm_gondor_heavy_greaves|Jambières de mailles gondoriennes
-itm_gondor_infantry_helm|Casque d'infanterie du Gondor
 itm_gondor_auxila_helm|Casque léger du Gondor
 itm_gondorian_archer_helm|Casque d'archer long du Gondor
 itm_tower_archer_helm|Casque d'archer de la tour
 itm_gondor_leader_helm|Casque haut du Gondor
 itm_tower_guard_helm|Casque de garde de la tour
 itm_gondor_citadel_knight_helm|Heaume de chevalier de la Citadelle
+itm_gondor_infantry_helm|Casque d'infanterie du Gondor
 itm_gondor_knight_helm|Casque de cavalier du Gondor
 itm_gondor_dolamroth_helm|Heaume de Dol Amroth
 itm_swan_knight_helm|Heaume de chevalier du Cygne
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Glaive de Linhir
 itm_pelargir_eket|Glaive de Pelargir
 itm_pelargir_sword|Épée de Pelargir
 itm_gondor_ranger_sword|Épée de Coureur du Gondor
-itm_gondor_bastard|Épée bâtarde du Gondor
+itm_gondor_2h_sword|Épée de guerre du Gondor
 itm_gondor_citadel_sword|Épée de la Citadelle
 itm_gondor_cav_sword|Épée de cavalerie du Gondor
 itm_gondor_spear|Lance gondorienne
 itm_gondor_tower_spear|Lance de la tour du Gondor
 itm_gondor_lance|Lance du Gondor
-itm_loss_axe|Hache de combat du Lossarnach
-itm_loss_war_axe|Hache de guerre du Lossarnach
+itm_loss_axe|Hache de combat du Gondor
+itm_loss_war_axe|Hache de guerre du Gondor
 itm_lorien_sword_a|Épée longue de la Lórien
 itm_lorien_sword_b|Épée courte de la Lórien
 itm_lorien_sword_c|Épée de guerre de la Lórien
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Armure orque de l'Isengard
 itm_isen_orc_armor_f|Armure orque de l'Isengard
 itm_isen_orc_armor_g|Armure orque de l'Isengard
 itm_isen_uruk_light_a|Harnais uruk-hai léger
-itm_isen_uruk_light_b|Armure uruk-hai en cuir
-itm_isen_uruk_light_c|Armure uruk-hai en cuir
-itm_isen_uruk_light_d|Cotte de mailles et de cuir uruk-hai
-itm_isen_uruk_light_e|Harnais uruk-hai en mailles
-itm_isen_uruk_heavy_a|Cotte de mailles et de cuir uruk-hai
-itm_isen_uruk_heavy_b|Armure lourde uruk-hai
-itm_isen_uruk_heavy_c|Armure lourde uruk-hai
+itm_isen_uruk_light_b|Harnais de combat uruk-hai
+itm_isen_uruk_light_c|Harnais de berserker uruk-hai
+itm_isen_uruk_med_a|Armure segmentée légère uruk-hai
+itm_isen_uruk_med_b|Cotte de mailles uruk-hai
+itm_isen_uruk_heavy_a|Armure segmentée moyenne uruk-hai
+itm_isen_uruk_heavy_b|Cotte de mailles lourde uruk-hai
+itm_isen_uruk_heavy_c|Armure segmentée complète uruk-hai
 itm_isen_uruk_heavy_d|Cotte de traqueur en cuir uruk-hai
 itm_isen_uruk_heavy_e|Cotte de traqueur en cuir uruk-hai
 itm_uruk_tracker_boots|Bottes de traqueur uruk

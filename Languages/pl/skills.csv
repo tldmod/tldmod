@@ -35,7 +35,7 @@ skl_riding_desc|Pozwala na dosiadanie lepszych wierzchowców i zwiększa szybko�
 skl_athletics|Atletyka
 skl_athletics_desc|Zwiększa szybkość biegu. (Umiejętność osobista)
 skl_shield|Tarcza
-skl_shield_desc|Obniża uszkodzenia, jakich doznaje tarcza (o 8%% na poziom umiejętności) i zwiększa szybkość oraz biegłość posługiwania się tarczą. (Umiejętność osobista)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Mistrzostwo w broniach
 skl_weapon_master_desc|Ułatwia szkolenie się i zwiększa limit biegłości w posługiwaniu się bronią. Limity to odpowiednio: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Umiejętność osobista)
 skl_power_draw|Potężny naciąg
@@ -45,4 +45,4 @@ skl_power_throw_desc|Każdy punkt w tej umiejętności zwiększa obrażenia zada
 skl_power_strike|Potężny cios
 skl_power_strike_desc|Każdy punkt w tej umiejętności zwiększa obrażenia zadawane przy walce wręcz o 8%%. (Umiejętność osobista)
 skl_ironflesh|Żelazne ciało
-skl_ironflesh_desc|Każdy punkt w tej umiejętności zwiększa ilość punktów zdrowia o 2. (Umiejętność osobista)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

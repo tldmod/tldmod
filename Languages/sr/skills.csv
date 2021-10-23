@@ -35,7 +35,7 @@ skl_riding_desc|Dozvoljava jahanje konja (ili drugih cudovista) koji traze veci 
 skl_athletics|Atletika
 skl_athletics_desc|Poboljsava brzinu trcanja. (Licni skil)
 skl_shield|Stit
-skl_shield_desc|Smanjuje stetu na stitu (za 8%% po levecu) i povecava brzinu stita i zasticenost. (Licni skil)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Majstor Oruzja
 skl_weapon_master_desc|Omogucava lakse ucenje oruzja i povecava limit. Limit ide do: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420.(Licni skil)
 skl_power_draw|Snaznije Potezanje
@@ -45,4 +45,4 @@ skl_power_throw_desc|Svaki poen ovog skila povecava snagu bacanja za 10%% (Licni
 skl_power_strike|Snazniju Udar
 skl_power_strike_desc|Svaki poen ovog skila povecava snagu udaranja na blizinu za 8%% (Licni skil)
 skl_ironflesh|Izdrzljivost
-skl_ironflesh_desc|Svaki poen ovog skila povecava helte za +2 (Licni skil)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

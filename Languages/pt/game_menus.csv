@@ -166,6 +166,9 @@ mno_game_options_compat_party|Número máximo de grupos: {s1}
 ; menu_camp_action|^^^^^^^^^     Which object?
 mno_camp_drink_water|Beber a Água de Ent!
 ; mno_camp_drink_orc_brew|Pass around the Orc Brew!
+; mno_camp_drink_miruvor|Pass around the Miruvor!
+; mno_camp_use_athelas|Use Athelas for wound treatment.
+; mno_camp_use_drums|Beat the Drums of the Deep.
 mno_camp_action_4|Voltar.
 menu_assasins_attack_player_won|Conseguiu derrotar com sucesso os assassinos de {s2}, enviados por {s3}.
 menu_assasins_attack_player_retreat|Escapou com a sua vida!

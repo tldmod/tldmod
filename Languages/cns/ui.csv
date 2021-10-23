@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(交出士兵时无法晋升)
 ui_lance_control|骑枪控制
 ui_manual_easy|手动（简单）
 ui_manual_hard|手动（困难）
-ui_campaign_ai|战役AI（未使用）
+ui_campaign_ai|战役AI（默认为“一般”）：
 ui_crouch|蹲下
 
 # swy: added from this spreadsheet, as requested by our translators:

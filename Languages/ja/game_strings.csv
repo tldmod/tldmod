@@ -1823,20 +1823,20 @@ str_fullname_region_gap_of_rohan|ローハンの最西端に位置し、 ロヒ�
 str_fullname_region_entwash|ローハンのエント川とアンドゥイン川の合流地点、 エント川口
 str_fullname_region_wetwang|滝沢の湿地帯、 ニンダルヴ
 str_fullname_region_dead_marshes|かつてダゴルラドの戦いが行われ、 いまは呪われた地となった古の戦場、 死者の沼地
-str_fullname_region_isengard|アイゼンガルド周辺の一帯
+str_fullname_region_isengard|アイゼンガルドの谷、 ナン・クルニーア
 str_fullname_region_fangorn|木々が話すと言われる、 ファンゴルンの森
 str_fullname_region_brown_lands|エミン・ムイルと闇の森のあいだに広がる広大な一帯、 茶色の国
 str_fullname_region_dagorlad|モルドールの門のまえに広がる木の一本も生えない荒野、 戦場が原、 ダゴルラド
 str_fullname_region_n_undeep|アンドゥイン河のふたつの大きな蛇行地点のうちの大きいほう、 北の浅地
 str_fullname_region_s_undeep|アンドゥイン河のふたつの大きな蛇行地点のうちの小さいほう、 南の浅地
-str_fullname_region_emyn_muil|エント川上流の岩だらけの丘陵地帯、 エミン・ムイル
-str_fullname_region_misty_mountains|霧ふり山脈の山すそ
+str_fullname_region_emyn_muil|アモン・ラウの向こうの岩だらけの丘陵地帯、 エミン・ムイル東部
+str_fullname_region_misty_mountains|霧ふり山脈北部の山ろく地帯
 str_fullname_region_lorien|金のマルローンの生えるシンダール・エルフの森、 ロスローリエン
-str_fullname_region_anduin_banks|霧ふり山脈と闇の森のあいだに位置する、 アンドゥインの渓谷
+str_fullname_region_anduin_banks|カーロックとローリエンの間に位置する、 アンドゥインの谷間の中間地方
 str_fullname_region_n_mirkwood|闇の森北部の深い森、 シルヴァン・エルフの国
 str_fullname_region_s_mirkwood|奇妙な生き物たちが生息するといわれる深い森、 闇の森南部
-str_fullname_region_above_mirkwook|北にある闇の森と灰色山脈にはさまれた一帯、 ロヴァニオン北部
-str_fullname_region_grey_mountains|ドワーフの居住する、 灰色山脈の山すそ
+str_fullname_region_c_mirkwood|木々が密集し、 森人たちの住む、 闇の森中間部
+str_fullname_region_grey_mountains|霧ふり山脈の山ろく地帯
 str_fullname_region_mordor|サウロンの闇の世界、 モルドール
 str_fullname_region_dimrill|モリアの山々のふもとにある、 おぼろ谷
 str_fullname_region_s_rebor|はなれ山のふもとに位置する、 谷間の国の領域
@@ -1865,16 +1865,20 @@ str_shortname_region_gap_of_rohan|ローハン谷
 str_shortname_region_entwash|エント川口
 str_shortname_region_wetwang|ニンダルヴ
 str_shortname_region_dead_marshes|死者の沼地
-str_shortname_region_isengard|アイゼンガルド一帯
+str_shortname_region_isengard|ナン・クルニーア
 str_shortname_region_fangorn|ファンゴルン
 str_shortname_region_brown_lands|茶色の国
-str_shortname_region_misty_mountains|霧ふり山脈の山すそ
+str_shortname_region_dagorlad|ダゴルラド
+str_shortname_region_n_undeep|北浅地
+str_shortname_region_s_undeep|南浅地
+str_shortname_region_emyn_muil|エミン・ムイル
+str_shortname_region_misty_mountains|霧ふり山脈北部の山ろく地帯
 str_shortname_region_lorien_|ローリエン
-str_shortname_region_anduin_banks_|アンドゥインの渓谷
+str_shortname_region_anduin_banks_|アンドゥインの谷間の中間地方
 str_shortname_region_n_mirkwood_|闇の森北部
 str_shortname_region_s_mirkwood_|闇の森南部
-str_shortname_region_above_mirkwook|ロヴァニオン北部
-str_shortname_region_grey_mountains|灰色山脈の山すそ
+str_shortname_region_c_mirkwood|闇の森中間部
+str_shortname_region_grey_mountains|霧ふり山脈の山ろく地帯
 str_shortname_region_mordor|モルドールの地
 str_shortname_region_dimrill|おぼろ谷
 str_shortname_region_s_erebor|谷間の国の領域
@@ -2117,7 +2121,7 @@ str_formations|戦闘メニューに用意されている高度な陣形は次�
 str_npc18_intro|大いなる者よ、しばし待たれよ！話がある！
 str_npc19_intro|そこなる隊長、しばし待たれよ。余はそなたに話がある。 いやいや、王家の血をひく者の前だからって、 別にひざまずかなくてもいいんだぜ。
 str_npc20_intro|待て。おぬし。わしはおぬしを見た事がある。その顔を見たのじゃ。 おぬしの夢を見たのじゃ。だが、なぜおぬしなのだろうか？ いざ目の前に見てみると、 これは確かにただの卑しいスナガではないようじゃ！
-str_npc21_intro|黄金館へようこそ、戦士殿！
+str_npc21_intro|小うるさいハエめ、叩き潰されないうちに消え失せな！ ラアアアグググ！ (*トロルは牙をむきだしにしてこちらを軽く威嚇している*)
 str_npc22_intro|やあ、{playername}殿。 マエ・ゴヴァンネン！
 str_npc23_intro|私にかまわないで、旅の人。あなたと話をしたくないの。
 str_npc24_intro|ドワーリンの息子、キーリがこれにあり。^ご用があれば、なんなりと！
@@ -2127,7 +2131,7 @@ str_npc27_intro|おい、あんた！
 str_npc18_intro_response_1|さらし台に繋がれ死を待つだけの奴隷が、私に話があるだと？一体なんだ？
 str_npc19_intro_response_1|王家の血だと？フン！おまえに王家の血が一滴でもまじっていると考える根拠はなんだ？
 str_npc20_intro_response_1|この妖術師め、何が言いたいのだ？おまえは誰だ？
-str_npc21_intro_response_1|{これはどうも/あらこんにちは}、お嬢さん。お名前を伺ってもよろしいか{な/しら}？
+str_npc21_intro_response_1|これはこれは、足が震えるじゃないか。 こんな細い鎖で繋がれただけで自由を奪われるなんて、 なんて恐ろしいトロルなんだ！ なぜ遠慮するのだ？私を叩き潰せばいい。
 str_npc22_intro_response_1|やあ、エルフの将軍！お会いできて光栄だ。
 str_npc23_intro_response_1|それがシルヴァン・エルフ流の来客へのあいさつなのか{い/しら}？
 str_npc24_intro_response_1|やあ、私は{playername}。ドゥリンの一族の調子はどう{だい/}？
@@ -2137,7 +2141,7 @@ str_npc27_intro_response_1|{おまえ/あんた}は何者{だ/なの}？
 str_npc18_intro_response_2|死を待つだけの奴隷にかまっている時間などない。
 str_npc19_intro_response_2|厚かましい恥知らずめ。消え失せろ。
 str_npc20_intro_response_2|狂人のたわごとにつきあっているヒマはないのだ、この妖術師め。
-str_npc21_intro_response_2|放っておいて{くれ/ちょうだい}、よそで大事な用がある{んだ/の}。
+str_npc21_intro_response_2|この薄汚い獣め。今回に限って見逃してやろう(立ち去る)。
 str_npc22_intro_response_2|せっかくだが、高貴な方々とは話が合うと思えないんだ。
 str_npc23_intro_response_2|私も同じ気分{だ/よ}。さようなら。
 str_npc24_intro_response_2|かまわないで{くれ/ちょうだい}。ここは空気が悪い{な/わね}。
@@ -2147,7 +2151,7 @@ str_npc27_intro_response_2|[無視して素通りする]
 str_npc18_backstory_a|我、奴隷にあらず！私は功のある戦士だ。罠にはめられ、 本来の地位を奪われたのだ！見ての通り私は女であるが、 他の多くの者より強くて素早く、男たちに打ち勝つ事は数知れぬ。 闘技場の長が・・・あのいまいましい奴め！あの者が、 私が一度に3人を相手にするように闘いを仕組んだのだ。3人だ！
 str_npc19_backstory_a|そりゃあまあ、ほんのちょっとさ。でもな、わしの母ちゃんが、^わしの血統の話を詳しくしてくれたんだ。わしはヘイズレク。^フェンゲル王の直系の子孫で、ローハンと褐色人の国の王位に、^他のどの族長よりも近い男だ！わしの髪は黒いが、黄色い大きなふさが^まじってるのは気に入っているんだ。
 str_npc20_backstory_a|夢には一本の木が出てきた。すべてが白い木じゃ。そして、おぬしは^その木の傍らに立っておる。おぬしが木の幹に手をそえると、^あれよ、その木は根まで枯れていくのじゃ。そして空の闇が伸びていき、^あたりの空気が重くなる。すると遠く東のほうから、笑い声が^聞こえてくるのじゃ。
-str_npc21_backstory_a|私の名はガルマイネ。 あなたの名前は存じ上げています、 {playername}殿。 説明させて頂きたい。
+str_npc21_backstory_a|フン、もうちょっとこっちに近寄ってごらん、 あんたの首を小枝のように折ってやるから。 ほら、おいで！あんたの腹を踏みつけて、 骨は粉々に砕いて、 頭をブドウのように潰してやるから。
 str_npc22_backstory_a|君は生身の人間たちが忘れ去ってしまった、 私の数々の戦いにおける功績を 耳にしたことがあるかも知れない。 いずれこの戦いは、 エルダールの危機の 再来とも言うべきものになるだろうが、 これが最後の戦いになるだろう。
 str_npc23_backstory_a|感じの悪いのは謝るわ、旅の人。 でも、ここを訪れる数少ない来客といえば、 信用できない者ばかりなの。 つい一週間まえにここへ来た、 あのドワーフときたら・・・ 何でもないわ。 私はルエヴァンナ、 闇の森のシルヴァン・エルフよ。
 str_npc24_backstory_a|これはどうもご丁寧に、 {playername}殿。 わしらは侵攻してくる東夷やグンダバドのオークどもを 追い払っているのだが、 いまのところ、 わしらと同盟国の谷間の国の手に余るような相手はおらん。
@@ -2157,7 +2161,7 @@ str_npc27_backstory_a|俺はドゥルガシュ！
 str_npc18_backstory_b|私は打ち勝った！彼らを倒したのだ！だが・・・そのうちの一人は^か弱く、私の打撃により死んだのだ。その者がただの奴隷であれば^話はそれまでだ。だが、その者は偉大なる将軍、ルルムサクンの^大勢の息子のうちのひとりで、身分の低い妻に産ませた子だったのだ。
 str_npc19_backstory_b|そりゃあ、わしの主張を受け入れる者なんかローハンにも^褐色人の国にもいないがね、それでもこれは事実なんだ。わしの^ばあちゃんは山に住む牛飼いだったんだけどな、ある日アイゼンの^川岸にいるところを、王位泥棒のセオデンの祖父で、強欲な^フェンゲル王の目にとまったんだ。王はばあちゃんを気に入って、^それで出来たのが、わしの母ちゃんさ。
 str_npc20_backstory_b|おぬしは自分が前にしておるのが誰なのか、わかっておらぬようじゃな？^無知なる愚か者め。わしの名はジグールフェル。いにしえの^アカルラベースが我が祖国じゃ。おぬしには聞いた事もない名で^あろうがの。もうひとつ覚えておくがよい。わしは遠い昔に行われた^不正な行為を正す方法を探し求めている。不正な行為、すなわち我らが^大いなる軍備と我が祖国を沈めたヴァラールが、その悪意によって、^我と我が民にもたらした不正な行為じゃ。おお、偉大で栄光ある、^アル＝ファラゾーンよ！あなたの夢は、永久に忘れ去られてしまうのか？^否、ジグールフェルのある限り、我が術を行う、我が両の手がある限り！
-str_npc21_backstory_b|私は貴族の家に生まれ、 女官としてエオウィン様がご幼少の頃よりお仕えしてきました。 エオウィン様と私は、 男の兄弟たちにまじって戦闘の稽古をすることを許され、 ローハンの戦士となるべく、 共に精進してきました。
+str_npc21_backstory_b|あんたは肝がすわってるみたいだねえ (*ため息をつく*)。あたしの名はバータ。 昔は霧ふり山脈でね、あのあたりはほら、 たちの悪いゴブリンの盗賊どもがいるだろう、 あいつらを相手に仲間と暴れてたんだ。 あの頃はよかったよ。それでグンダバドのヤバい 連中に出会ってね。たらふく飲んで、 しこたま賭博をしたわけさ・・・次の日に 目を覚ましてみたら、あたしは繋がれて、仲間は どこかへ消えてしまったのさ。今はここで 岩を砕いたり、荷物を運んだりしてるんだ。 金を賭けた殴り合いをさせられる事もあるね。
 str_npc22_backstory_b|私はエルロンド卿に頼まれ、 ロヴァニオンのこの一帯での戦闘において助けとなるべく、 ケレボルンのもとへ密使としてやってきた。
 str_npc23_backstory_b|私は、この美しい森の、 秘密の小道を歩くのがすき。 ときどき息をひそめては、 木々の影から森に住む動物たちの営みを、 そっと観察するの。 めずらしい鳥の歌や、 巣ごもりをする野生の熊たちの姿は、 私にとってはエダインが武器をぶつけあったり、 大きな城壁に心を奪われたりするのと同じくらい、 興味を引かれることなのよ。
 str_npc24_backstory_b|わしはドワーフのしきたり通り、 尊敬する父ドワーリンの教えに従い、 エレボールの守備を固めるのを助け、 若いドワーフたちを訓練した。
@@ -2167,7 +2171,7 @@ str_npc27_backstory_b|アイゼンガルドの狼乗りで、追跡兵なんだ�
 str_npc18_backstory_c|私は私をあざ笑った犬を打ち倒した罪によって死を宣告され、 ご覧の通り、ここでののしりを浴び、つばを吐きかけられている。 大いなる者よ、私を開放してくれ！私を開放してくれれば・・・ 私の力は、あなたのものだ。私の剣は、あなたのものだ。 私の命は、あなたのものだ！
 str_npc19_backstory_c|当然、デグラフ族長とその他の連中は、わしの話に説得力がつく事を^怖れて、わしが手柄をたてる機会なんか一切くれないのさ。まあ、^そうなったらみんなわしの許に集まっちまうだろうからな！隊長さん、^あんたのうわさは聞いてるよ。わしをあんたの許で働かせてくれる^なら、わしはあんたのために手柄をたてるぜ。
 str_npc20_backstory_c|オー・アカルラベース、今どこにあるのか？消えてしまった、すべて^消え去ってしまった・・・かつて最も偉大な国であった我が祖国が^光り輝いていた場所には、今は闇があるばかりじゃ。美しい我が^祖国は、今や大海の果てしのない沈黙を知るのみ。だがわしの^心の中にはいまだ闇の獣が荒れ狂い、燃え盛る炎で満たされておる。^わしはおぬしらの種には夢想もできぬ、強力な術を知っておる。^さあ、我に聞くがよい！当然わしの助力を乞うのか、それとも、^長虫のように、こそこそとこの場から逃げるのか。素早く決断せよ！
-str_npc21_backstory_c|ご存知かも知れませんが、 たとえどれほどの武芸をもっていようとも、 女がエオレドに加わる事は許されていません。 しかしながら、 暖炉のそばで戦士たちの帰りをじっと待つというのは、 私には到底受け入れられないのです。 この戦争で建てられるべき功績がひとつ残らず消えるまで、 私は何もせずにただ時間を過ごすつもりはありません。 そこで戦士殿、 あなたのお力をお借りしたい。
+str_npc21_backstory_c|ちっこいの、まあよく聞きなよ！ もしあんたがいっぱしのお頭なんだったら、 ここの親分どもに話をして、あたしの借りてる分、 どうにかしてくれないかい？そうしたらあたしは あんたの群れに加わるよ。あちこちへ旅をして、 羊を食べて・・・(*見事な牙をなめる*)。
 str_npc22_backstory_c|しかしながら、 ロスローリエンの当面の敵が姿を隠している現状をかんがみると、 しばらく君と行動をともにする事も悪くない考えかも知れないな、 {playername}殿。 この戦争において、 君と私の運命は交わっているように感じる。
 str_npc23_backstory_c|みたところ、 あなたは戦いに熱心みたいだし、 こんな事は、 あなたには理解できないかもしれないわね。 でも、 あなたは遠く離れた、 いろいろな場所を旅をして来たのよね。 他の大森林に行った事はある？ 私をそこへ連れて行けないかしら？
 str_npc24_backstory_c|この戦いは退屈で、 わしのような気質と血筋を持つ ドワーフの戦士には合わん。 わしの聞いたところだと、 あんたは方々に旅をしては 派手に暴れておるようで、 しかもドワーフには親切にしてるそうだな？ 一緒に戦ってくれるドワーフがいると、 生き残る可能性がぐーんと上がるぞ。
@@ -2177,7 +2181,7 @@ str_npc27_backstory_c|あんた、俺のご主人さまにならないか。
 str_npc18_backstory_later|私の運もまだ尽きてはいないのだろう。 あの偉大なる将軍のルルムサクンは他の事で手一杯のようだ。 ここの監督官は私をただ放置している。 だが、囚人として死ぬのは私の運命ではない！ 私にふさわしい、戦場における死を与えてくれ。
 str_npc19_backstory_later|ほうら来た！あんたはまた戻って来ると思ってたぜ。 嫉妬深い族長たちのおかげで、わしは手持ち無沙汰だよ。 大いに語ろうじゃないか、隊長！わしはあんたについていって、 あんたの軍で手柄をたてて名声を勝ち取るんだ。
 str_npc20_backstory_later|おぬしはいまだに我が夢を乱す！これはなぜなのか？ 我が夢は深遠を映す。このドル・グルドゥアにあっても、 おぬしの行ないは幻影となってわしの知るところとなる。 おぬしに言おう。愚かでないのなら、今すぐここで我が助力を乞うがよい。
-str_npc21_backstory_later|日に日に兵士の怪我人が増えています。 私は出来る限りの看病をしているのですが、 自分が檻に閉じ込められているという思いはぬぐえません。
+str_npc21_backstory_later|おいでなすったね！なかなかうまい事やってる ようじゃないか、え？いまいましい岩に 繋がれる事もなくあちこち歩き回るのは、 さぞかしいい気分だろうね！ここの親分どもに あたしの事について話をつけてくれるっていうのは、 どうだい？駄目で元々、頼むよ。
 str_npc22_backstory_later|考え直したかね？ エルダールに残された時間は少ない。
 str_npc23_backstory_later|私はこの二日間、 大蜘蛛の巣を観察していたの。 初めて見るとその姿の醜さに驚くかも知れないけれど、 彼らは侵入者から森を守っているのよ。 今日は私を旅へ誘いに来たの？
 str_npc24_backstory_later|頑丈な城壁をつくるのは、 すべてのドワーフにとって、 やりがいを感じる仕事だ。 だが、わしは斧も振り回したいんだ。 今すぐ。 わしを一緒に連れて行ってくれないか。
@@ -2187,7 +2191,7 @@ str_npc27_backstory_later|どうだい？俺はお役に立つぞ。
 str_npc18_backstory_response_1|おまえが本当に見た通り獰猛ならば、私のために戦わせてやるのも悪くないだろう。もちろん、食べ物を少々与えた後の話だがな。
 str_npc19_backstory_response_1|なるほど。戦列を乱さずに戦えるのであれば役に立たない事もないな、褐色人よ。
 str_npc20_backstory_response_1|変わった志願の口上だな、妖術師め。まあよかろう、私と一緒に来るがいい。
-str_npc21_backstory_response_1|ローハンの盾持つ乙女からの申し出とあらば、我々は歓迎する。
+str_npc21_backstory_response_1|確かにおまえはとても大きくて殴り合いには強そうだ。役に立ちそうだな。
 str_npc22_backstory_response_1|このような申し出は僭越かも知れませんが、来たる戦いに備えるため、我が部隊にあなたの力を貸していただけないでしょうか。
 str_npc23_backstory_response_1|我々が旅をするのは、すべての清きものを守り、敵と戦うためだ。
 str_npc24_backstory_response_1|もちろんだ。ドワーフの戦士は歓迎しよう。
@@ -2197,7 +2201,7 @@ str_npc27_backstory_response_1|いいだろう。
 str_npc18_backstory_response_2|フン！暴れるだけの闘犬など我が部隊には不要だ。
 str_npc19_backstory_response_2|手柄か。私をわずらわす前に、まずはどこかで自分で手柄をたててくるがいい！
 str_npc20_backstory_response_2|フン！口はよく動くようだが、実際のところは大した事がなさそうだな。私は忙しいのだ！
-str_npc21_backstory_response_2|すまないが、私では力になれないな。
+str_npc21_backstory_response_2|あきらめろ、トロル。おまえごときのために割いてやる時間などない。
 str_npc22_backstory_response_2|ロスローリエンがもうすこし平和になったらまた来る事にしよう。
 str_npc23_backstory_response_2|すまないが、役に立たない者を部隊に置いておく余裕はないのだ。
 str_npc24_backstory_response_2|せっかくだが、我々だけでうまくやれているのだ。
@@ -2207,7 +2211,7 @@ str_npc27_backstory_response_2|おまえなど要らん、この奴隷め。
 str_npc18_signup|ああ、また肉にありつけるとは！手足が自由になり、腹ごしらえが^済み次第、すぐにでも我が勇気をご覧に入れよう！
 str_npc19_signup|ああ、わしをそう呼ぶのはかまわないさ。わしは褐色人の血を^恥じてはいない。歴代のローハンの暴君どもに大いに苦しめられて^きたわしらの民には、わしはとても親しみを感じているんだ。^わしはこの戦争であんたの力になるよう努力を惜しまない。だが隊長、^その代わり、わしの戦いの時が来たら、わしを助けてほしい。
 str_npc20_signup|当面のところおぬしの傲慢さは大目に見るが、 それについていづれゆっくりと話をする事になると覚えておくがいい。 かつては違った名であった冥王が、 どちらの肩を持つのか見てみるのも面白いであろう。 その時にはおぬしに礼儀というものを教えてやるとしようか。
-str_npc21_signup|よろこんであなたの指揮下に入らせていただきましょう、 隊長。
+str_npc21_signup|そうこなくっちゃ！ さあ親分に話をつけてあたしをこの穴から出しておくれ。
 str_npc22_signup|なるほど。 君の名前や、 偉業の数々は、 私もよくうかがっている。
 str_npc23_signup|私は暴力や戦争で使う武器は 嫌いだけれど、 いざとなったら自分の身は自分で守れるわ。
 str_npc24_signup|わしは斧に自信がある。 振り回すのも投げるのも得意だ。 それに、商人との交渉をわしにまかせてくれれば、 経費も浮かせることができるぞ。 あと、戦場で倒れた敵兵から 金目の物を見つけるのも得意だ。
@@ -2217,7 +2221,7 @@ str_npc27_signup|ほんと？ようし、後悔させないぜ。
 str_npc18_signup_2|かつて母が私に語ったところによると、私は多くの敵を切り倒す^ために産まれてきたのだそうな。あなたのために、私はか弱い西の^人間どもを山ほど殺そう。ひと振りの剣を私に与えてくれれば、^それで充分だ！
 str_npc19_signup_2|わしは他の者たちと同様、夜の狼のように戦うんだ。槍を投げ、 突撃してくる騎兵の胸にパイクを突き刺し、その手足を斧や剣で叩き切る。 あんたには包み隠さずに本音を明かすが、御目にしろ白の手にしろ、 あんたがどちらについていようと、わしはかまわないんだ。 わしが本来座るべき、黄金館の王座にわしが座る事。 それがわしにとってのすべてなんだ。
 str_npc20_signup_2|とりあえずは、長い年月をかけて磨いてきた我が知識と術を、 おぬしの力とさせてやろう。覚えておくがよい。 ジグールフェルの助けを得る者は、 ウトゥムノの地下深くにて翼を与えられた龍に等しい。 おぬしのために我が偉大なる術を使おうとも、 おぬしにそれを理解する事はできぬであろうがな！
-str_npc21_signup_2|私は弓や槍を使っての狩猟では、 多くの獲物を仕留めた経験があります。 あなたの指揮下では、 オークを仕留めてご覧に入れましょう。 それと、 私には多少の医術の心得もあります。 これも役に立つでしょう。
+str_npc21_signup_2|心配はいらないよ、あんたの事はあたしがしっかり守ってやるからね。
 str_npc22_signup_2|敵の予想の外から私が一撃を加えるというのは、 敵勢を動揺させるのに効果的かも知れぬ。 君と一緒に行くとしよう。
 str_npc23_signup_2|私にも、 素早く、 音を立てない歩き方なら教えて上げられると思うわ。 さあ行きましょう。
 str_npc24_signup_2|あんたがあの背の高い連中、 特に油断も隙もないエルフを ちゃんとしつけといてくれれば、 わしは喜んであんたの部隊に入るよ。
@@ -2227,7 +2231,7 @@ str_npc27_signup_2|俺を部下にして後悔はさせない。
 str_npc18_signup_response_1|おまえの心意気は気に入った。いいだろう、ルルムサクンに話をつけてやろう。
 str_npc19_signup_response_1|よし。それじゃあ「皇太子」さん、すぐに武器をまとめてこい。おまえは当面、私のために戦うのだ。
 str_npc20_signup_response_1|おまえ自身のためにも、それがはったりでない事を祈ろう。私を失望させるなよ、ジグールフェル。
-str_npc21_signup_response_1|素晴らしい。{君/あなた}の準備が整い次第、我々は出立する{/わよ}。
+str_npc21_signup_response_1|よし。おまえの価値を証明してみせるがいい。
 str_npc22_signup_response_1|エルフの将軍を仲間に迎えることができるとは、光栄です。
 str_npc23_signup_response_1|いい{だろう/わ}。{君/あなた}がオークを見て逃げ出さないといいけど。
 str_npc24_signup_response_1|いい{だろう/わ}、歴戦のドワーフ殿、我々は歓迎する。
@@ -2237,7 +2241,7 @@ str_npc27_signup_response_1|よかろう。さあ行くぞ。
 str_npc18_signup_response_2|狂暴なやつだ・・・少々狂暴に過ぎる。もうしばらくそのままでおれば従順さというものを覚えるだろう。
 str_npc19_signup_response_2|もうしばらくその干し草の俵のうえに座っているといい、「皇太子」さん。
 str_npc20_signup_response_2|おまえの自慢と悪態は、聞くに堪えぬ。次に会う時までに口の利き方を覚えるがいい！
-str_npc21_signup_response_2|申し訳ない{/けれど}、ご婦人、また今度の機会にし{よう/ましょう}。
+str_npc21_signup_response_2|いまのところ、おまえは必要ない。
 str_npc22_signup_response_2|よく考えてみたら、別に我々だけでもロスローリエンを助ける事はできるな。
 str_npc23_signup_response_2|{すまないが/ごめんなさい}、{君/あなた}が戦場にいる姿を想像できない{んだ/わ}。
 str_npc24_signup_response_2|せっかくだ{が/けど}、私はエルフのほうが好きな{んだ/の}。
@@ -2247,7 +2251,7 @@ str_npc27_signup_response_2|気が変わった。
 str_npc18_payment|もちろん、あなたのような勇猛な指揮官ならば、ひと言発するだけで^私は開放されるだろう。^[{s14}での影響力ポイントを{reg14}消費します]
 str_npc19_payment|隊長、黒のデグラフ族長が難癖をつけてわしを自由にして^くれないんだ。^[{s14}での影響力ポイントを{reg14}消費します]
 str_npc20_payment|どちらかと申せば、わしやわれらが仕える主人を失望させぬよう、^おぬしが励むのがすじであろう。おぬし、われらが主人からは^どのように考えられておるのじゃ？^[{s14}での影響力ポイントを{reg14}消費します]
-str_npc21_payment|あなたについていきたいのは山々ですが、もしこの街が敵の攻撃を^受けたら、一体誰が怪我人の面倒を見ればよいのでしょう？^[{s14}での影響力ポイントを{reg14}消費します]
+str_npc21_payment|ところで、さっき「ちょっとした借金」と言ったが、 ひょっとすると「ちょっと」よりもいくらか 多いかも知れないんだ。ここの親分は あんたからできるだけしぼり取ろうとする だろうから、気を付けてくれよ！^[{s14}での影響力ポイントを{reg14}消費します]
 str_npc22_payment|敵に私の所在が知られる前に出立したいところではあるが、^ロスローリエンもまた私を必要としているのだ。^[{s14}での影響力ポイントを{reg14}消費します]
 str_npc23_payment|これでも一応任務があって、なかなか今すぐ出発、というわけにも^いかないんだ。^[{s14}での影響力ポイントを{reg14}消費します]
 str_npc24_payment|ついていきたいのは山々だが、わしの尊敬すべき父、ドワーリンが^この事を理解してくれるかどうかは疑問だ。^[{s14}での影響力ポイントを{reg14}消費します]
@@ -2257,7 +2261,7 @@ str_npc27_payment|これでも一応任務があって、なかなか今すぐ�
 str_npc18_payment_response|その通りだ。ルルムサクンの部下が私を拒否することはない。[影響力ポイントを{reg14}/{reg15}消費します]
 str_npc19_payment_response|私がきちんと話をすれば、デグラフ族長は断る事はできないだろう。[影響力ポイントを{reg14}/{reg15}消費します]
 str_npc20_payment_response|もちろん評価していただいている。さあはやく来い！何といっても、おまえがついていくのは卑しいスナガではないのだぞ。[影響力ポイントを{reg14}/{reg15}消費します]
-str_npc21_payment_response|それは見上げた心遣い。だが、心配せずとも代わりの者はきっと見つかるだろう。[影響力ポイントを{reg14}/{reg15}消費します]
+str_npc21_payment_response|あの者が何を試みようとも、おまえは私と共に旅立つのだ。[影響力ポイントを{reg14}/{reg15}消費します]
 str_npc22_payment_response|あなたは我々と共に行動するべきです。私を信じていただきたい。[影響力ポイントを{reg14}/{reg15}消費します]
 str_npc23_payment_response|今からおまえの任務は私と共にある。[影響力ポイントを{reg14}/{reg15}消費します]
 str_npc24_payment_response|勇猛なドワーフの戦士を戦いから遠ざけてはいけないと、ドワーリン殿も理解してくれるだろう。[影響力ポイントを{reg14}/{reg15}消費します]
@@ -2267,7 +2271,7 @@ str_npc27_payment_response|今からおまえの任務は私と共にある。[�
 str_npc18_morality_speech|大いなる者よ！我が血の飢えはまだ満たされておらぬ！ なぜ臆病者のように {s21} などという事をするのだ？ 戦わせてくれ！
 str_npc19_morality_speech|隊長、なぜあんたが {s21} などという事をするのか、 わしにはまったくもって理解できない。 わしのような王は常に寛大であるべきだが、 もし食糧庫が空でわしが兵にくれてやるものが 何もないと兵たちが知ったら、 皆わしの許から去っていくだろう。
 str_npc20_morality_speech|指揮官どの。おぬしにはもう少し期待しておった、 と言っては嘘になろうかの。気を付けるがよい。 ひとりよがりの利己的な行為は、 おぬし自身の破滅に繋がりかねぬぞ！
-str_npc21_morality_speech|兵士の言う事を聞く必要はありません。 ときには{s21}という事は、 最上の選択になる得るのです。 ここは無用な犠牲を避けて、 我々の勝機を待つべきなのです。
+str_npc21_morality_speech|お頭、ちょっと聞きなよ。 {s21} なんて事が起こって皆が腹を空かすなんて、 まともな群れじゃないよ！ あたしのでっかい腹をみてごらんよ！腹ぺこだよ！ もうそこらへんのちっこい奴らの指の一本でも かじってやるかい。いや、足の一本くらい・・・
 str_npc22_morality_speech|指揮官殿、 君は考え方を改める必要がある。 {s21}という行為によって得られる名誉などはなく、 それは我々の友たちに動揺を与えてしまうだけだ。
 str_npc23_morality_speech|[No primary moral code]
 str_npc24_morality_speech|あんたが{s21}決断をしたのには、 わしは納得いかん。 まっとうなドワーフにとって、 戦いで命を落とすのは名誉な事だ。 卑怯者の率いる部隊で戦うのは、 恥と心得る。 わしのいとこたちがこの事を知ったら、 何と言うだろう？
@@ -2277,7 +2281,7 @@ str_npc27_morality_speech|[No primary moral code]
 str_npc18_2ary_morality_speech|大いなる者よ、私は多くの敵の血を流すためにここにいるのだ。^{s21}ためではない！^あなた自身の狡猾さを楽しむのもいいが、私には殺戮の機会をくれ！
 str_npc19_2ary_morality_speech|[No secondary moral code]
 str_npc20_2ary_morality_speech|これはこれは、我らが勇敢なる指揮官どの。 このたびも、さぞかし大手柄であろう？ 仕掛けられた罠にまんまと無謀な突撃をした挙句、 矢も盾もなく真っ先に逃げ出すとはの。 おぬしが手柄と誇る戦いのうち、 いくらがこのような結果に終わったのやら。
-str_npc21_2ary_morality_speech|隊長、ちょっとよろしいですか。 私のいた部隊の女はみな、 死は恐れなくとも、 不名誉だけは受け入れません。 {s21}などという行為は、 私の馬と先祖の名に、 泥を塗るのと同じ事です。
+str_npc21_2ary_morality_speech|やれやれ、食いものは一体どこだい？何から何まで あたしが手伝わないといけないのかい？ まっとうなお頭なら羊の足だとかうまいドワーフの ひとつふたつは用意してくれないとね。 あたしはついてないよ、 お頭があんたみたいなのとはね。
 str_npc22_2ary_morality_speech|[No secondary moral code]
 str_npc23_2ary_morality_speech|[No secondary moral code]
 str_npc24_2ary_morality_speech|[No secondary moral code]
@@ -2287,7 +2291,7 @@ str_npc27_2ary_morality_speech|[No secondary moral code]
 str_npc18_personalityclash_speech|大いなる者よ、もしヴァルファングを戦士として評価しているので^あれば、あやつを私からできるだけ遠ざけてくれ。すでに^あやつには警告をしたのだが、もしも私の許可もなく私にあの手を^這わせようとするなら、手首を切り落として、あやつの馬に食わせよう。
 str_npc19_personalityclash_speech|隊長、なぜあのウフサクなどという低劣な獣があんたの部下にいる^のか、わしは不思議で仕方ない。もちろんオークには主力の^戦士たちのための矢よけになる、という使い道があるが、あいつは^まるで野営の責任者であるかのように偉そうに歩き回っては、人間や^オークどもに指示を出している。わしがあいつを殺したとしても、^あんたがあまり気にしないといいのだが。それとも、あの醜い鼻の^先を削ぎ落してやろうか。
 str_npc20_personalityclash_speech|南方人のリキアーダには行儀というものを理解させ、 謙虚さを教えてやる必要がある。あの者の無礼な口の利きようと、 尊大なふるまいよ！あの民族の指揮官である事などどうでもよい・・・ 馬鹿らしい劣等民族め。礼を尽くすべき相手を知らぬばかりか、 自分たちよりも優れているかどうかすら理解できない愚か者どもめ！ 少し思い知らせてくれようか・・・
-str_npc21_personalityclash_speech|俺が{s11}の事を嫌いだという話は、 もうしたな？
+; str_npc21_personalityclash_speech|Blimey, chief, but that Sickburpfoul's a bit of a mad bat, ain't she? Yer can tell she's cooked one crow too many in that there cauldron of hers, the one what I drag on me poor ol' back at Her Ladyship's command. And lumme if she don't look at me down the end of the nose like I was a piece of dung scrapings, and her head not even up to me navel! Enough to make me want to 'ave her noggin meet my fist, I reckon. But I've seen her sort afore, yes I 'ave. With the likes o' her around, yer wants a pair o' extra eyes round the back of your 'ead, and no mistake.
 str_npc22_personalityclash_speech|俺が{s11}の事を嫌いだという話は、 もうしたな？
 str_npc23_personalityclash_speech|{playername}。 ついさっき、{s11}が 若鳥の巣を堂々と踏み潰して歩いていくのを見たわ。 彼の粗雑さが罪のない若い生き物の命を奪ったのよ。
 str_npc24_personalityclash_speech|{s11}卿は強いが、 あのきらきら光る髪は、 敵のめくらましになっているんじゃないのか？ それか、 彼の名声と偉そうな物腰に、 敵がびっくりして腰を抜かしているのかも知れんぞ？
@@ -2307,7 +2311,7 @@ str_npc27_personalityclash_speech_b|俺は{s11}をすり潰すのを我慢しと
 str_npc18_personalityclash2_speech|大いなる者よ、グルムは油断のできない獣だが、あやつはその事に^誇りを持っている。あやつは昨夜の野営のかがり火のもとで、また^自身の卑劣な行為を自慢げに語るのだ。大いなる者よ、あやつからは^目を離してはならない。白の手に仕えていたときに自身の指揮官を^裏切った者なのだ。あなたの指揮下で同様の事をしないという理由は^ないのではないか？
 str_npc19_personalityclash2_speech|わしは{s11}が大嫌いだ。
 str_npc20_personalityclash2_speech|フルジミアの姿を見るたびに、 我が体の底から言いようのない怒りがこみ上げてくる。 あの者が何かをしたからではない。あの者の民、ウンバールの海賊どもが、 祖先の血をこれ以上ないほど汚しておるからじゃ。あやつらは、 自分たちをいにしえのアナドゥーネーの子孫だと主張する。 無知なあやつらは'ヌーメノール'の子孫だと言うがの。まったく、 その血の一滴でも、フルジミアの体内に流れておるのか！ おぬしの許可さえあれば、わしがこの手で確かめてみるのじゃがのう・・・
-str_npc21_personalityclash2_speech|俺が{s11}の事を嫌いだという話は、 もうしたな？
+; str_npc21_personalityclash2_speech|I've been thinkin', chief - how does one kill a witch? Without gettin' turnt into a pile o'slugs, I means. That ol' bat's been givin' me the evil eye again and it made me skin crawl the whole day. On the inside! I'm 'appy to smash heads and break shields in a scrap, but what SHE does to the heads I did done smashed, when nobody's lookin'?! I don't play with me food, not like that. Gives me the creeps, tha' one.
 str_npc22_personalityclash2_speech|俺が{s11}の事を嫌いだという話は、 もうしたな？
 str_npc23_personalityclash2_speech|俺が{s11}の事を嫌いだという話は、 もうしたな？
 str_npc24_personalityclash2_speech|ちょろいもんさ、なあ隊長？ あのエルフ女の{s11}さえいなけりゃ、もっといいんだがな。
@@ -2327,7 +2331,7 @@ str_npc27_personalityclash2_speech_b|俺は{s11}をすり潰すのを我慢し�
 str_npc18_personalitymatch_speech|大いなる者よ、戦場におけるリキアーダの正確無比な戦闘技術に^気付いたか？彼の放つ矢の速きこと、剣の鋭きこと！大いなる者よ、^私にもっと彼の指導のもとに訓練をする事を許可してほしい。彼の^教えを受ければ、私はさらにあなたの役に立つだろう。
 str_npc19_personalitymatch_speech|戦いの喜びに、わしの血が沸き立つ！ヴァルファングも同様のようだ。^戦意を失って逃げ惑う敵を笑いながら踏み潰していくあの男は、^戦場では見るからに恐ろしい。隊長、あの東方の者たちは興味深い。^わしが目的を遂げたあとにロヒアリムが褐色人に馬術を教えないので^あれば、彼らから学べばいい。
 str_npc20_personalitymatch_speech|ボルゾグを見よ。偉大なるボルゾグ！あの者が^わしの気まぐれにいちいち対応しつつ、がに股で^せわしく歩き回り、わしの申し付けた用事を^きちんと片付けていくさまよ。あれこそ正しく、^かわいらしい'ウルク'の鑑じゃ。指揮官どの、^わしはあの者がとても気に入った。これボルゾグ！^軟膏をこれへもて！いますぐじゃ！
-str_npc21_personalitymatch_speech|隊長、栄誉ある戦いにおける偉大な勝利、 おめでとうございます。 傷ついた者たちを素早く手当てしてまわる、 {s11}の手際の良さには感心しました。
+; str_npc21_personalitymatch_speech|Ha! Chief! Last night, right, I was a-watching that poor little blighter Ufthak for a bit. 'E's a funny little fella, and no mistake! I made 'im cook me some meat he'd stashed away, right, and then I et it, right 'fore his face! Blimey if he didn't bawl his eyes out! Yer should've saw how his nose runs when he bawls, it don't 'arf run like a stream! Ha! Good thing yer keep him around!
 str_npc22_personalitymatch_speech|もう言ったかもしれないけど、{s11}ってのは大したタマだな。
 str_npc23_personalitymatch_speech|{playername}、 私は戦いが嫌いだけれども、 {s11}がまるで鷹のようにあの醜い生き物どもを狩り、 華麗に追い散らす姿には、 思わず見とれてしまいました。
 str_npc24_personalitymatch_speech|血しぶきと勝利。 これだよわしの求めているものは！ 実はちょっと怪我をしたんだが、 親切にも{s11}が手際良く手当てをしてくれたんだ。
@@ -2337,7 +2341,7 @@ str_npc27_personalitymatch_speech|もう言ったかもしれないけど、{s11
 str_npc18_personalitymatch_speech_b|大いなる者よ、リキアーダのような戦士があなたの旗のもとに戦う^のは、あなたの偉大さを大いに語る。南方の者たちはか弱く退廃的で、^西方の人間と大差がないと私は考えていたが、他にも彼のような者が^彼らの軍にいるのであれば、西方の運命が尽きる日も近いだろう。
 str_npc19_personalitymatch_speech_b|隊長、昨晩、わしはたき火の側でヴァルファングと葡萄酒を 飲み交わしながら、腹を割って話をしたのだ。わしの見たところ、 彼は先祖たちの行いを非常に重要と考えている。見上げたものだ。 彼の言うように、先祖の魂が本当に我らとともにあるのかどうか、 わしには分からない。そういう考え方は実は嫌いなんだ。 だが王たる者、自分の血筋や祖先の話は知っておかねばならない。 その事をヴァルファングは知っているんだ。
 str_npc20_personalitymatch_speech_b|ボルゾグのような'ウルク'を見たのは初めてじゃ。^もちろん、姿は醜く目にするのも不快であろうが、^われらの知る限り、こそこそしては殺戮をするだけ^という単純な行動以上の事ができる者は他におらぬ。^あの者のふしくれだった手は驚くほど器用じゃ・・・^はじめに考えていたときよりも、多くの骨と筋の^術を仕込めるであろう。
-str_npc21_personalitymatch_speech_b|命を救うというのは尊い行為です。 あのような心を持つ者には、 たとえ生まれも育ちも違っていても、 親しみを感じます。
+; str_npc21_personalitymatch_speech_b|That silly Ufthak keeps tryin' to sneak away, but I'll always catch 'im, yes I will. It's almost like the old days, chief. When I had me band o'lads at me service. Or way back o'er the mountains, when I had me boys with me -- Bert, and Bill, and Tom... Ah well. Them days be long gone. Where's that little ratty rascal gone now, eh? Ufthak! Come 'ere, yer no-good skulker!
 str_npc22_personalitymatch_speech_b|{s11}ってのは大したタマだなあ。
 str_npc23_personalitymatch_speech_b|彼は一体、いくつなのかしら。 私よりも、120歳は年上よね？ 気にしないで、 あなたには理解しづらい話だったわね。
 str_npc24_personalitymatch_speech_b|{s11}の故郷である谷間の国の民は、 ドワーフほどではないが、 戦いにおいて信頼できる同盟国だ。 実績もあるしな。 友とするにしろ、 コンパニオンにするにしろ、 人間にしては見所のある民族と言える。
@@ -2357,7 +2361,7 @@ str_npc27_retirement_speech|どうも戦いに明け暮れる生活に疲れち�
 str_npc18_rehire_speech|大いなる者よ、我が剣は血に飢えている。また共に戦おう！
 str_npc19_rehire_speech|隊長、また会えてうれしいよ。再びあんたの部隊に入る許可をくれ。
 str_npc20_rehire_speech|指揮官どの、さあ旅立とう。無為に過ごしていては、^この戦いに勝てぬ！
-str_npc21_rehire_speech|再会できてうれしい。 また一緒に旅をしましょうか？
+; str_npc21_rehire_speech|How've yer been, chief? Should I pack me things and be off with yer again?
 str_npc22_rehire_speech|君に会えてうれしいよ、 {playername}殿。 また一緒に旅をしようじゃないか。
 str_npc23_rehire_speech|会えて嬉しいわ、 {playername}。 また一緒に行きましょう。
 str_npc24_rehire_speech|わしの斧はばっちり研いであるぞ、 {playername}。 また一緒に連れて行ってくれるかい？
@@ -2367,7 +2371,7 @@ str_npc27_rehire_speech|また俺のご主人さまにならないか？
 str_npc18_home_intro|おお、アンドゥイン。大いなる者よ、何世代も昔、この地で馬車族が^挙げた大いなる勝利の数々を知っているか？彼らは我らヴァリアグと^同盟を結び、オンドヘアと言う名の王が治めていた当時のゴンドールの^哀れな軍勢を共に叩き潰したのだ。我らが祖先たちは栄光ある殺戮を^さぞ楽しんだことであろう！
 str_npc19_home_intro|ああ、エドラス。わしの正統なる居城。上にある黄金館を見なよ、^隊長。ほんの数世代前、あのメドゥセルドの扉の前で槌手王ヘルムの^最後の息子が殺され、その後はウルフがしばらくの間、王になった^んだ。ウルフといっても、もちろん今の褐色人の族長のウルフの^事じゃないぜ。あれはただの雑種で、自分より優れた生き物に^あやかってその名を名乗っているだけだ。
 str_npc20_home_intro|おお、はなれ山か。今はドゥリンの一族の、 最後の砦となっておるのであろう？ついにこの目で見る事ができるとは、 うれしいものじゃ。あのドワーフの死にゆく姿に感じた、 大きな喜びがよみがえるのう。 我が術によってその死にゆく時間を長引かせたのじゃが、 ドワーフというのは、まことに頑丈なものでのう！ あの者どもを苦痛に耐えられるようにした造り主アウレは、 罪な事をしたものじゃ。
-str_npc21_home_intro|ここで少し足を止めましょう、隊長。 あのアンドゥイン河と白光川の間に広がるのが、 その昔、 青年王エオルが、 同盟軍であるゴンドールの救援に駆けつけた、 ケレブラントの野です。
+str_npc21_home_intro|おい、お頭！こりゃあ悪い場所へ来ちまったよ！ この世界で最悪のものたちがうごめく、この世界で 最も暗い場所、ドル・グルドゥアさ。こんなに たくさんの木々が生い茂っているってのに、 肥えたリスが一匹も見当たらない。木の枝にも うまそうな鳥はまったく見当たらない。 魔法の事なんかわからなくても、 あたりを見ただけで闇の住人どもの気配を感じるね。
 str_npc22_home_intro|ダーロ！あれに見えるのは、アングレンオストと^オルサンクの黒い塔だ。私が最後に見たときから、^ずいぶんと変わったものだ。悪い方にな。
 str_npc23_home_intro|ちょっといいかしら、{playername}。 この辺りの道は曲がりくねっていて、 行き止まりも多いわ。 私たちは、 もうだいぶドル・グルドゥアに近づいているのよ。
 str_npc24_home_intro|おい、隊長！これはカザド＝ドゥームの東門へと続く、 むかしの道に違いないぞ。 モリアと言ったほうが、 あんたには通りがいいかな。 あの遠くに輝くのはケレド＝ザラムの湖、 そして雲の合間に見えるのが、 霧ふり山脈のこの一帯を飾り立てる事で有名な、 みっつの頂だ。
@@ -2377,7 +2381,7 @@ str_npc27_home_intro|おっと、あれを見なよ！
 str_npc18_home_description|我らの賢き者たちがあの戦争の話を余すところなく聞かせてくれた。^ 南方の民があれほど弱くなければ、勝てるはずの戦いに敗れる事が^なければ、野営の戦いでのゴンドール勢の勝利はなかったはずなのだ。^馬車族の戦車はことごとく破壊され、多くの勇猛な英雄たちが^死者の沼地で命を落とした。
 str_npc19_home_description|かつてそうであったように、わしはわしの民をひとつにしたいんだ。 褐色人の女たちが病気の赤ん坊をかかえている一方で、 金髪の親戚たちは暖かい広間で肉を食らって葡萄酒で飲みつぶれている、 なんて事はもうたくさんだ。黒い髪の山男が、 金の髪を持った小作人の所有する馬の群れを恨めしげに眺める、 なんて事はもうたくさんだ。王として、わしは世の不公平を正したい。 だがまずは、ローハンの暴君どもにはしょく罪をしてもらう。
 str_npc20_home_description|スロールの息子、スライン。あの者の事はよく覚えておる。 向こう見ずでうぬぼれが強いだけの、今や途絶えた血筋の御曹司。 そして何の価値もない王位の継承者よ！我が手による苦痛に、 よく耐えたものじゃ。しかし、 ジグールフェルの意志に長くあらがい続ける事など、誰もできぬ。 誰一人としてじゃ、指揮官どの。 ドル・グルドゥアの牢獄にてあの者から取り上げた指輪を暗黒の塔へ送り、 大いなる手柄としたものじゃ。以来、冥王の贔屓を得たわれらは、 今の高い地位を手に入れたのじゃ！
-str_npc21_home_description|「いづれへ消えたのか、あの馬たちと乗り手たちよ？^いづれへ消えたのか、あの鳴り響いていた角笛よ？^いづれへ消えたのか、あのきらきらとたなびく髪、あの兜、あの鎧？・・・^みな、山に降り注ぐ雨のように去ったのだ、草原を抜けていく風のように。^西に沈むあの日々は、山々のむこうに姿を消し、闇が訪れる・・・」
+str_npc21_home_description|あたしは生まれてこのかた、魔法には一切 関わらないように気を付けてきた。いまここで その考えを変える気はまるでないよ。
 str_npc22_home_description|かつて南の王国によって築かれた要塞も、 今は白い魔法使いと呼ばれる者が根城とし、 いかにして他者の犠牲とひきかえに自身の力をより大きくするか、 策略をめぐらせる場所になってしまった。
 str_npc23_home_description|こんなに遠くまで来たのは初めてだけれど、緑森の^斥候たちの話では、ここにはナズグールがいる^可能性があるらしいわ。悪意の者の気配は感じる^けれど、それが何者なのかは私にはわからない。^でも、それがとても強い力を持っているのは^確かだわ。用心しましょう。
 str_npc24_home_description|この荒廃ぶりと、 たくさんのオークの足跡を見るかぎり、 勇敢なるバーリンとその探検隊の運命には、 悲観的にならざるを得ない。 どうやらモリアは闇の手に落ちてしまったようだ。 わしらも気をつけて足を踏み入れなければならんな。
@@ -2387,7 +2391,7 @@ str_npc27_home_description|あの街を知っているかい？
 str_npc18_home_description_2|大いなる者よ、あなたと共にこの地を進軍できる事に、私は喜びを^感じる。我らが民族の指導者たちは、かつての所有地であった^この地を取り戻したいのであろう。ゴンドールと西方の民から、^思うさま奪えばいい。私はより多くの敵の血をこの地に吸わせる^事さえできればそれでいい。
 str_npc19_home_description_2|この長い戦争が終わったら、わしのために口添えをしてくれるだろう、^なあ隊長？どちらか力のより強いほうがもう片方を支配する事に^なるのだろうが、御目なのか、白の手になるのか？大君主として^エドラスとすべてのローハン領を我が住居、我が領土として^所有するというわしの主張に、口添えしてくれるよな？
 str_npc20_home_description_2|われらはドワーフどもをはじめとする、 この中つ国におけるヴァラールの創造物を破壊するであろう。 造り主の手による創造物を壊すのは、さぞ楽しいであろうな。 ドワーフどもをこの足で踏みつけ、 下等な人間どもの王国をひとつ残らず粉砕し、 そして亡霊のように霧消していくエルフどもを笑ってやろう。 その後はヴァリノールの忘却の洞窟を訪れ、 我らが王をふたたび呼び覚ますのじゃ！
-str_npc21_home_description_2|過去の偉大な行いや、尊い犠牲を思い起こすのは、大事な事です。 ローハンとゴンドールの同盟軍は、 再び我々の民を破滅から救うでしょう。
+str_npc21_home_description_2|あたしは生まれてこのかた、魔法には一切 関わらないように気を付けてきた。いまここで その考えを変える気はまるでないよ。
 str_npc22_home_description_2|これは、堕落し、身を滅ぼすというのは、 誰にでも起こりうる事なのだ、 という教訓にしなければならない。 それは最も偉大な者、 イスタリといえども、 例外ではない。 力を追い求める者は、 力によって滅びる。 さあ、 これ以上は時間の無駄だ。
 str_npc23_home_description_2|城壁の向こう側にうごめく、 闇の軍勢の気配を感じるわ・・・ 美しいロスローリエンを襲撃するつもりなの？ それとも谷間の国を？ 私の故郷、緑森？ わからないわ、 でも、 私たちは絶対にやつらの好きにさせてはならない。
 str_npc24_home_description_2|もし大軍を率いる幸運に恵まれたら、 ぜひあそこに押し入って山のようなお宝を頂戴したい。
@@ -2397,7 +2401,7 @@ str_npc27_home_description_2|あれがミナス・モルグルだ。 あそこ�
 str_npc18_home_recap|私はルルムサクンの息子を訓練中に殺した罪を問われ、死刑を^宣告された囚人であった。私に挑んできた3人を倒したのだが、^そのうちの一人が、その時の負傷がもとで死んだのだ。その後、^あなたが現れ、私を開放し、食べる物を与えてくれた。今はあなたの^ために殺し、必要とあらばあなたのために死のう。
 str_npc19_home_recap|わしはローハンの王家の血を引く者だ。わしは断言する、 フェンゲル王はわしの祖父だ。 わしのばあちゃんを妻に迎えることはなかったがな。 褐色人の国の族長たちはわしに嫉妬し、 わしが手柄をたてて民から人望を集めるのを怖れ、 わしを戦いの場から遠ざけるのだ。 そこであんたの指揮下に入れてもらったのさ。 今はわしがエドラスの王座を手に入れる日を待ち望むばかりだ。
 str_npc20_home_recap|これ以上何を知りたいというのじゃ、指揮官どの？ わしはドル・グルドゥアの地下牢にて、我が術の工夫を重ねておった。 そして深遠を映す我が両の目が、 この戦争におけるおぬしの働きをわしに見せる。 どうやらおぬしを助けるのがわれらの使命なのであろう。 そして西方の力を打ち砕いて今一度東の力をよみがえらせ、 この世界の終わりを見るのじゃ。
-str_npc21_home_recap|ずいぶん簡単に話を忘れるのですね。もう慣れましたけれど。
+str_npc21_home_recap|あたしは頼りになる仲間たちと霧ふり山脈で 暴れてたんだが、飲み過ぎた挙句にグンダバドの 連中にまんまとだまされて身代をまるごと賭けで 取り上げられたのさ。
 str_npc22_home_recap|今回は君の好奇心に付き合うが、 あまり時間はかけないようにしよう。
 str_npc23_home_recap|私は闇の森で生まれ育った、シルヴァン・エルフよ。 私たちの木工技術は広く知られているのよ。
 str_npc24_home_recap|わしはドゥリンの一族、ドワーリンの息子だ。
@@ -2407,7 +2411,7 @@ str_npc27_home_recap|手短かに話すよ。
 str_npc18_honorific|大いなる者
 str_npc19_honorific|隊長
 str_npc20_honorific|指揮官どの
-str_npc21_honorific|指揮官殿
+str_npc21_honorific|お頭
 str_npc22_honorific|指揮官殿
 str_npc23_honorific|隊長
 str_npc24_honorific|隊長
@@ -2426,7 +2430,7 @@ str_rohan_guildmaster_companion_player_none_ok|セインよ、ここの民の事
 str_rohan_guildmaster_player_found_ok|有益な助言を感謝する。君が健やかであらん事を！
 str_rohan_edoras_guildmaster_companion|なるほど、あるかも知れません。 男にまじって女子衆が戦いに出ると聞くと、 暗い時代もそこまで来てしまったかと思われるかも知れません。 しかしながら、我らの愛する恐れ知らずの誇り高きエオウィン姫は、 馬を操り戦う事において、我が軍の将軍たちと比べても遜色ありません。 盾持つ乙女たちの中には彼女と共に幼少から訓練を積んだ者もおり、 その内のいくらかは黄金館の周辺で見る事ができます。我らが女子衆は、 まったく勇ましい！ ガルマイネという名の者をお探しになると良いでしょう。 彼女はさまざまな戦闘技術に秀でるにもかかわらず男たちと共に 出陣する事を許されないため、合わない馬勒をつけられて機嫌を損ねた 馬のように不遇をかこっております。
 str_lorien_guildmaster_companion_player_ask|賢者殿、力を貸して頂きたい。ローリエンのエルフたちは、 誰もがまるで古代の英雄のように戦う。 私の許で共に戦ってくれる者はいないだろうか？
-str_lorien_guildmaster_companion_none|このマルローン樹の合間にすら邪な者が入り込んでいたことがあり、 不安は皆が感じています。平和なときであれば竪琴を奏でる我々も、 このような時代では弓を腕を磨く事に精を出さねばなりません。 私には特に心当たりはありませんが、 勇者をお探しならばここの兵舎の責任者に会うとよいでしょう。 しばらくの間あなたの指揮下に入ろうという者が、 いくらか見つかるかも知れません。
+str_lorien_guildmaster_companion_none|このマルローン樹の合間にすら邪な者が入り込んでいたことがあり、 不安は皆が感じています。平和なときであれば竪琴を奏でる我々も、 このような時代では弓の腕を磨く事に精を出さねばなりません。 私には特に心当たりはありませんが、 勇者をお探しならばここの兵舎の責任者に会うとよいでしょう。 しばらくの間あなたの指揮下に入ろうという者が、 いくらか見つかるかも知れません。
 str_lorien_guildmaster_companion_player_none_ok|このあなたたちの美しい土地では、 もう少し心の躍るような言葉を聞けると期待していたのだが。だが賢者殿、 これはあなたの言に従おう。
 str_lorien_guildmaster_player_found_ok|賢者殿、助言を感謝する。ティロ・ヴェン・エルベレス！
 str_lorien_ca_guildmaster_companion|ナン・ベライン、驚かないでくださいよ！ 普段であれば私はあなたを失望させるであろう答えしか持ちませんが、 今ここに、数え切れないほどの戦いにおいて輝かしい功を挙げてきた、 グロールフィンデル卿が王国の客人として滞在されています。 あの偉大な英雄の目的が何なのかは、私には分かりません。 彼はイムラドリスのあるじであるエルロンド卿の軍団と共に来訪し、 ケレボルン卿とガラドリエル夫人に面会する時以外は話をしません。 指揮官殿、彼に会ってみてはいかがですか。 もしかすると、彼とあなたの目的は一致するかも知れません。
@@ -2503,3 +2507,27 @@ str_imladris_guildmaster_companion_player_none_ok|賢者殿、承知した。時
 str_imladris_guildmaster_player_found_ok|賢者殿、承知した。時間をとって頂き感謝する。
 str_show_keybinds_form|特別なキーの割り当て: ^^陣形ショートカット:^選択した状態の分隊へF1-F4で命令^選択された分隊へF1キーを押したままの状態で移動先を指示。^移動先には敵の分隊を設定する事も可能。^^ 使用武器の切り替え - O ^^ カメラタイプの切り替え - CTRL+END ^^ 檄 - V ^^ 乗馬を呼ぶ - M ^^ 命令の確認/ミニマップ - Backspace
 str_mordor_cungol_guildmaster_companion|ほほう、戦士をお望みとな！あなたにぴったりの者がおりますよ。 あれは親分たちのお気に入りでしてね。 小柄だからってみくびっちゃいけませんよ、とんでもない！ あの調子なら、あの者自身が親分に出世する日もそう遠くない！ 手入れの行き届いた大きな斧をひとつ持たせて、 頼もしいウフサクを前線に立たせてご覧なさい！ 敵どもを一匹残らず恐怖の底に叩き落して回りますよ！ こら、おまえら、黙らんか！笑うのをやめろ！持ち場に戻れ、 このうじ虫どもめ！失礼しました、指揮官殿。あの連中はグズで仕様がなくて。 ウフサクは違いますぞ！指揮官殿、あの者を連れていくと良い。 後悔はしませんよ。命を預けるに足る、信頼できる者です。 ほら、あの見張り塔のてっぺんに立っているでしょう。 なにか風格を感じさせる姿でしょう、ね？
+str_gundabad_guildmaster_companion_player_ask|ここには戦うよりも逃げるほうが得意な、信用のならない臆病者が群れているばかりだ。まともな戦士はどこにいるのだ？
+; str_gundabad_guildmaster_companion_none| I care not where you come from -- you’ll watch your tongue around here! Oh yes, be careful how you speak to us, or you just might find yourself falling into a dark hole of snakes in these tunnels of ours. Our fighting lads are off in rebel lands, fighting thieves and brigands and murderous elf-friends. And what’re you about, eh? Shirking your own share of the fighting, spying on our private business? Off with you, back into the fray, like a proper soldier!
+str_gundabad_guildmaster_companion_player_none_ok|命が惜しければ私への口の利き方に気をつけるのだな。
+str_gundabad_guildmaster_player_found_ok|なんだって？おまえの言う「バータ」というのは、 話のできるトロルなのか？ これはぜひとも我が目で確かめなければならん。
+; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
+str_fullname_region_rhun|ケルドゥインの両端に接する、 東ロヴァニオン
+str_fullname_region_erebor|はなれ山の山ろく地帯
+str_fullname_region_celebrant|白光川と銀筋川の中間に位置する、 ケレブラントの野
+str_fullname_region_gladden_fields|あやめ川の湿原地帯、 あやめ野
+str_fullname_region_w_emyn_muil|エミン・ムイル西部
+str_fullname_region_s_misty_mountains|霧ふり山脈南部の山ろく地帯
+str_fullname_region_n_anduin_vale|カーロックの北に位置する、 アンドゥインの谷間の北部地方
+str_fullname_region_s_anduin_vale|ローリエンと浅地の中間に位置する、 アンドゥインの谷間の南部地方
+str_fullname_region_cair_andros|アンドゥインの中にある船の形をした大きな島、 カイア・アンドロス
+str_shortname_region_rhun|ロヴァニオン東部
+str_shortname_region_erebor|はなれ山の山ろく地帯
+str_shortname_region_celebrant|ケレブラントの野
+str_shortname_region_gladden_fields|あやめ野
+str_shortname_region_w_emyn_muil|エミン・ムイル西部
+str_shortname_region_s_misty_mountains|霧ふり山脈南部の山ろく地帯
+str_shortname_region_n_anduin_vale|アンドゥインの谷間の北部地方
+str_shortname_region_s_anduin_vale|アンドゥインの谷間の南部地方
+str_shortname_region_cair_andros|カイア・アンドロス
+str_isengard_hunting_camp_guildmaster_player_found_ok|その者の殺しっぷりが良ければ連れていくとしよう。そうでないのなら、 魚のようにおろしてやる。もしそこら辺にいるただのうじ虫であったら、 私を無駄にわずらわせたおまえもただではおかぬ！

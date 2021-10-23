@@ -35,7 +35,7 @@ skl_riding_desc|可以騎更好的馬 (或其他野獸) ，提高騎行速度和
 skl_athletics|運動
 skl_athletics_desc|提高跑步速度。 (個人技能) 
 skl_shield|盾防
-skl_shield_desc|減少盾的損壞程度 (每點減少8%%) 和提高盾的格擋速度，以及覆蓋範圍。 (個人技能) 
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|武器熟練
 skl_weapon_master_desc|讓武器熟練度提升的更快並且提高武器熟練度的上限。上限依次為：60，100，140，180，220，260，300，340，380，420。 (個人技能) 
 skl_power_draw|強弓
@@ -45,4 +45,4 @@ skl_power_throw_desc|每點增加10%%的投擲傷害。 (個人技能)
 skl_power_strike|強擊
 skl_power_strike_desc|每點增加8%%的進戰傷害。 (個人技能) 
 skl_ironflesh|鐵骨
-skl_ironflesh_desc|每點增加+2點生命值。 (個人技能) 
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

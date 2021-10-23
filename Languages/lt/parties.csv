@@ -20,9 +20,9 @@ p_town_west_emnet|Vakarų Emnetas
 p_town_eastfold|Istfoldas
 p_town_morannon|Moranonas
 p_town_minas_morgul|Juodasis Bokštas
-p_town_cirith_ungol|Orkų patruliavimo stovykla
+; p_town_cirith_ungol|Emyn Muil Watchtower
 p_town_east_osgiliath|Rytų Osgiliatas
-p_town_orc_sentry_camp|Orkų sargybinė stovykla
+; p_town_orc_sentry_camp|Emyn Arnen Sentry
 p_town_isengard|Izengardas
 p_town_urukhai_outpost|Urukų stebėjimo postas
 p_town_urukhai_h_camp|Urukų medžioklės stovykla
@@ -31,7 +31,7 @@ p_town_caras_galadhon|Karas Galadonas
 p_town_cerin_dolen|Cerin Dolenas
 p_town_cerin_amroth|Cerin Amrotas
 p_town_thranduils_halls|Tranduilo Menė
-p_town_woodelf_camp|Miško elfų stovykla
+; p_town_woodelf_camp|Woodelf South Camp
 p_town_woodelf_west_camp|Miško elfų vakarinė stovykla
 p_town_woodsmen_village|Miškinių kaimas
 p_town_beorning_village|Beorningų kaimas
@@ -46,13 +46,13 @@ p_town_khand_camp|Handų stovykla
 p_town_umbar_camp|Korsarų stovykla
 p_town_imladris_camp|Rivendeilo stovykla
 p_town_dol_guldur|Dol Gulduras
-p_town_dol_guldur_north_outpost|Dol Gulduro šiaurės stovykla
+; p_town_dol_guldur_north_outpost|Dol Guldur Road Outpost
 p_town_rhun_main_camp|Pagrindinė Runo stovykla
 p_town_rhun_south_camp|Pietinis Runo stebėjimo postas
 p_town_rhun_north_camp|Šiaurinis Runo stebėjimo postas
 p_town_gundabad|Gundabadas
-p_town_gundabad_ne_outpost|Gundabado šiaurės rytinė stovykla
-p_town_gundabad_nw_outpost|Gundabado šiaurės vakarinė stovykla
+; p_town_gundabad_ne_outpost|Grey Mountains Hold
+; p_town_gundabad_nw_outpost|Grey Mountains Ravine
 p_town_goblin_north_outpost|Goblinų miestelis
 p_town_goblin_south_outpost|Goblinų pietinė stovykla
 p_town_gundabad_m_outpost|Gundabado Mirkvudo stebejimo postas

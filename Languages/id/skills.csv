@@ -35,7 +35,7 @@ skl_riding_desc|memungkinkan Anda untuk menunggang kuda (atau binatang buas lain
 skl_athletics|Atletik
 skl_athletics_desc|Meningkatkan kecepatanmu dalam berlari. (Skill Personal)
 skl_shield|Tameng
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Ahli Senjata
 skl_weapon_master_desc|membuatnya lebih mudah untuk mempelajari keahlian senjata dan meningkatkan batas kemampuan. Batasnya sebagai berikut : 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Skill Personal)
 ; skl_power_draw|Power Draw
@@ -45,4 +45,4 @@ skl_weapon_master_desc|membuatnya lebih mudah untuk mempelajari keahlian senjata
 ; skl_power_strike|Power Strike
 ; skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
 ; skl_ironflesh|Ironflesh
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2. (Personal skill)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

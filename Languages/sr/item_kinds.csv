@@ -144,7 +144,7 @@ itm_arnor_greaves|Arnorske čizme
 itm_arnor_shield_a|Arnorski Štit
 itm_arnor_shield_c|Arnorski Konjanički Štit
 itm_arnor_sword_a|Arnorski lažni mač
-itm_arnor_sword_c|Arnorski lažni mač
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|Arnorski Kratki Mač
 itm_riv_helm_a|Rivendalska Kapa
 itm_riv_helm_b|Kaciga Rivendalskog Strelca
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Kapuljaca rendzera gondora
 itm_gondor_light_greaves|Gondorske kožne čizme
 itm_gondor_med_greaves|Gondorske srednje čizme
 itm_gondor_heavy_greaves|Gondorske verižnačke čizme
-itm_gondor_infantry_helm|Kaciga Gondorske Pešadije
 ; itm_gondor_auxila_helm|Gondor Light Helm
 ; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|Kaciga Strelca Kule
 itm_gondor_leader_helm|Gondorska visoka kaciga
 itm_tower_guard_helm|Kaciga Čuvara Kule
 itm_gondor_citadel_knight_helm|Kaciga Viteza Citadele
+itm_gondor_infantry_helm|Kaciga Gondorske Pešadije
 ; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Kaciga Dol Amrota
 itm_swan_knight_helm|Kaciga Labudovog Viteza
@@ -260,14 +260,14 @@ itm_gondor_sword|Gondorski Pešadinski Mač
 ; itm_pelargir_eket|Pelargir Eket
 itm_pelargir_sword|Pelargirski Mač
 itm_gondor_ranger_sword|Gondorski Rendžerski Mač
-itm_gondor_bastard|Gondorski Bastard Mač
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|Gondorski Mač Citadele
 itm_gondor_cav_sword|Gondorski Konjički mač
 itm_gondor_spear|Gondorsko Koplje
 itm_gondor_tower_spear|Koplje Gondorske Kule
 itm_gondor_lance|Gondorsko Dugo Koplje
-itm_loss_axe|Lozarnaška Borbena Sekira
-itm_loss_war_axe|Lozarnaška Ratna Sekira
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|Lorienski Dugi Mač
 itm_lorien_sword_b|Lorienski Kratki Mač
 itm_lorien_sword_c|Lorienski Ratni Mač
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Izengardski Oklop Orka
 itm_isen_orc_armor_f|Izengardski Oklop Orka
 itm_isen_orc_armor_g|Izengardski Oklop Orka
 itm_isen_uruk_light_a|Uruk-Hai Laki Pojas
-itm_isen_uruk_light_b|Uruk-Hai Kožni Oklop
-itm_isen_uruk_light_c|Uruk-Hai Kožni Oklop
-itm_isen_uruk_light_d|Uruka Hai Kožna Verižnjača
-itm_isen_uruk_light_e|Uruk-Hai Metalni Pojas
-itm_isen_uruk_heavy_a|Uruka Hai Kožna Verižnjača
-itm_isen_uruk_heavy_b|Uruk-Hai Teški Oklop
-itm_isen_uruk_heavy_c|Uruk-Hai Teški Oklop
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|Uruk-Hai Kožni Oklop Tragača
 itm_isen_uruk_heavy_e|Uruk-Hai Kožni Oklop Tragača
 itm_uruk_tracker_boots|Čizme Uruk Tragača

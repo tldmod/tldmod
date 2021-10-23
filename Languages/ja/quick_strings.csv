@@ -91,8 +91,9 @@ qstr_Battle_Formations_an|戦闘陣形とAI:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD FormAI(オリジナル)
 qstr_TLD_New_FormAI|TLD New FormAI
-qstr_Advanced_Siege_AI:__|高度な攻城戦AI:
-qstr_On|オン
+qstr_Siege_AI:__|攻城戦AI:  
+qstr_Basic__better_perfor|標準(低負荷)
+qstr_Advanced|高度
 qstr_Town_NPCs_Always_Acc|メニューから拠点のNPCにアクセス:
 qstr_Cutscenes:__|カットシーン:
 qstr_Injuries_for_compani|コンパニオンの負傷:
@@ -106,9 +107,9 @@ qstr_Player_damage_only|プレイヤーのみ
 qstr_All_Messages|すべてのメッセージ
 qstr_Troop_Identifier_in_|戦場における兵の識別(戦闘時にYを押すと切り替え):
 qstr_Disable|無効
-qstr_Enable_without_Facti|有効、勢力名なし
-qstr_Enable_with_Faction_|有効、勢力名あり
-qstr_Simple:_Red___Enemy_|簡易:赤 - 敵勢 / 緑 - 友軍
+qstr_Troop_Names|兵のラベル
+qstr_Simple:_Faction_Colo|簡易: 所属勢力ごとに色分け
+qstr_Simple:_Black___Enem|簡易: 敵-黒色/味方-白色
 qstr_Preferred_Camera_Mod|優先するカメラモード:
 qstr_Default_Camera|標準
 qstr_Free_Mode_Custom_Cam|カスタムカメラのフリーモード
@@ -184,13 +185,17 @@ qstr_+20_to_Party_Morale|パーティの士気に+20
 qstr_+1_to_Riding_Skill|乗馬スキルに+1
 qstr_during_battles|(戦闘中のみ)
 qstr_+1_to_Pathfinding|経路探索スキルに+1
-qstr_+1_to_Athletics|アスレチックスキルに+1
-qstr_+1_to_Wound_Treatmen|治療スキルに+1
+qstr_+2_to_Wound_Treatmen|治療スキルに+2(パーティ)
+qstr_+2_to_Surgery__Party|手術スキルに+2(パーティ)
+qstr_+2_to_Pathfinding__P|経路探索スキルに+2(パーティ)
 qstr_Use_from_Camp_Menu|キャンプメニューから使用します
 qstr_Use_from|このアイテムは
 qstr_Action_Menu|アクションメニューから使用します
-qstr_+1_to_First_Aid|応急手当てスキルに+1
+qstr_Bonus_to_Wound_Treat|治療スキルにボーナス(パーティ)
+qstr_Bonus_to_Surgery__Pa|手術スキルにボーナス(パーティ)
+qstr_Bonus_to_First_Aid__|応急手当てスキルにボーナス(パーティ)
 qstr_+1_to_Weapon_Mastery|武器熟練スキルに+1
+qstr_+1_to_Wound_Treatmen|治療スキルに+1
 qstr_+1_to_Tactics|戦略スキルに+1
 qstr_+1_to_Power_Strike|強打スキルに+1
 qstr_+1_to_Strength|体力に+1
@@ -198,6 +203,7 @@ qstr_+1_to_Agility|敏捷性に+1
 qstr_+1_to_Leadership|統率力スキルに+1
 qstr_+1_to_Wildcraft|ワイルドクラフトに+1
 qstr_+1_to_Tracking|追跡術に+1
+qstr_+1_to_Athletics|アスレチックスキルに+1
 qstr_when_equipped|(要装備)
 qstr_+1_to_Power_Draw|弓術スキルに+1
 qstr_The_record_of_Balin_|失踪したバーリン一団の記録。
@@ -212,6 +218,9 @@ qstr_rally|檄の回数
 qstr_rallies|檄の回数
 qstr_+{reg1}_{s3}_in_batt|戦場で{s3}に+{reg1}
 qstr_+1_to_Charisma|魅力に+1
+qstr_Call_Reinforcements|増援を呼ぶ
+qstr__Effect_scales_with_|(効果は体力と魅力に依存)
+qstr_+1_to_First_Aid|応急手当てスキルに+1
 qstr_+1_to_Surgery|手術スキルに+1
 qstr_+1_to_Intelligence|知性に+1
 qstr_+2_to_Surgery|手術スキルに+2
@@ -225,6 +234,8 @@ qstr_+2_to_Tactics|戦術スキルに+2
 qstr_+1_Intelligence|知性に+1
 qstr_+{reg1}_to_Spotting|観測術に+{reg1}
 qstr__Scales_with_Wildcra|(効果はワイルドクラフトのスキルに比例)
+qstr_Strengthens_all_Hero|プレーヤーとすべてのコンパニオンを強化
+qstr_+2_to_First_Aid__Par|応急手当てスキルに+2(パーティ)
 qstr_+1_to_Power_Throw|豪投に+1
 qstr_+1_to_Spotting|観測術に+1
 qstr_Less_Dunnish_upkeep|褐色人の維持費が低下
@@ -243,6 +254,7 @@ qstr_Good|良
 qstr_Med|平凡
 qstr_Bad|悪
 qstr_You_gained_{reg84}_e|知力により、{reg84}の経験値を獲得しました。
+qstr_You_gained_{reg84}_w|敏捷性により、{reg84}の武器ポイントを獲得しました。
 qstr_{reg4}_killed_{reg5}|{reg4}名死亡、{reg5}名負傷、{reg6}名離脱
 qstr_{reg4}_killed_{reg5}_|{reg4}名死亡、{reg5}名負傷
 qstr_{reg4}_killed_{reg5}_r|{reg4}名死亡、{reg5}名離脱
@@ -785,6 +797,16 @@ qstr_Drive_them_back!|やつらを追い払え！
 qstr_Protect_the_City!|町を守れ！
 qstr_Forward!_Board_them!|進め！敵艦へ切り込め！
 qstr_The_Last_Days_of_the_|The Last Days of the Third AgeはNativeとは大きく異なる、高度な攻城戦AIを採用しています。 すべてのユニットは左翼、右翼、中央に振り分けられます。 攻撃側のプレーヤーはいくらかの自分の兵に指示を出す事ができます。
+qstr_on_the_left_flank|左翼より攻撃します
+qstr_on_the_right_flank|右翼より攻撃します
+qstr_through_the_center|中央より攻撃します
+qstr_Attackers_charge_{s2|攻撃側の軍勢は{s2}を
+qstr_Attackers_charge_{s1|攻撃側の軍勢は{s1}を
+qstr_{s1}_rallied_to_your|あなたの魅力の力によって{s1}が味方の軍勢に檄を飛ばしました。
+qstr_Last_attacker_wave._|攻撃側の最後の攻撃です。退却しますか？
+qstr_Attackers_almost_def|攻撃側は敗北寸前です。退却しますか？
+qstr_The_remaining_attack|攻撃側の残存兵は散り散りになっています！
+qstr_The_remaining_defend|守備側の残存兵は持ち場を放棄して逃げています！
 qstr_Reached_Gauntlet_wav|ガントレット第{reg1}波が来ました！
 qstr_Ballista:_out_of_amm|投石器:弾切れです！
 qstr_Ballista:_turn_CURSO|投石器:カーソルキーで旋回、 左SHIFTで照準、 スペースで発射、 Tで着火、 Fで離脱
@@ -981,7 +1003,7 @@ qstr_As_a_last_defensive_|あなたは城内の大広間へ撤退し、 最後�
 qstr_You_ve_been_driven_a|城壁は敵の手に落ちました。 寄せ手は砦の敷地内へなだれ込んでいます。 もしここで寄せ手を食い止められれば、 まだ戦いの流れを変える事ができるかも知れません。
 qstr_You_ve_breached_the_|城壁を突破されたにもかかわらず、 守備兵は敷地内でしぶとく抵抗を続けています！ 本丸を落とすまえに、 この連中を一掃しなければなりません。
 qstr_The_town_centre_is_y|拠点の中心部を制圧しましたが、 まだ城内へ退却した守備兵が残っています。 勝利を完全なものとするためには、 最後の砦も落とさなければなりません。
-qstr_The_remaining_defend|残った守備兵は、 最後の抵抗をするために 城内へと退却しました。 彼らの後を追い、 息の根を止めなくてはなりません。
+qstr_The_remaining_defend|守備側の残存兵は持ち場を放棄して逃げています！
 qstr_However_since_you_ar|しかしながら、 あなたは{s9}に忠誠を誓った臣下ではないため、 あなたをこの{reg8?町:城}の領主として 承認する事はないでしょう。
 qstr_The_enemy_has_been_f|敵は撤退を余儀なくされました。 攻撃は止みましたが、 まだ包囲は解かれていません。
 qstr_The_assasins_beat_yo|暗殺者はあなたを倒し、 息絶えていくあなたを放置しました。
@@ -1457,13 +1479,14 @@ qstr_{s9}_has_asked_you_to|{s9}より、 {reg1}名の捕虜救出を依頼され
 qstr_We_have_reports_that_a|敵部隊が{s13}に 集結している可能性があるとの報告を受けた。 敵勢の規模がわからない以上、 これは当然の事ながら私にとって重大な懸念だ。 おぬしには充分な距離まで{s13}に接近し、 出来る限りの情報収集をしてもらいたい。
 qstr_My_spies_tell_me_of_|間者からの報告によると、 {s13}に大規模な戦士の一団が集結しているらしい。 やつらなど我が軍の敵ではないが、 敵勢の数くらいは把握しておかねばならん。 おぬしには充分な距離まで{s13}に接近し、 できるかぎりの情報を収集してもらいたい。
 qstr_{s9}_asked_you_to_sco|{s9}より、 {s13}一帯を偵察するよう依頼された。
-qstr_We_have_reports_of_s|{s13}付近で敵が活動中との報告を受けた。 我々の偵察隊は、 具体的に何が行われているのかを 確認できる位置まで接近できていないようだ。 おぬしには偵察隊を編成し、 {s13}に充分接近した位置から その偵察隊を放ってもらいたい。
-qstr_My_spies_tell_me_the|{s13}付近で敵が活動中との報告を間者から受けた。 腰抜けの偵察隊どもは、 それ以上の情報が得られる位置まで接近できていないようだ。 おぬしには独自に偵察隊を編成し、 {s13}に充分接近した位置に その偵察隊を放ってもらいたい。 偵察隊がすぐに逃げ出さないように、念を押すのだ！
+qstr_We_have_reports_of_s|{s13}付近で敵勢がなんらかの活動を しているとの報告を受けた。 我々の偵察隊は、 具体的に何が行われているのかを 確認できる位置まで接近できないようだ。 おぬしには偵察隊を編成し、 {s13}に充分接近した位置から その偵察隊を放ってもらいたい。 数名の兵をおぬしの部隊に加わるように手配しておくが、 彼らだけで任務に当たらせてはならぬぞ。
+qstr_My_spies_tell_me_the|{s13}付近で敵勢がなんらかの活動を しているとの報告を間者から受けた。 腰抜けの偵察隊どもは、 それ以上の情報が得られる位置まで接近できないようだ。 おぬしには独自に偵察隊を編成し、 {s13}に充分接近した位置に その偵察隊を放ってもらいたい。 偵察隊がすぐに逃げ出さないように、念を押すのだ！ 数名の兵をおぬしの部隊に加わるよう手配してやろう。 好きに使うがよい。
 qstr_{s9}_asked_you_to_di|{s13}付近に偵察隊を放つよう、 {s9}に頼まれた。^少なくとも1名の{s14}を含む {reg1}名の{s15}の兵を用意し、 {s13}にじゅうぶんな距離まで接近してから {s14}に指示を出して偵察隊を放とう。
 qstr_We_need_to_take_the_|{playername}、 戦いはこちらから仕掛けなくてはならない。 現時点で考えられるのは、 敵の偵察隊と連絡網を叩くことだ。 おぬしには{s13}を{reg1}部隊、 潰してもらいたい。 これで我が軍が主導権を奪い返すことができる。
 qstr_We_need_to_grind_dow|{playername}、 我々は役立たずの敵勢を 粉々にすり潰してやらねばならん。 やつらの偵察隊や補給隊どもが 我々の目と鼻の先をうろうろしておるのは気にさわる。 おぬしには{s13}を{reg1}部隊潰し、 やつらに恐怖というものを教えてやってもらいたい。
 qstr_{s9}_asked_you_to_el|{s9}より、 {s13}を{reg1}部隊壊滅させるよう、 依頼された。
 qstr_{s9}_asked_you_to_fr|{s9}より、 {s13}郊外で暴れるトロルの脅威から、 町を開放するよう頼まれた。
+qstr_{reg1}_{s16}_joined_|あなたのパーティに{reg1}名の{s16}が加わりました。
 qstr_the_Dwarves_so_that_|ドワーフの間で使われている通貨だから、 もしエレボールかくろがね連山の近くを通ることがあるなら、 名高いドワーフの武器を手に入れるといい
 qstr_Gondor_so_that_if_yo|ゴンドールで使われている通貨だから、 もし領内を通ることがあるなら、 彼らの有名な防具を手に入れるといい
 qstr_Rohan_so_that_if_you|ローハンで使われている通貨だから、 もし領内を通ることがあるなら、 彼らの名高い馬を手に入れるといい
@@ -1549,8 +1572,8 @@ qstr_Good_moves_but_you_m|なかなかすじがよろしいが、 さらなる�
 qstr_More_than_half_of_th|対戦相手の半数以上は倒しましたな。 悪くない。
 qstr_You_ll_need_to_try_h|あなたなら、もっともっと出来るはずですよ。
 qstr_Well..._better_here_|まあ・・・ やっと訓練が終わって、やれやれ、 という感じでしょうかね？
-qstr_We_ve_been_sent_by_L|{s3}の命によって参上した。我が部隊を戦力としてほしい。
-qstr_Lord_{s3}_has_sent_u|{s4}襲撃作戦に参加するため、 {s3}の命によって参上した。
+qstr_We_ve_been_sent_by_{|{s3}殿の命を受け、 我々はこのたびの戦の戦力となるため参上した。
+qstr_{s3}_has_sent_us_to_|{s3}殿の命を受け、 我々は{s4}襲撃の船に乗るため参上した。
 qstr_Excellent_{playernam|素晴らしいぞ、{playername}！ 私の要望した以上の貢献をしてくれたそうだな！ 賞賛に値する働きだ。^^さあ、これは私の期待を大きく上回ってくれた事に対する特別報酬だ、 受け取ってくれ。^^この調子ならば、 この戦争における我々の勝利は近いだろう。
 qstr_Excellent_{playername|素晴らしいぞ、{playername}。 これで彼らを大いに助ける事になる。 この調子ならば、 この戦争における我々の勝利は近いだろう。
 qstr_Reinforcing_{s1}_has|{s1}が増強された事によって、{s2}の士気が高まりました({s2}の勢力ポイントが{reg50}上がりました)。

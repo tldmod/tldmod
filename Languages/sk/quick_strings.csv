@@ -91,8 +91,9 @@ qstr_Battle_Formations_an|Bojové formácie a AI:
 qstr_Native|Pôvodný
 qstr_TLD_FormAI__Original|TLD FormAI (originál)
 qstr_TLD_New_FormAI|TLD Nová FormaAI
-qstr_Advanced_Siege_AI:__|Rozšírené obliehanie AI:
-qstr_On|Povolené
+; qstr_Siege_AI:__|Siege AI:  
+; qstr_Basic__better_perfor|Basic (better performance)
+; qstr_Advanced|Advanced
 qstr_Town_NPCs_Always_Acc|Mestské NPC vždy dostupné z menu:
 qstr_Cutscenes:__|Filmové scény:
 qstr_Injuries_for_compani|Zranenia spoločníkov:
@@ -106,9 +107,9 @@ qstr_Player_damage_only|Iba poškodenie hráča
 qstr_All_Messages|Všetky správy
 qstr_Troop_Identifier_in_|Identifikátor vojakov v bitkách (stlačte tlačidlo Y počas bitky pre zobrazenie/skrytie):
 qstr_Disable|Zakázať
-qstr_Enable_without_Facti|Povoliť bez názvov Frakce 
-qstr_Enable_with_Faction_|Povoliť s názvami Frakcií
-qstr_Simple:_Red___Enemy_|Jednoduché: Červené - Nepriateľ / Zelená - Spojenci
+; qstr_Troop_Names|Troop Names
+; qstr_Simple:_Faction_Colo|Simple: Faction Colors
+; qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
 qstr_Preferred_Camera_Mod|Preferovaný režim Kamery 
 qstr_Default_Camera|Základná kamera
 qstr_Free_Mode_Custom_Cam|Voľný režim vlastnej kamery 
@@ -184,13 +185,17 @@ qstr_+20_to_Party_Morale|+20 k morálke družiny
 qstr_+1_to_Riding_Skill|+1 k jazdectvu
 qstr_during_battles|behom bojov
 qstr_+1_to_Pathfinding|+1 k Cestovaniu
-qstr_+1_to_Athletics|+1 k Atletike
-qstr_+1_to_Wound_Treatmen|+1 k Liečeniu zranení
+; qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
+; qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
+; qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
 qstr_Use_from_Camp_Menu|Použi z menu tábora
 qstr_Use_from|Použiť z
 qstr_Action_Menu|Menu činností
-qstr_+1_to_First_Aid|+1 k Prvej pomoci
+; qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
+; qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
+; qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
 qstr_+1_to_Weapon_Mastery|+1 k Majstrovi zbrane
+qstr_+1_to_Wound_Treatmen|+1 k Liečeniu zranení
 qstr_+1_to_Tactics|+1 k Taktike
 qstr_+1_to_Power_Strike|+1 k Mocnému úderu
 qstr_+1_to_Strength|+1 k Sile
@@ -198,6 +203,7 @@ qstr_+1_to_Agility|+1 k Obratnosti
 qstr_+1_to_Leadership|+1 k Vodcovstvu
 qstr_+1_to_Wildcraft|+1 k Lesníctvu
 qstr_+1_to_Tracking|+1 k Stopovaniu
+qstr_+1_to_Athletics|+1 k Atletike
 qstr_when_equipped|pokiaľ je nasadené
 qstr_+1_to_Power_Draw|+1 k Silnému napnutiu
 qstr_The_record_of_Balin_|Kronika Balinovej stratenej výpravy.
@@ -212,6 +218,9 @@ qstr_rally|vyburcovať
 qstr_rallies|inšpiruje
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} v boji
 qstr_+1_to_Charisma|+1 k Charizme
+; qstr_Call_Reinforcements|Call Reinforcements
+; qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
+qstr_+1_to_First_Aid|+1 k Prvej pomoci
 qstr_+1_to_Surgery|+1 k Chirurgii
 qstr_+1_to_Intelligence|+1 k Inteligencii
 qstr_+2_to_Surgery|+2 k Chirurgii
@@ -225,6 +234,8 @@ qstr_+2_to_Tactics|+2 k Taktike
 qstr_+1_Intelligence|+1 k Inteligencii
 qstr_+{reg1}_to_Spotting|+{reg1} k Ostražitosti
 qstr__Scales_with_Wildcra|(zvyšuje sa spolu s Lesníctvom)
+; qstr_Strengthens_all_Hero|Strengthens all Heroes
+; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
 qstr_+1_to_Power_Throw|+1 k Mocnému vrhu
 qstr_+1_to_Spotting|+1 k Ostražitosti
 qstr_Less_Dunnish_upkeep|Menší žold Vrchovcov
@@ -243,6 +254,7 @@ qstr_Good|Dobrý
 qstr_Med|Stredný
 qstr_Bad|Zlý
 qstr_You_gained_{reg84}_e|Získal si {reg84} skúseností vďaka svojej inteligencii
+; qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
 qstr_{reg4}_killed_{reg5}|{reg4} mŕtvych, {reg5} ranených, {reg6} zbehlo 
 qstr_{reg4}_killed_{reg5}_|{reg4} mŕtvych, {reg5} ranených
 qstr_{reg4}_killed_{reg5}_r|{reg4} mŕtvych, {reg5} zbehlo
@@ -785,6 +797,16 @@ qstr_Drive_them_back!|Zažeňte ich späť!
 qstr_Protect_the_City!|Bráňte mesto!
 qstr_Forward!_Board_them!|Vpred! Veďte ich!
 ; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
+; qstr_on_the_left_flank|on the left flank
+; qstr_on_the_right_flank|on the right flank
+; qstr_through_the_center|through the center
+; qstr_Attackers_charge_{s2|Attackers charge {s2}
+; qstr_Attackers_charge_{s1|Attackers charge {s1}
+; qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
+; qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
+; qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
+; qstr_The_remaining_attack|The remaining attackers disperse!
+; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_Reached_Gauntlet_wav|Dorazila vyzývateľská skupina {reg1}!
 qstr_Ballista:_out_of_amm|Balista: došla munícia!
 qstr_Ballista:_turn_CURSO|Balista: otáčanie KURZOROM, mierenie ĽSHIFT, strieľanie MEDZERNÍK, zapáliť T, ukončiť F
@@ -981,7 +1003,7 @@ qstr_As_a_last_defensive_|V obrannom manévre si sa stiahol do hlavnej siene pev
 qstr_You_ve_been_driven_a|Nepriatelia dobili hradby, boli ste zatlačený do ulíc, kde ich musíš poraziť. Ešte stále môžeš uspieť v obrane, odraziť útok a zvíťaziť.
 qstr_You_ve_breached_the_|Prelomil si mestské hradby, ale nepoddajní obrancovia vám stále kladú v uliciach odpor. Musíš sa s nimi vysporiadať ešte pred tým, než zaútoč na hlavnú pevnosť uprostred mesta.
 qstr_The_town_centre_is_y|Centrum mesta je tvoje, ale zvyšní obrancovia sa stiahli do hradu. Ak chceš zvíťaziť, hrad musí padnúť.
-qstr_The_remaining_defend|Zvyšní obrancovia sa stiahli späť do hradu - poslednej obrany. Musíš tam vraziť a zdolať posledný odpor.
+; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_However_since_you_ar|Tak či onak, keďže nie si prísažným {služobníkom/stúpencom} {s9}a, je nepravdepodobné, že ťa bude považovať za {Pána/Paniu} tohto {reg8?mesta:hradu}.
 qstr_The_enemy_has_been_f|Nepriateľ bol nútený ustúpiť. Je dobojované, ale obliehanie pokračuje.
 qstr_The_assasins_beat_yo|Nájomný vrahovia ťa dobili a nechali napospas smrti.
@@ -1457,13 +1479,14 @@ qstr_{s9}_has_asked_you_to|{s9} chce, aby si zachránil oslobodil {reg1} zajatco
 qstr_We_have_reports_that_a|Dostali sme správy, že nepriatelia sa zhromažďujú v {s13}. Takáto správa mi je však nanič, pokiaľ neviem, koľko majú ozbrojencov a či my budú moji muži proti nim stačiť na bojovom poli. Chcem, aby si sa dostal čo najbližšie k {s13} a zistil všetko, čo budeš môcť.
 qstr_My_spies_tell_me_of_|Moji zvedovia ma upozornili, že sa v {s13} zhromažďuje veľká skupina bojovníkov. Nemala by to byť pre nás a našich služobníkov žiadna výzva, ale neuškodilo by poznať nepriateľské počty. Chcem, aby si sa dostal čo najbližšie k {s13} a zistil čo najviac.
 qstr_{s9}_asked_you_to_sco|{s9} ťa požiadal, aby si preskúmal okolie {s13}.
-qstr_We_have_reports_of_s|Dostali sme správy o nepriateľskej aktivite neďaleko {s13}. Naši prieskumníci zatiaľ neuspeli v dostatočnom preskúmaní oblasti a pohyboch nepriateľa. Chcem, aby si zostavil prieskumnícku skupinu, dostal sa do blízkosti {s13} a vysadil ju.
-qstr_My_spies_tell_me_the|Moje špehúňske krysy vravia, že nepriatelia niečo chystajú v {s13}. Ale tie zbabelé prieskumnícke červy sa nedostali dosť blízko a tak nič viac nevieme. Chcem, aby si vystrojil skupinu zvedov, dostal sa do blízkosti {s13} a vysadil ich tam. A dohliadni na to, aby nevzali nohy na ramena!
+; qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts. I will also give you a few recruits, but you should not send them out on their own.
+; qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee! I will give you these recruits, they won't be missed.
 qstr_{s9}_asked_you_to_di|{s9} ťa požiadal, aby si vyslal skupinu prieskumníkov neďaleko miesta {s13}.^Získaj {reg1} vojakov {s15}, z ktorých bude aspoň jeden {s14}, dostaň sa neďaleko {s13}u a porozprávaj sa s {s14}om, aby si skupinu vyslal.
 qstr_We_need_to_take_the_|Potrebujeme dostať nepriateľa na bojové pole, {playername}. Avšak momentálne sa zameriavame na ich hliadky a stráže na cestách. Chcem, aby si rozdrvil {reg1} {s13} skupín. Pomohlo by nám to opäť získať výhodu v počtoch.
 qstr_We_need_to_grind_dow|Potrebujeme už konečne rozdrviť našich ubohých nepriateľov, {playername}. Ich hliadky a zásobovacie vozy sú na môj vkus príliš smelé. Chcem, aby si zmasakroval {reg1} {s13} skupín, aby so strachom čakali na to, čo ich čaká.
 qstr_{s9}_asked_you_to_el|{s9} chce, aby si eliminoval {reg1} {s13} skupín.
 qstr_{s9}_asked_you_to_fr|{s9} chce, aby si zbavil {s13} nebezpečného zlobra, ktorý vyčíňa v tých krajoch.
+; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
 qstr_the_Dwarves_so_that_|Trpaslíci, pokiaľ budeš prechádzať cez Erebor alebo Železné hory, môžeš sa vyzbrojiť v preslávených trpasličích zbrojniciach.
 qstr_Gondor_so_that_if_yo|Gondor, pokiaľ budeš prechádzať týmto prastarým kráľovstvom, môžeš si skúsiť zaobstarať jedno z ich preslávených brnení vysokej kvality.
 qstr_Rohan_so_that_if_you|Rohan, pokiaľ budeš prechádzať touto krajinou, skús si kúpiť koňa z jedného zo slávnych plemien.
@@ -1549,8 +1572,8 @@ qstr_Good_moves_but_you_m|Pekné pohyby, ale stále máš na čom pracovať.
 qstr_More_than_half_of_th|Viac než polovica oponentov, to nie je zlé.
 qstr_You_ll_need_to_try_h|Budeš sa musieť snažiť viac.
 qstr_Well..._better_here_|Nuž... lepšie tu než v ozajstnom boji, eh?
-qstr_We_ve_been_sent_by_L|Posiela nás Lord {s3}. Prichádzame za účelom spojiť naše spoločné sily.
-qstr_Lord_{s3}_has_sent_u|Lord {s3} nás poslal, aby sme sa pridali k flotile útočiacej na {s4}.
+; qstr_We_ve_been_sent_by_{|We've been sent by {s3}. We have come to join our strength to yours.
+; qstr_{s3}_has_sent_us_to_|{s3} has sent us, to join the fleet attacking {s4}.
 qstr_Excellent_{playernam|Skvele, {playername}! Dopočul som sa, že si im dal na frak viac, než som od teba žiadal. Výborná práca.^^ Tu máš, prijmi túto mimoriadnu odmenu za prevýšenie našich očakávaní. ^^ Potrebujeme v tejto vojne zvíťaziť čo najskôr.
 qstr_Excellent_{playername|Výborne, {playername}. To nám určite poslúži. potrebujeme v tejto vojne zvíťaziť čo najskôr.
 qstr_Reinforcing_{s1}_has|Posilnenie {s1} zvýšilo moc {s2}u. ({s2} získal {reg50} Bodov Frakčnej Sily).

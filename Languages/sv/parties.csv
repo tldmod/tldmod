@@ -20,9 +20,9 @@ p_town_west_emnet|Västra Emnet
 p_town_eastfold|Eastfold
 p_town_morannon|Morannon
 p_town_minas_morgul|Minas Morgul
-p_town_cirith_ungol|Orkpatrull-läger
+; p_town_cirith_ungol|Emyn Muil Watchtower
 p_town_east_osgiliath|Östra Osgiliath
-p_town_orc_sentry_camp|Orcvaktsläger
+; p_town_orc_sentry_camp|Emyn Arnen Sentry
 p_town_isengard|Isengård
 p_town_urukhai_outpost|Uruk Hai Utpost
 p_town_urukhai_h_camp|Uruk Hai Jaktläger
@@ -31,7 +31,7 @@ p_town_caras_galadhon|Caras Galadhon
 p_town_cerin_dolen|Cerin Dolen
 p_town_cerin_amroth|Cerin Amroth
 p_town_thranduils_halls|Thranduils Hallar
-p_town_woodelf_camp|Skogsalvsläger
+; p_town_woodelf_camp|Woodelf South Camp
 p_town_woodelf_west_camp|Skogsalv Väst Läger
 p_town_woodsmen_village|Skogsmänby
 p_town_beorning_village|Beorningby
@@ -46,13 +46,13 @@ p_town_khand_camp|Khandläger
 p_town_umbar_camp|Corsairläger
 p_town_imladris_camp|Rivendell-Läger
 p_town_dol_guldur|Dol Guldur
-p_town_dol_guldur_north_outpost|Dol Guldur Norra Utpost
+; p_town_dol_guldur_north_outpost|Dol Guldur Road Outpost
 p_town_rhun_main_camp|Rhun Huvudläger
 p_town_rhun_south_camp|Rhun Södra Utpost
 p_town_rhun_north_camp|Rhun Norra Utpost
 p_town_gundabad|Gundabad
-p_town_gundabad_ne_outpost|Gundabad NÖ Utpost
-p_town_gundabad_nw_outpost|Gundabad NV Utpost
+; p_town_gundabad_ne_outpost|Grey Mountains Hold
+; p_town_gundabad_nw_outpost|Grey Mountains Ravine
 p_town_goblin_north_outpost|Vätt-torn
 p_town_goblin_south_outpost|Vätte Södra Utpost
 ; p_town_gundabad_m_outpost|Gundabad Mirkwood Outpost

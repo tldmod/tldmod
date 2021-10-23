@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(Nem fejleszthetsz amíg egységeket adsz át)
 ui_lance_control|Kopja irányítás:
 ui_manual_easy|Kézi (Könnyű)
 ui_manual_hard|Kézi (Nehéz)
-ui_campaign_ai|Kampány MI (Használaton kívül)
+; ui_campaign_ai|Campaign Difficulty (Default: Average):
 ui_crouch|Gugolás
 
 # swy: added from this spreadsheet, as requested by our translators:

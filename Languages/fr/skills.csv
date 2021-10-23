@@ -35,7 +35,7 @@ skl_riding_desc|Permet au personnage de monter des chevaux plus fougueux et augm
 skl_athletics|Athlétisme
 skl_athletics_desc|Améliore la vitesse de course du personnage. (Compétence personnelle)
 skl_shield|Bouclier
-skl_shield_desc|Réduit les dégâts infligés au bouclier du personnage (de 8%% par niveau de compétence) et améliore leur vitesse et leur couverture. (Compétence personnelle)
+skl_shield_desc|Réduit les dégâts aux boucliers (de 8 %% par niveau de compétence), augmente leur vitesse et leur couverture, réduit la pénalité sur les boucliers quand ils sont utilisés avec des arcs. (Compétence personnelle)
 skl_weapon_master|Maître d'armes
 skl_weapon_master_desc|Rend plus facile l'apprentissage et augmente la limite de maîtrise des armes. Les limites augmentent ainsi : 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Compétence personnelle)
 skl_power_draw|Puissance de tension
@@ -45,4 +45,4 @@ skl_power_throw_desc|Chaque point investi dans cette compétence augmente les d�
 skl_power_strike|Puissance de frappe
 skl_power_strike_desc|Chaque point investi dans cette compétence augmente les dégâts en mêlée de 8 %%. (Compétence personnelle)
 skl_ironflesh|Vigueur
-skl_ironflesh_desc|Chaque point investi dans cette compétence augmente les points de vie de 2. (Compétence personnelle)
+skl_ironflesh_desc|Chaque point investi dans cette compétence augmente de 2 les points de vie et vous permet d'encaisser certains dégâts sans être blessé. (Compétence personnelle)

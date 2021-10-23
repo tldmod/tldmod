@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(給 予 士 兵 時 無 法 升 級 )
 ui_lance_control|騎 槍 控 制:
 ui_manual_easy|手 動 (簡 單)
 ui_manual_hard|手 動 (困 難)
-ui_campaign_ai|戰 略 人 工 智 慧 (未 使 用):
+; ui_campaign_ai|Campaign Difficulty (Default: Average):
 ui_crouch|蹲 下
 
 # swy: added from this spreadsheet, as requested by our translators:

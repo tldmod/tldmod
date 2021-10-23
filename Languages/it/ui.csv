@@ -806,13 +806,13 @@ ui_notification_cant_upgrade|(Non si possono fare promozioni mentre è in corso 
 ui_lance_control|Controllo Lancia:
 ui_manual_easy|Manuale (Facile)
 ui_manual_hard|Manuale (Difficile)
-ui_campaign_ai|IA Campagna:
+ui_campaign_ai|Difficoltà Campagna (Default: Media):
 ui_crouch|Accucciarsi
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Vuoi davvero importare il personaggio ?
-ui_explanation_strength|Forza: Ogni punto aggiunge +1 ai punti ferita. Le seguenti abilità non possono essere sviluppate oltre 1/3 della Forza: Resistenza, Potenza d'attacco, Potenza di lancio, Potenza di tiro.
+ui_explanation_strength|Forza: Ogni punto aggiunge +1 ai Punti Salute. Le seguenti abilità non possono essere sviluppate oltre 1/3 della Forza: Resistenza, Potenza d'attacco, Potenza di lancio, Potenza di tiro.
 ui_explanation_intelligence|Intelligenza: Ogni punto d'Intelligenza fornisce immeidiatamente un punto abilità extra, e accresce leggermente il guadagno di esperienza in determinate occasioni. Le abilità seguenti non possono essere sviluppate oltre 1/3 rispetto all'intelligenza: Addestramento, Seguire Tracce, Tattica, Orientamento, Avvistamento, Gestione Inventario, Trattamento Ferite, Chirurgia e Primo Soccorso.
 ui_explanation_charisma|Carisma: Ogni punto incrementa il limite di grandezza della tua compagnia di +1. Le seguenti abilità non possono essere sviluppate oltre 1/3 rispetto al Carisma: Gestione Prigionieri, Mimetismo, Comando, Commercio.
 ui_delivered_number_damage|Hai inflitto %d danni.

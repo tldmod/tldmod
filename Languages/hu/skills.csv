@@ -35,7 +35,7 @@ skl_riding_desc|Engedélyezi hogy magasabb szintű lovakat (és más bestiákat)
 skl_athletics|Atlétika
 skl_athletics_desc|Növeli a futósebességet. (Személyes képesség)
 skl_shield|Pajzshasználat
-skl_shield_desc|Csökkenti a pajzsokat ért sebzést (8%% egységnyivel per képesség szint) és növeli a pajzs felemelési sebességét és lefedési mértékét. (Személyes képesség)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Fegyvermester
 skl_weapon_master_desc|Könnyebbé teszi azt, hogy fegyverjártasságot tanulj és megnöveli a jártassági határokat. A határok a következőek: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Személyes képesség)
 skl_power_draw|Feszítési erő
@@ -45,4 +45,4 @@ skl_power_throw_desc|A képesség minden pontja növeli a dobási sebzést  10%%
 skl_power_strike|Csapási erő
 skl_power_strike_desc|A képesség minden pontja növeli a közelharci sebzést 8%%egységnyivel. (Személyes képesség)
 skl_ironflesh|Acéltest
-skl_ironflesh_desc|Minden pont növeli a maximális életerőt 2-vel. (Személyes képesség)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

@@ -144,7 +144,7 @@ itm_arnor_greaves|Beinschienen aus Arnor
 itm_arnor_shield_a|Schild aus Arnor
 itm_arnor_shield_c|Arnorischer Reiterschild
 itm_arnor_sword_a|Bastardschwert aus Arnor
-itm_arnor_sword_c|Bastardschwert aus Arnor
+itm_arnor_sword_c|Kriegsschwert aus Arnor
 itm_arnor_sword_f|Kurzschwert aus Arnor
 itm_riv_helm_a|Kettenhaube aus Bruchtal
 itm_riv_helm_b|Schützenhelm aus Bruchtal
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Waldläuferkapuze aus Gondor
 itm_gondor_light_greaves|Lederbeinschienen aus Gondor
 itm_gondor_med_greaves|Mittlere Beinschienen aus Gondor
 itm_gondor_heavy_greaves|Kettenbeinschienen aus Gondor
-itm_gondor_infantry_helm|Schwerer Soldatenhelm aus Gondor
 itm_gondor_auxila_helm|Leichter Helm aus Gondor
 itm_gondorian_archer_helm|Schützenhelm aus Gondor
 itm_tower_archer_helm|Schützenhelm der Turmwache
 itm_gondor_leader_helm|Hauptmannshelm von Gondor
 itm_tower_guard_helm|Helm der Turmwache
 itm_gondor_citadel_knight_helm|Helm der Ritter der Veste
+itm_gondor_infantry_helm|Schwerer Soldatenhelm aus Gondor
 itm_gondor_knight_helm|Reiterhelm aus Gondor
 itm_gondor_dolamroth_helm|Helm aus Dol Amroth
 itm_swan_knight_helm|Helm der Schwanenritter
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Eket aus Linhir
 itm_pelargir_eket|Eket aus Pelargir
 itm_pelargir_sword|Schwert aus Pelargir
 itm_gondor_ranger_sword|Waldläuferschwert aus Gondor
-itm_gondor_bastard|Bastardschwert aus Gondor
+itm_gondor_2h_sword|Kriegsschwert aus Gondor
 itm_gondor_citadel_sword|Zitadellenschwert aus Gondor
 itm_gondor_cav_sword|Reiterschwert aus Gondor
 itm_gondor_spear|Speer aus Gondor
 itm_gondor_tower_spear|Turmspeer aus Gondor
 itm_gondor_lance|Lanze aus Gondor
-itm_loss_axe|Kampfaxt aus Lossarnach
-itm_loss_war_axe|Kriegsaxt aus Lossarnach
+itm_loss_axe|Kampfaxt aus Gondor
+itm_loss_war_axe|Kriegsaxt aus Gondor
 itm_lorien_sword_a|Langschwert aus Lorien
 itm_lorien_sword_b|Kurzschwert aus Lorien
 itm_lorien_sword_c|Kriegsschwert aus Lorien
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Orkrüstung aus Isengart
 itm_isen_orc_armor_f|Orkrüstung aus Isengart
 itm_isen_orc_armor_g|Orkrüstung aus Isengart
 itm_isen_uruk_light_a|Leichtes Gurtzeug der Uruk-hai
-itm_isen_uruk_light_b|Lederrüstung der Uruk-hai
-itm_isen_uruk_light_c|Lederrüstung der Uruk-hai
-itm_isen_uruk_light_d|Ring- und Lederpanzer der Uruk-hai
-itm_isen_uruk_light_e|Gegürteter Kettenpanzer der Uruk-hai
-itm_isen_uruk_heavy_a|Ring- und Lederpanzer der Uruk-hai
-itm_isen_uruk_heavy_b|Schwere Rüstung der Uruk-hai
-itm_isen_uruk_heavy_c|Schwere Rüstung der Uruk-hai
+itm_isen_uruk_light_b|Kampfmontur der Uruk-hai
+itm_isen_uruk_light_c|Berserkermontur der Uruk-hai
+itm_isen_uruk_med_a|Leichter Schienenpanzer der Uruk-hai
+itm_isen_uruk_med_b|Kettenpanzer der Uruk-hai
+itm_isen_uruk_heavy_a|Mittlerer Schienenpanzer der Uruk-hai
+itm_isen_uruk_heavy_b|Schwerer Kettenpanzer der Uruk-hai
+itm_isen_uruk_heavy_c|Schwerer Schienenpanzer der Uruk-hai
 itm_isen_uruk_heavy_d|Späher-Lederpanzer der Uruk-hai
 itm_isen_uruk_heavy_e|Späher-Lederpanzer der Uruk-hai
 itm_uruk_tracker_boots|Späherstiefel der Uruk-hai

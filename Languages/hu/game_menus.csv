@@ -166,6 +166,9 @@ mno_strat_tweaks_back|Vissza a finomítások menübe.
 menu_camp_action|^^^^^^^^^     Melyik tárgy?
 mno_camp_drink_water|Idd meg az Entvizet!
 ; mno_camp_drink_orc_brew|Pass around the Orc Brew!
+; mno_camp_drink_miruvor|Pass around the Miruvor!
+; mno_camp_use_athelas|Use Athelas for wound treatment.
+; mno_camp_use_drums|Beat the Drums of the Deep.
 mno_camp_action_4|Vissza.
 menu_assasins_attack_player_won|Sikeresen legyőzted a(z) {s2} bérgyilkosait, melyeket {s3} küldött.
 menu_assasins_attack_player_retreat|Megmenekültél!

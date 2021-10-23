@@ -166,6 +166,9 @@ mno_strat_tweaks_back|Wróć do menu ulepszeń.
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
 mno_camp_drink_water|Wypić Wodę Entów!
 mno_camp_drink_orc_brew|Podaj trunek warzony przez orków!
+; mno_camp_drink_miruvor|Pass around the Miruvor!
+; mno_camp_use_athelas|Use Athelas for wound treatment.
+; mno_camp_use_drums|Beat the Drums of the Deep.
 mno_camp_action_4|Wróć.
 menu_assasins_attack_player_won|Udało ci się pokonać zabójców {s2}, których nasłał {s3}.
 menu_assasins_attack_player_retreat|Uciekasz zachowując życie!

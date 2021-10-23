@@ -144,7 +144,7 @@ itm_arnor_greaves|Арнорські наголінники
 itm_arnor_shield_a|Арнорський щит
 itm_arnor_shield_c|Арнорський кавалерійський щит
 itm_arnor_sword_a|Арнорський меч-бастард
-itm_arnor_sword_c|Арнорський меч-бастард
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|Арнорський короткий меч
 itm_riv_helm_a|Рівенділський коїф
 itm_riv_helm_b|Рівенділський шолом лучника
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Ґондорський капюшон рейндже
 itm_gondor_light_greaves|Ґондорські шкіряні наголінники
 itm_gondor_med_greaves|Ґондорські середні наголінники
 itm_gondor_heavy_greaves|Ґондорські кольчужні наголінники
-itm_gondor_infantry_helm|Ґондорський шолом піхотинця
 itm_gondor_auxila_helm|Легкий шолом Гондора
 itm_gondorian_archer_helm|Шолом лучника Гондора
 itm_tower_archer_helm|Шолом лучника Вежі
 itm_gondor_leader_helm|Ґондорський чудовий шолом
 itm_tower_guard_helm|Шолом Охоронця Вежі
 itm_gondor_citadel_knight_helm|Шолом Лицаря Цитаделі
+itm_gondor_infantry_helm|Ґондорський шолом піхотинця
 itm_gondor_knight_helm|Кавалерійський шолом Гондора
 itm_gondor_dolamroth_helm|Дол-Амротський шолом
 itm_swan_knight_helm|Лебединий лицарський шолом
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Лінхірський екет
 itm_pelargir_eket|Пеларгірський екет
 itm_pelargir_sword|Пеларгірський меч
 itm_gondor_ranger_sword|Ґондорський меч рейнджера
-itm_gondor_bastard|Ґондорський Меч-бастард
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|Ґондорський меч Варти Цитаделі
 itm_gondor_cav_sword|Ґондорський кавалерійський меч
 itm_gondor_spear|Ґондорський спис
 itm_gondor_tower_spear|Ґондорський спис Варти Цитаделі
 itm_gondor_lance|Ґондорський кавалерійський спис
-itm_loss_axe|Лоссарнахська сокира
-itm_loss_war_axe|Лоссарнахська бойова сокира
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|Лоріенський довгий меч
 itm_lorien_sword_b|Лоріенський короткий меч
 itm_lorien_sword_c|Лоріенський бойовий меч
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Ізенґардська орча броня
 itm_isen_orc_armor_f|Ізенґардська орча броня
 itm_isen_orc_armor_g|Ізенґардська орча броня
 itm_isen_uruk_light_a|Урук-хайська легка броня
-itm_isen_uruk_light_b|Урук-хайська шкіряна броня
-itm_isen_uruk_light_c|Урук-хайська шкіряна броня
-itm_isen_uruk_light_d|Урук-хайська шкіряна броня з кольчугою
-itm_isen_uruk_light_e|Урук-хайская кольчужна броня
-itm_isen_uruk_heavy_a|Урук-хайська шкіряна броня з кольчугою
-itm_isen_uruk_heavy_b|Урук-хайська важка броня
-itm_isen_uruk_heavy_c|Урук-хайська важка броня
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|Урук-хайська шкіряна броня слідопита
 itm_isen_uruk_heavy_e|Урук-хайська шкіряна броня слідопита
 itm_uruk_tracker_boots|Урукські чоботи слідопита

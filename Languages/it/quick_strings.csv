@@ -76,7 +76,7 @@ qstr_an_ORC^_serving_the_W|un ORCO,^ servo della Mano Bianca
 qstr_one_of_the_URUK_HAI^|uno degli Uruk-Hai,^ cresciuto ad Isengard
 qstr_a_MAN_of_Dunland^_th|un UOMO del Dunland,^ Le Pianure Occidentali
 qstr_Click_the_center_but|Clicca sul pulsante centrale per selezionare la fazione^Clicca l'avatar per visualizzare i loro dettagli
-qstr_Level:_{reg3}^Health|Livello: {reg3}^Punti Ferita: {reg4}
+qstr_Level:_{reg3}^Health|Livello: {reg3}^Punti Salute: {reg4}
 qstr_Attributes|Attributi
 qstr_STR^AGI^INT^CHA|FOR^AGI^INT^CAR
 qstr_Skills|Abilità
@@ -91,8 +91,9 @@ qstr_Battle_Formations_an|Formazioni da Battaglia e IA:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|FormIA TLD (Originale)
 qstr_TLD_New_FormAI|Nuova FormIA TLD
-qstr_Advanced_Siege_AI:__|IA Assedio Avanzata:
-qstr_On|Attivo
+; qstr_Siege_AI:__|Siege AI:  
+; qstr_Basic__better_perfor|Basic (better performance)
+; qstr_Advanced|Advanced
 qstr_Town_NPCs_Always_Acc|NPC delle città subito visibili nei menu:
 qstr_Cutscenes:__|Intermezzi:
 qstr_Injuries_for_compani|Ferite per i compagni:
@@ -106,9 +107,9 @@ qstr_Player_damage_only|Solo danni al giocatore
 qstr_All_Messages|Tutti i messaggi
 qstr_Troop_Identifier_in_|Id. in Battaglia (Y durante una battaglia = On/Off):
 qstr_Disable|Disattiva
-qstr_Enable_without_Facti|Abilita senza Nomi di Fazione
-qstr_Enable_with_Faction_|Abilita con Nomi Fazioni
-qstr_Simple:_Red___Enemy_|Semplice: Rosso - Nemici / Verde - Alleati
+; qstr_Troop_Names|Troop Names
+; qstr_Simple:_Faction_Colo|Simple: Faction Colors
+; qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
 qstr_Preferred_Camera_Mod|Modalità Telecamera Preferita:
 qstr_Default_Camera|Inquadratura Predefinita
 qstr_Free_Mode_Custom_Cam|Inquadratura Libera Personalizzata
@@ -184,13 +185,17 @@ qstr_+20_to_Party_Morale|+20 Al Morale della Compagnia
 qstr_+1_to_Riding_Skill|+1 Abilità nel Cavalcare
 qstr_during_battles|durante le battaglie
 qstr_+1_to_Pathfinding|+1 in Orientamento
-qstr_+1_to_Athletics|+1 in atleticità
-qstr_+1_to_Wound_Treatmen|+1 in Trattamento Ferite
+; qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
+; qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
+; qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
 qstr_Use_from_Camp_Menu|Fanne uso dal menu di Campo
 qstr_Use_from|Usa da
 qstr_Action_Menu|Menu azioni
-qstr_+1_to_First_Aid|+1 in Primo soccorso
+; qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
+; qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
+; qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
 qstr_+1_to_Weapon_Mastery|+1 in Maestria nelle armi
+qstr_+1_to_Wound_Treatmen|+1 in Trattamento Ferite
 qstr_+1_to_Tactics|+1 in Tattica
 qstr_+1_to_Power_Strike|+1 in Colpo potente
 qstr_+1_to_Strength|+1 in Forza
@@ -198,6 +203,7 @@ qstr_+1_to_Agility|+1 in Agilità
 qstr_+1_to_Leadership|+1 in Comando
 qstr_+1_to_Wildcraft|+1 a Mimetismo
 qstr_+1_to_Tracking|+1 in Seguire Tracce
+qstr_+1_to_Athletics|+1 in atleticità
 qstr_when_equipped|Se equipaggiato
 qstr_+1_to_Power_Draw|+1 in Potenza di Tiro
 qstr_The_record_of_Balin_|La cronaca della spedizione perduta di Balin.
@@ -212,6 +218,9 @@ qstr_rally|spronare
 qstr_rallies|sprona
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} in battaglia
 qstr_+1_to_Charisma|+1 in Carisma
+; qstr_Call_Reinforcements|Call Reinforcements
+; qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
+qstr_+1_to_First_Aid|+1 in Primo soccorso
 qstr_+1_to_Surgery|+1 in Chirurgia
 qstr_+1_to_Intelligence|+1 in Intelligenza
 qstr_+2_to_Surgery|+2 in Chirurgia
@@ -225,6 +234,8 @@ qstr_+2_to_Tactics|+2 in Tattica
 qstr_+1_Intelligence|+1 in Intelligenza
 qstr_+{reg1}_to_Spotting|+{reg1} in Avvistamento
 qstr__Scales_with_Wildcra|(Scaglie Mimetiche)
+; qstr_Strengthens_all_Hero|Strengthens all Heroes
+; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
 qstr_+1_to_Power_Throw|+1 in Potenza di Lancio
 qstr_+1_to_Spotting|+1 in Avvistamento
 qstr_Less_Dunnish_upkeep|Minore gestione Dunlandiana
@@ -243,6 +254,7 @@ qstr_Good|Bene
 qstr_Med|Mediamente forte
 qstr_Bad|Cattivo
 qstr_You_gained_{reg84}_e|Hai guadagnato {reg84} Punti Esperienza bonus per la tua Intelligenza.
+; qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
 qstr_{reg4}_killed_{reg5}|{reg4} uccisi, {reg5} feriti, {reg6} in rotta
 qstr_{reg4}_killed_{reg5}_|{reg4} uccisi, {reg5} feriti
 qstr_{reg4}_killed_{reg5}_r|{reg4} uccisi, {reg5} in rotta
@@ -657,7 +669,7 @@ qstr_Show_item_details__|Mostra i dettagli dell'oggetto
 qstr_Troop_detail|Dettaglio truppa
 qstr_{s1}^|{s1}^
 qstr_{s1}Level:_{reg1}^|{s1}Livello: {reg1}^
-qstr_{s1}Hit_Points:_{reg|{s1}Punti Ferita: {reg1}
+qstr_{s1}Hit_Points:_{reg|{s1}Punti Salute: {reg1}
 qstr_{s1}Atributes:_^___S|{s1}Attributi: ^   Forza:^
 qstr_{s2}^{reg1}^|{s2}^{reg1}^
 qstr_{s1}___Agility:|{s1} Agilità:
@@ -785,6 +797,16 @@ qstr_Drive_them_back!|Ricacciamoli indietro !
 qstr_Protect_the_City!|Proteggi la città !
 qstr_Forward!_Board_them!|Avanti ! All'arrembaggio !
 qstr_The_Last_Days_of_the_|The Last Days of the Third Age dispone di una IA avanzata per quanto riguarda gli assedi, molto differente dalla versione Native. Tutti gli attaccanti e i difensori vengono distribuiti sui fianchi destro e sinistro e al centro. I giocatori che attaccano sono al comando di alcune delle proprie truppe personali.
+; qstr_on_the_left_flank|on the left flank
+; qstr_on_the_right_flank|on the right flank
+; qstr_through_the_center|through the center
+; qstr_Attackers_charge_{s2|Attackers charge {s2}
+; qstr_Attackers_charge_{s1|Attackers charge {s1}
+; qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
+; qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
+; qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
+; qstr_The_remaining_attack|The remaining attackers disperse!
+qstr_The_remaining_defend|I difensori rimanenti fuggono dall'assedio !
 qstr_Reached_Gauntlet_wav|Raggiunta l'ondata sfida {reg1} !
 qstr_Ballista:_out_of_amm|Ballista: munizioni terminate !
 qstr_Ballista:_turn_CURSO|Ballista: muovi con CURSORE, mira con LSHIFT, fuoco con SPAZIO, imposta fuoco con T, esci con F
@@ -981,7 +1003,7 @@ qstr_As_a_last_defensive_|Come ultimo sforzo difensivo, vi ritirate nella sala p
 qstr_You_ve_been_driven_a|Sei stato allontanato dalle mura. Adesso gli attaccanti si stanno aggirando per le strade. Se riesci a sconfiggerli, potresti forse svoltare le sorti della battaglia e salvare il giorno
 qstr_You_ve_breached_the_|Hai oltrepassato le mura della città, ma i difensori tenacemente continuano a resistere per le strade ! Dovete sconfiggere loro prima di poter attaccare il torrione nel cuore della città.
 qstr_The_town_centre_is_y|Il centro dell'insediamento è tuo, ma i difensori rimanenti si sono ritirati al castello. Dovrà cadere prima che tu completi la tua vittoria
-qstr_The_remaining_defend|I difensori rimanenti si sono ritirati nel castello come ultima difesa. Devi entrare e distruggere ogni resistenza rimanente.
+qstr_The_remaining_defend|I difensori rimanenti fuggono dall'assedio !
 qstr_However_since_you_ar|Comunque, dal momento che non hai prestato giuramento {vassallo/seguace} di {s9}, non c'è alcuna possibilità che ti riconoscerà come {Signore/Signora} di quest{reg8?a città:o castello}.
 qstr_The_enemy_has_been_f|Il nemico è stato forzato alla ritirata. L'assalto è finito, ma l'assedio continua.
 qstr_The_assasins_beat_yo|Gli assassini ti hanno ucciso a ti hanno lasciato morente
@@ -1457,13 +1479,14 @@ qstr_{s9}_has_asked_you_to|{s9} Ti ha chiesto di salvare {reg1} prigionieri.
 qstr_We_have_reports_that_a|Abbiamo rapporti di gruppi di nemici in probabile adunata a {s13}. Ovviamente è un grave problema per me perché non so né quanti uomini abbia il nemico, né se i miei uomini saranno pronti per scontrarsi con loro sul campo di battaglia. Voglio che ti avvicini a {s13} e raccogli quante più informazioni possibili.
 qstr_My_spies_tell_me_of_|Le mie spie mi hanno allertato di un grande gruppo di guerrieri raggruppati presso {s13}. Non dovrebbero essere un problema per noi e i nostri servi, ma non farebbe male sapere quanti sono. Voglio che ti avvicini abbastanza alla zona di {s13}, e scopri quanto più riesci. 
 qstr_{s9}_asked_you_to_sco|{s9} ti ha chiesto di perlustrare {s13}.
-qstr_We_have_reports_of_s|Abbiamo notizie di attività nemiche vicino a {s13}. Finora i nostri esploratori hanno fallito nell' avvicinarsi a sufficienza al nemico per vederne i movimenti. Voglio che tu componga una squadra di esploratori, che ti avvicini abbastanza a {s13}, e che mandi in azione gli esploratori.
-qstr_My_spies_tell_me_the|Le mie spie mi hanno detto che il nemico vuole fare qualcosa a {s13}. I nostri esploratori hanno vigliaccamente fallito nell' esplorare le zone nemiche. Voglio che tu recluti una tua squadra di esploratori, ti avvicini abbastanza a {s13}, e li lasci li. Pero', assicurati che non scappino !
+qstr_We_have_reports_of_s|Abbiamo notizie di attività nemiche vicino a {s13}. Finora i nostri esploratori hanno fallito nell' avvicinarsi a sufficienza al nemico per vederne i movimenti. Voglio che tu componga una squadra di esploratori, che ti avvicini abbastanza a {s13}, e che mandi in azione gli esploratori. Ti darò anche alcune reclute, ma non dovresti mandarle da sole.
+qstr_My_spies_tell_me_the|Le mie spie mi hanno detto che il nemico vuole fare qualcosa a {s13}. I nostri esploratori hanno vigliaccamente fallito nell' esplorare le zone nemiche. Voglio che tu recluti una tua squadra di esploratori, ti avvicini abbastanza a {s13}, e li lasci li. Pero', assicurati che non scappino ! Ti fornirò io queste reclute, non ne sentiremo la mancanza.
 qstr_{s9}_asked_you_to_di|{s9} ti ha chiesto di inviare una pattuglia d'esplorazione vicino a {s13}.^Procurati {reg1} soldati di {s15}, di cui almeno uno sia {s14}, avvicinati a {s13} e parla a {s14} per inviare la pattuglia.
 qstr_We_need_to_take_the_|Dobbiamo portare la battaglia sul campo nemico, {playername}. In questo momento possiamo riuscirci colpendo le loro pattuglie e i loro messaggeri. Voglio che tu elimini {reg1} compagnie di {s13}, tutto questo ci permetterà di riprendere l'iniziativa.
 qstr_We_need_to_grind_dow|Dobbiamo colpire i nostri vili nemici, {playername}. Le loro pattuglie e carovane stanno crescendo troppo coraggiosamente per i miei gusti. Voglio che tu elimini {reg1} {s13}, così incominceranno a capire cosa gli aspetta.
 qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di eliminare {reg1} compagnie di {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} ti ha chiesto di liberare {s13} dalla minacca di un Troll furioso nella sua periferia.
+; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
 qstr_the_Dwarves_so_that_|i Nani, se attraversi Erebor o le Colline di Ferro, puoi tentare di armarti con il leggendario equipaggiamento nanico.
 qstr_Gondor_so_that_if_yo|Gondor, se attraversi le loro lande, puoi tentare di acquistare alcune delle loro famose armature.
 qstr_Rohan_so_that_if_you|Rohan, se attraversi le loro terre, puoi cercare di comprare alcuni dei loro leggendari cavalli.
@@ -1549,8 +1572,8 @@ qstr_Good_moves_but_you_m|Belle mosse, ma hai ancora del lavoro da fare.
 qstr_More_than_half_of_th|Più della metà degli avversari, non male.
 qstr_You_ll_need_to_try_h|Devi impegnarti di più di così.
 qstr_Well..._better_here_|Bene... Meglio qui che in battaglia, Eh ?
-qstr_We_ve_been_sent_by_L|Siamo stati inviati da Lord {s3}. Siamo venuti per unire le nostre forze alle tue.
-qstr_Lord_{s3}_has_sent_u|Lord {s3} ci ha inviati, per unirci alla flotta che sta attaccando {s4}.
+; qstr_We_ve_been_sent_by_{|We've been sent by {s3}. We have come to join our strength to yours.
+; qstr_{s3}_has_sent_us_to_|{s3} has sent us, to join the fleet attacking {s4}.
 qstr_Excellent_{playernam|Eccellente, {playername} ! Ho saputo che gli hai dato più di quanto avevo chiesto. Ottimo lavoro.^^ Ecco, prendi questi e una ricompensa extra per aver superato le nostre aspettative. ^^ Abbiamo bisogno di vincere questa guerra il prima possibile.
 qstr_Excellent_{playername|Eccellente, {playername}. Questo certamente li aiuterà. Abbiamo bisogno di vincere questa guerra nel tempo più breve possibile.
 qstr_Reinforcing_{s1}_has|I rinforzi a {s1} hanno rafforzato {s2}. ({s2} ha ottenuto {reg50} punti forza per la fazione).

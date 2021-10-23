@@ -166,6 +166,9 @@ mno_strat_tweaks_back|Volver al menú de ajustes.
 menu_camp_action|^^^^^^^^^     ¿Qué objeto?
 mno_camp_drink_water|¡Beber el Agua de los Ents!
 mno_camp_drink_orc_brew|¡Pasar y compartir el brebaje orco entre tus tropas!
+mno_camp_drink_miruvor|¡Repartir el Miruvor!
+mno_camp_use_athelas|Usar Athelas para el tratamiento de heridas.
+mno_camp_use_drums|Hacer sonar los Tambores de las Profundidades  
 mno_camp_action_4|Atrás.
 menu_assasins_attack_player_won|Has derrotado los asesinos de {s2}, enviados por {s3}.
 menu_assasins_attack_player_retreat|¡Has escapado con vida!

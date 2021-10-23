@@ -166,6 +166,9 @@ mno_strat_tweaks_back|Takaisin asetusvalikkoon.
 menu_camp_action|^^^^^^^^^ Mikä kohde?
 mno_camp_drink_water|Juo Entin vettä!
 ; mno_camp_drink_orc_brew|Pass around the Orc Brew!
+; mno_camp_drink_miruvor|Pass around the Miruvor!
+; mno_camp_use_athelas|Use Athelas for wound treatment.
+; mno_camp_use_drums|Beat the Drums of the Deep.
 mno_camp_action_4|Takaisin...
 menu_assasins_attack_player_won|Olet onnistuneesti peitonnut salamurhaajat {s2}sta, lähetettynä {s3} puolesta.
 menu_assasins_attack_player_retreat|Pakenit elävänä!

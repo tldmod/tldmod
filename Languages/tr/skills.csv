@@ -35,7 +35,7 @@ skl_riding_desc|Daha yüksek seviyeli atları (ya da diger yaratıkları) kullan
 skl_athletics|Atletizm
 skl_athletics_desc|Koşu hızını yükseltir.(kişisel yetenek)
 skl_shield|Kalkan
-skl_shield_desc|Kalkanlara karşı hasarı azaltır (puan başı 8%%) ve kalkan hızını ve kapsamını arttırır. (Kişisel Yetenek)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Silah ustası
 skl_weapon_master_desc|Bir silahın yeterliklerini ögrenmeyi kolaylaştırır ve yeterlilik limitini arttırır. Limit şöyle olur: 60,100,140,180,220,260,300,340,380,420.(Kişisel yetenek)
 skl_power_draw|Güçlü Çekme
@@ -45,4 +45,4 @@ skl_power_throw_desc|Bu yetenege harcanan her puan atış hasarını 10%% arttı
 skl_power_strike|Güçlü Saldırı
 skl_power_strike_desc|Bu yetenege harcanan her puan yakın dövüş hasarını 8%% arttırır (Kişisel yetenek)
 skl_ironflesh|Demirbeden
-skl_ironflesh_desc|Bu yetenege harcanan her puan verilen hasarı +2 artırır.(kişisel yetenek) 
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

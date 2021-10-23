@@ -166,6 +166,9 @@ mno_strat_tweaks_back|조정 메뉴로 돌아가기
 menu_camp_action|^^^^^^^^^어떤 물건을 선택하시겠습니까?
 mno_camp_drink_water|엔트워터를 마신다!
 mno_camp_drink_orc_brew|Pass around the Orc Brew!
+; mno_camp_drink_miruvor|Pass around the Miruvor!
+; mno_camp_use_athelas|Use Athelas for wound treatment.
+; mno_camp_use_drums|Beat the Drums of the Deep.
 mno_camp_action_4|돌아가기
 menu_assasins_attack_player_won|당신은 {s3}에 의해 보내진 암살자들을 {s2}에서 성공적으로 물리쳤습니다.
 menu_assasins_attack_player_retreat|당신은 목숨을 건진 채 도망쳤습니다!

@@ -35,7 +35,7 @@ skl_riding_desc|Erlaubt, Pferde (oder andere Kreaturen) höherer Schwierigkeitss
 skl_athletics|Athletik
 skl_athletics_desc|Erhöht die Laufgeschwindigkeit. (Persönliche Fähigkeit)
 skl_shield|Schild
-skl_shield_desc|Reduziert den Schaden an Schilden (um 8%% pro Fertigkeitsstufe) und verbessert die Schildgeschwindigkeit und -deckfläche. (Persönliche Fähigkeit)
+skl_shield_desc|Reduziert den Schaden an Schilden (um 8%% pro Fertigkeitsstufe), verbessert die Schildgeschwindigkeit und -deckfläche, reduziert den Genauigkeitsabzug bei Nutzung mit Bogen (Persönliche Fähigkeit)
 skl_weapon_master|Waffenmeister
 skl_weapon_master_desc|Erleichtert es, Waffenfertigkeiten zu erlernen und erhöht die Grenzen der Waffenfertigkeiten. Die Beschränkungen sehen wie folgt aus: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Persönliche Fähigkeit)
 skl_power_draw|Bogenzugkraft
@@ -45,4 +45,4 @@ skl_power_throw_desc|Jeder zusätzliche Punkt dieser Fähigkeit erhöht den Wurf
 skl_power_strike|Schlagkraft
 skl_power_strike_desc|Jeder zusätzliche Punkt dieser Fähigkeit erhöht den Nahkampfschaden um 8%%. (Persönliche Fähigkeit)
 skl_ironflesh|Eisenhaut
-skl_ironflesh_desc|Jeder zusätzliche Punkt dieser Fähigkeit erhöht die Trefferpunkte um +2. (Persönliche Fähigkeit)
+skl_ironflesh_desc|Jeder zusätzliche Punkt dieser Fähigkeit erhöht die Trefferpunkte um +2 und erlaubt es, ein wenig Schaden auszuhalten ohne verwundet zu werden. (Persönliche Fähigkeit)

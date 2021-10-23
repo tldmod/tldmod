@@ -144,7 +144,7 @@ itm_arnor_greaves|Grebas de Arnor
 itm_arnor_shield_a|Escudo de Arnor
 itm_arnor_shield_c|Escudo de Caballería de Arnor
 itm_arnor_sword_a|Espada Bastarda de Arnor
-itm_arnor_sword_c|Espada Bastarda de Arnor
+itm_arnor_sword_c|Espada de guerra de Arnor
 itm_arnor_sword_f|Espada Corta de Arnor
 itm_riv_helm_a|Cofia de Rivendel
 itm_riv_helm_b|Casco de Arquero de Rivendel
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Capucha de Montaraz de Gondor
 itm_gondor_light_greaves|Grebas de Cuero de Gondor
 itm_gondor_med_greaves|Grebas Medias de Gondor
 itm_gondor_heavy_greaves|Grebas Reforzadas de Gondor
-itm_gondor_infantry_helm|Yelmo de Infantería de Gondor
 itm_gondor_auxila_helm|Yelmo Ligero de Gondor
 itm_gondorian_archer_helm|Yelmo de Arquero de Gondor
 itm_tower_archer_helm|Yelmo de Arquero de la Torre
 itm_gondor_leader_helm|Yelmo Alto de Gondor
 itm_tower_guard_helm|Yelmo de la Guardia de la Torre
 itm_gondor_citadel_knight_helm|Yelmo de Caballero de la Ciudadela
+itm_gondor_infantry_helm|Yelmo de Infantería de Gondor
 itm_gondor_knight_helm|Yelmo de Caballería de Gondor
 itm_gondor_dolamroth_helm|Yelmo de Dol Amroth
 itm_swan_knight_helm|Yelmo de Caballero Cisne
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Eket de Linhir
 itm_pelargir_eket|Eket de Pelargir
 itm_pelargir_sword|Espada de Pelargir
 itm_gondor_ranger_sword|Espada de Montaraz de Gondor
-itm_gondor_bastard|Espada Bastarda de Gondor
+itm_gondor_2h_sword|Espada de guerra de Gondor
 itm_gondor_citadel_sword|Espada de la Ciudadela de Gondor
 itm_gondor_cav_sword|Espada de Caballería de Gondor
 itm_gondor_spear|Lanza de Gondor
 itm_gondor_tower_spear|Lanza de la Torre de Gondor
 itm_gondor_lance|Lanza de Caballería de Gondor
-itm_loss_axe|Hacha de Batalla de Lossarnach
-itm_loss_war_axe|Hacha de Guerra de Lossarnach
+itm_loss_axe|Hacha de combate de Gondor
+itm_loss_war_axe|Hacha de guerra de Gondor
 itm_lorien_sword_a|Espada Larga de Lórien
 itm_lorien_sword_b|Espada Corta de Lórien
 itm_lorien_sword_c|Espada de Guerra de Lórien
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Armadura Orca de Isengard
 itm_isen_orc_armor_f|Armadura Orca de Isengard
 itm_isen_orc_armor_g|Armadura Orca de Isengard
 itm_isen_uruk_light_a|Arnés Ligero Uruk-hai
-itm_isen_uruk_light_b|Armadura de Cuero Uruk-hai
-itm_isen_uruk_light_c|Armadura de Cuero Uruk-hai
-itm_isen_uruk_light_d|Armadura de Malla y Cuero Uruk-hai
-itm_isen_uruk_light_e|Arnés de Malla Uruk-hai
-itm_isen_uruk_heavy_a|Armadura Pesada de Malla y Cuero Uruk-hai 
-itm_isen_uruk_heavy_b|Armadura Pesada Uruk-hai
-itm_isen_uruk_heavy_c|Armadura Pesada Uruk-hai
+itm_isen_uruk_light_b|Arnés de guerrero Uruk-hai
+itm_isen_uruk_light_c|Arnés de Berserker Uruk-hai
+itm_isen_uruk_med_a|Armadura segmentada ligera Uruk-hai
+itm_isen_uruk_med_b|Cota de malla Uruk-hai
+itm_isen_uruk_heavy_a|Armadura segmentada media Uruk-hai
+itm_isen_uruk_heavy_b|Cota de malla pesada Uruk-hai
+itm_isen_uruk_heavy_c|Armadura segmentada completa Uruk-hai
 itm_isen_uruk_heavy_d|Armadura de Cuero de Rastreador Uruk-hai
 itm_isen_uruk_heavy_e|Armadura de Cuero de Rastreador Uruk-hai
 itm_uruk_tracker_boots|Botas de Rastreador Uruk-hai

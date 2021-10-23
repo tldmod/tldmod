@@ -166,6 +166,9 @@ mno_strat_tweaks_back|返 回 調 整 選 單
 menu_camp_action|^^^^^^^^^ 哪 件 事 ？ 
 mno_camp_drink_water|喝 下 樹 人 之 水 ！ 
 mno_camp_drink_orc_brew|跟 大 伙 一 起 乾 了 半 獸 人 酒！
+; mno_camp_drink_miruvor|Pass around the Miruvor!
+; mno_camp_use_athelas|Use Athelas for wound treatment.
+; mno_camp_use_drums|Beat the Drums of the Deep.
 mno_camp_action_4|後 退 
 menu_assasins_attack_player_won|你 成 功 擊 敗 從 {s2}來 的 刺 客 ， {s3}的 手 下。 
 menu_assasins_attack_player_retreat|你 逃 過 一 劫！ 

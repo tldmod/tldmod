@@ -1823,20 +1823,20 @@ str_fullname_region_gap_of_rohan|Rohanská rozsadlina, najzápadnejšia hranica 
 str_fullname_region_entwash|Ústie Entvy, kde sa rohanská rieka Entva vlieva do Anduiny
 str_fullname_region_wetwang|Nindalf, mokrade Trasoviska
 str_fullname_region_dead_marshes|Mŕtve močiare, prastaré bojisko veľkej Bitky o Dagor Dagorlad, dne zakliate miesto
-str_fullname_region_isengard|pláne vôkol Isengardu
+; str_fullname_region_isengard|Nan Curunir, the vale of Isengard
 str_fullname_region_fangorn|Farngornský les, o ktorom sa hovorí, že v ňom stromy rozprávajú.
 str_fullname_region_brown_lands|Hnedozeme, rozkladajúce sa od Emin Muil až po Temnohvozd
 str_fullname_region_dagorlad|Dagorlad, rozľahlá, holá a pustá pláň veľkého dávneho bojiska pred hradbami Mordoru
 str_fullname_region_n_undeep|Severná Nehlbina, väčšia z dvoch zákrut rieky Anduiny
 str_fullname_region_s_undeep|Južná Nehlbina, menšia z dvoch zákrut rieky Anduiny
-str_fullname_region_emyn_muil|Emyn Muil, kamenisté vrchy nad prítokom Entvy
-str_fullname_region_misty_mountains|podhorie Hmlistých hôr
+; str_fullname_region_emyn_muil|eastern Emyn Muil, the rocky hills beyond Amon Lhaw
+; str_fullname_region_misty_mountains|the foothills of the northern Misty Mountains
 str_fullname_region_lorien|Lothlórien, les Sindarských elfov, kde sa týčia zlaté Malllorny
-str_fullname_region_anduin_banks|údolie Anduiny, rozpína sa medzi Hmlistými horami a Temnohvozdom
+; str_fullname_region_anduin_banks|the middle Vale of Anduin, between Carrock and Lorien
 str_fullname_region_n_mirkwood|husté lesy severného Temnohvozdu, domova Lesných lefov
 str_fullname_region_s_mirkwood|hustý les južného Temnohvozdu, o ktorom sa hovorí, že je obývaný zvláštnymi bytosťami
-str_fullname_region_above_mirkwook|Serverný Rhovanion, ovlasť medzi Temnohvozdom a Šedými horami na Severe
-str_fullname_region_grey_mountains|podhorie Šedých Hôr, kde dolujú Trpaslíci
+; str_fullname_region_c_mirkwood|the dense forest of middle Mirkwood, inhabited by Woodmen
+; str_fullname_region_grey_mountains|the foothills of the Grey Mountains
 str_fullname_region_mordor|Mordor, temná ríša Saurona
 str_fullname_region_dimrill|Dol Zármutku, na úpätí Mórijských Hôr
 str_fullname_region_s_rebor|kráľovstvo Dálov, na úpätí Osamelej Hory
@@ -1865,16 +1865,20 @@ str_shortname_region_gap_of_rohan|Rohanská rozsadlina
 str_shortname_region_entwash|Ústie Entvy
 str_shortname_region_wetwang|Nindalf
 str_shortname_region_dead_marshes|Mŕtve močiare
-str_shortname_region_isengard|pláne vôkol Isengardu
+; str_shortname_region_isengard|Nan Curunir
 str_shortname_region_fangorn|Farngorn
 str_shortname_region_brown_lands|Hnedozeme
-str_shortname_region_misty_mountains|podhorie Hmlistých hôr
+; str_shortname_region_dagorlad|Dagorlad
+; str_shortname_region_n_undeep|the North Undeep
+; str_shortname_region_s_undeep|the South Undeep
+; str_shortname_region_emyn_muil|Emyn Muil
+; str_shortname_region_misty_mountains|the foothills of the northern Misty Mountains
 str_shortname_region_lorien_|Lorien
-str_shortname_region_anduin_banks_|údolie Anduiny
+; str_shortname_region_anduin_banks_|the middle valley of Anduin
 str_shortname_region_n_mirkwood_|Severný Temnohvozd
 str_shortname_region_s_mirkwood_|Južný Temnohvozd
-str_shortname_region_above_mirkwook|Severný Rhovanion
-str_shortname_region_grey_mountains|podhorie Šedých Hôr
+; str_shortname_region_c_mirkwood|Middle Mirkwood
+; str_shortname_region_grey_mountains|the foothills of the Grey Mountains
 str_shortname_region_mordor|Pustiny Mordoru
 str_shortname_region_dimrill|Dol Zármutku
 str_shortname_region_s_erebor|kráľovstvo Dálov
@@ -2117,7 +2121,7 @@ str_formations|Komplexné Formácie v Menu Bitky sú:^^-LÍNIE/RADY s najlepší
 str_npc18_intro|Mocný, na chvíľu sa zastav! Chcem si s tebou pohovoriť!
 str_npc19_intro|Vyčkaj chvíľu, veliteľ. Na slovíčko. Nie, nie, nebudeš musieť pokľaknúť, aj keď hovoríš s urodzeným človekom.
 str_npc20_intro|Počkať. Ty. Teba už som videl. Spoznávam tvoju tvár. Snívalo sa mi o tebe - ale prečo by si to bol práve ty? Teraz, keď ťa vidím na vlastné oči, zdáš sa byť len o niečo málo viac, než krpatý zmok!
-str_npc21_intro|Vitaj v Meduselde, bojovník!
+; str_npc21_intro|Buzz off, little fly, 'fore I SQUASH YER! RRAAARGHH!  (*The troll bares her fangs in a somewhat half-hearted snarl.*)
 str_npc22_intro|Zdravím, {playername}. Mae govannen!
 str_npc23_intro|Neobťažuj ma, cudzinec, neprajem si s tebou hovoriť.
 str_npc24_intro|Kíli, syn Dwalina, k vašim službám!
@@ -2127,7 +2131,7 @@ str_npc27_intro|Ty!
 str_npc18_intro_response_1|Otrok v sklade, odsúdený na smrť, by chcel hovoriť so mnou? Čo mi chceš?
 str_npc19_intro_response_1|Šľachtická krv, hovoríš? Ha! Čo ťa vedie k domnienke, že máš čoby len kvapku z nej?
 str_npc20_intro_response_1|Hľaď sem, čo týmto myslíš, čarodejka? Kto si?
-str_npc21_intro_response_1|Zdravím, Pani moja. S kým mám tú česť hovoriť?
+; str_npc21_intro_response_1|Ah yes, you have me quaking in my boots. What a scary troll, bound by this tiny chain! Why don't you squash me then?
 str_npc22_intro_response_1|Sláva ti, Elfský pane! Je veľká česť vás stretnúť.
 str_npc23_intro_response_1|Je toto spôsob, akým Lesní Elfovia vítajú svojich hostí?
 str_npc24_intro_response_1|{playername} je vám k službám. Jak sa darí ľudu Durina?
@@ -2137,7 +2141,7 @@ str_npc27_intro_response_1|Kto si?
 str_npc18_intro_response_2|Nebudem mrhať slovami na otroka odsúdeného k smrti.
 str_npc19_intro_response_2|Nehanebný úbožiak. Maž mi z cesty.
 str_npc20_intro_response_2|Nemám čas na tvoje pobláznené blúznenie, čarodejka.
-str_npc21_intro_response_2|Ospravedlňte ma, ponáhľam sa.
+; str_npc21_intro_response_2|Just this once I will let you live, you dirty beast. (leave)
 str_npc22_intro_response_2|Ospravedlňte ma, musím sa porozprávať s menej dôležitými ľuďmi.
 str_npc23_intro_response_2|Cítim to rovnako. Dovidenia.
 str_npc24_intro_response_2|Nechaj tak, potrebujem trocha čerstvého vzduchu.
@@ -2147,7 +2151,7 @@ str_npc27_intro_response_2|[Nevšímať si ich a odísť}
 str_npc18_backstory_a|Nie som obyčajným otrokom! Som kat bojovníkov, ale miesto, aké mi v šíkoch právom náleží, mi vzali! Však vidíš, že som žena, ale som statnejšia a obratejšia než mnoho iných, a premohla som už viac mužov, než dokážem spočítať. Pán zápasiska ma sem uvrhol! Prichystal pre mňa skúšku, kedy som musela bojovať s tromi mužmi naraz. Tromi!
 str_npc19_backstory_a|Malá kvapka, to je pravda, ale moja matka mi povedala o mojom rode všetko. Som Heidrek, priamy potomok kráľa Fengela, s väčším nárokom na rohanský trón, než akýkoľvek náčelník z Vrchoviny! Moje vlasy sú havranie, avšak ak sa jeden prizrie bližšie, je možno v nich zočiť žltý pruh.
 str_npc20_backstory_a|V mojom sne sa zjavil strom. Strom, celý biely. A ty, ty si tam bol, stál si pri ňom. Siahol si na jeho kmeň, a hľa, v tej chvíli vyschol až k samotným koreňom. A tiež na nebi zmocnel, vzduch poťažel. A potom som začul smiech, smiech ďaleko z východu.
-str_npc21_backstory_a|Moje meno je Gálmynë a tvoja vec je i mojou, {playername}. Nechaj ma to objasniť.
+; str_npc21_backstory_a|Hah, step an itsy bit closer an' I'll snap your neck like a twig.  Come on! I'll stomp on your liver, smash your bones into dust an' juice your head like a grape.
 str_npc22_backstory_a|Možno si už začul chýry o mojich skutkoch v bojoch dávno minulých a zabudnutých smrteľnými Ľuďmi. V plnosti času však opäť nadišla doba meča, hrozby pre Eldar, ale bude to Vojna Posledná.
 str_npc23_backstory_a|Prepáčte, že vás obťažujem, nezavíta sem veľa návštevníkov a tí, ktorí sa objavia, nevyzerajú príliš hodnoverne. Len pred týždňom dorazil jeden trpaslík a... Nuž nič. Moje meno je Luevanna od Lesných Elfov Temnohvozdu.
 str_npc24_backstory_a|Si pozorný, že sa na to pýtaš, {playername}. Zápasime s vpádmi Východniarov a Gundabadskými ohyzdmi, ale zatiaľ to nie je nič, s čím by sme si s našimi Dálskymi spojencami nedokázali poradiť.
@@ -2157,7 +2161,7 @@ str_npc27_backstory_a|Som Durgash!
 str_npc18_backstory_b|Premohol som ich! Zvíťazil som! Ale... jeden z nich bol tak slabý, že zhynul pod údermi, aké som mu utŕžil. Ak by to bol obyčajný prisluhovač, bolo by hotovo. Ale nie. On musel byť práve jedným z mnohých synov Veľkého Veliteľa Lurmsakuna, ktorý vzošiel z jeho zväzku s milenkou.
 str_npc19_backstory_b|Nuž, nenájdeš žiadneho Rohančana či Vrchovca, čo by uznal môj nárok, ale to nemení nič na jeho právoplatnosti. Moja stará mať bola pastierkou, žila vo vrchoch, ale jedného dňa ju kráľ Thengel, lakomý dedo Theodena Uchvatiteľa, uzrel na breho rieky Isen. Obľúbil si ju a ona mu čoskoro porodila syna.
 str_npc20_backstory_b|Vieš, pred kým to ty vôbec stojíš? Prázdna makovica. Zapamätaj si, že ja som Zigûrphel, zo starobylého Akallabêthu - ale takí, ako si ty, nevedia o tom mene zhola nič! Hľadám cestu, ako napraviť dávne krivdy, krivdy, aké doľahli na môj ľud z trpkosti Valarov, ktorí potopili Veľkú Flotilu a náš domov. Ah, Ar-Pharazôn, tak mocný a slávny! Bude nebodaj tvoj veľký údel navždy zabudnutý? Nie, to nie, dokiaľ Zigûrphel žije a pokračuje v tvojej práci!
-str_npc21_backstory_b|Narodila som sa do urodzenej rodiny a vykonávala som čestný úrad chyžnej Pani Éowyn už od detských čias. Naši otcovia boli natoľko prezieraví, že nám dovolili cvičiť sa v umení boja po boku našich bratov, aby sme sa stali štítonoškami Rohanu.
+; str_npc21_backstory_b|Yer' a hard one, are ye? (*she sighs*) Name's Berta. Used to 'ave me a raidin' gang in the Misty Mountains, mind, the nastiest goblin thieves around. Those were the good days. Then we ran into a band of these wild ones from Gundabad.  Did some drinkin', some gamblin'... Next mornin' I woke all tied up, my lads in the wind. Now I break rocks and I haul their baggage around. Sometimes they 'ave me scrappin' for money.
 str_npc22_backstory_b|Lord Elrond ma posiela ako svojho veľvyslanca za Lordom Celebornom, aby mu poskytol radu potrebnú v čase Vojny v tejto časti Rhovanionu.
 str_npc23_backstory_b|Rád kráčam skrytími chodníčkami v našom čarokrásnom lese. Niekedy ticho prechádzam pod stromami pozorujúc divokú zver hvozdu. Štebot vzácneho vtáka či pozorovanie ukladanie diviakov na odpočinok je pre mňa rovnakým potešením, ako rinčanie čepelí a pohľad na veľké steny pre Edainov.
 str_npc24_backstory_b|Pomáhal som vylepšiť a vystužiť obranu Ereboru a vycvičil som tiež pár mladých trpasličích pobratimov pod dohľadom môjho cteného otca Dwalina, ako je naším obyčajom.
@@ -2167,7 +2171,7 @@ str_npc27_backstory_b|Som Vrrčí Jazdec a stopár z Isengardu.
 str_npc18_backstory_c|A tak som tu, osočovaný a ponižovaný, odsúdený zmrieť za to, že som mocnejší než tie psi, ktoré si ma doberajú! Osloboď ma, Mocný. Osloboď ma, prihovor sa za mňa - a moja sila je tvoja. Moja čepeľ je tvoja. Môj život je tvoj!
 str_npc19_backstory_c|Prirodzene, náčelník Daeglaf a zbytok z nich mi nedávajú vôbec príležitosť získať si slávu, pretože ak by som v boji vykonal veľké skutky, vyniesli by môj nárok na zreteľ všetkým. Muži by sa zhromažďovali pod mojou zástavou! Tvoja sláva ťa predchádza, veliteľ. Pokiaľ mi dovolíš bojovať pod tvojim práporom, budem dosahovať týchto činov pre teba.
 str_npc20_backstory_c|O Akallabêth, kde že si teraz? Zanikol si, so všetkým si navždy zanikol... Tam, kde kedysi bývalo svetlo, sláva nášho ľudu väčšia než všetkých ostatných, tam teraz hyzdí zem už len tieň. Moja prekrásna domovina teraz spí v nekonečnom tichu mora. Moje srdce je však plné plameňa, a v tom plameni bdejú temné tvory. Vládnem umením, aké si tí tvoji kumpáni nedokážu ani predstaviť. Takže ma počúvaj! Budeš žobroniť o moju pomoc tak, ako by si po správnosti aj mal, alebo odtiaľ odcupotáš so stiahnutím chvostom jak bezmocný červ? Vyber si, a rýchlo!
-str_npc21_backstory_c|Mal by si vedieť že ženy, akokoľvek skúsené, nesmú jazdiť s éoredmi. Ale stojím si za tým, že čakanie pri krbe na návrat vojakov nie je môj osud. Nebudem nečinne sedieť dokiaľ je v tejto Vojne stále čas na veľké činy a rada by som ich dosiahla po tvojom boku, bojovník.
+; str_npc21_backstory_c|Listen 'ere, tiny! If yer' some bigshot chief indeed, p'raps yer can talk to the bossman there and pay off what I owe? I reckon I could join your lil' band. See the world, eat some sheep... (*She licks her impressive fangs.*)
 str_npc22_backstory_c|Ale dokiaľ sú nepriatelia Lothlórienu na úprku môžem sa k tebe na chvíľu pridať, {playername}. Cítim, že naše osudy sú v tejto Vojne prepletené.
 str_npc23_backstory_c|Vydiac ťa ustrojeného na vojnu si myslím, že by si to nepochopil. Ale musel si cestovať mnohými krajmi - povedz, videl si aj iné šíre hvozdy? Mohol by si ma k ním vziať?
 str_npc24_backstory_c|Bojovanie v sebe nesie nápev pokoja, ktorý sa nehodí k trpasličiemu bojovníkovi môjho pôvodu a povahy. Domnievam sa, že na cestách si toho užijete omnoho viac a že tvoja vec je blízka záujmom trpaslíkov, že? Azda nemusím hovoriť, že bojovný trpaslík výrazne navýši vašu nádej na prežitie.
@@ -2177,7 +2181,7 @@ str_npc27_backstory_c|Možno by si mohol byť mojím novým vodcom.
 str_npc18_backstory_later|Zrejme sa mi pošťastilo, pretože Veľký Pán Lurmsakun bol v tej dobe viazaný inde. Jeho zástupcovia ma tu nechali zhniť. Ale mojím osudom nebolo zhynúť niekde v kobke za mrežami! Prišiel si, aby si mi doprial smrť na bojsiku, po akej bažím?
 str_npc19_backstory_later|Stoj! Vrátil si sa, ako som predpokladal. Moje ruky zviazali žiarliví náčelníci nečinnosťou. Pohovorme si, veliteľ! Budem ťa nasledovať a bojovať v tvojich šíkoch, aby som si vydobyl slávu.
 str_npc20_backstory_later|A zjavuješ sa v mojich snoch aj naďalej! Nedáš mi snáď pokoja ani tam? Moje sny vidia do ďalekých časov i miest. V Dol Guldúre ťa ešte očakáva nejeden nevykonaný skutok. Vravím ti: ak by si mal rozum, požiadal by si ma hneď o pomoc.
-str_npc21_backstory_later|Viacero jazdcov dorazí s početnými zraneniami na tele, snažím sa im poskytnúť tú najlepšiu starostlivosť. Ale stále sa cítim byť uviaznutý v kleci.
+; str_npc21_backstory_later|Look wha' the cat dragged in! Done well fo' yerself, then, 'ave yer? Had a lovely time strollin' around, not bein' chained to a damned rock?! Well ain't that nice! How 'bout yer go speak to the bossman for me? Now, better than never.
 str_npc22_backstory_later|Už si sa rozmyslel? Čas Eldarov sa kráti.
 str_npc23_backstory_later|Niekoľko dní som sledoval skrýšu obrovských pavúkov. Odporné tvory, ale aspoň držia votrelcov ďaleko. Prišiel si ma požiadať, či by som sa vybral na cesty s tebou?
 str_npc24_backstory_later|Budovanie obrany zvládne každý trpaslík. Ale ja potrebujem nájsť prácičku i pre svoju sekeru. A to čo najskôr. Ber ma so sebou.
@@ -2187,7 +2191,7 @@ str_npc27_backstory_later|Už si sa rozmyslel? Poslúžim dobre.
 str_npc18_backstory_response_1|Ak si naozaj tak neohrozená, ako vyzeráš, možno by si za mňa mohla bojovať. Po tom, čo ťa trochu vykŕmime, samozrejme.
 str_npc19_backstory_response_1|Nuž dobre. Dokiaľ sa dokážeš udržať v bojovom šíku, mohla by sa nám tvoja paža hodiť, Vrchovec.
 str_npc20_backstory_response_1|Je to zvláštny spôsob, ako ma požiadať, aby si sa ku mne mohol pridať. Avšak dobre, môžeš ísť s nami.
-str_npc21_backstory_response_1|Uvítám pomoc Rohanskej štítonošky.
+; str_npc21_backstory_response_1|It's true you're rather large and look like you can handle yourself in a scrap. I might have use for you.
 str_npc22_backstory_response_1|Bolo by trúfalé to odo mňa žiadať, ale určite by sa mi zišli tvoje schopnosti v nadchádzajúcich bojoch.
 str_npc23_backstory_response_1|Cestujeme po svete aby sme uchránili všetko čisté. Prinášame nepriateľom boj.
 str_npc24_backstory_response_1|Samozrejme, pre trpasličieho bojovníka mám vo svojej družine miesto.
@@ -2197,7 +2201,7 @@ str_npc27_backstory_response_1|Poslúžiš.
 str_npc18_backstory_response_2|Phe! Nestojím o vraždiace psisko zo zápasísk.
 str_npc19_backstory_response_2|Hovoríš o veľkých činoch. Choď a nejaké vykonaj pred tým, než sa budeš chcieť zhovárať so mnou!
 str_npc20_backstory_response_2|Phe! Hádam, že viac štekáš než hryzieš. Mám niečo na práci, takže mi choď z cesty!
-str_npc21_backstory_response_2|Prepáčte, moja Pani, ale nič s tým nezmôžem.
+; str_npc21_backstory_response_2|Bad luck, troll. I can't afford to haggle for the likes of you.
 str_npc22_backstory_response_2|Vrátim sa, keď nebude Lothlórienu hroziť také nebezpečenstvo.
 str_npc23_backstory_response_2|Nie. Nebereme so sebou pätolízačou.
 str_npc24_backstory_response_2|Nie. Vedieme si celkom dobre.
@@ -2207,7 +2211,7 @@ str_npc27_backstory_response_2|Nepotrebujem ťa, otrok.
 str_npc18_signup|Ach, jak rád by som zase vnoril tesáky do mäkkého šťavnatého mäsa! Čoskoro uvidíš, zač stojím, až budú moje ruky i nohy opäť voľné a brucho plné.
 str_npc19_signup|Áno, na čas ma tak môžeš nazývať, lebo za svoju vrchoveckú krv sa veru nehanbím. Môj ľud si už vytrpel pod krutovládcami z Rohanu mnoho, a pociťujem s nimi nemalú sunáležitosť. Pomôžem ti v tejto vojne so všetkým, čo bude treba. Ale na oplátku, veliteľ, mi ty budeš musieť pomôcť presadiť môj nárok, až nastane čas.
 str_npc20_signup|Nachvíľu budem prehliadať a trpieť tvoje povýšenectvo, avšak vedz, že príde deň, kedy sa karta obráti. Možno vtedy, až budeme obaja stáť pred Temným pánom, ktorého som kedysi poznal pod celkom iným menom, uvidíme, komu bude ochotný načúvať. A potom ti dám poriadnu príučku.
-str_npc21_signup|To je veľkorysá ponuka, môžeš ma privítať vo svojej družine, veliteľ.
+; str_npc21_signup|Now yer' talkin'! Go see the boss and let me outta this hole.
 str_npc22_signup|Chápem. Priznávam, že sa ku mne už dostali zvesti o tvojich činoch.
 str_npc23_signup|Nenávidím násilie a nástroje vojny, ale viem ako sa brániť v zhone.
 str_npc24_signup|Som skúsený so sekerou v boji na blízku ale aj v hádzaní. Taktiež ti môžem zaistiť nízke poplatky ak ma necháš sa porozprávať s obchodníkmi. A mám aj očko na hľadanie tej najlepšej koristi z padlých nepriateľov na bojisku.
@@ -2217,7 +2221,7 @@ str_npc27_signup|Vážne? Urobil by si dobre ak by si ma zapísal.
 str_npc18_signup_2|Moja mať mi raz povedala, že som sa narodil, aby som sťal mnohých nepriateľov. Pre teba budem zabíjať mnohých slabochov zo Západu. Len mi daj do rúk kvalitnú oceľ, o zbytok sa postarám!
 str_npc19_signup_2|Bojujem ako môj ľud, ako vlci za noci - dokážem vrhať kopijou alebo zaboriť piku hlboko do hrude rútiaceho sa jazdca. Ruky mám tvrdené rukoväťou sekery i meča. S s tebou budem hovoriť otvorene: nezáleží mi, či mi zaistíš službu Ruke či Oku, pre mňa medzi nimi nie je rozdiel. Jediné, o čo usilujem, je naplnenie môjho právoplatného nároku na trón v Zlatej Sieni.
 str_npc20_signup_2|Avšak nateraz nech je moje umenie a moc, aké som dlhú dobu skúmala a zdokonaľovala, jarmená v tvojich službách. Ale vedz toto: so Zigûrpelovou pomocou budeš ako drak, ktorý vyrástol v samotnom Utumne. Vykonám pre teba veľké veci, aj keď mnohé z nich nebudeš môcť svojou mysľou uchopiť.
-str_npc21_signup_2|Pravidelne som trénoval streľbu lukom a lovil som oštepom. A pod tvojim velením povediem lov i na ohyzdov. Tiež sa trochu vyznám v liečiteľstve, v dnešných časoch tak potrebnom.
+; str_npc21_signup_2|I'll be right behind yer, don't yer worry.
 str_npc22_signup_2|Možno ak sa pripojím k tvojej družine a nepriateľovi uštedríme nečakané a prudké útoky, jeho rozhodnosť zakolíše. Pôjdem.
 str_npc23_signup_2|Možno ťa môžem naučiť pohybovať sa rýchlejšie a zároveň robiť menej hluku. Poďme.
 str_npc24_signup_2|Ak dokážeš udržať tých hromtĺkov z tvojej družiny, aby načúvali tvojim rozkazom, hlavne tých záludných Elfov, veľmi rád sa pridám.
@@ -2227,7 +2231,7 @@ str_npc27_signup_2|Nebudeš ľutovať, že si ma vzal so sebou.
 str_npc18_signup_response_1|Páči sa mi tvoj zápal. Nuž dobre, pošlem o tebe Lurmsakunovi správu.
 str_npc19_signup_response_1|Nuž, v tom prípade, 'Princ', chop sa zbraní. Od teraz bojuješ za mňa.
 str_npc20_signup_response_1|Dúfam, pre tvoje dobro, že to nie sú len prázdne slová. Nesklam ma, Zigûrphel.
-str_npc21_signup_response_1|Pôsobivé. Sme pripravení vyraziť kedykoľvek vám to príde vhod, moja Pani.
+; str_npc21_signup_response_1|Very well, we shall see if you prove worthy.
 str_npc22_signup_response_1|Bolo by nám cťou byť v spoločnosti Elfského lorda.
 str_npc23_signup_response_1|Tak dobre. Dúfam že neutečieš od prvého ohyzda, ktorého stretneme.
 str_npc24_signup_response_1|Tak dobre, Majster Trpaslík, môžete sa pridať.
@@ -2237,7 +2241,7 @@ str_npc27_signup_response_1|Veľmi dobre. Poďme.
 str_npc18_signup_response_2|Si prudký... možno až príliš prudký. Pár dní naviac v trestnej klade by ťa malo naučiť poslušnosti.
 str_npc19_signup_response_2|Ešte si budeš musieť chvíľu vystačiť s posedením na balíkoch slamy, 'Princ'.
 str_npc20_signup_response_2|Tvoj chichot pre mňa znie ako škripot hrdzavého šrotu. Kroť svoj jazyk pred tým, než znova prehovoríš!
-str_npc21_signup_response_2|Ospravedlňujem sa, moja Paní, možno nabudúce.
+; str_npc21_signup_response_2|I have no need for you at the moment.
 str_npc22_signup_response_2|Avšak na druhú stranu by sme sa asi mali Lothlórienu snažiť pomôcť vlastnými silami.
 str_npc23_signup_response_2|Prepáč, ale neviem si ťa predstaviť na bojisku.
 str_npc24_signup_response_2|Prepáč, mám rád Elfov.
@@ -2247,7 +2251,7 @@ str_npc27_signup_response_2|Rozmyslel som si to.
 str_npc18_payment|Určite áno, mocnému veliteľovi, ako si ty, bude stačiť jediné slovo, a prepustia ma. [stojí {reg14} bodov vplyvu s {s14}om]
 str_npc19_payment|Vyzerá to, že Daeglaf Čierny si vymýšľa výhovorky, aby si ma tu podržal, veliteľ. [stojí {reg14} bodov vplyvu s {s14}om]
 str_npc20_payment|To skôr ty by si mal byť tým, kto by nemal sklamať mňa či Pána, ktorému obaja slúžime. Myslíš, že si podľa neho vedieš dosť dobre? [stojí{reg14} bodov vplyvu so {s14}om]
-str_npc21_payment|Pripojil by som sa k tebe, ale kto sa postará o zranených, ak bude mesto napadnuté? [stojí {reg14} vplyvu s {s14}]
+; str_npc21_payment|Speakin' of 'worth', that little debt of mine might not be all that little, if yer catch me drift. And the bossman might try and pull a sneaky on yer, so watch out! [costs {reg14} Influence with {s14}]
 str_npc22_payment|Čoskoro by sme mali vyraziť. Cena môjho úsilia príde vnivoč, ak Nepriateľ vycíti moju prítomnosť ešte predtým, než naň udrieme. Ale Lotlórien ma taktiež potrebuje. [stojí {reg14} vplyvu s {s14}]
 str_npc23_payment|Pridal by som sa k tebe, ale povinnosť mi káže ostať tu. [stojí {reg14} vplyvu s {s14}]
 str_npc24_payment|Pridám sa k tebe, ale obávam sa, že pre to nebude mať môj ctihodný otec Dwalin veľké pochopenie. [stojí {reg14} vplyvu s {s14}]
@@ -2257,7 +2261,7 @@ str_npc27_payment|Pridal by som sa k tebe, ale povinnosť mi káže ostať tu. [
 str_npc18_payment_response|O tom nepochybuj. Lurmsakunovi podradení sa ma neopovážia odmietnuť. [stojí {reg14}/{reg15} bodov vplyvu]
 str_npc19_payment_response|Náčelník Daeglaf ma bude musieť prepustiť, ak budem neústupný. [stojí {reg14}/{reg15} bodov vplyvu]
 str_npc20_payment_response|Samozrejme, že áno. Tak poď už! Nie je to, koniec koncov, nejaký krpatý zmok, ktorého budeš nasledovať. [stojí {reg14}/{reg15} bodov vplyvu]
-str_npc21_payment_response|Je to šľachetný dôvod, ale som si istý, že sa tu nájde náhrada. [stojí {reg14}/{reg15} vplyvu]
+; str_npc21_payment_response|Whatever he might try, you are leaving with me. [costs {reg14}/{reg15} Influence]
 str_npc22_payment_response|Ver mi, mne budeš omnoho užitočnejší. [stojí {reg14}/{reg15} vplyvu]
 str_npc23_payment_response|Od teraz a navždy, tvoja povinnosť je pri mne. [stojí {reg14}/{reg15} vplyvu]
 str_npc24_payment_response|Majster Dwalin určite pochopí, že bojaschopný trpaslík by nemal šetriť svojimi silami pred našimi nepriateľmi príliš dlho. [stojí {reg14}/{reg15} vplyvu]
@@ -2267,7 +2271,7 @@ str_npc27_payment_response|Od teraz a navždy, tvoja povinnosť je pri mne. [sto
 str_npc18_morality_speech|Mocný! Môj smäd po krvi je neuhasiteľný! Prečo {s21} ako zbabelci? Bojujme s nimi!
 str_npc19_morality_speech|Veliteľ, nepáči sa mi, že si prikázal {s21}. Kráľ ako ja nikdy neodchádza z bitky s prázdnymi rukami, ale ak už niet zásob a nemám čím nakŕmiť svojich vojakov, onedlho sa väčšina, ktorá nás nasleduje, zmení na odpadlíkov.
 str_npc20_morality_speech|Povedal by som, že som od teba očakával viac, veliteľ, ale to by bola lož. Maj sa na pozore, aby tvoje povýšenectvo nespôsobilo škody na vznešených údeloch tých, čo sú lepší, než si ty sám.
-str_npc21_morality_speech|Nevšímaj si, čo hovoria ostatní vojaci, ale niekedy {s21} je tá najmúdrejšia voľba. A ja napríklad oceňujem všetky tie ušetrené zlomeniny, čoby šancu bojovať v iné dni, kedy sa od nás osud neodvráti.
+; str_npc21_morality_speech|Listen 'ere, chief. A well respected raidin' company can't just {s21} and leave the lads' stomachs agrowlin'!  And mine, look what a biggun' it is too! I might just go and have a little nibble off one of the smaller ones - a finger, a leg maybe... 
 str_npc22_morality_speech|Musíš zvážiť svoje rozhodnutia, veliteľ. {s21} znamená, že nie sme o nič lepší, než nepriateľ, a to podráža sebavedomie naše aj našich priateľov.
 str_npc23_morality_speech|[Niet primárneho kódu morálky]
 str_npc24_morality_speech|Nie som nadšený z toho, že si rozkázal {s21}. Padnúť v boji je poctou pre každého ozajstného trpaslíka, ale bojovať v družine vedenej zbabelcom je potupa. Čo by na to povedali moji bratranci, ak by s to dozvedeli?
@@ -2277,7 +2281,7 @@ str_npc27_morality_speech|[Niet primárneho kódu morálky]
 str_npc18_2ary_morality_speech|Nepripojil som sa k tebe, aby si zavelil {s21}, Mocný, ale aby som sa kúpala v krvi! Nateraz môžeš podniknúť toto zradne rozhodnutie, ale čoskoro mi dopraj poriadne jatka, prosím!
 str_npc19_2ary_morality_speech|[Niet sekundárneho kódu morálky]
 str_npc20_2ary_morality_speech|Ah, náš mocný veliteľ. Vravíš, že si vykonal veľké skutky? Môžem len hádať, koľko takýchto tvojich bojov dopadlo rovnako; postupoval si s vydutou hruďou priamo do paste, pričom si sa vzápätí ozlomkrky hnal preč.
-str_npc21_2ary_morality_speech|No dovoľte, veliteľ. Ženy môjho postavenia rády príjmu smrť, ale rozhodne nie hanbu na bojovom poli. {s21} znamená potupu môjho rodu i predkov.
+; str_npc21_2ary_morality_speech|Now where did all the grub go, ey? Need some help bean-countin'?! A proper chief would fetch me a nice juicy leg o'lamb, or a tasty dwarf. Poor ol' me, I'm stuck with yer instead.
 str_npc22_2ary_morality_speech|[Niet sekundárneho kódu morálky]
 str_npc23_2ary_morality_speech|[Niet sekundárneho kódu morálky]
 str_npc24_2ary_morality_speech|[Niet sekundárneho kódu morálky]
@@ -2287,7 +2291,7 @@ str_npc27_2ary_morality_speech|[Niet sekundárneho kódu morálky]
 str_npc18_personalityclash_speech|Mocný, vážiš si Varfanga ako bojovníka, ale mal by si si ho držať pri sebe len na dĺžku kopije. Už som mu raz povedala, nech nepchá svoje paprče tam, kde nemajú čo robiť, inak mu ich odseknem and nakŕmim s nimi jeho koňa.
 str_npc19_personalityclash_speech|Veliteľ, divím sa, že si ponechávaš v svojich službách tak zbabelú potvoru, akou je Ufthak. Samozrejme, ohyzdi sú špiny a slúžia len ako živé štíty pre ozajstných bojovníkov, ale on si pochoduje po tábore a rozkazuje ohyzdom i ľuďom bez rozdielu, akoby to bol on, kto nás vedie. Dúfam, že ti nebude príliš chýbať, ak sa ho rozhodnem podrezať. Alebo si možno vystačím s ufiknutím jeho nosiska.
 str_npc20_personalityclash_speech|Južan Lykyada by sa mal naučiť, ako sa správať, a vedieť, kedy preukázať svoju poníženosť. Jeho jazyk je ostrý ako kopija, je to pyšný muž! Nezaujíma ma, že je medzi svojimi veliteľom - tá podradná rasa hlupákov a slabochov pre mňa nič neznamená, a len veľmi pomaly rozpoznávajú, kto im je nadradený a komu by sa mali klaňať! Ak by len vedel, čo by som mu dokázal spôsobiť...
-str_npc21_personalityclash_speech|Spomenul som že nenávidím {s11}?
+; str_npc21_personalityclash_speech|Blimey, chief, but that Sickburpfoul's a bit of a mad bat, ain't she? Yer can tell she's cooked one crow too many in that there cauldron of hers, the one what I drag on me poor ol' back at Her Ladyship's command. And lumme if she don't look at me down the end of the nose like I was a piece of dung scrapings, and her head not even up to me navel! Enough to make me want to 'ave her noggin meet my fist, I reckon. But I've seen her sort afore, yes I 'ave. With the likes o' her around, yer wants a pair o' extra eyes round the back of your 'ead, and no mistake.
 str_npc22_personalityclash_speech|Spomenul som že nenávidím {s11}?
 str_npc23_personalityclash_speech|{playername}, práve som videl {s11}a, ako zadupal hniezdo mladých vtákov. Jeho nešikovnosť zmarila životy nevinných tvoroch.
 str_npc24_personalityclash_speech|Pán {s11} si vedie v boji dobre, ale začínam mať podozrenie, že všetkých svojich nepriateľov zaslepuje ligotom svojich vlasov. Alebo žeby pred ním padali sami v úžase pred jeho slávou a panovačným vystupovaním?
@@ -2307,7 +2311,7 @@ str_npc27_personalityclash_speech_b|Nenávidím {s11}.
 str_npc18_personalityclash2_speech|Gulm nie je iba zradné psisko, Mocný - je dokonca pyšným na to, že taký je. Minulú noc nám zase rozprával ten svoj príbeh vôkol táboráku a chvastal sa svojimi zbabelými činmi. Radil by som ti dávať si na tú potvoru pozor, Mocný. Ak zradil veliteľov v službách Bielej Ruky, čo by ho zastavilo od toho, aby zabodol dýku do chrbta aj tebe?
 str_npc19_personalityclash2_speech|Nenávidím {s11}a
 str_npc20_personalityclash2_speech|Vždy, keď môj pohľad spočinie na Fuldimirovi, vzopne sa vo mne nepoznaný hnev. Nie, nie, nie je to pre nič, čo vykonal. Ale on a jeho ľud, morskí psi z Umbaru, sú najnehodnejší svojej krvi. Opovažujú sa sami nazývať dedičmi starobylého Anadûnê - ale samozrejme, že oni užívajú slovo 'Númenor', pričom ani nepoznajú jeho pôvodné meno. Pochybujem, že by sa vo Fuldimírových našla zo jediná pravá kvapka! Nuž, možno ak ho ušetríš, tak si to sama overím...
-str_npc21_personalityclash2_speech|Spomenul som že nenávidím {s11}?
+; str_npc21_personalityclash2_speech|I've been thinkin', chief - how does one kill a witch? Without gettin' turnt into a pile o'slugs, I means. That ol' bat's been givin' me the evil eye again and it made me skin crawl the whole day. On the inside! I'm 'appy to smash heads and break shields in a scrap, but what SHE does to the heads I did done smashed, when nobody's lookin'?! I don't play with me food, not like that. Gives me the creeps, tha' one.
 str_npc22_personalityclash2_speech|Spomenul som že nenávidím {s11}?
 str_npc23_personalityclash2_speech|Spomenul som že nenávidím {s11}?
 str_npc24_personalityclash2_speech|Pekný kus šrotu, že, kapitán? I keď ho trochu znehodnotili čachre machre tej elfskej ženy menom {s11}.
@@ -2327,7 +2331,7 @@ str_npc27_personalityclash2_speech_b|Nenávidím {s11}.
 str_npc18_personalitymatch_speech|Mocný, všímaš si, aký smrtiaci je Lykyada v boji? Aké rýchle sú jeho šípy, akú ostrú má to on čepeľ! S tvojim zvolením, Mocný, by som s nim rada strávila nejaký čas, kedy by ma osobne cvičil. Mohol by ma toho mnoho naučiť, čím by som sa zase ja stala užitočnejšou pre teba. 
 str_npc19_personalitymatch_speech|Radosť z boja je piesňou pre tep, aký sa ozýva v mojich žilách! A vo Varfangovi tiež, ako vidím. Ten muž je postrachom bojiska, vysmieva sa našim nepriateľom, pričom pred ním uháňajú so zdesením v očiach. Tí muži z Východu ma ozaj udivujú, Veliteľ. Prišlo by nám vhod priučiť sa ich jazdeckému umeniu, pokiaľ nebudú Rohančania učiť Vrchovcov po tom, čo narazím na svojich.
 str_npc20_personalitymatch_speech|Chvála Bolzogovi. Bolzogovi Mocnému! Vidíš, jak sa plantá s tými jeho krivými nožiskami? Robí všetko, čo mu poviem. Tak, ako by každý správny krpatý 'urku' mal- Mám ho celkom rada, veliteľ. Bolzog! Prines mi tie oleje! Hneď!
-str_npc21_personalitymatch_speech|Hrdinsky vybojovaná bitka, veliteľ, blahoželám k víťazstvu. Všimol som si, ako sa {s11} vysporiadal aj so zranenými a neduživými, aby aj posledný z nepriateľov dostal to, čo si zaslúžil.
+; str_npc21_personalitymatch_speech|Ha! Chief! Last night, right, I was a-watching that poor little blighter Ufthak for a bit. 'E's a funny little fella, and no mistake! I made 'im cook me some meat he'd stashed away, right, and then I et it, right 'fore his face! Blimey if he didn't bawl his eyes out! Yer should've saw how his nose runs when he bawls, it don't 'arf run like a stream! Ha! Good thing yer keep him around!
 str_npc22_personalitymatch_speech|Spomenul som že mám rád {s11}?
 str_npc23_personalitymatch_speech|{playername}, aj keď neznášam pohľad na bojové pole, nemohol som si nevšimnúť ako hrdo a so všetkou nádherou môj pán {s11} vyrazil a doľahol na tie ohavné potvory dravo ako jastrab.
 str_npc24_personalitymatch_speech|Krv a víťazstvo, presne, ako to mám rád! Utŕžil som však sečné zranenie, no {s11} mi ho dokázal schopne ošetriť.
@@ -2337,7 +2341,7 @@ str_npc27_personalitymatch_speech|Spomenul som že mám rád {s11}?
 str_npc18_personalitymatch_speech_b|Mocný, to, že pod tvojou zástavou bojuje aj niekto ako Lykyada, slúži tvojmu menu. Niekedy som považoval všetkých Južanov za slabých a krehkých, nie príliš odlišných od mužov Západu, ale pokiaľ pochoduje v ich šíkoch viac takých, ako je on, tak sú dni Západu nadobro spočítané.
 str_npc19_personalitymatch_speech_b|Veliteľ, Varfang a ja sme minulú noc pri táboráku zdieľali mech vína. Považujem ho za dobrého radcu, pretože si je vedomí členov svojich predkov, ako by to aj malo byť. Netuším, či nás sprevádzajú duchovia našich predkov, ako hovorí on. Nemám tu predstavu rád, to je pravda. Ale kráľ musí poznať príbeh svojho rodu, jeho pramatiek a praotcov. Varfang je jedným z tých, ktorí to poznajú a majú na zreteli.
 str_npc20_personalitymatch_speech_b|Nikdy som nenarazila na 'urku', akým je Bolzog. Oh, pravda, nepozerá sa naň príliš dobre, ale za svoj dlhý život je prvý, na koho som narazila, kto dokáže viac, než sa len plížiť, schovávať a vraždiť. Jeho skrútené ruky sú prekvapivo obratné a zručné. Áno, prekvapivo zručné... Vyzerá to, že sa toho bude z umení schopný naučiť omnoho viac, než som si spočiatku myslela.
-str_npc21_personalitymatch_speech_b|Ušetrenie života je ten najcnostnejší čin, a s takou dušou sa cítim v príbuzenstve, aj ak sú naše kraje navzájom svetom vzdialené.
+; str_npc21_personalitymatch_speech_b|That silly Ufthak keeps tryin' to sneak away, but I'll always catch 'im, yes I will. It's almost like the old days, chief. When I had me band o'lads at me service. Or way back o'er the mountains, when I had me boys with me -- Bert, and Bill, and Tom... Ah well. Them days be long gone. Where's that little ratty rascal gone now, eh? Ufthak! Come 'ere, yer no-good skulker!
 str_npc22_personalitymatch_speech_b|Mám rád {s11}.
 str_npc23_personalitymatch_speech_b|Zaujímalo by ma, aký je vlastne starý. Možno o tucet storočí starší, než ja? To nič, nerozumel by si tomu.
 str_npc24_personalitymatch_speech_b|{s11} a jej Dálske pokolenie ľudí, k akému náleží, i keď to nie sú práve bojovníci ako trpaslíci, sa osvedčili ako verný spojenci v tejto Vojne. Veru dobrá voľba pre priateľov a spoločníkov spomedzi iných pokolení ľudí, ak by som súdil.
@@ -2357,7 +2361,7 @@ str_npc27_retirement_speech|Život bojovníka ma začína unavovať, usadím sa.
 str_npc18_rehire_speech|Moje ostrie baží po krvi, Mocný. Dovoľ mi ísť znova s tebou!
 str_npc19_rehire_speech|Je dobré ťa znova vidieť v zdraví, veliteľ. Daj mi zvolenie opäť sa pripojiť k tvojej družine.
 str_npc20_rehire_speech|Prepusti nás, veliteľ. Túto vojnu nevyhráme takouto nečinnosťou!
-str_npc21_rehire_speech|Vitaj späť, veliteľ. Zjednotíme znova naše cesty?
+; str_npc21_rehire_speech|How've yer been, chief? Should I pack me things and be off with yer again?
 str_npc22_rehire_speech|Rád ťa vidím, {playername}. Vydajme sa na cesty opäť bok po boku.
 str_npc23_rehire_speech|Rád ťa znova vidím, {playername}. Vydajme sa na cesty opäť spoločne.
 str_npc24_rehire_speech|Sekeru mám v hotovosti, {playername}. Máš tam pre mňa opäť miesto?
@@ -2367,7 +2371,7 @@ str_npc27_rehire_speech|Môžem ti zas slúžiť?
 str_npc18_home_intro|Ah, Anduina. Mocný, už ti niekto rozprával o veľkých víťazstvách vozatajov našich prapredkov? Uzatvorili spojenectvo s Variagmi a spolu s našimi bojovníkmi rozdrvili slabošské vojská Gondoru, za časov ich kráľa, ktorého nazývali Ondoher. Naši praotcovia si iste museli užívať tento krvavý kúpeľ!
 str_npc19_home_intro|Ah, Edoras. Moje právoplatné sídlo. Hľa tam, na jeho samotný vrch, veliteľ; Zlatá Sieň. Len pred niekoľkými pokoleniami tam došlo k tomu, že pred samotnými vrátami Meduseldu bol zavraždený posledný syn Helma Kladivorukého, a potom sa načas stál kráľom Wulf. Samozrejme nie ten Wulf, ktorý je dnes náčelníkom Vrchoviny - ten je len úbohým tieňom muža, o ktorom hovorím.
 str_npc20_home_intro|Ah, Osamelá Hora. V týchto časoch je to posledná bašta Durinovho ľudu, však? Je príjemné vidieť ju na vlastné oči. Príjemné, to áno... ale nie až tak príjemné, ako spomienky na umierajúcich trpaslíkov, ktoré som svojimi čarami predĺžila. Odolní sú trpaslíci, to uznávajú všetci! Avšak Aulë Vynálezca im neudelil do vienku húževnatosť voči utrpeniu.
-str_npc21_home_intro|Zastavme sa tu na chvíľu, veliteľ. Pred nami, medzi riekou Anduinou a Lipavou, leží pole Celebrant, kde dávno Eorl Mladý pomohol Gondoru odraziť vo veľkej bitke spoločného nepriateľa.
+; str_npc21_home_intro|Oi, chief! That there is a bad place! Dol Guldur, the darkest den of the worst kinds of things. All them trees around and not one juicy squirrel, not one tasty bird on them branches. Don't need to be no witch or nuffin' to know the smell of them Dark Ones, and that's the shape of it.
 str_npc22_home_intro|Daro! Tamto pred nami je Angrenost a čierna veža Orthanc. Mnoho sa zmenilo od doby, kedy som ich zočil naposledy, ale nič k lepšiemu. 
 str_npc23_home_intro|Veliteľ, na slovíčko. Cesty v tejto časti lesa sú zakalené mnohým zlom a niektoré dokonca vedú naslepo. Musíme sa približovať k pevnosti Dol Guldur.
 str_npc24_home_intro|Hej, kapitán! Toto musí byť stará cesta k Východným Bránam Khazad-dûmu, alebo Morii, ako si už rozhodne počul. V diaľave je vidieť lesk jazera Kheled-zâram, a cez oblaky tri vrcholy týčiace sa nad touto časťou Hmlových Hôr
@@ -2377,7 +2381,7 @@ str_npc27_home_intro|Hej, pozri!
 str_npc18_home_description|Naši múdri nám povedali o vojne. Ak by nebolo slabosti Južanov, ktorí prehrávajú boje, v akých by mali triumfovať, Gondorčania by nikdy nezvíťazili v Bitke o Tábor. Vozy vozatajov boli rozbité, mnohí hrdinovia zahynuli v mokradiach Mŕtvych Močiarov.
 str_npc19_home_description|Rád by som videl náš ľud opäť jednotný tak, ako býval za starých čias. Už viac nebudú šedo hnedo vlasé ženy kojiť v lone chorľavé deti, pričom ich plavovlasé sesternice hodujú na mäsa a mdlejú z vína vo vytápaných sieňach. Už viac nebude čiernovlasý muž z vrchov hľadieť s nevôľou k stádam koní chované zlatovlasým statkárom. Ako kráľ dozriem na spravodlivosť - ale najprv krutovládcovia z Rohanu zaplatia wergeld, akí sú nám dlžní..
 str_npc20_home_description|Pamätám si ho stále ešte dobre - Thráuina, syna Thróra. Nesmierne tvrdohlavý, príliš ctižiadostivý budúci následník porušenej dynastie, nárokujúci si bezcenný trón! V mojich rukách podstúpil a odolal dlhému a ťažkému mučeniu. Ale nikto nedokáže čeliť moci Zigûrpel nadlho, veliteľ. Nikto. Vzala som mu jeho Prsteň tam, v temniciach Dol Guldúru, a poslala som ho do Temnej Veže ako dar. Od vtedy si ma drží Temný pán vo veľkej úcte!
-str_npc21_home_description|"Kde je dnes kôň a jazdec? Kde mocného rohu hlas?^Kde je prilba, brnenie a striebrom žiariaci pás?....^Všetko zmizlo ani dážď na horách, ufrnglo až nad vietor;?Dni uleteli n západ, v tme stíchol krásny chór...^
+; str_npc21_home_description|All me life I've not gone near sorcery, and it'd be a mighty shame to start now.
 str_npc22_home_description|Kedysi bol vybudovaný Kráľovstvom na Juhu, dnes je však sídlom toho, komu sa hovorí Biely čarodej, ktorý spriada svoje osídla, aby navýšil svoju moc na úkor druhých.
 str_npc23_home_description|Nikdy som nezašiel tak ďaleko, ale začul som našich Prieskumníkov z Temnohvozdu vravieť, že tu niekde možno obchádza kraj Nazgul. Pociťujem prítomnosť zla, niečoho skazeného, niečoho, čo nedokážem pomenovať. Je to ale mocné, radšej buďme pripravení.
 str_npc24_home_description|Podľa všetkej tej spúšte a mnohých stôp po ohyzdoch sa obávam o osud statočného Balina a jeho výpravy. Vyzerá to, že Moria upadla v Tieň a mali by sme postupovať opatrne.
@@ -2387,7 +2391,7 @@ str_npc27_home_description|Poznáš to mesto?
 str_npc18_home_description_2|Rád pochodujem s po tvojom boku, Mocný. Vodcovia môjho si budú chcieť znovu podrobiť túto zem, ktoré kedysi náležal im. Môžu si brať od Gondoru a zo Západu vôbec toľko, čo sa im zráči. Ale sám za seba vravím, že ak skropím túto pôdu krvou čo najviac nepriateľov, budem len rád.
 str_npc19_home_description_2|Prihovoríš sa za mňa, však, veliteľ, až táto vojna skonči? Nech už tu bude vládnuť akákoľvek vrchnosť - Oko či Ruka? Využiješ svojho vplyvného hlasu na to, aby som mohol právoplatne držať Edoras a Rohan ako léno daného vladára, ako moje rodové sídlo?
 str_npc20_home_description_2|Zničíme v celej Stredozemi diela Valarov, ktorých súčasťou je aj náčelník trpaslíkov. Áno, bol by to veľký úspech, ak by sa nám podarilo odčiniť to, čo Vynálezca vykonal. Ušliapeme trpaslíkov, rozbijeme kráľovstva slabých ľudí, a budeme sa smiať, keď budú elfovia miznúť v hmlách ako duchovia. A potom príde deň, kedy stanem pred Jaskyňami Zabudnutých vo Valinore, a opäť povolám svojho kráľa!
-str_npc21_home_description_2|Urobíme dobre, ak si budeme pripomínať a pamätať veľké obete i hrdinské činy, aké priniesli časy minulé. Spojenectvo medzi Rohanom a Gondorom opäť zachráni náš ľud od skazy.
+; str_npc21_home_description_2|All me life I've not gone near sorcery, and it'd be a mighty shame to start now.
 str_npc22_home_description_2|Nech nám je varovaním to, že aj tí najmocnejší, dokonca aj jeden z Istari, dokáže byť skazený a podľahnúť temnote. Tí, čo prahnú po moci, dokážu byť porazený mocou samou, preto už neotáľajme.
 str_npc23_home_description_2|Niečo mi hovorí, že sa temné vojská za jeho stenami pripravujú na pochod... Do krásneho Lothlórienu? Do Dolu? Do Zelenohvozdu, mojej domoviny? To nedokážem povedať, ale prosím, urob všetko, čo bude v tvojich silách, aby si ich zastavil.
 str_npc24_home_description_2|Pokiaľ nás osudy vojny dovedú do čela veľkej armády, mali by sme podstúpiť to riziko a vydať sa Baní, aby sme znovuzískali ich veľké bohatstvo.
@@ -2397,7 +2401,7 @@ str_npc27_home_description_2|Minas Morgul, kde sa Nazgúlovia nalievajú dňom i
 str_npc18_home_recap|Býval som zajatcom v skladoch, odsúdený na smrť za zabitie syna Lurmsakuna v zápasisku. Traja sa na mňa vrhli, porazil som ich, ale jeden z nich zhynul na zranenia. Potom si si so mnou bol ochotný pohovoriť a oslobodil si ma. Teraz za teba zabíjam a kľudne za teba aj zhyniem, ak bude treba.
 str_npc19_home_recap|Som urodzenej rohanskej krvi, prisahám - Kráľ Fengel bol mojim otcom, aj keď so ženou, s ktorou ma splodil, nikdy neuzatvoril manželský zväzok. Náčelníci Vrchoviny na mňa žiarlia, a odstrkujú ma od boja, aby som už nevykonal viac skvelých skutkov, a nezískal tak slávu pre svoju zástavu a viac mužov, čo by pod ňou bojovali. Potom si ma nechal pripojiť sa k tebe. A teraz už len očakávam, kedy konečne nadíde deň, kedy právoplatne usadnem na trón v Edorase.
 str_npc20_home_recap|Čo viac by som ti mohla povedať, veliteľ? Cibrila som svoje umenie v podzemí Dol Guldúru. Moje sny vidia do ďalekých časov a miest, a v nich som zočila teba a tvoje údely v tejto Vojne. Vyzerá to, že ti budem musieť poskytnúť svoju pomoc, aby moc Západu zlyhala a Tieň na Východe mohol opäť vzrásť a vládnuť až do konca sveta.
-str_npc21_home_recap|Nepríde mi smiešne to, že by si mal zabudnúť tak skoro.
+; str_npc21_home_recap|I had me a nice time leadin' a proper raidin' band in the mountains, until I did drunk too much and gambled me life away with those cheats from Gundabad.
 str_npc22_home_recap|Ukojím tvoju zvedavosť, ale neotáľajme.
 str_npc23_home_recap|Narodil som sa a vyrastal v Temnohvozde, ako Lesný Elf. V lesníctve nás, lesných elfov, nik nepredčí.
 str_npc24_home_recap|Som synom Dwalina z rodu Durina.
@@ -2407,7 +2411,7 @@ str_npc27_home_recap|Skrátim to.
 str_npc18_honorific|Mocný
 str_npc19_honorific|Veliteľ
 str_npc20_honorific|Veliteľ
-str_npc21_honorific|veliteľ
+str_npc21_honorific|Náčelník
 str_npc22_honorific|veliteľ
 str_npc23_honorific|bojovník
 str_npc24_honorific|kapitán
@@ -2503,3 +2507,27 @@ str_imladris_guildmaster_companion_player_none_ok|Rozumiem, starosta. Ďakujem z
 str_imladris_guildmaster_player_found_ok|Rozumiem, starosta. Ďakujem za tvoj čas.
 str_show_keybinds_form|Zvláštne klávesové skratky: ^^ Klávesy formácií:^ Použi F1-F4 na rozkazy zvoleným divíziám. ^Drž stlačené F1 aby si umiestnil zvolené divízie.^Umiestni na nepriateľské divízie aby na ne zaútočili.^^ Prechádzať typmi zbraní - O ^^ Prechádzať typom kamery - CTRL+END ^^ Povzbudiť - V ^^ Zavolať koňa - M ^^ Prehľad rozkazov/Minimapa - Backspace
 ; str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?
+str_gundabad_guildmaster_companion_player_ask|Nevidím nič viac, než holotu zradných zbabelcov, ktorí pri prvom pohľade na nepriateľa otrasú zbrane ako stromy listy v jeseni a budú uháňať kade ľahšie do svojich norí. Kde sú nejakí poriadni bojovníci?
+; str_gundabad_guildmaster_companion_none| I care not where you come from -- you’ll watch your tongue around here! Oh yes, be careful how you speak to us, or you just might find yourself falling into a dark hole of snakes in these tunnels of ours. Our fighting lads are off in rebel lands, fighting thieves and brigands and murderous elf-friends. And what’re you about, eh? Shirking your own share of the fighting, spying on our private business? Off with you, back into the fray, like a proper soldier!
+str_gundabad_guildmaster_companion_player_none_ok|A ty budeš krotiť svoj slizký jazyk, ak vieš, čo je dobré pre teba.
+; str_gundabad_guildmaster_player_found_ok|Do I hear you aright? Is this “Berta” of yours a troll that thinks? Now this, I have to see for myself.
+; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
+; str_fullname_region_rhun|East Rhovanion, on both sides of the river Celduin
+; str_fullname_region_erebor|the foothills of Erebor, the Lonely Mountain
+; str_fullname_region_celebrant|the Field of Celebrant, between the rivers Celebrant and Limlight
+; str_fullname_region_gladden_fields|the Gladden Fields, marshes of the river Gladden
+; str_fullname_region_w_emyn_muil|western Emyn Muil
+; str_fullname_region_s_misty_mountains|the foothills of the southern Misty Mountains
+; str_fullname_region_n_anduin_vale|the northern Vale of Anduin, north of the Carrock
+; str_fullname_region_s_anduin_vale|the southern Vale of Anduin, between Lorien and the Undeeps
+; str_fullname_region_cair_andros|Cair Andros, the great ship-like island of Anduin
+; str_shortname_region_rhun|East Rhovanion
+; str_shortname_region_erebor|the foothills of Erebor
+; str_shortname_region_celebrant|the Field of Celebrant
+; str_shortname_region_gladden_fields|the Gladden Fields
+; str_shortname_region_w_emyn_muil|western Emyn Muil
+; str_shortname_region_s_misty_mountains|the foothills of the Southern Misty Mountains
+; str_shortname_region_n_anduin_vale|the northern Vale of Anduin
+; str_shortname_region_s_anduin_vale|the southern Vale of Anduin
+; str_shortname_region_cair_andros|Cair Andros
+str_isengard_hunting_camp_guildmaster_player_found_ok|Pokiaľ dokáže zabíjať, beriem ho. A keď nie, rozpáram ho ako rybu. Ak sa ukáže byť len ďalším naničhodným červom, vrátim sa a odplatím ti plytvanie môjho času!

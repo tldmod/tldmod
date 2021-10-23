@@ -144,7 +144,7 @@ itm_arnor_greaves|아르노르 정강이 보호대
 itm_arnor_shield_a|아르노르 방패
 itm_arnor_shield_c|아르노르 기병 방패
 itm_arnor_sword_a|아르노르 바스타드 소드
-itm_arnor_sword_c|아르노르 바스타드 소드
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|아르노르 숏소드
 itm_riv_helm_a|리븐델 두건
 itm_riv_helm_b|리븐델 궁병 투구
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|곤도르 순찰자 후드
 itm_gondor_light_greaves|곤도르인 가죽 정강이 보호대
 itm_gondor_med_greaves|곤도르인 정강이 보호대
 itm_gondor_heavy_greaves|곤도르인 사슬 정강이 보호대
-itm_gondor_infantry_helm|곤도르 보병 투구
 itm_gondor_auxila_helm|곤도르 가벼운 투구
 itm_gondorian_archer_helm|곤도르 궁병 투구
 itm_tower_archer_helm|탑 궁병 투구
 itm_gondor_leader_helm|곤도르 고위 투구
 itm_tower_guard_helm|탑 수비대 투구
 itm_gondor_citadel_knight_helm|시타델 기사단 투구
+itm_gondor_infantry_helm|곤도르 보병 투구
 itm_gondor_knight_helm|곤도르 기병 투구
 itm_gondor_dolamroth_helm|돌 암로스 투구
 itm_swan_knight_helm|백조 기사단 투구
@@ -260,14 +260,14 @@ itm_gondor_short_sword|린히르 이켓
 itm_pelargir_eket|펠라르기르 이켓
 itm_pelargir_sword|펠라르기르 검
 itm_gondor_ranger_sword|곤도르 순찰자 검
-itm_gondor_bastard|곤도르 바스타드 소드
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|곤도르 시타델 검
 itm_gondor_cav_sword|곤도르 기사 검
 itm_gondor_spear|곤도르인 창
 itm_gondor_tower_spear|곤도르 탑 수비대 창
 itm_gondor_lance|곤도르 랜스
-itm_loss_axe|롯사르나흐 전투 도끼
-itm_loss_war_axe|롯사르나흐 전쟁 도끼
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|로리엔 롱소드
 itm_lorien_sword_b|로리엔 숏소드
 itm_lorien_sword_c|로리엔 전쟁 검
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|아이센가드 오르크 갑옷
 itm_isen_orc_armor_f|아이센가드 오르크 갑옷
 itm_isen_orc_armor_g|아이센가드 오르크 갑옷
 itm_isen_uruk_light_a|우르크 하이 가벼운 하네스
-itm_isen_uruk_light_b|우르크 하이 가죽 갑옷
-itm_isen_uruk_light_c|우르크 하이 가죽 갑옷
-itm_isen_uruk_light_d|우르크 하이 사슬과 가죽
-itm_isen_uruk_light_e|우르크 하이 사슬 하네스
-itm_isen_uruk_heavy_a|우르크 하이 사슬과 가죽
-itm_isen_uruk_heavy_b|우르크 하이 무거운 갑옷
-itm_isen_uruk_heavy_c|우르크 하이 무거운 갑옷
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|우르크 하이 추적자 가죽
 itm_isen_uruk_heavy_e|우르크 하이 추적자 가죽
 itm_uruk_tracker_boots|우르크 추적자 부츠

@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(Nie można ulepszać podczas przekazywania żołni
 ui_lance_control|Kontrola Lancy:
 ui_manual_easy|Ręczna (łatwa)
 ui_manual_hard|Ręczna (trudna)
-ui_campaign_ai|AI kampanii (nieużywane)
+; ui_campaign_ai|Campaign Difficulty (Default: Average):
 ui_crouch|Kucanie
 
 # swy: added from this spreadsheet, as requested by our translators:

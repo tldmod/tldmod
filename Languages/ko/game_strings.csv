@@ -1823,20 +1823,20 @@ str_fullname_region_gap_of_rohan|로한의 경계, 로한 경계의 서쪽 끝, 
 str_fullname_region_entwash|엔트워시의 입구, 로한의 강 엔트워시와 안두인 강의 접경지
 str_fullname_region_wetwang|닌달프, 젖은 것의 늪
 str_fullname_region_dead_marshes|죽음의 늪, 고대 다고를라드 대전투의 전장이자 이제는 저주받은 곳
-str_fullname_region_isengard|아이센가드 평야
+; str_fullname_region_isengard|Nan Curunir, the vale of Isengard
 str_fullname_region_fangorn|팡고른 숲, 나무들이 속삭이는
 str_fullname_region_brown_lands|갈색 지대, 에뮌 무일과 어둠숲 사이의 광활한 지역을 덮고 있는
 str_fullname_region_dagorlad|다고를라드, 나무 한그루 없는, 거대한 전투 평야, 모르도르 정문 앞에 펼쳐진
 str_fullname_region_n_undeep|북부 얕은 강, 안두인 강의 두 곡류 사이 거대한 
 str_fullname_region_s_undeep|남부 얕은 강, 안두인 강의 두 곡류 사이 좁은 곳
-str_fullname_region_emyn_muil|에뮌 무일, 엔트워시의 입구 위의 바위덮인 언덕
-str_fullname_region_misty_mountains|안개 산맥의 언덕
+; str_fullname_region_emyn_muil|eastern Emyn Muil, the rocky hills beyond Amon Lhaw
+; str_fullname_region_misty_mountains|the foothills of the northern Misty Mountains
 str_fullname_region_lorien|로스로리엔, 신다르 요정의 숲, 황금 말로른이 자라는 곳
-str_fullname_region_anduin_banks|안두인 골짜기, 안개 산맥과 어둠숲 사이에 위치한
+; str_fullname_region_anduin_banks|the middle Vale of Anduin, between Carrock and Lorien
 str_fullname_region_n_mirkwood|북부 어둠숲의 빽빽한 숲, 숲요정들의 고향
 str_fullname_region_s_mirkwood|남부 어둠숲의 빽빽한 숲, 낯선 생명체들에게 오염되었다고 전해지는
-str_fullname_region_above_mirkwook|북부 로바니온, 어둠숲과 북부 회색산맥 사이 지역
-str_fullname_region_grey_mountains|회색 산맥의 언덕, 난쟁이들의 거주지
+; str_fullname_region_c_mirkwood|the dense forest of middle Mirkwood, inhabited by Woodmen
+; str_fullname_region_grey_mountains|the foothills of the Grey Mountains
 str_fullname_region_mordor|모르도르, 사우론의 어두운 영토
 str_fullname_region_dimrill|딤릴데일, 모리아 산맥의 끝자락
 str_fullname_region_s_rebor|너른골의 왕국, 외로운 산의 끝자락
@@ -1865,16 +1865,20 @@ str_shortname_region_gap_of_rohan|로한의 경계
 str_shortname_region_entwash|엔트워시의 입구
 str_shortname_region_wetwang|닌달프
 str_shortname_region_dead_marshes|죽음의 늪
-str_shortname_region_isengard|아이센가드 평야
+; str_shortname_region_isengard|Nan Curunir
 str_shortname_region_fangorn|팡고른 숲
 str_shortname_region_brown_lands|갈색 지대
-str_shortname_region_misty_mountains|안개 산맥의 언덕
+; str_shortname_region_dagorlad|Dagorlad
+; str_shortname_region_n_undeep|the North Undeep
+; str_shortname_region_s_undeep|the South Undeep
+; str_shortname_region_emyn_muil|Emyn Muil
+; str_shortname_region_misty_mountains|the foothills of the northern Misty Mountains
 str_shortname_region_lorien_|로리엔
-str_shortname_region_anduin_banks_|안두인의 골짜기
+; str_shortname_region_anduin_banks_|the middle valley of Anduin
 str_shortname_region_n_mirkwood_|북부 머크우드
 str_shortname_region_s_mirkwood_|남부 머크우드
-str_shortname_region_above_mirkwook|북부 로바니온
-str_shortname_region_grey_mountains|회색산의 언덕
+; str_shortname_region_c_mirkwood|Middle Mirkwood
+; str_shortname_region_grey_mountains|the foothills of the Grey Mountains
 str_shortname_region_mordor|모르도르의 땅
 str_shortname_region_dimrill|딤릴데일
 str_shortname_region_s_erebor|너른골 왕국
@@ -2117,7 +2121,7 @@ str_formations|전투 메뉴의 복잡한 진형: ^^ - 횡대, 최고 병종이 
 str_npc18_intro|위대한 자, 기다려! 너에게 할 말이 있어!
 str_npc19_intro|잠깐, 사령관. 할 말이 있어. 아니, 아니, 고귀한 핏줄에게 말을 건다고 반드시 무릎 꿇을 필요는 없어. 
 str_npc20_intro|잠깐. 너. 널 본 적이 있어. 네 얼굴을 알아. 당신에 대한 꿈을 꾼 적이 있어 - 하지만 왜 하필 당신이지? 이제야 당신을 내 눈으로 직접 보았지만, 너는 천한 스나가보다 나을 게 없는데!
-str_npc21_intro|메두셀드에 온것을 환영하네, 전사여!
+; str_npc21_intro|Buzz off, little fly, 'fore I SQUASH YER! RRAAARGHH!  (*The troll bares her fangs in a somewhat half-hearted snarl.*)
 str_npc22_intro|반갑습니다 {playername}. Mae govannen!
 str_npc23_intro|날 내버려 둬, 이방인. 그대와 말을 섞고 싶지 않으니.
 str_npc24_intro|드왈린의 아들 킬리, 여기 있습니다!
@@ -2127,7 +2131,7 @@ str_npc27_intro|너!
 str_npc18_intro_response_1|죽음에 묶여서, 갇혀있는 노예에게, 내게 할 말이 있는가? 뭐라 말할 생각이지?
 str_npc19_intro_response_1|고귀한 피를 말하는건가? 하! 자네는 자네 몸에 그것이 한방울이라도 흐른다고 어떻게 확신하나?
 str_npc20_intro_response_1|여길 봐, 이건 무슨 의미지, 마녀? 너는 누구지?
-str_npc21_intro_response_1|반갑습니다, 레이디. 실례가 되지 않는다면 그대의 이름을 알려주지 않겠습니까?
+; str_npc21_intro_response_1|Ah yes, you have me quaking in my boots. What a scary troll, bound by this tiny chain! Why don't you squash me then?
 str_npc22_intro_response_1|요정 군주 만세! 만나서 정말 영광입니다.
 str_npc23_intro_response_1|이게 실반 엘프들이 손님을 맞이하는 방식인가?
 str_npc24_intro_response_1|{playername} 무엇이든 분부만 하세요. 두린의 후예께선 어떻게 지내십니까?
@@ -2137,7 +2141,7 @@ str_npc27_intro_response_1|당신은 누구지?
 str_npc18_intro_response_2|죽기 위해 묶여있는 노예와 대화할 바엔 말을 아낄 것이다.
 str_npc19_intro_response_2|건방진 놈. 저리 비켜.
 str_npc20_intro_response_2|네 정신나간 헛소리에 장단 맞출 시간 없다, 마술사.
-str_npc21_intro_response_2|실례지만, 다른 급한 일이 있어서요.
+; str_npc21_intro_response_2|Just this once I will let you live, you dirty beast. (leave)
 str_npc22_intro_response_2|실례지만, 이야기해야할 더 중요한 사람이 있는지라.
 str_npc23_intro_response_2|이쪽이 할 말이오. 안녕히.
 str_npc24_intro_response_2|신경쓰지 말게. 신선한 공기 좀 쐬어야겠군.
@@ -2147,7 +2151,7 @@ str_npc27_intro_response_2|[무시하고 떠난다]
 str_npc18_backstory_a|나는 단순한 노예까 아니다! 난 앞장서는 전사이자, 대열 사이에 있을 내 정당한 자리를 박탈당한 자이다! 내가 여자라는 것을 알겠지만, 나는 다른 사람들보다 더 강하고 날렵하며, 셀 수 없을 정도로 많은 남자들과 싸워 이겼다. 구덩이 관리자 - 저주받을 놈! 그 놈이 날 시험했다, 세 명과 동시에 싸우라고 했어. 세 명!
 str_npc19_backstory_a|확실히 작은 양이겠지만, 내 어미는 내 혈통에 대해 모두 말해주었다. 나는 펭겔 왕의 직계 후손인 하이드렉이다. 우리 족장들보다 로한과 던랜드의 왕좌에 더 가깝다! 내 머리카락은 검은 색이지만 어딘가 노란색 머리카락이 한 가닥씩 나오더군.
 str_npc20_backstory_a|꿈 속에서, 나무를 보았다. 온통 백색인 나무 한 그루. 그리고 너, 너도 거기 있었다. 그 옆에 서있었다. 너는 너의 손을 그 줄기에 올려놓았고, 그 줄기는 뿌리까지 시들어버렸다. 하늘의 그림자가 길어지더니, 공기가 점점 무거워졌다. 그리고 그 때, 머나먼 동쪽에서 웃음소리가 들렸다.
-str_npc21_backstory_a|나의 이름은 Gálmynë, 당신의 이름을 알아야만 했습니다, {playername}. 이유를 설명해드리죠.
+; str_npc21_backstory_a|Hah, step an itsy bit closer an' I'll snap your neck like a twig.  Come on! I'll stomp on your liver, smash your bones into dust an' juice your head like a grape.
 str_npc22_backstory_a|당신은 필멸의 인간들에게는 잊혀진 내 전투에서의 활약에 대해 알고 있을지도 모르겠군요. 시간의 흐름 속에서 이 전쟁은 엘다르의 또다른 위협일 뿐이지만, 이게 마지막 전쟁이 될 겁니다.
 str_npc23_backstory_a|무례를 용서하시죠, 이방인. 하지만 우리는 방문자들이 별로 없고, 오더라도 별 믿을만한 사람들이 아니라서요. 지난주에는 웬 난쟁이가 나타나서는... 어쨌든간에. 나의 이름은 르에바나. 어둠숲의 숲 엘프입니다.
 str_npc24_backstory_a|물어봐줘서 고맙습니다. {playername}, 사실 동부인과 군다바드 오르크들의 급습으로 우리와 너른골은 손도 쓰지 못한 채 당하고 있소.
@@ -2157,7 +2161,7 @@ str_npc27_backstory_a|나는 더가쉬다!
 str_npc18_backstory_b|내가 승리했다! 놈들을 패배시켰어! 하지만... 그 중 한 명은 너무나 약해서 내가 놈을 쳤을 때 죽어버렸어. 그가 단순한 빚쟁이 중 하나였다면 그대로 끝났을 일이지만, 아니었어. 그는 럼사쿤 대왕의 수많은 사생아 중 하나였지.
 str_npc19_backstory_b|글쎄, 로한이나 던랜드에서 내 주장을 받아들이는 이를 찾지는 않겠지만, 그럼에도 불구하고 그것은 사실이다. 나의 할머니는 야산에 사는 목동이었는데 어느날 아이센 둑에서 우연히 현 국왕 세오덴의 욕심많은 조부인 펭겔 왕과 만났다. 그는 그녀에게 홀딱 반했고, 내 어미가 그의 아이였다.
 str_npc20_backstory_b|네가 누구 앞에 서있는 지 모르는가? 무지한 멍청이 같으니. 내가 고대 아칼라베스의 지구르펠이라는 것을 알아라 - 보아하니 이 이름에 대해 아무것도 모르는 모양이군! 또한 내가 우리의 집과 무기를 가라앉힌 발라들이 나와 내 동족들에게 부당하게 내린 예전의 잘못을 바로잡을 방법을 찾고 있다는 것을 알아라. 아, 아르파라존이시여, 위대하고 영광스러운이여! 당신의 통찰력이 이대로 누구도 기억 못하는 채로 남겨지는 것입니까? 아니, 지구르펠이 살아숨쉬며 그 분의 일을 행하는 한은 아닐 것이다!
-str_npc21_backstory_b|나는 귀한 집안에서 태어났고, 어린 소녀시절부터 Éowyn 부인을 하녀로서 명예롭게 섬겨왔다. 나는 로한의 방패처녀가 되기 위해 내 형제들과 같이 훈련받았다. 우리 아버지가 그만큼 현명했단거지.
+; str_npc21_backstory_b|Yer' a hard one, are ye? (*she sighs*) Name's Berta. Used to 'ave me a raidin' gang in the Misty Mountains, mind, the nastiest goblin thieves around. Those were the good days. Then we ran into a band of these wild ones from Gundabad.  Did some drinkin', some gamblin'... Next mornin' I woke all tied up, my lads in the wind. Now I break rocks and I haul their baggage around. Sometimes they 'ave me scrappin' for money.
 str_npc22_backstory_b|군주 엘론드께서 군주 켈레보른에게 나를 보내어, 로바니온과의 전쟁에 필요한 도움과 조언을 주라 하셨다.
 str_npc23_backstory_b|나는 우리의 아름다운 숲 속에 숨겨진 길을 걷는 것을 좋아합니다. 가끔 나는 나무들 사이로 조용히 다니며 많은 숲 속 동물들의 습성을 관찰한다. 희귀한 새의 노래, 멧돼지의 보금자리는 무기가 부딪히는 소리나 에다인의 거대한 벽만큼이나 내게 아름답다.
 str_npc24_backstory_b|나는 에레보르의 방어를 향상시켰고, 젊은 난쟁이족들을 나의 아버지이자 베테랑 병사인 드왈린의 지도 아래에 우리의 관습에 따라 훈련시켰다.
@@ -2167,7 +2171,7 @@ str_npc27_backstory_b|나는 아이센가드의 늑대 기수이자 추적자다
 str_npc18_backstory_c|그래서 나는 여기에, 저주받고 침뱉음 당해, 나를 조롱하는 개자식들보다 더 강하다는 이유로 죽어야만 한다! 날 풀어주어라, 위대한 이여. 날 풀어 다오. 나를 대변해다오 - 내 힘이 네 것이 될 것이다. 내 칼이 네 것이 될 것이다. 내 목숨이 네 것이 될 것이다!
 str_npc19_backstory_c|물론 다에글라프 족장과 나머지 사람들은 내가 전투에서 공을 세웠다간 내 정당성에 날개를 달아주는 꼴이란 걸 알기 때문에 내게 영광을 얻을 기회를 주지 않으려 할 것이다. 그랬다면 병사들이 내 깃발 아래 몰려들었을텐데! 당신의 명성이 당신보다 앞선다, 사령관. 내가 당신의 깃발 아래에서 섬길 수 있게 해준다면, 너를 위해 대단한 일들을 해낼 수 있을 것이다.
 str_npc20_backstory_c|오 아칼라베스, 지금 어디에 있는가? 흐려져, 흐려져 사라져버렸구나... 한때 빛이 있었던 곳, 무엇보다 위대했던 우리 민족의 영광, 이제는 그림자만이 남아있구나. 나의 아름다운 고향은 이제 바다의 영원한 고요함을 알게 되었다. 그러나 내 가슴은 여전히 불꽃으로 가득 차있고, 그 속에서 검은 짐승들이 마구 날뛰고 있다. 너와 네 종족이 상상조차 못한 강력한 기술을 안다. 내게 귀를 기울여라! 네게 필요해 마땅한 내 도움을 원하는가, 아니면 여기서 벌레처럼 어슬렁거리며 떠나겠는가? 서둘러 결정하라!
-str_npc21_backstory_c|아무리 뛰어난 여성이라 해도 éoredas와 함께 말을 달릴 수 없겠지. 하지만 불가 옆에서 다른 전사들이 돌아오는 것을 하염없이 기다리는 게 내 운명이라 생각하진 않아. 나는 이 전쟁에서 위대한 것들을 이룰 기회가 사라질때까지 가만히 앉아있지 않을거야. 네 도움은 기꺼이 받아들이겠어. 전사여.
+; str_npc21_backstory_c|Listen 'ere, tiny! If yer' some bigshot chief indeed, p'raps yer can talk to the bossman there and pay off what I owe? I reckon I could join your lil' band. See the world, eat some sheep... (*She licks her impressive fangs.*)
 str_npc22_backstory_c|하지만 로스로리엔의 적들이 계속 돌아다니기만 한다면, 잠깐이라도 너와 합류하는 것을 고려해도 될 것 같은데, {playername}. 내 생각에 우리의 운명이 이 전쟁에서 서로 얽혀있는 것 같아.
 str_npc23_backstory_c|이해하지 못하겠지. 내 생각에 넌 전쟁을 준비하는 것 같은데, 분명히 멀리 많은 장소를 여행하게 될거야.. 다른 위대한 숲들을 본 적 있어? 날 그곳으로 데려다 줄 수 있어?
 str_npc24_backstory_c|조상의 기질을 가진 이 난쟁이 전사를 욕보이는 싸움이 소강상태에 접어들고 있다. 여행을 떠나면 더 많은 행동들을 보게 될 테고, 네 목적은 난쟁이들과 친해지게 되는 거겠지? 난쟁이가 자네의 생존 가능성을 크게 높여줄걸세.
@@ -2177,7 +2181,7 @@ str_npc27_backstory_c|어쩌면 다음엔 네가 내 주인이 될지도 모르�
 str_npc18_backstory_later|내 생각에, 위대한 왕 럼사쿤이 다른 곳에서 바쁘다는 것이 행운이었을지 모른다. 그의 감독관이 나를 여기에 썩게 내버려두었다. 하지만 죄수로 죽는 것은 내 운명이 아니야! 전쟁터에서 얻을 내 정당한 죽음을 허가해주려고 온 건가?
 str_npc19_backstory_later|어이 거기! 다시 돌아왔구나, 그럴 줄 알았어. 질투심 많은 족장들이 내 손을 놀게 놔두더군. 어디 말해보자고, 사령관! 나는 너를 따라가서 내 명성을 얻기 위해 네 부대와 함께 싸우겠어.
 str_npc20_backstory_later|넌 아직도 내 꿈을 망치고 있어! 내게 일말의 평화도 주지 않을 셈인가? 내 꿈속의 눈은 깊고도 멀리 본다. 여기 돌 굴두르에서조차 나는 네가 무엇을 행하는지 다 볼 수 있어. 이렇게 말하지. 네가 현명하다면, 지금쯤 다시 나에게 도움을 청하는 것이 어떤가.
-str_npc21_backstory_later|점점 많은 기수들이 처참한 시체로 돌아오는데, 나는 내가 할 수 있는 일을 해야만 해. 하지만 나는 아직 새 우리에 갇혀있는 느낌이야.
+; str_npc21_backstory_later|Look wha' the cat dragged in! Done well fo' yerself, then, 'ave yer? Had a lovely time strollin' around, not bein' chained to a damned rock?! Well ain't that nice! How 'bout yer go speak to the bossman for me? Now, better than never.
 str_npc22_backstory_later|생각이 바뀌었어? 엘다르를 위한 시간이 점점 짧아지고 있어.
 str_npc23_backstory_later|며칠간 거대 거미들이 둥지를 지키는 것을 관찰하고 있었어. 처음 볼 때는 못생긴 생물들이지만, 둥지 하나는 잘 지키는 놈들이지. 함께 여행을 떠나자고 요청하러 온거야?
 str_npc24_backstory_later|방어벽을 쌓는 것도 난쟁이들에게 높은 가치이지만, 나는 내 도끼를 써야겠어. 금방 자네와 합류하겠네.
@@ -2187,7 +2191,7 @@ str_npc27_backstory_later|생각이 바뀌었어? 너를 잘 따라준다니까.
 str_npc18_backstory_response_1|네가 보기처럼 정말 흉포하다면, 아마 날 위해 싸울 수 있을 거야. 물론 우리가 너를 좀 먹여주고 나면, 물론.
 str_npc19_backstory_response_1|아주 좋아. 전선에서 싸울 수 있기만 하다면, 넌 쓸모가 많겠군, 던랜딩.
 str_npc20_backstory_response_1|같이 가자고 하는 말 치고는 괴상한 방법이군, 마녀. 뭐 좋다, 너는 함께 갈 것이다.
-str_npc21_backstory_response_1|허락해준다면 기꺼이 로한 방패처녀의 도움을 받겠네.
+; str_npc21_backstory_response_1|It's true you're rather large and look like you can handle yourself in a scrap. I might have use for you.
 str_npc22_backstory_response_1|이렇게 말하는 것이 주제넘을지도 모르겠지만, 다가올 전투에서 당신이 가진 기술들을 유용하게 쓸 수 있을 것 같은데.
 str_npc23_backstory_response_1|우리는 세계를 여행하긴 하지만, 이 땅을 향유하는 모든 것들을 위해 전투하기 위함이다.
 str_npc24_backstory_response_1|물론이지, 난쟁이족 전사가 우리 동료가 된다니 든든하겠는데.
@@ -2197,7 +2201,7 @@ str_npc27_backstory_response_1|그렇게 될거야.
 str_npc18_backstory_response_2|하! 야만적인 구덩이 개 따위는 내 동료로 어울리지 않아.
 str_npc19_backstory_response_2|위대한 업적에 대해 말하는 군. 나한테 다시 접근하기 전에 가서 네 일을 좀 해라!
 str_npc20_backstory_response_2|하! 짖기는 잘 해도 무는 것보단 못한걸. 난 해야할 일이 있다!
-str_npc21_backstory_response_2|유감스럽지만, 아가씨. 제가 해드릴수 있는게 없군요
+; str_npc21_backstory_response_2|Bad luck, troll. I can't afford to haggle for the likes of you.
 str_npc22_backstory_response_2|로스로리엔이 더 안전해지면 그때 다시 오지.
 str_npc23_backstory_response_2|아니, 미안하지만 우리는 얼쩡거리는 사람을 받지 않아.
 str_npc24_backstory_response_2|아니, 유감스럽지만 우리끼리 잘 해낼 수 있을 것 같아.
@@ -2207,7 +2211,7 @@ str_npc27_backstory_response_2|노예야, 너는 이제 더 이상 쓸모가 없
 str_npc18_signup|아, 또 고기 때문에 애를 먹고 있다니! 내 진정한 기개를 보게 될거야. 내 손발이 자유로워지고, 내 뱃속에 음식이 들어간다면 말이지!
 str_npc19_signup|그래, 나를 그렇게 불러도 돼. 난 내 던랜딩의 피가 부끄럽지 않으니까. 우리 민족은 로한의 폭군 왕 밑에서 큰 고통을 받았으며, 그들에게 동족애를 느끼고 있다. 나는 이 전쟁에서, 그리고 네가 하는 모든 일에서 너를 도울 것이다. 하지만 그 답례로, 사령관, 때가 되면 내 주장을 밀어붙이는 것을 도와줘야겠다.
 str_npc20_signup|이번에는 네 오만함을 넘어가주겠지만, 언젠가 이 일로 말이 나올것이라는 것을 알아두어라. 아마 그때쯤이면, 우리 둘 다 한때 많은 다른 이름으로 불리던 암흑의 군주 앞에 서있을 것이고, 누구의 말에 귀를 기울이시는지 보자. 그때가 되면 너에게 예의라는 것을 가르쳐주마.
-str_npc21_signup|제안을 기쁘게 받아들이지. 자네 부대가 날 환영하도록 허락하겠네, 사령관.
+; str_npc21_signup|Now yer' talkin'! Go see the boss and let me outta this hole.
 str_npc22_signup|알겠네. 자네와 자네의 명성에 대해 익히 들어왔지.
 str_npc23_signup|나는 폭력이나 전쟁무기를 별로 좋아하지 않지만, 내 몸 하나는 건사할 수 있어.
 str_npc24_signup|나는 도끼를 잘 다루고, 휘두르는 것과 던지는 것 둘 다 뛰어나지. 나와 상인들을 이어준다면 네 지출도 낮게 유지해줄 수 있어. 그리고 나는 전장에서 도망친 적들로부터 최고의 전리품을 얻을 수 있는 눈을 갖고 있지.
@@ -2217,7 +2221,7 @@ str_npc27_signup|정말? 날 명단에 넣어두는 게 좋을거야.
 str_npc18_signup_2|어머니는 내게 "나는 많은 병사를 자르기 위해 태어났다"고 말한 적이 있다. 너를 위해 서양의 부드러운 약자들을 많이 죽여주겠다. 좋은 칼만 내 손에 쥐어주면 나머지는 내가 알아서 하겠다!
 str_npc19_signup_2|나는 내 동족들처럼, 밤의 늑대처럼 싸운다. 나는 창을 던지거나, 돌격하는 기병의 가슴에 파이크를 꽂아넣을 수도 있다. 팔다리를 도끼나 칼로 저며놓을수도 있다. 당신과 함께라면, 공개적으로 말하건대, 당신이 위대한 눈을 섬기든, 백색 손을 섬기든 나는 아무 상관 하지 않을 것이다. 내가 오로지 원하는 것은, 황금회랑에 자리한 내 정당한 왕좌에 앉는 것 뿐이다.
 str_npc20_signup_2|하지만 지금은, 오랜 세월에 걸쳐 찾아낸 내 전승과 기술을 그대를 섬기는 데에 매이게 하소서. 이것을 아셔야합니다, 지구르펠의 도움이 있다면, 당신은 우툼노 구덩이의 드래곤에게 날개를 달아준 것과 같이 될 것이라는 것을. 비록 당신이 이해하지 못할지라도, 당신과 당신의 목적을 위해 위대한 일을 행할 것입니다!
-str_npc21_signup_2|활과 창으로 사냥을 몇 번 나간 적이 있었어. 명령을 내려준다면 그걸로 오르크 놈들을 추적할 수 있겠지. 그리고 치유 기술도 있으니 분명 내가 필요할거야.
+; str_npc21_signup_2|I'll be right behind yer, don't yer worry.
 str_npc22_signup_2|내가 너의 부대에 합류하고나면 예상치 못한 곳에 공세를 퍼부어서 적들을 무너트릴 수 있을거야. 내 장담하지.
 str_npc23_signup_2|아마 내가 너에게 더 빠르고 조용히 움직일 수 있는 법을 가르쳐줄 수 있을거야. 가자.
 str_npc24_signup_2|만약 당신 부대의 키큰 사람들, 특히 교활한 엘프 같은 놈들을 줄 세울 수 있다면 나는 기꺼이 너와 합류할거야.
@@ -2227,7 +2231,7 @@ str_npc27_signup_2|날 데려간 걸 후회하지 않을거야.
 str_npc18_signup_response_1|네 정신이 마음에 든다. 아주 좋아, 너를 대신하여 럼사쿤에게 말해두지.
 str_npc19_signup_response_1|좋아, 그럼, '왕자님', 무기를 들어라. 너는 이제부터 날 위해 싸운다.
 str_npc20_signup_response_1|당신의 체면을 보아하니, 당신은 헛된 말을 할 것처럼 보이지는 않아 보여. 나를 실망시키지 마라. 지구르펠.
-str_npc21_signup_response_1|인상깊군요. 우리는 떠날 준비가 되었습니다, 언제든지 말씀만하시죠, 아가씨.
+; str_npc21_signup_response_1|Very well, we shall see if you prove worthy.
 str_npc22_signup_response_1|요정 군주와 동료가 되다니 영광입니다.
 str_npc23_signup_response_1|아주 좋아. 네가 오르크를 보자마자 꽁지빠져라 도망치지 않기를 바라지.
 str_npc24_signup_response_1|아주 좋아, 난쟁이 장인. 합류를 환영하네.
@@ -2237,7 +2241,7 @@ str_npc27_signup_response_1|아주 좋아. 출발하자.
 str_npc18_signup_response_2|너는 맹렬하다... 어쩌면 너무 맹렬할지도. 당분간은 좀 더 시간을 들여서 복종을 가르쳐야할 지도 모른다.
 str_npc19_signup_response_2|이 건초더미 위에 좀 더 앉아 있어야 할 겁니다, '왕자님'.
 str_npc20_signup_response_2|너의 허풍과 욕설이 귀에 거슬린다. 우리가 다시 대화하기 전에 혀를 길들이는 것이 좋겠다!
-str_npc21_signup_response_2|사과드립니다, 아가씨. 이번에는 안될 것 같군요.
+; str_npc21_signup_response_2|I have no need for you at the moment.
 str_npc22_signup_response_2|다시 생각해보니, 우리 스스로로도 로스로리엔을 지킬 수 있겠는걸.
 str_npc23_signup_response_2|미안하네만, 당신은 전투에 나가 싸울만한 재목으로는 보이지 않아서.
 str_npc24_signup_response_2|유감이네, 엘프를 좋아하게 되었어.
@@ -2247,7 +2251,7 @@ str_npc27_signup_response_2|마음을 바꿨소.
 str_npc18_payment|확실히, 너 정도 위상을 지닌 강력한 사령관은 말만 하면 돼, 그럼 그들이 날 풀어줄거야. [{s14}의 영향력 {reg14} 만큼 소모]
 str_npc19_payment|흑색의 다에글라프 족장이 나를 이곳에 붙잡아둘 핑곗거리를 찾고 있는 것 같은데. [{s14}의 영향력 {reg14} 만큼 소모]
 str_npc20_payment|대신, 너는 나나 우리 둘이 섬기는 주인을 실망시키지 않을 정도로 잘 해낼 것이다. 그의 평가 아래 훌륭히 수행해냈는가? [{s14}의 영향력 {reg14} 만큼 소모]
-str_npc21_payment|당신을 따르겠습니다, 하지만 도시가 공격당하면 누가 이 부상병에게 신경이나 써 주겠습니까? [costs {reg14} Influence with {s14}]
+; str_npc21_payment|Speakin' of 'worth', that little debt of mine might not be all that little, if yer catch me drift. And the bossman might try and pull a sneaky on yer, so watch out! [costs {reg14} Influence with {s14}]
 str_npc22_payment|곧 따르겠습니다. 적들은 근처에 다가오기도 전에 제 존재를 눈치채고 꼬리를 내릴 겁니다. 하지만 로스로레인 또한 제가 있어야 할 곳입니다. [costs {reg14} Influence with {s14}]
 str_npc23_payment|당신의 휘하에 들어가겠습니다. 하지만 제가 이곳에서 맡은 임무가 있습니다. [costs {reg14} Influence with {s14}]
 str_npc24_payment|당신을 따르겠습니다. 하지만 제 영광스러운 아버지 드왈린께서 이러한 시기에 제가 왜 이 도시를 떠나려 하는지 이해해주시지 못할 것 같아 염려스럽습니다. [costs {reg14} Influence with {s14}]
@@ -2257,7 +2261,7 @@ str_npc27_payment|당신의 휘하에 들어가겠습니다. 하지만 제가 �
 str_npc18_payment_response|의심의 여지 없이, 럼사쿤의 부하들은 감히 나를 거부하지 못 할거야. [{reg14}/{reg15} 영향력 소모]
 str_npc19_payment_response|다에글라프 족장이 내 솔직한 부탁을 듣고 길을 내줬으면 좋겠는데. [{reg14}/{reg15} 영향력 소모]
 str_npc20_payment_response|물론 그렇다네. 어서 와라! 네가 따르는 것은 천한 스나가 따위가 아니라는 것을 알게 될 거다. [{reg14}/{reg15} 영향력 소모]
-str_npc21_payment_response|고귀한 일이지만, 대신할 사람은 분명히 있을겁니다. [{reg14}/{reg15} 영향력 소모]
+; str_npc21_payment_response|Whatever he might try, you are leaving with me. [costs {reg14}/{reg15} Influence]
 str_npc22_payment_response|날 믿게. 여기보다 자네를 유용하게 써줄테니까. [{reg14}/{reg15} 영향력 소모]
 str_npc23_payment_response|이제부터 자네의 의무는 나와 있는 것이네. [{reg14}/{reg15} 영향력 소모]
 str_npc24_payment_response|드왈린께서도 전투의 영광을 지닌 난쟁이를 적들로부터 오래 떨어트려놓아서는 안된다는 점을 이해하실 것이네. [{reg14}/{reg15} 영향력 소모]
@@ -2267,7 +2271,7 @@ str_npc27_payment_response|이제부터 자네의 의무는 나와 있는 것이
 str_npc18_morality_speech|위대한 이여! 내 피의 갈망이 아직도 목말라한다! 우리는 왜 겁쟁이처럼, {s21}을 저질렀나? 날 다시 그들과 싸우게 해라!
 str_npc19_morality_speech|사령관, 나는 우리가 {s21}을 한 것이 마음에 들지 않아. 나 같은 왕은 언제나 아낌없이 주어야하겠지만, 만약 식료품 창고가 텅텅 비어버린다면 나는 줄 것이 없고, 우리 군인들은 우릴 져버릴거야.
 str_npc20_morality_speech|너에 대해 더 많은 것을 기대했는데, 사령관, 거짓말이 되어버리겠군. 조심해, 자신만을 챙기는 방식이 네 고결한 계획에 해를 끼치지 않도록 조심하는게 좋을거야!
-str_npc21_morality_speech|병사들의 말에 귀담아듣지 마십시오. {s21}이야말로 때때로 현명한 결정이 될 수 있지요. 우리 모두 부러지지 않은 팔다리나 붙어있는 목숨에 감사해야하며, 운명이 우리에게 호의를 베풀 때 다른 날로 전투를 미룰 수 있어야합니다.
+; str_npc21_morality_speech|Listen 'ere, chief. A well respected raidin' company can't just {s21} and leave the lads' stomachs agrowlin'!  And mine, look what a biggun' it is too! I might just go and have a little nibble off one of the smaller ones - a finger, a leg maybe... 
 str_npc22_morality_speech|행동을 재고해주십시오, 사령관님. {s21}은 우리를 적들보다도 명예롭지 못하게 만들 뿐더러 우리 친구들의 사기를 떨어트립니다.
 str_npc23_morality_speech|[No primary moral code]
 str_npc24_morality_speech|{s21}을 결정한 것이 마음에 들지 않는군. 전사하는 것은 모든 생각 박힌 난쟁이들의 영광이지만, 겁쟁이가 이끄는 부대에서 살아남는 것은 치욕이다. 이 사실을 알게되면 내 동족들이 뭐라 할지 궁금하군.
@@ -2277,7 +2281,7 @@ str_npc27_morality_speech|[No primary moral code]
 str_npc18_2ary_morality_speech|위대한 이여, 나는 {s21} 따위를 하려고 합류한 것이 아니라, 적들의 피로 목욕하고자 가담한 것이다! 지금은 당신의 속임수를 쓸 수 있을지는 몰라도, 빨리 나에게 좋은 살육의 기회를 주어라, 부탁한다!
 str_npc19_2ary_morality_speech|[No secondary moral code]
 str_npc20_2ary_morality_speech|아, 우리의 참 위대하신 사령관. 그대가 이룬 위대한 업적들에 대해서 말해볼까? 함정의 아가리 속으로 방심한 채 뛰어들고, 전력으로 도망치곤 하는, 너희들의 전투가 그렇게 끝난 것이 몇이나 되는지 궁금하군.
-str_npc21_2ary_morality_speech|어디 말해보시죠, 사령관님. 제가 살던 곳의 여성들은 죽는 한이 있을 지언정 불명예는 받아들일 수 없습니다. {s21}을 저지르다니 저희 조상과 가문에 대한 치욕입니다.
+; str_npc21_2ary_morality_speech|Now where did all the grub go, ey? Need some help bean-countin'?! A proper chief would fetch me a nice juicy leg o'lamb, or a tasty dwarf. Poor ol' me, I'm stuck with yer instead.
 str_npc22_2ary_morality_speech|[No secondary moral code]
 str_npc23_2ary_morality_speech|[No secondary moral code]
 str_npc24_2ary_morality_speech|[No secondary moral code]
@@ -2287,7 +2291,7 @@ str_npc27_2ary_morality_speech|[No secondary moral code]
 str_npc18_personalityclash_speech|위대한 이여, 발팽을 전사라 평가한다면, 나에게서 가능한 한 멀리 떨어져 있게 해주기를 부탁드립니다. 나는 이미 그에게 그의 손이 내가 허락하지 않는 부위에 닿게하지 말라고 경고했다. 그렇지 않으면, 그의 손을 잘라 말먹이로 줄 것이다.
 str_npc19_personalityclash_speech|사령관, 우프탁 같은 천한 생명체를 계속 옆에 둘 것인지 매우 궁금하군. 물론, 오르크 놈들은 쓰레기들이고 우리들의 진정한 전사들을 위한 화살막이가 될 수 있겠으나, 그 놈은 진영을 쏘다니며 마치 권위를 가진 것처럼 인간과 오르크에게 똑같이 명령을 내린다. 내가 그 놈을 죽여버려도 너무 그리워하지 말았으면 좋겠다. 아니면 단순히 그 놈의 못생긴 코를 잘라내버릴 수도 있고.
 str_npc20_personalityclash_speech|남부 왕조의 리캬다는 예절과 겸손함을 배울 필요가 있다. 그의 혀는 무례하며, 그에게 지나칠 정도로 오만하다! 나는 그가 추종자가 있는 대장이라는 것을 신경쓰지 않는다. - 열등한 멍청이들은 위대함을 더디게 인식하거나 자기보다 나아보이는 이들에게 굽신거릴 뿐이니까! 내가 그 놈에게 저지를 수 있는 일 중 일부라도 그 놈이 알게 된다면...
-str_npc21_personalityclash_speech|내가 {s11}을 혐오한다고 말씀드렸던가요?
+; str_npc21_personalityclash_speech|Blimey, chief, but that Sickburpfoul's a bit of a mad bat, ain't she? Yer can tell she's cooked one crow too many in that there cauldron of hers, the one what I drag on me poor ol' back at Her Ladyship's command. And lumme if she don't look at me down the end of the nose like I was a piece of dung scrapings, and her head not even up to me navel! Enough to make me want to 'ave her noggin meet my fist, I reckon. But I've seen her sort afore, yes I 'ave. With the likes o' her around, yer wants a pair o' extra eyes round the back of your 'ead, and no mistake.
 str_npc22_personalityclash_speech|내가 {s11}을 혐오한다고 말씀드렸던가요?
 str_npc23_personalityclash_speech|{playername}, 나는 방금 {s11}이 어린 새들의 둥지 위를 아무렇지도 않게 짓밟고 가는 것을 보았다네. 그의 뻔뻔한 태도는 무고한 생명체들의 어린 삶을 산산조각냈어.
 str_npc24_personalityclash_speech|{s11}경은 전투에서 꽤 활약하고 있지만, 머리 빛으로 적군의 눈을 멀게 하는 것이 아닐까요? 아니면 그의 명성과 거만한 태도 때문에 슬금슬금 피해가는 것이 아닌지?
@@ -2307,7 +2311,7 @@ str_npc27_personalityclash_speech_b|나는 {s11}을 혐오해.
 str_npc18_personalityclash2_speech|글럼은 신뢰할 수 없는 짐승이라는 것이 다가 아니다- 위대한 이여. - 그는 신뢰할 수 없다는 것을 자랑스럽게 여긴다. 그는 지난밤 캠프파이어에서 그의 이야기를, 비열한 행위를 자랑스레 우리에게 다시 들려주었다. 저 괴물을 조심히 살피는 것이 좋을 것이다, 위대한 이여. 만약 백색 손을 섬기는 동안 그의 지휘관을 배신할 수 있었다면 당신에게 그러지 못할 것은 무엇인가?
 str_npc19_personalityclash2_speech|나는 {s11}이 싫다
 str_npc20_personalityclash2_speech|훌드미르를 볼때마다 내 안의 이름없는 분노가 치밀어오른다. 아니, 아니, 그가 무엇을 한 건 아니다. 하지만 그와 그의 동족들, 움바르의 바닷개들은, 그들 핏줄의 가장 치욕스러운 것들이다. 그들은 감히 자신들을 고대 Anadûnê라 칭하는데 - 물론 놈들은 그 이상 알지 못하고 '누메노르'라고만 칭하고 있다. 왜냐면, 나는 훌드미르의 핏줄을 가르고 나면 한 방울의 진짜 피만 나올 것이라 생각하기 때문이다!, 놈을 내게 넘겨준다면, 직접 확인해볼 수 있겠지...
-str_npc21_personalityclash2_speech|내가 {s11}을 혐오한다고 말씀드렸던가요?
+; str_npc21_personalityclash2_speech|I've been thinkin', chief - how does one kill a witch? Without gettin' turnt into a pile o'slugs, I means. That ol' bat's been givin' me the evil eye again and it made me skin crawl the whole day. On the inside! I'm 'appy to smash heads and break shields in a scrap, but what SHE does to the heads I did done smashed, when nobody's lookin'?! I don't play with me food, not like that. Gives me the creeps, tha' one.
 str_npc22_personalityclash2_speech|내가 {s11}을 혐오한다고 말씀드렸던가요?
 str_npc23_personalityclash2_speech|내가 {s11}을 혐오한다고 말씀드렸던가요?
 str_npc24_personalityclash2_speech|꼴보기 좋겠어, 그렇지 대장? 만약 그 엘프 여자 {s11}이 모든 것을 조금만 망쳐놓기만 한다면 말이야.
@@ -2327,7 +2331,7 @@ str_npc27_personalityclash2_speech_b|나는 {s11}을 혐오해.
 str_npc18_personalitymatch_speech|위대한 이, 리캬다가 전투 중에 얼마나 치명적인지 알고 있어? 화살이 얼마나 빠른지, 칼이 얼마나 날카로운지! 위대한 이, 당신이 허락만 해준다면 나는 그의 지도 아래 훈련하는데 더 많은 시간을 보내고 싶어. 그는 나에게 가르쳐줄 수 있는 많은 것들을 알고 있어서 너에게 더 쓸모있게끔 만들어줄거야.
 str_npc19_personalitymatch_speech|전투의 기쁨이 내 피 속에서 노래한다! 발팡에게서도 찾아볼 수 있듯이, 나도 그렇다. 전장의 공포이자, 도망치는 무가치한 적들을 짓밟으며 웃던 그처럼. 그 동부인들은 내 강한 흥미를 불러일으킵니다, 사령관. 우리는 내가 내 것을 되찾고 로히림들이 던랜딩들을 가르치지 않는다면, 그들에게 기마술에 대해 배울 수 있을 것이다.
 str_npc20_personalitymatch_speech|볼조그를 볼지어다, 위대한 볼조그를! 그가 어떻게 내 기분에 맞춰 휜 다리를 종종거리며 내가 요청한 모든것들을 수행하는지를 보아라. 작은 '우르쿠'가 해야할 마땅한 일이 아닌가. 나는 그를 꽤 좋아합니다, 사령관. 볼조그! 내 연고 좀 가져와! 당장!
-str_npc21_personalitymatch_speech|위대한 업적으로 남을 전투로군요, 사령관님. 승리를 축하드립니다. 나는 {s11}이 어떻게 조용하고 확실하게 부상자와 병자들을 돌보았는지 깨달았습니다. 비록 마지막 적들이 그들에게 마땅한 최후를 맞음에도 불구하고 말입니다.
+; str_npc21_personalitymatch_speech|Ha! Chief! Last night, right, I was a-watching that poor little blighter Ufthak for a bit. 'E's a funny little fella, and no mistake! I made 'im cook me some meat he'd stashed away, right, and then I et it, right 'fore his face! Blimey if he didn't bawl his eyes out! Yer should've saw how his nose runs when he bawls, it don't 'arf run like a stream! Ha! Good thing yer keep him around!
 str_npc22_personalitymatch_speech|내가 {s11}을 좋아한다고 말씀 드렸던가요?
 str_npc23_personalitymatch_speech|{playername}, 내가 전투를 싫어하긴 하지만, 보고 싶지 않아도 {s11}경이 화려한 말을 타고 못생긴 생물들을 매처럼 압도하고 있는 모습이 눈에 띄더군요.
 str_npc24_personalitymatch_speech|피와 승리로다, 내가 좋아하는 것들이지! 물론, 그렇긴 하지만, {s11}이 내 상처에 친절하게 붕대를 감아줄만큼의 상처는 입었다.
@@ -2337,7 +2341,7 @@ str_npc27_personalitymatch_speech|내가 {s11}을 좋아한다고 말씀 드렸�
 str_npc18_personalitymatch_speech_b|위대한 이여, 리캬다 같은 전사가 네 깃발 아래서 싸운다는 것이 잘 말해준다. 나는 모든 남부 사람들이 서부인들과 크게 다르지 않게 약하고 퇴폐적이라고 생각했었는데, 만약 서방의 대열들 가운데 그와 같은 이가 더 많다면, 서부의 시대는 진작에 끝장이 났을 것이다.
 str_npc19_personalitymatch_speech_b|사령관, 발팽과 나는 어젯밤 캠프파이어 주변에서 포도주 껍질을 나눠 먹고 있었다. 나는 그와 깊이 의논했고, 그는 선조의 위업들에 대해 마땅히 늘 가슴 속에 새겨야한다고 말했다. 그의 말대로 조상의 혼령들이 우리와 함께 있는지는 모르겠다. 나는 생각하는 것을 좋아하지 않는다. 하지만 왕은 자신의 혈통에 대한 이야기를 알아두어야한다. 오래 전의 아버지와 어머니들에 대해서. 발팽은 그런 것들을 아는 사람이다.
 str_npc20_personalitymatch_speech_b|나는 볼조그와 같은 '우르쿠'를 만난 적이 없다. 오, 그가 사랑스럽지 못하다는 것은 인정하지만, 내 오랜 세월 동안 그는 내가 처음 만나본 것이다. 그는 단순히 숨어다니거나 살금살금 다니거나 죽이는 것 이상의 일을 할 수 있다. 그의 갈기갈기 찢어지는 손은 놀라울 정도의 재주를 갖고 있다. 그래, 놀라울 정도로 솜씨가 좋다... 그는 내가 처음 생각했던 것보다 뼈와 뼈를 다루는 기술에 대해 더 많이 배울 수 있을 것 같다.
-str_npc21_personalitymatch_speech_b|생명을 보존하는 것이야말로 가장 고귀한 행동이죠, 비록 우리의 세상이 떨어져있더라도 저는 친절한 영혼과 동족애를 느낄 수 있습니다.
+; str_npc21_personalitymatch_speech_b|That silly Ufthak keeps tryin' to sneak away, but I'll always catch 'im, yes I will. It's almost like the old days, chief. When I had me band o'lads at me service. Or way back o'er the mountains, when I had me boys with me -- Bert, and Bill, and Tom... Ah well. Them days be long gone. Where's that little ratty rascal gone now, eh? Ufthak! Come 'ere, yer no-good skulker!
 str_npc22_personalitymatch_speech_b|나는 {s11}을 좋아해.
 str_npc23_personalitymatch_speech_b|나는 그가 몇 살인지 궁금한걸. 나보다 천 살 정도 더 많은건가? 신경쓰지 마, 넌 이해 못할 것 같으니까.
 str_npc24_personalitymatch_speech_b|{s11}과 너른골 동맹군은 물론 난쟁이족 전사의 기준에 미치지는 못하지만, 이번 전쟁에서 확고한 아군임을 증명했다. 친구나 동료를 위한 최선의 선택이라고 할 수 있겠지, 굳이 말한다면야.
@@ -2357,7 +2361,7 @@ str_npc27_retirement_speech|나는 전사의 삶이 지겨워졌다, 은퇴해�
 str_npc18_rehire_speech|내 검이 아직도 피를 원한다, 위대한 이여. 당신과 다시 함께하게 해줘!
 str_npc19_rehire_speech|다시보아 반갑군, 사령관. 당신 부대에 재가입하게 해줘.
 str_npc20_rehire_speech|저희를 놓아주십시오, 사령관. 이 전쟁은 게으름 따위로는 절대 이길 수 없습니다!
-str_npc21_rehire_speech|다시 한 번 환영하네. 우리가 끝났던 곳에서 다시 시작해볼까?
+; str_npc21_rehire_speech|How've yer been, chief? Should I pack me things and be off with yer again?
 str_npc22_rehire_speech|만나서 반갑군요, {playername}. 다시 한 번 여행을 떠나보죠.
 str_npc23_rehire_speech|이렇게 보니 좋군요, {playername}. 다시 같은 길을 걸어봅시다.
 str_npc24_rehire_speech|내 도끼는 준비됐네, {playername}. 함께해도 되겠나?
@@ -2367,7 +2371,7 @@ str_npc27_rehire_speech|당신을 다시 한 번 섬겨도 되겠습니까?
 str_npc18_home_intro|아, 안두인 강. 위대한 이시여, 여러 세대 전에 전차몰이족의 대승리에 대해 들어보셨겠죠? 그들은 우리 바리아그들과 동맹을 맺었고, 온도헤르라는 이름의 왕이 통치할 적에 우리 전사들은 함께 불쌍하기 짝이 없는 곤도르 군대를 박살내버렸죠. 우리 선조들은 영광스러운 살육을 즐겼을 것이 분명합니다!
 str_npc19_home_intro|아, 에도라스. 내 정당한 왕좌. 저길 봐, 사령관, 황금회랑이야. 불과 몇 세대 전만 해도, 망치손 헬름의 막내아들이 메두셀드의 문 앞에서 살해당했고, 그 이후 한동안 울프 왕이 통치했지. 물론 현재 던랜드의 족장 울프와는 아무런 관계가 없어, 물론 - 그 놈은 더 위대한 이의 이름을 베낀 단순한 잡종일 뿐이지.
 str_npc20_home_intro|아, 외로운 산. 두린 일족 최후의 보루라, 요즘 같은 최후의 시대에도 그러한가? 드디어 내 눈으로 보게 되니 기쁘군, 그래... 하지만 오래 전 내 기술로 더 길 게 늘린 난쟁이가 죽어가는 순간의 기억만큼 즐겁진 않아. 난쟁이 놈들, 참 질기더군! 창조주 아울레께서 그들을 호의 없이 만들었는지, 놈들은 고통을 오래오래 견디곤 하더군.
-str_npc21_home_intro|여기서 잠시 멈추시죠, 사령관님. 이 앞에는 안두인 강과 림라이트 강의 경계, Field of Celebrant가 있습니다. 청년왕 에오를이 그의 곤도르 동맹군을 도왔던 곳이죠.
+; str_npc21_home_intro|Oi, chief! That there is a bad place! Dol Guldur, the darkest den of the worst kinds of things. All them trees around and not one juicy squirrel, not one tasty bird on them branches. Don't need to be no witch or nuffin' to know the smell of them Dark Ones, and that's the shape of it.
 str_npc22_home_intro|Daro! 저 앞에 오르상크의 검은 탑과 앙그레노스트가 보이는군. 그들을 마지막으로 보았을때보다 더 많이 변했는데, 안좋은 의미로.
 str_npc23_home_intro|실례지만, {playername}. 이 부분의 길은 더 꼬여있을테고, 일부는 막다른 길로 이어질겁니다. 우리는 돌 굴두르에 가까이 다가가고 있습니다.
 str_npc24_home_intro|어이, 대장! 이 길은 카잣-둠 동쪽 문으로 향하는 옛 길임이 틀림없소. 당신에게는 모리아라는 이름이 더 편하겠군. 멀리 켈레드-자람의 반짝이는 호수가 보이고, 구름 사이로 안개 산맥 세 봉우리의 웅장함이 보이는 곳이지.
@@ -2377,7 +2381,7 @@ str_npc27_home_intro|이봐, 여기!
 str_npc18_home_description|우리의 현자들이 그 전쟁에 대해 우리에게 모두 말해주었다. 남부인들의 약점만 없었더라면 이겨야할 전투에서 패배하지 않았을테고, 곤도르인들이 캠프 전투에서 승리하지 못했을 것이다. 전차몰이족들의 전차가 박살났고, 수많은 맹렬한 영웅들이 죽음의 늪 늪지대에서 죽었다.
 str_npc19_home_description|나는 과거에 그랬듯이 우리 민족들이 단결하는 것을 볼 것이다. 더이상 던랜드의 여성들은 그들의 금발머리 사촌들이 고기로 연회를 벌이며 따뜻한 회랑에서 와인을 즐기는 동안 가슴에 품은 병든 아이들을 간호하지 않아도 될 것이다. 더이상 검은머리 언덕의 남자들은 금빛 머리카락을 가진 이들이 가진 말떼들을 보고 분해하지 않아도 될 것이다. 나는 왕으로서, 정의가 실현되는 것을 볼 것이다 - 하지만 첫번째로, 로한의 폭군들은 그들의 핏값을 치르게 될 것이다.
 str_npc20_home_description|나는 그를 잘 기억한다 - 스로르의 아들, 스라인. 바보같이 허세부리며 망나니 왕좌를 차지하고 있다니! 그는 내 손에서 큰 고문을 견뎌냈다. 하지만 아무도 이 지구르펠에게 버틸 수 없다, 사령관, 누구도. 나는 돌 굴두르 지하감옥의 그에게서 반지를 빼앗았고, 대단한 보상을 위해 그를 암흑의 탑으로 보냈다. 나는 암흑의 군주의 호의로써 일어나리라!
-str_npc21_home_description|'말과 기마병들은 어디에 있는가? 우렁찬 나팔 소리는 어디에 있는가? ^투구와 사슬갑옷, 흩날리는 밝은 머리칼은 어디에 있는가? ..^산에 내리는 비와 초원에 부는 바람처럼 사라졌구나.^ 언덕 너머, 밤의 어둠 속으로...'
+; str_npc21_home_description|All me life I've not gone near sorcery, and it'd be a mighty shame to start now.
 str_npc22_home_description|한때 남부 왕국의 손으로 지어올린, 지금은 우리가 백색의 마법사라고 부르는 자의 본거지, 다른 이들을 희생시키면서 자신의 힘을 어떻게 키워나갈지를 생각하고 있겠지. 의심의 여지가 없어.
 str_npc23_home_description|이렇게 멀리 와본 적은 없지만, 초록숲 정찰대가 이 근방에 나즈굴이 돌아다닌다 말하는 것을 들었소. 악의 기운이 느껴지는 군, 하지만 확언하지는 않겠소. 이건 너무 강력해서, 우리가 준비해야할지도 모르오.
 str_npc24_home_description|황폐와 오르크 발자국으로 볼 때, 용감한 발린과 그의 탐험대의 운명이 걱정되는군. 모리아가 그림자 속에 떨어진 것 같은데, 조심해서 나아가는 것이 좋겠소.
@@ -2387,7 +2391,7 @@ str_npc27_home_description|저 도시에 대해 아나?
 str_npc18_home_description_2|너와 함께 행진하게 되어 기쁘다, 위대한 이여. 우리 민족의 지도자들은 한때 그들의 영토였던 이 땅을 다시 갖고싶어할 것이다. 그들은 곤도르와 서부에서 그들이 원하는 만큼 더 가져갈지도 모른다. 나로서는 이 땅에 더 많은 적들의 피를 흘릴 수 있다면 스스로 행복해할 것 같다.
 str_npc19_home_description_2|이 긴 전쟁이 끝나면, 날 위해 대변해주겠지, 사령관? 어느쪽이든 더 우위에 서는 권력에게 - 위대한 눈이든 백색 손이든? 당신은 내가 에도라스의 온 로한의 영토를 내 집과 재산으로써 지배하리라는, 내 주장에 목소리를 빌려주겠지?
 str_npc20_home_description_2|우리는 이곳 중간계에서 난쟁이들이 주축을 이루고 있는 발라의 작품들을 산산조각 낼 것이다. 그래, 창조주가 만든 것을 해체하는 것은 정말 달콤할 것이야. 우리는 난쟁이들을 우리 발 아래에 짓밟을 것이고, 천한 인간 왕국을 흩어버릴 것이며, 안개 속으로 유령처럼 사라질 요정들을 비웃을 것이다. 그리고 때가 오면 발리노르의 잊혀진 동굴 앞에 서서 나의 왕을 다시 부르게 될 것이다!
-str_npc21_home_description_2|우리는 과거에 이룬 위대한 업적과 희생을 기억해야만합니다. 로한과 곤도르의 동맹은 다시 한번 우리 동족들을 재앙으로부터 구해줄 것입니다.
+; str_npc21_home_description_2|All me life I've not gone near sorcery, and it'd be a mighty shame to start now.
 str_npc22_home_description_2|아무리 위대한 사람일지라도, 설령 이스타리 중 한 사람일지라도 타락할 수 있다는 것을 보여준다네. 힘을 갈망하는 자는 힘으로 망하나니, 더이상 지체하지 맙시다.
 str_npc23_home_description_2|성벽 뒤에서 악의 군세가 진군 준비를 하고 있는 것이 느껴지는군... 로스로리엔으로? 아니면 너른골? 아니면 초록숲의 고향으로? 알 수는 없지만 그 계획을 무너트릴 수 있다면 할 수 있는 것을 해주기를 바라네.
 str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
@@ -2397,7 +2401,7 @@ str_npc27_home_description_2|미나스 모르굴, 나즈굴이 하루종일 술�
 str_npc18_home_recap|나는 럼사쿤의 아들을 훈련장에서 죽였다는 죄로 사형 선고를 받아 수감된 죄수였다. 그들 중 세 명이 내게 달려들었고, 나는 그들을 때렸지만, 한 명은 결국 부상으로 인해 죽어버렸다. 너는 날 대변해주었고, 날 풀어주기까지 했어. 이제 너를 위해 죽이고, 만약 필요하다면, 너를 위해 죽을거야.
 str_npc19_home_recap|나는 로한의 왕족이다, 맹세한다 - 펭겔 왕은 나의 할아버지이며, 우리 할머니를 정실 부인으로 맞이한 적 없지만 말이다. 던랜드의 대장들이 나를 질투하고 있으며, 내가 공적을 쌓지 못하게 하려고, 전투에서 내 깃발 아래 병사들과 어떤 영광도 거두지 못하도록 멀리 떨어지게 만들었다. 그리고 이제 당신이 당신 깃발 아래에 나를 두었다. 이제 나는 에도라스의 정당한 왕좌에 앉을 그날만을 기다린다.
 str_npc20_home_recap|무슨 할 말이 더 있나, 사령관? 나는 돌 굴두르 지하감옥에서 주술을 연마했다. 내 꿈의 눈은 깊고 먼 곳을 보고, 이 전쟁에서 너와 너의 위업들을 보았다. 내가 보기에 너에게 내 도움을 줄 수 있을 것 같다. 그럼 서부의 힘이 실패하고 동부의 힘이 다시 솟아올라 세상의 종말까지 지배할 수 있을 것이다.
-str_npc21_home_recap|나는 당신이 그렇게 쉽게 잊어버리는 것이 썩 유쾌하다 생각하지 않는데.
+; str_npc21_home_recap|I had me a nice time leadin' a proper raidin' band in the mountains, until I did drunk too much and gambled me life away with those cheats from Gundabad.
 str_npc22_home_recap|호기심을 만족시켜주겠지만, 너무 지체하진 말지.
 str_npc23_home_recap|나는 어둠숲의 숲요정들로부터 태어나고 자랐네. 우리 동족들은 뛰어난 목공술로 알려져있지.
 str_npc24_home_recap|나는 두린의 후예이자 드왈린의 아들이다.
@@ -2407,7 +2411,7 @@ str_npc27_home_recap|짧게 말하지.
 str_npc18_honorific|위대한 이
 str_npc19_honorific|사령관
 str_npc20_honorific|사령관
-str_npc21_honorific|사령관
+str_npc21_honorific|족장
 str_npc22_honorific|사령관
 str_npc23_honorific|전사
 str_npc24_honorific|대장
@@ -2503,3 +2507,27 @@ str_imladris_guildmaster_companion_player_none_ok|이해했습니다, 장로님.
 str_imladris_guildmaster_player_found_ok|이해했습니다, 장로님. 시간 내주셔서 감사합니다.
 str_show_keybinds_form|Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
 str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?
+str_gundabad_guildmaster_companion_player_ask|여기서 볼 수 있는 건 싸움보다는 도망칠 가능성이 높은 배신자 무리들 뿐이군. 제대로 된 전사들은 어디 있지?
+; str_gundabad_guildmaster_companion_none| I care not where you come from -- you’ll watch your tongue around here! Oh yes, be careful how you speak to us, or you just might find yourself falling into a dark hole of snakes in these tunnels of ours. Our fighting lads are off in rebel lands, fighting thieves and brigands and murderous elf-friends. And what’re you about, eh? Shirking your own share of the fighting, spying on our private business? Off with you, back into the fray, like a proper soldier!
+str_gundabad_guildmaster_companion_player_none_ok|어떻게 하는 게 네 신상에 뭐가 좋은지 알고 있다면, 나한테 말조심하는 게 좋을거야.
+; str_gundabad_guildmaster_player_found_ok|Do I hear you aright? Is this “Berta” of yours a troll that thinks? Now this, I have to see for myself.
+; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
+; str_fullname_region_rhun|East Rhovanion, on both sides of the river Celduin
+; str_fullname_region_erebor|the foothills of Erebor, the Lonely Mountain
+; str_fullname_region_celebrant|the Field of Celebrant, between the rivers Celebrant and Limlight
+; str_fullname_region_gladden_fields|the Gladden Fields, marshes of the river Gladden
+; str_fullname_region_w_emyn_muil|western Emyn Muil
+; str_fullname_region_s_misty_mountains|the foothills of the southern Misty Mountains
+; str_fullname_region_n_anduin_vale|the northern Vale of Anduin, north of the Carrock
+; str_fullname_region_s_anduin_vale|the southern Vale of Anduin, between Lorien and the Undeeps
+; str_fullname_region_cair_andros|Cair Andros, the great ship-like island of Anduin
+; str_shortname_region_rhun|East Rhovanion
+; str_shortname_region_erebor|the foothills of Erebor
+; str_shortname_region_celebrant|the Field of Celebrant
+; str_shortname_region_gladden_fields|the Gladden Fields
+; str_shortname_region_w_emyn_muil|western Emyn Muil
+; str_shortname_region_s_misty_mountains|the foothills of the Southern Misty Mountains
+; str_shortname_region_n_anduin_vale|the northern Vale of Anduin
+; str_shortname_region_s_anduin_vale|the southern Vale of Anduin
+; str_shortname_region_cair_andros|Cair Andros
+str_isengard_hunting_camp_guildmaster_player_found_ok|만약 그 놈이 잘 해냈다면 내가 데려가지. 만약 아니라면, 생선처럼 내장을 끄집어내주겠어. 만약 그 놈이 다른 쓰레기들과 똑같다는 생각이 들면, 그러고 다시 돌아와서 내 시간을 낭비한 값을 치르게 해주겠다!

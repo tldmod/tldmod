@@ -166,6 +166,9 @@ mno_strat_tweaks_back|Retour au menu des options.
 menu_camp_action|^^^^^^^^^ Quel objet ?
 mno_camp_drink_water|Boire de l'eau des Ents !
 mno_camp_drink_orc_brew|Faire tourner la bière orque !
+mno_camp_drink_miruvor|Faire passer le miruvor !
+mno_camp_use_athelas|Utiliser l'athelas pour la guérison des blessures.
+mno_camp_use_drums|Faire battre les tambours des profondeurs.
 mno_camp_action_4|Retour.
 menu_assasins_attack_player_won|Vous avez vaincu avec succès les assassins de {s2}, envoyés par {s3}.
 menu_assasins_attack_player_retreat|Vous vous êtes échappé{/e} en sauvant votre vie !

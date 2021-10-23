@@ -35,7 +35,7 @@ skl_riding_desc|Laat je paarden (of andere dieren) van een hoger moeilijkheidsle
 skl_athletics|Atletiek
 skl_athletics_desc|Versnelt je rensnelheid. (persoonlijke vaardigheid)
 skl_shield|Schild
-skl_shield_desc|Vermindert schade aan schilden (met 8%% per vaardigheidslevel) en verbetert je schild snelheid en bedekking. (persoonlijke vaardigheid)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Wapenmeester
 skl_weapon_master_desc|Maakt het makkelijker om te leren een wapen te beheersen en verhoogt de limieten in beheersing van wapens. limieten gaan als volgt: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (persoonlijke vaardigheid)
 skl_power_draw|Trekkracht
@@ -45,4 +45,4 @@ skl_power_throw_desc|Elk punt voor deze vaardigheid verbetert de schade gedaan m
 skl_power_strike|Slagkracht
 skl_power_strike_desc|Elk punt voor deze vaardigheid verbetert de schade gedaan door slag- en steekwapens met 8%% (persoonlijke vaardigheid)
 skl_ironflesh|Stevige huid
-skl_ironflesh_desc|Elk punt voor deze vaardigheid verhoogt de schadepunten die je kan hebben voordat je neergaat met +2 (persoonlijke vaardigheid)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

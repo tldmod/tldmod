@@ -144,7 +144,7 @@ itm_arnor_greaves|Arnorské holenice
 itm_arnor_shield_a|Arnorský štít
 itm_arnor_shield_c|Arnorský jazdecký štít
 itm_arnor_sword_a|Arnorský meč Bastard
-itm_arnor_sword_c|Arnorský meč Bastard
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|Arnosrký krátky meč
 itm_riv_helm_a|Roklinská čiapka
 itm_riv_helm_b|Roklinský lukostrelecká helma
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Gonroská kapucňa hraničiarov
 itm_gondor_light_greaves|Gondorské kožené holenice
 itm_gondor_med_greaves|Gondorské stredne dobré holenice
 itm_gondor_heavy_greaves|Gondorské krúžkové holenice
-itm_gondor_infantry_helm|Gondorská pechotná helma
 itm_gondor_auxila_helm|Gondorská ľahká prilba
 itm_gondorian_archer_helm|Gondorská lukostrelecká prilba
 itm_tower_archer_helm|Helma lukostrelcov Veže
 itm_gondor_leader_helm|Gondorská šlachtická helma
 itm_tower_guard_helm|Helma stráže Veže
 itm_gondor_citadel_knight_helm|Helma rytierov Citadely
+itm_gondor_infantry_helm|Gondorská pechotná helma
 itm_gondor_knight_helm|Gondorská jazdecká prilba
 itm_gondor_dolamroth_helm|Dol Amrothská helma
 itm_swan_knight_helm|Helma labutích rytierov
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Linhirský krátky meč
 itm_pelargir_eket|Pelargirský krátky meč
 itm_pelargir_sword|Pelargirský meč
 itm_gondor_ranger_sword|Gondorský hraničiarský meč
-itm_gondor_bastard|Gondorský meč Bastard
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|Gondorský meč Citadely
 itm_gondor_cav_sword|Gondorský jazdecký meč
 itm_gondor_spear|Gondorská kopija
 itm_gondor_tower_spear|Gondorská kopija Veže
 itm_gondor_lance|Gondrorská dlhá žrď
-itm_loss_axe|Lossarnachská bojová sekera
-itm_loss_war_axe|Lossarnachská vojnová sekera
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|Lorienský dlhý meč
 itm_lorien_sword_b|Lorienský krátky meč
 itm_lorien_sword_c|Lorienský vojnový meč
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Isengardské ohyzdie brnenie
 itm_isen_orc_armor_f|Isengardské ohyzdie brnenie
 itm_isen_orc_armor_g|Isengardské ohyzdie brnenie
 itm_isen_uruk_light_a|Uruk-haiský ľahký postroj
-itm_isen_uruk_light_b|Uruk-haiské kožené brnenie
-itm_isen_uruk_light_c|Uruk-haiské kožené brnenie
-itm_isen_uruk_light_d|Uruk-haiská drôtena košeľa pokrytá kožušinou
-itm_isen_uruk_light_e|Uruk-haiský drôtený postroj
-itm_isen_uruk_heavy_a|Uruk-haiská drôtena košeľa pokrytá kožušinou
-itm_isen_uruk_heavy_b|Uruk-haiské ťažké brnenie
-itm_isen_uruk_heavy_c|Uruk-haiské ťažké brnenie
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|Uruk-haiský stopársky odev
 itm_isen_uruk_heavy_e|Uhyzd-haiský stopársky odev
 itm_uruk_tracker_boots|Urukské stopárske topánky

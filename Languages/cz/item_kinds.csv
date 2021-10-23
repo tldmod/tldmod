@@ -144,7 +144,7 @@ itm_arnor_greaves|Arnorské holenice
 itm_arnor_shield_a|Arnorský štít
 itm_arnor_shield_c|Arnorský jezdecký štít
 itm_arnor_sword_a|Arnorský meč bastard
-itm_arnor_sword_c|Arnorský meč bastard
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|Arnorský krátký meč
 itm_riv_helm_a|Rivendelská čepka
 itm_riv_helm_b|Rivendelská lučišnická helma
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Gondorská kápě hraničářů
 itm_gondor_light_greaves|Gondorské kožené holenice
 itm_gondor_med_greaves|Gondorské střední holenice
 itm_gondor_heavy_greaves|Gondorské kroužkové holenice
-itm_gondor_infantry_helm|Gondorská pěchotní přilbice
 itm_gondor_auxila_helm|Gondorská lehká helma
 itm_gondorian_archer_helm|Gondorská lučištnická přilbice
 itm_tower_archer_helm|Přilba lučištníků Stráže citadely
 itm_gondor_leader_helm|Gondorská vysoká přilba
 itm_tower_guard_helm|Přilba Strážce věže
 itm_gondor_citadel_knight_helm|Helma Rytíře citadely
+itm_gondor_infantry_helm|Gondorská pěchotní přilbice
 itm_gondor_knight_helm|Přilba Gondorského rytíře
 itm_gondor_dolamroth_helm|Dol Amrothská helma
 itm_swan_knight_helm|Přilba Labutího rytíře
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Linhirský Eket
 itm_pelargir_eket|Pelargirský Eket
 itm_pelargir_sword|Pelargirský meč
 itm_gondor_ranger_sword|Gondorský hraničářský meč
-itm_gondor_bastard|Gondorský meč bastard
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword| Gondorský meč Strážce citadely
 itm_gondor_cav_sword|Gondorský jezdecký meč
 itm_gondor_spear|Gondorské kopí
 itm_gondor_tower_spear|Kopí Gondorských strážců veže
 itm_gondor_lance|Gondorský dřevec
-itm_loss_axe|Lossarnašská Bojová Sekera
-itm_loss_war_axe|Lossarnašská válečná sekera
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|Lorienský dlouhý meč
 itm_lorien_sword_b|Lorienský krátký meč
 itm_lorien_sword_c|Lorienský válečný meč
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Skřetí zbroj Železného pasu
 itm_isen_orc_armor_f|Skřetí zbroj Železného pasu
 itm_isen_orc_armor_g|Skřetí zbroj Železného pasu
 itm_isen_uruk_light_a|Lehký postroj Skurut-hai
-itm_isen_uruk_light_b|Skurut-haiska kozena zbroj
-itm_isen_uruk_light_c|Skurut-haiska kozena zbroj
-itm_isen_uruk_light_d|Pokovaná kožená zbroj Skurut-hai
-itm_isen_uruk_light_e|Kroužková zbroj Uruk-hai
-itm_isen_uruk_heavy_a|Pokovaná kožená zbroj Skurut-hai
-itm_isen_uruk_heavy_b|Těžká zbroj Skurut-hai
-itm_isen_uruk_heavy_c|Těžká zbroj Skurut-hai
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|Kožená zbroj stopaře Skurut-hai
 itm_isen_uruk_heavy_e|Kožená zbroj stopaře Skurut-hai
 itm_uruk_tracker_boots|Skurutí stopařské boty

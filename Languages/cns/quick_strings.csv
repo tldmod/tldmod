@@ -91,8 +91,9 @@ qstr_Battle_Formations_an|战斗阵型和AI：
 qstr_Native|本地
 qstr_TLD_FormAI__Original|TLD AI（原始）
 qstr_TLD_New_FormAI|TLD新AI
-qstr_Advanced_Siege_AI:__|电脑难度：
-qstr_On|开启
+qstr_Siege_AI:__|攻城AI：
+qstr_Basic__better_perfor|基础（电脑性能更好）
+qstr_Advanced|高级
 qstr_Town_NPCs_Always_Acc|城镇NPC总是显示在菜单上：
 qstr_Cutscenes:__|过场动画: 
 qstr_Injuries_for_compani|同伴会受伤: 
@@ -106,9 +107,9 @@ qstr_Player_damage_only|只受到玩家伤害
 qstr_All_Messages|所有消息
 qstr_Troop_Identifier_in_|战斗中部队识别（在战斗中按Y来显示/隐藏）
 qstr_Disable|禁用
-qstr_Enable_without_Facti|启用但不显示势力名字
-qstr_Enable_with_Faction_|启用且显示势力名字
-qstr_Simple:_Red___Enemy_|简单：红-敌人/绿-友军
+qstr_Troop_Names|兵种名称
+qstr_Simple:_Faction_Colo|简易：派系颜色
+qstr_Simple:_Black___Enem|简易：黑色 - 敌人/白色 - 友军
 qstr_Preferred_Camera_Mod|首选相机模式：
 qstr_Default_Camera|默认相机
 qstr_Free_Mode_Custom_Cam|自由模式自定义相机
@@ -184,13 +185,17 @@ qstr_+20_to_Party_Morale|部队士气 +20
 qstr_+1_to_Riding_Skill|骑术等级+1
 qstr_during_battles|在战斗中
 qstr_+1_to_Pathfinding|向导等级+1 
-qstr_+1_to_Athletics|跑动等级+1 
-qstr_+1_to_Wound_Treatmen|疗伤等级+1 
+qstr_+2_to_Wound_Treatmen|全队疗伤+2
+qstr_+2_to_Surgery__Party|全队手术+2
+qstr_+2_to_Pathfinding__P|全队向导+2
 qstr_Use_from_Camp_Menu|从营地菜单使用
 qstr_Use_from|使用
 qstr_Action_Menu|动作菜单
-qstr_+1_to_First_Aid|急救等级+1 
+qstr_Bonus_to_Wound_Treat|奖励全队疗伤技能
+qstr_Bonus_to_Surgery__Pa|奖励全队手术技能
+qstr_Bonus_to_First_Aid__|奖励全队急救技能
 qstr_+1_to_Weapon_Mastery|武器掌握等级+1 
+qstr_+1_to_Wound_Treatmen|疗伤等级+1 
 qstr_+1_to_Tactics|战术等级+1 
 qstr_+1_to_Power_Strike|强击等级+1 
 qstr_+1_to_Strength|力+1
@@ -198,6 +203,7 @@ qstr_+1_to_Agility|敏+1
 qstr_+1_to_Leadership|统+1
 qstr_+1_to_Wildcraft|自然力+1
 qstr_+1_to_Tracking|+1 to Tracking
+qstr_+1_to_Athletics|跑动等级+1 
 qstr_when_equipped|装备时
 qstr_+1_to_Power_Draw|强弓等级+1
 qstr_The_record_of_Balin_|失败的巴林远征队的记录。
@@ -212,6 +218,9 @@ qstr_rally|集结
 qstr_rallies|集结
 qstr_+{reg1}_{s3}_in_batt|在战斗中 +{reg1} {s3}
 qstr_+1_to_Charisma|魅+1
+qstr_Call_Reinforcements|呼叫增援
+qstr__Effect_scales_with_|（效果依力量和魅力属性而定）
+qstr_+1_to_First_Aid|急救等级+1 
 qstr_+1_to_Surgery|手术等级+1
 qstr_+1_to_Intelligence|智力属性+1
 qstr_+2_to_Surgery|手术等级+2
@@ -225,6 +234,8 @@ qstr_+2_to_Tactics|战术等级+2
 qstr_+1_Intelligence|智力属性+1
 qstr_+{reg1}_to_Spotting|侦查技能等级+{reg1}
 qstr__Scales_with_Wildcra|（规模与荒野求生技能等级相关）
+qstr_Strengthens_all_Hero|对队中全体英雄有效
+qstr_+2_to_First_Aid__Par|急救+2
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|侦查技能等级+1
 qstr_Less_Dunnish_upkeep|缺乏丹尼斯维护
@@ -243,6 +254,7 @@ qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
 qstr_You_gained_{reg84}_e|你因自己的智力属性获得{reg84}点经验。
+qstr_You_gained_{reg84}_w|你因自己的敏捷属性额外获得{reg84}熟练点。
 qstr_{reg4}_killed_{reg5}|{reg4}被杀，{reg5}受伤，{reg6}被击溃
 qstr_{reg4}_killed_{reg5}_|{reg4}被杀，{reg5}受伤
 qstr_{reg4}_killed_{reg5}_r|{reg4}被杀，{reg5}被击溃
@@ -785,6 +797,16 @@ qstr_Drive_them_back!|把他们赶回去！
 qstr_Protect_the_City!|保卫城市！
 qstr_Forward!_Board_them!|前进！登上他们的甲板！
 qstr_The_Last_Days_of_the_|TLD开发了与Native大大不同的高级攻城AI。进攻方和防守方都被分为了三队：左翼，中锋和右翼。进攻方玩家只能只会自己的士兵。
+qstr_on_the_left_flank|左翼
+qstr_on_the_right_flank|右翼
+qstr_through_the_center|中央
+qstr_Attackers_charge_{s2|进攻方攻击{s2}
+qstr_Attackers_charge_{s1|进攻方攻击{s1}
+qstr_{s1}_rallied_to_your|因你的魅力属性值{s1}加入了你方。
+qstr_Last_attacker_wave._|最后一波进攻者了。你想撤退吗？
+qstr_Attackers_almost_def|进攻方基本失败了。你想撤退吗？
+qstr_The_remaining_attack|剩余的进攻者撤退了！
+qstr_The_remaining_defend|剩余的守军逃跑了！
 qstr_Reached_Gauntlet_wav|第{reg1}波！
 qstr_Ballista:_out_of_amm|弩炮：弹药用尽！
 qstr_Ballista:_turn_CURSO|弩炮：转向：移动光标，瞄准：左SHIFT，发射：SPACE，点火：T，退出：F
@@ -981,7 +1003,7 @@ qstr_As_a_last_defensive_|你撤退到城堡的大厅里进行最后的防御。
 qstr_You_ve_been_driven_a|你被敌人从城墙上面赶下去了，现在敌人大量涌入街道内。如果你能击败他们，你也许能扭转局势，反败为胜。
 qstr_You_ve_breached_the_|你已经突破了城墙，但是那些顽固的守军继续在街道上抵抗你的攻击！你得消灭他们才能攻击城镇中心的城堡。
 qstr_The_town_centre_is_y|这个城镇的镇广场是你的了，但是剩下的守军撤退到城堡里了。你要完全消灭他们才能取得完全的胜利。
-qstr_The_remaining_defend|剩下的守军撤退到城堡这个最后的防线。你必须冲进去清除剩余的抵抗力量。
+qstr_The_remaining_defend|剩余的守军逃跑了！
 qstr_However_since_you_ar|然而，自从你放弃了向{s9}发的{效忠/追随}誓言。他是绝对不会承认你是这个{reg8?城镇:城堡}的{主人/女主人}。
 qstr_The_enemy_has_been_f|敌人被迫撤退了。进攻停止了，但是围城还在继续。
 qstr_The_assasins_beat_yo|刺客击败了你，并留你在地上等死……
@@ -1457,13 +1479,14 @@ qstr_{s9}_has_asked_you_to|{s9}希望你去营救{reg1}名囚犯
 qstr_We_have_reports_that_a|我们刚刚收到线报，说有大批敌军正集结于{s13}。对此我极其关注，毕竟我一不知道他们有多少人，二不知道我方战士是否做好了战斗准备。我希望你能尽可能的靠近{s13}，并找出一切有用的情报。
 qstr_My_spies_tell_me_of_|我的间谍告诉我说有大批敌军正集结于{s13}。他们铁定无法与我与我的仆人抗衡，但能知道他们的人数也不失为一个好主意。我希望你能尽可能的靠近{s13}，并找出一切有用的情报。
 qstr_{s9}_asked_you_to_sco|{s9}希望你去侦察{s13}
-qstr_We_have_reports_of_s|我们刚刚收到线报，{s13}周围有敌军活动的迹象，但我方斥候目前所有的靠近行动都失败了。所以我希望你能组建一支斥候，并尽可能的靠近{s13}，然后将斥候部署在那里。
-qstr_My_spies_tell_me_the|我的间谍告诉我说敌军正在{s13}采取某些行动。我们那些胆小如鼠的斥候们已经失败太多次了。至今都没传回任何有用的情报。我希望你能组建自己的斥候，并尽可能的靠近{s13}，然后将他们留在那里。确保他们不会转身逃跑！
+qstr_We_have_reports_of_s|我们刚刚收到线报，{s13}周围有敌军活动的迹象，但我方斥候目前所有的渗透侦查行动都失败了。所以我希望你能组建一支斥候，尽可能的靠近{s13}，然后将斥候部署在那里。我会派些新兵给你补充人手，但你可别让他们去执行这次的任务。
+qstr_My_spies_tell_me_the|我的间谍告诉我说敌军正在{s13}采取某些行动。我们那些胆小如鼠的斥候们已经失败太多次了，至今都没传回任何有用的情报。我希望你能组建自己的斥候，尽可能的靠近{s13}，然后把他们留在那里。确保他们不会转身逃跑喽！我会给你些新兵补充战力，带他们干活去吧。
 qstr_{s9}_asked_you_to_di|{s9}希望你能在{s13}周边派遣一支斥候。^准备{reg1}名{s15}士兵，其中至少要有1名{s14}，在{s13}附近与{s14}对话，以下达命令派出斥候。
 qstr_We_need_to_take_the_|我们要把战斗带向敌人，{playername}。为了达到这个目标，我们需要攻击他们的巡逻队和情报网络。我希望你去消灭{reg1}队{s13}，这将帮我们赢得主动。
 qstr_We_need_to_grind_dow|我们要把没用的敌人碾碎，{playername}。他们的巡逻队和补给队比我预料中的还要大胆。我希望你去消灭{reg1}队{s13}，教会他们什么叫做恐惧。
 qstr_{s9}_asked_you_to_el|{s9}希望你去消灭{reg1}队{s13}。
 qstr_{s9}_asked_you_to_fr|{s9}希望你解决{s13}近郊游荡着的一只狂暴的食人妖。
+qstr_{reg1}_{s16}_joined_|{reg1}名{s16}加入了你的队伍。
 qstr_the_Dwarves_so_that_|矮人使用的货币，如果你途径铁丘陵或孤山的话，你可以试着用传说中的矮人武器武装自己
 qstr_Gondor_so_that_if_yo|刚铎使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们远近闻名的护甲
 qstr_Rohan_so_that_if_you|洛汗使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们传说中的战马
@@ -1549,8 +1572,8 @@ qstr_Good_moves_but_you_m|进展良好，但你需要做的仍有很多。
 qstr_More_than_half_of_th|超过一半的敌军，不坏。
 qstr_You_ll_need_to_try_h|你应该更努力地尝试。
 qstr_Well..._better_here_|好吧…在这儿总比在战场上好，不是么？
-qstr_We_ve_been_sent_by_L|指挥官{s3}派遣我们赶来支援你。
-qstr_Lord_{s3}_has_sent_u|指挥官{s3}派遣我们加入进攻{s4}的舰队。
+qstr_We_ve_been_sent_by_{|{s3}派我们赶来支援你。
+qstr_{s3}_has_sent_us_to_|{s3}派我们赶来支援你。
 qstr_Excellent_{playernam|太棒了，{playername}！我听到你给予了他们比我的要求更多的帮助。这实在是太伟大了。^^来，拿走这份超出我们期望的额外奖励。^^我们需要尽快地结束这场战争。
 qstr_Excellent_{playername|太好了，{playername}。这将肯定帮助他们脱出困境。我们必须尽快地赢得这场战争。
 qstr_Reinforcing_{s1}_has|援助了{s1}增强了{s2}。（{s2}获得了{reg50}势力值）。

@@ -144,7 +144,7 @@ itm_arnor_greaves|Arnorian Pantserplaten
 itm_arnor_shield_a|Arnor Schild
 itm_arnor_shield_c|Arnor Cavalerie Schild 
 itm_arnor_sword_a|Arnor Bastaard Zwaard
-itm_arnor_sword_c|Arnor Bastaard Zwaard
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|Arnor Kort Zwaard
 itm_riv_helm_a|Rivendell Huif
 itm_riv_helm_b|Rivendell Boogschutters Helm
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Gondor Ranger Kap
 itm_gondor_light_greaves|Gondorian Leren Pantserplaten
 itm_gondor_med_greaves|Gondorian Medium Pantserplaten
 itm_gondor_heavy_greaves|Gondorian Maliënkolder Pantserplaten
-itm_gondor_infantry_helm|Gondor Infanterie Helm
 ; itm_gondor_auxila_helm|Gondor Light Helm
 ; itm_gondorian_archer_helm|Gondor Archer Helm
 itm_tower_archer_helm|Toren Boogschutters Helm
 itm_gondor_leader_helm|Gondor Hoge Helm
 itm_tower_guard_helm|Toren Bewaker Helm
 itm_gondor_citadel_knight_helm|Citadel Ridder Helm
+itm_gondor_infantry_helm|Gondor Infanterie Helm
 ; itm_gondor_knight_helm|Gondor Cavalry Helm
 itm_gondor_dolamroth_helm|Dol Amroth Helm
 itm_swan_knight_helm|Zwaan Ridder Helm
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Linhir Eket
 itm_pelargir_eket|Pelargir Eket
 itm_pelargir_sword|Pelargir Zwaard
 itm_gondor_ranger_sword|Gondor Ranger Zwaard
-itm_gondor_bastard|Gondor Bastaard Zwaard
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|Gondor Citadel Zwaard
 itm_gondor_cav_sword|Gondor Cavalerie Zwaard
 itm_gondor_spear|Gondorian Speer
 itm_gondor_tower_spear|Gondorian Toren Speer
 itm_gondor_lance|Gondor Lans
-itm_loss_axe|Lossernach Strijd Bijl
-itm_loss_war_axe|Lossernach Oorlog Bijl
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|Lorien Langzwaard
 itm_lorien_sword_b|Lorien Kortzwaard
 itm_lorien_sword_c|Lorien Oorlog Zwaard
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Isengard Orc Pantser
 itm_isen_orc_armor_f|Isengard Orc Pantser
 itm_isen_orc_armor_g|Isengard Orc Pantser
 itm_isen_uruk_light_a|Uruk-Hai Licht Harnas
-itm_isen_uruk_light_b|Uruk-Hai Leren Pantser
-itm_isen_uruk_light_c|Uruk-Hai Leren Pantser
-; itm_isen_uruk_light_d|Uruk-hai Mail and Leather
-; itm_isen_uruk_light_e|Uruk-hai Mail Harness
-; itm_isen_uruk_heavy_a|Uruk-hai Mail and Leather
-itm_isen_uruk_heavy_b|Uruk-Hai Zwaar Pantser
-itm_isen_uruk_heavy_c|Uruk-Hai Zwaar Pantser
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 ; itm_isen_uruk_heavy_d|Uruk-hai Tracker Leather
 ; itm_isen_uruk_heavy_e|Uruk-hai Tracker Leather
 ; itm_uruk_tracker_boots|Uruk Tracker Boots

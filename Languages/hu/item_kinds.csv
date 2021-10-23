@@ -144,7 +144,7 @@ itm_arnor_greaves|Arnoriai lábszárvédő
 itm_arnor_shield_a|Arnoriai pajzs
 itm_arnor_shield_c|Arnoriai lovassági pajzs
 itm_arnor_sword_a|Arnoriai fattyúkard
-itm_arnor_sword_c|Arnoriai fattyúkard
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|Arnoriai rövidkard
 itm_riv_helm_a|Völgyzugolyi főkötő
 itm_riv_helm_b|Völgyzugolyi íjászsisak
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Gondori kósza csuklya
 itm_gondor_light_greaves|Gondormódi bőrlábszárvédő
 itm_gondor_med_greaves|Gondormódi középnehéz lábszárvédő
 itm_gondor_heavy_greaves|Gondormódi láncos lábszárvédő
-itm_gondor_infantry_helm|Gondormódi gyalogsági sisak
 itm_gondor_auxila_helm|Gondori könnyűsisak
 itm_gondorian_archer_helm|Gondori íjászsisak
 itm_tower_archer_helm|Torony-íjász sisak
 itm_gondor_leader_helm|Gondori fősisak
 itm_tower_guard_helm|Toronyőri sisak
 itm_gondor_citadel_knight_helm|Fellegvári lovagsisak
+itm_gondor_infantry_helm|Gondormódi gyalogsági sisak
 itm_gondor_knight_helm|Gondori lovassági sisak
 itm_gondor_dolamroth_helm|Dol Amrothi sisak
 itm_swan_knight_helm|Hattyúlovag sisak
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Linhiri eket
 itm_pelargir_eket|Pelargiri eket
 itm_pelargir_sword|Pelargiri kard
 itm_gondor_ranger_sword|Gondori kósza kard
-itm_gondor_bastard|Gondori fattyúkard
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|Gondori fellegvári kard
 itm_gondor_cav_sword|Gondori lovassági kard
 itm_gondor_spear|Gondormódi lándzsa
 itm_gondor_tower_spear|Gondormódi toronylándzsa
 itm_gondor_lance|Gondori kopja
-itm_loss_axe|Lossarnachi harci balta
-itm_loss_war_axe|Lossarnachi csatafejsze
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|Lórieni hosszúkard
 itm_lorien_sword_b|Lórieni rövidkard
 itm_lorien_sword_c|Lórieni csatakard
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Vasudvardi ork páncélzat
 itm_isen_orc_armor_f|Vasudvardi ork páncélzat
 itm_isen_orc_armor_g|Vasudvardi ork páncélzat
 itm_isen_uruk_light_a|Uruk-hai könnyű hámpáncél
-itm_isen_uruk_light_b|Uruk-hai bőrpáncélzat
-itm_isen_uruk_light_c|Uruk-hai bőrpáncélzat
-itm_isen_uruk_light_d|Uruk-hai bőr- és láncing
-itm_isen_uruk_light_e|Uruk-hai láncos hámpáncél
-itm_isen_uruk_heavy_a|Uruk-hai bőr- és láncing
-itm_isen_uruk_heavy_b|Uruk-hai nehéz páncélzat
-itm_isen_uruk_heavy_c|Uruk-hai nehéz páncélzat
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|Uruk-hai nyomkövető bőrpáncél
 itm_isen_uruk_heavy_e|Uruk-hai nyomkövető bőrpáncél
 itm_uruk_tracker_boots|Uruk nyomkövető csizmák

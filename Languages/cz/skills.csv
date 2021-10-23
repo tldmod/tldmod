@@ -35,7 +35,7 @@ skl_riding_desc|Dovolí ti jezdit na koních (nebo jiných zvířatech) které m
 skl_athletics|Kondice
 skl_athletics_desc|Zvyšuje tvoji rychlost běhu. (Osobní dovednost)
 skl_shield|Štít
-skl_shield_desc|Snižuje poškození štítů (o 8%% co nová úroveň) a zlepšuje rychlost štítu a jeho pokryti. (Osobní dovednost)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Mistr zbraní
 skl_weapon_master_desc|Umožňuje jednodušší učení dovedností se zbraní, a zvyšuje dovednostní limit. Limity jsou rozděleny na: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobní dovednost)
 skl_power_draw|Síla napnutí
@@ -45,4 +45,4 @@ skl_power_throw_desc|Každý bod zvyšuje poškození způsobené hodem o 10%%. 
 skl_power_strike|Síla úderu
 skl_power_strike_desc|Každý bod zvyšuje poškození zbraní na blízko o 8%%. (Osobní dovednost)
 skl_ironflesh|Odolnost
-skl_ironflesh_desc|Každý bod zvýší HP o +2. (Osobní dovednost)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

@@ -35,7 +35,7 @@ skl_riding_desc|Omogućuje da jašeš konje ( ili druge zvjeri) koje su na veće
 skl_athletics|Atletika
 skl_athletics_desc|Poboljšava tvoju brzinu trčanja. (Osobna vještina)
 skl_shield|Štit
-skl_shield_desc|Smanjuje oštećenje štitova (za 8%% po nivou vještine) i popravlja brzinu štita i pokrivanje. (Osobna vještina)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Gospodar Oružja
 skl_weapon_master_desc|Olakšava učenje izvrsnosti oružja i povećava granicu izvrsnosti. Ograničenja su prikazana kao: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobna vještna)
 skl_power_draw|Moć Potezanja
@@ -45,4 +45,4 @@ skl_power_throw_desc|Svaki dodatni bod ove vještine povećava oštećenje od ko
 skl_power_strike|Moć udara
 skl_power_strike_desc|Svaki dodatni bod ove vještine povećava štetu od bodeža, mačeva i drugog oružja koje se ne koristi kao projektil, za  8%%. (Osobna vještina)
 skl_ironflesh|Željezno tijelo
-skl_ironflesh_desc|Svaki dodatni bod ovoj vještini povećava broj bodova otpornosti za+2 (Osobna vještina)
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)

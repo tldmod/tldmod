@@ -91,8 +91,9 @@ qstr_Battle_Formations_an|Formations de combat et IA :
 qstr_Native|Native
 qstr_TLD_FormAI__Original|Formations IA TLD (Originales)
 qstr_TLD_New_FormAI|Nouvelles formations IA TLD
-qstr_Advanced_Siege_AI:__|IA de siège avancée :
-qstr_On|Activé
+qstr_Siege_AI:__|IA de siège :
+qstr_Basic__better_perfor|Basique (meilleure performance)
+qstr_Advanced|Avancée
 qstr_Town_NPCs_Always_Acc|PNJ des villes toujours accessibles depuis les menus :
 qstr_Cutscenes:__|Cinématiques :
 qstr_Injuries_for_compani|Blessures pour compagnons :
@@ -106,9 +107,9 @@ qstr_Player_damage_only|Dégâts du joueur uniquement
 qstr_All_Messages|Tous les messages
 qstr_Troop_Identifier_in_|Id. des troupes au combat (Y en combat pour afficher/cacher) :
 qstr_Disable|Désactiver
-qstr_Enable_without_Facti|Activer sans les noms de faction
-qstr_Enable_with_Faction_|Activer avec les noms de faction
-qstr_Simple:_Red___Enemy_|Simple : Rouge - Ennemi / Vert - Allié
+qstr_Troop_Names|Noms des soldats
+qstr_Simple:_Faction_Colo|Simple : couleurs des factions
+qstr_Simple:_Black___Enem|Simple : Noir - Ennemis / Blanc - Alliés
 qstr_Preferred_Camera_Mod|Mode de caméra préféré :
 qstr_Default_Camera|Camera par défaut 
 qstr_Free_Mode_Custom_Cam|Caméra personnalisée en mode libre
@@ -184,13 +185,17 @@ qstr_+20_to_Party_Morale|+20 au moral du groupe
 qstr_+1_to_Riding_Skill|+1 en Équitation
 qstr_during_battles|durant les batailles
 qstr_+1_to_Pathfinding|+1 en Marche forcée
-qstr_+1_to_Athletics|+1 en Athlétisme
-qstr_+1_to_Wound_Treatmen|+1 en Soins
+qstr_+2_to_Wound_Treatmen|+2 à Soins (Groupe)
+qstr_+2_to_Surgery__Party|+2 en Chirurgie (Groupe)
+qstr_+2_to_Pathfinding__P|+2 à Marche forcée (Groupe)
 qstr_Use_from_Camp_Menu|Utiliser depuis le menu Campement
 qstr_Use_from|Utiliser depuis
 qstr_Action_Menu|Menu d'action
-qstr_+1_to_First_Aid|+1 en Premiers secours
+qstr_Bonus_to_Wound_Treat|Bonus aux Soins (Groupe)
+qstr_Bonus_to_Surgery__Pa|Bonus à Chirurgie (Groupe)
+qstr_Bonus_to_First_Aid__|Bonus à Premiers secours (Groupe)
 qstr_+1_to_Weapon_Mastery|+1 en Maître d'armes
+qstr_+1_to_Wound_Treatmen|+1 en Soins
 qstr_+1_to_Tactics|+1 en Tactique
 qstr_+1_to_Power_Strike|+1 en Puissance de frappe
 qstr_+1_to_Strength|+1 de Force
@@ -198,6 +203,7 @@ qstr_+1_to_Agility|+1 en Agilité
 qstr_+1_to_Leadership|+1 en Commandement
 qstr_+1_to_Wildcraft|+1 en Vie Sauvage
 qstr_+1_to_Tracking|+1 en Pistage
+qstr_+1_to_Athletics|+1 en Athlétisme
 qstr_when_equipped|lorsque équipé
 qstr_+1_to_Power_Draw|+1 de Puissance de tension
 qstr_The_record_of_Balin_|L'enregistrement de l'expédition perdue de Balin.
@@ -212,6 +218,9 @@ qstr_rally|rallier
 qstr_rallies|rallie
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} au combat
 qstr_+1_to_Charisma|+1 en Charisme
+qstr_Call_Reinforcements|Demander des renforts
+qstr__Effect_scales_with_|(L'effet varie en fonction de la force et du charisme).
+qstr_+1_to_First_Aid|+1 en Premiers secours
 qstr_+1_to_Surgery|+1 en Chirurgie
 qstr_+1_to_Intelligence|+1 en Intelligence
 qstr_+2_to_Surgery|+2 en Chirurgie.
@@ -225,6 +234,8 @@ qstr_+2_to_Tactics|+2 en Tactique
 qstr_+1_Intelligence|+1 en Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} en Repérage
 qstr__Scales_with_Wildcra|(augmente avec Vie Sauvage)
+qstr_Strengthens_all_Hero|Renforce tous les héros
+qstr_+2_to_First_Aid__Par|+2 à Premiers secours (Groupe)
 qstr_+1_to_Power_Throw|+1 en Puissance de tension
 qstr_+1_to_Spotting|+1 en Repérage
 qstr_Less_Dunnish_upkeep|Coût d'entretien des hommes de la Dunlande réduit
@@ -243,6 +254,7 @@ qstr_Good|Bien
 qstr_Med|Moyen
 qstr_Bad|Mauvais
 qstr_You_gained_{reg84}_e|Vous avez gagné {reg84} points d'expérience grâce à votre intelligence.
+qstr_You_gained_{reg84}_w|Vous avez gagné {reg84}  points d'arme grâce à votre agilité.
 qstr_{reg4}_killed_{reg5}|tués : {reg4}, blessés : {reg5}, en déroute : {reg6}
 qstr_{reg4}_killed_{reg5}_|tués : {reg4}, blessés : {reg5}
 qstr_{reg4}_killed_{reg5}_r|tués : {reg4}, en déroute : {reg5}
@@ -785,6 +797,16 @@ qstr_Drive_them_back!|Repoussez les !
 qstr_Protect_the_City!|Protégez la cité !
 qstr_Forward!_Board_them!|En avant ! A l'abordage !
 qstr_The_Last_Days_of_the_|The Last Days of the Third Age possède une IA de siège améliorée, très différente de celle de Native. Tous les attaquants et les défenseurs seront répartis sur les flancs droit et gauche ainsi qu'au centre. Les joueurs attaquants commandent certaines de leurs propres troupes.
+qstr_on_the_left_flank|sur le flanc gauche
+qstr_on_the_right_flank|sur le flanc droit
+qstr_through_the_center|par le centre
+qstr_Attackers_charge_{s2|Les assaillants chargent {s2}
+qstr_Attackers_charge_{s1|Les attaquants chargent {s1}
+qstr_{s1}_rallied_to_your|{s1} s'est rallié à vous du fait de votre charisme.
+qstr_Last_attacker_wave._|C'est la dernière vague d'assaillants. Voulez-vous battre en retraite ?
+qstr_Attackers_almost_def|Les attaquants sont presque défaits. Voulez-vous battre en retraite ?
+qstr_The_remaining_attack|Les attaquants restants se dispersent !
+qstr_The_remaining_defend|Les derniers défenseurs s'échappent du siège !
 qstr_Reached_Gauntlet_wav|Vague du Gantelet {reg1} atteinte !
 qstr_Ballista:_out_of_amm|Baliste : à court de munitions !
 qstr_Ballista:_turn_CURSO|Baliste : tourner avec le CURSEUR, appuyer sur MAJ Gauche, tirer avec ESPACE, tirer avec T, quitter avec F
@@ -981,7 +1003,7 @@ qstr_As_a_last_defensive_|Dans un dernier effort défensif, vous battez en retra
 qstr_You_ve_been_driven_a|Vous avez été chassés des remparts, les attaquants affluent à présent dans les rues. Si vous pouvez les vaincre, peut-être pourrez-vous alors inverser la tendance et sauver la journée.
 qstr_You_ve_breached_the_|Vous vous êtes emparés des murs mais les défenseurs continuent à résister dans les rues ! Vous devez vous en occuper avant de pouvoir vous attaquer au château, au centre de la ville.
 qstr_The_town_centre_is_y|Vous avez pris le centre de la ville, mais les défenseurs restants se sont retranchés dans le château. Sa chute sonnera votre victoire.
-qstr_The_remaining_defend|Les défenseurs restants se sont repliés dans le château pour établir une dernière ligne de défense. Vous devez vous y introduire et écraser toute résistance.
+qstr_The_remaining_defend|Les derniers défenseurs s'échappent du siège !
 qstr_However_since_you_ar|Cependant, puisque que vous n'avez pas prêté allégeance à {s9}, il n'y a aucune chance qu'il vous attribue {reg8?cette ville:ce château}.
 qstr_The_enemy_has_been_f|L'ennemi a été forcé de battre en retraite. L'assaut a pris fin, mais le siège continue.
 qstr_The_assasins_beat_yo|Les assassins vous écrasent et vous laissent pour mort...
@@ -1457,13 +1479,14 @@ qstr_{s9}_has_asked_you_to|{s9} vous a demandé de sauver {reg1} prisonniers.
 qstr_We_have_reports_that_a|On nous rapporte qu'un ost ennemi serait en train de se rassembler à {s13}. Il est clair que c'est une grave préoccupation, car je ne sais pas de combien de troupes dispose l'ennemi ni si mes soldats seront prêts à les rencontrer sur le champ de bataille. Je veux que vous vous rapprochiez de {s13} et que vous récoltiez autant de renseignements que possible.
 qstr_My_spies_tell_me_of_|Mes espions me signalent qu’un grand groupe de guerriers se regroupe à {s13}. Ils ne devraient pas être de taille contre nous et nos serviteurs, mais il ne ferait pas de mal de savoir combien ils sont. Je veux que vous vous rapprochiez de {s13}, et que vous récoltiez autant de renseignements que possible.
 qstr_{s9}_asked_you_to_sco|{s9} vous a demandé de partir en éclaireur autour de {s13}.
-qstr_We_have_reports_of_s|Nos rapports nous signalent une activité ennemie près de {s13}. Nos éclaireurs ne sont pas parvenus à se rapprocher suffisamment pour observer les allers et venues dans la région. Je veux que vous rassembliez un groupe d'éclaireurs, que vous vous rapprochiez de {s13}, et que vous envoyez les éclaireurs.
-qstr_My_spies_tell_me_the|Mes espions me signalent que l'ennemi prépare quelque chose à {s13}. Ces couards d'éclaireurs ont échoué à se rapprocher suffisamment pour apprendre quelque chose d'intéressant. Je veux que vous recrutiez votre propre groupe d'éclaireurs, que vous vous rapprochiez de {s13}, et que vous les envoyiez faire leur travail. Assurez-vous qu'ils ne se retournent pas pour fuir !
+qstr_We_have_reports_of_s|Nos rapports nous signalent une activité ennemie près de {s13}. Nos éclaireurs ne sont pas parvenus à se rapprocher suffisamment pour observer les allers et venues dans la région. Je veux que vous rassembliez un groupe d'éclaireurs, que vous vous rapprochiez de {s13} et que vous envoyez les éclaireurs. Je vais également vous donner quelques recrues, mais vous ne devriez pas les laisser seuls.
+qstr_My_spies_tell_me_the|Mes espions me signalent que l'ennemi prépare quelque chose à {s13}. Ces couards d'éclaireurs ont échoué à se rapprocher suffisamment pour apprendre quelque chose d'intéressant. Je veux que vous recrutiez votre propre groupe d'éclaireurs, que vous vous rapprochiez de {s13} et que vous les laissiez sur place. Assurez-vous qu'ils ne se retournent pas pour fuir ! Je vais vous donner ces recrues, elles ne nous manqueront pas.
 qstr_{s9}_asked_you_to_di|{s9} vous a demandé de déployer un groupe d'éclaireurs près de {s13}.^Récupérez {reg1} soldats de {s15} dont au moins un {s14}, approchez-vous de {s13} et parlez au {s14} pour déployer le groupe.
 qstr_We_need_to_take_the_|Nous avons besoin de porter le combat sur l'ennemi, {playername}. Pour l'instant, nous pouvons faire ceci en nous attaquant à ses patrouilles et ses communications. Je veux que vous éliminiez {reg1} groupes {s13}, ce qui nous aiderait à reprendre l'initiative.
 qstr_We_need_to_grind_dow|Nous devons broyer nos stupides adversaires, {playername}. Leurs patrouilles et leurs caravanes de ravitaillement deviennent trop fréquents à mon goût. Je veux que vous éliminiez {reg1} groupes de {s13}, qu'ils apprennent à craindre ce qui va leur arriver.
 qstr_{s9}_asked_you_to_el|{s9} vous a demandé d’éliminer {reg1} groupes de {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} vous a demandé de délivrer {s13} de la menace d’un troll déchaîné dans ses environs.
+qstr_{reg1}_{s16}_joined_|{reg1} {s16} se sont joints à votre groupe.
 qstr_the_Dwarves_so_that_|des nains, si vous passez par Erebor ou les Collines de Fer, vous pourrez vous équiper d'une arme sortie des légendaires forges naines.
 qstr_Gondor_so_that_if_yo|Gondor, si vous passez sur leurs terres vous pourrez acheter une de leurs célèbres armures
 qstr_Rohan_so_that_if_you|Rohan, si vous traversez leurs terres vous pourrez acquérir un de leurs superbes chevaux.
@@ -1549,8 +1572,8 @@ qstr_Good_moves_but_you_m|Bons mouvements, mais vous avez encore du travail.
 qstr_More_than_half_of_th|Plus de la moitié des adversaires, pas mal.
 qstr_You_ll_need_to_try_h|Vous aurez besoin de vous entraîner plus dur que ça.
 qstr_Well..._better_here_|Et bien... c'est mieux ici que dans un vrai combat, hein ?
-qstr_We_ve_been_sent_by_L|Nous avons été envoyés par le seigneur {s3}. Nous sommes venus pour joindre nos forces aux vôtres.
-qstr_Lord_{s3}_has_sent_u|Le seigneur {s3} nous à envoyé rejoindre la flotte qui attaque {s4}.
+qstr_We_ve_been_sent_by_{|Nous avons été envoyés par {s3}. Nous sommes venus joindre nos forces aux vôtres.
+qstr_{s3}_has_sent_us_to_|{s3} nous a envoyés rejoindre la flotte qui attaque {s4}.
 qstr_Excellent_{playernam|Excellent, {playername} ! J'ai entendu dire que vous leur aviez donné plus que ce que j'avais demandé. C'est un excellent travail. ^^Tenez, prenez cela comme une récompense supplémentaire pour avoir dépassé nos attentes. ^^Nous devons gagner cette guerre le plus tôt possible.
 qstr_Excellent_{playername|Excellent, {playername}. Cela les aidera sûrement. Nous devons gagner cette guerre le plus tôt possible.
 qstr_Reinforcing_{s1}_has|Le renforcement de {s1} a renforcé {s2}. ({s2} a gagné {reg50} en force de faction).

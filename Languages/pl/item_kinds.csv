@@ -144,7 +144,7 @@ itm_arnor_greaves|Arnorskie Nagolenniki
 itm_arnor_shield_a|Arnorska Tarcza
 itm_arnor_shield_c|Arnorska Tarcza Kawaleryjska
 itm_arnor_sword_a|Arnorski Miecz Półtoraręczny
-itm_arnor_sword_c|Arnorski Miecz Półtoraręczny
+; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_f|Arnorski Krótki Miecz
 itm_riv_helm_a|Czepiec z Rivendell
 itm_riv_helm_b|Hełm Łucznika z Rivendell
@@ -185,13 +185,13 @@ itm_gondor_ranger_hood_mask|Gondorski Kaptur Zwiadowcy
 itm_gondor_light_greaves|Gondorskie Skórzane Nagolenniki
 itm_gondor_med_greaves|Gondorskie Porządne Nagolenniki
 itm_gondor_heavy_greaves|Gondorskie Kolcze Nogawice
-itm_gondor_infantry_helm|Gondorski Hełm Piechoty
 itm_gondor_auxila_helm|Gondorski lekki hełm
 itm_gondorian_archer_helm|Gondorski Hełm Łucznika
 itm_tower_archer_helm|Hełm Strzelca Cytadeli
 itm_gondor_leader_helm|Gondorski Wspaniały Hełm
 itm_tower_guard_helm|Hełm Gwardii Cytadeli
 itm_gondor_citadel_knight_helm|Hełm Rycerza Cytadeli
+itm_gondor_infantry_helm|Gondorski Hełm Piechoty
 itm_gondor_knight_helm|Gondorski Hełm Kawalerzysty
 itm_gondor_dolamroth_helm|Hełm z Dol Amroth
 itm_swan_knight_helm|Hełm Łabędziego Rycerza
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Linhirski Eket
 itm_pelargir_eket|Eket z Pelargiru
 itm_pelargir_sword|Miecz z Pelargiru
 itm_gondor_ranger_sword|Gondorski Miecz Zwiadowcy
-itm_gondor_bastard|Gondorski Miecz Półtoraręczny
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|Gondorski Miecz z Cytadeli
 itm_gondor_cav_sword|Gondorski Miecz Kawaleryjski
 itm_gondor_spear|Gondorska Włócznia
 itm_gondor_tower_spear|Gondorska Włócznia z Cytadeli
 itm_gondor_lance|Gondorska lanca
-itm_loss_axe|Bitewny Topór z Lossarnach
-itm_loss_war_axe|Wojenny Topór z Lossarnach
+; itm_loss_axe|Gondor Fighting Axe
+; itm_loss_war_axe|Gondor War Axe
 itm_lorien_sword_a|Długi Miecz z Lorien
 itm_lorien_sword_b|Krótki Miecz z Lorien
 itm_lorien_sword_c|Wojenny Miecz z Lorien
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Isengardzka Zbroja Orka
 itm_isen_orc_armor_f|Isengardzka Zbroja Orka
 itm_isen_orc_armor_g|Isengardzka Zbroja Orka
 itm_isen_uruk_light_a|Lekka Zbroja Uruk-hai
-itm_isen_uruk_light_b|Skórzana Zbroja Uruk-hai
-itm_isen_uruk_light_c|Skórzana Zbroja Uruk-hai
-itm_isen_uruk_light_d|Skórznia z Kolczugą Uruk-hai
-itm_isen_uruk_light_e|Pancerz Kolczy Uruk-hai
-itm_isen_uruk_heavy_a|Wzmacniana Kolczuga Uruk-hai
-itm_isen_uruk_heavy_b|Ciężki Pancerz Uruk-hai
-itm_isen_uruk_heavy_c|Ciężka Zbroja Uruk-hai
+; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
+; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
+; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
+; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
 itm_isen_uruk_heavy_d|Skórznia Tropiciela Uruk-hai
 itm_isen_uruk_heavy_e|Zbroja Tropiciela Uruk-hai
 itm_uruk_tracker_boots|Buty Tropiciela Uruk-hai
