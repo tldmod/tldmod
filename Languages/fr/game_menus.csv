@@ -12,7 +12,7 @@ mno_custom_battle_scenario_12|Choisissez les factions pour la bataille
 mno_custom_battle_scenario_3|Embuscade, Elfes contre Númenóréens noirs
 mno_custom_battle_scenario_4|Défense de la Gorge de Helm, Rohan contre Isengard
 mno_custom_battle_scenario_5|Embuscade : factions du Nord contre Rhûn
-mno_custom_battle_scenario_6|Attaque de siège, Orques contre Nains
+mno_custom_battle_scenario_6|Attaque de siège, orques contre nains
 mno_custom_battle_scenario_7|Embuscade, Orques contre Grand'Peur
 mno_custom_battle_scenario_8|Le dernier combat du peuple de Durin
 mno_custom_battle_scenario_88|Pourchasser un groupe d'éclaireurs orques
@@ -133,7 +133,7 @@ menu_game_options|^^^^^^^^Cliquez sur une option pour basculer :
 mno_game_options_war_level_start|La Guerre commence au Niveau : {s1}
 mno_game_options_restrict_items|Équipement du joueur restreint : {s7}
 mno_game_options_formations|Formations de bataille et IA : {s7}
-mno_game_options_siege_ai|IA de Siège Avancée : {s7}
+mno_game_options_siege_ai|IA de siège avancée : {s7}
 mno_game_options_town_menu|PNJ des villes toujours disponibles depuis les menus : {s7}
 mno_game_options_cutscenes|Cinématiques : {s7}
 mno_game_options_injuries|Blessures pour les compagnons : {s7}.
@@ -157,7 +157,7 @@ mno_game_options_compat_party|Nombre maximal de groupes : {s1}
 mno_game_options_compat_back|Retour au menu des options.
 menu_camp_strat_tweaks|^^^^^^^^Cliquez sur une option pour basculer : ^(attention : c'est de la triche !)
 mno_strat_tweaks_siege_reqs|Force requise pour les sièges : {s7}
-mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate : {reg1}
+mno_strat_tweaks_siege_relax_rate|Taux de baisse de la force requise pour sièges : {reg1}
 mno_strat_tweaks_regen_rate|Taux de régénération de force : {s7}
 mno_strat_tweaks_siege_regen_limit|La force de faction se régénère plus lentement à : {reg1}
 mno_strat_tweaks_influence_gain_rate|Taux de gain d'influence : {s7}
@@ -334,7 +334,7 @@ mno_whatever|Levez-vous !
 menu_recover_after_death_default|^^^^^Vous reprenez conscience. Vous êtes étendu{/e} là où vous êtes tombé{/e}. Les ennemis ont dû vous croire mort{/e} et vous ont laissé{/e} là. Qu'importe, il semble qu'aucune de vos blessures n'ait été fatale et, bien que vous vous sentiez vraiment mal, vous pouvez toujours marcher. Vous essayez de vous lever afin de retrouver les éventuels survivants de votre groupe.
 menu_recover_after_death_town|^^^^Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant{/e} ! Les environs sont déserts et vous saisissez cette opportunité pour quitter la ville. Il semble qu'aucune de vos blessures n'ait été fatale et, bien que vous vous sentiez vraiment mal, vous pouvez marcher.
 menu_recover_after_death_town_alone|^^^^Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant{/e} ! Les environs sont déserts et vous saisissez cette opportunité pour quitter la ville. Vos compagnons vous trouvent alors. Il semble qu'aucune de vos blessures n'ait été fatale et, bien que vous vous sentiez vraiment mal, vous pouvez marcher.
-menu_notification_center_under_siege|{s1} a été assiégé par {s2} de {s3} !
+menu_notification_center_under_siege|{s2} de {s3} assiège {s1} !
 menu_notification_one_side_left|^^^^^La Guerre de l'Anneau est terminée !^Les {s1} ont défait tous leurs ennemis et sont victorieux !
 menu_notification_total_defeat|^^^^^La Guerre de l'Anneau est terminée pour vous !^^Les {s1} ont été vaincus par leurs ennemis et vous restez seul dans la défaite !
 menu_notification_your_faction_collapsed|^^^^^Votre patrie, {s11}, a été défaite !^Toutefois, d'autres alliés continuent cette guerre. Avec tous ceux restant de {s11}, vous pouvez encore aider votre camp à emporter la victoire.
@@ -351,11 +351,11 @@ menu_gondor_beacons|Vous regardez {s1}, un des feux d'alarme du Gondor utilisé 
 mno_gondor_beacons_close|Partir...
 menu_player_added_to_war_council|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, {s2} vous demande de faire partie du Conseil de Guerre. Vous pouvez maintenant suggérer des stratégies pour influencer le cours de la guerre. 
 mno_player_added_to_war_council_close|Fermer
-menu_player_added_to_siege_reports|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, vous recevrez des rapports si {s2} assiège un fief ou quand les fiefs de {s2} sont assiégés.
+menu_player_added_to_siege_reports|^^^^^Un messager arrive et vous informe que maintenant, en tant que {s24}, vous recevrez des rapports si {s2} assiège un fief ou quand les fiefs de {s2} sont assiégés.
 mno_player_added_to_siege_reports_close|Fermer
 menu_player_added_to_allow_follow|^^^^^Un messager est arrivé et vous informe que maintenant, en tant que {s24}, vous êtes autorisé à commander à {s2} de vous suivre, pour un total de {reg55} compagnons maximum.
 mno_player_added_to_allow_follow_close|Fermer
-menu_center_besieged_event|^^^^^Un messager est arrivé et vous informe que {s1} est assiégé par {s2} de {s3}.
+menu_center_besieged_event|^^^^^Un messager arrive et vous informe que {s2} de {s3} assiège {s1}.
 mno_center_besieged_event_close|Fermer
 menu_guardian_party_spawned|^^^^Nos éclaireurs nous informent que {s6} regroupe une grande armée aux alentours de {s7}, dans une dernière tentative de défendre la capitale.
 mno_intro_next|Continuer...

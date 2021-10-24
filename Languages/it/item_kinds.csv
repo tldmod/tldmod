@@ -260,7 +260,7 @@ itm_gondor_short_sword|Eket di Linhir
 itm_pelargir_eket|Eket di Pelargir
 itm_pelargir_sword|Spada di Pelargir
 itm_gondor_ranger_sword|Spada da Ramingo di Gondor
-; itm_gondor_2h_sword|Gondor War Sword
+itm_gondor_2h_sword|Spada da Guerra di Gondor
 itm_gondor_citadel_sword|Spada della Cittadella di Gondor
 itm_gondor_cav_sword|Spada da Cavalleria di Gondor
 itm_gondor_spear|Lancia da Fanteria di Gondor
@@ -301,8 +301,8 @@ itm_isen_orc_armor_g|Armatura Orchesca di Isengard
 itm_isen_uruk_light_a|Bardatura Leggera Uruk--Hai
 itm_isen_uruk_light_b|Bardatura da Battaglia Uruk--Hai
 itm_isen_uruk_light_c|Bardatura da Berserker Uruk--Hai
-; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
-; itm_isen_uruk_med_b|Uruk-hai Mail
+itm_isen_uruk_med_a|Armatura Segmentata Leggera Uruk--Hai
+itm_isen_uruk_med_b|Maglia in Ferro Uruk-hai
 itm_isen_uruk_heavy_a|Armatura Segmentata Media Uruk--Hai
 itm_isen_uruk_heavy_b|Maglia in Ferro Pesante Uruk--Hai
 itm_isen_uruk_heavy_c|Armatura Segmentata Completa Uruk--Hai

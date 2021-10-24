@@ -91,9 +91,9 @@ qstr_Battle_Formations_an|Formazioni da Battaglia e IA:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|FormIA TLD (Originale)
 qstr_TLD_New_FormAI|Nuova FormIA TLD
-; qstr_Siege_AI:__|Siege AI:  
-; qstr_Basic__better_perfor|Basic (better performance)
-; qstr_Advanced|Advanced
+qstr_Siege_AI:__|IA Assedio:
+qstr_Basic__better_perfor|Base (migliori prestazioni)
+qstr_Advanced|Avanzato
 qstr_Town_NPCs_Always_Acc|NPC delle città subito visibili nei menu:
 qstr_Cutscenes:__|Intermezzi:
 qstr_Injuries_for_compani|Ferite per i compagni:
@@ -107,9 +107,9 @@ qstr_Player_damage_only|Solo danni al giocatore
 qstr_All_Messages|Tutti i messaggi
 qstr_Troop_Identifier_in_|Id. in Battaglia (Y durante una battaglia = On/Off):
 qstr_Disable|Disattiva
-; qstr_Troop_Names|Troop Names
-; qstr_Simple:_Faction_Colo|Simple: Faction Colors
-; qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
+qstr_Troop_Names|Nomi Truppa
+qstr_Simple:_Faction_Colo|Semplice: Colori delle Fazioni
+qstr_Simple:_Black___Enem|Semplice: Nero - Nemici / Bianco - Alleati
 qstr_Preferred_Camera_Mod|Modalità Telecamera Preferita:
 qstr_Default_Camera|Inquadratura Predefinita
 qstr_Free_Mode_Custom_Cam|Inquadratura Libera Personalizzata
@@ -185,15 +185,15 @@ qstr_+20_to_Party_Morale|+20 Al Morale della Compagnia
 qstr_+1_to_Riding_Skill|+1 Abilità nel Cavalcare
 qstr_during_battles|durante le battaglie
 qstr_+1_to_Pathfinding|+1 in Orientamento
-; qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
-; qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
-; qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
+qstr_+2_to_Wound_Treatmen|+2 in Trattamento Ferite (Compagnia)
+qstr_+2_to_Surgery__Party|+2 in Chirurgia (Compagnia)
+qstr_+2_to_Pathfinding__P|+2 in Orientamento (Compagnia)
 qstr_Use_from_Camp_Menu|Fanne uso dal menu di Campo
 qstr_Use_from|Usa da
 qstr_Action_Menu|Menu azioni
-; qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
-; qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
-; qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
+qstr_Bonus_to_Wound_Treat|Bonus nel Trattamento Ferite (Compagnia)
+qstr_Bonus_to_Surgery__Pa|Bonus in Chirurgia (Compagnia)
+qstr_Bonus_to_First_Aid__|Bonus in Primo Soccorso (Compagnia)
 qstr_+1_to_Weapon_Mastery|+1 in Maestria nelle armi
 qstr_+1_to_Wound_Treatmen|+1 in Trattamento Ferite
 qstr_+1_to_Tactics|+1 in Tattica
@@ -218,8 +218,8 @@ qstr_rally|spronare
 qstr_rallies|sprona
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} in battaglia
 qstr_+1_to_Charisma|+1 in Carisma
-; qstr_Call_Reinforcements|Call Reinforcements
-; qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
+qstr_Call_Reinforcements|Chiama Rinforzi
+qstr__Effect_scales_with_|(L'effetto si bilancia con Forza e Carisma)
 qstr_+1_to_First_Aid|+1 in Primo soccorso
 qstr_+1_to_Surgery|+1 in Chirurgia
 qstr_+1_to_Intelligence|+1 in Intelligenza
@@ -234,8 +234,8 @@ qstr_+2_to_Tactics|+2 in Tattica
 qstr_+1_Intelligence|+1 in Intelligenza
 qstr_+{reg1}_to_Spotting|+{reg1} in Avvistamento
 qstr__Scales_with_Wildcra|(Scaglie Mimetiche)
-; qstr_Strengthens_all_Hero|Strengthens all Heroes
-; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
+qstr_Strengthens_all_Hero|Rafforza tutti gli Eroi
+qstr_+2_to_First_Aid__Par|+2 in Primo Soccorso (Compagnia)
 qstr_+1_to_Power_Throw|+1 in Potenza di Lancio
 qstr_+1_to_Spotting|+1 in Avvistamento
 qstr_Less_Dunnish_upkeep|Minore gestione Dunlandiana
@@ -254,7 +254,7 @@ qstr_Good|Bene
 qstr_Med|Mediamente forte
 qstr_Bad|Cattivo
 qstr_You_gained_{reg84}_e|Hai guadagnato {reg84} Punti Esperienza bonus per la tua Intelligenza.
-; qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
+qstr_You_gained_{reg84}_w|Hai guadagnato {reg84}  punti arma per la tua agilità.
 qstr_{reg4}_killed_{reg5}|{reg4} uccisi, {reg5} feriti, {reg6} in rotta
 qstr_{reg4}_killed_{reg5}_|{reg4} uccisi, {reg5} feriti
 qstr_{reg4}_killed_{reg5}_r|{reg4} uccisi, {reg5} in rotta
@@ -797,15 +797,15 @@ qstr_Drive_them_back!|Ricacciamoli indietro !
 qstr_Protect_the_City!|Proteggi la città !
 qstr_Forward!_Board_them!|Avanti ! All'arrembaggio !
 qstr_The_Last_Days_of_the_|The Last Days of the Third Age dispone di una IA avanzata per quanto riguarda gli assedi, molto differente dalla versione Native. Tutti gli attaccanti e i difensori vengono distribuiti sui fianchi destro e sinistro e al centro. I giocatori che attaccano sono al comando di alcune delle proprie truppe personali.
-; qstr_on_the_left_flank|on the left flank
-; qstr_on_the_right_flank|on the right flank
-; qstr_through_the_center|through the center
-; qstr_Attackers_charge_{s2|Attackers charge {s2}
-; qstr_Attackers_charge_{s1|Attackers charge {s1}
-; qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
-; qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
-; qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
-; qstr_The_remaining_attack|The remaining attackers disperse!
+qstr_on_the_left_flank|sul fianco sinistro
+qstr_on_the_right_flank|sul fianco destro
+qstr_through_the_center|attraverso il centro
+qstr_Attackers_charge_{s2|Gli Assalitori Caricano {s2}
+qstr_Attackers_charge_{s1|Gli aggressori caricano  {s1}
+qstr_{s1}_rallied_to_your|{s1} si è schierato dalla tua parte grazie al tuo carisma.
+qstr_Last_attacker_wave._|Ultima ondata di assalitori. Vuoi ritirarti ?
+qstr_Attackers_almost_def|Attaccanti quasi sconfitti. Vuoi ritirarti ?
+qstr_The_remaining_attack|Gli attaccanti rimasti si disperdono !
 qstr_The_remaining_defend|I difensori rimanenti fuggono dall'assedio !
 qstr_Reached_Gauntlet_wav|Raggiunta l'ondata sfida {reg1} !
 qstr_Ballista:_out_of_amm|Ballista: munizioni terminate !
@@ -1486,7 +1486,7 @@ qstr_We_need_to_take_the_|Dobbiamo portare la battaglia sul campo nemico, {playe
 qstr_We_need_to_grind_dow|Dobbiamo colpire i nostri vili nemici, {playername}. Le loro pattuglie e carovane stanno crescendo troppo coraggiosamente per i miei gusti. Voglio che tu elimini {reg1} {s13}, così incominceranno a capire cosa gli aspetta.
 qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di eliminare {reg1} compagnie di {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} ti ha chiesto di liberare {s13} dalla minacca di un Troll furioso nella sua periferia.
-; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
+qstr_{reg1}_{s16}_joined_|{reg1} {s16} si unisce alla tua compagnia.
 qstr_the_Dwarves_so_that_|i Nani, se attraversi Erebor o le Colline di Ferro, puoi tentare di armarti con il leggendario equipaggiamento nanico.
 qstr_Gondor_so_that_if_yo|Gondor, se attraversi le loro lande, puoi tentare di acquistare alcune delle loro famose armature.
 qstr_Rohan_so_that_if_you|Rohan, se attraversi le loro terre, puoi cercare di comprare alcuni dei loro leggendari cavalli.
@@ -1572,8 +1572,8 @@ qstr_Good_moves_but_you_m|Belle mosse, ma hai ancora del lavoro da fare.
 qstr_More_than_half_of_th|Più della metà degli avversari, non male.
 qstr_You_ll_need_to_try_h|Devi impegnarti di più di così.
 qstr_Well..._better_here_|Bene... Meglio qui che in battaglia, Eh ?
-; qstr_We_ve_been_sent_by_{|We've been sent by {s3}. We have come to join our strength to yours.
-; qstr_{s3}_has_sent_us_to_|{s3} has sent us, to join the fleet attacking {s4}.
+qstr_We_ve_been_sent_by_{|Siamo stati inviati da {s3}. Siamo qui per unire le nostre forze alle vostre.
+qstr_{s3}_has_sent_us_to_|{s3} ci ha inviati, per unirci alla flotta che sta attaccando {s4}.
 qstr_Excellent_{playernam|Eccellente, {playername} ! Ho saputo che gli hai dato più di quanto avevo chiesto. Ottimo lavoro.^^ Ecco, prendi questi e una ricompensa extra per aver superato le nostre aspettative. ^^ Abbiamo bisogno di vincere questa guerra il prima possibile.
 qstr_Excellent_{playername|Eccellente, {playername}. Questo certamente li aiuterà. Abbiamo bisogno di vincere questa guerra nel tempo più breve possibile.
 qstr_Reinforcing_{s1}_has|I rinforzi a {s1} hanno rafforzato {s2}. ({s2} ha ottenuto {reg50} punti forza per la fazione).

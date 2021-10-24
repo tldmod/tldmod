@@ -1868,16 +1868,16 @@ str_shortname_region_dead_marshes|le Paludi Morte
 str_shortname_region_isengard|Nan Curunir
 str_shortname_region_fangorn|Fangorn
 str_shortname_region_brown_lands|Le Terre Marroni
-; str_shortname_region_dagorlad|Dagorlad
-; str_shortname_region_n_undeep|the North Undeep
-; str_shortname_region_s_undeep|the South Undeep
-; str_shortname_region_emyn_muil|Emyn Muil
+str_shortname_region_dagorlad|Dagorlad
+str_shortname_region_n_undeep|il  Guado del Nord
+str_shortname_region_s_undeep|ll Guado del Sud
+str_shortname_region_emyn_muil|Emyn Muil
 str_shortname_region_misty_mountains|piedi delle Montagne Nebbiose settentrionali
 str_shortname_region_lorien_|Lorien
 str_shortname_region_anduin_banks_|valle mediana dell'Anduin
 str_shortname_region_n_mirkwood_|Bosco Atro Nord
 str_shortname_region_s_mirkwood_|Bosco Atro Sud
-; str_shortname_region_c_mirkwood|Middle Mirkwood
+str_shortname_region_c_mirkwood|Bosco Atro di mezzo
 str_shortname_region_grey_mountains|piedi delle Montagne Grigie
 str_shortname_region_mordor|La terra di Mordor
 str_shortname_region_dimrill|Dimrill Dale
@@ -2291,7 +2291,7 @@ str_npc27_2ary_morality_speech|[Nessun codice morale secondario]
 str_npc18_personalityclash_speech|Oh Grande, se consideri Varfang un guerriero, ti prego di tenerlo il più lontano possibile da me. L'ho già avvertito che le sue mani non possono andare dove non devono, altrimenti gliele taglierò e le darò in pasto al suo cavallo.
 str_npc19_personalityclash_speech|Comandante, mi meraviglio che tu mantenga al tuo servizio una creatura di basso livello come Ufthak. Certo, gli orchi come quello sono feccia utile come scudo per le frecce a protezione dei nostri veri guerrieri, ma si aggira per il campo dando ordini a uomini e orchi, come se fosse uno che ha autorità. Spero che non ti mancherà troppo se lo uccido. O forse potrei limitarmi a tagliargli quel naso orrendo..
 str_npc20_personalityclash_speech|Quel Sudrone di Lykyada dovrebbe imparare le buone maniere e che gli venisse insegnata un po' d'umiltà. Insolente è la sua lingua, e troppo orgoglioso il suo portamento ! Non m'importa che sia il capitano dei suoi - sono solo una sciocca razza inferiore, in ogni caso, lenti a riconoscere la grandezza o ad inchinarsi davanti ai loro superiori come dovrebbero ! Se solo sapesse anche una piccola parte di quello che potrei fargli...
-; str_npc21_personalityclash_speech|Blimey, chief, but that Sickburpfoul's a bit of a mad bat, ain't she? Yer can tell she's cooked one crow too many in that there cauldron of hers, the one what I drag on me poor ol' back at Her Ladyship's command. And lumme if she don't look at me down the end of the nose like I was a piece of dung scrapings, and her head not even up to me navel! Enough to make me want to 'ave her noggin meet my fist, I reckon. But I've seen her sort afore, yes I 'ave. With the likes o' her around, yer wants a pair o' extra eyes round the back of your 'ead, and no mistake.
+str_npc21_personalityclash_speech|Cavolo capo, ma quella pazza pazza ripugnante è un po' fuori di testa, non è vero ? Puoi andarle a dire che ha cucinato un corvo di troppo in quel suo calderone, quello che mi tocca portare sulla schiena stando agli ordini di Sua Signoria. E diamine se non mi guarda dalla punta del naso come se fossi un pezzo di sterco, quando la sua testa non mi arriva nemmeno all'ombelico ! Ce n'è abbastanza da farmi desiderare che la sua zucca e il mio pugno si incontrino. Ma l'ho vista prima, sì, l'ho vista. Stava insieme a quelli come lei, magari vorresti un paio d'occhi che le vadano dietro, non sarebbe male controllarla.
 str_npc22_personalityclash_speech|Ho già detto che odio {s11} ?
 str_npc23_personalityclash_speech|{playername}, ho appena visto {s11} camminare sfacciatamente sopra al nido di uccelli appena nati. La sua goffaggine ha distrutto le vite di quelle creature innocenti.
 str_npc24_personalityclash_speech|Signore, {s11} si comporta bene in battaglia, ma mi chiedo: acceca il nemico con i riflessi dei suoi capelli ? O cadono nel timore della sua fama o di fronte alla forza della sua presunzione ?
@@ -2510,24 +2510,24 @@ str_mordor_cungol_guildmaster_companion|O Ho, tu vuoi un combattente ! Ho propri
 str_gundabad_guildmaster_companion_player_ask|Tutto quello che vedo qui è una marmaglia di infidi pigroni, più inlcini a scappare che a combattere. Dove sono i tuoi guerrieri ?
 str_gundabad_guildmaster_companion_none|Non m'interessa da dove vieni -- fa attenzione a come parli qui ! Oh si, fa attenzione a come parli rivolgendoti a noi, o potresti ritrovarti dentro una fossa oscura piena di serpenti in questi nostri tunnel. I nostri sono nelle terre ribelli, combattono i ladri e i briganti, e i sangunari amici degli elfi. E tu che fai, eh ? Sfuggi ai combattimenti di cui dovresti far parte, stai a spiare i fatti nostri ? Sparisci e gettati nella mischia, come un vero guerriero !
 str_gundabad_guildmaster_companion_player_none_ok|Dovrai fare attenzione a ciò che dici con me, se ci tieni al tuo bene.
-; str_gundabad_guildmaster_player_found_ok|Do I hear you aright? Is this “Berta” of yours a troll that thinks? Now this, I have to see for myself.
-; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
-; str_fullname_region_rhun|East Rhovanion, on both sides of the river Celduin
-; str_fullname_region_erebor|the foothills of Erebor, the Lonely Mountain
-; str_fullname_region_celebrant|the Field of Celebrant, between the rivers Celebrant and Limlight
-; str_fullname_region_gladden_fields|the Gladden Fields, marshes of the river Gladden
-; str_fullname_region_w_emyn_muil|western Emyn Muil
-; str_fullname_region_s_misty_mountains|the foothills of the southern Misty Mountains
-; str_fullname_region_n_anduin_vale|the northern Vale of Anduin, north of the Carrock
-; str_fullname_region_s_anduin_vale|the southern Vale of Anduin, between Lorien and the Undeeps
-; str_fullname_region_cair_andros|Cair Andros, the great ship-like island of Anduin
-; str_shortname_region_rhun|East Rhovanion
+str_gundabad_guildmaster_player_found_ok|Ho sentito bene ? Questa vostra... "Berta" è un troll pensante ? Beh, è una cosa che devo vedere di persona.
+str_gundabad_guildmaster_companion|Tieni a freno la lingua, o qualcuno qui te la taglierà ! Oh si, fa un passo sbagliato e con uno schiocco delle mie dita, proprio così -- finisci nella fossa dei combattimenti ! C'è un regalo speciale in quel posto, per i fanfaroni come te. Ha, vedremo quanto ti piacerà trovarti in quella fossa con la grande vecchia Berta ! Scommetto un mese di pasti che non resteresti in piedi dopo un colpo dei suoi. E' il troll più astuto che abbiamo trovato, ma noi siamo più furbi vedi, dato che siamo noi quelli che l'hanno incatenata per bene ! Ci fa molto ridere vederla sotto la grande statua di quel vecchio re nano, nelle caverne. Così non si sente sola, heh ehe he. Che ne dici ? Ti va di provarci con la nostra Berta ?
+str_fullname_region_rhun|il Rhovanion orientale, su entrambe le rive del fiume Celduin
+str_fullname_region_erebor|i piedi dell'Erebor, la montagna solitaria
+str_fullname_region_celebrant|il Campo di Celebrant, fra i fiumi Argentaroggia e Limiterso
+str_fullname_region_gladden_fields|i Campi Iridati, le paludi del fiume Iridato
+str_fullname_region_w_emyn_muil|Emyn Muil occidentale
+str_fullname_region_s_misty_mountains|i piedi delle Montagne Nebbiose meridionali
+str_fullname_region_n_anduin_vale|la valle settentrionale dell'Anduin, a nord della Carroccia
+str_fullname_region_s_anduin_vale|la valle meridionale dell'Anduin, fra Lorie e i Guadi
+str_fullname_region_cair_andros|Cair Andros, la grande isola simile a una nave sull'Anduin
+str_shortname_region_rhun|il Rhovanion orientale
 str_shortname_region_erebor|i piedi dell'Erebor
-; str_shortname_region_celebrant|the Field of Celebrant
+str_shortname_region_celebrant|il  Campo di Celebrant
 str_shortname_region_gladden_fields|i Campi Iridati
-; str_shortname_region_w_emyn_muil|western Emyn Muil
-; str_shortname_region_s_misty_mountains|the foothills of the Southern Misty Mountains
-; str_shortname_region_n_anduin_vale|the northern Vale of Anduin
-; str_shortname_region_s_anduin_vale|the southern Vale of Anduin
-; str_shortname_region_cair_andros|Cair Andros
+str_shortname_region_w_emyn_muil|Emyn Muil occidentale
+str_shortname_region_s_misty_mountains|i piedi meridionali delle Montagne Nebbiose
+str_shortname_region_n_anduin_vale|la valle settentrionale dell'Anduin
+str_shortname_region_s_anduin_vale|la valle meridionale dell'Anduin
+str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Se uccide bene, lo prenderò. Altrimenti, lo sventrerò come un pesce. E se si rivelerà essere un altro verme senza valore, tornerò e te la farò pagare per aver sprecato il mio tempo !

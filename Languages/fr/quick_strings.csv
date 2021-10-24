@@ -111,7 +111,7 @@ qstr_Troop_Names|Noms des soldats
 qstr_Simple:_Faction_Colo|Simple : couleurs des factions
 qstr_Simple:_Black___Enem|Simple : Noir - Ennemis / Blanc - Alliés
 qstr_Preferred_Camera_Mod|Mode de caméra préféré :
-qstr_Default_Camera|Camera par défaut 
+qstr_Default_Camera|Caméra par défaut 
 qstr_Free_Mode_Custom_Cam|Caméra personnalisée en mode libre
 qstr_Fixed_Over_The_Shoul|Caméra fixe au dessus de l'épaule
 qstr_Prevent_AI_from_taki|Empêcher l'IA de rester en défense :
@@ -287,7 +287,7 @@ qstr_Battle_Advantage_=_{|"Avantage de Bataille = {reg0}.
 qstr_{s9}_wants_you_to_re|{s9} veut que vous cessiez de suivre son armée jusqu'à nouvel ordre. 
 qstr__Being_Raided_|(en train d'être pillé)
 qstr__Looted_|(pillé)
-qstr__Under_Siege_|(assiégé)
+qstr__Under_Siege_|(en état de siège)
 qstr_{s3}_is_no_longer_un|Le siège de {s3} a été levé.
 qstr_Enemies_spotted_near|Ennemis repérés près de {s1}.
 qstr_Your_relation_with_{|Vos relations avec {s1} se sont améliorées.
@@ -579,7 +579,7 @@ qstr_Go_to_{s1}_and_speak|Allez à {s1} et parlez avec {s9}
 qstr_The_Remnant_Forces_o|Les forces restantes de {s22} se sont rassemblées pour renforcer le théâtre d'opération de {s15} !
 qstr_The_strength_of_the_|La force de ce qu'il reste des factions alliées du théâtre d'opération de {s15} à augmenté
 qstr_{s30}_reinforced_by_|{s30} est renforcé par la force de faction {reg65}
-qstr_{s1}_has_been_besieg|{s1} est assiégée par {s2}, {s3}.
+qstr_{s1}_has_been_besieg|{s1} est sous le siège de {s2}, {s3}.
 qstr_The_forces_of_{s2}_m|Les forces de {s2} marchent sur {s15} !
 qstr_Rohan_capital_moved_|La capitale du Rohan est déplacée d'Edoras à la Ferté-au-Cor !
 qstr_Dale_capital_moved_f|La capitale du Val à été déplacée du Val à Esgaroth !
@@ -717,9 +717,9 @@ qstr_Your_mount_stumbles!|Votre monture trébuche ! Elle semble boiter.
 qstr_Bitten_by_your_own_w|Mordu par votre propre warg !
 qstr_You_weigh_too_much_f|Vous êtes trop lourd pour un poney !
 qstr_Your_mount_rears_ref|Votre monture se cabre, elle refuse d'obéir à vos ordres !
-qstr_Cannot_Change_Camera|Impossible de changer le mode de caméra en vue en première personne.
+qstr_Cannot_Change_Camera|Impossible de changer le mode de caméra quand on est en vue première personne.
 qstr_Switch_Back_to_3rd_P|Revenir en vue à la troisième personne pour changer la caméra.
-qstr_Fixed_Custom_Camera|Caméra personnalisée réglée. 
+qstr_Fixed_Custom_Camera|Caméra personnalisée fixe
 qstr_Press_Ctrl_+_Left_/_|Appuyer sur Ctrl + flèche gauche / Ctrl + flèche droite pour changer d'épaule.
 qstr_Press_Ctrl_+_Down_to|Presser Ctrl + Bas pour centrer
 qstr_Use_+/__to_zoom_in/o|Utilisez + ou - pour zoomer et dé-zoomer.
@@ -776,7 +776,7 @@ qstr_{s21}_{reg24?killed:|{s21} {reg24?à été tué:à été assommé} par {s22
 qstr_A_bear_has_been_summ|Un ours à été appelé au combat !
 qstr_In_The_Last_Days_of_|Dans The Last Days of the Third Age, vos troupes se positionnent et maintiennent leurs positions au début de chaque bataille au lieu de charger aveuglement.^^Pour placer vos troupes en formations, presser la touche "J" pour les Rangs, "K" pour le Mur de Boucliers, "L" pour le Coin et "M" pour le Carré. Pour supprimer la formation appuyer sur "U".^Si vos troupes fuient le combat, vous pouvez appuyer sur "V" pour les rallier. Vous avez un nombre limité de ralliements par combat, ce nombre dépend de vos compétences de commandement et votre charisme.
 qstr_You_can_also_order_y|Vous pouvez aussi ordonner à vos troupes de changer de types d'armes que vous voulez les voir utiliser.^^ Appuyer sur "O" pour changer les Ordres de types d 'armes. Appuyer sur "P" pour changer les Ordres de types de bouclier.
-qstr_The_Last_Days_of_the|The Last Days of the Third Age à mis en place une Caméra Personnalisée pour dépasser les limitations de la caméra actuelle avec les races plus petites (comme les orques et les nains).^^Appuyer sur CTRL+FIN pour changer entre les 2 modes de caméra : Caméra Fixe et Mode Libre.^^Caméra Fixe est à la position optimale pour toutes les races mais ne peut pas être configuré. Vous pouvez appuyer sur CTRL+Flèche Gauche/Droite pour changer d'épaule.^^La caméra Mode Libre met le joueur au centre de l'écran. Vous pouvez utiliser les touches CTRL+Flèche Haut/Bas pour incliner la caméra et CTRL+Clavier Numérique +/- pour zoomer.^^Voir la Page Infos pour savoir comment contrôler les différents mode de caméras.
+qstr_The_Last_Days_of_the|The Last Days of the Third Age à mis en place une Caméra Personnalisée pour dépasser les limitations de la caméra actuelle avec les races plus petites (comme les orques et les nains).^^Appuyer sur CTRL+FIN pour changer entre les 2 modes de caméra : Caméra Fixe et Mode Libre.^^Caméra Fixe est à la position optimale pour toutes les races mais ne peut pas être configuré. Vous pouvez appuyer sur CTRL+Flèche Gauche/Droite pour changer d'épaule.^^Le Mode Libre met le joueur au centre de l'écran. Vous pouvez utiliser les touches CTRL+Flèche Haut/Bas pour incliner la caméra et CTRL+Clavier Numérique +/- pour zoomer.^^Voir la Page Infos pour savoir comment contrôler les différents mode de caméras.
 qstr_Battlefield_is_too_s|Le champ de bataille est trop petit pour les formations complexes d'IA.
 qstr_You_have_a_clear_per|Vous sentez clairement un grand danger imminent, tout autour de vous !
 qstr_New_ent_reached_batt|Un nouvel ent atteint le champ de bataille...
@@ -796,7 +796,7 @@ qstr_End_them_all!|Exterminez les tous !
 qstr_Drive_them_back!|Repoussez les !
 qstr_Protect_the_City!|Protégez la cité !
 qstr_Forward!_Board_them!|En avant ! A l'abordage !
-qstr_The_Last_Days_of_the_|The Last Days of the Third Age possède une IA de siège améliorée, très différente de celle de Native. Tous les attaquants et les défenseurs seront répartis sur les flancs droit et gauche ainsi qu'au centre. Les joueurs attaquants commandent certaines de leurs propres troupes.
+qstr_The_Last_Days_of_the_|The Last Days of the Third Age possède une IA de siège avancée, très différente de celle de Native. Tous les attaquants et les défenseurs seront répartis sur les flancs droit et gauche ainsi qu'au centre. Les joueurs attaquants commandent certaines de leurs propres troupes.
 qstr_on_the_left_flank|sur le flanc gauche
 qstr_on_the_right_flank|sur le flanc droit
 qstr_through_the_center|par le centre
@@ -868,7 +868,7 @@ qstr_You_should_really_se|Vous devriez vraiment voir les photos de l'Intendant D
 qstr_Press_Space_to_conti|Appuyez sur Espace pour continuer...
 qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} jusqu’à la prochaine promotion^
 qstr_Influence:^_{reg11}_|Influence :^ {reg11} (avec {s16})^
-qstr_Resource_Points:^_{r|Point de ressources :^ {reg12} (dans {s16})^
+qstr_Resource_Points:^_{r|Points de ressources :^ {reg12} (dans {s16})^
 qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} jusqu’à la prochaine promotion^
 qstr_{s13}_{reg11}__with_|{s13} {reg11} (dans {s16})^
 qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (dans {s16})^
@@ -1080,7 +1080,7 @@ qstr_Breaking_camp...|Le groupe lève le camp...
 qstr_You_have_left_{s1}.|Vous avez quitté {s1}.
 qstr_You_are_entering_{s1|Vous entrez dans {s1} ({s2}).
 qstr_You_are_entering_{s1}|vous entrez dans {s1}.
-qstr_The_war_expands_comm|La guerre s'étend, les commandants deviennent plus audacieux (prérequis de siège réduits)
+qstr_The_war_expands_comm|La guerre s'étend, les commandants deviennent plus audacieux (les prérequis de siège sont réduits)
 qstr_Your_party_is_spotte|Votre groupe est repéré par {s1}.
 qstr_The_effects_of_the_O|Les effets de la bière orque se sont dissipés.
 qstr_Party_has_nothing_to|Votre groupe n'a rien à manger !
@@ -1150,8 +1150,8 @@ qstr_Reinforcements|Renforts
 qstr_Refugees_Escaped:_{r|Réfugiés enfuis : {reg10} --- Réfugiés tués : {reg11}
 qstr_Raider_Parties_Kille|Groupes de pillards tués : {reg12}
 qstr_One_of_the_target_ce|Une des villes de destination des convois de réfugiés à été détruite. Les réfugiés se sont éparpillés et on ne peut les trouver nulle part.
-qstr_As_an_Orc_or_a_Dwarf|En tant qu'orque ou nain, vous avez la possibilité d'utiliser la camera spéciale que nous avons implémentée dans le but d'améliorer votre expérience avec les petites races de "The last Days". Allez voir dans Concepts de Jeu pour obtenir plus d'informations sur l'utilisation de cette dernière.
-qstr_Custom_Camera|Camera personnalisée
+qstr_As_an_Orc_or_a_Dwarf|En tant qu'orque ou nain, vous avez la possibilité d'utiliser la caméra spéciale que nous avons implémentée dans le but d'améliorer votre expérience avec les petites races de "The last Days". Allez voir dans les Concepts du jeu pour obtenir plus d'informations sur l'utilisation de cette dernière.
+qstr_Custom_Camera|Caméra personnalisée
 qstr_{reg65?my_Lady:my_Lo|{reg65?ma Dame:monseigneur}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Ma Dame:Monseigneur}
 qstr_{reg65?mistress:mast|{reg65?maîtresse:maître}
@@ -1377,8 +1377,8 @@ qstr_First_sieges_are_onl|D'abord, le sièges ne sont une option que pour les pl
 qstr_Here_is_all_that_nee|Voici tout ce que cela nécessite :
 qstr_Firstly_we_must_thin|D'abord nous devons réfléchir aux contraintes de cette tâche :
 qstr_You_need_sharp_weapo|Vous avez besoin d'armes aiguisés, de viande fraîche pour vos hommes et vos wargs, du bois pour alimenter les feux. Vous devez aussi garder vos vermines en rang ou ils vont s’entre-tuer avant d'atteindre les murs. Nous avons trop à faire avec nos propres combats pour nous occuper du votre.^Soyez prêt{/e} à fournir tout le nécessaire pour garder les larves en mouvement.^[nécessite {reg3} en ressources, {reg15} en influence]
-qstr_Steel_must_be_kept_s|L'acier doit rester affûté, les hommes et les chevaux nourris, le feu doit continuer de brûler et les blessures doivent être soignées. Vous et vos hommes ne nous êtes d'aucune utilité si vous ne pouvez pas maintenir le rythme de votre campagne. Nous sommes déjà trop dispersés pour vous fournir ce dont vous avez besoin pour garder votre armée opérationnelle pour un siège.^[nécessite {reg3} en ressources, {reg15} en influence]
-qstr_Steel_must_be_kept_sh|L'acier doit rester affûté, les hommes et les chevaux nourris, le feu doit continuer de brûler et les blessures doivent être soignées. C'est une tâche moins glorieuse que combattre mais elle est aussi importante. Nous sommes déjà trop dispersés pour vous fournir ce dont vous avez besoin pour garder votre armée opérationnelle pour un siège.^[nécessite {reg3} en ressources, {reg15} en influence]
+qstr_Steel_must_be_kept_s|L'acier doit rester affûté, les hommes et les chevaux nourris, le feu doit continuer de brûler et les blessures doivent être soignées. Vous et vos hommes ne nous êtes d'aucune utilité si vous ne pouvez pas maintenir le rythme de votre campagne. Nous sommes déjà trop dispersés pour vous fournir ce dont vous avez besoin pour garder votre armée opérationnelle pour un siège.^[Nécessite {reg3} en ressources, {reg15} en influence]
+qstr_Steel_must_be_kept_sh|L'acier doit rester affûté, les hommes et les chevaux nourris, le feu doit continuer de brûler et les blessures doivent être soignées. C'est une tâche moins glorieuse que combattre mais elle est aussi importante. Nous sommes déjà trop dispersés pour vous fournir ce dont vous avez besoin pour garder votre armée opérationnelle pour un siège.^[Nécessite {reg3} en ressources, {reg15} en influence]
 qstr_Next_if_you_try_to_a|Ensuite, si vous essayez d'attaquer une capitale ennemie, je vous transpercerai si vous n'êtes pas déjà mort{/e}. Nous n'attaquons que là où Maître l'ordonne. Vous allez là ou l'ennemi est faible et où il peut être battu.
 qstr_Secondly_you_do_not_|Deuxièmement, vous n'avez pas la permission de mener notre peuple à l'assaut d'une capitale ennemie. Ces places fortes peuvent uniquement être prises quand toutes nos forces sont unies. Vous devez frapper là où notre ennemi à été suffisamment affaibli pour être vaincu.
 qstr_Third_{s2}_is_on_its|Troisièmement, {s2} a sa propre campagne. Nous nous battrons avec vous si le choix nous semble intéressant, mais vous avez intérêt à être assez fort{/e} pour gagner seul{:e}, ou vous ne durerez pas longtemps.

@@ -165,10 +165,10 @@ mno_strat_tweaks_rank_gain_rate|Rütbe kazanım oranı: {s7}
 mno_strat_tweaks_back|Ayarlar menüsüne dön.
 menu_camp_action|^^^^^^^^ Hangi Eşya?
 mno_camp_drink_water|Ent Suyundan İç !
-mno_camp_drink_orc_brew|Ork içkisini gönder!
-; mno_camp_drink_miruvor|Pass around the Miruvor!
-; mno_camp_use_athelas|Use Athelas for wound treatment.
-; mno_camp_use_drums|Beat the Drums of the Deep.
+mno_camp_drink_orc_brew|Ork içkisinden herkes alsın ve  yanındakine uzatsın!
+mno_camp_drink_miruvor|Miruvor'dan herkes alsın ve  yanındakine uzatsın!
+mno_camp_use_athelas|Yara tedavisi için Athelas kullan.
+mno_camp_use_drums|Derinlerin Davullarını Çal.
 mno_camp_action_4|Geri.
 menu_assasins_attack_player_won|{s3} tarafından gönderilen {s2} suikastçilerini başarıyla alt ettin.
 menu_assasins_attack_player_retreat|Hayatını Kurtardın.

@@ -144,7 +144,7 @@ itm_arnor_greaves|Arnorian Baldır Zırhı
 itm_arnor_shield_a|Arnorian Kalkanı
 itm_arnor_shield_c|Arnorian Süvari Kalkanı
 itm_arnor_sword_a|Arnorian Piç Kılıç
-; itm_arnor_sword_c|Arnor War Sword
+itm_arnor_sword_c|Arnor Savaş Kılıcı
 itm_arnor_sword_f|Arnor Kısa Kılıç
 itm_riv_helm_a|Ayrıkvadi Takkesi
 itm_riv_helm_b|Ayrıkvadi Okçu Migferi
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Lihnir Eket
 itm_pelargir_eket|Pelargir Eket
 itm_pelargir_sword|Pelargir Kılıç
 itm_gondor_ranger_sword|Gondor Okçu Kılıcı
-; itm_gondor_2h_sword|Gondor War Sword
+itm_gondor_2h_sword|Gondor Savaş Kılıcı
 itm_gondor_citadel_sword|Gondor Kale Kılıcı
 itm_gondor_cav_sword|Gondor Süvari Kılıcı
 itm_gondor_spear|Gondorian Mızragı
 itm_gondor_tower_spear|Gondorian Kule Mızragı
 itm_gondor_lance|Gondor Mızragı
-; itm_loss_axe|Gondor Fighting Axe
-; itm_loss_war_axe|Gondor War Axe
+itm_loss_axe|Gondor Dövüş Baltası
+itm_loss_war_axe|Gondor Savaş Baltası
 itm_lorien_sword_a|Lorien Uzun Kılıç
 itm_lorien_sword_b|Lorien Kısa Kılıç
 itm_lorien_sword_c|Lorien Savaş Kılıcı
@@ -299,13 +299,13 @@ itm_isen_orc_armor_e|Isengard Ork Zırhı
 itm_isen_orc_armor_f|Isengard Ork Zırhı
 itm_isen_orc_armor_g|Isengard Ork Zırhı 
 itm_isen_uruk_light_a|Uruk-Hai Hafif Üniforma
-; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
-; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
-; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
-; itm_isen_uruk_med_b|Uruk-hai Mail
-; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
-; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
-; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
+itm_isen_uruk_light_b|Uruk-hai Dövüş Zırhı
+itm_isen_uruk_light_c|Uruk-hai Vahşi Zırhı
+itm_isen_uruk_med_a|Uruk-hai Hafif Kademeli Zırh
+itm_isen_uruk_med_b|Uruk-hai Örgü Zırhı
+itm_isen_uruk_heavy_a|Uruk-hai Orta Agır Kademeli Zırh
+itm_isen_uruk_heavy_b|Uruk-hai Agır Zırh
+itm_isen_uruk_heavy_c|Uruk-hai Komple Kademeli Zırh
 itm_isen_uruk_heavy_d|Uruk-Hai İzci Deri Zırh
 itm_isen_uruk_heavy_e|Uruk-Hai İzci Deri Zırh
 itm_uruk_tracker_boots|Uruk İzci Çizmesi

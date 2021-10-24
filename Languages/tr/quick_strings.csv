@@ -186,14 +186,14 @@ qstr_+1_to_Riding_Skill|Biniş Becerisine +1
 qstr_during_battles|savaş esnasında 
 qstr_+1_to_Pathfinding|Yol bulma Becerisine +1
 ; qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
-; qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
+qstr_+2_to_Surgery__Party|Cerrahlıga +2 (Parti)
 ; qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
 qstr_Use_from_Camp_Menu|Kamp menüsünden kullan
 qstr_Use_from|Kullanmak
 qstr_Action_Menu|Aksiyon Menüsü
 ; qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
 ; qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
-; qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
+qstr_Bonus_to_First_Aid__|İlk yardıma bonus (Ekip)
 qstr_+1_to_Weapon_Mastery|+1 Silah ustalıgına 
 qstr_+1_to_Wound_Treatmen|+1 Yara bakımına 
 qstr_+1_to_Tactics|+1 Taktige
@@ -218,7 +218,7 @@ qstr_rally|toparla
 qstr_rallies|toparlamak
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} Savaşta
 qstr_+1_to_Charisma|Karizmaya +1
-; qstr_Call_Reinforcements|Call Reinforcements
+qstr_Call_Reinforcements|Takviye birlik çagır
 ; qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
 qstr_+1_to_First_Aid|+1 İlkyardıma 
 qstr_+1_to_Surgery|Cerrahlıga +1
@@ -803,9 +803,9 @@ qstr_The_Last_Days_of_the_|Üçüncü Çagın Son Günleri, Yerelden büyük öl
 ; qstr_Attackers_charge_{s2|Attackers charge {s2}
 ; qstr_Attackers_charge_{s1|Attackers charge {s1}
 ; qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
-; qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
-; qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
-; qstr_The_remaining_attack|The remaining attackers disperse!
+qstr_Last_attacker_wave._|Son saldırı. Geri çekilmek ister misin ?
+qstr_Attackers_almost_def|Saldırganlar neredeyse yenildi. Geri çekilmek ister misin ?
+qstr_The_remaining_attack|Kalan saldırganlar dagıldı!
 ; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_Reached_Gauntlet_wav|{reg1} Gauntlet bölümüne ulaşıldı.
 qstr_Ballista:_out_of_amm|Mancınık:mermimiz bitti!

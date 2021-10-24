@@ -1832,7 +1832,7 @@ str_fullname_region_s_undeep|İki büyük Anduin dagından daha küçük olanı 
 ; str_fullname_region_emyn_muil|eastern Emyn Muil, the rocky hills beyond Amon Lhaw
 ; str_fullname_region_misty_mountains|the foothills of the northern Misty Mountains
 str_fullname_region_lorien|Lothlórien, Sindar Elfleri Ormanı, altın ayçiçeklerinin yetiştigi yer
-; str_fullname_region_anduin_banks|the middle Vale of Anduin, between Carrock and Lorien
+str_fullname_region_anduin_banks|Carrock ve Lorien arasında Anduin'in orta vadisi
 str_fullname_region_n_mirkwood|Agaç Elflerinin yuvası Kuzey Kuyurorman'ın yogun ormanları
 str_fullname_region_s_mirkwood|Güney Kuyutorman'ın yogun ormanı, garip yaratıklar tarafından istila edildigini söyledi.
 ; str_fullname_region_c_mirkwood|the dense forest of middle Mirkwood, inhabited by Woodmen
@@ -2131,7 +2131,7 @@ str_npc27_intro|Sen!
 str_npc18_intro_response_1|stoklarda duran bir köle, ölümle baglı, benimle konuşmak mı istiyor? Ne söyleyeceksin?
 str_npc19_intro_response_1|Rolay Blood mı dedin?Ha!Sence bir damlası sana ne yapar?
 str_npc20_intro_response_1|Buraya bak, bununla ne demek istiyorsun, cadı? Kimsin sen?
-; str_npc21_intro_response_1|Ah yes, you have me quaking in my boots. What a scary troll, bound by this tiny chain! Why don't you squash me then?
+str_npc21_intro_response_1|Ah evet, beni botlarıma kadar titretiyorsun. Ne korkunç bir troll, bu ufak zincirle baglı! O zaman neden beni ezmiyorsun?
 str_npc22_intro_response_1|Elf-lorduna selam! Sizinle tanışmak bir onurdur.
 str_npc23_intro_response_1|Silvan Elfleri misafirlerini böyle mi selamlarlar?
 str_npc24_intro_response_1|{playername} hizmetinizdedir. Durin'in sayısı ne kadar?
