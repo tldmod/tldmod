@@ -26520,7 +26520,7 @@ command_cursor_scripts = [
     (item_set_slot, "itm_lossarnach_vet_axeman",slot_item_light_armor, 1),     
   ]),
 
-# Called in 
+# script_move_scout_camp_to_hardcoded_locations
 ("move_scout_camp_to_hardcoded_locations", [
 	(call_script, "script_get_region_of_party", "$qst_destroy_scout_camp_party"),
 	(assign, ":region", reg1),
@@ -26538,7 +26538,15 @@ command_cursor_scripts = [
 		(party_set_position, "$qst_destroy_scout_camp_party", pos1),
 		#(display_message, "@Scout Camp Party moved - Lebennin!"),
 	(else_try),
-		(eq, ":region", region_dagorlad),
+		(eq, ":region", region_entwash),
+		(store_random_in_range, ":rand_x", -3500, -1000),
+		(store_random_in_range, ":rand_y", 0, -4400),
+		(position_set_x, pos1, ":rand_x"),
+		(position_set_y, pos1, ":rand_y"),
+		(party_set_position, "$qst_destroy_scout_camp_party", pos1),
+	(else_try),
+		(this_or_next|eq, ":region", region_mordor),
+        (eq, ":region", region_dagorlad),
 		(store_random_in_range, ":rand_x", -7032, -6887),
 		(store_random_in_range, ":rand_y", -4495, -3473),
 		(position_set_x, pos1, ":rand_x"),
@@ -26547,6 +26555,12 @@ command_cursor_scripts = [
 		#(assign, reg56, ":rand_y"),
 		(party_set_position, "$qst_destroy_scout_camp_party", pos1),
 		#(display_message, "@Scout Camp Party moved - Dagorlad! - {reg55}, {reg56}"),
+	(else_try), #west of Moria
+		(gt, ":x", 6000),
+        (is_between, ":y", -17000, -14000),
+		(position_set_x, pos1, 4681),
+		(position_set_y, pos1, -14714),
+		(party_set_position, "$qst_destroy_scout_camp_party", pos1),        
 	(else_try),
 		(eq, ":region", region_s_mirkwood),
 		(store_random_in_range, ":rand_x", -4354, -4016),
@@ -26570,8 +26584,9 @@ command_cursor_scripts = [
 		(try_end),
 		(party_set_position, "$qst_destroy_scout_camp_party", pos1),
 		#(display_message, "@Scout Camp Party moved! - N Mirkwood"),
-	(else_try),
-		(eq, ":region", region_isengard),
+	(else_try), #west of Isengard
+		(gt, ":x", 6000),
+        (is_between, ":y", -7000, -4000),
 		(store_random_in_range, ":random_coord", 0, 4),
 		(try_begin),
 			(eq, ":random_coord", 0),
