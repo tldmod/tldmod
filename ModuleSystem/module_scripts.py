@@ -1969,7 +1969,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 23),  #Rafa: Savegame version
+    (assign,"$savegame_version", 24),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -24833,6 +24833,30 @@ command_cursor_scripts = [
             (troop_raise_attribute, ":healer", ca_strength, 30),
         (try_end),
         (assign, "$savegame_version", 23),
+	(try_end),	
+
+    (try_begin), #InVain - 29 Oct 2021, fix SE advance camp positions
+        (le, "$savegame_version", 23),	
+        (set_fixed_point_multiplier, 100),
+        (try_for_range, ":campplace", "p_camplace_S1", "p_camplace_S4"),
+            (party_get_position, pos1, ":campplace"),
+            (position_get_y, ":y", pos1),
+            (val_add, ":y", 500),
+            (position_set_y, pos1, ":y"),
+            (party_set_position, ":campplace", pos1),
+        (try_end),
+        (try_for_range, ":adv_camp", "p_advcamp_gondor", "p_centers_end"),
+            (party_is_active, ":adv_camp"),
+            (party_get_position, pos1, ":adv_camp"),
+            (position_get_x, ":x", pos1),
+            (position_get_y, ":y", pos1),
+            (ge, ":y", 10),
+            (le, ":x", -20),
+            (val_add, ":y", 500),
+            (position_set_y, pos1, ":y"),
+            (party_set_position, ":adv_camp", pos1),
+        (try_end),
+        (assign, "$savegame_version", 24),
 	(try_end),	
 
 ]),

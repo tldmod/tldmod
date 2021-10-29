@@ -3782,6 +3782,7 @@ simple_triggers = [
           (store_troop_faction, ":lord_fac", ":lords"),
           (eq, ":lord_fac", ":attacking_faction"),
           (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
+          (ge, ":lord_party", 1), #for some reason, this can be -1
           (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
         (try_end),
       (try_end),
