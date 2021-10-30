@@ -4796,6 +4796,11 @@ game_menus = [
 		#(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
 		
 		(store_add, reg2, str_shortname_region_begin, "$current_player_region",),
+        (try_begin),
+            (ge, "$current_player_region", region_rhun),
+            (store_sub, reg2, "$current_player_region", region_rhun),
+            (val_add, reg2, str_shortname_region_begin_new),
+        (try_end),
 		(str_store_string,s3,reg2),
 		
 		(str_clear, s4),
@@ -6516,6 +6521,11 @@ game_menus = [
 		#(call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
 		
 		(store_add, reg2, str_shortname_region_begin, "$current_player_region"),
+        (try_begin),
+            (ge, "$current_player_region", region_rhun),
+            (store_sub, reg2, "$current_player_region", region_rhun),
+            (val_add, reg2, str_shortname_region_begin_new),
+        (try_end),
 		(str_store_string,s3,reg2),
 		
 		(str_clear, s4),
