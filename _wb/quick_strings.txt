@@ -1,4 +1,4 @@
-1919
+1920
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_315_wb__dev_^_B _rev_315_wb_|_dev_^_Built_2021-10-16_22:30___
+qstr__rev_325_wb__dev_^_B _rev_325_wb_|_dev_^_Built_2021-11-03_19:51___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -265,6 +265,7 @@ qstr_+{reg1}_to_Spotting +{reg1}_to_Spotting
 qstr__Scales_with_Wildcra (Scales_with_Wildcraft)
 qstr_Strengthens_all_Hero Strengthens_all_Heroes
 qstr_+2_to_First_Aid__Par +2_to_First_Aid_(Party)
+qstr_lead_more_Uruks lead_more_Uruks
 qstr_+1_to_Power_Throw +1_to_Power_Throw
 qstr_+1_to_Spotting +1_to_Spotting
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep

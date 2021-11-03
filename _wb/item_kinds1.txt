@@ -998,13 +998,13 @@ itemsfile version 2
  itm_isen_orc_armor_b Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_b 0  16842765 0 301 123731968 12 100 0 10 3 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_armor_c Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_c 0  16842765 0 401 123731968 17 91 0 15 5 9 0 0 0 0 0 0 0
+ itm_isen_orc_armor_c Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_c 0  16842765 0 401 123731968 17 91 0 15 5 8 0 0 0 0 0 0 0
 0
 
  itm_isen_orc_armor_d Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_d 0  16842765 0 501 174063750 19 92 0 18 5 11 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_armor_e Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_e 0  16842765 0 601 174063750 25 93 0 16 9 9 0 0 0 0 0 0 0
+ itm_isen_orc_armor_e Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_e 0  16842765 0 601 174063750 25 93 0 16 9 8 0 0 0 0 0 0 0
 0
 
  itm_isen_orc_armor_f Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_f 0  16842765 0 701 174063750 26 94 0 18 9 13 0 0 0 0 0 0 0
@@ -1019,7 +1019,7 @@ itemsfile version 2
  itm_isen_uruk_light_b Uruk-hai_Fighting_Harness Uruk-hai_Fighting_Harness 3  urukhai_isen_med_harness_b 0  urukhai_isen_med_harness_a 134  urukhai_isen_med_harness_c 167772160  16842765 0 402 174063750 6 91 0 14 6 10 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_light_c Uruk-hai_Berserker_Harness Uruk-hai_Berserker_Harness 3  urukhai_isen_med_harness_b 0  urukhai_isen_med_harness_a 134  urukhai_isen_med_harness_c 167772160  16842765 0 702 174063750 8 95 0 18 9 12 0 0 0 0 0 0 0
+ itm_isen_uruk_light_c Uruk-hai_Berserker_Harness Uruk-hai_Berserker_Harness 3  urukhai_isen_berserker_b 0  urukhai_isen_berserker_a 134  urukhai_isen_berserker_c 167772160  16842765 0 702 174063750 8 95 0 20 9 12 0 0 0 0 0 0 0
 0
 
  itm_isen_uruk_med_a Uruk-hai_Light_Segmented_Armour Uruk-hai_Light_Segmented_Armour 3  urukhai_isen_med_pad_b 0  urukhai_isen_med_pad_a 134  urukhai_isen_med_pad_c 167772160  16842765 0 1002 174063750 25 92 0 20 12 12 0 0 0 0 0 0 0
@@ -1037,7 +1037,7 @@ itemsfile version 2
  itm_isen_uruk_heavy_c Uruk-hai_Full_Segmented_Armour Uruk-hai_Full_Segmented_Armour 3  urukhai_isen_plate_b 0  urukhai_isen_plate_a 134  urukhai_isen_plate_a 167772160  16842765 0 2702 174063750 38 96 0 36 16 20 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_heavy_d Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_a 0  16842765 0 802 123731968 7 92 0 18 10 10 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_d Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 3  urukhai_isen_tracker_b 0  urukhai_isen_tracker_a 134  urukhai_isen_tracker_c 167772160  16842765 0 802 123731968 7 92 0 15 10 10 0 0 0 0 0 0 0
 0
 
  itm_isen_uruk_heavy_e Uruk-hai_Tracker_Leather Uruk-hai_Tracker_Leather 1  urukhai_isen_tracker_b 0  16842765 0 802 123731968 7 92 0 18 10 10 0 0 0 0 0 0 0
@@ -2682,7 +2682,7 @@ itemsfile version 2
  itm_dwarf_great_axe_reward Dwarf_Sharp_Axe Dwarf_Sharp_Axe 2  dwarf_great_axe_2 0  dwarf_great_axe_2_dain 2199023255552  279514976260 9223635923965575392 700 0 6 100 0 0 0 18 56320 90 0 110 0 256 311
 0
 
- itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_plate_c 0  16781325 0 2802 0 38 96 2 38 15 18 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_h 0  16781325 0 2802 0 38 96 2 44 15 18 0 0 0 0 0 0 0
 0
 
  itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  4198408 2952794112 3000 0 1.5 100 0 0 93 5 0 96 54 0 0 277 0

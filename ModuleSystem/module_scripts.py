@@ -3380,6 +3380,7 @@ scripts = [
       (assign, ":limit", 10),
       (store_skill_level, ":skill", "skl_leadership", "trp_player"),
       (store_attribute_level, ":charisma", "trp_player", ca_charisma),
+      (troop_get_type, ":race", "trp_player"),
       (val_mul, ":skill", 5),
       (val_add, ":limit", ":skill"),
       (val_add, ":limit", ":charisma"),
@@ -3396,6 +3397,11 @@ scripts = [
       (try_end),  
 		(try_begin),
 			(player_has_item, "itm_orc_idol_reward"),
+            (eq, ":race", tf_orc),
+			(val_mul, ":total", orc_bonus_nominator+4),
+			(val_div, ":total", orc_bonus_denominator+4),
+		(else_try),
+        	(player_has_item, "itm_orc_idol_reward"),
 			(val_mul, ":total", orc_bonus_nominator+2  ),
 			(val_div, ":total", orc_bonus_denominator+2),
 		(else_try),
@@ -3403,6 +3409,23 @@ scripts = [
 			(val_div, ":total", orc_bonus_denominator),
 		(try_end),
 	  (val_add, ":limit", ":total"),
+
+    (try_begin),
+    (troop_has_item_equipped, "trp_player", "itm_isen_uruk_heavy_reward"),
+    (assign, ":total", 0),
+      (try_for_range, ":i_stack", 0, ":num_stacks"), #count number of Uruks in party
+        (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
+        (troop_get_type, ":type", ":stack_troop"),
+		(this_or_next|eq, ":type", tf_uruk),
+        (eq, ":type", tf_urukhai),
+		  (neg|troop_is_mounted, ":stack_troop"),
+		  (party_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
+          (val_add, ":total", ":stack_size"),
+      (try_end),  
+      (val_mul, ":total", orc_bonus_nominator-1  ),
+	  (val_div, ":total", orc_bonus_denominator-1),
+      (val_add, ":limit", ":total"),
+    (try_end),
       
       # MV: Add ranks bonus - note that it also counts ranks with dead and turned-hostile factions
       (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
@@ -3935,8 +3958,8 @@ scripts = [
         (try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@Use from Camp Menu"),(set_trigger_result, color_item_text_bonus),(try_end),
       (else_try),
 	  (eq,":item_no","itm_isen_uruk_heavy_reward"),
-		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Charisma"),(try_end),
-		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to Trainer"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Trainer"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@lead more Uruks"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@when equipped"),(try_end),
 		(set_trigger_result, color_item_text_bonus),
 	  (else_try),
@@ -17025,7 +17048,7 @@ scripts = [
     # Witchking Helmet, CHA+1 when equipped
     #(call_script, "script_apply_attribute_bonus_for_item", "itm_witchking_helmet", 1, ca_charisma, 1),
 	
-	(call_script, "script_apply_attribute_bonus_for_item", "itm_isen_uruk_heavy_reward", 1, ca_charisma, 1),
+	#(call_script, "script_apply_attribute_bonus_for_item", "itm_isen_uruk_heavy_reward", 1, ca_charisma, 1),
 ]),
 
 #script_apply_attribute_bonus_for_item
