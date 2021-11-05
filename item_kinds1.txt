@@ -1055,31 +1055,31 @@ itemsfile version 2
  itm_uruk_ragwrap Uruk_Ragwrap Uruk_Ragwrap 1  uruk_ragwrap_lr 0  65550 0 10 174063750 1 100 0 0 3 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_helm_a Isen_Orc_Helm Isen_Orc_Helm 1  orc_isen_helm_a 0  65548 0 350 174063750 3 90 20 0 0 9 0 0 0 0 0 0 0
+ itm_free_isen_orc_helm_c Isengard_Orc_Helm Isengard_Orc_Helm 1  orc_isen_helm_a 0  1073807372 0 400 174063750 3 91 21 0 0 9 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_helm_b Isen_Orc_Helm Isen_Orc_Helm 1  orc_isen_helm_b 0  1073807372 0 400 174063750 3 91 21 0 0 10 0 0 0 0 0 0 0
+ itm_free_isen_orc_helm_b Isengard_Orc_Helm Isengard_Orc_Helm 1  orc_isen_helm_b 0  1073807372 0 400 174063750 3 91 21 0 0 9 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_helm_c Isen_Orc_Helm Isen_Orc_Helm 1  orc_isen_helm_c 0  65548 0 600 174063750 4 92 25 0 0 12 0 0 0 0 0 0 0
+ itm_isen_orc_helm_a Isengard_Orc_Helm Isengard_Orc_Helm 3  orc_isen_helm_b 0  orc_isen_helm_a 6291590  orc_isen_helm_c 234881024  65548 0 400 174063750 4 91 21 0 0 9 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_helm_a Uruk-Hai_Helm Uruk-Hai_Helm 1  urukhai_helm_a 0  65548 0 600 174063750 5 92 25 0 0 12 0 0 0 0 0 0 0
+ itm_free_isen_uruk_helm_a Uruk-Hai_Helm Uruk-Hai_Helm 1  urukhai_helm_a 0  65548 0 600 174063750 5 92 25 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_helm_b Uruk-Hai_Helm Uruk-Hai_Helm 1  urukhai_helm_b 0  65548 0 700 174063750 5 93 27 0 0 13 0 0 0 0 0 0 0
+ itm_isen_uruk_helm_a Uruk-Hai_Helm Uruk-Hai_Helm 3  urukhai_helm_b 0  urukhai_helm_a 6291590  urukhai_helm_c 234881024  65548 0 700 174063750 5 93 27 0 0 13 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_helm_c Uruk-Hai_Helm Uruk-Hai_Helm 1  urukhai_helm_c 0  65548 0 900 704643072 6 94 30 0 0 14 0 0 0 0 0 0 0
+ itm_free_isen_uruk_helm_c Uruk-Hai_Helm Uruk-Hai_Helm 1  urukhai_helm_c 0  65548 0 900 704643072 6 94 30 0 0 14 0 0 0 0 0 0 0
 0
 
  itm_isen_uruk_helm_d Uruk-Hai_Captain_Helm Uruk-Hai_Captain_Helm 1  urukhai_captainhelm 0  65548 0 1300 704643072 8 95 35 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_helm_e Uruk-Hai_Tracker_Helm Uruk-Hai_Tracker_Helm 1  urukhai_trackerhelm_a 0  65548 0 500 174063750 2 91 23 0 0 11 0 0 0 0 0 0 0
+ itm_isen_uruk_helm_e Uruk-Hai_Tracker_Helm Uruk-Hai_Tracker_Helm 2  urukhai_trackerhelm_a 0  urukhai_trackerhelm_b 234881024  65548 0 500 174063750 2 91 23 0 0 11 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_helm_f Uruk-Hai_Tracker_Helm Uruk-Hai_Tracker_Helm 1  urukhai_trackerhelm_b 0  65548 0 600 174063750 2 92 25 0 0 12 0 0 0 0 0 0 0
+ itm_free_isen_uruk_helm_f Uruk-Hai_Tracker_Helm Uruk-Hai_Tracker_Helm 1  urukhai_trackerhelm_b 0  65548 0 600 174063750 2 92 25 0 0 12 0 0 0 0 0 0 0
 0
 
  itm_free_uruk_pike_a Uruk_Pike Uruk_Pike 1  isengard_pike 0  275087364 4222124851987200 400 271496 3 100 0 0 0 0 16384 81 0 227 0 282 528
@@ -2682,7 +2682,7 @@ itemsfile version 2
  itm_dwarf_great_axe_reward Dwarf_Sharp_Axe Dwarf_Sharp_Axe 2  dwarf_great_axe_2 0  dwarf_great_axe_2_dain 2199023255552  279514976260 9223635923965575392 700 0 6 100 0 0 0 18 56320 90 0 110 0 256 311
 0
 
- itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_h 0  16781325 0 2802 0 38 96 2 44 15 18 0 0 0 0 0 0 0
+ itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_plate_c1 0  16781325 0 2802 0 38 96 2 44 15 18 0 0 0 0 0 0 0
 0
 
  itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  4198408 2952794112 3000 0 1.5 100 0 0 93 5 0 96 54 0 0 277 0

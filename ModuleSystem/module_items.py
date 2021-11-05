@@ -725,16 +725,16 @@ items =[
 ["uruk_chain_greaves","Uruk_Chain_Greaves",[("uruk_greave_lr",0)],itp_type_foot_armor|itp_shop,0,1100,weight(10)|abundance(94)|leg_armor(22)|difficulty(15),imodbits_orc_armor],
 ["uruk_ragwrap","Uruk_Ragwrap",[("uruk_ragwrap_lr",0)],itp_type_foot_armor|itp_shop,0,10,weight(1)|leg_armor(3)|difficulty(0),imodbits_orc_armor],
 #["isengard_surcoat"  , "Isengard Surcoat"  ,[("uruk_body",0)], itp_shop|itp_type_body_armor  |itp_covers_legs ,0, 500 , weight(25)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(13)|difficulty(8) ,imodbits_armor ],
-#########HELMS##########
-["isen_orc_helm_a","Isen_Orc_Helm",[("orc_isen_helm_a",0)],itp_type_head_armor|itp_shop,0,350,weight(3)|abundance(90)|head_armor(20)|body_armor(0)|difficulty(9),imodbits_orc_armor | imodbit_cracked],
-["isen_orc_helm_b","Isen_Orc_Helm",[("orc_isen_helm_b",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,400,weight(3)|abundance(91)|head_armor(21)|body_armor(0)|difficulty(10),imodbits_orc_armor | imodbit_cracked],
-["isen_orc_helm_c","Isen_Orc_Helm",[("orc_isen_helm_c",0)],itp_type_head_armor|itp_shop,0,600,weight(4)|abundance(92)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_orc_armor | imodbit_cracked],
-["isen_uruk_helm_a","Uruk-Hai_Helm",[("urukhai_helm_a",0)],itp_type_head_armor|itp_shop,0,600,weight(5)|abundance(92)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_orc_armor | imodbit_cracked],
-["isen_uruk_helm_b","Uruk-Hai_Helm",[("urukhai_helm_b",0)],itp_type_head_armor|itp_shop,0,700,weight(5)|abundance(93)|head_armor(27)|body_armor(0)|difficulty(13),imodbits_orc_armor | imodbit_cracked],
-["isen_uruk_helm_c","Uruk-Hai_Helm",[("urukhai_helm_c",0)],itp_type_head_armor|itp_shop,0,900,weight(6)|abundance(94)|head_armor(30)|body_armor(0)|difficulty(14),imodbits_elf_armor],
+#########HELMS########## #free Nov 2021
+["free_isen_orc_helm_c","Isengard_Orc_Helm",[("orc_isen_helm_a",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,400,weight(3)|abundance(91)|head_armor(21)|body_armor(0)|difficulty(9),imodbits_orc_armor | imodbit_cracked],
+["free_isen_orc_helm_b","Isengard_Orc_Helm",[("orc_isen_helm_b",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,400,weight(3)|abundance(91)|head_armor(21)|body_armor(0)|difficulty(9),imodbits_orc_armor | imodbit_cracked],
+["isen_orc_helm_a","Isengard_Orc_Helm",[("orc_isen_helm_b",0),("orc_isen_helm_a",imodbits_orc_bad),("orc_isen_helm_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,400,weight(4)|abundance(91)|head_armor(21)|body_armor(0)|difficulty(9),imodbits_orc_armor | imodbit_cracked],
+["free_isen_uruk_helm_a","Uruk-Hai_Helm",[("urukhai_helm_a",0)],itp_type_head_armor|itp_shop,0,600,weight(5)|abundance(92)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_orc_armor | imodbit_cracked],
+["isen_uruk_helm_a","Uruk-Hai_Helm",[("urukhai_helm_b",0),("urukhai_helm_a",imodbits_orc_bad),("urukhai_helm_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,700,weight(5)|abundance(93)|head_armor(27)|body_armor(0)|difficulty(13),imodbits_orc_armor | imodbit_cracked],
+["free_isen_uruk_helm_c","Uruk-Hai_Helm",[("urukhai_helm_c",0)],itp_type_head_armor|itp_shop,0,900,weight(6)|abundance(94)|head_armor(30)|body_armor(0)|difficulty(14),imodbits_elf_armor],
 ["isen_uruk_helm_d","Uruk-Hai_Captain_Helm",[("urukhai_captainhelm",0)],itp_type_head_armor|itp_shop,0,1300,weight(8)|abundance(95)|head_armor(35)|body_armor(0)|difficulty(15),imodbits_elf_armor],
-["isen_uruk_helm_e","Uruk-Hai_Tracker_Helm",[("urukhai_trackerhelm_a",0)],itp_type_head_armor|itp_shop,0,500,weight(2)|abundance(91)|head_armor(23)|body_armor(0)|difficulty(11),imodbits_orc_armor | imodbit_cracked],
-["isen_uruk_helm_f","Uruk-Hai_Tracker_Helm",[("urukhai_trackerhelm_b",0)],itp_type_head_armor|itp_shop,0,600,weight(2)|abundance(92)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_orc_armor | imodbit_cracked],
+["isen_uruk_helm_e","Uruk-Hai_Tracker_Helm",[("urukhai_trackerhelm_a",0),("urukhai_trackerhelm_b",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,500,weight(2)|abundance(91)|head_armor(23)|body_armor(0)|difficulty(11),imodbits_orc_armor | imodbit_cracked],
+["free_isen_uruk_helm_f","Uruk-Hai_Tracker_Helm",[("urukhai_trackerhelm_b",0)],itp_type_head_armor|itp_shop,0,600,weight(2)|abundance(92)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_orc_armor | imodbit_cracked],
 ##############WEAPONS##########
 ########Uruk Weapons
 #unused ->#
@@ -1394,7 +1394,7 @@ items =[
 ["corsair_throwing_dagger_reward","Poisoned_Throwing_Daggers",[("corsair_throwing_dagger",0)],itp_type_thrown|itp_unique|itp_primary|itp_can_penetrate_shield,itcf_throw_knife,200,weight(3.5)|difficulty(0)|shoot_speed(26)|spd_rtng(110)|weapon_length(0)|thrust_damage(50,cut)|max_ammo(10),imodbits_thrown],
 ["dwarf_shield_reward","Shield_of_Kheled-zaram",[("mithril_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_kite_shield,4000,weight(4)|difficulty(5)|hit_points(450)|body_armor(35)|spd_rtng(82)|weapon_length(60),imodbits_none,],
 ["dwarf_great_axe_reward","Dwarf_Sharp_Axe",[("dwarf_great_axe_2",0),("dwarf_great_axe_2_dain",imodbit_rotten)],itp_type_polearm|itp_unique|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_can_knock_down,itc_nodachi|itcf_carry_axe_back,700,weight(6)|difficulty(18)|spd_rtng(90)|weapon_length(110)|swing_damage(55,pierce)|thrust_damage(0,pierce),imodbits_none],
-["isen_uruk_heavy_reward","Uruk-hai_General_Armor",[("urukhai_isen_h",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2802,weight(38)|abundance(96)|head_armor(2)|body_armor(44)|leg_armor(15)|difficulty(18),imodbits_none,],
+["isen_uruk_heavy_reward","Uruk-hai_General_Armor",[("urukhai_isen_plate_c1",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2802,weight(38)|abundance(96)|head_armor(2)|body_armor(44)|leg_armor(15)|difficulty(18),imodbits_none,],
 ["lorien_bow_reward","Noldorin_Bow",[("Vyrn_bow_1_shortened",0),("Vyrn_bow_1_shortened",ixmesh_carry)],itp_type_bow|itp_primary|itp_unique,itcf_shoot_bow|itcf_carry_bowcase_left,3000,weight(1.5)|difficulty(5)|shoot_speed(54)|spd_rtng(96)|thrust_damage(21,pierce)|accuracy(93),0,[] ],
 ["elven_cloak","Elven_Cloak",[("elven_cloak",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 #["lorien_sword_reward","Galadhrim_Sword",[("lorien_sword_hand_and_half",0),("scab_lorien_sword_hand_and_half",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,900,weight(2.5)|difficulty(0)|spd_rtng(115)|weapon_length(103)|swing_damage(43,cut)|thrust_damage(33,pierce),imodbits_none],
