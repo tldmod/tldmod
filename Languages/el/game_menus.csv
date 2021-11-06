@@ -1,199 +1,214 @@
 menu_start_game_1|Για τι πολεμάς;
 mno_start_good|Η αρχή μιας νέας εποχής
 mno_start_evil|Το ΛΥΚΟΦΩΣ ενός άνδρα
+mno_faction_intros|Μάθε για τις διάφορες φατρίες της Μέσης-Γης
 mno_go_bback|Πίσω
-; menu_start_phase_2|^^^^^              Middle Earth. A shadow is growing in the East, ^              and dark things come forth that have long been hidden. ^              The free peoples prepare for war, the like of which has not been seen for an age. ^              Men, Elves, Dwarves and Orcs; all will play their part. ^^              What part, however, remains to be seen... 
+menu_start_phase_2|Μέση Γη. Μία σκιά απλώνετε από την Ανατολή, και σκοτεινά πράγματα έρχονται που ήταν καιρό κρυμμένα. Οι ελεύθεροι άνθρωποι ετοιμάζονται για πόλεμο, τόσο τρομερό που δεν έχει δει ο κόσμος εδώ και αιώνες. Άνθρωποι, Ξωτικά, Νάνοι και Ορκ: όλοι θα παίξουν το κομμάτι τους. Τώρα τι, όμως, θα δούμε στο μέλλον...
 mno_go_forth|Προχόρα μπροστά στον δρόμο πού διάλεξες
+mno_change_tld_options|Άλλαξε επιλογές TLD.
 menu_start_game_3|Διαλέξτε το σενάριο σας:
-; mno_custom_battle_scenario_1|Skirmish, Gondor factions vs Harad
+mno_custom_battle_scenario_1|Μάχη, Γκόντορ ενάντια Χαράντ
 mno_custom_battle_scenario_12|Επιλέξτε φατριές για την μάχη
-; mno_custom_battle_scenario_3|Skirmish, Elves vs Black Numenoreans
-; mno_custom_battle_scenario_4|Helms Deep Defense, Rohan vs Isengard
-; mno_custom_battle_scenario_5|Skirmish, North factions vs Rhûn
-; mno_custom_battle_scenario_6|Siege Attack, Orcs vs Dwarves
-; mno_custom_battle_scenario_7|Ambush, Orcs vs Mirkwood
-; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
-; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
+mno_custom_battle_scenario_3|Μάχη, Ξωτικά ενάντια Μαύρων Νουμενοριανών
+mno_custom_battle_scenario_4|Άμυνα Φαραγγιού Χελμ, Ρόχαν ενάντια Άισενγκαρντ
+mno_custom_battle_scenario_5|Μάχη, Βόρια Φατρία ενάντια Ρουν
+mno_custom_battle_scenario_6|Επίθεση Πολιορκίας, Ορκ ενάντια Νάνοι
+mno_custom_battle_scenario_7|Ενέδρα, Ορκ ενάντια Μίρκγουντ
+mno_custom_battle_scenario_8|Η Τελική Μάχη της Φυλής του Ντούριν
+mno_custom_battle_scenario_88|Κυνηγάει μία Ομάδα Ανιχνευτών Ορκ
 ; mno_custom_battle_scenario_11|Test Battles (Tune Balancing!)
-; mno_custom_battle_scenario_10|Scenery test battle
-; mno_troll_battle_scenario|Test Troll Battles
-; mno_warg_battle_scenario|Test Warg Battles
-; mno_build_your_own_scene|** Build your own scene for TLD **
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+mno_custom_battle_scenario_10|Δοκιμαστική μάχη τοπίου
+mno_troll_battle_scenario|Δοκιμαστική Μάχη Τρολ
+mno_warg_battle_scenario|Δοκιμαστική Μάχη Γουόργκ
+mno_build_your_own_scene|Χτίσε την δική σου σκηνή για το TLD
+mno_go_back|Πίσω
+menu_tutorial|Καλώς ήρθες στην Εκμάθηση Μάχης για το Mount & Blade. Εδώ μπορείς να μάθεις τα βασικά της μάχης, όπως και επισκόπηση για τις εντολές των στρατευμάτων κατά την διάρκεια μαχών στο πεδίο.
+mno_tutorial_1|Μάθημα #1: Βασικές κινήσεις και επιλογή όπλου. {s1}
+mno_tutorial_2|Μάθημα #2: Μάχη με ασπίδα. {s2}
+mno_tutorial_3|Μάθημα #3: Μάχη χωρίς ασπίδα. {s3}
+mno_tutorial_3b_door|επόμενο επίπεδο
+mno_tutorial_4|Μάθημα #4: Καβαλώντας ένα άλογο ή ένα γουόργκ. {s4}
+mno_tutorial_5|Μάθημα #5: Διοίκηση μίας ομάδας στρατιωτών. {s5}
 mno_go_back_dot|Πίσω
-; mno_action_view_troop_trees|View troop trees.
-; mno_view_upkeep_costs|View upkeep costs.
+mno_action_view_troop_trees|Δες δέντρα στρατευμάτων.
+mno_view_upkeep_costs|Δες το κόστος συντήρησης.
 mno_view_character_report|Δες αναφορά χαρακτήρα.
 mno_view_party_size_report|Δες την αναφορά του μεγέθους της ομάδας σου.
-; mno_view_morale_report|View party morale report.
-; mno_view_character_report_02|NPC status check.
-; mno_view_faction_strengths_report|View faction strengths report.
-; mno_view_traits_report|View traits.
-; mno_resume_travelling|Resume travelling.
+mno_view_morale_report|Δες αναφορά ηθικού της ομάδας.
+mno_view_character_report_02|Έλεγχος κατάστασης NPC.
+mno_view_faction_strengths_report|Δες αναφορά της δύναμης της φατρίας.
+mno_view_traits_report|Δες χαρακτηριστικά.
+mno_resume_travelling|Συνέχισε το ταξίδι.
 mno_custom_battle_go|Ξεκίνα
 mno_leave_custom_battle_2|Ακύρωση
-; menu_custom_battle_end|^^^^^^The battle is over. {s1} Your side killed {reg5} enemies and lost {reg6} troops over the battle.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_end|Η μάχη έχει τελειώσει. {s1} Η μεριά σου σκότωσε {reg5} εχθρούς και έχασε {reg6} στρατιώτες στη μάχη. Εσύ σκότωσες {reg7} εχθρούς ενώ πολεμούσες.
 mno_replay|Ξαναπαίξτε αυτή τη μάχη
 mno_continue_dot|Συνέχεια 
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|Ήταν αξιοθαύμαστη η τελική μάχη, αλλά στο τέλος καταδικασμένη. Εσύ και οι σύντροφοι σου σκοτώσατε {reg5} εχθρούς. Εσύ σκότωσες {reg7} εχθρούς ενώ πολεμούσες.
 mno_replay_cbd|Ξαναπαίξτε αυτή τη μάχη
 mno_continue_dot_cbd|Συνέχεια 
 mno_dot_go_back|Πίσω
-; menu_start_good|^^^^^^^^^^Select your race:
+menu_start_good|Επέλεξε το είδος σου:
 mno_start_ma|ΑΝΘΡΩΠΟΣ
 mno_start_el|ΞΩΤΙΚΟ
 mno_start_dw|ΝΑΝΟΣ
-mno_go_back|Πίσω
-; menu_start_evil|^^^^^^^^^^Whom do you Serve?
+menu_start_evil|Ποιόν υπηρετείς;
 mno_start_eye|Ο Σάουρον της Μόρντορ, ο Άρχοντας των Δαχτυλιδιών
 mno_start_hand|Ο Σάρουμαν του Άιζενγκαρντ, το Λευκό Χέρι
-; menu_start_eye|^^^^^^^^^Your Master is the Lidless Eye^Choose your Race
-; mno_start_or|an ORC, serving the Lidless Eye
-; mno_start_ur|an URUK, the new breed of Orcs
-; mno_start_em|a MAN, subjugated by Sauron
-; menu_start_hand|^^^^^^^^^Your Master is the White Hand^Choose your Race
-; mno_start_whor|an ORC, serving the White Hand
-; mno_start_isur|one of the URUK-HAI, bred in Isengard
-; mno_start_duma|a MAN of Dunland, the Western Plains
-; menu_start_good_man|^^^^^^^^^^Select your people:
-; mno_start_go|GONDOR, the Kingdom of the White Tower
-; mno_start_ro|ROHAN, the Horse people
-; mno_start_du|DUNEDAIN, the ancient dynasty of Men
-; mno_start_be|BEORNINGS, the Bear people
-; mno_start_da|the northern Kingdom of DALE
-; menu_start_good_elf|^^^^^^^^^^which Forest do you live in, Elder?
-; mno_start_ri|RIVENDELL, of Lord Elrond
-; mno_start_lo|LOTHLORIEN, of Lady Galadriel
-; mno_start_mi|MIRKWOOD, land of the Silvan Elves
-; menu_start_good_dwarf|^^^^^^^^^^Select your Lineage:
-; mno_start_er|a dweller of EREBOR
-; mno_start_ih|a miner of the IRON HILLS
-; menu_start_gondor|^^^^^^^^^^Where are you from, in Gondor?
-; mno_start_mt|MINAS TIRITH, the Capital
-; mno_start_ls|LOSSARNACH, the Fiefdom of the Axemen
-; mno_start_la|LAMEDON, the Fiefdom of the Mountain Clansmen
-; mno_start_pg|PINNATH GELIN, the Fiefdom of Green Hills
-; mno_start_do|DOL AMROTH, the Fiefdom of Swan Knights
-; mno_start_pe|PELARGIR, the Coastal Fiefdom
-; mno_start_bl|BLACKROOT VALE, the Fiefdom of Archers
-; menu_start_eye_man|^^^^^^^^^^Select your people:
-; mno_start_hr|HARADRIM, the desert people from the South
-; mno_start_bn|Black NUMENOREANS, the renegades from the West
-; mno_start_um|UMBAR, the pirates from the South Seas
-; mno_start_rh|RHUN, the barbarians from the East
-; mno_start_kh|KHAND, the savage people from South-East
-; menu_start_eye_orc|^^^^^^^^^^Where do you lurk?
-; mno_start_arm|in the armies amassed at MORDOR
-; mno_start_cav|in the caves of DOL GULDUR
-; menu_start_hand_orc|^^^^^^^^^^Where do you lurk?
-; mno_start_armis|in the Armies amassed at ISENGARD
-; mno_start_minmo|in the Mines of MORIA
-; mno_start_cliff|in the cliffs of Mount GUNDABAD
-; menu_start_gondor_mt|^^^^^^^^^^Select your Lineage
-; mno_start_1_com|Commoner
-; mno_start_2_hib|High-born
-; menu_start_haradrim|^^^^^^^You are an Haradrim,^a Man of the Desert.^Select your line
-; mno_start_1_des|Desert Man
-; mno_start_2_far|Far Harad Tribesman
-; menu_choose_gender|^^^^^^^^^^Your gender?
-; mno_start_male|Male
-; mno_start_female|Female
-; mno_proc|Proceed as normal
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
-; mno_start_default|Become a {s23} (Default)
-; mno_start_up1|Become a {s21} (Easy)
-; mno_start_up2|Become a {s22} (Easy)
-; mno_continue|Continue...
-; menu_character_report|^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
-; menu_camp|^^^^You are in {s1}.{s2}^^What do you want to do?
-; mno_camp_scene|Walk around.
-; mno_camp_troop|Review{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
-; mno_camp_action|Use an object.
-; mno_camp_wait_here|Camp here for some time.
-; mno_camp_options|Change TLD options.
-; mno_Dev_Menu|Developer Menu
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
-; mno_Cheat_enable|Enable cheat/modding options.
-; menu_game_options|^^^^^^^^Click on an option to toggle:
-; mno_game_options_war_level_start|War Starts at Level: {s1}
-; mno_game_options_restrict_items|Restricted player equipment:  {s7}
-; mno_game_options_formations|Battle formations and AI:  {s7}
-; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
-; mno_game_options_town_menu|Town NPCs always accessible from Menus:  {s7}
-; mno_game_options_cutscenes|Cutscenes:  {s7}
-; mno_game_options_injuries|Injuries for companions:  {s7}.
-; mno_game_options_death|Permanent death for lords and companions:  {s7}.
-; mno_game_options_death2|Permanent death for player (that is YOU!):  {s7}.
-; mno_game_options_morale|Battle morale system:  {s7}
-; mno_game_options_animal_ambushes|Animal ambushes:  {s7}
-; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
-; mno_game_options_bright_nights|Brighter Nights:  {s7}.
-; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
-; mno_game_options_tweaks|Gameplay tweaks...
-; mno_game_options_back|Back to camp menu.
-; mno_game_options_start_back|Back.
-; menu_camp_tweaks|^^^^^^^^Choose an option that you would like to adjust.
-; mno_tweak_options_compat|Compatibility tweaks...
-; mno_tweak_options_strat|Strategy tweaks...
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
-; mno_tweak_options_back|Back to options menu.
-; menu_camp_compat_tweaks|^^^^^^^^Click on an option to change (hold shift to decrease):^(these are for compatibilty and are not cheats)
-; mno_game_options_compat_party|Maximum number of parties: {s1}
-; mno_game_options_compat_back|Back to tweaks menu.
-; menu_camp_strat_tweaks|^^^^^^^^Click on an option to toggle:^(warning: these are cheats!)
-; mno_strat_tweaks_siege_reqs|Siege strength requirements: {s7}
-; mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
-; mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
-; mno_strat_tweaks_back|Back to tweaks menu.
-; menu_camp_action|^^^^^^^^^     Which object?
-; mno_camp_customize_defilement|Customize Defiled Armor
-; mno_camp_drink_water|Drink the Ent Water!
-; mno_camp_action_4|Back.
-; menu_assasins_attack_player_won|You have successfully defeated assassins from {s2}, sent by {s3}.
-; menu_assasins_attack_player_retreat|You escaped with your life!
-; menu_fangorn_danger|^^^^^^Strange, threatening noises all around you.^Are the trees talking? There's a sense of deep anger and pain in the air.^Your orders?
-; mno_be_quiet_elf|Respect the hatred of the trees. Move along quietly.
-; mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
-; mno_be_bold|Go on! I'm not afraid of plants or old myths!
-; mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
-; menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
-; menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
-; menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
-; mno_ow_get_out|Ouch! Let's get out of this cursed place!
-; menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your troops were that lucky.^^
-; menu_fangorn_killed_troop_only|^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear screams from the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...
-; mno_get_out|Let's get out of this cursed place!
-; menu_can_capture_troll|The downed wild troll still breaths!^^Its evil eyes stare at you filled with pain and rage.^Even now that it has been taken down, and lies helpless in a pool of its blood, it looks tremendously dangerous...
-; mno_killit|Dispatch it, now. Make sure it dies.
-; mno_cageit1|Cage it and drag it around.
-; mno_cageit2|Cage it together with the other troll.
-; mno_cheat_disabable|Disable cheat/modding options.
-; menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
-; menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
-; mno_i_shall_surv|I... shall... survive!
-; menu_end_game|^^^^^The decision is made, and you resolve to give up your adventurer's life and settle down. You sell off your weapons and armour, gather up all your belongings, and ride off into the sunset....
-; mno_end_game_bye|Farewell.
-; menu_cattle_herd|You encounter some people.
+menu_start_eye|Ο Αφέντης σου είναι το Άγρυπνο Μάτι Επέλεξε το είδος σου
+mno_start_or|ένα ΟΡΚ, που υπηρετεί το Άγρυπνο Μάτι
+mno_start_ur|ένα ΟΥΡΟΥΚ, η νέα ράτσα των Ορκ
+mno_start_em|ένας ΑΝΘΡΩΠΟΣ, υποδουλωμένος από τον Σάουρον
+menu_start_hand|Ο Αφέντης σου είναι το Άσπρο Χέρι Επέλεξε το είδος σου
+mno_start_whor|ένα ΟΡΚ, που υπηρετεί το Άσπρο Χέρι
+mno_start_isur|ένα από τα ΟΥΡΟΥΚ-ΧΑΪ, γεννημένο στο Άισενγκαρντ
+mno_start_duma|ένας ΑΝΘΡΩΠΟΣ της Ντούνλαντ
+menu_start_good_man|Επέλεξε τους ανθρώπους σου:
+mno_start_go|Γκόντορ, το βασίλειο του Άσπρου Πύργου
+mno_start_ro|Ρόχαν, η φυλή του Αλόγου
+mno_start_du|ΝΤΟΥΝΕΝΤΑΪΝ, η αρχαία δυναστεία των Ανθρώπων
+mno_start_be|ΒΕΟΡΝΙΝΓΚ, η φυλή της Αρκούδας
+mno_start_wo|ΓΟΥΝΤΜΕΝ, από το Μίρκγουντ
+mno_start_da|το βόριο Βασίλειο του Ντέιλ
+menu_start_good_elf|σε ποιο Δάσος ζεις, Γέροντα;
+mno_start_ri|Ρίβεντέιλ, του Λόρδου Έλροντ
+mno_start_lo|Λοθλόριεν, της Λαίδης Γκαλάντριελ
+mno_start_mi|Μίρκγουντ, γη των Σιλβάν Ξωτικών
+menu_start_good_dwarf|Επέλεξε την Καταγωγή σου:
+mno_start_er|ένας κάτοικος του Έρεμπορ
+mno_start_ih|ένας μεταλλωρύχος στους Μεταλλικούς Λόφους
+menu_start_gondor|Από πού, στο Γκόντορ, προέχεσε;
+mno_start_mt|ΜΙΝΑΣ ΤΙΡΙΘ, η Πρωτεύουσα
+mno_start_ls|Λοσσαρνάκ, το Φέουδο των Άξμεν
+mno_start_la|Λάμεδον, το Φέουδο της Φυλής του Βουνού
+mno_start_pg|Πίνναθ Γκελίν, το Φέουδο των Πράσινων Λόφων
+mno_start_do|Ντολ Αμρόθ, το Φέουδο των Ιπποτών του Κύκνου
+mno_start_pe|Πέλαργκιρ, το Παραλιακό Φέουδο
+mno_start_bl|ΜΠΛΑΚΡΟΥΤ ΒΕΪΛ, το Φέουδο των τοξοτών
+menu_start_eye_man|Επέλεξε τους ανθρώπους σου:
+mno_start_hr|ΧΑΡΑΝΤΡΙΜ, η έρημος των ανθρώπων από τον Νότο
+mno_start_bn|Μαύροι ΝΟΥΜΕΝΟΡΙΑΝΟΙ, οι επιδρομείς από την Δύση
+mno_start_um|ΟΥΜΠΑΡ, οι πειρατές από τις Βόρειες Θάλασσες
+mno_start_rh|ΡΟΥΝ, οι βάρβαροι από την Ανατολή
+mno_start_kh|ΚΑΝΤ, τα αγρίμια από τα Βορειοανατολικά
+menu_start_eye_uruk|Πού παραμονεύεις;
+mno_start_arm_uruk|στις στρατιές που μαζεύτηκαν στο ΜΟΡΝΤΟΡ
+mno_start_cav_uruk|στις σπηλιές του ΝΤΟΛ ΓΚΟΥΛΝΤΟΥΡ
+menu_start_eye_orc|Πού παραμονεύεις;
+mno_start_arm|στις στρατιές που μαζεύτηκαν στο ΜΟΡΝΤΟΡ
+mno_start_cav|στις σπηλιές του ΝΤΟΛ ΓΚΟΥΛΝΤΟΥΡ
+menu_start_hand_orc|Πού παραμονεύεις;
+mno_start_armis|στις στρατιές που μαζεύτηκαν στο ΆΙΣΕΝΓΚΑΡΝΤ
+mno_start_minmo|στα Ορυχεία της ΜΟΡΙΑ
+mno_start_cliff|στους γκρεμούς του Βουνού ΓΚΟΥΝΤΑΜΠΑΜΠ
+menu_start_gondor_mt|Επέλεξε την Καταγωγή σου
+mno_start_1_com|Κοινός Πολίτης
+mno_start_2_hib|Αριστοκράτης
+menu_start_haradrim|Είσαι ένας από τους Χάραντριμ, ένας Άνθρωπος της Ερήμου. Διάλεξε το σόι σου
+mno_start_1_des|Άνθρωπος Ερήμου
+mno_start_2_far|Ιθαγενής του Φαρ Χαράντ
+menu_start_numenorean|Είσαι Μαύρος Νουμενοριανός, πιστός στο Σκότος και στον Μόργκοθ. Επέλεξε που υπηρετείς το Μάτι
+mno_start_1_bn|Επόμενος στο Στόμα του Σάουρον, στην ΜΟΡΑΝΝΟΝ
+mno_start_2_bn|Στο Φρούριο του Νεκρομάντη, ΝΤΟΛ ΓΚΟΥΛΝΤΟΥΡ
+menu_choose_gender|Το φύλο σου;
+mno_start_male|Άνδρας
+mno_start_female|Γυναίκα
+mno_proc|Συνέχισε κανονικά
+menu_start_as_one|Τι είδος στρατιώτης είσαι;
+mno_start_default|Γίνε {s23} (Κανονικό)
+mno_start_up1|Γίνε {s21} (Εύκολο)
+mno_start_up2|Γίνε {s22} (Εύκολο)
+mno_continue|Συνέχισε...
+menu_character_report|Ηθικό Ομάδας: {reg8} Όριο Μεγέθους Ομάδας: {reg7}^{s5}
+menu_camp|Είσαι μέσα στο {s1}.{s2} Τι θέλεις να κάνεις;
+mno_camp_scene|Μία βόλτα.
+mno_camp_troop|Επιθεώρηση{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
+mno_camp_action|Χρησιμοποίησε ένα αντικείμενο.
+mno_camp_wait_here|Κατασκήνωσε εδώ για λίγο.
+mno_camp_options|Άλλαξε ρυθμίσεις TLD.
+mno_Dev_Menu|Μενού Προγραμματιστή
+menu_dev_menu|Αυτές είναι οι Ρυθμίσεις Προγραμματιστή, σου δίνουν να παίξεις με πολλά cheats/εργαλεία. Έχει όμως σαν συνέπεια μερικά WIP συμβάν, triggers, και αλλαγές στην καμπάνια που μπορεί να χαλάσουν το παιχνίδι. Χρησιμοποίησε τις προσεκτικά! Επίσης, όταν αναφέρεις bugs, πες μας πότε χρησιμοποιείς το Μενού Προγραμματιστή.
+mno_Cheat_enable|Χρησιμοποίησε ρυθμίσεις cheat/modding.
+menu_game_options|Επέλεξε μία ρύθμιση για να την αλλάξεις:
+mno_game_options_war_level_start|Ο Πόλεμος Αρχίζει στο Επίπεδο: {s1}
+mno_game_options_restrict_items|Περιορισμένος εξοπλισμός παίκτη: {s7}
+mno_game_options_formations|Σχηματισμός μάχης και AI: {s7}
+mno_game_options_siege_ai|Προχωρημένο ΑΙ Πολιορκίας: {s7}
+mno_game_options_town_menu|NPCs πόλης πάντα προσβάσιμα από τα Μενού: {s7}
+mno_game_options_cutscenes|Ταινίες: {s7}
+mno_game_options_injuries|Τραυματισμοί για συντρόφους: {s7}.
+mno_game_options_death|Μόνιμοι θάνατοι για τους λόρδους και τους συντρόφους: {s7}.
+mno_game_options_death2|Μόνιμος θάνατος για τον παίκτη (ΕΣΥ είσαι αυτός!): {s7}.
+mno_game_options_morale|Σύστημα ηθικού μάχης: {s7}
+mno_game_options_animal_ambushes|Ενέδρες ζώων: {s7}
+mno_game_options_horse_ko|Μηνύματα ζημιάς ιππέων που έπεσαν: {s7}
+mno_game_options_bright_nights|Φωτεινές Νύχτες: {s7}.
+mno_game_options_camera_pref|Προτιμώμενη Κάμερα: {s7}.
+mno_game_options_tweaks|Αλλαγές στον τρόπο παιχνιδιού...
+mno_game_options_back|Πίσω στο μενού κατασκήνωσης.
+mno_game_options_start_back|Πίσω.
+menu_camp_tweaks|Διάλεξε μία ρύθμιση που θέλεις να αλλάξεις.
+mno_tweak_options_compat|Αλλαγές συμβατότητας...
+mno_tweak_options_strat|Αλλαγές στρατηγικής...
+mno_tweak_options_battlefield_ai|Αλλαγές στο AI του πεδίου μάχης...
+mno_tweak_options_back|Πίσω στο μενού ρυθμίσεων.
+menu_camp_compat_tweaks|Κάνε κλικ σε μία ρύθμιση για να την αλλάξεις (κράτα το shift για να την χαμηλώσεις): (αυτές είναι για συμβατότητα και δεν είναι για cheats)
+mno_game_options_compat_party|Μέγιστος αριθμός ομάδων: {s1}
+mno_game_options_compat_back|Πίσω στο μενού αλλαγών.
+menu_camp_strat_tweaks|Κάνε κλικ σε μία ρύθμιση για να την αλλάξεις: (προσοχή: αυτές είναι cheats!)
+mno_strat_tweaks_siege_reqs|Απαιτήσεις δύναμης για πολιορκία: {s7}
+mno_strat_tweaks_siege_relax_rate|Χαλάρωση βαθμού απαίτησης δύναμης για πολιορκία: {reg1}
+mno_strat_tweaks_regen_rate|Βαθμός επαναφόρτισης δύναμης: {s7}
+mno_strat_tweaks_siege_regen_limit|Η δύναμη της φατρίας επαναφορτίζει πιο αργά σε βαθμό: {reg1}
+mno_strat_tweaks_influence_gain_rate|Βαθμός απόκτησης επιρροής: {s7}
+mno_strat_tweaks_rank_gain_rate|Βαθμός απόκτησης κατάταξης: {s7}
+mno_strat_tweaks_back|Πίσω στο μενού αλλαγών.
+menu_camp_action|Ποιο αντικείμενο;
+mno_camp_drink_water|Πιες το Νερό των Εντς!
+mno_camp_drink_orc_brew|Πάσαρε την Μπύρα των Ορκ!
+mno_camp_drink_miruvor|Πάσαρε το Μίροβορ!
+mno_camp_use_athelas|Χρησιμοποίησε το Αθέλας για να θεραπεύσεις την πληγή.
+mno_camp_use_drums|Χτύπα τα Τύμπανα του Βάθους,
+mno_camp_action_4|Πίσω.
+menu_assasins_attack_player_won|Κατάφερες επιτυχώς να νικήσεις τους δολοφόνους από το {s2}, που στάλθηκαν από τον/την {s3}.
+menu_assasins_attack_player_retreat|Δραπέτευσες ζωντανός!
+menu_fangorn_danger|Περίεργοι, απολιτικοί ήχοι υπάρχουν τριγύρω σου. Ίσως μιλάνε τα δέντρα; Αισθάνεσαι μίσος και πόνο από τον αέρα. Οι εντολές σου;
+mno_be_quiet_elf|Σεβάσου το μίσος των δέντρων. Φύγε ήσυχα.
+mno_be_quiet|Κατεβάστε τα όπλα σας και μείνετε ήσυχοι! Τώρα φύγετε από εδώ!
+mno_be_bold|Συνεχίστε! Δεν φοβάμαι ούτε φυτά, ούτε παλιούς μύθους!
+mno_fight_back|Ας μάθουμε! Ψάξτε την περιοχή! Κάψτε και κάνα δέντρο!
+menu_fangorn_search_fails|Ψάχνεις στο σκοτεινό, πυκνό δάσος αλλά δεν βρίσκεις τίποτα. Νιώθεις ότι κάποιος σε κοιτάει και σε απειλεί, όλο και περισσότερο.
+menu_fangorn_killed_player_only|Περπατάς στο πυκνό και σκοτεινό δάσος. Ξαφνικά κάτι σε χτύπησε! Ίσως κάνα βαρύ κλαδί έπεσε στο κεφάλι σου. Μένεις αναίσθητος μόνο για λίγα λεπτά. Είσαι βαριά πληγωμένος αλλά μπορείς να συνεχίσεις.
+mno_ow_get_out|Άουτς! Ας φύγουμε από αυτό το καταραμένο μέρος!
+menu_fangorn_killed_troop_and_player|Περπατάς στο πυκνό και σκοτεινό δάσος. Ξαφνικά κάτι σε χτύπησε! Ίσως κάνα βαρύ κλαδί έπεσε στο κεφάλι σου. Όταν σου έρχονται οι αισθήσεις σου πίσω, ανακαλύπτεις ότι όχι όλοι οι στρατιώτες σου ήταν τόσο τυχεροί.
+menu_fangorn_killed_troop_only|Περπατάς στο πυκνό και σκοτεινό δάσος. Οι στρατιώτες σου φοβούνται. Ξαφνικά ακούς κάποιον να φωνάζει από πίσω σου! Γυρίζεις και βλέπεις μερικούς από τους στρατιώτες σου στο έδαφος γεμάτοι αίματα. Άλλοι δεν βρέθηκαν ποτέ...
+mno_get_out|Ας φύγουμε από αυτό το καταραμένο μέρος!
+menu_can_capture_troll|Το άγριο τρολ αναπνέει ακόμα! Τα μοχθηρά μάτια του σε κοιτάνε γεμάτα πόνο και οργή. Ακόμα και τώρα, μέσα σε μια λίμνη από το ίδιο του το αίμα, φαίνεται υπερβολικά επικίνδυνο...
+mno_killit|Απαλλάξου το τώρα. Σιγουρέψου ότι είναι νεκρό.
+mno_cageit1|Φυλάκισε το και τράβα το τριγύρω.
+mno_cageit2|Φυλάκισε το μαζί με το άλλο τρολ.
+mno_cheat_disabable|Απενεργοποιήσει τις ρυθμίσεις cheat/modding.
+menu_drank_ent_water_human|Πίνεις το νερό. Είναι καθαρό και δροσιστικό. Έχει μία υπέροχη ευοσμία. Νιώθεις δροσισμένος. Όμως, έχεις και ένα περίεργο και αφύσικο συναίσθημα. Κάτι σου λέει ότι θα ήταν καλύτερο να μην ξαναπιείς, ποτέ ξανά από αυτό το νερό.
+menu_drank_ent_water_orc|Πίνεις το νερό. Είναι απλά νερό. Ξαφνικά, πιάνεις τον λαιμό σου, λόγο ενός τεράστιου πόνου. Δηλητήριο! Πνίγεσαι και κάνεις εμετό μαύρο αίμα. Παραλίγο να πεθάνεις. Πονάει. Πονάει πολύ.
+mno_i_shall_surv|Θα... επιβιώσω!
+menu_end_game|Η επιλογή έγινε και αποφάσισες να παραιτήσεις την ζωή του τυχοδιώκτη. Πουλάς όλα σου τα όπλα και την πανοπλία, μαζεύεις τα αντικείμενα σου και καλπάζεις προς το ηλιοβασίλεμα....
+mno_end_game_bye|Αντίο.
+menu_cattle_herd|Βρίσκεις μερικά άτομα.
 ; mno_cattle_drive_away|Order them to follow.
 ; mno_cattle_stop|Bring them to a stop.
 ; mno_leave|Leave.
 ; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
 ; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
 ; mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without you.
+; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 ; mno_encounter_hide|Hide from the enemy...
 ; mno_special_whip|Rush forward toward them cracking the {s4}.
+; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
 ; mno_encounter_leave|Disengage.
 ; mno_encounter_retreat|Pull back, leaving some soldiers behind to cover your retreat.
-; mno_hide_close|Continue...
+; mno_player_control_allies_simple|Command them and charge the enemy
+; mno_player_control_allies_back|Go back...
+mno_hide_close|Συνέχισε...
 ; menu_encounter_retreat_confirm|^^^^^As the party member with the highest tactics skill,   ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,   but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.
 ; mno_leave_behind|Go on. The sacrifice of these men will save the rest.
 ; mno_dont_leave_behind|No. We leave no one behind.
@@ -220,7 +235,10 @@ mno_start_hand|Ο Σάρουμαν του Άιζενγκαρντ, το Λευκ�
 ; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
 ; mno_join_attack|Charge the enemy.
 ; mno_join_order_attack|Order your troops to attack with your allies while you stay back.
+; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+; mno_join_attack_bearform|Leap into battle in bear form
 ; mno_join_leave|Disengage.
+; mno_player_control_allies_join_menu|Command them and charge the enemy
 ; menu_join_order_attack|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 ; mno_enter|Enter.
 ; menu_battlefields|^^^^^^^^^Select a field...
@@ -242,6 +260,7 @@ mno_start_hand|Ο Σάρουμαν του Άιζενγκαρντ, το Λευκ�
 ; menu_castle_outside|You are outside {s2}.{s11} {s3} {s4}
 ; mno_moria_enter|Return into main hall of Moria trough the secret entrance
 ; mno_moria_enter_door|Enter Moria.
+; mno_cheat_steal_book_door|Get the book
 ; mno_castle_start_siege|Besiege the {reg6?town:castle}.
 ; mno_castle_leave|Leave.
 ; menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
@@ -263,6 +282,7 @@ mno_start_hand|Ο Σάρουμαν του Άιζενγκαρντ, το Λευκ�
 ; menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
 ; mno_siege_defender_join_battle|Join the battle.
 ; mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
+; mno_siege_defender_do_not_join_battle|Don't get involved.
 ; menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 ; menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
 ; menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
@@ -288,6 +308,7 @@ mno_start_hand|Ο Σάρουμαν του Άιζενγκαρντ, το Λευκ�
 ; mno_talk_to_castle_commander|Visit the {s61} Barracks.
 ; mno_speak_with_elder|Speak with the {s6}.
 ; mno_isengard_underground|Go to the underground caverns.
+; mno_isengard_underground_door|Go to the underground caverns
 ; mno_tirith_toplevel|Climb up to the top level.
 ; mno_erebor_gates|Visit the Great Gates.
 mno_town_leave|Φύγε...
@@ -332,12 +353,12 @@ mno_gondor_beacons_close|Φύγε...
 ; mno_player_added_to_war_council_close|Close
 ; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
 ; mno_player_added_to_siege_reports_close|Close
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
 ; mno_player_added_to_allow_follow_close|Close
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 ; mno_center_besieged_event_close|Close
 ; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
-; mno_intro_next|Continue...
+mno_intro_next|Συνέχισε...
 ; mno_start_defend_caravan|Defend the Caravan!
 ; mno_start_raid_caravan|Raid the Caravan!
 ; mno_start_ambush_orcs|Ambush the Orcs!
@@ -357,11 +378,13 @@ mno_gondor_beacons_close|Φύγε...
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
 ; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7} 
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 ; mno_defend_refugees|Keep your eye out for raiders...
 ; mno_attack_refugees|Attack the refugee train...
 ; mno_leave_refugees|Leave them for now...
-; mno_evil_war_tut_continue|Continue...
+mno_evil_war_tut_continue|Συνέχισε...
 ; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
 ; mno_guardian_party_reject|Send a message you cannot join him.
 ; mno_guardian_party_send_word|Send word you'll join him shortly.
@@ -386,7 +409,7 @@ mno_cb_gondor7|Απόγονοι του Μπέορ
 ; menu_custom_battle_choose_faction3|^^^^^^^^^^Choose evil faction
 mno_cb_mordor|Μόρντορ
 mno_cb_mordor1|Άισενγκάρντ
-; mno_cb_mordor2|Dunland
+mno_cb_mordor2|Ντούνλαντ
 ; mno_cb_mordor3|Haradrim
 ; mno_cb_mordor4|Easterlings
 mno_cb_mordor5|Μόρια
@@ -413,16 +436,21 @@ mno_cb_mordor7|Ρουν
 ; menu_town_ruins|When you approach, you see that {s1} is {s2}
 mno_ruin_menu_0|Εξερεύνησε
 mno_ruin_leave|Φύγε...
+; menu_premutiny|none
 ; menu_death|You have been killed. Though the war still rages on, you will no longer be part of it.
 ; menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
-; menu_build_your_scene|You can build your own battlescene here, using one of the slots provided below and game Edit mode  (you need to switch edit mode ON in M&B lauching screen Options first).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Battlefield5 (file scn battlefield5.sco)
-; mno_scene2|Battlefield6 (file scn battlefield6.sco)
-; mno_scene3|Battlefield7 (file scn battlefield7.sco)
-; mno_scene4|Battlefield8 (file scn battlefield8.sco)
-; mno_scene5|Battlefield9 (file scn battlefield9.sco)
+; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+; mno_scene1|Plain Big (file scn custom 1.sco)
+; mno_scene2|Plain Med (file scn custom 2.sco)
+; mno_scene3|Plain Small (file scn custom 3.sco)
+; mno_scene4|Steppe Big (file scn custom 4.sco)
+; mno_scene5|Steppe Med (file scn custom 5.sco)
+; mno_scene6|Steppe Small (file scn custom 6.sco)
+; mno_scene7|Forest Big (file scn custom 7.sco)
+; mno_scene8|Forest Med (file scn custom 8.sco)
+; mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|Πίσω...
 mno_back|Πίσω
 ; mno_next|Next...

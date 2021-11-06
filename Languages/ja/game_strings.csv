@@ -2291,7 +2291,7 @@ str_npc27_2ary_morality_speech|[No secondary moral code]
 str_npc18_personalityclash_speech|大いなる者よ、もしヴァルファングを戦士として評価しているので^あれば、あやつを私からできるだけ遠ざけてくれ。すでに^あやつには警告をしたのだが、もしも私の許可もなく私にあの手を^這わせようとするなら、手首を切り落として、あやつの馬に食わせよう。
 str_npc19_personalityclash_speech|隊長、なぜあのウフサクなどという低劣な獣があんたの部下にいる^のか、わしは不思議で仕方ない。もちろんオークには主力の^戦士たちのための矢よけになる、という使い道があるが、あいつは^まるで野営の責任者であるかのように偉そうに歩き回っては、人間や^オークどもに指示を出している。わしがあいつを殺したとしても、^あんたがあまり気にしないといいのだが。それとも、あの醜い鼻の^先を削ぎ落してやろうか。
 str_npc20_personalityclash_speech|南方人のリキアーダには行儀というものを理解させ、 謙虚さを教えてやる必要がある。あの者の無礼な口の利きようと、 尊大なふるまいよ！あの民族の指揮官である事などどうでもよい・・・ 馬鹿らしい劣等民族め。礼を尽くすべき相手を知らぬばかりか、 自分たちよりも優れているかどうかすら理解できない愚か者どもめ！ 少し思い知らせてくれようか・・・
-; str_npc21_personalityclash_speech|Blimey, chief, but that Sickburpfoul's a bit of a mad bat, ain't she? Yer can tell she's cooked one crow too many in that there cauldron of hers, the one what I drag on me poor ol' back at Her Ladyship's command. And lumme if she don't look at me down the end of the nose like I was a piece of dung scrapings, and her head not even up to me navel! Enough to make me want to 'ave her noggin meet my fist, I reckon. But I've seen her sort afore, yes I 'ave. With the likes o' her around, yer wants a pair o' extra eyes round the back of your 'ead, and no mistake.
+str_npc21_personalityclash_speech|ちょいとお頭、あの薄気味の悪いコウモリ女は 頭がおかしいんじゃないのかい？あの大なべを 運べって言うからあたしが苦労して 運んでやったのはいいけどさ、あれでカラスを 煮る事にちょいと一生懸命に 過ぎるんじゃないのかね？おまけにあの女が鼻の先を 目一杯上げて、あたしの事をななめ下に 見下すときの、あの高慢ちきなまなざしと言ったら！ よっぽどあの頭を殴ってやろうかと考えちまうよ。 あたしは昔、ああいう手合いに会った事が あるけどね、しっかりと用心したほうがいいよ。
 str_npc22_personalityclash_speech|俺が{s11}の事を嫌いだという話は、 もうしたな？
 str_npc23_personalityclash_speech|{playername}。 ついさっき、{s11}が 若鳥の巣を堂々と踏み潰して歩いていくのを見たわ。 彼の粗雑さが罪のない若い生き物の命を奪ったのよ。
 str_npc24_personalityclash_speech|{s11}卿は強いが、 あのきらきら光る髪は、 敵のめくらましになっているんじゃないのか？ それか、 彼の名声と偉そうな物腰に、 敵がびっくりして腰を抜かしているのかも知れんぞ？
@@ -2311,7 +2311,7 @@ str_npc27_personalityclash_speech_b|俺は{s11}をすり潰すのを我慢しと
 str_npc18_personalityclash2_speech|大いなる者よ、グルムは油断のできない獣だが、あやつはその事に^誇りを持っている。あやつは昨夜の野営のかがり火のもとで、また^自身の卑劣な行為を自慢げに語るのだ。大いなる者よ、あやつからは^目を離してはならない。白の手に仕えていたときに自身の指揮官を^裏切った者なのだ。あなたの指揮下で同様の事をしないという理由は^ないのではないか？
 str_npc19_personalityclash2_speech|わしは{s11}が大嫌いだ。
 str_npc20_personalityclash2_speech|フルジミアの姿を見るたびに、 我が体の底から言いようのない怒りがこみ上げてくる。 あの者が何かをしたからではない。あの者の民、ウンバールの海賊どもが、 祖先の血をこれ以上ないほど汚しておるからじゃ。あやつらは、 自分たちをいにしえのアナドゥーネーの子孫だと主張する。 無知なあやつらは'ヌーメノール'の子孫だと言うがの。まったく、 その血の一滴でも、フルジミアの体内に流れておるのか！ おぬしの許可さえあれば、わしがこの手で確かめてみるのじゃがのう・・・
-; str_npc21_personalityclash2_speech|I've been thinkin', chief - how does one kill a witch? Without gettin' turnt into a pile o'slugs, I means. That ol' bat's been givin' me the evil eye again and it made me skin crawl the whole day. On the inside! I'm 'appy to smash heads and break shields in a scrap, but what SHE does to the heads I did done smashed, when nobody's lookin'?! I don't play with me food, not like that. Gives me the creeps, tha' one.
+str_npc21_personalityclash2_speech|お頭、あたしはずっと考えていたんだけどね・・・ 魔女ってのはどうやって殺せばいいんだろうねえ？ つまり、ナメクジに姿を変えられずに殺せないか、 ていう話さ。あのコウモリ女に悪意でいっぱいの 目でこっちを見られると、もうその日は一日中肌が ぞわぞわして、はらわたがひっくり返るよ！ あたしは頭を殴り潰すのが大好きだけどね、 あたしが殴り潰した頭にあの女がこっそりと何を しているか知ってるかい？！まったく、食べ物で 遊ぶもんじゃないってんだよ。 あの女には寒気がするね。
 str_npc22_personalityclash2_speech|俺が{s11}の事を嫌いだという話は、 もうしたな？
 str_npc23_personalityclash2_speech|俺が{s11}の事を嫌いだという話は、 もうしたな？
 str_npc24_personalityclash2_speech|ちょろいもんさ、なあ隊長？ あのエルフ女の{s11}さえいなけりゃ、もっといいんだがな。
@@ -2331,7 +2331,7 @@ str_npc27_personalityclash2_speech_b|俺は{s11}をすり潰すのを我慢し�
 str_npc18_personalitymatch_speech|大いなる者よ、戦場におけるリキアーダの正確無比な戦闘技術に^気付いたか？彼の放つ矢の速きこと、剣の鋭きこと！大いなる者よ、^私にもっと彼の指導のもとに訓練をする事を許可してほしい。彼の^教えを受ければ、私はさらにあなたの役に立つだろう。
 str_npc19_personalitymatch_speech|戦いの喜びに、わしの血が沸き立つ！ヴァルファングも同様のようだ。^戦意を失って逃げ惑う敵を笑いながら踏み潰していくあの男は、^戦場では見るからに恐ろしい。隊長、あの東方の者たちは興味深い。^わしが目的を遂げたあとにロヒアリムが褐色人に馬術を教えないので^あれば、彼らから学べばいい。
 str_npc20_personalitymatch_speech|ボルゾグを見よ。偉大なるボルゾグ！あの者が^わしの気まぐれにいちいち対応しつつ、がに股で^せわしく歩き回り、わしの申し付けた用事を^きちんと片付けていくさまよ。あれこそ正しく、^かわいらしい'ウルク'の鑑じゃ。指揮官どの、^わしはあの者がとても気に入った。これボルゾグ！^軟膏をこれへもて！いますぐじゃ！
-; str_npc21_personalitymatch_speech|Ha! Chief! Last night, right, I was a-watching that poor little blighter Ufthak for a bit. 'E's a funny little fella, and no mistake! I made 'im cook me some meat he'd stashed away, right, and then I et it, right 'fore his face! Blimey if he didn't bawl his eyes out! Yer should've saw how his nose runs when he bawls, it don't 'arf run like a stream! Ha! Good thing yer keep him around!
+str_npc21_personalitymatch_speech|ちょっと！お頭！きのうの晩にねえ、 あのちっこいウフサクがちょこまかと悪さをする様を しばらくの間、観察しとったんだがね。あいつは 本当に面白いねえ！あいつがこっそり肉を 隠しているのを見つけたもんで、あいつにその肉で メシをつくらせてね、目の前で食べてやったのさ！ そしたらあいつは、目玉をひんむいて泣き叫んでね！ 鼻から水がたくさん流れて、それがもう 小川みたいでね、あんたにも見せたかったよ！ あいつがいると退屈しなくていいね！
 str_npc22_personalitymatch_speech|もう言ったかもしれないけど、{s11}ってのは大したタマだな。
 str_npc23_personalitymatch_speech|{playername}、 私は戦いが嫌いだけれども、 {s11}がまるで鷹のようにあの醜い生き物どもを狩り、 華麗に追い散らす姿には、 思わず見とれてしまいました。
 str_npc24_personalitymatch_speech|血しぶきと勝利。 これだよわしの求めているものは！ 実はちょっと怪我をしたんだが、 親切にも{s11}が手際良く手当てをしてくれたんだ。
@@ -2341,7 +2341,7 @@ str_npc27_personalitymatch_speech|もう言ったかもしれないけど、{s11
 str_npc18_personalitymatch_speech_b|大いなる者よ、リキアーダのような戦士があなたの旗のもとに戦う^のは、あなたの偉大さを大いに語る。南方の者たちはか弱く退廃的で、^西方の人間と大差がないと私は考えていたが、他にも彼のような者が^彼らの軍にいるのであれば、西方の運命が尽きる日も近いだろう。
 str_npc19_personalitymatch_speech_b|隊長、昨晩、わしはたき火の側でヴァルファングと葡萄酒を 飲み交わしながら、腹を割って話をしたのだ。わしの見たところ、 彼は先祖たちの行いを非常に重要と考えている。見上げたものだ。 彼の言うように、先祖の魂が本当に我らとともにあるのかどうか、 わしには分からない。そういう考え方は実は嫌いなんだ。 だが王たる者、自分の血筋や祖先の話は知っておかねばならない。 その事をヴァルファングは知っているんだ。
 str_npc20_personalitymatch_speech_b|ボルゾグのような'ウルク'を見たのは初めてじゃ。^もちろん、姿は醜く目にするのも不快であろうが、^われらの知る限り、こそこそしては殺戮をするだけ^という単純な行動以上の事ができる者は他におらぬ。^あの者のふしくれだった手は驚くほど器用じゃ・・・^はじめに考えていたときよりも、多くの骨と筋の^術を仕込めるであろう。
-; str_npc21_personalitymatch_speech_b|That silly Ufthak keeps tryin' to sneak away, but I'll always catch 'im, yes I will. It's almost like the old days, chief. When I had me band o'lads at me service. Or way back o'er the mountains, when I had me boys with me -- Bert, and Bill, and Tom... Ah well. Them days be long gone. Where's that little ratty rascal gone now, eh? Ufthak! Come 'ere, yer no-good skulker!
+str_npc21_personalitymatch_speech_b|あのお馬鹿のウフサクってのは、何かあると すぐにこっそりと逃げようとするけれど、 まああたしは逃がしゃあしないよ。こんな事を してると、昔を思い出すよ、お頭。あたしが群れを 率いてた頃とかさ。山を縄張りに一緒に過ごした 仲間たち・・・バート、それにビル、あとトム・・・ なつかしいね。もうあの頃は戻ってこないのさ。 さて、あのすばしっこいいたずらっ子はどこへ 行ったんだい？ウフサク！こっちに来るんだよ、 この悪がき！
 str_npc22_personalitymatch_speech_b|{s11}ってのは大したタマだなあ。
 str_npc23_personalitymatch_speech_b|彼は一体、いくつなのかしら。 私よりも、120歳は年上よね？ 気にしないで、 あなたには理解しづらい話だったわね。
 str_npc24_personalitymatch_speech_b|{s11}の故郷である谷間の国の民は、 ドワーフほどではないが、 戦いにおいて信頼できる同盟国だ。 実績もあるしな。 友とするにしろ、 コンパニオンにするにしろ、 人間にしては見所のある民族と言える。
@@ -2361,7 +2361,7 @@ str_npc27_retirement_speech|どうも戦いに明け暮れる生活に疲れち�
 str_npc18_rehire_speech|大いなる者よ、我が剣は血に飢えている。また共に戦おう！
 str_npc19_rehire_speech|隊長、また会えてうれしいよ。再びあんたの部隊に入る許可をくれ。
 str_npc20_rehire_speech|指揮官どの、さあ旅立とう。無為に過ごしていては、^この戦いに勝てぬ！
-; str_npc21_rehire_speech|How've yer been, chief? Should I pack me things and be off with yer again?
+str_npc21_rehire_speech|お頭、元気にしてたかい？ また一緒に行こうっていうのなら、 荷物をまとめてくるよ？
 str_npc22_rehire_speech|君に会えてうれしいよ、 {playername}殿。 また一緒に旅をしようじゃないか。
 str_npc23_rehire_speech|会えて嬉しいわ、 {playername}。 また一緒に行きましょう。
 str_npc24_rehire_speech|わしの斧はばっちり研いであるぞ、 {playername}。 また一緒に連れて行ってくれるかい？
@@ -2506,12 +2506,12 @@ str_imladris_guildmaster_companion_none|よくご覧になってください、�
 str_imladris_guildmaster_companion_player_none_ok|賢者殿、承知した。時間をとって頂き感謝する。
 str_imladris_guildmaster_player_found_ok|賢者殿、承知した。時間をとって頂き感謝する。
 str_show_keybinds_form|特別なキーの割り当て: ^^陣形ショートカット:^選択した状態の分隊へF1-F4で命令^選択された分隊へF1キーを押したままの状態で移動先を指示。^移動先には敵の分隊を設定する事も可能。^^ 使用武器の切り替え - O ^^ カメラタイプの切り替え - CTRL+END ^^ 檄 - V ^^ 乗馬を呼ぶ - M ^^ 命令の確認/ミニマップ - Backspace
-str_mordor_cungol_guildmaster_companion|ほほう、戦士をお望みとな！あなたにぴったりの者がおりますよ。 あれは親分たちのお気に入りでしてね。 小柄だからってみくびっちゃいけませんよ、とんでもない！ あの調子なら、あの者自身が親分に出世する日もそう遠くない！ 手入れの行き届いた大きな斧をひとつ持たせて、 頼もしいウフサクを前線に立たせてご覧なさい！ 敵どもを一匹残らず恐怖の底に叩き落して回りますよ！ こら、おまえら、黙らんか！笑うのをやめろ！持ち場に戻れ、 このうじ虫どもめ！失礼しました、指揮官殿。あの連中はグズで仕様がなくて。 ウフサクは違いますぞ！指揮官殿、あの者を連れていくと良い。 後悔はしませんよ。命を預けるに足る、信頼できる者です。 ほら、あの見張り塔のてっぺんに立っているでしょう。 なにか風格を感じさせる姿でしょう、ね？
+str_mordor_cungol_guildmaster_companion|ほほう、戦士をお望みとな！あなたにぴったりの者がおりますよ。 あれは親分たちのお気に入りでしてね。 小柄だからってみくびっちゃいけませんよ、とんでもない！ あの調子なら、あの者自身が親分に出世する日もそう遠くない！ 手入れの行き届いた大きな斧をひとつ持たせて、 頼もしいウフサクを前線に立たせてご覧なさい！ 敵どもを一匹残らず恐怖の底に叩き落して回りますよ！ こら、おまえら、黙らんか！笑うのをやめろ！ 持ち場に戻れ、このうじ虫どもめ！ 失礼しました、指揮官殿。 あの連中はグズで仕様がなくて。 ウフサクは違いますぞ！指揮官殿、あの者を連れていくと良い。 後悔はしませんよ。命を預けるに足る、信頼できる者です。 ほら、あの見張り塔のてっぺんに立っているでしょう。 なにか風格を感じさせる姿でしょう、ね？
 str_gundabad_guildmaster_companion_player_ask|ここには戦うよりも逃げるほうが得意な、信用のならない臆病者が群れているばかりだ。まともな戦士はどこにいるのだ？
-; str_gundabad_guildmaster_companion_none| I care not where you come from -- you’ll watch your tongue around here! Oh yes, be careful how you speak to us, or you just might find yourself falling into a dark hole of snakes in these tunnels of ours. Our fighting lads are off in rebel lands, fighting thieves and brigands and murderous elf-friends. And what’re you about, eh? Shirking your own share of the fighting, spying on our private business? Off with you, back into the fray, like a proper soldier!
+str_gundabad_guildmaster_companion_none|あなたがどれくらい偉いのかは知りませんがね・・・ この辺りで大口を叩いていると後悔しますよ！ 我々の気に入らない者は、ここの洞窟にある深くて 暗い蛇の巣穴に蹴落とされる事もありますからね。 ここの兵たちは皆、敵地へ乗り込んで凶悪な エルフどもや盗人、山賊を相手に戦っているのです。 それで、あなたは一体何です？戦いに行かずに、 ここで我々の仕事にちょっかいを出して、 怠けてるわけですか？兵士なら兵士らしく、 こんなところで油を売ってないで、 戦場に行ったらどうなんです！
 str_gundabad_guildmaster_companion_player_none_ok|命が惜しければ私への口の利き方に気をつけるのだな。
-str_gundabad_guildmaster_player_found_ok|なんだって？おまえの言う「バータ」というのは、 話のできるトロルなのか？ これはぜひとも我が目で確かめなければならん。
-; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
+str_gundabad_guildmaster_player_found_ok|なんだって？おまえの言う「バータ」というのは、知恵のある トロルなのか？これはぜひとも我が目で確かめなければならん。
+str_gundabad_guildmaster_companion|この辺りでは口の利き方に気を付けないと、誰かにその舌を 切り取られますよ！ここで歓迎されない者は、私が合図ひとつ 出せば、すぐに闘技場送りです！あなたのような大口を叩く者には 相応の待遇が用意されているというわけですよ。 あのでっかいバータを相手に戦ってもまだ大口を叩けるかどうか、 試してみようではありませんか。彼女に一発殴られたら、あなたは おしまいでしょうね。私の今月の食事の配給を全部賭けてもいい。 あんなに悪知恵の働くトロルは他に見たことがありません。でもね、 悪知恵では我々のほうが上でしてね、ああしてまんまと彼女を 鎖で繋いでやったというわけなんですよ！ここの洞窟にある、 あのドワーフの王の像の足元に繋いでやったのは傑作でしょう。 あれなら彼女も寂しくないんじゃないかと思いましてね、へへへ。 どうです？我々のバータを相手に、ちょっと殴り合いをしてみますか？
 str_fullname_region_rhun|ケルドゥインの両端に接する、 東ロヴァニオン
 str_fullname_region_erebor|はなれ山の山ろく地帯
 str_fullname_region_celebrant|白光川と銀筋川の中間に位置する、 ケレブラントの野

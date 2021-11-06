@@ -1,74 +1,74 @@
-; qst_deliver_message|Deliver Message to {s13}
-; qst_deliver_message_text|{s9} asked you to take a message to {s13}. {s13} was at {s4} when you were given this quest.
-; qst_deliver_message_to_enemy_lord|Deliver Message to {s13}
-; qst_deliver_message_to_enemy_lord_text|{s9} asked you to take a message to {s13} of {s15}. {s13} was at {s4} when you were given this quest.
-; qst_raise_troops|Raise {reg1} {s14}
-; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
-; qst_escort_messenger|Escort the messenger to {s14}
-; qst_escort_messenger_text|None
-; qst_hunt_down_fugitive|Hunt down {s4}
-; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the fugitive named {s4}. He is currently believed to be at {s3}.
-; qst_bring_back_runaway_serfs|Bring Back Runaway Slaves
-; qst_bring_back_runaway_serfs_text|{s9} asked you to bring back the three groups of runaway slaves back to {s2}. He said all three groups must be running away in the direction of {s3}.
-; qst_follow_spy|Follow the Spy to Meeting
-; qst_follow_spy_text|{s11} asked you to follow the spy that will leave {s12}. You must be careful not to be seen by the spy during his travel, or else he may get suspicious and turn back. Once the spy meets with his accomplice, you are to ambush and capture them and bring them both back to {s11}.
-; qst_capture_enemy_hero|Capture an enemy commander
-; qst_capture_enemy_hero_text|{s11} asked you to capture an enemy commander.
-; qst_lend_companion|Lend Your Companion {s3} to {s9}
-; qst_lend_companion_text|{s9} asked you to lend your companion {s3} to him for a week.
-; qst_capture_prisoners|Bring {reg1} enemy prisoners
-; qst_capture_prisoners_text|{s9} wanted you to bring him {reg1} enemy prisoners.
-; qst_investigate_fangorn|Investigate Fangorn
-; qst_investigate_fangorn_text|{s9} asked you to find out what is going on in the Fangorn forest, and to report back.
-; qst_capture_troll|Capture a Troll
-; qst_capture_troll_text|{s9} asked you to bring back a savage troll for use in his army.
-; qst_kill_troll|Dispatch raging Troll
-; qst_kill_troll_text|{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts.
-; qst_mirkwood_sorcerer|Slay a sorcerer in Mirkwood
-; qst_mirkwood_sorcerer_text|Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him.
-; qst_find_lost_spears|Find the lost spears of king Bladorthin
-; qst_find_lost_spears_text|{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain.
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
-; qst_destroy_scout_camp|Destroy Scout Camp
-; qst_rescue_prisoners|Rescue {reg1} Prisoners
-; qst_rescue_prisoners_text|{s9} wanted you to rescue {reg1} prisoners.
-; qst_scout_enemy_town|Scout Enemy Town
-; qst_scout_enemy_town_text|{s9} asked you to scout around {s13}.
-; qst_dispatch_scouts|Dispatch a Scout Party
-; qst_dispatch_scouts_text|{s9} asked you to dispatch a scout party near {s13}.
-; qst_eliminate_patrols|Eliminate {reg1} Enemy Parties
-; qst_eliminate_patrols_text|{s9} asked you to eliminate {reg1} {s13} enemy parties.
-; qst_lend_surgeon|Lend Your Surgeon {s3} to {s1}
-; qst_lend_surgeon_text|Lend your experienced surgeon {s3} to {s1}.
-; qst_follow_army|Follow {s9}'s Army
-; qst_follow_army_text|None
-; qst_report_to_army|Report to {s13}
-; qst_report_to_army_text|None
-; qst_deliver_cattle_to_army|Deliver {reg3} units of food to {s13}
-; qst_deliver_cattle_to_army_text|None
-; qst_join_siege_with_army|Join the Siege of {s14}
-; qst_join_siege_with_army_text|None
-; qst_scout_waypoints|Scout {s13}, {s14} and {s15}
-; qst_scout_waypoints_text|None
-; qst_move_cattle_herd|Move {s12} to {s13}
-; qst_move_cattle_herd_text|The Elder of {s10} asked you to move some {s12} to {s13}.
-; qst_escort_merchant_caravan|Escort Supply Train to {s8}
-; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
-; qst_deliver_wine|Deliver {reg5} Units of {s6} to {s4}
-; qst_deliver_wine_text|The {s9} of {s3} asked you to deliver {reg5} units of {s6} to {s4} in 7 days.
-; qst_troublesome_bandits|Hunt Down Troublesome Goblins
-; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town.
-; qst_deal_with_looters|Deal with Tribal Orcs
-; qst_deal_with_looters_text|The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}.
-; qst_deal_with_night_bandits|Deal with Rogue Goblins
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night goblins at {s14}.
-; qst_deliver_food|Supply {s3} with {reg5} Units of food
+qst_deliver_message|Παράδωσε ένα Μήνυμα στον/στην {s13}
+qst_deliver_message_text|Ο/Η {s9} ζήτησε να πας ένα μήνυμα στον/στην {s13}. Ο/Η {s13} ήταν στο {s4} όταν σου δόθηκε η αποστολή.
+qst_deliver_message_to_enemy_lord|Παράδωσε ένα Μήνυμα στον/στην {s13}
+qst_deliver_message_to_enemy_lord_text|Ο/Η {s9} σου ζήτησε να πας ένα μήνυμα στον/στην {s13} του {s15}. Ο/Η {s13} ήταν στο {s4} όταν σου δόθηκε αυτή η αποστολή.
+qst_raise_troops|Εκπαίδευσε {reg1} {s14}
+qst_raise_troops_text|Ο/Η {s9} σου ζήτησε να εκπαιδεύσεις {reg1} {s14} και να τα πας πίσω σε {αυτόν/αυτήν}.
+qst_escort_messenger|Συνόδευσε τον αγγελιοφόρο στο {s14}
+qst_escort_messenger_text|Καμία
+qst_hunt_down_fugitive|Κυνήγησε τον/την {s4}
+qst_hunt_down_fugitive_text|{s9} σου ζήτησε να κυνηγήσεις έναν φυγά εν ονόματι {s4}. Νομίζουν πως βρίσκετε στο {s3}.
+qst_bring_back_runaway_serfs|Φέρε Πίσω Σκλάβους που το Έσκασαν
+qst_bring_back_runaway_serfs_text|Ο/Η {s9} σου ζήτησε να φέρεις πίσω τρεις ομάδες σκλάβων που το έσκασαν πίσω στο {s2}. Είπε πως και οι τρεις ομάδες πρέπει να τρέχουν προς {s3}.
+qst_follow_spy|Ακολούθησε τον Κατάσκοπο στη Συνάντηση
+qst_follow_spy_text|Ο/Η {s11} σου ζήτησε να ακολουθήσεις τον κατάσκοπο που θα φύγει από το {s12}. Πρέπει να προσέχεις να μη σε δει ο κατάσκοπος ενώ ταξιδεύει, αλλιώς θα σε υποψιαστεί και θα γυρίσει πίσω. Όταν ο κατάσκοπος συναντηθεί με τον σύντροφο του, στήσε ενέδρα και πιάσε και τους δύο και φέρε τους πίσω στον/στην {s11}.
+qst_capture_enemy_hero|Πιάσε έναν εχθρικό διοικητή
+qst_capture_enemy_hero_text|Ο/Η {s11} σου ζήτησε να πιάσεις έναν εχθρικό διοικητή.
+qst_lend_companion|Δάνεισε τον Σύντροφο σου {s3} στον/στην {s9}
+qst_lend_companion_text|Ο {s9} σου ζήτησε να του δανείσεις τον σύντροφο σου {s3} για μία εβδομάδα.
+qst_capture_prisoners|Φέρε φυλακισμένους {reg1} εχθρούς
+qst_capture_prisoners_text|Ο {s9} θέλει να του φέρεις φυλακισμένους {reg1} εχθρούς.
+qst_investigate_fangorn|Ερεύνησε το Φάνγκορν
+qst_investigate_fangorn_text|Ο/Η {s9} σου ζήτησε να μάθεις τι γίνετε στο δάσος του Φάνγκορν, και μετά να γυρίσεις πίσω.
+qst_capture_troll|Πιάσε ένα Τρολ
+qst_capture_troll_text|Ο {s9} σου ζήτησε να του φέρεις ένα άγριο τρολ για να το χρησιμοπηείσει στον στρατό του.
+qst_kill_troll|Αφαίρεσε ένα αγριεμένο Τρολ
+qst_kill_troll_text|Ο/Η {s9} σου ζήτησε να λυτρώσει το {s13} από το Τρολ που καταστρέφει τη γύρω περιοχή.
+qst_mirkwood_sorcerer|Σκότωσε έναν μάγο στο Μίρκγουντ
+qst_mirkwood_sorcerer_text|Η δυνατότητα του Γκαλαντριελ να αμυνθεί ενάντια του Λοθλόριεν έχει μειωθεί από τα μοχθηρά ξόρκια ενός μάγου από το Ντολ Γκουλντούρ. Ενώ είναι θνητός, είναι μεγάλος κίνδυνος για τα Ξωτικά. Ψάξε για αυτόν στο δάσος του Μίρκγουντ, το οποίο δεν είναι και τόσο μακριά από το Ντολ Γκουλντούρ. Πρόσεχε να μην σημάνεις τον συναγερμό, διότι θα υπάρχει μόνο μία ευκαιρία να τον νικήσεις.
+qst_find_lost_spears|Βρες τα χαμένα δόρατα του βασιλεία Μπλάντορθιν
+qst_find_lost_spears_text|Ο/Η {s9} σου ζήτησε να βρεις τα χαμένα δόρατα οι νάνοι είχαν δημιουργήσει για τον βασιλιά Μπλάντορθιν. Πρέπει να ζητήσεις άδεια από τους νάνους για να ψάξεις για τα δόρατα στο Μοναχικό Βουνό.
+qst_defend_village|Υπερασπίσου το Χωριό
+qst_raid_village|Λεηλάτησε το Χωριό
+qst_destroy_scout_camp|Κατέστρεψε το Στρατόπεδο Ανιχνευτών
+qst_rescue_prisoners|Σώσε τους {reg1} Φυλακισμένους
+qst_rescue_prisoners_text|Ο/Η {s9} σου ζήτησε να σώσεις τους {reg1} φυλακισμένους.
+qst_scout_enemy_town|Κατασκόπευσε Εχθρική Πόλη
+qst_scout_enemy_town_text|Ο/Η {s9} σου ζήτησε να κατασκοπεύσεις τριγύρω από το {s13}.
+qst_dispatch_scouts|Στείλε μία Ομάδα Ανιχνευτών
+qst_dispatch_scouts_text|Ο/Η {s9} σου ζήτησε να στείλεις μία ομάδα ανιχνευτών κοντά στο {s13}.
+qst_eliminate_patrols|Κατέστρεψε {reg1} Εχθρικές Ομάδες
+qst_eliminate_patrols_text|Ο/Η {s9} σου ζήτησε να καταστρέψεις τις {reg1} {s13} εχθρικές ομάδες.
+qst_lend_surgeon|Δάνεισε τον Χειρουργό σου {s3} στον/στην {s1}
+qst_lend_surgeon_text|Δάνεισε τον έμπειρο χειρουργό σου {s3} στον/στην {s1}.
+qst_follow_army|Ακολούθησε τον στρατό του/της {s9}
+qst_follow_army_text|Καμία
+qst_report_to_army|Ανάφερε στον/στην {s13}
+qst_report_to_army_text|Καμία
+qst_deliver_cattle_to_army|Παράδωσε {reg3} μονάδες φαγητού στο {s13}
+qst_deliver_cattle_to_army_text|Καμία
+qst_join_siege_with_army|Βοήθησε στην Πολιορκία του {s14}
+qst_join_siege_with_army_text|Καμία
+qst_scout_waypoints|Κατασκόπευσε το {s13}, {s14} και το {s15}
+qst_scout_waypoints_text|Καμία
+qst_move_cattle_herd|Μετακίνησε {s12} στο {s13}
+qst_move_cattle_herd_text|Ο Γέροντας του {s10} σου ζήτησε να μετακινήσεις {s12} στο {s13}.
+qst_escort_merchant_caravan|Συνόδεψε το Τρένο Εφόδων στο {s8}
+qst_escort_merchant_caravan_text|Συνόδεψε το τρένο εφόδων στο {s8} και μίλησε τους όταν είστε κοντά.
+qst_deliver_wine|Παράδωσε {reg5} Μονάδες από {s6} στο {s4}
+qst_deliver_wine_text|Ο/Η {s9} του {s3} σου ζήτησε να πας {reg5} μονάδες από {s6} στο {s4} σε 7 ημέρες.
+qst_troublesome_bandits|Κυνήγησε τα Προβληματικά Γκόμπλιν
+qst_troublesome_bandits_text|Ο/Η {s9} του {s4} σου ζήτησε να κυνηγήσεις κάτι προβληματικά γκόμπλιν που είναι κοντά στην πόλη.
+qst_deal_with_looters|Αντιμετώπισε τα Άγρια Ορκ
+qst_deal_with_looters_text|Ο Γέροντας του {s4} σου ζήτησε να αντιμετωπίσεις διάφορες ομάδες από άγρια ορκ που είναι κοντά στο {s4}.
+qst_deal_with_night_bandits|Αντιμετώπισε τα Άγρια Γκόμπλιν
+qst_deal_with_night_bandits_text|Ο Γέροντας του {s14} σου ζήτησε να αντιμετωπίσεις τα νυχτερινά γκόμπλιν στο {s14}.
+qst_deliver_food|Προμήθευσε το {s3} με {reg5} Μονάδες φαγητού
 ; qst_deliver_food_text|The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days.
 ; qst_deliver_iron|Supply {s3} with {reg5} Units of {s6}
 ; qst_deliver_iron_text|The {s9} of {s3} asked you to bring him {reg5} units of {s6}.
 ; qst_tld_introduction|Go to your faction leader.
-; qst_tld_introduction_text|None
+qst_tld_introduction_text|Καμία
 ; qst_treebeard_kill_orcs|Defeat the tree-chopping orc party
 ; qst_treebeard_kill_orcs_text|Treebeard wants you find and defeat the orcs cutting down trees in Fangorn.
 ; qst_oath_of_vengeance|Oath of Vengeance
@@ -83,7 +83,7 @@
 ; qst_blank_quest_03|Sea Battle
 ; qst_blank_quest_04|Kill {s35} {s6} {s7}
 ; qst_blank_quest_05|Kill {s35} {s36} troops.
-
+; qst_blank_quest_06|Defeat {s35} in battle.
 
 
 

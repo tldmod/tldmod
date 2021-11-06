@@ -797,11 +797,11 @@ qstr_Drive_them_back!|やつらを追い払え！
 qstr_Protect_the_City!|町を守れ！
 qstr_Forward!_Board_them!|進め！敵艦へ切り込め！
 qstr_The_Last_Days_of_the_|The Last Days of the Third AgeはNativeとは大きく異なる、高度な攻城戦AIを採用しています。 すべてのユニットは左翼、右翼、中央に振り分けられます。 攻撃側のプレーヤーはいくらかの自分の兵に指示を出す事ができます。
-qstr_on_the_left_flank|左翼より攻撃します
-qstr_on_the_right_flank|右翼より攻撃します
-qstr_through_the_center|中央より攻撃します
-qstr_Attackers_charge_{s2|攻撃側の軍勢は{s2}を
-qstr_Attackers_charge_{s1|攻撃側の軍勢は{s1}を
+qstr_on_the_left_flank|左翼
+qstr_on_the_right_flank|右翼
+qstr_through_the_center|中央
+qstr_Attackers_charge_{s2|攻撃側の軍勢は{s2}より攻撃します
+qstr_Attackers_charge_{s1|攻撃側の軍勢は{s1}より攻撃します
 qstr_{s1}_rallied_to_your|あなたの魅力の力によって{s1}が味方の軍勢に檄を飛ばしました。
 qstr_Last_attacker_wave._|攻撃側の最後の攻撃です。退却しますか？
 qstr_Attackers_almost_def|攻撃側は敗北寸前です。退却しますか？
@@ -1420,7 +1420,7 @@ qstr_Mercy_I_crave!_To_fa|お許しください、どうかお慈悲を！{s7}�
 qstr_strong_warriors_from|{s7}の強力な戦士たち
 qstr_champions_from_{s7}_|戦場における最強の戦士、 {s7}軍の最精鋭たち
 qstr_{playername}_the_men|{playername}よ、 我が兵は恐るべき敵の兵の話に震え上がっておる。 おぬしの力でもって、 怖れるものなど何もないと兵士たちに示してもらいたい。 {s6}に戦いを挑み、 これを{reg22}名を打ち倒してくれ。
-qstr_{playername}_I_want_|{playername}よ。おぬしの力で、敵勢など物の数ではないという事を、 我が軍の兵に示してもらいたい。 おぬし自身の手で、 {reg22}名の{s6}を打ち倒してくれ！ 我が軍が最強であるという事を知らしめるのだ！
+qstr_{playername}_I_want_|{playername}よ。おぬしの力で、敵勢など物の数ではないという事を、 我が軍の兵に示してもらいたい。 おぬし自身の手で、 {s6}を {reg22}名、 打ち倒してくれ！ 我が軍が最強であるという事を知らしめるのだ！
 qstr_I_will_do_what_you_a|お望みの通りにいたしましょう。兵によく示してやることにします。
 qstr_high_level_troops_fr|上級兵
 qstr_elite_level_troops_f|精鋭兵
@@ -1572,8 +1572,8 @@ qstr_Good_moves_but_you_m|なかなかすじがよろしいが、 さらなる�
 qstr_More_than_half_of_th|対戦相手の半数以上は倒しましたな。 悪くない。
 qstr_You_ll_need_to_try_h|あなたなら、もっともっと出来るはずですよ。
 qstr_Well..._better_here_|まあ・・・ やっと訓練が終わって、やれやれ、 という感じでしょうかね？
-qstr_We_ve_been_sent_by_{|{s3}殿の命を受け、 我々はこのたびの戦の戦力となるため参上した。
-qstr_{s3}_has_sent_us_to_|{s3}殿の命を受け、 我々は{s4}襲撃の船に乗るため参上した。
+qstr_We_ve_been_sent_by_{|{s3}殿の命を受け、 このたびの戦の戦力となるため参上した。
+qstr_{s3}_has_sent_us_to_|{s3}殿の命を受け、 {s4}襲撃の船に乗るため参上した。
 qstr_Excellent_{playernam|素晴らしいぞ、{playername}！ 私の要望した以上の貢献をしてくれたそうだな！ 賞賛に値する働きだ。^^さあ、これは私の期待を大きく上回ってくれた事に対する特別報酬だ、 受け取ってくれ。^^この調子ならば、 この戦争における我々の勝利は近いだろう。
 qstr_Excellent_{playername|素晴らしいぞ、{playername}。 これで彼らを大いに助ける事になる。 この調子ならば、 この戦争における我々の勝利は近いだろう。
 qstr_Reinforcing_{s1}_has|{s1}が増強された事によって、{s2}の士気が高まりました({s2}の勢力ポイントが{reg50}上がりました)。

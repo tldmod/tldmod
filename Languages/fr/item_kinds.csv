@@ -291,13 +291,13 @@ itm_orc_tribal_b|Peau non traitée
 itm_orc_tribal_c|Peau non traitée
 itm_evil_gauntlets_a|Gants noirs
 itm_evil_gauntlets_b|Gantelets noirs
-itm_isen_orc_armor_a|Armure orque de l'Isengard
-itm_isen_orc_armor_b|Armure orque de l'Isengard
-itm_isen_orc_armor_c|Armure orque de l'Isengard
-itm_isen_orc_armor_d|Armure orque de l'Isengard
-itm_isen_orc_armor_e|Armure orque de l'Isengard
-itm_isen_orc_armor_f|Armure orque de l'Isengard
-itm_isen_orc_armor_g|Armure orque de l'Isengard
+itm_free_isen_orc_armor_a|Armure orque de l'Isengard
+itm_isen_orc_light_a|Armure orque de l'Isengard
+itm_isen_orc_light_b|Armure orque de l'Isengard
+itm_isen_orc_pad_a|Armure orque de l'Isengard
+itm_isen_orc_pad_b|Armure orque de l'Isengard
+itm_isen_orc_mail_a|Armure orque de l'Isengard
+itm_isen_orc_mail_b|Armure orque de l'Isengard
 itm_isen_uruk_light_a|Harnais uruk-hai léger
 itm_isen_uruk_light_b|Harnais de combat uruk-hai
 itm_isen_uruk_light_c|Harnais de berserker uruk-hai
@@ -313,14 +313,14 @@ itm_uruk_greaves|Jambières uruks
 itm_uruk_chain_greaves|Jambières uruks en mailles
 itm_uruk_ragwrap|Bandage tissé uruk
 itm_isen_orc_helm_a|Casque orque de l'Isen
-itm_isen_orc_helm_b|Casque orque de l'Isen
-itm_isen_orc_helm_c|Casque orque de l'Isen
+itm_free_isen_orc_helm_b|Casque orque de l'Isen
+itm_free_isen_orc_helm_c|Casque orque de l'Isen
 itm_isen_uruk_helm_a|Casque uruk-hai
-itm_isen_uruk_helm_b|Casque uruk-hai
-itm_isen_uruk_helm_c|Casque uruk-hai
+itm_free_isen_uruk_helm_a|Casque uruk-hai
+itm_free_isen_uruk_helm_c|Casque uruk-hai
 itm_isen_uruk_helm_d|Casque de capitaine uruk-hai
 itm_isen_uruk_helm_e|Casque de pisteur uruk-hai
-itm_isen_uruk_helm_f|Casque de pisteur uruk-hai
+itm_free_isen_uruk_helm_f|Casque de pisteur uruk-hai
 itm_uruk_pike_b|Pique du Mordor
 itm_uruk_falchion_a|Fauchon uruk
 itm_uruk_falchion_b|Grand cimeterre orque

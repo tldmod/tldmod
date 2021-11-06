@@ -291,13 +291,13 @@ itm_orc_tribal_b|Niegarbowana Skóra
 itm_orc_tribal_c|Niegarbowana Skóra
 itm_evil_gauntlets_a|Czarne Rękawice
 itm_evil_gauntlets_b|Czarne Naramienniki
-itm_isen_orc_armor_a|Isengardzka Zbroja Orka
-itm_isen_orc_armor_b|Isengardzka Zbroja Orka
-itm_isen_orc_armor_c|Isengardzka Zbroja Orka
-itm_isen_orc_armor_d|Isengardzka Zbroja Orka
-itm_isen_orc_armor_e|Isengardzka Zbroja Orka
-itm_isen_orc_armor_f|Isengardzka Zbroja Orka
-itm_isen_orc_armor_g|Isengardzka Zbroja Orka
+itm_free_isen_orc_armor_a|Isengardzka Zbroja Orka
+itm_isen_orc_light_a|Isengardzka Zbroja Orka
+itm_isen_orc_light_b|Isengardzka Zbroja Orka
+itm_isen_orc_pad_a|Isengardzka Zbroja Orka
+itm_isen_orc_pad_b|Isengardzka Zbroja Orka
+itm_isen_orc_mail_a|Isengardzka Zbroja Orka
+itm_isen_orc_mail_b|Isengardzka Zbroja Orka
 itm_isen_uruk_light_a|Lekka Zbroja Uruk-hai
 ; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
 ; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
@@ -313,14 +313,14 @@ itm_uruk_greaves|Nagolenniki Uruk-hai
 itm_uruk_chain_greaves|Kolcze Nogawice Uruk-hai
 itm_uruk_ragwrap|Łachmany Uruk-hai
 itm_isen_orc_helm_a|Isengardzi Hełm Orków
-itm_isen_orc_helm_b|Isengardzi Hełm Orków
-itm_isen_orc_helm_c|Isengardzi Hełm Orków
+itm_free_isen_orc_helm_b|Isengardzi Hełm Orków
+itm_free_isen_orc_helm_c|Isengardzi Hełm Orków
 itm_isen_uruk_helm_a|Hełm Uruk-hai
-itm_isen_uruk_helm_b|Hełm Uruk-hai
-itm_isen_uruk_helm_c|Hełm Uruk-hai
+itm_free_isen_uruk_helm_a|Hełm Uruk-hai
+itm_free_isen_uruk_helm_c|Hełm Uruk-hai
 itm_isen_uruk_helm_d|Hełm Wodza Uruk-hai
 itm_isen_uruk_helm_e|Hełm Tropiciela Uruk-hai
-itm_isen_uruk_helm_f|Hełm Tropiciela Uruk-hai
+itm_free_isen_uruk_helm_f|Hełm Tropiciela Uruk-hai
 itm_uruk_pike_b|Mordorska Pika
 itm_uruk_falchion_a|Ostrze Uruków
 itm_uruk_falchion_b|Wielki Orkowy Bułat

@@ -291,13 +291,13 @@ itm_orc_tribal_b|未 治 療 的 皮 膚
 itm_orc_tribal_c|未 治 療 的 皮 膚
 itm_evil_gauntlets_a|黑 色 手 套
 itm_evil_gauntlets_b|黑 色 手 甲
-itm_isen_orc_armor_a|艾 辛 格 半 獸 人 鎧 甲
-itm_isen_orc_armor_b|艾 辛 格 半 獸 人 鎧 甲
-itm_isen_orc_armor_c|艾 辛 格 半 獸 人 鎧 甲
-itm_isen_orc_armor_d|艾 辛 格 半 獸 人 鎧 甲
-itm_isen_orc_armor_e|艾 辛 格 半 獸 人 鎧 甲
-itm_isen_orc_armor_f|艾 辛 格 半 獸 人 鎧 甲
-itm_isen_orc_armor_g|艾 辛 格 半 獸 人 鎧 甲
+itm_free_isen_orc_armor_a|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_light_a|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_light_b|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_pad_a|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_pad_b|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_mail_a|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_mail_b|艾 辛 格 半 獸 人 鎧 甲
 itm_isen_uruk_light_a|強 獸 人 輕 輓 俱
 ; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
 ; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
@@ -313,14 +313,14 @@ itm_uruk_greaves|半 獸 人 脛 甲
 itm_uruk_chain_greaves|半 獸 人 鏈 子 脛 甲
 itm_uruk_ragwrap|半 獸 人 破 布 巾
 itm_isen_orc_helm_a|艾 辛 格 半 獸 人 盔
-itm_isen_orc_helm_b|艾 辛 格 半 獸 人 盔
-itm_isen_orc_helm_c|艾 辛 格 半 獸 人 盔
+itm_free_isen_orc_helm_b|艾 辛 格 半 獸 人 盔
+itm_free_isen_orc_helm_c|艾 辛 格 半 獸 人 盔
 itm_isen_uruk_helm_a|強 獸 人 盔
-itm_isen_uruk_helm_b|強 獸 人 盔
-itm_isen_uruk_helm_c|強 獸 人 盔
+itm_free_isen_uruk_helm_a|強 獸 人 盔
+itm_free_isen_uruk_helm_c|強 獸 人 盔
 itm_isen_uruk_helm_d|強 獸 人 上 尉 盔
 itm_isen_uruk_helm_e|強 獸 人 追 蹤 者 盔
-itm_isen_uruk_helm_f|強 獸 人 追 蹤 者 盔
+itm_free_isen_uruk_helm_f|強 獸 人 追 蹤 者 盔
 itm_uruk_pike_b|魔 多 長 矛
 itm_uruk_falchion_a|半 獸 人 彎 刀
 itm_uruk_falchion_b|半 獸 人 大 半 月 刀

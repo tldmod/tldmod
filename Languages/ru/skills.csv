@@ -35,7 +35,7 @@ skl_riding_desc|Позволяет ездить на более породист
 skl_athletics|Атлетика
 skl_athletics_desc|Увеличивает скорость бега (личное умение).
 skl_shield|Владение щитом
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
+skl_shield_desc|Снижает урон, наносимый по щиту (на 8%% с каждым новым уровнем), увеличивает скорость щита и зону его покрытия (личное умение).
 skl_weapon_master|Владение оружием
 skl_weapon_master_desc|Облегчает обучение боевому мастерству и повышает соответствующие пределы. Пределы бывают следующие: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420 (личное умение).
 skl_power_draw|Мощный выстрел
@@ -45,4 +45,4 @@ skl_power_throw_desc|С каждым новым уровнем этого нав
 skl_power_strike|Мощный удар
 skl_power_strike_desc|С каждым новым уровнем этого навыка урон, наносимый оружием ближнего боя, увеличивается на 8%% (личное умение).
 skl_ironflesh|Живучесть
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)
+skl_ironflesh_desc|Каждое очко этого умения увеличивает количество здоровья на +2 и позволяет вам избежать некоторого урона, не будучи раненым. (Личное умение)

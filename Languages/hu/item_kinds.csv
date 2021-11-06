@@ -291,13 +291,13 @@ itm_orc_tribal_b|Kezeletlen bőr
 itm_orc_tribal_c|Kezeletlen bőr
 itm_evil_gauntlets_a|Fekete kesztyűk
 itm_evil_gauntlets_b|Fekete páncélkesztyűk
-itm_isen_orc_armor_a|Vasudvardi ork páncélzat
-itm_isen_orc_armor_b|Vasudvardi ork páncélzat
-itm_isen_orc_armor_c|Vasudvardi ork páncélzat
-itm_isen_orc_armor_d|Vasudvardi ork páncélzat
-itm_isen_orc_armor_e|Vasudvardi ork páncélzat
-itm_isen_orc_armor_f|Vasudvardi ork páncélzat
-itm_isen_orc_armor_g|Vasudvardi ork páncélzat
+itm_free_isen_orc_armor_a|Vasudvardi ork páncélzat
+itm_isen_orc_light_a|Vasudvardi ork páncélzat
+itm_isen_orc_light_b|Vasudvardi ork páncélzat
+itm_isen_orc_pad_a|Vasudvardi ork páncélzat
+itm_isen_orc_pad_b|Vasudvardi ork páncélzat
+itm_isen_orc_mail_a|Vasudvardi ork páncélzat
+itm_isen_orc_mail_b|Vasudvardi ork páncélzat
 itm_isen_uruk_light_a|Uruk-hai könnyű hámpáncél
 ; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
 ; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
@@ -313,14 +313,14 @@ itm_uruk_greaves|Uruk lábszárvédő
 itm_uruk_chain_greaves|Uruk láncos lábszárvédő
 itm_uruk_ragwrap|Uruk kapcarongy
 itm_isen_orc_helm_a|Vas-folyami ork sisak
-itm_isen_orc_helm_b|Vas-folyami ork sisak
-itm_isen_orc_helm_c|Vas-folyami ork sisak
+itm_free_isen_orc_helm_b|Vas-folyami ork sisak
+itm_free_isen_orc_helm_c|Vas-folyami ork sisak
 itm_isen_uruk_helm_a|Uruk-hai sisak
-itm_isen_uruk_helm_b|Uruk-hai sisak
-itm_isen_uruk_helm_c|Uruk-hai sisak
+itm_free_isen_uruk_helm_a|Uruk-hai sisak
+itm_free_isen_uruk_helm_c|Uruk-hai sisak
 itm_isen_uruk_helm_d|Uruk-hai kapitányi sisak
 itm_isen_uruk_helm_e|Uruk-hai nyomkövetői sisak
-itm_isen_uruk_helm_f|Uruk-hai nyomkövetői sisak
+itm_free_isen_uruk_helm_f|Uruk-hai nyomkövetői sisak
 itm_uruk_pike_b|Mordori pika
 itm_uruk_falchion_a|Uruk falchion
 ; itm_uruk_falchion_b|Orc Great Scimitar

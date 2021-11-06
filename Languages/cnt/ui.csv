@@ -1,101 +1,101 @@
-ui_at_learning_limit|(達 到 此 種 族 的 學 習 限 度 )
-ui_not_enough_skill_points_to_learn|(沒 有 足 夠 的 技 能 點 來 學 習 )
-ui_not_enough_attributetype_to_learn_this_skill|(沒 有 足 夠 的 %s來 學 習 這 個 技 能 )
-ui_explanation_agility|敏 捷 ： 每 一 點 增 加 5 點 武 器 熟 練 度 ， 並 且 提 高 武 器 速 度 0.5%。 下 列 技 能 不 能 超 過 敏 捷 的 1/3： 盾 防 ， 跑 動 ， 武 器 掌 握 ， 騎 術 ， 騎 射 ， 掠 奪 。 
-ui_retreated_battle|已 經 圍 住 %s 。 
-ui_riding_skill_not_adequate_to_mount|(騎 術 太 低 )
-ui_camp|行 動 
-ui_tutorial_inventory|在 TLD 中， 你 需 要 資 源 點 來 獲 得 裝 備 。 資 源 點 是 用 來 衡 量 一 個 陣 營 給 你 補 貼 的 意 願， 以 及 你 能 使 用 多 少 的 陣 營 資 源 。 
-ui_you_dont_have_value|沒 有 ： %s
-ui_merchant_cant_afford_value|%s： 你 給 我 們 多 於 我 們 需 要 的 ！ 也 許 你 可 以 保 留 更 多 的 東 西 。 (你 給 貨 物 %s， 我 們 只 能 用 %s)。 
-ui_merchant_pay_whatever|好 吧 ， 你 有 多 少 就 付 多 少 。 
-ui_horse|騎 乘 
-ui_reclaim_your_sold_goods|給 予 物 品 前 ， 先 收 回 原 先 的 物 品 ！ 
-ui_return_your_bought_goods|給 予 物 品 前 ， 先 退 回 拿 走 的 物 品 ！ 
-ui_return_price|退 回 價 格 ： +%d資 源 點 
-ui_sell_price|出 售 價 格 ： +%d資 源 點 
-ui_reclaim_price|收 回 價 格 ： -%d資 源 點 
-ui_buying_price|購 買 價 格 ： -%d資 源 點 
-ui_notification_riding_skill_not_enough|你 的 騎 術 太 低 ， 不 能 騎 這 個 。 
-ui_notification_payment_value|消 耗 %s
-ui_notification_payment_receive_value|獲 得 %s
-ui_weekly_cost_value|每 週 消 耗 ： %s
-ui_sell|給 予 
-ui_hire|招 募 
-ui_notification_cant_hire|(沒 有 足 夠 的 資 源 點 去 招 募 )
-ui_joining_cost_weekly_wage|招 募 價 格 ： %d資 源 點 -- 每 週 工 資 ： %d資 源 點 
-ui_weekly_wage|每 週 工 資 ： %d資 源 點 
-ui_price|價 格 ： %d資 源 點 
-ui_cant_reload_this_weapon_on_horseback|騎 乘 時 無 法 裝 填 此 武 器 。 
-ui_delivered_number_damage_to_horse|給 對 方 的 坐 騎 造 成 %d點 傷 害 。 
-ui_horse_charged_for_number_damage|坐 騎 衝 撞 造 成 %d點 傷 害 。 
-ui_horse_received_number_damage|坐 騎 受 到 %d點 傷 害 。 
-ui_horse_fell_dead|坐 騎 死 了 … 
-ui_horse_crippled|坐 騎 瘸 了 … 
-ui_you_got_value|獲 得  %s。
-ui_has_deserted_the_party|從 部 隊 中 叛 逃 。 
-ui_have_deserted_the_party|從 部 隊 中 叛 逃 。 
-ui_loading_textures|Chinese translation: Please follow the installation guide on the TLD Steam Workshop page!
-ui_order_hold_fire_toggle|不 要 射 擊 ／ 任 意 射 擊 (切 換 )
-ui_order_dismount_toggle|命 令 下 馬 ／ 上 馬 (切 換 )
-ui_mount_horses_e_|%s， 上 馬 ！ 
-ui_hold_fire_e_|%s， 不 要 射 擊 ！ 
-ui_fire_at_will_e_|%s， 任 意 射 擊 ！ 
-ui_recent_messages|最 近 消 息 
-ui_value_denars|%d資 源 點 
-ui_cannot_be_used_on_horseback|騎 乘 時 無 法 使 用 。 
-ui_upgrade_to_value|升 級 到 %s
-ui_notification_cant_upgrade|(給 予 士 兵 時 無 法 升 級 )
-ui_lance_control|騎 槍 控 制:
-ui_manual_easy|手 動 (簡 單)
-ui_manual_hard|手 動 (困 難)
-; ui_campaign_ai|Campaign Difficulty (Default: Average):
-ui_crouch|蹲 下
+ui_at_learning_limit|(達到此種族的學習限度)
+ui_not_enough_skill_points_to_learn|(沒有足夠的技能點來學習)
+ui_not_enough_attributetype_to_learn_this_skill|(沒有足夠的%s來學習這個技能)
+ui_explanation_agility|敏捷：每一點增加5點武器熟練度，並且提高武器速度0.5%。下列技能不能超過敏捷的1/3：盾防，跑動，武器掌握，騎術，騎射，掠奪。
+ui_retreated_battle|已經擊潰%s。
+ui_riding_skill_not_adequate_to_mount|(騎術太低)
+ui_camp|行動
+ui_tutorial_inventory|在TLD中，你需要資源點來獲得裝備。資源點是用來衡量一個陣營給你補貼的意願，以及你能使用多少的陣營資源。
+ui_you_dont_have_value|沒有：%s
+ui_merchant_cant_afford_value|%s：你給我們多於我們需要的！也許你可以保留更多的東西。(你給貨物%s，我們只需要%s)。
+ui_merchant_pay_whatever|不，我不需要那些，你們留著吧。
+ui_horse|騎乘
+ui_reclaim_your_sold_goods|給予物品前，先收回原先的物品！
+ui_return_your_bought_goods|給予物品前，先退回拿走的物品！
+ui_return_price|退回： +%d資源點
+ui_sell_price|給予：+%d資源點
+ui_reclaim_price|購回 ： -%d資源點
+ui_buying_price|購買：-%d資源點
+ui_notification_riding_skill_not_enough|你的騎術太低，不能騎這個。
+ui_notification_payment_value|消耗%s
+ui_notification_payment_receive_value|獲得%s
+ui_weekly_cost_value|工資：%s
+ui_sell|給予
+ui_hire|招募
+ui_notification_cant_hire|(沒有足夠的資源點去招募)
+ui_joining_cost_weekly_wage|招募：%d資源點-- 工資： %d資源點
+ui_weekly_wage|工資：%d資源點
+ui_price|價格：%d資源點
+ui_cant_reload_this_weapon_on_horseback|騎乘時無法裝填此武器。
+ui_delivered_number_damage_to_horse|給對方的坐騎造成%d點傷害。
+ui_horse_charged_for_number_damage|坐騎衝撞造成%d點傷害。
+ui_horse_received_number_damage|坐騎受到%d點傷害。
+ui_horse_fell_dead|坐騎殞落…
+ui_horse_crippled|坐騎瘸了…
+ui_you_got_value|獲得 %s。
+ui_has_deserted_the_party|離開了隊伍。
+ui_have_deserted_the_party|離開了隊伍。
+ui_loading_textures|材質載入中(請稍後)...
+ui_order_hold_fire_toggle|停止射擊／任意射擊(切換)
+ui_order_dismount_toggle|命令下馬／上馬(切換)
+ui_mount_horses_e_|%s，上馬！
+ui_hold_fire_e_|%s，停止射擊！
+ui_fire_at_will_e_|%s，任意射擊！
+ui_recent_messages|最近消息
+ui_value_denars|%d資源點
+ui_cannot_be_used_on_horseback|騎乘時無法使用。
+ui_upgrade_to_value|升級到%s
+ui_notification_cant_upgrade|(給予士兵時無法升級)
+ui_lance_control|騎槍控制:
+ui_manual_easy|手動(簡單)
+ui_manual_hard|手動(困難)
+ui_campaign_ai|戰役難度(預設：普通)：
+ui_crouch|蹲下
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-ui_are_you_sure_you_want_to_import_the_character|你 確 定 要 導 入 角 色 嗎？
-ui_explanation_strength|力 量：每 一 點 使 你 的 生 命 上 限 +1。以 下 技 能 不 可 超 過 力 量 的 三 分 之 一：鐵 骨，強 擊，強 擲，強 弓。
-ui_explanation_intelligence|智 力：每 一 點 給 予 你 額 外 一 點 技 能 點，並 在 某 些 事 件 下 少 量 提 升 所 得 經 驗 值。以 下 技 能 不 可 超 過 智 力 的 三 分 之 一：教 練，跟 蹤，戰 術，嚮 導，偵 察，物 品 管 理，療 傷，手 術，急 救。
-ui_explanation_charisma|魅 力：每 一 點 使 你 的 隊 伍 上 限 +1。以 下 技 能 不 可 超 過 魅 力 的 三 分 之 一：俘 虜 管 理，綠 野 仙 蹤，統 御，交 易。
-ui_delivered_number_damage|造 成 %d 點 傷 害
-ui_mission_losses_killed|殺 了：
-ui_party_losses|%s：%d 負 傷 --- %d 殺 死 了 %d
-ui_following|跟 隨
-ui_accompanying|隨 同
-ui_dumping_value_items|%d物 品 會 永 久 丟 失，確 定 嗎？
-ui_dumping_value_item|一 樣 物 品 會 永 久 丟 失，確 定 嗎？
-ui_notification_requirements_not_met|你 不 俱 備 此 武 器 所 需 的 技 能 或 屬 性
+ui_are_you_sure_you_want_to_import_the_character|你確定要導入角色嗎？
+ui_explanation_strength|力量：每一點使你的生命上限 +1。以下技能不可超過力量的1/3：鐵骨，強擊，強擲，強弓。
+ui_explanation_intelligence|智力：每一點給予你額外一點技能點，並在某些事件下少量提升所得經驗值。以下技能不可超過智力的1/3：教練，跟蹤，戰術，嚮導，偵察，物品管理，療傷，手術，急救。
+ui_explanation_charisma|魅力：每一點使你的隊伍上限 +1。以下技能不可超過魅力的1/3：俘虜管理，綠野仙蹤，統御，交易。
+ui_delivered_number_damage|造成%d點傷害
+ui_mission_losses_killed|殺了：
+ui_party_losses|%s：%d負傷--- %d死亡%d。
+ui_following|跟隨
+ui_accompanying|隨同
+ui_dumping_value_items|%d樣物品會永久丟失，確定嗎？
+ui_dumping_value_item|一樣物品會永久丟失，確定嗎？
+ui_notification_requirements_not_met|你不俱備此武器所需的技能或屬性
 ui_disband|遣散
-ui_you_hit_a_friendly_troop|你 擊 中 友 方 部 隊！
-ui_you_are_not_carrying_any_arrows|你 沒 有 攜 帶 任 何 箭
-ui_delivered_number_damage_to_horse|給 對 方 的 坐 騎 造 成 %d點 傷 害 。 
-ui_received_number_damage|受 到 %d 點 傷 害 。 
-ui_you_have_improved_your_proficiency_in_value_to_number|你 提 高 了 熟 練 程 度 由 %s 到 %d
-ui_your_proficiency_in_value_has_improved_by_number_to_number|你 的 熟 練 程 度 由 %s 經 由 ＋%d 提 升 到 %d
-ui_value_killed_by_value|%s 已 被 %s 殺 死
-ui_value_knocked_unconscious_by_value|%s 被 %s 擊 昏 了
-ui_you_got_number_experience|你 獲 得 %d 經 驗 值
-ui_you_have_advanced_to_level_number|你 已 升 級 到 %d 等
-ui_you_got_value|獲 得  %s。
-ui_quest_succeeded_value|任 務 達 成 ：%s
-ui_number_of_companions_exceeds_leadership_limit|部隊人數超過你的統御技能
-ui_number_of_prisoners_exceeds_prisoner_management_limit|俘虜人數超過你的俘虜管理技能
-ui_shared_number_experience_within_party|與 隊 伍 分 享 %d 經 驗 值。
-ui_your_relations_with_value_has_improved_from_number_to_number|你與%s關係由%d提升到%d
-ui_your_relations_with_value_has_deteriorated_from_number_to_number|你與%s關係由%d下降到%d
-ui_you_lost_value|你損失了%s
+ui_you_hit_a_friendly_troop|你擊中友方部隊！
+ui_you_are_not_carrying_any_arrows|你沒有攜帶任何箭。
+ui_delivered_number_damage_to_horse|給對方的坐騎造成%d點傷害。
+ui_received_number_damage|受到%d點傷害。
+ui_you_have_improved_your_proficiency_in_value_to_number|你提高了%s的熟練程度由到%d
+ui_your_proficiency_in_value_has_improved_by_number_to_number|你%s的熟練程度經由＋%d提升到%d
+ui_value_killed_by_value|%s已被%s殺死。
+ui_value_knocked_unconscious_by_value|%s被%s擊昏了。
+ui_you_got_number_experience|你獲得%d經驗值。
+ui_you_have_advanced_to_level_number|你已升級到%d等。
+ui_you_got_value|獲得 %s。
+ui_quest_succeeded_value|任務達成：%s
+ui_number_of_companions_exceeds_leadership_limit|部隊人數超過你的統御技能。
+ui_number_of_prisoners_exceeds_prisoner_management_limit|俘虜人數超過你的俘虜管理技能。
+ui_shared_number_experience_within_party|與隊伍分享%d經驗值。
+ui_your_relations_with_value_has_improved_from_number_to_number|你與%s的關係由%d提升到%d。
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|你與%s的關係由%d下降到%d。
+ui_you_lost_value|你損失了%s。
 ui_change_graphics_settings_explanation|您進行的某些更改將在您進入新區域時生效。
-ui_game_log_window|遊戲日誌
+ui_game_log_window|遊戲日誌。
 ui_blunt_short|b
 ui_tracks|跟蹤
 ui_order_button_hold_fire|停火
 ui_order_button_fire_at_will|自由射擊
 ui_order_button_fire_orders|射擊命令
-ui_need_to_learn_prisoner_management|你需要學習俘虜管理技能來增加俘虜
-ui_game_log_window|遊戲日誌
+ui_need_to_learn_prisoner_management|你需要學習俘虜管理技能來增加俘虜。
+ui_game_log_window|遊戲日誌。
 ui_unbalanced|失衡
-ui_can_crush_through_blocks|可 衝 破 路 障
+ui_can_crush_through_blocks|可突破障礙
 
 ui_order_1|選取指令1
 ui_order_2|選取指令2
@@ -103,52 +103,52 @@ ui_order_3|選取指令3
 ui_order_4|選取指令4
 ui_order_5|選取指令5
 ui_order_6|選取指令6
-ui_order_button_hold_this_position|保持這隊形
+ui_order_button_hold_this_position|堅守此地
 ui_order_button_follow_me|跟隨我
-ui_order_button_charge|衝 鋒
-ui_order_button_stand_ground|停在原地
+ui_order_button_charge|衝鋒
+ui_order_button_stand_ground|原地堅守
 ui_order_button_retreat|撤退
 ui_order_button_advance|前進十步
 ui_order_button_fall_back|後退十步
-ui_order_button_spread_out|分散
-ui_order_button_stand_closer|集中一起
-ui_order_button_mount_horses|騎 乘 
-ui_order_button_dismount|下 馬
+ui_order_button_spread_out|散開
+ui_order_button_stand_closer|靠攏
+ui_order_button_mount_horses|騎乘
+ui_order_button_dismount|下馬
 ui_order_button_hold_fire|停火
 ui_order_button_fire_at_will|自由射擊
-ui_order_button_use_blunt_weapons|只使用鈍擊武器
+ui_order_button_use_blunt_weapons|只使用鈍器
 ui_order_button_use_any_weapon|隨意使用武器
 ui_order_button_movement_orders|移動命令
 ui_order_button_formation_orders|陣型命令
 ui_order_button_fire_orders|射擊命令
 ui_follow_me_e_|%s,跟著我!
 ui_charge_e_|%s,衝鋒!!!
-ui_stand_ground_e_|%s,停在原地!
-ui_retreat_e_|%s,撤 退 !
-ui_mount_horses_e_|%s， 上 馬 ！ 
+ui_stand_ground_e_|%s,原地堅守!
+ui_retreat_e_|%s,撤退 !
+ui_mount_horses_e_|%s，上馬！
 ui_dismount_e_|%s,下馬!
 ui_advance_e_|%s,前進十步!
 ui_fall_back_e_|%s,後退十步!
-ui_stand_closer_e_|%s,集中一起!
+ui_stand_closer_e_|%s,靠攏!
 ui_spread_out_e_|%s,散開!
 ui_use_blunt_weapons_e_|%s,只使用鈍擊武器!
 ui_use_any_weapon_e_|%s,隨意使用武器!
-ui_hold_fire_e_|%s， 不 要 射 擊 ！ 
-ui_fire_at_will_e_|%s， 任 意 射 擊 ！ 
+ui_hold_fire_e_|%s，停止射擊！
+ui_fire_at_will_e_|%s，任意射擊！
 ui_hold_this_position_e_|%s,保持這隊形!
 ui_infantry|步兵
-ui_archers|弓 兵
+ui_archers|弓兵
 ui_cavalry|騎兵
 ui_companions|同伴
-ui_everyone_hear_me|全部人，聽我講！
-ui_everyone|所 有 人
+ui_everyone_hear_me|所有人，聽令！
+ui_everyone|所有人
 ui_everyone_around_me|附近的士兵
-ui_str_hear_me|%s，聽我講！
+ui_str_hear_me|%s，聽令！
 
 ui_return|返回
-ui_factions| 陣 營 
-ui_troop_upgrades|兵 種 升 級
+ui_factions|陣營
+ui_troop_upgrades|兵種升級
 ui_hdr_mode|HDR模式：
-ui_autoexpore|自 動 曝 光 ( 如 HDR 已 開 啓，建 議 設 定 為 開 啓 )
-ui_saving_policy_realistic|直面人生！不存檔就不能退出【不推薦】
-ui_saving_policy_nonrealistic|允許我不存檔就退出。【推薦，建議多備份存檔】
+ui_autoexpore|自動曝光(如HDR已開啓，建議設定為開啓)
+ui_saving_policy_realistic|不存檔就不能退出！(不推薦)
+ui_saving_policy_nonrealistic|允許不存檔就退出。(推薦，可多備份存檔)

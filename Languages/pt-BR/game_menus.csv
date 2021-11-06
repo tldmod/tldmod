@@ -166,9 +166,9 @@ mno_strat_tweaks_back|Voltar para o menu de trapaças.
 menu_camp_action|^^^^^^^^^ Qual objeto?
 mno_camp_drink_water|Beber a Entágua!
 mno_camp_drink_orc_brew|Passa a pinga Orc!
-; mno_camp_drink_miruvor|Pass around the Miruvor!
-; mno_camp_use_athelas|Use Athelas for wound treatment.
-; mno_camp_use_drums|Beat the Drums of the Deep.
+mno_camp_drink_miruvor|Passe ao redor de Miruvor!
+mno_camp_use_athelas|Use Athelas para o tratamento de feridas.
+mno_camp_use_drums|Batam os tambores das profundezas.
 mno_camp_action_4|Voltar.
 menu_assasins_attack_player_won|Você derrotou com sucesso os assassinos de {s2}, mandados por {s3}.
 menu_assasins_attack_player_retreat|Você escapou com vida!

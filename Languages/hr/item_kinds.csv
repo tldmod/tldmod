@@ -297,13 +297,13 @@ itm_corsair_bow|Korsarski Luk
 ; itm_orc_tribal_c|Untreated Skin
 ; itm_evil_gauntlets_a|Gauntlets
 ; itm_evil_gauntlets_b|Gauntlets
-; itm_isen_orc_armor_a|Isengard Orc Armor
-; itm_isen_orc_armor_b|Isengard Orc Armor
-; itm_isen_orc_armor_c|Isengard Orc Armor
-; itm_isen_orc_armor_d|Isengard Orc Armor
-; itm_isen_orc_armor_e|Isengard Orc Armor
-; itm_isen_orc_armor_f|Isengard Orc Armor
-; itm_isen_orc_armor_g|Isengard Orc Armor
+; itm_free_isen_orc_armor_a|Isengard Orc Armor
+; itm_isen_orc_light_a|Isengard Orc Armor
+; itm_isen_orc_light_b|Isengard Orc Armor
+; itm_isen_orc_pad_a|Isengard Orc Armor
+; itm_isen_orc_pad_b|Isengard Orc Armor
+; itm_isen_orc_mail_a|Isengard Orc Armor
+; itm_isen_orc_mail_b|Isengard Orc Armor
 ; itm_isen_uruk_light_a|Uruk-hai Light Harness
 ; itm_isen_uruk_light_b|Uruk-hai Leather Armor
 ; itm_isen_uruk_light_c|Uruk-hai Leather Armor
@@ -319,14 +319,14 @@ itm_corsair_bow|Korsarski Luk
 ; itm_uruk_chain_greaves|Uruk Chain Greaves
 ; itm_uruk_ragwrap|Uruk Ragwrap
 ; itm_isen_orc_helm_a|Isen Orc Helm
-; itm_isen_orc_helm_b|Isen Orc Helm
-; itm_isen_orc_helm_c|Isen Orc Helm
+; itm_free_isen_orc_helm_b|Isen Orc Helm
+; itm_free_isen_orc_helm_c|Isen Orc Helm
 ; itm_isen_uruk_helm_a|Uruk-Hai Helm
-; itm_isen_uruk_helm_b|Uruk-Hai Helm
-; itm_isen_uruk_helm_c|Uruk-Hai Helm
+; itm_free_isen_uruk_helm_a|Uruk-Hai Helm
+; itm_free_isen_uruk_helm_c|Uruk-Hai Helm
 ; itm_isen_uruk_helm_d|Uruk-Hai Captain Helm
 ; itm_isen_uruk_helm_e|Uruk-Hai Tracker Helm
-; itm_isen_uruk_helm_f|Uruk-Hai Tracker Helm
+; itm_free_isen_uruk_helm_f|Uruk-Hai Tracker Helm
 ; itm_uruk_pike_a|Uruk Pike
 ; itm_uruk_pike_b|Mordor Pike
 ; itm_uruk_falchion_a|Uruk Falchion

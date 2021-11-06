@@ -291,13 +291,13 @@ itm_orc_tribal_b|İşlenmemiş Deri
 itm_orc_tribal_c|İşlenmemiş Deri
 itm_evil_gauntlets_a|Siyah Eldiven
 itm_evil_gauntlets_b|Siyah Zırhlı Eldiven
-itm_isen_orc_armor_a|Isengard Ork Zırhı
-itm_isen_orc_armor_b|Isengard Ork Zırhı
-itm_isen_orc_armor_c|Isengard Ork Zırhı 
-itm_isen_orc_armor_d|Isengard Ork Zırhı 
-itm_isen_orc_armor_e|Isengard Ork Zırhı 
-itm_isen_orc_armor_f|Isengard Ork Zırhı
-itm_isen_orc_armor_g|Isengard Ork Zırhı 
+itm_free_isen_orc_armor_a|Isengard Ork Zırhı
+itm_isen_orc_light_a|Isengard Ork Zırhı
+itm_isen_orc_light_b|Isengard Ork Zırhı 
+itm_isen_orc_pad_a|Isengard Ork Zırhı 
+itm_isen_orc_pad_b|Isengard Ork Zırhı 
+itm_isen_orc_mail_a|Isengard Ork Zırhı
+itm_isen_orc_mail_b|Isengard Ork Zırhı 
 itm_isen_uruk_light_a|Uruk-Hai Hafif Üniforma
 itm_isen_uruk_light_b|Uruk-hai Dövüş Zırhı
 itm_isen_uruk_light_c|Uruk-hai Vahşi Zırhı
@@ -313,14 +313,14 @@ itm_uruk_greaves|Uruk Baldır Zırhı
 itm_uruk_chain_greaves|Uruk Zincir Baldır Zırhı
 itm_uruk_ragwrap|Uruk Bandana
 itm_isen_orc_helm_a|Isen Ork Migferi
-itm_isen_orc_helm_b|Isen Ork Migferi
-itm_isen_orc_helm_c|Isen Ork Migferi 
+itm_free_isen_orc_helm_b|Isen Ork Migferi
+itm_free_isen_orc_helm_c|Isen Ork Migferi 
 itm_isen_uruk_helm_a|Uruk-Hai Migferi
-itm_isen_uruk_helm_b|Uruk-Hai Migferi
-itm_isen_uruk_helm_c|Uruk-Hai Migferi 
+itm_free_isen_uruk_helm_a|Uruk-Hai Migferi
+itm_free_isen_uruk_helm_c|Uruk-Hai Migferi 
 itm_isen_uruk_helm_d|Uruk-Hai Yüzbaşı Migferi
 itm_isen_uruk_helm_e|Uruk-Hai Yüzbaşı Migferi
-itm_isen_uruk_helm_f|Uruk-Hai İzci Migferi
+itm_free_isen_uruk_helm_f|Uruk-Hai İzci Migferi
 itm_uruk_pike_b|Mordor Kargısı
 itm_uruk_falchion_a|Uruk Orak Kılıcı
 itm_uruk_falchion_b|Büyük Ork Palası

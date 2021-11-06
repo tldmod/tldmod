@@ -144,7 +144,7 @@ itm_arnor_greaves|Perneiras Arnorianas
 itm_arnor_shield_a|Escudo de Arnor
 itm_arnor_shield_c|Escudo de Cavalaria de Arnor
 itm_arnor_sword_a|Espada Bastarda de Arnor
-; itm_arnor_sword_c|Arnor War Sword
+itm_arnor_sword_c|Espada de Guerra de Arnor
 itm_arnor_sword_f|Espada Curta de Arnor
 itm_riv_helm_a|Touca de Valfenda
 itm_riv_helm_b|Elmo de Arqueiro de Valfenda
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Espadim de Linhir
 itm_pelargir_eket|Espadim de Pelargir
 itm_pelargir_sword|Espada de Pelargir
 itm_gondor_ranger_sword|Espada de Guardião de Gondor
-; itm_gondor_2h_sword|Gondor War Sword
+itm_gondor_2h_sword|Espada de Guerra de Gondor
 itm_gondor_citadel_sword|Espada da Cidadela de Gondor
 itm_gondor_cav_sword|Espada da Cavalaria de Gondor
 itm_gondor_spear|Lança de Gondor
 itm_gondor_tower_spear|Lança da Torre de Gondor
 itm_gondor_lance|Lança de Montaria de Gondor
-; itm_loss_axe|Gondor Fighting Axe
-; itm_loss_war_axe|Gondor War Axe
+itm_loss_axe|Machado de Batalha de Gondor
+itm_loss_war_axe|Machado de Guerra de Gondor
 itm_lorien_sword_a|Espada de Lorien
 itm_lorien_sword_b|Espada Curta de Lorien
 itm_lorien_sword_c|Espada de Guerra de Lorien
@@ -291,17 +291,17 @@ itm_orc_tribal_b|Pele Não Tratada
 itm_orc_tribal_c|Pele Não Tratada
 itm_evil_gauntlets_a|Luvas Escuras
 itm_evil_gauntlets_b|Manoplas Escuras
-itm_isen_orc_armor_a|Armadura Orc de Isengard
-itm_isen_orc_armor_b|Armadura Orc de Isengard 
-itm_isen_orc_armor_c|Armadura Orc de Isengard 
-itm_isen_orc_armor_d|Armadura Orc de Isengard 
-itm_isen_orc_armor_e|Armadura Orc de Isengard 
-itm_isen_orc_armor_f|Armadura Orc de Isengard 
-itm_isen_orc_armor_g|Armadura Orc de Isengard 
+itm_free_isen_orc_armor_a|Armadura Orc de Isengard
+itm_isen_orc_light_a|Armadura Orc de Isengard 
+itm_isen_orc_light_b|Armadura Orc de Isengard 
+itm_isen_orc_pad_a|Armadura Orc de Isengard 
+itm_isen_orc_pad_b|Armadura Orc de Isengard 
+itm_isen_orc_mail_a|Armadura Orc de Isengard 
+itm_isen_orc_mail_b|Armadura Orc de Isengard 
 itm_isen_uruk_light_a|Armadura Uruk-Hai Leve
-; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
-; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
-; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+itm_isen_uruk_light_b|Armadura de Combate Uruk-hai
+itm_isen_uruk_light_c|Armadura Berserker Uruk-hai
+itm_isen_uruk_med_a|Armadura Leve Uruk-hai
 ; itm_isen_uruk_med_b|Uruk-hai Mail
 ; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
 ; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
@@ -313,14 +313,14 @@ itm_uruk_greaves|Perneiras Uruk
 itm_uruk_chain_greaves|Perneiras Uruk de Corrente
 itm_uruk_ragwrap|Touca Uruk
 itm_isen_orc_helm_a|Elmo Orc de Isengard
-itm_isen_orc_helm_b|Elmo Orc de Isengard
-itm_isen_orc_helm_c|Elmo Orc de Isengard
+itm_free_isen_orc_helm_b|Elmo Orc de Isengard
+itm_free_isen_orc_helm_c|Elmo Orc de Isengard
 itm_isen_uruk_helm_a|Elmo Uruk-Hai
-itm_isen_uruk_helm_b|Elmo Uruk-Hai
-itm_isen_uruk_helm_c|Elmo Uruk-Hai
+itm_free_isen_uruk_helm_a|Elmo Uruk-Hai
+itm_free_isen_uruk_helm_c|Elmo Uruk-Hai
 itm_isen_uruk_helm_d|Elmo Uruk-Hai Capitão
 itm_isen_uruk_helm_e|Elmo Uruk-Hai Rastreador
-itm_isen_uruk_helm_f|Elmo Uruk-Hai Rastreador
+itm_free_isen_uruk_helm_f|Elmo Uruk-Hai Rastreador
 itm_uruk_pike_b|Pique de Mordor
 itm_uruk_falchion_a|Cimitarra Uruk
 itm_uruk_falchion_b|Grande Cimitarra Orc

@@ -291,13 +291,13 @@ itm_orc_tribal_b|Nelečena Koža
 itm_orc_tribal_c|Nelečena Koža
 ; itm_evil_gauntlets_a|Black Gloves
 ; itm_evil_gauntlets_b|Black Gauntlets
-itm_isen_orc_armor_a|Izengardski Oklop Orka
-itm_isen_orc_armor_b|Izengardski Oklop Orka
-itm_isen_orc_armor_c|Izengardski Oklop Orka
-itm_isen_orc_armor_d|Izengardski Oklop Orka
-itm_isen_orc_armor_e|Izengardski Oklop Orka
-itm_isen_orc_armor_f|Izengardski Oklop Orka
-itm_isen_orc_armor_g|Izengardski Oklop Orka
+itm_free_isen_orc_armor_a|Izengardski Oklop Orka
+itm_isen_orc_light_a|Izengardski Oklop Orka
+itm_isen_orc_light_b|Izengardski Oklop Orka
+itm_isen_orc_pad_a|Izengardski Oklop Orka
+itm_isen_orc_pad_b|Izengardski Oklop Orka
+itm_isen_orc_mail_a|Izengardski Oklop Orka
+itm_isen_orc_mail_b|Izengardski Oklop Orka
 itm_isen_uruk_light_a|Uruk-Hai Laki Pojas
 ; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
 ; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
@@ -313,14 +313,14 @@ itm_uruk_greaves|Urukske Oklopne Rukavice
 itm_uruk_chain_greaves|Urukske Verizne Rukavice
 itm_uruk_ragwrap|Urukški Dronjak
 itm_isen_orc_helm_a|Kaciga Orka iz Izena
-itm_isen_orc_helm_b|Kaciga Orka iz Izena
-itm_isen_orc_helm_c|Kaciga Orka iz Izena
+itm_free_isen_orc_helm_b|Kaciga Orka iz Izena
+itm_free_isen_orc_helm_c|Kaciga Orka iz Izena
 itm_isen_uruk_helm_a|Uruk-Hai Kaciga
-itm_isen_uruk_helm_b|Uruk-Hai Kaciga
-itm_isen_uruk_helm_c|Uruk-Hai Kaciga
+itm_free_isen_uruk_helm_a|Uruk-Hai Kaciga
+itm_free_isen_uruk_helm_c|Uruk-Hai Kaciga
 itm_isen_uruk_helm_d|Kaciga Uruk-Hai Kapetana
 itm_isen_uruk_helm_e|Kaciga Uruk-Hai Tragača
-itm_isen_uruk_helm_f|Kaciga Uruk-Hai Tragača
+itm_free_isen_uruk_helm_f|Kaciga Uruk-Hai Tragača
 ; itm_uruk_pike_b|Mordor Pike
 itm_uruk_falchion_a|Urukška Sablja
 ; itm_uruk_falchion_b|Orc Great Scimitar

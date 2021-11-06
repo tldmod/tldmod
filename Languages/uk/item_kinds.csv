@@ -291,13 +291,13 @@ itm_orc_tribal_b|Необроблена шкіра
 itm_orc_tribal_c|Необроблена шкіра
 itm_evil_gauntlets_a|Чорні рукавички
 itm_evil_gauntlets_b|Чорні панцерні рукавички
-itm_isen_orc_armor_a|Ізенґардська орча броня
-itm_isen_orc_armor_b|Ізенґардська орча броня
-itm_isen_orc_armor_c|Ізенґардська орча броня
-itm_isen_orc_armor_d|Ізенґардська орча броня
-itm_isen_orc_armor_e|Ізенґардська орча броня
-itm_isen_orc_armor_f|Ізенґардська орча броня
-itm_isen_orc_armor_g|Ізенґардська орча броня
+itm_free_isen_orc_armor_a|Ізенґардська орча броня
+itm_isen_orc_light_a|Ізенґардська орча броня
+itm_isen_orc_light_b|Ізенґардська орча броня
+itm_isen_orc_pad_a|Ізенґардська орча броня
+itm_isen_orc_pad_b|Ізенґардська орча броня
+itm_isen_orc_mail_a|Ізенґардська орча броня
+itm_isen_orc_mail_b|Ізенґардська орча броня
 itm_isen_uruk_light_a|Урук-хайська легка броня
 ; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
 ; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
@@ -313,14 +313,14 @@ itm_uruk_greaves|Урукські поножі
 itm_uruk_chain_greaves|Урукські кольчужні поножі
 itm_uruk_ragwrap|Урукські рвані обмотки
 itm_isen_orc_helm_a|Ізенґардський орочий шолом
-itm_isen_orc_helm_b|Ізенґардський орочий шолом
-itm_isen_orc_helm_c|Ізенґардський орочий шолом
+itm_free_isen_orc_helm_b|Ізенґардський орочий шолом
+itm_free_isen_orc_helm_c|Ізенґардський орочий шолом
 itm_isen_uruk_helm_a|Урук-хайський шолом
-itm_isen_uruk_helm_b|Урук-хайський шолом
-itm_isen_uruk_helm_c|Урук-хайський шолом
+itm_free_isen_uruk_helm_a|Урук-хайський шолом
+itm_free_isen_uruk_helm_c|Урук-хайський шолом
 itm_isen_uruk_helm_d|Урук-хайський шолом полководця
 itm_isen_uruk_helm_e|Урук-хайський шолом слідопита
-itm_isen_uruk_helm_f|Урук-хайський шолом слідопита
+itm_free_isen_uruk_helm_f|Урук-хайський шолом слідопита
 itm_uruk_pike_b|Мордорська піка
 itm_uruk_falchion_a|Урукський фальшіон
 itm_uruk_falchion_b|Великий Оркський Ятаган

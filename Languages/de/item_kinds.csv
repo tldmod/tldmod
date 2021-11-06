@@ -291,13 +291,13 @@ itm_orc_tribal_b|Unbehandelte Haut
 itm_orc_tribal_c|Unbehandelte Haut
 itm_evil_gauntlets_a|Schwarze Handschuhe
 itm_evil_gauntlets_b|Schwarze Panzerhandschuhe
-itm_isen_orc_armor_a|Orkrüstung aus Isengart
-itm_isen_orc_armor_b|Orkrüstung aus Isengart
-itm_isen_orc_armor_c|Orkrüstung aus Isengart
-itm_isen_orc_armor_d|Orkrüstung aus Isengart
-itm_isen_orc_armor_e|Orkrüstung aus Isengart
-itm_isen_orc_armor_f|Orkrüstung aus Isengart
-itm_isen_orc_armor_g|Orkrüstung aus Isengart
+itm_free_isen_orc_armor_a|Orkrüstung aus Isengart
+itm_isen_orc_light_a|Orkrüstung aus Isengart
+itm_isen_orc_light_b|Orkrüstung aus Isengart
+itm_isen_orc_pad_a|Orkrüstung aus Isengart
+itm_isen_orc_pad_b|Orkrüstung aus Isengart
+itm_isen_orc_mail_a|Orkrüstung aus Isengart
+itm_isen_orc_mail_b|Orkrüstung aus Isengart
 itm_isen_uruk_light_a|Leichtes Gurtzeug der Uruk-hai
 itm_isen_uruk_light_b|Kampfmontur der Uruk-hai
 itm_isen_uruk_light_c|Berserkermontur der Uruk-hai
@@ -313,14 +313,14 @@ itm_uruk_greaves|Uruk-Beinschienen
 itm_uruk_chain_greaves|Uruk-Kettenhosen
 itm_uruk_ragwrap|Uruk-Lumpenwickel
 itm_isen_orc_helm_a|Orkhelm aus Isengart
-itm_isen_orc_helm_b|Orkhelm aus Isengart
-itm_isen_orc_helm_c|Orkhelm aus Isengart
+itm_free_isen_orc_helm_b|Orkhelm aus Isengart
+itm_free_isen_orc_helm_c|Orkhelm aus Isengart
 itm_isen_uruk_helm_a|Helm der Uruk-hai
-itm_isen_uruk_helm_b|Helm der Uruk-hai
-itm_isen_uruk_helm_c|Helm der Uruk-hai
+itm_free_isen_uruk_helm_a|Helm der Uruk-hai
+itm_free_isen_uruk_helm_c|Helm der Uruk-hai
 itm_isen_uruk_helm_d|Hauptmannshelm der Uruk-hai
 itm_isen_uruk_helm_e|Späherhelm der Uruk-hai
-itm_isen_uruk_helm_f|Späherhelm der Uruk-hai
+itm_free_isen_uruk_helm_f|Späherhelm der Uruk-hai
 itm_uruk_pike_b|Mordor-Langspeer
 itm_uruk_falchion_a|Uruk-Falchion
 itm_uruk_falchion_b|Großer Ork-Krummsäbel

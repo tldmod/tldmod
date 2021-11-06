@@ -296,7 +296,7 @@ dlga_lord_report_to_army_asked:lord_report_to_army_completed|Ho un esercito di s
 dlga_lord_report_to_army_asked:lord_report_to_army_continue|Non ho un numero sufficiente di truppe ancora. Avrò bisogno di più tempo.
 dlga_lord_report_to_army_completed:close_window|Eccellente. Ti manderò a chiamare quando avrò qualche missione per te. {s3}
 dlga_lord_report_to_army_continue:close_window|Faresti meglio a sbrigarti. Presto muoveremo contro il nemico e avrò bisogno di ogni uomo disponibile.
-dlga_lord_start:lord_mission_told_scout_waypoints|{playername}, mi servono dei volontari per esplorare l'area. Siamo a corto d'informazioni e devo semplicemente avere un quadro migliore della situazione prima di procedere. Voglio che tu vada a {s13}, {s14} e {s15}, facendo poi rapporto su tutto ciò che hai scoperto.
+dlga_lord_start:lord_mission_told_scout_waypoints|{playername}, mi servono dei volontari per esplorare l'area. Siamo a corto d'informazioni e devo semplicemente avere un quadro migliore della situazione prima di procedere. Voglio che tu vada qui: {s13}, {s14} e {s15}, facendo poi rapporto su tutto ciò che hai scoperto.
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepted|Hai trovato il tuo volontario, Signore.
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_rejected|Mi spiace ma devo rifiutare.
 dlga_lord_mission_told_scout_waypoints_accepted:close_window|Bene ! Passa semplicemente vicino a {s13}, {s14} e {s15} e controlla cosa c'è da quelle parti. Prendi nota di tutto ciò che trovi e ritorna da me il prima possibile.

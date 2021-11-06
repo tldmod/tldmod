@@ -291,13 +291,13 @@ itm_orc_tribal_b|Neošetřená kůže
 itm_orc_tribal_c|Neošetřená kůže
 itm_evil_gauntlets_a|Černé rukavice
 itm_evil_gauntlets_b|Černé rukavice
-itm_isen_orc_armor_a|Skřetí zbroj Železného pasu
-itm_isen_orc_armor_b|Skřetí zbroj Železného pasu
-itm_isen_orc_armor_c|Skřetí zbroj Železného pasu
-itm_isen_orc_armor_d|Skřetí zbroj Železného pasu
-itm_isen_orc_armor_e|Skřetí zbroj Železného pasu
-itm_isen_orc_armor_f|Skřetí zbroj Železného pasu
-itm_isen_orc_armor_g|Skřetí zbroj Železného pasu
+itm_free_isen_orc_armor_a|Skřetí zbroj Železného pasu
+itm_isen_orc_light_a|Skřetí zbroj Železného pasu
+itm_isen_orc_light_b|Skřetí zbroj Železného pasu
+itm_isen_orc_pad_a|Skřetí zbroj Železného pasu
+itm_isen_orc_pad_b|Skřetí zbroj Železného pasu
+itm_isen_orc_mail_a|Skřetí zbroj Železného pasu
+itm_isen_orc_mail_b|Skřetí zbroj Železného pasu
 itm_isen_uruk_light_a|Lehký postroj Skurut-hai
 ; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
 ; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
@@ -313,14 +313,14 @@ itm_uruk_greaves|Skurutí naholeníky
 itm_uruk_chain_greaves|Skurutí kroužkové naholeníky
 itm_uruk_ragwrap|Skurutí onuce
 itm_isen_orc_helm_a|Helma skřetů ze Železného pasu
-itm_isen_orc_helm_b|Helma skřetů ze Železného pasu
-itm_isen_orc_helm_c|Helma skřetů ze Železného pasu
+itm_free_isen_orc_helm_b|Helma skřetů ze Železného pasu
+itm_free_isen_orc_helm_c|Helma skřetů ze Železného pasu
 itm_isen_uruk_helm_a|Helma Skurut-hai
-itm_isen_uruk_helm_b|Helma Skurut-hai
-itm_isen_uruk_helm_c|Helma Skurut-hai
+itm_free_isen_uruk_helm_a|Helma Skurut-hai
+itm_free_isen_uruk_helm_c|Helma Skurut-hai
 itm_isen_uruk_helm_d|Helma kapitána Skurut-hai
 itm_isen_uruk_helm_e|Helma stopaře Skurut-hai
-itm_isen_uruk_helm_f|Helma stopaře Skurut-hai
+itm_free_isen_uruk_helm_f|Helma stopaře Skurut-hai
 itm_uruk_pike_b|Mordorská píka
 itm_uruk_falchion_a|Skurutí Falchion
 ; itm_uruk_falchion_b|Orc Great Scimitar

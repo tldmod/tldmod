@@ -291,13 +291,13 @@ itm_orc_tribal_b|미처리 가죽
 itm_orc_tribal_c|미처리 가죽
 itm_evil_gauntlets_a|검은 장갑
 itm_evil_gauntlets_b|검은 건틀릿
-itm_isen_orc_armor_a|아이센가드 오르크 갑옷
-itm_isen_orc_armor_b|아이센가드 오르크 갑옷
-itm_isen_orc_armor_c|아이센가드 오르크 갑옷
-itm_isen_orc_armor_d|아이센가드 오르크 갑옷
-itm_isen_orc_armor_e|아이센가드 오르크 갑옷
-itm_isen_orc_armor_f|아이센가드 오르크 갑옷
-itm_isen_orc_armor_g|아이센가드 오르크 갑옷
+itm_free_isen_orc_armor_a|아이센가드 오르크 갑옷
+itm_isen_orc_light_a|아이센가드 오르크 갑옷
+itm_isen_orc_light_b|아이센가드 오르크 갑옷
+itm_isen_orc_pad_a|아이센가드 오르크 갑옷
+itm_isen_orc_pad_b|아이센가드 오르크 갑옷
+itm_isen_orc_mail_a|아이센가드 오르크 갑옷
+itm_isen_orc_mail_b|아이센가드 오르크 갑옷
 itm_isen_uruk_light_a|우르크 하이 가벼운 하네스
 ; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
 ; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
@@ -313,14 +313,14 @@ itm_uruk_greaves|우르크 정강이 보호대
 itm_uruk_chain_greaves|우르크 사슬 정강이 보호대
 itm_uruk_ragwrap|우르크 헝겊두건
 itm_isen_orc_helm_a|아이센 오르크 투구
-itm_isen_orc_helm_b|아이센 오르크 투구
-itm_isen_orc_helm_c|아이센 오르크 투구
+itm_free_isen_orc_helm_b|아이센 오르크 투구
+itm_free_isen_orc_helm_c|아이센 오르크 투구
 itm_isen_uruk_helm_a|우르크 하이 투구
-itm_isen_uruk_helm_b|우르크 하이 투구
-itm_isen_uruk_helm_c|우르크 하이 투구
+itm_free_isen_uruk_helm_a|우르크 하이 투구
+itm_free_isen_uruk_helm_c|우르크 하이 투구
 itm_isen_uruk_helm_d|우르크 하이 대장 투구
 itm_isen_uruk_helm_e|우르크 하이 추적자 투구
-itm_isen_uruk_helm_f|우르크 하이 추적자 투구
+itm_free_isen_uruk_helm_f|우르크 하이 추적자 투구
 itm_uruk_pike_b|모르도르 파이크
 itm_uruk_falchion_a|우르크 펄션
 itm_uruk_falchion_b|Orc Great Scimitar
