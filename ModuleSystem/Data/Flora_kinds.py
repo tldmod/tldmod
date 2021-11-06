@@ -118,7 +118,7 @@ fauna_kinds = [
 ### BUSHES
   
  ('grass_bush_l', #former snow grass, high, reedy, vertex painted green
-  fkf_snow_forest|fkf_align_with_ground|density(100),
+  fkf_snow_forest|fkf_align_with_ground|fkf_tree|density(100),
   [['PL_wi_bush3a', '0'], ['PL_wi_bush3b', '0']]),
   
  ('zl_white_flowers', #zl_bush_white_flowers grass_bush_l
@@ -199,7 +199,7 @@ fauna_kinds = [
 
 #DUPLICATE
  ('ga_bushes04_a_snow', 
- density(100),
+ fkf_snow_forest|fkf_tree|density(100),
   [['PW_bushes04_a_xx', '0'],
    ['PW_bushes04_b_xx', '0'],
    ['PW_bushes04_c_xx', '0']]),
