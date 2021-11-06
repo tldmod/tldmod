@@ -992,25 +992,25 @@ itemsfile version 2
  itm_evil_gauntlets_b Black_Gauntlets Black_Gauntlets 2  narf_wisby_gauntlets_black_L 0  narf_wisby_gauntlets_red_L 704643072  65551 0 500 704643206 1 100 0 4 0 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_armor_a Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_a 0  16842765 0 51 123731968 5 100 0 5 3 0 0 0 0 0 0 0 0
+ itm_free_isen_orc_armor_a Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_light_1_b 0  16842765 0 51 123731968 5 100 0 5 3 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_armor_b Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_b 0  16842765 0 301 123731968 12 100 0 10 3 0 0 0 0 0 0 0 0
+ itm_isen_orc_light_a Isengard_Orc_Light_Harness Isengard_Orc_Light_Harness 3  orc_isen_light_1_b 0  orc_isen_light_1_a 134  orc_isen_light_1_c 167772160  16842765 0 401 123731968 4 90 0 7 2 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_armor_c Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_c 0  16842765 0 401 123731968 17 91 0 15 5 8 0 0 0 0 0 0 0
+ itm_isen_orc_light_b Isengard_Orc_Light_Harness Isengard_Orc_Light_Harness 3  orc_isen_light_2_b 0  orc_isen_light_2_a 134  orc_isen_light_2_c 167772160  16842765 0 401 123731968 6 91 0 13 4 8 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_armor_d Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_d 0  16842765 0 501 174063750 19 92 0 18 5 11 0 0 0 0 0 0 0
+ itm_isen_orc_pad_a Isengard_Orc_Light_Segmented_Armor Isengard_Orc_Light_Segmented_Armor 3  orc_isen_pad_1_b 0  orc_isen_pad_1_a 134  orc_isen_pad_1_c 167772160  16842765 0 501 174063750 19 92 0 15 5 12 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_armor_e Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_e 0  16842765 0 601 174063750 25 93 0 16 9 8 0 0 0 0 0 0 0
+ itm_isen_orc_pad_b Isengard_Orc_Medium_Segmented_Armor Isengard_Orc_Medium_Segmented_Armor 3  orc_isen_pad_2_b 0  orc_isen_pad_2_a 134  orc_isen_pad_2_c 167772160  16842765 0 601 174063750 25 93 0 17 9 14 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_armor_f Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_f 0  16842765 0 701 174063750 26 94 0 18 9 13 0 0 0 0 0 0 0
+ itm_isen_orc_mail_a Isengard_Orc_Mail Isengard_Orc_Mail 3  orc_isen_mail_b 0  orc_isen_mail_a 134  orc_isen_mail_c 167772160  16842765 0 701 174063750 30 94 0 18 9 14 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_armor_g Isengard_Orc_Armor Isengard_Orc_Armor 1  orc_isen_g 0  16842765 0 801 174063750 30 95 0 20 9 15 0 0 0 0 0 0 0
+ itm_isen_orc_mail_b Isengard_Orc_Heavy_Segmented_Armor Isengard_Orc_Heavy_Segmented_Armor 3  orc_isen_heavy_b 0  orc_isen_heavy_a 134  orc_isen_heavy_c 167772160  16842765 0 801 174063750 36 95 0 22 9 18 0 0 0 0 0 0 0
 0
 
  itm_isen_uruk_light_a Uruk-hai_Light_Harness Uruk-hai_Light_Harness 3  urukhai_isen_light_harness_b 0  urukhai_isen_light_harness_a 134  urukhai_isen_light_harness_c 167772160  16842765 0 52 174063750 4 90 0 8 3 0 0 0 0 0 0 0 0
@@ -1127,7 +1127,7 @@ itemsfile version 2
  itm_isengard_heavy_sword Isengard_Heavy_Sword Isengard_Heavy_Sword 1  isengard_heavy_sword 0  342163459 9223635919939043552 500 786582 4.5 100 0 0 0 0 40960 93 0 102 0 256 40
 0
 
- itm_isengard_spear Isengard_Spear Isengard_Spear 1  isengard_spear 0  2251800088772612 9254615759470988544 200 786582 2.5 100 0 0 0 0 20480 96 0 150 0 283 532
+ itm_isengard_spear Isengard_Spear Isengard_Spear 1  isengard_spear 0  2251799820337156 9254615759470988544 200 786582 2.5 100 0 0 0 0 20480 96 0 150 0 283 532
 0
 
  itm_isengard_pike Isengard_Pike Isengard_Pike 1  isengard_pike 0  2251800088772612 4222124851987200 500 786582 3.5 100 0 0 0 0 16384 92 0 226 0 282 528
