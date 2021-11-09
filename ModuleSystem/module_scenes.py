@@ -74,9 +74,16 @@ scenes = [
 ("starting_quest"       ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x000000003007dae3000378de000001bf0000299a000048be",[],[], "outer_terrain_plain"),
 
 # city centers
+  ] + (is_a_wb_scene==1 and [
+  ("minas_tirith_center"    ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000330000500000d234800007e03000001780000021b",[],[],"New_outer_terrain_tirith_2"),
+  ("minas_tirith_center_mid",sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"New_outer_terrain_tirith_2"),
+  ("minas_tirith_center_top",sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000330000500000d234800007e03000001780000021b",[],[],"New_outer_terrain_tirith_2"),
+  ] or [
   ("minas_tirith_center"    ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
   ("minas_tirith_center_mid",sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
   ("minas_tirith_center_top",sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
+  ]) + [
+
   ("pelargir_center"        ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000006300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_seaside_1"),
   ("linhir_center"          ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x000000042005591e00040506000059a100002cd500005052",[],[],"outer_terrain_steppe"),
   ("dol_amroth_center"      ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000130000500000d234800000f5200005bd50000739d",[],[],"New_outer_terrain_seaside_east_1"),
@@ -261,7 +268,13 @@ scenes = [
 ]) + [
 
 ("west_emnet_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000320045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
+
+] + (is_a_wb_scene==1 and [
+("minas_tirith_siege"  ,sf_generate,"none","none",(0,0),(200,200),-100,"0x0000000330000500000d234800007e03000001780000021b",[],[],"New_outer_terrain_tirith_2"),
+] or [
 ("minas_tirith_siege"  ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
+]) + [
+
 ("pelargir_siege"      ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000006300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_seaside_1"),
 ("linhir_siege"        ,sf_generate,"none","none",(0,0),(200,200),-100,"0x000000042005591e00040506000059a100002cd500005052",[],[],"outer_terrain_steppe"),
 ("dol_amroth_siege"    ,sf_generate,"none","none",(0,0),(200,200),-100,"0x0000000130000500000d234800000f5200005bd50000739d",[],[],"New_outer_terrain_seaside_east_1"),
@@ -375,7 +388,12 @@ scenes = [
 	#("minas_morgul_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
 ("morannon_siege"    ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
 
+] + (is_a_wb_scene==1 and [
+("minas_tirith_outside" ,sf_generate|sf_auto_entry_points,"none","none",(84,457),( 339, 532),-100.0,"0x0000000330000500000d234800007e03000001780000021b",[],[],"New_outer_terrain_tirith_2"), #InVain changed terrain code: Has grass now!
+] or [
 ("minas_tirith_outside" ,sf_generate|sf_auto_entry_points,"none","none",(84,457),( 339, 532),-100.0,"0x00000003300005000009c5a20000348600005bd50000739d",[],[],"outer_terrain_tirith_1"), #InVain changed terrain code: Has grass now!
+]) + [
+
 ("isengard_outside" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-100.0,"0x000000032001c500000791fd0000738000005bd50000739d",[],[],"outer_terrain_isen_low_far"),
 
   ] + (is_a_wb_scene==1 and [

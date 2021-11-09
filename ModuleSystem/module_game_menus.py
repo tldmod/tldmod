@@ -8693,7 +8693,7 @@ game_menus = [
 		  # (try_end),
           
           #InVain: assign manually instead
-          (try_begin), (eq, "$current_town", "p_town_minas_tirith"), (str_store_string, s1, "@the_Citadel"),
+          (try_begin), (eq, "$current_town", "p_town_minas_tirith"), (str_store_string, s1, "@the_Throne_Room"),
           (else_try), (eq, "$current_town", "p_town_henneth_annun"), (str_store_string, s1, "@the_Secret_Cave"),
           (else_try), (eq, "$current_town", "p_town_edoras"), (str_store_string, s1, "@Meduseld,_the_Golden_Hall"),
           (else_try), (eq, "$current_town", "p_town_hornburg"), (str_store_string, s1, "@the_Lord_Halls"),
@@ -9103,8 +9103,9 @@ game_menus = [
 						[(assign, "$bs_day_sound", "snd_wind_ambiance"),
 						 (assign, "$bs_night_sound", "snd_wind_ambiance"),
 						 (set_jump_mission, "mt_town_center"),
-						 (jump_to_scene, "scn_minas_tirith_center_top"),
-						 (change_screen_mission)]),
+                         (set_jump_entry, 4),
+						 (jump_to_scene, "scn_minas_tirith_center"),
+						 (change_screen_mission)],"Go to the Citadel"),
 						 
 #menu no. 21						 
   	  ("erebor_gates",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_erebor"),(eq,"$entry_to_town_forbidden",0)

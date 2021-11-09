@@ -1384,8 +1384,15 @@ scene_props = [
   ("gondor_tower_part_5_E",0,"gondor_tower_part_5","0", []),
 ("gondor_wall_copula_1",0,"gondor_wall_copula_1","bo_gondor_wall_copula_1", []),
   ("gondor_wall_copula_1_E",0,"gondor_wall_copula_1","0", []),
+
+] + (is_a_wb_sceneprop==1 and [
+("gondor_citadel_main",0,"gondor_citadel_main_2","bo_gondor_citadel_main_2", []),
+  ("gondor_citadel_main_E",0,"gondor_citadel_main_2","0", []),
+] or [
 ("gondor_citadel_main",0,"gondor_citadel_main","bo_gondor_citadel_main", []),
   ("gondor_citadel_main_E",0,"gondor_citadel_main","0", []),
+]) + [
+
 ("gondor_citadel_main_hall",0,"gondor_citadel_main_hall_1","bo_gondor_citadel_main_hall_1", []),
   ("gondor_citadel_main_hall_E",0,"gondor_citadel_main_hall_1","0", []),
 ("gondor_citadel_side_building_1",0,"gondor_citadel_side_building_1","bo_gondor_citadel_side_building_1", []),
@@ -1439,7 +1446,7 @@ scene_props = [
   ("gondor_mt_bridge_modular_b_E",0,"mt_bridge_modular_b", "0", []),
 #("gondor_mt_door_extension_a",0,"mt_door_extension_a", "bo_door_extension_a", []),
 # ("gondor_mt_door_extension_a_E",0,"mt_door_extension_a", "0", []),
-("gondor_mt_gate",0,"mt_gate", "bo_mt_gate", []),
+("gondor_mt_gate",0,"mt_gate", "bo_mt_gate_new", []),
   ("gondor_mt_gate_E",0,"mt_gate", "0", []),
 ("gondor_mt_gate_tower",0,"mt_gate_tower", "bo_mt_tower", []),
   ("gondor_mt_gate_tower_E",0,"mt_gate_tower", "0", []),
@@ -3242,6 +3249,8 @@ scene_props = [
 ( "stone_block_mossy_4"                           ,0,"zf_block_3","bo_zf_block_3",[]),
 ( "fence_new"                           ,0,"fence_new","bo_fence_new",[]),
 
+( "Gondor_MT_black_circular_wall",0,"Gondor_wall_final","bo_MT_circular_wall",[]),
+("gon_mt_stone_bridge",0,"gondor_stone_bridge","bo_gondor_stone_bridge", []),
 
 
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
