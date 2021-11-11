@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1973
+ 1975
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -2703,7 +2703,7 @@ spr_gondor_mt_bridge_modular_b 0 0 mt_bridge_modular_b bo_bridge_modular_b 0
 spr_gondor_mt_bridge_modular_b_E 0 0 mt_bridge_modular_b 0 0
 
 
-spr_gondor_mt_gate 0 0 mt_gate bo_mt_gate 0
+spr_gondor_mt_gate 0 0 mt_gate bo_mt_gate_new 0
 
 
 spr_gondor_mt_gate_E 0 0 mt_gate 0 0
@@ -5988,6 +5988,12 @@ spr_stone_block_mossy_4 0 0 zf_block_3 bo_zf_block_3 0
 
 
 spr_fence_new 0 0 fence_new bo_fence_new 0
+
+
+spr_Gondor_MT_black_circular_wall 0 0 Gondor_wall_final bo_MT_circular_wall 0
+
+
+spr_gon_mt_stone_bridge 0 0 gondor_stone_bridge bo_gondor_stone_bridge 0
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0

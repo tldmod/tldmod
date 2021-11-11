@@ -25701,6 +25701,7 @@ command_cursor_scripts = [
 	(try_end),
 
 	(eq, ":continue", 1),
+    (assign, ":continue_2", 0), #need a second check for the faction strength checks
 
 	(assign, ":cur_target_center", "p_town_edhellond"), #Default to Edhellond
 	(store_random_in_range, ":rand", 0,100),
@@ -25711,6 +25712,7 @@ command_cursor_scripts = [
 		(gt, ":strength", 500), 
 		(faction_get_slot,":strength","fac_umbar",slot_faction_strength),
 		(gt, ":strength", 500), 
+        (assign, ":continue_2", 1),
 		(try_begin),
 			(ge, ":rand", 50),
 			(assign, ":cur_target_center", "p_town_dol_amroth"),
@@ -25722,8 +25724,11 @@ command_cursor_scripts = [
 		(gt, ":strength", 500), 
 		(faction_get_slot,":strength","fac_rhun",slot_faction_strength),
 		(gt, ":strength", 500), 
+        (assign, ":continue_2", 1),
 		(assign, ":cur_target_center", "p_town_esgaroth"),
 	(try_end),
+
+    (eq, ":continue_2", 1), 
 	
 	(try_begin),
 		(eq, "$g_talk_troop_faction", "fac_umbar"),
