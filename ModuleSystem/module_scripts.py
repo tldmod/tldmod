@@ -26522,7 +26522,8 @@ command_cursor_scripts = [
 	
 	(item_set_slot, "itm_isen_uruk_light_a", 	slot_item_light_armor, 1),
 	(item_set_slot, "itm_isen_uruk_light_b",	slot_item_light_armor, 1),
-    (item_set_slot, "itm_m_uruk_light_a",	slot_item_light_armor, 1),
+    (item_set_slot, "itm_isen_uruk_light_c",	slot_item_light_armor, 1),
+    (item_set_slot, "itm_m_uruk_light_a",	    slot_item_light_armor, 1),
 	(item_set_slot, "itm_rhun_armor_a",			slot_item_light_armor, 1),
 	(item_set_slot, "itm_rhun_armor_b",			slot_item_light_armor, 1),
 	(item_set_slot, "itm_rhun_armor_d",			slot_item_light_armor, 1),

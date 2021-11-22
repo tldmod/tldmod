@@ -5148,7 +5148,7 @@ game_menus = [
 		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_3"),
                   (eq, "$g_encountered_party", "$qst_reinforcement_party"),
                   (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
-                  (eq, "$cheat_mode", 1),
+                  (eq, "$cheat_mode", 1),(eq, cheat_switch, 1),
           ],
          "{reg21?Leap_into_battle_in_bear_form:Turn_skin_and_face_them}.",[
                         (call_script, "script_cf_select_bear_form"),
@@ -7325,6 +7325,7 @@ game_menus = [
 			(try_end),
 	  ]
 	  ,"Get the book"),
+      
 	  ##Kham - Player Initiated Siege BEGIN
 	  ("player_castle_initiate_siege",
 	 	[#(eq, "$cheat_mode",1),
