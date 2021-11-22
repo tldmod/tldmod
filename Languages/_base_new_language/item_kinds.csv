@@ -658,18 +658,18 @@ itm_evil_gauntlets_b|Black Gauntlets
 itm_evil_gauntlets_b_pl|Black Gauntlets
 itm_free_isen_orc_armor_a|Isengard Orc Armor
 itm_free_isen_orc_armor_a_pl|Isengard Orc Armor
-itm_isen_orc_light_a|Isengard Orc Armor
-itm_isen_orc_light_a_pl|Isengard Orc Armor
-itm_isen_orc_light_b|Isengard Orc Armor
-itm_isen_orc_light_b_pl|Isengard Orc Armor
-itm_isen_orc_pad_a|Isengard Orc Armor
-itm_isen_orc_pad_a_pl|Isengard Orc Armor
-itm_isen_orc_pad_b|Isengard Orc Armor
-itm_isen_orc_pad_b_pl|Isengard Orc Armor
-itm_isen_orc_mail_a|Isengard Orc Armor
-itm_isen_orc_mail_a_pl|Isengard Orc Armor
-itm_isen_orc_mail_b|Isengard Orc Armor
-itm_isen_orc_mail_b_pl|Isengard Orc Armor
+itm_isen_orc_light_a|Isengard Orc Light Harness
+itm_isen_orc_light_a_pl|Isengard Orc Light Harness
+itm_isen_orc_light_b|Isengard Orc Light Harness
+itm_isen_orc_light_b_pl|Isengard Orc Light Harness
+itm_isen_orc_pad_a|Isengard Orc Light Segmented Armor
+itm_isen_orc_pad_a_pl|Isengard Orc Light Segmented Armor
+itm_isen_orc_pad_b|Isengard Orc Medium Segmented Armor
+itm_isen_orc_pad_b_pl|Isengard Orc Medium Segmented Armor
+itm_isen_orc_mail_a|Isengard Orc Mail
+itm_isen_orc_mail_a_pl|Isengard Orc Mail
+itm_isen_orc_mail_b|Isengard Orc Heavy Segmented Armor
+itm_isen_orc_mail_b_pl|Isengard Orc Heavy Segmented Armor
 itm_isen_uruk_light_a|Uruk-hai Light Harness
 itm_isen_uruk_light_a_pl|Uruk-hai Light Harness
 itm_isen_uruk_light_b|Uruk-hai Fighting Harness
@@ -698,16 +698,16 @@ itm_uruk_chain_greaves|Uruk Chain Greaves
 itm_uruk_chain_greaves_pl|Uruk Chain Greaves
 itm_uruk_ragwrap|Uruk Ragwrap
 itm_uruk_ragwrap_pl|Uruk Ragwrap
-itm_isen_orc_helm_a|Isen Orc Helm
-itm_isen_orc_helm_a_pl|Isen Orc Helm
-itm_free_isen_orc_helm_b|Isen Orc Helm
-itm_free_isen_orc_helm_b_pl|Isen Orc Helm
-itm_free_isen_orc_helm_c|Isen Orc Helm
-itm_free_isen_orc_helm_c_pl|Isen Orc Helm
-itm_isen_uruk_helm_a|Uruk-Hai Helm
-itm_isen_uruk_helm_a_pl|Uruk-Hai Helm
+itm_free_isen_orc_helm_c|Isengard Orc Helm
+itm_free_isen_orc_helm_c_pl|Isengard Orc Helm
+itm_free_isen_orc_helm_b|Isengard Orc Helm
+itm_free_isen_orc_helm_b_pl|Isengard Orc Helm
+itm_isen_orc_helm_a|Isengard Orc Helm
+itm_isen_orc_helm_a_pl|Isengard Orc Helm
 itm_free_isen_uruk_helm_a|Uruk-Hai Helm
 itm_free_isen_uruk_helm_a_pl|Uruk-Hai Helm
+itm_isen_uruk_helm_a|Uruk-Hai Helm
+itm_isen_uruk_helm_a_pl|Uruk-Hai Helm
 itm_free_isen_uruk_helm_c|Uruk-Hai Helm
 itm_free_isen_uruk_helm_c_pl|Uruk-Hai Helm
 itm_isen_uruk_helm_d|Uruk-Hai Captain Helm

@@ -83,7 +83,7 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
-qstr__rev_315_wb__dev_^_B| rev 315 wb | dev ^ Built 2021-10-16 22:30   
+qstr__rev_332_wb__dev_^_B| rev 332 wb | dev ^ Built 2021-11-22 18:00   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
@@ -264,6 +264,7 @@ qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
 qstr__Scales_with_Wildcra|(Scales with Wildcraft)
 qstr_Strengthens_all_Hero|Strengthens all Heroes
 qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
+qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|+1 to Spotting
 qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
@@ -1252,14 +1253,13 @@ qstr_{s29}|{s29}
 qstr_{s13}^^You_have_succ|{s13}^^You have successfully sneaked in.
 qstr_the_place|the place
 qstr_the_castle|the castle
-qstr_the_Citadel|the Citadel
+qstr_the_Throne_Room|the Throne Room
 qstr_the_Secret_Cave|the Secret Cave
 qstr_Meduseld_the_Golden_|Meduseld, the Golden Hall
 qstr_the_Lord_Halls|the Lord Halls
 qstr_the_Leader_s_Cave|the Leader's Cave
 qstr_the_Tower|the Tower
 qstr_the_tower_of_Orthanc|the tower of Orthanc
-qstr_the_Throne_Room|the Throne Room
 qstr_Beorn_s_Hall|Beorn's Hall
 qstr_the_Hall|the Hall
 qstr_the_Great_Chamber_of|the Great Chamber of Thrór
@@ -1439,6 +1439,7 @@ qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've R
 qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
+qstr_the_Citadel|the Citadel
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Steward Denethor
 qstr_the_Golden_Hall|the Golden Hall
