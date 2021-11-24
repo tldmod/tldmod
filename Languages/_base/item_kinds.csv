@@ -514,12 +514,12 @@ itm_harad_scale|Harad Scale Armor
 itm_harad_tiger_scale|Tiger Guard Armor
 itm_harad_lion_scale|Lion Guard Armor
 itm_harad_dragon_helm|Kiloka Helm
-itm_harad_cav_helm_a|Harondor Cavalry Helm
-itm_harad_cav_helm_b|Harondor Cavalry Helm
+itm_harad_cav_helm_a|Harondor Light Helm
+itm_harad_cav_helm_b|Harondor Light Helm
 itm_black_snake_helm|Maranka Helm
-itm_harad_finhelm|Great Harad Helmet
-itm_harad_heavy_inf_helm|Great Harad Helmet
-itm_harad_wavy_helm|Great Harad Helmet
+itm_harad_finhelm|Harad Heavy Footman Helmet
+itm_harad_heavy_inf_helm|Harad Footman Helmet
+itm_harad_wavy_helm|Harad Conical Helmet
 itm_harad_eaglehelm|Eagle Guard Helm
 itm_lion_helm|Lion Guard Helm
 itm_harad_pantherhelm|Panther Guard Cap
@@ -573,7 +573,7 @@ itm_khand_throwing_axe|Khand Throwing Axe
 itm_khand_rammace|Khand Ram Mace
 itm_khand_pitsword|Pit Fighter Sword
 itm_khand_tulwar|Khand Tulwar
-itm_khand_2h_tulwar|Khand Tulwar
+itm_khand_2h_tulwar|Khand Great Tulwar
 itm_khand_lance|Khand Lance
 itm_easterling_round_horseman|Easterling Round Shield
 itm_variag_gladiator_shield|Easterling Pit Shield
@@ -593,12 +593,11 @@ itm_rhun_armor_n|Rhun Medium Battlewear
 itm_rhun_armor_o|Rhun Medium Battlewear
 itm_rhun_armor_p|Rhun Noble Armor
 itm_rhun_armor_k|Rhun Noble Armor
-itm_rhun_helm_barbed|Rhun Barbed Helm
-itm_rhun_helm_horde|Rhun Horde Helm
+itm_rhun_helm_chieftain|Rhun Chieftain Helm
 itm_rhun_helm_pot|Rhun Pot Helm
+itm_rhun_helm_barbed|Rhun Barbed Helm
 itm_rhun_helm_round|Rhun Round Helm
 itm_rhun_helm_leather|Rhun Leather Helm
-itm_rhun_helm_chieftain|Rhun Chieftain Helm
 itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|Rhun Great Axe
 itm_rhun_battleaxe|Rhun Battle Axe
@@ -728,7 +727,7 @@ itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
 itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
 itm_ent_water|Strange Bowl of Water
 itm_map|Maps of Middle Earth
-itm_athelas_reward|Athelas Plant
+itm_athelas_reward|Dried Athelas Leaves
 itm_phial_reward|Light of Galadriel
 itm_scroll_reward|On the Fall of Gondolin
 itm_hammer_reward|Smith's Hammer
@@ -737,7 +736,6 @@ itm_angmar_whip_reward|Master's Whip
 itm_horn_gondor_reward|Horn of Gondor
 itm_harad_totem_reward|Harad Totem
 itm_elven_amulet_reward|Elven Amulet
-
 itm_torque_reward|Evil Torque
 itm_orc_brew|Orc Brew
 itm_rohan_saddle|Saddle
@@ -774,7 +772,7 @@ itm_dale_armor_reward|Dale Noblemen Mail
 itm_leather_gloves_reward|Archer Gloves
 itm_beorn_shield_reward|Beorning Shield
 itm_beorn_axe_reward|Bear Club
-itm_moria_arrow_reward|Moria Poisoned Arrows
+itm_drums_of_the_deep|Drums of the Deep
 itm_khamul_helm|Helm of Khamul
 itm_black_arrows_reward|Black Arrows
 itm_leather_boots_reward|Hunter Boots
