@@ -22383,7 +22383,7 @@ scripts = [
 		(troop_get_inventory_slot, ":item", ":npc", ":inv_slot"),
 		(ge, ":item", 0),
         (store_add,":item_slot",slot_troop_armor_type-ek_body,":inv_slot"), #slot_troop_armor_type, slot_troop_boots_type consequtive slots
-        (neq, ":item_slot", slot_troop_boots_type), 
+        #(neq, ":item_slot", slot_troop_boots_type), 
 		(neg|troop_slot_eq,":npc",":item_slot",":item"), # equipped item changed to other?
 		(store_item_value, reg30, ":item"),
 		(val_mod, reg30,10),
@@ -22413,6 +22413,7 @@ scripts = [
 				(assign, "$remove_item", 1), 
 			(else_try), # swy: if it is NOT an uruk item and it's some kind of uruk troop; remove it
 				(neq, reg30, 2),
+                (neq, reg30, 3), #use 3 for shared items (e.g. some boots)
 				(this_or_next|eq, ":race", tf_uruk),
 				(             eq, ":race", tf_urukhai),
 				(assign, "$remove_item", 1), #Uruks and Uruk-hai share equipment
