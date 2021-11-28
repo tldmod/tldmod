@@ -925,6 +925,15 @@ qstr_Tripled|Утроенный
 qstr_Quadrupled|Учетверенный
 qstr_You_drank_the_Ent_Wa|Вы выпили энтийской воды...
 qstr_You_used_the_Orc_Bre|Вы использовали отвар орков.
+; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
+; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
+; qstr_lordless|lordless
+; qstr_orc_stragglers|orc stragglers
+; qstr_wild_goblins|wild goblins
+; qstr_recruits|recruits
+; qstr_regulars|regulars
+; qstr_elites|elites
+; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
 qstr_Fangorn_search:_fail|Разведка Фангорна: провал.
 qstr_^^^A_great_victory!^|^^^Великая победа!^^^Так вот что значили все россказни о Фангорне...
 qstr_^^^Defeated...^^^Sca|^^^Поражение...^^^Раздавлен в древнем лесу Фангорн...В полном одиночестве...
@@ -1083,6 +1092,8 @@ qstr_You_are_entering_{s1}|Вы входите в регион {s1}.
 qstr_The_war_expands_comm|Война разгорается всё сильнее, полководцы становятся храбрее! (снижены требования к началу осады)
 qstr_Your_party_is_spotte|{s1} обнаружил ваш отряд.
 qstr_The_effects_of_the_O|Эффект от Орочьего Варева закончился.
+; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
+; qstr_Athelas_used_up.|Athelas used up.
 qstr_Party_has_nothing_to|Отряду нечего есть!
 qstr_You_pay_for_accommod|Вы платите за постой.
 qstr_The_troll_outside_{s|Тролль, лютовавший в окрестностях города {s2}, был убит. Задание отменено.
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{reg66} {s5} воинов убито. (Счетчик 
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} воинов убито. (Счетчик обновляется каждый час)
 qstr_{reg68}_{s10}_killed|{reg68} {s10} убито. (Счетчик обновляется каждый час)
 qstr_{s1}_is_scouted.|{s1} разведан.
+qstr_{s2}_was_defeated!|Держава {s2} потерпела поражение!
 qstr_The_Age_of_Men_has_f|Эпоха Людей подошла к концу. Теперь Две Твердыни собирают оставшиеся войска и созывают союзников, чтобы решить, кто станет единственным правителем Средиземья!
 qstr_The_War_of_the_Two_T|Война Двух Твердынь началась!
-qstr_{s2}_was_defeated!|Держава {s2} потерпела поражение!
 qstr_The_forces_of_{s22}_|Держава {s22} стала сильнее! Теперь она {s23}.
 qstr_The_might_of_{s22}_h|Держава {s22} стала слабее! Теперь она {s23}.
 qstr_In_a_desperate_attem|В отчаянной попытке спастись от своих врагов Саурон посылает в бой легионы Мордора!

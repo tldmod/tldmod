@@ -1,4 +1,4 @@
-qstr_Received_{reg0}_dama|Received {reg0} damage.
+qstr_Received_{reg0}_dama|{reg0} 피해 입음.
 qstr_Gate_is_breached!|성문이 뚫렸다!
 qstr_Gate_opens..._You_ha|문이 열린다.... 당신은 가운데 땅에서 가장 신성한 장소에 오게 되었다.
 qstr_Secret_place_discove|비밀 장소 발견됨!
@@ -91,9 +91,9 @@ qstr_Battle_Formations_an|진형과 인공지능:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD 맞춤 AI (기본)
 qstr_TLD_New_FormAI|TLD 신형 맞춤 AI
-; qstr_Siege_AI:__|Siege AI:  
-; qstr_Basic__better_perfor|Basic (better performance)
-; qstr_Advanced|Advanced
+qstr_Siege_AI:__|공성 AI:
+qstr_Basic__better_perfor|기본 (향상된 행동)
+qstr_Advanced|진보된
 qstr_Town_NPCs_Always_Acc|마을 NPC는 메뉴에서도 접근이 가능합니다: 
 qstr_Cutscenes:__|컷신: 
 qstr_Injuries_for_compani|동료들의 부상: 
@@ -107,9 +107,9 @@ qstr_Player_damage_only|오직 플레이어 피해만
 qstr_All_Messages|모두 알림
 qstr_Troop_Identifier_in_|전장에서 부대 식별 (전투 중 Y 키로 끄고 켜기 가능): 
 qstr_Disable|끄기
-; qstr_Troop_Names|Troop Names
-; qstr_Simple:_Faction_Colo|Simple: Faction Colors
-; qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
+qstr_Troop_Names|부대 이름
+qstr_Simple:_Faction_Colo|간단: 팩션 색깔
+qstr_Simple:_Black___Enem|간단: 적 - 검정색 / 흰색 - 아군
 qstr_Preferred_Camera_Mod|우선 카메라 모드:  
 qstr_Default_Camera|기본 카메라 모드
 qstr_Free_Mode_Custom_Cam|자유 설정 카메라 모드
@@ -185,15 +185,15 @@ qstr_+20_to_Party_Morale|부대 사기 +20
 qstr_+1_to_Riding_Skill|승마술 +1
 qstr_during_battles|전투 중
 qstr_+1_to_Pathfinding|길찾기 +1
-; qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
-; qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
-; qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
+qstr_+2_to_Wound_Treatmen|부상 치료에 +2 (부대)
+qstr_+2_to_Surgery__Party|수술에 +2 (부대)
+qstr_+2_to_Pathfinding__P|길찾기에 +2 (부대)
 qstr_Use_from_Camp_Menu|Use from Camp Menu
 qstr_Use_from|에서 사용 
 qstr_Action_Menu|행동 메뉴
-; qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
-; qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
-; qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
+qstr_Bonus_to_Wound_Treat|부상 치료에 보너스 (부대)
+qstr_Bonus_to_Surgery__Pa|수술에 보너스 (부대)
+qstr_Bonus_to_First_Aid__|응급처치에 보너스 (부대)
 qstr_+1_to_Weapon_Mastery|무기 마스터 +1
 qstr_+1_to_Wound_Treatmen|부상 치료 +1
 qstr_+1_to_Tactics|전술 +1
@@ -218,8 +218,8 @@ qstr_rally|랠리
 qstr_rallies|집단들
 qstr_+{reg1}_{s3}_in_batt|전투중 +{reg1} {s3}
 qstr_+1_to_Charisma|카리스마 +1
-; qstr_Call_Reinforcements|Call Reinforcements
-; qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
+qstr_Call_Reinforcements|지원군 요청
+qstr__Effect_scales_with_|(힘과 카리스마에 영향을 미침)
 qstr_+1_to_First_Aid|응급치료 +1
 qstr_+1_to_Surgery|수술 +1
 qstr_+1_to_Intelligence|지능 +1
@@ -234,8 +234,8 @@ qstr_+2_to_Tactics|전술 +2
 qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|탐지 +{reg1}
 qstr__Scales_with_Wildcra|(서바이벌에 따라 조정)
-; qstr_Strengthens_all_Hero|Strengthens all Heroes
-; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
+qstr_Strengthens_all_Hero|모든 영웅 강화하기
+qstr_+2_to_First_Aid__Par|응급치료에 +2 (부대)
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|탐지 +1
 qstr_Less_Dunnish_upkeep|던랜드인 최소한도 유지
@@ -254,7 +254,7 @@ qstr_Good|좋은
 qstr_Med|약품
 qstr_Bad|나쁜
 qstr_You_gained_{reg84}_e|지능에 따라 {reg84}의 경험치를 얻었습니다.
-; qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
+qstr_You_gained_{reg84}_w|민첩에 따라 {reg84}의 경험치를 얻었습니다.
 qstr_{reg4}_killed_{reg5}|{reg4} 사망, {reg5} 부상, {reg6} 도주
 qstr_{reg4}_killed_{reg5}_|{reg4} 사망, {reg5} 부상
 qstr_{reg4}_killed_{reg5}_r|{reg4} 사망, {reg5} 도주
@@ -797,14 +797,14 @@ qstr_Drive_them_back!|놈들을 쫓아내라!
 qstr_Protect_the_City!|도시를 지켜라!
 qstr_Forward!_Board_them!|앞으로! 올라타!
 qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
-; qstr_on_the_left_flank|on the left flank
-; qstr_on_the_right_flank|on the right flank
-; qstr_through_the_center|through the center
-; qstr_Attackers_charge_{s2|Attackers charge {s2}
-; qstr_Attackers_charge_{s1|Attackers charge {s1}
-; qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
-; qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
-; qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
+qstr_on_the_left_flank|좌측에
+qstr_on_the_right_flank|우측에
+qstr_through_the_center|중앙으로
+qstr_Attackers_charge_{s2|공격대원이 {s2}로 돌격
+qstr_Attackers_charge_{s1|공격자가 {s1}로 돌격
+qstr_{s1}_rallied_to_your|{s1}이 당신의 카리스마에 의해 당신의 편에 섰다.
+qstr_Last_attacker_wave._|마지막 공격자 웨이브. 퇴각하시겠습니까?
+qstr_Attackers_almost_def|공격자가 대부분 패배했습니다. 퇴각하시겠습니까?
 ; qstr_The_remaining_attack|The remaining attackers disperse!
 ; qstr_The_remaining_defend|The remaining defenders escape from the siege!
 qstr_Reached_Gauntlet_wav|{reg1} Wave 시련 도달!
@@ -925,6 +925,15 @@ qstr_Tripled|세배
 qstr_Quadrupled|네배
 qstr_You_drank_the_Ent_Wa|엔트워터를 들이켰다...
 qstr_You_used_the_Orc_Bre|You used the Orc Brew.
+; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
+; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
+; qstr_lordless|lordless
+; qstr_orc_stragglers|orc stragglers
+; qstr_wild_goblins|wild goblins
+; qstr_recruits|recruits
+; qstr_regulars|regulars
+; qstr_elites|elites
+; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
 qstr_Fangorn_search:_fail|팡고른 탐색: 실패.
 qstr_^^^A_great_victory!^|^^^대승이다!^^^이게 팡고른 숲을 둘러싼 전설의 정체였군...
 qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
@@ -1083,6 +1092,8 @@ qstr_You_are_entering_{s1}|당신은 {s1}을 지나는 중이다.
 qstr_The_war_expands_comm|전쟁이 확산되고 있고, 사령관들은 점점 대담해지고 있다! (공성에 필요한 조건 감소)
 qstr_Your_party_is_spotte|당신의 부대는 {s1}에게 포착되었다.
 qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
+; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
+; qstr_Athelas_used_up.|Athelas used up.
 qstr_Party_has_nothing_to|부대가 먹을 식량이 부족합니다!
 qstr_You_pay_for_accommod|당신은 숙박비를 지불했다.
 qstr_The_troll_outside_{s|{s2} 밖의 트롤이 살해당했다. 임무 취소됨.
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{reg66} 명의 {s5} 병력 살해함. (매 시간마�
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} 병력 사살.  (매 시간마다 측정)
 qstr_{reg68}_{s10}_killed|{reg68} 의 {s10}을 사살했다. (매 시간마다 측정)
 qstr_{s1}_is_scouted.|{s1}을 정찰했다.
+qstr_{s2}_was_defeated!|{s2}가 패배했다!
 qstr_The_Age_of_Men_has_f|인간 시대의 끝이 도래했다. 이제 두 개의 탑이 남은 잔당과 동맹들을 끌어모아 누가 중간계의 유일한 지배자인지를 겨룬다!
 qstr_The_War_of_the_Two_T|두 개의 탑의 전쟁이 시작되었다!
-qstr_{s2}_was_defeated!|{s2}가 패배했다!
 qstr_The_forces_of_{s22}_|{s22}의 군대가 집결 중이다! {s22}는 이제 {s23}
 qstr_The_might_of_{s22}_h|{s22}의 힘이 줄어든다! {s22}는 이제 {s23}
 qstr_In_a_desperate_attem|그의 적을 막아내기 위한 최후의 시도로, 사우론은 모르도르 군단을 내보내고 있다!

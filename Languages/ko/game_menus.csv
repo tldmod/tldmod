@@ -166,9 +166,9 @@ mno_strat_tweaks_back|조정 메뉴로 돌아가기
 menu_camp_action|^^^^^^^^^어떤 물건을 선택하시겠습니까?
 mno_camp_drink_water|엔트워터를 마신다!
 mno_camp_drink_orc_brew|Pass around the Orc Brew!
-; mno_camp_drink_miruvor|Pass around the Miruvor!
-; mno_camp_use_athelas|Use Athelas for wound treatment.
-; mno_camp_use_drums|Beat the Drums of the Deep.
+mno_camp_drink_miruvor|미루보르 주변을 돈다!
+mno_camp_use_athelas|상처를 치료하기 위해 임금님풀(아델라스)를 사용한다.
+mno_camp_use_drums|협곡의 나팔을 분다.
 mno_camp_action_4|돌아가기
 menu_assasins_attack_player_won|당신은 {s3}에 의해 보내진 암살자들을 {s2}에서 성공적으로 물리쳤습니다.
 menu_assasins_attack_player_retreat|당신은 목숨을 건진 채 도망쳤습니다!
@@ -310,6 +310,7 @@ mno_speak_with_elder|{s6}와(과) 대화
 mno_isengard_underground|지하 선술집에 들어가기
 mno_isengard_underground_door|지하 동굴로 들어가기.
 mno_tirith_toplevel|꼭대기층으로 올라가기
+mno_tirith_toplevel_door|요새로 가기
 mno_erebor_gates|정문으로 가기.
 mno_town_leave|떠나기
 mno_town_leave_door|떠나기

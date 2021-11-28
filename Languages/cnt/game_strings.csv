@@ -5,7 +5,7 @@ str_noone|沒 有 人
 str_s50_comma_s51|{s50}， {s51}
 str_s50_and_s51|{s50} 和 {s51}
 str_s5_s_party|{s5} 的 隊 伍
-str_s5_s_host| {s5} 的 舉 辦 者
+str_s5_s_host| {s5}的大軍
 str_given_by_s1_at_s2|在 {s2} 被 {s1} 給 予
 str_given_by_s1_in_wilderness|在 戰 場 上 被 {s1} 給 予
 str_s7_raiders|{s7} 掠 奪 者
@@ -13,7 +13,7 @@ str_bandits_eliminated_by_another|令 人 煩 厭 的 強 盜 已 被 其 他 �
 str_msg_battle_won|戰 鬥 勝 利! 按 下 tab 離 開 戰 場...
 str_tutorial_map1|你 正 在 查 看 中 土 地 圖。在 地 圖 上 按 下 左 鍵 去 移 動 你 的 隊 伍、進 入 城 鎮、或 者 追 逐 其 他 隊 伍。假 如 你 的 隊 伍 停 止 移 動， 時 間 將 會 暫 停。如 要 在 任 何 地 方 過 渡 時 間 請 按 下 空 白 鍵。
 str_accept|接 受
-str_charge|衝 鋒
+str_charge|衝鋒
 str_color|顏 色
 str_flip_horizontal|水 平 翻 轉
 str_flip_vertical|垂 直 翻 轉
@@ -62,11 +62,11 @@ str_tutorial_5_msg_5|你的人處於適當的位置，敵人聚集在一起並�
 str_tutorial_5_msg_6|精彩！ 你已經在Mount＆Blade完成了第一次野戰。\n在戰鬥中智能指揮你的部隊對你作為戰鬥指揮官的成功至關重要。確保了解如何在有利的位置上移動你的部隊。^^\n在第三紀的最後幾天，有更複雜的編隊，如步兵盾牆和騎兵楔型陣。\n您可以在遊戲中了解更多相關信息。^^您可以隨時按'TAB'離開教程。
 str_trainer_help_1|這是一個訓練場，您可以在這裡學習遊戲的基礎知識。\n使用A，S，D，W鍵移動並使用鼠標環顧四周。
 str_trainer_help_2|要和訓練師交談，靠近他，看著他，當你看到他名字下的'教練'這個詞時，按'F'鍵。\n當您希望離開此區域或任何其他區域或退出戰鬥時，您可以按'TAB'鍵。
-str_custom_battle_1|無畏的安格博和他的剛鐸夥伴阻止了哈拉德的軍隊。\n他大聲呼喊，奔馳前進，帶領忠心的人展開激烈的戰鬥。
-str_custom_battle_2|來自羅斯洛立安的凱勒鵬正在帶領一群騎兵和弓箭手巡邏，當一名前方監視員發出警告，灰燼邪惡的人接近。 \n這是可怕的黑努美諾爾！在羅斯洛立安附近已經很久了，但現在他們必須被趕回到永恆的世界。
+str_custom_battle_1|無畏的安格博和他的剛鐸一眾阻止了哈拉德的軍隊。\n他大聲呼喊，奔馳前進，帶領忠心的人展開激烈的戰鬥。
+str_custom_battle_2|來自羅瑞安的凱勒鵬正在帶領一群騎兵和弓箭手巡邏，當一名前方監視員發出警告，灰燼邪惡的人接近。 \n這是可怕的黑努美諾爾！在羅斯洛立安附近已經很久了，但現在他們必須被趕回到永恆的世界。
 str_custom_battle_3|葛林伯元帥正守著洛汗最後一道防線—號角堡。\n現在，艾辛格的軍隊正準備發動最後一次沖鋒。\n他必須用勇氣和利劍守住這道城牆。
 str_custom_battle_4|當斥侯通知貝蘭海姆領主，一支盧恩軍隊正走向他們。\n他決定迅速準備營地的防禦工事，並試圖對抗更多的人。
-str_custom_battle_5|烏骨陸把他凶猛的軍團帶往西方以用於劫掠。如果他能在今天天黑以前將這個矮人的要塞納入他的掌控的話，他那位於邪黑塔的主人一定會非常高興的。
+str_custom_battle_5|烏骨陸把他凶猛的軍團帶往西方以用於劫掠。如果他能在今天天黑以前將這個矮人的要塞納入他的掌控的話，他那位於黑邪塔的主人一定會非常高興的。
 str_custom_battle_6|烏骨陸和他的半獸人掠奪者小隊正拼命地逃離精靈巡邏隊的圍捕。運氣不可能永遠眷顧一個人 ，他還是被堵到了。
 str_custom_battle_7|海 盜 在 剛 鐸 的 沿 岸 建 立 了 營 地！還 真 有 種。在 他 們 的 增 援 來 到 之 前，我 們 一 起 去 進 攻 吧，把 他 們 趕 回 去 海 裡。
 str_finished|（已 完 成）
@@ -270,14 +270,14 @@ str_name_19|阿爾卡林
 str_name_20|貝烈貢德
 str_name_21|貝拉格
 str_name_22|貝爾吉爾
-str_name_23|玻桑德
+str_name_23|波桑德
 str_name_24|克奧爾
 str_name_25|奇爾揚
 str_name_26|達姆羅德
 str_name_27|德茹芬
 str_name_28|多拉思
 str_name_29|杜伊林
-str_name_30|杜 因 希 爾
+str_name_30|杜因希爾
 str_name_31|埃加爾莫斯
 str_name_32|埃美迪爾
 str_name_33|伊拉頓
@@ -293,166 +293,166 @@ str_name_42|蓋斯隆
 str_name_43|戈利姆
 str_name_44|格里斯尼爾
 str_name_45|貢多
-; str_name_46|Hador
-; str_name_47|Haldar
-; str_name_48|Hallacar
-; str_name_49|Hathol
-; str_name_50|Herion
-; str_name_51|Hild
-; str_name_52|Hunthor
-; str_name_53|Imlach
-str_name_54|伊 奧 瑞 絲
-; str_name_55|Ivorwen
-; str_name_56|Labadal
-; str_name_57|Larnach
-; str_name_58|Magor
-; str_name_59|Mairen
-; str_name_60|Malach
-; str_name_61|Malantur
-; str_name_62|Malvegil
-; str_name_63|Mardil
-; str_name_64|Meneldur
-; str_name_65|Minalcar
-; str_name_66|Minohtar
+str_name_46|哈多
+str_name_47|哈爾達
+str_name_48|哈爾拉卡
+str_name_49|哈索爾
+str_name_50|赫瑞安
+str_name_51|希爾德
+str_name_52|胡梭爾
+str_name_53|伊姆拉赫
+str_name_54|伊奧瑞絲
+str_name_55|艾佛溫
+str_name_56|拉巴達爾
+str_name_57|拉納克
+str_name_58|馬國爾
+str_name_59|邁倫
+str_name_60|馬拉赫
+str_name_61|馬藍圖爾
+str_name_62|馬維吉爾
+str_name_63|馬迪爾
+str_name_64|曼奈德
+str_name_65|米拉卡
+str_name_66|米諾陶
 str_name_67|奧德赫爾
-; str_name_68|Orleg
-; str_name_69|Orodreth
-; str_name_70|Ostoher
-; str_name_71|Pelendur
-; str_name_72|Ragnor
-; str_name_73|Sador
-; str_name_74|Súrion
-; str_name_75|Thorongil
-; str_name_76|Turambar
+str_name_68|歐爾烈格
+str_name_69|歐洛佳斯
+str_name_70|奧斯托和
+str_name_71|佩蘭多
+str_name_72|拉格諾爾
+str_name_73|薩多
+str_name_74|蘇瑞安
+str_name_75|索龍哲爾
+str_name_76|圖倫拔
 str_name_77|烏法斯特
 str_name_78|烏瓦斯
 str_name_79|瓦拉卡
 str_name_80|沃夫
 str_name_elf_1|梅爾基爾
 str_name_elf_2|羅曼諾爾
-; str_name_elf_3|Aegnor
-; str_name_elf_4|Amdír
-; str_name_elf_5|Amras
-; str_name_elf_6|Annael
-; str_name_elf_7|Aredhel
-; str_name_elf_8|Arminas
-; str_name_elf_9|Caranthir
-; str_name_elf_10|Curufin
-; str_name_elf_11|Daeron
-; str_name_elf_12|Eluchíl
-; str_name_elf_13|Edrahil
-; str_name_elf_14|Eluréd
-; str_name_elf_15|Erestor
-; str_name_elf_16|Faelivrin
-; str_name_elf_17|Finrod
-; str_name_elf_18|Felagund
-; str_name_elf_19|Galathil
+str_name_elf_3|艾格諾爾
+str_name_elf_4|阿瑪蒂爾
+str_name_elf_5|阿姆拉斯
+str_name_elf_6|安耐爾
+str_name_elf_7|阿瑞蒂爾
+str_name_elf_8|阿米那斯
+str_name_elf_9|卡蘭希爾
+str_name_elf_10|庫路芬
+str_name_elf_11|戴隆
+str_name_elf_12|埃盧希爾
+str_name_elf_13|埃德拉希爾
+str_name_elf_14|埃盧瑞德
+str_name_elf_15|埃瑞斯托
+str_name_elf_16|菲莉芙林
+str_name_elf_17|芬羅德
+str_name_elf_18|費拉剛
+str_name_elf_19|加拉希爾
 str_name_elf_20|加爾多
-; str_name_elf_21|Gelmir
-; str_name_elf_22|Gildor
-; str_name_elf_23|Guilin
-; str_name_elf_24|Ithilbor
-; str_name_elf_25|Lindir
-; str_name_elf_26|Lómion
-; str_name_elf_27|Maedhros
-; str_name_elf_28|Maeglin
-; str_name_elf_29|Malgalad
-; str_name_elf_30|Nellas
-; str_name_elf_31|Nerdanel
-; str_name_elf_32|Nerwen
-; str_name_elf_33|Nimloth
-; str_name_elf_34|Orodreth
-; str_name_elf_35|Oropher
-str_name_elf_36|歐 洛 芬
-; str_name_elf_37|Saeros
-; str_name_dwarf_1|Assistnik
-; str_name_dwarf_2|Vader
-; str_name_dwarf_3|Azaghâl
-; str_name_dwarf_4|Bifur
-; str_name_dwarf_5|Bofur
-; str_name_dwarf_6|Bombur
-; str_name_dwarf_7|Borin
-; str_name_dwarf_8|Dori
-; str_name_dwarf_9|Dwalin
-; str_name_dwarf_10|Farin
-; str_name_dwarf_11|Frár
-; str_name_dwarf_12|Frerin
-; str_name_dwarf_13|Frór
-; str_name_dwarf_14|Gamil
-; str_name_dwarf_15|Gróin
-; str_name_dwarf_16|Grór
-; str_name_dwarf_17|Ibun
-; str_name_dwarf_18|Khîm
-; str_name_dwarf_19|Lóni
-; str_name_dwarf_20|Mîm
-; str_name_dwarf_21|Nár
-; str_name_dwarf_22|Narvi
-; str_name_dwarf_23|Nori
-; str_name_dwarf_24|Óin
-; str_name_dwarf_25|Ori
-; str_name_dwarf_26|Telchar
-; str_name_dwarf_27|Marco
-; str_name_dwarf_28|Octo
-; str_name_orc_1|Triglav
-; str_name_orc_2|Adgulg
-; str_name_orc_3|Aghed
-; str_name_orc_4|Aguk
-; str_name_orc_5|Alog
-; str_name_orc_6|Azhug
-; str_name_orc_7|Bagdud
-; str_name_orc_8|Bargulg
-; str_name_orc_9|Bog
-; str_name_orc_10|Borug
-; str_name_orc_11|Bulgan
-; str_name_orc_12|Bumhug
-; str_name_orc_13|Carguk
-; str_name_orc_14|Dalthu
-; str_name_orc_15|Derthag
-; str_name_orc_16|Dregu
-; str_name_orc_17|Dugarod
-; str_name_orc_18|Ertguth
-; str_name_orc_19|Fandagh
-; str_name_orc_20|Farghed
-; str_name_orc_21|Fozhug
-; str_name_orc_22|Furbog
-; str_name_orc_23|Gholug
-; str_name_orc_24|Gnalurg
-; str_name_orc_25|Grug
-; str_name_orc_26|Haguk
-; str_name_orc_27|Hoknuk
-; str_name_orc_28|Igmut
-; str_name_orc_29|Jolagh
-; str_name_orc_30|Jukha
-; str_name_orc_31|Karguk
-; str_name_orc_32|Klog
-; str_name_orc_33|Krothu
-; str_name_orc_34|Kulgha
-; str_name_orc_35|Margulg
-; str_name_orc_36|Mazhug
-; str_name_orc_37|Naghat
-; str_name_orc_38|Nugbu
-; str_name_orc_39|Nurbag
-; str_name_orc_40|Oggha
-; str_name_orc_41|Olodagh
-; str_name_orc_42|Omogulg
-; str_name_orc_43|Opoguk
-; str_name_orc_44|Orgoth
-; str_name_orc_45|Perthag
-; str_name_orc_46|Pofhug
-; str_name_orc_47|Prutha
-; str_name_orc_48|Raguk
-; str_name_orc_49|Romarod
-; str_name_orc_50|Rugbu
-; str_name_orc_51|Sargulg
-; str_name_orc_52|Slog
-; str_name_orc_53|Suhgan
-; str_name_orc_54|Surgha
-; str_name_orc_55|Torug
-; str_name_orc_56|Turbag
-; str_name_orc_57|Urghat
-; str_name_orc_58|Varguk
-; str_name_orc_59|Zlog
-; str_name_orc_60|Zunuguk
+str_name_elf_21|蓋米爾
+str_name_elf_22|吉爾多
+str_name_elf_23|古伊林
+str_name_elf_24|伊希爾博
+str_name_elf_25|林迪爾
+str_name_elf_26|盧米昂
+str_name_elf_27|邁茲洛斯
+str_name_elf_28|邁格林
+str_name_elf_29|馬加拉德
+str_name_elf_30|妮爾拉絲
+str_name_elf_31|奈丹妮爾
+str_name_elf_32|諾玟
+str_name_elf_33|寧羅絲
+str_name_elf_34|歐洛佳斯
+str_name_elf_35|歐瑞費爾
+str_name_elf_36|歐洛芬
+str_name_elf_37|賽洛斯
+str_name_dwarf_1|艾斯提尼克
+str_name_dwarf_2|維達
+str_name_dwarf_3|阿扎格哈爾
+str_name_dwarf_4|畢佛
+str_name_dwarf_5|波佛
+str_name_dwarf_6|龐伯
+str_name_dwarf_7|波林
+str_name_dwarf_8|朵力
+str_name_dwarf_9|德瓦林
+str_name_dwarf_10|法林
+str_name_dwarf_11|弗拉爾
+str_name_dwarf_12|弗雷林
+str_name_dwarf_13|弗羅爾
+str_name_dwarf_14|加米爾
+str_name_dwarf_15|葛音
+str_name_dwarf_16|葛爾
+str_name_dwarf_17|伊布恩
+str_name_dwarf_18|奇姆
+str_name_dwarf_19|羅尼
+str_name_dwarf_20|密姆
+str_name_dwarf_21|納爾
+str_name_dwarf_22|納維
+str_name_dwarf_23|諾力
+str_name_dwarf_24|歐音
+str_name_dwarf_25|歐力
+str_name_dwarf_26|塔爾查
+str_name_dwarf_27|馬可
+str_name_dwarf_28|奧托
+str_name_orc_1|特里格拉夫
+str_name_orc_2|阿德格魯
+str_name_orc_3|阿蓋德
+str_name_orc_4|阿古克
+str_name_orc_5|阿洛格
+str_name_orc_6|阿祖克
+str_name_orc_7|巴格杜德
+str_name_orc_8|巴爾格魯
+str_name_orc_9|波格
+str_name_orc_10|波魯格
+str_name_orc_11|布魯甘
+str_name_orc_12|巴穆哈格
+str_name_orc_13|卡爾故
+str_name_orc_14|達爾圖
+str_name_orc_15|德薩格
+str_name_orc_16|德瑞古
+str_name_orc_17|杜加羅德
+str_name_orc_18|俄古斯
+str_name_orc_19|范達
+str_name_orc_20|法爾蓋
+str_name_orc_21|佛茲霍格
+str_name_orc_22|弗爾博格
+str_name_orc_23|古魯格
+str_name_orc_24|格納魯格
+str_name_orc_25|格魯格
+str_name_orc_26|哈古克
+str_name_orc_27|霍克努克
+str_name_orc_28|伊格穆特
+str_name_orc_29|喬拉
+str_name_orc_30|尤卡
+str_name_orc_31|卡古
+str_name_orc_32|克洛格
+str_name_orc_33|克羅圖
+str_name_orc_34|庫魯加
+str_name_orc_35|馬爾古格
+str_name_orc_36|馬卓格
+str_name_orc_37|納加特
+str_name_orc_38|努布
+str_name_orc_39|努巴格
+str_name_orc_40|奧加
+str_name_orc_41|奧洛達
+str_name_orc_42|奧莫格魯
+str_name_orc_43|奧波古克
+str_name_orc_44|奧爾戈斯
+str_name_orc_45|佩瑟格
+str_name_orc_46|波福克
+str_name_orc_47|普魯塔
+str_name_orc_48|拉古克
+str_name_orc_49|洛瑪羅德
+str_name_orc_50|葛布
+str_name_orc_51|薩古魯格
+str_name_orc_52|斯洛格
+str_name_orc_53|蘇甘
+str_name_orc_54|蘇爾加
+str_name_orc_55|托魯格
+str_name_orc_56|圖巴格
+str_name_orc_57|烏爾加特
+str_name_orc_58|瓦爾古克
+str_name_orc_59|佐羅格
+str_name_orc_60|祖努古克
 str_surname_1|搭洛斯的{s50}
 str_surname_2|羅薩納奇的{s50}
 str_surname_3|埃瑞赫的{s50}
@@ -599,13 +599,13 @@ str_npc9_backstory_a|好啊，人們都叫我葛瑪。用腸子都能猜到我�
 str_npc10_backstory_a|我是都戈什！
 str_npc11_backstory_a|不！不是跟踪者！這是誰？他們把我扔出來了！我跟你說，他們都失心瘋了，就是如此。詛咒他們！一開始他們說我射箭不准，又說我跑得太慢，最後說我鼻子不靈。啊呸！要不是他們老找我麻煩，我早就進黑坑(邪黑塔周邊)了。我一定要把那些大佬的皮剝下來，再佔了他們的位置！
 str_npc12_backstory_a|我在這裡指揮一群伙計。我是哥巴葛，你最好快點兒學會這個道理—我們強獸人才是這裡真正的頭兒。大頭兒有時會打滑，哪怕最大的頭兒也會犯錯。總是可憐的強獸人把錯誤扶正，獎賞卻很少。他們甚至不會告訴我們他們知道的事情，不是麼？他們連一半都不說，唔啊啊啊啊啊！
-str_npc13_backstory_a|我？我是南方沙漠的一顆砂礫，被寒冷和黑暗的夜風吹向北方。我是萊克雅達，哈拉德的蛇王，金蛇之主，黑蛇部落的詛咒，現服務於黑暗魔君的意志。
+str_npc13_backstory_a|我？我是南方沙漠的一顆砂礫，被寒冷和黑暗的夜風吹向北方。我是萊克雅達，哈拉德的蛇王，金蛇之主，黑蛇部落的詛咒，現服務於黑暗之主的意志。
 str_npc14_backstory_a|我是弗達墨，昂巴南方領域之子。哈隆鐸之南，貝爾法拉斯灣，兩者都是我和我人民的家鄉。我們是海洋與航行的君王，某些人口中的海盜，貝爾法拉斯灣的同類。
-str_npc15_backstory_a|我 是 天 才 的 博 爾 佐 格，整 骨 師，縫 傷 者 和 治 療 薩 滿。 如 果 你 為 索 倫 之 眼 而 戰，毫 無 疑 問，你 的 小 伙 伴 會 被 臉 色 蒼 白 的 山 林 人 或 馬 匹 愛 好 者 砍 傷。 現 在，哼 哼 哼！ - 半 獸 人 很 容 易 取 代，但，偉 大 的 領 袖，你 如 何 替 換 座 狼？巨 人？ 洞 穴 食 人 妖？噓 噓！ 沒 辦 法！ 你 需 要 我，偉 大 的 博 爾 佐 格！
+str_npc15_backstory_a|我 是 天 才 的 博扎格，整 骨 師，縫 傷 者 和 治 療 薩 滿。 如 果 你 為 索 倫 之 眼 而 戰，毫 無 疑 問，你 的 小 伙 伴 會 被 臉 色 蒼 白 的 山 林 人 或 馬 匹 愛 好 者 砍 傷。 現 在，哼 哼 哼！ - 半 獸 人 很 容 易 取 代，但，偉 大 的 領 袖，你 如 何 替 換 座 狼？巨 人？ 洞 穴 食 人 妖？噓 噓！ 沒 辦 法！ 你 需 要 我，偉 大 的 博 爾 佐 格！
 str_npc16_backstory_a|那麼現在，應該首先聲明自己是陌生人。\n儘管如此，我是畢額丘斯的瓦爾凡...我可以說你還沒有聽過我的土地的歌曲或故事，這些歌曲或故事的名字叫畢額丘斯，因為這個名字會考驗你的勇氣，讓你的心充滿悲傷。
 str_npc17_backstory_a|人們叫我丁博，我在樹林裡工作。那裡很好，我喜歡樹林。樹林裡有很多樹，我喜歡樹。我這一輩子都在樹林裡工作，因為我很強壯，也因為我喜歡樹。
 str_npc1_backstory_b|你應當知曉我是名繼承了登丹人血統與勇敢的伊西力安遊俠。我知道如何跟踪和偵查，而無數獸人則知道我的劍藝與射術。我還能訓練任何願意與魔多陰影相抗衡的勇敢靈魂。
-str_npc2_backstory_b|我曾被訓練成為米那斯提力斯的看守，保護聖白城的安全，並服務於剛鐸的攝政王。
+str_npc2_backstory_b|我曾被訓練成為米那斯提力斯的看守，保護白之城的安全，並服務於剛鐸的攝政王。
 str_npc3_backstory_b|我是西谷的騎士 - 他們沒有帶我去伊艾辛河巡邏。\n我知道他們的行為將配得上綠色旗幟，但我擔心許多人不會回來。
 str_npc4_backstory_b|我生於一個貴族家庭，從我還是一個小女孩兒的時候，我就被選作伊歐玟女士的伴娘服侍他。我們的父輩很明智，允許我們像男孩兒一樣接受戰鬥訓練，讓我們成為了洛汗的執盾之女。
 str_npc5_backstory_b|我是埃爾隆德大人向凱勒鵬大人派遣的大使，我的任務包括提供援助與建議，以支援位於羅馬尼安的戰爭。
@@ -616,7 +616,7 @@ str_npc9_backstory_b|於是我問我自己：'葛瑪，你打算以一坨爛肉�
 str_npc10_backstory_b|我是艾辛格的一名狼騎兵，也是一名追踪者。
 str_npc11_backstory_b|啊！這只不過是因為我的鼻子當時有點堵。你問我連石頭都嗅不了為什麼還帶著鼻子？這不怪我！要怪那群該死的強獸人！那群挨千刀的賊！我的嗅覺就是因為他們才不好使的！那群混蛋四處挖四處嗅，我根本就沒機會聞什麼東西，一切就被他們清走了。
 str_npc12_backstory_b|另外那些戒靈可把我嚇壞了被他們注視就好像你的肉身被剝了下來似得，而你的靈魂則在另一邊的黑暗中凍結但他(指黑暗魔君)喜歡它們。;它們是他的最愛。抱怨是沒有用的！實話跟你說，在這座城市裡幹活可不是說著玩兒的。要是我能選擇的話，我肯定會選擇一個沒有戒靈的地方。
-str_npc13_backstory_b|我看到了黑暗魔君的話語開始在我族民中間傳播，他們的內心與思想都已經被他蔓延。大多數人已經墮入黑暗當中，而替代之前勇氣的則是永不停歇的殺戮慾望。所以當他們的耳邊傳來黑暗魔君的號召之時，太多太多的提線木偶願意響應。
+str_npc13_backstory_b|我看到了黑暗之主的話語開始在我族民中間傳播，他們的內心與思想都已經被他蔓延。大多數人已經墮入黑暗當中，而替代之前勇氣的則是永不停歇的殺戮慾望。所以當他們的耳邊傳來黑暗魔君的號召之時，太多太多的提線木偶願意響應。
 str_npc14_backstory_b|乘風破浪於貝爾法拉斯灣中會極大地改變任何人;那些反抗她的人也會，但他們現在不過是孩童罷了真正的男人只會直面暴雨並在風口浪尖騎行我早已見過貝爾法拉斯灣最黑暗的時刻，但依舊征服了她。
 str_npc15_backstory_b|許多月亮之前，當我還只是一個新鮮小東西的時候，家裡的老傢伙帶領著整個部落深入礦山，因為那裡的矮人最近都死了。有一個火焰幽魂(這裡特指摩瑞亞炎魔)曾經從這裡經過，它可真是舒適和溫暖！從此我們就在那裡扎下了根，但經常有一些殘暴的冒險者或矮人英雄來到這裡，打破我們隧道的平靜，傷害或殺死我們。漸漸地，我的手學會了縫合劍斧造成的傷口，而我的頭腦則學會了只通過外表來觀察骨頭。現在，我的製藥和修復創口技藝同樣厲害！
 str_npc16_backstory_b|畢額丘斯是一個激烈的種族，在我的家鄉，常常被西方人屠殺。像野獸一樣被追趕，作為刀刃的食物。那些刀溢出的血液和在我體內流動的血液是一樣的，因為我心還在疼痛。
@@ -720,7 +720,7 @@ str_npc11_signup_2|外面有很多東西可以讓我的鼻子去聞，讓我的�
 str_npc12_signup_2|我會把鞭子好好的烙印在你手下那群渣滓們的心中的，並讓他們在哭喊聲中服從你的意志。如果你的伙計們還有點兒用的話，他們會更強的。你說呢？
 str_npc13_signup_2|知道了。但請記住，我只忠於我的族人。我戰鬥了很久，也失去了很多。他們的命運只能由我來掌控。
 str_npc14_signup_2|幸運的是，死人是不需要財寶的。更幸運的是，我恰巧有著協助收回死人財寶的技能。
-str_npc15_signup_2|哦，真是博扎克天賜者偉大的時刻，這也是偉大的領袖你的！我們將一起征服！你，有了我這雙治愈巧手將無人能擋！我，則作為偉大的半獸人智者支持你！
+str_npc15_signup_2|哦，真是博扎格天賜者偉大的時刻，這也是偉大的領袖你的！我們將一起征服！你，有了我這雙治愈巧手將無人能擋！我，則作為偉大的半獸人智者支持你！
 str_npc16_signup_2|我 擔 心 我 沒 法 再 等 下 去 了。我 計 劃 加 入 下 一 批 出 發  的 部 隊，不 管 我 的 酋 長 同 意 與 否，我 想 戰 爭 很 快 就 要 結 束 了。
 str_npc17_signup_2|我需要拿一些工具，然後就能出發。我說的那顆松樹就在不遠處，你一定要去看看。
 str_npc1_signup_response_1|我的队伍的确需要一名熟练的游侠，欢迎你的加入。
@@ -771,7 +771,7 @@ str_npc11_payment|我只需要某個人去搞定大佬。我們當然能等他�
 str_npc12_payment|嘿喲！我需要提醒伙計們把他們的肛門閉緊點兒，否則要是某個頭儿知道他，他們肯定會把我的腸子扯出來的。相信我，他們一定會的！ [需要{s14}的{reg14}點影響力]
 str_npc13_payment|啊酋長不會放我離開的，你有法子說服他們麼？ [需要{s14}的{reg14}點影響力]
 str_npc14_payment|說服港口隊長放我離開可要費不少嘴皮子。你先去搞定他，然後我們就能一起出海面對風暴啦！ [需要{s14}的{reg14}點影響力]
-str_npc15_payment|啊，沒錯！偉大的！戰士！領主！只不過這兒還有點小問題！一個對我巨大的不公，這個洞穴的主人不喜歡我對治療的提議，還偷了我所有的設備！大膽無禮！竟敢偷偉大的博扎克的東西！主人，我沒法從他的骯髒的爪子下收回我無價的設備！ [需要{s14}的{reg14}點影響力]
+str_npc15_payment|啊，沒錯！偉大的！戰士！領主！只不過這兒還有點小問題！一個對我巨大的不公，這個洞穴的主人不喜歡我對治療的提議，還偷了我所有的設備！大膽無禮！竟敢偷偉大的博扎格的東西！主人，我沒法從他的骯髒的爪子下收回我無價的設備！ [需要{s14}的{reg14}點影響力]
 str_npc16_payment|我不會永遠追隨你，我有自己的路要走；不過你的路會跟我的重合一段。在我們出​​發之前，我必須先向那些先於先死之人表達敬意。我也希望你能表達你的敬意，然後我們就可以離開了。任何人都不能忘記他的祖先，正如祖先從來沒有忘記我們一樣。 [需要{s14}的{reg14}點影響力]
 str_npc17_payment|我喜歡樹，但我的老叔需要我。 [需要{s14}的{reg14}點影響力]
 str_npc1_payment_response|不用擔心，我會和他解決好你的空缺所帶來的問題的。 [花費{reg14}/{reg15}點影響力]
@@ -799,7 +799,7 @@ str_npc5_morality_speech|您必須慎重考慮您的行為，指揮官。 {s21}�
 str_npc7_morality_speech|我並不為您作出{s21}的決定感到高興。戰死是任何腦袋正常的矮人心中的榮耀，而被懦夫帶領則是羞恥。要是我的表親們知道這事兒，他們會怎麼評價我？
 str_npc8_morality_speech|指揮官，我不得不說，{s21}對任何一個男人來說都是嚴酷且不必要的。我會盡我所能減少他們的痛苦，但請不要再犯這樣嚴重的錯誤了。
 str_npc9_morality_speech|一個好戰的強獸人永不{s21}。如果主人現在還有丁點膽量…或許某天早上就丁點兒不剩了，葛瑪說完了。
-str_npc15_morality_speech|你可能覺得偉大的博扎克可以治愈一切，{playername}，但哪怕是我也有極限！如果你繼續{s21}，哪怕是我的才能也會不夠！你必須給我一些支持！我沒法戰勝死亡，不管是因為餓死還是被碾成渣！
+str_npc15_morality_speech|你可能覺得偉大的博扎格可以治愈一切，{playername}，但哪怕是我也有極限！如果你繼續{s21}，哪怕是我的才能也會不夠！你必須給我一些支持！我沒法戰勝死亡，不管是因為餓死還是被碾成渣！
 str_npc1_2ary_morality_speech|隊長，我作為Dúnadan長大，無論是勇敢還是榮譽。 如果我們不這樣做，我會更喜歡{s21}。
 str_npc4_2ary_morality_speech|請你原諒，指揮官。像我這樣的女戰士寧可直面死亡也不遠獲得恥辱。 {s21}是對我的馬和祖先的羞辱。
 str_npc15_2ary_morality_speech|嗨嗨嗨！你真狡猾，哦大人！你收起黃金，點了點頭，說'是的，主人！ '，但你把所有時間都用來規劃這個！嗨嗨！只是我們必須小心點，確保老大看不見你欺騙他…
@@ -888,7 +888,7 @@ str_npc14_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc15_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc16_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc17_personalitymatch_speech|嗯，酋長。我覺得{s11}在森林中如魚得水，能在一篇柳葉上看到一粒塵土。
-str_npc1_personalitymatch_speech_b|我發現{s11}的人非常討人喜歡，她的本土木工藝品是世界上辛達林技術遺留下來的罕見一瞥。你知道，我的父親在傳說中的辛達林精靈隊長為多里亞特的辛格爾國王服務後給我起名字，我總覺得這場公平競賽特別感興趣。
+str_npc1_personalitymatch_speech_b|我發現{s11}的人非常討人喜歡，她的本土木工藝品是世界上辛達技術遺留下來的罕見一瞥。你知道，我的父親在傳說中的辛達精靈隊長為多里亞特的辛格爾國王服務後給我起名字，我總覺得這場公平競賽特別感興趣。
 str_npc2_personalitymatch_speech_b|我在家鄉的父老經常給我講伊西利安遊俠的故事，現在我親眼見識到了故事中發生的一切。如果他們每個人都像{s11}那麼厲害，剛鐸一定會變得安全許多對吧。
 str_npc3_personalitymatch_speech_b|指揮官，我個人建議您在下次戰鬥中命令{s11}盡量靠後站。我實在不忍心看到她在戰場上受傷。還有，這不是酒後胡言。
 str_npc4_personalitymatch_speech_b|保護生命是非常崇高的行為，我能與那種靈魂產生共鳴，即使我們的世界相距甚遠。
@@ -975,11 +975,11 @@ str_npc16_home_description|你知道那座城鎮麼？
 str_npc17_home_description|我之前從來不知道，這裡竟然有這麼多美麗的樹。真好奇有沒有樵夫在這里工作。
 str_npc1_home_description_2|如果剛鐸被擊敗，西奧斯吉力亞斯會率先落入邪眼手下部落的掌控中。我只希望那天法拉墨隊長能夠坐鎮指揮力挽狂瀾。如果我們有多餘的士兵可以加強這裡的防禦，我會非常非常感激的，隊長。
 str_npc2_home_description_2|人們都說現在這裡充斥著可怕的半獸人、令人恐懼的靈魂，甚至還有更加恐怖的東西。我祈禱當剛鐸重新佔領這裡的時候，能清除掉所有的污穢與邪惡。
-str_npc3_home_description_2|如果我們必須穿過恩特森林的話，希望我們能保持匆忙和隱蔽。我不知道誰可能在聽我們的馬蹄聲，我也不想親自找出來。 (注：恩特森林是洛汗人口中的法貢森林)
+str_npc3_home_description_2|如果我們必須穿過恩特森林的話，希望我們能保持匆忙和潛行。我不知道誰可能在聽我們的馬蹄聲，我也不想親自找出來。 (注：恩特森林是洛汗人口中的法貢森林)
 str_npc4_home_description_2|我們會牢記過去的偉大事蹟和犧牲。洛汗和剛鐸的聯軍將再一次拯救我們的人民免遭厄運。
 str_npc5_home_description_2|我只希望我們銘記，即使是偉大者的一員，甚至是一位埃斯塔力，都有可能被腐蝕和墮落。追求力量者必被力量所毀，只希望我們不要拖得太久。 (注：埃斯塔力在昆雅語中意譯為博學者，特指巫師)
 str_npc6_home_description_2|我能感覺到牆後的邪惡大軍正準備出發…去美麗的羅斯洛立安？去河谷鎮？去我的家鄉幽暗密林？我不知道，但請盡你的一切努力阻止他們。
-; str_npc7_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc7_home_description_2|如果戰爭運將帶給我們一大支軍隊的話，我們應該冒險進入礦坑並取回他們那筆巨大的財富。
 str_npc8_home_description_2|我聞到了甜蜜的花香，也看到了蜜蜂收穫的蜜糖。如果您不介意的，我能去弄點蜂蜜自用麼？我只需要幾分鐘就能搞定。
 str_npc9_home_description_2|如果我們沒有大量強獸人在背後支持的話，留在這裡一點兒用處都沒有。當然，如果你想對牆上的哨兵做鬼臉那就是另一回事兒了，哈哈！
 str_npc10_home_description_2|米那斯魔窟，戒靈在那裡整天喝酒，哈哈！
@@ -996,7 +996,7 @@ str_npc3_home_recap|我是埃奧爾族的一員，或是外人口中洛汗人(�
 str_npc4_home_recap|你如此輕易忘記並不令我感到有趣。
 str_npc5_home_recap|我會滿足你的好奇心的，但別在這兒逗留了。
 str_npc6_home_recap|我生長在幽暗密林中，是一位西爾凡精靈。我們族人的木工技術無可匹敵。
-str_npc7_home_recap|我是都靈之子，都靈的子民。
+str_npc7_home_recap|我是都靈一族的德瓦林之子。
 str_npc8_home_recap|我是一名來自河谷鎮的治療師兼草藥醫生。
 str_npc9_home_recap|如果里想要知道，葛魯姆會告訴你，但講故事可殺不死敵人。
 str_npc10_home_recap|我會盡快搞定的。
@@ -1025,7 +1025,7 @@ str_npc15_honorific|主 人
 str_npc16_honorific|首領
 str_npc17_honorific|首 領 
 str_comment_you_captured_a_castle_allied_friendly|我聽說你包圍並攻下了{s51}。這是一場偉大的勝利，能與你為友是我的榮幸。
-str_comment_you_captured_a_castle_allied_spiteful|我聽說你包圍並攻下了{s51}。幹得好！很快，我們就能佔領他們的城堡，洗劫他們的國庫，強迫他們的女人給我們倒酒！
+str_comment_you_captured_a_castle_allied_spiteful|我聽說你包圍並攻下了{s51}。幹得好！很快，我們就能佔領他們的要塞，洗劫他們的國庫，強迫他們的女人給我們倒酒！
 str_comment_you_captured_a_castle_allied_unfriendly_spiteful|我聽說你包圍並攻下了{s51}。好吧，瓦片也有翻身時，當然這不是我說的。勸你在被趕回老巢之前好好享受吧。
 str_comment_you_captured_a_castle_allied_unfriendly|我聽說你包圍並攻下了{s51}。不管我們以前有多少分歧，我還是奉上我的祝賀。
 str_comment_you_captured_a_castle_allied|我聽說你包圍並攻下了{s51}。我們把他們打跑了！
@@ -1298,37 +1298,37 @@ str_gossip_about_character_sadistic|據說{s6}喜歡折磨他的敵人。我可�
 str_gossip_about_character_goodnatured|據說{s6}是個好人，很善待他領地上的人民。所作所為比大多數貴族都好。
 str_gossip_about_character_upstanding|人們都說替{s6}工作是件不錯的事。他對他的屬下很好，如果他們幹的好還會有回報。
 str_latest_rumor|你聽到關於{s6}的最近一次傳聞是：
-str_faction_strength_crushed|廢墟
-str_faction_strength_spent_and_wavering|震顫
+str_faction_strength_crushed|被毀滅
+str_faction_strength_spent_and_wavering|搖搖欲墜
 str_faction_strength_weakened|虛弱
 str_faction_strength_fair|普通
 str_faction_strength_average|平均
 str_faction_strength_strong|強
-str_faction_strength_quite_strong|很 強
-str_faction_strength_very_strong|超 強
-str_faction_strength_unmatched|所 向 披 靡
-str_faction_strength_last|無 效 的
-str_theater_se|剛 鐸 
-str_theater_sw|洛 汗 
+str_faction_strength_quite_strong|很強
+str_faction_strength_very_strong|超強
+str_faction_strength_unmatched|所向披靡
+str_faction_strength_last|無效
+str_theater_se|剛鐸
+str_theater_sw|洛汗
 str_theater_c|南羅馬尼安
 str_theater_n|北羅馬尼安
-str_faction_side_name|自由的人民
+str_faction_side_name|自由之民
 str_faction_side_name1|邪眼
-str_faction_side_name2|白手
-str_party_greet_friend_gondor|你好，白樹的朋友！
+str_faction_side_name2|白掌
+str_party_greet_friend_gondor|你好，白之樹的朋友！
 str_party_greet_enemy_gondor|亮出你的武器吧，剛鐸之敵！
-str_party_greet_friend_dwarf|都靈的子民向你問好，矮人之友！
+str_party_greet_friend_dwarf|都靈一族向你問好，矮人之友！
 str_party_greet_enemy_dwarf|Baruk Khazâd！ Khazâd ai-mênu！\n（矮人戰吼：矮人的戰斧啊！矮人向你衝來了！）
 str_party_greet_friend_rohan|很高興見到你，洛汗之友！
 str_party_greet_enemy_rohan|洛汗驃騎向你挑戰！
 str_party_greet_friend_mordor|為了邪眼的勝利！
 str_party_greet_enemy_mordor|你的頭顱掛在黑門上一定很好看！
-str_party_greet_friend_isengard|向白手致敬！
+str_party_greet_friend_isengard|向白掌致敬！
 str_party_greet_enemy_isengard|智慧的主人(薩魯曼)將會很高興聽到你已經掛掉這件事！
-str_party_greet_friend_lorien|你好，羅斯洛立安之友！
+str_party_greet_friend_lorien|你好，公正的羅瑞安之友！
 str_party_greet_enemy_lorien|污穢之物，我們將終結你的痛苦！
-str_party_greet_friend_imladris|你好，瑞文戴爾與埃爾隆德之友！
-str_party_greet_enemy_imladris|今天，我們把戰鬥帶向瑞文戴爾之敵！
+str_party_greet_friend_imladris|你好，伊姆拉崔與埃爾隆德之友！
+str_party_greet_enemy_imladris|今天，我們把戰鬥帶向伊姆拉崔之敵！
 str_party_greet_friend_woodelf|你好，幽暗密林西爾凡精靈之友！
 str_party_greet_enemy_woodelf|所有帶著惡意進入幽暗密林之人都將永埋於此！
 str_party_greet_friend_dale|你好，河谷鎮之友！
@@ -1341,7 +1341,7 @@ str_party_greet_friend_khand|Jus jívati jyók(古梵文：祝你長壽)，維�
 str_party_greet_enemy_khand|把你的戰士面具帶上吧，今天你將見到末日！
 str_party_greet_friend_umbar|Ni-yôzi zirbîth kiyad(努曼諾爾語：向你問候)，海盜的朋友！
 str_party_greet_enemy_umbar|要是我們現在是在海上，很快就能看到你在甲板上跳舞了！
-str_party_greet_friend_moria|向白手致敬！
+str_party_greet_friend_moria|向白掌致敬！
 str_party_greet_enemy_moria|你很快就會被摩瑞亞獸人割喉了！
 str_party_greet_friend_guldur|為了邪眼的勝利！
 str_party_greet_enemy_guldur|精靈和他們的所有盟友都將在我們的劍下飲恨！
@@ -1349,7 +1349,7 @@ str_party_greet_friend_gundabad|畏懼安格馬的力量吧！
 str_party_greet_enemy_gundabad|我們將屈尊到你身前並在你的屍體上享用盛宴！
 str_party_greet_friend_dunland|你好，驃騎之敵！ (注：洛汗人和登蘭德人是世仇)
 str_party_greet_enemy_dunland|你的房子將被燒毀，而你的家人將被撕碎！
-str_party_greet_friend_beorn|你好，比翁人之友！
+str_party_greet_friend_beorn|你好，比翁之友！
 str_party_greet_enemy_beorn|你將親身領略熊人們的狂怒！
 str_subfaction_gondor_name_begin|剛 鐸 
 str_subfaction_gondor_name1|佩 拉 格 
@@ -1366,7 +1366,7 @@ str_rohan_rumor_3|中土世界沒有任何馬比洛汗馬好，哪怕是精靈�
 str_rohan_rumor_4|如果你擁有治病救人的技藝的話，請對待我的馬兒和對待我一樣。
 str_rohan_rumor_5|‘帶給我八匹馱馬！ ’他如此說道…  要知道昨天他曾要了七匹。這就很奇怪了。
 str_rohan_rumor_6|剛鐸人喜歡強壯結實的馬，而我們則喜歡享受極限的速度。精靈們只要最好的東西，而我們的敵人卻偷馬！
-; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superior but require a more experienced rider to handle.
+str_rohan_rumor_7|我看過許多種的沙漠駒和維瑞亞馬。洛汗馬很顯然更優良但需要技術更好的騎手來控制。
 str_rohan_rumor_8|我曾經見過維瑞亞馬和沙漠馬。洛汗馬很顯然強於前兩者，但更需要騎術的精湛。
 str_rohan_rumor_9|洛汗軍隊裝備了長槍和長柄槍以針對我們出色的騎兵。這場戰爭結束之前，叛徒薩魯曼將砍光法貢森林的樹木，用於裝備他的軍隊。
 str_rohan_rumor_10|驃騎之國最好的騎手始於騎最好的馬。
@@ -1385,7 +1385,7 @@ str_gondor_rumor_3|魔多之地既乾燥又貧瘠，你說那裡的東西究竟�
 str_gondor_rumor_4|我們祖祖輩輩都在這片土地上勞作。我們的過去充斥著光榮和勇敢，可是未來卻不確定。
 str_gondor_rumor_5|魔多陰影的戰備資源看起來是無盡的，但這其實是靠他奴役的千萬奴隸！
 str_gondor_rumor_6|我們當然知道精靈們在北方，但這年頭兒誰都沒見過他們。
-str_gondor_rumor_7|我願看見白樹再度在諸王的庭院中盛開繁花，我願看見銀王冠歸來，米那斯提力斯安享和平。我願看見米那斯阿諾爾再度如古時一樣，充滿光明，崇高又美好，美如眾後之後(摘自鄧嘉宛譯，魔戒雙塔殊途卷四第五章)。(注：米那斯阿諾爾為米那斯提力斯原名)
+str_gondor_rumor_7|我願看見白之樹再度在諸王的庭院中盛開繁花，我願看見銀王冠歸來，米那斯提力斯安享和平。我願看見米那斯阿諾爾再度如古時一樣，充滿光明，崇高又美好，美如眾後之後(摘自鄧嘉宛譯，魔戒雙塔殊途卷四第五章)。(注：米那斯阿諾爾為米那斯提力斯原名)
 str_gondor_rumor_8|為什麼昂巴要一直侵略我們？按理來說跟我們交易獲利更高的啊？什麼能比打撈古代努曼諾爾帝國物品再與剛鐸貴族們交易來錢來的快呢？
 str_gondor_rumor_9|我們要保護自己的生命，對抗一個將要吞噬一切的毀滅者，戰爭就不可避免。但我不會因其銳利而愛雪亮的刀劍，不會因其迅疾而愛箭矢，也不會因其榮耀而愛戰士。我只愛他們保衛的對象。(摘自鄧嘉宛譯，魔戒雙塔殊途卷四第五章)
 str_gondor_rumor_10|精靈王吉爾 - 加拉德，詩琴仍為他把哀歌傳唱：他的王國東起高山，西至海洋，最後的樂土任人徜徉(摘自鄧嘉宛譯，魔戒魔戒同盟卷一第十一章)
@@ -1417,7 +1417,7 @@ str_mordor_rumor_2|戒靈必將攻占人類世界！
 str_mordor_rumor_3|你怎麼不在工作，小子？邪眼一直在注視著你！
 str_mordor_rumor_4|不久，黑暗將會降臨 Durb-burz(黑語：黑暗統治)！
 str_mordor_rumor_5|好 餓！哪 裡 有 食 物？
-str_mordor_rumor_6|我們將在聖白城的人類屍體上享用盛宴！
+str_mordor_rumor_6|我們將在白之城的人類屍體上享用盛宴！
 str_mordor_rumor_7|主人為這場戰爭特意訓練了異化食人妖！
 str_mordor_rumor_8|座狼把我的手指咬了！疼啊！該死的座狼！
 str_mordor_rumor_9|別相信薩魯曼那邊的蠢貨們！
@@ -1494,13 +1494,13 @@ str_beorn_rumor_11|變 成 熊?  當 然 不 會 。  誰 跟 你 說 的? 哈 �
 str_beorn_rumor_12|比翁曾是一個偉人。哦，說錯了，他並不是一位人類，他是巨人！
 str_beorn_rumor_13|最好最勇敢的山林人戰士不怕森林的陰影。他們可以在黑暗中戰鬥，就像獸人和其他跟踪森林的骯髒者一樣。
 str_beorn_rumor_14|不要單獨在山上徘徊！熊和狼會遠離大群人。但飢餓，或者某些人口中黑暗中的邪惡，可能會驅使它們靠近並攻擊你。
-str_lorien_rumor_begin|啊，羅斯洛立安！寒冬降臨，這荒涼蕭索的時日，木葉落入激流，大河滔滔而逝。(摘自鄧嘉宛譯，魔戒魔戒同盟卷二第八章)
+str_lorien_rumor_begin|啊，羅瑞安！寒冬降臨，這荒涼蕭索的時日，木葉落入激流，大河滔滔而逝。(摘自鄧嘉宛譯，魔戒魔戒同盟卷二第八章)
 str_lorien_rumor_2|不要污衊凱蘭崔爾女士！你不知道自己在說什麼。在她身上和這片土地上，絕無邪惡，除非一個人自己將邪惡帶來，而若是這樣的話，他才要當心！(摘自鄧嘉宛譯，魔戒魔戒同盟卷二第七章)
 str_lorien_rumor_3|這世界的確充滿了危險，其中也有不少黑暗之處。但是，也仍有許多美麗的事物，儘管如今在所有的地方，愛都交織著悲傷，但或許還是愛佔了上風。(摘自鄧嘉宛譯，魔戒魔戒同盟卷二第六章)
 str_lorien_rumor_4|善惡從來都不曾改變。它們在精靈和矮人當中，與在人類當中並無不同。人有責任辨別善惡，無論他是身在金色森林中，還是在自己家園裡。(摘自鄧嘉宛譯，魔戒雙塔殊途卷三第二章)
 str_lorien_rumor_5|憎恨通常傷害的是自身！(摘自鄧嘉宛譯，魔戒雙塔殊途卷三第十章)
 str_lorien_rumor_6|古代魔法保護著羅斯洛立安，這力量是如此的強大，以至於黑暗還不敢挑戰它。
-str_lorien_rumor_7|Nathlo i nathal(辛達林語：歡迎你的到來，客人！)你在金色森林裡是安全的.Posto vae(辛達林語：休息) - 請安心休息，進食和飲水。如果你接下來要離開，請帶走你在羅斯洛立安的美好回憶。
+str_lorien_rumor_7|Nathlo i nathal(辛達林語：歡迎你的到來，客人！)你在金色森林裡是安全的.Posto vae(辛達林語：休息) - 請安心休息，進食和飲水。如果你接下來要離開，請帶走你在羅瑞安的美好回憶。
 str_lorien_rumor_8|據說大海在呼喚著每個人，或者晚晚。終將有一天，我也會聽到海鷗的鳴叫，永遠的離開Laurelindórenan(辛達林語：歌唱的黃金谷;羅斯洛立安別稱)。我Harthon an 借和(辛達林語：我希望這將是一個漫長的旅程)
 str_lorien_rumor_9|AV-'osto，用通用語說就是：不要害怕我們不僅僅被灰色斗篷所保護。
 str_imladris_rumor_begin|願精靈，人類並所有自由子民的祝福與你們同在！(摘自鄧嘉宛譯，魔戒魔戒同盟卷二第三章)
@@ -1509,9 +1509,9 @@ str_imladris_rumor_3|倘若借由破壞事物來發掘其本質，那就已經�
 str_imladris_rumor_4|我們必須選一條艱難的路，一條無人料到的路那才是我們的希望所在 - 。假使那是希望的話(摘自鄧嘉宛譯，魔戒魔戒同盟卷二第二章)
 str_imladris_rumor_5|這並不是絕望，因為只有篤定無疑地預見結局的人才會絕望，而我們並非如此。(摘自鄧嘉宛譯，魔戒魔戒同盟卷二第二章)
 str_imladris_rumor_6|再冷的寒冬鮮花依舊在來年盛開，再長的黑夜太陽依舊在明日升起。
-str_imladris_rumor_7|上次騎馬去戰場的時候，很多人就已經聚集起來了。我們利劍的閃光就好像原野上的星火一樣，所以現在很少有人離開瑞文戴爾。
+str_imladris_rumor_7|上次騎馬去戰場的時候，很多人就已經聚集起來了。我們利劍的閃光就好像原野上的星火一樣，所以現在很少有人離開伊姆拉崔。
 str_imladris_rumor_8|Ávarucë(辛達林語：不必害怕！)艾爾達已經穿上盔甲又一次站在了伊甸人的身邊。這也可能是最後一次了，又有誰能知道呢？我們將唱起戰爭與火焰的歌謠，結束這漫漫長夜(注：艾爾達是精靈的別稱，星辰的子民;伊甸人是第一紀元精靈盟友，登丹人和努曼諾爾人的祖先)。
-str_imladris_rumor_9|我看到從東方來的人類帶著黑暗魔君的戰旗，就好像又一次看到了他們的祖先一樣 - 無數的騎手破碎在最後同盟的閃耀盾牆之前真希望伊甸人的記憶和我們的一樣長(注：伊甸人是第一紀元精靈盟友，登丹人和努曼諾爾人的祖先;最後同盟又稱為精靈及人類最後同盟，是第二紀元末人類與精靈反抗索倫的同盟)
+str_imladris_rumor_9|我看到從東方來的人類帶著黑暗之主的戰旗，就好像又一次看到了他們的祖先一樣 - 無數的騎手破碎在最後同盟的閃耀盾牆之前真希望伊甸人的記憶和我們的一樣長(注：伊甸人是第一紀元精靈盟友，登丹人和努曼諾爾人的祖先;最後同盟又稱為精靈及人類最後同盟，是第二紀元末人類與精靈反抗索倫的同盟)
 str_woodelf_rumor_begin|從前有位精靈少女，猶如晴日一顆明星，白色披肩金黃飾邊，腳下所履燦燦灰銀。(摘自鄧嘉宛譯，魔戒魔戒同盟卷二第六章)
 str_woodelf_rumor_2|時間從不停留，但是生長和變化的情況，並不是萬物各地千篇一律。對精靈而言，世界在運行，運行得既非常迅速又極其緩慢。迅速，是因為他們自身幾乎不變，但其他一切都如白駒過隙：。這令他們十分悲傷緩慢，是因為他們不需要計算流逝的歲月，起碼不為自己計算四季的更替不過是時間長河裡永無休止重複的漣漪而已(摘自鄧嘉宛譯，魔戒魔戒同盟卷二第九章)
 str_woodelf_rumor_3|黑暗和邪惡正在逐漸玷污這片森林。阻止被阻止，他們將毀滅所有希望和光明。
@@ -1553,7 +1553,7 @@ str_gunda_rumor_4|我們在山道裡看到了一位滑溜的躲藏者，還沒�
 str_gunda_rumor_5|艾辛格的渣滓們覺得他們比我們更特別，那只不過是因為老頭兒(這裡特指薩魯曼)給他們的裝備好。
 str_gunda_rumor_6|我 們 會 燒 了 村 里 的 人 們 來 取 暖 。
 str_gunda_rumor_7|人類會體會到我們帶來的凍傷的，之後則是燒傷火。哈哈哈！
-str_gunda_rumor_8|阿佐格和波爾格當初差點就擊敗矮人精靈和人類的聯軍了，要不是鳥怪(對巨鷹的貶義稱呼)和熊佬(對波寧人的貶義稱呼)救了他們。*嘔*(注：阿佐格和波爾格是霍比特人中出現的半獸人反派)
+str_gunda_rumor_8|阿佐格和博魯格當初差點就擊敗矮人精靈和人類的聯軍了，要不是鳥怪(對巨鷹的貶義稱呼)和熊佬(對波寧人的貶義稱呼)救了他們。*嘔*(注：阿佐格和波爾格是霍比特人中出現的半獸人反派)
 str_gunda_rumor_9|矮人肉又硬又多筋。人肉更好吃。
 str_gunda_rumor_10|來自森林的熊佬(對波寧人的貶義稱呼)把波大石給吃了。不走運的波大石！哈哈哈！
 str_gunda_rumor_11|有些伙計跑到了摩瑞亞，畢竟那裡地方挺大的。但Ghâsh(半獸人語中的摩瑞亞炎魔)在深處。你......最...好...躲遠點......！
@@ -1596,7 +1596,7 @@ str_good_rumor_3|強獸人是半獸人中的一種特殊品種，他們並不畏
 str_good_rumor_4|在每一次失敗和喘息之後，魔多陰影都會使用另一種形態，並再一次壯大起來。
 str_good_rumor_5|死亡沼澤......一個污穢害病且超越一切治愈手段的地方
 str_good_rumor_6|魔多陰影只會模仿，不會自己做：它並沒有一樣東西是真正屬於自己的我並不認為它給了那些半獸人生命，只不過是扭曲了他們罷了。
-str_good_rumor_7|當這裡還住滿精靈的時候，人們稱她為巨綠森。她是整個中土世界北方最偉大的森林，但現在所有人都稱呼這裡為幽暗密林，各式各樣的邪惡生物在這裡遊蕩。
+str_good_rumor_7|當這裡還住滿精靈的時候，人們稱她為綠森。她是整個中土世界北方最偉大的森林，但現在所有人都稱呼這裡為幽暗密林，各式各樣的邪惡生物在這裡遊蕩。
 str_good_rumor_8|阿苟納斯之門，諸王之柱，剛鐸古代北方邊境的巨型守衛。
 str_good_rumor_9|阿蒙漢山是南希索湖周圍三個山峰中最靠西的那個。
 str_neutral_rumor_begin|任何事都有可能在一夜之間改變...
@@ -1615,186 +1615,186 @@ str_last_rumor|我最近沒聽到過任何有趣的事情。
 str_ent_rumor_begin|現在不要著急...
 str_ent_rumor_2|且把世間活物之名記心頭先表四個自由行走的民族：最年長的是精靈，鑿山矮人居暗穴，土裡生長是恩特(樹人音譯)，壽比山嶺，終有一死是凡人，馴馬好手;(摘自鄧嘉宛譯，魔戒雙塔殊途卷三第四章)
 str_ent_rumor_3|古樹人語是一種很可愛的語言，但是想用它說什麼事情都需要很長時間。所以我們一般不說話，除非這件事值得花費我們很長時間去聽和說。
-str_gondor_rank_0|剛鐸平民
-str_gondor_rank_1|剛鐸士兵
-str_gondor_rank_2|剛鐸軍士
-str_gondor_rank_3|剛 鐸 騎 士 
-str_gondor_rank_4|剛鐸聖白塔守衛
-str_gondor_rank_5|剛鐸聖白塔騎士
-str_gondor_rank_6|剛鐸攝政王護衛
-str_gondor_rank_7|剛 鐸 隊 長 
-str_gondor_rank_8|剛鐸冠軍
-str_gondor_rank_9|剛鐸英雄
-str_dwarf_rank_0|綠須矮人
-str_dwarf_rank_1|矮人礦工
-str_dwarf_rank_2|矮人戰士
-str_dwarf_rank_3|長須矮人
-str_dwarf_rank_4|矮人斧手
-str_dwarf_rank_5|矮人斧手大師
-str_dwarf_rank_6|灰須矮人
-str_dwarf_rank_7|矮人隊長
-str_dwarf_rank_8|矮人領袖
-str_dwarf_rank_9|大殿英雄
-str_rohan_rank_0|Ceorl，洛汗平民
-str_rohan_rank_1|Thain，洛汗馬僕
-str_rohan_rank_2|Léod，洛汗自由民
-str_rohan_rank_3|Rohir，洛汗騎兵
-str_rohan_rank_4|Scyldbora，洛汗攜盾者
-str_rohan_rank_5|Swéordbora，洛汗攜劍者
-str_rohan_rank_6|Frumgar，洛汗槍首
-str_rohan_rank_7|Bealdoraed，洛汗高級顧問
-str_rohan_rank_8|Eorl，洛汗貴族
-str_rohan_rank_9|Haleth，洛汗英雄
-str_mordor_rank_0|蠕 蟲
-str_mordor_rank_1|下僕
-str_mordor_rank_2|葛哥洛斯背刺者
-str_mordor_rank_3|西力斯昂哥哨兵
-str_mordor_rank_4|烏頓監工
-str_mordor_rank_5|德桑掠奪者
-str_mordor_rank_6|黑門看守
-str_mordor_rank_7|米那斯魔窟隊長
-str_mordor_rank_8|邪黑塔指揮官
-str_mordor_rank_9|人類之災
-str_isengard_rank_0|老 鼠
-str_isengard_rank_1|下僕
-str_isengard_rank_2|車工
+str_gondor_rank_0|剛鐸的平民
+str_gondor_rank_1|剛鐸的士兵
+str_gondor_rank_2|剛鐸的軍士
+str_gondor_rank_3|剛鐸的騎士
+str_gondor_rank_4|剛鐸的塔衛
+str_gondor_rank_5|剛鐸的堡壘騎士
+str_gondor_rank_6|剛鐸的攝政王守衛
+str_gondor_rank_7|剛鐸的隊長
+str_gondor_rank_8|剛鐸的冠軍勇士
+str_gondor_rank_9|剛鐸的英雄
+str_dwarf_rank_0|綠鬍的矮人
+str_dwarf_rank_1|矮人的礦工
+str_dwarf_rank_2|矮人的戰士
+str_dwarf_rank_3|長鬍的矮人
+str_dwarf_rank_4|矮人的斧手
+str_dwarf_rank_5|矮人的斧師
+str_dwarf_rank_6|灰鬍的矮人
+str_dwarf_rank_7|矮人的隊長
+str_dwarf_rank_8|矮人的首領
+str_dwarf_rank_9|大殿的英雄
+str_rohan_rank_0|凱奧爾，洛汗的平民
+str_rohan_rank_1|鄉紳，洛汗的僕人
+str_rohan_rank_2|李歐德，洛汗的自由民
+str_rohan_rank_3|洛希爾，洛汗的騎手
+str_rohan_rank_4|沙德波拉，洛汗的攜盾者
+str_rohan_rank_5|沙魏德波拉，洛汗的攜劍者
+str_rohan_rank_6|弗鲁姆加，洛汗的槍首
+str_rohan_rank_7|貝爾多拉，洛汗的頭號顧問
+str_rohan_rank_8|伊歐，洛汗的貴族
+str_rohan_rank_9|哈拉斯，洛汗的英雄
+str_mordor_rank_0|蟲子
+str_mordor_rank_1|奴隸
+str_mordor_rank_2|葛哥洛斯的背刺者
+str_mordor_rank_3|西力斯昂哥的哨兵
+str_mordor_rank_4|烏頓的奴隸監工
+str_mordor_rank_5|德桑的掠奪者
+str_mordor_rank_6|黑門的看守
+str_mordor_rank_7|米那斯魔窟的隊長
+str_mordor_rank_8|黑邪塔的指揮官
+str_mordor_rank_9|人類的災禍
+str_isengard_rank_0|老鼠
+str_isengard_rank_1|奴隸
+str_isengard_rank_2|曲柄轉動者
 str_isengard_rank_3|焚樹者
 str_isengard_rank_4|座狼飼養者
 str_isengard_rank_5|煉鐵者
 str_isengard_rank_6|鍛造主
-str_isengard_rank_7|奧桑克塔隊長
-str_isengard_rank_8|軍團指揮官
-str_isengard_rank_9|巫師的另一只白掌
-str_lorien_rank_0|Sador，羅斯洛立安忠誠者
-str_lorien_rank_1|Tauron，羅斯洛立安森林行者
-str_lorien_rank_2|Mifaron，羅斯洛立安灰色獵人
-str_lorien_rank_3|Thindirith，羅斯洛立安灰守衛
-str_lorien_rank_4|Thangyl，羅斯洛立安攜盾者
-str_lorien_rank_5|Maglagyl，羅斯洛立安攜劍者
-str_lorien_rank_6|Tiribrannon，羅斯洛立安守護者
-str_lorien_rank_7|Glaurchir，羅斯洛立安大師
-str_lorien_rank_8|Galadhîr，羅斯洛立安光明王
-str_lorien_rank_9|Thalion，羅斯洛立安英雄
-str_imladris_rank_0|Háno，瑞文戴爾兄弟
-str_imladris_rank_1|Macar，瑞文戴爾戰士
-str_imladris_rank_2|Sindacollo，瑞文戴爾灰色斗篷
-str_imladris_rank_3|Luinëcollo，瑞文戴爾藍色斗篷
-str_imladris_rank_4|Turmacolindo，瑞文戴爾攜盾者
-str_imladris_rank_5|Langocolindo，瑞文戴爾攜劍者
-str_imladris_rank_6|Aráto，瑞文戴爾冠軍
-str_imladris_rank_7|Hesto，瑞文戴爾隊長
-str_imladris_rank_8|Runando，瑞文戴爾救星
-str_imladris_rank_9|Callo，瑞文戴爾英雄
-str_woodelf_rank_0|Sador，巨綠森忠誠者
-str_woodelf_rank_1|Tauron，巨綠森林行者
-str_woodelf_rank_2|Hirfaron，巨綠森獵人大師
-str_woodelf_rank_3|Calendirith，巨綠森碧綠守衛
-str_woodelf_rank_4|Thangyl，巨綠森攜盾者
-str_woodelf_rank_5|Maglagyl，巨綠森攜劍者
-str_woodelf_rank_6|Tiribrannon，巨綠森守護者
-str_woodelf_rank_7|Pengherdir，巨綠森射手大師
-str_woodelf_rank_8|Armagor，巨綠森皇家劍士
-str_woodelf_rank_9|Thalion，巨綠森英雄
-str_dale_rank_0|河谷鎮平民
-str_dale_rank_1|河谷鎮自由平民
-str_dale_rank_2|河谷鎮士兵
-str_dale_rank_3|河谷鎮船民
-str_dale_rank_4|河谷鎮攜盾者
-str_dale_rank_5|河谷鎮攜劍者
-str_dale_rank_6|河 谷 鎮 弓 兵，巴 德
-str_dale_rank_7|河谷鎮隊長
-str_dale_rank_8|河谷鎮湖主
-str_dale_rank_9|河谷鎮英雄
-str_harad_rank_0|部落新人
-str_harad_rank_1|部落成年人
-str_harad_rank_2|部落戰士
-str_harad_rank_3|弒 獅 者
-str_harad_rank_4|蛇巫
-str_harad_rank_5|猛獁管理員
+str_isengard_rank_7|奧桑克塔的隊長
+str_isengard_rank_8|軍團的指揮官
+str_isengard_rank_9|巫師的白掌副手
+str_lorien_rank_0|薩多，忠於羅瑞安之人
+str_lorien_rank_1|託隆，羅瑞安的森林行者
+str_lorien_rank_2|密法隆，羅瑞安的灰之獵人
+str_lorien_rank_3|提恩迪里斯，羅瑞安的灰之守衛
+str_lorien_rank_4|丹吉爾，羅瑞安的攜盾者
+str_lorien_rank_5|瑪格拉吉爾，羅瑞安的攜劍者
+str_lorien_rank_6|提拉布蘭農，羅瑞安的守望者
+str_lorien_rank_7|格勞基爾，羅瑞安的宗師
+str_lorien_rank_8|加拉迪爾，羅瑞安的光之主
+str_lorien_rank_9|沙理安，羅瑞安的英雄
+str_imladris_rank_0|哈諾，伊姆拉崔的兄弟
+str_imladris_rank_1|瑪卡，伊姆拉崔的戰士
+str_imladris_rank_2|辛達克洛，伊姆拉崔的灰之斗篷
+str_imladris_rank_3|盧伊納克洛，伊姆拉崔的藍之斗篷
+str_imladris_rank_4|圖爾瑪柯林多，伊姆拉崔的攜盾者
+str_imladris_rank_5|蘭哥柯林多，伊姆拉崔的攜劍者
+str_imladris_rank_6|阿拉托，伊姆拉崔的冠軍勇士
+str_imladris_rank_7|赫斯托，伊姆拉崔的隊長
+str_imladris_rank_8|盧南多，伊姆拉崔的救星
+str_imladris_rank_9|卡洛，伊姆拉崔的英雄
+str_woodelf_rank_0|薩多，忠於綠森之人
+str_woodelf_rank_1|託隆，綠森的森林行者
+str_woodelf_rank_2|赫法隆，綠森的獵人大師
+str_woodelf_rank_3|卡勒恩迪里斯，綠森的綠之守衛
+str_woodelf_rank_4|丹吉爾，綠森的攜盾者
+str_woodelf_rank_5|瑪格拉吉爾，綠森的攜劍者
+str_woodelf_rank_6|提拉布蘭農，綠森的守望者
+str_woodelf_rank_7|彭格迪爾，綠森的弓手大師
+str_woodelf_rank_8|阿瑪格，綠森的王家劍士
+str_woodelf_rank_9|沙理安，綠森的英雄
+str_dale_rank_0|河谷鎮的平民
+str_dale_rank_1|河谷鎮的自由民
+str_dale_rank_2|河谷鎮的士兵
+str_dale_rank_3|河谷鎮的船夫
+str_dale_rank_4|河谷鎮的攜盾者
+str_dale_rank_5|河谷鎮的攜劍者
+str_dale_rank_6|巴丁，河谷鎮的弓兵
+str_dale_rank_7|河谷鎮的隊長
+str_dale_rank_8|河谷鎮的湖主
+str_dale_rank_9|河谷鎮的英雄
+str_harad_rank_0|部落的新人
+str_harad_rank_1|部落的成年人
+str_harad_rank_2|部落的戰士
+str_harad_rank_3|弒獅者
+str_harad_rank_4|耍蛇人
+str_harad_rank_5|毛象管理員
 str_harad_rank_6|黑蛇守衛
-str_harad_rank_7|哈隆鐸隊長
-str_harad_rank_8|大沙漠將軍
-str_harad_rank_9|金蛇
-str_rhun_rank_0|盧恩平原民
-str_rhun_rank_1|盧恩農奴
-str_rhun_rank_2|盧恩戰士
-str_rhun_rank_3|盧恩公牛戰士
-str_rhun_rank_4|盧恩攜盾者
-str_rhun_rank_5|盧恩攜劍者
-str_rhun_rank_6|盧恩騎手大師
-str_rhun_rank_7|盧恩軍閥
-str_rhun_rank_8|草原氏族酋長
-str_rhun_rank_9|戒靈克哈穆爾的右手
-str_khand_rank_0|侃德平原民
-str_khand_rank_1|侃德農奴
-str_khand_rank_2|侃 德 勇 士 
-str_khand_rank_3|侃德雄鷹戰士
-str_khand_rank_4|侃德攜盾者
-str_khand_rank_5|侃德攜劍者
-str_khand_rank_6|侃德騎手大師
-str_khand_rank_7|維瑞亞軍閥
-str_khand_rank_8|維瑞亞氏族酋長
+str_harad_rank_7|哈隆鐸的隊長
+str_harad_rank_8|大沙漠的將軍
+str_harad_rank_9|黃金之蛇
+str_rhun_rank_0|盧恩的平原民
+str_rhun_rank_1|盧恩的農奴
+str_rhun_rank_2|盧恩的戰士
+str_rhun_rank_3|盧恩的公牛戰士
+str_rhun_rank_4|盧恩的攜盾者
+str_rhun_rank_5|盧恩的攜劍者
+str_rhun_rank_6|盧恩的騎師
+str_rhun_rank_7|盧恩的軍閥
+str_rhun_rank_8|草原氏族的酋長
+str_rhun_rank_9|克哈穆爾的副手
+str_khand_rank_0|侃德的平原民
+str_khand_rank_1|侃德的農奴
+str_khand_rank_2|侃德的戰士
+str_khand_rank_3|侃德的雄鷹戰士
+str_khand_rank_4|侃德的攜盾者
+str_khand_rank_5|侃德的攜劍者
+str_khand_rank_6|侃德的騎師
+str_khand_rank_7|維瑞亞的軍閥
+str_khand_rank_8|維瑞亞氏族的酋長
 str_khand_rank_9|傳奇征服者
 str_umbar_rank_0|旱鴨子
-str_umbar_rank_1|甲板手
+str_umbar_rank_1|打雜手
 str_umbar_rank_2|水手
 str_umbar_rank_3|魚叉手
 str_umbar_rank_4|割喉者
-str_umbar_rank_5|掠奪者
-str_umbar_rank_6|航海大師
-str_umbar_rank_7|昂巴隊長
-str_umbar_rank_8|艦隊指揮官
-str_umbar_rank_9|海軍上將
-str_moria_rank_0|蛆
-str_moria_rank_1|下僕
-str_moria_rank_2|坑道鼠
-str_moria_rank_3|洞穴獵手
-str_moria_rank_4|礦井劫掠者
-str_moria_rank_5|大廳劫掠者
-str_moria_rank_6|矮人剋星
-str_moria_rank_7|哥布林軍閥
-str_moria_rank_8|哥布林酋長
-str_moria_rank_9|深淵恐懼
-str_guldur_rank_0|蠕 蟲
-str_guldur_rank_1|下僕
-str_guldur_rank_2|葛哥洛斯背刺者
-str_guldur_rank_3|西力斯昂哥哨兵
-str_guldur_rank_4|烏頓監工
-str_guldur_rank_5|德桑掠奪者
-str_guldur_rank_6|黑門看守
-str_guldur_rank_7|米納斯魔窟隊長
-str_guldur_rank_8|邪黑塔指揮官
-str_guldur_rank_9|人類之災
+str_umbar_rank_5|搜刮者
+str_umbar_rank_6|航海師
+str_umbar_rank_7|昂巴的船長
+str_umbar_rank_8|艦隊的指揮官
+str_umbar_rank_9|海洋的總司令
+str_moria_rank_0|蛆蟲
+str_moria_rank_1|奴隸
+str_moria_rank_2|隧道之鼠
+str_moria_rank_3|洞穴的徵糧手
+str_moria_rank_4|礦坑的搜刮者
+str_moria_rank_5|大殿的掠奪者
+str_moria_rank_6|矮人的剋星
+str_moria_rank_7|哥布林的軍閥
+str_moria_rank_8|哥布林的酋長
+str_moria_rank_9|來自深淵的恐懼
+str_guldur_rank_0|蟲子
+str_guldur_rank_1|奴隸
+str_guldur_rank_2|葛哥洛斯的背刺者
+str_guldur_rank_3|西力斯昂哥的哨兵
+str_guldur_rank_4|烏頓的奴隸監工
+str_guldur_rank_5|德桑的掠奪者
+str_guldur_rank_6|黑門的看守
+str_guldur_rank_7|米那斯魔窟的隊長
+str_guldur_rank_8|黑邪塔的指揮官
+str_guldur_rank_9|人類的災禍
 str_gundabad_rank_0|糞便
-str_gundabad_rank_1|下僕
-str_gundabad_rank_2|坑道鼠
-str_gundabad_rank_3|洞穴獵手
-str_gundabad_rank_4|丘陵劫掠者
-str_gundabad_rank_5|山脈劫掠者
-str_gundabad_rank_6|矮人剋星
-str_gundabad_rank_7|騎狼軍閥
+str_gundabad_rank_1|奴隸
+str_gundabad_rank_2|隧道之鼠
+str_gundabad_rank_3|洞穴的徵糧手
+str_gundabad_rank_4|丘陵的搜刮者
+str_gundabad_rank_5|山脈的掠奪者
+str_gundabad_rank_6|矮人的剋星
+str_gundabad_rank_7|座狼騎手的軍閥
 str_gundabad_rank_8|巨型哥布林
-str_gundabad_rank_9|北方掠奪者
+str_gundabad_rank_9|北方的擄掠者
 str_dunland_rank_0|小狗
 str_dunland_rank_1|狗
 str_dunland_rank_2|軍犬
-str_dunland_rank_3|狼 
-str_dunland_rank_4|壯狼
-str_dunland_rank_5|恐狼
+str_dunland_rank_3|狼
+str_dunland_rank_4|強壯的狼
+str_dunland_rank_5|可怕的狼
 str_dunland_rank_6|巨狼
-str_dunland_rank_7|狼群領袖
-str_dunland_rank_8|氏族酋長
-str_dunland_rank_9|費瑞卡復仇者
-str_beorn_rank_0|森林小子
-str_beorn_rank_1|森林追踪者
-str_beorn_rank_2|森林獵人
-str_beorn_rank_3|森林遊俠
-str_beorn_rank_4|森林攜盾者
-str_beorn_rank_5|森林攜斧者
-str_beorn_rank_6|森林熊
-str_beorn_rank_7|森林巨熊
-str_beorn_rank_8|森林巨人
-str_beorn_rank_9|森林英雄
+str_dunland_rank_7|狼群的領導
+str_dunland_rank_8|氏族的酋長
+str_dunland_rank_9|費瑞卡的復仇者
+str_beorn_rank_0|森林的幼獸
+str_beorn_rank_1|森林的追蹤者
+str_beorn_rank_2|森林的獵人
+str_beorn_rank_3|森林的遊俠
+str_beorn_rank_4|森林的攜盾者
+str_beorn_rank_5|森林的攜斧者
+str_beorn_rank_6|森林的熊
+str_beorn_rank_7|森林的巨熊
+str_beorn_rank_8|森林的巨人
+str_beorn_rank_9|森林的英雄
 str_tld_introduction|最後之日介紹—你應該前往伊多拉斯。
 str_tld_erebor_dungeon|這附近有死亡的氣息，我應該小心一些。
 str_tld_spear_hit|噢！
@@ -1823,20 +1823,20 @@ str_fullname_region_gap_of_rohan|洛汗隘口，洛汗的最西邊界，是洛�
 str_fullname_region_entwash|樹沐河三角洲，流經洛汗的樹沐河在這裡與安度因河交匯
 str_fullname_region_wetwang|寧道夫，Wetwang(威頓)的沼澤地
 str_fullname_region_dead_marshes|死亡沼澤，達哥拉之戰發生的地方，而現在則是詛咒之地
-; str_fullname_region_isengard|Nan Curunir, the vale of Isengard
+str_fullname_region_isengard|捻苦路納，艾辛格之谷
 str_fullname_region_fangorn|法貢森林，據說這裡的樹會說話
 str_fullname_region_brown_lands|布朗土地，覆蓋艾明莫爾和幽暗密林之間的廣闊空間
 str_fullname_region_dagorlad|達哥拉，在魔多門前，偉大的廣闊的戰役平原
-str_fullname_region_n_undeep|北河套，安度因河第一次轉向之地
-str_fullname_region_s_undeep|南河套，安度因河第二次轉向之地
-; str_fullname_region_emyn_muil|eastern Emyn Muil, the rocky hills beyond Amon Lhaw
-; str_fullname_region_misty_mountains|the foothills of the northern Misty Mountains
+str_fullname_region_n_undeep|北河套，安度因河兩個曲流中較大的那個
+str_fullname_region_s_undeep|南河套，安度因河兩個彎曲處中較小的那個
+str_fullname_region_emyn_muil|東艾明莫爾，阿蒙勞之上的石丘陵
+str_fullname_region_misty_mountains|迷霧山脈北部的山麓
 str_fullname_region_lorien|羅斯洛立安，辛達精靈的森林，金色梅隆樹生長的地方。
-; str_fullname_region_anduin_banks|the middle Vale of Anduin, between Carrock and Lorien
-str_fullname_region_n_mirkwood|幽靈密林北部茂密的森林，木精靈的故鄉
+str_fullname_region_anduin_banks|安度因河谷中部，卡爾岩和羅瑞安之間
+str_fullname_region_n_mirkwood|幽暗密林北部茂密的森林，木精靈的故鄉
 str_fullname_region_s_mirkwood|幽暗密林南部，據說被奇怪生物侵擾
-; str_fullname_region_c_mirkwood|the dense forest of middle Mirkwood, inhabited by Woodmen
-; str_fullname_region_grey_mountains|the foothills of the Grey Mountains
+str_fullname_region_c_mirkwood|幽暗密林中部的林海中，山林人的居處
+str_fullname_region_grey_mountains|灰色山脈的山麓
 str_fullname_region_mordor|魔多，索倫的黑暗王國
 str_fullname_region_dimrill|丁瑞爾河谷，在摩瑞亞山腳下
 str_fullname_region_s_rebor|河谷鎮的領域，位於孤山腳下
@@ -1865,29 +1865,29 @@ str_shortname_region_gap_of_rohan|洛汗隘口
 str_shortname_region_entwash|樹沐河河口
 str_shortname_region_wetwang|寧道夫
 str_shortname_region_dead_marshes|死亡沼澤
-; str_shortname_region_isengard|Nan Curunir
+str_shortname_region_isengard|捻苦路納
 str_shortname_region_fangorn|法貢森林
 str_shortname_region_brown_lands|布朗土地
-; str_shortname_region_dagorlad|Dagorlad
-; str_shortname_region_n_undeep|the North Undeep
-; str_shortname_region_s_undeep|the South Undeep
-; str_shortname_region_emyn_muil|Emyn Muil
-; str_shortname_region_misty_mountains|the foothills of the northern Misty Mountains
-str_shortname_region_lorien_|羅 斯 洛 立 安
-; str_shortname_region_anduin_banks_|the middle valley of Anduin
+str_shortname_region_dagorlad|達哥拉
+str_shortname_region_n_undeep|北河套
+str_shortname_region_s_undeep|南河套
+str_shortname_region_emyn_muil|艾明莫爾
+str_shortname_region_misty_mountains|迷霧山脈北部的山麓
+str_shortname_region_lorien_|羅瑞安
+str_shortname_region_anduin_banks_|安度因河谷中部
 str_shortname_region_n_mirkwood_|北幽暗密林
 str_shortname_region_s_mirkwood_|南幽暗密林
-; str_shortname_region_c_mirkwood|Middle Mirkwood
-; str_shortname_region_grey_mountains|the foothills of the Grey Mountains
+str_shortname_region_c_mirkwood|幽暗密林中部
+str_shortname_region_grey_mountains|灰色山脈的山麓
 str_shortname_region_mordor|魔多之地
 str_shortname_region_dimrill|丁瑞爾河谷
 str_shortname_region_s_erebor|河谷鎮的領域
 str_trait_title_elf_friend|精靈之友
-; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced.
+str_trait_desc_elf_friend|你受到了精靈們的高度敬重也把你當成信任的盟友。這將降低招募精靈的費用。
 str_trait_title_gondor_friend|攝政王的的祝
-; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced.
+str_trait_desc_gondor_friend|你受到了攝政王迪耐瑟二世的高度敬重也讓你在剛鐸人之中的地位獲得提升。這將降低招募剛鐸人的費用。
 str_trait_title_rohan_friend|國王之信
-; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced..
+str_trait_desc_rohan_friend|你受到了洛汗希優頓王的高度敬重也讓你在洛汗人之中地位獲得提升。這將降低招募洛汗人的費用..
 str_trait_title_brigand_friend|野蠻人冠軍
 str_trait_desc_brigand_friend|您受到服務於索倫的野蠻人部落的高度敬重，這是因為您在他們的競技場中給人們來了深刻的印象。這將降低野蠻人招募費用。
 str_trait_title_blessed|神眷之祝
@@ -1930,8 +1930,8 @@ str_trait_title_butcher|屠 夫
 str_trait_desc_butcher|經驗的磨練讓你可以從敵人身上完美割下每一塊肉。 每次屠殺一名囚犯時，你都會獲得額外的一磅肉。 每次戰鬥後你都會得到更多的人肉。
 str_trait_title_well_travelled|好好旅行
 str_trait_desc_well_travelled|在石頭鋪砌的道路和長滿青苔的動物小徑上，在最高的山脈和最深的山谷裡，你發現了隱藏的地方，看到了早已被遺忘的奇蹟。根據你的經驗，你已經學會在敵人看到你之前發現他們，並為你的部隊提供最簡單的路線。
-; str_trait_title_bear_shape|Skinchanger
-; str_trait_desc_bear_shape|It is said that men of Beorn's line have the ability to take bear form. Through your kinship with bears you have discovered that you too have that gift.
+str_trait_title_bear_shape|變身者
+str_trait_desc_bear_shape|據說比翁一族的人擁有變形成熊的能力。自你與熊的親緣中你發現了自己也有那個天賦。
 str_wound_head|頭部遭到重擊
 str_wound_chest|一些肋骨斷裂
 str_wound_arm|一隻重傷的手臂
@@ -1949,7 +1949,7 @@ str_dwarf_gift4|不凡的首飾
 str_rohan_gift0|蜂蜜酒和蘋果酒
 str_rohan_gift1|刺繡外衣和嵌銀腰帶
 str_rohan_gift2|金項圈和精雕角杯
-str_rohan_gift3|巴 德 良 駒
+str_rohan_gift3|優良馬具
 str_rohan_gift4|洛 汗 馬
 str_mordor_gift0|草 皮 啤 酒
 str_mordor_gift1|下 僕 油
@@ -1968,7 +1968,7 @@ str_lorien_gift3|銀帶和胸針
 str_lorien_gift4|精靈斗篷
 str_imladris_gift0|白麵包和草藥油
 str_imladris_gift1|水晶玻璃皿
-str_imladris_gift2|Miruvor(精靈甜酒)
+str_imladris_gift2|米盧沃酒
 str_imladris_gift3|刺繡戰旗和嵌銀號角
 str_imladris_gift4|草藥和藥膏
 str_woodelf_gift0|軟動物皮
@@ -2005,7 +2005,7 @@ str_moria_gift0|爛矮人麥酒
 str_moria_gift1|煤 炭
 str_moria_gift2|發光土蟲
 str_moria_gift3|黑洞珍珠
-str_moria_gift4|矮人金屬廢料
+str_moria_gift4|矮人廢金屬
 str_guldur_gift0|黑酒
 str_guldur_gift1|酷刑毒藤
 str_guldur_gift2|奴隸籠車
@@ -2038,23 +2038,23 @@ str_gondor6|剛鐸6
 str_gondor7|剛鐸7
 str_gondor8|剛鐸8
 str_gondor_end|剛鐸1
-str_gondor_intro|^這 是 一 個 痛 苦 的 想 法 ， 這 個 偉 大 王 國 的 英 雄 在 他 的 土 地 中 死 去 ， 孤 立 無 援 。^^波 羅 莫 死 亡 的 消 息 就 像 風 一 樣 ， 穿 過 了 所 有 剛 鐸 人 的 耳 中 ， 甚 至 到 皮 那 斯 傑 林 的 平 原 和 拉 密 頓 的 山 丘 ， 甚 至 遠 到 佩 拉 吉 爾 和 多 爾 安 姆 羅 斯 。 你 們 所 有 人 的 心 中 充 滿 了 悲 傷 和 憐 憫 ;   此 外 ， 由 於 恐 懼 和 不 祥 的 預 感 ， 剛 鐸 人 受 到 痛 苦 和 恐 懼 的 困 擾 ， 被 無 情 的敵 人 所 環 繞 。^^陰 影在 東 方 升 起 ， 就 像 光 一 樣 快 速 ; 烏 姆 巴 的 海 盜越 來 越 大 膽 ; 東 南方 的 野 人 向 剛 鐸 大陸 施 壓 ^^。你 再 也不 能 袖 手 旁 觀 了 ， 相信 你 已 經 任 命 了 你 的 隊 長 ， 劍 和 長 矛 將 握 在 你 的 手 中。 剛 鐸 王 國 已 經 衰 弱 ， 但剛 鐸 人 民 仍 然  站 立 ;  它 的 力 量 依 然 强 大 。 你 已 經 決 定 自  己 扮 演 什 麼 角 色 ， 你 可 能 會 在 即 將 到 來 的 戰 爭 中 對 抗 無 名 者 的 僕 人 。 在 偉 大 和 明 智 的 議 會 中 提 到 了 很 多 秘 密 ， 但 有 一 件 事 你 覺  得 你 可 以 肯 定 。^^如 果 岡 多 失 敗 ， 而 米 那 斯 提 力 斯 淪 陷 了 ， 那 麼 西 方 的 最 後 一 盞 燈 就 會 消 失 。 一 切 都 將 落 在 暗 影 之 下 。
+str_gondor_intro|^這 是 一 個 痛 苦 的 想 法 ， 這 個 偉 大 王 國 的 英 雄 在 他 的 土 地 中 死 去 ， 孤 立 無 援 。^^波 羅 莫 死 亡 的 消 息 就 像 風 一 樣 ， 穿 過 了 所 有 剛 鐸 人 的 耳 中 ， 甚 至 到 皮 那 斯 傑 林 的 平 原 和 拉 密 頓 的 山 丘 ， 甚 至 遠 到 佩 拉 吉 爾 和 多 爾 安 姆 羅 斯 。 你 們 所 有 人 的 心 中 充 滿 了 悲 傷 和 憐 憫 ;   此 外 ， 由 於 恐 懼 和 不 祥 的 預 感 ， 剛 鐸 人 受 到 痛 苦 和 恐 懼 的 困 擾 ， 被 無 情 的敵 人 所 環 繞 。^^陰 影在 東 方 升 起 ， 就 像 光 一 樣 快 速 ; 烏 姆 巴 的 海盜越 來 越 大 膽 ; 東 南方 的 野 人 向 剛 鐸 大陸 施 壓 ^^。你 再 也不 能 袖 手 旁 觀 了 ， 相信 你 已 經 任 命 了 你 的 隊 長 ， 劍 和 長 矛 將 握 在 你 的 手 中。 剛 鐸 王 國 已 經 衰 弱 ， 但剛 鐸 人 民 仍 然  站 立 ;  它 的 力 量 依 然 强 大 。 你 已 經 決 定 自  己 扮 演 什 麼 角 色 ， 你 可 能 會 在 即 將 到 來 的 戰 爭 中 對 抗 無 名 者 的 僕 人 。 在 偉 大 和 明 智 的 議 會 中 提 到 了 很 多 秘 密 ， 但 有 一 件 事 你 覺  得 你 可 以 肯 定 。^^如 果 岡 多 失 敗 ， 而 米 那 斯 提 力 斯 淪 陷 了 ， 那 麼 西 方 的 最 後 一 盞 燈 就 會 消 失 。 一 切 都 將 落 在 暗 影 之 下 。
 str_dwarf_intro|^山下的王國做得很好。老國王丹恩剛剛過了他的二百五十年，無論如何，他都非常富有。\n在他的統治下，孤山茁壯成長，大家都知道他的偉大。\n鄰近的河谷鎮的水道，噴泉和游泳池見證了你的建造者如何超越了你的祖先的技能，儘管金屬製品的秘密令人遺憾地失去了。^^\n然而，來自魔多的黑暗進入了這些大廳，索倫特使的呼吸像蛇的嘶嘶聲，帶來了邪惡的話語。\n從那時起，你和首領們的心就沉重了，重新進入魔多的力量沒有改變。\n陰影越來越近 - 已經敵人正在移動，戰爭將很快開始。^^\n你已經發誓要拿起武器，和你的朋友一起對抗你的敵人。\n無論是希望還是沒有希望，你們都會抵制。\n^^但如果孤山矮人的能力不足，那麼都靈民族的榮耀就會消失而被遺忘。\n一切都將落在暗影之下。
 str_rohan_intro|^在這些充滿不確定的日子裡，有一件事你知道是真的;公開戰爭就在洛洛汗城驕傲的人民面前。\n現在沒有人能像他們那樣生活，很少有人能保留他們所說的自己的東西。\n有人靠近國王的耳朵說怯懦的勸告，但你已經決定去見他，做一個嚴厲的誓言，要跟一個墮落的統帥和領主站在一起，以保護牛群和牧民。\n^^艾辛格的薩魯曼已宣布洛汗土地的主權，與獸人，狼人和邪惡的登蘭德人戰鬥是痛苦的。\n東邊的黑土之王派出襲擊派來偷你的馬，總是選擇黑馬。\n你的心誤導你，因為在你看來，東西方的人民都被敵人包圍了。\n^^但是你仍然會進行戰鬥，因為如果洛汗說的對，它是你永恆的勇氣，雖然敵人會哄騙你，或者圍攻你。\n洛城的駿馬在早晨會像風一樣大步前進。\n如果你死了，就會有被土堆埋起來，但現在，戰爭召喚你。\n讓馬系上韁繩，吹響號角！ ^^然而，伊朗兒女的失敗了，洛城的最後希望也會消逝。\n當號角不再響起，一切都將歸於陰影之下。
-str_mordor_intro|^黑 暗 力 量 再 次 在 東 方 掘 起。黑 暗 君 主 的 軍 團 快 速 膨 脹 — 東 方 人 前 來 服 務 和 奉 獻，來 自 古 努 美 諾 爾 的 叛 徒 渴 求 著 一 個 機 會 去 奪 回 他 們 祖 先 所 失 去 的 東 西，獸 人 和 強 獸 人 的 領 袖 垂 涎 戰 爭 和 殺 戮 的 思 緒。而 在 高 處 的 黑 色 天 空 中，盤 旋 著 戒 靈… 在 邪 眼 的 中 心，蘊 藏 著 深 不 見 底 的 力 量。^^您 決 心 以 任 何 手 段 提 升 自 己 的 地 位，並 獲 得 路 格 布 爾 茲 的 支 持。藉 著 機 智，毅 力 和 無 情 的 戰 鬥 技 巧，您 將 粉 碎 所 有 擋 在 路 上 的 人。你 將 會 得 到 魔 多 的 黑 暗 君 主 的 信 任，他 是 在 即 將 來 臨 的 戰 爭 之 後 統 治 一 切 的 人… 否 則 您 將 在 難 受 中 死 去。^^西 方 的 光 芒 會 被 熄 滅。魔 多 的 時 代 來 臨 了！
+str_mordor_intro|^黑 暗 力 量 再 次 在 東 方 掘 起。黑暗之主 的 軍 團 快 速 膨 脹 — 東 方 人 前 來 服 務 和 奉 獻，來 自 古 努 美 諾 爾 的法外之徒渴 求 著 一 個 機 會 去 奪 回 他 們 祖 先 所 失 去 的 東 西，獸 人 和 強 獸 人 的 領 袖 垂 涎 戰 爭 和 殺 戮 的 思 緒。而 在 高 處 的 黑 色 天 空 中，盤 旋 著 戒 靈… 在 邪 眼 的 中 心，蘊 藏 著 深 不 見 底 的 力 量。^^您 決 心 以 任 何 手 段 提 升 自 己 的 地 位，並 獲 得 路 格 布 爾 茲 的 支 持。藉 著 機 智，毅 力 和 無 情 的 戰 鬥 技 巧，您 將 粉 碎 所 有 擋 在 路 上 的 人。你 將 會 得 到 魔 多 的 黑 暗 君 主 的 信 任，他 是 在 即 將 來 臨 的 戰 爭 之 後 統 治 一 切 的 人… 否 則 您 將 在 難 受 中 死 去。^^西 方 的 光 芒 會 被 熄 滅。魔 多 的 時 代 來 臨 了！
 str_isengard_intro|^一 個 新 的 勢 力 在 甦 醒，你 是 其 中 的 一 份 子。你 在 白 掌 的 旗 下 戰 鬥，並 效 忠 於 提 供 你 鮮 美 人 肉 和 馬 肉，擁 有 詭 計，明 智 而 狡 詐 的 薩 魯 曼 大 人。^^在 他 的 旗 幟 下 帶 領 好 戰 的 強 獸 人。他 們 是 偉 大 戰 士 的 殺 手，是 戰 鬥 的 勝 利 者。 他 們 的 盔 甲 較 厚，盾 牌 較 寬。你 將 在 自 己 的 同 伴 中 為 自 己 取 名，並 砍 掉 許 多 白 人。你 不 會 停 下 作 戰，無 論 白 天 與 黑 夜，在 晴 朗 天 氣 或 暴 風 雨 中，直 到 你 的 敵 人 死 亡 並 粉 碎。^^薩 魯 曼 的 技 能 很 強 大。有 了 它，您 將 打 倒 那 些 騎 兵 和 他 們 軟 弱 盟 友 的 力 量； 對，甚 至 精 靈 肉 也 將 成 為 你 的 盛 宴。他 們 的 村 莊 和 森 林 將 被 焚 毀，城 市 也 是。然 後 … 誰 會 說 那 些 蛆 蟲 和 路 格 布 爾 茲 的 猿 猴 不 會 順 從 奧 桑 克 塔 的 強 大？強 力 的 命 令。弱 者 將 服 從。^^人 類 時 代 即 將 結 束。艾 辛 格 的 時 代 已 經 來 臨！
-str_lorien_intro|^居 住 在 樹 梢 上 是 羅 瑞 林 多 瑞 安 的 森 林 精 靈 的 習 慣。大 樹 的 巨 大 樹 幹 上 帶 有 金 色 的 葉 子 和 黃 色 的 花 ，在 艾 得 西 隆 得 的 流 水 旁，人 們 會 找 到 安 穩 的 睡 眠 並 且 忘 卻 哀 傷；但 是 在 這 些 黑 暗 的 日 子 裡，沒 有 人 會 永 遠 忘 記 從 東 方 而 來，從 魔 多 的 黑 暗 之 地 一 直 逼 近 的 陰 影。^^多 年 來，你 的 羅 斯 洛 立 安 親 戚 與 其 他 人 的 交 往 很 少。的 確，在 黑 暗 君 主 的 力 量 下，沒 有 什 麼 比 分 裂 那 些 仍 然 反 對 他 的 人 更 明 顯 。然 而，你 是 其 中 一 個 可 以 感 知 到 在 眾 多 威 脅 中 的 孤 島 上 繼 續 生 存 只 會 帶 來 絕 望。你 們 當 中 有 人 歌 唱，說 影 子 會 退 縮，和 平 會 再 次 來 臨。儘 管 世 界 不 會 像 過 去 那 樣，但 你 是 否 會 舉 起 劍 與 弓，在 即 將 到 來 的 戰 爭 中 發 揮 自 己 的 作 用，不 僅 捍 衛 自 己 喜 歡 的 夢 之 花，或 許 捍 衛 其 他 的 土 地，否 則 會 被 邪 惡 吞 噬。^^如 果 不 恢 復 昔 日 的 友 誼，反 而 只 考 慮 與 長 期 的 失 敗 作 戰，那 麼 羅 瑞 安 的 最 後 之 光 將 永 遠 消 失。所 有 人 都 會 墮 入 陰 影 之 中。
+str_lorien_intro|^居 住 在 樹 梢 上 是 羅 瑞 林 多 瑞 安 的 加拉兹民 的 習 慣。大 樹 的 巨 大 樹 幹 上 帶 有 金 色 的 葉 子 和 黃 色 的 花 ，在 艾 得 西 隆 得 的 流 水 旁，人 們 會 找 到 安 穩 的 睡 眠 並 且 忘 卻 哀 傷；但 是 在 這 些 黑 暗 的 日 子 裡，沒 有 人 會 永 遠 忘 記 從 東 方 而 來，從 魔 多 的 黑 暗 之 地 一 直 逼 近 的 陰 影。^^多 年 來，你 的 羅 斯 洛 立 安 親 戚 與 其 他 人 的 交 往 很 少。的 確，在 黑暗之主 的 力 量 下，沒 有 什 麼 比 分 裂 那 些 仍 然 反 對 他 的 人 更 明 顯 。然 而，你 是 其 中 一 個 可 以 感 知 到 在 眾 多 威 脅 中 的 孤 島 上 繼 續 生 存 只 會 帶 來 絕 望。你 們 當 中 有 人 歌 唱，說 影 子 會 退 縮，和 平 會 再 次 來 臨。儘 管 世 界 不 會 像 過 去 那 樣，但 你 是 否 會 舉 起 劍 與 弓，在 即 將 到 來 的 戰 爭 中 發 揮 自 己 的 作 用，不 僅 捍 衛 自 己 喜 歡 的 夢 之 花，或 許 捍 衛 其 他 的 土 地，否 則 會 被 邪 惡 吞 噬。^^如 果 不 恢 復 昔 日 的 友 誼，反 而 只 考 慮 與 長 期 的 失 敗 作 戰，那 麼 羅 瑞 安 的 最 後 之 光 將 永 遠 消 失。所 有 人 都 會 墮 入 陰 影 之 中。
 str_imladris_intro|^唉，這 幾 天 的 悲 傷 記 憶！在 伊 姆 拉 崔 半 精 靈 愛 隆 的 故 居，人 們 可 能 會 回 想 起 昔 日 伊 瑞 詹 的 榮 耀 和 輝 煌。但 是 世 界 不 會 再 像 以 前 那 樣 了。^^伊 瑞 詹 的 田 野 雖 然 被 人 喜 愛，但 已 經 不 再由 人 類 去 耕 種。登 丹 人，他 們 的 數 量 在 亞 爾 諾 分 裂 後 大 幅 減 少，仍 然 在 北方 荒 野 中 孤 獨 地 守 夜。吉 爾 加 拉 德 的 統 治 已 經 過 去，因 為 長 子 的 減 少，並 進 入 西 方，同 時 古 老 努 曼 諾 爾 的 族 人 減 少，西 方 大 地 的 種 族 衰 落 了。^^儘 管 瑞 文 戴 爾 仍 然 是 庇 護 所，但 黑 暗 的 日 子 圍 繞 整 個 大 地。^^最 後 一 個 召 號 響 起，來 自 伊 姆 拉 崔 的 強 大 隊 伍，也 許 是 世 界 上 所 有 紀 元 的 最 後 一 個 隊 伍，出 征 了。你 是 這 隊 伍 的 其 中 一 員，儘 管 你 將 按 照 明 智 而 偉 大 的 指 示 去 履 行 職 責，但 你 的 內 心 並 非 沒 有 疑 慮。無 論 在 伊 姆 拉 崔，或 是 在 灰 港 岸，或 是 在 黃 金 森 林 羅 瑞 安，都 沒 有 足 夠 力 量 抵 禦 敵 人，如 果 一 切 都 被 推 翻 的 話，敵 人 就 會 變 得 強 大 起 來。^^然 而 渺 茫 的 希 望 仍 存 在：如 果 可 以 恢 復 昔 日的 友 誼，並 且 聯 同 所 有 對 抗 邪 惡 的 人 面 對 共 同 的 敵 人，也 許 有 時 會 勝 利，也 許 最 後 能 結 束 魔 多 的 威 脅。^^如 果 昔 日 的 盟 友 失 敗 了 ，而 老 朋 友 們 被 催 毀 了，在 真 正 的 夜 幕 來 臨 之 前，除 了 蔓 延 的 黑 暗 日 子 以 外 便 別 無 他 物。所 有 人 都 會 墮 入 陰 影 之 中。
-str_woodelf_intro|^陰 影 籠 罩 著 森 林 國 度，這 是 從 多 爾 哥 多 彌 漫 出 來 的 一 種 毒 物。魔 多 君 主 回 到 了 他 的 邪 黑 塔，他 在 多 爾 哥 多的 副 官 們 把 巨 綠 森 大 部 分 地 區 變 成 了 令 人 恐 懼 的 地 方，即 使 是 你 的 人 民，即 北 方 的 木 精 靈，也 不 能 自 由 地 前 進。^^歐 瑞 費 爾 的 兒 子 瑟 蘭 督 伊 領 導 你 們 的 人 民，但 他 的 政 策 一 直 持 謹 慎 態 度，也 許 是 因 為 達 哥 拉 的 悲 痛 令 人 記 憶 猶 新。現 在，河 谷 鎮 的 人 正 受 到 即 將 來 臨 的 戰 爭 威 脅，你 的 國 王 激 勵 了 自 己。他 從 不 望 向 南 方 只 因 內 心 深 處 有 一 個 陰 影，他 會 拖 延 很 久，直 到 他 帶 領 人 民 進 入 廢 墟，但 是 決 定 的 日 子 已 經 到 了。^^帶 著 長 矛，劍 刃 和 弓 箭，你 會 捍 衛 國 王 統 治 下 的 王 國 邊 界，如 有 需 要，你 下 定 決 心 援 助 任 何 與 幽 暗 密 林 精 靈 並 肩 對 抗 共 同 敵 人 的 人。^^恐 懼 在 你 心 中 細 語，正 如 它 在 你 的 同 伴 心 中 一 樣，如 果 不 恢 復 昔 日 的 友 誼，而 老 朋 友 們 被 催 毀 了，那 麼 幽 暗 密 林 將 被 黑 暗 籠 罩。所 有 人 都 會 墮 入 陰 影 之 中。
+str_woodelf_intro|^陰 影 籠 罩 著 森 林 國 度，這 是 從 多 爾 哥 多 彌 漫 出 來 的 一 種 毒 物。魔 多 君 主 回 到 了 他 的 邪 黑 塔，他 在 多 爾 哥 多的 副 官 們 把 綠 森 大 部 分 地 區 變 成 了 令 人 恐 懼 的 地 方，即 使 是 你 的 人 民，即 北 方 的 木 精 靈，也 不 能 自 由 地 前 進。^^歐 瑞 費 爾 的 兒 子 瑟 蘭 督 伊 領 導 你 們 的 人 民，但 他 的 政 策 一 直 持 謹 慎 態 度，也 許 是 因 為 達 哥 拉 的 悲 痛 令 人 記 憶 猶 新。現 在，河 谷 鎮 的 人 正 受 到 即 將 來 臨 的 戰 爭 威 脅，你 的 國 王 激 勵 了 自 己。他 從 不 望 向 南 方 只 因 內 心 深 處 有 一 個 陰 影，他 會 拖 延 很 久，直 到 他 帶 領 人 民 進 入 廢 墟，但 是 決 定 的 日 子 已 經 到 了。^^帶 著 長 矛，劍 刃 和 弓 箭，你 會 捍 衛 國 王 統 治 下 的 王 國 邊 界，如 有 需 要，你 下 定 決 心 援 助 任 何 與 幽 暗 密 林 精 靈 並 肩 對 抗 共 同 敵 人 的 人。^^恐 懼 在 你 心 中 細 語，正 如 它 在 你 的 同 伴 心 中 一 樣，如 果 不 恢 復 昔 日 的 友 誼，而 老 朋 友 們 被 催 毀 了，那 麼 幽 暗 密 林 將 被 黑 暗 籠 罩。所 有 人 都 會 墮 入 陰 影 之 中。
 str_dale_intro|^對 於 三 代 人 來 說，河 谷 鎮 王 國 繁 榮 了。國 王 布 蘭 德，神 射 手 巴 德 的 孫 子，公 平 地 統 治 著 並 利 用 貿 易 使 王 國 更 加 富 裕。^^但 是，敵 人 現 在 開 始 入 侵，聚 集 在 東 部 邊 界 的 脆 弱，愛 爭 吵 的 游 牧 民 族，他 們 的 語 言 複 雜，便 人 們 更 加 難 以 信 任。現 在 必 須 把 玩 具，鈴 鐺 和 漂 亮 的 洋 娃 娃 放 置 一 旁，以 擺 放 矛，弓 和 堅 固 的 盾 牌。砍 樹 不 是 為 了 新 的 棚 架，而 是 為 了 箭 袋 和 箭 矢。年 輕 人 不 去 耕 地 或 收 割 果 園，而 是 去 兵 營，作 戰 和 赤 色 黎 明。^^但 河 谷 鎮 擁 有 堅 定 的 盟 友：孤 山 的 矮 人，磚 石 裝 飾 了 河 谷 鎮 的 每 條 街 道。而 且，幽 暗 密 林 精 靈 也 與 你 的 人 民 有 往 來，對 所 有 人 都 有 好 處。粗 壯 結 實 的 波 寧 人 在 渡 口 保 持 貿 易 路 線 的 安 全 和 開 放。在 這 些 黑 暗 的 日 子 裡，所 有 拒 絕 魔 多 霸 主 的 人 都 必 須 站 在 一 起，否 則 會 像 田 間 的 麥 稈 一 樣 被 單 獨 砍 伐。^^你 決 心 儘 自 己 的 一 份 力 量，因 為 如 果 堅 強 的 河 谷 鎮 捍 衛 者 失 敗 了，那 麼 巴 德 的 防 線 將 會 完 結，北 方 的 最 後 一 個 人 類 王 國 將 不 再 存 在。所 有 人 都 會 墮 入 陰 影 之 中。
 str_harad_intro|^我 們 從 沙 漠 的深 處，茂 密 的 叢 林 和 陽 光 普 照 的 河 岸 而來。讓 剛 鐸 的 人 民 敬 畏 並 順 從 我 們 吧。他 們 說 自 古 以 來 都 擁 有 波 羅 斯 河 以 南 土 地 的 權 利，因 此 他 們 命 名 這 條 河 為 哈 隆 鐸，即「 南 剛 鐸 」，並 稱 我 們 為 入 侵 者。我 們 不 懂 他 們 的 說 法。難 道 在 瘟 疫 時 代，巨 蛇 的 意 志 不 就 是 以 死 亡 和 疾 病 驅 趕 了 剛 鐸 人，並 允 許 我 們 的 祖 先 定 居 於 此 嗎？為 甚 麼 有 人 缺 乏 大 能 的 祝 褔，僅 僅 憑 他 們 一 點 力 量 去 宣 稱 擁 有 這 片 土 地？我 們 的 祖 先 死 亡 或 離 去 時 不 曾 在 此 地 定 居 嗎？^^還 有，他 們 說 在 很 久 以 前，他 們 教 曉 我 們 手 工 藝 和 在 土 地 上 種 植 食 物 的 技 能，因 此 我 們 應 該 成 為 他 們 的 附 庸。我 們 也 不 能 理 解 以 前 他 們 的 國 王 塔 爾 ‧ 克 亞 單 和他 的 隨 從 拿 了 我 們 很 多 貢 品，並 且 掠 奪 了 我 們 最 寶 貴 的 財 富。然 後 他 們 自 大 地 說：感 恩 吧，向 剛 鐸 的 管 理 者 奉 上 貢 品。現 在 因 為 愚 昧 而 長 年 沒 有 國 王 的 他 們 竟 敢 向 我 們 提 出 要 求？^^我 們 不 像 那 群 骯 髒 的 半 獸 人，或 是 那 個 黑 暗 巫 師 要 求 巨 大 的 犧 牲。我 們 有 很 多 年 輕 男 女 已 經 被 奉 獻 到 黑 暗 之 地，但 他 仍 然 想 要 更 多。然 而，有 了 他 的 力 量 和 幫 助，從 太 陽 升 起 到 落 日 的 所 有 土 地 都 將 歸 我 們 所 有，而 我 們 應 該 擁 有 它 們。^^剛 鐸 時 代 即 將 結 束。就 讓 戰 鬥 加 入 吧！
 str_rhun_intro|^你 們 的 馬 車 城 市 已 經 在 高 地 草 原 徘 徊 了 很 多 個 晚 上。你 們 的 酋 長 從 那 個 在 魔 多 歸 來 的 力 量 獲 得 了 忠 告。他 們 向 你 和 你 的 戰 士 承 諾 了 很 多 事 情：他 們 將 為 戰 車 民 的 失 敗 和 畢 額 丘 斯 人 的 屈 辱 報 仇；徹 底 抹 去 那 些 敢 於 自 稱 為「 東 方 征 服 者 」的 古 代 國 王 所 訂 下 的 剛 鐸 人 律 法；他 們 會 為 氏 族 贏 得很 多 奴 隸 和 財 富。^^他 們 說 了 很 多 話，但 你 知 道 你 並 不 是 為 了 安 逸 的 生 活 而 戰，例 如 那 些 又 肥 又 軟 弱 的 長 湖 鎮 人，或 是 在 岩 石 隧 道 中 亂 竄 的 矮 小 而 貪 婪 的 挖 土 者，或 是 那 群 躲 藏 在 樹 上 歌 唱 的 膽 小 精 靈。^最 重 要 的 是 榮 耀，在 戰 鬥 中 獲 勝，並 不 是 要 酋 長 承 諾 會 在 你 死 後 為 你 取 得 在 山 峰 上 留 下 記 號 的 榮 譽，而 是 憑 著 技 巧 和 力 量 為 你 贏 得 站 在 那 裡 的 權 利。如 果 你 必 須 與 骯 髒 而 無 恥 的 半 獸 人 一 起 戰 鬥 一 段 時 間，那 就 這 樣 吧，但 你 的 事 蹟 將 屬 於 你 自 己，並 且 在 篝 火 旁 一 遍 又 一 遍 被 傳 頌 許 多 世 代。^^西 方 的 時 代 將 要 結 束。 東 方 的 時 代 來 了！
 str_khand_intro|^強 者 統 治，弱 者 服 從。你 們 侃 德 人 從 出 生 就 已 經 明 白 這 個 真 理。男 孩 和 女 孩 都 一 樣 要 在 很 多 個 晚 上 的 戰 鬥 中 生 存 下 來，才 能 在 成 年 男 女 之 中 佔 據 一 席 之 地。這 樣 的 方 法 使 你 的 人 民 變 得 強 大。難 怪 黑 暗 之 地 的 君 主 竟 然 客 氣 地 對 你 的 領 袖 說 話！他 知 道 在 侃 德 的 維 瑞 亞 人 手 中 一 把 鋒 利 的 戟 相 等 於 在 毫 無 價 值 的 半 獸 人 手 中 20 支 矛。^^你 的 領 袖 已 被 許 下 很 多 承 諾。一 隊 龐 大 的 隊 伍 已 被 召 集，乃 是 至 今 記 憶 中 最 浩 大 的 隊 伍。在 你 們 國 土 最 遙 遠 的 地 方，當 中 最 兇 猛 的 戰 士 們 答 應 了 召 喚。你 將 掠 奪 弱 小 而 頹 廢 的 剛 鐸 人 的 土 地。你 將 把 他 們 當 作 奴 隸，並 要 他 們 在 他 們 肥 沃 的 綠 土 上 為 你 工 作，就 像 征 服 者 的 權 利 一 樣。^^西 方 的 時 代 將 要 結 束。 東 方 的 時 代 來 了！
-str_umbar_intro|^在 剛 鐸 以 豐 富 而 肥 沃 的 土 地 為 榮 的 貴 族 們 正 坐 在 被 盜 去 的 土 地上，那 土 地 是 屬 於 卡 斯 塔 馬，正 統 的 國 王，但 王 位 被 不 忠 的 孬 種 篡 奪 了。卡 斯 塔 馬 的 後 代 良 治 國 家，並 在 海 上 和 沿 海 地 區 取 得 了 不 少 勝 利。^^但 是，又 再 一 次，象 徵 失 敗 的 悲 痛 之 風 在 你 面 前 吹 來。幾 年 前，不 忠 的 剛 鐸 人 在 主 要 避 風 港 上發 動 了 卑 鄙 的 夜 襲，優 秀 的 昂 巴 士 兵 被 派 遣 到 海 旁。你 失 去 了 船，船 長 也 沒 了，而 你 是 昔 日 船 員 的 倖 存 者 之 一。^^但 是 仍 有 五 十 艘 大 船，還 有 無 數 小 船 剩 下。黑 暗 之 地 的 君 主 傳 來 了 號 召。現 在 是 進 行 盤 算 的 時 候 了。你 將 加 入 南 方 大 地 的 武 裝 兄 弟：帶 有 嚴 肅 眼 神 的 哈 拉 德 人，而 你 的 復 仇 將 對 準 奸 詐 的 剛 鐸 人，直 至 貝 爾 法 拉 斯 和 安 法 拉 斯 都 陷 入 火 海，你 將 擁 有 載 滿 財 富 的 寶 箱。^^剛 鐸 時 代 要 結 束 了。昂 巴 的 時 代 來 了！
-str_moria_intro|^你 來 自 礦 山，目 的 是 為 那 些 被 垃 圾 的 人 類，挖 掘 者 和 精 靈 而殺 死 的 人 民 報 仇！你 的 部 落 既 強 大 又 富 裕，因 為 你 在 摩 瑞 亞 搜 集 了 大 量 銀，並 因 此 得 到 東 方 黑 暗 君 主 的 欣 賞。矮 子 來 了，想 要 在 這 裡 建 房，但 你 屠 殺 了 他 們，這 是 一 場 很 好 的 熱 身。然 後 一 小 群 小 偷 和 盜 賊 經 過，喚 醒 了 深 淵 之 火。崩 坍，很 多 地 方 都 崩 坍！很 多 道 路 都 被 堵 住 了。大 量 的 寶 藏，大 量 的 摩 瑞 亞 銀 都 在 難 以 被 挖 掘 的 深 處！^^但 現 在 黑 暗 君 主 傳 來 號 召。戰 爭 來 了。偉 大 的 邪 眼 會 獎 賞 忠 誠 的 僕 人。對，他 會 記 起 是 誰 獻 上 眾 多 的 摩 瑞 亞 銀，而 你 將 會 服 從 他。你 會 屠 殺 並 吃 下 那 些 白 人，這 對 你 和 你 的 部 落 都 有 好 處。而 那 些 在 黃 金 森 林 驕 傲 自 大 的 精 靈，當 你 和 你 的 人 民 燒 光 他 們 的 樹 木 時 他 們 將 不 會 再 那 麼 自 傲！^^樹 林 中 的 光 芒 將 被 撲 滅。摩 瑞 亞 的 時 代 來 了！
-str_guldur_intro|^黑 暗 力 量 再 次 在 東 方 掘 起。巴 拉 多 的 君 主 派 遣 他 的 僕 人 到 多 爾 哥 多，在 那 裡 他 的 意 志 將 不 被 動 搖。冶 鍊 房 放 滿 武 器 和 盔 甲，圍 欄 內 飼 養 著 上 千 隻 兇 猛 的 座 狼，營 房 內 滿 是 準 備 去 戰 死 的 半 獸 人。^^而 在 高 處 的 漆 黑 天 空 籠 罩 著 幽 暗 密 林，而 且 戒 靈 正 在 盤 旋 … 在 邪 眼 的 中 心，蘊 藏 著 深 不 見 底 的 力 量。不 少 於 三 位 戒 靈 被 黑 暗 君 主 派 到 此 處，他 的 力 量 亦 伸 延 至 此 並 征 服 所 有 反 抗 者，直 到 魔 多 的 敵 人 永 遠 被 粉 碎。^^您 決 心 以 任 何 手 段 提 升 自 己 的 地 位，並 獲 得 多 爾 哥 多 和 路 格 布 爾 茲 的 支 持。藉 著 機 智，毅 力 和 無 情 的 戰 鬥 技 巧，您 將 粉 碎 所 有 擋 在 路 上 的 人。你 將 會 得 到 魔 多 的 黑 暗 君 主 的 信 任，他 是 在 即 將 來 臨 的 戰 爭 之 後 統 治 一 切 的 人… 否 則 您 將 在 難 受 中 死 去。^^多 爾 哥 多 的 陰 影 將 會 擴 散。西 方 的 光 芒 將 被 撲 滅。魔 多 的 時 代 要 來 了！
+str_umbar_intro|^在 剛 鐸 以 豐 富 而 肥 沃 的 土 地 為 榮 的 貴 族 們 正 坐 在 被 盜 去 的 土 地上，那 土 地 是 屬 於 卡 斯 塔 馬，正 統 的 國 王，但 王 位 被 不 忠 的 孬 種 篡 奪 了。卡 斯 塔 馬 的 後 代 良 治 國 家，並 在 海 上 和 沿 海 地 區 取 得 了 不 少 勝 利。^^但 是，又 再 一 次，象 徵 失 敗 的 悲 痛 之 風 在 你 面 前 吹 來。幾 年 前，不 忠 的 剛 鐸 人 在 主 要 避 風 港 上發 動 了 卑 鄙 的 夜 襲，優 秀 的 昂 巴 士 兵 被 派 遣 到 海 旁。你 失 去 了 船，船 長 也 沒 了，而 你 是 昔 日 船 員 的 倖 存 者 之 一。^^但 是 仍 有 五 十 艘 大 船，還 有 無 數 小 船 剩 下。黑暗之主 傳 來 了 號 召。現 在 是 進 行 盤 算 的 時 候 了。你 將 加 入 南 方 大 地 的 武 裝 兄 弟：帶 有 嚴 肅 眼 神 的 哈 拉 德 人，而 你 的 復 仇 將 對 準 奸 詐 的 剛 鐸 人，直 至 貝 爾 法 拉 斯 和 安 法 拉 斯 都 陷 入 火 海，你 將 擁 有 載 滿 財 富 的 寶 箱。^^剛 鐸 時 代 要 結 束 了。昂 巴 的 時 代 來 了！
+str_moria_intro|^你 來 自 礦 山，目 的 是 為 那 些 被 垃 圾 的 人 類，挖 掘 者 和 精 靈 而殺 死 的 人 民 報 仇！你 的 部 落 既 強 大 又 富 裕，因 為 你 在 摩 瑞 亞 搜 集 了 大 量 銀，並 因 此 得 到 東 方 黑暗之主 的 欣 賞。矮 子 來 了，想 要 在 這 裡 建 房，但 你 屠 殺 了 他 們，這 是 一 場 很 好 的 熱 身。然 後 一 小 群 小 偷 和 盜 賊 經 過，喚 醒 了 深 淵 之 火。崩 坍，很 多 地 方 都 崩 坍！很 多 道 路 都 被 堵 住 了。大 量 的 寶 藏，大 量 的 摩 瑞 亞 銀 都 在 難 以 被 挖 掘 的 深 處！^^但 現 在 黑暗之主 傳 來 號 召。戰 爭 來 了。偉 大 的 邪 眼 會 獎 賞 忠 誠 的 僕 人。對，他 會 記 起 是 誰 獻 上 眾 多 的 摩 瑞 亞 銀，而 你 將 會 服 從 他。你 會 屠 殺 並 吃 下 那 些 白 人，這 對 你 和 你 的 部 落 都 有 好 處。而 那 些 在 黃 金 森 林 驕 傲 自 大 的 精 靈，當 你 和 你 的 人 民 燒 光 他 們 的 樹 木 時 他 們 將 不 會 再 那 麼 自 傲！^^樹 林 中 的 光 芒 將 被 撲 滅。摩 瑞 亞 的 時 代 來 了！
+str_guldur_intro|^黑 暗 力 量 再 次 在 東 方 掘 起。黑邪塔 的 君 主 派 遣 他 的 僕 人 到 多 爾 哥 多，在 那 裡 他 的 意 志 將 不 被 動 搖。冶 鍊 房 放 滿 武 器 和 盔 甲，圍 欄 內 飼 養 著 上 千 隻 兇 猛 的 座 狼，營 房 內 滿 是 準 備 去 戰 死 的 半 獸 人。^^而 在 高 處 的 漆 黑 天 空 籠 罩 著 幽 暗 密 林，而 且 戒 靈 正 在 盤 旋 … 在 邪 眼 的 中 心，蘊 藏 著 深 不 見 底 的 力 量。不 少 於 三 位 戒 靈 被 黑暗之主 派 到 此 處，他 的 力 量 亦 伸 延 至 此 並 征 服 所 有 反 抗 者，直 到 魔 多 的 敵 人 永 遠 被 粉 碎。^^您 決 心 以 任 何 手 段 提 升 自 己 的 地 位，並 獲 得 多 爾 哥 多 和 路 格 布 爾 茲 的 支 持。藉 著 機 智，毅 力 和 無 情 的 戰 鬥 技 巧，您 將 粉 碎 所 有 擋 在 路 上 的 人。你 將 會 得 到 魔 多 的 黑暗之主 的 信 任，他 是 在 即 將 來 臨 的 戰 爭 之 後 統 治 一 切 的 人… 否 則 您 將 在 難 受 中 死 去。^^多 爾 哥 多 的 陰 影 將 會 擴 散。西 方 的 光 芒 將 被 撲 滅。魔 多 的 時 代 要 來 了！
 str_dunland_intro|^你 的 人 民 十 分 清 楚 黑 心、稻 草 腦 袋 的 洛 汗 人 所 做 的 卑 劣 和 不 公 正。在 強 大 的 費 瑞 卡 時 代，在 聖 盔 ( 洛 汗 人 稱 他 為 鎚 手 ) 一 次 卑 鄙 的 重 擊 下 把 費 瑞 卡 打 倒，之 後 你 在 他  們沉 重 的 枷 鎖 之 下 遭 受 萬 分 痛 苦。高 壓 手 段 數 之 不 盡。^^但 現 在 風 向 轉 變 了。智 者 薩 魯 曼，艾 辛 格 的 狡 猾 老 主 人，向 你 們 的 人 民 建 立 了 友 誼。在 他 的 幫 助 下，高 貴 的 國 王沃 夫 ( 費 瑞 卡 之 子 ) 在 伊 多 拉 斯 的 梅 杜 西 宮 殿 的 王 座 將 會 穩 固。^^人 民 將 不 再 為 了 生 活 去 爭 奪 無 用 的 土 地。嬰 兒 將 不 再 因 為 母 親 缺 少 母 乳 而 死 去。人 民 將 不 再 因 為 害 怕 殺 死 洛 汗 的 貴 族 而 退 縮。你 的 矛 很 長，而 你 的 斧 頭 殘 暴 且 鋒 利。在 智 者 薩 魯 曼 的 幫 助 下，你 不 會 失 敗。你 將 取 回 屬 於 你 的 東 西。^^你 將 為 薩 魯 曼 而 戰。你 將 為 薩 魯 曼 而 死！
-; str_beorn_intro|^These woods, these old paths, and the Ford are the only home you have ever known, but old Beorn was one who remembered an older home, far away in the mountains. His son, Chief Grimbeorn the Old, now stands foremost among your people, and like his father, he is apt to sit on the great Carrock at night, setting his sight to the west, deep in his own thoughts.^^For your part, your thoughts are simple. The woods grow dangerous. Foul orcs grow bolder, and walk about even in daylight. The wolves they ride will not listen even to one of your people, so twisted have they become by goblin ways. The air feels and smells different, bad. The further south you go, closer to Dol Guldur, where not so long ago the Sorcerer dwelled and did things unworthy of naming, the worse it gets.^^The Elves huddle in their caves to the north. Most will not come out to protect the woodland, its animals and trees and other things that move and live.^^Your people will fight, as you always have, to keep the Ford and the forest safe. With a stout stick in your hands, you will smash any orcs that dare intrude. And if it should come to greater blows, why, many among your people are more than they seem…^^But if even the grim battle-strength of the Beornings should fail, then the world will know no more the joy of sweet honey, bright flowers, shady forest paths and all things good. All will fall beneath the Shadow.
+str_beorn_intro|^這些樹林、這些老道和那渡口是你所知唯一的家園，但老比翁還是記得，遙遠山脈中那更古老的家園。他的兒子，老酋長葛林比翁，是你同胞中最傑出的人，而像他的父親，他也常在夜裡坐在大卡爾岩上，遙望著西方，沉浸在他自己的思緒中。^^至於你，你的想法很簡單。 樹林變得更危險了。汙穢的半獸人變得更大膽，甚至敢在白天出沒。被哥布林所扭曲，他們騎著的狼不再聽從你同胞的話。空氣感覺和聞起來都變了，變糟了。隨著你更往南，更靠近多爾哥多，其不久前巫師才居住和做了不可言喻的事之處，情況更糟。^^精靈們躲在他們北方的洞穴裡。大部分都不會出來保護林地、動物和樹木以及其他活動生存著的東西。^^你的同胞會戰鬥，一直以來都會，來保衛渡口和森林的安全。一根粗棍子在手，你將會摧毀任何膽敢入侵的半獸人。而如果戰況變得更嚴重，何不呢，你的同胞中許多人還不只是外觀所看到的那樣呢...^^但假設驍勇善戰的比翁人戰敗了，世界將失去甜美的蜂蜜、艷麗的花朵、鬱鬱蔥蔥的林間小道以及一切美好喜樂。一切都將落入陰影之下。
 str_intro_strings_end|介紹結束
 str_gondor_intro_2|^在前往向你的領主宣誓效忠的途中，你偶然發現一輛大篷車遭到了獸人的攻擊。
 str_dwarf_intro_2|^在去孤山的路上，你偶然發現一輛大篷車被獸人襲擊。
@@ -2065,9 +2065,9 @@ str_lorien_intro_2|^在你去卡拉斯加拉頓的路上，你遇到了一些準
 str_imladris_intro_2|^在一次偵察任務後回到主瑞文戴爾人營地的途中，你遇到了一些準備伏擊獸人軍團的盟友。
 str_woodelf_intro_2|^在樹林裡巡邏後返回精靈大廳的路上，你遇到了一些準備伏擊獸人軍團的盟友。
 str_dale_intro_2|^在前往河谷鎮的路上，你偶然發現一輛大篷車被獸人襲擊。
-; str_harad_intro_2|^Your fellow warriors and riders, as well as the mighty Mûmakil, have established your main camp across the river from the fortified city of the Gondorians, the one they call Pelargir. No doubt when it falls, your chieftains will think of a more fitting name for it. Then shall you hold it forevermore against the dwindling men of the West.^^As you walk through a wooded vale, a sudden small rustling makes you stop. You have heard many tales of the Gondorians who skulk around in these lands, sneaking like cowards - Rangers, they are called. They are deadly with the bow and arrow, like the Gold Serpents of high renown. Are some of them preparing to ambush your party? You had better sound the warning!
+str_harad_intro_2|^跟你同行的戰士和騎手，還有雄偉的毛象，在剛鐸人要塞化的城市佩拉吉爾河對岸，建立了自己的主營地。毫無疑問，當它陷落後你的酋長們會為它想出一個更適合的名字。那時你們將從西方不斷減少的人們手中永遠佔據它。^^當你走過草木叢生的河谷，突如其來的沙沙聲讓你停下腳步。你聽過許多在這片土地上潛伏的剛鐸人的傳聞，鬼鬼祟祟的懦夫-他們被稱為，遊俠。他們的弓箭十分致命，就像享譽盛名的金蛇一般。他們中的一些人是不是正準備埋伏你的隊伍？你最好發出警告！
 str_rhun_intro_2|^在前往你們人民的主要戰鬥營地的路上，你偶然發現一些獸人襲擊了一輛大篷車。
-; str_khand_intro_2|^Your fellow Variags have been summoned to the Morannon, the Black Gates that lead into Mordor. You do not relish having to camp so near to filthy honourless orc-kind, but for a time you will oblige. Still, the Lord of Mordor would be foolish indeed not to recognise the worth of your people, and treat you accordingly!^^As you walk through a wooded vale, a sudden small rustling makes you stop. You have heard many tales of the Gondorians who skulk around in these lands, sneaking like cowards - Rangers, they are called. They are deadly with the bow and arrow. Are some of them preparing to ambush your party? You had better sound the warning!
+str_khand_intro_2|^你和同行的維瑞亞人被召喚到黑門，通往魔多的黑暗閘門。在骯髒無恥的半獸人之類附近紮營讓你很不是滋味，但短時間內你會遵從。不過，魔多之主如果不懂你同胞的價值並好好對待你們，那就太蠢了吧！^^當你走過草木叢生的河谷，突如其來的沙沙聲讓你停下腳步。你聽過許多在這片土地上潛伏的剛鐸人的傳聞，鬼鬼祟祟的懦夫-他們被稱為，遊俠。他們的弓箭十分致命。他們中的一些人是不是正準備埋伏你的隊伍？你最好發出警告！
 str_umbar_intro_2|^在前往海軍上將建立灘頭防禦工事的途中，你偶然發現一些獸人襲擊了一輛大篷車。
 str_moria_intro_2|^當你從河谷鎮的偵察任務回來時，你偶然發現一些獸人襲擊了一輛大篷車。
 str_guldur_intro_2|^在前往多爾哥多的路上，你偶然遇到一些獸人襲擊了一輛大篷車。
@@ -2075,26 +2075,26 @@ str_gundabad_intro_2|^在前往剛達巴山的路上，你偶然遇到一些獸�
 str_dunland_intro_2|^在前往你們人民的主要戰鬥營地的路上，你偶然發現一些獸人襲擊了一輛大篷車。
 str_beorn_intro_2|^在前往比翁之家的路上，你遇到了一些準備伏擊獸人的盟友。
 str_intro_strings_2_end|介紹2結束
-; str_gondor_faction_intro|^The South Kingdom of Gondor, “land of stone” in Sindarin, is inhabited by descendants of the ancient Númenoreans. Under the rule of Steward Denethor, these proud men stand as the first and perhaps last line of defence against the Enemy.^^Gondor’s military consists of forces coming from all the different fiefdoms. You get the standard army with solid and well-armoured troops overall: Dol Amroth’s heavy cavalry, green-clad archers and spearmen from Pinnath Gelin, bowmen from the Blackroot Vale, axemen of Lossarnach, heavy marines from Pelargir or hardened clansmen of Lamedon.
-; str_dwarf_faction_intro|^Dwarves, also known as Durin’s Folk, are short, tough and doughty warriors. They are renowned for the craftsmanship of their weaponry and armour, though they say with regret that they cannot match the lost arts of their ancestors. In these latter days, they come from the Lonely Mountain and the Iron Hills.^^Their army consists of an infantry line, a scout/archer line and an Iron Hills line (their heaviest hard-hitting infantry).
-; str_rohan_faction_intro|^Rohirrim are the horse lords of the Mark of Rohan, led by king Théoden.^^Rohirrim have very good cavalry, ranging from heavy lancers to agile horse archers. They have an infantry line as well, branching into shieldwall-forming troops and heavy swordsmen bearing longswords.
+str_gondor_faction_intro|^南方的剛鐸王國，辛達語中的"岩石之地"，居住著古老努曼諾爾人的後裔。在攝政王迪耐瑟二世的統治下，這些驕傲的人民是對抗敵方的第一道但也是最後一道防線。^^剛鐸的軍勢由來自不同領地的部隊所組成。你能找到標準的軍隊包含著堅實並全副武裝的部隊：來自多爾安姆羅斯的重裝騎兵、來自皮那斯傑林穿著綠衣的弓兵和長槍兵、來自墨松德的弓箭手、來自羅薩納奇的斧兵、來自佩拉吉爾的重裝海軍陸戰隊或來自拉密頓健壯的氏族民。
+str_dwarf_faction_intro|^矮人，又稱都靈一族，是矮小、堅強且勇敢的戰士。他們以製造武器和鎧甲的技術聞名，雖然他們遺憾的說自己無法媲美失傳祖先的技藝。近來，他們來自孤山與鐵丘陵。^^他們的軍隊包含一支步兵線，一支斥候/弓兵線和一支鐵丘陵線(他們最重裝強硬的步兵)。
+str_rohan_faction_intro|^洛汗人是馬之主，由希優頓王領導。^^洛汗人有優秀的騎兵，從重裝槍騎兵到敏捷的馬騎弓兵都有。他們也有一支步兵線，分為組成盾牆的部隊和手持長劍的重裝劍士。
 str_mordor_faction_intro|^ 魔 多 代 表 索 倫 自 己 在 黑 土 的 黑 暗 中 積 蓄 的 力 量。^ 魔 多 軍 隊 由 半 獸 人 和 邪 惡 的 人（黑 努 曼 諾 爾 人）組 成。 魔 多 半 獸 人 是 裝 備 更 好，更 強 壯 的 半 獸 人，但 沒 有 弓 兵。 大 多 數 常 規 半 獸 人 都 是 步 兵，散 兵 或 弓 兵，但 也 有 半 獸 人 座 狼 騎 兵。 黑 努 曼 諾 爾 人 相 對 罕 見，但 步 兵 或 騎 兵 非 常 危 險。 索 倫 還 培 育 了 戰 鬥 食 人 妖，但 他 們 很 難 獲 得。
-; str_isengard_faction_intro|^Isengard is ruled by Saruman, the traitor wizard. He created his own version of orcs: the Uruk-hai.^^The forces of Isengard are quite well-equipped, though the weapons and armour may seem crude. The orcs are comparable to any other orcs, but the Uruk-hai are truly deadly killing machines wielding pikes, halberds, heavy axes and nasty cleavers. They also have the largest and most powerful bows among any of the orcish races.
-; str_lorien_faction_intro|^The Elves of Lothlórien, known as the tree-dwelling “Galadhrim”, are a powerful group of Nandor and Sindar living in the Lórien woods, led by Lord Celeborn and Lady Galadriel.^^Their forces consist of an infantry line and a scout line, with the occasional incorporation of an elite unit of Noldorin horse archers. All their troops are highly skilled, equipped with the finest arms and armour of Elven make, and overall extremely deadly in combat. A rain of arrows from under the forest cover, followed by a devastating infantry charge, is their main tactic.
-; str_imladris_faction_intro|^The Elves of Imladris (Rivendell) are Sindar and Noldor led by Lord Elrond and his two sons. They are custodians of the ancient lore of the west, as well as powerful and ancient artifacts dating back to the First Age. Under their banner, the Dúnedain of the North march as well – the remnants of the broken Northern kingdoms of Men are tall dark-haired rangers and nobles, clad in sturdy leathers or ancient maille.^^The soldiers of Imladris are among the most highly-skilled in Middle-Earth, and are extremely well-equipped. Their armies are capable of considerable tactical flexibility.
-; str_woodelf_faction_intro|^The Silvan Elves, called “wood-elves” in ancient times, live today in Mirkwood, led by King Thranduil.^^The Elves of Mirkwood have a competent infantry line that features both spears and swords. Their scouts and archers are the mainstay of their armies, more so than for their cousins of Lórien. Their armour is light but affords a great deal of protection.
-; str_dale_faction_intro|^Dale is a city rebuilt by Northmen who share ancestry with the Rohirrim, joined by the survivors from the lake city of Esgaroth (after it was burnt down by Smaug).^^Men of Dale provide tough infantry focused on polearms, famous archer troops including the legendary Barding bowmen, and a merchant guard line acting as reasonably good cavalry.
-; str_harad_faction_intro|^The Haradrim, the “hosts of the South” in Sindarin, come from the deserts and rainforests of the far South. They have a fondness for wearing bright colours and heavy gold ornamentation in warfare.^^Haradrim have average but competent infantry (skirmishers/archers and spearmen/swordsmen) from Great Harad, a cavalry line (incorporating both heavy cavalry and horse archers) from Harondor and a Far Harad line of tribal warriors.
-; str_rhun_faction_intro|^Men of Rhûn are tribal Easterlings hailing from around the sea of Rhûn, far to the east.^^The bulk of their army is cavalry - horse archers and lancers, both very lightly-equipped. Their top-tier cavalrymen ride much larger and heavier mounts, with more barding. Their infantrymen are also quite lightly-armoured and wield large axes and swords. In the open field, a cavalry host of Rhûn can be a fearsome force to face.
-; str_khand_faction_intro|^The Variags of Khand are fierce Easterling raiders who wear terrifying battlemasks into battle.^^They rely on fast light infantry (skirmishers and blademasters) and heavy axemen, while their cavalry line contains both light agile skirmishers and heavy kataphracts. The light infantry fling devastating volleys of throwing spears while screening the advance of the main host. The most savage among them charge into battle wearing little armour, attacking with great strength and ferocity.
-; str_umbar_faction_intro|^The Corsairs of Umbar are southern enemies of Gondor, descendants of the Black Númenoreans who conduct numerous raids on Gondor’s coastlines.^^Corsairs employ both lightly-armoured skirmishers and heavier swordmasters as well as skilled longbowmen. Being a mainly seafaring force, they favour armour that sacrifices toughness for mobility.
-; str_moria_faction_intro|^Orcs of Moria occupy the halls of Khazad Dúm, once a mighty Dwarven kingdom.^^Like regular orcs, their forces consist of a mix of infantry, archers, skirmishers and warg-riders, but generally they have better equipment than other orcs, because they use metal scraps found in Moria. Some lucky few among them also have access to bits of looted dwarven armour and weapons. Orc Chieftains of Moria have proved themselves stronger and fiercer than their kin, and they are fearsome in battle.
-; str_guldur_faction_intro|^Dol Guldur is an old fortress of Sauron in Mirkwood – indeed, it is the reason “Greenwood the Great” is now known by this darker name.^^Here, a contingent loyal to Mordor trains and prepares a great host, sending out frequent raiding parties against the Elves as well as the parties of Men who pass through the woods. The troops of Dol Guldur are mostly orcs, with a lineup very similar to Mordor’s (infantry, skirmishers, archers, warg riders), but with somewhat less variety.
-; str_gundabad_faction_intro|^Gundabad was a place sacred to the Dwarves, but in these days it has become a massive Orc stronghold in the northern mountains.^^The Gundabad orcs, though more savage than their fellows from other places, fight much like any other orcs, with a similar army lineup (infantry, archers, skirmishers, warg riders). Their equipment is primitive and their fighting style barbaric. Their warg riders are unrivalled in toughness and ferocity. Some among the orcs of Gundabad can even whip themselves into a battle-frenzy.
-; str_dunland_faction_intro|^The Dunlendings are the “wild men of Dunland”, enemies of the Rohirrim who drove them from their homeland.^^Dunland is barren and poor. The Dunlendings wear very little real armour – mostly furs and cured leather, with some metal signifying status. For weaponry, they wield long pikes and antler axes, with rare swords serving as emblems of prestige. Their horses are thin and weak, certainly no match for the steeds of Rohan, though occasionally the Dunlendings will ride them into battle as skirmishers. In battle, the pikemen advance en masse, presenting a crude but formidable wall of sharp polearms. Some Dunlendings have also cultivated affinity with creatures of the wild, and may unleash packs of savage wolves against their foes.
-; str_beorn_faction_intro|^Beornings, the descendants of Beorn, are a people of the upper Vales of Anduin, between Mirkwood and the Misty Mountains. They dwell mostly in the forests, though they keep the Old Ford clear for trade, exacting a toll on merchant caravans for their service.^^As woodsmen, they wield stout sticks and sharp axes, but wear little in the way of armour. Heavier Beorning infantry fight with shields as well. Beorning foresters are skilled bowmen and provide a valuable archer line.
+str_isengard_faction_intro|^艾辛格由叛徒巫師，薩魯曼所統治。他創造了屬於自己的半獸人品種：強獸人。^^艾辛格的部隊算的上是全副武裝，雖然他們的武器和鎧甲看起來有些粗糙。半獸人跟其它同種沒兩樣，但強獸人則是揮舞著長矛、戟、重斧和骯髒菜刀的殺人機器。他們還有半獸人之類中最強最大的弓。
+str_lorien_faction_intro|^羅斯洛立安的精靈，又稱樹之民"加拉茲民"，是由領主凱勒鵬和凱蘭崔爾女士領導，居住在羅瑞安森林中強大的一群南多和辛達族人。^^他們的部隊是由一支步兵線和一支斥候線所組成的，再加上偶爾加入的精銳單位諾多馬騎弓兵。 他們所有的部隊都技藝精湛，裝備著最精良的精靈製武器和鎧甲，總而言之在戰場上十分致命。在森林的掩護下射出箭雨，再由步兵發起毀滅性的衝鋒，是他們主要的戰術。
+str_imladris_faction_intro|^伊姆拉崔(瑞文戴爾)的精靈是由領主愛隆和他兩個兒子領導的辛達與諾多族人。他們是西方古代傳說，和第一紀元的古老強大文物的管理者。在他們的旗幟下，北方的登丹人也跟著進軍–破滅的北方人類王國剩餘的高大黑髮遊俠和貴族，身穿結實的皮甲和古代鎖子甲。^^伊姆拉崔的士兵都是中土世界技藝精湛的人才，身穿極其優良的裝備。他們的軍隊可以靈活運用各種戰術。
+str_woodelf_faction_intro|羅瑞安
+str_dale_faction_intro|^河谷鎮是由與洛汗人共同祖先的北方人，在長湖鎮(被史矛革燒毀後)的倖存者加入後共同重建的一座城市。^^河谷鎮人能提供專精長柄武器的堅強步兵，包含傳說中的巴丁弓箭手遠近馳名的弓兵部隊，和一支可靠的商人護衛騎兵線。
+str_harad_faction_intro|^哈拉德人，辛達語中的"南方之主"，來自遙遠南方的沙漠和雨林。他們喜歡穿著明亮的顏色和厚重的金色裝飾上戰場。^^哈拉德人有著來自大哈拉德普通但可靠的步兵(散兵/弓兵和長槍兵/劍士)，一支來自哈隆鐸的騎兵線(包含重裝騎兵和馬騎弓兵)和一支來自遠哈拉德的部落戰士線。
+str_rhun_faction_intro|^盧恩人來自遙遠的東方，他們源自生活在盧恩內海周圍的東方人部落。^^他們軍隊的大部分是由騎兵-馬騎弓兵和槍騎兵組成的，雙方都是輕裝的。他們的頂級騎兵騎著更大更重，同時披著更多馬甲的坐騎。他們的步兵也是輕裝並揮舞著巨大的斧頭和劍。在平地上，一支盧恩騎兵大軍將成為一股令人生畏的力量。
+str_khand_faction_intro|^侃德的維瑞亞人是戴著可怕戰鬥面具上戰場的勇猛東方人掠奪者。^^他們仰賴快速的輕裝步兵(散兵和刀刃大師)和重裝斧兵，他們的騎兵線則是包含輕裝敏捷的散兵和重裝鐵甲騎兵。輕裝步兵會一齊投出毀滅性的擲槍來掩護主要大軍的前進。他們之中最殘暴的人往往不怎麼穿鎧甲就上戰場，以強大的力量進行猛烈的攻擊。
+str_umbar_faction_intro|^昂巴的海盜是剛鐸南方的敵人，在剛鐸的海岸線進行過無數次掠奪的他們是黑努曼諾爾人的後代。^^海盜應用輕裝的散兵和重型的劍術大師還有技藝高超的長弓手。作為主要在海上航行的部隊，他們偏好犧牲強度換取靈活度的鎧甲。
+str_moria_faction_intro|^摩瑞亞的半獸人佔據著凱薩督姆的殿堂，其曾經有著強大的矮人王國。^^如同一般的半獸人，他們的部隊是由步兵、弓兵、散兵和座狼騎手混雜組成的，但他們普遍比其他半獸人有更好的裝備，原因是他們使用在摩瑞亞裡找到的廢金屬。其中少數運氣好的還能使用搜刮到的矮人鎧甲和武器。摩瑞亞的半獸人酋長已經證明他們比自己的親屬更強壯和勇猛，他們在戰場上令人生畏。
+str_guldur_faction_intro|^多爾哥多是索倫在幽暗密林的要塞–是的，它正是"巨綠森"現在被人以這個更黑暗的名字所之的原因。 ^^在這裡，一支忠於魔多的分隊訓練並準備一 支大軍，頻繁的派出掠奪者攻擊通過森林的精靈和人類的隊伍。多爾哥多的部隊大多是半獸人，升級線與魔多的差不多(步兵、散兵、弓兵、座狼騎手)，但稍微少了點多樣性。
+str_gundabad_faction_intro|^剛達巴對矮人來說是一個神聖的地方，但近來已經變成北方山脈裡一個巨大的半獸人要塞。^^剛達巴的半獸人，即使比其他地方的的同類更兇殘，戰鬥方式倒是差不多，也有相似的升級線(步兵、散兵、弓兵、座狼騎手)。他們的裝備原始而戰鬥風格野蠻。他們的座狼騎手堅實勇猛無人能敵。有些剛達巴的半獸人甚至會鞭打自己進入狂暴狀態。
+str_dunland_faction_intro|^登蘭德人是"登蘭德的野人"，是把他們趕出家園的洛汗人之敵。^^登蘭德十分貧瘠。所以登蘭德人沒什麼真正的鎧甲–大多是毛皮和粗糙的皮革，只有地位高的人才能用金屬。就武器而言，他們揮舞著長矛和鹿角斧，和少數象徵威信的劍。他們的馬瘦弱不堪，顯然無法和洛汗的駿馬抗衡，只有少數登蘭德人會作為散兵騎著牠們上戰場。在戰場上，他們的長矛兵會一起前進，組成粗糙但強大的長柄武器之牆。有些登蘭德人也飼養了親近的野生動物，他們可能會放出兇猛的狼群來攻擊敵人。
+str_beorn_faction_intro|^比翁人，比翁的後代，是安度因河谷上游的人民，在幽暗密林迷霧山脈之間。他們大多住在森林裡，雖然他們會保持老渡口的貿易暢通，對來往的商隊收過路費。^^作為山林人，他們揮舞著粗棍子和鋒利的斧頭，但卻不怎麼穿鎧甲。重裝的比翁步兵也會攜盾戰鬥。比翁的森林行者則是技藝高超的弓箭手並提供一支貴重的弓兵線。
 str_intro_faction_intro_strings_end|派系介紹結束
-str_gondor_extra_info|好^^艱難^^剛鐸（東南）^^伊姆拉希爾王子^^魔多，昂巴，侃德，哈拉德
+str_gondor_extra_info|好^^艱難^^剛鐸（東南）^^伊姆拉希爾親王^^魔多，昂巴，侃德，哈拉德
 str_dwarf_extra_info|好^^容易^^北羅馬尼安（北）^^鐵足王丹恩二世^^盧恩，剛達巴
 str_rohan_extra_info|好^^平均^^洛汗(西南)^^希優頓王^^艾辛格，登蘭德
 str_mordor_extra_info|索倫^^容易^^剛鐸 (東南)^^葛斯摩^^剛鐸
@@ -2107,21 +2107,21 @@ str_harad_extra_info|索倫^^容易^^剛鐸 (東南)^^烏烏凱瑞首領^^剛鐸
 str_rhun_extra_info|索倫^^艱難^^北羅馬尼安 (北)^^貴族海卡洛^^河谷鎮,，矮人，幽暗密林，比翁人
 str_khand_extra_info|索倫^^容易^^剛鐸 (東南)^^克拉克馬胡酋長^^剛鐸
 str_umbar_extra_info|索倫^^容易^^剛鐸 (東南)^^托米爾上將^^剛鐸
-str_moria_extra_info|薩魯曼^^非常艱難^^南羅馬尼安 (中央)^^矮小的博格大師^^瑞文戴爾，羅斯洛立安
+str_moria_extra_info|薩魯曼^^非常艱難^^南羅馬尼安 (中央)^^摩瑞亞之主小個子博魯格^^瑞文戴爾，羅斯洛立安
 str_guldur_extra_info|索倫^^非常艱難^^南羅馬尼安 (中央)^^弗因諾大師^^瑞文戴爾，羅斯洛立安
 str_gundabad_extra_info|薩魯曼^^非常艱難^^北羅馬尼安 (北)^^博札庫魯大師^^河谷鎮，矮人，幽暗密林，比翁人
-str_dunland_extra_info|薩魯曼^^艱難^^洛汗 (西南)^^黑首領戴格拉夫^^洛汗
+str_dunland_extra_info|薩魯曼^^困難^^洛汗(西南)^^黑酋長代格拉夫^^洛汗
 str_beorn_extra_info|好^^艱難^^北羅馬尼安 (北)^^老首領葛林比翁^^盧恩，剛達巴
 str_intro_strings_extra_end|額外介紹結束
-; str_gundabad_intro|You have come from the far north, from the lands of long-lost Angmar, after receiving tidings of the war to come. For years beyond count you and your folk have broken many dwarf shields with your axes and spears, crushed many broken bodies of men and elves below the claws of your fierce wargs, skinned the hides of the bear-people to wear as furs. The great halls of Gundabad in the Misty Mountains are now yours once again, as they were in the time of Bolg and Azog.^^Many of you have perished over the years, somemany of them slain in these very halls and tunnels - but many still remain. Great sport you have had with the greedy little diggers and their friends, in the past - and greater sport you will have now, when you march upon them and take everything for yourselves!^^Vengeance for Bolg, for Azog, for the Great Goblin - vengeance for the goblins of Gundabad!
+str_gundabad_intro|自從收到戰爭即將開始的消息後，你從遙遠的北方，失落已久的安格馬之地前來。在數不盡的年歲中你和你的同族用斧頭和長槍擊碎許多矮人的盾牌，用勇猛座狼的利爪撕碎了無數人類與精靈的身體，剝下熊人的毛皮來穿。迷霧山脈中剛達巴的殿堂又再次屬於你們，如同博魯格和阿佐格的時代那樣。^^你們之中的許多已在長年中死去，好一部分就在這些殿堂和隧道中被斬殺-但還剩下很多。過去，你曾和那些貪婪的矮小挖掘者與他們的朋友好好交鋒過-而今後你將會有更多這種機會，就在向他們進軍並把一切都占為己有時！^^為博魯格、為阿佐格、為偉大的哥布林復仇-為剛達巴的哥布林們復仇！
 str_show_keybinds|特殊鍵綁定：^^編隊：^陣型 - 'J'^ 盾陣 - 'K'^ 楔型陣 - 'L'^ 方正 - ';' ^清除陣型 - 'U'^^循環通過武器使用 - 'O'^^循環通過攝像機類型 - 'CTRL + END'^^團結 - 'V'^^呼叫馬 - 'M'^^查看訂單/小地圖 - 'Backspace'
-; str_tactical_controls|Use the keyboard NUMBERS to select a division. Press 0 to select your entire force.^^Use F1-F4 to order selected divisions. Keep the F1 key down to place selected divisions. One may target an enemy division through this mechanism.^^Pressing the ENTER key often initiates an overhead Strategy Camera.^^Pressing the BACKSPACE key often initiates a Battle Command Display with 'radar.'
-; str_division_placement|When ONE division is selected, the center of its front rank is placed at the spot indicated.^^When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward.
+str_tactical_controls|用數字鍵選擇分隊。按0來選擇全軍。^^使用F1到F4來命令分隊。按住F1來放置所選取的分隊。你也可以使用這個機能來瞄準敵方的一個分隊。^^經常按下ENTER鍵來開啟俯視戰術鏡頭。^^按下後退鍵來開啟附帶'雷達'的戰鬥命令顯示。
+str_division_placement|當一個分隊被選擇時，前排的中心將被置於指定位置。^^當多數分隊被選擇時，他們將以玩家指定的位置為中心分散開來。^^你可以按F2，F7來記住分隊相對於玩家的位置。預設是步兵在左，騎兵在右，遠程在前。
 str_formations|戰 鬥 選 單 上 的 複 雜 陣 型 有：^^ - 最 佳 部 隊 在 前 的 排 ^ - 盾 牆，盾 牌 前，長 炳 的 武 器 在 後^ - 最 佳 部 隊 在 前 的 楔 形 陣^ - 方 陣 則 沒 有 特 別 的 順 序^ - 沒 有 陣 型^^即 使 在 最 後 一 種 情 況 下，玩 家 也 可 以 多 次 使 用 靠 緊 來 進 行 最 多 四 行 的 陣 型。
 str_npc18_intro|偉 大 的 人，等 一 下！我 想 跟 你 對 話！
-str_npc19_intro|等 一 等，指 揮 官。我 有 幾 句 話 想 跟 你 說。不，你 不 用 下 跪，即 使 你 要 跟 有 皇 族 血 統 的 人 對 話。
-str_npc20_intro|等 等。你。我 見 過 你。我 認 得 你 的 樣 子。我 曾 經 夢 見 過 你… 但 為 甚 麼 是 你？現 在 在 我 眼 中 的 你，只 不 過 是 一 個 卑 鄙 的 小 傢 伙！
-; str_npc21_intro|Buzz off, little fly, 'fore I SQUASH YER! RRAAARGHH!  (*The troll bares her fangs in a somewhat half-hearted snarl.*)
+str_npc19_intro|等等，指揮官。我有幾句話想跟你說。不，不，你不用下跪，即使你將要跟有王家之血的人對話。
+str_npc20_intro|等一下。你。我見過你。我認得你的臉。我曾經夢見過你…但為什麼會是你？現在我眼中的你，不過是一個卑微的奴隸嘛！
+str_npc21_intro|滾開，小蒼蠅，'ㄅ然窩揪打扁擬！啦啊啊啊！(*食人妖對你露出她的獠牙。*)
 str_npc22_intro|嘿，{playername}。 Mae govannen（辛達林語：很高興見到你！）
 str_npc23_intro|離我遠點，陌生人！我可不想和你說話！
 str_npc24_intro|奇力，德瓦林之子，樂意效勞！
@@ -2129,9 +2129,9 @@ str_npc25_intro|歡迎來到河谷鎮，旅行者！有什麼我可以做的嗎�
 str_npc26_intro|噓！如果你向警衛揮手，我就把你的內臟切下來，餵給座狼吃！
 str_npc27_intro|你 !
 str_npc18_intro_response_1|一 個 快 要 死 的 奴 隸，想 跟 我 對 話？你 要 說 些 甚 麼？
-str_npc19_intro_response_1|你 說 皇 族 血 統？哈！是 甚 麼 使 你 覺 得 自 己 有 一 滴 皇 族 血 統？
-str_npc20_intro_response_1|看 過 來，你 這 是 甚 麼 意 思，巫 婆？你 是 誰？
-; str_npc21_intro_response_1|Ah yes, you have me quaking in my boots. What a scary troll, bound by this tiny chain! Why don't you squash me then?
+str_npc19_intro_response_1|你說王家之血？哈！是什麼讓你覺得自己有任何一滴王家之血？
+str_npc20_intro_response_1|看過來，妳什麼意思，巫婆？妳是誰？
+str_npc21_intro_response_1|阿是的，我被你嚇壞了呢。真是可怕的食人妖呢，被一根小小的鎖鏈栓著喔！來打扁我啊？
 str_npc22_intro_response_1|您好，精靈貴族！與您相見真是三生有幸。 (注：葛羅芬戴爾是諾多精靈王族，在魔戒魔戒同盟卷二第一章中被甘道夫評價為：'首生兒女中大有力量的人物之一''隸屬王侯家族的精靈領主' ；首生兒女是精靈族別稱)
 str_npc23_intro_response_1|這是西爾凡精靈(木精靈別稱)向客人打招呼的方式？
 str_npc24_intro_response_1|{playername} 竭誠為您服務。都靈的子民們過得如何？
@@ -2139,18 +2139,18 @@ str_npc25_intro_response_1|向你問好，我還在想是否有志願者可以�
 str_npc26_intro_response_1|把你的敵意放下，奇獸人！我不是告密者。
 str_npc27_intro_response_1|你 是 誰 ?
 str_npc18_intro_response_2|我不會在一個被判死刑的奴隸身上浪費口水。
-str_npc19_intro_response_2|無恥的混蛋。擋著我的路。
-str_npc20_intro_response_2|我沒有時間聽你胡說八道，女巫。
-; str_npc21_intro_response_2|Just this once I will let you live, you dirty beast. (leave)
+str_npc19_intro_response_2|無恥的混蛋。別擋我的路。
+str_npc20_intro_response_2|我沒有時間聽妳胡說八道，女巫。
+str_npc21_intro_response_2|這次姑且留妳一命吧，妳這骯髒的野獸。(離開)
 str_npc22_intro_response_2|不好意思，我還有一些不那麼重要的客人要招待。
 str_npc23_intro_response_2|我也正有此感，再見。
 str_npc24_intro_response_2|沒關係，我需要一些新鮮空氣。
 str_npc25_intro_response_2|沒關係，我們僅僅是在觀光而已。
 str_npc26_intro_response_2|我只是在做我的事情而已，不然的話我的用劍手會癢。
 str_npc27_intro_response_2|[忽略並離開]
-; str_npc18_backstory_a|I am no mere slave! I am a head-taking warrior, cheated of my rightful place among the ranks! You see that I am a woman, but I am stronger and swifter than many others, and I've outfought more men than I can count. The Pit Master - accursed be he! He set me a test, to fight three men at once. Three!
-; str_npc19_backstory_a|A small drop, to be sure, but my dam has told me all about my lineage. I am Heidrek, direct descendant of King Fengel, closer to the throne of Rohan and Dunland than any of our chieftains! Dark is my hair, but I fancy I have more than a strand of yellow in there somewhere.
-; str_npc20_backstory_a|In my dream, there was a tree. A tree, all of white. And you, you were there, standing beside it. You placed your hand upon its trunk, and lo, it withered down to its very roots. And the shadow in the sky lengthened, and the air grew heavy. I heard a laughter then, from far away in the east. 
+str_npc18_backstory_a|我才不是區區的奴隸！我是個獵頭的戰士，被騙走了我正當的地位！即使在你看來我是個女人，但我比許多其他人都更強壯和迅速，而我也打贏過不計其數的男人。格鬥坑之主-他真該死！他設計我，要我一次對付三個男人。三個！
+str_npc19_backstory_a|確切來說，是一小滴，但我媽告訴過我所有關於我血統的事。我是海德克，范哲爾王的直系後裔，比我們任何一個酋長都更接近洛汗和登蘭德的王位！我雖是黑髮，但我想某些地方應該有一絲黃色。
+str_npc20_backstory_a|在我的夢中，有一棵樹。一棵，全白的樹。而你，你在那裡，就站在它旁邊。你把你的手放在樹幹上，然後，它就整個枯萎到底了。然後天空中的陰影蔓延，空氣變的沉重。接著我聽見一道笑聲，自遙遠的東方傳來。
 ; str_npc21_backstory_a|Hah, step an itsy bit closer an' I'll snap your neck like a twig.  Come on! I'll stomp on your liver, smash your bones into dust an' juice your head like a grape.
 str_npc22_backstory_a|你可能曾聽說過我在戰場上的功績，那早已被凡人遺忘的功績。這次戰爭將會是艾爾達面臨的又一次危機，但這將是最後一次戰爭。 (注：艾爾達是精靈的別稱，星辰的子民)
 str_npc23_backstory_a|請原諒我的莽撞，陌生人，我們這裡的訪客很少並且他們看起來都並不可信。數週之前，這個矮人出現在這裡然後…不好意思，我跑題了。我的名字是露亞瓦納，幽暗密林中的西爾凡精靈(木精靈別稱)。
@@ -2159,8 +2159,8 @@ str_npc25_backstory_a|如果你去詢問兵營軍需官的話，可以肯定你�
 str_npc26_backstory_a|好啊，人們都叫我葛瑪。用腸子都能猜到我的頭兒和他手下那幫下僕正在獵殺我。 ^這群無用的豬玀！之前，我們被一群稻草人(對洛汗人的貶義稱呼)巡邏隊埋伏…他打輸了。 ‘退後！ ’他這樣尖叫道，然後就跑掉了。只有葛瑪和少數幾個還站得穩，並把騎兵衝鋒給打破了。呵呵呵，我們之後還把那群黃頭髮打成糊。當初要不是我們強大，早就不知道被什麼東西消化掉了。
 str_npc27_backstory_a|我是都戈什！
 ; str_npc18_backstory_b|I prevailed! I defeated them! But... one of them was so weak that he perished from the blows I dealt him. If he had been a simple bondsman, that would have been the end of it. But no. He was one of Great Lord Lurmsakun's many sons, by a lesser wife.
-; str_npc19_backstory_b|Well, you will not find any of Rohan or Dunland who will accept my claim, but it is a true one nonetheless. My grand-dam was a herdswoman, living in the hills, and one day it chanced that old King Fengel, the greedy grasping grandfather of Theoden the Pretender, happened to see her on the banks of the Isen. He took a fancy to her, and my dam was his child.
-; str_npc20_backstory_b|Do you not know before whom you stand? Ignorant fool. Know that I am Zigûrphel, of ancient Akallabêth - but like as not you know nothing of that name! Know, also, that I seek to redress the wrongs of long ago, the wrongs wrought upon me and my people by the spite of the Valar, they who sank our Great Armament and our home. Ah, Ar-Pharazôn, great and glorious! Shall your vision be unremembered evermore? No, not so long as Zigûrphel lives and has hands to do her work!
+str_npc19_backstory_b|好吧，你不會找到任何洛汗或登蘭德人認同我的繼承權，但這仍是真的。我的奶奶是個牧羊女，住在丘陵上，某天老國王范哲爾，冒牌國王希優頓貪婪的祖父，碰巧看到在艾辛河岸上的她。他對她很著迷，我媽就是他的孩子。
+str_npc20_backstory_b|你不知道自己立於誰的面前嗎？無知的傻瓜。你要知道我是齊格爾菲爾，來自淪亡的努曼諾爾帝國-但你大概也不知道那個名字吧！你，也該知道，我尋求將過去的錯誤導正的方法，被維拉加諸在我和同胞身上的錯誤，祂們沉掉我們的無敵艦隊和家園。啊，亞爾法拉松，偉大而光榮！你的夢想將繼續被遺忘嗎？不，只要我齊格爾菲爾還活著且手還能動就不會！
 ; str_npc21_backstory_b|Yer' a hard one, are ye? (*she sighs*) Name's Berta. Used to 'ave me a raidin' gang in the Misty Mountains, mind, the nastiest goblin thieves around. Those were the good days. Then we ran into a band of these wild ones from Gundabad.  Did some drinkin', some gamblin'... Next mornin' I woke all tied up, my lads in the wind. Now I break rocks and I haul their baggage around. Sometimes they 'ave me scrappin' for money.
 str_npc22_backstory_b|我是埃爾隆德大人向凱勒鵬大人派遣的大使，我的任務包括提供援助與建議，以支援位於羅馬尼安的戰爭。
 str_npc23_backstory_b|我很喜歡遊走在我們美麗森林的隱蔽小徑中有時我會放輕腳步，去觀察林中動物的習性對伊甸人來說，成捆的武器和高大的城牆很美;但就我個人而言，稀有鳥兒歌唱和野豬巢穴也並不遜色。
@@ -2169,18 +2169,18 @@ str_npc25_backstory_b|我曾治愈了吾王布蘭德的便秘，一個常見但�
 str_npc26_backstory_b|於是我問我自己：'葛瑪，你打算以一坨爛肉的身份結束此生麼？'然後我回答：'絕不'^之後的一場戰鬥，我假裝受傷退到了部隊最後面，在沒人注意的情況下把我的頭兒幾乎劈成了兩半，又把他的助手下僕殺個精光^^...讓我沒想到的是，那個該死的爬行動物竟然沒死，還四處嚼舌根。下次遇到他我會保證把他的頭擰下來，啊哈哈...
 str_npc27_backstory_b|我是艾辛格的一名狼騎兵，也是一名追踪者。
 ; str_npc18_backstory_c|And so here I am, cursed at and spit upon, condemned to die for being mightier than the dogs who mock me! Free me, Great One. Free me, speak for me - and my strength is yours. My blade is yours. My life is yours!
-; str_npc19_backstory_c|Naturally, Chief Daeglaf and the rest wish to give me no chance at all for glory, for if I were to perform great deeds in battle, it would lend wings to my claim. Men would flock to my banner then! Your fame runs before you, Commander. If you will allow me to serve under your banner, I can perform those great deeds for you.
-; str_npc20_backstory_c|O Akallabêth, where are you now? Faded, all faded away... Where there once was light, the glory of our nation that was great above all others, now there is only the Shadow. My beautiful home now knows the eternal silence of the sea. But my heart is still full of fire, and dark beasts run wild within it. I know potent arts that you and your kind have never even imagined. Hearken unto me, now! Will you beg for my aid, as you should, or will you go from here skulking, like a worm? Choose swiftly!
+str_npc19_backstory_c|自然，代格拉夫酋長和其他人都不希望給我獲得榮耀的機會，因為如果我在戰場上做了大事，那就會給我的繼承權帶來份量。人們就會湧到我的旗幟下！你是個名聞遐邇的人，指揮官。如果你讓我在你的旗幟下服役，我將會為你做出大事。
+str_npc20_backstory_c|淪亡的努曼諾爾帝國呦，你現在究竟在哪？消逝了，全都消逝了...那曾經有過光明，我們國家勝過一切的榮光，現在只剩下陰影。我美麗的家園現在只知道大海永恆的寂靜。但我心裡仍充滿著怒火，讓黑暗的野獸在體內狂奔。我知道你和你同胞想都沒想過的大法術。現在，聽好了！你會像你該做的一樣，懇求我的援助，還是像蟲子一樣，偷偷摸摸的爬走？快點決定！
 ; str_npc21_backstory_c|Listen 'ere, tiny! If yer' some bigshot chief indeed, p'raps yer can talk to the bossman there and pay off what I owe? I reckon I could join your lil' band. See the world, eat some sheep... (*She licks her impressive fangs.*)
 str_npc22_backstory_c|然而，如果羅斯洛立安的敵人撤退了的話，我倒是會考慮加入你的隊伍一段時間，{playername}。我可以感覺到，我們的命運在這場戰爭中是相互交匯的。
 str_npc23_backstory_c|我猜你並沒有理解我剛剛說的話 - ？鑑於你正在為戰事做準備但你一定旅行了很遠很廣，那你之前見過其他大森林麼你可以帶我去那裡麼？
 str_npc24_backstory_c|然而我們在參戰的問題上有一點點遲鈍，這和先祖留下的戰士傳統不一樣。我聽說你在旅行中的行動遠多於我們，而且你的目的也與矮人友善。要知道一個精於戰鬥的矮人會大大提高你的生存機會。
 str_npc25_backstory_c|我聽說在我們這兒還有其他地方，戰事正在升級從你盔甲上的痕跡來看，你顯然已經遇險過多次了我想我卑微的技能能夠很好地幫助你的部隊;當然，這是為了所有人的明天。
-str_npc26_backstory_c|我是一名好戰的強獸人，也是一名狂戰士！凡是殺人需要的技能我都會。我曾為白手效忠，但現在看來白手要把我推進火坑。^^我想跟你走，在艾辛格下僕們專心磨牙的時候去殺南方的人類。
+str_npc26_backstory_c|我是一名好戰的強獸人，也是一名狂戰士！凡是殺人需要的技能我都會。我曾為白掌效忠，但現在看來白手要把我推進火坑。^^我想跟你走，在艾辛格下僕們專心磨牙的時候去殺南方的人類。
 str_npc27_backstory_c|或許你是我下一位主人！
 ; str_npc18_backstory_later|I have been fortunate, I suppose, that Great Lord Lurmsakun has been occupied elsewhere. His intendants have left me here to rot. But my destiny is not to die as a prisoner! Have you come to grant me my rightful death on the battlefield?
-; str_npc19_backstory_later|Ho there! You have returned, as I knew you would. My hands are kept idle by my jealous chiefs. Let us speak, Commander! I would follow you, and fight in your ranks to win for myself renown.
-; str_npc20_backstory_later|You trouble my dreams still! Will you give me no peace? My dreaming eye sees deep and far. Here in Dol Guldur I still have visions of your works. I say this: if you were wise, you would have asked for my aid again ere now.
+str_npc19_backstory_later|那邊的！你回來了，我就知道你會。我被忌妒的酋長們害的無所事事。讓我們談談吧，指揮官！我會跟隨你，並在你的行列中贏得自己的聲望。
+str_npc20_backstory_later|你仍在攪亂我的夢！為何讓我不得安寧？我夢裡的眼睛看的又深又遠。即使在多爾哥多這裡我仍看見你事蹟的影像。我說啊：如果你夠睿智的話，你現在就該再次請求我的援助了。
 ; str_npc21_backstory_later|Look wha' the cat dragged in! Done well fo' yerself, then, 'ave yer? Had a lovely time strollin' around, not bein' chained to a damned rock?! Well ain't that nice! How 'bout yer go speak to the bossman for me? Now, better than never.
 str_npc22_backstory_later|你重新考慮過了麼艾爾達的時間不多了(注：艾爾達是精靈的別稱，星辰的子民？)。
 str_npc23_backstory_later|我已經觀察一個巨型蜘蛛巢好幾天了。我對它們的第一印象非常糟糕，簡直是醜陋的生物，但現在看來它們會讓入侵者陷入絕境。你是來邀請我跟你一起旅行的麼？
@@ -2189,8 +2189,8 @@ str_npc25_backstory_later|我又一次覲見了我的國王，這次是噁心嘔
 str_npc26_backstory_later|你以為我在做什麼？葛瑪正等著某些卑鄙下僕敲我悶棍呢。讓我跟你走吧，我會是個好僕人的。
 str_npc27_backstory_later|你重新考慮過了麼？我會是個好僕人的。
 str_npc18_backstory_response_1|如果你真的這麼勇猛，也許你可以為我而戰。當然，在我們餵飽你之後。
-str_npc19_backstory_response_1|很好。只要你能在戰場上戰鬥，你就能發揮作用，登蘭德。
-str_npc20_backstory_response_1|你用一個奇怪的方式，請求加入我，女巫，但很好，你可以一起去。
+str_npc19_backstory_response_1|很好。只要你能在戰線中戰鬥，你就有所用處，登蘭德人。
+str_npc20_backstory_response_1|妳請求加入我的方式真奇怪，女巫。但好吧，妳可以一起來。
 ; str_npc21_backstory_response_1|It's true you're rather large and look like you can handle yourself in a scrap. I might have use for you.
 str_npc22_backstory_response_1|請原諒我冒昧的請求，但我的隊伍在接下來的戰鬥中很需要你的才能。
 str_npc23_backstory_response_1|我們在整個中土世界旅行，守護一切美好的東西，並給我們的敵人帶去死亡。
@@ -2199,8 +2199,8 @@ str_npc25_backstory_response_1|我們的確需要一名治療師和草藥醫生�
 str_npc26_backstory_response_1|我想我會充分發揮一名狂戰士的才能的。
 str_npc27_backstory_response_1|你會的。
 str_npc18_backstory_response_2|呸！一隻兇殘的狗不適合做我的同伴。
-str_npc19_backstory_response_2|你說的是偉大的事蹟。在你再次接近我之前，去做你自己的事情吧！
-str_npc20_backstory_response_2|呸！我猜你的叫聲比你的咬傷要嚴重得多。我有工作要做！
+str_npc19_backstory_response_2|你說大事。在你再次靠近我之前，先自己去做一些吧！
+str_npc20_backstory_response_2|呸！我看妳比起咬更會吠。我還有工作要做！
 ; str_npc21_backstory_response_2|Bad luck, troll. I can't afford to haggle for the likes of you.
 str_npc22_backstory_response_2|對不起，我們對人形衣架不感興趣。
 str_npc23_backstory_response_2|對不起，我們自己能行。
@@ -2209,8 +2209,8 @@ str_npc25_backstory_response_2|對不起，我們只會在需要的時候拜訪�
 str_npc26_backstory_response_2|哈！我可不相信叛徒。
 str_npc27_backstory_response_2|我 不 需 要 你，奴 隸。
 str_npc18_signup|哦，把肉放進我的嘴裡！一旦我的手和腳自由了，我的肚子裡有食物，你很快就會看到我真正的勇氣了！
-str_npc19_signup|是的，你現在可以叫我這個名字，因為我並不為我的登蘭德之血感到羞恥。我的人民在洛汗王的暴政下遭受了巨大的痛苦，我覺得與他們之間沒有一點血緣關係。我將在這場戰爭中幫助你們。指揮官，但是作為回報，你必須按照我們的需求來報答我們。
-str_npc20_signup|我會暫時忽視你的傲慢，但要知道總有一天我們會有話要說。也許到那時，我們都會站在黑魔王面前，我曾經知道他有一個完全不同的名字，我們看看誰有他的耳朵。也許那時我會教你禮貌。
+str_npc19_signup|是的，你現在可以這樣叫我，因為我並不為我的登蘭德之血感到羞恥。我的同胞在洛汗國王的暴政下備受煎熬，讓我覺得自己與他們之間沒有一點親屬關係。我將在這場戰爭中幫助你。指揮官，但是作為回報，你必須在時機成熟時宣揚我的繼承權。
+str_npc20_signup|我會暫時忽略你的傲慢，但要知道總有一天我們會再次談話。也許那時，我們都會站在黑暗之主面前，我以前認識他時名字還跟現在差很多呢，讓我們看看他會聽誰的話。也許那時我會教教你該有的禮貌。
 ; str_npc21_signup|Now yer' talkin'! Go see the boss and let me outta this hole.
 str_npc22_signup|我明白了，我不得不承認你的名聲與功績已被我所知。
 str_npc23_signup|我不喜歡戰爭中的暴力和武器，但至少我還知道該怎麼保護好我自己。
@@ -2219,8 +2219,8 @@ str_npc25_signup|真的麼？那我需要一點時間準備草藥和配方。
 str_npc26_signup|我比你所有的下僕加起來都有價值。一個好戰的強獸人永不後退。
 str_npc27_signup|真的麼？我的加入會幫助你很多的。
 str_npc18_signup_2|我母親曾經告訴我，我生來就是為了砍許多敵人。對你來說，我要殺死許多西方軟弱的人。只要有一把好刀放在我手裡，剩下的交給我吧！
-str_npc19_signup_2|我和我的人民一起戰鬥，就像夜晚的狼一樣。 我可以投擲長矛，或者把長矛刺進一個勇猛的騎士的胸膛我用斧子或劍砍四肢，我將公開發言：如果你為黑眼或白手提供服務，我不在乎。 只要我能在金色大廳裡坐在我的合法寶座上，這對我來說就是一切。
-str_npc20_signup_2|但就目前而言，我在很長一段時間裡創立的傳說和工藝都能滿足您的需求。 知道這一點：有了齊格爾菲爾的助手，你就像一條在烏頓深坑中展翅的龍。我要為你和你的目的做大事，雖然你不明白！
+str_npc19_signup_2|我和我的同胞一起戰鬥，就像夜晚的狼一樣。我會投擲長槍，或者把長矛刺進衝鋒騎兵的胸膛。我會斧頭或劍砍掉人的四肢。對你，我就講白了：我不在乎你為邪眼或白掌服務。只要我能在金之大殿中坐在我應得的王位上，對我來說就是一切。
+str_npc20_signup_2|但就目前而言，讓我用傳說和多年的工藝為你服務吧。要知道：有了我齊格爾菲爾援助你，你就會像一條在烏頓深坑中得到翅膀的龍。我會為你和你的目的做出大事，即使你現在不會明白的！
 ; str_npc21_signup_2|I'll be right behind yer, don't yer worry.
 str_npc22_signup_2|如果你在野外保持高調並被敵人圍攻的話，戰鬥肯定不會勢均力敵。我會幫助你的。
 str_npc23_signup_2|也許我可以教你怎麼快速移動並且保持安靜，我們走吧！
@@ -2229,8 +2229,8 @@ str_npc25_signup_2|我必須先警告你，我在戰場上一點用處都沒有�
 str_npc26_signup_2|你最好快點決定，這裡的守衛越來越多疑了。
 str_npc27_signup_2|你不會後悔帶我走的。
 str_npc18_signup_response_1|我喜歡你的精神。 很好，我幫你向魯薩昆發轉達。
-str_npc19_signup_response_1|那麼，'王子'，拿起你的武器。 你現在為我而戰。
-str_npc20_signup_response_1|為了你，我希望你的話語不會閒著吹噓。 齊格爾菲爾，別讓我失望。
+str_npc19_signup_response_1|好吧，那麼，'王子'，拿起你的武器。現在，你為我而戰。
+str_npc20_signup_response_1|為了妳著想，我希望，妳的言語不是空談。別讓我失望，齊格爾菲爾。
 ; str_npc21_signup_response_1|Very well, we shall see if you prove worthy.
 str_npc22_signup_response_1|精靈貴族的加入是我們的榮幸。
 str_npc23_signup_response_1|很好，我只希望你不會一見獸人就腳底抹油。
@@ -2239,8 +2239,8 @@ str_npc25_signup_response_1|我保證，你跟我們在一起會非常安全的�
 str_npc26_signup_response_1|很好，我說什麼你就做什麼，我保證你吃香的喝辣的。
 str_npc27_signup_response_1|非常好，我們走。
 str_npc18_signup_response_2|你很兇......   也許太兇了。 現在多花一點時間可能會教你順從。
-str_npc19_signup_response_2|你得捆在乾草上再坐一會兒，“王子”。
-str_npc20_signup_response_2|你的吹牛和辱罵在我耳邊響起。在我們再說話之前，先馴服你的舌頭！
+str_npc19_signup_response_2|看來你還得在乾草捆上再坐一會了，'王子'。
+str_npc20_signup_response_2|妳的吹牛和惡言讓感到我刺耳。我們再次交談前先管管妳的舌頭吧！
 ; str_npc21_signup_response_2|I have no need for you at the moment.
 str_npc22_signup_response_2|經過仔細考慮，我想我們自己就能幫助羅斯洛立安。
 str_npc23_signup_response_2|對不起，我根本無法想像你在戰場上的樣子。
@@ -2249,8 +2249,8 @@ str_npc25_signup_response_2|抱歉，隊伍中的每一個人都要上戰場。
 str_npc26_signup_response_2|我 改 變 主 意 了。正 在 找 你 的 人 可 能 會 來 找 我。
 str_npc27_signup_response_2|我 改 變 主 意 了。
 str_npc18_payment|你是個強大的統帥，只需說一句話，他們就可以釋放我。\n[花費{reg14}對{s14}的影響]
-str_npc19_payment|看來黑首領戴格拉夫可能會找個藉口把我扣留在這裡，指揮官。[花費{reg14}對{s14}的影響]
-str_npc20_payment|相反的，你最好不要讓我或我們共同服務的主人失望。你對他的評價夠好了嗎？[花費{reg14}對{s14}的影響]
+str_npc19_payment|看來黑酋長代格拉夫可能會找個藉口把我扣留在這裡，指揮官。[花費對{s14}的{reg14}影響力]
+str_npc20_payment|相反的，你最好不要讓我或我們共同服務的主人失望。他對你的評價夠好了嗎？[花費對{s14}的{reg14}影響力]
 ; str_npc21_payment|Speakin' of 'worth', that little debt of mine might not be all that little, if yer catch me drift. And the bossman might try and pull a sneaky on yer, so watch out! [costs {reg14} Influence with {s14}]
 str_npc22_payment|我們會很快一同踏上旅途的，但不是現在。羅斯洛立安依舊需要我在這裡協助。如果我的加入被敵人早早得知的話，價值就會大大降低。 [需要{s14}的{reg14}點影響力]
 str_npc23_payment|我很想加入你的隊伍，但職責所在，現在我不能離開。 [需要{s14}的{reg14}點影響力]
@@ -2259,8 +2259,8 @@ str_npc25_payment|我還是不能放棄我的職責，我的國王仍然需要�
 str_npc26_payment|我很想跟你走，但城門的守衛是不會放行的。 ^相信我，我試過了。 [需要{s14}的{reg14}點影響力]
 str_npc27_payment|我很想加入你的隊伍，但職責所在，現在我不能離開。 [需要{s14}的{reg14}點影響力]
 str_npc18_payment_response|毫無疑問。 魯薩昆的下屬不敢拒絕我。 [花費{reg14}/{reg15}影響力]
-str_npc19_payment_response|一旦我說清楚，黑首領戴格拉夫將不得不在我的願望之前放棄。 [花費{reg14}/{reg15}影響力]
-str_npc20_payment_response|我確實有。來吧！畢竟，這不是一個卑鄙的惡作劇。[花費{reg14}/{reg15}影響力]
+str_npc19_payment_response|一旦我說清楚，黑酋長代格拉夫將不得不在我的願望前放行。 [花費{reg14}/{reg15}影響力]
+str_npc20_payment_response|我確實有。來吧！畢竟，妳跟隨的，不是一個卑賤的奴隸。[花費{reg14}/{reg15}影響力]
 ; str_npc21_payment_response|Whatever he might try, you are leaving with me. [costs {reg14}/{reg15} Influence]
 str_npc22_payment_response|請相信我，你的加入比留在這裡更有價值。 [花費{reg14}/{reg15}點影響力]
 str_npc23_payment_response|從今往後你的職責就是跟隨我。 [花費{reg14}/{reg15}點影響力]
@@ -2269,8 +2269,8 @@ str_npc25_payment_response|國王的健康是很重要，但跟著我你會拯�
 str_npc26_payment_response|哦？不過跟我在一起，守衛是不敢阻攔你的。 [花費{reg14}/{reg15}點影響力]
 str_npc27_payment_response|從今往後你的職責就是跟隨我。 [花費{reg14}/{reg15}點影響力]
 str_npc18_morality_speech|棒極了！我對血液的渴望是沒有止境的！我們別懦夫一樣，{s21}，讓我和他們戰鬥吧！
-str_npc19_morality_speech|指揮官，我非常不喜歡我們{s21}。像我這樣的一個國王應該是大方的，但是如果儲物櫃是空的，但如果食品室是空的，我東西可給，士兵將會拋棄我們。
-str_npc20_morality_speech|指揮官，我本以為你會更好，但那是個謊言。當心，恐怕你的自私行為傷害了你崇高的計劃！
+str_npc19_morality_speech|指揮官，我非常不喜歡我們{s21}。像我這樣的一個王應該要是大方的，但是如果食物庫是空的我將沒東西可給，士兵將會拋棄我們。
+str_npc20_morality_speech|指揮官，我應該說自己對你的期望更高，但那會是個謊言。當心，不然你的自私行為會壞了上人們崇高的計劃！
 ; str_npc21_morality_speech|Listen 'ere, chief. A well respected raidin' company can't just {s21} and leave the lads' stomachs agrowlin'!  And mine, look what a biggun' it is too! I might just go and have a little nibble off one of the smaller ones - a finger, a leg maybe... 
 str_npc22_morality_speech|您必須慎重考慮您的行為，指揮官。 {s21}使我和其他戰士們顏面無存，而且這還會減少我們盟友的信心。
 str_npc23_morality_speech|[無首要道德規範]
@@ -2280,7 +2280,7 @@ str_npc26_morality_speech|一個好戰的強獸人永不{s21}。如果主人現�
 str_npc27_morality_speech|[無首要道德規範]
 str_npc18_2ary_morality_speech|我加入你們不是為了{s21}，而是為了沐浴我們敵人的鮮血！你現在可以用你的詭計，但請馬上讓我好好的殺戮吧！
 str_npc19_2ary_morality_speech|[無次要道德規範]
-str_npc20_2ary_morality_speech|啊，我們強大的指揮官。你說你做了偉大的事？我想知道你們還有多少戰役是這樣結束的，你不顧同伴的安危掉進了一個陷阱，並急急忙忙地逃走了。
+str_npc20_2ary_morality_speech|啊，我們偉大的指揮官。你說，你做了大事？我想知道你們還有多少戰鬥是這樣結束的，你不顧同伴的安危衝進了一個陷阱，然後又倉促的逃走。
 ; str_npc21_2ary_morality_speech|Now where did all the grub go, ey? Need some help bean-countin'?! A proper chief would fetch me a nice juicy leg o'lamb, or a tasty dwarf. Poor ol' me, I'm stuck with yer instead.
 str_npc22_2ary_morality_speech|[無次要道德規範]
 str_npc23_2ary_morality_speech|[無次要道德規範]
@@ -2289,8 +2289,8 @@ str_npc25_2ary_morality_speech|[無次要道德規範]
 str_npc26_2ary_morality_speech|[無次要道德規範]
 str_npc27_2ary_morality_speech|[無次要道德規範]
 str_npc18_personalityclash_speech|大人，如果你認為瓦爾凡是一個戰士，我懇求你讓他盡可能遠離我。 我已經警告過他，他的手不能放在我不讓他們皆近的地方，否則我就把他們砍掉，餵給他的馬吃。
-str_npc19_personalityclash_speech|指揮官，我很想知道你還保留著像烏弗塔克這樣的低等生物。當然，獸人是我們真正的戰士的箭頭盾牌，但他在營地裡四處遊蕩，向人們和獸人發出類似的命令，好像他是一個有權威的人。如果我殺了他，我希望你不要太想念他。或許我會把他那難看的鼻子的末端切掉。
-str_npc20_personalityclash_speech|南方人萊克亞達應該學會禮貌，學會謙遜，他的舌頭傲慢無禮，他的舉止也太過分了，我不在乎他是他的部下中的一名隊長！這是一個愚蠢的小種族，無論如何，他們都應該要慢慢認識到偉大，或者像更優秀更好的人鞠躬！如果他只知道我能對他做的一小部分...
+str_npc19_personalityclash_speech|指揮官，我很想知道你究竟為何還留著像烏弗塔克這樣的低等生物。當然，半獸人渣滓是我們這種真正戰士的擋箭牌，但他在營地裡四處遊蕩向人們和半獸人發出命令，就好像他有權威一樣。如果我把他殺掉希望你不會太想念他。或許我該把他那難看的鼻子切掉。
+str_npc20_personalityclash_speech|那個南方人萊克亞達應該學會禮貌，學會謙遜，他的舌頭無禮，他的舉止也太傲慢了，我不管他是不是同胞中的一名隊長-怎麼說，他們都是個愚蠢的低等種族，他們對於偉大的認知很慢，也不懂得向上人鞠躬！如果他知道我能對他做的事中的一小部分...
 ; str_npc21_personalityclash_speech|Blimey, chief, but that Sickburpfoul's a bit of a mad bat, ain't she? Yer can tell she's cooked one crow too many in that there cauldron of hers, the one what I drag on me poor ol' back at Her Ladyship's command. And lumme if she don't look at me down the end of the nose like I was a piece of dung scrapings, and her head not even up to me navel! Enough to make me want to 'ave her noggin meet my fist, I reckon. But I've seen her sort afore, yes I 'ave. With the likes o' her around, yer wants a pair o' extra eyes round the back of your 'ead, and no mistake.
 str_npc22_personalityclash_speech|我提到我討厭{s11}嗎？
 str_npc23_personalityclash_speech|{playername}，我剛剛看到{s11}公然從一個滿是雛鳥的鳥巢旁邊經過。他的笨拙摧毀了那群無辜生命。
@@ -2299,8 +2299,8 @@ str_npc25_personalityclash_speech|指揮官，我必須對{s11}提出投訴。�
 str_npc26_personalityclash_speech|我提到我討厭{s11}嗎？
 str_npc27_personalityclash_speech|我提到我討厭{s11}嗎？
 str_npc18_personalityclash_speech_b|我想問一下，你在瓦爾凡上設定的血價是多少？如果我殺了他或使他殘廢，我會付給你作為補償。那場戰鬥之後，他正斜視著我，舔著他那骯髒的嘴唇。如果他再那樣看著我，我就把他的眼球挖出來餵給他。
-str_npc19_personalityclash_speech_b|正如我所料，懦弱的獸人稱自己為烏弗塔克，在戰鬥中沒什麼價值。 他躲在隊伍後面，做很少的事來幫助他的同伴我認為，你的事業以及我為我的王位而戰，不會因他的同類而得到太多幫助。
-str_npc20_personalityclash_speech_b|指揮官，如果萊克亞達的雙手對我們沒有這種用處，我應該將它們從他身上砍下來。我習慣於在戰鬥結束後和我們的敵人一起行走，讓他們臨死之前享受恐懼和痛苦，儘管你們都不知道。 然而，他！那個南方人，悄悄地殺死正在被恐懼和痛苦折磨中的人。 他內心的那種憐憫，無法讓我享受在敵人死前的哀號！ 我不知道他對你的寶貴榮譽有多重要？
+str_npc19_personalityclash_speech_b|正如我所料，那自稱烏弗塔克的懦弱半獸人在戰場上沒什麼價值。 他躲在隊伍後面，很少幫助他的同伴。我認為，他實在幫不上忙-無論是你的大業-或我的王位繼承之戰都是。
+str_npc20_personalityclash_speech_b|指揮官，如果萊克亞達的雙手對我們沒有用處，我應該將它們從他身上摘下來。你知道我習慣於在戰鬥結束後在倒下的敵人周圍散步-臨死之前的恐懼和痛苦對於法術很有幫助，儘管你們都不懂吧。 然而他，那個黝黑的南方人，悄悄地給正在被恐懼和痛苦折磨中的人解脫。他內心的那點慈悲無法讓我沐浴在人們死前的哀號！我想知道，他的寶貴榮譽對你究竟有多重要？
 str_npc21_personalityclash_speech_b|我討厭{s11}。
 str_npc22_personalityclash_speech_b|我討厭{s11}。
 str_npc23_personalityclash_speech_b|他的矮人之道有可能幫助他在地下更好的生存，但他至今沒有掉進一個醜陋豎井顯然是一個奇蹟，也許他應該掉下去。
@@ -2308,9 +2308,9 @@ str_npc24_personalityclash_speech_b|我覺得隊伍中要是有一位矮人英�
 str_npc25_personalityclash_speech_b|它是由浸在酒中的蒿木製成，受到吟遊詩人和流浪漢的青睞，他們可是靠著這種東西白日做夢呢。我懷疑你會批准你的士兵在戰場上追逐空氣，儘管這種場面看起來應該會很有趣。
 str_npc26_personalityclash_speech_b|我討厭{s11}。
 str_npc27_personalityclash_speech_b|我討厭{s11}。
-str_npc18_personalityclash2_speech|葛魯姆不僅是一個奸詐的野獸，他為自己是一隻動物而自豪。 他昨晚在篝火旁再次告訴我們他的故事，吹噓他的犯規行為。 你最好好好地觀看那個生物。 如果他再次為服務白手時，背叛了他的指揮官，有什麼能阻止他和你做同樣的事情？
+str_npc18_personalityclash2_speech|葛魯姆不僅是一個奸詐的野獸，他為自己是一隻動物而自豪。 他昨晚在篝火旁再次告訴我們他的故事，吹噓他的犯規行為。 你最好好好地觀看那個生物。 如果他再次為服務白掌時，背叛了他的指揮官，有什麼能阻止他和你做同樣的事情？
 str_npc19_personalityclash2_speech|我討厭 {s11}
-; str_npc20_personalityclash2_speech|Every time I set eyes upon Fuldimir, a nameless rage within me rises. No, no, it is nothing he has done. But he and his people, the sea-dogs of Umbar, are most unworthy of their blood. They dare call themselves heirs of ancient Anadûnê - but of course, they say 'Númenor', not knowing any better. Why, I would suppose that barely a drop of the true blood is to be found in Fuldimir's veins! Perhaps, if you can spare him, I could find out for myself...
+str_npc20_personalityclash2_speech|每當我見到弗達米爾，無名的怒火就會從我心中升起。不，不，不是他做了什麼。但他和他的同胞，昂巴的海狗們，對不起他們流著的血脈。他們竟敢說自己是古代西方人的繼承者-當然，他們說的是'努美諾爾'，根本就不懂嘛。我想，弗達米爾的血管裡根本連一滴正統的血都沒有！或許，如果你能把他交給我，我可以自己找看看...
 ; str_npc21_personalityclash2_speech|I've been thinkin', chief - how does one kill a witch? Without gettin' turnt into a pile o'slugs, I means. That ol' bat's been givin' me the evil eye again and it made me skin crawl the whole day. On the inside! I'm 'appy to smash heads and break shields in a scrap, but what SHE does to the heads I did done smashed, when nobody's lookin'?! I don't play with me food, not like that. Gives me the creeps, tha' one.
 str_npc22_personalityclash2_speech|我提到我討厭{s11}嗎？
 str_npc23_personalityclash2_speech|我提到我討厭{s11}嗎？
@@ -2320,7 +2320,7 @@ str_npc26_personalityclash2_speech|我提到我討厭{s11}嗎？
 str_npc27_personalityclash2_speech|我提到我討厭{s11}嗎？
 ; str_npc18_personalityclash2_speech_b|That misshapen creature Gulm had better guard his neck, or I'll slice through it! I was about to slay a foe, but he stepped in front of me and made the kill that should have been mine. Then he had the gall to turn around and sneer at me! He and his kind had better remember that they were bred to serve us! Honourless curs.
 str_npc19_personalityclash2_speech_b|我討厭{s11}。
-; str_npc20_personalityclash2_speech_b|He cannot possibly be one of us. No, not one like Fuldimir. No, our blood cannot have thinned so much, our line cannot have fallen so far! Do none of you mark how little he speaks of the true speech, how in appearance he is much more like unto those of Haradwaith than of my lost home? We had heroes among us - heroes, who fought with swiftness and strength to rival the Eldar! Fuldimir is slow, and clumsy, and... No, I feel the cold wind blowing out of the West. It chills me... it chills me!
+str_npc20_personalityclash2_speech_b|他不可能是我們中的一員。不，像弗達米爾那樣絕對不可能。不，我們的血脈不可能變得這麼稀薄，我們的血統不可能衰弱成這樣！難道你們都沒注意到他講不出幾句我們真正的語言嗎，看不出他的樣貌比起我失落家園的人更像是來自哈拉德威治嗎？我們曾有過英雄-以速度和力量跟星辰之子抗衡的，英雄啊！弗達米爾又慢，又笨拙，還...不，我能感到西方吹來的冷風。令我發寒...令我發寒啊！
 str_npc21_personalityclash2_speech_b|我討厭{s11}。
 str_npc22_personalityclash2_speech_b|我討厭{s11}。
 str_npc23_personalityclash2_speech_b|我討厭{s11}。
@@ -2329,8 +2329,8 @@ str_npc25_personalityclash2_speech_b|我討厭{s11}。
 str_npc26_personalityclash2_speech_b|我討厭{s11}。
 str_npc27_personalityclash2_speech_b|我討厭{s11}。
 ; str_npc18_personalitymatch_speech|Great One, do you mark how deadly Lykyada is in battle? How swift his arrows, how sharp his blade! With your permission, Great One, I should like to spend more time training under his tutelage. He has much he could teach me that could make me more useful to you.
-; str_npc19_personalitymatch_speech|The joy of battle sings in my blood! And in Varfang's too, I can see. The man is a terror to behold on the battlefield, laughing as he rides down the worthless foes who flee. These men from the East intrigue me, Commander. We could learn much of horsemanship from them, if the Rohirrim will not teach the Dunlendings after I come into my own.
-; str_npc20_personalitymatch_speech|Behold Bolzog. Bolzog the Great! See how he scurries with his bow-legged gait, coming and going at my whim, doing everything I ask of him. Just as a proper little 'urku' should, I say. I quite like him, Commander. Bolzog! Bring me the unguent! Now!
+str_npc19_personalitymatch_speech|戰鬥的喜樂在我的血液中歡唱！瓦爾凡的也是，我看的出來。那人在戰場上令人生畏，邊笑邊撞倒逃跑的沒用敵人們。這些來自東方的人讓我很感興趣，指揮官。如果我坐上王位後洛汗人不教登蘭德人的話，我們能從他們身上學到很多馬術的精隨。
+str_npc20_personalitymatch_speech|瞧瞧博扎格吧，博扎格真棒啊！看看他如何以那弓形的腿行走，隨著我的意思跑來跑去，做著我要他做的事情。我說，這正是一個小小'半獸人'應有的姿態。指揮官，我還蠻喜歡他的。博扎格！把藥膏拿給我！現在！
 ; str_npc21_personalitymatch_speech|Ha! Chief! Last night, right, I was a-watching that poor little blighter Ufthak for a bit. 'E's a funny little fella, and no mistake! I made 'im cook me some meat he'd stashed away, right, and then I et it, right 'fore his face! Blimey if he didn't bawl his eyes out! Yer should've saw how his nose runs when he bawls, it don't 'arf run like a stream! Ha! Good thing yer keep him around!
 str_npc22_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc23_personalitymatch_speech|{playername}，我討厭戰鬥，所以我在戰時沒法幫忙。我注意到{s11}大人光芒萬丈般的衝了出去，然後像雄鷹一樣撲在了邪惡造物身上。
@@ -2339,8 +2339,8 @@ str_npc25_personalitymatch_speech|又是一場胜利，指揮官，我對您的�
 str_npc26_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc27_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 ; str_npc18_personalitymatch_speech_b|Great One, it speaks well of you that a warrior like Lykyada fights under your banner. I had thought all Southerners weak and decadent, not so different from the men of the West, but if they have more like him among their ranks, then the days of the West are indeed coming to an end.
-; str_npc19_personalitymatch_speech_b|Commander, Varfang and I were sharing a skin of wine around the campfires last night. Deep-counselled I deem him, for ever mindful is he of the deeds of his forebears, as one should be. I know not if, as he says, the spirits of our ancestors are with us. Indeed, I like not the thought. But a king must know the story of his blood, of mothers and fathers aforetimes. Varfang is one such who knows this.
-; str_npc20_personalitymatch_speech_b|I have never met an 'urku' quite like Bolzog. Oh, I grant you he is unlovely to look upon, but in all my long years he is the first one I've ever encountered who can do more than simply sneak, skulk and slaughter. His gnarled hands are surprisingly deft. Yes, so surprisingly deft... It may be that he can learn more of the arts of bone and sinew than I had reckoned at first.
+str_npc19_personalitymatch_speech_b|指揮官，瓦爾凡和我昨晚圍著營火分享了一袋酒。我好好的諮詢了他，因為他記得先人的事蹟，每人都該如此。我不確定是否，如他所說，我們祖先的靈魂與我們同在。確實，我不喜歡這種想法。但一個王必須知道他血統的故事，無論是父母或更早的先祖。瓦爾凡是個懂這點的人。
+str_npc20_personalitymatch_speech_b|我從來沒見過像博扎格這樣的'半獸人'。噢，我承認他長的不好看，但多年下來他是我遇到第一個除了單單潛行、躲藏和殺戮之外還能做其他事的。他粗糙的雙手出奇的靈巧。是的，真的出奇靈巧... 或許他比我原先認為的能學到更多關於筋骨的技藝。
 ; str_npc21_personalitymatch_speech_b|That silly Ufthak keeps tryin' to sneak away, but I'll always catch 'im, yes I will. It's almost like the old days, chief. When I had me band o'lads at me service. Or way back o'er the mountains, when I had me boys with me -- Bert, and Bill, and Tom... Ah well. Them days be long gone. Where's that little ratty rascal gone now, eh? Ufthak! Come 'ere, yer no-good skulker!
 str_npc22_personalitymatch_speech_b|我喜歡 {s11}。
 str_npc23_personalitymatch_speech_b|我在想他有多大年齡，或許比我老上十幾個世紀？算了，您不會明白的。
@@ -2349,8 +2349,8 @@ str_npc25_personalitymatch_speech_b|河谷鎮人非常尊重堅強的孤山矮�
 str_npc26_personalitymatch_speech_b|我喜歡 {s11}。
 str_npc27_personalitymatch_speech_b|我喜歡 {s11}。
 str_npc18_retirement_speech|我想我想安定下來，養家糊口，我不知道，我想去做刺繡或做其它事。再見。
-str_npc19_retirement_speech|聽著，站在周圍的人聲稱皇家私生子並不是政府體制的基礎。
-str_npc20_retirement_speech|也許憤怒不是那樣的。 我們所需要的是愛。 為什麼我們不能好好相處？
+str_npc19_retirement_speech|聽著，怪人到處聲稱自己是王家的私生子並不是政府體制的基礎。
+str_npc20_retirement_speech|也許憤怒不是對的。 我們所需要的是愛。 為什麼我們不能好好相處？
 str_npc21_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc22_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc23_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
@@ -2359,8 +2359,8 @@ str_npc25_retirement_speech|我對戰士的生活有點厭倦了，我會退休�
 str_npc26_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc27_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc18_rehire_speech|我的刀渴望血液， 讓我再次和你一起殺敵！
-str_npc19_rehire_speech|很高興再次見到你，指揮官。請允許我重新加入你的隊伍。
-str_npc20_rehire_speech|我們走吧，指揮官。這場戰爭在打下去也事白費力氣！
+str_npc19_rehire_speech|很高興再次見到你，指揮官。請允許我重新加入你們一眾。
+str_npc20_rehire_speech|我們走吧，指揮官。懶散是打不贏這場戰爭的！
 ; str_npc21_rehire_speech|How've yer been, chief? Should I pack me things and be off with yer again?
 str_npc22_rehire_speech|很高興見到你，{playername}。讓我們再一次一起旅行。
 str_npc23_rehire_speech|很高興見到你，{playername}。我們要一同踏上旅途麼？
@@ -2369,8 +2369,8 @@ str_npc25_rehire_speech|你的出現真讓我受寵若驚，我能再次加入�
 str_npc26_rehire_speech|葛瑪準備好再次為你殺敵了，走麼？
 str_npc27_rehire_speech|我能再次為你服務嗎？
 ; str_npc18_home_intro|Ah, the Anduin. Great One, you will have heard of the great victories of the Wainriders many generations ago? They made an alliance with us Variags, and together our warriors crushed the pitiful armies of Gondor, under the king they called Ondoher. What a glorious slaughter our forefathers must have enjoyed!
-; str_npc19_home_intro|Ah, Edoras. My rightful seat. Look up there, Commander, at the Golden Hall. Only a few generations ago, it was at the very doors of Meduseld that the last son of Helm Hammerhand was slain, and thereafter Wulf was King, for a time. Not the Wulf who is a Chief of Dunland now, of course - that one is a mere mongrel bearing the name of a greater creature.
-; str_npc20_home_intro|Ah, the Lonely Mountain. The last bastion of Durin's Folk, is it not, in these latter days? It is pleasant to see it with my own eyes at last. Pleasant, yes... but not as pleasant as the memory of that Dwarf's dying moments, which I made longer with my arts. Hardy are the Dwarfs, indeed! Yet Aulë the Maker did them no favours in making them so capable of suffering.
+str_npc19_home_intro|啊，伊多拉斯。我應得的王位。看那邊，指揮官，那座金之大殿。在幾個世代之前，就是在美杜塞爾德門口聖盔鎚手的最後一子被斬殺了，在那之後沃夫就成王了，有段時間都是如此。當然，不是現在登蘭德的沃夫酋長-那個只是一個有著偉大生物名字的雜碎。
+str_npc20_home_intro|啊，孤山，近來，都靈一族最後的堡壘，不是嗎？終於親眼看見它讓我感到愉悅。愉悅，是的...但還是比不上看見瀕死矮人的回憶，被我用法術延長的死亡啊。確實，矮人很勤勞！但創造者奥力並沒有讓他們變得更能忍受痛苦呢。
 ; str_npc21_home_intro|Oi, chief! That there is a bad place! Dol Guldur, the darkest den of the worst kinds of things. All them trees around and not one juicy squirrel, not one tasty bird on them branches. Don't need to be no witch or nuffin' to know the smell of them Dark Ones, and that's the shape of it.
 str_npc22_home_intro|達羅！ 那是艾辛格和奧桑克塔的黑塔。 自從我上次見到它們以來，已經發生了很大的變化，沒有甚麼事比這個更好。
 str_npc23_home_intro|打擾一下，{playername}。這部分路變得更加扭曲，一些還是死路。我們一定很接近多爾哥多了。
@@ -2379,8 +2379,8 @@ str_npc25_home_intro|哦，一個讓人好奇的景象！我曾在故事裡聽�
 str_npc26_home_intro|詛咒它！那一定就是號角堡了，主人。
 str_npc27_home_intro|嘿！看！
 ; str_npc18_home_description|Our wise ones told us all about that war. If it hadn't been for the weakness of the Southerners, losing a battle they should have won, the Gondorians would never have won the Battle of the Camp. The chariots of the Wainriders were smashed, and many fierce heroes died in the swamps of the Dead Marshes.
-; str_npc19_home_description|I would see our peoples united, as they have been in the past. No more will women of dun hair nurse sickly babies at their bosoms, while their fair-haired cousins feast on meat and swoon from wine in warm halls. No more will the black-haired hill man look with resentment upon the herds of horses owned by a crofter with hair of gold. As king, I will see justice done - but first, let the tyrants of Rohan pay their weregild.
-; str_npc20_home_description|I remember him well - Thráin, son of Thrór. Foolhardy, vainglorious would-be scion of a broken line, claimant of a worthless throne! Great torment he endured at my hands. But no one withstands the will of Zigûrphel for long, Commander. No one. I took his Ring from him, in the dungeons of Dol Guldur, and sent it on to the Dark Tower for a great reward. High I rose then, in the Dark Lord's favour!
+str_npc19_home_description|我將讓我們的同胞們團結起來，如同過去的那般。再也不會有暗褐頭髮的女人用她們的胸部哺育病弱的嬰兒，而她們金髮的表親卻在溫暖的大殿中大吃大喝了。再也不會有黑髮住在丘陵上的男人帶著怨恨的目光望著金發牧者擁有的馬群了。作為王，我將伸張正義-但首先，要讓洛汗的暴君付出代價。
+str_npc20_home_description|我記的很清楚-索恩，索爾之子。蠻幹、虛榮的血脈繼任者，毫無價值王位的繼承人！他在我手中遭到凌遲。但沒人能在我齊格爾菲爾下撐很久呢，指揮官。沒有人呢。在多爾哥多的地牢裡，我拿走了他的戒指，送到黑邪塔並得到獎賞。在黑暗之主的恩惠下，我得到了地位！
 ; str_npc21_home_description|All me life I've not gone near sorcery, and it'd be a mighty shame to start now.
 str_npc22_home_description|曾經由南方王國建造，現在則是人稱白袍巫師的家；正計劃著，毫無疑問，通過犧牲他人來進一步增強他的力量。
 str_npc23_home_description|我從未嘗試過這麼遠，但我無意中聽到我們的幽暗密林偵察員說這裡可能有戒靈。 我感到邪惡的存在，我不知道它叫甚麼名子。 但它很強大，所以讓我們做好準備吧。
@@ -2389,29 +2389,29 @@ str_npc25_home_description|一個旅行商人偶爾會來到河谷鎮集市，�
 str_npc26_home_description|這該死的城牆又高又硬，我的錘子根本打不破。我猜如果我們追擊伊多拉斯的豬玀，他們肯定會跑到這裡，然後蹲在牆後面瑟瑟發抖。
 str_npc27_home_description|你知道那座城鎮麼？
 ; str_npc18_home_description_2|It pleases me to be marching with you, Great One. The leaders of my people will want to have this land again, which was once theirs. They may take as much as they like from Gondor and the West. For my part, if I can spill the blood of more enemies on this soil, I will count myself happy.
-; str_npc19_home_description_2|You will speak for me, won't you, Commander, when the long war is over? To whichever Power holds sway over the other - Eye or Hand? You will lend your voice to my claim, that I may hold Edoras and all Rohan in fief to an overlord, as my home and holding?
-; str_npc20_home_description_2|We shall crush the works of the Valar, of which these Dwarfs are a chief part, here in Middle-earth. Yes, it would be sweet to unmake what the Maker wrought. We will grind the Dwarves beneath our heels, shatter the last kingdoms of low Men, and laugh as the Elves fade into the mists like ghosts. Then the day will come when I stand before the Caves of the Forgotten, in Valinor, and call forth my king again!
+str_npc19_home_description_2|在漫長的戰爭結束後，你會為我說話吧，對吧，指揮官？無論是哪個力量統治著-邪眼或白掌？你會支持我的主張，把伊多拉斯和全洛汗封作我的領地，讓我作為家園嗎？
+str_npc20_home_description_2|我們，將摧毀維拉在中土世界的作品，當然這些矮人是其中的一大部分。是的，摧毀創造者做出的東西真是十分美妙。我們會用腳碾碎矮人們，粉碎低等人類最後的王國，並在精靈像鬼魂般消逝在迷霧中時放聲大笑。到那時我將站在被遺忘的洞穴前，在維林諾，再次召喚吾王！
 ; str_npc21_home_description_2|All me life I've not gone near sorcery, and it'd be a mighty shame to start now.
 str_npc22_home_description_2|我只希望我們銘記，即使是偉大者的一員，甚至是一位埃斯塔力，都有可能被腐蝕和墮落。追求力量者必被力量所毀，只希望我們不要拖得太久。 (注：埃斯塔力在昆雅語中意譯為博學者，特指巫師)
 str_npc23_home_description_2|我能感覺到牆後的邪惡大軍正準備出發…去美麗的羅斯洛立安？去河谷鎮？去我的家鄉幽暗密林？我不知道，但請盡你的一切努力阻止他們。
-; str_npc24_home_description_2|If the fortunes of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc24_home_description_2|如果戰爭運將帶給我們一大支軍隊的話，我們應該冒險進入礦坑並取回他們那筆巨大的財富。
 str_npc25_home_description_2|我聞到了甜蜜的花香，也看到了蜜蜂收穫的蜜糖。如果您不介意的，我能去弄點蜂蜜自用麼？我只需要幾分鐘就能搞定。
 str_npc26_home_description_2|如果我們沒有大量強獸人在背後支持的話，留在這裡一點兒用處都沒有。當然，如果你想對牆上的哨兵做鬼臉那就是另一回事兒了，哈哈！
 str_npc27_home_description_2|米那斯魔窟，戒靈那裡整天喝酒，哈哈！
 ; str_npc18_home_recap|I was a prisoner in stocks, condemned to die for slaying a son of Lurmsakun in the training pit. Three of them set upon me, and I beat them, but one died of his wounds. Then you spoke for me, and freed me. Now I kill for you, and I would die for you if need be.
-; str_npc19_home_recap|I am of the royal blood of Rohan, I swear - King Fengel was my grandfather, though he never took my grandmother to wife. The Chiefs of Dunland are jealous of me, and kept me away from the fighting so I would do no great deeds, and win no glory nor men to my banner. Then you took my under your banner. Now I await the day I can sit in Edoras on my rightful throne.
-; str_npc20_home_recap|What more is there to tell, Commander? I practised my arts in the dungeons of Dol Guldur. My dreaming eye sees deep and far, and I saw you and your works in this War. It would seem I must give you what aid I can, so that the powers of the West may fail and the Power in the East may rise once more and rule until the world's ending.
+str_npc19_home_recap|我發誓，我有洛汗王家之血-范哲爾王是我的祖父，即使他從來沒有娶我的祖母做老婆。登蘭德的酋長們忌妒我，並讓我遠離戰鬥害我不能做大事，無法贏得榮耀和人望到我的旗幟下。不過你讓我加入了你的旗幟下。現在我拭目以待自己坐在伊多拉斯我應得王位上的那天。
+str_npc20_home_recap|還有什麼能說的，指揮官？我在多爾哥多的地牢裡精通了我的法術。我夢中的眼睛看的又深又遠，我看見了你和你在這場戰爭中的作為。看來我必須盡我所能的援助你，這樣西方的力量才能衰弱而東方的力量才能崛起統治世界至其末日來臨。
 ; str_npc21_home_recap|I had me a nice time leadin' a proper raidin' band in the mountains, until I did drunk too much and gambled me life away with those cheats from Gundabad.
 str_npc22_home_recap|我會滿足你的好奇心的，但別在這兒逗留了。
 str_npc23_home_recap|我生長在幽暗密林中，是一位西爾凡精靈。我們族人的木工技術無可匹敵。
-str_npc24_home_recap|我是德瓦林之子，都靈的子民。
+str_npc24_home_recap|我是都靈一族的德瓦林之子。
 str_npc25_home_recap|我是一名來自河谷鎮的治療師兼草藥醫生。
 str_npc26_home_recap|葛瑪會說如果你一定要聽，但講故事可殺不死敵人。
 str_npc27_home_recap|我會盡快搞定的。
 ; str_npc18_honorific|Great One
 str_npc19_honorific|指揮官
 str_npc20_honorific|指揮官
-str_npc21_honorific|首 領
+str_npc21_honorific|首領
 str_npc22_honorific|指揮官
 str_npc23_honorific|戰士
 str_npc24_honorific|隊長
@@ -2426,10 +2426,10 @@ str_gondor_guildmaster_player_found_ok|我謝謝你。 願所有善良的人的�
 ; str_gondor_ha_guildmaster_companion| Indeed there are. High in the esteem of our Captain Faramir are two of our commanders, Mablung and Damrod. Damrod is away at our Captain’s behest; but Mablung may be found in the cave yonder, a little way along this path here. We Rangers know much of woodlore and archery; Mablung stands above many of us. He is a man of prowess, and accounted one of our finest. Mayhap he will be given leave to accompany you for a time.
 str_rohan_guildmaster_companion_player_ask|離開了希優頓王，我尋求勇敢的洛汗的幫助。 這裡有任何勇敢的戰士會跟著我嗎？
 ; str_rohan_guildmaster_companion_none|It were better if you sought to bring aid, rather than asked for it. Horses, swords, spears - these things we need at present. As for your question: go to the barracks. There you will find those of our people willing to ride forth, such as they are - many beardless youths still, and still others unskilled herders and tenders of flocks.
-str_rohan_guildmaster_companion_player_none_ok|我也為你的人民著想，統領。再會。
+str_rohan_guildmaster_companion_player_none_ok|我也為你的人民著想，統領。告別。
 str_rohan_guildmaster_player_found_ok|我覺得這個建議不錯。健康與你同在！
 ; str_rohan_edoras_guildmaster_companion|Indeed, there may be. Dark indeed must the days become before our women ride out to war alongside the menfolk - yet our fearless and high-hearted Lady Eowyn, whom all love, rides and fights as well as any Marshal. Some shieldmaidens have trained with her from childhood, and several may be found around the Golden Hall. Hardy indeed are our women! Seek one called Galmyne - she is skilled in many arts of war, and goes about like a mare chafing at an ill-fitting bridle, for she has not been given leave to ride out with the men.
-; str_lorien_guildmaster_companion_player_ask|Elder, I seek aid. The least among the Elves of Lorien fight like heroes of old; will any here join my cause?
+str_lorien_guildmaster_companion_player_ask|羅瑞安
 ; str_lorien_guildmaster_companion_none|Evil has been seen and heard even here, among the mallorn-trees; sorrow has been known. In happier days we plucked the strings of harps; in these days we have indeed become skilled at the plucking of bowstrings. I cannot speak of heroes among us, but you should speak to the commander of our garrison here. Perhaps some few of our people may consent to join you for a time.
 ; str_lorien_guildmaster_companion_player_none_ok|I had hoped for fairer words in this fair land of yours. But it shall be as you say, Elder.
 str_lorien_guildmaster_player_found_ok|我 感 謝 你 的 忠 告，老 人。Tiro ven Elbereth! ( 精 靈 語：願 瓦 爾 妲 守 護 你 )
@@ -2446,8 +2446,8 @@ str_woodelf_guildmaster_player_found_ok|我感謝你的忠告，老人。Navaer(
 ; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit - she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands - you may speak with her. Harthon gerithach lend vaer!
 str_dale_guildmaster_companion_player_ask|好主人，我在這場戰爭中尋找堅強的勇士和我一起戰鬥。
 ; str_dale_guildmaster_companion_none|Well, now. Here in our town, we have always plied our trades and managed our affairs quietly, and not until recently have we had a great need for fighting men. I suppose you might ask at our barracks, and find what recruits you can from our garrison. I know of none among our captains here who would abandon his post to follow you.
-str_dale_guildmaster_companion_player_none_ok|我會那樣做，好主人。 再見。
-str_dale_guildmaster_player_found_ok|通常，不拘小節的禮物證明了最好的價值。我要和法妮爾談談。再會！
+str_dale_guildmaster_companion_player_none_ok|我會那樣做，好主人。 告別。
+str_dale_guildmaster_player_found_ok|通常，不拘小節的禮物證明了最好的價值。我要和法妮爾談談。告別！
 ; str_dale_main_guildmaster_companion|Well, the King and his Lords have the best claim on the service of good captains. I don’t know that any of great renown are left to follow you - but are mere fighting men all you need? What about binders of wounds, versed in herblore? I know of one such - Faniul, personal healer to the King. She was midwife to my sister - and do not look askance at her age: she is of stout heart and sturdier than she looks. I warrant she’ll bear up well under the strains of travel. Why, I think I see her taking her ease over there, in this courtyard.
 str_dwarf_guildmaster_companion_player_ask|好主人，這裡似乎有一些英勇的戰士。有人要加入我們的隊伍嗎？
 ; str_dwarf_guildmaster_companion_none|Well, you’re not wrong, there, about our skill in battle, but aren’t our lads from our garrison here good enough for you? Apart from them, I don’t know anyone else who might satisfy you - you talk as though you were a king of some sort, looking for a great champion, like in the old days. Valiant is as valiant does, say I!
@@ -2512,22 +2512,22 @@ str_imladris_guildmaster_player_found_ok|我明白了，老人。 我感謝你�
 str_gundabad_guildmaster_companion_player_none_ok|如果你知道什麼對你有好處，你會和我一起看你的話。
 ; str_gundabad_guildmaster_player_found_ok|Do I hear you aright? Is this “Berta” of yours a troll that thinks? Now this, I have to see for myself.
 ; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
-; str_fullname_region_rhun|East Rhovanion, on both sides of the river Celduin
-; str_fullname_region_erebor|the foothills of Erebor, the Lonely Mountain
-; str_fullname_region_celebrant|the Field of Celebrant, between the rivers Celebrant and Limlight
-; str_fullname_region_gladden_fields|the Gladden Fields, marshes of the river Gladden
-; str_fullname_region_w_emyn_muil|western Emyn Muil
-; str_fullname_region_s_misty_mountains|the foothills of the southern Misty Mountains
-; str_fullname_region_n_anduin_vale|the northern Vale of Anduin, north of the Carrock
-; str_fullname_region_s_anduin_vale|the southern Vale of Anduin, between Lorien and the Undeeps
-; str_fullname_region_cair_andros|Cair Andros, the great ship-like island of Anduin
-; str_shortname_region_rhun|East Rhovanion
-; str_shortname_region_erebor|the foothills of Erebor
-; str_shortname_region_celebrant|the Field of Celebrant
-; str_shortname_region_gladden_fields|the Gladden Fields
-; str_shortname_region_w_emyn_muil|western Emyn Muil
-; str_shortname_region_s_misty_mountains|the foothills of the Southern Misty Mountains
-; str_shortname_region_n_anduin_vale|the northern Vale of Anduin
-; str_shortname_region_s_anduin_vale|the southern Vale of Anduin
-; str_shortname_region_cair_andros|Cair Andros
+str_fullname_region_rhun|羅馬尼安東部，賽爾督因河沿岸
+str_fullname_region_erebor|孤山的山麓，仰望孤山之處
+str_fullname_region_celebrant|凱勒布蘭特平原，凱勒布蘭特河與林萊河之間
+str_fullname_region_gladden_fields|格拉頓平原，格拉頓河的沼澤
+str_fullname_region_w_emyn_muil|艾明莫爾西部
+str_fullname_region_s_misty_mountains|迷霧山脈南部的山麓
+str_fullname_region_n_anduin_vale|安度因河谷北部，卡爾岩的北方
+str_fullname_region_s_anduin_vale|安度因河谷南部，羅瑞安和雙河套之間
+str_fullname_region_cair_andros|凱爾安卓斯，安度因河中形如巨船的島嶼
+str_shortname_region_rhun|東羅馬尼安
+str_shortname_region_erebor|孤山的山麓
+str_shortname_region_celebrant|凱勒布蘭特平原
+str_shortname_region_gladden_fields|格拉頓平原
+str_shortname_region_w_emyn_muil|艾明莫爾西部
+str_shortname_region_s_misty_mountains|迷霧山脈南部的山麓
+str_shortname_region_n_anduin_vale|安度因河谷北部
+str_shortname_region_s_anduin_vale|安度因河谷南部
+str_shortname_region_cair_andros|凱爾安卓斯
 ; str_isengard_hunting_camp_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!

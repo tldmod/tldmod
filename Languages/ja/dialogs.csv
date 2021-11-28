@@ -427,7 +427,7 @@ dlga_lord_give_order:lord_give_order_details_ask.1|巡察してもらいたい�
 dlga_lord_give_order:lord_give_order_details_ask.2|敵を殲滅してもらいたい場所がある・・・[影響力ポイントを{reg1}/{reg2}消費します]
 dlga_lord_give_order:lord_give_order_assault|あなたと私が力を合わせれば、 {s11}を手中にすることができる。 あなたには、すぐに攻撃を開始してもらいたい・・・ [{reg1}/{reg2}の影響力ポイントを消費します]
 dlga_lord_give_order_assault:lord_pretalk|この作戦を指揮しているのは{s4}だ。 彼らに会うとよい。
-dlga_lord_give_order_assault:lord_pretalk.1|我々はまだ準備が不足している。 さらなる{s11}が必要だ。
+dlga_lord_give_order_assault:lord_pretalk.1|まだ準備が整っていない。あと{s11}が必要だ。
 dlga_lord_give_order_assault:close_window|よかろう。 攻撃開始だ！
 dlga_lord_give_order:lord_give_order_stop|当面はあなたの力は必要ない。自由にしていて欲しい。
 dlga_lord_give_order:lord_pretalk|なんでもない。
@@ -978,7 +978,7 @@ dlga_town_merchant_talk:trade_requested_weapons|新しい装備が欲しい。�
 dlga_town_merchant_talk:trade_requested_horse|馬を買おうかと考えているのだ。
 dlga_town_merchant_talk:player_upgrade_trolls_take|私のトロルを強化したいのだ！
 dlga_player_upgrade_trolls_take:close_window|どこの誰が何だって？フン！去れ！ ({s24}以上である必要があります)
-dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|あなたは我々のためによく働いてくれた。あなたの部下のために鉄をいくらか融通しましょう！ (リソースポイントを{reg21}消費します)
+dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|あなたは我々のためによく働いてくれた。^あなたの部下のために鉄をいくらか融通しましょう！^(リソースポイントを{reg21}消費します)
 dlga_player_upgrade_trolls_take:close_window.1|あなたのトロルどもはまるで、ぴいぴいと泣いている赤ん坊のようだ。 まずはやつらに充分に血しぶきを味あわせて、一丁前にしてやる良い。
 dlga_player_upgrade_trolls_take:close_window.2|ここはそういう場じゃないんですがね・・・
 dlga_player_upgrade_trolls_take:close_window.3|あなたのトロルは何をしゃべっているのかさっぱりだ！どこのトロルなんですかい？ ここでなく、こやつが育てられたところへ持って行ってください！
@@ -1011,7 +1011,7 @@ dlga_player_castle_guard_talk:player_castle_guard_talk_2|見張りのほうは�
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|特に何もありません。いたって平穏です、指揮官殿。
 dlga_player_castle_guard_talk_3:close_window|そうか。油断するなよ。
 dlga_start:close_window.26|ごきげんよう、指揮官殿。 {s10}へようこそいらっしゃいました。
-dlga_start:close_window.27|面倒は起こすなよ。
+dlga_start:close_window.27|面倒は起こさないでくださいよ。
 dlga_start:hall_guard_easter_egg|ああ、真夜中を過ぎましたね。 最近、変わった出来事があったんです。 聞きたいですか？
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|{ああ/ええ}、話して{くれ/}。
 dlga_hall_guard_easter_egg:close_window|{いや/結構よ}、うわさ話には興味がない{んだ/の}。

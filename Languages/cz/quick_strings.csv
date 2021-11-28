@@ -925,6 +925,15 @@ qstr_Tripled|Trojnásobně
 qstr_Quadrupled|Čtyřnásobně
 qstr_You_drank_the_Ent_Wa|Vypil jsi Entí vodu...
 ; qstr_You_used_the_Orc_Bre|You used the Orc Brew.
+; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
+; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
+; qstr_lordless|lordless
+; qstr_orc_stragglers|orc stragglers
+; qstr_wild_goblins|wild goblins
+; qstr_recruits|recruits
+; qstr_regulars|regulars
+; qstr_elites|elites
+; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
 qstr_Fangorn_search:_fail|Prohledávání Fangornu: selhalo
 qstr_^^^A_great_victory!^|^^^Velké vítězství!^^^Tak o tomhle Fangornu vyprávěly legendy...
 ; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
@@ -1083,6 +1092,8 @@ qstr_You_are_entering_{s1}|Vstupuješ do oblasti {s1}.
 qstr_The_war_expands_comm|Válka se rozšiřuje, velitelé jsou odvážnější! (požadavky na obléhání sníženy)
 qstr_Your_party_is_spotte|Tvá družina byla spatřena {s1}.
 ; qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
+; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
+; qstr_Athelas_used_up.|Athelas used up.
 qstr_Party_has_nothing_to|Družina nemá co jíst!
 qstr_You_pay_for_accommod|Platíš za ubytování.
 qstr_The_troll_outside_{s|Trol v okolí {s2} byl zabit. Mise zrušena.
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{reg66} jednotek z {s5} zabito. (Přepočítává se k
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} jednotek {s8} z {s7} zabito. (Přepočítává se každou hodinu)
 qstr_{reg68}_{s10}_killed|{reg68} jednotek {s10} zabito. (Přepočítává se každou hodinu)
 qstr_{s1}_is_scouted.|{s1} je prozkoumáván.
+qstr_{s2}_was_defeated!|{s2} byl poražen!
 qstr_The_Age_of_Men_has_f|Éra lidí konečně skončila. Nyní Dvě věže shromáždí své vládce a spojence, aby rozhodli kdo bude jediným vládcem Středozemě!
 qstr_The_War_of_the_Two_T|Válka Dvou věží začala!
-qstr_{s2}_was_defeated!|{s2} byl poražen!
 qstr_The_forces_of_{s22}_|Síly od {s22} se přeskupily! {s22} je teď {s23}.
 qstr_The_might_of_{s22}_h|Síla {s22} se snížila! {s22} je nyní {s23}.
 qstr_In_a_desperate_attem|V zoufalém pokusu bránit se proti nepřátelům vysílá Sauron své Mordorské legie!

@@ -2,7 +2,7 @@ ui_at_learning_limit|(達到此種族的學習限度)
 ui_not_enough_skill_points_to_learn|(沒有足夠的技能點來學習)
 ui_not_enough_attributetype_to_learn_this_skill|(沒有足夠的%s來學習這個技能)
 ui_explanation_agility|敏捷：每一點增加5點武器熟練度，並且提高武器速度0.5%。下列技能不能超過敏捷的1/3：盾防，跑動，武器掌握，騎術，騎射，掠奪。
-ui_retreated_battle|已經擊潰%s。
+ui_retreated_battle|%s已經逃跑了。
 ui_riding_skill_not_adequate_to_mount|(騎術太低)
 ui_camp|行動
 ui_tutorial_inventory|在TLD中，你需要資源點來獲得裝備。資源點是用來衡量一個陣營給你補貼的意願，以及你能使用多少的陣營資源。
@@ -56,7 +56,7 @@ ui_crouch|蹲下
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|你確定要導入角色嗎？
 ui_explanation_strength|力量：每一點使你的生命上限 +1。以下技能不可超過力量的1/3：鐵骨，強擊，強擲，強弓。
-ui_explanation_intelligence|智力：每一點給予你額外一點技能點，並在某些事件下少量提升所得經驗值。以下技能不可超過智力的1/3：教練，跟蹤，戰術，嚮導，偵察，物品管理，療傷，手術，急救。
+ui_explanation_intelligence|智力：每一點給予你額外一點技能點，並在某些事件下少量提升所得經驗值。以下技能不可超過智力的1/3：教練，追蹤，戰術，尋路，偵察，物品管理，療傷，手術，急救。
 ui_explanation_charisma|魅力：每一點使你的隊伍上限 +1。以下技能不可超過魅力的1/3：俘虜管理，綠野仙蹤，統御，交易。
 ui_delivered_number_damage|造成%d點傷害
 ui_mission_losses_killed|殺了：
@@ -81,14 +81,14 @@ ui_you_got_value|獲得 %s。
 ui_quest_succeeded_value|任務達成：%s
 ui_number_of_companions_exceeds_leadership_limit|部隊人數超過你的統御技能。
 ui_number_of_prisoners_exceeds_prisoner_management_limit|俘虜人數超過你的俘虜管理技能。
-ui_shared_number_experience_within_party|與隊伍分享%d經驗值。
+ui_shared_number_experience_within_party|與隊伍分享了%d經驗值。
 ui_your_relations_with_value_has_improved_from_number_to_number|你與%s的關係由%d提升到%d。
 ui_your_relations_with_value_has_deteriorated_from_number_to_number|你與%s的關係由%d下降到%d。
 ui_you_lost_value|你損失了%s。
 ui_change_graphics_settings_explanation|您進行的某些更改將在您進入新區域時生效。
 ui_game_log_window|遊戲日誌。
 ui_blunt_short|b
-ui_tracks|跟蹤
+ui_tracks|追蹤
 ui_order_button_hold_fire|停火
 ui_order_button_fire_at_will|自由射擊
 ui_order_button_fire_orders|射擊命令

@@ -180,70 +180,70 @@ qstr_{s2}_have_razed_{s1}|{s2}が{s1}を壊滅させました！
 qstr_Left_for_dead_but_mi|瀕死の状態で放置されていましたが、奇跡的に生き延びました。 {reg1?{reg1} 時間{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_|1リソースポイント({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1}リソースポイント({s2})
-qstr_+30_to_Party_Morale|パーティの士気に+30
-qstr_+20_to_Party_Morale|パーティの士気に+20
-qstr_+1_to_Riding_Skill|乗馬スキルに+1
+qstr_+30_to_Party_Morale|パーティの士気+30
+qstr_+20_to_Party_Morale|パーティの士気+20
+qstr_+1_to_Riding_Skill|乗馬スキル+1
 qstr_during_battles|(戦闘中のみ)
-qstr_+1_to_Pathfinding|経路探索スキルに+1
-qstr_+2_to_Wound_Treatmen|治療スキルに+2(パーティ)
-qstr_+2_to_Surgery__Party|手術スキルに+2(パーティ)
-qstr_+2_to_Pathfinding__P|経路探索スキルに+2(パーティ)
+qstr_+1_to_Pathfinding|経路探索スキル+1
+qstr_+2_to_Wound_Treatmen|治療スキル+2(パーティスキル)
+qstr_+2_to_Surgery__Party|手術スキル+2(パーティスキル)
+qstr_+2_to_Pathfinding__P|経路探索スキル+2(パーティスキル)
 qstr_Use_from_Camp_Menu|キャンプメニューから使用します
 qstr_Use_from|このアイテムは
 qstr_Action_Menu|アクションメニューから使用します
-qstr_Bonus_to_Wound_Treat|治療スキルにボーナス(パーティ)
-qstr_Bonus_to_Surgery__Pa|手術スキルにボーナス(パーティ)
-qstr_Bonus_to_First_Aid__|応急手当てスキルにボーナス(パーティ)
-qstr_+1_to_Weapon_Mastery|武器熟練スキルに+1
-qstr_+1_to_Wound_Treatmen|治療スキルに+1
-qstr_+1_to_Tactics|戦略スキルに+1
-qstr_+1_to_Power_Strike|強打スキルに+1
-qstr_+1_to_Strength|体力に+1
-qstr_+1_to_Agility|敏捷性に+1
-qstr_+1_to_Leadership|統率力スキルに+1
-qstr_+1_to_Wildcraft|ワイルドクラフトに+1
-qstr_+1_to_Tracking|追跡術に+1
-qstr_+1_to_Athletics|アスレチックスキルに+1
+qstr_Bonus_to_Wound_Treat|治療スキルにボーナス(パーティスキル)
+qstr_Bonus_to_Surgery__Pa|手術スキルにボーナス(パーティスキル)
+qstr_Bonus_to_First_Aid__|応急手当てスキルにボーナス(パーティスキル)
+qstr_+1_to_Weapon_Mastery|武器熟練スキル+1
+qstr_+1_to_Wound_Treatmen|治療スキル+1
+qstr_+1_to_Tactics|戦略スキル+1
+qstr_+1_to_Power_Strike|強打スキル+1
+qstr_+1_to_Strength|体力+1
+qstr_+1_to_Agility|敏捷性+1
+qstr_+1_to_Leadership|統率力スキル+1
+qstr_+1_to_Wildcraft|ワイルドクラフト+1
+qstr_+1_to_Tracking|追跡術+1
+qstr_+1_to_Athletics|アスレチックスキル+1
 qstr_when_equipped|(要装備)
-qstr_+1_to_Power_Draw|弓術スキルに+1
+qstr_+1_to_Power_Draw|弓術スキル+1
 qstr_The_record_of_Balin_|失踪したバーリン一団の記録。
 qstr_Who_might_be_interes|これに興味を持つとしたら、誰が考えられるだろう？
 qstr_Bonus_to_Shield_Skil|盾防御スキルにボーナス
 qstr_Turns_nature_to_your|自然が味方になる
 qstr_when_equipped.__Effe|(要装備) (効果はワイルドクラフトのスキルに依存)
 qstr_Bonus_to_Power_Strik|強打スキルにボーナス
-qstr_+1_to_Trainer|訓練スキルに+1
+qstr_+1_to_Trainer|訓練スキル+1
 qstr_Recruits_Tribal_Orcs|部族オークを徴用可能
 qstr_rally|檄の回数
 qstr_rallies|檄の回数
 qstr_+{reg1}_{s3}_in_batt|戦場で{s3}に+{reg1}
-qstr_+1_to_Charisma|魅力に+1
+qstr_+1_to_Charisma|魅力+1
 qstr_Call_Reinforcements|増援を呼ぶ
 qstr__Effect_scales_with_|(効果は体力と魅力に依存)
-qstr_+1_to_First_Aid|応急手当てスキルに+1
-qstr_+1_to_Surgery|手術スキルに+1
-qstr_+1_to_Intelligence|知性に+1
-qstr_+2_to_Surgery|手術スキルに+2
-qstr_+1_to_Riding|乗馬スキルに+1
-qstr_+1_to_Mounted_Archer|馬上弓術に+1
+qstr_+1_to_First_Aid|応急手当てスキル+1
+qstr_+1_to_Surgery|手術スキル+1
+qstr_+1_to_Intelligence|知性+1
+qstr_+2_to_Surgery|手術スキル+2
+qstr_+1_to_Riding|乗馬スキル+1
+qstr_+1_to_Mounted_Archer|馬上弓術+1
 qstr_Bonus_to_Riding|乗馬スキルにボーナス
 qstr_when_equipped.__Effec|(要装備) (効果は体力に比例)
-qstr_Orcs:_+1_Riding_Requ|オーク種は要求乗馬スキルに+1
-qstr_+1_to_Prisoner_Mgmt|囚人管理スキルに+1
-qstr_+2_to_Tactics|戦術スキルに+2
-qstr_+1_Intelligence|知性に+1
-qstr_+{reg1}_to_Spotting|観測術に+{reg1}
+qstr_Orcs:_+1_Riding_Requ|オーク種は要求乗馬スキル+1
+qstr_+1_to_Prisoner_Mgmt|囚人管理スキル+1
+qstr_+2_to_Tactics|戦略スキル+2
+qstr_+1_Intelligence|知性+1
+qstr_+{reg1}_to_Spotting|観測術+{reg1}
 qstr__Scales_with_Wildcra|(効果はワイルドクラフトのスキルに比例)
 qstr_Strengthens_all_Hero|プレーヤーとすべてのコンパニオンを強化
-qstr_+2_to_First_Aid__Par|応急手当てスキルに+2(パーティ)
-qstr_+1_to_Power_Throw|豪投に+1
-qstr_+1_to_Spotting|観測術に+1
+qstr_+2_to_First_Aid__Par|応急手当てスキル+2(パーティスキル)
+qstr_+1_to_Power_Throw|豪投+1
+qstr_+1_to_Spotting|観測術+1
 qstr_Less_Dunnish_upkeep|褐色人の維持費が低下
 qstr_Less_Wargs_upkeep|ワーグ騎兵の維持費が低下
 qstr_Light_Armor|軽装鎧
 qstr_Bonus_to_Strength__P|体力にボーナス (プレイヤーのみ)
 qstr_Lead_more_Orcs|指揮可能なオークの数が増大
-qstr_+{reg1}_to_Party_Mor|パーティの士気に+{reg1}
+qstr_+{reg1}_to_Party_Mor|パーティの士気+{reg1}
 qstr_Range:_{reg55}|範囲: {reg55}
 qstr_Do_you_want_to_disem|上陸しますか？
 qstr_Move_here|ここへ移動
@@ -549,7 +549,7 @@ qstr_Ah_what_a_coincidenc|おお、おぬしは{playername}ではないか。 �
 qstr_Who_are_you?|あなたは何者{なんだ/なの}？
 qstr_A_friend_of_{s3}_and|{s3}と{s2}の民の友だ。 さあ急ぐのだ！ モルドールはあらゆる邪なものをひきつけ、 闇の力をもってそれらをしもべにしてしまう。 この世界の清きものたちに残された時間は少ない。 闇に対抗するため、 できる限りの手を打たなければならん！
 qstr_What_should_I_do?|私は何をすればよいのでしょう？
-qstr_Find_{s3}_s_whereabo|{s3}の所在を探し、ただちに{reg3?彼女:彼}話をするのだ。幸運を祈る！
+qstr_Find_{s3}_s_whereabo|ただちに{s3}の所在を探し、{reg3?彼女:彼}と話をするのだ。幸運を祈る！
 qstr_Good_to_see_the_Shad|おぬしがいまだ闇の力に屈していないのは幸運といえよう、 {playername}。
 qstr_You_are_the_one_they|あなたはガンダルフ、もしくはミスランディアと呼ばれている方ですね。
 qstr_That_is_what_some_ca|そう呼ぶ者もおるな。 また違った名前で呼ぶ者もあるが、 この闇を食い止めねば、 まもなくわしを呼ぶ者すらいなくなってしまうであろう。
@@ -611,7 +611,7 @@ qstr_{s1}:_formation_disa|{s1}:陣形は解除されました。
 qstr_Cavalry_formation_di|騎兵の陣形は解除されました。
 qstr_The_placement_of_{s1|{s1}第{reg0}分隊の位置は保存されました。
 qstr_The_placement_of_{s1}|{s1}第{reg0}分隊の位置はデフォルトに設定されました。
-qstr_Your_party_s_tactica|あなたのパーティの戦術スキルでは、兵を展開できる距離は制限されます！
+qstr_Your_party_s_tactica|あなたのパーティの戦略スキルでは、兵を展開できる距離は制限されます！
 qstr_...and_attack_enemy_|・・・そして敵の第{s1}分隊を攻撃せよ！
 qstr_{s2}:_returning_afte|{s2}: 敵の第{s1}分隊を撃破し、帰還しています。
 qstr_infantry|歩兵
@@ -925,6 +925,15 @@ qstr_Tripled|3倍
 qstr_Quadrupled|4倍
 qstr_You_drank_the_Ent_Wa|エント水を飲みました・・・
 qstr_You_used_the_Orc_Bre|オークビールを飲みました。
+qstr_You_and_your_compani|あなたとコンパニオンたちは一口づつミルヴォールを飲みました。 元気がみなぎり、力が湧いてきました。
+qstr_You_give_a_few_leave|あなたは治療師に数枚のアセラスの葉を渡しました。
+qstr_lordless|根なし草
+qstr_orc_stragglers|放浪するオーク
+qstr_wild_goblins|野生のゴブリン
+qstr_recruits|志願兵
+qstr_regulars|一般の民
+qstr_elites|精鋭
+qstr_You_camp_and_beat_th|あなたは野営を張り、地底の太鼓を打ち鳴らしました。 力強い太鼓の音に魅せられた{s1}の{s2}がやってきました。
 qstr_Fangorn_search:_fail|ファンゴルンの森探索:失敗。
 qstr_^^^A_great_victory!^|^^^大いなる勝利だ！^^^なるほど、これがファンゴルンの伝説のからくりか・・・
 qstr_^^^Defeated...^^^Sca|^^^敗れた・・・^^^ファンゴルンの森に散ってしまった・・・ひとりだ・・・
@@ -1083,6 +1092,8 @@ qstr_You_are_entering_{s1}|あなたは{s1}に入りました。
 qstr_The_war_expands_comm|戦火が拡大し、指揮官たちはより大胆になりました！(包囲攻撃の必要条件が緩和されました)
 qstr_Your_party_is_spotte|あなたのパーティは{s1}に発見されました。
 qstr_The_effects_of_the_O|オークビールの効果が消えました。
+qstr_The_effects_of_the_M|ミルヴォールの効果が消えました。
+qstr_Athelas_used_up.|アセラスを使い果たしました。
 qstr_Party_has_nothing_to|食べるものがありません！
 qstr_You_pay_for_accommod|宿泊代を支払いました。
 qstr_The_troll_outside_{s|{s2}周辺のトロルは倒されました。任務はキャンセルされました。
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{s5}の兵を{reg66}名殺した。 (カウンター�
 qstr_{reg67}_{s7}_{s8}_tr|{s7}の{s8}を{reg67}名殺した。 (カウンターは1時間ごとに更新されます)
 qstr_{reg68}_{s10}_killed|{s10}の兵を{reg68}名殺した。 (カウンターは1時間ごとに更新されます)
 qstr_{s1}_is_scouted.|{s1}の偵察を完了しました。
+qstr_{s2}_was_defeated!|{s2}が敗れました！
 qstr_The_Age_of_Men_has_f|人類の時代は、ついに終わりを告げました。^これよりふたつの塔が残った戦力を結集し、 ^中つ国の覇権を争います！
 qstr_The_War_of_the_Two_T|ふたつの塔の戦いが始まりました！
-qstr_{s2}_was_defeated!|{s2}が敗れました！
 qstr_The_forces_of_{s22}_|{s22}の軍勢の勢いが増しています！{s22}は現在、{s23}です。
 qstr_The_might_of_{s22}_h|{s22}の軍勢の勢いが弱まりました！{s22}は現在、{s23}です。
 qstr_In_a_desperate_attem|敵に対してなりふり構わぬ必死の対抗をするため、 サウロンはモルドールの大軍団を送り込みました！
@@ -1112,8 +1123,8 @@ qstr_{playername}_s_Reser|{playername}の予備兵
 qstr_Gondor_has_called_fo|ゴンドールが助けを求めています！
 qstr_Gondor_is_accompanyi|ゴンドールは総指揮官のもとに集結しています！
 qstr_{s5}_has_stopped_fol|{s5}はあなたへの同行をとりやめました。
-qstr_You_have_{reg69}_all|{reg69}の友軍部隊があなたに同行しています。
-qstr_You_have_{reg69}_ally|{reg69}の友軍部隊があなたに同行しています。
+qstr_You_have_{reg69}_all|友軍の{reg69}部隊があなたに同行しています。
+qstr_You_have_{reg69}_ally|友軍の{reg69}部隊があなたに同行しています。
 qstr_The_forces_of_{s2}_h|{s2}の軍勢は再合流して態勢を立て直し、{s15}を目指して進軍しています！
 qstr_Your_scouts_report_s|あなたの斥候が{s2}の痕跡をこの付近に発見したようです。
 qstr_{s1}_from_{s2}|{s2}の{s1}
@@ -1125,8 +1136,8 @@ qstr_A_little_after_you_f|歩く木から手に入れた毒入りの水から �
 qstr_Ent_water_effect.|エント水の効用。
 qstr_The_water_you_drank_|エントから入手した水を飲んだあなたは、 自分の体に奇妙な現象が起こっていることに気がついた。 最初は信じられなかったが、 自分の目で確かめてみた以上、 間違いない。 どういうわけか、 あなたの背が高くなっている！ しかし、 水の毒であやうく死ぬところだったのは事実だ。 もう二度とこのような危険を冒すわけにはいかない。
 qstr_Ent_water_effect:_in|エント水の効用:身長が伸びた！
-qstr__+1_to_Strength__per|体力に+1(恒久的効果)
-qstr__+1_to_Charisma__per|魅力に+1(恒久的効果)
+qstr__+1_to_Strength__per|体力+1(恒久的効果)
+qstr__+1_to_Charisma__per|魅力+1(恒久的効果)
 qstr_The_dark_shadow_fina|漆黒の闇はついに堰を切って嵐となり、 闇の大群は中つ国の自由の民を標的に進軍を開始した。 南のゴンドールにはモルドールが、 西のローハンにはアイゼンガルドが、 エルフにはドル・グルドゥアが襲いかかる・・・ 遠い北の地でも戦争の火の手は上がった。
 qstr_The_War_has_started!|戦争が始まりました！
 qstr_The_forest_seems_pea|森は穏やかにみえます。
@@ -1401,7 +1412,7 @@ qstr_Gift|贈り物
 qstr_You_have_requested_t|{s2}から{s3}へ、 {s1}の贈り物をするよう、 あなたは提案しました。 このような心遣いに対して、 {s3}の民は感謝するでしょう。
 qstr_Bribe|贈り物
 qstr_You_have_requested_to|{s2}から{s3}へ、 {s1}の贈り物をするよう、 あなたは提案しました。 これは先方からの謝礼を期待したいところだ。
-qstr_{reg3}_hours.|{reg3}時間。
+qstr_{reg3}_hours.|{reg3}時間
 qstr_hour.|時間。
 qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
 qstr_You_spent_{reg0}_of_|あなたは{s1}での影響力ポイントを{reg0}消費しました。 残りは{reg1}です。

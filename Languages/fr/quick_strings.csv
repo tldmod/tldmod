@@ -925,6 +925,15 @@ qstr_Tripled|multiplié par trois
 qstr_Quadrupled|multiplié par quatre
 qstr_You_drank_the_Ent_Wa|Vous avez bu l'eau des Ents...
 qstr_You_used_the_Orc_Bre|Vous avez utilisé la bière orque.
+qstr_You_and_your_compani|Vos compagnons et vous buvez une gorgée de miruvor. Vous vous sentez rafraîchis et renforcés.
+qstr_You_give_a_few_leave|Vous donnez quelques feuilles d'athelas à vos guérisseurs.
+qstr_lordless|sans seigneur
+qstr_orc_stragglers|orques retardataires
+qstr_wild_goblins|gobelins sauvages
+qstr_recruits|recrues
+qstr_regulars|habitués
+qstr_elites|élites
+qstr_You_camp_and_beat_th|Vous dressez un campement et faites battre les tambours des profondeurs. Le son puissant attire un groupe de {s1} {s2}.
 qstr_Fangorn_search:_fail|Recherche de Fangorn : échouée.
 qstr_^^^A_great_victory!^|^^^C'est une grande victoire !^^^Donc, c'est ce que voulaient dire tous ces mythes à propos de Fangorn...
 qstr_^^^Defeated...^^^Sca|^^^Battus..^^^Éparpillés dans la forêt de Fangorn... Seul{/e}...
@@ -1083,6 +1092,8 @@ qstr_You_are_entering_{s1}|vous entrez dans {s1}.
 qstr_The_war_expands_comm|La guerre s'étend, les commandants deviennent plus audacieux (les prérequis de siège sont réduits)
 qstr_Your_party_is_spotte|Votre groupe est repéré par {s1}.
 qstr_The_effects_of_the_O|Les effets de la bière orque se sont dissipés.
+qstr_The_effects_of_the_M|Les effets du miruvor se sont dissipés.
+qstr_Athelas_used_up.|L'Athelas est épuisé.
 qstr_Party_has_nothing_to|Votre groupe n'a rien à manger !
 qstr_You_pay_for_accommod|Vous payez les frais d'hébergement.
 qstr_The_troll_outside_{s|Le troll près de {s2} a été tué. Mission annulée.
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{reg66} soldats {s5} tués. (Compteur mis à jour tout
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} soldats {s7} {s8} tués. (Compteur mis à jour toutes les heures)
 qstr_{reg68}_{s10}_killed|{reg68} soldats {s10} tués. (Compteur mis à jour toutes les heures)
 qstr_{s1}_is_scouted.|Vous avez exploré {s1}.
+qstr_{s2}_was_defeated!|{s2} a été vaincu !
 qstr_The_Age_of_Men_has_f|L'Âge des hommes est enfin terminé. Maintenant, les Deux Tours rassemblent leurs armées et alliés afin de décider qui sera le seul dirigeant de la Terre du Milieu !
 qstr_The_War_of_the_Two_T|La Guerre des Deux Tours a commencée !
-qstr_{s2}_was_defeated!|{s2} a été vaincu !
 qstr_The_forces_of_{s22}_|Les forces de {s22} se sont ralliées ! {s22} est maintenant {s23}.
 qstr_The_might_of_{s22}_h|La puissance de {s22} a diminué ! {s22} est maintenant {s23}.
 qstr_In_a_desperate_attem|Dans un effort désespéré de se défendre contre ses ennemis, Sauron envoie ses légions du Mordor !

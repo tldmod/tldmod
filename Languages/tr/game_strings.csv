@@ -1823,20 +1823,20 @@ str_fullname_region_gap_of_rohan|Rohan açıklıgı, Rohan'ın Batı sınırı, 
 str_fullname_region_entwash|Rohan Nehri Entwash'ın Anduin'e dökündügü Entwash haliçleri
 str_fullname_region_wetwang|Nindalf, Wetwang'ın bataklıkları.
 str_fullname_region_dead_marshes|Ölüm Bataklıkları, Büyük Dagor Dagorland Savaşı'nın yapıldıgı antik savaş alanı,Lanetli bir yer
-; str_fullname_region_isengard|Nan Curunir, the vale of Isengard
+str_fullname_region_isengard|Nan Curunir, Isengard çevresindeki vadi
 str_fullname_region_fangorn|Fangorn ormanı, agaçların yürüdügü ve konuştugu yer.
 str_fullname_region_brown_lands|Emyn Muil ve Kuyutorman arasındaki genişligi kapsayan Kahverengi Topraklar
 str_fullname_region_dagorlad|Dagorlad, Büyük, Agaçsız, Moria kapılarının önündeki ova savaşının yapıldıgı düzlükler
 str_fullname_region_n_undeep|Kuzey Undeep, iki büyük Anduin dagının büyük olanı
 str_fullname_region_s_undeep|İki büyük Anduin dagından daha küçük olanı Güney Undeep
-; str_fullname_region_emyn_muil|eastern Emyn Muil, the rocky hills beyond Amon Lhaw
-; str_fullname_region_misty_mountains|the foothills of the northern Misty Mountains
+str_fullname_region_emyn_muil|Dogu Emyn Muil, Amon Lhaw'ın ardındaki kayalık tepeler
+str_fullname_region_misty_mountains|Kuzey Sisli Dagların etekleri
 str_fullname_region_lorien|Lothlórien, Sindar Elfleri Ormanı, altın ayçiçeklerinin yetiştigi yer
 str_fullname_region_anduin_banks|Carrock ve Lorien arasında Anduin'in orta vadisi
 str_fullname_region_n_mirkwood|Agaç Elflerinin yuvası Kuzey Kuyurorman'ın yogun ormanları
 str_fullname_region_s_mirkwood|Güney Kuyutorman'ın yogun ormanı, garip yaratıklar tarafından istila edildigini söyledi.
-; str_fullname_region_c_mirkwood|the dense forest of middle Mirkwood, inhabited by Woodmen
-; str_fullname_region_grey_mountains|the foothills of the Grey Mountains
+str_fullname_region_c_mirkwood|Oduncuların yaşadıgı agaçlarla dolu Kuyutorman
+str_fullname_region_grey_mountains|Gri Dagların etekleri
 str_fullname_region_mordor|Mordor, Sauron'un Kara Diyarları
 str_fullname_region_dimrill|Dimrill Vadisi, Moria Daglarının eteklerinde
 str_fullname_region_s_rebor|Dale Krallıgı, Yalnız Dag'ın eteklerinde bulunur
@@ -1865,20 +1865,20 @@ str_shortname_region_gap_of_rohan|Rohan Geçidi
 str_shortname_region_entwash|Girdap Agzı
 str_shortname_region_wetwang|Nindalf
 str_shortname_region_dead_marshes|Ölü Bataklıklar
-; str_shortname_region_isengard|Nan Curunir
+str_shortname_region_isengard|Nan Curunir
 str_shortname_region_fangorn|Fangorn
 str_shortname_region_brown_lands|Kahverengi Topraklar
-; str_shortname_region_dagorlad|Dagorlad
-; str_shortname_region_n_undeep|the North Undeep
-; str_shortname_region_s_undeep|the South Undeep
-; str_shortname_region_emyn_muil|Emyn Muil
-; str_shortname_region_misty_mountains|the foothills of the northern Misty Mountains
+str_shortname_region_dagorlad|Dagorlad
+str_shortname_region_n_undeep|Kuzey Undeep
+str_shortname_region_s_undeep|Güney Undeep
+str_shortname_region_emyn_muil|Emyn Muil
+str_shortname_region_misty_mountains|Kuzey Sisli Dagların etekleri
 str_shortname_region_lorien_|Lorien
-; str_shortname_region_anduin_banks_|the middle valley of Anduin
+str_shortname_region_anduin_banks_|Orta Vanduin Vadisi
 str_shortname_region_n_mirkwood_|Kuzey Kuyutorman
 str_shortname_region_s_mirkwood_|Güney Kuyutorman
-; str_shortname_region_c_mirkwood|Middle Mirkwood
-; str_shortname_region_grey_mountains|the foothills of the Grey Mountains
+str_shortname_region_c_mirkwood|Orta Kuyutorman
+str_shortname_region_grey_mountains|Gri Dagların etekleri
 str_shortname_region_mordor|Mordor Toprakları
 str_shortname_region_dimrill|Dimrill Dale
 str_shortname_region_s_erebor|Dale diyarı
@@ -2121,7 +2121,7 @@ str_formations|Savaş menüsündeki kompleks düzenler şunlardır:^^SAFLARI SIK
 str_npc18_intro|Harika,biraz bekle!Seninle konuşmak istiyorum
 str_npc19_intro|Bir dakika bekle, Komutan. Seninle konuşuyordum. Hayır, hayır, kraliyet kanından biriyle konuşsanız bile diz çökmenize gerek yok.
 str_npc20_intro|Bekleyin. Sen. Seni gördüm. Yüzünü biliyorum. Bir rüya görmüştüm, seninle ilgili - ama neden sen? Şimdi seni kendi gözlerimle gördügüme göre, azgın bir snagadan biraz daha fazlasısın demektir!
-; str_npc21_intro|Buzz off, little fly, 'fore I SQUASH YER! RRAAARGHH!  (*The troll bares her fangs in a somewhat half-hearted snarl.*)
+str_npc21_intro|Git buradan, küçük böcek, SENİ EZİP GEÇMEDEN ÖNCE! RRAAARGHH! (*Troll pençelerini istemsiz bir şekilde homurdanarak açar.*)
 str_npc22_intro|Merhaba {playername}. Mae govannen!
 str_npc23_intro|Beni yalnız bırak, yabancı, Seninle konuşmak istemiyorum.
 str_npc24_intro|Kili, Dwalin oglu, hizmetinizdeyim!
@@ -2141,7 +2141,7 @@ str_npc27_intro_response_1|Sen kimsin?
 str_npc18_intro_response_2|Ölümle baglanmış bir köle için kelimelerimi boşa harcamayacagım.
 str_npc19_intro_response_2|Küstah sefil. Çekil yolumdan.
 str_npc20_intro_response_2|Senin deli saçmalıkların için zamanım yok, büyücü.
-; str_npc21_intro_response_2|Just this once I will let you live, you dirty beast. (leave)
+str_npc21_intro_response_2|Bu seferlik yaşamana izin verecegim, seni pis canavar. (Ayrıl)
 str_npc22_intro_response_2|Aferdersiniz,konuşmam gereken daha az önemli insanlar var..
 str_npc23_intro_response_2|Duygularımız karşılıklı,hoça kal.
 str_npc24_intro_response_2|Boş ver,biraz taze havaya ihtiyacım var.
@@ -2151,7 +2151,7 @@ str_npc27_intro_response_2|[aldırma ve ayrıl]
 str_npc18_backstory_a|Ben sadece köle degilim! Ben kafa kesen bir savaşçıyım, saflar arasındaki haklı yerim çalındı! Bir kadın oldugumu görüyorsunuz, ama digerlerinden daha güçlü ve daha hızlıyım ve sayabilecegimden daha fazla erkekle dövüştüm. Çukur Ustası - o NALET! Aynı anda üç adamla dövüşmek için bana bir test yaptı. Üç!
 str_npc19_backstory_a|Elbette küçük bir damla, ama annem bana soyum hakkında her şeyi anlattı. Ben, Kral Fengel'in soyundan gelen Heidrek, Rohan ve Dunland tahtına şeflerimizden daha yakınım! Koyu saç benim saçım, ama sanırım orada bir yerlerde sarıdan fazlası var.
 str_npc20_backstory_a|Rüyamda bir agaç vardı. Bembeyaz bir agaç. Ve sen, sen de oradaydın, agacın yanında duruyordun. Elini agacın gövdesine koydun ve, Köklerine kadar kurudu! Sonra gökyüzündeki gölge büyüdü, ve hava agırlaştı. Sonra doguda çok uzaklardan gelen bir kahkaha duydum.
-; str_npc21_backstory_a|Hah, step an itsy bit closer an' I'll snap your neck like a twig.  Come on! I'll stomp on your liver, smash your bones into dust an' juice your head like a grape.
+str_npc21_backstory_a|Heh, Az daha yakınlaş ve senin boynunu bir dal gibi kırayım. Hadi bakalım! Karacigerinde hoplayacagım, kemiklerini toz duman edecegim ve başını bir üzüm gibi ezecegim.
 str_npc22_backstory_a|Ölümlü adamlardan, geçmişteki unutulmuş savaşlardaki işlerim hakkında hikayeler duymuş olabilirsin.Bu savaş şimdiye kadar Eldar'ın tehlikeye düştügü ikinci fakat son savaş olacak.
 str_npc23_backstory_a|Küstahlıgımı mazur gör, yabancı, ama buraya fazla ziyaretçi ugramaz ve gelenler de çok güvenilir görünmüyor. Sadece bir hafta önce, bir cüce görünmüştü... Neyse boşver. Ben Silvan elflerinden Luebanna.
 str_npc24_backstory_a|Sormanız çok nazik {playername}.Doguluların ve Gundabad orklarının akınlarıyla savaşıyoruz, ama şu ana dek Daleli müttefiklerimizin ve bizlerin halledemedigi bir şey yok.
@@ -2161,7 +2161,7 @@ str_npc27_backstory_a|Ben Durgash'ım
 str_npc18_backstory_b|Galip geldim! Onları yendim! Lakin... bir tanesi o kadar zayıftı ki ona vurdugum yumruklar yüzünden telef oldu. Eger basit bir köle olsaydı, o bunun sonu olacaktı. Ama hayır. O Yüce Lord Lurmsakunun önemsiz bir eşinden olan bir sürü ogullarından birisiydi.
 str_npc19_backstory_b|Pekala, Rohan ya da Dunland'dan iddiamı kabul edecek hiçbir şey bulamayacaksınız, ama yine de bu gerçek. Büyük annem tepelerde yaşayan bir çoban kadındı ve bir gün talip Theoden'ın açgözlü, açgözlü büyükbabası yaşlı Kral Fengel'in onu İsen kıyılarında görmesi tesadüf eseri oldu. Ondan hoşlanıyordu ve benim annem onun çocuguydu.
 str_npc20_backstory_b|Kimin önünde durdugunuzu bilmiyor musunuz? Cahil aptal. Benim eski Akallabêth'ten Zigûrphel oldugumu bilin - ama sanki bu isim hakkında hiçbir şey bilmiyormuşsunuz gibi! Ayrıca, büyük silahlanmamızı ve yuvamızı batıran Valar'a ragmen bana ve halkıma yapılan yanlışları uzun zaman önce telafi etmeye çalıştıgımı da bilin. Ah, Ar-Pharazôn, büyük ve şanlı! Vizyonunuz artık hatırlanmayacak mı? Hayır, Zigûrphel yaşadıgı ve işini yapacak elleri oldugu sürece degil!
-; str_npc21_backstory_b|Yer' a hard one, are ye? (*she sighs*) Name's Berta. Used to 'ave me a raidin' gang in the Misty Mountains, mind, the nastiest goblin thieves around. Those were the good days. Then we ran into a band of these wild ones from Gundabad.  Did some drinkin', some gamblin'... Next mornin' I woke all tied up, my lads in the wind. Now I break rocks and I haul their baggage around. Sometimes they 'ave me scrappin' for money.
+str_npc21_backstory_b|Zor birisin, degil mi? (*iç çeker*) Adım Berta. Zamanında Sisli Daglarda, en pis, en soysuz goblin hırsızların oldugu yerde bir yagma çetem vardı. Güzel günlerdi. Bir gün Gundabad'dan olan vahşi goblinlerle karşılaştık. Biraz içtik, kumar oynadık... Sabah uyandıgımda her yerim baglıydı ve dostlarım yanımda degildi. Şimdi taş kırıp etrafta mallarını taşıyorum. Bazen de para için kavga ediyorum.
 str_npc22_backstory_b|Lord Elrond beni Lord Celeborn'a göndererek, Rhovanion'un bu bölümünde Savaşta ihtiyaç duydugu gibi yardım ve tavsiye vermeye çagırdı.
 str_npc23_backstory_b|Güzel ormanımızın gizli yollarına yürümeyi seviyorum.Bazen, agaçların içinden, ormandaki canlıları ve yaşamları gözlemek için sessizce yürüyorum.Nadir bir kuşun şarkısı,bir yaban domuzunun yuvası; bana kılıçların ve silahların çarpışması ve Edain'in muhteşem duvarları kadar büyüleyici ve güzel geliyor.
 str_npc24_backstory_b|Erebor savunmalarının geliştirilmelerine yardım ettim ve saygıdeger babam Dwalin'in yönetimi altında, -gelenegimiz oldugu gibi- genç cüce toplulugunu egittim.
@@ -2171,7 +2171,7 @@ str_npc27_backstory_b|Ben Isengard'tan Wolf Rideriyim ve izcicilik yapıyorum.
 str_npc18_backstory_c|Ve işte buradayım, lanetlendim ve tükürdüm, benimle alay eden köpeklerden daha güçlü oldugum için ölmeye mahkumum! Özgür beni yüce olan. Özgür beni, benim için konuş - ve benim gücüm senin. Kılıcım senindir. Benim hayatım senindir!
 str_npc19_backstory_c|Dogal olarak, Şef Daeglaf ve digerleri bana zafer için hiç şans tanımamak istiyor, çünkü savaşta büyük işler yaparsam, iddiama kanat katardı. O zaman erkekler benim afişime akın ederdi! Şöhretiniz önünüzde koşuyor Komutan. Bayragınızın altında hizmet etmeme izin verirseniz, o büyük işleri sizin için yapabilirim.
 str_npc20_backstory_c|Ey Akallabêth, şimdi neredesin? Soldu, hepsi kayboldu ... Bir zamanlar ışıgın oldugu yerde, milletimizin her şeyden önce büyük ihtişamı, şimdi sadece Gölge var. Güzel evim artık denizin ebedi sessizligini biliyor. Ama kalbim hala ateşle dolu ve karanlık canavarlar içinde vahşice koşuyor. Sizin ve türünüzün hayal bile edemeyeceginiz güçlü sanatları biliyorum. Beni dinle, şimdi! Gerektigi gibi yardımım için yalvaracak mısın, yoksa buradan bir solucan gibi sinsice mi gideceksin? Hızlıca seçin!
-; str_npc21_backstory_c|Listen 'ere, tiny! If yer' some bigshot chief indeed, p'raps yer can talk to the bossman there and pay off what I owe? I reckon I could join your lil' band. See the world, eat some sheep... (*She licks her impressive fangs.*)
+str_npc21_backstory_c|Dinle beni, küçük! Madem söylendigi gibi çok ünlü bir komutansın, belki şurdaki işbaşıyla konuşup borcumu ödeyebilirsin? Sanırım küçük tayfanıza katılabilirim. Dünyayı gezer, kuzu eti yerim...(*etkileyici pençelerini yalar*)
 str_npc22_backstory_c|Bununla birlikte, eger Lothlórien'in düşmanları peşine düşersen, bir süre sana katılmayı düşünebilirim {playername}. Bu Savaşta kaderlerimizin birbiriyle örtüştügünü hissediyorum.
 str_npc23_backstory_c|Savaş için sürekli hazırlık yapmanı asla anlamayacagım sanırım. Ancak uzun yoldan gelmiş olmalısın - hiç buradakinden başka diger büyük ormanları da gördü mü? Beni de oralara götürür müsün?
 str_npc24_backstory_c|Burada fazla aksiyon olmuyor. Senin yolculuklarında bol aksiyon oluyor ve davanla bizim davamız aynı degil mi? Savaşçı bir Cüce hayatta kalma şansını bayagı arttırır.
@@ -2181,7 +2181,7 @@ str_npc27_backstory_c|Belki benim yeni ustam sen olabilirsin.
 str_npc18_backstory_later|Sanırım, Büyük Lord Lurmsakun'un başka bir yerde meşgul edildigi için şanslıydım. Niyetleri beni burada çürümeye bıraktı. Ama kaderim tutsak olarak ölmek degil! Bana savaş meydanındaki yasal ölümümü bagışlamaya mı geldin?
 str_npc19_backstory_later|Hey, sen! Tahmin ettigim gibi geri döndün. Kıskanç beylerim tarafından ellerim boşta kalmıştır. Hadi konuşalım, komutan! Seni takip ederim ve önderliginde savaşıp kendime saygınlık kazanırım.
 str_npc20_backstory_later|Hala hayallerimi rahatsız ediyorsun! Bana huzur vermeyecek misin? Rüya gören gözüm derin ve uzagı görüyor. Burada Dol Guldur'da hala çalışmalarınızın vizyonları var. Şunu söylüyorum: akıllı olsaydın, şimdiye kadar benim yardımımı tekrar isteyecektin.
-; str_npc21_backstory_later|Look wha' the cat dragged in! Done well fo' yerself, then, 'ave yer? Had a lovely time strollin' around, not bein' chained to a damned rock?! Well ain't that nice! How 'bout yer go speak to the bossman for me? Now, better than never.
+str_npc21_backstory_later|Şu kedinin getirdigi şeye bakın! Kendin için iyi bir şey yaptın o zaman, degil mi? Güzel güzel dolandın, lanet olası bir kayaya baglı olmadan?! Ne kadar da güzel degil mi! Gidip te benim için işbaşıyla konuşmaya ne dersin? Şimdi, hazır fırsat varken git ve konuş.
 str_npc22_backstory_later|İyi düşündün mü? Eldar için zaman daralıyor.
 str_npc23_backstory_later|Birkaç gün dev örümcek yuvasını gözlemledim. Çirkin yaratıklar, davetsiz misafirleri inlerinde tutuyorlar. Bana seninle birlikte gelmemi istemek için mi geldin?
 str_npc24_backstory_later|Surlar inşa etmek her cüce için degerlidir. Ama benim biraz da baltamı kullanmam gerek. Bırak seninle geleyim.
@@ -2191,7 +2191,7 @@ str_npc27_backstory_later|Yeniden düşündün mü? Ben iyi hizmet ederim.
 str_npc18_backstory_response_1|Eger gerçekten göründügün kadar vahşi isen, belkide benim saflarımda savaşmalısın. Seni biraz besledikten sonra tabii.
 str_npc19_backstory_response_1|Peki. Savaş hattında dövüşebildigin sürece işimize yararsın, Dunlending.
 str_npc20_backstory_response_1|Bana katılmak istemen oldukça garip, cadı. Ama pekala, gelebilirsin.
-; str_npc21_backstory_response_1|It's true you're rather large and look like you can handle yourself in a scrap. I might have use for you.
+str_npc21_backstory_response_1|Çok büyük oldugun ve bir kavgada kendini idare edebilecek gibi durdugun dogru. İşime yarayabilirsin.
 str_npc22_backstory_response_1|Sormam biraz küstahça olabilir fakat birligim, gelecek savaşlarda senin yetenegini kullanabilir.
 str_npc23_backstory_response_1|Dünyayı dolaşıyoruz, sadece adaleti savunmak için düşmana karşı savaş veriyoruz.
 str_npc24_backstory_response_1|Gerçekten de, bir cüce savaşçı, tarafımdan hoş karşılanacaktır.
@@ -2201,7 +2201,7 @@ str_npc27_backstory_response_1|Yapıcaksın.
 str_npc18_backstory_response_2|Pah! Katil bir çukuru köpegi, benim yoldaşım olmaya uygun degil.
 str_npc19_backstory_response_2|Büyük kahramanlıklardan bahsedersin. Benimle bir daha görüşmeden önce biraz kendin yap!
 str_npc20_backstory_response_2|Pah! Sanırım havlamanız ısırmanızdan çok daha kötü. Yapacak işlerim var!
-; str_npc21_backstory_response_2|Bad luck, troll. I can't afford to haggle for the likes of you.
+str_npc21_backstory_response_2|Şansına küs, Troll. Senin gibiler için pazarlık yapacak param yok.
 str_npc22_backstory_response_2|Lothlórien daha az tehlikede oldugu zaman dönecegim.
 str_npc23_backstory_response_2|Hayır, üzgünüm. Askı takamayız.
 str_npc24_backstory_response_2|Hayır, üzgünüm. Kendi başımıza iyiyiz.
@@ -2211,7 +2211,7 @@ str_npc27_backstory_response_2|Sana ihtiyacım yok, köle.
 str_npc18_signup|Oh, dişlerimi tekrar ete batırmak için! Ellerim ve ayaklarım serbest kaldıgında ve karnımda yemek oldugunda, gerçek cesaretimi yakında göreceksin!
 str_npc19_signup|Evet, şimdilik bana öyle diyebilirsiniz, çünkü Dunlending kanımdan utanmıyorum. Halkım Rohan'ın zorba kralları altında çok acı çekti ve onlarla küçük bir akrabalık hissetmiyorum. Bu savaşta ve tüm çabalarınızda size yardım edecegim. Ama karşılıgında Komutan, vakti geldiginde iddiamı savunmama yardım etmelisiniz.
 str_npc20_signup|Bir süreligine kibirliginizi görmezden gelecegim, ama bir gün sözler söyleyecegimizi bilin. Belki o zamana kadar ikimiz de bir zamanlar çok farklı bir adla tanıdıgım Karanlık Lord'un önünde durmuş olacagız ve sonra onun kulagının kimde oldugunu görecegiz. Belki o zaman size görgü kurallarını ögretirim.
-; str_npc21_signup|Now yer' talkin'! Go see the boss and let me outta this hole.
+str_npc21_signup|İşte şimdi güzel konuştun! Git patronla konuş ve beni bu lanet olası yerden kurtar.
 str_npc22_signup|Anlıyorum. İtiraf ediyorum, sizi ve sömürgelerinizi duymuştum.
 str_npc23_signup|Şiddetten ve savaş aletlerinden hoşlanmam, ama kendimi hızlıca nasıl savunacagımı biliyorum.
 str_npc24_signup|Benim yeteneklerim balta ile, hem fırlatır hem savururum. Eger tüccarlar ile konuşmama izin verirsen faturalarının düşük gelmesini de saglarım. Ve savaş alanında düşmandan düşen eşyaların en degerlilerini bulacak göze sahibim.
@@ -2221,7 +2221,7 @@ str_npc27_signup|Gerçekten mi? Beni grubuna katmak için iyi oynadın.
 str_npc18_signup_2|Annem bir keresinde bana birçok genci kesmek için dogdugumu söylemişti. Senin için Batı'nın birçok yumuşak zayıflıgını öldürecegim. Ellerime sadece iyi bir bıçak koyun, gerisini ben hallederim!
 str_npc19_signup_2|Halkımın yaptıgı gibi, geceleyin kurtlar gibi savaşırım - bir mızrak fırlatabilir veya hücum eden bir süvarinin gögsüne bir kargaburun sürebilirim. Uzuvlar Balta veya kılıçla kesiyorum. Seninle açıkça konuşacagım: Göze veya Beyaz El'e daha fazla hizmet vermen umrumda degil. Altın Salon'da haklı tahtıma oturabildigim sürece, hepsi benim için bir.
 str_npc20_signup_2|Ama şimdilik, uzun yıllardır kurdugum irfan ve zanaatımın hizmetinize baglanmasına izin verin. Şunu bilin: Zigûrphel'in yardımıyla, Utumno'nun çukurunda kanatları verilen bir ejderha gibisiniz. Sen onları anlamasan da, senin ve amacın için harika şeyler yapacagım!
-; str_npc21_signup_2|I'll be right behind yer, don't yer worry.
+str_npc21_signup_2|Hemen arkanda olacagım, merak etme.
 str_npc22_signup_2|Belki de grubunuza katılmak ve beklenmedik yerlerde çarpışmak düşmanın dengesini bozacaktır. Gelecegim.
 str_npc23_signup_2|Belki sana daha hızlı koşmayı ve daha az ses yapmayı ögretebilirim. Hadi gidelim
 str_npc24_signup_2|Grubunuzdaki uzun boylu halkları, özellikle de sinsi Elfleri hizada tutabilirseniz, memnuniyetle size katılırım.
@@ -2231,7 +2231,7 @@ str_npc27_signup_2|Beni aldıgına pişman olmayacaksın.
 str_npc18_signup_response_1|Ruh halini sevdim. Pekala, sizin adınıza Lurmsakun'a haber gönderecegim.
 str_npc19_signup_response_1|Pekala, 'Prens', Silahlarını geri al, şimdi benim için savaşıyorsun.
 str_npc20_signup_response_1|Umarım, kendi iyiligin için, sözlerin boş çırpınmalar degildir. Beni hayal kırıklıgına ugratma Zigûrphel.
-; str_npc21_signup_response_1|Very well, we shall see if you prove worthy.
+str_npc21_signup_response_1|Pekala, saygıdeger olup olmadıgını görecegiz.
 str_npc22_signup_response_1|Bir Elf Lordu bölügünde olmaktan onur duyacagız.
 str_npc23_signup_response_1|Tamam öyleyse. Umarım ilk gördügün ork sürüsünde tabanları yaglayıp kaçmazsın.
 str_npc24_signup_response_1|Çok iyi öyleyse!, usta cüce, aramıza hoş geldin. 
@@ -2241,7 +2241,7 @@ str_npc27_signup_response_1|Peki. Hadi Gidelim.
 str_npc18_signup_response_2|Sen şiddetlisin ... belki de çok şiddetlisin. Şimdilik stokların orada biraz daha fazla zaman sana itaat ögretebilir.
 str_npc19_signup_response_2|Bu balyaların üzerinde biraz daha oturmak zorunda kalacaksın, 'Prens'.
 str_npc20_signup_response_2|Senin böbürlenmen ve süistimalin kulaklarıma ızdırap çektiriyor.Birdahaki konuşmamızdan önce dilini terbiye et!
-; str_npc21_signup_response_2|I have no need for you at the moment.
+str_npc21_signup_response_2|Şu anlık sana bir ihtiyacım yok.
 str_npc22_signup_response_2|Yeniden düşündüm de, belki Lothlórien'e kendi başımıza yardım etmeliyiz.
 str_npc23_signup_response_2|Üzgünüm, sadece seni savaş meydanında hayal edemedim.
 str_npc24_signup_response_2|Üzgünüm,Elfleri sevmeye başladım
@@ -2251,7 +2251,7 @@ str_npc27_signup_response_2|Fikrimi degiştirdim.
 str_npc18_payment|Şüphesiz, boyunuzun güçlü bir komutanın bir kelimesiyle beni serbest bırakırlar. [{s14} ile {reg14} nüfuza mal olur]
 str_npc19_payment|Görünüşe göre Kara Daeglaf beni burada tutmak için bahaneler bulabilir, Komutan. [{s14} ile {reg14} nüfuza mal olur]
 str_npc20_payment|Aksine, bana veya ikimizin de hizmet ettigi efendiye yamuk yapmaması gereken sensin. Onun takdirinde şini iyi yapabildin mi? [{s14} ile {reg14} nüfuza mal olur]
-; str_npc21_payment|Speakin' of 'worth', that little debt of mine might not be all that little, if yer catch me drift. And the bossman might try and pull a sneaky on yer, so watch out! [costs {reg14} Influence with {s14}]
+str_npc21_payment|Ücretten bahsetmişken, benim bu borcum düşündügün kadar da az olmayabilir, anlatabildim mi? Ve işveren de sana sinsilik yapabilir, o yüzden dikkatli ol! [{s14} ile {reg14} nüfuza mal olur]
 str_npc22_payment|Yakında gitmeliyiz. Düşmanla çarpışmadan önce burada olan varlıgımı algılarsa, gelişimimin degeri azalacaktır. Ama Lothlórien'in de bana ihtiyacı var.  [{s14} ile {reg14} nüfuza mal olur]
 str_npc23_payment|Sana katılırdım, ama görevim burada. [{s14} ile {reg14} nüfuza mal olur]
 str_npc24_payment|Sana katılırdım Fakat Dwalin böylesine ihtiyaç duyulan bir zamanda ayrılmamı anlayışla karşılayamaz.  [{s14} ile {reg14} nüfuza mal olur]
@@ -2261,7 +2261,7 @@ str_npc27_payment|Sana katılırdım, ama görevim burada. [{s14} ile {reg14} n�
 str_npc18_payment_response|Bundan şüphe yok. Lurmsakun'un astları beni reddetmeye cesaret edemezler. [{reg14}/{reg15} nüfuz]
 str_npc19_payment_response|Şef Daeglaf bu istegimde bana öncelik vermek zorunda kalacak, sade bir şekilde yapmalıyım. [{reg14}/{reg15} Nüfuza mal olur]
 str_npc20_payment_response|Aslında bende var. Şimdi gel! Sonuçta, takip edeceginiz kimse düşük bir snaga degil. [{reg14}/{reg15} Nüfuza mal olur]
-; str_npc21_payment_response|Whatever he might try, you are leaving with me. [costs {reg14}/{reg15} Influence]
+str_npc21_payment_response|Ne olursa olsun, sen benimle geleceksin. [{reg14}/{reg15} Nüfuza mal olur]
 str_npc22_payment_response|Güven bana , benimle birlikte daha işe yarar olacaksın. [{reg14}/{reg15} Nüfuza mal olur]
 str_npc23_payment_response|Şu andan itibaren seninle birlikte görev yapıyorum. [{reg14}/{reg15} Nüfuza mal olur]
 str_npc24_payment_response|Üstat Dwalin, iyi savaşan bir cücenin düşmanlarımızdan çok uzun süre ayrı tutulmaması gerektigini anlayacaktır.  [{reg14}/{reg15} Nüfuza mal olur]
@@ -2512,22 +2512,22 @@ str_gundabad_guildmaster_companion_player_ask|Burada tek gördügüm güvenilmez
 str_gundabad_guildmaster_companion_player_none_ok|sözlerine dikkat et, senin için neyin iyi oldugunu biliyorsan tabii.
 ; str_gundabad_guildmaster_player_found_ok|Do I hear you aright? Is this “Berta” of yours a troll that thinks? Now this, I have to see for myself.
 ; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
-; str_fullname_region_rhun|East Rhovanion, on both sides of the river Celduin
-; str_fullname_region_erebor|the foothills of Erebor, the Lonely Mountain
-; str_fullname_region_celebrant|the Field of Celebrant, between the rivers Celebrant and Limlight
-; str_fullname_region_gladden_fields|the Gladden Fields, marshes of the river Gladden
-; str_fullname_region_w_emyn_muil|western Emyn Muil
-; str_fullname_region_s_misty_mountains|the foothills of the southern Misty Mountains
-; str_fullname_region_n_anduin_vale|the northern Vale of Anduin, north of the Carrock
-; str_fullname_region_s_anduin_vale|the southern Vale of Anduin, between Lorien and the Undeeps
-; str_fullname_region_cair_andros|Cair Andros, the great ship-like island of Anduin
-; str_shortname_region_rhun|East Rhovanion
-; str_shortname_region_erebor|the foothills of Erebor
-; str_shortname_region_celebrant|the Field of Celebrant
-; str_shortname_region_gladden_fields|the Gladden Fields
-; str_shortname_region_w_emyn_muil|western Emyn Muil
-; str_shortname_region_s_misty_mountains|the foothills of the Southern Misty Mountains
-; str_shortname_region_n_anduin_vale|the northern Vale of Anduin
-; str_shortname_region_s_anduin_vale|the southern Vale of Anduin
-; str_shortname_region_cair_andros|Cair Andros
+str_fullname_region_rhun|Dogu Rhovanion, Celduin nehrinin iki tarafında
+str_fullname_region_erebor|Erebor'un (Yalnız Dag) etekleri
+str_fullname_region_celebrant|Celebrant ovası, Celebrant nehri ve Limlight nehri arasında
+str_fullname_region_gladden_fields|Gladden ovaları, Gladden nehrinin bataklıkları
+str_fullname_region_w_emyn_muil|batı Emyn Muil
+str_fullname_region_s_misty_mountains|Güney Sisli Dagların etekleri
+str_fullname_region_n_anduin_vale|Kuzey Anduin Vadisi, Carrock un kuzeyi
+str_fullname_region_s_anduin_vale|Güney Anduin Vadisi, Lorien ve Undeep'ler arasında
+str_fullname_region_cair_andros|Cair Andros, Anduinin gemiye benzeyen yüce adası.
+str_shortname_region_rhun|Dogu Rhovanion
+str_shortname_region_erebor|Erebor'un etekleri
+str_shortname_region_celebrant|Celebrant Ovası
+str_shortname_region_gladden_fields|Gladden Ovaları
+str_shortname_region_w_emyn_muil|batı Emyn Muil
+str_shortname_region_s_misty_mountains|Güney Sisli Dagların etekleri
+str_shortname_region_n_anduin_vale|Kuzey Anduin Vadisi
+str_shortname_region_s_anduin_vale|Güney Anduin Vadisi
+str_shortname_region_cair_andros|Cair\nAndros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Eger iyi savaşırsa, onu alırım. Savaşmazsa, bir balık gibi içini temizlerim onun. Ve eger şu degersiz yalakalardan çıkarsa, dönerim ve seninle vaktimi ziyan ettigin için ödeşiriz!

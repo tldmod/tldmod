@@ -292,12 +292,12 @@ itm_orc_tribal_c|Peau non traitée
 itm_evil_gauntlets_a|Gants noirs
 itm_evil_gauntlets_b|Gantelets noirs
 itm_free_isen_orc_armor_a|Armure orque de l'Isengard
-itm_isen_orc_light_a|Armure orque de l'Isengard
-itm_isen_orc_light_b|Armure orque de l'Isengard
-itm_isen_orc_pad_a|Armure orque de l'Isengard
-itm_isen_orc_pad_b|Armure orque de l'Isengard
-itm_isen_orc_mail_a|Armure orque de l'Isengard
-itm_isen_orc_mail_b|Armure orque de l'Isengard
+itm_isen_orc_light_a|Harnais léger orque de l'Isengard
+itm_isen_orc_light_b|Harnais léger orque de l'Isengard
+itm_isen_orc_pad_a|Armure légère segmentée orque de l'Isengard
+itm_isen_orc_pad_b|Armure segmentée moyenne orque de l'Isengard
+itm_isen_orc_mail_a|Cotte de mailles orque de l'Isengard
+itm_isen_orc_mail_b|Armure lourde segmentée orque de l'Isengard
 itm_isen_uruk_light_a|Harnais uruk-hai léger
 itm_isen_uruk_light_b|Harnais de combat uruk-hai
 itm_isen_uruk_light_c|Harnais de berserker uruk-hai
@@ -312,15 +312,10 @@ itm_uruk_tracker_boots|Bottes de traqueur uruk
 itm_uruk_greaves|Jambières uruks
 itm_uruk_chain_greaves|Jambières uruks en mailles
 itm_uruk_ragwrap|Bandage tissé uruk
-itm_isen_orc_helm_a|Casque orque de l'Isen
-itm_free_isen_orc_helm_b|Casque orque de l'Isen
-itm_free_isen_orc_helm_c|Casque orque de l'Isen
+itm_isen_orc_helm_a|Casque orque de l'Isengard
 itm_isen_uruk_helm_a|Casque uruk-hai
-itm_free_isen_uruk_helm_a|Casque uruk-hai
-itm_free_isen_uruk_helm_c|Casque uruk-hai
 itm_isen_uruk_helm_d|Casque de capitaine uruk-hai
 itm_isen_uruk_helm_e|Casque de pisteur uruk-hai
-itm_free_isen_uruk_helm_f|Casque de pisteur uruk-hai
 itm_uruk_pike_b|Pique du Mordor
 itm_uruk_falchion_a|Fauchon uruk
 itm_uruk_falchion_b|Grand cimeterre orque
@@ -519,12 +514,12 @@ itm_harad_scale|Armure d'écailles haradhrim
 itm_harad_tiger_scale|Armure de garde du Tigre
 itm_harad_lion_scale|Armure de garde du Lion
 itm_harad_dragon_helm|Casque kiloka
-itm_harad_cav_helm_a|Casque de cavalerie du Harondor
-itm_harad_cav_helm_b|Casque de cavalerie du Harondor
+itm_harad_cav_helm_a|Casque léger d'Arondor
+itm_harad_cav_helm_b|Casque léger d'Arondor
 itm_black_snake_helm|Casque maranka
-itm_harad_finhelm|Grand casque haradhrim
-itm_harad_heavy_inf_helm|Grand casque haradhrim
-itm_harad_wavy_helm|Grand casque haradhrim
+itm_harad_finhelm|Casque de fantassin lourd du Harad
+itm_harad_heavy_inf_helm|Casque de fantassin du Harad
+itm_harad_wavy_helm|Casque conique du Harad
 itm_harad_eaglehelm|Casque de garde de l'Aigle
 itm_lion_helm|Casque de garde du Lion
 itm_harad_pantherhelm|Capuchon de la garde de la Panthère
@@ -578,7 +573,7 @@ itm_khand_throwing_axe|Hache à lancer de Khand
 itm_khand_rammace|Masse bélier de Khand
 itm_khand_pitsword|Épée de gladiateur
 itm_khand_tulwar|Tulwar de Khand
-itm_khand_2h_tulwar|Tulwar de Khand
+itm_khand_2h_tulwar|Grand tulwar de Khand
 itm_khand_lance|Lance de Khand
 itm_easterling_round_horseman|Rondache orientale
 itm_variag_gladiator_shield|Bouclier d'arène de l'est
@@ -598,12 +593,11 @@ itm_rhun_armor_n|Tenue de combat moyenne de Rhûn
 itm_rhun_armor_o|Tenue de combat moyenne de Rhûn
 itm_rhun_armor_p|Armure noble de Rhûn
 itm_rhun_armor_k|Armure noble de Rhûn
-itm_rhun_helm_barbed|Casque acéré de Rhûn
-itm_rhun_helm_horde|Casque tribal de Rhûn
+itm_rhun_helm_chieftain|Casque de chef de Rhûn
 itm_rhun_helm_pot|Heaume de Rhûn
+itm_rhun_helm_barbed|Casque acéré de Rhûn
 itm_rhun_helm_round|Casque rond de Rhûn
 itm_rhun_helm_leather|Casque en cuir de Rhûn
-itm_rhun_helm_chieftain|Casque de chef de Rhûn
 itm_rhun_warpick|Piquier de guerre de Rhûn
 itm_rhun_greataxe|Grande hache de Rhûn
 itm_rhun_battleaxe|Hache de bataille de Rhûn
@@ -733,7 +727,7 @@ itm_rohan_lance_banner_sun|Lance rohirrim avec bannière du Soleil
 itm_rohan_lance_banner_horse|Lance rohirrim avec bannière du Cheval
 itm_ent_water|Étrange bol d'eau
 itm_map|Cartes de la Terre du Milieu
-itm_athelas_reward|Athelas
+itm_athelas_reward|Feuilles d'athelas séchées
 itm_phial_reward|Lumière de Galadriel
 itm_scroll_reward|Sur la Chute de Gondolin
 itm_hammer_reward|Marteau de forgeron
@@ -742,7 +736,6 @@ itm_angmar_whip_reward|Fouet de maître
 itm_horn_gondor_reward|Cor du Gondor
 itm_harad_totem_reward|Totem du Harad
 itm_elven_amulet_reward|Amulette elfique
-
 itm_torque_reward|Torque maléfique
 itm_orc_brew|Bière orque
 itm_rohan_saddle|Selle
@@ -779,7 +772,7 @@ itm_dale_armor_reward|Cotte de mailles de noble du Val
 itm_leather_gloves_reward|Gants d'archer
 itm_beorn_shield_reward|Bouclier béornien
 itm_beorn_axe_reward|Massue d'ours
-itm_moria_arrow_reward|Flèches empoisonnées de la Moria
+itm_drums_of_the_deep|Tambours des profondeurs
 itm_khamul_helm|Heaume de Khamûl
 itm_black_arrows_reward|Flèches noires
 itm_leather_boots_reward|Bottes de chasseur

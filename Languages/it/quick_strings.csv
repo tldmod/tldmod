@@ -925,6 +925,15 @@ qstr_Tripled|Triplicato
 qstr_Quadrupled|Quadruplicato
 qstr_You_drank_the_Ent_Wa|Hai bevuto l'acqua Ent
 qstr_You_used_the_Orc_Bre|Hai usato la Birra Orchesca.
+qstr_You_and_your_compani|Tu e i tuoi compagni bevete un sorso di Miruvor. Senti che le tue forze si rigenerano.
+qstr_You_give_a_few_leave|Dai qualche foglia di Athelas ai tuoi guaritori.
+qstr_lordless|senza signore
+qstr_orc_stragglers|orchi disertori
+qstr_wild_goblins|goblin selvaggi
+qstr_recruits|reclute
+qstr_regulars|regolari
+qstr_elites|élite
+qstr_You_camp_and_beat_th|Ti accampi e fai risuonare i Tamburi degli Abissi. Il potente rimbombo attrae un gruppo di {s1} {s2}.
 qstr_Fangorn_search:_fail|Ricerca Fangorn: fallita.
 qstr_^^^A_great_victory!^|^^Vittoria !^^^Così era questo il significato di tutte le leggende su Fangorn...
 qstr_^^^Defeated...^^^Sca|^^^Sconfitto...^^^Disperso nella Foresta Fangorn...Da solo...
@@ -1083,6 +1092,8 @@ qstr_You_are_entering_{s1}|Accedi a: {s1}.
 qstr_The_war_expands_comm|La guerra si espande, i comandanti sono sempre più audaci ! (Ridotti i requisiti di assedio)
 qstr_Your_party_is_spotte|La tua compagnia è stata avvistata da {s1}.
 qstr_The_effects_of_the_O|Gli effetti della Birra Orchesca si sono dissipati.
+qstr_The_effects_of_the_M|Gli effetti del Miruvor si sono dissipati.
+qstr_Athelas_used_up.|L'Athelas si è esaurito.
 qstr_Party_has_nothing_to|Le scorte di cibo sono terminate !
 qstr_You_pay_for_accommod|Paghi per la sistemazione.
 qstr_The_troll_outside_{s|Il troll al di fuori {s2} è stato ucciso. La missione è cancellata.
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{reg66} {s5} nemici uccisi. (La conta si aggiorna ogni
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} nemici uccisi. (La conta si aggiorna ogni ora)
 qstr_{reg68}_{s10}_killed|{reg68} {s10} uccisi. (La conta si aggiorna ogni ora)
 qstr_{s1}_is_scouted.|{s1} è stato esplorato.
+qstr_{s2}_was_defeated!|{s2} è stato sconfitto !
 qstr_The_Age_of_Men_has_f|L'era degli Uomini è finalmente cominciata. Ora le due torri accolgono i loro ospiti e gli alleati rimanenti per decidere chi sarà l'unico sovrano della Terra di Mezzo !
 qstr_The_War_of_the_Two_T|La guerra delle Due Torri è cominciata !
-qstr_{s2}_was_defeated!|{s2} è stato sconfitto !
 qstr_The_forces_of_{s22}_|L'armata di {s22} si è radunata ! {s22} ora è: {s23} 
 qstr_The_might_of_{s22}_h|Il livello di forza di {s22} è diminuito. Livello attuale di {s22} : {s23}. 
 qstr_In_a_desperate_attem|In un disperato tentativo di difendersi contro i suoi nemici, Sauron invia le sue legioni di Mordor !

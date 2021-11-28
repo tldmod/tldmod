@@ -18,7 +18,7 @@ skl_inventory_management|物品管理
 skl_inventory_management_desc|每點增加物品欄容量+6格。 (領袖技能)
 skl_spotting|偵察
 skl_spotting_desc|每點增加隊伍偵察範圍10%%。 (隊伍技能) 
-skl_pathfinding|導航
+skl_pathfinding|尋路
 skl_pathfinding_desc|每點增加隊伍地圖移動速度3%%。 (隊伍技能) 
 skl_tactics|戰術
 skl_tactics_desc|每2點增加1點戰鬥優勢。 (隊伍技能) 
@@ -29,13 +29,13 @@ skl_trainer_desc|每天每位有該項技能的英雄會給其它比他/她等�
 skl_looting|掠奪
 skl_looting_desc|每點提高獲得戰利品的數量10%%。 (隊伍技能) 
 skl_horse_archery|騎射
-skl_horse_archery_desc|減少在馬背上射箭與投擲的精度和傷害損失。 (個人技能) 
+skl_horse_archery_desc|減少在馬背上射箭與投擲的精度和傷害減益。 (個人技能) 
 skl_riding|騎術
 skl_riding_desc|可以騎更好的馬 (或其他野獸) ，提高騎行速度和操縱。 (個人技能) 
 skl_athletics|運動
 skl_athletics_desc|提高跑步速度。 (個人技能) 
 skl_shield|盾防
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
+skl_shield_desc|減少盾的損壞程度 (每點減少8%%) ，提高盾的格擋速度和覆蓋範圍，減少持弓配盾的減益。 (個人技能) 
 skl_weapon_master|武器掌握
 skl_weapon_master_desc|讓武器熟練度提升的更快並且提高武器熟練度的上限。上限依次為：60，100，140，180，220，260，300，340，380，420。 (個人技能) 
 skl_power_draw|強弓
@@ -45,4 +45,4 @@ skl_power_throw_desc|每點增加10%%的投擲傷害。 (個人技能)
 skl_power_strike|強擊
 skl_power_strike_desc|每點增加8%%的進戰傷害。 (個人技能) 
 skl_ironflesh|鐵骨
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)
+skl_ironflesh_desc|每點增加2生命值，並能讓你無傷抵禦一些傷害。(個人技能)

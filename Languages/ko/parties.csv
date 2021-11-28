@@ -20,9 +20,9 @@ p_town_west_emnet|서부 엠넷
 p_town_eastfold|이스트폴드
 p_town_morannon|모란논
 p_town_minas_morgul|미나스 모르굴
-; p_town_cirith_ungol|Emyn Muil Watchtower
+p_town_cirith_ungol|에뮌 무일 감시탑
 p_town_east_osgiliath|동 오스길리아스
-; p_town_orc_sentry_camp|Emyn Arnen Sentry
+p_town_orc_sentry_camp|에뮌 아르넨 초소
 p_town_isengard|아이센가드
 p_town_urukhai_outpost|우르크 하이 전초기지
 p_town_urukhai_h_camp|우르크 하이 사냥 캠프
@@ -31,7 +31,7 @@ p_town_caras_galadhon|카라스 갈라돈
 p_town_cerin_dolen|세린 돌렌
 p_town_cerin_amroth|세린 암로스
 p_town_thranduils_halls|스란두일의 회랑
-; p_town_woodelf_camp|Woodelf South Camp
+p_town_woodelf_camp|숲요정 남쪽 캠프
 p_town_woodelf_west_camp|숲요정 서쪽 캠프
 p_town_woodsmen_village|숲사람 마을
 p_town_beorning_village|베오른족마을
@@ -46,13 +46,13 @@ p_town_khand_camp|칸드 캠프
 p_town_umbar_camp|해적 캠프
 p_town_imladris_camp|리븐델 캠프
 p_town_dol_guldur|돌 굴두르
-; p_town_dol_guldur_north_outpost|Dol Guldur Road Outpost
+p_town_dol_guldur_north_outpost|돌 굴두르 대로 전초기지
 p_town_rhun_main_camp|룬 중심 캠프
 p_town_rhun_south_camp|룬 남쪽 전초기지
 p_town_rhun_north_camp|룬 북쪽 전초기지
 p_town_gundabad|군다바드
-; p_town_gundabad_ne_outpost|Grey Mountains Hold
-; p_town_gundabad_nw_outpost|Grey Mountains Ravine
+p_town_gundabad_ne_outpost|회색산맥 요새
+p_town_gundabad_nw_outpost|회색산맥 골짜기
 p_town_goblin_north_outpost|고블린 도시
 p_town_goblin_south_outpost|고블린 남쪽 전초기지
 p_town_gundabad_m_outpost|군다바드 어둠숲 전초기지

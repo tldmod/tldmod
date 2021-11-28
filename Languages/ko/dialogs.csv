@@ -1,253 +1,253 @@
-dlga_start:mutiny_pretalk_1|Hey, {playername}. We tell you what.. ^Lads here grumbling! Want more fun, less marching around.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Fall back in line, maggot! We are at war and I'm your commander.
-dlga_mutiny_pretalk_2:close_window|As you wish, commander. As you wish...
-dlga_start:mutiny_talk_1|Hey, commander. We tell you what... Lads here are not happy, not happy at all. ^Not enough manflesh, not enough fun. ^Lads here talk you not good enough, commander!
-dlga_mutiny_talk_1:mutiny_talk_2|What? Mutiny while at war? ^This is punishable by death, maggot!
-dlga_mutiny_talk_2:close_window|We tell you what... ^Lads here think I be better commander for them when I KILL YOU!
-dlga_start:troll_introduce_1|Problem?
-dlga_start:troll_talk_1|U mad?
-dlga_troll_introduce_1:troll_goodbye|Whoa! A talking troll?!
-dlga_troll_introduce_1:close_window|I own a horse.
-dlga_troll_talk_1:troll_talk_2|Troll me, troll.
-dlga_troll_talk_1:close_window|I own a horse.
-dlga_troll_talk_2:troll_talk_3|Challenge accepted!^^{s4}
-dlga_troll_beaten:troll_talk_1|I bow to your wisdom, Master Baiter of Trolls!
+dlga_start:mutiny_pretalk_1|이봐, {playername}. 할 말이 있는데.. ^여기 녀석들이 재미 좀 보고싶다는데. 이렇게 행군만 하는 것보다.
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|물러서라, 구더기 같은 놈! 우린 전쟁 중이고 난 네놈의 지휘관이다.
+dlga_mutiny_pretalk_2:close_window|그러시다면야, 지휘관님. 바라시는대로..
+dlga_start:mutiny_talk_1|이봐, 지휘관. 할 말이 있는데.. 여기 녀석들 불행해보여. 정말로말이야.^인간 살점도 부족하고, 즐길거리도 부족해.^녀석들이 네가 부족해빠졌다고 말하고 있다고, 지휘관!
+dlga_mutiny_talk_1:mutiny_talk_2|뭐야? 전시 반란? ^ 이건 사형감이다, 이 구더기 자식!
+dlga_mutiny_talk_2:close_window|할 말이 있는데 말이야.. ^여기 녀석들은 내가 널 죽여버리면 더 뛰어난 지휘관감이 될 거라 하더군!
+dlga_start:troll_introduce_1|문제있어?
+dlga_start:troll_talk_1|너 미쳤어?
+dlga_troll_introduce_1:troll_goodbye|우와! 말하는 트롤?!
+dlga_troll_introduce_1:close_window|나는 말을 소유하고 있다.
+dlga_troll_talk_1:troll_talk_2|트롤해봐, 트롤.
+dlga_troll_talk_1:close_window|나는 말을 소유하고 있다.
+dlga_troll_talk_2:troll_talk_3|도전을 받아들이지!^^{s4}
+dlga_troll_beaten:troll_talk_1|당신의 지혜에 탄복했습니다, '트롤 애호가' 나리.
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
-dlga_start:hobbit_merry_talk_met|Hello again, {playername}!
-dlga_start:hobbit_pippin_talk_met|Hello again, {playername}!
-dlga_start:hobbit_general_talk_1|Hello, {sir/madam}! My name is Meriadoc Brandybuck but you can call me Merry!
-dlga_start:hobbit_general_talk_1.1|Hello, {sir/madam}! My name is Peregrin Took but you can call me Pippin!
-dlga_hobbit_general_talk_1:close_window|I don't have time now.
-dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Say. I think I never seen one of your kind.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Say. I think I've met another one like you, in Edoras.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Say. I think I've met another one like you, in Minas Tirith.
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|I know. I came from afar! I'm a Hobbit, {sir/madam}, from the Shire.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, that must have been my dear cousin! Peregrin Took, or Pippin, how they call him. We are Hobbits, {sir/madam}, and we come from the Shire, both of us! Good old Pippin, I wonder how he is doing in Minas Tirith.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Oh, that must have been my dear cousin! Meriadoc Brandybuck, or Merry, how they call him. We are Hobbits, {sir/madam}, and we come from the Shire, both of us! Good old Merry, I wonder how he is doing back in Edoras.
-dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|May I ask a favour of you, {my lord/my lady}.
-dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Of course, {s1}. What is it?
-dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Could you deliver a message to my cousin, {s1}? He is at {s2}, in {s3}, in the service of {s4}.
-dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|I will be passing by {s1} and will be glad to pass on this message to your cousin.
-dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|I'm sorry, {s1}, but I do not have the time.
-dlga_hobbit_general_talk_ask_accept:close_window|Thanks! {s1}
-dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|I understand. I'll send it to the next caravan to {s1} then.
-dlga_hobbit_general_talk_3:close_window|Well, goodbye now.
-dlga_start:hobbit_merry_talk_met.1|Welcome back, {playername}!
-dlga_start:hobbit_pippin_talk_met.1|Welcome back, {playername}!
-dlga_hobbit_merry_talk_met:hobbit_deliver_message|Hello, messer Merry. I have a message here from your cousin, Pippin, in Minas Tirith.
-dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Hello, messer Pippin. I have a message here from your cousin, Merry, in Edoras.
-dlga_hobbit_deliver_message:close_window|Thank you, {playername}. It was good of you to bring this to me.
-dlga_hobbit_merry_talk_met:close_window|Hello, messer Merry.
-dlga_hobbit_pippin_talk_met:close_window|Hello, messer Pippin.
-dlga_start:treebeard_introduce_1|(You find that you are looking at a most extraordinary creature. He is very tall and stiff-limbed with bark-like skin and leafy hair. Moss is also covering parts of his body. But at the moment you are noting little but the eyes. The deep eyes are surveying you, slow and solemn but very sharp and penetrating. You think they are brown, shot with green light, as if there is an enormous well behind them, filled up with ages of memory and long, slow, steady thinking. But on the surface his eyes are sparkling with the present... like the sun shimmering on the outer leaves of a vast tree, or the ripples of a very deep lake.)
-dlga_treebeard_introduce_1:treebeard_introduce_2|(You are about to say something but a strange stifling feeling falls upon you, as if the air is too thin or too scanty for breathing... with an almost desperate inhale of air you manage to shake loose the feeling and the huge tree-like creature drops the intensity of his gaze a little bit. The creature continues to look at you and you notice the other huge tree creatures are watching you too, as if expecting you to speak...)
-dlga_treebeard_introduce_2:treebeard_introduce_3|Pardon my intrusion... I'm but a weary traveler seeking refuge from recent events... my name is {playername}. Might I ask who you are?
-dlga_treebeard_introduce_3:treebeard_introduce_4|(The stiff-limbed tree giant slowly opens his mouth which is concealed behind small branches, leaves and moss. With a very deep, slow and booming voice he very slowly expounds in a most commanding way:)^  'Hrooom... Hmmm... *I* am not going to tell you my name... not yet at any rate. For one thing it would take a long while. My name is growing all the time and I've lived a very long, long time; so my name is like a story. Real names tell you the story of things they belong to in my language, in the Old Entish as you might say. It is a lovely language, but it takes a very long time saying anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to.'
-dlga_treebeard_introduce_4:treebeard_introduce_5|Oh, you are an Ent! Legends speak of you and I am honored to be in your presence. I do not wish to impose and will leave if you so wish.
-dlga_treebeard_introduce_5:treebeard_questtalk|(The stiff-limbed giant and his fellow Ents stand still for many minutes in silence while a breeze passes through their leafy hairs and beards. They look at each other for another prolonged moment until an unusually hasty Ent who is resembling a rowan tree seems to want to speak. However, he stays silent until the giant stiff-limbed Ent continues:)
-dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?As I said before...:Hroom... We appreciate the courteous manners that you display. It is {reg1?unusual from your race:nice to speak with elves again}.} Times are not good, ever since the Entwives disappeared - and now there are many evil creatures released by the Dark Lord himself who are trying to destroy our homes. We seek someone who is fast but not hasty. Someone who can help us while we discuss our next moves.^Many bands of orcs have raided the woods and burned down our trees with fire arrows - if you were to defeat the orcs and make sure that they do not threaten the woods we would be grateful and consider you a true friend. Do this and we will talk again.
-dlga_treebeard_quest_brief:close_window|Orcs are vile creatures indeed. I will make sure they do not harm the forest again.
-dlga_treebeard_quest_brief:treebeard_pretalk|Sorry. I don't have time for this right now.
-dlga_treebeard_questtalk:close_window|(The Ent leader slowly opens his concealed mouth and the other Ents look at you and also slowly begin to utter a long deep sound that makes the ground shake a little - you realize that they are laughing in an Entish way. A relatively young Rowan tree looking Ent stomps his seven-toed large feet in the ground and the shake almost makes you fall.)^'Easy there, Quickbeam, we don't want to hurt our young warrior friend. Hrrrm... I am Treebeard, the oldest of the Ents, and we are all grateful for your services... Hrrrm... Let me give you a gift of Ent Water to celebrate your success.'
-dlga_treebeard_questtalk:close_window.1|(The stiff-limbed giant and his fellow Ents stand still in silence while a breeze passes through their leafy hairs and beards.)
-dlga_treebeard_pretalk:treebeard_talk_response|Hrooom... What would you like to know, young friend?
-dlga_treebeard_talk_response:treebeard_about_himself|Tell me more about you.
-dlga_treebeard_talk_response:treebeard_about_entwives|Tell me about the Entwives.
-dlga_treebeard_talk_response:treebeard_about_ents|Tell me about the Ents.
-dlga_treebeard_talk_response:close_window|Never mind, goodbye.
-dlga_treebeard_about_himself:treebeard_pretalk|(The Ent leader looks distant and solemn. After a while he slowly says:)^'Don't be hasty... we can talk more about this when the woods are safe from the orcs.'
-dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... I am the oldest of my kind hmmm... I am known as Treebeard by a few mortals and the Elves call me Fangorn. Hummm... I, Skinbark and Leaflock are the only Ents who have walked the forests before the Darkness. I am no longer very bendable as I used to be... young Quickbeam can bend and sway, like a slender tree in the wind... Hummm... If the Entwives were here...
-dlga_treebeard_about_entwives:treebeard_pretalk|(The Ent leader suddenly gets an expression of sadness and his voice is unusually deep.)^'Hummm... This is a sad tale... when the woods are free from the orcs we can discuss this.'
-dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahummm... the beautiful Entwives... they like to plant and grow... we should have listened more to them... Hrooom... then they left to the Brown Lands to plant gardens and they taught mortals about making the lands fertile... we used to visit them... until... Sauron attacked... the Entwives are now lost... Hummm... Fimbrethil... her hue of ripe grain... we have looked for them... but not found them... yet...
-dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... We are shepherds of the Trees and we protect them from perils. We are older than any of the mortal races but not as old as the Elves who cured us from dumbness. Things have changed over the ages. In the beginning we were more hasty and flexible. Over time many of us have been lost. Some of us are still true Ents, and lively enough in our fashion, but many are growing sleepy, going tree-ish, as you might say. Most of the trees are just trees, of course; but many are half awake. Some are quite wide awake, and a few are, well, ah, well getting Entish. That is going on all the time. When that happens to a tree, you find that some have bad hearts. Still, we do what we can. We keep off strangers and the foolhardy; and we train and we teach, we walk and we weed.
-dlga_start:close_window.1|Mmmmm?
-dlga_start:close_window.2|Mmhhrmmm?
-dlga_start:close_window.3|Mmmrhrrhmm?
-dlga_start:looters_2_join|Bow to the power of the {s4} and serve me!
-dlga_looters_2_join:close_window|We will obey, Master.
-dlga_start:close_window.4|^^GROWL!^^
-dlga_start:close_window.5|^^GROWL!^^
-dlga_start:member_castellan_talk|Yes, {playername}? What can I do for you?
-dlga_member_castellan_pretalk:member_castellan_talk|Anything else?
-dlga_member_castellan_talk:member_review_castle_garrison|I want to review the castle garrison.
-dlga_member_review_castle_garrison:member_castellan_pretalk|Of course. Here are our lists, let me know of any changes you require...
-dlga_member_castellan_talk:member_review_castellan_equipment|Let me see your equipment.
-dlga_member_review_castellan_equipment:member_castellan_pretalk|Very well, it's all here...
-dlga_member_castellan_talk:member_castellan_join|I want you to abandon the castle and join my party.
-dlga_member_castellan_join:close_window|I've grown quite fond of the place... But if it is your wish, {playername}, I'll come with you.
-dlga_member_castellan_join:member_castellan_pretalk|And where would we sleep? You're dragging a whole army with you, {playername}, there's no more room for all of us.
-dlga_member_castellan_talk:close_window|[Leave]
-dlga_member_chat_00:member_lady_1|{playername}, when do you think we can reach our destination?
-dlga_member_lady_1:close_window|We still have a long way ahead of us.
-dlga_member_lady_1:close_window.1|Very soon. We're almost there.
-dlga_member_chat_00:member_scout_1|We are ready to go on our scouting mission. Should we go now?
-dlga_member_scout_1:close_window|Yes, you've got your orders. Goodbye.
-dlga_member_scout_1:close_window.1|Wait a minute, not just yet.
-dlga_do_member_trade:member_talk|Anything else?
-dlga_member_chat_00:member_talk|Yes, {s5}?
-dlga_member_talk:member_trade|Let me see your equipment.
-dlga_member_trade:do_member_trade|I'm sorry, my equipment is my own.
-dlga_member_trade:do_member_trade.1|Very well, it's all here...
-dlga_member_talk:view_member_char_requested|What can you tell me about your skills?
-dlga_view_member_char_requested:do_member_view_char|All right, let me tell you...
-dlga_member_talk:member_separate|We need to separate for a while.
-dlga_member_talk:ziggy_ask_more|Zigûrphel, I require another Wolf of you. Can you do this?
-dlga_ziggy_ask_more:close_window|You have no life to offer, Commander.
-dlga_ziggy_ask_more:ziggy_not_rested|Give me some more time, Commander. The ritual drained me.
-dlga_ziggy_ask_more:close_window.1|I can only control so much. I'll need to become more powerful...
-dlga_ziggy_ask_more:ziggy_choose_prisoners|Of course, Commander. Which one do you have to offer?
-dlga_ziggy_not_rested:close_window|Rest quick then, I need more of these.
-dlga_member_separate:member_separate_confirm|Oh really? Well, I'm not just going to wait around here. I'm going to go back to {s4}. Is that what you want?
-dlga_member_separate_confirm:member_separate_yes|That's right. We need to part ways.
-dlga_member_separate_confirm:do_member_trade|No, I'd rather have you at my side.
-dlga_member_separate_yes:close_window|Well. I'll be off, then. Look me up if you need me.
-dlga_member_talk:member_question|I'd like to ask you something.
-dlga_member_talk:close_window|Never mind.
-dlga_member_question:member_question_2|Very well. What did you want to ask?
-dlga_member_question_2:member_morale|How do you feel about the way things are going in this company?
-dlga_member_question_2:member_health|How is your health?
-dlga_member_question_2:member_background_recap|Tell me your story again.
-dlga_member_background_recap_3:do_member_trade|Then shortly after, I joined up with you.
-dlga_do_member_view_char:member_talk|Anything else?
-dlga_start:close_window.6|Let's leave whenever you are ready.
-dlga_start:close_window.7|Please do not waste any more of my time today. Perhaps we shall meet again.
-dlga_companion_recruit_signup_response:close_window|Unfortunately, I can't take on any more hands in my party right now.
-dlga_companion_recruit_rank:close_window|It seems that you are not esteemed enough by my people, {playername}. You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed].^Let's speak again when you are more accomplished.
-dlga_companion_recruit_rank:companion_recruit_payment.1|I'm glad to see you have become {s29}, and I'm looking forward to joining you.
-dlga_companion_recruit_payment_response:close_window|Well, there's little I can do then.
-dlga_start:companion_recruit_meet_again|We meet again.
-dlga_companion_recruit_meet_again:companion_recruit_backstory_delayed|So... What have you been doing since our last encounter?
-dlga_start:companion_recruit_secondchance|Yes?
-dlga_companion_recruit_secondchance:close_window|Never mind.
-dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|I might be able to use you in my company.
-dlga_companion_recruit_backstory_delayed_response:close_window|Never mind, another time perhaps.
-dlga_companion_recruit_signup_confirm:close_window|Good! Give me a few moments to prepare and I'll be ready to move.
-dlga_start:companion_rehire|My offer to rejoin you still stands, if you'll have me.
-dlga_start:companion_rehire.1|It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, or slain, or got away. I've been waiting here since then, looking for news of your fate. Shall I get my gear together and rejoin your company?
-dlga_start:companion_was_dismissed|It is good to see you, {s21}! To tell you the truth, I had hoped to run into you.
-dlga_companion_was_dismissed:companion_rehire|{s5}. Would you want me to rejoin your company?
-dlga_companion_rehire:companion_recruit_signup_confirm|Welcome back, my friend!
-dlga_companion_rehire:companion_rehire_refused|Sorry, I can't take on anyone else right now.
-dlga_companion_rehire_refused:close_window|Well... Look me up if you change your mind, eh?
-dlga_event_triggered:ziggy_ask_prisoners|Commander, a word. You have crushed our foes, and taken some prisoners - well and good. I have a mighty gift to offer you, if you would but grant me a small thing in exchange: give into my hands one of those we captured.
-dlga_event_triggered:ziggy_ask_prisoners.1|Commander, congratulations on your triumph. If you remember what I told you the last time, I have a use for one of these captives. It will be to your benefit, Commander, I assure you.
-dlga_ziggy_ask_prisoners:ziggy_ask_why|Enough of your mysteries, Zigûrphel! Speak plainly! What do you want a prisoner for?
-dlga_ziggy_ask_why:ziggy_reason|Patience, patience, Commander! Only indulge me in this trifling matter, and I will show you a marvel.
-dlga_ziggy_reason:ziggy_yes|You intrigue me. Very well. I will leave one of the captives to your... tender care.
-dlga_ziggy_reason:ziggy_no|Not at this time, Zigûrphel. Go back to your post.
-dlga_ziggy_no:close_window|Very well, Commander, but you would be a fool to forego my gift.
-dlga_ziggy_no:close_window.1|Very well, Commander.
-dlga_ziggy_yes:ziggy_choose_prisoners|Excellent. Which of these specimens would you give?
-dlga_ziggy_choose_prisoners:ziggy_no|I have none I want to offer.
-dlga_ziggy_chosen_prisoner:ziggy_ritual|Thank you, Commander! A moment... ah yes, this one should do nicely... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-dlga_ziggy_chosen_prisoner:ziggy_ritual.1| What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
-dlga_ziggy_ritual:ziggy_ritual_succeed.1|Always such a joy to bring a foe properly to heel.
-dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! This one was too weak! Worthless! Give me a stronger one, Commander, one who will not fail!
-dlga_ziggy_ritual_succeed:close_window|And of course, allow me but a little rest; then you may pass another captive into my care. I will do the rest.
-dlga_companion_objection_response:close_window|Thank you, I appreciate your support.
-dlga_companion_objection_response:close_window.1|Hopefully it won't happen again.
-dlga_companion_objection_response:close_window.2|Your objection is noted, but I have more important things on my mind.
-dlga_companion_personalityclash2_response:close_window|I deem {s11} a valuable member of this company. You should appreciate {reg11?her:him} more.
-dlga_companion_personalityclash2_response:close_window.1|You are right. I'm not happy with {s11}'s behavior myself and will let {reg11?her:him} know that.
-dlga_companion_personalityclash2_response:close_window.2|I don't have time for petty squabbles.
-dlga_companion_personalityclash_response:close_window|I deem {s11} a valuable member of this company. You should appreciate {reg11?her:him} more.
-dlga_companion_personalityclash_response:close_window.1|You are right. I'm not happy with {s11}'s behavior myself and will let {reg11?her:him} know that.
-dlga_companion_personalityclash_response:close_window.2|I don't have time for petty squabbles.
-dlga_companion_personalitymatch_response:close_window|Very good.
-dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?our:my} {s6} homeland is suffering grievously in the War, I ask you to consider helping {reg6?our:my} people as soon as we are rested and ready.
-dlga_companion_faction_demolished:close_window|Then we shall ride to aid {s6} immediately.
-dlga_companion_faction_demolished:close_window.1|I'm sorry, but we are needed elsewhere.
-dlga_companion_home_description:companion_home_description_2|Tell me more.
-dlga_companion_home_description:close_window|We don't have time to chat just now.
-dlga_companion_home_description:close_window.1|I prefer my companions not to bother me with such trivialities.
-dlga_start:player_hire_troop|{s33}^^I am in charge of the forces garrisoned here at {s21}. Did you want to see me?
-dlga_player_hire_troop:player_hire_troop_give|Some of the soldiers in my group would be more useful here, to defend {s21}.
-dlga_player_hire_troop:close_window|I want to review my soldiers stationed here.
-dlga_player_hire_troop:player_hire_trolls_take|I am a commander worthy of a fighting Troll - give me one!
-dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
-dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
-dlga_player_hire_trolls_take:player_hire_trolls_how_many|It will cost {reg21} influence.
-dlga_player_hire_trolls_take:close_window.2|I’ve changed my mind.
-dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|A fearsome beast. And now, it is mine!
-dlga_player_hire_trolls_how_many:player_hire_troll_armoured|They will fight better with sheets of iron protecting them. Make it so!
+dlga_start:hobbit_merry_talk_met|또 만나서 반가워요, {playername}!
+dlga_start:hobbit_pippin_talk_met|또 만나서 반가워요, {playername}!
+dlga_start:hobbit_general_talk_1|반갑습니다, {나리/마님}! 나의 이름은 메리아독 브랜디벅이지만, 편히 메리라 불러주십시오!
+dlga_start:hobbit_general_talk_1.1|반갑습니다, {나리/마님}! 나의 이름은 페레그린 툭이지만, 편히 피핀이라 불러주십시오!
+dlga_hobbit_general_talk_1:close_window|이럴 시간 없어.
+dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|솔직히, 당신네 종족은 처음 보는군.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|솔직히, 당신네 종족을 에도라스에서 본 적이 있는 것 같은데.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|솔직히, 당신네 종족을 미나스 티리스에서 본 적이 있는 것 같은데.
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|알아요, 난 멀리서 왔습니다! {선생/선생}  샤이어에서 말이죠.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|오, 내 친애하는 사촌 말이군요! 페레그린 툭, 피핀이라고도 부르죠. 우린 호빗입니다, {나리/마님}, 그리고 우리 둘 다 샤이어 출신이죠! 미나스 티리스에서 잘 지내고 있는지가 궁금하군요.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|오, 내 친애하는 사촌 말이군요! 메리아독 브랜디벅, 메리라고도 부르죠. 우린 호빗입니다, {선생/선생}, 그리고 우리 둘 다 샤이어 출신이죠! 오랜 친구 메리, 에도라스에서 어떻게 지내는지 궁금하네요.
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|부탁이 하나 있습니다, {나리/마님}.
+dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|물론이지, {s1}. 뭐지?
+dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|전언을 전해주시겠습니까, 제 사촌인 {s1} 에게? 그는 {s3}의 {s2} 에 있을 겁니다. {s4}를 섬기고 있겠군요..
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|{s1}을 지나갈 일이 생기면 이 전언을 기꺼이 그대의 사촌에게 전해주도록 하지.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|미안하군, {s1}, 내겐 그럴 시간이 없다네.
+dlga_hobbit_general_talk_ask_accept:close_window|고마워요! {s1}
+dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|이해합니다. 그럼 {s1}을 향하는 다음 상단에게 맡겨야겠군요.
+dlga_hobbit_general_talk_3:close_window|좋아, 이제 떠날 시간이군.
+dlga_start:hobbit_merry_talk_met.1|이렇게 돌아와서 반갑군, {playername}!
+dlga_start:hobbit_pippin_talk_met.1|이렇게 돌아와서 반갑군, {playername}!
+dlga_hobbit_merry_talk_met:hobbit_deliver_message|안녕하시오, 메리 공. 미나스 티리스에 있는 당신 사촌 피핀으로부터의 전언이오.
+dlga_hobbit_pippin_talk_met:hobbit_deliver_message|안녕하시오, 피핀 공. 에도라스에 있는 당신 사촌 메리로부터의 전언이오.
+dlga_hobbit_deliver_message:close_window|감사합니다, {playername}. 이렇게 가져다주시니 좋군요.
+dlga_hobbit_merry_talk_met:close_window|안녕하시오, 메리 공.
+dlga_hobbit_pippin_talk_met:close_window|안녕하시오, 피핀 공.
+dlga_start:treebeard_introduce_1|(당신은 정말 특별한 생명체를 보고 있습니다. 그는 키가 매우 크고, 나무껍질 피부와 잎이 무성한 머리카락을 갖고 있습니다. 몸은 이끼로 덮여있고, 그 깊은 두 눈이 당신을 바라보고 있습니다. 느리고, 엄숙하지만 아주 날카롭게 관통하는 듯한 눈입니다. 당신은 그들의 녹빛 어린 갈색 눈동자가 마치 오랜 세월의 기억과 길고, 느리고, 꾸준한 생각으로 가득찬 우물을 비추고 있는 것만 같습니다. 하지만 그의 눈 표면은 선물에 반짝이는 것 같습니다... 마치 나뭇잎에 빛나는 태양이나 아주 깊은 호수의 잔물결처럼 말이죠.)
+dlga_treebeard_introduce_1:treebeard_introduce_2|(당신은 뭔가 말하려 했지만 이상하고 숨쉬기 힘든 느낌이 듭니다. 마치 숨쉬기에 공기가 희박한 것처럼... 거의 필사적으로 호흡하면서 당신은 그 느낌을 떨쳐냈고, 거대한 나무 같은 생물은 시선을 살짝 떨굽니다. 그 생물은 당신을 응시하며, 다른 거대한 나무 생물들도 당신을 응시하고 있다는 걸 알아챘습니다. 마치 당신이 말을 하기를 기대하고 있는 것 같습니다.)
+dlga_treebeard_introduce_2:treebeard_introduce_3|방해해서 미안합니다.. 난 최근 일들에 시달려 피난처를 찾는 여행자에 불과합니다... 나의 이름은 {playername}입니다. 누구신지 여쭈어도 될까요?
+dlga_treebeard_introduce_3:treebeard_introduce_4|(뻣뻣한 다리의 나무 거인은 작은 가지, 잎 뒤에 가려진 입을 벌립니다. 아주 굵고, 느리고, 진동하는 목소리로 그는 아주 천천히, 위엄있게 말합니다.) "흐룸... 흠... '나'는 내 이름을 말하지 않을 거야.. 지금은. 말하는 데에 아주 오래 걸리든. 내 이름은 항상 자라고 또 오래 살았기 때문에 하나의 이야기와 같아. 진짜 이름을 말하려면 거기 속한 이야기를 내 언어, 고대 엔트어로 말해야만 해. 그건 사랑스러운 언어지만, 우리는 그 언어로 말하고 들을 가치가 있는 것이 아니라면 그 언어로 아무 말도 하지 않기 때문에, 그 언어로 말하는 건 아주 오래 걸려."
+dlga_treebeard_introduce_4:treebeard_introduce_5|오, 당신은 엔트였군요! 전설에서 당신들에 대해 말하는 걸 들어본 적이 있습니다. 당신을 만나 영광입니다. 폐를 끼치고 싶진 않으니 원하신다면 떠나겠습니다.
+dlga_treebeard_introduce_5:treebeard_questtalk|뻣뻣한 나무거인(엔트)와 동료 엔트는 침묵 속에서 수분 동안 우두커니 산들바람이 그들의 수풀로 우거진 머리칼과 수염을 더듬고 지나가도록 서있었다. 그들은 한 마가목처럼 보이는 한 이상할만치 성미급한 엔트가 말을 하고싶어 안절부절 못할때까지 서로를 한참동안 쳐다보았다. 그러나 그 엔트도 예의 커다란 엔트가 말을 이을때까지 침묵을 유지했다.
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?말했듯, 우린 자네가 보여준 예의바른 태도에 감사를 표하고 싶네... {reg1?당신의 종에서 당신같은 존재는 드물지, 엘프와 다시 이야기 할 수 있어서 즐겁군.}.}  엔트부인들이 사라진 후 세계는 암울했다네... 그리고 우리의 고향을 파괴하려는 암흑의 군주가 만들어낸 사악한 생명체들이 판을 치고있지... 저희는 빠르지만, 성급하지 않은 그런 이를 찾고있어... 우리가 다음 계획을 준비하는 동안 우리를 도와줄 수 있는 그런...^많은 오르크 군대가 숲을 급습하고 불화살로 우리 나무를 태웠다네... 만약 자네가 오르크들을 물리치고 오르크들이 다시는 우리의 숲을 위협하지 않게 만들 수 있다면, 우린 자네를 진정한 친구로서 맞아줄 수 있을거라네... 이 일을 먼저 처리 한 뒤에 다시 얘기해보세나...
+dlga_treebeard_quest_brief:close_window|오르크는 실로 사악하기 그지 없죠. 그들이 다시는 숲에 해를 끼칠수 없도록 하겠습니다.
+dlga_treebeard_quest_brief:treebeard_pretalk|죄송합니다. 지금은 이것을 할 시간이 없습니다.
+dlga_treebeard_questtalk:close_window|(엔트 장로는 굳게 닫힌 그의 입을 천천히 열었고, 다른 엔트들도 당신을 보며 땅을 울리는 깊고 긴 소리를 웅얼거렸다. 곧 당신은 이것이 엔트식 웃음이라는걸 알아차렸다.  비교적 어린, 마가목처럼 보이는 앤트가 그의 발가락이 7개 달린 거대한 발로 땅을 구르자 당신은 금방이라도 넘어질 지경이었다..)   진정하게, 날쌘돌이, 우리는 우리의 젊은 전사가 다치는걸 원하지않는다네. 흐으으음.... 나는 나무수염, 엔트중 가장 오래된 자이며, 우리 모두가 네 노고에 감사하고있다네...흐으음.... 그 성공을 축하하기 위해 이 엔트워터를 줄테니- 받아주게나.
+dlga_treebeard_questtalk:close_window.1|(뻣뻣한 거인과 그의 엔트 동지들은 산들바람이 그들의 나뭇잎 머리카락과 수염을 흔드는 동안 침묵하며 서있다.)
+dlga_treebeard_pretalk:treebeard_talk_response|흐루르르르름 .... 무엇을 알고싶지, 젊은친구?
+dlga_treebeard_talk_response:treebeard_about_himself|당신에 대해 더 알려주세요.
+dlga_treebeard_talk_response:treebeard_about_entwives|엔트 부인에 대해서 말해주세요
+dlga_treebeard_talk_response:treebeard_about_ents|엔트에 대해 더 알려주세요.
+dlga_treebeard_talk_response:close_window|아무것도 아닙니다. 잘 있어요.
+dlga_treebeard_about_himself:treebeard_pretalk|(엔트 장로는 굳건하고 억세보였다. 잠시뒤 그는 느릿하게 말을 이어갔다.) 성급해하지 말게.. 우리는 이 문제에 대해 오르크들을 나무로부터 떼어놓고나서도 얘기할수있을테니.
+dlga_treebeard_about_himself:treebeard_pretalk.1|흠... 난 내 종 중에서 가장 나이가 많다네... 몇몇의 필멸자들은 나를 나무수염이라 하고 엘프들은 날 팡고른이라 부르지... 흠...나와 나무껍질거죽, 그리고 잎새머리는 암흑시대 이전부터 숲을 걸어온 유일한 엔트이지... 젊은 날쎈돌이야 바람결을 맞는 조그마한 나무처럼 구부러지고, 흔들릴 수 있지만... 지금의 나는 내가 어렸을적 만큼 유연하지 않다네... 흠... 만약 엔트부인들이 여기 있었더라면....
+dlga_treebeard_about_entwives:treebeard_pretalk|(엔트 지도자의 목소리가 매우 깊어지고 갑자기 슬픈 표정을 짓는다. )^'흠... 안타까운 얘기지만... 나무들이 오르크에게서 자유로워 졌을 때 이야기해 보지...
+dlga_treebeard_about_entwives:treebeard_pretalk.1|허험...흠... 아름다운 엔트부인들... 그들은 심고 키우기를 좋아했지... 우리는 그녀들의 목소리에 귀를 기울여야만 했어... 음... 지금은 갈색땅이라 불리우는 그곳에 정원을 가꾸기 위해 떠난 그녀들은 필멸자들에게 땅을 비옥하게 만드는 법을 가르쳐 주기도 했지... 우린 여러번 그들을 방문하기도 했다네, 사우론.....이 공격하기 전까진... 이제 엔트부인들은 모두 시들고 말았다네... 흐으음... 핌브레실... 어엿하게 자라난 그녀의 씨앗들... 여태껏 정성스레 찾아왔지만... 찾을 수 없었다네... 아직까지도...
+dlga_treebeard_about_ents:treebeard_pretalk|흐으음... 우리들은 위협으로부터 나무들을 보호하는 목자라네.... 우리는 다른 어떤 필멸의 종족보다도 오래됐지만 우리를 무지로부터 구해준 엘프들 보다는 오래되지 않았다네.... 시대들이 지나가며 많은것들이 변해갔지.... 처음엔 우린 좀 더 유연하고 잽쌌다네..... 허나 세월이 우리로부터 그것을 앗아갔어..... 어떤 엔트는 우리처럼 살아 움직이는.... 다시말해 활기찬 엔트지만 많은 엔트들이 깊은 잠에 빠져 '나무'처럼 되어가고 있다네...... 대다수의 나무들은 물론 그저 나무일 뿐이지만 그중 몇몇 엔트들은 반쯤은 깨어있고.... 또 몇은 완전히 깨어있고.... 그중 몇은 다시 움직이기 시작한다네... 항상 있는 일이야... 숲에 무슨 일이 벌어질 때... 그중 몇은 악의를 품은 이도 있겠지.... 그렇다면, 우리는 우리가 할 수 있는 일을 할 뿐이라네... 수상하거나 무례한 이들을 쫓아내는 것...
+dlga_start:close_window.1|으으으음?
+dlga_start:close_window.2|음흐으음?
+dlga_start:close_window.3|음음흐흐음?
+dlga_start:looters_2_join|{s4}의 힘앞에 무릎 꿇고 날 섬겨라!
+dlga_looters_2_join:close_window|따르겠습니다, 주군.
+dlga_start:close_window.4|^^크르릉!^^
+dlga_start:close_window.5|^^크르릉!^^
+dlga_start:member_castellan_talk|네, {playername}님? 무엇을 도와드릴까요?
+dlga_member_castellan_pretalk:member_castellan_talk|다른것은?
+dlga_member_castellan_talk:member_review_castle_garrison|성에 주둔한 병력을 재검토하고 싶군.
+dlga_member_review_castle_garrison:member_castellan_pretalk|당연하죠. 여기 리스트가 있으니, 바뀌기를 원하는 사항이 있다면 알려주십시오...
+dlga_member_castellan_talk:member_review_castellan_equipment|자네의 장비를 좀 봅세.
+dlga_member_review_castellan_equipment:member_castellan_pretalk|좋습니다, 여기 전부입니다...
+dlga_member_castellan_talk:member_castellan_join|그 성을 버리고 내 일행에 가담하게나.
+dlga_member_castellan_join:close_window|이 장소가 꽤나 맘에 들었습니다만... 그게 {playername}님, 당신의 바램이라면 함께 가지요.
+dlga_member_castellan_join:member_castellan_pretalk|숙박은 어디서 해결하실겁니까? {playername}님 지금 완전 군대를 이끌고 계신데, 더 이상은 공간이 없다고요.
+dlga_member_castellan_talk:close_window|[떠나기]
+dlga_member_chat_00:member_lady_1|{playername}님, 언제쯤 목적지에 도착할 수 있을까요?
+dlga_member_lady_1:close_window|우린 아직 갈 길이 멀어.
+dlga_member_lady_1:close_window.1|곧 도착할 걸세. 거의 다 왔다네.
+dlga_member_chat_00:member_scout_1|정찰 임무 준비가 다 되었습니다. 지금 떠날까요?
+dlga_member_scout_1:close_window|그래, 명령은 잘 받았겠지. 잘 다녀오게.
+dlga_member_scout_1:close_window.1|잠깐만 기다리게, 아직은 아닐세.
+dlga_do_member_trade:member_talk|다른것은?
+dlga_member_chat_00:member_talk|예, {s5}?
+dlga_member_talk:member_trade|자네의 장비를 좀 봅세.
+dlga_member_trade:do_member_trade|미안합니다, 제 장비는 제것입니다.
+dlga_member_trade:do_member_trade.1|좋습니다, 여기 전부입니다...
+dlga_member_talk:view_member_char_requested|당신의 스킬에 대해 말해줄 수 있나?
+dlga_view_member_char_requested:do_member_view_char|좋습니다. 말해드리죠...
+dlga_member_talk:member_separate|우린 한동안 떨어져 있어야 합니다.
+dlga_member_talk:ziggy_ask_more|Zigûrphel, 또다른 늑대가 필요한데, 줄 수 있겠나?
+dlga_ziggy_ask_more:close_window|당신은 거래할 목숨이 없소, 지휘관이여.
+dlga_ziggy_ask_more:ziggy_not_rested|잠시만 더요, 사령관님. 의식 때문에 힘이 다 빠졌다고요.
+dlga_ziggy_ask_more:close_window.1|나는 그 정도 밖에 통제할 수 없다. 더 강해질 필요가 있겠어..
+dlga_ziggy_ask_more:ziggy_choose_prisoners|물론이죠, 사령관님. 무엇을 바치겠습니까?
+dlga_ziggy_not_rested:close_window|그럼 얼른 쉬어라. 이런 게 더 필요해.
+dlga_member_separate:member_separate_confirm|정말로요? 흠, 여기서 기다리고만 있을 생각은 없습니다만. 전 {s4} 로 돌아가겠습니다. 정말로 그래도 됩니까?
+dlga_member_separate_confirm:member_separate_yes|그렇네. 이만 헤어지지.
+dlga_member_separate_confirm:do_member_trade|아니, 아직 자네가 내 옆에 있어줘야 겠네.
+dlga_member_separate_yes:close_window|뭐 그럼 지금 떠나지요. 필요하다면 찾으십시오.
+dlga_member_talk:member_question|부탁하고 싶은게 있소.
+dlga_member_talk:close_window|신경쓰지 마시오.
+dlga_member_question:member_question_2|좋습니다. 부탁하실게 무엇인가요?
+dlga_member_question_2:member_morale|지금 이 일행의 상황에 대해 어떻게 생각하나?
+dlga_member_question_2:member_health|건강은 어떤가?
+dlga_member_question_2:member_background_recap|자네의 이야기를 다시 들려주게.
+dlga_member_background_recap_3:do_member_trade|그리고 얼마 안돼서, 당신과 함께하게 되었죠.
+dlga_do_member_view_char:member_talk|다른것은?
+dlga_start:close_window.6|준비 되는대로 떠납시다.
+dlga_start:close_window.7|오늘은 더 이상 제 시간을 낭비하지 말아주시기 바랍니다. 어쩌면 다시 만날 날이 있겠지요.
+dlga_companion_recruit_signup_response:close_window|애석하게도 더 이상 일행을 받을 수 없네.
+dlga_companion_recruit_rank:close_window|{playername}, 자네는 내 백성들로부터 충분한 존경을 받지 못하는군. 자네는 {s29}이고 나와 함께하려면 {s24}는 되어야 한다네. [{reg3}의 랭크 포인트 부족]. 좀 더 성장한 뒤 얘기해 보도록 하지.
+dlga_companion_recruit_rank:companion_recruit_payment.1|당신을 만나게 되서 정말 영광이오 {s29}, 그대에게 합류하기위해 수소문하고있던 중이었소.
+dlga_companion_recruit_payment_response:close_window|그렇다면 제가 할 수 있는 건 별로 없겠군요.
+dlga_start:companion_recruit_meet_again|또 만나는 군요.
+dlga_companion_recruit_meet_again:companion_recruit_backstory_delayed|그래서... 당신은 우리의 마지막 해후 이후로 무엇을 하며 지낸건가?
+dlga_start:companion_recruit_secondchance|예?
+dlga_companion_recruit_secondchance:close_window|신경쓰지 말게나.
+dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|자네라면 내 일행에 도움이 될 지도 모르겠군.
+dlga_companion_recruit_backstory_delayed_response:close_window|신경쓰지 말게, 나중에 한 번 생각해보지.
+dlga_companion_recruit_signup_confirm:close_window|좋습니다! 준비할 시간을 조금만 주십시오, 금방 끝날 겁니다.
+dlga_start:companion_rehire|받아들여주신다면야, 다시 당신과 함께 하고 싶습니다만.
+dlga_start:companion_rehire.1|살아있는 모습을 봐서 기쁘구먼, {s5}! {s6}, 난 그대가 포로로 잡히거나, 살해당하거나, 도망이라도 간줄 알았지 뭔가. 여기에서 그대의 운명에 대한 소식을 들으면 기다리던 중에 잘되었네. 바라건대 내가 그대의 동료로 다시 합류하기 위해 내 장비를 챙겨도되겠지?
+dlga_start:companion_was_dismissed|만나게 되서 반갑습니다, {s21}! 솔직히 말해 당신과 만나길 고대하고 있었습니다.
+dlga_companion_was_dismissed:companion_rehire|{s5}님. 당신 일행에 다시 가담할까요?
+dlga_companion_rehire:companion_recruit_signup_confirm|환영하네, 친구!
+dlga_companion_rehire:companion_rehire_refused|미안하네, 지금은 일행을 더 받을 수 없네.
+dlga_companion_rehire_refused:close_window|뭐... 맘 바뀌면 찾아오라구, 응?
+dlga_event_triggered:ziggy_ask_prisoners|사령관님, 잠시만요. 사령관님께선 적들을 완전히 쳐부수고 포로까지 잡으셨지요. 만약 조그만 것만 허락해주신다면 엄청난 선물을 드리겠습니다. 포로 한 명만 제가 처리하게 해주신다면 말이지요.
+dlga_event_triggered:ziggy_ask_prisoners.1|사령관님, 승리를 축하드립니다. 저번에 말씀하셨듯 포로 중 한명이 저한테 좀 필요합니다. 장담하는데 사령관님께도 좋은 일입니다.
+dlga_ziggy_ask_prisoners:ziggy_ask_why|수수께끼는 이제 됐다, Zigûrphel! 똑바로 말해라! 이 죄수들을 어디에 쓸 생각이지?
+dlga_ziggy_ask_why:ziggy_reason|워, 워, 참으세요 사령관님! 이 귀찮은 일에만 집중하시면 제가 굉장한 것을 보여드리지요.
+dlga_ziggy_reason:ziggy_yes|흥미롭군요. 좋습니다. 죄수는 다음 기회로 미루죠. 그때까지 잘.. 보살펴 주시길.
+dlga_ziggy_reason:ziggy_no|이번에 그럴 일은 없을 거다. Zigûrphel. 네 자리로 돌아가라.
+dlga_ziggy_no:close_window|아주 좋습니다, 사령관님. 그렇지만 제 선물을 잊으면 안되죠.
+dlga_ziggy_no:close_window.1|아주 좋습니다, 사령관님.
+dlga_ziggy_yes:ziggy_choose_prisoners|완벽합니다. 이 견본들 중에 무엇을 주실 건가요?
+dlga_ziggy_choose_prisoners:ziggy_no|주고 싶은 게 없어.
+dlga_ziggy_chosen_prisoner:ziggy_ritual|감사드립니다. 사령관님! 잠시 기다려주시길.. 아, 됐습니다. 이 녀석이 좋겠군요...  Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|어떤가? 오만한 마음이 드는가? 반항심이 드는가? 아니면 두렵지 않은가? 그렇다면 내가 이제 두려워 할 이유를 좀 만들어 주지! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_ritual:ziggy_ritual_succeed|아, 그래.. 그거야! 보십시오, 사령관님! 나 Zigûrphel이 이뤄낸 것을 보십시오! 앙그반드의 늑대에 대해 아십니까? 드라우글루인이나, 발리노르의 사냥개 후안을 물어죽인 위대한 카르카로스에 대해 아십니까? 어둠의 군주께서도 포로의 영혼을 그 뜻에 맞게 뒤틀고 사로잡을 수 있듯이, 나 역시 미약한 영혼을 다루어 우리가 쓸 그림자 짐승으로 만들 수 있습니다! 드라우글루인의 새끼만큼 위대하진 않지만, 어느정도 쓸만할 겁니다.
+dlga_ziggy_ritual:ziggy_ritual_succeed.1|적을 궁지에 몰아넣는 순간은 언제나 즐겁지.
+dlga_ziggy_ritual:ziggy_choose_prisoners|젠장! 이 놈은 너무 약합니다! 쓸모없기는! 더 강한 놈을 주십시오, 사령관님. 실패하지 않을 놈으로요!
+dlga_ziggy_ritual_succeed:close_window|당연하지만 충분한 시간을 들인 후에 또다른 죄수를 저에게 넘겨주십시오. 나머지는 제가 알아서 하겠습니다.
+dlga_companion_objection_response:close_window|자네의 도움은 고맙게 생각하네.
+dlga_companion_objection_response:close_window.1|다시는 이런 일 없기를 바라지.
+dlga_companion_objection_response:close_window.2|자네의 반대는 알겠네. 허나 지금은 다른 중요한 일들을 신경써야 해서 말이야.
+dlga_companion_personalityclash2_response:close_window|{s11}은 이 일행에 정말 중요한 인재입니다. {reg11?그녀:그}가 우리와 함께함을 감사해야겠지요. 
+dlga_companion_personalityclash2_response:close_window.1|자네 말이 맞네. {s11}의 행동은 내 맘에도 들지 않으니 {reg11?그녀:그}에게 말해두겠네.
+dlga_companion_personalityclash2_response:close_window.2|지금은 투닥거릴 시간 없네.
+dlga_companion_personalityclash_response:close_window|{s11}은 이 일행에 정말 중요한 인재입니다. {reg11?그녀:그}가 우리와 함께함을 감사해야겠지요. 
+dlga_companion_personalityclash_response:close_window.1|자네 말이 맞네. {s11}의 행동은 내 맘에도 들지 않으니 {reg11?그녀:그}에게 말해두겠네.
+dlga_companion_personalityclash_response:close_window.2|지금은 투닥거릴 시간 없네.
+dlga_companion_personalitymatch_response:close_window|아주 좋군.
+dlga_event_triggered:companion_faction_demolished|{s5}, {reg6our:my} {s6} 정든 고향이 전쟁의 여파로 끝없이 고통받고있다네, 내 그대에게 도움을 좀 요청하고싶은데 {reg6?our:my} 사람들이 준비되는대로 말일세.
+dlga_companion_faction_demolished:close_window|그럼 우린 {s6}을/를 도우러 가기 위해 당장 향해야겠소.
+dlga_companion_faction_demolished:close_window.1|미안하지만, 우리는 다른 곳에 용무가 있다네.
+dlga_companion_home_description:companion_home_description_2|좀 더 자세히 얘기해보게.
+dlga_companion_home_description:close_window| 애석하게도 지금 우리에게 잡담할 시간은 없어보이는군.
+dlga_companion_home_description:close_window.1|난 내 동료가 그런 사소한 것들로 날 귀찮게 하지 않았으면 좋겠어.
+dlga_start:player_hire_troop|{s33}^^제가 {s21} 주둔군의 책임자입니다. 절 보자셨다고요?
+dlga_player_hire_troop:player_hire_troop_give|내 부대의 대원들이 {s21}를 지키는데에 더 유용할걸세.
+dlga_player_hire_troop:close_window|여기 주둔한 내 병사들을 재검토하고 싶군.
+dlga_player_hire_troop:player_hire_trolls_take|나는 전투 트롤을 지휘하기에 충분한 지휘관이다- 이제 내놔!
+dlga_player_hire_trolls_take:close_window|당신만의 검은 군단을 육성하고싶은 모양이죠? 성체 트롤을 편성할 만큼의 랭크를 올리고 다시 오십시오.
+dlga_player_hire_trolls_take:close_window.1|네가? 구더기 같은 놈. 내 앞에서 당장 사라져라. 트롤. (당신은 {s24} 이상이 되어야합니다.)
+dlga_player_hire_trolls_take:player_hire_trolls_how_many|{reg21} 만큼의 영향력을 소모할 것입니다.
+dlga_player_hire_trolls_take:close_window.2|마음을 바꿨소.
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|이 무시무시한 괴물들. 이제 내것이다!
+dlga_player_hire_trolls_how_many:player_hire_troll_armoured|철판으로 보호받는 동안 그들은 더 잘 싸울 것입니다. 염두해두세요!
 dlga_player_hire_troll_armoured:player_hire_trolls_how_many|{s55}
-dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|I’ve changed my mind.
-dlga_player_hire_troll_buy_not_enough:close_window|Wasting my time...
-dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha!
-dlga_player_hire_troop:close_window.1|I need some training.
-dlga_player_hire_troop:tld_sell_prisoners|I have brought you some prisoners.
-dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Let's see the wretched scum.
-dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Let me check our dungeon records...
-dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Changed your mind, eh?
-dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|I'll make sure they won't escape from our dungeons.
-dlga_player_hire_troop:close_window.2|Farewell.
-dlga_player_hire_troop_pre_pre_nextcycle:player_hire_troop_pre_nextcycle|Let me check the troop roster...
-dlga_player_hire_troop_pre_nextcycle:player_hire_troop_nextcycle|So you've changed your mind...^I see.
-dlga_player_hire_troop_reunite:player_hire_troop_reunite_1|Let me check the troop roster...
-dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle|So you've changed your mind...^I see.
-dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle.1|We don't have use for those troops here...^Take them back.
-dlga_player_hire_troop_nextcycle:player_hire_troop|Anything else?
-dlga_start:player_siege_castle_commander_1|What do you want?
-dlga_player_siege_castle_commander_1:player_siege_ask_surrender|Surrender! Your situation is hopeless!
-dlga_player_siege_castle_commander_1:close_window|Nothing. I'll leave you now.
-dlga_player_siege_ask_surrender:player_siege_ask_surrender_treatment|Perhaps... Do you give your word of honour that we'll be treated well?
-dlga_player_siege_ask_surrender:player_siege_ask_leave_unmolested|We are ready to leave this castle to you and march away if you give me your word of honour that you'll let us leave unmolested.
-dlga_player_siege_ask_surrender:close_window|Surrender? Hah! We can hold these walls until we all die of old age.
-dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_reject|I give you nothing. Surrender now or prepare to die!
-dlga_player_siege_ask_surrender_treatment_reject:close_window|Bastard. We will fight you to the last man!
-dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_accept|You will be ransomed and your soldiers will live. I give you my word.
-dlga_player_siege_ask_surrender_treatment_accept:close_window|Very well then. Under those terms, I offer you my surrender.
-dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_accept|You have my word. You will not come under attack if you leave the castle.
-dlga_player_siege_ask_leave_unmolested_accept:close_window|Very well. Then we leave this castle to you. You have won this day. But we'll meet again.
-dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_reject|Unacceptable. I want prisoners.
-dlga_player_siege_ask_leave_unmolested_reject:close_window|Then we will defend this castle to the death, and this parley is done. Farewell.
-dlga_defeat_lord_answer:defeat_lord_answer_1|You are my prisoner now.
-dlga_defeat_lord_answer_1:close_window|I am at your mercy.
-dlga_defeat_lord_answer:defeat_lord_answer_2|You have fought well. You are free to go.
+dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|마음을 바꿨소.
+dlga_player_hire_troll_buy_not_enough:close_window|시간 낭비로군...
+dlga_player_hire_troll_buy_done:close_window|이 덩치를 잘 대해 주세요. 그러는 동안에는 이 녀석도 당신을 잘 대해줄테니!
+dlga_player_hire_troop:close_window.1|전 훈련이 필요합니다.
+dlga_player_hire_troop:tld_sell_prisoners|죄수들을 좀 데려왔다네.
+dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} 어디 그 망할 자식 좀 보자고.
+dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|우리 지하감옥 관련 기록을 좀 확인해보도록 하지...
+dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|마음이 좀 바뀌었나, 응?
+dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|감옥에서 아무도 도망치지 못하게 하겠습니다.
+dlga_player_hire_troop:close_window.2|안녕히.
+dlga_player_hire_troop_pre_pre_nextcycle:player_hire_troop_pre_nextcycle|병사 명단좀 보지.
+dlga_player_hire_troop_pre_nextcycle:player_hire_troop_nextcycle|마음이 바뀌신건가요...^알겠습니다.
+dlga_player_hire_troop_reunite:player_hire_troop_reunite_1|병사 명단좀 보지.
+dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle|마음이 바뀌신건가요...^알겠습니다.
+dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle.1|우리에게 지금 저 병력을 여기서 소모할 이유는 없다네, 그들을 물리세나.
+dlga_player_hire_troop_nextcycle:player_hire_troop|다른것은?
+dlga_start:player_siege_castle_commander_1|원하는게 뭡니까?
+dlga_player_siege_castle_commander_1:player_siege_ask_surrender|항복하라! 네놈의 상황은 절망적이야!
+dlga_player_siege_castle_commander_1:close_window|아무 것도 아니네. 난 가보도록 하지.
+dlga_player_siege_ask_surrender:player_siege_ask_surrender_treatment|그럼... 당신의 명예를 걸고 우리를 대우해 줄 것을 약속하실 수 있습니까?
+dlga_player_siege_ask_surrender:player_siege_ask_leave_unmolested|당신의 명예를 걸고 우리를 공격하지 않겠다 해주신다면 바로 이 성에서 떠날 수 있습니다.
+dlga_player_siege_ask_surrender:close_window|항복? 하! 우리가 안에서 늙어 죽을 때까지 항전 할 것이오.
+dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_reject|난 아무런 약속도 하지 않아. 지금 항복하던가, 아니면 죽을 준비나 하시던가!
+dlga_player_siege_ask_surrender_treatment_reject:close_window|망할 자식. 마지막 한 사람까지 싸울 것이야!
+dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_accept|그대는 몸값을 받고 풀어줄 것이고 자네 병사들은 살려보내겠네. 내 약속하지.
+dlga_player_siege_ask_surrender_treatment_accept:close_window|좋습니다. 그런 조건이라면 항복하지요.
+dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_accept|내 약속하겠네. 자네들이 이 성을 떠난다면 공격하지 않을 것이야.
+dlga_player_siege_ask_leave_unmolested_accept:close_window|좋습니다. 이 성은 당신께 넘겨드리지요. 오늘은 당신이 이겼습니다만, 우린 다시 만날 겁니다.
+dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_reject|받아 들일 수 없다. 난 포로를 원해서 말이야.
+dlga_player_siege_ask_leave_unmolested_reject:close_window|그렇다면 우린 죽을 때까지 이 성을 지킬 것이오. 협상은 끝났소. 안녕히 가시오.
+dlga_defeat_lord_answer:defeat_lord_answer_1|네놈은 이제 내 포로다.
+dlga_defeat_lord_answer_1:close_window|부디 자비를.
+dlga_defeat_lord_answer:defeat_lord_answer_2|그대는 잘 싸웠네. 풀어줄테니 잘 가게나.
 dlga_start:party_encounter_lord_hostile_attacker|{playername}!
-dlga_start:party_encounter_lord_hostile_attacker.1|Halt!
-dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|Is there no way to avoid this battle? I don't want to fight with you.
-dlga_party_encounter_lord_hostile_attacker_2:close_window|Don't attack! We surrender.
-dlga_party_encounter_lord_hostile_attacker_2:close_window.1|We will fight you to the end!
-dlga_party_encounter_offer_dont_fight:close_window|I owe you a favor, don't I. Well... all right then. I will let you go just this once.
-dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. But I want to fight with you.
-dlga_start:close_window.8|Away with you, vile beggar.
-dlga_start:lord_start|If it isn't my brave champion, {playername}...
-dlga_start:lord_start.1|Good to see you again {playername}...
-dlga_start:lord_start.2|We meet again, {playername}...
-dlga_start:lord_meet_neutral|Do I know you?
-dlga_lord_meet_neutral:lord_intro|I am {playername}.
-dlga_lord_meet_neutral:lord_intro.1|My name is {playername}. At your service.
-dlga_lord_meet_enemy:lord_intro|I am {playername}.
-dlga_lord_meet_enemy:lord_intro.1|They know me as {playername}. Mark it down, you shall be hearing of me a lot.
-dlga_start:lord_start.3|Well, {playername}...
-dlga_lord_start:lord_generic_mission_completed|Your surgeon managed to convince my friend and made the operation.  All we can do now is pray for his recovery. Anyway, I thank you for lending your surgeon to me, {playername}. You have a noble spirit. I will not forget it.
-dlga_lord_start:lord_investigate_fangorn_completed0|So, {playername}, you return from Fangorn. What did you find out?
-dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|The trees are alive! They assault our troops!
-dlga_lord_investigate_fangorn_completed1:close_window|I suspected that all along. You have been of good service to me, {playername}.
-dlga_lord_start:close_window|My patience is over. I was expecting you to tell me something about Fangorn by now, but you know nothing.
-dlga_lord_active_mission_2:lord_capture_troll_completed_two_trolls|Master, I hereby give you not one, but a pair of beasts!
-dlga_lord_active_mission_2:lord_capture_troll_completed_one_troll|Master, I subjugated the beast you have asked for!
-dlga_lord_capture_troll_completed_two_trolls:lord_capture_troll_completed_two_trolls_thankyou|Two beasts! Excellent, {playername}. You proved worthy, and skill and dedication must be rewarded. With your two trolls, We can now make without one of those We were using for Our experiments. It is a fully trained slave, ready to fight under command. We mean YOUR command, {playername}.
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_info|Can a savage beast be made to obey commands?
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Thank you, Master. You will be pleased by the way this troll will be put in good use.
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Thank you, master. But I'm not worth of your great gift. It is too dangerous for me.
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Thank you, master. But I'm not worth of your great gift. [no room in party!]
-dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Are you questioning the abilities of your Master, {playername}? This beast is trained to attack enemies on sight. This is enough. But, you and your warriors keep at due distance from the beast when it fights, and never stand between it and its victims.
-dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Now bring havoc to my enemies with your new gift
-dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|As you wish, then. Someone else among of my servants will known how to use this mighty tool of war.
-dlga_lord_capture_troll_completed_one_troll:close_window|Excellent, {playername}. You are a most faithful and useful servant. This troll will be most useful for our purposes. That it is taken to the dungeons!
-dlga_lord_start:close_window.1|Too long ago, I asked you to take me one troll alive. But I should have known. How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.
-dlga_lord_start:lord_generic_mission_completed.1|News of your accomplishment against the wild trolls reached me. {s12} has one fear less to worry about, thanks to you, {playername}.
-dlga_lord_start:lord_generic_mission_completed.2|Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.
-dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12}'s camp saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
-dlga_destroy_scout_camp_failed:close_window|I will do better next time.
-dlga_lord_start:lord_generic_mission_completed.3|We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.
-dlga_lord_start:defend_village_failed|We have heard from our scouts near {s12} that you have failed to defend the village. The villagers were either slaughtered or made into slaves. These raiders are becoming bolder every day... ^^We sense that war is surely coming.
-dlga_defend_village_failed:close_window|I will do better next time.
-dlga_lord_start:lord_generic_mission_completed.4|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
-dlga_lord_start:raid_village_failed|We saw some of your men running away from the village near {s12}. You dare come back here and show your face, {playername}?. ^^There will be war, but with failures like this, you may be its first casualty.
+dlga_start:party_encounter_lord_hostile_attacker.1|멈춰라!
+dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|이 싸움을 피할 수는 없겠소? 난 당신과 싸우고 싶지 않네만.
+dlga_party_encounter_lord_hostile_attacker_2:close_window|공격하지 마시오! 항복하겠소.
+dlga_party_encounter_lord_hostile_attacker_2:close_window.1|우린 마지막까지 싸울 것이다!
+dlga_party_encounter_offer_dont_fight:close_window|당신에겐 빚을 졌었죠. 뭐... 좋습니다. 이번만은 보내드리지요.
+dlga_party_encounter_offer_dont_fight:close_window.1|하하. 하지만 난 싸우고 싶은 걸.
+dlga_start:close_window.8|저리 꺼져버려 이 못된 거지놈.
+dlga_start:lord_start|내 용감한 용사 {playername}가 아니었다면...
+dlga_start:lord_start.1|다시 만나서 반갑습니다 {playername}님...
+dlga_start:lord_start.2|또 만났군요, {playername}님...
+dlga_start:lord_meet_neutral|우리 구면이던가요?
+dlga_lord_meet_neutral:lord_intro|전 {playername}이라고 합니다.
+dlga_lord_meet_neutral:lord_intro.1|제 이름은 {playername}입니다. 잘 부탁드립니다.
+dlga_lord_meet_enemy:lord_intro|난 {playername} 다.
+dlga_lord_meet_enemy:lord_intro.1|저들은 나를 {playername} 라 알고있지, 기록해두게, 앞으로 그대 또한 나에 대해 듣게될 일이 많이 있을테니.
+dlga_start:lord_start.3|흠, {playername}...
+dlga_lord_start:lord_generic_mission_completed|자네의 군의관이 내 친구를 설득시켜 수술을 했네. 이제 그의 회복을 기도하는 수밖에 없군. 어쨌든, 자네 군의관을 빌려주어 고맙네 {playername}. 자네의 숭고한 정신을 잊지 않겠네.
+dlga_lord_start:lord_investigate_fangorn_completed0|그래, {playername}. 팡고른에서 돌아왔군. 무엇을 알아냈나?
+dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|나무들이 살아있습니다! 우리 군대를 공격했다구요!
+dlga_lord_investigate_fangorn_completed1:close_window|그게 늘 의심스러웠지. 잘 해주었네 {playername}.
+dlga_lord_start:close_window|내 인내심은 여기까지네. 지금까지 그대가 내게 팡고른에 관한 걸 말해주길 기대하고 있었으나, 그댄 아무것도 모르는군.
+dlga_lord_active_mission_2:lord_capture_troll_completed_two_trolls|마스터, 한 놈이 아니라 한 쌍의 짐승을 대령했습니다!
+dlga_lord_active_mission_2:lord_capture_troll_completed_one_troll|마스터, 그 짐승을 잡아왔습니다!
+dlga_lord_capture_troll_completed_two_trolls:lord_capture_troll_completed_two_trolls_thankyou|두 놈이라니! 훌륭하군 {playername}. 너는 너의 기술과 가치를 증명했고, 그 헌신에 보상받을 것이다. 너의 두 트롤들은 우리 실험을 위해 쓰던 걸 없앨 수 있겠어. 그건 완전히 훈련된 노예로 언제든 명령만 내리면 싸울 준비가 되어 있지. 아, '너의' 명령 말이다 {playername}
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_info|그런 흉포한 짐승도 명령에 복종할 수 있습니까?
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|감사합니다, 마스터. 당신이 기뻐할 만큼 유용하게 쓰겠습니다.
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|감사합니다, 마스터. 하지만 그 선물은 받을 수 없을 것 같습니다. 제겐 너무 위험해요.
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|감사합니다, 마스터. 하지만 그 선물은 받을 수 없습니다. [부대 상한 초과!]
+dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|네 주인의 능력을 의심하는 건가 {playername}? 이놈들은 시야에 들어 오는 적들을 공격하도록 훈련됐다. 이거면 충분하지. 하지만 놈이 싸울 땐 거리를 두고, 절대 놈과 공격 대상 사이에 있으면 안 돼.
+dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|이제 내가 준 선물로 내 적들을 박살내버려라!
+dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|그렇다면 어쩔 수 없군. 내 종들 중 다른 누군가가 이 전쟁도구를 써야겠지.
+dlga_lord_capture_troll_completed_one_troll:close_window|훌륭하군, {playername}. 넌 가장 유용하고 충실한 종이다. 이 트롤은 우리의 목적에 가장 유용한 자원이 될 것이야. 지하감옥에 가져다 놔라!
+dlga_lord_start:close_window.1|오래 전, 네게 트롤 하나를 생포해 오라 했지. 하지만 내가 어리석었군. 어떻게 {playername}같은 녀석이 그런 도전을 해내길 기대할 수 있는 건지. 내 종은 충실하지도 숙련되지도 못했구나.
+dlga_lord_start:lord_generic_mission_completed.1|자네가 야생 트롤을 상대로 이룬 업적에 대해 들었네. {s12}는 걱정거리를 하나 덜었군. 고맙네 {playername}.
+dlga_lord_start:lord_generic_mission_completed.2|{s12} 근처의 우리 정찰대가 자네의 성공을 전해왔다네, 그들도 이젠 우리를 염탐하는것에 대한 대가를 똑똑히 배웠겠지.^^ 이 주둔지의 파괴는 분명히 놈들의 진군을 멈출 수 있을게야.
+dlga_lord_start:destroy_scout_camp_failed|자네와 자네 부하들이 퇴각하는 것을 {s12} 근처 야영지의 우리 정찰대가 목격했네. 정말 실망스럽군, {playername}. ^^그대의 실패로 주요 보급로가 공격당했어. 복구하려면 오래 걸릴 걸세.
+dlga_destroy_scout_camp_failed:close_window|다음엔 더 잘하겠습니다.
+dlga_lord_start:lord_generic_mission_completed.3|자네가 용감하게 마을을 지켰다는 것을 {s12} 근처의 정찰대가 알려주었네. 날이 갈 수록 약탈자들은 점점 대담해지는구만...^^전쟁이 다가오는 것을 느낄 수 있네. 한 번 더 감사하네, {playername}.
+dlga_lord_start:defend_village_failed|자네가 마을을 지키지 못했다는 것을 {s12} 근처의 정찰대가 알려주었네. 주민들은 살육당하고 노예로 끌려가고 말았군. 날이 갈 수록 약탈자들은 점점 대담해지는구만...^^전쟁이 다가오는 것을 느낄 수 있네.
+dlga_defend_village_failed:close_window|다음엔 더 잘하겠습니다.
+dlga_lord_start:lord_generic_mission_completed.4|{s12} 근처 마을에서 이는 화염을 보았다. 비명소리도 들었지. 이건 시작에 불과하다 {playername}.^^전쟁이 다가오고 있다.
+dlga_lord_start:raid_village_failed|{s12} 근처 마을에서 달아나는 네 부하들을 보았다. 감히 이곳에 돌아와 그 낯짝을 내밀 생각은 아니겠지 {playername}?^^곧 전쟁이 일어날 거다, 헌데 이런 실패가 이어진다면 그 첫 희생자는 네가 될 것이다.
 dlga_raid_village_failed:close_window|I will do better next time.
 dlga_lord_start:lord_target_lord_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
 dlga_lord_target_lord_failed:close_window|I will do better next time.

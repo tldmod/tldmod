@@ -1874,10 +1874,10 @@ str_shortname_region_brown_lands|Бурые земли
 str_shortname_region_emyn_muil|Эмин-Муиль
 str_shortname_region_misty_mountains|Предгорья северных Мглистых гор
 str_shortname_region_lorien_|Лориэн
-; str_shortname_region_anduin_banks_|the middle valley of Anduin
+str_shortname_region_anduin_banks_|Центральная долина Андуина
 str_shortname_region_n_mirkwood_|Северное Темнолесье
 str_shortname_region_s_mirkwood_|Южное Темнолесье
-; str_shortname_region_c_mirkwood|Middle Mirkwood
+str_shortname_region_c_mirkwood|Центральный Темный лес.
 str_shortname_region_grey_mountains|Предгорья Серых гор
 str_shortname_region_mordor|Земли Мордора
 str_shortname_region_dimrill|Долина Туманноручья
@@ -2141,7 +2141,7 @@ str_npc27_intro_response_1|Кто ты?
 str_npc18_intro_response_2|Я не стану тратить слова на раба, обреченного на смерть.
 str_npc19_intro_response_2|Наглый болван. Уйди с дороги.
 str_npc20_intro_response_2|У меня нет времени на твои безумные бредни, ведьма.
-; str_npc21_intro_response_2|Just this once I will let you live, you dirty beast. (leave)
+str_npc21_intro_response_2|Это единственный раз, когда Я оставлю тебя в живых, грязное животное. (Уйти)
 str_npc22_intro_response_2|Прошу прощения, у меня есть важный разговор ещё кое с кем.
 str_npc23_intro_response_2|Взаимно. Прощай.
 str_npc24_intro_response_2|Неважно. Мне нужно подышать свежим воздухом.
@@ -2231,7 +2231,7 @@ str_npc27_signup_2|Вы не пожалеете, что взяли меня.
 str_npc18_signup_response_1|Силы воли тебе не занимать! Так и быть, я замолвлю за тебя пару слов Лурмсакуну.
 str_npc19_signup_response_1|Ну чтож, "Принц", бери свое оружие. Теперь ты сражаешься за меня.
 str_npc20_signup_response_1|Я надеюсь, что твои слова - не пустое хвастовство. Не разочаровывай меня, Зигурфель.
-; str_npc21_signup_response_1|Very well, we shall see if you prove worthy.
+str_npc21_signup_response_1|Очень хорошо, мы увидим если ты окажешься достоиным.
 str_npc22_signup_response_1|Иметь в отряде эльфийского владыку - честь для нас.
 str_npc23_signup_response_1|Очень хорошо. Надеюсь, ты не убежишь, завидев первого же орка.
 str_npc24_signup_response_1|Очень хорошо, уважаемый гном, добро пожаловать в отряд.
@@ -2261,7 +2261,7 @@ str_npc27_payment|Я бы присоединился к вам, но мой до
 str_npc18_payment_response|Не сомневайся, прихвостни Лурмсакуна не смогут мне отказать. [потратить {reg14}/{reg15} очков влияния]
 str_npc19_payment_response|Вождю Даэглафу придется уступить мне, как только я все объясню. [потратить {reg14}/{reg15} очков влияния]
 str_npc20_payment_response|Да, это правда. Подымайся! После всего, что я сделаю, ты пойдешь со мной, в конце концов ты обычная снага. [потратить {reg14}/{reg15} очков влияния]
-; str_npc21_payment_response|Whatever he might try, you are leaving with me. [costs {reg14}/{reg15} Influence]
+str_npc21_payment_response|Что-бы он ни пробовал, ты уходишь со мной. [Стоит {reg14}/{reg15} Влияния]
 str_npc22_payment_response|Поверь, в моём отряде ты будешь полезнее. [потратить {reg14}/{reg15} очков влияния]
 str_npc23_payment_response|С этого момента твой долг - быть подле меня. [потратить {reg14}/{reg15} очков влияния]
 str_npc24_payment_response|Господин Двалин всё-таки поймёт, что такого ценного воина не стоит слишком долго держать вдалеке от схватки. [потратить {reg14}/{reg15} очков влияния]
@@ -2361,7 +2361,7 @@ str_npc27_retirement_speech|Воинский быт меня немного ут
 str_npc18_rehire_speech|Мой меч все еще жаждет крови, Великий. Позволь мне пойти с тобой еще раз.
 str_npc19_rehire_speech|Рад видеть тебя снова, капитан. Могу ли я снова присоединиться к вам?
 str_npc20_rehire_speech|Давайте отступим, командир. Эта война не будет выиграна бездельниками!
-; str_npc21_rehire_speech|How've yer been, chief? Should I pack me things and be off with yer again?
+str_npc21_rehire_speech|Вы как, шеф? Мне следует собрать свои вещи и отправиться с вами снова?
 str_npc22_rehire_speech|Рад видеть вас, {playername}. Давайте снова путешествовать вместе.
 str_npc23_rehire_speech|Рада видеть вас, {playername}. Давайте снова пойдём одной тропой.
 str_npc24_rehire_speech|Моя секира готова к бою, {playername}. Могу ли я снова присоединиться к вам?
@@ -2510,23 +2510,23 @@ str_mordor_cungol_guildmaster_companion|О-хо, тебе нужен боец! �
 str_gundabad_guildmaster_companion_player_ask|Тут сборище дрожащих крысоедов, которые скорее убегут, чем будут сражаться. А где же твои настоящие воины?
 ; str_gundabad_guildmaster_companion_none| I care not where you come from -- you’ll watch your tongue around here! Oh yes, be careful how you speak to us, or you just might find yourself falling into a dark hole of snakes in these tunnels of ours. Our fighting lads are off in rebel lands, fighting thieves and brigands and murderous elf-friends. And what’re you about, eh? Shirking your own share of the fighting, spying on our private business? Off with you, back into the fray, like a proper soldier!
 str_gundabad_guildmaster_companion_player_none_ok|Ты будешь следить за своими гнусными словами! Если конечно ценишь свою никчемную жизнь.
-; str_gundabad_guildmaster_player_found_ok|Do I hear you aright? Is this “Berta” of yours a troll that thinks? Now this, I have to see for myself.
+str_gundabad_guildmaster_player_found_ok|Я хорошо тебя понял? Эта твоя "Берта", тролль который умеет думать? Теперь это, то что я должен увидеть лично.
 ; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
-; str_fullname_region_rhun|East Rhovanion, on both sides of the river Celduin
-; str_fullname_region_erebor|the foothills of Erebor, the Lonely Mountain
+str_fullname_region_rhun|Восточный Рованьон, на обеих сторонах реки Кельдуин.
+str_fullname_region_erebor|Подножия Эребора, Одинокой Горы.
 ; str_fullname_region_celebrant|the Field of Celebrant, between the rivers Celebrant and Limlight
 ; str_fullname_region_gladden_fields|the Gladden Fields, marshes of the river Gladden
 str_fullname_region_w_emyn_muil|западнее Эмин-Муиля
 ; str_fullname_region_s_misty_mountains|the foothills of the southern Misty Mountains
 ; str_fullname_region_n_anduin_vale|the northern Vale of Anduin, north of the Carrock
 ; str_fullname_region_s_anduin_vale|the southern Vale of Anduin, between Lorien and the Undeeps
-; str_fullname_region_cair_andros|Cair Andros, the great ship-like island of Anduin
+str_fullname_region_cair_andros|Каир Андрос, великий корабельный остров Андуина.
 str_shortname_region_rhun|Восточный Рованион
 str_shortname_region_erebor|предгорье Эребора
 ; str_shortname_region_celebrant|the Field of Celebrant
 ; str_shortname_region_gladden_fields|the Gladden Fields
 str_shortname_region_w_emyn_muil|западнее Эмин-Муиля
-; str_shortname_region_s_misty_mountains|the foothills of the Southern Misty Mountains
+str_shortname_region_s_misty_mountains|Подножия Южных Туманных Гор.
 str_shortname_region_n_anduin_vale|севернее долины Андуина
 str_shortname_region_s_anduin_vale|южнее долины Андуина
 str_shortname_region_cair_andros|Каир-Андрос

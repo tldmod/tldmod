@@ -925,6 +925,15 @@ qstr_Tripled|Triplicado
 qstr_Quadrupled|Quadruplicado
 qstr_You_drank_the_Ent_Wa|Você bebeu a água Ent...
 qstr_You_used_the_Orc_Bre|Você usou a Cerveja Orc.
+; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
+; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
+; qstr_lordless|lordless
+; qstr_orc_stragglers|orc stragglers
+; qstr_wild_goblins|wild goblins
+; qstr_recruits|recruits
+; qstr_regulars|regulars
+; qstr_elites|elites
+; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
 qstr_Fangorn_search:_fail|Busca Fangorn: falhou.
 qstr_^^^A_great_victory!^|^^^Uma grande vitória!^^^Então era isso o que todos os mitos sobre Fangorn queriam dizer...
 qstr_^^^Defeated...^^^Sca|^^^Derrotado...^^^Espalhado na Floresta de Fangorn...Sozinho...
@@ -1083,6 +1092,8 @@ qstr_You_are_entering_{s1}|Você está entrando em {s1}
 qstr_The_war_expands_comm|A guerra se expande, os comandantes estão ficando mais ousados! (requisitos de cerco reduzidos)
 qstr_Your_party_is_spotte|Seu grupo foi avistado por {s1}.
 qstr_The_effects_of_the_O|Os efeitos da Cerveja Orc foram dissipados.
+; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
+; qstr_Athelas_used_up.|Athelas used up.
 qstr_Party_has_nothing_to|Grupo não tem nada para comer!
 qstr_You_pay_for_accommod|Você paga por um quarto.
 qstr_The_troll_outside_{s|O troll fora de {s2} foi morto. Missão cancelada.
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{reg66} {s5} tropas mortas. (O contador é atualizado 
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} tropas mortas. (O contador é atualizado a cada hora)
 qstr_{reg68}_{s10}_killed|{reg68} {s10} mortos. (O contador é atualizado a cada hora)
 qstr_{s1}_is_scouted.|{s1} é observado.
+qstr_{s2}_was_defeated!|{s2} foi derrotado!
 qstr_The_Age_of_Men_has_f|A Era dos Homens finalmente passou. Agora as Duas Torres reúnem suas hostes e aliados restantes para decidir quem será o único governante da Terra Média!
 qstr_The_War_of_the_Two_T|A Guerra das Duas Torres foi iniciada
-qstr_{s2}_was_defeated!|{s2} foi derrotado!
 qstr_The_forces_of_{s22}_|As forças de {s22} se reuniram! {s22} agora é {s23}.
 qstr_The_might_of_{s22}_h|O poder de {s22} diminuiu! {s22} agora é {s23}.
 qstr_In_a_desperate_attem|Em uma tentativa desesperada de se defender de seus inimigos, Sauron envia suas legiões de Mordor!

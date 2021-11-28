@@ -925,6 +925,15 @@ qstr_Tripled|三倍
 qstr_Quadrupled|四倍
 qstr_You_drank_the_Ent_Wa|你喝了树人水...
 qstr_You_used_the_Orc_Bre|你使用了半兽人酒。
+; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
+; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
+; qstr_lordless|lordless
+; qstr_orc_stragglers|orc stragglers
+; qstr_wild_goblins|wild goblins
+; qstr_recruits|recruits
+; qstr_regulars|regulars
+; qstr_elites|elites
+; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
 qstr_Fangorn_search:_fail|搜索法贡森林：失败。
 qstr_^^^A_great_victory!^|^^^一场伟大的胜利！ ^^^这是法贡森林的又一个神话...
 qstr_^^^Defeated...^^^Sca|^^^战败了……^^^在法贡森林里走散了……独自一人……
@@ -1083,6 +1092,8 @@ qstr_You_are_entering_{s1}|你进入了{s1}。
 qstr_The_war_expands_comm|随着战事的如火如荼，指挥官们变得更加激进了。(围城需求减少)
 qstr_Your_party_is_spotte|你的部队被{s1}发现了。
 qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
+; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
+; qstr_Athelas_used_up.|Athelas used up.
 qstr_Party_has_nothing_to|部队食物短缺了！
 qstr_You_pay_for_accommod|你支付了宿金。
 qstr_The_troll_outside_{s|{s2}外的食人妖被杀了。任务取消。
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{reg66}{s5}部队已杀。（计数器每小时刷新�
 qstr_{reg67}_{s7}_{s8}_tr|{reg67}{s7}{s8}部队已杀。（计数器每小时刷新一下）
 qstr_{reg68}_{s10}_killed|{reg68}{s10}已杀。（计数器每小时刷新一次）
 qstr_{s1}_is_scouted.|{s1} 被侦查了
+qstr_{s2}_was_defeated!|{s2}被击败了！
 qstr_The_Age_of_Men_has_f|人类的时代终于结束了。现在邪黑塔和欧散克塔都在集结他的军队和盟友，决定谁才是中土唯一的统治者！
 qstr_The_War_of_the_Two_T|双塔之间的战争打响了！
-qstr_{s2}_was_defeated!|{s2}被击败了！
 qstr_The_forces_of_{s22}_|{s22}的力量已经恢复了！{s22}现在是{s23}。
 qstr_The_might_of_{s22}_h|{s22}的力量已经削弱了！{s22}现在是{s23}。
 qstr_In_a_desperate_attem|为了击败他的敌人，索隆在绝望中派出了他的魔多军团！

@@ -925,6 +925,15 @@ qstr_Tripled|verdreifacht
 qstr_Quadrupled|vervierfacht
 qstr_You_drank_the_Ent_Wa|Du hast Entwasser getrunken...
 qstr_You_used_the_Orc_Bre|Du hast das Orkgebräu verwendet.
+qstr_You_and_your_compani|Du und deine Gefährten trinken einen Schluck Miruvor. Ihr fühlt euch gestärkt und erfrischt.
+qstr_You_give_a_few_leave|Du gibst deinen Heilern einige Blätter Athelas.
+qstr_lordless|ohne Herrn
+qstr_orc_stragglers|Ork-Nachzügler
+qstr_wild_goblins|Wildorks
+qstr_recruits|Rekruten
+qstr_regulars|Krieger
+qstr_elites|Elitekrieger
+qstr_You_camp_and_beat_th|Du schlägst dein Lager auf und schlägst die Trommeln aus der Tiefe. Der mächtige Klang lockt eine Gruppe {s2} {s1} an.
 qstr_Fangorn_search:_fail|Fangorn-Suche: gescheitert.
 qstr_^^^A_great_victory!^|^^^Ein großer Sieg!^^^Also das war es, wovon die Mythen über Fangorn handelten...
 qstr_^^^Defeated...^^^Sca|^^^Besiegt...^^^Verstreut im Fangorn-Wald... Allein...
@@ -1082,7 +1091,9 @@ qstr_You_are_entering_{s1|Du bist nun {s1} ({s2}).
 qstr_You_are_entering_{s1}|Du bist nun {s1}.
 qstr_The_war_expands_comm|Der Krieg weitet sich aus. Die Anführer werden kühner! (Belagerungsbedingungen gesenkt)
 qstr_Your_party_is_spotte|Dein Trupp wurde in {s1} bemerkt.
-qstr_The_effects_of_the_O|De Wirkung des Orkgebräus hat nachgelassen.
+qstr_The_effects_of_the_O|Die Wirkung des Orkgebräus hat nachgelassen.
+qstr_The_effects_of_the_M|Die Wirkung des Miruvor hat nachgelassen.
+qstr_Athelas_used_up.|Athelas ist aufgebraucht.
 qstr_Party_has_nothing_to|Die Truppe hat nichts zu essen!
 qstr_You_pay_for_accommod|Du bezahlst die Unterbringung.
 qstr_The_troll_outside_{s|Der Troll bei {s2} ist getötet worden. Auftrag abgebrochen.
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{reg66} Truppen von {s5} getötet. (Zähler wird jede 
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s8} von {s7} getötet. (Zähler wird jede Stunde aktualisiert.) 
 qstr_{reg68}_{s10}_killed|{reg68} {s10} getötet. (Zähler wird jede Stunde aktualisiert.) 
 qstr_{s1}_is_scouted.|{s1} ist ausgespäht.
+qstr_{s2}_was_defeated!|{s2} wurde besiegt!
 qstr_The_Age_of_Men_has_f|Das Zeitalter der Menschen ist endlich vorüber. Nun sammeln die Zwei Türme ihre verbliebenen Truppen und Verbündeten, um zu entscheiden, wer der alleinige Herrscher über Mittelerde wird!
 qstr_The_War_of_the_Two_T|Der Krieg der Zwei Türme hat begonnen!
-qstr_{s2}_was_defeated!|{s2} wurde besiegt!
 qstr_The_forces_of_{s22}_|Die Truppen von {s22} haben sich erholt! {s22} ist nun {s23}.
 qstr_The_might_of_{s22}_h|Die Macht von {s22} hat abgenommen! {s22} ist nun {s23}.
 qstr_In_a_desperate_attem|In einem verzweifelten Versuch, sich gegen seine Feinde zu verteidigen, entsendet Sauron seine Legionen von Mordor!

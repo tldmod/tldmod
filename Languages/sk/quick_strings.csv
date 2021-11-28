@@ -925,6 +925,15 @@ qstr_Tripled|Trojnásobné
 qstr_Quadrupled|Štvornásobné
 qstr_You_drank_the_Ent_Wa|Vypil si Entskú vodu...
 qstr_You_used_the_Orc_Bre|Použil si Ohyzdiu pálenku
+; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
+; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
+; qstr_lordless|lordless
+; qstr_orc_stragglers|orc stragglers
+; qstr_wild_goblins|wild goblins
+; qstr_recruits|recruits
+; qstr_regulars|regulars
+; qstr_elites|elites
+; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
 qstr_Fangorn_search:_fail|Skúmanie Farngornu: neúspešné.
 qstr_^^^A_great_victory!^|^^^Veľké víťazstvo!^^^Tak o tomto hovorili všetky tie legendy Farngornu... 
 qstr_^^^Defeated...^^^Sca|^^^ Porazený ... ^^^ Zatúlaný vo Fangornskom Lese ... Osamotený ...
@@ -1083,6 +1092,8 @@ qstr_You_are_entering_{s1}|Vstupuješ do {s1}u.
 qstr_The_war_expands_comm|Vojna sa rozrástla, velitelia sú trúfalejší! (Na obliehania je treba menej potrieb)
 qstr_Your_party_is_spotte|Tvoju družinu pozorujú z {s1}u.
 qstr_The_effects_of_the_O|Efekty Ohyzdej pálenky sa vytratili.
+; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
+; qstr_Athelas_used_up.|Athelas used up.
 qstr_Party_has_nothing_to|Družina hladuje!
 qstr_You_pay_for_accommod|Platíš za ubytovanie.
 qstr_The_troll_outside_{s|Zlobor pred {s2}om bol zabitý. Misia je zrušená. 
@@ -1097,9 +1108,9 @@ qstr_{reg66}_{s5}_troops_|{reg66} jednotiek {s5}u zabitých. (Počítadlo sa obn
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} jednotiek {s8}u zabitých. (Počítadlo sa obnovuje každú hodinu)
 qstr_{reg68}_{s10}_killed|{reg68} jednotiek {s10}u zabitých. (Počítadlo sa obnovuje každú hodinu)
 qstr_{s1}_is_scouted.|{s1} je preskúmané.
+qstr_{s2}_was_defeated!|{s2} bol porazený!
 qstr_The_Age_of_Men_has_f|Vek Ľudí skončil. Dve Veže zhromažďujú pozostatky svojich síl a budú bojovať o to, kto sa stane vládcom nad celou Stredozemou!
 qstr_The_War_of_the_Two_T|Vojna Dvoch Veží započala!
-qstr_{s2}_was_defeated!|{s2} bol porazený!
 qstr_The_forces_of_{s22}_|Vojská {s22}u boli posilnené! {s22} sa stal {s23}.
 qstr_The_might_of_{s22}_h|Ríša {s22} bola oslabená! {s22} sa stal {s23}.
 qstr_In_a_desperate_attem|V zúfalej obrane vysiela Sauron von svoje Mordorské légie.

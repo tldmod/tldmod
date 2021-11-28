@@ -292,12 +292,12 @@ itm_orc_tribal_c|Neopracovaná koža
 itm_evil_gauntlets_a|Čierne rukavice
 itm_evil_gauntlets_b|Čierne kovové rukavice
 itm_free_isen_orc_armor_a|Isengardské ohyzdie brnenie
-itm_isen_orc_light_a|Isengardské ohyzdie brnenie
-itm_isen_orc_light_b|Isengardské ohyzdie brnenie
-itm_isen_orc_pad_a|Isengardské ohyzdie brnenie
-itm_isen_orc_pad_b|Isengardské ohyzdie brnenie
-itm_isen_orc_mail_a|Isengardské ohyzdie brnenie
-itm_isen_orc_mail_b|Isengardské ohyzdie brnenie
+; itm_isen_orc_light_a|Isengard Orc Light Harness
+; itm_isen_orc_light_b|Isengard Orc Light Harness
+; itm_isen_orc_pad_a|Isengard Orc Light Segmented Armor
+; itm_isen_orc_pad_b|Isengard Orc Medium Segmented Armor
+; itm_isen_orc_mail_a|Isengard Orc Mail
+; itm_isen_orc_mail_b|Isengard Orc Heavy Segmented Armor
 itm_isen_uruk_light_a|Uruk-haiský ľahký postroj
 ; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
 ; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
@@ -312,15 +312,10 @@ itm_uruk_tracker_boots|Urukské stopárske topánky
 itm_uruk_greaves|Urukské holenice
 itm_uruk_chain_greaves|Urukské drôtené holenice
 itm_uruk_ragwrap|Urukská šatka
-itm_isen_orc_helm_a|Isengardská ohyzdia helma
-itm_free_isen_orc_helm_b|Isengardská ohyzdia helma
-itm_free_isen_orc_helm_c|Isengardská ohyzdia helma
+; itm_isen_orc_helm_a|Isengard Orc Helm
 itm_isen_uruk_helm_a|Uruk-Haiská helma
-itm_free_isen_uruk_helm_a|Uruk-Haiská helma
-itm_free_isen_uruk_helm_c|Uruk-Haiská helma
 itm_isen_uruk_helm_d|Uruk-Haiská kapitánska helma
 itm_isen_uruk_helm_e|Uruk-Haiská stopárska helma
-itm_free_isen_uruk_helm_f|Uruk-Haiská stopárska helma
 itm_uruk_pike_b|Mordorská píka
 itm_uruk_falchion_a|Urukský Falchion
 itm_uruk_falchion_b|Veľká ohyzdia šabľa
@@ -519,12 +514,12 @@ itm_harad_scale|Haradské šupinové brnenie
 itm_harad_tiger_scale|Brnenie Tigrej stráže
 itm_harad_lion_scale|Brnenie Leviej stráže
 itm_harad_dragon_helm|Kiloksá helma
-itm_harad_cav_helm_a|Harondorská jazdecká prilba
-itm_harad_cav_helm_b|Harondorská jazdecká prilba
+; itm_harad_cav_helm_a|Harondor Light Helm
+; itm_harad_cav_helm_b|Harondor Light Helm
 itm_black_snake_helm|Marankská helma
-itm_harad_finhelm|Helma Ďalekého Haradu
-itm_harad_heavy_inf_helm|Helma Ďalekého Haradu
-itm_harad_wavy_helm|Helma Ďalekého Haradu
+; itm_harad_finhelm|Harad Heavy Footman Helmet
+; itm_harad_heavy_inf_helm|Harad Footman Helmet
+; itm_harad_wavy_helm|Harad Conical Helmet
 itm_harad_eaglehelm|Helma Orliej stráže
 itm_lion_helm|Helma Leviej stráže
 itm_harad_pantherhelm|Čiapka Pantérskej stráže
@@ -578,7 +573,7 @@ itm_khand_throwing_axe|Khandská vrhacia sekera
 itm_khand_rammace|Khandský lamelový palcát
 itm_khand_pitsword|Gladiátorský meč
 itm_khand_tulwar|Khandský prehnutý meč
-itm_khand_2h_tulwar|Khandský prehnutý meč
+; itm_khand_2h_tulwar|Khand Great Tulwar
 itm_khand_lance|Khandská žrď
 itm_easterling_round_horseman|Východniarský guľatý štít
 itm_variag_gladiator_shield|Východniarsky zápasnícky štít
@@ -598,12 +593,11 @@ itm_rhun_armor_n|Rhunská stredná bojová zbroj
 itm_rhun_armor_o|Rhunská stredná bojová zbroj
 itm_rhun_armor_p|Rhunské šľachtické brnenie
 itm_rhun_armor_k|Rhunské šľachtické brnenie
-itm_rhun_helm_barbed|Rhunské ostnaté brnenie
-itm_rhun_helm_horde|Helma Rhúnskej hordy
+itm_rhun_helm_chieftain|Rhunská náčelnícka helma
 itm_rhun_helm_pot|Rhunská hrncová prilba
+itm_rhun_helm_barbed|Rhunské ostnaté brnenie
 itm_rhun_helm_round|Rhunská guľatá prilba
 itm_rhun_helm_leather|Rhunská kožená helma
-itm_rhun_helm_chieftain|Rhunská náčelnícka helma
 ; itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|Rhunská veľká sekera
 itm_rhun_battleaxe|Rhunská vojnová sekera
@@ -733,7 +727,7 @@ itm_rohan_lance_banner_sun|Rohanská žrď so zástavou slnka
 itm_rohan_lance_banner_horse|Rohanská žrď so zástavou koňa
 itm_ent_water|Zvláštna miska vody
 itm_map|Mapy Stredozeme
-itm_athelas_reward|Bylina Athelas
+; itm_athelas_reward|Dried Athelas Leaves
 itm_phial_reward|Svetlo Galadriel
 itm_scroll_reward|Pád Gondolinu
 itm_hammer_reward|Kováčske kladivo
@@ -742,7 +736,6 @@ itm_angmar_whip_reward|Pánsky bič
 itm_horn_gondor_reward|Roh Gondoru
 itm_harad_totem_reward|Haradský totem
 itm_elven_amulet_reward|Elfský amulet
-
 itm_torque_reward|Čelenka zla so závojom
 itm_orc_brew|Ohyzdia žbrnda
 itm_rohan_saddle|Sedlo
@@ -779,7 +772,7 @@ itm_dale_armor_reward|Dálské šľachtické krúžkové brnenie
 itm_leather_gloves_reward|Lukostrelecké rukavice
 itm_beorn_shield_reward|Grizlovský štít
 itm_beorn_axe_reward|Medvedí kyjak
-itm_moria_arrow_reward|Mórijské otrávené šípy
+; itm_drums_of_the_deep|Drums of the Deep
 itm_khamul_helm|Helma Khamula
 itm_black_arrows_reward|Čierne šípy
 itm_leather_boots_reward|Lovecké čižmy

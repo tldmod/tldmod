@@ -1,1663 +1,1674 @@
-qstr_Received_{reg0}_dama|受 到 {reg0} 點 傷 害
-qstr_Gate_is_breached!|大 門 被 攻 破 了!
-qstr_Gate_opens..._You_ha|大 門 打 開 了... 你 來 到 中 土 世 界 最 神 聖 的 地 方！
-qstr_Secret_place_discove|發 現 秘 密 地 方！
-qstr_Next_Page|下 一 頁
-qstr_Action|行 動
-qstr_Mount|騎 乘 
-qstr_Attack_Type|攻 擊 方 式
-qstr_Hold_This_Position|堅 守 這 裡
-qstr_Follow_Me|跟 著 我
-qstr_Charge|衝 鋒
-qstr_Advance|前 進
-qstr_Fall_Back|撤 退
-qstr_Stand_Closer|靠 攏
-qstr_Spread_Out|散 開
-qstr_Stand_Ground|站 在 原 地
-qstr_Dismount|下 馬
-qstr_Use_Any_Weapon|任 意 武 器
-qstr_Use_Blunt_Weapons|使 用 鈍 器
-qstr_Hold_Your_Fire|停 止 射 擊
-qstr_Fire_At_Will|自 由 開 火
-qstr_Us|我 們
-qstr_Allies|盟 友
-qstr_Enemies|敵 軍
-qstr_Ready|預 備
-qstr_Wounded|受 傷
-qstr_Dead|死 亡
-qstr_Routed|被 擊 潰
-qstr_Number_of_men_knocke|被 擊 倒 的 人 數 : {reg1}
-qstr_Number_of_men_left:_|剩 餘 人 數 : {reg1}
-qstr_Opponents_Beaten:_{r|被 擊 敗 的 敵 人 : {reg1}
-qstr_Opponents_Remaining:|剩 餘 敵 人 : {reg1}
-qstr_Gauntlet_wave:_1|第 1 波
-qstr_Gauntlet_wave:_{reg1|第 {reg1} 波
-qstr_Remain_in_retirement|退 休
-qstr_Go_back_to_the_adven|回 到 冒 險
-qstr_A_peaceful_village_n|一 個 在 西 谷 不 遠 處 的 平 靜 村 子
-qstr_The_War_is_upon_Roha|戰 爭 要 蔓 延 到 洛 汗 了！
-qstr_Minas_Tirith___The_W|米 那 斯 提 力 斯 - 潔 白 之 城
-qstr_The_White_Tree_stand|由於國王隊的戰線失敗，白樹已經死了
-qstr_The_Shadow_grows_eve|陰 影 在 東 方 成 長 、 變 強
-qstr_Minas_Morgul___City_|米 那 斯 魔 窟 - 戒 靈 之 城
-qstr_Sauron_s_armies_marc|索 倫 軍 隊 參 戰 !
-qstr_Adventurers_at_audie|冒 險 者 覲 見 攝 政 王 迪 耐 瑟 二 世 ...
-qstr___What_business_do_y|' 你 來 我 這 ， 有 何 請 求 ? '
-qstr___Your_Stewardship_w|你 的 管 家 ， 我 們 來 自 遙 遠 的 國 度   ...... 跳 ！
-qstr___Enough_of_this_mad|我 已 經 受 夠 了 這 些 瘋 子 ! 守 衛 !!
-qstr___I_ve_had_enough_of|' 我 已 經 受 夠 了 這 些 惡 作 劇 ... 下 一 批 覲 見 者 必 須 要 跪 下 ! '
-qstr_Chest|箱 子
-qstr_Cape|披 肩
-qstr_Arms|武 器
-qstr_Thighs|大 腿
-qstr_Legs|雙 腳
-qstr_Rotate|旋 轉
-qstr_Close|關 閉
-qstr_Faction_Side:^^Campa|派 系 方 面 :^^戰 役 難 度 :^^家 園 :^^統 治 者 :^^敵 人 :^^
-qstr_Campaign_Difficulty_|戰 役 難 度 是 基 於 開 始 派 系 力 量 , 戰 區 敵 人 , 派 系 部 隊 樹 和 部 隊 裝 備.
-qstr_Rallies:|集 合 :
-qstr_View_Keybinds__Press|查 看 键 绑 定 (按 Insert 键 )
-qstr_What_do_you_fight_fo|你 為 了 什 麼 而 戰？
-qstr_Go_Back...|返 回 ...
-qstr_Learn_about_the_diff|了 解 中 土 世 界 不 同 的 派 系
-qstr_The_DAWN_of_a_New_Er|新 紀 元 的 黎 明
-qstr_The_TWILIGHT_of_Man|人 類 的 曙 光
-qstr_Select_your_Race?|選 擇 你 的 種 族 ?
-qstr_Man|人 類
-qstr_Elf|精 靈
-qstr_Dwarf|矮 人
-qstr_Whom_Do_You_Serve?|你 服 侍 的 主 人 是 誰 ?
-qstr_SAURON_of_Mordor_The|指 環 之 王 ， 來 自 魔 多 的 的 索 倫 
-qstr_SARUMAN_of_Isengard_|蒼 白 之 手 ， 來 自 艾 辛 格 的 薩 魯 曼
-qstr_an_ORC^_serving_the_|一 個 獸 人 ， 為 全 知 之 眼 服 務
-qstr_an_URUK^_the_new_bre|一 個 奇 獸 人 ， 一 種 全 新 的 獸 人 
-qstr_a_MAN^_subjugated_by|一 個 人 類 ， 被 索 倫 所 征 服
-qstr_an_ORC^_serving_the_W|一 個 獸 人 ， 為 蒼 白 之 手 服 務 
-qstr_one_of_the_URUK_HAI^|強 獸 人，^繁 衍 於 艾 辛 格
-qstr_a_MAN_of_Dunland^_th|登 蘭 德 人， ^來 自 西 邊 平 原
-qstr_Click_the_center_but|點 擊 中 央 按 鈕 以 切 換 派 系^點 擊 人 物 以 觀 看 細 節
-qstr_Level:_{reg3}^Health|等 級 : {reg3}^生 命 : {reg4}
-qstr_Attributes|屬 性
-qstr_STR^AGI^INT^CHA|力 量^敏 捷^智 慧^魅 力
-qstr_Skills|技 能 點
-qstr_Ironflesh^Power_Stri|鐵 骨^強 擊^強 擲^強 弓^盾 防^跑 動^騎 術^騎 射
-qstr_Proficiencies|精 通
-qstr_1H_Weapons^2H_Weapon|單 手 武 器^雙 手 武 器^長 柄 武 器^弓 箭^弩^投 擲
-qstr_Equipment|裝 備
-qstr_The_Last_Days_Mod_Op|最 後 一 日 模 組 選 項
-qstr_War_Starts_at_Level:|戰 爭 開 始 於 等 級 :
-qstr_Restrict_Player_Equi|限 制 玩 家 裝 備 :
-qstr_Battle_Formations_an|戰 鬥 形 式 以 及 AI :
-qstr_Native|原 生
-qstr_TLD_FormAI__Original|TLD AI (原 版 )
-qstr_TLD_New_FormAI|TLD 新 AI
-; qstr_Siege_AI:__|Siege AI:  
-; qstr_Basic__better_perfor|Basic (better performance)
-; qstr_Advanced|Advanced
-qstr_Town_NPCs_Always_Acc|城 鎮 NPC 可 以 從 菜 單 訪 問：
-qstr_Cutscenes:__|場 景：
-qstr_Injuries_for_compani|同 伴 受 傷：
-qstr_Permanent_death_for_|領 主 和 同 伴 永 久 死 亡：
-qstr_Permanent_death_for_p|玩 家 永 久 死 亡 (就 是 你 )：
-qstr_Battle_morale_system|戰 鬥 士 氣 系 統 :
-qstr_Animal_ambushes:__|動 物 攻 擊 :
-qstr_Fallen_rider_damage_|落 馬 傷 害 提 示 :
-qstr_No_Messages|沒 有 訊 息
-qstr_Player_damage_only|只 有 玩 家 傷 害
-qstr_All_Messages|所 有 訊 息
-qstr_Troop_Identifier_in_|戰 鬥 中 的 部 隊 標 識 符 (在 戰 鬥 中 按 'Y' 鍵 顯 示 / 隱 藏 )：
-qstr_Disable|禁 用
-; qstr_Troop_Names|Troop Names
-; qstr_Simple:_Faction_Colo|Simple: Faction Colors
-; qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
-qstr_Preferred_Camera_Mod|鏡 頭 模 式 :
-qstr_Default_Camera|預 設 鏡 頭
-qstr_Free_Mode_Custom_Cam|自 由 鏡 頭
-qstr_Fixed_Over_The_Shoul|固 定 - 肩 後 鏡 頭
-qstr_Prevent_AI_from_taki|防 止 電 腦 採 取 防 禦 措 施 :
-qstr_Brighter_Nights:__|提 升 夜 晚 亮 度
-qstr_Done|完 成
-qstr_Gameplay_Tweaks|遊 戲 玩 法 調 整
-qstr_Beta_Formations_Twea|Beta 格 式 調 整
-qstr_War_Will_Start_at_Le|戰 爭 將 會 開 始 於 等 級 {reg0}
-qstr_Troop_Tree|兵 種 樹
-qstr__Click_on_a_unit_for|(在 單 位 上 點 擊 以 獲 得 更 多 細 節 )
-qstr_Weapons|武 器
-qstr_Armors|護 甲
-qstr_Others|其 他
-qstr_F4___Complex_formati|F4 - 複 雜 編 隊
-qstr_F7___Memorize_div._p|F7 - 記 憶 分 區 位 置
-qstr_F8___Default_divisio|F8 - 默 認 的 分 配 位 置
-qstr_F4___Ranks|F4 - 隊 形
-qstr_F5___Shield_Wall|F5 - 盾 牆
-qstr_F6___Wedge|F6 - 楔 形 陣
-qstr_F7___Square|F7 - 方 形 陣
-qstr_F8___No_Formation|F8 - 沒 有 陣 型
-qstr_Extended_Formations_|擴 展 編 隊 和 AI 選 項
-qstr_Put_player_in_divisi|將 部 隊 放 入：
+qstr_Received_{reg0}_dama|受到{reg0}傷害。
+qstr_Gate_is_breached!|大門被攻破了！
+qstr_Gate_opens..._You_ha|大門緩緩打開...你來到中土世界最神聖的地方了！
+qstr_Secret_place_discove|發現秘密之地！
+qstr_Next_Page|下一頁
+qstr_Action|行動
+qstr_Mount|騎乘
+qstr_Attack_Type|攻擊方式
+qstr_Hold_This_Position|堅守此地
+qstr_Follow_Me|跟著我
+qstr_Charge|衝鋒
+qstr_Advance|前進
+qstr_Fall_Back|後退
+qstr_Stand_Closer|靠攏
+qstr_Spread_Out|散開
+qstr_Stand_Ground|原地立守
+qstr_Dismount|下馬
+qstr_Use_Any_Weapon|任意使用武器
+qstr_Use_Blunt_Weapons|使用鈍器
+qstr_Hold_Your_Fire|停止射擊
+qstr_Fire_At_Will|自由射擊
+qstr_Us|我方
+qstr_Allies|盟友
+qstr_Enemies|敵軍
+qstr_Ready|預備
+qstr_Wounded|受傷
+qstr_Dead|死亡
+qstr_Routed|逃跑了
+qstr_Number_of_men_knocke|被擊倒的人數：{reg1}
+qstr_Number_of_men_left:_|剩餘的人數：{reg1}
+qstr_Opponents_Beaten:_{r|被擊敗的對手：{reg1}
+qstr_Opponents_Remaining:|剩餘的對手：{reg1}
+qstr_Gauntlet_wave:_1|第1場比賽
+qstr_Gauntlet_wave:_{reg1|第{reg1}場比賽
+qstr_Remain_in_retirement|保持退休。
+qstr_Go_back_to_the_adven|重出江湖。
+qstr_A_peaceful_village_n|一個在西谷不遠處的平靜村子...
+qstr_The_War_is_upon_Roha|戰爭降臨於洛汗了！
+qstr_Minas_Tirith___The_W|米那斯提力斯-白之城
+qstr_The_White_Tree_stand|白之樹在國王的血脈斷絕後就長年枯萎著。
+qstr_The_Shadow_grows_eve|東方的陰影成長到前所未見的強大
+qstr_Minas_Morgul___City_|米那斯魔窟-戒靈之城
+qstr_Sauron_s_armies_marc|索倫的軍隊向戰爭邁進！
+qstr_Adventurers_at_audie|冒險者覲見攝政王迪耐瑟二世...
+qstr___What_business_do_y|'你來我這，有何請求？'
+qstr___Your_Stewardship_w| '攝政王殿下，我們從遙遠之地前來...跳躍！'
+qstr___Enough_of_this_mad| '停止這種愚行！衛兵！！'
+qstr___I_ve_had_enough_of|'我已經受夠這些惡作劇了...下一批必須跪下！'
+qstr_Chest|胸部
+qstr_Cape|披肩
+qstr_Arms|手臂
+qstr_Thighs|大腿
+qstr_Legs|腿部
+qstr_Rotate|旋轉
+qstr_Close|關閉
+qstr_Faction_Side:^^Campa|陣營方：^^戰役難度：^^初始戰區：^^元帥：^^敵人：^^
+qstr_Campaign_Difficulty_|戰役難度取決於初始陣營力量，戰區的敵人，^陣營兵種樹狀圖和部隊裝備。
+qstr_Rallies:|鼓舞：
+qstr_View_Keybinds__Press|查看按鍵綁定(按Insert键)
+qstr_What_do_you_fight_fo|你為何而戰？
+qstr_Go_Back...|返回...
+qstr_Learn_about_the_diff|了解中土世界不同的陣營
+qstr_The_DAWN_of_a_New_Er|新紀元的黎明
+qstr_The_TWILIGHT_of_Man|人類的暮光
+qstr_Select_your_Race?|你的種族選擇是？
+qstr_Man|人類
+qstr_Elf|精靈
+qstr_Dwarf|矮人
+qstr_Whom_Do_You_Serve?|你要效忠於誰？
+qstr_SAURON_of_Mordor_The|魔多的索倫，魔戒之主
+qstr_SARUMAN_of_Isengard_|艾辛格的薩魯曼，白掌
+qstr_an_ORC^_serving_the_|半獸人，^邪眼之僕
+qstr_an_URUK^_the_new_bre|強獸人，^新品種的半獸人
+qstr_a_MAN^_subjugated_by|人類，^臣服於索倫
+qstr_an_ORC^_serving_the_W|半獸人，白掌之僕
+qstr_one_of_the_URUK_HAI^|強獸人，^生於艾辛格
+qstr_a_MAN_of_Dunland^_th|登蘭德人，^來自西方平原
+qstr_Click_the_center_but|點擊中央按鈕以切換陣營^點擊人物以查看詳細資訊
+qstr_Level:_{reg3}^Health|等級：{reg3}^生命值：{reg4}
+qstr_Attributes|屬性
+qstr_STR^AGI^INT^CHA|力量^敏捷^智慧^魅力
+qstr_Skills|技能
+qstr_Ironflesh^Power_Stri|鐵骨^強擊^強擲^強弓^盾防^運動^騎術^騎射
+qstr_Proficiencies|熟練度
+qstr_1H_Weapons^2H_Weapon|單手武器^雙手武器^長柄武器^弓箭^十字弓^投擲
+qstr_Equipment|裝備
+qstr_The_Last_Days_Mod_Op|最後之日模組設定
+qstr_War_Starts_at_Level:|戰爭始於等級：
+qstr_Restrict_Player_Equi|限制玩家裝備：
+qstr_Battle_Formations_an|戰鬥陣型和AI：
+qstr_Native|原版
+qstr_TLD_FormAI__Original|TLD陣型AI(初版)
+qstr_TLD_New_FormAI|TLD新陣型AI
+qstr_Siege_AI:__|攻城AI：
+qstr_Basic__better_perfor|基本(效能更好)
+qstr_Advanced|進階
+qstr_Town_NPCs_Always_Acc|可從選單訪問城鎮NPC：
+qstr_Cutscenes:__|過場動畫：
+qstr_Injuries_for_compani|同伴會受傷：
+qstr_Permanent_death_for_|領主和同伴會永久死亡：
+qstr_Permanent_death_for_p|玩家會永久死亡(就是你！)：
+qstr_Battle_morale_system|戰鬥士氣系統：
+qstr_Animal_ambushes:__|動物伏擊：
+qstr_Fallen_rider_damage_|落馬傷害訊息：
+qstr_No_Messages|不顯示訊息
+qstr_Player_damage_only|只顯示玩家傷害
+qstr_All_Messages|顯示所有訊息
+qstr_Troop_Identifier_in_|戰鬥中的部隊識別(在戰鬥中按Y鍵顯示/隱藏)：
+qstr_Disable|停用
+qstr_Troop_Names|部隊名稱
+qstr_Simple:_Faction_Colo|基本：陣營顏色
+qstr_Simple:_Black___Enem|基本：黑-敵方/白-友方
+qstr_Preferred_Camera_Mod|喜好的鏡頭模式：
+qstr_Default_Camera|預設鏡頭
+qstr_Free_Mode_Custom_Cam|自由模式自訂鏡頭
+qstr_Fixed_Over_The_Shoul|固定鏡頭-肩後
+qstr_Prevent_AI_from_taki|防止AI採取守勢：
+qstr_Brighter_Nights:__|較明亮的夜晚：
+qstr_Done|完成
+qstr_Gameplay_Tweaks|遊戲調整
+qstr_Beta_Formations_Twea|Beta陣型調整
+qstr_War_Will_Start_at_Le|戰爭將始於等級{reg0}
+qstr_Troop_Tree|兵種樹狀圖
+qstr__Click_on_a_unit_for|(點擊單位以獲得詳細資訊)
+qstr_Weapons|武器
+qstr_Armors|鎧甲
+qstr_Others|其他
+qstr_F4___Complex_formati|F4-複雜陣型
+qstr_F7___Memorize_div._p|F7-記憶分隊位置
+qstr_F8___Default_divisio|F8-預設的分隊位置
+qstr_F4___Ranks|F4-列陣
+qstr_F5___Shield_Wall|F5-盾牆
+qstr_F6___Wedge|F6-楔形陣
+qstr_F7___Square|F7-方陣
+qstr_F8___No_Formation|F8-無陣型
+qstr_Extended_Formations_|額外陣型和AI設定
+qstr_Put_player_in_divisi|將玩家置於分隊：
 qstr_None|無
-qstr_Army_rotates_to_face|軍 隊 轉 向 面 對 敵 人 的 中 心：
-qstr_Prevent_AI_from_takin|防 止 人 工 智 能 採 取 防 禦 措 施：
-qstr_AI_Controls_Troops_W|當 玩 家 被 擊 倒 時 由 AI 控 制 部 隊 :
-qstr_You_gained_{reg0}_Re|你 得 到 {s0} 的 資 源 {reg0} 點
-qstr_You_lost_{reg0}_Reso|你 失 去 {s0} 的 資 源 {reg0} 點
-qstr_{s24}:|{s24} :
-qstr_Great_Hope_of_{s5}|{s5} 希 望
-qstr_Hope_of_{s5}|希 望 {s5}
-qstr_Indispensable_Ally_o|堅 不 可 摧 的 盟 友 {s5}
-qstr_Faithful_Ally_of_{s5|忠 誠 的 盟 友 {s5}
-qstr_Trusted_Friend_of_{s|信 任 的 朋 友 {s5}
-qstr_Close_Friend_of_{s5}|親 近 的 朋 友 {s5}
-qstr_Friend_of_{s5}|朋 友 {s5}
-qstr_Familiar_to_{s5}|熟 人 {s5}
-qstr_Known_to_{s5}|認 識 的 人 {s5}
-qstr_Stranger_to_{s5}|陌 生 人 {s5}
-qstr_Great_Enforcer_of_{s|{s5} 的 強 大 執 行 者
-qstr_Enforcer_of_{s5}|{s5} 的 執 行 者
-qstr_Important_Ally_of_{s|{s5} 的 重 要 盟 友
-qstr_Ally_of_{s5}|{s5} 的 盟 友
-qstr_Accomplice_of_{s5}|{s5} 的 共 犯
-qstr_Useful_Tool_of_{s5}|實 用 的 工 具 {s5}
-qstr_Servant_of_{s5}|{s5} 的 僕 人
-qstr_Unknown_to_{s5}|{s5} 的 未 知
-qstr_You_have_been_{reg1?|你 已 經 {reg1?晉 升:降 職} 為 {s24} ({reg0})！
-qstr_You_{reg1?earned:los|你 在 主 派 系 {s11} {reg1?earned:lost} 了 {reg11} 軍 功 以 及 {reg12?and {reg12} 影 響 力 : }。
-qstr_You_{reg1?earned:lost|你 因 為 {s11} {reg1?earned:lost} 了 {reg11} 地 位 點 數 以 及  {reg12?and {reg12} 影 響 力 : }
-qstr_You_spent_{reg10}_of|你 在 {s1} 上 花 費 了 {reg10} 的 影 響 力，還 剩 下 {reg11}  點 。
-qstr_Troop_upkeep:|部 隊 維 護 ：
-qstr_{s11}_and_{s10}|{s11} 和 {s10}
-qstr_their|他 們 的
-qstr_its|他 的
-qstr_[no_upkeep_costs]|[沒 有 保 養 費 用 ]
-qstr_Short_of_Resource_Po|缺 少 資 源 點 ! !
-qstr_{s10}_will_soon_reas|{s10} 很 快 就 會 從 妳 的 部 隊 中 調 走 一 些 {s12} ！
-qstr_Superior_orders_from|來 自 {s11} 的 上 級 命 令 重 新 分 配 部 隊 ：
-qstr_{reg12}_{s10}_left_t|{reg12} {s10} 離 開 了 隊 伍 ！
-qstr_Fangorn_claimed_{reg|法 貢 森 林 宣 稱 殺 了 你 的 部 隊 {reg0} 人 以 及 重 傷 {reg1}  人 !
-qstr_You_were_wounded_in_|你 在 法 貢 森 林 受 傷 了 !
-qstr_{s1}_of_{s3}_was_def|{s3} 的 {s1} 在 戰 鬥 中 被 擊 敗 了 !
-qstr_{s2}_have_razed_{s1}|{s2} 劫 掠 了 {s1} !
-qstr_Left_for_dead_but_mi|被 扔 下 等 死 卻 奇 蹟 般 的 生 還 ： {reg1?{reg1} 時 間 {reg2?:}: 從 來 沒 有 過}
-qstr_1_Res.Pt__{s2}_|1 資 源 點 ({s2})
-qstr_{reg1}_Res.Pts__{s2}|{reg1} 資 源 點 ({s2})
-qstr_+30_to_Party_Morale|+30 隊 伍 士 氣
-qstr_+20_to_Party_Morale|+20 隊 伍 士 氣
-qstr_+1_to_Riding_Skill|+1 騎 術
-qstr_during_battles|戰爭時
-qstr_+1_to_Pathfinding|+1 嚮 導
-; qstr_+2_to_Wound_Treatmen|+2 to Wound Treatment (Party)
-; qstr_+2_to_Surgery__Party|+2 to Surgery (Party)
-; qstr_+2_to_Pathfinding__P|+2 to Pathfinding (Party)
-qstr_Use_from_Camp_Menu|從 營 地 選 單 使 用
-qstr_Use_from|用 來
-qstr_Action_Menu|動 作 清 單
-; qstr_Bonus_to_Wound_Treat|Bonus to Wound Treatment (Party)
-; qstr_Bonus_to_Surgery__Pa|Bonus to Surgery (Party)
-; qstr_Bonus_to_First_Aid__|Bonus to First Aid (Party)
-qstr_+1_to_Weapon_Mastery|+1 武 器 掌 握
-qstr_+1_to_Wound_Treatmen|+1 療 傷
-qstr_+1_to_Tactics|+1 戰 術
-qstr_+1_to_Power_Strike|+1 強 擊
-qstr_+1_to_Strength|+1 力 量
-qstr_+1_to_Agility|+1 敏 捷
-qstr_+1_to_Leadership|+1 統 御
-qstr_+1_to_Wildcraft|+1 野 外 求 生
-qstr_+1_to_Tracking|+1 跟 踪
-qstr_+1_to_Athletics|+1 運 動
-qstr_when_equipped|已 裝 備 時
-qstr_+1_to_Power_Draw|+1 強 弓
-qstr_The_record_of_Balin_|巴 林 的 失 落 探 險 隊 的 紀 錄
-qstr_Who_might_be_interes|誰 會 對 這 個 有 興 趣？
-qstr_Bonus_to_Shield_Skil|加 成 盾 防
-; qstr_Turns_nature_to_your|Turns nature to your side
-; qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
-qstr_Bonus_to_Power_Strik|加 成 強 擊
-qstr_+1_to_Trainer|+1 教 練
-qstr_Recruits_Tribal_Orcs|招 募 部 落 獸 人
-qstr_rally|集 結
-qstr_rallies|集 結
-qstr_+{reg1}_{s3}_in_batt|戰 鬥 中 +{reg1} {s3}
-qstr_+1_to_Charisma|+1 魅 力
-; qstr_Call_Reinforcements|Call Reinforcements
-; qstr__Effect_scales_with_|(Effect scales with Strength and Charisma)
-qstr_+1_to_First_Aid|+1 急 救
-qstr_+1_to_Surgery|+1 手 術
-qstr_+1_to_Intelligence|+1 智 力
-qstr_+2_to_Surgery|+2 手 術
-qstr_+1_to_Riding|+1 騎 術
-qstr_+1_to_Mounted_Archer|+1 騎 射 
-qstr_Bonus_to_Riding|加 成 騎 術
-; qstr_when_equipped.__Effec|when equipped. (Effect scales with Strength)
-; qstr_Orcs:_+1_Riding_Requ|Orcs: +1 Riding Requirement
-qstr_+1_to_Prisoner_Mgmt|+1 俘 虜 管 理
-qstr_+2_to_Tactics|+2 工 程
-qstr_+1_Intelligence|+1 智 力
-qstr_+{reg1}_to_Spotting|+{reg1} 偵 察
-qstr__Scales_with_Wildcra|野 外 求 生 比 例
-; qstr_Strengthens_all_Hero|Strengthens all Heroes
-; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
-qstr_+1_to_Power_Throw|+1 強 擲
-qstr_+1_to_Spotting|+1 偵 察
-qstr_Less_Dunnish_upkeep|減 少 登 丹 的 消 耗
-qstr_Less_Wargs_upkeep|減 少 座 狼 的 消 耗
-qstr_Light_Armor|輕 型 鎧 甲
-qstr_Bonus_to_Strength__P|加 成 力 量（只有玩家）
-; qstr_Lead_more_Orcs|Lead more Orcs
-qstr_+{reg1}_to_Party_Mor|+{reg1} 隊 伍 士 氣
-; qstr_Range:_{reg55}|Range: {reg55}
-qstr_Do_you_want_to_disem|你 想 上 岸 嗎？
-qstr_Move_here|移 到 此 處
-qstr_View_notes|查 看 筆 記
-qstr_Looted_your_items|整 理 你 的 物 品
-qstr_nothing|沒 有 東 西
+qstr_Army_rotates_to_face|軍隊轉向面對敵人的中心：
+qstr_Prevent_AI_from_takin|防止AI採取守勢：
+qstr_AI_Controls_Troops_W|當玩家被擊倒時由AI控制部隊：
+qstr_You_gained_{reg0}_Re|你得到了{s0}的{reg0}資源點。
+qstr_You_lost_{reg0}_Reso|你失去了{s0}的{reg0}資源點。
+qstr_{s24}:|{s24}：
+qstr_Great_Hope_of_{s5}|{s5}的希望
+qstr_Hope_of_{s5}| {s5}的期待
+qstr_Indispensable_Ally_o|{s5}不可或缺的盟友
+qstr_Faithful_Ally_of_{s5|{s5}忠實的盟友
+qstr_Trusted_Friend_of_{s|{s5}信任的朋友
+qstr_Close_Friend_of_{s5}|{s5}親近的朋友
+qstr_Friend_of_{s5}|{s5}的朋友
+qstr_Familiar_to_{s5}|{s5}的熟人
+qstr_Known_to_{s5}| {s5}認識的人
+qstr_Stranger_to_{s5}|{s5}的陌生人
+qstr_Great_Enforcer_of_{s|{s5}的大執行者
+qstr_Enforcer_of_{s5}|{s5}的執行者
+qstr_Important_Ally_of_{s|{s5}重要的盟友
+qstr_Ally_of_{s5}|{s5}的盟友
+qstr_Accomplice_of_{s5}|{s5}的共犯
+qstr_Useful_Tool_of_{s5}|{s5}實用的工具
+qstr_Servant_of_{s5}|{s5}的僕人
+qstr_Unknown_to_{s5}|未知於{s5}
+qstr_You_have_been_{reg1?|你已經{reg1?晉升:降等}為{s24} ({reg0})！
+qstr_You_{reg1?earned:los|你在家鄉陣營{s11}{reg1?得到:失去}了{reg11}階級點{reg12?和{reg12}影響力:}。
+qstr_You_{reg1?earned:lost|你在{s11}{reg1?得到:失去}了{reg11}階級點{reg12?和{reg12}影響力:}。
+qstr_You_spent_{reg10}_of|你使用了對{s1}的{reg10}影響力，還剩下{reg11}。
+qstr_Troop_upkeep:|部隊工資：
+qstr_{s11}_and_{s10}|{s11}和{s10}
+qstr_their|他們的
+qstr_its|它的
+qstr_[no_upkeep_costs]|[無工資費]
+qstr_Short_of_Resource_Po|缺少資源點！！
+qstr_{s10}_will_soon_reas|{s10}很快就會從你的隊伍中調走{s12}名部下！
+qstr_Superior_orders_from|來自{s11}的上級命令重新分配部隊：
+qstr_{reg12}_{s10}_left_t|{reg12}名{s10}離開了隊伍！
+qstr_Fangorn_claimed_{reg|法貢森林奪走了你部隊中{reg0}人的命和重傷了{reg1}人！
+qstr_You_were_wounded_in_|你在法貢森林中受傷了！
+qstr_{s1}_of_{s3}_was_def|{s3}的{s1}在戰鬥中被擊敗了。
+qstr_{s2}_have_razed_{s1}|{s2}把{s1}夷為平地了！
+qstr_Left_for_dead_but_mi|被丟著等死卻奇蹟似生還的次數：{reg1?{reg1}次{reg2?:}:從來沒有過}
+qstr_1_Res.Pt__{s2}_|1資源點({s2})
+qstr_{reg1}_Res.Pts__{s2}|{reg1}資源點({s2})
+qstr_+30_to_Party_Morale|隊伍士氣+30
+qstr_+20_to_Party_Morale|隊伍士氣+20
+qstr_+1_to_Riding_Skill|騎術技能+1
+qstr_during_battles|戰鬥時
+qstr_+1_to_Pathfinding|尋路+1
+qstr_+2_to_Wound_Treatmen|(隊伍)療傷+2
+qstr_+2_to_Surgery__Party|(隊伍)手術+2
+qstr_+2_to_Pathfinding__P|(隊伍)尋路+2
+qstr_Use_from_Camp_Menu|從營地選單使用
+qstr_Use_from|使用
+qstr_Action_Menu|行動選單
+qstr_Bonus_to_Wound_Treat|(隊伍)療傷加成
+qstr_Bonus_to_Surgery__Pa|(隊伍)手術加成
+qstr_Bonus_to_First_Aid__|(隊伍)急救加成
+qstr_+1_to_Weapon_Mastery|武器掌握+1
+qstr_+1_to_Wound_Treatmen|療傷+1
+qstr_+1_to_Tactics|戰術+1
+qstr_+1_to_Power_Strike|強擊+1
+qstr_+1_to_Strength|力量+1
+qstr_+1_to_Agility|敏捷+1
+qstr_+1_to_Leadership|統御+1
+qstr_+1_to_Wildcraft|野外求生+1
+qstr_+1_to_Tracking|追蹤+1
+qstr_+1_to_Athletics|運動+1
+qstr_when_equipped|在裝備時
+qstr_+1_to_Power_Draw|強弓+1
+qstr_The_record_of_Balin_|巴林失落探險隊的紀錄。
+qstr_Who_might_be_interes|誰可能會對這個有興趣？
+qstr_Bonus_to_Shield_Skil|盾防加成
+qstr_Turns_nature_to_your|讓大自然站在己方
+qstr_when_equipped.__Effe|在裝備時。(效果依野外求生的等級而定)
+qstr_Bonus_to_Power_Strik|強擊加成
+qstr_+1_to_Trainer|教練+1
+qstr_Recruits_Tribal_Orcs|招募部落半獸人
+qstr_rally|鼓舞
+qstr_rallies|鼓舞
+qstr_+{reg1}_{s3}_in_batt|戰鬥中+{reg1}次{s3}能力
+qstr_+1_to_Charisma|魅力+1
+qstr_Call_Reinforcements|呼叫增援
+qstr__Effect_scales_with_|(效果依力量和魅力的等級而定)
+qstr_+1_to_First_Aid|急救+1 
+qstr_+1_to_Surgery|手術+1
+qstr_+1_to_Intelligence|智力+1
+qstr_+2_to_Surgery|手術+2 
+qstr_+1_to_Riding|騎術+1
+qstr_+1_to_Mounted_Archer|騎射+1
+qstr_Bonus_to_Riding|騎術加成
+qstr_when_equipped.__Effec|在裝備時。(效果依力量等級而定)
+qstr_Orcs:_+1_Riding_Requ|半獸人：騎術需求+1
+qstr_+1_to_Prisoner_Mgmt|囚犯管理+1
+qstr_+2_to_Tactics|戰術+2
+qstr_+1_Intelligence|智力+1
+qstr_+{reg1}_to_Spotting|偵察+{reg1}
+qstr__Scales_with_Wildcra|(依野外求生的等級而定)
+qstr_Strengthens_all_Hero|強化所有英雄
+qstr_+2_to_First_Aid__Par|(隊伍)急救+2
+qstr_+1_to_Power_Throw|強擲+1
+qstr_+1_to_Spotting|偵察+1
+qstr_Less_Dunnish_upkeep|減少登丹人的工資
+qstr_Less_Wargs_upkeep|減少座狼的工資
+qstr_Light_Armor|輕型鎧甲
+qstr_Bonus_to_Strength__P|力量加成(只限玩家)
+qstr_Lead_more_Orcs|領導更多半獸人
+qstr_+{reg1}_to_Party_Mor|隊伍士氣+{reg1}
+qstr_Range:_{reg55}|距離：{reg55}
+qstr_Do_you_want_to_disem|你想上岸嗎？
+qstr_Move_here|移動到此處
+qstr_View_notes|查看筆記
+qstr_Looted_your_items|搶奪了你的物品
+qstr_nothing|沒什麼
 qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
-; qstr_You_gained_{reg84}_e|You gained {reg84} experience from your intelligence.
-; qstr_You_gained_{reg84}_w|You gained {reg84} weapon points from your agility.
-qstr_{reg4}_killed_{reg5}|{reg4} 人 被 殺 ， {reg5} 人 受 傷 ， {reg6} 人 逃 跑
-qstr_{reg4}_killed_{reg5}_|{reg4} 人 被 殺 ， {reg5} 人 受 傷
-qstr_{reg4}_killed_{reg5}_r|{reg4} 人 被 殺 ， {reg5} 人 逃 跑
-qstr_{reg4}_wounded_{reg5|{reg4} 人 受 傷 ， {reg5} 人 逃 跑
-qstr_killed|被 殺
-qstr_routed|逃 跑
-qstr_wounded|受 傷
-qstr_{s0}^TOTAL:_{reg3}__|{s0}^總 計 ： {reg3} ({s2})
+qstr_You_gained_{reg84}_e|你從自己的智力中得到{reg84}經驗值
+qstr_You_gained_{reg84}_w|你從自己的敏捷中得到{reg84}武器值
+qstr_{reg4}_killed_{reg5}|{reg4}死亡，{reg5}受傷，{reg6}逃跑了
+qstr_{reg4}_killed_{reg5}_|{reg4}死亡，{reg5}受傷
+qstr_{reg4}_killed_{reg5}_r|{reg4}死亡，{reg5}逃跑了
+qstr_{reg4}_wounded_{reg5|{reg4}受傷，{reg5}逃跑了
+qstr_killed|死亡
+qstr_routed|逃跑了
+qstr_wounded|受傷
+qstr_{s0}^TOTAL:_{reg3}__|{s0}^總計：{reg3}({s2})
 qstr_^None|^無
-qstr_near_the_Great_East_|靠 近 東 方 大 道 ， 被 遺 棄 的 舊 道 路
-qstr_near_what_is_left_of|靠 近 古 老 森 林 路 的 遺 跡 ， 古 老 的 矮 人 路 徑 曾 經 穿 越 茂 密 的 森 林
-qstr_close_to_the_Hand_sh|靠 近 薩 魯 曼 的 標 記 附 近 ， 指 向 奧 桑 克 塔 的 方 向
-qstr_in_sight_of_the_maje|在 潔 白 之 城 米 那 斯 提 力 斯 雄 偉 的 城 牆 之 下
-qstr_in_sight_of_Edoras_t|看 到 了 伊 多 拉 斯 ， 洛 汗 的 首 都
-qstr_in_sight_of_the_Horn|看 到 了 聖 盔 谷 ， 洛 汗 的 重 要 堡 壘
-qstr_in_sight_of_Dol_Amro|看 到 了 多 爾 安 羅 斯 ， 貝 爾 法 拉 斯 領 主 的 王 座
-qstr_in_sight_of_the_Mora|看 到 了 莫 拉 農 ， 魔 多 的 黑 門
-qstr_in_sight_of_Dol_Guld|看 到 了 多 爾 哥 多 ， 索 倫 在 北 方 的 堡 壘
-qstr_on_the_green_pasture|在 比 翁 之 家 周 圍 的 綠 色 牧 場 和 許 多 開 著 花 的 草 地 上
-qstr_on_the_shores_of_Lak|在 米 爾 斯 米 爾 湖 岸 邊 ， 靠 近 摩 瑞 亞 東 門
-qstr_on_the_shores_of_the|在 長 湖 的 岸 邊 ， 可 以 看 到 長 湖 鎮
-qstr_near_the_coast_of_Go|靠 近 剛 鐸 的 海 岸 。 你 可 以 聽 到 遙 遠 的 海 浪 聲 和 海 鷗 的 叫 聲 。
-qstr_in_the_outskirts_of_|在 奧 斯 吉 力 亞 斯 的 郊 區 ， 剛 鐸 的 前 首 都
-qstr_in_sight_of_the_entr|能 看 到 矮 人 孤 山 堡 壘 的 地 方
-qstr_in_sight_of_the_dark|看 得 見 奧 桑 克 塔 的 地 方
-qstr_near_the_Old_Ford_wh|靠 近 老 渡 口 (古 老 森 林 路 橫 跨 安 都 因 河 ) 的 地 方
-qstr_near_a_big_ford_cros|靠 近 {S15} 河 對 岸 的 大 渡 口
-qstr_near_a_small_ford_cr|靠 近 {S15} 河 對 岸 的 小 渡 口
-qstr_Battle_Advantage_=_{ = " 戰 鬥 優 勢 = {reg0}."
-qstr_{s9}_wants_you_to_re|{s9} 希 望 你 繼 續 跟 隨 他 的 軍 隊 直 到 進 一 步 的 通 知 。
-qstr__Being_Raided_|(遭 到 襲 擊 )
-qstr__Looted_|(洗 劫 一 空 )
-qstr__Under_Siege_|(被 圍 困 )
-qstr_{s3}_is_no_longer_un|{s3} 不 再 被 圍 困 。
-qstr_Enemies_spotted_near|在 {s1} 附 近 發 現 了 敵 人 。
-qstr_Your_relation_with_{|你 與 {s1} 的 關 係 提 升 了 。
-qstr_Your_relation_with_{s|你 與 {s1} 的 關 係 惡 化 了 。
-; qstr_{s1}_gained_faction_|{s1} gained faction strength!
-; qstr_{s1}_lost_faction_st|{s1} lost faction strength!
-qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?曾:正} 在 {s3} 。
-qstr_{s2}_{reg3?was:is}_t|{s2} {reg3?已 經:正 在} 趕 去 {s3} ， 而 {reg4?她:他} {reg3?之 前:應 該} 在 {s4} {reg3?:附 近}。
-qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?:正} 在 野 外 某 地 ， 而 {reg4?她:他} {reg3?之 前:應 該} 在 {s3} {reg3?:附 近} 。
-qstr_{s2}_{reg3?was:is}_b|{s2} {reg3?曾:正} 被 囚 禁 在 {s3} 。
-qstr_{s2}_{reg3?was:has_b|{s2} {reg3?曾:已} 被 {reg4?她 的:他 的} 敵 人 俘 虜 。
-qstr_{reg3?{s2}_s_locatio|{reg3?{s2} 的 位 置 未 明 : 我 不 知 道 {s2} 在 哪 裡 } 。
-qstr_{s6}_has_joined_your|{s6} 加 入 了 你 的 隊 伍
-qstr_elven|精 靈
-qstr_dwarven|矮 人
-qstr_orc|獸 人
-qstr_uruk|奇 獸 人
-qstr_uruk_hai|強 獸 人
-qstr_trollish|無 知 的
-qstr_man|人 類
-qstr_riding|騎 術
-qstr_marching|行 軍
-qstr_charging|衝 鋒
-qstr_We_know_this_is_your|我 們 知 道 這 是 你 的 土 地，{playername}。^請 相 信 我 們，一 起 把 敵 人 打 倒 吧。
-qstr_I_trust_you._{s20}_a|我 相 信 你。{s20} 和 {s21} 應 該 成 為 朋 友 並 彼 此 相 信。
-qstr_There_is_wisdom_in_y|你 的 言 語 間 充 滿 了 智 慧，{playername}。
-qstr_Why_should_I?_Better|我 為 什 麼 要 聽 你 的 ？ 你 最 好 馬 上 離 開 {s20} 的 土 地 ！
-qstr_We_will_go_in_peace_|我 們 會 和 平 地 離 開，前 提 是 要 完 成 我 們 的 任 務。詳 情 恐 怕 我 不 能 告 訴 你。
-qstr_Is_this_your_land_{p|這 是 你 的 土 地 嗎，{playername}？這 裡 真 臭。^但 冷 靜 點，我 們 只 須聽 從 {s20} 的 命 令。
-qstr_Yes_go_on_do_whateve|去 吧，跟 {s22} 所 說 的 做。
-qstr_Of_course.|當 然 了。
-qstr_I_don_t_like_this._W|我 不 喜 歡 這 樣 ， 是 什 麼 原 因 讓 你 從 {s21} 大 老 遠 跑 過 來 ？
-qstr_Do_you_fear_us_{play|你 在 害 怕 我 們 嗎，來 自 {s20} 的 {playername}？你 好 像 在 躲 避 著 {s22}？^^你 走 吧，不 然 會 有 人 受 傷。
-qstr_It_s_a_servant_of_{s|這 是 {s22} 的 僕 人。畏 懼 {s23} 吧，{playername}！
-qstr_Our_allies_are_you?_|你 是 我 們 的 盟 友？你 可 以 通 過 了。
-qstr_And_we_shall_not_kil|我 們 不 應 殺 了 你，就 目 前 來 說。
-qstr_This_land_belongs_to|這 片 土 地 屬 於 {s20}... 跟 {s23} 沒 有 任 何 關 系。
-qstr_We_will_stay_as_long|我 們 將 在 這 裡 等 到 吾 主 命 令 截 止 ！ 你 應 該 感 謝 幸 運 ， 我 們 不 是 專 程 來 找 你 的 ！
-qstr_You_wear_the_colors_| 你 穿 著 {s20} 的 服 飾。但 你 在 {s21} 要 做 什 麼？^快 說！
-qstr_We_are_pursuing_our_|我 們 正 在 追 趕 我 們 的 敵 人，同 時他 們 也 是 你 的 敵 人！
-qstr_Maybe._Or_maybe_you_|可 能 吧。但 你 也 可 能是 間 諜。^回 到 你 的 地 方 去，{s20} 的 戰 士。
-qstr_We_are_friends_of_{s|我 們 都 是 {s21} 的 朋 友。
-qstr_Time_will_tell_if_yo|時 間 會 證 明 你 所 言 之 事 的 真 假 。 目 前 我 們 很 難 分 清 敵 我 。
-qstr_What_are_you_doing_h|你 在 {s21} 要 做 什 麼，{s20} 的 混 蛋？這 是 我 們 的 地 方，不 是 你 的！
-qstr_You_dare_question_di|你 竟 敢 質 疑 來 自 {s23} 的 命 令？
-qstr_Guess_not._But_I_sti|我 想 也 不 是。但 我 不 想 你 在 我 這 裡。^我 會 監 視 著 你，{s20} 的 {playername}。
-qstr_None_of_your_busines|跟 你 沒 關 係，混 蛋！
-qstr_*growls*^You_should_|*吼～*^，為 我 們 的 主 人 而 戰 你 應 該 感 到 萬 分 榮 幸 ， 否 則 等 著 你 的 就 是 我 們 的 大 軍 。
-qstr_What_are_you_doing_s|你 離 家 這 麼 遠 是 要 做 什 麼，{s22} 的 奴 隸？在 這 裡，{s23} 就 是 主 人！
-qstr_Quiet!_I_didn_t_came|安 靜！這 次 我 不 是 為 你 而 來。
-qstr_And_I_ve_orders_to_l|這 次 我 接 到 了 命 令 讓 你 通 過。
-qstr_None_of_your_business|跟 你 沒 關 係。
-qstr_You_slaves_of_{s22}_|你 們 這 些 {s22} 奴 隸 真 弱！你 要 慶 幸 有 我 們 做 你 的 盟 友...
-qstr_Look_whom_we_meet_so|看 看 我 們 遇 見 了 誰：來 自 {s20} 的 戰 士！這 是 好 消 息 還 是 壞 消 息？
-qstr_{s20}_and_{s21}_figh|{s20} 和 {s21} 為 共 同 的 理 想 而 戰 。 在 這 片 充 滿 敵 意 的 土 地 上 我 們 應 該 同 仇 敵 愾 。
-qstr_In_these_dark_times_|在 這 個 黑 暗 的 時 代 ， 每 個 人 都 自 身 難 保 ， {playername} 。 但 我 依 舊 希 望 你 能 一 路 平 安 。
-qstr_Neither_good_nor_bad|既 不 好 也 不 壞 ， 我 們 的 事 情 由 我 們 自 己 搞 定 。
-qstr_Everybody_on_his_way|每 個 人 都 有 自 己 的 路 ， 再 會！
-qstr_What_are_you_trying_|你 要 在 這 裡 做 什 麼，{s20} 的 混 蛋？想 偷 我 們 的 戰 利 品？
-qstr_Ha!_Soon_there_will_|哈！很 快 會 有 很 多 戰 利 品 給 大 家 了。
-qstr_Yes._Unless_you_get_|是 的。除 非 你 先 死 了。
-qstr_You_don_t_get_any_sp|如 果 你 死 了 你 不 會 得 到 任 何 戰 利 品，{s21} 的 蠢 蛋。
-qstr_Is_that_a_threat?_Be|這 是 威 脅 嗎？你 要 感 謝 這 裡 我 們 有 共 同 的 敵 人，否 則 就 是 你。
-qstr_The_enemy_is_upon_us|敵 人 就 在 前 方！^
-qstr_They_are_upon_us!_^|他 們 就 在 前 方！^
-qstr_{playername}_and_{hi|來 自 {s18} 的 {playername} 和 {his/her} 的 烏 合 之 眾 就 在 我 們 的 前 方！^
-qstr_ORCS!_ORCS!|獸 人 ! 獸 人 !
-qstr_ORCS!_ORCS!_Fight_fo|獸 人 ! 獸 人 ! 為 你 的 生 命 而 戰 !
-qstr_Elven_ghosts!|精 靈 亡 靈 ！
-qstr_Here_they_come!_Hold|他 們 來 了！保 持 隊 形 ！
-qstr_We_are_under_attack!|我 們 受 到 襲 擊！
-qstr_Horse_people!_The_ho|騎 兵！那 些 騎 兵 就 在 我 們 的 前 方！
-qstr_Men_from_the_White_C|來 自 白 城 的 人 類 ？ 來 吧 ！ 把 他 們 送 入 死 亡 ！
-qstr_Death_to_men!|去 死 吧 人 類 ！
-qstr_Kill_the_maggots!|殺 了 這 些 渣 滓 ！
-qstr_Death_to_traitors_of|去 死 吧 ， 邪 眼 的 叛 徒 ！
-qstr_Death_to_traitors_of_|去 死 吧 ， 白 手 的 叛 徒 !
-qstr_{s14}Kill_them_all!_|{s14} 殺 光 他 們！不 要 留 活 口 ！
-qstr_Tonight_we_feast_on_|今 夜 讓 我 們 踩 著 {s15} 的 屍 骨 盡 情 狂 歡 吧 ！
-qstr_Gharr!_Kill!_Kill!_K|咕 啊 ！ 殺 ！ 殺 ！ 殺 ！
-qstr_Slaughter_these_half|殺 了 這 些 獸 人 ！
-qstr_Fear_no_elven_ghosts|別 怕 這 些 精 靈 亡 魂 ！
-qstr_{s14}Double_rations_|{s14} 斬 首 最 多 者 獎 賞 翻 倍 ！
-qstr_{s14}Double_rations_t|{s14} 斬 下 {s15} 首 級 最 多 者 獎 賞 翻 倍 ！
-qstr_{s14}Kill_these_hors|{s14} 幹 掉 這 些 馬 賊 ！
-qstr_Kill_them_all!_Take_|殺 光 他 們 ！ 拿 回 我 們 的 東 西 ！
-qstr_Tonight_there_will_b|今 晚 {s16} 會 少 一 個 敵 人 ！
-qstr_Baruk_Khazd!_Khazd_a|Baruk Khazâd！ Khazâd ai-mênu！^^(矮 人 戰 吼 ： 矮 人 的 戰 斧 啊 ！ 矮 人 向 你 衝 來 了 ！ )
-qstr_{s14}Riders_of_Rohan|{s14} 洛 汗 騎 手 ！ 記 住 你 們 為 什 麼 而 戰 ！
-qstr_{s14}More_{s19}heads|{s14} 更 多 {s19} 負 責 裝 飾 黑 門 的 大 門 ！
-qstr_The_Wise_Master_shal|智 慧 的 主 人 (薩 魯 曼 ) 將 會 很 高 興 聽 到 {playername} 已 經 死 亡 這 件 事 ！
-qstr_{s14}Now_we_will_put|{s14} 現 在 我 們 將 結 束 這 些 污 穢 的 痛 苦 。
-qstr_{s14}Today_we_shall_|{s14} 今 天 我 們 將 與 瑞 文 戴 爾 的 敵 人 公 平 戰 鬥 。
-qstr_All_who_enter_Mirkwo|所 有 帶 著 惡 意 進 入 幽 暗 密 林 之 人 都 將 永 埋 於 此 ！
-qstr_Men_of_{s16}_the_ene|{s16} 的 子 民 ， 敵 人 就 在 眼 前 ！ 為 你 們 的 土 地 而 戰 ！
-qstr_Men_of_{s16}_charge!|{s16} 的 子 民 ， 衝 鋒 ！ 為 你 們 的 土 地 而 戰 ！
-qstr_{s14}Grind_their_bod|{s14} 將 他 們 碾 碎 ！
-qstr_{s14}Dwarves_or_men_|{s14} 矮 人 和 人 類 都 及 不 上 我 等 的 兇 猛 ！
-qstr_{s14}Elves_or_men_th|{s14} 精 靈 和 人 類 都 及 不 上 我 等 的 兇 猛 ！
-qstr_{s14}Flesh_to_shatte|{s14} 軀 體 將 碎 ， 喉 嚨 將 斷 ， 鮮 血 將 撒 ！
-qstr_Put_on_the_masks_of_|戴 上 你 的 頭 盔 吧，戰 士 們！今 天 就 是 {s18} 的 末 日！
-qstr_They_seek_the_tempes|他 們 渴 求 風 暴 ？ 好 ！ 他 們 將 被 滿 足 ！ 戰 士 們 ， 準 備 戰 鬥 ！
-qstr_Draw_your_weapons_me|戰 士 們 ， 拔 出 你 的 武 器 ！ 我 們 將 把 風 暴 帶 給 敵 人 ！
-qstr_Orcs_of_{s16}_get_re|{s16} 的 獸 人 ， 準 備 好 ！ 有 幾 個 頭 顱 在 等 著 你 呢 ！
-qstr_These_friend_of_elve|這 些 精 靈 的 朋 友 將 落 在 我 們 的 刀 刃 之 下 ！
-qstr_These_Elves_will_fal|這 些 精 靈 將 落 在 我 們 的 刀 刃 下 ！
-qstr_Raahh!_Draw_your_wea|啊 哈 ！ 拔 出 你 的 武 器 ， {s16} 的 渣 滓 們 ！ 今 晚 我 們 將 在 {s15} 的 屍 骨 上 狂 歡 ！
-qstr_Rha!_{s14}More_{s15}|吼 啊 ！ {s14} 更 多 的 {s15} 屍 體 將 在 我 的 腳 下 堆 積 ！
-qstr_Slaughter_these_puny|現 在 屠 殺 {s18} 這 些 微 不 足 道 的 小 偷 ！ 然 後 我 們 燒 毀 他 們 的 家 園 並 砍 伐 他 們 的 家 庭 。
-qstr_Death_to_the_trespas|{s16} 領 土 的 入 侵 者 ， 給 我 去 死 吧 ！
-qstr_CHARGE!_Let_s_clear_|衝 鋒 ！ 讓 我 們 消 滅 這 群 來 自 {s17} 的 {s18} {s19} 渣 滓 ！
-qstr_{s14}Now_that_{s19}s|{s14} 讓 {s19} 渣 滓 嚐 嚐 熊 人 的 怒 火 吧 ！
-qstr_Attack!|攻 擊 !
-qstr_You_are_attacked_by_|你 被 一 群 哥 布 林 攻 擊 了 !
-qstr_Holding|堅 守 中
-qstr_Following|跟 隨 中
-qstr_Charging|衝 鋒 中
-qstr_Advancing|前 進 中
-qstr_Falling_Back|撤 退 中
-qstr_Standing_Closer|聚 攏 中
-qstr_Spreading_Out|散 開 中
-qstr_Standing|站 立 中
-qstr_N/A|無
-qstr_Free|隨 意
-qstr_Any_Weapon|任 意 武 器
-qstr_Blunt_Weapons|鈍 類 武 器
-qstr_Infantry__{reg1}_|步 兵 ({reg1})
-qstr_Archers__{reg2}_|弓 箭 手 ({reg2})
-qstr_Cavalry__{reg3}_|騎 兵 ({reg3})
-qstr_Given_by:_{s62}|給 予 ： {s62}
-qstr_Given_on:_{s60}|開 始 於 ： {s60}
-qstr_You_have_{reg0}_days|你 有 {reg0} 天 來 完 成 這 個 任 務 。
-qstr_This_quest_has_been_|任 務 終 止 。 與 {s59} 談 話 以 結 束 任 務 。
-qstr_This_quest_has_been_s|任 務 成 功 完 成 。 與 {s59} 談 話 以 索 取 報 酬 。
-qstr_This_quest_has_faile|任 務 失 敗 。 與 {s59} 談 話 以 解 釋 情 況 。
-qstr_At_the_time_quest_wa|接 受 任 務 時 ：^{s1}
-qstr_{s7}_and_{s8}|{s7} 和 {s8}
-qstr_{s7}_{s8}|{s7}, {s8}
-qstr_noone|沒 有 人
-qstr_{s9}_and_{s10}|{s9} 和 {s10}
-qstr_{s9}_{s10}|{s9} , {s10}
-qstr_no_one|沒 有 人
-qstr_{s11}_and_{s12}|{s11} 和 {s12}
-qstr_{s11}_{s12}|{s11} , {s12}
-qstr_{s5}_is_ruled_by_{s6|{s5} 由 {s6} 統 治 。 ^佔 據 著 {s8} 。 ^封 臣 分 別 是 {s10} 。 ^{s5} 正 與 {s12} 交 戰 。
-qstr_{s5}_has_been_defeat|{s5} 被 擊 敗 了 ！
-qstr_{s5}_has_a_strength_|{s5} 有 {reg1} 名 軍 人 。
-qstr_no_holdings|沒 有 封 地
-qstr_{s57}_and_{s58}|{s57} 和 {s58}
-qstr_{s57}_{s58}|{s57} , {s58}
+qstr_near_the_Great_East_|靠近被遺棄的老舊道路，東方大道
+qstr_near_what_is_left_of|靠近古老的矮人森林小徑，森林古路的遺跡
+qstr_close_to_the_Hand_sh|在薩魯曼的白掌符號附近，指著奧桑克塔的方向
+qstr_in_sight_of_the_maje|在白之城，米那斯提力斯雄偉的城牆視野範圍內
+qstr_in_sight_of_Edoras_t|在伊多拉斯，洛汗的首都視野範圍內
+qstr_in_sight_of_the_Horn|在號角堡，洛汗的偉大要塞視野範圍內
+qstr_in_sight_of_Dol_Amro|在多爾安姆羅斯，貝爾法拉斯親王們的所在之處視野範圍內
+qstr_in_sight_of_the_Mora|在黑門，魔多的黑暗閘門視野範圍內
+qstr_in_sight_of_Dol_Guld|在多爾哥多，索倫的北方要塞視野範圍內
+qstr_on_the_green_pasture|在比翁之家周圍的茵茵牧場和繁花似錦的草地上
+qstr_on_the_shores_of_Lak|靠近摩瑞亞東門，鏡影湖岸上
+qstr_on_the_shores_of_the|在長湖岸上，湖畔之城，長湖鎮視野範圍內
+qstr_near_the_coast_of_Go|靠近剛鐸的海岸。你可以聽到遙遠的浪聲和海鷗叫。
+qstr_in_the_outskirts_of_|在剛鐸的前首都，奧斯吉力亞斯的郊區
+qstr_in_sight_of_the_entr|在矮人要塞，孤山的入口視野範圍內
+qstr_in_sight_of_the_dark|在奧桑克塔視野範圍內
+qstr_near_the_Old_Ford_wh|靠近老渡口，森林古路橫越安都因河之處
+qstr_near_a_big_ford_cros|靠近橫越{s15}河岸的大渡口
+qstr_near_a_small_ford_cr|靠近橫越{s15}河岸的小渡口
+qstr_Battle_Advantage_=_{ = "戰鬥優勢= {reg0}。"
+qstr_{s9}_wants_you_to_re|{s9}想要你在接到進一步的通知前繼續跟隨他的軍隊。
+qstr__Being_Raided_|(遭到掠奪中)
+qstr__Looted_|(被洗劫一空)
+qstr__Under_Siege_|(受到圍困)
+qstr_{s3}_is_no_longer_un|{s3}已經不再受到圍困了。
+qstr_Enemies_spotted_near|在{s1}附近發現了敵人。
+qstr_Your_relation_with_{|你與{s1}的關係提升了。
+qstr_Your_relation_with_{s|你與{s1}的關係惡化了。
+qstr_{s1}_gained_faction_|{s1}獲得了陣營力量！
+qstr_{s1}_lost_faction_st|{s1}失去了陣營力量！
+qstr_{s2}_{reg3?was:is_cu|{s2}{reg3?曾:正}在{s3}。
+qstr_{s2}_{reg3?was:is}_t|{s2}{reg3?曾經:正}前往{s3}然後{reg4?她:他}{reg3?之前:應該}{reg3?:正}在{s4}附近。
+qstr_{s2}_{reg3?was:is}_i|{s2}{reg3?曾經:正}在荒郊野外然後{reg4?她:他}{reg3?之前:應該}{reg3?:正}在{s3}附近。
+qstr_{s2}_{reg3?was:is}_b|{s2}{reg3?曾:正}被囚禁在{s3}。
+qstr_{s2}_{reg3?was:has_b|{s2}{reg3?曾:已}被{reg4?她:他}的敵人俘虜。
+qstr_{reg3?{s2}_s_locatio|{reg3?{s2}的位置不明:我不知道{s2}在哪裡}。
+qstr_{s6}_has_joined_your|{s6}加入了你的隊伍
+qstr_elven|精靈
+qstr_dwarven|矮人
+qstr_orc|半獸人
+qstr_uruk|強獸人
+qstr_uruk_hai|強獸人
+qstr_trollish|食人妖
+qstr_man|人類
+qstr_riding|騎行中
+qstr_marching|行軍中
+qstr_charging|衝鋒中
+qstr_We_know_this_is_your|我們知道這是你的土地，{playername}。^相信我們，我們是來一起對付共同敵人的。
+qstr_I_trust_you._{s20}_a|我相信你。{s20}和{s21}應該成為朋友並相信彼此。
+qstr_There_is_wisdom_in_y|{playername}，你的言語中充滿了智慧。
+qstr_Why_should_I?_Better|我為何要聽你的？你最好馬上離開{s20}的土地！
+qstr_We_will_go_in_peace_|我們會和平地離開，前提是要等我們完成任務。詳情呢，我們恐怕不能告訴你。
+qstr_Is_this_your_land_{p|這是你的土地嗎，{playername}？這裡真臭。^稍安勿躁，我們只是聽從我們共同主人的命令來到{s20}的。
+qstr_Yes_go_on_do_whateve|好的，你們繼續，照{s22}所說的做吧。
+qstr_Of_course.|當然了。
+qstr_I_don_t_like_this._W|我可不喜歡這樣。是什麼原因讓你們從{s21}大老遠跑過來？
+qstr_Do_you_fear_us_{play|你在害怕我們嗎，來自{s20}的{playername}？哼，你究竟瞞著{s22}什麼事？^^別惹我們，就不會有人受傷。
+qstr_It_s_a_servant_of_{s|這是{s22}的僕人。畏懼{s23}吧，{playername}！
+qstr_Our_allies_are_you?_|我們的盟友，是嗎？我想你可以通過了。
+qstr_And_we_shall_not_kil|我們應該不殺掉你，目前是這樣。
+qstr_This_land_belongs_to|這片土地屬於{s20}...與{s23}無關。
+qstr_We_will_stay_as_long|我們將在這裡待到吾主命令為止！你應該慶幸我們不是專程來找你的。
+qstr_You_wear_the_colors_|你帶著{s20}的旗幟。但你在{s21}做什麼？^快說！
+qstr_We_are_pursuing_our_|我們正在追趕我們的敵人，他們也是你的敵人！
+qstr_Maybe._Or_maybe_you_|可能吧。但你也可能是間諜。^{s20}的士兵，回到屬於你的地方去吧。
+qstr_We_are_friends_of_{s|我們是{s21}的朋友。
+qstr_Time_will_tell_if_yo|時間會證明你所言真偽。這陣子我們很難分清敵我。
+qstr_What_are_you_doing_h|{s20}的渣滓，你在{s21}做什麼？這是我們的土地，不是你的！
+qstr_You_dare_question_di|你竟敢質疑來自{s23}的命令？
+qstr_Guess_not._But_I_sti|我想不是吧。但我仍不喜歡你在附近。^{s20}的{playername}，我會盯著你的。
+qstr_None_of_your_busines|與你無關，豬頭！
+qstr_*growls*^You_should_|*低吼*^你應該感到萬分榮幸自己是為我們的主人而戰，否則你這樣擅闖絕對會完蛋。
+qstr_What_are_you_doing_s|{s22}的奴隸，你離家這麼遠是在做什麼？在這裡，{s23}才是主人！
+qstr_Quiet!_I_didn_t_came|安靜！我不是專程來找你的。這次不是。
+qstr_And_I_ve_orders_to_l|我接到了讓你通過的命令。僅此一次。
+qstr_None_of_your_business|與你無關。
+qstr_You_slaves_of_{s22}_|你們這些{s22}的奴隸真弱！你要慶幸我們認你們作為盟友...
+qstr_Look_whom_we_meet_so|瞧瞧我們遇見了離家這麼遠的誰呢：{s20}的士兵！這是好消息還是壞消息呢？
+qstr_{s20}_and_{s21}_figh|{s20}和{s21}為共同的理想而戰。在這片敵方的土地上我們應該合作。
+qstr_In_these_dark_times_|在這個黑暗的時代，每個人都自身難保，{playername}。^但我祝你能夠平安回家。
+qstr_Neither_good_nor_bad|既不好，也不壞。我們的事會自己搞定。
+qstr_Everybody_on_his_way|看來，各走各的路吧。
+qstr_What_are_you_trying_|{s20}的渣滓，你想在這裡做什麼？偷我們的戰利品嗎？
+qstr_Ha!_Soon_there_will_|哈！很快會有足夠的戰利品分給大家了。
+qstr_Yes._Unless_you_get_|是的。除非你先死了。
+qstr_You_don_t_get_any_sp|{s21}的渣滓，你死了就不會得到任何戰利品喔。
+qstr_Is_that_a_threat?_Be|你在威脅我嗎？你要感謝在輪到你之前我們還有共同的敵人要宰。
+qstr_The_enemy_is_upon_us|敵人來了！^
+qstr_They_are_upon_us!_^|他們來了！^
+qstr_{playername}_and_{hi|來自{s18}的{playername}和{他/她}的烏合之眾來了！^
+qstr_ORCS!_ORCS!|半獸人！半獸人！
+qstr_ORCS!_ORCS!_Fight_fo|半獸人！半獸人！不想死就奮戰吧！
+qstr_Elven_ghosts!|精靈亡魂！
+qstr_Here_they_come!_Hold|他們來了！保持隊形！
+qstr_We_are_under_attack!|我們受到攻擊了！
+qstr_Horse_people!_The_ho|騎馬之民！騎馬之民來了！
+qstr_Men_from_the_White_C|來自白之城的人類？讓他們來吧，送他們下地獄！
+qstr_Death_to_men!|去死吧人類！
+qstr_Kill_the_maggots!|殺了這些蛆蟲！
+qstr_Death_to_traitors_of|去死吧邪眼的叛徒！
+qstr_Death_to_traitors_of_|去死吧白掌的叛徒！
+qstr_{s14}Kill_them_all!_|{s14}殺光他們！不留活口！
+qstr_Tonight_we_feast_on_|今晚讓我們用{s15}的血肉開宴會吧！
+qstr_Gharr!_Kill!_Kill!_K|嘎啊啊！殺！殺！殺！
+qstr_Slaughter_these_half|宰了這些半人類！
+qstr_Fear_no_elven_ghosts|別怕精靈亡魂！
+qstr_{s14}Double_rations_|{s14}斬首最多者配給翻倍！
+qstr_{s14}Double_rations_t|{s14}斬下{s15}首級最多者配給翻倍！
+qstr_{s14}Kill_these_hors|{s14}幹掉這些馬賊！
+qstr_Kill_them_all!_Take_|殺光他們！奪回屬於我們的東西！
+qstr_Tonight_there_will_b|今晚{s16}將會少一個敵人！
+qstr_Baruk_Khazd!_Khazd_a|矮人的戰斧啊！矮人來啦！
+qstr_{s14}Riders_of_Rohan|{s14}洛汗的騎手！記住你們為何而戰！
+qstr_{s14}More_{s19}heads|{s14}有更多{s19}的頭可以拿來裝飾黑門了！
+qstr_The_Wise_Master_shal|當我把{playername}的屍體帶給聰慧的主人他會很高興吧！
+qstr_{s14}Now_we_will_put|{s14}現在我們將結束這些汙穢東西的痛苦。
+qstr_{s14}Today_we_shall_|{s14}今天我們將與伊姆拉崔和世上公平正義的敵人戰鬥。
+qstr_All_who_enter_Mirkwo|所有帶著惡意進入幽暗密林之人都將永眠於此！
+qstr_Men_of_{s16}_the_ene|{s16}的子民，敵人就在這裡！為你們的土地而戰！
+qstr_Men_of_{s16}_charge!|{s16}的子民，衝鋒！為你們的土地而戰！
+qstr_{s14}Grind_their_bod|{s14}碾碎他們！
+qstr_{s14}Dwarves_or_men_|{s14}矮人和人類，都比不上我們的勇猛啦！
+qstr_{s14}Elves_or_men_th|{s14}精靈和人類，都比不上我們的勇猛啦！
+qstr_{s14}Flesh_to_shatte|{s14}軀體可碎，喉嚨可割，鮮血可撒！
+qstr_Put_on_the_masks_of_|戴上你們的戰士面具吧，弟兄們！今天就是我們來自{s18}的敵人的末日！
+qstr_They_seek_the_tempes|他們渴求風暴，他們將被滿足！弟兄們，準備戰鬥！
+qstr_Draw_your_weapons_me|弟兄們，拔出你們的武器，我們將把風暴帶給敵人！
+qstr_Orcs_of_{s16}_get_re|{s16}的半獸人，準備好！這裡有好幾個喉嚨等你們來割呢！
+qstr_These_friend_of_elve|這些精靈的朋友將死在我們的刀刃下！
+qstr_These_Elves_will_fal|這些精靈將死在我們的刀刃下！
+qstr_Raahh!_Draw_your_wea|啊啊！拔出你的武器，{s16}的渣滓！今晚我們將用{s15}的內臟開宴會！
+qstr_Rha!_{s14}More_{s15}|啊！{s14}有更多可以用我們扭曲的武器來損毀的{s15}屍體啦！
+qstr_Slaughter_these_puny|宰了這些微不足道的{s18}小偷！接著我們將燒毀他們的家園並砍了他們的家人。
+qstr_Death_to_the_trespas|{s16}土地的擅闖者去死吧！
+qstr_CHARGE!_Let_s_clear_|衝鋒！讓我們從{s18}清除這群來自{s17}{s19}的渣滓！
+qstr_{s14}Now_that_{s19}s|{s14}讓{s19}的渣滓嚐嚐熊之民的怒火吧！
+qstr_Attack!|攻擊！
+qstr_You_are_attacked_by_|你被一群哥布林攻擊了！
+qstr_Holding|堅守中
+qstr_Following|跟隨中
+qstr_Charging|衝鋒中
+qstr_Advancing|前進中
+qstr_Falling_Back|後退中
+qstr_Standing_Closer|靠攏中
+qstr_Spreading_Out|散開中
+qstr_Standing|立守中
+qstr_N/A|不適用
+qstr_Free|自由行動
+qstr_Any_Weapon|任意武器
+qstr_Blunt_Weapons|鈍器
+qstr_Infantry__{reg1}_|步兵({reg1})
+qstr_Archers__{reg2}_|弓兵({reg2})
+qstr_Cavalry__{reg3}_|騎兵({reg3})
+qstr_Given_by:_{s62}|給自：{s62}
+qstr_Given_on:_{s60}|給於：{s60}
+qstr_You_have_{reg0}_days|你有{reg0}天來完成這個任務。
+qstr_This_quest_has_been_|任務執行完畢。與{s59}談話以結束任務。
+qstr_This_quest_has_been_s|任務成功完成。與{s59}談話以索取報酬。
+qstr_This_quest_has_faile|任務失敗。與{s59}談話以解釋情況。
+qstr_At_the_time_quest_wa|接受任務時：^{s1}
+qstr_{s7}_and_{s8}|{s7}和{s8}
+qstr_{s7}_{s8}|{s7}，{s8}
+qstr_noone|沒有人
+qstr_{s9}_and_{s10}|{s9}和{s10}
+qstr_{s9}_{s10}|{s9}，{s10}
+qstr_no_one|沒有人
+qstr_{s11}_and_{s12}|{s11}和{s12}
+qstr_{s11}_{s12}|{s11}，{s12}
+qstr_{s5}_is_ruled_by_{s6|{s5}由{s6}統治。^控制著{s8}。^旗下指揮官有{s10}。^{s5}正與{s12}交戰。
+qstr_{s5}_has_been_defeat|{s5}被擊敗了！
+qstr_{s5}_has_a_strength_|{s5}共有{reg1}名兵力。
+qstr_no_holdings|沒有封地
+qstr_{s57}_and_{s58}|{s57}和{s58}
+qstr_{s57}_{s58}|{s57}，{s58}
 qstr_{reg3?She:He}|{reg3?她:他}
-qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} 是 {s56} 的 統 治 者 。  ^:{s54} 臣 服 於 {s56} 統 治 者 {s55} 。 ^}} {reg9?{reg3?她:他} 是 {s58} 的 {reg3?領 主:領 主}:} {s59}{reg10?^{reg3?她:他} 已 經 戰 死 ！  :}
-qstr_The_last_time_you_sa|上 次 你 在 {s1} 見 過 {reg1?她:他}
-qstr_The_last_time_you_he|上 次 你 在 {s1} 聽 說 過 {reg1?她:他}
+qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54}是{s56}的統治者。^:{s54}臣服於{s56}的{s55}。^}}{reg9?{reg3?她:他}是{s58}的{reg3?女領主:領主}:}{s59}{reg10?^{reg3?她:他}已戰死！:}
+qstr_The_last_time_you_sa|你上次見到{reg1?她:他}，{s1}
+qstr_The_last_time_you_he|你上次聽說過{reg1?她:他}的事情，{s1}
 qstr_The_{s50}|{s50}
-qstr_{s50}_belongs_to_{s1|{s50} 屬 於 {s2} 的 {s1} 。 ^
-qstr_Current_garrison_con|當 前 的 守 城 部 隊 有 {reg5} 人 。 共 有 {reg6} 天 的 存 糧 。
-qstr_Very_Poor|非 常 貧 瘠
-qstr_Poor|貧 瘠
-qstr_Average|一 般
-qstr_Rich|富 有
-qstr_Very_Rich|非 常 富 有
-qstr_Strength|力 量
-qstr_Agility|敏 捷
-qstr_Intelligence|智 力
-qstr_Charisma|魅 力
-qstr_You_ve_gained_{s6}_f|獲 得 {s7} 後 獲 得 {s6}
-qstr_You_ve_lost_{s6}_fro|你 失 去 了 {s7}，失 去 了 {s6}
-qstr_{s50}_Caves|{s50} 洞 穴
-qstr_{s50}_Mines|{s50} 礦 山
-qstr_{s50}_Woods|{s50} 樹 林
-qstr_{s4}_looks_upset.|{s4} 看 起 來 很 沮 喪 。
-qstr_your_party|你 的 隊 伍
-qstr_{reg0?One_of_your_pr|{reg0?你 的 一 個 俘 虜:俘 虜} {s3} 的 {s1} 從 囚 禁 中 逃 跑 了 ！
-qstr_You_brought_{reg3}_h|你 帶 來 {reg3} 頭 牛 到 {s1}。
-qstr_Log_entry_{reg3}:_ty|進 入 日 誌 {reg3} ： 類 型 {reg4}
-qstr_Center:_{s4}|中 央 ： {s4}
-qstr_Troop:_{s4}|部 隊 ： {s4}
-qstr_Lord:_{s4}|領 主 ： {s4}
-qstr_Ally_party_is_presen|盟 軍 出 現
-qstr_{s4}_is_present_at_e|{s4} 參 與 事 件
-qstr_Event_#{reg5}_type_{|事 件 #{reg5} ， 類 型 {reg6}， 時 間 {reg8} ： 玩 家 所 屬 派 係 與 目 標 部 隊 的 關 係 為 {reg7}
-qstr_Event_#{reg5}_type_{r|事 件 #{reg5} ， 類 型 {reg6} ， 時 間 {reg8} ： 玩 家 所 屬 派 係 與 目 標 派 系 中 央 的 關 係 為 {reg7}
-qstr_Event_#{reg5}_type_{re|事 件 #{reg5} ， 類 型 {reg6} ， 時 間 {reg8} ： 玩 家 所 屬 派 係 與 目 標 派 係 為 {reg7}
-qstr_Event_#{reg5}_type_{reg|事 件 #{reg5} ， 類 型 {reg6} ， 時 間 {reg8} 。 與 相 關 派 係 無 建 交
-qstr_Event_#{reg5}_type_{reg6|事 件 #{reg5} ， 類 型 {reg6} ， 時 間 {reg8} 。 玩 家 未 加 入
-qstr_Elapsed_hours:_{reg7|經 過 的 小 時 數 ： {reg7}
-qstr_Reputation_type:_{s1|榮 譽 類 型 ： {s15}
-qstr_Entries_up_to_#{reg5|進 入 #{reg5} 時 跳 過
-qstr_A_new_location_is_no|一 個 新 的 地 點 出 現 在 地 圖 上 !
-qstr_New_trait_gained:_{s|新 特 性 獲 得 ： {s5} 。
-qstr_Gained_permanent_+1_|獲 得 力 量 永 久 +1 。
-qstr_Gained_permanent_+1_t|獲 得 敏 捷 永 久 +1 。
-qstr_Gained_permanent_+1_to|獲 得 魅 力 永 久 +1 。
-qstr_Gained_permanent_+20|獲 得 武 器 熟 練 度 永 久 +20 。
-qstr_Gained_permanent_+2_|獲 得 力 量 永 久 +2 。
-qstr_Gained_permanent_+2_t|獲 得 魅 力 永 久 +2 。
-qstr_Lost_permanent__1_to|魅 力 永 久 -1 。
-qstr_Gained_permanent_+1_to_|鐵 骨 等 級 永 久 +1 。
-qstr_Gained_permanent_+5_|獲 得 力 量 永 久 +5 。
-qstr_Lost_permanent__2_to|魅 力 永 久 -2
-qstr_Gained_permanent_+2_to|鐵 骨 等 級 永 久 +2 。
-qstr_Gained_permanent_+10|獲 得 武 器 熟 練 度 永 久 +10 。
-qstr_Gained_permanent_+1_to_T|戰 術 等 級 永 久 +1 。
-qstr_You_have|你 有
-qstr_{s1}_has|{s1} 有
-qstr_{s11}_suffered_a_ser|{s11} 受 到 了 重 傷 。
-qstr_The_leg_has_been_bad|腿 部 在 戰 鬥 中 遭 到 重 創 。
-qstr___2_athletics__1_rid|(-2 跑 動 ， -1 騎 術 ，  -2 敏 捷 ，  -15 近 戰 武 器 熟 練 度 )
-qstr_The_arm_has_been_bad|手 臂 在 戰 鬥 中 受 到 重 創 。
-qstr___20_weapon_skill__2|(-20 武 器 熟 練 度 ， -2 力 量  ， -1 強 擊 等 級 )
-qstr_The_head_has_suffere|頭 部 遭 到 重 擊 。
-qstr___1_intelligence_ski|(-1 智 力 相 關 技 能 ，  -15 遠 程 武 器 熟 練 度 )
-qstr_The_chest_has_suffer|胸 部 有 一 些 部 分 骨 折 。
-qstr___20_weapon_skill_|(-20 武 器 熟 練 度 )
-qstr_{s1}_has_been_killed|{s1} 已 被 殺 死 。
-qstr_You_were_killed.|你 被 殺 了 。
-qstr_{s1}_recovered_from_|{s1} 從 重 傷 的 傷 口 中 恢 復 過 來 。
-qstr_The_leg_wound_has_he|腿 部 傷 口 癒 合 了 。
-qstr__+2_athletics_+1_rid|(+2 跑 動 ， +1 騎 術 ， +2 敏 捷 ， +15 近 戰 武 器 熟 練 度 )
-qstr_The_arm_wound_has_he|手 臂 傷 口 癒 合 了 。
-qstr__+20_weapon_skill_+2|(+20 武 器 熟 練 度 ， +2 力 量 等 級 ， +1 強 擊 等 級 )
-qstr_The_head_wound_has_h|頭 部 的 傷 被 治 癒 了
-qstr__+1_intelligence_ski|(+1 智 力 相 關 技 能 ， +15 遠 程 武 器 熟 練 度 )
-qstr_The_cracked_ribs_hav|裂 開 的 肋 骨 已 癒 合 。
-qstr__+20_weapon_skill_|(+20 武 器 熟 練 度 )
-qstr_{s1}_has_had_his_hea|{s1} 完 全 恢 復 了
-qstr_News_has_arrived_tha|消 息 已 經 傳 來 ， {s1} 的 {s2} 在 戰 鬥 中 被 {s28} 的 部 隊 殺 死 了 ！
-qstr_{s1}_s_Burial_Mound|{s1} 的 埋 骨 地
-qstr_{s1}_s_Funeral_Pyre|{s1} 的 火 葬 堆
-qstr_{s1}_is_logged_as_de|{s1} 被 記 錄 為 死 亡
-qstr_You_have_been_discov|你 在 爬 上 城 牆 之 前 就 被 發 現 了 。
-qstr_The_enemy_is_coming_|大 量 的 敵 軍 正 在 接 近 ！ 你 必 須 馬 上 撤 離 ！
-qstr_Scout_this_area_alon|獨 自 偵 查 這 個 地 方 並 且 和 你 的 士 兵 在 外 匯 合 ！
-qstr_Be_stealthy_but_elim|放 低 姿 態 ， 快 速 地 清 除 所 有 威 脅
-qstr_You_are_spotted_by_a|你 被 巡 邏 隊 發 現 了 ！
-qstr_Eliminate_them_befor|在 他 們 發 出 警 報 前 幹 掉 他 們 ！
-qstr_You_have_reached_the|你 已 經 達 到 地 牢 ！
-qstr_Eliminate_the_guards|幹 掉 衛 兵 並 解 救 你 的 人 !
-qstr_{s1}_has_been_captur|{s1} 被 敵 軍 俘 虜 了 ！
-qstr_Gondor_takes_a_capti|剛 鐸 抓 到 了 一 名 俘 虜
-qstr_Rohan_takes_a_captiv|洛 汗 抓 到 了 一 名 俘 虜
-qstr_Mordor_takes_a_capti|魔 多 抓 到 了 一 名 俘 虜
-qstr_Isengard_takes_a_cap|艾 辛 格 抓 到 了 一 名 俘 虜
-qstr_You_were_grievously_|您 受 到 重 創 ， 並 被 扔 到 死 屍 堆 中 。 請 慎 重 決 定 您 逃 跑 的 時 機 ； 否 則 ， 敵 人 將 有 可 能 發 現 您 。 當 然 ， 能 迅 速 逃 離 才 是 最 好 的 。
-qstr_You_were_grievously_w|您 在 戰 鬥 中 身 受 重 傷 ， 在 您 部 下 的 保 護 下 突 圍 成 功 。 您 的 部 隊 因 此 損 失 慘 重 。
-qstr_You_were_grievously_wo|您 在 戰 鬥 中 身 受 重 傷 ， 在 您 部 下 的 保 護 下 突 圍 成 功 。 您 的 部 隊 因 此 損 失 慘 重 。 更 不 幸 的 是 ， 您 有 部 分 同 伴 被 俘 虜 並 關 押 到 了  {s2} 。
-qstr_You_were_grievously_wou|您 在 戰 鬥 中 身 受 重 傷 ， 在 您 部 下 的 保 護 下 突 圍 成 功 。 然 而 不 幸 的 是 ， 巫 師 也 逃 走 了 。
-qstr_You_were_grievously_woun|您 受 到 重 創 ， 並 被 扔 到 死 屍 堆 中 。 慎 重 決 定 您 突 圍 逃 跑 的 時 機 ； 同 時 ， 巫 師 逃 走 了 。
-qstr_Some_of_your_compani|你 的 一 些 同 伴 正 遭 受 的 舊 傷 的 困 擾 。
-qstr_Item_you_just_equipp|剛 才 裝 備 的 物 品 不 適 用 於 該 種 族 的 人 物 ， 它 很 快 將 從 裝 備 欄 移 入 物 品 欄^^請 保 持 物 品 欄 有足 夠 的 空 間 ， 否 則 您 將 失 去 這 個 物 品 。
-qstr_Inappropriate_equipm|不 適 合 的 裝 備
-qstr_The_mount_you_just_e|剛 才 裝 備 的 坐 騎 不 適 用 於 該 種 族 的 人 物 。 請 注 意 ， 如 果 你 堅 持 這 樣 做 的 話 ， 有 可 能 導 致 戰 場 中 的 坐 騎 行 為 異 常 。
-qstr_Inappropriate_mount|不 適 合 的 坐 騎
-qstr_{s24}:_Your_infantry|{s24} ： 你 的 步 兵 感 覺 好 些 了 ！
-qstr_{s24}:_Your_archers_|{s24} ： 你 的 弓 箭 手 感 覺 好 些 了 ！
-qstr_{s24}:_Your_cavalry_|{s24} ： 你 的 騎 兵 感 覺 好 些 了 ！
-; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
-qstr_Who_are_you?|你 是 誰 ?
-qstr_A_friend_of_{s3}_and|{s3} 的 朋 友 和 {s2} 的 人 。   現 在 快 點 ！ 魔 多 吸 引 了 所 有 邪 惡 的 東 西 ， 黑 暗 力 量 正 在 控 制 它 們 的 意 志 將 它 們 聚 集 在 那 裡 。 世 界 上 一 切 美 好 的 東 西 都 快 沒 時 間 了 ， 除 非 我 們 抵 抗 它 的 每 一 個 行 動 ！
-qstr_What_should_I_do?|我 該 做 什 麼 ?
-; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
-qstr_Good_to_see_the_Shad|很 高 興 看 到 你 還 沒 被 索 倫 的 陰 影 打 敗 ， {playername} 。
-qstr_You_are_the_one_they|你 就 是 人 們 口 中 的 甘 道 夫 或 米 斯 蘭 達 (辛 達 林 語 ) 。
-qstr_That_is_what_some_ca|他 們 的 確 如 此 稱 呼 我 ， 而 我 也 曾 被 稱 呼 過 其 他 名 字 。 但 這 些 已 經 不 重 要 了 ， 除 非 黑 暗 消 失 ， 很 快 就 再 也 不 會 有 任 何 人 能 夠 稱 呼 我 的 任 何 名 字 了 。
-qstr_What_do_you_mean?|你 的 意 思 是?
-qstr_In_spite_of_their_va|儘 管 他 們 英 勇 的 抵 抗 過 ， {s3} 最 終 還 是 被 黑 暗 吞 沒 了 。 {s3} 的 人 們 不 得 不 背 井 離 鄉 ， 美 好 的 {s4} 已 經 一 去 不 復 返 了 。
-qstr_You_bring_dismal_new|你 帶 來 了 令 人 沮 喪 的 消 息 ， 巫 師 。
-qstr_But_I_also_bring_a_m|但 我 也 但 來 了 一 絲 希 望 。 {s5} 的 人 們 仍 然 在 堅 持 抵 抗 ， 他 們 的 領 主 和 戰 士 堅 定 無 畏 。
-qstr_Help_them_fight_the_|請 你 盡 最 大 的 努 力 幫 助 他 們 抵 抗 敵 人 ， 永 不 放 鬆 ！ 但 請 保 持 警 惕 ！ 這 世 上 有 比 半 獸 人 更 加 古 老 邪 惡 的 東 西 。
-qstr_Beware_{playername}_|請 注 意 ， {playername} ， 黑 暗 的 力 量 開 始 衰 弱 了 。   {s3} 已 經 陷 落 ， 包 括 他 的 領 導 者 {s4} 。
-qstr_What_do_you_want_of_|你 需 要 我 做 甚 麼 ， 老 頭 ？
-qstr_Just_know_that_a_Daw|黎 明 定 將 到 來 ， 這 是 必 然 ， 但 我 不 知 道 你 能 否 看 到 那 一 天 了 。 如 果 你 足 夠 幸 運 ， 你 也 該 考 慮 一 下 對 自 己  良 心 的 解 釋 。
-qstr_Well_met_{playername|很 高 興 見 到 你 ， {playername} ， {s24} 。 我 當 初 果 然 沒 有 錯 你 。 魔 多 的 陰 影 已 被 打 破 。 其 中 你 幫 了 大 忙 ！
-qstr_Thank_you_Mithrandir|謝 謝 你 ， 米 斯 蘭 達 (辛 達 林 語 ) ！
-qstr_The_wizard_Saruman_i|墮 落 巫 師 薩 魯 曼 已 死 ， 邪 黑 塔 連 同 其 主 黑 暗 魔 君 也 已 經 被 粉 碎 ！ 中 土 世 界 的 諸 民 擊 敗 了 將 吞 噬 所 有 的 美 好 與 聖 潔 的 威 脅 。 敵 人 被 擊 敗 ， 諸 王 的 血 脈 已 回 歸 ！
-qstr_It_was_a_long_and_bl|這 是 一 個 漫 長 而 殘 酷 的 戰 爭 ， 我 們 有 許 多 摯 友 為此 付 出 了 生 命 。
-qstr_There_is_much_to_reg|我 們 有 著 許 多 的 遺 憾 和 悲 哀 ， 還 有 更 多 的 事 物 等 著 我 們 去 重 建  和 修 繕 。 但 是 現 在 ， 讓 我 們 跟 身 邊 的 朋 友 一 起 歡 呼 吧 ！ 慶 祝 我 們 所 做 的 ， 和 第 三 紀 的 最 後 之 日 ！
-qstr_Bagginsssss..._Ssssh|巴 金 斯… 斯… 夏… 夏… 爾…
-qstr_I..._don_t_know!|我... 我 不 知 道
-qstr_It..._beckonsssssss.|他 在 .... 對 我 招 手 ..........
-qstr_Treachery..._Unforgi|背 信 棄 義…  不 可 饒 恕…
-qstr_But_I...|但 我 …
-qstr_Noone..._oppossssses|無 人… 人… 能… 阻 擋… 擋…  邪 黑 塔… 並 存 活… 活…！
-qstr_All..._must..._submi|所 有 人… 必 須… 屈 從... 且… 臣 服…
-qstr_I_serve_the_Eye!|我 服 從 索 倫 之 眼 ！
-qstr_I_shall_serve_the_Ey|我 將 臣 服 於 索 倫 之 眼 ！
-qstr_Go_to_{s1}_and_speak|去 {s1} 和 {s9} 交 談 。
-qstr_The_Remnant_Forces_o|{s22} 的 殘 餘 部 隊 聚 集 在 一 起 ， 以 加 強 {s15} 防 禦 ！
-qstr_The_strength_of_the_|{s15} 戰 區 剩 餘 的 盟 軍 力 量 有 所 增 強
-qstr_{s30}_reinforced_by_|{reg65} 派 系 加 強 {s30}
-qstr_{s1}_has_been_besieg|{s1} 正 被 {s3} 的 {s2} 圍 困 ！
-qstr_The_forces_of_{s2}_m|{s2} 的 軍 隊 正 向 {s15} 行 軍 ！
-qstr_Rohan_capital_moved_|洛 汗 首 都 已 經 從 伊 多 拉 斯 移 動 到 號 角 堡 ！
-qstr_Dale_capital_moved_f|河 谷 鎮 首 府 從 河 谷 鎮 遷 至 長 湖 鎮 ！
-qstr_Gundabad_capital_mov|剛 達 巴 山 首 都 從 剛 達 巴 山 搬 到 了 哥 布 林 鎮 ！
-qstr_The_hosts_of_{s2}_re|{s2} 的 主 人 撤 回 家 園 ！
-qstr____Ruins_of_{s1}___|{s1} 的 廢 墟
-qstr_ranks|組 成 隊 形
-qstr_shield_wall|組 成 盾 牆
-qstr_wedge|組 成 楔 形 陣
-qstr_square|組 成 方 陣
-qstr_up|沒 有 陣 型
-qstr___Infantry_forming_{|步 兵 形 成 {s1} 
-qstr___Not_enough_infantr|沒 有 足 夠 的 步 兵 {s1} ， 用 堅 守 代 替
-qstr___Cavalry_forming_{s|騎 兵 形 成 {s1}
-qstr___Not_enough_cavalry|沒 有 足 夠 的 騎 兵 {s1} ， 用 堅 守 代 替
-qstr___Archers_forming_{s|弓 箭 手 形 成 {s1}
-qstr___Not_enough_archers|沒 有 足 夠 的 弓 箭 手 {s1} ， 用 堅 守 代 替
-qstr___Infantry_formation|步 兵 陣 型 解 散
-qstr___Cavalry_formation_|騎 兵 陣 型 解 散
-qstr___Archer_formation_d|弓 箭 手 陣 型 解 散
-qstr_Division_{reg1}_{s2}|部 隊 {reg1} {s2} 形 成 {s1}
-qstr_Not_enough_troops_in|{reg1} {s2} 中 沒 有 足 夠 的 部 隊 組 成 {s1}
-qstr_Division_{reg1}_{s2}_|{reg1} {s2} 是 {s3} 部隊 ， 不 能 形 成 {s1}
-qstr_{s1}:_infantry_forma|{s1} ： 步 兵 編 隊 解 散
-qstr_{s1}:_archer_formati|{s1} ： 弓 箭 手 編 隊 解 散
-qstr_{s1}:_skirmisher_for|{s1} ： 前 衛 編 隊 解 散
-qstr_{s1}:_cavalry_format|{s1} ： 騎 兵 編 隊 解 散
-qstr_{s1}:_formation_disa|{s1} ： 陣 型 編 隊 解 散
-qstr_Cavalry_formation_di|騎 兵 陣 型 解 散
-qstr_The_placement_of_{s1|{s1} 部 隊 {reg0} 的 位 置 變 為 記 憶 位 置
-qstr_The_placement_of_{s1}|{s1} 部 隊 {reg0} 的 位 置 變 為 默 認 值
-qstr_Your_party_s_tactica|你 的 戰 術 技 能 限 制 了 你 可 以 部 署 部 隊 的 距 離 ！
-qstr_...and_attack_enemy_|...... 並 攻 擊 敵 人 {s1} ！
-qstr_{s2}:_returning_afte|{s2} ： 在 摧 毀 敵 人 {s1} 後 返 回 。
-qstr_infantry|步 兵
-qstr_archer|弓 箭 手
-qstr_cavalry|騎 兵
-qstr_polearm|長 柄
-qstr_skirmisher|前 衛
-qstr_mounted_archer|騎 射 手
-qstr_support|幫 助
-qstr_bodyguard|護 衛
-qstr_undetermined_type_of|不 確 定 的 類 型
-qstr_{s1}_has_fled_the_ba|{s1} 逃 離 了 戰 場 ！
-qstr_Your_troops_are_at_{|我 軍 士 氣 為  {reg1}% (+ {reg3} % 加 成 ) ， 敵 軍 士 氣 為 {reg2}%！
-qstr_Morale_of_your_troop|我 軍 士 氣 動 搖 了 ！
-qstr_Morale_of_your_enemi|敵 方 士 氣 動 搖 了！
-qstr_Your_enemies_flee_in|敵 軍 因 恐 懼 而 潰 逃 ！
-qstr_Many_of_your_enemies|大 部 分 敵 軍 因 恐 懼 而 潰 逃 ！
-qstr_Some_of_your_enemies|一 些 敵 軍 因 恐 懼 而 潰 逃 ！
-qstr_A_few_of_your_enemie|少 數 敵 軍 因 恐 懼 而 潰 逃 ！
-qstr_Your_troops_flee_in_|我 軍 因 恐 懼 而 潰 逃 ！
-qstr_Many_of_your_troops_|大 部 分 我 軍 因 恐 懼 而 潰 逃 ！
-qstr_Some_of_your_troops_|一 些 我 軍 因 恐 懼 而 潰 逃 ！
-qstr_A_few_of_your_troops|少 數 我 軍 因 恐 懼 而 潰 逃 ！
-qstr_Gained_permanent_+1_to_P|嚮 導 等 級 永 久 +1 。
-qstr_Gained_permanent_+1_to_S|視 野 等 級 永 久 +1 。
-qstr_{s11}_recovered_from|{s11} 從 重 傷 中 恢 復 過 來 。
-qstr_Volunteers|志 願 者
-qstr_Reserves|儲 備
-qstr_have_taken_measure_o|已 經 衡 量 了 你 的 陣 營 目 前 的 實 力 並 且 變 得 更 加 大 膽 。
-qstr_loses_Faction_Streng|由 於 供 應 線 中 斷 ， 會 失 去 派 系 力 量 。
-qstr_loses_Faction_Strengt|由 於 營 地 被 毀 ， 失 去 了 派 系 力 量。
-qstr_gains_Faction_Streng|當 勝 利 的 消 息 傳 播 時 ， 獲 得 派 系 力 量 。
-qstr_Something_wrong_not_|出 了 點 問 題 ， 沒 有 足 夠 的 部 隊 去 排 除
-qstr_Raiders|入 侵 者
-qstr_have_won_the_sea_bat|贏 得 了 海 戰 ， 使 你 的 軍 隊 士 氣 低 落 。 敵 人 可 能 會 更 頻 繁 地 利 用 這 種 失 敗 的 攻 擊 。
-qstr_loses_Faction_Strength|由 於 破 壞 性 突 襲 ， 失 去 了 派 系 力 量
-qstr_loses_Faction_Strength_|由 於 你 在 海 上 的 成 功 ， 失 去 了 派 系 力 量 。
-qstr_You_spent_{reg67}_of|您 使 用 {s1} {reg67} 影 響 了 {reg67} ， 並 留 下 {reg66} 。
-; qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
+qstr_{s50}_belongs_to_{s1|{s50}屬於{s2}的{s1}。^
+qstr_Current_garrison_con|當前的守備部隊有{reg5}人。^有{reg6}天份的存糧。
+qstr_Very_Poor|非常貧窮
+qstr_Poor|貧窮
+qstr_Average|一般
+qstr_Rich|富有
+qstr_Very_Rich|非常富有
+qstr_Strength|力量
+qstr_Agility|敏捷
+qstr_Intelligence|智力
+qstr_Charisma|魅力
+qstr_You_ve_gained_{s6}_f|你因獲得{s7}而獲得了{s6}
+qstr_You_ve_lost_{s6}_fro|你因失去{s7}而失去了{s6}
+qstr_{s50}_Caves|{s50}洞穴
+qstr_{s50}_Mines|{s50}礦山
+qstr_{s50}_Woods|{s50}樹林
+qstr_{s4}_looks_upset.|{s4}看起來很沮喪。
+qstr_your_party|你的隊伍
+qstr_{reg0?One_of_your_pr|{reg0?你的其中一個囚犯，:}{s3}的{s1}從囚禁中逃跑了！
+qstr_You_brought_{reg3}_h|你帶了{reg3}頭牛到{s1}。
+qstr_Log_entry_{reg3}:_ty|日誌項目{reg3}：類型{reg4}
+qstr_Center:_{s4}|據點：{s4}
+qstr_Troop:_{s4}|部隊：{s4}
+qstr_Lord:_{s4}|領主：{s4}
+qstr_Ally_party_is_presen|同盟隊伍在場
+qstr_{s4}_is_present_at_e|{s4}有參與事件
+qstr_Event_#{reg5}_type_{|事件#{reg5}，類型{reg6}，時間{reg8}：玩家所屬王國與目標部隊關係={reg7}
+qstr_Event_#{reg5}_type_{r|事件#{reg5}，類型{reg6}，時間{reg8}：玩家所屬王國與目標陣營據點關係={reg7}
+qstr_Event_#{reg5}_type_{re|事件#{reg5}，類型{reg6}，時間{reg8}：玩家所屬王國與目標陣營關係={reg7}
+qstr_Event_#{reg5}_type_{reg|事件#{reg5}，類型{reg6}，時間{reg8}。與相關王國無關係
+qstr_Event_#{reg5}_type_{reg6|事件#{reg5}，類型{reg6}，時間{reg8}。玩家未附屬
+qstr_Elapsed_hours:_{reg7|經過的小時數：{reg7}
+qstr_Reputation_type:_{s1|名聲類型：{s15}
+qstr_Entries_up_to_#{reg5|跳過#{reg5}項
+qstr_A_new_location_is_no|地圖上標出一個新地點了！
+qstr_New_trait_gained:_{s|獲得新特質：{s5}。
+qstr_Gained_permanent_+1_|力量永久+1。
+qstr_Gained_permanent_+1_t|敏捷永久+1。
+qstr_Gained_permanent_+1_to|魅力永久+1。
+qstr_Gained_permanent_+20|武器熟練度永久+20。
+qstr_Gained_permanent_+2_|力量永久+2。
+qstr_Gained_permanent_+2_t|魅力永久+2。
+qstr_Lost_permanent__1_to|魅力永久-1。
+qstr_Gained_permanent_+1_to_|鐵骨永久+1。
+qstr_Gained_permanent_+5_|力量永久+5。
+qstr_Lost_permanent__2_to|魅力永久-2。
+qstr_Gained_permanent_+2_to|鐵骨永久+2。
+qstr_Gained_permanent_+10|武器熟練度永久+10。
+qstr_Gained_permanent_+1_to_T|戰術永久+1。
+qstr_You_have|你有
+qstr_{s1}_has|{s1}有
+qstr_{s11}_suffered_a_ser|{s11}受到了重傷。
+qstr_The_leg_has_been_bad|腿部在戰鬥中遭到重創。
+qstr___2_athletics__1_rid|(運動-2，騎術-1，敏捷-2，近戰武器熟練度-15)
+qstr_The_arm_has_been_bad|手臂在戰鬥中受到重創。
+qstr___20_weapon_skill__2|(武器熟練度-20，力量-2，強擊-1)
+qstr_The_head_has_suffere|頭部遭到重擊。
+qstr___1_intelligence_ski|(智力相關技能-1，遠程武器熟練度-15)
+qstr_The_chest_has_suffer|胸部有部分肋骨骨折。
+qstr___20_weapon_skill_|(武器熟練度-20)
+qstr_{s1}_has_been_killed|{s1}已被殺死。
+qstr_You_were_killed.|你被殺了。
+qstr_{s1}_recovered_from_|{s1}從重傷中恢復了。
+qstr_The_leg_wound_has_he|腿部的傷癒合了。
+qstr__+2_athletics_+1_rid|(運動+2，騎術+1，敏捷+2，近戰武器熟練度+15)
+qstr_The_arm_wound_has_he|手臂的傷癒合了。
+qstr__+20_weapon_skill_+2|(武器熟練度+20，力量+2，強擊+1)
+qstr_The_head_wound_has_h|頭部的傷癒合了。
+qstr__+1_intelligence_ski|(智力相關技能+1，遠程武器熟練度+15)
+qstr_The_cracked_ribs_hav|裂開的肋骨癒合了。
+qstr__+20_weapon_skill_|(武器熟練度+20)
+qstr_{s1}_has_had_his_hea|{s1}的生命值增加了
+qstr_News_has_arrived_tha|最新消息表示{s1}的{s2}在戰鬥中被{s28}的部隊殺死了！
+qstr_{s1}_s_Burial_Mound|{s1}的墓塚
+qstr_{s1}_s_Funeral_Pyre|{s1}的火葬堆
+qstr_{s1}_is_logged_as_de|{s1}已記錄為死亡
+qstr_You_have_been_discov|你在爬上城牆前就被發現了。
+qstr_The_enemy_is_coming_|大量的敵軍正在接近！你必須快逃！
+qstr_Scout_this_area_alon|獨自偵查這個地方並和你的士兵在外匯合！
+qstr_Be_stealthy_but_elim|保持潛行並快速地解決任何威脅！
+qstr_You_are_spotted_by_a|你被巡邏隊發現了！
+qstr_Eliminate_them_befor|在他們發出警報前解決他們！
+qstr_You_have_reached_the|你已經抵達了地牢！
+qstr_Eliminate_the_guards|解決掉衛兵並解救你的人馬！
+qstr_{s1}_has_been_captur|{s1}被敵軍俘虜了！
+qstr_Gondor_takes_a_capti|剛鐸抓到了一名俘虜
+qstr_Rohan_takes_a_captiv|洛汗抓到了一名俘虜
+qstr_Mordor_takes_a_capti|魔多抓到了一名俘虜
+qstr_Isengard_takes_a_cap|艾辛格抓到了一名俘虜
+qstr_You_were_grievously_|你受到了重創並被扔到屍體堆裡。慎重的決定時機後你成功翻牆逃跑但有可能被敵人發現了。最好盡快逃離。
+qstr_You_were_grievously_w|你在戰鬥中受到重創。你的部下雖然成功帶著你突圍但損失慘重。
+qstr_You_were_grievously_wo|你在戰鬥中受到重創。你的部下雖然成功帶著你突圍但損失慘重。更不幸的是，你有一些同伴被俘虜並押走到{s2}了。
+qstr_You_were_grievously_wou|你在戰鬥中受到重創。你的部下成功帶著你脫離戰鬥，不幸的是巫師也逃走了。
+qstr_You_were_grievously_woun|你受到了重創並被扔到屍體堆裡。慎重的決定時機後你成功逃跑，不幸的是巫師也逃走了。
+qstr_Some_of_your_compani|你有一些同伴正因舊傷復發而在痛苦著。
+qstr_Item_you_just_equipp|你剛才裝備的物品不適用於此種族的角色因此將從裝備欄移入物品欄^^請確認物品欄有足夠的空間，否則將失去此物品。
+qstr_Inappropriate_equipm|不適合的裝備
+qstr_The_mount_you_just_e|你剛才裝備的坐騎不適用於此種族的角色。請注意如果你放著不管，有可能導致戰場中的坐騎行為異常。
+qstr_Inappropriate_mount|不適合的坐騎
+qstr_{s24}:_Your_infantry|{s24}：你的步兵感覺好一點了！
+qstr_{s24}:_Your_archers_|{s24}：你的弓兵感覺好一點了！
+qstr_{s24}:_Your_cavalry_|{s24}：你的騎兵感覺好一點了！
+qstr_Ah_what_a_coincidenc|啊，真巧，{playername}，在這裡碰到你！你大概不知道我是誰，但你對我則並非未知喔。我正在前往{s4}，不過我剛離開{s3}時有聽過你的名字。在這個烽煙四起的時代{s3}就靠你了可是假設你誤入歧途，不妨重新思考並全心全意的幫助{s2}吧。
+qstr_Who_are_you?|你是誰？
+qstr_A_friend_of_{s3}_and|{s3}和{s2}之民的朋友。動作快！魔多吸引了所有邪惡的東西，黑暗力量正在將他們聚集控制在那裡。除非我們趕緊行動來對抗，不然世界上的一切美好都快沒時間了！
+qstr_What_should_I_do?|我該做什麼？
+qstr_Find_{s3}_s_whereabo|盡快找到{s3}的下落並跟{reg3?她:他}談談吧。祝你好運！
+qstr_Good_to_see_the_Shad|{playername}，很高興看到你還沒被索倫的陰影打敗。
+qstr_You_are_the_one_they|看來你就是人們所說的甘道夫或米斯蘭達吧。
+qstr_That_is_what_some_ca|有些人的確如此稱呼我。以前我也被用其他名字稱呼過。但除非黑暗被阻止，不然很快不會剩下任何人能用名字稱呼我了。
+qstr_What_do_you_mean?|你的意思是？
+qstr_In_spite_of_their_va|儘管他們英勇的抵抗過，{s3}最終還是被邪惡勢力吞沒了。{s3}的人們四散而美好的{s4}已經一去不復返了。
+qstr_You_bring_dismal_new|巫師啊，你帶來的消息真令人沮喪。
+qstr_But_I_also_bring_a_m|但我也但來了一絲希望。{s5}的人們仍然在堅持，他們的領導們堅定且戰士們無畏。
+qstr_Help_them_fight_the_|盡你最大的努力幫助他們跟敵人戰鬥。永不放棄！但同時保持警惕！這世上還有比半獸人更古老更汙穢的東西。
+qstr_Beware_{playername}_| {playername}，請注意，黑暗的力量開始崩壞了。{s3}已陷落，它的領導者{s4}也是。
+qstr_What_do_you_want_of_|你想要我幹嘛，老頭？
+qstr_Just_know_that_a_Daw|要記得黎明將至。這是必然。而如果你能活著看到那一天，想想該怎麼面對自己吧。
+qstr_Well_met_{playername|很高興見到你，{playername}，{s24}。我當初果然沒有看錯你。陰影的強大勢力已被打碎而你幫了大忙！
+qstr_Thank_you_Mithrandir|謝謝你，米斯蘭達！
+qstr_The_wizard_Saruman_i|巫師薩魯曼已逝而黑邪塔連同其黑暗之主也被粉碎！中土世界的人民已從近乎吞噬世上所有美好與聖潔的威脅下得到解放。敵人被擊敗且王已回歸！
+qstr_It_was_a_long_and_bl|在這個漫長而血腥的戰爭後我們有許多摯友已經不在了。
+qstr_There_is_much_to_reg|我們有著許多的遺憾和悲傷，而未來還有更多的事物等著我們去重建和修繕。但現在，讓我們與仍在身邊的朋友一起慶祝我們在第三紀元的最後之日所達成的豐功偉業吧！
+qstr_Bagginsssss..._Ssssh|巴金斯… 夏爾…
+qstr_I..._don_t_know!|我...不知道！
+qstr_It..._beckonsssssss.|它... 在招手...
+qstr_Treachery..._Unforgi|背信棄義…不可饒恕…
+qstr_But_I...|但我…
+qstr_Noone..._oppossssses|無人…能阻饒…黑邪塔…並存活！
+qstr_All..._must..._submi|所有人…必須… 屈從...且…臣服…
+qstr_I_serve_the_Eye!|我服從索倫之眼！
+qstr_I_shall_serve_the_Ey|我將服從索倫之眼！
+qstr_Go_to_{s1}_and_speak|去{s1}和{s9}交談。
+qstr_The_Remnant_Forces_o|{s22}殘餘的部隊聚集以增援{s15}戰區！
+qstr_The_strength_of_the_|{s15}戰區剩下的盟軍力量增強了
+qstr_{s30}_reinforced_by_|{s30}被增援了{reg65}陣營力量
+qstr_{s1}_has_been_besieg|{s1}正遭到{s3}的{s2}圍攻。
+qstr_The_forces_of_{s2}_m|{s2}的部隊正在向{s15}邁進！
+qstr_Rohan_capital_moved_|洛汗的首都已從伊多拉斯遷至號角堡！
+qstr_Dale_capital_moved_f|河谷鎮的首都已從河谷鎮遷至長湖鎮！
+qstr_Gundabad_capital_mov|剛達巴的首都已從剛達巴遷至哥布林鎮！
+qstr_The_hosts_of_{s2}_re|{s2}的大軍撤回他們的家園了！
+qstr____Ruins_of_{s1}___|{s1}的廢墟
+qstr_ranks|列陣
+qstr_shield_wall|盾牆
+qstr_wedge|楔形陣
+qstr_square|方陣
+qstr_up|上
+qstr___Infantry_forming_{|步兵組成{s1}。
+qstr___Not_enough_infantr|沒有足夠的步兵組成{s1}，用堅守代替。
+qstr___Cavalry_forming_{s|騎兵組成{s1}。
+qstr___Not_enough_cavalry|沒有足夠的騎兵組成{s1}，用堅守代替。
+qstr___Archers_forming_{s|弓兵組成{s1}。
+qstr___Not_enough_archers|沒有足夠的弓兵組成{s1}，用堅守代替。
+qstr___Infantry_formation|步兵陣型解散。
+qstr___Cavalry_formation_|騎兵陣型解散。
+qstr___Archer_formation_d|弓兵陣型解散。
+qstr_Division_{reg1}_{s2}|第{reg1}分隊{s2}正在組成{s1}。
+qstr_Not_enough_troops_in|第{reg1}分隊{s2}沒有足夠的部隊組成{s1}。
+qstr_Division_{reg1}_{s2}_|第{reg1}分隊{s2}是{s3}分隊而不能組成{s1}。
+qstr_{s1}:_infantry_forma|{s1}：步兵陣型解散。
+qstr_{s1}:_archer_formati|{s1}：弓兵陣型解散。
+qstr_{s1}:_skirmisher_for|{s1}：散兵陣型解散。
+qstr_{s1}:_cavalry_format|{s1}：騎兵陣型解散。
+qstr_{s1}:_formation_disa|{s1}：陣型解散。
+qstr_Cavalry_formation_di|騎兵陣型解散。
+qstr_The_placement_of_{s1|已記憶第{reg0}分隊{s1}的位置。
+qstr_The_placement_of_{s1}|第{reg0}分隊{s1}的位置已還原為預設值。
+qstr_Your_party_s_tactica|你隊伍的戰術技能限制了你可以部署部隊的距離！
+qstr_...and_attack_enemy_|...並攻擊敵方的{s1}分隊！
+qstr_{s2}:_returning_afte|{s2}：在摧毀敵人{s1}分隊後返回。
+qstr_infantry|步兵
+qstr_archer|弓兵
+qstr_cavalry|騎兵
+qstr_polearm|長柄武器
+qstr_skirmisher|散兵
+qstr_mounted_archer|馬騎弓兵
+qstr_support|支援
+qstr_bodyguard|護衛
+qstr_undetermined_type_of|未確定類型的
+qstr_{s1}_has_fled_the_ba|{s1}逃離了戰場！
+qstr_Your_troops_are_at_{|我方部隊凝聚程度為{reg1}%(+{reg3}%加成)，敵方為{reg2}%！
+qstr_Morale_of_your_troop|我方部隊的士氣正在動搖！
+qstr_Morale_of_your_enemi|敵方的士氣正在動搖！
+qstr_Your_enemies_flee_in|你的敵方正在潰散！
+qstr_Many_of_your_enemies|大部分的敵方正在逃離戰場。
+qstr_Some_of_your_enemies|有部分的敵方正在逃離戰場。
+qstr_A_few_of_your_enemie|少部分的敵方正在逃離戰場。
+qstr_Your_troops_flee_in_|我方部隊正在潰散！
+qstr_Many_of_your_troops_|大部分的我方部隊正在逃離戰場。
+qstr_Some_of_your_troops_|有部分的我方部隊正在逃離戰場。
+qstr_A_few_of_your_troops|少部分的我方部隊正在逃離戰場。
+qstr_Gained_permanent_+1_to_P|尋路永久+1。
+qstr_Gained_permanent_+1_to_S|偵查永久+1。
+qstr_{s11}_recovered_from|{s11}從重傷中恢復過來了。
+qstr_Volunteers|志願者
+qstr_Reserves|預備役
+qstr_have_taken_measure_o|對你陣營目前的力量採取行動後變得更加大膽了。
+qstr_loses_Faction_Streng|由於補給線被干擾而失去了陣營力量。
+qstr_loses_Faction_Strengt|由於營地被毀而失去了陣營力量。
+qstr_gains_Faction_Streng|由於你勝利的消息廣傳而獲得陣營力量。
+qstr_Something_wrong_not_|有點問題，沒有足夠的部隊去排除
+qstr_Raiders|掠奪者
+qstr_have_won_the_sea_bat|贏了海戰，使你的部隊士氣低落。敵人可能會利用這種失敗展開更頻繁地的攻擊。
+qstr_loses_Faction_Strength|由於遭到毀滅性的襲擊而失去了陣營力量。
+qstr_loses_Faction_Strength_|由於你在海上的成功而失去了陣營力量。
+qstr_You_spent_{reg67}_of|你使用了對{s1}的{reg67}影響力，還剩下{reg66}。
+qstr_{s2}_{reg3?was:is_ar|{s2}{reg3?曾在:正在{s5}附近。
 qstr_{s1}_{s0}|{s1}，{s0}
-qstr_{s1}_and_{s0}|{s1} 和 {s0}
-qstr_No_Troops_Left.|士 兵 們 一 個 不 剩 。
-qstr_avoid_melee|避 免 近 戰
-qstr_stand_and_fight|靠 攏 戰 鬥
-qstr_Everyone|所 有 人
-qstr_Shield___{reg31}_|盾 防 (-{reg31})
-qstr_Power_Draw___{reg31}|強 弓 (-{reg31})
-qstr_Riding___{reg31}_|騎 術 (-{reg31})
-qstr_Horse_Archery___{reg|騎 射 (-{reg31})
-qstr_Athletics___{reg31}_|跑 動 (-{reg31})
-qstr_No_Skill_Penalty_Ass|沒 有 技 能 處 罰
-qstr_Inventory|物 品
-qstr_Show_stats|顯 示 統 計 數 據
-qstr_Show_item_details__|顯 示 項 目 詳 情
-qstr_Troop_detail|部 隊 細 節
+qstr_{s1}_and_{s0}|{s1}和{s0}
+qstr_No_Troops_Left.|沒有剩下任何部隊。
+qstr_avoid_melee|避免近戰
+qstr_stand_and_fight|立守戰鬥
+qstr_Everyone|所有人
+qstr_Shield___{reg31}_|盾防技能(-{reg31})
+qstr_Power_Draw___{reg31}|強弓技能(-{reg31})
+qstr_Riding___{reg31}_|騎術技能(-{reg31})
+qstr_Horse_Archery___{reg|騎射技能(-{reg31})
+qstr_Athletics___{reg31}_|運動技能(-{reg31})
+qstr_No_Skill_Penalty_Ass|沒有分配技能減益
+qstr_Inventory|物品欄
+qstr_Show_stats|顯示數據
+qstr_Show_item_details__|顯示物品詳細資訊
+qstr_Troop_detail|兵種詳細資訊
 qstr_{s1}^|{s1}^
-qstr_{s1}Level:_{reg1}^|{s1} 等 級 ： {reg1}^
-qstr_{s1}Hit_Points:_{reg|{s1} 命 中 率 ： {reg1}
-qstr_{s1}Atributes:_^___S|{s1} 屬 性 ：^  力 量 ：^
-qstr_{s2}^{reg1}^|{s2}^ {reg1}^
-qstr_{s1}___Agility:|{s1} 敏 捷 ：
-qstr_{s2}{reg1}|{s2} {reg1}
-qstr_{s1}Main_skills:_^|{s1} 主 要 技 能 ：^
-qstr_{s1}___Power_Strike:|{s1} 強 擊 ：^
-qstr_{s2}{reg1}^|{s2} {reg1}^
-qstr_{s1}___Athletics:^|{s1} 跑 動 ：^
-qstr_{s1}___Riding:^|{s1} 騎 術 ：^
-qstr_{s2}_^|{s2} -^
-qstr_{s1}___Power_Throw:^|{s1} 強 擲 ：^
-qstr_{s1}___Power_Draw:^^|{s1} 強 弓 ：^^
+qstr_{s1}Level:_{reg1}^|{s1}等級：{reg1}^
+qstr_{s1}Hit_Points:_{reg|{s1}生命值：{reg1}
+qstr_{s1}Atributes:_^___S|{s1}屬性：^力量：^
+qstr_{s2}^{reg1}^|{s2}^{reg1}^
+qstr_{s1}___Agility:|{s1}   敏捷：
+qstr_{s2}{reg1}|{s2}{reg1}
+qstr_{s1}Main_skills:_^|{s1}主要技能：^
+qstr_{s1}___Power_Strike:|{s1}   強擊技能：^
+qstr_{s2}{reg1}^|{s2}{reg1}^
+qstr_{s1}___Athletics:^|{s1}   運動技能：^
+qstr_{s1}___Riding:^|{s1}   騎術技能：^
+qstr_{s2}_^|{s2}-^
+qstr_{s1}___Power_Throw:^|{s1}   強擲技能：^
+qstr_{s1}___Power_Draw:^^|{s1}   強弓技能：^^
 qstr_{s2}{reg1}^^|{s2} {reg1}^^
 qstr_{s2}_^^|{s2} -^^
-qstr_{s1}Weapons:^|{s1} 武 器 ：^
-qstr_{s1}___One_Handed:^|{s1} 單 手 武 器 熟 練 ：^
-qstr_{s1}___Two_Handed:^|{s1} 雙 手 武 器 熟 練 ：^
-qstr_{s1}___Polearms:^|{s1} 長 柄 武 器 熟 練 ：^
-qstr_{s1}___Archery:^|{s1} 弓 箭 熟 練 ：^
-qstr_{s1}___Crossbow:^|{s1} 弩 熟 練 ：^
-qstr_{s1}___Throwing:^|{s1} 投 擲 武 器 熟 練 ：^
-qstr_{s1}___Slings:|{s1} 投 石 :
-qstr_{s2}_|{s2} -
-qstr__Click_on_the_troop_|(點 擊 部 隊 旋 轉 它 )^^ 點 擊 裝 備^(頭 盔 ， 盔 甲 ， 手 套 和 靴 子 )^來 顯 示 它 們 。
-qstr_ready_bows_and_missi|準 備 好 的 弓 和 投 射 物
-qstr_ready_side_arms|側 面 準 備
-qstr_ready_two_hander|準 備 雙 手 武 器
-qstr_ready_polearms|準 備 長 柄 武 器
-qstr_shields_up|盾 向 前
-qstr_doff_shields|丟 棄 盾
-qstr_Distance___{reg70}__|距 離 - {reg70} - {s11} Party - {s12} 部 隊
-qstr_A_golden_mist_from_L|羅 斯 洛 立 安 的 金 色 薄 霧 覆 蓋 了 戰 場 。 女 士 的 存 在 使 你 的 軍 隊 感 到 鼓 舞 。
-qstr_A_golden_mist_from_Lr|羅 斯 洛 立 安 的 金 色 薄 霧 覆 蓋 了 戰 場 。 女 巫 就 在 附 近 ， 讓 你 和 你 的 部 隊 的 脊 椎 發 抖 。
-qstr_Dark_clouds_from_Mor|來 自 魔 多 的 烏 雲 籠 罩 著 戰 場 。 你 的 弓 箭 手 很 難 看 到 敵 人 ， 邪 惡 的 存 在 嚇 壞 了 你 的 人 。
-qstr_Dark_clouds_from_Mord|來 自 魔 多 的 烏 雲 籠 罩 著 戰 場 。 黑 魔 王 的 存 在 加 強 了 你 和 你 的 人 。
-qstr_A_thunderstorm_from_|來 自 迷 霧 山 脈 的 雷 暴 在 戰 場 上 肆 虐 。 你 的 部 隊 減 速 了 ， 迷 信 中 的 人 感 到 害 怕 。
-qstr_A_thunderstorm_from_t|來 自 迷 霧 山 脈 的 雷 暴 在 戰 場 上 肆 虐 。 弓 箭 手 在 這 種 天 氣 下 很 作 戰 。
-qstr_A_poisonous_fog_from|來 自 多 爾 哥 多 的 有 毒 霧 在 戰 場 上 徘 徊 。 你 和 你 的 軍 隊 感 到 虛 弱 。 人 們 都 很 害 怕 。
-qstr_A_poisonous_fog_from_|來 自 多 爾 哥 多 的 有 毒 霧 在 戰 場 上 徘 徊 。 你 沒 有 任 何 不 同 ， 但 你 聽 到 你 的 敵 人 受 苦 ， 你 可 以 聞 到 他 們 的 恐 懼 。
-; qstr_You_shapeshift_into_|You shapeshift into a bear!
-; qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
-; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
-; qstr_You_change_back_to_h|You change back to human form...
-qstr_Your_mount_stumbles!|你 的 坐 騎 走 路 磕 磕 絆 絆 ！ 看 起 來 是 瘸 腿 了 。
-qstr_Bitten_by_your_own_w|你 被 自 己 的 座 狼 咬 了 !
-qstr_You_weigh_too_much_f|你 太 重 了 不 適 合 矮 種 馬  ！
-qstr_Your_mount_rears_ref|你 的 坐 騎 受 到 驚 嚇 ！ 拒 絕 服 從 你 的 命 令 ！
-qstr_Cannot_Change_Camera|第 一 人 稱 時 不 能 改 變 視 覺 模 式
-; qstr_Switch_Back_to_3rd_P|Switch Back to 3rd Person View to Cycle Camera.
-qstr_Fixed_Custom_Camera|固 定 自 定 義 相 機
-qstr_Press_Ctrl_+_Left_/_|按 Ctrl + Left / Ctrl + Right 箭 頭 鍵 切 換 護 肩
-; qstr_Press_Ctrl_+_Down_to|Press Ctrl + Down to Center
-qstr_Use_+/__to_zoom_in/o|按 下 +/-   來   放 大 / 縮 小
-qstr_Use_Up/Down_arrow_ke|使 用 上 / 下 箭 頭 鍵 以 前 傾 / 後 傾 
-qstr_Fixed_Camera___Right|固 定 相 機 — 右 肩
-qstr_Fixed_Camera___Left_|固 定 相 機 — 左 肩
-; qstr_Fixed_Camera___Cente|Fixed Camera - Center
-; qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
-qstr_While_visiting_towns|在 參 觀 城 鎮 ， 定 居 點 和 營 地 時 ， 您 可 以 與 周 圍 的 人 交 談 。 不 同 派 別 的 成 員 有 不 同 的 話 要 說 - 有 些 人 會 讓 你 自 己 思 考 ， 有 些 人 會 分 享 謠 言 。 兩 者 都 可 以 讓 你 更 好 地 了 解 這 個 人 的 文 化 和 派 系 ， 或 者 他 們 可 能 會 找 到 尋 找 秘 密 地 點 的 線 索 ， 或 者 是 在 荒 野 中 旅 行 並 在 環 戰 中 戰 鬥 的 秘 訣 和 技 巧 。
-qstr_Cannot_leave_now.|現 在 不 能 離 開
-; qstr_You_have_found_the_l|You have found the local smithy.
-; qstr_You_have_found_the_lo|You have found the local authority.
-qstr_You_have_found_the_loc|你 找 到 了 當 地 的 倉 庫。
-qstr_You_look_through_Hen|你 透 過 漢 那 斯 安 南 ， 日 落 之 窗 看 。  美 麗 的 景 象 恢 復 了 你 對 西 方 和 超 越 大 國 的 信 心 。
-qstr__cancelled_the_{reg1|(取 消 了 殺 囚 獲 得 了 {reg10} 經 驗 值 )
-qstr_Forming_ranks.|正 在 列 陣
-qstr_{reg2?You:Your_mount|{reg2? 你 ： 你 的 坐 騎} 受 到 {reg1} 額 外 傷 害！
-qstr_{reg2?You_strike:You|{reg2? 你 打 擊 : 你 衝 鋒} {reg1} 額 外 傷 害！
-qstr_Division_Placement|部 隊 放 置
-qstr_Complex_Formations|複 雜 隊 形
-qstr_Formations_turned_OF|選 項 菜 單 中 的 格 式 關 閉
-qstr_Division_{reg1}_{s2}_g|部 隊 {reg1} {s2} 進 入 其 記 憶 的 位 置 ......
-qstr_Division_{reg1}_{s2}_f|部 隊 {reg1} {s2} 形 成 一 條 線 (記 憶 )
-qstr_Division_{reg1}_{s2}_fo|部 隊 {reg1} {s2} 形 成 {reg0} 行 (記 憶 )
-qstr_Delivered_{reg60}_da|造 成 {reg60} 點 傷 害 。 
-qstr_DEBUG__Health_Regen_|DEBUG (健 康 再 生 ) ： {s1} 恢復 {reg0}% 健康 = +{reg1}% 力量
-qstr_Your_bear_form_has_{|你 的 熊 型 態 有 {reg2}/{reg1} HP！
-qstr_Three_Nazgul_are_cir|三 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
-qstr_Two_Nazgul_are_circl|兩 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
-qstr_A_Nazgul_is_circling|一 個 戒 靈 正 在 戰 場 上 空 盤 旋 ！
-qstr_Some_of_your_human_t|你 的 軍 隊 並 沒 有 被 黑 暗 嚇 倒 。 (夜 間 軍 隊 不 受 夜 間 懲 罰 的 影 響 )
-qstr_You_are_filled_with_|當 你 注 視 著 敵 人 時 ， 你 充 滿 了 憤 怒 (狂 暴 活 躍 )。
-qstr_Your_mount_is_scared|你 的 座 騎 被 {reg73?樹 人:巨 魔} 驚 嚇 到 了!
-qstr_Your_mount_is_scared_|你 的 座 騎 被 {reg73?ent:troll} 嚇 到 了，但 你 能 夠 駕 馭 牠！
-qstr_Nazgul_sweep!|戒 靈 來 了 ！
-qstr_You_and_your_horse_p|你 和 你 的 馬 恐 慌 ， 戒 靈 的 叫 聲 難 以 忍 受 ！
-qstr_Your_horse_panics_th|你 的 馬 恐 慌 ， 戒 靈 的 叫 聲 難 以 忍 受 ！
-qstr_You_cower_in_terror_|你 在 恐 怖 中 退 縮 ， 戒 靈 的 叫 聲 難 以 忍 受 ！
-qstr_knocked_unconscious|被 打 昏 了
-qstr_Nazgul_diving_attack|戒 靈 正 在 攻 擊 {s11} ！
-qstr_{s11}_is_{s10}_in_th|{s11} 在 戒 靈 的 攻 擊 {s10} ！
-qstr_Received_{reg66}_dam|受 到 了 {reg66} 點 傷 害 。
-qstr_You_yell_for_your_ho|你 呼 喚 你 的 馬 。
-qstr_You_do_not_need_to_r|你 還 不 需 要 集 結 你 的 部 隊 。
-qstr_You_rally_your_troop|你 集 結 了 部 隊 ！
-qstr_{s5}_rallies_{reg65?|{s5} 集 結 了 {reg65?她 的:他 的} 部 隊！
-qstr_You_have_killed_{reg|你 在 戰 鬥 中 殺 死 了 {reg1} 名 敵 人 ！
-qstr_Your_bravery_inspire|你 的 英 勇 鼓 舞 了 你 的 部 隊 ！
-qstr_Your_mount_has_falle|這 場 你 的 坐 騎 已 死 亡！
-qstr_Receive_{reg22}_dama|受 到 {reg22} 點 傷 害 。
-qstr_You_have_been_knocke|你 被 {s22} 打 昏 了 。
-qstr_{s21}_has_been_knock|當 {s21} 掉 落 時 ， {reg23?她：他} 已 被 擊 倒 。
-qstr_{s21}_{reg24?killed:|{s21} 被 {s22} {reg24?殺 死：被 擊 昏} 。
-qstr_A_bear_has_been_summ|一 隻 熊 被 召 喚 出 戰 ！
-qstr_In_The_Last_Days_of_|在 第 三 紀 的 最 後 幾 天 ， 你 的 部 隊 將 在 每 次 戰 鬥 開 始 時 設 定 為 堅 守 此 地 ， 而 不 是 直 接 衝 鋒。^^為 了 命 令 你 的 部 隊 進 入 陣 型 ， 按 'J' 代 表 隊 形 ， 'K' 代 表 組 成 盾 牆 ， 'L' 代 表 楔 形 陣 ， ';' 代 表 方 陣 。 按 'U' 取 消 編 隊 。^^如 果 你 的 部 隊 正 在 逃 離 ， 你 可 以 按 'V' 來 集 結 他 們 。 每 次 戰 鬥 你 只 獲 得 有 限 的 兵 ， 數 量 取 決 於 你 的 領 導 能 力 和 魅 力 。
-qstr_You_can_also_order_y|您 也 可 以 命 令 部 隊 使 用 您 希 望 他 們 使 用 的 武 器 類 型 。^^按 'O' 鍵 在 武 器 類 型 之 間 切 換 。 按 'P' 可 在 盾 類 型 之 間 切 換 。
-qstr_The_Last_Days_of_the|第 三 紀 的 最 後 幾 天 實 施 了 一 個 自 定 義 相 機 ， 以 繞 過 當 前 的 相 機 限 制 ， 關 於 更 短 的 比 賽 (例 如 獸 人 和 矮 人 ) 。^^按 CTRL + END 循 環 通 過 2 種 相 機 模 式 ： 固 定 位 置 和 自 由 模 式 。^^固 定 位 置 是 所 有 比 賽 的 最 佳 位 置 ， 但 無 法 配 置 。 您 可 以 按 CTRL +向 左 / 向 右 箭 頭 鍵 切 換 肩 膀 。^^自 由 模 式 相 機 將 角 色 放 在 屏 幕 中 間 。 您 可 以 按 CTRL +向 上 / 向 下 箭 頭 鍵 來 傾 斜 攝 像 機 ， 按 CTRL + Numpad +/- 進 行 縮 放 。^^有 關 如 何 控 制 不 同 攝 像 機 模 式 的 信 息 ， 請 參 閱 信 息 頁 面 。
-qstr_Battlefield_is_too_s|戰 場 對 於 復 雜 的 編 隊 來 說 太 小 了 。
-qstr_You_have_a_clear_per|你 清 晰 地 感 到 一 個 迫 在 眉 睫 的 大 危 機 出 現 在 你 周 圍 ！
-qstr_New_ent_reached_batt|新 的 樹 人 加 入 戰 鬥 ...
-qstr_You_receive_word_tha|你 接 到 線 報 說 比 翁 人 的 村 莊 被 襲 擊 了 。 比 翁 人 喪 失 了 派 系 力 量 。
-qstr_You_receive_word_that|你 接 到 線 報 說 魔 戒 獵 手 頭 領 拖 著 一 個 箱 子 前 往 魔 多 。 魔 多 獲 得 派 系 力 量 。
-qstr_Enemy_reinforcements|敵 人 的 增 援 已 經 到 來
-qstr_Yarrrr!!|嘿 嘿 嘿 嘿 ！
-qstr_Get_all_of_them!|把 它 們 都 拿 出 來 ！
-qstr_Kill_them_all!|殺 光 他 們 ！
-qstr_Toss_them_overboard!|扔 掉 他 們 ！
-qstr_It_is_a_good_day_to_|這 是 一 個 好 日 子 去 死 ！
-qstr_All_hands_on_deck!_T|全 體 人 員 ！ 把 它 們 扔 回 去 ！
-qstr_Ally_reinforcements_|盟 軍 增 援 已 經 抵 達
-qstr_Forward_men!|衝 鋒 ， 人 類 ！
-qstr_Leave_none_of_these_|不 要 讓 這 些 污 穢 站 著 ！
-qstr_End_them_all!|結 束 他 們 ！
-qstr_Drive_them_back!|把 它 們 推 回 去 ！
-qstr_Protect_the_City!|保 護 城 市 ！
-qstr_Forward!_Board_them!|向 前 ！ 登 上 它 們 ！
-; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
-; qstr_on_the_left_flank|on the left flank
-; qstr_on_the_right_flank|on the right flank
-; qstr_through_the_center|through the center
-; qstr_Attackers_charge_{s2|Attackers charge {s2}
-; qstr_Attackers_charge_{s1|Attackers charge {s1}
-; qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
-; qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
-; qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
-; qstr_The_remaining_attack|The remaining attackers disperse!
-; qstr_The_remaining_defend|The remaining defenders escape from the siege!
-qstr_Reached_Gauntlet_wav|第 {reg1} 波 ！
-qstr_Ballista:_out_of_amm|弩 砲 ： 彈 藥 用 盡 ！
-qstr_Ballista:_turn_CURSO|弩 砲 ： 轉 動 'CURSOR' ， 瞄 準 'LSHIFT' ， 射 擊 'SPACE' ， 設 置 射 擊 'T' ， 退 出 'F'
-qstr_Ballista:_out_of_ammo|弩 砲 ： 彈 藥 用 盡 ！
-qstr_The_ladders_on_Deepi|有 梯 子 搭 在 城 牆 上 了 ！ 小 心 ！
-qstr_THREE.._TWO..._ONE..|三...  二...  一...    衝 ！
-qstr_You_have_come_upon_t|你 來 到 阿 蒙 漢 山 的 廢 墟 ， 視 線 之 山 ， 一 座 岡 多 利 亞 的 鐘 樓 頂 上 ， 你 覺 得 這 個 地 方 曾 經 很 棒 但 很 久 以 前 就 被 遺 忘 了
-qstr_You_have_come_upon_th|在 最 後 一 次 聯 盟 的 戰 爭 中 ， 你 已 經 到 了 死 亡 沼 澤 ， 達 哥 拉 戰 役 的 地 點 。^^沼 澤 地 已 經 吞 沒 了 曾 經 是 草 原 的 平 原 ， 而 現 在 唯 一 的 綠 色 是 在 水 面 上 黝 黑 的 油 膩 的 表 面^^死 去 的 草 和 腐 爛 的 蘆 葦 在 迷 霧 中 如 同 長 長 的 被 遺 忘 的 夏 天 的 陰 影 籠 罩 著 ， 人 類 ， 精 靈 和 獸 人 的 屍 體 漂 浮 在 陰 暗 的 深 處^^空 氣 感 覺 寒 冷 和 濕 冷 ， 當 你 看 到 蠟 燭 燈 在 水 面 下 的 精 靈 屍 體 眼 中 閃 爍 時 ， 你 會 忍 不 住 顫 抖
-qstr_You_have_entered_the|你 已 經 進 入 了 南 方 幽 暗 林 的 森 林 ， 曾 經 被 稱 為 格 林 伍 德 大 帝 多 爾 哥 多 的 堡 壘 就 在 附 近 ， 它 在 森 林 上 投 下 了 陰 影 。 這 裡 的 樹 林 感 覺 很 噁 心 ， 充 滿 了 腐 爛 。 古 老 的 橡 樹 被 腐 爛 和 真 菌 覆 蓋 ， 巨 大 的 纏 繞 網 從 樹 幹 延 伸 到 樹 幹 空 氣 是 永 恆 的 ， 黑 暗 和 悶 熱 ， 感 覺 就 像 你 慢 慢 被 窒 息
-qstr_You_have_found_the_D|你 發 現 了 傳 說 中 存 放 長 矛 的 矮 人 倉 庫 ， 把 你 的 發 現 向 {s3} 報 告
-qstr_Leave_the_Warehouse?|離 開 倉 庫 ？
-qstr_Leave_the_place_in_s|悄 悄 地 離 開 此 地 ？
-qstr_Leave_scene?|離 開 現 場 ？
-qstr_Trace_back_your_step|你 沒 有 退 路 了 ！ 向 半 獸 人 投 降 嗎 ？
-qstr_There_is_no_way_out!|這 裡 沒 有 地 方 可 以 逃 走! 向 獸 人 們 投 降 ?
-qstr_Stealth_mini_game_tu|隱 形 迷 你 游 戲 教 程 ： 有 兩 個 警 報 級 別 。^^1 級 是 由 守 衛 看 到 屍 體 或 由 他 們 發 現 你 。^當 1 級 已 經 激 活 時 ， 你 被 發 現 警 衛 會 觸 發 2 級 。^^2 級 是 危 險 的 ， 因 為 警 衛 將 繼 續 到 達 。^你 可 以 通 過 保 持 隱 藏 來 避 免 被 發 現 。 隱 藏 在 隱 藏 的 各 種 掩 護 之 後 。
-qstr_You_are_now_hidden.|你 在 隱 蔽 中 。
-qstr_You_move_out_of_hidi|你 離 開 了 掩 體 。
-qstr_The_guards_have_spot|警 衛 發 現 了 一 具 屍 體 ！
-qstr_Alarm_Level_is_now_a|警 報 級 別 ： 1
-qstr_Alarm_Level_is_now_at|警 報 級 別 ： 0
-qstr_The_guards_have_spott|警 衛 看 到 了 你 ！
-qstr_Alarm_Level_is_now_at_|警 報 級 別 ： 2
-qstr_The_sorcerer_has_fle|巫 師 已 經 逃 跑 了 !
-qstr_Report_this_ill_news|馬 上 向 凱 蘭 崔 爾 女 士 報 告 這 個 壞 消 息 。
-qstr_The_sorcerer_is_flee|巫 師 正 在 逃 跑 ！ 殺 了 他 ！
-qstr_The_sorcerer_has_joi|巫 師 加 入 了 戰 鬥 ！ 殺 了 他 ！
-qstr_The_sorcerer_is_dead|巫 師 已 死 ！
-qstr_The_battle_is_won!|戰 鬥 勝 利 ！
-qstr_A_band_of_tribal_orc|一 群 部 落 獸 人 出 現 了！
-qstr_Gaaaar!!_We_wants_th|碣 碣 碣 碣 ！ 我 們 想 要 那 些 人 肉 ！
-qstr_{s31}_scouts_have_ap|{s31} 偵 察 兵 出 現 了 ！
-qstr_Those_are_ours!_We_h|那 是 我 們 的 ！ 自 從 他 們 離 開 後 我 們 一 直 在 追 踪 他 們 ！ 沒 有 人 阻 擋 我 們 ！
-qstr_Trolls_appeared!|食 人 妖 出 現 了!
-qstr_Gaaaar!!|碣 碣 碣 碣 ！
-qstr_{s31}_scouts_have_app|{s31} 偵 察 兵 似 乎 在 幫 助 難 民 ！
-qstr_Hurry_men!_Help_the_|快 點 ， 人 們 ！ 幫 助 難 民 ！ 殺 死 所 有 人 渣 ， 不 要 讓 他 們 逃 脫 ！
-qstr_Cannot_leave|不 能 離 開
-qstr_Longbeard_Kinsman|長 鬍 子 金 斯 曼
-qstr_Ori_Longbeard|奧 利 龍 胡 德
-qstr_We_shall_make_our_st|我 們 要 站 在 這 裡 ！ 為 了 巴 林 ！
-qstr_Noooo!_You_orcs_will|不 ！ ！ ！  你 們 獸 人 會 為 此 付 出 代 價 ！
-qstr_Arghhh!!_Nooo!!|哇 哇 哇 ！ 不 不 不 ！
-qstr_I_will_take_down_as_|在 我 倒 下 之 前 ， 我 會 盡 可 能 多 地 奪 取 它 ！
-qstr_Raaa!!|出 來 來 來 ! !
-qstr_Kill_the_dwarves!|殺 死 矮 人 ！
-qstr_Finish_them!|結 束 它 們 ！
-qstr_We_will_feast_on_you|我 們 要 吃 你 的 肉 ！
-qstr_Dwarf_meat!|矮 人 肉 ！
-qstr_Eru_Iluvatar_has_dec|伊 露 維 塔 已 經 決 定 了 巴 林 的 命 運 ， 也 無 法 改 變 。
-qstr_They_are_coming....!|他 們 來 了 .... ！
-qstr_Who...dares...enter.|誰...  膽 敢 ...  進 入 ...
-qstr_You_are_not_welcome_|你 在 這 裡 不 受 歡 迎 ！
-qstr_Finally_I_found_you!|最 後 ， 我 找 到 了 你 ！ 我 們 離 開 這 裡 吧 ！
-qstr_You...are....ours...|你 是 ...  是....  我 們 的 ......
-qstr_Look_at_my_over_the_|看 看 我 的 頭 像 ， {playername} ！ 我 真 漂 亮 ！
-qstr_You_wish_old_man_my_|如 您 所 願 ， 老 人 家 ， 我 的 頭 像 其 實 更 好 ！
-qstr_You_should_really_se|你 真 應 該 看 看 攝 政 王 迪 耐 瑟 二 世 的 書 臉 ， 他 的 照 片 贊 極 了 ！
-qstr_Press_Space_to_conti|請 按 空 白 鍵 繼 續 ...
-qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} 直 到 下 次 晉 升^
-qstr_Influence:^_{reg11}_|影 響 力 ：^ {reg11} (對 於 {s16})^
-qstr_Resource_Points:^_{r|資 源 點 ：^ {reg12} (在 {s16})^
-qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} 直 到 下 次 晉 升^
-qstr_{s13}_{reg11}__with_|{s13} {reg11} (對 於 {s16})^
-qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (在 {s16})^
-qstr_Four_years_after_bri|在 從 孤 山 帶 來 一 群 矮 人 試 圖 重 新 安 置 曾 經 矮 人 城 市 卡 扎 德 杜 姆 四 年 後 ， 巴 林 被 一 個 獸 人 箭 射 殺 ， 同 時 窺 視 了 米 爾 斯 米 爾 湖 ， 他 的 人 民 立 即 與 許 多 獸 人 交 戰 來 到 西 爾 弗 洛 德 河 。 在 從 東 門 和 第 一 大 廳 ， 然 後 是 卡 扎 德 杜 姆 橋 和 第 二 大 廳 連 續 撤 退 後 ， 剩 下 的 長 鬍 子 被 迫 一 路 回 到 第 二 十 一 大 廳 。 在 試 圖 通 過 看 到 Óin 死 亡 的 杜 林 之 門 逃 跑 失 敗 後 ， 馬 薩 布 爾 商 會 在 失 去 房 間 外 第 二 十 一 個 大 廳 之 後 成 為 殖 民 地 的 最 後 一 個 保 衛 者 。 除 了 大 門 ， Ori 和 少 數 倖 存 者 建 立 了 最 後 的 防 禦 。
-qstr_You_chase_an_orc_sco|你 追 逐 一 個 獸 人 偵 察 進 入 森 林 ......
-qstr_^No_food:___{reg7}|^沒 有 食 物 : -{reg7}
-qstr_Current_party_morale|當 前 部 隊 士 氣 是 ： {reg5}。^當 前 部 隊 士 氣 加 權 為 ：^^基 礎 士 氣 ： +50^部 隊 規 模 ： {s2} {reg1}^統 御 技 能 ： {s3} {reg2}^食 物 品 種 ： {s4} {reg3} {s5}^特 殊 物 品 ： {s6} {reg6}^最 近 事 件 ： {s7} {reg4}^總 計 ： {reg5}
-qstr_Defending|防 衛 中
-qstr_Gathering_army|聚 集 軍 隊 中
-qstr_Besieging_{s11}|围 攻 {s11} 中
-qstr_Raiding_{s11}|突 襲 {s11}
-qstr_Attacking_enemies_ar|攻 擊 {s11} 周 圍 的 敵 人
-qstr_No_one|沒 有 人
-qstr_{s9}{s10}^Current_st|{s9} {s10}^當 前 狀 態  ： {s11}^元 帥 ： {s12}^上 次 進 攻 至 今 已 ： {reg1} 小 時^攻 擊 方 最 多 剩 下 ： {reg2}^^
-qstr_Selected_faction_is:|選 擇 陣 營 為 ： {s10}^^{s9}
-qstr_You_are_in_perfect_h|你 非 常 的 健 康
-qstr_You_are_suffering_fr|你 正 被 {s1} 所 折 磨
-qstr_You_are_suffering_fro|你 正 遭 受 {s1} 和 {s2} 的 困 擾
-qstr_You_are_suffering_from|你 正 遭 受 {s1} ， {s2} 和 {s3} 的 困 擾
-qstr_You_are_suffering_from_|你 正 遭 受 {s1} ， {s2} ， {s3} 和 {s4} 的 困 擾 
-qstr_Weekly_upkeep_for_tr|每 週 部 隊 維 護 ：^{reg5} 資 源 點^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^{s4} ： {reg4} 資 源 點 ({reg5})
-qstr_No_upkeep_costs|無 維 護 費
-qstr_Orc_hiring_bonus:_+2|獸 人 招 募 加 成 ： 每 個 獸 人 +2/3^
-qstr_Current_party_size_l|當 前 部 隊 規 模 上 限 是 ： {reg5} 。 ^當 前 隊 伍 規 模 修 正 為 ：^^基 礎 人 數 ： +10^統 御 技 能 ： {s2} {reg1}^魅 力 屬 性 ： {s3} {reg2}^軍 銜 ： {s4} {reg3}^{s5} 總 計 ： {reg5}
-qstr_{s2}^_________{s4}:_|{s2}^{s4}：{reg1} ({s23})
-qstr__________Faction_str|派 系 力 量 報 ​​告 ：^{s2}
-qstr_{s1}^^Factions_are_n|{s1}^^陣 營 力 量 低 於 {reg1} 將 經 常 被 圍 攻 。
-qstr_Savagery|野 蠻
+qstr_{s1}Weapons:^|{s1}武器：^
+qstr_{s1}___One_Handed:^|{s1}   單手武器：^
+qstr_{s1}___Two_Handed:^|{s1}   雙手武器：^
+qstr_{s1}___Polearms:^|{s1}   長柄武器：^
+qstr_{s1}___Archery:^|{s1}   弓術：^
+qstr_{s1}___Crossbow:^|{s1}   十字弓：^
+qstr_{s1}___Throwing:^|{s1}   投擲武器：^
+qstr_{s1}___Slings:|{s1}   投石索：
+qstr_{s2}_|{s2}-
+qstr__Click_on_the_troop_|(點擊部隊來旋轉它)^^點擊裝備^(頭盔、鎧甲、手套和靴子)^來顯示它們。
+qstr_ready_bows_and_missi|準備好弓箭和投擲武器
+qstr_ready_side_arms|準備好副武器
+qstr_ready_two_hander|準備好雙手武器
+qstr_ready_polearms|準備好長柄武器
+qstr_shields_up|用盾
+qstr_doff_shields|棄盾
+qstr_Distance___{reg70}__|距離-{reg70}-{s11}隊伍-{s12}部隊
+qstr_A_golden_mist_from_L|來自羅瑞安的金色薄霧籠罩著戰場。女士的存在使你的部隊受到鼓舞。
+qstr_A_golden_mist_from_Lr|來自羅瑞安的金色薄霧籠罩著戰場。女巫就在附近，你和你的部隊不禁打了寒顫。
+qstr_Dark_clouds_from_Mor|來自魔多的烏雲籠罩著戰場。你的弓兵看不清敵方，而且邪惡的存在嚇壞了你的人馬。
+qstr_Dark_clouds_from_Mord|來自魔多的烏雲籠罩著戰場。黑暗之主的存在使你和你的人馬感到更有力量。
+qstr_A_thunderstorm_from_|來自迷霧山脈的雷雨在戰場上肆虐。你的部隊被減慢了，而且其中迷信的人感到害怕。
+qstr_A_thunderstorm_from_t|來自迷霧山脈的雷雨在戰場上肆虐。弓兵在這種天氣下作戰有困難。
+qstr_A_poisonous_fog_from|來自多爾哥多的毒霧在戰場上徘徊。你和你的部隊感到虛弱。人們都很害怕。
+qstr_A_poisonous_fog_from_|來自多爾哥多的毒霧在戰場上徘徊。你沒有感到任何不適，但你能聽到敵方痛苦的聲音也能聞到他們的恐懼。
+qstr_You_shapeshift_into_|你變形成一頭熊！
+qstr_You_got_{reg1}_exper|你在熊型態下獲得{reg1}經驗值。
+qstr_Your_ability_to_chan|你變身的能力已經覺醒了，現在起你可以用人或熊的型態繼續旅途。
+qstr_You_change_back_to_h|你變回人形...
+qstr_Your_mount_stumbles!|你的坐騎步履蹣跚！看來是瘸了。
+qstr_Bitten_by_your_own_w|你被自己的座狼咬了！
+qstr_You_weigh_too_much_f|你對小馬來說太重了！
+qstr_Your_mount_rears_ref|你的坐騎後腿直立，拒絕服從你的命令！
+qstr_Cannot_Change_Camera|第一人稱時不能改變鏡頭模式。
+qstr_Switch_Back_to_3rd_P|換回第3人稱視角以切換鏡頭。
+qstr_Fixed_Custom_Camera|固定自訂鏡頭
+qstr_Press_Ctrl_+_Left_/_|按Ctrl+左/Ctrl+右箭頭來切換肩膀
+qstr_Press_Ctrl_+_Down_to|按Ctrl+下來置中
+qstr_Use_+/__to_zoom_in/o|使用+/-來放大/縮小
+qstr_Use_Up/Down_arrow_ke|使用上/下箭頭來前/後傾
+qstr_Fixed_Camera___Right|固定鏡頭-右肩
+qstr_Fixed_Camera___Left_|固定鏡頭-左肩
+qstr_Fixed_Camera___Cente|固定鏡頭-置中
+qstr_Shield_is_too_big_to|盾太大不能跟弓一起使用。
+qstr_While_visiting_towns|在參觀城鎮、聚落和營地時，你可以跟周圍走動的人交談。不同陣營的成員會有不同的話能說-有些人會告訴你他們的想法，而其他則會分享謠言。兩者皆可以讓你更好地了解這個人的文化和陣營，或者他們可能會有找到秘密地點的線索，又或者是在荒野中旅行和在魔戒之戰中戰鬥的技巧和訣竅。
+qstr_Cannot_leave_now.|現在不能離開。
+qstr_You_have_found_the_l|你找到了當地的鍛治匠。
+qstr_You_have_found_the_lo|你找到了地方官。
+qstr_You_have_found_the_loc|你找到了當地的倉庫。
+qstr_You_look_through_Hen|你透過日落之窗，漢那斯安南向外看。美麗的景象恢復了你對西方和世外之力的信心。
+qstr__cancelled_the_{reg1|(取消殺死囚犯獲得的{reg10}經驗值)
+qstr_Forming_ranks.|正在列陣。
+qstr_{reg2?You:Your_mount|{reg2?你:你的坐騎}受到{reg1}額外傷害！
+qstr_{reg2?You_strike:You|{reg2?你的打擊:你的馬衝撞}造成{reg1}額外傷害！
+qstr_Division_Placement|分隊位置
+qstr_Complex_Formations|複雜陣型
+qstr_Formations_turned_OF|設定選單中關掉了陣型
+qstr_Division_{reg1}_{s2}_g|第{reg1}分隊{s2}進入其記憶的位置...
+qstr_Division_{reg1}_{s2}_f|第{reg1}分隊{s2}排成行(已記憶)。
+qstr_Division_{reg1}_{s2}_fo|第{reg1}分隊{s2}排成{reg0}行(已記憶)。
+qstr_Delivered_{reg60}_da|給予{reg60}傷害。
+qstr_DEBUG__Health_Regen_|DEBUG(生命回復)：{s1}恢復{reg0}%生命值。=+{reg1}%力量
+qstr_Your_bear_form_has_{|你的熊型態有{reg2}/{reg1}生命值！
+qstr_Three_Nazgul_are_cir|三隻戒靈正在戰場上空盤旋！
+qstr_Two_Nazgul_are_circl|兩隻戒靈正在戰場上空盤旋！
+qstr_A_Nazgul_is_circling|一隻戒靈正在戰場上空盤旋！
+qstr_Some_of_your_human_t|你部分的人類部隊並不畏懼黑暗。(夜間部隊不受夜間減益的影響)
+qstr_You_are_filled_with_|你注視了敵人後充滿了憤怒(發動狂暴化)。
+qstr_Your_mount_is_scared|你的座騎被{reg73?樹人:食人妖}嚇到了！
+qstr_Your_mount_is_scared_|你的座騎被{reg73?樹人:食人妖}嚇到了，但你還能駕馭牠！
+qstr_Nazgul_sweep!|戒靈掃過！
+qstr_You_and_your_horse_p|戒靈的叫聲難以忍受，你和你的馬陷入恐慌！
+qstr_Your_horse_panics_th|戒靈的叫聲難以忍受，你的馬陷入恐慌！
+qstr_You_cower_in_terror_|戒靈的叫聲難以忍受，你陷入畏懼！
+qstr_knocked_unconscious|被打昏了
+qstr_Nazgul_diving_attack|戒靈正在俯衝攻擊{s11}！
+qstr_{s11}_is_{s10}_in_th|{s11}在戒靈的攻擊下{s10}！
+qstr_Received_{reg66}_dam|受到{reg66}傷害。
+qstr_You_yell_for_your_ho|你呼喚了你的馬。
+qstr_You_do_not_need_to_r|你還不需要鼓舞你的部隊。
+qstr_You_rally_your_troop|你鼓舞了你的部隊！
+qstr_{s5}_rallies_{reg65?|{s5}鼓舞了{reg65?她的:他的}部隊！
+qstr_You_have_killed_{reg|你在這場戰鬥中殺了{reg1}名敵人！
+qstr_Your_bravery_inspire|你的英勇啟發了你的部隊！
+qstr_Your_mount_has_falle|你的坐騎已經倒下了！
+qstr_Receive_{reg22}_dama|受到{reg22}傷害。
+qstr_You_have_been_knocke|你被{s22}打昏了。
+qstr_{s21}_has_been_knock|{s21}從{reg23?她的:他的}坐騎上跌落了下來。
+qstr_{s21}_{reg24?killed:|{s21}被{s22}{reg24?殺死了:打昏了}。
+qstr_A_bear_has_been_summ|一隻熊被召喚出戰了！
+qstr_In_The_Last_Days_of_|在第三紀元的最後之日裡，你的部隊將在每次戰鬥開始時堅守陣地，而不是盲目衝鋒。^^要命令你的部隊進入陣型，按'J'列陣，'K'組成盾牆，'L'組成楔形陣，';'組成方陣。按'U'取消陣型。^^如果你的部隊正在潰散，你可以按'V'來鼓舞他們。每次戰鬥你能鼓舞的次數有限，而數量取決於你的統御和魅力。
+qstr_You_can_also_order_y|你也可以命令你的部隊使用你想要他們使用的武器類型。^^按O在武器類型之間切換。按P可在盾的命令類型之間切換。
+qstr_The_Last_Days_of_the|第三紀元的最後之日設置了一個自訂鏡頭，以繞過原有鏡頭對較矮的種族(例如半獸人和矮人)的限制。^^按CTRL+END可切換2種鏡頭模式：固定位置和自由模式。^^固定位置是所有種族的最佳位置，但無法調整。你可以按CTRL+左/右鍵切換肩膀。^^自由模式鏡頭將角色放在螢幕中央。你可以按CTRL+上/下鍵來傾斜鏡頭，按CTRL+Numpad+/-來縮放。^^有關如何控制不同鏡頭模式請參閱資訊頁面。
+qstr_Battlefield_is_too_s|戰場對復雜的AI陣型來說太小了。
+qstr_You_have_a_clear_per|你清晰地感受到一個迫切的大危機，來自四面八方！
+qstr_New_ent_reached_batt|新的樹人加入了戰鬥...
+qstr_You_receive_word_tha|你收到通知說比翁人的村莊被襲擊了。比翁人喪失了陣營力量。
+qstr_You_receive_word_that|你收到通知說戒指獵人的首領被目擊前往魔多，拖著一個箱子。魔多獲得了陣營力量。
+qstr_Enemy_reinforcements|敵方的增援已抵達
+qstr_Yarrrr!!|呀啊啊啊啊！！
+qstr_Get_all_of_them!|一個都別放過！
+qstr_Kill_them_all!|殺光他們！
+qstr_Toss_them_overboard!|把他們扔下船！
+qstr_It_is_a_good_day_to_|慷慨赴義在今朝！
+qstr_All_hands_on_deck!_T|全體動員！把他們丟回去！
+qstr_Ally_reinforcements_|友方增援已抵達
+qstr_Forward_men!|弟兄們，前進！
+qstr_Leave_none_of_these_|別讓這些污穢活下來！
+qstr_End_them_all!|結束他們！
+qstr_Drive_them_back!|把他們趕回去！
+qstr_Protect_the_City!|保護城市！
+qstr_Forward!_Board_them!|前進！登上他們的船！
+qstr_The_Last_Days_of_the_|在第三紀元的最後之日中有進階攻城AI，跟原版的差很多。所有的攻方和守方都會被分為左翼右翼和中鋒。攻方玩家只能指揮部分自己的部下。
+qstr_on_the_left_flank|在左翼
+qstr_on_the_right_flank|在右翼
+qstr_through_the_center|從中間
+qstr_Attackers_charge_{s2|攻方向{s2}衝鋒
+qstr_Attackers_charge_{s1|攻方向{s1}衝鋒
+qstr_{s1}_rallied_to_your|{s1}受你的魅力鼓舞加入了你。
+qstr_Last_attacker_wave._|攻方只剩最後一波了。你要撤退嗎？
+qstr_Attackers_almost_def|攻方快被擊敗了。你要撤退嗎？
+qstr_The_remaining_attack|剩餘的攻方逃走了！
+qstr_The_remaining_defend|剩餘的守方從圍城中逃跑了！
+qstr_Reached_Gauntlet_wav|達到比賽第{reg1}波！
+qstr_Ballista:_out_of_amm|弩砲：彈藥用盡！
+qstr_Ballista:_turn_CURSO|弩砲：用滑鼠轉動，LSHIFT瞄準，空白鍵射擊，T點火，F退出
+qstr_Ballista:_out_of_ammo|弩砲：彈藥用盡
+qstr_The_ladders_on_Deepi|有梯子搭在深谷防禦牆上了！小心！
+qstr_THREE.._TWO..._ONE..|三...二...一....開打！
+qstr_You_have_come_upon_t|你來到視野之山，阿蒙漢的廢墟，一座剛鐸的瞭望塔獨自佇立，你覺得這個地方曾經偉大但已經早就被遺忘了
+qstr_You_have_come_upon_th|你已經到了死亡沼澤，在最後同盟的戰爭中達哥拉之戰的地點。^^沼澤地已經吞沒了曾經的草原，現在唯一的綠色是憂憂水面上深綠雜草的渣滓^^枯草和腐爛的蘆葦在迷霧中如同久被遺忘夏天的陰影搖擺著，人類、精靈和半獸人的屍體漂浮在混濁的水裡^^空氣令人感到濕冷，當你看到水面下精靈屍體的眼睛如蠟燭般閃爍時你只能忍不住顫抖
+qstr_You_have_entered_the|你已經進入了南方幽暗密林的樹林中，曾被稱為巨綠森的地方^^多爾哥多的要塞就在附近而其陰影則投射在森林上。這裡的樹林令人感覺黏膩且充滿著腐朽。古老的橡樹被腐爛和真菌覆蓋而巨大的蜘蛛網則延綿纏繞著其樹幹^^空氣是黑暗、悶熱和靜止的，窒息感緩緩的壓迫著你
+qstr_You_have_found_the_D|你找到了理當存放傳說之槍的矮人倉庫。向{s3}報告你的發現
+qstr_Leave_the_Warehouse?|離開倉庫？
+qstr_Leave_the_place_in_s|悄悄地離開此地？
+qstr_Leave_scene?|離開現場？
+qstr_Trace_back_your_step|要循著原路回到開闊處嗎？
+qstr_There_is_no_way_out!|沒有任何出路了！要向半獸人們投降嗎？
+qstr_Stealth_mini_game_tu|潛行迷你游戲教學：這裡有兩個警報等級。^^等級1是由守衛看到屍體或看見你來發佈的。^等級2則是由守衛在等級1啟動後仍看見你而發佈的。^^等級2危險之處在於守衛會持續抵達。^你可以透過躲藏來避免被發現。要躲藏只需移動到各種掩體背後。
+qstr_You_are_now_hidden.|你正躲藏著。
+qstr_You_move_out_of_hidi|你離開了掩體。
+qstr_The_guards_have_spot|守衛發現了一具屍體！
+qstr_Alarm_Level_is_now_a|警報正處於等級1！
+qstr_Alarm_Level_is_now_at|警報正處於等級0！
+qstr_The_guards_have_spott|守衛看到了你！
+qstr_Alarm_Level_is_now_at_|警報正處於等級2！
+qstr_The_sorcerer_has_fle|巫師已經逃跑了！
+qstr_Report_this_ill_news|馬上向凱蘭崔爾女士報告這個壞消息。
+qstr_The_sorcerer_is_flee|巫師正在逃跑！殺了他！
+qstr_The_sorcerer_has_joi|巫師加入了戰鬥！殺了他！
+qstr_The_sorcerer_is_dead|巫師已死！
+qstr_The_battle_is_won!|戰鬥勝利！
+qstr_A_band_of_tribal_orc|一群部落半獸人出現了！
+qstr_Gaaaar!!_We_wants_th|嘎啊啊啊！我們想要那些人肉！
+qstr_{s31}_scouts_have_ap|{s31}斥候出現了！
+qstr_Those_are_ours!_We_h|那些是我們的！他們離開後我們一直在追蹤他們！沒有人能阻止我們！
+qstr_Trolls_appeared!|食人妖出現了！
+qstr_Gaaaar!!|嘎啊啊啊！
+qstr_{s31}_scouts_have_app|{s31}斥候現身幫助難民！
+qstr_Hurry_men!_Help_the_|弟兄們，快點！幫助難民！殺光所有渣滓別讓他們逃了！
+qstr_Cannot_leave|不能離開
+qstr_Longbeard_Kinsman|長鬍親屬
+qstr_Ori_Longbeard|長鬍歐力
+qstr_We_shall_make_our_st|我們將在此最後一搏！為了巴林！
+qstr_Noooo!_You_orcs_will|不！你們這些半獸人將為此付出代價！
+qstr_Arghhh!!_Nooo!!|哇啊啊啊！！不！！
+qstr_I_will_take_down_as_|在倒下前我會帶更多一起下地獄的！
+qstr_Raaa!!|啦啊啊啊！！
+qstr_Kill_the_dwarves!|殺了矮人！
+qstr_Finish_them!|了結他們！
+qstr_We_will_feast_on_you|我們將用你的血肉開宴會！
+qstr_Dwarf_meat!|矮人肉！
+qstr_Eru_Iluvatar_has_dec|伊露維塔已決定了巴林一眾的命運，而其無法改變。
+qstr_They_are_coming....!|他們來了....！
+qstr_Who...dares...enter.|是誰...膽敢...進入...
+qstr_You_are_not_welcome_|這裡不歡迎你！
+qstr_Finally_I_found_you!|終於，找到你了！讓我們離開這裡吧！
+qstr_You...are....ours...|你...是....我們的...
+qstr_Look_at_my_over_the_|{playername}，看看我的過肩鏡頭！我從遠距離看起來真漂亮！
+qstr_You_wish_old_man_my_|別做夢了，老頭，我的過肩鏡頭看起來才更美！
+qstr_You_should_really_se|你真該看看攝政王迪耐瑟二世的臉書照片，他有夠讚！
+qstr_Press_Space_to_conti|按空白鍵繼續...
+qstr_{s24}__{reg13}____{r|{s24}({reg13})-還需{reg20}到下次晉升^
+qstr_Influence:^_{reg11}_|影響力：^{reg11}(對{s16}的)^
+qstr_Resource_Points:^_{r|資源點：^{reg12}(在{s16}的)^
+qstr_{s11}_{s24}__{reg13}|{s11}{s24}({reg13})-還需{reg21}到下次晉升^
+qstr_{s13}_{reg11}__with_|{s13}{reg11}(對{s16}的)^
+qstr_{s15}_{reg12}__in_{s|{s15}{reg12}(在{s16}的)^
+qstr_Four_years_after_bri|在從孤山帶來一群矮人試圖再次定居於矮人古城凱薩督姆的四年後，巴林在俯視鏡影湖時被一枝半獸人的箭射殺，他的子民立即與許多沿銀流河而上的半獸人交戰。在從東門和第一大殿，然後凱薩督姆之橋和第二大殿連續撤退後，剩下的長鬍們被迫撤到第二十一大殿。在看見嘗試從都靈之門逃跑的歐音失敗死亡之後，馬薩布爾之間變成失去門外第二十一大殿後殖民地最後的防線。封死了大門，歐力和少數倖存者建立了最後的防禦。
+qstr_You_chase_an_orc_sco|你追著一隊半獸人斥候進入森林...
+qstr_^No_food:___{reg7}|^沒有食物：-{reg7}
+qstr_Current_party_morale|當前部隊士氣是：{reg5}。^當前部隊士氣加權為：^^基礎士氣：+50^隊伍規模：{s2}{reg1}^統御：{s3}{reg2}^食物種類：{s4}{reg3}{s5}^特殊物品：{s6}{reg6}^近期事件：{s7}{reg4}^總計：{reg5}
+qstr_Defending|防衛中
+qstr_Gathering_army|聚集軍隊中
+qstr_Besieging_{s11}|圍攻{s11}中
+qstr_Raiding_{s11}|掠奪{s11}中
+qstr_Attacking_enemies_ar|攻擊{s11}周圍的敵人
+qstr_No_one|沒有人
+qstr_{s9}{s10}^Current_st|{s9} {s10}^當前狀態：{s11}^元帥：{s12}^上次進攻至今已過：{reg1}小時^攻擊方最多跟隨者：{reg2}^^
+qstr_Selected_faction_is:|選擇的陣營為：{s10}^^{s9}
+qstr_You_are_in_perfect_h|你非常的健康。
+qstr_You_are_suffering_fr|你正被{s1}折磨著。
+qstr_You_are_suffering_fro|你正被{s1}和{s2}折磨著。
+qstr_You_are_suffering_from|你正被{s1}、{s2}和{s3}折磨著。
+qstr_You_are_suffering_from_|你正被{s1}、{s2}、{s3}和{s4}折磨著。
+qstr_Weekly_upkeep_for_tr|每週部隊工資：^{reg5}資源點^
+qstr_{s12}^__{s4}:_{reg4}|{s12}^{s4}：{reg4}資源點({reg5})
+qstr_No_upkeep_costs|無工資費
+qstr_Orc_hiring_bonus:_+2|半獸人招募加成：每個半獸人+2/3^
+qstr_Current_party_size_l|當前隊伍大小上限是：{reg5}。 ^當前隊伍大小加權為：^^基礎大小：+10^統御：{s2}{reg1}^魅力：{s3}{reg2}^階級：{s4}{reg3}^{s5}總計：{reg5}
+qstr_{s2}^_________{s4}:_|{s2}^         {s4}：{reg1}({s23})
+qstr__________Faction_str|         陣營力量報告：^{s2}
+qstr_{s1}^^Factions_are_n|{s1}^^陣營一般將在力量低於{reg1}被圍攻。
+qstr_Savagery|兇猛
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
-qstr_Traits_gained:^{s2}|特 性 獲 得 ：^{s2}
-qstr_^^You_are_{s17}.|^^你 是 {s17} 。
-qstr_Assassins_in_the_cam|營 地 裡 發 現 刺 客 ， 保 護 好 你 自 己 !
-qstr_Ally_party_size:_{re|盟 友 部 隊 規 模 ： {reg1}
-qstr_Enemy_party_size:_{r|敵 人 部 隊 規 模 ： {reg1}
-qstr_Party_count:_{reg0}|部 隊 數 量 ： {reg0}
-qstr_Party_position__{reg|部 隊 位 置 ({reg2} ， {reg3}) 。
-qstr_Party_size_increased|部 隊 規 模 從 {reg0} 增 長 至 {reg1} ！
-qstr_Faction_strengths_re|陣 營 力 量 報 ​告 ：^{s2}
-qstr_Attacking_enemy_part|攻 擊 敵 軍 {s11}
-qstr_Unknown_{reg3}_|未 知 ({reg3})
+qstr_Traits_gained:^{s2}|獲得特質：^{s2}
+qstr_^^You_are_{s17}.|^^你是{s17}。
+qstr_Assassins_in_the_cam|營地裡有刺客，保護自己！
+qstr_Ally_party_size:_{re|友方隊伍大小：{reg1}
+qstr_Enemy_party_size:_{r|敵方隊伍大小：{reg1}
+qstr_Party_count:_{reg0}|隊伍數量：{reg0}
+qstr_Party_position__{reg|隊伍位置({reg2}，{reg3})。
+qstr_Party_size_increased|隊伍大小從{reg0}增加至{reg1}！
+qstr_Faction_strengths_re|陣營力量報​告：^{s2}
+qstr_Attacking_enemy_part|正在攻擊{s11}的敵方隊伍
+qstr_Unknown_{reg3}_|未知({reg3})
 qstr_ON|開
-qstr_OFF__cheat_|關 (作 弊 )
+qstr_OFF__cheat_|關(作弊)
 qstr_OFF|關
-qstr_All_messages|所 有 消 息
-qstr_{reg0}__will_most_li|{reg0} (極 大 概 率 導 致 存 檔 崩 潰 )
-qstr_{reg0}__could_possib|{reg0} (有 概 率 導 致 存 檔 崩 潰 )
-qstr_Normal|正 常
-qstr_Defender_only|僅 守 方
-qstr_Halved|減 半
-qstr_Battles_only|僅 戰 鬥
-qstr_Doubled|雙 倍
-qstr_Tripled|三 倍
-qstr_Quadrupled|四 倍
-qstr_You_drank_the_Ent_Wa|你 喝 了 樹 人 水 ...
-qstr_You_used_the_Orc_Bre|你 使 用 了 半 獸 人 酒。
-qstr_Fangorn_search:_fail|搜 索 法 貢 森 林 ： 失 敗 。
-qstr_^^^A_great_victory!^|^^^一 場 偉 大 的 勝 利 ！ ^^^這 就 是 法 貢 森 林 的 神 話 ...
-; qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
-qstr_Troll_caged_in_wheel|食 人 妖 被 關 在 有 輪 的 籠 子 裡
-qstr_A_second_troll_is_ca|第 二 個 食 人 妖 被 關 在 有 輪 的 籠 子 裡
-qstr_Here_you_are.|這 個 給 你 。
-qstr_Player_was_moved_to_|玩 家 被 移 動 到 {s10} 。
-qstr_neutral_whereabouts|中 立 國 下 落
-qstr_any|任 何
-qstr_woman|女 人
-qstr_gondor|剛 鐸
-qstr_rohan|洛 汗
-qstr_dunlander|登 蘭 德 人
-qstr_urukhai|強 獸 人
+qstr_All_messages|所有訊息
+qstr_{reg0}__will_most_li|{reg0}(極大機率導致存檔崩潰)
+qstr_{reg0}__could_possib|{reg0}(有機率導致存檔崩潰)
+qstr_Normal|正常
+qstr_Defender_only|僅限守方
+qstr_Halved|減半
+qstr_Battles_only|僅限戰鬥
+qstr_Doubled|雙倍
+qstr_Tripled|三倍
+qstr_Quadrupled|四倍
+qstr_You_drank_the_Ent_Wa|你喝了樹人之水...
+qstr_You_used_the_Orc_Bre|你使用了半獸人酒。
+qstr_You_and_your_compani|你和你的同伴們各喝了一口米盧沃酒。你感到神清氣爽和充滿力量。
+qstr_You_give_a_few_leave|你把幾片阿系拉斯葉交給了你的治療師。
+qstr_lordless|無主的
+qstr_orc_stragglers|掉隊半獸人
+qstr_wild_goblins|野生哥布林
+qstr_recruits|新兵
+qstr_regulars|正規軍
+qstr_elites|精英
+qstr_You_camp_and_beat_th|你的營地奏響了深淵之鼓。其雄偉的聲音吸引了一群{s1}的{s2}。
+qstr_Fangorn_search:_fail|搜索法貢森林：失敗。
+qstr_^^^A_great_victory!^|^^^一場偉大的勝利！^^^原來法貢森林的神話是這個意思...
+qstr_^^^Defeated...^^^Sca|^^^被擊敗了...^^^在法貢森林裡走散了...獨自一人...
+qstr_Troll_caged_in_wheel|食人妖被關在有輪的籠子裡。
+qstr_A_second_troll_is_ca|第二隻食人妖被關在有輪的籠子裡。
+qstr_Here_you_are.|給你。
+qstr_Player_was_moved_to_|玩家被移動到{s10}。
+qstr_neutral_whereabouts|中立的下落
+qstr_any|任何
+qstr_woman|女人
+qstr_gondor|剛鐸
+qstr_rohan|洛汗
+qstr_dunlander|登蘭德人
+qstr_urukhai|強獸人
 qstr_haradrim|哈拉德人
-qstr_dwarf|矮 人
-qstr_troll|食 人 妖
-qstr_dunedain|登 丹 人
-qstr_lothlorien|羅 斯 洛 立 安
-qstr_rivendell|瑞 文 戴 爾 人
+qstr_dwarf|矮人
+qstr_troll|食人妖
+qstr_dunedain|登丹
+qstr_lothlorien|羅斯洛立安
+qstr_rivendell|瑞文戴爾
 qstr_mirkwood|幽暗密林
-qstr_evil_man|惡 人
-qstr_{reg11}0___{reg11}9|{reg11} 0 - {reg11} 9
-qstr_Regular_troops_only|僅 限 正 規 部 隊
-qstr_Heroes_only|僅 限 英 雄
-qstr_Regulars_and_Heroes|正 規 部 隊 和 英 雄
-qstr_HP_lost_from_poisoni|血 量 因 中 毒 而 減 少
-qstr__{s17}.|, {s17}.
-qstr_A_group_of_{s1}_is_{|一 群 {s1} 正 向 你 {s10} 。
-qstr_You_are_attacking_a_|你 正 攻 擊 一 群 {s1}
-qstr_The_battle_against_t|對 抗 一 群 {s1} 的 戰 鬥 繼 續
-qstr_There_are_{reg39}_al|在 這 場 戰 鬥 中 有 {reg39} 盟 軍 指 揮 官 。   你 可 以 命 令 他 們 和 他 們 的 部 隊 獲 得 {reg40} 影 響 點 。
-qstr_Having_a_small_party|舉 辦 小 型 派 對 有 其 好 處 ......  你 和 你 的 部 隊 躲 避 敵 人 幾 個 小 時 ， 以 確 保 你 不 被 看 見 。
-; qstr_Your_ability_to_mast|Your ability to master your environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)
-qstr_{reg4}_will_be_lost.|{reg4} 將 會 失 去 。
-qstr_{s13}_asked_you_to_r|{s13} 希 望 你 帶 著 至 少 {reg13} 名 士 兵 向 他 報 告 。
-qstr_{s13}_ordered_you_to|{s13} 命 令 你 參 加 對 {s14} 的 攻 擊 。
-qstr_You_were_victorious!|你 勝 利 了 ！
-qstr_The_battle_was_lost.|戰 鬥 失 敗 ， 你 的 部 隊 完 全 的 潰 散 了
-qstr_Your_companions_carr|你 的 同 伴 把 你 從 戰 場 上 運 了 出 來 。
-qstr_You_have_defeated_th|你 擊 敗 了 敵 人 。
-qstr_You_have_retreated_f|你 從 戰 鬥 中 撤 離 。
-qstr_^^Ally_Casualties:{s|^^盟 軍 傷 亡 ： {s0}
-qstr_You_and_{s3}_celebra|你 和 {s3} 慶 祝 你 對 {s4} 的 勝 利 。
-qstr_News_of_your_victory|你 戰 勝 {s4} 的 消 息 傳 到 了 {s3} 。
-qstr_{s3}_witnesses_your_|{s3} 得 知 了 你 戰 勝 {s4} 的 消 息 。
-qstr_Even_though_there_we|即 使 沒 有 盟 友 見 證 你 的 勝 利 ， 你 的 部 隊 仍 然 會 慶 祝 你 的 勝 利 。
-qstr_{s1}_of_{s3}_managed|{s3} 的 {s1} 設 法 逃 離 了 。
-qstr_Prisoners_rescued_so|到 目 前 為 止 解 救 的 囚 犯 ： {reg1}
-qstr_{reg1}_kills_of_{s1}|{reg1} 殺 死 {s1} 派 系 軍 隊 計 入 誓 言 。 殺 得 總 數 ： {reg0}
-qstr_Perhaps_I_m_getting_|也 許 我 的 運 氣 在 變 差 ....
-qstr_Retirement_is_starti|退 休 越 來 越 像 是 個 好 主 意 。
-qstr_No_matter!_I_will_pe|無 妨 ！ 我 還 能 堅 持 ！
-qstr_What_did_I_do_to_des|我 做 了 什 麼 值 得 被 如 此 對 待 ？
-qstr_I_suppose_it_ll_make|我 猜 這 會 是 一 個 好 故 事 ……
-qstr__{s17}|, {s17}
-qstr_You_retreated_from_b|你 從 戰 場 撤 離 了 。
-qstr_{s9}_wants_you_to_fo|{s9} 希 望 你 能 夠 在 接 到 進 一 步 的 指 令 以 前 跟 著 他 的 部 隊 前 進 。
-qstr_{s8}_of_{s9}|{s9} 的 {s8}
-qstr__Your_own_banner_fli|你 自 己 的 旗 幟 飄 揚 在 城 堡 大 門 上 。
-qstr__You_see_the_banner_|你 看 到 {s7} 的 旗 幟 飄 揚 在 城 堡 大 門 上 。
-qstr__This_castle_seems_t|這 個 城 堡 似 乎 不 屬 於 任 何 人 。
-qstr__Your_own_banner_flie|你 自 己 的 旗 幟 飄 揚 在 城 鎮 大 門 上 。
-qstr__You_see_the_banner_o|你 看 到 {s7} 的 旗 幟 飄 揚 在 城 鎮 大 門 上 。
-qstr__The_townsfolk_here_|這 些 鎮 民 公 開 宣 布 獨 立 。
-qstr_Go_to_the_secret_ent|前 往 摩 瑞 亞 的 秘 密 入 口
-qstr_Search_for_a_secret_|尋 找 一 個 進 入 摩 瑞 亞 的 秘 密 入 口
-qstr_Get_book.|拿 書。
-qstr_The_{reg6?town_s:cas|{reg6?城 鎮 裡 : 城 堡 裡} 的 食 物 庫 存 應 該 還 能 堅 持 {reg3} 天 。
-qstr_The_{reg6?town_s:cast|{reg6? 城 鎮 裡 : 城 堡 裡} 的 食 物 庫 存 已 經 用 完 ， 守 軍 正 在 挨 餓 。
-qstr_You_re_preparing_to_|你 正 準 備 攻 擊 圍 牆 ， 需 要 {reg9} 小 時 的 準 備 時 間 。
-qstr_Your_forces_are_buil|你 的 部 隊 正 在 製 造 攻 城 塔 ， 需 要 {reg9} 小 時 完 成 。
-qstr_You_are_ready_to_att|你 已 經 準 備 好 攻 擊 城 牆 了 。
-qstr_The_siege_tower_is_b|攻 城 塔 已 經 建 好 ， 下 一 波 衝 鋒 也 已 經 準 備 好 了 。
-qstr_As_a_last_defensive_|你 撤 退 到 城 堡 的 大 廳 裡 進 行 最 後 的 防 禦 。 你 和 你 手 下 殘 餘 的 士 兵 將 準 備 在 這 裡 接 受 一 場 惡 戰 。 如 果 你 戰 敗 了 ， 你 就 無 路 可 退 了 。
-qstr_You_ve_been_driven_a|你 被 敵 人 從 城 牆 上 面 趕 下 去 了 ， 現 在 敵 人 大 量 湧 入 街 道 內 。 如 果 你 能 擊 敗 他 們 ， 你 也 許 能 扭 轉 局 勢 ， 反 敗 為 勝 。
-qstr_You_ve_breached_the_|你 已 經 突 破 了 城 牆 ， 但 是 那 些 頑 固 的 守 軍 繼 續 在 街 道 上 抵 抗 你 的 攻 擊 ！ 你 得 消 滅 他 們 才 能 攻 擊 城 鎮 中 心 的 城 堡 。
-qstr_The_town_centre_is_y|這 個 城 鎮 的 鎮 廣 場 是 你 的 了 ， 但 是 剩 下 的 守 軍 撤 退 到 城 堡 裡 了 。 你 要 完 全 消 滅 他 們 才 能 取 得 完 全 的 勝 利 。
-; qstr_The_remaining_defend|The remaining defenders escape from the siege!
-qstr_However_since_you_ar|然 而 ， 自 從 你 放 棄 了 向 {s9} 發 的 {效 忠 / 追 隨} 誓 言 。 他 是 絕 對 不 會 承 認 你 是 這 個 {reg8?城 鎮 : 城 堡} 的 {主 人 / 女 主 人} 。
-qstr_The_enemy_has_been_f|敵 人 被 迫 撤 退 了 。 進 攻 停 止 了 ， 但 是 圍 城 還 在 繼 續 。
-qstr_The_assasins_beat_yo|刺 客 擊 敗 了 你 ， 並 留 你 在 地 上 等 死 ……
-qstr_You_have_fallen._The|你 被 擊 敗 了 。 強 盜 們 迅 速 從 你 的 身 上 搜 刮 錢 財 ， 然 後 消 失 在 夜 幕 中 。 他 們 圖 財 ， 僅 僅 是 沒 害 命 而 已 。
-qstr_Luckily_some_of_your|你 的 同 伴 發 現 你 沒 有 按 時 返 回 就 出 來 找 你 ， 並 幸 運 的 在 水 溝 裡 發 現 了 你 。 他 們 急 忙 把 你 抬 到 安 全 的 地 方 並 為 你 包 紮 了 傷 口 。
-qstr_Luckily_some_passing|很 幸 運 的 是 ， 一 些 路 過 的 鎮 民 認 出 了 倒 在 水 溝 中 的 你 。 他 們 把 你 抬 到 最 近 的 旅 館 裡 並 為 你 包 紮 了 傷 口 。
-qstr_{s13}^^You_have_succ|{s13}^^你 成 功 的 潛 入 了 。
-qstr_the_place|當 地
-qstr_the_castle|城 堡
-qstr_the_Citadel|堡 壘
-qstr_the_Secret_Cave|秘 密 洞 穴
-qstr_Meduseld_the_Golden_|金 殿 美 杜 塞 爾 德
-qstr_the_Lord_Halls|領 主 大 殿
-qstr_the_Leader_s_Cave|領 隊 洞 窟
+qstr_evil_man|邪惡之人
+qstr_{reg11}0___{reg11}9|{reg11}0-{reg11}9
+qstr_Regular_troops_only|僅限正規部隊
+qstr_Heroes_only|僅限英雄
+qstr_Regulars_and_Heroes|正規部隊和英雄
+qstr_HP_lost_from_poisoni|因中毒而減少生命值
+qstr__{s17}.|，{s17}。
+qstr_A_group_of_{s1}_is_{|一群{s1}正向著你{s10}。
+qstr_You_are_attacking_a_|你正在攻擊一群{s1}。
+qstr_The_battle_against_t|對抗一群{s1}的戰鬥持續著。
+qstr_There_are_{reg39}_al|在這場戰鬥中有{reg39}名友方指揮官。你可以用{reg40}影響力命令他們和他們的部隊。
+qstr_Having_a_small_party|小型的隊伍有其好處...你和你的部隊從敵人面前躲藏了幾個小時。
+qstr_Your_ability_to_mast|你適應環境的能力讓你找到了一個安全的藏身之處。(你的野外求生技能讓你可以跟{reg1}名部下一起躲起來)
+qstr_{reg4}_will_be_lost.|將會失去{reg4}人。
+qstr_{s13}_asked_you_to_r|{s13}要你帶著至少{reg13}名部下向他報到。
+qstr_{s13}_ordered_you_to|{s13}命令你參加對{s14}的進攻。
+qstr_You_were_victorious!|你勝利了！
+qstr_The_battle_was_lost.|戰鬥失敗，你的部隊完全被毀滅了。
+qstr_Your_companions_carr|你的同伴帶著你脫離了戰鬥。
+qstr_You_have_defeated_th|你擊敗了敵方。
+qstr_You_have_retreated_f|你從戰鬥中撤退了。
+qstr_^^Ally_Casualties:{s|^^友方傷亡：{s0}
+qstr_You_and_{s3}_celebra|你和{s3}慶祝了你們對{s4}的勝利。
+qstr_News_of_your_victory|你戰勝{s4}的消息傳到了{s3}。
+qstr_{s3}_witnesses_your_|{s3}目睹了你對{s4}的勝利。
+qstr_Even_though_there_we|即使沒有友方目睹你的勝利，你的部隊仍慶祝了你們的獲勝。
+qstr_{s1}_of_{s3}_managed|{s3}的{s1}設法逃離了。
+qstr_Prisoners_rescued_so|目前為止解救的囚犯：{reg1}
+qstr_{reg1}_kills_of_{s1}|有{s1}陣營部隊的{reg1}名擊殺數被計入誓言。擊殺總數：{reg0}
+qstr_Perhaps_I_m_getting_|也許我的運氣變差了...
+qstr_Retirement_is_starti|退休聽起來越來越像個好主意了。
+qstr_No_matter!_I_will_pe|無妨！我還能堅持下去！
+qstr_What_did_I_do_to_des|我究竟做了什麼得遭到這樣的報應？
+qstr_I_suppose_it_ll_make|至少，我想我是個好故事的材料...
+qstr__{s17}|，{s17}
+qstr_You_retreated_from_b|你從戰場撤退了。
+qstr_{s9}_wants_you_to_fo|{s9}想要你在接到進一步的通知前跟隨他的軍隊。
+qstr_{s8}_of_{s9}|{s9}的{s8}
+qstr__Your_own_banner_fli|你自己的旗幟飄揚在城堡大門上。
+qstr__You_see_the_banner_|你看到{s7}的旗幟飄揚在城堡大門上。
+qstr__This_castle_seems_t|這個城堡似乎不屬於任何人。
+qstr__Your_own_banner_flie|你自己的旗幟飄揚在城鎮大門上。
+qstr__You_see_the_banner_o|你看到{s7}的旗幟飄揚在城鎮大門上。
+qstr__The_townsfolk_here_|這裡的鎮民宣佈了獨立。
+qstr_Go_to_the_secret_ent|前往摩瑞亞的秘密入口
+qstr_Search_for_a_secret_|尋找一個進入摩瑞亞的秘密入口
+qstr_Get_book.|拿書。
+qstr_The_{reg6?town_s:cas|{reg6?城鎮裡:城堡裡}的食物庫存應該還能堅持{reg3}天。
+qstr_The_{reg6?town_s:cast|{reg6?城鎮裡:城堡裡}的食物庫存已經沒了而守軍正在挨餓。
+qstr_You_re_preparing_to_|你正在準備攻擊城牆，準備還需要{reg9}個小時。
+qstr_Your_forces_are_buil|你的勢力正在建造攻城塔。他們估計還需要{reg9}小時才能建完。
+qstr_You_are_ready_to_att|你已經準備好攻擊城牆了。
+qstr_The_siege_tower_is_b|攻城塔已經建好也準備好進攻了。
+qstr_As_a_last_defensive_|作為最後的防禦，你撤退到城堡的大廳。你和你剩餘的士兵將在這裡進行最後一搏。如果你戰敗，就無路可退了。
+qstr_You_ve_been_driven_a|你從城牆上被趕下來了，現在攻擊方正在湧進街道上。如果你能擊敗他們，或許還能扭轉局勢反敗為勝。
+qstr_You_ve_breached_the_|你突破了城牆，但那些頑固的守軍還在街道上持續抵抗！你得先解決他們才能攻擊城鎮中心的城堡。
+qstr_The_town_centre_is_y|城鎮中心是你的了，但剩下的守軍撤退到城堡裡了。你還必須攻下它才能取得完全的勝利。
+qstr_The_remaining_defend|剩餘的守方從圍城中逃跑了！
+qstr_However_since_you_ar|然而，只要你不是向{s9}效忠的{人/追隨者}，他絕對不會承認你是這個{reg8?城鎮:城堡}的{主人/女主人}的。
+qstr_The_enemy_has_been_f|敵人被迫撤退了。進攻停止了，但圍城還在持續著。
+qstr_The_assasins_beat_yo|刺客打倒了你並把你丟著等死..
+qstr_You_have_fallen._The|你被打倒了。強盜們迅速的從你身上搜刮了貴重物品，然後消失在夜幕裡。雖然奄奄一息，但他們留了你一命。
+qstr_Luckily_some_of_your|幸運的是你的同伴見你沒有按時返回所以出來找你，並發現了倒在水溝中的你。他們把你扛到了安全處並包紮了你的傷口。
+qstr_Luckily_some_passing|幸運的是一些路過的當地人發現了倒在水溝中的你，並認出了你不是平凡的乞丐。他們把你扛到了安全處並包紮了你的傷口。
+qstr_{s13}^^You_have_succ|{s13}^^你成功的潛入了。
+qstr_the_place|當地
+qstr_the_castle|城堡
+qstr_the_Citadel|堡壘
+qstr_the_Secret_Cave|秘密洞穴
+qstr_Meduseld_the_Golden_|金之大殿，美杜塞爾德
+qstr_the_Lord_Halls|領主大殿
+qstr_the_Leader_s_Cave|首領的洞穴
 qstr_the_Tower|塔
-qstr_the_tower_of_Orthanc|歐 散 克 塔
-qstr_the_Throne_Room|王 座 大 廳
-qstr_Beorn_s_Hall|比 翁 大 廳
-qstr_the_Hall|大 殿 
-qstr_the_Great_Chamber_of|索 爾 大 殿
-qstr_Stay_indoors_for_som|駐 紮 一 段 時 間 ( 每 晚 {reg1} 資 源 點)
-qstr_Camp_outside_for_som|露 營 一 段 時 間 ( 無 額 外 費 用)
-qstr_{s4}_s_scouts_have_s|{s4} 的 偵 察 員 已 經 看 到 了 你 的 失 敗 。 你 給 {s4} 帶 來 了 恥 辱 ， 這 次 失 敗 的 責 任 只有 你 自 己 。
-qstr_{s1}_s_Ship|{s1} 的 船
-qstr_Time_passes...|時 間 流 逝 ...
-qstr_Forces_of_Good|正 義 方 的 軍 隊
-qstr_Forces_of_Mordor|魔 多 的 軍 隊
-qstr_Forces_of_Isengard|艾 辛 格 的 軍 隊
-qstr_their_enemies|他 們 的 敵 人
-qstr_{s11}_and_{s13}|{s11} 和 {s13}
-qstr_{s11}_{s13}|{s11} , {s13}
-qstr_a_scout_party_from_{|來 自 {s3} 的 偵 察 兵
-qstr_two_scout_parties_an|來 自 {s3} 的 兩 名 偵 查 兵 和 一 個 覓 食 者
-qstr_two_scout_parties_and|來 自 {s3} 的 兩 名 偵 查 兵 和 一 名 掠 奪 者
-qstr_three_scouts_two_for|來 自 {s3} 的 三 名 偵 察 兵 ， 兩 名 掠 奪 者 和 一 支 巡 邏 隊
-qstr_three_scouts_two_rai|三 名 偵 察 兵 、 兩 名 突 擊 隊 員 和 一 名 來 自 {s3} 的 部 隊
-qstr_You_see_the_village_|你 看 到 村 莊 被 土 匪 襲 擊 。 你 要 求 你 的 大 部 分 部 隊 在 你 帶 領 一 小 隊 人 準 備 保 衛 村 民 的 同 時 ， 注 意 其 他 入 侵 者 。
-qstr_You_see_the_village_y|你 看 到 你 準 備 要 突 襲 的 村 莊 ？ 你 和 你 的 一 小 群 隊 員 準 備 攻 擊 這 個 村 莊 ， 以 免 被 發 現 。
-qstr_The_raiders_are_defe|掠 奪 者 被 擊 敗 了 ！ 在 村 民 們 的 新 英 雄 的 幫 助 下 ， 凡 是 還 保 持 清 醒 的 土 匪 都 帶 著 巨 大 的 恐 懼 摸 黑 向 著 來 時 的 方 向 跑 逃 跑 了 。
-qstr_Try_as_you_might_you|儘 管 盡 了 最 大 的 努 力 ， 你 依 舊 沒 能 打 敗 劫 掠 者 。 他 們 將 村 子 夷 為 平 地 之 後 就 鎖 著 剩 下 的 村 民 離 開 了 。
-qstr_The_village_has_been|村 子 已 被 劫 掠 ， 村 民 不 是 被 殺 就 是 被 當 成 奴 隸 帶 走 。 黑 暗 魔 君 對 此 很 滿 意 。
-qstr_You_failed_to_raid_t|你 沒 能 成 功 劫 掠 村 莊 ， 你 和 你 的 人 被 趕 走 了 。 你 在 聽 到 勝 利 者 歡 呼 的 同 時 感 到 了 索 倫 之 眼 不 悅 的 目 光 。
-qstr_The_Scout_Camp_has_b|偵 察 營 被 夷 為 平 地 ， 這 將 減 緩 敵 人 的 進 攻 。
-qstr_You_failed_to_destro|你 未 能 摧 毀 偵 察 營 。 敵 人 已 經 採 取 了 你 的 陣 營 的 措 施 。
-qstr_You_have_defeated_the|你 擊 敗 了 襲 擊 艦 隊 ！ 這 對 敵 人 的 計 劃 是 一 個 沉 重 的 打 擊 ！
-qstr_You_defeated_the_int|你 擊 敗 了 攔 截 艦 隊 ！  即 使 你 沒 有 足 夠 的 力 量 來 襲 擊 這 座 城 市 ， 這 也 是 一 場 偉 大 的 勝 利 ！
-qstr_You_drove_back_the_e|你 驅 趕 了 敵 人 的 艦 隊 ， 但 失 去 了 你 的 大 部 分 船 隻 ！
-qstr_You_were_defeated_by|你 被 攔 截 艦 隊 打 敗 了 ， 未 能 突 襲 城 市 ！
-qstr_^^^^^^^You_come_upon|^^^^^^^你 遇 了 一 群 難 民 從 {s2} 逃 住 {s3}。^^他 們 中 大 多 是 老 弱 婦 孺。^^當 中 也 有 一 些 護 衛，但 明 顯 不 足 夠 去 抵 擋 一 次 襲 擊。
-qstr_^^^^^^^You_come_upon_|^^^^^^^你 遇 到 了 {s2} 一 直 追 踪 的 難 民 。 他 們 似 乎 正 在 前 往 {s3} ， 並 且 大 部 分 都 是 老 人 。^^只 有 一 點 點 守 衛 ， 但 還 不 足 以 阻 止 你 和 你 的 人 殺 死 所 有 人 。
-qstr_^^At_last_the_Master|^^最 後 ， 主 人 開 始 行 動 了 ！ 火 把 燒 得 很 亮 。 鋒 利 的 武 器 閃 閃 發 光 。 你 和 你 的 壯 漢 們 很 快 就 會 接 到 行 軍 命 令 。 啊 ， 會 有 戰 鬥 的 ， 很 多 戰 鬥 的 ， 還 有 足 夠 的 榮 耀 ！^^你 有 幸 被 傳 喚 到 塔 上 和 大 師 一 起 。 很 可 能 你 的 第 一 個 命 令 就 是 斯 納 加 的 工 作 ， 在 這 裡 突 襲 一 個 村 莊 ， 在 那 裡 威 利 一 輛 大 篷 車 。 但 你 很 快 就 會 證 明 自 己 。 誰 會 說 你 不 會 像 任 何 一 個   {s2} 和 {s3} 的 指 揮 官 那 樣 扮 演 重 要 的 角 色 ？^^戰 爭 已 經 開 始 了 ， 人 類 及 其 盟 國 的 墮 落 開 始 了 ！
-qstr_^^Your_head_suddenly|^^你 的 頭 突 然 充 滿 了 一 種 視 覺 —— 燃 燒 的 眼 睛 。 在 你 周 圍 ， 你 的 戰 士 們 都 在 原 地 待 命 。 不 知 何 故 ， 你 知 道 在 那 一 刻 ， 你 們 所 有 人 都 聽 到 了 同 樣 的 召 喚 ， 看 到 了 同 樣 的 景 象 。 是偉 大 的  摩 多 之 眼 的 藝 術 —— 偉 大 的 是 巴 拉 德 的 力 量 ！^^知 識 ， 不 言 而 喻 ， 滲 透 到 你 的 骨 頭 里 。 時 間 到 了 。 黑 暗 的 主 命 令 —— 你 們 都 將 在 公 開 的 戰 爭 中 往 你 們 的 敵 人 進 軍 。 來 自 {s2} 和 {s3} 的 命 令 將 到 來 。 起 初 你 的 角 色 不 太 好 ， 但 你 很 快 就 會 證 明 自 己 。^^戰 爭 開 始 了 ， 西 方 的 衰 落 開 始 了 ！
-qstr_{s13}_asked_you_to_j|{s13} 請 您 加 入 {reg13} 部 隊 ， 並 與 伊 森 加 德 的 最 後 一 站 會 合 。
-qstr_You_defeated_{reg5}_|你 擊 敗 了 {reg5} 敵 人 並 給 你 的 指 揮 官 留 下 了 深 刻 的 印 象 。
-qstr_You_defeated_{reg5}_e|你 擊 敗 了 {reg5} 個 敵 人 。
-qstr_You_failed_to_defeat|你 未 能 打 敗 任 何 敵 人 。
-qstr_The_sorcerer_slain_y|巫 師 被 殺 ， 你 和 你 的 同 伴 匆 匆 纏 上 傷 口 ， 溜 進 了 夜 晚 。 骯 髒 的 聲 音 在 你 的 背 上 尖 叫 ， 你 可 以 感 覺 到 許 多 灼 熱 的 眼 睛 在 陰 影 中 尋 找 你 。 很 快 ， 憤 怒 變 成 了 失 望 ， 追 求 的 聲 音 被 低 沉 ， 取 而 代 之 的 是 幽 暗 密 林 的 沉 重 沉 默 。 你 逃 脫 了
-qstr_The_sorcerer_slipped|巫 師 從 你 的 掌 握 中 滑 落 ， 滑 入 了 他 的 領 域 的 黑 暗 中 。 心 因 失 敗 而 沉 重 ， 你 和 你 的 同 伴 匆 忙 包 紮 傷 口 並 退 縮 到 深 夜 。 嘲 笑 的 聲 音 在 你 的 背 上 尖 叫 ， 你 可 以 感 覺 到 許 多 灼 熱 的 眼 睛 試 圖 刺 穿 陰 影 。 笑 聲 和 侮 辱 很 快 就 被 扼 殺 了 ， 取 而 代 之 的 是 幽 暗 密 林 的 沉 重 沉 默 。 你 逃 脫 了 。
-qstr_You_approach_a_heavi|你 進 入 了 森 林 中 一 個 戒 備 森 嚴 的 地 方 ...
-qstr_You_wait_for_darknes|你 等 待 黑 暗 的 降 臨 ……
-qstr_You_are_quickly_disc|你 很 快 就 會 被 敵 人 發 現 了 。
-qstr_You_advance_stealthi|你 提 前 悄 悄 地 進 入 森 林 。
-qstr_You_have_evaded_the_|你 躲 過 了 巡 邏 隊 ， 並 且 悄 悄 地 接 近 廢 墟 ！
-qstr_You_have_found_the_s|你 已 經 找 到 了 巫 師 ！
-qstr_You_cannot_leave_unt|在 守 衛 失 去 你 之 前 你 不 能 離 開 ！
-qstr_Kill_him_quickly_bef|在 他 逃 脫 前 迅 速 殺 了 他 ！
-qstr_Enraged_by_the_death|被 {s4} 的 死 亡 所 激 怒 ， 你 已 經 宣 誓 對 {s3} 的 勢 力 進 行 複 仇 宣 誓 。 你 現 在 必 須 在 未 來 幾 天 盡 可 能 多 地 摧 毀 {s3} 的 部 隊 。 你 敏 銳 地 意 識 到 你 的 追 隨 者 已 經 目 睹 了 這 個 誓 言 ， 你 不 希 望 被 稱 為 誓 言 者 。 現 在 必 須 開 始 放 血 狂 歡！
-qstr_flooded._Somebody_or|已 經 被 淹 沒 了 。 一 定 有 人 破 壞 了 艾 辛 河 水 壩 。
-qstr_destroyed._Only_smol|已 經 被 摧 毀 了 。 只 留 有 冒 著 濃 煙 的 廢 墟 。
-qstr_^^^You_lost_your_fig|^^^你 在 和 叛 亂 者 的 決 鬥 中 失 敗 了 ！^看 來 你 的 半 獸 人 現 在 有 新 頭 兒 了。
-qstr_^^^You_have_slain_th|^^^你 殺 了 出 格 者 ， 其 他 半 獸 人 迅 速 的 返 回 了 隊 列 。^相 信 這 段 時 間 這 群 渣 滓 肯 定 會 安 分 不 少 。
-qstr_You_cover_up_your_tr|你 掩 蓋 你 的 行 跡 並 繼 續 前 進 。
-qstr_Breaking_camp...|停 止 露 營 ...
-qstr_You_have_left_{s1}.|你 離 開 了 {s1} 。
-qstr_You_are_entering_{s1|你 進 入 了 {s1} ({s2}) 。
-qstr_You_are_entering_{s1}|你 進 入 了 {s1} 。
-qstr_The_war_expands_comm|隨 著 戰 事 的 如 水 火 般 激 烈 ， 指 揮 官 們 變 得 更 加 激 進 了 。 ( 圍 城 需 求 減 少)
-qstr_Your_party_is_spotte|你 的 部 隊 被 {s1} 發 現 了 。
-; qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
-qstr_Party_has_nothing_to|部 隊 食 物 短 缺 了 ！
-qstr_You_pay_for_accommod|你 支 付 了 宿 金 。
-qstr_The_troll_outside_{s|巨 魔 在 {s2} 外 的 被 殺 了 。 任 務 取 消 。
-qstr_{s1}_was_killed_on_t|{s1} 已 經 戰 死 沙 場 。 任 務 取 消 。
-qstr_{s1}_has_been_defeat|{s1} 已 被 擊 敗 。 任 務 取 消 。
-qstr_You_must_follow_{s1}|你 必 須 跟 隨 {s1} ！
-qstr_You_must_follow_{s1}!|你 必 須 跟 隨 {s1} ！ 這 是 最 後 的 警 告 ！
-qstr_{s1}_parties_defeate|{s1} 軍 隊 被 擊 敗 ： 佔 總 數 {reg2} 中 的 {reg1}
-qstr_{reg65}_Moria_and/or|{reg65} 摩 瑞 亞 或 剛 達 巴 山 部 隊 死 亡 。(計 數 器 每 小 時 刷 新 一 次 )
-qstr_{reg65}_{s3}_troops_|{reg65} {s3} 部 隊 死 亡 。(計 數 器 每 小 時 刷 新 一 次 )
-qstr_{reg66}_{s5}_troops_|{reg66} {s5} 部隊死亡。\n(計數器每小時刷新一次)
-qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} 部 隊 死 亡 。 (計 數 器 每 小 時 刷 新 一 次 )
-qstr_{reg68}_{s10}_killed|{reg68} {s10} 死 亡 。 (計 數 器 每 小 時 刷 新 一 次 )
-qstr_{s1}_is_scouted.|{s1}  被 偵 查 了
-qstr_The_Age_of_Men_has_f|人 類 的 時 代 終 於 結 束 了 。 現 在 邪 黑 塔 和 歐 散 克 塔 都 在 集 結 他 的 軍 隊 和 盟 友 ， 決 定 誰 才 是 中 土 唯 一 的 統 治 者 ！
-qstr_The_War_of_the_Two_T|雙 塔 之 間 的 戰 爭 打 響 了 ！
-qstr_{s2}_was_defeated!|{s2} 被 擊 敗 了 ！
-qstr_The_forces_of_{s22}_|{s22} 的 力 量 已 經 恢 復 了 ！ {s22} 現 在 是 {s23} 。
-qstr_The_might_of_{s22}_h|{s22} 的 力 量 已 經 削 弱 了 ！ {s22} 現 在 是 {s23} 。
-qstr_In_a_desperate_attem|為 了 擊 敗 他 的 敵 人 ， 索 倫 在 絕 望 中 派 出 了 他 的 魔 多 軍 團 ！
-qstr_Guardians_of_{s6}|{s6} 的 守 護 者
-qstr_Guard_Legion_of_{s6}|{s6} 的 守 衛 軍 團
-qstr_Scouts_report_that_{|根 據 報 告 顯 示 ： {s6} 在 {s7} 周 圍 聚 集 了 龐 大 的 軍 隊 ， 他 們 在 做 最 後 的 掙 扎 ， 企 圖 保 衛 他 們 的 首 都 。
-qstr_The_forces_of_{s2}_e|{s2} 的 軍 隊 在 {s15} 建 立 了 一 個 前 線 營 地 ！
-qstr_The_hosts_of_{s2}_ma|{s2} 的 軍 隊 前 來 保 衛 他 們 的 家 園 ！
-qstr_{playername}_s_Reser|{playername} 的 預 備 隊
-qstr_Gondor_has_called_fo|剛 鐸 已 經 要 求 助 援 軍 了 ！
-qstr_Gondor_is_accompanyi|剛 鐸 跟 隨 元 帥 ！
-qstr_{s5}_has_stopped_fol|{s5} 不 再 跟 隨 你 。
-qstr_You_have_{reg69}_all|你 有 {reg69} 盟 友 跟 著 你
-qstr_You_have_{reg69}_ally|你 有 {reg69} 一 群 盟 友 跟 著 你
-qstr_The_forces_of_{s2}_h|{s2 }的 力 量 重 新 集 結 並 前 進 到 {s15} ！
-; qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
-qstr_{s1}_from_{s2}|{s1} 來 自 {s2}
-qstr_When_dealing_with_lo|請 記 住 ， 在 {s11} 與 當 地 人 交 易 的 時 候 ， 他 們 不 認 識 你 ， 也 不 一 定 承 認 你 在 {s10} 取 得 的 功 績。^^(能 在 {s11} 用 於 交 易 的 資 源 點 和 你 在 {s10} 取 得 的 的 資 源 點 不 同 ， 你 要 在 {s11} 取 得 當 地 派 系 的 資 源 點 以 便 與 當 地 人 交 易 ； 查 看 報 告 菜 單 獲 取 更 多 消 息 )
-qstr_Info|信 息
-qstr_You_came_into_a_poss|你 發 現 了 一 個 奇 怪 的 巨 碗 ， 巨 碗 裡 盛 著 看 似 乾 淨 清 潔 的 水 ， 聞 起 來 有 點 像 麝 香 。
-qstr_Obtained:_Ent_water.|獲 得 ： 樹 人 水 。
-qstr_A_little_after_you_f|當 你 稍 稍 從 樹 人 水 的 侵 害 中 恢 復 過 來 後 ， 你 發 現 了 一 些 奇 怪 的 現 象 。 你 隊 伍 裡 的 渣 滓 們 似 乎 ... 似 乎 對 你 更 加 尊 重 畏 懼 了 。 就 好 像 ...  好 像 你 變 大 了 一 般 。 然 後 你 卻 發 現 你 自 己 真 的 變 大 了 ...  沒 做 夢 吧 ？
-qstr_Ent_water_effect.|樹 人 水 效 果 ：
-qstr_The_water_you_drank_|你 喝 的 樹 人 水 對 你 的 身 體 造 成 了 奇 怪 的 影 響 。 雖 然 你 一 開 始 你 不 相 信 ， 但 是 事 實 卻 向 你 證 明 ， 你 長 高 了 一 些 。 那 水 差 點 害 死 你 ， 你 不 會 再 冒 險 喝 一 口 了 。
-qstr_Ent_water_effect:_in|樹 人 水 效 果 ： 身 高 增 長 ！
-qstr__+1_to_Strength__per|獲 得 力 量 永 久 +1
-qstr__+1_to_Charisma__per|獲 得 魅 力 永 久 +1
-qstr_The_dark_shadow_fina|黑 暗 的 陰 影 終 於 襲 來 了 。 邪 惡 部 族 的 大 軍 正 壓 向 中 土 世 界 的 自 由 之 民 。 魔 多 與 剛 鐸 交 戰 於 南 ； 艾 辛 格 與 洛 汗 交 戰 於 西 ； 索 倫 的 要 塞 多 爾 哥 多 正 威 脅 精 靈 。 甚 至 居 住 在 遙 遠 北 方 的 人 民 都 有 他 們 自 己 的 戰 鬥 。
-qstr_The_War_has_started!|戰 爭 已 經 開 始 ！
-qstr_The_forest_seems_pea|森 林 看 起 來 很 平 靜 。
-qstr_There_is_a_sense_of_|空 氣 中 瀰 漫 著 危 險 的 氣 息 。
-qstr_You_have_a_feeling_y|你 感 覺 你 已 經 打 擾 這 座 森 林 已 經 太 久 ， 是 時 候 該 離 開 了 。
-qstr_Get_out_now!|出 去 ！ 現 在 ！
-qstr_You_are_inside_Fango|你 在 法 貢 森 林 裡 。 {s11}
-qstr_Your_party_witnessed|你 的 部 隊 目 睹 了 獸 人 吃 囚 犯 。
-qstr_Your_party_s_morale_|部 隊 士 氣 因 仇 恨 而 提 升 了 。
-qstr_Your_party_s_morale_h|部 隊 士 氣 因 畏 懼 而 降 低 了 。
-qstr_{s27}:_Influence_wit|{s27} ： 對 {s1} 的 影 響 力 從 {reg2} 提 高 到  {reg1} 。
-qstr_{s27}:_Influence_with|{s27} ： 對 {s1} 的 影 響 力 從 {reg2} 降 低 到 {reg1} 。
-qstr_{s27}:_Party_morale_|{s27} ： 部 隊 士 氣 提 升 了 。
-qstr_{s27}:_Party_morale_d|{s27} ： 部 隊 士 氣 降 低 了 。
-qstr_You_have_failed_to_f|你 未 能 履 行 宣 誓 報 復 巴 林 和 他 的 軍 隊 ！
-qstr_You_have_failed_to_fu|你 未 能 履 行 為 {s1} 之 死 所 做 的 復 仇 誓 言 ！
-; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
-qstr_{s22}You_have_fulfil|{s22} 你 已 經 履 行 了 為 巴 林 和 他 的 軍 隊 復 仇 的 誓 言 ！
-qstr_{s22}You_have_fulfill|{s22} 你 已 經 完 成 了 對 {s1} 英 勇 死 亡 的 複 仇 誓 言 ！
-qstr_Reinforcements|增 援
-qstr_Refugees_Escaped:_{r|難 民 逃 脫 ： {reg10} --- 難 民 被 殺 ： {reg11}
-qstr_Raider_Parties_Kille|侵 入 者 被 殺 害 ： {reg12}
-qstr_One_of_the_target_ce|難 民 的 目 標 中 心 之 一 已 被 摧 毀 。 難 民 分 散 ， 無 處 可 尋 。
-qstr_As_an_Orc_or_a_Dwarf|身 為 獸 人 或 是 矮 人 ， 你 可 以 使 用 自 定 義 相 機 來 提 升 你 的 最 後 之 日 遊 戲 體 驗 。 請 查 看 “ 遊 戲 概 念 ” 以 取 得 如 何 使 用 自 定 義 相 機 的 信 息 。
-qstr_Custom_Camera|自 訂 相 機
-qstr_{reg65?my_Lady:my_Lo|{reg65?女 士:大 人}
-qstr_{reg65?My_Lady:My_Lo|{reg65?女 士:大 人}
-qstr_{reg65?mistress:mast|{reg65?女 主 人:主 人}
-qstr_{reg65?Mistress:Mast|{reg65?女 主人:主 人}
-qstr_{reg65?madame:sir}|{reg65?女 士:先 生}
-qstr_{reg65?Madame:Sir}|{reg65?女 士:先 生}
-qstr_How_do_magnets_work?|磁 鐵 是 做 什 麼 的 ？
-qstr_Um..._by_enchanting_|恩...  用 來 吸 鐵 ？
-qstr_Magnets_are_made_of_|磁 鐵 是 開 採 自 地 下 的 金 屬 做 的 ， 它 天 然 就 有 磁 力 因 為 它 含 有 引 力 的 成 分 。
-qstr_i_wont_a_bonerlrord_|哇 想 要 騎 砍 2 領 主 啊 啊 ！ 11 ！
-qstr_Install_TLD_in_your_|安裝最後之日到騎馬與砍殺2：領主的模組文件夾，在module.ini文件中增加一行指令：“compatible_with_wfas = 1”，然後你就可以在戰團和Warrider 0.202版裡面玩最後之日了。
-; qstr_Bannerlord_runs_on_a|Bannerlord runs on a different engine. We won't be able to port TLD to Bannerlord like we ported it to Warband.
-qstr_dis_mod_takes_2_long|擇個模組花了老長時間才發布！爛！ ！
-qstr_Well_there_s_a_lot_o|嗯，因為有很多新的材質紋理和其它東西要做，我猜這很費時…
-qstr_It_has_been_recently|這個模組的正式版近日發布了，如果你忘了網址，你可以上lemonparty.org去下載。
-qstr_i_wont_decapitated_e|我不會在多人遊戲中殺死大象，絕不！ ！
-qstr_I_don_t_think_there_|我不認為最後之日有聯機，不過大象倒是個好點子。
-qstr_There_is_a_hidden_el|有一個大象死亡模式隱藏在最後之日里。但是你要先刪掉所有存檔，然後開新檔，不保存玩100天。接著在角色菜單處按Alt+F4。相信我朋友，這完全值得！
-; qstr_Y_NO_ChINESE??|Y NO ChINESE??
-qstr_Just_to_troll_you_tr|只 是 想 欺 負 你，欺 負 你！
-; qstr_Thanks_to_our_volunt|Thanks to our volunteer translators, translations to Traditional and Simplified Chinese are available. But you need to follow our guide on Steam Workshop in order to use them.
-qstr_Wai_no_plate_armour_|啥 ？ 這 個 模 組 裡 沒 有 板 甲 ？
-qstr_What_is_plate_armour|什 麼 是 板 甲 ？ 沒 聽 說 過 。
-qstr_Wai_no_female_trolls|為 何 沒 有 母 食 人 妖? 蛤? 蛤? 你 是 我 的 婊 子!
-qstr_WHEN_U_REALSE_MOD?!!|你 們 什 麼 時 候 發 布 模 組？ ！ ！ ？
-qstr_But_we_did_release._|我們已經出了。你就在模組裡面。你幹嘛這麼大聲？
-qstr_YES!_ALSO_SOMETIMES_|是！我有時就這麼大聲！ ！ ！ ！
-qstr_Wai_u_no_work_wiht_o|你們就不能和其他團隊合作做一個指環王的超級模組麼？
-qstr_Every_mod_team_works|每個模組團隊都有不同的風格，風格不同是沒法合作的。
-qstr_Because_we_don_t_hav|因為我們沒什麼幽默感。模組團隊對我們來說太歡樂了。
-qstr_In_movies_trolls_are|在 電 影 裡 的 食 人 妖 都 又 大 又 胖，你 為 啥 讓 我 這 麼 瘦?
-qstr_We_interpreted_Tolki|我們想托爾金應該會喜歡你這個樣子。
-qstr_But_we_did_make_you_|但是我們的確把你弄得和電影裡一樣蠢，這不重要嗎？
-qstr_What_is_news?_Got_an|有什麼新聞麼？有新截圖嗎？
+qstr_the_tower_of_Orthanc|奧桑克塔
+qstr_the_Throne_Room|王座大廳
+qstr_Beorn_s_Hall|比翁大殿
+qstr_the_Hall|大殿
+qstr_the_Great_Chamber_of|索爾之間
+qstr_Stay_indoors_for_som|在室內待一段時間(需要每晚付{reg1}資源點)
+qstr_Camp_outside_for_som|在外紮營一段時間(免費)
+qstr_{s4}_s_scouts_have_s|{s4}的斥候已經看到並回報了你的失敗。你給{s4}帶來了恥辱而這次的失敗全都是你的責任。
+qstr_{s1}_s_Ship|{s1}的船
+qstr_Time_passes...|時間流逝...
+qstr_Forces_of_Good|正義方的勢力
+qstr_Forces_of_Mordor|魔多的勢力
+qstr_Forces_of_Isengard|艾辛格的勢力
+qstr_their_enemies|他們的敵人
+qstr_{s11}_and_{s13}|{s11}和{s13}
+qstr_{s11}_{s13}|{s11}，{s13}
+qstr_a_scout_party_from_{|來自{s3}的一隊斥候
+qstr_two_scout_parties_an|來自{s3}的兩隊斥候和一支徵糧隊
+qstr_two_scout_parties_and|來自{s3}的兩隊斥候和一隊掠奪者
+qstr_three_scouts_two_for|來自{s3}的三隊斥候、兩支徵糧隊和一支巡邏隊
+qstr_three_scouts_two_rai|來自{s3}的三隊斥候、兩隊掠奪者和一支巡邏隊
+qstr_You_see_the_village_|你看到村莊正被盜賊襲擊。你要你大部分的部下在你帶領一小隊人準備保衛村民的同時警戒其他掠奪者。
+qstr_You_see_the_village_y|你看到了你負責要襲擊的村莊。為了避免被發現你只和你的一小隊掠奪者準備攻擊村莊。
+qstr_The_raiders_are_defe|掠奪者被擊敗了！畏懼著村民和其新的冠軍勇士，其他少數還活著和醒著的都逃回黑暗之中了。
+qstr_Try_as_you_might_you|盡了最大的努力，你沒能擊敗掠奪者。他們將村子夷為平地並奴役了剩下的農民。
+qstr_The_village_has_been|村莊已被夷為平地，村民不是被殺就是被當成奴隸帶走。黑暗之主會對此很滿意的。
+qstr_You_failed_to_raid_t|你沒能成功襲擊村莊並和你的人一起被趕走了。你在聽到勝利者歡呼的同時感覺到了索倫之眼不悅的目光。
+qstr_The_Scout_Camp_has_b|斥候營地被夷為平地了，這將減緩敵方的前進。
+qstr_You_failed_to_destro|你沒能摧毀斥候營地。敵方已經對你的陣營採取行動且無疑起效了。
+qstr_You_have_defeated_the|你擊敗了來襲擊的艦隊！這對敵人的計劃來說是一個沉重的打擊！
+qstr_You_defeated_the_int|你擊敗了來攔截的艦隊！即使你沒剩下足夠的力量來襲擊這個城市，仍是一場偉大的勝利！
+qstr_You_drove_back_the_e|你趕走了敵方的艦隊，但失去了你大部分的船隻！
+qstr_You_were_defeated_by|你被來攔截的艦隊擊敗並沒能夠襲擊城市！
+qstr_^^^^^^^You_come_upon|^^^^^^^你遇了一群正從{s2}前住{s3}的難民。^^他們之中大多是老弱婦孺。^^雖然也有護衛，但不夠從襲擊中保護所有人。
+qstr_^^^^^^^You_come_upon_|^^^^^^^你遇到了你從{s2}就一直在追蹤的難民。他們似乎正在前往{s3}，並且大部分都是老人和傷者。^^雖然也有護衛，但不夠阻止你和你的人馬殺死所有人。
+qstr_^^At_last_the_Master|^^終於，主人開始行動了！火把燎亮。鋒利的武器閃閃發光。你和你的壯丁們很快就會接到邁進的命令。啊，會有戰鬥的，很多很多的，還有足夠分給所有人的榮耀！^^你有幸被傳喚到主人的塔內覲見它。可能你的第一個命令會是是奴隸的工作-在這掠奪一個村莊、在那劫持一個商隊之類的。但你很快就能證明自己了。誰能說你不會像任何一個{s3}的{s2}旗下指揮官那樣扮演重要的角色呢？^^戰爭已經開始了；人類和其盟友的殞落要開始了！
+qstr_^^Your_head_suddenly|^^你的腦海突然出現了一個景象-燃燒的眼睛。在你周圍，你的戰士們都僵在原地不動。不知為何，你知道在那一刻所有人都聽到了同樣的召喚，看到了同樣的景象。邪眼的法術真偉大-黑邪塔的力量真偉大！^^知識，不言而喻，滲到你的骨頭裡。時刻到了。黑暗之主已下令-你們都將在公開的戰爭中向敵方邁進。來自{s3}的{s2}其命令將至。起初你扮演的角色並不偉大，但你很快就能證明自己了。^^戰爭已經開始了；人類和其盟友的殞落要開始了！
+qstr_{s13}_asked_you_to_j|{s13}要你帶著至少{reg13}名部下加入他一起面對艾辛格的最後一博。
+qstr_You_defeated_{reg5}_|你擊敗了{reg5}名敵人並給你的指揮官留下了深刻的印象。
+qstr_You_defeated_{reg5}_e|你擊敗了{reg5}個敵人。
+qstr_You_failed_to_defeat|你未能擊敗任何敵人。
+qstr_The_sorcerer_slain_y|巫師已死，你和你的同伴匆匆包扎了傷口並溜進了黑夜裡。汙穢的尖叫聲從你背後傳來而你也能感覺到許多灼熱的視線在陰影中尋找著你。很快憤怒變成了失望而追趕的聲音也逐漸遠去，取而代之的是幽暗密林平時的沉默。你逃脫了
+qstr_The_sorcerer_slipped|巫師從你的手上溜走並遁入了屬於他的黑暗領域之中。心中承受著失敗，你和你的同伴匆匆包紮了傷口並撤回了黑夜裡。奸笑聲從你背後傳來而你也能感覺到許多試圖射穿陰影的灼熱視線。很快嘲笑和侮辱聲都逐漸遠去，取而代之的是幽暗密林平時的沉默。你逃脫了
+qstr_You_approach_a_heavi|你進入了森林中一個戒備森嚴的地方...
+qstr_You_wait_for_darknes|你等待著黑暗的降臨...
+qstr_You_are_quickly_disc|你一下就被敵方發現了。
+qstr_You_advance_stealthi|你悄悄地前進森林深處。
+qstr_You_have_evaded_the_|你躲過了巡邏隊並且悄悄地接近了廢墟！
+qstr_You_have_found_the_s|你找到了巫師！
+qstr_You_cannot_leave_unt|在守衛跟丟你之前不能離開！
+qstr_Kill_him_quickly_bef|在他逃脫前迅速殺了他！
+qstr_Enraged_by_the_death|被{s4}的死亡所激怒，你對{s3}的部隊發了一個復仇之誓。你必須在未來的日子裡盡可能摧毀更多{s3}的部隊。你確信你的追隨者都見證了你的誓言，而你也不希望被認為是背誓者。讓血祭開始吧！
+qstr_flooded._Somebody_or|被淹沒了。一定是有人破壞了艾辛河的水壩。
+qstr_destroyed._Only_smol|被摧毀了。只留下冒著濃煙的廢墟。
+qstr_^^^You_lost_your_fig|^^^你在和叛亂者的戰鬥中失敗了！^看來你的半獸人有新的指揮官了。
+qstr_^^^You_have_slain_th|^^^你殺了出頭者，其他半獸人迅速的歸隊了。^短時間內蛆蟲們肯定會安分不少。
+qstr_You_cover_up_your_tr|你掩蓋了你的行蹤並繼續前進。
+qstr_Breaking_camp...|拔營...
+qstr_You_have_left_{s1}.|你離開了{s1}。
+qstr_You_are_entering_{s1|你進入了{s1}({s2})。
+qstr_You_are_entering_{s1}|你進入了{s1}。
+qstr_The_war_expands_comm|隨著戰事如火如荼，指揮官們變得更加大膽了。(圍城需求減少)
+qstr_Your_party_is_spotte|你的隊伍被{s1}發現了。
+qstr_The_effects_of_the_O|半獸人酒的效果消散了。
+qstr_The_effects_of_the_M|米盧沃酒的效果消散了。
+qstr_Athelas_used_up.|阿系拉斯葉用完了。
+qstr_Party_has_nothing_to|隊伍沒食物可吃了！
+qstr_You_pay_for_accommod|你支付了住宿費。
+qstr_The_troll_outside_{s|在{s2}外的食人妖被殺了。任務取消。
+qstr_{s1}_was_killed_on_t|{s1}已經戰死沙場。任務取消。
+qstr_{s1}_has_been_defeat|{s1}已經被擊敗了。任務取消。
+qstr_You_must_follow_{s1}|你必須跟著{s1}！
+qstr_You_must_follow_{s1}!|你必須跟著{s1}！這是你最後的警告！
+qstr_{s1}_parties_defeate|已擊敗的{s1}隊伍：{reg2}之中的{reg1}
+qstr_{reg65}_Moria_and/or|已擊殺{reg65}名摩瑞亞和/或剛達巴山部隊。(計數器每小時刷新一次)
+qstr_{reg65}_{s3}_troops_|已擊殺{reg65}名{s3}的部隊。(計數器每小時刷新一次)
+qstr_{reg66}_{s5}_troops_|已擊殺{reg66}名{s5}的部隊。(計數器每小時刷新一次)
+qstr_{reg67}_{s7}_{s8}_tr|已擊殺{reg67}名{s7}{s8}的部隊。(計數器每小時刷新一次)
+qstr_{reg68}_{s10}_killed|已擊殺{reg68}名{s10}。(計數器每小時刷新一次)
+qstr_{s1}_is_scouted.|{s1}已經偵查完畢了。
+qstr_{s2}_was_defeated!|{s2}被擊敗了！
+qstr_The_Age_of_Men_has_f|人類的時代終於結束了。現在雙塔都在集結他們的軍隊和盟友來決定誰才是中土世界唯一的統治者！
+qstr_The_War_of_the_Two_T|雙塔之戰已經開始了！
+qstr_The_forces_of_{s22}_|{s22}的勢力被鼓舞了！{s22}現在是{s23}的。
+qstr_The_might_of_{s22}_h|{s22}的力量已經被削弱了！{s22}現在是{s23}的。
+qstr_In_a_desperate_attem|為了防禦他的敵人，索倫孤注一擲的派出了他的魔多軍團！
+qstr_Guardians_of_{s6}|{s6}的守護者
+qstr_Guard_Legion_of_{s6}|{s6}的守衛軍團
+qstr_Scouts_report_that_{|斥候報告顯示{s6}在{s7}周圍聚集了龐大的軍隊，準備做最後一搏來保衛首都。
+qstr_The_forces_of_{s2}_e|{s2}的部隊在{s15}建立了一個前線營地！
+qstr_The_hosts_of_{s2}_ma|{s2}的大軍回去保衛他們的家園了！
+qstr_{playername}_s_Reser|{playername}的預備役
+qstr_Gondor_has_called_fo|剛鐸已呼叫援助了！
+qstr_Gondor_is_accompanyi|剛鐸正跟隨著元帥！
+qstr_{s5}_has_stopped_fol|{s5}停止跟隨著你。
+qstr_You_have_{reg69}_all|你有{reg69}支友方隊伍跟隨著你
+qstr_You_have_{reg69}_ally|你有{reg69}支友方隊伍跟隨著你
+qstr_The_forces_of_{s2}_h|{s2 }的部隊已重新集結並向{s15}邁進！
+qstr_Your_scouts_report_s|你的斥候回報附近有{s2}的蹤跡。
+qstr_{s1}_from_{s2}|來自{s2}的{s1}
+qstr_When_dealing_with_lo|在{s11}與當地人往來的時候，請記住他們並不認識你也不一定承認你在{s10}所取得的功績。^^(能在{s11}使用的資源點和你在{s10}取得的不一樣，你得在{s11}當地取得新的--建議查看報告頁面)
+qstr_Info|資訊
+qstr_You_came_into_a_poss|你得到了一個奇怪的、巨大的碗裡盛著看似新鮮的水。聞起來有點像麝香。
+qstr_Obtained:_Ent_water.|獲得：樹人之水。
+qstr_A_little_after_you_f|在你從會走動的樹得到的毒水恢復過來後，你發現了一個奇怪的副作用。你團隊裡的蟲子們似乎...對你更加畏懼和敬重了，就好像你...變得更大了一樣。然後你能發誓自己真的變，是的，更高了。這會是真的嗎？
+qstr_Ent_water_effect.|樹人之水的效果。
+qstr_The_water_you_drank_|你喝下的樹人之水在你身上產生了奇怪的效果。雖然你一開始不信，但事實上，有明顯的證據，你長高了！不過，毒素差點害死你。你不會再冒險喝那個了。
+qstr_Ent_water_effect:_in|樹人之水的效果：身高增長！
+qstr__+1_to_Strength__per|力量+1(永久)
+qstr__+1_to_Charisma__per|魅力+1(永久)
+qstr_The_dark_shadow_fina|黑暗的陰影終於襲來了，邪惡的大群人馬正邁向中土世界的自由之民。南方有魔多與剛鐸交戰，西方有艾辛格與洛汗交戰，而多爾哥多則是與精靈交戰...甚至在遙遠的北方的都有自己的戰爭。
+qstr_The_War_has_started!|戰爭已經開始了！
+qstr_The_forest_seems_pea|森林看起來很平靜。
+qstr_There_is_a_sense_of_|空氣中瀰漫著危險的氣息。
+qstr_You_have_a_feeling_y|你感覺你已經打擾這座森林已經夠久了。
+qstr_Get_out_now!|現在，離開！
+qstr_You_are_inside_Fango|你在法貢森林裡。{s11}
+qstr_Your_party_witnessed|你的隊伍目睹了半獸人吃掉囚犯。
+qstr_Your_party_s_morale_|你隊伍的士氣因仇恨而提升了。
+qstr_Your_party_s_morale_h|你隊伍的士氣因恐懼而降低了。
+qstr_{s27}:_Influence_wit|{s27}：對{s1}的影響力從{reg2}提升到{reg1}。
+qstr_{s27}:_Influence_with|{s27}：對{s1}的影響力從{reg2}降低到{reg1}。
+qstr_{s27}:_Party_morale_|{s27}：隊伍的士氣提升了。
+qstr_{s27}:_Party_morale_d|{s27}：隊伍的士氣降低了。
+qstr_You_have_failed_to_f|你未能履行為巴林一眾復仇的誓言！
+qstr_You_have_failed_to_fu|你未能履行為{s1}之死所立的復仇之誓！
+qstr_Your_troops_value_yo|你的部下重視你為完成誓言所做的努力，但也承認事情進展的太快了。因此，
+qstr_{s22}You_have_fulfil|{s22}你已經履行了為巴林一眾復仇的誓言！
+qstr_{s22}You_have_fulfill|{s22}你已經履行了對{s1}英勇死亡所立的複仇之誓！
+qstr_Reinforcements|增援
+qstr_Refugees_Escaped:_{r|已逃脫的難民：{reg10}---被殺掉的難民：{reg11}
+qstr_Raider_Parties_Kille|已殺掉的掠奪者隊伍：{reg12}
+qstr_One_of_the_target_ce|難民的目標據點之一已被摧毀。難民四散，無處可尋。
+qstr_As_an_Orc_or_a_Dwarf|身為半獸人或矮人，你可以使用自訂鏡頭來提升你用TLD的較矮種族的遊戲體驗。查看遊戲概念以取得更多如何使用的資訊。
+qstr_Custom_Camera|自訂鏡頭
+qstr_{reg65?my_Lady:my_Lo|{reg65?女士:大人}
+qstr_{reg65?My_Lady:My_Lo|{reg65?女士:大人}
+qstr_{reg65?mistress:mast|{reg65?女主人:主人}
+qstr_{reg65?Mistress:Mast|{reg65?女主人:主人}
+qstr_{reg65?madame:sir}|{reg65?女士:先生}
+qstr_{reg65?Madame:Sir}|{reg65?女士:先生}
+qstr_How_do_magnets_work?|磁鐵是怎麼運作的？
+qstr_Um..._by_enchanting_|恩...用魔法吸鐵？
+qstr_Magnets_are_made_of_|磁鐵採自地底下，本身就是金屬做的。它們有磁力是因為金屬裡含有部份的地心引力。
+qstr_i_wont_a_bonerlrord_|窩現在揪想要bonerlordㄉ版本！！森77！
+qstr_Install_TLD_in_your_|把TLD安裝到Bannerlord的模組資料夾，在module.ini文件中加上指令：“compatible_with_wfas = 1”，然後你就可以在戰團和Warrider 0.202版裡面玩了。
+qstr_Bannerlord_runs_on_a|Bannerlord使用不同的遊戲引擎。我們沒辦法把TLD像改到Warband那樣改到Bannerlord上。
+qstr_dis_mod_takes_2_long|遮個模組花ㄌ豪長ㄉ時間才發行！爛！！森77！
+qstr_Well_there_s_a_lot_o|嗯，因為有很多新的圖像和其它東西，我猜這很費時。
+qstr_It_has_been_recently|最近已經正式發行了，你如果不知道網址，可以到lemonparty.org去下載。
+qstr_i_wont_decapitated_e|窩ㄅ會在多人模式中殺死大象，ㄅ要！！森77！
+qstr_I_don_t_think_there_|我不認為TLD會有多人模式，不過大象倒是不錯。
+qstr_There_is_a_hidden_el|TLD裡有隱藏一個大象死鬥模式。但是你要先刪掉所有存檔，然後不保存玩100天。接著在角色畫面按Alt+F4。這很值得！
+qstr_Y_NO_ChINESE??|妹有中文ㄇ？？
+qstr_Just_to_troll_you_tr|只是想鬧你，鬧你！
+qstr_Thanks_to_our_volunt|感謝我們的翻譯志願者，繁體和簡體中文的翻譯都能用了。但你必須照著我們Steam Workshop裡的指南才能使用它們。
+qstr_Wai_no_plate_armour_|為啥遮個模組裡妹有板甲？？？
+qstr_What_is_plate_armour|什麼是板甲？沒聽過。
+qstr_Wai_no_female_trolls|為啥妹有母食人妖？ㄝ？ㄝ？尼ㄙ窩ㄉ婊ㄗ！
+qstr_WHEN_U_REALSE_MOD?!!|尼們什ㄇ時候發行模組？！！？
+qstr_But_we_did_release._|但我們已經出了。你就在裡面。然後你幹嘛大吼大叫？
+qstr_YES!_ALSO_SOMETIMES_|素！窩有時揪這ㄇ大聲！
+qstr_Wai_u_no_work_wiht_o|尼們就ㄅ能和其他團隊合作弄一ㄍ超級魔戒ㄉ模組ㄇ？
+qstr_Every_mod_team_works|每個模組團隊都有不同的規格，版本不同是沒辦法合作的。
+qstr_Because_we_don_t_hav|因為我們沒什麼幽默感而大部分人對我們來說太歡樂了。
+qstr_In_movies_trolls_are|電影裡ㄉ食人妖都又大又胖，尼為啥讓窩這ㄇ瘦？
+qstr_We_interpreted_Tolki|我們是這樣解讀托爾金的文章的。
+qstr_But_we_did_make_you_|但我們的確把你弄得和電影裡一樣蠢。這樣總行吧。
+qstr_What_is_news?_Got_an|有什麼新聞嗎？有截圖嗎？
 qstr_Well_just_look_aroun|看看你周圍，你要截圖做什麼？
 qstr_Say_cheese!|說茄子！
-qstr_Why_did_you_make_mod|你為什麼讓模組安裝那麼複雜呢？
-qstr_Well_if_you_are_here|恩，如果你能在這裡跟我說這話的話，這說明你已經讀完那該死的手冊並成功運行了。
+qstr_Why_did_you_make_mod|你為什麼要讓安裝模組那麼複雜呢？
+qstr_Well_if_you_are_here|嗯，如果你能在這裡跟我說話，代表你已經讀完那該死的手冊並成功了。
 qstr_You_just_got_windyfl|你剛剛被風化了！
-qstr_Merry|梅 里
-qstr_Pippin|皮 聘
-qstr_Minas_Tirith|米 那 斯 提 力 斯 
-qstr_Steward_Denethor|攝 政 王 迪 耐 瑟 
-qstr_the_Golden_Hall|金色大廳
-qstr_Edoras|伊 多 拉 斯 
-qstr_King_Theoden|國 王 希 尤 頓 
-qstr_Merry_asked_you_to_d|梅利邀請你向米納斯蒂里斯的堂兄皮聘傳達一個信息。
-qstr_Pippin_asked_you_to_|皮聘要求你在伊多拉斯向他的表弟梅里傳達一個信息。
-qstr_Tell_him_I_ve_grown_|告訴他我又長了一英寸！
-qstr_Tell_Pip_he_smokes_t|告訴皮普他吸煙太多了！
-qstr_Tell_him_I_can_ride_|告訴他我現在可以騎一匹成年馬了！
-qstr_Ask_him_if_he_has_an|問他還有沒有煙斗草！
-qstr_Tell_him_I_ll_be_the|告訴他我們再見面的時候我會是那個高個子的！
-qstr_Ask_if_he_s_seen_Gan|問他是否見過甘道夫！
-qstr_You_gained_250_exper|你 獲 得 了 250 經 驗 。
-qstr_Treebeard_wants_you_|樹 人 希 望 你 找 到 并 打 敗 在 法 貢 森 林 伐 樹 的 獸 人 。 
-qstr_Something_wrong_not_e|出 了 點 問 題 ， 沒 有 足 夠 的 部 隊 參 加 偵 察 隊
-qstr_my_home_town|我 的 故 鄉
-qstr_I_am_in_perfect_heal|我 很 健 康 。
-qstr_I_am_suffering_from_|我 正 遭 受 {s1} 的 困 擾
-qstr_I_am_suffering_from_{|我 正 遭 受 {s1} 和 {s2} 的 困 擾
-qstr_I_am_suffering_from_{s|我 正 遭 受 {s1}，{s2} 和 {s3} 的 困 擾
-qstr_I_am_suffering_from_{s1|我 正 遭 受 {s1}，{s2}，{s3} 和 {s4 }的 困 擾
-qstr_I_don_t_have_any_ser|我 沒 有 受 什 麼 重 傷 ， 謝 謝 你 的 關 心 。
-qstr_Good_day_to_you.|祝 你 今 天 好 運 。
-qstr_Ah_it_s_you_again._G|啊 ， 又 是 你 。 再 見 。
-qstr_My_apologies_if_I_wa|對 不 起 ， 我 剛 剛 很 魯 莽 。 你 能 再 說 一 遍 你 的 故 事  麼 ？
-qstr_I_was_reconsidering_|我 重 新 考 慮 了 我 們 上 次 的 對 話 。 你 能 再 說 一 遍 你 的 故 事 麼 ？
-qstr_Zigrphel_gained_{reg|齊 格 爾 菲 爾 獲 得 {reg78} 經 驗。
-qstr_Greetings_{s23}_{s24|向 你 問 好 ， {s23} ， {s24} 。
-qstr_Greetings_{s23}.|向 你 問 好 ， {s23} 。
-qstr_So_you_are_{s23}._I_|啊 ， 你 是 {s23} 。 我 聽 說 你 為 我 們 的 朋 友 {s25} 戰 鬥 ， 所 以 我 覺 得 我 該 把 你 當 成 盟 友 。
-qstr_I_need_volunteers_wi|我 需 要 一 些 志 願 者 跟 我 去 完 成 危 險 的 任 務 。
-qstr_I_need_some_soldiers|我 需 要 一 些 士 兵 來 補 充 戰 損 。
-; qstr_Maybe_the_weaklings_|Maybe the weaklings of the south put armour on their soft-skinned Trolls. Not us - our Trolls are of Gundabad!
-qstr_Do_I_look_like_a_smi|你 覺 得 我 像 個 鐵 匠 嗎？呸。換 個 人 問 問 吧。
-qstr_Excellent_job_{s23}!|幹 得 漂 亮 ， {s23} ！ 真 希 望 我 方 的 所 有 指 揮 官 都 像 你 這 樣 盡 責 。 ^
-qstr_Nicely_done_{s23}.|幹 得 很 好 ， {s23} 。
-qstr_Good_work_{s23}.|幹 的 好 ， {s23} 。
-qstr_The_more_you_capture|抓 的 越 多 越 好 ， {s23} 。
-qstr_Caught_a_few_straggl|俘 虜 了 幾 個 士 兵 ， {s23} ？
-qstr_I_am_sorry_no_one_el|不 好 意 思 ， 沒 人 已 經 做 好 了 出 發 的 準 備 。 ^他 們 會 在 這 裡 堅 守 並 為 {s22} 效 忠 。
-qstr_Tough_luck_but_we_do|我 們 一 個 士 兵 都 不 剩 了 。 晚 些 再 來 吧 。
-qstr_There_are_brave_sold|我 們 是 有 一 些 英 勇 的 士 兵 願 意 犧 牲 他 們 的 性 命 。 但 在 這 個 黑 暗 的 時 代 ， 我 無 法 承 受 讓 他 們 離 開 城 堡 所 帶 來 的 風 險 。 ^^^[資 源 點 不 足 ]
-qstr_We_have_some_spare_t|我 們 是 有 一 些 預 備 的 士 兵 。 但 我 無 法 承 受 讓 他 們 跟 你 離 開 所 帶 來 的 風 險 。 ^^^[資 源 點 不 足 ]
-qstr_There_are_brave_soldi|我 們 是 有 一 些 勇 敢 的 士 兵 志 願 上 陣 。 ^^我 想 我 能 讓 他 們 中 的 幾 個 跟 著 你 。
-qstr_There_are_spare_troo|這 裡 的 預 備 兵 應 該 不 介 意 上 陣 。 ^^我 想 我 能 讓 他 們 中 的 幾 個 跟 著 你 。
-qstr_Strenghten_defences_|你 想 增 強 {s21} 的 守 備 ？ 歡 迎 ！ 歡 迎 ！ 不 過 請 記 住 ， 我 們 只 接 受 本 派 系 的 人 。
-qstr_Strenghten_defences_i|你 想 增 強 {s21} 的 守 備 ？ 好 啊 ， 只 要 他 們 不 會 嚇 得 尿 褲 子 ， 不 過 麻 煩 只 把 屬 於 本 派 系 的 人 送 過 來 ， 我 們 是 不 會 用 外 人 的 。
-qstr_Please_return_them_i|請 把 他 們 活 著 地 送 回 來 。 我 深 知 他 們 每 一 個 人 的 英 勇 ， 而 我 們 需 要 每 一 名 英 勇 的 戰 士 。
-qstr_Don_t_let_them_all_d|別 讓 他 們 堆 在 一 起 死 。 讓 懦 夫 之 外 的 人 站 在 前 排 ， 這 就 是 我 們 的 戰 術 。
-qstr_Thank_you_commander.|謝 謝 你 ， 指 揮 官 。 ^
-qstr_^{s22}_is_grateful_t|^{s22} 由 衷 的 感 激 你 ， {s23} ， {s29}^
-qstr_{s31}{reg28?Those:Th|{s31} {reg28?這 群:這 名} 勇 敢 的 {reg28?士 兵:士 兵} 定 能 極 大 地 增 強 {s21} 的 防 禦 。 {s32}^^[獲 得 {s14} 的 {reg14} 資 源 點 ]
-qstr_{s31}{reg28?Those:Tha|{s31} {reg28?這 群:這 名} 有 用 的 {reg28?士 兵 們:士 兵} 將 幫 助 我 們 守 護 {s21} 。 {s32}^^[獲 得 {s14} 的 {reg14} 資 源 點 ]
-qstr_{s4}_^Oh_and_take_ba|{s4} ^噢 ， 請 將 這 些 士 兵 帶 回 去 吧 ， 他 們 並 不 是 我 們 的 同 類 。
-qstr_You_have_reinforced_|你 已 經 用 {s8} 部 隊 加 強 了 {reg55} 。
-qstr_I_don_t_need_them_an|我 不 再 需 要 他 們 了 ， 你 留 著 吧 。
-qstr_It_is_my_duty_to_pro|保 護 人 民 是 我 的 職 責 。
-qstr_It_is_my_duty_to_prot|保 護 盟 友 是 我 的 職 責 。
-qstr_I_am_{s4}_{s15}_of_{|我 是 {s4} ， {s6 } 的 {s15}
-qstr_I_am_{s4}_a_commande|我 是 {s4} ， {s6} 的 指 揮 官
-qstr_{s9}{reg5?_and_the_r|{s9} {reg5?和 {s8} 的 統 治 者 。 :}
-qstr__{s3}_gained_{reg78}|{s3} 獲 得 {reg78} 經 驗。
-qstr_{playername}_our_sco|{playername} ， 我 們 的 探 子 帶 來 了 你 成 功 的 消 息 。 願 你 在 這 幸 福 的 歲 月 裡 度 過 這 一 天 ！ 你 大 勝 利 擊 退 了 {s7} ， 敵 人 的 大 舉 進 攻 的 計 畫 已 經 失 敗 了 。 我 們 希 望 他 們 會 為 了 自 己 的 失 敗 而 吵 架 。 我 們 也 希 望 他 們 現 在 對 你 會 感 到 恐 懼 ！ 至 少 你 讓 我 們 暫 時 休 息 了 一 下 。
-; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, {playername}, to your betters. Have no fear about that.
-qstr_Alas_that_I_could_no|唉 ， 我 無 法 終 結 {s8} 的 {s7} ， 但 如 果 我 們 再 次 見 面 ， 那 就 讓 他 們 小 心 吧 。
-qstr__I_should_rather_mak|我 寧 願 自 己 報 告 我 對 {s8} {s7} 的 勝 利 - 主 要 的 榮 耀 是 我 的 ， 你 不 會 忘 記 的 ！
-qstr_Very_well_done_{play|做 得 很 好 ！  {playername} ！ 正 如 我 所 期 望 的 ， 你 抓 住 了 間 諜 和 他 的 接 頭 人 。 他 們 現 在 正 拷 在 一 起 等 待 問 詢 ； 他 們 有 很 多 事 情 要 好 好 的 解 釋 一 下 了 。 {playername} ， 我 非 常 高 興 你 能 完 成 這 個 任 務 。 請 收 下 這 袋 錢 ， 這 是 你 應 得 的 獎 賞 。
-qstr_Beautiful_work_{play|做 得 很 好 ！  {playername} ！ 你 抓 住 了 間 諜 和 他 的 接 頭 人 。 他 們 現 在 正 關 在 牢 裡 等 待 問 詢 ； 很 顯 然 今 晚 的 我 檢 察 官 有 的 要 忙 了 。 {playername} ， 我 非 常 高 興 你 能 完 成 這 個 任 務 。 請 收 下 這 袋 錢 ， 這 是 你 應 得 的 獎 賞 。
-qstr_Foiling_the_enemy_s_|挫敗敵人攻擊難民企圖削弱了他們的決心\n{s1} 由於你對{reg18}入侵者的勝利而失去了{reg19}派系力量。
-qstr_The_slaughter_and_lo|屠殺難民和搶劫使敵人更加強大({s1}獲得了50個派系的力量)。
-qstr_You_did_however_defe|然而，你確實擊敗了 {reg18} 入侵者，削弱了敵人的決心({s1} 已經失去了 {reg19} 派系的力量)。
-qstr_The_slaughter_and_loo|屠殺難民和搶劫使敵人更加強大\n({s1} 獲得了 {reg20} 派系力量)。
-qstr_Killing_the_refugees|{s1} 殺死難民並奴役倖存者使他們的人民士氣低落\n({s1}失去了{reg19}派系的力量。
-qstr_{reg20}_refugee_trai|{reg20}難民逃脫了並提高敵人的士氣\n({s1}獲得了{reg22}派系力量。
-qstr_You_did_however_defea|然而，你確實擊敗了{reg18}難民，削弱了敵人的決心\n({s1} 失去了 {reg19} 派系的力量。
-qstr_My_lord_{s12}_is_saf|我的主人，{s12} 是安全的。 海盜被擊敗了。
-qstr_My_lord_Esgaroth_is_|我的主人，長湖鎮很安全。 Rhûn的人被擊敗了。
-qstr_The_surroundings_of_|{s12} 在燃燒。 掠奪確實是光榮的！
-qstr_The_surroundings_of_E|長湖鎮在燃燒。 掠奪確實是光榮的！
-qstr_This_is_welcome_news|這確實是個好消息，{playername}。 \n我們對海盜的大膽行動準備不足。 \n但是多虧了你，黑帆已經被趕走了，至少在一段時間內，我們可能希望，至少，我們今天給他們打了一拳。\n謝謝你。
-qstr__Good_work_{playerna|幹得好，{playername}！ 他們表現得比我們認為的更狡猾，我會給他們。\n但這些人在船上的打鬥不如在馬上打的好，這似乎是事實！\n也許我們也應該考慮建立一支屬於我們自己的艦隊......  無論如何，我們代表長湖鎮和河谷鎮的所有人感謝你，{playername}。
-qstr_Even_from_here_we_co|即使從這裡，我們也可以看到火焰，聞到敵人在風中的絕望！\n你做得很精彩，{playername}。\n現在讓恐怖觸及岡多的每個男人，女人和孩子的心臟，因為他們現在知道，即使是他們最強大的據點也是我們無法抵抗！
-qstr_Even_from_here_we_cou|即使從這裡，我們也可以看到火焰，聞到敵人在風中的絕望！\n你做得很精彩，{playername}。\n讓恐怖現在觸及戴爾的每一個男人，女人和孩子的心臟，因為他們現在知道，即使是他們最強大的據點也不是我們無法抵抗！
-qstr_My_lord_they_fell_up|我的主人，他們以極大的力量攻擊我們。 我們無法擊退海盜。
-qstr_My_lord_they_fell_upo|我的主人，他們以極大的力量攻擊我們。 我們無法擊退Rhûn的戰士。
-qstr_The_raid_on_{s12}_fa|由於我們盟友的無能，對 {s12} 的襲擊失敗了！
-qstr_This_raid_was_ill_fa|這 次 突 襲 從 一 開 始 就 注 定 要 失 敗 。我 們 不 該 上 那 些 搖 搖 欲 墜 的 木 筏 ！
-qstr_This_is_evil_news_yo|這 是 你 帶 來 的 壞 消 息 。 黑 色 的 帆 越 來 越 大 ， 貝 爾 法 拉 斯 現 在  都 在 他 們 的 陰 影 下 。 我 們 不 會 因 為 你 的 失 敗 而 責 怪 你 ， 但 我 們 確 實 遭 受 了 一 次 痛 苦 的 打 擊 ， 這 是 一 次 痛 苦 的 打 擊 。 現 在 出 發 。 剛 鐸 希 望 越 來 越 渺 茫 ， 我 們 必 須 努 力 讓 剛 鐸 繼 續 生 存 下 去 。
-qstr_This_is_evil_news_you|這 是 你 帶 來 的 壞 消 息 。 東 方 人 變 得 越 來 越 勇 敢 ， 長 湖 鎮 也 在 燃 燒 。 我 們 不 會 因 為 你 的 失 敗 而 責 怪 你 ， 但 我 們 確 實 遭 受 了 一 次 痛 苦 的 打 擊 ， 這 是 一 次 痛 苦 的 打 擊 。 現 在 出 發 。 我 們 的 王 國 的 希 望 越 來 越 渺 茫 ， 我 們 必 須 努 力 使 剩 餘 部 分 繼 續 生 存 下 去 。
-qstr_Pah!_It_seems_you_we|呸 ！ 看 來 你 無 法 找 到 你 的 路 ， {playername} 。 這 些 剛 鐸 人 坐 著 ， 高 高 在 上 ， 虛 榮 如 王 ， 笑 如 黑 帆 燃 燒 。 也 許 在 船 上 划 槳 ， 對 你 的 軍 隊 是 適 當 的 懲 罰 ； 可 惜 他 們 是 在 你 的 指 揮 之 下 ， 而 不 是 我 的 指 揮 之 下 。 眼 睛 會 不 高 興 的 。 眼 睛 不 會 高 興 。 別 管 我 ！
-qstr_Have_you_nothing_bet|沒 有 什 麼 比 為 你 的 失 敗 提 供 的 弱 藉 口 更 好 的 了 ， {playername} ？ 也 許 你 沒 有 我 們 所 認 為 的 那 麼 強 大 。 好 好 為 將 來 的 做 好 準 備 ， {playername} 。 對 弱 者 我 們 不 會 有 憐 憫 之 心 ！
-qstr_{playername}_we_have|{playername} ， 我 們 要 讓 艾 辛 格 跪 下 。 他 們 發 起 了 最 後 一 場 戰 鬥 ， 並 在 薩 魯 曼 的 塔 中 保 護 他 。 跟 我 一 起 去 見 他 們 ！
-qstr_Are_you_ready_to_mee|你 準 備 好 迎 接 艾 辛 格 的 最 後 一 站 了 嗎 ？
-qstr_I_am_ready_to_ride_w|我 準 備 和 你 一 起 對 抗 艾 辛 格 。
-qstr_I_am_ready_to_ride_wi|我準備好和你一起去和他們見面。\n我們現在就結束吧。
-qstr_I_am_not_ready_to_ri|我還沒準備好和你一起走。\n我需要更多時間。
-qstr_You_do_not_have_enou|你沒有足夠的部隊來幫助這場戰鬥。\n提升至少30名士兵並加入我！
-qstr_Stay_close_we_will_t|靠近點，我們將在敵人附近就位。\n當我們聚集在一起時，我們將突襲。
-qstr_You_have_taken_too_l|你已經花了太長時間......  無論有沒有你我們都會出發。\n我們將聚集在敵人附近，並在3天內，發起突襲。
-qstr_Make_haste_{playerna|動作快，{playername}。\n我們不希望他們恢復。
-qstr_Your_mission_is_comp|你的任務已經完成，{s9} 希望你繼續跟隨他的軍隊直到有新通知。
-qstr_{s13}_asked_you_to_g|{s13} 要求你收集 {reg3} 單位的 {s4} 並將它們交還給他。
-qstr_Moreover_should_you_|此外，如果你成為 {s24}，你將受到我們的歡迎，在那裡你可以做出影響我們競選過程的決定。\n目前，作為 {s25}，只需跟著我們並保持近距離。 我們很快就會動身。
-qstr_For_the_moment_just_|準備好。\n我們很快就要動身了。
-qstr_{s9}_asked_you_to_sc|{s9} 希望你去偵察 {s13}，{s14} 和 {s15}，然後跟我回報。
-qstr_You_have_been_most_h|你真是幫了大忙，{playername}。謝謝你。
+qstr_Merry|梅里
+qstr_Pippin|皮聘
+qstr_Minas_Tirith|米那斯提力斯
+qstr_Steward_Denethor|攝政王迪耐瑟二世
+qstr_the_Golden_Hall|金之大殿
+qstr_Edoras|伊多拉斯
+qstr_King_Theoden|希優頓王
+qstr_Merry_asked_you_to_d|梅里要你送一封信，給他在米那斯提力斯的表親，皮聘。
+qstr_Pippin_asked_you_to_|皮聘要你送一封信，給他在伊多拉斯的表親，梅里。
+qstr_Tell_him_I_ve_grown_|告訴他我又長高了一吋！
+qstr_Tell_Pip_he_smokes_t|告訴皮聘他抽太多菸了！
+qstr_Tell_him_I_can_ride_|告訴他我現在可以騎成年的馬了！
+qstr_Ask_him_if_he_has_an|問他還有沒有剩下任何煙斗草！
+qstr_Tell_him_I_ll_be_the|告訴他我們再見時我會是比較高的那個的！
+qstr_Ask_if_he_s_seen_Gan|問他有沒有見到甘道夫！
+qstr_You_gained_250_exper|你獲得了250經驗值。
+qstr_Treebeard_wants_you_|樹鬍想要你找到并打敗在法貢森林伐木的半獸人。
+qstr_Something_wrong_not_e|有點問題，沒有足夠的部隊組成斥候隊伍
+qstr_my_home_town|我的故鄉
+qstr_I_am_in_perfect_heal|我非常的健康。
+qstr_I_am_suffering_from_|我正被{s1}折磨著。
+qstr_I_am_suffering_from_{|我正被{s1}和{s2}折磨著。
+qstr_I_am_suffering_from_{s|我正被{s1}、{s2}和{s3}折磨著。
+qstr_I_am_suffering_from_{s1|我正被{s1}、{s2}、{s3}和{s4}折磨著。
+qstr_I_don_t_have_any_ser|我沒有受到什麼嚴重的傷，謝謝你的關心。
+qstr_Good_day_to_you.|日安。
+qstr_Ah_it_s_you_again._G|啊，又是你。再見。
+qstr_My_apologies_if_I_wa|抱歉，我之前有點沒禮貌。你能再說一遍你的故事嗎？
+qstr_I_was_reconsidering_|我重新考慮了我們上次的對話。你能再說一遍你的故事嗎？
+qstr_Zigrphel_gained_{reg|齊格爾菲爾獲得{reg78}經驗值。
+qstr_Greetings_{s23}_{s24|你好，{s23}，{s24}。
+qstr_Greetings_{s23}.|你好，{s23}。
+qstr_So_you_are_{s23}._I_|所以，你就是{s23}吧。我聽說你為我們{s25}的朋友戰鬥，所以我想我應該把你當成友方吧。
+qstr_I_need_volunteers_wi|我需要一些志願者跟我去參加危險的任務。
+qstr_I_need_some_soldiers|我需要一些士兵來補充損失。
+qstr_Maybe_the_weaklings_|也許南方的弱者會給他們皮膚軟嫩的食人妖配戴鎧甲。但我們不會-我們的食人妖是來自剛達巴的！
+qstr_Do_I_look_like_a_smi|我看起來像個鍛治匠嗎？呸。去找一個來問吧。
+qstr_Excellent_job_{s23}!|幹得漂亮， {s23}！真希望我方的所有指揮官都像你這麼盡責。^
+qstr_Nicely_done_{s23}.|幹得很好，{s23}。
+qstr_Good_work_{s23}.|幹的好，{s23}。
+qstr_The_more_you_capture|你俘虜的越多越好，{s23}。
+qstr_Caught_a_few_straggl|抓到了幾個掉隊的，{s23}？
+qstr_I_am_sorry_no_one_el|抱歉，已經沒人可以準備離開了。^他們會在這裡守衛並效忠{s22}。
+qstr_Tough_luck_but_we_do|你真不走運，我們一個都不剩了。晚點再來吧。
+qstr_There_are_brave_sold|我們是有一些願意冒生命危險的勇敢士兵。但在這個黑暗的時代我無法承擔讓他們離開崗位。^^^[資源點不足]
+qstr_We_have_some_spare_t|我們是有一些多餘的部隊，但我無法承擔讓他們跟你這種人一起去死。^^^[資源點不足]
+qstr_There_are_brave_soldi|我們是有一些勇敢的士兵志願上前線。^^我想我能讓其中幾個跟你走。
+qstr_There_are_spare_troo|這裡多餘的部隊應該不介意浴血。^^我可以讓其中幾個跟你走。
+qstr_Strenghten_defences_|增強{s21}的防禦？當然歡迎。不過請記住我們只能接受自己的同胞。
+qstr_Strenghten_defences_i|增強{s21}的防禦？好吧，只要他們不是殘障，為何不呢。但要確定你只把我們自己的部隊送過來，我們是不會用外人的。
+qstr_Please_return_them_i|請讓他們活著回來。我深知他們每個人的英勇。而這裡我們需要每一個靈魂。
+qstr_Don_t_let_them_all_d|別讓他們全死在一起。懦夫例外。讓那些站在前排，你應該懂吧。
+qstr_Thank_you_commander.|謝謝你，指揮官。^
+qstr_^{s22}_is_grateful_t|^{s22}由衷的感激你，{s23}，{s29}^
+qstr_{s31}{reg28?Those:Th|{s31}{reg28?那群:那名}勇敢的{reg28?士兵們:士兵}必定能幫助我們防禦{s21}。{s32}^^[獲得{s14}的{reg14}資源點]
+qstr_{s31}{reg28?Those:Tha|{s31}{reg28?那群:那名}有用的{reg28?部下們:部下}將幫我們守住{s21}。{s32}^^[獲得{s14}的{reg14}資源點]
+qstr_{s4}_^Oh_and_take_ba|{s4}^噢，把你這些士兵帶回去吧，他們並不是我們的親屬。
+qstr_You_have_reinforced_|你已經用{reg55}名部下增援了{s8}。
+qstr_I_don_t_need_them_an|反正我不需要他們了，留著吧。
+qstr_It_is_my_duty_to_pro|保護同胞是我的職責。
+qstr_It_is_my_duty_to_prot|保護盟友是我的職責。
+qstr_I_am_{s4}_{s15}_of_{|我是{s4}，{s6}的{s15}
+qstr_I_am_{s4}_a_commande|我是{s4}，{s6}的一名指揮官
+qstr_{s9}{reg5?_and_the_r|{s9}{reg5?和{s8}的統治者。：。
+qstr__{s3}_gained_{reg78}|{s3}獲得{reg78}經驗值。
+qstr_{playername}_our_sco|{playername}，我們的斥候帶來了你成功的報告。願你長壽且幸福！你的勝利擊退了{s7}的大軍，敵人大舉進攻的計畫已經告終了。希望他們的人會為了失敗而爭執，最好隊長們也是。而且，如果，他們現在對你感到恐懼那就更好了！ 最起碼，你贏得了讓我們能從衰弱中暫時休息的機會。
+qstr_Well_{playername}_yo|嗯，{playername}，你回來了，而且似乎，帶來了好消息。我看的出你原先並不是在吹牛了-啊，如果我能親眼看見{s7}倒在你腳邊該有多好！毫無疑問，我們的對手現在沮喪至極。我想，大概也沒了戰意。俗話說，射人先射馬，擒賊先擒王。嗯，我現在要率領大軍去贏得真正的勝利了。別擔心，{playername}，你的貢獻，會被如實上報的。
+qstr_Alas_that_I_could_no|可惜我沒能終結{s8}的{s7}，他們最好注意點，別讓我們再遇上彼此。
+qstr__I_should_rather_mak|我該自己報告我戰勝{s8}的{s7}-你可別忘了，領頭的榮耀都是我的！
+qstr_Very_well_done_{play|做得很好，{playername}！正如我所期望的，你抓住了間諜和他的接應，他們現在正好好關在一起，等著被質問。他們將有很多事得好好的解釋了。{playername}，我對你的任務成功感到很高興，這袋錢代表我對你的感謝。
+qstr_Beautiful_work_{play|做得完美，{playername}！正如我告訴你的，你抓住了間諜和他的接應，他們現在正關在我的地牢裡，等著被質問。我的拷問人今晚有的忙了！無論如何，{playername}，我非常滿意你的成功。這袋錢代表我對你的感謝。
+qstr_Foiling_the_enemy_s_|阻撓敵方攻擊難民的企圖削弱了他們的決心({s1}由於你戰勝{reg18}掠奪者而失去了{reg19}陣營力量)。
+qstr_The_slaughter_and_lo|對難民的屠殺和搶劫使敵方更加強大({s1}獲得了50陣營力量)。
+qstr_You_did_however_defe|然而，你確實，擊敗了{reg18}掠奪者，削弱了敵人的決心({s1}失去了{reg19}陣營力量)。
+qstr_The_slaughter_and_loo|對難民的屠殺和搶劫使敵方更加強大({s1}獲得了{reg20}陣營力量)。
+qstr_Killing_the_refugees|殺死{s1}的難民並奴役倖存者使他們的人民士氣低落({s1}失去了{reg19}陣營力量)。
+qstr_{reg20}_refugee_trai|{reg20}難民逃脫並提高了敵人的士氣({s1}獲得了{reg22}陣營力量)。
+qstr_You_did_however_defea|然而，你確實，擊敗了{reg18}難民，削弱了敵人的決心({s1}失去了{reg19}陣營力量)。
+qstr_My_lord_{s12}_is_saf|大人，{s12}安全了。海盜已經被擊敗了。
+qstr_My_lord_Esgaroth_is_|大人，長湖鎮安全了。盧恩人已經被擊敗了。
+qstr_The_surroundings_of_|{s12}在熊熊燃燒。劫掠之景真是壯麗！
+qstr_The_surroundings_of_E|長湖鎮在熊熊燃燒。劫掠之景真是壯麗！
+qstr_This_is_welcome_news|這確實是個好消息，{playername}。 我們對海盜的大膽行動實在準備不足。但多虧了你，黑帆被趕走了，起碼短時間內吧，我們希望，至少，今天我們有打擊到他們。我們由衷的感謝你。
+qstr__Good_work_{playerna|幹得好，{playername}！必須承認，他們表現得比我們所認知更加狡猾。但看來，這些東方人在船上的戰鬥不如騎在馬上更好！也許，我們應該考慮組建一支屬於我們自己的艦隊... 無論如何，我們代表長湖鎮和河谷鎮的所有同胞感謝你，{playername}。
+qstr_Even_from_here_we_co|即使從這裡，我們也可以看到火焰和在風中聞到敵人的絕望！你做得很精彩，{playername}。讓恐怖烙印在剛鐸的每個男人、女人和孩子的心裡吧，他們將知道即使再強大的要塞也是擋不住我們的！
+qstr_Even_from_here_we_cou|即使從這裡，我們也可以看到火焰和在風中聞到敵人的絕望！你做得很精彩，{playername}。讓恐怖烙印在河谷鎮的每個男人、女人和孩子的心裡吧，他們將知道即使再強大的要塞也是擋不住我們的！
+qstr_My_lord_they_fell_up|大人，他們用的大軍襲擊了我們。我們無法擊退海盜。
+qstr_My_lord_they_fell_upo|大人，他們的大軍襲擊了我們。我們無法擊退盧恩的戰士。
+qstr_The_raid_on_{s12}_fa|感謝我們友方的無能，對{s12}的襲擊失敗了！
+qstr_This_raid_was_ill_fa|這次襲擊從一開始就注定失敗。 我們真不該上那些破爛的木筏！
+qstr_This_is_evil_news_yo|你帶來了的真是壞消息。黑帆越來越大膽，而現在整個貝爾法拉斯都在他們的陰影之下了。我不會，因為你的失敗而責怪你，{playername}，但我們的確遭受了一次沉重的打擊，真的很沉重。走吧。剛鐸的希望越來越渺茫，我們必須努力讓剩下的繼續存活下去。
+qstr_This_is_evil_news_you|你帶來了的真是壞消息。東方人越來越大膽，而長湖鎮則在燃燒。我不會，因為你的失敗而責怪你，{playername}，但我們的確遭受了一次沉重的打擊，真的很沉重。走吧。我們王國的希望越來越渺茫，我們必須努力讓剩下的繼續存活下去。
+qstr_Pah!_It_seems_you_we|呸！看來你不是能在海上混的料，{playername}。現在剛鐸人，坐著，高高在上，虛榮如王，笑著黑帆燃燒！也許在船上負責划槳對你的部下是適當的懲罰；他們被你指揮而不是我，還真是可憐。邪眼是不會高興的。滾吧。
+qstr_Have_you_nothing_bet|你沒有什麼比為你的失敗找爛藉口更好說的嗎，{playername}？也許你沒有我們所認為的那麼強大。未來好好服從我們的計畫吧，{playername}。我們對弱者是沒有慈悲的！
+qstr_{playername}_we_have|{playername}，我們幾乎打倒了艾辛格。他們發起了最後一搏來保護在塔裡的薩魯曼。跟我一起去會會他們吧！
+qstr_Are_you_ready_to_mee|你準備好面對艾辛格的最後一搏了嗎？
+qstr_I_am_ready_to_ride_w|我準備好和你一起去對付艾辛格了。
+qstr_I_am_ready_to_ride_wi|我準備好和你一起去和會會他們了。讓我們了結這一切吧。
+qstr_I_am_not_ready_to_ri|我還沒準備好和你一起走。我還需要一些時間。
+qstr_You_do_not_have_enou|你沒有足夠的部下來支援這場戰鬥。快去徵招至少30人再來加入我！
+qstr_Stay_close_we_will_t|別離太遠，我們將在敵人附近就位。當所有人就定位時，我們就會發起攻勢。
+qstr_You_have_taken_too_l|你花太多時間了...無論你跟不跟，我們現在就要出發了。我們將在敵人附近就位，3天內，我們就會發起攻勢。
+qstr_Make_haste_{playerna|動作快，{playername}。我們不想給他們喘息的機會。
+qstr_Your_mission_is_comp|你已經完成了任務，{s9}想要你在接到進一步的通知前繼續跟隨他的軍隊。
+qstr_{s13}_asked_you_to_g|{s13}要你去收集{reg3}單位的{s4}並將它們帶回給他。
+qstr_Moreover_should_you_|此外，如果你成為{s24}，我將歡迎你加入我的戰爭議會，在那你可以做出影響我們戰役的決定。目前，作為{s25}，你只需跟著我們別離太遠。我們很快就會動身了。
+qstr_For_the_moment_just_|目前，你只需跟著我們別離太遠。我們很快就會動身了。
+qstr_{s9}_asked_you_to_sc|{s9}要你去偵察{s13}、{s14}和{s15}，然後回報。
+qstr_You_have_been_most_h|你真是幫了大忙，{playername}。謝謝。
 qstr_You_are_a_good_serva|你是個能幹的僕人，{playername}。繼續保持。
 qstr_Superb_work_{playern|精湛的工作，{playername}。你的態度值得讚賞。
-qstr_Your_efficiency_is_p|你的效率令人驚訝，{playername}。堅持下去，你將會走得很遠。
-qstr_It_was_an_honour_to_|樂意效勞。
-qstr_Your_wish_is_my_comm|悉聽吩咐。
-qstr_Sauron_in_Mordor_the|魔多的索倫，昂巴的海盜，侃德的維瑞亞，和哈拉德部落
-qstr_Saruman_in_Isengard_|艾 辛 格 的 薩 魯 曼 和 登 蘭 德 的 野 人
-qstr_Orcs_of_Moria_and_Do|摩瑞亞和多爾哥多的獸人
-qstr_Orcs_of_Gundabad_and|剛達巴山的獸人和盧恩的勇士
-qstr_Men_of_Gondor|剛鐸的男人
-qstr_Riders_of_Rohan|洛 汗 騎 兵 
-qstr_Elves_of_Imladris_an|羅斯洛立安和瑞文戴爾的精靈
-qstr_Men_of_Dale_Dwarves_|河谷鎮的人類，孤山的矮人，比翁的親屬，幽暗密林的精靈
-qstr_Ah_{playername}_it_i|啊，{playername}，你 能 來 真 好。戰 爭 就 在 我 們 的 門 口，我 們 需 要 士 兵 和 隊 長 來 履 行 他 們  的 誓 言。^^我 們 正 在 與 {s11} 交 戰，但 我 們 必 須 集 中 力 量，削 弱 敵 人，然 後 才 能 攻 打 他 們 的 據 點 和 要 塞。敵 人 的 每 一 次 失 敗 都 會 使 我 們 更 接 近 勝 利，增 強 我 們 的 決 心，所 以 我 相 信 你 會 抓 住 每 一 個 機 會 與 我 們 的 敵 人 戰 鬥。但 是，不 要 單 獨 參 加 戰 鬥，你 必 須 和 我 們 勇 敢 的 隊 長 以 及 我 們 的 盟 友 一 起 戰 鬥。
-qstr_About_time_you_showe|關 於 你 出 現 的 時 間，{playername}。我 們 現 在 正 在 交  戰，我 不 能 容 忍 任 何 不 服 從 命 令 的 行 為。我 們 正 在 與 {s11} 交 戰，但 我 們 必 須 集  中 力 量，削 弱 敵 人，然 後 才 能 攻 打 他 們 的 據 點 和 要 塞。敵 人 的 每 一 次 失 敗 都 將 加 強 我 們 的 戰 爭 士 氣，使 他 們 更 接 近 於  徹 底 的 毀 滅。我 相 信 你 會 抓 住 每 一 個 機 會 來 對 抗 我 們 的 敵 人，以 偵 察 隊 或 是 主 帥 的 身 份。此 外，如 果 你 看 到 他  們 的 戰 鬥，你 將 支 援 我 們 的 領 主 和 我 們 的 盟 友。不 要 讓 他 們 失 望，否 則 我 會 知 道。
-qstr_we_are_fighting_agai|我們目前正與 {s13} 交戰
-qstr_we_are_not_fighting_|我們目前沒有與任何人交戰
-qstr__{s14}_gained_{reg78|{s14} 獲 得 {reg78} 經 驗。
-qstr_Oh?_Let_me_see_that.|哦？讓我看看…  很好很好！\n非常感謝你把這封信帶給我，{playername}。\n拿著徽章作為我收到信的證物，下次見到 {s9} 的時候請代我向他問好。
-qstr_Give_me_that!_Hrmph!|給我的？哇啊！很好！{playername}。\n你能把這個帶給我，說明你是個有用的僕人。\n告訴 {s9}，讓他多用用你。
-qstr_What?_Let_me_see_tha|什麼？讓我看看…   恩，{playername}。\n感謝你把這封信帶給我，現在你可以走了。
-qstr_Give_me_that!_Hrmph!_|給我的？哇啊！ {playername}，你是個有用的僕人，但我不看好你能活很久。滾吧！
-qstr_My_king|我的國王
-qstr_Lord|領 主 
-qstr_my_king|我的國王
-qstr_lord|領 主
+qstr_Your_efficiency_is_p|你的效率令人滿意，{playername}。堅持下去你就能步步高升。
+qstr_It_was_an_honour_to_|我很樂意效勞。
+qstr_Your_wish_is_my_comm|悉聽尊便。
+qstr_Sauron_in_Mordor_the|魔多的索倫、昂巴的海盜、侃德的維瑞亞人和哈拉德的部落民
+qstr_Saruman_in_Isengard_|艾辛格的薩魯曼和登蘭德的野人
+qstr_Orcs_of_Moria_and_Do|摩瑞亞和多爾哥多的半獸人
+qstr_Orcs_of_Gundabad_and|剛達巴山的半獸人和盧恩的戰士
+qstr_Men_of_Gondor|剛鐸的人類
+qstr_Riders_of_Rohan|洛汗的騎手 
+qstr_Elves_of_Imladris_an|伊姆拉崔和羅斯洛立安的精靈
+qstr_Men_of_Dale_Dwarves_|河谷鎮的人類，孤山的矮人，比翁的親屬和幽暗密林的精靈
+qstr_Ah_{playername}_it_i|啊，{playername}，你來的正好。戰爭就在我們的門口而我們需要士兵和隊長們來履行他們的誓言。^^我們正在與{s11}交戰，但得先集中力量削弱敵方然後才能攻打他們的重地和要塞。每次擊敗敵方都會使我們更接近勝利和增強我們的決心，所以我相信你會抓住每個與我們的敵方戰鬥的機會，不論是一小隊斥候或一支大軍。但別單獨衝進戰場，你必須和己方勇敢的隊長們以及盟友一起戰鬥。
+qstr_About_time_you_showe|是時候你該來了，{playername}。我們現在開戰了而我不會容忍任何違抗軍令的行為。我們正在與{s11}交戰，但得先集中力量削弱敵方然後才能攻打他們的重地和要塞。每次擊敗敵方都將增加我們戰爭的投入和使他們更接近徹底的毀滅。所以我相信你會抓住每個與我們的敵方戰鬥的機會，不論是一小隊斥候或一支大軍。此外，你得支援看到的己方隊長和盟友們。別讓他們失望否則我會知道的。
+qstr_we_are_fighting_agai|我們正在與{s13}交戰
+qstr_we_are_not_fighting_|我們目前沒有在與任何人交戰
+qstr__{s14}_gained_{reg78|{s14}獲得{reg78}經驗值。
+qstr_Oh?_Let_me_see_that.|哦？讓我看看…很好很好！感謝你把這個帶給我，{playername}。拿著我的印封作為我收到的證據，然後下次見到{s9}的時候代我向他問好。
+qstr_Give_me_that!_Hrmph!|拿過來！哼！能把這個帶給我，代表你是個有用的僕人，做的好{playername}。告訴{s9}叫他多用用你。
+qstr_What?_Let_me_see_tha|什麼？讓我看看…恩。把這個帶給我，做的好{playername}，你可以走了。
+qstr_Give_me_that!_Hrmph!_|拿過來！哼！{playername}，你是個對你主人來說有用的僕人，但你們大概活不久吧。不過你的死期不是現在，所以滾吧。
+qstr_My_king|吾王
+qstr_Lord|大人
+qstr_my_king|吾王
+qstr_lord|大人
 qstr_our|我們的
 qstr_your|你的
-qstr_Moria_and_Gundabad|剛達巴山和摩瑞亞
-qstr_Moria|摩 瑞 亞 
-qstr_Gundabad|剛 達 巴 
-qstr_You_swear_an_oath_of|你發誓要對 {s3} 進行報復。\n你未來幾天想要盡可能多地殺死摩瑞亞和剛達巴山的部隊。\n你清楚地知道你的追隨者見證了這一誓言，你不想成為一個有名的破誓者。\n現在必須開始放血狂歡！^。
-qstr_The_search_for_the_L|尋找丟失長槍的旅途帶著你來到了多溫尼安—布拉多辛王北方王國的所在地。未完待續
-qstr__You_need_to_be_{s24|(你需要達到 {s24} 或更高)。
-qstr_You_are_not_worthy_o|你不值得配我的技能。\n先證明自己，然後超過 {s25}。{S2}
-qstr_I_am_sorry._I_cannot|我很抱歉。\n我不能以 {s25} 的身份照顧你，因為還有更緊迫的問題。{s2}
-qstr_Yes_I_am_and_I_can_h|是的，我是，我可以幫你付出價。
-qstr_You_heard_right_and_|你聽到了，是的，我可以幫助你。
-qstr__Costs_1000_Resource|(花費1000資源，5影響)
-qstr_I_can_see_that._I_ll|我明白了。\n當我和你打交道時，我會讓我的守衛站崗。\n這需要一些時間。 {s2}
-qstr_Yes_I_see_that._I_ca|是的，我明白了。\n我可以照顧你，但這會使我遠離重要的任務。{s2}
+qstr_Moria_and_Gundabad|摩瑞亞和剛達巴
+qstr_Moria|摩瑞亞
+qstr_Gundabad|剛達巴
+qstr_You_swear_an_oath_of|你發了對{s3}的復仇之誓。你必須在未來的日子裡盡可能摧毀更多摩瑞亞和剛達巴的部隊。你確信你的追隨者都見證了你的誓言，而你也不希望被認為是背誓者。讓血祭開始吧！^。
+qstr_The_search_for_the_L|尋找失落長槍的旅途帶著你來到了多溫尼安，古代布拉多辛王的北方王國所在地。未完待續
+qstr__You_need_to_be_{s24|(你至少需要升到{s24}以上)。
+qstr_You_are_not_worthy_o|你不配我效力。先證明自己，升到{s25}以上吧。{S2}
+qstr_I_am_sorry._I_cannot|抱歉。我不能照顧只是{s25}的你因為我還有更要緊的事要處理。{s2}
+qstr_Yes_I_am_and_I_can_h|對，我是，我可以幫你但你得付錢。
+qstr_You_heard_right_and_|你沒聽錯，是的，我可以幫助你。
+qstr__Costs_1000_Resource|(花費1000資源，5影響力)
+qstr_I_can_see_that._I_ll|我明白了。我會讓守衛在我處理你的事這段時間把風。這得花點時間。{s2}
+qstr_Yes_I_see_that._I_ca|是的，我明白。我可以照顧你沒錯，但這會耽誤我重要的任務。{s2}
 qstr__Costs_1500_Resource|(花費1500資源，10影響力)
-qstr_I_ll_have_my_persona|我會讓我的私人治療師與你打交道，他們是最棒的。\n告訴我你什麼時候想要他們。{s2}
-qstr_I_ll_have_my_personal|我會讓我的私人醫生照顧你的人，他們做得很好。\n如果您需要它們，請告訴我。{s2}
-qstr_I_ll_have_them_here_|我馬上就把它們放在這兒。
-qstr_Let_us_begin._My_hea|讓我們開始吧，我的治療師會照顧你和你的人。
-qstr_Alright!_This_is_goi|好的！ 這會傷害......   很多。
-qstr_Let_us_begin._It_may|讓我們開始吧。\n可能需要一些時間。\n放鬆一下，把剩下的留給我吧。
-qstr_Impressive..._You_di|令人印象深刻的…    你沒有退縮太多。\n回到你的崗位上。
-qstr_Rest_the_wounds_have|休息時，傷口已經得到照顧。
-qstr_Your_party_must_be_a|你 的 隊 伍 必 須 至 少 有 30 人 才 能 開 始 這 個 任 務
-qstr_You_were_tasked_to_h|你被請求解決一支在北方造成嚴重破壞的土匪，你既可以選擇直接進攻他們位於幽暗密林附近的藏身處，你也可以選擇在比翁之家的周圍攔截他們。
-qstr_Mordor_gains_Faction|魔多收到一件未知武器後獲得派系力量
-qstr_Beornings_gain_Facti|比翁人獲得派系力量：你的勝利廣為流傳
-qstr_Beornings_lose_Facti|比翁人在被攻擊時失去了派系的力量。
-qstr__{s14}_gains_faction|{s14} 獲得派系力量：至尊魔戒的消息廣為流傳
-qstr_You_must_return_and_|你必須馬上回報你打敗魔戒獵人頭領並且獲得了一個魔法戒指的消息。
-qstr_You_must_return_and_r|你必須馬上回報你打敗魔戒獵人頭領的消息。同時告知各派系統治者們—魔戒獵人很有可能得到了他們想要的東西。
-qstr_Do_you_need_reinforc|你需要援軍麼？
-qstr_You_don_t_look_too_s|你看起來還不夠強壯，你需要士兵麼？
+qstr_I_ll_have_my_persona|我會讓我的私人治療師處理你的事，他們是頂尖的。告訴我你想要他們什麼時候過來。{s2}
+qstr_I_ll_have_my_personal|我會讓我的私人治療師照顧你的人馬，他們是業界頂尖的。告訴我你什麼需要他們。{s2}
+qstr_I_ll_have_them_here_|我馬上叫他們過來。
+qstr_Let_us_begin._My_hea|讓我們開始吧，我的治療師會照顧你和你的人馬。
+qstr_Alright!_This_is_goi|好吧！這將會痛...很痛。
+qstr_Let_us_begin._It_may|讓我們開始吧。可能得花點時間。你只要放鬆然後剩下的就交給我吧。
+qstr_Impressive..._You_di|還不錯…看來你不怎麼怕痛。回到你的崗位上吧。
+qstr_Rest_the_wounds_have|休息吧，傷口已經處理好了。
+qstr_Your_party_must_be_a|你的隊伍必須至少有30人才能開始這個任務
+qstr_You_were_tasked_to_h|你被請求獵殺在北方造成嚴重破壞的盜賊，你可以選擇直接進攻他們位於幽暗密林附近的藏身處或在比翁之家周圍攔截他們。
+qstr_Mordor_gains_Faction|魔多收到一件未知的武器後獲得陣營力量
+qstr_Beornings_gain_Facti|比翁人由於你勝利的消息廣傳而獲得陣營力量。
+qstr_Beornings_lose_Facti|比翁人由於被攻擊而失去了陣營力量。
+qstr__{s14}_gains_faction|{s14}由於力量之戒的消息廣傳而獲得陣營力量。
+qstr_You_must_return_and_|你必須馬上回報你打敗戒指獵人的首領並得到了一個魔法戒指的事。
+qstr_You_must_return_and_r|你必須馬上回報你打敗戒指獵人的隊伍，但他們的首領很可能已經得到他們所尋之物的事。
+qstr_Do_you_need_reinforc|你需要援軍嗎？
+qstr_You_don_t_look_too_s|你看起來不夠強，你需要部下嗎？
 qstr_^{s14}_is_grateful_t|^{s14}由衷的感激你，{playername}，{s29}^
-qstr_{s31}{reg28?Those:That|{s31}{reg28?這群:這名}勇敢的{reg28?士兵:士兵}定能極大地增強我方領土的防禦。 {s32}^^[獲得{s14}的{reg14}資源點]
-qstr_{s31}{reg28?Those:That}|{s31}{reg28?這群:這名}有用的{reg28?士兵們:士兵}定能帶去更多的毀滅。 {s32}^^[獲得{s14}的{reg14}資源點]
-qstr_{s4}_^Oh_and_take_bac|{s4} ^噢，請將這些非本派系的士兵帶回去吧，我們沒法指揮他們。
-qstr_It_is_my_duty_to_hel|幫助人民是我的天職。
-qstr_It_is_my_duty_to_help|幫助盟友是我的天職。
-qstr_{s31}__Consumable._C|{s31} (消耗品。可以回購)
-qstr_{s31}__Can_be_reboug|{s31} (可以回購)
-qstr_I_wish_to_raze_an_en|我希望將敵人的定居點夷為平地。
-qstr_I_wish_to_lead_our_m|我想帶領我們的人進攻敵人的定居點。
-qstr_More_snaga_who_will_|誰會把奴隸扔在敵人的牆上？\n仔細聽，我可以讓你試試。
-qstr_Indeed?_Few_men_are_|確實？\n很少有人能夠如此迅速地自願在城垛上死去。\n在我允許你走之前，我們有很多事情要討論
-qstr_Indeed?_That_is_no_s|確實？\n這不是一件小事，在你離開之前我們必須討論一些問題。
-qstr_First_sieges_are_onl|首先，圍攻是好的選擇！以下是所有需要做的事情：
+qstr_{s31}{reg28?Those:That|{s31}{reg28?那群:那名}勇敢的{reg28?士兵們:士兵}必定能幫助我們防禦我們的土地。{s32}^^[獲得{s14}的{reg14}資源點]
+qstr_{s31}{reg28?Those:That}|{s31}{reg28?那群:那名}有用的{reg28?部下們:部下}必定能幫助我們毀滅更多東西。{s32}^^[獲得{s14}的{reg14}資源點]
+qstr_{s4}_^Oh_and_take_bac|{s4} ^噢，把這些不是我們親屬的士兵帶回去吧，他們對我來說沒有用處。
+qstr_It_is_my_duty_to_hel|幫助同胞是我的職責。
+qstr_It_is_my_duty_to_help|幫助盟友是我的職責。
+qstr_{s31}__Consumable._C|{s31}(消耗品。可以再買)
+qstr_{s31}__Can_be_reboug|{s31}(可以再買)
+qstr_I_wish_to_raze_an_en|我想把敵方的一個聚落夷為平地。
+qstr_I_wish_to_lead_our_m|我想帶領我們的人馬進攻敵方的聚落。
+qstr_More_snaga_who_will_|把更多奴隸丟向敵方的城牆？好好聽著搞不好我能讓你試試。
+qstr_Indeed?_Few_men_are_|確實？很少人這麼快就自願衝到城垛上去死。在我允許你走之前我們還有很多事要討論
+qstr_Indeed?_That_is_no_s|確實？這不是一件小事而在我允許你走之前我們還有很多事要討論。
+qstr_First_sieges_are_onl|首先，圍城是強者才能選擇的！以下是所有需要做的事情：
 qstr_Here_is_all_that_nee|以下是所有需要做的事情：
-qstr_Firstly_we_must_thin|首先，我們必須考慮到這項任務的障礙：
-qstr_You_need_sharp_weapo|你需要鋒利的武器，新鮮的肉給你的部隊和戰士，用木頭來燃燒火焰，使虛弱的人跟上。\n你還必須把你的渣滓排成一行，否則他們會在你走到牆邊之前互相殘殺。\n我們忙於自己的戰鬥，無法照顧你的命運，準備好提供維持移動所需的資源。^[需要 {reg3} 資源，{reg15} 影響力]
-qstr_Steel_must_be_kept_s|武器必須保持鋒利，人和馬必須被餵飽，火必須燃燒，水必須足夠，傷口必須得到照料——如果你不能持續征戰，你和你的人對我們毫無用處。\n由於我們的分佈太薄，不能給你所需的，你必須準備好提供所需資源，以保持你的軍隊在圍攻中作戰。^[需要 {reg3} 資源，{reg15} 影響力]
-qstr_Steel_must_be_kept_sh|武器必須保持鋒利，人和馬必須被餵飽，火必須燃燒，水必須足夠，傷口必須得到照料——這場戰鬥雖然不那麼光榮，但並比你在城牆上戰鬥的那場戰鬥更重要。\n由於我們的分佈太薄，不能給你所需的，你必須準備好提供所需資源，以保持你的軍隊在圍攻中作戰。^[需要 {reg3} 資源，{reg15} 影響力]
-qstr_Next_if_you_try_to_a|下一步，如果你試圖攻擊敵人的首都，如果你還沒死的話，我就把你抓起來。\n當主人命令它時我們只在那裡行軍。\n你去了敵人的弱點，可以打敗。
-qstr_Secondly_you_do_not_|第二，你們無權領導我們的人攻打敵人的首都。\n這些地方只有當我們的部隊全力以赴團結起來才能克服。\n你只有在我們的敵人被削弱到足以打敗他們的地方才可以發動攻擊。
-qstr_Third_{s2}_is_on_its|第三，{s2} 是自己的徵戰。\n如果你的選擇看起來不錯，我們會和你戰鬥的，但是你最好有足夠的力量自己贏，否則你不會堅持太久。
-qstr_Furthermore_you_must|此外，您必須知道 {s2} 正忙於自己的作戰。\n如果情況允許，我們的旗幟會跟隨你進入戰鬥，但不要相信希望——你很可能會被迫獨立。
-qstr_Last_remember_that_a|最後，記住，作為一個 {s25}，沒有時間失敗。\n當你戰鬥的時候，你會冒著失敗的風險，如果我失敗，我們會確保你希望你從未出生過。
-qstr_Finally_remember_tha|最後，請記住，作為一個 {s25}，你的成功和失敗會決定你的生與死。\n當你進入戰鬥時，你會為 {s2} 冒很大的風險 - 給它帶來毀滅，後果將是嚴重的。
-qstr_Finally_remember_that|最後，請記住，作為一個 {s25}你可以享受在勝利的榮耀，並稱之為你自己的勝利，但所有生活在 {s2} 的人都會為你的失敗付出代價。\n你帶著 {s2} 的命運與你交戰 - 給它帶來毀滅，後果將是嚴重的。
-qstr_Still_think_you_can_|你還認為你能應付嗎？
-qstr_Knowing_what_I_have_|知道我告訴你的事情，你還認為自己有能力嗎？
-qstr_Knowing_what_I_have_t|知道我告訴你的事情，你還想繼續嗎？
-qstr_Give_me_the_banner_o|給我主人的旗幟！
-qstr_Yes_my_lord._Let_me_|是的，大人。讓我把我們的旗幟帶到戰場上。
-qstr_The_people_of_{s3}_t|{s3}的人民感謝你的禮物，{playername}。\n作為{s1}的交換，我們想把{s2}送給{s4}的人民。\n再次感謝你，{playername}。
-qstr_I_want_to_deliver_a_|我想給我們的盟友送一份禮物。
+qstr_Firstly_we_must_thin|首先，我們必須考慮到這項任務會遇到的阻礙：
+qstr_You_need_sharp_weapo|你需要鋒利的武器，新鮮的肉給你的部下和座狼，作為燃料的木頭，使弱者跟上的酒。你還必須把你的渣滓管好否則他們在你到牆邊之前就會開始自相殘殺。我們太忙著內鬥沒辦法照顧彼此—準備好提供讓蛆蟲們移動所需的物資。^[需要{reg3}資源，{reg15}影響力]
+qstr_Steel_must_be_kept_s|武器必須保持鋒利，人馬必須被餵飽，篝火必須保持燃燒，水必須足夠，傷口必須得到照料—如果你不能維持戰役你和你的人馬將對我們毫無用處。我們的戰線已經拉的太開所以沒辦法提供你的需求，你必須準備好提供保持軍隊圍城所需的資源。^[需要{reg3}資源，{reg15}影響力]
+qstr_Steel_must_be_kept_sh|武器必須保持鋒利，人馬必須被餵飽，篝火必須保持燃燒，水必須足夠，傷口必須得到照料—雖然沒那麼光彩但其重要性毫不遜於在壁壘上廝殺。我們的戰線已經拉的太開所以沒辦法提供你的需求，你必須準備好提供保持軍隊圍城所需的資源。^[需要{reg3}資源，{reg15}影響力]
+qstr_Next_if_you_try_to_a|接著，如果你試圖攻擊敵人的首都，而還沒死的話我會把你打一頓的..我們只會朝主人命令之處進軍。你要去找能擊潰的軟弱敵人。
+qstr_Secondly_you_do_not_|第二，你無權領導我們的同胞攻打敵人的首都。這些地方只有在我們全軍的力量團結起來後才能克服。你只能對被削弱到可以擊潰的敵人發起攻勢。
+qstr_Third_{s2}_is_on_its|第三，{s2}有自己的戰役。如果你的目標看起來不錯我們會和你戰鬥的，但你最好有足夠的力量自己獲勝，否則你活不久的。
+qstr_Furthermore_you_must|此外，你必須知道{s2}正忙於自己的戰役。如果情況允許我們的旗幟會跟著你進入戰鬥，但別抱太多希望—你很可能不得不獨自奮戰。
+qstr_Last_remember_that_a|最後，記住身為{s25}，主人沒空管我們的失敗。{s2}為你的戰鬥承擔很多風險—為我們帶來失敗的話我們會確保你感到生不如死的。
+qstr_Finally_remember_tha|最後，記住身為{s25}，你的成功和失敗會決定你的生死。{s2}為你的進軍承擔很多風險—為它帶來毀滅的話你將承擔嚴重的後果。
+qstr_Finally_remember_that|最後，記住身為{s25}，你可以好好享受得來不易的勝利並稱之為自己的榮耀但如果失敗則所有生活在{s2}的人都得付出代價。你可是背負著{s2}的命運在戰鬥—為它帶來毀滅的話你將承擔嚴重的後果。
+qstr_Still_think_you_can_|你還認為你應付的來嗎？
+qstr_Knowing_what_I_have_|了解我告訴你的這些後，你還認為自己能勝任嗎？
+qstr_Knowing_what_I_have_t|了解我告訴你的這些後，你還希望繼續嗎？
+qstr_Give_me_the_banner_o|給我主人的旗幟吧！
+qstr_Yes_my_lord._Let_me_|是的，大人。讓我把我們的旗幟帶到戰場上吧。
+qstr_The_people_of_{s3}_t|{s3}的人民感謝你的禮物，{playername}。作為{s1}的交換，我們會把{s2}送給{s4}的人民。讓我再次感謝你，{playername}。
+qstr_I_want_to_deliver_a_|我想送一份禮物給我們的盟友。
 qstr_delivering_a_gift|送一份禮物
-qstr_I_want_to_bring_a_br|我想給我們的盟友送一份賄賂。
+qstr_I_want_to_bring_a_br|我想送一份賄賂給我們的盟友。
 qstr_delivering_a_bribe|送一份賄賂
-qstr_{s2}_[{reg14}_Resour|{s2} [{reg14}資源點]
+qstr_{s2}_[{reg14}_Resour|{s2}[{reg14}資源點]
 qstr_Gift|禮物
-qstr_You_have_requested_t|你請求把{s1}的禮物從{s2}送給{s3}。 {s3}的人民一定會很歡迎你的到來。
+qstr_You_have_requested_t|你請求把{s1}從{s2}送給{s3}。 {s3}的人民一定會很歡迎的。
 qstr_Bribe|賄賂
-qstr_You_have_requested_to|你請求把{s1}的賄賂從{s2}帶給{s3}。希望你能夠得到一定的獎賞作為回報吧。
-qstr_{reg3}_hours.|{reg3} 小時。
+qstr_You_have_requested_to|你請求把{s1}從{s2}拿去賄賂{s3}。希望你能多少得到一些獎賞作為回報吧。
+qstr_{reg3}_hours.|{reg3}小時。
 qstr_hour.|小時。
-qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
-qstr_You_spent_{reg0}_of_|你花費了對{s1}的{reg0}影響力。你還剩{reg1}影響力。
-qstr_The_War_is_over_{pla|戰爭結束了！ {playername}，你還沒聽說麼？
-qstr_We_are_at_war_with_{|我們正與{s12}交戰。但交戰的重心其實是在{s13}身上。
-qstr_We_are_at_war_with_{s|我們正與{s12}交戰。但其實目前只有一點小衝突。
-qstr_we_are_not_too_conce|我們目前沒工夫理他們，因為我們正與離家更近的敵人交戰。
-qstr__under_your_orders|，聽從指揮。
-qstr_{playername}_you_may|{playername}，您可能已經看過{s7}的主人。\n在所有反對我們的領主中，目前{s8}的{s7}贏得了最大的聲譽。\n他們僅僅出現在戰場上就足以使我們的敵人更加強大，削弱我們盟友的決心。\n{playername}，如果你想在這場戰爭中做出一件偉大的事情，在公開戰鬥中擊敗{s7}的主人！ 這樣希望將被重新點燃，並且讓恐懼填滿那些反對者人的心。
-qstr_Do_you_mark_how_our_|當你提到{s8}的{s7}時，你知道我們最勇敢的戰士是如何動搖的嗎？一個偉大的戰士，哦，是的，一個有能力的隊長。我們不能讓它像這樣亂跑！無論他們出現在哪裡，我們就會跑向那裏，我們的敵人會找到新的勇氣。這不可能。我們不能讓它像這樣運行！ 他們的臉上到處都顯示出來，我們的線條向後彎曲，我們的敵人找到了新的勇氣。這不可能。我命令你，{playername}，在公開戰鬥中挑戰並擊敗{s7}的士兵。看到被你擊倒的{s7}將凍結他的追隨者的血液和骨髓，向我們自己的部隊展示我們的敵人可以被擊倒！
-qstr_This_is_a_chance_for|這是個展現自我實力的機會。 我將在敵人和盟友的視線中擊敗{s7}。
-qstr_Accursed_be_those_wh|今日跟從{s7}的必受到咒詛，因為我要擊殺他們，讓大家看見！。
-qstr_{s9}_wants_you_to_de|{s9}希望你在戰鬥中擊敗{s36} {s35}。
-qstr_I_humbly_ask_that_yo|我謙卑地問你為這個任務找到了另一個人。我不認為{s7}能在戰鬥中能做到最好。
-qstr_Mercy_I_crave!_To_fa|憐憫，我渴望！ 在公開戰鬥中面對{s7}絕對是愚蠢的！ 我不能做這件事！
-qstr_strong_warriors_from|來自 {s7} 的強大戰士
-qstr_champions_from_{s7}_|來自 {s7} 的冠軍，是該領域最強者
-qstr_{playername}_the_men|{playername}，這些人聽說過有關敵軍兇猛的故事。\n這些恐怖的故事使士兵們的士氣低落。\n我要你讓他們知道他們沒有什麼可害怕的。\n我希望你挑戰並擊敗{reg22} {s6}。
-; qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superior force!
-qstr_I_will_do_what_you_a|我會按你的要求做，人們將會見證。
-qstr_high_level_troops_fr|高級部隊來自
-qstr_elite_level_troops_f|精英級別的部隊來自
-qstr_{s9}_wants_you_to_pe|{s9} 希望你親自擊敗 {reg22} {s6} {s7}。
-qstr_I_want_you_to_person|我要你親自殺人
-qstr_I_want_you_and_your_|我要你和你的手下去殺人
-qstr_{playername}_you_nee|{playername}，你需要贏得我和你手下的尊重。\n{s6} {reg22} {s7} 部隊！
-qstr_{s9}_wants_you_to_per|{s9} 要你親自殺死 {reg22} {s6} 部隊。
-qstr_{s9}_wants_you_and_y|{s9} 要你和你的手下殺死 {reg22} {s6} 部隊。
-qstr_{playername}_we_have_|{playername}，我們收到了嚴厲的消息。\n昂巴的海盜變得越來越大膽，即使在我們說話的時候，一支艦隊也會在離 {s6} 不遠的地方聚集。\n他們已經沿著海岸線前進了，很快就會到達城市。\n我們必須在艦隊到達城市之前攔截它。快點去{s6}，和地方當局談。
-qstr_{playername}_we_have_r|{playername}，我們收到了嚴厲的消息。\nRhûn 的野人比我們想像的更加狡猾和大膽 - 在我們的偵察員看不到的情況下，他們建造了足夠的船隻和木筏來穿越長湖，他們會直接在長湖鎮發起攻擊！\n我們必須在艦隊到達城市之前攔截它們。\n盡可能迅速帶領你的部隊到那裡，把野蠻人趕回去！
-qstr_If_you_seek_pillage_|如果你尋求搶劫和掠奪，這是一個非常好的機會，{playername}。\n一艘海盜船正從 {s7} 港口出發，並將 {s6} 設置一條航線，這條航線對於採摘來說已經成熟了！\n加入他們的攻擊，分享戰利品！
-qstr_The_soft_weaklings_o|長湖鎮的軟弱者與我們迅速的騎兵和兇猛的戰士無法匹敵，{playername}。這是眾所周知的。\n長湖鎮的人相信自己安全，在我們對面的水面上，但我們很快就會向他們展示，我們製造的船隻和木筏足以將我們的戰士直接穿過湖泊。\n他們不會等我們的，前往營地，如果你想加入襲擊，請與營地指揮官交談。
-qstr_{s9}_asked_you_to_he|{s9} 要求你幫助保衛 {s3} 免受海盜襲擊。 趕緊前往城市，與行會大師交談，並向當地的駐軍提供援助。
-qstr_{s9}_asked_you_to_hel|{s9} 要求你幫助保衛長湖鎮免受海軍的入侵，所有這些都是由羅恩製造的。 \n趕緊前往長湖鎮，與行會大師交談，並向當地的駐軍提供援助。
-qstr_{s9}_offered_you_an_|{s9} 為你提供了參加海軍襲擊 {s3} 的機會。 前往 {s4}，與營地指揮官交談，加入攻擊。
-qstr_{s9}_offered_you_an_o|{s9} 讓你有參加對長湖鎮的襲擊機會。\n前往 {s4}，與營地指揮官交談，加入攻擊。
-qstr_We_will_go_as_swiftl|我們會盡可能趕過去，祈禱我們不會太遲。
-qstr_We_shall_plunder_the|我們將掠奪他們的港口並為自己奪取他們的財富！
-qstr_We_shall_plunder_the_|我們將掠奪湖鎮，為自己奪取財富！
-qstr_I_m_sorry_but_we_can|對不起，我們現在不能幫助他們。
-qstr_Bah!_Far_more_glory_|呸！在其他地方贏得的榮譽遠遠超過微不足道的海盜。
-qstr_This_raid_does_not_i|這次襲擊對我不感興趣。\n我會在其他地方贏得榮耀。
-qstr_{s9}_asked_you_to_de|{s9} 要你摧毀 {s1} 附近的偵察營。
-qstr_Your_party_must_be_at|你 的 隊 伍 至 少 要 有 10 人 才 能 開 始 這 個 任 務
-qstr_{s9}_asked_you_to_def|{s9} 要你保衛 {s1} 附近遭受攻擊的村莊。
-qstr_{s9}_asked_you_to_ra|{s9} 要你襲擊 {s1} 附近的一個村莊。
-qstr_These_soldiers_may_w|這些士兵勢必會在我的計劃中力挽狂瀾，{playername}。\n我相信你訓練得很好。\n我對你非常感謝。
-; qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
-qstr_Good_work_in_shaping|你讓這些新兵煥發了新生，{playername}。\n我一直都堅信你是最能幹的。\n但願這些士兵能比上一批堅持更久。\n不然的話請再來找我，我還會需要你的幫助的。
-; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
-qstr_Well_the_soldiers_ar|好了長官，這些士兵現在歸你指揮了。\n我希望你能帶他們平安歸來。
-qstr_Well_you_may_do_as_y|好的，您請自便。\n如您所需，我和我手下的將隨時為您效勞。
-qstr_{s9}_asked_you_to_br|{s9} 要 你 為 軍 隊帶 回 一 個 兇 暴 的 巨 魔 。
-qstr_{s9}_asked_you_to_fi|{s9} 希望你探索法貢森林，調查之前究竟發生了什麼，並且向他回報。
-qstr_{s9}_asked_you_to_fin|{s9} 希望你去尋找丟失的布拉多辛王長槍，該長槍是孤山矮人為國王布拉多辛的部隊打造，每柄長槍都擁有經過三次鍛造的槍尖，柄上則鑲著精雕細琢的黃金。\n你需要得到 {s5} 的許可，去尋找深藏在孤山的深處的長槍。
-qstr_{s9}_has_asked_you_t|{s9} 希望你能去殺死位於幽暗密林的多爾哥多巫師
-qstr_{s9}_asked_you_to_ta|{s9} 希望你給 {s13} 送一封信。你接受任務時 {s13} 正位於 {s4}。
-qstr_{s9}_asked_you_to_tak|{s9} 希望你給隸屬於 {s15} 的 {s13} 送信。你接受任務時 {s13} 正位於 {s4}。
-qstr_{s11}_asked_you_to_e|{s11} 希望你能護送他的信使到 {s14}。
-qstr_Lend_your_experience|借 用 你 經 驗 豐 富 的 外 科 醫 生 {s3}給 {s1}。 
-qstr_No_commander_should_|{playername}，這件事兒對於一名指揮官來說真是難以啟齒。\n我前些天竟然發現我的一些士兵分不清劍的首尾。\n我希望有人能向他們展示何為勇氣何為技藝。\n你是一位聲名遠揚的戰士，{playername}。\n我能請求你能幫我訓練一些士兵麼？我將由衷的感激你。
-qstr_No_commander_should_h|{playername}，這件事兒對於一名指揮官來說真是難以啟齒。\n我前些天才發現我的部分士兵特別的散漫。\n我希望有人能夠重塑他們的風骨，或是及時終止他們無謂的努力。你是一位聲名遠揚的戰士，{playername}。\n我能請求你能幫我訓練一些士兵麼？我會支付你高額回報的。
-qstr_{s9}_asked_you_to_rai|{s9}要 求 你 去 {s14}征 {reg1}的 稅 並 帶 給 他 。 
-qstr_{s9}_asked_you_to_hu|{s9} 希望你去追捕名為 {s4} 的逃犯。根據報告他目前位於 {s3}。
-qstr_{s9}_asked_you_to_defe|{s9} 要求你在去 {s3} 的路上保衛3組難民。
-qstr_{s9}_asked_you_to_hun|{s9} 要求你在前往 {s3} 的途中追捕3組難民。
-qstr_{s9}_asked_you_to_ca|{s9} 希望你把三隊逃跑的奴隸帶回 {s4}。\n他說這三隊人全都逃向 {s3}。
-qstr_{s11}_asked_you_to_f|{s11} 希望你跟踪將要離開 {s12 }的間諜。\n你必須小心不要在途中被間諜發現，否則他可能會產生懷疑並返回。\n一旦間諜和同夥會面，你需要伏擊並抓獲他們，然後一併帶回 {s11}。
-qstr_{s11}_asked_you_to_c|{s11} 希望你俘獲一名敵方指揮官並帶回 {s11} 審訊。
-qstr_{s9}_asked_you_to_le|{s9}要 你 把 同 伴 {s3}借 給 他 一 周 。 
-qstr_{s9}_has_requested_y|{s9} 希望你帶給他 {reg1} 名敵軍俘虜。
-qstr_We_have_reports_that|我們剛剛收到情報，說我們的幾隻巡邏隊被敵軍埋伏並打散了。\n他們中的一些人可能還活著，並被敵軍所俘虜。\n現在我軍士氣低沉，被俘人員也將被關押、處決、甚至更糟。\n所以我希望你能解救 {reg1} 名俘虜，以振奮我軍士氣。
-qstr_We_have_reports_that_|我們剛剛收到情報，說我們的幾隻巡邏隊被敵軍埋伏並打散了。\n他們中的一些人可能還活著，並被敵軍所俘虜。\n作為消耗品，他們在監獄地洞裡死去就太不值了。\n所以我希望你能解救 {reg1} 名俘虜讓他們再為我而戰。
-qstr_{s9}_has_asked_you_to|{s9} 希望你去營救 {reg1} 名囚犯。
-qstr_We_have_reports_that_a|我們剛剛收到線報，說有大批敵軍正集結於 {s13}。\n對此我極其關注，畢竟我一不知道他們有多少人，二不知道我方戰士是否做好了戰鬥準備。\n我希望你能盡可能的靠近 {s13}，並找出一切有用的情報。
-qstr_My_spies_tell_me_of_|我的間諜告訴我說有大批敵軍正集結於 {s13}。\n他們鐵定無法與我與我的僕人抗衡，但能知道他們的人數也不失為一個好主意。\n我希望你能盡可能的靠近 {s13}，並找出一切有用的情報。
-qstr_{s9}_asked_you_to_sco|{s9} 要 求 你 去 偵 察 {s13}。 
-; qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts. I will also give you a few recruits, but you should not send them out on their own.
-; qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee! I will give you these recruits, they won't be missed.
-; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
-qstr_We_need_to_take_the_|我們要把戰鬥帶向敵人，{playername}。\n為了達到這個目標，我們需要攻擊他們的巡邏隊和情報網絡。\n我希望你去消滅 {reg1}隊 {s13}，這將幫我們贏得主動。
-qstr_We_need_to_grind_dow|我們要把沒用的敵人碾碎，{playername}。\n他們的巡邏隊和補給隊比我預料中的還要大膽。\n我希望你去消滅{reg1}隊 {s13}，教會他們什麼叫做恐懼。
-qstr_{s9}_asked_you_to_el|{s9} 希望你去消滅 {reg1}隊{s13}。
-qstr_{s9}_asked_you_to_fr|{s9}要 你 從 近 郊 一 隻 狂 暴 食 人 妖 的 威 脅 下 解 救 {s13}。 
-; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
-qstr_the_Dwarves_so_that_|矮人使用的貨幣，如果你途徑鐵丘陵或孤山的話，你可以試著用傳說中的矮人武器武裝自己
-qstr_Gondor_so_that_if_yo|剛鐸使用的貨幣，如果你途徑他們的領土的話，你可以試著購買一些他們遠近聞名的護甲
-qstr_Rohan_so_that_if_you|洛汗使用的貨幣，如果你途徑他們的領土的話，你可以試著購買一些他們傳說中的戰馬
-qstr_Dale_so_that_if_you_|河谷鎮使用的貨幣，如果你途徑他們的領土的話，你可以試著購買一些他們遠近聞名的戰弓
-qstr_Without_my_help_you_|沒有我的幫助，你們都會躺在那裡被燒死！\n我接到薩魯曼和艾辛格的呼喚。\n穿越我，你會有危險！
-qstr_Without_my_help_you_w|如果沒有我的幫助，你們都會死！\n我來接聽魔多之王的召喚，他將很快成為全世界的主。
-qstr__*snort*_There_is_on|*snort* 世界只有一位主，人渣。\n 不久後，你會回答路格布爾茲，弱者！
-qstr_*snort*_Another_one_|*snort* 另一個為肉盾，吃箭！\n走開，懦夫。我們對你毫無用處。
-qstr_Go_to_Moria_and_get_|去摩瑞亞，為自己找一個漂亮的座狼 - 或者你自己的一些奴隸，如果你願意的話！
-qstr_Go_to_Isengard_and_g|去艾辛格，為自己買點東西 - 也許一些戰鬥強獸人會跟著你！
-qstr_Go_up_north_to_Gunda|往北走到剛達巴山 - 他們愚蠢和醜陋，但他們皮毛很好。
-qstr_Get_some_snagas_of_y|找些你自己的奴隸，像這裡跟著我的人一樣也許你很快就會有自己的軍隊了！
-qstr_Our_friends_and_alli|我們的朋友和盟友會聽到你的消息，不要懷疑！\n也許他們願意給你新的坐騎，或者一把刀。\n沒有人有時間幫助弱者，但如果你是強者，哈。\n交易一些好的馬，也許，和那些Rhûn的人一起騎馬或吃飯，\n你的選擇，哈！
-qstr_Trade_some_of_those_|交易一些好的馬，也許，和那些Rhûn的人一起騎馬或吃飯，\n你的選擇，哈！
-qstr_That_is_not_a_smart_|在一名盧恩戰士面前說這種話可不明智......下次我見到你，我一定會幹掉你。
-qstr_They_will_all_know_m|他們都將知曉我的名號......  他們也將知曉何為恐懼
-qstr_Suilad_mellon!_It_is|向你致敬，我的朋友！來自瑞文戴爾的朋友在我們的國度可不常見。\n感謝群星對你的指引讓你前來幫助我們。謝謝！
-qstr_Suilad_mellon!_It_is_|！向你致敬，我的朋友我們的木精靈表親能前來幫助我們真的很少見辛達林語：謝謝！
-qstr_Suilad_mellon!_That_|Suilad, mellon! 在通用語中的含義是 - ！。！向你致敬，我的朋友^^一開始我不確定屋外究竟是一柄哥布林人馬刀，還是一頭憤怒的公熊哎感謝群星將你帶到了我的面前。
-qstr_Alas_it_is_not_a_ple|哎，我還有其他人來這裡並非是為了遊歷...
-qstr_You_wouldn_t_have_ne|如果你堅持關閉國境的話你是得不到我們的援助的！
-qstr__*growl*_I_know_your|（吼！我知道你在說什麼，精靈，至少足夠清楚你是在嘲諷我還是在感謝我...
-qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen (辛達林語：我想說什麼均可，而你卻聽不懂我在說什麼)深度是我主的設計，非所有人能見能明。
-qstr_Alae!_Our_green_wood|好 勒! 我 們 的 巨 綠 森 有 重 兵 巡 邏，我 們 的 大 門 依 然 聳 立，瑟 蘭 督 伊 王 的 殿 堂 很 安 全。建 議 你 們 學 學 我 們 的 典 範。
+qstr_Taking_{reg0}_inf._A|拿 {reg0} inf. Alt?={reg1}
+qstr_You_spent_{reg0}_of_|你使用了對{s1}的{reg0}影響力。還剩下{reg1}。
+qstr_The_War_is_over_{pla|戰爭已經結束了，{playername}，你沒聽說嗎？
+qstr_We_are_at_war_with_{|我們正在與{s12}交戰。但，作戰的重點主要還是在{s13}上。
+qstr_We_are_at_war_with_{s|我們正在與{s12}交戰。但，目前只有小規模衝突。
+qstr_we_are_not_too_conce|我們目前沒工夫理他們，因為我們正在與離家園更近的敵人作戰。
+qstr__under_your_orders|，聽從你的指揮。
+qstr_{playername}_you_may|{playername}，你可能已經看過{s7}的大軍。在所有跟我們對立的隊長們之中，目前最負盛名的是來自{s8}的{s7}。他們僅僅出現在戰場上就足以壯我們敵方的膽和削弱我們盟友的決心。{playername}，如果你想在這場戰爭中有一番作為，則在戰鬥中，公然擊敗{s7}的大軍吧！這樣的話希望將被重新點燃，並讓恐懼填滿我們對手的心。
+qstr_Do_you_mark_how_our_|你知道當提到來自{s8}的{s7}時我們最勇敢的鬥士們是如何動搖的嗎？他是一個偉大的戰士，哦是的，一個有能的隊長。我們不能放著不管！無論他們在哪出面，我們的戰線就會後退，我們的敵人就會找到新的勇氣。這可不行。我命令你，{playername}，在戰鬥中公然挑戰並擊敗{s7}的士兵。看到被你擊倒的{s7}將凍結他的追隨者的血液和骨髓，並向我們自己的部下展示敵人是可以被打倒的！
+qstr_This_is_a_chance_for|這是個展現我實力的機會。 我將在敵方和盟友的注目下擊敗{s7}。
+qstr_Accursed_be_those_wh|讓我們今天詛咒那些跟隨{s7}的人，因為我要讓大家好好看著他們被擊倒的樣子！。
+qstr_{s9}_wants_you_to_de|{s9}要你在戰鬥中擊敗來自{s36}的{s35}。
+qstr_I_humbly_ask_that_yo|我謙卑地求你找別人執行這個任務。我不認為自己能在戰鬥中勝過{s7}。
+qstr_Mercy_I_crave!_To_fa|發點慈悲吧，我求求你了！ 在戰鬥中公然面對{s7}是件大蠢事！我做不到啊！
+qstr_strong_warriors_from|來自{s7}的強大戰士們
+qstr_champions_from_{s7}_|戰場上的最強者，來自{s7}的冠軍勇士們
+qstr_{playername}_the_men|{playername}，我們的人聽說了關於敵方部隊之兇猛的傳聞。而這些駭人的故事正在使士氣低落。我要你讓他們知道其實沒什麼好怕的。我要你挑戰並擊敗{reg22}名{s6}。
+qstr_{playername}_I_want_|{playername}，我要你展示給我們的人看看敵方部隊有多麼的無足輕重。我要你親自斬殺{reg22}名{s6}！證明我們才是強大的一方！
+qstr_I_will_do_what_you_a|我會照著你的要求做，而人們將會見證的。
+qstr_high_level_troops_fr|高等級部隊
+qstr_elite_level_troops_f|精英等級部隊
+qstr_{s9}_wants_you_to_pe|{s9}要你親自擊敗{reg22}名來自{s7}的{s6}。
+qstr_I_want_you_to_person|我要你親自斬殺
+qstr_I_want_you_and_your_|我要你和你的人馬去殺
+qstr_{playername}_you_nee|{playername}，你需要贏得我和你手下的敬重。{s6}{reg22}名來自{s7}的部隊！
+qstr_{s9}_wants_you_to_per|{s9}要你親自去殺{reg22}名{s6}的部隊。
+qstr_{s9}_wants_you_and_y|{s9}要你和你的手下去殺{reg22}名{s6}的部隊。
+qstr_{playername}_we_have_|{playername}，我們收到了嚴峻的消息。昂巴的海盜變得越來越大膽，在我們說話的同時，一支艦隊正在離{s6}不遠處聚集。他們沿著海岸線打劫，很快就會到達城市本身了。我們必須在艦隊抵達城市前攔截它。快點前往{s6}，剩下的則跟地方當局談吧。
+qstr_{playername}_we_have_r|{playername}，我們收到了嚴峻的消息。盧恩的蠻族比我們想像的更加狡猾和大膽-躲過我們斥候的偵測，他們建造了足夠的船隻和木筏來穿越長湖，並會直接對長湖鎮發起攻勢！我們必須在艦隊抵達城市前攔截它。帶領你的部隊盡可能迅速的到那裡，把野蠻人趕回湖泊的另一邊吧！
+qstr_If_you_seek_pillage_|如果你想要燒殺擄掠，這會是個錯過就沒了的好機會喔，{playername}。一支海盜的艦隊正從{s7}的港口出發，並將一路航向{s6}，其本身充滿著甜美的果實等著摘採！加入他們的進攻，好好享用戰利品吧！
+qstr_The_soft_weaklings_o|{playername}，長湖鎮的弱者們無法匹敵我們迅速的騎兵和勇猛的戰士。這是眾所皆知的。躲在湖泊的對面，長湖鎮的人以為自己很安全，但我們很快就會給他們一個驚喜！^^我們造了足夠的船隻，和木筏，來穿越大湖。他們絕對料想不到的！^^如果你想加入襲擊，那就前往主營地並跟營地指揮官談吧。
+qstr_{s9}_asked_you_to_he|{s9}要你幫助保衛{s3}免受海盜襲擊。趕緊前往城市與公會長交談，並向當地的駐軍提供援助吧。
+qstr_{s9}_asked_you_to_hel|{s9}要你幫助保衛長湖鎮免受海軍侵襲，以及，所有盧恩搞出來的鬼。趕緊前往湖畔之城與公會長交談，並向當地的駐軍提供援助吧。
+qstr_{s9}_offered_you_an_|{s9}為你提供了加入海軍襲擊{s3}的機會。前往{s4}，與營地指揮官交談，並加入進攻吧。
+qstr_{s9}_offered_you_an_o|{s9}為你提供了加入海軍襲擊長湖鎮的機會。前往{s4}，與營地指揮官交談，並加入進攻吧。
+qstr_We_will_go_as_swiftl|我們會盡快趕去，但願我們不會太遲。
+qstr_We_shall_plunder_the|我們將掠奪他們的港口並把他們的財富據為己有！
+qstr_We_shall_plunder_the_|我們將掠奪湖畔之城並把他們的財富據為己有！
+qstr_I_m_sorry_but_we_can|對不起，但我們現在無法援助他們。
+qstr_Bah!_Far_more_glory_|呸！在其他地方能贏得的榮耀遠遠超過微不足道的海盜勾當。
+qstr_This_raid_does_not_i|我對這次襲擊不感興趣。我會在其他地方贏得榮耀。
+qstr_{s9}_asked_you_to_de|{s9}要你摧毀{s1}附近的斥候營地。
+qstr_Your_party_must_be_at|你的隊伍至少要有10人才能開始這個任務
+qstr_{s9}_asked_you_to_def|{s9}要你保衛{s1}附近遭受攻擊的村莊。
+qstr_{s9}_asked_you_to_ra|{s9}要你襲擊{s1}附近的一個村莊。
+qstr_These_soldiers_may_w|這些士兵搞不好會在我的計劃中扭轉局勢，{playername}。我相信你把他們訓練得很好。感謝並讚美你。
+qstr_I_wish_you_had_train|我原本希望你能把他們都訓練好，{playername}。但在這邪惡的時代，也只能有多少算多少吧。
+qstr_Good_work_in_shaping|塑造那些新兵辛苦了，{playername}，你還蠻能幹的。但願這些士兵能比上一批活更久，不然就要再找你來了。
+qstr_Is_that_all_you_coul|{playername}，你就這麼一點本事？這些連補充昨天的損失都不夠啊。算了把他們帶來！
+qstr_Well_the_soldiers_ar|好了，先生，這些士兵現在歸你指揮了。我相信你會好好照顧他們的。
+qstr_Well_you_may_do_as_y|好的，你請便。我和我的同伴隨時可以效勞。
+qstr_{s9}_asked_you_to_br|{s9}要你為他的軍隊帶回一隻兇猛的食人妖。
+qstr_{s9}_asked_you_to_fi|{s9}要你去找出法貢森林發生了什麼事，並且回報。
+qstr_{s9}_asked_you_to_fin|{s9}要你去尋找矮人爲布拉多辛王打造的失落長矛。你需要得到{s5}的許可在孤山的深處尋找長矛。
+qstr_{s9}_has_asked_you_t|{s9}要你去斬殺位於幽暗密林的多爾哥多巫師
+qstr_{s9}_asked_you_to_ta|{s9}要你送信給{s13}。你接受這個任務時聽說{s13}曾在{s4}。
+qstr_{s9}_asked_you_to_tak|{s9}要你送信給來自{s15}的{s13}。你接受這個任務時聽說{s13}曾在{s4}。
+qstr_{s11}_asked_you_to_e|{s11}要你護送他的信使到{s14}。
+qstr_Lend_your_experience|把你經驗豐富的軍醫{s3}借給{s1}。
+qstr_No_commander_should_|這件事對於一名指揮官來說真是難以啟齒，{playername}，但我前幾天視察的時候竟然發現我的一些士兵分不清楚劍的前後。我希望有人能向他們展示何為英勇。{playername}，你是一位享譽盛名的戰士。你能幫我訓練一些士兵嗎？我將由衷的感激你。
+qstr_No_commander_should_h|這件事對於一名指揮官來說真是難以啟齒，{playername}，但我前幾天視察的時候才剛處決了一些無能的士兵。他們需要有人把鐵的紀律打進他們的骨子裡，即使在嘗試中弄死他們也行。{playername}，你是一位享譽盛名的戰士。你能幫我訓練一些士兵嗎？我會付你高額回報的。
+qstr_{s9}_asked_you_to_rai|{s9}要你訓練{reg1}位{s14}並帶給他。
+qstr_{s9}_asked_you_to_hu|{s9}要你去獵殺亡命的{s4}。據說他目前在{s3}。
+qstr_{s9}_asked_you_to_defe|{s9}要你保衛3組前往{s3}的難民。
+qstr_{s9}_asked_you_to_hun|{s9}要你去獵殺3組前往{s3}的難民。
+qstr_{s9}_asked_you_to_ca|{s9}要你把三組逃跑的奴隸帶回{s4}，活的。他說這三組人全都逃向了{s3}。
+qstr_{s11}_asked_you_to_f|{s11}要你跟蹤將要離開{s12}的間諜。你必須小心不要在途中被間諜發現，否則他可能會產生懷疑并返回。一旦間諜和同夥會面，你就把他們抓起來給{s11}。
+qstr_{s11}_asked_you_to_c|{s11}要你俘虜一名敵方指揮官並帶回給{s11}審訊。
+qstr_{s9}_asked_you_to_le|{s9}要你把你的同伴{s3}借給他一週。
+qstr_{s9}_has_requested_y|{s9}請求你帶{reg1}個敵方俘虜給他。
+qstr_We_have_reports_that|我們收到報告說同盟的幾隻巡邏隊被敵軍伏擊了。他們中的一些人可能還活著，並被敵軍俘虜。現在，我方部隊的士氣低沉，因為被俘的人馬大概會被關押、處決甚至遇到更糟的待遇。我想要你解救{reg1}名俘虜，以振奮我方部隊的士氣。
+qstr_We_have_reports_that_|我們收到報告說我們的幾隻巡邏隊被敵軍伏擊了。其中的一些懦夫可能還活著，並被敵軍俘虜。即使作為消耗品，讓他們死在隨便的監獄地洞裡實在浪費。我想要你解救{reg1}名俘虜，然後讓他們再次為我們而戰。
+qstr_{s9}_has_asked_you_to|{s9}要你去解救{reg1}名囚犯。
+qstr_We_have_reports_that_a|我們收到報告說有批敵方大軍正集結於{s13}。明顯的，我對此很擔憂，畢竟我不知道他們有多少部隊也不知道我的士兵是否能面對他們。我想要你盡可能的靠近{s13}，並找出一切有用的情報。
+qstr_My_spies_tell_me_of_|我的間諜告訴我說有一大群戰士正集結於{s13}。雖然他們鐵定無法跟我們和我們的僕人抗衡，但能知道他們的人數也無傷大雅。我想要你能盡可能的靠近{s13}，並找出一切有用的情報。
+qstr_{s9}_asked_you_to_sco|{s9}要你去偵察{s13}。 
+qstr_We_have_reports_of_s|我們收到報告說{s13}附近有敵軍活動的跡象。但我方斥候目前仍無法靠近偵查那個地區。我要你組織一隊斥候，並儘可能的靠近{s13}，然後把斥候派出去。我也會給你一些新兵，但你不應該讓他們單獨出發。
+qstr_My_spies_tell_me_the|我的間諜告訴我說敵軍正在{s13}計畫些什麼。但我們那些膽小的斥候們仍無法靠近找出重要的情報。我要你招募自己的斥候隊伍，並儘可能的靠近 {s13}，然後將他們留在那裡。確保他們不會轉身逃跑！這些新兵給你，死了就算了。
+qstr_{s9}_asked_you_to_di|{s9}要你在{s13}附近派遣一隊斥候。^準備{reg1}名{s15}的士兵，其中至少要有1名{s14}，靠近{s13}並和{s14}談話以派出隊伍。
+qstr_We_need_to_take_the_|我們要把戰鬥帶給敵人，{playername}。目前，我們可以攻擊他們的巡邏隊和情報網絡。我要你去消滅{reg1}支{s13}隊伍，這將讓我們奪得先手。
+qstr_We_need_to_grind_dow|我們要把一文不值的敵人碾碎，{playername}。他們的巡邏和補給隊比我喜歡的還要大膽。我要你去消滅{reg1}支{s13}隊伍，教教他們什麼叫恐懼。
+qstr_{s9}_asked_you_to_el|{s9}要你去消滅{reg1}支{s13}隊伍。
+qstr_{s9}_asked_you_to_fr|{s9}要你從一隻狂暴食人妖的威脅下解放{s13}近郊。
+qstr_{reg1}_{s16}_joined_|{reg1}名{s16}加入了你的隊伍。
+qstr_the_Dwarves_so_that_|矮人當地使用的貨幣，所以如果你途經孤山或鐵丘陵，你可以試著用傳聞中的矮人武器武裝自己
+qstr_Gondor_so_that_if_yo|剛鐸當地使用的貨幣，所以如果你途經他們的土地，你可以試著購買一些他們遠近馳名的鎧甲
+qstr_Rohan_so_that_if_you|洛汗當地使用的貨幣，所以如果你途經他們的土地，你可以試著購買一些他們傳聞中的馬匹
+qstr_Dale_so_that_if_you_|河谷鎮當地使用的貨幣，所以如果你途經他們的土地，你可以試著購買一些他們遠近馳名的弓
+qstr_Without_my_help_you_|沒有我的幫助你們全都會倒在那裡被燒成灰！^^我受到來自艾辛格的，薩魯曼的召喚。敢惹我你就死定了！
+qstr_Without_my_help_you_w|沒有我的幫助你們全都會倒在那裡被燒成灰！^^我受到來自魔多之主的召喚，他很快就是世界之主了。
+qstr__*snort*_There_is_on|*從鼻孔出氣*渣滓，世界之主只能有一個。不久，你將臣於黑邪塔，弱者呦！
+qstr_*snort*_Another_one_|*從鼻孔出氣*又來一個用來擋箭的，肉盾！走開，弱者。你對我們毫無用處。
+qstr_Go_to_Moria_and_get_|去摩瑞亞，為自己弄隻漂亮的座狼-或一些自己的奴隸，隨便你！
+qstr_Go_to_Isengard_and_g|去艾辛格，為自己弄點東西-也許一些戰鬥強獸人會跟著你！
+qstr_Go_up_north_to_Gunda|北上，去剛達巴-他們，又蠢又醜，但他們有不錯的皮毛。
+qstr_Get_some_snagas_of_y|弄些你自己的奴隸，就像那些跟著我的人。也許你很快就會有一支屬於自己的戰隊了！
+qstr_Our_friends_and_alli|我們的朋友和盟友都會知道你的大名，別懷疑！他們大概會願意給你新的坐騎，或是新的刀。沒人有時間管弱者，但如果你是強者，哈，我們會幫助能幫我們的人，懂嗎？也許，和那些盧恩人，拿戰利品換好馬-拿來騎或拿來吃，任你選擇，哈！
+qstr_Trade_some_of_those_|也許，和那些盧恩人，拿戰利品換好馬-拿來騎或拿來吃，任你選擇，哈！
+qstr_That_is_not_a_smart_|在一名盧恩戰士面前說這種話可不明智...下次我再見到你時，我會幹掉你的。
+qstr_They_will_all_know_m|他們都將知曉我的名號...他們都將知曉何為恐懼
+qstr_Suilad_mellon!_It_is|你好，朋友！來自隱密之谷的人在我們的國度可不常見。感謝星辰指引讓你前來幫助我們，也感謝你-謝謝！
+qstr_Suilad_mellon!_It_is_|你好，朋友！我們林地的親屬前來幫助我們真是少見-謝謝！
+qstr_Suilad_mellon!_That_|Suilad, mellon!我是說-你好，朋友！^^剛開始我還不確定究竟是一柄哥布林軍刀，或是一頭憤怒的熊會成為我們的末日。還好，星辰之善將你送來援助我們。
+qstr_Alas_it_is_not_a_ple|可惜，並不是單純遊歷或美好的理由將我和其他效忠領主愛隆者帶來這片土地的。
+qstr_You_wouldn_t_have_ne|如果你們好好封鎖邊境的話就不會需要我們的援助了！
+qstr__*growl*_I_know_your|(*低吼*我知道你的語言，精靈，至少足夠分清楚你是在嘲諷還是在感謝我...
+qstr_Istan_quete_ya_merin|我想說什麼都行，你不會懂的。吾主計謀之深，並非所有人都能明白。
+qstr_Alae!_Our_green_wood|看吧！我們的巨綠森有重兵巡邏，我們的大門依然聳立，瑟蘭督伊王的殿堂很安全。建議你們學學我們的典範。
 qstr__say_nothing_|(什麼也不說)
-qstr_Alas_it_is_not_a_plea|哎，我還有其他人來這裡並非是為了遊歷。\n來自遠古的邪惡征服了整個黑暗，現在他又向光明探出了魔掌。\n白手在山的另一邊回應了他，而瑞文戴爾的主人們正趕往戰場，幫助北方的戰鬥。
-qstr_You_wouldn_t_have_nee|如果你堅持關閉國境的話你是得不到我們的援助的深林女巫的故事只能嚇跑糊塗的蠢蛋！ - 而非我們剛剛拜託的污穢的半獸人。
-qstr_*growl*_I_know_your_|吼！我知道你在說什麼，精靈，至少足夠清楚你是在嘲諷我還是在感謝我。^^群星與我的到來無關，我是循著線索和半獸人身上難聞的氣味找到這裡的。我現在開始懷疑，在你危機的時刻殺死他們是否是一個好注意了。
-qstr_Keep_your_secrets_th|吾友，黃金森林微風中的細語已告知了你的到來。^^職責所在，雖然凱蘭崔爾女士應早已知曉，但我會通知她埃爾隆德大人軍隊的到來。至於你，我 希望能把你介紹給黃金森林的人民們。 \nLe maethor veleg a gornui(辛達林語：你是一位強大勇敢的戰士)！你的勇氣與善行應當被知曉。\n歌唱的黃金谷(羅斯洛立安別名)將永遠是你最堅強的後盾。
-qstr_We_walk_under_the_su|我們喜歡在陽光和星空下，住在洞穴裡不是我們的願望。\n儘管如此，你的意見也很受歡迎。\n你的智慧和勇敢的行為將被知道，只要你漫步到我們的領域，你的需求就會得到滿足。
-qstr_*he_sighs_and_smiles|*他輕嘆了一聲並微微一笑* ^^好吧，由於有著共同的目標，我們願意分享我們有的一切，即使你的言辭其實並沒有打動我。
-qstr_For_some_months_we_h|在過去的數月裡，獸人伐木隊的規模翻了五倍。^^職責所在，雖然凱蘭崔爾女士應早已知曉，但我會通知她埃爾隆德大人軍隊的到來。至於你， 我希望能把你介紹給黃金森林的人民們。^^ Le maethor veleg a gornui(辛達林語：你是一位強大勇敢的戰士)！你的勇氣與善行應當被知曉。歌唱的黃金谷(羅斯洛)立安別名)將永遠是你最堅強的後盾。
-qstr_Calm_yourself_friend|靜，我的朋友.Pedin i phith in aniron，a nin u-cheniathog(辛達林語：我想說什麼均可，而你卻聽不懂我在說什麼。)^^我希望能把你介紹給黃金森林的人民們。你的勇氣與善行應當被知曉。黃金谷（羅斯洛立安別名）陽光照耀處，我們都與你同在。...
-qstr_Stars_sail_through_t|群星行於天海，人們腳踏大地。何人能知眾人的命運是否匯聚？我希望能把你介紹給黃金森林的人民們。你的善行應當被知曉。每當你循著星光來到黃金谷(羅斯洛立安別名)的時候，我們都與你同在。
-qstr__RESOURCE_POINT_TUTO|（資源點教程）^^能在羅斯洛立安用於交易的資源點和你在初始派系取得的資源點不同，你要在羅斯洛立安取得當地派系的資源點以便與當地人交易。^^查看報告菜單獲取更多消息。
-qstr__RESOURCE_POINT_TUTOR|(資 源 點 教 學)^^ 你 可 以 用 來 從 比 翁 人 購 買 物 資 的 資 源 點 與 你 在 羅 斯 洛 立 安 中 獲 得 的 點 數 不 同，而 是 你 能 在 比 翁 才 能 獲 得 的 點 數。 ^^詳 情 請 參 閱 報 告。
-qstr_I_have_long_wished_t|我很久以前就想來拜訪木精靈了....
-qstr_What_form_shall_the_|羅斯洛立安是什麼樣的...
-qstr_Our_bees_make_honey_|我們的蜜蜂製作蜂蜜和蜂蠟，我們的牛群提供牛奶，黃油和芝士。
-qstr_I_have_long_wished_to|我很久以前就想來拜訪幽暗密林了，嚐嚐精靈餅乾，聽聽你們的歌唱！^^我帶著黃金氣泡酒以及滿是塵土和榮耀的古老戰旗作為我對瑞文戴爾的回憶，但我很好奇我能在Laurelindórenan(辛達林語：歌唱的黃金谷 - 羅斯洛立安)發現什麼獨一無二的奇景。
-qstr_What_form_shall_the_f|羅斯洛立安是什麼樣的？^^黃金在第二天早晨會變成樹葉？清澈無味的水和多屑的仙女麵包？^^血紅色的葡萄酒，新獵的鹿，充滿銳利箭矢長 矛的軍械庫！這才是我想要的待客方式。
-qstr_Our_bees_make_honey_a|我們的蜜蜂製作蜂蜜和蜂蠟，我們的牛群提供牛奶，黃油和芝士。^^麵包我們自己製作，銳利的戰斧我們與路過矮人交易獲得。^^除了一雙健壯的雙手之外，我還需要什麼呢？
-qstr_If_fate_wills_it_I_s|循著命運的指引，我將再次踏上你的土地，探尋它的所有秘密。
-qstr_If_I_ever_have_need_|若我將來真有需要羅斯洛立安幫助的地方，定會不吝登門。
-qstr__nod_and_say_nothing|(點頭但保持沉默)
-qstr_Oh_there_are_many_an|哦，有許多羅斯洛立安的朋友歡迎這些禮物！^^\n如果我們再次肩並肩地站在戰場上，或者你聽從我們的夫人和她的領主的命令，我們的人民將以你所需要的一切來報答你的恩情——明亮的武器、堅硬的盔甲、白羽的箭和為你的部隊準備的補給。\n誰知道，你可能會成為羅斯洛立安的一位偉大的{主人/女士}，一個可以為他人提供建議或者向他們尋求幫助的人。
-qstr_The_joys_of_the_Gold|黃金谷(羅斯洛立安別名)的歡樂很多，它隨時向著朋友們開放！^^若我們再次肩並肩的奮戰於戰場，亦或是你完成凱蘭崔爾女士和她手下領主的任務，我們 的人民都將因你的善意滿足你的需求：閃光的武器，堅硬的鏈甲，鋒利的羽箭和士兵的食糧。^^誰也不知道，未來某日你是否會成為羅斯洛立安的一位偉大{領主/女領主}。
-qstr_Our_Golden_Valley_gi|黃金谷(羅斯洛立安別名)有大量物資提供給朋友們。^^若我們再次肩並肩的奮戰於戰場，亦或是你完成凱蘭崔爾女士和她手下領主的任務，我們的人民滿足你的需求，以感謝你遠離家鄉前來幫助的善意。
-qstr_I_shall_keep_that_in|我會記住這點的。^^ Hantanyel，ávaamárië！(辛達林語：感謝你，再見！)
-qstr_That_may_be_so_some_|當是如此，路途總有彎曲。^^ Boe i'waen！(我要走了！)
-qstr_I_seldom_wander_far_|我很少離家很遠，但請快些，那裡四處遊蕩的獸人可能越來越多了。
-qstr_Who_are_you?_A_mere_|你是誰？一個 {s25}？\n我沒有時間為你這樣的人！ 讓我一個人待著！{s2}
+qstr_Alas_it_is_not_a_plea|可惜，並不是單純遊歷或美好的理由將我和其他效忠領主愛隆者帶來這片土地的。黑暗之中來自遠古的邪惡向光明伸出了魔掌。智者們自山的另一頭回應了召喚而伊姆拉崔的大軍正邁向戰場，去幫助北方的戰鬥。
+qstr_You_wouldn_t_have_nee|如果你們好好封鎖邊境的話就不會需要我們的援助了！^^森林女巫的故事只能嚇跑糊塗的蠢蛋-而不是我們剛剛斬殺的污穢半獸人。
+qstr_*growl*_I_know_your_|*低吼*我知道你的語言，精靈，至少足夠分清楚你是在嘲諷還是在感謝我。^^跟星辰無關-我是跟著半獸人身上污穢的氣味而來。不管你有沒有危險我都會斬殺他們的。
+qstr_Keep_your_secrets_th|想保密也行，朋友，黃金森林的細語已告知了你們親屬的到來。^^我們會通知凱蘭崔爾女士關於領主愛隆的抵達，雖然她大概已經知道了。然後我們也會向自己的同胞，談起你的事情。^^你是一位強大和勇敢的戰士！你的英勇與善行應被知曉而歌之黃金谷也將滿足你的需求。
+qstr_We_walk_under_the_su|我們行走在日光和星辰之下，住在洞穴裡並不是我們的願望。儘管如此，也還是歡迎你善良的意見。你的智慧和勇敢善行應被知曉，我們的領域也將滿足你的需求
+qstr_*he_sighs_and_smiles|*他輕嘆並微微一笑*^^好吧，有著共同的目標我們願意分享一切，即使你似乎來自無言之處。
+qstr_For_some_months_we_h|過去的數個月中我們注意到汙穢的半獸人增加並汙染了我們的樹林。^^我們會通知凱蘭崔爾女士關於領主愛隆的抵達，雖然她大概已經知道了。然後我們也會向自己的同胞，談起你的事情。你是一位強大和勇敢的戰士！你的英勇與善行應被知曉而歌之黃金谷也將滿足你的需求。
+qstr_Calm_yourself_friend|冷靜，朋友。吾言可，君不知。^^我們會向自己的同胞談起你的事情。你的英勇與善行應被知曉，黃金谷的光芒也將滿足你的需求。
+qstr_Stars_sail_through_t|星辰行於天海，人們腳踏大地。說真的，誰能知曉命運的交會？我們會向自己的同胞談起你的事情。你的善行應被知曉，黃金谷的星光也將滿足你的需求。
+qstr__RESOURCE_POINT_TUTO|(資源點教學)^^能跟羅瑞安人買東西的資源點和你在原陣營取得的資源點不同，你得在羅斯洛立安當地取得新的。^^查看報告以獲得更多資訊。
+qstr__RESOURCE_POINT_TUTOR|(資源點教學)^^能跟比翁人買東西的資源點和你在羅斯洛立安取得的資源點不同，你得在比翁當地取得新的。^^查看報告以獲得更多資訊。
+qstr_I_have_long_wished_t|我很久以前就想來拜訪林地的人們了...
+qstr_What_form_shall_the_|羅瑞安的回禮是什麼形式的...
+qstr_Our_bees_make_honey_|我們的蜜蜂製作蜂蜜和蜂蠟，我們的牛群提供牛奶、奶油和起司。
+qstr_I_have_long_wished_to|我很久以前就想來拜訪林地的人們了，品嚐你們的蘭巴斯和歌曲！^^我們帶著金黃的氣泡酒、充滿灰塵的書籍和引以為傲的古老戰旗來緬懷我們溪澗悠悠的河谷，但我也很好奇能在歌之黃金谷看見什麼獨特的奇景。
+qstr_What_form_shall_the_f|羅瑞安的回禮是什麼形式的？^^第二天早晨會變成樹葉的黃金？給我的部下清澈但無味的飲品和多屑的妖精麵包？^^血紅的葡萄酒、新鮮獵到的鹿、充滿尖銳長槍和鋒利箭矢的軍械庫！這才是我喜歡的待客之道。
+qstr_Our_bees_make_honey_a|我們的蜜蜂製作蜂蜜和蜂蠟，我們的牛群提供牛奶、奶油和起司。^^麵包我們可以自己製作，銳利的斧頭我們能跟路過的矮人交易取得。^^除了一雙健壯的雙手之外，我還需要什麼呢？
+qstr_If_fate_wills_it_I_s|如果這是命運，我將再次踏上你的土地，並探索它的所有秘密。
+qstr_If_I_ever_have_need_|若我將來真有需要羅瑞安的幫助，我會再來，無論是什麼樣的。
+qstr__nod_and_say_nothing|(點頭並保持沉默)
+qstr_Oh_there_are_many_an|噢，我們有給許許多多羅瑞安之友的禮物！^^如果我們再次並肩作戰，或者你聽從我們的女士和她底下領主們的命令，我們的同胞將以你所需要的一切來報答你的善意-閃亮的武器、堅硬的鎖甲胸衣、白羽的箭和你部隊的補給。^^誰知道，你可能會成為羅斯洛立安的一位偉大的{領主/女領主}，一個可以向他人提供建議，或者向他們欠人情的人。
+qstr_The_joys_of_the_Gold|黃金谷有很多歡樂也隨時向羅瑞安之友開放。^^如果我們再次並肩作戰，或者你聽從我們的女士和她底下領主們的命令，我們的同胞將以你所需要的一切來報答你的努力-閃亮的武器、堅硬的鎖甲胸衣、白羽的箭和你部隊的補給。^^誰知道，你可能會成為羅斯洛立安的一位偉大的{領主/女領主}，一個可以向他人提供建議，或者向他們欠人情的人。
+qstr_Our_Golden_Valley_gi|我們的黃金谷有大量物資提供給羅瑞安之友。^^如果我們再次並肩作戰，或者你聽從我們的女士和她底下領主們的命令，我們的同胞將以你所需要的一切來報答你遠離家鄉前來幫助的努力。
+qstr_I_shall_keep_that_in|我會記住的。^^感謝你，再見！
+qstr_That_may_be_so_some_|當是如此，路途總有曲折。^^ 我先走了！
+qstr_I_seldom_wander_far_|我很少離家很遠。走吧，盡可能快點。附近可能還有更多哥布林在遊蕩。
+qstr_Who_are_you?_A_mere_|你是誰？區區{s25}？我可沒時間管你種人！滾開！{s2}
 qstr_What_do_you_want?|你想要什麼？
-qstr_Greetings_{playernam|問候，{playername}。 我能為你做什麼？
-qstr_What?_You_come_to_me|什麼？ 你來找我，你不知道我在做什麼？\n看看你周圍。\n你看到了血嗎？ 你聽到了哭泣嗎？你感受到了他們的痛苦嗎？\n這就是我做的！ 我打破了一些東西讓它們再次變得更好！\n如果你來到我身邊，破碎而痛苦，我可以讓你變得更好！
-qstr_I_am_a_healer._Come_|我是治療師。\n當你或你的同伴嚴重受傷時來找我，我會盡我所能來醫療你的傷勢。
-qstr__Costs_500_Resource_|(花費 500 資源點，5 影響力)
-qstr_Ha!_I_can_see_that!_|哈！ 我知道！\n我能做到，是的......  除了你的血，這不是免費的！{s2}
-qstr_Yes_I_see_that._We_c|是的，我明白了。\n我們可以照顧你是的，但我需要送一些原料。{s2}
-qstr__Costs_1000_Resource_|(花費 1000 資源點，10 影響力)
-qstr_I_ll_have_my_worms_d|我會讓我的蠕蟲與你打交道。\n他們不是最好的，但有時他們能完成工作。\n告訴我你什麼時候需要它們。{s2}
-qstr_I_ll_have_my_assista|我會讓我的助手照顧你們的人。\n他們還在學習，所以請容忍他們。\n如果你需要請告訴我。{s2}
-qstr_Alright!_Worms!_Get_|好吧！蠕蟲！聽我說，處理好這件事！
-qstr_Let_us_begin._My_ass|讓我們開始吧。\n我的助手會照顧你和你的人。
-qstr_All_done!_Ha!_You_di|都做完了！哈！\n你沒有尖叫，令人印象深刻！\n現在走吧，讓我走吧。
-qstr_We_ve_done_what_We_c|我們已經做到了。\n現在你和你的人需要休息一下。
-qstr_Boss_the_lads_are_hu|老闆，小伙子們都餓了！\n我們都在努力工作，但還是很餓！
-qstr_Master_the_lads_are_|主人，小伙子們都餓了！\n我們不能空著肚子去作戰！
-qstr_Yes!_With_proper_fed|對！\n適當餵食肚子，我們也會為您服務兩次！
-qstr_As_you_command_maste|主人，遵命，呵呵。\n伙計們，肉又出現在菜單上了！
-qstr_Your_Orcs_&_Uruks_at|你的獸人和奇獸人吃了 {reg1} 人！
-qstr_Yes_master!_As_you_c|是的，主人！\n遵命，主人！
-qstr_Harr_harr_harr!_You_|哈，哈，哈！你不要嚇我！下次我們吃的是你！
-qstr_One_{s6}_left_the_pa|一 位 {s6} 離 開 了 隊 伍。
-qstr_I_understand._I_will|我明白。 我會陪著你。 一陣子。
-qstr_I_have_played_my_rol|很長一段時間裡，我扮演了我的角色，對於許多凡人來說都是如此。\n這場戰爭是為了人類的戰鬥。\n我將前往西方，有些人可能會決定跟著我。
-qstr_{reg1}_Veteran_Elves|{reg1} 資 深 的 精 靈 決 定 離 開 你 的 隊 伍。
+qstr_Greetings_{playernam|你好，{playername}。 我能為你做些什麼呢？
+qstr_What?_You_come_to_me|什麼？你來找我你卻不知道我是幹嘛的？看看你周圍。^^你看到血了嗎？ 你聽到哭泣了嗎？你感受到他們的痛苦了嗎？這就是我在幹的！我破壞東西然後讓它們變得更好！如果你來到我身邊時，破碎而痛苦著，我會讓你變得更好的！
+qstr_I_am_a_healer._Come_|我是個治療師。當你或你的同伴嚴重受傷時就來找我吧，我會盡我所能來醫治傷勢的。
+qstr__Costs_500_Resource_|(花費500資源點，5影響力)
+qstr_Ha!_I_can_see_that!_|哈！看的出來！我能做到，是的..除了你的血，都不是免費的！{s2}
+qstr_Yes_I_see_that._We_c|是的，我明白。我們可以照顧你沒錯，但我需要叫人送來一些原料。{s2}
+qstr__Costs_1000_Resource_|(花費1000資源點，10影響力)
+qstr_I_ll_have_my_worms_d|我會讓我的蟲子處理你的事。他們不是最好的，但有時，他們能完成工作。告訴我你想要他們什麼時候過來。{s2}
+qstr_I_ll_have_my_assista|我會讓我的助手照顧你的人馬。他們還在學習，所以請容忍他們。告訴我你想要他們什麼時候過來。{s2}
+qstr_Alright!_Worms!_Get_|好吧！蟲子！過來處理這個！
+qstr_Let_us_begin._My_ass|讓我們開始吧。我的助手會照顧你和你的人馬。
+qstr_All_done!_Ha!_You_di|都做完了！哈！你沒怎麼尖叫，還不錯！現在走吧，滾開。
+qstr_We_ve_done_what_We_c|我們已經盡力了。現在你和你的人馬需要休息。
+qstr_Boss_the_lads_are_hu|老闆，小伙子們都餓了！我們都有努力勞動卻還在挨餓！
+qstr_Master_the_lads_are_|主人，小伙子們都餓了！我們可沒辦法空著肚子去作戰啊！
+qstr_Yes!_With_proper_fed|是的！好好餵飽我們的肚子，我們就會加倍努力服侍你！
+qstr_As_you_command_maste|遵命，主人，呵呵。大伙們，菜單上又有肉啦！
+qstr_Your_Orcs_&_Uruks_at|你的半獸人和強獸人吃掉了{reg1}個人類！
+qstr_Yes_master!_As_you_c|是的，主人！遵命，主人！
+qstr_Harr_harr_harr!_You_|哈哈哈！你嚇不了我的！下次我們吃的就是你了！
+qstr_One_{s6}_left_the_pa|一名{s6}離開了隊伍。
+qstr_I_understand._I_will|我明白了。我會陪著你。一陣子。
+qstr_I_have_played_my_rol|在很長一段時間裡我都扮演著我的角色，甚至超越凡人的好幾輩子。這場戰爭是屬於人類的。我將前往西方而有些人可能會決定跟著我吧。
+qstr_{reg1}_Veteran_Elves|{reg1}資深的精靈決定離開你的隊伍。
 qstr_What_an_amazing_feat|多麼驚人的戰功啊！
 qstr_Well_done!|幹的漂亮！
-qstr_Nice_legwork.|出色的外勤。
-qstr_Heh.|喲
-qstr_Good_moves_but_you_m|進展良好，但你需要做的仍有很多。
-qstr_More_than_half_of_th|超過一半的敵軍，不壞。
+qstr_Nice_legwork.|跑腿跑得好。
+qstr_Heh.|嘿。
+qstr_Good_moves_but_you_m|進展不錯，但你要做的還有很多。
+qstr_More_than_half_of_th|超過一半的對手，不錯嘛。
 qstr_You_ll_need_to_try_h|你應該更努力地嘗試。
-qstr_Well..._better_here_|好吧......  在這兒總比在戰場上好，不是麼？
-; qstr_We_ve_been_sent_by_{|We've been sent by {s3}. We have come to join our strength to yours.
-; qstr_{s3}_has_sent_us_to_|{s3} has sent us, to join the fleet attacking {s4}.
-qstr_Excellent_{playernam|很好，{playername}！\n我聽說你給了他們比我要求的更多的東西。那是件好事。\n在這裡，將此作為超出我們期望的額外獎勵。\n我們需要盡快贏得這場戰爭。
-qstr_Excellent_{playername|很好，{playername}。\n這肯定會幫助他們擺脫困境。\n我們需要盡快贏得這場戰爭。
-qstr_Reinforcing_{s1}_has|加強 {s1} 已加強 {s2}。({s2} 獲得了 {reg50} 派系的力量)
-qstr_The_watchmen_in_the_|該市的守望者報告說，埋伏人數顯著減少。你的工作做得很好。\n謝謝你，{playername}。
-qstr_Our_guards_have_seen|我們的衛兵看見害蟲夾著尾巴逃跑了。\n你在展示我們控制這個地區的害蟲方面做得很好。
-qstr_It_was_nothing._I_wi|沒什麼。如果他們再出現，我會繼續監視。
-qstr_Slaying_these_maggot|殺死這些蛆沒什麼。\n如果他們再膽大一點，我會守株待兔的。
-qstr_town|城 鎮
-qstr_village|村 莊
-qstr_The_{s9}_of_{s13}_ha|{s13} 的 {s9} 希望你能解決掉位於周邊鄉村的獸人部落。
-qstr_{s9}_of_{s3}_asked_y|{s3}的{s9}希望你能在{reg6}天內帶{reg5}單位的{s6}給位於{s4}的{s10}。
-qstr_The_{s9}_of_{s4}_ask|{s4} 的 {s9} 要求你在{reg6}天內至少用{reg5}部隊加強 {s3}。\n和 {s3} 的軍營大師交談。你提供的部隊有多強無關緊要。
-qstr_You_have_reinforced_{|你用0部隊加強了 {s3}。
-qstr_Thank_you_for_offeri|感謝您提供幫助，{playername}。\n來往城市的大篷車被 {s6} 多次襲擊。\n他們在每一次成功伏擊都變得更加勇敢，並且越來越靠近城市。
-qstr_Good_of_you_to_ask_{|問得好，{playername}。\n{s6} 在該地區移動，我們認為他們是負責人。\n沒有人做任何事情，所以他們越來越大膽，正在拿走屬於我們的東西。
-qstr_The_people_have_aske|人們已經要求幫助殺死至少 {reg22} {s6}，希望這會讓他們離開一段時間。\n你能做到嗎？
-qstr_I_want_you_to_slay_a|我希望你至少殺死 {reg22} {s6}，向那些弱者表明他們是如此的微不足道。^^\n你說呢？
+qstr_Well..._better_here_|嗯...在這裡總比在戰場上好，不是嗎？
+qstr_We_ve_been_sent_by_{|我們是被{s3}派來的。是來把我們的力量交給你的。
+qstr_{s3}_has_sent_us_to_|是{s3}派我們來的，來加入攻擊{s4}的艦隊。
+qstr_Excellent_{playernam|太棒了，{playername}！我聽說你給他們的比我請求的更多。幹得好啊。^^來，這個是你超出我們期待的額外獎勵。^^我們需要盡快贏得這場戰爭。
+qstr_Excellent_{playername|太棒了，{playername}。那肯定能幫助他們的。我們需要盡快贏得這場戰爭。
+qstr_Reinforcing_{s1}_has|增援{s1}已加強了{s2}。({s2}獲得了{reg50}陣營力量)。
+qstr_The_watchmen_in_the_|城市的看守報告說遭到埋伏的次數明顯減少了。你的工作做得很好。謝謝你，{playername}。
+qstr_Our_guards_have_seen|我們的衛兵看見害蟲夾著尾巴逃跑了。你對害蟲展現我們對這個地區的控制做得很好。
+qstr_It_was_nothing._I_wi|這沒什麼。我會繼續看著以防萬一。
+qstr_Slaying_these_maggot|斬殺這些蛆蟲實在沒什麼。我會繼續看著以防他們又膽大起來。
+qstr_town|城鎮
+qstr_village|村莊
+qstr_The_{s9}_of_{s13}_ha|{s13}的{s9}要你解決掉週遭鄉村的部落半獸人。
+qstr_{s9}_of_{s3}_asked_y|{s3}的{s9}要你在{reg6}天內帶{reg5}單位的{s6}給{s4}的{s10}。
+qstr_The_{s9}_of_{s4}_ask|{s4}的{s9}要你在{reg6}天內用至少{reg5}名部下增援{s3}。跟{s3}的軍營長談談。你提供的部下素質無關緊要。
+qstr_You_have_reinforced_{|你用0名部下增援了{s3}。
+qstr_Thank_you_for_offeri|感謝你提供幫助，{playername}。^^往返城市的商隊多次遭到{s6}的攻擊。他們每次埋伏都越來越大膽，並且也越來越靠近城市。
+qstr_Good_of_you_to_ask_{|問得好，{playername}。{s6}在附近地區遊蕩，認為自己是主人。沒有人過問所以他們越來越大膽的拿走屬於我們的東西。
+qstr_The_people_have_aske|人們已經請求至少斬殺{reg22}個{s6}，希望讓他們暫時不敢再來。^^你能夠做到嗎？
+qstr_I_want_you_to_slay_a|我要你至少斬殺{reg22}個{s6}，向那些弱者表明他們是如此的微不足道。^^你說呢？
 qstr_We_will_get_rid_of_t|我們將消滅這些害蟲。
-qstr_{s9}_wants_you_to_sl|{s9} 希望你在戰鬥中殺死 {reg22} {s6}。
-qstr_The_{s9}_of_{s3}_ask|{s3}的{s9}希望你在{reg6}天內帶給他{reg5}單位的食物。
-qstr_The_{s9}_of_{s3}_aske|{s3}的{s9}希望你在{reg0}天內帶給他{reg5}單位的{s6}。
-qstr_Escort_the_supply_tr|護 送 補 給 隊 到 {s8}。 
-qstr_The_{s9}_of_{s4}_aske|{s4}的 {s9}要 你 去 獵 殺 在 鎮 附 近  棘 手 的 哥 布 林 。 
-qstr_The_{s9}_of_{s14}_ha|{s14}的{s9}希望你能解決肆虐{s14}的獸人。\n這群獸人只在夜間攻擊街上的獨行者。
+qstr_{s9}_wants_you_to_sl|{s9}要你在戰鬥中殺死{reg22}個{s6}。
+qstr_The_{s9}_of_{s3}_ask|{s3}的{s9}要你在{reg6}天內帶給他{reg5}單位的食物。
+qstr_The_{s9}_of_{s3}_aske|{s3}的{s9}要你在{reg0}天內帶給他{reg5}單位的{s6}。
+qstr_Escort_the_supply_tr|護送補給隊到{s8}。
+qstr_The_{s9}_of_{s4}_aske|{s4}的{s9}要你在城鎮附近獵殺棘手的哥布林。
+qstr_The_{s9}_of_{s14}_ha|{s14}的{s9}希望你能解決在{s14}搗亂的哥布林。他們只在晚上出現，然後只攻擊街上落單的人。
 qstr_refugees|難民
 qstr_slaves|奴隸
-qstr_{s1}_Refugees|{s1} 難民
-qstr_{s1}_Slaves|{s1} 奴隸
-qstr_The_{s11}_of_{s10}_a|{s10}的{s11}希望你能護送一些{s12}到{s13}。
-qstr__Guards_slaughter_hi|守衛，解決掉他！
-qstr_Slaughter_him_for_fr|宰了他吃肉！
-qstr_This_is_{s5}_Command|這裡是 {s5}，指揮官。
-qstr_{s6}_This_place_and_|{s6} 這里和它的周邊都屬於{s8}的{s7}
-qstr_Hey_scum!_I_can_fix_|嘿渣滓！看來你的下巴要修理修理了！
-qstr_Watch_where_you_re_g|看看你正朝哪個方向跑，渣滓！
-qstr_I_don_t_like_your_fa|我不喜歡你的長相，我認為該給你做個整容手術了。
-qstr_What_are_you_looking|你在看什麼？什麼？
-qstr_the_white_hand|白手
-qstr_the_lidless_eye|索倫之眼
-qstr_I_have_some_of_your_|我手下有一些你的子民，我會讓他們加入並幫助你。
-qstr_Some_of_your_stinky_|你這幫臭烘烘的親戚和我在一起。\n我肯定他們更願意跟你走。
-qstr_{s4}_It_is_always_go|{s4} 能見到自己人真是很好。
-qstr_a_nearby_town|附近的城鎮
-qstr_that_town_over_there|城鎮在那邊
-qstr_{s4}^We_are_from_{s1|{s4}^我們來自{s11}，正往{s12}方向偵察。
-qstr_{s4}^We_are_{reg1?fo|{s4}^我們正在{s11}附近{reg1?覓食:掠奪}。
-qstr_{s4}^We_are_patrolli|{s4}^我 們 正 在 {s11} 附 近 巡 邏。
+qstr_{s1}_Refugees|{s1}的難民
+qstr_{s1}_Slaves|{s1}的奴隸
+qstr_The_{s11}_of_{s10}_a|{s10}的{s11}要你護送一些{s12}到{s13}。
+qstr__Guards_slaughter_hi|守衛，宰了他！
+qstr_Slaughter_him_for_fr|宰掉他來當新鮮的人肉！
+qstr_This_is_{s5}_Command|這裡是{s5}，指揮官。
+qstr_{s6}_This_place_and_|{s6}這裡和它的週遭都屬於{s8}的{s7}。
+qstr_Hey_scum!_I_can_fix_|嘿渣滓！看來你的下巴欠修理喔。
+qstr_Watch_where_you_re_g|看路，蛆蟲！
+qstr_I_don_t_like_your_fa|我不喜歡你的長相！我認為你需要整型。
+qstr_What_are_you_looking|你在看什麼？啥？
+qstr_the_white_hand|白掌
+qstr_the_lidless_eye|邪眼
+qstr_I_have_some_of_your_|我手下有一些你的同胞，我會讓他們加入你，助你一臂之力。
+qstr_Some_of_your_stinky_|你有些臭死人的親屬在我這。我很確定他們寧願跟著你。
+qstr_{s4}_It_is_always_go|{s4}能見到自己人總是不錯。
+qstr_a_nearby_town|一座附近的城鎮
+qstr_that_town_over_there|那邊的城鎮
+qstr_{s4}^We_are_from_{s1|{s4}^我們來自{s11}，正在往{s12}的方向偵察。
+qstr_{s4}^We_are_{reg1?fo|{s4}^我們正在{s11}附近{reg1?徵糧:掠奪}。
+qstr_{s4}^We_are_patrolli|{s4}^我們正在{s11}附近巡邏。
 qstr_{s4}^We_are_carrying|{s4}^我們正在從{s11}運送補給到{s12}。
 qstr_{s4}^We_are_escortin|{s4}^我們正在押送囚犯前往{s12}。
-qstr_Greetings_do_you_nee|你好，需要支援麼？
-qstr_I_will_need_your_hel|我需要你的幫助，跟我來。\n[花費{reg1} / {reg2}影響]
-qstr_You_and_your_men_mus|你和你的人必須跟著我。\n[花費{reg1} / {reg2}影響]
+qstr_Greetings_do_you_nee|你好，你需要增援嗎？
+qstr_I_will_need_your_hel|我需要你的幫助，請跟我來。[花費{reg1}/{reg2}影響力]
+qstr_You_and_your_men_mus|你和你的人必須跟著我。[花費{reg1}/{reg2}影響力]
 qstr_It_looks_like_you_ha|看來你已經有太多的追隨者了。
-qstr_Why_do_you_need_us?_|你為什麼需要我們？\n你已經擁有了你所需要的一切！
-qstr_We_will_follow_you_t|我們會跟著你，雖然我們不能走得太遠。
-qstr_If_there_is_killing_|如果有殺戮，我們會加入。\n但我們不能走得太遠，否則我們就會遇到麻煩。
-qstr_We_cannot_leave_our_|我們不能離開崗位跟隨你。\n[影響力不夠(需要{reg1})]
-qstr_Who_are_you_to_comma|誰命令你只會我們?\n[影響力不夠(需要{reg1})]
-qstr_Then_let_us_go._Stay|那我們走吧，跟緊。\n我很快就會需要你。
-qstr_There_will_be_blood_|在那裡將會有流血，這是肯定的。\n跟緊或錯過。
-qstr_Goodbye_friends.|再見朋友
-qstr_See_you_later_if_you|如果你沒有被殺的話，我們還會再見面的。
-qstr__^Oh_and_take_back_t|哦，帶走這些不是我們的子民的人
-qstr_{s31}{reg28?Those:That}_|{s31}{reg28?這群:這名}勇敢的{reg28?士兵:士兵}定能極大地增強我方領土的防禦。 {s32}{s23}^^[獲得{s14}的{reg14}資源點]
-qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?這群:這名}有用的{reg28?士兵們:士兵}定能帶去更多的毀滅。 {s32}^{s23}^^[獲得{s14}的{reg14}資源點]
-qstr_Good_luck_in_your_tr|祝你一路順風
+qstr_Why_do_you_need_us?_|你為什麼需要我們？你已經有夠多人跟著你了吧！
+qstr_We_will_follow_you_t|我們會跟著你，雖然我們不能逛得太遠。
+qstr_If_there_is_killing_|如果有殺戮，我們會加入。但我們不能逛得太遠，否則我們就會有麻煩了。
+qstr_We_cannot_leave_our_|我們不能離開崗位跟隨你。[影響力不夠(需要{reg1})]
+qstr_Who_are_you_to_comma|來命令我們你誰啊你？[影響力不夠(需要{reg1})]
+qstr_Then_let_us_go._Stay|那我們走吧，跟緊。我很快就會需要你的。
+qstr_There_will_be_blood_|那裡將會見血，這是肯定的。跟緊，或錯過吧。
+qstr_Goodbye_friends.|再見，朋友。
+qstr_See_you_later_if_you|如果你沒被殺的話我們還會再見面的。
+qstr__^Oh_and_take_back_t|^噢，然後把不是我們同胞的都帶回去吧。
+qstr_{s31}{reg28?Those:That}_|{s31}{reg28?那群:那名}勇敢的{reg28?士兵們:士兵}必定能幫助我們防禦我們的土地。{s32}{s23}^^[獲得{s14}的{reg14}資源點]
+qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?那群:那名}有用的{reg28?部下們:部下}必定能幫助我們毀滅更多東西。{s32}^{s23}^^[獲得{s14}的{reg14}資源點]
+qstr_Good_luck_in_your_tr|祝你一路順風。
 qstr_Try_not_getting_your|試著別讓自己被殺了。
-qstr_You_ready_your_weapo|你準備好武器，通過你的身體感受過去的經歷。(武器熟練程度和能力提高)
-qstr_The_previous_battle_|之前的戰鬥讓你感到溫暖。你感到精力充沛，準備好了。(改進了屬性，能力和武器熟練度)
-qstr_You_are_tired_but_ad|你很累，但腎上腺素通過你的血管使你更加堅強。 （改進了屬性，能力和武器熟練程度）
-qstr_These_are_great_weap|這些確實是偉大的武器。他們摸起來很奇怪....(能力和武器熟練度提高)
-qstr_You_can_barely_raise|你現在幾乎不能舉起你的武器…  但是看到你周圍的親戚，你的決心就更堅定了。(能力和武器熟練度提高)
-qstr_With_Lord_Balin_s_tr|巴林領主把他珍寶賜予你，你對他的死記憶猶新，你的憤怒更加強烈。(改進了屬性，能力和武器熟練度)
-qstr_We_cannot_hold..._we|我們不能堅持…  我們完了…
-qstr_You_do_not_know_how_|你不知道你還能堅持多久......
-qstr_How_long_can_we_keep|我們能堅持多久？ 我再也拿不住斧頭了……
-qstr_You_know_that_the_en|你知道結局就要到了…
-qstr_You...._good....dwar|你......  好.....  矮人....
-qstr_You_can_no_longer_ra|你無法再舉起你的武器......
-qstr_There_are_too_many..|有太多......有太多......
+qstr_You_ready_your_weapo|你準備好武器，你的身體瞬間回想起過去的經驗。(武器熟練程度和能力提升)
+qstr_The_previous_battle_|之前的戰鬥讓你熱身完畢。你感到精力充沛，準備好迎接更多了。(屬性、能力和武器熟練度提升)
+qstr_You_are_tired_but_ad|你很累，但腎上腺素通過你的血管使你更加堅強。(屬性、能力和武器熟練程度提升)
+qstr_These_are_great_weap|這些確實是偉大的武器。他們摸起來有點怪...(能力和武器熟練度提升)
+qstr_You_can_barely_raise|你幾乎無法舉起你的武器了…但看到周圍的親屬讓你的決心更堅定了。(能力和武器熟練度提升)
+qstr_With_Lord_Balin_s_tr|面對巴林大人賜予你的寶藏你想起了他的死，你的憤怒更加強烈了。(屬性、能力和武器熟練度提升)
+qstr_We_cannot_hold..._we|我們擋不住… 我們完了…
+qstr_You_do_not_know_how_|你不知道自己還能堅持多久...
+qstr_How_long_can_we_keep|我們還能撐多久？ 我再也拿不動斧頭了...
+qstr_You_know_that_the_en|你知道終點就要到了…
+qstr_You...._good....dwar|你....好的....矮人....
+qstr_You_can_no_longer_ra|你再也無法舉起你的武器了...
+qstr_There_are_too_many..|太多了...太多了....
 qstr_..........|..........
-qstr_It_is_off_to_work_we|我們去做事了....
-qstr_Your_mind_starts_to_|你的思緒開始徘徊......  思考黃金和寶藏......
+qstr_It_is_off_to_work_we|我們要去工作了....
+qstr_Your_mind_starts_to_|你的思緒開始飄蕩...思考黃金和寶藏...
 qstr_...............|...............
-qstr_Sleep_sounds_good...|睡覺聽起來不錯......
+qstr_Sleep_sounds_good...|睡覺聽起來不錯...
 qstr_For_Balin!!|為了巴林！！
 qstr_For_Balin...|為了巴林...

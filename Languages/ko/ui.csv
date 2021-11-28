@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(병력을 이동시키는 도중에 병사를 승�
 ui_lance_control|랜스 컨트롤
 ui_manual_easy|메뉴얼(쉬움)
 ui_manual_hard|메뉴얼(어려움)
-; ui_campaign_ai|Campaign Difficulty (Default: Average):
+ui_campaign_ai|캠페인 난이도 (기본 설정: 보통):
 ui_crouch|웅크리기
 
 # swy: added from this spreadsheet, as requested by our translators:
