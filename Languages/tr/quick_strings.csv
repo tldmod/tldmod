@@ -925,15 +925,15 @@ qstr_Tripled|Üç Katına
 qstr_Quadrupled|Dört Katına
 qstr_You_drank_the_Ent_Wa|Ent suyunu içiyorsun...
 qstr_You_used_the_Orc_Bre|Ork İksiri kullandın.
-; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
-; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
-; qstr_lordless|lordless
-; qstr_orc_stragglers|orc stragglers
-; qstr_wild_goblins|wild goblins
-; qstr_recruits|recruits
-; qstr_regulars|regulars
-; qstr_elites|elites
-; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
+qstr_You_and_your_compani|Sen ve dostların bir yudum Miruvor içiyorsunuz. Ferahlamış ve güçlenmiş hissediyorsun.
+qstr_You_give_a_few_leave|Doktorlarına bir kaç Athelas yapragı veriyorsun.
+qstr_lordless|kralsız
+qstr_orc_stragglers|ork kaçaklar
+qstr_wild_goblins|vahşi goblinler
+qstr_recruits|acemiler
+qstr_regulars|düzenli gelenler
+qstr_elites|uzmanlar
+qstr_You_camp_and_beat_th|Kamp yapıyorsun ve Derinlerin Davullarını çalıyorsun. Bu yüce ses {s1} {s2} grubunu çekiyor.
 qstr_Fangorn_search:_fail|Fangorn araştırması: başarısız.
 qstr_^^^A_great_victory!^|^^^Büyük bir zafer!!^^^Demek ki Fangorn ile ilgili söylentiler bu anlama geliyormuş...
 qstr_^^^Defeated...^^^Sca|^^^Maglup...^^^Fangorn Ormanı'nda dagılmış... Yalnız...
@@ -1092,8 +1092,8 @@ qstr_You_are_entering_{s1}|{s1} civarına giriyorsun.
 qstr_The_war_expands_comm|Savaş genişliyor, komutanlar cesurlaşıyor! (Kuşatma gereksinimleri azaltıldı)
 qstr_Your_party_is_spotte|Grubun {s1} tarafından tespit edildin.
 qstr_The_effects_of_the_O|Orc İksirinin etkisi bitti.
-; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
-; qstr_Athelas_used_up.|Athelas used up.
+qstr_The_effects_of_the_M|Miruvor'un etkisi bitti.
+qstr_Athelas_used_up.|Athelas kullanıldı.
 qstr_Party_has_nothing_to|Partinin yiyecek hiç bir şeyi yok!
 qstr_You_pay_for_accommod|Barınmak için para ödüyorsun.
 qstr_The_troll_outside_{s|Troll dışarıda {s2} öldürüldü. Görev iptal edildi.

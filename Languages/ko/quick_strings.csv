@@ -208,9 +208,9 @@ qstr_when_equipped|착용하고 있을 때
 qstr_+1_to_Power_Draw|당기는 힘 +1
 qstr_The_record_of_Balin_|발린의 잃어버린 탐험 기록이다.
 qstr_Who_might_be_interes|누군가 흥미를 가질까?
-qstr_Bonus_to_Shield_Skil|Bonus to Shield Skill
-qstr_Turns_nature_to_your|Turns nature to your side
-qstr_when_equipped.__Effe|when equipped. (Effects scale with Wildcraft)
+qstr_Bonus_to_Shield_Skil|방패 기술에 보너스
+qstr_Turns_nature_to_your|자연을 자신의 힘으로 삼는다
+qstr_when_equipped.__Effe|장착시. (서바이벌 기술의 영향을 받음)
 qstr_Bonus_to_Power_Strik|Bonus to Power Strike
 qstr_+1_to_Trainer|훈련교관 +1
 qstr_Recruits_Tribal_Orcs|징집 부족 오르크
@@ -236,15 +236,15 @@ qstr_+{reg1}_to_Spotting|탐지 +{reg1}
 qstr__Scales_with_Wildcra|(서바이벌에 따라 조정)
 qstr_Strengthens_all_Hero|모든 영웅 강화하기
 qstr_+2_to_First_Aid__Par|응급치료에 +2 (부대)
-qstr_+1_to_Power_Throw|+1 to Power Throw
+qstr_+1_to_Power_Throw|던지는 힘에 +1
 qstr_+1_to_Spotting|탐지 +1
-qstr_Less_Dunnish_upkeep|던랜드인 최소한도 유지
-qstr_Less_Wargs_upkeep|와르그 최소한도 유지
+qstr_Less_Dunnish_upkeep|던랜드인 유지비
+qstr_Less_Wargs_upkeep|와르그 유지비
 qstr_Light_Armor|경장갑
-qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
-qstr_Lead_more_Orcs|Lead more Orcs
+qstr_Bonus_to_Strength__P|힘에 보너스 (플레이어 전용)
+qstr_Lead_more_Orcs|더 많은 오르크를 이끔
 qstr_+{reg1}_to_Party_Mor|부대 사기 +{reg1}
-qstr_Range:_{reg55}|Range: {reg55}
+qstr_Range:_{reg55}|범위: {reg55}
 qstr_Do_you_want_to_disem|내리길 원하십니까?
 qstr_Move_here|여기로 이동
 qstr_View_notes|노트 보기
@@ -292,8 +292,8 @@ qstr_{s3}_is_no_longer_un|{s3}은/는 더이상 공성중인 상태가 아닙니
 qstr_Enemies_spotted_near|{s1} 근처에서 적이 발견되었습니다.
 qstr_Your_relation_with_{|당신과 {s1} 의 관계가 상승하였습니다.
 qstr_Your_relation_with_{s|당신과 {s1} 의 관계가 하락하였습니다.
-qstr_{s1}_gained_faction_|{s1} gained faction strength!
-qstr_{s1}_lost_faction_st|{s1} lost faction strength!
+qstr_{s1}_gained_faction_|{s1}이 세력 군사력을 얻음!
+qstr_{s1}_lost_faction_st|{s1}이 세력 군사력을 잃음!
 qstr_{s2}_{reg3?was:is_cu|{s2}은/는 {s3} 에 {reg3?있었습니다:있습니다}
 qstr_{s2}_{reg3?was:is}_t|{s2}은/는 {s3}로 향하고 {reg3?있었고:있고} {reg3?: 그당시엔} {reg4?그녀:그}는 {s4} 가까이에 {reg3?있었을겁니다:있을겁니다}.
 qstr_{s2}_{reg3?was:is}_i|{s2}은/는 황야에 {reg3?있었고:있고} {reg4?그녀:그}는 {reg3?: 그당시엔} {s3} 가까이에 {reg3?있었습니다:있을겁니다}.
@@ -545,11 +545,11 @@ qstr_Inappropriate_mount|부적합한 탈 것
 qstr_{s24}:_Your_infantry|{s24}: 당신 보병들의 기분이 나아졌다!
 qstr_{s24}:_Your_archers_|{s24}: 당신 궁병들의 기분이 나아졌다!
 qstr_{s24}:_Your_cavalry_|{s24} 당신 기병들의 기분이 나아졌다!
-qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s2} to your utmost capabilities.
+qstr_Ah_what_a_coincidenc|아, 이런 우연이 있나, {playername}! 자네는 나를 모를 수도 있겠지만 나는 자네를 안다네. {s4}로 가던 중인데 {s3}에서 자네의 이름이 들리더군. {s3}은 이런 위험한 때에 자네에게 의지하고 있으며, 만약 자네가 쓸데없는 행동을 할 생각이라면, 생각을 바꾸어 자네의 최대 역량을 {s2}을 돕는데 맞춰 사용해주었으면 한다네.
 qstr_Who_are_you?|당신은 누구지?
 qstr_A_friend_of_{s3}_and|{s3}의 친구이자 {s2}의 백성이여. 서둘러야 한다네!! 모르도르가 온갖 사악한 것들을 끌어들이고 있고, 암흑의 힘은 그들을 끌어모으기 위해 사력을 다하고 있네. 이 세계의 모든 좋은 것들을 위한 시간이 점점 줄어들고 있으며, 우리 모든 힘을 다해 막아야하네!
 qstr_What_should_I_do?|난 뭘 하면 될까?
-qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
+qstr_Find_{s3}_s_whereabo|{s3}의 행방을 찾고 지금 당장{reg3?그녀:그}와 대화해보게. 행운을 비네!
 qstr_Good_to_see_the_Shad|어둠의 손에 쓰러지지 않은 모습을 보니 좋군, {playername}.
 qstr_You_are_the_one_they|당신이 간달프, 사람들이 미스란디르라 부르는 분이군요.
 qstr_That_is_what_some_ca|그렇게 불리곤 하지. 세월에 따라 나는 다양한 이름으로 불렸으나, 어둠을 막아내지 못한다면 나를 그런 이름으로 불러줄 그 어떤 자도 남지 않게 될 걸세.
@@ -603,9 +603,9 @@ qstr___Archer_formation_d|  궁병 진형 해체
 qstr_Division_{reg1}_{s2}|Division {reg1} {s2} forming {s1}.
 qstr_Not_enough_troops_in|{s1}을 형성하기에 {reg1} {s2} division에 충분한 병력이 없습니다.
 qstr_Division_{reg1}_{s2}_|Division {reg1} {s2} is an {s3} division and cannot form {s1}.
-qstr_{s1}:_infantry_forma|{s1}: infantry formation disassembled.
+qstr_{s1}:_infantry_forma|{s1}: 보병 진형 해체
 qstr_{s1}:_archer_formati|{s1}: 궁병 진형 해체
-qstr_{s1}:_skirmisher_for|{s1}: skirmisher formation disassembled.
+qstr_{s1}:_skirmisher_for|{s1}: 척후병 진형 해체
 qstr_{s1}:_cavalry_format|{s1}: 기병 진형 해체
 qstr_{s1}:_formation_disa|{s1}: 대형 해체
 qstr_Cavalry_formation_di|기병 진형 해체
@@ -709,10 +709,10 @@ qstr_A_thunderstorm_from_|안개 산맥에서 온 뇌우가 전장을 무섭게 
 qstr_A_thunderstorm_from_t|안개 산맥에서 온 뇌우가 전장을 무섭게 휩쓴다. 이런 날씨라면 궁수들은 어려움을 겪는다.
 qstr_A_poisonous_fog_from|돌 굴두르에서 뿜어져나오는 독 안개가 전쟁터에 남아있다. 당신과 당신의 병력들이 약해지는 것을 느낀다. 병사들 사이에 공포가 도사리고 있다.
 qstr_A_poisonous_fog_from_|돌 굴두르에서 뿜어져나오는 독 안개가 전쟁터에 남아있다. 당신은 전혀 차이를 못 느끼지만, 적들이 고통받는 소리가 들리며 적들이 느끼는 공포를 맡을 수 있다.
-qstr_You_shapeshift_into_|You shapeshift into a bear!
-qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
-qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
-qstr_You_change_back_to_h|You change back to human form...
+qstr_You_shapeshift_into_|곰으로 변신했다!
+qstr_You_got_{reg1}_exper|당신은 곰 형태에서 {reg1}만큼의 경험치를 얻었다.
+qstr_Your_ability_to_chan|당신은 모습을 변화시킬 수 있게 되었습니다. 이제부터 사람과 곰 모습을 통해 야생의 길을 걸을 수 있습니다.
+qstr_You_change_back_to_h|인간 형상으로 돌아왔다...
 qstr_Your_mount_stumbles!|당신의 탈것이 무너진다! 다리를 저는 것 같다.
 qstr_Bitten_by_your_own_w|당신의 와르그에게 물렸다!
 qstr_You_weigh_too_much_f|당신은 조랑말을 타기에 너무 무겁다!
@@ -727,7 +727,7 @@ qstr_Use_Up/Down_arrow_ke|방향키 위/아래를 사용해 위/아래로 기울
 qstr_Fixed_Camera___Right|개선된 설정 카메라 - 오른쪽 어깨
 qstr_Fixed_Camera___Left_|개선된 설정 카메라 - 왼쪽 어깨
 qstr_Fixed_Camera___Cente|카메라 중점 조정
-qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
+qstr_Shield_is_too_big_to|활과 쓰기에 방패가 너무 크다.
 qstr_While_visiting_towns|마을, 정착지, 캠프를 방문하는 동안, 당신은 돌아다니는 사람과 이야기를 나눌 수 있습니다. 세력 구성원마다 다른 이야기를 할 것입니다 - 어떤 사람들은 당신에게 그들 자신의 생각을 말해줄 것이고, 어떤 사람들은 떠도는 소문을 말할 것입니다. 둘 다 그 사람의 문화와 세력을 더 잘 이해할 수 있게 도와주고, 그들이 비밀 장소를 찾을 수 있는 단서나 황야를 여행하고 반지 전쟁에서 싸우기 위한 요령을 알려줄 수도 있습니다.
 qstr_Cannot_leave_now.|지금은 떠날 수 없다.
 qstr_You_have_found_the_l|당신은 지역 대장간을 찾았다.
@@ -796,7 +796,7 @@ qstr_End_them_all!|모조리 끝장내버려!
 qstr_Drive_them_back!|놈들을 쫓아내라!
 qstr_Protect_the_City!|도시를 지켜라!
 qstr_Forward!_Board_them!|앞으로! 올라타!
-qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.
+qstr_The_Last_Days_of_the_|TLD에서는 네이티브와 다른 고급 공성 AI를 지닙니다. 모든 공격수와 수비수가 좌우와 중앙에 분산배치되며, 공격자 플레이어는 자신의 군대를 일부 지휘합니다.
 qstr_on_the_left_flank|좌측에
 qstr_on_the_right_flank|우측에
 qstr_through_the_center|중앙으로
@@ -805,8 +805,8 @@ qstr_Attackers_charge_{s1|공격자가 {s1}로 돌격
 qstr_{s1}_rallied_to_your|{s1}이 당신의 카리스마에 의해 당신의 편에 섰다.
 qstr_Last_attacker_wave._|마지막 공격자 웨이브. 퇴각하시겠습니까?
 qstr_Attackers_almost_def|공격자가 대부분 패배했습니다. 퇴각하시겠습니까?
-; qstr_The_remaining_attack|The remaining attackers disperse!
-; qstr_The_remaining_defend|The remaining defenders escape from the siege!
+qstr_The_remaining_attack|남은 공격자들이 흩어진다!
+qstr_The_remaining_defend|남은 수비자들이 포위망에서 탈출한다!
 qstr_Reached_Gauntlet_wav|{reg1} Wave 시련 도달!
 qstr_Ballista:_out_of_amm|노포: 탄약이 떨어졌다!
 qstr_Ballista:_turn_CURSO|노포: 커서로 이동, 좌Shift 키로 조준, Space로 발사, T로 장전, F로 나가기
@@ -924,19 +924,19 @@ qstr_Doubled|두배
 qstr_Tripled|세배
 qstr_Quadrupled|네배
 qstr_You_drank_the_Ent_Wa|엔트워터를 들이켰다...
-qstr_You_used_the_Orc_Bre|You used the Orc Brew.
-; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
-; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
-; qstr_lordless|lordless
-; qstr_orc_stragglers|orc stragglers
-; qstr_wild_goblins|wild goblins
-; qstr_recruits|recruits
-; qstr_regulars|regulars
-; qstr_elites|elites
-; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
+qstr_You_used_the_Orc_Bre|오르크 맥주를 사용했다.
+qstr_You_and_your_compani|당신과 당신의 동료들은 미루보르를 한 모금 들이켰다. 기분이 상쾌해지고 힘이 솟는다.
+qstr_You_give_a_few_leave|당신은 당신의 치료사들에게 임금님풀 몇 줌을 주었다.
+qstr_lordless|주인없는
+qstr_orc_stragglers|오르크 패잔병들
+qstr_wild_goblins|야생 고블린들
+qstr_recruits|신병
+qstr_regulars|일반병
+qstr_elites|정예병
+qstr_You_camp_and_beat_th|당신은 진을 치고 깊은 곳의 북을 두드린다. 그 웅장한 소리가 {s1}의 {s2}들을 끌어들인다.
 qstr_Fangorn_search:_fail|팡고른 탐색: 실패.
 qstr_^^^A_great_victory!^|^^^대승이다!^^^이게 팡고른 숲을 둘러싼 전설의 정체였군...
-qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Alone...
+qstr_^^^Defeated...^^^Sca|^^^패배...^^^팡고른 숲에 흩어졌다... 혼자...
 qstr_Troll_caged_in_wheel|바퀴달린 우리에 트롤을 가두었다.
 qstr_A_second_troll_is_ca|바퀴달린 우리에 두번째 트롤을 가두었다.
 qstr_Here_you_are.|여기 있네.
@@ -1012,7 +1012,7 @@ qstr_As_a_last_defensive_|당신이 방어에 기울인 노력에도 불구하�
 qstr_You_ve_been_driven_a|당신은 성벽에서 밀려났다. 이제 공격자들은 거리로 쏟아져나오기 시작했다. 만약 당신이 그들을 물리칠수만 있다면, 공세를 멈추고 날을 넘길 수 있을지도 모른다.
 qstr_You_ve_breached_the_|당신은 도시 성벽을 돌파했지만, 완강한 방어자들이 거리에서 당신에게 저항을 계속하고 있다! 그들을 먼저 처리해야 도시 심장부에 위치한 성채를 공격할 수 있을 것이다.
 qstr_The_town_centre_is_y|도시 중심가는 당신의 것이지만, 남은 방어자들이 성채로 퇴각했다. 당신의 승리를 확고히 하기 위해 그들을 처치해야한다.
-; qstr_The_remaining_defend|The remaining defenders escape from the siege!
+qstr_The_remaining_defend|남은 수비자들이 포위망에서 탈출한다!
 qstr_However_since_you_ar|그러나, 당신은 {s9}의 {사람/추종자}가 되기로 맹세하지 않았기에,  그 자가 당신을 이 성의 {reg8?도시:성}의 {주인/여주인}으로 인정할 가능성은 거의 없다.
 qstr_The_enemy_has_been_f|적은 어쩔 수 없이 후퇴했다. 공격은 끝났지만 포위는 계속되고 있다.
 qstr_The_assasins_beat_yo|암살자들이 당신을 쓰러트렸고 죽게 내버려두었다.
@@ -1030,7 +1030,7 @@ qstr_the_Leader_s_Cave|지도자의 동굴
 qstr_the_Tower|탑
 qstr_the_tower_of_Orthanc|오르상크의 탑
 qstr_the_Throne_Room|왕좌의 방
-qstr_Beorn_s_Hall|Beorn's Hall
+qstr_Beorn_s_Hall|베오른의 회랑
 qstr_the_Hall|회랑
 qstr_the_Great_Chamber_of|스로르의 위대한 회랑
 qstr_Stay_indoors_for_som|이곳에 얼마간 머무른다 (매일 밤 {reg1} 자원 포인트 소모)
@@ -1091,9 +1091,9 @@ qstr_You_are_entering_{s1|당신은 {s1}을 지나는 중이다 ({s2}).
 qstr_You_are_entering_{s1}|당신은 {s1}을 지나는 중이다.
 qstr_The_war_expands_comm|전쟁이 확산되고 있고, 사령관들은 점점 대담해지고 있다! (공성에 필요한 조건 감소)
 qstr_Your_party_is_spotte|당신의 부대는 {s1}에게 포착되었다.
-qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
-; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
-; qstr_Athelas_used_up.|Athelas used up.
+qstr_The_effects_of_the_O|오르크 맥주의 효과가 사라졌다.
+qstr_The_effects_of_the_M|미루보르의 효과가 사라졌다.
+qstr_Athelas_used_up.|임금님풀을 소모했다.
 qstr_Party_has_nothing_to|부대가 먹을 식량이 부족합니다!
 qstr_You_pay_for_accommod|당신은 숙박비를 지불했다.
 qstr_The_troll_outside_{s|{s2} 밖의 트롤이 살해당했다. 임무 취소됨.
@@ -1126,7 +1126,7 @@ qstr_{s5}_has_stopped_fol|{s5}가 당신을 따라오는 것을 멈췄다.
 qstr_You_have_{reg69}_all|{reg69} 동맹 부대가 당신을 따라온다
 qstr_You_have_{reg69}_ally|{reg69} 동맹 부대가 당신을 따라온다
 qstr_The_forces_of_{s2}_h|{s2}의 군대가 재편성되어 {s15}를 향해 진군 중이다!
-qstr_Your_scouts_report_s|Your scouts report signs of a {s2} nearby.
+qstr_Your_scouts_report_s|정찰병이 근처에 {s2}가 있다고 보고했다.
 qstr_{s1}_from_{s2}|{s2}의 {s1}
 qstr_When_dealing_with_lo|{s11} 현지인을 대할 때, 그들은 당신을 알지 못하며 당신이 {s10}에서 얻은 장점을 알지 못한다는 점을 기억하십시오.^^({s11}의 사람들에게는 {s10}에서 획득한 것이 아니라. {s11}에서 획득한 자원 포인트만 사용할 수 있습니다.\n 보고서 화면을 참조하십시오.)
 qstr_Info|정보
@@ -1154,7 +1154,7 @@ qstr_{s27}:_Party_morale_|{s27}: 부대 사기 증가.
 qstr_{s27}:_Party_morale_d|{s27}: 부대 사기 감소.
 qstr_You_have_failed_to_f|당신은 발린과 그 일행에 대한 복수의 서약을 완수하는데 실패했다!
 qstr_You_have_failed_to_fu|당신은 {s1}의 영웅적인 죽음을 복수하겠다는 맹세를 이행하는데 실패했다!
-qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, 
+qstr_Your_troops_value_yo|당신의 군대는 당신이 약속을 지키려는 노력을 높이평가하나, 결과적으로 일이 너무 성급하게 진행되었다고 생각한다.
 qstr_{s22}You_have_fulfil|{s22}당신은 발린과 그 일행에 대한 복수의 서약을 실현시켰다!
 qstr_{s22}You_have_fulfill|{s22}당신은 {s1}의 영웅적인 죽음을 복수하겠다는 맹세를 실현시켰다!
 qstr_Reinforcements|Reinforcements
@@ -1205,10 +1205,10 @@ qstr_You_just_got_windyfl|당신 방금 바람맞았어!
 qstr_Merry|메리
 qstr_Pippin|피핀
 qstr_Minas_Tirith|미나스 티리스
-qstr_Steward_Denethor|스튜어드 데네소르
+qstr_Steward_Denethor|섭정 데네소르
 qstr_the_Golden_Hall|황금회랑
 qstr_Edoras|에도라스
-qstr_King_Theoden|시오든 국왕
+qstr_King_Theoden|세오덴 국왕
 qstr_Merry_asked_you_to_d|메리는 미나스 티리스에 있는 자신의 사촌, 피핀에게 전갈을 전해달라 요청했다.
 qstr_Pippin_asked_you_to_|피핀은 에도라스에 있는 그의 먼 친척, 메리에게 전갈을 전해달라 요청했다.
 qstr_Tell_him_I_ve_grown_|내가 1인치 더 자랐다고 말해주세요!
@@ -1231,7 +1231,7 @@ qstr_Good_day_to_you.|좋은 하루가 되길.
 qstr_Ah_it_s_you_again._G|아, 또 당신이군. 잘 가게.
 qstr_My_apologies_if_I_wa|전에 제가 무례하게 대했다면 사과드립니다, 당신의 이야기가 뭐였죠?
 qstr_I_was_reconsidering_|저희 마지막 대화를 다시 생각해보고 싶습니다. 당신의 이야기가 뭐였죠?
-qstr_Zigrphel_gained_{reg|Zigûrphel gained {reg78} experience.
+qstr_Zigrphel_gained_{reg|Zigûrphel이 {reg78} 경험치를 얻었다.
 qstr_Greetings_{s23}_{s24|반갑네, {s23}. {s24}.
 qstr_Greetings_{s23}.|반갑네, {s23}.
 qstr_So_you_are_{s23}._I_|그래서, 당신이 {s23}이군. 나는 당신이 우리 {s25} 친구들을 위해 싸웠다는 소식을 들었네. 당신을 동맹으로 여겨야 할 것 같군.
@@ -1335,7 +1335,7 @@ qstr_What?_Let_me_see_tha|뭐? 어디 보세... 흐음. 좋은 것을 가져다�
 qstr_Give_me_that!_Hrmph!_|이리내! 흐음! 너는 네 주인의 참 쓸만한 종이로군, {playername}, 너희 모두 머지 않아 죽게 되겠지만, 적어도 지금은 아니다. 어서 떠나라.
 qstr_My_king|나의 왕
 qstr_Lord|군주
-qstr_my_king|나의 왕이시여
+qstr_my_king|나의 왕
 qstr_lord|Lord
 qstr_our|우리
 qstr_your|당신의
@@ -1460,9 +1460,9 @@ qstr_Your_party_must_be_at|당신의 부대는 적어도 10 보다 강해야 이
 qstr_{s9}_asked_you_to_def|{s9}은 당신에게 {s1} 근처에 있는 습격당하고 있는 마을을 보호해달라 요청했다.
 qstr_{s9}_asked_you_to_ra|{s9}는 당신에게 {s1} 근처의 마을을 약탈하라고 명령했다.
 qstr_These_soldiers_may_w|이 군인들은 내 계획의 흐름을 바꿔줄 걸세, {playername}. 나는 그대가 그들을 잘 훈련시켰다고 확신하네. 그대의 노고를 치하하며 감사하겠네.
-qstr_I_wish_you_had_train|I wish you had trained them all, {playername}. But in these evil times, I will take whatever you can offer.
+qstr_I_wish_you_had_train|그들을 모두 훈련시킬 수 있었다면 좋았을텐데, {playername}. 하지만 이런 악의 시대에 자네가 주는 건 무엇이든 받겠네.
 qstr_Good_work_in_shaping|신병들 군기를 잡느라 수고했다, {playername}. 너는 참 쓸만하군. 이번 놈들은 지난번 놈들보다 더 오래갔으면 좋겠는데. 아니면 다시 나와 만나야할거야.
-qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
+qstr_Is_that_all_you_coul|이게 네 최선인가, {playername}? 이건 어제 죽은 자들을 메꾸기도 힘들겠군. 전부 내놔!
 qstr_Well_the_soldiers_ar|음, 병사들이 당신의 명령을 따를 준비가 되었습니다, 경. 그들 상태가 매우 좋다고 확신합니다.
 qstr_Well_you_may_do_as_y|음, 네 마음대로 해도 된다. 나와 나의 동료들은 필요하다면 더 강해질 수 있다.
 qstr_{s9}_asked_you_to_br|{s9}는 그의 군대에 사용할 수 있도록 사나운 트롤을 가져오라고 지시한다.
@@ -1490,14 +1490,14 @@ qstr_{s9}_has_asked_you_to|{s9}는 당신에게 {reg1} 명의 아군 포로를 �
 qstr_We_have_reports_that_a|적들이 {s13}에 집결중이라는 보고가 들어왔다. 적들이 정확히 얼마나 많은 병력을 보유하고 있는지, 내 병사들이 그들을 전장에서 마주할 수 있는 준비가 되어있는지 알 수 없기 때문에, 이것은 내게 중대사이다. {s13}에 충분히 가까이 다가가 가능한 한 많이 알아봐주길 바라네.
 qstr_My_spies_tell_me_of_|내 첩자들이 수많은 전사들이 {s13}에 모이고 있다고 말하더군. 놈들은 우리 노예들의 상대가 되지 않을테지만, 그곳의 놈들이 몇명이나 되는지 알아본다고 해서 손해볼 건 없겠지. 나는 네가 {s13}에 가까이 다가가서 가능한 한 많이 조사해왔으면 한다.
 qstr_{s9}_asked_you_to_sco|{s9}는 당신에게 {s13} 주변을 정찰하라고 했다.
-; qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts. I will also give you a few recruits, but you should not send them out on their own.
-; qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee! I will give you these recruits, they won't be missed.
-qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
+qstr_We_have_reports_of_s|{s13} 근처에서 적의 활동이 보고되었습니다. 적이 오고가느라 우리 정찰병들은 지금까지 충분히 가까이 다가가지 못했고 그 지역을 정찰하는데 실패했습니다. 정찰대를 소집하여 {s13}과 충분히 가까워진 뒤, 정찰병들을 놓아주십시오. 당신에게 정찰병을 몇 명 합류시킬테니, 그들만 보내서는 안 됩니다.
+qstr_My_spies_tell_me_the|내 첩자들이 적이 {s13} 근처에서 뭘 꾸미고 있다더군. 겁쟁이 정찰병들은 충분히 가까이 가질 못해서 중요한 사실을 알아내오질 못 했어. 너만의 정찰대를 모집해서 {s13}과 충분히 가까워진 뒤, 그들을 거기 남겨둬라. 놈들이 또 도망치지 못하게 해! 내 신병들을 좀 보탤테니 실패할 일은 없을거다.
+qstr_{s9}_asked_you_to_di|{s9}이 {s13} 근처에 정찰대 파견을 요청하였다.^{s15} {reg1}명의 병사를 편성해야 하며, 그중 하나는 적어도 {s14}이어야한다. {s13}에 충분히 근접한 다음 {s14}와 대화하라.
 qstr_We_need_to_take_the_|우리는 적과 싸워야합니다. {playername}. 지금 이 순간, 우리는 그들의 정찰대와 통신망을 공격할 수 있습니다. {reg1}의 {s13} 부대를 제거하면, 우리가 주도권을 다시 되찾아 올 수 있을 것입니다.
 qstr_We_need_to_grind_dow|우리는 무가치한 적들을 갈아버려야한다, {playername}. 그들의 정찰대와 보급망은 내 생각에 너무 대담하게 움직이고 있는 것 같다.나는 네가 {reg1}의 {s13} 부대를 제거하기를 원한다. 그럼 그들은 두려움이 무엇인지 알게 될 것이다.
 qstr_{s9}_asked_you_to_el|{s9}는 당신에게 {reg1}의 {reg13} 부대를 제거하라 요청했다.
 qstr_{s9}_asked_you_to_fr|{s9}이 {s19}를 위협하는 교외의 성난 트롤을 처리해 주길 요청했다.
-; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
+qstr_{reg1}_{s16}_joined_|{reg1} {s16}이 당신의 부대에 합류했다.
 qstr_the_Dwarves_so_that_|난쟁이들, 에레보르나 철산을 지나갈 일이 생긴다면 전설의 난쟁이 무기로 무장해 보라
 qstr_Gondor_so_that_if_yo|곤도르, 그들의 땅을 지나갈 일이 생기면, 그들의 고품질 방어구를 살 수도 있을 것이다.
 qstr_Rohan_so_that_if_you|로한, 그들의 땅을 지나갈 일이 생긴다면, 그들로부터 전설적인 명마들을 살 수 있을 것이다.
@@ -1583,8 +1583,8 @@ qstr_Good_moves_but_you_m|움직임이 좋군, 하지만 조금 더 연습 할 �
 qstr_More_than_half_of_th|상대 절반 이상이라, 나쁘지 않군.
 qstr_You_ll_need_to_try_h|방금 그것보단 노력해야할거요.
 qstr_Well..._better_here_|음... 실제 싸움에선 잘하겠지, 응?
-; qstr_We_ve_been_sent_by_{|We've been sent by {s3}. We have come to join our strength to yours.
-; qstr_{s3}_has_sent_us_to_|{s3} has sent us, to join the fleet attacking {s4}.
+qstr_We_ve_been_sent_by_{|{s3}에서 우리를 보냈다. 우리는 당신과 합류해 힘이 되고 싶다.
+qstr_{s3}_has_sent_us_to_|{s4}의 함대를 공격하기 위해 {s3}이 우릴 보냈다.
 qstr_Excellent_{playernam|훌륭해, {playername}! 내가 요청한 것보다 더한 것들을 그들에게 주었다고 들었다. 아주 대단한 일이다.^^여기, 여기 우리 예상을 뛰어넘은 것에 대한 추가 보상이다. ^^ 우리는 이 전쟁에서 가능한 한 빨리 승리해야한다.
 qstr_Excellent_{playername|훌륭해, {playername}. 그것은 틀림 없이 그들에게 도움이 될 것이다. 우리는 가능한 한 빨리 이 전쟁에서 승리해야만해.
 qstr_Reinforcing_{s1}_has|{s1}을 지원함으로써 {s2}를 강화했다. ({s2}가 {reg50} 만큼의 세력 군사력을 얻는다)

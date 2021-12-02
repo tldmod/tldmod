@@ -1063,7 +1063,7 @@ qstr_You_drove_back_the_e|你趕走了敵方的艦隊，但失去了你大部分
 qstr_You_were_defeated_by|你被來攔截的艦隊擊敗並沒能夠襲擊城市！
 qstr_^^^^^^^You_come_upon|^^^^^^^你遇了一群正從{s2}前住{s3}的難民。^^他們之中大多是老弱婦孺。^^雖然也有護衛，但不夠從襲擊中保護所有人。
 qstr_^^^^^^^You_come_upon_|^^^^^^^你遇到了你從{s2}就一直在追蹤的難民。他們似乎正在前往{s3}，並且大部分都是老人和傷者。^^雖然也有護衛，但不夠阻止你和你的人馬殺死所有人。
-qstr_^^At_last_the_Master|^^終於，主人開始行動了！火把燎亮。鋒利的武器閃閃發光。你和你的壯丁們很快就會接到邁進的命令。啊，會有戰鬥的，很多很多的，還有足夠分給所有人的榮耀！^^你有幸被傳喚到主人的塔內覲見它。可能你的第一個命令會是是奴隸的工作-在這掠奪一個村莊、在那劫持一個商隊之類的。但你很快就能證明自己了。誰能說你不會像任何一個{s3}的{s2}旗下指揮官那樣扮演重要的角色呢？^^戰爭已經開始了；人類和其盟友的殞落要開始了！
+qstr_^^At_last_the_Master|^^終於，主人開始行動了！火把燎亮。鋒利的武器閃閃發光。你和你粗壯的弟兄們很快就會接到邁進的命令。啊，會有戰鬥的，很多很多的，還有足夠分給所有人的榮耀！^^你有幸被傳喚到主人的塔內覲見它。可能你的第一個命令會是是奴隸的工作-在這掠奪一個村莊、在那劫持一個商隊之類的。但你很快就能證明自己了。誰能說你不會像任何一個{s3}的{s2}旗下指揮官那樣扮演重要的角色呢？^^戰爭已經開始了；人類和其盟友的殞落要開始了！
 qstr_^^Your_head_suddenly|^^你的腦海突然出現了一個景象-燃燒的眼睛。在你周圍，你的戰士們都僵在原地不動。不知為何，你知道在那一刻所有人都聽到了同樣的召喚，看到了同樣的景象。邪眼的法術真偉大-黑邪塔的力量真偉大！^^知識，不言而喻，滲到你的骨頭裡。時刻到了。黑暗之主已下令-你們都將在公開的戰爭中向敵方邁進。來自{s3}的{s2}其命令將至。起初你扮演的角色並不偉大，但你很快就能證明自己了。^^戰爭已經開始了；人類和其盟友的殞落要開始了！
 qstr_{s13}_asked_you_to_j|{s13}要你帶著至少{reg13}名部下加入他一起面對艾辛格的最後一博。
 qstr_You_defeated_{reg5}_|你擊敗了{reg5}名敵人並給你的指揮官留下了深刻的印象。
@@ -1186,11 +1186,11 @@ qstr_Just_to_troll_you_tr|只是想鬧你，鬧你！
 qstr_Thanks_to_our_volunt|感謝我們的翻譯志願者，繁體和簡體中文的翻譯都能用了。但你必須照著我們Steam Workshop裡的指南才能使用它們。
 qstr_Wai_no_plate_armour_|為啥遮個模組裡妹有板甲？？？
 qstr_What_is_plate_armour|什麼是板甲？沒聽過。
-qstr_Wai_no_female_trolls|為啥妹有母食人妖？ㄝ？ㄝ？尼ㄙ窩ㄉ婊ㄗ！
+qstr_Wai_no_female_trolls|為啥妹有母食人妖？ㄝ？ㄝ？尼素窩ㄉ婊ㄗ！
 qstr_WHEN_U_REALSE_MOD?!!|尼們什ㄇ時候發行模組？！！？
 qstr_But_we_did_release._|但我們已經出了。你就在裡面。然後你幹嘛大吼大叫？
 qstr_YES!_ALSO_SOMETIMES_|素！窩有時揪這ㄇ大聲！
-qstr_Wai_u_no_work_wiht_o|尼們就ㄅ能和其他團隊合作弄一ㄍ超級魔戒ㄉ模組ㄇ？
+qstr_Wai_u_no_work_wiht_o|尼們揪ㄅ能和其他團隊合作弄一ㄍ超級魔戒ㄉ模組嗎？
 qstr_Every_mod_team_works|每個模組團隊都有不同的規格，版本不同是沒辦法合作的。
 qstr_Because_we_don_t_hav|因為我們沒什麼幽默感而大部分人對我們來說太歡樂了。
 qstr_In_movies_trolls_are|電影裡ㄉ食人妖都又大又胖，尼為啥讓窩這ㄇ瘦？
@@ -1549,7 +1549,7 @@ qstr_Our_Golden_Valley_gi|我們的黃金谷有大量物資提供給羅瑞安之
 qstr_I_shall_keep_that_in|我會記住的。^^感謝你，再見！
 qstr_That_may_be_so_some_|當是如此，路途總有曲折。^^ 我先走了！
 qstr_I_seldom_wander_far_|我很少離家很遠。走吧，盡可能快點。附近可能還有更多哥布林在遊蕩。
-qstr_Who_are_you?_A_mere_|你是誰？區區{s25}？我可沒時間管你種人！滾開！{s2}
+qstr_Who_are_you?_A_mere_|你是誰？區區{s25}？我可沒時間管你種人！讓我一個人待著！{s2}
 qstr_What_do_you_want?|你想要什麼？
 qstr_Greetings_{playernam|你好，{playername}。 我能為你做些什麼呢？
 qstr_What?_You_come_to_me|什麼？你來找我你卻不知道我是幹嘛的？看看你周圍。^^你看到血了嗎？ 你聽到哭泣了嗎？你感受到他們的痛苦了嗎？這就是我在幹的！我破壞東西然後讓它們變得更好！如果你來到我身邊時，破碎而痛苦著，我會讓你變得更好的！
@@ -1562,10 +1562,10 @@ qstr_I_ll_have_my_worms_d|我會讓我的蟲子處理你的事。他們不是最
 qstr_I_ll_have_my_assista|我會讓我的助手照顧你的人馬。他們還在學習，所以請容忍他們。告訴我你想要他們什麼時候過來。{s2}
 qstr_Alright!_Worms!_Get_|好吧！蟲子！過來處理這個！
 qstr_Let_us_begin._My_ass|讓我們開始吧。我的助手會照顧你和你的人馬。
-qstr_All_done!_Ha!_You_di|都做完了！哈！你沒怎麼尖叫，還不錯！現在走吧，滾開。
+qstr_All_done!_Ha!_You_di|都做完了！哈！你沒怎麼尖叫，令人印象深刻！現在走吧，讓我一個人待著。
 qstr_We_ve_done_what_We_c|我們已經盡力了。現在你和你的人馬需要休息。
-qstr_Boss_the_lads_are_hu|老闆，小伙子們都餓了！我們都有努力勞動卻還在挨餓！
-qstr_Master_the_lads_are_|主人，小伙子們都餓了！我們可沒辦法空著肚子去作戰啊！
+qstr_Boss_the_lads_are_hu|老闆，弟兄們都餓了！我們都有努力勞動卻還在挨餓！
+qstr_Master_the_lads_are_|主人，弟兄們都餓了！我們可沒辦法空著肚子去作戰啊！
 qstr_Yes!_With_proper_fed|是的！好好餵飽我們的肚子，我們就會加倍努力服侍你！
 qstr_As_you_command_maste|遵命，主人，呵呵。大伙們，菜單上又有肉啦！
 qstr_Your_Orcs_&_Uruks_at|你的半獸人和強獸人吃掉了{reg1}個人類！

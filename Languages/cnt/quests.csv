@@ -52,7 +52,7 @@ qst_join_siege_with_army_text|無
 qst_scout_waypoints|偵察{s13}，{s14}和{s15}
 qst_scout_waypoints_text|無
 qst_move_cattle_herd|帶{s12}到{s13}
-qst_move_cattle_herd_text|{s10}的長老要你帶一些{s12}到{s13}。
+qst_move_cattle_herd_text|{s10}的長者要你帶一些{s12}到{s13}。
 qst_escort_merchant_caravan|護送補給隊到{s8}
 qst_escort_merchant_caravan_text|護衛補給隊到{s8}並在快抵達時與他們對話。
 qst_deliver_wine|送{reg5}單位的{s6}到{s4}
@@ -60,9 +60,9 @@ qst_deliver_wine_text|{s3}的{s9}要你在7天內帶{reg5}單位的{s6}到{s4}�
 qst_troublesome_bandits|獵殺棘手的哥布林
 qst_troublesome_bandits_text|{s4}的{s9}要你在城鎮附近獵殺棘手的哥布林。
 qst_deal_with_looters|解決部落半獸人
-qst_deal_with_looters_text|{s4}的長老要你解決{s4}附近的幾群部落半獸人。
+qst_deal_with_looters_text|{s4}的長者要你解決{s4}附近的幾群部落半獸人。
 qst_deal_with_night_bandits|解決哥布林盜匪
-qst_deal_with_night_bandits_text|{s14}的長老要你解決{s14}的哥布林夜匪。
+qst_deal_with_night_bandits_text|{s14}的長者要你解決{s14}的哥布林夜匪。
 qst_deliver_food|補給{reg5}單位的食物給{s3}
 qst_deliver_food_text|{s3}的{s9}要你在10天內帶給他{reg5}單位的食物。
 qst_deliver_iron|補給{reg5}單位的{s6}給{s3}

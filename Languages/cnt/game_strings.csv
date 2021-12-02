@@ -2115,20 +2115,20 @@ str_beorn_extra_info|好^^艱難^^北羅馬尼安 (北)^^老首領葛林比翁^^
 str_intro_strings_extra_end|額外介紹結束
 str_gundabad_intro|自從收到戰爭即將開始的消息後，你從遙遠的北方，失落已久的安格馬之地前來。在數不盡的年歲中你和你的同族用斧頭和長槍擊碎許多矮人的盾牌，用勇猛座狼的利爪撕碎了無數人類與精靈的身體，剝下熊人的毛皮來穿。迷霧山脈中剛達巴的殿堂又再次屬於你們，如同博魯格和阿佐格的時代那樣。^^你們之中的許多已在長年中死去，好一部分就在這些殿堂和隧道中被斬殺-但還剩下很多。過去，你曾和那些貪婪的矮小挖掘者與他們的朋友好好交鋒過-而今後你將會有更多這種機會，就在向他們進軍並把一切都占為己有時！^^為博魯格、為阿佐格、為偉大的哥布林復仇-為剛達巴的哥布林們復仇！
 str_show_keybinds|特殊鍵綁定：^^編隊：^陣型 - 'J'^ 盾陣 - 'K'^ 楔型陣 - 'L'^ 方正 - ';' ^清除陣型 - 'U'^^循環通過武器使用 - 'O'^^循環通過攝像機類型 - 'CTRL + END'^^團結 - 'V'^^呼叫馬 - 'M'^^查看訂單/小地圖 - 'Backspace'
-str_tactical_controls|用數字鍵選擇分隊。按0來選擇全軍。^^使用F1到F4來命令分隊。按住F1來放置所選取的分隊。你也可以使用這個機能來瞄準敵方的一個分隊。^^經常按下ENTER鍵來開啟俯視戰術鏡頭。^^按下後退鍵來開啟附帶'雷達'的戰鬥命令顯示。
+str_tactical_controls|用數字鍵選擇分隊。按0來選擇全軍。^^使用F1到F4來命令分隊。按住F1來放置所選取的分隊。你也可以使用這個機能來瞄準敵方的一個分隊。^^經常按下ENTER鍵來開啟俯視戰術鏡頭。^^按下BACKSPACE鍵來開啟附帶'雷達'的戰鬥命令顯示。
 str_division_placement|當一個分隊被選擇時，前排的中心將被置於指定位置。^^當多數分隊被選擇時，他們將以玩家指定的位置為中心分散開來。^^你可以按F2，F7來記住分隊相對於玩家的位置。預設是步兵在左，騎兵在右，遠程在前。
 str_formations|戰 鬥 選 單 上 的 複 雜 陣 型 有：^^ - 最 佳 部 隊 在 前 的 排 ^ - 盾 牆，盾 牌 前，長 炳 的 武 器 在 後^ - 最 佳 部 隊 在 前 的 楔 形 陣^ - 方 陣 則 沒 有 特 別 的 順 序^ - 沒 有 陣 型^^即 使 在 最 後 一 種 情 況 下，玩 家 也 可 以 多 次 使 用 靠 緊 來 進 行 最 多 四 行 的 陣 型。
-str_npc18_intro|偉 大 的 人，等 一 下！我 想 跟 你 對 話！
+str_npc18_intro|大人，等一下！我有話想跟你說！
 str_npc19_intro|等等，指揮官。我有幾句話想跟你說。不，不，你不用下跪，即使你將要跟有王家之血的人對話。
 str_npc20_intro|等一下。你。我見過你。我認得你的臉。我曾經夢見過你…但為什麼會是你？現在我眼中的你，不過是一個卑微的奴隸嘛！
-str_npc21_intro|滾開，小蒼蠅，'ㄅ然窩揪打扁擬！啦啊啊啊！(*食人妖對你露出她的獠牙。*)
+str_npc21_intro|滾開，小蒼蠅，'不然窩就打扁尼！啦啊啊啊！(*食人妖對你露出她的獠牙。*)
 str_npc22_intro|嘿，{playername}。 Mae govannen（辛達林語：很高興見到你！）
 str_npc23_intro|離我遠點，陌生人！我可不想和你說話！
 str_npc24_intro|奇力，德瓦林之子，樂意效勞！
 str_npc25_intro|歡迎來到河谷鎮，旅行者！有什麼我可以做的嗎？
 str_npc26_intro|噓！如果你向警衛揮手，我就把你的內臟切下來，餵給座狼吃！
 str_npc27_intro|你 !
-str_npc18_intro_response_1|一 個 快 要 死 的 奴 隸，想 跟 我 對 話？你 要 說 些 甚 麼？
+str_npc18_intro_response_1|一個被關住，正在等死的奴隸，有話想跟我說？妳要說什麼？
 str_npc19_intro_response_1|你說王家之血？哈！是什麼讓你覺得自己有任何一滴王家之血？
 str_npc20_intro_response_1|看過來，妳什麼意思，巫婆？妳是誰？
 str_npc21_intro_response_1|阿是的，我被你嚇壞了呢。真是可怕的食人妖呢，被一根小小的鎖鏈栓著喔！來打扁我啊？
@@ -2138,7 +2138,7 @@ str_npc24_intro_response_1|{playername} 竭誠為您服務。都靈的子民們�
 str_npc25_intro_response_1|向你問好，我還在想是否有志願者可以加入我們的旅程呢。
 str_npc26_intro_response_1|把你的敵意放下，奇獸人！我不是告密者。
 str_npc27_intro_response_1|你 是 誰 ?
-str_npc18_intro_response_2|我不會在一個被判死刑的奴隸身上浪費口水。
+str_npc18_intro_response_2|我不會在一個等死的奴隸身上浪費口水。
 str_npc19_intro_response_2|無恥的混蛋。別擋我的路。
 str_npc20_intro_response_2|我沒有時間聽妳胡說八道，女巫。
 str_npc21_intro_response_2|這次姑且留妳一命吧，妳這骯髒的野獸。(離開)
@@ -2151,264 +2151,264 @@ str_npc27_intro_response_2|[忽略並離開]
 str_npc18_backstory_a|我才不是區區的奴隸！我是個獵頭的戰士，被騙走了我正當的地位！即使在你看來我是個女人，但我比許多其他人都更強壯和迅速，而我也打贏過不計其數的男人。格鬥坑之主-他真該死！他設計我，要我一次對付三個男人。三個！
 str_npc19_backstory_a|確切來說，是一小滴，但我媽告訴過我所有關於我血統的事。我是海德克，范哲爾王的直系後裔，比我們任何一個酋長都更接近洛汗和登蘭德的王位！我雖是黑髮，但我想某些地方應該有一絲黃色。
 str_npc20_backstory_a|在我的夢中，有一棵樹。一棵，全白的樹。而你，你在那裡，就站在它旁邊。你把你的手放在樹幹上，然後，它就整個枯萎到底了。然後天空中的陰影蔓延，空氣變的沉重。接著我聽見一道笑聲，自遙遠的東方傳來。
-; str_npc21_backstory_a|Hah, step an itsy bit closer an' I'll snap your neck like a twig.  Come on! I'll stomp on your liver, smash your bones into dust an' juice your head like a grape.
+str_npc21_backstory_a|哈，再靠近點窩就把尼的脖子像樹枝一樣折斷。來啊！窩會踩爛尼的肝臟，打碎尼的骨頭並把尼像葡萄一樣榨成汁。
 str_npc22_backstory_a|你可能曾聽說過我在戰場上的功績，那早已被凡人遺忘的功績。這次戰爭將會是艾爾達面臨的又一次危機，但這將是最後一次戰爭。 (注：艾爾達是精靈的別稱，星辰的子民)
 str_npc23_backstory_a|請原諒我的莽撞，陌生人，我們這裡的訪客很少並且他們看起來都並不可信。數週之前，這個矮人出現在這裡然後…不好意思，我跑題了。我的名字是露亞瓦納，幽暗密林中的西爾凡精靈(木精靈別稱)。
 str_npc24_backstory_a|感謝你這麼禮貌的詢問，{playername}。我們這在和入侵的東方人以及剛達巴半獸人交戰，但目前為止，沒有什麼事兒是我們和我們的河谷鎮盟友不能解決的。
 str_npc25_backstory_a|如果你去詢問兵營軍需官的話，可以肯定你會找到一些志願者。至於我？我有中等層次的治療師和草藥醫生技能。
 str_npc26_backstory_a|好啊，人們都叫我葛瑪。用腸子都能猜到我的頭兒和他手下那幫下僕正在獵殺我。 ^這群無用的豬玀！之前，我們被一群稻草人(對洛汗人的貶義稱呼)巡邏隊埋伏…他打輸了。 ‘退後！ ’他這樣尖叫道，然後就跑掉了。只有葛瑪和少數幾個還站得穩，並把騎兵衝鋒給打破了。呵呵呵，我們之後還把那群黃頭髮打成糊。當初要不是我們強大，早就不知道被什麼東西消化掉了。
 str_npc27_backstory_a|我是都戈什！
-; str_npc18_backstory_b|I prevailed! I defeated them! But... one of them was so weak that he perished from the blows I dealt him. If he had been a simple bondsman, that would have been the end of it. But no. He was one of Great Lord Lurmsakun's many sons, by a lesser wife.
+str_npc18_backstory_b|我贏了！我打敗了他們！但...其中一個太虛弱他導致命喪於我的攻擊下。如果他只是個簡單的奴隸，那就算了。但他不是。他是魯薩昆大人許多兒子中的其中一個，雖然是小房的。
 str_npc19_backstory_b|好吧，你不會找到任何洛汗或登蘭德人認同我的繼承權，但這仍是真的。我的奶奶是個牧羊女，住在丘陵上，某天老國王范哲爾，冒牌國王希優頓貪婪的祖父，碰巧看到在艾辛河岸上的她。他對她很著迷，我媽就是他的孩子。
 str_npc20_backstory_b|你不知道自己立於誰的面前嗎？無知的傻瓜。你要知道我是齊格爾菲爾，來自淪亡的努曼諾爾帝國-但你大概也不知道那個名字吧！你，也該知道，我尋求將過去的錯誤導正的方法，被維拉加諸在我和同胞身上的錯誤，祂們沉掉我們的無敵艦隊和家園。啊，亞爾法拉松，偉大而光榮！你的夢想將繼續被遺忘嗎？不，只要我齊格爾菲爾還活著且手還能動就不會！
-; str_npc21_backstory_b|Yer' a hard one, are ye? (*she sighs*) Name's Berta. Used to 'ave me a raidin' gang in the Misty Mountains, mind, the nastiest goblin thieves around. Those were the good days. Then we ran into a band of these wild ones from Gundabad.  Did some drinkin', some gamblin'... Next mornin' I woke all tied up, my lads in the wind. Now I break rocks and I haul their baggage around. Sometimes they 'ave me scrappin' for money.
+str_npc21_backstory_b|尼是個硬漢嘛，對吧？(*她嘆氣*)窩是貝爾塔。之前在迷霧山脈裡帶團掠奪，說起來，他們是附近最狠的哥布林盜賊了。真是一段好日子啊。不過有天窩們遇上了一群來自剛達巴的傢伙。喝了點酒，賭了些錢...隔天窩醒來就被綁住，窩的弟兄們也全溜了。窩現在只能幫他們打碎岩石或搬行李。有時還要幫他們打架賺錢。
 str_npc22_backstory_b|我是埃爾隆德大人向凱勒鵬大人派遣的大使，我的任務包括提供援助與建議，以支援位於羅馬尼安的戰爭。
 str_npc23_backstory_b|我很喜歡遊走在我們美麗森林的隱蔽小徑中有時我會放輕腳步，去觀察林中動物的習性對伊甸人來說，成捆的武器和高大的城牆很美;但就我個人而言，稀有鳥兒歌唱和野豬巢穴也並不遜色。
 str_npc24_backstory_b|在我尊敬的父親德瓦林的指揮下，也正如我們的傳統一般，我曾幫助加強孤山的防禦並訓練了一群矮人小伙子們。
 str_npc25_backstory_b|我曾治愈了吾王布蘭德的便秘，一個常見但影響男人上戰場的不適。一杯輕釀蒿木酒，腸道和精神就都放心了。
 str_npc26_backstory_b|於是我問我自己：'葛瑪，你打算以一坨爛肉的身份結束此生麼？'然後我回答：'絕不'^之後的一場戰鬥，我假裝受傷退到了部隊最後面，在沒人注意的情況下把我的頭兒幾乎劈成了兩半，又把他的助手下僕殺個精光^^...讓我沒想到的是，那個該死的爬行動物竟然沒死，還四處嚼舌根。下次遇到他我會保證把他的頭擰下來，啊哈哈...
 str_npc27_backstory_b|我是艾辛格的一名狼騎兵，也是一名追踪者。
-; str_npc18_backstory_c|And so here I am, cursed at and spit upon, condemned to die for being mightier than the dogs who mock me! Free me, Great One. Free me, speak for me - and my strength is yours. My blade is yours. My life is yours!
+str_npc18_backstory_c|於是我就在這裡了，被人咒罵和唾棄，因為比嘲笑我的臭狗們更強大所以被定罪！讓我自由吧，大人。讓我自由，為我申冤-那我的力量將屬於你。我的劍將屬於你。我的命將屬於你！
 str_npc19_backstory_c|自然，代格拉夫酋長和其他人都不希望給我獲得榮耀的機會，因為如果我在戰場上做了大事，那就會給我的繼承權帶來份量。人們就會湧到我的旗幟下！你是個名聞遐邇的人，指揮官。如果你讓我在你的旗幟下服役，我將會為你做出大事。
 str_npc20_backstory_c|淪亡的努曼諾爾帝國呦，你現在究竟在哪？消逝了，全都消逝了...那曾經有過光明，我們國家勝過一切的榮光，現在只剩下陰影。我美麗的家園現在只知道大海永恆的寂靜。但我心裡仍充滿著怒火，讓黑暗的野獸在體內狂奔。我知道你和你同胞想都沒想過的大法術。現在，聽好了！你會像你該做的一樣，懇求我的援助，還是像蟲子一樣，偷偷摸摸的爬走？快點決定！
-; str_npc21_backstory_c|Listen 'ere, tiny! If yer' some bigshot chief indeed, p'raps yer can talk to the bossman there and pay off what I owe? I reckon I could join your lil' band. See the world, eat some sheep... (*She licks her impressive fangs.*)
+str_npc21_backstory_c|聽好了，小傢伙！如果尼真的是個偉大的首領，尼應該可以跟老闆談談把窩欠的債付清吧？窩想窩可以加入尼的小隊。看看世界，吃點羊...(*她舔了舔嚇人的獠牙。*)
 str_npc22_backstory_c|然而，如果羅斯洛立安的敵人撤退了的話，我倒是會考慮加入你的隊伍一段時間，{playername}。我可以感覺到，我們的命運在這場戰爭中是相互交匯的。
 str_npc23_backstory_c|我猜你並沒有理解我剛剛說的話 - ？鑑於你正在為戰事做準備但你一定旅行了很遠很廣，那你之前見過其他大森林麼你可以帶我去那裡麼？
 str_npc24_backstory_c|然而我們在參戰的問題上有一點點遲鈍，這和先祖留下的戰士傳統不一樣。我聽說你在旅行中的行動遠多於我們，而且你的目的也與矮人友善。要知道一個精於戰鬥的矮人會大大提高你的生存機會。
 str_npc25_backstory_c|我聽說在我們這兒還有其他地方，戰事正在升級從你盔甲上的痕跡來看，你顯然已經遇險過多次了我想我卑微的技能能夠很好地幫助你的部隊;當然，這是為了所有人的明天。
 str_npc26_backstory_c|我是一名好戰的強獸人，也是一名狂戰士！凡是殺人需要的技能我都會。我曾為白掌效忠，但現在看來白手要把我推進火坑。^^我想跟你走，在艾辛格下僕們專心磨牙的時候去殺南方的人類。
 str_npc27_backstory_c|或許你是我下一位主人！
-; str_npc18_backstory_later|I have been fortunate, I suppose, that Great Lord Lurmsakun has been occupied elsewhere. His intendants have left me here to rot. But my destiny is not to die as a prisoner! Have you come to grant me my rightful death on the battlefield?
+str_npc18_backstory_later|我想，我很幸運，因為魯薩昆大人去別的地方忙了。他的手下把我放著讓我在這裡腐爛。但我的命運不該是作為一個囚犯死去！你能讓我像個戰士一樣堂堂正正的死在戰場上嗎？
 str_npc19_backstory_later|那邊的！你回來了，我就知道你會。我被忌妒的酋長們害的無所事事。讓我們談談吧，指揮官！我會跟隨你，並在你的行列中贏得自己的聲望。
 str_npc20_backstory_later|你仍在攪亂我的夢！為何讓我不得安寧？我夢裡的眼睛看的又深又遠。即使在多爾哥多這裡我仍看見你事蹟的影像。我說啊：如果你夠睿智的話，你現在就該再次請求我的援助了。
-; str_npc21_backstory_later|Look wha' the cat dragged in! Done well fo' yerself, then, 'ave yer? Had a lovely time strollin' around, not bein' chained to a damned rock?! Well ain't that nice! How 'bout yer go speak to the bossman for me? Now, better than never.
+str_npc21_backstory_later|瞧瞧哪隻小貓回來了！尼，過的不錯啊，對吧？看來是在外面過的很快活，不像窩被鏈在這該死的石頭上吧？真好啊！尼跟老闆談談窩的事吧？遲來，總比沒來好。
 str_npc22_backstory_later|你重新考慮過了麼艾爾達的時間不多了(注：艾爾達是精靈的別稱，星辰的子民？)。
 str_npc23_backstory_later|我已經觀察一個巨型蜘蛛巢好幾天了。我對它們的第一印象非常糟糕，簡直是醜陋的生物，但現在看來它們會讓入侵者陷入絕境。你是來邀請我跟你一起旅行的麼？
 str_npc24_backstory_later|建造防禦用牆對任何矮人都物有所值。但我也需要用用我的斧子。讓我跟著你吧。
 str_npc25_backstory_later|我又一次覲見了我的國王，這次是噁心嘔吐。我希望他參戰的決心不受他身體條件的影響。你也有便秘和噁心嗎？
 str_npc26_backstory_later|你以為我在做什麼？葛瑪正等著某些卑鄙下僕敲我悶棍呢。讓我跟你走吧，我會是個好僕人的。
 str_npc27_backstory_later|你重新考慮過了麼？我會是個好僕人的。
-str_npc18_backstory_response_1|如果你真的這麼勇猛，也許你可以為我而戰。當然，在我們餵飽你之後。
+str_npc18_backstory_response_1|如果妳真的這麼勇猛，也許妳可以為我而戰。當然，在我們餵飽妳之後。
 str_npc19_backstory_response_1|很好。只要你能在戰線中戰鬥，你就有所用處，登蘭德人。
 str_npc20_backstory_response_1|妳請求加入我的方式真奇怪，女巫。但好吧，妳可以一起來。
-; str_npc21_backstory_response_1|It's true you're rather large and look like you can handle yourself in a scrap. I might have use for you.
+str_npc21_backstory_response_1|確實妳看起來很大隻也似乎懂得如何打架。對我應該是有點用處的。
 str_npc22_backstory_response_1|請原諒我冒昧的請求，但我的隊伍在接下來的戰鬥中很需要你的才能。
 str_npc23_backstory_response_1|我們在整個中土世界旅行，守護一切美好的東西，並給我們的敵人帶去死亡。
 str_npc24_backstory_response_1|的確，我們隊伍很歡迎一位矮人戰士的加入。
 str_npc25_backstory_response_1|我們的確需要一名治療師和草藥醫生。
 str_npc26_backstory_response_1|我想我會充分發揮一名狂戰士的才能的。
 str_npc27_backstory_response_1|你會的。
-str_npc18_backstory_response_2|呸！一隻兇殘的狗不適合做我的同伴。
+str_npc18_backstory_response_2|呸！一隻兇殘的鬥犬不適合做我的同伴。
 str_npc19_backstory_response_2|你說大事。在你再次靠近我之前，先自己去做一些吧！
 str_npc20_backstory_response_2|呸！我看妳比起咬更會吠。我還有工作要做！
-; str_npc21_backstory_response_2|Bad luck, troll. I can't afford to haggle for the likes of you.
+str_npc21_backstory_response_2|真不走運啊，食人妖。我可沒辦法為妳這種的殺價。
 str_npc22_backstory_response_2|對不起，我們對人形衣架不感興趣。
 str_npc23_backstory_response_2|對不起，我們自己能行。
 str_npc24_backstory_response_2|對不起，我們只會在需要的時候拜訪治療師。
 str_npc25_backstory_response_2|對不起，我們只會在需要的時候拜訪治療師。
 str_npc26_backstory_response_2|哈！我可不相信叛徒。
 str_npc27_backstory_response_2|我 不 需 要 你，奴 隸。
-str_npc18_signup|哦，把肉放進我的嘴裡！一旦我的手和腳自由了，我的肚子裡有食物，你很快就會看到我真正的勇氣了！
+str_npc18_signup|噢，還能再吃到肉啊！一旦我的手腳自由，肚子裡有食物，你就可以見識到我真正的氣概了！
 str_npc19_signup|是的，你現在可以這樣叫我，因為我並不為我的登蘭德之血感到羞恥。我的同胞在洛汗國王的暴政下備受煎熬，讓我覺得自己與他們之間沒有一點親屬關係。我將在這場戰爭中幫助你。指揮官，但是作為回報，你必須在時機成熟時宣揚我的繼承權。
 str_npc20_signup|我會暫時忽略你的傲慢，但要知道總有一天我們會再次談話。也許那時，我們都會站在黑暗之主面前，我以前認識他時名字還跟現在差很多呢，讓我們看看他會聽誰的話。也許那時我會教教你該有的禮貌。
-; str_npc21_signup|Now yer' talkin'! Go see the boss and let me outta this hole.
+str_npc21_signup|尼很懂嘛！去看老大會不會讓窩離開這鬼地方吧。
 str_npc22_signup|我明白了，我不得不承認你的名聲與功績已被我所知。
 str_npc23_signup|我不喜歡戰爭中的暴力和武器，但至少我還知道該怎麼保護好我自己。
 str_npc24_signup|我可以熟練的使用斧子，不管揮砍的還是投擲的都可以。如果你讓我和商家交談的話，我還可以盡量爭取更高的折扣。我還有一雙發現戰利品的慧眼，如果你讓我在戰後打掃戰場的話。
 str_npc25_signup|真的麼？那我需要一點時間準備草藥和配方。
 str_npc26_signup|我比你所有的下僕加起來都有價值。一個好戰的強獸人永不後退。
 str_npc27_signup|真的麼？我的加入會幫助你很多的。
-str_npc18_signup_2|我母親曾經告訴我，我生來就是為了砍許多敵人。對你來說，我要殺死許多西方軟弱的人。只要有一把好刀放在我手裡，剩下的交給我吧！
+str_npc18_signup_2|我的母親曾告訴過我，我生來就是要砍殺敵人的。為了你，我會殺死許多西方的弱者。只要給我一把好的刀刃，剩下的就交給我吧！
 str_npc19_signup_2|我和我的同胞一起戰鬥，就像夜晚的狼一樣。我會投擲長槍，或者把長矛刺進衝鋒騎兵的胸膛。我會斧頭或劍砍掉人的四肢。對你，我就講白了：我不在乎你為邪眼或白掌服務。只要我能在金之大殿中坐在我應得的王位上，對我來說就是一切。
 str_npc20_signup_2|但就目前而言，讓我用傳說和多年的工藝為你服務吧。要知道：有了我齊格爾菲爾援助你，你就會像一條在烏頓深坑中得到翅膀的龍。我會為你和你的目的做出大事，即使你現在不會明白的！
-; str_npc21_signup_2|I'll be right behind yer, don't yer worry.
+str_npc21_signup_2|別擔心，窩會跟著尼的。
 str_npc22_signup_2|如果你在野外保持高調並被敵人圍攻的話，戰鬥肯定不會勢均力敵。我會幫助你的。
 str_npc23_signup_2|也許我可以教你怎麼快速移動並且保持安靜，我們走吧！
 str_npc24_signup_2|如果你能好好管束隊伍中的高個們，尤其是那些奸猾似鬼的精靈，我會很高興加入你的。
 str_npc25_signup_2|我必須先警告你，我在戰場上一點用處都沒有。不過我相信你會保護好我的，不是麼？
 str_npc26_signup_2|你最好快點決定，這裡的守衛越來越多疑了。
 str_npc27_signup_2|你不會後悔帶我走的。
-str_npc18_signup_response_1|我喜歡你的精神。 很好，我幫你向魯薩昆發轉達。
+str_npc18_signup_response_1|我喜歡妳的精神。 很好，我會派人向魯薩昆替妳說情的。
 str_npc19_signup_response_1|好吧，那麼，'王子'，拿起你的武器。現在，你為我而戰。
 str_npc20_signup_response_1|為了妳著想，我希望，妳的言語不是空談。別讓我失望，齊格爾菲爾。
-; str_npc21_signup_response_1|Very well, we shall see if you prove worthy.
+str_npc21_signup_response_1|很好，讓我們看看妳能不能證明自己的價值。
 str_npc22_signup_response_1|精靈貴族的加入是我們的榮幸。
 str_npc23_signup_response_1|很好，我只希望你不會一見獸人就腳底抹油。
 str_npc24_signup_response_1|很好，矮人大師，歡迎你的加入。
 str_npc25_signup_response_1|我保證，你跟我們在一起會非常安全的。我們很快就出發。
 str_npc26_signup_response_1|很好，我說什麼你就做什麼，我保證你吃香的喝辣的。
 str_npc27_signup_response_1|非常好，我們走。
-str_npc18_signup_response_2|你很兇......   也許太兇了。 現在多花一點時間可能會教你順從。
+str_npc18_signup_response_2|妳很兇猛...也許太兇猛了。再多關一段時間應該能教教妳何謂順從。
 str_npc19_signup_response_2|看來你還得在乾草捆上再坐一會了，'王子'。
 str_npc20_signup_response_2|妳的吹牛和惡言讓感到我刺耳。我們再次交談前先管管妳的舌頭吧！
-; str_npc21_signup_response_2|I have no need for you at the moment.
+str_npc21_signup_response_2|我現在用不著妳。
 str_npc22_signup_response_2|經過仔細考慮，我想我們自己就能幫助羅斯洛立安。
 str_npc23_signup_response_2|對不起，我根本無法想像你在戰場上的樣子。
 str_npc24_signup_response_2|對不起，我碰巧喜歡精靈。
 str_npc25_signup_response_2|抱歉，隊伍中的每一個人都要上戰場。
 str_npc26_signup_response_2|我 改 變 主 意 了。正 在 找 你 的 人 可 能 會 來 找 我。
 str_npc27_signup_response_2|我 改 變 主 意 了。
-str_npc18_payment|你是個強大的統帥，只需說一句話，他們就可以釋放我。\n[花費{reg14}對{s14}的影響]
+str_npc18_payment|當然，像你這樣強大的指揮官只要開口，他們就會釋放我吧。[花費對{s14}的{reg14}影響力]
 str_npc19_payment|看來黑酋長代格拉夫可能會找個藉口把我扣留在這裡，指揮官。[花費對{s14}的{reg14}影響力]
 str_npc20_payment|相反的，你最好不要讓我或我們共同服務的主人失望。他對你的評價夠好了嗎？[花費對{s14}的{reg14}影響力]
-; str_npc21_payment|Speakin' of 'worth', that little debt of mine might not be all that little, if yer catch me drift. And the bossman might try and pull a sneaky on yer, so watch out! [costs {reg14} Influence with {s14}]
+str_npc21_payment|說到’價值’，窩欠的那點債可能不只那麼一點，尼懂吧。老闆可能會想好好的榨尼一筆，要小心啊！[花費對{s14}的{reg14}影響力]
 str_npc22_payment|我們會很快一同踏上旅途的，但不是現在。羅斯洛立安依舊需要我在這裡協助。如果我的加入被敵人早早得知的話，價值就會大大降低。 [需要{s14}的{reg14}點影響力]
 str_npc23_payment|我很想加入你的隊伍，但職責所在，現在我不能離開。 [需要{s14}的{reg14}點影響力]
 str_npc24_payment|我很想加入你的隊伍，但在最需要幫助的時刻離開這裡，我高貴的父親德瓦林是不會理解我的。 [需要{s14}的{reg14}點影響力]
 str_npc25_payment|我還是不能放棄我的職責，我的國王仍然需要我。畢竟他的健康和河谷鎮的安全息息相關。 [需要{s14}的{reg14}點影響力]
 str_npc26_payment|我很想跟你走，但城門的守衛是不會放行的。 ^相信我，我試過了。 [需要{s14}的{reg14}點影響力]
 str_npc27_payment|我很想加入你的隊伍，但職責所在，現在我不能離開。 [需要{s14}的{reg14}點影響力]
-str_npc18_payment_response|毫無疑問。 魯薩昆的下屬不敢拒絕我。 [花費{reg14}/{reg15}影響力]
+str_npc18_payment_response|當然。魯薩昆的屬下怎麼敢拒絕我。 [花費{reg14}/{reg15}影響力]
 str_npc19_payment_response|一旦我說清楚，黑酋長代格拉夫將不得不在我的願望前放行。 [花費{reg14}/{reg15}影響力]
 str_npc20_payment_response|我確實有。來吧！畢竟，妳跟隨的，不是一個卑賤的奴隸。[花費{reg14}/{reg15}影響力]
-; str_npc21_payment_response|Whatever he might try, you are leaving with me. [costs {reg14}/{reg15} Influence]
+str_npc21_payment_response|不管他想耍什麼花招，妳都得跟我走。[花費{reg14}/{reg15}影響力]
 str_npc22_payment_response|請相信我，你的加入比留在這裡更有價值。 [花費{reg14}/{reg15}點影響力]
 str_npc23_payment_response|從今往後你的職責就是跟隨我。 [花費{reg14}/{reg15}點影響力]
 str_npc24_payment_response|德瓦林大人會理解的，畢竟一個可以逆轉戰局的矮人戰士不應該和敵人隔離太久。 [花費{reg14}/{reg15}點影響力]
 str_npc25_payment_response|國王的健康是很重要，但跟著我你會拯救更多的生命。 [花費{reg14}/{reg15}點影響力]
 str_npc26_payment_response|哦？不過跟我在一起，守衛是不敢阻攔你的。 [花費{reg14}/{reg15}點影響力]
 str_npc27_payment_response|從今往後你的職責就是跟隨我。 [花費{reg14}/{reg15}點影響力]
-str_npc18_morality_speech|棒極了！我對血液的渴望是沒有止境的！我們別懦夫一樣，{s21}，讓我和他們戰鬥吧！
+str_npc18_morality_speech|大人！我對血液的渴望沒有被滿足！為何我們要{s21}，像懦夫一樣？讓我跟他們戰鬥吧！
 str_npc19_morality_speech|指揮官，我非常不喜歡我們{s21}。像我這樣的一個王應該要是大方的，但是如果食物庫是空的我將沒東西可給，士兵將會拋棄我們。
 str_npc20_morality_speech|指揮官，我應該說自己對你的期望更高，但那會是個謊言。當心，不然你的自私行為會壞了上人們崇高的計劃！
-; str_npc21_morality_speech|Listen 'ere, chief. A well respected raidin' company can't just {s21} and leave the lads' stomachs agrowlin'!  And mine, look what a biggun' it is too! I might just go and have a little nibble off one of the smaller ones - a finger, a leg maybe... 
+str_npc21_morality_speech|聽好了，首領。受尊敬的掠奪隊不能就{s21}並讓弟兄們餓著肚子！窩的也是，聽它叫的多大聲！看來窩得先去啃哪個小傢伙了-一根手指，還是一條腿呢...
 str_npc22_morality_speech|您必須慎重考慮您的行為，指揮官。 {s21}使我和其他戰士們顏面無存，而且這還會減少我們盟友的信心。
 str_npc23_morality_speech|[無首要道德規範]
 str_npc24_morality_speech|我並不為您作出{s21}的決定感到高興。戰死是任何腦袋正常的矮人心中的榮耀，而被懦夫帶領則是羞恥。要是我的表親們知道這事兒，他們會怎麼評價我？
 str_npc25_morality_speech|指揮官，我不得不說，{s21}對任何一個男人來說都是嚴酷且不必要的。我會盡我所能減少他們的痛苦，但請不要再犯這樣嚴重的錯誤了。
 str_npc26_morality_speech|一個好戰的強獸人永不{s21}。如果主人現在還有丁點膽量…或許某天早上就丁點兒不剩了，葛瑪說完了。
 str_npc27_morality_speech|[無首要道德規範]
-str_npc18_2ary_morality_speech|我加入你們不是為了{s21}，而是為了沐浴我們敵人的鮮血！你現在可以用你的詭計，但請馬上讓我好好的殺戮吧！
+str_npc18_2ary_morality_speech|大人，我加入你才不是為了{s21}，而是為了沐浴在敵人的鮮血之中！你可以使用你的詭計，但請早日讓我好好的殺戮吧，求求你了！
 str_npc19_2ary_morality_speech|[無次要道德規範]
 str_npc20_2ary_morality_speech|啊，我們偉大的指揮官。你說，你做了大事？我想知道你們還有多少戰鬥是這樣結束的，你不顧同伴的安危衝進了一個陷阱，然後又倉促的逃走。
-; str_npc21_2ary_morality_speech|Now where did all the grub go, ey? Need some help bean-countin'?! A proper chief would fetch me a nice juicy leg o'lamb, or a tasty dwarf. Poor ol' me, I'm stuck with yer instead.
+str_npc21_2ary_morality_speech|吃的東西都哪去了，啊？需要幫忙數豆子嗎？！一個正當的首領會給窩一根肥美的羊腿，或好吃的矮人。窩真可憐，只能跟著尼。
 str_npc22_2ary_morality_speech|[無次要道德規範]
 str_npc23_2ary_morality_speech|[無次要道德規範]
 str_npc24_2ary_morality_speech|[無次要道德規範]
 str_npc25_2ary_morality_speech|[無次要道德規範]
 str_npc26_2ary_morality_speech|[無次要道德規範]
 str_npc27_2ary_morality_speech|[無次要道德規範]
-str_npc18_personalityclash_speech|大人，如果你認為瓦爾凡是一個戰士，我懇求你讓他盡可能遠離我。 我已經警告過他，他的手不能放在我不讓他們皆近的地方，否則我就把他們砍掉，餵給他的馬吃。
+str_npc18_personalityclash_speech|大人，如果你認為瓦爾凡有當一個戰士的價值，我求求你盡量讓他遠離我。我已經警告過他如果他再把手放在我身上，我就會把它們砍掉餵給馬吃。
 str_npc19_personalityclash_speech|指揮官，我很想知道你究竟為何還留著像烏弗塔克這樣的低等生物。當然，半獸人渣滓是我們這種真正戰士的擋箭牌，但他在營地裡四處遊蕩向人們和半獸人發出命令，就好像他有權威一樣。如果我把他殺掉希望你不會太想念他。或許我該把他那難看的鼻子切掉。
 str_npc20_personalityclash_speech|那個南方人萊克亞達應該學會禮貌，學會謙遜，他的舌頭無禮，他的舉止也太傲慢了，我不管他是不是同胞中的一名隊長-怎麼說，他們都是個愚蠢的低等種族，他們對於偉大的認知很慢，也不懂得向上人鞠躬！如果他知道我能對他做的事中的一小部分...
-; str_npc21_personalityclash_speech|Blimey, chief, but that Sickburpfoul's a bit of a mad bat, ain't she? Yer can tell she's cooked one crow too many in that there cauldron of hers, the one what I drag on me poor ol' back at Her Ladyship's command. And lumme if she don't look at me down the end of the nose like I was a piece of dung scrapings, and her head not even up to me navel! Enough to make me want to 'ave her noggin meet my fist, I reckon. But I've seen her sort afore, yes I 'ave. With the likes o' her around, yer wants a pair o' extra eyes round the back of your 'ead, and no mistake.
+str_npc21_personalityclash_speech|天啊，首領，那個臭老太婆是不是有點瘋了啊，對不對？尼能看得出她用那口釜煮了太多隻烏鴉了，就連窩帶來的那隻也被她的命令拿走了。而且她每次都用鼻孔看窩好像窩是地上的屎一樣，她甚至還沒窩的肚臍高呢！真是，搞的窩好想讓她的臉嘗嘗窩的拳頭。說起來窩看過這種類型的人，是的窩有。有她這種人在身旁，尼應該多留心注意背後，不會錯的。
 str_npc22_personalityclash_speech|我提到我討厭{s11}嗎？
 str_npc23_personalityclash_speech|{playername}，我剛剛看到{s11}公然從一個滿是雛鳥的鳥巢旁邊經過。他的笨拙摧毀了那群無辜生命。
 str_npc24_personalityclash_speech|{s11}大人在戰鬥中表現得很好，但我不知道他是否利用頭髮閃瞎他的敵人？還是說他們對他的名聲和傲慢風度感到敬畏？
 str_npc25_personalityclash_speech|指揮官，我必須對{s11}提出投訴。他不停的糾纏我，讓我給他釀造某種名為‘綠色仙女’的東西。
 str_npc26_personalityclash_speech|我提到我討厭{s11}嗎？
 str_npc27_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc18_personalityclash_speech_b|我想問一下，你在瓦爾凡上設定的血價是多少？如果我殺了他或使他殘廢，我會付給你作為補償。那場戰鬥之後，他正斜視著我，舔著他那骯髒的嘴唇。如果他再那樣看著我，我就把他的眼球挖出來餵給他。
+str_npc18_personalityclash_speech_b|大人，我想問一下，瓦爾凡的身價對你來說是多少？如果我殺了他或使他殘廢，我會付錢給你作為補償。剛剛戰鬥之後他一直斜眼看我，舔著他那骯髒的嘴唇。如果他再那樣看著我，我就把他的眼球挖出來餵給他。
 str_npc19_personalityclash_speech_b|正如我所料，那自稱烏弗塔克的懦弱半獸人在戰場上沒什麼價值。 他躲在隊伍後面，很少幫助他的同伴。我認為，他實在幫不上忙-無論是你的大業-或我的王位繼承之戰都是。
 str_npc20_personalityclash_speech_b|指揮官，如果萊克亞達的雙手對我們沒有用處，我應該將它們從他身上摘下來。你知道我習慣於在戰鬥結束後在倒下的敵人周圍散步-臨死之前的恐懼和痛苦對於法術很有幫助，儘管你們都不懂吧。 然而他，那個黝黑的南方人，悄悄地給正在被恐懼和痛苦折磨中的人解脫。他內心的那點慈悲無法讓我沐浴在人們死前的哀號！我想知道，他的寶貴榮譽對你究竟有多重要？
-str_npc21_personalityclash_speech_b|我討厭{s11}。
+str_npc21_personalityclash_speech_b|窩討厭{s11}。
 str_npc22_personalityclash_speech_b|我討厭{s11}。
 str_npc23_personalityclash_speech_b|他的矮人之道有可能幫助他在地下更好的生存，但他至今沒有掉進一個醜陋豎井顯然是一個奇蹟，也許他應該掉下去。
 str_npc24_personalityclash_speech_b|我覺得隊伍中要是有一位矮人英雄會更好，比如不死都靈的族人，讓我我們就可以讓精靈們在他們自己的樹林中折騰了。
 str_npc25_personalityclash_speech_b|它是由浸在酒中的蒿木製成，受到吟遊詩人和流浪漢的青睞，他們可是靠著這種東西白日做夢呢。我懷疑你會批准你的士兵在戰場上追逐空氣，儘管這種場面看起來應該會很有趣。
 str_npc26_personalityclash_speech_b|我討厭{s11}。
 str_npc27_personalityclash_speech_b|我討厭{s11}。
-str_npc18_personalityclash2_speech|葛魯姆不僅是一個奸詐的野獸，他為自己是一隻動物而自豪。 他昨晚在篝火旁再次告訴我們他的故事，吹噓他的犯規行為。 你最好好好地觀看那個生物。 如果他再次為服務白掌時，背叛了他的指揮官，有什麼能阻止他和你做同樣的事情？
+str_npc18_personalityclash2_speech|大人，葛魯姆不僅是一隻奸詐的野獸-他還為此感到自豪。他昨晚又在營火邊說他的故事，吹噓他的惡行。大人，你最好注意一下那東西。 如果他能在為白掌服務時背叛他的指揮官，有什麼能阻止他對你做同樣的事情呢？
 str_npc19_personalityclash2_speech|我討厭 {s11}
 str_npc20_personalityclash2_speech|每當我見到弗達米爾，無名的怒火就會從我心中升起。不，不，不是他做了什麼。但他和他的同胞，昂巴的海狗們，對不起他們流著的血脈。他們竟敢說自己是古代西方人的繼承者-當然，他們說的是'努美諾爾'，根本就不懂嘛。我想，弗達米爾的血管裡根本連一滴正統的血都沒有！或許，如果你能把他交給我，我可以自己找看看...
-; str_npc21_personalityclash2_speech|I've been thinkin', chief - how does one kill a witch? Without gettin' turnt into a pile o'slugs, I means. That ol' bat's been givin' me the evil eye again and it made me skin crawl the whole day. On the inside! I'm 'appy to smash heads and break shields in a scrap, but what SHE does to the heads I did done smashed, when nobody's lookin'?! I don't play with me food, not like that. Gives me the creeps, tha' one.
+str_npc21_personalityclash2_speech|窩在想啊，首領-要怎樣才能殺死女巫呢？窩是說，不會被變成蛞蝓的那種殺法。那隻老蝙蝠又用邪惡的眼神看窩搞的窩整天雞皮疙瘩。連體內也是！窩很喜歡在打架時打爛腦袋或打破盾牌，但她在沒人注意的時候，對著窩沒打爛的那些腦袋做的事？！窩可不會玩食物，至少不會那樣玩。那人，真讓窩毛骨悚然。
 str_npc22_personalityclash2_speech|我提到我討厭{s11}嗎？
 str_npc23_personalityclash2_speech|我提到我討厭{s11}嗎？
 str_npc24_personalityclash2_speech|一場不錯的小衝突，是吧隊長？要是沒有精靈女士{s11}那些喪氣的行為就更好了。
 str_npc25_personalityclash2_speech|我提到我討厭{s11}嗎？
 str_npc26_personalityclash2_speech|我提到我討厭{s11}嗎？
 str_npc27_personalityclash2_speech|我提到我討厭{s11}嗎？
-; str_npc18_personalityclash2_speech_b|That misshapen creature Gulm had better guard his neck, or I'll slice through it! I was about to slay a foe, but he stepped in front of me and made the kill that should have been mine. Then he had the gall to turn around and sneer at me! He and his kind had better remember that they were bred to serve us! Honourless curs.
+str_npc18_personalityclash2_speech_b|葛魯姆那個畸形的東西最好護著他的脖子，不然我就要割開它了！我正要斬殺敵人時，他竟然跑到我面前撿了尾刀。然後他還膽敢轉身過來對我冷笑！他和他的同胞最好記住自己就是生來為我們服務的！無恥的雜種狗。
 str_npc19_personalityclash2_speech_b|我討厭{s11}。
 str_npc20_personalityclash2_speech_b|他不可能是我們中的一員。不，像弗達米爾那樣絕對不可能。不，我們的血脈不可能變得這麼稀薄，我們的血統不可能衰弱成這樣！難道你們都沒注意到他講不出幾句我們真正的語言嗎，看不出他的樣貌比起我失落家園的人更像是來自哈拉德威治嗎？我們曾有過英雄-以速度和力量跟星辰之子抗衡的，英雄啊！弗達米爾又慢，又笨拙，還...不，我能感到西方吹來的冷風。令我發寒...令我發寒啊！
-str_npc21_personalityclash2_speech_b|我討厭{s11}。
+str_npc21_personalityclash2_speech_b|窩討厭{s11}。
 str_npc22_personalityclash2_speech_b|我討厭{s11}。
 str_npc23_personalityclash2_speech_b|我討厭{s11}。
 str_npc24_personalityclash2_speech_b|一場不錯的小衝突，是吧隊長？要是沒有精靈女士{s11}那些喪氣的行為就更好了。
 str_npc25_personalityclash2_speech_b|我討厭{s11}。
 str_npc26_personalityclash2_speech_b|我討厭{s11}。
 str_npc27_personalityclash2_speech_b|我討厭{s11}。
-; str_npc18_personalitymatch_speech|Great One, do you mark how deadly Lykyada is in battle? How swift his arrows, how sharp his blade! With your permission, Great One, I should like to spend more time training under his tutelage. He has much he could teach me that could make me more useful to you.
+str_npc18_personalitymatch_speech|大人，你有注意到萊克亞達在戰鬥中有多致命嗎？他的箭多麼迅速，他的刀刃多麼鋒利！大人，如果你能允許，我想花更多時間在他的指導下訓練。他有很多東西能教我讓我對你更有用處。
 str_npc19_personalitymatch_speech|戰鬥的喜樂在我的血液中歡唱！瓦爾凡的也是，我看的出來。那人在戰場上令人生畏，邊笑邊撞倒逃跑的沒用敵人們。這些來自東方的人讓我很感興趣，指揮官。如果我坐上王位後洛汗人不教登蘭德人的話，我們能從他們身上學到很多馬術的精隨。
-str_npc20_personalitymatch_speech|瞧瞧博扎格吧，博扎格真棒啊！看看他如何以那弓形的腿行走，隨著我的意思跑來跑去，做著我要他做的事情。我說，這正是一個小小'半獸人'應有的姿態。指揮官，我還蠻喜歡他的。博扎格！把藥膏拿給我！現在！
-; str_npc21_personalitymatch_speech|Ha! Chief! Last night, right, I was a-watching that poor little blighter Ufthak for a bit. 'E's a funny little fella, and no mistake! I made 'im cook me some meat he'd stashed away, right, and then I et it, right 'fore his face! Blimey if he didn't bawl his eyes out! Yer should've saw how his nose runs when he bawls, it don't 'arf run like a stream! Ha! Good thing yer keep him around!
+str_npc20_personalitymatch_speech|瞧瞧博扎格吧，博扎格真棒啊！看看他如何以那弓形的腿行走，隨著我的意思跑來跑去，做著我要他做的事情。我說，這正是一個小小'半獸人'正當的姿態。指揮官，我還蠻喜歡他的。博扎格！把藥膏拿給我！現在！
+str_npc21_personalitymatch_speech|哈！首領！昨晚，對，窩有看到烏弗塔克那個可憐的小伙子。他是個有趣的傢伙，說真的！窩叫他把一些他私藏的肉拿出來煮，對了，然後窩把它們吃了，就在他面前！天啊他就哭出來了！尼真該看看他邊哭邊流鼻水的樣子，流個不停啊！哈！尼把他帶著真是對了！
 str_npc22_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc23_personalitymatch_speech|{playername}，我討厭戰鬥，所以我在戰時沒法幫忙。我注意到{s11}大人光芒萬丈般的衝了出去，然後像雄鷹一樣撲在了邪惡造物身上。
 str_npc24_personalitymatch_speech|血腥和勝利，正如我所喜歡的！然而我確實受了點小傷，但{s11}已經很好地幫我包紮了。
 str_npc25_personalitymatch_speech|又是一場胜利，指揮官，我對您的戰術安排非常滿意，像{s11}那樣的戰士也把您的戰術發揮得淋漓盡致。
 str_npc26_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc27_personalitymatch_speech|我提到過我喜歡{s11}嗎？
-; str_npc18_personalitymatch_speech_b|Great One, it speaks well of you that a warrior like Lykyada fights under your banner. I had thought all Southerners weak and decadent, not so different from the men of the West, but if they have more like him among their ranks, then the days of the West are indeed coming to an end.
+str_npc18_personalitymatch_speech_b|大人，讓萊克亞達這樣的戰士在你的旗幟下戰鬥真是個正確的決定。我原以為南方人都是軟弱頹廢的，跟西方人差不多，但如果他們之中有更多像他這種人，那西方的好日子就所剩無幾了。
 str_npc19_personalitymatch_speech_b|指揮官，瓦爾凡和我昨晚圍著營火分享了一袋酒。我好好的諮詢了他，因為他記得先人的事蹟，每人都該如此。我不確定是否，如他所說，我們祖先的靈魂與我們同在。確實，我不喜歡這種想法。但一個王必須知道他血統的故事，無論是父母或更早的先祖。瓦爾凡是個懂這點的人。
 str_npc20_personalitymatch_speech_b|我從來沒見過像博扎格這樣的'半獸人'。噢，我承認他長的不好看，但多年下來他是我遇到第一個除了單單潛行、躲藏和殺戮之外還能做其他事的。他粗糙的雙手出奇的靈巧。是的，真的出奇靈巧... 或許他比我原先認為的能學到更多關於筋骨的技藝。
-; str_npc21_personalitymatch_speech_b|That silly Ufthak keeps tryin' to sneak away, but I'll always catch 'im, yes I will. It's almost like the old days, chief. When I had me band o'lads at me service. Or way back o'er the mountains, when I had me boys with me -- Bert, and Bill, and Tom... Ah well. Them days be long gone. Where's that little ratty rascal gone now, eh? Ufthak! Come 'ere, yer no-good skulker!
+str_npc21_personalitymatch_speech_b|那個傻呼呼的烏弗塔克一直想溜走，但窩都會把他抓回來，對的窩會。感覺就好像以前那些好日子呢，首領。當窩還有一票小子服侍窩的那時。或更以前在山裡，窩那些孩子還在時--伯特、比爾和湯姆...好吧 。那些日子都過去了。咦，那個死小鬼跑哪去了？烏弗塔克！過來，別躲啊廢物！
 str_npc22_personalitymatch_speech_b|我喜歡 {s11}。
 str_npc23_personalitymatch_speech_b|我在想他有多大年齡，或許比我老上十幾個世紀？算了，您不會明白的。
 str_npc24_personalitymatch_speech_b|{s11}和她的河谷鎮族人哪怕達不到矮人戰士的標準，但還時這場戰爭中我們最堅定的盟友。要我說，他們是人類中朋友和伴侶的最好選擇。
 str_npc25_personalitymatch_speech_b|河谷鎮人非常尊重堅強的孤山矮人。儘管我們有著不同的種族和風俗，但他們依舊是我們的好友和值得託付後背的伙伴，
 str_npc26_personalitymatch_speech_b|我喜歡 {s11}。
 str_npc27_personalitymatch_speech_b|我喜歡 {s11}。
-str_npc18_retirement_speech|我想我想安定下來，養家糊口，我不知道，我想去做刺繡或做其它事。再見。
+str_npc18_retirement_speech|我認為我想安定下來建立家庭，我不知道，去做刺繡或其它事吧。再見。
 str_npc19_retirement_speech|聽著，怪人到處聲稱自己是王家的私生子並不是政府體制的基礎。
 str_npc20_retirement_speech|也許憤怒不是對的。 我們所需要的是愛。 為什麼我們不能好好相處？
-str_npc21_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
+str_npc21_retirement_speech|窩厭倦了戰士的生活，窩要退休。
 str_npc22_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc23_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc24_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc25_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc26_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc27_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
-str_npc18_rehire_speech|我的刀渴望血液， 讓我再次和你一起殺敵！
+str_npc18_rehire_speech|我的刀刃仍渴望血液，大人，讓我再次和你一起走吧！
 str_npc19_rehire_speech|很高興再次見到你，指揮官。請允許我重新加入你們一眾。
 str_npc20_rehire_speech|我們走吧，指揮官。懶散是打不贏這場戰爭的！
-; str_npc21_rehire_speech|How've yer been, chief? Should I pack me things and be off with yer again?
+str_npc21_rehire_speech|最近尼過的如何啊，首領？窩該打包再跟尼走嗎？
 str_npc22_rehire_speech|很高興見到你，{playername}。讓我們再一次一起旅行。
 str_npc23_rehire_speech|很高興見到你，{playername}。我們要一同踏上旅途麼？
 str_npc24_rehire_speech|我的斧子已經準備好了，{playername}。你要我重新加入麼？
 str_npc25_rehire_speech|你的出現真讓我受寵若驚，我能再次加入你的隊伍麼？
 str_npc26_rehire_speech|葛瑪準備好再次為你殺敵了，走麼？
 str_npc27_rehire_speech|我能再次為你服務嗎？
-; str_npc18_home_intro|Ah, the Anduin. Great One, you will have heard of the great victories of the Wainriders many generations ago? They made an alliance with us Variags, and together our warriors crushed the pitiful armies of Gondor, under the king they called Ondoher. What a glorious slaughter our forefathers must have enjoyed!
+str_npc18_home_intro|啊，安度因。大人，你有聽過數個世代之前戰車民大勝利的事蹟嗎？他們跟維瑞亞人結盟，並一起摧毀了，剛鐸在奧德赫爾王領導下可憐的軍隊。我們的祖先一定好好的享受了這光榮的屠殺。
 str_npc19_home_intro|啊，伊多拉斯。我應得的王位。看那邊，指揮官，那座金之大殿。在幾個世代之前，就是在美杜塞爾德門口聖盔鎚手的最後一子被斬殺了，在那之後沃夫就成王了，有段時間都是如此。當然，不是現在登蘭德的沃夫酋長-那個只是一個有著偉大生物名字的雜碎。
 str_npc20_home_intro|啊，孤山，近來，都靈一族最後的堡壘，不是嗎？終於親眼看見它讓我感到愉悅。愉悅，是的...但還是比不上看見瀕死矮人的回憶，被我用法術延長的死亡啊。確實，矮人很勤勞！但創造者奥力並沒有讓他們變得更能忍受痛苦呢。
-; str_npc21_home_intro|Oi, chief! That there is a bad place! Dol Guldur, the darkest den of the worst kinds of things. All them trees around and not one juicy squirrel, not one tasty bird on them branches. Don't need to be no witch or nuffin' to know the smell of them Dark Ones, and that's the shape of it.
+str_npc21_home_intro|喂，首領！那個地方很糟糕啊！多爾哥多，黑暗到不行的壞東西的巢穴。周圍都是樹但連一隻肥美的松鼠都沒有，枝頭上一隻好吃的鳥也沒有。不用是女巫都能感到黑暗的氣息，那就是黑暗的樣子啊。
 str_npc22_home_intro|達羅！ 那是艾辛格和奧桑克塔的黑塔。 自從我上次見到它們以來，已經發生了很大的變化，沒有甚麼事比這個更好。
 str_npc23_home_intro|打擾一下，{playername}。這部分路變得更加扭曲，一些還是死路。我們一定很接近多爾哥多了。
 str_npc24_home_intro|呦，隊長！這裡一定是前往卡扎督姆東門的舊徑，你也可能更熟悉他的另一個名字摩瑞亞。在這裡你可以看到遠方的鏡影湖卡雷德—薩魯姆；穿過雲彩的三座山峰則讓這部分迷霧山脈富有魅力。
 str_npc25_home_intro|哦，一個讓人好奇的景象！我曾在故事裡聽說，這裡生活著一群和動植物和諧相處的健壯樵夫。我想他們應該自稱波寧人。
 str_npc26_home_intro|詛咒它！那一定就是號角堡了，主人。
 str_npc27_home_intro|嘿！看！
-; str_npc18_home_description|Our wise ones told us all about that war. If it hadn't been for the weakness of the Southerners, losing a battle they should have won, the Gondorians would never have won the Battle of the Camp. The chariots of the Wainriders were smashed, and many fierce heroes died in the swamps of the Dead Marshes.
+str_npc18_home_description|我們的智者跟我們說了關於那場戰爭的一切。如果不是南方人的軟弱，打輸了他們本該贏的戰鬥，剛鐸人絕對打不贏那場營地之戰。戰車民的戰車被搗毀，許多勇猛的英雄都死在了死亡沼澤裡。
 str_npc19_home_description|我將讓我們的同胞們團結起來，如同過去的那般。再也不會有暗褐頭髮的女人用她們的胸部哺育病弱的嬰兒，而她們金髮的表親卻在溫暖的大殿中大吃大喝了。再也不會有黑髮住在丘陵上的男人帶著怨恨的目光望著金發牧者擁有的馬群了。作為王，我將伸張正義-但首先，要讓洛汗的暴君付出代價。
 str_npc20_home_description|我記的很清楚-索恩，索爾之子。蠻幹、虛榮的血脈繼任者，毫無價值王位的繼承人！他在我手中遭到凌遲。但沒人能在我齊格爾菲爾下撐很久呢，指揮官。沒有人呢。在多爾哥多的地牢裡，我拿走了他的戒指，送到黑邪塔並得到獎賞。在黑暗之主的恩惠下，我得到了地位！
-; str_npc21_home_description|All me life I've not gone near sorcery, and it'd be a mighty shame to start now.
+str_npc21_home_description|窩整輩子都沒跟巫術走近過，現在才開始那就太糟糕了。
 str_npc22_home_description|曾經由南方王國建造，現在則是人稱白袍巫師的家；正計劃著，毫無疑問，通過犧牲他人來進一步增強他的力量。
 str_npc23_home_description|我從未嘗試過這麼遠，但我無意中聽到我們的幽暗密林偵察員說這裡可能有戒靈。 我感到邪惡的存在，我不知道它叫甚麼名子。 但它很強大，所以讓我們做好準備吧。
 str_npc24_home_description|從這裡的荒涼和許多半獸人足跡來看，我很擔心勇敢的巴林和他探險的最終命運。看來摩瑞亞已經落入了陰影中，我們應該小心些。 (注：巴林是霍比特人中跟隨索林·橡木盾前往孤山的十三位矮人之一，後來進入摩瑞亞希望回复它昔日的榮光)
 str_npc25_home_description|一個旅行商人偶爾會來到河谷鎮集市，並售賣一種我這輩子嚐過的最棒的蜂蜜。由於一些古怪的原因，他總說這種蜂蜜是熊做的，然後哈哈大笑。
 str_npc26_home_description|這該死的城牆又高又硬，我的錘子根本打不破。我猜如果我們追擊伊多拉斯的豬玀，他們肯定會跑到這裡，然後蹲在牆後面瑟瑟發抖。
 str_npc27_home_description|你知道那座城鎮麼？
-; str_npc18_home_description_2|It pleases me to be marching with you, Great One. The leaders of my people will want to have this land again, which was once theirs. They may take as much as they like from Gondor and the West. For my part, if I can spill the blood of more enemies on this soil, I will count myself happy.
+str_npc18_home_description_2|大人，能跟你一起行軍我很高興。我們的領導者一直想收復這片土地，這片曾屬於他們的土地。他們要從剛鐸和西方那裡拿走多少都好。對我來說，只要能讓我把更多敵人的血撒在這片土地上，我就很滿足了。
 str_npc19_home_description_2|在漫長的戰爭結束後，你會為我說話吧，對吧，指揮官？無論是哪個力量統治著-邪眼或白掌？你會支持我的主張，把伊多拉斯和全洛汗封作我的領地，讓我作為家園嗎？
 str_npc20_home_description_2|我們，將摧毀維拉在中土世界的作品，當然這些矮人是其中的一大部分。是的，摧毀創造者做出的東西真是十分美妙。我們會用腳碾碎矮人們，粉碎低等人類最後的王國，並在精靈像鬼魂般消逝在迷霧中時放聲大笑。到那時我將站在被遺忘的洞穴前，在維林諾，再次召喚吾王！
-; str_npc21_home_description_2|All me life I've not gone near sorcery, and it'd be a mighty shame to start now.
+str_npc21_home_description_2|窩整輩子都沒跟巫術走近過，現在才開始那就太糟糕了。
 str_npc22_home_description_2|我只希望我們銘記，即使是偉大者的一員，甚至是一位埃斯塔力，都有可能被腐蝕和墮落。追求力量者必被力量所毀，只希望我們不要拖得太久。 (注：埃斯塔力在昆雅語中意譯為博學者，特指巫師)
 str_npc23_home_description_2|我能感覺到牆後的邪惡大軍正準備出發…去美麗的羅斯洛立安？去河谷鎮？去我的家鄉幽暗密林？我不知道，但請盡你的一切努力阻止他們。
 str_npc24_home_description_2|如果戰爭運將帶給我們一大支軍隊的話，我們應該冒險進入礦坑並取回他們那筆巨大的財富。
 str_npc25_home_description_2|我聞到了甜蜜的花香，也看到了蜜蜂收穫的蜜糖。如果您不介意的，我能去弄點蜂蜜自用麼？我只需要幾分鐘就能搞定。
 str_npc26_home_description_2|如果我們沒有大量強獸人在背後支持的話，留在這裡一點兒用處都沒有。當然，如果你想對牆上的哨兵做鬼臉那就是另一回事兒了，哈哈！
 str_npc27_home_description_2|米那斯魔窟，戒靈那裡整天喝酒，哈哈！
-; str_npc18_home_recap|I was a prisoner in stocks, condemned to die for slaying a son of Lurmsakun in the training pit. Three of them set upon me, and I beat them, but one died of his wounds. Then you spoke for me, and freed me. Now I kill for you, and I would die for you if need be.
+str_npc18_home_recap|我曾是一個被關起來的囚犯，因為在訓練坑裡斬殺了魯薩昆的一個兒子而被判死刑。他們三人一起朝我攻來，而我打敗了他們，但其中一個因傷而死。然後你為我說了情，並讓我重獲自由。現在我會為你而殺，必要時也會為你而死。
 str_npc19_home_recap|我發誓，我有洛汗王家之血-范哲爾王是我的祖父，即使他從來沒有娶我的祖母做老婆。登蘭德的酋長們忌妒我，並讓我遠離戰鬥害我不能做大事，無法贏得榮耀和人望到我的旗幟下。不過你讓我加入了你的旗幟下。現在我拭目以待自己坐在伊多拉斯我應得王位上的那天。
 str_npc20_home_recap|還有什麼能說的，指揮官？我在多爾哥多的地牢裡精通了我的法術。我夢中的眼睛看的又深又遠，我看見了你和你在這場戰爭中的作為。看來我必須盡我所能的援助你，這樣西方的力量才能衰弱而東方的力量才能崛起統治世界至其末日來臨。
-; str_npc21_home_recap|I had me a nice time leadin' a proper raidin' band in the mountains, until I did drunk too much and gambled me life away with those cheats from Gundabad.
+str_npc21_home_recap|窩以前在山裡帶著一隊正當的掠奪者過著快活的日子，直到有天窩喝太多並跟那些剛達巴來的作弊鬼把自己的下半輩子賭掉了。
 str_npc22_home_recap|我會滿足你的好奇心的，但別在這兒逗留了。
 str_npc23_home_recap|我生長在幽暗密林中，是一位西爾凡精靈。我們族人的木工技術無可匹敵。
 str_npc24_home_recap|我是都靈一族的德瓦林之子。
 str_npc25_home_recap|我是一名來自河谷鎮的治療師兼草藥醫生。
 str_npc26_home_recap|葛瑪會說如果你一定要聽，但講故事可殺不死敵人。
 str_npc27_home_recap|我會盡快搞定的。
-; str_npc18_honorific|Great One
+str_npc18_honorific|大人
 str_npc19_honorific|指揮官
 str_npc20_honorific|指揮官
 str_npc21_honorific|首領
@@ -2419,99 +2419,99 @@ str_npc25_honorific|指揮官
 str_npc26_honorific|主 人
 str_npc27_honorific|主 人
 str_gondor_guildmaster_companion_player_ask|在剛鐸王的許可下，我尋找勇敢的同盟。這地方有這樣的嗎？
-; str_gondor_guildmaster_companion_none|Nay, Commander. What valour we have is needed to defend our own walls. You may go to the barracks and find soldiers of courage and experience - mayhap more the former than the latter, I fear. Ever have we been traders, crafters and farmers. The finest of our soldiers go to the capital to enlist - perhaps you should try the White City.
+str_gondor_guildmaster_companion_none|沒有，指揮官。我們的英勇之士都需要保衛我們自己的城牆。不過你可以去兵營找找看有勇氣和經驗的士兵-恐怕，前者比後者多就是了。我們幾乎都是商人、工匠和農民。我們最好的士兵都去首都參軍了-或許你可以去白之城看看。
 str_gondor_guildmaster_companion_player_none_ok|很好。 我感謝你的忠告。
 str_gondor_guildmaster_player_found_ok|我謝謝你。 願所有善良的人的善意與你同在。
-; str_gondor_mt_guildmaster_companion|Why, Commander, there is one, and gladly shall I tell you of him; he is a gate guard, by the name of Cirdil, and even now I warrant you’ll find him at his rounds. He is dutiful and brave - but I spoke with him of late, and it seems to me he wishes to do more than simply stand his watch on the walls while the Shadow gathers beyond them. Surely he will be happy to venture out from the White City in your company.
-; str_gondor_ha_guildmaster_companion| Indeed there are. High in the esteem of our Captain Faramir are two of our commanders, Mablung and Damrod. Damrod is away at our Captain’s behest; but Mablung may be found in the cave yonder, a little way along this path here. We Rangers know much of woodlore and archery; Mablung stands above many of us. He is a man of prowess, and accounted one of our finest. Mayhap he will be given leave to accompany you for a time.
+str_gondor_mt_guildmaster_companion|怎麼會沒有呢，指揮官，有一個，我很樂意告訴你關於他的事；他是個大門守衛，名叫凱瑞迪爾，你現在去的話他應該正在值班。他既盡責又勇敢-但我最近跟他聊天的時候，他看起來似乎不希望在牆外黑暗聚集時單單的守望著。他絕對會很樂意跟你們一眾一起去白之城外冒險的。
+str_gondor_ha_guildmaster_companion|確實有。法拉墨隊長很器重我們的兩個指揮官，馬伯龍和達姆羅德。達姆羅德奉隊長的命令出征了；不過馬伯龍大概在那邊的洞穴裡，沿著這條小徑走一段路就到了。我們這些遊俠知曉不少草木相關和弓術的知識；而馬伯龍則在大部分人之上。他是個勇猛的人，算是我們之中最好的。或許他會被允許離開去陪你一段時間。
 str_rohan_guildmaster_companion_player_ask|離開了希優頓王，我尋求勇敢的洛汗的幫助。 這裡有任何勇敢的戰士會跟著我嗎？
-; str_rohan_guildmaster_companion_none|It were better if you sought to bring aid, rather than asked for it. Horses, swords, spears - these things we need at present. As for your question: go to the barracks. There you will find those of our people willing to ride forth, such as they are - many beardless youths still, and still others unskilled herders and tenders of flocks.
+str_rohan_guildmaster_companion_none|我還比較希望你是來提供援助，而不是來尋求的。馬匹、刀劍、長槍-這些我們現在都很缺。至於你的問題：去兵營吧。在那你能找到我們願意騎乘出發的同胞們，即使他們-大多都是連鬍子也沒長的年輕人，或沒經驗的牧民和牧羊人。
 str_rohan_guildmaster_companion_player_none_ok|我也為你的人民著想，統領。告別。
 str_rohan_guildmaster_player_found_ok|我覺得這個建議不錯。健康與你同在！
-; str_rohan_edoras_guildmaster_companion|Indeed, there may be. Dark indeed must the days become before our women ride out to war alongside the menfolk - yet our fearless and high-hearted Lady Eowyn, whom all love, rides and fights as well as any Marshal. Some shieldmaidens have trained with her from childhood, and several may be found around the Golden Hall. Hardy indeed are our women! Seek one called Galmyne - she is skilled in many arts of war, and goes about like a mare chafing at an ill-fitting bridle, for she has not been given leave to ride out with the men.
+str_rohan_edoras_guildmaster_companion|確實，可能有。這黑暗的時代讓我們的女人跟男的一起騎馬出征-但我們既無畏又高尚的伊歐玟女士，眾所愛戴的她，騎馬打仗就像任何元帥一樣。有些攜盾女從小就跟她一起受訓，有幾個人就在金之大殿附近。我們的女人真是勤勞啊！你去找找有個叫格爾瑪的-她精通許多戰爭之道，但現在就像一匹被爛韁繩拴住的良駒，因為她不被允許跟男人一同騎馬出征。
 str_lorien_guildmaster_companion_player_ask|羅瑞安
-; str_lorien_guildmaster_companion_none|Evil has been seen and heard even here, among the mallorn-trees; sorrow has been known. In happier days we plucked the strings of harps; in these days we have indeed become skilled at the plucking of bowstrings. I cannot speak of heroes among us, but you should speak to the commander of our garrison here. Perhaps some few of our people may consent to join you for a time.
-; str_lorien_guildmaster_companion_player_none_ok|I had hoped for fairer words in this fair land of yours. But it shall be as you say, Elder.
+str_lorien_guildmaster_companion_none|即使在這裡的梅隆樹林中，也能聽聞邪惡的到來；大家都很憂傷。以往快樂的時光中我們會彈奏豎琴的弦；近來則是確實精通了弓弦。我說不出我們之中有誰是英雄，但你可以跟我們駐軍的指揮官談談。也許會有同胞願意加入你一段時間吧。
+str_lorien_guildmaster_companion_player_none_ok|我原本還希望能在你們這片美好的土地上得到更好的回覆。但現實就像你說的那樣吧，長者。
 str_lorien_guildmaster_player_found_ok|我 感 謝 你 的 忠 告，老 人。Tiro ven Elbereth! ( 精 靈 語：願 瓦 爾 妲 守 護 你 )
-; str_lorien_ca_guildmaster_companion|Nan Belain, here is a wonder indeed! At any other time I might have had naught but disappointment for you, but now in the company of the Lord and Lady of the Wood stands none other than the Lord Glorfindel, hero of more battles than even I can remember. I know little of such a great champion’s purpose here - he arrived with the host of Elrond, Lord of Imladris, and his own counsel he keeps, speaking only with Lord Celeborn and Lady Galadriel. Seek him out, Commander. Perhaps his cause may be joined to yours.
-; str_beorn_guildmaster_companion_player_ask|Your advice, good fellow - are there any warriors of remarkable prowess here?
-; str_beorn_guildmaster_companion_none|Well, I don’t know about that. Your question isn’t very clear. What kind of “remarkable prowess” do you want that you can’t find among our garrison, I ask you? We fight with stout staves and sharp hatchets, we shoot well enough with bows. I don’t know what more you could ask for.
-; str_beorn_guildmaster_companion_player_none_ok|Well, then, I suppose I’d best be off. Good day to you, woodsman.
-; str_beorn_guildmaster_player_found_ok|I see. Well, I shall look around for this “Dimborn”. Good day to you, woodsman.
-; str_beorn_house_guildmaster_companion|Well, now, there’s a question. I’d say any of us could fight off a goblin or warg well enough, but our chief’s nephew is stouter than most. Spends most of his time just staring at trees, though. Or at nothing in particular. More thew than thought, if you take my meaning. Still, he’s gentle with his friends but fierce to his enemies, as one should be. Walks the woods as well as any Elf, I’d say. We call him Dimborn; not to be unkind, you understand, but we like calling things and people what they are. He ought to be around here somewhere.
-; str_woodelf_guildmaster_companion_player_ask|By leave of Thranduil Elvenking, I seek champions of the Greenwood to fight in my command, Elder.
-; str_woodelf_guildmaster_companion_none|Indeed? Then you may ask those of our garrison, and mayhap some will be willing to follow you. But I sense your desire runs deeper than that. Do you fancy yourself a great hero, like those from Nargothrond or Gondolin of old? Our finest warriors are needed to guard against the growing shadow in Mirkwood. Take with you what soldiers we can spare, and be content.
+str_lorien_ca_guildmaster_companion|維拉們在上，這裡的確有個奇觀！要是在平時我可能只能給你令人失望的回覆，但現在森林之主和女士身旁的不是別人正是葛羅芬戴爾大人，參加過比我能記得還要更多戰鬥的英雄。我對這等冠軍勇士在這的理由所之甚少-他是跟愛隆，伊姆拉崔之主的大軍一起來的，但他不跟旁人分享，只跟凱勒鵬大人和凱蘭崔爾女士說話。去找找他吧，指揮官。也許他的大業會讓他跟你合作吧。
+str_beorn_guildmaster_companion_player_ask|好傢伙，給些建議吧-這裡有任何令人印象深刻的勇猛戰士嗎？
+str_beorn_guildmaster_companion_none|呃，我不知道欸。你的問題有點難懂。我問你，什麼樣的"令人印象深刻的勇猛"在我們的駐軍裡是沒有的？我們用粗棍子和鋒利的斧頭戰鬥，射箭也很在行。我不知道你還想要求什麼。
+str_beorn_guildmaster_companion_player_none_ok|那，我想，我得先走了。祝你有美好的一天，山林人。
+str_beorn_guildmaster_player_found_ok|我明白了。好，我會去找找這個叫"丁博"的。祝你有美好的一天，山林人。
+str_beorn_house_guildmaster_companion|好吧，我想想，那是個好問題。我認為我們隨便一人都能擊退哥布林或座狼，但我們酋長的外甥比大多人都還粗壯。雖然，他大部分都在盯著樹看。或是盯著虛空。是個筋肉腦，你懂吧。不過，他對朋友很溫和而對敵人很兇猛，我們都該如此。我認為，他游走在林間就跟任何精靈一樣。我們叫他傻子丁博；但不是出自惡意，你要理解，我們習慣對人實話實說。他應該就在這附近吧。
+str_woodelf_guildmaster_companion_player_ask|長者，以瑟蘭督伊精靈王之名，我正在尋找能在我指揮下戰鬥的綠森冠軍勇士。
+str_woodelf_guildmaster_companion_none|是嗎？那你可以問看看我們的駐軍，或許會有人願意跟隨你。但我認為你想找的是偉大的英雄，像古代納國斯隆德或貢多林的那些吧？我們最好的戰士還得防衛陰影在幽暗密林裡的增長。你就帶走我們能提供的士兵，然後知足吧。
 str_woodelf_guildmaster_companion_player_none_ok|很好，老人。 正如你所說。
 str_woodelf_guildmaster_player_found_ok|我感謝你的忠告，老人。Navaer(精靈語:再見)！
-; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit - she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands - you may speak with her. Harthon gerithach lend vaer!
+str_woodelf_halls_guildmaster_companion|是嗎？那你不能錯過我們其中一人的援助。她的名字是露亞瓦納，然後剛好，是我的親屬。她很年輕，至少以我們的標準來說，然後她充滿了對森林和其中所有生物的愛，當然除了邪惡的那些。她有著溫柔的靈魂-她還沒在我們的列隊中戰鬥過。不過，我還是希望她能被說服去跟隨你，這樣她就能學到雖然我們喜愛在和平時代過著平靜的生活，戰亂時代還是必須有戰士的樣子。看吧，她就站在那邊-你可以去跟她談談。祝你旅途順利！
 str_dale_guildmaster_companion_player_ask|好主人，我在這場戰爭中尋找堅強的勇士和我一起戰鬥。
-; str_dale_guildmaster_companion_none|Well, now. Here in our town, we have always plied our trades and managed our affairs quietly, and not until recently have we had a great need for fighting men. I suppose you might ask at our barracks, and find what recruits you can from our garrison. I know of none among our captains here who would abandon his post to follow you.
+str_dale_guildmaster_companion_none|我吧，我想想。在我們的城鎮裡，我們一直以來都靜靜的在貿易和管理自家的事務，直到最近才大量需要能作戰的人手。我想你可以去問問我們的兵營，從駐軍中找找新兵。我不認為隊長們之中會有人離開崗位去跟隨你的。
 str_dale_guildmaster_companion_player_none_ok|我會那樣做，好主人。 告別。
 str_dale_guildmaster_player_found_ok|通常，不拘小節的禮物證明了最好的價值。我要和法妮爾談談。告別！
-; str_dale_main_guildmaster_companion|Well, the King and his Lords have the best claim on the service of good captains. I don’t know that any of great renown are left to follow you - but are mere fighting men all you need? What about binders of wounds, versed in herblore? I know of one such - Faniul, personal healer to the King. She was midwife to my sister - and do not look askance at her age: she is of stout heart and sturdier than she looks. I warrant she’ll bear up well under the strains of travel. Why, I think I see her taking her ease over there, in this courtyard.
+str_dale_main_guildmaster_companion|嗯，國王和他的領主們已經佔走大部分優良隊長們的忠誠了。我不知道還剩下什麼聲名遠播的人能加入你-不過你只需要能戰鬥的人嗎？要不然會縫合傷口、精通藥草學的人如何呢？我知道有個-法妮爾，國王的私人治療師。她曾是我姊妹的產婆-別被她的年齡唬住：她的內心比外表粗壯堅實多了。我想她絕對能忍受旅途的壓力。哦，我想我看到她就在那邊休息了，就在這個廣場上。
 str_dwarf_guildmaster_companion_player_ask|好主人，這裡似乎有一些英勇的戰士。有人要加入我們的隊伍嗎？
-; str_dwarf_guildmaster_companion_none|Well, you’re not wrong, there, about our skill in battle, but aren’t our lads from our garrison here good enough for you? Apart from them, I don’t know anyone else who might satisfy you - you talk as though you were a king of some sort, looking for a great champion, like in the old days. Valiant is as valiant does, say I!
+str_dwarf_guildmaster_companion_none|嗯，你倒是沒說錯啦，那些，關於我們戰技的部分，但我們駐軍裡的弟兄們對你來說還不夠好嗎？除了他們，我不知道還有誰能滿足你-講的好像你是個國王一樣，尋找冠軍勇士，就像活在過去的樣子。我說，英勇就是英勇啊！
 str_dwarf_guildmaster_companion_player_none_ok|你不必那麼生氣，好主人，我只是問問而已。祝你今天快樂。
 str_dwarf_guildmaster_player_found_ok|聽上去真好，大師。祝你今天快樂！
-; str_dwarf_erebor_guildmaster_companion|Oh ho! It’s warriors you’re after, are you? Then I have just the Dwarf for you: look for one Kili Goldfinger. A most excellent and audacious Dwarf he is, and a credit to his clan. Fights almost as well as a Longbeard, though he’s still fairly young as we reckon it. Quite good at story-telling, too, and he favours the cheerful sort of tale. Go and have a talk with him - I shouldn’t think he needs much persuading to follow you out into the wide world and do his bit for the war. Now, let me see… he’s not down here at the moment. Not the Great Chamber, either. The upper halls, perhaps - look for him there.
+str_dwarf_erebor_guildmaster_companion|吼吼！你在尋找戰士，對吧？那我剛好有個適合你的矮人：去找金指奇力。他是最優秀和大膽的矮人，是他氏族的驕傲。即使在我們看來他仍十分年輕，戰鬥起來卻不遜於長鬍矮人。對了，他也蠻會說故事的，喜歡說令人愉快的故事。去跟他談談吧-我覺得他並不需要多少心力就能被說服跟你去外面廣闊的世界為戰爭盡一份心力。現在，讓我看看...他目前不在下面這裡。也應該，不會在索爾之間那。或許，在大殿上層-去那裡找看看吧。
 str_rhun_guildmaster_companion_player_ask|我聽說這裡有偉大的戰士。他們在哪裡？誰值得加入我？
-; str_rhun_guildmaster_companion_none|Not all our warriors here are blooded, but each of them is stronger and braver than any ten Dalishmen! Go and ask the arms master to see if he can spare any for you.
+str_rhun_guildmaster_companion_none|我們不是每個戰士都浴過血，但隨便哪個都比十個河谷鎮民加起來強多了！去問糾察長看看他能不能提供幾名給你吧。
 str_rhun_guildmaster_companion_player_none_ok|我要偉大的戰士，你給我看喝母乳的人。呸！
 str_rhun_guildmaster_player_found_ok|很高興聽到最後 - 一個有靈魂的戰士！
-; str_rhun_maincamp_guildmaster_companion|Our greatest swordbearers and riders fight in the retinues of our warlords. But there is one who has found favour with none of our chiefs so far. Not because he is weak; far from it! He does not curb his tongue when he speaks, and he has spoken loudly against our chieftains, saying they are slow to act and over-cautious. If he had his way, I wager the countryside would be covered in flames by now. His name is Varfang, and he spends his hours training near the prisoner cages, not far from this tent.
-; str_guldur_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
-; str_guldur_guildmaster_companion_none|O ho! What do we have here? A great captain, are you? I reckon your bark’s worse than your bite, and no mistake. Orders are orders: you draw your troops from our garrison here, and that’s that. Keep talking like that where they’ve got ears to hear, though, and someone will stick a knife in your back one of these days, see if they don’t.
+str_rhun_maincamp_guildmaster_companion|我們最好的攜劍者和騎手都已經跟軍閥們一起出征了。但還有個目前還沒得到酋長們的青睞。不是因為他很軟弱；差多了！是因為他管不住自己的舌頭，並高聲反駁酋長們，說他們的動作太緩慢和過度謹慎。如果照他說的做，我能跟你賭附近的鄉村都會陷入火海。他的名字是瓦爾凡，平時都在囚犯的籠子附近訓練，離這個帳篷不遠。
+str_guldur_guildmaster_companion_player_ask|我在這看到的都是卑鄙鬼祟的烏合之眾，搞不好一開打就會逃跑了。你們正當的戰士在哪裡？
+str_guldur_guildmaster_companion_none|哦吼！看看是誰來了？你誰啊，一個偉大的隊長嗎？我看你比起咬更會吠，不會錯的。命令就是命令：從我們的駐軍中拉人當你的部下，就這樣。繼續在我們聽的到的地方這樣講話，搞不好，哪天就會有人在你的背上插一把刀喔，試看看吧。
 str_guldur_guildmaster_companion_player_none_ok|如果你知道什麼對你有好處，你會和我一起看你的話。
-; str_guldur_guildmaster_player_found_ok|Scared witless by this woman, are you? I’ll go see if she’s all you make her out to be. This had better not be a waste of my time!
-; str_guldur_main_guildmaster_companion|We’ve got stout lads aplenty, curse you. Ha… I know what you’re really after. Oh yes, indeed, I know just where you should go, Commander. See that cave over there, with steps leading down? If our boys get hurt badly enough we send them down there, and I reckon almost a third of them make it back up, har! They can do very strange things, down there… and that one in particular, the woman… she gives me the shivers, and that’s saying something. They say she’s got something to do with Number One, or even Higher Up, if you take my meaning. Talk to her, if you dare.
-; str_moria_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
-; str_moria_guildmaster_companion_none|Proper warriors, {she/he} says! I reckon any of our snaga could give any of your lubbers a good drubbing. We’re a tough lot, we are, and no mistake. Go speak to our barracks master - but speak with respect, mind, or you’ll not get our stout fellows to follow you. Knife you as soon as your back is turned, if you don’t speak proper.
-; str_moria_guildmaster_companion_player_none_ok|I’ll speak how I like to the lot of you. I save my respect for those much Higher Up than your sort!
-; str_moria_guildmaster_player_found_ok|Garn! A sawbones, you say? Among this lot? All right, I’ll have a talk with him, but you’d better hope you aren’t telling me a crock of rubbish.
-; str_moria_main_guildmaster_companion|Ha! Losing more than you can keep, are you? Throwing our stout lads into the meat grinder, and then cursing when you find you haven’t got enough left to win your battles? A right splendid commander you are, oh yes. Very well - look over there! I’ll give you a helpful hint now, and you’ll remember it, yes? You see that fellow on the crates, the one with blood all over his hands, muttering to himself? Not much of a killer, but where’s the blood from, I hear you ask? Why, it’s the blood from some of our fighters he’s helped put back on their feet. He’s a sawbones, that one. You’ll see for yourself, the next time you lead your troops into another mess and find you need some stitching done.
-; str_isengard_guildmaster_companion_player_ask|I’ve heard about the fighting Uruk-hai. So far, I’m not impressed. Where are the greatest among them?
-; str_isengard_guildmaster_companion_none|Leading patrols and armies of their own, no doubt - why would they lower themselves to fight under your command? They’ve got their own Orders to follow, from Higher Up. If you want fighting lads, go talk to the garrison chief! We’ve got stout fellows aplenty.
-; str_isengard_guildmaster_companion_player_none_ok|This rabble isn’t what you make it out to be. Stout fellows? Fighting lads? Snagas aplenty, more like. Slavering swine.
-; str_isengard_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!
-; str_isengard_main_guildmaster_companion|A great commander you are, it is plain to see, and wisely do you choose to take only the bravest and most skilled fighters under your banner. And yet, if you will take my counsel - a battle is won not merely with iron and sinew, Commander, but with guile and foreknowledge of the foeman’s doings, his comings and goings. We have a scoutmaster here, an Orc who has sworn allegiance to Saruman the Great. I have heard that he spent many years in the Misty Mountains, catching and taming wargs. A skilled tracker and hunter is Durgash. You will find him a most useful helper, Commander. He's usually lurking around the warg pits.
-; str_isengard_hunting_camp_guildmaster_companion|O ho! So you think our finest lads should humble themselves and take orders from you, do you? You’re a bold one, and no mistake. I know just the fellow for you. Calls himself Gulm, and he’s a proper fierce one, he is. Never seen anyone take so much pleasure in bashing in skulls and breaking bones with that mallet of his. And the more foes he kills, the more savage he seems to get. I don’t rightly know where he is at the moment, though - but he’s in this camp for sure, trying not to attract attention for some reason. Does that sound suitable for you, O Great Commander, taking an Uruk-hai berserker into your camp?
-; str_dunland_guildmaster_companion_player_ask|So, these are the Men of the hills who serve the White Hand! A sorry-looking lot. Where are your fighters of note?
-; str_dunland_guildmaster_companion_none|Following those greater than you, no doubt. If you want warriors, speak to the training masters. See for yourself if any of our young pups will follow you into battle.
-; str_dunland_guildmaster_companion_player_none_ok|Curs and whelps! It is no wonder your people were driven into the hills by the men of Rohan.
-; str_dunland_guildmaster_player_found_ok|A treacherous wolf, I would hardly keep by my side. But a tame hunting dog, I might consider. Let me see which one this Heidrek proves to be.
-; str_dunland_main_guildmaster_companion|Despise us at your peril! Even a wretched cur will snap at your heels in a fight. We will have our vengeance on the Forgoil and their allies - and likely it will be Heidrek whom we’ll follow into Edoras. He’s a mongrel, that one - says he’s the grandson of a strawhead king, for all that he looks no different from any of us. He’s a terror in the training yard. If Chief Daeglaf doesn’t watch his back he just might find Heidrek’s spear in it one of these days. Maybe he’ll deign to follow you, if he thinks you’re worth his time. Look for him at the main campfire, where our chieftains stand.
+str_guldur_guildmaster_player_found_ok|你啊，被這個女人嚇壞了嗎？我去看看她是不是真像你說的那樣。這最好不是在浪費我的時間！
+str_guldur_main_guildmaster_companion|去你的，我們有很多粗壯的弟兄們。哈...我知道你到底在尋找什麼了。喔對，對的，我知道你究竟該去哪了，指揮官。看到那邊那個洞穴了嗎，有階梯向下的那個？如果我們有孩子受重傷我們就會把他們送下去，然後我想大概只有三分之一能回到上面來吧，哈！他們在底下，都會做一些非常奇怪的事...其中有一個，那女人...她讓我打冷顫，那真的很不妙。他們說她跟首席有關聯，或是更上面的人，你懂吧。你敢的話，去跟她談談。
+str_moria_guildmaster_companion_player_ask|我在這看到的都是卑鄙鬼祟的烏合之眾，搞不好一開打就會逃跑了。你們正當的戰士在哪裡？
+str_moria_guildmaster_companion_none| {她/他}說，正當的戰士！我想我們隨便一個奴隸都能痛打你的傻子們一頓。我們都很堅實，我們都是，別搞錯了。去跟兵營長談談吧-但帶點尊重，和腦子，不然你是沒辦法讓我們粗壯的傢伙跟隨你的。你如果不好好說話，轉身就會有把刀插在你背上了。
+str_moria_guildmaster_companion_player_none_ok|對你們這種人我想怎麼說就怎麼說。我只會把尊重留給比你們這群更加高等的人。
+str_moria_guildmaster_player_found_ok|蛤！你說，一個外科醫生？在你們這群中？好吧，我會跟他談談，但你最好希望自己告訴我的不是個沒用的垃圾。
+str_moria_main_guildmaster_companion|哈！損失慘重，是吧？把我們粗壯的弟兄們扔進絞肉機，然後在你發現剩下的不夠贏得戰鬥時就開始咒罵嗎？喔是的，你還真是個優秀的指揮官啊。好吧-看過來！我會給你一個有用的提示，然後你會記好，對吧？你看到坐在那堆箱子上的那個傢伙嗎，手上都是血，自言自語那個？他不是個殺手，但你問，血從哪來的？怎麼，那是他從鬼門關拉回來的鬥士的血。那傢伙，他是個外科醫生。下次你帶部下搞砸然後需要縫針時，你就知道了。
+str_isengard_guildmaster_companion_player_ask|我聽過那些戰鬥強獸人。但目前為止，不怎麼印象深刻。他們之中最好的在哪？
+str_isengard_guildmaster_companion_none|毫無疑問，他們在帶領自己的巡邏隊和軍隊-他們怎麼會降低自己來在你的命令下戰鬥呢？他們有來自上層，自己的命令要遵守。如果你想要會戰鬥的弟兄，那就去找駐軍長吧！我們有一大堆粗壯的傢伙們。
+str_isengard_guildmaster_companion_player_none_ok|這群烏合之眾才不是像你說的那樣呢。粗壯的小夥子？會戰鬥的弟兄？我看，奴隸倒是一堆。被奴役的豬。
+str_isengard_guildmaster_player_found_ok|如果他很會殺戮，那我就帶走他。如果不會，那我會把他像魚一樣宰了挖出內臟。再如果他其實又是一隻毫無價值的蛆蟲，那我會回來讓你為浪費我的時間付出代價！
+str_isengard_main_guildmaster_companion|顯而易見，你是個偉大的指揮官，你的智慧讓你選擇只把最勇敢和技藝精湛的鬥士收入麾下。但是，如果你能聽我一言-戰鬥並不是只靠鐵與肌肉就能打贏的，指揮官，而是使用詭計和看穿敵人的先見之明，他們的進退往來。我們這有個斥候大師，一名宣誓效忠偉大薩魯曼的半獸人。我聽說他花了不少年在迷霧山脈中，捕捉和馴服座狼。都戈什是個老練的追蹤者和獵人。你會認為他是個好幫手的，指揮官。他通常都在座狼坑附近晃蕩。
+str_isengard_hunting_camp_guildmaster_companion|哦吼！所以，你認為我們最好的弟兄們應該讓自己卑躬屈膝從你那裡接受命令是嗎？沒錯，你是挺大膽的。我知道有個適合你的傢伙。自稱葛魯姆，他，的確是個勇猛的傢伙。從沒看過誰像他這麼樂於用槌子打爛腦袋或是破壞骨頭的。而他殺越多對手，就會變得越野蠻。不過，我不確定他現在正在哪裡-但他一定在這個營地裡，不知為何他會保持低調。偉大的指揮官啊，他聽起來適合你嗎，讓一名強獸人狂戰士加入你的營地吧？
+str_dunland_guildmaster_companion_player_ask|所以，這些就是為白掌服務的丘陵野人啊！看起來真可憐。你們值得關注的鬥士在哪？
+str_dunland_guildmaster_companion_none|毫無疑問，跟著比你更偉大的人。如果你想要戰士，跟訓練長談談吧。自己看看有沒有我們年輕的小狗們願意跟著你上戰場。
+str_dunland_guildmaster_companion_player_none_ok|野狗和幼犬！難怪你們的同胞被洛汗人趕到丘陵裡去了。
+str_dunland_guildmaster_player_found_ok|我可不會，在身邊留著一匹狡詐的狼。但如果是獵犬，倒是可以考慮看看。就讓我看看這個海德克是哪種。
+str_dunland_main_guildmaster_companion|敢鄙視我們就試試看啊！就連一隻可悲的野狗也能在戰鬥中扭斷你的腿。我們將對佛戈伊爾和他們的盟友進行復仇-而海德克大概會是我們跟隨進入伊多拉斯的人吧。那人，他是個雜種-說他是其中一個稻草頭之王的孫子，雖然他看起來跟我們沒兩樣。他是訓練場上的恐怖。如果代格拉夫酋長不好好注意背後的話搞不好哪天就會發現背上插著海德克的長槍吧。或許他會計畫跟著你，如果他認為這值得他去做的話。去主營火邊找他吧，就是酋長們站的那個地方。
 str_khand_guildmaster_companion_player_ask|我聽說這裡有偉大的戰士。他們在哪裡？誰值得加入我？
-; str_khand_guildmaster_companion_none|Those who have earned their death masks wish to follow commanders of still greater renown, but you may look for new recruits among our pitfighters and levies. Do not presume more than your station, Commander! 
-; str_khand_guildmaster_companion_player_none_ok|I ask for warriors and you show me pit slaves and unblooded peasants. Waste my time at your peril.
-; str_khand_guildmaster_player_found_ok|She sounds like a killer, right enough - but can her ferocity be leashed to useful purpose? We shall have to see.
-; str_khand_main_guildmaster_companion|So you want great warriors? We have them aplenty. But let me tell you of one whose savagery even we find astonishing. Her name is Turmbathu - yes, a woman! I would not have believed it myself had I not seen her in the fighting pit with my own eyes. Defeated three men at once, and killed one of them. Unfortunate, that - the one she killed was a son of Great Lord Lurmsakun, and so now you may find her among the prisoners, awaiting a painful death… unless you, Commander, can intercede. Such a pity, to waste such strength.
-; str_umbar_guildmaster_companion_player_ask|So, the people here fancy themselves heirs of greatness, do they? Can anyone here stand proof of such claims?
-; str_umbar_guildmaster_companion_none|You come at the wrong time, Commander. Now we’re all basking in the glory of capturing this holding, and working out the equitable distribution of its wealth - to put it another way, the captains are all at one another’s throats, heated words are being said, and it will not be long ere blood of Umbar is spilled by Umbar hands. Some of the sailors are unhappy, and may consent to follow you instead of their former captains. That’s the best I can do for you at the moment, Commander.
-; str_umbar_guildmaster_companion_player_none_ok|Disappointing. But not unexpected of sea-dogs. I shall have to look elsewhere for the quality I seek.
-; str_umbar_guildmaster_player_found_ok|A corsair with a code of honour! Not unheard of, but not often found. I care only that he will go where I command, and kill as I instruct.
-; str_umbar_main_guildmaster_companion|Why, if I guess aright you seek the finest fighters among us to join your ranks. After the recent burning of our Haven, I’m afraid our best sailors and raiders follow only our most experienced captains. But I have a friend, named Fuldimir, who has been passed over for promotion too many times, to my mind. It’s that strange way of thinking he has - he will not steal, he says, from any who still draw breath. Where’s the sense in that, I ask you? Still, he is handy with a cutlass, and as tough as any hardy seafarer. Here he is, in this tent - you may speak with him.
-; str_mordor_guildmaster_companion_player_ask|So, these are the finest in the Black Land, are they? Not much to look at. Tell me who’s actually useful in a scrap.
-; str_mordor_guildmaster_companion_none|O ho, a mighty champion is here, I see! And of course, the mighty champion wants only the very best fighters, and no mistake! Well, well! Maybe you’ll find that some of the lads here have plans of their own, to rise high in the sight of the Eye. Maybe you’ll find Lugbúrz thinks a little better of them than of you. Won’t surprise me, ha! Why don’t you just go along to the barracks and requisition your troops like everyone else.
-; str_mordor_guildmaster_companion_player_none_ok|Oh, I’ll remember this slight, mark my words. Do me a good turn, and I’ll not forget it, but speak uncivilly to me, and you’ll soon see what I can do about that.
-; str_mordor_guildmaster_player_found_ok|Well, I’ve struck a bit of luck at last, I see! You’ve done well. I’ll report your contribution.
-; str_mordor_morgul_guildmaster_companion|You’ll want an Uruk for that, mark my words. The best fighters for sure in this sorry-looking lot. Now, if you’re looking for a trusty lad to watch your back in a fight, I’ll tell you straight: you’ll not find better than old Gorbag. Used to be a comrade of mine, before I got assigned here, a while after the Great Signal went up. Now that he’s off the patrol lists, he could join up with you right enough. He ought to be up there somewhere, by that big ruined Tower where the Bosses meet to talk sometimes. Looking down at the rest of these dunghill rats - he likes to do that, he does, ha!
+str_khand_guildmaster_companion_none|那些已經贏得自己死亡面具的人會希望跟隨已經享譽盛名的指揮官，你只能從我們的格鬥士或徵召兵找新兵。別驕矜自大了，指揮官！
+str_khand_guildmaster_companion_player_none_ok|我要戰士你卻給我看格鬥奴隸和沒浴過血的農民。再浪費我的時間試試看啊。
+str_khand_guildmaster_player_found_ok|她聽起來像個殺手，足夠了-但她的兇猛能被馴服來用在有意義的目標上嗎？讓我們拭目以待吧。
+str_khand_main_guildmaster_companion|所以你想要偉大的戰士嗎？我們有很多。但讓我告訴你有個連我們都為之驚艷的野蠻人。她的名字是圖巴蘇-對，一個女人！如果不是我親眼看到她在格鬥坑戰鬥的話我也不會相信的。一次擊敗了三個人，還殺掉了其中一個。不幸的是，那個-那個被殺掉的是魯薩昆大人的其中一個兒子，所以你現在能在囚犯中找到她，等待著痛苦的死亡...除非你，指揮官，能插手。白白浪費掉這種力量，實在太可惜了。
+str_umbar_guildmaster_companion_player_ask|所以，這裡的人喜歡說自己是偉大之人的後裔，是吧？這裡有人能證明這種說法嗎？
+str_umbar_guildmaster_companion_none|你來的真不是時候啊，指揮官。現在我們都沉浸在占領這個灘頭堡的榮光中，正在解決公平分配其中財富的問題-換句話說，船長們都在針鋒相對，言語逐漸升溫，很快昂巴人手上就會染上其他昂巴人的血。有些水手對此很不高興，可能會同意跟隨你而不是他們前任的船長們。我目前最多只能為你做到這樣了，指揮官。
+str_umbar_guildmaster_companion_player_none_ok|令人失望。但對海狗來說並不意外。看來我應該去別處找我要的人才了。
+str_umbar_guildmaster_player_found_ok|一個有榮譽準則的海盜！雖然不是未聞，但實在少見。雖然我只在乎他會不會跟從我的指揮，服從我的指示殺戮。
+str_umbar_main_guildmaster_companion|怎麼，如果我沒猜錯的話你正在找我們之中最好的鬥士來加入你的行列。在近來我們的避風港被燒毀後，恐怕我們最好的水手和掠奪者只會跟隨我們最有經驗的船長們。但我有個朋友，名叫弗達米爾，對我來說，他已經被略過晉升太多次了。他有個奇怪的思考模式-他說，他不會偷竊，不會從任何一個還會呼吸的人身上偷竊。我問你，這究竟有什麼意義？儘管如此，他對彎刀得心應手，而且跟任何勤勞的航海士一樣堅實。他就在這，就在這個帳篷裡-你可以跟他談談。
+str_mordor_guildmaster_companion_player_ask|所以，這些就是黑土上最好的士兵，是嗎？沒什麼好看的嘛。告訴我打架中真正有用的是誰。
+str_mordor_guildmaster_companion_none|哦吼，看來，有個偉大的冠軍勇士出現了！當然，偉大的冠軍勇士只想要最好的鬥士，沒錯吧！好吧，好吧！也許你會發現這裡有些弟兄們有自己的計畫，高升讓自己進到邪眼的視線內。也許你會發現黑邪塔比起你更看好他們。我也不會很驚訝，哈！你為何不像其他人一樣去兵營裡徵用部下呢。
+str_mordor_guildmaster_companion_player_none_ok|哦，我會記住你的怠慢，記住我的話。如果有人幫了我，我是不會忘記的，但對我講話無禮，你很快就能見識到我會對此做出什麼了。
+str_mordor_guildmaster_player_found_ok|好吧，終於有些好運，我明白了！你做的很好。我會報告你的貢獻。
+str_mordor_morgul_guildmaster_companion|你會想要一名強獸人的，記住我的話。這些可憐的傢伙中最好的鬥士。現在，如果你想找個可靠的弟兄在戰鬥中顧著你的背後，我就直說吧：你不會找到比哥巴葛更好的。在那大信號被發起後，我被分配到這裡之前，他曾是我的戰友。他現在沒有在巡邏的名單上，所以他可以直接加入你。他應該在上面某處，老大們聚集談話的廢墟塔旁。俯瞰著其他糞堆裡的老鼠-他就喜歡這樣做，他真的很喜歡，哈！
 str_harad_guildmaster_companion_player_ask|我聽說這裡有偉大的戰士。他們在哪裡？誰值得加入我？
-; str_harad_guildmaster_companion_none|It is not accordant to our creed for our greatest to join with such as thee, O Commander. In the world, there are the great and the small; for soldiers such as ourselves, always we stand in this relation to one another. I counsel you to seek out those who could learn from you in battle; it is better not to try yoking a mighty stallion to a weakly-made plow, for the stallion would then destroy the plow, to the detriment of all.
+str_harad_guildmaster_companion_none|指揮官啊，讓我們最偉大的人加入你不符合我們的信條。在世界上，有著偉大和渺小的人；像我們這樣的士兵，總是面對面建立關係的。我建議你去尋找能在戰鬥中跟你學習的人；最好不要嘗試對強大的駿馬套上不結實的犁，不然那匹駿馬會破壞犁，並四處搞破壞。
 str_harad_guildmaster_companion_player_none_ok|如 果 我 理 解 正 確 ， 你 就 是 不 尊 重 我 。   我 會 記 住 這 個 。
 str_harad_guildmaster_player_found_ok|我 知 道 了 。  我 希 望 萊 克 亞 達 的 戰 士 能 像 你 說 那 樣 偉 大 。
-; str_harad_main_guildmaster_companion| I heard a story around the fires: when the Black Serpent called his bannermen, who are some of our finest horse archers, many boasted of how all the treasures of the West would soon be theirs; but one whom we call Lykyada stood apart and remained silent. And when they asked him what he hoped to take from the West, he stooped, scooped up a handful of sand, and said, “What do I require that the land of my birth has not already given me? Behold, I make a gift to them of the sand on which I have stood.” And so saying, he let the wind from the east blow the sand away, into the west. Then all who heard this repented of their injudicious words, and swore to follow his lead. If he finds you worthy, Commander, he may follow yours. Look for him where he stands in attendance upon our chieftains.
-; str_rohan_hornburg_guildmaster_companion|All here at the Hornburg have their given duties, Commander - all save one, I should say. Maybe that one will ride out with you, for otherwise he should be lucky if another Éored will consent to have him! A drunken sot is our Ulfas - good cheer he brings to his comrades, and he is a skilled Rider, but loth is he to set down a tankard without first draining it! Look for him in the hall yonder, if that does not trouble you.
+str_harad_main_guildmaster_companion|我在火邊聽到了一個故事：當黑蛇傳喚他的旗手，那些我們之中最好的馬騎弓兵，許多人吹噓說很快西方的所有財寶都會成為他們的；但名為萊克亞達的那人只是默默的站在一旁。當他們問他想要什麼的時候，他停了下來，挖了一把沙子，說著，"有什麼是我的出生之地還沒給我的嗎？看啊，讓我向它們送上我所立之處的沙子。"說完，他讓東風把沙子吹走，吹向西方。然後所有聽到他話語的人都後悔了他們原先不明智的說詞，並發誓跟隨他的領導。如果他認為你夠值得，指揮官，他也許會跟隨你的。去酋長們會面的地方找他吧。
+str_rohan_hornburg_guildmaster_companion|所有在號角堡的人都有他們自己的職責，指揮官-應該說，除了一個人。或許他會跟你一起走，不然他就只能等哪天好運有個伊奧雷德願意要他吧！我們的烏法斯是個醉鬼-他會給戰友帶來歡樂，也是個老練的騎手，但他實在不願意在喝乾前放下酒杯！在那邊的大殿裡找他吧，如果你不嫌麻煩的話。
 str_imladris_guildmaster_companion_player_ask|老人，我從傳說中的北方尋求著名的戰士，人類或精靈的幫助。
-; str_imladris_guildmaster_companion_none|Look well, Commander. Before you is perhaps the last great muster of the North, in this Age and any Age hereafter. Man and Elf alike, we who have come here do not hope to return. From the Last Homely House we have come; from the vales and forests of Eriador the last of the Núnatani, whom you call Dúnedain, have come. Each of us has his appointed tasks - none may follow you as you wish, save that you exercise your writ and recruit from our garrison. 
+str_imladris_guildmaster_companion_none|看好了，指揮官。在你面前的，也許是這個時代和以後任何時代的最後一次北方大集結。人類和精靈一起，我們來到這裡不希求回去。回到我們的最後一個家園；來自伊瑞詹河谷和森林最後的西方人，你們稱為登丹人的，也來了。我們每人都有自己的任務-沒人能像你希望的那樣跟隨你，除非你拿令狀從我們的駐軍中招募新兵。
 str_imladris_guildmaster_companion_player_none_ok|我明白了，老人。 我感謝你花時間。
 str_imladris_guildmaster_player_found_ok|我明白了，老人。 我感謝你花時間。
-; str_show_keybinds_form|Special Key Bindings: ^^ Formation Keys:^ Use F1-F4 to order selected divisions. ^Keep the F1 key down to place selected divisions.^Place on enemy division to target.^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
-; str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?
-; str_gundabad_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
-; str_gundabad_guildmaster_companion_none| I care not where you come from -- you’ll watch your tongue around here! Oh yes, be careful how you speak to us, or you just might find yourself falling into a dark hole of snakes in these tunnels of ours. Our fighting lads are off in rebel lands, fighting thieves and brigands and murderous elf-friends. And what’re you about, eh? Shirking your own share of the fighting, spying on our private business? Off with you, back into the fray, like a proper soldier!
+str_show_keybinds_form|特殊鍵設定：^^鎮刑按鍵：^使用F1到F4來命令選擇的分隊。^按住F1來放置選擇的分隊。^放在敵方分對上來瞄準他們。^^切換使用的武器-O^^切換鏡頭模式-CTRL+END^^鼓舞-V^^呼喚馬-M^^查看命令/小地圖-Backspace
+str_mordor_cungol_guildmaster_companion|哦吼，你想要鬥士啊！我有個正適合你的弟兄。那傢伙，是老大們最喜歡的手下。噢不，別被他的矮小身材騙了！知道為什麼嗎，因為照他那樣繼續下去，他很快就能自己當老大了！只要給老烏弗塔克一把不錯的大斧，讓他待在前排，就能看著他大顯身手了！他會，讓敵人很頭痛不止，不會錯的！喂，弟兄們，安靜點！你們在笑什麼？回去值班，你們這些蛆蟲！抱歉，指揮官，那些暴徒不守紀律。不像烏弗塔克！帶他走吧，指揮官，你不會後悔的。你可以把性命交給烏弗塔克。看吧，他就在那站崗，在塔上。看起來姿態很雄偉，對吧？
+str_gundabad_guildmaster_companion_player_ask|我在這看到的都是卑鄙鬼祟的烏合之眾，搞不好一開打就會逃跑了。你們正當的戰士在哪裡？
+str_gundabad_guildmaster_companion_none|我不在乎你是哪裡來的--你在這裡要管好自己的舌頭！喔對，你要自己注意怎麼對我們說話，不然可能會發現自己掉進我們這裡哪個充滿蛇的黑暗隧道喔。我們能戰鬥的弟兄都在叛軍的土地上，跟盜賊和強盜以及兇殘的精靈朋友戰鬥。你又在幹嘛，蛤？自己偷懶不去戰鬥，探查著我們的私事？滾吧你，回去戰場上，像個正當的士兵一樣！
 str_gundabad_guildmaster_companion_player_none_ok|如果你知道什麼對你有好處，你會和我一起看你的話。
-; str_gundabad_guildmaster_player_found_ok|Do I hear you aright? Is this “Berta” of yours a troll that thinks? Now this, I have to see for myself.
-; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
+str_gundabad_guildmaster_player_found_ok|我沒聽錯吧？你說的"貝爾塔"是個會思考的食人妖？這個，我得親眼看看。
+str_gundabad_guildmaster_companion|你，管好你的舌頭，不然這裡就會有人把它割掉！喔對，走錯一步，然後我一彈指，就那樣--你就會進到格鬥坑裡了！這是我們，給你這種愛吹牛大嘴巴的特殊禮物。哈，不知道你會不會喜歡，跟貝爾塔一起在坑裡！我可以賭上一個月的食物你撐不過她的幾下攻擊。那是我們找到最狡猾的食人妖，不過我們更狡猾，看吧，看看我們是如何把她好好鏈起來的！還蠻好笑的，把她放在那洞穴裡古老矮人王的巨大雕像下。讓她不會孤單，嘿嘿嘿。怎樣？想來跟我們的貝爾塔對打嗎？
 str_fullname_region_rhun|羅馬尼安東部，賽爾督因河沿岸
 str_fullname_region_erebor|孤山的山麓，仰望孤山之處
 str_fullname_region_celebrant|凱勒布蘭特平原，凱勒布蘭特河與林萊河之間
@@ -2530,4 +2530,4 @@ str_shortname_region_s_misty_mountains|迷霧山脈南部的山麓
 str_shortname_region_n_anduin_vale|安度因河谷北部
 str_shortname_region_s_anduin_vale|安度因河谷南部
 str_shortname_region_cair_andros|凱爾安卓斯
-; str_isengard_hunting_camp_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!
+str_isengard_hunting_camp_guildmaster_player_found_ok|如果他很會殺戮，那我就帶走他。如果不會，那我會把他像魚一樣宰了挖出內臟。再如果他其實又是一隻毫無價值的蛆蟲，那我會再回來讓你為浪費我的時間付出代價！
