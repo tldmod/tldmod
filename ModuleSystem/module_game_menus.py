@@ -7295,7 +7295,8 @@ game_menus = [
 	  #Enter dungeon in Moria begin (mtarini)
       ("moria_secret",[
         (eq, "$current_town", "p_town_moria"),
-	  	(eq,"$entry_to_town_forbidden",1), 
+	  	#(eq,"$entry_to_town_forbidden",1), 
+        (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
 	  	(eq, "$moria_book_given",0),
 		(try_begin), (eq, "$found_moria_entrance", 1),
 			(str_store_string, s12, "@Go to the secret entrance to Moria" ),

@@ -744,30 +744,30 @@ scn_cirith_ungol_siege cirith_ungol_siege 256 none none 0 0 100 100 -100 0x00000
   0 
   0 
  outer_terrain_rohan 
-scn_custom_1 custom_1 256 none none 0 0 200 200 -0.5 0x0000000230000500000691a4000009e100004b34000070b7 
+scn_custom_1 custom_1 256 none none 0 0 200 200 -0.5 0x00000001388450d800058d6600006272000005a2000005ef 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_custom_2 custom_2 256 none none 0 0 200 200 -0.5 0x00000001388458b600058d6600006272000005a200006f64 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_custom_3 custom_3 256 none none 0 0 200 200 -0.5 0x00000001388454c500058d6600000fc7000005a20000635b 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_custom_4 custom_4 256 none none 0 0 200 200 -0.5 0x000000013885113680058d6600000fc700005acd0000635b 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_custom_5 custom_5 256 none none 0 0 200 200 -0.5 0x000000013887184400058d6600000fa2000005a200007078 
   0 
   0 
  outer_terrain_plain 
-scn_custom_2 custom_2 256 none none 0 0 200 200 -0.5 0x0000000130000500000691a4000009e100004b34000070b7 
+scn_custom_6 custom_6 256 none none 0 0 200 200 -0.5 0x000000013887124480058d6600000fa280000ec300007078 
   0 
   0 
  outer_terrain_plain 
-scn_custom_3 custom_3 256 none none 0 0 200 200 -0.5 0x00000001300005000003d8f600003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_plain 
-scn_custom_4 custom_4 256 none none 0 0 200 200 -0.5 0x0000000220000500000691a40000065c00004b34000070b7 
-  0 
-  0 
- outer_terrain_rohan 
-scn_custom_5 custom_5 256 none none 0 0 200 200 -0.5 0x0000000120000500000691a40000065c00004b34000070b7 
-  0 
-  0 
- outer_terrain_rohan 
-scn_custom_6 custom_6 256 none none 0 0 200 200 -0.5 0x00000001200005000003d8f600003efe00004b34000059be 
-  0 
-  0 
- outer_terrain_rohan 
 scn_custom_7 custom_7 256 none none 0 0 200 200 -0.5 0x00000002b0000500000691a40000065c00004b3400000dfd 
   0 
   0 

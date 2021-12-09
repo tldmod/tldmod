@@ -1464,8 +1464,8 @@ ws_party_spawns_list = [
 (p_town_moria           ,pt_moria_scouts,         pt_moria_raiders,   pt_moria_war_party,  -1),
 (p_town_troll_cave      ,pt_moria_scouts,         pt_moria_raiders,   pt_moria_war_party,  -1),
 
-(p_town_dol_guldur      ,pt_guldur_scouts,        pt_guldur_raiders,  pt_mordor_war_party, -1),
-(p_town_dol_guldur_north_outpost,pt_guldur_scouts,pt_guldur_raiders,  pt_mordor_war_party, -1),
+(p_town_dol_guldur      ,pt_guldur_scouts,        pt_guldur_raiders,  pt_guldur_war_party, -1),
+(p_town_dol_guldur_north_outpost,pt_guldur_scouts,pt_guldur_raiders,  pt_guldur_war_party, -1),
 
 (p_town_dunland_camp    ,pt_dunland_scouts,       pt_dunland_raiders, pt_dunland_war_party,-1),
 (p_town_harad_camp      ,pt_harad_scouts,         pt_harad_raiders,   pt_harad_war_party,  -1),
