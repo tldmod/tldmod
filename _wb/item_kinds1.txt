@@ -1680,7 +1680,7 @@ itemsfile version 2
  itm_mirkwood_scale Greenwood_Light_Scale Greenwood_Light_Scale 3  mirkwood_light_scale 0  mirkwood_scalequilted_01 134  mirkwood_scalequilted_01b 167772160  16842765 0 1400 704643206 12 93 0 26 12 11 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_heavy_scale Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 2500 704643206 23 96 0 38 12 15 0 0 0 0 0 0 0
+ itm_mirkwood_heavy_scale Greenwood_Leafscale Greenwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 2500 704643206 23 96 0 38 12 15 0 0 0 0 0 0 0
 0
 
  itm_free_mirkwood_armor_e Light_Mail_and_Surcoat Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643072 17 100 0 25 14 0 0 0 0 0 0 0 0
@@ -2366,7 +2366,7 @@ itemsfile version 2
  itm_free_dwarf_shield_k Dwarven_Shield Dwarven_Shield 1  dwarf_round_shield_n 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
- itm_woodmen_heavy Mirkwood_Armor Mirkwood_Armor 5  woodman_chieftain 0  woodman_chieftain_cloak 268435456  woodman_chieftain_light 134  woodman_chieftain_heavy 167772160  woodman_chieftain_heavy_cloak 536870912  16842765 0 2100 704643206 18 96 0 34 12 13 0 0 0 0 0 0 0
+ itm_woodmen_heavy Mirkwood_Armor Mirkwood_Armor 5  woodman_chieftain 0  woodman_chieftain_cloak 268435456  woodman_chieftain_light 134  woodman_chieftain_heavy 167772160  woodman_chieftain_heavy_cloak 536870912  16842765 0 2100 973078662 18 96 0 34 12 13 0 0 0 0 0 0 0
 0
 
  itm_dwarf_sword_a Dwarf_Sword Dwarf_Sword 4  dwarf_sword_a 0  scab_dwarf_sword_a 3458764513820540928  dwarf_sword_b 156672  scab_dwarf_sword_b 3458764513820697600  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 66 0 277 29

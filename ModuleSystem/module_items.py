@@ -986,7 +986,7 @@ items =[
 ["mirkwood_pad","Greenwood_Quilted_Coat",[("mirkwood_quiltedsurcoat_01",0),("mirkwood_quiltedsurcoat_01",imodbits_armor_bad),("mirkwood_quiltedsurcoat_01_b",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(6)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_armor|imodbit_lordly,],
 ["mirkwood_mail","Greenwood_Mail",[("mirkwood_maillewithsurcoat_01_b",0),("mirkwood_maillewithsurcoat_01",imodbits_armor_bad),("mirkwood_royal",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1800,weight(17)|abundance(94)|head_armor(0)|body_armor(29)|leg_armor(14)|difficulty(12),imodbits_armor|imodbit_lordly,],
 ["mirkwood_scale","Greenwood_Light_Scale",[("mirkwood_light_scale",0),("mirkwood_scalequilted_01",imodbits_armor_bad),("mirkwood_scalequilted_01b",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1400,weight(12)|abundance(93)|head_armor(0)|body_armor(26)|leg_armor(12)|difficulty(11),imodbits_armor|imodbit_lordly,],
-["mirkwood_heavy_scale","Mirkwood_Leafscale",[("mirkwood_scaleovermaille_01",0),],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(23)|abundance(96)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(15),imodbits_armor|imodbit_lordly,],
+["mirkwood_heavy_scale","Greenwood_Leafscale",[("mirkwood_scaleovermaille_01",0),],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(23)|abundance(96)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(15),imodbits_armor|imodbit_lordly,],
 #next two free Jan 2020
 ["free_mirkwood_armor_e","Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(17)|head_armor(0)|body_armor(25)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
 #WEAPONS##########
@@ -1267,7 +1267,7 @@ items =[
 ["free_dwarf_shield_i","Dwarven_Shield",[("dale_shield_i",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 ["free_dwarf_shield_j","Dwarven_Shield",[("dale_shield_j",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 ["free_dwarf_shield_k","Dwarven_Shield",[("dwarf_round_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
-["woodmen_heavy","Mirkwood_Armor",[("woodman_chieftain",0),("woodman_chieftain_cloak",imodbit_cloak),("woodman_chieftain_light",imodbits_armor_bad),("woodman_chieftain_heavy",imodbits_armor_good),("woodman_chieftain_heavy_cloak",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2100,weight(18)|abundance(96)|head_armor(0)|body_armor(34)|leg_armor(12)|difficulty(13),imodbits_armor|imodbit_lordly,],
+["woodmen_heavy","Mirkwood_Armor",[("woodman_chieftain",0),("woodman_chieftain_cloak",imodbit_cloak),("woodman_chieftain_light",imodbits_armor_bad),("woodman_chieftain_heavy",imodbits_armor_good),("woodman_chieftain_heavy_cloak",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2100,weight(18)|abundance(96)|head_armor(0)|body_armor(34)|leg_armor(12)|difficulty(13),imodbits_armor|imodbit_lordly|imodbit_cloak,],
 
 #WEAPONS###########
 
