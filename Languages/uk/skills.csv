@@ -35,7 +35,7 @@ skl_riding_desc|Дозволяє їздити на більш породисти
 skl_athletics|Атлетика
 skl_athletics_desc|Збільшує швидкість бігу (приватне вміння).
 skl_shield|Щит
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
+skl_shield_desc|зменшує пошкодження щитів (на 8 за рівень навику), покращує швидкість і охоплення щита, зменшує штраф щита при використанні з луками. (Особисті здібності)
 skl_weapon_master|Володіння зброєю
 skl_weapon_master_desc|Полегшує навчання бойовій майстерності і підвищує відповідні межі. Межі бувають такі: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420 (приватне вміння).
 skl_power_draw|Потужний постріл
@@ -45,4 +45,4 @@ skl_power_throw_desc|З кожним новим рівнем цієї навич
 skl_power_strike|Потужний удар
 skl_power_strike_desc|З кожним новим рівнем цієї навички шкода, що завдається зброєю ближнього бою, збільшується на 8%% (приватне вміння).
 skl_ironflesh|Залізна плоть
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)
+skl_ironflesh_desc|Кожне очко цього навику збільшує очки здоров’я на +2 і дозволяє вам позбутися певної шкоди, не отримавши поранення. (Особисті здібності)

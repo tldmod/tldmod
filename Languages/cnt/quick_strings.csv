@@ -694,7 +694,7 @@ qstr_{s1}___Throwing:^|{s1}   投擲武器：^
 qstr_{s1}___Slings:|{s1}   投石索：
 qstr_{s2}_|{s2}-
 qstr__Click_on_the_troop_|(點擊部隊來旋轉它)^^點擊裝備^(頭盔、鎧甲、手套和靴子)^來顯示它們。
-qstr_ready_bows_and_missi|準備好弓箭和投擲武器
+qstr_ready_bows_and_missi|準備好弓和遠程武器
 qstr_ready_side_arms|準備好副武器
 qstr_ready_two_hander|準備好雙手武器
 qstr_ready_polearms|準備好長柄武器
@@ -836,7 +836,7 @@ qstr_The_sorcerer_is_flee|巫師正在逃跑！殺了他！
 qstr_The_sorcerer_has_joi|巫師加入了戰鬥！殺了他！
 qstr_The_sorcerer_is_dead|巫師已死！
 qstr_The_battle_is_won!|戰鬥勝利！
-qstr_A_band_of_tribal_orc|一群部落半獸人出現了！
+qstr_A_band_of_tribal_orc|一團部落半獸人出現了！
 qstr_Gaaaar!!_We_wants_th|嘎啊啊啊！我們想要那些人肉！
 qstr_{s31}_scouts_have_ap|{s31}斥候出現了！
 qstr_Those_are_ours!_We_h|那些是我們的！他們離開後我們一直在追蹤他們！沒有人能阻止我們！
@@ -1063,7 +1063,7 @@ qstr_You_drove_back_the_e|你趕走了敵方的艦隊，但失去了你大部分
 qstr_You_were_defeated_by|你被來攔截的艦隊擊敗並沒能夠襲擊城市！
 qstr_^^^^^^^You_come_upon|^^^^^^^你遇了一群正從{s2}前住{s3}的難民。^^他們之中大多是老弱婦孺。^^雖然也有護衛，但不夠從襲擊中保護所有人。
 qstr_^^^^^^^You_come_upon_|^^^^^^^你遇到了你從{s2}就一直在追蹤的難民。他們似乎正在前往{s3}，並且大部分都是老人和傷者。^^雖然也有護衛，但不夠阻止你和你的人馬殺死所有人。
-qstr_^^At_last_the_Master|^^終於，主人開始行動了！火把燎亮。鋒利的武器閃閃發光。你和你粗壯的弟兄們很快就會接到邁進的命令。啊，會有戰鬥的，很多很多的，還有足夠分給所有人的榮耀！^^你有幸被傳喚到主人的塔內覲見它。可能你的第一個命令會是是奴隸的工作-在這掠奪一個村莊、在那劫持一個商隊之類的。但你很快就能證明自己了。誰能說你不會像任何一個{s3}的{s2}旗下指揮官那樣扮演重要的角色呢？^^戰爭已經開始了；人類和其盟友的殞落要開始了！
+qstr_^^At_last_the_Master|^^終於，主人開始行動了！火把燎亮。鋒利的武器閃閃發光。你和你粗壯的小夥子們很快就會接到邁進的命令。啊，會有戰鬥的，很多很多的，還有足夠分給所有人的榮耀！^^你有幸被傳喚到主人的塔內覲見它。可能你的第一個命令會是是奴隸的工作-在這掠奪一個村莊、在那劫持一個商隊之類的。但你很快就能證明自己了。誰能說你不會像任何一個{s3}的{s2}旗下指揮官那樣扮演重要的角色呢？^^戰爭已經開始了；人類和其盟友的殞落要開始了！
 qstr_^^Your_head_suddenly|^^你的腦海突然出現了一個景象-燃燒的眼睛。在你周圍，你的戰士們都僵在原地不動。不知為何，你知道在那一刻所有人都聽到了同樣的召喚，看到了同樣的景象。邪眼的法術真偉大-黑邪塔的力量真偉大！^^知識，不言而喻，滲到你的骨頭裡。時刻到了。黑暗之主已下令-你們都將在公開的戰爭中向敵方邁進。來自{s3}的{s2}其命令將至。起初你扮演的角色並不偉大，但你很快就能證明自己了。^^戰爭已經開始了；人類和其盟友的殞落要開始了！
 qstr_{s13}_asked_you_to_j|{s13}要你帶著至少{reg13}名部下加入他一起面對艾辛格的最後一博。
 qstr_You_defeated_{reg5}_|你擊敗了{reg5}名敵人並給你的指揮官留下了深刻的印象。
@@ -1111,7 +1111,7 @@ qstr_{s1}_is_scouted.|{s1}已經偵查完畢了。
 qstr_{s2}_was_defeated!|{s2}被擊敗了！
 qstr_The_Age_of_Men_has_f|人類的時代終於結束了。現在雙塔都在集結他們的軍隊和盟友來決定誰才是中土世界唯一的統治者！
 qstr_The_War_of_the_Two_T|雙塔之戰已經開始了！
-qstr_The_forces_of_{s22}_|{s22}的勢力被鼓舞了！{s22}現在是{s23}的。
+qstr_The_forces_of_{s22}_|{s22}的勢力團結起來了！{s22}現在是{s23}的。
 qstr_The_might_of_{s22}_h|{s22}的力量已經被削弱了！{s22}現在是{s23}的。
 qstr_In_a_desperate_attem|為了防禦他的敵人，索倫孤注一擲的派出了他的魔多軍團！
 qstr_Guardians_of_{s6}|{s6}的守護者
@@ -1346,7 +1346,7 @@ qstr_You_swear_an_oath_of|你發了對{s3}的復仇之誓。你必須在未來�
 qstr_The_search_for_the_L|尋找失落長槍的旅途帶著你來到了多溫尼安，古代布拉多辛王的北方王國所在地。未完待續
 qstr__You_need_to_be_{s24|(你至少需要升到{s24}以上)。
 qstr_You_are_not_worthy_o|你不配我效力。先證明自己，升到{s25}以上吧。{S2}
-qstr_I_am_sorry._I_cannot|抱歉。我不能照顧只是{s25}的你因為我還有更要緊的事要處理。{s2}
+qstr_I_am_sorry._I_cannot|抱歉。我不能幫只是{s25}的你處理因為我還有更要緊的事要忙。{s2}
 qstr_Yes_I_am_and_I_can_h|對，我是，我可以幫你但你得付錢。
 qstr_You_heard_right_and_|你沒聽錯，是的，我可以幫助你。
 qstr__Costs_1000_Resource|(花費1000資源，5影響力)
@@ -1427,7 +1427,7 @@ qstr_This_is_a_chance_for|這是個展現我實力的機會。 我將在敵方�
 qstr_Accursed_be_those_wh|讓我們今天詛咒那些跟隨{s7}的人，因為我要讓大家好好看著他們被擊倒的樣子！。
 qstr_{s9}_wants_you_to_de|{s9}要你在戰鬥中擊敗來自{s36}的{s35}。
 qstr_I_humbly_ask_that_yo|我謙卑地求你找別人執行這個任務。我不認為自己能在戰鬥中勝過{s7}。
-qstr_Mercy_I_crave!_To_fa|發點慈悲吧，我求求你了！ 在戰鬥中公然面對{s7}是件大蠢事！我做不到啊！
+qstr_Mercy_I_crave!_To_fa|發發慈悲吧，我求求你了！ 在戰鬥中公然面對{s7}是件大蠢事！我做不到啊！
 qstr_strong_warriors_from|來自{s7}的強大戰士們
 qstr_champions_from_{s7}_|戰場上的最強者，來自{s7}的冠軍勇士們
 qstr_{playername}_the_men|{playername}，我們的人聽說了關於敵方部隊之兇猛的傳聞。而這些駭人的故事正在使士氣低落。我要你讓他們知道其實沒什麼好怕的。我要你挑戰並擊敗{reg22}名{s6}。
@@ -1441,7 +1441,7 @@ qstr_I_want_you_and_your_|我要你和你的人馬去殺
 qstr_{playername}_you_nee|{playername}，你需要贏得我和你手下的敬重。{s6}{reg22}名來自{s7}的部隊！
 qstr_{s9}_wants_you_to_per|{s9}要你親自去殺{reg22}名{s6}的部隊。
 qstr_{s9}_wants_you_and_y|{s9}要你和你的手下去殺{reg22}名{s6}的部隊。
-qstr_{playername}_we_have_|{playername}，我們收到了嚴峻的消息。昂巴的海盜變得越來越大膽，在我們說話的同時，一支艦隊正在離{s6}不遠處聚集。他們沿著海岸線打劫，很快就會到達城市本身了。我們必須在艦隊抵達城市前攔截它。快點前往{s6}，剩下的則跟地方當局談吧。
+qstr_{playername}_we_have_|{playername}，我們收到了嚴峻的消息。昂巴的海盜變得越來越大膽，在我們說話的同時，一支艦隊正在離{s6}不遠處聚集。他們沿著海岸線打劫，很快就會到達城市本身了。我們必須在艦隊抵達城市前攔截它。快點前往{s6}，剩下的則跟地方官談吧。
 qstr_{playername}_we_have_r|{playername}，我們收到了嚴峻的消息。盧恩的蠻族比我們想像的更加狡猾和大膽-躲過我們斥候的偵測，他們建造了足夠的船隻和木筏來穿越長湖，並會直接對長湖鎮發起攻勢！我們必須在艦隊抵達城市前攔截它。帶領你的部隊盡可能迅速的到那裡，把野蠻人趕回湖泊的另一邊吧！
 qstr_If_you_seek_pillage_|如果你想要燒殺擄掠，這會是個錯過就沒了的好機會喔，{playername}。一支海盜的艦隊正從{s7}的港口出發，並將一路航向{s6}，其本身充滿著甜美的果實等著摘採！加入他們的進攻，好好享用戰利品吧！
 qstr_The_soft_weaklings_o|{playername}，長湖鎮的弱者們無法匹敵我們迅速的騎兵和勇猛的戰士。這是眾所皆知的。躲在湖泊的對面，長湖鎮的人以為自己很安全，但我們很快就會給他們一個驚喜！^^我們造了足夠的船隻，和木筏，來穿越大湖。他們絕對料想不到的！^^如果你想加入襲擊，那就前往主營地並跟營地指揮官談吧。
@@ -1450,8 +1450,8 @@ qstr_{s9}_asked_you_to_hel|{s9}要你幫助保衛長湖鎮免受海軍侵襲，�
 qstr_{s9}_offered_you_an_|{s9}為你提供了加入海軍襲擊{s3}的機會。前往{s4}，與營地指揮官交談，並加入進攻吧。
 qstr_{s9}_offered_you_an_o|{s9}為你提供了加入海軍襲擊長湖鎮的機會。前往{s4}，與營地指揮官交談，並加入進攻吧。
 qstr_We_will_go_as_swiftl|我們會盡快趕去，但願我們不會太遲。
-qstr_We_shall_plunder_the|我們將掠奪他們的港口並把他們的財富據為己有！
-qstr_We_shall_plunder_the_|我們將掠奪湖畔之城並把他們的財富據為己有！
+qstr_We_shall_plunder_the|我們將搜刮他們的港口並把他們的財富據為己有！
+qstr_We_shall_plunder_the_|我們將搜刮湖畔之城並把他們的財富據為己有！
 qstr_I_m_sorry_but_we_can|對不起，但我們現在無法援助他們。
 qstr_Bah!_Far_more_glory_|呸！在其他地方能贏得的榮耀遠遠超過微不足道的海盜勾當。
 qstr_This_raid_does_not_i|我對這次襲擊不感興趣。我會在其他地方贏得榮耀。
@@ -1564,8 +1564,8 @@ qstr_Alright!_Worms!_Get_|好吧！蟲子！過來處理這個！
 qstr_Let_us_begin._My_ass|讓我們開始吧。我的助手會照顧你和你的人馬。
 qstr_All_done!_Ha!_You_di|都做完了！哈！你沒怎麼尖叫，令人印象深刻！現在走吧，讓我一個人待著。
 qstr_We_ve_done_what_We_c|我們已經盡力了。現在你和你的人馬需要休息。
-qstr_Boss_the_lads_are_hu|老闆，弟兄們都餓了！我們都有努力勞動卻還在挨餓！
-qstr_Master_the_lads_are_|主人，弟兄們都餓了！我們可沒辦法空著肚子去作戰啊！
+qstr_Boss_the_lads_are_hu|老闆，小的們都餓了！我們都有努力勞動卻還在挨餓！
+qstr_Master_the_lads_are_|主人，小的們都餓了！我們可沒辦法空著肚子去作戰啊！
 qstr_Yes!_With_proper_fed|是的！好好餵飽我們的肚子，我們就會加倍努力服侍你！
 qstr_As_you_command_maste|遵命，主人，呵呵。大伙們，菜單上又有肉啦！
 qstr_Your_Orcs_&_Uruks_at|你的半獸人和強獸人吃掉了{reg1}個人類！

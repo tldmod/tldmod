@@ -20,9 +20,9 @@ p_town_west_emnet|Вест-Емнет
 p_town_eastfold|Істфолд
 p_town_morannon|Мораннон
 p_town_minas_morgul|Мінас-Моргул
-; p_town_cirith_ungol|Emyn Muil Watchtower
+p_town_cirith_ungol|Сторожова вежа Емін Муїл
 p_town_east_osgiliath|Східний Осгіліат
-; p_town_orc_sentry_camp|Emyn Arnen Sentry
+p_town_orc_sentry_camp|Емін Арнен Сентрі
 p_town_isengard|Ізенгард
 p_town_urukhai_outpost|Застава урук-хай
 p_town_urukhai_h_camp|Мисливський табір урук-хай
@@ -31,7 +31,7 @@ p_town_caras_galadhon|Карас-Галадон
 p_town_cerin_dolen|Керін-Долен
 p_town_cerin_amroth|Керін-Амрот
 p_town_thranduils_halls|Зали Трандуїла
-; p_town_woodelf_camp|Woodelf South Camp
+p_town_woodelf_camp|Південний табір Вудельфа
 p_town_woodelf_west_camp|Західний табір Лісових ельфів
 p_town_woodsmen_village|Селище лісовиків
 p_town_beorning_village|Селище беорнінгів
@@ -46,13 +46,13 @@ p_town_khand_camp|Хандський табір
 p_town_umbar_camp|Корсарський табір
 p_town_imladris_camp|Рівендельський табір
 p_town_dol_guldur|Дол-Гулдур
-; p_town_dol_guldur_north_outpost|Dol Guldur Road Outpost
+p_town_dol_guldur_north_outpost|Застава Дол Гулдур
 p_town_rhun_main_camp|Головний табір Руну
 p_town_rhun_south_camp|Південна застава Руну
 p_town_rhun_north_camp|Північна застава Руну
 p_town_gundabad|Гундабад
-; p_town_gundabad_ne_outpost|Grey Mountains Hold
-; p_town_gundabad_nw_outpost|Grey Mountains Ravine
+p_town_gundabad_ne_outpost|Сірі гори тримають
+p_town_gundabad_nw_outpost|Сірі гори Яр
 p_town_goblin_north_outpost|Гоблінабад
 p_town_goblin_south_outpost|Південний аванпост гоблінів
 p_town_gundabad_m_outpost|Гундабадський аванпост в Темноліссі

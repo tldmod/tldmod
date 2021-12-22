@@ -144,7 +144,7 @@ itm_arnor_greaves|Арнорські наголінники
 itm_arnor_shield_a|Арнорський щит
 itm_arnor_shield_c|Арнорський кавалерійський щит
 itm_arnor_sword_a|Арнорський меч-бастард
-; itm_arnor_sword_c|Arnor War Sword
+itm_arnor_sword_c|Військовий меч Арнора
 itm_arnor_sword_f|Арнорський короткий меч
 itm_riv_helm_a|Рівенділський коїф
 itm_riv_helm_b|Рівенділський шолом лучника
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Лінхірський екет
 itm_pelargir_eket|Пеларгірський екет
 itm_pelargir_sword|Пеларгірський меч
 itm_gondor_ranger_sword|Ґондорський меч рейнджера
-; itm_gondor_2h_sword|Gondor War Sword
+itm_gondor_2h_sword|Гондорський бойовий меч
 itm_gondor_citadel_sword|Ґондорський меч Варти Цитаделі
 itm_gondor_cav_sword|Ґондорський кавалерійський меч
 itm_gondor_spear|Ґондорський спис
 itm_gondor_tower_spear|Ґондорський спис Варти Цитаделі
 itm_gondor_lance|Ґондорський кавалерійський спис
-; itm_loss_axe|Gondor Fighting Axe
-; itm_loss_war_axe|Gondor War Axe
+itm_loss_axe|Гондорська бойова сокира
+itm_loss_war_axe|Гондорська бойова сокира
 itm_lorien_sword_a|Лоріенський довгий меч
 itm_lorien_sword_b|Лоріенський короткий меч
 itm_lorien_sword_c|Лоріенський бойовий меч
@@ -292,27 +292,27 @@ itm_orc_tribal_c|Необроблена шкіра
 itm_evil_gauntlets_a|Чорні рукавички
 itm_evil_gauntlets_b|Чорні панцерні рукавички
 itm_free_isen_orc_armor_a|Ізенґардська орча броня
-; itm_isen_orc_light_a|Isengard Orc Light Harness
-; itm_isen_orc_light_b|Isengard Orc Light Harness
-; itm_isen_orc_pad_a|Isengard Orc Light Segmented Armor
-; itm_isen_orc_pad_b|Isengard Orc Medium Segmented Armor
-; itm_isen_orc_mail_a|Isengard Orc Mail
-; itm_isen_orc_mail_b|Isengard Orc Heavy Segmented Armor
+itm_isen_orc_light_a|Світловий джгут орків Ізенгарда
+itm_isen_orc_light_b|Світловий джгут орків Ізенгарда
+itm_isen_orc_pad_a|Легка сегментована броня орка Ізенгарда
+itm_isen_orc_pad_b|Середній сегментований обладунок орка Ізенгарда
+itm_isen_orc_mail_a|Пошта орків Ізенгарда
+itm_isen_orc_mail_b|Важка сегментована броня орків Ізенгарда
 itm_isen_uruk_light_a|Урук-хайська легка броня
-; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
-; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
-; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
-; itm_isen_uruk_med_b|Uruk-hai Mail
-; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
-; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
-; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
+itm_isen_uruk_light_b|Бойова упряж Урук-хай
+itm_isen_uruk_light_c|Урук-хай берсерк
+itm_isen_uruk_med_a|Легка сегментована броня Урук-хай
+itm_isen_uruk_med_b|Пошта Урук-Хай
+itm_isen_uruk_heavy_a|Середній сегментований обладунок Урук-хай\n 
+itm_isen_uruk_heavy_b|Важка пошта Урук-хай
+itm_isen_uruk_heavy_c|Повна сегментована броня Урук-хай
 itm_isen_uruk_heavy_d|Урук-хайська шкіряна броня слідопита
 itm_isen_uruk_heavy_e|Урук-хайська шкіряна броня слідопита
 itm_uruk_tracker_boots|Урукські чоботи слідопита
 itm_uruk_greaves|Урукські поножі
 itm_uruk_chain_greaves|Урукські кольчужні поножі
 itm_uruk_ragwrap|Урукські рвані обмотки
-; itm_isen_orc_helm_a|Isengard Orc Helm
+itm_isen_orc_helm_a|Шлем орка Ізенгарда
 itm_isen_uruk_helm_a|Урук-хайський шолом
 itm_isen_uruk_helm_d|Урук-хайський шолом полководця
 itm_isen_uruk_helm_e|Урук-хайський шолом слідопита
@@ -514,12 +514,12 @@ itm_harad_scale|Харадська луската броня
 itm_harad_tiger_scale|Тигряча броня варти
 itm_harad_lion_scale|Левова броня варти 
 itm_harad_dragon_helm|Шолом Кілока
-; itm_harad_cav_helm_a|Harondor Light Helm
-; itm_harad_cav_helm_b|Harondor Light Helm
+itm_harad_cav_helm_a|Легкий шлем Харондора
+itm_harad_cav_helm_b|Легкий шлем Харондора
 itm_black_snake_helm|Шолом-Маранка
-; itm_harad_finhelm|Harad Heavy Footman Helmet
-; itm_harad_heavy_inf_helm|Harad Footman Helmet
-; itm_harad_wavy_helm|Harad Conical Helmet
+itm_harad_finhelm|Важкий шолом піхоти Харада
+itm_harad_heavy_inf_helm|Шолом лакея Харада
+itm_harad_wavy_helm|Кінний шолом Harad
 itm_harad_eaglehelm|Шолом Орлиної гвардії
 itm_lion_helm|Шолом Левиної гвардії
 itm_harad_pantherhelm|Шолом Гвардії пантери
@@ -573,7 +573,7 @@ itm_khand_throwing_axe|Кхандські метальні сокири
 itm_khand_rammace|Кхандська бараняча булава
 itm_khand_pitsword|Меч бійця
 itm_khand_tulwar|Кхандський тальвар
-; itm_khand_2h_tulwar|Khand Great Tulwar
+itm_khand_2h_tulwar|Кханд Великий Тулвар
 itm_khand_lance|Кхандський кавалерійський спис
 itm_easterling_round_horseman|Істерлінгський круглий щит
 itm_variag_gladiator_shield|Істерлінгський ямний щит
@@ -727,7 +727,7 @@ itm_rohan_lance_banner_sun|Роганський спис з прапором с�
 itm_rohan_lance_banner_horse|Роганський спис з прапором коня
 itm_ent_water|Дивна чаша води
 itm_map|Карти Середзем'я
-; itm_athelas_reward|Dried Athelas Leaves
+itm_athelas_reward|Сушене листя Ателаса
 itm_phial_reward|Світоч Ґаладріель
 itm_scroll_reward|Про падіння Гондоліна
 itm_hammer_reward|Ковальський молот
@@ -772,7 +772,7 @@ itm_dale_armor_reward|Дейльская благородна кольчуга
 itm_leather_gloves_reward|Рукавички лучника
 itm_beorn_shield_reward|Беорнінгський щит
 itm_beorn_axe_reward|Ведмежа дубина
-; itm_drums_of_the_deep|Drums of the Deep
+itm_drums_of_the_deep|Барабани глибини
 itm_khamul_helm|Шолом Кгамулу
 itm_black_arrows_reward|Чорні стріли
 itm_leather_boots_reward|Мисливські чоботи

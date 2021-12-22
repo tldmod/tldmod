@@ -1,253 +1,253 @@
 
-str_yes|是 
-str_no|否 
-str_noone|沒 有 人
-str_s50_comma_s51|{s50}， {s51}
-str_s50_and_s51|{s50} 和 {s51}
-str_s5_s_party|{s5} 的 隊 伍
+str_yes|是。
+str_no|否。
+str_noone|沒有人
+str_s50_comma_s51|{s50}，{s51}
+str_s50_and_s51|{s50}和{s51}
+str_s5_s_party|{s5}的隊伍
 str_s5_s_host| {s5}的大軍
-str_given_by_s1_at_s2|在 {s2} 被 {s1} 給 予
-str_given_by_s1_in_wilderness|在 戰 場 上 被 {s1} 給 予
-str_s7_raiders|{s7} 掠 奪 者
-str_bandits_eliminated_by_another|令 人 煩 厭 的 強 盜 已 被 其 他 隊 伍 消 滅。
-str_msg_battle_won|戰 鬥 勝 利! 按 下 tab 離 開 戰 場...
-str_tutorial_map1|你 正 在 查 看 中 土 地 圖。在 地 圖 上 按 下 左 鍵 去 移 動 你 的 隊 伍、進 入 城 鎮、或 者 追 逐 其 他 隊 伍。假 如 你 的 隊 伍 停 止 移 動， 時 間 將 會 暫 停。如 要 在 任 何 地 方 過 渡 時 間 請 按 下 空 白 鍵。
-str_accept|接 受
+str_given_by_s1_at_s2|在{s2}被{s1}所給的
+str_given_by_s1_in_wilderness|在戰場上被{s1}所給的
+str_s7_raiders|{s7}掠奪者
+str_bandits_eliminated_by_another|棘手的強盜已經被其他隊伍消滅了。
+str_msg_battle_won|戰鬥勝利！按tab鍵來離開...
+str_tutorial_map1|你正在查看全景地圖。在地圖上按下左鍵來移動你的隊伍、進入選擇的城鎮或追逐其他隊伍。假如你的隊伍沒有在移動、等待或休息的話時間則會暫停。如果要在任何地方等待只要按住空白鍵就好。
+str_accept|接受
 str_charge|衝鋒
-str_color|顏 色
-str_flip_horizontal|水 平 翻 轉
-str_flip_vertical|垂 直 翻 轉
-str_hold_fire|停 火
-str_blunt_hold_fire|停 頓 / 停 火
-str_tutorial_ammo_refilled|彈 藥 補 充 完 畢
-str_tutorial_failed|這 次 你 輸 了 ， 不 過 別 擔 心 。 仔 細 遵 循 說 明 ， 下 次 你 會 做 得 更 好 。 按 'Tab' 鍵 返 回 選 單 ， 您 可 以 在 其 中 重 試 本 教 程 。
-str_tutorial_1_msg_1|在 本 教 程 中，您 將 學 習 運 動 和 戰 鬥 的 基 礎 知 識。在 Mount&Blade中，您 使 用 滑 鼠 控 制 您 要 查 看 的 位 置，並 使 用 鍵 盤 上 的 'W，A，S，D' 鍵 移 動。你 在 訓 練 中 的 第 一 個 任 務 是 找 到 房 間 裏 的 旗 子並 移 到 上 面。您 可 以 隨 時 按 'Tab' 鍵 退 出 本 教 程 或 退 出 遊 戲 中 的 任 何 其 他區 域。現 在 去 旗 子 那 裡。
-str_tutorial_1_msg_2|做得好。下一步我們將用武器掩護進攻。在本教程中，您已經裝備了弓和箭、劍和盾牌。你可以使用滑鼠滾輪從武器槽中取出不同的武器。在默認配寘中，向上滾動會拉出你的下一個武器，向下滾動會拉出你的盾牌。如果你已經拿著一個盾牌，向下滾動將把你的盾牌收起來。現在試著用滾輪改變你的裝備。準備好後，轉到標記以繼續執行下一個任務。
-str_tutorial_1_msg_3|傑出的。本教程的下一部分將介紹如何使用近戰武器進行攻擊。你用滑鼠左鍵攻擊當前使用的武器。按住按鈕準備攻擊，然後釋放按鈕進行攻擊。如果你在釋放前按住滑鼠左鍵一段時間，你的攻擊將更加强大。現在拔出你的劍，摧毀房間裏的四個假人。
+str_color|顏色
+str_flip_horizontal|水平翻轉
+str_flip_vertical|垂直翻轉
+str_hold_fire|停止射擊
+str_blunt_hold_fire|鈍器/停止射擊
+str_tutorial_ammo_refilled|彈藥補充完畢。
+str_tutorial_failed|這次你被打敗了，但別擔心。仔細遵循說明下次你就會做得更好的。按Tab鍵返回選單後你可以重新嘗試這個教學。
+str_tutorial_1_msg_1|在這個教學裡，你將學習移動和戰鬥的基礎。在Mount&Blade中你會使用滑鼠控制你要查看的位置，並用鍵盤上的WASD鍵移動。你在訓練中的第一個任務是找到房間裡的旗子並移動到上面。你可以隨時按Tab鍵退出本教學或退出遊戲中的任何其他區域。現在去旗子那裡吧。
+str_tutorial_1_msg_2|做得好。下一步我們將涵蓋用武器進攻。在本教學中，你已經裝備了弓箭、劍和盾。你可以使用滑鼠滾輪從武器槽中取出不同的武器。在預設配置中，向上滾動會拉出你的下一個武器，向下滾動會拉出你的盾。如果你已經拿著一張盾，向下滾動則會把你的盾收起來。現在試著用滾輪改變你的裝備。準備好後，走到標記以繼續下一個任務。
+str_tutorial_1_msg_3|太棒了。本教學的下一部分將介紹如何使用近戰武器進行攻擊。用你的滑鼠左鍵使用當前的武器攻擊。按住按鈕準備攻擊，然後釋放按鈕進行打擊。如果你在釋放前按住滑鼠左鍵一段時間，你的攻擊將更加强大。現在拔出你的劍，摧毀房間裡的四個假人吧。
 str_tutorial_1_msg_4|幹得好！你毀了所有四個假人。你現在可以去下一個房間了。
-str_tutorial_1_msg_5|如你所見，房間的另一邊有一個射箭靶。你的下一個任務是用弓把三支箭射入目標。按下並按住滑鼠左鍵以切出箭頭。然後，您可以通過釋放滑鼠左鍵來觸發箭頭。注意荧幕中央的瞄準網，它顯示了你的射擊精度。為了達到最佳的精度，讓你的箭在最小的時候飛。現在試著射擊目標。
-str_tutorial_1_msg_6|做得好！ 你已經學會了移動和攻擊的基礎知識。通過一些練習，你很快就會掌握它們。在第二個教程中，您可以學習更高級的戰鬥技能並面對武裝對手。 您可以隨時按'Tab'鍵返回教程菜單。
-str_tutorial_2_msg_1|本教程將教你如何用盾牌保衛自己以及如何與武裝對手作戰。現在你只帶著一個盾牌。你的任務不是攻擊，而是用盾牌成功保護自己免受傷害。在下一個房間裡有一個武裝的對手在等你。他會盡力讓你失去意識，而你必須按住鼠標右鍵來保護自己。現在進入下一個房間面對你的對手。請記住，您可以隨時按'Tab'鍵退出本教程或退出遊戲中的任何其他區域。
-str_tutorial_2_msg_2|按 住 鼠 標 右 鍵 抬 起 盾 牌 。 盡 量 保 持 站 立 三 十 秒 。   你 有 {reg3} 秒 。
-str_tutorial_2_msg_3|幹 得 好 ， 你 成 功 地 防 禦 了 武 裝 對 手 。 本 教 程 的 下 一 階 段 將 使 用 你 的 盾 牌 對 抗 敵 人 弓 箭 手 的 力 量 。   當 你 準 備 面 對 弓 箭 手 時 ， 轉 移 到 下 一 個 房 間 。
-str_tutorial_2_msg_4|用 鼠 標 右 鍵 抬 起 盾 牌 ， 保 護 自 己 不 受 箭 頭 傷 害 。 盡 量 保 持 站 立 三 十 秒 。 你 有 {reg3} 秒 。
-str_tutorial_2_msg_5|很 棒 ， 你 已 經 成 功 防 禦 了 弓 箭 手 。 在 隔 壁 房 間 有 獎 勵 等 你 。
-str_tutorial_2_msg_6|在 默 認 配 置 中 ， 鍵 盤 上 的 'F' 鍵 用 於 與 遊 戲 世 界 中 的 對 象 和 人 進 行 互 動 。 要 拿 起 祭 壇 上 的 劍 ， 看 它 ， 當 你 看 到 “裝備” 這 個 詞 時 按 'F' 。
-str_tutorial_2_msg_7|一 個 好 武 器 ！ 現 在 你 可 以 用 它 來 復 仇 。 回 到 門 口 ， 處 理 你 之 前 遇 到 的 弓 箭 手 。
-str_tutorial_2_msg_8|很 好 。 在 完 成 本 教 程 之 前 ， 您 的 最 後 一 個 任 務 是 面 對 護 衛 。 現 在 穿 過 門 ， 向 他 展 示 你 的 武 器 ！
-str_tutorial_2_msg_9|恭喜！ 你現在已經學會瞭如何用盾牌來保衛自己，甚至是第一次嘗試與武裝對手戰鬥。\n給它一點練習，你很快就會成為一名著名的劍客。\n下一個教程涵蓋了定向防禦，這是Mount＆Blade戰鬥中最重要的元素之一。您可以隨時按'Tab'鍵返回教程菜單。
-str_tutorial_3_msg_1|本教程旨在為您提供一個沒有盾牌的招架和防禦概述。\n用你的武器招架攻擊比用盾牌阻擋要困難一些。\n當你用武器防禦時，你只受到一個方向的保護，即你的武器被設定的方向。\n如果你向上阻擋，你會避開任何頭頂上的擺動，但是你不會阻止向你身體兩側的推力或攻擊。這些攻擊中的任何一個都能擊中你。\n這就是為什麼，為了在沒有盾牌的情況下生存，你必須學會定向防守。現在去拿起斧頭開始練習。
-str_tutorial_3_msg_2|默認情況下，您防守的方向(通過單擊並按住鼠標右鍵)取決於最近對手的攻擊方向。\n例如，如果你的對手正在準備一個推力攻擊，按住鼠標右鍵將招架推力攻擊，但不會從側面或頭頂攻擊。\n你必須仔細觀察你的對手，並在敵人開始攻擊後才開始你的攻擊。如果你在他準備攻擊之前開始，你可能會完全用錯誤的方式閃避！\n現在是時候讓你進入下一個房間，在那裡你必須保護自己免受武裝對手的攻擊。\n你的任務是成功保護自己30秒，除了簡單的斧頭之外沒有任何設備。本教程禁用了你的斧頭攻擊，所以不要擔心攻擊並專注於你的防禦。\n 準備開始戰鬥時，請轉到下一個房間。
-str_tutorial_3_msg_3|在對手開始攻擊後，按住鼠標右鍵以用斧頭保護自己。\n盡量保持站立三十秒。 你有{reg3}秒。
-str_tutorial_3_msg_4|幹得好，你已經成功完成了這次試驗！\n現在你將與一個更具挑戰性的對手進行對抗，這將使你的事情變得更加困難。\n當你準備面對他時，繼續前往下一個房間。
-str_tutorial_3_msg_5|在對手開始攻擊後，按住鼠標右鍵以用斧頭保護自己。\n盡量保持站立三十秒。 你有{reg3}秒。
-str_tutorial_3_msg_6|在對手開始攻擊後，按住鼠標右鍵以用斧頭保護自己。\n盡量保持站立三十秒。 你有{reg3}秒。
-str_tutorial_3_2_msg_1|你的斧頭攻擊再次啟用。\n你的第一個對手正在隔壁房間等候。\n通過攻擊和防禦的組合擊敗他。
+str_tutorial_1_msg_5|如你所見，房間的另一邊有個箭靶。你的下一個任務是用弓把三支箭射入目標。按下並按住滑鼠左鍵以拉弓上箭。然後，您可以通過釋放滑鼠左鍵來發射。注意螢幕中央的準心，它顯示了你的射擊精準度。為了達到最佳的精準度，讓你的箭在準心最小的時候飛出去。現在試著射擊目標吧。
+str_tutorial_1_msg_6|做得好！ 你已經學會了移動和攻擊的基礎知識。通過一些練習，你很快就會掌握它們。在第二個教學中，你可以學習更高級的戰鬥技能並面對武裝的對手。你隨時可以按Tab鍵返回教學選單。
+str_tutorial_2_msg_1|本教學將教你如何用盾保衛自己以和如何與武裝的對手作戰。現在你只帶著一個盾牌。你的任務不是攻擊，而是用盾牌成功保護自己免受傷害。在下一個房間裡有個武裝的對手在等你。他會盡力讓你失去意識，而你必須按住鼠標右鍵來保護自己。現在進入下一個房間面對你的對手吧。請記住，你隨時可以按Tab鍵退出本教學或退出遊戲中的任何其他區域。
+str_tutorial_2_msg_2|按住鼠標右鍵舉起盾。保持站立三十秒。你還剩{reg3}秒。
+str_tutorial_2_msg_3|幹得好，你成功地防禦了武裝的對手。本教學的下一階段將使用你的盾對抗敵人弓兵的力量。當你準備好面對弓兵時就移動到下一個房間吧。
+str_tutorial_2_msg_4|用鼠標右鍵舉起盾，保護自己不受到箭的傷害。保持站立三十秒。你還剩{reg3}秒。
+str_tutorial_2_msg_5|太棒了，你已經成功防禦了弓兵。有個獎賞在隔壁房間等著你。
+str_tutorial_2_msg_6|在預設配置中，鍵盤上的F鍵被用來與遊戲世界中的物品和人進行非暴力的互動。要拿起祭壇上的劍，看著它並在看到'裝備'這個詞時按F。
+str_tutorial_2_msg_7|一把好武器！現在你可以用它來復仇了。穿過門來回去處理掉你之前面對的弓兵。
+str_tutorial_2_msg_8|很好。在完成本教學之前，你的最後一個任務是面對侍從。現在穿過門來向他展示你的武力吧！
+str_tutorial_2_msg_9|恭喜！你現在已經學會如何用盾來保衛自己甚至也首次嘗試與武裝的對手戰鬥了。再多練習一點你就很快能成為有名的劍士了。下一個教學涵蓋了定向防禦，這是Mount＆Blade戰鬥中最重要的元素之一。你隨時可以按Tab鍵返回教學選單。
+str_tutorial_3_msg_1|本教學旨在為你提供一個沒有盾的招架和防禦概述。用你的武器招架攻擊會比用盾阻擋還困難些。當你用武器防禦時，你只會受到一個方向的保護，即是你的武器被設定的方向。如果你向上阻擋，你會擋掉任何頭頂上來的打擊，但是你擋不住向你身體兩側的突刺或攻擊。這些攻擊中的任何一個都能擊中你。這就是為什麼，為了在沒有盾的情況下生存，你必須學會定向防禦。現在去拿起斧頭開始練習吧。
+str_tutorial_3_msg_2|預設情況下，你防守的方向(通過按下並按住鼠標右鍵)取決於最近對手的攻擊方向。例如，如果你的對手正在準備突刺，按住鼠標右鍵將擋住突刺，但不會擋住從側面或頭頂的攻擊。你必須仔細觀察你的對手，並在敵人開始攻擊後才開始擋。如果你在他準備攻擊之前就開始，你可能會擋住完全錯誤的方向！現在是時候讓你進入下一個房間了，在那裡你必須保護自己免受武裝的對手攻擊。你的任務是保護自己三十秒，除了簡單的斧頭之外沒有任何裝備。本教學禁止了你用斧頭攻擊，所以不要擔心攻擊並專注於你的防禦吧。準備開始戰鬥時就移動到下一個房間吧。
+str_tutorial_3_msg_3|在對手開始攻擊時按住鼠標右鍵以用斧頭保護自己。保持站立三十秒。你還剩{reg3}秒。
+str_tutorial_3_msg_4|幹得好，你已經成功完成了這次試驗！現在你將與一個更具挑戰性的對手進行對抗而這將使事情變得更困難。當你準備面對他時就前往下一個房間吧。
+str_tutorial_3_msg_5|在對手開始攻擊時按住鼠標右鍵以用斧頭保護自己。保持站立三十秒。你還剩{reg3}秒。
+str_tutorial_3_msg_6|恭喜，即使敵人盡了最大的努力你仍站著。邊防禦邊攻擊的時刻到了。靠近門並在看到'前往'時按下F鍵。
+str_tutorial_3_2_msg_1|你再次能用斧頭攻擊了。你的第一個對手正在隔壁房間等候。用攻擊和防禦的組合擊敗他吧。
 str_tutorial_3_2_msg_2|用你的斧頭擊敗你的對手。
-str_tutorial_3_2_msg_3|精彩。 現在唯一阻擋你的是最後一個對手。\n他在隔壁房間。 進去打倒他。
-str_tutorial_3_2_msg_4|用 你 的 斧 頭 擊 敗 你 的 對 手 。
-str_tutorial_3_2_msg_5|做得好！ 在本教程中，您已經學會瞭如何在沒有盾牌的情況下進行戰鬥。 \n努力訓練，訓練好，沒有人能夠擊中你。 \n在下一個教程中，您可以學習騎馬和騎兵作戰。 您可以隨時按'Tab'鍵返回教程菜單。
-str_tutorial_4_msg_1|歡迎來到第四個教程。 在這個序列中，您將學習如何騎馬/座狼以及如何在馬背上進行各種軍事演習。\n我們首先要讓你上馬。 接近馬，當看到"騎乘"字樣時按'F'鍵。
-str_tutorial_4_msg_2|在馬背上，'WASD'鍵控制你的馬的方向，騎上你的馬跑而不是自己跑，並嘗試沿著球場周圍的旗幟。\n當你到達旗幟時，它將移動到下一個航點，直到你到達終點。
-str_tutorial_4_msg_3|很好。 接下來我們將介紹來自馬背的攻擊敵人。\n現在接近旗幟。
-str_tutorial_4_msg_4|拔出你的劍(使用鼠標滾輪)並摧毀四個目標。\n嘗試在完全馳騁時擊中假人 - 這提供了額外的挑戰，但是額外的速度增加了你的打擊敵人時獲得更多的傷害。 最簡單的方法是按住鼠標左鍵直到合適的時刻，在你通過目標之前方開它。
-str_tutorial_4_msg_5|非常精采。 現在讓我們嘗試一些馬背射擊目標。\n現在靠近旗幟。
-str_tutorial_4_msg_6|找到騎行路線旁邊的射箭目標並用弓箭射擊三次。\n雖然您不需要在射擊時跑動，但建議您嘗試以各種速度和角度擊中目標，以了解您的馬的速度和航向如何影響您的目標。
-str_tutorial_4_msg_7|恭喜，您已完成本教程。\n您可以隨時按'Tab'鍵返回教程菜單。
-str_tutorial_5_msg_1|歡迎來到第五個也是最後一個教程，它簡要概述瞭如何在戰鬥中指揮部隊\n這是Mount＆Blade中最重要的一個方面。^^你需要學習的第一個命令菜單是移動命令，它可以按'F1'鍵即可找到。\n現在按下它，探索你可以在戰鬥中給予部隊的許多運動選項。^^第一步，命令你的部隊跟隨你，向旗幟和指針所在的山上移動。
-str_tutorial_5_msg_2|精彩。 你的部隊跟著你上山了。現在你可以很好地了解戰場了。^^\n這次，再次按下'F1'指令菜單，選擇'F1'保持這個位置，讓你的部隊抓住這座山。^^完成後，你會注意到 你的部隊停止走動並保持你要求他們的位置。^^\n這是學習第二個命令菜單的好時機，它圍繞著部隊的基本編隊。^^\n這個菜單可以讓你指揮你的部隊加強隊伍陣型 ，以阻止步兵衝鋒，或分散以抵抗弓箭手射擊。^^\n使用此命令菜單命令你的部隊向前或向後移動十步，允許你的部隊在保持陣型的同時移動。^^\n在探索了不同的選擇後，將部隊保持在這座小山上，一個人朝著對面的小山移動，那裡有旗幟和指針。
-str_tutorial_5_msg_3|如你所見，你的步兵正在你所要求的地方。\n現在，向你的風車走去。
-str_tutorial_5_msg_4|現在你有弓箭手加入你的命令。在Mount＆Blade中，你可以給步兵，弓箭手和騎兵等特定部隊分別發出命令。^^\n按數字鍵將選擇您選擇的分區(1為步兵，2為弓箭手，3為騎兵)。然後，您可以使用看起來命令特定部門的命令菜單。^^\n請注意，選項將保持不變，按任何命令菜單(F1，F2，F3)將選擇最後一個分區。\n閱讀屏幕上顯示的消息，查看正在命令的分區。^^\n現在，讓你的步兵跟隨你，然後讓你的弓箭手也跟著你。一旦他們在一起，回到你在的山上。^^\n到達那里後，尋找指針，命令步兵移動並按住'1'，然後按住'F1'鍵顯示旗幟。您可以使用它來將您的部隊移動到您選擇的精確位置。^^\n讓你的弓箭手朝著指針後方的旗幟移動，並在高地上移動。
-str_tutorial_5_msg_5|你的人處於適當的位置，敵人聚集在一起並向你衝鋒陷陣。 \n使用你學到的東西來訓練你的步兵前進，或者讓他們衝鋒陷陣。\n衝鋒會打破所有陣型，並將你的部隊移向最近的敵人。^^\n你也可以讓你的弓箭手保持在地面以獲得更好的有利位置，或者讓他們移動到其他地方。^^\n你也可以按'F3'顯示第三個命令 菜單，了解你可以給你的部隊的不同武器命令。
-str_tutorial_5_msg_6|精彩！ 你已經在Mount＆Blade完成了第一次野戰。\n在戰鬥中智能指揮你的部隊對你作為戰鬥指揮官的成功至關重要。確保了解如何在有利的位置上移動你的部隊。^^\n在第三紀的最後幾天，有更複雜的編隊，如步兵盾牆和騎兵楔型陣。\n您可以在遊戲中了解更多相關信息。^^您可以隨時按'TAB'離開教程。
-str_trainer_help_1|這是一個訓練場，您可以在這裡學習遊戲的基礎知識。\n使用A，S，D，W鍵移動並使用鼠標環顧四周。
-str_trainer_help_2|要和訓練師交談，靠近他，看著他，當你看到他名字下的'教練'這個詞時，按'F'鍵。\n當您希望離開此區域或任何其他區域或退出戰鬥時，您可以按'TAB'鍵。
-str_custom_battle_1|無畏的安格博和他的剛鐸一眾阻止了哈拉德的軍隊。\n他大聲呼喊，奔馳前進，帶領忠心的人展開激烈的戰鬥。
-str_custom_battle_2|來自羅瑞安的凱勒鵬正在帶領一群騎兵和弓箭手巡邏，當一名前方監視員發出警告，灰燼邪惡的人接近。 \n這是可怕的黑努美諾爾！在羅斯洛立安附近已經很久了，但現在他們必須被趕回到永恆的世界。
-str_custom_battle_3|葛林伯元帥正守著洛汗最後一道防線—號角堡。\n現在，艾辛格的軍隊正準備發動最後一次沖鋒。\n他必須用勇氣和利劍守住這道城牆。
-str_custom_battle_4|當斥侯通知貝蘭海姆領主，一支盧恩軍隊正走向他們。\n他決定迅速準備營地的防禦工事，並試圖對抗更多的人。
-str_custom_battle_5|烏骨陸把他凶猛的軍團帶往西方以用於劫掠。如果他能在今天天黑以前將這個矮人的要塞納入他的掌控的話，他那位於黑邪塔的主人一定會非常高興的。
-str_custom_battle_6|烏骨陸和他的半獸人掠奪者小隊正拼命地逃離精靈巡邏隊的圍捕。運氣不可能永遠眷顧一個人 ，他還是被堵到了。
-str_custom_battle_7|海 盜 在 剛 鐸 的 沿 岸 建 立 了 營 地！還 真 有 種。在 他 們 的 增 援 來 到 之 前，我 們 一 起 去 進 攻 吧，把 他 們 趕 回 去 海 裡。
-str_finished|（已 完 成）
-str_delivered_damage|造 成 {reg60} 點 傷 害 。 
-str_archery_target_hit|距 離：{reg61} 碼 ， 得 分 ： {reg60}
-str_use_baggage_for_inventory|在 戰 鬥 中 使 用 你 的 旅 行 箱 存 取 你 的 背 包（旅 行 箱 位 於 戰 鬥 中 起 始 的 位 置）。
-str_cant_use_inventory_now|現 在 不 能 存 取 背 包。
-str_cant_use_inventory_arena|在 競 技 場 內 不 能 存 取 背 包。
-str_cant_use_inventory_disguised|偽 裝 時 不 能 存 取 背 包。
-str_cant_use_inventory_tutorial|在 訓 練 場 內 不 能 存 取 背 包。
-str_1_denar|1  資 源 點
-str_reg1_denars|{reg1}  資 源 點
-str_january_reg1_reg2|T.A.{reg2}, Narvinyë {reg1} (一月)
-str_february_reg1_reg2|T.A.{reg2}, Nénimë {reg1} (二月)
-str_march_reg1_reg2|T.A.{reg2}, Súlìmë {reg1} (三月)
-str_april_reg1_reg2|T.A.{reg2}, Víressë {reg1} (四月)
-str_may_reg1_reg2|T.A.{reg2}, Lótessë {reg1} (五月)
-str_june_reg1_reg2|T.A.{reg2}, Náríë {reg1} (六月)
-str_july_reg1_reg2|T.A.{reg2}, Cermië {reg1} (七月)
-str_august_reg1_reg2|T.A.{reg2}, Urimë {reg1} (八月)
-str_september_reg1_reg2|T.A.{reg2}, Yavannië {reg1} (九月)
-str_october_reg1_reg2|T.A.{reg2}, Narquelië {reg1} (十月)
-str_november_reg1_reg2|T.A.{reg2}, Hísimë {reg1} (十一月)
-str_december_reg1_reg2|T.A.{reg2}, Ringarë {reg1} (十二月)
-str_calendar_spec_day_1|T.A.{reg2}, Yestarë (元旦)
-str_calendar_spec_day_2|T.A.{reg2}, Tuilérë (春日)
-str_calendar_spec_day_3|T.A.{reg2}, Loëndë (年中日)
-str_calendar_spec_day_4|T.A.{reg2}, Yáviérë (豐收日)
-str_calendar_spec_day_5|T.A.{reg2}, Mettarë (最後日)
-str_town_nighttime|已 經 是 深 夜 了。
-str_door_locked|門 上 鎖 了 。
-str_castle_is_abondened|這 座 城 堡 看 起 來 無 人 佔 領 。
-str_town_is_abondened|這 城 鎮 沒 有 駐 軍 把 守。
-str_place_is_occupied_by_player|這 個 地 方 正 被 你 的 部 隊 把 守 著 。
-str_place_is_occupied_by_enemy|這 個 地 方 正 被 敵 軍 把 守 著 。
-str_place_is_occupied_by_friendly|這 個 地 方 正 被 友 軍 把 守 著 。
-str_do_you_want_to_retreat|你 確 定 要 撤 退？
-str_give_up_fight|放 棄 戰 鬥 ?
-str_do_you_wish_to_leave_tutorial|你 想 離 開 教 學 嗎？
-str_do_you_wish_to_surrender|你 希 望 要 投 降 嗎?
-str_can_not_retreat|不 能 撤 退，附 近 有 敵 人！
-str_s1_joined_battle_enemy|{s1} 加 入 敵 方 陣 營。
-str_s1_joined_battle_friend|{s1} 加 入 我 方 陣 營。
-str_entrance_to_town_forbidden|城 鎮 守 衛 正 在 站 崗 防 止 入 侵 者，看 來 你 不 能 輕 易 的 通 過 大 門。
-str_sneaking_to_town_impossible|城 鎮 守 衛 提 高 警 覺 了。即 使 你 有 高 超 的 偽 裝 技 巧 也 不 能 潛 入 大 門。
-str_battle_won|你 取 得 這 場 戰 鬥 的 勝 利！
-str_battle_lost|你 在 這 場 戰 鬥 輸 了！
-str_player_down|你 被 擊 暈 了，但 你 的 部 隊 仍 在 戰 鬥！
-str_attack_walls_success|經 過 一 輪 血 醒 的 戰 鬥，你 的 勇 武 士 兵 拿 下 了 敵 方 的 城 牆。
-str_attack_walls_failure|你的戰士們像海浪一般衝擊著城牆，又像餃子一般落下。少數還活著的很快就由站了起來重新衝鋒，很快就淹沒在人潮中不見了踪影。
-str_attack_walls_continue|這是一場血腥的戰鬥，雙方都投入了相同的人力和勇氣。儘管你的部隊很努力，但城堡仍在敵軍手中。
-str_order_attack_success|你 的 士 兵 勇 敢 地 戰 鬥 並 擊 敗 了 敵 人 。
-str_order_attack_failure|你 絕 望 的 看 著 敵 人 一 個 個 砍 翻 你 的 戰 士 ， 並 將 最 後 幾 名 倖 存 者 帶 走 。
-str_order_attack_continue|儘 管 經 歷 了 幾 場 小 規 模 戰 鬥 ， 你 的 部 隊 還 沒 贏 得 決 定 性 勝 利 。
-str_join_order_attack_success|你 的 士 兵 與 盟 友 合 作 的 極 好 ， 在 敵 人 被 打 敗 時 你 們 共 享 榮 耀 。
-str_join_order_attack_failure|你 絕 望 的 看 著 敵 人 一 個 個 砍 翻 你 的 戰 士 ， 並 將 最 後 幾 名 倖 存 者 帶 走 。
-str_join_order_attack_continue|儘 管 經 歷 了 幾 場 小 規 模 戰 鬥 ， 你 的 部 隊 還 沒 贏 得 決 定 性 勝 利 。
-str_siege_defender_order_attack_success|駐軍用技巧和勇氣守住了他們的城牆並打破敵軍的衝鋒。他們還巧妙地將敵軍的小敗轉變成一個完全的潰敗。
-str_siege_defender_order_attack_failure|敵軍的衝鋒迅速變的異常血腥。個人的武勇變得無用起來；數量嚴重不足的守軍漸漸無法守住城牆，抵抗者正被敵軍一個個殺死。
-str_siege_defender_order_attack_continue|敵軍試圖佔領城牆的血腥企圖依舊沒有得逞，但守方仍然無法慶祝勝利，畢竟周圍還有很多敵軍。圍攻繼續。
-str_hero_taken_prisoner|{s3} 的 {s1} 被 {s2} 俘 虜 了 。
-str_hero_freed|{s3} 的 {s1} 從 {s2} 的 監 禁 中 解 救 了。
-str_center_captured|{s2} 從 {s3} 那 里 奪 取 了 {s1} 。
-str_troop_relation_increased|你 與 {s1} 的 關 係 從 {reg1} 提 升 到 {reg2} 。
-str_troop_relation_detoriated|你 與 {s1} 的 關 係 從 {reg1} 惡 化 為 {reg2} 。
-str_faction_relation_increased|你 與 {s1} 的 關 係 從 {reg1} 提 升 到 {reg2} 。
-str_faction_relation_detoriated|你 與 {s1} 的 關 係 從 {reg1} 惡 化 到 {reg2} 。
-str_party_gained_morale|你 的 隊 伍 獲 得 {reg1} 點 士 氣 。
-str_party_lost_morale|你 的 隊 伍 失 去 {reg1} 點 士 氣 。
-str_qst_follow_spy_noticed_you|間 諜 看 到 你 了 ！ 他 正 在 逃 跑 ！
-str_father|父 親
-str_husband|丈 夫
-str_wife|妻 子
-str_daughter|女 兒
-str_mother|母 親
-str_son|兒 子
-str_brother|兄 弟
-str_sister|姊 妹
+str_tutorial_3_2_msg_3|精彩。現在唯一阻擋你的剩下最後一個對手。他就在隔壁房間。進去打倒他吧。
+str_tutorial_3_2_msg_4|用你的斧頭擊敗你的對手。
+str_tutorial_3_2_msg_5|做得好！在本教學中，你已經學會如何在沒有盾的情況下進行戰鬥了。努力訓練，就不會有人能擊中你的。在下個教學中，你可以學習騎馬和騎兵作戰。 您隨時可以按Tab鍵返回教學選單。
+str_tutorial_4_msg_1|歡迎來到第四個教學。在這個序列中，你將學習如何騎馬/座狼以及如何在馬背上進行各種武術演練。我們首先要讓你上馬。接近馬，在看到'騎乘'時按'F'鍵。
+str_tutorial_4_msg_2|在馬背上，用WASD鍵控制你的馬移動，而不是你自己的。嘗試沿著場地周圍的旗幟騎馬吧。當你到達旗幟時，它將移動到下一個目標直到你到達終點。
+str_tutorial_4_msg_3|很好。接下來我們將涵蓋從馬背上攻擊敵人。現在靠近旗子吧。
+str_tutorial_4_msg_4|拔出你的劍(使用鼠標滾輪)並摧毀四個目標。嘗試在完全馳騁時擊中假人--這有額外的難度，但額外的速度加上你的打擊會敵人獲得更多的傷害。最簡單的方法是按住鼠標左鍵直到合適的時刻，在你通過目標的前方時放開它。
+str_tutorial_4_msg_5|做的好極了。現在讓我們嘗試在馬背射擊目標。現在靠近旗子吧。
+str_tutorial_4_msg_6|找到騎乘場地旁邊的箭靶並用弓箭射擊三次。雖然你不需要邊跑邊射，但建議你嘗試以各種速度和角度擊中目標以了解你的馬的速度和方向會如何影響你的準頭。
+str_tutorial_4_msg_7|恭喜，您已完成本教學。你隨時可以按Tab鍵返回教學選單。
+str_tutorial_5_msg_1|歡迎來到第五個也是最後一個教學，它會概述如何在戰鬥中指揮部隊，這是Mount＆Blade中最重要的部分。^^你需要學習的第一個命令選單是移動命令，按F1鍵即可找到它。現在按下它並探索你可以在戰鬥中給予部隊的許多移動選項。^^首先，命令你的部隊跟隨你，向旗子和指針所在的山丘移動。
+str_tutorial_5_msg_2|太棒了。你的部隊有跟著你到山丘上。現在你可以很好地俯視戰場了。^^這次，再次按下F1命令選單，選擇堅守此地(F1)，讓你的部隊堅守這座山。^^完成後，你會注意到部隊停止跟著你並保持在你要求他們的位置。^^這是學習第二個命令選單的好時機，它圍繞著部隊的基本編隊。^^這個選單可以讓你指揮你的部隊強化列陣，以阻止步兵衝鋒，或分散以抵抗弓箭手射擊。^^使用此命令選單命令你的部隊向前或向後移動十步可以讓你的部隊在保持陣型的同時移動。^^在探索不同的選擇後，將部隊留在這座小山上，一個人朝著對面的山丘移動吧，那裡有旗子和指針。
+str_tutorial_5_msg_3|太好了。如你所見，你的步兵正在你所要求的地方留守。現在，獨自向風車走去吧。
+str_tutorial_5_msg_4|現在你有弓兵加入你的指揮了。在Mount＆Blade中，你可以對步兵，弓箭手和騎兵等特定分隊各別發出命令。^^按數字鍵將選擇你要的分隊(1為步兵，2為弓兵，3為騎兵)。然後，你就可以使用出現的命令選單來指揮特定的分隊。^^請注意，選項將保持不變，按任何命令選單(F1、F2、F3)將選擇上次指揮的分隊。閱讀螢幕上顯示的訊息來查看正在命令的分隊。^^現在，讓你的步兵跟隨你，然後讓你的弓兵也跟著你。一旦他們會和，就回到你一開始在在的山丘上吧。^^到達後，尋找指針並按住1來命令步兵，然後按住F1鍵顯示旗子來移動到那。你可以使用它來將你的部隊移動到精確的位置。^^讓你的弓兵朝著指針後方的旗子移動，到高地上吧。
+str_tutorial_5_msg_5|你的人就位了，而敵人也聚在一起向你衝鋒了。用你學到的東西來指揮你的步兵依陣型前進，或叫他們衝鋒吧。衝鋒會打破所有陣型，並讓你的部隊向最近的敵人前進。^^你也能讓你的弓兵保持在高地上以獲得更有利的位置，或者讓他們移動到其他地方。^^你也可以按F3顯示第三個命令選單，學習你可以給你部隊的不同武器命令。
+str_tutorial_5_msg_6|太棒了！你已經在Mount＆Blade完成了第一次野戰。在戰鬥中用智慧指揮你的部隊對你作為戰鬥指揮官的成功至關重要。記得去學習如何把你的部隊移動到有利的位置上。^^在第三紀元的最後之日中，還有更複雜的陣型例如步兵盾牆和騎兵楔型陣等。你可以在遊戲中了解更多相關訊息。^^你隨時可以按TAB離開教學。
+str_trainer_help_1|這是一個可以讓你在這裡學習遊戲基礎知識的訓練場。使用A、S、D、W鍵移動並使用滑鼠環顧四周。
+str_trainer_help_2|要和教練交談，靠近他，看著他並在他名字底下的'交談'這個詞出現時按下'F'鍵。當你希望離開此區域或任何其他區域亦或是從戰場撤退時，你可以按TAB鍵。
+str_custom_battle_1|無畏的安格博和他的剛鐸軍團攔截了一支哈拉德的援軍。他大聲發出戰吼，奔馳策馬前進，帶領忠心的人展開激烈的戰鬥。
+str_custom_battle_2|當一名前哨發出警告說滿臉灰塵的邪惡人類靠近時來自羅瑞安的凱勒鵬正在帶領一群騎兵和弓兵巡邏。是恐怖的黑努美諾爾人！在羅斯洛立安附近已經很久沒見過了，但現在得先把他們趕回冥界。
+str_custom_battle_3|洛汗的葛林伯大人正守著對艾辛格軍隊的最後一道防線。不過，艾辛格的軍隊正準備發動對城牆的總攻擊，他必須用勇氣和利劍守住城牆。
+str_custom_battle_4|當斥侯通知貝蘭海姆大人一支盧恩軍隊正在靠近他們後，他決定迅速準備營地的防禦工事來試圖對抗敵人的數量優勢。
+str_custom_battle_5|烏骨陸把他凶猛的半獸人們帶往西方並給了能讓他們自由搜刮的保證。如果他能在今天把這個矮人的要塞納入掌控的話，他位於黑邪塔的主人一定會龍心大悅的。
+str_custom_battle_6|烏骨陸和他的半獸人掠奪者小隊正拼命地逃離精靈巡邏隊的圍捕。但幸運不可能永遠眷顧同一個人，看來這次運氣屬於骯髒的白皮他們了。
+str_custom_battle_7|海盜在剛鐸的海岸建了營地！好大的膽子。讓我們在他們的增援到來之前初擊把他們趕回海裡，那才是他們的歸宿。
+str_finished|(已完成)
+str_delivered_damage|造成{reg60}傷害。
+str_archery_target_hit|距離：{reg61}碼，得分：{reg60}
+str_use_baggage_for_inventory|在戰鬥中使用你的旅行箱打開你的物品欄(在你最初的位置)
+str_cant_use_inventory_now|現在不能打開物品欄。
+str_cant_use_inventory_arena|在競技場內不能打開物品欄。
+str_cant_use_inventory_disguised|在你偽裝時不能打開物品欄。
+str_cant_use_inventory_tutorial|在訓練營地內不能打開物品欄。
+str_1_denar|1資源點。
+str_reg1_denars|{reg1}資源點。
+str_january_reg1_reg2|T.A.{reg2}，納爾芬耶{reg1}(一月)
+str_february_reg1_reg2|T.A.{reg2}，內尼米{reg1}(二月)
+str_march_reg1_reg2|T.A.{reg2}，蘇利米{reg1}(三月)
+str_april_reg1_reg2|T.A.{reg2}，維瑞斯{reg1}(四月)
+str_may_reg1_reg2|T.A.{reg2}，洛特斯{reg1}(五月)
+str_june_reg1_reg2|T.A.{reg2}，納里{reg1}(六月)
+str_july_reg1_reg2|T.A.{reg2}，切爾米{reg1}(七月)
+str_august_reg1_reg2|T.A.{reg2}，烏爾米{reg1}(八月)
+str_september_reg1_reg2|T.A.{reg2}，雅凡尼{reg1}(九月)
+str_october_reg1_reg2|T.A.{reg2}，納爾克利{reg1}(十月)
+str_november_reg1_reg2|T.A.{reg2}，希伊米{reg1}(十一月)
+str_december_reg1_reg2|T.A.{reg2}，林加雷{reg1}(十二月)
+str_calendar_spec_day_1|T.A.{reg2}，葉斯特(初日)
+str_calendar_spec_day_2|T.A.{reg2}，圖萊雷(春日)
+str_calendar_spec_day_3|T.A.{reg2}，羅恩達(年中日)
+str_calendar_spec_day_4|T.A.{reg2}，亞維爾(收穫日)
+str_calendar_spec_day_5|T.A.{reg2}，梅塔利(最後日)
+str_town_nighttime|已經是深夜了。
+str_door_locked|門上鎖了。
+str_castle_is_abondened|這城堡看起來無人佔領。
+str_town_is_abondened|這城鎮沒有駐軍把守。
+str_place_is_occupied_by_player|這地方正被你的部隊掌控著。
+str_place_is_occupied_by_enemy|這地方正被敵方部隊掌控著。
+str_place_is_occupied_by_friendly|這地方正被友方部隊掌控著。
+str_do_you_want_to_retreat|你確定要撤退嗎？
+str_give_up_fight|放棄戰鬥？
+str_do_you_wish_to_leave_tutorial|你希望離開教學嗎？
+str_do_you_wish_to_surrender|你希望投降嗎？
+str_can_not_retreat|不能撤退，附近有敵人！
+str_s1_joined_battle_enemy|{s1}加入了敵方那邊。
+str_s1_joined_battle_friend|{s1}加入了我方這邊。
+str_entrance_to_town_forbidden|城鎮守衛正在站哨防止入侵者所以看來你無法輕易的通過大門。
+str_sneaking_to_town_impossible|城鎮守衛提高警備了。即使你有再高超的偽裝技巧也無法從大門潛入。
+str_battle_won|你贏了戰鬥！
+str_battle_lost|你輸了戰鬥！
+str_player_down|你被擊昏了，但你的部隊仍在戰鬥！
+str_attack_walls_success|經過一輪血腥的戰鬥，你勇敢的士兵拿下了敵方的城牆。
+str_attack_walls_failure|你的士兵們對著城牆衝鋒卻一波又一波的倒下。少數還活著的馬上就會逃跑，再也不見蹤影。
+str_attack_walls_continue|在這場血腥的戰鬥中雙方都投入了相同的英勇。儘管你的部隊很努力，城堡仍在敵軍手中。
+str_order_attack_success|你的士兵勇敢地戰鬥並擊敗了敵人。
+str_order_attack_failure|你絕望的看著敵人一個個砍倒你的士兵，並輕易的將最後幾名破破爛爛的倖存者帶走了。
+str_order_attack_continue|儘管經歷了好幾場小規模戰鬥，你的部隊還是沒辦法贏得決定性的勝利。
+str_join_order_attack_success|你的人馬與友軍好好的打了一仗，在敵人被打敗後共享榮耀。
+str_join_order_attack_failure|你絕望的看著敵人一個個砍倒你的士兵，並輕易的將最後幾名破破爛爛的倖存者帶走了。
+str_join_order_attack_continue|儘管經歷了好幾場小規模戰鬥，不管是你或友方的部隊都沒辦法贏得決定性的勝利。
+str_siege_defender_order_attack_success|駐軍用技巧和勇氣守住了城牆，不僅擋住了敵軍的攻勢還巧妙地將敵軍的失利轉變成完全的潰敗。
+str_siege_defender_order_attack_failure|敵軍的攻勢迅速變成浴血奮戰。個人的武勇變得無用；數量嚴重不足的駐軍無法守住城牆，守軍正被敵方一個個砍死。
+str_siege_defender_order_attack_continue|重複的、血腥的嘗試依然沒有進展，但周圍仍有很多敵軍所以守軍還不能宣告勝利。圍城還是持續著。
+str_hero_taken_prisoner|{s3}的{s1}被{s2}俘虜了。
+str_hero_freed|{s3}的{s1}從{s2}的監禁下被解放了。
+str_center_captured|{s2}從{s3}那裡奪取了{s1}。
+str_troop_relation_increased|你與{s1}的關係從{reg1}提升到{reg2}。
+str_troop_relation_detoriated|你與{s1}的關係從{reg1}惡化為{reg2}。
+str_faction_relation_increased|你與{s1}的關係從{reg1}提升到{reg2}。
+str_faction_relation_detoriated|你與{s1}的關係從{reg1}惡化為{reg2}。
+str_party_gained_morale|你的隊伍獲得{reg1}士氣。
+str_party_lost_morale|你的隊伍失去{reg1}士氣。
+str_qst_follow_spy_noticed_you|間諜看到你了！他正在逃跑！
+str_father|父親
+str_husband|丈夫
+str_wife|妻子
+str_daughter|女兒
+str_mother|母親
+str_son|兒子
+str_brother|兄弟
+str_sister|姊妹
 str_he|他
 str_she|她
-str_s3s_s2|{s3} 的 {s2}
-str_s5_is_s51|{s5} 是 {s51}。
-str_s5_is_the_ruler_of_s51|{s5} 是 {s51} 的 統 治 者 。
-str_s5_is_a_nobleman_of_s6|{s5} 是 {s6} 的 貴 族 。
-str_relation_mnus_100|血 海 深 仇 的
-str_relation_mnus_90|血 海 深 仇 的
-str_relation_mnus_80|血 海 深 仇 的
-str_relation_mnus_70|仇 恨 的
-str_relation_mnus_60|仇 恨 的
-str_relation_mnus_50|有 敵 意 的
-str_relation_mnus_40|怒 火 中 燒 的
-str_relation_mnus_30|不 滿 的
-str_relation_mnus_20|有 怨 言 的
-str_relation_mnus_10|懷 疑 的
-str_relation_plus_0|冷 淡 的
-str_relation_plus_10|合 作 的
-str_relation_plus_20|歡 迎 的
-str_relation_plus_30|贊 同 的
-str_relation_plus_40|支 持 的
-str_relation_plus_50|友 好 的
-str_relation_plus_60|親 切 的
-str_relation_plus_70|喜 愛 的
-str_relation_plus_80|忠 誠 的
-str_relation_plus_90|死 忠 的
-str_relation_mnus_100_ns|{s60} 與 你 不 共 戴 天 。
-str_relation_mnus_90_ns|{s60} 與 你 不 共 戴 天 。
-str_relation_mnus_80_ns|{s60} 與 你 不 共 戴 天 。
-str_relation_mnus_70_ns|{s60} 覺 得 你 很 可 恨 。
-str_relation_mnus_60_ns|{s60} 覺 得 你 很 可 恨 。
-str_relation_mnus_50_ns|{s60} 對 你 抱 有 敵 意 。
-str_relation_mnus_40_ns|{s60} 對 你 表 示 憤 怒 。
-str_relation_mnus_30_ns|{s60} 對 你 感 到 不 滿 。
-str_relation_mnus_20_ns|{s60} 對 你 存 在 怨 言 。
-str_relation_mnus_10_ns|{s60} 對 你 表 示 懷 疑 。
-str_relation_plus_0_ns|{s60} 對 你 表 現 冷 漠 。
-str_relation_plus_10_ns|{s60} 對 你 傾 向 合 作 。
-str_relation_plus_20_ns|{s60} 對 你 表 示 歡 迎 。
-str_relation_plus_30_ns|{s60} 對 你 表 示 讚 許 。
-str_relation_plus_40_ns|{s60} 對 你 表 示 支 持 。
-str_relation_plus_50_ns|{s60} 對 你 表 示 友 好 。
-str_relation_plus_60_ns|{s60} 對 你 表 示 親 切 。
-str_relation_plus_70_ns|{s60} 對 你 表 示 溫 柔 。
-str_relation_plus_80_ns|{s60} 對 你 保 持 忠 誠 。
-str_relation_plus_90_ns|{s60} 願 意 為 你 獻 身 。
-str_relation_reg1|關 係 ： {reg1}
-str_center_relation_mnus_100|當地居民與你不共戴天
-str_center_relation_mnus_90|當地居民與你勢同水火
-str_center_relation_mnus_80|當地居民對你恨之入骨
-str_center_relation_mnus_70|當地居民對你深惡痛絕
-str_center_relation_mnus_60|當地居民對你低聲咒罵
-str_center_relation_mnus_50|當地居民對你極為敵視
-str_center_relation_mnus_40|當地居民對你充滿敵意
-str_center_relation_mnus_30|當地居民對你憂形於色
-str_center_relation_mnus_20|當地居民對你保持警惕
-str_center_relation_mnus_10|當地居民對你表示防備
-str_center_relation_plus_0|當地居民對你面無表情
-str_center_relation_plus_10|當地居民對你表示接受
-str_center_relation_plus_20|當地居民對你表示親近
-str_center_relation_plus_30|當地居民對你表示支持
-str_center_relation_plus_40|當地居民對你表示可靠
-str_center_relation_plus_50|當地居民對你交口稱讚
-str_center_relation_plus_60|當地居民對你表示忠誠
-str_center_relation_plus_70|當地居民對你非常忠誠
-str_center_relation_plus_80|當地居民為你夾道歡呼
-str_center_relation_plus_90|當地居民為你忠心耿耿
-str_town_prosperity_0|這個名為{s60}的城鎮赤貧如洗
-str_town_prosperity_10|這個名為{s60}的城鎮貧窮荒蕪。
-str_town_prosperity_20|這個名為{s60}的城鎮淒涼破敗。
-str_town_prosperity_30|這個名為{s60}的城鎮貧窮被忽視。
-str_town_prosperity_40|這個名為{s60}的城鎮缺衣少食。
-str_town_prosperity_50|這個名為{s60}的城鎮很不起眼。
-str_town_prosperity_60|這個名為{s60}的城鎮蓬勃發展。
-str_town_prosperity_70|這個名為{s60}的城鎮非常繁忙。
-str_town_prosperity_80|這個名為{s60}的城鎮民康物阜。
-str_town_prosperity_90|這個名為{s60}的城鎮車水馬龍。
-str_town_prosperity_100|這個名為{s60}的城鎮富麗堂皇。
-str_village_prosperity_0|這個名為{s60}的村子一貧如洗
-str_village_prosperity_10|這個名為{s60}的村子一窮二白
-str_village_prosperity_20|這個名為{s60}的村子地瘠民貧
-str_village_prosperity_30|這個名為{s60}的村子貧窮被忽視。
-str_village_prosperity_40|這個名為{s60}的村子缺衣少食。
-str_village_prosperity_50|這個名為{s60}的村子很不起眼。
-str_village_prosperity_60|這個名為{s60}的村子蓬勃發展。
-str_village_prosperity_70|這個名為{s60}的村子非常繁華。
-str_village_prosperity_80|這個名為{s60}的村子民康物阜。
-str_village_prosperity_90|這個名為{s60}的村子非常富裕。
-str_village_prosperity_100|這個名為{s60}的村子非常富裕，沃壤千里。
-str_war_report_minus_4|我 們 快 要 輸 掉 這 場 戰 爭
-str_war_report_minus_3|我 們 的 情 況 很 糟 糕
-str_war_report_minus_2|戰 事 進 行 的 不 太 順 利
-str_war_report_minus_1|如 果 我 們 團 結 起 來 還 是 能 贏 得 這 場 戰 爭
-str_war_report_0|我 們 幾 乎 與 敵 人 勢 均 力 敵
-str_war_report_plus_1|我 們 在 戰 爭 中 跟 敵 人 有 一 樣 的 獲 勝 機 率
-str_war_report_plus_2|戰 事 進 行 的 很 順 利
-str_war_report_plus_3|打 敗 他 們 對 我 們 來 說 並 無 困 難
-str_war_report_plus_4|我 們 快 贏 得 這 場 戰 爭 了
-str_persuasion_summary_very_bad|你盡最大努力去說服{s50}，但是你沒有一個論證是正確的。每次你開始想使表達的東西變得有意義，但是你說的東西似乎都是徹底錯誤的，以至於使你自己的思路都斷了。當你結束交涉的時候，你都沒能把你認同的某一個觀點表達清楚，而且你意識到你所做的一切是在把自己推進一個越挖越深的大坑里。毫不奇怪，{s50}完全不為你動。
-str_persuasion_summary_bad|你試著說服{s50}，但是{reg51?她:他}從最開始起就提防著你。你再好的辯論對於你自己的耳朵而言也還是那麼空洞。 {s50}同樣也沒能從你說的東西看出什麼高見。
-str_persuasion_summary_average|{s50}被證實是一個有著尖銳思想且很能辯論的人，你基本就沒有辦法使{reg51?她:他}反過來接受你的任何觀點。最終，在這場辯論中，你們兩人都沒能使對方偏向各自的立場。
-str_persuasion_summary_good|憑藉敏捷的思維和流暢的辯論，你設法把你的觀點論證得很好，迫使{s50}認同你的一些觀點。然而{reg51?她:他}仍然對你的要求表示懷疑。
-str_persuasion_summary_very_good|你發出了一種充滿激情的演講，這種演講與詩歌等所有傾聽的耳朵相呼應。世界似乎安靜下來，以便更好地聽到你。 鼓舞人心的話已經深深地感動了{s50}，{reg51?她:他}看起來更善於幫助你。
+str_s3s_s2|{s3}的{s2}
+str_s5_is_s51|{s5}是{s51}。
+str_s5_is_the_ruler_of_s51|{s5}是{s51}的統治者。
+str_s5_is_a_nobleman_of_s6|{s5}是{s6}的貴族。
+str_relation_mnus_100|仇恨著的
+str_relation_mnus_90|仇恨著的
+str_relation_mnus_80|仇恨著的
+str_relation_mnus_70|厭惡的
+str_relation_mnus_60|厭惡的
+str_relation_mnus_50| 有敵意的
+str_relation_mnus_40|  憤怒的
+str_relation_mnus_30|    不滿的
+str_relation_mnus_20|      有怨言的
+str_relation_mnus_10|        懷疑的
+str_relation_plus_0|         冷淡的
+str_relation_plus_10|          合作的
+str_relation_plus_20|           歡迎的
+str_relation_plus_30|            贊同的
+str_relation_plus_40|             支持的
+str_relation_plus_50|              友好的
+str_relation_plus_60|               親切的
+str_relation_plus_70|                 喜歡的
+str_relation_plus_80|                  忠誠的
+str_relation_plus_90|                   死忠的
+str_relation_mnus_100_ns|{s60}是仇恨著你的。
+str_relation_mnus_90_ns|{s60}是仇恨著你的。
+str_relation_mnus_80_ns|{s60}是仇恨著你的。
+str_relation_mnus_70_ns|{s60}是厭惡著你的。
+str_relation_mnus_60_ns|{s60}是厭惡著你的。
+str_relation_mnus_50_ns|{s60}是對你有敵意的。
+str_relation_mnus_40_ns|{s60}是對你感到憤怒的。
+str_relation_mnus_30_ns|{s60}是對你感到不滿的。
+str_relation_mnus_20_ns|{s60}是對你抱有怨言的。
+str_relation_mnus_10_ns|{s60}是對你有懷疑的。
+str_relation_plus_0_ns|{s60}對你是冷淡的。
+str_relation_plus_10_ns|{s60}是會跟你合作的。
+str_relation_plus_20_ns|{s60}是很歡迎你的。
+str_relation_plus_30_ns|{s60}是贊同你的。
+str_relation_plus_40_ns|{s60}是支持你的。
+str_relation_plus_50_ns|{s60}是對你友好的。
+str_relation_plus_60_ns|{s60}是對你親切的。
+str_relation_plus_70_ns|{s60}是喜歡你的。
+str_relation_plus_80_ns|{s60}是對你忠誠的。
+str_relation_plus_90_ns|{s60}是對你死忠的。
+str_relation_reg1|關係：{reg1}
+str_center_relation_mnus_100|居民激烈的厭惡著你
+str_center_relation_mnus_90|居民超強烈的厭惡著你
+str_center_relation_mnus_80|居民強烈的厭惡著你
+str_center_relation_mnus_70|居民厭惡著你
+str_center_relation_mnus_60|居民是對你有厭惡感的
+str_center_relation_mnus_50|居民是對你超有敵意的
+str_center_relation_mnus_40|居民是對你很有敵意的
+str_center_relation_mnus_30|居民是對你有敵意的
+str_center_relation_mnus_20|居民是反抗著你的
+str_center_relation_mnus_10|居民是反對著你的
+str_center_relation_plus_0|居民對你是冷淡的
+str_center_relation_plus_10|居民是接受你的
+str_center_relation_plus_20|居民是會跟你合作的
+str_center_relation_plus_30|居民是對你多少有支持的
+str_center_relation_plus_40|居民是支持你的
+str_center_relation_plus_50|居民是非常支持你的
+str_center_relation_plus_60|居民是對你忠誠的
+str_center_relation_plus_70|居民是對你非常忠誠的
+str_center_relation_plus_80|居民是對你死忠的
+str_center_relation_plus_90|居民是對你忠心耿耿的
+str_town_prosperity_0|{s60}這個城鎮的貧窮令人難以忍受
+str_town_prosperity_10|{s60}這個貧困的城鎮近乎荒廢了。
+str_town_prosperity_20|{s60}這個城鎮看起來是個可憐、淒涼的地方。
+str_town_prosperity_30|{s60}這個城鎮看起來既貧窮又缺乏管理。
+str_town_prosperity_40|{s60}這個城鎮似乎有困難。
+str_town_prosperity_50|{s60}這個城鎮似乎沒什麼特別的。
+str_town_prosperity_60|{s60}這個城鎮看起來在蓬勃發展。
+str_town_prosperity_70|{s60}這個繁華的城鎮是充滿活力的。
+str_town_prosperity_80|{s60}這個城鎮看起來既富足又有條理。
+str_town_prosperity_90|{s60}這個城鎮是既富裕又充滿人潮的。
+str_town_prosperity_100|{s60}這個城鎮是富麗堂皇的。
+str_village_prosperity_0|{s60}這個村莊的貧窮令人難以忍受。
+str_village_prosperity_10|{s60}這個村莊看起來既貧窮的可憐又悲慘。
+str_village_prosperity_20|{s60}這個村莊看起來既非常貧窮又淒涼。
+str_village_prosperity_30|{s60}這個村莊看起來既貧窮又缺乏管理。
+str_village_prosperity_40|{s60}這個村莊似乎有些貧窮而且有困難。
+str_village_prosperity_50|{s60}這個村莊似乎沒什麼特別的。
+str_village_prosperity_60|{s60}這個村莊看起來在蓬勃發展。
+str_village_prosperity_70|{s60}這個村莊似乎很興旺。
+str_village_prosperity_80|{s60}這個村莊看起來既富足又有條理。
+str_village_prosperity_90|{s60}這個村莊看起來既非常富足又很繁華。
+str_village_prosperity_100|{s60}這個村莊，被廣大的、肥沃的田地包圍，看起來很富裕。
+str_war_report_minus_4|我們快要輸掉戰爭了
+str_war_report_minus_3|情況看起來很嚴峻
+str_war_report_minus_2|事情進展的不是很順利
+str_war_report_minus_1|如果我們團結起來還是能贏得這場戰爭的
+str_war_report_0|我們與敵人不相上下
+str_war_report_plus_1|我們有不錯的機率能贏得戰爭
+str_war_report_plus_2|事情進展的很順利
+str_war_report_plus_3|要打敗他們對我們來說並無困難
+str_war_report_plus_4|我們快贏得戰爭了
+str_persuasion_summary_very_bad|儘管你進了最大努力去說服{s50}，但是你沒有一個論點是正確的。每次你開始想表達有意義的話，你就會講出完全錯誤的東西到甚至連自己的思路都斷掉。當你結束交涉時你都沒能把任何好的觀點表達清楚，而且你意識到你所做的一切是在把自己推進一個越挖越深的大坑裡。不出所料，{s50}完全不為所動。
+str_persuasion_summary_bad|你試著說服{s50}，但是{reg51?她:他}從最開始起就反駁著你。你最好的論點連自己聽來都很空虛，{s50}，同樣，也沒能從你說的東西中看出什麼高見。
+str_persuasion_summary_average|{s50}原來是個有著尖銳思想且很能辯論的人，你也似乎沒辦法使{reg51?她:他}反過來接受你的任何觀點。最終，在這場辯論中你們雙方都沒能使對方倒向自己的立場。
+str_persuasion_summary_good|憑藉敏捷的思維和流暢的論點，你設法論證了你的方案，迫使{s50}認同了你的一些觀點。然而{reg51?她:他}仍然對你的要求表示懷疑。
+str_persuasion_summary_very_good|你給出了一段如同詩歌般與聆聽者共鳴充滿激情的演講。為了更清楚的聽你講似乎整個世界都靜了下來。鼓舞人心的話語深深地感動了{s50}，{reg51?她:他}也看起來更願意幫助你了。
 str_name_1|阿丹德爾
 str_name_2|奧德赫爾
 str_name_3|阿蘭蒂爾
@@ -453,7 +453,7 @@ str_name_orc_57|烏爾加特
 str_name_orc_58|瓦爾古克
 str_name_orc_59|佐羅格
 str_name_orc_60|祖努古克
-str_surname_1|搭洛斯的{s50}
+str_surname_1|塔洛斯的{s50}
 str_surname_2|羅薩納奇的{s50}
 str_surname_3|埃瑞赫的{s50}
 str_surname_4|艾德西隆得的{s50}
@@ -473,74 +473,74 @@ str_surname_17|河谷鎮的{s50}
 str_surname_18|長湖鎮的{s50}
 str_surname_19|多爾哥多的{s50}
 str_surname_20|剛達巴的{s50}
-str_surname_21|長個兒 {s50}
-str_surname_22|憔悴{s50}
+str_surname_21|長身{s50}
+str_surname_22|憔悴的{s50}
 str_surname_23|戒靈{s50}
-str_surname_24|短小{s50}
-str_surname_25|被詛咒者{s50}
+str_surname_24|雀之{s50}
+str_surname_25|被詛咒的{s50}
 str_surname_26|傷痕累累的{s50}
-str_surname_27|公正者{s50}
-str_surname_28|冷酷者{s50}
-str_surname_29|紅腫的{s50}
-str_surname_30|邪惡的{s50}
-str_surname_31|高個兒{s50}
+str_surname_27|公正的{s50}
+str_surname_28|冷酷的{s50}
+str_surname_29|赤之{s50}
+str_surname_30|黑之{s50}
+str_surname_31|高個子{s50}
 str_surname_32|星瞳{s50}
-str_surname_33|無畏者{s50}
+str_surname_33|無畏的{s50}
 str_surname_34|啃樹者{s50}
-str_surname_35|狡猾{s50}
+str_surname_35|狡猾的{s50}
 str_surname_36|懦夫{s50}
-str_surname_37|愉快者{s50}
-str_surname_38|敏捷者{s50}
+str_surname_37|愉快的{s50}
+str_surname_38|敏捷的{s50}
 str_surname_39|游吟詩人{s50}
-str_surname_40|英勇者{s50}
-str_surname_41|急性子{s50}
-str_number_of_troops_killed_reg1|士 兵 死 亡 人 數: {reg1}
-str_number_of_troops_wounded_reg1|士 兵 受 傷 人 數: {reg1}
-str_number_of_own_troops_killed_reg1|友 軍 士 兵 死 亡 人 數: {reg1}
-str_number_of_own_troops_wounded_reg1|友 軍 士 兵 受 傷 人 數: {reg1}
-str_retreat|撤 退 !
-str_siege_continues|繼 續 戰 鬥...
-str_casualty_display|我 軍 傷 亡：{s10}^敵 軍 傷 亡：{s11}{s12}
-str_casualty_display_hp|^你 受 到 {reg1} 點 傷 害。
-str_quest_log_updated|任 務 清 單 已 更 新…
-str_banner_selection_text|你 已 被 授 予 一 面 旗 幟。你 的 旗 幟 象 徵 你 的 地 位 並 帶 來 榮 譽。你 想 要 選 擇 哪 一 面 旗 幟？
-str_loot_village|攻 擊 無 辜 的 村 民
-str_steal_from_villagers|從 窮 困 的 村 民 手 中 偷 竊
-str_rob_caravan|掠 奪 一 個 商 人 旅 隊
-str_sell_slavery|把 人 賣 去 當 奴 隸
-str_men_hungry|食 物 沒 了
-str_men_unpaid|無 法 支 付 人 們 的 工 資
-str_excessive_casualties|犧 牲 太 多 士 兵
-str_surrender|向 敵 人 投 降
-str_flee_battle|從 戰 場 逃 跑
-str_pay_bandits|向 土 匪 妥 協
-str_fail_quest|一 個 以 榮 譽 擔 保 的 任 務 失 敗 了
-str_squander_money|揮霍因信任而來的錢
-str_murder_merchant|參與冷血謀殺
+str_surname_40|果敢的{s50}
+str_surname_41|急性子的{s50}
+str_number_of_troops_killed_reg1|擊殺人數：{reg1}
+str_number_of_troops_wounded_reg1|擊傷人數：{reg1}
+str_number_of_own_troops_killed_reg1|友方部隊死亡人數：{reg1}
+str_number_of_own_troops_wounded_reg1|友方部隊受傷人數：{reg1}
+str_retreat|撤退！
+str_siege_continues|打鬥持續著...
+str_casualty_display|我軍傷亡：{s10}^敵軍傷亡：{s11}{s12}
+str_casualty_display_hp|^你受到了{reg1}點傷害。
+str_quest_log_updated|任務日誌已更新…
+str_banner_selection_text|你已被授予攜帶旗幟的權利。旗幟象徵你的地位並帶來榮譽。你想要選擇哪一面旗幟呢？
+str_loot_village|攻擊無辜的村民
+str_steal_from_villagers|從窮困的村民手中偷竊
+str_rob_caravan|打劫一支商隊
+str_sell_slavery|把人賣去當奴隸
+str_men_hungry|食物沒了
+str_men_unpaid|無法支付手下人馬的工資
+str_excessive_casualties|犧牲太多我們的士兵
+str_surrender|向敵人投降
+str_flee_battle|從戰場逃跑
+str_pay_bandits|向普通強盜妥協
+str_fail_quest|失敗了一個用我們榮譽擔保的任務
+str_squander_money|揮霍因信任而得到的錢
+str_murder_merchant|參與冷血的謀殺
 str_round_up_serfs|替貴族圍捕農奴
-str_battle_fate_1|戰鬥最激烈的時候我們走散了
+str_battle_fate_1|我們在激烈的戰鬥中分散了
 str_battle_fate_2|我受了傷被留在那裡等死
 str_battle_fate_3|我被敵人擊昏了
-str_battle_fate_4|我被俘虜並被指定贖金
-str_battle_fate_5|我被俘虜了，但後來設法逃脫了
-str_npc_morale_report|我 {s6} 你 選 擇 的 同 伴 ， {s7} 你 的 領 導 風 格 ， {s8} 現 在 總 體 的 情 況 。
-str_happy|喜 歡
-str_content|滿 意
-str_concerned|關 注
-str_not_happy|一 點 都 不 喜 歡
-str_miserable|特 別 害 怕
-str_morale_reg1|士 氣 ： {reg1}
-str_bar_enthusiastic|熱 情 的
-str_bar_content|內 容
-str_bar_weary|疲 勞
-str_bar_disgruntled|不 滿 的
-str_bar_miserable|痛 苦 的
-str_here_plus_space|這 裡 
-str_npc1_intro|你好，戰士，歡迎來到落日之窗。
-str_npc2_intro|你好，來訪者！你來這兒有何貴幹？
-str_npc3_intro|哦噢！請保持安靜，旅行者。
-str_npc4_intro|歡迎來到金殿，戰士！
-str_npc5_intro|嘿，{playername}。 Mae govannen(辛達林語：很高興見到你！)
+str_battle_fate_4|我被抓走並被用來換取贖金
+str_battle_fate_5|我被抓住，但後來設法逃脫了
+str_npc_morale_report|我對你選擇的同伴感到{s6}，對你的領導風格感到{s7}，對現在整體的情況感到{s8}。
+str_happy|開心
+str_content|滿意
+str_concerned|有疑慮
+str_not_happy|不開心
+str_miserable|嚇壞了
+str_morale_reg1|士氣：{reg1}
+str_bar_enthusiastic|                   熱情的
+str_bar_content|              滿足
+str_bar_weary|          厭倦
+str_bar_disgruntled|     不滿
+str_bar_miserable|  悲慘的
+str_here_plus_space|這裡
+str_npc1_intro|你好，戰士，歡迎來到漢那斯安南。
+str_npc2_intro|你好，訪客！我可以問你來這裡有什麼事嗎？
+str_npc3_intro|吼！請別大聲喧嘩，旅行者。
+str_npc4_intro|戰士啊，歡迎來到美杜賽爾德！
+str_npc5_intro|你好啊{playername}。很高興見到你！
 str_npc6_intro|離我遠點，陌生人！我可不想和你說話！
 str_npc7_intro|奇力，德瓦林之子，樂意效勞！
 str_npc8_intro|歡迎來到河谷鎮，旅行者！有什麼我可以做的嗎？
@@ -553,27 +553,27 @@ str_npc14_intro|陌生人，你走路的姿勢說明你家離海不遠。
 str_npc15_intro|讚美邪眼，一個戰士！
 str_npc16_intro|在東方的土地上，一個我從未見過的人直接走進我的帳篷可是很少見的事兒。你來這裡做什麼？長話短說。
 str_npc17_intro|嘿，你喜歡我們這兒的樹麼？
-str_npc1_intro_response_1|你好，追踪者大師。南方的遊俠過得如何？
-str_npc2_intro_response_1|我當然有很重要的事情，你是誰？
-str_npc3_intro_response_1|同樣祝你有個美好的一天，有什麼問題麼？
-str_npc4_intro_response_1|向你問好，我的女士。我是否有幸得知您的芳名？
-str_npc5_intro_response_1|您好，精靈貴族！與您相見真是三生有幸。 (注：葛羅芬戴爾是諾多精靈王族，在魔戒魔戒同盟卷二第一章中被甘道夫評價為：'首生兒女中大有力量的人物之一''隸屬王侯家族的精靈領主' ；首生兒女是精靈族別稱)
+str_npc1_intro_response_1|你好，追蹤者大師。南方的遊俠過得如何？
+str_npc2_intro_response_1|我的事就是剛鐸的事，你又是誰？
+str_npc3_intro_response_1|也祝你有個美好的一天，有什麼問題嗎？
+str_npc4_intro_response_1|妳好，女士。我是否有幸得知妳的芳名？
+str_npc5_intro_response_1|你好啊精靈領主！能遇見你真是榮幸。
 str_npc6_intro_response_1|這是西爾凡精靈(木精靈別稱)向客人打招呼的方式？
 str_npc7_intro_response_1|{playername} 竭誠為您服務。都靈的子民們過得如何？
 str_npc8_intro_response_1|向你問好，我還在想是否有志願者可以加入我們的旅程呢。
 str_npc9_intro_response_1|把你的敵意放下，奇獸人！我不是告密者。
-str_npc10_intro_response_1|你 是 誰 ?
-str_npc11_intro_response_1|你 是 誰 ?
-str_npc12_intro_response_1|你 是 誰 ?
-str_npc13_intro_response_1|你 是 誰 ?
-str_npc14_intro_response_1|你 是 誰 ?
+str_npc10_intro_response_1|你是誰？
+str_npc11_intro_response_1|你是誰？
+str_npc12_intro_response_1|你是誰？
+str_npc13_intro_response_1|你是誰？
+str_npc14_intro_response_1|你是誰？
 str_npc15_intro_response_1|讚美邪眼，下僕。說出你的故事！
-str_npc16_intro_response_1|你 是 誰 ?
+str_npc16_intro_response_1|你是誰？
 str_npc17_intro_response_1|幽暗密林是一篇壯麗的森林。你是誰？你知道關於這片樹林的很多細節麼？
-str_npc1_intro_response_2|沒關係，我想洞穴並不是交談的好地方。
-str_npc2_intro_response_2|不用管我，我沒時間跟守衛交談。
-str_npc3_intro_response_2|沒關係，我會在其他地方做我的‘球拍’ 的。
-str_npc4_intro_response_2|不好意思，我在其他地方有緊急事情要做。
+str_npc1_intro_response_2|算了，恐怕洞穴並不是交談的好地方。
+str_npc2_intro_response_2|算了吧，我沒時間跟守衛交談。
+str_npc3_intro_response_2|算了吧，我會在其他地方'喧嘩'的。
+str_npc4_intro_response_2|不好意思，我在其他地方還有更重要的事情得處理。
 str_npc5_intro_response_2|不好意思，我還有一些不那麼重要的客人要招待。
 str_npc6_intro_response_2|我也正有此感，再見。
 str_npc7_intro_response_2|沒關係，我需要一些新鮮空氣。
@@ -587,10 +587,10 @@ str_npc14_intro_response_2|管好你自己就行了！
 str_npc15_intro_response_2|嗯？把你的小爪子留給你自己吧，下僕。
 str_npc16_intro_response_2|管好你自己就行了！
 str_npc17_intro_response_2|是的，這裡的每棵樹木都令人感到愉悅，但我現在得走了。
-str_npc1_backstory_a|吾友，你在這個困難的時代來到了我的面前。伊西力安正被敵軍的斥候和掠奪者淹沒，據報還有半獸人大軍正在進發。我們正試圖阻止這些污穢的生靈橫跨大河(安度因河別稱)，我也曾領著一群精銳遊俠取得了一次又一次的勝利。我的隊長法拉墨是一個膽大的人，他絕不允許魔多絕望的陰影壓在剛鐸人民的頭上。
-str_npc2_backstory_a|你能詢問我真讓我感到受寵若驚。我剛剛才被分配到了攝政王衛隊中守衛門廳。這真是一件榮耀的職責，如果不是那麼忙就好了。
-str_npc3_backstory_a|好…吧…我的舊頭盔每分鐘都在…變…變小…大地在不停的晃動…好像我…正騎著某個淘氣的樹葉…哎…要是…要是…我沒把所有的麥酒…都…喝光…就好了…我平時酒量很好的…一定是喝了…該死的半獸人酒…
-str_npc4_backstory_a|我叫格爾瑪，今天是專程來見你的，{playername}。\n讓我來告訴你原因。
+str_npc1_backstory_a|朋友啊，你來的真不是時候。伊錫利恩正被敵軍的斥候和掠奪者淹沒，半獸人大軍也正在移動。我們有試圖阻止這些污穢的生物跨越大河而我也曾領著一群技藝精湛的遊俠取得一次又一次的成功。我的隊長法拉墨是個果敢的人所以我也不會因頭上籠罩的陰影而絕望。
+str_npc2_backstory_a|啊，你能問我真是受寵若驚。我剛被分配到守衛攝政王的廳堂，要我來說，是我引以為傲的職責，如果沒那麼閒就好了。
+str_npc3_backstory_a|嗯，我的舊頭盔每分鐘都在變小而且大地就像我騎在樹枝上般不停地晃動。啊，要是我昨晚沒把那些麥酒都喝光就好了-我平時酒量很好的，一定是喝到了汙穢的半獸人酒。
+str_npc4_backstory_a|我的名字是格爾瑪，今天是專程來見你的，{playername}。讓我來告訴你原因吧。
 str_npc5_backstory_a|你可能曾聽說過我在戰場上的功績，那早已被凡人遺忘的功績。這次戰爭將會是艾爾達面臨的又一次危機，但這將是最後一次戰爭。 (注：艾爾達是精靈的別稱，星辰的子民)
 str_npc6_backstory_a|請原諒我的莽撞，陌生人，我們這裡的訪客很少並且他們看起來都並不可信。數週之前，這個矮人出現在這裡然後…不好意思，我跑題了。我的名字是露亞瓦納，幽暗密林中的西爾凡精靈(木精靈別稱)。
 str_npc7_backstory_a|感謝你這麼禮貌的詢問，{playername}。我們這在和入侵的東方人以及剛達巴半獸人交戰，但目前為止，沒有什麼事兒是我們和我們的河谷鎮盟友不能解決的。
@@ -604,10 +604,10 @@ str_npc14_backstory_a|我是弗達墨，昂巴南方領域之子。哈隆鐸之�
 str_npc15_backstory_a|我 是 天 才 的 博扎格，整 骨 師，縫 傷 者 和 治 療 薩 滿。 如 果 你 為 索 倫 之 眼 而 戰，毫 無 疑 問，你 的 小 伙 伴 會 被 臉 色 蒼 白 的 山 林 人 或 馬 匹 愛 好 者 砍 傷。 現 在，哼 哼 哼！ - 半 獸 人 很 容 易 取 代，但，偉 大 的 領 袖，你 如 何 替 換 座 狼？巨 人？ 洞 穴 食 人 妖？噓 噓！ 沒 辦 法！ 你 需 要 我，偉 大 的 博 爾 佐 格！
 str_npc16_backstory_a|那麼現在，應該首先聲明自己是陌生人。\n儘管如此，我是畢額丘斯的瓦爾凡...我可以說你還沒有聽過我的土地的歌曲或故事，這些歌曲或故事的名字叫畢額丘斯，因為這個名字會考驗你的勇氣，讓你的心充滿悲傷。
 str_npc17_backstory_a|人們叫我丁博，我在樹林裡工作。那裡很好，我喜歡樹林。樹林裡有很多樹，我喜歡樹。我這一輩子都在樹林裡工作，因為我很強壯，也因為我喜歡樹。
-str_npc1_backstory_b|你應當知曉我是名繼承了登丹人血統與勇敢的伊西力安遊俠。我知道如何跟踪和偵查，而無數獸人則知道我的劍藝與射術。我還能訓練任何願意與魔多陰影相抗衡的勇敢靈魂。
-str_npc2_backstory_b|我曾被訓練成為米那斯提力斯的看守，保護白之城的安全，並服務於剛鐸的攝政王。
-str_npc3_backstory_b|我是西谷的騎士 - 他們沒有帶我去伊艾辛河巡邏。\n我知道他們的行為將配得上綠色旗幟，但我擔心許多人不會回來。
-str_npc4_backstory_b|我生於一個貴族家庭，從我還是一個小女孩兒的時候，我就被選作伊歐玟女士的伴娘服侍他。我們的父輩很明智，允許我們像男孩兒一樣接受戰鬥訓練，讓我們成為了洛汗的執盾之女。
+str_npc1_backstory_b|你應該知道我是名繼承了登丹人血統與英勇的伊錫利恩遊俠。我知道如何追蹤和偵查而無數半獸人則知道我的劍藝與弓術。我也能訓練任何願意與陰影對抗的靈魂。
+str_npc2_backstory_b|我被訓練成米那斯提力斯的看守，維護白之城的治安並為吾攝政王服務。
+str_npc3_backstory_b|我是西谷伊奧雷德的騎手-他們去艾辛河淺灘巡邏時沒有帶上我。我知道他們的行為將配得上綠色旗幟，但恐怕許多人會回不來。
+str_npc4_backstory_b|我生在一個貴族家庭中而從我還是小女孩的時候就被選作伊歐玟女士的伴娘服侍著她。我們的父親們很明智地允許我們跟兄弟一起接受戰鬥訓練，讓我們成為了洛汗的執盾女。
 str_npc5_backstory_b|我是埃爾隆德大人向凱勒鵬大人派遣的大使，我的任務包括提供援助與建議，以支援位於羅馬尼安的戰爭。
 str_npc6_backstory_b|我很喜歡遊走在我們美麗森林的隱蔽小徑中有時我會放輕腳步，去觀察林中動物的習性對伊甸人來說，成捆的武器和高大的城牆很美;但就我個人而言，稀有鳥兒歌唱和野豬巢穴也並不遜色。
 str_npc7_backstory_b|在我尊敬的父親德瓦林的指揮下，也正如我們的傳統一般，我曾幫助加強孤山的防禦並訓練了一群矮人小伙子們。
@@ -621,10 +621,10 @@ str_npc14_backstory_b|乘風破浪於貝爾法拉斯灣中會極大地改變任�
 str_npc15_backstory_b|許多月亮之前，當我還只是一個新鮮小東西的時候，家裡的老傢伙帶領著整個部落深入礦山，因為那裡的矮人最近都死了。有一個火焰幽魂(這裡特指摩瑞亞炎魔)曾經從這裡經過，它可真是舒適和溫暖！從此我們就在那裡扎下了根，但經常有一些殘暴的冒險者或矮人英雄來到這裡，打破我們隧道的平靜，傷害或殺死我們。漸漸地，我的手學會了縫合劍斧造成的傷口，而我的頭腦則學會了只通過外表來觀察骨頭。現在，我的製藥和修復創口技藝同樣厲害！
 str_npc16_backstory_b|畢額丘斯是一個激烈的種族，在我的家鄉，常常被西方人屠殺。像野獸一樣被追趕，作為刀刃的食物。那些刀溢出的血液和在我體內流動的血液是一樣的，因為我心還在疼痛。
 str_npc17_backstory_b|你可以從樹中取得很多有用的東西，你知道的。這就是我的工作。我的工作圍繞樹，我從樹中取東西。有時灌木叢也可以，但我更喜歡樹。
-str_npc1_backstory_c|然而在伊西力安，敵人有著讓人絕望的人數優勢。如果沒有攝政王派來的援軍或是更大膽的行動的話，我估計我們堅持不了多久了。如果在其他地方我對這場戰爭的貢獻比現在還大的話，我很高興去幫忙，不過前提是法拉墨隊長許可。
-str_npc2_backstory_c|儘管我在這兒的職責很重，我還是想見識見識什麼是真正的戰鬥......當然還有精靈，會說話的樹，以及猛獁象！你看起來經歷了很多，指揮官。當然這我不是指你的外表，也不是猜測。我學東西很快的，還會做飯......額，好吧，就士兵的標準來說我還算會做飯。你曾說過你在尋找志願者的吧？
-str_npc3_backstory_c|所以，我就在這兒了，灰頭土臉借酒消愁。我的éored估計早就在好幾英里之外了，估計我能追到他們的概率微乎其微，至少在這個獸人和野人四處遊蕩的時候是這樣。你的隊伍需要一位精銳的洛汗騎兵麼？
-str_npc4_backstory_c|你可能知道，身為一個女性，哪怕武藝再出色，也沒法和éoredas(注：洛汗騎兵編制，由一百二十名著甲騎兵組成)。一起衝鋒但我並不認為在爐火邊等待戰士們回歸是我的命運。我不會閒坐，也不會讓這場戰爭中獲得偉績的機會從我身邊溜走。所以我希望成為你的臂助，戰士大人。
+str_npc1_backstory_c|然而，在伊錫利恩這敵方有著令人絕望的數量優勢所以如果沒有攝政王派來的援軍或更果膽的行動我們恐怕不能堅持多久。假設能在某處做出更大貢獻我會很願意去的，前提是我的法拉墨隊長許可的話。
+str_npc2_backstory_c|儘管我在這裡的職責很重要，我還是想見識見識什麼是真正的戰鬥...還有精靈或會說話的樹以及毛象等等！指揮官，你看起來遊歷豐富，當然我不是指你的外表，也不是猜的。我學東西很快也會煮飯...呃，至少以士兵的標準來說啦。如果我沒搞錯你正在尋找志願者對吧？
+str_npc3_backstory_c|然後，我就在這了，既丟臉又悲慘。我的伊奧雷德大概早就在好幾英里之外，我也沒什麼機會追上他們了，至少在半獸人和野人四處遊蕩的情況下沒辦法。你有沒有需要一位不錯的洛汗騎手？
+str_npc4_backstory_c|你可能知道，身為女性，哪怕武藝再出色，也沒法和伊歐雷達斯一同出征。但，我並不認為在爐邊等待戰士們回來是屬於我的命運。我不會讓在這場戰爭中達成偉業的機會從我身邊溜走，戰士啊，我會很歡迎你協助我的。
 str_npc5_backstory_c|然而，如果羅斯洛立安的敵人撤退了的話，我倒是會考慮加入你的隊伍一段時間，{playername}。我可以感覺到，我們的命運在這場戰爭中是相互交匯的。
 str_npc6_backstory_c|我猜你並沒有理解我剛剛說的話 - ？鑑於你正在為戰事做準備但你一定旅行了很遠很廣，那你之前見過其他大森林麼你可以帶我去那裡麼？
 str_npc7_backstory_c|然而我們在參戰的問題上有一點點遲鈍，這和先祖留下的戰士傳統不一樣。我聽說你在旅行中的行動遠多於我們，而且你的目的也與矮人友善。要知道一個精於戰鬥的矮人會大大提高你的生存機會。
@@ -638,10 +638,10 @@ str_npc14_backstory_c|然而真正的黑潮已經到來，那黑暗陰影之潮�
 str_npc15_backstory_c|自從我離開隧道已經過了很多個冬天了，我一直把黑色森林當家並練習我的藝術。一切都很好！直到有一天，某個身著白色圖騰的醜陋大只混蛋出現。啊！白色！白的好像精靈的臉！他們都是群大只混蛋！他們把我在森林裡的小窩燒了，之後我就不得不再次躲藏在洞穴......沒錯，就是這兒......話說，你有吃的麼？或者一匹好馬？
 str_npc16_backstory_c|從前那裡有很多人，那是個不同的時代，但我要停下這個悲傷的故事了。我族民的懲罰已經到來，而我將親手將他們的復仇烙印在西方的土地上。他們的家園將被廢棄，他們的部落將被絕滅。
 str_npc17_backstory_c|如果你打算進林子裡面，我能跟你一起並給你介紹樹麼？那裡有很多有趣的樹，你知道的。
-str_npc1_backstory_later|我曾領著斥候小隊前往南方，遠至艾明亞南。無數的獸人倒在我們的埋伏中，但他們的數量依舊無窮無盡。我開始擔憂伊西力安和剛鐸的命運了。
-str_npc2_backstory_later|我們最近只有幾位訪客，而且來的越來越少。這可不是好兆頭。
-str_npc3_backstory_later|我的éored(注：洛汗騎兵編制，由一百二十名著甲騎兵組成)依舊沒有任何消息，我有點想要騎著馬衝鋒半獸人了。
-str_npc4_backstory_later|越來越多的騎兵帶著傷回來了，我盡我所能的給予援助。但我還是有種被困籠中的壓抑感。
+str_npc1_backstory_later|我曾領著斥候小隊前往南方，遠至艾明亞南。無數的半獸人倒在我們的伏擊下。但，那只是杯水車薪，我們有看見無數的噁心生物在邁進。我很憂心伊錫利恩和剛鐸的命運。
+str_npc2_backstory_later|我們最近只有少數訪客，而且來的越來越少。我認為那可不是個好兆頭。
+str_npc3_backstory_later|我的伊奧雷德依舊沒有任何消息，我有點想要騎馬撞倒一些半獸人了。
+str_npc4_backstory_later|越來越多的騎手帶著破碎的身軀回來了，而我盡我所能的給予援助。但我還是有種被困在籠子裡的壓抑感。
 str_npc5_backstory_later|你重新考慮過了麼艾爾達的時間不多了(注：艾爾達是精靈的別稱，星辰的子民？)。
 str_npc6_backstory_later|我已經觀察一個巨型蜘蛛巢好幾天了。我對它們的第一印象非常糟糕，簡直是醜陋的生物，但現在看來它們會讓入侵者陷入絕境。你是來邀請我跟你一起旅行的麼？
 str_npc7_backstory_later|建造防禦用牆對任何矮人都物有所值。但我也需要用用我的斧子。讓我跟著你吧。
@@ -655,10 +655,10 @@ str_npc14_backstory_later|你又回來了陌生人，這可能是一個預兆。
 str_npc15_backstory_later|很多偉大的人都曾請求我的藥劑治療他們的疾病！甚至還有很多戀馬佬(對洛汗人的貶義稱呼)和白皮佬(對精靈的貶義稱呼)！但我不得不再次放棄我的小屋，還有......好吧，偉大的領袖，我是不太走運，但當我們一起戰鬥時，你會需要我的技能噠...
 str_npc16_backstory_later|我的人民的歷史很長時間都在敘述這些土地。 我不知道他們在進入這片土地之前我們的人民所說的那些詭詐的歷史，但他們的歷史就像我的人民現在所進入的那樣悲傷和黑暗。 就像蹄子，劍和箭的風暴一樣，我們會把它們像以前的畢額丘斯一樣滅亡。
 str_npc17_backstory_later|我前幾天看到了一顆非常老的松樹。松樹可以長得非常老。你要最終老樹。但我見過一些一點都不尊重樹的。你尊重樹，不是麼？
-str_npc1_backstory_response_1|如果你真的可以離開的話，我的確迫切需要一名精銳戰士和追踪者。
+str_npc1_backstory_response_1|如果你可以走的話，我確實需要一名有經驗的戰士和追蹤者。
 str_npc2_backstory_response_1|你是對的，我的確正在尋找志願者。
-str_npc3_backstory_response_1|我想如果你能夠保證戰時禁酒的話，我很歡迎你這樣的優秀騎手。
-str_npc4_backstory_response_1|我很歡迎洛汗執盾之女的加入，當然，是在你自願的前提下。
+str_npc3_backstory_response_1|如果你能不喝酒的話，我會很歡迎優秀騎兵的。
+str_npc4_backstory_response_1|我很歡迎洛汗執盾女的幫助，妳願意的話。
 str_npc5_backstory_response_1|請原諒我冒昧的請求，但我的隊伍在接下來的戰鬥中很需要你的才能。
 str_npc6_backstory_response_1|我們在整個中土世界旅行，守護一切美好的東西，並給我們的敵人帶去死亡。
 str_npc7_backstory_response_1|的確，我們隊伍很歡迎一位矮人戰士的加入。
@@ -672,10 +672,10 @@ str_npc14_backstory_response_1|加入我怎麼樣？
 str_npc15_backstory_response_1|啊.....  一位醫者？呵？你真的沒撒謊麼？如果這樣話我還真的需要你。
 str_npc16_backstory_response_1|那你在這兒做什麼？
 str_npc17_backstory_response_1|好吧，人們總能從樹上學到更多。我們歡迎你的加入。
-str_npc1_backstory_response_2|我很遺憾，願你的信心足夠維持你的勇氣。
-str_npc2_backstory_response_2|對不起，我在找經驗豐富的戰士。
-str_npc3_backstory_response_2|對不起，我需要的是更可靠的夥伴。
-str_npc4_backstory_response_2|對不起，我的女士。我沒法幫到你。
+str_npc1_backstory_response_2|我很遺憾。願你的信心能維持你的英勇。
+str_npc2_backstory_response_2|不，抱歉。我正在找經驗豐富的戰士。
+str_npc3_backstory_response_2|不，抱歉。我正在找更可靠的人。
+str_npc4_backstory_response_2|我很抱歉，女士，我沒辦法幫妳。
 str_npc5_backstory_response_2|等羅斯洛立安脫離險情的時候我會回來的。
 str_npc6_backstory_response_2|對不起，我們對人形衣架不感興趣。
 str_npc7_backstory_response_2|對不起，我們自己能行。
@@ -689,10 +689,10 @@ str_npc14_backstory_response_2|我 受 夠 了。
 str_npc15_backstory_response_2|呸! 我需要戰士，而不是skulkers
 str_npc16_backstory_response_2|我 受 夠 了。
 str_npc17_backstory_response_2|對不起，我們要去的是戰場，不是去旅行。
-str_npc1_signup|我可以肯定法拉墨隊長會理解的，畢竟中土世界還有其他人能夠用勇氣讓敵人陷入困境。
-str_npc2_signup|哦，真走運！我很高興加入你的隊伍。
-str_npc3_signup|相信我，指揮官，相比麥酒我更渴望勝利的滋味兒。你要是能帶我好好跟敵人較量較量，他們很快就會嚐到長槍透體的滋味兒了。
-str_npc4_signup|你的提議很讓人高興。希望你的隊伍已經準備好迎接新夥伴了，指揮官。
+str_npc1_signup|法拉墨隊長肯定會理解中土世界還有其他人能夠用英勇和勇氣把敵人拒於門外的。
+str_npc2_signup|哦，真是個好日子！我很樂意加入你們一眾。
+str_npc3_signup|相信我，指揮官，比起麥酒我更渴望勝利的滋味。你要是能帶我好好跟敵人較量，他們很快就會嚐到洛汗長槍的厲害了。
+str_npc4_signup|我很願意，希望你們一眾已經準備好迎接我了，指揮官。
 str_npc5_signup|我明白了，我不得不承認你的名聲與功績已被我所知。
 str_npc6_signup|我不喜歡戰爭中的暴力和武器，但至少我還知道該怎麼保護好我自己。
 str_npc7_signup|我可以熟練的使用斧子，不管揮砍的還是投擲的都可以。如果你讓我和商家交談的話，我還可以盡量爭取更高的折扣。我還有一雙發現戰利品的慧眼，如果你讓我在戰後打掃戰場的話。
@@ -706,10 +706,10 @@ str_npc14_signup|可能吧，不過請牢記。我不是竊賊或是劫匪。我
 str_npc15_signup|呵呵呵呵。你是對的！沒錯！你真明智，偉大的隊長。
 str_npc16_signup|我渴望著命令，因為我的內心每一秒都愈發的接近黑暗。我沒法傻傻的繼續等下去了。隊長和領主們的命令對我來說就好像傳說故事中的那樣觸不可及。我一直在等待著，而我族人的復仇也在我的心中等待著。
 str_npc17_signup|很好！我知道很多樹。很快你也會知道很多樹就像，我一樣。因為我知道很多樹。
-str_npc1_signup_2|我只需要幾分鐘跟我的隊長道別並收拾行裝。
-str_npc2_signup_2|我需要先跟我的軍士道別，然後我們就能出發 - 我期待著輝煌的戰鬥和形形色色的神奇生物！
-str_npc3_signup_2|我在這兒已經等的快要發霉了。只需備好馬，然後我們就能出發。
-str_npc4_signup_2|我已經用弓箭和標槍狩獵過了很多次了，而這次我將在你的指揮下狩獵半獸人。另外我還會療傷。我可以肯定你會需要我的。
+str_npc1_signup_2|我需要幾分鐘跟我的隊長道別並收拾行囊。
+str_npc2_signup_2|我要先跟我的軍士道別然後我們就能出發了-真期待見證輝煌的戰鬥和形形色色的奇怪生物！
+str_npc3_signup_2|我一直在這裡等著某人帶我走，所以我只要備好馬就能出發了。
+str_npc4_signup_2|我已經用弓箭和擲槍狩獵過了很多次了，這次我將在你的指揮下狩獵半獸人。另外我也能治療所以肯定會很有用的。
 str_npc5_signup_2|如果你在野外保持高調並被敵人圍攻的話，戰鬥肯定不會勢均力敵。我會幫助你的。
 str_npc6_signup_2|也許我可以教你怎麼快速移動並且保持安靜，我們走吧！
 str_npc7_signup_2|如果你能好好管束隊伍中的高個們，尤其是那些奸猾似鬼的精靈，我會很高興加入你的。
@@ -723,10 +723,10 @@ str_npc14_signup_2|幸運的是，死人是不需要財寶的。更幸運的是�
 str_npc15_signup_2|哦，真是博扎格天賜者偉大的時刻，這也是偉大的領袖你的！我們將一起征服！你，有了我這雙治愈巧手將無人能擋！我，則作為偉大的半獸人智者支持你！
 str_npc16_signup_2|我 擔 心 我 沒 法 再 等 下 去 了。我 計 劃 加 入 下 一 批 出 發  的 部 隊，不 管 我 的 酋 長 同 意 與 否，我 想 戰 爭 很 快 就 要 結 束 了。
 str_npc17_signup_2|我需要拿一些工具，然後就能出發。我說的那顆松樹就在不遠處，你一定要去看看。
-str_npc1_signup_response_1|我的队伍的确需要一名熟练的游侠，欢迎你的加入。
-str_npc2_signup_response_1|很好，在這個黑暗的時代你的加入對我們來說是極大的鼓舞。
-str_npc3_signup_response_1|很好，備馬準備離開。
-str_npc4_signup_response_1|令人欽佩，我的女士！我們隨時都可以出發。
+str_npc1_signup_response_1|我確實需要一名技藝精湛的遊俠，歡迎你加入。
+str_npc2_signup_response_1|太好了。在這個黑暗的時代我們總是需要開心果的。
+str_npc3_signup_response_1|很好。備馬吧-我們很快就會出發了。
+str_npc4_signup_response_1|令人印象深刻。女士，只要妳準備好，我們隨時都可以出發。
 str_npc5_signup_response_1|精靈貴族的加入是我們的榮幸。
 str_npc6_signup_response_1|很好，我只希望你不會一見獸人就腳底抹油。
 str_npc7_signup_response_1|很好，矮人大師，歡迎你的加入。
@@ -741,9 +741,9 @@ str_npc15_signup_response_1|嗯，我欣賞你的......   自信心。打包你�
 str_npc16_signup_response_1|跟隨我如何？
 str_npc17_signup_response_1|很好！我只希望你不要總談論樹。
 str_npc1_signup_response_2|我目前不需要你的協助，祝你好運。
-str_npc2_signup_response_2|對不起，我改變主意了
-str_npc3_signup_response_2|對不起，我改變主意了 - 也許下次吧。
-str_npc4_signup_response_2|向你致歉，我的女士，也許下次吧。
+str_npc2_signup_response_2|抱歉，我改變主意了。
+str_npc3_signup_response_2|抱歉，我改變主意了-也許下次吧。
+str_npc4_signup_response_2|向妳致歉，女士，也許下次吧。
 str_npc5_signup_response_2|經過仔細考慮，我想我們自己就能幫助羅斯洛立安。
 str_npc6_signup_response_2|對不起，我根本無法想像你在戰場上的樣子。
 str_npc7_signup_response_2|對不起，我正好喜歡精靈。
@@ -757,10 +757,10 @@ str_npc14_signup_response_2|我 改 變 主 意 了。
 str_npc15_signup_response_2|事 實 上，我 想 我 要 找 一 個 真 正 的 治 療 師 而 不 是 一 個 吹 牛 大 師。
 str_npc16_signup_response_2|我 受 夠 了。
 str_npc17_signup_response_2|另 一 方 面，我 想 我 改 變 主 意 了。你 是 有 一 點 瘋 癲 是 吧？
-str_npc1_payment|我很想加入你的隊伍，可是我的法拉墨隊長更需要我在這裡。 [需要{s14}的{reg14}點影響力]
-str_npc2_payment|我擔心守衛是不會放我離開這裡的。 [需要{s14}的{reg14}點影響力]
-str_npc3_payment|啊…嗚…我在這兒的客棧可是欠了不少賬，在付清之前我是走不了的。 [需要{s14}的{reg14}點影響力]
-str_npc4_payment|我很想加入你的隊伍，但要是我走之后城市被進攻，誰能照顧傷員？ [需要{s14}的{reg14}點影響力]
+str_npc1_payment|我很想加入你，但我的法拉墨隊長更需要我在這裡。[需要{s14}的{reg14}影響力]
+str_npc2_payment|恐怕，守衛軍士不會讓我離開這裡的。[花費{s14}的{reg14}影響力]
+str_npc3_payment|呃，看來我在這裡的酒館可是欠了不少賬，在付清之前我是走不了的。[花費{s14}的{reg14}影響力]
+str_npc4_payment|我很想加入你，但要是我走了之後城市被攻擊要由誰來照顧傷員呢？[花費{s14}的{reg14}影響力]
 str_npc5_payment|我們會很快一同踏上旅途的，但不是現在。羅斯洛立安依舊需要我在這裡協助。如果我的加入被敵人早早得知的話，價值就會大大降低。 [需要{s14}的{reg14}點影響力]
 str_npc6_payment|我很想加入你的隊伍，但職責所在，現在我不能離開。 [需要{s14}的{reg14}點影響力]
 str_npc7_payment|我很想加入你的隊伍，但在最需要幫助的時刻離開這裡，我高貴的父親德瓦林是不會理解我的。 [需要{s14}的{reg14}點影響力]
@@ -774,10 +774,10 @@ str_npc14_payment|說服港口隊長放我離開可要費不少嘴皮子。你�
 str_npc15_payment|啊，沒錯！偉大的！戰士！領主！只不過這兒還有點小問題！一個對我巨大的不公，這個洞穴的主人不喜歡我對治療的提議，還偷了我所有的設備！大膽無禮！竟敢偷偉大的博扎格的東西！主人，我沒法從他的骯髒的爪子下收回我無價的設備！ [需要{s14}的{reg14}點影響力]
 str_npc16_payment|我不會永遠追隨你，我有自己的路要走；不過你的路會跟我的重合一段。在我們出​​發之前，我必須先向那些先於先死之人表達敬意。我也希望你能表達你的敬意，然後我們就可以離開了。任何人都不能忘記他的祖先，正如祖先從來沒有忘記我們一樣。 [需要{s14}的{reg14}點影響力]
 str_npc17_payment|我喜歡樹，但我的老叔需要我。 [需要{s14}的{reg14}點影響力]
-str_npc1_payment_response|不用擔心，我會和他解決好你的空缺所帶來的問題的。 [花費{reg14}/{reg15}點影響力]
-str_npc2_payment_response|不用擔心，我會和你的軍士詳談的。 [花費{reg14}/{reg15}點影響力]
-str_npc3_payment_response|我會幫你結清所有賬單的，希望你值得我的付出。 [花費{reg14}/{reg15}點影響力]
-str_npc4_payment_response|這的確是一個高尚的原因，但我相信會找到替代你的人的。 [花費{reg14}/{reg15}點影響力]
+str_npc1_payment_response|不用擔心，我會和他解決好你離開所帶來的問題的。 [花費{reg14}/{reg15}影響力]
+str_npc2_payment_response|別擔心，我會和你的軍士詳談的。[花費{reg14}/{reg15}影響力]
+str_npc3_payment_response|我會幫你結清所有賬單的。這最好值得我的付出。[花費{reg14}/{reg15}影響力]
+str_npc4_payment_response|這的確是個高尚的大業，但我相信還是能找到替代人選的。[花費{reg14}/{reg15}影響力]
 str_npc5_payment_response|請相信我，你的加入比留在這裡更有價值。 [花費{reg14}/{reg15}點影響力]
 str_npc6_payment_response|從今往後你的職責就是跟隨我。 [花費{reg14}/{reg15}點影響力]
 str_npc7_payment_response|德瓦林大人會理解的，畢竟一個可以逆轉戰局的矮人戰士不應該和敵人隔離太久。 [花費{reg14}/{reg15}點影響力]
@@ -791,38 +791,38 @@ str_npc14_payment_response|你永遠也不需要再擔心你的舊·港口長官
 str_npc15_payment_response|無價的是吧？那我會幫你拿回來的。 [花費{reg14}/{reg15}點影響力]
 str_npc16_payment_response|向你我的祖先獻上敬意。 [花費{reg14}/{reg15}點影響力]
 str_npc17_payment_response|你的叔叔會好的。\n你現在和我在一起。\n[花費{reg14} / {reg15}影響力]
-str_npc1_morality_speech|隊長，我不明白你為何{s21}並且放棄我們的人。法拉墨隊長從來都沒有失去對於麾下游俠的憐憫，更不會導致他們無端受苦。
-str_npc2_morality_speech|我希望您別介意我接下來的話，但看著我們{s21}卻一言不發對我來說還是有點難。也許我一直嘴上說我要變得更鐵血一些，但如果可以的話，我還是希望您試著多…關心關心我們的士兵，這樣我晚上也能睡個好覺。
-str_npc3_morality_speech|指揮官，我們埃奧爾族(洛汗人自稱)永不{s21}。我們的馬不會輕易疲勞，一旦我們重組，沒有什麼是長距離騎兵衝鋒解決不了的事兒。下次我們再與地方作戰的時候請你留心。
-str_npc4_morality_speech|不要在意士兵們的過激言論，有時{s21}是最明智的行為。我相信留得有用之身不是為了別的，而是當未來某一天命運眷顧我們的時候和敵人展開殊死較量。
+str_npc1_morality_speech|隊長，我不明白你為何{s21}並且放棄我們的人馬。法拉墨隊長從來都沒有失去對於麾下游俠的同情心也不會導致他們無端受苦。
+str_npc2_morality_speech|希望你不介意我說這些，但看著我們{s21}卻一言不發對我來說還是有點難。也許我該試著變成更堅強的士兵，但如果你可以多…在乎一點我們的士兵，我會睡的比較好。
+str_npc3_morality_speech|指揮官，我們埃奧爾族永不會{s21}。我們的馬不會輕易疲勞，一旦我們重組陣型，沒有什麼是算好時機的衝鋒解決不了的事情。下次我們處於劣勢時候請你留心吧。
+str_npc4_morality_speech|不要在意士兵們的言論，有時{s21}是最明智的行為。我相信留得青山在，不怕沒柴燒，命運會眷顧讓我們能再戰的。
 str_npc5_morality_speech|您必須慎重考慮您的行為，指揮官。 {s21}使我和其他戰士們顏面無存，而且這還會減少我們盟友的信心。
 str_npc7_morality_speech|我並不為您作出{s21}的決定感到高興。戰死是任何腦袋正常的矮人心中的榮耀，而被懦夫帶領則是羞恥。要是我的表親們知道這事兒，他們會怎麼評價我？
 str_npc8_morality_speech|指揮官，我不得不說，{s21}對任何一個男人來說都是嚴酷且不必要的。我會盡我所能減少他們的痛苦，但請不要再犯這樣嚴重的錯誤了。
 str_npc9_morality_speech|一個好戰的強獸人永不{s21}。如果主人現在還有丁點膽量…或許某天早上就丁點兒不剩了，葛瑪說完了。
 str_npc15_morality_speech|你可能覺得偉大的博扎格可以治愈一切，{playername}，但哪怕是我也有極限！如果你繼續{s21}，哪怕是我的才能也會不夠！你必須給我一些支持！我沒法戰勝死亡，不管是因為餓死還是被碾成渣！
-str_npc1_2ary_morality_speech|隊長，我作為Dúnadan長大，無論是勇敢還是榮譽。 如果我們不這樣做，我會更喜歡{s21}。
-str_npc4_2ary_morality_speech|請你原諒，指揮官。像我這樣的女戰士寧可直面死亡也不遠獲得恥辱。 {s21}是對我的馬和祖先的羞辱。
+str_npc1_2ary_morality_speech|隊長，我作為登丹人長大，無論英勇或榮譽都是。我比較希望我們不會{s21}。
+str_npc4_2ary_morality_speech|請你原諒，指揮官。像我這樣的女人寧願接受死亡也不想受辱。{s21}是對我的馬和祖先的侮辱。
 str_npc15_2ary_morality_speech|嗨嗨嗨！你真狡猾，哦大人！你收起黃金，點了點頭，說'是的，主人！ '，但你把所有時間都用來規劃這個！嗨嗨！只是我們必須小心點，確保老大看不見你欺騙他…
-str_npc1_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc2_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc3_personalityclash_speech|指揮官，我們何時才能結束與{s11}同隊的生活啊？我知道他腿上的確很靈活，但他關於埋伏的談話真是太頻繁，以至於我都無法忍受了—他和他族民的謹慎性格真是不同。
-str_npc4_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc5_personalityclash_speech|我提到我討厭{s11}嗎？
+str_npc1_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc2_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc3_personalityclash_speech|指揮官，我們一眾裡為何會有{s11}的存在啊？我知道他的腿上功夫很靈活，但我不喜歡他一直講關於埋伏的話題-跟他同胞的謹慎性格差不多。
+str_npc4_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc5_personalityclash_speech|我提過我討厭{s11}嗎？
 str_npc6_personalityclash_speech|{playername}，我剛剛看到{s11}公然從一個滿是雛鳥的鳥巢旁邊經過。他的笨拙摧毀了那群無辜生命。
 str_npc7_personalityclash_speech|{s11}大人在戰鬥中表現得很好，但我不知道他是否利用頭髮閃瞎他的敵人？還是說他們對他的名聲和傲慢風度感到敬畏？
 str_npc8_personalityclash_speech|指揮官，我必須對{s11}提出投訴。他不停的糾纏我，讓我給他釀造某種名為‘綠色仙女’的東西。
-str_npc9_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc10_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc11_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc12_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc13_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc14_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc15_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc16_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc17_personalityclash_speech|我提到我討厭{s11}嗎？
+str_npc9_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc10_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc11_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc12_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc13_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc14_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc15_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc16_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc17_personalityclash_speech|我提過我討厭{s11}嗎？
 str_npc1_personalityclash_speech_b|我討厭{s11}。
 str_npc2_personalityclash_speech_b|我討厭{s11}。
-str_npc3_personalityclash_speech_b|我對剛鐸人沒什麼意見，但要我說，隊伍中有更多英勇騎手總比有更多頑強‘抱地者’好，如果你明白我的意思的話。
+str_npc3_personalityclash_speech_b|我對剛鐸人沒什麼成見，但我們更需要果敢的騎兵而不是頑固的抱地者，你明白我在說什麼吧。
 str_npc4_personalityclash_speech_b|我討厭{s11}。
 str_npc5_personalityclash_speech_b|我討厭{s11}。
 str_npc6_personalityclash_speech_b|他的矮人之道有可能幫助他在地下更好的生存，但他至今沒有掉進一個醜陋豎井顯然是一個奇蹟，也許他應該掉下去。
@@ -837,23 +837,23 @@ str_npc14_personalityclash_speech_b|我討厭{s11}。
 str_npc15_personalityclash_speech_b|我討厭{s11}。
 str_npc16_personalityclash_speech_b|我討厭{s11}。
 str_npc17_personalityclash_speech_b|我討厭{s11}。
-str_npc1_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc2_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc3_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc4_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc5_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc6_personalityclash2_speech|我提到我討厭{s11}嗎？
+str_npc1_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc2_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc3_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc4_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc5_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc6_personalityclash2_speech|我提過我討厭{s11}嗎？
 str_npc7_personalityclash2_speech|一場不錯的小衝突，是吧隊長？要是沒有精靈女士{s11}那些喪氣的行為就更好了。
-str_npc8_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc9_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc10_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc11_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc12_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc13_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc14_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc15_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc16_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc17_personalityclash2_speech|我提到我討厭{s11}嗎？
+str_npc8_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc9_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc10_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc11_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc12_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc13_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc14_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc15_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc16_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc17_personalityclash2_speech|我提過我討厭{s11}嗎？
 str_npc1_personalityclash2_speech_b|我討厭{s11}。
 str_npc2_personalityclash2_speech_b|我討厭{s11}。
 str_npc3_personalityclash2_speech_b|我討厭{s11}。
@@ -871,10 +871,10 @@ str_npc14_personalityclash2_speech_b|我討厭{s11}。
 str_npc15_personalityclash2_speech_b|我討厭{s11}。
 str_npc16_personalityclash2_speech_b|我討厭{s11}。
 str_npc17_personalityclash2_speech_b|我討厭{s11}。
-str_npc1_personalitymatch_speech|您看到了{s11}在戰場上的優雅了嗎？就是那種片葉不沾衣但招招斃命的戰斗方式。就像老故事裡講的那樣，精靈女士在戰場上的優雅和在她們樹庭中的一樣。
-str_npc2_personalitymatch_speech|打擾您了，指揮官。我剛剛幫助{s11}修理較量過後武器的小損傷，他竟然答應教我提升我的技擊技巧。
-str_npc3_personalitymatch_speech|你不覺得洛汗執盾之女的衝鋒很讓人驚奇麼？我一直覺得女人們最好還是待在家靠著爐膛，但當我看到{s11}上場戰鬥擊倒敵人的時候，我開始懷疑我之前的想法是否正確了。
-str_npc4_personalitymatch_speech|一場偉大的戰鬥，指揮官，我在此祝賀你的勝利。同時我注意到{s11}如何認真細緻的治療了所有傷員，甚至連敵人都獲得了應得的照顧。
+str_npc1_personalitymatch_speech|你有注意到{s11}在戰場上的優雅了嗎？她對敵人發出致命一擊時的身姿。就像老故事裡說的那樣，精靈少女在戰場上與在森林庭院中一樣美。
+str_npc2_personalitymatch_speech|不好意思，指揮官。我剛剛打完後在幫{s11}修理武器時，他竟然答應教我如何提升我的打擊技巧。
+str_npc3_personalitymatch_speech|不覺得洛汗執盾女的衝鋒很令人驚豔嗎？通常，我們的女人都被說待在家中爐邊比較好，但在看到{s11}上一場戰鬥擊倒敵人的時候，我開始產生懷疑了。
+str_npc4_personalitymatch_speech|一場偉大的戰鬥，指揮官，讓我在此祝賀你的勝利吧。我注意到{s11}是多麼默默認真的治療了傷員，甚至連敵人都獲得了應得的結局。
 str_npc5_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc6_personalitymatch_speech|{playername}，我討厭戰鬥，所以我在戰時沒法幫忙。我注意到{s11}大人光芒萬丈般的衝了出去，然後像雄鷹一樣撲在了邪惡造物身上。
 str_npc7_personalitymatch_speech|血腥和勝利，正如我所喜歡的！然而我確實受了點小傷，但{s11}已經很好地幫我包紮了。
@@ -888,22 +888,22 @@ str_npc14_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc15_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc16_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc17_personalitymatch_speech|嗯，酋長。我覺得{s11}在森林中如魚得水，能在一篇柳葉上看到一粒塵土。
-str_npc1_personalitymatch_speech_b|我發現{s11}的人非常討人喜歡，她的本土木工藝品是世界上辛達技術遺留下來的罕見一瞥。你知道，我的父親在傳說中的辛達精靈隊長為多里亞特的辛格爾國王服務後給我起名字，我總覺得這場公平競賽特別感興趣。
-str_npc2_personalitymatch_speech_b|我在家鄉的父老經常給我講伊西利安遊俠的故事，現在我親眼見識到了故事中發生的一切。如果他們每個人都像{s11}那麼厲害，剛鐸一定會變得安全許多對吧。
-str_npc3_personalitymatch_speech_b|指揮官，我個人建議您在下次戰鬥中命令{s11}盡量靠後站。我實在不忍心看到她在戰場上受傷。還有，這不是酒後胡言。
+str_npc1_personalitymatch_speech_b|我發現{s11}的陪伴非常討人喜歡而她的本土森林知識則是世界上辛達技術遺留下來的罕見奇觀。你知道嗎，我的名字是父親用傳說中為多里亞特的辛格爾王服務的辛達精靈隊長為我取的所以我總是覺得跟這美妙種族有種特別的聯繫。
+str_npc2_personalitymatch_speech_b|我在家鄉的族人們經常會說伊錫利恩遊俠的故事而現在我能親眼見識那些都是真的了。如果他們每個人都像{s11}那麼厲害，剛鐸一定會變得安全許多對吧。
+str_npc3_personalitymatch_speech_b|指揮官，這是我個人的請求，你在下次戰鬥中命令{s11}待在後方好嗎？我實在不忍心看到她受傷，還有這並不是酒後胡言。
 str_npc4_personalitymatch_speech_b|保護生命是非常崇高的行為，我能與那種靈魂產生共鳴，即使我們的世界相距甚遠。
-str_npc5_personalitymatch_speech_b|我喜歡 {s11}。
+str_npc5_personalitymatch_speech_b|我喜歡{s11}。
 str_npc6_personalitymatch_speech_b|我在想他有多大年齡，或許比我老上十幾個世紀？算了，您不會明白的。
 str_npc7_personalitymatch_speech_b|{s11}和她的河谷鎮族人哪怕達不到矮人戰士的標準，但還時這場戰爭中我們最堅定的盟友。要我說，他們是人類中朋友和伴侶的最好選擇。
 str_npc8_personalitymatch_speech_b|河谷鎮人非常尊重堅強的孤山矮人。儘管我們有著不同的種族和風俗，但他們依舊是我們的好友和值得託付後背的伙伴。
-str_npc9_personalitymatch_speech_b|我喜歡 {s11}。
-str_npc10_personalitymatch_speech_b|我喜歡 {s11}。
-str_npc11_personalitymatch_speech_b|我喜歡 {s11}。
-str_npc12_personalitymatch_speech_b|我喜歡 {s11}。
-str_npc13_personalitymatch_speech_b|我喜歡 {s11}。
-str_npc14_personalitymatch_speech_b|我喜歡 {s11}。
-str_npc15_personalitymatch_speech_b|我喜歡 {s11}。
-str_npc16_personalitymatch_speech_b|我喜歡 {s11}。
+str_npc9_personalitymatch_speech_b|我喜歡{s11}。
+str_npc10_personalitymatch_speech_b|我喜歡{s11}。
+str_npc11_personalitymatch_speech_b|我喜歡{s11}。
+str_npc12_personalitymatch_speech_b|我喜歡{s11}。
+str_npc13_personalitymatch_speech_b|我喜歡{s11}。
+str_npc14_personalitymatch_speech_b|我喜歡{s11}。
+str_npc15_personalitymatch_speech_b|我喜歡{s11}。
+str_npc16_personalitymatch_speech_b|我喜歡{s11}。
 str_npc17_personalitymatch_speech_b|我的人民與Woodelves相處得很好。\n他們也喜歡樹木。\n我也喜歡樹木。\n我們都喜歡樹木。
 str_npc1_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc2_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
@@ -922,10 +922,10 @@ str_npc14_retirement_speech|我對戰士的生活有點厭倦了，我會退休�
 str_npc15_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc16_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
 str_npc17_retirement_speech|我對戰士的生活有點厭倦了，我會退休。
-str_npc1_rehire_speech|好久不見，隊長。我能再次加入你的隊伍麼？
-str_npc2_rehire_speech|希望您今天過得愉快，我能請求再一次加入你的隊伍麼？
-str_npc3_rehire_speech|哈！再次一起奔馳於草原如何？
-str_npc4_rehire_speech|再次歡迎。我們要從上次停止得地方繼續開始麼？
+str_npc1_rehire_speech|好久不見，隊長。我該再次加入你嗎？
+str_npc2_rehire_speech|真是個好日子！指揮官，我可以請求再次加入你嗎？
+str_npc3_rehire_speech|哈！讓我們再次一起奔馳吧？
+str_npc4_rehire_speech|再次歡迎。我們要從上次結束的部分繼續下去嗎？
 str_npc5_rehire_speech|很高興見到你，{playername}。讓我們再一次一起旅行。
 str_npc6_rehire_speech|很高興見到你，{playername}。我們要一同踏上旅途麼？
 str_npc7_rehire_speech|我的斧子已經準備好了，{playername}。你要我重新加入麼？
@@ -939,10 +939,10 @@ str_npc14_rehire_speech|我能再次為你服務嗎？
 str_npc15_rehire_speech|啊，偉大的主！我找你找了很久了，因為你榮耀的行為在中土世界已經傳播開來了。你一定也很想念我的能力吧？你肯定會張開雙臂再次歡迎我，來補足你偉大軍隊？
 str_npc16_rehire_speech|我能再次為你服務嗎？
 str_npc17_rehire_speech|嘿，又要準備出發了？樹待在那裡不動，但我喜歡動。我當然也喜歡樹。
-str_npc1_home_intro|隊長，我們正接近奧斯吉力亞斯，讓我們尋找朋友的同時保持警惕。
-str_npc2_home_intro|請保持警惕，指揮官！那裡一定是米那斯魔窟。你不覺得有東西正在看著我們嗎？
-str_npc3_home_intro|指揮官，我能建議我們稍微休息一會兒麼？我們已經接近恩特森林了，馬兒們也累了。對了，有些人也管這裡叫法貢森林。
-str_npc4_home_intro|指揮官，我們在這兒休息一下吧！我們的前方是凱勒布蘭特平原，它位於安度因河與林萊河之間。洛汗的開國國王伊歐曾經在這裡協助我們的剛鐸盟友。 (注：凱勒布蘭特平原戰役，洛汗人在這裡幫助剛鐸逆轉了戰局並擊退了畢額丘斯人的進攻，促成了洛汗王國的建立和剛鐸洛汗的永世盟約)
+str_npc1_home_intro|隊長，我們正在接近奧斯吉力亞斯，讓我們保持警惕觀察敵我雙方吧。
+str_npc2_home_intro|保持警覺，指揮官！那一定是米那斯魔窟。你不覺得有東西正在看著我們嗎？
+str_npc3_home_intro|聽我一言，指揮官。我們已經太靠近樹人之林了所以馬匹會靜不下來。對了，有些人也把這裡叫做法貢森林。
+str_npc4_home_intro|指揮官，讓我們在這裡休息一下吧。我們的前方，位於安度因河與林萊河之間，是凱勒布蘭特平原，年輕的伊歐王曾經在這裡援助了我們的剛鐸盟友。
 str_npc5_home_intro|達羅！ 那是艾辛格和奧桑克塔的黑塔。 自從我上次見到它們以來，已經發生了很大的變化，沒有甚麼事比這個更好。
 str_npc6_home_intro|打擾一下，{playername}。這部分路變得更加扭曲，一些還是死路。我們一定很接近多爾哥多了。
 str_npc7_home_intro|呦，隊長！這裡一定是前往卡扎德杜姆東門的舊徑，你也可能更熟悉他的另一個名字摩瑞亞。在這裡你可以看到遠方的鏡影湖卡雷德—薩魯姆；穿過雲彩的三座山峰則讓這部分迷霧山脈富有魅力。
@@ -956,10 +956,10 @@ str_npc14_home_intro|嘿！看！
 str_npc15_home_intro|嘿！看！
 str_npc16_home_intro|嘿！看！
 str_npc17_home_intro|噢~~，這里長了一整片梅隆樹！任何人都不應該砍倒它們，它們真是太美麗了！
-str_npc1_home_description|這裡曾經是一座美麗的城市，滿是人群與歡笑，剛鐸的舊王都。但現在這裡只剩廢棄的建築與廢墟，安都因河懶洋洋的流經鬼城。
-str_npc2_home_description|很多年前，這裡被稱為米那斯伊希爾，傳說中月亮用銀色的光填滿內廷，城牆則閃著銀白之光。剛鐸的守望者們站在牆上向東眺望，持續觀察伊菲爾杜斯的另一邊。 (注：伊菲爾杜斯在辛達林語裡是暗影山脈)
-str_npc3_home_description|這裡的樹乾和樹枝密得令人發慌，還有各種各樣的樹。我是不會冒險進去的，畢竟不是所有林中漫遊的奇怪生物都人畜無害。
-str_npc4_home_description|驍駿勇騎今何在？吹角長鳴何處聞？高盔鐵衣今何在？明亮金發何處飄振？詩琴妙手今何在？俱往矣，如山崗微雨，草原飄風；落日西墜，幽隱山後。 (摘自鄧嘉宛譯，魔戒魔戒同盟卷三第六章)
+str_npc1_home_description|這裡曾經是一座美妙的城市，滿是人群與歡笑，剛鐸的舊首都。但現在這裡只剩荒廢與廢墟，安都因河緩緩流經的鬼城。
+str_npc2_home_description|多年前這裡被稱為米那斯伊希爾，故事中月亮用銀色的光填滿廣場而城牆則閃著銀白之光。剛鐸的看守們會站在牆上向東眺望暗影山脈的另一邊。
+str_npc3_home_description|這裡充滿著茂密的樹幹和樹枝還有各式各樣的樹，而且還充斥著許多奇怪生物所以我是不會冒險進去的，因為那些並非都是無害的。
+str_npc4_home_description|'驍駿勇騎今何在？吹角長鳴何處聞？^高盔鐵衣今何在？明亮金發何處飄振？詩琴妙手今何在？...^俱往矣，如山崗微雨，草原飄風；^落日西墜，幽隱山後。'
 str_npc5_home_description|曾經由南方王國建造，現在則是人稱白袍巫師的家；正計劃著，毫無疑問，通過犧牲他人來進一步增強他的力量。
 str_npc6_home_description|我從未嘗試過這麼遠，但我無意中聽到我們的幽暗密林偵察員說這裡可能有戒靈。 我感到邪惡的存在，我不知道它叫甚麼名子。 但它很強大，所以讓我們做好準備吧。
 str_npc7_home_description|從這裡的荒涼和許多半獸人足跡來看，我很擔心勇敢的巴林和他探險的最終命運。看來摩瑞亞已經落入了陰影中，我們應該小心些。 (注：巴林是霍比特人中跟隨索林·橡木盾前往孤山的十三位矮人之一，後來進入摩瑞亞希望回复它昔日的榮光)
@@ -973,10 +973,10 @@ str_npc14_home_description|你知道那座城鎮麼？
 str_npc15_home_description|你知道那座城鎮麼？
 str_npc16_home_description|你知道那座城鎮麼？
 str_npc17_home_description|我之前從來不知道，這裡竟然有這麼多美麗的樹。真好奇有沒有樵夫在這里工作。
-str_npc1_home_description_2|如果剛鐸被擊敗，西奧斯吉力亞斯會率先落入邪眼手下部落的掌控中。我只希望那天法拉墨隊長能夠坐鎮指揮力挽狂瀾。如果我們有多餘的士兵可以加強這裡的防禦，我會非常非常感激的，隊長。
-str_npc2_home_description_2|人們都說現在這裡充斥著可怕的半獸人、令人恐懼的靈魂，甚至還有更加恐怖的東西。我祈禱當剛鐸重新佔領這裡的時候，能清除掉所有的污穢與邪惡。
-str_npc3_home_description_2|如果我們必須穿過恩特森林的話，希望我們能保持匆忙和潛行。我不知道誰可能在聽我們的馬蹄聲，我也不想親自找出來。 (注：恩特森林是洛汗人口中的法貢森林)
-str_npc4_home_description_2|我們會牢記過去的偉大事蹟和犧牲。洛汗和剛鐸的聯軍將再一次拯救我們的人民免遭厄運。
+str_npc1_home_description_2|如果剛鐸要終結的話，西奧斯吉力亞斯會首先落入邪眼手下大群人馬的掌控中。我只能希望那天法拉墨隊長能夠坐鎮指揮力挽狂瀾。如果我們有多餘的人馬可以加強這裡防禦的話，我會非常感激的，隊長。
+str_npc2_home_description_2|人們都說現在這裡充斥著可怕的半獸人和令人恐懼的魂魄甚至是更加恐怖的東西。我祈禱剛鐸能再次佔領這裡並清除掉所有的污穢與邪惡。
+str_npc3_home_description_2|如果我們必須穿過樹人之林的話，我們應該盡快並保持潛行。我不知道誰會聽著我們的馬蹄聲也不想去查。
+str_npc4_home_description_2|我們會牢記過去的偉大事蹟和犧牲。洛汗和剛鐸的聯軍將再一次拯救我們的同胞免受終結。
 str_npc5_home_description_2|我只希望我們銘記，即使是偉大者的一員，甚至是一位埃斯塔力，都有可能被腐蝕和墮落。追求力量者必被力量所毀，只希望我們不要拖得太久。 (注：埃斯塔力在昆雅語中意譯為博學者，特指巫師)
 str_npc6_home_description_2|我能感覺到牆後的邪惡大軍正準備出發…去美麗的羅斯洛立安？去河谷鎮？去我的家鄉幽暗密林？我不知道，但請盡你的一切努力阻止他們。
 str_npc7_home_description_2|如果戰爭運將帶給我們一大支軍隊的話，我們應該冒險進入礦坑並取回他們那筆巨大的財富。
@@ -990,10 +990,10 @@ str_npc14_home_description_2|米那斯魔窟，戒靈那裡整天喝酒，哈哈
 str_npc15_home_description_2|米那斯魔窟，戒靈那裡整天喝酒，哈哈！
 str_npc16_home_description_2|米那斯魔窟，戒靈那裡整天喝酒，哈哈！
 str_npc17_home_description_2|我可以鑿一個優質煙斗給您。您需要煙斗麼？
-str_npc1_home_recap|我生長在伊西力安的一個戰士家庭中，我的祖先甚至可以追溯到登丹人那裡去。
-str_npc2_home_recap|我出生在米那斯提力斯一個窘迫但我為之引以為豪的家庭。
-str_npc3_home_recap|我是埃奧爾族的一員，或是外人口中洛汗人(注：埃奧爾族是洛汗人語言中對自己民族的稱呼)。
-str_npc4_home_recap|你如此輕易忘記並不令我感到有趣。
+str_npc1_home_recap|我生長在伊錫利恩，我的戰士祖先可以追溯到南邊的登丹人那裡去。
+str_npc2_home_recap|我出生在米那斯提力斯，一個普通，但我引以為豪的家庭。
+str_npc3_home_recap|我是埃奧爾族的一員，或是外人口中的，洛汗人。
+str_npc4_home_recap|你這麼輕易的忘記了並不有趣。
 str_npc5_home_recap|我會滿足你的好奇心的，但別在這兒逗留了。
 str_npc6_home_recap|我生長在幽暗密林中，是一位西爾凡精靈。我們族人的木工技術無可匹敵。
 str_npc7_home_recap|我是都靈一族的德瓦林之子。
@@ -1318,48 +1318,48 @@ str_faction_side_name2|白掌
 str_party_greet_friend_gondor|你好，白之樹的朋友！
 str_party_greet_enemy_gondor|亮出你的武器吧，剛鐸之敵！
 str_party_greet_friend_dwarf|都靈一族向你問好，矮人之友！
-str_party_greet_enemy_dwarf|Baruk Khazâd！ Khazâd ai-mênu！\n（矮人戰吼：矮人的戰斧啊！矮人向你衝來了！）
+str_party_greet_enemy_dwarf|矮人的戰斧啊！矮人來啦！
 str_party_greet_friend_rohan|很高興見到你，洛汗之友！
-str_party_greet_enemy_rohan|洛汗驃騎向你挑戰！
+str_party_greet_enemy_rohan|洛汗的騎手來向你挑戰了！
 str_party_greet_friend_mordor|為了邪眼的勝利！
-str_party_greet_enemy_mordor|你的頭顱掛在黑門上一定很好看！
-str_party_greet_friend_isengard|向白掌致敬！
-str_party_greet_enemy_isengard|智慧的主人(薩魯曼)將會很高興聽到你已經掛掉這件事！
-str_party_greet_friend_lorien|你好，公正的羅瑞安之友！
+str_party_greet_enemy_mordor|你們的頭掛在黑門上一定很好看！
+str_party_greet_friend_isengard|白掌萬歲！
+str_party_greet_enemy_isengard|當我把你的屍體帶給聰慧的主人他會很高興吧！
+str_party_greet_friend_lorien|你好，美妙的羅瑞安之友！
 str_party_greet_enemy_lorien|污穢之物，我們將終結你的痛苦！
 str_party_greet_friend_imladris|你好，伊姆拉崔與埃爾隆德之友！
-str_party_greet_enemy_imladris|今天，我們把戰鬥帶向伊姆拉崔之敵！
-str_party_greet_friend_woodelf|你好，幽暗密林西爾凡精靈之友！
-str_party_greet_enemy_woodelf|所有帶著惡意進入幽暗密林之人都將永埋於此！
-str_party_greet_friend_dale|你好，河谷鎮之友！
+str_party_greet_enemy_imladris|今天，我們會把戰鬥帶向伊姆拉崔與美好事物之敵！
+str_party_greet_friend_woodelf|你好，幽暗密林的西爾凡精靈之友！
+str_party_greet_enemy_woodelf|所有帶著惡意進入幽暗密林之人都將永眠於此！
+str_party_greet_friend_dale|你好，令人驕傲的河谷鎮之友！
 str_party_greet_enemy_dale|拔出你的劍吧，我們是河谷鎮之民！
-str_party_greet_friend_harad|歡迎！歡迎！哈拉德人的朋友！
-str_party_greet_enemy_harad|你們的屍體將被沙漠吞噬！
-str_party_greet_friend_rhun|向你問好，東方人部落和多溫尼安的朋友！
-str_party_greet_enemy_rhun|矮人和人類根本及不上我們的勇猛！
-str_party_greet_friend_khand|Jus jívati jyók(古梵文：祝你長壽)，維瑞亞的朋友！你的疤痕榮耀了你。
-str_party_greet_enemy_khand|把你的戰士面具帶上吧，今天你將見到末日！
-str_party_greet_friend_umbar|Ni-yôzi zirbîth kiyad(努曼諾爾語：向你問候)，海盜的朋友！
-str_party_greet_enemy_umbar|要是我們現在是在海上，很快就能看到你在甲板上跳舞了！
-str_party_greet_friend_moria|向白掌致敬！
-str_party_greet_enemy_moria|你很快就會被摩瑞亞獸人割喉了！
+str_party_greet_friend_harad|歡迎，哈拉德人的朋友！
+str_party_greet_enemy_harad|你們的屍體將被碾碎！
+str_party_greet_friend_rhun|你好，東方人部落和多溫尼安的朋友！
+str_party_greet_enemy_rhun|矮人和人類都比不上我們的勇猛啦！
+str_party_greet_friend_khand|願你長壽，維瑞亞的朋友！你的傷疤充滿榮耀。
+str_party_greet_enemy_khand|戴上你的戰士面具吧，今天你將見到末日！
+str_party_greet_friend_umbar|向你問候，海盜的朋友！
+str_party_greet_enemy_umbar|如果我們在海上，你很快就會在踏板上跳舞了！
+str_party_greet_friend_moria|白掌萬歲！
+str_party_greet_enemy_moria|你的喉嚨很快就會被摩瑞亞的半獸人割開了！
 str_party_greet_friend_guldur|為了邪眼的勝利！
-str_party_greet_enemy_guldur|精靈和他們的所有盟友都將在我們的劍下飲恨！
+str_party_greet_enemy_guldur|精靈和他們的朋友都將倒在我們的劍刃下！
 str_party_greet_friend_gundabad|畏懼安格馬的力量吧！
-str_party_greet_enemy_gundabad|我們將屈尊到你身前並在你的屍體上享用盛宴！
-str_party_greet_friend_dunland|你好，驃騎之敵！ (注：洛汗人和登蘭德人是世仇)
-str_party_greet_enemy_dunland|你的房子將被燒毀，而你的家人將被撕碎！
+str_party_greet_enemy_gundabad|我們將降臨在你頭上並用你的內臟開宴會！
+str_party_greet_friend_dunland|你好，騎馬之民的敵人！
+str_party_greet_enemy_dunland|你的家園將被燒毀而你的家人也會被砍倒！
 str_party_greet_friend_beorn|你好，比翁之友！
-str_party_greet_enemy_beorn|你將親身領略熊人們的狂怒！
-str_subfaction_gondor_name_begin|剛 鐸 
-str_subfaction_gondor_name1|佩 拉 格 
-str_subfaction_gondor_name2|多 爾 安 姆 羅 斯 
-str_subfaction_gondor_name3|拉 密 頓
-str_subfaction_gondor_name4|羅 蕯 那 奇 
-str_subfaction_gondor_name5|皮 那 斯 傑 林 
-str_subfaction_gondor_name6|墨 松 德
+str_party_greet_enemy_beorn|讓你嚐嚐熊人的怒火吧！
+str_subfaction_gondor_name_begin|剛鐸
+str_subfaction_gondor_name1|佩拉吉爾
+str_subfaction_gondor_name2|多爾安姆羅斯
+str_subfaction_gondor_name3|拉密頓
+str_subfaction_gondor_name4|羅薩納奇
+str_subfaction_gondor_name5|皮那斯傑林
+str_subfaction_gondor_name6|墨松德
 str_subfaction_gondor_name7|伊錫利恩
-str_default_rumor|戰爭。每個人都在談論戰爭。
+str_default_rumor|戰爭。每個人都在談論戰爭的事。
 str_rohan_rumor_begin|看著我的寶貝們上戰場幾乎傷透了我的心！但沒有他們的話，我們的士兵們就要靠雙腿走了。
 str_rohan_rumor_2|我聽說半獸人吃馬。骯髒的野獸！據說他們還吃囚犯。當然這也很爛。
 str_rohan_rumor_3|中土世界沒有任何馬比洛汗馬好，哪怕是精靈也會從我們這裡買馬！
@@ -1569,7 +1569,7 @@ str_moria_rumor_9|當我們聚集了足夠的部隊，我們會去燒毀精靈�
 str_moria_rumor_10|摩瑞亞食物不多了。餓！必須抓一些人類和精靈！
 str_moria_rumor_11|那 些 人 進 去 了 南 方 的 森 林 。 沒 一 個  出 來。
 str_umbar_rumor_begin|所 有 的 海 洋 將 歸 於 黑 旗 !
-str_umbar_rumor_2|剛鐸已經沒有船讓我們搶了，讓我們去岸上掠奪！
+str_umbar_rumor_2|剛鐸已經沒有船讓我們搶了，讓我們去岸上搜刮吧！
 str_umbar_rumor_3|我們的夜襲者可以在黑暗中和光天化日之下進行戰鬥。 他們帶領我們的偵察派對遠在內陸。
 str_umbar_rumor_4|剛鐸人不會航海！他們都是旱鴨子。
 str_umbar_rumor_5|我們曾經把剛鐸的國王殺了。哈哈，現在他們連給我們殺的國王都沒啦！
@@ -1798,67 +1798,67 @@ str_beorn_rank_9|森林的英雄
 str_tld_introduction|最後之日介紹—你應該前往伊多拉斯。
 str_tld_erebor_dungeon|這附近有死亡的氣息，我應該小心一些。
 str_tld_spear_hit|噢！
-str_fullname_region_unknown|不名之地，中土世界的某地
-str_fullname_region_pelennor|帕蘭諾平原，米那斯提力斯周邊平原，剛鐸王國王都
-str_fullname_region_subfac_pelargir|蘭班寧領，剛鐸王國之地
+str_fullname_region_unknown|無名之地，中土世界的某處
+str_fullname_region_pelennor|帕蘭諾平原，米那斯提力斯周邊的平原，剛鐸王國的首都
+str_fullname_region_subfac_pelargir|蘭班寧領，剛鐸王國的一部分
 str_fullname_region_subfac_dol_amroth|貝爾法拉斯，剛鐸南部的沿海地區
 str_fullname_region_subfac_ethring|林羅谷，剛鐸王國的一個山谷
-str_fullname_region_subfac_lossarnach|羅薩納奇的領地，也被稱為鮮花谷，是剛鐸王國的一部分
-str_fullname_region_subfac_pinnath_gelin|皮那斯傑林，又稱綠丘，剛鐸王國的一部分
-str_fullname_region_subfac_blackroot|拉密頓的領地，剛鐸王國的一部分
-str_fullname_region_n_ithilien|北伊錫利恩，位於剛鐸王國的最東部的地方
-str_fullname_region_c_ithilien|艾明亞南，伊錫利恩中部丘陵，與米那斯提力斯隔大河(安都因河別稱)相望
-str_fullname_region_s_ithilien|南伊錫利恩，剛鐸王國極東之地
-str_fullname_region_druadan_forest|督伊頓森林，Drúedain(伊甸人後裔，野人)位於剛鐸的家
+str_fullname_region_subfac_lossarnach|羅薩納奇領，又稱為鮮花谷，剛鐸王國的一部分
+str_fullname_region_subfac_pinnath_gelin|皮那斯傑林的綠丘陵，剛鐸王國的一部分
+str_fullname_region_subfac_blackroot|拉密頓領，剛鐸王國的一部分
+str_fullname_region_n_ithilien|北伊錫利恩，剛鐸王國最東部的省份
+str_fullname_region_c_ithilien|艾明亞南，伊錫利恩中部的丘陵，在米那斯提力斯大河的對岸
+str_fullname_region_s_ithilien|南伊錫利恩，剛鐸王國最東部的省份
+str_fullname_region_druadan_forest|督伊頓森林，德魯伊甸人的剛鐸森林
 str_fullname_region_firien_wood|費理安森林，耳語森林，剛鐸的橡樹林
-str_fullname_region_anorien|安諾瑞安，辛達林語中的太陽之地，安度因河和白色山脈之間的山谷
+str_fullname_region_anorien|安諾瑞安，太陽之地，安度因河和白色山脈之間的山谷
 str_fullname_region_rohan0|福爾德，洛汗之心
-str_fullname_region_rohan1|東洛汗，洛汗驃騎之地
-str_fullname_region_rohan2|西洛汗，洛汗驃騎之地
-str_fullname_region_rohan3|東谷，洛汗驃騎之地
-str_fullname_region_rohan4|西谷，洛汗驃騎之地
+str_fullname_region_rohan1|東埃姆內特，洛汗的一部份，騎手之地
+str_fullname_region_rohan2|西埃姆內特，洛汗的一部份，騎手之地
+str_fullname_region_rohan3|東谷，洛汗的一部份，騎手之地
+str_fullname_region_rohan4|西谷，洛汗的一部份，騎手之地
 str_fullname_region_rohan5|聖盔谷，白色山脈中的山谷，洛汗領地
-str_fullname_region_the_wold|沃德，洛汗東北部的驃騎之地
-str_fullname_region_gap_of_rohan|洛汗隘口，洛汗的最西邊界，是洛汗和登蘭德之最有爭議的地區。
-str_fullname_region_entwash|樹沐河三角洲，流經洛汗的樹沐河在這裡與安度因河交匯
-str_fullname_region_wetwang|寧道夫，Wetwang(威頓)的沼澤地
-str_fullname_region_dead_marshes|死亡沼澤，達哥拉之戰發生的地方，而現在則是詛咒之地
+str_fullname_region_the_wold|沃德，洛汗東北部的騎手之地
+str_fullname_region_gap_of_rohan|洛汗隘口，洛汗的最西邊界，是洛汗和登蘭德之間爭奪的地區。
+str_fullname_region_entwash|樹沐河河口，流經洛汗的樹沐河在這裡與安度因河交匯
+str_fullname_region_wetwang|寧道夫，威頓的溼地
+str_fullname_region_dead_marshes|死亡沼澤，古代達哥拉大戰的戰場，現在則是受詛咒的地方
 str_fullname_region_isengard|捻苦路納，艾辛格之谷
 str_fullname_region_fangorn|法貢森林，據說這裡的樹會說話
-str_fullname_region_brown_lands|布朗土地，覆蓋艾明莫爾和幽暗密林之間的廣闊空間
-str_fullname_region_dagorlad|達哥拉，在魔多門前，偉大的廣闊的戰役平原
+str_fullname_region_brown_lands|褐地，涵蓋艾明莫爾和幽暗密林之間的廣闊區域
+str_fullname_region_dagorlad|達哥拉，偉大、無樹、廣闊的戰役平原，位於魔多之門前
 str_fullname_region_n_undeep|北河套，安度因河兩個曲流中較大的那個
 str_fullname_region_s_undeep|南河套，安度因河兩個彎曲處中較小的那個
 str_fullname_region_emyn_muil|東艾明莫爾，阿蒙勞之上的石丘陵
 str_fullname_region_misty_mountains|迷霧山脈北部的山麓
-str_fullname_region_lorien|羅斯洛立安，辛達精靈的森林，金色梅隆樹生長的地方。
+str_fullname_region_lorien|羅斯洛立安，辛達精靈的森林，金色梅隆樹生長的地方
 str_fullname_region_anduin_banks|安度因河谷中部，卡爾岩和羅瑞安之間
-str_fullname_region_n_mirkwood|幽暗密林北部茂密的森林，木精靈的故鄉
-str_fullname_region_s_mirkwood|幽暗密林南部，據說被奇怪生物侵擾
+str_fullname_region_n_mirkwood|幽暗密林北部茂密的森林，木精靈的家園
+str_fullname_region_s_mirkwood|幽暗密林南部，據說有奇怪生物出沒
 str_fullname_region_c_mirkwood|幽暗密林中部的林海中，山林人的居處
 str_fullname_region_grey_mountains|灰色山脈的山麓
 str_fullname_region_mordor|魔多，索倫的黑暗王國
-str_fullname_region_dimrill|丁瑞爾河谷，在摩瑞亞山腳下
-str_fullname_region_s_rebor|河谷鎮的領域，位於孤山腳下
-str_shortname_region_unknown|未命名的地區
+str_fullname_region_dimrill|丁瑞爾河谷，位於摩瑞亞山腳下
+str_fullname_region_s_rebor|河谷鎮王國，位於孤山腳下
+str_shortname_region_unknown|無名之地
 str_shortname_region_pelennor|帕蘭諾平原
-str_shortname_region_subfac_pelargir|蘭班寧的領地
+str_shortname_region_subfac_pelargir|蘭班寧領
 str_shortname_region_subfac_dol_amroth|貝爾法拉斯
 str_shortname_region_subfac_ethring|林羅谷
-str_shortname_region_subfac_lossarnach|羅薩納奇的領地
+str_shortname_region_subfac_lossarnach|羅薩納奇領
 str_shortname_region_subfac_pinnath_gelin|皮那斯傑林地區
-str_shortname_region_subfac_blackroot|拉密頓的領地
-str_shortname_region_n_ithilien|北伊西立安
+str_shortname_region_subfac_blackroot|拉密頓領
+str_shortname_region_n_ithilien|北伊錫利恩
 str_shortname_region_c_ithilien|艾明亞南
-str_shortname_region_s_ithilien|南伊西立安
+str_shortname_region_s_ithilien|南伊錫利恩
 str_shortname_region_druadan_forest|督伊頓森林
 str_shortname_region_firien_wood|費理安森林
 str_shortname_region_anorien|安諾瑞安
 str_shortname_region_rohan0|福爾德
-str_shortname_region_rohan1|東洛汗
-str_shortname_region_rohan2|西洛汗
-str_shortname_region_rohan3|東 谷 
-str_shortname_region_rohan4|西 谷 
+str_shortname_region_rohan1|東埃姆內特
+str_shortname_region_rohan2|西埃姆內特
+str_shortname_region_rohan3|東谷
+str_shortname_region_rohan4|西谷
 str_shortname_region_rohan5|聖盔谷
 str_shortname_region_the_wold|沃德
 str_shortname_region_gap_of_rohan|洛汗隘口
@@ -1867,7 +1867,7 @@ str_shortname_region_wetwang|寧道夫
 str_shortname_region_dead_marshes|死亡沼澤
 str_shortname_region_isengard|捻苦路納
 str_shortname_region_fangorn|法貢森林
-str_shortname_region_brown_lands|布朗土地
+str_shortname_region_brown_lands|褐地
 str_shortname_region_dagorlad|達哥拉
 str_shortname_region_n_undeep|北河套
 str_shortname_region_s_undeep|南河套
@@ -1881,153 +1881,153 @@ str_shortname_region_c_mirkwood|幽暗密林中部
 str_shortname_region_grey_mountains|灰色山脈的山麓
 str_shortname_region_mordor|魔多之地
 str_shortname_region_dimrill|丁瑞爾河谷
-str_shortname_region_s_erebor|河谷鎮的領域
+str_shortname_region_s_erebor|河谷鎮王國
 str_trait_title_elf_friend|精靈之友
 str_trait_desc_elf_friend|你受到了精靈們的高度敬重也把你當成信任的盟友。這將降低招募精靈的費用。
-str_trait_title_gondor_friend|攝政王的的祝
+str_trait_title_gondor_friend|攝政王的祝福
 str_trait_desc_gondor_friend|你受到了攝政王迪耐瑟二世的高度敬重也讓你在剛鐸人之中的地位獲得提升。這將降低招募剛鐸人的費用。
-str_trait_title_rohan_friend|國王之信
+str_trait_title_rohan_friend|國王的親信
 str_trait_desc_rohan_friend|你受到了洛汗希優頓王的高度敬重也讓你在洛汗人之中地位獲得提升。這將降低招募洛汗人的費用..
 str_trait_title_brigand_friend|野蠻人冠軍
-str_trait_desc_brigand_friend|您受到服務於索倫的野蠻人部落的高度敬重，這是因為您在他們的競技場中給人們來了深刻的印象。這將降低野蠻人招募費用。
-str_trait_title_blessed|神眷之祝
-str_trait_desc_blessed|您看起來正被力量遠勝大海的存在所祝福，或許這種情況將依然持續一段時間。您不知道為什麼會被祝福，也不知道這個祝福的結果是什麼，但可以確定的是，它就是這樣。
-str_trait_title_reverent|眾望之敬
-str_trait_desc_reverent|您被傳頌為威嚴與智慧的化身。人族和精靈們總喜歡聆聽您的教誨。
-str_trait_title_merciful|仁慈之名
-str_trait_desc_merciful|你因仁慈的對待敵人聲名遠播。然而，有些強硬派對你的仁慈心存異議，部隊的士氣因此受到影響。但從好的方面來看，你的仁慈仍然被視作是高貴人格的體現， 你在影響力方面獲得獎勵。
-str_trait_title_bravery|臨危之勇
-str_trait_desc_bravery|您在巨大危難中挺身而出，被眾人傳頌為勇者。您的英姿深深吸引著您的部下，讓他們每週都會獲得士氣獎勵。
-str_trait_title_oathkeeper|守信之誓
-str_trait_desc_oathkeeper|你曾莊嚴宣誓並最終將其兌現。所以，人們都稱讚您一諾千金。您的影響力將每週提高。
-str_trait_title_oathbreaker|破信之誓
-str_trait_desc_oathbreaker|你曾莊嚴宣誓，但卻沒有將其兌現。所以，您被認作是言過其實之人。您的影響力將每週降低。
-str_trait_title_orc_pit_champion|群獸之冠
-str_trait_desc_orc_pit_champion|您在殘酷的獸人之間的戰鬥中存活下來，並獲得狂暴勇士的稱號。這樣的實力讓追隨您的部下獸血沸騰，並使他們每週都會獲得士氣獎勵。
-str_trait_title_despoiler|三光之掠
-str_trait_desc_despoiler|您每到一處，總是留在隊伍後面肆意地破壞，您的這種暴行在隊伍中廣為流傳。這樣的舉止被您服務的黑暗勢力高度讚揚。您的影響力將每週提高。
-str_trait_title_accursed|神怒之咒
-str_trait_desc_accursed|您看起來正被力量遠勝大海的存在所忿怒。您的追隨者們也感應到這些，並害怕在您的身邊停留。他們每週都會士氣低沉。
-str_trait_title_stealthy|潛行之影
-str_trait_desc_stealthy|您學到了秘密潛行的不凡技藝。您獲得了每次秘密行動任務都能保證的潛行級別。
-str_trait_title_berserker|狂熱之血
-str_trait_desc_berserker|沒有盔甲戰鬥中，你的兇猛意志變得像鐵一樣。\n在輕甲戰鬥中，每殺一個敵人都讓你充滿活力。
+str_trait_desc_brigand_friend|你受到臣服於索倫的野蠻人部落的高度敬重因為你在他們的競技場中給人們來了深刻的印象。這將降低招募野蠻人的費用。
+str_trait_title_blessed|受到祝福的
+str_trait_desc_blessed|你似乎正被大海彼端的力量所祝福，甚至來自更遠之處。你不知道為什麼會受到祝福也不知道這代表什麼但確定就是這樣了。
+str_trait_title_reverent|受敬重的
+str_trait_desc_reverent|你被傳頌為威嚴與智慧的化身。人類和精靈們都更願意聽你的諫言。
+str_trait_title_merciful|仁慈的
+str_trait_desc_merciful|你因仁慈的對待敵人聲名遠播。有些強硬派對你的仁慈心存異議所以部隊的士氣因此受到影響。但，對智者而言，你的仁慈仍然被視作是高貴人格的體現因此你獲得影響力加成。
+str_trait_title_bravery|勇敢的
+str_trait_desc_bravery|你在巨大危難中挺身而出。被眾人傳頌為勇者。你的英姿鼓舞了你的人馬讓他們每週都會獲得士氣加成。
+str_trait_title_oathkeeper|守誓者
+str_trait_desc_oathkeeper|你曾發過嚴峻的誓言並活著將其兌現。所以人們都稱讚你言而有信。你將每週獲得影響力加成。
+str_trait_title_oathbreaker|背誓者
+str_trait_desc_oathbreaker|你曾發過嚴峻的誓言但沒有成功將其兌現。所以人們都說你言過其實。你將每週受到影響力減益。
+str_trait_title_orc_pit_champion|半獸人鬥坑冠軍
+str_trait_desc_orc_pit_champion|你在半獸人的戰鬥比賽中存活下來並獲得身為殘暴戰士的名聲。這樣的力量讓你的黑心追隨者們又敬又怕並使他們每週都會獲得士氣加成。
+str_trait_title_despoiler|掠奪者
+str_trait_desc_despoiler|你得到了在所到之處肆虐破壞的名聲。這種行為受到你所服務的黑暗勢力高度讚賞所以你會每週獲得影響力加成。
+str_trait_title_accursed|受詛咒的
+str_trait_desc_accursed|你似乎正被大海彼端的力量所詛咒。你的追隨者也感受到厄運並害怕待在你身邊。他們會每週受到士氣減益。
+str_trait_title_stealthy|潛行者
+str_trait_desc_stealthy|你學到了秘密潛行的不凡技藝。你每次秘密行動都會獲得潛行加成。
+str_trait_title_berserker|狂戰士
+str_trait_desc_berserker|在許許多多丟棄鎧甲的戰鬥後你的兇猛意志變得跟鐵一樣。在輕裝戰鬥中，每殺一個敵人都會讓你充滿活力。
 str_trait_title_infantry_captain|步兵隊長
-str_trait_desc_infantry_captain|您掌握了統領步兵部隊的不凡技能。在嚴格而系統的訓練下，士兵們獲得一些細小的體質改善，這將體現在每一場戰鬥中他們受傷的時候。
-str_trait_title_archer_captain|射箭隊長
-str_trait_desc_archer_captain|您掌握了統領射手部隊的不凡技能。在嚴格而系統的訓練下，士兵們獲得一些細小的體質改善，這將體現在每一場戰鬥中他們受傷的時候。
+str_trait_desc_infantry_captain|你掌握了指揮步兵部隊的不凡技藝。在嚴格的特訓下這些部下會獲得少量的生命值加成，每場戰鬥一次。
+str_trait_title_archer_captain|弓兵隊長
+str_trait_desc_archer_captain|你掌握了指揮遠程武器部隊的不凡技藝。在嚴格的特訓下這些部下會獲得少量的生命值加成，每場戰鬥一次。
 str_trait_title_cavalry_captain|騎兵隊長
-str_trait_desc_cavalry_captain|您掌握了統領騎乘部隊的不凡技能。在嚴格而系統的訓練下，士兵們獲得一些細小的體質改善，這將體現在每一場戰鬥中他們受傷的時候。
-str_trait_title_command_voice|命令之聲
-str_trait_desc_command_voice|您豐富的臨陣指揮經驗成就了您周身環繞著的名為權威的光環。這將降低戰場指揮所需要的影響力。
+str_trait_desc_cavalry_captain|你掌握了指揮騎乘部隊的不凡技藝。在嚴格的特訓下這些部下會獲得少量的生命值加成，每場戰鬥一次。
+str_trait_title_command_voice|指揮之聲
+str_trait_desc_command_voice|你豐富的臨陣指揮經驗讓你身環繞著權威的光環。這將降低在戰場指揮軍隊所需要的影響力。
 str_trait_title_foe_hammer|破敵之錘
-str_trait_desc_foe_hammer|您斬殺了敵人大量的高級軍官，甚至贏得了敵方對您尊敬。您指揮的部隊每週會獲得士氣獎勵，而您豐富的作戰經驗也使您的戰鬥技巧飽受磨練。
-str_trait_title_battle_scarred|戰鬥傷疤
-str_trait_desc_battle_scarred|多年的征戰在您身上留下了許多無法磨滅的傷痕，它向人們訴說著您傳奇般的過去。傷疤和肉結使您更有效的避免再次受傷。您駭人的容貌讓您的追隨者深信 - 您的戰鬥經驗是如此的豐富，讓他們每週都會獲得士氣獎勵。
-str_trait_title_fell_beast|野獸
-str_trait_desc_fell_beast|你 的 皮 膚 刻 著 無 數 戰 鬥 的 傷 疤，你 的 邪 惡 意 志 同 樣 堅 硬 而 不 屈 不 撓。 即 使 按 照 半 獸 人 和 食 人 妖 的 標 準，你 也 被 認 為 是 一 個 墮 落 而 危 險 的 野 獸。 當 你 到 戰 場 時，那 些 為 你 服 務 的 人 會 高 興 地 呼 喊 你 的 名 字。 你 是 戰 爭 的 化 身，你 幾 乎 沒 有 恐 懼。
-str_trait_title_butcher|屠 夫
-str_trait_desc_butcher|經驗的磨練讓你可以從敵人身上完美割下每一塊肉。 每次屠殺一名囚犯時，你都會獲得額外的一磅肉。 每次戰鬥後你都會得到更多的人肉。
-str_trait_title_well_travelled|好好旅行
-str_trait_desc_well_travelled|在石頭鋪砌的道路和長滿青苔的動物小徑上，在最高的山脈和最深的山谷裡，你發現了隱藏的地方，看到了早已被遺忘的奇蹟。根據你的經驗，你已經學會在敵人看到你之前發現他們，並為你的部隊提供最簡單的路線。
+str_trait_desc_foe_hammer|你斬殺了許多的敵人偉大隊長到甚至贏得了敵方對你尊敬的程度。你指揮的部隊每週會獲得士氣加成。你豐富的作戰經驗也磨練了你的戰鬥技巧。
+str_trait_title_battle_scarred|戰鬥的傷疤
+str_trait_desc_battle_scarred|長久的征戰在你身上留下了許多傷痕向人們訴說著你的傳奇。傷疤和結痂與豐富的經驗提高了你對傷害的忍受度。你駭人的容貌則讓你的追隨者確信你豐富的戰鬥經驗。他們每週都會獲得士氣加成。
+str_trait_title_fell_beast|暴虐的野獸
+str_trait_desc_fell_beast|你的皮上刻著無數戰鬥的傷疤而你的邪惡意志也同樣堅硬不屈不撓。即使按照半獸人和食人妖的標準，你也被視為一個暴虐而危險的野獸。當你到達戰場時那些為你服務的人會高興地呼喊你的名字。你是戰爭的化身而你也幾乎沒有恐懼。
+str_trait_title_butcher|屠夫
+str_trait_desc_butcher|經驗的磨練讓你可以從敵人身上完美割下每一塊肉。 每次屠殺一名囚犯時你都會獲得額外的一磅鮮肉。 每次戰鬥後你也都會得到更多的人肉。
+str_trait_title_well_travelled|遊歷豐富的
+str_trait_desc_well_travelled|無論是在石頭鋪砌的道路和長滿青苔的動物小徑上，或是在最高的山脈和最深的山谷裡，你都看過了隱藏的地方與見證了早已被遺忘的奇蹟。根據你的經驗，你學會在敵人看到你之前發現他們，並為你的部隊找到最簡單的路線。
 str_trait_title_bear_shape|變身者
 str_trait_desc_bear_shape|據說比翁一族的人擁有變形成熊的能力。自你與熊的親緣中你發現了自己也有那個天賦。
 str_wound_head|頭部遭到重擊
 str_wound_chest|一些肋骨斷裂
 str_wound_arm|一隻重傷的手臂
 str_wound_leg|一條重傷的腿
-str_gondor_gift0|鮮果和葡萄酒
-str_gondor_gift1|鮮豔染布
-str_gondor_gift2|古塚和家譜
-str_gondor_gift3|香料和香
-str_gondor_gift4|原牛戰角
+str_gondor_gift0|新鮮水果和葡萄酒
+str_gondor_gift1|鮮豔的染布
+str_gondor_gift2|古代鉅著和家譜
+str_gondor_gift3|香料和線香
+str_gondor_gift4|野牛戰角
 str_dwarf_gift0|烈啤酒和岩鹽
 str_dwarf_gift1|硬鏟子和斧頭
 str_dwarf_gift2|豎琴和長笛
-str_dwarf_gift3|金線和寶石刺繡長袍
+str_dwarf_gift3|用金線和寶石刺繡的長袍
 str_dwarf_gift4|不凡的首飾
 str_rohan_gift0|蜂蜜酒和蘋果酒
-str_rohan_gift1|刺繡外衣和嵌銀腰帶
-str_rohan_gift2|金項圈和精雕角杯
+str_rohan_gift1|刺繡的外衣和嵌銀的腰帶
+str_rohan_gift2|金飾環和精雕的角杯
 str_rohan_gift3|優良馬具
-str_rohan_gift4|洛 汗 馬
-str_mordor_gift0|草 皮 啤 酒
-str_mordor_gift1|下 僕 油
-str_mordor_gift2|魔 多 黑 蠅 卵
-str_mordor_gift3|末 日 火 山 黑 曜 石
-str_mordor_gift4|農 奴
-str_isengard_gift0|乾 人 肉
-str_isengard_gift1|黑 鐵 鍊
-str_isengard_gift2|酷 刑 工 具
-str_isengard_gift3|煉金玻璃品
-str_isengard_gift4|薩魯曼的小指環
-str_lorien_gift0|種子，堅果和漿果
-str_lorien_gift1|冷燈和強索
-str_lorien_gift2|蘭 巴 斯 精 靈 餅 乾 
-str_lorien_gift3|銀帶和胸針
+str_rohan_gift4|洛汗馬
+str_mordor_gift0|弱泥炭啤酒
+str_mordor_gift1|奴隸油
+str_mordor_gift2|魔多蒼蠅卵
+str_mordor_gift3|末日火山黑曜石
+str_mordor_gift4|農奴
+str_isengard_gift0|人肉乾
+str_isengard_gift1|黑鐵鏈
+str_isengard_gift2|拷打工具
+str_isengard_gift3|玻璃煉金用具
+str_isengard_gift4|薩魯曼的小戒指
+str_lorien_gift0|種子、堅果和漿果
+str_lorien_gift1|冷掉的油燈和堅固的繩索
+str_lorien_gift2|蘭巴斯
+str_lorien_gift3|銀制的腰帶和胸針
 str_lorien_gift4|精靈斗篷
-str_imladris_gift0|白麵包和草藥油
+str_imladris_gift0|白麵包和藥草奶油
 str_imladris_gift1|水晶玻璃皿
 str_imladris_gift2|米盧沃酒
-str_imladris_gift3|刺繡戰旗和嵌銀號角
-str_imladris_gift4|草藥和藥膏
-str_woodelf_gift0|軟動物皮
-str_woodelf_gift1|箭頭和翎羽
-str_woodelf_gift2|狩 獵 長 槍
-str_woodelf_gift3|受訓猛禽
+str_imladris_gift3|刺繡的戰旗和嵌銀的號角
+str_imladris_gift4|藥草和藥膏
+str_woodelf_gift0|柔軟的動物皮
+str_woodelf_gift1|箭頭和箭羽
+str_woodelf_gift2|狩獵長槍
+str_woodelf_gift3|受馴的獵鳥
 str_woodelf_gift4|赤金酒杯
-str_dale_gift0|一半珍貴寶石一半玻璃珠
-str_dale_gift1|英雄史詩
-str_dale_gift2|矮人紅酒
+str_dale_gift0|姑且有價值的寶石和玻璃珠
+str_dale_gift1|英雄史詩手抄本
+str_dale_gift2|多溫尼安葡萄酒
 str_dale_gift3|豪華毛皮
-str_dale_gift4|複雜器具
+str_dale_gift4|複雜的玩具和樂器
 str_harad_gift0|無花果和石榴
-str_harad_gift1|戰士頸環
-str_harad_gift2|象牙雕
+str_harad_gift1|戰士項鍊
+str_harad_gift2|雕刻的象牙
 str_harad_gift3|聖蛇酒
 str_harad_gift4|金蛇雕像
 str_rhun_gift0|皮水袋
-str_rhun_gift1|紋身墨
-str_rhun_gift2|鹿角飾
+str_rhun_gift1|紋身用的墨
+str_rhun_gift2|有牛角和鹿角的頭飾
 str_rhun_gift3|馬鬃鞭
-str_rhun_gift4|馬肉和牛奶
+str_rhun_gift4|馬肉和馬奶
 str_khand_gift0|各色香料
 str_khand_gift1|絲綢卷
-str_khand_gift2|獵 鷹
+str_khand_gift2|獵鷹
 str_khand_gift3|水鋼錠
 str_khand_gift4|神聖戰士面具
 str_umbar_gift0|牡蠣和海鹽
 str_umbar_gift1|鯨骨梳和魚鉤
 str_umbar_gift2|娛樂奴隸
-str_umbar_gift3|南海航圖
-str_umbar_gift4|神秘美諾爾示意圖
-str_moria_gift0|爛矮人麥酒
-str_moria_gift1|煤 炭
-str_moria_gift2|發光土蟲
-str_moria_gift3|黑洞珍珠
+str_umbar_gift3|南海的航海圖
+str_umbar_gift4|神秘的美諾爾人示意圖
+str_moria_gift0|腐敗的矮人麥酒
+str_moria_gift1|煤炭
+str_moria_gift2|發光的地底蟲子
+str_moria_gift3|黑色的洞穴珍珠
 str_moria_gift4|矮人廢金屬
 str_guldur_gift0|黑酒
-str_guldur_gift1|酷刑毒藤
-str_guldur_gift2|奴隸籠車
-str_guldur_gift3|巨 型 蜘 蛛 蛋
-str_guldur_gift4|黑巫術之塚
-str_gundabad_gift0|尖銳骨釘
+str_guldur_gift1|拷打用的毒藤蔓
+str_guldur_gift2|有輪的奴隸籠子
+str_guldur_gift3|巨型蜘蛛蛋
+str_guldur_gift4|黑巫術鉅著
+str_gundabad_gift0|尖銳的骨針
 str_gundabad_gift1|保護性戰漆
-str_gundabad_gift2|熟矮人油
+str_gundabad_gift2|熬煮過的矮人油
 str_gundabad_gift3|木乃伊屍像
 str_gundabad_gift4|黑座狼
-str_dunland_gift0|臭山羊芝士
-str_dunland_gift1|燧石祭刀
+str_dunland_gift0|臭山羊起司
+str_dunland_gift1|燧石獻祭刃
 str_dunland_gift2|青銅臂環
-str_dunland_gift3|山 羊
-str_dunland_gift4|狼 骨 與 狼 爪
-str_beorn_gift0|蜂 蜜 蛋 糕 與 蜂 蜜 酒
+str_dunland_gift3|山羊
+str_dunland_gift4|狼頭骨和狼爪
+str_beorn_gift0|蜂蜜蛋糕和蜂蜜酒
 str_beorn_gift1|蜂蠟和麻布
-str_beorn_gift2|蜂 巢
+str_beorn_gift2|蜂巢
 str_beorn_gift3|琥珀項鍊
 str_beorn_gift4|訓練有素的矮種馬
 str_cmenu_follow|陪伴
-str_reset_to_default|重置為默認
+str_reset_to_default|重置為預設
 str_done|完成
 str_gondor1|剛鐸1
 str_gondor2|剛鐸2
@@ -2124,7 +2124,7 @@ str_npc20_intro|等一下。你。我見過你。我認得你的臉。我曾經�
 str_npc21_intro|滾開，小蒼蠅，'不然窩就打扁尼！啦啊啊啊！(*食人妖對你露出她的獠牙。*)
 str_npc22_intro|嘿，{playername}。 Mae govannen（辛達林語：很高興見到你！）
 str_npc23_intro|離我遠點，陌生人！我可不想和你說話！
-str_npc24_intro|奇力，德瓦林之子，樂意效勞！
+str_npc24_intro|奇力，德瓦林之子，聽候差遣！
 str_npc25_intro|歡迎來到河谷鎮，旅行者！有什麼我可以做的嗎？
 str_npc26_intro|噓！如果你向警衛揮手，我就把你的內臟切下來，餵給座狼吃！
 str_npc27_intro|你 !
@@ -2171,14 +2171,14 @@ str_npc27_backstory_b|我是艾辛格的一名狼騎兵，也是一名追踪者�
 str_npc18_backstory_c|於是我就在這裡了，被人咒罵和唾棄，因為比嘲笑我的臭狗們更強大所以被定罪！讓我自由吧，大人。讓我自由，為我申冤-那我的力量將屬於你。我的劍將屬於你。我的命將屬於你！
 str_npc19_backstory_c|自然，代格拉夫酋長和其他人都不希望給我獲得榮耀的機會，因為如果我在戰場上做了大事，那就會給我的繼承權帶來份量。人們就會湧到我的旗幟下！你是個名聞遐邇的人，指揮官。如果你讓我在你的旗幟下服役，我將會為你做出大事。
 str_npc20_backstory_c|淪亡的努曼諾爾帝國呦，你現在究竟在哪？消逝了，全都消逝了...那曾經有過光明，我們國家勝過一切的榮光，現在只剩下陰影。我美麗的家園現在只知道大海永恆的寂靜。但我心裡仍充滿著怒火，讓黑暗的野獸在體內狂奔。我知道你和你同胞想都沒想過的大法術。現在，聽好了！你會像你該做的一樣，懇求我的援助，還是像蟲子一樣，偷偷摸摸的爬走？快點決定！
-str_npc21_backstory_c|聽好了，小傢伙！如果尼真的是個偉大的首領，尼應該可以跟老闆談談把窩欠的債付清吧？窩想窩可以加入尼的小隊。看看世界，吃點羊...(*她舔了舔嚇人的獠牙。*)
+str_npc21_backstory_c|聽好了，小傢伙！如果尼真的是個偉大的首領，尼應該可以跟老闆談談把窩欠的債付清吧？窩想窩可以加入尼的小團隊。看看世界，吃點羊...(*她舔了舔嚇人的獠牙。*)
 str_npc22_backstory_c|然而，如果羅斯洛立安的敵人撤退了的話，我倒是會考慮加入你的隊伍一段時間，{playername}。我可以感覺到，我們的命運在這場戰爭中是相互交匯的。
 str_npc23_backstory_c|我猜你並沒有理解我剛剛說的話 - ？鑑於你正在為戰事做準備但你一定旅行了很遠很廣，那你之前見過其他大森林麼你可以帶我去那裡麼？
 str_npc24_backstory_c|然而我們在參戰的問題上有一點點遲鈍，這和先祖留下的戰士傳統不一樣。我聽說你在旅行中的行動遠多於我們，而且你的目的也與矮人友善。要知道一個精於戰鬥的矮人會大大提高你的生存機會。
 str_npc25_backstory_c|我聽說在我們這兒還有其他地方，戰事正在升級從你盔甲上的痕跡來看，你顯然已經遇險過多次了我想我卑微的技能能夠很好地幫助你的部隊;當然，這是為了所有人的明天。
 str_npc26_backstory_c|我是一名好戰的強獸人，也是一名狂戰士！凡是殺人需要的技能我都會。我曾為白掌效忠，但現在看來白手要把我推進火坑。^^我想跟你走，在艾辛格下僕們專心磨牙的時候去殺南方的人類。
 str_npc27_backstory_c|或許你是我下一位主人！
-str_npc18_backstory_later|我想，我很幸運，因為魯薩昆大人去別的地方忙了。他的手下把我放著讓我在這裡腐爛。但我的命運不該是作為一個囚犯死去！你能讓我像個戰士一樣堂堂正正的死在戰場上嗎？
+str_npc18_backstory_later|我想，我很幸運，因為魯薩昆大人去別的地方忙了。他的行政官把我放著讓我在這裡腐爛。但我的命運不該是作為一個囚犯死去！你能讓我像個戰士一樣堂堂正正的死在戰場上嗎？
 str_npc19_backstory_later|那邊的！你回來了，我就知道你會。我被忌妒的酋長們害的無所事事。讓我們談談吧，指揮官！我會跟隨你，並在你的行列中贏得自己的聲望。
 str_npc20_backstory_later|你仍在攪亂我的夢！為何讓我不得安寧？我夢裡的眼睛看的又深又遠。即使在多爾哥多這裡我仍看見你事蹟的影像。我說啊：如果你夠睿智的話，你現在就該再次請求我的援助了。
 str_npc21_backstory_later|瞧瞧哪隻小貓回來了！尼，過的不錯啊，對吧？看來是在外面過的很快活，不像窩被鏈在這該死的石頭上吧？真好啊！尼跟老闆談談窩的事吧？遲來，總比沒來好。
@@ -2292,12 +2292,12 @@ str_npc18_personalityclash_speech|大人，如果你認為瓦爾凡有當一個�
 str_npc19_personalityclash_speech|指揮官，我很想知道你究竟為何還留著像烏弗塔克這樣的低等生物。當然，半獸人渣滓是我們這種真正戰士的擋箭牌，但他在營地裡四處遊蕩向人們和半獸人發出命令，就好像他有權威一樣。如果我把他殺掉希望你不會太想念他。或許我該把他那難看的鼻子切掉。
 str_npc20_personalityclash_speech|那個南方人萊克亞達應該學會禮貌，學會謙遜，他的舌頭無禮，他的舉止也太傲慢了，我不管他是不是同胞中的一名隊長-怎麼說，他們都是個愚蠢的低等種族，他們對於偉大的認知很慢，也不懂得向上人鞠躬！如果他知道我能對他做的事中的一小部分...
 str_npc21_personalityclash_speech|天啊，首領，那個臭老太婆是不是有點瘋了啊，對不對？尼能看得出她用那口釜煮了太多隻烏鴉了，就連窩帶來的那隻也被她的命令拿走了。而且她每次都用鼻孔看窩好像窩是地上的屎一樣，她甚至還沒窩的肚臍高呢！真是，搞的窩好想讓她的臉嘗嘗窩的拳頭。說起來窩看過這種類型的人，是的窩有。有她這種人在身旁，尼應該多留心注意背後，不會錯的。
-str_npc22_personalityclash_speech|我提到我討厭{s11}嗎？
+str_npc22_personalityclash_speech|我提過我討厭{s11}嗎？
 str_npc23_personalityclash_speech|{playername}，我剛剛看到{s11}公然從一個滿是雛鳥的鳥巢旁邊經過。他的笨拙摧毀了那群無辜生命。
 str_npc24_personalityclash_speech|{s11}大人在戰鬥中表現得很好，但我不知道他是否利用頭髮閃瞎他的敵人？還是說他們對他的名聲和傲慢風度感到敬畏？
 str_npc25_personalityclash_speech|指揮官，我必須對{s11}提出投訴。他不停的糾纏我，讓我給他釀造某種名為‘綠色仙女’的東西。
-str_npc26_personalityclash_speech|我提到我討厭{s11}嗎？
-str_npc27_personalityclash_speech|我提到我討厭{s11}嗎？
+str_npc26_personalityclash_speech|我提過我討厭{s11}嗎？
+str_npc27_personalityclash_speech|我提過我討厭{s11}嗎？
 str_npc18_personalityclash_speech_b|大人，我想問一下，瓦爾凡的身價對你來說是多少？如果我殺了他或使他殘廢，我會付錢給你作為補償。剛剛戰鬥之後他一直斜眼看我，舔著他那骯髒的嘴唇。如果他再那樣看著我，我就把他的眼球挖出來餵給他。
 str_npc19_personalityclash_speech_b|正如我所料，那自稱烏弗塔克的懦弱半獸人在戰場上沒什麼價值。 他躲在隊伍後面，很少幫助他的同伴。我認為，他實在幫不上忙-無論是你的大業-或我的王位繼承之戰都是。
 str_npc20_personalityclash_speech_b|指揮官，如果萊克亞達的雙手對我們沒有用處，我應該將它們從他身上摘下來。你知道我習慣於在戰鬥結束後在倒下的敵人周圍散步-臨死之前的恐懼和痛苦對於法術很有幫助，儘管你們都不懂吧。 然而他，那個黝黑的南方人，悄悄地給正在被恐懼和痛苦折磨中的人解脫。他內心的那點慈悲無法讓我沐浴在人們死前的哀號！我想知道，他的寶貴榮譽對你究竟有多重要？
@@ -2312,12 +2312,12 @@ str_npc18_personalityclash2_speech|大人，葛魯姆不僅是一隻奸詐的野
 str_npc19_personalityclash2_speech|我討厭 {s11}
 str_npc20_personalityclash2_speech|每當我見到弗達米爾，無名的怒火就會從我心中升起。不，不，不是他做了什麼。但他和他的同胞，昂巴的海狗們，對不起他們流著的血脈。他們竟敢說自己是古代西方人的繼承者-當然，他們說的是'努美諾爾'，根本就不懂嘛。我想，弗達米爾的血管裡根本連一滴正統的血都沒有！或許，如果你能把他交給我，我可以自己找看看...
 str_npc21_personalityclash2_speech|窩在想啊，首領-要怎樣才能殺死女巫呢？窩是說，不會被變成蛞蝓的那種殺法。那隻老蝙蝠又用邪惡的眼神看窩搞的窩整天雞皮疙瘩。連體內也是！窩很喜歡在打架時打爛腦袋或打破盾牌，但她在沒人注意的時候，對著窩沒打爛的那些腦袋做的事？！窩可不會玩食物，至少不會那樣玩。那人，真讓窩毛骨悚然。
-str_npc22_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc23_personalityclash2_speech|我提到我討厭{s11}嗎？
+str_npc22_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc23_personalityclash2_speech|我提過我討厭{s11}嗎？
 str_npc24_personalityclash2_speech|一場不錯的小衝突，是吧隊長？要是沒有精靈女士{s11}那些喪氣的行為就更好了。
-str_npc25_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc26_personalityclash2_speech|我提到我討厭{s11}嗎？
-str_npc27_personalityclash2_speech|我提到我討厭{s11}嗎？
+str_npc25_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc26_personalityclash2_speech|我提過我討厭{s11}嗎？
+str_npc27_personalityclash2_speech|我提過我討厭{s11}嗎？
 str_npc18_personalityclash2_speech_b|葛魯姆那個畸形的東西最好護著他的脖子，不然我就要割開它了！我正要斬殺敵人時，他竟然跑到我面前撿了尾刀。然後他還膽敢轉身過來對我冷笑！他和他的同胞最好記住自己就是生來為我們服務的！無恥的雜種狗。
 str_npc19_personalityclash2_speech_b|我討厭{s11}。
 str_npc20_personalityclash2_speech_b|他不可能是我們中的一員。不，像弗達米爾那樣絕對不可能。不，我們的血脈不可能變得這麼稀薄，我們的血統不可能衰弱成這樣！難道你們都沒注意到他講不出幾句我們真正的語言嗎，看不出他的樣貌比起我失落家園的人更像是來自哈拉德威治嗎？我們曾有過英雄-以速度和力量跟星辰之子抗衡的，英雄啊！弗達米爾又慢，又笨拙，還...不，我能感到西方吹來的冷風。令我發寒...令我發寒啊！
@@ -2341,13 +2341,13 @@ str_npc27_personalitymatch_speech|我提到過我喜歡{s11}嗎？
 str_npc18_personalitymatch_speech_b|大人，讓萊克亞達這樣的戰士在你的旗幟下戰鬥真是個正確的決定。我原以為南方人都是軟弱頹廢的，跟西方人差不多，但如果他們之中有更多像他這種人，那西方的好日子就所剩無幾了。
 str_npc19_personalitymatch_speech_b|指揮官，瓦爾凡和我昨晚圍著營火分享了一袋酒。我好好的諮詢了他，因為他記得先人的事蹟，每人都該如此。我不確定是否，如他所說，我們祖先的靈魂與我們同在。確實，我不喜歡這種想法。但一個王必須知道他血統的故事，無論是父母或更早的先祖。瓦爾凡是個懂這點的人。
 str_npc20_personalitymatch_speech_b|我從來沒見過像博扎格這樣的'半獸人'。噢，我承認他長的不好看，但多年下來他是我遇到第一個除了單單潛行、躲藏和殺戮之外還能做其他事的。他粗糙的雙手出奇的靈巧。是的，真的出奇靈巧... 或許他比我原先認為的能學到更多關於筋骨的技藝。
-str_npc21_personalitymatch_speech_b|那個傻呼呼的烏弗塔克一直想溜走，但窩都會把他抓回來，對的窩會。感覺就好像以前那些好日子呢，首領。當窩還有一票小子服侍窩的那時。或更以前在山裡，窩那些孩子還在時--伯特、比爾和湯姆...好吧 。那些日子都過去了。咦，那個死小鬼跑哪去了？烏弗塔克！過來，別躲啊廢物！
-str_npc22_personalitymatch_speech_b|我喜歡 {s11}。
+str_npc21_personalitymatch_speech_b|那個傻呼呼的烏弗塔克一直想溜走，但窩都會把他抓回來，對的窩會。感覺就好像以前那些好日子呢，首領。當窩還有一團小子服侍窩的那時。或更以前在山裡，窩那些孩子還在時--伯特、比爾和湯姆...好吧 。那些日子都過去了。咦，那個死小鬼跑哪去了？烏弗塔克！過來，別躲啊廢物！
+str_npc22_personalitymatch_speech_b|我喜歡{s11}。
 str_npc23_personalitymatch_speech_b|我在想他有多大年齡，或許比我老上十幾個世紀？算了，您不會明白的。
 str_npc24_personalitymatch_speech_b|{s11}和她的河谷鎮族人哪怕達不到矮人戰士的標準，但還時這場戰爭中我們最堅定的盟友。要我說，他們是人類中朋友和伴侶的最好選擇。
 str_npc25_personalitymatch_speech_b|河谷鎮人非常尊重堅強的孤山矮人。儘管我們有著不同的種族和風俗，但他們依舊是我們的好友和值得託付後背的伙伴，
-str_npc26_personalitymatch_speech_b|我喜歡 {s11}。
-str_npc27_personalitymatch_speech_b|我喜歡 {s11}。
+str_npc26_personalitymatch_speech_b|我喜歡{s11}。
+str_npc27_personalitymatch_speech_b|我喜歡{s11}。
 str_npc18_retirement_speech|我認為我想安定下來建立家庭，我不知道，去做刺繡或其它事吧。再見。
 str_npc19_retirement_speech|聽著，怪人到處聲稱自己是王家的私生子並不是政府體制的基礎。
 str_npc20_retirement_speech|也許憤怒不是對的。 我們所需要的是愛。 為什麼我們不能好好相處？
@@ -2401,7 +2401,7 @@ str_npc27_home_description_2|米那斯魔窟，戒靈那裡整天喝酒，哈哈
 str_npc18_home_recap|我曾是一個被關起來的囚犯，因為在訓練坑裡斬殺了魯薩昆的一個兒子而被判死刑。他們三人一起朝我攻來，而我打敗了他們，但其中一個因傷而死。然後你為我說了情，並讓我重獲自由。現在我會為你而殺，必要時也會為你而死。
 str_npc19_home_recap|我發誓，我有洛汗王家之血-范哲爾王是我的祖父，即使他從來沒有娶我的祖母做老婆。登蘭德的酋長們忌妒我，並讓我遠離戰鬥害我不能做大事，無法贏得榮耀和人望到我的旗幟下。不過你讓我加入了你的旗幟下。現在我拭目以待自己坐在伊多拉斯我應得王位上的那天。
 str_npc20_home_recap|還有什麼能說的，指揮官？我在多爾哥多的地牢裡精通了我的法術。我夢中的眼睛看的又深又遠，我看見了你和你在這場戰爭中的作為。看來我必須盡我所能的援助你，這樣西方的力量才能衰弱而東方的力量才能崛起統治世界至其末日來臨。
-str_npc21_home_recap|窩以前在山裡帶著一隊正當的掠奪者過著快活的日子，直到有天窩喝太多並跟那些剛達巴來的作弊鬼把自己的下半輩子賭掉了。
+str_npc21_home_recap|窩以前在山裡帶著一團正當的掠奪者過著快活的日子，直到有天窩喝太多並跟那些剛達巴來的作弊鬼把自己的下半輩子賭掉了。
 str_npc22_home_recap|我會滿足你的好奇心的，但別在這兒逗留了。
 str_npc23_home_recap|我生長在幽暗密林中，是一位西爾凡精靈。我們族人的木工技術無可匹敵。
 str_npc24_home_recap|我是都靈一族的德瓦林之子。
@@ -2428,7 +2428,7 @@ str_rohan_guildmaster_companion_player_ask|離開了希優頓王，我尋求勇�
 str_rohan_guildmaster_companion_none|我還比較希望你是來提供援助，而不是來尋求的。馬匹、刀劍、長槍-這些我們現在都很缺。至於你的問題：去兵營吧。在那你能找到我們願意騎乘出發的同胞們，即使他們-大多都是連鬍子也沒長的年輕人，或沒經驗的牧民和牧羊人。
 str_rohan_guildmaster_companion_player_none_ok|我也為你的人民著想，統領。告別。
 str_rohan_guildmaster_player_found_ok|我覺得這個建議不錯。健康與你同在！
-str_rohan_edoras_guildmaster_companion|確實，可能有。這黑暗的時代讓我們的女人跟男的一起騎馬出征-但我們既無畏又高尚的伊歐玟女士，眾所愛戴的她，騎馬打仗就像任何元帥一樣。有些攜盾女從小就跟她一起受訓，有幾個人就在金之大殿附近。我們的女人真是勤勞啊！你去找找有個叫格爾瑪的-她精通許多戰爭之道，但現在就像一匹被爛韁繩拴住的良駒，因為她不被允許跟男人一同騎馬出征。
+str_rohan_edoras_guildmaster_companion|確實，可能有。這黑暗的時代讓我們的女人跟男的一起騎馬出征-但我們既無畏又高尚的伊歐玟女士，眾所愛戴的她，騎馬打仗就像任何元帥一樣。有些執盾女從小就跟她一起受訓，有幾個人就在金之大殿附近。我們的女人真是勤勞啊！你去找找有個叫格爾瑪的-她精通許多戰爭之道，但現在就像一匹被爛韁繩拴住的良駒，因為她不被允許跟男人一同騎馬出征。
 str_lorien_guildmaster_companion_player_ask|羅瑞安
 str_lorien_guildmaster_companion_none|即使在這裡的梅隆樹林中，也能聽聞邪惡的到來；大家都很憂傷。以往快樂的時光中我們會彈奏豎琴的弦；近來則是確實精通了弓弦。我說不出我們之中有誰是英雄，但你可以跟我們駐軍的指揮官談談。也許會有同胞願意加入你一段時間吧。
 str_lorien_guildmaster_companion_player_none_ok|我原本還希望能在你們這片美好的土地上得到更好的回覆。但現實就像你說的那樣吧，長者。
@@ -2512,11 +2512,11 @@ str_gundabad_guildmaster_companion_none|我不在乎你是哪裡來的--你在�
 str_gundabad_guildmaster_companion_player_none_ok|如果你知道什麼對你有好處，你會和我一起看你的話。
 str_gundabad_guildmaster_player_found_ok|我沒聽錯吧？你說的"貝爾塔"是個會思考的食人妖？這個，我得親眼看看。
 str_gundabad_guildmaster_companion|你，管好你的舌頭，不然這裡就會有人把它割掉！喔對，走錯一步，然後我一彈指，就那樣--你就會進到格鬥坑裡了！這是我們，給你這種愛吹牛大嘴巴的特殊禮物。哈，不知道你會不會喜歡，跟貝爾塔一起在坑裡！我可以賭上一個月的食物你撐不過她的幾下攻擊。那是我們找到最狡猾的食人妖，不過我們更狡猾，看吧，看看我們是如何把她好好鏈起來的！還蠻好笑的，把她放在那洞穴裡古老矮人王的巨大雕像下。讓她不會孤單，嘿嘿嘿。怎樣？想來跟我們的貝爾塔對打嗎？
-str_fullname_region_rhun|羅馬尼安東部，賽爾督因河沿岸
+str_fullname_region_rhun|東羅馬尼安，賽爾督因河沿岸
 str_fullname_region_erebor|孤山的山麓，仰望孤山之處
-str_fullname_region_celebrant|凱勒布蘭特平原，凱勒布蘭特河與林萊河之間
+str_fullname_region_celebrant|凱勒布蘭特平原，在凱勒布蘭特河與林萊河之間
 str_fullname_region_gladden_fields|格拉頓平原，格拉頓河的沼澤
-str_fullname_region_w_emyn_muil|艾明莫爾西部
+str_fullname_region_w_emyn_muil|西艾明莫爾
 str_fullname_region_s_misty_mountains|迷霧山脈南部的山麓
 str_fullname_region_n_anduin_vale|安度因河谷北部，卡爾岩的北方
 str_fullname_region_s_anduin_vale|安度因河谷南部，羅瑞安和雙河套之間
@@ -2525,7 +2525,7 @@ str_shortname_region_rhun|東羅馬尼安
 str_shortname_region_erebor|孤山的山麓
 str_shortname_region_celebrant|凱勒布蘭特平原
 str_shortname_region_gladden_fields|格拉頓平原
-str_shortname_region_w_emyn_muil|艾明莫爾西部
+str_shortname_region_w_emyn_muil|西艾明莫爾
 str_shortname_region_s_misty_mountains|迷霧山脈南部的山麓
 str_shortname_region_n_anduin_vale|安度因河谷北部
 str_shortname_region_s_anduin_vale|安度因河谷南部

@@ -166,9 +166,9 @@ mno_strat_tweaks_back|Повернутися в меню опцій.
 menu_camp_action|^^^^^^^^^ Який предмет?
 mno_camp_drink_water|Випити ентійскую воду!
 mno_camp_drink_orc_brew|Випити Оркський відвар!
-; mno_camp_drink_miruvor|Pass around the Miruvor!
-; mno_camp_use_athelas|Use Athelas for wound treatment.
-; mno_camp_use_drums|Beat the Drums of the Deep.
+mno_camp_drink_miruvor|Пройдіть навколо Мірувора!
+mno_camp_use_athelas|Використовуйте Ателас для обробки ран.
+mno_camp_use_drums|Бийте в барабани Глибоко
 mno_camp_action_4|Назад.
 menu_assasins_attack_player_won|Ви успішно впоралися з вбивцями з держави {s2}, підісланими полководцем {s3}.
 menu_assasins_attack_player_retreat|Ви втекли і врятували своє життя!
@@ -310,7 +310,7 @@ mno_speak_with_elder|Увійти в казарми Фракції {s6}.
 mno_isengard_underground|Увійти в підземелля.
 mno_isengard_underground_door|Перейти до підземних печер
 mno_tirith_toplevel|Зійти на верхній рівень.
-; mno_tirith_toplevel_door|Go to the Citadel
+mno_tirith_toplevel_door|Ідіть до Цитаделі
 mno_erebor_gates|Відвідати Великі Врата.
 mno_town_leave|Продовжити...
 mno_town_leave_door|Залишити територію

@@ -1302,7 +1302,7 @@ str_faction_strength_crushed|壊滅
 str_faction_strength_spent_and_wavering|風前の灯火
 str_faction_strength_weakened|弱小
 str_faction_strength_fair|弱い
-str_faction_strength_average|平凡
+str_faction_strength_average|堅固
 str_faction_strength_strong|強い
 str_faction_strength_quite_strong|強大
 str_faction_strength_very_strong|非常に強大
@@ -1883,7 +1883,7 @@ str_shortname_region_mordor|モルドールの地
 str_shortname_region_dimrill|おぼろ谷
 str_shortname_region_s_erebor|谷間の国の領域
 str_trait_title_elf_friend|エルフの友
-str_trait_desc_elf_friend|エルフたちから高い尊敬を受けるようになったあなたは、彼らから信頼のおける友人と考えられています。 エルフの雇用コストが減少します。
+str_trait_desc_elf_friend|エルフたちから高い尊敬を受けるようになったあなたは、^彼らから信頼のおける友人と考えられています。^エルフの雇用コストが減少します。
 str_trait_title_gondor_friend|執政の祝福
 str_trait_desc_gondor_friend|執政デネソールから非常な尊敬を受けるあなたの事を、ゴンドールで知らない者はいません。 ゴンドールの兵の雇用コストが減少します。
 str_trait_title_rohan_friend|王の懐刀
