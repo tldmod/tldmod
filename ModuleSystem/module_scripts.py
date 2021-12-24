@@ -557,6 +557,13 @@ scripts = [
 			#(display_message, "@home faction bonus"),
 		  (try_end),
 
+		  #InVain: Charisma bonus
+          (store_attribute_level, ":player_charisma", trp_player, ca_charisma),
+          (val_mul, ":difference", 100),
+          (val_mul, ":difference", ":player_charisma"),
+          (val_div, ":difference", 1200), #starts to scale from 12, reduces below
+		  
+
           (val_add, ":val", ":difference"),
           (ge,      ":val", 0), #no negative rank points
           (faction_set_slot, ":fac", slot_faction_rank, ":val"),
@@ -10323,6 +10330,19 @@ scripts = [
         (neq, ":troop_no", "trp_player"),
         (neg|is_between, ":troop_no", soldiers_begin, soldiers_end),
         (neq, ":difference", 0),
+        
+         #InVain: Charisma bonus
+        (store_attribute_level, ":player_charisma", trp_player, ca_charisma),
+        (try_begin),
+            (gt, ":difference", 0),
+            (val_mul, ":difference", 100),
+            (val_mul, ":difference", ":player_charisma"),
+            (val_div, ":difference", 1200), #starts to scale from 12, reduces below
+        (else_try),
+            (val_mul, ":difference", 100),
+            (val_div, ":difference", 10), #starts to scale from 10
+        (try_end),
+        
         (call_script, "script_troop_get_player_relation", ":troop_no"),
         (assign, ":old_effective_relation", reg0),
         (troop_get_slot, ":player_relation", ":troop_no", slot_troop_player_relation),
@@ -10359,6 +10379,18 @@ scripts = [
 ("change_player_relation_with_center",
     [ (store_script_param_1, ":center_no"),
       (store_script_param_2, ":difference"),
+
+         #InVain: Charisma bonus
+        (store_attribute_level, ":player_charisma", trp_player, ca_charisma),
+        (try_begin),
+            (gt, ":difference", 0),
+            (val_mul, ":difference", 100),
+            (val_mul, ":difference", ":player_charisma"),
+            (val_div, ":difference", 1200), #starts to scale from 12, reduces below
+        (else_try),
+            (val_mul, ":difference", 100),
+            (val_div, ":difference", 10), #starts to scale from 10
+        (try_end),
       
       (party_get_slot, ":player_relation", ":center_no", slot_center_player_relation),
       (assign, reg1, ":player_relation"),
