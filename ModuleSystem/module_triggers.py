@@ -92,7 +92,8 @@ triggers = [
           (store_mul, ":trading_modifier", ":player_party_trading", 10),
           
           (store_add, ":quality_modifier", ":center_relation", ":rank_modifier"),
-          (val_add, ":quality_modifier", ":trading_modifier"),
+          (val_add, ":quality_modifier", ":trading_modifier"),         
+          (val_div, ":quality_modifier", 3),
           (val_add, ":quality_modifier", ":base_chance"),
           (set_merchandise_modifier_quality, ":quality_modifier"), #new formula
 
@@ -203,6 +204,12 @@ triggers = [
           (try_begin),
             (gt,":items",0),
             
+            #Invain: Relation+trade bonus; (rel+trade_skill*10)/200 (up to 2x)
+            (store_add, ":abundance_bonus", ":center_relation", ":trading_modifier"), #get score, up to 200
+            (val_mul, ":items", ":abundance_bonus"),
+            (val_div, ":items", 200),
+            (val_add, ":items", 1),
+            
             ] + (is_a_wb_trigger==1 and [
               
               #swy-- select the correct array member by using (curr itp + slot base) and calculate the minimum items to add...
@@ -295,6 +302,7 @@ triggers = [
       
         (store_add, ":quality_modifier", ":center_relation", ":rank_modifier"),
         (val_add, ":quality_modifier", ":trading_modifier"),
+        (val_div, ":quality_modifier", 3),
         (val_add, ":quality_modifier", ":base_chance"),
         (set_merchandise_modifier_quality, ":quality_modifier"), #new formula
  
@@ -381,6 +389,13 @@ triggers = [
         (store_skill_level,":items",":skill",":cur_merchant"),
         (try_begin),
           (gt,":items",0),
+          
+            #Invain: Relation+trade bonus; (rel+trade_skill*10)/200 (up to 2x)
+            (store_add, ":abundance_bonus", ":center_relation", ":trading_modifier"), #get score, up to 200
+            (val_mul, ":items", ":abundance_bonus"),
+            (val_div, ":items", 200),
+            (val_add, ":items", 1),
+          
           (troop_add_merchandise,":cur_merchant",itp_type_horse,":items"),
         (try_end),
         
@@ -417,6 +432,13 @@ triggers = [
         
         (store_div, ":num_goods", ":center_str_income", 5),
         (val_add, ":num_goods", num_merchandise_goods), #now 3-7
+        
+            #Invain: Relation+trade bonus; (rel+trade_skill*10)/200 (up to 2x)
+            (store_add, ":abundance_bonus", ":center_relation", ":trading_modifier"), #get score, up to 200
+            (val_mul, ":num_goods", ":abundance_bonus"),
+            (val_div, ":num_goods", 200),
+            (val_add, ":num_goods", 1),             
+        
         (troop_add_merchandise,":cur_merchant",itp_type_goods,":num_goods"),
         (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space), #MV: moved after goods and changed from 65
         (troop_sort_inventory, ":cur_merchant"),
