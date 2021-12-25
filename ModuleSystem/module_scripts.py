@@ -10298,12 +10298,14 @@ scripts = [
          (call_script, "script_end_quest", "qst_follow_army"),
        (try_end),
        (eq, ":one_active", 1),
-       (faction_get_slot, ":last_offensive_time", ":faction_no", slot_faction_ai_last_offensive_time),
+       #(faction_get_slot, ":last_offensive_time", ":faction_no", slot_faction_ai_last_offensive_time),
+       (quest_get_slot, ":starting_hours", qst_follow_army, slot_quest_xp_reward),
        (store_current_hours, ":cur_hours"),
-       (store_sub, ":total_time_served", ":cur_hours", ":last_offensive_time"),
+       (store_sub, ":total_time_served", ":cur_hours", ":starting_hours"),
+       (val_min, ":total_time_served", 240), #up to 10 days
        (store_mul, ":xp_reward", ":total_time_served", 5),
-       (val_div, ":xp_reward", 50),
-       (val_mul, ":xp_reward", 50),
+       #(val_div, ":xp_reward", 50),
+       (val_mul, ":xp_reward", 5),
        (val_add, ":xp_reward", 50),
        (add_xp_as_reward, ":xp_reward"),
 	   (store_div, ":rank_reward", ":xp_reward", 10),
@@ -13257,7 +13259,7 @@ scripts = [
 ]),
 
 # script_simulate_battle_with_agents_aux
-# For internal use only
+# For internal use only, only for calulating retreat
 # Input: arg1 = attacker_side (0 = ally, 1 = enemy), arg2 = damage amount
 # Output: none
 ("simulate_battle_with_agents_aux",

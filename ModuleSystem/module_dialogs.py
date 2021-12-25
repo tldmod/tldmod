@@ -3670,6 +3670,8 @@ How could I expect someone like {playername} to be up to the challenge. My serva
      (setup_quest_text, "qst_follow_army"),
      (str_store_string, s2, "@{s9} wants you to follow his army until further notice."),
      (call_script, "script_start_quest", "qst_follow_army", "$g_talk_troop"),
+     (store_current_hours, ":cur_hours"),
+     (quest_set_slot, "qst_follow_army", slot_quest_xp_reward, ":cur_hours"), #store beginning of player following in an unused slot, to calulcate xp reward later)
      #(assign, "$g_player_follow_army_warnings", 0),
      (assign, "$g_leave_encounter", 1)]],
 
