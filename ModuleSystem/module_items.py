@@ -510,7 +510,7 @@ items =[
 ["riv_helm_c","Rivendell_Infantry_Helm",[("rivendellswordfighterhelmet",0)],itp_type_head_armor|itp_shop,0,1600,weight(3)|abundance(96)|head_armor(40)|body_armor(0)|difficulty(15),imodbits_elf_armor,[]],
 #free Jan 2017, -> itm_witchking_helmet
 ["free_riv_helm_glorfi","Glorfi_Hair",[("glorfindelhair",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,3000,weight(1.2)|head_armor(70)|difficulty(0),0,[]],
-["riv_tiara","Elf_Lord_Tiara",[("tiara",0)],itp_type_head_armor|itp_unique|itp_doesnt_cover_hair,0,3000,weight(2.5)|head_armor(60)|difficulty(0),0,[]],
+["tiara_reward","Elf_Lord_Tiara",[("tiara",0)],itp_type_head_armor|itp_unique|itp_doesnt_cover_hair,0,3000,weight(0.5)|head_armor(10)|difficulty(0),0,[]],
 ##########RIVENDELL SHIELDS##########
 ["riv_shield_a","Rivendell_Shield",[("riv_inf_shield_b",0),("riv_inf_shield",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop|itp_cant_use_on_horseback,itcf_carry_kite_shield,700,weight(2.5)|difficulty(3)|hit_points(340)|body_armor(16)|spd_rtng(85)|weapon_length(60),imodbits_shield_good,[]],
 ["riv_shield_b","Rivendell_Shield",[("riv_cav_shield_b",0),("riv_cav_shield",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,600,weight(2)|difficulty(1)|hit_points(290)|body_armor(19)|spd_rtng(95)|weapon_length(40),imodbits_shield_good,[]],
@@ -1019,7 +1019,7 @@ items =[
 ["harad_heavy","Harad_Noble_Armor",[("harad_heavy",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2200,weight(30)|abundance(96)|head_armor(1)|body_armor(35)|leg_armor(12)|difficulty(18),imodbits_elf_armor,],
 ["harad_skirmisher","Light_Harad_Garb",[("harad_skirmisher",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(4)|head_armor(0)|body_armor(12)|leg_armor(3)|difficulty(0),imodbits_cloth,],
 ["harad_archer","Harad_Archer_Armor",[("harad_archer",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(8)|head_armor(0)|body_armor(16)|leg_armor(6)|difficulty(0),imodbits_cloth,],
-["black_snake_armor","Maranka_Armor",[("black_snake_armor",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(18)|abundance(100)|head_armor(2)|body_armor(23)|leg_armor(9)|difficulty(9),imodbits_elf_armor,],
+["black_snake_armor","Maranka_Armor",[("black_snake_armor",0)],itp_type_body_armor|itp_covers_legs,0,1300,weight(16)|abundance(100)|head_armor(2)|body_armor(25)|leg_armor(11)|difficulty(9),imodbits_elf_armor,],
 ["harad_champion","Far_Harad_Garb",[("harad_champion",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,700,weight(4)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_cloth,],
 ["panther_guard","Panther_Hide",[("panther_guard",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,900,weight(5)|head_armor(0)|body_armor(15)|leg_armor(8)|difficulty(0),imodbits_cloth,],
 ["harad_scale","Harad_Scale_Armor",[("harad_scale",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(28)|abundance(95)|head_armor(0)|body_armor(27)|leg_armor(8)|difficulty(11),imodbits_armor|imodbit_lordly,],
@@ -1412,7 +1412,7 @@ items =[
 ["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armour",0),("denethor_robe",imodbit_well_made),("dm_nazgulrobe",imodbit_cheap),("pippin",imodbit_battered),("merry",imodbit_chipped),("whiterobe",imodbit_bent), ("old_nazgulrobe",imodbit_old),("galadriel",imodbit_rusty)],itp_type_body_armor|itp_covers_legs,0,4800,weight(35)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(25)|difficulty(18),imodbits_elf_armor,],
 ["wilderness_cowl","Hunter_Cowl",[("got_stark_hood",0)],itp_type_head_armor|itp_unique|itp_fit_to_head,0,1000,weight(1)|head_armor(12)|difficulty(0),imodbits_armor,[]],
 ["prisoner_coll_chain","Prisoner_Chains",[("prisoner_coll_chain",0)],itp_type_head_armor|itp_doesnt_cover_hair,0,10,weight(10)|head_armor(2)|difficulty(0),0],
-["witchking_helmet","Sorcerer's_Mask",[("witchking_helmet",0),("glorfindelhair",imodbit_rotten),("DwarfHelmKingCrown",imodbit_old)],itp_type_head_armor|itp_unique,0,3000,weight(6)|abundance(100)|head_armor(30)|body_armor(5)|difficulty(18),0],
+["witchking_helmet","Sorcerer's_Mask",[("witchking_helmet",0),("glorfindelhair",imodbit_rotten),("DwarfHelmKingCrown",imodbit_old),("tiara",imodbit_well_made)],itp_type_head_armor|itp_unique,0,3000,weight(6)|abundance(100)|head_armor(30)|body_armor(5)|difficulty(18),0],
 # let   witchking_helmet  be the last item (mtarini)
 ["lorien_royal_armor","Lorien_Royal_Armor",[("lorien_royal",0)],itp_type_body_armor|itp_covers_legs,0,4000,weight(26)|abundance(100)|head_armor(1)|body_armor(46)|leg_armor(17)|difficulty(15),imodbits_elf_armor,],
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],

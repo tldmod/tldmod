@@ -538,7 +538,7 @@ itemsfile version 2
  itm_free_riv_helm_glorfi Glorfi_Hair Glorfi_Hair 1  glorfindelhair 0  137438957580 0 3000 0 1 100 70 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_riv_tiara Elf_Lord_Tiara Elf_Lord_Tiara 1  tiara 0  16781324 0 3000 0 2.5 100 60 0 0 0 0 0 0 0 0 0 0
+ itm_tiara_reward Elf_Lord_Tiara Elf_Lord_Tiara 1  tiara 0  16781324 0 3000 0 0.5 100 10 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_riv_shield_a Rivendell_Shield Rivendell_Shield 2  riv_inf_shield_b 0  riv_inf_shield 771751936  268763143 4831838208 700 771751936 2.5 100 0 16 0 3 340 85 0 60 0 0 0
@@ -1752,7 +1752,7 @@ itemsfile version 2
  itm_harad_archer Harad_Archer_Armor Harad_Archer_Armor 1  harad_archer 0  16842765 0 600 123731968 8 100 0 16 6 0 0 0 0 0 0 0 0
 0
 
- itm_black_snake_armor Maranka_Armor Maranka_Armor 1  black_snake_armor 0  16842765 0 1000 704643072 18 100 2 23 9 9 0 0 0 0 0 0 0
+ itm_black_snake_armor Maranka_Armor Maranka_Armor 1  black_snake_armor 0  16777229 0 1300 704643072 16 100 2 25 11 9 0 0 0 0 0 0 0
 0
 
  itm_harad_champion Far_Harad_Garb Far_Harad_Garb 1  harad_champion 0  16842765 0 700 123731968 4 100 0 14 8 0 0 0 0 0 0 0 0
@@ -2727,7 +2727,7 @@ itemsfile version 2
  itm_prisoner_coll_chain Prisoner_Chains Prisoner_Chains 1  prisoner_coll_chain 0  16777228 0 10 0 10 100 2 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_witchking_helmet Sorcerer's_Mask Sorcerer's_Mask 3  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  4108 0 3000 0 6 100 30 5 0 18 0 0 0 0 0 0 0
+ itm_witchking_helmet Sorcerer's_Mask Sorcerer's_Mask 4  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  tiara 2048  4108 0 3000 0 6 100 30 5 0 18 0 0 0 0 0 0 0
 0
 
  itm_lorien_royal_armor Lorien_Royal_Armor Lorien_Royal_Armor 1  lorien_royal 0  16777229 0 4000 704643072 26 100 1 46 17 15 0 0 0 0 0 0 0

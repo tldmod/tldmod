@@ -1999,7 +1999,7 @@ fac_reward_items_list = [
 #fac_isengard
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_gauntlets_reward, imod_hardened), (5, itm_warg_reward, 0), (6, itm_torque_reward, 0), (7, itm_silmarillion_reward, 0), (8, itm_isen_uruk_heavy_reward, imod_lordly), (9, itm_tome_of_knowledge, 0)],
 #fac_lorien
-[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_elven_cloak , 0), (6, itm_silmarillion_reward, 0), (7, itm_lorien_royal_armor, imod_lordly), (8, itm_lorien_bow_reward, imod_balanced), (9, itm_phial_reward, 0)],
+[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_elven_cloak , 0), (6, itm_silmarillion_reward, 0), (7, itm_tiara_reward, 0), (8, itm_lorien_bow_reward, imod_balanced), (9, itm_phial_reward, 0)],
 #fac_imladris
 [(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_scroll_reward, 0), (5, itm_miruvor_reward, 0), (6, itm_riv_warhorse2, 0), (7, itm_westernesse2h_reward, 0), (8, itm_shield_of_tuor, 0), (9, itm_riv_armor_reward, 0)],
 #fac_woodelf
@@ -2007,7 +2007,7 @@ fac_reward_items_list = [
 #fac_dale
 [(2,itm_cooking_cauldron,0),(3,itm_map ,0),			(4,itm_leather_gloves_reward, 0), (5, itm_thrush_reward, 0), (6, itm_dale_armor_reward, 0), (7, itm_dale_sword_reward, imod_masterwork), (8, itm_black_arrows_reward, imod_masterwork), (9, itm_dale_bow_reward, 0)],
 #fac_harad
-[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_balanced), (5, itm_rohan_saddle, imod_masterwork), (6, itm_herbarium_reward, 0), (7, itm_eagle_guard_spear, imod_masterwork), (8, itm_harad_heavy, imod_lordly), (9, itm_harad_totem_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_balanced), (5, itm_rohan_saddle, imod_masterwork), (6, itm_herbarium_reward, 0), (7, itm_eagle_guard_spear, imod_masterwork), (8, itm_black_snake_armor, imod_lordly), (9, itm_harad_totem_reward, 0)],
 #fac_rhun
 [(2,itm_cooking_cauldron,0),(3,itm_rhun_horse_d, imod_heavy),(4,itm_rohan_saddle, imod_heavy), (5, itm_rhun_greataxe, imod_balanced), (6, itm_ring_a_reward, 0), (7, itm_rhun_horse_h, 0), (8, itm_rhun_bow, imod_balanced), (9, itm_khamul_helm, 0)],
 #fac_khand
@@ -2037,7 +2037,7 @@ fac_reward_items_list = [
 #fac_isengard
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_gauntlets_reward, imod_hardened), (5, itm_warg_reward, 0), (6, itm_torque_reward, 0), (7, itm_silmarillion_reward, 0), (8, itm_isen_uruk_heavy_reward, imod_lordly), (9, itm_tome_of_knowledge, 0)],
 #fac_lorien
-[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_elven_cloak , 0), (6, itm_silmarillion_reward, 0), (7, itm_lorien_royal_armor, imod_lordly), (8, itm_lorien_bow_reward, imod_balanced), (9, itm_phial_reward, 0)],
+[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_elven_cloak , 0), (6, itm_silmarillion_reward, 0), (7, itm_tiara_reward, 0), (8, itm_lorien_bow_reward, imod_balanced), (9, itm_phial_reward, 0)],
 #fac_imladris
 [(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_scroll_reward, 0), (5, itm_miruvor_reward, 0), (6, itm_riv_warhorse2, 0), (7, itm_westernesse2h_reward, 0), (8, itm_shield_of_tuor, 0), (9, itm_riv_armor_reward, 0)],
 #fac_woodelf
@@ -2045,7 +2045,7 @@ fac_reward_items_list = [
 #fac_dale
 [(2,itm_cooking_cauldron,0),(3,itm_map ,0),			(4,itm_leather_gloves_reward, 0), (5, itm_thrush_reward, 0), (6, itm_dale_armor_reward, 0), (7, itm_dale_sword_reward, imod_masterwork), (8, itm_black_arrows_reward, imod_masterwork), (9, itm_dale_bow_reward, 0)],
 #fac_harad
-[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_balanced), (5, itm_rohan_saddle, imod_masterwork), (6, itm_herbarium_reward, 0), (7, itm_eagle_guard_spear, imod_masterwork), (8, itm_harad_heavy, imod_lordly), (9, itm_harad_totem_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_balanced), (5, itm_rohan_saddle, imod_masterwork), (6, itm_herbarium_reward, 0), (7, itm_eagle_guard_spear, imod_masterwork), (8, itm_black_snake_armor, imod_lordly), (9, itm_harad_totem_reward, 0)],
 #fac_rhun
 [(2,itm_cooking_cauldron,0),(3,itm_rhun_horse_d, imod_heavy),(4,itm_rohan_saddle, imod_heavy), (5, itm_rhun_greataxe, imod_balanced), (6, itm_ring_a_reward, 0), (7, itm_rhun_horse_h, 0), (8, itm_rhun_bow, imod_balanced), (9, itm_khamul_helm, 0)],
 #fac_khand

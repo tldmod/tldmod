@@ -422,6 +422,7 @@ itm_fine_hat = (itm_hood_black, imod_large_bag)
 itm_riv_helm_glorfi = (itm_witchking_helmet, imod_rotten)
 itm_rohan_tunic_a = (itm_white_tunic_a, imod_two_day_old)
 itm_rohan_tunic_b = (itm_white_tunic_a, imod_smelling)
+itm_riv_tiara = (itm_witchking_helmet, imod_well_made)
 
 #Trolls
 itm_troll_feet = (itm_ent_feet_boots, imod_cracked)
