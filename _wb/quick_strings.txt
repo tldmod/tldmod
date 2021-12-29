@@ -1,4 +1,4 @@
-1921
+1922
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_348_wb__dev_^_B _rev_348_wb_|_dev_^_Built_2021-12-26_14:55___
+qstr__rev_354_wb__dev_^_B _rev_354_wb_|_dev_^_Built_2021-12-29_12:08___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -269,6 +269,7 @@ qstr_lead_more_Uruks lead_more_Uruks
 qstr_+1_to_Power_Throw +1_to_Power_Throw
 qstr_+1_to_Spotting +1_to_Spotting
 qstr_+2_to_Weapon_Master +2_to_Weapon_Master
+qstr_+2_to_First_Aid +2_to_First_Aid
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
 qstr_Less_Wargs_upkeep Less_Wargs_upkeep
 qstr_Light_Armor Light_Armor
