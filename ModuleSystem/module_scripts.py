@@ -1976,7 +1976,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 24),  #Rafa: Savegame version
+    (assign,"$savegame_version", 25),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -3997,6 +3997,7 @@ scripts = [
 		(set_trigger_result, color_item_text_bonus),
       (else_try),
 		(eq,":item_no","itm_black_snake_armor"),
+        (eq, ":item_modifier", imod_lordly),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+2 to Weapon Master"),(try_end),
         (try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to First Aid"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@when equipped"),(try_end),
@@ -4019,6 +4020,7 @@ scripts = [
 		(set_trigger_result, color_item_text_bonus),
 	  (else_try),
 	  	(eq, ":item_no", "itm_beorn_chief"),
+        (eq, ":item_modifier", imod_lordly),
 	  	(try_begin),(eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
                 (try_begin),(eq, ":extra_text_id", 1), (set_result_string, "@Bonus to Strength (Player only)"),(set_trigger_result, color_item_text_bonus),(try_end),
 		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@(Scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
@@ -24945,6 +24947,19 @@ command_cursor_scripts = [
             (party_set_position, ":adv_camp", pos1),
         (try_end),
         (assign, "$savegame_version", 24),
+	(try_end),	
+    
+    (try_begin), #InVain - 31 Dec 2021, fix bald elf lords and wargs in elf shops
+        (le, "$savegame_version", 24),	
+        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+            (troop_has_item_equipped, ":lord", "itm_witchking_helmet"),
+            (troop_remove_item, ":lord", "itm_witchking_helmet"),
+            (troop_add_item, ":lord", "itm_tiara_reward"),
+        (try_end),
+        (troop_add_item, "trp_lorien_items", "itm_saddle_horse"),
+        (troop_add_item, "trp_imladris_items", "itm_saddle_horse"),
+        (call_script, "script_set_item_faction"),
+        (assign, "$savegame_version", 25),
 	(try_end),	
 
 ]),
