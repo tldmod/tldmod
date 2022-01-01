@@ -1332,7 +1332,7 @@ scripts = [
 #script_fangorn_fight_ents
 # Script: start a battle with wandering ents  (mtarini)
 ("fangorn_fight_ents",[
-	(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien1"),       
+	(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien_small1"),       
 	#(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
 	(val_max,"$g_fangorn_rope_pulled", 21), # this also means ents gets a max reinforcement of at least 3 
 	(assign, "$g_encountered_party", "p_legend_fangorn"), # just so that the find music script dosn't go nuts
@@ -11967,7 +11967,7 @@ scripts = [
 	(else_try),
 		(eq,":region",region_fangorn),
 		(assign, "$small_scene_used", 1),
-		(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien1"),
+		(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien_small1"),
 		(assign, "$bs_day_sound", "snd_fangorn_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
@@ -11992,11 +11992,14 @@ scripts = [
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(is_between,":region",region_n_ithilien,region_s_ithilien+1),
-		(store_random_in_range, reg1, 0,5),
-		(try_begin),(lt, reg1, 3),(store_random_in_range, ":scene_to_use", "scn_forest_ithilien1", "scn_forest_lorien1"),
-		 (else_try),              (assign, ":native_terrain_to_use", rt_plain),
+		(try_begin), (eq, ":small_scene", 1), (assign, "$small_scene_used", 1),
+			(store_random_in_range, ":scene_to_use", "scn_forest_ithilien_small1", "scn_forest_lorien1"),
+		(else_try),
+        	(store_random_in_range, reg1, 0,5),
+			(try_begin),(store_random_in_range, ":scene_to_use", "scn_forest_ithilien1", scn_forest_ithilien6+1),       
+            (else_try),(assign, ":native_terrain_to_use", rt_plain),
+            (try_end), 
 		(try_end),
-		(assign, "$small_scene_used", 1),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),		# occasional forest terrain, in gondor: use forest battlefield regardless of region (but gondor outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),

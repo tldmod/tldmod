@@ -327,11 +327,11 @@ scenes = [
 ("forest_fangorn4"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 ("forest_fangorn5"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 
-("forest_ithilien1"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
-("forest_ithilien2"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
-("forest_ithilien3"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
-("forest_ithilien4"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
-("forest_ithilien5"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+("forest_ithilien_small1"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+("forest_ithilien_small2"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+("forest_ithilien_small3"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+("forest_ithilien_small4"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
+("forest_ithilien_small5"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 
 ("forest_lorien1"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 ("forest_lorien2"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
@@ -470,7 +470,7 @@ scenes = [
 ("dunland_camp_siege"    ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],["player_chest"],"outer_terrain_rohan"),
 ("harad_camp_siege"      ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],["player_chest"],"outer_terrain_steppe"),
 ("khand_camp_siege"      ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x0000000020040de3000699aa00005234000048ba000004b5",[],["player_chest"],"outer_terrain_rohan"),
-("north_rhun_camp_siege" ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_flat"),
+("north_rhun_camp_siege" ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x00000001200005000006d9e10000065c00004b3400000dfd",[],["player_chest"],"outer_terrain_rohan"),
 ("rhun_south_camp_siege"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
 ("rhun_north_camp_siege"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
 
@@ -619,16 +619,16 @@ scenes = [
 ("forest_mirkwood1"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"), #ravine
 ("forest_mirkwood1b"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001401918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"), #ravine variant (firs)
 ("forest_mirkwood2"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000140190c8000058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"), #flat
-("forest_mirkwood2b"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b0190c8080058d66000023ad0000047f0000292a",[],[],"outer_terrain_forest"), #flat variant (river)
-("forest_mirkwood3"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000023ad000035de00005298",[],[],"outer_terrain_forest"), #puddles
+("forest_mirkwood2b"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b0190c8080058d66000061450000047f0000292a",[],[],"outer_terrain_forest"), #flat variant (river)
+("forest_mirkwood3"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b019135900058d66000046d4000035de00005298",[],[],"outer_terrain_forest"), #puddles
 ("forest_mirkwood3b"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x000000014019135980058d66000023ad80004b1a00005298",[],[],"outer_terrain_forest"), #puddles variant (river)
-("forest_mirkwood4"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b119134800058d66000023ad000035de0000292a",[],[],"outer_terrain_forest"), #slope
+("forest_mirkwood4"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b019134800058d66000047a8000035de0000292a",[],[],"outer_terrain_forest"), #slope
 ("forest_mirkwood4b"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x000000014019134800058d66000023ad0000254b0000292a",[],[],"outer_terrain_forest"), #slope (swamp terrain)
 ("forest_mirkwood5"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001490b56cb00058d66000023ad0000751200006218",[],[],"outer_terrain_forest"), #fir mix
 ("forest_mirkwood6"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000145d6d18000058d66000037c600005f9900002ad0",[],[],"outer_terrain_forest"), #firs pure + rocks
 ("forest_mirkwood6b"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b016d18080058d6600007c11800030cf00002ad0",[],[],"outer_terrain_forest"), #firs pure + rocks variant (river)
 ("forest_mirkwood7"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x000000014019056300058d66000037c60000416c0000385d",[],[],"outer_terrain_forest"), #swamp
-("forest_mirkwood8"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001b01917000004e93c00007b15000077bd00004d24",[],[],"outer_terrain_forest"), #re-used sorcerer battle
+("forest_mirkwood8"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001401917000004e93c00000aeb000077bd00004d24",[],[],"outer_terrain_forest"), #re-used sorcerer battle (swamp terrain)
 ("forest_mirkwood9"  ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001401917000004e93c00002d3e000077bd00004d24",[],[],"outer_terrain_forest"),    #re-used Dol Guldur outside
 
 #placeholders
@@ -656,7 +656,17 @@ scenes = [
 ("swamp_5"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600563800691a400005d4a000061f900006c8e",[],[],"outer_terrain_flat"),
 ("swamp_6"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600500000691a400001fb900004b34000059be",[],[],"outer_terrain_flat"),
 ("swamp_small"        ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001cc60050000034cd300003efe00004b34000059be",[],[],"outer_terrain_flat"),
+("swamp_7"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600563800691a400005d4a000061f900006c8e",[],[],"outer_terrain_flat"), #placeholder
+("swamp_8"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600500000691a400001fb900004b34000059be",[],[],"outer_terrain_flat"), #placeholder
+("swamp_9"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600563800691a400005d4a000061f900006c8e",[],[],"outer_terrain_flat"), #placeholder
+("swamp_10"            ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000002cc600500000691a400001fb900004b34000059be",[],[],"outer_terrain_flat"), #placeholder
 
+("forest_ithilien1" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001388450d800058d6600006272000005a2000005ef",[],[],"New_outer_mountains2east_ithilien"), #plain big
+("forest_ithilien2" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001388458b600058d6600006272000005a200006f64",[],[],"New_outer_mountains2east_ithilien"), #plain med
+("forest_ithilien3" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001388454c500058d6600000fc7000005a20000635b",[],[],"New_outer_mountains2east_ithilien"), #plain small
+("forest_ithilien4" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013885113680058d6600000fc700005acd0000635b",[],[],"New_outer_mountains2east_ithilien"), 	#steppe big
+("forest_ithilien5" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013887184400058d6600000fa2000005a200007078",[],[],"New_outer_mountains2east_ithilien"),	#steppe med
+("forest_ithilien6" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013887124480058d6600000fa280000ec300007078",[],[],"New_outer_mountains2east_ithilien"),	#steppe small
 
 # Non-campaign scenes (these can savely be kept at the end of the file and moved with each extension, whereas campaign scenes are stored within savegame files, for whatever reason)
 # Tutorial Scenes

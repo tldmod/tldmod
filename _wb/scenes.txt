@@ -1,5 +1,5 @@
 scenesfile version 1
- 450
+ 460
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -840,23 +840,23 @@ scn_forest_fangorn5 forest_fangorn5 4352 none none 0 0 100 100 -100 0x00000000bc
   0 
   0 
  outer_terrain_forest 
-scn_forest_ithilien1 forest_ithilien1 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
+scn_forest_ithilien_small1 forest_ithilien_small1 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_forest 
-scn_forest_ithilien2 forest_ithilien2 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
+scn_forest_ithilien_small2 forest_ithilien_small2 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_forest 
-scn_forest_ithilien3 forest_ithilien3 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
+scn_forest_ithilien_small3 forest_ithilien_small3 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_forest 
-scn_forest_ithilien4 forest_ithilien4 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
+scn_forest_ithilien_small4 forest_ithilien_small4 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_forest 
-scn_forest_ithilien5 forest_ithilien5 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
+scn_forest_ithilien_small5 forest_ithilien_small5 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
   0 
   0 
  outer_terrain_forest 
@@ -1196,10 +1196,10 @@ scn_khand_camp_siege khand_camp_siege 4352 none none 0 0 100 100 -100 0x00000000
   0 
   1  833 
  outer_terrain_rohan 
-scn_north_rhun_camp_siege north_rhun_camp_siege 4352 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_north_rhun_camp_siege north_rhun_camp_siege 4352 none none 0 0 100 100 -100 0x00000001200005000006d9e10000065c00004b3400000dfd 
   0 
   1  833 
- outer_terrain_flat 
+ outer_terrain_rohan 
 scn_rhun_south_camp_siege rhun_south_camp_siege 4352 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
@@ -1668,11 +1668,11 @@ scn_forest_mirkwood2 forest_mirkwood2 4352 none none 0 0 100 100 -100 0x00000001
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood2b forest_mirkwood2b 4352 none none 0 0 100 100 -100 0x00000001b0190c8080058d66000023ad0000047f0000292a 
+scn_forest_mirkwood2b forest_mirkwood2b 4352 none none 0 0 100 100 -100 0x00000001b0190c8080058d66000061450000047f0000292a 
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood3 forest_mirkwood3 4352 none none 0 0 100 100 -100 0x00000001b019135900058d66000023ad000035de00005298 
+scn_forest_mirkwood3 forest_mirkwood3 4352 none none 0 0 100 100 -100 0x00000001b019135900058d66000046d4000035de00005298 
   0 
   0 
  outer_terrain_forest 
@@ -1680,7 +1680,7 @@ scn_forest_mirkwood3b forest_mirkwood3b 4352 none none 0 0 100 100 -100 0x000000
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood4 forest_mirkwood4 4352 none none 0 0 100 100 -100 0x00000001b119134800058d66000023ad000035de0000292a 
+scn_forest_mirkwood4 forest_mirkwood4 4352 none none 0 0 100 100 -100 0x00000001b019134800058d66000047a8000035de0000292a 
   0 
   0 
  outer_terrain_forest 
@@ -1704,7 +1704,7 @@ scn_forest_mirkwood7 forest_mirkwood7 4352 none none 0 0 100 100 -100 0x00000001
   0 
   0 
  outer_terrain_forest 
-scn_forest_mirkwood8 forest_mirkwood8 4352 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
+scn_forest_mirkwood8 forest_mirkwood8 4352 none none 0 0 100 100 -100 0x00000001401917000004e93c00000aeb000077bd00004d24 
   0 
   0 
  outer_terrain_forest 
@@ -1772,6 +1772,46 @@ scn_swamp_small swamp_small 256 none none 0 0 200 200 -0.5 0x00000001cc600500000
   0 
   0 
  outer_terrain_flat 
+scn_swamp_7 swamp_7 256 none none 0 0 200 200 -0.5 0x00000002cc600563800691a400005d4a000061f900006c8e 
+  0 
+  0 
+ outer_terrain_flat 
+scn_swamp_8 swamp_8 256 none none 0 0 200 200 -0.5 0x00000002cc600500000691a400001fb900004b34000059be 
+  0 
+  0 
+ outer_terrain_flat 
+scn_swamp_9 swamp_9 256 none none 0 0 200 200 -0.5 0x00000002cc600563800691a400005d4a000061f900006c8e 
+  0 
+  0 
+ outer_terrain_flat 
+scn_swamp_10 swamp_10 256 none none 0 0 200 200 -0.5 0x00000002cc600500000691a400001fb900004b34000059be 
+  0 
+  0 
+ outer_terrain_flat 
+scn_forest_ithilien1 forest_ithilien1 256 none none 0 0 200 200 -0.5 0x00000001388450d800058d6600006272000005a2000005ef 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_forest_ithilien2 forest_ithilien2 256 none none 0 0 200 200 -0.5 0x00000001388458b600058d6600006272000005a200006f64 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_forest_ithilien3 forest_ithilien3 256 none none 0 0 200 200 -0.5 0x00000001388454c500058d6600000fc7000005a20000635b 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_forest_ithilien4 forest_ithilien4 256 none none 0 0 200 200 -0.5 0x000000013885113680058d6600000fc700005acd0000635b 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_forest_ithilien5 forest_ithilien5 256 none none 0 0 200 200 -0.5 0x000000013887184400058d6600000fa2000005a200007078 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_forest_ithilien6 forest_ithilien6 256 none none 0 0 200 200 -0.5 0x000000013887124480058d6600000fa280000ec300007078 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
 scn_tutorial_1 tutorial_1 1 tutorial_1_scene bo_tutorial_1_scene -100 -100 100 100 -100 0 
   0 
   0 
