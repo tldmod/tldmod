@@ -10335,9 +10335,9 @@ scripts = [
        (store_current_hours, ":cur_hours"),
        (store_sub, ":total_time_served", ":cur_hours", ":starting_hours"),
        (val_min, ":total_time_served", 240), #up to 10 days
-       (store_mul, ":xp_reward", ":total_time_served", 5),
-       #(val_div, ":xp_reward", 50),
-       (val_mul, ":xp_reward", 5),
+       (store_mul, ":xp_reward", ":total_time_served", 4),
+       (val_div, ":xp_reward", 50),
+       (val_mul, ":xp_reward", 50),
        (val_add, ":xp_reward", 50),
        (add_xp_as_reward, ":xp_reward"),
 	   (store_div, ":rank_reward", ":xp_reward", 10),
