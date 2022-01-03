@@ -8735,10 +8735,17 @@ game_menus = [
         ], "Door to the castle."),
       
       ("town_center",[
+        (try_begin),
+          (eq, cheat_switch, 1), (eq, "$cheat_mode", 1),
+          (assign, ":continue", 1),
+        (else_try),
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
 		  (party_slot_eq,"$current_town",slot_center_visited, 1),
           (this_or_next|eq,"$entry_to_town_forbidden",0),
           (eq, "$sneaked_into_town",1),
+          (assign, ":continue", 1),
+        (try_end),
+        (eq, ":continue", 1),          
 	   ], "Walk to the main square...",
      [ (call_script, "script_initialize_center_scene"),
 	   (assign, "$spawn_horse", 1),
@@ -9089,15 +9096,17 @@ game_menus = [
 #						(change_screen_return)]),
  ] for ct in range(cheat_switch)])+[
 
+# Invisible placeholders keep the menu count:
+
  ]+concatenate_scripts([[ 
-      ("town_cheat_alley",[(eq, 0, 1),], "CHEAT",[]),
+      #("town_cheat_alley",[(eq, 0, 1),], "CHEAT",[]),
 	  ("castle_cheat_interior",[(eq, 0, 1),], "CHEAT",[]),
 	  ("castle_cheat_town_exterior",[(eq, 0, 1),], "CHEAT",[]),
 	  ("castle_cheat_dungeon",[(eq, 0, 1),], "CHEAT",[]),
 	  ("castle_cheat_town_walls",[(eq, 0, 1),], "CHEAT",[]),
 	  ("cheat_town_start_siege",[(eq, 0, 1),], "CHEAT",[]),
-	  ("center_reports",[(eq, 0, 1),], "CHEAT",[]),
-	  ("sail_from_port",[(eq, 0, 1),], "CHEAT",[]),
+	  # ("center_reports",[(eq, 0, 1),], "CHEAT",[]),
+	  # ("sail_from_port",[(eq, 0, 1),], "CHEAT",[]),
  ] for ct in range(1-cheat_switch)])+[
 
 #menu no. 19
