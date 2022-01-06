@@ -1601,7 +1601,9 @@ game_menus = [
      (jump_to_menu, "mnu_auto_return"), # comment this line to let devs skip skill/face editing
      (try_end),
 	],
-	[ ("skip",[],"SKIP THAT: let me playtest now",[(assign, "$cheat_mode", 1), (assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0),(jump_to_menu, "mnu_start_phase_2"),]),
+	[ ("skip",[],"SKIP THAT: let me playtest now",[ #tick QoL options, disable tutorials
+        (assign, "$cheat_mode", 1), (assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0),(assign, "$formations_tutorial", 4),
+        (assign, "$first_time_town",1),(jump_to_menu, "mnu_start_phase_2"),]),
 	  ("proc",[],"Proceed as normal",[(jump_to_menu, "mnu_auto_return"),])]
  ),
 

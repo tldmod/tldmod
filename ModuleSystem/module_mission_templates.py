@@ -1375,7 +1375,7 @@ mission_templates = [ # not used in game
 			]),
   (10, 0, ti_once, [], [ # Kham - Set Tutorial Message RE: Rumours
       (try_begin),
-        (eq, "$first_time_town", 0),
+        (eq, "$first_time_town", 0),(neq, "$cheat_mode", 1),
         (tutorial_message, "@While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.",0,15),
         (assign, "$first_time_town",1),
       (try_end),
