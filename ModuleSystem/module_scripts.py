@@ -12359,6 +12359,9 @@ scripts = [
 	(agent_set_position,":agent", pos5), 				
 	(agent_set_hit_points, ":agent", 0,0), 	# self destruct it!
 	(set_show_messages,0),
+    ] + (is_a_wb_script==1 and [               # make aggravator a statue (WB Only)
+    (agent_set_no_death_knock_down_only, ":agent", 0),
+    ] or []) + [
 	(agent_deliver_damage_to_agent, ":agent", ":agent"), 
 	(set_show_messages,1),
 ]),
