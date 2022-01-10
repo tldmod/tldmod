@@ -1631,6 +1631,7 @@ scene_props = [
     
     #(assign, "$gate_breached",0),
     (prop_instance_get_starting_position, pos1, ":instance_no"),
+    (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
     (assign, ":gate_aggravator", reg0),
@@ -1715,11 +1716,12 @@ scene_props = [
     
     #(assign, "$gate_breached",0),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
     (assign, ":gate_aggravator", reg0),
     (agent_set_speed_limit, ":gate_aggravator", 0),
-    (agent_set_team, ":gate_aggravator", 7),
+    (agent_set_team, ":gate_aggravator", 2),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
@@ -2635,11 +2637,12 @@ scene_props = [
     
     #(assign, "$gate_breached",0),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
     (assign, ":gate_aggravator", reg0),
     (agent_set_speed_limit, ":gate_aggravator", 0),
-    (agent_set_team, ":gate_aggravator", 7),
+    (agent_set_team, ":gate_aggravator", 2),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
