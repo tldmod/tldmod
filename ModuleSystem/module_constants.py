@@ -2116,7 +2116,7 @@ Screen_Undistort_Width_Den = 8
 
 ###FormAI_constants:
 #AI variables
-AI_long_range	= 8000	#do not put over 130m if you want archers to always fire
+AI_long_range	= 15000	#do not put over 130m if you want archers to always fire
 AI_firing_distance	= AI_long_range / 2
 AI_charge_distance	= 2000
 AI_Self_Defence_Distance = 1500 #range for preparing for self defense, JL

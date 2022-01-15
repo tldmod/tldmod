@@ -612,6 +612,9 @@ common_battle_tab_press = (ti_tab_pressed, 0, 0, [],[
 	    (agent_get_kill_count, ":wounded",":player", 1),
 	    (val_add, "$g_custom_battle_team1_death_count", ":wounded"),
 	(else_try),
+		(eq, "$cheat_mode", 1), #always allow retreat in cheat mode
+		(question_box,"str_do_you_want_to_retreat"),
+	(else_try),
 		(call_script, "script_cf_check_enemies_nearby"),
 		(question_box,"str_do_you_want_to_retreat"),
 	(else_try),

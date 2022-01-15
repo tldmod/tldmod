@@ -49,6 +49,7 @@ formAI_scripts = [
 	(store_script_param, ":rel_army_size", 2),
 	(store_script_param, ":battle_presence", 3),
 	(call_script, "script_battlegroup_get_size", ":team_no", grc_archers),
+    (set_fixed_point_multiplier, 100),
 
 	#Shit, Elves! Tactic - kham
 	(try_begin),
@@ -272,6 +273,7 @@ formAI_scripts = [
 #	(store_script_param, ":rel_army_size", 2),
 	(store_script_param, ":battle_presence", 3),
 	(call_script, "script_calculate_decision_numbers", ":team_no", ":battle_presence"),
+    (set_fixed_point_multiplier, 100),
 	
 	(store_mission_timer_a, ":timer"), 
 
@@ -504,7 +506,7 @@ formAI_scripts = [
         (assign, ":team_leader", reg0),
         (gt, ":team_leader", 0),
 		
-		#infantry AI
+#infantry AI
 		#(assign, ":place_leader_by_infantry", 0), #Kham -  removed all these
 		
 		# JL DISENGAGEMENT OF ARCHERS:
@@ -849,7 +851,7 @@ formAI_scripts = [
 			
 		(try_end),	#end of Infantry AI
 		
-		#cavalry AI
+#cavalry AI
 		(call_script, "script_battlegroup_get_size", ":team_no", grc_cavalry),
 		(assign, ":num_cavalry", reg0),
 		(call_script, "script_calculate_decision_numbers", ":team_no", ":battle_presence"), #added by JL to control grand charge and move around threat charge
@@ -883,7 +885,7 @@ formAI_scripts = [
 		#	(display_message, "@Cavarly Orders are now in Charge Mode; Formations Cav AI is disabled"),
 		(try_end),	
 		
-		#cavalry AI
+#cavalry AI
 		(try_begin),
 			(gt, ":num_cavalry", 0),
 			
@@ -1132,6 +1134,7 @@ formAI_scripts = [
 			
 			(else_try),
 				(neq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and cav AI should move around threat to engage instead.
+				(ge, ":timer", 90),
 				(ge, ":grand_charge", "$formai_rand7"), # added by JL --> decision number = battle presence + ([avg_lvl]/3)
 				(ge, ":perc_cav", 50), #if >= 50% of total AI troop size is Cavalry JL
 				(le, ":nearest_target_distance", ":nearest_threat_distance"), #JL changed lt to le in case there are no targets/threats.
@@ -1579,6 +1582,7 @@ formAI_scripts = [
 #	(store_script_param, ":rel_army_size", 2),
 	(store_script_param, ":battle_presence", 3),
 	(call_script, "script_calculate_decision_numbers", ":team_no", ":battle_presence"),
+    (store_mission_timer_a, ":timer"), 
 	
 	##JL code for checking disengagement by reinforcements:
 	(try_begin),
@@ -2389,6 +2393,7 @@ formAI_scripts = [
 			
 			(else_try),
 				(neq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and cav AI should move around threat to engage instead.
+                (gt, ":timer", 90),
 				(ge, ":grand_charge", "$formai_rand7"), # added by JL --> decision number = battle presence + ([avg_lvl]/3)
 				(ge, ":perc_cav", 50), #if >= 50% of total AI troop size is Cavalry JL
 				(le, ":nearest_target_distance", ":nearest_threat_distance"), #JL changed lt to le in case there are no targets/threats.
@@ -2435,7 +2440,7 @@ formAI_scripts = [
 				
 				#JL Set cavalry to aggressively move towards archers if there are 45% or more of them:
 				(try_begin),
-					(gt, ":perc_enemy_others", 45), #if enemy others constitute more than 45% of total enemy
+					(gt, ":perc_enemy_others", 60), #if enemy others constitute more than 45% of total enemy #InVain: changed to 60, compare FormAI v4
 					(assign, ":cavalry_order", mordr_charge),
 					(assign, "$formai_rand7", 35), #lower the odds requirement for around charge to 35
 				(else_try),
@@ -6217,6 +6222,8 @@ formAI_scripts = [
       #	(store_script_param, ":rel_army_size", 2),
       (store_script_param, ":battle_presence", 3),
       (call_script, "script_calculate_decision_numbers", ":team_no", ":battle_presence"),
+      (set_fixed_point_multiplier, 100),
+      (store_mission_timer_a, ":timer"),
       
       #mop up if outnumber enemies more than 6:1
       (try_begin),
@@ -6786,7 +6793,7 @@ formAI_scripts = [
           #close in with no unguarded target farther off, free fight
           (else_try),
             (eq, ":cavalry_order", mordr_charge),
-            (this_or_next | eq, ":num_archers", 0),
+            #(this_or_next | eq, ":num_archers", 0), #Invain: disabled this, triggers Rohan charge
             (le, ":enemy_agent_nearest_cavalry_dist", AI_charge_distance),
             (try_begin),
               (eq, ":num_targets", 1),
@@ -6810,6 +6817,7 @@ formAI_scripts = [
             
           #grand charge if target closer than threat AND not guarded
           (else_try),
+            (gt, ":timer", 90),
             (lt, ":nearest_target_distance", ":nearest_threat_distance"),
             (eq, ":nearest_target_guarded", 0),
             (call_script, "script_formation_end_moto", ":team_no", grc_cavalry),
@@ -12008,7 +12016,7 @@ formAI_scripts = [
  # ("init_noswing_weapons", make_noswing_weapons(items)),
   
 # # M&B Standard AI with changes for formations #CABA - OK; Need expansion when new AI divisions to work with
-  # script_formation_battle_tactic_init_aux
+  # script_formation_battle_tactic_init_aux_moto
   # Input: team_no, battle_tactic
   # Output: none
   ("formation_battle_tactic_init_aux_moto",
