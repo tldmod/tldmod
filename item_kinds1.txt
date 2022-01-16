@@ -9,10 +9,10 @@ itemsfile version 2
  itm_practice_sword Practice_Sword Practice_Sword 1  practice_sword 0  12976130 9223388529554358287 1 0 1.5 100 0 0 0 0 16384 103 0 90 0 524 528
 0
 
- itm_arena_lance Lance Lance 1  arena_lance 0  2286190596 4222124851990272 1 0 2.5 100 0 0 0 0 20480 96 0 150 0 537 532
+ itm_arena_lance Lance Lance 1  arena_lance 0  2251802099875844 4222124851990272 1 0 2.5 100 0 0 0 0 20480 96 0 150 0 537 532
 0
 
- itm_practice_staff Wooden_Staff Wooden_Staff 1  wooden_staff 0  138838020 4222129415393024 1 0 2.5 100 0 0 0 0 16384 103 0 118 0 524 528
+ itm_practice_staff Wooden_Staff Wooden_Staff 1  wooden_staff 0  2251799952523268 4222129415393024 1 0 2.5 100 0 0 0 0 16384 103 0 118 0 524 528
 0
 
  itm_practice_bow Practice_Bow Practice_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6291464 5905584128 1 0 1.5 100 0 0 0 0 0 90 40 0 0 531 0
@@ -213,7 +213,7 @@ itemsfile version 2
  itm_animal_small Small_Animal Small_Animal 4  bry_goat 0  bry_goat_c 2  CWE_sheep_mod_a 4  CWE_sheep_mod_b 8  18014398509481984 0 10 16106389504 0 10 0 0 0 10 25 5 5 60 0 0 0
 0
 
- itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  141824098308 512 1 0 58 100 0 0 0 0 30720 70 70 200 0 542 542
+ itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  2251941637783556 512 1 0 58 100 0 0 0 0 30720 70 70 200 0 542 542
 0
 
  itm_troll_weapon_dmg Giant_Mace Giant_Mace 4  0 2  orc_sledgehammer_troll 8  giant_mace 1  giant_hammer 524288  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 30720 85 50 110 0 542 542
@@ -225,7 +225,7 @@ itemsfile version 2
  itm_troll_aoe troll_aoe troll_aoe 1  0 0  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 1024 90 0 110 0 513 513
 0
 
- itm_free_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  38996869124 9223635923965575392 700 156672 8 100 0 0 0 10 48128 82 0 110 0 256 47
+ itm_free_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  2251838810554372 9223635923965575392 700 156672 8 100 0 0 0 10 48128 82 0 110 0 256 47
 0
 
  itm_free_giant_hammer Giant_Hammer Giant_Hammer 1  giant_hammer 0  137443147778 9223372036854775808 1 0 58 100 0 0 0 0 16384 96 0 150 0 65 80
@@ -261,7 +261,7 @@ itemsfile version 2
  itm_warg_ghost_armour HIDEME_armour HIDEME_armour 1  0 0  139603218445 0 0 0 0 100 200 200 200 0 0 0 0 0 0 0 0
 0
 
- itm_warg_ghost_lance HIDEME_lance HIDEME_lance 1  0 0  137443168260 0 0 0 1 100 0 0 0 0 0 100 0 1 0 256 0
+ itm_warg_ghost_lance HIDEME_lance HIDEME_lance 1  0 0  2251937256853508 0 0 0 1 100 0 0 0 0 0 100 0 1 0 256 0
 0
 
  itm_arrows Arrows Arrows 3  plain_arrow 0  plain_arrow_flying 2305843009213693952  common_quiver 3458764513820540928  65541 1342177280 72 4398046520456 3 100 0 0 0 0 0 0 0 95 30 1 0
@@ -366,22 +366,22 @@ itemsfile version 2
  itm_axe_d Northmen_Axe Northmen_Axe 2  axe_d 0  axe_d_carry 3458764513820540928  80019458 9223388530091229198 300 287892 2 90 0 0 0 0 31744 94 0 60 0 256 31
 0
 
- itm_long_bearded_axe Northmen_Bearded_Longaxe Northmen_Bearded_Longaxe 1  long_bearded_axe 0  38996869124 9223635923965575392 500 156672 7 92 0 0 0 14 46080 84 0 106 0 256 45
+ itm_long_bearded_axe Northmen_Bearded_Longaxe Northmen_Bearded_Longaxe 1  long_bearded_axe 0  2251838810554372 9223635923965575392 500 156672 7 92 0 0 0 14 46080 84 0 106 0 256 45
 0
 
- itm_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  38996869124 9223635923965575392 550 156672 8 93 0 0 0 16 48128 82 0 110 0 256 47
+ itm_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  2251838810554372 9223635923965575392 550 156672 8 93 0 0 0 16 48128 82 0 110 0 256 47
 0
 
- itm_shortened_spear Shortened_Spear Shortened_Spear 1  spear_g_1-9m 0  138772484 9254615759470988544 100 271496 2 90 0 0 0 0 19456 102 0 120 0 281 531
+ itm_shortened_spear Shortened_Spear Shortened_Spear 1  spear_g_1-9m 0  2251799952457732 9254615759470988544 100 271496 2 90 0 0 0 0 19456 102 0 120 0 281 531
 0
 
- itm_spear Spear Spear 1  spear_h_2-15m 0  138772484 9254615759470988544 250 271496 2.25 90 0 0 0 0 20480 98 0 135 0 282 532
+ itm_spear Spear Spear 1  spear_h_2-15m 0  2251799952457732 9254615759470988544 250 271496 2.25 90 0 0 0 0 20480 98 0 135 0 282 532
 0
 
- itm_light_lance Light_Lance Light_Lance 1  spear_b_2-75m 0  2286256132 9254615759470985472 400 271496 2.5 90 0 0 0 0 0 90 0 175 0 283 0
+ itm_light_lance Light_Lance Light_Lance 1  spear_b_2-75m 0  2251802099941380 9254615759470985472 400 271496 2.5 90 0 0 0 0 0 90 0 175 0 283 0
 0
 
- itm_lance Lance Lance 1  spear_d_2-8m 0  2286256132 201326848 400 271496 2.5 91 0 0 0 0 0 88 0 180 0 282 0
+ itm_lance Lance Lance 1  spear_d_2-8m 0  2251802099941380 201326848 400 271496 2.5 91 0 0 0 0 0 88 0 180 0 282 0
 0
 
  itm_tab_shield_small_round_b Round_Cavalry_Shield Round_Cavalry_Shield 1  tableau_shield_small_round_1 0  327687 5100273664 200 251658402 2 90 0 13 0 0 200 98 0 33 0 0 0
@@ -559,7 +559,7 @@ itemsfile version 2
  itm_riv_archer_sword Rivendell_Short_Sword Rivendell_Short_Sword 2  rivendellshortsword1 0  scab_rivendell_shortsword1 3458764513820540928  4259842 9223388564182532111 300 156672 1.25 91 0 0 0 0 27648 110 0 80 0 279 27
 0
 
- itm_riv_spear Rivendell_Spear Rivendell_Spear 1  riv_spear 0  2152038404 9254615759470988544 500 156672 2.25 92 0 0 0 0 20480 102 0 171 0 286 532
+ itm_riv_spear Rivendell_Spear Rivendell_Spear 1  riv_spear 0  2251801965723652 9254615759470988544 500 156672 2.25 92 0 0 0 0 20480 102 0 171 0 286 532
 0
 
  itm_riv_light Rivendell_Tunic Rivendell_Tunic 2  riv_light 0  riv_light_cloak 268435456  16842765 0 100 520093696 6 100 0 10 6 0 0 0 0 0 0 0 0
@@ -893,19 +893,19 @@ itemsfile version 2
  itm_gondor_cav_sword Gondor_Cavalry_Sword Gondor_Cavalry_Sword 2  gondor_riding_sword 0  scab_gondor_riding_sword 3458764513820540928  4259842 9223388564182532111 550 287892 2 93 0 0 0 10 30720 97 0 100 0 277 30
 0
 
- itm_gondor_spear Gondorian_Spear Gondorian_Spear 1  gondor_spear 0  4554756 9254615759470988544 400 156672 2.25 90 0 0 0 0 20480 102 0 153 0 286 532
+ itm_gondor_spear Gondorian_Spear Gondorian_Spear 1  gondor_spear 0  2251799818240004 9254615759470988544 400 156672 2.25 90 0 0 0 0 20480 102 0 153 0 286 532
 0
 
- itm_gondor_tower_spear Gondorian_Tower_Spear Gondorian_Tower_Spear 1  gondor_tower_spear 0  138772484 9254615759470988544 800 156672 2.25 95 0 0 0 0 26624 99 0 173 0 293 538
+ itm_gondor_tower_spear Gondorian_Tower_Spear Gondorian_Tower_Spear 1  gondor_tower_spear 0  2251799952457732 9254615759470988544 800 156672 2.25 95 0 0 0 0 26624 99 0 173 0 293 538
 0
 
- itm_gondor_lance Gondor_Lance Gondor_Lance 1  amroth_lance 0  2286256132 201326848 450 156672 2.25 91 0 0 0 0 0 89 0 204 0 284 0
+ itm_gondor_lance Gondor_Lance Gondor_Lance 1  amroth_lance 0  2251802099941380 201326848 450 156672 2.25 91 0 0 0 0 0 89 0 204 0 284 0
 0
 
  itm_loss_axe Gondor_Fighting_Axe Gondor_Fighting_Axe 1  loss_axe 0  80019458 9223388530091229198 270 287892 2 90 0 0 0 0 28672 103 0 47 0 256 28
 0
 
- itm_loss_war_axe Gondor_War_Axe Gondor_War_Axe 1  loss_axe_2h 0  38996869124 9223635923965575392 430 156672 6 91 0 0 0 16 45056 87 0 75 0 256 44
+ itm_loss_war_axe Gondor_War_Axe Gondor_War_Axe 1  loss_axe_2h 0  2251838810554372 9223635923965575392 430 156672 6 91 0 0 0 16 45056 87 0 75 0 256 44
 0
 
  itm_lorien_sword_a Lorien_Longsword Lorien_Longsword 2  lorien_sword_long 0  scab_lorien_sword_long 3458764513820540928  4259842 9223388564182532111 500 156672 2 91 0 0 0 0 28672 104 0 86 0 276 28
@@ -1082,10 +1082,10 @@ itemsfile version 2
  itm_free_isen_uruk_helm_f Uruk-Hai_Tracker_Helm Uruk-Hai_Tracker_Helm 1  urukhai_trackerhelm_b 0  65548 0 600 174063750 2 92 25 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_free_uruk_pike_a Uruk_Pike Uruk_Pike 1  isengard_pike 0  275087364 4222124851987200 400 271496 3 90 0 0 0 0 16384 81 0 227 0 282 528
+ itm_free_uruk_pike_a Uruk_Pike Uruk_Pike 1  isengard_pike 0  2251800088772612 4222124851987200 400 271496 3 90 0 0 0 0 16384 81 0 227 0 282 528
 0
 
- itm_uruk_pike_b Mordor_Pike Mordor_Pike 1  uruk_pike 0  2154135556 9254615759470985472 300 271496 3 91 0 0 0 11 0 81 0 200 0 285 512
+ itm_uruk_pike_b Mordor_Pike Mordor_Pike 1  uruk_pike 0  2251801967820804 9254615759470985472 300 271496 3 91 0 0 0 11 0 81 0 200 0 285 512
 0
 
  itm_uruk_falchion_a Uruk_Falchion Uruk_Falchion 2  uruk_falchion_a 0  uruk_falchion_b 786432  138477571 9223652412613460206 300 786582 2.5 92 0 0 0 11 35840 104 0 74 0 256 35
@@ -1097,13 +1097,13 @@ itemsfile version 2
  itm_free_uruk_spear Mordor_Spear Mordor_Spear 1  uruk_spear 0  2251802099941380 9254615759470988544 300 271496 2.5 90 0 0 0 0 20480 96 0 168 0 283 532
 0
 
- itm_free_uruk_skull_spear Uruk_Skull_Spear Uruk_Skull_Spear 1  uruk_skull_spear 0  2154135556 9254615759470988544 300 786582 2.5 90 0 0 0 0 20480 96 0 176 0 283 532
+ itm_free_uruk_skull_spear Uruk_Skull_Spear Uruk_Skull_Spear 1  uruk_skull_spear 0  2251801967820804 9254615759470988544 300 786582 2.5 90 0 0 0 0 20480 96 0 176 0 283 532
 0
 
- itm_free_uruk_voulge Uruk_Voulge Uruk_Voulge 1  uruk_voulge 0  38996869124 9223635923965575392 400 786582 8 90 0 0 0 0 38912 87 0 139 0 256 38
+ itm_free_uruk_voulge Uruk_Voulge Uruk_Voulge 1  uruk_voulge 0  2251838810554372 9223635923965575392 400 786582 8 90 0 0 0 0 38912 87 0 139 0 256 38
 0
 
- itm_free_uruk_heavy_axe Uruk_Heavy_Axe Uruk_Heavy_Axe 1  uruk_heavy_axe 0  38996869124 9223635923965575392 300 786582 7 90 0 0 0 0 46080 90 0 99 0 256 45
+ itm_free_uruk_heavy_axe Uruk_Heavy_Axe Uruk_Heavy_Axe 1  uruk_heavy_axe 0  2251838810554372 9223635923965575392 300 786582 7 90 0 0 0 0 46080 90 0 99 0 256 45
 0
 
  itm_isengard_sword Isengard_Sword Isengard_Sword 1  isengard_sword 0  4259842 9223388529822793742 300 786582 2.5 91 0 0 0 11 30720 93 0 75 0 256 30
@@ -1121,7 +1121,7 @@ itemsfile version 2
  itm_isengard_mallet Isengard_Mallet Isengard_Mallet 1  isengard_mallet 0  2252113353048068 9223635919670608096 700 786582 7 94 0 0 0 19 35840 82 0 83 0 256 547
 0
 
- itm_isengard_heavy_axe Isengard_Heavy_Axe Isengard_Heavy_Axe 1  isengard_heavy_axe 0  38996869124 9223635923965575392 500 786582 4.5 94 0 0 0 17 38912 87 0 116 0 0 38
+ itm_isengard_heavy_axe Isengard_Heavy_Axe Isengard_Heavy_Axe 1  isengard_heavy_axe 0  2251838810554372 9223635923965575392 500 786582 4.5 94 0 0 0 17 38912 87 0 116 0 0 38
 0
 
  itm_isengard_heavy_sword Isengard_Heavy_Sword Isengard_Heavy_Sword 1  isengard_heavy_sword 0  342163459 9223635919939043552 500 786582 4.5 95 0 0 0 15 40960 93 0 102 0 256 40
@@ -1154,7 +1154,7 @@ itemsfile version 2
  itm_orc_pick Orc_Pick Orc_Pick 1  khazad_orc_pick_1 0  4276226 9223372040101167118 240 786582 2 91 0 0 0 9 25600 92 0 53 0 256 281
 0
 
- itm_orc_hammer Evil_Hammer Evil_Hammer 1  khazad_orc_th_hammer_1 0  34363998211 9223388532775583758 600 786582 4.5 93 0 0 0 11 30720 83 0 80 0 256 542
+ itm_orc_hammer Evil_Hammer Evil_Hammer 1  khazad_orc_th_hammer_1 0  34363998210 9223388532775583758 600 786582 4.5 93 0 0 0 11 30720 83 0 80 0 256 542
 0
 
  itm_orc_club_b Warg_Rider_Club Warg_Rider_Club 2  orc_club_b 0  khazad_orc_club_1 786432  138493955 9223652415566250222 400 786582 3 91 0 0 0 11 27648 85 0 77 0 256 539
@@ -1166,16 +1166,16 @@ itemsfile version 2
  itm_orc_club_d Evil_Mace Evil_Mace 2  khazad_orc_th_club_2 0  khazad_orc_th_club_1 786432  274882101250 9223388532775583758 500 786582 3.5 93 0 0 0 12 27648 87 0 65 0 256 539
 0
 
- itm_orc_sledgehammer Orc_Sledgehammer Orc_Sledgehammer 1  orc_sledgehammer 0  313807552516 9223372043053957344 150 786582 7 91 0 0 0 13 27648 80 0 75 0 256 539
+ itm_orc_sledgehammer Orc_Sledgehammer Orc_Sledgehammer 1  orc_sledgehammer 0  2252113621237764 9223372043053957344 150 786582 7 91 0 0 0 13 27648 80 0 75 0 256 539
 0
 
  itm_orc_simple_spear Orc_Spear Orc_Spear 2  orc_simple_spear 0  uruk_spear 786432  2251799952195588 9254615759470988544 50 786582 2.5 90 0 0 0 0 0 96 0 152 0 278 0
 0
 
- itm_orc_skull_spear Orc_Skull_Spear Orc_Skull_Spear 2  orc_skull_spear 0  uruk_skull_spear 786432  2285993988 9254615759470985472 200 786582 3 90 0 0 0 0 0 92 0 162 0 281 0
+ itm_orc_skull_spear Orc_Skull_Spear Orc_Skull_Spear 2  orc_skull_spear 0  uruk_skull_spear 786432  2251802099679236 9254615759470985472 200 786582 3 90 0 0 0 0 0 92 0 162 0 281 0
 0
 
- itm_orc_bill Orc_Polearm Orc_Polearm 3  khazad_orc_th_axe_1 0  orc_bill 150  uruk_voulge 786432  274825220 4222124650663424 400 786582 4.5 92 0 0 0 11 30720 83 0 122 0 268 30
+ itm_orc_bill Orc_Polearm Orc_Polearm 3  khazad_orc_th_axe_1 0  orc_bill 150  uruk_voulge 786432  2251800088510468 4222124650663424 400 786582 4.5 92 0 0 0 11 30720 83 0 122 0 268 30
 0
 
  itm_orc_slasher Orc_Short_Sword Orc_Short_Sword 2  orc_machete 0  orc_slasher 786432  4259842 9223388529822793742 50 786582 1.5 90 0 0 0 0 23552 98 0 54 0 256 23
@@ -1511,10 +1511,10 @@ itemsfile version 2
  itm_dunnish_axe Dunnish_Axe Dunnish_Axe 1  dunland_axe_b 0  80019458 9223388530091229198 320 150 2 91 0 0 0 0 35840 100 0 50 0 256 35
 0
 
- itm_dunland_spear Dunnish_Spear Dunnish_Spear 1  dunland_spear 0  2286256132 9254615759470985472 150 271496 2 90 0 0 0 0 0 95 0 150 0 276 0
+ itm_dunland_spear Dunnish_Spear Dunnish_Spear 1  dunland_spear 0  2251802099941380 9254615759470985472 150 271496 2 90 0 0 0 0 0 95 0 150 0 276 0
 0
 
- itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  407207940 9254615759470985472 250 271496 3 91 0 0 0 10 0 85 0 205 0 282 0
+ itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  2251800220893188 9254615759470985472 250 271496 3 91 0 0 0 10 0 85 0 205 0 282 0
 0
 
  itm_free_rohan_armor_a Rohan_Shirt Rohan_Shirt 1  rohan_recruit_poor 0  16842765 0 50 123731968 2 100 0 3 2 0 0 0 0 0 0 0 0
@@ -1535,10 +1535,10 @@ itemsfile version 2
  itm_rohan_inf_sword Rohan_Sword Rohan_Sword 2  rohan_sword_b 0  scab_rohan_sword_b 3458764513820540928  4259842 9223388564182532111 530 287892 1.25 92 0 0 0 0 29696 100 0 95 0 278 29
 0
 
- itm_rohan_spear Rohan_Spear Rohan_Spear 1  rohan_spear 0  138772484 9254615759470988544 300 271496 2.5 90 0 0 0 0 16384 92 0 170 0 285 528
+ itm_rohan_spear Rohan_Spear Rohan_Spear 1  rohan_spear 0  2251799952457732 9254615759470988544 300 271496 2.5 90 0 0 0 0 16384 92 0 170 0 285 528
 0
 
- itm_rohan_lance Rohan_Lance Rohan_Lance 1  rohan_lance 0  2286256132 201326848 500 271496 2.5 92 0 0 0 11 0 88 0 208 0 282 0
+ itm_rohan_lance Rohan_Lance Rohan_Lance 1  rohan_lance 0  2251802099941380 201326848 500 271496 2.5 92 0 0 0 11 0 88 0 208 0 282 0
 0
 
  itm_rohan_sword_c Rohan_Sword Rohan_Sword 2  rohan_sword_c 0  scab_rohan_sword_c 3458764513820540928  4259842 9223388564182532111 520 287892 1.25 91 0 0 0 0 29696 99 0 96 0 277 29
@@ -1650,10 +1650,10 @@ itemsfile version 2
  itm_free_rohan_inf_sword2 Rohan_Sword Rohan_Sword 2  rohan_sword_b 0  scab_rohan_sword_b 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 100 0 95 0 278 29
 0
 
- itm_free_rohan_spear2 Rohan_Spear Rohan_Spear 1  rohan_spear 0  138772484 9254615759470988544 189 271496 2.5 100 0 0 0 0 16384 92 0 170 0 285 528
+ itm_free_rohan_spear2 Rohan_Spear Rohan_Spear 1  rohan_spear 0  2251799952457732 9254615759470988544 189 271496 2.5 100 0 0 0 0 16384 92 0 170 0 285 528
 0
 
- itm_free_rohan_lance2 Rohan_Lance Rohan_Lance 1  rohan_lance 0  2286256132 201326848 300 271496 2.5 100 0 0 0 0 0 88 0 208 0 282 0
+ itm_free_rohan_lance2 Rohan_Lance Rohan_Lance 1  rohan_lance 0  2251802099941380 201326848 300 271496 2.5 100 0 0 0 0 0 88 0 208 0 282 0
 0
 
  itm_free_rohan_sword_c2 Rohan_Sword Rohan_Sword 2  rohan_sword_c 0  scab_rohan_sword_c 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 103 0 96 0 277 29
@@ -1689,13 +1689,13 @@ itemsfile version 2
  itm_mirkwood_sword Woodelf_Sword Woodelf_Sword 2  mirkwood_shortsword 0  scab_mirkwood_shortsword 3458764513820540928  12648450 9223388564182532111 500 150 1.25 92 0 0 0 0 29696 103 0 76 0 283 29
 0
 
- itm_mirkwood_great_spear Greenwood_Great_Spear Greenwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 95 0 0 0 13 30720 106 0 150 0 291 30
+ itm_mirkwood_great_spear Greenwood_Great_Spear Greenwood_Great_Spear 1  mirkwood_great_spear_large 0  2251799952457732 9254615759470988544 900 156672 2.5 95 0 0 0 13 30720 106 0 150 0 291 30
 0
 
- itm_mirkwood_war_spear Greenwood_War_Spear Greenwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 400 156672 2.5 93 0 0 0 12 25600 109 0 150 0 287 25
+ itm_mirkwood_war_spear Greenwood_War_Spear Greenwood_War_Spear 1  mirkwood_war_spear 0  2251799952457732 9254615759470988544 400 156672 2.5 93 0 0 0 12 25600 109 0 150 0 287 25
 0
 
- itm_mirkwood_short_spear Woodelf_Spear Woodelf_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 200 156672 2.5 90 0 0 0 0 15360 104 0 114 0 283 527
+ itm_mirkwood_short_spear Woodelf_Spear Woodelf_Spear 1  mirkwood_short_spear 0  2251799818240004 9254615759470988544 200 156672 2.5 90 0 0 0 0 15360 104 0 114 0 283 527
 0
 
  itm_mirkwood_knife Woodelf_Knife Woodelf_Knife 2  mirkwood_white_knife 0  scab_mirkwood_white_knife 3458764513820540928  12648450 9223388564987838479 100 150 0.75 90 0 0 0 0 24576 120 0 51 0 273 24
@@ -1827,13 +1827,13 @@ itemsfile version 2
  itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372037685248015 100 150 0.75 90 0 0 0 0 22528 120 0 47 0 275 22
 0
 
- itm_harad_short_spear Harad_Short_Spear Harad_Short_Spear 1  harad_short_spear 0  4554756 9254615759470988544 200 271496 2 90 0 0 0 0 10240 100 0 132 0 276 522
+ itm_harad_short_spear Harad_Short_Spear Harad_Short_Spear 1  harad_short_spear 0  2251799818240004 9254615759470988544 200 271496 2 90 0 0 0 0 10240 100 0 132 0 276 522
 0
 
- itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  138772484 9254615761618469120 300 271496 3 92 0 0 0 0 0 81 0 190 0 282 512
+ itm_harad_long_spear Harad_Spear Harad_Spear 1  harad_long_spear 0  2251799952457732 9254615761618469120 300 271496 3 92 0 0 0 0 0 81 0 190 0 282 512
 0
 
- itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  407207940 4222124851987200 780 156672 3 94 0 0 0 13 36864 86 0 149 0 282 36
+ itm_eagle_guard_spear Harasjala_Polearm Harasjala_Polearm 1  eagle_guard_spear 0  2251800220893188 4222124851987200 780 156672 3 94 0 0 0 13 36864 86 0 149 0 282 36
 0
 
  itm_harad_long_shield_a Harad_Leopard_Shield Harad_Leopard_Shield 1  harad_long_shield_a 0  268763143 6442450944 500 251658402 3 93 0 17 0 2 300 82 0 65 0 0 0
@@ -1972,19 +1972,19 @@ itemsfile version 2
  itm_free_variag_greaves Variag_Greaves Variag_Greaves 1  variag_boots 0  69390 0 1000 704643206 3 100 0 0 24 0 0 0 0 0 0 0 0
 0
 
- itm_khand_axe_great Khand_Great_Axe Khand_Great_Axe 1  Khand_Weapon_Axe_Great 0  38996869124 9223635923965575392 500 150 4.5 94 0 0 0 16 41984 87 0 109 0 256 41
+ itm_khand_axe_great Khand_Great_Axe Khand_Great_Axe 1  Khand_Weapon_Axe_Great 0  2251838810554372 9223635923965575392 500 150 4.5 94 0 0 0 16 41984 87 0 109 0 256 41
 0
 
- itm_khand_axe_winged Khand_Winged_Axe Khand_Winged_Axe 1  Khand_Weapon_Axe_Winged 0  34701901828 9223635923965575392 430 150 3 94 0 0 0 15 35840 93 0 96 0 256 35
+ itm_khand_axe_winged Khand_Winged_Axe Khand_Winged_Axe 1  Khand_Weapon_Axe_Winged 0  2251834515587076 9223635923965575392 430 150 3 94 0 0 0 15 35840 93 0 96 0 256 35
 0
 
- itm_khand_halberd Khand_Halberd Khand_Halberd 1  Khand_Weapon_Halberd 0  38929793028 4222129146954496 800 150 6 94 0 0 0 18 38912 88 0 164 0 277 38
+ itm_khand_halberd Khand_Halberd Khand_Halberd 1  Khand_Weapon_Halberd 0  2251838743478276 4222129146954496 800 150 6 94 0 0 0 18 38912 88 0 164 0 277 38
 0
 
- itm_khand_trident Khand_Trident Khand_Trident 1  Khand_Weapon_Trident 0  275087364 9236601365055144192 400 150 2.5 93 0 0 0 13 0 88 0 164 0 291 0
+ itm_khand_trident Khand_Trident Khand_Trident 1  Khand_Weapon_Trident 0  2251800088772612 9236601365055144192 400 150 2.5 93 0 0 0 13 0 88 0 164 0 291 0
 0
 
- itm_khand_voulge Khand_Voulge Khand_Voulge 1  Khand_Weapon_Voulge 0  38929793028 4222129146954496 550 150 5 91 0 0 0 17 38912 88 0 126 0 277 38
+ itm_khand_voulge Khand_Voulge Khand_Voulge 1  Khand_Weapon_Voulge 0  2251838743478276 4222129146954496 550 150 5 91 0 0 0 17 38912 88 0 126 0 277 38
 0
 
  itm_khand_mace1 Khand_Mace Khand_Mace 1  Khand_Weapon_Mace1 0  34498478083 9223652415566250222 300 150 3.5 91 0 0 0 11 21504 95 0 94 0 256 533
@@ -1996,7 +1996,7 @@ itemsfile version 2
  itm_khand_throwing_axe Khand_Throwing_Axe Khand_Throwing_Axe 3  Khand_Weapon_Throwing_Axe 0  Khand_Weapon_Throwing_Axe_quiver 3458764513820540928  Khand_Weapon_Throwing_Axe_inventory 1152921504606846976  88145930 35702112256 300 4398046781448 5 100 0 0 83 2 0 103 20 53 3 60 0
 0
 
- itm_khand_rammace Khand_Ram_Mace Khand_Ram_Mace 1  Khand_Weapon_Mace_Ram 0  279177465860 9223652418519040238 400 271496 6 95 0 0 0 14 33792 84 0 102 0 256 545
+ itm_khand_rammace Khand_Ram_Mace Khand_Ram_Mace 1  Khand_Weapon_Mace_Ram 0  2252078991151108 9223652418519040238 400 271496 6 95 0 0 0 14 33792 84 0 102 0 256 545
 0
 
  itm_khand_pitsword Pit_Fighter_Sword Pit_Fighter_Sword 1  Khand_Weapon_Sword_Pit 0  4259842 9223388529822793743 250 150 1.25 90 0 0 0 0 27648 107 0 66 0 281 27
@@ -2008,7 +2008,7 @@ itemsfile version 2
  itm_khand_2h_tulwar Khand_Great_Tulwar Khand_Great_Tulwar 1  Khand_Weapon_Tulwar_Long 0  6356995 9223635924234010848 540 150 2.75 93 0 0 0 11 40960 92 0 116 0 256 40
 0
 
- itm_khand_lance Khand_Lance Khand_Lance 1  khand_lance 0  2286256132 4222124851986688 450 150 2.5 91 0 0 0 10 0 88 0 218 0 282 0
+ itm_khand_lance Khand_Lance Khand_Lance 1  khand_lance 0  2251802099941380 4222124851986688 450 150 2.5 91 0 0 0 10 0 88 0 218 0 282 0
 0
 
  itm_easterling_round_horseman Easterling_Round_Shield Easterling_Round_Shield 1  eastershield_c 0  327687 5100273664 200 251658402 1 90 0 13 0 0 260 96 0 35 0 0 0
@@ -2101,7 +2101,7 @@ itemsfile version 2
  itm_free_rhun_helm_chieftain Rhun_Chieftain_Helm Rhun_Chieftain_Helm 2  RhunHelmDeathDealer1 0  RhunHelmDeathDealer2 704643206  65548 0 1600 704643206 8 97 40 0 0 20 0 0 0 0 0 0 0
 0
 
- itm_rhun_warpick Rhun_War_Pick Rhun_War_Pick 1  rhun_pick 0  38996869124 9223635923965575392 450 150 5 93 0 0 0 15 29696 86 0 108 0 256 285
+ itm_rhun_warpick Rhun_War_Pick Rhun_War_Pick 1  rhun_pick 0  2251838810554372 9223635923965575392 450 150 5 93 0 0 0 15 29696 86 0 108 0 256 285
 0
 
  itm_rhun_greataxe Rhun_Great_Axe Rhun_Great_Axe 1  rhun_greataxe 0  38728433667 9223635923965575392 560 150 6 95 0 0 0 18 46080 84 0 115 0 256 45
@@ -2113,7 +2113,7 @@ itemsfile version 2
  itm_rhun_falchion Savage_Falchion Savage_Falchion 1  rhun_falchion 0  4259842 9223388529822793742 300 150 2.5 91 0 0 0 0 30720 96 0 77 0 256 30
 0
 
- itm_rhun_glaive Rhun_Glaive Rhun_Glaive 1  rhun_glaive 0  38929793028 4222129146954496 650 150 5 93 0 0 0 14 38912 83 0 156 0 277 38
+ itm_rhun_glaive Rhun_Glaive Rhun_Glaive 1  rhun_glaive 0  2251838743478276 4222129146954496 650 150 5 93 0 0 0 14 38912 83 0 156 0 277 38
 0
 
  itm_rhun_greatfalchion Savage_Great_Falchion Savage_Great_Falchion 1  rhun_greatfalchion 0  6356995 9223635924301119728 730 150 3 92 0 0 0 12 43008 92 0 102 0 287 42
@@ -2194,10 +2194,10 @@ itemsfile version 2
  itm_dale_sword_broad Dale_Infantry_Sword Dale_Infantry_Sword 2  dale_sword_b 0  scab_dale_sword_b 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 91 0 0 0 0 28672 103 0 88 0 277 28
 0
 
- itm_dale_pike Dale_Spear Dale_Spear 1  dale_spear 0  407207940 9254615759470985472 250 271496 3 90 0 0 0 0 20480 95 0 171 0 286 532
+ itm_dale_pike Dale_Spear Dale_Spear 1  dale_spear 0  2251800220893188 9254615759470985472 250 271496 3 90 0 0 0 0 20480 95 0 171 0 286 532
 0
 
- itm_dale_billhook Dale_Billhook Dale_Billhook 1  dale_billhook 0  38929793028 4222124851987200 600 271496 4.5 93 0 0 0 15 36864 95 0 185 0 287 36
+ itm_dale_billhook Dale_Billhook Dale_Billhook 1  dale_billhook 0  2251838743478276 4222124851987200 600 271496 4.5 93 0 0 0 15 36864 95 0 185 0 287 36
 0
 
  itm_dale_shield_a Dale_Tower_Shield Dale_Tower_Shield 1  dale_shield_b 0  268763143 4831838208 300 251658402 4 92 0 13 0 3 320 80 0 60 0 0 0
@@ -2257,7 +2257,7 @@ itemsfile version 2
  itm_free_umb_helm_f Corsair_Tall_Helm Corsair_Tall_Helm 1  umbar_tall_helmet_b 0  65548 0 1200 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_corsair_trident Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  6328324 9236601365055144192 2000 271496 4.5 100 0 0 0 12 0 107 0 166 0 298 0
+ itm_corsair_trident Trident_of_Sea_Fury Trident_of_Sea_Fury 1  corsair_trident 0  2251799820013572 9236601360760176896 2000 271496 4.5 100 0 0 0 12 0 107 0 166 0 298 0
 0
 
  itm_corsair_boots Corsair_Boots Corsair_Boots 1  corsair_boots 0  536940302 0 400 123731968 1 90 0 0 14 0 0 0 0 0 0 0 0
@@ -2275,7 +2275,7 @@ itemsfile version 2
  itm_umb_shield_d Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_c 0  corsair_buckler_round_c_carry 3458764513820540928  327687 5368709120 200 251658402 1 90 0 18 0 0 240 100 0 20 0 0 0
 0
 
- itm_umbar_spear Umbar_Short_Spear Umbar_Short_Spear 1  corsair_spear 0  4554756 9254615759470988544 200 271496 2 90 0 0 0 0 0 102 0 132 0 282 0
+ itm_umbar_spear Umbar_Short_Spear Umbar_Short_Spear 1  corsair_spear 0  2251799818240004 9254615759470988544 200 271496 2 90 0 0 0 0 0 102 0 132 0 282 0
 0
 
  itm_umbar_cutlass Umbar_Cutlass Umbar_Cutlass 2  corsair_cutlass 0  scab_corsair_cutlass 3458764513820540928  4259842 9223388529822793742 350 150 1.5 91 0 0 0 0 26624 104 0 86 0 256 26
@@ -2330,13 +2330,13 @@ itemsfile version 2
  itm_beorn_shield Northmen_Shield Northmen_Shield 2  northmen_shield 0  northmen_shield 771751936  327687 4831838208 200 251658402 3 90 0 14 0 1 290 86 0 35 0 0 0
 0
 
- itm_beorn_axe Beorning_Axe Beorning_Axe 1  beorning_axe 0  38996869124 9223635925844623584 470 156672 5 93 0 0 0 15 44032 94 0 92 0 256 43
+ itm_beorn_axe Beorning_Axe Beorning_Axe 1  beorning_axe 0  2251838810554372 9223635925844623584 470 156672 5 93 0 0 0 15 44032 94 0 92 0 256 43
 0
 
- itm_beorn_staff Woodmen_Staff Woodmen_Staff 1  woodman_staff 0  275016810500 4222131026005760 100 271496 2 90 0 0 0 0 20480 114 0 104 0 532 532
+ itm_beorn_staff Woodmen_Staff Woodmen_Staff 1  woodman_staff 0  2252074830495748 4222131026005760 100 271496 2 90 0 0 0 0 20480 114 0 104 0 532 532
 0
 
- itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  4637130756 9223635925844623584 470 156672 6 94 0 0 0 16 46080 91 0 85 0 256 45
+ itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  2251804450816004 9223635925844623584 470 156672 6 94 0 0 0 16 46080 91 0 85 0 256 45
 0
 
  itm_dwarf_shield_a Dwarven_Angular_Shield Dwarven_Angular_Shield 2  dwarf_angular_shield_a 0  dwarf_angular_shield_b 771751936  327687 4831838208 300 771751936 3 91 0 16 0 2 320 86 0 35 0 0 0
@@ -2405,13 +2405,13 @@ itemsfile version 2
  itm_dwarf_throwing_axe Dwarf_Throwing_Axes Dwarf_Throwing_Axes 3  dwarf_throw_axe 0  dwarf_throw_axe_quiver 3458764513820540928  dwarf_throw_axe_inventory 1152921504606846976  88145930 35702112256 300 4398046781448 5 100 0 0 90 2 0 99 26 35 4 65 0
 0
 
- itm_dwarf_spear Dwarf_Spear Dwarf_Spear 1  dwarf_spear 0  138772484 9254615759470988544 350 156672 2.25 90 0 0 0 9 20480 98 0 140 0 282 532
+ itm_dwarf_spear Dwarf_Spear Dwarf_Spear 1  dwarf_spear 0  2251799952457732 9254615759470988544 350 156672 2.25 90 0 0 0 9 20480 98 0 140 0 282 532
 0
 
- itm_dwarf_spear_b Dwarf_Pike Dwarf_Pike 1  dwarf_spear_b 0  138772484 9254615759470985472 400 156672 2.25 91 0 0 0 11 0 95 0 165 0 285 0
+ itm_dwarf_spear_b Dwarf_Pike Dwarf_Pike 1  dwarf_spear_b 0  2251799952457732 9254615759470985472 400 156672 2.25 91 0 0 0 11 0 95 0 165 0 285 0
 0
 
- itm_dwarf_spear_c Dwarf_Longaxe Dwarf_Longaxe 1  dwarf_longaxe 0  38728466436 4222124851987200 700 156672 6.5 93 0 0 0 16 45056 83 0 150 0 283 44
+ itm_dwarf_spear_c Dwarf_Longaxe Dwarf_Longaxe 1  dwarf_longaxe 0  2251838542151684 4222124851987200 700 156672 6.5 93 0 0 0 16 45056 83 0 150 0 283 44
 0
 
  itm_dwarf_helm_coif Dwarf_Coif Dwarf_Coif 4  DwarfHelmCoif 1  DwarfHelmCoif 0  DwarfHelmCoifMask 134217728  DwarfHelmCoifMask_B 536870912  65548 0 400 704643206 1 90 20 0 0 9 0 0 0 0 0 0 0
@@ -2517,16 +2517,16 @@ itemsfile version 2
  itm_imladris_banner Imladris_Banner Imladris_Banner 1  banner_rivendell 0  274989059 4222124717768960 1000 156672 3 100 0 0 0 0 20480 100 0 120 0 291 532
 0
 
- itm_gondor_lance_banner Gondor_Lance_With_Banner Gondor_Lance_With_Banner 1  banner_lance_gondor 0  2286256132 4222124717768960 1000 156672 3 100 0 0 0 0 0 90 0 217 0 284 0
+ itm_gondor_lance_banner Gondor_Lance_With_Banner Gondor_Lance_With_Banner 1  banner_lance_gondor 0  2251802099941380 4222124717768960 1000 156672 3 100 0 0 0 0 0 90 0 217 0 284 0
 0
 
- itm_amroth_lance_banner Dol_Amroth_Lance_With_Banner Dol_Amroth_Lance_With_Banner 1  banner_lance_dolamroth 0  2286256132 4222124717768960 1000 156672 3 100 0 0 0 0 0 90 0 217 0 284 0
+ itm_amroth_lance_banner Dol_Amroth_Lance_With_Banner Dol_Amroth_Lance_With_Banner 1  banner_lance_dolamroth 0  2251802099941380 4222124717768960 1000 156672 3 100 0 0 0 0 0 90 0 217 0 284 0
 0
 
- itm_rohan_lance_banner_sun Rohan_Lance_With_Sun_Banner Rohan_Lance_With_Sun_Banner 1  banner_lance_rohan_b 0  2286256132 4222124717768960 1000 156672 3 100 0 0 0 0 0 90 0 217 0 286 0
+ itm_rohan_lance_banner_sun Rohan_Lance_With_Sun_Banner Rohan_Lance_With_Sun_Banner 1  banner_lance_rohan_b 0  2251802099941380 4222124717768960 1000 156672 3 100 0 0 0 0 0 90 0 217 0 286 0
 0
 
- itm_rohan_lance_banner_horse Rohan_Lance_With_Horse_Banner Rohan_Lance_With_Horse_Banner 1  banner_lance_rohan_a 0  2286190596 4222124717768960 1000 156672 3 100 0 0 0 0 0 90 0 217 0 286 0
+ itm_rohan_lance_banner_horse Rohan_Lance_With_Horse_Banner Rohan_Lance_With_Horse_Banner 1  banner_lance_rohan_a 0  2251802099875844 4222124717768960 1000 156672 3 100 0 0 0 0 0 90 0 217 0 286 0
 0
 
  itm_free_merry_outfit hobbit_outfit hobbit_outfit 1  merry 0  16781325 0 1 0 1 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2679,7 +2679,7 @@ itemsfile version 2
  itm_dwarf_shield_reward Shield_of_Kheled-zaram Shield_of_Kheled-zaram 1  mithril_shield 0  266247 4831838208 4000 0 4 100 0 35 0 5 450 82 0 60 0 0 0
 0
 
- itm_dwarf_great_axe_reward Dwarf_Sharp_Axe Dwarf_Sharp_Axe 2  dwarf_great_axe_2 0  dwarf_great_axe_2_dain 2199023255552  279514976260 9223635923965575392 700 0 6 100 0 0 0 18 56320 90 0 110 0 256 311
+ itm_dwarf_great_axe_reward Dwarf_Sharp_Axe Dwarf_Sharp_Axe 2  dwarf_great_axe_2 0  dwarf_great_axe_2_dain 2199023255552  2252079328661508 9223635923965575392 700 0 6 100 0 0 0 18 56320 90 0 110 0 256 311
 0
 
  itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_plate_c1 0  16781325 0 2802 0 38 96 2 44 15 18 0 0 0 0 0 0 0
