@@ -1704,10 +1704,10 @@ center_list = [
 	[icon_mfc_moria],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 
 (p_town_dale, [scn_dale_center, scn_dale_castle, scn_rohan_prison,scn_rohan_tavern,scn_dale_arena, scn_dale_siege, mesh_ui_default_menu_window],
-	[-1, trp_smith_dale, trp_merchant_dale, trp_elder_dale, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_i1_dale_militia,trp_a3_dale_bowman], 
+	[-1, trp_smith_dale, trp_merchant_dale, trp_elder_dale, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_i1_dale_militia,trp_townsman], 
 	[icon_mfc_dale],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 0, tld_siegable_capital),
 (p_town_esgaroth, [scn_esgaroth_center, scn_esgaroth_castle, scn_rohan_prison,scn_rohan_tavern,scn_dale_arena,scn_esgaroth_siege,mesh_town_esgaroth],
-	[-1, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_esgaroth, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_i1_dale_militia,trp_a4_dale_archer], 
+	[-1, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_esgaroth, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_watchman,trp_i1_dale_militia,trp_townsman], 
 	[icon_mfc_dale],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 
 (p_town_dunland_camp, [scn_dunland_camp_center, -1, -1,-1,-1,scn_dunland_camp_siege, mesh_town_evilcamp],

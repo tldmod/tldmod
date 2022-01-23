@@ -15,7 +15,11 @@ def get_item_code(item):
   return code
 
 def save_python_header():
-  file = open("./ID/ID_items.py","w")
+  from module_info import wb_compile_switch as is_wb
+  if (is_wb):
+    file = open("./ID/ID_items_wb.py","w")
+  else:
+    file = open("./ID/ID_items_mb.py","w")
   for i_item in xrange(len(items)):
     file.write("itm_%s = %d\n"%(convert_to_identifier(items[i_item][0]),i_item))
   file.close()

@@ -10,7 +10,7 @@ from ID_factions import *
 from ID_items import *
 from ID_scenes import *
 from module_constants import *
-
+from module_info import wb_compile_switch as is_a_wb_troop
  
 ####################################################################################################################
 #  Each troop contains the following fields:
@@ -402,27 +402,35 @@ itm_galadriel = (itm_rohan_armor_th, imod_rusty)
 itm_merry_outfit = (itm_rohan_armor_th, imod_chipped)
 itm_pippin_outfit = (itm_rohan_armor_th, imod_battered)
 itm_denethor_robe = (itm_rohan_armor_th, imod_well_made)
-itm_black_dress = (itm_white_tunic_a, imod_poor)
-itm_blackwhite_dress = (itm_white_tunic_a, imod_old) 
-itm_white_tunic_b = (itm_white_tunic_a, imod_day_old)   
-itm_white_tunic_c = (itm_white_tunic_a, imod_cheap)  
-itm_blue_tunic = (itm_white_tunic_a, imod_well_made)
-itm_green_tunic = (itm_white_tunic_a, imod_sharp)
-itm_red_tunic = itm_black_tunic
-itm_leather_apron = (itm_white_tunic_a, imod_deadly)
-itm_leather_jerkin = (itm_white_tunic_a, imod_exquisite) 
-itm_fur_coat = (itm_white_tunic_a, imod_powerful) 
-itm_green_dress = (itm_white_tunic_a, imod_rough) 
-itm_gondor_fine_outfit_dress = (itm_white_tunic_a, imod_large_bag) 
-itm_rohan_fine_outfit_dale_dress = (itm_white_tunic_a, imod_rotten) 
-itm_robe_generic_dress = (itm_white_tunic_a, imod_fresh)
+itm_riv_helm_glorfi = (itm_witchking_helmet, imod_rotten)
+itm_riv_tiara = (itm_tiara_reward, imod_lordly)
+
+#civilian items
+
+# itm_tabard_b = itm_white_tunic_a
+# itm_nobleman_outfit_b_new = (itm_white_tunic_a, imod_large_bag)
+# itm_peasant_man_a = itm_black_tunic
+# itm_fur_hat_a_new = itm_hood_black
+# itm_noel_hat_a = itm_hood_black
+
+itm_blue_tunic = (itm_white_tunic_a, imod_well_made) #dale_tunic, basic blue
+itm_green_tunic = (itm_white_tunic_a, imod_sharp) #rohan_tunic, basic green
+itm_black_dress = (itm_white_tunic_a, imod_poor) #gondor_dress_a, basic black dress, suits all factions
+itm_leather_apron = (itm_white_tunic_a, imod_deadly) #smith_leather_apron, only use for smiths, not walkers
+itm_white_tunic_b = (itm_white_tunic_a, imod_day_old)   #generic_tunic_a, white
+itm_blackwhite_dress = (itm_white_tunic_a, imod_old) #gondor_dress_b fine dress
+itm_white_tunic_c = (itm_white_tunic_a, imod_cheap)  # generic_tunic_c, tunic and vest
+itm_leather_jerkin = (itm_white_tunic_a, imod_exquisite) #generic_leather_jerkin, all factions
+itm_fur_coat = (itm_white_tunic_a, imod_powerful) #dale_coat
+itm_green_dress = (itm_white_tunic_a, imod_rough) #rohan_dress, could also serve dale, northemen
+itm_gondor_fine_outfit_dress = (itm_white_tunic_a, imod_large_bag) #gondor_fine_outfit_dress, black and white gondor noble outfit
+itm_rohan_fine_outfit_dale_dress = (itm_white_tunic_a, imod_rotten) #rohan_fine_outfit_dale_dress
+itm_robe_generic_dress = (itm_white_tunic_a, imod_fresh) #brown robe, brown dress
 itm_wimple_a = (itm_hood_black, imod_smelling)
 itm_wimple_with_veil = (itm_hood_black, imod_rotten)
 itm_fine_hat = (itm_hood_black, imod_large_bag)
-itm_riv_helm_glorfi = (itm_witchking_helmet, imod_rotten)
 itm_rohan_tunic_a = (itm_white_tunic_a, imod_two_day_old)
 itm_rohan_tunic_b = (itm_white_tunic_a, imod_smelling)
-itm_riv_tiara = (itm_tiara_reward, imod_lordly)
 
 #Trolls
 itm_troll_feet = (itm_ent_feet_boots, imod_cracked)
@@ -491,6 +499,7 @@ itm_leather_boots_bad = 		(itm_leather_boots, imod_rusty)
 itm_leather_boots_dark_bad = 	(itm_leather_boots_dark, imod_rusty)
 itm_splinted_greaves_good = 	(itm_splinted_greaves, imod_reinforced)
 itm_rohan_shoes_bad = 			(itm_rohan_shoes, imod_rusty)
+itm_rohan_shoes_good = 			(itm_rohan_shoes, imod_fine)
 
 #replacing Hoods
 itm_dunedain_helm_a = itm_hood_grey
@@ -1017,13 +1026,28 @@ troops = [
 ["farmer","Farmer","Farmers",tfg_armor|tfg_boots,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots, itm_practice_staff],
       attr_tier_1,wp_tier_1,knows_common,man_face_middle_1,man_face_old_2,man_face_older_2],
-## In Vain Edit 
+
+## Dale Walkers
+ ] + (is_a_wb_troop==1 and [
 ["townsman","Townsman","Townsmen",tfg_boots| tfg_armor,0,0,fac_dale,
-   [itm_corsair_boots, itm_fur_coat,itm_fur_coat,itm_fur_coat,itm_fur_coat, itm_blue_tunic, itm_leather_jerkin, itm_black_tunic, itm_leather_apron, itm_robe_generic_dress, itm_lossarnach_shirt,itm_leather_boots,],
+   [itm_corsair_boots, itm_leather_boots,itm_leather_boots_dark_bad, itm_rohan_shoes,
+   itm_fur_coat_wb, itm_leather_jerkin_wb, itm_black_tunic_wb, itm_lossarnach_shirt, itm_nobleman_outfit_b_new_wb, itm_peasant_man_a_wb, itm_white_tunic_c_wb, itm_red_tunic_wb, itm_sar_robe_b_wb,
+   itm_hood_black, itm_hood_grey_bad, itm_fur_hat_a_new_wb, itm_noel_hat_a_wb],
+      attr_tier_1,wp_tier_1,knows_common,swadian_face_younger_1,swadian_face_old_2],
+["watchman","Townswoman","Townswomen",tf_female| tfg_boots| tfg_armor,0,0,fac_dale,
+   [itm_gondor_ranger_hood, itm_wimple_a_wb, itm_wimple_with_veil, itm_fur_hat_a_new_wb, 
+   itm_robe_generic_dress_wb, itm_black_dress_wb,itm_rohan_fine_outfit_dale_dress_wb,itm_green_dress_wb,itm_peasant_dress_b_new_wb,
+   itm_rohan_shoes_good],
+      attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],      
+] or [
+["townsman","Townsman","Townsmen",tfg_boots| tfg_armor,0,0,fac_dale,
+   [itm_corsair_boots, itm_black_tunic, itm_lossarnach_shirt,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,mercenary_face_1,mercenary_face_2],
 ["watchman","Townswoman","Townswomen",tf_female| tfg_boots| tfg_armor,0,0,fac_dale,
-   [itm_gondor_ranger_hood,itm_robe_generic_dress, itm_black_dress,itm_rohan_fine_outfit_dale_dress,itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,itm_leather_boots],
+   [itm_gondor_ranger_hood,itm_black_tunic, itm_rohan_shoes,itm_leather_boots],
       attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],
+]) + [ 
+
 ["mercenaries_end","bug","bug",0,0,0,fac_commoners,
    [],
       0,1,0,0],
@@ -1056,22 +1080,22 @@ troops = [
    [itm_leather_gloves,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,itm_sumpter_horse,itm_saddle_horse,],
       0,0,0,0],
 #Dale
-["i1_dale_militia","Dale_Militiaman","Dale_Militia",tfg_boots| tfg_armor,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_bad,itm_north_leather_bad,itm_north_leather_ok, itm_blue_tunic,itm_dale_light_a_bad,itm_rohan_shoes,itm_dale_pike, itm_dale_sword, itm_arrows,itm_short_bow,itm_axe_a,itm_north_round_shield,],attr_tier_1,wp_tier_1,knows_common|knows_ironflesh_1|knows_power_draw_2|knows_shield_1|knows_looting_1|knows_trainer_1|knows_tactics_1|knows_spotting_1|knows_inventory_management_1|knows_wound_treatment_1|knows_prisoner_management_1|knows_trade_2,vaegir_face_younger_1,vaegir_face_middle_2],
-["i2_dale_man_at_arms","Dale_Man-at-Arms","Dale_Men-at-Arms",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_good, itm_north_skullcap, itm_north_skullcap_good, itm_dale_helmet_a,itm_dale_light_a, itm_dale_light_a_good, itm_dale_med_b_bad,itm_dale_med_d_bad, itm_leather_boots_bad,itm_rohan_shoes,itm_dale_sword,itm_dale_pike, itm_axe_a, itm_axe_b, itm_axe_c,itm_north_round_shield, itm_dale_shield_c, itm_dale_shield_a,],attr_tier_2,wp_tier_2,knows_common|knows_ironflesh_1|knows_power_strike_1|knows_power_draw_2|knows_shield_2|knows_looting_1|knows_trainer_1|knows_tactics_1|knows_spotting_1|knows_inventory_management_1|knows_wound_treatment_1|knows_prisoner_management_1|knows_trade_2,vaegir_face_young_1,vaegir_face_middle_2],
-["a2_dale_scout","Dale_Scout","Dale_Scouts",tfg_ranged| tfg_boots| tfg_armor,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_good, itm_north_skullcap, itm_dale_light_a, itm_dale_light_a_good,itm_leather_boots_bad,itm_rohan_shoes,itm_arrows,itm_regular_bow,itm_dale_sword, itm_axe_a,],attr_tier_2,wp_tier_bow_2,knows_common|knows_ironflesh_1|knows_power_strike_1|knows_power_draw_2|knows_shield_1|knows_athletics_1|knows_looting_1|knows_trainer_1|knows_tactics_1|knows_spotting_1|knows_inventory_management_1|knows_wound_treatment_1|knows_prisoner_management_1|knows_trade_2,vaegir_face_young_1,vaegir_face_old_2],
-["a3_dale_bowman","Dale_Bowman","Dale_Bowmen",tfg_ranged| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_b,itm_dale_helmet_b,itm_dale_helmet_b, itm_dale_helmet_b_good,itm_dale_med_b,itm_dale_med_b_bad,itm_dale_med_b_ok,itm_dale_med_b_bad,itm_dale_med_b_good,itm_leather_boots_bad,itm_rohan_shoes,itm_arrows,itm_dale_bow,itm_dale_sword, itm_axe_a, itm_axe_b,],attr_tier_3,wp_tier_bow_3,knows_common|knows_ironflesh_2|knows_power_draw_2|knows_power_strike_1|knows_athletics_2,vaegir_face_young_1,vaegir_face_older_2],
-["a4_dale_archer","Dale_Archer","Dale_Archers",tfg_ranged| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_d,itm_dale_helmet_c,itm_dale_med_b_lordly,itm_leather_gloves,itm_leather_boots,itm_leather_boots_dark,itm_arrows,itm_dale_bow,itm_dale_sword, itm_axe_b, itm_axe_c,],attr_tier_4,wp_tier_bow_4,knows_common|knows_ironflesh_3|knows_power_draw_3|knows_power_strike_2|knows_athletics_2,vaegir_face_young_1,vaegir_face_older_2],
-["a5_barding_bowman","Barding_Bowman","Barding_Bowmen",tfg_ranged| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_d_good,itm_dale_helmet_c_good,itm_dale_med_c,itm_dale_med_c_bad,itm_dale_med_c_good,itm_dale_med_c_cloak,itm_leather_gloves_good,itm_leather_boots,itm_leather_boots_dark,itm_arrows,itm_arrows,itm_dale_bow,itm_dale_sword_broad, itm_axe_d,],str_19|agi_18| int_8| cha_8|level(33),wp_archery(260)|wp_melee(180),knows_common|knows_ironflesh_4|knows_power_draw_4|knows_power_strike_2|knows_athletics_3,vaegir_face_young_1,vaegir_face_older_2],
-["i3_dale_swordsman","Dale_Swordsman","Dale_Swordsmen",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_north_skullcap, itm_north_skullcap_good, itm_north_nasal_helm, itm_dale_helmet_a, itm_dale_helmet_a_good,itm_dale_med_d,itm_leather_boots,itm_leather_boots_dark,itm_dale_sword,itm_dale_shield_a, itm_dale_shield_b,],attr_tier_3,wp_tier_3,knows_common|knows_athletics_1|knows_power_strike_2|knows_ironflesh_3|knows_shield_2,vaegir_face_young_1,vaegir_face_old_2],
-["i4_dale_sergeant","Dale_Sergeant","Dale_Sergeants",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_c,itm_dale_med_d_good,itm_dale_heavy_a_bad,itm_leather_gloves,itm_leather_boots_dark, itm_splinted_greaves,itm_dale_sword,itm_dale_sword_broad,itm_axe_d,itm_dale_shield_b,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_power_strike_3|knows_ironflesh_4|knows_shield_3,vaegir_face_young_1,vaegir_face_older_2],
-["i5_dale_hearthman","Hearthman_of_Dale","Hearthmen_of_Dale",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_c, itm_dale_helmet_c_good, itm_dale_helmet_e,itm_dale_heavy_a_good,itm_evil_gauntlets_a,itm_splinted_greaves,itm_dale_sword_broad, itm_axe_d,itm_dale_shield_b_good,],attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_power_strike_4|knows_ironflesh_5|knows_shield_5,vaegir_face_middle_1,vaegir_face_older_2],
-["i3_dale_spearman","Dale_Spearman","Dale_Spearmen",tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_north_skullcap, itm_north_skullcap_good, itm_north_nasal_helm, itm_dale_helmet_a, itm_dale_helmet_a_good,itm_dale_med_c,itm_leather_boots_dark, itm_splinted_greaves,itm_dale_pike,],attr_tier_3,wp_tier_3,knows_common|knows_athletics_1|knows_power_strike_1|knows_ironflesh_1,vaegir_face_young_1,vaegir_face_old_2],
-["i4_dale_billman","Dale_Billman","Dale_Billmen",tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_c,itm_dale_med_c_good,itm_leather_gloves,itm_splinted_greaves,itm_dale_billhook,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_ironflesh_2|knows_power_strike_2,vaegir_face_young_1,vaegir_face_older_2],
-["i5_dale_bill_master","Dale_Bill_Master","Dale_Bill_Masters",tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_c, itm_dale_helmet_c_good, itm_dale_helmet_f,itm_dale_heavy_b,itm_dale_heavy_b_good, itm_dale_heavy_b_pelt, itm_dale_heavy_b_lordly,itm_evil_gauntlets_b_good,itm_splinted_greaves_good,itm_dale_billhook,],attr_tier_5,wp_tier_5,knows_common|knows_athletics_2|knows_ironflesh_5|knows_power_strike_4,vaegir_face_middle_1,vaegir_face_older_2],
-["c2_rhovanion_retainer","Northmen_Retainer","Northmen_Retainers",tfg_boots| tfg_armor| tfg_shield,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_bad,itm_dale_light_b, itm_dale_light_b_good,itm_north_leather_ok,itm_leather_boots_dark_bad,itm_rohan_shoes,itm_dale_pike,itm_dale_sword_long,itm_north_round_shield,itm_beorn_shield,itm_dale_horse,],attr_tier_2,wp_tier_2,knows_common|knows_riding_2|knows_athletics_1|knows_ironflesh_1|knows_shield_3,vaegir_face_young_1,vaegir_face_old_2],
-["c3_rhovanion_auxilia","Northmen_Auxiliary","Northmen_Auxilia",tf_mounted| tfg_boots| tfg_armor| tfg_helm| tfg_horse| tfg_shield,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_bad,itm_north_leather_skullcap_good, itm_north_skullcap,itm_dale_light_b_good, itm_dale_light_b_lordly,itm_north_leather_good,itm_leather_boots_dark,itm_lance,itm_dale_sword_long,itm_north_round_shield,itm_beorn_shield,itm_dale_horse,],attr_tier_3,wp_tier_3,knows_common|knows_riding_4|knows_athletics_1|knows_ironflesh_1|knows_power_strike_1|knows_shield_3,vaegir_face_young_1,vaegir_face_old_2],
-["c4_rhovanion_rider","Rhovanion_Rider","Rhovanion_Riders",tf_mounted| tfg_boots| tfg_armor| tfg_helm| tfg_horse| tfg_shield,0,0,fac_dale,[itm_north_leather_skullcap_good, itm_north_skullcap, itm_north_nasal_helm, itm_north_skullcap_good,itm_dale_med_a_bad, itm_dale_med_a,itm_leather_boots_dark,itm_lance,itm_dale_sword_long,itm_north_round_shield, itm_dale_shield_c,itm_dale_shield_c_good,itm_dale_horse,itm_dale_warhorse,],attr_tier_4,wp_tier_4,knows_common|knows_riding_5|knows_ironflesh_2|knows_power_strike_2|knows_shield_4,vaegir_face_young_1,vaegir_face_older_2],
-["ac5_rhovanion_marchwarden","Rhovanion_Marchwarden","Rhovanion_Marchwardens",tf_mounted| tfg_boots| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_shield|tfg_ranged,0,0,fac_dale,[itm_dale_helmet_e, itm_dale_helmet_f,itm_north_skullcap_good,itm_dale_med_a_good,itm_dale_med_a_lordly,itm_leather_gloves,itm_leather_boots_dark,itm_dale_sword_long, itm_javelin, itm_javelin,itm_north_round_shield, itm_dale_shield_c,itm_dale_shield_c_good,itm_dale_warhorse,],attr_tier_5,wp_tier_5,knows_common|knows_riding_8|knows_shield_5|knows_ironflesh_3|knows_power_strike_3|knows_power_throw_6|knows_horse_archery_5,vaegir_face_middle_1,vaegir_face_older_2],
+["i1_dale_militia","Dale_Militiaman","Dale_Militia",tfg_boots| tfg_armor,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_bad,itm_hood_grey_bad,itm_north_leather,itm_dale_light_a_bad,itm_rohan_shoes,itm_dale_pike, itm_dale_sword, itm_arrows,itm_short_bow,itm_axe_a,itm_north_round_shield,],attr_tier_1,wp_tier_1,knows_common|knows_ironflesh_1|knows_power_draw_2|knows_shield_1|knows_looting_1|knows_trainer_1|knows_tactics_1|knows_spotting_1|knows_inventory_management_1|knows_wound_treatment_1|knows_prisoner_management_1|knows_trade_2,swadian_face_younger_1,swadian_face_middle_2],
+["i2_dale_man_at_arms","Dale_Man-at-Arms","Dale_Men-at-Arms",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_good, itm_north_skullcap, itm_north_skullcap_good, itm_dale_helmet_a,itm_dale_light_a, itm_dale_light_a_good, itm_dale_med_b_bad,itm_dale_med_d_bad, itm_leather_boots_bad,itm_rohan_shoes,itm_dale_sword,itm_dale_pike, itm_axe_a, itm_axe_b, itm_axe_c,itm_north_round_shield, itm_dale_shield_c, itm_dale_shield_a,],attr_tier_2,wp_tier_2,knows_common|knows_ironflesh_1|knows_power_strike_1|knows_power_draw_2|knows_shield_2|knows_looting_1|knows_trainer_1|knows_tactics_1|knows_spotting_1|knows_inventory_management_1|knows_wound_treatment_1|knows_prisoner_management_1|knows_trade_2,swadian_face_young_1,swadian_face_middle_2],
+["a2_dale_scout","Dale_Scout","Dale_Scouts",tfg_ranged| tfg_boots| tfg_armor,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_good, itm_north_skullcap, itm_dale_light_a, itm_dale_light_a_good,itm_north_leather_ok,itm_north_leather_good,itm_leather_boots_bad,itm_rohan_shoes,itm_arrows,itm_regular_bow,itm_dale_sword, itm_axe_a,],attr_tier_2,wp_tier_bow_2,knows_common|knows_ironflesh_1|knows_power_strike_1|knows_power_draw_2|knows_shield_1|knows_athletics_1|knows_looting_1|knows_trainer_1|knows_tactics_1|knows_spotting_1|knows_inventory_management_1|knows_wound_treatment_1|knows_prisoner_management_1|knows_trade_2,swadian_face_young_1,swadian_face_old_2],
+["a3_dale_bowman","Dale_Bowman","Dale_Bowmen",tfg_ranged| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_b,itm_dale_helmet_b,itm_dale_helmet_b, itm_dale_helmet_b_good,itm_dale_med_b,itm_dale_med_b_bad,itm_dale_med_b_ok,itm_dale_med_b_bad,itm_dale_med_b_good,itm_leather_boots_bad,itm_rohan_shoes,itm_arrows,itm_dale_bow,itm_dale_sword, itm_axe_a, itm_axe_b,],attr_tier_3,wp_tier_bow_3,knows_common|knows_ironflesh_2|knows_power_draw_2|knows_power_strike_1|knows_athletics_2,swadian_face_young_1,swadian_face_older_2],
+["a4_dale_archer","Dale_Archer","Dale_Archers",tfg_ranged| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_d,itm_dale_helmet_c,itm_dale_med_b_lordly,itm_leather_gloves,itm_leather_boots,itm_leather_boots_dark,itm_arrows,itm_dale_bow,itm_dale_sword, itm_axe_b, itm_axe_c,],attr_tier_4,wp_tier_bow_4,knows_common|knows_ironflesh_3|knows_power_draw_3|knows_power_strike_2|knows_athletics_2,swadian_face_young_1,swadian_face_older_2],
+["a5_barding_bowman","Barding_Bowman","Barding_Bowmen",tfg_ranged| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_d_good,itm_dale_helmet_c_good,itm_dale_med_c,itm_dale_med_c_bad,itm_dale_med_c_good,itm_dale_med_c_cloak,itm_leather_gloves_good,itm_leather_boots,itm_leather_boots_dark,itm_arrows,itm_arrows,itm_dale_bow,itm_dale_sword_broad, itm_axe_d,],str_19|agi_18| int_8| cha_8|level(33),wp_archery(260)|wp_melee(180),knows_common|knows_ironflesh_4|knows_power_draw_4|knows_power_strike_2|knows_athletics_3,swadian_face_young_1,swadian_face_older_2],
+["i3_dale_swordsman","Dale_Swordsman","Dale_Swordsmen",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_north_skullcap, itm_north_skullcap_good, itm_north_nasal_helm, itm_dale_helmet_a, itm_dale_helmet_a_good,itm_dale_med_d,itm_leather_boots,itm_leather_boots_dark,itm_dale_sword,itm_dale_shield_a, itm_dale_shield_b,],attr_tier_3,wp_tier_3,knows_common|knows_athletics_1|knows_power_strike_2|knows_ironflesh_3|knows_shield_2,swadian_face_young_1,swadian_face_old_2],
+["i4_dale_sergeant","Dale_Sergeant","Dale_Sergeants",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_c,itm_dale_med_d_good,itm_dale_heavy_a_bad,itm_leather_gloves,itm_leather_boots_dark, itm_splinted_greaves,itm_dale_sword,itm_dale_sword_broad,itm_axe_d,itm_dale_shield_b,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_power_strike_3|knows_ironflesh_4|knows_shield_3,swadian_face_young_1,swadian_face_older_2],
+["i5_dale_hearthman","Hearthman_of_Dale","Hearthmen_of_Dale",tfg_shield| tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_c, itm_dale_helmet_c_good, itm_dale_helmet_e,itm_dale_heavy_a_good,itm_evil_gauntlets_a,itm_splinted_greaves,itm_dale_sword_broad, itm_axe_d,itm_dale_shield_b_good,],attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_power_strike_4|knows_ironflesh_5|knows_shield_5,swadian_face_middle_1,swadian_face_older_2],
+["i3_dale_spearman","Dale_Spearman","Dale_Spearmen",tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_north_skullcap, itm_north_skullcap_good, itm_north_nasal_helm, itm_dale_helmet_a, itm_dale_helmet_a_good,itm_dale_med_c,itm_leather_boots_dark, itm_splinted_greaves,itm_dale_pike,],attr_tier_3,wp_tier_3,knows_common|knows_athletics_1|knows_power_strike_1|knows_ironflesh_1,swadian_face_young_1,swadian_face_old_2],
+["i4_dale_billman","Dale_Billman","Dale_Billmen",tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_c,itm_dale_med_c_good,itm_leather_gloves,itm_splinted_greaves,itm_dale_billhook,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_2|knows_ironflesh_2|knows_power_strike_2,swadian_face_young_1,swadian_face_older_2],
+["i5_dale_bill_master","Dale_Bill_Master","Dale_Bill_Masters",tfg_boots| tfg_armor| tfg_helm,0,0,fac_dale,[itm_dale_helmet_c, itm_dale_helmet_c_good, itm_dale_helmet_f,itm_dale_heavy_b,itm_dale_heavy_b_good, itm_dale_heavy_b_pelt, itm_dale_heavy_b_lordly,itm_evil_gauntlets_b_good,itm_splinted_greaves_good,itm_dale_billhook,],attr_tier_5,wp_tier_5,knows_common|knows_athletics_2|knows_ironflesh_5|knows_power_strike_4,swadian_face_middle_1,swadian_face_older_2],
+["c2_rhovanion_retainer","Northmen_Retainer","Northmen_Retainers",tfg_boots| tfg_armor| tfg_shield,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_bad,itm_dale_light_b, itm_dale_light_b_good,itm_north_leather_ok,itm_leather_boots_dark_bad,itm_rohan_shoes,itm_dale_pike,itm_dale_sword_long,itm_north_round_shield,itm_beorn_shield,itm_dale_horse,],attr_tier_2,wp_tier_2,knows_common|knows_riding_2|knows_athletics_1|knows_ironflesh_1|knows_shield_3,nord_face_young_1,nord_face_old_2],
+["c3_rhovanion_auxilia","Northmen_Auxiliary","Northmen_Auxilia",tf_mounted| tfg_boots| tfg_armor| tfg_helm| tfg_horse| tfg_shield,0,0,fac_dale,[itm_north_leather_skullcap, itm_north_leather_skullcap_bad,itm_north_leather_skullcap_good, itm_north_skullcap,itm_dale_light_b_good, itm_dale_light_b_lordly,itm_north_leather_good,itm_leather_boots_dark,itm_lance,itm_dale_sword_long,itm_north_round_shield,itm_beorn_shield,itm_dale_horse,],attr_tier_3,wp_tier_3,knows_common|knows_riding_4|knows_athletics_1|knows_ironflesh_1|knows_power_strike_1|knows_shield_3,nord_face_young_1,nord_face_old_2],
+["c4_rhovanion_rider","Rhovanion_Rider","Rhovanion_Riders",tf_mounted| tfg_boots| tfg_armor| tfg_helm| tfg_horse| tfg_shield,0,0,fac_dale,[itm_north_leather_skullcap_good, itm_north_skullcap, itm_north_nasal_helm, itm_north_skullcap_good,itm_dale_med_a_bad, itm_dale_med_a,itm_leather_boots_dark,itm_lance,itm_dale_sword_long,itm_north_round_shield, itm_dale_shield_c,itm_dale_shield_c_good,itm_dale_horse,itm_dale_warhorse,],attr_tier_4,wp_tier_4,knows_common|knows_riding_5|knows_ironflesh_2|knows_power_strike_2|knows_shield_4,nord_face_young_1,nord_face_older_2],
+["ac5_rhovanion_marchwarden","Rhovanion_Marchwarden","Rhovanion_Marchwardens",tf_mounted| tfg_boots| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_shield|tfg_ranged,0,0,fac_dale,[itm_dale_helmet_e, itm_dale_helmet_f,itm_north_skullcap_good,itm_dale_med_a_good,itm_dale_med_a_lordly,itm_leather_gloves,itm_leather_boots_dark,itm_dale_sword_long, itm_javelin, itm_javelin,itm_north_round_shield, itm_dale_shield_c,itm_dale_shield_c_good,itm_dale_warhorse,],attr_tier_5,wp_tier_5,knows_common|knows_riding_8|knows_shield_5|knows_ironflesh_3|knows_power_strike_3|knows_power_throw_6|knows_horse_archery_5,nord_face_middle_1,nord_face_older_2],
 
 ["dale_items","BUG","BUG",tf_hero,0,0,fac_dale,
    [itm_leather_boots,itm_leather_gloves,itm_short_bow,itm_arrows,itm_sumpter_horse,itm_saddle_horse,itm_good_mace,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,itm_dale_heavy_a, itm_dale_heavy_c,],
@@ -1730,41 +1754,106 @@ troops = [
       attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
 # Ryan END
  
-#TLD walkers - In Vain Edit
+ 
+ ] + (is_a_wb_troop==1 and [
+#TLD walkers - WB
 ["walker_man_gondor_black","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
-   [itm_corsair_boots,itm_pelargir_hood, itm_gondor_fine_outfit_dress, itm_blue_tunic, itm_white_tunic_a, itm_gon_jerkin, itm_white_tunic_a, itm_white_tunic_b, itm_white_tunic_c, itm_black_tunic, itm_leather_boots,],
+   [itm_peasant_man_a_wb, itm_white_tunic_c_wb, itm_white_tunic_a_wb, itm_black_tunic_wb, 
+   itm_leather_boots_bad, itm_corsair_boots, itm_rohan_shoes_bad],
       attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
+# Minas Tirith, Pelargir, Dol Amroth
 ["walker_man_gondor_white","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
-   [itm_corsair_boots, itm_gondor_fine_outfit_dress, itm_gondor_fine_outfit_dress, itm_white_tunic_a, itm_white_tunic_b, itm_white_tunic_c, itm_blue_tunic, itm_black_tunic, itm_denethor_robe, itm_leather_boots,],
+   [itm_corsair_boots, itm_rohan_shoes_good,
+   itm_gondor_fine_outfit_dress, itm_denethor_robe, itm_white_tunic_c_wb, itm_white_tunic_a_wb, itm_black_tunic_wb, itm_nobleman_outfit_b_new_wb, itm_tabard_b_wb, ],
       attr_tier_5,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
+# Dol Amroth, Lossarnach
 ["walker_man_gondor_blue","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
-   [itm_hood_black,itm_pelargir_hood,itm_gondor_fine_outfit_dress, itm_blue_tunic, itm_white_tunic_a, itm_gon_jerkin, itm_leather_jerkin, itm_black_tunic,itm_leather_apron,itm_lossarnach_shirt, itm_leather_boots,],
+   [itm_hood_black_bad,itm_hood_grey_bad,
+   itm_peasant_man_a_wb, itm_white_tunic_c_wb, itm_white_tunic_a_wb, itm_black_tunic_wb, 
+   itm_leather_boots_dark_bad, itm_rohan_shoes_bad],
       attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
+# Linhir, Edhellond, Lossarnach, Tarnost, Erech, Pinnath, Calembel
 ["walker_man_gondor_green","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
-   [itm_hood_black,itm_blue_tunic, itm_white_tunic_a, itm_leather_jerkin, itm_black_tunic, itm_leather_apron, itm_leather_boots,itm_rohan_shoes],
+   [itm_hood_green_bad, itm_hood_black, itm_hood_grey, itm_lossarnach_cloth_cap, 
+   itm_peasant_man_a_wb, itm_black_tunic_wb, itm_white_tunic_c_wb, itm_leather_jerkin_wb, itm_lossarnach_shirt,itm_sar_robe_b_wb,
+   itm_leather_boots_bad, itm_corsair_boots, itm_rohan_shoes, ],
       attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
 ["walker_man_rohan_t","Rohan_Townsman","_",tf_rohan| tfg_boots| tfg_armor,0,0,fac_rohan,
-   [itm_green_tunic, itm_rohan_tunic_a,itm_rohan_tunic_b, itm_rohan_fine_outfit_dale_dress, itm_white_tunic_a, itm_leather_jerkin, itm_black_tunic, itm_leather_apron, itm_leather_boots,itm_rohan_shoes],
+   [itm_fur_hat_a_new_wb, 
+   itm_tabard_b_wb, itm_peasant_man_a_wb, itm_leather_jerkin_wb, itm_white_tunic_c_wb, itm_rohan_fine_outfit_dale_dress_wb, itm_rohan_tunic_a_wb, itm_rohan_tunic_b_wb, 
+   itm_leather_boots,itm_rohan_shoes],
       attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
 ["walker_man_rohan_d","Rohan_Townsman","_",tf_rohan| tfg_boots| tfg_armor,0,0,fac_rohan,
-   [itm_gondor_ranger_hood,itm_green_tunic,itm_rohan_tunic_a,itm_rohan_tunic_b, itm_rohan_fine_outfit_dale_dress, itm_white_tunic_a, itm_leather_jerkin, itm_black_tunic, itm_leather_apron,  itm_rohan_shoes,],
-      attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
+   [itm_hood_grey, itm_hood_green,
+   itm_tabard_b_wb, itm_peasant_man_a_wb, itm_leather_jerkin_wb, itm_white_tunic_c_wb, itm_rohan_fine_outfit_dale_dress_wb, itm_rohan_tunic_a_wb, itm_rohan_tunic_b_wb, itm_sar_robe_b_wb,
+   itm_leather_boots_bad,itm_rohan_shoes_bad],
+   attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
 ["walker_woman_rohan_t","Rohan_Maiden","_",tf_female| tfg_boots| tfg_armor,0,0,fac_rohan,
-   [itm_gondor_ranger_hood,itm_robe_generic_dress,itm_green_dress, itm_black_dress,itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,itm_leather_boots],
+   [itm_hood_green_bad,
+   itm_robe_generic_dress_wb,itm_green_dress_wb, itm_black_dress_wb,itm_rohan_fine_outfit_dale_dress_wb,
+   itm_rohan_shoes_bad,itm_leather_boots_bad],
       attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],
 ["walker_woman_rohan_d","Rohan_Maiden","_",tf_female| tfg_boots| tfg_armor,0,0,fac_rohan,
-   [itm_robe_generic_dress,itm_rohan_fine_outfit_dale_dress, itm_green_dress, itm_black_dress, itm_green_tunic, itm_white_tunic_a,itm_leather_jerkin, itm_black_tunic, itm_leather_apron,itm_leather_boots,itm_rohan_shoes],
+   [itm_hood_grey, itm_hood_green, itm_fur_hat_a_new_wb,
+   itm_robe_generic_dress_wb,itm_rohan_fine_outfit_dale_dress_wb, itm_green_dress_wb, itm_black_dress_wb, itm_green_tunic_wb, itm_leather_jerkin_wb, itm_black_tunic_wb,itm_peasant_man_a_wb,
+   itm_leather_boots,itm_rohan_shoes],
       attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],
+# all except MT
 ["walker_woman_gondor_b","Gondor_Woman","_",tf_female| tfg_boots| tfg_armor| tfg_helm,0,0,fac_gondor,
-   [itm_robe_generic_dress,itm_rohan_fine_outfit_dale_dress,itm_black_dress, itm_wimple_a, itm_wimple_with_veil ,itm_leather_boots,],
+   [itm_hood_black_bad,itm_hood_grey_bad,
+   itm_robe_generic_dress,itm_rohan_fine_outfit_dale_dress,itm_black_dress,itm_green_dress_wb, itm_peasant_dress_b_new_wb, 
+    itm_rohan_shoes_bad, itm_leather_boots_dark_bad,],
    attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
+# all Gondor Cities except Calembel
 ["walker_woman_gondor_bw","Gondor_Woman","_",tf_female| tfg_boots| tfg_armor| tfg_helm,0,0,fac_gondor,
-   [itm_robe_generic_dress,itm_black_dress,itm_black_dress, itm_blackwhite_dress,itm_wimple_a, itm_wimple_with_veil, itm_fine_hat,itm_leather_boots,],
+   [itm_wimple_a_wb, itm_wimple_with_veil_wb, itm_fine_hat_wb, 
+   itm_robe_generic_dress,itm_black_dress,itm_black_dress, itm_sarranid_lady_dress_wb,itm_peasant_dress_b_new_wb,  itm_gondor_fine_outfit_dress,itm_blackwhite_dress_wb,
+   itm_rohan_shoes_good],
       attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
+# Minas Tirith only
 ["walker_woman_gondor_w","Gondor_Noble","_",tf_male| tfg_boots| tfg_armor,0,0,fac_gondor,
-   [itm_gondor_fine_outfit_dress,itm_gondor_fine_outfit_dress,itm_gondor_fine_outfit_dress,itm_denethor_robe,itm_leather_boots,itm_corsair_boots],
+   [itm_gondor_fine_outfit_dress,itm_gondor_fine_outfit_dress, itm_denethor_robe,itm_nobleman_outfit_b_new_wb,
+   itm_rohan_shoes_good],
       attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
 # end TLD walkers
+
+        ] or [
+        #TLD walkers - M&B
+        ["walker_man_gondor_black","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
+           [itm_corsair_boots,itm_pelargir_hood, itm_gondor_fine_outfit_dress, itm_blue_tunic, itm_white_tunic_a, itm_gon_jerkin, itm_white_tunic_a, itm_white_tunic_b, itm_white_tunic_c, itm_black_tunic, itm_leather_boots,],
+              attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
+        ["walker_man_gondor_white","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
+           [itm_corsair_boots, itm_gondor_fine_outfit_dress, itm_gondor_fine_outfit_dress, itm_white_tunic_a, itm_white_tunic_b, itm_white_tunic_c, itm_blue_tunic, itm_black_tunic, itm_denethor_robe, itm_leather_boots,],
+              attr_tier_5,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
+        ["walker_man_gondor_blue","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
+           [itm_hood_black,itm_pelargir_hood,itm_gondor_fine_outfit_dress, itm_blue_tunic, itm_white_tunic_a, itm_gon_jerkin, itm_leather_jerkin, itm_black_tunic,itm_leather_apron,itm_lossarnach_shirt, itm_leather_boots,],
+              attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
+        ["walker_man_gondor_green","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
+           [itm_hood_black,itm_blue_tunic, itm_white_tunic_a, itm_leather_jerkin, itm_black_tunic, itm_leather_apron, itm_leather_boots,itm_rohan_shoes],
+              attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
+        ["walker_man_rohan_t","Rohan_Townsman","_",tf_rohan| tfg_boots| tfg_armor,0,0,fac_rohan,
+           [itm_rohan_tunic_a,itm_rohan_tunic_b, itm_rohan_fine_outfit_dale_dress, itm_white_tunic_a, itm_leather_jerkin, itm_black_tunic, itm_leather_apron, itm_leather_boots,itm_rohan_shoes],
+              attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
+        ["walker_man_rohan_d","Rohan_Townsman","_",tf_rohan| tfg_boots| tfg_armor,0,0,fac_rohan,
+           [itm_gondor_ranger_hood,itm_rohan_tunic_a,itm_rohan_tunic_b, itm_rohan_fine_outfit_dale_dress, itm_white_tunic_a, itm_leather_jerkin, itm_black_tunic, itm_leather_apron,  itm_rohan_shoes,],
+              attr_tier_1,wp_tier_1,knows_common,rohan_face_middle_1,rohan_face_older_2],
+        ["walker_woman_rohan_t","Rohan_Maiden","_",tf_female| tfg_boots| tfg_armor,0,0,fac_rohan,
+           [itm_gondor_ranger_hood,itm_robe_generic_dress,itm_green_dress, itm_black_dress,itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,itm_leather_boots],
+              attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],
+        ["walker_woman_rohan_d","Rohan_Maiden","_",tf_female| tfg_boots| tfg_armor,0,0,fac_rohan,
+           [itm_robe_generic_dress,itm_rohan_fine_outfit_dale_dress, itm_green_dress, itm_black_dress, itm_green_tunic, itm_white_tunic_a,itm_leather_jerkin, itm_black_tunic, itm_leather_apron,itm_leather_boots,itm_rohan_shoes],
+              attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],
+        ["walker_woman_gondor_b","Gondor_Woman","_",tf_female| tfg_boots| tfg_armor| tfg_helm,0,0,fac_gondor,
+           [itm_robe_generic_dress,itm_rohan_fine_outfit_dale_dress,itm_black_dress, itm_wimple_a, itm_wimple_with_veil ,itm_leather_boots,],
+           attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
+        ["walker_woman_gondor_bw","Gondor_Woman","_",tf_female| tfg_boots| tfg_armor| tfg_helm,0,0,fac_gondor,
+           [itm_robe_generic_dress,itm_black_dress,itm_black_dress, itm_blackwhite_dress,itm_wimple_a, itm_wimple_with_veil, itm_fine_hat,itm_leather_boots,],
+              attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
+        ["walker_woman_gondor_w","Gondor_Noble","_",tf_male| tfg_boots| tfg_armor,0,0,fac_gondor,
+           [itm_gondor_fine_outfit_dress,itm_gondor_fine_outfit_dress,itm_gondor_fine_outfit_dress,itm_denethor_robe,itm_leather_boots,itm_corsair_boots],
+              attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
+        # end TLD walkers
+        ]) + [ 
 
 # Ryan BEGIN
 ["ramun_the_slave_trader","Ramun_the_slave_trader","_",tf_hero,0,0,fac_commoners,
@@ -3237,7 +3326,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 #These troops have been moved out of item factionization range, so their equipment doesn't show up in stores.
 ["i5_moria_deep_dweller","Deep-Dweller_of_Moria","Deep-Dwellers_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_moria,[itm_orc_bughelm_lordly,itm_orc_bughelm_lordly,itm_uruk_helm_e,itm_uruk_helm_f,itm_moria_armor_e,itm_orc_greaves,itm_orc_club_d_heavy,itm_dwarf_war_pick_old,itm_orc_javelin,itm_orc_javelin,itm_moria_orc_shield_b,itm_moria_orc_shield_c],attr_orc_tier_5,wp_orc_tier_5,knows_common|knows_athletics_7|knows_power_strike_6|knows_power_throw_5|knows_ironflesh_7,orc_face5,orc_face4],
 ["i5_moria_orc_chieftain","Orc_Chieftain_of_Moria","Orc_Chieftains_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,[itm_orc_beakhelm_lordly,itm_uruk_helm_c,itm_uruk_helm_d,itm_uruk_helm_f,(itm_moria_armor_e, imod_sturdy),(itm_moria_armor_e, imod_reinforced),(itm_moria_armor_e, imod_lordly),itm_uruk_greaves, itm_orc_greaves,itm_orc_sabre_heavy,itm_orc_scimitar_heavy,itm_orc_skull_spear,itm_orc_simple_spear_heavy, itm_moria_orc_shield_a, (itm_orc_shield_c, imod_reinforced)],attr_orc_tier_5,wp_orc_tier_5,knows_common|knows_athletics_5|knows_power_strike_4|knows_ironflesh_10|knows_shield_4,orc_face5,orc_face4],
-["c5_rhovanion_noble","Rhovanion_Noble","Rhovanion_Noblemen",tf_mounted| tfg_boots| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_shield|tfg_polearm,0,0,fac_dale,[itm_dale_helmet_e, itm_dale_helmet_f, itm_north_nasal_helm_good,itm_dale_heavy_c,itm_dale_heavy_c_good,itm_leather_gloves_good,itm_mail_mittens,itm_leather_boots_dark, itm_splinted_greaves_good,itm_lance,itm_dale_sword_long,itm_dwarf_shield_c, itm_dwarf_shield_c_good,itm_dale_warhorse,],attr_tier_5,wp_tier_5,knows_common|knows_riding_7|knows_shield_6|knows_ironflesh_4|knows_power_strike_3,vaegir_face_middle_1,vaegir_face_older_2],
+["c5_rhovanion_noble","Rhovanion_Noble","Rhovanion_Noblemen",tf_mounted| tfg_boots| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_shield|tfg_polearm,0,0,fac_dale,[itm_dale_helmet_e, itm_dale_helmet_f, itm_north_nasal_helm_good,itm_dale_heavy_c,itm_dale_heavy_c_good,itm_leather_gloves_good,itm_mail_mittens,itm_leather_boots_dark, itm_splinted_greaves_good,itm_lance,itm_dale_sword_long,itm_dwarf_shield_c, itm_dwarf_shield_c_good,itm_dale_warhorse,],attr_tier_5,wp_tier_5,knows_common|knows_riding_7|knows_shield_6|knows_ironflesh_4|knows_power_strike_3,nord_face_middle_1,nord_face_older_2],
 
 # Malleable Hero Troops for Quests / Triggers
 

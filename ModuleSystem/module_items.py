@@ -419,7 +419,11 @@ items =[
     ("smith_leather_apron",imodbit_deadly),("generic_leather_jerkin",imodbit_exquisite),("dale_coat",imodbit_powerful),("rohan_dress",imodbit_rough),("tld_robe_generic_dress",imodbit_fresh),
     ("L_roh_shirt_M1",imodbit_two_day_old),("L_roh_long_shirt_cape_M4",imodbit_smelling),("generic_tunic_a",imodbit_day_old),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),],
     itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(1)|difficulty(0),imodbits_cloth,[]],
-["rohan_shoes","Leather_Shoes",[("fi_boot14",imodbits_armor_bad),("narf_rus_shoes",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,80,weight(1)|abundance(90)|leg_armor(8)|difficulty(0),imodbits_cloth],
+ ] + (is_a_wb_item==1 and [
+["rohan_shoes","Leather_Shoes",[("ankle_boots_a_new",imodbits_armor_bad),("narf_rus_shoes",0),("fi_boot14",imodbit_fine)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,80,weight(1)|abundance(90)|leg_armor(8)|difficulty(0),imodbits_cloth],
+        ] or [
+        ["rohan_shoes","Leather_Shoes",[("fi_boot14",imodbits_armor_bad),("narf_rus_shoes",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,80,weight(1)|abundance(90)|leg_armor(8)|difficulty(0),imodbits_cloth],
+        ]) + [ 
 ["furry_boots","Furry_Boots",[("furry_boots",0)],itp_type_foot_armor|itp_shop,0,200,weight(2)|abundance(90)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
 ["free_blue_tunic","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["black_tunic","Black_Tunic",[("gondor_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
@@ -1491,6 +1495,41 @@ items =[
 ]],
 
 ["beorn_axe_no_attack","Beorning_Axe", [("beorning_axe",0)],itp_type_polearm|itp_no_blur|itp_two_handed|itp_primary|itp_bonus_against_shield,itc_parry_polearm|itcf_carry_axe_back,9, weight(5)|spd_rtng(91) | weapon_length(76)|swing_damage(0,blunt) | thrust_damage(0,blunt),imodbits_none],
+
+#Civilian items, 
+#WB civilian items
+["tabard_b_wb","Tabard",[("tabard_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["nobleman_outfit_b_new_wb","Nobleman Outfit",[("nobleman_outfit_b_new",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["peasant_man_a_wb","Peasant_Outfit",[("peasant_man_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["leather_jerkin_wb","Leather_Jerkin",[("ragged_leather_jerkin",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,300,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["white_tunic_c_wb","Tunic_Jacket",[("coarse_tunic_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["white_tunic_a_wb","White_Tunic",[("shirt_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["red_tunic_wb","Red_Tunic",[("rich_tunic_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["fur_coat_wb","Dale_Coat",[("dale_coat",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,400,weight(6)|head_armor(0)|body_armor(13)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["fur_hat_a_new_wb","Fur_Hat",[("fur_hat_a_new",0)],itp_type_head_armor|itp_fit_to_head,0,100,weight(1)|head_armor(12)|difficulty(0),imodbits_armor,[]],
+["noel_hat_a_wb","Fur_Hat",[("noel_hat_a",0)],itp_type_head_armor|itp_fit_to_head,0,100,weight(1)|head_armor(12)|difficulty(0),imodbits_armor,[]],
+["peasant_dress_b_new_wb","Blue Dress",[("peasant_dress_b_new",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["sarranid_lady_dress_wb","Blue Dress",[("sarranid_lady_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["sar_robe_b_wb","Robe",[("sar_robe_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+
+# TLD civilian items
+["black_dress_wb","Black_Dress",[("gondor_dress_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["blackwhite_dress_wb","Lady_Dress",[("gondor_dress_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["white_tunic_b_wb","Simple_Tunic",[("gondor_tunic_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["blue_tunic_wb","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["black_tunic_wb","Black_Tunic",[("gondor_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["green_tunic_wb","Green_Tunic",[("rohan_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+#not used on walkers
+#["leather_apron","Leather_Apron",[("smith_leather_apron",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,50,weight(3)|head_armor(0)|body_armor(8)|leg_armor(7)|difficulty(0),imodbits_cloth,[]],
+["green_dress_wb","Green_Dress",[("rohan_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["gondor_fine_outfit_dress_wb","Fine_Outfit",[("gondor_fine_outfit_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["rohan_fine_outfit_dale_dress_wb","Fine_Outfit",[("rohan_fine_outfit_dale_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["robe_generic_dress_wb","Robe",[("tld_robe_generic_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["wimple_a_wb","Wimple",[("gondor_wimple_a",0)],itp_type_head_armor|itp_civilian|itp_fit_to_head,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
+["wimple_with_veil_wb","Wimple",[("gondor_wimple_b",0)],itp_type_head_armor|itp_civilian|itp_fit_to_head,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
+["fine_hat_wb","Fine_Hat",[("gondor_fine_fem_hat",0)],itp_type_head_armor|itp_civilian,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
+["rohan_tunic_a_wb","Rohan_Tunic",[("L_roh_shirt_M1",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["rohan_tunic_b_wb","Rohan_Tunic",[("L_roh_long_shirt_cape_M4",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(4)|difficulty(0),imodbits_cloth,[]],
 
 ] or []) + [ 
 
