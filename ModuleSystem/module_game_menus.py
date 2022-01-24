@@ -4699,23 +4699,7 @@ game_menus = [
 	    (display_message, "@Items added to player inventory."),
         ]
        ),	  
-	  
-      #("camp_mod_1",   [],
-	  #"Increase relations with all Factions.",
-#       [(try_for_range,":faction",kingdoms_begin,kingdoms_end),
-#		   (call_script, "script_set_player_relation_with_faction", ":faction", 40),
-        #(try_end),
-		#(display_message, "@Increased relations with all factions."),
-        #]
-       #),
-	   
-      #("camp_mod_1b", [],
-	  #"Decrease relations with all Factions.",
-#       [(try_for_range,":faction",kingdoms_begin,kingdoms_end),
-#		   (call_script, "script_set_player_relation_with_faction", ":faction", -40),
-        #(try_end),
-		#(display_message, "@Decreased relations with all factions."),
-        #]),	   
+	  	   
 
       ("camp_mod_4",   [],
       "Spawn a looter party nearby.",
@@ -4723,9 +4707,17 @@ game_menus = [
          (display_message, "@Looter party was spawned nearby."),
       ]),
 	  
+      # ("camp_mod_5",   [],
+      # "Fill merchants with faction stuff",
+      # [(call_script,"script_fill_merchants_cheat"),(display_message,"@DEBUG: Smiths just got stuffed!"),(jump_to_menu, "mnu_camp"),]),
+
       ("camp_mod_5",   [],
-      "Fill merchants with faction stuff",
-      [(call_script,"script_fill_merchants_cheat"),(display_message,"@DEBUG: Smiths just got stuffed!"),(jump_to_menu, "mnu_camp"),]),
+      "Disable realistic saving",
+      [  ] + (is_a_wb_menu==1 and [
+        (allow_ironman, 0),
+        ] or []) + [
+         (display_message, "@Ironman turned off"),
+      ]),
 
 	 #("test1",[],"Test: pay upkeep now", [(call_script,"script_make_player_pay_upkeep")]),
 	 #("test2",[],"Test: make unpaid troop leave now", [(call_script, "script_make_unpaid_troop_go")]),
