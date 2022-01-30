@@ -4983,8 +4983,9 @@ scripts = [
       (val_mul, ":loot_probability", "$g_strength_contribution_of_player"),
       (party_get_skill_level, ":player_party_looting", "p_main_party", "skl_looting"),
       (val_add, ":player_party_looting", 10),
+      (val_mul, ":loot_probability", ":player_party_looting"), #InVain: X*(looting+10)^2/200 = X*0,5 ... X*2
       (val_mul, ":loot_probability", ":player_party_looting"),
-      (val_div, ":loot_probability", 10),
+      (val_div, ":loot_probability", 200),
       (val_div, ":loot_probability", ":num_player_party_shares"),
 
 	  (assign, ":dest", "trp_temp_troop"), #(try_begin),(eq,"$tld_option_crossdressing", 0),(assign, ":dest", "trp_temp_troop_2"),(try_end),
@@ -5029,19 +5030,19 @@ scripts = [
 					(else_try),
 						(troop_add_item, "trp_temp_troop", "itm_horse_meat"), # turn any horse in meat
 					(try_end),
-				(else_try),
-					# non orcs: 
-					(try_begin),
-						(is_between, ":item_id", item_warg_begin , item_warg_end), # trash any warg
-					(else_try),
-						(troop_add_item, "trp_temp_troop", ":item_id"), # keep any horse
-					(try_end),
+				# (else_try),
+					# # non orcs: 
+					# (try_begin),
+						# (is_between, ":item_id", item_warg_begin , item_warg_end), # trash any warg
+					# (else_try),
+						# (troop_add_item, "trp_temp_troop", ":item_id"), # keep any horse
+					# (try_end),
 				(try_end),
 			(else_try),
 				(eq, ":can_steal", 1), # if can steal...
 				(item_get_slot, reg10,  ":item_id", slot_item_faction),
 				(store_and, reg11, reg10, ":faction_mask"),
-				(this_or_next|eq, reg10, 0), # can steal objects with no faction
+				#(this_or_next|eq, reg10, 0), # can steal objects with no faction
                 (neq, reg11, 0), # can steal objects of player's faction
 				
                 ] + (is_a_wb_script and [
@@ -5065,13 +5066,16 @@ scripts = [
 				(else_try),  (lt,":val",scrap_medium_value),(store_random_in_range, ":rounding", 0, scrap_medium_value - scrap_bad_value),
 				(else_try),  (lt,":val",scrap_good_value),  (store_random_in_range, ":rounding", 0, scrap_good_value - scrap_medium_value),
 				(try_end),
+                (val_mul, ":rounding", ":player_party_looting"), #InVain: rounding*(looting+10)^2/200
+                (val_mul, ":rounding", ":player_party_looting"),
+                (val_div, ":rounding", 200), #=0,5...2,0
 				(val_add, ":val", ":rounding"), 
 				(assign, reg21, ":rounding"),
 				
 				(str_store_string, s22, "@nothing"),
 				(try_begin),(ge,":val",scrap_good_value),   (troop_add_item, "trp_temp_troop", "itm_metal_scraps_good"),  (str_store_string,s22,"@Good"),
 				(else_try), (ge,":val",scrap_medium_value), (troop_add_item, "trp_temp_troop", "itm_metal_scraps_medium"),(str_store_string,s22,"@Med"),
-				(else_try), (ge,":val",scrap_bad_value),    (troop_add_item, "trp_temp_troop", "itm_metal_scraps_bad"),   (str_store_string,s22,"@Bad"),
+				(else_try), (ge,":val",scrap_bad_value/2),    (troop_add_item, "trp_temp_troop", "itm_metal_scraps_bad"),   (str_store_string,s22,"@Bad"),
 				(try_end),
 				#(display_message,"@debug: turned a {s20} {reg20} (+{reg21}) into {reg22}..."),
 			(try_end),	  
@@ -5136,6 +5140,15 @@ scripts = [
         (troop_get_inventory_slot, ":item_id", "trp_temp_troop", ":i_slot"),
         (ge, ":item_id", 0),
         (val_add, ":num_looted_items",1),
+      (try_end),
+
+      (try_begin), #if no loot at all, add a chance for one or two bad metal scraps
+        (eq, ":num_looted_items",0),
+        (store_random_in_range, ":rand", 0, 20),
+        (ge, ":player_party_looting", ":rand"),
+        (store_div, ":amount", ":player_party_looting", 10),
+        (troop_add_items, "trp_temp_troop", "itm_metal_scraps_bad", ":amount"),
+        (val_add, ":num_looted_items", ":amount"),
       (try_end),
 
       (assign, reg0, ":num_looted_items"),

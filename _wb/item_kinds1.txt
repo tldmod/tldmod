@@ -45,7 +45,7 @@ itemsfile version 2
  itm_grain Wheat Wheat 1  wheat_sack 0  33619979 0 77 0 50 110 40 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_tools Tools Tools 1  iron_hammer 0  65547 0 410 0 50 90 0 0 0 0 0 0 0 0 0 0 0
+ itm_tools Tools Tools 1  iron_hammer 0  11 0 410 0 50 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_siege_supply Supplies Supplies 1  ale_barrel 0  11 0 96 0 40 70 0 0 0 0 0 0 0 0 0 0 0
@@ -57,7 +57,7 @@ itemsfile version 2
  itm_quest_ale Ale Ale 1  ale_barrel 0  11 0 31 0 40 70 0 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_metal_scraps_bad Low_grade_metal_scraps Low_grade_metal_scraps 1  weapon_scraps_a 0  11 0 50 0 40 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_metal_scraps_bad Low_grade_metal_scraps Low_grade_metal_scraps 1  weapon_scraps_a 0  8203 0 50 0 40 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_metal_scraps_medium Usable_metal_scraps Usable_metal_scraps 1  weapon_scraps_b 0  11 0 150 0 40 100 0 0 0 0 0 0 0 0 0 0 0

@@ -21,7 +21,7 @@ skl_reserved_5 Reserved_Skill_5 258 10 This_is_a_reserved_skill.
 skl_reserved_6 Reserved_Skill_6 258 10 This_is_a_reserved_skill.
 skl_reserved_7 Reserved_Skill_7 258 10 This_is_a_reserved_skill.
 skl_reserved_8 Reserved_Skill_8 258 10 This_is_a_reserved_skill.
-skl_looting Looting 17 10 This_skill_increases_the_amount_of_loot_obtained_by_10%%_per_skill_level._(Party_skill)
+skl_looting Looting 17 10 Increases_amount_and_quality_of_loot_gained_after_battles._(Party_skill)
 skl_horse_archery Mounted_Archery 1 10 Reduces_damage_and_accuracy_penalties_for_archery_and_throwing_when_mounted._(Personal_skill)
 skl_riding Riding 1 10 enables_you_to_ride_horses_(or_other_beasts)_of_higher_difficulty_levels_and_increases_your_riding_speed_and_manuever._(Personal_skill)
 skl_athletics Athletics 1 10 improves_your_running_speed._(Personal_skill)

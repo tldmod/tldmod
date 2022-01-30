@@ -286,7 +286,7 @@ items =[
 #other trade goods (first one is wine)
 ["grain","Wheat",[("wheat_sack",0)],itp_shop|itp_type_goods|itp_consumable,0,77,weight(50)|abundance(110)|food_quality(40)|max_ammo(50),imodbits_none],
 #in-game, but serve no purpose? Used for trade routes?
-["tools","Tools",[("iron_hammer",0)],itp_shop|itp_type_goods,0,410,weight(50)|abundance(90)|0,imodbits_none],
+["tools","Tools",[("iron_hammer",0)],itp_type_goods,0,410,weight(50)|abundance(90)|0,imodbits_none],
 #************************************************************************************************
 ###ITEMS before this point are hardcoded into item_codes.h and their order should not be changed!
 #************************************************************************************************
@@ -295,9 +295,8 @@ items =[
 ["quest_wine","Wine",[("amphora_slim",0)],itp_type_goods,0,46,weight(40)|abundance(60)|max_ammo(50),imodbits_none],
 ["quest_ale","Ale",[("ale_barrel",0)],itp_type_goods,0,31,weight(40)|abundance(70)|max_ammo(50),imodbits_none],
 
-["metal_scraps_bad","Low_grade_metal_scraps",[("weapon_scraps_a",0)],itp_type_goods,0,scrap_bad_value,weight(40)|abundance(0)|0,imodbits_none],
-["metal_scraps_medium","Usable_metal_scraps",[("weapon_scraps_b",0)],itp_type_goods,0,scrap_medium_value,weight(40)|abundance(0)|0,imodbits_none],
-["metal_scraps_good","Good_quality_metal_scraps",[("weapon_scraps_c",0)],itp_type_goods,0,scrap_good_value,weight(40)|abundance(0)|0,imodbits_none],
+["metal_scraps_medium","Usable_metal_scraps",[("weapon_scraps_b",0)],itp_type_goods,0,scrap_medium_value/2,weight(40)|abundance(0)|0,imodbits_none],
+["metal_scraps_good","Good_quality_metal_scraps",[("weapon_scraps_c",0)],itp_type_goods,0,scrap_good_value/2,weight(40)|abundance(0)|0,imodbits_none],
 # 
 ###Horses: sumpter horse/ pack horse, saddle horse, steppe horse, warm blood, geldling, stallion,   war mount, charger, 
 ###Carthorse, hunter, heavy hunter, hackney, palfrey, courser, destrier.
