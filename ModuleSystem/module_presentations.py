@@ -4800,8 +4800,8 @@ if wb_compile_switch==1:
         (overlay_set_val, "$tld_options_overlay_2", "$tld_option_formations"),
         (val_sub, ":y_pos", Screen_Text_Height),
 
-        #Siege Type
-        (create_text_overlay, reg1, "@Siege AI:  ", tf_right_align, tf_double_space),
+    #Siege Type
+    (create_text_overlay, reg1, "@Siege AI:  ", tf_right_align, tf_double_space),
         (position_set_y, pos0, ":y_pos"),
         (overlay_set_position, reg1, pos0),
         
@@ -4819,6 +4819,23 @@ if wb_compile_switch==1:
         (overlay_set_val, "$tld_options_overlay_3", "$advanced_siege_ai"),
         (val_sub, ":y_pos", Screen_Text_Height),
         
+    (create_text_overlay, reg1, "@Campaign diffculty:  ", tf_right_align, tf_double_space),
+        (position_set_y, pos0, ":y_pos"),
+        (overlay_set_position, reg1, pos0),
+
+        (create_combo_button_overlay, "$tld_options_overlay_16"),
+        (overlay_add_item, "$tld_options_overlay_16", "@Hard"),
+        (overlay_add_item, "$tld_options_overlay_16", "@Default"),
+        (overlay_add_item, "$tld_options_overlay_16", "@Easy"),
+        (copy_position, pos1, pos0),
+        (store_add, reg2, ":y_pos", 0),
+        (position_set_y, pos1, reg2),
+        (position_get_x, ":x_pos", pos1),
+        (val_add, ":x_pos", 130),
+        (position_set_x, pos1, ":x_pos"),
+        (overlay_set_position, "$tld_options_overlay_16", pos1),
+        (overlay_set_val, "$tld_options_overlay_16", "$tld_campaign_diffulty"),
+        (val_sub, ":y_pos", Screen_Text_Height),
     
     (create_text_overlay, reg1, "@Town NPCs Always Accessible from Menus:  ", tf_right_align, tf_double_space),
         (position_set_y, pos0, ":y_pos"),
@@ -5057,6 +5074,11 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_15"),
           (assign, "$FormAI_AI_no_defense", ":value"),
+        (else_try),
+          (eq, ":object", "$tld_options_overlay_16"),
+          (assign, "$tld_campaign_diffulty", ":value"),
+          (assign, reg78, "$tld_campaign_diffulty"),
+          (display_message, "@diffculty: {reg78}"),
         (else_try),
           (eq, ":object", "$tld_options_overlay_0"),   
           (val_mul, ":value", 2),

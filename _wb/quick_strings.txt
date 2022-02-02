@@ -1,4 +1,4 @@
-1922
+1928
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_369_wb__dev_^_B _rev_369_wb_|_dev_^_Built_2022-01-30_13:37___
+qstr__rev_371_wb__dev_^_B _rev_371_wb_|_dev_^_Built_2022-02-02_19:08___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -114,6 +114,10 @@ qstr_TLD_New_FormAI TLD_New_FormAI
 qstr_Siege_AI:__ Siege_AI:__
 qstr_Basic__better_perfor Basic_(better_performance)
 qstr_Advanced Advanced
+qstr_Campaign_diffculty:_ Campaign_diffculty:__
+qstr_Hard Hard
+qstr_Default Default
+qstr_Easy Easy
 qstr_Town_NPCs_Always_Acc Town_NPCs_Always_Accessible_from_Menus:__
 qstr_Cutscenes:__ Cutscenes:__
 qstr_Injuries_for_compani Injuries_for_companions:__
@@ -139,6 +143,7 @@ qstr_Brighter_Nights:__ Brighter_Nights:__
 qstr_Done Done
 qstr_Gameplay_Tweaks Gameplay_Tweaks
 qstr_Beta_Formations_Twea Beta_Formations_Tweaks
+qstr_diffculty:_{reg78} diffculty:_{reg78}
 qstr_War_Will_Start_at_Le War_Will_Start_at_Level_{reg0}
 qstr_Troop_Tree Troop_Tree
 qstr__Click_on_a_unit_for (Click_on_a_unit_for_details)
@@ -732,6 +737,7 @@ qstr_Tribal_Orc_Warriors Tribal_Orc_Warriors
 qstr_Tribal_Orc_Chiefs Tribal_Orc_Chiefs
 qstr_A_quest_was_cancelle A_quest_was_cancelled_for_update_compatibility._No_need_to_worry.
 qstr_Campaign_difficulty_ Campaign_difficulty_set_to_default_due_to_new_features._Re-adjust_in_Game_Options.
+qstr_Savegame_compatibili Savegame_compatibility:_Campaign_Difficulty_set_to_default._Adjust_in_TLD_options.
 qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
 qstr_Troop:_{s6}___Level: Troop:_{s6}_-_Level:_{reg1}
 qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}

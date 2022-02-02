@@ -539,16 +539,16 @@ simple_triggers = [
 					(val_max, ":strength_income", 5), #has to be >0
 				(try_end),
                 
-                ] + (is_a_wb_trigger==1 and [
+                #] + (is_a_wb_trigger==1 and [
                 (try_begin), #campaign AI (difficulty setting)
                     (store_relation, ":player_relation", ":faction_no", "fac_player_supporters_faction"),
                     (gt, ":player_relation", 0),
-                    (options_get_campaign_ai, ":campaign_ai"),
-                    (val_add, ":campaign_ai", 2),
+                    (assign, ":campaign_ai", "$tld_campaign_diffulty"),
+                    (val_add, ":campaign_ai", 3),
                     (val_mul, ":strength_income", ":campaign_ai"),
-                    (val_div, ":strength_income", 3), 
+                    (val_div, ":strength_income", 4), 
                 (try_end),
-                ] or []) + [
+                #] or []) + [
          
           (val_add, ":strength", ":strength_income"),
           (val_add, ":debug_gain", ":strength_income"), #debug

@@ -1904,6 +1904,7 @@ scripts = [
 	(assign, "$tld_option_death_npc", 1), #permanent death for npcs ON by default
 	(assign, "$tld_option_death_player", 0), #permanent death for player OFF by default
 	(assign, "$tld_option_cutscenes", 1),# ON by default
+    (assign, "$tld_campaign_diffulty", 1),# default difficulty
 	(assign, "$g_fast_mode", 0),# OFF by default
 	(assign, "$tld_option_morale", 1), # Battle morale ON by default
 	(assign, "$tld_option_animal_ambushes", 1), # Ambushes ON by default
@@ -1976,7 +1977,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 25),  #Rafa: Savegame version
+    (assign,"$savegame_version", 26),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -2239,14 +2240,14 @@ scripts = [
 		(val_add, ":to_add", 3), #add some extra, so the below code still works (volunteers don't fill up if less than 4)
 		(val_max, ":to_add", 6), #additional saveguard
         
-        ] + (is_a_wb_script==1 and [
+        #] + (is_a_wb_script==1 and [
         (try_begin), #campaign AI (difficulty setting)
-            (options_get_campaign_ai, ":campaign_ai"),
+            (assign, ":campaign_ai", "$tld_campaign_diffulty"),
             (val_add, ":campaign_ai", 3),
             (val_mul, ":to_add", ":campaign_ai"),
             (val_div, ":to_add", 4), 
         (try_end),
-        ] or []) + [
+        #] or []) + [
 	    
 	    #(assign, ":ideal_size", ":to_add"),
 		(store_party_size, ":vol_total", ":volunteers"),
@@ -3676,17 +3677,17 @@ scripts = [
       		(display_message, "@Gondor AI Tweaks - Gondro Party Size Boost"),
 	(try_end),
 
-      ] + (is_a_wb_script==1 and [
+      #] + (is_a_wb_script==1 and [
     (try_begin),
         (is_between, ":faction_id", kingdoms_begin, kingdoms_end),
-        (store_relation, ":player_relation", ":faction_id", "$players_kingdom"),
-        (lt, ":player_relation", 0),
-        (options_get_campaign_ai, ":campaign_ai"),
+        #(store_relation, ":player_relation", ":faction_id", "$players_kingdom"),
+        #(lt, ":player_relation", 0),
+        (assign, ":campaign_ai", "$tld_campaign_diffulty"),
         (val_add, ":campaign_ai", 2),
         (val_mul, ":limit", 3), 
       	(val_div, ":limit", ":campaign_ai"),
     (try_end),
-        ] or []) + [
+       # ] or []) + [
         
       (assign, reg0, ":limit"),
 ]),
@@ -24980,6 +24981,14 @@ command_cursor_scripts = [
         (call_script, "script_set_item_faction"),
         (assign, "$savegame_version", 25),
 	(try_end),	
+
+    (try_begin), #InVain - 31 Jan 2022, set campaign difficulty as global variable
+        (le, "$savegame_version", 25),
+        (assign, "$tld_campaign_diffulty", 1),
+        (display_message, "@Savegame compatibility: Campaign Difficulty set to default. Adjust in TLD options."),
+        (assign, "$savegame_version", 26),
+	(try_end),	
+
 
 ]),
 

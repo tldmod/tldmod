@@ -727,7 +727,7 @@ ui_turn_melee_only|Melee only
 ui_turn_always|Always
 ui_general_options|General Options
 ui_vac_enabled|Valve Anti Cheat Enabled
-ui_campaign_ai|Campaign Difficulty (Default: Average):
+ui_campaign_ai|Campaign AI (Unused in TLD):
 ui_downloading_map|Downloading map (%d KB)
 ui_download_completed|Download completed.
 ui_server_filter|Server filter
