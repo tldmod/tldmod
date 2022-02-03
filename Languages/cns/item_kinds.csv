@@ -292,12 +292,12 @@ itm_orc_tribal_c|未处理的皮肤
 itm_evil_gauntlets_a|黑色手套
 itm_evil_gauntlets_b|黑色护手
 itm_free_isen_orc_armor_a|艾辛格半兽人甲
-; itm_isen_orc_light_a|Isengard Orc Light Harness
-; itm_isen_orc_light_b|Isengard Orc Light Harness
-; itm_isen_orc_pad_a|Isengard Orc Light Segmented Armor
-; itm_isen_orc_pad_b|Isengard Orc Medium Segmented Armor
-; itm_isen_orc_mail_a|Isengard Orc Mail
-; itm_isen_orc_mail_b|Isengard Orc Heavy Segmented Armor
+itm_isen_orc_light_a|艾辛格半兽人胸甲
+itm_isen_orc_light_b|艾辛格半兽人胸甲
+itm_isen_orc_pad_a|艾辛格半兽人轻型锻甲
+itm_isen_orc_pad_b|艾辛格半兽人锻甲
+itm_isen_orc_mail_a|艾辛格半兽人链甲
+itm_isen_orc_mail_b|艾辛格半兽人重型锻甲
 itm_isen_uruk_light_a|强兽人轻甲
 itm_isen_uruk_light_b|艾辛格强兽人战斗胸甲
 itm_isen_uruk_light_c|艾辛格强兽人狂战士胸甲
@@ -312,7 +312,7 @@ itm_uruk_tracker_boots|强兽人追踪者靴
 itm_uruk_greaves|强兽人胫甲
 itm_uruk_chain_greaves|强兽人链胫甲
 itm_uruk_ragwrap|强兽人头巾
-; itm_isen_orc_helm_a|Isengard Orc Helm
+itm_isen_orc_helm_a|艾辛格半兽人盔
 itm_isen_uruk_helm_a|强兽人盔
 itm_isen_uruk_helm_d|强兽人队长盔
 itm_isen_uruk_helm_e|强兽人追踪者盔
@@ -514,12 +514,12 @@ itm_harad_scale|哈拉德鳞甲
 itm_harad_tiger_scale|虎卫甲
 itm_harad_lion_scale|狮卫甲
 itm_harad_dragon_helm|凯洛卡盔
-; itm_harad_cav_helm_a|Harondor Light Helm
-; itm_harad_cav_helm_b|Harondor Light Helm
+itm_harad_cav_helm_a|哈隆铎骑兵盔
+itm_harad_cav_helm_b|哈隆铎骑兵盔
 itm_black_snake_helm|马兰卡盔
-; itm_harad_finhelm|Harad Heavy Footman Helmet
-; itm_harad_heavy_inf_helm|Harad Footman Helmet
-; itm_harad_wavy_helm|Harad Conical Helmet
+itm_harad_finhelm|哈拉德巨盔
+itm_harad_heavy_inf_helm|哈拉德重顶盔
+itm_harad_wavy_helm|哈拉德锥形盔
 itm_harad_eaglehelm|雕卫盔
 itm_lion_helm|狮卫盔
 itm_harad_pantherhelm|豹卫帽
@@ -573,7 +573,7 @@ itm_khand_throwing_axe|侃德飞斧
 itm_khand_rammace|侃德冲锤
 itm_khand_pitsword|侃德洞穴斗士剑
 itm_khand_tulwar|侃德马刀
-; itm_khand_2h_tulwar|Khand Great Tulwar
+itm_khand_2h_tulwar|侃德双手图瓦弯刀
 itm_khand_lance|侃德骑枪
 itm_easterling_round_horseman|东方人圆盾
 itm_variag_gladiator_shield|侃德洞穴斗士盾
@@ -727,7 +727,7 @@ itm_rohan_lance_banner_sun|洛汗烈日旗骑枪
 itm_rohan_lance_banner_horse|洛汗骠骑旗骑枪
 itm_ent_water|一碗奇怪的水
 itm_map|中土世界地图
-; itm_athelas_reward|Dried Athelas Leaves
+itm_athelas_reward|干阿西拉斯草
 itm_phial_reward|凯兰崔尔之光
 itm_scroll_reward|刚铎之秋
 itm_hammer_reward|史密斯战锤
@@ -772,7 +772,7 @@ itm_dale_armor_reward|河谷镇贵族链甲
 itm_leather_gloves_reward|射手手套
 itm_beorn_shield_reward|波宁盾
 itm_beorn_axe_reward|熊棍
-; itm_drums_of_the_deep|Drums of the Deep
+itm_drums_of_the_deep|深渊之鼓
 itm_khamul_helm|戒灵克哈穆尔的头盔
 itm_black_arrows_reward|黑箭
 itm_leather_boots_reward|猎人靴

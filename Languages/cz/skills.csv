@@ -1,7 +1,7 @@
 skl_trade|Obchod
-skl_trade_desc|Učiní kováře a zásobovací mistry více kooperativními, a budou pak nabízet lepší vybavení. (Skupinová schopnost)
+skl_trade_desc|Učiní kováře a zásobovací mistry více kooperativními a budou nabízet lepší vybavení. (Skupinová schopnost)
 skl_leadership|Vůdcovství
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. Makes more and stronger volunteers willing to follow you. (Leader skill)
+skl_leadership_desc|Každý bod zvyšuje maximální počet jednotek, kterým můžeš velet o 5, zvyšuje morálku skupiny a snižuje žold jednotek o 5 %%. Způsobuje, že dobrovolníků bude více a budou silnější. (Vůdcova dovednost)
 skl_prisoner_management|Vězeňský management
 skl_prisoner_management_desc|Každá úroveň této dovednosti zvyšuje maximální počet vězňů o %d. (Vůdcova dovednost)
 skl_persuasion|Zálesáctví
@@ -35,7 +35,7 @@ skl_riding_desc|Dovolí ti jezdit na koních (nebo jiných zvířatech) které m
 skl_athletics|Kondice
 skl_athletics_desc|Zvyšuje tvoji rychlost běhu. (Osobní dovednost)
 skl_shield|Štít
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
+skl_shield_desc|Snižuje poškození štítů (o 8%% co nová úroveň) a zlepšuje rychlost štítu a jeho pokryti, snižuje postih při používání s lukem. (Osobní dovednost)
 skl_weapon_master|Mistr zbraní
 skl_weapon_master_desc|Umožňuje jednodušší učení dovedností se zbraní, a zvyšuje dovednostní limit. Limity jsou rozděleny na: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobní dovednost)
 skl_power_draw|Síla napnutí
@@ -45,4 +45,4 @@ skl_power_throw_desc|Každý bod zvyšuje poškození způsobené hodem o 10%%. 
 skl_power_strike|Síla úderu
 skl_power_strike_desc|Každý bod zvyšuje poškození zbraní na blízko o 8%%. (Osobní dovednost)
 skl_ironflesh|Odolnost
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)
+skl_ironflesh_desc|Každý bod v této schopnosti zvýší HP o +2 a umožní ti se oklepat z nějakého poškození bez toho aniž bys byl raněn. (Osobní dovednost)

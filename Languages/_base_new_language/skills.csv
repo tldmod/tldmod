@@ -43,7 +43,7 @@ skl_reserved_7_desc|This is a reserved skill.
 skl_reserved_8|Reserved Skill 8
 skl_reserved_8_desc|This is a reserved skill.
 skl_looting|Looting
-skl_looting_desc|This skill increases the amount of loot obtained by 10%% per skill level. (Party skill)
+skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 skl_horse_archery|Mounted Archery
 skl_horse_archery_desc|Reduces damage and accuracy penalties for archery and throwing when mounted. (Personal skill)
 skl_riding|Riding

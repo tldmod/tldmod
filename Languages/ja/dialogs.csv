@@ -399,7 +399,7 @@ dlga_lord_get_reward_item_answer:lord_pretalk|よかろう。 それをもって
 dlga_lord_talk:marshall_ask|戦争について協議をしたい。
 dlga_marshall_ask:lord_pretalk|おぬしが{s24}であれば話を聞こうとも思うが、 {s25}のような弱冠者ではなあ、 {playername}。
 dlga_marshall_ask:lord_pretalk.1|おぬしは立派な指揮官ではあるが、 {playername}、 おぬしの影響力については疑問だ。 おぬしの提案については慎重にならざるを得ない。^[影響力ポイントが{reg15}必要ですが、{reg14}しかありません]
-dlga_marshall_ask:lord_pretalk.2|我々はとてもではないが、 敵に真正面から挑める状態ではないぞ、 {playername}。 {s23}である現状を踏まえれば、 まだまだ兵を増強して戦力を蓄えるべきであろう。
+dlga_marshall_ask:lord_pretalk.2|{playername}よ、今の我が軍は{s23}。^我々はとてもではないが敵に正面から挑める状態ではないのだ。^ここは兵を増強し、戦力を蓄える事に専念するべきであろう。
 dlga_marshall_ask:marshall_suggest|聞こう、{playername}。 提案とは何か？
 dlga_marshall_suggest:lord_give_order_assault|あなたと私が力を合わせれば、 {s11}を手中にすることができる。 あなたには、すぐに攻撃を開始してもらいたい・・・ [{reg1}/{reg2}の影響力ポイントを消費します]
 dlga_marshall_suggest:marshall_answer|いますぐ{s1}を包囲するべきだ。

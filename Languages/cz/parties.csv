@@ -20,9 +20,9 @@ p_town_west_emnet|Západní polonina
 p_town_eastfold|Východní úval
 p_town_morannon|Morannon
 p_town_minas_morgul|Minas Morgul
-; p_town_cirith_ungol|Emyn Muil Watchtower
+p_town_cirith_ungol|Strážní věž Emyn Muil
 p_town_east_osgiliath|Východní Osgiliath
-; p_town_orc_sentry_camp|Emyn Arnen Sentry
+p_town_orc_sentry_camp|Hlídka Emyn Arnen
 p_town_isengard|Železný pas
 p_town_urukhai_outpost|Tábor Skurut-hai
 p_town_urukhai_h_camp|Lovecký tábor Skurut-hai
@@ -31,7 +31,7 @@ p_town_caras_galadhon|Caras Galadhon
 p_town_cerin_dolen|Cerin Dolen
 p_town_cerin_amroth|Cerin Amroth
 p_town_thranduils_halls|Thranduilovy síně
-; p_town_woodelf_camp|Woodelf South Camp
+p_town_woodelf_camp|Jižní tábor lesních elfů
 p_town_woodelf_west_camp|Západní tábor lesních elfů
 p_town_woodsmen_village|Dřevorubecká vesnice
 p_town_beorning_village|Vesnice Meddědovců
@@ -46,13 +46,13 @@ p_town_khand_camp|Tábor Varjagů
 p_town_umbar_camp|Tábor Korzárů
 p_town_imladris_camp|Tábor elfů z Roklinky
 p_town_dol_guldur|Dol Guldur
-; p_town_dol_guldur_north_outpost|Dol Guldur Road Outpost
+p_town_dol_guldur_north_outpost|Základna u Dol Guldurské cesty
 p_town_rhun_main_camp|Hlavní tábor Východňanů
 p_town_rhun_south_camp|Jižní tábor Východňanů
 p_town_rhun_north_camp|Severní tábor Východňanů
 p_town_gundabad|Gundabad
-; p_town_gundabad_ne_outpost|Grey Mountains Hold
-; p_town_gundabad_nw_outpost|Grey Mountains Ravine
+p_town_gundabad_ne_outpost|Država Šedých hor
+p_town_gundabad_nw_outpost|Rokle Šedých hor
 p_town_goblin_north_outpost|Gobliní město
 p_town_goblin_south_outpost|Jižní gobliní hlídka
 p_town_gundabad_m_outpost|Gundabadská hlídka v Temném Hvozdu
@@ -98,14 +98,14 @@ p_ford_rohan2|Entva
 p_ford_fangorn|Entva
 p_ford_fangorn2|Lipava
 p_ford_moria|Stříberka
-; p_fangorn_center|Fangorn Center
+p_fangorn_center|Střed Fangornu
 p_ring_hunter_lair|Doupě hledačů prstenu
 p_raft|Voraři
-; p_amon_din|Amon Din
-; p_eilenach|Eilenach
-; p_nardol|Nardol
-; p_erelas|Erelas
-; p_min_rimmon|Min Rimmon
-; p_calenhad|Calenhad
-; p_amon_anwar|Amon Anwar
+p_amon_din|Amon Din
+p_eilenach|Eilenach
+p_nardol|Nardol
+p_erelas|Erelas
+p_min_rimmon|Min Rimmon
+p_calenhad|Calenhad
+p_amon_anwar|Amon Anwar
 p_ancient_ruins|Prastará zřícenina

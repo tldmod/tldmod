@@ -991,10 +991,10 @@ dlga_player_upgrade_troll_not_enough:close_window|Az időmet pazarlom...
 ; dlga_trade_requested_weapons:merchant_trade|Ah, yes commander. These wares are the best you'll find anywhere.
 ; dlga_trade_requested_horse:merchant_trade|Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.
 dlga_merchant_trade:town_merchant_talk|Volna még más is?
-; dlga_town_merchant_talk:merchant_gossip|Tell me. What are people talking about these days?
-; dlga_town_merchant_talk:close_window|Good-bye.
+dlga_town_merchant_talk:merchant_gossip|Mond csak. Miről beszélnek az emberek mostanában?
+dlga_town_merchant_talk:close_window|Viszlát
 ; dlga_start:town_dweller_talk|Excuse me?
-; dlga_start:town_dweller_talk.1|Good day, Commander.
+dlga_start:town_dweller_talk.1|Jó napot, Parancsnok.
 ; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a fugitive by the name of {s4}. I was told he may be hiding here.
 ; dlga_town_dweller_ask_fugitive:close_window|Strangers come and go to our town. If he is hiding here, you will surely find him if you look around.
 ; dlga_town_dweller_talk:town_dweller_ask_info|What can you tell me about this village?

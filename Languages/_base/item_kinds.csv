@@ -149,7 +149,7 @@ itm_arnor_sword_f|Arnor Shortsword
 itm_riv_helm_a|Rivendell Coif
 itm_riv_helm_b|Rivendell Archer Helm
 itm_riv_helm_c|Rivendell Infantry Helm
-itm_riv_tiara|Elf Lord Tiara
+itm_tiara_reward|Elf Lord Tiara
 itm_riv_shield_a|Rivendell Shield
 itm_riv_shield_b|Rivendell Shield
 itm_riv_bas_sword|Rivendell Bastard Sword
@@ -545,9 +545,9 @@ itm_harad_shield_b|Harondor Buckler
 itm_harad_shield_c|Harondor Buckler
 itm_harad_yellow_shield|Harad Shield
 itm_desert_boots|Desert Boots
-itm_harad_leather_greaves|Harad Greaves
-itm_harad_scale_greaves|Harad Boots
-itm_harad_lamellar_greaves|Harad Boots
+itm_harad_leather_greaves|Harad Leather Greaves
+itm_harad_scale_greaves|Harad Scale Greaves
+itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Khand Helm
 itm_khand_inf_helm_b|Khand Helm
 itm_khand_inf_helm_c1|Khand Bowl Helm

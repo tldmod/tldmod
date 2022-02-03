@@ -1868,9 +1868,9 @@ str_shortname_region_dead_marshes|Мертвецкие болота
 str_shortname_region_isengard|Нан Курунир
 str_shortname_region_fangorn|Фангорн
 str_shortname_region_brown_lands|Бурые земли
-; str_shortname_region_dagorlad|Dagorlad
-; str_shortname_region_n_undeep|the North Undeep
-; str_shortname_region_s_undeep|the South Undeep
+str_shortname_region_dagorlad|Дагорлад
+str_shortname_region_n_undeep|Северное Мелководье
+str_shortname_region_s_undeep|Южное Мелководье
 str_shortname_region_emyn_muil|Эмин-Муиль
 str_shortname_region_misty_mountains|Предгорья северных Мглистых гор
 str_shortname_region_lorien_|Лориэн
@@ -2121,7 +2121,7 @@ str_formations|В Меню Битвы есть следующие формаци
 str_npc18_intro|Будь здоров, подожди секунду! Я хочу поговорить с тобой!
 str_npc19_intro|Подожди минутку. командир. Я хочу сказать тебе пару слов. Нет, конечно, можешь не кланяться, ты ведь всего лишь говоришь с представителем королевской крови.
 str_npc20_intro|Подожди. Ты. Я уже видел твое лицо. У меня был сон о тебе, но как это может быть ты ? Теперь, когда я увидел тебя своими собственными глазами, я осознал, что ты не больше чем жалкий червяк
-; str_npc21_intro|Buzz off, little fly, 'fore I SQUASH YER! RRAAARGHH!  (*The troll bares her fangs in a somewhat half-hearted snarl.*)
+str_npc21_intro|Улетай, маленькая муха, пока я не раздавил тебя! РРАААРХХ! (*Тролль обнажает клыки в несколько нерешительном рычании.*)
 str_npc22_intro|Приветствую, {playername}. Маэ гованнен!
 str_npc23_intro|Оставь меня в покое, {незнакомец/незнакомка}. Я не хочу с тобой разговаривать.
 str_npc24_intro|Кили, сын Двалина, к вашим услугам!
@@ -2131,7 +2131,7 @@ str_npc27_intro|Ты!
 str_npc18_intro_response_1|Раб в колодках, обреченный на смерть хочет поболтать со мной? Чего тебе надо?
 str_npc19_intro_response_1|Королевская кровь ? Ха! Что заставляет тебя думать, что ты имеешь хотя бы ее каплю 
 str_npc20_intro_response_1|Послушай, ведьма, что ты имеешь ввиду?Кто ты?
-; str_npc21_intro_response_1|Ah yes, you have me quaking in my boots. What a scary troll, bound by this tiny chain! Why don't you squash me then?
+str_npc21_intro_response_1|Ах да, я весь дрожу. Какой страшный тролль, связанный этой крошечной цепью! Почему бы тебе не раздавить меня тогда?
 str_npc22_intro_response_1|Приветствую, эльфийский владыка! Большая честь - познакомиться с вами.
 str_npc23_intro_response_1|Неужели лесные эльфы приветствуют своих гостей именно таким образом?
 str_npc24_intro_response_1|{playername}, к вашим услугам. Как поживает народ Дурина?

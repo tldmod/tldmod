@@ -5077,8 +5077,6 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_16"),
           (assign, "$tld_campaign_diffulty", ":value"),
-          (assign, reg78, "$tld_campaign_diffulty"),
-          (display_message, "@diffculty: {reg78}"),
         (else_try),
           (eq, ":object", "$tld_options_overlay_0"),   
           (val_mul, ":value", 2),

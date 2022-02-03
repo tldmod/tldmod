@@ -1,4 +1,4 @@
-1928
+1927
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_371_wb__dev_^_B _rev_371_wb_|_dev_^_Built_2022-02-02_19:08___
+qstr__rev_372_wb__dev_^_B _rev_372_wb_|_dev_^_Built_2022-02-03_16:51___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -143,7 +143,6 @@ qstr_Brighter_Nights:__ Brighter_Nights:__
 qstr_Done Done
 qstr_Gameplay_Tweaks Gameplay_Tweaks
 qstr_Beta_Formations_Twea Beta_Formations_Tweaks
-qstr_diffculty:_{reg78} diffculty:_{reg78}
 qstr_War_Will_Start_at_Le War_Will_Start_at_Level_{reg0}
 qstr_Troop_Tree Troop_Tree
 qstr__Click_on_a_unit_for (Click_on_a_unit_for_details)

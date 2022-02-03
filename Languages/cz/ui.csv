@@ -6,7 +6,7 @@ ui_retreated_battle|%s zběhlo.
 ui_riding_skill_not_adequate_to_mount|(Jezdectví příliš nízké)
 ui_camp|Akce
 ui_tutorial_inventory|V TLD, budeš potřebovat Resource pointy k získání vybavení. Resource pointy jsou měřítkem toho jak moc jsou frakce ochotné tě zásobovat a kolik z frakčních zdrojů jste oprávněni použít.
-ui_you_dont_have_value|Nemáš %s
+ui_you_dont_have_value|Nemáš: %s
 ui_merchant_cant_afford_value|%s: Dáváš nám více než potřebujeme! Možná si toho nech více pro sebe ( dáváš nám zboží za %s, máme jen %s).
 ui_merchant_pay_whatever|Ne, nic z toho nepotřebuji, nechte si to.
 ui_horse|Osedlat
@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(Nelze povýšit jednotky v jiné skupině)
 ui_lance_control|Ovládání Kopí:
 ui_manual_easy|Manuál (Jednoduchý)
 ui_manual_hard|Manuál (těžký)
-; ui_campaign_ai|Campaign Difficulty (Default: Average):
+ui_campaign_ai|Obtížnost Kampaně (Výchozí: Průměrná):
 ui_crouch|Skrčit
 
 # swy: added from this spreadsheet, as requested by our translators:

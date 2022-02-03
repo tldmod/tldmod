@@ -1,7 +1,7 @@
 ui_at_learning_limit|(em limite de aprendizagem para esta raça)
 ui_not_enough_skill_points_to_learn|(não tem pontos suficientes para aprender)
-ui_not_enough_attributetype_to_learn_this_skill|(percentagem insuficiente para aprender esta habilidade)
-ui_explanation_agility|Agilidade: Cada ponto fornece cinco pontos de arma e aumenta a velocidade da arma por 0.5%. As seguintes habilidades não podem ser desenvolvidos além de 1/3 de Agilidade: maestria em armas, Escudo, Atletismo, Cavalgar, Arqueria Montada, Pilhagem.
+ui_not_enough_attributetype_to_learn_this_skill|(não há %s suficiente para aprender esta habilidade)
+ui_explanation_agility|Agilidade: Cada ponto dá cinco pontos de arma e aumenta a velocidade da arma em 0,5%. As seguintes habilidades não podem ser desenvolvidas além de 1/3 da Agilidade: Mestre de Armas, Escudo, Atletismo, Equitação, Tiro com Arco Montado, Saque.
 ui_retreated_battle|%s recuou
 ui_riding_skill_not_adequate_to_mount|(Habilidade de cavalgar muito baixa)
 ui_camp|Ações
@@ -12,42 +12,143 @@ ui_merchant_pay_whatever|Não, eu não preciso de nada disso, fique com isso.
 ui_horse|Montar
 ui_reclaim_your_sold_goods|Recuperar os bens que você deu antes de dar isso!
 ui_return_your_bought_goods|Devolva a mercadoria que você tirou antes de vender isso!
-; ui_return_price|if returned: +%d Res.P.
-; ui_sell_price|if given: +%d Res.P.
+ui_return_price|se devolvido:+1%d Res.P.
+ui_sell_price|se dado:+1%d Res.P.
 ui_reclaim_price|para recuperar: -%d Res.P.
 ui_buying_price|alegar: -%d Res.P.
-; ui_notification_riding_skill_not_enough|Your riding skill is not high enough to mount this.
-ui_notification_payment_value|consumir %s
-; ui_notification_payment_receive_value|Gaining %s
-; ui_weekly_cost_value|Upkeep: %s
+ui_notification_riding_skill_not_enough|Sua habilidade de montaria não é alta o suficiente para montar isso.
+ui_notification_payment_value|Consumir %s
+ui_notification_payment_receive_value|Ganhando %s
+ui_weekly_cost_value|Manutenção: %s
 ui_sell|dar
 ui_hire|alistar
-; ui_notification_cant_hire|(not enough R.P. to enlist)
-; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
+ui_notification_cant_hire|(não há R.P. suficiente para se alistar)
+ui_joining_cost_weekly_wage|26\nInscrever-se: %d Res.Pts. -- Manutenção: %d Res.Pts.
 ui_weekly_wage|Custo de Manutenção: %d Res.P.
 ui_price|Valor: %d Res.P.
-; ui_cant_reload_this_weapon_on_horseback|Can't reload this weapon while mounted.
-; ui_delivered_number_damage_to_horse|Delivered %d damage to mount.
-; ui_horse_charged_for_number_damage|Mount charged for %d damage.
-; ui_horse_received_number_damage|Mount received %d damage.
-; ui_horse_fell_dead|Mount fell dead...
-; ui_horse_crippled|Mount crippled...
-; ui_you_got_value|%s earned.
+ui_cant_reload_this_weapon_on_horseback|Não é possível recarregar esta arma enquanto estiver na montaria.
+ui_delivered_number_damage_to_horse|Causado %d de dano à montaria.
+ui_horse_charged_for_number_damage|Montaria carregada por %d de dano.
+ui_horse_received_number_damage|A montaria recebeu %d de dano.
+ui_horse_fell_dead|Monte caiu morto...
+ui_horse_crippled|Monte aleijado...
+ui_you_got_value|%s ganhou.
 ui_has_deserted_the_party|deixou o partido .
 ui_have_deserted_the_party|deixaram o partido .
 ui_loading_textures|Carregando Texturas ( seja paciente) ...
-; ui_order_hold_fire_toggle|Don't shoot/Shoot at Will (Toggle)
-; ui_order_dismount_toggle|Order Dismount/Mount (Toggle)
-; ui_mount_horses_e_|%s, Mount!
-; ui_hold_fire_e_|%s, Don't shoot!
-; ui_fire_at_will_e_|%s, Shoot at Will!
+ui_order_hold_fire_toggle|Não atire/Atire à vontade (Alternar)
+ui_order_dismount_toggle|Ordem Desmontar/Montar (Alternar)
+ui_mount_horses_e_|%s, Mount!
+ui_hold_fire_e_|%s, não atire!
+ui_fire_at_will_e_|%s, Atire à Vontade!
 ui_recent_messages|Última msgs
-; ui_value_denars|%d Resource Pts.
+ui_value_denars|%d Pontos de Recurso.
 ui_cannot_be_used_on_horseback|Enquanto não pode ser usada montado
 ui_upgrade_to_value|Atualize para %s
-; ui_notification_cant_upgrade|(Can't upgrade while giving troops)
-; ui_lance_control|Lance Control:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused):
-; ui_crouch|Crouch
+ui_notification_cant_upgrade|(Não pode atualizar enquanto dá tropas)
+ui_lance_control|Controle de Lança:
+ui_manual_easy|Manual (fácil)
+ui_manual_hard|Manual (difícil)
+ui_campaign_ai|Dificuldade da campanha (padrão: média):
+ui_crouch|Agachar
+
+# swy: added from this spreadsheet, as requested by our translators:
+#      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
+ui_are_you_sure_you_want_to_import_the_character|Tem certeza de que deseja importar o personagem?
+ui_explanation_strength|Força: Cada ponto adiciona +1 aos pontos de vida. As seguintes habilidades não podem ser desenvolvidas além de 1/3 da Força: Ironflesh, Power-strike, Power-throw, Power-draw.
+ui_explanation_intelligence|Inteligência: Cada ponto de inteligência dá imediatamente um ponto de habilidade extra e aumenta ligeiramente o ganho de XP em algumas ocasiões. As seguintes perícias não podem ser desenvolvidas além de 1/3 da Inteligência: Treinador, Rastreamento, Táticas, Descobrir Caminhos, Detecção, Gerenciamento de Estoque, Tratamento de Feridas, Cirurgia e Primeiros Socorros.
+ui_explanation_charisma|Carisma: Cada ponto aumenta o limite de tamanho do seu grupo em +1. As seguintes habilidades não podem ser desenvolvidas além de 1/3 do Carisma: Gestão de Prisioneiros, Artesanato, Liderança, Comércio.
+ui_delivered_number_damage|Causado %d de dano.
+ui_mission_losses_killed|morto:
+ui_party_losses|%s : %d ferido --- %d morto de %d.
+ui_following|Seguindo
+ui_accompanying|Acompanhando
+ui_dumping_value_items|%d itens serão perdidos permanentemente, tem certeza?
+ui_dumping_value_item|Um item será perdido permanentemente, tem certeza?
+ui_notification_requirements_not_met|Você não possui as habilidades ou atributos necessários para esta arma.
+ui_disband|Dissolver
+ui_you_hit_a_friendly_troop|Você atingiu uma tropa amiga!
+ui_you_are_not_carrying_any_arrows|Você não está carregando nenhuma flecha.
+ui_delivered_number_damage_to_horse|Causado %d de dano à montaria.
+ui_received_number_damage|Recebeu %d de dano.
+ui_you_have_improved_your_proficiency_in_value_to_number|Você melhorou sua proficiência em %s para %d.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Sua proficiência em %s melhorou em +%d para %d.
+ui_value_killed_by_value|%s morto por %s.
+ui_value_knocked_unconscious_by_value|%s ficou inconsciente por %s.
+ui_you_got_number_experience|Você tem %d experiência.
+ui_you_have_advanced_to_level_number|Você avançou para o nível %d.
+ui_you_got_value|%s ganhou.
+ui_quest_succeeded_value|Missão bem-sucedida: %s.
+ui_number_of_companions_exceeds_leadership_limit|O número de acompanhantes excede o limite de liderança.
+ui_number_of_prisoners_exceeds_prisoner_management_limit|O número de prisioneiros excede o limite de gerenciamento de prisioneiros.
+ui_shared_number_experience_within_party|%d experiência compartilhada dentro do grupo.
+ui_your_relations_with_value_has_improved_from_number_to_number|Suas relações com %s melhoraram de %d para %d.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Suas relações com %s se deterioraram de %d para %d
+ui_you_lost_value|Você perdeu %s.
+ui_change_graphics_settings_explanation|Algumas alterações feitas entrarão em vigor quando você entrar em uma nova área.
+ui_game_log_window|Janela de registro do jogo
+ui_blunt_short|B
+ui_tracks|Faixas
+ui_order_button_hold_fire|Segure seu fogo
+ui_order_button_fire_at_will|Fogo à vontade
+ui_order_button_fire_orders|Ordens de incêndio
+ui_need_to_learn_prisoner_management|Você precisa aprender a habilidade de Gerenciamento de Prisioneiros para fazer prisioneiros.
+ui_game_log_window|Janela de registro do jogo
+ui_unbalanced|Desequilibrado
+ui_can_crush_through_blocks|Pode esmagar através de blocos
+
+ui_order_1|Selecione o pedido 1
+ui_order_2|Selecione o pedido 2
+ui_order_3|Selecione o pedido 3
+ui_order_4|Selecione o pedido 4
+ui_order_5|Selecione o pedido 5
+ui_order_6|Selecione o pedido 6
+ui_order_button_hold_this_position|Mantenha essa posição
+ui_order_button_follow_me|Me siga
+ui_order_button_charge|Cobrar
+ui_order_button_stand_ground|Ficar de pé
+ui_order_button_retreat|Retiro
+ui_order_button_advance|Avance dez passos
+ui_order_button_fall_back|Recuar dez passos
+ui_order_button_spread_out|Espalhar
+ui_order_button_stand_closer|Fique mais perto
+ui_order_button_mount_horses|Montar
+ui_order_button_dismount|Desmontar
+ui_order_button_hold_fire|Segure seu fogo
+ui_order_button_fire_at_will|Fogo à vontade
+ui_order_button_use_blunt_weapons|Use apenas armas contundentes
+ui_order_button_use_any_weapon|Use armas à vontade
+ui_order_button_movement_orders|Ordens de movimento
+ui_order_button_formation_orders|Ordens de formação
+ui_order_button_fire_orders|Ordens de incêndio
+ui_follow_me_e_|%s, siga-me!
+ui_charge_e_|%s, carregue!!!
+ui_stand_ground_e_|%s, fique firme!
+ui_retreat_e_|%s, recue!
+ui_mount_horses_e_|%s, Mount!
+ui_dismount_e_|%s, desmonte!
+ui_advance_e_|%s, avance dez passos!
+ui_fall_back_e_|%s, recue dez passos!
+ui_stand_closer_e_|%s, fique mais perto!
+ui_spread_out_e_|%s, espalhe-se!
+ui_use_blunt_weapons_e_|%s, use apenas armas contundentes!
+ui_use_any_weapon_e_|%s, use armas à vontade!
+ui_hold_fire_e_|%s, não atire!
+ui_fire_at_will_e_|%s, Atire à Vontade!
+ui_hold_this_position_e_|%s, mantenha esta posição!
+ui_infantry|Infantaria
+ui_archers|Arqueiros
+ui_cavalry|Cavalaria
+ui_companions|Companheiros
+ui_everyone_hear_me|Todos, ouçam-me!
+ui_everyone|Todos
+ui_everyone_around_me|Soldados próximos
+ui_str_hear_me|%s, ouça-me!
+
+ui_return|Retornar
+ui_factions|Facções
+ui_troop_upgrades|Atualizações de tropas
+ui_hdr_mode|Modo HDR:
+ui_autoexpore|Exposição automática (recomendado LIGADO se o HDR estiver ligado)
+ui_saving_policy_realistic|Não sair sem salvar! (Não recomendado.)
+ui_saving_policy_nonrealistic|Saia sem salvar. (Recomendado, mantenha vários salvamentos.)

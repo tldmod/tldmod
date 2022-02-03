@@ -925,15 +925,15 @@ qstr_Tripled|三倍
 qstr_Quadrupled|四倍
 qstr_You_drank_the_Ent_Wa|你喝了树人水...
 qstr_You_used_the_Orc_Bre|你使用了半兽人酒。
-; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
-; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
-; qstr_lordless|lordless
-; qstr_orc_stragglers|orc stragglers
-; qstr_wild_goblins|wild goblins
-; qstr_recruits|recruits
-; qstr_regulars|regulars
-; qstr_elites|elites
-; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
+qstr_You_and_your_compani|你和同伴们酌饮一口米卢沃尔（精灵甜酒）。你感到神清气爽，精力充沛。
+qstr_You_give_a_few_leave|你拿了一小把阿西拉斯草给队中医师。
+qstr_lordless|无主
+qstr_orc_stragglers|游荡的半兽人
+qstr_wild_goblins|野生半兽人
+qstr_recruits|新兵
+qstr_regulars|老兵
+qstr_elites|精兵
+qstr_You_camp_and_beat_th|你扎营并击响了深渊之鼓。这股强大的声音吸引到了一支{s1}{s2}。
 qstr_Fangorn_search:_fail|搜索法贡森林：失败。
 qstr_^^^A_great_victory!^|^^^一场伟大的胜利！ ^^^这是法贡森林的又一个神话...
 qstr_^^^Defeated...^^^Sca|^^^战败了……^^^在法贡森林里走散了……独自一人……
@@ -1092,8 +1092,8 @@ qstr_You_are_entering_{s1}|你进入了{s1}。
 qstr_The_war_expands_comm|随着战事的如火如荼，指挥官们变得更加激进了。(围城需求减少)
 qstr_Your_party_is_spotte|你的部队被{s1}发现了。
 qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
-; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
-; qstr_Athelas_used_up.|Athelas used up.
+qstr_The_effects_of_the_M|米卢沃尔（精灵甜酒）的效果消失了。
+qstr_Athelas_used_up.|阿西拉斯草的效果耗尽了。
 qstr_Party_has_nothing_to|部队食物短缺了！
 qstr_You_pay_for_accommod|你支付了宿金。
 qstr_The_troll_outside_{s|{s2}外的食人妖被杀了。任务取消。

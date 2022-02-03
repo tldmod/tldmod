@@ -251,7 +251,7 @@ dlga_lord_start:raid_village_failed|Viděli jsme několik tvých mužů utíkat 
 dlga_raid_village_failed:close_window|Příště to udělám lépe.
 dlga_lord_start:lord_target_lord_failed|Doslechl jsem se, že jsi nedokázal udělat to, o co jsem tě žádal. To je zklamání, {playername}.
 dlga_lord_target_lord_failed:close_window|Příště to udělám líp.
-; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.
+dlga_lord_start:lord_generic_mission_completed.5|Tvoji muži byli svědky tvé statečnosti v bitvě, {playername}. Ukázal jsi jim, že jsme nadřazená síla.
 dlga_lord_start:kill_quest_failed|Doslechl jsem se, že jsi nedokázal udělat to, o co jsem tě žádal. To je zklamání, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Tví muži byli svědky tvé odvahy v bitvě, {playername}. Získal jsi můj respekt.
 dlga_kill_quest_failed:close_window|Příště to udělám lépe.
@@ -850,7 +850,7 @@ dlga_mayor_sea_battle_question:mayor_sea_battle_yes|Ano jsem.
 dlga_mayor_sea_battle_question:mayor_sea_battle_no|Potřebuji nějaký čas, abych se připravil.
 dlga_mayor_sea_battle_yes:close_window|Dobře. Přikaž svým jednotkám ať nastoupí na loď, brzy odplouváme.
 dlga_mayor_sea_battle_no:close_window|Pospěš si, nemáme moc času, než budeme muset odplout.
-; dlga_mayor_talk:mayor_reinforced_center_finished|I have reinforced {s3} as you have asked me to.
+dlga_mayor_talk:mayor_reinforced_center_finished|Vedu posily {s3}, jak jsi mě žádal.
 dlga_mayor_begin:kill_quest_bandits_failed|Doslechl jsem se, že si nesplnil, o co jsem tě žádal. To je zklamání,{playername}.
 dlga_kill_quest_bandits_failed:close_window|Příště to udělám líp.
 dlga_mayor_talk:mayor_deliver_food|Tady je to jídlo, {reg9} kusů.
@@ -859,7 +859,7 @@ dlga_mayor_deliver_food_completed:close_window|Dělám co je v mích silách.
 dlga_mayor_begin:mayor_looters_quest_response|Ach, {playername}. Dosáhl jsi nějakého pokroku?
 dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|zbil jsem pár divokých skřetů
 dlga_mayor_looters_quest_response:close_window|Ještě ne, pane. Sbohem.
-; dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Aye, my scouts saw the whole thing. That should keep those tribal orcs at bay!^^[earned {reg14}x{reg15} Resource Points of {s14}]
+dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Ano, moji zvědové viděli vše. To by mělo zastavit kmenové skřety!^^[earned {reg14}x{reg15} Resource Points of {s14}]
 ; dlga_mayor_looters_quest_destroyed_2:close_window|And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now.  If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place!  I think that concludes your task, {playername}. Thank you, and farewell.
 dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|potřebujete ještě něco ?
 ; dlga_mayor_begin:close_window|Good to see you again {playername}. I have heard that you have delivered those people successfully.  I will tell our commander how reliable you are.^^[earned {reg14} Resource Points of {s14}]
@@ -942,9 +942,9 @@ dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Ne, nemám záj
 ; dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|That takes a weight off my shoulders, {playername}. You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?
 ; dlga_merchant_quest_requested:merchant_quest_brief.9|The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.
 ; dlga_merchant_quest_brief:move_cattle_herd_quest_brief|The group must arrive at {s13} within {reg6} days. Sooner is better, much better,  but it must be absolutely no later than {reg6} days.  Can you do that?^^[you will earn {reg14} Resource Points of {s14}]
-; dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Aye, I can take them to {s13}.
+dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Ano, můžu je vzít k {s13}.
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Je mi líto, ale ne.
-; dlga_move_cattle_herd_quest_taken:mayor_pretalk|Splendid. You can find them right outside the town. After you take them to {s13}, return back to me and I will give you your pay.
+dlga_move_cattle_herd_quest_taken:mayor_pretalk|Skvěle. Můžeš je najít zrovna za městem. Jakmile je přivedeš do {s13}, vrať se ke mě a zaplatím ti.
 ; dlga_merchant_quest_requested:mayor_pretalk|Nothing right now, Commander. There’ll be more to do soon enough! Keep your blades sharp and wet.
 dlga_goods_merchant_talk:goods_trade_requested|Chtěl bych koupit pár předmětů ... a možná jiné prodat.
 dlga_goods_trade_requested:goods_trade_completed|Jistě, jistě... Tady, podívej se na moje zásoby...
@@ -976,20 +976,20 @@ dlga_start:town_merchant_talk|Zdravím, veliteli. Jak vám dnes mohu posloužit?
 dlga_start:town_merchant_talk.1|Dobrý den, co pro tebe mohu udělat?
 dlga_town_merchant_talk:trade_requested_weapons|Chci si zažádat o nové vybavení, ukaž co máš ve skladu.
 dlga_town_merchant_talk:trade_requested_horse|Chci si pořídit oře.
-; dlga_town_merchant_talk:player_upgrade_trolls_take|I want to strengthen my trolls!
-; dlga_player_upgrade_trolls_take:close_window|Who are you to ask this of me? Pah! Begone! (You need to be {s24} or higher)
+dlga_town_merchant_talk:player_upgrade_trolls_take|Chci posílit moje troly!
+dlga_player_upgrade_trolls_take:close_window|Kdo jsi, že mě o tohle žádáš? Pche! Táhni! (Musíš být {s24} nebo vyšší)
 ; dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|You’ve done us many a good turn. We’ll help put some iron on your boy here! ({reg21} resource points)
 ; dlga_player_upgrade_trolls_take:close_window.1|Your trolls are like mewling babes. Get them blooded good and proper first!
 dlga_player_upgrade_trolls_take:close_window.2|Tohle tady neděláme...
-; dlga_player_upgrade_trolls_take:close_window.3|Your trolls don’t even talk proper! They’re not our kind. Take them back to where they came from!
+dlga_player_upgrade_trolls_take:close_window.3|Tvoji trolové neumějí pořádně mluvit! Nejsou náš druh. Vezmi je tam odkud přišli!
 dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Zapomeň na to
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|I'll armour one of them.
-; dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Perhaps I haven’t earned this yet. I’ll not trouble you with this trifle
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|Vyzbrojím jednoho z nich.
+dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Možná jsem si to ještě nezasloužil. Nebudu tě obtěžovat s takovou maličkostí.
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough.1|Zapomeň na to
 dlga_player_upgrade_troll_not_enough:close_window|Mrháš mým časem...
-; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
+dlga_player_upgrade_troll_buy_done:close_window|Yes...yes! Pojď sem, ty tupče, ty...
 dlga_trade_requested_weapons:merchant_trade|Á, ano veliteli. Tohle zboží je nejlepší, jaké je k nalezení.
-; dlga_trade_requested_horse:merchant_trade|Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.
+dlga_trade_requested_horse:merchant_trade|Divoké zvíře pro jízdu a zabíjení a maso ke krmení. Nenajdete lepší zvíře kdekoliv jinde.
 dlga_merchant_trade:town_merchant_talk|Jeste neco?
 dlga_town_merchant_talk:merchant_gossip|Pověz, o čem lidé poslední dobou hovoří?
 dlga_town_merchant_talk:close_window|Sbohem.

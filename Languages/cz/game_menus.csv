@@ -68,7 +68,7 @@ mno_start_go|GONDOR, království Bílé věže
 mno_start_ro|ROHAN, lidé koní
 mno_start_du|DUNADÁNI, prastará dynastie lidí
 mno_start_be|MEDDĚDOVCI, medvědí lidé
-; mno_start_wo|WOODMEN, from the eaves of Mirkwood
+mno_start_wo|LESNÍ LIDÉ, z okraje Temného hvozdu
 mno_start_da|severní království DOLU
 menu_start_good_elf|^^^^^^^^^^ve kterém lese přebýváš, Starší?
 mno_start_ri|ROKLINKA, dům pána Elronda
@@ -165,10 +165,10 @@ mno_strat_tweaks_rank_gain_rate|Nárůst úrovně: {s7}
 mno_strat_tweaks_back|Zpět do menu úprav.
 menu_camp_action|^^^^^^^^^ Který předmět?
 mno_camp_drink_water|Vypij Entí vodu!
-; mno_camp_drink_orc_brew|Pass around the Orc Brew!
-; mno_camp_drink_miruvor|Pass around the Miruvor!
-; mno_camp_use_athelas|Use Athelas for wound treatment.
-; mno_camp_use_drums|Beat the Drums of the Deep.
+mno_camp_drink_orc_brew|Poslat kolovat skřetí pálenku!
+mno_camp_drink_miruvor|Poslat kolovat Miruvor!
+mno_camp_use_athelas|Použít Athelas k ošetření zranění.
+mno_camp_use_drums|Hrát na bubny z hlubin.
 mno_camp_action_4|Zpět.
 menu_assasins_attack_player_won|Vrazi z {s2}, poslání {s3} byli poraženi!
 menu_assasins_attack_player_retreat|Utíkáš a jsi stále naživu!
@@ -203,7 +203,7 @@ mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?zaútočili:se 
 mno_control_allies_menu|Použij svůj vliv, abys velel svým spojencům v boji.
 mno_encounter_hide|Skryj se před nepřítelem...
 mno_special_whip|Spěcháte směrem k nim, praskající {s4}.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
+mno_encounter_attack_bearform|{reg21?Vtrhnout do bitvy v medvědí podobě:Změnit vzhled a čelit jim}.
 mno_encounter_leave|uvolnit se.
 mno_encounter_retreat|Nechat za sebou nějaké vojáky, aby kryli tvůj ústup.
 mno_player_control_allies_simple|Zavel a zaútoč na nepřítele
@@ -236,7 +236,7 @@ menu_join_battle|^^^Pomáháš {s2} proti {s1}.^ Máš {reg22} připravených vo
 mno_join_attack|Zaútočit na nepřítele.
 mno_join_order_attack|Nařiď svým jednotkám, aby zaútočili s tvými spojenci, mezitím co ty zůstaneš vzadu.
 mno_control_allies_join_menu|Použij body vlivu, abys velel svým spojencům v boji.
-; mno_join_attack_bearform|Leap into battle in bear form
+mno_join_attack_bearform|Vtrhnout do bitvy v medvědí podobě.
 mno_join_leave|Uvolnit se od nepřítele.
 mno_player_control_allies_join_menu|Zavel a zaútoč na nepřítele
 menu_join_order_attack|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^Nepřátelské ztráty: {s10}
@@ -310,7 +310,7 @@ mno_speak_with_elder|Promluv si s {s6}.
 mno_isengard_underground|Jdi do podzemních jeskyní.
 mno_isengard_underground_door|Jdi do podzemních jeskyní
 mno_tirith_toplevel|Vyšplhej na horní patro.
-; mno_tirith_toplevel_door|Go to the Citadel
+mno_tirith_toplevel_door|Jít do Citadely!
 mno_erebor_gates|Navštiv Velké Brány.
 mno_town_leave|Odejít...
 mno_town_leave_door|Opustit oblast
@@ -442,16 +442,16 @@ menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
 menu_animal_ambush|Ty a tví společníci jste se ocitli odděleni od zbytku vaši skupiny, když najednou...
 menu_animal_ambush_success|{s2} před tebou {reg0?padli:padli} jako obilí před kosou! Zanedlouho všichni útočníci leží na zemi, zranění nebo mrtví. {s3}
 menu_animal_ambush_fail|Zvířata vás koušou a trhají {reg0?,: a tvého společníka{reg2?s,:,}} ale naštěstí se ti podařilo je odrazit. Doufejme že na tebe znova nezaútočí .
-; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Plain Big (file scn custom 1.sco)
-; mno_scene2|Plain Med (file scn custom 2.sco)
-; mno_scene3|Plain Small (file scn custom 3.sco)
-; mno_scene4|Steppe Big (file scn custom 4.sco)
-; mno_scene5|Steppe Med (file scn custom 5.sco)
-; mno_scene6|Steppe Small (file scn custom 6.sco)
-; mno_scene7|Forest Big (file scn custom 7.sco)
-; mno_scene8|Forest Med (file scn custom 8.sco)
-; mno_scene9|Forest Small (file scn custom 9.sco)
+menu_build_your_scene|Zde si můžeš vytvořit vlastní bitevní scénář, použitím jednoho ze slotů níže a Editačního módu (musíš nejdříve přepnout editační mód na ZAPNOUT v M&B spouštěcí obrazovce v Nastavení). Poté můžeš odeslat scénář, který jsi vytvořil (jmenovitě, sco soubory ze složky TLD/SceneObj)  developerskému týmu TLD, a pokud bude dobrý, může se objevit v pozdějším vydání jako jeden z náhodných bojovišť!^^ Zkus specifikovat ve kterém regionu na mapě chceš aby se scénář odehrával.^ Pár rad: vyhni se hluboké vodě, strmým horám  a dalším nedosažitelným místům pokud nejsi zkušený vývojář a nevíš jak zabránit AI jednotkám aby chodily tam kde nechceš, a vytvoř AI síť na jiném místě.^ (Vložení #0-1 je pro útočníky, #4 pro obránce, nedotýkej se #5-8
+mno_scene1|Velká pláň (file scn custom 1.sco)
+mno_scene2|Střední pláň (file scn custom 2.sco)
+mno_scene3|Malá pláň (file scn custom 3.sco)
+mno_scene4|Velká step (file scn custom 4.sco)
+mno_scene5|Střední step (file scn custom 5.sco)
+mno_scene6|Malá step (file scn custom 6.sco)
+mno_scene7|Velký les (file scn custom 7.sco)
+mno_scene8|Střední les (file scn custom 8.sco)
+mno_scene9|Malý les (file scn custom 9.sco)
 mno_back_3dot|Zpět...
 mno_back|Jdi zpět.
 mno_next|další...

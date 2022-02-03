@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|TLD New FormAI
 qstr_Siege_AI:__|Siege AI:  
 qstr_Basic__better_perfor|Basic (better performance)
 qstr_Advanced|Advanced
+qstr_Campaign_diffculty:_|Campaign diffculty:  
+qstr_Hard|Hard
+qstr_Default|Default
+qstr_Easy|Easy
 qstr_Town_NPCs_Always_Acc|Town NPCs Always Accessible from Menus:  
 qstr_Cutscenes:__|Cutscenes:  
 qstr_Injuries_for_compani|Injuries for companions:  
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
 qstr__Scales_with_Wildcra|(Scales with Wildcraft)
 qstr_Strengthens_all_Hero|Strengthens all Heroes
 qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
+qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|+1 to Spotting
+qstr_+2_to_Weapon_Master|+2 to Weapon Master
+qstr_+2_to_First_Aid|+2 to First Aid
 qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
 qstr_Less_Wargs_upkeep|Less Wargs upkeep
 qstr_Light_Armor|Light Armor
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|Luckily some passing locals found you lying in the dit
 qstr_{s13}^^You_have_succ|{s13}^^You have successfully sneaked in.
 qstr_the_place|the place
 qstr_the_castle|the castle
-qstr_the_Citadel|the Citadel
+qstr_the_Throne_Room|the Throne Room
 qstr_the_Secret_Cave|the Secret Cave
 qstr_Meduseld_the_Golden_|Meduseld, the Golden Hall
 qstr_the_Lord_Halls|the Lord Halls
 qstr_the_Leader_s_Cave|the Leader's Cave
 qstr_the_Tower|the Tower
 qstr_the_tower_of_Orthanc|the tower of Orthanc
-qstr_the_Throne_Room|the Throne Room
 qstr_Beorn_s_Hall|Beorn's Hall
 qstr_the_Hall|the Hall
 qstr_the_Great_Chamber_of|the Great Chamber of Thrór
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've R
 qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
+qstr_the_Citadel|the Citadel
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Steward Denethor
 qstr_the_Golden_Hall|the Golden Hall

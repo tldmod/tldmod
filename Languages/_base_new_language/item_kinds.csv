@@ -356,8 +356,8 @@ itm_riv_helm_c|Rivendell Infantry Helm
 itm_riv_helm_c_pl|Rivendell Infantry Helm
 itm_free_riv_helm_glorfi|Glorfi Hair
 itm_free_riv_helm_glorfi_pl|Glorfi Hair
-itm_riv_tiara|Elf Lord Tiara
-itm_riv_tiara_pl|Elf Lord Tiara
+itm_tiara_reward|Elf Lord Tiara
+itm_tiara_reward_pl|Elf Lord Tiara
 itm_riv_shield_a|Rivendell Shield
 itm_riv_shield_a_pl|Rivendell Shield
 itm_riv_shield_b|Rivendell Shield
@@ -1110,8 +1110,8 @@ itm_mirkwood_mail|Greenwood Mail
 itm_mirkwood_mail_pl|Greenwood Mail
 itm_mirkwood_scale|Greenwood Light Scale
 itm_mirkwood_scale_pl|Greenwood Light Scale
-itm_mirkwood_heavy_scale|Mirkwood Leafscale
-itm_mirkwood_heavy_scale_pl|Mirkwood Leafscale
+itm_mirkwood_heavy_scale|Greenwood Leafscale
+itm_mirkwood_heavy_scale_pl|Greenwood Leafscale
 itm_free_mirkwood_armor_e|Light Mail and Surcoat
 itm_free_mirkwood_armor_e_pl|Light Mail and Surcoat
 itm_mirkwood_sword|Woodelf Sword
@@ -1238,12 +1238,12 @@ itm_harad_yellow_shield|Harad Shield
 itm_harad_yellow_shield_pl|Harad Shield
 itm_desert_boots|Desert Boots
 itm_desert_boots_pl|Desert Boots
-itm_harad_leather_greaves|Harad Greaves
-itm_harad_leather_greaves_pl|Harad Greaves
-itm_harad_scale_greaves|Harad Boots
-itm_harad_scale_greaves_pl|Harad Boots
-itm_harad_lamellar_greaves|Harad Boots
-itm_harad_lamellar_greaves_pl|Harad Boots
+itm_harad_leather_greaves|Harad Leather Greaves
+itm_harad_leather_greaves_pl|Harad Leather Greaves
+itm_harad_scale_greaves|Harad Scale Greaves
+itm_harad_scale_greaves_pl|Harad Scale Greaves
+itm_harad_lamellar_greaves|Harad Splinted Greaves
+itm_harad_lamellar_greaves_pl|Harad Splinted Greaves
 itm_free_khand_helmet_a1|Khand Helm With Camail
 itm_free_khand_helmet_a1_pl|Khand Helm With Camail
 itm_free_khand_helmet_a2|Khand Helm
@@ -1834,3 +1834,59 @@ itm_stones_siege|Siege Stones
 itm_stones_siege_pl|Siege Stones
 itm_beorn_axe_no_attack|Beorning Axe
 itm_beorn_axe_no_attack_pl|Beorning Axe
+itm_tabard_b_wb|Tabard
+itm_tabard_b_wb_pl|Tabard
+itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+itm_nobleman_outfit_b_new_wb_pl|Nobleman Outfit
+itm_peasant_man_a_wb|Peasant Outfit
+itm_peasant_man_a_wb_pl|Peasant Outfit
+itm_leather_jerkin_wb|Leather Jerkin
+itm_leather_jerkin_wb_pl|Leather Jerkin
+itm_white_tunic_c_wb|Tunic Jacket
+itm_white_tunic_c_wb_pl|Tunic Jacket
+itm_white_tunic_a_wb|White Tunic
+itm_white_tunic_a_wb_pl|White Tunic
+itm_red_tunic_wb|Red Tunic
+itm_red_tunic_wb_pl|Red Tunic
+itm_fur_coat_wb|Dale Coat
+itm_fur_coat_wb_pl|Dale Coat
+itm_fur_hat_a_new_wb|Fur Hat
+itm_fur_hat_a_new_wb_pl|Fur Hat
+itm_noel_hat_a_wb|Fur Hat
+itm_noel_hat_a_wb_pl|Fur Hat
+itm_peasant_dress_b_new_wb|Blue Dress
+itm_peasant_dress_b_new_wb_pl|Blue Dress
+itm_sarranid_lady_dress_wb|Blue Dress
+itm_sarranid_lady_dress_wb_pl|Blue Dress
+itm_sar_robe_b_wb|Robe
+itm_sar_robe_b_wb_pl|Robe
+itm_black_dress_wb|Black Dress
+itm_black_dress_wb_pl|Black Dress
+itm_blackwhite_dress_wb|Lady Dress
+itm_blackwhite_dress_wb_pl|Lady Dress
+itm_white_tunic_b_wb|Simple Tunic
+itm_white_tunic_b_wb_pl|Simple Tunic
+itm_blue_tunic_wb|Blue Tunic
+itm_blue_tunic_wb_pl|Blue Tunic
+itm_black_tunic_wb|Black Tunic
+itm_black_tunic_wb_pl|Black Tunic
+itm_green_tunic_wb|Green Tunic
+itm_green_tunic_wb_pl|Green Tunic
+itm_green_dress_wb|Green Dress
+itm_green_dress_wb_pl|Green Dress
+itm_gondor_fine_outfit_dress_wb|Fine Outfit
+itm_gondor_fine_outfit_dress_wb_pl|Fine Outfit
+itm_rohan_fine_outfit_dale_dress_wb|Fine Outfit
+itm_rohan_fine_outfit_dale_dress_wb_pl|Fine Outfit
+itm_robe_generic_dress_wb|Robe
+itm_robe_generic_dress_wb_pl|Robe
+itm_wimple_a_wb|Wimple
+itm_wimple_a_wb_pl|Wimple
+itm_wimple_with_veil_wb|Wimple
+itm_wimple_with_veil_wb_pl|Wimple
+itm_fine_hat_wb|Fine Hat
+itm_fine_hat_wb_pl|Fine Hat
+itm_rohan_tunic_a_wb|Rohan Tunic
+itm_rohan_tunic_a_wb_pl|Rohan Tunic
+itm_rohan_tunic_b_wb|Rohan Tunic
+itm_rohan_tunic_b_wb_pl|Rohan Tunic

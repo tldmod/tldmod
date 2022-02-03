@@ -83,7 +83,7 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
-qstr__rev_332_wb__dev_^_B| rev 332 wb | dev ^ Built 2021-11-22 18:00   
+qstr__rev_371_wb__dev_^_B| rev 371 wb | dev ^ Built 2022-02-02 19:08   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
@@ -113,6 +113,10 @@ qstr_TLD_New_FormAI|TLD New FormAI
 qstr_Siege_AI:__|Siege AI:  
 qstr_Basic__better_perfor|Basic (better performance)
 qstr_Advanced|Advanced
+qstr_Campaign_diffculty:_|Campaign diffculty:  
+qstr_Hard|Hard
+qstr_Default|Default
+qstr_Easy|Easy
 qstr_Town_NPCs_Always_Acc|Town NPCs Always Accessible from Menus:  
 qstr_Cutscenes:__|Cutscenes:  
 qstr_Injuries_for_compani|Injuries for companions:  
@@ -267,6 +271,8 @@ qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
 qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|+1 to Spotting
+qstr_+2_to_Weapon_Master|+2 to Weapon Master
+qstr_+2_to_First_Aid|+2 to First Aid
 qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
 qstr_Less_Wargs_upkeep|Less Wargs upkeep
 qstr_Light_Armor|Light Armor
@@ -726,6 +732,7 @@ qstr_Tribal_Orc_Warriors|Tribal Orc Warriors
 qstr_Tribal_Orc_Chiefs|Tribal Orc Chiefs
 qstr_A_quest_was_cancelle|A quest was cancelled for update compatibility. No need to worry.
 qstr_Campaign_difficulty_|Campaign difficulty set to default due to new features. Re-adjust in Game Options.
+qstr_Savegame_compatibili|Savegame compatibility: Campaign Difficulty set to default. Adjust in TLD options.
 qstr_Something_wrong_not_|Something wrong, not enough troops to remove
 qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
 qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
@@ -1184,7 +1191,7 @@ qstr_Added_1000_experienc|Added 1000 experience to player.
 qstr_Attributes_skills_an|Attributes, skills and proficiencies raised.
 qstr_Items_added_to_playe|Items added to player inventory.
 qstr_Looter_party_was_spa|Looter party was spawned nearby.
-qstr_DEBUG:_Smiths_just_g|DEBUG: Smiths just got stuffed!
+qstr_Ironman_turned_off|Ironman turned off
 qstr_HP_lost_from_poisoni|HP lost from poisoning.
 qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
