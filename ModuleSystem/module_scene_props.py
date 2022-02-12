@@ -3075,7 +3075,7 @@ scene_props = [
 ( "well_shaft"                                 ,0,"well_shaft","bo_well_shaft",[]),
 ( "small_wall_f"                               ,0,"small_wall_f","bo_small_wall_f",[]),
 ( "small_wall_f2"                              ,0,"small_wall_f2","bo_small_wall_f2",[]),
-( "arabian_wall_a"                             ,0,"arabian_wall_a","bo_arabian_wall_a",[]),
+( "spr_gondor_mt_small_wall_a_1"                           ,0,"arabian_wall_a","bo_arabian_wall_a",[]),
 ( "stairs_a"                                   ,0,"stairs_a","bo_stairs_a",[]),
 
 
@@ -3243,6 +3243,7 @@ scene_props = [
 ("arabian_tent_harad",0,"arabian_tent_harad","bo_arabian_tent", []), #wb only
 ("arabian_tent_harad_b",0,"arabian_tent_harad_b","bo_arabian_tent_b", []), #wb only
 
+#Zachary Foster - Mossy rock props
 ( "stone_wall_mossy_1"                                  ,0,"zf_wall_1","bo_zf_wall_1",[]),
 ( "stone_wall_mossy_2"                                  ,0,"zf_wall_2","bo_zf_wall_2",[]),
 ( "stone_wall_mossy_3"                                  ,0,"zf_wall_3","bo_zf_wall_3",[]),
@@ -3250,11 +3251,58 @@ scene_props = [
 ( "stone_block_mossy_2"                          ,0,"zf_block_1","bo_zf_block_1",[]),
 ( "stone_block_mossy_3"                           ,0,"zf_block_2","bo_zf_block_2",[]),
 ( "stone_block_mossy_4"                           ,0,"zf_block_3","bo_zf_block_3",[]),
+
 ( "fence_new"                           ,0,"fence_new","bo_fence_new",[]),
 
-( "Gondor_MT_black_circular_wall",0,"Gondor_wall_final","bo_MT_circular_wall",[]),
-("gon_mt_stone_bridge",0,"gondor_stone_bridge","bo_gondor_stone_bridge", []),
+("Gondor_MT_black_circular_wall",0,"Gondor_wall_final","bo_MT_circular_wall",[]),
 
+( "gondor_mt_small_wall_a_1_var_cwe"            ,0,"damask_arabian_wall_a_1_var1","bo_damask_arabian_wall_a_1_var1",[]),
+( "gondor_mt_small_wall_b_1_cwe"           ,0,"eastern_wall_b_1","bo_eastern_wall_b_1",[]),
+( "gondor_mt_small_wall_b_2_cwe"           ,0,"eastern_wall_b_2","bo_eastern_wall_b_2",[]),
+( "gondor_mt_small_wall_b_3_cwe"           ,0,"eastern_wall_b_3","bo_eastern_wall_b_3",[]),
+( "gondor_well_a_cwe"                          ,0,"damask_kolodec_a","0",[]),
+( "gondor_well_c_cwe"                          ,0,"damask_kolodec_c","0",[]),
+( "gondor_well_b_cwe"                          ,0,"damask_kolodec_b","bo_damask_kolodec_b",[]),
+( "gondor_well_d_cwe"                               ,0,"damask_kolodec_d","bo_damask_kolodec_d",[]),
+( "gondor_fountain_a_cwe"                   ,0,"df","bo_df",[]),
+( "gondor_fountain_b_cwe"                           ,0,"fountain","bo_fountain",[]),
+
+( "gon_mt_stone_house_p_cwe"                ,0,"CWE_house_a","bo_CWE_house_a",[]),
+( "gon_mt_stone_house_q_cwe"                ,0,"damask_arabian_house_extension_a","bo_damask_arabian_house_extension_a",[]),
+( "gon_mt_stone_house_r_cwe"                ,0,"damask_arabian_house_extension_b","bo_damask_arabian_house_extension_b",[]),
+( "gon_mt_house_block_a_cwe"                        ,0,"damask_house_block_a","bo_damask_house_block_a",[]),
+( "gon_mt_house_block_c_cwe"                        ,0,"damask_house_block_c","bo_damask_house_block_c",[]),
+( "gon_mt_house_block_b_cwe"                        ,0,"damask_house_block_b","bo_damask_house_block_b",[]),
+( "gon_mt_stone_passage_house_b_cwe"            ,0,"damask_passage_house_b","bo_damask_passage_house_b",[]),
+
+( "gondor_palace_cwe"                       ,0,"cwe_royal_Palace_a","bo_cwe_royal_Palace_a",[]),
+( "gondor_tower_8_cwe"                      ,0,"damask_watch_tower_a","bo_damask_watch_tower_a",[]),
+( "gondor_arch_1_cwe"                               ,0,"damask_arka_b","bo_damask_arka_b",[]),
+( "gondor_mt_stairs_cwe"                        ,0,"damask_dom_a_ladder","bo_damask_dom_a_ladder",[]),
+( "gondor_column_a_cwe"                     ,0,"damask_klumba_a","bo_damask_klumba_a",[]),
+
+( "gondor_copula_4_cwe"                     ,0,"damask_superstructure_b","bo_damask_superstructure_b",[]),
+( "gondor_copula_5_cwe"                             ,0,"Capellas_a","bo_Capellas_a",[]),
+( "gondor_copula_6_cwe"                             ,0,"Capellas_d","bo_capellas_d",[]),
+( "gondor_copula_7_cwe"                             ,0,"Capellas_c","bo_capellas_c",[]),
+( "gondor_copula_8_cwe"                             ,0,"Capellas_b","bo_capellas_b",[]),
+
+( "crane_a_cwe"                                     ,0,"mechanism_for_sieges","0",[]),
+( "crane_b_cwe"                                     ,0,"cargo_crane","0",[]),
+( "basket_cwe"                              ,0,"korzina_1","bo_korzina_1",[]),
+
+#Khazad mod props
+( "khazad_dwarf_mech_stand"                    ,0,"khazad_dwarf_mech_stand","bo_khazad_dwarf_mech_stand",[]),
+( "khazad_dwarf_mech_wheel"                    ,0,"khazad_dwarf_mech_wheel","0",[]),
+( "khazad_dwarf_mech_water"                    ,0,"khazad_dwarf_mech_water","0",[]),
+
+#Spak props
+( "fish_barrel_spak"                           ,0,"spak_barrel_fish","0",[]),
+( "fish_box_01_spak"                           ,0,"spak_boxfish_01","bo_spak_boxfish_01",[]),
+( "fish_box_02_spak"                           ,0,"spak_boxfish_02","bo_spak_boxfish_01",[]),
+( "gear_wheel_spak_2"                          ,0,"spak_gear_wheel_2","0",[]),
+( "gear_wheel_spak_1"                          ,0,"spak_gear_wheel_1","0",[]),
+( "water_wheel_spak"                           ,0,"spak_water_weel","0",[]),
 
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
