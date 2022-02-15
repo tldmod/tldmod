@@ -470,7 +470,7 @@ scenes = [
 ("dunland_camp_siege"    ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],["player_chest"],"outer_terrain_rohan"),
 ("harad_camp_siege"      ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],["player_chest"],"outer_terrain_steppe"),
 ("khand_camp_siege"      ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x0000000020040de3000699aa00005234000048ba000004b5",[],["player_chest"],"outer_terrain_rohan"),
-("north_rhun_camp_siege" ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x00000001200005000006d9e10000065c00004b3400000dfd",[],["player_chest"],"outer_terrain_rohan"),
+("north_rhun_camp_siege" ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_flat"),
 ("rhun_south_camp_siege"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
 ("rhun_north_camp_siege"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
 

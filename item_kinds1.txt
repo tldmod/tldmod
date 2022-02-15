@@ -1127,7 +1127,7 @@ itemsfile version 2
  itm_isengard_heavy_sword Isengard_Heavy_Sword Isengard_Heavy_Sword 1  isengard_heavy_sword 0  342163459 9223635919939043552 500 786582 4.5 95 0 0 0 15 40960 93 0 102 0 256 40
 0
 
- itm_isengard_spear Isengard_Spear Isengard_Spear 1  isengard_spear 0  2251800088772612 9254615759470988544 300 786582 2.5 90 0 0 0 9 0 96 0 150 0 283 512
+ itm_isengard_spear Isengard_Spear Isengard_Spear 1  isengard_spear 0  2251800088772612 9254615759470985472 300 786582 2.5 90 0 0 0 9 0 96 0 150 0 283 512
 0
 
  itm_isengard_pike Isengard_Pike Isengard_Pike 1  isengard_pike 0  2251800088772612 4222124851987200 400 786582 3.5 91 0 0 0 11 20480 92 0 226 0 282 532
@@ -1169,7 +1169,7 @@ itemsfile version 2
  itm_orc_sledgehammer Orc_Sledgehammer Orc_Sledgehammer 1  orc_sledgehammer 0  2252113621237764 9223372043053957344 150 786582 7 91 0 0 0 13 27648 80 0 75 0 256 539
 0
 
- itm_orc_simple_spear Orc_Spear Orc_Spear 2  orc_simple_spear 0  uruk_spear 786432  2251799952195588 9254615759470988544 50 786582 2.5 90 0 0 0 0 0 96 0 152 0 278 0
+ itm_orc_simple_spear Orc_Spear Orc_Spear 2  orc_simple_spear 0  uruk_spear 786432  2251799952195588 9254615759470985472 50 786582 2.5 90 0 0 0 0 0 96 0 152 0 278 0
 0
 
  itm_orc_skull_spear Orc_Skull_Spear Orc_Skull_Spear 2  orc_skull_spear 0  uruk_skull_spear 786432  2251802099679236 9254615759470985472 200 786582 3 90 0 0 0 0 0 92 0 162 0 281 0
