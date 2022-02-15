@@ -773,11 +773,11 @@ animations = [
 ##   [1.0, "throw_stone", 21, 54, arf_blend_in_0],
    [0.9, "throwing_stone", 20, 65, arf_blend_in_0],
  ],
- ["ready_pistol", acf_rot_vertical_sword|acf_anim_length(100), amf_priority_attack|amf_use_weapon_speed|amf_keep|amf_client_owner_prediction|amf_rider_rot_pistol,
+ ["ready_pistol", acf_rot_vertical_bow|acf_anim_length(100), amf_priority_attack|amf_use_weapon_speed|amf_keep|amf_client_owner_prediction|amf_rider_rot_bow ,
    [1.5, "gansta_bow", 100, 130, arf_blend_in_6|arf_make_custom_sound , pack2f(0.14, 0.44)]
   #[0.3, "anim_human", combat+2500, combat+2515, arf_blend_in_8],
  ],
- ["release_pistol", acf_rot_vertical_sword|acf_anim_length(100), amf_priority_attack|amf_use_weapon_speed|amf_play|amf_client_owner_prediction|amf_rider_rot_pistol,
+ ["release_pistol", acf_rot_vertical_bow|acf_anim_length(100), amf_priority_attack|amf_use_weapon_speed|amf_play|amf_client_owner_prediction|amf_rider_rot_bow ,
    [0.3, "gansta_bow", 130, 132, arf_blend_in_2],
   #[0.3, "anim_human", combat+2520, combat+2527, arf_blend_in_1],
  ],
