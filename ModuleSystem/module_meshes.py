@@ -253,24 +253,24 @@ meshes = [#(set_background_mesh, "mesh_ui_default_menu_window"),
 # BCD banners are not used
 
   ("banner_e01", 0, "banner_e01", 0, 0, 0, -90, 0, 0, 1, 1, 1),
-  ("banner_e02", 0, "banner_e02", 0, 0, 0, -90, 0, 0, 1, 1, 1),
-  ("banner_e03", 0, "banner_e03", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_e02", 0, "banner_e02", 0, 0, 0, -90, 0, 0, 1, 1, 1), 
+  ("banner_e03", 0, "banner_e03", 0, 0, 0, -90, 0, 0, 1, 1, 1), #blackroot
   ("banner_e04", 0, "banner_e04", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_e05", 0, "banner_e05", 0, 0, 0, -90, 0, 0, 1, 1, 1),
-  ("banner_e06", 0, "banner_e06", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_e06", 0, "banner_e06", 0, 0, 0, -90, 0, 0, 1, 1, 1), #pinnath
   ("banner_e07", 0, "banner_e07", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_e08", 0, "banner_e08", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_e09", 0, "banner_e09", 0, 0, 0, -90, 0, 0, 1, 1, 1),
-  ("banner_e10", 0, "banner_e10", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_e10", 0, "banner_e10", 0, 0, 0, -90, 0, 0, 1, 1, 1), #lamedon
   ("banner_e11", 0, "banner_e11", 0, 0, 0, -90, 0, 0, 1, 1, 1),
-  ("banner_e12", 0, "banner_e12", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_e12", 0, "banner_e12", 0, 0, 0, -90, 0, 0, 1, 1, 1), #pelargir
   ("banner_e13", 0, "banner_e13", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_e14", 0, "banner_e14", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_e15", 0, "banner_e15", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_e16", 0, "banner_e16", 0, 0, 0, -90, 0, 0, 1, 1, 1),
-  ("banner_e17", 0, "banner_e17", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_e17", 0, "banner_e17", 0, 0, 0, -90, 0, 0, 1, 1, 1), #amroth
   ("banner_e18", 0, "banner_e18", 0, 0, 0, -90, 0, 0, 1, 1, 1),
-  ("banner_e19", 0, "banner_e19", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_e19", 0, "banner_e19", 0, 0, 0, -90, 0, 0, 1, 1, 1), #lossarnach
   ("banner_e20", 0, "banner_e20", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_e21", 0, "banner_e21", 0, 0, 0, -90, 0, 0, 1, 1, 1),
 
@@ -539,5 +539,7 @@ meshes+=[
 ("choose_icon_evilman",   0, "icon_evilman",   0, 0, 0, 0, 0, 0, 1, 1, 1),
 
 ("draw_funeral_pyre_oath",      0, "draw_funeral_pyre_oath",      0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+("troop_label_banner",  0, "troop_label_banner", 0, 0, 0, 0, 0, 0, 10, 10, 10),
 
 ]

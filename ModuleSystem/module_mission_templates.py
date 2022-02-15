@@ -1052,6 +1052,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     hp_shield_init,
     hp_shield_trigger,
     health_restore_on_kill,
+    common_battle_init_banner,
 
     #Batching
     batching_agent_spawn_human,
@@ -1085,6 +1086,7 @@ or [] ) + [
 tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
 
   health_restore_on_kill, #Testing if this will be resource intensive.
+  common_battle_init_banner,
   hp_shield_init,
   hp_shield_trigger,
 

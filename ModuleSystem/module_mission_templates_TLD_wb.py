@@ -4388,3 +4388,12 @@ tld_bow_shield = [
      (try_end)
     ])
 ]
+
+
+common_battle_init_banner = (
+  ti_on_agent_spawn, 0, 0, [],
+  [
+    (store_trigger_param_1, ":agent_no"),
+    (agent_get_troop_id, ":troop_no", ":agent_no"),
+    (call_script, "script_troop_agent_set_banner", "tableau_game_troop_label_banner", ":agent_no", ":troop_no"),
+  ])

@@ -937,6 +937,22 @@ if wb_compile_switch==1:
        (call_script, "script_add_troop_to_custom_armor_tableau", ":troop_no"),
        ]),
   
+  ("game_troop_label_banner", 0, "tableau_with_transparency", 256, 256, -128, 0, 128, 256,
+   [
+       (store_script_param, ":banner_mesh", 1),
 
+       (cur_tableau_set_background_color, 0xFF888888),
+       (set_fixed_point_multiplier, 100),
+       (cur_tableau_set_camera_parameters, 0, 100, 100, 0, 100000),
+
+       (init_position, pos1),
+       (position_set_y, pos1, 130),
+       (position_set_x, pos1, -1),
+       (cur_tableau_add_mesh, ":banner_mesh", pos1, 130, 0),
+	   
+       #(init_position, pos1),
+       #(position_set_z, pos1, 10),
+       #(cur_tableau_add_mesh, "mesh_troop_label_banner", pos1, 112, 0),
+       ]),
 
 ]
