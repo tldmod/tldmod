@@ -1286,6 +1286,8 @@ PS_OUTPUT ps_main(PS_INPUT In, uniform const int PcfMode)
     }
     // gamma correct
     Output.RGBColor.rgb = pow(Output.RGBColor.rgb, output_gamma_inv);
+    
+    //Output.RGBColor.rgb = float3(1,0,0);
     return Output;
 }
 
@@ -1985,9 +1987,56 @@ PS_OUTPUT ps_main_bump( PS_INPUT_BUMP In, uniform const int PcfMode )
 
     Output.RGBColor.a = In.VertexColor.a;
 
-
+    //Output.RGBColor.rgb = float3(1,0,0);
 	return Output;
 }
+
+/* swy: technique lifted from «Procedural Stochastic Textures by Tiling and Blending», created by Thomas Deliot and Eric Heitz (turned the GLSL into HLSL)
+        https://drive.google.com/file/d/1QecekuuyWgw68HU9tg6ENfrCTCVIjm6l/view */
+float2 hash(float2 p)
+{
+  return frac(sin(mul(p, float2x2(127.1, 311.7, 269.5, 183.3))) * 43758.5453);
+}
+
+// Compute local triangle barycentric coordinates and vertex IDs
+void TriangleGrid(
+  float2 uv,
+  out float w1, out float w2, out float w3,
+  out int2 vertex1, out int2 vertex2, out int2 vertex3
+)
+{
+  // Scaling of the input
+  uv *= 3.464; // 2 * sqrt (3)
+  
+  // Skew input space into simplex triangle grid
+  const float2x2 gridToSkewedGrid = float2x2(1.0, 0.0, -0.57735027, 1.15470054);
+  float2 skewedCoord = mul(uv, gridToSkewedGrid);
+  
+  // Compute local triangle vertex IDs and local barycentric coordinates
+    int2 baseId =   int2(floor(skewedCoord)   );
+  float3 temp   = float3( frac(skewedCoord), 0);
+  temp.z = 1.0 - temp.x - temp.y;
+  
+  if (temp.z > 0.0)
+  {
+    w1 =       temp.z;
+    w2 =       temp.y;
+    w3 =       temp.x;
+    vertex1 = baseId;
+    vertex2 = baseId + int2(0, 1);
+    vertex3 = baseId + int2(1, 0);
+  }
+  else
+  {
+    w1 =     - temp.z;
+    w2 = 1.0 - temp.y;
+    w3 = 1.0 - temp.x;
+    vertex1 = baseId + int2(1, 1);
+    vertex2 = baseId + int2(1, 0);
+    vertex3 = baseId + int2(0, 1);
+  }
+}
+
 
 PS_OUTPUT ps_main_bump_simple( PS_INPUT_BUMP In, uniform const int PcfMode )
 { 
@@ -2022,11 +2071,42 @@ PS_OUTPUT ps_main_bump_simple( PS_INPUT_BUMP In, uniform const int PcfMode )
 	Output.RGBColor *= tex_col;
 	Output.RGBColor *= In.VertexColor;
 	
-//	Output.RGBColor = saturate(Output.RGBColor);
+	Output.RGBColor = saturate(Output.RGBColor);
     Output.RGBColor.rgb = saturate(pow(Output.RGBColor.rgb, output_gamma_inv));
 
     Output.RGBColor.a = In.VertexColor.a;
+    
+#if 1
+    float w1, w2, w3; int2 vertex1, vertex2, vertex3;
+    
+    TriangleGrid(In.Tex0, w1, w2, w3, vertex1, vertex2, vertex3);
+    
+    //Output.RGBColor.rgb = /*normal.zzz * float3(1,1,0) * hash(In.Tex0).rgg * */ float3(w1, w2, w3); /* swy: stone */
+    
+    
+    float2 uvA = In.Tex0 + hash(vertex1);
+    float2 uvB = In.Tex0 + hash(vertex2);
+    float2 uvC = In.Tex0 + hash(vertex3);
+    
+    float2 duvdx = ddx(In.Tex0);
+    float2 duvdy = ddy(In.Tex0);
+    
+    float4 texA = tex2Dgrad(MeshTextureSampler, uvA, duvdx, duvdy); texA.rgb = pow(texA.rgb, input_gamma);
+    float4 texB = tex2Dgrad(MeshTextureSampler, uvB, duvdx, duvdy); texB.rgb = pow(texB.rgb, input_gamma);
+    float4 texC = tex2Dgrad(MeshTextureSampler, uvC, duvdx, duvdy); texC.rgb = pow(texC.rgb, input_gamma);
+    
+    Output.RGBColor.rgb = total_light.rgb;
+    Output.RGBColor.a = 1.0f;
+    Output.RGBColor *= (w1 * texA) + (w2 * texB) + (w3 * texC);
+	Output.RGBColor *= In.VertexColor;
+    //Output.RGBColor.rgb = tex_col.rgb;
+    
+    
+	Output.RGBColor = saturate(Output.RGBColor);
+    Output.RGBColor.rgb = saturate(pow(Output.RGBColor.rgb, output_gamma_inv));
 
+    Output.RGBColor.a = In.VertexColor.a;
+#endif
 	return Output;
 }
 
@@ -3025,7 +3105,7 @@ technique dot3
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_main_bump(PCF_NONE);
-      PixelShader = compile ps_2_0 ps_main_bump_simple(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main_bump_simple(PCF_NONE);
 	}
 }
 
@@ -3034,7 +3114,7 @@ technique dot3_SHDW
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_main_bump(PCF_DEFAULT);
-      PixelShader = compile ps_2_0 ps_main_bump_simple(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main_bump_simple(PCF_DEFAULT);
 	}
 }
 
@@ -3052,7 +3132,7 @@ technique dot3_multitex
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_main_bump(PCF_NONE);
-      PixelShader = compile ps_2_0 ps_main_bump_simple_multitex(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main_bump_simple_multitex(PCF_NONE);
 	}
 }
 
@@ -3061,7 +3141,7 @@ technique dot3_multitex_SHDW
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_main_bump(PCF_DEFAULT);
-      PixelShader = compile ps_2_0 ps_main_bump_simple_multitex(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main_bump_simple_multitex(PCF_DEFAULT);
 	}
 }
 
