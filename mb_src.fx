@@ -1265,12 +1265,36 @@ VS_OUTPUT vs_main (uniform const int PcfMode, uniform const bool UseSecondLight,
    Out.Fog = get_fog_amount(d);
    return Out;
 }
-
+static const float PI = 3.14159265f;
 PS_OUTPUT ps_main(PS_INPUT In, uniform const int PcfMode)
 {
     PS_OUTPUT Output;
     
-    float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
+    //In.Tex0 /=40;
+    
+    /* swy: super neat references: https://www.ronja-tutorials.com/post/053-polar-coordinates/
+                                   https://bgolus.medium.com/distinctive-derivative-differences-cce38d36797b
+                                   http://vcg.isti.cnr.it/~tarini/no-seams/ (funnily enough Ben Golus mentions mtarini) */
+    In.Tex0 -= 0.5;
+	In.Tex0 *= 2;
+    
+    float2 at = atan2(In.Tex0.x , In.Tex0.y);
+    //at.x /= 40;
+    
+    //float4 tex_col = tex2D(MeshTextureSampler, float2(frac(at.x / (3.141592 * 2)), length(In.Tex0)));
+    //float4 tex_col = tex2D(MeshTextureSampler, float2(frac(at.x / (3.141592 * 2)), (sqrt(In.Tex0.x*In.Tex0.y + In.Tex0.x*In.Tex0.y))));
+    //float4 tex_col = tex2D(MeshTextureSampler, float2(frac(at.x / (PI * 2)), (sqrt(In.Tex0.x*In.Tex0.x + In.Tex0.y*In.Tex0.y))));
+    //float4 tex_col = tex2D(MeshTextureSampler, float2(frac(at.x / (PI * 2) * 30), sqrt(length(In.Tex0)) ));
+    //float4 tex_col = tex2D(MeshTextureSampler, float2(frac(at.x / (PI * 2) * 30), pow( sqrt(length(In.Tex0)) , 3) ));
+    //float4 tex_col = tex2D(MeshTextureSampler, float2((at.x / (PI * 2) * 20), sqrt(length(In.Tex0)) ));
+
+
+    float2 polarUV = float2((at.x / (PI * 2) * 20), sqrt(length(In.Tex0)));
+    
+    float2 duvdx = ddx(polarUV);
+    float2 duvdy = ddy(polarUV);
+    
+    float4 tex_col = tex2Dgrad(MeshTextureSampler, polarUV, duvdx, duvdy);
     
     tex_col.rgb = pow(tex_col.rgb, input_gamma);
     
@@ -2826,7 +2850,7 @@ technique diffuse
    pass P0
    {
       VertexShader = compile vs_2_0 vs_main(PCF_NONE, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
    }
 }
 
@@ -2835,7 +2859,7 @@ technique diffuse_rohan_banners
    pass P0
    {
       VertexShader = compile vs_2_0 vs_main(PCF_NONE, true, true);
-      PixelShader  = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader  = compile ps_2_a ps_main(PCF_NONE);
    }
 }
 
@@ -2844,7 +2868,7 @@ technique diffuse_spr_banners
    pass P0
    { /* had to raise the VS version to 3.0, hmmm / nevermind, hacked it around! no more texture lookups needed in VS */
       VertexShader = compile vs_2_0 vs_main(PCF_NONE, true, false, true);
-      PixelShader  = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader  = compile ps_2_a ps_main(PCF_NONE);
    }
 }
 
@@ -2853,7 +2877,7 @@ technique diffuse_SHDW
    pass P0
    {
       VertexShader = compile vs_2_0 vs_main(PCF_DEFAULT, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
    }
 }
 
@@ -2871,7 +2895,7 @@ technique diffuse_dynamic
    pass P0
    {
       VertexShader = compile vs_2_0 vs_main(PCF_NONE, false);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
    }
 }
 
@@ -2880,7 +2904,7 @@ technique diffuse_dynamic_SHDW
    pass P0
    {
       VertexShader = compile vs_2_0 vs_main(PCF_DEFAULT, false);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
    }
 }
 
@@ -2898,7 +2922,7 @@ technique skin_diffuse
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_main_skin(PCF_NONE);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
 	}
 }
 
@@ -2907,7 +2931,7 @@ technique skin_diffuse_SHDW
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_main_skin(PCF_DEFAULT);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
 	}
 }
 
@@ -3015,7 +3039,7 @@ technique envmap_metal
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_main(PCF_NONE, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
 	}
 }
 
@@ -3024,7 +3048,7 @@ technique envmap_metal_SHDW
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_main(PCF_DEFAULT, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
 	}
 }
 
@@ -4065,7 +4089,7 @@ technique mtarini_waterfall
    pass P0
    {
       VertexShader = compile vs_2_0 vs_mtarini_waterfall(PCF_NONE, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
    }
 }
 
@@ -4174,7 +4198,7 @@ technique mtarini_standart_shader
    pass P0
    {
       VertexShader = compile vs_2_0 vs_mtarini_standart(PCF_NONE,true);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
    }
 }
 
@@ -4183,7 +4207,7 @@ technique mtarini_standart_shader_SHDW
    pass P0
    {
       VertexShader = compile vs_2_0 vs_mtarini_standart(PCF_DEFAULT,true);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
    }
 }
 
@@ -4192,7 +4216,7 @@ technique mtarini_standart_shader_SHDWNVIDIA
    pass P0
    {
       VertexShader = compile vs_2_0 vs_mtarini_standart(PCF_NVIDIA,true);
-      PixelShader = compile ps_2_0 ps_main(PCF_NVIDIA);
+      PixelShader = compile ps_2_a ps_main(PCF_NVIDIA);
    }
 }
 
@@ -4631,7 +4655,7 @@ technique mtarini_skin_diffuse_95perc
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1,0.95,PCF_NONE);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
 	}
 }
 technique mtarini_skin_diffuse_95perc_SHDW
@@ -4639,7 +4663,7 @@ technique mtarini_skin_diffuse_95perc_SHDW
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1,0.95,PCF_DEFAULT);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
 	}
 }
 technique mtarini_skin_diffuse_95perc_SHDWNVIDIA
@@ -4656,7 +4680,7 @@ technique mtarini_skin_diffuse_78perc
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.78,0.78,PCF_NONE);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
 	}
 }
 technique mtarini_skin_diffuse_78perc_SHDW
@@ -4664,7 +4688,7 @@ technique mtarini_skin_diffuse_78perc_SHDW
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.78,0.78,PCF_DEFAULT);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
 	}
 }
 technique mtarini_skin_diffuse_78perc_SHDWNVIDIA
@@ -4683,7 +4707,7 @@ technique mtarini_skin_diffuse_73perc
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.73,0.73,PCF_NONE);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
 	}
 }
 technique mtarini_skin_diffuse_73perc_SHDW
@@ -4691,7 +4715,7 @@ technique mtarini_skin_diffuse_73perc_SHDW
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/0.73,0.73,PCF_DEFAULT);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
 	}
 }
 technique mtarini_skin_diffuse_73perc_SHDWNVIDIA
@@ -4711,7 +4735,7 @@ technique mtarini_skin_diffuse_big
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/6.5, 6.5, PCF_NONE);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
 	}
 }
 technique mtarini_skin_diffuse_big_SHDW
@@ -4719,7 +4743,7 @@ technique mtarini_skin_diffuse_big_SHDW
 	pass P0
 	{
       VertexShader = compile vs_2_0 vs_mtarini_main_skin_resize(1/6.5, 6.5, PCF_DEFAULT);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
 	}
 }
 technique mtarini_skin_diffuse_big_SHDWNVIDIA
@@ -4875,7 +4899,7 @@ technique map_scribble_shader
    pass P0
    {
       VertexShader = compile vs_2_0 vs_map_scribble_shader(PCF_NONE, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_NONE);
+      PixelShader = compile ps_2_a ps_main(PCF_NONE);
    }
 }
 
@@ -4884,7 +4908,7 @@ technique map_scribble_shader_SHDW
    pass P0
    {
       VertexShader = compile vs_2_0 vs_map_scribble_shader(PCF_DEFAULT, true);
-      PixelShader = compile ps_2_0 ps_main(PCF_DEFAULT);
+      PixelShader = compile ps_2_a ps_main(PCF_DEFAULT);
    }
 }
 
