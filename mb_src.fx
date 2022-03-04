@@ -1317,7 +1317,7 @@ PS_OUTPUT ps_main(PS_INPUT In, uniform const int PcfMode)
     
     //float4 tex_col      = tex2D(MeshTextureSampler, float2( ((fwidth(phi) - 0.0001 < fwidth(phi_frac)) ? phi : phi_frac) * 20 * cam_height, y));
     //float4 tex_col      = lerp(float4(0,0,0,1), float4(1,0,0,1) , fwidth(phi) - .000001 > fwidth(phi_frac));
-    float4 tex_col      = tex2D(MeshTextureSampler, float2( ((fwidth(phi) - .000001 < fwidth(phi_frac)) ? phi : phi_frac), y));
+    float4 tex_col      = tex2D(MeshTextureSampler, float2( ((fwidth(phi) - .000001 < fwidth(phi_frac)) ? phi : phi_frac) * 20 * (floor(cam_height * 20) / 20), y));
     float4 tex_col_orig = tex2D    (MeshTextureSampler, In.Tex0);
     
     tex_col.rgb      = pow(tex_col.rgb, input_gamma);
