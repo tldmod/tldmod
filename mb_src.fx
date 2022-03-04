@@ -1278,7 +1278,7 @@ PS_OUTPUT ps_main(PS_INPUT In, uniform const int PcfMode)
     In.Tex0 -= 0.5;
 	In.Tex0 *= 2;
     
-    float2 at = atan2(In.Tex0.x, In.Tex0.y);
+    float phi = atan2(In.Tex0.x, In.Tex0.y) / (PI * 2);
     //at.x /= 40;
     
     //float4 tex_col = tex2D(MeshTextureSampler, float2(frac(at.x / (3.141592 * 2)), length(In.Tex0)));
@@ -1291,26 +1291,33 @@ PS_OUTPUT ps_main(PS_INPUT In, uniform const int PcfMode)
 
     float cam_height = clamp(normalize( float3(matWorldView[2][0],matWorldView[2][1],matWorldView[2][2]) ).z * 2.0 - 1,0,1);
 
-    float2 polarUV     = float2((at.x / (PI * 2) * 20 * cam_height), sqrt(length(In.Tex0) * cam_height));
-    float2 polarUVFrac = polarUV; polarUVFrac.x = frac(polarUVFrac.x);
+
+    float phi_frac = frac(phi) ;// * 20 * cam_height;
+          phi     =       phi  ;//* 20 * cam_height;// * 20 * cam_height;
+          
+    float y       = sqrt(length(In.Tex0) * cam_height);
+
     
-    float polarUVWidth     = fwidth(polarUV);
-    float polarUVWidthFrac = fwidth(polarUVFrac);
     
-    float2 duvdx = ddx(polarUV);
-    float2 duvdy = ddy(polarUV);
+//    float polarUVWidth     = fwidth(polarUV);
+//    float polarUVWidthFrac = fwidth(polarUVFrac);
     
-    float2 duvdxFrac = ddx(polarUVFrac);
-    float2 duvdyFrac = ddy(polarUVFrac);
+//    float2 duvdx = ddx(polarUV);
+//    float2 duvdy = ddy(polarUV);
     
-    if (1)
-    {
-        duvdx = duvdxFrac;
-        duvdy = duvdyFrac;
-    }
+//    float2 duvdxFrac = ddx(polarUVFrac);
+//    float2 duvdyFrac = ddy(polarUVFrac);
+    
+//   if (1)
+//   {
+//       duvdx = duvdxFrac;
+//       duvdy = duvdyFrac;
+//   }
     //polarUV.x 
     
-    float4 tex_col      = tex2D(MeshTextureSampler, polarUV); // tex2Dgrad(MeshTextureSampler, polarUV, duvdxFrac, duvdxFrac);
+    //float4 tex_col      = tex2D(MeshTextureSampler, float2( ((fwidth(phi) - 0.0001 < fwidth(phi_frac)) ? phi : phi_frac) * 20 * cam_height, y));
+    //float4 tex_col      = lerp(float4(0,0,0,1), float4(1,0,0,1) , fwidth(phi) - .000001 > fwidth(phi_frac));
+    float4 tex_col      = tex2D(MeshTextureSampler, float2( ((fwidth(phi) - .000001 < fwidth(phi_frac)) ? phi : phi_frac), y));
     float4 tex_col_orig = tex2D    (MeshTextureSampler, In.Tex0);
     
     tex_col.rgb      = pow(tex_col.rgb, input_gamma);
@@ -1318,10 +1325,10 @@ PS_OUTPUT ps_main(PS_INPUT In, uniform const int PcfMode)
     
     //tex_col = lerp(tex_col, float4(1,0,0,1), (1-polarUV.y)/40);
 //    tex_col = lerp(float4(0,0,0,1), float4(1,0,0,1), (polarUV.y * polarUV.y * polarUV.y * polarUV.y * 60)/360);
-//    Output.RGBColor = tex_col;
-//    return Output;
+    Output.RGBColor = tex_col;
+    return Output;
 
-    tex_col = lerp(tex_col_orig, tex_col, saturate((polarUV.y * polarUV.y * polarUV.y * polarUV.y * 60)/860));
+    //tex_col = lerp(tex_col_orig, tex_col, saturate((polarUV.y * polarUV.y * polarUV.y * polarUV.y * 60)/860));
     
     
 	if ((PcfMode != PCF_NONE))
