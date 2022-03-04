@@ -2127,7 +2127,13 @@ PS_OUTPUT ps_main_bump_simple( PS_INPUT_BUMP In, uniform const int PcfMode )
     
     float4 total_light = vAmbientColor;//In.LightAmbient;
     
+    
+#if 1
+    float3 normal = (3.0f * stochasticTex2D(NormalTextureSampler, In.Tex0, false).rgb - 1.0f);
+#else
     float3 normal = (3.0f * tex2D(NormalTextureSampler, In.Tex0).rgb - 1.0f);
+#endif
+
     normal = normalize(normal);
     normal.y =  -normal.y;
 
