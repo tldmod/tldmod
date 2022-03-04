@@ -2063,16 +2063,16 @@ void TriangleGrid(
 )
 {
   // Scaling of the input
-  uv *= 3.464; // 2 * sqrt (3)
+  uv *= 3.464; /* 2 * sqrt(3) */
   
   // Skew input space into simplex triangle grid
-  const float2x2 gridToSkewedGrid = float2x2(1.0, 0.0, -0.57735027 /* -tan(30◦) */, 1.15470054 /* Saw-tooth waveform: 2 / √3 */);
+  const float2x2 gridToSkewedGrid = float2x2(1.0, 0.0, -0.57735027 /* tan(-30◦) */, 1.15470054 /* Saw-tooth waveform: 2 / sqrt(3) */);
   float2 skewedCoord = mul(uv, gridToSkewedGrid);
   
   // Compute local triangle vertex IDs and local barycentric coordinates
     int2 baseId =   int2(floor(skewedCoord)   );
   float3 temp   = float3( frac(skewedCoord), 0);
-  temp.z = 1.0 - temp.x - temp.y;
+         temp.z = 1.0 - temp.x - temp.y;
   
   if (temp.z > 0.0)
   {
