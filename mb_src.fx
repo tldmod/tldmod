@@ -1289,7 +1289,9 @@ PS_OUTPUT ps_main(PS_INPUT In, uniform const int PcfMode)
     //float4 tex_col = tex2D(MeshTextureSampler, float2((at.x / (PI * 2) * 20), sqrt(length(In.Tex0)) ));
 
 
-    float2 polarUV     = float2((at.x / (PI * 2) * 20), sqrt(length(In.Tex0)));
+    float cam_height = clamp(normalize( float3(matWorldView[2][0],matWorldView[2][1],matWorldView[2][2]) ).z * 2.0 - 1,0,1);
+
+    float2 polarUV     = float2((at.x / (PI * 2) * 20 * cam_height), sqrt(length(In.Tex0) * cam_height));
     float2 polarUVFrac = polarUV; polarUVFrac.x = frac(polarUVFrac.x);
     
     float polarUVWidth     = fwidth(polarUV);
@@ -1308,7 +1310,7 @@ PS_OUTPUT ps_main(PS_INPUT In, uniform const int PcfMode)
     }
     //polarUV.x 
     
-    float4 tex_col      = tex2Dgrad(MeshTextureSampler, polarUV, duvdxFrac, duvdxFrac);
+    float4 tex_col      = tex2D(MeshTextureSampler, polarUV); // tex2Dgrad(MeshTextureSampler, polarUV, duvdxFrac, duvdxFrac);
     float4 tex_col_orig = tex2D    (MeshTextureSampler, In.Tex0);
     
     tex_col.rgb      = pow(tex_col.rgb, input_gamma);
