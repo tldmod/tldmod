@@ -2094,6 +2094,32 @@ void TriangleGrid(
   }
 }
 
+float4 stochasticTex2D(sampler2D texSampler, float2 uvCoords, const bool gammaCorrect = true)
+{
+    float w1, w2, w3; int2 vertex1, vertex2, vertex3;
+    TriangleGrid(uvCoords, w1, w2, w3, vertex1, vertex2, vertex3);
+    
+    /* swy: each triangle offsets/nudges the base UV coordinates in a different direction;
+            we use the ID as a hash seed, so that for that index the random offset is always the same; it's permanent */
+    float2 uvA = uvCoords + hash(vertex1);
+    float2 uvB = uvCoords + hash(vertex2);
+    float2 uvC = uvCoords + hash(vertex3);
+    
+    /* swy: manually grab the screen-space derivatives to do correct mipmapping without shimmering, and anisotropic filtering */
+    float2 duvdx = ddx(uvCoords);
+    float2 duvdy = ddy(uvCoords);
+    
+    /* swy: sample the texels of every overlapping triangle under this point; there are always three of them
+            note: it's important do the gamma correction right at the start; if we blend and then gamma-correct the result, it will look wrong */
+    float4 texA = tex2Dgrad(texSampler, uvA, duvdx, duvdy); if (gammaCorrect) texA.rgb = pow(texA.rgb, input_gamma);
+    float4 texB = tex2Dgrad(texSampler, uvB, duvdx, duvdy); if (gammaCorrect) texB.rgb = pow(texB.rgb, input_gamma);
+    float4 texC = tex2Dgrad(texSampler, uvC, duvdx, duvdy); if (gammaCorrect) texC.rgb = pow(texC.rgb, input_gamma);
+    
+    /* swy: use a simple linear blend; no fancy histogram-preserving texture preprocessing here;
+            we could also use some kind of height blending, by exploiting the .z channels of
+            normalmaps or the albedo itself with some RGB tweaking */
+    return (w1 * texA) + (w2 * texB) + (w3 * texC);
+}
 
 PS_OUTPUT ps_main_bump_simple( PS_INPUT_BUMP In, uniform const int PcfMode )
 { 
@@ -2122,8 +2148,12 @@ PS_OUTPUT ps_main_bump_simple( PS_INPUT_BUMP In, uniform const int PcfMode )
 	Output.RGBColor.a = 1.0f;
 	Output.RGBColor *= vMaterialColor;
 	
+#if 1
+    float4 tex_col = stochasticTex2D(MeshTextureSampler, In.Tex0);
+#else
     float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
     tex_col.rgb = pow(tex_col.rgb, input_gamma);
+#endif
 
 	Output.RGBColor *= tex_col;
 	Output.RGBColor *= In.VertexColor;
@@ -2133,37 +2163,6 @@ PS_OUTPUT ps_main_bump_simple( PS_INPUT_BUMP In, uniform const int PcfMode )
 
     Output.RGBColor.a = In.VertexColor.a;
     
-#if 1
-    float w1, w2, w3; int2 vertex1, vertex2, vertex3;
-    
-    TriangleGrid(In.Tex0, w1, w2, w3, vertex1, vertex2, vertex3);
-    
-    //Output.RGBColor.rgb = /*normal.zzz * float3(1,1,0) * hash(In.Tex0).rgg * */ float3(w1, w2, w3); /* swy: stone */
-    
-    
-    float2 uvA = In.Tex0 + hash(vertex1);
-    float2 uvB = In.Tex0 + hash(vertex2);
-    float2 uvC = In.Tex0 + hash(vertex3);
-    
-    float2 duvdx = ddx(In.Tex0);
-    float2 duvdy = ddy(In.Tex0);
-    
-    float4 texA = tex2Dgrad(MeshTextureSampler, uvA, duvdx, duvdy); texA.rgb = pow(texA.rgb, input_gamma);
-    float4 texB = tex2Dgrad(MeshTextureSampler, uvB, duvdx, duvdy); texB.rgb = pow(texB.rgb, input_gamma);
-    float4 texC = tex2Dgrad(MeshTextureSampler, uvC, duvdx, duvdy); texC.rgb = pow(texC.rgb, input_gamma);
-    
-    Output.RGBColor.rgb = total_light.rgb;
-    Output.RGBColor.a = 1.0f;
-    Output.RGBColor *= (w1 * texA) + (w2 * texB) + (w3 * texC);
-	Output.RGBColor *= In.VertexColor;
-    //Output.RGBColor.rgb = tex_col.rgb;
-    
-    
-	Output.RGBColor = saturate(Output.RGBColor);
-    Output.RGBColor.rgb = saturate(pow(Output.RGBColor.rgb, output_gamma_inv));
-
-    Output.RGBColor.a = In.VertexColor.a;
-#endif
 	return Output;
 }
 
