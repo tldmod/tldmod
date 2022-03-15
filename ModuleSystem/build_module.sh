@@ -85,7 +85,7 @@ msys_check()
 # count objects... (mtarini)
 #
 
-msys_check ID/ID_items.py 'item' 915
+msys_check ID/ID_items_mb.py 'item' 915
 
 # 
 # count map_icons... (mtarini)
