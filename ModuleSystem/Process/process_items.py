@@ -46,7 +46,7 @@ def write_items(variable_list,variable_uses,tag_uses,quick_strings):
 
       # swy: get rid of/unset any Warband-only flags from the common items file
       #      seems like adding the itp_no_blur bits to M&B 1.011 causes the game
-      #      to add a dummy «Requires : 16» line because the space was used for that: https://cdn.discordapp.com/attachments/492787561769599008/951814574968025149/nightly_build.JPG
+      #      to add a dummy "Requires : 16" line because the space was used for that: https://cdn.discordapp.com/attachments/492787561769599008/951814574968025149/nightly_build.JPG
       if not is_a_wb_item:
         item[3] &= ~itp_no_blur # potentially add more excluded ones here with ~(itp_no_blur | itp_other_wb_flag | itp_even_more_wb_flags)
 

@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2013
+ 2008
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5340,97 +5340,97 @@ spr_Gutek_stand_thatched 0 0 Gutek_stand_thatched bo_stand_thatched 0
 spr_durins_stone 0 0 durins_stone bo_durins_stone 0
 
 
-spr_gon_mt_stone_house_a 0 0 gondor_stone_house_a bo_gondor_stone_house_a 0
+spr_gon_stone_house_a 0 0 gondor_stone_house_a bo_gondor_stone_house_a 0
 
 
-spr_gon_mt_stone_house_b 0 0 gondor_stone_house_b bo_gondor_stone_house_b 0
+spr_gon_stone_house_b 0 0 gondor_stone_house_b bo_gondor_stone_house_b 0
 
 
-spr_gon_mt_stone_house_c 0 0 gondor_stone_house_c bo_gondor_stone_house_c 0
+spr_gon_stone_house_c 0 0 gondor_stone_house_c bo_gondor_stone_house_c 0
 
 
-spr_gon_mt_stone_house_d 0 0 gondor_stone_house_d bo_gondor_stone_house_d 0
+spr_gon_stone_house_d 0 0 gondor_stone_house_d bo_gondor_stone_house_d 0
 
 
-spr_gon_mt_stone_house_e 0 0 gondor_stone_house_e bo_gondor_stone_house_e 0
+spr_gon_stone_house_e 0 0 gondor_stone_house_e bo_gondor_stone_house_e 0
 
 
-spr_gon_mt_stone_house_f 0 0 gondor_stone_house_f bo_gondor_stone_house_f 0
+spr_gon_stone_house_f 0 0 gondor_stone_house_f_new bo_gondor_stone_house_f 0
 
 
-spr_gon_mt_stone_house_g 0 0 gondor_stone_house_g bo_gondor_stone_house_g 0
+spr_gon_stone_house_g 0 0 gondor_stone_house_g bo_gondor_stone_house_g 0
 
 
-spr_gon_mt_stone_house_h 0 0 gondor_stone_house_h bo_gondor_stone_house_h 0
+spr_gon_stone_house_h 0 0 gondor_stone_house_h bo_gondor_stone_house_h 0
 
 
-spr_gon_mt_stone_house_i 0 0 gondor_stone_house_i bo_gondor_stone_house_i 0
+spr_gon_stone_house_i 0 0 gondor_stone_house_i bo_gondor_stone_house_i 0
 
 
-spr_gon_mt_stone_house_j 0 0 gondor_stone_house_j bo_gondor_stone_house_j 0
+spr_gon_stone_house_j 0 0 gondor_stone_house_j bo_gondor_stone_house_j 0
 
 
-spr_gon_mt_stone_house_k 0 0 gondor_stone_house_k bo_gondor_stone_house_k 0
+spr_gon_stone_house_k 0 0 gondor_stone_house_k bo_gondor_stone_house_k 0
 
 
-spr_gon_mt_stone_house_l 0 0 gondor_stone_house_l bo_gondor_stone_house_l 0
+spr_gon_stone_house_l 0 0 gondor_stone_house_l bo_gondor_stone_house_l 0
 
 
-spr_gon_mt_stone_house_m 0 0 gondor_stone_house_m bo_gondor_stone_house_m 0
+spr_gon_stone_house_m 0 0 gondor_stone_house_m bo_gondor_stone_house_m 0
 
 
-spr_gon_mt_stone_house_n 0 0 gondor_stone_house_n bo_gondor_stone_house_n 0
+spr_gon_stone_house_n 0 0 gondor_stone_house_n bo_gondor_stone_house_n 0
 
 
-spr_gon_mt_stone_house_o 0 0 gondor_stone_house_o bo_gondor_stone_house_o 0
+spr_gon_stone_house_o 0 0 gondor_stone_house_o bo_gondor_stone_house_o 0
 
 
-spr_gon_mt_stone_keep 0 0 gondor_stone_keep bo_gondor_stone_keep 0
+spr_gon_stone_keep 0 0 gondor_stone_keep bo_gondor_stone_keep 0
 
 
-spr_gon_mt_stone_passage_house_a 0 0 gondor_stone_passage_house_a bo_gondor_stone_passage_house_a 0
+spr_gon_stone_passage_house_a 0 0 gondor_stone_passage_house_a bo_gondor_stone_passage_house_a 0
 
 
-spr_gon_mt_upper_storey_d 0 0 gondor_upper_storey_d 0 0
+spr_gon_stone_house_p_cwe 0 0 CWE_house_a bo_CWE_house_a 0
 
 
-spr_gon_mt_upper_storey_f 0 0 gondor_upper_storey_f 0 0
+spr_gon_stone_house_q_cwe 0 0 damask_arabian_house_extension_a bo_damask_arabian_house_extension_a 0
 
 
-spr_gon_mt_upper_storey_j 0 0 gondor_upper_storey_j 0 0
+spr_gon_stone_house_r_cwe 0 0 damask_arabian_house_extension_b bo_damask_arabian_house_extension_b 0
 
 
-spr_gon_mt_upper_storey_m 0 0 gondor_upper_storey_m 0 0
+spr_gon_stone_house_block_a_cwe 0 0 damask_house_block_a bo_damask_house_block_a 0
 
 
-spr_gon_mt_upper_storey_n 0 0 gondor_upper_storey_n 0 0
+spr_gon_stone_house_block_c_cwe 0 0 damask_house_block_c bo_damask_house_block_c 0
 
 
-spr_gon_mt_upper_storey_p 0 0 gondor_upper_storey_p 0 0
+spr_gon_stone_house_block_b_cwe 0 0 damask_house_block_b bo_damask_house_block_b 0
 
 
-spr_gon_mt_upper_storey_q 0 0 gondor_upper_storey_q 0 0
+spr_gon_stone_passage_house_b_cwe 0 0 damask_passage_house_b bo_damask_passage_house_b 0
 
 
-spr_gon_mt_stone_bridge 0 0 gondor_stone_bridge bo_gondor_stone_bridge 0
+spr_gon_stone_bridge 0 0 gondor_stone_bridge bo_gondor_stone_bridge 0
 
 
-spr_gon_mt_fake_house_stone_a 0 0 MT_stone_fake_house_far_a bo_fake_house_far 0
+spr_gon_fake_house_stone_a 0 0 MT_stone_fake_house_far_a bo_fake_house_far 0
 
 
-spr_gon_mt_fake_house_stone_b 0 0 MT_stone_fake_house_far_b bo_fake_house_far 0
+spr_gon_fake_house_stone_b 0 0 MT_stone_fake_house_far_b bo_fake_house_far 0
 
 
-spr_gon_mt_fake_house_stone_c 0 0 MT_stone_fake_house_far_c bo_fake_house_far 0
+spr_gon_fake_house_stone_c 0 0 MT_stone_fake_house_far_c bo_fake_house_far 0
 
 
-spr_gon_mt_fake_house_stone_d 0 0 MT_stone_fake_house_far_d bo_fake_house_far 0
+spr_gon_fake_house_stone_d 0 0 MT_stone_fake_house_far_d bo_fake_house_far 0
 
 
-spr_gon_mt_fake_house_stone_e 0 0 MT_stone_fake_house_far_e bo_fake_house_far 0
+spr_gon_fake_house_stone_e 0 0 MT_stone_fake_house_far_e bo_fake_house_far 0
 
 
-spr_gon_mt_fake_house_stone_f 0 0 MT_stone_fake_house_far_f bo_fake_house_far 0
+spr_gon_fake_house_stone_f 0 0 MT_stone_fake_house_far_f bo_fake_house_far 0
 
 
 spr_khazad_dwarf_wall_decor_1 0 0 khazad_dwarf_wall_decor_1 bo_khazad_dwarf_wall_decor_1 0
@@ -5826,7 +5826,7 @@ spr_small_wall_f 0 0 small_wall_f bo_small_wall_f 0
 spr_small_wall_f2 0 0 small_wall_f2 bo_small_wall_f2 0
 
 
-spr_spr_gondor_mt_small_wall_a_1 0 0 arabian_wall_a bo_arabian_wall_a 0
+spr_spr_gon_small_wall_a_1 0 0 arabian_wall_a bo_arabian_wall_a 0
 
 
 spr_stairs_a 0 0 stairs_a bo_stairs_a 0
@@ -5990,58 +5990,40 @@ spr_stone_block_mossy_4 0 0 zf_block_3 bo_zf_block_3 0
 spr_fence_new 0 0 fence_new bo_fence_new 0
 
 
-spr_Gondor_MT_black_circular_wall 0 0 Gondor_wall_final bo_MT_circular_wall 0
+spr_MT_wall 0 0 Gondor_wall_final bo_MT_circular_wall 0
 
 
-spr_gondor_mt_small_wall_a_1_var_cwe 0 0 damask_arabian_wall_a_1_var1 bo_damask_arabian_wall_a_1_var1 0
+spr_MT_wall_part_lowpoly 0 0 Gondor_wall_final_lowpoly 0 0
 
 
-spr_gondor_mt_small_wall_b_1_cwe 0 0 eastern_wall_b_1 bo_eastern_wall_b_1 0
+spr_gon_small_wall_a_1_var_cwe 0 0 damask_arabian_wall_a_1_var1 bo_damask_arabian_wall_a_1_var1 0
 
 
-spr_gondor_mt_small_wall_b_2_cwe 0 0 eastern_wall_b_2 bo_eastern_wall_b_2 0
+spr_gon_small_wall_b_1_cwe 0 0 eastern_wall_b_1 bo_eastern_wall_b_1 0
 
 
-spr_gondor_mt_small_wall_b_3_cwe 0 0 eastern_wall_b_3 bo_eastern_wall_b_3 0
+spr_gon_small_wall_b_2_cwe 0 0 eastern_wall_b_2 bo_eastern_wall_b_2 0
 
 
-spr_gondor_well_a_cwe 0 0 damask_kolodec_a 0 0
+spr_gon_small_wall_b_3_cwe 0 0 eastern_wall_b_3 bo_eastern_wall_b_3 0
 
 
-spr_gondor_well_c_cwe 0 0 damask_kolodec_c 0 0
+spr_gon_well_a_cwe 0 0 damask_kolodec_a bo_damask_kolodec_a 0
 
 
-spr_gondor_well_b_cwe 0 0 damask_kolodec_b bo_damask_kolodec_b 0
+spr_gon_well_b_cwe 0 0 damask_kolodec_b bo_damask_kolodec_b 0
 
 
-spr_gondor_well_d_cwe 0 0 damask_kolodec_d bo_damask_kolodec_d 0
+spr_gon_well_c_cwe 0 0 damask_kolodec_c bo_damask_kolodec_c 0
 
 
-spr_gondor_fountain_a_cwe 0 0 df bo_df 0
+spr_gon_well_d_cwe 0 0 damask_kolodec_d bo_damask_kolodec_d 0
 
 
-spr_gondor_fountain_b_cwe 0 0 fountain bo_fountain 0
+spr_gon_well_e_cwe 0 0 df bo_df 0
 
 
-spr_gon_mt_stone_house_p_cwe 0 0 CWE_house_a bo_CWE_house_a 0
-
-
-spr_gon_mt_stone_house_q_cwe 0 0 damask_arabian_house_extension_a bo_damask_arabian_house_extension_a 0
-
-
-spr_gon_mt_stone_house_r_cwe 0 0 damask_arabian_house_extension_b bo_damask_arabian_house_extension_b 0
-
-
-spr_gon_mt_house_block_a_cwe 0 0 damask_house_block_a bo_damask_house_block_a 0
-
-
-spr_gon_mt_house_block_c_cwe 0 0 damask_house_block_c bo_damask_house_block_c 0
-
-
-spr_gon_mt_house_block_b_cwe 0 0 damask_house_block_b bo_damask_house_block_b 0
-
-
-spr_gon_mt_stone_passage_house_b_cwe 0 0 damask_passage_house_b bo_damask_passage_house_b 0
+spr_gon_well_f 0 0 fountain bo_fountain 0
 
 
 spr_gondor_palace_cwe 0 0 cwe_royal_Palace_a bo_cwe_royal_Palace_a 0
@@ -6051,6 +6033,9 @@ spr_gondor_tower_8_cwe 0 0 damask_watch_tower_a bo_damask_watch_tower_a 0
 
 
 spr_gondor_arch_1_cwe 0 0 damask_arka_b bo_damask_arka_b 0
+
+
+spr_gondor_arch_2 0 0 gondor_arches bo_gondor_arches 0
 
 
 spr_gondor_mt_stairs_cwe 0 0 damask_dom_a_ladder bo_damask_dom_a_ladder 0
