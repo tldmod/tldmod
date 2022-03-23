@@ -681,7 +681,7 @@ void TriangleGrid(
   }
 }
 
-float4 stochasticTex2D(sampler2D texSampler, float2 uvCoords, const bool gammaCorrect = true)
+float4 stochasticTex2D(sampler2D texSampler, float2 uvCoords, const bool gammaCorrect = true) /* swy: use gamma-correction only for diffuse/real-color textures, not for things like normal or specular maps */
 {
     float w1, w2, w3; int2 vertex1, vertex2, vertex3;
     TriangleGrid(uvCoords, w1, w2, w3, vertex1, vertex2, vertex3);
@@ -2085,7 +2085,7 @@ PS_OUTPUT ps_main_bump_simple( PS_INPUT_BUMP In, uniform const int PcfMode, unif
     float4 total_light = vAmbientColor;//In.LightAmbient;
 
    if (UseStochastic)
-      normal = (3.0f * stochasticTex2D(NormalTextureSampler, In.Tex0, false).rgb - 1.0f);
+      normal = (3.0f * stochasticTex2D(NormalTextureSampler, In.Tex0, false).rgb - 1.0f); /* swy: don't use gamma-correction on normals */
    else
       normal = (3.0f *           tex2D(NormalTextureSampler, In.Tex0       ).rgb - 1.0f);
 
