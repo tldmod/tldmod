@@ -333,6 +333,94 @@ float get_fog_amount_new(float d, float wz)
 	return get_fog_amount(d);
 }
 
+
+/* swy: technique lifted from «Procedural Stochastic Textures by Tiling and Blending», created by Thomas Deliot and Eric Heitz (turned the GLSL into HLSL)
+        https://drive.google.com/file/d/1QecekuuyWgw68HU9tg6ENfrCTCVIjm6l/view */
+float2 hash(float2 p)
+{
+  return frac(sin(mul(p, float2x2(127.1, 311.7, 269.5, 183.3))) * 43758.5453);
+}
+
+// Compute local triangle barycentric coordinates and vertex IDs
+void TriangleGrid(
+  float2 uv,
+  out float w1, out float w2, out float w3,
+  out int2 vertex1, out int2 vertex2, out int2 vertex3
+)
+{
+  // Scaling of the input
+  uv *= 3.464; /* 2 * sqrt(3) */
+  
+  // Skew input space into simplex triangle grid
+  const float2x2 gridToSkewedGrid = float2x2(1.0, 0.0, -0.57735027 /* tan(-30◦) */, 1.15470054 /* Saw-tooth waveform: 2 / sqrt(3) */);
+  float2 skewedCoord = mul(uv, gridToSkewedGrid);
+  
+  // Compute local triangle vertex IDs and local barycentric coordinates
+    int2 baseId =   int2(floor(skewedCoord)   );
+  float3 temp   = float3( frac(skewedCoord), 0);
+         temp.z = 1.0 - temp.x - temp.y;
+  
+  if (temp.z > 0.0)
+  {
+    w1 =       temp.z;
+    w2 =       temp.y;
+    w3 =       temp.x;
+    vertex1 = baseId;
+    vertex2 = baseId + int2(0, 1);
+    vertex3 = baseId + int2(1, 0);
+  }
+  else
+  {
+    w1 =     - temp.z;
+    w2 = 1.0 - temp.y;
+    w3 = 1.0 - temp.x;
+    vertex1 = baseId + int2(1, 1);
+    vertex2 = baseId + int2(1, 0);
+    vertex3 = baseId + int2(0, 1);
+  }
+}
+
+float4 stochasticTex2D(sampler2D texSampler, float2 uvCoords, const bool gammaCorrect = true) /* swy: use gamma-correction only for diffuse/real-color textures, not for things like normal or specular maps */
+{
+    float w1, w2, w3; int2 vertex1, vertex2, vertex3;
+    TriangleGrid(uvCoords, w1, w2, w3, vertex1, vertex2, vertex3);
+    
+    /* swy: each triangle offsets/nudges the base UV coordinates in a different direction;
+            we use the ID as a hash seed, so that for that index the random offset is always the same; it's permanent */
+    float2 uvA = uvCoords + hash(vertex1);
+    float2 uvB = uvCoords + hash(vertex2);
+    float2 uvC = uvCoords + hash(vertex3);
+    
+    /* swy: manually grab the screen-space derivatives to do correct mipmapping without shimmering, and anisotropic filtering */
+    float2 duvdx = ddx(uvCoords);
+    float2 duvdy = ddy(uvCoords);
+    
+    /* swy: sample the texels of every overlapping triangle under this point; there are always three of them
+            note: it's important do the gamma correction right at the start; if we blend and then gamma-correct the result, it will look wrong */
+    float4 texA = tex2Dgrad(texSampler, uvA, duvdx, duvdy); if (gammaCorrect) texA.rgb = pow(texA.rgb, input_gamma);
+    float4 texB = tex2Dgrad(texSampler, uvB, duvdx, duvdy); if (gammaCorrect) texB.rgb = pow(texB.rgb, input_gamma);
+    float4 texC = tex2Dgrad(texSampler, uvC, duvdx, duvdy); if (gammaCorrect) texC.rgb = pow(texC.rgb, input_gamma);
+    
+    /* swy: use a simple linear blend; no fancy histogram-preserving texture preprocessing here;
+            we could also use some kind of height blending, by exploiting the .z channels of
+            normalmaps or the albedo itself with some RGB tweaking */
+    return (w1 * texA) + (w2 * texB) + (w3 * texC);
+}
+
+
+float4 stochasticTex2DWithDistFadeOut(sampler2D texSampler, float2 uvCoords, const bool gammaCorrect = true)
+{
+    float4 stocColor = stochasticTex2D(texSampler, uvCoords, gammaCorrect);
+    float4 origColor =           tex2D(texSampler, uvCoords);
+    
+    if (gammaCorrect)
+        origColor.rgb = pow(origColor.rgb, input_gamma);
+    
+    return stocColor;//lerp(origColor, stocColor, .5);
+}
+
+/* swy: -- */
+
 ////////////////////////////////////////
 static const float2 specularShift = float2(0.138 - 0.5, 0.254 - 0.5);
 static const float2 specularExp = float2(256.0, 32.0)*0.7;
@@ -2111,9 +2199,9 @@ PS_OUTPUT ps_main_bump( VS_OUTPUT_BUMP In, uniform const int PcfMode )
 
 	return Output;
 }
-PS_OUTPUT ps_main_bump_simple( VS_OUTPUT_BUMP In, uniform const int PcfMode )
+PS_OUTPUT ps_main_bump_simple( VS_OUTPUT_BUMP In, uniform const int PcfMode, uniform const bool UseStochastic = false )
 { 
-	PS_OUTPUT Output;
+	PS_OUTPUT Output; float3 normal; float4 tex_col;
 	
 	float4 total_light = vAmbientColor;//In.LightAmbient;
 /*-	//Parallax mapping:
@@ -2128,7 +2216,10 @@ PS_OUTPUT ps_main_bump_simple( VS_OUTPUT_BUMP In, uniform const int PcfMode )
 	}
 */
 	
-	float3 normal = (2.0f * tex2D(NormalTextureSampler, In.Tex0).rgb - 1.0f);
+	if (UseStochastic)
+		normal = (3.0f * stochasticTex2D(NormalTextureSampler, In.Tex0, false).rgb - 1.0f); /* swy: don't use gamma-correction on normals */
+	else
+		normal = (3.0f *           tex2D(NormalTextureSampler, In.Tex0       ).rgb - 1.0f);
 
 	float sun_amount = 1.0f;
 	if (PcfMode != PCF_NONE)
@@ -2149,8 +2240,15 @@ PS_OUTPUT ps_main_bump_simple( VS_OUTPUT_BUMP In, uniform const int PcfMode )
 	Output.RGBColor.a = 1.0f;
 	Output.RGBColor *= vMaterialColor;
 	
-	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
-	INPUT_TEX_GAMMA(tex_col.rgb);
+	if (UseStochastic)
+	{
+		tex_col = stochasticTex2D(MeshTextureSampler, In.Tex0);
+	}
+	else
+	{
+		tex_col = tex2D(MeshTextureSampler, In.Tex0);
+		INPUT_TEX_GAMMA(tex_col.rgb);
+	}
 
 	Output.RGBColor.rgb *= tex_col.rgb;
 	Output.RGBColor *= In.VertexColor;
@@ -2278,6 +2376,32 @@ technique dot3_SHDWNVIDIA
 	{
 		VertexShader = vs_main_bump_compiled_PCF_NVIDIA;
 		PixelShader = compile ps_2_a ps_main_bump_simple(PCF_NVIDIA);
+	}
+}
+DEFINE_LIGHTING_TECHNIQUE(dot3, 0, 1, 0, 0, 0)
+//-----
+technique dot3_swy_stochastic
+{
+	pass P0
+	{
+		VertexShader = vs_main_bump_compiled_PCF_NONE;
+		PixelShader = compile ps_2_a ps_main_bump_simple(PCF_NONE,       /* UseStochastic */ true);
+	}
+}
+technique dot3_swy_stochastic_SHDW
+{
+	pass P0
+	{
+		VertexShader = vs_main_bump_compiled_PCF_DEFAULT;
+		PixelShader = compile ps_2_a ps_main_bump_simple(PCF_DEFAULT,    /* UseStochastic */ true);
+	}
+}
+technique dot3_swy_stochastic_SHDWNVIDIA
+{
+	pass P0
+	{
+		VertexShader = vs_main_bump_compiled_PCF_NVIDIA;
+		PixelShader = compile ps_2_a ps_main_bump_simple(PCF_NVIDIA,    /* UseStochastic */ true);
 	}
 }
 DEFINE_LIGHTING_TECHNIQUE(dot3, 0, 1, 0, 0, 0)
