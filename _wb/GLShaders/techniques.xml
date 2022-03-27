@@ -837,7 +837,7 @@
 			<vertex_shader name="vs_grass.glsl"/>
 			<fragment_shader name="ps_grass.glsl"/>
 		</technique>
-		<!-- swy-- modified the pixel shader to add scrolling cloud shadows -->
+		<!-- swy- modified the pixel shader to add scrolling cloud shadows -->
 		<technique name="diffuse_map">
 			<vertex_shader name="vs_main_map.glsl"/>
 			<fragment_shader name="ps_main_map.glsl"/>
@@ -1118,6 +1118,16 @@
 		<technique name="swy_tld_evil_mixing">
 			<vertex_shader name="vs_font.glsl"/>
 			<fragment_shader name="ps_main_no_shadow.glsl"/>
+		</technique>
+
+		<!-- dot3_swy_stochastic [dot3_swy_stochastic, dot3_alpha_swy_stochastic] - copied from dot3 -->
+		<technique name="dot3_swy_stochastic">
+			<vertex_shader name="vs_bumpmap.glsl"/>
+			<fragment_shader name="ps_bumpmap_simple.glsl"/>
+		</technique>
+		<technique name="dot3_swy_stochastic_SHDW">
+			<vertex_shader name="vs_bumpmap.glsl"/>
+			<fragment_shader name="ps_bumpmap_simple.glsl"/>
 		</technique>
 	</techniques>
 </data>
