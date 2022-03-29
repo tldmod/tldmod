@@ -2267,14 +2267,22 @@ PS_OUTPUT ps_main_bump_simple( VS_OUTPUT_BUMP In, uniform const int PcfMode, uni
 
 	return Output;
 }
-PS_OUTPUT ps_main_bump_simple_multitex( VS_OUTPUT_BUMP In, uniform const int PcfMode )
+PS_OUTPUT ps_main_bump_simple_multitex( VS_OUTPUT_BUMP In, uniform const int PcfMode, uniform const bool UseStochastic = false )
 { 
-	PS_OUTPUT Output;
+	PS_OUTPUT Output; float4 tex_col, tex_col2; float3 normal;
 	
 	float4 total_light = vAmbientColor;//In.LightAmbient;
 	
-	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
-	float4 tex_col2 = tex2D(Diffuse2Sampler, In.Tex0 * uv_2_scale);
+	if (!UseStochastic)
+	{
+		tex_col  =           tex2D(MeshTextureSampler, In.Tex0);
+		tex_col2 =           tex2D(Diffuse2Sampler,    In.Tex0 * uv_2_scale);
+	}
+	else
+	{
+		tex_col  = stochasticTex2D(MeshTextureSampler, In.Tex0);
+		tex_col2 = stochasticTex2D(Diffuse2Sampler,    In.Tex0 * uv_2_scale);
+	}
 	
 	float4 multi_tex_col = float4(tex_col.rgb, 1.0f);
 	float inv_alpha = (1.0f - In.VertexColor.a);
@@ -2282,9 +2290,13 @@ PS_OUTPUT ps_main_bump_simple_multitex( VS_OUTPUT_BUMP In, uniform const int Pcf
 	multi_tex_col.rgb += tex_col2.rgb * In.VertexColor.a;
 	
 	//!!
-	INPUT_TEX_GAMMA(multi_tex_col.rgb);
+	if (!UseStochastic)
+		INPUT_TEX_GAMMA(multi_tex_col.rgb);
 
-	float3 normal = (2.0f * tex2D(NormalTextureSampler, In.Tex0).rgb - 1.0f);
+	if (!UseStochastic)
+		normal = (2.0f *           tex2D(NormalTextureSampler, In.Tex0       ).rgb - 1.0f);
+	else
+		normal = (2.0f * stochasticTex2D(NormalTextureSampler, In.Tex0, false).rgb - 1.0f);
 
 	float sun_amount = 1.0f;
 	if (PcfMode != PCF_NONE)
@@ -2385,7 +2397,7 @@ technique dot3_swy_stochastic
 	pass P0
 	{
 		VertexShader = vs_main_bump_compiled_PCF_NONE;
-		PixelShader = compile ps_2_a ps_main_bump_simple(PCF_NONE,       /* UseStochastic */ true);
+		PixelShader  = compile ps_2_a ps_main_bump_simple(PCF_NONE,       /* UseStochastic */ true);
 	}
 }
 technique dot3_swy_stochastic_SHDW
@@ -2393,7 +2405,7 @@ technique dot3_swy_stochastic_SHDW
 	pass P0
 	{
 		VertexShader = vs_main_bump_compiled_PCF_DEFAULT;
-		PixelShader = compile ps_2_a ps_main_bump_simple(PCF_DEFAULT,    /* UseStochastic */ true);
+		PixelShader  = compile ps_2_a ps_main_bump_simple(PCF_DEFAULT,    /* UseStochastic */ true);
 	}
 }
 technique dot3_swy_stochastic_SHDWNVIDIA
@@ -2401,10 +2413,10 @@ technique dot3_swy_stochastic_SHDWNVIDIA
 	pass P0
 	{
 		VertexShader = vs_main_bump_compiled_PCF_NVIDIA;
-		PixelShader = compile ps_2_a ps_main_bump_simple(PCF_NVIDIA,    /* UseStochastic */ true);
+		PixelShader  = compile ps_2_a ps_main_bump_simple(PCF_NVIDIA,    /* UseStochastic */ true);
 	}
 }
-DEFINE_LIGHTING_TECHNIQUE(dot3, 0, 1, 0, 0, 0)
+DEFINE_LIGHTING_TECHNIQUE(dot3_swy_stochastic, 0, 1, 0, 0, 0)
 //-----
 technique dot3_multitex
 {
@@ -2431,6 +2443,32 @@ technique dot3_multitex_SHDWNVIDIA
 	}
 }
 DEFINE_LIGHTING_TECHNIQUE(dot3_multitex, 0, 1, 0, 0, 0)
+//---
+technique dot3_multitex_swy_stochastic
+{
+	pass P0
+	{
+		VertexShader = vs_main_bump_compiled_PCF_NONE;
+		PixelShader  = compile ps_2_a ps_main_bump_simple_multitex(PCF_NONE,    /* UseStochastic */ true);
+	}
+}
+technique dot3_multitex_swy_stochastic_SHDW
+{
+	pass P0
+	{
+		VertexShader = vs_main_bump_compiled_PCF_DEFAULT;
+		PixelShader  = compile ps_2_a ps_main_bump_simple_multitex(PCF_DEFAULT, /* UseStochastic */ true);
+	}
+}
+technique dot3_multitex_swy_stochastic_SHDWNVIDIA
+{
+	pass P0
+	{
+		VertexShader = vs_main_bump_compiled_PCF_NVIDIA;
+		PixelShader = compile ps_2_a ps_main_bump_simple_multitex(PCF_NVIDIA,   /* UseStochastic */ true);
+	}
+}
+DEFINE_LIGHTING_TECHNIQUE(dot3_multitex_swy_stochastic, 0, 1, 0, 0, 0)
 //---
 struct VS_OUTPUT_ENVMAP_SPECULAR
 {
