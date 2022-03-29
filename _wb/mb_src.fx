@@ -4957,14 +4957,22 @@ VS_OUTPUT_MAP vs_main_map(uniform const int PcfMode, float4 vPosition : POSITION
 	Out.Fog = get_fog_amount_new(d, vWorldPos.z);
 	return Out;
 }
-PS_OUTPUT ps_main_map(VS_OUTPUT_MAP In, uniform const int PcfMode)
+PS_OUTPUT ps_main_map(VS_OUTPUT_MAP In, uniform const int PcfMode, uniform const bool UseStochastic = false)
 {
-	PS_OUTPUT Output;
+	PS_OUTPUT Output; float4 tex_col, tex_sdw;
 	
-	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
-	float4 tex_sdw = tex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
-	
-	INPUT_TEX_GAMMA(tex_col.rgb);
+	if (!UseStochastic)
+	{
+		tex_col = tex2D(MeshTextureSampler, In.Tex0);
+		tex_sdw = tex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
+
+		INPUT_TEX_GAMMA(tex_col.rgb);
+	}
+	else
+	{
+		tex_col = stochasticTex2D(MeshTextureSampler, In.Tex0);
+		tex_sdw = stochasticTex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
+	}
 	
 	float sun_amount = 1;
 	if ((PcfMode != PCF_NONE))
@@ -4989,6 +4997,33 @@ PS_OUTPUT ps_main_map(VS_OUTPUT_MAP In, uniform const int PcfMode)
 DEFINE_TECHNIQUES(diffuse_map, vs_main_map, ps_main_map)	//diffuse shader with fresnel effect
 
 //---
+technique diffuse_map_swy_stochastic
+{
+	pass P0
+	{
+		VertexShader = compile vs_2_0 vs_main_map(PCF_NONE);
+		PixelShader  = compile ps_2_a ps_main_map(PCF_NONE,    /* UseStochastic */ true);
+	}
+}
+technique diffuse_map_swy_stochastic_SHDW
+{
+	pass P0
+	{
+		VertexShader = compile vs_2_0 vs_main_map(PCF_DEFAULT);
+		PixelShader  = compile ps_2_a ps_main_map(PCF_DEFAULT, /* UseStochastic */ true);
+	}
+}
+technique diffuse_map_swy_stochastic_SHDWNVIDIA
+{
+	pass P0
+	{
+		VertexShader = compile vs_2_0 vs_main_map(PCF_NVIDIA);
+		PixelShader  = compile ps_2_a ps_main_map(PCF_NVIDIA,   /* UseStochastic */ true);
+	}
+}
+
+//---
+
 struct VS_OUTPUT_MAP_BUMP
 {
 	float4 Pos					: POSITION;
@@ -5174,12 +5209,17 @@ VS_OUTPUT_MAP_MOUNTAIN vs_map_mountain(uniform const int PcfMode, float4 vPositi
 	return Out;
 }
 
-PS_OUTPUT ps_map_mountain(VS_OUTPUT_MAP_MOUNTAIN In, uniform const int PcfMode)
+PS_OUTPUT ps_map_mountain(VS_OUTPUT_MAP_MOUNTAIN In, uniform const int PcfMode, uniform const bool UseStochastic = false)
 {
-	PS_OUTPUT Output;
+	PS_OUTPUT Output; float4 tex_col;
 	
-	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0.xy);
-	INPUT_TEX_GAMMA(tex_col.rgb);
+	if (!UseStochastic)
+	{
+		tex_col = tex2D(MeshTextureSampler, In.Tex0.xy);
+		INPUT_TEX_GAMMA(tex_col.rgb);
+	}
+	else
+		tex_col = stochasticTex2D(MeshTextureSampler, In.Tex0.xy);
 	
 	tex_col.rgb += saturate(In.Tex0.z * (tex_col.a) - 1.5f);
 	tex_col.a = 1.0f;
@@ -5211,6 +5251,30 @@ PS_OUTPUT ps_map_mountain(VS_OUTPUT_MAP_MOUNTAIN In, uniform const int PcfMode)
 
 DEFINE_TECHNIQUES(map_mountain, vs_map_mountain, ps_map_mountain)
 
+technique map_mountain_swy_stochastic
+{
+	pass P0
+	{
+		VertexShader = compile vs_2_0 vs_main_map(PCF_NONE);
+		PixelShader  = compile ps_2_a ps_map_mountain(PCF_NONE,    /* UseStochastic */ true);
+	}
+}
+technique map_mountain_swy_stochastic_SHDW
+{
+	pass P0
+	{
+		VertexShader = compile vs_2_0 vs_main_map(PCF_DEFAULT);
+		PixelShader  = compile ps_2_a ps_map_mountain(PCF_DEFAULT, /* UseStochastic */ true);
+	}
+}
+technique map_mountain_swy_stochastic_SHDWNVIDIA
+{
+	pass P0
+	{
+		VertexShader = compile vs_2_0 vs_main_map(PCF_NVIDIA);
+		PixelShader  = compile ps_2_a ps_map_mountain(PCF_NVIDIA,   /* UseStochastic */ true);
+	}
+}
 
 //---
 struct VS_OUTPUT_MAP_MOUNTAIN_BUMP

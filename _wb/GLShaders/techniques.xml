@@ -1130,7 +1130,7 @@
 			<fragment_shader name="ps_bumpmap_simple.glsl"/>
 		</technique>
 
-		<!-- dot3_multitex_swy_stochastic [dot3_multitex_swy_stochastic, dot3_alpha_swy_stochastic] - copied from dot3_multitex -->
+		<!-- dot3_multitex_swy_stochastic [dot3_multitex_swy_stochastic] - copied from dot3_multitex -->
 		<technique name="dot3_multitex_swy_stochastic">
 			<vertex_shader name="vs_bumpmap.glsl"/>
 			<fragment_shader name="ps_bumpmap_simple_multitex.glsl"/>
@@ -1138,6 +1138,34 @@
 		<technique name="dot3_multitex_swy_stochastic_SHDW">
 			<vertex_shader name="vs_bumpmap.glsl"/>
 			<fragment_shader name="ps_bumpmap_simple_multitex.glsl"/>
+		</technique>
+
+		<!-- diffuse_map_swy_stochastic [map_shader_swy_stochastic] - copied from diffuse_map -->
+		<technique name="diffuse_map_swy_stochastic">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+		<technique name="diffuse_map_swy_stochastic_SHDW">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+
+		<!-- map_mountain_swy_stochastic [map_mountain_shader_swy_stochastic] - copied from map_mountain -->
+		<technique name="map_mountain_swy_stochastic">
+			<vertex_shader name="vs_map_mountain.glsl"/>
+			<fragment_shader name="ps_map_mountain.glsl"/>
+		</technique>
+		<technique name="map_mountain_swy_stochastic_SHDW">
+			<vertex_shader name="vs_map_mountain.glsl"/>
+			<fragment_shader name="ps_map_mountain.glsl"/>
+		</technique>
+		<technique name="map_mountain_swy_stochastic_bump">
+			<vertex_shader name="vs_map_mountain_bump.glsl"/>
+			<fragment_shader name="ps_map_mountain_bump.glsl"/>
+		</technique>
+		<technique name="map_mountain_swy_stochastic_bump_SHDW">
+			<vertex_shader name="vs_map_mountain_bump.glsl"/>
+			<fragment_shader name="ps_map_mountain_bump.glsl"/>
 		</technique>
 	</techniques>
 </data>
