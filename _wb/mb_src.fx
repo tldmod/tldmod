@@ -421,6 +421,17 @@ float4 stochasticTex2DWithDistFadeOut(sampler2D texSampler, float2 uvCoords, con
 
 /* swy: -- */
 
+float4 swy_scrolling_cloud_shadows(float2 uvCoords)
+{
+    float4 tex_sdw = tex2D(Diffuse2Sampler, (uvCoords    * 0.20f) + (time_var * 0.02f));
+//	float4 tex_sdx = tex2D(Diffuse2Sampler, (uvCoords.yx * 0.01f) - (time_var * 0.01f));
+	float4 tex_sdy = tex2D(Diffuse2Sampler, (uvCoords    / 3.f)   + (time_var * 0.00005f));
+
+	//return float4((tex_sdw).rgb , 1.f);
+	return float4((saturate((tex_sdw * tex_sdy)) * 1.f).rgb , 1.f);
+	//return float4((saturate((tex_sdw * pow(tex_sdx, 2) * tex_sdy)) * 3.f).rgb , 1.f);
+}
+
 ////////////////////////////////////////
 static const float2 specularShift = float2(0.138 - 0.5, 0.254 - 0.5);
 static const float2 specularExp = float2(256.0, 32.0)*0.7;
@@ -4959,20 +4970,17 @@ VS_OUTPUT_MAP vs_main_map(uniform const int PcfMode, float4 vPosition : POSITION
 }
 PS_OUTPUT ps_main_map(VS_OUTPUT_MAP In, uniform const int PcfMode, uniform const bool UseStochastic = false)
 {
-	PS_OUTPUT Output; float4 tex_col, tex_sdw;
+	PS_OUTPUT Output; float4 tex_col;
+
+	float4 tex_sdw = swy_scrolling_cloud_shadows(In.Tex0);
 	
 	if (!UseStochastic)
 	{
 		tex_col = tex2D(MeshTextureSampler, In.Tex0);
-		tex_sdw = tex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
-
 		INPUT_TEX_GAMMA(tex_col.rgb);
 	}
 	else
-	{
 		tex_col = stochasticTex2D(MeshTextureSampler, In.Tex0);
-		tex_sdw = stochasticTex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
-	}
 	
 	float sun_amount = 1;
 	if ((PcfMode != PCF_NONE))
@@ -7381,7 +7389,7 @@ PS_OUTPUT ps_mtarini_snowy_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode)
     PS_OUTPUT Output;
 
     float4 tex_col = tex2D(MeshTextureSampler, In.Tex0*3.0);
-    float4 tex_sdw = tex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
+    float4 tex_sdw = swy_scrolling_cloud_shadows(In.Tex0);
 
 	tex_col.rgb = pow(tex_col.rgb, input_gamma);
 
@@ -7414,7 +7422,7 @@ PS_OUTPUT ps_mtarini_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode,
     PS_OUTPUT Output;
     
     float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
-    float4 tex_sdw = tex2D(Diffuse2Sampler,   (In.Tex0*0.2f)+(time_var*0.02f));
+    float4 tex_sdw = swy_scrolling_cloud_shadows(In.Tex0);
     
     tex_col.rgb = pow(tex_col.rgb, input_gamma);
     
