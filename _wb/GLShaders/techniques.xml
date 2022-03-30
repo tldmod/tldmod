@@ -1173,5 +1173,41 @@
 			<vertex_shader   name="vs_main_map.glsl"/>
 			<fragment_shader name="ps_main_map.glsl"/>
 		</technique>
+
+		<!-- standart_noskin_bump_specmap_high_swy_stochastic [specular_shader_noskin_bump_high_swy_stochastic] - copied from standart_noskin_bump_specmap_high with changes -->
+		<technique name="standart_noskin_bump_specmap_high_swy_stochastic">
+			<vertex_shader   name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_swy_stochastic_SHDW">
+			<vertex_shader   name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_swy_stochastic_ALPHATEST">
+			<vertex_shader   name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_specmap_high_swy_stochastic_ALPHATESTSHDW">
+			<vertex_shader   name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_specmap_high.glsl"/>
+		</technique>
+		
+		<!-- standart_noskin_bump_nospec_high_swy_stochastic [standart_shader_bump_nospec_high_swy_stochastic] - copied from standart_noskin_bump_nospec_high with changes -->
+		<technique name="standart_noskin_bump_nospec_high_swy_stochastic">
+			<vertex_shader   name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_swy_stochastic_SHDW">
+			<vertex_shader   name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_swy_stochastic_ALPHATEST">
+			<vertex_shader   name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
+		<technique name="standart_noskin_bump_nospec_high_swy_stochastic_ALPHATESTSHDW">
+			<vertex_shader   name="vs_standart_noskin_bump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_bump_nospec_high.glsl"/>
+		</technique>
 	</techniques>
 </data>

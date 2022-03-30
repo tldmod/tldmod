@@ -3405,13 +3405,14 @@ VS_OUTPUT_STANDART vs_main_standart_Instanced (uniform const int PcfMode, unifor
 PS_OUTPUT ps_main_standart ( VS_OUTPUT_STANDART In, uniform const int PcfMode, 
 									uniform const bool use_bumpmap, uniform const bool use_specularfactor, 
 									uniform const bool use_specularmap, uniform const bool ps2x, 
-									uniform const bool use_aniso, uniform const bool terrain_color_ambient = true )
+									uniform const bool use_aniso, uniform const bool terrain_color_ambient = true, uniform const bool UseStochastic = false )
 { 
-	PS_OUTPUT Output;
+	PS_OUTPUT Output; float4 tex_col; float3 spec_tex;
 
 	float3 normal;
 	if(use_bumpmap) {
-		normal = (2.0f * tex2D(NormalTextureSampler, In.Tex0) - 1.0f);
+		if (!UseStochastic) normal = (2.0f *           tex2D(NormalTextureSampler, In.Tex0) - 1.0f);
+		               else normal = (2.0f * stochasticTex2D(NormalTextureSampler, In.Tex0) - 1.0f, false);
 	}
 	else 
 	{
@@ -3481,8 +3482,8 @@ PS_OUTPUT ps_main_standart ( VS_OUTPUT_STANDART In, uniform const int PcfMode,
 	// Output.RGBColor.rgb = total_light.rgb;	//saturate?
 	Output.RGBColor.rgb *= vMaterialColor.rgb;
 	
-	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
-	INPUT_TEX_GAMMA(tex_col.rgb);
+	if (!UseStochastic) { tex_col =           tex2D(MeshTextureSampler, In.Tex0); INPUT_TEX_GAMMA(tex_col.rgb); }
+	               else { tex_col = stochasticTex2D(MeshTextureSampler, In.Tex0);                               }
 
 	Output.RGBColor.rgb *= tex_col.rgb;
 	Output.RGBColor.rgb *= In.VertexColor.rgb;
@@ -3493,7 +3494,10 @@ PS_OUTPUT ps_main_standart ( VS_OUTPUT_STANDART In, uniform const int PcfMode,
 		
 		float4 specColor = 0.1 * spec_coef * vSpecularColor;
 		if(use_specularmap) {
-			float spec_tex_factor = dot(tex2D(SpecularTextureSampler, In.Tex0).rgb,0.33);	//get more precision from specularmap
+			if (!UseStochastic) spec_tex =           tex2D(SpecularTextureSampler, In.Tex0).rgb;
+			               else spec_tex = stochasticTex2D(SpecularTextureSampler, In.Tex0, false).rgb;
+
+			float spec_tex_factor = dot(spec_tex, 0.33);	//get more precision from specularmap
 			specColor *= spec_tex_factor;
 		}
 		else //if(use_specular_alpha)	//is that always true?
@@ -3665,7 +3669,21 @@ VertexShader standart_vs_nvidia[] = { 	compile vs_2_0 vs_main_standart(PCF_NVIDI
 				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart(PCF_NVIDIA, use_bumpmap, use_skinning); \
 							PixelShader = compile ps_2_a ps_main_standart(PCF_NVIDIA, use_bumpmap, use_specularfactor, use_specularmap, true, use_aniso, terraincolor);} } \
 				DEFINE_LIGHTING_TECHNIQUE(tech_name, 0, use_bumpmap, use_skinning, use_specularfactor, use_specularmap)
+
+/* swy: same as above but with stochastic texturing enabled and always using ps_2_a :) */
+#define DEFINE_STANDART_TECHNIQUE_HSTO(tech_name, use_bumpmap, use_skinning, use_specularfactor, use_specularmap, use_aniso, terraincolor)	\
+				technique tech_name##_swy_stochastic	\
+				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart(PCF_NONE,    use_bumpmap, use_skinning); \
+							PixelShader  = compile ps_2_a ps_main_standart(PCF_NONE,    use_bumpmap, use_specularfactor, use_specularmap, true, use_aniso, terraincolor, /* UseStochastic */ true);} } \
+				technique tech_name##_swy_stochastic_SHDW	\
+				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart(PCF_DEFAULT, use_bumpmap, use_skinning); \
+							PixelShader  = compile ps_2_a ps_main_standart(PCF_DEFAULT, use_bumpmap, use_specularfactor, use_specularmap, true, use_aniso, terraincolor, /* UseStochastic */ true);} } \
+				technique tech_name##_swy_stochastic_SHDWNVIDIA	\
+				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart(PCF_NVIDIA,  use_bumpmap, use_skinning); \
+							PixelShader  = compile ps_2_a ps_main_standart(PCF_NVIDIA,  use_bumpmap, use_specularfactor, use_specularmap, true, use_aniso, terraincolor, /* UseStochastic */ true);} } \
+				DEFINE_LIGHTING_TECHNIQUE(tech_name##_swy_stochastic, 0, use_bumpmap, use_skinning, use_specularfactor, use_specularmap)
 				
+
 #define DEFINE_STANDART_TECHNIQUE_INSTANCED(tech_name, use_bumpmap, use_skinning, use_specularfactor, use_specularmap, use_aniso, terraincolor)	\
 				technique tech_name	\
 				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart_Instanced(PCF_NONE, use_bumpmap, false); \
@@ -3716,7 +3734,21 @@ VertexShader standart_vs_nvidia[] = { 	compile vs_2_0 vs_main_standart(PCF_NVIDI
 				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart(PCF_NVIDIA, use_bumpmap, use_skinning); \
 							PixelShader = compile ps_2_a ps_main_standart(PCF_NVIDIA, use_bumpmap, use_specularfactor, use_specularmap, true, use_aniso);} } \
 				DEFINE_LIGHTING_TECHNIQUE(tech_name, 0, use_bumpmap, use_skinning, use_specularfactor, use_specularmap)
-				
+
+/* swy: same as above but with stochastic texturing enabled and always using ps_2_a :) */
+#define DEFINE_STANDART_TECHNIQUE_HSTO(tech_name, use_bumpmap, use_skinning, use_specularfactor, use_specularmap, use_aniso)	\
+				technique tech_name##_swy_stochastic	\
+				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart(PCF_NONE,    use_bumpmap, use_skinning); \
+							PixelShader  = compile ps_2_a ps_main_standart(PCF_NONE,    use_bumpmap, use_specularfactor, use_specularmap, true, use_aniso, /* UseStochastic */ true);} } \
+				technique tech_name##_swy_stochastic_SHDW	\
+				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart(PCF_DEFAULT, use_bumpmap, use_skinning); \
+							PixelShader  = compile ps_2_a ps_main_standart(PCF_DEFAULT, use_bumpmap, use_specularfactor, use_specularmap, true, use_aniso, /* UseStochastic */ true);} } \
+				technique tech_name##_swy_stochastic_SHDWNVIDIA	\
+				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart(PCF_NVIDIA,  use_bumpmap, use_skinning); \
+							PixelShader  = compile ps_2_a ps_main_standart(PCF_NVIDIA,  use_bumpmap, use_specularfactor, use_specularmap, true, use_aniso, /* UseStochastic */ true);} } \
+				DEFINE_LIGHTING_TECHNIQUE(tech_name##_swy_stochastic, 0, use_bumpmap, use_skinning, use_specularfactor, use_specularmap)
+
+
 #define DEFINE_STANDART_TECHNIQUE_INSTANCED(tech_name, use_bumpmap, use_skinning, use_specularfactor, use_specularmap, use_aniso)	\
 				technique tech_name	\
 				{ pass P0 { VertexShader = compile vs_2_0 vs_main_standart_Instanced(PCF_NONE, use_bumpmap, false); \
@@ -3753,7 +3785,7 @@ DEFINE_STANDART_TECHNIQUE_HIGH( standart_skin_bump_nospecmap_high, 		true, true,
 DEFINE_STANDART_TECHNIQUE_HIGH( standart_skin_bump_specmap_high, 		true, true,  true, true , false, true)
 DEFINE_STANDART_TECHNIQUE_HIGH( standart_noskin_bump_nospecmap_high, 	true, false,  true, false, false, true)
 DEFINE_STANDART_TECHNIQUE_HIGH( standart_noskin_bump_specmap_high, 		true, false,  true, true , false, true)
-                                                                                      
+DEFINE_STANDART_TECHNIQUE_HSTO( standart_noskin_bump_specmap_high, 		true, false,  true, true , false, true) /* swy: UseStochastic */
 //-----------------------------------------------
 //nobump versions:
 DEFINE_STANDART_TECHNIQUE( standart_noskin_nobump_nospecmap, 			false, false, true, false, false, true)
@@ -3772,6 +3804,7 @@ DEFINE_STANDART_TECHNIQUE( standart_skin_bump_nospec, 					true,   true, false, 
                                                                                          
 //nospec_high
 DEFINE_STANDART_TECHNIQUE_HIGH( standart_noskin_bump_nospec_high, 				true, false, false, false, false, true)
+DEFINE_STANDART_TECHNIQUE_HSTO( standart_noskin_bump_nospec_high, 				true, false, false, false, false, true) /* swy: UseStochastic */
 DEFINE_STANDART_TECHNIQUE_HIGH( standart_noskin_bump_nospec_high_noterraincolor,true, false, false, false, false, false)
 DEFINE_STANDART_TECHNIQUE_HIGH( standart_skin_bump_nospec_high, 				true,  true, false, false, false, true)
 
