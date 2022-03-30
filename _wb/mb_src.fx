@@ -7384,14 +7384,20 @@ VS_OUTPUT_TLD_MAP vs_mtarini_map (
    return Out;
 }
 
-PS_OUTPUT ps_mtarini_snowy_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode)
+PS_OUTPUT ps_mtarini_snowy_map(PS_INPUT_TLD_MAP In, uniform const int PcfMode, uniform const bool UseStochastic = false)
 {
-    PS_OUTPUT Output;
+    PS_OUTPUT Output; float4 tex_col;
 
-    float4 tex_col = tex2D(MeshTextureSampler, In.Tex0*3.0);
+	if (!UseStochastic)
+	{
+    	tex_col     = tex2D(MeshTextureSampler, In.Tex0*3.0);
+		tex_col.rgb = pow(tex_col.rgb, input_gamma);
+	}
+	else
+		tex_col     = stochasticTex2D(MeshTextureSampler, In.Tex0*3.0);
+
     float4 tex_sdw = swy_scrolling_cloud_shadows(In.Tex0);
 
-	tex_col.rgb = pow(tex_col.rgb, input_gamma);
 
     // change the following weights to tune snow presence
     float snow = In.Spec.x*0.70          // effect of altitude on snow presence
@@ -7477,6 +7483,15 @@ technique mtarini_snowy_map
    }
 }
 
+technique mtarini_snowy_map_swy_stochastic
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NONE, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
+      PixelShader  = compile ps_2_a ps_mtarini_snowy_map(PCF_NONE, /* UseStochastic */ true);
+   }
+}
+
 technique mtarini_map
 {
    pass P0
@@ -7510,6 +7525,15 @@ technique mtarini_snowy_map_SHDW
    {
       VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
       PixelShader = compile ps_2_0 ps_mtarini_snowy_map(PCF_DEFAULT);
+   }
+}
+
+technique mtarini_snowy_map_swy_stochastic_SHDW
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_DEFAULT, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
+      PixelShader  = compile ps_2_a ps_mtarini_snowy_map(PCF_DEFAULT, /* UseStochastic */ true);
    }
 }
 
@@ -7547,6 +7571,15 @@ technique mtarini_snowy_map_SHDWNVIDIA
    {
       VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
       PixelShader = compile ps_2_0 ps_mtarini_snowy_map(PCF_NVIDIA);
+   }
+}
+
+technique mtarini_snowy_map_swy_stochastic_SHDWNVIDIA
+{
+   pass P0
+   {
+      VertexShader = compile vs_2_0 vs_mtarini_map(PCF_NVIDIA, MAP_SHADOW_NO, MAP_SPECIAL_SNOW, MAP_DISTORT_YES,1.0);
+      PixelShader  = compile ps_2_a ps_mtarini_snowy_map(PCF_NVIDIA, /* UseStochastic */ true);
    }
 }
 

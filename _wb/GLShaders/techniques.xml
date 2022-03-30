@@ -1167,5 +1167,11 @@
 			<vertex_shader name="vs_map_mountain_bump.glsl"/>
 			<fragment_shader name="ps_map_mountain_bump.glsl"/>
 		</technique>
+
+		<!-- mtarini_snowy_map_swy_stochastic [map_TLD_mountain_shader_swy_stochastic] - copied from mtarini_snowy_map -->
+		<technique name="mtarini_snowy_map_swy_stochastic">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
 	</techniques>
 </data>
