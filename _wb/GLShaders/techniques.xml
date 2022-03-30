@@ -933,244 +933,244 @@
 
 		<!-- font_outline_mtarini - implemented -->
 		<technique name="font_outline_mtarini">
-			<vertex_shader name="vs_font_mtarini.glsl"/>
+			<vertex_shader   name="vs_font_mtarini.glsl"/>
 			<fragment_shader name="ps_font_outline_mtarini.glsl"/>
 		</technique>
 
 		<!-- mtarini_progressbar - implemented -->
 		<technique name="mtarini_progressbar">
-			<vertex_shader name="vs_mtarini_progressbar.glsl"/>
+			<vertex_shader   name="vs_mtarini_progressbar.glsl"/>
 			<fragment_shader name="ps_main_no_shadow.glsl"/>
 		</technique>
 
 		<!-- swy_tld_hp_overlay - implemented -->
 		<technique name="swy_tld_hp_overlay">
-			<vertex_shader name="vs_font.glsl"/>
+			<vertex_shader   name="vs_font.glsl"/>
 			<fragment_shader name="ps_main_no_shadow.glsl"/>
 		</technique>
 
 		<!-- map_scribble_shader - implemented -->
 		<technique name="map_scribble_shader">
-			<vertex_shader name="vs_main_map.glsl"/>
+			<vertex_shader   name="vs_main_map.glsl"/>
 			<fragment_shader name="ps_main_map.glsl"/>
 		</technique>
 
 		<!-- mtarini_snowy_map - implemented -->
 		<technique name="mtarini_snowy_map">
-			<vertex_shader name="vs_main_map.glsl"/>
+			<vertex_shader   name="vs_main_map.glsl"/>
 			<fragment_shader name="ps_main_map.glsl"/>
 		</technique>
 
 		<technique name="mtarini_swampy_map">
-			<vertex_shader name="vs_main_map.glsl"/>
+			<vertex_shader   name="vs_main_map.glsl"/>
 			<fragment_shader name="ps_main_map.glsl"/>
 		</technique>
 
 		<!-- mtarini_windy_flora - implemented (fs uses vanilla fs_flora) -->
 		<technique name="mtarini_windy_flora">
-			<vertex_shader name="vs_flora.glsl"/>
+			<vertex_shader   name="vs_flora.glsl"/>
 			<fragment_shader name="ps_flora.glsl"/>
 		</technique>
 
 		<!-- mtarini_windy_flora_mild - implemented (fs uses vanilla fs_flora) -->
 		<technique name="mtarini_windy_flora_mild">
-			<vertex_shader name="vs_flora.glsl"/>
+			<vertex_shader   name="vs_flora.glsl"/>
 			<fragment_shader name="ps_flora.glsl"/>
 		</technique>
 
 		<!-- mtarini_windy_flora_mild_one_sheet - implemented (fs uses vanilla fs_flora) -->
 		<technique name="mtarini_windy_flora_mild_one_sheet">
-			<vertex_shader name="vs_flora.glsl"/>
+			<vertex_shader   name="vs_flora.glsl"/>
 			<fragment_shader name="ps_flora.glsl"/>
 		</technique>
 
 		<!-- mtarini_windy_grass - implemented (fs uses vanilla fs_grass) -->
 		<technique name="mtarini_windy_grass">
-			<vertex_shader name="vs_grass.glsl"/>
+			<vertex_shader   name="vs_grass.glsl"/>
 			<fragment_shader name="ps_grass.glsl"/>
 		</technique>
 
 		<!-- mtarini_windy_grass_ALPHATEST - implemented (fs uses vanilla fs_grass) -->
 		<technique name="mtarini_windy_grass_ALPHATEST">
-			<vertex_shader name="vs_grass_ALPHATEST.glsl"/>
+			<vertex_shader   name="vs_grass_ALPHATEST.glsl"/>
 			<fragment_shader name="ps_grass_ALPHATEST.glsl"/>
 		</technique>
 
 		<!-- mtarini_windy_grass_no_shadow - implemented (fs uses vanilla fs_grass) -->
 		<technique name="mtarini_windy_grass_no_shadow">
-			<vertex_shader name="vs_grass_no_shadow.glsl"/>
+			<vertex_shader   name="vs_grass_no_shadow.glsl"/>
 			<fragment_shader name="ps_grass_no_shadow.glsl"/>
 		</technique>
 
 		<!-- mtarini_windy_grass_no_shadow_ALPHATEST - implemented (fs uses vanilla fs_grass) -->
 		<technique name="mtarini_windy_grass_no_shadow_ALPHATEST">
-			<vertex_shader name="vs_grass_no_shadow_ALPHATEST.glsl"/>
+			<vertex_shader   name="vs_grass_no_shadow_ALPHATEST.glsl"/>
 			<fragment_shader name="ps_grass_no_shadow_ALPHATEST.glsl"/>
 		</technique>
 
 		<!-- face_shader_redeye - implemented -->
 		<technique name="face_shader_redeye">
-			<vertex_shader name="vs_face_shader.glsl"/>
+			<vertex_shader   name="vs_face_shader.glsl"/>
 			<fragment_shader name="ps_face_shader.glsl"/>
 		</technique>
 
 		<!-- specular_alpha_skin [iron_shader_skin] - copied from standart_skin_nobump_nospecmap -->
 		<technique name="specular_alpha_skin">
-			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<vertex_shader   name="vs_standart_skin_nobump.glsl"/>
 			<fragment_shader name="ps_standart_skin_nobump_nospecmap.glsl"/>
 		</technique>
 
 		<!-- specular_alpha [iron_shader] - copied from standart_noskin_nobump_nospecmap -->
 		<technique name="specular_alpha">
-			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<vertex_shader   name="vs_standart_noskin_nobump.glsl"/>
 			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
 		</technique>
 
 		<!-- mtarini_specular_alpha_top [iron_shader_rohanhelm] - copied from standart_noskin_nobump_nospecmap with changes -->
 		<technique name="mtarini_specular_alpha_top">
-			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<vertex_shader   name="vs_standart_noskin_nobump.glsl"/>
 			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
 		</technique>
 
 		<!-- diffuse_rohan_banners [tex_mul_color_alpha_rohan_banners] - copied from diffuse with changes -->
 		<technique name="diffuse_rohan_banners">
-			<vertex_shader name="vs_main.glsl"/>
+			<vertex_shader   name="vs_main.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 		<technique name="diffuse_rohan_banners_SHDW">
-			<vertex_shader name="vs_main_true.glsl"/>
+			<vertex_shader   name="vs_main_true.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 
 		<!-- diffuse_spr_banners [tex_mul_color_alpha_spr_banners] - copied from diffuse with changes -->
 		<technique name="diffuse_spr_banners">
-			<vertex_shader name="vs_main.glsl"/>
+			<vertex_shader   name="vs_main.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 		<technique name="diffuse_spr_banners_SHDW">
-			<vertex_shader name="vs_main_true.glsl"/>
+			<vertex_shader   name="vs_main_true.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 
 		<!-- mtarini_standart_shader [standart_shader] - copied from diffuse with changes -->
 		<technique name="mtarini_standart_shader">
-			<vertex_shader name="vs_main.glsl"/>
+			<vertex_shader   name="vs_main.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 		<technique name="mtarini_standart_shader_SHDW">
-			<vertex_shader name="vs_main.glsl"/>
+			<vertex_shader   name="vs_main.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 
 		<!-- mtarini_skin_diffuse_95perc [skeleton_shader_95perc] - copied from skin_diffuse with changes -->
 		<technique name="mtarini_skin_diffuse_95perc">
-			<vertex_shader name="vs_main_skin.glsl"/>
+			<vertex_shader   name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 		<technique name="mtarini_skin_diffuse_95perc_SHDW">
-			<vertex_shader name="vs_main_skin.glsl"/>
+			<vertex_shader   name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 
 		<!-- mtarini_skin_diffuse_78perc [skeleton_shader_78perc] - copied from skin_diffuse with changes -->
 		<technique name="mtarini_skin_diffuse_78perc">
-			<vertex_shader name="vs_main_skin.glsl"/>
+			<vertex_shader   name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 		<technique name="mtarini_skin_diffuse_78perc_SHDW">
-			<vertex_shader name="vs_main_skin.glsl"/>
+			<vertex_shader   name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 
 		<!-- mtarini_skin_diffuse_73perc [skeleton_shader_73perc] - copied from skin_diffuse with changes -->
 		<technique name="mtarini_skin_diffuse_73perc">
-			<vertex_shader name="vs_main_skin.glsl"/>
+			<vertex_shader   name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 		<technique name="mtarini_skin_diffuse_73perc_SHDW">
-			<vertex_shader name="vs_main_skin.glsl"/>
+			<vertex_shader   name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 
 		<!-- mtarini_skin_diffuse_big [skeleton_shader_big] - copied from skin_diffuse with changes -->
 		<technique name="mtarini_skin_diffuse_big">
-			<vertex_shader name="vs_main_skin.glsl"/>
+			<vertex_shader   name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 		<technique name="mtarini_skin_diffuse_big_SHDW">
-			<vertex_shader name="vs_main_skin.glsl"/>
+			<vertex_shader   name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 
 		<!-- mtarini_waterfall [waterfall_shader] - copied from diffuse with changes -->
 		<technique name="mtarini_waterfall">
-			<vertex_shader name="vs_main.glsl"/>
+			<vertex_shader   name="vs_main.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
         
 		<!-- swy_simple_shader_spiritual [swy_simple_shader_spiritual] - copied from simple_shading with changes -->
 		<technique name="swy_simple_shader_spiritual">
-			<vertex_shader name="vs_font.glsl"/>
+			<vertex_shader   name="vs_font.glsl"/>
 			<fragment_shader name="ps_main_no_shadow.glsl"/>
 		</technique>
         
 		<!-- swy_tld_evil_mixing [swy_tld_evil_mixing] - copied from simple_shading with changes -->
 		<technique name="swy_tld_evil_mixing">
-			<vertex_shader name="vs_font.glsl"/>
+			<vertex_shader   name="vs_font.glsl"/>
 			<fragment_shader name="ps_main_no_shadow.glsl"/>
 		</technique>
 
-		<!-- dot3_swy_stochastic [dot3_swy_stochastic, dot3_alpha_swy_stochastic] - copied from dot3 -->
+		<!-- dot3_swy_stochastic [dot3_swy_stochastic, dot3_alpha_swy_stochastic] - copied from dot3 with changes -->
 		<technique name="dot3_swy_stochastic">
-			<vertex_shader name="vs_bumpmap.glsl"/>
+			<vertex_shader   name="vs_bumpmap.glsl"/>
 			<fragment_shader name="ps_bumpmap_simple.glsl"/>
 		</technique>
 		<technique name="dot3_swy_stochastic_SHDW">
-			<vertex_shader name="vs_bumpmap.glsl"/>
+			<vertex_shader   name="vs_bumpmap.glsl"/>
 			<fragment_shader name="ps_bumpmap_simple.glsl"/>
 		</technique>
 
-		<!-- dot3_multitex_swy_stochastic [dot3_multitex_swy_stochastic] - copied from dot3_multitex -->
+		<!-- dot3_multitex_swy_stochastic [dot3_multitex_swy_stochastic] - copied from dot3_multitex with changes -->
 		<technique name="dot3_multitex_swy_stochastic">
-			<vertex_shader name="vs_bumpmap.glsl"/>
+			<vertex_shader   name="vs_bumpmap.glsl"/>
 			<fragment_shader name="ps_bumpmap_simple_multitex.glsl"/>
 		</technique>
 		<technique name="dot3_multitex_swy_stochastic_SHDW">
-			<vertex_shader name="vs_bumpmap.glsl"/>
+			<vertex_shader   name="vs_bumpmap.glsl"/>
 			<fragment_shader name="ps_bumpmap_simple_multitex.glsl"/>
 		</technique>
 
-		<!-- diffuse_map_swy_stochastic [map_shader_swy_stochastic] - copied from diffuse_map -->
+		<!-- diffuse_map_swy_stochastic [map_shader_swy_stochastic] - copied from diffuse_map with changes -->
 		<technique name="diffuse_map_swy_stochastic">
-			<vertex_shader name="vs_main_map.glsl"/>
+			<vertex_shader   name="vs_main_map.glsl"/>
 			<fragment_shader name="ps_main_map.glsl"/>
 		</technique>
 		<technique name="diffuse_map_swy_stochastic_SHDW">
-			<vertex_shader name="vs_main_map.glsl"/>
+			<vertex_shader   name="vs_main_map.glsl"/>
 			<fragment_shader name="ps_main_map.glsl"/>
 		</technique>
 
-		<!-- map_mountain_swy_stochastic [map_mountain_shader_swy_stochastic] - copied from map_mountain -->
+		<!-- map_mountain_swy_stochastic [map_mountain_shader_swy_stochastic] - copied from map_mountain with changes -->
 		<technique name="map_mountain_swy_stochastic">
-			<vertex_shader name="vs_map_mountain.glsl"/>
+			<vertex_shader   name="vs_map_mountain.glsl"/>
 			<fragment_shader name="ps_map_mountain.glsl"/>
 		</technique>
 		<technique name="map_mountain_swy_stochastic_SHDW">
-			<vertex_shader name="vs_map_mountain.glsl"/>
+			<vertex_shader   name="vs_map_mountain.glsl"/>
 			<fragment_shader name="ps_map_mountain.glsl"/>
 		</technique>
 		<technique name="map_mountain_swy_stochastic_bump">
-			<vertex_shader name="vs_map_mountain_bump.glsl"/>
+			<vertex_shader   name="vs_map_mountain_bump.glsl"/>
 			<fragment_shader name="ps_map_mountain_bump.glsl"/>
 		</technique>
 		<technique name="map_mountain_swy_stochastic_bump_SHDW">
-			<vertex_shader name="vs_map_mountain_bump.glsl"/>
+			<vertex_shader   name="vs_map_mountain_bump.glsl"/>
 			<fragment_shader name="ps_map_mountain_bump.glsl"/>
 		</technique>
 
-		<!-- mtarini_snowy_map_swy_stochastic [map_TLD_mountain_shader_swy_stochastic] - copied from mtarini_snowy_map -->
+		<!-- mtarini_snowy_map_swy_stochastic [map_TLD_mountain_shader_swy_stochastic] - copied from mtarini_snowy_map with changes -->
 		<technique name="mtarini_snowy_map_swy_stochastic">
-			<vertex_shader name="vs_main_map.glsl"/>
+			<vertex_shader   name="vs_main_map.glsl"/>
 			<fragment_shader name="ps_main_map.glsl"/>
 		</technique>
 	</techniques>
