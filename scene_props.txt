@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2008
+ 2009
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -6036,6 +6036,9 @@ spr_gondor_arch_1_cwe 0 0 damask_arka_b bo_damask_arka_b 0
 
 
 spr_gondor_arch_2 0 0 gondor_arches bo_gondor_arches 0
+
+
+spr_gondor_arch_3 0 0 gondor_arches_2 bo_gondor_arches_2 0
 
 
 spr_gondor_mt_stairs_cwe 0 0 damask_dom_a_ladder bo_damask_dom_a_ladder 0

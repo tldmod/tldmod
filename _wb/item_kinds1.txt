@@ -1734,10 +1734,10 @@ itemsfile version 2
  itm_harad_tunic Harad_Tunic Harad_Tunic 1  harad_tunic 0  16842765 0 50 123731968 4 100 0 8 3 0 0 0 0 0 0 0 0
 0
 
- itm_harad_padded Harondor_Padded_Armor Harondor_Padded_Armor 1  harad_padded 0  16842765 0 600 123731968 9 100 0 14 5 0 0 0 0 0 0 0 0
+ itm_harad_padded Harondor_Padded_Armor Harondor_Padded_Armor 1  harad_tier_1_giles 0  16842765 0 600 123731968 9 100 0 14 5 0 0 0 0 0 0 0 0
 0
 
- itm_harad_hauberk Harondor_Hauberk Harondor_Hauberk 1  harad_hauberk 0  16842765 0 1000 167772294 22 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_harad_hauberk Harondor_Hauberk Harondor_Hauberk 1  harad_tier_2_giles 0  16842765 0 1000 167772294 22 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
  itm_harad_lamellar Harasjala_Armor Harasjala_Armor 1  harad_lamellar 0  16842765 0 1200 704643206 26 93 0 25 10 10 0 0 0 0 0 0 0
@@ -1764,7 +1764,7 @@ itemsfile version 2
  itm_harad_scale Harad_Scale_Armor Harad_Scale_Armor 1  harad_scale 0  16842765 0 1200 704643206 28 95 0 27 8 11 0 0 0 0 0 0 0
 0
 
- itm_harad_tiger_scale Tiger_Guard_Armor Tiger_Guard_Armor 1  harad_tiger_scale 0  16842765 0 1400 704643206 30 95 2 30 8 15 0 0 0 0 0 0 0
+ itm_harad_tiger_scale Tiger_Guard_Armor Tiger_Guard_Armor 1  harad_tier_3_giles 0  16842765 0 1400 704643206 30 95 2 30 8 15 0 0 0 0 0 0 0
 0
 
  itm_harad_lion_scale Lion_Guard_Armor Lion_Guard_Armor 1  harad_lion_scale 0  16842765 0 1400 704643206 30 95 2 30 8 15 0 0 0 0 0 0 0
@@ -1875,7 +1875,7 @@ itemsfile version 2
  itm_harad_leather_greaves Harad_Leather_Greaves Harad_Leather_Greaves 1  harad_leather_greaves 0  69390 0 550 123731968 4 92 0 0 16 0 0 0 0 0 0 0 0
 0
 
- itm_harad_scale_greaves Harad_Scale_Greaves Harad_Scale_Greaves 1  harad_scale_greaves 0  69390 0 1100 704643206 6 93 0 0 22 11 0 0 0 0 0 0 0
+ itm_harad_scale_greaves Harad_Greaves Harad_Greaves 1  harad_greaves_giles 0  69390 0 1100 704643206 6 93 0 0 22 11 0 0 0 0 0 0 0
 0
 
  itm_harad_lamellar_greaves Harad_Splinted_Greaves Harad_Splinted_Greaves 1  harad_lamellar_greaves 0  69390 0 1300 704643206 7 94 0 0 24 12 0 0 0 0 0 0 0

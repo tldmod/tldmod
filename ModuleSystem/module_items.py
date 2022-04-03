@@ -1017,8 +1017,8 @@ items =[
 #####TLD HARAD ITEMS##########
 ###########ARMOR##########
 ["harad_tunic","Harad_Tunic",[("harad_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,50,weight(4)|head_armor(0)|body_armor(8)|leg_armor(3)|difficulty(0),imodbits_cloth,],
-["harad_padded","Harondor_Padded_Armor",[("harad_padded",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(9)|head_armor(0)|body_armor(14)|leg_armor(5)|difficulty(0),imodbits_cloth,],
-["harad_hauberk","Harondor_Hauberk",[("harad_hauberk",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(22)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_armor,],
+["harad_padded","Harondor_Padded_Armor",[("harad_tier_1_giles",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(9)|head_armor(0)|body_armor(14)|leg_armor(5)|difficulty(0),imodbits_cloth,],
+["harad_hauberk","Harondor_Hauberk",[("harad_tier_2_giles",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(22)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_armor,],
 ["harad_lamellar","Harasjala_Armor",[("harad_lamellar",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(26)|abundance(93)|head_armor(0)|body_armor(25)|leg_armor(10)|difficulty(10),imodbits_armor|imodbit_lordly,],
 ["harad_heavy","Harad_Noble_Armor",[("harad_heavy",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2200,weight(30)|abundance(96)|head_armor(1)|body_armor(35)|leg_armor(12)|difficulty(18),imodbits_armor|imodbit_lordly,],
 ["harad_skirmisher","Light_Harad_Garb",[("harad_skirmisher",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(4)|head_armor(0)|body_armor(12)|leg_armor(3)|difficulty(0),imodbits_cloth,],
@@ -1027,7 +1027,7 @@ items =[
 ["harad_champion","Far_Harad_Garb",[("harad_champion",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,700,weight(4)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_cloth,],
 ["panther_guard","Panther_Hide",[("panther_guard",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,900,weight(5)|head_armor(0)|body_armor(15)|leg_armor(8)|difficulty(0),imodbits_cloth,],
 ["harad_scale","Harad_Scale_Armor",[("harad_scale",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(28)|abundance(95)|head_armor(0)|body_armor(27)|leg_armor(8)|difficulty(11),imodbits_armor|imodbit_lordly,],
-["harad_tiger_scale","Tiger_Guard_Armor",[("harad_tiger_scale",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1400,weight(30)|abundance(95)|head_armor(2)|body_armor(30)|leg_armor(8)|difficulty(15),imodbits_armor|imodbit_lordly,],
+["harad_tiger_scale","Tiger_Guard_Armor",[("harad_tier_3_giles",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1400,weight(30)|abundance(95)|head_armor(2)|body_armor(30)|leg_armor(8)|difficulty(15),imodbits_armor|imodbit_lordly,],
 ["harad_lion_scale","Lion_Guard_Armor",[("harad_lion_scale",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1400,weight(30)|abundance(95)|head_armor(2)|body_armor(30)|leg_armor(8)|difficulty(15),imodbits_armor|imodbit_lordly,],
 ###########HELMS##########
 #HARONDOR
@@ -1072,7 +1072,7 @@ items =[
 ############BOOTS##########
 ["desert_boots","Desert_Boots",[("desert_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,200,weight(1)|abundance(90)|leg_armor(11)|difficulty(0),imodbits_cloth],
 ["harad_leather_greaves","Harad_Leather_Greaves",[("harad_leather_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,550,weight(4)|abundance(92)|leg_armor(16)|difficulty(0),imodbits_cloth],
-["harad_scale_greaves","Harad_Scale_Greaves",[("harad_scale_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1100,weight(6)|abundance(93)|leg_armor(22)|difficulty(11),imodbits_armor|imodbit_lordly],
+["harad_scale_greaves","Harad_Greaves",[("harad_greaves_giles",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1100,weight(6)|abundance(93)|leg_armor(22)|difficulty(11),imodbits_armor|imodbit_lordly],
 ["harad_lamellar_greaves","Harad_Splinted_Greaves",[("harad_lamellar_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1300,weight(7)|abundance(94)|leg_armor(24)|difficulty(12),imodbits_armor|imodbit_lordly],
 #####TLD KHAND ITEMS##########
 ###HELMS########### #free Dec 2019
