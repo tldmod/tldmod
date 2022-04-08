@@ -1,10 +1,12 @@
+#version 130
+
 uniform sampler2D diffuse_texture;
 varying vec4 outColor0;
 varying vec2 outTexCoord;
 
 /* inner and outer contours, 1.0/255 is invisibly thin <--> 0.0/0 the boldest */
 float intour( in float d, in float w ){
-    return smoothstep(0.52 - w, 0.52 + w, d);
+    return smoothstep(0.51 - w, 0.52 + w, d);
 }
 float contour( in float d, in float w ){
     return smoothstep(0.30 - w, 0.45 + w, d);
@@ -44,7 +46,7 @@ void main ()
 
     // weighted average, with 4 extra points having 0.5 weight each,
     // so 1 + 0.5*4 = 3 is the divisor
-    alpha = (alpha + 0.5 * asum) / 3.;
+    alpha = (alpha + asum/4);
     // -------
 
     float intour = intour( dist, width );
@@ -54,12 +56,12 @@ void main ()
                + intsamp( box.xw, width )
                + intsamp( box.zy, width );
 
-    intour = (intour + 0.5 * isum) / 3.;
+    intour = (intour + isum/4);
 
-    gl_FragColor = vec4
-    ( /* mix pure black and the text color using the inner contour mask.
+    gl_FragColor = clamp(vec4
+    ( /* mix the border and text colors using the inner contour mask.
          modulate the glyph's outer contour by the amount of transparency sent from the engine */
-      mix(vec3(0.0), outColor0.rgb, intour), alpha * outColor0.a
-    );
+      mix(vec3(0.0, 0.0, 0.0).rgb, outColor0.rgb, intour), alpha * outColor0.a
+    ), 0.0, 1.0);
 }
 

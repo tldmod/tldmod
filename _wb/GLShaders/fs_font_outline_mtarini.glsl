@@ -1,3 +1,5 @@
+#version 130
+
 uniform sampler2D diffuse_texture;
 varying vec4 outColor0;
 varying vec3 outTexCoord;

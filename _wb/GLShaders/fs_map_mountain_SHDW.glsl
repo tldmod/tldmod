@@ -4,11 +4,11 @@ uniform vec4 vFogColor;
 uniform vec4 output_gamma_inv;
 uniform float fShadowMapNextPixel;
 uniform float fShadowMapSize;
+varying float Fog;
 varying vec4 Color;
-varying vec2 Tex0;
+varying vec3 Tex0;
 varying vec4 SunLight;
 varying vec4 ShadowTexCoord;
-varying float Fog;
 varying vec3 ViewDir;
 varying vec3 WorldNormal;
 
@@ -17,21 +17,27 @@ uniform float time_var;
 
 vec4 swy_scrolling_cloud_shadows(vec2 uvCoords)
 {
-  vec4 tex_sdw = texture2D(diffuse_texture_2, (uvCoords    * 0.20) + (time_var * 0.02));
-  vec4 tex_sdy = texture2D(diffuse_texture_2, (uvCoords    / 3.)   + (time_var * 0.00005));
+    vec4 tex_sdw = texture2D(diffuse_texture_2, (uvCoords    * 0.20) + (time_var * 0.02));
+    vec4 tex_sdy = texture2D(diffuse_texture_2, (uvCoords    / 3.)   + (time_var * 0.00005));
 
-  return vec4((clamp((tex_sdw * tex_sdy), 0., 1.) * 1.).rgb , 1.);
+    return vec4((clamp((tex_sdw * tex_sdy), 0., 1.) * 1.).rgb , 1.);
 }
 
 void main ()
 {
+  vec4 tex_col_1;
   vec4 tmpvar_2;
+  vec4 tmpvar_3;
+  tmpvar_3 = texture2D (diffuse_texture, Tex0.xy);
+  tex_col_1.w = tmpvar_3.w;
+  tex_col_1.xyz = pow (tmpvar_3.xyz, vec3(2.2, 2.2, 2.2));
+  tex_col_1.xyz = (tex_col_1.xyz + clamp ((
+    (Tex0.z * tmpvar_3.w)
+   - 1.5), 0.0, 1.0));
+  tex_col_1.w = 1.0;
 
-  vec4 tex_col = texture2D (diffuse_texture, Tex0);
-       tex_col = vec4(pow(tex_col.xyz, vec3(2.2)), tex_col.w);
+  vec4 tex_sdw = swy_scrolling_cloud_shadows(Tex0.xy);
 
-  vec4 tex_sdw = swy_scrolling_cloud_shadows(Tex0);
-  
   float sun_amount_4;
   sun_amount_4 = 0.0;
   vec2 tmpvar_5;
@@ -75,18 +81,13 @@ void main ()
     tmpvar_15 = 1.0;
   };
   sun_amount_4 = clamp (mix (mix (tmpvar_7, tmpvar_10, tmpvar_5.x), mix (tmpvar_13, tmpvar_15, tmpvar_5.x), tmpvar_5.y), 0.0, 1.0);
-  tmpvar_2 = (tex_col * (tex_sdw * Color + (SunLight * sun_amount_4)));
-  float tmpvar_16;
-  tmpvar_16 = (1.0 - clamp (dot (
-    normalize(ViewDir)
-  , 
-    normalize(WorldNormal)
-  ), 0.0, 1.0));
+  tmpvar_2.xyz = (clamp (tex_col_1, 0.0, 1.0) * (Color + (tex_sdw * SunLight * sun_amount_4))).xyz;
+  tmpvar_2.w = Color.w;
   tmpvar_2.xyz = (tmpvar_2.xyz * max (0.6, (
-    (tmpvar_16 * tmpvar_16)
+    (1.0 - clamp (dot (ViewDir, WorldNormal), 0.0, 1.0))
    + 0.1)));
   tmpvar_2.xyz = pow (tmpvar_2.xyz, output_gamma_inv.xyz);
   tmpvar_2.xyz = mix (vFogColor.xyz, tmpvar_2.xyz, Fog);
-  gl_FragColor = clamp(tmpvar_2, 0., 1.);
+  gl_FragColor = tmpvar_2;
 }
 

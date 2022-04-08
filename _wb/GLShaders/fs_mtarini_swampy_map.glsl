@@ -3,7 +3,6 @@
 uniform sampler2D diffuse_texture;
 uniform sampler2D diffuse_texture_2;
 uniform vec4 vFogColor;
-uniform vec4 input_gamma;
 uniform vec4 output_gamma_inv;
 
 uniform float time_var;
@@ -22,14 +21,25 @@ varying vec3 outWorldNormal;
 #define MAP_BLEND_HARD false
 #define MAP_BLEND_MID true
 
+vec4 swy_scrolling_cloud_shadows(vec2 uvCoords)
+{
+  vec4 tex_sdw = texture2D(diffuse_texture_2, (uvCoords    * 0.20) + (time_var * 0.02));
+  vec4 tex_sdy = texture2D(diffuse_texture_2, (uvCoords    / 3.)   + (time_var * 0.00005));
+
+  return vec4((clamp((tex_sdw * tex_sdy), 0., 1.) * 1.).rgb , 1.);
+}
+
 void main()
 {
     vec4 tex_col = texture2D(diffuse_texture, outTexCoord * 3.0);
-    vec4 tex_sdw = texture2D(diffuse_texture_2, (outTexCoord * 0.2) + (time_var * 0.02));
+    vec4 tex_sdw = swy_scrolling_cloud_shadows(outTexCoord);
 
-	//tex_col.rgb = pow(tex_col.rgb, input_gamma.rgb);
+    tex_col.rgb = pow(tex_col.rgb, vec3(2.2));
 
     gl_FragColor = tex_col * (tex_sdw * outColor0 + outSunLight0);
+
+    // gamma correct
+    gl_FragColor.rgb = pow(gl_FragColor.xyz, output_gamma_inv.xyz);
 
 	if (MAP_SPECIAL_SWAMP)
 	{
