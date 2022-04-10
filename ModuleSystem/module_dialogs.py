@@ -12697,7 +12697,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     
 # even with distrusted friends, you can hand troops of their faction
 [anyone|plyr, "party_encounter_distrusted_friend_1",  
-  [
+  [(neq, "$g_encountered_party_type", spt_kingdom_caravan),
+   (neq, "$g_encountered_party_type", spt_prisoner_train),
     (call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
     (call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_encountered_party_faction"),
     (party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1), # you have troop of their faction
@@ -12767,6 +12768,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
      (call_script, "script_get_rank_title_to_s24", "$g_encountered_party_faction" )]],
 
 [anyone|plyr,"party_encounter_friend", [
+        (neq, "$g_encountered_party_type", spt_kingdom_caravan),
+        (neq, "$g_encountered_party_type", spt_prisoner_train),
         (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
           (str_store_string, s4, "@Greetings, do you need reinforcements?"),

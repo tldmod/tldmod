@@ -9133,6 +9133,7 @@ scripts = [
           (party_get_slot, ":party_type", ":party_no", slot_party_type),
           #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
           (neq, ":party_type", spt_town), #...except towns
+          (neq, ":party_type", spt_kingdom_caravan), #...and caravans
 
           #(get_party_ai_behavior, ":ai_bhvr", ":party_no"),
           #(neq, ":ai_bhvr", ai_bhvr_avoid_party), - Kham Removed (Nov 2018)
@@ -9156,6 +9157,7 @@ scripts = [
           (party_get_slot, ":party_type", ":party_no"),
           #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
           (neq, ":party_type", spt_town), #...except towns
+          (neq, ":party_type", spt_kingdom_caravan), #...and caravans
 
           #MV commented out personal relations
           #(party_stack_get_troop_id, ":leader", ":party_no", 0),
