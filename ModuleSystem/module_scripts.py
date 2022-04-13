@@ -13206,8 +13206,17 @@ scripts = [
 ("simulate_retreat",
     [ (call_script, "script_music_set_situation_with_culture", mtf_sit_killed),
       (set_show_messages, 0),
-      (store_script_param, ":players_side_damage", 1),
-      (store_script_param, ":enemy_side_damage", 2),
+      (store_script_param, ":players_side_damage", 1), #damage dealt by the player side on the enemy side
+      (store_script_param, ":enemy_side_damage", 2),    #vice versa
+      
+      # tactics reduces enemy side damage *150/(tactics*2+10) = 150%...50%
+      (party_get_skill_level, ":player_party_tactics", "p_main_party", "skl_tactics"),
+      (val_mul, ":enemy_side_damage", 150),
+      
+      (val_mul, ":player_party_tactics", 2), 
+      (val_add, ":player_party_tactics", 10),
+      (val_div, ":enemy_side_damage", ":player_party_tactics"),
+      (val_div, ":enemy_side_damage", 100),
 
       (assign, ":players_side_strength", 0),
       (assign, ":enemy_side_strength", 0),
