@@ -3509,16 +3509,31 @@ simple_triggers = [
         #(display_message, "@Trigger - {reg65} followers", color_good_news),
         (ge, ":num_followers", 1),
         (store_current_hours, ":cur_time"),
+        (call_script, "script_find_theater", "p_main_party"),
+        (assign, ":current_theater", reg0), 
         
         (try_for_parties, ":followers"),
           (party_slot_eq, ":followers", slot_party_following_player, 1),
           (party_is_active, ":followers"),
           (party_get_slot, ":follow_until", ":followers", slot_party_follow_player_until_time),
           (party_get_slot, ":home_center", ":followers", slot_party_home_center),
+          (store_faction_of_party, ":party_faction", ":followers"),
           (assign, ":continue", 0),
+          (assign, ":release", 0),
           
           (try_begin),
-            (ge, ":cur_time", ":follow_until"),
+            (ge, ":cur_time", ":follow_until"), #check time
+            (assign, ":release", 1), 
+          (else_try), #check theater
+            (faction_get_slot, ":faction_theater", ":party_faction", slot_faction_active_theater),
+            (faction_get_slot, ":home_theater", ":party_faction", slot_faction_home_theater),
+            (neq, ":faction_theater", ":current_theater"),
+            (neq, ":home_theater", ":current_theater"),
+            (assign, ":release", 1), 
+          (try_end), 
+          
+          (try_begin),
+            (eq, ":release", 1), 
             (party_set_slot, ":followers", slot_party_following_player, 0),
             (party_set_slot, ":followers", slot_party_commander_party, -1),
             (call_script, "script_find_closest_random_enemy_center_from_center", ":home_center"),
