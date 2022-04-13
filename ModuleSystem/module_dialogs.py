@@ -12906,6 +12906,83 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (try_end)],
 "{s4}", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],
 
+[anyone|plyr,"party_encounter_friend", [
+        (party_slot_eq, "$g_encountered_party", slot_party_following_player, 1),
+        
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@I hdon't need your help any longer. Go home."),
+        (else_try),
+          (str_store_string, s4, "@I don't have any need for you. Get lost."),
+        (try_end)],
+"{s4}", "close_window", [
+        (assign, ":followers", "$g_encountered_party"),
+        (party_set_slot, "$g_encountered_party", slot_party_following_player, 0),
+        (party_set_slot, "$g_encountered_party", slot_party_commander_party, -1),
+        (party_get_slot, ":home_center", ":followers", slot_party_home_center),
+        (try_begin),
+          (ge, ":home_center", 1),
+          (party_get_position, pos1, ":home_center"),
+          (party_set_slot, ":followers", slot_party_ai_object, ":home_center"),
+        (else_try),
+          (faction_get_slot, ":faction_capital", "$g_talk_troop_faction", slot_faction_capital), 
+          (party_get_position, pos1, ":faction_capital"),
+          (party_set_slot, ":followers", slot_party_ai_object, ":faction_capital"),
+        (try_end),
+        (party_set_slot, ":followers", slot_party_ai_state, spai_undefined),
+        (party_set_ai_behavior, ":followers", ai_bhvr_patrol_location),
+        (party_set_ai_target_position, ":followers", pos1),
+        (party_set_ai_patrol_radius, ":followers", 10),
+        (str_store_party_name, s5, ":followers"),
+        (display_message, "@{s5} has stopped following you."),
+        
+        (assign, ":scouts", 0),
+        (assign, ":raider", 0),
+        (assign, ":war_party", 0),
+          
+        #Count remaining followers
+        (try_for_parties, ":followers"),
+          (party_slot_eq, ":followers", slot_party_following_player, 1),
+          (party_is_active, ":followers"),
+          
+          
+          (party_get_slot, ":type", ":followers", slot_party_type),
+          (try_begin),
+            (eq, ":type", spt_scout),
+            (val_add, ":scouts", 1),
+          (else_try),
+            (eq, ":type", spt_raider),
+            (val_add, ":raider", 1),
+          (else_try),
+            (eq, ":type", spt_patrol),
+            (val_add, ":war_party", 1),
+          (try_end),
+        (try_end),
+        
+        (store_add, ":cur_followers", ":scouts", ":raider"),
+        (val_add, ":cur_followers", ":war_party"),
+        
+        #Debug
+        #(assign, reg66, ":scouts"),
+        #(assign, reg67, ":raider"),
+        #(assign, reg68, ":war_party"),
+        (assign, reg69, ":cur_followers"),
+        
+        (try_begin),
+          (eq, ":cur_followers", 1),
+          (display_message, "@You have {reg69} ally party following you", message_neutral),
+        (else_try),
+          (gt, ":cur_followers", 1),
+          (display_message, "@You have {reg69} ally parties following you", message_neutral),
+        (try_end),
+        
+        #(display_message, "@Total: {reg69} - Scouts:{reg66} - Raiders: {reg67} - Patrols: {reg68}", color_good_news),
+        
+        (party_set_slot, "p_main_party", slot_party_number_following_player, ":cur_followers"),
+
+        (call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)        
+]],
+
 [anyone,"party_reinforce", [
      #War not started
      (eq,"$tld_war_began",0),],
