@@ -1,0 +1,79 @@
+/* tld glsl shader -- vs_mtarini_snowy_map -- by swyter */
+
+#version 120
+
+attribute vec3 inPosition;
+attribute vec3 inNormal;
+attribute vec4 inColor0;
+attribute vec4 inColor1;
+attribute vec2 inTexCoord;
+
+uniform mat4 matWorldViewProj;
+uniform mat4 matWorldView;
+uniform mat4 matWorld;
+
+uniform vec4 vMaterialColor;
+uniform vec4 vAmbientColor;
+uniform vec4 vCameraPos;
+uniform vec4 vSkyLightDir;
+uniform vec4 vSunColor;
+uniform vec4 vSunDir;
+uniform float fFogDensity;
+
+varying vec4 outColor0;
+varying vec2 outTexCoord;
+varying float outFog;
+varying vec4 outSpec0;
+varying vec4 outSunLight0;
+
+varying vec3 outViewDir;
+varying vec3 outWorldNormal;
+
+#define MAP_SPECIAL_SNOW true
+#define MAP_SPECIAL_SWAMP false
+
+void main()
+{
+    gl_Position = matWorldViewProj * vec4(inPosition, 1.0);
+    vec4 vWorldPos = matWorld * vec4(inPosition, 1.0);
+    vec3 vWorldN = normalize(mat3(matWorld) * inNormal); //normal in world space
+
+    outColor0 = inColor0.bgra * vMaterialColor;
+    outTexCoord = inTexCoord;
+
+    /* -- fog distance calculations */
+    vec3 viewProj = (matWorldView * vec4(inPosition, 1.0)).xyz;
+
+    outFog = 1.0 / exp2(
+        sqrt( dot(viewProj, viewProj) ) * fFogDensity
+    );
+    /* -- */
+
+    /* -- for fresnel term computations at fragment shader */
+    outViewDir = normalize((vCameraPos - (matWorld * vec4(inPosition, 1.0)))).xyz;
+    outWorldNormal = vWorldN;
+    /* -- */
+
+    float wNdotSun = max(0.0f, dot(vWorldN, -vSunDir.xyz));
+    outSunLight0 = wNdotSun * vSunColor * vMaterialColor * inColor0;
+
+
+    if (MAP_SPECIAL_SNOW)
+    {
+        // store altitude in Spec.x
+        outSpec0.x = inPosition.z;
+
+        // computation of specular
+        vec3 vHalf = normalize(normalize(vCameraPos.xyz - vWorldPos.xyz) - vSkyLightDir.xyz);
+        float fSpecular = pow(clamp( dot( vHalf, inNormal ), 0.0, 1.0), 32.0);
+        outSpec0.y = fSpecular * vAmbientColor.x * 0.8; // store specular in SunLight.x
+    }
+
+    if (MAP_SPECIAL_SWAMP)
+    {
+        // computes wheter inside swamp
+        vec2 dist = vWorldPos.xy - vec2(-35.0, -27.0);
+        outSpec0.x = (dot(dist, dist) > 38.0 * 38.0) ? 0.0 : 1.0; // stores swamp as yes no
+    }
+}
+
