@@ -27,7 +27,7 @@ skl_tracking_desc|Rastros se tornam mais informativos. (Habilidade de Grupo)
 skl_trainer|Treinador
 skl_trainer_desc|Todo dia, cada herói com esta habilidade acrescenta experiência a todos os outros membros do grupo que sejam de um nível menor do que ele/ela. Experiência ganha por nível: {0,4,10,16,23,30,38,46,55,65,80}. (Habilidade Pessoal)
 skl_looting|Saqueamento
-skl_looting_desc|Esta habilidade aumenta a quantidade de saque obtido em 10%% por cada nível. (Habilidade de Grupo)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 skl_horse_archery|Arquearia Montada
 skl_horse_archery_desc|Reduz as penalidades de dano e precisão para arcos e arremessáveis quando montado. (Habilidade Pessoal)
 skl_riding|Cavalgar

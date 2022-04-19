@@ -149,7 +149,7 @@ itm_arnor_sword_f|亚尔诺短剑
 itm_riv_helm_a|瑞文戴尔兜帽
 itm_riv_helm_b|瑞文戴尔射手盔
 itm_riv_helm_c|瑞文戴尔步兵盔
-itm_riv_tiara|精灵王冠
+itm_tiara_reward|精灵王冠
 itm_riv_shield_a|瑞文戴尔盾
 itm_riv_shield_b|瑞文戴尔盾
 itm_riv_bas_sword|瑞文戴尔变种剑
@@ -545,9 +545,9 @@ itm_harad_shield_b|哈隆铎圆盾
 itm_harad_shield_c|哈隆铎圆盾
 itm_harad_yellow_shield|哈拉德盾
 itm_desert_boots|沙漠靴
-itm_harad_leather_greaves|哈拉德胫甲
-itm_harad_scale_greaves|哈拉德靴
-itm_harad_lamellar_greaves|哈拉德靴
+itm_harad_leather_greaves|哈拉德皮胫甲
+itm_harad_scale_greaves|哈拉德鳞胫甲
+itm_harad_lamellar_greaves|哈拉德夹板胫甲
 itm_khand_inf_helm_a|侃德盔
 itm_khand_inf_helm_b|侃德盔
 itm_khand_inf_helm_c1|侃德钵盔

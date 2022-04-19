@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(Keine Beförderung während der Übergabe möglich
 ui_lance_control|Lanzenausrichtung:
 ui_manual_easy|Manuell (einfach)
 ui_manual_hard|Manuell (schwer)
-ui_campaign_ai|Kampagnenschwierigkeit (Standard: Normal):
+ui_campaign_ai|Kampagnen-KI (nicht verwendet):
 ui_crouch|Ducken
 
 # swy: added from this spreadsheet, as requested by our translators:
@@ -57,7 +57,7 @@ ui_crouch|Ducken
 ui_are_you_sure_you_want_to_import_the_character|Bist du sicher, dass du diesen Charakter importieren möchtest?
 ui_explanation_strength|Stärke: Jeder Punkt fügt +1 Trefferpunkte hinzu. Die folgenden Fertigkeiten können nicht über 1/3 des Stärkewerts entwickelt werden: Eisenhaut, Schlagkraft, Wurfkraft, Bogenzugkraft.
 ui_explanation_intelligence|Intelligenz: Jeder zusätzliche Intelligenzpunkt gewährt sofort einen zusätzlichen Fertigkeitspunkt. Die folgenden Fertigkeiten können nicht über 1/3 des Intelligenzswerts entwickelt werden: Ausbilder, Spurensuche, Taktik, Wegfindung, Aufklärung. Inventarverwaltung, Wundheilung, Chirurgie, Erste Hilfe.
-ui_explanation_charisma|Charisma: Jeder Punkt erhöht die maximale Truppengröße um +1. Die folgenden Fertigkeiten können nicht über 1/3 des Charismawerts entwickelt werden: Wildkunde, Gefangenaufsicht, Führerschaft, Handel.
+ui_explanation_charisma|Charisma: Verbessert dein Ansehen bei Personen und Fraktionen. Jeder Punkt erhöht die maximale Truppengröße um +1. Die folgenden Fertigkeiten können nicht über 1/3 des Charismawerts entwickelt werden: Wildkunde, Gefangenaufsicht, Führerschaft, Handel.
 ui_delivered_number_damage|%d Schaden zugefügt.
 ui_mission_losses_killed|getötet : 
 ui_party_losses|%s  : %d verwundet--- %d getötet von %d.

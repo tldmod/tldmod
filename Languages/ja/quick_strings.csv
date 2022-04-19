@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|TLD New FormAI
 qstr_Siege_AI:__|攻城戦AI:  
 qstr_Basic__better_perfor|標準(低負荷)
 qstr_Advanced|高度
+qstr_Campaign_diffculty:_|キャンペーン難易度:
+qstr_Hard|難しい
+qstr_Default|標準
+qstr_Easy|やさしい
 qstr_Town_NPCs_Always_Acc|メニューから拠点のNPCにアクセス:
 qstr_Cutscenes:__|カットシーン:
 qstr_Injuries_for_compani|コンパニオンの負傷:
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|観測術+{reg1}
 qstr__Scales_with_Wildcra|(効果はワイルドクラフトのスキルに比例)
 qstr_Strengthens_all_Hero|プレーヤーとすべてのコンパニオンを強化
 qstr_+2_to_First_Aid__Par|応急手当てスキル+2(パーティスキル)
+qstr_lead_more_Uruks|より多くのウルクを指揮可能
 qstr_+1_to_Power_Throw|豪投+1
 qstr_+1_to_Spotting|観測術+1
+qstr_+2_to_Weapon_Master|武器熟練スキル+2
+qstr_+2_to_First_Aid|応急手当てスキル+2
 qstr_Less_Dunnish_upkeep|褐色人の維持費が低下
 qstr_Less_Wargs_upkeep|ワーグ騎兵の維持費が低下
 qstr_Light_Armor|軽装鎧
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|幸いにも通りがかった地元の民が排水溝
 qstr_{s13}^^You_have_succ|{s13}^^潜入に成功しました。
 qstr_the_place|この拠点
 qstr_the_castle|この城
-qstr_the_Citadel|城塞
+qstr_the_Throne_Room|王の間
 qstr_the_Secret_Cave|秘密の洞窟
 qstr_Meduseld_the_Golden_|黄金館
 qstr_the_Lord_Halls|領主の大広間
 qstr_the_Leader_s_Cave|指揮官の洞窟
 qstr_the_Tower|塔
 qstr_the_tower_of_Orthanc|オルサンクの塔
-qstr_the_Throne_Room|王の間
 qstr_Beorn_s_Hall|ビヨルンの広間
 qstr_the_Hall|大広間
 qstr_the_Great_Chamber_of|スロールの朝見の間
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|まあ、これを読んでるのならうまくいっ
 qstr_You_just_got_windyfl|スチーム版はインストールが楽だよ！
 qstr_Merry|メリー
 qstr_Pippin|ピピン
+qstr_the_Citadel|城塞
 qstr_Minas_Tirith|ミナス・ティリス
 qstr_Steward_Denethor|執政デネソール
 qstr_the_Golden_Hall|黄金館

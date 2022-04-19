@@ -27,7 +27,7 @@ skl_tracking|Pelacakan
 skl_trainer|Pelatih
 skl_trainer_desc|Setiap hari. Setiap pahlawan yang mempunyai ketrampilan ini dapat menambah pengalaman anggota lain yang levelnya berada di bawah dia . Pengalaman dapat didapatkan sebagai berikut: {0,4,10,16,23,30,38,46,55,65,80}. (Skill Personal)
 skl_looting|Menjarah 
-skl_looting_desc|Skill ini meningkatkan jumlah rampasan yang didapat sebesar 10 %% tiap level skill.(Skill parti)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 ; skl_horse_archery|Mounted Archery
 skl_horse_archery_desc|Mengurangi penalti kerusakan dan akurasi untuk memanah dan melempar saat sedang menunggangi kuda. (Skill Personal)
 skl_riding|Menunggang

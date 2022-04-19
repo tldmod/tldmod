@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|TLD Nová FormaUI
 qstr_Siege_AI:__|Umělá inteligence při obléhání:
 qstr_Basic__better_perfor|Základní (lepší výkon)
 qstr_Advanced|Pokročilé
+; qstr_Campaign_diffculty:_|Campaign diffculty:  
+; qstr_Hard|Hard
+; qstr_Default|Default
+; qstr_Easy|Easy
 qstr_Town_NPCs_Always_Acc|Městské NPC vždy přístupné z Menu:
 qstr_Cutscenes:__|Cutscény:
 qstr_Injuries_for_compani|Zranění pro společníky:
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|+{reg1} k Pozorování
 qstr__Scales_with_Wildcra|(Ovlivňuje Zálesáctví)
 ; qstr_Strengthens_all_Hero|Strengthens all Heroes
 qstr_+2_to_First_Aid__Par|+2 k První pomoci (Skupina)
+; qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 k Síle vrhu
 qstr_+1_to_Spotting|+1 k Pozorování
+; qstr_+2_to_Weapon_Master|+2 to Weapon Master
+; qstr_+2_to_First_Aid|+2 to First Aid
 qstr_Less_Dunnish_upkeep|Menší údržba za Dunlandské
 qstr_Less_Wargs_upkeep|Menší údržba za Vrky
 qstr_Light_Armor|Lehké brnění
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|Naštěstí tě nějací kolemjdoucí našli ležet v 
 qstr_{s13}^^You_have_succ|{s13}^^Úspěšně jsi se vplížil dovnitř.
 qstr_the_place|město
 qstr_the_castle|hradu
-qstr_the_Citadel|Citadela
+qstr_the_Throne_Room|trůnního sálu
 qstr_the_Secret_Cave|tajné jeskyně
 qstr_Meduseld_the_Golden_|Meduseldu, Zlaté síňe
 qstr_the_Lord_Halls|Pánovy síně
 qstr_the_Leader_s_Cave|Vůdcovy jeskyně
 qstr_the_Tower|vež
 qstr_the_tower_of_Orthanc|veže Orthanc
-qstr_the_Throne_Room|trůnního sálu
 qstr_Beorn_s_Hall|Beornova síň
 qstr_the_Hall|síně
 qstr_the_Great_Chamber_of|Velké Thrórovy komnaty
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|No, tím že jsi tady a mluvíš na mně, musel jsi pr
 qstr_You_just_got_windyfl|Právě tě ozdobil vítr!
 qstr_Merry|Smíšek
 qstr_Pippin|Pipin
+qstr_the_Citadel|Citadela
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Správce Denethor
 qstr_the_Golden_Hall|Zlatá síň

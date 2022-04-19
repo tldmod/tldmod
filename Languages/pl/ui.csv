@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(Nie można ulepszać podczas przekazywania żołni
 ui_lance_control|Kontrola Lancy:
 ui_manual_easy|Ręczna (łatwa)
 ui_manual_hard|Ręczna (trudna)
-; ui_campaign_ai|Campaign Difficulty (Default: Average):
+ui_campaign_ai|AI kampanii (nieużywane w TLD):
 ui_crouch|Kucanie
 
 # swy: added from this spreadsheet, as requested by our translators:
@@ -57,7 +57,7 @@ ui_crouch|Kucanie
 ui_are_you_sure_you_want_to_import_the_character|Jesteś pewny, że chcesz zaimportować tę postać?
 ui_explanation_strength|Siła: Każdy punkt dodaje +1 do punktów życia. Następujące umiejętności nie mogą przekroczyć 1/3 siły: Żelazna Skóra, Potężny Cios, Potężny rzut, Siła naciągu.
 ui_explanation_intelligence|Inteligencja: Każdy punkt dodaje +1 do punktów umiejętności, oraz nieco zwiększa ilość otrzymywanego doświadczenia. Następujące umiejętności nie mogą przekroczyć 1/3 Inteligencji: Szkolenie, Tropienie, Taktyka, Znajomość Ścieżek, Spostrzeganie, Zarządzanie Ekwipunkiem, Leczenie Ran, Chirurgia, Pierwsza Pomoc.
-ui_explanation_charisma|Charyzma: Każdy punkt zwiększa limit posiadanych oddziałów o +1. Następujące umiejętności nie mogą przekroczyć 1/3 Charyzmy: Zarządzanie Więźniami, Przetrwanie w dziczy, Przywództwo, Handel
+ui_explanation_charisma|Charyzma: Poprawia twoje relacje z innymi osobami i frakcjami. Każdy punkt zwiększa limit towarzyszy o +1. Następujące umiejętności nie mogą przekroczyć 1/3 charyzmy: Zarządzanie więźniami, Wildcraft, Przywództwo, Targowanie.
 ui_delivered_number_damage|Zadano %d punktów obrazżeń.
 ui_mission_losses_killed|zabito:
 ui_party_losses|%s  : %d ogłuszonych --- %d zabitych z %d.
@@ -137,7 +137,7 @@ ui_hold_fire_e_|%s, Nie strzelać!
 ui_fire_at_will_e_|%s, Strzelać bez rozkazu!
 ui_hold_this_position_e_|%s, Utrzymać pozycję!
 ui_infantry|Piechota
-ui_archers|Łuczników
+ui_archers|Łucznicy
 ui_cavalry|Kawaleria
 ui_companions|Oddziały
 ui_everyone_hear_me|Wszyscy, słuchajcie mnie!

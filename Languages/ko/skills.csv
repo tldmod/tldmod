@@ -1,7 +1,7 @@
 skl_trade|거래 흥정
-skl_trade_desc|대장장이와 보급관이 더 협조적이 되며 더 나은 장비를 제공하게 됩니다. (부대 스킬)
+skl_trade_desc|대장장이와 보급관이 보다 협조적으로 대하며 더 나은 장비를 제공하게 됩니다. (부대 기술)
 skl_leadership|리더십
-skl_leadership_desc|매 포인트마다 지휘할 수 있는 최대 병력 수가 5 증가하고, 부대 사기가 증가하며 병력에 지급하는 임금이 5%%% 감소합니다. 지원자들이 더 강해지며 당신을 더 많이 따릅니다. (지도자 스킬)
+skl_leadership_desc|매 포인트마다 지휘할 수 있는 최대 병력 수가 5 증가하고, 부대 사기가 증가하며 병력에 지급하는 임금이 5%%% 감소합니다. 지원자들이 더 강해지며 당신을 더 많이 따릅니다. (지도자 기술)
 skl_prisoner_management|포로 수송
 skl_prisoner_management_desc|1포인트가 증가할 때 마다 포로의 수가 %d로 증가합니다.(리더 기술)
 skl_persuasion|서바이벌
@@ -27,7 +27,7 @@ skl_tracking_desc|추적이 더 정확해 집니다(부대 기술)
 skl_trainer|훈련교관
 skl_trainer_desc|매일 이 기술을 가진 각 영웅은 자신보다 레벨이 낮은 다른 구성원에게 일정의 경험치를 줍니다. 경험치는 {0,4,10,16,23,30,38,46,55,65,80}의 순으로 획득합니다(개인 기술)
 skl_looting|약탈
-skl_looting_desc|1 포인트가 오를 때 마다 습득할 수 있는 아이템의 양이10%% 증가합니다(부대 기술)
+skl_looting_desc|전투 후 획득하게 되는 전리품의 양과 질이 높아집니다. (부대 기술)
 skl_horse_archery|기마 궁술
 skl_horse_archery_desc|탑승 중 투척무기의 데미지와 정확도 감소를 줄여줍니다(개인 기술)
 skl_riding|승마

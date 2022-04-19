@@ -149,7 +149,7 @@ itm_arnor_sword_f|アルノールの短剣
 itm_riv_helm_a|裂け谷のコイフ
 itm_riv_helm_b|裂け谷弓兵の兜
 itm_riv_helm_c|裂け谷突撃兵の兜
-itm_riv_tiara|エルフロードのティアラ
+itm_tiara_reward|エルフロードのティアラ
 itm_riv_shield_a|裂け谷の盾
 itm_riv_shield_b|裂け谷の盾
 itm_riv_bas_sword|裂け谷のバスタードソード
@@ -545,9 +545,9 @@ itm_harad_shield_b|ハロンドールのバックラー
 itm_harad_shield_c|ハロンドールのバックラー
 itm_harad_yellow_shield|ハラドの盾
 itm_desert_boots|砂漠のブーツ
-itm_harad_leather_greaves|ハラドのすね当て
-itm_harad_scale_greaves|ハラドのブーツ
-itm_harad_lamellar_greaves|ハラドのブーツ
+itm_harad_leather_greaves|ハラドの革のすね当て
+itm_harad_scale_greaves|ハラドのスケイルブーツ
+itm_harad_lamellar_greaves|ハラドの鉄板を張ったすね当て
 itm_khand_inf_helm_a|ハンドの兜
 itm_khand_inf_helm_b|ハンドの兜
 itm_khand_inf_helm_c1|ハンドの笠形兜

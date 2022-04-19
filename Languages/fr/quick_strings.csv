@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|Nouvelles formations IA TLD
 qstr_Siege_AI:__|IA de siège :
 qstr_Basic__better_perfor|Basique (meilleure performance)
 qstr_Advanced|Avancée
+qstr_Campaign_diffculty:_|Difficulté de la campagne :  
+qstr_Hard|Difficile
+qstr_Default|Par défaut
+qstr_Easy|Facile
 qstr_Town_NPCs_Always_Acc|PNJ des villes toujours accessibles depuis les menus :
 qstr_Cutscenes:__|Cinématiques :
 qstr_Injuries_for_compani|Blessures pour compagnons :
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|+{reg1} en Repérage
 qstr__Scales_with_Wildcra|(augmente avec Vie Sauvage)
 qstr_Strengthens_all_Hero|Renforce tous les héros
 qstr_+2_to_First_Aid__Par|+2 à Premiers secours (Groupe)
+qstr_lead_more_Uruks|Diriger plus d'Uruks
 qstr_+1_to_Power_Throw|+1 en Puissance de tension
 qstr_+1_to_Spotting|+1 en Repérage
+qstr_+2_to_Weapon_Master|+2 en Maître d'armes
+qstr_+2_to_First_Aid|+2 en Premiers secours
 qstr_Less_Dunnish_upkeep|Coût d'entretien des hommes de la Dunlande réduit
 qstr_Less_Wargs_upkeep|Coût d'entretien des wargs réduit
 qstr_Light_Armor|Armure légère 
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|Par chance, quelques badaud locaux vous trouvent gisan
 qstr_{s13}^^You_have_succ|{s13}^^Vous vous êtes infiltré{/e} avec succès.
 qstr_the_place|l'endroit
 qstr_the_castle|au château
-qstr_the_Citadel|la citadelle 
+qstr_the_Throne_Room|la salle du trône
 qstr_the_Secret_Cave|la caverne secrète
 qstr_Meduseld_the_Golden_|Meduseld, le Château d'Or
 qstr_the_Lord_Halls|les grand-salles du seigneur
 qstr_the_Leader_s_Cave|la caverne du chef
 qstr_the_Tower|la tour
 qstr_the_tower_of_Orthanc|la tour d'Orthanc
-qstr_the_Throne_Room|la salle du trône
 qstr_Beorn_s_Hall|la grand-salle de Beorn
 qstr_the_Hall|la grand-salle
 qstr_the_Great_Chamber_of|la grand-salle de Thrór
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|Et bien, si tu es là et que tu me parles, tu dois avo
 qstr_You_just_got_windyfl|Tu viens d'être windyfloraté !
 qstr_Merry|Merry
 qstr_Pippin|Pippin
+qstr_the_Citadel|la citadelle 
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Intendant Denethor
 qstr_the_Golden_Hall|le Château d'Or

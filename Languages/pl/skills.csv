@@ -1,7 +1,7 @@
 skl_trade|Targowanie
 skl_trade_desc|Sprawia że kowale i mistrzowie dostawy lepiej współpracują i oferują lepszy ekwipunek. (Umiejętność oddziału)
 skl_leadership|Przywództwo
-skl_leadership_desc|Każdy punkt zwiększa maksymalną ilość jednostek w oddziale o 5, zwiększa morale i obniża ich koszt najmu oraz żołd o 5%%%%. Sprawia że do oddziału chce dołączyć więcej rekrutów i są oni dodatkowo silniejsi. (Umiejętność dowódcy)
+skl_leadership_desc|Każdy punkt zwiększa maksymalną ilość jednostek w oddziale o 5, zwiększa morale i obniża ich koszt najmu oraz żołd o 5%%. Sprawia że do oddziału chce dołączyć więcej rekrutów i są oni dodatkowo silniejsi. (Umiejętność dowódcy)
 skl_prisoner_management|Zarządzanie więźniami
 skl_prisoner_management_desc|Każdy poziom tej umiejętności zwiększa maksymalną ilość jeńców o %d. (Umiejętność dowódcy)
 skl_persuasion|Wildcraft
@@ -27,7 +27,7 @@ skl_tracking_desc|Ślady dają więcej  informacji. (Umiejętność oddziału)
 skl_trainer|Szkolenie
 skl_trainer_desc|Każdego dnia każdy bohater, który ma tę umiejętność, dodaje trochę doświadczenia wszystkim członkom oddziału mającym niższy poziom, niż on. Dodawane dośw.: {0,4,10,16,23,30,38,46,55,65,80}. (Umiejętność osobista)
 skl_looting|Plądrowanie
-skl_looting_desc|Każdy punkt tej umiejętności zwiększa łup z plądrowania o 10%%. (Umiejętność oddziału)
+skl_looting_desc|Zwiększa ilość i jakość przedmiotów otrzymanych po bitwach. (Umiejętność oddziału)
 skl_horse_archery|Łucznictwo konne
 skl_horse_archery_desc|Zmniejsza kary celności i zadawanych obrażeń w przypadku strzelania i rzucania z końskiego grzbietu. (Umiejętność osobista)
 skl_riding|Jeździectwo
@@ -35,7 +35,7 @@ skl_riding_desc|Pozwala na dosiadanie lepszych wierzchowców i zwiększa szybko�
 skl_athletics|Atletyka
 skl_athletics_desc|Zwiększa szybkość biegu. (Umiejętność osobista)
 skl_shield|Tarcza
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
+skl_shield_desc|Zmniejsza obrażenia otrzymane w tarczę (o 8%% na poziom umiejętności), przyspiesza używanie tarczy, zwiększa powierzchnię tarczy, zmniejsza niecelność przy używaniu tarczy z łukiem. (Umiejętność osobista)
 skl_weapon_master|Mistrzostwo w broniach
 skl_weapon_master_desc|Ułatwia szkolenie się i zwiększa limit biegłości w posługiwaniu się bronią. Limity to odpowiednio: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Umiejętność osobista)
 skl_power_draw|Potężny naciąg
@@ -45,4 +45,4 @@ skl_power_throw_desc|Każdy punkt w tej umiejętności zwiększa obrażenia zada
 skl_power_strike|Potężny cios
 skl_power_strike_desc|Każdy punkt w tej umiejętności zwiększa obrażenia zadawane przy walce wręcz o 8%%. (Umiejętność osobista)
 skl_ironflesh|Żelazne ciało
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)
+skl_ironflesh_desc|Każdy punkt do tej umiejętności dodaje +2 punkty życia oraz absorbuje małą ilość obrażeń. (Umiejętność osobista)

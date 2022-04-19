@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|Nuova FormIA TLD
 qstr_Siege_AI:__|IA Assedio:
 qstr_Basic__better_perfor|Base (migliori prestazioni)
 qstr_Advanced|Avanzato
+qstr_Campaign_diffculty:_|Difficoltà della Campagna:
+qstr_Hard|Difficile
+qstr_Default|Predefinita
+qstr_Easy|Facile
 qstr_Town_NPCs_Always_Acc|NPC delle città subito visibili nei menu:
 qstr_Cutscenes:__|Intermezzi:
 qstr_Injuries_for_compani|Ferite per i compagni:
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|+{reg1} in Avvistamento
 qstr__Scales_with_Wildcra|(Scaglie Mimetiche)
 qstr_Strengthens_all_Hero|Rafforza tutti gli Eroi
 qstr_+2_to_First_Aid__Par|+2 in Primo Soccorso (Compagnia)
+qstr_lead_more_Uruks|Comanda più Uruk
 qstr_+1_to_Power_Throw|+1 in Potenza di Lancio
 qstr_+1_to_Spotting|+1 in Avvistamento
+qstr_+2_to_Weapon_Master|+2 in Maestria nelle armi
+qstr_+2_to_First_Aid|+2 in Primo soccorso
 qstr_Less_Dunnish_upkeep|Minore gestione Dunlandiana
 qstr_Less_Wargs_upkeep|Minore gestione Wargs
 qstr_Light_Armor|Armatura Leggera
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|Fortunatamente alcuni passanti locali ti trovano mentr
 qstr_{s13}^^You_have_succ|Con successo sei entrato di nascosto in {s13}^^
 qstr_the_place|il luogo
 qstr_the_castle|il castello
-qstr_the_Citadel|La Cittadella
+qstr_the_Throne_Room|La Stanza del Trono
 qstr_the_Secret_Cave|La Caverna Segreta
 qstr_Meduseld_the_Golden_|Meduseld, il Palazzo d'Oro
 qstr_the_Lord_Halls|le Sale del Re
 qstr_the_Leader_s_Cave|La Caverna del Capo
 qstr_the_Tower|La Torre
 qstr_the_tower_of_Orthanc|La Torre di Orthanc
-qstr_the_Throne_Room|La Stanza del Trono
 qstr_Beorn_s_Hall|La Casa di Beorn
 qstr_the_Hall|la Sala del Re
 qstr_the_Great_Chamber_of|la Grande Sala di Thrór
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|Bene, se sei arrivato fin qui e mi stai parlando, allo
 qstr_You_just_got_windyfl|Sei appena stato windyflorato !
 qstr_Merry|Merry
 qstr_Pippin|Pipino
+qstr_the_Citadel|La Cittadella
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Denethor, il Sovrintendente
 qstr_the_Golden_Hall|il Palazzo d'Oro

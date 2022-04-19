@@ -27,7 +27,7 @@ skl_tracking_desc|从脚印和其它印迹中发现更多信息。(队伍技能)
 skl_trainer|教练
 skl_trainer_desc|每天每位有该项技能的英雄会增加经验值给其它级别较低的队伍成员。传授的经验值依次为：{0,4,10,16,23,30,38,46,55,65,80}。(个人技能)
 skl_looting|掠夺
-skl_looting_desc|每点提高获得战利品的数量10%%。(队伍技能)
+skl_looting_desc|提高胜利后战利品的数量和质量。（队伍技能）
 skl_horse_archery|骑射
 skl_horse_archery_desc|减少在马背上射箭与投掷的精度和伤害损失。(个人技能)
 skl_riding|骑术

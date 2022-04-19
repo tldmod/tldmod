@@ -27,7 +27,7 @@ skl_tracking_desc|Putokazi imaju vise detalja. (Grupni skil)
 skl_trainer|Trener
 skl_trainer_desc|Svakoga dana, svaki heroj sa ovim skilom dodaje iskustva za svakog vojnika ciji level je manji nego njegov. Iskustva po levelu idu: {0,4,10,16,23,30,38,46,55,65,80}. (Licni skil)
 skl_looting|Kradja ili zaplenjivanje
-skl_looting_desc|Ovaj skil poveca kolicinu ratnog plena ili ukradenih stvari za 10%%. (Grupni skil)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 skl_horse_archery|Streljastvo na Konju
 skl_horse_archery_desc|Povecaca snagu i preciznost strelicarstva i bacajucih oruzja kad ste na konju. (Licna vestina)
 skl_riding|Jahanje

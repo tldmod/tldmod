@@ -149,7 +149,7 @@ itm_arnor_sword_f|Arnoriai rövidkard
 itm_riv_helm_a|Völgyzugolyi főkötő
 itm_riv_helm_b|Völgyzugolyi íjászsisak
 itm_riv_helm_c|Völgyzugolyi gyalogsági sisak
-itm_riv_tiara|Tündeúri tiara
+itm_tiara_reward|Tündeúri tiara
 itm_riv_shield_a|Völgyzugolyi pajzs
 itm_riv_shield_b|Völgyzugolyi pajzs
 itm_riv_bas_sword|Völgyzugolyi fattyúkard
@@ -545,9 +545,9 @@ itm_harad_shield_b|Harondori tányérpajzs
 itm_harad_shield_c|Harondori tányérpajzs
 itm_harad_yellow_shield|Haradi pajzs
 itm_desert_boots|Sivatagi csizmák
-itm_harad_leather_greaves|Haradi lábszárvédő
-itm_harad_scale_greaves|Haradi csizmák
-itm_harad_lamellar_greaves|Haradi csizmák
+; itm_harad_leather_greaves|Harad Leather Greaves
+; itm_harad_scale_greaves|Harad Scale Greaves
+; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Khandi sisak
 itm_khand_inf_helm_b|Khandi sisak
 itm_khand_inf_helm_c1|Khandi tálsisak

@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|TLD 신형 맞춤 AI
 qstr_Siege_AI:__|공성 AI:
 qstr_Basic__better_perfor|기본 (향상된 행동)
 qstr_Advanced|진보된
+; qstr_Campaign_diffculty:_|Campaign diffculty:  
+; qstr_Hard|Hard
+; qstr_Default|Default
+; qstr_Easy|Easy
 qstr_Town_NPCs_Always_Acc|마을 NPC는 메뉴에서도 접근이 가능합니다: 
 qstr_Cutscenes:__|컷신: 
 qstr_Injuries_for_compani|동료들의 부상: 
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|탐지 +{reg1}
 qstr__Scales_with_Wildcra|(서바이벌에 따라 조정)
 qstr_Strengthens_all_Hero|모든 영웅 강화하기
 qstr_+2_to_First_Aid__Par|응급치료에 +2 (부대)
+; qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|던지는 힘에 +1
 qstr_+1_to_Spotting|탐지 +1
+; qstr_+2_to_Weapon_Master|+2 to Weapon Master
+; qstr_+2_to_First_Aid|+2 to First Aid
 qstr_Less_Dunnish_upkeep|던랜드인 유지비
 qstr_Less_Wargs_upkeep|와르그 유지비
 qstr_Light_Armor|경장갑
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|다행히 지나가던 동네 사람들이 도랑에 �
 qstr_{s13}^^You_have_succ|{s13}^^당신은 성공적으로 숨어들었다.
 qstr_the_place|그 장소에
 qstr_the_castle|그 성에
-qstr_the_Citadel|성채
+qstr_the_Throne_Room|왕좌의 방
 qstr_the_Secret_Cave|비밀 동굴
 qstr_Meduseld_the_Golden_|황금회랑 메두셀드
 qstr_the_Lord_Halls|군주의 회랑
 qstr_the_Leader_s_Cave|지도자의 동굴
 qstr_the_Tower|탑
 qstr_the_tower_of_Orthanc|오르상크의 탑
-qstr_the_Throne_Room|왕좌의 방
 qstr_Beorn_s_Hall|베오른의 회랑
 qstr_the_Hall|회랑
 qstr_the_Great_Chamber_of|스로르의 위대한 회랑
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|흠, 만약 나한테 그러는거라면, RTFM (Read T
 qstr_You_just_got_windyfl|당신 방금 바람맞았어!
 qstr_Merry|메리
 qstr_Pippin|피핀
+qstr_the_Citadel|성채
 qstr_Minas_Tirith|미나스 티리스
 qstr_Steward_Denethor|섭정 데네소르
 qstr_the_Golden_Hall|황금회랑

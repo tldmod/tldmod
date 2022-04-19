@@ -27,7 +27,7 @@ skl_tracking_desc|Jäljet antavat enemmän tietoa. (Seurueen taito)
 skl_trainer|Kouluttaja
 ; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Personal skill)
 skl_looting|Ryöstäminen
-; skl_looting_desc|This skill increases the amount of loot obtained by 10%% per skill level. (Party skill)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 skl_horse_archery|Ratsulta Jousiampuminen
 ; skl_horse_archery_desc|Reduces damage and accuracy penalties for archery and throwing when mounted. (Personal skill)
 skl_riding|Ratsastaminen

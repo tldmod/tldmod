@@ -149,7 +149,7 @@ itm_arnor_sword_f|Arnorský krátký meč
 itm_riv_helm_a|Rivendelská čepka
 itm_riv_helm_b|Rivendelská lučišnická helma
 itm_riv_helm_c|Rivendelská pěchotní helma
-itm_riv_tiara|Elfí Lord Tiara
+itm_tiara_reward|Elfí Lord Tiara
 itm_riv_shield_a|Rivendelský štít
 itm_riv_shield_b|Rivendelský štít
 itm_riv_bas_sword|Rivendelský meč bastard
@@ -545,9 +545,9 @@ itm_harad_shield_b|Harondorský štít
 itm_harad_shield_c|Harondorský štít
 itm_harad_yellow_shield|Haradský štít
 itm_desert_boots|Pouštní boty
-itm_harad_leather_greaves|Haradské naholeníky
-itm_harad_scale_greaves|Haradské boty
-itm_harad_lamellar_greaves|Haradské boty
+; itm_harad_leather_greaves|Harad Leather Greaves
+; itm_harad_scale_greaves|Harad Scale Greaves
+; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Khandská Helma
 itm_khand_inf_helm_b|Khandská Helma
 itm_khand_inf_helm_c1|Khandská helma

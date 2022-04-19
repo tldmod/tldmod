@@ -27,7 +27,7 @@ skl_tracking_desc|Sporen geven meer informatie. (groep's vaardigheid)
 skl_trainer|Trainer
 skl_trainer_desc|Elke dag voegt elke held met punten in deze vaardigheid ervaring toe aan leden in de groep die een lager level hebben dan de held/heldin zelf. Verkregen ervaring gaat als volgt: (0,4,10,16,23,30,38,46,55,65,80) (persoonlijke vaardigheid)
 skl_looting|Plundering
-skl_looting_desc|Deze vaardigheid vergroot de hoeveelheid verkregen buit met 10%% per vaardigheid's level.  (groep's vaardigheid)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 skl_horse_archery|Schieten vanaf paard
 skl_horse_archery_desc|Vermindert de aftrek aan schade en accuraatheid voor boogschieten en het gooien van voorwerpen als je op een paard zit. (persoonlijke vaardigheid)
 skl_riding|Bereiden

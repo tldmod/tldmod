@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|TLD新AI
 qstr_Siege_AI:__|攻城AI：
 qstr_Basic__better_perfor|基础（电脑性能更好）
 qstr_Advanced|高级
+qstr_Campaign_diffculty:_|战役难度：
+qstr_Hard|困难
+qstr_Default|默认
+qstr_Easy|简单
 qstr_Town_NPCs_Always_Acc|城镇NPC总是显示在菜单上：
 qstr_Cutscenes:__|过场动画: 
 qstr_Injuries_for_compani|同伴会受伤: 
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|侦查技能等级+{reg1}
 qstr__Scales_with_Wildcra|（规模与荒野求生技能等级相关）
 qstr_Strengthens_all_Hero|对队中全体英雄有效
 qstr_+2_to_First_Aid__Par|急救+2
+qstr_lead_more_Uruks|能够统御更多强兽人
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_+1_to_Spotting|侦查技能等级+1
+qstr_+2_to_Weapon_Master|武器掌握+2
+qstr_+2_to_First_Aid|急救+2
 qstr_Less_Dunnish_upkeep|缺乏丹尼斯维护
 qstr_Less_Wargs_upkeep|缺乏座狼维护
 qstr_Light_Armor|轻甲
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|很幸运的是，一些路过的镇民认出了倒在
 qstr_{s13}^^You_have_succ|{s13}^^你成功的潜入了。
 qstr_the_place|当地
 qstr_the_castle|城堡
-qstr_the_Citadel|城堡
+qstr_the_Throne_Room|王座室
 qstr_the_Secret_Cave|秘密洞穴
 qstr_Meduseld_the_Golden_|金殿
 qstr_the_Lord_Halls|国王大厅
 qstr_the_Leader_s_Cave|首领洞穴
 qstr_the_Tower|塔楼
 qstr_the_tower_of_Orthanc|奥桑克塔
-qstr_the_Throne_Room|王座室
 qstr_Beorn_s_Hall|比翁大厅
 qstr_the_Hall|大厅
 qstr_the_Great_Chamber_of|瑟瑞尔大殿
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|恩，如果你能在这里跟我说这话的话，这
 qstr_You_just_got_windyfl|你刚刚被风化了！
 qstr_Merry|梅里
 qstr_Pippin|皮平
+qstr_the_Citadel|城堡
 qstr_Minas_Tirith|米那斯提力斯
 qstr_Steward_Denethor|摄政王迪耐瑟二世
 qstr_the_Golden_Hall|金殿

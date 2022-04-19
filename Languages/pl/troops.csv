@@ -540,20 +540,20 @@ trp_c5_khand_kataphrakt|Variadzki Pancerny
 trp_c5_khand_kataphrakt_pl|Pancerni Variagów
 trp_c5_khand_lance_kataphrakt|Variadzki Lansjer
 trp_c5_khand_lance_kataphrakt_pl|Lansjerzy Variagów
-; trp_i4_khand_halberdier|Khand Glaiveman
-; trp_i4_khand_halberdier_pl|Khand Glaivemen
+trp_i4_khand_halberdier|Khandzki Halabardzista
+trp_i4_khand_halberdier_pl|Khandzki Halabardzista
 trp_i5_khand_halberd_master|Variadzki Mistrz Halabardy
 trp_i5_khand_halberd_master_pl|Variadzkich Mistrzów Halabardy
-; trp_i3_khand_pitfighter|Khand Pit Fighter
-; trp_i3_khand_pitfighter_pl|Khand Pit Fighters
-; trp_i4_khand_pit_champion|Khand Pit Champion
-; trp_i4_khand_pit_champion_pl|Khand Pit Champions
-; trp_i5_khand_pit_master|Variag Master of the Pits
-; trp_i5_khand_pit_master_pl|Variag Masters of the Pits
+trp_i3_khand_pitfighter|Khandzki Wojownik Areny
+trp_i3_khand_pitfighter_pl|Khandzcy Wojownicy Areny
+trp_i4_khand_pit_champion|Khandzki Bohater Areny
+trp_i4_khand_pit_champion_pl|Khandzcy Bohaterzy Areny
+trp_i5_khand_pit_master|Variagdzki Mistrz Aren
+trp_i5_khand_pit_master_pl|Variagdzcy Mistrzowie Aren
 trp_ac3_khand_skirmisher|Khandyjski Harcownik
 trp_ac3_khand_skirmisher_pl|Khandyjskich Harcowników
-; trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
-; trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
+trp_ac4_khand_vet_skirmisher|Khandzki Harcownik Weteran
+trp_ac4_khand_vet_skirmisher_pl|Khandzcy Harcownicy Weterani
 trp_ac5_khand_heavy_skirmisher|Elitarny Harcownik Variagów
 trp_ac5_khand_heavy_skirmisher_pl|Elitarnych Harcowników Variagów
 trp_i1_corsair_youth|Umbarski Żeglarz
@@ -1237,7 +1237,7 @@ trp_merchant_gundabad_nw_pl|obozowa skrytka
 trp_merchant_gundabad_ne|Zaopatrzeniowiec
 trp_merchant_gundabad_ne_pl|obozowa skrytka
 trp_merchant_troll_cave|Zaopatrzeniowiec
-; trp_merchant_troll_cave_pl|warg pit and supplies
+trp_merchant_troll_cave_pl|arena wargów i zaopatrzenie
 trp_merchant_beorn_v|Zaopatrzeniowiec
 trp_merchant_beorn_v_pl|stajnia i magazyn
 trp_merchant_orc_sentry|Zaopatrzeniowiec
@@ -1287,25 +1287,25 @@ trp_merchant_westemnet_pl|stajnia i magazyn
 trp_merchant_eastfold|Kwatermistrz
 trp_merchant_eastfold_pl|stajnia i magazyn
 trp_town_21_horse_merchant|Kwatermistrz
-; trp_town_21_horse_merchant_pl|pit and warehouse
+trp_town_21_horse_merchant_pl|arena i magazyn
 trp_merchant_morannon|Zaopatrzeniowiec
-; trp_merchant_morannon_pl|pit and warehouse
+trp_merchant_morannon_pl|arena i magazyn
 trp_merchant_mmorgul|Zaopatrzeniowiec
-; trp_merchant_mmorgul_pl|pit and warehouse
+trp_merchant_mmorgul_pl|arena i magazyn
 trp_town_24_horse_merchant|Zaopatrzeniowiec
-; trp_town_24_horse_merchant_pl|pit and warehouse
+trp_town_24_horse_merchant_pl|arena i magazyn
 trp_merchant_orc_patrol|Zaopatrzeniowiec
 trp_merchant_orc_patrol_pl|obozowa skrytka
 trp_merchant_isengard|Zaopatrzeniowiec
 trp_merchant_isengard_pl|obozowa skrytka
 trp_town_27_horse_merchant|Zaopatrzeniowiec
-; trp_town_27_horse_merchant_pl|warg pit and supplies
+trp_town_27_horse_merchant_pl|arena wargów i zaopatrzenie
 trp_merchant_uoutpost|Zaopatrzeniowiec
-; trp_merchant_uoutpost_pl|warg pit and supplies
+trp_merchant_uoutpost_pl|arena wargów i zaopatrzenie
 trp_merchant_uhcamp|Zaopatrzeniowiec
-; trp_merchant_uhcamp_pl|warg pit and supplies
+trp_merchant_uhcamp_pl|arena wargów i zaopatrzenie
 trp_merchant_urcamp|Zaopatrzeniowiec
-; trp_merchant_urcamp_pl|warg pit and supplies
+trp_merchant_urcamp_pl|arena wargów i zaopatrzenie
 trp_merchant_cgaladhon|Zaopatrzeniowiec
 trp_merchant_cgaladhon_pl|elfickie zasoby
 trp_merchant_cdolen|Zaopatrzeniowiec
@@ -1321,7 +1321,7 @@ trp_merchant_woodmen_pl|stajnia i magazyn
 trp_merchant_beorn|Zaopatrzeniowiec
 trp_merchant_beorn_pl|stajnia i magazyn
 trp_merchant_moria|Zaopatrzeniowiec
-; trp_merchant_moria_pl|warg pit and supplies
+trp_merchant_moria_pl|arena wargów i zaopatrzenie
 trp_merchant_dale|Zaopatrzeniowiec
 trp_merchant_dale_pl|stajnia i magazyn
 trp_merchant_esgaroth|Zaopatrzeniowiec
@@ -1349,7 +1349,7 @@ trp_merchant_gundabad_pl|obozowa skrytka
 trp_merchant_ironhill|Kwatermistrz
 trp_merchant_ironhill_pl|Krasnoludzkie zasoby
 trp_town_50_horse_merchant|Gobrip Yellowtooth
-; trp_town_50_horse_merchant_pl|warg pit and supplies
+trp_town_50_horse_merchant_pl|arena wargów i zaopatrzenie
 trp_merchant_calembel|Zaopatrzeniowiec
 trp_merchant_calembel_pl|stajnia i magazyn
 trp_elder_mtirith|Zarządca Tirith
@@ -1574,9 +1574,9 @@ trp_gundabad_healer|Lurgakh Trzy Oczny
 trp_mirkwood_healer|Corwiel Miękka-Ręka
 trp_hungry_uruk|Głodny Uruk
 trp_hungry_orc|Głodny Ork
-; trp_longing_lorien|Longing Elf
-; trp_longing_woodelf|Longing Elf
-; trp_longing_imladris|Longing Elf
+trp_longing_lorien|Stęskniony Elf
+trp_longing_woodelf|Stęskniony Elf
+trp_longing_imladris|Stęskniony Elf
 trp_i5_moria_deep_dweller|Przybysz z Głębi Morii
 trp_i5_moria_deep_dweller_pl|Przybysze z Głębi Morii
 trp_i5_moria_orc_chieftain|Wódz Orków z Morii

@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(병력을 이동시키는 도중에 병사를 승�
 ui_lance_control|랜스 컨트롤
 ui_manual_easy|메뉴얼(쉬움)
 ui_manual_hard|메뉴얼(어려움)
-ui_campaign_ai|캠페인 난이도 (기본 설정: 보통):
+; ui_campaign_ai|Campaign AI (Unused in TLD):
 ui_crouch|웅크리기
 
 # swy: added from this spreadsheet, as requested by our translators:
@@ -57,7 +57,7 @@ ui_crouch|웅크리기
 ui_are_you_sure_you_want_to_import_the_character|당신은 캐릭터를 가져오기를 원합니까?
 ui_explanation_strength|힘 : 포인트 마다 +1의 체력을 얻습니다. 다음 기술은 힘의 1/3을 초과할수 없습니다: 강철피부, 타격하는 힘, 당기는 힘
 ui_explanation_intelligence|민첩: 각 포인트마다 무기 숙련도를 5 포인트 늘릴수 있으며 무기 속도가 0.5% 상승합니다. 다음과 같은 스킬은 민첩 스킬의 1/3 이상 올릴수가 없습니다. 무기 마스터, 방패, 운동, 승마, 승마궁술, 약탈.\n지능: 각 포인트마다 스킬 포인트를 1 얻습니다. 특정 상황에서 얻는 경험치가 증가합니다. 다음과 같은 스킬은 민첩 수치의 1/3 이상 투자할 수 없습니다. 훈련 교관. 추적. 길 찾기. 탐지. 소지품 관리 부상 치료. 외과 수술. 그리고 응급 처치.
-ui_explanation_charisma|카리스마: 각 포인트마다 당신의 부대 크기가 +1 증가합니다. 다음과 같은 스킬은 카리스마 수치의 1/3 이상 투자할 수 없습니다. 포로 수송. 서바이벌. 리더십. 거래 흥정.
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|%d 만큼의 피해를 주었습니다.
 ui_mission_losses_killed|죽였다 :
 ui_party_losses|%s  : %d 부상 --- %d의 손에 %d가 죽었습니다.

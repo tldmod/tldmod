@@ -27,7 +27,7 @@ skl_tracking_desc|Theo dõi trở nên nhiều thông tin hơn. (Kỹ năng nhó
 skl_trainer|Huấn luyện viên
 skl_trainer_desc|Mỗi ngày, mỗi anh hùng có kỹ năng này sẽ thêm một số kinh nghiệm cho mọi thành viên khác trong nhóm có cấp độ thấp hơn anh/cô ấy. Kinh nghiệm nhận được là: {0,4,10,16,23,30,38,46,55,65,80}. (Kỹ năng cá nhân)
 skl_looting|Cướp phá
-skl_looting_desc|Kỹ năng này tăng số lượng chiến lợi phẩm thu được lên 10%% cho mỗi cấp kỹ năng. (Kỹ năng nhóm)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 skl_horse_archery|Bắn cung
 skl_horse_archery_desc|Giảm sát thương và hình phạt chính xác cho bắn cung và ném khi được gắn. (Kỹ năng cá nhân)
 skl_riding|Cưỡi ngựa

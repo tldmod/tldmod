@@ -149,7 +149,7 @@ itm_arnor_sword_f|Arnosrký krátky meč
 itm_riv_helm_a|Roklinská čiapka
 itm_riv_helm_b|Roklinský lukostrelecká helma
 itm_riv_helm_c|Roklinská pechotná helma
-itm_riv_tiara|Elfská lordská čelenka
+itm_tiara_reward|Elfská lordská čelenka
 itm_riv_shield_a|Štít Roklinky
 itm_riv_shield_b|Štít Roklinky
 itm_riv_bas_sword|Roklinský meč Bastard
@@ -545,9 +545,9 @@ itm_harad_shield_b|Harondorský drobný štít
 itm_harad_shield_c|Harondorský drobný štít
 itm_harad_yellow_shield|Haradský štít
 itm_desert_boots|Dezertérske topánky
-itm_harad_leather_greaves|Haradské holenice
-itm_harad_scale_greaves|Haradské topánky
-itm_harad_lamellar_greaves|Haradské topánky
+; itm_harad_leather_greaves|Harad Leather Greaves
+; itm_harad_scale_greaves|Harad Scale Greaves
+; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Khandská helma
 itm_khand_inf_helm_b|Khandská helma
 itm_khand_inf_helm_c1|Khandská misová prilba

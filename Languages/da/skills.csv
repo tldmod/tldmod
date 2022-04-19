@@ -27,7 +27,7 @@ skl_tracking_desc|Spor bliver mere informative. (Hold færdighed)
 skl_trainer|Træner
 skl_trainer_desc|Hver dag, hver helt med denne færdighed tilføjer erfaring til alle andre medlemmer af holdet hvis niveau er lavere end hans/hendes. Erfaring givet forløber således:{0,4,10,16,23,30,38,46,55,65,80}. (Personlig færdighed)
 skl_looting|Plyndring
-skl_looting_desc|Denne færdighed forhøjer mængden af krigsbytte opnået med 10%% per færdigheds niveau. (Hold færdighed)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 skl_horse_archery|Ridende Bueskydning
 skl_horse_archery_desc|Reducer skade og nøjagtigheds straf for bueskydning og kastning nåd du rider. (Personlig færdighed)
 skl_riding|Ridning

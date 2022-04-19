@@ -149,7 +149,7 @@ itm_arnor_sword_f|Kurzschwert aus Arnor
 itm_riv_helm_a|Kettenhaube aus Bruchtal
 itm_riv_helm_b|Schützenhelm aus Bruchtal
 itm_riv_helm_c|Soldatenhelm aus Bruchtal
-itm_riv_tiara|Elbischer Stirnreif
+itm_tiara_reward|Elbischer Stirnreif
 itm_riv_shield_a|Schild aus Bruchtal
 itm_riv_shield_b|Schild aus Bruchtal
 itm_riv_bas_sword|Bastardschwert aus Bruchtal
@@ -545,9 +545,9 @@ itm_harad_shield_b|Faustschild aus Harad
 itm_harad_shield_c|Faustschild aus Harondor
 itm_harad_yellow_shield|Schild aus Harad
 itm_desert_boots|Wüstenstiefel
-itm_harad_leather_greaves|Beinschienen aus Harad
-itm_harad_scale_greaves|Stiefel aus Harad
-itm_harad_lamellar_greaves|Stiefel aus Harad
+itm_harad_leather_greaves|Lederbeinschienen aus Harad
+itm_harad_scale_greaves|Beinschienen aus Harad
+itm_harad_lamellar_greaves|Beinschienen aus Harad
 itm_khand_inf_helm_a|Helm aus Khand
 itm_khand_inf_helm_b|Helm aus Khand
 itm_khand_inf_helm_c1|Rundhelm aus Khand

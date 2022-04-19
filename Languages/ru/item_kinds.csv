@@ -149,7 +149,7 @@ itm_arnor_sword_f|Арнорский короткий меч
 itm_riv_helm_a|Ривендельский койф
 itm_riv_helm_b|Ривендельский шлем лучника
 itm_riv_helm_c|Ривендельский шлем пехотинца
-itm_riv_tiara|Тиара эльфийского правителя
+itm_tiara_reward|Тиара эльфийского правителя
 itm_riv_shield_a|Ривендельский щит
 itm_riv_shield_b|Ривендельский щит
 itm_riv_bas_sword|Ривендельский меч-полутораручник
@@ -292,12 +292,12 @@ itm_orc_tribal_c|Необработанная кожа
 itm_evil_gauntlets_a|Чёрные перчатки
 itm_evil_gauntlets_b|Чёрные латные перчатки
 itm_free_isen_orc_armor_a|Изенгардская орочья броня
-; itm_isen_orc_light_a|Isengard Orc Light Harness
-; itm_isen_orc_light_b|Isengard Orc Light Harness
-; itm_isen_orc_pad_a|Isengard Orc Light Segmented Armor
-; itm_isen_orc_pad_b|Isengard Orc Medium Segmented Armor
-; itm_isen_orc_mail_a|Isengard Orc Mail
-; itm_isen_orc_mail_b|Isengard Orc Heavy Segmented Armor
+itm_isen_orc_light_a|Изенгардская орочья легкая упряжка
+itm_isen_orc_light_b|Изенгардская орочья легкая упряжка
+itm_isen_orc_pad_a|Изенгардская легкая пластинчатая броня
+itm_isen_orc_pad_b|Изенгардская средняя пластинчатая броня
+itm_isen_orc_mail_a|Изенгардская орочья кольчуга
+itm_isen_orc_mail_b|Изенгардская тяжелая пластинчатая броня
 itm_isen_uruk_light_a|Урук-хайская лёгкая броня
 itm_isen_uruk_light_b|Урук-хайская боевая упряжь
 itm_isen_uruk_light_c|Урук-хайская упряжь берсерка
@@ -312,7 +312,7 @@ itm_uruk_tracker_boots|Урукские сапоги следопыта
 itm_uruk_greaves|Урукские поножи
 itm_uruk_chain_greaves|Урукские кольчужные поножи
 itm_uruk_ragwrap|Урукские рваные обмотки
-; itm_isen_orc_helm_a|Isengard Orc Helm
+itm_isen_orc_helm_a|Изенгардский орочий шлем
 itm_isen_uruk_helm_a|Урук-хайский шлем
 itm_isen_uruk_helm_d|Урук-хайский шлем полководца
 itm_isen_uruk_helm_e|Урук-хайский шлем следопыта
@@ -514,12 +514,12 @@ itm_harad_scale|Харадская чешуйчатая броня
 itm_harad_tiger_scale|Тигриная броня стражи
 itm_harad_lion_scale|Львиная броня стражи
 itm_harad_dragon_helm|Шлем-килока
-; itm_harad_cav_helm_a|Harondor Light Helm
-; itm_harad_cav_helm_b|Harondor Light Helm
+itm_harad_cav_helm_a|Харондорский Легкий Шлем
+itm_harad_cav_helm_b|Харондорский Легкий Шлем
 itm_black_snake_helm|Шлем-маранка
-; itm_harad_finhelm|Harad Heavy Footman Helmet
-; itm_harad_heavy_inf_helm|Harad Footman Helmet
-; itm_harad_wavy_helm|Harad Conical Helmet
+itm_harad_finhelm|Харадский Шлем Тяжелого Пехотинца
+itm_harad_heavy_inf_helm|Харадский Шлем Пехотинца
+itm_harad_wavy_helm|Харадский конический шлем
 itm_harad_eaglehelm|Шлем Орлиной гвардии
 itm_lion_helm|Шлем Львиной гвардии
 itm_harad_pantherhelm|Шлем Гвардии пантеры
@@ -545,9 +545,9 @@ itm_harad_shield_b|Харондорский баклер
 itm_harad_shield_c|Харондорский баклер
 itm_harad_yellow_shield|Харадский щит
 itm_desert_boots|Пустынные сапоги
-itm_harad_leather_greaves|Харадские поножи
-itm_harad_scale_greaves|Харадские сапоги
-itm_harad_lamellar_greaves|Харадские сапоги
+itm_harad_leather_greaves|Харадские кожаные поножи
+itm_harad_scale_greaves|Харадские чешуйчатые поножи
+itm_harad_lamellar_greaves|Харадские кольчатые поножи
 itm_khand_inf_helm_a|Хандский шлем
 itm_khand_inf_helm_b|Хандский шлем
 itm_khand_inf_helm_c1|Хандский шлем-чаша
@@ -573,7 +573,7 @@ itm_khand_throwing_axe|Хандский метательный топор
 itm_khand_rammace|Хандская "баранья" булава
 itm_khand_pitsword|Меч поединщика
 itm_khand_tulwar|Хандский тальвар
-; itm_khand_2h_tulwar|Khand Great Tulwar
+itm_khand_2h_tulwar|Кхандская великая сабля
 itm_khand_lance|Хандское кавалерийское копьё
 itm_easterling_round_horseman|Истерлингский круглый щит
 itm_variag_gladiator_shield|Истерлингский щит
@@ -727,7 +727,7 @@ itm_rohan_lance_banner_sun|Роханское копьё со знаменем �
 itm_rohan_lance_banner_horse|Роханское копьё со знаменем коня
 itm_ent_water|Странная чаша с водой
 itm_map|Карты Средиземья
-; itm_athelas_reward|Dried Athelas Leaves
+itm_athelas_reward|Сушеные листья Ателаса
 itm_phial_reward|Светоч Галадриэли
 itm_scroll_reward|О падении Гондолина
 itm_hammer_reward|Кузнечный молот
@@ -772,7 +772,7 @@ itm_dale_armor_reward|Дэйльская Кольчуга Дружинника
 itm_leather_gloves_reward|Перчатки Лучника
 itm_beorn_shield_reward|Медвежий Щит
 itm_beorn_axe_reward|Медвежья Палица
-; itm_drums_of_the_deep|Drums of the Deep
+itm_drums_of_the_deep|Барабаны Бездны
 itm_khamul_helm|Шлем Хамула
 itm_black_arrows_reward|Черные Стрелы
 itm_leather_boots_reward|Охотничьи Сапоги

@@ -27,7 +27,7 @@ skl_tracking_desc|Se obtiene más información sobre los rastros. (Habilidad de 
 skl_trainer|Instrucción
 skl_trainer_desc|Cada héroe con esta habilidad añade diariamente algo de experiencia a todos los miembros de su grupo cuyo nivel sea menor que el suyo. La experiencia se gana así: {0,4,10,16,23,30,38,46,55,65,80}. (Habilidad personal)
 skl_looting|Saqueo
-skl_looting_desc|Esta habilidad incrementa la cantidad de botín obtenida en un 10%% por nivel de habilidad. (Habilidad de grupo)
+skl_looting_desc|Aumenta la cantidad y calidad del botín después de las batallas (Habilidad de grupo).
 skl_horse_archery|Arquería montada
 skl_horse_archery_desc|Reduce la penalización de daño y puntería al utilizar arcos y armas arrojadizas desde la montura. (Habilidad personal)
 skl_riding|Cabalgar

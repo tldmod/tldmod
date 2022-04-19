@@ -27,7 +27,7 @@ skl_tracking_desc|Stopy budú poskytovať viac informácií. (Schopnosť družin
 skl_trainer|Cvičiteľ
 skl_trainer_desc|Každý deň pridá každý hrdina s touto schopnosťou všetkým z tvojej družiny, ktorých úroveň je nižšia než jeho/jej, skúsenosti. Hodnota získaných schopností je:\n {0,4,10,16,23,30,38,46,55,65,80}. (Osobná schopnosť)
 skl_looting|Koristenie
-skl_looting_desc|Táto schopnosť zvyšuje počet získanej koristi o 10%% za každú úroveň tejto schopnosti. (Schopnosť Družiny)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 skl_horse_archery|Streľba v sedle
 skl_horse_archery_desc|Redukuje zníženia poškodenia a nepresnosti pre strelbu a hádzanie v sedle. (Osobná schopnosť)
 skl_riding|Jazdenie

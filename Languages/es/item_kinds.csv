@@ -149,7 +149,7 @@ itm_arnor_sword_f|Espada Corta de Arnor
 itm_riv_helm_a|Cofia de Rivendel
 itm_riv_helm_b|Casco de Arquero de Rivendel
 itm_riv_helm_c|Casco de Infantería de Rivendel
-itm_riv_tiara|Tiara de Señor Elfo
+itm_tiara_reward|Tiara de Señor Elfo
 itm_riv_shield_a|Escudo de Rivendel
 itm_riv_shield_b|Escudo de Rivendel
 itm_riv_bas_sword|Espada Bastarda de Rivendel
@@ -545,9 +545,9 @@ itm_harad_shield_b|Rodela de Harondor
 itm_harad_shield_c|Rodela de Harondor
 itm_harad_yellow_shield|Escudo de Harad
 itm_desert_boots|Botas del Desierto
-itm_harad_leather_greaves|Grebas de Harad
-itm_harad_scale_greaves|Botas de Harad
-itm_harad_lamellar_greaves|Botas de Harad
+itm_harad_leather_greaves|Grebas de Cuero de Harad
+itm_harad_scale_greaves|Grebas de Escamas de Harad
+itm_harad_lamellar_greaves|Grebas de Láminas de Harad
 itm_khand_inf_helm_a|Yelmo de Khand
 itm_khand_inf_helm_b|Yelmo de Khand
 itm_khand_inf_helm_c1|Yelmo de Tazón de Khand

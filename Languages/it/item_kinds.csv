@@ -149,7 +149,7 @@ itm_arnor_sword_f|Spada corta di Arnor
 itm_riv_helm_a|Calotta di Cuoio di Gran Burrone
 itm_riv_helm_b|Elmo da arciere di Gran Burrone
 itm_riv_helm_c|Elmo da fante di Gran Burrone
-itm_riv_tiara|Tiara da Elfo nobile
+itm_tiara_reward|Tiara da Elfo nobile
 itm_riv_shield_a|Scudo di Gran Burrone
 itm_riv_shield_b|Scudo di Gran Burrone
 itm_riv_bas_sword|Spada bastarda di Gran Burrone
@@ -545,9 +545,9 @@ itm_harad_shield_b|Brocchiero dell'Harondor
 itm_harad_shield_c|Brocchiero dell'Harondor
 itm_harad_yellow_shield|Scudo Haradrim
 itm_desert_boots|Stivali da Deserto
-itm_harad_leather_greaves|Gambali Haradrim
-itm_harad_scale_greaves|Stivali Haradrim
-itm_harad_lamellar_greaves|Stivali Haradrim
+itm_harad_leather_greaves|Stinchiere in Pelle di Harad
+itm_harad_scale_greaves|Stinchiere a Scaglie di Harad
+itm_harad_lamellar_greaves|Stinchiere Steccate di Harad
 itm_khand_inf_helm_a|Elmo del Khand
 itm_khand_inf_helm_b|Elmo del Khand
 itm_khand_inf_helm_c1|Elmo a Scodella di Khand

@@ -149,7 +149,7 @@ itm_arnor_sword_f|Épée courte arnorienne
 itm_riv_helm_a|Coiffe de Fendeval
 itm_riv_helm_b|Casque d'archer de Fendeval
 itm_riv_helm_c|Casque d'infanterie de Fendeval
-itm_riv_tiara|Tiare de seigneur elfe
+itm_tiara_reward|Tiare de seigneur elfe
 itm_riv_shield_a|Bouclier de Fendeval
 itm_riv_shield_b|Bouclier de Fendeval
 itm_riv_bas_sword|Épée bâtarde de Fendeval
@@ -505,12 +505,12 @@ itm_harad_padded|Armure matelassée du Harondor
 itm_harad_hauberk|Haubert du Harondor
 itm_harad_lamellar|Armure harasjala
 itm_harad_heavy|Armure de noble haradrim
-itm_harad_skirmisher|Costume léger haradhrim
-itm_harad_archer|Armure d'archer haradhrim
+itm_harad_skirmisher|Costume léger haradrim
+itm_harad_archer|Armure d'archer haradrim
 itm_black_snake_armor|Armure maranka
 itm_harad_champion|Costume du Harad Lointain
 itm_panther_guard|Peau de panthère
-itm_harad_scale|Armure d'écailles haradhrim
+itm_harad_scale|Armure d'écailles haradrim
 itm_harad_tiger_scale|Armure de garde du Tigre
 itm_harad_lion_scale|Armure de garde du Lion
 itm_harad_dragon_helm|Casque kiloka
@@ -523,10 +523,10 @@ itm_harad_wavy_helm|Casque conique du Harad
 itm_harad_eaglehelm|Casque de garde de l'Aigle
 itm_lion_helm|Casque de garde du Lion
 itm_harad_pantherhelm|Capuchon de la garde de la Panthère
-itm_harad_khopesh|Khopesh haradhrim
-itm_black_snake_sword|Fauchon lourd haradhrim
-itm_harad_heavy_sword|Épée lourde haradhrim
-itm_horandor_a|Cimeterre haradhrim
+itm_harad_khopesh|Khopesh haradrim
+itm_black_snake_sword|Fauchon lourd haradrim
+itm_harad_heavy_sword|Épée lourde haradrim
+itm_horandor_a|Cimeterre haradrim
 itm_skirmisher_sword|Épée de tirailleur du Harad
 itm_harad_sabre|Sabre du Harad
 itm_harad_mace|Masse du Harad Lointain
@@ -545,9 +545,9 @@ itm_harad_shield_b|Rondache du Harondor
 itm_harad_shield_c|Rondache du Harondor
 itm_harad_yellow_shield|Bouclier du Harad
 itm_desert_boots|Bottes du désert
-itm_harad_leather_greaves|Jambières du Harad
-itm_harad_scale_greaves|Bottes du Harad
-itm_harad_lamellar_greaves|Bottes du Harad
+itm_harad_leather_greaves|Jambières en cuir du Harad
+itm_harad_scale_greaves|Jambières écaillées du Harad
+itm_harad_lamellar_greaves|Jambières renforcées du Harad
 itm_khand_inf_helm_a|Casque de Khand
 itm_khand_inf_helm_b|Casque de Khand
 itm_khand_inf_helm_c1|Casque boule de Khand

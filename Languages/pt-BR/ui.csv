@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(Não é possível melhorar enquanto estiver entreg
 ui_lance_control|Controle da Lança:
 ui_manual_easy|Manual (Fácil)
 ui_manual_hard|Manual (Difícil)
-; ui_campaign_ai|Campaign Difficulty (Default: Average):
+; ui_campaign_ai|Campaign AI (Unused in TLD):
 ui_crouch|Agachar
 
 # swy: added from this spreadsheet, as requested by our translators:
@@ -57,7 +57,7 @@ ui_crouch|Agachar
 ui_are_you_sure_you_want_to_import_the_character|Você tem certeza que deseja importar o personagem?
 ui_explanation_strength|Força: Cada ponto lhe concede +1 Pontos de Vida. As seguintes habilidades não podem ser desenvolvidas além de 1/3 de Força: Pele de Ferro, Poder de Ataque, Poder de Arremesso, Poder de Puxada.
 ui_explanation_intelligence|Inteligência: Cada ponto em Inteligência imediatamente lhe concede um ponto extra de habilidade, e levemente aumenta o ganho de XP em algumas ocasiões. As seguintes habilidades não podem ser desenvolvidas além de 1/3 de Inteligência: Treinador, Rastreamento, Táticas, Cria-trilhas, Observação, Gestão de Inventário, Tratar de Feridas, Cirurgia, e Primeiros Socorros.
-ui_explanation_charisma|Carisma: Cada ponto aumenta o limite do seu exército em +1.  As seguintes habilidades não podem ser desenvolvidas além de 1/3 do Carisma: Gestão de Prisioneiros,  Sobrevivência na Natureza, Liderança, Barganhador. 
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Causou %d de dano.
 ui_mission_losses_killed|Matou :
 ui_party_losses|%s : %d feridos. --- %d mortos de%d . 

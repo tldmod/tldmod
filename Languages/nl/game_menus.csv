@@ -168,7 +168,7 @@ mno_camp_drink_water|Drink het Ent Water!
 mno_camp_drink_orc_brew|Geef de Ork Brouw door!
 ; mno_camp_drink_miruvor|Pass around the Miruvor!
 ; mno_camp_use_athelas|Use Athelas for wound treatment.
-; mno_camp_use_drums|Beat the Drums of the Deep.
+mno_camp_use_drums|Sla op de Trommels van het Diepe
 mno_camp_action_4|Terug.
 menu_assasins_attack_player_won|Je hebt de moordenaars succesvol afgeslagen van {s2}, gestuurd door {s3}. 
 menu_assasins_attack_player_retreat|Je bent levend ontsnapt!
@@ -310,7 +310,7 @@ mno_speak_with_elder|Spreek met de {s6}.
 mno_isengard_underground|Ga naar de ondergrondse grotten.
 mno_isengard_underground_door|Ga naar de ondergrondse grotten
 mno_tirith_toplevel|Klim naar het hoogste niveau.
-; mno_tirith_toplevel_door|Go to the Citadel
+mno_tirith_toplevel_door|Ga naar de Citadel
 mno_erebor_gates|Bezoek de Grote Poorten.
 mno_town_leave|Ga weg...
 mno_town_leave_door|Verlaat het gebied

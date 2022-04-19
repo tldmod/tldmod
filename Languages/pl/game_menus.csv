@@ -166,9 +166,9 @@ mno_strat_tweaks_back|Wróć do menu ulepszeń.
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
 mno_camp_drink_water|Wypić Wodę Entów!
 mno_camp_drink_orc_brew|Podaj trunek warzony przez orków!
-; mno_camp_drink_miruvor|Pass around the Miruvor!
-; mno_camp_use_athelas|Use Athelas for wound treatment.
-; mno_camp_use_drums|Beat the Drums of the Deep.
+mno_camp_drink_miruvor|Przejdź dookoła Miruvoru!
+mno_camp_use_athelas|Użyj Athelasu do leczenia ran.
+mno_camp_use_drums|Bicie Bębnów z Głębin
 mno_camp_action_4|Wróć.
 menu_assasins_attack_player_won|Udało ci się pokonać zabójców {s2}, których nasłał {s3}.
 menu_assasins_attack_player_retreat|Uciekasz zachowując życie!
@@ -310,7 +310,7 @@ mno_speak_with_elder|Rozmawiaj z miejscowymi władzami.
 mno_isengard_underground|Udaj się do podziemnych jaskini.
 mno_isengard_underground_door|Wejdź do podziemnych jaskiń
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
-; mno_tirith_toplevel_door|Go to the Citadel
+mno_tirith_toplevel_door|Idź do Cytadeli
 mno_erebor_gates|Odwiedź Wielką Bramę
 mno_town_leave|Odejdź...
 mno_town_leave_door|Wyjdź
@@ -443,15 +443,15 @@ menu_animal_ambush|Ty i twoi kompani oddzieliliście się od reszty drużyny, ki
 menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy przeciwnicy leżą na ziemi - ranni, lub martwi. {s3}
 menu_animal_ambush_fail|Zwierzęta zaatakowały ciebie {reg0?,: i twojego kompana {reg2?s,:,}} ale na szczęście udało ci się je odgonić. Miejmy nadzieję że nie zaatakują cie ponownie.
 menu_build_your_scene|Możesz zrobić swoją własną scenę bitwy, używając jednego ze slotów udzielonych poniżej oraz trybu edycji gry (musisz włączyć tryb edycji w oknie włączania gry. Najpierw przejdź do opcji, potem wciśnij Ctrl+E wewnątrz sceny żeby mieć dostęp do trybu edycji). Możesz oddawać sceny które stworzyłeś (mianowicie, pliki sco z folderu TLD/SceneObj) do teamu deweloperskiego moda TLD, a jeśli twoja scena jest dobra, może pojawić się w przyszłych update'ach jako jedna w battlegroundsach^^ Spróbuj sprecyzować na którym regionie mapy chciałbyś aby twoja scena się pojawiła.^ Kilka podpowiedzi: unikaj głębokiej wody, stromych gór i innych nieprzekraczalnych miejsc, chyba że jesteś doświadczonym twórcą scenek i wiesz jak powstrzymać jednostki kontrolowane przez AI od pójścia tam gdzie ich nie chcesz, i stworzyć poprawkę do AI w innych miejscach.^\n(Wejścia #0-1 są dla atakujących, #4 dla broniących, nie używaj #5-8
-mno_scene1|Równina Duża
-mno_scene2|Równina Średnia
-mno_scene3|Równina Mała
-mno_scene4|Step Duży
-mno_scene5|Step Średni
-mno_scene6|Step Mały
-mno_scene7|Las Duży
-mno_scene8|Las Średni
-mno_scene9|Las Mały
+mno_scene1|Równina Duża (file scn custom 1.sco)
+mno_scene2|Równina Średnia (file scn custom 2.sco)
+mno_scene3|Równina Mała (file scn custom 3.sco)
+mno_scene4|Step Duży (file scn custom 4.sco)
+mno_scene5|Step Średni (file scn custom 5.sco)
+mno_scene6|Step Mały (file scn custom 6.sco)
+mno_scene7|Las Duży (file scn custom 7.sco)
+mno_scene8|Las Średni (file scn custom 8.sco)
+mno_scene9|Las Mały (file scn custom 9.sco)
 mno_back_3dot|Wróć...
 mno_back|Wróć.
 mno_next|Następnie...

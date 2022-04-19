@@ -149,7 +149,7 @@ itm_arnor_sword_f|Арнорський короткий меч
 itm_riv_helm_a|Рівенділський коїф
 itm_riv_helm_b|Рівенділський шолом лучника
 itm_riv_helm_c|Рівенділський шолом піхотинця
-itm_riv_tiara|Тіара ельфійського правителя
+itm_tiara_reward|Тіара ельфійського правителя
 itm_riv_shield_a|Рівенділський щит
 itm_riv_shield_b|Рівенділський щит
 itm_riv_bas_sword|Рівенділський меч-бастард
@@ -545,9 +545,9 @@ itm_harad_shield_b|Харондорський баклер
 itm_harad_shield_c|Харондорський баклер
 itm_harad_yellow_shield|Харадський щит
 itm_desert_boots|Пустельні чоботи
-itm_harad_leather_greaves|Харадські поножі
-itm_harad_scale_greaves|Харадські черевики
-itm_harad_lamellar_greaves|Харадські черевики
+; itm_harad_leather_greaves|Harad Leather Greaves
+; itm_harad_scale_greaves|Harad Scale Greaves
+; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Кхандський шолом
 itm_khand_inf_helm_b|Кхандський шолом
 itm_khand_inf_helm_c1|Кхандський шолом у вигляді чаші

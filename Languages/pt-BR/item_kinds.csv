@@ -149,7 +149,7 @@ itm_arnor_sword_f|Espada Curta de Arnor
 itm_riv_helm_a|Touca de Valfenda
 itm_riv_helm_b|Elmo de Arqueiro de Valfenda
 itm_riv_helm_c|Elmo de Infantaria de Valfenda
-itm_riv_tiara|Tiara de Senhor Elfo
+itm_tiara_reward|Tiara de Senhor Elfo
 itm_riv_shield_a|Escudo de Valfenda
 itm_riv_shield_b|Escudo de Valfenda 
 itm_riv_bas_sword|Espada Bastarda de Valfenda
@@ -545,9 +545,9 @@ itm_harad_shield_b|Broquel de Harondor
 itm_harad_shield_c|Broquel de Harondor
 itm_harad_yellow_shield|Escudo de Harad
 itm_desert_boots|Botas de Deserto
-itm_harad_leather_greaves|Perneiras de Harad
-itm_harad_scale_greaves|Botas de Harad
-itm_harad_lamellar_greaves|Botas de Harad
+; itm_harad_leather_greaves|Harad Leather Greaves
+; itm_harad_scale_greaves|Harad Scale Greaves
+; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Elmo de Khand
 itm_khand_inf_helm_b|Elmo de Khand
 itm_khand_inf_helm_c1|Elmo Tigela de Khand

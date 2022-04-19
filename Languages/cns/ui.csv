@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(交出士兵时无法晋升)
 ui_lance_control|骑枪控制
 ui_manual_easy|手动（简单）
 ui_manual_hard|手动（困难）
-ui_campaign_ai|战役AI（默认为“一般”）：
+ui_campaign_ai|战役AI（TLD未启用）：
 ui_crouch|蹲下
 
 # swy: added from this spreadsheet, as requested by our translators:
@@ -57,7 +57,7 @@ ui_crouch|蹲下
 ui_are_you_sure_you_want_to_import_the_character|确定导入这个角色？
 ui_explanation_strength|力量：每点生命值加+1。 下列技能不能超过力量的1/3：铁骨，强击，投掷，强弓。
 ui_explanation_intelligence|智力：每一点会额外增加一个技能点，并且在某些情况下会稍微增加获得的经验。 以下技能不能超过智力的1/3：教练，跟踪，战术，寻路，侦察，物资管理，治疗，手术，急救。
-ui_explanation_charisma|魅力：每一点都会使您的队伍人数上限加1。 以下技能不能超过个人魅力的1/3：俘虏管理，野生动物（Wildcraft），统御，交易。
+ui_explanation_charisma|魅力：帮助提高你与派系势力的关系。每点增加队伍上限1人。下列技能技能不能超过魅力属性的1/3：荒野求生、俘虏管理、统御和交易。
 ui_delivered_number_damage|造成了 %d 点伤害。
 ui_mission_losses_killed|被杀：
 ui_party_losses|%s：%d 负伤——%d 死亡 %d 。

@@ -144,12 +144,12 @@ itm_arnor_greaves|Arnorskie Nagolenniki
 itm_arnor_shield_a|Arnorska Tarcza
 itm_arnor_shield_c|Arnorska Tarcza Kawaleryjska
 itm_arnor_sword_a|Arnorski Miecz Półtoraręczny
-; itm_arnor_sword_c|Arnor War Sword
+itm_arnor_sword_c|Wojenny Miecz Arnoru
 itm_arnor_sword_f|Arnorski Krótki Miecz
 itm_riv_helm_a|Czepiec z Rivendell
 itm_riv_helm_b|Hełm Łucznika z Rivendell
 itm_riv_helm_c|Hełm Piechura z Rivendell
-itm_riv_tiara|Tiara Elfiego Pana
+itm_tiara_reward|Tiara Elfiego Pana
 itm_riv_shield_a|Tarcza z Rivendell
 itm_riv_shield_b|Tarcza z Rivendell
 itm_riv_bas_sword|Miecz Półtoraręczny z Rivendell
@@ -260,14 +260,14 @@ itm_gondor_short_sword|Linhirski Eket
 itm_pelargir_eket|Eket z Pelargiru
 itm_pelargir_sword|Miecz z Pelargiru
 itm_gondor_ranger_sword|Gondorski Miecz Zwiadowcy
-; itm_gondor_2h_sword|Gondor War Sword
+itm_gondor_2h_sword|Wojenny Miecz Gondoru
 itm_gondor_citadel_sword|Gondorski Miecz z Cytadeli
 itm_gondor_cav_sword|Gondorski Miecz Kawaleryjski
 itm_gondor_spear|Gondorska Włócznia
 itm_gondor_tower_spear|Gondorska Włócznia z Cytadeli
 itm_gondor_lance|Gondorska lanca
-; itm_loss_axe|Gondor Fighting Axe
-; itm_loss_war_axe|Gondor War Axe
+itm_loss_axe|Topór Bojowy Gondoru
+itm_loss_war_axe|Topór Wojenny Gondoru
 itm_lorien_sword_a|Długi Miecz z Lorien
 itm_lorien_sword_b|Krótki Miecz z Lorien
 itm_lorien_sword_c|Wojenny Miecz z Lorien
@@ -292,27 +292,27 @@ itm_orc_tribal_c|Niegarbowana Skóra
 itm_evil_gauntlets_a|Czarne Rękawice
 itm_evil_gauntlets_b|Czarne Naramienniki
 itm_free_isen_orc_armor_a|Isengardzka Zbroja Orka
-; itm_isen_orc_light_a|Isengard Orc Light Harness
-; itm_isen_orc_light_b|Isengard Orc Light Harness
-; itm_isen_orc_pad_a|Isengard Orc Light Segmented Armor
-; itm_isen_orc_pad_b|Isengard Orc Medium Segmented Armor
-; itm_isen_orc_mail_a|Isengard Orc Mail
-; itm_isen_orc_mail_b|Isengard Orc Heavy Segmented Armor
+itm_isen_orc_light_a|Orkowa Lekka Uprząż Isengardu
+itm_isen_orc_light_b|Orkowa Lekka Uprząż Isengardu
+itm_isen_orc_pad_a|Orkowy Lekki Płytowy Pancerz Isengardu
+itm_isen_orc_pad_b|Orkowy Średni Pancerz Płytowy Isengardu
+itm_isen_orc_mail_a|Orkowa Kolczuga Isengardu
+itm_isen_orc_mail_b|Ciężki Pancerz Płytowy Uruk-hai Isengardu
 itm_isen_uruk_light_a|Lekka Zbroja Uruk-hai
-; itm_isen_uruk_light_b|Uruk-hai Fighting Harness
-; itm_isen_uruk_light_c|Uruk-hai Berserker Harness
-; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
-; itm_isen_uruk_med_b|Uruk-hai Mail
-; itm_isen_uruk_heavy_a|Uruk-hai Medium Segmented Armour
-; itm_isen_uruk_heavy_b|Uruk-hai Heavy Mail
-; itm_isen_uruk_heavy_c|Uruk-hai Full Segmented Armour
+itm_isen_uruk_light_b|Uprząż Bojowa Uruk-hai
+itm_isen_uruk_light_c|Uprząż Berserkera Uruk-hai
+itm_isen_uruk_med_a|Lekki Płytowy Pancerz Uruk-hai
+itm_isen_uruk_med_b|Kolczuga Uruk-hai
+itm_isen_uruk_heavy_a|Średni Pancerz Płytowy Uruk-hai
+itm_isen_uruk_heavy_b|Ciężka Kolczuga Uruk-hai
+itm_isen_uruk_heavy_c|Ciężki Płytowy Pancerz Uruk-hai
 itm_isen_uruk_heavy_d|Skórznia Tropiciela Uruk-hai
 itm_isen_uruk_heavy_e|Zbroja Tropiciela Uruk-hai
 itm_uruk_tracker_boots|Buty Tropiciela Uruk-hai
 itm_uruk_greaves|Nagolenniki Uruk-hai
 itm_uruk_chain_greaves|Kolcze Nogawice Uruk-hai
 itm_uruk_ragwrap|Łachmany Uruk-hai
-; itm_isen_orc_helm_a|Isengard Orc Helm
+itm_isen_orc_helm_a|Orkowy Hełm Isengardu
 itm_isen_uruk_helm_a|Hełm Uruk-hai
 itm_isen_uruk_helm_d|Hełm Wodza Uruk-hai
 itm_isen_uruk_helm_e|Hełm Tropiciela Uruk-hai
@@ -514,12 +514,12 @@ itm_harad_scale|Haradzka Zbroja Łuskowa
 itm_harad_tiger_scale|Zbroja Gwardii Tygrysa
 itm_harad_lion_scale|Zbroja Gwardii Lwa
 itm_harad_dragon_helm|Heóm Kiloka
-; itm_harad_cav_helm_a|Harondor Light Helm
-; itm_harad_cav_helm_b|Harondor Light Helm
+itm_harad_cav_helm_a|Lekki Hełm Harondoru
+itm_harad_cav_helm_b|Lekki Hełm Harondoru
 itm_black_snake_helm|Hełm Maranka
-; itm_harad_finhelm|Harad Heavy Footman Helmet
-; itm_harad_heavy_inf_helm|Harad Footman Helmet
-; itm_harad_wavy_helm|Harad Conical Helmet
+itm_harad_finhelm|Ciężki Hełm Piechoty Haradu
+itm_harad_heavy_inf_helm|Hełm Piechoty Haradu
+itm_harad_wavy_helm|Stożkowy Hełm Haradu
 itm_harad_eaglehelm|Hełm Gwardii Orła
 itm_lion_helm|Hełm Gwardii Lwa
 itm_harad_pantherhelm|Czapa Gwardii Pantery
@@ -545,9 +545,9 @@ itm_harad_shield_b|Puklerz z Harondor
 itm_harad_shield_c|Puklerz z Harondor
 itm_harad_yellow_shield|Haradzka Tarcza
 itm_desert_boots|Pustynne Buty
-itm_harad_leather_greaves|Haradzkie Nagolenniki
-itm_harad_scale_greaves|Haradzkie Buty
-itm_harad_lamellar_greaves|Haradzkie Buty
+itm_harad_leather_greaves|Skórzane Nagolenniki Haradu
+itm_harad_scale_greaves|Łuskowe Nagolenniki Haradu
+itm_harad_lamellar_greaves|Usztywniające Nagolenniki Haradu
 itm_khand_inf_helm_a|Hełm z Khandu
 itm_khand_inf_helm_b|Hełm z Khandu
 itm_khand_inf_helm_c1|Kulisty Hełm z Khandu
@@ -573,7 +573,7 @@ itm_khand_throwing_axe|Topór Rzucany z Khandu
 itm_khand_rammace|Miażdżyczerep z Khandu
 itm_khand_pitsword|Miecz Gladiatora z Khandu
 itm_khand_tulwar|Talwar z Khandu
-; itm_khand_2h_tulwar|Khand Great Tulwar
+itm_khand_2h_tulwar|Wielki Tulwar Khandu
 itm_khand_lance|Lanca z Khandu
 itm_easterling_round_horseman|Okrągła Tarcza Easterlingów
 itm_variag_gladiator_shield|Puklerz Easterlingów
@@ -727,7 +727,7 @@ itm_rohan_lance_banner_sun|Lanca z Chorągwią Rohanu
 itm_rohan_lance_banner_horse|Lanca z Chorągwią Rohanu
 itm_ent_water|Dziwna Misa z Wodą
 itm_map|Mapy Śródziemia
-; itm_athelas_reward|Dried Athelas Leaves
+itm_athelas_reward|Wysuszone Liści Athelasu
 itm_phial_reward|Światło Galadrieli
 itm_scroll_reward|O Zagładzie Gondolinu
 itm_hammer_reward|Młot Kowala
@@ -772,7 +772,7 @@ itm_dale_armor_reward|Szlachecka Kolczuga z Dale
 itm_leather_gloves_reward|Rękawice Łucznika
 itm_beorn_shield_reward|Boerinska Tarcza
 itm_beorn_axe_reward|Niedźwiedzia Pałka
-; itm_drums_of_the_deep|Drums of the Deep
+itm_drums_of_the_deep|Bębny z Głębin
 itm_khamul_helm|Hełm Khamula
 itm_black_arrows_reward|Czarne Strzały
 itm_leather_boots_reward|Buty Łowcy

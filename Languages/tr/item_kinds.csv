@@ -149,7 +149,7 @@ itm_arnor_sword_f|Arnor Kısa Kılıç
 itm_riv_helm_a|Ayrıkvadi Takkesi
 itm_riv_helm_b|Ayrıkvadi Okçu Migferi
 itm_riv_helm_c|Ayrıkvadi Piyade Migferi
-itm_riv_tiara|Elf Lord Taçı
+itm_tiara_reward|Elf Lord Taçı
 itm_riv_shield_a|Ayrıkvadi Kalkanı
 itm_riv_shield_b|Ayrıkvadi Kalkanı
 itm_riv_bas_sword|Ayrıkvadi Piç Kılıcı
@@ -545,9 +545,9 @@ itm_harad_shield_b|Harondor Küçük Kalkanı
 itm_harad_shield_c|Harondor Küçük Kalkanı
 itm_harad_yellow_shield|Harad Kalkanı
 itm_desert_boots|Çöl botu
-itm_harad_leather_greaves|Harad Baldır Zırhı
-itm_harad_scale_greaves|Harad Çizmesi
-itm_harad_lamellar_greaves|Harad Çimesi
+itm_harad_leather_greaves|Harad Deri Çizmeler
+itm_harad_scale_greaves|Harad Pullu Çizmeler
+; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Khand Migferi
 itm_khand_inf_helm_b|Khand Migferi
 itm_khand_inf_helm_c1|Khand Kase Migfer

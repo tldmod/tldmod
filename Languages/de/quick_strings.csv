@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|Neue Formations-KI
 qstr_Siege_AI:__|KI in Belagerungen:
 qstr_Basic__better_perfor|Reduziert (bessere Leistung)
 qstr_Advanced|Erweitert
+qstr_Campaign_diffculty:_|Kampagnen-Schwierigkeit:
+qstr_Hard|Schwer
+qstr_Default|Standard
+qstr_Easy|Einfach
 qstr_Town_NPCs_Always_Acc|NPCs in Städten sind immer vom Menü aus erreichbar:
 qstr_Cutscenes:__|Zwischensequenzen:
 qstr_Injuries_for_compani|Verletzungen für deine Gefährten:
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|+{reg1} Aufklärung
 qstr__Scales_with_Wildcra|(Verstärkt durch Wildkunde)
 qstr_Strengthens_all_Hero|Verstärkt alle Helden
 qstr_+2_to_First_Aid__Par|+2 Erste Hilfe (Trupp)
+qstr_lead_more_Uruks|Führe mehr Uruks an
 qstr_+1_to_Power_Throw|+1 Wurfkraft
 qstr_+1_to_Spotting|+1 Aufklärung
+qstr_+2_to_Weapon_Master|+2 Waffenmeister
+qstr_+2_to_First_Aid|+2 Erste Hilfe
 qstr_Less_Dunnish_upkeep|Weniger Unterhalt für Dunländer
 qstr_Less_Wargs_upkeep|Weniger Unterhalt für Warge
 qstr_Light_Armor|Leichte Rüstung
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|Glücklicherweise kommen einige Städter des Weges, se
 qstr_{s13}^^You_have_succ|{s13}^^Du bist erfolgreich hineingeschlichen.
 qstr_the_place|die Örtlichkeit
 qstr_the_castle|die Feste
-qstr_the_Citadel|zur Zitadelle
+qstr_the_Throne_Room|zum Thronsaal
 qstr_the_Secret_Cave|zur Geheimen Höhle
 qstr_Meduseld_the_Golden_|zum Meduseld, der Goldenen Halle
 qstr_the_Lord_Halls|zu den Herrenhallen
 qstr_the_Leader_s_Cave|zur Höhle des Befehlshabers
 qstr_the_Tower|zum Turm
 qstr_the_tower_of_Orthanc|zum Turm von Orthanc
-qstr_the_Throne_Room|zum Thronsaal
 qstr_Beorn_s_Hall|Beorns Halle
 qstr_the_Hall|zur Halle
 qstr_the_Great_Chamber_of|die Große Halle von Thrór
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've R
 qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
+qstr_the_Citadel|zur Zitadelle
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Truchsess Denethor
 qstr_the_Golden_Hall|der Goldenen Halle

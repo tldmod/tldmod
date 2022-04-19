@@ -149,7 +149,7 @@ itm_arnor_sword_f|아르노르 숏소드
 itm_riv_helm_a|리븐델 두건
 itm_riv_helm_b|리븐델 궁병 투구
 itm_riv_helm_c|리븐델 보병 투구
-itm_riv_tiara|요정 군주 왕관
+itm_tiara_reward|요정 군주 왕관
 itm_riv_shield_a|리븐델 방패
 itm_riv_shield_b|리븐델 방패
 itm_riv_bas_sword|리븐델 바스타드 소드
@@ -545,9 +545,9 @@ itm_harad_shield_b|하론도르 버클러
 itm_harad_shield_c|하론도르 버클러
 itm_harad_yellow_shield|하라드 방패
 itm_desert_boots|사막 부츠
-itm_harad_leather_greaves|하라드 정강이 보호대
-itm_harad_scale_greaves|하라드 부츠
-itm_harad_lamellar_greaves|하라드 부츠
+; itm_harad_leather_greaves|Harad Leather Greaves
+; itm_harad_scale_greaves|Harad Scale Greaves
+; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|칸드 투구
 itm_khand_inf_helm_b|칸드 투구
 itm_khand_inf_helm_c1|칸드 둥근 투구

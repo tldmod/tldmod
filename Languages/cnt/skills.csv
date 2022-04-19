@@ -1,11 +1,11 @@
 skl_trade|議價
-skl_trade_desc|能夠更好地與鐵匠和補給官合作，使他們提供更好的裝備。（隊伍技能）
+skl_trade_desc|能夠更好地與鐵匠和補給官合作，使他們提供更好的裝備。(隊伍技能)
 skl_leadership|統御
-skl_leadership_desc|每點增加隊伍人數上限 5，提高隊伍士氣並減少隊伍工資5%%。同時讓更多更優秀的志願者願意跟隨你。（領袖技能）
+skl_leadership_desc|每點增加隊伍人數上限 5，提高隊伍士氣並減少隊伍工資5%%。同時讓更多更優秀的志願者願意跟隨你。(領袖技能)
 skl_prisoner_management|俘虜管理
-skl_prisoner_management_desc|每點增加俘虜上限%d。 (領袖技能) 
+skl_prisoner_management_desc|每點增加俘虜上限%d。(領袖技能)
 skl_persuasion|綠野仙蹤
-skl_persuasion_desc|在荒野中生存並將其轉為助力的能力。這個技能影響隊伍在樹林中躲避敵人的能力和移動速度。 (隊伍技能) 
+skl_persuasion_desc|在荒野中生存並將其轉為助力的能力。這個技能影響隊伍在樹林中躲避敵人的能力和移動速度。 (隊伍技能)
 skl_engineer|-----
 skl_engineer_desc|-----
 skl_first_aid|急救
@@ -23,11 +23,11 @@ skl_pathfinding_desc|每點增加隊伍地圖移動速度3%%。 (隊伍技能)
 skl_tactics|戰術
 skl_tactics_desc|每2點增加1點戰鬥優勢。 (隊伍技能) 
 skl_tracking|跟踪
-skl_tracking_desc|從腳印和其它印跡中發現更多的信息。 (隊伍技能) 
+skl_tracking_desc|從足跡中能發現更多的信息。 (隊伍技能) 
 skl_trainer|教練
 skl_trainer_desc|每天每位有該項技能的英雄會給其它比他/她等級低的隊伍成員傳授經驗值。經驗值依次為： {0，4，10，16，23，30，38，46，55，65，80}。 (個人技能) 
 skl_looting|掠奪
-skl_looting_desc|每點提高獲得戰利品的數量10%%。 (隊伍技能) 
+skl_looting_desc|提高戰鬥之後得到戰利品的數量和品質。(隊伍技能)
 skl_horse_archery|騎射
 skl_horse_archery_desc|減少在馬背上射箭與投擲的精度和傷害減益。 (個人技能) 
 skl_riding|騎術

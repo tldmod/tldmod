@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|TLD新陣型AI
 qstr_Siege_AI:__|攻城AI：
 qstr_Basic__better_perfor|基本(效能更好)
 qstr_Advanced|進階
+qstr_Campaign_diffculty:_|戰役難度：
+qstr_Hard|困難
+qstr_Default|預設
+qstr_Easy|簡單
 qstr_Town_NPCs_Always_Acc|可從選單訪問城鎮NPC：
 qstr_Cutscenes:__|過場動畫：
 qstr_Injuries_for_compani|同伴會受傷：
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|偵察+{reg1}
 qstr__Scales_with_Wildcra|(依野外求生的等級而定)
 qstr_Strengthens_all_Hero|強化所有英雄
 qstr_+2_to_First_Aid__Par|(隊伍)急救+2
+qstr_lead_more_Uruks|領導更多強獸人
 qstr_+1_to_Power_Throw|強擲+1
 qstr_+1_to_Spotting|偵察+1
+qstr_+2_to_Weapon_Master|武器掌握+2
+qstr_+2_to_First_Aid|急救+2
 qstr_Less_Dunnish_upkeep|減少登丹人的工資
 qstr_Less_Wargs_upkeep|減少座狼的工資
 qstr_Light_Armor|輕型鎧甲
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|幸運的是一些路過的當地人發現了倒在水
 qstr_{s13}^^You_have_succ|{s13}^^你成功的潛入了。
 qstr_the_place|當地
 qstr_the_castle|城堡
-qstr_the_Citadel|堡壘
+qstr_the_Throne_Room|王座大廳
 qstr_the_Secret_Cave|秘密洞穴
 qstr_Meduseld_the_Golden_|金之大殿，美杜塞爾德
 qstr_the_Lord_Halls|領主大殿
 qstr_the_Leader_s_Cave|首領的洞穴
 qstr_the_Tower|塔
 qstr_the_tower_of_Orthanc|奧桑克塔
-qstr_the_Throne_Room|王座大廳
 qstr_Beorn_s_Hall|比翁大殿
 qstr_the_Hall|大殿
 qstr_the_Great_Chamber_of|索爾之間
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|嗯，如果你能在這裡跟我說話，代表你已
 qstr_You_just_got_windyfl|你剛剛被風化了！
 qstr_Merry|梅里
 qstr_Pippin|皮聘
+qstr_the_Citadel|堡壘
 qstr_Minas_Tirith|米那斯提力斯
 qstr_Steward_Denethor|攝政王迪耐瑟二世
 qstr_the_Golden_Hall|金之大殿

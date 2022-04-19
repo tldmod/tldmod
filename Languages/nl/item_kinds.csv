@@ -149,7 +149,7 @@ itm_arnor_sword_f|Arnor Kort Zwaard
 itm_riv_helm_a|Rivendell Huif
 itm_riv_helm_b|Rivendell Boogschutters Helm
 itm_riv_helm_c|Rivendell Infanterie Helm
-itm_riv_tiara|Elf Heer Diadeem
+itm_tiara_reward|Elf Heer Diadeem
 itm_riv_shield_a|Rivendell Schild
 itm_riv_shield_b|Rivendell Schild
 itm_riv_bas_sword|Rivendell Bastaard Zwaard
@@ -545,9 +545,9 @@ itm_harad_shield_a|Harondor Schild
 ; itm_harad_shield_c|Harondor Buckler
 itm_harad_yellow_shield|Harad Schild
 itm_desert_boots|Woestijnlaarzen
-; itm_harad_leather_greaves|Harad Greaves
-itm_harad_scale_greaves|Harad Laarzen
-itm_harad_lamellar_greaves|Harad Laarze
+; itm_harad_leather_greaves|Harad Leather Greaves
+; itm_harad_scale_greaves|Harad Scale Greaves
+; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Khand Helm
 itm_khand_inf_helm_b|Khand Helm
 ; itm_khand_inf_helm_c1|Khand Bowl Helm

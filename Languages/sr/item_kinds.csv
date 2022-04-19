@@ -149,7 +149,7 @@ itm_arnor_sword_f|Arnorski Kratki Mač
 itm_riv_helm_a|Rivendalska Kapa
 itm_riv_helm_b|Kaciga Rivendalskog Strelca
 itm_riv_helm_c|Kaciga Rivendalskog Pešadinca
-itm_riv_tiara|Tijara Vilenjačkog Lorda
+itm_tiara_reward|Tijara Vilenjačkog Lorda
 itm_riv_shield_a|Rivendalski Štit
 itm_riv_shield_b|Rivendalski Štit
 itm_riv_bas_sword|Rivendelski longsword
@@ -545,9 +545,9 @@ itm_harad_shield_b|Harondor Mali Stit
 itm_harad_shield_c|Harondor Mali Stit
 itm_harad_yellow_shield|Haradski Stit
 itm_desert_boots|Pustinjska Obuca
-itm_harad_leather_greaves|Haradske Oklopne Cizme
-itm_harad_scale_greaves|Haradske Cizme
-itm_harad_lamellar_greaves|Haradske Cizme
+; itm_harad_leather_greaves|Harad Leather Greaves
+; itm_harad_scale_greaves|Harad Scale Greaves
+; itm_harad_lamellar_greaves|Harad Splinted Greaves
 ; itm_khand_inf_helm_a|Khand Helm
 ; itm_khand_inf_helm_b|Khand Helm
 ; itm_khand_inf_helm_c1|Khand Bowl Helm
@@ -785,7 +785,7 @@ itm_harad_lamellar_greaves|Haradske Cizme
 ; itm_feet_chains_dwarf|Feet Chains
 ; itm_spider|Spider
 ; itm_bear|Bear
-; itm_wolf|Wolf
+itm_wolf|Wolf
 ; itm_werewolf|Werewolf
 ; itm_thrush_reward|Thrush
 ; itm_gauntlets_reward|Iron Fists

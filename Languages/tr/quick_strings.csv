@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|TLD Yeni FormAİ
 qstr_Siege_AI:__|Kuşatma Yapay Zekası:
 qstr_Basic__better_perfor|Temel ( Daha iyi Performans)
 qstr_Advanced|Gelişmiş
+qstr_Campaign_diffculty:_|Sefer zorlugu:
+qstr_Hard|Zor
+qstr_Default|Varsayılan
+qstr_Easy|Kolay
 qstr_Town_NPCs_Always_Acc|Şehir NPC'leri Her zaman menüden erişilebilsin:
 qstr_Cutscenes:__|Ara sahneler:
 qstr_Injuries_for_compani|Yoldaşlar için Yaralanma:
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|Gözlemcilik +{reg1} 
 qstr__Scales_with_Wildcra|(Yaban-Ustalıgı ile degişir)
 qstr_Strengthens_all_Hero|Bütün Kahramanları güçlendirir
 qstr_+2_to_First_Aid__Par|İlk Yardıma +2 (Grup)
+qstr_lead_more_Uruks|Daha fazla uruk yönet
 qstr_+1_to_Power_Throw|Güçlü Fırlatmaya +1
 qstr_+1_to_Spotting|Gözlemcilik +1
+qstr_+2_to_Weapon_Master|+2 Silah ustası
+qstr_+2_to_First_Aid|+2 ilk Yardım
 qstr_Less_Dunnish_upkeep|Dunnishlere daha az bakım
 qstr_Less_Wargs_upkeep|Warglara daha az bakım
 qstr_Light_Armor|Hafif Zırh
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|Neyse ki, geçen yerliler sizi hendekte yatarken buldu
 qstr_{s13}^^You_have_succ|{s13}^^Başarıyla sızdın.
 qstr_the_place|yer
 qstr_the_castle|kale
-qstr_the_Citadel|Hisar
+qstr_the_Throne_Room|Taht Odası
 qstr_the_Secret_Cave|Gizli Magara
 qstr_Meduseld_the_Golden_|Meduseld, Altın Salon
 qstr_the_Lord_Halls|Lord Salonları
 qstr_the_Leader_s_Cave|Lider'in Magarası
 qstr_the_Tower|Kule
 qstr_the_tower_of_Orthanc|Orthanc Kulesi
-qstr_the_Throne_Room|Taht Odası
 qstr_Beorn_s_Hall|Beorn'un Konagı
 qstr_the_Hall|Salon
 qstr_the_Great_Chamber_of|Thrór'un Yüce Salonu
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|Eh, burada ve benimle konuşuyorsan, RTFM'yi başarıy
 qstr_You_just_got_windyfl|Sadece  fazla endişelisin!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
+qstr_the_Citadel|Hisar
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Vekilharç Denethor
 qstr_the_Golden_Hall|Altın Konak

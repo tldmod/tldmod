@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|TLD Novo Formato de IA
 ; qstr_Siege_AI:__|Siege AI:  
 ; qstr_Basic__better_perfor|Basic (better performance)
 ; qstr_Advanced|Advanced
+; qstr_Campaign_diffculty:_|Campaign diffculty:  
+; qstr_Hard|Hard
+; qstr_Default|Default
+; qstr_Easy|Easy
 qstr_Town_NPCs_Always_Acc|PNJs de Cidade Sempre Acessíveis através de Menus:
 qstr_Cutscenes:__|Cinemáticas:
 qstr_Injuries_for_compani|Ferimentos por companheiros:
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|+{reg1} para Observação
 qstr__Scales_with_Wildcra|(Escalas com Sobrevivência na Natureza)
 ; qstr_Strengthens_all_Hero|Strengthens all Heroes
 ; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
+; qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 em Poder de Arremesso
 qstr_+1_to_Spotting|+1 em Observação
+; qstr_+2_to_Weapon_Master|+2 to Weapon Master
+; qstr_+2_to_First_Aid|+2 to First Aid
 qstr_Less_Dunnish_upkeep|Menor Despesa com Terra-pardenses
 qstr_Less_Wargs_upkeep|Menor Despesa com Wargs
 qstr_Light_Armor|Armadura Leve
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|Felizmente, alguns moradores locais encontraram você 
 qstr_{s13}^^You_have_succ|{s13}^^Você entrou sorrateiramente.
 qstr_the_place|o lugar
 qstr_the_castle|O castelo
-qstr_the_Citadel|A Cidadela
+qstr_the_Throne_Room|A Sala do Trono
 qstr_the_Secret_Cave|A Caverna Secreta
 qstr_Meduseld_the_Golden_|Meduseld, O Salão Dourado
 qstr_the_Lord_Halls|Os Salões do Senhor
 qstr_the_Leader_s_Cave|O Líder Fez a Caverna
 qstr_the_Tower|A Torre
 qstr_the_tower_of_Orthanc|A Torre de Orthanc
-qstr_the_Throne_Room|A Sala do Trono
 qstr_Beorn_s_Hall|Salão de Beorn
 qstr_the_Hall|O Salão
 qstr_the_Great_Chamber_of|a Grande Câmara de Thrór
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|Bem, se você está aqui e falando comigo, você deve 
 qstr_You_just_got_windyfl|Você acabou de ficar refrescado!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
+qstr_the_Citadel|A Cidadela
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Regente Denethor
 qstr_the_Golden_Hall|o Salão Dourado

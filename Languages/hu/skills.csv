@@ -27,7 +27,7 @@ skl_tracking_desc|Több információt kapsz a nyomokból. (Csapat képesség)
 skl_trainer|Kiképző
 skl_trainer_desc|Minden nap, minden hős ezzel a képességgel ad némi tapasztalatot minden más csapattagnak, akinek a szintje alacsonyabb az övénél. A tapasztalat szerzés a következő képen megy: {0, 4, 10, 16, 23, 30, 38, 46, 55, 65, 80}. (Személyes képesség)
 skl_looting|Zsákmányszerzés
-skl_looting_desc|Ez a képesség növeli a zsákmányt 10%% egységnyivel per képesség szint. (Csapat képesség)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 skl_horse_archery|Lovasíjászat
 skl_horse_archery_desc|Csökkenti a sebzés- és célzás büntetést íjászatra és dobófegyverre lovaglás közben. (Személyes képesség)
 skl_riding|Lovaglás

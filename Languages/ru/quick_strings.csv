@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|TLD новый ИИ
 qstr_Siege_AI:__|ИИ осады:
 qstr_Basic__better_perfor|Базовый (лучшая производительность)
 qstr_Advanced|Продвинуться
+qstr_Campaign_diffculty:_|Сложность кампании:
+qstr_Hard|Тяжело
+qstr_Default|Средняя
+qstr_Easy|Легко
 qstr_Town_NPCs_Always_Acc|Городские НПЦ всегда доступны из меню:
 qstr_Cutscenes:__|Катсцены:
 qstr_Injuries_for_compani|Ранения компаньонов:
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|+{reg1} к Слежению
 qstr__Scales_with_Wildcra|(Растёт с навыком единение с природой)
 qstr_Strengthens_all_Hero|Усиливает всех Героев
 qstr_+2_to_First_Aid__Par|+2 к навыку Первой помощи (Навык отряда)
+qstr_lead_more_Uruks|Вести больше Уруков
 qstr_+1_to_Power_Throw|+1 к мощному броску
 qstr_+1_to_Spotting|+1 к Слежению
+qstr_+2_to_Weapon_Master|+2 к Владению Оружия
+qstr_+2_to_First_Aid|+2 к Первой Помощи
 qstr_Less_Dunnish_upkeep|Снижает содержание дунландцев
 qstr_Less_Wargs_upkeep|Снижает содержание всадников на варгах
 qstr_Light_Armor|Лёгкая броня
@@ -925,15 +932,15 @@ qstr_Tripled|Утроенный
 qstr_Quadrupled|Учетверенный
 qstr_You_drank_the_Ent_Wa|Вы выпили энтийской воды...
 qstr_You_used_the_Orc_Bre|Вы использовали отвар орков.
-; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
-; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
-; qstr_lordless|lordless
-; qstr_orc_stragglers|orc stragglers
-; qstr_wild_goblins|wild goblins
-; qstr_recruits|recruits
-; qstr_regulars|regulars
-; qstr_elites|elites
-; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
+qstr_You_and_your_compani|Вы и ваши компаньоны делают глоток Мирувора. Вы ощущаете свежесть и прилив сил
+qstr_You_give_a_few_leave|Вы отдаете пару листьев Ателаса своим лекарям
+qstr_lordless|Без лорда
+qstr_orc_stragglers|Бродячие орки
+qstr_wild_goblins|Дикие гоблины
+qstr_recruits|Добровольцы
+qstr_regulars|Рядовые
+qstr_elites|Элиты
+qstr_You_camp_and_beat_th|Вы встаёте на лагерь, и бьете в Барабаны Бездны. Могучие звуки привлекают группу {s1}{s2}
 qstr_Fangorn_search:_fail|Разведка Фангорна: провал.
 qstr_^^^A_great_victory!^|^^^Великая победа!^^^Так вот что значили все россказни о Фангорне...
 qstr_^^^Defeated...^^^Sca|^^^Поражение...^^^Раздавлен в древнем лесу Фангорн...В полном одиночестве...
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|К счастью, какие-то местные жи
 qstr_{s13}^^You_have_succ|{s13}^^Вы успешно прокрались внутрь.
 qstr_the_place|поселение
 qstr_the_castle|замок
-qstr_the_Citadel|цитадель
+qstr_the_Throne_Room|тронный зал
 qstr_the_Secret_Cave|Потайная пещера
 qstr_Meduseld_the_Golden_|Медусельд, Золотой чертог
 qstr_the_Lord_Halls|Чертоги владыки
 qstr_the_Leader_s_Cave|пещеру повелителя
 qstr_the_Tower|твердыню
 qstr_the_tower_of_Orthanc|Ортанк
-qstr_the_Throne_Room|тронный зал
 qstr_Beorn_s_Hall|Беорнингский Хранитель Очага
 qstr_the_Hall|чертоги правителя
 qstr_the_Great_Chamber_of|Великий зал Трора.
@@ -1092,8 +1098,8 @@ qstr_You_are_entering_{s1}|Вы входите в регион {s1}.
 qstr_The_war_expands_comm|Война разгорается всё сильнее, полководцы становятся храбрее! (снижены требования к началу осады)
 qstr_Your_party_is_spotte|{s1} обнаружил ваш отряд.
 qstr_The_effects_of_the_O|Эффект от Орочьего Варева закончился.
-; qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
-; qstr_Athelas_used_up.|Athelas used up.
+qstr_The_effects_of_the_M|Эффект Мирувора рассеялся
+qstr_Athelas_used_up.|Ателас использован
 qstr_Party_has_nothing_to|Отряду нечего есть!
 qstr_You_pay_for_accommod|Вы платите за постой.
 qstr_The_troll_outside_{s|Тролль, лютовавший в окрестностях города {s2}, был убит. Задание отменено.
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|Ну, если ты сейчас стоишь тут �
 qstr_You_just_got_windyfl|Зато ты потерял девственность мозга и научился думать!
 qstr_Merry|Мерри
 qstr_Pippin|Пиппин
+qstr_the_Citadel|цитадель
 qstr_Minas_Tirith|Минас-Тирит
 qstr_Steward_Denethor|Наместник Денетор
 qstr_the_Golden_Hall|золотой зал

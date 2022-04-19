@@ -94,6 +94,10 @@ qstr_TLD_New_FormAI|Nueva IA de Formaciones TLD
 qstr_Siege_AI:__|IA de asedio:  
 qstr_Basic__better_perfor|Básica (mejor rendimiento)
 qstr_Advanced|Avanzado
+qstr_Campaign_diffculty:_|Dificultad de la campaña
+qstr_Hard|Difícil
+qstr_Default|Por defecto
+qstr_Easy|Fácil
 qstr_Town_NPCs_Always_Acc|PNJs de las ciudades siempre accesibles desde el menú:  
 qstr_Cutscenes:__|Cinemáticas:  
 qstr_Injuries_for_compani|Compañeros pueden sufrir heridas:  
@@ -236,8 +240,11 @@ qstr_+{reg1}_to_Spotting|+{reg1} en Avistar
 qstr__Scales_with_Wildcra|(Mejora con Dominio de la tierras salvajes)
 qstr_Strengthens_all_Hero|Fortalece a todos los héroes
 qstr_+2_to_First_Aid__Par|+2 a Primeros auxilios (Grupo)
+qstr_lead_more_Uruks|liderar a más uruks
 qstr_+1_to_Power_Throw|+1 a Lanzamiento
 qstr_+1_to_Spotting|+1 en Avistar
+qstr_+2_to_Weapon_Master|+2 a Maestría con armas
+qstr_+2_to_First_Aid|+2 a Primeros auxilios
 qstr_Less_Dunnish_upkeep|Reduce coste de mantenimiento de Dunlendinos
 qstr_Less_Wargs_upkeep|Reduce coste de mantenimiento de Huargos
 qstr_Light_Armor|Armadura ligera
@@ -1022,14 +1029,13 @@ qstr_Luckily_some_passing|Por fortuna, algunas buenas gentes de la zona te encue
 qstr_{s13}^^You_have_succ|{s13}^^Te has colado con éxito.
 qstr_the_place|l lugar
 qstr_the_castle|l castillo
-qstr_the_Citadel| la Ciudadela
+qstr_the_Throne_Room|l Salón del Trono
 qstr_the_Secret_Cave| la Cueva Secreta
 qstr_Meduseld_the_Golden_| Meduseld, el Castillo de Oro
 qstr_the_Lord_Halls| los Salones del Rey
 qstr_the_Leader_s_Cave| la Cueva del Cabecilla
 qstr_the_Tower| la Torre
 qstr_the_tower_of_Orthanc| la torre de Orthanc
-qstr_the_Throne_Room|l Salón del Trono
 qstr_Beorn_s_Hall|Salón de Beorn
 qstr_the_Hall| los Salones
 qstr_the_Great_Chamber_of| la Gran Cámara de Thrór
@@ -1204,6 +1210,7 @@ qstr_Well_if_you_are_here|¡Bueno, si has terminado hablando conmigo al final te
 qstr_You_just_got_windyfl|¡Toma error de windyflora, por tonto!
 qstr_Merry|Merry
 qstr_Pippin|Pippin
+qstr_the_Citadel| la Ciudadela
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Senescal Denethor
 qstr_the_Golden_Hall|el Castillo de Oro

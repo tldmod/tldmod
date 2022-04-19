@@ -27,7 +27,7 @@ skl_tracking_desc|Spuren werden informativer. (Truppen-Fähigkeit)
 skl_trainer|Ausbilder
 skl_trainer_desc|Jeden Tag verleiht jeder Held mit dieser Fähigkeit jedem anderen Truppenmitglied mit geringerer Stufe ein bisschen Erfahrung. Die Erfahrung wächst wie folgt: {0,4,10,16,23,30,38,46,55,65,80}. (Persönliche Fähigkeit)
 skl_looting|Plündern
-skl_looting_desc|Diese Fähigkeit erhöht die Menge des erhaltenen Plünderguts um 10%% pro Fertigkeitsstufe. (Truppen-Fähigkeit)
+skl_looting_desc|Erhöht Menge und Qualität der Beute aus gewonnenen Schlachten (Truppen-Fähigkeit)
 skl_horse_archery|Berittenes Bogenschießen
 skl_horse_archery_desc|Reduziert Schadens- und Genauigkeitsabzüge für Bogenschießen und Werfen vom Pferd. (Persönliche Fähigkeit)
 skl_riding|Reiten
