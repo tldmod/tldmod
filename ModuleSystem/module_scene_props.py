@@ -3254,7 +3254,7 @@ scene_props = [
 
 ( "fence_new"                           ,0,"fence_new","bo_fence_new",[]),
 
-("MT_wall",0,"Gondor_wall_final","bo_MT_circular_wall",[]),
+("MT_wall",0,"Gondor_wall_final_old","bo_MT_circular_wall2",[]),
 ("MT_wall_part_lowpoly",0,"Gondor_wall_final_lowpoly",0,[]),
 
 #CWE props

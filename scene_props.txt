@@ -5990,7 +5990,7 @@ spr_stone_block_mossy_4 0 0 zf_block_3 bo_zf_block_3 0
 spr_fence_new 0 0 fence_new bo_fence_new 0
 
 
-spr_MT_wall 0 0 Gondor_wall_final bo_MT_circular_wall 0
+spr_MT_wall 0 0 Gondor_wall_final_old bo_MT_circular_wall2 0
 
 
 spr_MT_wall_part_lowpoly 0 0 Gondor_wall_final_lowpoly 0 0
