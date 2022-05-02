@@ -12711,8 +12711,14 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
   ], 
   "{s37}",  "party_reinforce", [] ],
 
-    
-
+#party that follows you
+[anyone,"start", [(eq,"$talk_context",tc_party_encounter),
+                    (eq,"$encountered_party_hostile",0),
+                    (is_between, "$g_encountered_party_faction", kingdoms_begin, kingdoms_end),
+                    (party_slot_eq, "$g_encountered_party", slot_party_following_player, 1),],    
+"We are following your orders, {s24}.", "party_encounter_friend",
+     [(call_script, "script_get_rank_title_to_s24", "$g_encountered_party_faction" )]],
+     
 #Friendly faction party: they trust you.
 [anyone,"start", [(eq,"$talk_context",tc_party_encounter),
                     (eq,"$encountered_party_hostile",0),
@@ -12911,11 +12917,11 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         
         (try_begin),
           (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-          (str_store_string, s4, "@I hdon't need your help any longer. Go home."),
+          (str_store_string, s4, "@I don't need your help any longer. Go home."),
         (else_try),
           (str_store_string, s4, "@I don't have any need for you. Get lost."),
         (try_end)],
-"{s4}", "close_window", [
+"{s4}", "party_follow_player_dismiss", [
         (assign, ":followers", "$g_encountered_party"),
         (party_set_slot, "$g_encountered_party", slot_party_following_player, 0),
         (party_set_slot, "$g_encountered_party", slot_party_commander_party, -1),
@@ -12979,9 +12985,17 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         #(display_message, "@Total: {reg69} - Scouts:{reg66} - Raiders: {reg67} - Patrols: {reg68}", color_good_news),
         
         (party_set_slot, "p_main_party", slot_party_number_following_player, ":cur_followers"),
-
-        (call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)        
+       
 ]],
+
+[anyone,"party_follow_player_dismiss", [
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@We will return to our previous task. Goodbye."),
+        (else_try),
+          (str_store_string, s4, "@Lads, we're going home!"),
+        (try_end)],
+"{s4}", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],
 
 [anyone,"party_reinforce", [
      #War not started

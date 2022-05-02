@@ -1,4 +1,4 @@
-1932
+1936
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_385_wb__dev_^_B _rev_385_wb_|_dev_^_Built_2022-03-24_17:44___
+qstr__rev_408_wb__dev_^_B _rev_408_wb_|_dev_^_Built_2022-05-01_19:11___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1905,6 +1905,10 @@ qstr_Then_let_us_go._Stay Then_let_us_go._Stay_close._I_will_need_you_soon.
 qstr_There_will_be_blood_ There_will_be_blood,_that_is_for_sure._Stay_close,_or_miss_out.
 qstr_Goodbye_friends. Goodbye,_friends.
 qstr_See_you_later_if_you See_you_later_if_you_don't_get_killed.
+qstr_I_don_t_need_your_he I_don't_need_your_help_any_longer._Go_home.
+qstr_I_don_t_have_any_nee I_don't_have_any_need_for_you._Get_lost.
+qstr_We_will_return_to_ou We_will_return_to_our_previous_task._Goodbye.
+qstr_Lads_we_re_going_hom Lads,_we're_going_home!
 qstr__^Oh_and_take_back_t _^Oh,_and_take_back_those_who_are_not_our_people.
 qstr_{s31}{reg28?Those:That}_ {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}_{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_{s31}{reg28?Those:That}_u {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]

@@ -1,4 +1,4 @@
-1686
+1690
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1680,6 +1680,10 @@ qstr_Then_let_us_go._Stay Then_let_us_go._Stay_close._I_will_need_you_soon.
 qstr_There_will_be_blood_ There_will_be_blood,_that_is_for_sure._Stay_close,_or_miss_out.
 qstr_Goodbye_friends. Goodbye,_friends.
 qstr_See_you_later_if_you See_you_later_if_you_don't_get_killed.
+qstr_I_don_t_need_your_he I_don't_need_your_help_any_longer._Go_home.
+qstr_I_don_t_have_any_nee I_don't_have_any_need_for_you._Get_lost.
+qstr_We_will_return_to_ou We_will_return_to_our_previous_task._Goodbye.
+qstr_Lads_we_re_going_hom Lads,_we're_going_home!
 qstr__^Oh_and_take_back_t _^Oh,_and_take_back_those_who_are_not_our_people.
 qstr_{s31}{reg28?Those:That}_ {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}_{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_{s31}{reg28?Those:That}_u {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]
