@@ -604,7 +604,7 @@ spr_castle_h_battlement_barrier_E 0 0 castle_h_battlement_barrier 0 0
 spr_castle_f_keep_a 0 0 castle_f_keep_a bo_castle_f_keep_a 0
 
 
-spr_castle_f_keep_a_E 0 0 castle_f_keep_a 0 0
+spr_full_keep_b 0 0 full_keep_b bo_full_keep_b 0
 
 
 spr_castle_f_battlement_a 0 0 castle_f_battlement_a bo_castle_f_battlement_a 0
@@ -5826,7 +5826,7 @@ spr_small_wall_f 0 0 small_wall_f bo_small_wall_f 0
 spr_small_wall_f2 0 0 small_wall_f2 bo_small_wall_f2 0
 
 
-spr_spr_gon_small_wall_a_1 0 0 arabian_wall_a bo_arabian_wall_a 0
+spr_gon_small_wall_a_1 0 0 arabian_wall_a bo_arabian_wall_a 0
 
 
 spr_stairs_a 0 0 stairs_a bo_stairs_a 0

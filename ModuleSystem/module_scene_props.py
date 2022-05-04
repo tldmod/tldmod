@@ -469,7 +469,11 @@ scene_props = [
   ("castle_h_battlement_barrier_E",0,"castle_h_battlement_barrier","0", []),
   
 ("castle_f_keep_a",0,"castle_f_keep_a","bo_castle_f_keep_a", []),
-  ("castle_f_keep_a_E",0,"castle_f_keep_a","0", []),
+] + (is_a_wb_sceneprop==1 and [
+  ("full_keep_b",0,"full_keep_b","bo_full_keep_b", []),
+] or [
+  ("full_keep_b",0,"castle_f_keep_a","0", []),
+]) + [
 ("castle_f_battlement_a",0,"castle_f_battlement_a","bo_castle_f_battlement_a", []),
   ("castle_f_battlement_a_E",0,"castle_f_battlement_a","0", []),
 ("castle_f_battlement_a_destroyed",0,"castle_f_battlement_a_destroyed","bo_castle_f_battlement_a_destroyed", []),
@@ -3075,7 +3079,7 @@ scene_props = [
 ( "well_shaft"                                 ,0,"well_shaft","bo_well_shaft",[]),
 ( "small_wall_f"                               ,0,"small_wall_f","bo_small_wall_f",[]),
 ( "small_wall_f2"                              ,0,"small_wall_f2","bo_small_wall_f2",[]),
-( "spr_gon_small_wall_a_1"                           ,0,"arabian_wall_a","bo_arabian_wall_a",[]),
+( "gon_small_wall_a_1"                           ,0,"arabian_wall_a","bo_arabian_wall_a",[]),
 ( "stairs_a"                                   ,0,"stairs_a","bo_stairs_a",[]),
 
 
