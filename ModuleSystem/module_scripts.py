@@ -1977,7 +1977,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 26),  #Rafa: Savegame version
+    (assign,"$savegame_version", 27),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -25002,6 +25002,11 @@ command_cursor_scripts = [
         (assign, "$savegame_version", 26),
 	(try_end),	
 
+    (try_begin), #InVain - 4 May 2022, set subfac mask for Gondor heavy greaves
+        (le, "$savegame_version", 26),
+        (item_set_slot,"itm_gondor_heavy_greaves", slot_item_subfaction, 40),
+        (assign, "$savegame_version", 27),
+	(try_end),	
 
 ]),
 
