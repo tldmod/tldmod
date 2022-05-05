@@ -228,7 +228,13 @@ scenes = [
 ("mordor_castle_b"      ,sf_indoors,"interior_castle_morgul"      , "bo_interior_castle_gondor_d" , (-100,-100),(100,100),-100,"0",[],["player_chest"]),
 
 ("rhun_south_camp_center"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
+
+  ] + (is_a_wb_scene==1 and [
+("rhun_north_camp_center"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001a0000500000d2348000032a500003c7f00007714",[],[],"outer_terrain_steppe"), #by Aiden
+  ] or [
 ("rhun_north_camp_center"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
+  ]) + [
+
 ("gundabad_ne_outpost_center"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000032000050000035d470000156f000048ba0000361c",[],[],"outer_mountains2north"),
 ("gundabad_nw_outpost_center"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000120054c97000615820000538a00007bcc00005284",[],[],"outer_mountains2north"),
 ("gundabad_mirkwood_outpost"      ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
@@ -472,7 +478,12 @@ scenes = [
 ("khand_camp_siege"      ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x0000000020040de3000699aa00005234000048ba000004b5",[],["player_chest"],"outer_terrain_rohan"),
 ("north_rhun_camp_siege" ,sf_generate|sf_muddy_water,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_flat"),
 ("rhun_south_camp_siege"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
+
+  ] + (is_a_wb_scene==1 and [
+("rhun_north_camp_siege"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000001a0000500000d2348000032a500003c7f00007714",[],[],"outer_terrain_steppe"), #by Aiden
+  ] or [
 ("rhun_north_camp_siege"         ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
+  ]) + [
 
 ## In Vain Village Scenes
 
