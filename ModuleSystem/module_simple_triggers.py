@@ -2731,6 +2731,7 @@ simple_triggers = [
   # (56) TLD Messages about faction strength changes
   (5,[(gt, "$tld_war_began", 0),
 		(try_for_range,":faction",kingdoms_begin,kingdoms_end),
+        (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
         (faction_get_slot,":strength",":faction",slot_faction_strength),
         (faction_get_slot,":strength_new",":faction",slot_faction_strength_tmp),
         (faction_set_slot,":faction",slot_faction_strength,":strength_new"),
@@ -2997,7 +2998,7 @@ simple_triggers = [
         (else_try),
           (assign, ":news_color", color_bad_news),
         (try_end),
-        (display_log_message, "@The forces of {s2} established an advanced camp in {s15}!", ":news_color"),
+        (display_log_message, "@The forces of {s2} established an Advance Camp in {s15}!", ":news_color"),
         (call_script, "script_update_center_notes", ":adv_camp"),
 		
 		#Relocate player's reserves

@@ -2424,7 +2424,7 @@ troops = [
    [itm_m_uruk_light_a,itm_uruk_tracker_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,orc_face_normal,orc_face2],
 ["smith_oscamp","Kugash_Ironlover","camp_smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_uruk,0,0,fac_mordor,
-   [itm_isen_uruk_light_c,itm_uruk_tracker_boots,],
+   [itm_m_uruk_light_a,itm_uruk_tracker_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,orc_face_normal,orc_face2],
 ["smith_isengard","Burz_Ironbasher","underground_smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_urukhai,0,0,fac_isengard,
    [itm_isen_uruk_light_c,itm_uruk_tracker_boots,],
