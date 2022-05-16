@@ -31000,7 +31000,9 @@ if is_a_wb_script==1:
        (assign, ":banner_troop", -1),
        (assign, ":banner_mesh", "mesh_banners_default_a"),
        (assign, ":subfaction", -1),
-       (str_store_troop_name, s1, ":troop_no"),
+       # (assign, reg78, ":troop_no"),
+       # (str_store_troop_name, s1, ":troop_no"),
+       # (display_message, "@{reg78}:{s1}"),
        (try_begin),
          (lt, ":agent_no", 0),
          (try_begin),
@@ -31012,6 +31014,7 @@ if is_a_wb_script==1:
            (this_or_next|is_between, ":troop_no", companions_begin, companions_end),
            (is_between, ":troop_no", new_companions_begin, new_companions_end),
            (assign, ":banner_troop", "trp_player"),
+           (assign, ":agent_party", "p_main_party"),
          (else_try),
            (assign, ":banner_mesh", "mesh_banners_default_a"),
          (try_end),
@@ -31029,6 +31032,12 @@ if is_a_wb_script==1:
            (is_between, ":troop_id", new_companions_begin, new_companions_end),
            (main_party_has_troop, ":troop_id"),
            (assign, ":agent_party", "p_main_party"),
+         (else_try), #agents from no party (spawned by script)         
+           (lt, ":agent_party", 0),
+           (store_troop_faction, ":party_faction", ":troop_id"),
+           (ge, ":party_faction", 1),
+           (faction_get_slot, ":banner_troop", ":party_faction", slot_faction_leader),
+           (troop_get_slot, ":subfaction", ":troop_id", slot_troop_subfaction),
          (try_end),
          
          (ge, ":agent_party", 0),
@@ -31050,12 +31059,13 @@ if is_a_wb_script==1:
            (this_or_next|troop_slot_ge,  ":leader_troop_id", slot_troop_banner_scene_prop, 1),
            (             eq, ":leader_troop_id", "trp_player"),
            (assign, ":banner_troop", ":leader_troop_id"),
-        (else_try), #player party
+         (else_try), #player party
            (eq, ":agent_party", p_main_party),
            (faction_get_slot, ":banner_troop", "$players_kingdom", slot_faction_leader),
            (troop_get_slot, ":subfaction", trp_player, slot_troop_subfaction),
-         (else_try), #other faction parties           
-           (store_faction_of_party, ":party_faction", ":agent_party"),
+         (else_try), #other faction parties  
+           (store_faction_of_party, ":party_faction", ":agent_party"),  
+           (ge, ":party_faction", 1),
            (faction_get_slot, ":banner_troop", ":party_faction", slot_faction_leader),
             (try_begin), #extra check for Gondor subfac parties, since these don't have their subfac stored, we need to check them by party template
                 (this_or_next|eq, ":party_template", pt_blackroot_auxila),(eq, ":party_template", pt_brv_patrol), (assign, ":subfaction", subfac_blackroot),
@@ -31074,6 +31084,7 @@ if is_a_wb_script==1:
          (try_begin),
            (neg|troop_slot_ge, ":banner_troop", slot_troop_banner_scene_prop, 1),
            (agent_get_party_id, ":agent_party", ":agent_no"),
+           (ge, ":agent_party", 0),
            (store_faction_of_party, ":party_faction", ":agent_party"),
            (faction_get_slot, ":banner_troop", ":party_faction", slot_faction_leader),
            #(assign, ":banner_mesh", "mesh_banners_default_b"),
