@@ -42,7 +42,7 @@ itemsfile version 2
  itm_cattle_meat Beef Beef 1  raw_meat 0  34144267 0 103 0 20 100 70 0 0 0 0 0 0 0 70 0 0
 0
 
- itm_grain Wheat Wheat 1  wheat_sack 0  33619979 0 77 0 50 110 40 0 0 0 0 0 0 0 50 0 0
+ itm_grain Wheat Wheat 1  wheat_sack 0  33554443 0 77 0 50 110 40 0 0 0 0 0 0 0 50 0 0
 0
 
  itm_tools Tools Tools 1  iron_hammer 0  11 0 410 0 50 90 0 0 0 0 0 0 0 0 0 0 0
@@ -1127,7 +1127,7 @@ itemsfile version 2
  itm_isengard_heavy_sword Isengard_Heavy_Sword Isengard_Heavy_Sword 1  isengard_heavy_sword 0  342163459 9223635919939043552 500 786582 4.5 95 0 0 0 15 40960 93 0 102 0 256 40
 0
 
- itm_isengard_spear Isengard_Spear Isengard_Spear 1  isengard_spear 0  275087364 9254615759470985472 300 786582 2.5 90 0 0 0 9 0 96 0 150 0 283 512
+ itm_isengard_spear Isengard_Spear Isengard_Spear 1  isengard_spear 0  6651908 9254615759470985472 300 786582 2.5 90 0 0 0 9 0 96 0 150 0 283 512
 0
 
  itm_isengard_pike Isengard_Pike Isengard_Pike 1  isengard_pike 0  275087364 4222124851987200 400 786582 3.5 91 0 0 0 11 20480 92 0 226 0 282 532
@@ -1157,7 +1157,7 @@ itemsfile version 2
  itm_orc_hammer Evil_Hammer Evil_Hammer 1  khazad_orc_th_hammer_1 0  34363998210 9223388532775583758 600 786582 4.5 93 0 0 0 11 30720 83 0 80 0 256 542
 0
 
- itm_orc_club_b Warg_Rider_Club Warg_Rider_Club 2  orc_club_b 0  khazad_orc_club_1 786432  138493955 9223652415566250222 400 786582 3 91 0 0 0 11 27648 85 0 77 0 256 539
+ itm_orc_club_b Warg_Rider_Club Warg_Rider_Club 2  orc_club_b 0  khazad_orc_club_1 786432  138477571 9223652415566250222 400 786582 3 91 0 0 0 11 27648 85 0 77 0 256 539
 0
 
  itm_orc_club_c Spiky_Orc_Club Spiky_Orc_Club 1  orc_club_c 0  4276226 9223372040101167119 230 786582 2.5 90 0 0 0 9 20480 85 0 70 0 281 276

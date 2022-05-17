@@ -4481,7 +4481,7 @@ game_menus = [
   ],[
 	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("cheat_kill_quest",[],"qst_dispatch_scouts",[(assign,"$cheat_imposed_quest","qst_dispatch_scouts")]),
+	("qst_deliver_food",[],"qst_deliver_food",[(assign,"$cheat_imposed_quest","qst_deliver_food")]),
 	("cheat_kill_faction_quest",[],"Kill GuildMaster Bandit Quest",[(assign,"$cheat_imposed_quest","qst_blank_quest_17")]),
 	("cheat_raise_troops",[],"Raise Troops",[(assign,"$cheat_imposed_quest","qst_raise_troops")]),
 	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
@@ -8541,7 +8541,19 @@ game_menus = [
     code_to_set_city_background + [   
 		
 		(call_script, "script_unequip_items", "trp_player"), # after a shop, player returns to this menu so check here
-		
+
+        (try_begin), #InVain: additional saveguard for deliver food quest. This is brute force.
+            (check_quest_active, "qst_deliver_food"),
+            (quest_slot_eq, "qst_deliver_food", slot_quest_target_center, "$current_town"),   
+            (party_get_slot, ":cur_merchant", "$current_town", slot_town_merchant),
+            (try_for_range, ":food_item", food_begin, food_end),
+             (store_item_kind_count, ":num_items", ":food_item", ":cur_merchant"),
+             (ge, ":num_items", 1),
+             (troop_remove_items, ":cur_merchant", ":food_item", ":num_items"),
+             (troop_sort_inventory, ":cur_merchant"), 
+            (try_end),
+        (try_end),
+		      
 		# Workaround for Isengard underground
 		(troop_set_slot, "trp_player", slot_troop_morality_state, 0),
 

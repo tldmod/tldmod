@@ -401,7 +401,7 @@ triggers = [
         
         # Add trade goods to merchant inventories
         (reset_item_probabilities,100),
-        (try_for_range, ":cur_goods", trade_goods_begin, trade_goods_end),
+        (try_for_range, ":cur_goods", food_begin, food_end), #InVain: Limit range to food, no trade goods in TLD
           #MV: no non-edible trade goods and some factional food
           (try_begin),
             (is_between, ":cur_goods", food_begin, food_end),
@@ -413,16 +413,6 @@ triggers = [
             (neq, ":cur_goods", "itm_maggoty_bread"),
             (this_or_next|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
             (neq, ":cur_goods", "itm_cram"),
-            
-            # food quest:
-            (assign, ":quest_prevents", 0),
-            (try_begin), # don't allow this food to generate if the quest says there is a shortage
-              (check_quest_active, "qst_deliver_food"),
-              (quest_slot_eq, "qst_deliver_food", slot_quest_target_center, ":cur_center"),
-              #(quest_slot_eq, "qst_deliver_food", slot_quest_target_item, ":cur_goods"),
-              (assign, ":quest_prevents", 1),
-            (try_end),
-            (eq, ":quest_prevents", 0),
             (set_item_probability_in_merchandise,":cur_goods",100),
           (else_try),
             (set_item_probability_in_merchandise,":cur_goods",0),
@@ -438,10 +428,20 @@ triggers = [
             (store_mul, ":bonus_items", ":num_goods", ":abundance_bonus"),
             (val_div, ":bonus_items", 100),
             (val_add, ":num_goods", ":bonus_items"),        
-        
-        (troop_add_merchandise,":cur_merchant",itp_type_goods,":num_goods"),
-        (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space), #MV: moved after goods and changed from 65
-        (troop_sort_inventory, ":cur_merchant"),
+
+        (try_begin),
+            # food quest:
+            (assign, ":quest_prevents", 0),
+            (try_begin), # don't allow food to generate if the quest says there is a shortage
+              (check_quest_active, "qst_deliver_food"),
+              (quest_slot_eq, "qst_deliver_food", slot_quest_target_center, ":cur_center"),
+              (assign, ":quest_prevents", 1),
+            (try_end),
+            (eq, ":quest_prevents", 0),
+            (troop_add_merchandise,":cur_merchant",itp_type_goods,":num_goods"),
+            (troop_ensure_inventory_space,":cur_merchant",merchant_inventory_space), #MV: moved after goods and changed from 65
+            (troop_sort_inventory, ":cur_merchant"),
+        (try_end),
         
         #swy-- if the horse/ goods merchant is short of bucks, yo. give somm' money to da biotch!
         #      don't expect enlightening comments all the way down. this is the jungle!
