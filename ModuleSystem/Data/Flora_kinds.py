@@ -1212,6 +1212,22 @@ fauna_kinds = [
    ['PL_tree_8_2_b', 'bo_pl_oak_group2'],
    ['PL_tree_8_2_c', 'bo_pl_oak_group3'],]),
 
+ ('dead_man_corpse', #high poly, use sparingly
+  0,
+  [['corpse_1', '0'],
+   ['corpse_2', '0'],
+   ['corpse_3', '0'],
+   ['corpse_4', '0'],
+   ['corpse_5', '0'],]),
+
+ ('dead_man_corpse_burnt', #high poly, use sparingly
+  0,
+  [['corpse_burnt_1', '0'],
+   ['corpse_burnt_2', '0'],
+   ['corpse_burnt_3', '0'],
+   ['corpse_burnt_4', '0'],
+   ['corpse_burnt_5', '0'],]),
+
 ]
 
 def save_fauna_kinds():
