@@ -2733,6 +2733,7 @@ simple_triggers = [
 		(try_for_range,":faction",kingdoms_begin,kingdoms_end),
         (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
         (faction_get_slot,":strength",":faction",slot_faction_strength),
+        (ge, ":strength", 1), #additional check for above
         (faction_get_slot,":strength_new",":faction",slot_faction_strength_tmp),
         (faction_set_slot,":faction",slot_faction_strength,":strength_new"),
         #       (val_add,":strength",999),

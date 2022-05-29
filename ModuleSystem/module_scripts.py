@@ -10771,6 +10771,7 @@ scripts = [
 	  
 	#execute faction strength consequences, negative outcomes defined in script_abort_quest
 	(try_begin),
+        (gt, "$tld_war_began", 0),
 		(ge, ":quest_giver_fac_str_effect", 1),
 		(faction_get_slot,":giver_strength",":quest_faction",slot_faction_strength_tmp),
 		(val_add, ":giver_strength", ":quest_giver_fac_str_effect"),
@@ -10780,6 +10781,7 @@ scripts = [
 	(try_end),
 	  
 	(try_begin),
+        (gt, "$tld_war_began", 0),
 		(is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
 		(lt, ":quest_target_fac_str_effect", 0), #negative strength effect if enemy faction is target
 		(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
@@ -10788,7 +10790,8 @@ scripts = [
 		(str_store_faction_name, s1, ":quest_target_faction"),
 		(display_message, "@{s1} lost faction strength!", color_good_news),
 	(else_try), #if target faction is an ally (e.g. escort caravan quest)
-		(is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
+		(gt, "$tld_war_began", 0),
+        (is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
 		(gt, ":quest_target_fac_str_effect", 0), #positive strength effect for allied targets (eg caravan quests)
 		(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
 		(val_add, ":enemy_strength", ":quest_target_fac_str_effect"),
@@ -13117,7 +13120,8 @@ scripts = [
 		
 		#execute faction strength consequences, positive outcomes defined in script_finish_quest
 		(try_begin),
-			(ge, ":quest_giver_fac_str_effect", 1),
+			(gt, "$tld_war_began", 0),
+            (ge, ":quest_giver_fac_str_effect", 1),
 			(faction_get_slot,":giver_strength",":quest_faction",slot_faction_strength_tmp),
 			(val_sub, ":giver_strength", ":quest_giver_fac_str_effect"),
 			(faction_set_slot,":quest_faction",slot_faction_strength_tmp,":giver_strength"),
@@ -13126,7 +13130,8 @@ scripts = [
 		(try_end),
 	  
 		(try_begin),
-			(is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
+			(gt, "$tld_war_began", 0),
+            (is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
 			(lt, ":quest_target_fac_str_effect", 0), #negative strength effect if enemy faction is target...
 			(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
 			(val_sub, ":enemy_strength", ":quest_target_fac_str_effect"), #...becomes positive if quest fails
@@ -13134,7 +13139,8 @@ scripts = [
 			(str_store_faction_name, s1, ":quest_target_faction"),
 			(display_message, "@{s1} gained faction strength!", color_bad_news),
 		(else_try), #if target faction is an ally (e.g. escort caravan quest)
-			(is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
+			(gt, "$tld_war_began", 0),
+            (is_between, ":quest_target_faction", kingdoms_begin, kingdoms_end), #Check if there's an actual target faction
 			(gt, ":quest_target_fac_str_effect", 0), #positive strength effect for allied targets (eg caravan quests)...
 			(faction_get_slot,":enemy_strength",":quest_target_faction",slot_faction_strength_tmp), 
 			(val_sub, ":enemy_strength", ":quest_target_fac_str_effect"), #... becomes negative is quest fails
