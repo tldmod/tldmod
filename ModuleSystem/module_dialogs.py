@@ -3889,7 +3889,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
  "War Tutorial:^^\
 - Factions will only initiate sieges when they are strong enough.^\
 - Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^\
-- If a faction loses their capital or if their strength is crushed, they will be defeated.^\
+- If a faction loses their capital, they will be defeated.^\
 - Factions gain strength from victories in the field and from holding certain key settlements.^\
 - Factions lose strength from defeats in the field or from losing settlements.^\
 - Some quests or events can affect faction strength.^\

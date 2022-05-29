@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_412_wb__dev_^_B _rev_412_wb_|_dev_^_Built_2022-05-12_20:44___
+qstr__rev_418_wb__dev_^_B _rev_418_wb_|_dev_^_Built_2022-05-29_16:31___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1357,7 +1357,7 @@ qstr_{reg65}_Moria_and/or {reg65}_Moria_and/or_Gundabad_troops_killed._(Counter_
 qstr_{reg65}_{s3}_troops_ {reg65}_{s3}_troops_killed._(Counter_refreshes_every_hour)
 qstr_{reg66}_{s5}_troops_ {reg66}_{s5}_troops_killed._(Counter_refreshes_every_hour)
 qstr_{reg67}_{s7}_{s8}_tr {reg67}_{s7}_{s8}_troops_killed._(Counter_refreshes_every_hour)
-qstr_{reg68}_{s10}_killed {reg68}_{s10}_killed._(Counter_refreshes_every_hour)
+qstr_{s8}_in_{s9}_asked_y {s8}_in_{s9}_asked_you_to_slay_{reg67}_{s10}.^_{reg68}_{s11}_killed._(Counter_refreshes_every_hour)
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!

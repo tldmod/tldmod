@@ -603,8 +603,10 @@ scripts = [
 #          (display_message, "@{reg1?Earned:Lost} {reg12} influence with {s11}.", ":news_color"), # MV: why do this??
 		  (try_begin), #InVain: Home faction bonus
 			(eq, "$players_kingdom", ":fac"),
+            (neq, ":difference", 0),
 			(display_message, "@You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with your home faction {s11}.", ":news_color"),
 		  (else_try),
+            (neq, ":difference", 0),
 			(display_message, "@You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.", ":news_color"),
 		  (try_end),
           

@@ -1135,7 +1135,7 @@ qstr_{reg65}_Moria_and/or {reg65}_Moria_and/or_Gundabad_troops_killed._(Counter_
 qstr_{reg65}_{s3}_troops_ {reg65}_{s3}_troops_killed._(Counter_refreshes_every_hour)
 qstr_{reg66}_{s5}_troops_ {reg66}_{s5}_troops_killed._(Counter_refreshes_every_hour)
 qstr_{reg67}_{s7}_{s8}_tr {reg67}_{s7}_{s8}_troops_killed._(Counter_refreshes_every_hour)
-qstr_{reg68}_{s10}_killed {reg68}_{s10}_killed._(Counter_refreshes_every_hour)
+qstr_{s8}_in_{s9}_asked_y {s8}_in_{s9}_asked_you_to_slay_{reg67}_{s10}.^_{reg68}_{s11}_killed._(Counter_refreshes_every_hour)
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
