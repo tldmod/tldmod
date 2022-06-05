@@ -316,15 +316,15 @@ scn_dol_guldur_center dol_guldur_center 4352 none none 0 0 100 100 -100 0x000000
   0 
   0 
  New_outer_terrain_forest 
-scn_north_rhun_camp_center north_rhun_camp_center 4352 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_north_rhun_camp_center north_rhun_camp_center 4352 none none 0 0 100 100 -100 0x00000001200005000006d9e10000065c00004b3400000dfd 
   0 
   1  833 
- outer_terrain_flat 
+ outer_terrain_rohan 
 scn_gundabad_camp_center gundabad_camp_center 4352 none none 0 0 100 100 -100 0x00000003200005000009c5a200000f5200005bd50000739d 
   0 
   1  833 
  New_outer_mountains2south_helmsdeep 
-scn_ironhill_camp_center ironhill_camp_center 256 none none 0 0 100 100 -100 0x00000007200016da000364d9000060f500007591000064e7 
+scn_ironhill_camp_center ironhill_camp_center 256 none none 0 0 100 100 -100 0x00000001a0000500000691a400000fc200004b34000070b7 
   0 
   0 
  outer_terrain_steppe 
@@ -1456,7 +1456,7 @@ scn_cerin_amroth_siege cerin_amroth_siege 256 none none 0 0 100 100 -100 0x00000
   0 
   0 
  outer_terrain_forest 
-scn_ironhill_camp_siege ironhill_camp_siege 256 none none 0 0 100 100 -100 0x00000007200016da000364d9000060f500007591000064e7 
+scn_ironhill_camp_siege ironhill_camp_siege 256 none none 0 0 100 100 -100 0x00000001a0000500000691a400000fc200004b34000070b7 
   0 
   0 
  outer_terrain_steppe 

@@ -2351,6 +2351,37 @@ scripts = [
 		#(str_store_troop_name, s2, ":highest_level_troop"),
 		#(display_message, "@{s1}: removed volunteer {s2}"),
 	
+        (try_begin), #umbar reward helm spawns black numenoreans for hire
+            (troop_has_item_equipped, "trp_player", "itm_umb_helm_reward"),
+            (troop_get_type, ":player_race", "trp_player"), #only if player is human
+            (neg|is_between, ":player_race", tf_orc_begin, tf_orc_end),
+            
+            (this_or_next|eq, ":fac", fac_mordor), #only in Mordor and eye factions
+            (this_or_next|eq, ":fac", fac_guldur),
+            (is_between, ":fac", fac_harad, fac_moria),
+            
+            (call_script, "script_get_faction_rank", ":fac"), #from rank 2 upwards
+            (ge, reg0, 2),
+            
+            (assign, ":num_numenor_troops", 0),
+            (try_for_range, ":numenor_troop", "trp_i2_mordor_num_renegade", "trp_noldorin_commander"),
+                (party_count_members_of_type, reg1, ":volunteers",":numenor_troop"),
+                (val_add, ":num_numenor_troops", reg1),
+            (try_end),
+            
+            (le, ":num_numenor_troops", 5),
+            (store_attribute_level, ":player_charisma", "trp_player", ca_charisma),
+            (val_mul, ":player_charisma", 2),
+            (store_random_in_range, ":chance", 0, 100), 
+            (le, ":chance", ":player_charisma"),
+            (val_div, ":chance", 20),
+            (val_max, ":chance", 1),
+            (party_add_members, ":volunteers", "trp_i2_mordor_num_renegade", ":chance"),
+            
+            # (str_store_party_name, s5, ":town"),
+            # (display_message, "@Black Numenorean added to {s5}"),
+        (try_end),
+    
 	(try_end),
 ]),
 
@@ -3986,6 +4017,13 @@ scripts = [
 		(eq,":item_no","itm_gauntlets_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Power Strike"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
+		(set_trigger_result, color_item_text_bonus),
+	  (else_try),
+		(eq,":item_no","itm_umb_helm_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+2 to Tactics"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
+        (try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@Recruit Black Numenoreans from various places"),(try_end),
+        (try_begin),(eq, ":extra_text_id", 3),(set_result_string, "@(Scales with Charisma. Human leaders only.)"),(try_end),
 		(set_trigger_result, color_item_text_bonus),		
       (else_try),
 		(eq,":item_no","itm_thrush_reward"),
@@ -4452,6 +4490,10 @@ scripts = [
                     (store_and, ":check" ,":wound_mask", wound_head), #head injury
                     (neq, ":check", 0),
                     (val_sub, ":modifier_value", 1),
+                (try_end),
+                (try_begin),
+                    (troop_has_item_equipped, ":troop_no", "itm_umb_helm_reward"),
+                    (val_add, ":modifier_value", 2),
                 (try_end),
             (else_try),
                 (eq, ":skill_no", "skl_power_strike"), # Power Strike

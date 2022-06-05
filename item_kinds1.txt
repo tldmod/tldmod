@@ -2251,7 +2251,7 @@ itemsfile version 2
  itm_umb_helm_d Corsair_Raider_Helm Corsair_Raider_Helm 2  raider_helmet 0  raider_helmet_b 167772160  65548 0 800 167772294 2 90 28 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_free_umb_helm_e Corsair_Tall_Helm Corsair_Tall_Helm 1  umbar_tall_helmet 0  65548 0 1200 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_umb_helm_reward Ancient_Numenorean_Karma Ancient_Numenorean_Karma 1  umbar_karma 0  65548 0 1200 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_free_umb_helm_f Corsair_Tall_Helm Corsair_Tall_Helm 1  umbar_tall_helmet_b 0  65548 0 1200 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
@@ -2730,7 +2730,7 @@ itemsfile version 2
  itm_witchking_helmet Sorcerer's_Mask Sorcerer's_Mask 4  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  tiara 2048  4108 0 3000 0 6 100 30 5 0 18 0 0 0 0 0 0 0
 0
 
- itm_lorien_royal_armor Lorien_Royal_Armor Lorien_Royal_Armor 1  lorien_royal 0  16777229 0 4000 704643206 26 100 1 46 17 15 0 0 0 0 0 0 0
+ itm_free_lorien_royal_armor Lorien_Royal_Armor Lorien_Royal_Armor 1  lorien_royal 0  16777229 0 4000 704643206 26 100 1 46 17 15 0 0 0 0 0 0 0
 0
 
  itm_feet_chains Feet_Chains Feet_Chains 1  chains_full 0  3854 0 200 0 10 100 0 0 0 0 0 0 0 0 0 0 0

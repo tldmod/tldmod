@@ -1220,7 +1220,7 @@ items =[
 ["umb_helm_b","Corsair_Tall_Helm",[("umbar_tall_helmet",0),("umbar_tall_helmet_b",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,1200,weight(5)|abundance(96)|head_armor(35)|body_armor(0)|difficulty(16),imodbits_armor|imodbit_lordly],
 ["umb_helm_c","Corsair_Militia_Helm",[("umbar_militia_helmet",0),("umbar_militia_helmet_b",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,700,weight(2)|abundance(90)|head_armor(25)|body_armor(0)|difficulty(11),imodbits_armor | imodbit_cracked],
 ["umb_helm_d","Corsair_Raider_Helm",[("raider_helmet",0),("raider_helmet_b",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(2)|abundance(90)|head_armor(28)|body_armor(0)|difficulty(12),imodbits_armor | imodbit_cracked],
-["free_umb_helm_e","Corsair_Tall_Helm",[("umbar_tall_helmet",0)],itp_type_head_armor|itp_shop,0,1200,weight(3)|head_armor(35)|difficulty(0),imodbits_armor|imodbit_lordly],
+["umb_helm_reward","Ancient_Numenorean_Karma",[("umbar_karma",0)],itp_type_head_armor|itp_shop,0,1200,weight(3)|head_armor(35)|difficulty(0),imodbits_armor|imodbit_lordly],
 ["free_umb_helm_f","Corsair_Tall_Helm",[("umbar_tall_helmet_b",0)],itp_type_head_armor|itp_shop,0,1200,weight(3)|head_armor(35)|difficulty(0),imodbits_armor|imodbit_lordly],
 ["corsair_trident","Trident_of_Sea_Fury",[("corsair_trident",0)],itp_type_polearm|itp_no_blur|itp_unique|itp_primary|itp_spear|itp_two_handed,itc_pike_upstab,2000,weight(4.5)|abundance(100)|difficulty(12)|spd_rtng(107)|weapon_length(166)|thrust_damage(42,pierce),imodbits_weapon_wood],
 ["corsair_boots","Corsair_Boots",[("corsair_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,400,weight(1)|abundance(90)|leg_armor(14)|difficulty(0),imodbits_cloth],
@@ -1418,7 +1418,7 @@ items =[
 ["prisoner_coll_chain","Prisoner_Chains",[("prisoner_coll_chain",0)],itp_type_head_armor|itp_doesnt_cover_hair,0,10,weight(10)|head_armor(2)|difficulty(0),0],
 ["witchking_helmet","Sorcerer's_Mask",[("witchking_helmet",0),("glorfindelhair",imodbit_rotten),("DwarfHelmKingCrown",imodbit_old),("tiara",imodbit_well_made)],itp_type_head_armor|itp_unique,0,3000,weight(6)|abundance(100)|head_armor(30)|body_armor(5)|difficulty(18),0],
 # let   witchking_helmet  be the last item (mtarini)
-["lorien_royal_armor","Lorien_Royal_Armor",[("lorien_royal",0)],itp_type_body_armor|itp_covers_legs,0,4000,weight(26)|abundance(100)|head_armor(1)|body_armor(46)|leg_armor(17)|difficulty(15),imodbits_armor|imodbit_lordly,],
+["free_lorien_royal_armor","Lorien_Royal_Armor",[("lorien_royal",0)],itp_type_body_armor|itp_covers_legs,0,4000,weight(26)|abundance(100)|head_armor(1)|body_armor(46)|leg_armor(17)|difficulty(15),imodbits_armor|imodbit_lordly,],
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 

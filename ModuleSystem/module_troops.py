@@ -2074,7 +2074,7 @@ troops = [
    [itm_variag_kataphrakt,itm_khand_noble_lam,itm_splinted_greaves_good,itm_evil_gauntlets_b_good,itm_khand_lance,itm_khand_tulwar,itm_variag_gladiator_shield,],
       attr_tier_7,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_4,0x0000000f3f00b38712065fd3287f731c00000000001c53780000000000000000],
 ["umbar_lord","Admiral_Tulmir","Admiral",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
-   [itm_umb_armor_f_good,itm_corsair_boots,itm_leather_gloves_reward,itm_umb_helm_a_good,itm_corsair_bow,itm_corsair_arrows,itm_kraken,itm_umb_shield_e],
+   [itm_umb_armor_f_good,itm_corsair_boots,itm_leather_gloves_reward,itm_umb_helm_reward,itm_corsair_bow,itm_corsair_arrows,itm_kraken,itm_umb_shield_e],
       attr_tier_7,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_6,0x0000000e3b004244365b6db99b6db7df00000000001dd6eb0000000000000000],
 ["lorien_lord","Lady_Galadriel","Lady",tf_hero| tf_randomize_face| tf_female| tfg_armor| tfg_helm| tfg_gloves| tfg_boots,0,0,fac_lorien,
    [itm_galadriel,itm_empty_head,itm_empty_legs,itm_empty_hands,],
