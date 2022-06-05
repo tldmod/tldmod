@@ -7096,7 +7096,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                                          (quest_get_slot, ":quest_target_amount", ":lords_quest", slot_quest_target_amount),
 										 (store_div, ":min_quest_target_amount", ":quest_target_amount", 2), #InVain: Hand in the quest earlier, but scale reward
                                          (party_count_companions_of_type, ":num_companions", "p_main_party", ":quest_target_troop"),
-                                         (ge, ":num_companions", ":min_quest_target_amount"),
+                                         (ge, ":num_companions", ":min_quest_target_amount"),  
 										 (val_min, ":num_companions", ":quest_target_amount"),
                                          (assign, reg1, ":num_companions"),
                                          (str_store_troop_name_plural, s13, ":quest_target_troop")],
@@ -7105,6 +7105,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (quest_get_slot, ":quest_target_amount", "qst_raise_troops", slot_quest_target_amount),
   (party_count_companions_of_type, ":num_companions", "p_main_party", ":quest_target_troop"),
   (val_min, ":num_companions", ":quest_target_amount"),
+  (quest_set_slot, "qst_raise_troops", slot_quest_current_state, ":num_companions"),
   (party_remove_members, "p_main_party", ":quest_target_troop", ":num_companions"),
   (val_mul, ":num_companions", 100),
   (store_div, ":finish_percentage", ":num_companions", ":quest_target_amount"),
