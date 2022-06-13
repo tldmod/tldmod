@@ -1042,5 +1042,46 @@ particle_systems = [
      0.5,                         #emit dir randomness
      150,                       #rotation speed
      0,                       #rotation damping
-     )
+     ),
+
+#fog variants     
+     ("scene_fog_black", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size , "prt_mesh_dust_1",
+     1, 30, 1.5, 0.01, 30, 4,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.3, 0.2), (1, 0.0),        #alpha keys
+     (0.5, 0.01), (1, 0.02),      #red keys
+     (0.5, 0.01), (1, 0.02),      #green keys
+     (0.5, 0.01), (1, 0.02),      #blue keys
+     (0, 20),   (1, 30),   #scale keys
+     (25, 25, 1),           #emit box size
+     (0, 0.01, 0),                 #emit velocity
+     2,                       #emit dir randomness
+     20,                       #rotation speed
+     1                        #rotation damping
+    ),
+     ("scene_fog_red", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size , "prt_mesh_dust_1",
+     1, 30, 1.5, 0.01, 30, 4,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.3, 0.2), (1, 0.0),        #alpha keys
+     (0.5, 0.08), (1, 0.01),      #red keys
+     (0.5, 0.01), (1, 0.01),      #green keys
+     (0.5, 0.01), (1, 0.01),      #blue keys
+     (0, 20),   (1, 30),   #scale keys
+     (25, 25, 1),           #emit box size
+     (0, 0.01, 0),                 #emit velocity
+     2,                       #emit dir randomness
+     20,                       #rotation speed
+     1                        #rotation damping
+    ),
+     ("scene_fog_grey", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size , "prt_mesh_dust_1",
+     1, 30, 1.5, 0.01, 30, 4,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.3, 0.1), (1, 0.0),        #alpha keys
+     (0.5, 0.01), (1, 0.1),      #red keys
+     (0.5, 0.01), (1, 0.1),      #green keys
+     (0.5, 0.01), (1, 0.1),      #blue keys
+     (0, 20),   (1, 30),   #scale keys
+     (25, 25, 1),           #emit box size
+     (0, 0.01, 0),                 #emit velocity
+     2,                       #emit dir randomness
+     20,                       #rotation speed
+     1                        #rotation damping
+    ),
 ]

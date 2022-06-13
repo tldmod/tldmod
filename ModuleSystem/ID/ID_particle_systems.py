@@ -62,3 +62,6 @@ psys_water_fall_3 = 60
 psys_bear_fur = 61
 psys_game_blood_rand = 62
 psys_game_blood_rand_2 = 63
+psys_scene_fog_black = 64
+psys_scene_fog_red = 65
+psys_scene_fog_grey = 66

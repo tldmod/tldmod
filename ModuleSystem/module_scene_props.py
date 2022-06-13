@@ -3304,6 +3304,20 @@ scene_props = [
 ( "gear_wheel_spak_1"                          ,0,"spak_gear_wheel_1","0",[]),
 ( "water_wheel_spak"                           ,0,"spak_water_weel","0",[]),
 
+
+("fog_scene_black",0,"0","0",[(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+  (prop_instance_get_position, pos1, ":instance_no"),
+  (particle_system_add_new,"psys_scene_fog_black",pos1)]),]), #InVain changed this so the fog actually shows up!
+("fog_scene_red",0,"0","0",[(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+  (prop_instance_get_position, pos1, ":instance_no"),
+  (particle_system_add_new,"psys_scene_fog_red",pos1)]),]), #InVain changed this so the fog actually shows up!
+("fog_scene_grey",0,"0","0",[(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+  (prop_instance_get_position, pos1, ":instance_no"),
+  (particle_system_add_new,"psys_scene_fog_grey",pos1)]),]), #InVain changed this so the fog actually shows up!
+
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
 
