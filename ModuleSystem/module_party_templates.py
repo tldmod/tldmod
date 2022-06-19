@@ -280,8 +280,8 @@ party_templates = [
 ("harad_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_ac4_harondor_horse_archer,1,2),(trp_c4_harondor_light_cavalry,1,2),(trp_i4_far_harad_champion,1,2),(trp_i4_harad_swordsman,1,1),(trp_i4_harad_spearman,0,1),]),
 #Rhun
 ("rhun_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhun_horseman,1,2),(trp_ac2_rhun_horse_scout,2,3),(trp_i1_rhun_tribesman,5,10),]),
-("rhun_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_ac3_rhun_horse_archer,3,5),(trp_c3_rhun_outrider,1,2),(trp_i3_rhun_tribal_infantry,2,4),]),
-("rhun_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_c4_rhun_noble_rider,2,4),(trp_c4_rhun_veteran_swift_horseman,1,2),(trp_ac4_rhun_veteran_horse_archer,2,4),]),
+("rhun_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_ac3_rhun_horse_archer,2,4),(trp_c3_rhun_outrider,1,2),(trp_i3_rhun_tribal_infantry,3,5),]),
+("rhun_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_c4_rhun_noble_rider,2,4),(trp_c4_rhun_veteran_swift_horseman,2,3),(trp_ac4_rhun_veteran_horse_archer,1,3),]),
 #Khand
 ("khand_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_khand_pony_rider,1,2),(trp_i2_khand_pit_dog,2,4),(trp_i1_khand_bondsman,4,8),]),
 ("khand_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_ac3_khand_skirmisher,2,4),(trp_c3_khand_horseman,0,1),(trp_i3_khand_warrior,2,3),(trp_i3_khand_pitfighter,1,2),]),
