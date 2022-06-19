@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2012
+ 2016
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -6108,6 +6108,22 @@ spr_fog_scene_red 0 0 0 0 1
 
 spr_fog_scene_grey 0 0 0 0 1
 -40  3 2071 1 1224979098644774912 1850 2 1 1224979098644774912 1965 2 66 1 
+
+
+spr_fire_glow 0 0 0 0 1
+-40  2 1955 3 0 0 0 1965 1 13 
+
+
+spr_fire_sparks 0 0 0 0 1
+-40  2 1955 3 0 0 0 1965 1 19 
+
+
+spr_fire_sparks_b 0 0 0 0 1
+-40  2 1955 3 0 0 0 1965 1 20 
+
+
+spr_moon_sparks 0 0 0 0 1
+-40  2 1955 3 0 0 0 1965 1 37 
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0
