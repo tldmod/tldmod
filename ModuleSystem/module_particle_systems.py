@@ -643,7 +643,7 @@ particle_systems = [
        ),
 #-*-*-*- Fire Fly End*-*-*-*-#
 #-*-*-*- Moon Beam *-*-*-*-*-*-*#
-    ("moon_beam_1", psf_billboard_2d|psf_global_emit_dir|psf_always_emit|psf_randomize_size, "prt_mesh_moon_beam",#prt_mesh_moon_beam
+  ("moon_beam_1", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size, "prt_mesh_moon_beam",#prt_mesh_moon_beam
      2, 4, 1.2, 0, 0, 0,          #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
      (0.5, 1), (1, 0),            #alpha keys
      (0, 0.4), (1, 0.4),                #red keys
