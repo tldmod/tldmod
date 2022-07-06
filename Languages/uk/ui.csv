@@ -49,7 +49,7 @@ ui_notification_cant_upgrade|(Це неможливо зробити, перед
 ui_lance_control|Управління списом:
 ui_manual_easy|Вручну (Легко)
 ui_manual_hard|Вручну (Складно)
-; ui_campaign_ai|Campaign AI (Unused in TLD):
+ui_campaign_ai|ШІ Кампанії (не використовується в TLD):
 ui_crouch|Стиснутися
 
 # swy: added from this spreadsheet, as requested by our translators:
@@ -57,7 +57,7 @@ ui_crouch|Стиснутися
 ui_are_you_sure_you_want_to_import_the_character|Ви впевнені, що хочете імпортувати цього персонажа?
 ui_explanation_strength|Сила: кожна точка додає +1 очок. Наступні навички не можуть бути розвинені за межами 1/3 сили: залізна шкіра, сильний удар, сильний кидок, сильний постріл.
 ui_explanation_intelligence|Інтелект: Кожне очко інтелекту дає додатковий бал умінь і трішки збільшує приріст XP у деяких випадках. Наступні навички не можуть бути розвинені за межами 1/3 інтелекту: тренер, відстеження, тактика, пошук шляху, пошук шляху, управління запасами, лікування ран, хірургія та надання першої допомоги.
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+ui_explanation_charisma|Харизма: кожне очко збільшує обмеження розміру вашого загону на +1. Наступні навички не можна розвивати далі 1/3 Харизми: Управління в'язнями, Збір рослин, Лідерство, Торгівля.
 ui_delivered_number_damage|Нанесено%dшкоду.
 ui_mission_losses_killed|вбито :
 ui_party_losses|%s : %dпоранено --- %dвбито%d.

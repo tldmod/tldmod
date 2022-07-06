@@ -1,7 +1,7 @@
 ui_at_learning_limit|(ถึงขีดจำกัดการเรียนของเผ่านี้)
 ui_not_enough_skill_points_to_learn|(มีแต้มสกิลไม่เพียงพอ)
 ui_not_enough_attributetype_to_learn_this_skill|(มี%sไม่เพียงพอที่จะเรียนสกิล)
-; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
+ui_explanation_agility|Agility : แต่ละจุดให้คะแนนอาวุธห้าคะแนนและเพิ่มความเร็วอาวุธ 0.5% ทักษะต่อไปนี้ไม่สามารถพัฒนาเกิน 1/3 ของ Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting
 ui_retreated_battle|%sได้เปลี่ยนเส้นทางแล้ว
 ui_riding_skill_not_adequate_to_mount|(สกิลขี่ม้าต่ำเกินไป)
 ui_camp|การกระทำ
@@ -47,14 +47,14 @@ ui_cannot_be_used_on_horseback|ไม่สามารถใช้ได้เ�
 ui_upgrade_to_value|อัพเกรดเป็น %s
 ui_notification_cant_upgrade|(ไม่สามารถอัพเกรดได้เมื่อกำลังทำการให้ทหาร)
 ui_lance_control|การควบคุมหอก:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused in TLD):
+ui_manual_easy|คู่มือ (ง่าย)
+ui_manual_hard|คู่มือ (ยาก)
+ui_campaign_ai|แคมเปญ AI (ไม่ได้ใช้ใน TLD):
 ui_crouch|หมอบ
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
-; ui_are_you_sure_you_want_to_import_the_character|Are you sure you want to import the character?
+ui_are_you_sure_you_want_to_import_the_character|คุณแน่ใจหรือไม่ว่าต้องการนำเข้าตัวละคร?
 ; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
 ; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
 ; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
@@ -136,19 +136,19 @@ ui_mount_horses_e_|%s, ขึ้นม้า!
 ui_hold_fire_e_|%s, หยุดยิง!
 ui_fire_at_will_e_|%s, ยิงได้อย่างอิสระ!
 ; ui_hold_this_position_e_|%s, hold this position!
-; ui_infantry|Infantry
+ui_infantry|ทหารราบ
 ui_archers|พลธนู
-; ui_cavalry|Cavalry
-; ui_companions|Companions
-; ui_everyone_hear_me|Everyone, hear me!
-; ui_everyone|Everyone
-; ui_everyone_around_me|Nearby Soldiers
-; ui_str_hear_me|%s, hear me!
+ui_cavalry|ทหารม้า
+ui_companions|สหาย
+ui_everyone_hear_me|ทุกคน ฟังฉันนะ!
+ui_everyone|ทุกคน
+ui_everyone_around_me|ทหารใกล้เคียง
+ui_str_hear_me|%s, ได้ยินฉัน!
 
-; ui_return|Return
-; ui_factions|Factions
-; ui_troop_upgrades|Troop upgrades
-; ui_hdr_mode|HDR Mode:
-; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)
-; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
-; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)
+ui_return|กลับ
+ui_factions|ฝ่าย
+ui_troop_upgrades|การอัพเกรดกองกำลัง
+ui_hdr_mode|โหมด HDR:
+ui_autoexpore|เปิดรับแสงอัตโนมัติ (แนะนำให้เปิดหากเปิด HDR)
+ui_saving_policy_realistic|ไม่ออกโดยไม่ต้องบันทึก! (ไม่แนะนำ)
+ui_saving_policy_nonrealistic|ออกโดยไม่บันทึก (แนะนำให้เก็บหลายๆ บันทึก)

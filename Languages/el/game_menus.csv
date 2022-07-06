@@ -16,7 +16,7 @@ mno_custom_battle_scenario_6|Επίθεση Πολιορκίας, Ορκ ενά�
 mno_custom_battle_scenario_7|Ενέδρα, Ορκ ενάντια Μίρκγουντ
 mno_custom_battle_scenario_8|Η Τελική Μάχη της Φυλής του Ντούριν
 mno_custom_battle_scenario_88|Κυνηγάει μία Ομάδα Ανιχνευτών Ορκ
-; mno_custom_battle_scenario_11|Test Battles (Tune Balancing!)
+mno_custom_battle_scenario_11|Δοκιμαστικές Μάχες (Ρύθμισε την ισορροπία!)
 mno_custom_battle_scenario_10|Δοκιμαστική μάχη τοπίου
 mno_troll_battle_scenario|Δοκιμαστική Μάχη Τρολ
 mno_warg_battle_scenario|Δοκιμαστική Μάχη Γουόργκ
@@ -194,51 +194,51 @@ mno_i_shall_surv|Θα... επιβιώσω!
 menu_end_game|Η επιλογή έγινε και αποφάσισες να παραιτήσεις την ζωή του τυχοδιώκτη. Πουλάς όλα σου τα όπλα και την πανοπλία, μαζεύεις τα αντικείμενα σου και καλπάζεις προς το ηλιοβασίλεμα....
 mno_end_game_bye|Αντίο.
 menu_cattle_herd|Βρίσκεις μερικά άτομα.
-; mno_cattle_drive_away|Order them to follow.
-; mno_cattle_stop|Bring them to a stop.
-; mno_leave|Leave.
-; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
-; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
+mno_cattle_drive_away|Διέταξε τους να σε ακολουθήσουν.
+mno_cattle_stop|Σταμάτησε τους.
+mno_leave|Φύγε.
+menu_simple_encounter|^^^^^{s2}^Έχεις {reg22} στρατιώτες έτοιμους για μάχη ενάντια στους {reg11} δικούς τους.^^Η μάχη διαδραματίζεται στο {s3}{s4}.^^Οι διαταγές σου;
+mno_encounter_attack|{reg21?Όρμηξε τους: Ετοιμάσου να τους αντιμετωπίσεις}.
 ; mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without you.
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
-; mno_encounter_hide|Hide from the enemy...
-; mno_special_whip|Rush forward toward them cracking the {s4}.
+mno_control_allies_menu|Χρησιμοποίησε επιρροή για να διατάξεις τους συμμάχους σου στον πεδίο την μάχης.
+mno_encounter_hide|Κρύψου από τον εχθρό...
+mno_special_whip|Τρέξε κατά επάνω τους ραγίζοντας το {s4}.
 ; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
-; mno_encounter_leave|Disengage.
-; mno_encounter_retreat|Pull back, leaving some soldiers behind to cover your retreat.
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_encounter_leave|Απομακρύνσου.
+mno_encounter_retreat|Υποχώρησε, αφήνοντας κάποιους στρατιώτες πίσω για να σε καλύπτουν.
+mno_player_control_allies_simple|Διέταξε τους και όρμησέ στον εχθρό 
+mno_player_control_allies_back|Πάνε πίσω...
 mno_hide_close|Συνέχισε...
 ; menu_encounter_retreat_confirm|^^^^^As the party member with the highest tactics skill,   ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,   but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.
-; mno_leave_behind|Go on. The sacrifice of these men will save the rest.
-; mno_dont_leave_behind|No. We leave no one behind.
-; menu_encounter_retreat|^^^^^You tell {reg4} of your troops to hold the enemy while you retreat with the rest of your party.
-; menu_order_attack_begin|^^^^^^          Your troops prepare to attack the enemy.
-; mno_order_attack_begin|Order the attack to begin.
-; mno_call_back|Call them back.
-; menu_order_attack_2|^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}
-; mno_order_attack_continue|Order your soldiers to continue the attack.
-; mno_order_retreat|Call your soldiers back.
+mno_leave_behind|Συνέχισε. Η θυσία αυτών των αντρών θα σώσει τους υπόλοιπους.
+mno_dont_leave_behind|Όχι. Δεν αφήνουμε κανένα πίσω.
+menu_encounter_retreat|^^^^^Λες {reg4} σε έναν στρατιώτη σου να κρατήσει τον εχθρό όσο υποχωρείς με την υπόλοιπη ομάδα.
+menu_order_attack_begin|^^^^^^          Τα στρατεύματα σου ετοιμάζεται να επιτεθεί στον εχθρό.
+mno_order_attack_begin|Διέταξε την έναρξη της επίθεσης.
+mno_call_back|Κάλεσε τους πίσω.
+menu_order_attack_2|^{s4}^Συμμαχικές απώλειες: {s8}^^Εχθρικές απώλειες: {s9}
+mno_order_attack_continue|Διέταξε τους στρατιώτες σου να συνεχίσουν την επίθεση.
+mno_order_retreat|Κάλεσε τους στρατιώτες σου πίσω.
 ; menu_kingdom_army_quest_report_to_army|{s8} sends word that he wishes you to join his new military campaign.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
-; mno_reject|Send a message you are too busy.
-; mno_send_word|Send word you'll join him shortly.
+mno_reject|Στείλε μήνυμα ότι είσαι πολύ απασχολημένος.
+mno_send_word|Στείλε μήνυμα ότι θα τον ακολουθήσεις σύντομα.
 ; menu_kingdom_army_quest_messenger|{s8} sends word that he wishes to speak with you about a task he needs performed.   He requests you to come and see him as soon as possible.
 ; menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
 ; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
 ; menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
-; mno_inspect_troll|Inspect downed troll
+mno_inspect_troll|Παρατήρησε τον πεσμένο τρολλ
 ; menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
 ; mno_pre_join_help_attackers|Move in to help the {s2}.
 ; mno_pre_join_help_defenders|Rush to the aid of the {s1}.
 ; mno_pre_join_help_refugees|Rush to the aid of the {s1}.
-; mno_pre_join_leave|Don't get involved.
+mno_pre_join_leave|Μην συμμετέχεις.
 ; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
-; mno_join_attack|Charge the enemy.
+mno_join_attack|Όρμησε στον εχθρό.
 ; mno_join_order_attack|Order your troops to attack with your allies while you stay back.
 ; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 ; mno_join_attack_bearform|Leap into battle in bear form
-; mno_join_leave|Disengage.
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_join_leave|Απομακρύνσου.
+mno_player_control_allies_join_menu|Διέταξε τους και όρμησέ στον εχθρό 
 ; menu_join_order_attack|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 ; mno_enter|Enter.
 ; menu_battlefields|^^^^^^^^^Select a field...
@@ -262,7 +262,7 @@ mno_hide_close|Συνέχισε...
 ; mno_moria_enter_door|Enter Moria.
 ; mno_cheat_steal_book_door|Get the book
 ; mno_castle_start_siege|Besiege the {reg6?town:castle}.
-; mno_castle_leave|Leave.
+mno_castle_leave|Φύγε.
 ; menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
 ; mno_siege_request_meeting|Call for a meeting with the castle commander.
 ; mno_wait_24_hours|Wait until tomorrow.
@@ -282,7 +282,7 @@ mno_hide_close|Συνέχισε...
 ; menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
 ; mno_siege_defender_join_battle|Join the battle.
 ; mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
-; mno_siege_defender_do_not_join_battle|Don't get involved.
+mno_siege_defender_do_not_join_battle|Μην συμμετέχεις.
 ; menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 ; menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
 ; menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
@@ -388,7 +388,7 @@ mno_intro_next|Συνέχισε...
 mno_evil_war_tut_continue|Συνέχισε...
 ; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
 ; mno_guardian_party_reject|Send a message you cannot join him.
-; mno_guardian_party_send_word|Send word you'll join him shortly.
+mno_guardian_party_send_word|Στείλε μήνυμα ότι θα τον ακολουθήσεις σύντομα.
 ; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
 ; mno_training_continue|Begin training...
 ; menu_alternate_training_conclusion|{s5}

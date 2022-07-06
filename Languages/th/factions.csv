@@ -8,7 +8,7 @@ fac_mordor|มอร์ดอร์
 fac_isengard|ไอเซนการ์ด
 fac_lorien|ลอธโลเรี่ยน
 fac_imladris|อิมลาดริส
-; fac_woodelf|The Woodland Realm
+fac_woodelf|The Woodland Realm
 fac_dale|เดล
 fac_harad|ฮารัด
 fac_rhun|รูห์น
@@ -17,11 +17,11 @@ fac_umbar|อุมบาร์
 fac_moria|โมเรีย
 fac_guldur|โดล กุลดัวร์
 fac_gundabad|เขากุนดาบาด
-; fac_dunland|Dunland
-; fac_beorn|The Vale of Anduin
+fac_dunland|ดันแลนด์
+fac_beorn|หุบเขาแห่งอันดูอิน
 fac_player_supporters_faction|ฝ่ายผู้เล่น
-fac_player_faction|ผู้เล่น
-fac_brigands|โจร
+fac_player_faction|ฝ่ายผู้เล่น
+fac_brigands|พวกโจร
 fac_tribal_orcs|ชนเผ่าออร์ค
 fac_innocents|ผู้บริสุทธิ์
 fac_merchants|พ่อค้า

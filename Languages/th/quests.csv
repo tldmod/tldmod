@@ -1,88 +1,89 @@
 qst_deliver_message|ส่งสาสน์ให้ {s13}
 qst_deliver_message_text|{s9} ขอคุณให้ส่งสาสน์ให้ {s13} {s13} อยู่ที่ {s4} ระหว่างคุณได้รับเควส
 qst_deliver_message_to_enemy_lord|ส่งสาสน์ให้ {s13}
-; qst_deliver_message_to_enemy_lord_text|{s9} asked you to take a message to {s13} of {s15}. {s13} was at {s4} when you were given this quest.
+qst_deliver_message_to_enemy_lord_text|{s9} ขอให้คุณส่งข้อความไปที่ {s13} หรือ {s15} {s13} อยู่ที่ {s4} เมื่อคุณได้รับภารกิจนี้
 qst_raise_troops|ยกทัพ {reg1} {s14}
-; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
-; qst_escort_messenger|Escort the messenger to {s14}
+qst_raise_troops_text|{s9} ขอให้คุณเลี้ยง {reg1} {s14} และนำไปที่ {เขา/เธอ}
+qst_escort_messenger|คุ้มกันผู้ส่งสารไปที่ {s14}
 qst_escort_messenger_text|ไม่มี
 qst_hunt_down_fugitive|ไล่ล่า {s4}
-; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the fugitive named {s4}. He is currently believed to be at {s3}.
+qst_hunt_down_fugitive_text|{s9} ขอให้คุณตามล่าผู้ลี้ภัยที่ชื่อ {s4} ปัจจุบันเชื่อว่าเขาอยู่ที่ {s3}
 qst_bring_back_runaway_serfs|เอาทาสที่หนีกลับคืน
-; qst_bring_back_runaway_serfs_text|{s9} asked you to bring back the three groups of runaway slaves back to {s2}. He said all three groups must be running away in the direction of {s3}.
-qst_follow_spy|ตามสืบไปที่ประชุม
-; qst_follow_spy_text|{s11} asked you to follow the spy that will leave {s12}. You must be careful not to be seen by the spy during his travel, or else he may get suspicious and turn back. Once the spy meets with his accomplice, you are to ambush and capture them and bring them both back to {s11}.
+qst_bring_back_runaway_serfs_text|{s9} ขอให้คุณนำทาสทั้งสามกลุ่มที่หลบหนีกลับมาที่ {s2} เขาบอกว่าทั้งสามกลุ่มจะต้องวิ่งหนีไปทาง {s3}
+qst_follow_spy|ตามสายลับในการประชุม
+qst_follow_spy_text|{s11} ขอให้คุณติดตามสายลับที่จะออกไป {s12} คุณต้องระมัดระวังไม่ให้สายลับเห็นในระหว่างการเดินทางของเขา มิฉะนั้น เขาอาจจะสงสัยและหันหลังกลับ เมื่อสายลับพบกับผู้สมรู้ร่วมคิด คุณจะต้องซุ่มโจมตีและจับพวกเขาและนำพวกเขาทั้งสองกลับมาที่ {s11}
 qst_capture_enemy_hero|จับนายพลศัตรู
-; qst_capture_enemy_hero_text|{s11} asked you to capture an enemy commander.
-; qst_lend_companion|Lend Your Companion {s3} to {s9}
-; qst_lend_companion_text|{s9} asked you to lend your companion {s3} to him for a week.
-; qst_capture_prisoners|Bring {reg1} enemy prisoners
-; qst_capture_prisoners_text|{s9} wanted you to bring him {reg1} enemy prisoners.
-qst_investigate_fangorn|สืบสวนปาสแฟงกอร์น
-; qst_investigate_fangorn_text|{s9} asked you to find out what is going on in the Fangorn forest, and to report back.
-; qst_capture_troll|Capture a Troll
-; qst_capture_troll_text|{s9} asked you to bring back a savage troll for use in his army.
-; qst_kill_troll|Dispatch raging Troll
-; qst_kill_troll_text|{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts.
-; qst_mirkwood_sorcerer|Slay a sorcerer in Mirkwood
-; qst_mirkwood_sorcerer_text|Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him.
-; qst_find_lost_spears|Find the lost spears of king Bladorthin
-; qst_find_lost_spears_text|{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain.
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
-; qst_destroy_scout_camp|Destroy Scout Camp
-; qst_rescue_prisoners|Rescue {reg1} Prisoners
-; qst_rescue_prisoners_text|{s9} wanted you to rescue {reg1} prisoners.
-; qst_scout_enemy_town|Scout Enemy Town
-; qst_scout_enemy_town_text|{s9} asked you to scout around {s13}.
-; qst_dispatch_scouts|Dispatch a Scout Party
-; qst_dispatch_scouts_text|{s9} asked you to dispatch a scout party near {s13}.
-; qst_eliminate_patrols|Eliminate {reg1} Enemy Parties
-; qst_eliminate_patrols_text|{s9} asked you to eliminate {reg1} {s13} enemy parties.
-; qst_lend_surgeon|Lend Your Surgeon {s3} to {s1}
-; qst_lend_surgeon_text|Lend your experienced surgeon {s3} to {s1}.
-; qst_follow_army|Follow {s9}'s Army
+qst_capture_enemy_hero_text|{s11} ขอให้คุณไปจับกุมผู้บัญชาการศัตรู
+qst_lend_companion|ให้ยืมสหายของคุณ {s3} ถึง {s9}
+qst_lend_companion_text|{s9} ขอให้คุณยืมสหายของเขา {s3} เป็นเวลาหนึ่งสัปดาห์
+qst_capture_prisoners|นำ {reg1} นักโทษศัตรู
+qst_capture_prisoners_text|{s9} ต้องการให้คุณนำ {reg1} นักโทษของศัตรูมาให้เขา
+qst_investigate_fangorn|สำรวจป่า Fangorn
+qst_investigate_fangorn_text|{s9} ขอให้คุณค้นหาสิ่งที่เกิดขึ้นในป่า Fangorn และรายงานกลับ
+qst_capture_troll|จับตัว Troll
+qst_capture_troll_text|{s9} ขอให้คุณนำ Troll ป่าเถื่อนกลับมาใช้ในกองทัพของเขา
+qst_kill_troll|ส่ง Troll ที่บ้าคลั่ง
+qst_kill_troll_text|{s9} ขอให้คุณปลดปล่อย {s13} จากการคุกคามของ Troll ที่บ้าคลั่งในเขตชานเมือง
+qst_mirkwood_sorcerer|สังหารพ่อมดในป่า Mirkwood 
+qst_mirkwood_sorcerer_text|Galadriel's power ในการปกป้อง Lothlorien ถูกทำลายโดยพิธีกรรมอันเลวร้ายของพ่อมดแห่ง Dol Guldur แม้ว่าเขาจะเป็นมนุษย์ แต่เขาก็เป็นตัวแทนของภัยคุกคามที่ยิ่งใหญ่ต่อพวก Elves ค้นหาเขาในป่า Mirkwood ไม่ไกลจาก Dol Guldur เอง ใช้การพรางตัวเพื่อป้องกันไม่ให้ถูกจับได้ เนื่องจากมีโอกาสเดียวเท่านั้นที่จะเอาชนะเขาได้
+qst_find_lost_spears|ค้นหา หอก ที่หายไปของกษัตริย์ Bladorthin
+qst_find_lost_spears_text|{s9} ขอให้คุณค้นหาหอกของ Dwarves ที่หายไปซึ่งครั้งหนึ่งเคยสร้างมาเพื่อกษัตริย์ Bladorthin คุณต้องขออนุญาตคนแคระเพื่อค้นหาหอกในส่วนลึกของ Lonely Mountain
+qst_defend_village|ปกป้องหมู่บ้าน
+qst_raid_village|จู่โจมหมู่บ้าน
+qst_destroy_scout_camp|ทำลายค่ายสอดแนม
+qst_rescue_prisoners|ช่วยชีวิต {reg1} นักโทษ
+qst_rescue_prisoners_text|{s9} ต้องการให้คุณช่วยนักโทษ {reg1} คน
+qst_scout_enemy_town|เมืองหน่วยสอดแนมของศัตรู
+qst_scout_enemy_town_text|{s9} ขอให้คุณสำรวจรอบๆ {s13}
+qst_dispatch_scouts|ส่งหน่วยสอดแนมในปาร์ตี้
+qst_dispatch_scouts_text|{s9} ขอให้คุณส่งหน่วยสอดแนมไปใกล้ๆ {s13}
+qst_eliminate_patrols|กำจัด {reg1} ฝ่ายศัตรู
+qst_eliminate_patrols_text|{s9} ขอให้คุณกำจัด {reg1} {s13} ฝ่ายศัตรู
+qst_lend_surgeon|ยืมศัลยแพทย์ของคุณ {s3} ถึง {s1}
+qst_lend_surgeon_text|ยืมศัลยแพทย์ผู้มีประสบการณ์ของคุณ {s3} ถึง {s1}
+qst_follow_army|ติดตาม {s9}'s Army
 qst_follow_army_text|ไม่มี
-; qst_report_to_army|Report to {s13}
+qst_report_to_army|รายงานไปยัง {s13}
 qst_report_to_army_text|ไม่มี
-; qst_deliver_cattle_to_army|Deliver {reg3} units of food to {s13}
+qst_deliver_cattle_to_army|ส่งอาหาร {reg3} หน่วย ไปที่ {s13}
 qst_deliver_cattle_to_army_text|ไม่มี
-; qst_join_siege_with_army|Join the Siege of {s14}
+qst_join_siege_with_army|เข้าร่วมการโอมล้อม {s14}
 qst_join_siege_with_army_text|ไม่มี
-; qst_scout_waypoints|Scout {s13}, {s14} and {s15}
+qst_scout_waypoints|หน่วยสอดแนม {s13}, {s14} และ {s15}
 qst_scout_waypoints_text|ไม่มี
-; qst_move_cattle_herd|Move {s12} to {s13}
-; qst_move_cattle_herd_text|The Elder of {s10} asked you to move some {s12} to {s13}.
-; qst_escort_merchant_caravan|Escort Supply Train to {s8}
-; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
-; qst_deliver_wine|Deliver {reg5} Units of {s6} to {s4}
-; qst_deliver_wine_text|The {s9} of {s3} asked you to deliver {reg5} units of {s6} to {s4} in 7 days.
-; qst_troublesome_bandits|Hunt Down Troublesome Goblins
-; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town.
-; qst_deal_with_looters|Deal with Tribal Orcs
-; qst_deal_with_looters_text|The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}.
-; qst_deal_with_night_bandits|Deal with Rogue Goblins
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night goblins at {s14}.
-; qst_deliver_food|Supply {s3} with {reg5} Units of food
-; qst_deliver_food_text|The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days.
-; qst_deliver_iron|Supply {s3} with {reg5} Units of {s6}
-; qst_deliver_iron_text|The {s9} of {s3} asked you to bring him {reg5} units of {s6}.
-; qst_tld_introduction|Go to your faction leader.
+qst_move_cattle_herd|ย้าย {s12} ไปที่ {s13}
+qst_move_cattle_herd_text|ผู้อาวุโสของ {s10} ขอให้คุณย้ายบางอย่าง {s12} ไปที่ {s13}
+qst_escort_merchant_caravan|คุ้มกันเสบียงที่กำลังขนส่งไปที่ {s8}
+qst_escort_merchant_caravan_text|คุ้มกันเสบียงที่กำลังขนส่งไปที่ {s8} และพูดคุยกับพวกเขาเมื่ออยู่ใกล้
+qst_deliver_wine|ส่ง {reg5} หน่วยของ {s6} ถึง {s4}
+qst_deliver_wine_text|{s9} จาก {s3} ขอให้คุณส่ง {reg5} หน่วยของ {s6} ไปยัง {s4} ใน 7 วัน
+qst_troublesome_bandits|ตามล่า Goblins เจ้าปัญหา
+qst_troublesome_bandits_text|{s9} จาก {s4} ขอให้คุณตามล่า Goblins เจ้าปัญหาในบริเวณใกล้เคียงเมือง
+qst_deal_with_looters|จัดการกับเผ่า Orcs
+qst_deal_with_looters_text|ผู้อาวุโสของ {s4} ขอให้คุณจัดการกับชนเผ่า Orc บริเวณรอบๆนี้ {s4}
+qst_deal_with_night_bandits|จัดการกับ Rogue Goblins
+qst_deal_with_night_bandits_text|ผู้เฒ่าแห่ง {s14} ขอให้คุณจัดการกับ night goblins ที่ {s14}
+qst_deliver_food|จัดหา {s3} ด้วย {reg5} หน่วยของอาหาร
+qst_deliver_food_text|{s9} จาก {s3} ขอให้คุณนำอาหาร {reg5} หน่วยมาให้เขาใน 10 วัน
+qst_deliver_iron|จัดหา {s3} ด้วย {reg5} หน่วยของ {s6}
+qst_deliver_iron_text|{s9} จาก {s3} ขอให้คุณนำ {reg5} หน่วยจำนวน {s6} มาให้เขา
+qst_tld_introduction|ไปหาหัวหน้าฝ่ายของคุณ
 qst_tld_introduction_text|ไม่มี
-; qst_treebeard_kill_orcs|Defeat the tree-chopping orc party
-; qst_treebeard_kill_orcs_text|Treebeard wants you find and defeat the orcs cutting down trees in Fangorn.
-; qst_oath_of_vengeance|Oath of Vengeance
-; qst_oath_of_vengeance_text|Enraged by the death of {s1}, you have sworn an oath of vengeance upon the forces of {s2}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
-; qst_deliver_gift|Deliver a {s4} of {s1} from {s2} to {s3}
-; qst_deliver_gift_text|You have requested to deliver a {s4} of {s1} to {s3} from {s2}.
-; qst_ring_hunters|Ring Hunters
-; qst_ring_hunters2|Ring Hunters - Completed
-; qst_deliver_message_hobbit|Concerning Hobbits
-; qst_blank_quest_01|Defend Refugees
-; qst_blank_quest_02|Hunt Down Refugees
-; qst_blank_quest_03|Sea Battle
-; qst_blank_quest_04|Kill {s35} {s6} {s7}
-; qst_blank_quest_05|Kill {s35} {s36} troops.
+qst_treebeard_kill_orcs|เอาชนะปาร์ตี้ Orc ตัดต้นไม้
+qst_treebeard_kill_orcs_text|Treebeard ต้องการให้คุณค้นหาและกำจัดพวก Orc ที่โค่นต้นไม้ในป่า Fangor
+qst_oath_of_vengeance|คำสาบานแห่งการล้างแค้น
+qst_oath_of_vengeance_text|ด้วยความโกรธที่การตายของ {s1} คุณสาบานว่าจะแก้แค้นกองกำลังของ {s2} ตอนนี้คุณต้องทำลายกองทัพของ {s2} ให้ได้มากที่สุดในอีกไม่กี่วันข้างหน้า คุณตระหนักดีว่าผู้ติดตามของคุณได้เห็นคำสาบานนี้และคุณไม่ต้องการที่จะกลายเป็นที่รู้จักในฐานะผู้สาบาน สนุกสนานกันอย่างเป็นบ้าเป็นหลังของการนองเลือดต้องเริ่มต้นขึ้น!
+qst_deliver_gift|ส่ง {s4} จาก {s1} จาก {s2} ถึง {s3}
+qst_deliver_gift_text|คุณได้ร้องขอให้ส่ง {s4} จาก {s1} ถึง {s3} จาก {s2}
+qst_ring_hunters|นักล่าแหวน
+qst_ring_hunters2|นักล่าแหวน - เสร็จสมบูรณ์
+qst_deliver_message_hobbit|ว่าด้วยเรื่องฮอบบิท
+qst_blank_quest_01|ปกป้องผู้ลี้ภัย
+qst_blank_quest_02|ตามล่าผู้ลี้ภัย
+qst_blank_quest_03|การต่อสู้ทางทะเล
+qst_blank_quest_04|สังหาร {s35} {s6} {s7}
+qst_blank_quest_05|สังหารทหาร {s35} {s36} นาย
+qst_blank_quest_06|เอาชนะ {s35} ในการต่อสู้
 
 
 
@@ -92,13 +93,12 @@ qst_tld_introduction_text|ไม่มี
 
 
 
-
-; qst_blank_quest_16|Reinforce Center
-; qst_blank_quest_17|Slay {reg22} {s6} in battles
-
+qst_blank_quest_16|ศูนย์เสริมกำลังเสรืมแกร่ง
+qst_blank_quest_17|สังหาร {reg22} {s6} ในการต่อสู้
 
 
 
-; qst_guardian_party_quest|Isengard's Last Stand
-; qst_quests_end|Quests End
-; qst_quests_end_text|.
+
+qst_guardian_party_quest|Isengard's คนสุดท้าย
+qst_quests_end|ภารกิจสิ้นสุด
+qst_quests_end_text|.
