@@ -5989,7 +5989,7 @@ mission_templates = [ # not used in game
 ]),
 
 ############ 808 stealth & rescue templates
-( "infiltration_stealth_mission", mtf_battle_mode,  -1,
+( "infiltration_stealth_mission", mtf_battle_mode,  -1, #sorcerer stealth mission
   "Default_town_visit", 
 	[(0,mtef_visitor_source|mtef_team_1,af_override_horse,                1,1,[]),( 1,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),  
 	( 2,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),( 3,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),  
@@ -6018,7 +6018,8 @@ mission_templates = [ # not used in game
 
 	#(5,0,0,[],[(call_script, "script_infiltration_mission_update_companion_casualties")]),
 
-	(ti_tab_pressed,0,0,[],[(try_begin),(this_or_next|eq, "$battle_won", 1),(eq, "$battle_won", 2),(finish_mission),(try_end)]),
+	(ti_tab_pressed,0,0,[],[(try_begin),(this_or_next|eq, "$battle_won", 1),(eq, "$battle_won", 2),(finish_mission), (else_try), (eq, "$cheat_mode", 1), #always allow retreat in cheat mode
+		(question_box,"str_do_you_want_to_retreat"),(try_end)]),
 	(ti_question_answered,0,0,[],[(store_trigger_param_1, ":local0"),(eq, ":local0", 0),(finish_mission)]),
 	(1,4,ti_once,[(main_hero_fallen)],[(call_script, "script_rescue_failed"),(assign, "$battle_won", 2),(set_mission_result, -1),(finish_mission)]),
 	(1,0,ti_once,[(eq, "$sneak_tut", 0)],[
@@ -6116,6 +6117,11 @@ mission_templates = [ # not used in game
 
 	(5,0,0,[(store_mission_timer_a, ":time"),(ge, ":time", 25)],[ 
 	  (try_begin),
+        (ge, "$meta_alarm", 10),
+        (display_message, "@You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close."),
+        (finish_mission, 5),
+        (fail_quest, "qst_mirkwood_sorcerer"),
+      (else_try),
 		(eq, "$alarm_level", 1),
 		(assign, "$alarm_level", 0),
 		(display_message, "@Alarm_Level_is_now_at_0!", 4289396650),
@@ -6123,6 +6129,7 @@ mission_templates = [ # not used in game
 	  (else_try),
 		(eq, "$alarm_level", 2),
 		(assign, "$alarm_level", 1),
+        (val_add, "$meta_alarm", 1),
 		(display_message, "@Alarm_Level_is_now_at_1!", 4289396650),
 		(reset_mission_timer_a),
 	  (try_end)]),
@@ -6188,7 +6195,7 @@ mission_templates = [ # not used in game
 		(try_end),
 	(try_end)]),
 ]),
-( "infiltration_combat_mission",mtf_battle_mode,0,
+( "infiltration_combat_mission",mtf_battle_mode,0, #sorcerer battle first stage
   "You_lead_your_men_to_battle.",
 	[(0,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),( 1,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
 	( 2,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),( 3,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
@@ -6209,46 +6216,66 @@ mission_templates = [ # not used in game
 	(32,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),(33,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),
 	(34,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),(35,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),
 	(36,mtef_visitor_source|mtef_team_2, 271,aif_start_alarmed,1,[]),
-	],tld_common_wb_muddy_water+[
-	(0,0,ti_once,[],[	(call_script, "script_infiltration_mission_synch_agents_and_troops"),
+	],tld_common_wb_muddy_water+tld_common_battle_scripts+[
+	
+    (0,0,ti_once,[],[	(call_script, "script_infiltration_mission_synch_agents_and_troops"),
 							(call_script, "script_infiltration_mission_set_hit_points"),
 							(call_script, "script_wounded_hero_cap_mission_health")]),
 	(5,0,0,[],[(call_script, "script_infiltration_mission_update_companion_casualties")]),
-	(1,4,ti_once,[(main_hero_fallen),],[	(call_script, "script_rescue_failed"),
+	
+    (1,4,ti_once,[(main_hero_fallen),],[	(call_script, "script_rescue_failed"),
 												(call_script, "script_infiltration_mission_update_companion_casualties"),
 												(set_mission_result, -1),
 												(finish_mission)]),
-	(5,0,ti_once,[	(this_or_next|eq, "$rescue_stage", 2),
-						(eq, "$rescue_stage", 4),
-						(store_mission_timer_a, reg13),
-						(ge, reg13, 90),
-					],[
-						(try_begin),
-							(ge, "$meta_alarm", 9),
-							(set_visitor, 21, "$guard_troop8", 0),(set_visitor, 22, "$guard_troop8", 0),(set_visitor, 23, "$guard_troop8", 0),(set_visitor, 24, "$guard_troop8", 0),(set_visitor, 25, "$guard_troop8", 0),
-						(else_try),
-							(is_between, "$meta_alarm", 6, 9),
-							(set_visitor, 21, "$guard_troop3", 0),(set_visitor, 22, "$guard_troop3", 0),(set_visitor, 23, "$guard_troop3", 0),(set_visitor, 24, "$guard_troop3", 0),(set_visitor, 25, "$guard_troop3", 0),
-						(else_try),
-							(is_between, "$meta_alarm", 5, 7),
-							(set_visitor, 21, "$guard_troop2", 0),(set_visitor, 22, "$guard_troop2", 0),(set_visitor, 23, "$guard_troop2", 0),(set_visitor, 24, "$guard_troop2", 0),(set_visitor, 25, "$guard_troop2", 0),
-						(try_end),
-						(reset_mission_timer_a)]),
-	(2,0,0,[(eq, "$rescue_stage", 5)],[
-				(get_player_agent_no, ":player"),
-				(agent_get_position, pos5, ":player"),
-				(entry_point_get_position, pos6, 31),
-				(try_begin),
-					(get_distance_between_positions, ":dist", pos5, pos6),
-					(try_begin),
-						(neg|ge, ":dist", 400),
-				#        (assign, "$dungeon_rescue", 1),
-						(call_script, "script_infiltration_mission_update_companion_casualties"),
-						(start_mission_conversation, "$rescue_convo_troop"),
-					(try_end),
-				(try_end)]),
-	(ti_tab_pressed,0,0,[],[(try_begin),(eq, "$battle_won", 1),(finish_mission),(try_end)]),
-	(ti_question_answered,0,0,[],[(store_trigger_param_1, ":answer"),(eq, ":answer", 0),(finish_mission)]),
+	
+   #Reinforcements, increase meta alarm, check for defeat
+   (20,0,0,[(neq, "$battle_won", 1)],
+   [(try_begin),
+        (le, "$meta_alarm", 3),
+        (set_visitor, 21, "$guard_troop1", 0),(set_visitor, 22, "$guard_troop2", 0),(set_visitor, 23, "$guard_troop3", 0),(set_visitor, 24, "$guard_troop4", 0),(set_visitor, 25, "$guard_troop5", 0),
+    (else_try),
+        (is_between, "$meta_alarm", 3, 6),
+        (set_visitor, 21, "$guard_troop3", 0),(set_visitor, 22, "$guard_troop4", 0),(set_visitor, 23, "$guard_troop5", 0),(set_visitor, 24, "$guard_troop6", 0),(set_visitor, 25, "$guard_troop7", 0),
+    (else_try),
+        (ge, "$meta_alarm", 6),
+        (set_visitor, 21, "$guard_troop6", 0),(set_visitor, 22, "$guard_troop7", 0),(set_visitor, 23, "$guard_troop8", 0),(set_visitor, 24, "$guard_troop9", 0),(set_visitor, 25, "$guard_troop10", 0),
+    (else_try),
+        (ge, "$meta_alarm", 8),
+        (display_message, "@You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close."),
+        (finish_mission, 7),
+        (fail_quest, "qst_mirkwood_sorcerer"),
+    (try_end),
+    (val_add, "$meta_alarm", 1),
+    (display_message, "@Enemy reinforcements arrived."),
+    ]),
+	
+    #unused leftover from evacuation missions
+    # (2,0,0,[(eq, "$rescue_stage", 5)],[
+				# (get_player_agent_no, ":player"),
+				# (agent_get_position, pos5, ":player"),
+				# (entry_point_get_position, pos6, 31),
+				# (try_begin),
+					# (get_distance_between_positions, ":dist", pos5, pos6),
+					# (try_begin),
+						# (neg|ge, ":dist", 400),
+				# #        (assign, "$dungeon_rescue", 1),
+						# (call_script, "script_infiltration_mission_update_companion_casualties"),
+						# (start_mission_conversation, "$rescue_convo_troop"),
+					# (try_end),
+				# (try_end)]),
+                
+	(ti_tab_pressed,0,0, [],
+        [(try_begin),
+            (all_enemies_defeated),
+            (neg|main_hero_fallen),
+            (assign, "$battle_won", 1),
+            (display_message, "@Venture deeper into the forest and find a way onward."),
+        (else_try),
+            (eq, "$cheat_mode", 1), #always allow retreat in cheat mode
+            (question_box,"str_do_you_want_to_retreat"),
+        (try_end)]),
+	
+    (ti_question_answered,0,0,[],[(store_trigger_param_1, ":answer"),(eq, ":answer", 0),(finish_mission)]),
 ]),
 
 # This mission template could be improved for better clarity
@@ -6268,7 +6295,7 @@ mission_templates = [ # not used in game
 	(22 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]),(23 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]), 
 	(24 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]),(25 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]), 
 	(26 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]) 
-	],tld_common_wb_muddy_water+[	
+	],tld_common_wb_muddy_water+tld_common_battle_scripts+[ 	
 	(0,0,ti_once,[],[ (call_script, "script_infiltration_mission_synch_agents_and_troops"),
 						  (call_script, "script_infiltration_mission_set_hit_points"),
 						  (call_script, "script_wounded_hero_cap_mission_health")]),
@@ -6287,6 +6314,7 @@ mission_templates = [ # not used in game
 	(finish_mission),
 	]),
 
+    #reinforcements
 	(5,0, ti_once, [
 		  (try_for_agents, ":agent"),
 			(agent_is_ally|neg, ":agent"),
@@ -6308,6 +6336,7 @@ mission_templates = [ # not used in game
 			(set_visitor, 21, "$guard_troop2", 0),(set_visitor, 22, "$guard_troop2", 0),(set_visitor, 23, "$guard_troop2", 0),(set_visitor, 24, "$guard_troop2", 0),(set_visitor, 25, "$guard_troop2", 0),
 		 (try_end),
 		 (reset_mission_timer_a)]),
+
 	(5,0,0, [],  [
 		(try_for_agents, ":agent"),
 			(agent_is_ally|neg, ":agent"),
@@ -6315,15 +6344,18 @@ mission_templates = [ # not used in game
 			(agent_get_troop_id, ":troop", ":agent"),
 			(eq, ":troop", "trp_black_numenorean_sorcerer"),
 			(agent_get_slot, ":slot1", ":agent", 1),
-			(try_begin),
+			
+            (try_begin),
 				(eq, ":slot1", 0),
 				(entry_point_get_position, pos5, 30),
 				(agent_set_scripted_destination, ":agent", pos5),
+                (agent_play_sound, ":agent", "snd_ghost_ambient_long"),
 				(agent_set_slot, ":agent", 1, 1),
 			(else_try),
 				(eq, ":slot1", 1),
-				(agent_set_animation, ":agent", "anim_defend_up_staff_keep"),
-		        	(play_sound, snd_ghost_ambient_long, 0), #spooky
+				(agent_set_animation, ":agent", "anim_cheer_player"),
+                (particle_system_burst, "psys_scene_fog_black", pos5, 100),
+		        	#(play_sound, snd_ghost_ambient_long, 0), #spooky
 				(assign, ":numenemies", 0),
 				(try_for_agents, ":enemies"),
 					(agent_is_alive, ":enemies"),
@@ -6331,10 +6363,16 @@ mission_templates = [ # not used in game
 					(val_add, ":numenemies", 1),
 				(try_end),
 				(try_begin),
-					(neg|gt, ":numenemies", 21), #InVain: Adjusted this to fit the bigger bodyguard
-					(agent_set_slot, ":agent", 1, 2),
-				#(else_try),
-				#	
+                    (val_div, ":numenemies", "$stealth_results"), #normalize enemy count
+					(neg|gt, ":numenemies", 10), 
+					(agent_set_slot, ":agent", 1, 2), #activate sorcerer
+				(else_try),
+                    (get_player_agent_no, ":player_agent"),
+                    (agent_get_position, pos7, ":player_agent"),
+                    (get_distance_between_positions, ":dist", pos5, pos7),
+                    (le, ":dist", 500),
+                    (agent_set_slot, ":agent", 1, 2), #activate sorcerer
+                    #(display_message, "@player is close"),
 				(try_end),
 			(else_try),
 				(eq, ":slot1", 2),
@@ -6342,14 +6380,21 @@ mission_templates = [ # not used in game
 				(try_begin),
 					(neg|ge, ":rnd", 2),
 					(entry_point_get_position, pos6, 31),
-					(agent_set_scripted_destination, ":agent", pos6),
+                       ] + (is_a_wb_mt==1 and [
+                       (agent_start_running_away, ":agent", pos6),
+                       ] or [(agent_set_scripted_destination, ":agent", pos6),]) + [
+                    (agent_set_speed_limit, ":agent", 5),
 					(display_message, "@The_sorcerer_is_fleeing!_Kill_him!", 4294967040),
 					(agent_set_slot, ":agent", 1, 3),
+                    (agent_set_slot, ":agent", slot_agent_hp_shield, 0),
+                    (stop_all_sounds, 0),
 				(else_try),
 					(ge, ":rnd", 2),
 					(agent_clear_scripted_mode, ":agent"),
-          (display_message, "@The_sorcerer_has_joined_the_fight!_Kill_him!", 4294967040),			  
+                    (display_message, "@The_sorcerer_has_joined_the_fight!_Kill_him!", 4294967040),			  
 					(agent_set_slot, ":agent", 1, 4),
+                    (agent_set_slot, ":agent", slot_agent_hp_shield, 50),
+                    (stop_all_sounds, 0),
 				(try_end),
 			(else_try),
 				(eq, ":slot1", 3),
@@ -6363,8 +6408,18 @@ mission_templates = [ # not used in game
 				(agent_set_slot, ":agent", 1, 4),
 				(set_mission_result, -1),
 				(finish_mission),
+            ] + (is_a_wb_mt==1 and [
+            (else_try),
+                (get_player_agent_no, ":player_agent"),
+                (agent_get_position, pos7, ":player_agent"),
+                (agent_get_position, pos5, ":agent"),
+                (get_distance_between_positions, ":dist", pos5, pos7),
+                (le, ":dist", 500),
+                (agent_stop_running_away, ":agent"),
+            ] or []) + [
 			(try_end),
 		(try_end)]),
+
 	(2,0,0, [(neg|quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,2)],[
 		  (try_for_agents, ":deadenemy"),
 			(agent_is_human, ":deadenemy"),
@@ -6375,7 +6430,7 @@ mission_templates = [ # not used in game
 			(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,2),
 			(display_message, "@The_sorcerer_is_dead!", 4294967040),
 			(call_script, "script_succeed_quest","qst_mirkwood_sorcerer"),
-      (finish_mission,5), #InVain So you don't have to search for the remaining enemies once the sorcerer's dead																	   
+            (finish_mission,5), #InVain So you don't have to search for the remaining enemies once the sorcerer's dead																	   
 			(eq,"$rescue_stage",1), #dummy usage of global var
 		#    (scene_prop_get_instance, ":local1", [opmask_scene_prop]528, 0),
 		#    (prop_instance_get_position, pos1, ":local1"),
@@ -6383,6 +6438,7 @@ mission_templates = [ # not used in game
 		#    (position_move_z, pos2, -1500, 0),
 		#    (prop_instance_animate_to_position, ":local1", pos2, pos1),
 		  (try_end)]),
+
 	(1,60, ti_once, [
 		(store_mission_timer_a, ":time"),
 		(ge, ":time", 10),
@@ -6393,11 +6449,16 @@ mission_templates = [ # not used in game
 		(assign, "$battle_won", 1),
 		(set_mission_result, 1),
 		(display_message, "@The battle is won!"),
+        (display_message, "@Venture deeper into the forest and find a way onward."),
 		(call_script, "script_infiltration_mission_update_companion_casualties"),
 		],[
 		(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,2),
 		(finish_mission)]),
-	(ti_tab_pressed,0,0, [],[(try_begin),(eq, "$battle_won", 1),(finish_mission),(try_end)]),
+	(ti_tab_pressed,0,0, [],
+        [(try_begin),
+		(eq, "$cheat_mode", 1), #always allow retreat in cheat mode
+		(question_box,"str_do_you_want_to_retreat"),
+        (try_end)]),
 	(ti_question_answered,0,0, [],[(store_trigger_param_1, ":local0"),(eq, ":local0", 0),(finish_mission)]),
 ]),
 ( "battle_wall_mission",mtf_battle_mode,0,

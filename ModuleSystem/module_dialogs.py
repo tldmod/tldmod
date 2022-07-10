@@ -6817,19 +6817,22 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr,"lord_active_mission_1", [ 
                             (check_quest_active,"qst_mirkwood_sorcerer"),
-                            (check_quest_succeeded, "qst_mirkwood_sorcerer")],
+                            (check_quest_succeeded, "qst_mirkwood_sorcerer"),
+                            (eq, "$g_talk_troop", "trp_lorien_lord")],
 "The sorcerer of Mirkwood has been slain, my Lady.", "lord_mission_sorcerer_completed",[]],
 
 # CppCoder: Need someone to improve this dialog below...
 [anyone|plyr,"lord_active_mission_1", [
                             (check_quest_active,"qst_mirkwood_sorcerer"),
                             (check_quest_failed, "qst_mirkwood_sorcerer"),
+                            (eq, "$g_talk_troop", "trp_lorien_lord"),
           (quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,0),],
 "Forgive me, my Lady, but urgent matters have prevented me from slaying the sorcerer, and in the meantime he has fled.", "lord_mission_sorcerer_failed",[]], 
 
 [anyone|plyr,"lord_active_mission_1", [
                             (check_quest_active,"qst_mirkwood_sorcerer"),
                             (check_quest_failed, "qst_mirkwood_sorcerer"),
+                            (eq, "$g_talk_troop", "trp_lorien_lord"),
           (quest_slot_eq,"qst_mirkwood_sorcerer",slot_quest_current_state,3),],
 "The sorcerer of Mirkwood still lives. We interrupted his rituals but he has fled.", "lord_mission_sorcerer_failed",[]],
 

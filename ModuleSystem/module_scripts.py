@@ -1953,6 +1953,7 @@ scripts = [
     (assign, "$mouse_coordinates", 0), #wb only
     (assign, "$attacker_archer_melee",0),
     (assign, "$attacker_team_3", 5),
+    (assign, "$rescue_convo_troop", 3),
 
 	(val_mul, "$battle_renown_total", "$hold_f1"),
 	(val_mul, "$battle_renown_total", "$dormant_spawn_radius"),
@@ -1962,7 +1963,7 @@ scripts = [
     (val_mul, "$gate_aggravator_agent", "$mouse_coordinates"),
     (val_mul, "$gate_aggravator_agent", "$attacker_archer_melee"),
     (val_mul, "$attacker_archer_melee", "$attacker_team_3"),
-    
+    (val_mul, "$attacker_archer_melee", "$rescue_convo_troop"),   
 
 	#Kham - Squelch compiler warnings END
 	
@@ -2107,6 +2108,7 @@ scripts = [
     (troop_set_slot, "trp_i4_gunda_orc_berserker", slot_troop_hp_shield, 20),
     (troop_set_slot, "trp_i5_khand_pit_master", slot_troop_hp_shield, 30),
     (troop_set_slot, "trp_player", slot_troop_hp_shield, 1),
+    (troop_set_slot, "trp_black_numenorean_sorcerer", slot_troop_hp_shield, 100),
     
 	(try_for_range, ":NPC_hp_shield", "trp_npc1", heroes_begin),
 		(troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
@@ -21695,7 +21697,7 @@ scripts = [
  ]),
 #script_initialize_sorcerer_quest
 ("initialize_sorcerer_quest",[
-	(store_random, "$meta_alarm", 10),
+	(assign, "$meta_alarm", 0), #disabled for now, was random before
 	(assign, "$rescue_courtyard_scene_1", "scn_tld_sorcerer_forest_a"),
 	(assign, "$rescue_stealth_scene_1", "scn_tld_sorcerer_forest_b"),
 	(assign, "$rescue_final_scene", "scn_tld_sorcerer_forest_c"),
@@ -21720,19 +21722,29 @@ scripts = [
 	(set_visitor, 10, "trp_black_numenorean_sorcerer", 0),
 #InVain: defining sorcerer's bodyguard by player level instead of randomly. Did not touch guard_troops above in case they're used anywhere else.
 	(store_character_level, ":player_level", "trp_player"),
+    (assign, ":spawn_number", "$stealth_results"), #1-4
+    (val_min, ":spawn_number", 3),
 
 	(try_begin),
 		(lt, ":player_level", 20),
-			#InVain: First 5 entry points are around the sorcerer
-			(set_visitors, 11, "trp_i2_mordor_orc", 3),(set_visitors, 12, "trp_a2_mordor_orc_archer", 3),(set_visitors, 13, "trp_i2_mordor_num_renegade", 3),(set_visitors, 14, "trp_i3_mordor_num_warrior", 2),(set_visitors, 15, "trp_i4_mordor_num_vet_warrior", 1),
-			#InVain: Last 5 entry points are further away, troops will arrive later. If he flees, you will encounter them on the way.
-			(set_visitors, 16, "trp_i3_mordor_large_orc", 2),(set_visitors, 17, "trp_i4_mordor_fell_orc", 2),(set_visitors, 18, "trp_a2_mordor_orc_archer", 2),(set_visitors, 19, "trp_i3_mordor_large_orc", 2),(set_visitors, 20, "trp_i4_mordor_num_vet_warrior", 2),
+			
+            #InVain: First 5 entry points are around the sorcerer
+			(set_visitors, 11, "trp_i2_mordor_orc", ":spawn_number"),(set_visitors, 12, "trp_a2_mordor_orc_archer", ":spawn_number"),(set_visitors, 13, "trp_i2_mordor_num_renegade", ":spawn_number"),
+            (ge, "$meta_alarm", 2),(set_visitors, 14, "trp_i3_mordor_num_warrior", ":spawn_number"),(set_visitors, 15, "trp_i4_mordor_num_vet_warrior", 1),
+			
+            #InVain: Last 5 entry points are further away, troops will arrive later. If he flees, you will encounter them on the way.
+			(ge, "$meta_alarm", 5),(set_visitors, 16, "trp_i3_mordor_large_orc", 2),(set_visitors, 17, "trp_i4_mordor_fell_orc", 2),
+            (ge, "$meta_alarm", 7),(set_visitors, 18, "trp_a2_mordor_orc_archer", 2),(set_visitors, 19, "trp_i3_mordor_large_orc", 2),(set_visitors, 20, "trp_i4_mordor_num_vet_warrior", 1),
 	(else_try),
 		(ge, ":player_level", 20), #Don't change numbers, only troop types. Sorcerer's behavior (flee or join the fight) is conditioned by number of remaining troops.
-			#InVain: First 5 entry points are around the sorcerer
-			(set_visitors, 11, "trp_i3_mordor_large_orc", 3),(set_visitors, 12, "trp_a3_mordor_large_orc_archer", 3),(set_visitors, 13, "trp_i3_mordor_num_warrior", 3),(set_visitors, 14, "trp_i4_mordor_num_vet_warrior", 2),(set_visitors, 15, "trp_i5_mordor_num_champion", 1),
-			#InVain: Last 5 entry points are further away, troops will arrive later. If he flees, you will encounter them on the way.
-			(set_visitors, 16, "trp_i4_mordor_fell_orc", 2),(set_visitors, 17, "trp_i4_mordor_fell_uruk", 2),(set_visitors, 18, "trp_a4_mordor_fell_orc_archer", 2),(set_visitors, 19, "trp_i4_mordor_fell_orc", 2),(set_visitors, 20, "trp_i5_mordor_num_champion", 2),
+			
+            #InVain: First 5 entry points are around the sorcerer
+			(set_visitors, 11, "trp_i3_mordor_large_orc", ":spawn_number"),(set_visitors, 12, "trp_a3_mordor_large_orc_archer", ":spawn_number"),(set_visitors, 13, "trp_i3_mordor_num_warrior", ":spawn_number"),
+            (ge, "$meta_alarm", 2),(set_visitors, 14, "trp_i4_mordor_num_vet_warrior", ":spawn_number"),(set_visitors, 15, "trp_i5_mordor_num_champion", 1),
+			
+            #InVain: Last 5 entry points are further away, troops will arrive later. If he flees, you will encounter them on the way.
+			(ge, "$meta_alarm", 5),(set_visitors, 16, "trp_i4_mordor_fell_orc", 2),(set_visitors, 17, "trp_i4_mordor_fell_uruk", 2),
+            (ge, "$meta_alarm", 7),(set_visitors, 18, "trp_a4_mordor_fell_orc_archer", 2),(set_visitors, 19, "trp_i4_mordor_fell_orc", 2),(set_visitors, 20, "trp_i5_mordor_num_champion", 1),
 	(try_end),
 	
 #	(try_begin),
@@ -21899,41 +21911,47 @@ scripts = [
 ("set_meta_stealth",[
 	(assign, "$current_companions_total", 0),
 	(assign, "$meta_stealth", 0),
-	(try_for_range, ":faction", "fac_mission_companion_1", "fac_mission_companion_10"),
+	(try_for_range, ":faction", "fac_mission_companion_1", "fac_mission_companion_11"),
 		(faction_get_slot, ":troop", ":faction", 1),
 		(neg|eq, ":troop", 0),
-		(store_skill_level, reg1, skl_pathfinding, ":troop"),
+		(store_skill_level, reg1, skl_athletics, ":troop"),
+        (val_sub, reg1, 3),
+        (val_max, reg1, 1),
+        (val_mul, reg1, 2),
+        (try_begin),
+            (call_script, "script_cf_is_a_night_troop", ":troop"),
+            (val_add, reg1, 2),
+        (try_end),
+        (try_begin),
+            (troop_is_hero, ":troop"),
+            (store_skill_level, reg3, "skl_persuasion", ":troop"),
+            (val_add, reg1, reg3),
+        (try_end),
 		(val_add, "$meta_stealth", reg1),
 		(val_add, "$current_companions_total", 1),
 	(try_end),
 	(try_begin),
-		(ge, "$current_companions_total", 1),
-		(assign, reg2, "$current_companions_total"),
-		(val_add, reg2, 1),
-		(store_skill_level, reg1, skl_pathfinding, "trp_player"),
-		(val_add, "$meta_stealth", reg1),
+        (ge, "$current_companions_total", 1),
+		(store_mul, reg2, "$current_companions_total", "$current_companions_total"),
+		#(store_skill_level, reg1, skl_athletics, "trp_player"),
+        (party_get_skill_level, ":party_wildcraft", "p_main_party", skl_persuasion), #if companions chosen, take party wildcraft
+        (val_max, ":party_wildcraft", 1), #avoid /0 
+        (val_div, reg2, ":party_wildcraft"),
+        (val_add, reg2, 2),
+        (val_max, reg2, 1), #avoid /0      
+        
+        (val_mul, ":party_wildcraft", 2),
+        (val_div, ":party_wildcraft", 3),
+		(val_add, "$meta_stealth", ":party_wildcraft"),
 		(val_div, "$meta_stealth", reg2),
-		# (try_begin),
-			# (gt, "$pick_stage", 0),
-			# (neg|ge, "$pick_stage", 3),
-		# (else_try),
-			# (ge, "$pick_stage", 3),
-			# (neg|ge, "$pick_stage", 5),
-			# (val_sub, "$meta_stealth", 1),
-			# (val_max, "$meta_stealth", 0),
-		# (else_try),
-			# (ge, "$pick_stage", 5),
-			# (neg|ge, "$pick_stage", 9),
-			# (val_sub, "$meta_stealth", 2),
-			# (val_max, "$meta_stealth", 0),
-		# (else_try),
-			# (ge, "$pick_stage", 9),
-			# (val_sub, "$meta_stealth", 3),
-			# (val_max, "$meta_stealth", 0),
-		# (try_end),
+        (val_clamp, "$meta_stealth", 1, 11),
 	(else_try),
 		(eq, "$current_companions_total", 0),
-		(store_skill_level, reg1, skl_pathfinding, "trp_player"),
+		(store_skill_level, ":player_athletics", skl_athletics, "trp_player"), #2/3 of player athletics + wildcraft
+        (store_skill_level, ":player_wildcraft", skl_persuasion, "trp_player"),
+        (store_add, reg1, ":player_athletics", ":player_wildcraft"),
+        (val_mul, reg1, 2),
+        (val_div, reg1, 3),
 	#    (val_sub, reg1, "$old_ranger_path_modifier"),
 		(val_add, "$meta_stealth", reg1),
 		(val_add, "$meta_stealth", 2),
@@ -21945,22 +21963,24 @@ scripts = [
 		 (else_try),(neg|eq, "$current_companions_total", 0),(val_add, "$meta_stealth", 1),
 		(try_end),
 	(try_end),
+    # (assign, reg66, "$meta_stealth"),
+    # (display_message, "@meta_stealth: {reg66}"),
 ]), 
 #script_crunch_stealth_results
 ("crunch_stealth_results",[
-	(assign, reg10, "$meta_alarm"),
-	(val_sub, reg10, "$meta_stealth"),
-	(val_mul, reg10, 5),
-	(store_random, reg5, 100),
-	(val_add, reg5, reg10),
+	(store_mul, ":stealth_malus", "$meta_alarm", 0), #disabled for now
+	(store_mul, ":stealth_bonus", "$meta_stealth", 6), #variable, 6-60
+	(store_random_in_range, ":chance", 60, 100), 
+    (val_add, ":chance", ":stealth_malus"),
+	(val_sub, ":chance", ":stealth_bonus"),
 	(assign, reg11, "$meta_stealth"),
 	(assign, reg12, "$meta_alarm"),
-	(assign, reg14, reg10),
-	(assign, reg13, reg5),
-	(try_begin),    (neg|ge, reg5, 15),    (assign, "$stealth_results", 1),
-	 (else_try),(is_between, reg5, 15, 50),(assign, "$stealth_results", 2),
-	 (else_try),(is_between, reg5, 50, 85),(assign, "$stealth_results", 3),
-	 (else_try),        (ge, reg5, 85),    (assign, "$stealth_results", 4),
+	(assign, reg14, ":stealth_bonus"),
+	(assign, reg13, ":chance"),
+	(try_begin),    (le, ":chance", 15),    (assign, "$stealth_results", 1), #should not happen at low stealth
+	 (else_try),(is_between, ":chance", 15, 50),(assign, "$stealth_results", 2),
+	 (else_try),(is_between, ":chance", 50, 85),(assign, "$stealth_results", 3), #should not happen at high stealth
+	 (else_try),        (ge, ":chance", 85),    (assign, "$stealth_results", 4),
 	(try_end),
 ]), 
 #script_rescue_information
