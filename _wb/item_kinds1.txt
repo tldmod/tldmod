@@ -1800,25 +1800,25 @@ itemsfile version 2
  itm_harad_pantherhelm Panther_Guard_Cap Panther_Guard_Cap 1  harad_pantherhelm 0  65548 0 600 123731968 1 92 25 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_harad_khopesh Harad_Khopesh Harad_Khopesh 1  harad_khopesh 0  4259842 9223388529822793742 340 150 2.5 92 0 0 0 0 30720 90 0 80 0 256 30
+ itm_harad_khopesh Harad_Khopesh Harad_Khopesh 1  harad_khopesh 0  4259842 9223388529822793742 340 156672 2.5 92 0 0 0 0 30720 90 0 80 0 256 30
 0
 
- itm_black_snake_sword Harad_Heavy_Falchion Harad_Heavy_Falchion 1  black_snake_sword 0  4259842 9223388529822793742 340 150 2.5 91 0 0 0 0 30720 100 0 71 0 256 30
+ itm_black_snake_sword Harad_Cobra_Sword Harad_Cobra_Sword 2  harad_sword_cobra_low 0  harad_sword_cobra 156672  4259842 9223388529822793742 360 156672 2.5 91 0 0 0 0 30720 97 0 80 0 256 30
 0
 
- itm_harad_heavy_sword Harad_Heavy_Sword Harad_Heavy_Sword 1  harad_heavy_sword 0  4259842 9223388529822793742 340 150 2.5 94 0 0 0 0 30720 92 0 80 0 256 30
+ itm_harad_heavy_sword Harad_Dragon_Sword Harad_Dragon_Sword 2  harad_sword_dragon_low 0  harad_sword_dragon 156672  4259842 9223388529822793742 400 156672 2.5 95 0 0 0 0 32768 92 0 95 0 256 32
 0
 
- itm_horandor_a Harad_Scimitar Harad_Scimitar 1  horandor_a 0  4259842 9223388529822793742 320 150 2.5 91 0 0 0 0 22528 96 0 90 0 256 22
+ itm_horandor_a Harad_Scimitar Harad_Scimitar 1  horandor_a 0  4259842 9223388529822793742 320 156672 2.5 91 0 0 0 0 22528 96 0 90 0 256 22
 0
 
- itm_skirmisher_sword Harad_Skirmisher_Sword Harad_Skirmisher_Sword 1  skirmisher_sword 0  4259842 9223388529822793742 300 150 2.5 90 0 0 0 0 30720 96 0 60 0 256 30
+ itm_skirmisher_sword Harad_Skirmisher_Sword Harad_Skirmisher_Sword 1  skirmisher_sword 0  4259842 9223388529822793742 300 156672 2.5 90 0 0 0 0 30720 96 0 60 0 256 30
 0
 
- itm_harad_sabre Harad_Sabre Harad_Sabre 1  harad_sabre 0  4259842 9223388529822793742 320 150 2.5 91 0 0 0 0 30720 96 0 70 0 256 30
+ itm_harad_sabre Harad_Salamander_Sword Harad_Salamander_Sword 2  harad_sword_salamander_low 0  harad_sword_salamander 156672  4259842 9223388529822793742 320 156672 2.5 91 0 0 0 0 27648 102 0 68 0 256 27
 0
 
- itm_harad_mace Far_Harad_Mace Far_Harad_Mace 1  harad_mace 0  4259842 9223388529822793742 350 150 2.5 93 0 0 0 12 30720 96 0 50 0 512 542
+ itm_harad_mace Far_Harad_Mace Far_Harad_Mace 1  harad_mace 0  4259842 9223388529822793742 350 156672 2.5 93 0 0 0 12 30720 96 0 50 0 512 542
 0
 
  itm_far_harad_2h_mace Far_Harad_Two_Handed_Mace Far_Harad_Two_Handed_Mace 1  far_harad_2h_mace 0  279515037699 9223635925844623584 500 271496 4.5 92 0 0 0 14 28672 100 0 74 0 256 540
