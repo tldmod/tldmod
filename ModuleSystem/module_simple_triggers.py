@@ -1150,6 +1150,16 @@ simple_triggers = [
           (party_set_slot, ":cur_center", slot_center_last_player_alarm_hour, ":cur_hours"),
         (try_end),
       (try_end),
+
+      ##Kham - Piggyback on trigger for Player Controlled allies
+      (try_begin),
+        (neq, "$player_control_allies",0),
+        (assign, "$player_control_allies",0),
+        (try_begin),
+          (eq, "$cheat_mode",1),
+          (display_message, "@DEBUG: Player Control Allies RESET"),
+        (try_end),
+      (try_end),
   ]),
   
   # (34) Check active items for their deactivation hour
@@ -1367,15 +1377,6 @@ simple_triggers = [
       (assign, "$g_player_party_icon", ":new_icon"),
       (party_set_icon, "p_main_party", ":new_icon"),
       
-      ##Kham - Piggyback on trigger for Player Controlled allies
-      (try_begin),
-        (eq, "$player_control_allies",1),
-        (assign, "$player_control_allies",0),
-        (try_begin),
-          (eq, "$cheat_mode",1),
-          (display_message, "@DEBUG: Player Control Allies RESET"),
-        (try_end),
-      (try_end),
   ]),
   
   # (38) Update how good a target player is for bandits

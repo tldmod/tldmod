@@ -2779,7 +2779,7 @@ slot_troop_gm_companion_2 = 163
 slot_party_has_companion = 310
 
 # Control allies
-player_control_allies_inf = 7
+player_control_allies_inf = 3
 
 # Troll Hiring Constants
 slot_troop_troll_armoured_variant = 164 #Gets the armoured variant of a troll troop.

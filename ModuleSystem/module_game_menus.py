@@ -5132,8 +5132,8 @@ game_menus = [
 
       # Kham - Control Allies for Inf Points
       ("control_allies_menu", [
-      	#(eq, "$cheat_mode", 1),
-  	    (call_script, "script_get_faction_rank", "$players_kingdom"), (assign, ":rank", reg0), #rank points to rank number 0-9
+        (store_faction_of_party, ":allied_faction", "$g_ally_party"),
+  	    (call_script, "script_get_faction_rank", ":allied_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
      	(ge, ":rank", 3), #Must be at least rank 3
       	(gt, "$g_starting_strength_friends", 0), # we have allies
       	(neq, "$player_control_allies", 1),
@@ -5146,7 +5146,7 @@ game_menus = [
       	(try_end),
       	(gt, ":num_lords", 0), # have to have lords in battle
       	],
-      	 "Use Influence to Command Your Allies in the Field.", [
+      	 "Use influence to command your allies in the field.", [
       	 	(jump_to_menu, "mnu_player_control_allies"),
       ]),
 
@@ -5281,7 +5281,7 @@ game_menus = [
      (try_end),
      (gt, ":num_lords", 0), # have to have lords in battle
      (assign, reg39, ":num_lords"),
-     (store_div, ":divide", ":num_companions", 40),
+     (store_div, ":divide", ":num_companions", 100),
      (val_max, ":divide", 0),
      (try_begin),
         (gt, ":num_lords", 1),
@@ -5290,10 +5290,18 @@ game_menus = [
      (val_add, ":base_inf_cost", ":num_lords"),
      (val_add, ":base_inf_cost", ":divide"),
      (assign, reg40, ":base_inf_cost"),
-     (str_store_string, s60, "@There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points."),
+     (store_faction_of_party, ":allied_faction", "$g_ally_party"),
+     (faction_get_slot, reg41, ":allied_faction",  slot_faction_influence),
+     (try_begin),
+        (ge, reg41, reg40),
+        (str_store_string, s60, "@There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence."),
+      (else_try),
+        (str_store_string, s60, "@There are {reg39} allied commanders in this battle. You don't have enough influence to assume command."),
+      (try_end),
     ],[
-		("player_control_allies_simple", [], "Command them and charge the enemy", [
-			(call_script, "script_spend_influence_of", reg40, "$players_kingdom"),
+		("player_control_allies_simple", [(ge, reg41, reg40),], "Command them and charge the enemy", [
+			(store_faction_of_party, ":allied_faction", "$g_ally_party"),
+            (call_script, "script_spend_influence_of", reg40, ":allied_faction"),
           	(assign, "$player_control_allies", 1),
   			(try_begin),
   			   # talk with hostile troops after you have chose to attack
@@ -6703,8 +6711,8 @@ game_menus = [
 
       # Kham - Control Allies for Inf Points
       ("control_allies_join_menu", [
-      	#(eq, "$cheat_mode", 1),
-  	    (call_script, "script_get_faction_rank", "$players_kingdom"), (assign, ":rank", reg0), #rank points to rank number 0-9
+        (store_faction_of_party, ":allied_faction", "$g_ally_party"),
+  	    (call_script, "script_get_faction_rank", ":allied_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
      	(ge, ":rank", 3), #Must be at least rank 3
       	(neq, "$player_control_allies", 1),
       	(party_get_num_companion_stacks, ":num_stacks", "p_collective_friends"),
@@ -6716,7 +6724,7 @@ game_menus = [
       	(try_end),
       	(gt, ":num_lords", 0), # have to have lords in battle
       	],
-      	 "Use Influence Points to Command Your Allies in the Field.", [
+      	 "Use influence to command your allies in the field.", [
       		(jump_to_menu, "mnu_player_control_allies_join"),
       ]),] + (is_a_wb_menu==1 and [("join_attack_bearform",[
           # BEAR SHAPESHIFT OPTION
@@ -6778,7 +6786,7 @@ game_menus = [
      (try_end),
      (gt, ":num_lords", 0), # have to have lords in battle
      (assign, reg39, ":num_lords"),
-     (store_div, ":divide", ":num_companions", 40),
+     (store_div, ":divide", ":num_companions", 100),
      (val_max, ":divide", 0),
      (try_begin),
         (gt, ":num_lords", 1),
@@ -6787,10 +6795,18 @@ game_menus = [
      (val_add, ":base_inf_cost", ":num_lords"),
      (val_add, ":base_inf_cost", ":divide"),
      (assign, reg40, ":base_inf_cost"),
-     (str_store_string, s60, "@There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points."),
+     (store_faction_of_party, ":allied_faction", "$g_ally_party"),
+     (faction_get_slot, reg41, ":allied_faction",  slot_faction_influence),
+     (try_begin),
+        (ge, reg41, reg40),
+        (str_store_string, s60, "@There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence."),
+      (else_try),
+        (str_store_string, s60, "@There are {reg39} allied commanders in this battle. You don't have enough influence to assume command."),
+      (try_end),
     ],[
-		("player_control_allies_join_menu", [], "Command them and charge the enemy", [
-			(call_script, "script_spend_influence_of", reg40, "$players_kingdom"),
+		("player_control_allies_join_menu", [(ge, reg41, reg40)], "Command them and charge the enemy", [
+            (store_faction_of_party, ":allied_faction", "$g_ally_party"),
+			(call_script, "script_spend_influence_of", reg40, ":allied_faction"),
 			(assign, "$player_control_allies", 1),
 			(party_set_next_battle_simulation_time, "$g_encountered_party", -1),
 			(assign, "$g_battle_result", 0),
