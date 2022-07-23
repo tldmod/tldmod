@@ -1084,4 +1084,32 @@ particle_systems = [
      20,                       #rotation speed
      1                        #rotation damping
     ),
+
+    #low-resolution fires, half number of particles, increased size
+    ("village_fire_big_lowres", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size|psf_randomize_rotation, "prt_mesh_fire_1",
+     15, 1.0, 0, -1.2, 25.0, 10.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.2, 0.7), (1, 0),        #alpha keys
+     (0.2, 1.0), (1, 0.9),      #red keys
+     (0.2, 0.7),(1, 0.3),       #green keys
+     (0.2, 0.2), (1, 0.0),      #blue keys
+     (0, 3),   (1, 9),          #scale keys
+     (2.2, 2.2, 0.2),           #emit box size
+     (0, 0, 0.0),               #emit velocity
+     0.0,                       #emit dir randomness
+     250,                       #rotation speed
+     0.3                        #rotation damping
+    ),
+    ("village_fire_smoke_big_lowres", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size|psf_randomize_rotation, "prt_mesh_smoke_1",
+     10, 3, 0.3, -1, 50.0, 10.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.5, 0.15), (1, 0),        #alpha keys
+     (0.2, 0.4), (1, 0.2),      #red keys
+     (0.2, 0.4),(1, 0.2),       #green keys
+     (0.2, 0.4), (1, 0.2),      #blue keys
+     (0, 12),   (1, 16),          #scale keys
+     (2, 2, 1),           #emit box size
+     (0, 0, 5),               #emit velocity
+     0.0,                       #emit dir randomness
+     0,                       #rotation speed
+     0.1                        #rotation damping
+    ), 
 ]

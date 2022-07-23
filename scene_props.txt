@@ -6038,6 +6038,9 @@ spr_gondor_arch_1_cwe 0 0 damask_arka_b bo_damask_arka_b 0
 spr_gondor_arch_2 0 0 gondor_arches bo_gondor_arches 0
 
 
+spr_gondor_arch_2_bend 0 0 gondor_arches_bend bo_gondor_arches_bend 0
+
+
 spr_gondor_arch_3 0 0 gondor_arches_2 bo_gondor_arches_2 0
 
 
@@ -6124,6 +6127,10 @@ spr_fire_sparks_b 0 0 0 0 1
 
 spr_moon_sparks 0 0 0 0 1
 -40  2 1955 3 0 0 0 1965 1 37 
+
+
+spr_Village_fire_big_lowpoly 0 0 0 0 1
+-40  3 1965 1 67 1955 3 0 0 100 1965 1 68 
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0

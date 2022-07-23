@@ -3277,6 +3277,7 @@ scene_props = [
 ( "gondor_tower_8_cwe"                      ,0,"damask_watch_tower_a","bo_damask_watch_tower_a",[]),
 ( "gondor_arch_1_cwe"                               ,0,"damask_arka_b","bo_damask_arka_b",[]),
 ( "gondor_arch_2"                               ,0,"gondor_arches","bo_gondor_arches",[]), #TLD
+( "gondor_arch_2_bend"                               ,0,"gondor_arches_bend","bo_gondor_arches_bend",[]), #TLD
 ( "gondor_arch_3"                               ,0,"gondor_arches_2","bo_gondor_arches_2",[]), #TLD
 ( "gondor_mt_stairs_cwe"                        ,0,"damask_dom_a_ladder","bo_damask_dom_a_ladder",[]),
 ( "gondor_column_a_cwe"                     ,0,"damask_klumba_a","bo_damask_klumba_a",[]),
@@ -3330,6 +3331,14 @@ scene_props = [
 ("moon_sparks",0,"0","0",[(ti_on_scene_prop_init,
     [(set_position_delta,0,0,0),
      (particle_system_add_new, "psys_moon_beam_paricle_1"), ]),]),
+("Village_fire_big_lowpoly",0,"0","0",
+   [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_village_fire_big_lowres"),
+     (set_position_delta,0,0,100),
+     (particle_system_add_new, "psys_village_fire_smoke_big_lowres"),
+    ]),
+]),
+
 
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),

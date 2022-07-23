@@ -65,3 +65,5 @@ psys_game_blood_rand_2 = 63
 psys_scene_fog_black = 64
 psys_scene_fog_red = 65
 psys_scene_fog_grey = 66
+psys_village_fire_big_lowres = 67
+psys_village_fire_smoke_big_lowres = 68
