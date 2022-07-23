@@ -5132,11 +5132,12 @@ game_menus = [
 
       # Kham - Control Allies for Inf Points
       ("control_allies_menu", [
+        (gt, "$g_starting_strength_friends", 0), # we have allies
+        (gt, "$g_ally_party", 0), #double check
+      	(neq, "$player_control_allies", 1),
         (store_faction_of_party, ":allied_faction", "$g_ally_party"),
   	    (call_script, "script_get_faction_rank", ":allied_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
      	(ge, ":rank", 3), #Must be at least rank 3
-      	(gt, "$g_starting_strength_friends", 0), # we have allies
-      	(neq, "$player_control_allies", 1),
       	(party_get_num_companion_stacks, ":num_stacks", "p_collective_friends"),
       	(assign, ":num_lords", 0),
       	(try_for_range, ":stack_no", 0, ":num_stacks"),
@@ -6711,10 +6712,11 @@ game_menus = [
 
       # Kham - Control Allies for Inf Points
       ("control_allies_join_menu", [
+        (neq, "$player_control_allies", 1),
+        (gt, "$g_ally_party", 0), #double check
         (store_faction_of_party, ":allied_faction", "$g_ally_party"),
   	    (call_script, "script_get_faction_rank", ":allied_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
      	(ge, ":rank", 3), #Must be at least rank 3
-      	(neq, "$player_control_allies", 1),
       	(party_get_num_companion_stacks, ":num_stacks", "p_collective_friends"),
       	(assign, ":num_lords", 0),
       	(try_for_range, ":stack_no", 0, ":num_stacks"),
