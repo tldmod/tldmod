@@ -406,12 +406,12 @@ trp_c4_arnor_horseman|Cavallerizzo Dunedain
 trp_c4_arnor_horseman_pl|Cavallerizzi Dunedain
 trp_c5_arnor_knight|Cavaliere di Arnor
 trp_c5_arnor_knight_pl|Cavalieri di Arnor
-trp_a3_arnor_ranger|Guardia della Foresta Dunedain
-trp_a3_arnor_ranger_pl|Guardie della Foresta Dunedain
-trp_a4_arnor_vet_ranger|Guardia della Foresta Dunedain Veterana
-trp_a4_arnor_vet_ranger_pl|Guardie della Foresta Dunedain Veterane
-trp_a5_arnor_master_ranger|Mastro Ranger di Arnor
-trp_a5_arnor_master_ranger_pl|Mastri Rangers di Arnor
+trp_a3_arnor_ranger|Ramingo Dunedain
+trp_a3_arnor_ranger_pl|Raminghi Dunedain
+trp_a4_arnor_vet_ranger|Ramingo Dunedain Veterano
+trp_a4_arnor_vet_ranger_pl|Raminghi Dunedain Veterani
+trp_a5_arnor_master_ranger|Mastro Ramingo di Arnor
+trp_a5_arnor_master_ranger_pl|Mastri Raminghi di Arnor
 trp_i1_rohan_youth|Giovane di Rohan
 trp_i1_rohan_youth_pl|Giovani di Rohan
 trp_i2_guardsman_of_rohan|Guardia di Rohan
@@ -540,8 +540,8 @@ trp_c5_khand_kataphrakt|Catafratto Variago
 trp_c5_khand_kataphrakt_pl|Catafratti Variaghi
 trp_c5_khand_lance_kataphrakt|Lanciere Variago
 trp_c5_khand_lance_kataphrakt_pl|Lancieri Variaghi
-trp_i4_khand_halberdier|Spadaccino di Khand
-trp_i4_khand_halberdier_pl|Spadaccini di Khand
+trp_i4_khand_halberdier|Falciatore di Khand
+trp_i4_khand_halberdier_pl|Falciatori di Khand
 trp_i5_khand_halberd_master|Mastro d'Alabarda Variago
 trp_i5_khand_halberd_master_pl|Mastri d'Alabarda Variaghi
 trp_i3_khand_pitfighter|Combattente delle Fosse di Khand
@@ -609,23 +609,23 @@ trp_ac3_isen_warg_rider_pl|Cavalca-Warg di Isengard
 trp_ac4_isen_white_hand_rider|Cavaliere della Mano Bianca
 trp_ac4_isen_white_hand_rider_pl|Cavalieri della Mano Bianca
 trp_warg_ghost_1b|Warg
-trp_warg_ghost_1b_pl|Wargs
+trp_warg_ghost_1b_pl|Warg
 trp_warg_ghost_1c|Warg
-trp_warg_ghost_1c_pl|Wargs
+trp_warg_ghost_1c_pl|Warg
 trp_warg_ghost_1d|Warg
-trp_warg_ghost_1d_pl|Wargs
+trp_warg_ghost_1d_pl|Warg
 trp_warg_ghost_a1b|Warg
-trp_warg_ghost_a1b_pl|Wargs
+trp_warg_ghost_a1b_pl|Warg
 trp_warg_ghost_a1c|Warg Corazzato
-trp_warg_ghost_a1c_pl|Wargs Corazzati
+trp_warg_ghost_a1c_pl|Warg Corazzati
 trp_warg_ghost_a2b|Warg Corazzato
-trp_warg_ghost_a2b_pl|Wargs Corazzati
+trp_warg_ghost_a2b_pl|Warg Corazzati
 trp_warg_ghost_a2c|Warg Corazzato
-trp_warg_ghost_a2c_pl|Wargs Corazzati
+trp_warg_ghost_a2c_pl|Warg Corazzati
 trp_warg_ghost_a3a|Warg Corazzato
-trp_warg_ghost_a3a_pl|Wargs Corazzati
+trp_warg_ghost_a3a_pl|Warg Corazzati
 trp_warg_ghost_h|Warg Gigante
-trp_warg_ghost_h_pl|Wargs Giganti
+trp_warg_ghost_h_pl|Warg Giganti
 trp_a2_isen_uruk_tracker|Inseguitore Uruk-Hai
 trp_a2_isen_uruk_tracker_pl|Inseguitori Uruk-Hai
 trp_a3_isen_large_uruk_tracker|Grande Braccatore Uruk-Hai
@@ -667,9 +667,9 @@ trp_i5_mordor_black_uruk_pl|Uruk Neri di Barad-Dûr
 trp_i5_mordor_uruk_standard_bearer|Portastendardo di Mordor
 trp_i5_mordor_uruk_standard_bearer_pl|Portastendardi di Mordor
 trp_troll_of_moria|Troll di Caverna
-trp_troll_of_moria_pl|Trolls di Caverna
+trp_troll_of_moria_pl|Troll di Caverna
 trp_armoured_troll|Troll Corazzato
-trp_armoured_troll_pl|Trolls Corazzati
+trp_armoured_troll_pl|Troll Corazzati
 trp_olog_hai|Olog-Hai di Mordor
 trp_olog_hai_pl|Olog-Hai di Mordor
 trp_ent_old|Ent
@@ -687,9 +687,9 @@ trp_i3_mordor_large_orc_pl|Grandi Orchi di Mordor
 trp_i4_mordor_fell_orc|Orco Crudele di Mordor
 trp_i4_mordor_fell_orc_pl|Orchi Crudeli di Mordor
 trp_c3_mordor_warg_rider|Cavalca-Warg di Gorgoroth
-trp_c3_mordor_warg_rider_pl|Cavalca-Wargs di Gorgoroth
+trp_c3_mordor_warg_rider_pl|Cavalca-Warg di Gorgoroth
 trp_c4_mordor_great_warg_rider|Grande Cavalca-Warg di Udun
-trp_c4_mordor_great_warg_rider_pl|Grandi Cavalca-Wargs di Udun
+trp_c4_mordor_great_warg_rider_pl|Grandi Cavalca-Warg di Udun
 trp_i2_mordor_morgul_orc|Orco di Minas Morgul
 trp_i2_mordor_morgul_orc_pl|Orchi di Minas Morgul
 trp_i4_mordor_fell_morgul_orc|Orco Crudele di Minas Morgul
@@ -1074,8 +1074,8 @@ trp_smith_wosgiliath|Gardil
 trp_smith_wosgiliath_pl|la fucina improvvisata
 trp_smith_calembel|Agronom
 trp_smith_calembel_pl|la fucina
-trp_smith_hannun|Fal, il Fabbro dei Ranger
-trp_smith_hannun_pl|Equipaggiamento di scorta dei Ranger
+trp_smith_hannun|Fal, il Fabbro dei Raminghi
+trp_smith_hannun_pl|Equipaggiamento di scorta dei Raminghi
 trp_smith_candros|Kalimdor
 trp_smith_candros_pl|la fucina
 trp_smith_edoras|Eaoden, il Mastro dell'Acciaio
@@ -1372,7 +1372,7 @@ trp_elder_pinnath|Saggio della Tribù di Pinnath
 trp_elder_pinnath_pl|la città
 trp_elder_ethring|Borgomastro di Calembel
 trp_elder_ethring_pl|la città
-trp_elder_henneth|Borgomastro dei Ranger
+trp_elder_henneth|Borgomastro dei Raminghi
 trp_elder_henneth_pl|Il Nascondiglio
 trp_elder_cairandros|Borgomastro di Cair Andros
 trp_elder_cairandros_pl|L'Isola Fortezza
@@ -1589,43 +1589,43 @@ trp_npc20|Zigûrphel
 trp_werewolf|Mannaro
 trp_werewolf_pl|Mannari
 trp_moria_troll|Troll di Caverna
-trp_moria_troll_pl|Trolls di Caverna
+trp_moria_troll_pl|Troll di Caverna
 trp_moria_vet_troll|Troll di Caverna Addestrato
-trp_moria_vet_troll_pl|Trolls di Caverna Addestrati
+trp_moria_vet_troll_pl|Troll di Caverna Addestrati
 trp_moria_armored_troll|Troll di Caverna Corazzato
-trp_moria_armored_troll_pl|Trolls di Caverna Corazzati
+trp_moria_armored_troll_pl|Troll di Caverna Corazzati
 trp_gunda_troll|Troll di Montagna
-trp_gunda_troll_pl|Trolls di Montagna
+trp_gunda_troll_pl|Troll di Montagna
 trp_gunda_vet_troll|Troll di Montagna Addestrato
-trp_gunda_vet_troll_pl|Trolls di Montagna Addestrati
+trp_gunda_vet_troll_pl|Troll di Montagna Addestrati
 trp_gunda_placeholder|Troll di Montagna Addestrato
-trp_gunda_placeholder_pl|Trolls di Montagna Addestrati
+trp_gunda_placeholder_pl|Troll di Montagna Addestrati
 trp_isen_troll|Troll di Isengard
-trp_isen_troll_pl|Trolls di Isengard
+trp_isen_troll_pl|Troll di Isengard
 trp_isen_vet_troll|Troll di Isengard Addestrato
-trp_isen_vet_troll_pl|Trolls di Isengard Addestrati
+trp_isen_vet_troll_pl|Troll di Isengard Addestrati
 trp_isen_armored_troll|Troll di Isengard Corazzato
-trp_isen_armored_troll_pl|Trolls di Isengard Corazzati
+trp_isen_armored_troll_pl|Troll di Isengard Corazzati
 trp_mordor_troll|Troll di Mordor
-trp_mordor_troll_pl|Trolls di Mordor
+trp_mordor_troll_pl|Troll di Mordor
 trp_mordor_vet_troll|Troll di Mordor Addestrato
-trp_mordor_vet_troll_pl|Trolls di Mordor Addestrati
+trp_mordor_vet_troll_pl|Troll di Mordor Addestrati
 trp_mordor_olog_hai|Olog-Hai di Mordor
 trp_mordor_olog_hai_pl|Olog-Hai di Mordor
 trp_troll_placeholder_1|Troll di Caverna
-trp_troll_placeholder_1_pl|Trolls di Caverna
+trp_troll_placeholder_1_pl|Troll di Caverna
 trp_troll_placeholder_2|Troll di Caverna
-trp_troll_placeholder_2_pl|Trolls di Caverna
+trp_troll_placeholder_2_pl|Troll di Caverna
 trp_troll_placeholder_3|Troll di Caverna
-trp_troll_placeholder_3_pl|Trolls di Caverna
+trp_troll_placeholder_3_pl|Troll di Caverna
 trp_troll_placeholder_4|Troll di Caverna
-trp_troll_placeholder_4_pl|Trolls di Caverna
+trp_troll_placeholder_4_pl|Troll di Caverna
 trp_troll_placeholder_5|Troll di Caverna
-trp_troll_placeholder_5_pl|Trolls di Caverna
+trp_troll_placeholder_5_pl|Troll di Caverna
 trp_troll_placeholder_6|Troll di Caverna
-trp_troll_placeholder_6_pl|Trolls di Caverna
+trp_troll_placeholder_6_pl|Troll di Caverna
 trp_wild_troll|Troll di Caverna Selvaggio
-trp_wild_troll_pl|Trolls di Caverna Selvaggi
+trp_wild_troll_pl|Troll di Caverna Selvaggi
 trp_ent|Ent
 trp_ent_pl|Ent
 trp_mountain_goblin|Goblin di Montagna

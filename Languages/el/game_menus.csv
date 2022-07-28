@@ -1,12 +1,12 @@
-menu_start_game_1|Για τι πολεμάς;
-mno_start_good|Η αρχή μιας νέας εποχής
+menu_start_game_1|^^^^^^^^^^Για τι πολεμάς;
+mno_start_good|Η Αρχή μιας νέας Εποχής
 mno_start_evil|Το ΛΥΚΟΦΩΣ ενός άνδρα
 mno_faction_intros|Μάθε για τις διάφορες φατρίες της Μέσης-Γης
 mno_go_bback|Πίσω
-menu_start_phase_2|Μέση Γη. Μία σκιά απλώνετε από την Ανατολή, και σκοτεινά πράγματα έρχονται που ήταν καιρό κρυμμένα. Οι ελεύθεροι άνθρωποι ετοιμάζονται για πόλεμο, τόσο τρομερό που δεν έχει δει ο κόσμος εδώ και αιώνες. Άνθρωποι, Ξωτικά, Νάνοι και Ορκ: όλοι θα παίξουν το κομμάτι τους. Τώρα τι, όμως, θα δούμε στο μέλλον...
-mno_go_forth|Προχόρα μπροστά στον δρόμο πού διάλεξες
-mno_change_tld_options|Άλλαξε επιλογές TLD.
-menu_start_game_3|Διαλέξτε το σενάριο σας:
+menu_start_phase_2|^^^^^ Μέση Γη. Μία σκιά μεγαλώνει στην Ανατολή,^ και σκοτεινά πράγματα επιστρέφουν που ήταν καιρό κρυμμένα.^ Οι ελεύθεροι άνθρωποι ετοιμάζονται για πόλεμο, παρόμοιο του οποίου δεν έχει γίνει εδώ και μια εποχή.^ Άνθρωποι, Ξωτικά, Νάνοι και Ορκ: όλοι θα παίξουν το κομμάτι τους.^^ Πιο κομμάτι, ωστόσο, μένει να φανεί...
+mno_go_forth|Προχώρα στον δρόμο πού διάλεξες...
+mno_change_tld_options|Άλλαξε τις επιλογές TLD.
+menu_start_game_3|^^^^^^^^Διαλέξτε το σενάριο σας:
 mno_custom_battle_scenario_1|Μάχη, Γκόντορ ενάντια Χαράντ
 mno_custom_battle_scenario_12|Επιλέξτε φατριές για την μάχη
 mno_custom_battle_scenario_3|Μάχη, Ξωτικά ενάντια Μαύρων Νουμενοριανών
@@ -199,7 +199,7 @@ mno_cattle_stop|Σταμάτησε τους.
 mno_leave|Φύγε.
 menu_simple_encounter|^^^^^{s2}^Έχεις {reg22} στρατιώτες έτοιμους για μάχη ενάντια στους {reg11} δικούς τους.^^Η μάχη διαδραματίζεται στο {s3}{s4}.^^Οι διαταγές σου;
 mno_encounter_attack|{reg21?Όρμηξε τους: Ετοιμάσου να τους αντιμετωπίσεις}.
-; mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without you.
+mno_encounter_order_attack|Διέταξε τα στρατεύματα σου {reg21?attack:face them} χωρίς εσένα.
 mno_control_allies_menu|Χρησιμοποίησε επιρροή για να διατάξεις τους συμμάχους σου στον πεδίο την μάχης.
 mno_encounter_hide|Κρύψου από τον εχθρό...
 mno_special_whip|Τρέξε κατά επάνω τους ραγίζοντας το {s4}.
@@ -414,7 +414,7 @@ mno_cb_mordor2|Ντούνλαντ
 ; mno_cb_mordor3|Haradrim
 ; mno_cb_mordor4|Easterlings
 mno_cb_mordor5|Μόρια
-; mno_cb_mordor6|Gundabad
+mno_cb_mordor6|Γκούνταμπαντ
 mno_cb_mordor7|Ρουν
 ; mno_cb_mordor8|Corsairs
 ; mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.

@@ -33,52 +33,52 @@ p_town_cerin_amroth|Κέριν Άμροθ
 p_town_thranduils_halls|Αίθουσες του Θράντουιλ
 p_town_woodelf_camp|Νότιο Στρατόπεδο Woodelf
 p_town_woodelf_west_camp|Δυτικό Στρατόπεδο Woodelf
-; p_town_woodsmen_village|Woodsmen Village
+p_town_woodsmen_village|Χωριό Ξυλοκόπων
 p_town_beorning_village|Χωριό Μπεόρνινγκ
 p_town_beorn_house|Σπίτι του Μπέορν
 p_town_moria|Πύλες της Μόρια
 p_town_troll_cave|Σπηλιά Τρολλ
 p_town_dale|Ντέιλ
 p_town_esgaroth|Έσκγαροθ
-; p_town_dunland_camp|Dunlander Camp
-; p_town_harad_camp|Haradrim Camp
-; p_town_khand_camp|Khand Camp
-; p_town_umbar_camp|Corsair Camp
-; p_town_imladris_camp|Rivendell Camp
+p_town_dunland_camp|Στρατόπεδο Ντάνλάντερ
+p_town_harad_camp|Στρατόπεδο Χαράντριμ
+p_town_khand_camp|Στρατόπεδο Καντ
+p_town_umbar_camp|Στρατόπεδο Πειρατών
+p_town_imladris_camp|Στρατόπεδο Ρίβεντελλ
 p_town_dol_guldur|Ντολ Γκουντούρ
-; p_town_dol_guldur_north_outpost|Dol Guldur Road Outpost
-; p_town_rhun_main_camp|Main Rhun Camp
-; p_town_rhun_south_camp|Rhun Southern Outpost
-; p_town_rhun_north_camp|Rhun Northern Outpost
-; p_town_gundabad|Gundabad
-; p_town_gundabad_ne_outpost|Grey Mountains Hold
-; p_town_gundabad_nw_outpost|Grey Mountains Ravine
+p_town_dol_guldur_north_outpost|Φυλάκιο Δρόμου Ντολ Γκούλντουρ
+p_town_rhun_main_camp|Κεντρικό Στρατόπεδο Ρουν
+p_town_rhun_south_camp|Νότιο Φυλάκιο Ρουν
+p_town_rhun_north_camp|Βόρειο Φυλάκιο Ρουν
+p_town_gundabad|Γκούνταμπαντ
+p_town_gundabad_ne_outpost|Κράτημα Γκρίζων Βουνών
+p_town_gundabad_nw_outpost|Φαράγγι Γκρίζων Βουνών
 p_town_goblin_north_outpost|Τελώνιούπολη
-; p_town_goblin_south_outpost|Goblin Southern Outpost
-; p_town_gundabad_m_outpost|Gundabad Mirkwood Outpost
+p_town_goblin_south_outpost|Νότιο Φυλάκιο Γκόμπλιν
+p_town_gundabad_m_outpost|Φυλάκιο Γκούνταμπαντ Μέρκγουντ
 p_town_erebor|Έρεμπορ
 p_town_ironhill_camp|Λατομείο Σιδερένιων Λόφων
-; p_advcamp_gondor|Gondor Advance Camp
-; p_advcamp_rohan|Rohan Advance Camp
-; p_advcamp_isengard|Isengard Advance Camp
-; p_advcamp_mordor|Mordor Advance Camp
-; p_advcamp_harad|Harad Advance Camp
-; p_advcamp_rhun|Rhun Advance Camp
-; p_advcamp_khand|Khand Advance Camp
-; p_advcamp_umbar|Umbar Advance Camp
-; p_advcamp_lorien|Lorien Advance Camp
-; p_advcamp_imladris|Imladris Advance Camp
-; p_advcamp_woodelf|Mirkwood Advance Camp
-; p_advcamp_moria|Moria Advance Camp
-; p_advcamp_guldur|Dol Guldur Advance Camp
-; p_advcamp_gundabad|Gundabad Advance Camp
-; p_advcamp_dale|Dale Advance Camp
-; p_advcamp_dwarf|Erebor Advance Camp
-; p_advcamp_dunland|Dunland Advance Camp
-; p_advcamp_beorn|Beorning Advance Camp
+p_advcamp_gondor|Στρατόπεδο Προέλασης Γκόντορ
+p_advcamp_rohan|Στρατόπεδο Προέλασης Ρόχαν
+p_advcamp_isengard|Στρατόπεδο Προέλασης Άιζενγκαρντ
+p_advcamp_mordor|Στρατόπεδο Προέλασης Μόρντορ
+p_advcamp_harad|Στρατόπεδο Προέλασης Χαράντ
+p_advcamp_rhun|Στρατόπεδο Προέλασης Ρουν
+p_advcamp_khand|Στρατόπεδο Προέλασης Καντ
+p_advcamp_umbar|Στρατόπεδο Προέλασης Ούμπαρ
+p_advcamp_lorien|Στρατόπεδο Προέλασης Λόριεν
+p_advcamp_imladris|Στρατόπεδο Προέλασης Ιμλάντρις
+p_advcamp_woodelf|Στρατόπεδο Προέλασης Μέρκγουντ
+p_advcamp_moria|Στρατόπεδο Προέλασης Μόρια
+p_advcamp_guldur|Στρατόπεδο Προέλασης Ντολ Γκούλντουρ
+p_advcamp_gundabad|Στρατόπεδο Προέλασης Γκούνταμπαντ
+p_advcamp_dale|Στρατόπεδο Προέλασης Ντέιλ
+p_advcamp_dwarf|Στρατόπεδο Προέλασης Έρεμπορ
+p_advcamp_dunland|Στρατόπεδο Προέλασης Ντάνλαντ
+p_advcamp_beorn|Στρατόπεδο Προέλασης Μπεόρνινγκ
 p_argonath|Άργκονανθ
 p_argonath2|Άργκονανθ
-; p_hand_isen|Handsign of Isengard
+p_hand_isen|Πινακίδια-χέρι του Άιζενγκαρντ
 p_mount_doom|Βουνό του Χαμού
 p_town_barad_dur|Μπάραντ Ντουρ
 p_ford_cair_andros1|Άντουιν
@@ -88,24 +88,24 @@ p_ford_brown_lands|Άντουιν
 p_ford_rauros|Άντουιν
 p_ford_pelargir|Άντουιν
 p_ford_edhellond|Άντουιν
-; p_ford_cerin_dolen|Silverlode
+p_ford_cerin_dolen|Σίλβερλόουντ
 p_old_ford|Παλιό Πέρασμα
 p_ford_erech|Ρίνγκλο
 p_ford_isen1|Άιζεν
 p_ford_isen2|Άιζεν
-; p_ford_rohan|Entwash
-; p_ford_rohan2|Entwash
-; p_ford_fangorn|Entwash
-; p_ford_fangorn2|Limlight
-; p_ford_moria|Silverlode
-; p_fangorn_center|Fangorn Center
-; p_ring_hunter_lair|Ring Hunters Lair
-; p_raft|Raft Men
-; p_amon_din|Amon Din
-; p_eilenach|Eilenach
-; p_nardol|Nardol
-; p_erelas|Erelas
-; p_min_rimmon|Min Rimmon
-; p_calenhad|Calenhad
-; p_amon_anwar|Amon Anwar
+p_ford_rohan|Έντγουος
+p_ford_rohan2|Έντγουος
+p_ford_fangorn|Έντγουος
+p_ford_fangorn2|Λίμλαϊτ
+p_ford_moria|Σίλβερλόουντ
+p_fangorn_center|Κέντρο Φάνγκορν
+p_ring_hunter_lair|Φωλιά Κυνηγών του Δαχτυλιδιού
+p_raft|Άνδρες Σχεδίων
+p_amon_din|Άμον Ντιν
+p_eilenach|Έιλναχ
+p_nardol|Νάρντολ
+p_erelas|Έρελας
+p_min_rimmon|Μιν Ρίμμον
+p_calenhad|Κάλενχαντ
+p_amon_anwar|Άμον Άνγαρ
 p_ancient_ruins|Αρχαία Ερείπια
