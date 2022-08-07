@@ -1112,4 +1112,18 @@ particle_systems = [
      0,                       #rotation speed
      0.1                        #rotation damping
     ), 
+    
+    ("fire_glow_1_white", psf_billboard_3d|psf_global_emit_dir|psf_always_emit, "prt_mesh_fire_2",
+     2, 0.55, 0.2, 0.0, 10.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.5, 0.9), (1, 0),          #alpha keys
+     (0, 0.4), (1, 0.4),                #red keys
+     (0, 0.5), (1, 0.5),                #green keys
+     (0, 0.6), (1, 0.6),                #blue keys
+     (0, 2),   (1.0, 2),        #scale keys
+     (0.0, 0.0, 0.0),           #emit box size
+     (0, 0, 0),                 #emit velocity
+     0.0,                       #emit dir randomness
+     0,
+     0
+    ),
 ]

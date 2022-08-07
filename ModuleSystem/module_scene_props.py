@@ -160,7 +160,7 @@ scene_props = [
 ("shelves",0,"shelves","boshelves", []),
 ("table_tavern",0,"table_tavern","botable_tavern", []),
 ("table_castle_a",0,"table_castle_a","bo_table_castle_a", []),
-("chair_castle_a",0,"chair_castle_a","bo_chair_castle_a", []),
+("chair_castle_a",0,"chair_castle_a","0", []),
 
 ("pillow_a",0,"pillow_a","bo_pillow", []),
 ("pillow_b",0,"pillow_b","bo_pillow", []),
@@ -602,14 +602,14 @@ scene_props = [
 ("banner_f20", 0, "banner_f20", "0", []),
 
 
-("tavern_chair_a",0,"tavern_chair_a","bo_tavern_chair_a", []),
-("tavern_chair_b",0,"tavern_chair_b","bo_tavern_chair_b", []),
+("tavern_chair_a",0,"tavern_chair_a","0", []),
+("tavern_chair_b",0,"tavern_chair_b","0", []),
 ("tavern_table_a",0,"tavern_table_a","bo_tavern_table_a", []),
 ("tavern_table_b",0,"tavern_table_b","bo_tavern_table_b", []),
 ("fireplace_a",0,"fireplace_a","bo_fireplace_a", []),
 ("barrel",0,"barrel","bobarrel", []),
-("bench_tavern",0,"bench_tavern","bobench_tavern", []),
-("bench_tavern_b",0,"bench_tavern_b","bo_bench_tavern_b", []),
+("bench_tavern",0,"bench_tavern","0", []),
+("bench_tavern_b",0,"bench_tavern_b","0", []),
 ("bowl_wood",0,"bowl_wood","0", []),
 ("chandelier_table",0,"chandelier_table","0", []),
 #  ("chandelier_tavern",0,"chandelier_tavern","0", []),
@@ -619,8 +619,8 @@ scene_props = [
 ("counter_tavern",0,"counter_tavern","bocounter_tavern", []),
 ("cup",0,"cup","0", []),
 ("dish_metal",0,"dish_metal","0", []),
-("gothic_chair",0,"gothic_chair","bogothic_chair", []),
-("gothic_stool",0,"gothic_stool","bogothic_stool", []),
+("gothic_chair",0,"gothic_chair","0", []),
+("gothic_stool",0,"gothic_stool","0", []),
 ("grate",0,"grate","bograte", []),
 ("jug",0,"jug","0", []),
 ("potlamp",0,"potlamp","0", []),
@@ -669,13 +669,13 @@ scene_props = [
 ("washtub_b",0,"washtub_b_new","bo_washtub_b", []),
 
 ("table_trunk_a",0,"table_trunk_a","bo_table_trunk_a", []),
-("chair_trunk_a",0,"chair_trunk_a","bo_chair_trunk_a", []),
-("chair_trunk_b",0,"chair_trunk_b","bo_chair_trunk_b", []),
-("chair_trunk_c",0,"chair_trunk_c","bo_chair_trunk_c", []),
+("chair_trunk_a",0,"chair_trunk_a","0", []),
+("chair_trunk_b",0,"chair_trunk_b","0", []),
+("chair_trunk_c",0,"chair_trunk_c","0", []),
 
 ("table_trestle_long",0,"table_trestle_long","bo_table_trestle_long", []),
 ("table_trestle_small",0,"table_trestle_small","bo_table_trestle_small", []),
-("chair_trestle",0,"chair_trestle","bo_chair_trestle", []),
+("chair_trestle",0,"chair_trestle","0", []),
 
 ("wheel",0,"wheel","bowheel", []),
 ("ladder",0,"ladder","boladder", []),
@@ -1390,7 +1390,7 @@ scene_props = [
   ("gondor_wall_copula_1_E",0,"gondor_wall_copula_1","0", []),
 
 ] + (is_a_wb_sceneprop==1 and [
-("gondor_citadel_main",0,"gondor_citadel_main_2","bo_gondor_citadel_main_2", []),
+("gondor_citadel_main",0,"minastirith","bo_minastirith", []),
   ("gondor_citadel_main_E",0,"gondor_citadel_main_2","0", []),
 ] or [
 ("gondor_citadel_main",0,"gondor_citadel_main","bo_gondor_citadel_main", []),
@@ -2540,8 +2540,8 @@ scene_props = [
 ("hill",0,"hill","bo_hill", []),
 ("water_river",0,"TLD_water_plane","0", []),
 ("water_fall",0,"water_fall","0", []),
-("distant_street_a",0,"distant_street_a","bo_village_wall_a", []),
-("distant_street_b",0,"distant_street_b","bo_village_wall_b", []),
+("distant_street_a",0,"distant_street_a_new","bo_distant_street_a_new", []),
+("distant_street_b",0,"distant_street_b_new","bo_distant_street_b_new", []),
 ("distant_mountain_a",0,"distant_mountain3","bo_cliff_distant_3", []),
 ("distant_mountain_b",0,"distant_mountain8","bo_cliff_distant_8", []),
 ("distant_mountain_c",0,"distant_mountain4","bo_cliff_distant_4", []),
@@ -2957,9 +2957,9 @@ scene_props = [
 #Adorno's wood props OSP (renamed for easier findability)
 ( "fence_barrier_small_ado"                     ,0,"ado_wood_arena_barrier","bo_ado_wood_arena_barrier",[]),
 ( "arena_full_ado"                   		 ,0,"ado_wood_arena_training","bo_ado_wood_arena_training",[]),
-( "bench_fine_ado"                        ,0,"ado_wood_bench_fine","bo_ado_wood_bench_fine",[]),
-( "bench_plain_ado"                       ,0,"ado_wood_bench_plain","bo_ado_wood_bench_plain",[]),
-( "bench_stone_roman_ado"                      ,0,"ado_stone_bench_roman","bo_ado_stone_bench_roman",[]),
+( "bench_fine_ado"                        ,0,"ado_wood_bench_fine","0",[]),
+( "bench_plain_ado"                       ,0,"ado_wood_bench_plain","0",[]),
+( "bench_stone_roman_ado"                      ,0,"ado_stone_bench_roman","bo_bench_stone_roman_ado",[]),
 ( "bridge_long_ado"                       ,0,"ado_wood_bridge_long","bo_ado_wood_bridge_long",[]),
 ( "bridge_long_ramp_ado"                  ,0,"ado_wood_bridge_long_ramp","bo_ado_wood_bridge_long_ramp",[]),
 ( "bridge_tall_ado"                       ,0,"ado_wood_bridge_tall","bo_ado_wood_bridge_tall",[]),
@@ -2969,9 +2969,9 @@ scene_props = [
 ( "cart_ado_2_broken"                     ,0,"ado_wood_cart_2_broken","bo_ado_wood_cart_2_broken",[]),
 ( "cart_ado_3"                            ,0,"ado_wood_cart_3","bo_ado_wood_cart_3",[]),
 ( "cart_ado_wheel"                        ,0,"ado_wood_cart_wheel","bo_ado_wood_cart_wheel",[]),
-( "chair_ado_1"                            ,0,"ado_wood_chair1","bo_ado_wood_chair1",[]),
-( "chair_ado_2"                            ,0,"ado_wood_chair2","bo_ado_wood_chair2",[]),
-( "chair_ado_fine"                        ,0,"ado_wood_chair_fine","bo_ado_wood_chair_fine",[]),
+( "chair_ado_1"                            ,0,"ado_wood_chair1","0",[]),
+( "chair_ado_2"                            ,0,"ado_wood_chair2","0",[]),
+( "chair_ado_fine"                        ,0,"ado_wood_chair_fine","0",[]),
 ( "cradle_ado"                            ,0,"ado_wood_cradle","bo_ado_wood_cradle",[]),
 ( "crate_1_ado"                           ,0,"ado_wood_crate_1","bo_ado_wood_crate_1",[]),
 ( "crate_2_ado"                           ,0,"ado_wood_crate_2","bo_ado_wood_crate_2",[]),
@@ -3022,7 +3022,7 @@ scene_props = [
 ( "village_wood_stockade_short_ado"                    ,0,"ado_wood_stockade_short","bo_ado_wood_stockade_short",[]),
 ( "village_wood_stockade_plank_ado"                    ,0,"ado_wood_stockade_plank","bo_ado_wood_stockade_plank",[]),
 ( "village_wood_stockade_plank_broken_ado"             ,0,"ado_wood_stockade_plank_broken","bo_ado_wood_stockade_plank_broken",[]),
-( "chair_stool_ado"                             ,0,"ado_wood_stool","bo_ado_wood_stool",[]),
+( "chair_stool_ado"                             ,0,"ado_wood_stool","0",[]),
 ( "table_plain_ado"                       ,0,"ado_wood_table_plain","bo_ado_wood_table_plain",[]),
 ( "table_round_ado"                       ,0,"ado_wood_table_round","bo_ado_wood_table_round",[]),
 ( "table_round_ado_2"                     ,0,"ado_wood_table_round_2","bo_ado_wood_table_round_2",[]),
@@ -3258,7 +3258,7 @@ scene_props = [
 
 ( "fence_new"                           ,0,"fence_new","bo_fence_new",[]),
 
-("MT_wall",0,"Gondor_wall_final_old","bo_MT_circular_wall2",[]),
+("MT_wall",0,"Gondor_wall_final","bo_MT_circular_wall",[]),
 ("MT_wall_part_lowpoly",0,"Gondor_wall_final_lowpoly",0,[]),
 
 #CWE props
@@ -3338,7 +3338,113 @@ scene_props = [
      (particle_system_add_new, "psys_village_fire_smoke_big_lowres"),
     ]),
 ]),
+("fire_glow_white",0,"0","0",[(ti_on_scene_prop_init,
+    [(set_position_delta,0,0,0),
+     (particle_system_add_new, "psys_fire_glow_1_white"), ]),]),
 
+
+# retreat gates open at mission start and close when the assigned rally point in var_id_2 is lost. Place closed.
+("gate_destructible_retreat",sokf_destructible,"gate_tld_displaced","bo_gate_tld_displaced",   [ 
+
+   (ti_on_scene_prop_init, [
+   (store_trigger_param_1, ":gate_no"),
+    
+    #gate aggravator is activated in mission_template
+    # (prop_instance_get_starting_position, pos1, ":instance_no"),
+    # (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
+    # (set_spawn_position, pos1),
+    # (spawn_agent,"trp_gate_aggravator"),
+    # (assign, ":gate_aggravator", reg0),
+    # (agent_set_speed_limit, ":gate_aggravator", 0),
+    # (agent_set_team, ":gate_aggravator", 2),
+    # ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
+    # (agent_set_no_dynamics, ":gate_aggravator",1),
+    # (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
+    # ] or []) + [
+
+    #open gate at mission start
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (position_rotate_z, pos1, 85),
+    (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
+    
+    #find dependent barriers, move them down at mission start
+    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
+    (try_begin),
+      (gt, ":max_barriers",0),
+      (try_for_range,":count",0,":max_barriers"),
+        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+        (prop_instance_get_starting_position, pos1, ":barrier_no"),
+        ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
+        (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+        (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+        (eq, ":var1", ":var1_gate"),
+        ] or [
+        (prop_instance_get_starting_position, pos2, ":gate_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 200),
+        ]) + [
+        (position_move_z,pos1,-10000),
+        (prop_instance_set_position,":barrier_no",pos1),
+      (try_end),
+    (try_end),
+   ]),
+   
+   (ti_on_scene_prop_destroy, [
+    (store_trigger_param_1, ":gate_no"),
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
+    (particle_system_burst,"psys_pistol_smoke",pos1,200),
+    (position_rotate_x, pos1, 85),
+    (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
+    (play_sound, "snd_dummy_destroyed"),
+    (display_message,"@Gate is breached!"),
+    (assign, ":gate_aggravator_found", 0),
+    
+    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
+        (eq, ":gate_aggravator_found", 0),
+        (gt, ":agent_no", 0),
+        (agent_is_alive, ":agent_no"),  
+        (agent_get_troop_id, ":troop_id", ":agent_no"),
+        (eq, ":troop_id", "trp_gate_aggravator"),
+        (agent_get_position, pos2, ":agent_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 200),
+        #(display_message, "@gate_aggravator found"),
+        (call_script, "script_remove_agent", ":agent_no"), 
+        (assign, ":gate_aggravator_found", 1),
+    (try_end),
+    
+    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),  #move away all dependent barriers
+    (try_begin),
+      (gt, ":max_barriers",0),
+      (try_for_range,":count",0,":max_barriers"),
+        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+        (prop_instance_get_starting_position, pos1, ":barrier_no"),
+        ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
+        (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+        (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+        (eq, ":var1", ":var1_gate"),
+        ] or [
+        (prop_instance_get_starting_position, pos2, ":gate_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 1000),
+        ]) + [
+        (position_move_z,pos1,-10000),
+        (prop_instance_set_position,":barrier_no",pos1),
+      (try_end),
+    (try_end),
+   ]),
+
+   (ti_on_scene_prop_hit,
+    [(play_sound, "snd_dummy_hit"),
+      (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+      (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ]),
+], 3000),
 
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),

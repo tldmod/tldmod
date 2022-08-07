@@ -67,3 +67,4 @@ psys_scene_fog_red = 65
 psys_scene_fog_grey = 66
 psys_village_fire_big_lowres = 67
 psys_village_fire_smoke_big_lowres = 68
+psys_fire_glow_1_white = 69

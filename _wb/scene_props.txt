@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2016
+ 2020
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -99,7 +99,7 @@ spr_table_tavern 0 0 table_tavern botable_tavern 0
 spr_table_castle_a 0 0 table_castle_a bo_table_castle_a 0
 
 
-spr_chair_castle_a 0 0 chair_castle_a bo_chair_castle_a 0
+spr_chair_castle_a 0 0 chair_castle_a 0 0
 
 
 spr_pillow_a 0 0 pillow_a bo_pillow 0
@@ -873,10 +873,10 @@ spr_banner_f21 0 0 b_arms_los 0 0
 spr_banner_f20 0 0 banner_f20 0 0
 
 
-spr_tavern_chair_a 0 0 tavern_chair_a bo_tavern_chair_a 0
+spr_tavern_chair_a 0 0 tavern_chair_a 0 0
 
 
-spr_tavern_chair_b 0 0 tavern_chair_b bo_tavern_chair_b 0
+spr_tavern_chair_b 0 0 tavern_chair_b 0 0
 
 
 spr_tavern_table_a 0 0 tavern_table_a bo_tavern_table_a 0
@@ -891,10 +891,10 @@ spr_fireplace_a 0 0 fireplace_a bo_fireplace_a 0
 spr_barrel 0 0 barrel bobarrel 0
 
 
-spr_bench_tavern 0 0 bench_tavern bobench_tavern 0
+spr_bench_tavern 0 0 bench_tavern 0 0
 
 
-spr_bench_tavern_b 0 0 bench_tavern_b bo_bench_tavern_b 0
+spr_bench_tavern_b 0 0 bench_tavern_b 0 0
 
 
 spr_bowl_wood 0 0 bowl_wood 0 0
@@ -921,10 +921,10 @@ spr_cup 0 0 cup 0 0
 spr_dish_metal 0 0 dish_metal 0 0
 
 
-spr_gothic_chair 0 0 gothic_chair bogothic_chair 0
+spr_gothic_chair 0 0 gothic_chair 0 0
 
 
-spr_gothic_stool 0 0 gothic_stool bogothic_stool 0
+spr_gothic_stool 0 0 gothic_stool 0 0
 
 
 spr_grate 0 0 grate bograte 0
@@ -1062,13 +1062,13 @@ spr_washtub_b 0 0 washtub_b_new bo_washtub_b 0
 spr_table_trunk_a 0 0 table_trunk_a bo_table_trunk_a 0
 
 
-spr_chair_trunk_a 0 0 chair_trunk_a bo_chair_trunk_a 0
+spr_chair_trunk_a 0 0 chair_trunk_a 0 0
 
 
-spr_chair_trunk_b 0 0 chair_trunk_b bo_chair_trunk_b 0
+spr_chair_trunk_b 0 0 chair_trunk_b 0 0
 
 
-spr_chair_trunk_c 0 0 chair_trunk_c bo_chair_trunk_c 0
+spr_chair_trunk_c 0 0 chair_trunk_c 0 0
 
 
 spr_table_trestle_long 0 0 table_trestle_long bo_table_trestle_long 0
@@ -1077,7 +1077,7 @@ spr_table_trestle_long 0 0 table_trestle_long bo_table_trestle_long 0
 spr_table_trestle_small 0 0 table_trestle_small bo_table_trestle_small 0
 
 
-spr_chair_trestle 0 0 chair_trestle bo_chair_trestle 0
+spr_chair_trestle 0 0 chair_trestle 0 0
 
 
 spr_wheel 0 0 wheel bowheel 0
@@ -2567,7 +2567,7 @@ spr_gondor_wall_copula_1 0 0 gondor_wall_copula_1 bo_gondor_wall_copula_1 0
 spr_gondor_wall_copula_1_E 0 0 gondor_wall_copula_1 0 0
 
 
-spr_gondor_citadel_main 0 0 gondor_citadel_main_2 bo_gondor_citadel_main_2 0
+spr_gondor_citadel_main 0 0 minastirith bo_minastirith 0
 
 
 spr_gondor_citadel_main_E 0 0 gondor_citadel_main_2 0 0
@@ -4898,10 +4898,10 @@ spr_water_river 0 0 TLD_water_plane 0 0
 spr_water_fall 0 0 water_fall 0 0
 
 
-spr_distant_street_a 0 0 distant_street_a bo_village_wall_a 0
+spr_distant_street_a 0 0 distant_street_a_new bo_distant_street_a_new 0
 
 
-spr_distant_street_b 0 0 distant_street_b bo_village_wall_b 0
+spr_distant_street_b 0 0 distant_street_b_new bo_distant_street_b_new 0
 
 
 spr_distant_mountain_a 0 0 distant_mountain3 bo_cliff_distant_3 0
@@ -5481,13 +5481,13 @@ spr_fence_barrier_small_ado 0 0 ado_wood_arena_barrier bo_ado_wood_arena_barrier
 spr_arena_full_ado 0 0 ado_wood_arena_training bo_ado_wood_arena_training 0
 
 
-spr_bench_fine_ado 0 0 ado_wood_bench_fine bo_ado_wood_bench_fine 0
+spr_bench_fine_ado 0 0 ado_wood_bench_fine 0 0
 
 
-spr_bench_plain_ado 0 0 ado_wood_bench_plain bo_ado_wood_bench_plain 0
+spr_bench_plain_ado 0 0 ado_wood_bench_plain 0 0
 
 
-spr_bench_stone_roman_ado 0 0 ado_stone_bench_roman bo_ado_stone_bench_roman 0
+spr_bench_stone_roman_ado 0 0 ado_stone_bench_roman bo_bench_stone_roman_ado 0
 
 
 spr_bridge_long_ado 0 0 ado_wood_bridge_long bo_ado_wood_bridge_long 0
@@ -5517,13 +5517,13 @@ spr_cart_ado_3 0 0 ado_wood_cart_3 bo_ado_wood_cart_3 0
 spr_cart_ado_wheel 0 0 ado_wood_cart_wheel bo_ado_wood_cart_wheel 0
 
 
-spr_chair_ado_1 0 0 ado_wood_chair1 bo_ado_wood_chair1 0
+spr_chair_ado_1 0 0 ado_wood_chair1 0 0
 
 
-spr_chair_ado_2 0 0 ado_wood_chair2 bo_ado_wood_chair2 0
+spr_chair_ado_2 0 0 ado_wood_chair2 0 0
 
 
-spr_chair_ado_fine 0 0 ado_wood_chair_fine bo_ado_wood_chair_fine 0
+spr_chair_ado_fine 0 0 ado_wood_chair_fine 0 0
 
 
 spr_cradle_ado 0 0 ado_wood_cradle bo_ado_wood_cradle 0
@@ -5661,7 +5661,7 @@ spr_village_wood_stockade_plank_ado 0 0 ado_wood_stockade_plank bo_ado_wood_stoc
 spr_village_wood_stockade_plank_broken_ado 0 0 ado_wood_stockade_plank_broken bo_ado_wood_stockade_plank_broken 0
 
 
-spr_chair_stool_ado 0 0 ado_wood_stool bo_ado_wood_stool 0
+spr_chair_stool_ado 0 0 ado_wood_stool 0 0
 
 
 spr_table_plain_ado 0 0 ado_wood_table_plain bo_ado_wood_table_plain 0
@@ -5993,7 +5993,7 @@ spr_stone_block_mossy_4 0 0 zf_block_3 bo_zf_block_3 0
 spr_fence_new 0 0 fence_new bo_fence_new 0
 
 
-spr_MT_wall 0 0 Gondor_wall_final_old bo_MT_circular_wall2 0
+spr_MT_wall 0 0 Gondor_wall_final bo_MT_circular_wall 0
 
 
 spr_MT_wall_part_lowpoly 0 0 Gondor_wall_final_lowpoly 0 0
@@ -6134,6 +6134,16 @@ spr_moon_sparks 0 0 0 0 1
 
 spr_Village_fire_big_lowpoly 0 0 0 0 1
 -40  3 1965 1 67 1955 3 0 0 100 1965 1 68 
+
+
+spr_fire_glow_white 0 0 0 0 1
+-40  2 1955 3 0 0 0 1965 1 69 
+
+
+spr_gate_destructible_retreat 32768 3000 gate_tld_displaced bo_gate_tld_displaced 3
+-40  17 2071 1 1224979098644774912 1851 2 1 1224979098644774912 725 2 1 85 1860 3 1224979098644774912 1 200 1810 2 1224979098644774913 1505 4 0 32 2 1224979098644774913 0 6 3 1224979098644774914 0 1224979098644774913 1811 3 1224979098644774915 1505 1224979098644774914 1851 2 1 1224979098644774915 1840 2 1224979098644774916 1224979098644774915 1840 2 1224979098644774917 1224979098644774912 31 2 1224979098644774916 1224979098644774917 722 2 1 -10000 1855 2 1224979098644774915 1 3 0 3 0 
+-43  36 2071 1 1224979098644774912 1851 2 1 1224979098644774912 1969 3 42 1 200 1969 3 42 1 200 1969 3 21 1 200 723 2 1 85 1860 3 1224979098644774912 1 400 600 1 142 1106 1 1585267068834414594 2133 2 1224979098644774913 0 12 1 1224979098644774914 31 2 1224979098644774913 0 32 2 1224979098644774914 0 1702 1 1224979098644774914 1718 2 1224979098644774915 1224979098644774914 31 2 1224979098644774915 889 1710 2 2 1224979098644774914 2124 1 100 710 3 1224979098644774916 1 2 2147483680 2 1224979098644774916 200 1 2 188 1224979098644774914 2133 2 1224979098644774913 1 3 0 1810 2 1224979098644774917 1505 4 0 32 2 1224979098644774917 0 6 3 1224979098644774918 0 1224979098644774917 1811 3 1224979098644774919 1505 1224979098644774918 1851 2 1 1224979098644774919 1840 2 1224979098644774920 1224979098644774919 1840 2 1224979098644774921 1224979098644774912 31 2 1224979098644774920 1224979098644774921 722 2 1 -10000 1855 2 1224979098644774919 1 3 0 3 0 
+-42  3 600 1 141 1969 3 29 1 3 1969 3 30 1 10 
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0

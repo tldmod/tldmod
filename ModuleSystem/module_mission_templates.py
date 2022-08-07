@@ -4654,7 +4654,7 @@ mission_templates = [ # not used in game
 				# (get_distance_between_positions, ":dist", pos0, pos10),
 				# (lt,":dist", 500),
 	(set_fixed_point_multiplier, 100),
-	(try_for_range, ":entry",41,44), 
+	(try_for_range, ":entry",41,44), # entry loop
 		
 		(entry_point_get_position, pos90, ":entry"),
         
@@ -4691,7 +4691,7 @@ mission_templates = [ # not used in game
 
 
 ## Step 2: Now, check slot counts
-		(try_begin),
+		(try_begin), # slot counts start
 			(store_sub,":slot_defender",":entry",41), #0, 1, 2
 			
 			#debug
@@ -4705,9 +4705,52 @@ mission_templates = [ # not used in game
 		  (store_mul,":defteam",":slot_defender",2),(store_add,":atkteam",":defteam",1), #this just calls the relevant team numbers from the slot number
 		  (team_give_order, ":defteam", grc_infantry, mordr_charge),
 		  (team_give_order, ":defteam", grc_cavalry, mordr_charge),
-		  (team_give_order, ":atkteam", grc_archers, mordr_charge),     
-		(try_end),
-	(try_end),
+		  (team_give_order, ":atkteam", grc_archers, mordr_charge),
+
+    ] + (is_a_wb_mt==1 and [ 
+          #find and close retreat gates
+            (scene_prop_get_num_instances,":max_gates","spr_gate_destructible_retreat"), 
+            (try_begin), #gates start
+              (gt, ":max_gates",0),
+              (try_for_range,":count",0,":max_gates"), #gates loop
+                (scene_prop_get_instance,":gate_no", "spr_gate_destructible_retreat", ":count"),
+                (prop_instance_get_starting_position, pos1, ":gate_no"),
+                (prop_instance_get_variation_id_2, ":var2", ":gate_no"),
+                (eq, ":var2", ":entry"),
+                (position_rotate_z, pos1, 0), #back to starting position
+                (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
+                
+                #spawn gate aggravator
+                (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
+                (set_spawn_position, pos1),
+                (spawn_agent,"trp_gate_aggravator"),
+                (assign, ":gate_aggravator", reg0),
+                (agent_set_speed_limit, ":gate_aggravator", 0),
+                (agent_set_team, ":gate_aggravator", 2),
+                #] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
+                (agent_set_no_dynamics, ":gate_aggravator",1),
+                (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
+                #] or []) + [
+                 
+                #find dependent barriers, move them into place
+                (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
+                (try_begin), # barriers start
+                  (gt, ":max_barriers",0),
+                  (try_for_range,":count",0,":max_barriers"), #barriers loop
+                    (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+                    (prop_instance_get_starting_position, pos1, ":barrier_no"),
+                    (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+                    (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+                    (eq, ":var1", ":var1_gate"),
+                    (position_move_z,pos1,0), #back to starting position
+                    (prop_instance_set_position,":barrier_no",pos1),
+                  (try_end), # barriers loop
+                (try_end), # barriers end
+              (try_end), # gates loop
+            (try_end), # gates end
+    ] or []) + [
+		(try_end), # slot counts end
+	(try_end), # entry loop
    ]),
 
 

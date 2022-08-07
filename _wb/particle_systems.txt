@@ -1,5 +1,5 @@
 particle_systemsfile version 1
-69
+70
 psys_game_rain 274 prtcl_rain  500 0.5 0.33 1 10 0 
 1 0.3   1 0.3
 1 1   1 1
@@ -552,3 +552,11 @@ psys_village_fire_smoke_big_lowres 12818 prt_mesh_smoke_1  10 3 0.3 -1 50 10
 0 12   1 16
 2 2 1   0 0 5   0 
 0 0.1 
+psys_fire_glow_1_white 530 prt_mesh_fire_2  2 0.55 0.2 0 10 0 
+0.5 0.9   1 0
+0 0.4   1 0.4
+0 0.5   1 0.5
+0 0.6   1 0.6
+0 2   1 2
+0 0 0   0 0 0   0 
+0 0 
