@@ -5079,7 +5079,6 @@ if wb_compile_switch==1:
           (assign, "$tld_campaign_diffulty", ":value"),
         (else_try),
           (eq, ":object", "$tld_options_overlay_0"),   
-          (val_mul, ":value", 2),
           (val_mul, ":value", 2),                # swy: map the combobox indices to actual levels, whose order is also reversed
           (store_sub, ":level_2", 20, ":value"), #      i.e. player selects element with index 3; we do (20 - (3 * 2)) = lvl 14.
           (assign, "$tld_player_level_to_begin_war", ":level_2"),
