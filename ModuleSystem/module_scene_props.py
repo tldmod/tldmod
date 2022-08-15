@@ -3336,67 +3336,69 @@ scene_props = [
     [(particle_system_add_new, "psys_village_fire_big_lowres"),
      (set_position_delta,0,0,100),
      (particle_system_add_new, "psys_village_fire_smoke_big_lowres"),
-    ]),
-]),
+    ]),]),
 ("fire_glow_white",0,"0","0",[(ti_on_scene_prop_init,
     [(set_position_delta,0,0,0),
      (particle_system_add_new, "psys_fire_glow_1_white"), ]),]),
 
+("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
+("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
 
 # retreat gates open at mission start and close when the assigned rally point in var_id_2 is lost. Place closed.
 ("gate_destructible_retreat",sokf_destructible,"gate_tld_displaced","bo_gate_tld_displaced",   [ 
 
-   (ti_on_scene_prop_init, [
-   (store_trigger_param_1, ":gate_no"),
+   # (ti_on_scene_prop_init, [
+   # (store_trigger_param_1, ":gate_no"),
     
-    #gate aggravator is activated in mission_template
-    # (prop_instance_get_starting_position, pos1, ":instance_no"),
-    # (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
-    # (set_spawn_position, pos1),
-    # (spawn_agent,"trp_gate_aggravator"),
-    # (assign, ":gate_aggravator", reg0),
-    # (agent_set_speed_limit, ":gate_aggravator", 0),
-    # (agent_set_team, ":gate_aggravator", 2),
-    # ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
-    # (agent_set_no_dynamics, ":gate_aggravator",1),
-    # (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
-    # ] or []) + [
+    # #gate aggravator is activated in mission_template
+    # # (prop_instance_get_starting_position, pos1, ":instance_no"),
+    # # (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
+    # # (set_spawn_position, pos1),
+    # # (spawn_agent,"trp_gate_aggravator"),
+    # # (assign, ":gate_aggravator", reg0),
+    # # (agent_set_speed_limit, ":gate_aggravator", 0),
+    # # (agent_set_team, ":gate_aggravator", 2),
+    # # ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
+    # # (agent_set_no_dynamics, ":gate_aggravator",1),
+    # # (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
+    # # ] or []) + [
 
-    #open gate at mission start
-    (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (position_rotate_z, pos1, 85),
-    (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
+    # #open gate at mission start
+    # (prop_instance_get_starting_position, pos1, ":gate_no"),
+    # (position_rotate_z, pos1, 85),
+    # (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
     
-    #find dependent barriers, move them down at mission start
-    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
-    (try_begin),
-      (gt, ":max_barriers",0),
-      (try_for_range,":count",0,":max_barriers"),
-        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
-        (prop_instance_get_starting_position, pos1, ":barrier_no"),
-        ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
-        (prop_instance_get_variation_id, ":var1", ":barrier_no"),
-        (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
-        (eq, ":var1", ":var1_gate"),
-        ] or [
-        (prop_instance_get_starting_position, pos2, ":gate_no"),
-        (set_fixed_point_multiplier, 100),
-        (get_distance_between_positions, ":distance", pos1, pos2),
-        (le, ":distance", 200),
-        ]) + [
-        (position_move_z,pos1,-10000),
-        (prop_instance_set_position,":barrier_no",pos1),
-      (try_end),
-    (try_end),
-   ]),
+    # #find dependent barriers, move them down at mission start
+    # (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
+    # (try_begin),
+      # (gt, ":max_barriers",0),
+      # (try_for_range,":count",0,":max_barriers"),
+        # (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+        # (prop_instance_get_starting_position, pos1, ":barrier_no"),
+        # ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
+        # (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+        # (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+        # (eq, ":var1", ":var1_gate"),
+        # ] or [
+        # (prop_instance_get_starting_position, pos2, ":gate_no"),
+        # (set_fixed_point_multiplier, 100),
+        # (get_distance_between_positions, ":distance", pos1, pos2),
+        # (le, ":distance", 200),
+        # ]) + [
+        # (position_move_z,pos1,-10000),
+        # (prop_instance_set_position,":barrier_no",pos1),
+      # (try_end),
+    # (try_end),
+   # ]),
    
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
+    (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 2),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
     (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
     (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
     (particle_system_burst,"psys_pistol_smoke",pos1,200),
-    (position_rotate_x, pos1, 85),
+    (position_rotate_x, pos1, -180),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
@@ -3444,10 +3446,7 @@ scene_props = [
       (particle_system_burst, "psys_dummy_smoke", pos1, 3),
       (particle_system_burst, "psys_dummy_straw", pos1, 10),
     ]),
-], 3000),
-
-("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
-("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
+], 1500),
 
 
 #("save_compartibility2",0,"0","0", []),

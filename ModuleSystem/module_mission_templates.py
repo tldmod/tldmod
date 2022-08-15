@@ -4214,6 +4214,7 @@ mission_templates = [ # not used in game
       (val_add, "$formations_tutorial", 1),
       ]),
 
+# mission start triggers
   (0, 0, ti_once, [],[
     (assign,"$battle_won",0),
     (assign,"$defender_reinforcement_stage",0),
@@ -4246,6 +4247,39 @@ mission_templates = [ # not used in game
     (try_end),
       (call_script, "script_count_mission_casualties_from_agents"),
       (finish_mission,0),
+    ]),
+
+
+  #find and open retreat gates
+  (1, 0, ti_once, [],[
+            (scene_prop_get_num_instances,":max_gates","spr_gate_destructible_retreat"), 
+            (try_begin), #gates start
+              (gt, ":max_gates",0),
+              (try_for_range,":count",0,":max_gates"), #gates loop
+                (scene_prop_get_instance,":gate_no", "spr_gate_destructible_retreat", ":count"),
+                (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 1),
+                (prop_instance_get_starting_position, pos1, ":gate_no"),
+                (position_rotate_z, pos1, 85), 
+                (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
+
+        ] + (is_a_wb_mt==1 and [                              
+                #find dependent barriers, move them underground
+                (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
+                (try_begin), # barriers start
+                  (gt, ":max_barriers",0),
+                  (try_for_range,":count",0,":max_barriers"), #barriers loop
+                    (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+                    (prop_instance_get_starting_position, pos1, ":barrier_no"),
+                    (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+                    (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+                    (eq, ":var1", ":var1_gate"),
+                    (position_move_z,pos1,-1000),
+                    (prop_instance_set_position,":barrier_no",pos1),
+                  (try_end), # barriers loop
+                (try_end), # barriers end
+        ] or []) + [
+              (try_end), # gates loop
+            (try_end), # gates end
     ]),
 
   ## WB Only - When a horse archer spawns, we set them to Archers, instead of Cavalry.
@@ -4496,7 +4530,7 @@ mission_templates = [ # not used in game
   
     ### DESPERATE CHARGE ###
 
-    (try_begin),
+    (try_begin), #desparate charge begin
       (store_mission_timer_a,":mission_time"),
       (gt, ":mission_time", 180),
       (ge, "$attacker_reinforcement_stage", 18),
@@ -4516,7 +4550,36 @@ mission_templates = [ # not used in game
       (team_give_order, "$defender_team_3", grc_everyone, mordr_charge),
       (set_show_messages, 1),
       #(display_message,"@Defenders: everyone CHARGE!!"),
-    (try_end),
+        #find and open retreat gates
+      (scene_prop_get_num_instances,":max_gates","spr_gate_destructible_retreat"), 
+        (try_begin), #gates start
+          (gt, ":max_gates",0),
+          (try_for_range,":count",0,":max_gates"), #gates loop
+            (scene_prop_get_instance,":gate_no", "spr_gate_destructible_retreat", ":count"),
+            (scene_prop_slot_eq, ":gate_no", scene_prop_open_or_close_slot, 0),
+            (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 1),
+            (prop_instance_get_starting_position, pos1, ":gate_no"),
+            (position_rotate_z, pos1, 85), 
+            (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
+        ] + (is_a_wb_mt==1 and [                              
+            #find dependent barriers, move them underground
+            (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
+            (try_begin), # barriers start
+              (gt, ":max_barriers",0),
+              (try_for_range,":count",0,":max_barriers"), #barriers loop
+                (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+                (prop_instance_get_starting_position, pos1, ":barrier_no"),
+                (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+                (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+                (eq, ":var1", ":var1_gate"),
+                (position_move_z,pos1,-1000),
+                (prop_instance_set_position,":barrier_no",pos1),
+              (try_end), # barriers loop
+            (try_end), # barriers end
+        ] or []) + [
+          (try_end), # gates loop
+        (try_end), # gates end
+    (try_end), #desparate charge end
     ]),
 
     #update player team
@@ -4714,6 +4777,8 @@ mission_templates = [ # not used in game
               (gt, ":max_gates",0),
               (try_for_range,":count",0,":max_gates"), #gates loop
                 (scene_prop_get_instance,":gate_no", "spr_gate_destructible_retreat", ":count"),
+                (scene_prop_slot_eq, ":gate_no", scene_prop_open_or_close_slot, 1),
+                (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 0),
                 (prop_instance_get_starting_position, pos1, ":gate_no"),
                 (prop_instance_get_variation_id_2, ":var2", ":gate_no"),
                 (eq, ":var2", ":entry"),
@@ -4722,6 +4787,7 @@ mission_templates = [ # not used in game
                 
                 #spawn gate aggravator
                 (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
+                (position_move_x, pos1, 100,1), #move them slightly into the middle so they're easier to hit
                 (set_spawn_position, pos1),
                 (spawn_agent,"trp_gate_aggravator"),
                 (assign, ":gate_aggravator", reg0),
