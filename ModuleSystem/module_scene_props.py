@@ -2959,7 +2959,7 @@ scene_props = [
 ( "arena_full_ado"                   		 ,0,"ado_wood_arena_training","bo_ado_wood_arena_training",[]),
 ( "bench_fine_ado"                        ,0,"ado_wood_bench_fine","0",[]),
 ( "bench_plain_ado"                       ,0,"ado_wood_bench_plain","0",[]),
-( "bench_stone_roman_ado"                      ,0,"ado_stone_bench_roman","bo_bench_stone_roman_ado",[]),
+( "bench_stone_roman_ado"                      ,0,"ado_stone_bench_roman","0",[]),
 ( "bridge_long_ado"                       ,0,"ado_wood_bridge_long","bo_ado_wood_bridge_long",[]),
 ( "bridge_long_ramp_ado"                  ,0,"ado_wood_bridge_long_ramp","bo_ado_wood_bridge_long_ramp",[]),
 ( "bridge_tall_ado"                       ,0,"ado_wood_bridge_tall","bo_ado_wood_bridge_tall",[]),
