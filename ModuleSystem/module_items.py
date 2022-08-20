@@ -431,7 +431,7 @@ items =[
 ["hood_green","Green_Hood",[("fi_helm10_green",0),("hood_green_simple",imodbits_armor_bad),("fi_helm10_green_mask",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,120,weight(1)|head_armor(14)|difficulty(0),imodbits_armor,[]],
 ["hood_grey","Grey_Hood",[("fi_helm10_grey",0),("hood_grey_simple",imodbits_armor_bad),("hood_grey_large",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,80,weight(1)|head_armor(11)|difficulty(0),imodbits_armor,[]],
 ["hood_leather","Leather_Hood",[("fi_helm10_leather",0),("hood_leather_simple",imodbits_armor_bad),("fi_helm10_leather_mask",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,250,weight(1)|head_armor(15)|difficulty(0),imodbits_armor,[]],
-["free_fur_coat","Dale_Coat",[("dale_coat",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,400,weight(6)|head_armor(0)|body_armor(13)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["mail_coif","Mail_Coif",[("maci_mail_coif",0),("crusader_koif_a",imodbits_armor_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,250,weight(2)|head_armor(22)|difficulty(0),imodbits_armor,[]],
 ["free_green_dress","Green_Dress",[("rohan_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["free_tld_tunic","Tunic",[("tld_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]], #InVain: Removed script (ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_initialize_civilian_clothes", "tableau_tld_tunic", ":agent_no", ":troop_no")])
 
@@ -1011,8 +1011,8 @@ items =[
 ["mirkwood_helm_d","Greenwood_Royal_Helm",[("mirkwoodroyalarcher_a",0),("mirkwoodroyalarcher_a",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,1300,weight(3)|abundance(95)|head_armor(36)|body_armor(0)|difficulty(13),imodbits_elf_armor],
 ####BOOTS
 #free Dec 2019
-["free_mirkwood_leather_greaves","Mirkwood_Leather_Greaves",[("mirkwood_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1500,weight(1)|leg_armor(28)|difficulty(0),imodbits_elf_cloth],
-["mirkwood_boots","Woodelf_Boots",[("mirkwood_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,650,weight(1)|abundance(91)|leg_armor(17)|difficulty(0),imodbits_elf_cloth],
+["woodelf_leather_boots","Woodelf_Leather_Boots",[("TLDO_elf_boots",0),("TLDO_mirkwood_boots",imodbits_armor_good)],itp_type_foot_armor|itp_shop,0,550,weight(1)|abundance(90)|leg_armor(16)|difficulty(0),imodbits_armor],
+["mirkwood_boots","Greenwood_Boots",[("mirkwood_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,650,weight(1)|abundance(92)|leg_armor(17)|difficulty(0),imodbits_armor],
 
 #####TLD HARAD ITEMS##########
 ###########ARMOR##########
@@ -1151,7 +1151,7 @@ items =[
 ["rhun_helm_pot","Rhun_Pot_Helm",[("RhunHelmPot1",imodbits_armor_bad),("RhunHelmPot2",0),("RhunHelmPot3",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,1200,weight(6)|abundance(95)|head_armor(34)|body_armor(0)|difficulty(15),imodbits_armor|imodbit_lordly | imodbit_cracked],
 ["rhun_helm_barbed","Rhun_Barbed_Helm",[("RhunHelmConical0",imodbits_armor_bad),("RhunHelmConical1",0),("RhunHelmConical2",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,600,weight(2)|abundance(91)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_armor | imodbit_cracked],
 ["rhun_helm_round","Rhun_Round_Helm",[("RhunHelmRound0",imodbits_armor_bad),("RhunHelmRound1",0),("RhunHelmRound2",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(3)|abundance(92)|head_armor(28)|body_armor(0)|difficulty(13),imodbits_armor | imodbit_cracked],
-["rhun_helm_horde","Rhun_Horde_Helm",[("RhunHelmHorde1_new",imodbits_armor_bad),("RhunHelmHorde2",0),("RhunHelmHorde3",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(4)|abundance(92)|head_armor(28)|body_armor(0)|difficulty(13),imodbits_armor | imodbit_cracked],
+["rhun_helm_horde","Rhun_Horde_Helm",[("RhunHelmHorde1_new",imodbits_armor_bad),("RhunHelmHorde2",0),("RhunHelmHorde2",imodbit_plain),("RhunHelmHorde3",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(4)|abundance(92)|head_armor(28)|body_armor(0)|difficulty(13),imodbits_armor | imodbit_cracked],
 ["rhun_helm_leather","Rhun_Leather_Helm",[("RhunHelmLeather1",imodbits_armor_bad),("RhunHelmLeather2",0),("RhunHelmLeather3",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,600,weight(1.5)|abundance(91)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_cloth],
 ["free_rhun_helm_l","Rhun_Chieftain_Helm",[("RhunHelmDeathDealer1",0),("RhunHelmDeathDealer2",imodbits_armor|imodbit_lordly)],itp_type_head_armor|itp_shop,0,1600,weight(8)|abundance(97)|head_armor(40)|body_armor(0)|difficulty(20),imodbits_armor|imodbit_lordly],
 ["free_rhun_helm_m","Rhun_Leather_Helm",[("RhunHelmLeather3",0)],itp_type_head_armor|itp_shop,0,500,weight(1.5)|head_armor(25)|difficulty(0),imodbits_cloth],
