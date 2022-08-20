@@ -277,7 +277,7 @@ mission_templates_cutscenes = [
            (agent_set_animation, ":horse_agent", "anim_horse_stand"),
          (try_end),
  
-### InVain: Use entry points instead of absolute positions for greater flexibility
+### InVain: Use entry points 43-53 instead of absolute positions for greater flexibility
  
          (try_begin),
            (eq, "$g_tld_intro_state", 11), #start with looking at the gate 43
@@ -322,7 +322,7 @@ mission_templates_cutscenes = [
            (mission_cam_animate_to_position, pos1, 3000, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
-           (eq, "$g_tld_intro_state", 15), #forward and above the street level
+           (eq, "$g_tld_intro_state", 15), #up a bit, look up to the tower
            (ge, ":cur_time", 10),
 		   (entry_point_get_position, pos1, 47),
            #(init_position, pos1),
@@ -334,7 +334,7 @@ mission_templates_cutscenes = [
            (mission_cam_animate_to_position, pos1, 2600, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
-           (eq, "$g_tld_intro_state", 16), #up one level and look at the statue
+           (eq, "$g_tld_intro_state", 16), #second gate, look at the tower
            (ge, ":cur_time", 13),
 		   (entry_point_get_position, pos1, 48),
           # (init_position, pos1),
@@ -367,11 +367,11 @@ mission_templates_cutscenes = [
           # (position_set_x, pos1, 16900),
           # (position_set_y, pos1,  9000),
           # (position_set_z, pos1, 16800),
-           (mission_cam_animate_to_position, pos1, 2700, 0),
+           (mission_cam_animate_to_position, pos1, 3700, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 19), #off the cliff
-           (ge, ":cur_time", 24),
+           (ge, ":cur_time", 25),
 		   (entry_point_get_position, pos1, 51),
          #  (init_position, pos1),
          #  (position_rotate_z, pos1, -160),
@@ -383,7 +383,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 20), #drop to the right
-           (ge, ":cur_time", 27),
+           (ge, ":cur_time", 28),
 		   (entry_point_get_position, pos1, 52),
          #  (init_position, pos1),
          #  (position_rotate_z, pos1, -150),
@@ -394,7 +394,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 21), #guard position
-           (ge, ":cur_time", 30),
+           (ge, ":cur_time", 31),
 		   (entry_point_get_position, pos1, 53),
          #  (init_position, pos1),
          #  (position_set_x, pos1, 14900),
@@ -406,7 +406,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 22), #finish
-           (ge, ":cur_time", 39),
+           (ge, ":cur_time", 37),
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
            #chain to next intro mission
@@ -477,22 +477,29 @@ mission_templates_cutscenes = [
          (set_show_messages, 0),
          (store_mission_timer_a, ":cur_time"),
          (set_fixed_point_multiplier, 100),
-         # make player agent static
+
+         # (try_begin),
+           # (eq, ":horse_agent", -1),
+         # #swy-- for M&B 1.011 we use anim_stand, and for WB anim_stand_cutscene
+         # ]+(is_a_wb_cutscene==0 and 
+          # [(agent_set_animation, ":player_agent", "anim_stand")]
+            # or
+          # [(agent_set_animation, ":player_agent", "anim_stand_cutscene")]
+         # )+[
+         # #swy-- here it finishes, just in case
+         # (else_try),
+           # (agent_set_animation, ":player_agent", "anim_ride_0"),
+           # (agent_set_animation, ":horse_agent", "anim_horse_stand"),
+         # (try_end),
+
+
+        #remove player agent
+        ] + ((is_a_wb_cutscene==1) and [
          (get_player_agent_no, ":player_agent"),
          (agent_get_horse, ":horse_agent", ":player_agent"),
-         (try_begin),
-           (eq, ":horse_agent", -1),
-         #swy-- for M&B 1.011 we use anim_stand, and for WB anim_stand_cutscene
-         ]+(is_a_wb_cutscene==0 and 
-          [(agent_set_animation, ":player_agent", "anim_stand")]
-            or
-          [(agent_set_animation, ":player_agent", "anim_stand_cutscene")]
-         )+[
-         #swy-- here it finishes, just in case
-         (else_try),
-           (agent_set_animation, ":player_agent", "anim_ride_0"),
-           (agent_set_animation, ":horse_agent", "anim_horse_stand"),
-         (try_end),
+         (agent_fade_out, ":player_agent"),
+         (agent_fade_out, ":horse_agent"), 
+        ] or []) + [
          
          (try_begin),
            (eq, "$g_tld_intro_state", 31), #start with looking at the city 43

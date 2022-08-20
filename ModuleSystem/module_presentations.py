@@ -2771,7 +2771,7 @@ presentations = [
           (str_store_string, s1, "@The White Tree stands dead since the line of the Kings had failed"),
         (else_try),
           (eq, "$g_tld_intro_state", 22),
-          (str_store_string, s1, "@The Shadow grows ever stronger in the East"),
+          (str_store_string, s1, "@And the Shadow grows ever stronger in the East"),
         (else_try),
           (eq, "$g_tld_intro_state", 32),
           (str_store_string, s1, "@Minas Morgul - City of the Nazgul"),
