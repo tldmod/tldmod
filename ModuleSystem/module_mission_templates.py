@@ -98,18 +98,19 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   ]),
 
  # Piggyback on Camera Code for Displaying Agent Labels.
+ #InVain: Disabled
 
-  (ti_battle_window_opened, 0, 0, [(ge, "$g_display_agent_labels", 1),],
-    [(start_presentation, "prsnt_display_agent_labels")]),
+  # (ti_battle_window_opened, 0, 0, [(ge, "$g_display_agent_labels", 1),],
+    # [(start_presentation, "prsnt_display_agent_labels")]),
 
-  (0,0,0, [(ge, "$g_display_agent_labels", 1), (key_clicked, key_y),],
-    [(try_begin),
-      (eq, "$show_hide_labels",1),
-      (assign, "$show_hide_labels", 0),
-     (else_try),
-      (assign, "$show_hide_labels",1),
-      (start_presentation, "prsnt_display_agent_labels"),
-     (try_end)]),
+  # (0,0,0, [(ge, "$g_display_agent_labels", 1), (key_clicked, key_y),],
+    # [(try_begin),
+      # (eq, "$show_hide_labels",1),
+      # (assign, "$show_hide_labels", 0),
+     # (else_try),
+      # (assign, "$show_hide_labels",1),
+      # (start_presentation, "prsnt_display_agent_labels"),
+     # (try_end)]),
 
   #-- camera_mode
   (0, 0, 0, [],

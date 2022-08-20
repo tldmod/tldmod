@@ -1954,6 +1954,8 @@ scripts = [
     (assign, "$attacker_archer_melee",0),
     (assign, "$attacker_team_3", 5),
     (assign, "$rescue_convo_troop", 3),
+    (assign, "$tld_options_overlay_14", 2),
+    (assign, "$g_display_agent_labels", 2),
 
 	(val_mul, "$battle_renown_total", "$hold_f1"),
 	(val_mul, "$battle_renown_total", "$dormant_spawn_radius"),
@@ -1964,6 +1966,8 @@ scripts = [
     (val_mul, "$gate_aggravator_agent", "$attacker_archer_melee"),
     (val_mul, "$attacker_archer_melee", "$attacker_team_3"),
     (val_mul, "$attacker_archer_melee", "$rescue_convo_troop"),   
+    (val_mul, "$attacker_archer_melee", "$tld_options_overlay_14"),   
+    (val_mul, "$attacker_archer_melee", "$g_display_agent_labels"),  
 
 	#Kham - Squelch compiler warnings END
 	
@@ -1980,7 +1984,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 27),  #Rafa: Savegame version
+    (assign,"$savegame_version", 28),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -1994,8 +1998,8 @@ scripts = [
 	(assign, "$advanced_siege_ai",1), #Kham - Advanced Siege AI - default is ON
 	(assign, "$pref_cam_mode", 0), #Kham - Camera Preference - Default is Default
 	(assign, "$tld_spawn_battle_animals", 1), #Kham - Battle Animals
-	(assign, "$g_display_agent_labels",0), #Kham - Troop Labels for WB
-	(assign, "$show_hide_labels", 1), #Kham - Toggle for Troop Labels
+	(assign, "$g_display_agent_labels",0), #Kham - Troop Labels for WB #InVain: Disabled
+	(assign, "$show_hide_labels", 0), #Kham - Toggle for Troop Labels
 	(assign, "$batching_check_period", 3000), #Kham - For Batching
 	(assign, "$first_time", 0),	#squelch compiler warnings
 	(assign, "$FormAI_autorotate", 1), #Autorotate for New Formations force to 1
@@ -25078,6 +25082,12 @@ command_cursor_scripts = [
         (assign, "$savegame_version", 27),
 	(try_end),	
 
+    (try_begin), #InVain - 20 August 2022, disable troop identifiers
+        (le, "$savegame_version", 27),
+        (assign, "$g_display_agent_labels",0), 
+        (assign, "$show_hide_labels", 0), 
+        (assign, "$savegame_version", 28),
+	(try_end),	
 ]),
 
 #Kham

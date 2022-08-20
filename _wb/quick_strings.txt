@@ -1,4 +1,4 @@
-1945
+1940
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_433_wb__dev_^_B _rev_433_wb_|_dev_^_Built_2022-07-20_21:13___
+qstr__rev_447_wb__dev_^_B _rev_447_wb_|_dev_^_Built_2022-08-20_13:19___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -129,11 +129,6 @@ qstr_Fallen_rider_damage_ Fallen_rider_damage_messages:__
 qstr_No_Messages No_Messages
 qstr_Player_damage_only Player_damage_only
 qstr_All_Messages All_Messages
-qstr_Troop_Identifier_in_ Troop_Identifier_in_Battles_(Press_Y_during_battle_to_show/hide):
-qstr_Disable Disable
-qstr_Troop_Names Troop_Names
-qstr_Simple:_Faction_Colo Simple:_Faction_Colors
-qstr_Simple:_Black___Enem Simple:_Black_-_Enemy_/_White_-_Allies
 qstr_Preferred_Camera_Mod Preferred_Camera_Mode:__
 qstr_Default_Camera Default_Camera
 qstr_Free_Mode_Custom_Cam Free-Mode_Custom_Camera

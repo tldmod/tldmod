@@ -1832,15 +1832,16 @@ presentations = [
           #swy-- hackfix to show sidelog messages again in wb-- i'm not going to spend more time in this jumblefuck, i'm scared.
           (set_show_messages, 1),
           (presentation_set_duration, 0),
-    
-    ] + (is_a_wb_cutscene==1 and [
-          (try_begin),
-            (gt, "$g_display_agent_labels", 0),
-            (eq, "$show_hide_labels", -1),
-            (assign, "$show_hide_labels", 1), #toggle on troop labels, if they were on before)
-            (start_presentation, "prsnt_display_agent_labels"),
-          (try_end),
-    ] or []) + [
+
+        #InVain: Disabled
+    # ] + (is_a_wb_cutscene==1 and [
+          # (try_begin),
+            # (gt, "$g_display_agent_labels", 0),
+            # (eq, "$show_hide_labels", -1),
+            # (assign, "$show_hide_labels", 1), #toggle on troop labels, if they were on before)
+            # (start_presentation, "prsnt_display_agent_labels"),
+          # (try_end),
+    # ] or []) + [
 
         (try_end),
         ]),
@@ -4934,26 +4935,26 @@ if wb_compile_switch==1:
         (overlay_set_val, "$tld_options_overlay_11", "$show_mount_ko_message"),
         (val_sub, ":y_pos", Screen_Text_Height),
 
-        #Show Troop Name in Battles
-        (create_text_overlay, reg1, "@Troop Identifier in Battles (Press Y during battle to show/hide):", tf_right_align, tf_double_space),
-        (position_set_y, pos0, ":y_pos"),
-        (overlay_set_position, reg1, pos0),
+        #Show Troop Name in Battles #InVain: Disabled, caused presentation overflow, replaced by native troop banners
+        # (create_text_overlay, reg1, "@Troop Identifier in Battles (Press Y during battle to show/hide):", tf_right_align, tf_double_space),
+        # (position_set_y, pos0, ":y_pos"),
+        # (overlay_set_position, reg1, pos0),
 
-        (create_combo_button_overlay, "$tld_options_overlay_14"),
-        (overlay_add_item, "$tld_options_overlay_14", "@Disable"),
-        (overlay_add_item, "$tld_options_overlay_14", "@Troop Names"),
-        (overlay_add_item, "$tld_options_overlay_14", "@Simple: Faction Colors"),
-        (overlay_add_item, "$tld_options_overlay_14", "@Simple: Black - Enemy / White - Allies"),
+        # (create_combo_button_overlay, "$tld_options_overlay_14"),
+        # (overlay_add_item, "$tld_options_overlay_14", "@Disable"),
+        # (overlay_add_item, "$tld_options_overlay_14", "@Troop Names"),
+        # (overlay_add_item, "$tld_options_overlay_14", "@Simple: Faction Colors"),
+        # (overlay_add_item, "$tld_options_overlay_14", "@Simple: Black - Enemy / White - Allies"),
 
-        (copy_position, pos1, pos0),
-        (store_add, reg2, ":y_pos", 0),
-        (position_set_y, pos1, reg2),
-        (position_get_x, ":x_pos", pos1),
-        (val_add, ":x_pos", 130),
-        (position_set_x, pos1, ":x_pos"),
-        (overlay_set_position, "$tld_options_overlay_14", pos1),
-        (overlay_set_val, "$tld_options_overlay_14", "$g_display_agent_labels"),
-        (val_sub, ":y_pos", Screen_Text_Height),
+        # (copy_position, pos1, pos0),
+        # (store_add, reg2, ":y_pos", 0),
+        # (position_set_y, pos1, reg2),
+        # (position_get_x, ":x_pos", pos1),
+        # (val_add, ":x_pos", 130),
+        # (position_set_x, pos1, ":x_pos"),
+        # (overlay_set_position, "$tld_options_overlay_14", pos1),
+        # (overlay_set_val, "$tld_options_overlay_14", "$g_display_agent_labels"),
+        # (val_sub, ":y_pos", Screen_Text_Height),
 
         #Pref Camera
         (create_text_overlay, reg1, "@Preferred Camera Mode:  ", tf_right_align, tf_double_space),
@@ -5087,13 +5088,13 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_11"),
           (assign, "$show_mount_ko_message", ":value"),
-        (else_try),
-          (eq, ":object", "$tld_options_overlay_14"),
-          (assign, "$g_display_agent_labels", ":value"),
-          (try_begin),
-            (ge, ":value", 1),
-            (assign, "$show_hide_labels", 1),
-          (try_end),
+        # (else_try), #InVain: Disabled
+          # (eq, ":object", "$tld_options_overlay_14"),
+          # (assign, "$g_display_agent_labels", ":value"),
+          # (try_begin),
+            # (ge, ":value", 1),
+            # (assign, "$show_hide_labels", 1),
+          # (try_end),
         (else_try),
           (eq, ":object", "$tld_options_overlay_12",),
           (assign, "$pref_cam_mode", ":value"),
@@ -5466,12 +5467,16 @@ if wb_compile_switch==1:
 
 ("display_agent_labels", prsntf_read_only|prsntf_manual_end_only, 0, # display player name and optionally faction name above the heads of nearby agents
    [(ti_on_presentation_load,
-     [(assign, "$g_presentation_agent_labels_overlay_count", 0),
+     [
+     (eq, 0,1), #InVain: Disabled
+     (assign, "$g_presentation_agent_labels_overlay_count", 0),
       (assign, "$g_presentation_agent_labels_update_time", 0),
       (presentation_set_duration, 999999),
       ]),
     (ti_on_presentation_run,
-     [(store_trigger_param_1, ":current_time"),
+     [
+     (eq, 0,1), #InVain: Disabled     
+     (store_trigger_param_1, ":current_time"),
       (set_fixed_point_multiplier, 1000),
       (try_begin),
         (this_or_next|eq, "$g_display_agent_labels", 0),
