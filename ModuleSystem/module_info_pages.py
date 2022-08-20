@@ -95,11 +95,13 @@ info_pages = [
 
   Press the Ctrl+End keys together to switch between the three different camera modes: Default Camera / Fixed Camera / Free-Mode Camera.
   
-  When in "Free-Mode Camera", Press and hold Ctrl and Page Up (or Page Down) to adjust camera height (Tilt).
+  When in "Free-Mode Camera", Press and hold Ctrl and Arrow Up (or Arrow Down) to adjust camera height (Tilt).
 
   When in "Free-Mode Camera", Press and hold Ctrl and Numpad + (or Numpad -) to adjust camera distance (Zoom).
-
+ 
   Additionally, you can also press Shift while moving/zooming the camera to enable smoothing.
+ 
+  When in "Fixed-Mode Camera", Press Ctrl and Arrows left/down/right to switch view between left shoulder / central / right shoulder.
 
 
   '''),
