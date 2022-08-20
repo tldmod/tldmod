@@ -23043,7 +23043,7 @@ scripts = [
 	
 	#clear recipient_initial from any hero troops and prisoners
 	(try_for_range, ":hero", heroes_begin, heroes_end),
-		(remove_troops_from_prisoners, ":hero",":recipient_initial"),
+		#(remove_troops_from_prisoners, ":hero",":recipient_initial"), #InVain: This led to a bug where hero prisoners vanished after giving troops to a friend. Since the script isn't called in any situation that might affect heroes or hero prisoners, I think it's save to disable it.
 		(remove_member_from_party, ":hero",":recipient_initial"),
 	(try_end),
 	(remove_member_from_party, "trp_player",":recipient_initial"),

@@ -5963,12 +5963,12 @@ game_menus = [
         (else_try),
           # Talk to enemy leaders
           (assign, ":done", 0),
-          (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
+          (party_get_num_companion_stacks, ":num_stacks", "p_collective_enemy"), #InVain: Was p_encountered_party_backup, but that party seems to lose heroes in/after a fight (not in autoresolve), and I couldn't track it down. p_collective_enemy should work just as well.
         
           (try_for_range, ":stack_no", "$last_defeated_hero", ":num_stacks"),
             (eq, ":done", 0),
-            (party_stack_get_troop_id,   ":stack_troop","p_encountered_party_backup",":stack_no"),
-            (party_stack_get_troop_dna,   ":stack_troop_dna","p_encountered_party_backup",":stack_no"),
+            (party_stack_get_troop_id,   ":stack_troop","p_collective_enemy",":stack_no"),
+            (party_stack_get_troop_dna,   ":stack_troop_dna","p_collective_enemy",":stack_no"),
             
             (troop_is_hero, ":stack_troop"),
             (store_add, "$last_defeated_hero", ":stack_no", 1),
