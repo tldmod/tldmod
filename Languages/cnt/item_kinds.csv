@@ -499,7 +499,7 @@ itm_mirkwood_helm_a|木精靈弓兵盔
 itm_mirkwood_helm_b|綠森盔
 itm_mirkwood_helm_c|綠森重型盔
 itm_mirkwood_helm_d|綠森王家盔
-itm_mirkwood_boots|木精靈靴
+; itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_harad_tunic|哈拉德束腰外衣
 itm_harad_padded|哈隆鐸加厚布甲
 itm_harad_hauberk|哈隆鐸胸甲
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|鷹衛隊盔
 itm_lion_helm|獅衛隊盔
 itm_harad_pantherhelm|豹衛隊帽
 itm_harad_khopesh|哈拉德鐮狀劍
-itm_black_snake_sword|哈拉德重型彎刀
-itm_harad_heavy_sword|哈拉德重劍
+; itm_black_snake_sword|Harad Cobra Sword
+; itm_harad_heavy_sword|Harad Dragon Sword
 itm_horandor_a|哈拉德月牙彎刀
 itm_skirmisher_sword|哈拉德散兵劍
-itm_harad_sabre|哈拉德軍刀
+; itm_harad_sabre|Harad Salamander Sword
 itm_harad_mace|遠哈拉德戰錘
 itm_far_harad_2h_mace|遠哈拉德雙手戰錘
 itm_harad_dagger|哈拉德刃
@@ -546,7 +546,7 @@ itm_harad_shield_c|哈隆鐸小圓盾
 itm_harad_yellow_shield|哈拉德盾
 itm_desert_boots|沙漠靴
 itm_harad_leather_greaves|哈拉德皮脛甲
-itm_harad_scale_greaves|哈拉德鱗脛甲
+itm_harad_scale_greaves|哈拉德脛甲
 itm_harad_lamellar_greaves|哈拉德夾板脛甲
 itm_khand_inf_helm_a|侃德盔
 itm_khand_inf_helm_b|侃德盔
@@ -642,6 +642,7 @@ itm_umb_helm_a|海盜硬殼盔
 itm_umb_helm_b|海盜高盔
 itm_umb_helm_c|海盜民兵盔
 itm_umb_helm_d|海盜掠奪者盔
+; itm_umb_helm_reward|Ancient Numenorean Karma
 itm_corsair_trident|海怒三叉戟
 itm_corsair_boots|海盜靴
 itm_umb_shield_a|海盜盾

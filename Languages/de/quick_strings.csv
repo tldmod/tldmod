@@ -38,7 +38,7 @@ qstr_A_peaceful_village_n|Ein friedliches Dorf nicht weit von der Westfold...
 qstr_The_War_is_upon_Roha|Der Krieg kommt über Rohan!
 qstr_Minas_Tirith___The_W|Minas Tirith - Die Weiße Stadt
 qstr_The_White_Tree_stand|Der Weiße Baum ist tot, denn die Linie der Könige hat versagt
-qstr_The_Shadow_grows_eve|Der Schatten im Osten wird immer stärker
+qstr_And_the_Shadow_grows|Und der Schatten im Osten wächst
 qstr_Minas_Morgul___City_|Minas Morgul - Stadt der Nazgûl
 qstr_Sauron_s_armies_marc|Saurons Armeen ziehen in den Krieg!
 qstr_Adventurers_at_audie|Abenteurer in einer Audienz mit Truchsess Denethor...
@@ -94,7 +94,7 @@ qstr_TLD_New_FormAI|Neue Formations-KI
 qstr_Siege_AI:__|KI in Belagerungen:
 qstr_Basic__better_perfor|Reduziert (bessere Leistung)
 qstr_Advanced|Erweitert
-qstr_Campaign_diffculty:_|Kampagnen-Schwierigkeit:
+qstr_Campaign_difficulty:|Kampagnen-Schwierigkeit:
 qstr_Hard|Schwer
 qstr_Default|Standard
 qstr_Easy|Einfach
@@ -109,11 +109,6 @@ qstr_Fallen_rider_damage_|Schadensbenachrichtigung beim Fallen vom Pferd:
 qstr_No_Messages|Keine
 qstr_Player_damage_only|Nur Spieler
 qstr_All_Messages|Alle
-qstr_Troop_Identifier_in_|Freund/Feind-Anzeige für Truppen (Drücke Y in der Schlacht zum Anzeigen/Verbergen):
-qstr_Disable|Aus
-qstr_Troop_Names|Truppenkennzeichen
-qstr_Simple:_Faction_Colo|Einfach: Fraktionsfarbe
-qstr_Simple:_Black___Enem|Einfach: Schwarz - Feind / Weiß - Freund
 qstr_Preferred_Camera_Mod|Bevorzugte Kamera:
 qstr_Default_Camera|Standartkamera
 qstr_Free_Mode_Custom_Cam|Freier Modus
@@ -242,6 +237,8 @@ qstr_Strengthens_all_Hero|Verstärkt alle Helden
 qstr_+2_to_First_Aid__Par|+2 Erste Hilfe (Trupp)
 qstr_lead_more_Uruks|Führe mehr Uruks an
 qstr_+1_to_Power_Throw|+1 Wurfkraft
+; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
+; qstr__Scales_with_Charism|(Scales with Charisma. Human leaders only.)
 qstr_+1_to_Spotting|+1 Aufklärung
 qstr_+2_to_Weapon_Master|+2 Waffenmeister
 qstr_+2_to_First_Aid|+2 Erste Hilfe
@@ -729,8 +726,8 @@ qstr_Switch_Back_to_3rd_P|Wechsle in den 3rd-Person-Modus, um die Kamera umzuste
 qstr_Fixed_Custom_Camera|Feste Kamera
 qstr_Press_Ctrl_+_Left_/_|Drücke Strg+linke Pfeiltaste / Strg+rechte Pfeiltaste um die Schulteransicht zu wechseln
 qstr_Press_Ctrl_+_Down_to|Drücke STRG+Pfeil-unten, um die Kamera zu zentrieren.
-qstr_Use_+/__to_zoom_in/o|Drücke +/- um zu zoomen
-qstr_Use_Up/Down_arrow_ke|Drücke Pfeiltasten Hoch/Runter, um den Winkel zu verändern
+; qstr_Press_Ctrl_and_+/__t|Press Ctrl and +/- to zoom in/out
+; qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
 qstr_Fixed_Camera___Right|Feste Kamera - Rechte Schulter
 qstr_Fixed_Camera___Left_|Feste Kamera - Linke Schulter
 qstr_Fixed_Camera___Cente|Feste Kamera - zentriert
@@ -783,7 +780,7 @@ qstr_{s21}_{reg24?killed:|{s21} {reg24?getötet:bewusstlos geschlagen} von {s22}
 qstr_A_bear_has_been_summ|Ein Bär wurde in die Schlacht gerufen!
 qstr_In_The_Last_Days_of_|In TLD werden sich deine Truppen zu Beginn jeder Schlacht aufstellen, anstelle blind anzugreifen.^^Um deinen Truppen eine Formation zu befehlen, drücke 'J' für Reihen, 'K' für Schildwall, 'L' für Keil, 'ö' für Quadrat. Um eine Formation aufzulösen, drücke 'U'.^Wenn deine Truppen fliehen, drücke 'V', um sie zu sammeln. Die maximale Zahl deiner Sammelrufe pro Schlacht hängt von deiner Führerschaft und deinem Charisma ab.
 qstr_You_can_also_order_y|Du kannst deinen Truppen auch befehlen, bestimmte Waffenkombinationen zu verwenden.^^ Drücke 'O', um den Waffenbefehl zu wechseln. Drücke 'P', um den Schildbefehl zu wechseln.
-qstr_The_Last_Days_of_the|TLD bietet zusätzliche Kameraeinstellungen, die besser zu kleinen Spielercharakteren (wie Orks oder Zwergen) passen, als die Standartkamera für M&B.^^Drücke STRG+ENDE, um zwischen den 2 Kameramodi zu wechseln: Feste Kameraposition und freier Kameramodus.^^Die feste Position ist für alle Arten von Charakteren gut geeignet, kann aber nicht konfiguriert werden. Drücke STRG+ PFEILTASTE rechts/links, um zwischen rechter und linker Schulterkamera zu wechseln.^^Im freien Kameramodus befindet sich der Charakter in der Mitte des Bildschirms. Drücke STRG+ PFEILTASTE hoch/runter um die Kamerahöhe einzustellen, und STRG + NUMPAD +/- für den Zoom.^^Siehe auch die Infoseiten für weitere Infos zu den Kameramodi.
+; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^See Info Pages for how to control the different camera modes.
 qstr_Battlefield_is_too_s|Schlachtfeld ist zu klein für erweiterte Formationen.
 qstr_You_have_a_clear_per|Du spürst deutlich unmittelbare Gefahr von allen Seiten!
 qstr_New_ent_reached_batt|Neuer Ent betritt das Schlachtfeld...
@@ -834,9 +831,12 @@ qstr_You_are_now_hidden.|Du bist nun verborgen.
 qstr_You_move_out_of_hidi|Du verlässt die Deckung.
 qstr_The_guards_have_spot|Die Wachen haben eine Leiche entdeckt!
 qstr_Alarm_Level_is_now_a|Alarmstufe 1!
+; qstr_You_have_been_to_slo|You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close.
 qstr_Alarm_Level_is_now_at|Alarmstufe 0!
 qstr_The_guards_have_spott|Die Wachen haben dich gesehen!
 qstr_Alarm_Level_is_now_at_|Alarmstufe 2!
+; qstr_Enemy_reinforcements_|Enemy reinforcements arrived.
+; qstr_Venture_deeper_into_|Venture deeper into the forest and find a way onward.
 qstr_The_sorcerer_has_fle|Der Zauberer ist geflohen!
 qstr_Report_this_ill_news|Überbringe der Herrin sofort diese schlechte Botschaft.
 qstr_The_sorcerer_is_flee|Der Zauberer flieht! Tötet ihn!
@@ -934,13 +934,18 @@ qstr_You_drank_the_Ent_Wa|Du hast Entwasser getrunken...
 qstr_You_used_the_Orc_Bre|Du hast das Orkgebräu verwendet.
 qstr_You_and_your_compani|Du und deine Gefährten trinken einen Schluck Miruvor. Ihr fühlt euch gestärkt und erfrischt.
 qstr_You_give_a_few_leave|Du gibst deinen Heilern einige Blätter Athelas.
+; qstr_Not_enough_party_spa|Not enough party space.
+qstr_elites|Elitekrieger
+qstr_regulars|Krieger
+qstr_recruits|Rekruten
+; qstr_wild|wild
+; qstr_goblins|goblins
 qstr_lordless|ohne Herrn
 qstr_orc_stragglers|Ork-Nachzügler
-qstr_wild_goblins|Wildorks
-qstr_recruits|Rekruten
-qstr_regulars|Krieger
-qstr_elites|Elitekrieger
 qstr_You_camp_and_beat_th|Du schlägst dein Lager auf und schlägst die Trommeln aus der Tiefe. Der mächtige Klang lockt eine Gruppe {s2} {s1} an.
+; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
 qstr_Fangorn_search:_fail|Fangorn-Suche: gescheitert.
 qstr_^^^A_great_victory!^|^^^Ein großer Sieg!^^^Also das war es, wovon die Mythen über Fangorn handelten...
 qstr_^^^Defeated...^^^Sca|^^^Besiegt...^^^Verstreut im Fangorn-Wald... Allein...
@@ -972,7 +977,8 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Eine Gruppe von {s1} {s10} dir entgegen.
 qstr_You_are_attacking_a_|Du greifst eine Gruppe von {s1} an.
 qstr_The_battle_against_t|Der Kampf gegen die Gruppe von {s1} setzt sich fort.
-qstr_There_are_{reg39}_al|Du kämpfst gemeinsam mit {reg39} verbündeten Befehlshabern. Übernimm den Befehl für {reg40} Einflusspunkte.
+; qstr_There_are_{reg39}_al|There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence.
+; qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
 qstr_Having_a_small_party|Ein kleiner Trupp hat seine Vorteile... Du und deine Truppen verbergen sich vor dem Feind. Ihr verharrt einige Stunden, um sicherzugehen, dass ihr nicht gesehen werdet.
 qstr_Your_ability_to_mast|Dank deiner Macht über die Wildnis findest du einen sicheren Ort, um deinen Trupp vor den Augen der Feinde zu verbergen. (Wildkunde-Fähigkeit erlaubt dir, bis zu {reg1} Truppen zu verstecken.)
 qstr_{reg4}_will_be_lost.|{reg4} Soldaten werden zurückgelassen.
@@ -1019,7 +1025,7 @@ qstr_As_a_last_defensive_|Als letzte Verteidigungsanstrengung ziehst du dich in 
 qstr_You_ve_been_driven_a|Man hat dich von den Mauern fortgetrieben. Jetzt strömen die Angreifer in die Straßen. Wenn du sie niederringen kannst, wird sich dein Glück vielleicht wenden.
 qstr_You_ve_breached_the_|Du hast die Stadtmauern durchbrochen, doch die trotzigen Verteidiger stellen sich dir nun in den Straßen entgegen! Du musst sie loswerden, bevor du das Herz der Stadt angreifen kannst.
 qstr_The_town_centre_is_y|Das Stadtzentrum ist dein, aber die verbleibenden Verteidiger haben sich in die Burg zurückgezogen. Sie muss fallen, bevor der Sieg wahrlich dein ist.
-qstr_The_remaining_defend|Die verbleibenden Verteidiger fliehen!
+qstr_The_remaining_defende|Die verbliebenen Verteidiger haben sich zu einem letzten Gefecht in die Burg zurückgezogen. Du musst eindringen und jeden noch verbleibenden Widerstand zerschmettern.
 qstr_However_since_you_ar|Doch da du keiner der eingeschworenen Gefolgsleute von {s9} bist, wird er dich nicht als {Herrscher/Herrscherin} dieser {reg8?Stadt:Feste} anerkennen.
 qstr_The_enemy_has_been_f|Der Feind wurde zum Rückzug gezwungen. Der Angriff ist vorbei, doch die Belagerung hält an.
 qstr_The_assasins_beat_yo|Die Attentäter schlagen dich nieder und lassen dich für tot liegen. .
@@ -1077,7 +1083,10 @@ qstr_You_defeated_{reg5}_e|Du hast {reg5} Feinde besiegt.
 qstr_You_failed_to_defeat|Du hast nicht einen Feind besiegt.
 qstr_The_sorcerer_slain_y|Nachdem der Hexemeister erschlagen ist, verbinden du und deine Gefährten hektisch eure Wunden und verschwinden in die Dunkelheit der Nacht. Grausame Stimmen schreien euch nach und du spürst, wie brennende Augen nach dir die Dunkelheit durchsuchen. Bald jedoch weicht die Wut der Enttäuschung und die Geräusche eurer Verfolger werden erstickt von der üblichen schweren Stille des Düsterwalds. Du bist entkommen.
 qstr_The_sorcerer_slipped|Der Hexenmeister ist deinem Zugriff entwischt und entschlüpfte in die Dunkelheit. Mit schweren Herzen ob eures Versagens versorgen du und deine Gefährten hastig eure Wunden und entschwinden in die Nacht. Spottende Stimmen schreien euch nach und du spürst, wie brennende Augen nach dir die Dunkelheit durchsuchen. Bald jedoch werden das Gelächter und der Spott gnädig erstickt von der üblichen schweren Stille des Düsterwalds. Du bist entkommen. 
-qstr_You_approach_a_heavi|Du näherst dich einem schwer bewachten Teil des Waldes...
+; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest... ^^ You have to decide whether you venture forward on your own, or take some troops with you.
+; qstr_You_have_a_good_chan|You have a good chance of avoiding the guards and slipping through unnoticed.
+; qstr_You_may_have_a_chanc|You may have a chance of avoiding the guards.
+; qstr_You_will_probably_ha|You will probably have to fight the guards.
 qstr_You_wait_for_darknes|Du wartest auf den Einbruch der Dunkelheit...
 qstr_You_are_quickly_disc|Du wurdest rasch vom Feind entdeckt.
 qstr_You_advance_stealthi|Du rückst verstohlen in den Wald vor.
@@ -1112,7 +1121,7 @@ qstr_{reg65}_Moria_and/or|{reg65} Truppen von Moria und Gundabad getötet. (Zäh
 qstr_{reg65}_{s3}_troops_|{reg65} Truppen von {s3} getötet. (Zähler wird jede Stunde aktualisiert.)
 qstr_{reg66}_{s5}_troops_|{reg66} Truppen von {s5} getötet. (Zähler wird jede Stunde aktualisiert.)
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s8} von {s7} getötet. (Zähler wird jede Stunde aktualisiert.) 
-qstr_{reg68}_{s10}_killed|{reg68} {s10} getötet. (Zähler wird jede Stunde aktualisiert.) 
+; qstr_{s8}_in_{s9}_asked_y|{s8} in {s9} asked you to slay {reg67} {s10}.^ {reg68} {s11} killed. (Counter refreshes every hour)
 qstr_{s1}_is_scouted.|{s1} ist ausgespäht.
 qstr_{s2}_was_defeated!|{s2} wurde besiegt!
 qstr_The_Age_of_Men_has_f|Das Zeitalter der Menschen ist endlich vorüber. Nun sammeln die Zwei Türme ihre verbliebenen Truppen und Verbündeten, um zu entscheiden, wer der alleinige Herrscher über Mittelerde wird!
@@ -1123,7 +1132,7 @@ qstr_In_a_desperate_attem|In einem verzweifelten Versuch, sich gegen seine Feind
 qstr_Guardians_of_{s6}|Hüter von {s6}
 qstr_Guard_Legion_of_{s6}|Legion von {s6}
 qstr_Scouts_report_that_{|Späher berichten, dass {s6} eine große Armee in der Nähe von {s7} sammelt, um in einem letzten Versuch die Hauptstadt zu verteidigen.
-qstr_The_forces_of_{s2}_e|Die Truppen von {s2} haben ein Vorstoßlager in {s15} errichtet!
+; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|Die Heere von {s2} marschieren zurück, um ihre Heimat zu verteidigen!
 qstr_{playername}_s_Reser|{playername}s Reserven
 qstr_Gondor_has_called_fo|Gondor ruft nach Hilfe!
@@ -1654,6 +1663,10 @@ qstr_Then_let_us_go._Stay|Dann lasst uns aufbrechen. Bleibt in der Nähe, Ihr we
 qstr_There_will_be_blood_|Es wird Blut fließen, das ist sicher. Bleibt in der Nähe, oder ihr werdet es verpassen.
 qstr_Goodbye_friends.|Lebt wohl, Freunde.
 qstr_See_you_later_if_you|Ich sehe Euch später, sofern Ihr nicht getötet wurdet.
+; qstr_I_don_t_need_your_he|I don't need your help any longer. Go home.
+; qstr_I_don_t_have_any_nee|I don't have any need for you. Get lost.
+; qstr_We_will_return_to_ou|We will return to our previous task. Goodbye.
+; qstr_Lads_we_re_going_hom|Lads, we're going home!
 qstr__^Oh_and_take_back_t|^Oh, und nehmt die zurück, die nicht zu unseren Leuten gehören.
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Diese tapferen:Dieser tapfere} {reg28?Soldaten werden:Soldat wird} uns bei der Verteidigung unserer Heimat sicher helfen.{s32}{s23}^^[{reg14} Ressourcenpunte von {s14} verdient]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Diese:Dieser} nützliche {reg28?Truppe:Soldat} wird uns helfen, mehr Verwüstung anzurichten.{s32}^{s23}^^[{reg14} Ressourcenpunkte von {s14} verdient]

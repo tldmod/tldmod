@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Що ж, він ваш.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Боюся, у мене на нього інші плани.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Відмінно! Я пошлю своїх підручних, щоб вони якомога швидше перевезли його до в'язниці. Безумовно, це дуже нам допоможе.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Дуже погано, він представляє для нас велику цінність, {playername}.
-dlga_tld_intro_1:lord_pretalk|Навчання війні:^^- Фракції влаштовуватимуть облоги коли вони достатньо сильні.^- Велика частина поселень може бути обложена тільки коли їх фракція досить ослаблена. Зазвичай, столиці осаджують в останню чергу.^- Якщо фракція втрачає свою столицю або її сила вичерпується, то вона програє.^- Фракції набирають силу перемагаючи в битвах або утримуючи ключові поселення.^- Фракції втрачають силу програючи битви і втрачаючи поселення.^- деякі завдання або події можуть вплинути на силу фракцій.^- Ви можете подивитися поточну силу фракцій в меню "Звіти".^- Шукайте інші керівництва по грі в Інфо.
+; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
 dlga_lord_start:lord_pretalk|Ласкаво просимо, {s24}.^Вам вже має бути відомо, що {s12}. Ваш обов'язок - допомогти нам у нашій боротьбі, {playername}. Коли Ви зможете заслужити мою вдячність, [level {reg1}], я також дозволю Вам користуватися скринею для зберігання Ваших речей,.
 dlga_lord_start:lord_talk|Що таке?
 dlga_lord_pretalk:lord_talk|Щось ще?
@@ -616,22 +616,6 @@ dlga_lord_leave:close_window.3|Так-так, прощавай.
 dlga_lord_leave:close_window.4|Ми ще зустрінемося.
 dlga_start:lady_escort_lady_succeeded|Дякую за супровід, {playername}, і за те, що довезли мене в цілості й схоронності. Ваша послуга будуть належним чином помічені.
 dlga_lady_escort_lady_succeeded:close_window|Для мене це була честь служити вам.
-dlga_start:prison_guard_players|Добрий день, Командире. Ви хочете відвідати в'язницю?
-dlga_prison_guard_players:close_window|Так, Відчиняй.
-dlga_prison_guard_players:close_window.1|Ні, не зараз.
-dlga_start:prison_guard_talk|Так? Що ви хочете?
-dlga_prison_guard_talk:prison_guard_ask_prisoners|Хто тут ув’язнений?
-dlga_prison_guard_talk:prison_guard_visit_prison|Я хочу поговорити з полоненим.
-dlga_prison_guard_ask_prisoners:prison_guard_talk|Зараз тут в ув'язненні {reg1?Знаходяться:знаходиться} {s51}.
-dlga_prison_guard_visit_prison:close_window|Звичайно, Командире. Проходьте.
-dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|Вам потрібен дозвіл правителя цього міста на розмову з бранцями.
-dlga_prison_guard_visit_prison_2:close_window|Добре я спробую.
-dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Ох. Я гада в-ла, що ти тут головний.
-dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|Хе-хе. Так я тут головний. Але все-таки я не можу пустити вас до в'язниці.
-dlga_prison_guard_visit_prison_4:close_window|Тоді все гаразд. Я зараз піду.
-dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|Я знайш ов-ла гаманець із 100 денарів за кілька кроків від вас. Я вважаю, що це належить вам.
-dlga_prison_guard_visit_prison_5:close_window|Ох! Я шукав його цілий день. Як добре, що ви його повернули {пане/пані}. Що ж, тепер, коли я знаю {пане/пані}, що ви чесна людина, тому ви можете пройти у середину. Проходьте.
-dlga_prison_guard_talk:close_window|Не зважай.
 dlga_start:castle_guard_players|Який буде наказ, Командире?
 dlga_castle_guard_players:close_window|Відкрий двері. Мені потрібно увійти.
 dlga_castle_guard_players:close_window.1|Не зважай.
@@ -1048,7 +1032,9 @@ dlga_routed_allies_talk:close_window.1|Поки що ні, вояче.
 dlga_start:routed_allies_talk_troll|^^ГАРЧАННЯ!^^
 dlga_routed_allies_talk_troll:close_window|[Попросити їх приєднатися до вас знову]
 dlga_routed_allies_talk_troll:close_window.1|[Піти]
-dlga_start:party_encounter_friend|{s4} Що тебе сюди привело, {s24}?
+; dlga_start:party_encounter_distrusted_friend_1|{s14}
+; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend.1|{s4} Що тебе сюди привело, {s24}?
 dlga_party_reinforce:party_reinforce_end|Ми ще не бачили великої активності ворога. Може бути, трохи пізніше. Дякую.
 dlga_party_reinforce:party_reinforce_end.1|У нас і так достатньо воїнів, дякую вам.
 dlga_party_reinforce:party_reinforce_check|Дати нам підкріплення? Нам би були у нагоді ще кілька воїнів, але врахуйте те, що ми приймаємо бійців тільки з нашої країни.

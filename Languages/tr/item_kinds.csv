@@ -499,7 +499,7 @@ itm_mirkwood_helm_a|Orman Elfi Okçu Migferi
 itm_mirkwood_helm_b|Yeşilorman Migferi
 itm_mirkwood_helm_c|Yeşilorman Agır Migferi
 itm_mirkwood_helm_d|Yeşilorman Soylu Migferi
-itm_mirkwood_boots|Orman Elfi botları
+; itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_harad_tunic|Harad Tunigi
 itm_harad_padded|Harondor Pamuklu Zırhı
 itm_harad_hauberk|Harondor Zırh Yelegi
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Kartal Muhafız Migferi
 itm_lion_helm|Aslan Muhafız Migferi
 itm_harad_pantherhelm|Panter Muhafız Kepi
 itm_harad_khopesh|Harad Orak Bıçagı
-itm_black_snake_sword|Harad Agır Orak Kılıcı
-itm_harad_heavy_sword|Harad Agır Kılıcı
+; itm_black_snake_sword|Harad Cobra Sword
+; itm_harad_heavy_sword|Harad Dragon Sword
 itm_horandor_a|Harad Egri Kılıcı
 itm_skirmisher_sword|Harad Çarpışma Kılıcı
-itm_harad_sabre|Harad Süvari Kılıcı
+; itm_harad_sabre|Harad Salamander Sword
 itm_harad_mace|Uzak Harad Topuzu
 itm_far_harad_2h_mace|Uzak Harada İki Elli Topuzu
 itm_harad_dagger|Harad Bıçagı
@@ -546,8 +546,8 @@ itm_harad_shield_c|Harondor Küçük Kalkanı
 itm_harad_yellow_shield|Harad Kalkanı
 itm_desert_boots|Çöl botu
 itm_harad_leather_greaves|Harad Deri Çizmeler
-itm_harad_scale_greaves|Harad Pullu Çizmeler
-; itm_harad_lamellar_greaves|Harad Splinted Greaves
+itm_harad_scale_greaves|Harad Baldır Zırhı
+itm_harad_lamellar_greaves|Harad Çizmesi
 itm_khand_inf_helm_a|Khand Migferi
 itm_khand_inf_helm_b|Khand Migferi
 itm_khand_inf_helm_c1|Khand Kase Migfer
@@ -642,6 +642,7 @@ itm_umb_helm_a|Korsan Kabuk Migferi
 itm_umb_helm_b|Korsan Yüksek Migferi
 itm_umb_helm_c|Korsan Milis Migferi
 itm_umb_helm_d|Korsan Akıncı Migferi
+; itm_umb_helm_reward|Ancient Numenorean Karma
 itm_corsair_trident|Deniz Öfkesinin Zıpkını
 itm_corsair_boots|Korsan Çizmesi
 itm_umb_shield_a|Korsan Kalkanı

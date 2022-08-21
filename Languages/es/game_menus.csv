@@ -200,7 +200,7 @@ mno_leave|Irse.
 menu_simple_encounter|^^^^^{s2}^Cuentas con {reg22} tropas listas para la batalla frente a las {reg11} del enemigo.^^La batalla tendrá lugar en {s3}{s4}.^^¿Cuáles son tus órdenes?
 mno_encounter_attack|{reg21?Cargar contra ellos:Prepararse para el enfrentamiento}.
 mno_encounter_order_attack|Ordenar a tus tropas {reg21?atacar:enfrentarse a ellos} sin tu ayuda.
-mno_control_allies_menu|Usar Influencia para dar órdenes a tus aliados en el campo de batalla
+; mno_control_allies_menu|Use influence to command your allies in the field.
 mno_encounter_hide|Esconderse del enemigo...
 mno_special_whip|Acercarse rápidamente hacia ellos restallando el {s4}.
 mno_encounter_attack_bearform|{reg21?Atacar en forma de oso:Cambia de piel y enfréntate al enemigo}.
@@ -235,7 +235,7 @@ mno_pre_join_leave|No involucrarse.
 menu_join_battle|^^^Estás colaborando con {s2} en la lucha contra {s1}.^ Cuentas con {reg22} tropas listas para la batalla, frente a las {reg11} del enemigo.^^La batalla tendrá lugar en {s3}{s4}.
 mno_join_attack|Enfrentarse al enemigo.
 mno_join_order_attack|Ordenar a tus tropas que ataquen al enemigo junto con tus aliados mientras te mantienes al margen.
-mno_control_allies_join_menu|Usar puntos de Influencia para dar órdenes a tus aliados en el campo de batalla
+; mno_control_allies_join_menu|Use influence to command your allies in the field.
 mno_join_attack_bearform|Lanzarte a la batalla en forma de oso.
 mno_join_leave|Replegarse.
 mno_player_control_allies_join_menu|Ponerlos bajo tus órdenes y enfrentarse al enemigo.
@@ -420,7 +420,7 @@ mno_cb_mordor8|Corsarios
 mno_rescue_mission|Deslizarse sigilosamente dentro de la guarida del hechicero bajo el abrigo de la noche.
 mno_next_rescue_scene_door|¡Seguir adelante!
 mno_pick_troops1|Elige compañeros para la misión, {reg0} seleccionados
-menu_pick_troops|¿Quién quieres que te acompañe en ésta misión de sigilo?  Por el momento has elegido {reg0} compañeros. Puedes llevarte contigo hasta 10 tropas.
+; menu_pick_troops|Whom would you take with you into the stealth mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg65?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg0} companions.
 mno_go_forward|Terminar de elegir compañeros y continuar.
 menu_burial_mound|Te aproximas al túmulo funerario de {s1} de {s2}, que cayó en batalla contra las fuerzas de {s28}.  A sus pies se apilan las melladas armas de sus enemigos caídos.
 mno_pay_respects|Arrodillarte y mostrar tus respetos.

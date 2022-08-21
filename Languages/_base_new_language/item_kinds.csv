@@ -228,8 +228,8 @@ itm_hood_grey|Grey Hood
 itm_hood_grey_pl|Grey Hood
 itm_hood_leather|Leather Hood
 itm_hood_leather_pl|Leather Hood
-itm_free_fur_coat|Dale Coat
-itm_free_fur_coat_pl|Dale Coat
+itm_mail_coif|Mail Coif
+itm_mail_coif_pl|Mail Coif
 itm_free_green_dress|Green Dress
 itm_free_green_dress_pl|Green Dress
 itm_free_tld_tunic|Tunic
@@ -1140,10 +1140,10 @@ itm_mirkwood_helm_c|Greenwood Heavy Helm
 itm_mirkwood_helm_c_pl|Greenwood Heavy Helm
 itm_mirkwood_helm_d|Greenwood Royal Helm
 itm_mirkwood_helm_d_pl|Greenwood Royal Helm
-itm_free_mirkwood_leather_greaves|Mirkwood Leather Greaves
-itm_free_mirkwood_leather_greaves_pl|Mirkwood Leather Greaves
-itm_mirkwood_boots|Woodelf Boots
-itm_mirkwood_boots_pl|Woodelf Boots
+itm_woodelf_leather_boots|Woodelf Leather Boots
+itm_woodelf_leather_boots_pl|Woodelf Leather Boots
+itm_mirkwood_boots|Greenwood Boots
+itm_mirkwood_boots_pl|Greenwood Boots
 itm_harad_tunic|Harad Tunic
 itm_harad_tunic_pl|Harad Tunic
 itm_harad_padded|Harondor Padded Armor
@@ -1192,16 +1192,16 @@ itm_harad_pantherhelm|Panther Guard Cap
 itm_harad_pantherhelm_pl|Panther Guard Cap
 itm_harad_khopesh|Harad Khopesh
 itm_harad_khopesh_pl|Harad Khopesh
-itm_black_snake_sword|Harad Heavy Falchion
-itm_black_snake_sword_pl|Harad Heavy Falchion
-itm_harad_heavy_sword|Harad Heavy Sword
-itm_harad_heavy_sword_pl|Harad Heavy Sword
+itm_black_snake_sword|Harad Cobra Sword
+itm_black_snake_sword_pl|Harad Cobra Sword
+itm_harad_heavy_sword|Harad Dragon Sword
+itm_harad_heavy_sword_pl|Harad Dragon Sword
 itm_horandor_a|Harad Scimitar
 itm_horandor_a_pl|Harad Scimitar
 itm_skirmisher_sword|Harad Skirmisher Sword
 itm_skirmisher_sword_pl|Harad Skirmisher Sword
-itm_harad_sabre|Harad Sabre
-itm_harad_sabre_pl|Harad Sabre
+itm_harad_sabre|Harad Salamander Sword
+itm_harad_sabre_pl|Harad Salamander Sword
 itm_harad_mace|Far Harad Mace
 itm_harad_mace_pl|Far Harad Mace
 itm_far_harad_2h_mace|Far Harad Two Handed Mace
@@ -1240,8 +1240,8 @@ itm_desert_boots|Desert Boots
 itm_desert_boots_pl|Desert Boots
 itm_harad_leather_greaves|Harad Leather Greaves
 itm_harad_leather_greaves_pl|Harad Leather Greaves
-itm_harad_scale_greaves|Harad Scale Greaves
-itm_harad_scale_greaves_pl|Harad Scale Greaves
+itm_harad_scale_greaves|Harad Greaves
+itm_harad_scale_greaves_pl|Harad Greaves
 itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_harad_lamellar_greaves_pl|Harad Splinted Greaves
 itm_free_khand_helmet_a1|Khand Helm With Camail
@@ -1490,8 +1490,8 @@ itm_umb_helm_c|Corsair Militia Helm
 itm_umb_helm_c_pl|Corsair Militia Helm
 itm_umb_helm_d|Corsair Raider Helm
 itm_umb_helm_d_pl|Corsair Raider Helm
-itm_free_umb_helm_e|Corsair Tall Helm
-itm_free_umb_helm_e_pl|Corsair Tall Helm
+itm_umb_helm_reward|Ancient Numenorean Karma
+itm_umb_helm_reward_pl|Ancient Numenorean Karma
 itm_free_umb_helm_f|Corsair Tall Helm
 itm_free_umb_helm_f_pl|Corsair Tall Helm
 itm_corsair_trident|Trident of Sea Fury
@@ -1808,8 +1808,8 @@ itm_prisoner_coll_chain|Prisoner Chains
 itm_prisoner_coll_chain_pl|Prisoner Chains
 itm_witchking_helmet|Sorcerer's Mask
 itm_witchking_helmet_pl|Sorcerer's Mask
-itm_lorien_royal_armor|Lorien Royal Armor
-itm_lorien_royal_armor_pl|Lorien Royal Armor
+itm_free_lorien_royal_armor|Lorien Royal Armor
+itm_free_lorien_royal_armor_pl|Lorien Royal Armor
 itm_feet_chains|Feet Chains
 itm_feet_chains_pl|Feet Chains
 itm_feet_chains_dwarf|Feet Chains

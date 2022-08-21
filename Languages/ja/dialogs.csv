@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|いいでしょう、お受け�
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|恐れ入りますが、彼には別の使い道があるのです。
 dlga_lord_buy_prisoner_accept:lord_pretalk|素晴らしい！ 我が部下が急いで牢獄まで護送しよう。 これで我が軍は優位に立てるはずだ。
 dlga_lord_buy_prisoner_deny:lord_pretalk|それは残念だ、 彼は我が軍にとって大きな意味を持つはずなのにのう、 {playername}。
-dlga_tld_intro_1:lord_pretalk|戦争について:^^- 各勢力は十分な力を持ったときだけ、 包囲攻城戦を仕掛けます。^- ほとんどの拠点において、 包囲攻撃を受けるのは所属する勢力の力が^十分に弱まったときだけです。 通常は、 首都は一番最後に攻撃を受けます。^- 首都を失うか、または勢力ポイントが下限に達した勢力は 敗北します。^- 勢力ポイントは戦いで勝利を収めること、 それと主要な拠点を維持することで上がります。^- 戦いで敗北するか、または拠点を失うと、勢力ポイントは下がります。^- クエストやイベントが勢力ポイントに影響を与えることもあります。^- 勢力ポイントは「レポート」メニューから確認できます。^- 詳細はゲーム概要を見てください。
+; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
 dlga_lord_start:lord_pretalk|ああ、{s24}よ、よく来てくれた。^おぬしも知っての通り、{s12}。^{playername}よ、おぬしの任務は、我々の戦いの手伝いだ。^おぬしが私の信頼するに足る者であると証明できれば[レベル{reg1}]、^そこにある箱の使用を許可しよう。私的な所有物の保管に使うがよい。
 dlga_lord_start:lord_talk|何の用だ？
 dlga_lord_pretalk:lord_talk|他に何か？
@@ -616,22 +616,6 @@ dlga_lord_leave:close_window.3|うむ、うむ。さらばだ。
 dlga_lord_leave:close_window.4|また会おう。
 dlga_start:lady_escort_lady_succeeded|ここまでの護衛を感謝します、 {playername}殿。 あなたの見事な仕事ぶりは、 しっかりと報告させていただきます。
 dlga_lady_escort_lady_succeeded:close_window|お役に立てて光栄だ。
-dlga_start:prison_guard_players|ごきげんよう、指揮官殿。牢獄にご用で？
-dlga_prison_guard_players:close_window|そうだ。扉を開けて欲しい。
-dlga_prison_guard_players:close_window.1|申し訳ないが、また後にしよう。
-dlga_start:prison_guard_talk|何かご用で？
-dlga_prison_guard_talk:prison_guard_ask_prisoners|誰が牢獄に入れられている{んだ/の}？
-dlga_prison_guard_talk:prison_guard_visit_prison|捕虜と話がしたい。
-dlga_prison_guard_ask_prisoners:prison_guard_talk|今は{s51}です。
-dlga_prison_guard_visit_prison:close_window|どうぞ、お通りください、指揮官殿。
-dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|捕虜との面会には、我が主人の許可が必要だ。
-dlga_prison_guard_visit_prison_2:close_window|そうか。ではそちらを当たろう。
-dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|かたい事を言{うな/わないで}。ここの主は{君だろう/あなたでしょう}。
-dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|へへ。おっしゃる通りで。 それでも、 あなたをお通しするわけには参りません。
-dlga_prison_guard_visit_prison_4:close_window|そうか。では引き揚げるとしよう。
-dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|すぐそこで、貴重品の入った包みを見つけたの{だ/}。{君/あなた}の物じゃないか{と思うんだが/しら}。
-dlga_prison_guard_visit_prison_5:close_window|あっ！これをずっと探してたんですよ。 親切にありがとうございます、{旦那/ご婦人}。 さて、 あなたが正直者の{男性/女性}だという事が分かった以上、 ここはお通ししなければなりませんね。 どうぞお通りください。
-dlga_prison_guard_talk:close_window|なんでもない。
 dlga_start:castle_guard_players|指揮官殿、ご命令は？
 dlga_castle_guard_players:close_window|扉を開けてくれ。中に用がある。
 dlga_castle_guard_players:close_window.1|なんでもない。
@@ -1048,7 +1032,9 @@ dlga_routed_allies_talk:close_window.1|兵士よ、ちょっと待ってくれ�
 dlga_start:routed_allies_talk_troll|^^咆哮！^^
 dlga_routed_allies_talk_troll:close_window|[彼らを部隊に編入する]
 dlga_routed_allies_talk_troll:close_window.1|[立ち去る]
-dlga_start:party_encounter_friend|{s4} {s24}殿、何かご用かな?
+; dlga_start:party_encounter_distrusted_friend_1|{s14}
+; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend.1|{s4} {s24}殿、何かご用かな?
 dlga_party_reinforce:party_reinforce_end|我らはまだ、ろくに敵勢に遭遇していない。 またの機会にしよう。
 dlga_party_reinforce:party_reinforce_end.1|ありがとう。 しかし、今のところ間に合っている。
 dlga_party_reinforce:party_reinforce_check|我が部隊へ増援？ ありがたいが、 我々が必要としているのは、 {s22}の兵だけなのだ。

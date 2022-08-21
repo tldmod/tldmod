@@ -499,7 +499,7 @@ itm_mirkwood_helm_a|Шолом лучника лісових Ельфів
 itm_mirkwood_helm_b|Шолом Темнолісся
 itm_mirkwood_helm_c|Важкий шолом Темнолісся
 itm_mirkwood_helm_d|Королівський шолом темнолісся
-itm_mirkwood_boots|Чоботи лісових Ельфів
+; itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_harad_tunic|Харадськия одяг
 itm_harad_padded|Харондорська підбита броня
 itm_harad_hauberk|Харондорський гауберк
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Шолом Орлиної гвардії
 itm_lion_helm|Шолом Левиної гвардії
 itm_harad_pantherhelm|Шолом Гвардії пантери
 itm_harad_khopesh|Харадський хопеш
-itm_black_snake_sword|Харадський важкий фальшіон
-itm_harad_heavy_sword|Харадський важкий меч
+; itm_black_snake_sword|Harad Cobra Sword
+; itm_harad_heavy_sword|Harad Dragon Sword
 itm_horandor_a|Харадський ятаган
 itm_skirmisher_sword|Харадський меч застрільника
-itm_harad_sabre|Харадська шабля
+; itm_harad_sabre|Harad Salamander Sword
 itm_harad_mace|Далекохарадськая булава
 itm_far_harad_2h_mace|Далекохарадська дворучна булава
 itm_harad_dagger|Харадський кинджал
@@ -546,7 +546,7 @@ itm_harad_shield_c|Харондорський баклер
 itm_harad_yellow_shield|Харадський щит
 itm_desert_boots|Пустельні чоботи
 itm_harad_leather_greaves|Гарадські Шкіряні Поножі
-itm_harad_scale_greaves|Гарадські Лускаті Поножі
+itm_harad_scale_greaves|Харадські поножі
 itm_harad_lamellar_greaves|Гарадські Пластинчаті Поножі
 itm_khand_inf_helm_a|Кхандський шолом
 itm_khand_inf_helm_b|Кхандський шолом
@@ -642,6 +642,7 @@ itm_umb_helm_a|Корсарський шолом-раковина
 itm_umb_helm_b|Високий шолом Корсара
 itm_umb_helm_c|Корсарський шолом ополченця
 itm_umb_helm_d|Корсарський шолом нальотчика
+; itm_umb_helm_reward|Ancient Numenorean Karma
 itm_corsair_trident|Тризуб гнів моря
 itm_corsair_boots|Корсарські чоботи
 itm_umb_shield_a|Корсарський щит

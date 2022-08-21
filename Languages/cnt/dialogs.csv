@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|好吧，他是你的了。
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|我恐怕對他還有別的計劃。 
 dlga_lord_buy_prisoner_accept:lord_pretalk|棒極了！我會立即派人馬把他押入我們的監獄。這將對我們的大業有很有幫助。
 dlga_lord_buy_prisoner_deny:lord_pretalk|真遺憾，{playername}，他明明對我們很有價值的。
-dlga_tld_intro_1:lord_pretalk|戰爭教學：^^-陣營只有在足夠強大時才會發起攻城。^-大多數聚落只有在陣營夠弱的情況下才能被圍城。通常，首都最後才會被圍城。^-如果一個陣營失去他們的首都或他們的力量被粉碎，他們將被擊敗。^-陣營從戰場上的勝利和持有某些關鍵聚落獲得力量。^-陣營隨著戰敗或失去聚落損失力量。^-一些任務或事件會影響陣營力量。^- 你可以在'報告'選單中比較當前的陣營強度。^-有關更多TLD指南，請參閱資訊頁面。
+; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
 dlga_lord_start:lord_pretalk|啊，歡迎，{s24}。^你應該已經知道{s12}了。{playername}，你的職責是幫助我們的鬥爭。當你證明自己值得信任[等級{reg1}]時，我也會允許你使用那邊那個箱子來存放你的個人物品。
 dlga_lord_start:lord_talk|什麼事？
 dlga_lord_pretalk:lord_talk|還有其他的嗎？
@@ -616,22 +616,6 @@ dlga_lord_leave:close_window.3|是的，好。告別。
 dlga_lord_leave:close_window.4|我們會再見的。
 dlga_start:lady_escort_lady_succeeded|{playername}，感謝你護送我到這裡，並保護了我的人身安全。你的貢獻會被記住的。
 dlga_lady_escort_lady_succeeded:close_window|這是我的榮幸。
-dlga_start:prison_guard_players|日安，指揮官。你要參觀監獄嗎？
-dlga_prison_guard_players:close_window|是的。開門吧。
-dlga_prison_guard_players:close_window.1|不，現在不會。
-dlga_start:prison_guard_talk|是？你想要什麼？
-dlga_prison_guard_talk:prison_guard_ask_prisoners|有誰被關在這裡？
-dlga_prison_guard_talk:prison_guard_visit_prison|我想跟一個犯人談話。
-dlga_prison_guard_ask_prisoners:prison_guard_talk|{s51}，目前{reg1?都被:被}關在這裡。
-dlga_prison_guard_visit_prison:close_window|當然，指揮官。請進。
-dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|你需要從領主大人那裡得到許可才能跟犯人談話。
-dlga_prison_guard_visit_prison_2:close_window|那好吧。我會試試看的。
-dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|怎麼。你不是這裡的老大嗎？
-dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|呵-呵。你說的沒錯。但，我還是不能讓你進去監獄裡。
-dlga_prison_guard_visit_prison_4:close_window|那好吧。我走了。
-dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|我在不遠處發現一個錢包裡裝著100迪納爾。我想這應該是你的。
-dlga_prison_guard_visit_prison_5:close_window|啊！我已經找這個找一整天了。{先生你/女士妳}能把它送回來真是太好了。好吧，我知道{你/妳}是多麼誠實的人了，讓你進去應該不會有問題的。請進。
-dlga_prison_guard_talk:close_window|算了。
 dlga_start:castle_guard_players|指揮官，你的命令是？
 dlga_castle_guard_players:close_window|開門。我要進去。
 dlga_castle_guard_players:close_window.1|算了。
@@ -1048,7 +1032,9 @@ dlga_routed_allies_talk:close_window.1|還不行，士兵。
 dlga_start:routed_allies_talk_troll|^^低吼！^^
 dlga_routed_allies_talk_troll:close_window|[讓他們再次加入你]
 dlga_routed_allies_talk_troll:close_window.1|[離開]
-dlga_start:party_encounter_friend|{s4}是什麼把你帶到這裡的，{s24}？
+; dlga_start:party_encounter_distrusted_friend_1|{s14}
+; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend.1|{s4}是什麼把你帶到這裡的，{s24}？
 dlga_party_reinforce:party_reinforce_end|我們目前沒有發現太多敵軍活動。之後再說吧，謝謝。
 dlga_party_reinforce:party_reinforce_end.1|我們目前不需要更多的士兵了，謝謝你。
 dlga_party_reinforce:party_reinforce_check|增援我們的隊伍？我們是可以用上更多的士兵啦，但記住我們只接受來自己陣營的部隊。

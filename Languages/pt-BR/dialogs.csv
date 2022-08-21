@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Bem, ele é todo seu.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Temo que eu tenho outros planos para ele.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Excelente! Vou mandar meus homens para levá-lo à nossa prisão com a devida pressa. Isso certamente ajudará nossa causa.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Uma pena, ele teria sido precioso para nós, {playername}.
-dlga_tld_intro_1:lord_pretalk|Tutorial de Guerra: ^^- As facções só iniciarão cercos quando forem fortes o suficiente. ^- A maioria dos assentamentos só podem ser cercados se sua facção estiver suficientemente fraca. Normalmente, as capitais serão cercadas por último. ^- Se uma facção perder sua capital ou se sua força for esmagada, eles serão derrotados. ^- Facções ganham força com vitórias no campo e com a posse de certos assentamentos importantes. ^- Facções perdem força com derrotas no campo ou com perda de assentamentos. ^- Algumas missões ou eventos podem afetar a força da facção. ^- Você pode comparar as classificações atuais da força da facção no menu 'Relatórios'. ^- Consulte as Páginas de Informação para obter mais guias sobre TLD.
+; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
 dlga_lord_start:lord_pretalk|Ah, bem-vindo, {s24}. ^Você já deve saber disso {s12}. Seu dever é ajudar em nossa luta, {playername}. Quando você provar que é digno de minha confiança [nível {reg1}], também permitirei que você acesse este baú aqui, para guardar seus pertences pessoais.
 dlga_lord_start:lord_talk|O que é isso?
 dlga_lord_pretalk:lord_talk|Algo mais?
@@ -616,22 +616,6 @@ dlga_lord_leave:close_window.3|Sim, sim. Adeus.
 dlga_lord_leave:close_window.4|Nós nos encontraremos novamente.
 dlga_start:lady_escort_lady_succeeded|Obrigado por me acompanhar até aqui, {playername}, e por garantir minha passagem segura. Seus serviços serão devidamente anotados.
 dlga_lady_escort_lady_succeeded:close_window|Foi uma honra servir.
-dlga_start:prison_guard_players|Bom dia, comandante. Você vai visitar a prisão?
-dlga_prison_guard_players:close_window|Sim. Destranque a porta.
-dlga_prison_guard_players:close_window.1|Não, agora não.
-dlga_start:prison_guard_talk|Sim? O que você quer?
-dlga_prison_guard_talk:prison_guard_ask_prisoners|Quem está aprisionado aqui?
-dlga_prison_guard_talk:prison_guard_visit_prison|Quero falar com um prisioneiro.
-dlga_prison_guard_ask_prisoners:prison_guard_talk|Atualmente, {s51} {reg1?estão:está} preso aqui.
-dlga_prison_guard_visit_prison:close_window|Claro, comandante. Entre.
-dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|Você precisa obter a permissão do Senhor para falar com os prisioneiros.
-dlga_prison_guard_visit_prison_2:close_window|Tudo bem então. Tentarei isso.
-dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Vamos la. Eu pensei que você era o chefe aqui.
-dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. Você acertou. Ainda assim, não posso deixá-lo entrar na prisão.
-dlga_prison_guard_visit_prison_4:close_window|Tudo bem então. Vou sair agora.
-dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|Encontrei uma bolsa com 100 denários a alguns passos de distância. Eu acho que pertence a você.
-dlga_prison_guard_visit_prison_5:close_window|Ah! Eu estive procurando por isso o dia todo. Como é bom você trazê-lo de volta {senhor/senhora}. Bem, agora que eu sei que você é um {homem/mulher} honesto, não há mal em deixá-lo entrar. Entre.
-dlga_prison_guard_talk:close_window|Deixe para lá.
 dlga_start:castle_guard_players|Suas ordens, Comandante?
 dlga_castle_guard_players:close_window|Abra a porta. Eu vou entrar.
 dlga_castle_guard_players:close_window.1|Deixe para lá.
@@ -1048,7 +1032,9 @@ dlga_routed_allies_talk:close_window.1|Ainda não, soldado.
 dlga_start:routed_allies_talk_troll|^ ^RAUURR!^ ^
 dlga_routed_allies_talk_troll:close_window|[Eles se juntam a você novamente]
 dlga_routed_allies_talk_troll:close_window.1|[Sair]
-dlga_start:party_encounter_friend|{s4} O que te traz aqui, {s24}?
+; dlga_start:party_encounter_distrusted_friend_1|{s14}
+; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend.1|{s4} O que te traz aqui, {s24}?
 dlga_party_reinforce:party_reinforce_end|Ainda não vimos muita atividade inimiga. Talvez mais tarde, obrigado.
 dlga_party_reinforce:party_reinforce_end.1|Não precisamos de mais soldados, obrigado.
 dlga_party_reinforce:party_reinforce_check|Reforçar o nosso grupo? Podemos usar mais alguns soldados, mas tenha em mente que só aceitamos tropas de nossa facção.

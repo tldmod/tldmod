@@ -499,7 +499,7 @@ itm_mirkwood_helm_a|Casque d'archer d'elfe sylvain
 itm_mirkwood_helm_b|Casque de Vertbois
 itm_mirkwood_helm_c|Casque lourd de Verbois
 itm_mirkwood_helm_d|Casque royal de Vertbois
-itm_mirkwood_boots|Bottes d'elfe sylvain
+; itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_harad_tunic|Tunique du Harad
 itm_harad_padded|Armure matelassée du Harondor
 itm_harad_hauberk|Haubert du Harondor
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Casque de garde de l'Aigle
 itm_lion_helm|Casque de garde du Lion
 itm_harad_pantherhelm|Capuchon de la garde de la Panthère
 itm_harad_khopesh|Khopesh haradrim
-itm_black_snake_sword|Fauchon lourd haradrim
-itm_harad_heavy_sword|Épée lourde haradrim
+; itm_black_snake_sword|Harad Cobra Sword
+; itm_harad_heavy_sword|Harad Dragon Sword
 itm_horandor_a|Cimeterre haradrim
 itm_skirmisher_sword|Épée de tirailleur du Harad
-itm_harad_sabre|Sabre du Harad
+; itm_harad_sabre|Harad Salamander Sword
 itm_harad_mace|Masse du Harad Lointain
 itm_far_harad_2h_mace|Masse à deux mains du Harad Lointain
 itm_harad_dagger|Couteau du Harad
@@ -546,7 +546,7 @@ itm_harad_shield_c|Rondache du Harondor
 itm_harad_yellow_shield|Bouclier du Harad
 itm_desert_boots|Bottes du désert
 itm_harad_leather_greaves|Jambières en cuir du Harad
-itm_harad_scale_greaves|Jambières écaillées du Harad
+itm_harad_scale_greaves|Jambières du Harad
 itm_harad_lamellar_greaves|Jambières renforcées du Harad
 itm_khand_inf_helm_a|Casque de Khand
 itm_khand_inf_helm_b|Casque de Khand
@@ -642,6 +642,7 @@ itm_umb_helm_a|Casque à coque corsaire
 itm_umb_helm_b|Casque haut de corsaire
 itm_umb_helm_c|Casque de milicien corsaire
 itm_umb_helm_d|Casque de cavalier corsaire
+; itm_umb_helm_reward|Ancient Numenorean Karma
 itm_corsair_trident|Trident de la Furie de la Mer
 itm_corsair_boots|Bottes corsaires
 itm_umb_shield_a|Bouclier corsaire

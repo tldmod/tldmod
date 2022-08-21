@@ -38,7 +38,7 @@ qstr_A_peaceful_village_n|웨스트폴드에서 그다지 멀지 않은 평화�
 qstr_The_War_is_upon_Roha|로한에 전쟁이 닥쳤다!
 qstr_Minas_Tirith___The_W|미나스 티리스 - 백색 도시
 qstr_The_White_Tree_stand|왕들이 실패하였기 때문에 하얀 나무는 죽게 되었다.
-qstr_The_Shadow_grows_eve|동쪽에서 어둠이 그 어느때보다도 강해지고 있다.
+; qstr_And_the_Shadow_grows|And the Shadow grows ever stronger in the East
 qstr_Minas_Morgul___City_|미나스 모르굴 - 나즈굴의 도시
 qstr_Sauron_s_armies_marc|사우론의 군대가 전쟁을 위해 행군한다!
 qstr_Adventurers_at_audie|섭정 데네소르와 다른 모험가들로 이루어진 관객들..
@@ -94,7 +94,7 @@ qstr_TLD_New_FormAI|TLD 신형 맞춤 AI
 qstr_Siege_AI:__|공성 AI:
 qstr_Basic__better_perfor|기본 (향상된 행동)
 qstr_Advanced|진보된
-; qstr_Campaign_diffculty:_|Campaign diffculty:  
+; qstr_Campaign_difficulty:|Campaign difficulty:  
 ; qstr_Hard|Hard
 ; qstr_Default|Default
 ; qstr_Easy|Easy
@@ -109,11 +109,6 @@ qstr_Fallen_rider_damage_|낙마 대미지 알림:
 qstr_No_Messages|알림 없음
 qstr_Player_damage_only|오직 플레이어 피해만
 qstr_All_Messages|모두 알림
-qstr_Troop_Identifier_in_|전장에서 부대 식별 (전투 중 Y 키로 끄고 켜기 가능): 
-qstr_Disable|끄기
-qstr_Troop_Names|부대 이름
-qstr_Simple:_Faction_Colo|간단: 팩션 색깔
-qstr_Simple:_Black___Enem|간단: 적 - 검정색 / 흰색 - 아군
 qstr_Preferred_Camera_Mod|우선 카메라 모드:  
 qstr_Default_Camera|기본 카메라 모드
 qstr_Free_Mode_Custom_Cam|자유 설정 카메라 모드
@@ -242,6 +237,8 @@ qstr_Strengthens_all_Hero|모든 영웅 강화하기
 qstr_+2_to_First_Aid__Par|응급치료에 +2 (부대)
 ; qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|던지는 힘에 +1
+; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
+; qstr__Scales_with_Charism|(Scales with Charisma. Human leaders only.)
 qstr_+1_to_Spotting|탐지 +1
 ; qstr_+2_to_Weapon_Master|+2 to Weapon Master
 ; qstr_+2_to_First_Aid|+2 to First Aid
@@ -729,8 +726,8 @@ qstr_Switch_Back_to_3rd_P|카메라를 돌리려면 3인칭 시점으로 돌아�
 qstr_Fixed_Custom_Camera|개선된 설정 카메라 모드
 qstr_Press_Ctrl_+_Left_/_|CTRL 키와 방향키 좌,우 버튼으로 기준 어깨를 바꿀 수 있습니다.
 qstr_Press_Ctrl_+_Down_to|Ctrl + Down을 눌러 중앙에 맞추기
-qstr_Use_+/__to_zoom_in/o|+/-를 눌러 줌 인/줌 아웃
-qstr_Use_Up/Down_arrow_ke|방향키 위/아래를 사용해 위/아래로 기울이기
+; qstr_Press_Ctrl_and_+/__t|Press Ctrl and +/- to zoom in/out
+; qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
 qstr_Fixed_Camera___Right|개선된 설정 카메라 - 오른쪽 어깨
 qstr_Fixed_Camera___Left_|개선된 설정 카메라 - 왼쪽 어깨
 qstr_Fixed_Camera___Cente|카메라 중점 조정
@@ -783,7 +780,7 @@ qstr_{s21}_{reg24?killed:|{s21}은 {s22}의 손에 {reg24?살해당했다:의식
 qstr_A_bear_has_been_summ|전투에 곰이 소환되었습니다!
 qstr_In_The_Last_Days_of_|The Last Days of the Third Age에선, 당신의 부대는 맹목적으로 돌격하지 않고 전투 초기에 자리를 잡고 지킬 것이다.^^부대 대열을 명령하려면 'J'를 눌러 대열을 형성하고, 'K'를 눌러 방패벽을, 'L'을 눌러 쐐기 대형을, ';'를 눌러 사각대형을 형성하라. 대형을 취소하려면, 'U'를 눌러라. ^만약 당신의 부대가 도망친다면, 'V'를 눌러 그들을 집결시킬 수 있다. 전투당 집결 횟수는 한정되어있으며, 당신의 리더십과 카리스마에 따라 집결양이 달라진다.
 qstr_You_can_also_order_y|당신은 또한 당신의 부대가 사용하기를 원하는 종류의 무기를 번갈아 사용하도록 명령할 수 있다.^^ 무기 유형 간에 교체하려면 O를 누르십시오. Shield Order 유형으로 교체하려면 P를 누르십시오.
-qstr_The_Last_Days_of_the|제3시대의 마지막 나날들은 키가 작은 종족들(오르크나 드워프 등)을 고려하여 게임 내 카메라 제한을 우회하기 위한 목적으로 커스텀 카메라를 적용했습니다.^^ Ctrl+End 키들을 동시에 눌러 2가지의 다른 모드들로 전환하면서 사용할 수 있습니다: 고정형 / 자유형.^^고정형 카메라는 모든 종족에게 최적화된 시점이지만 설정을 변경할 수 없습니다.^^CTRL 키와 방향키 좌,우 버튼으로 기준 어깨를 바꿀 수 있습니다.^^자유형 카메라는 캐릭터를 화면 정중앙에 둡니다. 당신은 CTRL 키와 방향키 위, 아래 버튼으로 카메라의 기울기를 조절할 수 있으며 CTRL 키와 숫자패드 +/- 키를 이용해 확대할 수 있습니다.^^다른 카메라 설정 조작법은 Info 페이지를 확인하십시오.
+; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^See Info Pages for how to control the different camera modes.
 qstr_Battlefield_is_too_s|복잡한 AI 대형을 사용하기에 전장이 너무 작습니다.
 qstr_You_have_a_clear_per|당신 주변에서 다가오는 위험에 대해 명확히 인식하고 있다!
 qstr_New_ent_reached_batt|전장에 새로운 엔트들이 도착했다...
@@ -834,9 +831,12 @@ qstr_You_are_now_hidden.|당신은 숨어있습니다.
 qstr_You_move_out_of_hidi|이제 당신은 숨어있지 않습니다.
 qstr_The_guards_have_spot|경비가 시체를 발견했습니다!
 qstr_Alarm_Level_is_now_a|경보 1단계 발령!
+; qstr_You_have_been_to_slo|You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close.
 qstr_Alarm_Level_is_now_at|경보 0단계 발령!
 qstr_The_guards_have_spott|경비가 당신을 발견했습니다!
 qstr_Alarm_Level_is_now_at_|경보 2단계 발령!
+; qstr_Enemy_reinforcements_|Enemy reinforcements arrived.
+; qstr_Venture_deeper_into_|Venture deeper into the forest and find a way onward.
 qstr_The_sorcerer_has_fle|마술사가 도망쳤습니다!
 qstr_Report_this_ill_news|여주인에게 이 나쁜 소식을 전해줘야한다.
 qstr_The_sorcerer_is_flee|마술사가 도망칩니다! 죽이십시오!
@@ -934,13 +934,18 @@ qstr_You_drank_the_Ent_Wa|엔트워터를 들이켰다...
 qstr_You_used_the_Orc_Bre|오르크 맥주를 사용했다.
 qstr_You_and_your_compani|당신과 당신의 동료들은 미루보르를 한 모금 들이켰다. 기분이 상쾌해지고 힘이 솟는다.
 qstr_You_give_a_few_leave|당신은 당신의 치료사들에게 임금님풀 몇 줌을 주었다.
+; qstr_Not_enough_party_spa|Not enough party space.
+qstr_elites|정예병
+qstr_regulars|일반병
+qstr_recruits|신병
+; qstr_wild|wild
+; qstr_goblins|goblins
 qstr_lordless|주인없는
 qstr_orc_stragglers|오르크 패잔병들
-qstr_wild_goblins|야생 고블린들
-qstr_recruits|신병
-qstr_regulars|일반병
-qstr_elites|정예병
 qstr_You_camp_and_beat_th|당신은 진을 치고 깊은 곳의 북을 두드린다. 그 웅장한 소리가 {s1}의 {s2}들을 끌어들인다.
+; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
 qstr_Fangorn_search:_fail|팡고른 탐색: 실패.
 qstr_^^^A_great_victory!^|^^^대승이다!^^^이게 팡고른 숲을 둘러싼 전설의 정체였군...
 qstr_^^^Defeated...^^^Sca|^^^패배...^^^팡고른 숲에 흩어졌다... 혼자...
@@ -972,7 +977,8 @@ qstr__{s17}.|, {s17}
 qstr_A_group_of_{s1}_is_{|{s10}의 {s1} 한 무리가 당신에게 다가왔다.
 qstr_You_are_attacking_a_|당신은 {s1}의 무리를 공격하기 시작했다.
 qstr_The_battle_against_t|{s1}의 무리를 상대로 한 전투가 계속된다.
-qstr_There_are_{reg39}_al|이 전투에는 {reg39}명의 동맹 사령관이 있다. {reg40}의 영향력을 소모해 그들과 그 부대에 명령을 내릴 수 있다.
+; qstr_There_are_{reg39}_al|There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence.
+; qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
 qstr_Having_a_small_party|작은 부대를 꾸리는 것도 나름의 장점이 있다...당신과 당신의 부대는 적으로부터 몇 시간 동안 보이지 않은 채 숨어있을 수 있다.
 qstr_Your_ability_to_mast|주변 환경을 마스터할 수 있는 능력을 통해 안전한 장소를 찾을 수 있었다. (서바이벌 기술을 통해 {reg1}의 병력을 숨길 수 있음)
 qstr_{reg4}_will_be_lost.|{reg4} 명을 잃을 것이다.
@@ -1019,7 +1025,7 @@ qstr_As_a_last_defensive_|당신이 방어에 기울인 노력에도 불구하�
 qstr_You_ve_been_driven_a|당신은 성벽에서 밀려났다. 이제 공격자들은 거리로 쏟아져나오기 시작했다. 만약 당신이 그들을 물리칠수만 있다면, 공세를 멈추고 날을 넘길 수 있을지도 모른다.
 qstr_You_ve_breached_the_|당신은 도시 성벽을 돌파했지만, 완강한 방어자들이 거리에서 당신에게 저항을 계속하고 있다! 그들을 먼저 처리해야 도시 심장부에 위치한 성채를 공격할 수 있을 것이다.
 qstr_The_town_centre_is_y|도시 중심가는 당신의 것이지만, 남은 방어자들이 성채로 퇴각했다. 당신의 승리를 확고히 하기 위해 그들을 처치해야한다.
-qstr_The_remaining_defend|남은 수비자들이 포위망에서 탈출한다!
+qstr_The_remaining_defende|살아남은 방어자들은 항전을 위해 성으로 퇴각했다. 당신은 그곳으로 가 그들의 마지막 저항을 쳐부숴야한다.
 qstr_However_since_you_ar|그러나, 당신은 {s9}의 {사람/추종자}가 되기로 맹세하지 않았기에,  그 자가 당신을 이 성의 {reg8?도시:성}의 {주인/여주인}으로 인정할 가능성은 거의 없다.
 qstr_The_enemy_has_been_f|적은 어쩔 수 없이 후퇴했다. 공격은 끝났지만 포위는 계속되고 있다.
 qstr_The_assasins_beat_yo|암살자들이 당신을 쓰러트렸고 죽게 내버려두었다.
@@ -1077,7 +1083,10 @@ qstr_You_defeated_{reg5}_e|당신은 {reg5} 적을 패배시켰다.
 qstr_You_failed_to_defeat|당신은 어떤 적도 패배시키는데 실패했다.
 qstr_The_sorcerer_slain_y|마술사가 죽자, 당신과 당신의 동료들은 서둘러 상처를 살핀 후 밤 속으로 미끄러지듯 빠져나왔다. 불쾌한 목소리가 등 뒤에서 비명을 지르고, 그림자 속에서 자신을 찾는 불타오르는 눈들을 느낄 수 있었다. 곧 분노는 실망으로 바뀌었고, 추격의 소리는 평소 어둠숲의 무거운 고요로 대체된다. 당신은 탈출하는데 성공했다.
 qstr_The_sorcerer_slipped|마술사는 당신의 손아귀를 벗어나 자신의 영역인 어둠 속으로 미끄러지듯 사라졌다. 실패에 마음이 무거워지지만, 당신과 당신의 동료들은 서둘러 상처를 붕대로 감고 밤 속으로 물러났다. 조롱하는 목소리가 메아리치는 것이 등 뒤로 들리고, 그림자를 꿰뚫는 듯한 수많은 불타는 눈을 느낄 수 있다. 웃음과 모욕은 자비롭게도 곧 잦아들고, 어둠숲의 묵직한 고요로 대체되었다. 당신은 탈출했다.
-qstr_You_approach_a_heavi|당신은 숲의 잘 보호된 지역으로 다가간다...
+; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest... ^^ You have to decide whether you venture forward on your own, or take some troops with you.
+; qstr_You_have_a_good_chan|You have a good chance of avoiding the guards and slipping through unnoticed.
+; qstr_You_may_have_a_chanc|You may have a chance of avoiding the guards.
+; qstr_You_will_probably_ha|You will probably have to fight the guards.
 qstr_You_wait_for_darknes|어둠이 내리기를 기다린다...
 qstr_You_are_quickly_disc|당신은 적에게 금세 발각되었다.
 qstr_You_advance_stealthi|당신은 몸을 숨긴 채 숲 깊숙히 더 들어간다.
@@ -1112,7 +1121,7 @@ qstr_{reg65}_Moria_and/or|{reg65} 마리의 모리아/군다바드 병력을 사
 qstr_{reg65}_{s3}_troops_|{reg65} 마리의 {s3}를 사살했습니다. (매 시간마다 측정)
 qstr_{reg66}_{s5}_troops_|{reg66} 명의 {s5} 병력 살해함. (매 시간마다 측정)
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} 병력 사살.  (매 시간마다 측정)
-qstr_{reg68}_{s10}_killed|{reg68} 의 {s10}을 사살했다. (매 시간마다 측정)
+; qstr_{s8}_in_{s9}_asked_y|{s8} in {s9} asked you to slay {reg67} {s10}.^ {reg68} {s11} killed. (Counter refreshes every hour)
 qstr_{s1}_is_scouted.|{s1}을 정찰했다.
 qstr_{s2}_was_defeated!|{s2}가 패배했다!
 qstr_The_Age_of_Men_has_f|인간 시대의 끝이 도래했다. 이제 두 개의 탑이 남은 잔당과 동맹들을 끌어모아 누가 중간계의 유일한 지배자인지를 겨룬다!
@@ -1123,7 +1132,7 @@ qstr_In_a_desperate_attem|그의 적을 막아내기 위한 최후의 시도로,
 qstr_Guardians_of_{s6}|{s6}의 수호자들
 qstr_Guard_Legion_of_{s6}|{s6}의 경비대
 qstr_Scouts_report_that_{|전령이 {s6}이 수도를 방어하기 위한 최후의 시도로 거대한 군세를 {s7}에 집결시키고 있다 보고했습니다.
-qstr_The_forces_of_{s2}_e|{s2}의 군대가 {s15}에 전진 기지를 건설했다!
+; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|{s2}의 집결자가 그들의 고향을 지키기 위해 회군 중이다!
 qstr_{playername}_s_Reser|{playername}'s의 예비군
 qstr_Gondor_has_called_fo|곤도르가 도움을 요청한다!
@@ -1654,6 +1663,10 @@ qstr_Then_let_us_go._Stay|그럼 함께 가지. 바짝 붙게. 곧 그대가 필
 qstr_There_will_be_blood_|피가 흐를 것이다, 장담한다. 가까이 붙어라, 아니면 놓칠 것이다.
 qstr_Goodbye_friends.|잘 가게, 친구들.
 qstr_See_you_later_if_you|자네가 죽지 않는다면 다음에 보도록 하지.
+; qstr_I_don_t_need_your_he|I don't need your help any longer. Go home.
+; qstr_I_don_t_have_any_nee|I don't have any need for you. Get lost.
+; qstr_We_will_return_to_ou|We will return to our previous task. Goodbye.
+; qstr_Lads_we_re_going_hom|Lads, we're going home!
 qstr__^Oh_and_take_back_t| ^음, 우리 동족들이 아닌 자들은 다시 데려가시오.
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?그들:그} 용감한 {reg28?병사들:병사}는 우리의 영토를 방어하는데 확실히 도움이 될 것입니다.{s32} {s23}^^[{s14}의 자원 포인트 {reg14}만큼 획득]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?그들:그} 쓸만한 {reg28?병사들:병사}는 우리가 일삼는 파괴에 도움이 될 것이다.{s32}^{s23}^^[{s14}의 자원 포인트 {reg14}만큼 획득]

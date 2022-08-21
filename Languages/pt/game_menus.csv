@@ -200,7 +200,7 @@ mno_leave|Sair.
 ; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
 ; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
 ; mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without you.
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
+; mno_control_allies_menu|Use influence to command your allies in the field.
 ; mno_encounter_hide|Hide from the enemy...
 ; mno_special_whip|Rush forward toward them cracking the {s4}.
 ; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
@@ -235,7 +235,7 @@ mno_dont_leave_behind|Não. Ninguém ficará para trás.
 ; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
 ; mno_join_attack|Charge the enemy.
 ; mno_join_order_attack|Order your troops to attack with your allies while you stay back.
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+; mno_control_allies_join_menu|Use influence to command your allies in the field.
 ; mno_join_attack_bearform|Leap into battle in bear form
 ; mno_join_leave|Disengage.
 ; mno_player_control_allies_join_menu|Command them and charge the enemy
@@ -420,7 +420,7 @@ mno_cb_mordor7|Rhun
 ; mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
 ; mno_next_rescue_scene_door|Continue onward!
 ; mno_pick_troops1|Pick companions for the mission, {reg0} selected
-; menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
+; menu_pick_troops|Whom would you take with you into the stealth mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg65?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg0} companions.
 ; mno_go_forward|End selecting companions and proceed.
 ; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 ; mno_pay_respects|Kneel and pay your respects.

@@ -499,7 +499,7 @@ itm_rohirrim_war_greaves|Rohirim Ratne Cizme
 ; itm_mirkwood_helm_b|Greenwood Helm
 ; itm_mirkwood_helm_c|Greenwood Heavy Helm
 ; itm_mirkwood_helm_d|Greenwood Royal Helm
-; itm_mirkwood_boots|Woodelf Boots
+; itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_harad_tunic|Haradsla Tunika
 itm_harad_padded|Harondorski Tapacirani Oklop
 itm_harad_hauberk|Harodnorska Oklopna Kosulja
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Kaciga Orlove Garde
 itm_lion_helm|Kaciga Lavlje Garde
 itm_harad_pantherhelm|Kaciga Panter Garde
 itm_harad_khopesh|Haradska Sablja
-itm_black_snake_sword|Haradska Teska Maceta
-itm_harad_heavy_sword|Haradski Teski Mac
+; itm_black_snake_sword|Harad Cobra Sword
+; itm_harad_heavy_sword|Harad Dragon Sword
 itm_horandor_a|Haradska Zakrivljena Sablja
 itm_skirmisher_sword|Haradski Mac Strelaca
-itm_harad_sabre|Haradska Slabo Zakrivljena Sablja
+; itm_harad_sabre|Harad Salamander Sword
 itm_harad_mace|Veliki Haradski Buzdovan
 itm_far_harad_2h_mace|Veliki Haradski Buzvdovan Za Dve Ruke
 itm_harad_dagger|Haradski Noz
@@ -546,7 +546,7 @@ itm_harad_shield_c|Harondor Mali Stit
 itm_harad_yellow_shield|Haradski Stit
 itm_desert_boots|Pustinjska Obuca
 ; itm_harad_leather_greaves|Harad Leather Greaves
-; itm_harad_scale_greaves|Harad Scale Greaves
+itm_harad_scale_greaves|Haradske Oklopne Cizme
 ; itm_harad_lamellar_greaves|Harad Splinted Greaves
 ; itm_khand_inf_helm_a|Khand Helm
 ; itm_khand_inf_helm_b|Khand Helm
@@ -642,6 +642,7 @@ itm_desert_boots|Pustinjska Obuca
 ; itm_umb_helm_b|Corsair Tall Helm
 ; itm_umb_helm_c|Corsair Militia Helm
 ; itm_umb_helm_d|Corsair Raider Helm
+; itm_umb_helm_reward|Ancient Numenorean Karma
 ; itm_corsair_trident|Trident of Sea Fury
 ; itm_corsair_boots|Corsair Boots
 ; itm_umb_shield_a|Corsair Shield

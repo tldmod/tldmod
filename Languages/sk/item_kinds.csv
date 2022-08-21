@@ -499,7 +499,7 @@ itm_mirkwood_helm_a|Lukostrelecká prilba lesných elfov
 itm_mirkwood_helm_b|Temnohvozdská prilba
 itm_mirkwood_helm_c|Temnohvozdská ťažká prilba
 itm_mirkwood_helm_d|Temnohvozdská kráľovská prilba
-itm_mirkwood_boots|Čižmy lesných elfov
+; itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_harad_tunic|Haradská tunika
 itm_harad_padded|Harondorské vystužené brnenie
 itm_harad_hauberk|Harondorská krúžková zbroj
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Helma Orliej stráže
 itm_lion_helm|Helma Leviej stráže
 itm_harad_pantherhelm|Čiapka Pantérskej stráže
 itm_harad_khopesh|Haradský bojový kosák
-itm_black_snake_sword|Haradský ťažký Falchion
-itm_harad_heavy_sword|Haradský ťažký meč
+; itm_black_snake_sword|Harad Cobra Sword
+; itm_harad_heavy_sword|Harad Dragon Sword
 itm_horandor_a|Haradská zakrivená šabľa
 itm_skirmisher_sword|Haradský šermiarský meč
-itm_harad_sabre|Haradská šabľa
+; itm_harad_sabre|Harad Salamander Sword
 itm_harad_mace|Palcát Ďalekého Haradu
 itm_far_harad_2h_mace|Obojručný kyj Ďalekého Haradu
 itm_harad_dagger|Haradský nôž
@@ -546,7 +546,7 @@ itm_harad_shield_c|Harondorský drobný štít
 itm_harad_yellow_shield|Haradský štít
 itm_desert_boots|Dezertérske topánky
 ; itm_harad_leather_greaves|Harad Leather Greaves
-; itm_harad_scale_greaves|Harad Scale Greaves
+itm_harad_scale_greaves|Haradské holenice
 ; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Khandská helma
 itm_khand_inf_helm_b|Khandská helma
@@ -642,6 +642,7 @@ itm_umb_helm_a|Korzárska mušľová prilba
 itm_umb_helm_b|Korzárska vysoká prilba
 itm_umb_helm_c|Korzárska helma domobrany
 itm_umb_helm_d|Korzárska nájazdnícka prilba
+; itm_umb_helm_reward|Ancient Numenorean Karma
 itm_corsair_trident|Trojzubec Morskej Zúrivosti
 itm_corsair_boots|Korzárske topánky
 itm_umb_shield_a|Korzársky štít

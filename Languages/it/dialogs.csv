@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Bene, è tutto tuo.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Temo di avere altri piani per lui.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Eccellente ! Manderò i miei uomini a scortarlo in prigione rapidamente. Questo aiuterà di sicuro la nostra causa. 
 dlga_lord_buy_prisoner_deny:lord_pretalk|Male, sarebbe stato prezioso per noi, {playername}.
-dlga_tld_intro_1:lord_pretalk|Didattica di Guerra:^^- Le fazioni daranno inizio agli assedi quando avranno una forza adeguata.^- Molti insediamenti possono essere assediati solo se la loro fazione è abbastanza indebolita. Di solito, le capitali vengono assediate per ultime.^- Se una fazione perde la propria capitale o la sua forza viene annullata, subirà la sconfitta.^- Le fazioni ottengono forza dalle vittorie sul campo o dal mantenimento di alcuni insediamenti chiave.^- Le fazioni perdono forza in base alle sconfitte sul campo o per la perdita di alcuni insediamenti.^- Alcune missioni (quests) o eventi possono avere effetti sulla forza di una fazione.^- Puoi confrontare il livello di forza di una fazione nel menu 'Rapporti'.^- Consulta le pagine informative per ulteriori guide su TLD.
+; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
 dlga_lord_start:lord_pretalk|Ah, ti do il benvenuto, {s24}. ^ Dovresti già sapere che {s12}. Il tuo compito è di aiutarci nella nostra lotta, {playername}. Quando dimostrerai di essere degno della mia fiducia [livello {reg1}], ti permetterò anche di accedere a quel forziere, affinché tu possa conservarvi i tuoi oggetti personali.
 dlga_lord_start:lord_talk|Che c'è ?
 dlga_lord_pretalk:lord_talk|Qualcos'altro ?
@@ -616,22 +616,6 @@ dlga_lord_leave:close_window.3|Sì sì, arrivederci.
 dlga_lord_leave:close_window.4|Ci incontreremo di nuovo.
 dlga_start:lady_escort_lady_succeeded|Grazie per avermi accompagnato qui, {playername}, e per avermi garantito un viaggio sicuro. I tuoi servigi non saranno dimenticati.
 dlga_lady_escort_lady_succeeded:close_window|È stato un onore servirti.
-dlga_start:prison_guard_players|Buongiorno, Comandante. Intendi visitare la prigione ?
-dlga_prison_guard_players:close_window|Si, aprite la porta.
-dlga_prison_guard_players:close_window.1|No, non ora.
-dlga_start:prison_guard_talk|Sì ? che c'è ?
-dlga_prison_guard_talk:prison_guard_ask_prisoners|Chi é imprigionato qui ?
-dlga_prison_guard_talk:prison_guard_visit_prison|Vorrei visitare le prigioni.
-dlga_prison_guard_ask_prisoners:prison_guard_talk|Attualmente, {s51} {reg1?sono:è} in custodia presso questa prigione.
-dlga_prison_guard_visit_prison:close_window|Ma certo, Comandante. Entra.
-dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|Dovete ottenere il permesso dal lord per parlare ai prigionieri.
-dlga_prison_guard_visit_prison_2:close_window|Bene allora. Ci proverò.
-dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Andiamo, pensavo che fossi tu il capo qui..
-dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. Hai ragione. Tuttavia, non ti posso fare entrare nella prigione.
-dlga_prison_guard_visit_prison_4:close_window|Va bene allora. Me ne vado.
-dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|Ho trovato un borsello con 100 denari a pochi passi da qui, suppongo che vi appartenga.
-dlga_prison_guard_visit_prison_5:close_window|Ah ! Mi chiedevo dove fosse. Molto gentile da parte tua {Signore/Signora}. Bene, ora che so quanto tu sia una {persona} onesta, non dovrebbe esserci nulla di male nel farti entrare. Prego.
-dlga_prison_guard_talk:close_window|Non fa nulla.
 dlga_start:castle_guard_players|I tuoi ordini, Comandante ?
 dlga_castle_guard_players:close_window|Aprite la porta. Vado dentro.
 dlga_castle_guard_players:close_window.1|Non fa nulla.
@@ -1048,7 +1032,9 @@ dlga_routed_allies_talk:close_window.1|Non ancora, soldato.
 dlga_start:routed_allies_talk_troll|^^GROWL !^^
 dlga_routed_allies_talk_troll:close_window|[Lascia che si uniscano di nuovo a te]
 dlga_routed_allies_talk_troll:close_window.1|[Parti]
-dlga_start:party_encounter_friend|{s4} Cosa ti porta qui, {s24} ?
+; dlga_start:party_encounter_distrusted_friend_1|{s14}
+; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend.1|{s4} Cosa ti porta qui, {s24} ?
 dlga_party_reinforce:party_reinforce_end|Non abbiamo ancora visto molta attività nemica. Forse più tardi, grazie.
 dlga_party_reinforce:party_reinforce_end.1|Non abbiamo bisogno di altri soldati, grazie.
 dlga_party_reinforce:party_reinforce_check|Rinforzare la nostra compagnia ? Potremmo aver bisogno di qualche soldato ancora, ma ricordati che accettiamo solamente truppe della nostra fazione.

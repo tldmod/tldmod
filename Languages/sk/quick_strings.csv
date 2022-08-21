@@ -38,7 +38,7 @@ qstr_A_peaceful_village_n|Mierumilovná dedinka neďaleko Západného úvalu...
 qstr_The_War_is_upon_Roha|V Rohane sa rozpútala vojna!
 qstr_Minas_Tirith___The_W|Minas Tirith - Biele Mesto
 qstr_The_White_Tree_stand|Biely Strom stojí mrtvý od pádu linie kráľov
-qstr_The_Shadow_grows_eve|Tieň na Východe narastá a silnie
+; qstr_And_the_Shadow_grows|And the Shadow grows ever stronger in the East
 qstr_Minas_Morgul___City_|Minas Morgul - Mesto Nazgûlov
 qstr_Sauron_s_armies_marc|Sauronové vojská pochodujú do Vojny!
 qstr_Adventurers_at_audie|Dobrodruhovia na audiencii so Správcom Denethorom...
@@ -94,7 +94,7 @@ qstr_TLD_New_FormAI|TLD Nová FormaAI
 ; qstr_Siege_AI:__|Siege AI:  
 ; qstr_Basic__better_perfor|Basic (better performance)
 ; qstr_Advanced|Advanced
-; qstr_Campaign_diffculty:_|Campaign diffculty:  
+; qstr_Campaign_difficulty:|Campaign difficulty:  
 ; qstr_Hard|Hard
 ; qstr_Default|Default
 ; qstr_Easy|Easy
@@ -109,11 +109,6 @@ qstr_Fallen_rider_damage_|Správa o poškodení jazdca:
 qstr_No_Messages|Žiadne správy
 qstr_Player_damage_only|Iba poškodenie hráča
 qstr_All_Messages|Všetky správy
-qstr_Troop_Identifier_in_|Identifikátor vojakov v bitkách (stlačte tlačidlo Y počas bitky pre zobrazenie/skrytie):
-qstr_Disable|Zakázať
-; qstr_Troop_Names|Troop Names
-; qstr_Simple:_Faction_Colo|Simple: Faction Colors
-; qstr_Simple:_Black___Enem|Simple: Black - Enemy / White - Allies
 qstr_Preferred_Camera_Mod|Preferovaný režim Kamery 
 qstr_Default_Camera|Základná kamera
 qstr_Free_Mode_Custom_Cam|Voľný režim vlastnej kamery 
@@ -242,6 +237,8 @@ qstr__Scales_with_Wildcra|(zvyšuje sa spolu s Lesníctvom)
 ; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
 ; qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 k Mocnému vrhu
+; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
+; qstr__Scales_with_Charism|(Scales with Charisma. Human leaders only.)
 qstr_+1_to_Spotting|+1 k Ostražitosti
 ; qstr_+2_to_Weapon_Master|+2 to Weapon Master
 ; qstr_+2_to_First_Aid|+2 to First Aid
@@ -729,8 +726,8 @@ qstr_Switch_Back_to_3rd_P|Pre otočenie kamery prejdi späť do pohľadu 3tej os
 qstr_Fixed_Custom_Camera|Upravená Vlastná Kamera
 qstr_Press_Ctrl_+_Left_/_|Stlač Ctrl + Ľavú / Ctrl + Pravú šipku klávesy pre prepnutie pohľadu cez rameno.
 qstr_Press_Ctrl_+_Down_to|Klikni Ctrl + Dole pre Stred
-qstr_Use_+/__to_zoom_in/o|Stlač +/- pre približovanie/odďaľovanie
-qstr_Use_Up/Down_arrow_ke|Stlač Hornú/Dolnú šipku pre posúvanie kamery hore/dole
+; qstr_Press_Ctrl_and_+/__t|Press Ctrl and +/- to zoom in/out
+; qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
 qstr_Fixed_Camera___Right|Upravená kamery - Pravé rameno
 qstr_Fixed_Camera___Left_|Upravená kamera - Ľavé rameno
 qstr_Fixed_Camera___Cente|Kamera upevnená - Stred
@@ -783,7 +780,7 @@ qstr_{s21}_{reg24?killed:|{s21} {reg24?bol zabitý, upadol do bezvedomia}, môž
 qstr_A_bear_has_been_summ|Na bojišti sa objavil medveď!
 qstr_In_The_Last_Days_of_|V Posledných Dňoch Tretieho Veku sa tvoje jednotky na začiatku každého boja umiestnia samé namiesto toho, aby bezhlavo zaútočili.^^Aby si im prikázal vytvoriť formáciu, stlač 'J' pre ŠÍKY, 'K' pre Štítovú stenu, 'L' pre Klin, ';' pre Štvorec. Pre zrušenie formácie stlač 'U'. ^Pokiaľ tvoje jednotky uháňajú z boja, môžeš stisnúť 'V', aby si ich vyburcoval/inšpiroval. V jednom boji máš len obmedzené množstvo burcovania jednotiek, a množstvo závisí na tvojom Vodcovstve a Charizme.
 qstr_You_can_also_order_y|Tiež môžeš svojim jednotkám určiť, aký typ zbrane majú v boji používať.^^ Stlač O pre výber z niekoľkých Rozkazov pre Zbrane. Stisni P pre výber z Rozkazov pre Štíty.
-qstr_The_Last_Days_of_the|Posledné Dni Tretieho Veku majú zabudovanú Vlastnú Kameru, aby bolo predídené obmedzeniam základnej kamery vzhľadom na menšie rasy (napr. ohyzdi a trpaslíci).^^Stisni CTRL + END pre výber medzi 2 režimami kamery: Upravená pozícia a Voľný režim.^^ Upravená pozícia je optimálna pozícia pre všetky rasy, ale nemôže byť už ďalej upravovaná. Môžeš stisnúť CTRL+Ľavú/Pravú klávesu šipky pre výber medzi kamerou z pohľadu ramien.^^Voľný mód kamery je nastavený tak, aby bola vaša postava vždy uprostred obrazovky. Môžete stlačiť CTRL+Horná/Dolná klávesa šipky pre nastavenie náklonu kamery a CTRL+ klávesa čísel +/- pre odďaľovanie a približovanie.^^ Nazrite do Info Stránok pre vysvetlenie, ako nastavovať rôzne kamerové režimy.
+; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^See Info Pages for how to control the different camera modes.
 qstr_Battlefield_is_too_s|Bojové pole je príliš malé pre komplexné formácie umelej inteligencie.
 qstr_You_have_a_clear_per|Vnímaš všade v okolí veľké hroziace nebezpečenstvo!
 qstr_New_ent_reached_batt|Nový ent dorazil do boja...
@@ -834,9 +831,12 @@ qstr_You_are_now_hidden.|Si skrytý.
 qstr_You_move_out_of_hidi|Opustil si úkryt.
 qstr_The_guards_have_spot|Stráže si všimli mŕtve telo!
 qstr_Alarm_Level_is_now_a|Poplach Úrovne 1 je aktívny!
+; qstr_You_have_been_to_slo|You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close.
 qstr_Alarm_Level_is_now_at|Poplach je na Úrovni 0.
 qstr_The_guards_have_spott|Stráže si ťa všimli!
 qstr_Alarm_Level_is_now_at_|Poplach Úrovne 2 je aktívny!
+; qstr_Enemy_reinforcements_|Enemy reinforcements arrived.
+; qstr_Venture_deeper_into_|Venture deeper into the forest and find a way onward.
 qstr_The_sorcerer_has_fle|Černokňažník utiekol!
 qstr_Report_this_ill_news|Predať Panej tieto nepríjemné správy naraz. 
 qstr_The_sorcerer_is_flee|Černokňažník uniká! Zabi ho!
@@ -934,13 +934,18 @@ qstr_You_drank_the_Ent_Wa|Vypil si Entskú vodu...
 qstr_You_used_the_Orc_Bre|Použil si Ohyzdiu pálenku
 ; qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
 ; qstr_You_give_a_few_leave|You give a few leaves of Athelas to your healers.
+; qstr_Not_enough_party_spa|Not enough party space.
+; qstr_elites|elites
+; qstr_regulars|regulars
+; qstr_recruits|recruits
+; qstr_wild|wild
+; qstr_goblins|goblins
 ; qstr_lordless|lordless
 ; qstr_orc_stragglers|orc stragglers
-; qstr_wild_goblins|wild goblins
-; qstr_recruits|recruits
-; qstr_regulars|regulars
-; qstr_elites|elites
 ; qstr_You_camp_and_beat_th|You camp and beat the Drums of the Deep. The mighty sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
 qstr_Fangorn_search:_fail|Skúmanie Farngornu: neúspešné.
 qstr_^^^A_great_victory!^|^^^Veľké víťazstvo!^^^Tak o tomto hovorili všetky tie legendy Farngornu... 
 qstr_^^^Defeated...^^^Sca|^^^ Porazený ... ^^^ Zatúlaný vo Fangornskom Lese ... Osamotený ...
@@ -972,7 +977,8 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Skupina {s1} je {s10} ti naproti.
 qstr_You_are_attacking_a_|Útočíš na skupinu {s1}.
 qstr_The_battle_against_t|Bitka proti skupine {s1} pokračuje.
-qstr_There_are_{reg39}_al|Na bojovom poli si sa ocitol v prítomnosti {reg39} spojeneckých veliteľov. Môžeš stáť v čele ich družín za {reg40} bodov vplyvu.
+; qstr_There_are_{reg39}_al|There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence.
+; qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
 qstr_Having_a_small_party|Vedenie malej družiny má svoje výhody...Ty a tvoje jednotky sa schovávate niekoľko hodín pred nepriateľmi, aby ste sa uistili, že vás nik nespozoruje.
 qstr_Your_ability_to_mast|Tvoja schopnosť nájsť v prírodnom prostredí vhodný úkryt. (Tvoja úroveň v Lesníctve ti umožňuje schovať sa s {reg1} jednotkami)
 qstr_{reg4}_will_be_lost.|{reg4} zahynie.
@@ -1019,7 +1025,7 @@ qstr_As_a_last_defensive_|V obrannom manévre si sa stiahol do hlavnej siene pev
 qstr_You_ve_been_driven_a|Nepriatelia dobili hradby, boli ste zatlačený do ulíc, kde ich musíš poraziť. Ešte stále môžeš uspieť v obrane, odraziť útok a zvíťaziť.
 qstr_You_ve_breached_the_|Prelomil si mestské hradby, ale nepoddajní obrancovia vám stále kladú v uliciach odpor. Musíš sa s nimi vysporiadať ešte pred tým, než zaútoč na hlavnú pevnosť uprostred mesta.
 qstr_The_town_centre_is_y|Centrum mesta je tvoje, ale zvyšní obrancovia sa stiahli do hradu. Ak chceš zvíťaziť, hrad musí padnúť.
-; qstr_The_remaining_defend|The remaining defenders escape from the siege!
+qstr_The_remaining_defende|Zvyšní obrancovia sa stiahli späť do hradu - poslednej obrany. Musíš tam vraziť a zdolať posledný odpor.
 qstr_However_since_you_ar|Tak či onak, keďže nie si prísažným {služobníkom/stúpencom} {s9}a, je nepravdepodobné, že ťa bude považovať za {Pána/Paniu} tohto {reg8?mesta:hradu}.
 qstr_The_enemy_has_been_f|Nepriateľ bol nútený ustúpiť. Je dobojované, ale obliehanie pokračuje.
 qstr_The_assasins_beat_yo|Nájomný vrahovia ťa dobili a nechali napospas smrti.
@@ -1077,7 +1083,10 @@ qstr_You_defeated_{reg5}_e|Pobil si {reg5} protivníkov.
 qstr_You_failed_to_defeat|Nepodarilo sa ti poraziť jediného nepriateľa.
 qstr_The_sorcerer_slain_y|Vo chvíli, keď černokňažník padne mrtvý k zemi, ty a tvoji spoločníci si narýchlo ošetríte svoje najväčšie zranenia a vykĺznete von do nekonečnej nočnej tmy. Odporné hlasy a škreky sa ozývajú za vami a ty pociťuješ, ako po vás v tieňoch pátra nespočet ohnivých očí. Onedlho zúrivosť v ich hlasoch vystrieda sklamanie a čoskoro sa vôkol rozhostí ťažké ticho, prirodzené pre bezútešný Temnohvozd. Unikol si.
 qstr_The_sorcerer_slipped|Černokňažník ti vykĺzol spod rúk a unikol do temnoty svojho úkrytu. So srdcom ťažkým z porážky si ty a tvoji spoločníci narýchlo ošetríte svoje najväčšie zranenia a uniknete do nočnej tmy. Ostré výsmešné hlasy a škrekoty sa ozývajú za vami a cítiš, že mnoho ohnivých očí sa prediera tmavou spleťou lesa len aby vás našli. Rehot a nadávky onedlho utíchnu, vystrieda ich ťažké ticho, prirodzené pre bezútešný Temnohvozd. Unikol si.
-qstr_You_approach_a_heavi|Prechádzaš prísne stráženou oblasťou lesa...
+; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest... ^^ You have to decide whether you venture forward on your own, or take some troops with you.
+; qstr_You_have_a_good_chan|You have a good chance of avoiding the guards and slipping through unnoticed.
+; qstr_You_may_have_a_chanc|You may have a chance of avoiding the guards.
+; qstr_You_will_probably_ha|You will probably have to fight the guards.
 qstr_You_wait_for_darknes|Čakáš, kým opadne temnota...
 qstr_You_are_quickly_disc|Onedlho si odhalený nepriateľmi.
 qstr_You_advance_stealthi|Nenápadne prenikneš hlboko do lesa.
@@ -1112,7 +1121,7 @@ qstr_{reg65}_Moria_and/or|{reg65} Morijských a/alebo Gundabadských jednotiek z
 qstr_{reg65}_{s3}_troops_|{reg65} jednotiek {s3}u zabitých. (Počítadlo sa obnovuje každú hodinu)
 qstr_{reg66}_{s5}_troops_|{reg66} jednotiek {s5}u zabitých. (Počítadlo sa obnovuje každú hodinu)
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} jednotiek {s8}u zabitých. (Počítadlo sa obnovuje každú hodinu)
-qstr_{reg68}_{s10}_killed|{reg68} jednotiek {s10}u zabitých. (Počítadlo sa obnovuje každú hodinu)
+; qstr_{s8}_in_{s9}_asked_y|{s8} in {s9} asked you to slay {reg67} {s10}.^ {reg68} {s11} killed. (Counter refreshes every hour)
 qstr_{s1}_is_scouted.|{s1} je preskúmané.
 qstr_{s2}_was_defeated!|{s2} bol porazený!
 qstr_The_Age_of_Men_has_f|Vek Ľudí skončil. Dve Veže zhromažďujú pozostatky svojich síl a budú bojovať o to, kto sa stane vládcom nad celou Stredozemou!
@@ -1123,7 +1132,7 @@ qstr_In_a_desperate_attem|V zúfalej obrane vysiela Sauron von svoje Mordorské 
 qstr_Guardians_of_{s6}|Strážci {s6}
 qstr_Guard_Legion_of_{s6}|Légia ochrancov {s6}
 qstr_Scouts_report_that_{|Prieskumníci hlásia, že {s6} shromáždil veľkú armádu neďaleko {s7} v poslednom nádeji ochrániť hlavné mesto.
-qstr_The_forces_of_{s2}_e|Vojská {s2} založili vojenský tábor v {s15}!
+; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|Páni {s2}u vyrážajú späť brániť domovinu!
 qstr_{playername}_s_Reser|{playername}ove zálohy.
 qstr_Gondor_has_called_fo|Gondor volá o pomoc!
@@ -1654,6 +1663,10 @@ qstr_Then_let_us_go._Stay|V tom prípade nás nechaj ísť. Držte sa nablízku.
 qstr_There_will_be_blood_|Potečie krv, to je isté. Držte sa nablízku, alebo si to nechajte ujsť.
 qstr_Goodbye_friends.|Dovidenia, priatelia.
 qstr_See_you_later_if_you|Tak nabudúce, pokiaľ sa nenecháš zabiť.
+; qstr_I_don_t_need_your_he|I don't need your help any longer. Go home.
+; qstr_I_don_t_have_any_nee|I don't have any need for you. Get lost.
+; qstr_We_will_return_to_ou|We will return to our previous task. Goodbye.
+; qstr_Lads_we_re_going_hom|Lads, we're going home!
 qstr__^Oh_and_take_back_t|^Oh, a vráť tých, ktorí nepatria medzi tvoj ľud.
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Títo:Tento} odvážni {reg28?vojaci:vojak} nám určite pomôžu chrániť naše kraje.{s32} {s23}^^[získaných {reg14} Bodov Zásob {s14}u]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Tieto:Táto} užitočné {reg28?jednotky:jednotka} sa nám zídu pri pôsobení zmätku.{s32}^{s23}^^[získaných {reg14} Bodov Zásob z {s14}]

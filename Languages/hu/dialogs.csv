@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Nos, ő a tiéd.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Attől félek, hogy más terveim vannak neki.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Tökéletes! Elküldöm az embereimet, hogy lóhalálában elvigyék a börtönünkbe. Ez egyértelműen szolgálni fogja az ügyünket.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Kár, pedig igazán értékes lett volna a számunkra, {playername}.
-dlga_tld_intro_1:lord_pretalk|Háború Oktatás:^^- A népek csak akkor fognak ostromot indítani amikor elég erősek hozzá.^- A legtöbb települést meglehet ostromolni ha a hozzá tartozó nép eléggé le van gyengülve. Általában a fővárosokat fogják utoljára megostromolni.^- Ha egy nép elveszti a fővárosát, vagy a hadereje teljességgel megszűnik, akkor lesznek legyőzve.^- A népek győzedelmes csatákból vagy bizonyos kulcsfontosságú települések birtoklásával kaphatnak erőre.^- Néhány küldetés vagy történés befolyásolhatja a népek erejét.^- Összetudod hasonlítani a jelenlegi népi erőket a 'Jelentések' menüpont alatt.^- Nézz bele az Információs Panelekbe további Utolsó Napok útmutatókhoz.
+; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
 dlga_lord_start:lord_pretalk|Áh, üdvözöllek, {s24}.^Biztos tudod már, hogy {s12}. A feladatod az, hogy küzdj az ügyünkért, {playername}. Miután kiérdemled a bizalmamat [level {reg1}], azt is megfogom engedni, hogy használhasd azt a ládát, hogy majd tárolhasd benne a személyes tárgyaidat.
 dlga_lord_start:lord_talk|Mi az?
 dlga_lord_pretalk:lord_talk|Volna még más is?
@@ -616,22 +616,6 @@ dlga_lord_leave:close_window.3|Igen-igen. Viszontlátásra.
 dlga_lord_leave:close_window.4|Később még találkozunk.
 dlga_start:lady_escort_lady_succeeded|Köszönöm hogy elkísért, {playername}, és biztosította nekem a biztonságos utat. A szolgálatai megfelelően lesznek jutalmazva.
 dlga_lady_escort_lady_succeeded:close_window|Megtiszteltetés volt szolgálni.
-dlga_start:prison_guard_players|Szép napot, Parancsnok. A börtönt fogja meglátogatni?
-dlga_prison_guard_players:close_window|Igen. Nyissa ki az ajtót.
-dlga_prison_guard_players:close_window.1|Nem, most nem.
-dlga_start:prison_guard_talk|Igen? Mit akarsz?
-dlga_prison_guard_talk:prison_guard_ask_prisoners|Kit tartanak itt fogva?
-dlga_prison_guard_talk:prison_guard_visit_prison|Beszélni akarok egy fogollyal.
-dlga_prison_guard_ask_prisoners:prison_guard_talk|Jelenleg, {s51} {reg1?vannak:van} bebörtönözve ide.
-dlga_prison_guard_visit_prison:close_window|Természetesen, Parancsnok. Menjen csak be.
-dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|Szükséged lesz az úr engedélyére, hogy beszélhess a foglyokkal.
-dlga_prison_guard_visit_prison_2:close_window|Rendben van. Majd megpróbálom.
-dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Komolyan már. Azt hittem te vagy itt a főnök.
-dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. Ezt jól tudod. Ennek ellenére, nem engedhetlek be a börtönbe.
-dlga_prison_guard_visit_prison_4:close_window|Rendben van. Akkor elmegyek.
-dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|Találtam pár lépésre innen egy erszényt. Biztos vagyok benne hogy hozzád tartozik.
-dlga_prison_guard_visit_prison_5:close_window|Áh! Egész nap ezt kerestem. Milyen jó öntől hogy visszahozta ezt nekem {uram/asszonyom}. Most, hogy már tudom hogy milyen becsületes {férfi/hölgy} is ön, nem okozhat semmiféle bajt, ha beengedem. Menjen csak.
-dlga_prison_guard_talk:close_window|Hagyjuk.
 dlga_start:castle_guard_players|Az utasításai, Parancsnok?
 dlga_castle_guard_players:close_window|Nyisd ki az ajtót. Bemegyek.
 dlga_castle_guard_players:close_window.1|Hagyjuk.
@@ -1048,7 +1032,9 @@ dlga_disband_regular_member_confirm:disband_regular_member_confirm_yn|Elhagyjam 
 dlga_start:routed_allies_talk_troll|^^MORGÁS!^^
 ; dlga_routed_allies_talk_troll:close_window|[Have them join you again]
 dlga_routed_allies_talk_troll:close_window.1|[Távozás]
-; dlga_start:party_encounter_friend|{s4} What brings you here, {s24}?
+; dlga_start:party_encounter_distrusted_friend_1|{s14}
+; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+; dlga_start:party_encounter_friend.1|{s4} What brings you here, {s24}?
 ; dlga_party_reinforce:party_reinforce_end|We haven't seen much enemy activity yet. Maybe later, thanks.
 ; dlga_party_reinforce:party_reinforce_end.1|We don't need any more soldiers, thank you.
 dlga_party_reinforce:party_reinforce_check|Erősítés a csapatunknak? Mi mindig tudunk mit kezdeni több katonával, de tartsd észben hogy csak a saját népünktől fogadunk el egységeket.

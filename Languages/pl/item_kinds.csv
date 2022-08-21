@@ -499,7 +499,7 @@ itm_mirkwood_helm_a|Hełm Strzelca Leśnych Elfów
 itm_mirkwood_helm_b|Hełm Leśnych Elfów
 itm_mirkwood_helm_c|Ciężki Hełm Leśnych Elfów
 itm_mirkwood_helm_d|Królewski Hełm Leśnych Elfów
-itm_mirkwood_boots|Buty Leśnych Elfów
+; itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_harad_tunic|Haradzka Szata
 itm_harad_padded|Przeszywanica z Harondoru
 itm_harad_hauberk|Kolczuga z Harondoru
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Hełm Gwardii Orła
 itm_lion_helm|Hełm Gwardii Lwa
 itm_harad_pantherhelm|Czapa Gwardii Pantery
 itm_harad_khopesh|Haradzki Chopesz
-itm_black_snake_sword|Haradzi Bułat
-itm_harad_heavy_sword|Haradzki Ciężki Miecz
+; itm_black_snake_sword|Harad Cobra Sword
+; itm_harad_heavy_sword|Harad Dragon Sword
 itm_horandor_a|Haradzki Sejmitar
 itm_skirmisher_sword|Haradzki Miecz Harcownika
-itm_harad_sabre|Haradzka Szabla
+; itm_harad_sabre|Harad Salamander Sword
 itm_harad_mace|Buława z Dalekiego Haradu
 itm_far_harad_2h_mace|Wielka Buława z Dalekiego Haradu
 itm_harad_dagger|Haradzki Nóź
@@ -546,7 +546,7 @@ itm_harad_shield_c|Puklerz z Harondor
 itm_harad_yellow_shield|Haradzka Tarcza
 itm_desert_boots|Pustynne Buty
 itm_harad_leather_greaves|Skórzane Nagolenniki Haradu
-itm_harad_scale_greaves|Łuskowe Nagolenniki Haradu
+itm_harad_scale_greaves|Haradzkie Nagolenniki
 itm_harad_lamellar_greaves|Usztywniające Nagolenniki Haradu
 itm_khand_inf_helm_a|Hełm z Khandu
 itm_khand_inf_helm_b|Hełm z Khandu
@@ -642,6 +642,7 @@ itm_umb_helm_a|Muszlowy Hełm Korsarza
 itm_umb_helm_b|Wysoki Hełm Korsarzy
 itm_umb_helm_c|Hełm Korsarza
 itm_umb_helm_d|Hełm Łupieżcy z Umbaru
+; itm_umb_helm_reward|Ancient Numenorean Karma
 itm_corsair_trident|Trójząb Morskiego Gniewu
 itm_corsair_boots|Buty Korsarza
 itm_umb_shield_a|Tarcza Korsarza

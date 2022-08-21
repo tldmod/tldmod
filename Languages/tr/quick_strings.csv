@@ -38,7 +38,7 @@ qstr_A_peaceful_village_n|Westfold'dan fazla uzak olmayan barışçıl bir köy.
 qstr_The_War_is_upon_Roha|Savaş Rohan'a geliyor!
 qstr_Minas_Tirith___The_W|Minas Tirith - Ak Şehir
 qstr_The_White_Tree_stand|Kralların soyu bozuldugundan beri Ak Agaç ölü duruyor
-qstr_The_Shadow_grows_eve|Dogudaki Karanlık giderek büyüyor
+; qstr_And_the_Shadow_grows|And the Shadow grows ever stronger in the East
 qstr_Minas_Morgul___City_|Minas Morgul - Nazgul'un İni
 qstr_Sauron_s_armies_marc|Sauron'un orduları  Savaş'a yürüyor!
 qstr_Adventurers_at_audie|Vekilharç Denethor ile seyirci maceracılar ...
@@ -94,7 +94,7 @@ qstr_TLD_New_FormAI|TLD Yeni FormAİ
 qstr_Siege_AI:__|Kuşatma Yapay Zekası:
 qstr_Basic__better_perfor|Temel ( Daha iyi Performans)
 qstr_Advanced|Gelişmiş
-qstr_Campaign_diffculty:_|Sefer zorlugu:
+; qstr_Campaign_difficulty:|Campaign difficulty:  
 qstr_Hard|Zor
 qstr_Default|Varsayılan
 qstr_Easy|Kolay
@@ -109,11 +109,6 @@ qstr_Fallen_rider_damage_|Düşmüş süvari hasar mesajları:
 qstr_No_Messages|Mesaj yok
 qstr_Player_damage_only|Sadece oyuncu hasarı
 qstr_All_Messages|Tüm Mesajlar
-qstr_Troop_Identifier_in_|Savaşlarda asker isimleri (Göstermek/saklamak için savaş alanında Y tuşuna basın):
-qstr_Disable|Devre Dışı
-qstr_Troop_Names|Birlik İsimleri
-qstr_Simple:_Faction_Colo|Basit: Taraf Renkleri
-qstr_Simple:_Black___Enem|Basit: Siyah - Düşman / Beyaz - Müttefikler
 qstr_Preferred_Camera_Mod|Tercih edilen Kamera Modu
 qstr_Default_Camera|Varsayılan Kamera
 qstr_Free_Mode_Custom_Cam|Serbest-Mod Özel Kamera
@@ -242,6 +237,8 @@ qstr_Strengthens_all_Hero|Bütün Kahramanları güçlendirir
 qstr_+2_to_First_Aid__Par|İlk Yardıma +2 (Grup)
 qstr_lead_more_Uruks|Daha fazla uruk yönet
 qstr_+1_to_Power_Throw|Güçlü Fırlatmaya +1
+; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
+; qstr__Scales_with_Charism|(Scales with Charisma. Human leaders only.)
 qstr_+1_to_Spotting|Gözlemcilik +1
 qstr_+2_to_Weapon_Master|+2 Silah ustası
 qstr_+2_to_First_Aid|+2 ilk Yardım
@@ -729,8 +726,8 @@ qstr_Switch_Back_to_3rd_P|Dönen Kamerayı Görmek için 3'üncü Kişi Kameras�
 qstr_Fixed_Custom_Camera|Özel Kamerayı Ayarla
 qstr_Press_Ctrl_+_Left_/_|Omuz Degiştirmek için Ctrl+Sol/Ctrl/Sag Yön Tuşlarına basınız
 qstr_Press_Ctrl_+_Down_to|Ortalamak için Ctrl + Aşagı Ok Tuşuna Basınız
-qstr_Use_+/__to_zoom_in/o|+/- kullan yaklaş/uzaklaş
-qstr_Use_Up/Down_arrow_ke|Yukarı ve aşagı egim vermek için up/down tuşlarını kullanın
+; qstr_Press_Ctrl_and_+/__t|Press Ctrl and +/- to zoom in/out
+; qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
 qstr_Fixed_Camera___Right|Sabit Kamera - Sag Omuz
 qstr_Fixed_Camera___Left_|Sabit Kamera - Sol Omuz
 qstr_Fixed_Camera___Cente|Sabitlenmiş Kamera - Merkez
@@ -783,7 +780,7 @@ qstr_{s21}_{reg24?killed:| {s22} tarafından {s21} {reg24?öldürüldü:bayılt�
 qstr_A_bear_has_been_summ|Savaş alanında bir Ayı ortaya çıktı!
 qstr_In_The_Last_Days_of_|The Last Days of the Third Age modunda, askerlerin her savaşın başında kör gözüne saldırmaktansa pozisyonlarını korurlar.^^Askerlerine formasyon emri vermek için: 'J' Rütbeye göre, 'K' Kalkan duvarı, 'L' kama , ';' for Kare. Formasyonu bozmak içi; 'U'. ^Eger askerlerin kaçışıyorsa 'V' ile onları toplayabilirsin. Sınırlı sayıda toplama hakkın var ve bu senin karizmana baglıdır.
 qstr_You_can_also_order_y|Askerlerinize, kullanmasını istediginiz silah türünü kullanmalarını da emredebilirsiniz. ^^ Silah Düzeni türleri arasında geçiş yapmak için O tuşuna basın. Kalkan Emirleri arasında geçiş yapmak için P tuşuna basın.
-qstr_The_Last_Days_of_the|The Last Days of the Third Age modu kısa boylu ırklar için (Cüce/orc) kişisel bir kamera sistemi geliştirdi.^^CTRL + END ile 2 farklı kamera moduna bakabilirsiniz: Sabit pozisyonlu ve Serbest mod.^^Sabit pozisyon bütün Irklar içindir ancak kişileştirilemez. CTRL+Sol/Sag Yön tuşları ile omuz degiştirebilirsiniz.^^Serbest mod karakteri ortaya yerleştirir. CTRL+Yukarı/Aşagı yön tuşları ile kamerayı döndürebilirsiniz ve CTRL+ Numpad +/- ile yakınlaştırabilirsiniz.^^ Bilgi sayfalarına bakarak kamerayı nasıl kontrol edebileceginize bakabilirsiniz.
+; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^See Info Pages for how to control the different camera modes.
 qstr_Battlefield_is_too_s|Savaş alanı karmaşık yapay zeka formasyonları için çok küçük.
 qstr_You_have_a_clear_per|Etrafdan gelebilecek bir tehlike olduguna dair içinde net bir his var!
 qstr_New_ent_reached_batt|Yeni ent savaş alanına ulaştı...
@@ -834,9 +831,12 @@ qstr_You_are_now_hidden.|Şimdi gizlisin.
 qstr_You_move_out_of_hidi|Sıgınagın dışına yürüdün.
 qstr_The_guards_have_spot|Gardiyan ölü bedeni tespit etti!
 qstr_Alarm_Level_is_now_a|Alarm Seviyesi şimdi 1'de!
+; qstr_You_have_been_to_slo|You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close.
 qstr_Alarm_Level_is_now_at|Alarm Seviyesi şimdi 0'da!
 qstr_The_guards_have_spott|Gardiyanlar seni fark etti
 qstr_Alarm_Level_is_now_at_|Alarm Seviyesi şimdi 2'de!
+; qstr_Enemy_reinforcements_|Enemy reinforcements arrived.
+; qstr_Venture_deeper_into_|Venture deeper into the forest and find a way onward.
 qstr_The_sorcerer_has_fle|Büyücü kaçtı!
 qstr_Report_this_ill_news|Bu kötü haberi hemen Leydi'ye bildir.
 qstr_The_sorcerer_is_flee|Büyücü kaçıyor! Öldürün!
@@ -934,13 +934,18 @@ qstr_You_drank_the_Ent_Wa|Ent suyunu içiyorsun...
 qstr_You_used_the_Orc_Bre|Ork İksiri kullandın.
 qstr_You_and_your_compani|Sen ve dostların bir yudum Miruvor içiyorsunuz. Ferahlamış ve güçlenmiş hissediyorsun.
 qstr_You_give_a_few_leave|Doktorlarına bir kaç Athelas yapragı veriyorsun.
+; qstr_Not_enough_party_spa|Not enough party space.
+qstr_elites|uzmanlar
+qstr_regulars|düzenli gelenler
+qstr_recruits|acemiler
+; qstr_wild|wild
+; qstr_goblins|goblins
 qstr_lordless|kralsız
 qstr_orc_stragglers|ork kaçaklar
-qstr_wild_goblins|vahşi goblinler
-qstr_recruits|acemiler
-qstr_regulars|düzenli gelenler
-qstr_elites|uzmanlar
 qstr_You_camp_and_beat_th|Kamp yapıyorsun ve Derinlerin Davullarını çalıyorsun. Bu yüce ses {s1} {s2} grubunu çekiyor.
+; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
 qstr_Fangorn_search:_fail|Fangorn araştırması: başarısız.
 qstr_^^^A_great_victory!^|^^^Büyük bir zafer!!^^^Demek ki Fangorn ile ilgili söylentiler bu anlama geliyormuş...
 qstr_^^^Defeated...^^^Sca|^^^Maglup...^^^Fangorn Ormanı'nda dagılmış... Yalnız...
@@ -972,7 +977,8 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|{s1} Grubu sana karşı {s10}
 qstr_You_are_attacking_a_|Sen {s1}'in grubuna saldırıyorsun.
 qstr_The_battle_against_t|{s1} grubuna karşı savaş devam ediyor.
-qstr_There_are_{reg39}_al|Savaşta {reg39} adet müttefik komutan var. {reg40} Nüfuz puanı karşılıgında onları ve askerlerini yönetebilirsin.
+; qstr_There_are_{reg39}_al|There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence.
+; qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
 qstr_Having_a_small_party|Küçük bir partiye sahip olmanın faydaları var... Siz ve birlikleriniz, görülemeyeceginizden emin olmak için düşmandan birkaç saat saklanabilirsiniz.
 qstr_Your_ability_to_mast|Zorlu ortamlarda hayatta kalabilmeniz, saklanacak güvenli bir yer bulmanızı saglar. (Yaban Ustası yeteneginiz, {reg1} birlikle saklanmanıza izin verir)
 qstr_{reg4}_will_be_lost.|{reg4} Kaybedildi.
@@ -1019,7 +1025,7 @@ qstr_As_a_last_defensive_|Son bir savunma çabası olarak, ana salona çekiliyor
 qstr_You_ve_been_driven_a|Duvarlardan uzaga gidiyorsun. Şimdi saldırganlar sokaklara dökülüyor. Onları yenersen, belki de savaşın kaderini degiştirebilir ve günü kurtarabilirsin.
 qstr_You_ve_breached_the_|Kasaba duvarlarını yıktın, ama inatçı savunmacılar sokaklarda direnmeye devam ediyor! Kasabanın kalbine saldırmadan önce onlarla ugraşman gerekecek.
 qstr_The_town_centre_is_y|Şehir merkezi artık sizin, ancak kalan savunmacılar kaleye çekildiler. Zaferinizi tamamlamadan önce kaleyi de düşürmeniz gerekir.
-qstr_The_remaining_defend|Kalan savunmacılar kuşatmadan kaçıyor!
+qstr_The_remaining_defende|Kalan savunmacılar son bir savunma olarak kaleye çekildi. İçeri girmeli ve kalan direnci ezmelisin.
 qstr_However_since_you_ar|Ne var ki, {s9} kişisinin yeminli bir {adamı/takipçisi} olmadıgından,  seni bu {reg8?şehrin:kalenin} {lordu/hanımı} olarak tanımasına imkan yok.
 qstr_The_enemy_has_been_f|Düşman geri çekilmeye zorlandı. Saldırı bitti, ama kuşatma devam ediyor
 qstr_The_assasins_beat_yo|Suikastçi seni yendi ve ölüme terketti
@@ -1077,7 +1083,10 @@ qstr_You_defeated_{reg5}_e|{reg5} Düşmanını yenilgiye ugrattın.
 qstr_You_failed_to_defeat|Herhangi bir düşmanı yenemedin.
 qstr_The_sorcerer_slain_y|Öldürülen büyücü, sen ve arkadaşların yaraları sarmak ve gecenin içine karışmak için atılıyorsun. Tuhaf sesler arkanızda çıglık atıyor ve gölgelerde sizi arayan pek çok yanan göz hissediyorsunuz. Yakında öfkeniz hayal kırıklıgına dönüşür ve takip sesleri bogulur, yerini KuyutOrman'ın agır sessizligi alır. Kaçtın.
 qstr_The_sorcerer_slipped|Büyücü elinizden kaymış ve çevrenin karanlıgına gömülmüştür. Başarısızlık agırlıgı altındaki kalplerle birlikte, siz ve yoldaşlarınız aceleyle yaraları sarıp gecenin gölgesine dogru çekiliyorsunuz. Tuhaf sesler arkanızda çıglık atıyor ve gölgelerde sizi arayan pek çok yanan göz hissediyorsunuz. Kahkahalar ve hakaretler kısa sürede merhametle örtüldü, yerine Kuyutorman'ın olagan agır sessizligi geldi. Kaçtın.
-qstr_You_approach_a_heavi|Ormanın bayagı korunaklı bir bölgesine yaklaşıyorsun...
+; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest... ^^ You have to decide whether you venture forward on your own, or take some troops with you.
+; qstr_You_have_a_good_chan|You have a good chance of avoiding the guards and slipping through unnoticed.
+; qstr_You_may_have_a_chanc|You may have a chance of avoiding the guards.
+; qstr_You_will_probably_ha|You will probably have to fight the guards.
 qstr_You_wait_for_darknes|Karanlıgın düşüşünü bekliyorsun...
 qstr_You_are_quickly_disc|Düşman tarafından çabuk fark edildin.
 qstr_You_advance_stealthi|Gizlice ormanın içlerine dogru ilerlediniz. 
@@ -1112,7 +1121,7 @@ qstr_{reg65}_Moria_and/or|{reg65} Moria ve/veya Gundabad birlikleri öldürüld�
 qstr_{reg65}_{s3}_troops_|{reg65} {s3} birligi öldürüldü. (Sayaç her saat yenilenir)
 qstr_{reg66}_{s5}_troops_|{reg66} {s5} birligi öldürüldü. (Sayaç her saat yenilenir)
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} birligi öldürüldü. (Sayaç her saat yenilenir)
-qstr_{reg68}_{s10}_killed|{reg68} {s10} öldürüldü. (Sayaç her saat yenilenir)
+; qstr_{s8}_in_{s9}_asked_y|{s8} in {s9} asked you to slay {reg67} {s10}.^ {reg68} {s11} killed. (Counter refreshes every hour)
 qstr_{s1}_is_scouted.|{s1} gözlendi.
 qstr_{s2}_was_defeated!|{s2} maglup edildi.
 qstr_The_Age_of_Men_has_f|İnsanların çagı sonunda geçti. Şimdi İki Kule, Orta Dünya'nın tek hükümdarının kim olacagına karar vermek için ordularını ve müttefiklerini topluyor!
@@ -1123,7 +1132,7 @@ qstr_In_a_desperate_attem|Düşmanlarına karşı kendisini savunmak için umuts
 qstr_Guardians_of_{s6}|{s6}'nın Muhafızları
 qstr_Guard_Legion_of_{s6}|{s6}'ın Muhafız Lejyonu
 qstr_Scouts_report_that_{|İzciler {s6}'nın başkenti savunmak için kazılan son hendekte {s7} civarında büyük bir ordu topladıgını bildirdi.
-qstr_The_forces_of_{s2}_e|{s2} güçleri, {s15} içinde gelişmiş bir kamp kurdular!
+; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|{s2}'nin sahipleri evlerini savunmak için geri çekildiler!
 qstr_{playername}_s_Reser|{playername}'in Rezervleri
 qstr_Gondor_has_called_fo|Gondor yardım çagırıyor!
@@ -1654,6 +1663,10 @@ qstr_Then_let_us_go._Stay|O zaman hadi gidelim. Yakınımda dur ve Benden ayrıl
 qstr_There_will_be_blood_|Burada Kan çıkacak, orası kesin. Yakın dur, ya da kaç.
 qstr_Goodbye_friends.|Görüşmek üzere, arkadaşlar.
 qstr_See_you_later_if_you|Görüşürüz. Tabi ki ölmezsen!
+; qstr_I_don_t_need_your_he|I don't need your help any longer. Go home.
+; qstr_I_don_t_have_any_nee|I don't have any need for you. Get lost.
+; qstr_We_will_return_to_ou|We will return to our previous task. Goodbye.
+; qstr_Lads_we_re_going_hom|Lads, we're going home!
 qstr__^Oh_and_take_back_t|^Oh, ve şu bizim insanımız olmayanları geri alın.
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Bu:Bu} cesur {reg28?askerler:asker} bizim topraklarımızı savunmamıza kesinlikle yardımcı olur.{s32} {s23}^^[ {reg14} kadar {s14} Kaynak Puanı kazandın]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Bu:Bu} yararlı {reg28?askerler:asker} daha fazla tahribat yaratmamıza yardımcı olacak.{s32}^{s23}^^[ {reg14} kadar {s14} Kaynak Puanı kazandın]

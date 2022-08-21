@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|좋습니다. 그는 이제 당�
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|안타깝지만 그를 쓸 다른 계획이 있습니다.
 dlga_lord_buy_prisoner_accept:lord_pretalk|훌륭하군! 내가 그를 우리 감옥으로 끌고 올 사람을 보내겠네. 우리의 대의에 도움이 될거야.
 dlga_lord_buy_prisoner_deny:lord_pretalk|아쉽군, 그는 우리에게 중요한 인물이라네, {playername}.
-dlga_tld_intro_1:lord_pretalk|전쟁 튜토리얼:^^- 팩션들은 그들이 충분히 강할 때, 포위를 합니다.^- 대부분의 정착지는 세력이 약해졌을 때 포위 당합니다. 대개, 수도는 마지막에 포위당합니다.^- 팩션은 수도를 잃거나 무력에서 밀리면, 패배하게 됩니다.^- 팩션들은 전쟁에서 승리하거나 핵심 정착지에서 무력을 얻습니다.^- 팩션들은 패배하거나 정착지를 잃으면 무력을 잃습니다.^- 몇몇 퀘스트는 팩션의 무력에 영향을 줍니다.^- '보고서' 메뉴에서 현재 진영의 팩션 군사력을 확인할 수 있습니다.^- TLD가이드에 대한 자세한 내용은 정보페이지를 참조하십시오.
+; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
 dlga_lord_start:lord_pretalk|아, 어서오게, {s24}.^이미 {s12}을 알고 있는 것 같군. 자네의 임무는 우리의 투쟁을 돕는 것이네. {playername} 당신이 나의 신뢰[level {reg1}]를 받을 자격이 있다는 것을 증명한다면, 나는 자네가 개인 소지품을 보관할 수 있도록 그 상자에 접근할 수 있도록 허락할 것이다.
 dlga_lord_start:lord_talk|뭐죠?
 dlga_lord_pretalk:lord_talk|다른것은?
@@ -616,22 +616,6 @@ dlga_lord_leave:close_window.3|그래, 그래. 잘 가게.
 dlga_lord_leave:close_window.4|우리는 다시 만날 걸세.
 dlga_start:lady_escort_lady_succeeded|저를 이곳까지 데려다주셔서, 안전한 길이 되게 해주셔서 감사합니다. {playername}. 그대의 공로는 높이 평가될 것입니다.
 dlga_lady_escort_lady_succeeded:close_window|섬기게 되어 영광이었습니다.
-dlga_start:prison_guard_players|좋은 날이군요, 사령관님. 감옥을 방문하시겠습니까?
-dlga_prison_guard_players:close_window|그래. 문을 열어라.
-dlga_prison_guard_players:close_window.1|아니, 지금은 아냐.
-dlga_start:prison_guard_talk|예? 그럼 원하는 것이 뭡니까?
-dlga_prison_guard_talk:prison_guard_ask_prisoners|누가 여기 수감되어있나?
-dlga_prison_guard_talk:prison_guard_visit_prison|죄수와 대화를 하고 싶다.
-dlga_prison_guard_ask_prisoners:prison_guard_talk|지금, {s51} {reg1? 명이:명이} 수감되어있습니다.
-dlga_prison_guard_visit_prison:close_window|물론입니다. 사령관님. 들어가시죠.
-dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|죄수들과 대화를 나누시려면 영주님의 허락을 맡으셔야합니다.
-dlga_prison_guard_visit_prison_2:close_window|알겠네. 그렇게 하지.
-dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|좀 봐주시게, 나는 자네가 여기 대장인 줄 알았단 말이네.
-dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|헤헤헤. 보는 눈이 있으십니다. 하지만, 들여보내드릴 수는 없습니다.
-dlga_prison_guard_visit_prison_4:close_window|알겠네, 그럼 떠나야겠군.
-dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|근처에서 100 자원 포인트가 든 지갑을 주웠는데, 내 생각에 자네 것인 것 같군.
-dlga_prison_guard_visit_prison_5:close_window|아! 하루 종일 찾고 있었는데. 찾아주셔서 정말 기쁘군요, {나으리/아가씨}. 그럼, {나으리/아가씨}가 얼마나 정직한 지 알았으니, 들여보내도 별 문제 없을 것 같군요. 가시죠.
-dlga_prison_guard_talk:close_window|신경쓰지 말게나.
 dlga_start:castle_guard_players|시키실 일이라도? 사령관님?
 dlga_castle_guard_players:close_window|문을 열어라. 들어가야겠다.
 dlga_castle_guard_players:close_window.1|신경쓰지 말게나.
@@ -1048,7 +1032,9 @@ dlga_routed_allies_talk:close_window.1|아직 아니다, 병사.
 dlga_start:routed_allies_talk_troll|^^크르릉!^^
 dlga_routed_allies_talk_troll:close_window|[다시 합류하기를 권한다]
 dlga_routed_allies_talk_troll:close_window.1|[떠나기]
-dlga_start:party_encounter_friend|{s4} 무슨 일로 오셨습니까, {s24}?
+; dlga_start:party_encounter_distrusted_friend_1|{s14}
+; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend.1|{s4} 무슨 일로 오셨습니까, {s24}?
 dlga_party_reinforce:party_reinforce_end|우리는 아직 적들의 활동을 많이 보지 못했다. 나중에, 고마워.
 dlga_party_reinforce:party_reinforce_end.1|우린 더 이상 병사가 필요 없어, 고마워.
 dlga_party_reinforce:party_reinforce_check|부대를 강화하시겠습니까? 우리는 몇 명의 군인들을 더 받아들일 수 있지만, 우리는 우리 동족의 군대만을 받아들인다는 것을 명심하십시오.

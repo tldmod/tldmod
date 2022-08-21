@@ -200,7 +200,7 @@ mno_leave|Odísť.
 menu_simple_encounter|^^^^^{s2}^ Máš k dispozícií {reg22} jednotiek v boji proti {reg11}.^^Bitka sa odohráva v {s3}{s4}.^^Tvoje rozkazy ?
 mno_encounter_attack|{reg21?Zaútočiť na nich:Pripraviť sa čeliť im}.
 mno_encounter_order_attack|Prikázať svojím vojakom aby {reg21?zaútočili:čelili im} bez teba.
-mno_control_allies_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
+; mno_control_allies_menu|Use influence to command your allies in the field.
 mno_encounter_hide|Schovať sa pred nepriateľom
 mno_special_whip|Vrhnúť sa vpred naproti nim lámajúc {s4}.
 mno_encounter_attack_bearform|{reg21?Skoč do boja ako medveď:Premeň sa a čeľ im}.
@@ -235,7 +235,7 @@ mno_pre_join_leave|Nezapojiť sa.
 menu_join_battle|^^^Pomáhaš {s2} proti {s1}.^ Máš k dispozícií {reg22} vojakov proti {reg11} nepriateľom.^^Bitka sa odohráva v {s3}{s4}.
 mno_join_attack|Zaútočiť na nepriateľov.
 mno_join_order_attack|Prikázať svojím jednotkám zaútočiť spolu so spojencami, zatiaľ čo sa ty budeš držať vzadu.
-mno_control_allies_join_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
+; mno_control_allies_join_menu|Use influence to command your allies in the field.
 mno_join_attack_bearform|Vtrhni do bitky v medvedej podobe
 mno_join_leave|Odísť.
 mno_player_control_allies_join_menu|Prevziať nad nimi velenie a zaútočiť na nepriateľa
@@ -420,7 +420,7 @@ mno_cb_mordor8|Korzáry
 mno_rescue_mission|Prekĺznuť do skrýše černokňažníka pod závojom noci.
 mno_next_rescue_scene_door|Pokračovať vpred!
 mno_pick_troops1|Vybrať si spoločníkov pre misiu, {reg0} vybraných
-menu_pick_troops|Koho by si si vybral na tajnú misiu? Už si si vybral {reg0} spoločníkov. Môžeš si so sebou zobrať až 10 jednotiek.
+; menu_pick_troops|Whom would you take with you into the stealth mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg65?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg0} companions.
 mno_go_forward|Ukončiť výber spoločníkov a pokračovať.
 menu_burial_mound|Dorazil sa na pohrebnú mohylu {s1}a z {s2}u.   Pokorený v boji nepriateľmi z {s28}u. Je navŕšená zo zbraní jeho padlích sokov.
 mno_pay_respects|Pokľaknúť a vzdať rešpekt.

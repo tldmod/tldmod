@@ -38,7 +38,7 @@ qstr_A_peaceful_village_n|ウェストフォルドから遠くない、とある
 qstr_The_War_is_upon_Roha|戦争の魔の手がローハンを襲う！
 qstr_Minas_Tirith___The_W|ミナス・ティリス、白の都
 qstr_The_White_Tree_stand|王家の血筋が途絶えて以来、白の木は枯れたままである
-qstr_The_Shadow_grows_eve|東に広がる闇の力は、かつてないほど強くなっている
+; qstr_And_the_Shadow_grows|And the Shadow grows ever stronger in the East
 qstr_Minas_Morgul___City_|ミナス・モルグル、ナズグールの都
 qstr_Sauron_s_armies_marc|サウロンの軍勢が進軍を開始した！
 qstr_Adventurers_at_audie|冒険者の一行が、執政デネソールに謁見していた・・・
@@ -94,7 +94,7 @@ qstr_TLD_New_FormAI|TLD New FormAI
 qstr_Siege_AI:__|攻城戦AI:  
 qstr_Basic__better_perfor|標準(低負荷)
 qstr_Advanced|高度
-qstr_Campaign_diffculty:_|キャンペーン難易度:
+; qstr_Campaign_difficulty:|Campaign difficulty:  
 qstr_Hard|難しい
 qstr_Default|標準
 qstr_Easy|やさしい
@@ -109,11 +109,6 @@ qstr_Fallen_rider_damage_|落馬ダメージの報告:
 qstr_No_Messages|メッセージなし
 qstr_Player_damage_only|プレイヤーのみ
 qstr_All_Messages|すべてのメッセージ
-qstr_Troop_Identifier_in_|戦場における兵の識別(戦闘時にYを押すと切り替え):
-qstr_Disable|無効
-qstr_Troop_Names|兵のラベル
-qstr_Simple:_Faction_Colo|簡易: 所属勢力ごとに色分け
-qstr_Simple:_Black___Enem|簡易: 敵-黒色/味方-白色
 qstr_Preferred_Camera_Mod|優先するカメラモード:
 qstr_Default_Camera|標準
 qstr_Free_Mode_Custom_Cam|カスタムカメラのフリーモード
@@ -242,6 +237,8 @@ qstr_Strengthens_all_Hero|プレーヤーとすべてのコンパニオンを強
 qstr_+2_to_First_Aid__Par|応急手当てスキル+2(パーティスキル)
 qstr_lead_more_Uruks|より多くのウルクを指揮可能
 qstr_+1_to_Power_Throw|豪投+1
+; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
+; qstr__Scales_with_Charism|(Scales with Charisma. Human leaders only.)
 qstr_+1_to_Spotting|観測術+1
 qstr_+2_to_Weapon_Master|武器熟練スキル+2
 qstr_+2_to_First_Aid|応急手当てスキル+2
@@ -729,8 +726,8 @@ qstr_Switch_Back_to_3rd_P|三人称視点に切り替えてカメラモードを
 qstr_Fixed_Custom_Camera|固定カスタムカメラ
 qstr_Press_Ctrl_+_Left_/_|Ctrl+左矢印/Ctrl+右矢印キーで肩口の切り替え
 qstr_Press_Ctrl_+_Down_to|Ctrl+下矢印キーで中央
-qstr_Use_+/__to_zoom_in/o|+/-でズームイン、ズームアウト
-qstr_Use_Up/Down_arrow_ke|上下の矢印キーで傾きの調整
+; qstr_Press_Ctrl_and_+/__t|Press Ctrl and +/- to zoom in/out
+; qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
 qstr_Fixed_Camera___Right|固定カメラ - 右肩
 qstr_Fixed_Camera___Left_|固定カメラ - 左肩
 qstr_Fixed_Camera___Cente|固定カメラ - 中央
@@ -783,7 +780,7 @@ qstr_{s21}_{reg24?killed:|{s21} {s22}によって{reg24?殺され:意識を失�
 qstr_A_bear_has_been_summ|戦場に熊が召喚されました！
 qstr_In_The_Last_Days_of_|戦闘開始時、あなたの部下たちはやみくもに突撃する代わりに、陣を整えて待機します。 陣形命令は、'J'で横陣、 'K'でシールドウォール、'L'でくさび形、';'で方陣です。陣形を解除するには'U'を押してください。^あなたの兵が逃亡を始めたら、 'V'で檄を飛ばせます。 一回の戦闘で檄を飛ばせる回数は限られており、統率力スキルと魅力に依存します。
 qstr_You_can_also_order_y|また、兵の使用する武器の種類も指示できます。^^Oで武器の種類、Pで盾に関する指示を出します。
-qstr_The_Last_Days_of_the|The Last Days of the Third Ageでは、 背の低い種族(オークやドワーフなど)を扱う際のカメラの問題を解決するために、 カスタムカメラを導入しています。 ^^^Ctrl+Endを同時に押すと、 ふたつのカメラモードが切り替わります：固定ポジションとフリーモードです。^^固定ポジションはすべての種族での使用において最適な位置に固定されていますが、 調整はできません。CTRL+左矢印/右矢印キーで肩を切り替えます。^^フリーモードはキャラクターを画面の中央に位置させます。Ctrlを長押ししながらPage Up(もしくはPage Down)を押すことで、 カメラの高さ(傾き)を調整できます。^^フリーモードでは、 Ctrlを長押ししながらテンキーの+/-を押すことで、 カメラの距離(ズーム)を調整できます。^^操作の詳細はゲーム概要を見てください。
+; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^See Info Pages for how to control the different camera modes.
 qstr_Battlefield_is_too_s|戦場が狭すぎるため、高度な陣形AIは使用できません。
 qstr_You_have_a_clear_per|ただならぬ危険がまわりから迫って来るのを、はっきりと感じる！
 qstr_New_ent_reached_batt|新手のエントが戦闘に加わりました・・・
@@ -834,9 +831,12 @@ qstr_You_are_now_hidden.|隠密状態です。
 qstr_You_move_out_of_hidi|隠密状態を解除しました。
 qstr_The_guards_have_spot|衛兵が死体を発見しました！
 qstr_Alarm_Level_is_now_a|警戒レベルが1になりました！
+; qstr_You_have_been_to_slo|You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close.
 qstr_Alarm_Level_is_now_at|警戒レベルは0です！
 qstr_The_guards_have_spott|衛兵に発見されました！
 qstr_Alarm_Level_is_now_at_|警戒レベルが2になりました！
+; qstr_Enemy_reinforcements_|Enemy reinforcements arrived.
+; qstr_Venture_deeper_into_|Venture deeper into the forest and find a way onward.
 qstr_The_sorcerer_has_fle|妖術師は逃げてしまいました！
 qstr_Report_this_ill_news|この残念な結果を、すぐにお方さまに報告しなければなりません。
 qstr_The_sorcerer_is_flee|妖術師が逃げています！はやく倒してください！
@@ -934,13 +934,18 @@ qstr_You_drank_the_Ent_Wa|エント水を飲みました・・・
 qstr_You_used_the_Orc_Bre|オークビールを飲みました。
 qstr_You_and_your_compani|あなたとコンパニオンたちは一口づつミルヴォールを飲みました。 元気がみなぎり、力が湧いてきました。
 qstr_You_give_a_few_leave|あなたは治療師に数枚のアセラスの葉を渡しました。
+; qstr_Not_enough_party_spa|Not enough party space.
+qstr_elites|精鋭
+qstr_regulars|一般の民
+qstr_recruits|志願兵
+; qstr_wild|wild
+; qstr_goblins|goblins
 qstr_lordless|根なし草
 qstr_orc_stragglers|放浪するオーク
-qstr_wild_goblins|野生のゴブリン
-qstr_recruits|志願兵
-qstr_regulars|一般の民
-qstr_elites|精鋭
 qstr_You_camp_and_beat_th|あなたは野営を張り、地底の太鼓を打ち鳴らしました。 力強い太鼓の音に魅せられた{s1}の{s2}がやってきました。
+; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
+; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
 qstr_Fangorn_search:_fail|ファンゴルンの森探索:失敗。
 qstr_^^^A_great_victory!^|^^^大いなる勝利だ！^^^なるほど、これがファンゴルンの伝説のからくりか・・・
 qstr_^^^Defeated...^^^Sca|^^^敗れた・・・^^^ファンゴルンの森に散ってしまった・・・ひとりだ・・・
@@ -972,7 +977,8 @@ qstr__{s17}.|、 {s17}。
 qstr_A_group_of_{s1}_is_{|{s1}がこちらに{s10}来ました。
 qstr_You_are_attacking_a_|{s1}を攻撃します。
 qstr_The_battle_against_t|{s1}との戦いは続きます。
-qstr_There_are_{reg39}_al|この戦いには{reg39}名の指揮官が参戦しています。 影響力ポイントを{reg40}消費することで、 彼らの兵を指揮する事ができます。
+; qstr_There_are_{reg39}_al|There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence.
+; qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
 qstr_Having_a_small_party|少数部隊ならではの強みというのはあるのです・・・ あなたと部下たちは敵勢から姿を隠すと、 念のためにそのまま数時間待機しました。
 qstr_Your_ability_to_mast|自然環境の利用に長けるあなたの能力をもって、 安全に身を隠す事のできる場所を確保しました。 (あなたのワイルドクラフトのスキルでは、 {reg1}名の兵とともに身を隠す事ができます)
 qstr_{reg4}_will_be_lost.|兵{reg4}名を失います。
@@ -1019,7 +1025,7 @@ qstr_As_a_last_defensive_|あなたは城内の大広間へ撤退し、 最後�
 qstr_You_ve_been_driven_a|城壁は敵の手に落ちました。 寄せ手は砦の敷地内へなだれ込んでいます。 もしここで寄せ手を食い止められれば、 まだ戦いの流れを変える事ができるかも知れません。
 qstr_You_ve_breached_the_|城壁を突破されたにもかかわらず、 守備兵は敷地内でしぶとく抵抗を続けています！ 本丸を落とすまえに、 この連中を一掃しなければなりません。
 qstr_The_town_centre_is_y|拠点の中心部を制圧しましたが、 まだ城内へ退却した守備兵が残っています。 勝利を完全なものとするためには、 最後の砦も落とさなければなりません。
-qstr_The_remaining_defend|守備側の残存兵は持ち場を放棄して逃げています！
+qstr_The_remaining_defende|残った守備兵は、 最後の抵抗をするために 城内へと退却しました。 彼らの後を追い、 息の根を止めなくてはなりません。
 qstr_However_since_you_ar|しかしながら、 あなたは{s9}に忠誠を誓った臣下ではないため、 あなたをこの{reg8?町:城}の領主として 承認する事はないでしょう。
 qstr_The_enemy_has_been_f|敵は撤退を余儀なくされました。 攻撃は止みましたが、 まだ包囲は解かれていません。
 qstr_The_assasins_beat_yo|暗殺者はあなたを倒し、 息絶えていくあなたを放置しました。
@@ -1077,7 +1083,10 @@ qstr_You_defeated_{reg5}_e|あなたは{reg5}名の敵を倒しました。
 qstr_You_failed_to_defeat|あなたは敵をひとりも倒せませんでした。
 qstr_The_sorcerer_slain_y|妖術師は殺され、あなたとあなたの部下たちは速やかに怪我の応急処置を済ませると、 すべるように夜の闇へと消えていきました。 背後ではおぞましい金切声がそこかしこに上がり、 あなたは暗闇の中にあなたたちの姿を探す、 たくさんの血走った視線を感じました。 間もなく怒りは失望に変わって追跡の気配は消え、 いつもの闇の森の深い静寂にとってかわられました。 あなたは脱出に成功しました。
 qstr_The_sorcerer_slipped|妖術師はあなたの捕獲の手の間からするりと身をかわし、 這いまわる虫のようにみずからの住処の闇の中へと消えていきました。 任務失敗の失望感で心は重いながらも、 あなたとあなたの部下たちは速やかに怪我の応急処置を済ませ、 夜の闇の中を撤収していきました。 背後からはからかいの金切り声が聞こえ、 闇をつらぬくような、 たくさんの血走った視線を感じました。 間もなく笑い声とののしりは消え、 いつもの闇の森の深い静寂にとってかわられました。 あなたは脱出しました。
-qstr_You_approach_a_heavi|あなたは森の一角の、厳重に警戒された場所へ近づいていきました・・・
+; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest... ^^ You have to decide whether you venture forward on your own, or take some troops with you.
+; qstr_You_have_a_good_chan|You have a good chance of avoiding the guards and slipping through unnoticed.
+; qstr_You_may_have_a_chanc|You may have a chance of avoiding the guards.
+; qstr_You_will_probably_ha|You will probably have to fight the guards.
 qstr_You_wait_for_darknes|あなたはあたりが夜の闇におおわれるのを待っています・・・
 qstr_You_are_quickly_disc|あなたはすぐに発見されてしまいました。
 qstr_You_advance_stealthi|あなたは身を隠しつつ、森のなかへと進んでいきました。
@@ -1112,7 +1121,7 @@ qstr_{reg65}_Moria_and/or|{reg65}名のモリア、グンダバドの兵を殺�
 qstr_{reg65}_{s3}_troops_|{s3}の兵を{reg65}名殺した。 (カウンターは1時間ごとに更新されます)
 qstr_{reg66}_{s5}_troops_|{s5}の兵を{reg66}名殺した。 (カウンターは1時間ごとに更新されます)
 qstr_{reg67}_{s7}_{s8}_tr|{s7}の{s8}を{reg67}名殺した。 (カウンターは1時間ごとに更新されます)
-qstr_{reg68}_{s10}_killed|{s10}の兵を{reg68}名殺した。 (カウンターは1時間ごとに更新されます)
+; qstr_{s8}_in_{s9}_asked_y|{s8} in {s9} asked you to slay {reg67} {s10}.^ {reg68} {s11} killed. (Counter refreshes every hour)
 qstr_{s1}_is_scouted.|{s1}の偵察を完了しました。
 qstr_{s2}_was_defeated!|{s2}が敗れました！
 qstr_The_Age_of_Men_has_f|人類の時代は、ついに終わりを告げました。^これよりふたつの塔が残った戦力を結集し、 ^中つ国の覇権を争います！
@@ -1123,7 +1132,7 @@ qstr_In_a_desperate_attem|敵に対してなりふり構わぬ必死の対抗を
 qstr_Guardians_of_{s6}|{s6}防衛軍
 qstr_Guard_Legion_of_{s6}|{s6}防衛軍団
 qstr_Scouts_report_that_{|偵察隊より、 {s6}が{s7}周辺に、 本拠地防衛のための大規模な軍勢を 集結させているとの報告が入りました。
-qstr_The_forces_of_{s2}_e|{s2}が{s15}に遠征軍野営を築きました！
+; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|{s2}の軍勢が、彼らの本拠地を守るために退却しています！
 qstr_{playername}_s_Reser|{playername}の予備兵
 qstr_Gondor_has_called_fo|ゴンドールが助けを求めています！
@@ -1654,6 +1663,10 @@ qstr_Then_let_us_go._Stay|では出発しよう。離されないようにして
 qstr_There_will_be_blood_|間違いなく血しぶきはあがるだろう。楽しみたいのなら、 離されないようにしてほしい。
 qstr_Goodbye_friends.|では、 ごきげんよう、 わが友よ。
 qstr_See_you_later_if_you|生きていれば、また会おう。
+; qstr_I_don_t_need_your_he|I don't need your help any longer. Go home.
+; qstr_I_don_t_have_any_nee|I don't have any need for you. Get lost.
+; qstr_We_will_return_to_ou|We will return to our previous task. Goodbye.
+; qstr_Lads_we_re_going_hom|Lads, we're going home!
 qstr__^Oh_and_take_back_t|^おっと、 よそ者は引き取ってくれ。
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?彼ら:あの}勇敢な{reg28?兵士たち:兵}は、 我らが領土を守る 大きな戦力になってくれるだろう。{s32} {s23}^^[{s14}のリソースポイントを{reg14}獲得しました]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?彼ら:あの}活きのいい{reg28?兵士たち:兵}は、 大きな戦力になってくれるだろう。{s32} {s23}^^[{s14}のリソースポイントを{reg14}獲得しました]

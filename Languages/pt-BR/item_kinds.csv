@@ -499,7 +499,7 @@ itm_mirkwood_helm_a|Elmo de Arqueiro Elfo Silvestre
 itm_mirkwood_helm_b|Elmo da Floresta Verde
 itm_mirkwood_helm_c|Elmo Pesado da Floresta Verde
 itm_mirkwood_helm_d|Elmo Real da Floresta Verde
-itm_mirkwood_boots|Botas de Elfo Silvestre
+; itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_harad_tunic|Túnica de Harad
 itm_harad_padded|Armadura Acolchoada de Harondor
 itm_harad_hauberk|Cota de Malha de Harondor
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Elmo de Guarda Águia
 itm_lion_helm|Elmo de Guarda Leão
 itm_harad_pantherhelm|Touca de Guarda Pantera
 itm_harad_khopesh|Khopesh de Harad
-itm_black_snake_sword|Cimitarra Pesada de Harad
-itm_harad_heavy_sword|Espada Pesada de Harad
+; itm_black_snake_sword|Harad Cobra Sword
+; itm_harad_heavy_sword|Harad Dragon Sword
 itm_horandor_a|Cimitarra de Harad
 itm_skirmisher_sword|Espada de Escaramuçador de Harad
-itm_harad_sabre|Sabre de Harad
+; itm_harad_sabre|Harad Salamander Sword
 itm_harad_mace|Maça da Distante Harad 
 itm_far_harad_2h_mace|Maça de Duas Mãos da Distante Harad
 itm_harad_dagger|Faca de Harad
@@ -546,7 +546,7 @@ itm_harad_shield_c|Broquel de Harondor
 itm_harad_yellow_shield|Escudo de Harad
 itm_desert_boots|Botas de Deserto
 ; itm_harad_leather_greaves|Harad Leather Greaves
-; itm_harad_scale_greaves|Harad Scale Greaves
+itm_harad_scale_greaves|Perneiras de Harad
 ; itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_khand_inf_helm_a|Elmo de Khand
 itm_khand_inf_helm_b|Elmo de Khand
@@ -642,6 +642,7 @@ itm_umb_helm_a|Elmo de Casco Corsário
 itm_umb_helm_b|Elmo Alto Corsário
 itm_umb_helm_c|Elmo de Milícia Corsário
 itm_umb_helm_d|Elmo de Cavaleiro Corsário
+; itm_umb_helm_reward|Ancient Numenorean Karma
 itm_corsair_trident|Tridente da Fúria do Mar
 itm_corsair_boots|Botas de Corsário
 itm_umb_shield_a|Escudo Corsário
