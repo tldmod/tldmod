@@ -4820,7 +4820,7 @@ if wb_compile_switch==1:
         (overlay_set_val, "$tld_options_overlay_3", "$advanced_siege_ai"),
         (val_sub, ":y_pos", Screen_Text_Height),
         
-    (create_text_overlay, reg1, "@Campaign diffculty:  ", tf_right_align, tf_double_space),
+    (create_text_overlay, reg1, "@Campaign difficulty:  ", tf_right_align, tf_double_space),
         (position_set_y, pos0, ":y_pos"),
         (overlay_set_position, reg1, pos0),
 
