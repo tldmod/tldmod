@@ -6228,7 +6228,7 @@ mission_templates = [ # not used in game
 	(5,0,0,[(store_mission_timer_a, ":time"),(ge, ":time", 25)],[ 
 	  (try_begin),
         (ge, "$meta_alarm", 10),
-        (display_message, "@You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close."),
+        (display_message, "@You have been too slow: The alarm has spread, and the sorcerer made his escape before you could get close."),
         (finish_mission, 5),
         (fail_quest, "qst_mirkwood_sorcerer"),
       (else_try),
@@ -6351,7 +6351,7 @@ mission_templates = [ # not used in game
         (set_visitor, 21, "$guard_troop6", 0),(set_visitor, 22, "$guard_troop7", 0),(set_visitor, 23, "$guard_troop8", 0),(set_visitor, 24, "$guard_troop9", 0),(set_visitor, 25, "$guard_troop10", 0),
     (else_try),
         (ge, "$meta_alarm", 8),
-        (display_message, "@You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close."),
+        (display_message, "@You have been too slow: The alarm has spread, and the sorcerer made his escape before you could get close."),
         (finish_mission, 7),
         (fail_quest, "qst_mirkwood_sorcerer"),
     (try_end),
