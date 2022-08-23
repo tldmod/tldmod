@@ -14831,9 +14831,10 @@ scripts = [
       ] or []) + [
 
 		(eq, ":agent_class", grc_archers),
-		(agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
+
 		(try_begin),
 			(agent_is_defender, ":agent_no"), # defending archers go to their respective points
+            (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
 			(try_begin),
 				(agent_slot_eq, ":agent_no", slot_agent_target_entry_point, 0),
 				(agent_get_team, ":team", ":agent_no"), #0, 2, 4
@@ -14891,9 +14892,10 @@ scripts = [
 				#(try_end),
 			(try_end),
 		(else_try), # when archer is an attacker
+            (neg|agent_is_defender, ":agent_no"),
 			(agent_get_ammo,":ammo",":agent_no"),
 			(try_begin),
-				(this_or_next|lt,":ammo",2),               
+				(lt,":ammo",2),               
 				(agent_clear_scripted_mode, ":agent_no"),
 				(agent_ai_set_always_attack_in_melee, ":agent_no", 1),
                 ] + (is_a_wb_script==1 and [
