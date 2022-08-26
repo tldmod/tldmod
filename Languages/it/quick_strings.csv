@@ -38,7 +38,7 @@ qstr_A_peaceful_village_n|Un pacifico villaggio non lontano da Ovestfalda..
 qstr_The_War_is_upon_Roha|La guerra è su Rohan !
 qstr_Minas_Tirith___The_W|Minas Tirith - La Città Bianca
 qstr_The_White_Tree_stand|Il Bianco Albero giace morto da quando la linea dei Re si è interrotta
-; qstr_And_the_Shadow_grows|And the Shadow grows ever stronger in the East
+qstr_And_the_Shadow_grows|E l'Oscura Ombra cresce sempre più forte, ad Est.
 qstr_Minas_Morgul___City_|Minas Morgul - La Città dei Nazgul
 qstr_Sauron_s_armies_marc|Gli eserciti di Sauron marciano in guerra !
 qstr_Adventurers_at_audie|Avventurieri in udienza pubblica con il Sovrintendente Denethor..
@@ -94,7 +94,7 @@ qstr_TLD_New_FormAI|Nuova FormIA TLD
 qstr_Siege_AI:__|IA Assedio:
 qstr_Basic__better_perfor|Base (migliori prestazioni)
 qstr_Advanced|Avanzato
-; qstr_Campaign_difficulty:|Campaign difficulty:  
+qstr_Campaign_difficulty:|Difficoltà della Campagna:
 qstr_Hard|Difficile
 qstr_Default|Predefinita
 qstr_Easy|Facile
@@ -237,8 +237,8 @@ qstr_Strengthens_all_Hero|Rafforza tutti gli Eroi
 qstr_+2_to_First_Aid__Par|+2 in Primo Soccorso (Compagnia)
 qstr_lead_more_Uruks|Comanda più Uruk
 qstr_+1_to_Power_Throw|+1 in Potenza di Lancio
-; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
-; qstr__Scales_with_Charism|(Scales with Charisma. Human leaders only.)
+qstr_Recruit_Black_Numeno|Recluta Numenoreani Neri da vari luoghi
+qstr__Scales_with_Charism|(Bilancia con il Carisma. Solo per comandanti umani.)
 qstr_+1_to_Spotting|+1 in Avvistamento
 qstr_+2_to_Weapon_Master|+2 in Maestria nelle armi
 qstr_+2_to_First_Aid|+2 in Primo soccorso
@@ -551,7 +551,7 @@ qstr_{s24}:_Your_archers_|{s24}: I tuoi arcieri si sentono meglio !
 qstr_{s24}:_Your_cavalry_|{s24}: I tuoi cavalieri si sentono meglio !
 qstr_Ah_what_a_coincidenc|Ah, che strana coincidenza, imbattermi proprio in te {playername} ! Tu potresti anche non conoscermi, ma io conosco te. Sono sulla strada per raggiungere {s4}, ma arrivo ora da {s3} ed è là che ho sentito parlare di te. {s3} conta sulle tue capacità in questi tempi pericolosi, e se avessi mai pensato d'intraprendere azioni lontane dal tuo dovere, dovresti riconsiderare i tuoi intenti e concentrarti sul sostenere {s2} con tutte le tue forze.
 qstr_Who_are_you?|Chi sei ?
-qstr_A_friend_of_{s3}_and|Un amico di {s3} e del popolo di {s2}. Ora fa presto ! Mordor ha oscuri disegni e il Potere Oscuro sta impiegando tutta la sua volontà per radunare tutto ciò che è malvagio. Il tempo sta per scadere per ciò che di buono rimane in questo mondo, se non facciamo valere ogni nostra azione per opporci !
+qstr_A_friend_of_{s3}_and|Un amico di {s3} e del popolo di {s2}. Ora fa presto ! Mordor ha oscuri disegni e il Potere Oscuro sta impiegando appieno la sua volontà per radunare tutto ciò che è malvagio. Il tempo sta per scadere per ciò che di buono rimane in questo mondo, se non facciamo valere ogni nostra azione per opporci !
 qstr_What_should_I_do?|Cosa dovrei fare ?
 qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parla con {reg3?lei:lui} . Buona Fortuna !
 qstr_Good_to_see_the_Shad|È un sollievo vedere che l'Ombra non è ancora riuscita a piegarti, {playername}.
@@ -726,8 +726,8 @@ qstr_Switch_Back_to_3rd_P|Passare alla vista in 3za persona per scorrere modalit
 qstr_Fixed_Custom_Camera|Telecamera Personalizzata
 qstr_Press_Ctrl_+_Left_/_|Premi CTRL + FRECCIA SX / CTRL + FRECCIA DX per cambiare spalla
 qstr_Press_Ctrl_+_Down_to|Premi Ctrl + Giù per centrare
-; qstr_Press_Ctrl_and_+/__t|Press Ctrl and +/- to zoom in/out
-; qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
+qstr_Press_Ctrl_and_+/__t|Premi Ctrl e +/- per zoomare avanti/indietro
+qstr_Press_Ctrl_and_Up/Do|Premi Ctrl e Freccia in Alto/Freccia in Basso per inclinare la visuali in Alto/Basso
 qstr_Fixed_Camera___Right|Inquadratura Fissa - Spalla Destra
 qstr_Fixed_Camera___Left_|Inquadratura Fissa - Spalla Sinistra
 qstr_Fixed_Camera___Cente|Inquadratura Fissa - Centrata
@@ -780,7 +780,7 @@ qstr_{s21}_{reg24?killed:|{s21} {reg24?ucciso:tramortito} da {s22}.
 qstr_A_bear_has_been_summ|Un orso è stato chiamato in battaglia !
 qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, le tue truppe si disporranno da sole tenendo la posizione all'inizio di ogni battaglia, invece di partire ciecamente alla carica.^^Per ordinare alle tue truppe di assumere una formazione, premi 'J' per Ranghi, 'K' per Muro di Scudi, 'L' per Cuneo e ';' per Quadrato. Per rompere le righe premi 'U'. ^Se le tue truppe sono in rotta, puoi premere 'V' per incintarli. Hai un numero limitato di incitamenti ad ogni battaglia, e il loro l'ammontare dipende dal livello del tuo comando e del tuo carisma.
 qstr_You_can_also_order_y|Puoi anche ordinare alle tue truppe di selezionare il tipo di arma che intendi far usare loro.^^ Premi O per scegliere fra i vari tipi d'arma. Premi P per scegliere fra i vari tipi di scudo.
-; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^See Info Pages for how to control the different camera modes.
+qstr_The_Last_Days_of_the|The Last Days of the Third Age ha implementato una telecamera personalizzata in modo da superare le limitazioni delle visuali tradizionali, prestando attenzione alle razze di statura più bassa (es. Orchi e Nani).^^Consulta le pagine informative per conoscere le diverse modalità d'inquadratura.
 qstr_Battlefield_is_too_s|Il campo di battaglia è troppo piccolo per formazioni IA complesse.
 qstr_You_have_a_clear_per|Hai la chiara percezione di un grande pericolo imminente, lo senti intorno a te !
 qstr_New_ent_reached_batt|Un nuovo ent ha raggiunto il campo di battaglia...
@@ -831,12 +831,12 @@ qstr_You_are_now_hidden.|Sei nascosto ora.
 qstr_You_move_out_of_hidi|Esci dal tuo nascondiglio
 qstr_The_guards_have_spot|Le guardie hanno scoperto un cadavere !
 qstr_Alarm_Level_is_now_a|Il livello di allarme è ora a 1 !
-; qstr_You_have_been_to_slo|You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close.
+qstr_You_have_been_too_sl|Non hai mostrato la rapidità necessaria: L'allarme è risuonato e lo stregone è fuggito prima che potessi avvicinarti.
 qstr_Alarm_Level_is_now_at|Il livello di allarme è ora a 0 !
 qstr_The_guards_have_spott|Le guardie ti hanno scoperto !
 qstr_Alarm_Level_is_now_at_|Il livello di allarme è ora a 2 !
-; qstr_Enemy_reinforcements_|Enemy reinforcements arrived.
-; qstr_Venture_deeper_into_|Venture deeper into the forest and find a way onward.
+qstr_Enemy_reinforcements_|Sono giunti rinforzi nemici.
+qstr_Venture_deeper_into_|Avventurati più in profondità nella foresta e trova una via per procedere.
 qstr_The_sorcerer_has_fle|Lo stregone è fuggito !
 qstr_Report_this_ill_news|Riferisci al più presto queste cattive notizie alla Signora.
 qstr_The_sorcerer_is_flee|Lo stregone sta scappando ! Uccidilo !
@@ -934,18 +934,18 @@ qstr_You_drank_the_Ent_Wa|Hai bevuto l'acqua Ent
 qstr_You_used_the_Orc_Bre|Hai usato la Birra Orchesca.
 qstr_You_and_your_compani|Tu e i tuoi compagni bevete un sorso di Miruvor. Senti che le tue forze si rigenerano.
 qstr_You_give_a_few_leave|Dai qualche foglia di Athelas ai tuoi guaritori.
-; qstr_Not_enough_party_spa|Not enough party space.
+qstr_Not_enough_party_spa|Non c'è abbastanza spazio nella compagnia.
 qstr_elites|élite
 qstr_regulars|regolari
 qstr_recruits|reclute
-; qstr_wild|wild
-; qstr_goblins|goblins
+qstr_wild|selvaggio
+qstr_goblins|goblins
 qstr_lordless|senza signore
 qstr_orc_stragglers|orchi disertori
 qstr_You_camp_and_beat_th|Ti accampi e fai risuonare i Tamburi degli Abissi. Il potente rimbombo attrae un gruppo di {s1} {s2}.
-; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
-; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
-; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
+qstr_You_camp_and_beat_the|Ti accampi e fai risuonare i Tamburi degli Abissi. Il potente rimbombo attrae un gruppo di {s1} {s2}.
+qstr_You_camp_and_beat_the_|Ti accampi e fai risuonare i Tamburi degli Abissi. Il fievole rimbombo attrae un gruppo di {s1} {s2}.
+qstr_You_camp_and_try_to_|Ti accampi e tenti di far risuonarei Tamburi degli Abissi, tuttavia nessuno risponde alla tua misera chiamata.
 qstr_Fangorn_search:_fail|Ricerca Fangorn: fallita.
 qstr_^^^A_great_victory!^|^^Vittoria !^^^Così era questo il significato di tutte le leggende su Fangorn...
 qstr_^^^Defeated...^^^Sca|^^^Sconfitto...^^^Disperso nella Foresta Fangorn...Da solo...
@@ -977,8 +977,8 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Un gruppo di {s1} sta {s10} verso di te.
 qstr_You_are_attacking_a_|Stai attaccando un gruppo di {s1}.
 qstr_The_battle_against_t|La battaglia contro il gruppo di {s1} continua.
-; qstr_There_are_{reg39}_al|There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence.
-; qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
+qstr_There_are_{reg39}_al|Ci sono {reg39} comandanti alleati in questa battaglia. Puoi controllare loro e le loro truppo in cambio di {reg40}/{reg41}  Punti Influenza.
+qstr_There_are_{reg39}_all|Ci sono {reg39} comandanti alleati in questa battaglia. Non disponi di una sufficiente influenza per assumere il comando.
 qstr_Having_a_small_party|Una piccola compagnia ha i suoi vantaggi... Tu e i tuoi uomini potete restare nascosti al nemico per qualche ora in modo da non essere avvistati.
 qstr_Your_ability_to_mast|La tua capacità di sopravvivere in ambienti difficili ti permette di trovare un posto sicuro dove nasconderti. (La tua abilità in Mimetismo ti permette di nasconderti con {reg1} soldati)
 qstr_{reg4}_will_be_lost.|{reg4} tuoi soldati sono stati sacrificati.
@@ -1025,7 +1025,7 @@ qstr_As_a_last_defensive_|Come ultimo sforzo difensivo, vi ritirate nella sala p
 qstr_You_ve_been_driven_a|Sei stato allontanato dalle mura. Adesso gli attaccanti si stanno aggirando per le strade. Se riesci a sconfiggerli, potresti forse svoltare le sorti della battaglia e salvare il giorno
 qstr_You_ve_breached_the_|Hai oltrepassato le mura della città, ma i difensori tenacemente continuano a resistere per le strade ! Dovete sconfiggere loro prima di poter attaccare il torrione nel cuore della città.
 qstr_The_town_centre_is_y|Il centro dell'insediamento è tuo, ma i difensori rimanenti si sono ritirati al castello. Dovrà cadere prima che tu completi la tua vittoria
-qstr_The_remaining_defende|I difensori rimanenti si sono ritirati nel castello come ultima difesa. Devi entrare e distruggere ogni resistenza rimanente.
+qstr_The_remaining_defende|I difensori restanti si sono ritirati nel castello come ultima difesa. Devi entrare e distruggere ogni resistenza rimanente.
 qstr_However_since_you_ar|Comunque, dal momento che non hai prestato giuramento {vassallo/seguace} di {s9}, non c'è alcuna possibilità che ti riconoscerà come {Signore/Signora} di quest{reg8?a città:o castello}.
 qstr_The_enemy_has_been_f|Il nemico è stato forzato alla ritirata. L'assalto è finito, ma l'assedio continua.
 qstr_The_assasins_beat_yo|Gli assassini ti hanno ucciso a ti hanno lasciato morente
@@ -1083,10 +1083,10 @@ qstr_You_defeated_{reg5}_e|Hai sconfitto {reg5} nemici.
 qstr_You_failed_to_defeat|Hai fallito nello sconfiggere il nemico.
 qstr_The_sorcerer_slain_y|Lo stregone è morto, tu e i tuoi compagni curate frettolosamente le vostre ferite e vi dileguate nella notte. Folli schiamazzi gridano dietro le vostre spalle e percepisci occhi ardenti che ti cercano nell'oscurità. Presto l'ira si trasforma in delusione e i suoni dell'inseguimento si attutiscono, sostituiti dal solito pesante silenzio di Bosco Atro. La fuga è riuscita.
 qstr_The_sorcerer_slipped|Lo stregone ti sfugge fra le dita e scivola nelle oscurità dei suoi domini. Col cuore pesante a causa del vostro fallimento, tu e i tuoi compagni curate le vostre ferite e vi ritirate nella notte. Alle tue spalle grida beffarde ti raggiungono mentre occhi ardenti penetrano nell'ombra. Poi le risate e gli insulti sembrano misericordiosamente attenuarsi, il loro posto è preso dall'abituale pesante silenzio della foresta di Bosco Atro. Hai avuto modo di fuggire.
-; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest... ^^ You have to decide whether you venture forward on your own, or take some troops with you.
-; qstr_You_have_a_good_chan|You have a good chance of avoiding the guards and slipping through unnoticed.
-; qstr_You_may_have_a_chanc|You may have a chance of avoiding the guards.
-; qstr_You_will_probably_ha|You will probably have to fight the guards.
+qstr_You_approach_a_heavi|Ti avvicini ad una regione della foresta fortemente sorvegliata... ^^ Devi decidere se avventurarti in avanti senza scorta o portare delle truppe con te.
+qstr_You_have_a_good_chan|Hai buone probabilità di eludere le guardie e inflitrarti senza che si accorgano di te.
+qstr_You_may_have_a_chanc|Potresti avere la possibilità di eludere le guardie.
+qstr_You_will_probably_ha|Probabilmente dovrai scontrarti con le guardie.
 qstr_You_wait_for_darknes|Attendi la notte per passare inosservato...
 qstr_You_are_quickly_disc|Sei stato velocemente scoperto dal nemico.
 qstr_You_advance_stealthi|Avanzi di nascosto lontano nella foresta.
@@ -1121,7 +1121,7 @@ qstr_{reg65}_Moria_and/or|{reg65} guerrieri di Moria e/o di Gundabad uccisi. (La
 qstr_{reg65}_{s3}_troops_|{reg65} {s3} nemici uccisi. (La conta si aggiorna ogni ora)
 qstr_{reg66}_{s5}_troops_|{reg66} {s5} nemici uccisi. (La conta si aggiorna ogni ora)
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} nemici uccisi. (La conta si aggiorna ogni ora)
-; qstr_{s8}_in_{s9}_asked_y|{s8} in {s9} asked you to slay {reg67} {s10}.^ {reg68} {s11} killed. (Counter refreshes every hour)
+qstr_{s8}_in_{s9}_asked_y|{s8} presso {s9} ti ha chiesto di uccidere {reg67} {s10}.^ {reg68} {s11} uccisi. (Il conteggio si aggiorna ogni ora).
 qstr_{s1}_is_scouted.|{s1} è stato esplorato.
 qstr_{s2}_was_defeated!|{s2} è stato sconfitto !
 qstr_The_Age_of_Men_has_f|L'era degli Uomini è finalmente cominciata. Ora le due torri accolgono i loro ospiti e gli alleati rimanenti per decidere chi sarà l'unico sovrano della Terra di Mezzo !
@@ -1132,7 +1132,7 @@ qstr_In_a_desperate_attem|In un disperato tentativo di difendersi contro i suoi 
 qstr_Guardians_of_{s6}|Guardiani di {s6}
 qstr_Guard_Legion_of_{s6}|Legione guardiana di {s6}
 qstr_Scouts_report_that_{|Gli esploratori riportano che {s6} si è riunito in una grande armata in prossimità di {s7}, in ultimo disperato tentativo di difendere la capitale.
-; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
+qstr_The_forces_of_{s2}_e|Le forze di {s2} hanno stabilito un avamposto presso {s15} !
 qstr_The_hosts_of_{s2}_ma|I proprietari terrieri di {s2} rientrano per difendere le loro case !
 qstr_{playername}_s_Reser|Riserve di {playername}
 qstr_Gondor_has_called_fo|Gondor ha chiesto aiuto !
@@ -1663,10 +1663,10 @@ qstr_Then_let_us_go._Stay|Andiamo allora. Resta nelle vicinanze. Avrò presto bi
 qstr_There_will_be_blood_|Scorrerà del sangue, questo è certo. Restami appresso, o ti perderai.
 qstr_Goodbye_friends.|Addio, amici.
 qstr_See_you_later_if_you|Ci vediamo più tardi, se non ti farai uccidere.
-; qstr_I_don_t_need_your_he|I don't need your help any longer. Go home.
-; qstr_I_don_t_have_any_nee|I don't have any need for you. Get lost.
-; qstr_We_will_return_to_ou|We will return to our previous task. Goodbye.
-; qstr_Lads_we_re_going_hom|Lads, we're going home!
+qstr_I_don_t_need_your_he|Non ho più bisogno del tuo aiuto. Torna a casa.
+qstr_I_don_t_have_any_nee|Non ho più bisogno di te. Vattene.
+qstr_We_will_return_to_ou|Torneremo ai nostri incarichi precedenti. Addio.
+qstr_Lads_we_re_going_hom|Ragazzi, torniamo a casa !
 qstr__^Oh_and_take_back_t|Oh, e prenditi indietro quelli che non sono dei nostri.
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Questi:Questo} coraggios{reg28?i soldati:o soldato} ci aiuteranno sicuramente a difendere le nostre terre.{s32} {s23}^^[Hai guadagnato {reg14} Punti Risorsa di {s14}]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Queste:Questa} util{reg28?i truppe:e truppa} ci aiuteranno a creare più devastazione.{s32}^{s23}^^[Hai guadagnato {reg14} Punti Risorsa di {s14}]

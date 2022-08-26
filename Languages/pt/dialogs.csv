@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|Ainda não, soldado.
 dlga_start:routed_allies_talk_troll|^^ROSNA!^^
 dlga_routed_allies_talk_troll:close_window|[Tê-los em você de novo]
 dlga_routed_allies_talk_troll:close_window.1|[Sair]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 ; dlga_start:party_encounter_friend.1|{s4} What brings you here, {s24}?
 dlga_party_reinforce:party_reinforce_end|Nós não vimos atividade inimiga muito ainda . Talvez mais tarde , obrigado.

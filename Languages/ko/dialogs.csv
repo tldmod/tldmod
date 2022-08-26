@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|아직 아니다, 병사.
 dlga_start:routed_allies_talk_troll|^^크르릉!^^
 dlga_routed_allies_talk_troll:close_window|[다시 합류하기를 권한다]
 dlga_routed_allies_talk_troll:close_window.1|[떠나기]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|{s4} 무슨 일로 오셨습니까, {s24}?
 dlga_party_reinforce:party_reinforce_end|우리는 아직 적들의 활동을 많이 보지 못했다. 나중에, 고마워.

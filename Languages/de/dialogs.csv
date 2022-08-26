@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|Noch nicht, Soldat.
 dlga_start:routed_allies_talk_troll|^^KNURR!^^
 dlga_routed_allies_talk_troll:close_window|[Lass sie sich dir wieder anschließen]
 dlga_routed_allies_talk_troll:close_window.1|[Verlassen]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Was führt Euch her, {s24}?
 dlga_party_reinforce:party_reinforce_end|Wir haben bis jetzt noch nicht viele Regungen des Feindes bemerkt. Vielleicht später, danke.

@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|Поки що ні, вояче.
 dlga_start:routed_allies_talk_troll|^^ГАРЧАННЯ!^^
 dlga_routed_allies_talk_troll:close_window|[Попросити їх приєднатися до вас знову]
 dlga_routed_allies_talk_troll:close_window.1|[Піти]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Що тебе сюди привело, {s24}?
 dlga_party_reinforce:party_reinforce_end|Ми ще не бачили великої активності ворога. Може бути, трохи пізніше. Дякую.

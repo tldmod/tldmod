@@ -831,7 +831,7 @@ qstr_You_are_now_hidden.|你在隐蔽中。
 qstr_You_move_out_of_hidi|你离开了掩体。
 qstr_The_guards_have_spot|警卫发现了一具尸体！
 qstr_Alarm_Level_is_now_a|警报级别：1！
-; qstr_You_have_been_to_slo|You have been to slow: The alarm has spread, and the sorcerer made his escape before you could get close.
+; qstr_You_have_been_too_sl|You have been too slow: The alarm has spread, and the sorcerer made his escape before you could get close.
 qstr_Alarm_Level_is_now_at|警报级别：0！
 qstr_The_guards_have_spott|警卫看到了你！
 qstr_Alarm_Level_is_now_at_|警报级别：2！
@@ -943,8 +943,8 @@ qstr_recruits|新兵
 qstr_lordless|无主
 qstr_orc_stragglers|游荡的半兽人
 qstr_You_camp_and_beat_th|你扎营并击响了深渊之鼓。这股强大的声音吸引到了一支{s1}{s2}。
-; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
-; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
+qstr_You_camp_and_beat_the|你扎营并击响了深渊之鼓。这股有力的声音吸引到了一支{s1}{s2}。
+qstr_You_camp_and_beat_the_|你扎营并击响了深渊之鼓。这股微弱的声音吸引到了一支{s1}{s2}。
 ; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
 qstr_Fangorn_search:_fail|搜索法贡森林：失败。
 qstr_^^^A_great_victory!^|^^^一场伟大的胜利！ ^^^这是法贡森林的又一个神话...
@@ -1663,10 +1663,10 @@ qstr_Then_let_us_go._Stay|那我们走吧。跟紧点，我需要尽快得到你
 qstr_There_will_be_blood_|这肯定要见点血了。跟紧点，不然你就走丢了。
 qstr_Goodbye_friends.|再见朋友
 qstr_See_you_later_if_you|如果你没有被杀的话，我们还会再见面的。
-; qstr_I_don_t_need_your_he|I don't need your help any longer. Go home.
-; qstr_I_don_t_have_any_nee|I don't have any need for you. Get lost.
-; qstr_We_will_return_to_ou|We will return to our previous task. Goodbye.
-; qstr_Lads_we_re_going_hom|Lads, we're going home!
+qstr_I_don_t_need_your_he|我不再需要你们的援助了，回家去吧。
+qstr_I_don_t_have_any_nee|我不再需要你们了，滚吧。
+qstr_We_will_return_to_ou|那我们回去执行之前的任务了。再见。
+qstr_Lads_we_re_going_hom|小伙子们，咱回家！
 qstr__^Oh_and_take_back_t|哦，带走这些不是我们的子民的人
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?这群:这名}勇敢的{reg28?士兵:士兵}定能极大地增强我方领土的防御。{s32}{s23}^^[获得{s14}的{reg14}资源点]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?这群:这名}有用的{reg28?士兵们:士兵}定能带去更多的毁灭。{s32}^{s23}^^[获得{s14}的{reg14}资源点]

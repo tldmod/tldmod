@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|Пока нет, воин.
 dlga_start:routed_allies_talk_troll|^^ГРРРР!^^
 dlga_routed_allies_talk_troll:close_window|[Попросить их присоединиться к вам снова]
 dlga_routed_allies_talk_troll:close_window.1|[Уйти]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Как тебя сюда занесло, {s24}?
 dlga_party_reinforce:party_reinforce_end|Враг пока бездействует - по крайней мере, мы ничего не заметили. Может быть, чуть позже. Спасибо.

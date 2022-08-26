@@ -200,7 +200,7 @@ mno_leave|离开。
 menu_simple_encounter|^^^^^{s2}^你的 {reg22} 名士兵与 {reg11} 名敌军于 {s3}{s4} 展开对决。请下达命令！
 mno_encounter_attack|{reg21?攻击:准备迎战}.
 mno_encounter_order_attack|你坐镇指挥命令你的部下 {reg21?攻击:迎战}
-; mno_control_allies_menu|Use influence to command your allies in the field.
+mno_control_allies_menu|消耗影响力，获取在战场上指挥友军的权力。
 mno_encounter_hide|躲避敌人…
 mno_special_whip|向着{s4}冲锋，并碾碎他们。
 mno_encounter_attack_bearform|{reg21?变形为熊进入战场:换皮，准备撕碎敌人}。
@@ -235,7 +235,7 @@ mno_pre_join_leave|不卷入纷争。
 menu_join_battle|^^^你决定帮助{s2}对抗{s1}。^ 你将有{reg22}名士兵参加战斗对抗{reg11}名敌人。^^这次战斗在{s3}{s4}展开。
 mno_join_attack|攻入敌阵
 mno_join_order_attack|坐镇指挥，让你的部队帮助盟友进攻。
-; mno_control_allies_join_menu|Use influence to command your allies in the field.
+mno_control_allies_join_menu|消耗影响力，获取在战场上指挥友军的权力。
 mno_join_attack_bearform|测试：变形为熊进入战场。
 mno_join_leave|撤退
 mno_player_control_allies_join_menu|指挥他们向敌人冲锋
@@ -386,7 +386,7 @@ mno_defend_refugees|注意袭击者……
 mno_attack_refugees|攻击难民队…
 mno_leave_refugees|暂时离开他们……
 mno_evil_war_tut_continue|继续...
-menu_guardian_party_quest|  = "{s8}送信说艾辛格已经到了最后关头，并且已经准备好最后一战。他希望你能够加入最后的战斗对抗艾辛格的敌人。你需要至少带着{reg13}名士兵加入大军，如果你没有足够的士兵，你需要抓紧时间训练出来。"
+menu_guardian_party_quest||{s8}送信说艾辛格已经到了最后关头，并且已经准备好最后一战。他希望你能够加入最后的战斗对抗艾辛格的敌人。你需要至少带着{reg13}名士兵加入大军，如果你没有足够的士兵，你需要抓紧时间训练出来。
 mno_guardian_party_reject|让信使回去报告，说你不能加入他。
 mno_guardian_party_send_word|让信使回去报告，告诉他你很快就会过去。
 menu_alternate_training_fight|你的对手将会是{reg5}。准备好了吗？
@@ -420,7 +420,7 @@ mno_cb_mordor8|海盗
 mno_rescue_mission|借着夜色的掩护，你悄悄潜入巫师的藏身处。
 mno_next_rescue_scene_door|继续向前！
 mno_pick_troops1|选择一起执行任务的同伴，已选择了{reg0}人
-; menu_pick_troops|Whom would you take with you into the stealth mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg65?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg0} companions.
+menu_pick_troops|你要选择谁和你一起执行这次潜行任务？^只有身手最敏捷的部下和同伴能够加入行动。^作为队伍中荒野求生技能最高的人，{reg65?{s1}建议你最多:你觉得能}带{reg11}名手下。^^目前你选择了{reg0}名。
 mno_go_forward|结束同伴选择，然后继续。
 menu_burial_mound|你来到曾隶属于{s2}的{s1}的埋尸处。他在和{s28}的战斗中战败。这里是由他斩杀敌人后留下的破损武器堆积而成的。
 mno_pay_respects|跪下并献上你的敬意。

@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|Jeszcze nie, żołnierzu.
 dlga_start:routed_allies_talk_troll|Wyruszymy gdy będziesz gotow{reg5?a:y}.
 dlga_routed_allies_talk_troll:close_window|[pozwól im dołączyć ponownie]
 dlga_routed_allies_talk_troll:close_window.1|[Odejdź]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Co cie tu sprowadza, {s24}?
 dlga_party_reinforce:party_reinforce_end|Nie zaobserwowaliśmy aktywności wroga. Może później coś ię ruszy, dzięki.

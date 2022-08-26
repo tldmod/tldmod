@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|Nog niet, Soldaat.
 dlga_start:routed_allies_talk_troll|^^GROM!^^
 ; dlga_routed_allies_talk_troll:close_window|[Have them join you again]
 dlga_routed_allies_talk_troll:close_window.1|[leave]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 ; dlga_start:party_encounter_friend.1|{s4} What brings you here, {s24}?
 ; dlga_party_reinforce:party_reinforce_end|We haven't seen much enemy activity yet. Maybe later, thanks.

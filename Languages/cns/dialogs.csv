@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|好吧，他是你的了。
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|对他的处置我有另外的想法。
 dlga_lord_buy_prisoner_accept:lord_pretalk|很好！我会立即派遣手下把他押入监狱。这必将帮助我们的事业。
 dlga_lord_buy_prisoner_deny:lord_pretalk|真遗憾，他本应该发挥更大的价值的，{playername}。
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
+dlga_tld_intro_1:lord_pretalk|大战指南：^^（1）派系只会在自身势力值足够高时攻城。^（2）大多数据点都是可以被攻打的，只要所属派系足够虚弱。通常，首都会是最后被攻打的。^（3）如果派系失去首都，那么就会彻底战败。^（4）势力会因战斗胜利或占有特定据点而获得势力值。^（5）反之，势力会因战斗失败或失去据点而失去势力值。^（6）一些任务或事件会影响派系势力值。^（7）报告菜单界面浏览所有派系的势力值。^（8）查看记录信息页面获取更多TLD游玩指南。
 dlga_lord_start:lord_pretalk|啊，欢迎你，{s24}。^你可能已经知道{s12}。你的职责是在战争中协助我们，{playername}。当你用行动赢得我的信任之后[{reg1}级]，我将允许你使用那边的宝箱来存放你的私人物品。
 dlga_lord_start:lord_talk|什么事？
 dlga_lord_pretalk:lord_talk|还有其他的事情么？
@@ -328,7 +328,7 @@ dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|你为孤山做出了巨大�
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|谢谢你，{s3}。
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|现在你会怎么做？
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|我们不会对谋杀我们亲族的凶手置之不理。我们必将令此等加害我族者灭亡。从刚达巴山之巅到卡扎督姆之底，我们要让迷雾山脉被半兽人的血染为黑色。
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}，我希望帮助{s4}人们来为巴林远征队复仇。\ndlga_dwarf_lord_book_give_i:lord_pretalk  = "祝你好运。"
+dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}，我希望帮助{s4}人们来为巴林远征队复仇。\ndlga_dwarf_lord_book_give_i:lord_pretalk|祝你好运。
 dlga_dwarf_lord_book_give_i:lord_pretalk|那就祝你好运了
 dlga_dwarf_lord_avenge:close_window|很好，{playername}。带上都灵一族的祝福给我们的敌人带去死亡吧。让他们知道我们的人民曾经历的痛苦和恐惧
 dlga_lord_talk:find_lost_spears_permission|大人，我希望能进入孤山寻找布拉多辛王丢失的长枪。
@@ -1032,9 +1032,8 @@ dlga_routed_allies_talk:close_window.1|士兵，不是现在。
 dlga_start:routed_allies_talk_troll|^^咆哮！^^
 dlga_routed_allies_talk_troll:close_window|[让他们再次加入你的队伍]
 dlga_routed_allies_talk_troll:close_window.1|[离开]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
-; dlga_start:party_encounter_friend|We are following your orders, {s24}.
-; dlga_start:party_encounter_friend.1|{s4} What brings you here, {s24}?
+dlga_start:party_encounter_friend|我们正听从您的指挥，{s24}。
+dlga_start:party_encounter_friend.1|{s4}什么风把你吹来了，{s24}？
 dlga_party_reinforce:party_reinforce_end|我们目前并没发现太多敌军活动。也许过段时间吧，谢谢。
 dlga_party_reinforce:party_reinforce_end.1|我们不需要更多的士兵，谢谢。
 dlga_party_reinforce:party_reinforce_check|支援我们的部队？士兵多一点总没坏处，不过别忘了，我们只接受自己人…

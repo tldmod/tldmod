@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|Ještě ne, vojáku
 dlga_start:routed_allies_talk_troll|Vrčí.
 dlga_routed_allies_talk_troll:close_window|[Nechte je znovu se k vám přidat]
 dlga_routed_allies_talk_troll:close_window.1|[Odejít.]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|Co tě sem přivádí?
 dlga_party_reinforce:party_reinforce_end|Zatím jsme žádné nepřátelé nespatřili. Možná později, děkuji.

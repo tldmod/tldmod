@@ -1,4 +1,4 @@
-dlga_start:mutiny_pretalk_1|Hé, {playername}. Je voulais vous dire... ^Les gars sont mécontents ! Nous voulons plus d'amusement et moins de marches forcées.
+dlga_start:mutiny_pretalk_1|Hé, {playername}, faut qu'on vous le dise... ^Les gars sont mécontents ! On veut plus d'amusement et moins de marches forcées.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Retourne dans le rang, vermine ! Nous sommes en guerre et c'est moi qui commande !
 dlga_mutiny_pretalk_2:close_window|Comme vous voulez, commandant. Comme vous voulez...
 dlga_start:mutiny_talk_1|Hé, commandant. Vous savez quoi.... Les hommes ne sont pas contents, pas contents du tout. ^Pas assez de chair humaine, pas assez d'amusement. ^Les hommes disent que vous n'êtes pas assez bon, commandant !
@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|D'accord, il est à vous.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|J'ai bien peur d'avoir d'autres projets pour lui.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Excellent ! Je vais envoyer mes hommes le conduire en prison avec toute la célérité requise. Cela aidera sûrement notre cause.
 dlga_lord_buy_prisoner_deny:lord_pretalk|C'est dommage, il nous aurait été fort utile, {playername}.
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
+dlga_tld_intro_1:lord_pretalk|Tutoriel de la Guerre :^^- Les factions ne lanceront des sièges que quand elles seront assez fortes.^- La plupart des  localités ne peuvent être assiégées que si leur faction est suffisamment affaiblie. En général, les capitales sont assiégées en dernier.^- Si une faction perd sa capitale, elle sera défaite.^- Les factions gagnent de la force en gagnant des batailles et en gardant le contrôle de certains lieux clé.^- Les factions perdent de la force en subissant des défaites ou en perdant le contrôle de ses localités.^- Certaines quêtes ou certains évènements peuvent affecter la force d'une faction.^- Vous pouvez consulter les rapports de force des factions dans le menu Rapport.^- Voir les pages d'info pour plus de guides sur TLD.
 dlga_lord_start:lord_pretalk|Ah, bienvenue {s24}.^Vous devez déjà savoir que {s12}. Votre devoir est de nous aider dans notre combat, {playername}. Quand vous aurez prouvé que vous êtes digne de confiance [niveau {reg1}], je vous donnerai accès à ce coffre là derrière pour stocker vos affaires personnelles.
 dlga_lord_start:lord_talk|Qu'est-ce que c'est ?
 dlga_lord_pretalk:lord_talk|Autre chose ?
@@ -1032,8 +1032,7 @@ dlga_routed_allies_talk:close_window.1|Pas encore, soldat.
 dlga_start:routed_allies_talk_troll|^^GROWL !^^
 dlga_routed_allies_talk_troll:close_window|[Ils vous rejoignent à nouveau]
 dlga_routed_allies_talk_troll:close_window.1|[Sortir]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
-; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend|Nous sommes à vos ordres, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Qu'est-ce qui vous amène ici, {s24} ?
 dlga_party_reinforce:party_reinforce_end|Nous n'avons pas encore vu beaucoup d'activité ennemie. Peut-être plus tard, merci.
 dlga_party_reinforce:party_reinforce_end.1|Nous n'avons pas besoin de plus de soldats, merci.

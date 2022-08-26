@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|Ainda não, soldado.
 dlga_start:routed_allies_talk_troll|^ ^RAUURR!^ ^
 dlga_routed_allies_talk_troll:close_window|[Eles se juntam a você novamente]
 dlga_routed_allies_talk_troll:close_window.1|[Sair]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|{s4} O que te traz aqui, {s24}?
 dlga_party_reinforce:party_reinforce_end|Ainda não vimos muita atividade inimiga. Talvez mais tarde, obrigado.

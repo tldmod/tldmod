@@ -499,7 +499,7 @@ itm_mirkwood_helm_a|Elmo da Arciere degli Elfi Silvani
 itm_mirkwood_helm_b|Elmo di Boscoverde
 itm_mirkwood_helm_c|Elmo Pesante di Boscoverde
 itm_mirkwood_helm_d|Elmo Reale di Boscoverde
-; itm_woodelf_leather_boots|Woodelf Leather Boots
+itm_woodelf_leather_boots|Stivali in Pelle degli Elfi Silvani
 itm_harad_tunic|Tunica Harad
 itm_harad_padded|Gambesone dell'Harondor
 itm_harad_hauberk|Usbergo dell'Harondor
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Elmo da Guardia dell'Aquila
 itm_lion_helm|Elmo da Guardia del Leone
 itm_harad_pantherhelm|Calotta della Guardia della Pantera
 itm_harad_khopesh|Khopesh Haradrim
-; itm_black_snake_sword|Harad Cobra Sword
-; itm_harad_heavy_sword|Harad Dragon Sword
+itm_black_snake_sword|Spada del Cobra di Harad
+itm_harad_heavy_sword|Spada del Drago di Harad
 itm_horandor_a|Scimitarra Haradrim
 itm_skirmisher_sword|Spada da Schermagliatore Haradrim
-; itm_harad_sabre|Harad Salamander Sword
+itm_harad_sabre|Spada della Salamandra di Harad
 itm_harad_mace|Mazza del Lontano Harad
 itm_far_harad_2h_mace|Mazza a Due Mani del Lontano Harad
 itm_harad_dagger|Coltello Haradrim
@@ -642,7 +642,7 @@ itm_umb_helm_a|Elmo a Conchiglia da Corsaro
 itm_umb_helm_b|Alto Elmo Corsaro
 itm_umb_helm_c|Elmo da Miliziano Corsaro 
 itm_umb_helm_d|Elmo da Predone Corsaro
-; itm_umb_helm_reward|Ancient Numenorean Karma
+itm_umb_helm_reward|Antico Karma Numenoreano
 itm_corsair_trident|Tridente della Furia Marina
 itm_corsair_boots|Stivali da Corsaro
 itm_umb_shield_a|Scudo Corsaro

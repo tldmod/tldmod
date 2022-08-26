@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|還不行，士兵。
 dlga_start:routed_allies_talk_troll|^^低吼！^^
 dlga_routed_allies_talk_troll:close_window|[讓他們再次加入你]
 dlga_routed_allies_talk_troll:close_window.1|[離開]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|{s4}是什麼把你帶到這裡的，{s24}？
 dlga_party_reinforce:party_reinforce_end|我們目前沒有發現太多敵軍活動。之後再說吧，謝謝。

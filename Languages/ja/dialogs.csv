@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|兵士よ、ちょっと待ってくれ�
 dlga_start:routed_allies_talk_troll|^^咆哮！^^
 dlga_routed_allies_talk_troll:close_window|[彼らを部隊に編入する]
 dlga_routed_allies_talk_troll:close_window.1|[立ち去る]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|{s4} {s24}殿、何かご用かな?
 dlga_party_reinforce:party_reinforce_end|我らはまだ、ろくに敵勢に遭遇していない。 またの機会にしよう。

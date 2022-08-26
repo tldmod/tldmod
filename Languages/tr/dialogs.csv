@@ -1032,7 +1032,6 @@ dlga_routed_allies_talk:close_window.1|Daha degil, asker.
 dlga_start:routed_allies_talk_troll|^^HIRRR!^^
 dlga_routed_allies_talk_troll:close_window|[Onları tekrar katmak]
 dlga_routed_allies_talk_troll:close_window.1|[Ayrıl]
-; dlga_start:party_encounter_distrusted_friend_1|{s14}
 ; dlga_start:party_encounter_friend|We are following your orders, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Seni buraya getiren nedir, {s24}?
 dlga_party_reinforce:party_reinforce_end|Çok fazla düşman hareketi görmedik henüz. Belki daha sonra, teşekkürler.
