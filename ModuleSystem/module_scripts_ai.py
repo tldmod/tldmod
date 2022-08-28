@@ -18,13 +18,18 @@ ai_scripts = [
 
 # script_recalculate_ais
 ("recalculate_ais",
-	[(try_begin),
+	[(store_script_param_1, ":theater"),
+    (try_begin),
 	  (ge,"$tld_war_began",1),  # faction AI can change only if War started, GA
 	  (call_script, "script_init_ai_calculation"),
 	  (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),   # recalculate AI for active non-player factions
 		(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (this_or_next|eq, ":theater", 2), #2= all theaters
+        (faction_slot_eq, ":faction_no", slot_faction_active_theater, ":theater"),
 		(neg|faction_slot_eq, ":faction_no",  slot_faction_marshall, "trp_player"),
 		(call_script, "script_decide_faction_ai", ":faction_no"),
+        # (str_store_faction_name, s15, ":faction_no"),
+        # (display_message, "@recalc {s15}"),
 	  (try_end),
 	  (call_script, "script_decide_kingdom_party_ais"),               # recalculate AI for hero-led parties
 	(try_end),
@@ -1978,7 +1983,8 @@ ai_scripts = [
               (call_script, "script_add_notification_menu", "mnu_notification_center_under_siege", ":ai_object", ":troop_no"),
             (try_end),
             (call_script, "script_village_set_state", ":ai_object", svs_under_siege),
-            (assign, "$g_recalculate_ais", 1),
+            (call_script, "script_find_theater", ":party_no"),
+            (assign, "$g_recalculate_ais", reg0),
           (try_end),
         (else_try),
           (eq, ":ai_state", spai_recruiting_troops),

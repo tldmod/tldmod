@@ -6122,7 +6122,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 # [anyone,"lord_give_order_call_to_arms",[],
 # "All right then. I will send messengers and tell everyone to come here.", "lord_pretalk",[
      # (faction_set_slot, "$players_kingdom", slot_faction_ai_state, sfai_gathering_army),
-     # (assign, "$g_recalculate_ais", 1)]],
+     # (assign, "$g_recalculate_ais", 2)]],
 
 # [anyone|plyr,"lord_talk",
    # [ (eq, "$g_talk_troop_faction", "$players_kingdom"),
@@ -6146,7 +6146,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
        # (call_script, "script_party_set_ai_state", ":party_no", spai_undefined, -1),
        # (party_set_slot, ":party_no", slot_party_commander_party, -1),
      # (try_end),
-     # (assign, "$g_recalculate_ais", 1)]],
+     # (assign, "$g_recalculate_ais", 2)]],
 
 [anyone|plyr,"lord_talk", [(ge, "$g_talk_troop_faction_relation", 0)], "I wish to ask you something.", "lord_talk_ask_something",[]],
 [anyone,"lord_talk_ask_something", [], "Aye? What is it?", "lord_talk_ask_something_2",[]],

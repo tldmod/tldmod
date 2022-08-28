@@ -2709,8 +2709,9 @@ scripts = [
 					(try_begin),
 						(store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
 						(faction_slot_eq, ":cur_troop_faction", slot_faction_marshall, ":cur_troop_id"),
+                        (faction_get_slot, ":theater", ":cur_troop_faction", slot_faction_active_theater),
 						#Marshall is defeated, refresh ai.
-						(assign, "$g_recalculate_ais", 1),
+						(assign, "$g_recalculate_ais", ":theater"),
 					(try_end),
 				(try_end),
 				(try_begin),
@@ -2779,7 +2780,8 @@ scripts = [
 					(this_or_next|eq, ":cur_party_type", spt_town),
 					(eq, ":cur_party_type", spt_castle),
 
-					(assign, "$g_recalculate_ais", 1),
+                    (party_get_slot, ":theater", ":cur_party_type", slot_center_theater),
+					(assign, "$g_recalculate_ais", ":theater"),
 
 					(store_faction_of_party, ":winner_faction", ":root_winner_party"),
 					(store_faction_of_party, ":defeated_faction", ":root_defeated_party"),
@@ -2915,7 +2917,8 @@ scripts = [
               (lt, ":random_num", 5), #15% is a bit higher than 10% (which is open area escape probability)
               (assign, ":trigger_result", 1), #End battle!
               
-              (assign, "$g_recalculate_ais", 1), #added new
+              (call_script, "script_find_theater", ":root_defender_party"),
+              (assign, "$g_recalculate_ais", reg0), #added new
             (try_end),
          (try_end),
 	   (try_end),
@@ -9503,7 +9506,8 @@ scripts = [
       (try_for_range, ":cur_faction", kingdoms_begin, kingdoms_end),
         (call_script, "script_faction_recalculate_strength", ":cur_faction"),
       (try_end),
-      (assign, "$g_recalculate_ais", 1),
+      (party_get_slot, ":theater", ":center_no", slot_center_theater),
+      (assign, "$g_recalculate_ais", ":theater"),
 ]),
 
 # script_give_center_to_faction_aux
@@ -15907,7 +15911,7 @@ scripts = [
       (try_end),
       (call_script, "script_store_average_center_value_per_faction"),
       (call_script, "script_update_all_notes"),
-      (assign, "$g_recalculate_ais", 1),
+      (assign, "$g_recalculate_ais", 2),
 	  (set_show_messages,1),
 ]),
 
@@ -17887,7 +17891,7 @@ scripts = [
           (party_slot_eq, ":party_no", slot_party_commander_party, "p_main_party"),
           (call_script, "script_party_set_ai_state", ":party_no", spai_undefined, -1),
           (party_set_slot, ":party_no", slot_party_commander_party, -1),
-          (assign, "$g_recalculate_ais", 1),
+          (assign, "$g_recalculate_ais", 2),
         (try_end),
 ]),
 

@@ -476,13 +476,24 @@ simple_triggers = [
   
   # (18) MAIN AI STARTING POINT
   # Decide faction ai by default every 36 hours
-  (36,[(assign, "$g_recalculate_ais", 1)]),
+  (36,[
+  (assign, "$g_recalculate_ais", 2),
+  #(display_message, "@recalculate all trigger"),
+  ]),
   
   # (19) Decide faction ai whenever flag is set
-  (0,[(eq, "$g_recalculate_ais", 1),(ge,"$tld_war_began",1),
-      (assign, "$g_recalculate_ais", 0),
-      (call_script, "script_recalculate_ais"),
+  (0,[(gt, "$g_recalculate_ais", 0),(ge,"$tld_war_began",1),
+        # (try_begin),
+            # (eq, "$g_recalculate_ais", 2),
+            # (display_message, "@recalculate all theaters"),
+        # (else_try),
+            # (call_script, "script_theater_name_to_s15", "$g_recalculate_ais"),
+            # (display_message, "@recalculate theater {s15}"),
+        # (try_end),
+      (call_script, "script_recalculate_ais", "$g_recalculate_ais"), #g_recalculate_ais also stores the theater to be recalculated
+      (assign, "$g_recalculate_ais", 0),     
   ]),
+  
   # (20) Count faction armies
   (24,[ (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         (call_script, "script_faction_recalculate_strength", ":faction_no"),
@@ -2619,7 +2630,7 @@ simple_triggers = [
           (call_script, "script_update_active_theaters"),
           
           # rethink strategies
-          (assign, "$g_recalculate_ais", 1),
+          (assign, "$g_recalculate_ais", 2),
           
           (assign, ":faction_removed", 1),
           
