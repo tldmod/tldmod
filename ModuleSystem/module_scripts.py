@@ -2544,11 +2544,14 @@ scripts = [
 			#           (call_script, "script_party_count_fit_for_battle", "p_collective_enemy"),
 			(call_script, "script_party_calculate_strength", "p_collective_enemy", 0),
 			(assign, ":attacker_strength", reg0),
+            (store_add, ":total_strength", ":defender_strength", ":attacker_strength"),
+            (val_div, ":total_strength", 40),
+            (val_max, ":total_strength", 50),
 			(store_div, ":defender_strength", ":defender_strength", 20),
-			(val_min, ":defender_strength", 50),
+			(val_min, ":defender_strength", ":total_strength"), #InVain: Make max invested strength per round scale with overall battle scale.
 			(val_max, ":defender_strength", 1),
 			(store_div, ":attacker_strength", ":attacker_strength", 20),
-			(val_min, ":attacker_strength", 50),
+			(val_min, ":attacker_strength", ":total_strength"), #InVain: Make max invested strength per round scale with overall battle scale.
 			(val_add, ":attacker_strength", 1),
          	(try_begin),
             	#For sieges increase attacker casualties and reduce defender casualties.
@@ -2558,8 +2561,9 @@ scripts = [
             	#(val_div, ":defender_strength", 100),
       
             	#(val_mul, ":attacker_strength", 2), #it was 0.5 in old version, now it is only 1 / 1.23
-            	#(val_div, ":attacker_strength", 3),
+            	#(val_div, ":attacker_strength", 3),               
 				(val_div, ":attacker_strength", 2),
+                (val_min, ":attacker_strength", 40),  
           	(try_end),
 
 	        (call_script, "script_party_count_fit_for_battle", "p_collective_ally", 0),
