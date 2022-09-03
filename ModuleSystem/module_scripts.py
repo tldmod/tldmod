@@ -1721,12 +1721,12 @@ scripts = [
 		(is_between, ":faction_id", kingdoms_begin, kingdoms_end),
 		(troop_set_slot, ":troop_id", slot_troop_original_faction, ":faction_id"),
 		(troop_set_slot, ":troop_id", slot_troop_occupation, slto_kingdom_hero),
-		(try_begin),
-			(faction_slot_eq, ":faction_id", slot_faction_leader, ":troop_id"),
-			(troop_set_slot, ":troop_id", slot_troop_wealth, 200000),
-		(else_try),
-			(troop_set_slot, ":troop_id", slot_troop_wealth, 60000),
-		(try_end),
+		# (try_begin), #No wealth in TLD, slot is used for different stuff
+			# (faction_slot_eq, ":faction_id", slot_faction_leader, ":troop_id"),
+			# (troop_set_slot, ":troop_id", slot_troop_wealth, 200000),
+		# (else_try),
+			# (troop_set_slot, ":troop_id", slot_troop_wealth, 60000),
+		# (try_end),
 	(try_end),
 	# Add town garrisons
 	(try_for_range, ":center_no", centers_begin, centers_end),
@@ -2651,6 +2651,8 @@ scripts = [
 					(troop_is_hero, ":cur_troop_id"),
 					(call_script, "script_remove_troop_from_prison", ":cur_troop_id"),
 					(troop_set_slot, ":cur_troop_id", slot_troop_leaded_party, -1),
+                    (store_current_day, ":day_of_defeat"),
+                    (troop_set_slot, ":cur_troop_id", slot_troop_respawn_timer, ":day_of_defeat"),
 					(store_random_in_range, ":rand", 0, 100),
 					(str_store_troop_name_link, s1, ":cur_troop_id"),
 					(str_store_faction_name_link, s2, ":faction_receiving_prisoners"),
@@ -23521,6 +23523,7 @@ command_cursor_scripts = [
     (try_begin),
         (eq, "$cheat_mode", 1),
         (neq, "$g_fast_mode", 1),
+        (eq, 0,1), # never
 
         (assign, reg1, ":lord"),
         (str_store_troop_name, s1, ":lord"),
@@ -23586,6 +23589,7 @@ command_cursor_scripts = [
     (try_begin),
         (eq, "$cheat_mode", 1),
         (neq, "$g_fast_mode", 1),
+        (eq, 0,1), # never
 
         (assign, reg1, ":lord"),
         (str_store_troop_name, s1, ":lord"),
@@ -23651,6 +23655,7 @@ command_cursor_scripts = [
     (try_begin),
         (eq, "$cheat_mode", 1),
         (neq, "$g_fast_mode", 1),
+        (eq, 0,1), # never
 
         (assign, reg1, ":lord"),
         (str_store_troop_name, s1, ":lord"),

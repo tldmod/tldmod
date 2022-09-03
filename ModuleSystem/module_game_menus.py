@@ -5977,6 +5977,8 @@ game_menus = [
             
             (troop_set_slot, ":stack_troop", slot_troop_leaded_party, -1),
             (store_troop_faction, ":defeated_faction", ":stack_troop"),
+            (store_current_day, ":day_of_defeat"),
+            (troop_set_slot, ":stack_troop", slot_troop_respawn_timer, ":day_of_defeat"),
 
             (try_begin),
               (call_script, "script_cf_check_hero_can_escape_from_player", ":stack_troop"),

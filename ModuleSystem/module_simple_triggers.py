@@ -845,6 +845,15 @@ simple_triggers = [
         (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
         (neg|troop_slot_ge, ":troop_no", slot_troop_leaded_party, 1),
         (neg|troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death),
+
+        (store_current_day, ":cur_day"), #set a minimal respawn time
+        (troop_get_slot, ":day_of_defeat", ":troop_no", slot_troop_respawn_timer),
+        (val_sub, ":cur_day", ":day_of_defeat"),
+        (ge, ":cur_day", 2),
+        
+        (store_random_in_range, ":chance", 0, 7), #chance increases with waiting time, one week maximum
+        (le, ":chance", ":cur_day"),
+        
         
         (store_troop_faction, ":cur_faction", ":troop_no"),
         (try_begin),

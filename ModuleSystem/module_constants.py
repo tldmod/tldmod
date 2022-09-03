@@ -702,7 +702,8 @@ slot_troop_renown              = 7
 slot_troop_prisoner_of_party   = 8  # important for heroes only
 slot_troop_wounded             = 9  # TLD, for tracking wounded in current battle 
 slot_troop_leaded_party        = 10 # important for kingdom heroes only
-slot_troop_wealth              = 11 # important for kingdom heroes only
+slot_troop_wealth              = 11 # important for kingdom heroes only (in TLD, only used for Zigurphel)
+slot_troop_respawn_timer       = 11 # TLD, for tracking hero respawn
 slot_troop_cur_center          = 12 # important for royal family members only (non-kingdom heroes)
 
 slot_troop_banner_scene_prop   = 13 # important for kingdom heroes and player only
