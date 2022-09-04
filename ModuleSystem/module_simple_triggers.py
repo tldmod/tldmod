@@ -740,7 +740,8 @@ simple_triggers = [
           (try_begin), #:random_up_limit is the chance to decide for attack
             (store_random_in_range, ":rand", 0, 100),
             (val_add, ":random_up_limit", 20), #kham - lets start sieges earlier
-            (lt, ":rand", ":random_up_limit"),
+            (this_or_next|lt, ":rand", ":random_up_limit"),
+            (faction_slot_ge, ":besieger_faction", slot_faction_scripted_until, ":cur_hours"), #always attack if in scripted mode
             (gt, ":siege_begin_hours", 24),#initial preparation
             (assign, ":launch_attack", 1),
           (else_try), #if not, :random_down_limit is the chance to give up siege

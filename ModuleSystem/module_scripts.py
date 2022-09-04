@@ -2715,6 +2715,7 @@ scripts = [
 					(try_begin),
 						(store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
 						(faction_slot_eq, ":cur_troop_faction", slot_faction_marshall, ":cur_troop_id"),
+                        (faction_set_slot,  ":cur_troop_faction", slot_faction_scripted_until, 0),
                         (faction_get_slot, ":theater", ":cur_troop_faction", slot_faction_active_theater),
 						#Marshall is defeated, refresh ai.
 						(assign, "$g_recalculate_ais", ":theater"),
@@ -2786,11 +2787,18 @@ scripts = [
 					(this_or_next|eq, ":cur_party_type", spt_town),
 					(eq, ":cur_party_type", spt_castle),
 
-                    (party_get_slot, ":theater", ":cur_party_type", slot_center_theater),
-					(assign, "$g_recalculate_ais", ":theater"),
-
 					(store_faction_of_party, ":winner_faction", ":root_winner_party"),
 					(store_faction_of_party, ":defeated_faction", ":root_defeated_party"),
+                    (faction_set_slot, ":winner_faction", slot_faction_scripted_until, 0),
+
+                    (faction_get_slot, ":faction_theater", ":winner_faction", slot_faction_active_theater),
+					(assign, "$g_recalculate_ais", ":faction_theater"),
+                    
+                    (try_begin),
+                        (party_get_slot, ":center_theater", ":root_defeated_party", slot_center_theater),
+                        (neq, ":center_theater", ":faction_theater"),
+                        (assign, "$g_recalculate_ais", ":center_theater"),
+                    (try_end),
 
 					(str_store_party_name, s1, ":root_defeated_party"),
 					(str_store_faction_name, s2, ":winner_faction"),

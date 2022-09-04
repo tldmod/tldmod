@@ -5536,6 +5536,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      #faction AI
      (faction_set_slot, "$g_talk_troop_faction", slot_faction_ai_state, sfai_attacking_center),
      (faction_set_slot, "$g_talk_troop_faction", slot_faction_ai_object, ":siege_target"),
+     (store_current_hours, ":cur_hours"),
+     (val_add, ":cur_hours", 72), #72 hours no AI recalc
+     (faction_set_slot, "$g_talk_troop_faction", slot_faction_scripted_until, ":cur_hours"),
      
      #marshall party AI
      (troop_get_slot, ":marshall_party", "$g_talk_troop", slot_troop_leaded_party),

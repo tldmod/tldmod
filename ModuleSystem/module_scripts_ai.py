@@ -22,8 +22,10 @@ ai_scripts = [
     (try_begin),
 	  (ge,"$tld_war_began",1),  # faction AI can change only if War started, GA
 	  (call_script, "script_init_ai_calculation"),
+      (store_current_hours, ":cur_hours"),
 	  (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),   # recalculate AI for active non-player factions
 		(faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+        (neg|faction_slot_ge, ":faction_no", slot_faction_scripted_until, ":cur_hours"),
         (this_or_next|eq, ":theater", 2), #2= all theaters
         (faction_slot_eq, ":faction_no", slot_faction_active_theater, ":theater"),
 		(neg|faction_slot_eq, ":faction_no",  slot_faction_marshall, "trp_player"),
@@ -277,7 +279,7 @@ ai_scripts = [
            (party_is_active, ":enemy_walled_center"), #don't attack disabled centers
            (party_slot_eq, ":enemy_walled_center", slot_center_destroyed, 0), #TLD
            #MV: make sure the center is in the active theater
-           (party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
+           #(party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
            
            (store_faction_of_party, ":center_faction", ":enemy_walled_center"),
            (party_get_slot, ":siegable", ":enemy_walled_center", slot_center_siegability),
@@ -347,6 +349,8 @@ ai_scripts = [
            #(store_distance_to_party_from_party, ":dist", ":enemy_walled_center", ":faction_marshall_party"),
            (call_script, "script_get_tld_distance", ":enemy_walled_center", ":faction_marshall_party"),
            (assign, ":dist", reg0),
+           (this_or_next|party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
+           (le, ":dist", 60),
            (val_add, ":dist", 20),
            (try_begin),
             (this_or_next|eq, ":center_faction", "fac_gondor"),

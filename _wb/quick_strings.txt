@@ -1,4 +1,4 @@
-1942
+1940
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_463_wb__dev_^_B _rev_463_wb_|_dev_^_Built_2022-08-30_18:57___
+qstr__rev_466_wb__dev_^_B _rev_466_wb_|_dev_^_Built_2022-09-04_12:11___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1081,7 +1081,7 @@ qstr_SW SW
 qstr_C C
 qstr_N N
 qstr_INVALID INVALID
-qstr_{s2}^{s4}:_Th:_{s9}_ {s2}^{s4}:_Th:_{s9}-{s10}_Str:_{reg3}_Hosts:_{reg2}_{s11}
+qstr_{s2}^{s4}:_Th:_{s9}_ {s2}^{s4}:_Th:_{s9}-{s10}_Str:_{reg1}_Hosts:_{reg2}_{s11}
 qstr_Faction_AI_report:^{ Faction_AI_report:^{s2}
 qstr_Detailed_faction_AI_ Detailed_faction_AI_report_for_{s4}:^Theater:{s9}-{s10}_Str:{reg1}_Hosts:{reg2}_{s11}
 qstr_Faction_defeated!^{s Faction_defeated!^{s1}
@@ -1214,8 +1214,6 @@ qstr_There_are_{reg39}_all There_are_{reg39}_allied_commanders_in_this_battle._Y
 qstr_Having_a_small_party Having_a_small_party_has_its_benefits...You_and_your_troops_hide_from_the_enemy_for_a_few_hours_to_be_sure_that_you_are_not_seen.
 qstr_Your_ability_to_mast Your_ability_to_master_your_environments_allowed_you_to_find_a_safe_place_to_hide._(Your_skill_in_Wildcraft_allows_you_to_hide_with_{reg1}_troops)
 qstr_{reg4}_will_be_lost. {reg4}_will_be_lost.
-qstr_own_strength:_{reg0} own_strength:_{reg0}
-qstr_enemy_strength:_{reg enemy_strength:_{reg0}
 qstr_{s13}_asked_you_to_r {s13}_asked_you_to_report_to_him_with_at_least_{reg13}_troops.
 qstr_{s13}_ordered_you_to {s13}_ordered_you_to_join_the_assault_against_{s14}.
 qstr_You_were_victorious! You_were_victorious!

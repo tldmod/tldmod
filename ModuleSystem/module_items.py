@@ -1134,7 +1134,7 @@ items =[
 ###ARMOR##########
 ["rhun_armor_a","Rhun_Light_Battlewear",[("RhunArmorLight1",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,20,weight(5)|head_armor(0)|body_armor(2)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["rhun_armor_b","Rhun_Light_Battlewear",[("RhunArmorLight2",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,30,weight(5)|head_armor(0)|body_armor(3)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
-["rhun_armor_d","Rhun_Light_Battlewear",[("RhunArmorLight4",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,31,weight(6)|head_armor(0)|body_armor(4)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["rhun_armor_d","Rhun_Light_Battlewear",[("RhunArmorLight4",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,30,weight(6)|head_armor(0)|body_armor(4)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 ["rhun_armor_g","Rhun_Heavy_Battlewear",[("RhunArmorHeavy2",0),("RhunArmorHeavy2b",imodbits_armor_good|imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1700,weight(19)|abundance(93)|head_armor(0)|body_armor(25)|leg_armor(16)|difficulty(13),imodbits_armor|imodbit_lordly,],
 ["rhun_armor_h","Rhun_Heavy_Battlewear",[("RhunArmorHeavy3",0),("RhunArmorHeavy3b",imodbits_armor_good|imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1600,weight(18)|abundance(93)|head_armor(0)|body_armor(24)|leg_armor(16)|difficulty(13),imodbits_armor|imodbit_lordly,],
 ["rhun_armor_j","Rhun_Medium_Battlewear",[("RhunArmorMedium1",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(7)|head_armor(0)|body_armor(10)|leg_armor(12)|difficulty(0),imodbits_cloth,],

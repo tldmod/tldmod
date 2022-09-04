@@ -230,6 +230,7 @@ slot_faction_leader               = 10
 
 slot_faction_number_of_parties    = 20
 slot_faction_state                = 21
+slot_faction_scripted_until      = 22 #scripted AI mode blocks regular calculations, slot stores campaign hours
 
 slot_faction_player_alarm         = 30
 slot_faction_last_mercenary_offer_time = 31
