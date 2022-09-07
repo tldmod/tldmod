@@ -282,15 +282,17 @@ simple_triggers = [
 				(val_div, ":garrison_limit", 100),
 			(try_end),
         (party_get_num_companions, ":garrison_size", ":center_no"),
-        
-        (store_random_in_range, ":chance", 0, 100), #InVain Reduce reinforcements for centers
+ 
+        (faction_get_slot, ":fac_strength", ":faction", slot_faction_strength), #InVain Scale center reinforcements with fac strength
+        (val_div, ":fac_strength", 250), #up to 32
+        (store_random_in_range, ":chance", 0, 100), 
         (try_begin),
           (gt, ":garrison_limit", ":garrison_size"),
             (try_begin),
                 (is_between, ":center_no", advcamps_begin, advcamps_end), #advance camps reinforce slightly faster, because they have low garrison
                 (lt, ":chance", 30),
             (else_try),
-                (lt, ":chance", 20),
+                (lt, ":chance", ":fac_strength"),
             (try_end),
           (call_script, "script_cf_reinforce_party", ":center_no"),
 		  (str_store_party_name, s1, ":center_no"),
@@ -564,13 +566,14 @@ simple_triggers = [
           (val_add, ":strength", ":strength_income"),
           (val_add, ":debug_gain", ":strength_income"), #debug
         (try_end),
-        #one more evil handicap: Gondor and Rohan get +20.. cheaters!
+        #one more evil handicap: Gondor and Rohan get +20.. cheaters! #InVain: Actually, give it to all factions for more fun
         (try_begin),
           (gt, "$tld_war_began", 0),
           (eq, "$tld_option_regen_rate", 0), #Normal
           (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-          (this_or_next|eq, ":faction_no", "fac_gondor"),
-          (eq, ":faction_no", "fac_rohan"),
+          (faction_slot_eq, ":faction_no", slot_faction_side, faction_side_good),
+          # (this_or_next|eq, ":faction_no", "fac_gondor"),
+          # (eq, ":faction_no", "fac_rohan"),
           (val_add, ":strength", 20), #tweakable
         (try_end),
         (val_min, ":strength", fac_str_max), #limit max strength

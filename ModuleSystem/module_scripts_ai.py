@@ -350,7 +350,7 @@ ai_scripts = [
            (call_script, "script_get_tld_distance", ":enemy_walled_center", ":faction_marshall_party"),
            (assign, ":dist", reg0),
            (this_or_next|party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
-           (le, ":dist", 60),
+           (le, ":dist", 50),
            (val_add, ":dist", 20),
            (try_begin),
             (this_or_next|eq, ":center_faction", "fac_gondor"),

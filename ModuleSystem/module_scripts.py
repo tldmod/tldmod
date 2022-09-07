@@ -2560,10 +2560,11 @@ scripts = [
             	#(val_mul, ":defender_strength", 123), #it was 1.5 in old version, now it is only 1.23
             	#(val_div, ":defender_strength", 100),
       
-            	#(val_mul, ":attacker_strength", 2), #it was 0.5 in old version, now it is only 1 / 1.23
-            	#(val_div, ":attacker_strength", 3),               
-				(val_div, ":attacker_strength", 2),
-                (val_min, ":attacker_strength", 40),  
+            	(val_mul, ":attacker_strength", 2), #it was 0.5 in old version, now it is only 1 / 1.23
+            	(val_div, ":attacker_strength", 3), 
+                (store_character_level, ":player_level", "trp_player"), #Invain: Make attackers more powerful with player level
+                (val_mul, ":player_level", 3),
+                (val_min, ":attacker_strength", ":player_level"),  
           	(try_end),
 
 	        (call_script, "script_party_count_fit_for_battle", "p_collective_ally", 0),
