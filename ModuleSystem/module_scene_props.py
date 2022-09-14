@@ -3448,6 +3448,7 @@ scene_props = [
     ]),
 ], 1500),
 
+("elf_treehouse_b",0,"elf_treehouse_b","bo_elf_treehouse_b",[]),  
 
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),

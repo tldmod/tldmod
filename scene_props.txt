@@ -6148,7 +6148,7 @@ spr_gate_destructible_retreat 32768 1500 gate_tld_displaced bo_gate_tld_displace
 -42  3 600 1 141 1969 3 29 1 3 1969 3 30 1 10 
 
 
-spr_elf_treehouse_b 0 0 elf_treehouse_b bo_elf_treehouse 0
+spr_elf_treehouse_b 0 0 elf_treehouse_b bo_elf_treehouse_b 0
 
 
 spr_save_compartibility4 0 0 0 0 0
