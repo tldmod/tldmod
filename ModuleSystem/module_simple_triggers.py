@@ -2675,6 +2675,7 @@ simple_triggers = [
             (faction_slot_ge, ":cur_kingdom", slot_faction_last_stand, 1),
             (try_for_range, ":scripted_ai_lords", kingdom_heroes_begin, kingdom_heroes_end),
               (troop_get_slot, ":lord_party", ":scripted_ai_lords", slot_troop_leaded_party),
+              (gt, ":lord_party", 0),
               (party_slot_ge, ":lord_party", slot_party_scripted_ai, 1),
               (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
               (str_store_troop_name, s30, ":scripted_ai_lords"),
