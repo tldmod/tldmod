@@ -2537,7 +2537,7 @@ scene_props = [
 ("distant_mountain_snow_2",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_2","0", []),
 
 ("osgiliath_far_f",0,"osgiliath_far","0", []),   
-("hill",0,"hill","bo_hill", []),
+("hill",0,"hill_steppe","bo_hill", []),
 ("water_river",0,"TLD_water_plane","0", []),
 ("water_fall",0,"water_fall","0", []),
 ("distant_street_a",0,"distant_street_a_new","bo_distant_street_a_new", []),
