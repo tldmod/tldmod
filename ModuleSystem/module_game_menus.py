@@ -8723,6 +8723,7 @@ game_menus = [
        ("town_approach",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
           (this_or_next|eq,"$entry_to_town_forbidden",0),
           (eq, "$sneaked_into_town",1),
+          (troop_set_slot, "trp_player", slot_troop_morality_state, 0),
 		  (try_begin),
 		    #kham fix for some weird elder switching that occurs...
 		  	#(eq, "$current_town", "p_town_cair_andros"),
@@ -8743,7 +8744,7 @@ game_menus = [
 		    (str_store_string, s1, "@the_place"),
 		  (try_end),
 		  ],"Approach {s1}...",
-       [(call_script, "script_initialize_center_scene"),
+       [(call_script, "script_initialize_center_scene", 0),
 		(assign, "$spawn_horse", 0),
 		(try_begin),(troop_is_mounted, "trp_player"),(set_jump_entry, 1),
 		 (else_try),                                 (set_jump_entry, 2),
@@ -8814,7 +8815,7 @@ game_menus = [
         (try_end),
         (eq, ":continue", 1),          
 	   ], "Walk to the main square...",
-     [ (call_script, "script_initialize_center_scene"),
+     [ (call_script, "script_initialize_center_scene", 0),
 	   (assign, "$spawn_horse", 1),
        #(assign, "$town_entered", 1),
 	   (party_set_slot,"$current_town", slot_center_visited, 1),
@@ -8926,13 +8927,13 @@ game_menus = [
         (quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),
         ],"Search for the lost spears inside the mountains.",[
               (set_jump_mission, "mt_tld_erebor_dungeon"),
-              (modify_visitors_at_site,"scn_erebor_dungeon_01"),	      
+              #(modify_visitors_at_site,"scn_erebor_dungeon_01"),	      
               (reset_visitors),
               (set_visitor,1,"trp_player"),
               (set_visitor, 2, "trp_i1_gunda_goblin"),
               (set_visitor, 3, "trp_i4_gunda_orc_warrior"),
               (set_visitor, 4, "trp_i3_gunda_orc_fighter"),
-              (jump_to_scene, "scn_erebor_dungeon_01"),
+              #(jump_to_scene, "scn_erebor_dungeon_01"),
               (change_screen_mission),
        ],"Open the door."),
       #Enter dungeon in Erebor end (Kolba)	  
@@ -9180,8 +9181,7 @@ game_menus = [
 	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0)
 						], "Go to the underground caverns.",
 						[
-						(troop_set_slot, "trp_player", slot_troop_morality_state, 22),
-						(call_script, "script_initialize_center_scene"),
+						(call_script, "script_initialize_center_scene", "scn_isengard_underground"),
 						#(set_jump_mission, "mt_town_center"),
 						(jump_to_scene, "scn_isengard_underground"),
 						(change_screen_mission)], "Go to the underground caverns"),
@@ -9199,9 +9199,11 @@ game_menus = [
 #menu no. 21						 
   	  ("erebor_gates",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_erebor"),(eq,"$entry_to_town_forbidden",0)
 						], "Visit the Great Gates.",
-						[(set_jump_mission, "mt_town_center"),
-						 (jump_to_scene, "scn_erebor_outside"),
-						 (change_screen_mission)]),
+						[
+                        (call_script, "script_initialize_center_scene", "scn_erebor_gate"),
+                         #(set_jump_mission, "mt_town_center"),
+						 (jump_to_scene, "scn_erebor_gate"),
+						 (change_screen_mission)],"Go to the Great Gates"),
 						
       ("town_leave",[],"Leave...",[
             (assign, "$g_permitted_to_center",0),

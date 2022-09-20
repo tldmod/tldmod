@@ -612,10 +612,10 @@ scn_isengard_center_flooded isengard_center_flooded 256 none none 0 0 100 100 -1
   0 
   0 
  outer_terrain_isen_low_1 
-scn_erebor_dungeon_01 erebor_dungeon_01 1 dungeon_a bo_dungeon_a -100 -100 100 100 -100 0 
+scn_erebor_gate erebor_gate 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
   0 
   0 
- 0 
+ outer_mountains2west 
 scn_thranduil_hall_room thranduil_hall_room 3 thranduil_hall bo_thranduil_hall -100 -100 100 100 -100 0 
   0 
   1  833 
@@ -1012,10 +1012,10 @@ scn_isengard_outside isengard_outside 1792 none none 0 0 90 90 -100 0x0000000320
   0 
   0 
  outer_terrain_isen_low_far 
-scn_erebor_outside erebor_outside 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+scn_erebor_outside erebor_outside 256 none none 0 0 100 100 -100 0x00000001a0000500000691a4000009e100004b34000070b7 
   0 
   0 
- outer_mountains2north 
+ outer_terrain_rohan 
 scn_old_forest_road old_forest_road 256 none none 0 0 100 100 -100 0x00000000b002c90d0002308c00000a060000786900001ef5 
   0 
   0 

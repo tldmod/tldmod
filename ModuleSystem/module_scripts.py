@@ -22376,16 +22376,16 @@ scripts = [
 ("initialize_center_scene",[
 	(assign, "$talk_context", 0),
 	(set_jump_mission,"mt_town_center"),
+    (store_script_param_1, ":town_scene"),
 
 	(try_begin),
 		(call_script, "script_cf_enter_center_location_bandit_check"),
 	(else_try),
-		(party_get_slot, ":town_scene", "$current_town", slot_town_center),
-		(try_begin),
-			(eq, "$current_town", "p_town_isengard"),
-			(troop_slot_eq, "trp_player", slot_troop_morality_state, 22),
-			(assign, ":town_scene", "scn_isengard_underground"),
-		(try_end),
+        (try_begin),
+            (lt, ":town_scene", 1),
+            (party_get_slot, ":town_scene", "$current_town", slot_town_center),
+        (try_end),
+
 		(modify_visitors_at_site, ":town_scene"),
 		(reset_visitors),
 		(assign, "$g_mt_mode", tcm_default),

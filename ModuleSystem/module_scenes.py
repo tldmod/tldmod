@@ -252,7 +252,13 @@ scenes = [
 #backup ("beorning_village_center"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
 ("isengard_center_flooded"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000320000500000d234800002ba680005bd500005b5d",[],[],"outer_terrain_isen_low_1"),
 
-("erebor_dungeon_01",sf_indoors,"dungeon_a","bo_dungeon_a",(-100,-100),(100,100),-100,"0",[],[]),
+] + (is_a_wb_scene==1 and [
+("erebor_gate"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000130000500000d23480000755000005bd50000739d",[],[],"outer_mountains2west"),
+] or [
+("erebor_gate"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west"),
+]) + [
+
+#("erebor_dungeon_01",sf_indoors,"dungeon_a","bo_dungeon_a",(-100,-100),(100,100),-100,"0",[],[]),
 
 ("thranduil_hall_room"     ,sf_indoors|sf_force_skybox,"thranduil_hall", "bo_thranduil_hall", (-100,-100),(100,100),-100,"0",[],["player_chest"]),
 ("random_scene_parade"  ,sf_generate,"none","none",(0,0),(220,220),-0.5,"0x00000002362011800004411a00003efe00004b34000059be",[],[],"outer_terrain_forest"),#GA, faction troops parade (custom battle)
@@ -407,9 +413,9 @@ scenes = [
 ("isengard_outside" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 90, 90),-100.0,"0x000000032001c500000791fd0000738000005bd50000739d",[],[],"outer_terrain_isen_low_far"),
 
   ] + (is_a_wb_scene==1 and [
-("erebor_outside" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000130000500000d23480000755000005bd50000739d",[],[],"outer_mountains2west"),
+("erebor_outside" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001a0000500000691a4000009e100004b34000070b7",[],[],"outer_terrain_rohan"),
   ] or [
-("erebor_outside" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
+("erebor_outside" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001a0000500000691a4000009e100004b34000070b7",[],[],"outer_terrain_rohan"),
   ]) + [
 
 ("old_forest_road"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000b002c90d0002308c00000a060000786900001ef5",[],[],"outer_terrain_forest"),
