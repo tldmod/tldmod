@@ -2019,6 +2019,28 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   (try_end)],
 "{s33} Let's see the wretched scum.", "tld_sell_prisoners_check",[(change_screen_trade_prisoners)]],
 
+# Selling all prisoners 
+[anyone|plyr, "player_hire_troop", [(store_num_regular_prisoners,reg5),(ge,reg5,1)],
+"I want you to take all the prisoners I have with me.", "tld_sell_prisoners_all", [
+    #this could be moved to a script if it's used anywhere else
+    (assign, ":total_income", 0),
+    (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
+    (try_for_range_backwards, ":i_stack", 0, ":num_stacks"),
+        (party_prisoner_stack_get_troop_id, ":troop_no", "p_main_party", ":i_stack"),
+        #Won't come up much in TLD but is possible if on the capture a commander quest
+        (call_script, "script_game_check_prisoner_can_be_sold", ":troop_no"),
+        (eq, reg0, 1),
+        (party_prisoner_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
+        (call_script, "script_game_get_prisoner_price", ":troop_no"),
+        (assign, ":sell_price", reg0),
+        (store_mul, ":stack_total_price", ":sell_price", ":stack_size"),
+        (val_add, ":total_income", ":stack_total_price"),
+        (party_remove_prisoners, "p_main_party", ":troop_no", ":stack_size"),
+    (try_end),
+    (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":total_income"),
+]],
+[anyone, "tld_sell_prisoners_all", [], "Very well, I'll take them all to our dungeons.", "player_hire_troop_nextcycle",[]],
+
 # this one is needed because change_screen_trade_* needs another dialog to update the main party
 [anyone, "tld_sell_prisoners_check", [], "Let me check our dungeon records...", "tld_sell_prisoners_2", []],
 
