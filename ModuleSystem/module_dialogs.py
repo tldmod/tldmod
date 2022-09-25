@@ -11889,27 +11889,27 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 #deal with night bandits
 [anyone,"merchant_quest_requested",[(eq, "$random_merchant_quest_no", "qst_deal_with_night_bandits")],
-"Do I indeed! There's a group of rogue goblins harassing the place, and I'm at the end of my rope as to how to deal with them.\
+"Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them.\
  They've been ambushing and robbing drunken recruits under the cover of night,\
  and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them.\
  They only attack lone people, never daring to show themselves when there's a group about.\
- I need someone who can take on these goblins alone and win. That seems to be the only way of getting rid of them.\
+ I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them.\
  Are you up to the task?", "merchant_quest_deal_with_night_bandits",[]],
 
 [anyone,"merchant_quest_brief",[(eq,"$random_merchant_quest_no","qst_deal_with_night_bandits")],
-"There's a group of rogue goblins harassing the place, and I'm at the end of my rope as to how to deal with them.\
+"There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them.\
  They've been ambushing and robbing drunken recruits under the cover of night,\
  and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them.\
  They only attack lone people, never daring to show themselves when there's a group about.\
- I need someone who can take on these goblins alone and win. That seems to be the only way of getting rid of them.\
+ I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them.\
  Are you up to the task?", "merchant_quest_deal_with_night_bandits",[]],
 
 [anyone|plyr,"merchant_quest_deal_with_night_bandits", [],
-"Killing rogue goblins? Why, certainly!", "deal_with_night_bandits_quest_taken",[
+"Killing rogue bandits? Why, certainly!", "deal_with_night_bandits_quest_taken",[
      (str_store_party_name_link, s14, "$g_encountered_party"),
      (str_store_troop_name, s9, "$g_talk_troop"),
      (setup_quest_text, "qst_deal_with_night_bandits"),
-     (str_store_string, s2, "@The {s9} of {s14} has asked you to deal with a group of goblins making trouble in {s14}. They only come out at night, and only attack lone people on the streets."),
+     (str_store_string, s2, "@The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets."),
      (call_script, "script_start_quest", "qst_deal_with_night_bandits", "$g_talk_troop")]],
   
 [anyone|plyr, "merchant_quest_deal_with_night_bandits", [], "No, I'm not interested.", "merchant_quest_stall",[]],

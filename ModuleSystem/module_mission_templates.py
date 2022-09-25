@@ -2004,15 +2004,23 @@ mission_templates = [ # not used in game
      (40,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(41,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(42,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(43,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
-     tld_common_wb_muddy_water +
-    [ (ti_on_agent_spawn,0,0,[],[(store_trigger_param_1, ":agent_no"),
-								(agent_get_troop_id, ":troop_no", ":agent_no"),
-								(neq, ":troop_no", "trp_player"),
-								(agent_set_team, ":agent_no", 1),
-                ] + (is_a_wb_mt==1 and [
-                (agent_set_is_alarmed, ":agent_no", 1),
-                ] or []) + [
-                ]),
+     tld_common_wb_muddy_water + 
+
+    [ (ti_on_agent_spawn,0,0,[],
+        [(store_trigger_param_1, ":agent_no"),
+        (agent_get_troop_id, ":troop_no", ":agent_no"),
+        (try_begin),
+            (neq, ":troop_no", "trp_player"),
+            (agent_set_team, ":agent_no", 1),
+            ] + (is_a_wb_mt==1 and [
+            (agent_set_is_alarmed, ":agent_no", 1),
+            ] or []) + [
+        (else_try),
+            (entry_point_get_position, pos1, 29),
+            (agent_set_position, ":agent_no", pos1),
+        (try_end),
+        ]),
+  
       (ti_before_mission_start, 0, 0,[],[(team_set_relation, 1, 0, 0),(team_set_relation, 2, 0, 0),  #MV: both player and bandits neutral to guards
         #remove cabbage guard spawn points
         (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
@@ -2025,7 +2033,10 @@ mission_templates = [ # not used in game
 		(replace_scene_props, "spr_troop_civilian_sitting_ground", "spr_empty"),
 		(replace_scene_props, "spr_troop_civilian_sitting_chair", "spr_empty"),	
       ]),
-      common_inventory_not_available,
+ 
+      common_inventory_not_available,       
+      ] + (is_a_wb_mt==1 and [ hp_shield_init, hp_shield_trigger, ] or []) + [
+
       (ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),
       (ti_on_leave_area, 0, 0,[(try_begin),(eq, "$g_defending_against_siege", 0),(assign,"$g_leave_town",1),(try_end)], []),
       (0, 0, ti_once,[],[(call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),(set_party_battle_mode)]),
