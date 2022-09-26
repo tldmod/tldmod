@@ -14138,37 +14138,46 @@ scripts = [
 		(this_or_next|eq, "$current_town", "p_town_east_osgiliath"), # walkers there in osgiliaths
 		(this_or_next|eq, "$current_town", "p_town_cair_andros"), # walkers there in osgiliaths
 		(neq, "$g_defending_against_siege", 0), # walkers there when siege
-		(try_for_range, ":walker_no", 0, num_town_walkers),
-			(store_add, ":troop_slot", slot_center_walker_0_troop, ":walker_no"),
-			(try_begin),
-				(eq, "$g_defending_against_siege", 0),
-				(party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
-			(else_try),
-				# TODO: put military walkers when siege
-				(party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
-			(try_end),
-			(gt, ":walker_troop_id", 0),
-			(store_add, ":entry_no", town_walker_entries_start, ":walker_no"),
-			(try_begin), ## Kham Edit for more town walkers!
-				(this_or_next|is_between, 			"$current_town", isengard_mordor_centers_begin, isengard_mordor_centers_end),
-				(this_or_next|is_between, 			"$current_town", 		   moria_centers_begin, 		  moria_centers_end),
-				(			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),	
-				(set_visitors, ":entry_no", ":walker_troop_id",6), #entry points 32-39 
-			(else_try),
-				(this_or_next|eq, "$current_town", "p_town_woodelf_camp"),
-				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
-				(this_or_next|eq, "$current_town", "p_town_woodelf_west_camp"),
-				(this_or_next|eq, "$current_town", "p_town_caras_galadhon"),
-				(this_or_next|eq, "$current_town", "p_town_cerin_dolen"),
-				(this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
-				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
-				(			  eq, "$current_town", "p_town_henneth_annun"),
-				#(			  eq, "$current_town", "p_town_imladris_camp"), #Enough space for lots of walkers
-				(set_visitors, ":entry_no", ":walker_troop_id",1),
-			(else_try),
-				(set_visitors, ":entry_no", ":walker_troop_id",4),
-			(try_end), ## Kham Edit for more town walkers! - END
+
+        (try_begin), ## Kham Edit for more town walkers!
+            (this_or_next|is_between, 			"$current_town", isengard_mordor_centers_begin, isengard_mordor_centers_end),
+            (this_or_next|is_between, 			"$current_town", 		   moria_centers_begin, 		  moria_centers_end),
+            (			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),	
+            #(set_visitors, ":entry_no", ":walker_troop_id",6), #entry points 32-39 
+            (assign, ":num_walkers", 7),
+        (else_try),
+            (this_or_next|eq, "$current_town", "p_town_woodelf_camp"),
+            (this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
+            (this_or_next|eq, "$current_town", "p_town_woodelf_west_camp"),
+            (this_or_next|eq, "$current_town", "p_town_caras_galadhon"),
+            (this_or_next|eq, "$current_town", "p_town_cerin_dolen"),
+            (this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
+            (this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
+            (			  eq, "$current_town", "p_town_henneth_annun"),
+            #(			  eq, "$current_town", "p_town_imladris_camp"), #Enough space for lots of walkers
+            #(set_visitors, ":entry_no", ":walker_troop_id",1),
+            (assign, ":num_walkers", 2),
+        (else_try),
+            #(set_visitors, ":entry_no", ":walker_troop_id",4),
+            (assign, ":num_walkers", 5),
+        (try_end), ## Kham Edit for more town walkers! - END
+
+        (try_for_range, ":entry_no", town_walker_entries_start, 40),
+            (try_for_range, ":unused", 0, ":num_walkers"),
+                (store_random_in_range, ":walker_no", 0, num_town_walkers),
+                (store_add, ":troop_slot", slot_center_walker_0_troop, ":walker_no"),
+                (try_begin),
+                    (eq, "$g_defending_against_siege", 0),
+                    (party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
+                (else_try),
+                    # TODO: put military walkers when siege
+                    (party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
+                (try_end),
+                (gt, ":walker_troop_id", 0),
+                (set_visitor, ":entry_no", ":walker_troop_id"),
+            (try_end),
 		(try_end),
+        
 	(try_end),
 ]),
 
@@ -14284,12 +14293,8 @@ scripts = [
 	   (is_between, ":entry",town_walker_entries_start,40),
        (val_add, ":num_walkers", 1),
        (agent_get_position, pos1, ":cur_agent"),
-       (try_for_range, ":i_e_p", 9, 40),#Entry points
-         (entry_point_get_position, pos2, ":i_e_p"),
-         (get_distance_between_positions, ":distance", pos1, pos2),
-         (lt, ":distance", 200),
-         (agent_set_slot, ":cur_agent", 0, ":i_e_p"),
-       (try_end),
+       (store_random_in_range, ":i_e_p", town_walker_entries_start, 40),#Entry points
+       (agent_set_slot, ":cur_agent", 0, ":i_e_p"),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),
      (try_end),
 ]),
